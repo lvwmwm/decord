@@ -1,11 +1,11 @@
-// Module ID: 11451
-// Function ID: 11452
+// Module ID: 11500
+// Function ID: 11501
 // Name: getCurrentAndNextResourceChannel
-// Dependencies: [5048, 589, 2]
+// Dependencies: [5053, 589, 2]
 // Exports: default, usePreviousAndNextResourceChannel
 
-// Module 11451 (getCurrentAndNextResourceChannel)
-import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
+// Module 11500 (getCurrentAndNextResourceChannel)
+import closure_2 from "handleSettingsLoadSuccess" /* 5053 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/getNextResourceChannel.tsx");
@@ -23,9 +23,9 @@ export default function getCurrentAndNextResourceChannel(closure_0) {
 };
 export const usePreviousAndNextResourceChannel = function usePreviousAndNextResourceChannel(guild_id, id) {
   const _require = guild_id;
-  const dependencyMap = id;
-  const items = [handleSettingsLoadSuccess];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_2.getResourceChannels(closure_0));
+  dependencyMap = id;
+  const items = [closure_2];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_2.getResourceChannels(closure_0));
   const findIndexResult = stateFromStores.findIndex((channelId) => channelId.channelId === closure_1);
   if (findIndexResult >= 0) {
     if (stateFromStores.length > 1) {

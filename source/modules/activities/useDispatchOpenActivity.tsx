@@ -1,11 +1,11 @@
-// Module ID: 12470
-// Function ID: 12471
+// Module ID: 12524
+// Function ID: 12525
 // Name: useDispatchOpenActivity
 // Dependencies: [19, 709, 2]
 // Exports: default
 
-// Module 12470 (useDispatchOpenActivity)
-import noop from "noop";
+// Module 12524 (useDispatchOpenActivity)
+import closure_2 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/activities/useDispatchOpenActivity.tsx");
 

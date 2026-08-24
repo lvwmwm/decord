@@ -1,22 +1,21 @@
-// Module ID: 8115
-// Function ID: 8116
-// Dependencies: [19, 17, 676, 21, 4661, 8116, 2]
+// Module ID: 8154
+// Function ID: 8155
+// Dependencies: [19, 17, 676, 21, 4668, 8155, 2]
 
-// Module 8115
-import { Text } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 8154
+import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8155 */;
+import { Text } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let closure_4 = createCacheKey.createStyles({ text: { fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, includeFontPadding: false } });
 let obj = { fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, includeFontPadding: false };
 const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
-  let children;
-  let style;
   ({ style, children } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(8116) /* useLegacyTextMigrationHighlight */;
+  let obj = useLegacyTextMigrationHighlight;
   obj = { ref };
   const legacyTextMigrationHighlight = obj.useLegacyTextMigrationHighlight();
   const merged1 = Object.assign(merged);
@@ -25,6 +24,6 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   obj.children = children;
   return <Text ref={arg1} />;
 });
-const result = require("ME").fileFinishedImporting("design/void/LegacyText/native/LegacyText.tsx");
+const result = require("set").fileFinishedImporting("design/void/LegacyText/native/LegacyText.tsx");
 
 export default forwardRefResult;

@@ -5,15 +5,16 @@
 // Exports: useNavigationContainerRef
 
 // Module 1593 (useNavigationContainerRef)
-import noop from "noop";
+import createNavigationContainerRef from "createNavigationContainerRef" /* 1526 */;
+import closure_2 from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 
 export const useNavigationContainerRef = function useNavigationContainerRef() {
   const ref = React.useRef(null);
   if (null == ref.current) {
-    ref.current = require(1526) /* createNavigationContainerRef */.createNavigationContainerRef();
-    const obj = require(1526) /* createNavigationContainerRef */;
+    ref.current = createNavigationContainerRef.createNavigationContainerRef();
+    const obj = createNavigationContainerRef;
   }
   return ref.current;
 };

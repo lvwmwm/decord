@@ -1,11 +1,11 @@
-// Module ID: 17089
-// Function ID: 17090
+// Module ID: 17182
+// Function ID: 17183
 // Name: context
 // Dependencies: [19, 2]
 // Exports: useSafetyFlowTask
 
-// Module 17089 (context)
-import importAllResult from "noop";
+// Module 17182 (context)
+import importAllResult from "noop" /* 19 */;
 
 let c0 = importAllResult;
 let context = importAllResult.createContext(null);
@@ -16,7 +16,7 @@ export const useSafetyFlowTask = function useSafetyFlowTask() {
   context = importAllResult.useContext(context);
   if (null == context) {
     const _Error = Error;
-    const error = new Error("useSafetyFlowTask must be used within a SafetyFlowTaskContext Provider");
+    error = new Error("useSafetyFlowTask must be used within a SafetyFlowTaskContext Provider");
     throw error;
   } else {
     return context;

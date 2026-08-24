@@ -1,12 +1,12 @@
-// Module ID: 8710
-// Function ID: 8711
+// Module ID: 8747
+// Function ID: 8748
 // Name: getURLForApplication
-// Dependencies: [7874, 7872, 2]
+// Dependencies: [7913, 7911, 2]
 // Exports: default, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 8710 (getURLForApplication)
-import reset from "reset";
-import initialize from "initialize";
+// Module 8747 (getURLForApplication)
+import closure_0 from "reset" /* 7913 */;
+import closure_1 from "initialize" /* 7911 */;
 
 const result = require("set").fileFinishedImporting("modules/activities/getURLForApplication.tsx");
 
@@ -22,7 +22,7 @@ export default function getURLForApplication(arg0) {
   if (useActivityUrlOverride) {
     let activityUrlOverride = store.getState().activityUrlOverride;
   } else {
-    if (reset.inTestModeForEmbeddedApplication(arg0)) {
+    if (closure_0.inTestModeForEmbeddedApplication(arg0)) {
       activityUrlOverride = tmp4.testModeOriginURL;
     } else {
       const _window = window;
@@ -41,7 +41,7 @@ export default function getURLForApplication(arg0) {
         }
       }
     }
-    tmp4 = reset;
+    tmp4 = closure_0;
   }
   return activityUrlOverride;
 };

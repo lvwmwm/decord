@@ -1,25 +1,28 @@
-// Module ID: 8912
-// Function ID: 8913
+// Module ID: 8949
+// Function ID: 8950
 // Name: useStagePrivacyLevelSettings
-// Dependencies: [4021, 676, 1397, 505, 589, 4026, 506, 1236, 1993, 2]
+// Dependencies: [4024, 676, 1397, 505, 589, 4029, 506, 1236, 1994, 2]
 // Exports: default
 
-// Module 8912 (useStagePrivacyLevelSettings)
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { HelpdeskArticles } from "ME";
-import { GuildScheduledEventPrivacyLevel as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH";
-import { Permissions } from "sum";
+// Module 8949 (useStagePrivacyLevelSettings)
+import fromStringAll from "fromString" /* 506 */;
+import combinedDefault from "combined" /* 1994 */;
+import applyOverwritesAll from "applyOverwrites" /* 4029 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import { HelpdeskArticles } from "ME" /* 676 */;
+import { GuildScheduledEventPrivacyLevel as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
+import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;
-const result = require("GUILD_EVENT_MAX_NAME_LENGTH").fileFinishedImporting("modules/stage_channels/usePrivacyLevelHelpText.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/usePrivacyLevelHelpText.tsx");
 
 export default function useStagePrivacyLevelSettings(channel, privacy_level) {
   const _require = channel;
   let obj = _require(589);
-  const items = [getUncachedChannelPermissions];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.can(outer1_7.CREATE_INSTANT_INVITE, closure_0));
-  const obj2 = importAll(4026);
-  const canEveryoneRoleResult = obj2.canEveryoneRole(importAll(506).combine(Permissions.VIEW_CHANNEL, Permissions.CONNECT), channel);
+  const items = [closure_4];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.can(closure_1_7.CREATE_INSTANT_INVITE, closure_0));
+  const obj2 = applyOverwritesAll;
+  const canEveryoneRoleResult = obj2.canEveryoneRole(fromStringAll.combine(Permissions.VIEW_CHANNEL, Permissions.CONNECT), channel);
   privacy_level = undefined;
   if (privacy_level != null) {
     privacy_level = privacy_level.privacy_level;
@@ -33,9 +36,9 @@ export default function useStagePrivacyLevelSettings(channel, privacy_level) {
       if (arg2 === tmp6.PUBLIC) {
         const intl3 = tmp(1236).intl;
         obj = { articleURL: null };
-        obj[0] = importDefault(1993).getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES);
+        obj[0] = combinedDefault.getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES);
         formatResult = intl3.format(tmp(1236).t["ew/Jq4"], obj);
-        const obj5 = importDefault(1993);
+        const obj5 = combinedDefault;
       }
       let stringResult1 = formatResult;
     } else {

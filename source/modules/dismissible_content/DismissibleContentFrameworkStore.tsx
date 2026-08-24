@@ -4,24 +4,30 @@
 // Dependencies: [676, 3, 1382, 1378, 698, 589, 709, 2]
 
 // Module 1381 (set)
-import { AnalyticEvents } from "ME";
-import { PersistedStore } from "initialize";
-import set from "set";
+import timestampDefault from "timestamp" /* 3 */;
+import initializeDefault from "initialize" /* 589 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isSingleUseDismissibleContent from "isSingleUseDismissibleContent" /* 1378 */;
+import set2 from "set" /* 1382 */;
+import set from "set" /* 2 */;
 
-let c4 = new require("isSingleUseDismissibleContent")("DCF");
+const AnalyticEvents = ME.AnalyticEvents;
+let closure_4 = new timestampDefault("DCF");
 let c5 = false;
 let obj = { numberOfDCsShownToday: 0, dailyCapPeriodStart: null, dismissibleContentSeenDuringSession: null, dailyCapOverridden: false, newUserMinAgeRequiredOverridden: false, renderedAtTimestamps: null, lastDismissed: null, seenForGuildId: null };
 let set = new Set();
 obj[2] = set;
-const tmp2 = new require("isSingleUseDismissibleContent")("DCF");
+const tmp2 = new timestampDefault("DCF");
 obj[5] = new Map();
 let map = new Map();
 obj[7] = new Map();
+const PersistedStore = initializeDefault.PersistedStore;
 class DismissibleContentFrameworkStore extends PersistedStore {
 }
 const prototype = DismissibleContentFrameworkStore.prototype;
 prototype["initialize"] = function initialize(numberOfDCsShownToday) {
-  let dailyCapOverridden;
   if (null != numberOfDCsShownToday) {
     let num = numberOfDCsShownToday.numberOfDCsShownToday;
     if (num == null) {
@@ -74,13 +80,13 @@ prototype["getRenderedAtTimestamp"] = function getRenderedAtTimestamp(closure_0)
 };
 prototype["hasUserHitDCCap"] = function hasUserHitDCCap(PASSWORDLESS_UPSELL, closure_1) {
   if (null != PASSWORDLESS_UPSELL) {
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require(1382) /* set */.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = set2.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     return false;
   }
   if (null != PASSWORDLESS_UPSELL) {
     let result = null != closure_1;
     if (result) {
-      let obj = require(1378) /* isSingleUseDismissibleContent */;
+      obj = isSingleUseDismissibleContent;
       result = obj.isGuildDismissibleContent(PASSWORDLESS_UPSELL);
     }
     if (result) {
@@ -109,7 +115,7 @@ prototype["hasUserHitDCCap"] = function hasUserHitDCCap(PASSWORDLESS_UPSELL, clo
   if (tmp12) {
     obj.numberOfDCsShownToday = 0;
     obj.dailyCapPeriodStart = null;
-    let c5 = false;
+    c5 = false;
   }
   let tmp17 = tmp16;
   if (obj.numberOfDCsShownToday >= 3) {
@@ -119,7 +125,7 @@ prototype["hasUserHitDCCap"] = function hasUserHitDCCap(PASSWORDLESS_UPSELL, clo
     c5 = true;
     obj = { shown_dcs: null };
     obj[0] = obj.numberOfDCsShownToday;
-    tmp2.info("Daily cap in effect, suppressing fatigable content until tomorrow", obj);
+    logger.info("Daily cap in effect, suppressing fatigable content until tomorrow", obj);
   }
   return obj.numberOfDCsShownToday >= 3;
 };
@@ -134,8 +140,8 @@ const items = [
 DismissibleContentFrameworkStore.migrations = items;
 obj = {
   LOGOUT: function handleLogout() {
-    let c5 = false;
-    const obj = {};
+    c5 = false;
+    obj = {};
     const merged = Object.assign(obj);
     obj.dismissibleContentSeenDuringSession = new Set();
     const set = new Set();
@@ -150,15 +156,13 @@ obj = {
     obj.newUserMinAgeRequiredOverridden = value.value;
   },
   DCF_HANDLE_DC_SHOWN: function handleDCShownToUser(arg0) {
-    let dismissibleContent;
-    let guildId;
     ({ dismissibleContent, guildId } = arg0);
     const renderedAtTimestamps = obj.renderedAtTimestamps;
     const result = renderedAtTimestamps.set(dismissibleContent, new Date().getTime());
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require(1382) /* set */.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = set2.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     if (!CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(dismissibleContent)) {
       if (!obj.dailyCapOverridden) {
-        let result1 = tmp2(1378).isGuildDismissibleContent(dismissibleContent);
+        let result1 = isSingleUseDismissibleContent.isGuildDismissibleContent(dismissibleContent);
         if (result1) {
           result1 = null != guildId;
         }
@@ -189,14 +193,14 @@ obj = {
               obj = { dismissible_content: null, shown_dcs: null };
               obj[0] = dismissibleContent;
               obj[1] = obj.numberOfDCsShownToday;
-              tmp2.info("Daily cap reached", obj);
+              logger.info("Daily cap reached", obj);
             }
             if (obj.numberOfDCsShownToday > 3) {
               obj = { cap_type: "daily_cap", dismissible_content: null, shown_dcs: null };
               obj[1] = dismissibleContent;
               obj[2] = obj.numberOfDCsShownToday;
-              importDefault(698).track(AnalyticEvents.DCF_CAP_EXCEEDED, obj);
-              const obj7 = importDefault(698);
+              expandEventPropertiesDefault.track(AnalyticEvents.DCF_CAP_EXCEEDED, obj);
+              const obj7 = expandEventPropertiesDefault;
             }
           } else {
             const seenForGuildId = obj.seenForGuildId;
@@ -206,7 +210,7 @@ obj = {
         } else {
           const dismissibleContentSeenDuringSession = obj.dismissibleContentSeenDuringSession;
         }
-        const tmp2Result = tmp2(1378);
+        const tmp2Result = isSingleUseDismissibleContent;
       }
     }
   },
@@ -220,7 +224,7 @@ obj = {
     dismissibleContent = dismissibleContent.dismissibleContent;
     let tmp3 = null;
     if (null != dismissibleContent) {
-      const obj = { content: null, guildId: null };
+      obj = { content: null, guildId: null };
       obj[0] = dismissibleContent;
       obj[1] = tmp;
       tmp3 = obj;
@@ -228,7 +232,7 @@ obj = {
     obj.lastDismissed = tmp3;
   },
   DCF_RESET: function resetStore() {
-    let c5 = false;
+    c5 = false;
     obj.dailyCapPeriodStart = null;
     obj.numberOfDCsShownToday = 0;
     obj.dismissibleContentSeenDuringSession = new Set();
@@ -237,7 +241,7 @@ obj = {
     obj.lastDismissed = null;
   }
 };
-const dismissibleContentFrameworkStore = new DismissibleContentFrameworkStore(require("dispatcher"), obj);
+const dismissibleContentFrameworkStore = new DismissibleContentFrameworkStore(dispatcherDefault, obj);
 let result = set.fileFinishedImporting("modules/dismissible_content/DismissibleContentFrameworkStore.tsx");
 
 export default dismissibleContentFrameworkStore;

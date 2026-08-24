@@ -1,27 +1,28 @@
-// Module ID: 9859
-// Function ID: 9860
+// Module ID: 9898
+// Function ID: 9899
 // Name: XboxInstallAlert
-// Dependencies: [19, 9763, 21, 4661, 712, 4763, 1236, 1297, 9841, 500, 4090, 2]
+// Dependencies: [19, 9802, 21, 4668, 712, 4768, 1236, 1297, 9880, 500, 4093, 2]
 // Exports: default
 
-// Module 9859 (XboxInstallAlert)
-import "noop";
-import XBOX_URL_BASE from "XBOX_URL_BASE";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9898 (XboxInstallAlert)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import componentDidMountDefault from "componentDidMount" /* 4768 */;
+import XBOX_URL_BASE from "XBOX_URL_BASE" /* 9802 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
 const require = arg1;
+noopAll;
 ({ XBOX_ANDROID_APP_LINK: c3, XBOX_IOS_APP_LINK: c4 } = XBOX_URL_BASE);
 createCacheKey = { externalLinkIcon: null };
-createCacheKey = { tintColor: require("Themes").colors.WHITE, width: 20, height: 20, marginLeft: 8 };
+createCacheKey = { tintColor: ThemesDefault.colors.WHITE, width: 20, height: 20, marginLeft: 8 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/game_console/native/XboxInstallAlert.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/game_console/native/XboxInstallAlert.tsx");
 
 export default function XboxInstallAlert(arg0) {
-  const _require = createCacheKey();
+  const _require = callback();
   let obj = {};
   const merged = Object.assign(arg0);
   const intl = _require(1236).intl;
@@ -34,20 +35,17 @@ export default function XboxInstallAlert(arg0) {
   obj.cancelText = intl4.string(_require(1236).t.kYaBOg);
   obj.fillCancelText = true;
   obj.renderConfirmRightIcon = function renderConfirmRightIcon() {
-    const obj = { source: null, style: null };
-    obj[0] = outer1_1(outer1_2[8]);
-    obj[1] = lib.externalLinkIcon;
-    return outer1_5(lib(outer1_2[7]).Icon, obj);
+    return closure_1_5(lib(closure_1_2[7]).Icon, { source: closure_1_1(closure_1_2[8]), style: lib.externalLinkIcon });
   };
   obj.onConfirm = function onConfirm() {
     const obj = lib(500);
     const isAndroidResult = lib(500).isAndroid();
-    const openURL = callback(4090).openURL;
+    const openURL = callback(4093).openURL;
     if (isAndroidResult) {
       openURL(closure_3);
     } else {
       openURL(closure_4);
     }
   };
-  return jsx(importDefault(4763), {});
+  return jsx(componentDidMountDefault, {});
 };

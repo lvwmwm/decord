@@ -1,14 +1,16 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13324
+// Function ID: 13325
 // Name: isLatest
-// Dependencies: [4031, 4772, 4803, 11, 2]
+// Dependencies: [4034, 4777, 4808, 11, 2]
 
-// Module 13266 (isLatest)
-import hasFlag from "hasFlag";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
+// Module 13324 (isLatest)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+import closure_3 from "hasFlag" /* 4034 */;
+import closure_4 from "generateOldThreadCutoff" /* 4777 */;
 
-const require = arg1;
-let result = require("createMinimalMessageRecord").fileFinishedImporting("modules/message_previews/PreviewData.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("modules/message_previews/PreviewData.tsx");
 class PreviewData {
   constructor() {
     obj = Object.create(new.target.prototype);
@@ -58,11 +60,11 @@ prototype["messageRecord"] = function messageRecord(arg0) {
   const value = messages.get(arg0);
   let tmp2 = null == value || null == value.message;
   if (!tmp2) {
-    tmp2 = value.message instanceof hasFlag;
+    tmp2 = value.message instanceof closure_3;
   }
   if (!tmp2) {
-    value.message = require(4803) /* createMinimalMessageRecord */.createMessageRecord(value.message);
-    const obj = require(4803) /* createMinimalMessageRecord */;
+    value.message = createMinimalMessageRecord.createMessageRecord(value.message);
+    const obj = createMinimalMessageRecord;
   }
   let message;
   if (value != null) {
@@ -96,8 +98,8 @@ prototype["putNew"] = function putNew(channelId, first, c6) {
     }
     let tmp4 = null == id;
     if (!tmp4) {
-      tmp4 = importDefault(11).compare(first.id, id) > 0;
-      const obj = importDefault(11);
+      tmp4 = DISCORD_EPOCHDefault.compare(first.id, id) > 0;
+      const obj = DISCORD_EPOCHDefault;
     }
     tmp2 = tmp4;
   }
@@ -129,7 +131,7 @@ prototype["update"] = function update(id) {
         }
       }
       if (id === id.id) {
-        let obj = require(4803) /* createMinimalMessageRecord */;
+        let obj = createMinimalMessageRecord;
         if (tmp3) {
           let updateMessageRecordResult = obj.updateMessageRecord(merged.message, id);
         } else {
@@ -140,7 +142,7 @@ prototype["update"] = function update(id) {
         merged = Object.assign(merged);
         obj.message = updateMessageRecordResult;
         self = messages.set(channel_id, obj);
-        tmp3 = merged.message instanceof hasFlag;
+        tmp3 = merged.message instanceof closure_3;
       }
     }
   }

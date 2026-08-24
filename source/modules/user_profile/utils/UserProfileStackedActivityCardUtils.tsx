@@ -1,16 +1,19 @@
-// Module ID: 12144
-// Function ID: 12145
+// Module ID: 12196
+// Function ID: 12197
 // Name: getUserProfileLiveActivities
 // Dependencies: [676, 12, 2]
 // Exports: getUserProfileLiveActivities, getUserProfileStackedActivityCards
 
-// Module 12144 (getUserProfileLiveActivities)
-import { ActivityTypes } from "ME";
+// Module 12196 (getUserProfileLiveActivities)
+import set from "set" /* 2 */;
+import apply from "apply" /* 12 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/user_profile/utils/UserProfileStackedActivityCardUtils.tsx");
+const ActivityTypes = ME.ActivityTypes;
+const result = set.fileFinishedImporting("modules/user_profile/utils/UserProfileStackedActivityCardUtils.tsx");
 
 export const getUserProfileLiveActivities = function getUserProfileLiveActivities(stateFromStores1) {
-  return require(12) /* apply */.uniqWith(stateFromStores1.filter((type) => {
+  return apply.uniqWith(stateFromStores1.filter((type) => {
     type = type.type;
     return type !== constants.CUSTOM_STATUS && type !== constants.HANG_STATUS;
   }), (application_id, application_id2) => {
@@ -23,11 +26,6 @@ export const getUserProfileLiveActivities = function getUserProfileLiveActivitie
   });
 };
 export const getUserProfileStackedActivityCards = function getUserProfileStackedActivityCards(arg0) {
-  let isPrivate;
-  let live;
-  let stream;
-  let voiceActivity;
-  let voiceChannel;
   ({ stream, live } = arg0);
   if (live === undefined) {
     live = [];

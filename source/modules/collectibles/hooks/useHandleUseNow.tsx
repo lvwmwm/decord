@@ -1,21 +1,21 @@
-// Module ID: 10396
-// Function ID: 10397
+// Module ID: 10435
+// Function ID: 10436
 // Name: useHandleUseNow
-// Dependencies: [5, 32, 19, 678, 1949, 1236, 9205, 10397, 8377, 8620, 2]
+// Dependencies: [5, 32, 19, 678, 1949, 1236, 9242, 10436, 8416, 8657, 2]
 // Exports: useHandleUseNow
 
-// Module 10396 (useHandleUseNow)
-import getSystemLocale from "getSystemLocale";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { isExternalProduct } from "items";
+// Module 10435 (useHandleUseNow)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { isExternalProduct } from "items" /* 678 */;
 
 let require = arg1;
-const result = require("noop").fileFinishedImporting("modules/collectibles/hooks/useHandleUseNow.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useHandleUseNow.tsx");
 
 export const useHandleUseNow = function useHandleUseNow(product) {
   product = product.product;
-  const require = product;
+  require = product;
   const onSuccess = product.onSuccess;
   const onError = product.onError;
   let callback;
@@ -89,7 +89,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -105,18 +105,18 @@ export const useHandleUseNow = function useHandleUseNow(product) {
               return obj;
             } else {
               const callback2 = tmp4;
-              let getSystemLocale = tmp8;
-              let c0;
-              if (!outer1_8) {
+              closure_2 = tmp8;
+              c0 = undefined;
+              if (!closure_1_8) {
                 c7 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
-                outer1_3(true);
-                const obj1 = {};
+                closure_1_3(true);
+                obj1 = {};
                 c0 = obj1;
-                let c5 = 2;
-                if (null != outer1_4) {
-                  obj1.avatarDecoration = outer1_4;
+                c5 = 2;
+                if (null != closure_1_4) {
+                  obj1.avatarDecoration = closure_1_4;
                 }
                 if (null == c5) {
                   if (null == c7) {
@@ -125,7 +125,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
                     }
                     const _Object = Object;
                     if (Object.keys(c0).length > 0) {
-                      let obj3 = outer1_0(outer1_1[9]);
+                      let obj3 = closure_1_0(closure_1_1[9]);
                       c6 = 4;
                       c7 = 1;
                       const obj2 = { value: null, done: false };
@@ -141,7 +141,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
                     }
                   }
                 }
-                let obj5 = outer1_0(outer1_1[7]);
+                let obj5 = closure_1_0(closure_1_1[7]);
                 c0 = tmp21;
                 if (c5 == null) {
                   c0 = undefined;
@@ -157,15 +157,15 @@ export const useHandleUseNow = function useHandleUseNow(product) {
                 c6 = 3;
                 c7 = 1;
                 const obj4 = { value: null, done: false };
-                obj4[0] = outer1_0(outer1_1[8]).saveProfileChanges(profileChangesForUpdateRequest);
+                obj4[0] = closure_1_0(closure_1_1[8]).saveProfileChanges(profileChangesForUpdateRequest);
                 return obj4;
               }
             }
           } else if (1 !== tmp8) {
             if (2 === tmp8) {
               c5 = 1;
-              callback = noop;
-              if (getSystemLocale != null) {
+              callback = closure_4;
+              if (closure_2 != null) {
                 tmp13(callback);
               }
             } else if (3 === tmp8) {
@@ -194,9 +194,9 @@ export const useHandleUseNow = function useHandleUseNow(product) {
           }
           c5 = 0;
           callback2(false);
-          throw noop;
+          throw closure_4;
         } catch (tmp48) {
-          noop = tmp48;
+          closure_4 = tmp48;
           if (tmp5 === c5) {
             c7 = tmp3;
             throw tmp48;

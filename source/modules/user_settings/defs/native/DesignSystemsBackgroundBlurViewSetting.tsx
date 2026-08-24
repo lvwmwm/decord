@@ -1,25 +1,28 @@
-// Module ID: 14914
-// Function ID: 14915
+// Module ID: 14978
+// Function ID: 14979
 // Name: route
-// Dependencies: [8198, 676, 10669, 14913, 2]
+// Dependencies: [8238, 676, 10708, 14977, 2]
 
-// Module 14914 (route)
-import createToggle from "createToggle";
+// Module 14978 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
     return "Blur";
   },
-  parent: require("MobileUserSettings").MobileUserSettings.DESIGN_SYSTEMS,
+  parent: MobileUserSettings.MobileUserSettings.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW,
+  route: ME.UserSettingsSections.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW,
   getComponent() {
-    return require(14913) /* DemoModal */.default;
+    return require(14977) /* DemoModal */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsBackgroundBlurViewSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsBackgroundBlurViewSetting.tsx");
 
 export default route;

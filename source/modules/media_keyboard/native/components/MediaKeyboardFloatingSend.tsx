@@ -1,17 +1,16 @@
-// Module ID: 15981
-// Function ID: 15982
-// Dependencies: [32, 19, 17, 4824, 21, 4661, 712, 589, 4115, 1629, 4744, 689, 4756, 8818, 1236, 4320, 2]
+// Module ID: 16078
+// Function ID: 16079
+// Dependencies: [32, 19, 17, 4829, 21, 4668, 712, 589, 4119, 1629, 4749, 689, 4761, 8855, 1236, 4324, 2]
 
-// Module 15981
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import { StyleSheet } from "get ActivityIndicator";
-import map from "map";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16078
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { StyleSheet } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "map" /* 4829 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
 const require = arg1;
 let c4 = importAllResult;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -19,11 +18,11 @@ let obj = { sendContainer: null, gradient: null };
 obj = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj.top = undefined;
-const merged1 = Object.assign(require("Themes").shadows.SHADOW_HIGH);
+const merged1 = Object.assign(ThemesDefault.shadows.SHADOW_HIGH);
 obj[0] = obj;
 createCacheKey = {};
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
-createCacheKey.color = require("Themes").colors.BACKGROUND_SURFACE_HIGH;
+createCacheKey.color = ThemesDefault.colors.BACKGROUND_SURFACE_HIGH;
 obj[1] = createCacheKey;
 let closure_8 = createCacheKey.createStyles(obj);
 let closure_9 = { code: "function MediaKeyboardFloatingSendTsx1(){const{animatedIndex,INDEX_HEADER_CHANGE_THRESHOLD,hasUploads}=this.__closure;const isSheetOpen=animatedIndex.get()>INDEX_HEADER_CHANGE_THRESHOLD;return isSheetOpen&&hasUploads;}" };
@@ -31,10 +30,6 @@ let closure_10 = { code: "function MediaKeyboardFloatingSendTsx2(visible){const{
 let closure_11 = { code: "function MediaKeyboardFloatingSendTsx3(){const{insetFab,tokens,withSpring,sendVisibleSharedValue}=this.__closure;return{height:insetFab+tokens.space.PX_64+tokens.space.PX_32,opacity:withSpring(sendVisibleSharedValue.get()?1:0)};}" };
 let closure_12 = { code: "function MediaKeyboardFloatingSendTsx4(){const{sendVisibleSharedValue}=this.__closure;return{pointerEvents:sendVisibleSharedValue.get()?'box-none':'none'};}" };
 const memoResult = importAllResult.memo(importAllResult.forwardRef(function MediaKeyboardFloatingSendInner(onSend, ref) {
-  let animatedIndex;
-  let bottom;
-  let channelId;
-  let draftType;
   ({ animatedIndex, channelId, draftType } = onSend);
   animatedIndex = undefined;
   channelId = undefined;
@@ -51,10 +46,10 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef(function Medi
   draftType = bottom;
   sharedValue = undefined;
   sharedValue = undefined;
-  let obj1 = animatedIndex(tmp3[7]);
-  let items = [map];
+  obj1 = animatedIndex(tmp3[7]);
+  let items = [closure_5];
   const items1 = [channelId, draftType];
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getUploadCount(channelId, draftType) > 0, items1);
+  const stateFromStores = obj1.useStateFromStores(items, () => closure_1_5.getUploadCount(channelId, draftType) > 0, items1);
   sharedValue = stateFromStores;
   let obj2 = animatedIndex(tmp3[8]);
   sharedValue = obj2.useSharedValue(false);
@@ -129,6 +124,6 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef(function Medi
   obj[2] = items4;
   return callback2(channelId(draftType[8]).View, obj);
 }));
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardFloatingSend.tsx");
+let result = require("set").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardFloatingSend.tsx");
 
 export default memoResult;

@@ -1,16 +1,19 @@
-// Module ID: 10803
-// Function ID: 10804
+// Module ID: 10842
+// Function ID: 10843
 // Name: openPinnedMessages
-// Dependencies: [9922, 4230, 2]
+// Dependencies: [9961, 4234, 2]
 // Exports: default
 
-// Module 10803 (openPinnedMessages)
-import { ChannelDetailsNavigatorScreens as closure_2 } from "ChannelDetailsNavigatorScreens";
+// Module 10842 (openPinnedMessages)
+import set from "set" /* 2 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 9961 */;
 
-const result = require("set").fileFinishedImporting("modules/messages/native/openPinnedMessages.tsx");
+let closure_2 = ChannelDetailsNavigatorScreens.ChannelDetailsNavigatorScreens;
+const result = set.fileFinishedImporting("modules/messages/native/openPinnedMessages.tsx");
 
 export default function openPinnedMessages(arg0, arg1) {
-  let obj = require(4230) /* getRootNavigationRef */;
+  let obj = getRootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (tmp) {
     obj = { initialRouteName: null, channelId: null, source: null };

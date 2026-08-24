@@ -1,21 +1,17 @@
-// Module ID: 14209
-// Function ID: 14210
+// Module ID: 14277
+// Function ID: 14278
 // Name: ProfileToActivityUpsellActionSheet
-// Dependencies: [19, 21, 14208, 4066, 4342, 14210, 2]
+// Dependencies: [19, 21, 14276, 4069, 4346, 14278, 2]
 // Exports: default
 
-// Module 14209 (ProfileToActivityUpsellActionSheet)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 14277 (ProfileToActivityUpsellActionSheet)
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("computeAffectedGuilds").fileFinishedImporting("modules/activity_privacy/native/ProfileToActivityUpsellActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/activity_privacy/native/ProfileToActivityUpsellActionSheet.tsx");
 
 export default function ProfileToActivityUpsellActionSheet(direction) {
-  let confirmText;
-  let subtitle;
-  let title;
-  let toastContent;
   direction = direction.direction;
   const affectedGuildIds = direction.affectedGuildIds;
   const mappedActivityValue = direction.mappedActivityValue;

@@ -1,31 +1,31 @@
-// Module ID: 5578
-// Function ID: 5579
+// Module ID: 5585
+// Function ID: 5586
 // Name: CaterpillarIllocon
-// Dependencies: [21, 5449, 5579, 2]
+// Dependencies: [21, 5454, 5586, 2]
 // Exports: CaterpillarIllocon
 
-// Module 5578 (CaterpillarIllocon)
-import { jsx } from "jsxProd";
+// Module 5585 (CaterpillarIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5586 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CaterpillarIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CaterpillarIllocon.native.tsx");
 
 export const CaterpillarIllocon = function CaterpillarIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5579);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

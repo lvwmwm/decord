@@ -4,10 +4,13 @@
 // Dependencies: [360, 30]
 
 // Module 362 (shouldUseTurboAnimatedModule)
+import getAll from "get" /* 30 */;
+import shouldUseTurboAnimatedModuleDefault from "shouldUseTurboAnimatedModule" /* 360 */;
+
 let value = null;
-if (require("shouldUseTurboAnimatedModule")()) {
-  value = require("get").get("NativeAnimatedTurboModule");
-  const importAllResult = require("get");
+if (shouldUseTurboAnimatedModuleDefault()) {
+  value = getAll.get("NativeAnimatedTurboModule");
+  const importAllResult = getAll;
 }
 
 export default value;

@@ -1,13 +1,14 @@
-// Module ID: 5422
-// Function ID: 5423
+// Module ID: 5427
+// Function ID: 5428
 // Name: getHermesInstrumentedStatsSummary
-// Dependencies: [17, 5423, 2]
+// Dependencies: [17, 5428, 2]
 
-// Module 5422 (getHermesInstrumentedStatsSummary)
-import { NativeModules } from "get ActivityIndicator";
-import { ProcessUtils } from "ElectronProcessType";
+// Module 5427 (getHermesInstrumentedStatsSummary)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ElectronProcessType from "ElectronProcessType" /* 5428 */;
 
-let c1 = function getHermesInstrumentedStatsSummary() {
+let closure_1 = function getHermesInstrumentedStatsSummary() {
   const _HermesInternal = HermesInternal;
   if (null != _HermesInternal) {
     if (typeof _HermesInternal === "object") {
@@ -20,7 +21,6 @@ let c1 = function getHermesInstrumentedStatsSummary() {
               const _Object = Object;
               const entries = Object.entries(instrumentedStats);
               const found = entries.filter((arg0) => {
-                let tmp;
                 [, tmp] = arg0;
                 let isFiniteResult = typeof tmp === "number";
                 if (typeof tmp === "number") {
@@ -31,8 +31,6 @@ let c1 = function getHermesInstrumentedStatsSummary() {
               });
               const substr = found.slice(0, 6);
               const mapped = substr.map((arg0) => {
-                let tmp;
-                let tmp2;
                 [tmp, tmp2] = arg0;
                 return "" + tmp + "=" + tmp2;
               });
@@ -50,13 +48,15 @@ let c1 = function getHermesInstrumentedStatsSummary() {
     }
   }
 };
+const NativeModules = get_ActivityIndicator.NativeModules;
 let prop = NativeModules;
+const ProcessUtils = ElectronProcessType.ProcessUtils;
 class ProcessUtilsIOS extends ProcessUtils {
   constructor() {
-    c1 = undefined;
+    closure_1 = undefined;
     tmp5 = new ProcessUtilsIOS(tmp4, tmp3, new.target, new.target, undefined, tmp2, tmp, ProcessUtilsIOS);
     // ThrowIfThisInitialized (0x7c)
-    c1 = tmp5;
+    closure_1 = tmp5;
     tmp5.shouldCollectHermesInstrumentedStats = false;
     prop = undefined;
     if (SystemResourceManager != null) {
@@ -113,7 +113,7 @@ class ProcessUtilsIOS extends ProcessUtils {
       }
       let tmp4;
       if (tmp.shouldCollectHermesInstrumentedStats) {
-        tmp4 = _undefined();
+        tmp4 = callback();
       }
       currentCpuUsagePercent.hermesInstrumentedStatsSummary = tmp4;
     }, 1000);
@@ -137,7 +137,7 @@ prototype["setShouldCollectHermesInstrumentedStats"] = function setShouldCollect
   this.shouldCollectHermesInstrumentedStats = shouldCollectHermesInstrumentedStats;
   let tmp;
   if (shouldCollectHermesInstrumentedStats) {
-    tmp = _undefined();
+    tmp = callback();
   }
   this.hermesInstrumentedStatsSummary = tmp;
 };
@@ -215,10 +215,10 @@ function getCpuUsageElectronProcessTypeDetails() {
 }
 prototype["getCpuUsageElectronProcessTypeDetails"] = getCpuUsageElectronProcessTypeDetails;
 prop = undefined;
-c1 = undefined;
+closure_1 = undefined;
 tmp = new tmp(tmp4, tmp3, tmp2, ProcessUtilsIOS, new.target, undefined, NativeModules, globalThis, getCpuUsageElectronProcessTypeDetails, require, dependencyMap, exports);
 // ThrowIfThisInitialized (0x7c)
-c1 = tmp;
+closure_1 = tmp;
 tmp.shouldCollectHermesInstrumentedStats = false;
 prop = undefined;
 if (NativeModules != null) {
@@ -274,10 +274,10 @@ let timerId = setInterval(() => {
   }
   let tmp4;
   if (tmp.shouldCollectHermesInstrumentedStats) {
-    tmp4 = _undefined();
+    tmp4 = callback();
   }
   currentCpuUsagePercent.hermesInstrumentedStatsSummary = tmp4;
 }, 1000);
-const result = require("set").fileFinishedImporting("utils/ProcessUtils.native.tsx");
+const result = set.fileFinishedImporting("utils/ProcessUtils.native.tsx");
 
 export default tmp;

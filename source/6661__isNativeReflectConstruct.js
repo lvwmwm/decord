@@ -1,17 +1,21 @@
 // Module ID: 6661
 // Function ID: 6662
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 6660, 6655, 6595]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 6662, 6645, 6646]
 
 // Module 6661 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
+import noopDefault from "noop" /* 19 */;
+import _inheritsDefault from "_inherits" /* 98 */;
+import extractFeFloodDefault from "extractFeFlood" /* 6645 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 6646 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 6662 */;
+import closure_3 from "_classCallCheck" /* 41 */;
+import closure_4 from "_possibleConstructorReturn" /* 93 */;
+import closure_5 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const Polyline = importDefault;
+const FeFlood = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -23,68 +27,60 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
-class Polyline {
+noopDefault;
+class FeFlood {
   constructor() {
     self = this;
-    items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
-    items1 = [...items];
-    tmp2 = __esModule;
-    obj = __esModule(apply);
-    tmp3 = __esModule;
+    tmp = closure_3(this, FeFlood);
+    tmp2 = closure_5;
+    obj = closure_5(FeFlood);
+    tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
-    tmp3Result.setNativeProps = (points) => {
-      points = points.points;
-      if (points) {
-        const _HermesInternal = HermesInternal;
-        points.d = "M" + _undefined(outer1_1[7])(points);
-      }
-      if (_undefined.root) {
-        const root = _undefined.root;
-        root.setNativeProps(points);
-      }
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Polyline, require("_isNativeReflectConstruct"));
-let items = [
-  {
-    key: "render",
-    value: function render() {
-      const props = this.props;
-      const points = props.points;
-      const obj = { ref: this.refMethod, d: null };
-      let combined = points;
-      if (points) {
-        const _HermesInternal = HermesInternal;
-        combined = "M" + Polyline(6660)(points);
+_inheritsDefault(FeFlood, _isNativeReflectConstructDefault);
+let obj = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
       }
-      obj[1] = combined;
-      const merged = Object.assign(props);
-      return jsx(Polyline(6655), { ref: this.refMethod, d: null });
-    }
+    };
+    const tmp = __INTERNAL_VIEW_CONFIGDefault;
+    const merged = Object.assign(self(6645).extractFilter(this.props));
+    const merged1 = Object.assign(extractFeFloodDefault(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
-];
-const importDefaultResultResult = importDefaultResult(Polyline, items);
-importDefaultResultResult.displayName = "Polyline";
-importDefaultResultResult.defaultProps = { points: "" };
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeFlood, items);
+importDefaultResultResult.displayName = "FeFlood";
+obj = {};
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.floodColor = "black";
+obj.floodOpacity = 1;
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

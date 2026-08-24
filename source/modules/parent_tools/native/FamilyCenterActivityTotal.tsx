@@ -1,38 +1,41 @@
-// Module ID: 14252
-// Function ID: 14253
+// Module ID: 14320
+// Function ID: 14321
 // Name: FamilyCenterActivityTotal
-// Dependencies: [19, 17, 21, 4661, 712, 14251, 5363, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 14319, 5368, 4739, 2]
 // Exports: default
 
-// Module 14252 (FamilyCenterActivityTotal)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14320 (FamilyCenterActivityTotal)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 5368 */;
+import useActionsForDisplayType from "useActionsForDisplayType" /* 14319 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 createCacheKey = { container: null };
-createCacheKey = { display: "flex", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, padding: 12, justifyContent: "center", alignItems: "center", borderRadius: require("Themes").radii.md };
-const merged = Object.assign(require("Themes").shadows.SHADOW_LEDGE);
+createCacheKey = { display: "flex", backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST, padding: 12, justifyContent: "center", alignItems: "center", borderRadius: ThemesDefault.radii.md };
+const merged = Object.assign(ThemesDefault.shadows.SHADOW_LEDGE);
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityTotal.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityTotal.tsx");
 
 export default function FamilyCenterActivityTotal(displayType) {
   displayType = displayType.displayType;
-  let obj = require(14251) /* useActionsForDisplayType */;
+  let obj = useActionsForDisplayType;
   const actionTotalsForDisplayType = obj.useActionTotalsForDisplayType(displayType);
-  const tmp = createCacheKey();
-  let num = require(14251) /* useActionsForDisplayType */.useFormattedTotalForDisplayType(displayType);
+  const tmp = callback();
+  let num = useActionsForDisplayType.useFormattedTotalForDisplayType(displayType);
   let str = "text-muted";
   if (actionTotalsForDisplayType > 0) {
     str = "text-brand";
   }
-  const obj2 = require(14251) /* useActionsForDisplayType */;
-  const activityTypeTextConfigs = require(5363) /* getEmptyActivityFormatter */.getActivityTypeTextConfigs();
+  const obj2 = useActionsForDisplayType;
+  const activityTypeTextConfigs = getEmptyActivityFormatter.getActivityTypeTextConfigs();
   const value = activityTypeTextConfigs.get(displayType);
   let tooltipHeaderResult;
   if (value != null) {
@@ -44,7 +47,7 @@ export default function FamilyCenterActivityTotal(displayType) {
     num = 0;
   }
   obj[2] = num;
-  const items = [closure_3(require(4734) /* Text */.Text, obj), closure_3(require(4734) /* Text */.Text, { variant: "text-sm/semibold", children: tooltipHeaderResult })];
+  const items = [closure_3(Text.Text, obj), closure_3(Text.Text, { variant: "text-sm/semibold", children: tooltipHeaderResult })];
   obj[1] = items;
   return closure_4(View, obj);
 };

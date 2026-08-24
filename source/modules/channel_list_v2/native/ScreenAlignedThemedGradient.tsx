@@ -1,38 +1,39 @@
-// Module ID: 15503
-// Function ID: 15504
+// Module ID: 15568
+// Function ID: 15569
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 4661, 11259, 8503, 9091, 15288, 4115, 2]
+// Dependencies: [17, 21, 4668, 11310, 8542, 9128, 15352, 4119, 2]
 // Exports: ScreenAlignedThemedGradientSliding, default
 
-// Module 15503 (ScreenAlignedThemedGradient)
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15568 (ScreenAlignedThemedGradient)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import useActiveThemeType from "useActiveThemeType" /* 8542 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 9128 */;
+import tDefault from "t" /* 11310 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
 ({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
+const jsx = jsxProd.jsx;
 let closure_6 = createCacheKey.createStyles((arg0, arg1) => {
   let obj = { container: null };
   obj = {};
   const merged = Object.assign(closure_3.absoluteFillObject);
-  obj = { translateX: importDefault(11259)(-arg0) };
-  const items = [obj, { translateY: importDefault(11259)(-arg1) }];
+  obj = { translateX: tDefault(-arg0) };
+  const items = [obj, { translateY: tDefault(-arg1) }];
   obj.transform = items;
   obj[0] = obj;
   return obj;
 });
 let closure_7 = { code: "function ScreenAlignedThemedGradientTsx1(){const{roundToNearestPixel,offsetX,panelSpringTranslateX,offsetY}=this.__closure;return{transform:[{translateX:roundToNearestPixel(-offsetX-panelSpringTranslateX.get())},{translateY:roundToNearestPixel(-offsetY)}]};}" };
-const result = require("createCacheKey").fileFinishedImporting("modules/channel_list_v2/native/ScreenAlignedThemedGradient.tsx");
+const result = set.fileFinishedImporting("modules/channel_list_v2/native/ScreenAlignedThemedGradient.tsx");
 
 export default function ScreenAlignedThemedGradient(arg0) {
-  let offsetX;
-  let offsetY;
   ({ offsetX, offsetY } = arg0);
-  let obj = require(8503) /* useActiveThemeType */;
+  let obj = useActiveThemeType;
   const isClientThemeOrCustomThemeActive = obj.useIsClientThemeOrCustomThemeActive();
-  obj = { pointerEvents: "none", style: callback(offsetX, offsetY).container, children: jsx(importDefault(9091), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive }) };
-  return <closure_4 pointerEvents="none" style={callback(offsetX, offsetY).container}>{jsx(importDefault(9091), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive })}</closure_4>;
+  obj = { pointerEvents: "none", style: callback(offsetX, offsetY).container, children: jsx(getMixedGradientColorDefault, { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive }) };
+  return <closure_4 pointerEvents="none" style={callback(offsetX, offsetY).container}>{jsx(getMixedGradientColorDefault, { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive })}</closure_4>;
 };
 export const ScreenAlignedThemedGradientSliding = function ScreenAlignedThemedGradientSliding(offsetX) {
   offsetX = offsetX.offsetX;
@@ -44,8 +45,7 @@ export const ScreenAlignedThemedGradientSliding = function ScreenAlignedThemedGr
   const obj2 = offsetX(panelSpringTranslateX[6]);
   const fn = function o() {
     let obj = { transform: null };
-    obj = { translateX: null };
-    obj[0] = offsetY(panelSpringTranslateX[3])(-offsetX - panelSpringTranslateX.get());
+    obj = { translateX: offsetY(panelSpringTranslateX[3])(-offsetX - panelSpringTranslateX.get()) };
     const items = [obj, ];
     obj = { translateY: offsetY(panelSpringTranslateX[3])(-offsetY) };
     items[1] = obj;
@@ -57,8 +57,7 @@ export const ScreenAlignedThemedGradientSliding = function ScreenAlignedThemedGr
   fn.__workletHash = 9541788107322;
   fn.__initData = closure_7;
   const animatedStyle = offsetX(panelSpringTranslateX[7]).useAnimatedStyle(fn);
-  obj = { pointerEvents: "none", style: items, children: null };
+  obj = { pointerEvents: "none", style: items, children: jsx(offsetY(panelSpringTranslateX[5]), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive }) };
   items = [closure_3.absoluteFill, animatedStyle];
-  obj[2] = jsx(offsetY(panelSpringTranslateX[5]), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive });
-  return jsx(offsetY(panelSpringTranslateX[7]).View, { pointerEvents: "none", style: items, children: null });
+  return jsx(offsetY(panelSpringTranslateX[7]).View, { pointerEvents: "none", style: items, children: jsx(offsetY(panelSpringTranslateX[5]), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive }) });
 };

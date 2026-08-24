@@ -1,36 +1,29 @@
-// Module ID: 9524
-// Function ID: 9525
+// Module ID: 9561
+// Function ID: 9562
 // Name: styles
-// Dependencies: [19, 17, 21, 4661, 712, 1435, 9525, 5433, 9526, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1435, 9562, 5438, 9563, 2]
 // Exports: default
 
-// Module 9524 (styles)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9561 (styles)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { gameIcon: { width: 32, height: 32 }, gameIconImage: null, gameIconMask: null, fireIcon: null };
-createCacheKey = { width: 32, height: 32, borderRadius: require("Themes").radii.xs, borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_STRONG };
+createCacheKey = { width: 32, height: 32, borderRadius: ThemesDefault.radii.xs, borderWidth: 1, borderStyle: "solid", borderColor: ThemesDefault.colors.BORDER_STRONG };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { position: "absolute", top: -4, right: -4, display: "flex", justifyContent: "center", alignItems: "center", padding: 2, width: 18, height: 18, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, borderRadius: require("Themes").radii.sm };
+createCacheKey[2] = { position: "absolute", top: -4, right: -4, display: "flex", justifyContent: "center", alignItems: "center", padding: 2, width: 18, height: 18, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, borderRadius: ThemesDefault.radii.sm };
 createCacheKey[3] = { marginTop: -1, width: 14, height: 14 };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { position: "absolute", top: -4, right: -4, display: "flex", justifyContent: "center", alignItems: "center", padding: 2, width: 18, height: 18, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, borderRadius: require("Themes").radii.sm };
-const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/GameIcon.tsx");
+let obj1 = { position: "absolute", top: -4, right: -4, display: "flex", justifyContent: "center", alignItems: "center", padding: 2, width: 18, height: 18, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, borderRadius: ThemesDefault.radii.sm };
+const result = require("set").fileFinishedImporting("modules/guild_profile/native/components/GameIcon.tsx");
 
 export default function GameIcon(arg0) {
-  let activityLevel;
-  let game;
-  let onPress;
-  let style;
   ({ style, game } = arg0);
   ({ activityLevel, onPress } = arg0);
   let fireIcon = createCacheKey();
@@ -68,9 +61,9 @@ export default function GameIcon(arg0) {
       callback[0] = callback(closure_5, obj);
       if (style) {
         source = closure_4;
-        const obj1 = { style: null, children: null };
+        obj1 = { style: null, children: null };
         obj1[0] = fireIcon.gameIconMask;
-        FireIcon = FireIcon(9526).FireIcon;
+        FireIcon = FireIcon(9563).FireIcon;
         const obj2 = { style: null, color: null };
         fireIcon = fireIcon.fireIcon;
         obj2[0] = fireIcon;
@@ -81,7 +74,7 @@ export default function GameIcon(arg0) {
       }
       callback[1] = style;
       obj[2] = callback;
-      let tmp14Result = closure_7(FireIcon(5433).PressableHighlight, obj);
+      let tmp14Result = closure_7(FireIcon(5438).PressableHighlight, obj);
       const tmp10 = closure_7;
     } else {
       const obj3 = { style: null, children: null };
@@ -98,7 +91,7 @@ export default function GameIcon(arg0) {
         const obj6 = { style: null, color: null };
         obj6[0] = fireIcon.fireIcon;
         obj6[1] = onPress(712).unsafe_rawColors.ORANGE_330;
-        obj5[1] = tmp16(FireIcon(9526).FireIcon, obj6);
+        obj5[1] = tmp16(FireIcon(9563).FireIcon, obj6);
         tmp16Result = tmp16(tmp15, obj5);
       }
       items3[1] = tmp16Result;

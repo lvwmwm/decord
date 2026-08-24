@@ -5,12 +5,13 @@
 // Exports: adjustTransactionDuration, cancelInBackground, ignoreEmptyBackNavigation, ignoreEmptyRouteChangeTransactions, onThisSpanEnd, onlySampleIfChildSpans
 
 // Module 1161 (onThisSpanEnd)
-import { AppState } from "get ActivityIndicator";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const AppState = get_ActivityIndicator.AppState;
 
 export const onThisSpanEnd = function onThisSpanEnd(on) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
+  closure_0 = arg1;
+  closure_1 = arg2;
   on.on("spanEnd", (arg0) => {
     if (closure_0 === arg0) {
       callback(arg0);
@@ -19,7 +20,7 @@ export const onThisSpanEnd = function onThisSpanEnd(on) {
 };
 export const adjustTransactionDuration = (on, activeSpan) => {
   const _require = activeSpan;
-  const dependencyMap = arg2;
+  dependencyMap = arg2;
   if (obj.isRootSpan(activeSpan)) {
     on.on("spanEnd", (arg0) => {
       let obj = activeSpan;
@@ -55,9 +56,9 @@ export const adjustTransactionDuration = (on, activeSpan) => {
   }
 };
 export const ignoreEmptyBackNavigation = (on, c4) => {
-  let closure_0 = c4;
-  const f69347 = (arg0) => {
-    const data = c4(f69347[2]).spanToJSON(arg0).data;
+  closure_0 = c4;
+  const f69903 = (arg0) => {
+    const data = c4(f69903[2]).spanToJSON(arg0).data;
     let prop;
     if (null !== data) {
       if (undefined !== data) {
@@ -66,8 +67,8 @@ export const ignoreEmptyBackNavigation = (on, c4) => {
     }
     return true === prop;
   };
-  const f69348 = () => {
-    const debug = c4(f69347[2]).debug;
+  const f69904 = () => {
+    const debug = c4(f69903[2]).debug;
     debug.log("Not sampling transaction as route has been seen before. Pass ignoreEmptyBackNavigationTransactions = false to disable this feature.");
   };
   if (on) {
@@ -78,25 +79,25 @@ export const ignoreEmptyBackNavigation = (on, c4) => {
         if (tmpResult.isSentrySpan(c4)) {
           on.on("spanEnd", (arg0) => {
             if (arg0 === c4) {
-              if (f69349(tmp)) {
+              if (f69905(tmp)) {
                 c4 = tmp;
-                const spanDescendants = c4(f69349[2]).getSpanDescendants(tmp);
+                const spanDescendants = c4(f69905[2]).getSpanDescendants(tmp);
                 if (spanDescendants.filter((spanContext) => {
-                  tmp = spanContext.spanContext().spanId !== tmp.spanContext().spanId;
+                  let tmp = spanContext.spanContext().spanId !== lib.spanContext().spanId;
                   if (tmp) {
-                    tmp = "ui.load.initial_display" !== tmp(outer1_1[2]).spanToJSON(spanContext).op;
-                    const obj = tmp(outer1_1[2]);
+                    tmp = "ui.load.initial_display" !== lib(closure_1_1[2]).spanToJSON(spanContext).op;
+                    const obj = lib(closure_1_1[2]);
                   }
                   if (tmp) {
-                    tmp = "navigation.processing" !== tmp(outer1_1[2]).spanToJSON(spanContext).op;
-                    const obj2 = tmp(outer1_1[2]);
+                    tmp = "navigation.processing" !== lib(closure_1_1[2]).spanToJSON(spanContext).op;
+                    const obj2 = lib(closure_1_1[2]);
                   }
                   return tmp;
                 }).length <= 0) {
-                  f69350(tmp);
+                  f69906(tmp);
                   tmp._sampled = false;
                 }
-                let obj = c4(f69349[2]);
+                let obj = c4(f69905[2]);
               }
             }
           });
@@ -114,13 +115,13 @@ export const ignoreEmptyBackNavigation = (on, c4) => {
   }
 };
 export const ignoreEmptyRouteChangeTransactions = (on, c4) => {
-  let closure_0 = on;
-  let f69349 = arg2;
-  let f69350 = arg3;
+  closure_0 = on;
+  let f69905 = arg2;
+  let f69906 = arg3;
   closure_0 = c4;
-  f69349 = (arg0) => {
-    const spanToJSONResult = c4(f69349[2]).spanToJSON(arg0);
-    let tmp2 = spanToJSONResult.description === f69349;
+  f69905 = (arg0) => {
+    const spanToJSONResult = c4(f69905[2]).spanToJSON(arg0);
+    let tmp2 = spanToJSONResult.description === f69905;
     if (tmp2) {
       const data = spanToJSONResult.data;
       let prop;
@@ -132,13 +133,13 @@ export const ignoreEmptyRouteChangeTransactions = (on, c4) => {
       tmp2 = !prop;
     }
     if (tmp2) {
-      tmp2 = f69350();
+      tmp2 = f69906();
     }
     return tmp2;
   };
-  f69350 = (arg0) => {
-    const debug = c4(f69349[2]).debug;
-    debug.log("Discarding empty \"" + f69349 + "\" transaction that never received route information.");
+  f69906 = (arg0) => {
+    const debug = c4(f69905[2]).debug;
+    debug.log("Discarding empty \"" + f69905 + "\" transaction that never received route information.");
     if (null != c4) {
       c4.recordDroppedEvent("sample_rate", "transaction");
     }
@@ -151,25 +152,25 @@ export const ignoreEmptyRouteChangeTransactions = (on, c4) => {
         if (tmpResult.isSentrySpan(c4)) {
           on.on("spanEnd", (arg0) => {
             if (arg0 === c4) {
-              if (f69349(tmp)) {
+              if (f69905(tmp)) {
                 c4 = tmp;
-                const spanDescendants = c4(f69349[2]).getSpanDescendants(tmp);
+                const spanDescendants = c4(f69905[2]).getSpanDescendants(tmp);
                 if (spanDescendants.filter((spanContext) => {
-                  tmp = spanContext.spanContext().spanId !== tmp.spanContext().spanId;
+                  let tmp = spanContext.spanContext().spanId !== lib.spanContext().spanId;
                   if (tmp) {
-                    tmp = "ui.load.initial_display" !== tmp(outer1_1[2]).spanToJSON(spanContext).op;
-                    const obj = tmp(outer1_1[2]);
+                    tmp = "ui.load.initial_display" !== lib(closure_1_1[2]).spanToJSON(spanContext).op;
+                    const obj = lib(closure_1_1[2]);
                   }
                   if (tmp) {
-                    tmp = "navigation.processing" !== tmp(outer1_1[2]).spanToJSON(spanContext).op;
-                    const obj2 = tmp(outer1_1[2]);
+                    tmp = "navigation.processing" !== lib(closure_1_1[2]).spanToJSON(spanContext).op;
+                    const obj2 = lib(closure_1_1[2]);
                   }
                   return tmp;
                 }).length <= 0) {
-                  f69350(tmp);
+                  f69906(tmp);
                   tmp._sampled = false;
                 }
-                let obj = c4(f69349[2]);
+                let obj = c4(f69905[2]);
               }
             }
           });
@@ -199,7 +200,7 @@ export const onlySampleIfChildSpans = (on, c4) => {
             tmp._sampled = false;
             const tmp4Result = tmp4(tmp5[2]);
           }
-          obj2 = c4(outer1_1[2]);
+          obj2 = c4(closure_1_1[2]);
         }
       });
     }
@@ -208,7 +209,7 @@ export const onlySampleIfChildSpans = (on, c4) => {
   debug.warn("Not sampling childless spans only works for Sentry Transactions (Root Spans).");
 };
 export const cancelInBackground = (on) => {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   const listener = AppState.addEventListener("change", (arg0) => {
     if ("background" === arg0) {
       const debug = lib(listener[2]).debug;

@@ -1,19 +1,20 @@
-// Module ID: 12497
-// Function ID: 12498
+// Module ID: 12551
+// Function ID: 12552
 // Name: useMyCurrentStageChannel
-// Dependencies: [1391, 1979, 589, 2]
+// Dependencies: [1391, 1980, 589, 2]
 // Exports: default
 
-// Module 12497 (useMyCurrentStageChannel)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
+// Module 12551 (useMyCurrentStageChannel)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "handleConnectionOpen" /* 1980 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannel.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannel.tsx");
 
 export default function useMyCurrentStageChannel() {
-  const items = [handleConnectionOpen, ensureGuildLoaded];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
+  const items = [closure_3, closure_2];
+  return initialize.useStateFromStores(items, () => {
     voiceChannelId = voiceChannelId.getVoiceChannelId();
     if (null != voiceChannelId) {
       channel = channel.getChannel(voiceChannelId);

@@ -1,20 +1,22 @@
-// Module ID: 8081
-// Function ID: 8082
+// Module ID: 8120
+// Function ID: 8121
 // Name: ScrollHandlingActionSheet
-// Dependencies: [19, 21, 6950, 2]
+// Dependencies: [19, 21, 6988, 2]
 // Exports: default
 
-// Module 8081 (ScrollHandlingActionSheet)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 8120 (ScrollHandlingActionSheet)
+import noopAll from "noop" /* 19 */;
+import Background from "Background" /* 6988 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Background").fileFinishedImporting("modules/stage_channels/native/components/ScrollHandlingActionSheet.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/components/ScrollHandlingActionSheet.tsx");
 
 export default function ScrollHandlingActionSheet(children) {
   const merged = Object.assign(children, Object.create(null));
   const obj = { startExpanded: true };
   const merged1 = Object.assign(merged);
   obj.children = children.children;
-  return jsx(require(6950) /* Background */.BottomSheet, { startExpanded: true });
+  return jsx(Background.BottomSheet, { startExpanded: true });
 };

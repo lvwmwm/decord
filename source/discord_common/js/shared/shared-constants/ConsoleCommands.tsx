@@ -1,10 +1,10 @@
-// Module ID: 9847
-// Function ID: 9848
+// Module ID: 9886
+// Function ID: 9887
 // Name: set
 // Dependencies: [2]
 
-// Module 9847 (set)
-import set from "set";
+// Module 9886 (set)
+import set from "set" /* 2 */;
 
 const obj = { ALL: null };
 let set = new Set(["connect_voice"]);

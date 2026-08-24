@@ -4,5 +4,7 @@
 // Dependencies: [704]
 
 // Module 703 (checkIfSnapshotChanged)
+import checkIfSnapshotChanged from "checkIfSnapshotChanged" /* 704 */;
 
-export { default } from "checkIfSnapshotChanged";
+
+export default checkIfSnapshotChanged;

@@ -4,7 +4,10 @@
 // Dependencies: [837, 864]
 
 // Module 886 (createMetricContainerEnvelopeItem)
-const require = arg1;
+import dsnFromString from "dsnFromString" /* 837 */;
+import forEachEnvelopeItem from "forEachEnvelopeItem" /* 864 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.createMetricContainerEnvelopeItem = function createMetricContainerEnvelopeItem(item_count) {
@@ -28,11 +31,11 @@ arg5.createMetricEnvelope = function createMetricEnvelope(item_count, sdk) {
     tmp2 = arg3;
   }
   if (tmp2) {
-    obj.dsn = require(837) /* dsnFromString */.dsnToString(arg3);
-    const obj3 = require(837) /* dsnFromString */;
+    obj.dsn = dsnFromString.dsnToString(arg3);
+    const obj3 = dsnFromString;
   }
   obj = { type: "trace_metric", item_count: item_count.length, content_type: "application/vnd.sentry.items.trace-metric+json" };
   const items = [obj, { items: item_count }];
   const items1 = [items];
-  return require(864) /* forEachEnvelopeItem */.createEnvelope(obj, items1);
+  return forEachEnvelopeItem.createEnvelope(obj, items1);
 };

@@ -1,12 +1,12 @@
-// Module ID: 10398
-// Function ID: 10399
+// Module ID: 10437
+// Function ID: 10438
 // Name: getCurrentUserProfile
-// Dependencies: [1922, 5365, 2]
+// Dependencies: [1922, 5370, 2]
 // Exports: default
 
-// Module 10398 (getCurrentUserProfile)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import createUserWidgetFromServer from "createUserWidgetFromServer";
+// Module 10437 (getCurrentUserProfile)
+import closure_0 from "mergeGuildAvatar" /* 1922 */;
+import closure_1 from "createUserWidgetFromServer" /* 5370 */;
 
 const result = require("set").fileFinishedImporting("modules/user_profile/utils/getCurrentUserProfile.tsx");
 

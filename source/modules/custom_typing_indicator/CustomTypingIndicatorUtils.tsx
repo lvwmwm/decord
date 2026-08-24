@@ -1,88 +1,135 @@
-// Module ID: 14709
-// Function ID: 14710
-// Name: getRandomCustomTypingIndicatorEmojis
-// Dependencies: [32, 14707, 3403, 4034, 2]
-// Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorConfig, getRandomCustomTypingIndicatorSuggestion
+// Module ID: 11199
+// Function ID: 11200
+// Name: items
+// Dependencies: [6764, 5083, 1925, 1940, 3406, 4037, 4041, 11197, 2]
+// Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorEmojis, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, pickRandomCustomTypingIndicatorEmojis
 
-// Module 14709 (getRandomCustomTypingIndicatorEmojis)
-import _slicedToArray from "_slicedToArray";
+// Module 11199 (items)
+import messagesProxyDefault from "messagesProxy" /* 3406 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
+import closure_3 from "getEmojiToGroupId" /* 6764 */;
+import closure_4 from "insertUnsortedGuilds" /* 5083 */;
+import { EmojiIntention } from "set" /* 1925 */;
 
 const require = arg1;
-function getRandomCustomTypingIndicatorEmojis() {
-  const items = [...closure_6];
-  const items1 = [];
-  if (items1.length < require(14707) /* CustomTypingIndicatorAnimation */.CUSTOM_TYPING_INDICATOR_EMOJI_COUNT) {
-    if (items.length > 0) {
-      while (true) {
-        let _Math = Math;
-        let _Math2 = Math;
-        let tmp = callback;
-        let tmp2 = importDefault;
-        let tmp3 = dependencyMap;
-        let obj = importDefault(4034);
-        let byName = obj.getByName(callback(items.splice(Math.floor(Math.random() * items.length), 1), 1)[0]);
-        let surrogates;
-        if (byName != null) {
-          surrogates = byName.surrogates;
-        }
-        if (null != surrogates) {
-          obj = { name: null };
-          obj[0] = byName.surrogates;
-          let arr = items1.push(obj);
-        }
-        let tmp7 = require;
-        if (items1.length >= require(14707) /* CustomTypingIndicatorAnimation */.CUSTOM_TYPING_INDICATOR_EMOJI_COUNT) {
-          break;
-        } else if (items.length <= 0) {
-          break;
-        }
-      }
-    }
-  }
-  return items1;
-}
 let obj = {};
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.DEFAULT] = require("messagesProxy")["6Cdy4a"];
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.YAPPING] = require("messagesProxy").E5VRaj;
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.VENTING] = require("messagesProxy").xmxdPC;
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.OVERSHARING] = require("messagesProxy")["qGaH/9"];
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.BARKING] = require("messagesProxy").M282uk;
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.BABBLING] = require("messagesProxy").myNZDT;
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.DAYDREAMING] = require("messagesProxy").F7RLTP;
+obj[require("create").TypingSuggestion.UNSPECIFIED] = messagesProxyDefault["6Cdy4a"];
+obj[require("create").TypingSuggestion.YAPPING] = messagesProxyDefault.E5VRaj;
+obj[require("create").TypingSuggestion.VENTING] = messagesProxyDefault.xmxdPC;
+obj[require("create").TypingSuggestion.OVERSHARING] = messagesProxyDefault["qGaH/9"];
+obj[require("create").TypingSuggestion.BARKING] = messagesProxyDefault.M282uk;
+obj[require("create").TypingSuggestion.BABBLING] = messagesProxyDefault.myNZDT;
+obj[require("create").TypingSuggestion.DAYDREAMING] = messagesProxyDefault.F7RLTP;
+obj[require("create").TypingSuggestion.MEOWING] = messagesProxyDefault.EfxyQI;
 obj = {};
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.DEFAULT] = require("messagesProxy").kh4K4F;
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.YAPPING] = require("messagesProxy").m9AeqG;
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.VENTING] = require("messagesProxy")["SZ0/Qu"];
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.OVERSHARING] = require("messagesProxy").N8cWE8;
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.BARKING] = require("messagesProxy").L5aWEN;
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.BABBLING] = require("messagesProxy").AoBaEw;
-obj[require("CustomTypingIndicatorAnimation").CustomTypingIndicatorSuggestion.DAYDREAMING] = require("messagesProxy")["3hOLod"];
-let closure_6 = ["eyes", "100", "sparkling_heart", "star_struck", "heart", "laughing", "thumbsup", "watermelon", "yum", "books"];
-const result = require("messagesProxy").fileFinishedImporting("modules/custom_typing_indicator/CustomTypingIndicatorUtils.tsx");
+obj[require("create").TypingSuggestion.UNSPECIFIED] = messagesProxyDefault.kh4K4F;
+obj[require("create").TypingSuggestion.YAPPING] = messagesProxyDefault.m9AeqG;
+obj[require("create").TypingSuggestion.VENTING] = messagesProxyDefault["SZ0/Qu"];
+obj[require("create").TypingSuggestion.OVERSHARING] = messagesProxyDefault.N8cWE8;
+obj[require("create").TypingSuggestion.BARKING] = messagesProxyDefault.L5aWEN;
+obj[require("create").TypingSuggestion.BABBLING] = messagesProxyDefault.AoBaEw;
+obj[require("create").TypingSuggestion.DAYDREAMING] = messagesProxyDefault["3hOLod"];
+obj[require("create").TypingSuggestion.MEOWING] = messagesProxyDefault["0Z9/o9"];
+let items = [require("create").TypingSuggestion.UNSPECIFIED, require("create").TypingSuggestion.YAPPING, require("create").TypingSuggestion.VENTING, require("create").TypingSuggestion.OVERSHARING, require("create").TypingSuggestion.BARKING, require("create").TypingSuggestion.BABBLING, require("create").TypingSuggestion.DAYDREAMING, require("create").TypingSuggestion.MEOWING];
+let items1 = [require("create").TypingIndicatorAnimation.PULSE, require("create").TypingIndicatorAnimation.RING, require("create").TypingIndicatorAnimation.WAVE];
+const result = require("set").fileFinishedImporting("modules/custom_typing_indicator/CustomTypingIndicatorUtils.tsx");
 
-export { getRandomCustomTypingIndicatorEmojis };
+export const getSurpriseMeEmojiPool = function getSurpriseMeEmojiPool() {
+  const categories = parseRawEmojiObjectDefault.getCategories();
+  items = [
+    ...categories.flatMap((name) => {
+      const byCategory = callback(table[5]).getByCategory(name);
+      let mapped;
+      if (byCategory != null) {
+        mapped = byCategory.map((name) => ({ name: name.surrogates }));
+      }
+      if (mapped == null) {
+        mapped = [];
+      }
+      return mapped;
+    })
+  ];
+  const flattenedGuildIds = store.getFlattenedGuildIds();
+  HermesBuiltin.arraySpread(flattenedGuildIds.flatMap((arg0) => {
+    usableGuildEmoji = usableGuildEmoji.getUsableGuildEmoji(arg0);
+    const found = usableGuildEmoji.filter((emoji) => {
+      obj = callback(table[6]);
+      obj = { emoji, channel: null, guildId: "Array", intention: "\u{1F9DC}\u{1F3FC}\u200D\u2640\uFE0F" };
+      obj[3] = constants.TYPING_INDICATOR;
+      return null == obj.getEmojiUnavailableReason(obj);
+    });
+    return found.map((id) => ({ id: id.id, name: id.name, animated: id.animated }));
+  }), tmp);
+  return items;
+};
+export const pickRandomCustomTypingIndicatorEmojis = function pickRandomCustomTypingIndicatorEmojis(current) {
+  let size;
+  const _require = current;
+  const bound = Math.min(_require(11197).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT, current.length);
+  const set = new Set();
+  if (set.size < bound) {
+    do {
+      let _Math = Math;
+      let _Math2 = Math;
+      let addResult = set.add(Math.floor(Math.random() * current.length));
+      size = set.size;
+    } while (size < bound);
+  }
+  items = [...set];
+  return items.map((arg0) => items[arg0]);
+};
+export const getRandomCustomTypingIndicatorEmojis = function getRandomCustomTypingIndicatorEmojis() {
+  let size;
+  const categories = parseRawEmojiObjectDefault.getCategories();
+  items = [
+    ...categories.flatMap((name) => {
+      const byCategory = callback(table[5]).getByCategory(name);
+      let mapped;
+      if (byCategory != null) {
+        mapped = byCategory.map((name) => ({ name: name.surrogates }));
+      }
+      if (mapped == null) {
+        mapped = [];
+      }
+      return mapped;
+    })
+  ];
+  const flattenedGuildIds = store.getFlattenedGuildIds();
+  HermesBuiltin.arraySpread(flattenedGuildIds.flatMap((arg0) => {
+    usableGuildEmoji = usableGuildEmoji.getUsableGuildEmoji(arg0);
+    const found = usableGuildEmoji.filter((emoji) => {
+      obj = callback(table[6]);
+      obj = { emoji, channel: null, guildId: "Array", intention: "\u{1F9DC}\u{1F3FC}\u200D\u2640\uFE0F" };
+      obj[3] = constants.TYPING_INDICATOR;
+      return null == obj.getEmojiUnavailableReason(obj);
+    });
+    return found.map((id) => ({ id: id.id, name: id.name, animated: id.animated }));
+  }), tmp);
+  const bound = Math.min(items(11197).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT, items.length);
+  const set = new Set();
+  if (set.size < bound) {
+    do {
+      let _Math = Math;
+      let _Math2 = Math;
+      let addResult = set.add(Math.floor(Math.random() * items.length));
+      size = set.size;
+    } while (size < bound);
+  }
+  items1 = [...set];
+  return items1.map((arg0) => items[arg0]);
+};
 export const getRandomCustomTypingIndicatorAnimation = function getRandomCustomTypingIndicatorAnimation() {
-  const values = Object.values(require(14707) /* CustomTypingIndicatorAnimation */.CustomTypingIndicatorAnimation);
-  return values[Math.floor(Math, Math.random(Math) * values.length)];
+  return items1[Math.floor(Math, Math.random(Math) * items1.length)];
 };
-export const getCustomTypingIndicatorSuggestionPresets = function getCustomTypingIndicatorSuggestionPresets() {
-  return Object.values(require(14707) /* CustomTypingIndicatorAnimation */.CustomTypingIndicatorSuggestion);
-};
+export function getCustomTypingIndicatorSuggestionPresets() {
+  return items;
+}
 export const getCustomTypingIndicatorSuggestionMessage = function getCustomTypingIndicatorSuggestionMessage(first1) {
   return obj[first1];
 };
-export const getCustomTypingIndicatorSuggestionWithNameMessage = function getCustomTypingIndicatorSuggestionWithNameMessage(typingSuggestion) {
-  return obj[typingSuggestion];
+export const getCustomTypingIndicatorSuggestionWithNameMessage = function getCustomTypingIndicatorSuggestionWithNameMessage(suggestion) {
+  return obj[suggestion];
 };
 export const getRandomCustomTypingIndicatorSuggestion = function getRandomCustomTypingIndicatorSuggestion() {
-  const values = Object.values(require(14707) /* CustomTypingIndicatorAnimation */.CustomTypingIndicatorSuggestion);
-  return values[Math.floor(Math, Math.random(Math) * values.length)];
-};
-export const getRandomCustomTypingIndicatorConfig = function getRandomCustomTypingIndicatorConfig() {
-  const obj = { emojis: getRandomCustomTypingIndicatorEmojis(), animation: null, typingSuggestion: null };
-  let values = Object.values(require(14707) /* CustomTypingIndicatorAnimation */.CustomTypingIndicatorAnimation);
-  obj[1] = values[Math.floor(Math, Math.random(Math) * values.length)];
-  values = Object.values(require(14707) /* CustomTypingIndicatorAnimation */.CustomTypingIndicatorSuggestion);
-  obj[2] = values[Math.floor(Math, Math.random(Math) * values.length)];
-  return obj;
+  return items[Math.floor(Math, Math.random(Math) * items.length)];
 };

@@ -1,32 +1,33 @@
-// Module ID: 13839
-// Function ID: 13840
+// Module ID: 13902
+// Function ID: 13903
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [4277, 676, 4529, 4375, 8755, 8752, 13840, 2]
+// Dependencies: [4281, 676, 4534, 4379, 8792, 8789, 13903, 2]
 
-// Module 13839 (RPC_LOCAL_SCOPE)
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
-import ME from "ME";
-import { DeviceTypes } from "DesktopSources";
+// Module 13902 (RPC_LOCAL_SCOPE)
+import set from "set" /* 2 */;
+import set2 from "set" /* 4379 */;
+import DesktopSources from "DesktopSources" /* 4534 */;
+import prototypeDefault from "prototype" /* 8789 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8792 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4281 */;
+import ME from "ME" /* 676 */;
 
-let RPCCommands;
-let RPC_LOCAL_SCOPE;
-let RPC_SCOPE_CONFIG;
-let c3;
 ({ RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);
 ({ RPCErrors: c3, RPCCommands } = ME);
+const DeviceTypes = DesktopSources.DeviceTypes;
 let obj = {};
 obj = { scope: null, validation: null, handler: null };
 obj = {};
-let items = [require("set").OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
+let items = [set2.OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
 obj[RPC_SCOPE_CONFIG.ANY] = items;
 obj[0] = obj;
 obj[1] = function validation(array) {
-  let obj = importDefault(8755)(array);
+  let obj = createRpcJoiSchemaObjectDefault(array);
   obj = { devices: null };
   let arrayResult = array.array();
   const requiredResult = obj.required();
   obj = { type: null, id: null, vendor: null, model: null, related: null, echo_cancellation: null, noise_suppression: null, automatic_gain_control: null, hardware_mute: null };
-  const obj5 = importDefault(8755)(array);
+  const obj5 = createRpcJoiSchemaObjectDefault(array);
   const stringResult = array.string();
   const items = [, , ];
   ({ AUDIO_INPUT: arr[0], AUDIO_OUTPUT: arr[1], VIDEO_INPUT: arr[2] } = DeviceTypes);
@@ -35,17 +36,17 @@ obj[1] = function validation(array) {
   const stringResult1 = array.string();
   obj[1] = array.string().required().min(1);
   const requiredResult2 = array.string().required();
-  const obj11 = importDefault(8755)(array);
-  const obj1 = { name: null, url: null };
-  const requiredResult3 = importDefault(8755)(array).required();
+  const obj11 = createRpcJoiSchemaObjectDefault(array);
+  obj1 = { name: null, url: null };
+  const requiredResult3 = createRpcJoiSchemaObjectDefault(array).required();
   obj1[0] = array.string().min(1);
   const stringResult2 = array.string();
   obj1[1] = array.string().min(1);
   obj[2] = requiredResult3.keys(obj1);
   const stringResult3 = array.string();
-  const obj16 = importDefault(8755)(array);
+  const obj16 = createRpcJoiSchemaObjectDefault(array);
   const obj2 = { name: null, url: null };
-  const requiredResult4 = importDefault(8755)(array).required();
+  const requiredResult4 = createRpcJoiSchemaObjectDefault(array).required();
   obj2[0] = array.string().min(1);
   const stringResult4 = array.string();
   obj2[1] = array.string().min(1);
@@ -66,10 +67,10 @@ obj[2] = function handler(socket) {
   if (null == socket.application.id) {
     let obj = { errorCode: null };
     obj[0] = constants.INVALID_COMMAND;
-    const tmp10 = new importDefault(8752)(obj, "No application.");
+    const tmp10 = new prototypeDefault(obj, "No application.");
     throw tmp10;
   } else {
-    obj = devices(13840);
+    obj = devices(13903);
     obj.setCertifiedDevices(socket.application.id, devices.map((type) => {
       const related = type.related;
       return {
@@ -78,7 +79,7 @@ obj[2] = function handler(socket) {
         vendor: type.vendor,
         model: type.model,
         related: related.filter((arg0) => {
-          let closure_0 = arg0;
+          closure_0 = arg0;
           return closure_0.some((id) => id.id === closure_0);
         }),
         echoCancellation: type.echo_cancellation,
@@ -90,6 +91,6 @@ obj[2] = function handler(socket) {
   }
 };
 obj[RPCCommands.SET_CERTIFIED_DEVICES] = obj;
-const result = require("DesktopSources").fileFinishedImporting("modules/rpc/server/commands/certifiedDevices.tsx");
+const result = set.fileFinishedImporting("modules/rpc/server/commands/certifiedDevices.tsx");
 
 export default obj;

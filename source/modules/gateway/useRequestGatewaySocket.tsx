@@ -1,23 +1,24 @@
-// Module ID: 13925
-// Function ID: 13926
+// Module ID: 13993
+// Function ID: 13994
 // Name: useRequestGatewaySocket
-// Dependencies: [19, 10501, 675, 2]
+// Dependencies: [19, 10540, 675, 2]
 // Exports: useRequestGatewaySocket
 
-// Module 13925 (useRequestGatewaySocket)
-import noop from "noop";
+// Module 13993 (useRequestGatewaySocket)
+import _modDef10540 from "module_10540" /* 10540 */;
+import closure_3 from "noop" /* 19 */;
 
-const result = require("setRequestedBy").fileFinishedImporting("modules/gateway/useRequestGatewaySocket.tsx");
+const result = require("set").fileFinishedImporting("modules/gateway/useRequestGatewaySocket.tsx");
 
 export const useRequestGatewaySocket = function useRequestGatewaySocket(arg0) {
-  const importDefault = arg0;
-  const canUIRequestGatewaySocket = importDefault(10501).useCanUIRequestGatewaySocket();
+  importDefault = arg0;
+  const canUIRequestGatewaySocket = _modDef10540.useCanUIRequestGatewaySocket();
   const items = [arg0, canUIRequestGatewaySocket];
   const effect = React.useEffect(() => {
     if (canUIRequestGatewaySocket) {
-      canUIRequestGatewaySocket(outer1_2[2]).setRequestedBy(closure_0);
+      canUIRequestGatewaySocket(closure_1_2[2]).setRequestedBy(closure_0);
       return () => {
-        outer1_1(outer1_2[2]).stopRequest(closure_0);
+        closure_1_1(closure_1_2[2]).stopRequest(closure_0);
       };
     }
   }, items);

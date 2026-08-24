@@ -1,41 +1,45 @@
-// Module ID: 14889
-// Function ID: 14890
+// Module ID: 14953
+// Function ID: 14954
 // Name: pressable
-// Dependencies: [13770, 21, 13366, 589, 3975, 14199, 4324, 13952, 10669, 2]
+// Dependencies: [13828, 21, 13424, 589, 3978, 14267, 4328, 14020, 10708, 2]
 
-// Module 14889 (pressable)
-import checkForNewerBuild from "checkForNewerBuild";
-import { jsx } from "jsxProd";
-import createToggle from "createToggle";
+// Module 14953 (pressable)
+import initialize from "initialize" /* 589 */;
+import tDefault from "t" /* 3978 */;
+import _checkForNewerBuildAll from "_checkForNewerBuild" /* 13424 */;
+import useStaffOrDeveloperSettingPredicate from "useStaffOrDeveloperSettingPredicate" /* 14267 */;
+import closure_4 from "checkForNewerBuild" /* 13828 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
     return "Internal Build Update";
   },
   parent: null,
   IconComponent: function InstallNativeUpdateIcon() {
-    const items = [checkForNewerBuild];
-    if (obj.useStateFromStores(items, () => null !== checkForNewerBuild.latestFetchedBuild().newBuild)) {
-      let RefreshIcon = tmp(4324).DownloadIcon;
+    const items = [closure_4];
+    if (obj.useStateFromStores(items, () => null !== closure_4.latestFetchedBuild().newBuild)) {
+      let RefreshIcon = tmp(4328).DownloadIcon;
     } else {
-      RefreshIcon = tmp(13952).RefreshIcon;
+      RefreshIcon = tmp(14020).RefreshIcon;
     }
     return <RefreshIcon />;
   },
   useDescription: function useInternalBuildUpdateDescription() {
-    const items = [checkForNewerBuild];
-    const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
-      const newBuild = checkForNewerBuild.latestFetchedBuild().newBuild;
+    const items = [closure_4];
+    const stateFromStores = initialize.useStateFromStores(items, () => {
+      const newBuild = closure_4.latestFetchedBuild().newBuild;
       let build;
       if (newBuild != null) {
         build = newBuild.build;
       }
       return build;
     });
-    const obj = require(589) /* initialize */;
-    const items1 = [checkForNewerBuild];
-    const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => checkForNewerBuild.latestFetchedBuild().lastCheck);
+    const obj = initialize;
+    const items1 = [closure_4];
+    const stateFromStores1 = initialize.useStateFromStores(items1, () => closure_4.latestFetchedBuild().lastCheck);
     if (null != stateFromStores) {
       const _HermesInternal2 = HermesInternal;
       let str = "Open build " + stateFromStores + " installer in a browser";
@@ -43,28 +47,28 @@ createToggle = {
       str = "Never refreshed";
       if (null != stateFromStores1) {
         const _HermesInternal = HermesInternal;
-        str = "Last refreshed " + importDefault(3975)(stateFromStores1).fromNow();
-        const obj3 = importDefault(3975)(stateFromStores1);
+        str = "Last refreshed " + tDefault(stateFromStores1).fromNow();
+        const obj3 = tDefault(stateFromStores1);
       }
     }
     return str;
   },
   usePredicate: function useHasInternalBuildUpdateSetting() {
-    const obj = require(14199) /* useStaffOrDeveloperSettingPredicate */;
-    return checkForNewerBuild.hasUpdatesConfigured && require(14199) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
+    const obj = useStaffOrDeveloperSettingPredicate;
+    return closure_4.hasUpdatesConfigured && useStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
   },
   onPress: function handleInstallNativeUpdateSettingPress() {
-    const newBuild = checkForNewerBuild.latestFetchedBuild().newBuild;
+    const newBuild = closure_4.latestFetchedBuild().newBuild;
     if (null !== newBuild) {
-      importAll(13366).openBuildInstaller(newBuild);
-      const obj2 = importAll(13366);
+      _checkForNewerBuildAll.openBuildInstaller(newBuild);
+      const obj2 = _checkForNewerBuildAll;
     } else {
-      checkForNewerBuild.checkForNewerBuild();
+      closure_4.checkForNewerBuild();
     }
   },
   withArrow: true
 };
 createToggle = createToggle.createPressable(createToggle);
-const result = require("_checkForNewerBuild").fileFinishedImporting("modules/user_settings/defs/native/InternalBuildUpdateSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/InternalBuildUpdateSetting.tsx");
 
 export default createToggle;

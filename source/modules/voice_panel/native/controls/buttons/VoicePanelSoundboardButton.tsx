@@ -1,37 +1,35 @@
-// Module ID: 16412
-// Function ID: 16413
+// Module ID: 16508
+// Function ID: 16509
 // Name: SoundboardButton
-// Dependencies: [19, 21, 4661, 712, 11439, 16397, 16413, 16398, 1236, 7190, 7993, 2]
+// Dependencies: [19, 21, 4668, 712, 11488, 16494, 16509, 16495, 1236, 7228, 8032, 2]
 // Exports: default
 
-// Module 16412 (SoundboardButton)
-import noop from "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16508 (SoundboardButton)
+import ThemesDefault from "Themes" /* 712 */;
+import dismissPanelDefault from "dismissPanel" /* 11488 */;
+import useVoicePanelButtonStyles from "useVoicePanelButtonStyles" /* 16494 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 16509 */;
+import useSoundboardConfigDefault from "useSoundboardConfig" /* 16509 */;
+import closure_3 from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { circle: null, iconContainer: null };
-createCacheKey = { width: "100%", height: "100%", borderRadius: require("Themes").radii.round };
+createCacheKey = { width: "100%", height: "100%", borderRadius: ThemesDefault.radii.round };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createCacheKey").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelSoundboardButton.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelSoundboardButton.tsx");
 
 export default function SoundboardButton(arg0) {
-  let disabled;
-  let handlePress;
-  let props;
-  let visible;
-  let wrapperSpecs;
   ({ props, wrapperSpecs } = arg0);
-  const tmp3 = createCacheKey();
-  let obj = require(16397) /* useVoicePanelButtonStyles */;
+  const tmp3 = callback3();
+  let obj = useVoicePanelButtonStyles;
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  const tmp6 = importDefault(16413);
-  ({ disabled, handlePress, visible } = importDefault(16413)(React.useContext(importDefault(11439)).channelId, require(16413) /* useSoundboardConfig */.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
+  const tmp6 = useSoundboardConfigDefault;
+  ({ disabled, handlePress, visible } = useSoundboardConfigDefault(React.useContext(dismissPanelDefault).channelId, useSoundboardConfig.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
   if (disabled) {
     let color = tmp(712).colors.ICON_MUTED;
   } else {
@@ -43,22 +41,22 @@ export default function SoundboardButton(arg0) {
     obj[0] = handlePress;
     obj[1] = disabled;
     obj[2] = props;
-    let tmpResult = tmp(16398);
+    let tmpResult = tmp(16495);
     const intl = tmp4(1236).intl;
     obj[3] = intl.string(tmp4(1236).t["6EJvHt"]);
     obj = { style: null };
     const items = [tmp3.circle, ];
-    const obj1 = { backgroundColor: null };
+    obj1 = { backgroundColor: null };
     obj1[0] = voicePanelButtonStyles.iconBg.backgroundColor;
     items[1] = obj1;
     obj[0] = items;
-    const items1 = [callback(tmp(7190), obj), ];
+    const items1 = [callback(tmp(7228), obj), ];
     const obj2 = { style: null, children: null };
     obj2[0] = tmp3.iconContainer;
-    tmpResult = tmp(7190);
+    tmpResult = tmp(7228);
     const obj3 = { color: null };
     obj3[0] = color;
-    obj2[1] = callback(tmp4(7993).SoundboardIcon, obj3);
+    obj2[1] = callback(tmp4(8032).SoundboardIcon, obj3);
     items1[1] = callback(tmpResult, obj2);
     obj[4] = items1;
     tmp8 = callback2(tmpResult, obj);

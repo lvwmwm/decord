@@ -4,5 +4,7 @@
 // Dependencies: [19]
 
 // Module 1519 (NavigationIndependentTreeContext)
+import noopAll from "noop" /* 19 */;
 
-export const NavigationIndependentTreeContext = require("noop").createContext(false);
+
+export const NavigationIndependentTreeContext = noopAll.createContext(false);

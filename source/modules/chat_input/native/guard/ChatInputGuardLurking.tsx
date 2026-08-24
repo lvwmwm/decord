@@ -1,35 +1,31 @@
-// Module ID: 11623
-// Function ID: 11624
-// Dependencies: [19, 4022, 1391, 11149, 676, 21, 589, 1222, 5042, 10529, 11505, 1306, 7301, 6778, 11616, 1236, 2]
+// Module ID: 11672
+// Function ID: 11673
+// Dependencies: [19, 4025, 1391, 11188, 676, 21, 589, 1222, 5047, 10568, 11554, 1306, 7339, 6815, 11665, 1236, 2]
 
-// Module 11623
-import importAllResult from "noop";
-import initialize from "initialize";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { TextAreaCta } from "TextAreaCta";
-import ME from "ME";
-import { jsx } from "jsxProd";
+// Module 11672
+import importAllResult from "noop" /* 19 */;
+import closure_5 from "initialize" /* 4025 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import { TextAreaCta } from "TextAreaCta" /* 11188 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c9;
-let metroImportAll;
 const require = arg1;
 let c4 = importAllResult;
-({ AnalyticEvents: metroImportAll, JoinGuildSources: c9 } = ME);
+({ AnalyticEvents: closure_8, JoinGuildSources: c9 } = ME);
 const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) {
-  let isLurking;
-  let lurkingSource;
   channel = channel.channel;
   let guildId;
   guildId = channel.getGuildId();
   let obj = channel(589);
-  const items = [initialize];
+  const items = [closure_5];
   const items1 = [guildId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let isLurkingResult = null != guildId;
     if (isLurkingResult) {
-      isLurkingResult = outer1_5.isLurking(tmp);
+      isLurkingResult = closure_1_5.isLurking(tmp);
     }
-    return { isLurking: isLurkingResult, lurkingSource: outer1_5.getLurkingSourceForGuild(guildId) };
+    return { isLurking: isLurkingResult, lurkingSource: closure_1_5.getLurkingSourceForGuild(guildId) };
   }, items1);
   ({ isLurking, lurkingSource } = stateFromStoresObject);
   const items2 = [guildId, channel.id];
@@ -40,40 +36,40 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) 
   const items3 = [guildId];
   const callback1 = importAllResult.useCallback(() => {
     if (null != guildId) {
-      let obj = guildId(outer1_3[8]);
+      let obj = guildId(closure_1_3[8]);
       obj = { cta_type: null };
-      obj[0] = outer1_7.FOLLOW_ANNOUNCEMENT;
-      obj.trackWithMetadata(outer1_8.TEXT_AREA_CTA_CLICKED, obj);
-      const result = channel(outer1_3[9]).showChannelFollowingActionSheet(channel.id, tmp);
-      const obj3 = channel(outer1_3[9]);
+      obj[0] = closure_1_7.FOLLOW_ANNOUNCEMENT;
+      obj.trackWithMetadata(closure_1_8.TEXT_AREA_CTA_CLICKED, obj);
+      const result = channel(closure_1_3[9]).showChannelFollowingActionSheet(channel.id, tmp);
+      const obj3 = channel(closure_1_3[9]);
     }
   }, items2);
   const callback2 = importAllResult.useCallback(() => {
     if (null != guildId) {
-      const lurkingSourceForGuild = outer1_5.getLurkingSourceForGuild(tmp);
+      const lurkingSourceForGuild = closure_1_5.getLurkingSourceForGuild(tmp);
       let type;
       if (lurkingSourceForGuild != null) {
         type = lurkingSourceForGuild.type;
       }
-      if (type === outer1_9.DIRECTORY_ENTRY) {
-        const channel = outer1_6.getChannel(lurkingSourceForGuild.directoryChannelId);
+      if (type === closure_1_9.DIRECTORY_ENTRY) {
+        channel = closure_1_6.getChannel(lurkingSourceForGuild.directoryChannelId);
         if (null != channel) {
           guildId = channel.getGuildId();
-          const result = channel(outer1_3[10]).setHubProgressActionComplete(guildId, channel(outer1_3[11]).HubProgressStep.JOIN_GUILD);
-          const obj2 = channel(outer1_3[10]);
+          const result = channel(closure_1_3[10]).setHubProgressActionComplete(guildId, channel(closure_1_3[11]).HubProgressStep.JOIN_GUILD);
+          const obj2 = channel(closure_1_3[10]);
         }
       }
-      const result1 = outer1_2(outer1_3[12]).trackGuildJoinClicked(tmp);
-      const obj3 = outer1_2(outer1_3[12]);
-      const tmp3 = outer1_9;
+      const result1 = closure_1_2(closure_1_3[12]).trackGuildJoinClicked(tmp);
+      const obj3 = closure_1_2(closure_1_3[12]);
+      const tmp3 = closure_1_9;
       let obj = { cta_type: null };
-      obj[0] = outer1_7.JOIN_GUILD;
-      guildId(outer1_3[8]).trackWithMetadata(outer1_8.TEXT_AREA_CTA_CLICKED, obj);
-      const obj4 = guildId(outer1_3[8]);
+      obj[0] = closure_1_7.JOIN_GUILD;
+      guildId(closure_1_3[8]).trackWithMetadata(closure_1_8.TEXT_AREA_CTA_CLICKED, obj);
+      const obj4 = guildId(closure_1_3[8]);
       obj = { source: null };
       obj[0] = tmp3.CHAT_INPUT_BLOCKER;
-      guildId(outer1_3[13]).joinGuild(tmp, obj);
-      const obj6 = guildId(outer1_3[13]);
+      guildId(closure_1_3[13]).joinGuild(tmp, obj);
+      const obj6 = guildId(closure_1_3[13]);
     }
   }, items3);
   let type;
@@ -90,8 +86,8 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) 
     const intl8 = tmp2(1236).intl;
     obj[4] = intl8.string(tmp2(1236).t.RLch70);
     obj[5] = callback2;
-    let tmp15Result = jsx(guildId(11616), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
-    const tmp14 = guildId(11616);
+    let tmp15Result = jsx(guildId(11665), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
+    const tmp14 = guildId(11665);
   } else {
     if (channel.isReadonlyAnnouncementsChannel) {
       obj = { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
@@ -111,7 +107,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) 
       const intl5 = tmp2(1236).intl;
       obj[4] = intl5.string(tmp2(1236).t["3aOv+h"]);
       obj[5] = callback1;
-      let obj1 = obj;
+      obj1 = obj;
     } else {
       obj1 = { type: "button-action", message: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
       const intl = tmp2(1236).intl;
@@ -120,12 +116,12 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) 
       obj1[2] = intl2.string(tmp2(1236).t.RLch70);
       obj1[3] = callback2;
     }
-    tmp15Result = jsx(guildId(11616), obj1);
+    tmp15Result = jsx(guildId(11665), obj1);
     const tmp15 = jsx;
-    const tmp17 = guildId(11616);
+    const tmp17 = guildId(11665);
   }
   return tmp15Result;
 });
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardLurking.tsx");
+let result = require("set").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardLurking.tsx");
 
 export default memoResult;

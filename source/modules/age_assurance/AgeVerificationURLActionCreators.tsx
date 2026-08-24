@@ -1,16 +1,17 @@
-// Module ID: 5436
-// Function ID: 5437
+// Module ID: 5441
+// Function ID: 5442
 // Name: requestAgeVerification
-// Dependencies: [5, 1218, 5427, 676, 5437, 530, 709, 2]
+// Dependencies: [5, 1218, 5432, 676, 5442, 530, 709, 2]
 // Exports: getAgeVerificationMethods, initiateAgeVerificationV2, registerIncodeInterview, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 5436 (requestAgeVerification)
-import sendRequest from "sendRequest";
-import fetchFingerprint from "fetchFingerprint";
-import { VerificationVendorName } from "set";
-import { Endpoints } from "ME";
+// Module 5441 (requestAgeVerification)
+import sendRequest from "sendRequest" /* 530 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import { VerificationVendorName } from "set" /* 5432 */;
+import { Endpoints } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function requestAgeVerification(arg0) {
   const self = this;
   const apply = _requestAgeVerification.apply;
@@ -24,13 +25,10 @@ function requestAgeVerification(arg0) {
 function _requestAgeVerification() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
       if (c4 === 2) {
         c4 = 3;
         HermesBuiltin.throwTypeError();
@@ -42,7 +40,7 @@ function _requestAgeVerification() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -73,7 +71,7 @@ function _requestAgeVerification() {
               throw arg1;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -129,7 +127,7 @@ function _requestAgeVerification() {
     iter.next();
     return iter;
   });
-  const _requestAgeVerification = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -141,15 +139,15 @@ function _requestAgeVerification() {
 function _requestIncodeMethodSession() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0, incode_parameters) {
       let session_token = tmp4;
-      const obj1 = { method: null, vendor: null };
+      obj1 = { method: null, vendor: null };
       obj1[0] = closure_0;
-      obj1[1] = outer1_5.INCODE;
-      yield outer1_7(obj1);
+      obj1[1] = closure_1_5.INCODE;
+      yield closure_1_7(obj1);
       incode_parameters = incode_parameters.incode_parameters;
       let api_url = incode_parameters;
       if (incode_parameters == null) {
@@ -179,7 +177,7 @@ function _requestIncodeMethodSession() {
       return tmp12;
     })();
   });
-  const _requestIncodeMethodSession = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -201,14 +199,14 @@ function initiateAgeVerification(arg0) {
 function _initiateAgeVerification() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c3 = 0;
-    let c2 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c3 = 0;
+    c2 = 0;
     return (function*(arg0, body) {
       const HTTP = callback(table[5]).HTTP;
-      const obj1 = { url: null, body: null, rejectWithError: true };
-      obj1[0] = outer1_6.VERIFY_AGE;
+      obj1 = { url: null, body: null, rejectWithError: true };
+      obj1[0] = closure_1_6.VERIFY_AGE;
       const obj2 = { method: null, vendor: null };
       obj2[0] = callback;
       obj2[1] = closure_1;
@@ -217,7 +215,7 @@ function _initiateAgeVerification() {
       return body.body;
     })();
   });
-  const _initiateAgeVerification = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -229,14 +227,14 @@ function _initiateAgeVerification() {
 function _initiateAgeVerificationV() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c3 = 0;
-    let c2 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c3 = 0;
+    c2 = 0;
     return (function*(arg0, body) {
       const HTTP = callback(table[5]).HTTP;
-      const obj1 = { url: null, body: null, rejectWithError: true };
-      obj1[0] = outer1_6.VERIFY_AGE_V2;
+      obj1 = { url: null, body: null, rejectWithError: true };
+      obj1[0] = closure_1_6.VERIFY_AGE_V2;
       const obj2 = { method: null, vendor: null };
       obj2[0] = callback;
       obj2[1] = closure_1;
@@ -245,7 +243,7 @@ function _initiateAgeVerificationV() {
       return body.body;
     })();
   });
-  const _initiateAgeVerificationV = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -267,12 +265,10 @@ function initiateSuspendedUserAgeVerification() {
 function _initiateSuspendedUserAgeVerification() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0, body) {
-      let c0;
-      let c1;
       if (suspendedUserToken === 2) {
         suspendedUserToken = 3;
         HermesBuiltin.throwTypeError();
@@ -284,7 +280,7 @@ function _initiateSuspendedUserAgeVerification() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -315,7 +311,7 @@ function _initiateSuspendedUserAgeVerification() {
               throw body;
             } else if (arg0 === 2) {
               suspendedUserToken = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = body;
               return obj1;
             } else {
@@ -357,7 +353,7 @@ function _initiateSuspendedUserAgeVerification() {
     iter.next();
     return iter;
   });
-  const _initiateSuspendedUserAgeVerification = tmp;
+  closure_14 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -369,9 +365,9 @@ function _initiateSuspendedUserAgeVerification() {
 function _registerIncodeInterview() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -384,7 +380,7 @@ function _registerIncodeInterview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -400,8 +396,8 @@ function _registerIncodeInterview() {
               return obj;
             } else {
               const HTTP = callback(table[5]).HTTP;
-              const obj1 = { url: null, body: null, rejectWithError: true };
-              obj1[0] = outer1_6.REGISTER_INCODE_INTERVIEW;
+              obj1 = { url: null, body: null, rejectWithError: true };
+              obj1[0] = closure_1_6.REGISTER_INCODE_INTERVIEW;
               const obj2 = { interview_id: null };
               obj2[0] = callback;
               obj1[1] = obj2;
@@ -421,7 +417,7 @@ function _registerIncodeInterview() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c1 = tmp;
@@ -430,7 +426,7 @@ function _registerIncodeInterview() {
       }
     })();
   });
-  const _registerIncodeInterview = tmp;
+  closure_15 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -442,9 +438,9 @@ function _registerIncodeInterview() {
 function _requestIncodeSessionBootstrap() {
   const self = this;
   const tmp = callback(() => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0, body) {
       if (c4 === 2) {
         c4 = 3;
@@ -457,7 +453,7 @@ function _requestIncodeSessionBootstrap() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -473,8 +469,8 @@ function _requestIncodeSessionBootstrap() {
               return obj;
             } else {
               const table = tmp5;
-              let closure_1 = tmp2;
-              let obj1;
+              closure_1 = tmp2;
+              obj1 = undefined;
               if (obj1 === undefined) {
                 obj1 = {};
               }
@@ -531,7 +527,7 @@ function _requestIncodeSessionBootstrap() {
     iter.next();
     return iter;
   });
-  const _requestIncodeSessionBootstrap = tmp;
+  closure_16 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -543,12 +539,12 @@ function _requestIncodeSessionBootstrap() {
 function _getAgeVerificationMethods() {
   const self = this;
   const tmp = callback(function*() {
-    v02(outer1_2[6]).dispatch({ type: "AGE_VERIFICATION_METHODS_LOAD_START" });
-    const obj6 = v02(outer1_2[6]);
+    v02(closure_1_2[6]).dispatch({ type: "AGE_VERIFICATION_METHODS_LOAD_START" });
+    const obj6 = v02(closure_1_2[6]);
     if (obj7.isCurrentUserSuspended()) {
-      let promise = outer1_19();
+      let promise = closure_1_19();
     } else {
-      promise = outer1_18();
+      promise = closure_1_18();
     }
     if (promise != null) {
       const catchPromise = promise.then((body) => {
@@ -567,7 +563,7 @@ function _getAgeVerificationMethods() {
     yield catchPromise;
     return arg1;
   });
-  const _getAgeVerificationMethods = tmp;
+  closure_17 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -577,12 +573,12 @@ function _getAgeVerificationMethods() {
   return applyArgumentsResult;
 }
 function fetchAgeVerificationMethods() {
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   return HTTP.get({ url: Endpoints.AGE_VERIFICATION_METHODS, rejectWithError: true });
 }
 function fetchAgeVerificationMethodsSuspendedUser() {
   suspendedUserToken = suspendedUserToken.getSuspendedUserToken();
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   return HTTP.post({ url: Endpoints.SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS, rejectWithError: true, body: { token: suspendedUserToken } });
 }
 const result = require("set").fileFinishedImporting("modules/age_assurance/AgeVerificationURLActionCreators.tsx");
@@ -599,7 +595,7 @@ export const requestIncodeMethodSession = function requestIncodeMethodSession(cl
   return applyArgumentsResult;
 };
 export { initiateAgeVerification };
-export const initiateAgeVerificationV2 = function initiateAgeVerificationV2(closure_0, closure_1) {
+export const initiateAgeVerificationV2 = function initiateAgeVerificationV2(method, vendor) {
   const self = this;
   const apply = _initiateAgeVerificationV.apply;
   if (typeof apply === "unknown") {

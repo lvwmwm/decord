@@ -1,22 +1,21 @@
-// Module ID: 14011
-// Function ID: 14012
+// Module ID: 14079
+// Function ID: 14080
 // Name: styles
-// Dependencies: [19, 17, 21, 4661, 712, 688, 5433, 4223, 1297, 10756, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 688, 5438, 4227, 1297, 10795, 2]
 
-// Module 14011 (styles)
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 14079 (styles)
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let obj = { colorBlock: null };
-obj = { minWidth: 44, height: 44, borderRadius: require("Themes").radii.xl, marginHorizontal: 12, marginVertical: 8, justifyContent: "center", alignItems: "center" };
+obj = { minWidth: 44, height: 44, borderRadius: ThemesDefault.radii.xl, marginHorizontal: 12, marginVertical: 8, justifyContent: "center", alignItems: "center" };
 obj[0] = obj;
 const styles = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo((color) => {
-  let selected;
-  let style;
+const memoResult = importAllResult.memo((color) => {
   color = color.color;
   ({ style, selected } = color);
   if (selected === undefined) {
@@ -29,7 +28,7 @@ const memoResult = require("noop").memo((color) => {
   const v = obj.int2hsv(color).v;
   if (null != onSelect) {
     obj = { accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, onPress: null, style: null, children: null };
-    let tmp2Result = tmp2(4223);
+    let tmp2Result = tmp2(4227);
     tmp2Result = tmp2(688);
     obj[1] = tmp2Result.hexToColorName(tmp2Result.int2hex(color), true);
     obj = { selected: null };
@@ -39,16 +38,16 @@ const memoResult = require("noop").memo((color) => {
       return onSelect(color);
     };
     const items = [tmp.colorBlock, style, ];
-    const obj1 = { backgroundColor: null };
+    obj1 = { backgroundColor: null };
     obj1[0] = tmp2(688).int2hex(color);
     items[2] = obj1;
     obj[4] = items;
     if (!selected) {
       obj[5] = null;
-      let tmp10Result = tmp6(tmp2(5433).PressableOpacity, obj);
+      let tmp10Result = tmp6(tmp2(5438).PressableOpacity, obj);
     } else {
       const obj2 = { source: null, color: null };
-      obj2[0] = onSelect(10756);
+      obj2[0] = onSelect(10795);
       if (v < 0.5) {
         unsafe_rawColors = tmp8(712).unsafe_rawColors;
         let BLACK2 = unsafe_rawColors.WHITE;
@@ -71,7 +70,7 @@ const memoResult = require("noop").memo((color) => {
       tmp10Result = tmp10(tmp11, obj3);
     } else {
       const obj5 = { source: null, color: null };
-      obj5[0] = onSelect(10756);
+      obj5[0] = onSelect(10795);
       if (v < 0.5) {
         let BLACK = tmp3(712).unsafe_rawColors.WHITE;
       } else {
@@ -85,7 +84,7 @@ const memoResult = require("noop").memo((color) => {
   }
   return tmp10Result;
 });
-const result = require("jsxProd").fileFinishedImporting("components_native/common/color_picker/ColorBlock.tsx");
+const result = require("set").fileFinishedImporting("components_native/common/color_picker/ColorBlock.tsx");
 
 export default memoResult;
 export const useStyles = styles;

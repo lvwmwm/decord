@@ -1,11 +1,13 @@
-// Module ID: 7245
-// Function ID: 7246
+// Module ID: 7283
+// Function ID: 7284
 // Name: set
 // Dependencies: [2]
 
-// Module 7245 (set)
+// Module 7283 (set)
+import set from "set" /* 2 */;
+
 let c0 = "not supported";
-const result = require("set").fileFinishedImporting("utils/GameUtils.native.tsx");
+const result = set.fileFinishedImporting("utils/GameUtils.native.tsx");
 
 export default {
   waitSubscribed() {
@@ -27,11 +29,11 @@ export default {
     return Promise.resolve(false);
   },
   launch() {
-    const error = new Error(c0);
+    error = new Error(c0);
     return Promise.reject(error);
   },
   launchDispatchApplication() {
-    const error = new Error(c0);
+    error = new Error(c0);
     return Promise.reject(error);
   },
   removeShortcuts() {
@@ -41,7 +43,7 @@ export default {
     return Promise.resolve(false);
   },
   launchGame() {
-    const error = new Error(c0);
+    error = new Error(c0);
     return Promise.reject(error);
   },
   isProtocolRegistered() {

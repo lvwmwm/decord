@@ -1,18 +1,22 @@
-// Module ID: 13992
-// Function ID: 13993
+// Module ID: 14060
+// Function ID: 14061
 // Name: SearchListSectionLabel
-// Dependencies: [19, 17, 13993, 13994, 10670, 21, 4661, 712, 6286, 4734, 13995, 1629, 13996, 15062, 8029, 15063, 15066, 15067, 1892, 2]
+// Dependencies: [19, 17, 14061, 14062, 10709, 21, 4668, 712, 6317, 4739, 14063, 1629, 14064, 15126, 8068, 15127, 15130, 15131, 1892, 2]
 
-// Module 13992 (SearchListSectionLabel)
-import importAllResult from "set";
-import { View } from "SettingSearchBar";
-import zustandStore from "zustandStore";
-import closure_6 from "zustandStore";
-import { ListItemType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14060 (SearchListSectionLabel)
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import GuildSelectDefaultIcon from "GuildSelectDefaultIcon" /* 14063 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "zustandStore" /* 14061 */;
+import closure_6 from "zustandStore" /* 14062 */;
+import { ListItemType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 10709 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 function SearchListSectionLabel(label) {
   label = label.label;
   let obj = { style: callback().spacer, children: null };
@@ -20,7 +24,7 @@ function SearchListSectionLabel(label) {
   if (typeof label === "string") {
     obj = { title: null };
     obj[0] = label;
-    tmpResult = tmp(require(6286) /* TableRowGroupTitle */.TableRowGroupTitle, obj);
+    tmpResult = tmp(TableRowGroupTitle.TableRowGroupTitle, obj);
   }
   obj[1] = tmpResult;
   return <View style={callback().spacer}>{null}</View>;
@@ -31,7 +35,7 @@ function SearchListSectionSubLabel(subLabel) {
   if (typeof subLabel === "string") {
     obj = { variant: "text-xs/normal", color: "text-muted", children: null };
     obj[2] = subLabel;
-    let tmpResult = tmp(require(4734) /* Text */.Text, obj);
+    let tmpResult = tmp(Text.Text, obj);
   } else {
     const _Array = Array;
     tmpResult = subLabel;
@@ -66,11 +70,11 @@ function renderItem(item) {
     obj[0] = item.label;
     return <SearchListSectionSubLabel subLabel={null} />;
   } else if (tmp.SETTING_SEARCH_RESULT === type) {
-    return require(13995) /* GuildSelectDefaultIcon */.renderSettingSearchResultItem(item);
+    return GuildSelectDefaultIcon.renderSettingSearchResultItem(item);
   } else if (tmp.SECTION_ROW === type) {
-    return require(13995) /* GuildSelectDefaultIcon */.renderSettingItem(item);
+    return GuildSelectDefaultIcon.renderSettingItem(item);
   } else if (tmp.SECTION_ROW_PLACEHOLDER === type) {
-    obj = require(13995) /* GuildSelectDefaultIcon */;
+    obj = GuildSelectDefaultIcon;
     return obj.renderSettingSearchResultPlaceholderItem(item);
   }
 }
@@ -98,7 +102,7 @@ function keyExtractor(type) {
 }
 let c3 = importAllResult;
 let obj = { container: null, contentContainer: null, searchResultsHeader: null, spacer: null, subLabel: null };
-obj = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND, flexGrow: 1 };
+obj = { backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, flexGrow: 1 };
 obj[0] = obj;
 obj[1] = { paddingHorizontal: 16 };
 obj[2] = { paddingBottom: 24 };
@@ -111,13 +115,13 @@ const memoResult = importAllResult.memo((node) => {
   const tmp = callback();
   field = closure_6.useField("blocklist");
   const items = [field, node];
-  const memo = importAllResult.useMemo(() => node(outer1_2[12]).toSettingListItems(node, field), items);
+  const memo = importAllResult.useMemo(() => node(closure_1_2[12]).toSettingListItems(node, field), items);
   const ref = importAllResult.useRef(null);
-  let obj = node(15062);
+  let obj = node(15126);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   obj = { style: tmp.container, children: null };
   obj = { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null };
-  const obj1 = {};
+  obj1 = {};
   const merged = Object.assign(tmp.contentContainer);
   obj1.paddingBottom = field(1629)().bottom + field(712).space.PX_16;
   obj[2] = obj1;
@@ -126,12 +130,12 @@ const memoResult = importAllResult.memo((node) => {
   obj[5] = renderItem;
   obj[6] = memo;
   obj[7] = getItemType;
-  obj[1] = jsx(node(8029).FlashList, { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null });
+  obj[1] = jsx(node(8068).FlashList, { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null });
   return <View ref={ref} ListHeaderComponent={node.ListHeaderComponent} contentContainerStyle={null} scrollIndicatorInsets={null} keyExtractor={null} renderItem={null} data={null} getItemType={null} />;
 });
 const memoResult1 = importAllResult.memo((node) => {
   node = node.node;
-  let importDefault;
+  importDefault = undefined;
   let settings;
   let isLoading;
   let placeholderCount;
@@ -161,7 +165,7 @@ const memoResult1 = importAllResult.memo((node) => {
     if (state) {
       let searchResultsHeader = {};
     } else {
-      searchResultsHeader = _undefined.searchResultsHeader;
+      searchResultsHeader = lib.searchResultsHeader;
     }
     return searchResultsHeader;
   }, items3);
@@ -172,7 +176,7 @@ const memoResult1 = importAllResult.memo((node) => {
       if (!isLoading) {
         tmp = null;
         if (0 === memo2.length) {
-          tmp = memo1(_undefined(settings[16]), {});
+          tmp = memo1(lib(settings[16]), {});
         }
       }
     }
@@ -194,7 +198,7 @@ const memoResult1 = importAllResult.memo((node) => {
   obj[10] = getItemType;
   return memo1(node(settings[14]).FlashList, obj);
 });
-const result = require("zustandStore").fileFinishedImporting("modules/settings/native/renderer/SettingListRenderer.tsx");
+const result = require("set").fileFinishedImporting("modules/settings/native/renderer/SettingListRenderer.tsx");
 
 export const SettingsList = memoResult;
 export const SearchableSettingsList = memoResult1;

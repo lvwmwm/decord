@@ -1,204 +1,206 @@
-// Module ID: 7532
-// Function ID: 7533
+// Module ID: 7570
+// Function ID: 7571
 // Name: items
-// Dependencies: [5, 7533, 7534, 7535, 7536, 7537, 7538, 7539, 7540, 7541, 7542, 7543, 7544, 7545, 7546, 7547, 7548, 7549, 7550, 7551, 7552, 7553, 7554, 7555, 7556, 7557, 7558, 7559, 7560, 7561, 7562, 7563, 7564, 7565, 7566, 7567, 7568, 7569, 2]
+// Dependencies: [5, 7571, 7572, 7573, 7574, 7575, 7576, 7577, 7578, 7579, 7580, 7581, 7582, 7583, 7584, 7585, 7586, 7587, 7588, 7589, 7590, 7591, 7592, 7593, 7594, 7595, 7596, 7597, 7598, 7599, 7600, 7601, 7602, 7603, 7604, 7605, 7606, 7607, 2]
 // Exports: getBurstAnimation
 
-// Module 7532 (items)
+// Module 7570 (items)
+import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
+
 let closure_0 = arg1;
 let obj = {
   load() {
-    return callback(7533);
+    return callback(7571);
   }
 };
 const items = [
   obj,
   {
     load() {
-      return callback(7534);
+      return callback(7572);
     }
   },
   {
     load() {
-      return callback(7535);
+      return callback(7573);
     }
   },
   {
     load() {
-      return callback(7536);
+      return callback(7574);
     }
   },
   {
     load() {
-      return callback(7537);
+      return callback(7575);
     }
   },
   {
     load() {
-      return callback(7538);
+      return callback(7576);
     }
   },
   {
     load() {
-      return callback(7539);
+      return callback(7577);
     }
   },
   {
     load() {
-      return callback(7540);
+      return callback(7578);
     }
   },
   {
     load() {
-      return callback(7541);
+      return callback(7579);
     }
   },
   {
     load() {
-      return callback(7542);
+      return callback(7580);
     }
   },
   {
     load() {
-      return callback(7543);
+      return callback(7581);
     }
   },
   {
     load() {
-      return callback(7544);
+      return callback(7582);
     }
   },
   {
     load() {
-      return callback(7545);
+      return callback(7583);
     }
   },
   {
     load() {
-      return callback(7546);
+      return callback(7584);
     }
   },
   {
     load() {
-      return callback(7547);
+      return callback(7585);
     }
   },
   {
     load() {
-      return callback(7548);
+      return callback(7586);
     }
   },
   {
     load() {
-      return callback(7549);
+      return callback(7587);
     }
   },
   {
     load() {
-      return callback(7550);
+      return callback(7588);
     }
   }
 ];
 obj = {
   load() {
-    return callback(7551);
+    return callback(7589);
   }
 };
 const items1 = [
   obj,
   {
     load() {
-      return callback(7552);
+      return callback(7590);
     }
   },
   {
     load() {
-      return callback(7553);
+      return callback(7591);
     }
   },
   {
     load() {
-      return callback(7554);
+      return callback(7592);
     }
   },
   {
     load() {
-      return callback(7555);
+      return callback(7593);
     }
   },
   {
     load() {
-      return callback(7556);
+      return callback(7594);
     }
   },
   {
     load() {
-      return callback(7557);
+      return callback(7595);
     }
   },
   {
     load() {
-      return callback(7558);
+      return callback(7596);
     }
   },
   {
     load() {
-      return callback(7559);
+      return callback(7597);
     }
   },
   {
     load() {
-      return callback(7560);
+      return callback(7598);
     }
   },
   {
     load() {
-      return callback(7561);
+      return callback(7599);
     }
   },
   {
     load() {
-      return callback(7562);
+      return callback(7600);
     }
   },
   {
     load() {
-      return callback(7563);
+      return callback(7601);
     }
   },
   {
     load() {
-      return callback(7564);
+      return callback(7602);
     }
   },
   {
     load() {
-      return callback(7565);
+      return callback(7603);
     }
   },
   {
     load() {
-      return callback(7566);
+      return callback(7604);
     }
   },
   {
     load() {
-      return callback(7567);
+      return callback(7605);
     }
   },
   {
     load() {
-      return callback(7568);
+      return callback(7606);
     }
   }
 ];
-closure_0 = require("module_7537")((arg0, arg1, arg2) => {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let closure_2 = arg2;
-  let closure_3 = arg3;
-  let c6 = 0;
-  let c7 = 0;
+closure_0 = asyncGeneratorStepDefault((arg0, arg1, arg2) => {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  closure_2 = arg2;
+  closure_3 = arg3;
+  c6 = 0;
+  c7 = 0;
   const iter = (function*(arg0, arg1, arg2) {
     if (c7 === 2) {
       c7 = 3;
@@ -211,7 +213,7 @@ closure_0 = require("module_7537")((arg0, arg1, arg2) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -226,7 +228,7 @@ closure_0 = require("module_7537")((arg0, arg1, arg2) => {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_5 = tmp5;
+            closure_5 = tmp5;
             let burstAnimationHash = tmp2;
             let flag;
             if (flag === undefined) {
@@ -242,7 +244,7 @@ closure_0 = require("module_7537")((arg0, arg1, arg2) => {
           throw arg1;
         } else if (arg0 === 2) {
           c7 = 3;
-          const obj1 = { value: null, done: true };
+          obj1 = { value: null, done: true };
           obj1[0] = arg1;
           return obj1;
         } else {
@@ -269,7 +271,7 @@ closure_0 = require("module_7537")((arg0, arg1, arg2) => {
   iter.next();
   return iter;
 });
-const result = require("module_7534").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
 
 export const getBurstAnimation = function() {
   const self = this;

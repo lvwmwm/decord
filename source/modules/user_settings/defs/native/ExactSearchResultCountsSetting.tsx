@@ -1,37 +1,41 @@
-// Module ID: 14668
-// Function ID: 14669
+// Module ID: 14736
+// Function ID: 14737
 // Name: toggle
-// Dependencies: [8198, 1236, 10669, 4066, 2]
+// Dependencies: [8238, 1236, 10708, 4069, 2]
 
-// Module 14668 (toggle)
-import createToggle from "createToggle";
+// Module 14736 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.aP91Ud);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.aP91Ud);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
-  useValue: require("explicitContentFromProto").SearchResultExactCountEnabled.useSetting,
-  onValueChange: require("explicitContentFromProto").SearchResultExactCountEnabled.updateSetting,
+  parent: MobileUserSettings.MobileUserSettings.APPEARANCE,
+  useValue: explicitContentFromProto.SearchResultExactCountEnabled.useSetting,
+  onValueChange: explicitContentFromProto.SearchResultExactCountEnabled.updateSetting,
   useDescription: function useSearchResultExactCountDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.qx4cha);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.qx4cha);
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.aP91Ud);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.aP91Ud);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
-  useValue: require("explicitContentFromProto").SearchResultExactCountEnabled.useSetting,
-  onValueChange: require("explicitContentFromProto").SearchResultExactCountEnabled.updateSetting,
+  parent: MobileUserSettings.MobileUserSettings.APPEARANCE,
+  useValue: explicitContentFromProto.SearchResultExactCountEnabled.useSetting,
+  onValueChange: explicitContentFromProto.SearchResultExactCountEnabled.updateSetting,
   useDescription: function useSearchResultExactCountDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.qx4cha);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.qx4cha);
   }
 };
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/ExactSearchResultCountsSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ExactSearchResultCountsSetting.tsx");
 
 export default toggle;

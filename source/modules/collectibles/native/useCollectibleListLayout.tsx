@@ -1,15 +1,13 @@
-// Module ID: 8395
-// Function ID: 8396
+// Module ID: 8434
+// Function ID: 8435
 // Name: useCollectibleListLayout
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 8395 (useCollectibleListLayout)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 8434 (useCollectibleListLayout)
+import closure_0 from "_slicedToArray" /* 32 */;
+import noop from "noop" /* 19 */;
 
-let closure_1;
-let obj1;
 ({ useCallback: closure_1, useState: obj1 } = noop);
 const result = require("set").fileFinishedImporting("modules/collectibles/native/useCollectibleListLayout.tsx");
 

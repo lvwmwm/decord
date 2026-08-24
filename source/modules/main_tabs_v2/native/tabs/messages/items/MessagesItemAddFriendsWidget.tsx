@@ -1,19 +1,24 @@
-// Module ID: 15361
-// Function ID: 15362
+// Module ID: 15425
+// Function ID: 15426
 // Name: getFriendInviteCode
-// Dependencies: [5, 19, 17, 676, 21, 12700, 712, 4661, 8042, 4093, 1236, 8918, 7506, 4230, 5433, 4734, 13314, 15362, 2]
+// Dependencies: [5, 19, 17, 676, 21, 12752, 712, 4668, 8081, 4096, 1236, 8955, 7544, 4234, 5438, 4739, 13372, 15426, 2]
 
-// Module 15361 (getFriendInviteCode)
-import ButtonBadge from "ButtonBadge";
-import importAllResult from "noop";
-import { View } from "registerAsset";
-import { InstantInviteSources } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15425 (getFriendInviteCode)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import ButtonBadgeDefault from "ButtonBadge" /* 12752 */;
+import registerAssetDefault from "registerAsset" /* 13372 */;
+import registerAssetDefault2 from "registerAsset" /* 15426 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { InstantInviteSources } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function getFriendInviteCode() {
   const self = this;
   const apply = _getFriendInviteCode.apply;
@@ -38,7 +43,7 @@ function _getFriendInviteCode() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -53,19 +58,19 @@ function _getFriendInviteCode() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp3;
+            closure_1 = tmp3;
             let code = tmp7;
             code = undefined;
-            let c3 = 1;
+            c3 = 1;
             c4 = 2;
             c5 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_1(outer1_2[8]).createFriendInvite(null, outer1_6.ADD_FRIENDS_WIDGET);
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_1(closure_1_2[8]).createFriendInvite(null, closure_1_6.ADD_FRIENDS_WIDGET);
             return obj1;
           }
         } else if (1 === tmp7) {
           c3 = 0;
-          let obj2 = code(4093);
+          let obj2 = code(4096);
           const intl = code(1236).intl;
           obj2.presentError(intl.string(code(1236).t.R0RpRX));
           c5 = 3;
@@ -90,7 +95,7 @@ function _getFriendInviteCode() {
           return obj;
         }
       } catch (tmp20) {
-        const dependencyMap = tmp20;
+        dependencyMap = tmp20;
         if (tmp4 === c3) {
           c5 = tmp2;
           throw tmp20;
@@ -100,7 +105,7 @@ function _getFriendInviteCode() {
       }
     }
   });
-  const _getFriendInviteCode = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -133,7 +138,7 @@ function _handleShare() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -153,8 +158,8 @@ function _handleShare() {
             callback = undefined;
             dependencyMap = 1;
             c3 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_10();
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_10();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -167,13 +172,13 @@ function _handleShare() {
           return obj;
         } else {
           callback = arg1;
-          const obj5 = callback(8918);
+          const obj5 = callback(8955);
           const intl = callback(1236).intl;
           const obj2 = { link: null };
-          obj2[0] = callback2(7506)(callback);
+          obj2[0] = callback2(7544)(callback);
           obj5.handleOpenShareSheet(callback, null, intl.formatToPlainString(callback(1236).t.PJf9P9, obj2), constants.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c3 = tmp;
@@ -181,7 +186,7 @@ function _handleShare() {
       }
     }
   });
-  const _handleShare = tmp;
+  closure_13 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -214,7 +219,7 @@ function _handleLink() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -229,13 +234,13 @@ function _handleLink() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp5;
+            closure_1 = tmp5;
             let callback = tmp2;
             callback = undefined;
             table = 1;
             c3 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_10();
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_10();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -251,7 +256,7 @@ function _handleLink() {
           obj = callback(table[11]);
           obj.handleCopy(callback, null, constants.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         c3 = tmp;
@@ -259,7 +264,7 @@ function _handleLink() {
       }
     }
   });
-  const _handleLink = tmp;
+  closure_15 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -269,18 +274,18 @@ function _handleLink() {
   return applyArgumentsResult;
 }
 let c4 = importAllResult;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
-const sum = require("ButtonBadge").ICON_ACTION_BUTTON_SIZE + require("Themes").space.PX_16;
+({ jsx: error, jsxs: closure_8 } = jsxProd);
+const sum = require("ButtonBadge").ICON_ACTION_BUTTON_SIZE + ThemesDefault.space.PX_16;
 let obj = { container: null, title: null, actions: null, actionIcon: null };
-obj = { height: sum, paddingHorizontal: require("Themes").space.PX_8, justifyContent: "space-between", flexDirection: "row", alignItems: "center" };
+obj = { height: sum, paddingHorizontal: ThemesDefault.space.PX_8, justifyContent: "space-between", flexDirection: "row", alignItems: "center" };
 obj[0] = obj;
-createCacheKey = { flexDirection: "row", alignItems: "center", borderRadius: require("Themes").radii.md, paddingHorizontal: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_12 };
+createCacheKey = { flexDirection: "row", alignItems: "center", borderRadius: ThemesDefault.radii.md, paddingHorizontal: ThemesDefault.space.PX_8, paddingVertical: ThemesDefault.space.PX_12 };
 obj[1] = createCacheKey;
-obj[2] = { paddingHorizontal: require("Themes").space.PX_8, flexDirection: "row", justifyContent: "flex-end" };
-let obj2 = { paddingHorizontal: require("Themes").space.PX_8, flexDirection: "row", justifyContent: "flex-end" };
-obj[3] = { marginEnd: 0, marginStart: require("Themes").space.PX_8 };
+obj[2] = { paddingHorizontal: ThemesDefault.space.PX_8, flexDirection: "row", justifyContent: "flex-end" };
+let obj2 = { paddingHorizontal: ThemesDefault.space.PX_8, flexDirection: "row", justifyContent: "flex-end" };
+obj[3] = { marginEnd: 0, marginStart: ThemesDefault.space.PX_8 };
 let closure_9 = createCacheKey.createStyles(obj);
-let obj3 = { marginEnd: 0, marginStart: require("Themes").space.PX_8 };
+let obj3 = { marginEnd: 0, marginStart: ThemesDefault.space.PX_8 };
 const memoResult = importAllResult.memo(function MessagesItemAddFriendsWidget() {
   const tmp = callback4();
   let obj = { style: tmp.container, collapsable: false, children: null };
@@ -297,35 +302,33 @@ const memoResult = importAllResult.memo(function MessagesItemAddFriendsWidget() 
     }
   }, []);
   obj = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.afcl67);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.afcl67);
   obj[2] = callback;
   obj[3] = tmp.title;
   obj = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[4] = intl2.string(require(1236) /* getSystemLocale */.t.afcl67);
-  obj[4] = callback2(require(4734) /* Text */.Text, obj);
-  const items = [callback2(require(5433) /* PressableBase */.PressableHighlight, obj), ];
-  const obj1 = { style: tmp.actions, children: null };
-  const obj2 = { style: tmp.actionIcon, variant: "filled", source: null, onPress: null, accessibilityLabel: null };
-  obj2[2] = importDefault(13314);
-  obj2[3] = handleShare;
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj2[4] = intl3.string(require(1236) /* getSystemLocale */.t.Ej3B3Y);
-  const items1 = [callback2(importDefault(12700), obj2), ];
+  const intl2 = getSystemLocale.intl;
+  obj[4] = intl2.string(getSystemLocale.t.afcl67);
+  obj[4] = callback2(Text.Text, obj);
+  const items = [callback2(PressableBase.PressableHighlight, obj), ];
+  obj1 = { style: tmp.actions, children: null };
+  const obj2 = { style: tmp.actionIcon, variant: "filled", source: registerAssetDefault, onPress: handleShare, accessibilityLabel: null };
+  const intl3 = getSystemLocale.intl;
+  obj2[4] = intl3.string(getSystemLocale.t.Ej3B3Y);
+  const items1 = [callback2(ButtonBadgeDefault, obj2), ];
   const obj3 = { style: tmp.actionIcon, variant: "filled", source: null, onPress: null, accessibilityLabel: null };
-  const tmp3 = importDefault(12700);
-  obj3[2] = importDefault(15362);
+  const tmp3 = ButtonBadgeDefault;
+  obj3[2] = registerAssetDefault2;
   obj3[3] = handleLink;
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj3[4] = intl4.string(require(1236) /* getSystemLocale */.t.WqhZss);
-  items1[1] = callback2(importDefault(12700), obj3);
+  const intl4 = getSystemLocale.intl;
+  obj3[4] = intl4.string(getSystemLocale.t.WqhZss);
+  items1[1] = callback2(ButtonBadgeDefault, obj3);
   obj1[1] = items1;
   items[1] = callback3(View, obj1);
   obj[2] = items;
   return callback3(View, obj);
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemAddFriendsWidget.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemAddFriendsWidget.tsx");
 
 export default memoResult;
 export const MESSAGES_ITEM_ADD_FRIENDS_WIDGET_HEIGHT = sum;

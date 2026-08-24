@@ -1,10 +1,10 @@
-// Module ID: 5008
-// Function ID: 5009
+// Module ID: 5013
+// Function ID: 5014
 // Name: set
 // Dependencies: [2]
 
-// Module 5008 (set)
-import set from "set";
+// Module 5013 (set)
+import set from "set" /* 2 */;
 
 const obj = { WEB_AND_IOS: null, ANDROID: null, QUEST_VR: null, OTHER: null, ALL: null };
 let set = new Set(["canary", "ptb", "stable"]);

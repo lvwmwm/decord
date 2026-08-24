@@ -1,14 +1,16 @@
-// Module ID: 16137
-// Function ID: 16138
+// Module ID: 16235
+// Function ID: 16236
 // Name: render
-// Dependencies: [19, 21, 16134, 4763, 1236, 2]
+// Dependencies: [19, 21, 16232, 4768, 1236, 2]
 
-// Module 16137 (render)
-import { jsx } from "jsxProd";
-import { Component } from "noop";
-import importAllResult from "noop";
+// Module 16235 (render)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import componentDidMountDefault from "componentDidMount" /* 4768 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
+const Component = importAllResult.Component;
 class VADPermission extends Component {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -20,13 +22,13 @@ class VADPermission extends Component {
 }
 VADPermission.prototype["render"] = function render() {
   const obj = { title: null, body: null, onConfirm: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.NYklhr);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.EJ26Oh);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.NYklhr);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t.EJ26Oh);
   obj[2] = this.close;
-  return jsx(importDefault(4763), { title: null, body: null, onConfirm: null });
+  return jsx(componentDidMountDefault, { title: null, body: null, onConfirm: null });
 };
-const result = require("dispatcher").fileFinishedImporting("components_native/warnings/VADPermission.tsx");
+const result = require("set").fileFinishedImporting("components_native/warnings/VADPermission.tsx");
 
 export default VADPermission;

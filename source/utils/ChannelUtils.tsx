@@ -1,34 +1,30 @@
-// Module ID: 4979
-// Function ID: 4980
+// Module ID: 4984
+// Function ID: 4985
 // Name: allowChannelAccess
-// Dependencies: [1395, 1391, 1980, 4021, 1979, 4545, 676, 1924, 4026, 506, 1954, 4980, 4981, 1236, 4219, 4982, 11, 2, 4985]
+// Dependencies: [1395, 1391, 1981, 4024, 1980, 4550, 676, 1924, 4029, 506, 1954, 4985, 4986, 1236, 4223, 4987, 11, 2, 4990]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 4979 (allowChannelAccess)
-import createChannelRecord from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import comparator from "comparator";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import handleConnectionOpen from "handleConnectionOpen";
-import getVoiceStatesForGuild from "getVoiceStatesForGuild";
-import ME from "ME";
-import { BoostedGuildFeatures } from "GuildFeatures";
+// Module 4984 (allowChannelAccess)
+import set from "set" /* 2 */;
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import fromStringAll from "fromString" /* 506 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import applyOverwritesAll from "applyOverwrites" /* 4029 */;
+import hasStream from "hasStream" /* 4985 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4986 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4990 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "comparator" /* 1981 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_10 from "handleConnectionOpen" /* 1980 */;
+import closure_11 from "getVoiceStatesForGuild" /* 4550 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_18;
-let closure_19;
-let closure_21;
-let closure_22;
-let closure_23;
-let closure_6;
-let map1;
 function allowChannelAccess(id, channelType, MEMBER) {
-  const NONE = importAll(4026).NONE;
+  const NONE = applyOverwritesAll.NONE;
   let tmp3 = callback(channelType);
   if (!tmp3) {
     tmp3 = channelType === closure_22;
@@ -56,27 +52,28 @@ function allowChannelAccess(id, channelType, MEMBER) {
     addResult2 = tmp(506).add(addResult1, constants.CONNECT);
     const tmpResult1 = tmp(506);
   }
-  return { id, type: MEMBER, deny: importAll(4026).NONE, allow: addResult2 };
+  return { id, type: MEMBER, deny: applyOverwritesAll.NONE, allow: addResult2 };
 }
 ({ isGuildSelectableChannelType: c4, TEXT_CHANNEL_TYPES: c5, THREAD_CHANNEL_TYPES: closure_6 } = createChannelRecord);
 const ChannelTypes = ME.ChannelTypes;
 ({ Permissions: map1, GuildFeatures: closure_14, BoostedGuildTiers: closure_15, BITRATE_MAX: closure_16, BITRATE_DEFAULT: closure_17, Routes: closure_18, AnalyticsPages: closure_19 } = ME);
+const BoostedGuildFeatures = GuildFeatures.BoostedGuildFeatures;
 ({ GUILD_VOICE: closure_21, GUILD_CATEGORY: closure_22, GUILD_STAGE_VOICE: closure_23 } = ChannelTypes);
-let result = require("comparator").fileFinishedImporting("utils/ChannelUtils.tsx");
+let result = set.fileFinishedImporting("utils/ChannelUtils.tsx");
 
 export const denyChannelAccessForNonPaidUsers = function denyChannelAccessForNonPaidUsers(arg0, arg1) {
   if (arg1 === ChannelTypes.GUILD_STAGE_VOICE) {
-    let obj = importAll(506);
+    let obj = fromStringAll;
     obj = { id: null, type: null, allow: null, deny: null };
     obj[0] = arg0;
-    obj[1] = require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE;
-    obj[2] = importAll(4026).NONE;
-    obj[3] = obj.add(importAll(4026).NONE, constants.CONNECT);
+    obj[1] = PermissionOverwriteType.PermissionOverwriteType.ROLE;
+    obj[2] = applyOverwritesAll.NONE;
+    obj[3] = obj.add(applyOverwritesAll.NONE, constants.CONNECT);
     return obj;
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("Premium channel feature not supported for channel type " + arg1);
+    error = new Error("Premium channel feature not supported for channel type " + arg1);
     throw error;
   }
 };
@@ -89,7 +86,7 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
   }
   const items = [];
   if (tmp) {
-    const NONE = importAll(4026).NONE;
+    const NONE = applyOverwritesAll.NONE;
     let tmp6 = callback(channelType);
     if (!tmp6) {
       tmp6 = channelType === closure_22;
@@ -113,28 +110,28 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
     const obj = { id: null, type: null, allow: null, deny: null };
     obj[0] = guildId;
     obj[1] = _require(1954).PermissionOverwriteType.ROLE;
-    obj[2] = importAll(4026).NONE;
+    obj[2] = applyOverwritesAll.NONE;
     obj[3] = addResult2;
     items.push(obj);
   }
   const item = arr.forEach((arg0) => {
-    items.push(outer1_24(arg0, channelType, channelType(outer1_3[10]).PermissionOverwriteType.ROLE));
+    items.push(closure_1_24(arg0, channelType, channelType(closure_1_3[10]).PermissionOverwriteType.ROLE));
   });
   return items;
 };
 export const permissionOverwriteForUser = function permissionOverwriteForUser(id, channelType) {
-  return allowChannelAccess(id, channelType, require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.MEMBER);
+  return allowChannelAccess(id, channelType, PermissionOverwriteType.PermissionOverwriteType.MEMBER);
 };
 export const permissionOverwriteForRole = function permissionOverwriteForRole(id, channelType) {
-  return allowChannelAccess(id, channelType, require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE);
+  return allowChannelAccess(id, channelType, PermissionOverwriteType.PermissionOverwriteType.ROLE);
 };
 export const permissionOverwritesForAnnouncement = function permissionOverwritesForAnnouncement(id) {
-  const items = [{ id, type: require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, deny: constants.SEND_MESSAGES, allow: importAll(4026).NONE }];
+  const items = [{ id, type: PermissionOverwriteType.PermissionOverwriteType.ROLE, deny: constants.SEND_MESSAGES, allow: applyOverwritesAll.NONE }];
   return items;
 };
-export const isChannelFull = function isChannelFull(channel, outer1_11, handleConnectionOpen) {
+export const isChannelFull = function isChannelFull(channel, closure_1_11, closure_10) {
   const guildId = channel.getGuildId();
-  const guild = handleConnectionOpen.getGuild(guildId);
+  const guild = closure_10.getGuild(guildId);
   let num;
   if (guild != null) {
     num = guild.maxVideoChannelUsers;
@@ -149,16 +146,16 @@ export const isChannelFull = function isChannelFull(channel, outer1_11, handleCo
   if (num2 == null) {
     num2 = -1;
   }
-  const result = getVoiceStatesForGuild.countVoiceStatesForChannel(channel.id);
-  const voiceStatesForChannel = getVoiceStatesForGuild.getVoiceStatesForChannel(channel);
-  const tmp6 = getUncachedChannelPermissions.can(constants.MOVE_MEMBERS, channel) && getUncachedChannelPermissions.can(constants.CONNECT, channel);
+  const result = closure_11.countVoiceStatesForChannel(channel.id);
+  const voiceStatesForChannel = closure_11.getVoiceStatesForChannel(channel);
+  const tmp6 = closure_9.can(constants.MOVE_MEMBERS, channel) && closure_9.can(constants.CONNECT, channel);
   if (channel.type === closure_23) {
     let tmp8 = null != guildId;
     if (tmp8) {
-      let hasVideoResult = outer1_11.hasVideo(channel.id);
+      let hasVideoResult = closure_1_11.hasVideo(channel.id);
       if (!hasVideoResult) {
-        hasVideoResult = require(4980) /* hasStream */.hasStream(voiceStatesForChannel);
-        const obj2 = require(4980) /* hasStream */;
+        hasVideoResult = hasStream.hasStream(voiceStatesForChannel);
+        const obj2 = hasStream;
       }
       tmp8 = hasVideoResult;
     }
@@ -170,7 +167,7 @@ export const isChannelFull = function isChannelFull(channel, outer1_11, handleCo
     }
     let tmp7 = tmp8;
   } else {
-    tmp7 = null != guildId && outer1_11.hasVideo(channel.id);
+    tmp7 = null != guildId && closure_1_11.hasVideo(channel.id);
     if (tmp7) {
       tmp7 = num > 0;
     }
@@ -191,7 +188,7 @@ export const isChannelFull = function isChannelFull(channel, outer1_11, handleCo
   }
   return tmp7;
 };
-export const sanitizeGuildTextChannelName = require("sanitizeGuildTextChannelName");
+export const sanitizeGuildTextChannelName = sanitizeGuildTextChannelNameDefault;
 export const getBitrateLimit = function getBitrateLimit(guild, channel) {
   if (channel.isGuildStageVoice()) {
     let bound = closure_17;
@@ -209,10 +206,6 @@ export const getBitrateLimit = function getBitrateLimit(guild, channel) {
   return bound;
 };
 export const computeSummarizedVoiceStates = function computeSummarizedVoiceStates(arg0) {
-  let channels;
-  let importAll;
-  let importDefault;
-  let require;
   ({ channels, selectedChannelId: require, selectedVoiceChannelId: importDefault, voiceStates: importAll } = arg0);
   const items = [];
   const item = channels.forEach((id) => {
@@ -222,8 +215,8 @@ export const computeSummarizedVoiceStates = function computeSummarizedVoiceState
           const forEach = arr.forEach;
           if (id.isGuildStageVoice()) {
             const item = forEach((voiceState) => {
-              const audienceRequestToSpeakState = outer1_0(outer1_3[12]).getAudienceRequestToSpeakState(voiceState.voiceState);
-              if (audienceRequestToSpeakState === outer1_0(outer1_3[12]).RequestToSpeakStates.ON_STAGE) {
+              const audienceRequestToSpeakState = closure_1_0(closure_1_3[12]).getAudienceRequestToSpeakState(voiceState.voiceState);
+              if (audienceRequestToSpeakState === closure_1_0(closure_1_3[12]).RequestToSpeakStates.ON_STAGE) {
                 arr = arr.push(voiceState);
               }
             });
@@ -237,10 +230,6 @@ export const computeSummarizedVoiceStates = function computeSummarizedVoiceState
   return items;
 };
 export const computeSummarizedVoiceUsers = function computeSummarizedVoiceUsers(arg0) {
-  let channels;
-  let importAll;
-  let importDefault;
-  let require;
   ({ channels, selectedChannelId: require, selectedVoiceChannelId: importDefault, voiceStates: importAll } = arg0);
   const items = [];
   let item = channels.forEach((id) => {
@@ -250,8 +239,8 @@ export const computeSummarizedVoiceUsers = function computeSummarizedVoiceUsers(
           const forEach = arr.forEach;
           if (id.isGuildStageVoice()) {
             const item = forEach((voiceState) => {
-              const audienceRequestToSpeakState = outer1_0(outer1_3[12]).getAudienceRequestToSpeakState(voiceState.voiceState);
-              if (audienceRequestToSpeakState === outer1_0(outer1_3[12]).RequestToSpeakStates.ON_STAGE) {
+              const audienceRequestToSpeakState = closure_1_0(closure_1_3[12]).getAudienceRequestToSpeakState(voiceState.voiceState);
+              if (audienceRequestToSpeakState === closure_1_0(closure_1_3[12]).RequestToSpeakStates.ON_STAGE) {
                 arr = arr.push(voiceState);
               }
             });
@@ -280,9 +269,9 @@ export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stat
           for (const item10017 of tmp10) {
             let tmp4 = require;
             let tmp5 = dependencyMap;
-            let obj3 = require(4981) /* useAudienceRequestToSpeakState */;
+            let obj3 = useAudienceRequestToSpeakState;
             let audienceRequestToSpeakState = obj3.getAudienceRequestToSpeakState(item10017.voiceState);
-            if (audienceRequestToSpeakState === require(4981) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE) {
+            if (audienceRequestToSpeakState === useAudienceRequestToSpeakState.RequestToSpeakStates.ON_STAGE) {
               let tmp7 = obj2;
               obj2.return();
               let tmp8 = iter;
@@ -301,44 +290,44 @@ export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stat
 export const channelTypeString = function channelTypeString(channel) {
   const type = channel.type;
   if (ChannelTypes.DM === type) {
-    const intl10 = require(1236) /* getSystemLocale */.intl;
-    return intl10.string(require(1236) /* getSystemLocale */.t.jN2DfZ);
+    const intl10 = getSystemLocale.intl;
+    return intl10.string(getSystemLocale.t.jN2DfZ);
   } else if (tmp.GROUP_DM === type) {
-    const intl9 = require(1236) /* getSystemLocale */.intl;
-    return intl9.string(require(1236) /* getSystemLocale */.t["e5y+gm"]);
+    const intl9 = getSystemLocale.intl;
+    return intl9.string(getSystemLocale.t["e5y+gm"]);
   } else if (tmp.GUILD_TEXT === type) {
-    const intl8 = require(1236) /* getSystemLocale */.intl;
-    return intl8.string(require(1236) /* getSystemLocale */.t.Pnajj0);
+    const intl8 = getSystemLocale.intl;
+    return intl8.string(getSystemLocale.t.Pnajj0);
   } else if (tmp.GUILD_FORUM === type) {
-    const intl7 = require(1236) /* getSystemLocale */.intl;
-    return intl7.string(require(1236) /* getSystemLocale */.t.GbryDd);
+    const intl7 = getSystemLocale.intl;
+    return intl7.string(getSystemLocale.t.GbryDd);
   } else if (tmp.GUILD_MEDIA === type) {
-    const intl6 = require(1236) /* getSystemLocale */.intl;
-    return intl6.string(require(1236) /* getSystemLocale */.t.seKITE);
+    const intl6 = getSystemLocale.intl;
+    return intl6.string(getSystemLocale.t.seKITE);
   } else if (tmp.GUILD_VOICE === type) {
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    return intl5.string(require(1236) /* getSystemLocale */.t.BVZqJl);
+    const intl5 = getSystemLocale.intl;
+    return intl5.string(getSystemLocale.t.BVZqJl);
   } else if (tmp.GUILD_STAGE_VOICE === type) {
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    return intl4.string(require(1236) /* getSystemLocale */.t.EErMzA);
+    const intl4 = getSystemLocale.intl;
+    return intl4.string(getSystemLocale.t.EErMzA);
   } else if (tmp.GUILD_ANNOUNCEMENT === type) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(require(1236) /* getSystemLocale */.t.l1dkSD);
+    const intl3 = getSystemLocale.intl;
+    return intl3.string(getSystemLocale.t.l1dkSD);
   } else if (tmp.GUILD_STORE === type) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(require(1236) /* getSystemLocale */.t["P1/Erq"]);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(getSystemLocale.t["P1/Erq"]);
   } else if (tmp.GUILD_CATEGORY === type) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.vHCZwr);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.vHCZwr);
   } else {
     return null;
   }
 };
-export const getPrivateChannelUserTagsString = function getPrivateChannelUserTagsString(recipients, outer1_7) {
+export const getPrivateChannelUserTagsString = function getPrivateChannelUserTagsString(recipients, closure_1_7) {
   if (null == recipients) {
     return null;
   } else {
-    const currentUser = outer1_7.getCurrentUser();
+    const currentUser = closure_1_7.getCurrentUser();
     let id;
     if (currentUser != null) {
       id = currentUser.id;
@@ -352,7 +341,7 @@ export const getPrivateChannelUserTagsString = function getPrivateChannelUserTag
       while (iter !== undefined) {
         if (id !== nextResult) {
           let tmp6 = nextResult;
-          let user = outer1_7.getUser(tmp5);
+          let user = closure_1_7.getUser(tmp5);
           if (null != user) {
             let tmp9 = user;
             let arr = items.push(tmp8);
@@ -373,12 +362,12 @@ export const getPrivateChannelUserTagsString = function getPrivateChannelUserTag
           }
           return name;
         });
-        const intl = require(1236) /* getSystemLocale */.intl;
+        const intl = getSystemLocale.intl;
         let obj = { users: null, user1: null, user2: null, extras: null };
         obj[0] = items.length;
         [obj[1], obj[2]] = mapped;
         obj[3] = items.length - mapped.length;
-        return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.BXG0Eh, obj);
+        return intl.formatToPlainString(getSystemLocale.t.BXG0Eh, obj);
       }
     }
   }
@@ -391,7 +380,7 @@ export const getMentionIconType = function getMentionIconType(channel) {
     const isSpoilerChannelResult = channel.isSpoilerChannel();
     if (channel.type === ChannelTypes.GUILD_VOICE) {
       let str11 = "voice-locked";
-      if (getUncachedChannelPermissions.can(constants.CONNECT, channel)) {
+      if (closure_9.can(constants.CONNECT, channel)) {
         let str12 = "voice-nsfw";
         if (!isNSFWResult) {
           let str13 = "voice";
@@ -405,7 +394,7 @@ export const getMentionIconType = function getMentionIconType(channel) {
       let tmp2 = str11;
     } else if (channel.type === tmp11.GUILD_STAGE_VOICE) {
       let str10 = "stage-locked";
-      if (getUncachedChannelPermissions.can(constants.CONNECT, channel)) {
+      if (closure_9.can(constants.CONNECT, channel)) {
         str10 = "stage";
       }
       tmp2 = str10;
@@ -506,7 +495,7 @@ export const getChannelLinkToCopy = function getChannelLinkToCopy(channel, chann
     if (obj.canUseMediaPostEmbed(guildId, channel1)) {
       const id = channel1.id;
       const id2 = channel.id;
-      const result = importDefault(11).castChannelIdAsMessageId(channel.id);
+      const result = DISCORD_EPOCHDefault.castChannelIdAsMessageId(channel.id);
       if (null != guildId) {
         if (null != id) {
           if (null != id2) {
@@ -521,7 +510,7 @@ export const getChannelLinkToCopy = function getChannelLinkToCopy(channel, chann
       const _location6 = location;
       const _HermesInternal3 = HermesInternal;
       combined = "" + protocol3 + "//" + host3 + closure_18.CHANNEL(guildId, id, result) + "";
-      const obj2 = importDefault(11);
+      const obj2 = DISCORD_EPOCHDefault;
     }
   }
   let combined1 = arg3;

@@ -1,16 +1,18 @@
-// Module ID: 10715
-// Function ID: 10716
+// Module ID: 10754
+// Function ID: 10755
 // Name: fetchBountiesAndDispatch
-// Dependencies: [5, 4564, 7452, 676, 709, 7469, 10485, 7468, 4274, 5054, 7473, 530, 7451, 2]
+// Dependencies: [5, 4569, 7490, 676, 709, 7507, 10524, 7506, 4278, 5059, 7511, 530, 7489, 2]
 // Exports: claimBountyReward, fetchBountyPreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 10715 (fetchBountiesAndDispatch)
-import AdCreativeType from "AdCreativeType";
-import handleConnectionInfoChange from "handleConnectionInfoChange";
-import set from "set";
-import { Endpoints } from "ME";
+// Module 10754 (fetchBountiesAndDispatch)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getOrRefreshAdSession from "getOrRefreshAdSession" /* 7511 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "handleConnectionInfoChange" /* 4569 */;
+import closure_5 from "set" /* 7490 */;
+import { Endpoints } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function fetchBountiesAndDispatch() {
   const self = this;
   const apply = _fetchBountiesAndDispatch.apply;
@@ -24,29 +26,29 @@ function fetchBountiesAndDispatch() {
 function _fetchBountiesAndDispatch() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       let map = tmp3;
       let decisions = tmp5;
-      callback(outer1_2[4]).dispatch({ type: "BOUNTIES_FETCH_QUEST_HOME_BOUNTIES_BEGIN" });
-      let c5 = 1;
+      callback(closure_1_2[4]).dispatch({ type: "BOUNTIES_FETCH_QUEST_HOME_BOUNTIES_BEGIN" });
+      c5 = 1;
       const _Date = Date;
       callback = Date.now();
       yield callback();
       if (1 === tmp8) {
         c5 = 0;
-        c5 = handleConnectionInfoChange;
-        const obj1 = callback(decisions[4]);
+        c5 = closure_4;
+        obj1 = callback(decisions[4]);
         const obj2 = { type: "BOUNTIES_FETCH_QUEST_HOME_BOUNTIES_FAILURE", placement: null, error: null };
         obj2[1] = closure_0;
         const tmp21 = new callback(decisions[8])(c5);
         obj2[2] = tmp21;
         obj1.dispatch(obj2);
-        let c7 = 3;
+        c7 = 3;
       } else if (arg0 === 1) {
         c7 = 3;
         throw arg1;
@@ -55,7 +57,7 @@ function _fetchBountiesAndDispatch() {
         const _Map = Map;
         map = new Map();
         decisions = decisions.decisions;
-        handleConnectionInfoChange = decisions.flatMap((creative) => {
+        closure_4 = decisions.flatMap((creative) => {
           if (null != creative.creative) {
             if (creative.creative.creative_type === callback(request_id[5]).AdCreativeType.BOUNTY) {
               let tmpResult = tmp(tmp2[6]);
@@ -76,7 +78,7 @@ function _fetchBountiesAndDispatch() {
           return [];
         });
         const obj3 = { type: "BOUNTIES_FETCH_QUEST_HOME_BOUNTIES_SUCCESS", bounties: null, placement: null, adDecisionsByAdCreativeId: null, fetchedAt: null };
-        obj3[1] = handleConnectionInfoChange;
+        obj3[1] = closure_4;
         obj3[2] = closure_0;
         obj3[3] = map;
         obj3[4] = callback;
@@ -88,7 +90,7 @@ function _fetchBountiesAndDispatch() {
       return arg1;
     })();
   });
-  const _fetchBountiesAndDispatch = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -100,9 +102,9 @@ function _fetchBountiesAndDispatch() {
 function _fetchQuestHomeBounties() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -115,7 +117,7 @@ function _fetchQuestHomeBounties() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -129,18 +131,18 @@ function _fetchQuestHomeBounties() {
               obj = { value: null, done: true };
               obj[0] = arg1;
               return obj;
-            } else if (!outer1_5.isFetchingQuestHomeBounties) {
+            } else if (!closure_1_5.isFetchingQuestHomeBounties) {
               c2 = 1;
               c1 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_7(tmp5, outer1_3(function*() {
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_7(tmp5, closure_1_3(function*() {
                 let uuid = tmp2;
-                let obj5 = outer1_0(5054);
+                let obj5 = closure_1_0(5059);
                 uuid = yield obj5.getSession();
-                const uuid2 = outer1_0(7473).getOrRefreshAdSession();
-                const HTTP = outer1_0(530).HTTP;
+                const uuid2 = closure_1_0(7511).getOrRefreshAdSession();
+                const HTTP = closure_1_0(530).HTTP;
                 const obj3 = { url: null, query: null, rejectWithError: false, context: null };
-                obj3[0] = outer1_6.QUESTS_GET_DECISIONS;
+                obj3[0] = closure_1_6.QUESTS_GET_DECISIONS;
                 const obj4 = { placement: null, client_ad_session_id: null, client_heartbeat_session_id: null, num_decisions_requested: 5 };
                 obj4[0] = uuid;
                 obj4[1] = uuid2.uuid;
@@ -150,7 +152,7 @@ function _fetchQuestHomeBounties() {
                 obj4[2] = uuid;
                 obj3[1] = obj4;
                 obj5 = { connection_type: null };
-                obj5[0] = outer1_4.getType();
+                obj5[0] = closure_1_4.getType();
                 obj3[3] = obj5;
                 yield HTTP.get(obj3);
                 return arg1.body;
@@ -167,7 +169,7 @@ function _fetchQuestHomeBounties() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp9) {
           c1 = tmp;
           throw tmp9;
@@ -175,7 +177,7 @@ function _fetchQuestHomeBounties() {
       }
     })();
   });
-  const _fetchQuestHomeBounties = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -187,10 +189,10 @@ function _fetchQuestHomeBounties() {
 function _fetchBountyPreview() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c3 = 0;
-    let c2 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c3 = 0;
+    c2 = 0;
     return (function*(arg0, arg1) {
       if (c2 === 2) {
         c2 = 3;
@@ -203,7 +205,7 @@ function _fetchBountyPreview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -217,15 +219,15 @@ function _fetchBountyPreview() {
               obj = { value: null, done: true };
               obj[0] = arg1;
               return obj;
-            } else if (!outer1_5.isFetchingQuestHomeBounties) {
+            } else if (!closure_1_5.isFetchingQuestHomeBounties) {
               v0 = 1;
               c2 = 1;
-              let obj1 = { value: null, done: false };
-              obj1[0] = outer1_7(tmp6, v0(function*() {
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_7(tmp6, v0(function*() {
                 const _URLSearchParams = URLSearchParams;
-                let closure_0 = 0;
+                closure_0 = 0;
                 let items = [];
-                closure_0 = HermesBuiltin.arraySpread(outer1_0.map((arg0) => {
+                closure_0 = HermesBuiltin.arraySpread(closure_1_0.map((arg0) => {
                   const items = ["ad_creative_ids", arg0];
                   return items;
                 }), closure_0);
@@ -234,10 +236,10 @@ function _fetchBountyPreview() {
                 items[closure_0] = items1;
                 closure_0 = closure_0 + 1;
                 const str2 = new URLSearchParams(items);
-                const HTTP = outer1_0(table[11]).HTTP;
-                const obj1 = { url: null, rejectWithError: false };
+                const HTTP = closure_1_0(table[11]).HTTP;
+                obj1 = { url: null, rejectWithError: false };
                 const _HermesInternal = HermesInternal;
-                obj1[0] = "" + outer1_6.QUESTS_CREATIVE_PREVIEW + "?" + str2.toString();
+                obj1[0] = "" + closure_1_6.QUESTS_CREATIVE_PREVIEW + "?" + str2.toString();
                 yield HTTP.get(obj1);
                 return arg1.body;
               }));
@@ -253,7 +255,7 @@ function _fetchBountyPreview() {
             return obj;
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp10) {
           c2 = tmp;
           throw tmp10;
@@ -261,7 +263,7 @@ function _fetchBountyPreview() {
       }
     })();
   });
-  const _fetchBountyPreview = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -273,11 +275,11 @@ function _fetchBountyPreview() {
 function _claimBountyReward() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (c7 === 2) {
         c7 = 3;
@@ -290,7 +292,7 @@ function _claimBountyReward() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -315,15 +317,15 @@ function _claimBountyReward() {
               if (claimingBountyReward.isClaimingBountyReward(callback)) {
                 c7 = 3;
               } else {
-                let obj8 = callback2(outer1_2[4]);
-                const obj1 = { type: "BOUNTIES_CLAIM_REWARD_BEGIN", bountyId: null };
+                let obj8 = callback2(closure_1_2[4]);
+                obj1 = { type: "BOUNTIES_CLAIM_REWARD_BEGIN", bountyId: null };
                 obj1[1] = tmp71;
                 obj8.dispatch(obj1);
                 claimingBountyReward = 1;
                 c6 = 2;
                 c7 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = callback(outer1_2[9]).getSession();
+                obj2[0] = callback(closure_1_2[9]).getSession();
                 return obj2;
               }
               tmp71 = callback;
@@ -410,7 +412,7 @@ function _claimBountyReward() {
       }
     })();
   });
-  const _claimBountyReward = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -442,18 +444,18 @@ export const fetchBountyPreview = function fetchBountyPreview(arr, c3) {
   return applyArgumentsResult;
 };
 export const setBountyVideoProgress = function setBountyVideoProgress(bountyId, arg1) {
-  let obj = require(7473) /* getOrRefreshAdSession */;
+  let obj = getOrRefreshAdSession;
   if (null != obj.getCurrentAdSession()) {
-    const orRefreshAdSession = require(7473) /* getOrRefreshAdSession */.getOrRefreshAdSession(true);
-    const tmpResult = require(7473) /* getOrRefreshAdSession */;
+    const orRefreshAdSession = getOrRefreshAdSession.getOrRefreshAdSession(true);
+    const tmpResult = getOrRefreshAdSession;
     obj = { type: "BOUNTIES_VIDEO_PROGRESS_UPDATE", bountyId: null, timestampSec: null, maxTimestampSec: null, duration: null };
     obj[1] = bountyId;
     ({ timestampSec: obj4[2], maxTimestampSec: obj4[3], duration: obj4[4] } = arg1);
-    importDefault(709).dispatch(obj);
-    const obj3 = importDefault(709);
+    dispatcherDefault.dispatch(obj);
+    const obj3 = dispatcherDefault;
   }
 };
-export const claimBountyReward = function claimBountyReward(id, outer1_1) {
+export const claimBountyReward = function claimBountyReward(id, closure_1_1) {
   const self = this;
   const apply = _claimBountyReward.apply;
   if (typeof apply === "unknown") {

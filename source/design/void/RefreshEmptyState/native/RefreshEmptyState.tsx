@@ -1,28 +1,27 @@
-// Module ID: 13547
-// Function ID: 13548
+// Module ID: 13605
+// Function ID: 13606
 // Name: EmptyState
-// Dependencies: [19, 17, 676, 21, 4661, 6782, 712, 8115, 4745, 1363, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 6819, 712, 8154, 4750, 1363, 2]
 // Exports: ThemedEmptyState
 
-// Module 13547 (EmptyState)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { Fonts } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
-import importDefaultResult1 from "createTextStyle";
+// Module 13605 (EmptyState)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import Button from "Button" /* 4750 */;
+import _modDef8154 from "module_8154" /* 8154 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { Fonts } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 class EmptyState {
   constructor(arg0) {
     ({ source, title, callToAction } = global);
     ({ body, containerStyle, imageStyle, titleStyle, bodyStyle } = global);
-    tmp = jsxs();
+    tmp = closure_7();
     tmp3 = View;
     obj = { style: items, children: null };
     items = [, ];
@@ -54,7 +53,7 @@ class EmptyState {
       items3[1] = titleStyle;
       obj1[0] = items3;
       obj1[1] = title;
-      tmp7 = jsx(require("module_8115"), obj1);
+      tmp7 = jsx(require("module_8154"), obj1);
     }
     items2[1] = tmp7;
     tmp11 = jsx;
@@ -62,7 +61,7 @@ class EmptyState {
     items4 = [, ];
     items4[0] = tmp.body;
     items4[1] = bodyStyle;
-    items2[2] = jsx(require("module_8115"), { style: items4, children: body });
+    items2[2] = jsx(require("module_8154"), { style: items4, children: body });
     tmp11Result = null;
     if (null != callToAction) {
       obj2 = { style: null, children: null };
@@ -78,28 +77,30 @@ class EmptyState {
     return tmp2(tmp3, obj);
   }
 }
+noopAll;
 ({ View: c3, Image: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: { alignItems: "center", justifyContent: "center", padding: 16 }, title: null, body: null, image: null, cta: null };
 createCacheKey = {};
-let merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_SEMIBOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
+let merged = Object.assign(importDefaultResult(Fonts.DISPLAY_SEMIBOLD, ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
 createCacheKey.textAlign = "center";
 createCacheKey.marginBottom = 8;
 createCacheKey[1] = createCacheKey;
 let obj1 = {};
-let merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_SUBTLE, 14));
+let merged1 = Object.assign(importDefaultResult(Fonts.PRIMARY_MEDIUM, ThemesDefault.colors.TEXT_SUBTLE, 14));
 obj1.textAlign = "center";
 createCacheKey[2] = obj1;
 createCacheKey[3] = { marginBottom: 32 };
 createCacheKey[4] = { alignSelf: "center", marginTop: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("ME").fileFinishedImporting("design/void/RefreshEmptyState/native/RefreshEmptyState.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const importDefaultResult1 = importDefaultResult;
+const result = require("set").fileFinishedImporting("design/void/RefreshEmptyState/native/RefreshEmptyState.tsx");
 
 export default EmptyState;
 export const ThemedEmptyState = function ThemedEmptyState(darkSource) {
   let lightSource = darkSource.darkSource;
   const merged = Object.assign(darkSource, Object.create(null));
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   if (obj2.isThemeLight(obj.useThemeContext().theme)) {
     lightSource = darkSource.lightSource;
   }

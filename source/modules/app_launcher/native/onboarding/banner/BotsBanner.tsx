@@ -1,20 +1,21 @@
-// Module ID: 11241
-// Function ID: 11242
+// Module ID: 11292
+// Function ID: 11293
 // Name: BotsBanner
-// Dependencies: [19, 21, 11242, 11223, 11237, 1236, 2]
+// Dependencies: [19, 21, 11293, 11274, 11288, 1236, 2]
 // Exports: default
 
-// Module 11241 (BotsBanner)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 11292 (BotsBanner)
+import noopAll from "noop" /* 19 */;
+import BannerBaseDefault from "BannerBase" /* 11288 */;
+import useBannerBots from "useBannerBots" /* 11293 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("useBannerBots").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/BotsBanner.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/BotsBanner.tsx");
 
 export default function BotsBanner(context) {
-  let firstBotApplication;
-  let secondBotApplication;
-  let obj = require(11242) /* useBannerBots */;
+  let obj = useBannerBots;
   const bannerBots = obj.useBannerBots({ context: context.context });
   ({ firstBotApplication, secondBotApplication } = bannerBots);
   let tmp4Result = null;
@@ -28,8 +29,8 @@ export default function BotsBanner(context) {
       obj[0] = firstBotApplication.name;
       obj[1] = secondBotApplication.name;
       obj[1] = intl.formatToPlainString(tmp(1236).t["9SN0xw"], obj);
-      tmp4Result = jsx(importDefault(11237), { firstApplicationName: null, secondApplicationName: null });
-      const tmp5Result = importDefault(11237);
+      tmp4Result = jsx(BannerBaseDefault, { firstApplicationName: null, secondApplicationName: null });
+      const tmp5Result = BannerBaseDefault;
     }
   }
   return tmp4Result;

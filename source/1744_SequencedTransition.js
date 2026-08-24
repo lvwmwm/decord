@@ -5,11 +5,6 @@
 
 // Module 1744 (SequencedTransition)
 arg5.SequencedTransition = function SequencedTransition(name) {
-  let reversed;
-  let scaleX;
-  let scaleY;
-  let translateX;
-  let translateY;
   ({ translateX, translateY, scaleX, scaleY, reversed } = arg1);
   let obj = { name, style: null, duration: 300 };
   obj = { 0: null, 50: null, 100: null };

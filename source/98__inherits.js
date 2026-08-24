@@ -4,6 +4,8 @@
 // Dependencies: [99]
 
 // Module 98 (_inherits)
+import _setPrototypeOf from "_setPrototypeOf" /* 99 */;
+
 
 export default function _inherits(value, fn) {
   if (typeof fn !== "function") {
@@ -20,6 +22,6 @@ export default function _inherits(value, fn) {
   value.prototype = Object.create(prototype, { constructor: { value, writable: true, configurable: true } });
   Object.defineProperty(value, "prototype", { writable: false });
   if (fn) {
-    require(99) /* _setPrototypeOf */(value, fn);
+    _setPrototypeOf(value, fn);
   }
 };

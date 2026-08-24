@@ -1,20 +1,24 @@
-// Module ID: 14452
-// Function ID: 14453
+// Module ID: 14520
+// Function ID: 14521
 // Name: useYouBarTotalHeight
-// Dependencies: [14450, 14449, 14453, 2]
+// Dependencies: [14518, 14517, 14521, 2]
 // Exports: useYouBarTotalHeight
 
-// Module 14452 (useYouBarTotalHeight)
-import { YOU_BAR_HEIGHT } from "CONNECTION_BANNER_HEIGHT";
+// Module 14520 (useYouBarTotalHeight)
+import set from "set" /* 2 */;
+import useYouBarHorizontalMargin from "useYouBarHorizontalMargin" /* 14517 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14518 */;
+import useConnectionBannerHeight from "useConnectionBannerHeight" /* 14521 */;
 
-const result = require("useConnectionBannerHeight").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarTotalHeight.tsx");
+const YOU_BAR_HEIGHT = CONNECTION_BANNER_HEIGHT.YOU_BAR_HEIGHT;
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarTotalHeight.tsx");
 
 export const useYouBarTotalHeight = function useYouBarTotalHeight(arg0) {
   let num = arg0;
   if (arg0 === undefined) {
     num = 0;
   }
-  const youBarBottomMargin = require(14449) /* useYouBarHorizontalMargin */.useYouBarBottomMargin();
-  const obj = require(14449) /* useYouBarHorizontalMargin */;
-  return youBarBottomMargin + YOU_BAR_HEIGHT + require(14453) /* useConnectionBannerHeight */.useConnectionBannerHeight() + num;
+  const youBarBottomMargin = useYouBarHorizontalMargin.useYouBarBottomMargin();
+  const obj = useYouBarHorizontalMargin;
+  return youBarBottomMargin + YOU_BAR_HEIGHT + useConnectionBannerHeight.useConnectionBannerHeight() + num;
 };

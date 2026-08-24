@@ -1,18 +1,19 @@
-// Module ID: 6040
-// Function ID: 6041
+// Module ID: 6071
+// Function ID: 6072
 // Name: OrbNitroSpotIllustration
-// Dependencies: [21, 5449, 6041, 2]
+// Dependencies: [21, 5454, 6072, 2]
 // Exports: OrbNitroSpotIllustration
 
-// Module 6040 (OrbNitroSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 6071 (OrbNitroSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6072 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/OrbNitroSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/OrbNitroSpotIllustration.native.tsx");
 
 export const OrbNitroSpotIllustration = function OrbNitroSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const OrbNitroSpotIllustration = function OrbNitroSpotIllustration(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6041);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const OrbNitroSpotIllustration = function OrbNitroSpotIllustration(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

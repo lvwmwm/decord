@@ -1,24 +1,20 @@
-// Module ID: 8934
-// Function ID: 8935
+// Module ID: 8971
+// Function ID: 8972
 // Name: UserProfileAnalyticsProvider
-// Dependencies: [19, 21, 7139, 8935, 514, 2]
+// Dependencies: [19, 21, 7177, 8972, 514, 2]
 // Exports: UserProfileAnalyticsProvider, useCreateUserProfileAnalyticsContext, useUserProfileAnalyticsContext
 
-// Module 8934 (UserProfileAnalyticsProvider)
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 8971 (UserProfileAnalyticsProvider)
+import contextDefault from "context" /* 7177 */;
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let c3 = importAllResult;
 let context = importAllResult.createContext(null);
-let result = require("context").fileFinishedImporting("modules/user_profile/UserProfileAnalyticsContext.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/UserProfileAnalyticsContext.tsx");
 
 export const UserProfileAnalyticsProvider = (children) => {
-  let dependencyMap;
-  let importDefault;
-  let isLoaded;
-  let openedAt;
-  let value;
   ({ value, openedAt } = children);
   ({ fetchStartedAt: importDefault, fetchEndedAt: dependencyMap, isLoaded } = children);
   if (isLoaded === undefined) {
@@ -26,7 +22,7 @@ export const UserProfileAnalyticsProvider = (children) => {
   }
   let ref;
   let obj;
-  let closure_6;
+  closure_6 = undefined;
   obj = isLoaded;
   ref = isLoaded.useRef(undefined);
   const ref1 = isLoaded.useRef(openedAt);
@@ -34,15 +30,13 @@ export const UserProfileAnalyticsProvider = (children) => {
     ref1.current = openedAt;
     ref.current = undefined;
   }
-  obj = { analyticsLocations: importDefault(7139)().analyticsLocations, value };
+  obj = { analyticsLocations: contextDefault().analyticsLocations, value };
   closure_6 = obj.useRef(obj);
   const effect = obj.useEffect(() => {
     closure_6.current = obj;
   });
   const items = [isLoaded];
   const effect1 = obj.useEffect(() => {
-    let analyticsLocations;
-    let value;
     const timestamp = Date.now();
     let tmp3 = null == ref.current;
     if (tmp3) {
@@ -53,7 +47,7 @@ export const UserProfileAnalyticsProvider = (children) => {
     }
     if (isLoaded) {
       ({ analyticsLocations, value } = ref.current);
-      let obj = openedAt(outer1_2[3]);
+      obj = openedAt(closure_1_2[3]);
       obj = { action: "VIEW", analyticsLocations: null };
       obj[1] = analyticsLocations;
       const merged = Object.assign(value);
@@ -76,8 +70,8 @@ export const UserProfileAnalyticsProvider = (children) => {
       obj[5] = closure_1;
       obj[6] = analyticsLocations;
       const merged1 = Object.assign(value);
-      const result1 = openedAt(outer1_2[3]).maybeTrackUserProfileUiViewed(obj);
-      const obj3 = openedAt(outer1_2[3]);
+      const result1 = openedAt(closure_1_2[3]).maybeTrackUserProfileUiViewed(obj);
+      const obj3 = openedAt(closure_1_2[3]);
     }
   }, items);
   return ref(obj.Provider, { value, children: children.children });
@@ -102,8 +96,7 @@ export const useCreateUserProfileAnalyticsContext = function useCreateUserProfil
   }
   const items = [sessionId, layout, userId, guildId, channelId, messageId, roleId, sourceSessionId, flag];
   return channelId.useMemo(() => {
-    const obj = { sessionId: null, sourceSessionId: null, layout: null, userId: null, guildId: null, channelId: null, messageId: null, roleId: null, showGuildProfile: null };
-    obj[0] = layout(guildId[4]).v4();
+    const obj = { sessionId: layout(guildId[4]).v4(), sourceSessionId: null, layout: null, userId: null, guildId: null, channelId: null, messageId: null, roleId: null, showGuildProfile: null };
     let tmp = sourceSessionId;
     if (sourceSessionId == null) {
       tmp = sessionId;
@@ -121,7 +114,7 @@ export const useCreateUserProfileAnalyticsContext = function useCreateUserProfil
 };
 export const useUserProfileAnalyticsContext = function useUserProfileAnalyticsContext() {
   const context = importAllResult.useContext(closure_5);
-  analyticsLocations = analyticsLocations(7139)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7177)().analyticsLocations;
   const items = [context, analyticsLocations];
   const items1 = [context, analyticsLocations];
   const items2 = [context, analyticsLocations];
@@ -130,7 +123,7 @@ export const useUserProfileAnalyticsContext = function useUserProfileAnalyticsCo
     context,
     trackUserProfileAction: importAllResult.useCallback((arg0) => {
       if (null != context) {
-        let obj = context(outer1_2[3]);
+        let obj = context(closure_1_2[3]);
         obj = { analyticsLocations: null };
         obj[0] = analyticsLocations;
         const merged = Object.assign(tmp);
@@ -140,7 +133,7 @@ export const useUserProfileAnalyticsContext = function useUserProfileAnalyticsCo
     }, items),
     trackUserProfileEditAction: importAllResult.useCallback((arg0) => {
       if (null != context) {
-        let obj = context(outer1_2[3]);
+        let obj = context(closure_1_2[3]);
         obj = { analyticsLocations: null };
         obj[0] = analyticsLocations;
         const merged = Object.assign(tmp);
@@ -150,7 +143,7 @@ export const useUserProfileAnalyticsContext = function useUserProfileAnalyticsCo
     }, items1),
     trackUserProfileEditSaved: importAllResult.useCallback((arg0) => {
       if (null != context) {
-        let obj = context(outer1_2[3]);
+        let obj = context(closure_1_2[3]);
         obj = { analyticsLocations: null };
         obj[0] = analyticsLocations;
         const merged = Object.assign(tmp);
@@ -160,7 +153,7 @@ export const useUserProfileAnalyticsContext = function useUserProfileAnalyticsCo
     }, items2),
     trackUserProfileWishlistAction: importAllResult.useCallback((arg0) => {
       if (null != context) {
-        let obj = context(outer1_2[3]);
+        let obj = context(closure_1_2[3]);
         obj = { analyticsLocations: null };
         obj[0] = analyticsLocations;
         const merged = Object.assign(tmp);

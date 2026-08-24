@@ -1,18 +1,19 @@
-// Module ID: 6180
-// Function ID: 6181
+// Module ID: 6211
+// Function ID: 6212
 // Name: SpinningGem3dIllustration
-// Dependencies: [21, 5449, 6181, 2]
+// Dependencies: [21, 5454, 6212, 2]
 // Exports: SpinningGem3dIllustration
 
-// Module 6180 (SpinningGem3dIllustration)
-import { jsx } from "jsxProd";
+// Module 6211 (SpinningGem3dIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6212 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SpinningGem3dIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SpinningGem3dIllustration.native.tsx");
 
 export const SpinningGem3dIllustration = function SpinningGem3dIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const SpinningGem3dIllustration = function SpinningGem3dIllustration(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6181);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const SpinningGem3dIllustration = function SpinningGem3dIllustration(widt
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

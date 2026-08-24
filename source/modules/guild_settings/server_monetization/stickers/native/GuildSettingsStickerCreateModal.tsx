@@ -1,32 +1,30 @@
-// Module ID: 16799
-// Function ID: 16800
+// Module ID: 16892
+// Function ID: 16893
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [19, 21, 9928, 9930, 1236, 16800, 2]
+// Dependencies: [19, 21, 9967, 9969, 1236, 16893, 2]
 // Exports: default
 
-// Module 16799 (GuildSettingsStickerCreateModal)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 16892 (GuildSettingsStickerCreateModal)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("useNavigatorConfirmChangesOnBack").fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/GuildSettingsStickerCreateModal.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/GuildSettingsStickerCreateModal.tsx");
 
 export default function GuildSettingsStickerCreateModal(arg0) {
-  let c2;
-  let c3;
-  let require;
-  let stickerId;
   ({ guildId: require, stickerId } = arg0);
-  let dependencyMap;
+  dependencyMap = undefined;
   c3 = undefined;
-  ({ onGoBack: c2, ref: c3 } = stickerId(9928)());
-  const tmp2 = stickerId(9928)();
+  ({ onGoBack: c2, ref: c3 } = stickerId(9967)());
+  const tmp2 = stickerId(9967)();
   const tmp3 = c3;
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   if (null != stickerId) {
   } else {
   }
-  const tmp4 = stickerId(9930);
+  const tmp4 = stickerId(9969);
   return tmp3(tmp4, {
     screenKey: "guild-settings-sticker-create",
     title: intl.string(_3DzNjU),

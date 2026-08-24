@@ -1,11 +1,11 @@
-// Module ID: 7688
-// Function ID: 7689
+// Module ID: 7726
+// Function ID: 7727
 // Name: useBottomSheetRef
 // Dependencies: [19, 2]
 // Exports: useBottomSheetRef
 
-// Module 7688 (useBottomSheetRef)
-import noop from "noop";
+// Module 7726 (useBottomSheetRef)
+import closure_0 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("design/components/Sheet/native/useBottomSheetRef.tsx");
 

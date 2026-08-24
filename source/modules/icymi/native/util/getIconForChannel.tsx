@@ -1,29 +1,37 @@
-// Module ID: 15750
-// Function ID: 15751
+// Module ID: 15819
+// Function ID: 15820
 // Name: getIconForChannel
-// Dependencies: [676, 6889, 6896, 6892, 6876, 6883, 6882, 2]
+// Dependencies: [676, 6927, 6934, 6930, 6914, 6921, 6920, 2]
 // Exports: getIconForChannel
 
-// Module 15750 (getIconForChannel)
-import { ChannelTypes } from "ME";
+// Module 15819 (getIconForChannel)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import TextIcon from "TextIcon" /* 6914 */;
+import ImageIcon from "ImageIcon" /* 6920 */;
+import ForumIcon from "ForumIcon" /* 6921 */;
+import AnnouncementsIcon from "AnnouncementsIcon" /* 6927 */;
+import StageIcon from "StageIcon" /* 6930 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 6934 */;
 
-const result = require("VoiceNormalIcon").fileFinishedImporting("modules/icymi/native/util/getIconForChannel.tsx");
+const ChannelTypes = ME.ChannelTypes;
+const result = set.fileFinishedImporting("modules/icymi/native/util/getIconForChannel.tsx");
 
 export const getIconForChannel = function getIconForChannel(type) {
   type = type.type;
   if (ChannelTypes.GUILD_ANNOUNCEMENT === type) {
-    return require(6889) /* AnnouncementsIcon */.AnnouncementsIcon;
+    return AnnouncementsIcon.AnnouncementsIcon;
   } else if (tmp.GUILD_VOICE === type) {
-    return require(6896) /* VoiceNormalIcon */.VoiceNormalIcon;
+    return VoiceNormalIcon.VoiceNormalIcon;
   } else if (tmp.GUILD_STAGE_VOICE === type) {
-    return require(6892) /* StageIcon */.StageIcon;
+    return StageIcon.StageIcon;
   } else if (tmp.GUILD_TEXT === type) {
-    return require(6876) /* TextIcon */.TextIcon;
+    return TextIcon.TextIcon;
   } else if (tmp.GUILD_FORUM === type) {
-    return require(6883) /* ForumIcon */.ForumIcon;
+    return ForumIcon.ForumIcon;
   } else if (tmp.GUILD_MEDIA === type) {
-    return require(6882) /* ImageIcon */.ImageIcon;
+    return ImageIcon.ImageIcon;
   } else {
-    return require(6876) /* TextIcon */.TextIcon;
+    return TextIcon.TextIcon;
   }
 };

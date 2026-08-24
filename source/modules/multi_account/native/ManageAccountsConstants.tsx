@@ -1,14 +1,16 @@
-// Module ID: 15636
-// Function ID: 15637
+// Module ID: 15704
+// Function ID: 15705
 // Name: ManageAccountsScreens
 // Dependencies: [676, 2]
 
-// Module 15636 (ManageAccountsScreens)
-import { AuthStates } from "ME";
+// Module 15704 (ManageAccountsScreens)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
+const AuthStates = ME.AuthStates;
 const LOGIN = AuthStates.LOGIN;
 const ACCOUNT_DISABLED_OR_DELETION_SCHEDULED = AuthStates.ACCOUNT_DISABLED_OR_DELETION_SCHEDULED;
 const MFA = AuthStates.MFA;
-const result = require("set").fileFinishedImporting("modules/multi_account/native/ManageAccountsConstants.tsx");
+const result = set.fileFinishedImporting("modules/multi_account/native/ManageAccountsConstants.tsx");
 
 export const ManageAccountsScreens = { MANAGE_ACCOUNTS: "MANAGE_ACCOUNTS", LOGIN, [LOGIN]: "LOGIN", ACCOUNT_DISABLED_OR_DELETION_SCHEDULED, [ACCOUNT_DISABLED_OR_DELETION_SCHEDULED]: "ACCOUNT_DISABLED_OR_DELETION_SCHEDULED", MFA, [MFA]: "MFA" };

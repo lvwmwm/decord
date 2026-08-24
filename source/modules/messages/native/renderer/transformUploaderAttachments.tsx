@@ -1,17 +1,17 @@
-// Module ID: 8426
-// Function ID: 8427
+// Module ID: 8465
+// Function ID: 8466
 // Name: createUploaderAttachments
-// Dependencies: [8158, 4811, 8339, 1236, 4828, 2]
+// Dependencies: [8197, 4816, 8378, 1236, 4833, 2]
 // Exports: default
 
-// Module 8426 (createUploaderAttachments)
-import { AttachmentType } from "Changeset";
+// Module 8465 (createUploaderAttachments)
+import set from "set" /* 2 */;
+import Changeset from "Changeset" /* 8197 */;
 
-const result = require("getAttachmentObscurityProps").fileFinishedImporting("modules/messages/native/renderer/transformUploaderAttachments.tsx");
+const AttachmentType = Changeset.AttachmentType;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/transformUploaderAttachments.tsx");
 
 export default function createUploaderAttachments(uploaderFile) {
-  let AttachmentType;
-  let dependencyMap;
   uploaderFile = uploaderFile.uploaderFile;
   ({ isFailedMessage: dependencyMap, shouldInlineAttachmentMedia: AttachmentType } = uploaderFile);
   const items = uploaderFile.items;
@@ -27,12 +27,12 @@ export default function createUploaderAttachments(uploaderFile) {
       if (str2 == null) {
         str2 = "";
       }
-      let obj = uploaderFile(outer1_1[1]);
+      let obj = uploaderFile(closure_1_1[1]);
       const isImageFileResult = obj.isImageFile(str);
-      const isVideoFileResult = uploaderFile(outer1_1[1]).isVideoFile(str);
-      const obj2 = uploaderFile(outer1_1[1]);
+      const isVideoFileResult = uploaderFile(closure_1_1[1]).isVideoFile(str);
+      const obj2 = uploaderFile(closure_1_1[1]);
       let num = item.progress;
-      const obj3 = uploaderFile(outer1_1[1]);
+      const obj3 = uploaderFile(closure_1_1[1]);
       if (num == null) {
         num = 0;
       }
@@ -57,8 +57,8 @@ export default function createUploaderAttachments(uploaderFile) {
         tmp8 = str2;
       }
       obj[1] = tmp8;
-      const isAudioFileResult = uploaderFile(outer1_1[1]).isAudioFile(str);
-      const merged = Object.assign(uploaderFile(outer1_1[2]).getAttachmentObscurityDefaults());
+      const isAudioFileResult = uploaderFile(closure_1_1[1]).isAudioFile(str);
+      const merged = Object.assign(uploaderFile(closure_1_1[2]).getAttachmentObscurityDefaults());
       obj.filename = str;
       let str3 = "";
       if (null != item.size) {
@@ -118,7 +118,7 @@ export default function createUploaderAttachments(uploaderFile) {
       obj.uploaderItemId = str5;
       ({ durationSecs: obj4.durationSecs, waveform: obj4.waveform } = item);
       let uniqueId;
-      if (filename instanceof uploaderFile(outer1_1[4]).CloudUpload) {
+      if (filename instanceof uploaderFile(closure_1_1[4]).CloudUpload) {
         uniqueId = filename.uniqueId;
       }
       obj.id = uniqueId;

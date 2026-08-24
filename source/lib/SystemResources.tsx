@@ -1,13 +1,15 @@
-// Module ID: 7496
-// Function ID: 7497
+// Module ID: 7534
+// Function ID: 7535
 // Name: getStats
-// Dependencies: [5, 7490, 5422, 7497, 2]
+// Dependencies: [5, 7528, 5427, 7535, 2]
 
-// Module 7496 (getStats)
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 7534 (getStats)
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 5427 */;
+import getSamples from "getSamples" /* 7528 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
 
-const require = arg1;
-let result = require("getHermesInstrumentedStatsSummary").fileFinishedImporting("lib/SystemResources.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("lib/SystemResources.tsx");
 class SystemResources {
   constructor() {
     obj = Object.create(new.target.prototype);
@@ -29,7 +31,7 @@ prototype["getStats"] = function getStats() {
   const report = cpuHistogram.getReport();
   const memoryHistogram = this.memoryHistogram;
   const report1 = memoryHistogram.getReport();
-  let obj = importDefault(5422);
+  let obj = getHermesInstrumentedStatsSummaryDefault;
   const cumulativeCPUUsage = obj.getCumulativeCPUUsage();
   let result;
   if (null != this.startCPU) {
@@ -52,10 +54,10 @@ prototype["getStats"] = function getStats() {
 };
 prototype["takeSample"] = function takeSample() {
   const self = this;
-  const cumulativeCPUUsage = importDefault(5422).getCumulativeCPUUsage();
-  const obj = importDefault(5422);
+  const cumulativeCPUUsage = getHermesInstrumentedStatsSummaryDefault.getCumulativeCPUUsage();
+  const obj = getHermesInstrumentedStatsSummaryDefault;
   const tmp = importDefault;
-  const currentMemoryUsageKB = importDefault(5422).getCurrentMemoryUsageKB();
+  const currentMemoryUsageKB = getHermesInstrumentedStatsSummaryDefault.getCurrentMemoryUsageKB();
   if (null != cumulativeCPUUsage) {
     let flag = true;
     if (null != self.lastCPU) {
@@ -71,12 +73,12 @@ prototype["takeSample"] = function takeSample() {
       self.lastCPU = cumulativeCPUUsage;
     }
   } else {
-    const currentCPUUsagePercent = tmp(5422).getCurrentCPUUsagePercent();
+    const currentCPUUsagePercent = getHermesInstrumentedStatsSummaryDefault.getCurrentCPUUsagePercent();
     if (null != currentCPUUsagePercent) {
       const cpuHistogram2 = self.cpuHistogram;
       cpuHistogram2.addSample(currentCPUUsagePercent);
     }
-    const tmpResult = tmp(5422);
+    const tmpResult = getHermesInstrumentedStatsSummaryDefault;
   }
   if (null != currentMemoryUsageKB) {
     const memoryHistogram = self.memoryHistogram;
@@ -96,7 +98,7 @@ prototype["getCurrentBattery"] = function getCurrentBattery() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -111,11 +113,11 @@ prototype["getCurrentBattery"] = function getCurrentBattery() {
             obj[0] = arg1;
             return obj;
           } else {
-            let c3 = 1;
-            let obj2 = v0(outer1_2[3]);
+            c3 = 1;
+            let obj2 = v0(closure_1_2[3]);
             c1 = 2;
             v0 = 1;
-            const obj1 = { value: null, done: false };
+            obj1 = { value: null, done: false };
             obj1[0] = obj2.getDeviceState({ fallback: false });
             return obj1;
           }
@@ -140,7 +142,7 @@ prototype["getCurrentBattery"] = function getCurrentBattery() {
           return obj;
         }
       } catch (tmp10) {
-        let closure_2 = tmp10;
+        closure_2 = tmp10;
         if (tmp3 === c3) {
           v0 = tmp2;
           throw tmp10;
@@ -165,7 +167,7 @@ prototype["setLastBattery"] = function setLastBattery() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -180,11 +182,11 @@ prototype["setLastBattery"] = function setLastBattery() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_0 = outer1_0;
+            closure_0 = closure_1_0;
             c1 = 1;
             c2 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_0.getCurrentBattery();
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_0.getCurrentBattery();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -198,7 +200,7 @@ prototype["setLastBattery"] = function setLastBattery() {
         } else {
           closure_0.lastBattery = arg1;
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c2 = tmp;
@@ -221,7 +223,7 @@ prototype["getBatteryLevelStats"] = function getBatteryLevelStats() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -236,13 +238,13 @@ prototype["getBatteryLevelStats"] = function getBatteryLevelStats() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp5;
-            let closure_0 = tmp2;
+            closure_1 = tmp5;
+            closure_0 = tmp2;
             closure_0 = undefined;
             c2 = 1;
             c3 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_0.getCurrentBattery();
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_0.getCurrentBattery();
             return obj1;
           }
         } else if (arg0 === 1) {

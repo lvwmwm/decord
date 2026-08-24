@@ -4,6 +4,8 @@
 // Dependencies: [2]
 
 // Module 1919 (typedGlobal)
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/global_types.tsx");
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/global_types.tsx");
 
 export const typedGlobal = global;

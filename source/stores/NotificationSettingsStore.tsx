@@ -1,25 +1,27 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 10054
+// Function ID: 10055
 // Name: DesktopNotificationTypes
 // Dependencies: [676, 500, 589, 709, 2]
 
-// Module 10015 (DesktopNotificationTypes)
-import ME from "ME";
-import { DeviceSettingsStore } from "initialize";
+// Module 10054 (DesktopNotificationTypes)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import ME from "ME" /* 676 */;
 
-let TTSNotificationTypes;
-let c3;
 const DesktopNotificationTypes = ME.DesktopNotificationTypes;
 ({ NotificationPermissionTypes: c3, TTSNotificationTypes } = ME);
-let obj = { desktopType: require("set").isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER, disableAllSounds: false, disabledSounds: [], ttsType: TTSNotificationTypes.NEVER, disableUnreadBadge: false, taskbarFlash: true, notifyMessagesInSelectedChannel: false, screenDowntimeReminder: true };
+let obj = { desktopType: set2.isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER, disableAllSounds: false, disabledSounds: [], ttsType: TTSNotificationTypes.NEVER, disableUnreadBadge: false, taskbarFlash: true, notifyMessagesInSelectedChannel: false, screenDowntimeReminder: true };
 function handleSetDesktopType(desktopType) {
   obj.desktopType = desktopType.desktopType;
 }
+const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class NotificationSettingsStore extends DeviceSettingsStore {
 }
 const prototype = NotificationSettingsStore.prototype;
 prototype["initialize"] = function initialize(arg0) {
-  const obj = {};
+  obj = {};
   const merged = Object.assign(obj);
   const merged1 = Object.assign(arg0);
 };
@@ -56,11 +58,11 @@ Object.defineProperty(prototype, "screenDowntimeReminder", {
   },
   set: undefined
 });
-prototype["isSoundDisabled"] = function isSoundDisabled(call_calling) {
+prototype["isSoundDisabled"] = function isSoundDisabled(message1) {
   let disableAllSounds = obj.disableAllSounds;
   if (!disableAllSounds) {
     const disabledSounds = obj.disabledSounds;
-    disableAllSounds = -1 !== disabledSounds.indexOf(call_calling);
+    disableAllSounds = -1 !== disabledSounds.indexOf(message1);
   }
   return disableAllSounds;
 };
@@ -68,7 +70,7 @@ NotificationSettingsStore.displayName = "NotificationSettingsStore";
 NotificationSettingsStore.persistKey = "notifications";
 const items = [
   (arg0) => {
-    const obj = {};
+    obj = {};
     const merged = Object.assign(arg0);
     obj.disabledSounds = obj.disabledSounds || [];
     obj.disableUnreadBadge = obj.disableUnreadBadge || false;
@@ -81,7 +83,7 @@ const items = [
     if (null != obj.desktopType) {
       return obj;
     } else {
-      obj.desktopType = require(500) /* set */.isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER;
+      obj.desktopType = set2.isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER;
     }
   }
 ];
@@ -118,7 +120,7 @@ obj = {
     obj.screenDowntimeReminder = screenDowntimeReminder.screenDowntimeReminder;
   }
 };
-const notificationSettingsStore = new NotificationSettingsStore(require("dispatcher"), obj);
-const result = require("initialize").fileFinishedImporting("stores/NotificationSettingsStore.tsx");
+const notificationSettingsStore = new NotificationSettingsStore(dispatcherDefault, obj);
+const result = set.fileFinishedImporting("stores/NotificationSettingsStore.tsx");
 
 export default notificationSettingsStore;

@@ -1,39 +1,37 @@
-// Module ID: 11319
-// Function ID: 11320
+// Module ID: 11370
+// Function ID: 11371
 // Name: useLaunchingActivityButtonState
-// Dependencies: [19, 1390, 8708, 7145, 589, 8704, 6701, 2]
+// Dependencies: [19, 1390, 8745, 7183, 589, 8741, 6738, 2]
 // Exports: default
 
-// Module 11319 (useLaunchingActivityButtonState)
-import noop from "noop";
-import participantFromServer from "participantFromServer";
-import map from "map";
+// Module 11370 (useLaunchingActivityButtonState)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "participantFromServer" /* 1390 */;
+import closure_5 from "map" /* 8745 */;
 
 const require = arg1;
-const result = require("map").fileFinishedImporting("modules/app_launcher/utils/useLaunchingActivityButtonState.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/utils/useLaunchingActivityButtonState.tsx");
 
 export default function useLaunchingActivityButtonState(applicationId) {
-  let importDefault;
-  let onSubmissionComplete;
   applicationId = applicationId.applicationId;
   ({ context: importDefault, onSubmissionComplete } = applicationId);
   let stateFromStores1;
-  let c4;
+  closure_4 = undefined;
   let obj = applicationId(onSubmissionComplete[3]);
   const getOrFetchApplication = obj.useGetOrFetchApplication(applicationId);
-  const items = [c4];
+  const items = [closure_4];
   const stateFromStores = applicationId(onSubmissionComplete[4]).useStateFromStores(items, () => {
     let id;
     if ("channel" === closure_1.type) {
       id = closure_1.channel.id;
     }
-    return _undefined.getLaunchState(applicationId, id);
+    return launchState.getLaunchState(applicationId, id);
   });
   const obj2 = applicationId(onSubmissionComplete[4]);
   let tmp = applicationId;
-  const items1 = [map];
+  const items1 = [closure_5];
   stateFromStores1 = applicationId(onSubmissionComplete[4]).useStateFromStores(items1, () => {
-    const mainFrame = outer1_5.getMainFrame();
+    const mainFrame = closure_1_5.getMainFrame();
     let state;
     if (mainFrame != null) {
       state = mainFrame.state;
@@ -51,12 +49,12 @@ export default function useLaunchingActivityButtonState(applicationId) {
     const tmpResult = tmp(tmp2[5]);
   }
   let tmp7 = importDefault(tmp2[6])(stateFromStores1);
-  c4 = tmp7;
+  closure_4 = tmp7;
   const items2 = [stateFromStores1, tmp7, onSubmissionComplete];
   const effect = stateFromStores1.useEffect(() => {
     let tmp = !stateFromStores1;
     if (!stateFromStores1) {
-      tmp = c4;
+      tmp = closure_4;
     }
     if (tmp) {
       if (onSubmissionComplete != null) {

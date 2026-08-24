@@ -1,34 +1,34 @@
-// Module ID: 15493
-// Function ID: 15494
+// Module ID: 15558
+// Function ID: 15559
 // Name: useStartTime
-// Dependencies: [19, 4495, 4826, 10509, 676, 589, 10678, 2]
+// Dependencies: [19, 4499, 4831, 10548, 676, 589, 10717, 2]
 // Exports: useStartTime
 
-// Module 15493 (useStartTime)
-import noop from "noop";
-import _handleConnectionOpen from "_handleConnectionOpen";
-import handleConnectionOpen from "handleConnectionOpen";
-import _toTimestampMs from "_toTimestampMs";
-import { ChannelTypes } from "ME";
+// Module 15558 (useStartTime)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "_handleConnectionOpen" /* 4499 */;
+import closure_4 from "handleConnectionOpen" /* 4831 */;
+import closure_5 from "_toTimestampMs" /* 10548 */;
+import { ChannelTypes } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("handleConnectionOpen").fileFinishedImporting("modules/channel/useVoiceChannelStartTime.tsx");
+const result = require("set").fileFinishedImporting("modules/channel/useVoiceChannelStartTime.tsx");
 
 export const useStartTime = function useStartTime(channel) {
   const _require = channel;
-  const items = [_toTimestampMs, handleConnectionOpen];
-  const stateFromStoresObject = _require(hasRequestedStartTimes[5]).useStateFromStoresObject(items, () => ({ hasRequestedStartTimes: outer1_5.hasRequestedStartTimes(channel.guild_id), startTime: outer1_5.getStartTime(channel), isGuildUnavailable: tmp3.isUnavailable(channel.guild_id) }));
+  const items = [closure_5, closure_4];
+  const stateFromStoresObject = _require(hasRequestedStartTimes[5]).useStateFromStoresObject(items, () => ({ hasRequestedStartTimes: closure_1_5.hasRequestedStartTimes(channel.guild_id), startTime: closure_1_5.getStartTime(channel), isGuildUnavailable: unavailable.isUnavailable(channel.guild_id) }));
   hasRequestedStartTimes = stateFromStoresObject.hasRequestedStartTimes;
   const isGuildUnavailable = stateFromStoresObject.isGuildUnavailable;
   let obj = _require(hasRequestedStartTimes[5]);
   const items1 = [stateFromStores];
   stateFromStores = _require(hasRequestedStartTimes[5]).useStateFromStores(items1, () => stateFromStores.isConnected());
-  handleConnectionOpen = tmp3;
+  closure_4 = tmp3;
   const items2 = [channel.type === ChannelTypes.GUILD_VOICE, channel.guild_id, hasRequestedStartTimes, isGuildUnavailable, stateFromStores];
   const effect = isGuildUnavailable.useEffect(() => {
     let tmp = !hasRequestedStartTimes;
     if (!hasRequestedStartTimes) {
-      tmp = handleConnectionOpen;
+      tmp = closure_4;
     }
     if (tmp) {
       tmp = !isGuildUnavailable;

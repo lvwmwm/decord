@@ -1,18 +1,22 @@
-// Module ID: 14784
-// Function ID: 14785
+// Module ID: 14848
+// Function ID: 14849
 // Name: useWebBrowserSettingOptions
-// Dependencies: [8198, 4340, 1236, 691, 500, 10669, 2]
+// Dependencies: [8238, 4344, 1236, 691, 500, 10708, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 14784 (useWebBrowserSettingOptions)
-import createToggle from "createToggle";
+// Module 14848 (useWebBrowserSettingOptions)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import NativeModules from "NativeModules" /* 4344 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 function useWebBrowserSettingOptions() {
   let CHROME = dependencyMap;
-  let obj = require(4340) /* NativeModules */;
+  let obj = NativeModules;
   const items = [];
   const browserManagerIsChromeInstalled = obj.useBrowserManagerIsChromeInstalled();
-  let obj1 = require(4340) /* NativeModules */;
+  obj1 = NativeModules;
   if (obj1.useBrowserManagerSupportsInAppBrowser()) {
     obj = { label: null, value: null };
     const intl = tmp(1236).intl;
@@ -50,33 +54,33 @@ function useWebBrowserSettingOptions() {
 }
 const radio = createToggle.createRadio({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["C+DkPu"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["C+DkPu"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.WEB_BROWSER,
+  parent: MobileUserSettings.MobileUserSettings.WEB_BROWSER,
   useValue: function useWebBrowserSettingValue() {
-    return require(4340) /* NativeModules */.useBrowserManagerSelectedBrowser();
+    return NativeModules.useBrowserManagerSelectedBrowser();
   },
   onValueChange: function onWebBrowserSettingValueChange(arg0) {
-    const result = require(4340) /* NativeModules */.browserManagerSelectBrowser(Number(arg0));
+    const result = NativeModules.browserManagerSelectBrowser(Number(arg0));
   },
   useOptions: useWebBrowserSettingOptions
 });
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["C+DkPu"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["C+DkPu"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.WEB_BROWSER,
+  parent: MobileUserSettings.MobileUserSettings.WEB_BROWSER,
   useValue: function useWebBrowserSettingValue() {
-    return require(4340) /* NativeModules */.useBrowserManagerSelectedBrowser();
+    return NativeModules.useBrowserManagerSelectedBrowser();
   },
   onValueChange: function onWebBrowserSettingValueChange(arg0) {
-    const result = require(4340) /* NativeModules */.browserManagerSelectBrowser(Number(arg0));
+    const result = NativeModules.browserManagerSelectBrowser(Number(arg0));
   },
   useOptions: useWebBrowserSettingOptions
 };
-let result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/SelectWebBrowserSetting.tsx");
+let result = set.fileFinishedImporting("modules/user_settings/defs/native/SelectWebBrowserSetting.tsx");
 
 export default radio;
 export { useWebBrowserSettingOptions };

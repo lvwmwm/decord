@@ -1,21 +1,24 @@
-// Module ID: 16270
-// Function ID: 16271
+// Module ID: 16364
+// Function ID: 16365
 // Name: VoicePanel
-// Dependencies: [19, 1391, 8664, 21, 589, 16271, 16312, 4006, 4668, 2]
+// Dependencies: [19, 1391, 8701, 21, 589, 16365, 16406, 4009, 4107, 2]
 
-// Module 16270 (VoicePanel)
-import importAllResult from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import withEqualityFn from "withEqualityFn";
-import { jsx } from "jsxProd";
+// Module 16364 (VoicePanel)
+import isIterable from "isIterable" /* 4009 */;
+import ManaContext from "ManaContext" /* 4107 */;
+import VoicePanelControllerDefault from "VoicePanelController" /* 16365 */;
+import importAllResult from "noop" /* 19 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "withEqualityFn" /* 8701 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function VoicePanel(arg0) {
   const _require = arg0;
   let obj = _require(589);
-  const items = [ensureGuildLoaded];
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const channel = outer1_4.getChannel(channelId.channelId);
+    const channel = closure_1_4.getChannel(channelId.channelId);
     let guild_id;
     if (channel != null) {
       guild_id = channel.guild_id;
@@ -26,7 +29,7 @@ function VoicePanel(arg0) {
   const merged = Object.assign(arg0);
   obj.guildId = stateFromStores;
   obj.children = importAllResult.useMemo(() => callback2(callback(table[6]), {}), []);
-  return jsx(importDefault(16271), {});
+  return jsx(VoicePanelControllerDefault, {});
 }
 function getChannelKey(arg0) {
   return arg0;
@@ -36,9 +39,9 @@ function renderVoicePanel(arg0, channelId, transitionState, transitionCleanUp) {
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo(function VoicePanelContainer() {
-  const tmp = callback((channels) => Array.from(channels.channels), require(4006) /* isIterable */.shallow);
-  return jsx(require(4668) /* wrapChildrenDefault */.TransitionGroup, { items: callback((channels) => Array.from(channels.channels), require(4006) /* isIterable */.shallow), getItemKey: getChannelKey, renderItem: renderVoicePanel });
+  const tmp = callback((channels) => Array.from(channels.channels), isIterable.shallow);
+  return jsx(ManaContext.TransitionGroup, { items: callback((channels) => Array.from(channels.channels), isIterable.shallow), getItemKey: getChannelKey, renderItem: renderVoicePanel });
 });
-const result = require("withEqualityFn").fileFinishedImporting("modules/voice_panel/native/VoicePanelContainer.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/VoicePanelContainer.tsx");
 
 export default memoResult;

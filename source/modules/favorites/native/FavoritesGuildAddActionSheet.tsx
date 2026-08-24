@@ -1,20 +1,21 @@
-// Module ID: 15413
-// Function ID: 15414
+// Module ID: 15477
+// Function ID: 15478
 // Name: handleCreateCategory
-// Dependencies: [19, 21, 4342, 15414, 9979, 9982, 11959, 7175, 6949, 1236, 7177, 3079, 11932, 15415, 2]
+// Dependencies: [19, 21, 4346, 15478, 10018, 10021, 12008, 7213, 6987, 1236, 7215, 3082, 11981, 15479, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 15413 (handleCreateCategory)
-import noop from "noop";
-import jsxProd from "jsxProd";
+// Module 15477 (handleCreateCategory)
+import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 15478 */;
+import closure_3 from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function handleCreateCategory() {
-  importDefault(4342).hideActionSheet(FavoritesGuildAddActionSheet);
-  const obj = importDefault(4342);
-  const result = require(15414) /* FavoritesGuildAddCategoryActionSheet */.openFavoritesGuildAddCategoryActionSheet();
+  ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet(FavoritesGuildAddActionSheet);
+  const obj = ACTION_SHEET_HEIGHT_HALFDefault;
+  const result = FavoritesGuildAddCategoryActionSheet.openFavoritesGuildAddCategoryActionSheet();
 }
 function FavoritesGuildAddActionSheet() {
   let obj = shouldShowUpsell(favoriteLimit[4]);
@@ -24,7 +25,7 @@ function FavoritesGuildAddActionSheet() {
   favoriteLimit = favoritesLimitUpsell.favoriteLimit;
   const items = [shouldShowUpsell, isAtLimit, favoriteLimit];
   const callback = React.useCallback(() => {
-    isAtLimit(favoriteLimit[2]).hideActionSheet(outer1_6);
+    isAtLimit(favoriteLimit[2]).hideActionSheet(closure_1_6);
     if (shouldShowUpsell) {
       if (isAtLimit) {
         tmp(tmp2[5])(favoriteLimit);
@@ -37,13 +38,11 @@ function FavoritesGuildAddActionSheet() {
   const intl = shouldShowUpsell(favoriteLimit[9]).intl;
   obj[0] = intl.string(shouldShowUpsell(favoriteLimit[9]).t.wMWyci);
   obj[0] = callback(shouldShowUpsell(favoriteLimit[8]).BottomSheetTitleHeader, obj);
-  const obj1 = { hasIcons: true, children: null };
+  obj1 = { hasIcons: true, children: null };
   const obj2 = { label: null, icon: null, onPress: null };
   const intl2 = shouldShowUpsell(favoriteLimit[9]).intl;
   obj2[0] = intl2.string(isAtLimit(favoriteLimit[11]).G9fGlP);
-  const obj3 = { IconComponent: null };
-  obj3[0] = shouldShowUpsell(favoriteLimit[12]).PlusMediumIcon;
-  obj2[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow.Icon, obj3);
+  obj2[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow.Icon, { IconComponent: shouldShowUpsell(favoriteLimit[12]).PlusMediumIcon });
   obj2[2] = callback;
   obj1[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow, obj2);
   const items1 = [callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow.Group, obj1), ];
@@ -51,9 +50,8 @@ function FavoritesGuildAddActionSheet() {
   const obj5 = { label: null, icon: null, onPress: null };
   const intl3 = shouldShowUpsell(favoriteLimit[9]).intl;
   obj5[0] = intl3.string(shouldShowUpsell(favoriteLimit[9]).t["ISN+NM"]);
-  const obj6 = { IconComponent: null };
-  obj6[0] = shouldShowUpsell(favoriteLimit[13]).FolderPlusIcon;
-  obj5[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow.Icon, obj6);
+  const obj3 = { IconComponent: shouldShowUpsell(favoriteLimit[12]).PlusMediumIcon };
+  obj5[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow.Icon, { IconComponent: shouldShowUpsell(favoriteLimit[13]).FolderPlusIcon });
   obj5[2] = handleCreateCategory;
   obj4[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow, obj5);
   items1[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow.Group, obj4);
@@ -62,10 +60,10 @@ function FavoritesGuildAddActionSheet() {
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 FavoritesGuildAddActionSheet = "FavoritesGuildAddActionSheet";
-let result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/favorites/native/FavoritesGuildAddActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/favorites/native/FavoritesGuildAddActionSheet.tsx");
 
 export const openFavoritesGuildAddActionSheet = function openFavoritesGuildAddActionSheet() {
-  let obj = require(4342) /* ACTION_SHEET_HEIGHT_HALF */;
+  let obj = ACTION_SHEET_HEIGHT_HALF;
   obj = { content: callback(FavoritesGuildAddActionSheet, {}), key: FavoritesGuildAddActionSheet };
   obj.showActionSheet(obj);
 };

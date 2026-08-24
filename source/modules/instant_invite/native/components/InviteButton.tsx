@@ -1,25 +1,25 @@
-// Module ID: 11890
-// Function ID: 11891
-// Dependencies: [19, 17, 4371, 21, 4661, 1236, 4745, 2]
+// Module ID: 11939
+// Function ID: 11940
+// Dependencies: [19, 17, 4375, 21, 4668, 1236, 4750, 2]
 
-// Module 11890
-import { View } from "get ActivityIndicator";
-import { InviteSendStates } from "InviteSendStates";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 11939
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 4750 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { InviteSendStates } from "InviteSendStates" /* 4375 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let closure_5 = createCacheKey.createStyles({ buttonWrapper: { minWidth: 66, flexDirection: "row" } });
-const memoResult = require("noop").memo(function InviteButton(onPress) {
-  let disabled;
-  let sendState;
+const memoResult = importAllResult.memo(function InviteButton(onPress) {
   ({ sendState, disabled } = onPress);
   if (disabled === undefined) {
     disabled = false;
   }
-  const intl = require(1236) /* getSystemLocale */.intl;
-  intl.string(require(1236) /* getSystemLocale */.t.jYnGPG);
+  const intl = getSystemLocale.intl;
+  intl.string(getSystemLocale.t.jYnGPG);
   if (InviteSendStates.SENDING === sendState) {
     const intl5 = tmp2(1236).intl;
     let stringResult1 = intl5.string(tmp2(1236).t.jYnGPG);
@@ -46,9 +46,9 @@ const memoResult = require("noop").memo(function InviteButton(onPress) {
     disabled = flag;
   }
   obj[5] = disabled;
-  obj[1] = jsx(require(4745) /* Button */.Button, { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPress.onPressSend, disabled: null, grow: true });
+  obj[1] = jsx(Button.Button, { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPress.onPressSend, disabled: null, grow: true });
   return <View accessibilityRole="none" size="sm" variant="secondary" text={stringResult1} onPress={arg0.onPressSend} disabled={null} grow />;
 });
-const result = require("InviteSendStates").fileFinishedImporting("modules/instant_invite/native/components/InviteButton.tsx");
+const result = require("set").fileFinishedImporting("modules/instant_invite/native/components/InviteButton.tsx");
 
 export default memoResult;

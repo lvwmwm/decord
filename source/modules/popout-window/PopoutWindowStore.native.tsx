@@ -1,12 +1,14 @@
-// Module ID: 8702
-// Function ID: 8703
+// Module ID: 8739
+// Function ID: 8740
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 8702 (initialize)
-import { PersistedStore } from "initialize";
+// Module 8739 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let closure_0 = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class PopoutWindowStore extends PersistedStore {
 }
 const prototype = PopoutWindowStore.prototype;
@@ -51,7 +53,7 @@ prototype["unmountWindow"] = function unmountWindow() {
 };
 PopoutWindowStore.displayName = "PopoutWindowStore";
 PopoutWindowStore.persistKey = "PopoutWindowStoreIOS";
-const popoutWindowStore = new PopoutWindowStore(require("dispatcher"), {});
+const popoutWindowStore = new PopoutWindowStore(dispatcherDefault, {});
 const result = require("set").fileFinishedImporting("modules/popout-window/PopoutWindowStore.native.tsx");
 
 export default popoutWindowStore;

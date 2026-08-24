@@ -1,12 +1,15 @@
-// Module ID: 16546
-// Function ID: 16547
+// Module ID: 16641
+// Function ID: 16642
 // Name: handleVoiceChannelSelect
-// Dependencies: [5038, 16547, 16120, 2]
+// Dependencies: [5043, 16642, 16218, 2]
 
-// Module 16546 (handleVoiceChannelSelect)
-import "initialize";
+// Module 16641 (handleVoiceChannelSelect)
+import initializeDefault from "initialize" /* 5043 */;
+import commonTriggerPointConfiguration from "commonTriggerPointConfiguration" /* 16218 */;
+import commonTriggerPointConfiguration2 from "commonTriggerPointConfiguration" /* 16642 */;
 
-const require = arg1;
+require = arg1;
+initializeDefault;
 class CommonTriggerPointManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -18,21 +21,21 @@ const prototype = CommonTriggerPointManager.prototype;
 prototype["handleVoiceChannelSelect"] = function handleVoiceChannelSelect(guildId) {
   guildId = guildId.guildId;
   if (null != guildId.channelId) {
-    const VoiceCallTriggerPoint = require(16547) /* commonTriggerPointConfiguration */.VoiceCallTriggerPoint;
+    const VoiceCallTriggerPoint = commonTriggerPointConfiguration2.VoiceCallTriggerPoint;
     const obj = { guildId: null };
     obj[0] = guildId;
     VoiceCallTriggerPoint.trigger(obj);
   }
 };
 prototype["handleCallCreate"] = function handleCallCreate() {
-  const VoiceCallTriggerPoint = require(16547) /* commonTriggerPointConfiguration */.VoiceCallTriggerPoint;
+  const VoiceCallTriggerPoint = commonTriggerPointConfiguration2.VoiceCallTriggerPoint;
   VoiceCallTriggerPoint.trigger();
 };
 prototype["handleUserSettingsModalOpen"] = function handleUserSettingsModalOpen() {
-  const OpenUserSettingsTriggerPoint = require(16120) /* commonTriggerPointConfiguration */.OpenUserSettingsTriggerPoint;
+  const OpenUserSettingsTriggerPoint = commonTriggerPointConfiguration.OpenUserSettingsTriggerPoint;
   OpenUserSettingsTriggerPoint.trigger();
 };
 const commonTriggerPointManager = new CommonTriggerPointManager();
-const result = require("commonTriggerPointConfiguration").fileFinishedImporting("modules/experiments/trigger_points/CommonTriggerPointManager.tsx");
+const result = require("set").fileFinishedImporting("modules/experiments/trigger_points/CommonTriggerPointManager.tsx");
 
 export default commonTriggerPointManager;

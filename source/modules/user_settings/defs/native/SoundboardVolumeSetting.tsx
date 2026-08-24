@@ -1,37 +1,43 @@
-// Module ID: 14599
-// Function ID: 14600
+// Module ID: 14667
+// Function ID: 14668
 // Name: volumeSlider
-// Dependencies: [8198, 10669, 1236, 7304, 7299, 7159, 2]
+// Dependencies: [8238, 10708, 1236, 7342, 7337, 7197, 2]
 
-// Module 14599 (volumeSlider)
-import createToggle from "createToggle";
+// Module 14667 (volumeSlider)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
+import _fetchDefaultSoundsFromApi2 from "_fetchDefaultSoundsFromApi2" /* 7337 */;
+import hasPermissionToPlaySound from "hasPermissionToPlaySound" /* 7342 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const volumeSlider = createToggle.createVolumeSlider({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.kbFsAD);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.kbFsAD);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
+  parent: MobileUserSettings.MobileUserSettings.VOICE,
   maximum: 100,
-  useValue: require("hasPermissionToPlaySound").getAmplitudinalSoundboardVolume,
+  useValue: hasPermissionToPlaySound.getAmplitudinalSoundboardVolume,
   onValueChange(volume) {
-    const items = [importDefault(7159).USER_SETTINGS];
-    return require(7299) /* _fetchDefaultSoundsFromApi2 */.updateUserSoundboardVolume(volume, items);
+    const items = [QUICK_SWITCHERDefault.USER_SETTINGS];
+    return _fetchDefaultSoundsFromApi2.updateUserSoundboardVolume(volume, items);
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.kbFsAD);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.kbFsAD);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
+  parent: MobileUserSettings.MobileUserSettings.VOICE,
   maximum: 100,
-  useValue: require("hasPermissionToPlaySound").getAmplitudinalSoundboardVolume,
+  useValue: hasPermissionToPlaySound.getAmplitudinalSoundboardVolume,
   onValueChange(volume) {
-    const items = [importDefault(7159).USER_SETTINGS];
-    return require(7299) /* _fetchDefaultSoundsFromApi2 */.updateUserSoundboardVolume(volume, items);
+    const items = [QUICK_SWITCHERDefault.USER_SETTINGS];
+    return _fetchDefaultSoundsFromApi2.updateUserSoundboardVolume(volume, items);
   }
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/SoundboardVolumeSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/SoundboardVolumeSetting.tsx");
 
 export default volumeSlider;

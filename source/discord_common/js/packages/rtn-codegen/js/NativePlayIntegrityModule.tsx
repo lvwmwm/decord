@@ -1,12 +1,14 @@
-// Module ID: 16673
-// Function ID: 16674
+// Module ID: 16769
+// Function ID: 16770
 // Name: NativePlayIntegrityModule
 // Dependencies: [17, 2]
 
-// Module 16673 (NativePlayIntegrityModule)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 16769 (NativePlayIntegrityModule)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const value = TurboModuleRegistry.get("NativePlayIntegrityModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativePlayIntegrityModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativePlayIntegrityModule.tsx");
 
 export default value;

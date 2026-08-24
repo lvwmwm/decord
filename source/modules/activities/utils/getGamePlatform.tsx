@@ -1,16 +1,16 @@
-// Module ID: 15961
-// Function ID: 15962
+// Module ID: 16058
+// Function ID: 16059
 // Name: getGamePlatform
-// Dependencies: [676, 12099, 2]
+// Dependencies: [676, 12151, 2]
 // Exports: default
 
-// Module 15961 (getGamePlatform)
-import ME from "ME";
+// Module 16058 (getGamePlatform)
+import set from "set" /* 2 */;
+import isOnXboxDefault from "isOnXbox" /* 12151 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let obj1;
 ({ ActivityTypes: obj1, ActivityGamePlatforms: c3 } = ME);
-const result = require("set").fileFinishedImporting("modules/activities/utils/getGamePlatform.tsx");
+const result = set.fileFinishedImporting("modules/activities/utils/getGamePlatform.tsx");
 
 export default function getGamePlatform(type) {
   let tmp = null;
@@ -19,7 +19,7 @@ export default function getGamePlatform(type) {
     if (null != type.type) {
       tmp = null;
       if (type.type === constants.PLAYING) {
-        if (importDefault(12099)(type)) {
+        if (isOnXboxDefault(type)) {
           let DESKTOP = constants2.XBOX;
         } else if (null != type.platform) {
           DESKTOP = type.platform;

@@ -1,12 +1,15 @@
-// Module ID: 14377
-// Function ID: 14378
+// Module ID: 14445
+// Function ID: 14446
 // Name: isSourceError
 // Dependencies: [500, 2]
 // Exports: isSourceError
 
-// Module 14377 (isSourceError)
+// Module 14445 (isSourceError)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+
 let closure_2 = [-1000, -1003, -1004, -1008];
-const result = require("set").fileFinishedImporting("modules/quests/native/AdsVideoUtils.tsx");
+const result = set.fileFinishedImporting("modules/quests/native/AdsVideoUtils.tsx");
 
 export const isSourceError = function isSourceError(error) {
   if (error != null) {
@@ -22,7 +25,7 @@ export const isSourceError = function isSourceError(error) {
     }
     let isIOSResult = hasItem;
   } else {
-    isIOSResult = require(500) /* set */.isIOS();
+    isIOSResult = set2.isIOS();
     if (isIOSResult) {
       let hasItem1 = null != code;
       if (hasItem1) {
@@ -30,7 +33,7 @@ export const isSourceError = function isSourceError(error) {
       }
       isIOSResult = hasItem1;
     }
-    const tmpResult = require(500) /* set */;
+    const tmpResult = set2;
   }
   return isIOSResult;
 };

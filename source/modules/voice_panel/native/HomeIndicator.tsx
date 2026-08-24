@@ -1,17 +1,17 @@
-// Module ID: 8680
-// Function ID: 8681
+// Module ID: 8717
+// Function ID: 8718
 // Name: pushStackEntry
 // Dependencies: [19, 17, 644, 705, 500, 1641, 2]
 
-// Module 8680 (pushStackEntry)
-import { NativeModules } from "get ActivityIndicator";
-import keys from "keys";
-import { Component } from "noop";
-import importAllResult from "noop";
+// Module 8717 (pushStackEntry)
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import keys from "keys" /* 644 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 keys = keys.create(() => ({ autoHideHomeIndicator: false }));
 let HomeIndicator;
+const Component = importAllResult.Component;
 class HomeIndicator extends Component {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -62,7 +62,7 @@ HomeIndicator["_updatePropsStack"] = function _updatePropsStack() {
     const prefersHidden = obj.prefersHidden;
     const callback = tmp;
     const prefersDeferringSystemGestures = obj.prefersDeferringSystemGestures;
-    callback(705).batchUpdates(() => outer1_4.setState({ autoHideHomeIndicator: closure_0 }));
+    callback(705).batchUpdates(() => closure_1_4.setState({ autoHideHomeIndicator: closure_0 }));
     const obj2 = callback(705);
     const tmp2 = undefined !== prefersDeferringSystemGestures && prefersDeferringSystemGestures;
     if (obj3.isAndroid()) {
@@ -92,7 +92,7 @@ prototype["render"] = function render() {
 HomeIndicator.defaultProps = { prefersHidden: false, prefersDeferringSystemGestures: false };
 HomeIndicator._propsStack = [];
 HomeIndicator._updateImmediate = null;
-let result = require("keys").fileFinishedImporting("modules/voice_panel/native/HomeIndicator.tsx");
+let result = require("set").fileFinishedImporting("modules/voice_panel/native/HomeIndicator.tsx");
 
 export default HomeIndicator;
 export const useHomeIndicatorStore = keys;

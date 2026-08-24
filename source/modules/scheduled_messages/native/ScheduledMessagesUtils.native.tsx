@@ -1,31 +1,23 @@
-// Module ID: 11169
-// Function ID: 11170
+// Module ID: 11221
+// Function ID: 11222
 // Name: _scheduleMessage
-// Dependencies: [5, 11170, 11171, 7501, 4094, 1236, 4338, 7341, 3975, 7172, 4342, 8828, 2007, 11173, 7524, 2]
+// Dependencies: [5, 11222, 11223, 7539, 4097, 1236, 4342, 7379, 3978, 7210, 4346, 8865, 2008, 11225, 7562, 2]
 // Exports: openScheduleMessageActionSheet, scheduleMessage
 
-// Module 11169 (_scheduleMessage)
-import getSystemLocale from "getSystemLocale";
-import MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS";
+// Module 11221 (_scheduleMessage)
+import tDefault from "t" /* 3978 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS" /* 11222 */;
 
-let c4;
-let c5;
 const require = arg1;
 function _scheduleMessage() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
-      let c3;
-      let c4;
-      let c5;
-      let c6;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -37,7 +29,7 @@ function _scheduleMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -72,7 +64,7 @@ function _scheduleMessage() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -83,8 +75,8 @@ function _scheduleMessage() {
               const obj3 = { channelId: null, content: null, nonce: null, tts: null, message_reference: null, allowed_mentions: null };
               obj3[0] = c0;
               obj3[1] = c2;
-              const obj6 = callback(outer1_2[2]);
-              obj3[2] = callback(outer1_2[3]).createNonce();
+              const obj6 = callback(closure_1_2[2]);
+              obj3[2] = callback(closure_1_2[3]).createNonce();
               obj3[3] = message;
               obj3[4] = c4;
               obj3[5] = c5;
@@ -123,8 +115,7 @@ function _scheduleMessage() {
               let obj = _undefined2(_undefined3[4]);
               obj = { key: "SCHEDULED_MESSAGE_CREATE_SUCCESS", content: null, IconComponent: null, iconColor: "status-positive" };
               const intl = _undefined(_undefined3[5]).intl;
-              obj = { timestamp: null };
-              obj[0] = new Date(c1).valueOf();
+              obj = { timestamp: new Date(c1).valueOf() };
               obj[1] = intl.formatToPlainString(_undefined(_undefined3[5]).t["CvHu/j"], obj);
               obj[2] = _undefined(_undefined3[6]).ClockIcon;
               obj.open(obj);
@@ -147,7 +138,7 @@ function _scheduleMessage() {
     iter.next();
     return iter;
   });
-  const _scheduleMessage = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -157,7 +148,7 @@ function _scheduleMessage() {
   return applyArgumentsResult;
 }
 ({ MAX_SCHEDULE_TIME_INTO_FUTURE_SECONDS: c4, MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS: c5 } = MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS);
-let result = require("_uploadAttachments").fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessagesUtils.native.tsx");
+let result = require("set").fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessagesUtils.native.tsx");
 
 export const scheduleMessage = function scheduleMessage(arg0) {
   const self = this;
@@ -171,18 +162,18 @@ export const scheduleMessage = function scheduleMessage(arg0) {
 };
 export const openScheduleMessageActionSheet = function openScheduleMessageActionSheet(id) {
   const _require = id;
-  let obj = importDefault(3975)();
+  let obj = tDefault();
   let addResult = obj.add(1, "day");
   let result = obj.add(1, "day").startOf("day").set("hours", 9);
-  let obj3 = importDefault(3975)();
+  let obj3 = tDefault();
   const startOfResult = obj.add(1, "day").startOf("day");
   const addResult1 = obj3.add(1, "day");
   const result1 = obj3.add(1, "day").startOf("day").set("hours", 13);
   const startOfResult1 = obj3.add(1, "day").startOf("day");
-  let obj7 = importDefault(3975)();
-  const startOfResult2 = importDefault(3975)().startOf("isoWeek");
+  let obj7 = tDefault();
+  const startOfResult2 = tDefault().startOf("isoWeek");
   obj = { label: null, value: null };
-  const result2 = importDefault(3975)().startOf("isoWeek").add(1, "week").set("hours", 9);
+  const result2 = tDefault().startOf("isoWeek").add(1, "week").set("hours", 9);
   let intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.tjIn9i);
   obj[1] = result;
@@ -192,12 +183,12 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
   obj[0] = intl2.string(_require(1236).t.EMRZyS);
   obj[1] = result1;
   items[1] = obj;
-  const obj1 = { label: null, value: null };
+  obj1 = { label: null, value: null };
   const intl3 = _require(1236).intl;
   obj1[0] = intl3.string(_require(1236).t["+P5MmK"]);
   obj1[1] = result2;
   items[2] = obj1;
-  const addResult2 = importDefault(3975)().startOf("isoWeek").add(1, "week");
+  const addResult2 = tDefault().startOf("isoWeek").add(1, "week");
   const obj2 = { key: "schedule-message", header: null, hasIcons: false, options: null };
   obj3 = { title: null };
   const intl4 = _require(1236).intl;
@@ -209,7 +200,7 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
       return {
         label: label.label,
         onPress() {
-          let obj = outer2_1(outer2_2[14]);
+          let obj = closure_2_1(closure_2_2[14]);
           obj = { scheduledTimestamp: value.toISOString() };
           const result = obj.changeScheduledMessage(value, obj);
         }
@@ -220,21 +211,21 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
   const intl5 = _require(1236).intl;
   obj4[0] = intl5.string(_require(1236).t.stHooC);
   obj4[1] = function onPress() {
-    let obj = outer1_1(outer1_2[10]);
+    let obj = closure_1_1(closure_1_2[10]);
     obj = { title: null, mode: "datetime", startDate: null, minimumDate: null, maximumDate: null, onSubmit: null };
-    const intl = id(outer1_2[5]).intl;
-    obj[0] = intl.string(id(outer1_2[5]).t["3+ii4F"]);
-    const tmp = id(outer1_2[12])(outer1_2[11], outer1_2.paths);
-    const defaultScheduledTime = id(outer1_2[13]).getDefaultScheduledTime();
+    const intl = id(closure_1_2[5]).intl;
+    obj[0] = intl.string(id(closure_1_2[5]).t["3+ii4F"]);
+    const tmp = id(closure_1_2[12])(closure_1_2[11], closure_1_2.paths);
+    const defaultScheduledTime = id(closure_1_2[13]).getDefaultScheduledTime();
     obj[2] = defaultScheduledTime.toDate();
-    const obj3 = id(outer1_2[13]);
-    const obj5 = outer1_1(outer1_2[8])();
-    obj[3] = outer1_1(outer1_2[8])().add(outer1_5, "seconds").toDate();
-    const addResult = outer1_1(outer1_2[8])().add(outer1_5, "seconds");
-    const obj7 = outer1_1(outer1_2[8])();
-    obj[4] = outer1_1(outer1_2[8])().add(outer1_4, "seconds").toDate();
+    const obj3 = id(closure_1_2[13]);
+    const obj5 = closure_1_1(closure_1_2[8])();
+    obj[3] = closure_1_1(closure_1_2[8])().add(closure_1_5, "seconds").toDate();
+    const addResult = closure_1_1(closure_1_2[8])().add(closure_1_5, "seconds");
+    const obj7 = closure_1_1(closure_1_2[8])();
+    obj[4] = closure_1_1(closure_1_2[8])().add(closure_1_4, "seconds").toDate();
     obj[5] = function onSubmit(toISOString) {
-      let obj = outer1_1(outer1_2[14]);
+      let obj = closure_1_1(closure_1_2[14]);
       obj = { scheduledTimestamp: toISOString.toISOString() };
       const result = obj.changeScheduledMessage(closure_0, obj);
     };
@@ -242,5 +233,5 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
   };
   items1[tmp4] = obj4;
   obj2[3] = items1;
-  const result3 = _require(7172).showSimpleActionSheet(obj2);
+  const result3 = _require(7210).showSimpleActionSheet(obj2);
 };

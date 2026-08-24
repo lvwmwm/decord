@@ -1,34 +1,33 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 9451
+// Function ID: 9452
 // Name: EmojiOptionsActionSheet
-// Dependencies: [19, 21, 7167, 4093, 4342, 7175, 6286, 6291, 4318, 1236, 2]
+// Dependencies: [19, 21, 7205, 4096, 4346, 7213, 6317, 6322, 4322, 1236, 2]
 // Exports: default
 
-// Module 9414 (EmojiOptionsActionSheet)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 9451 (EmojiOptionsActionSheet)
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("_copy").fileFinishedImporting("modules/messages/native/emoji/EmojiOptionsActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/messages/native/emoji/EmojiOptionsActionSheet.tsx");
 
 export default function EmojiOptionsActionSheet(emojiSrc) {
   emojiSrc = emojiSrc.emojiSrc;
   const items = [emojiSrc];
   const callback = React.useCallback(() => {
-    emojiSrc(outer1_2[2]).copy(emojiSrc);
-    const obj = emojiSrc(outer1_2[2]);
-    const result = emojiSrc(outer1_2[3]).presentCopiedToClipboard();
-    const obj2 = emojiSrc(outer1_2[3]);
-    outer1_1(outer1_2[4]).hideActionSheet();
+    emojiSrc(closure_1_2[2]).copy(emojiSrc);
+    const obj = emojiSrc(closure_1_2[2]);
+    const result = emojiSrc(closure_1_2[3]).presentCopiedToClipboard();
+    const obj2 = emojiSrc(closure_1_2[3]);
+    closure_1_1(closure_1_2[4]).hideActionSheet();
   }, items);
   let obj = { children: null };
   obj = { hasIcons: true, children: null };
-  obj = { icon: null, label: null, onPress: null };
-  obj[0] = jsx(emojiSrc(4318).LinkIcon, {});
+  obj = { icon: jsx(emojiSrc(4322).LinkIcon, {}), label: null, onPress: null };
   const intl = emojiSrc(1236).intl;
   obj[1] = intl.string(emojiSrc(1236).t.cIoudn);
   obj[2] = callback;
-  obj[1] = jsx(emojiSrc(6291).TableRow, { icon: null, label: null, onPress: null });
-  obj[0] = jsx(emojiSrc(6286).TableRowGroup, { icon: null, label: null, onPress: null });
-  return jsx(emojiSrc(7175).ActionSheet, { icon: null, label: null, onPress: null });
+  obj[1] = jsx(emojiSrc(6322).TableRow, { icon: jsx(emojiSrc(4322).LinkIcon, {}), label: null, onPress: null });
+  obj[0] = jsx(emojiSrc(6317).TableRowGroup, { icon: jsx(emojiSrc(4322).LinkIcon, {}), label: null, onPress: null });
+  return jsx(emojiSrc(7213).ActionSheet, { icon: jsx(emojiSrc(4322).LinkIcon, {}), label: null, onPress: null });
 };

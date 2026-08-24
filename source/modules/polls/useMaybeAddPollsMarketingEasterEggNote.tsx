@@ -1,18 +1,19 @@
-// Module ID: 9405
-// Function ID: 9406
+// Module ID: 9442
+// Function ID: 9443
 // Name: useMaybeAddPollsMarketingEasterEggNote
-// Dependencies: [1994, 589, 1236, 2]
+// Dependencies: [1995, 589, 1236, 2]
 // Exports: default
 
-// Module 9405 (useMaybeAddPollsMarketingEasterEggNote)
-import _getSystemLocale from "_getSystemLocale";
+// Module 9442 (useMaybeAddPollsMarketingEasterEggNote)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "_getSystemLocale" /* 1995 */;
 
-const require = arg1;
-const result = require("getSystemLocale").fileFinishedImporting("modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx");
 
 export default function useMaybeAddPollsMarketingEasterEggNote(arg0) {
-  require(589) /* initialize */;
-  [][0] = _getSystemLocale;
+  initialize;
+  [][0] = closure_2;
   let formatToPlainStringResult = arg0;
   if (":pizza:" === arg0) {
     formatToPlainStringResult = arg0;

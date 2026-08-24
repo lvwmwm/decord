@@ -1,16 +1,16 @@
-// Module ID: 11424
-// Function ID: 11425
+// Module ID: 11475
+// Function ID: 11476
 // Name: useChatInputFloatingWidth
-// Dependencies: [19, 11149, 4115, 4664, 2]
+// Dependencies: [19, 11188, 4119, 4671, 2]
 // Exports: default
 
-// Module 11424 (useChatInputFloatingWidth)
-import noop from "noop";
-import { CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG as closure_3 } from "TextAreaCta";
+// Module 11475 (useChatInputFloatingWidth)
+import closure_2 from "noop" /* 19 */;
+import { CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG as closure_3 } from "TextAreaCta" /* 11188 */;
 
 const require = arg1;
 let closure_4 = { code: "function useChatInputFloatingWidthTsx1(){const{collapsedWidth,expandedWidth,progress}=this.__closure;return{width:collapsedWidth+(expandedWidth-collapsedWidth)*progress.get()};}" };
-let result = require("module_4115").fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingWidth.tsx");
+let result = require("set").fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingWidth.tsx");
 
 export default function useChatInputFloatingWidth(expanded) {
   expanded = expanded.expanded;
@@ -42,14 +42,13 @@ export default function useChatInputFloatingWidth(expanded) {
     }
     const result1 = sharedValue.set(expanded(collapsedWidth[3]).withTiming(num2, num, "respect-motion-settings"));
   }, items);
-  obj = { animatedStyle: null };
-  const fn = function p() {
+  obj = { animatedStyle: expanded(collapsedWidth[2]).useAnimatedStyle(fn) };
+  fn = function p() {
     const diff = expandedWidth - collapsedWidth;
     return { width: collapsedWidth + diff * sharedValue.get() };
   };
   fn.__closure = { collapsedWidth, expandedWidth, progress: sharedValue };
   fn.__workletHash = 2289574047387;
   fn.__initData = sharedValue;
-  obj[0] = expanded(collapsedWidth[2]).useAnimatedStyle(fn);
   return obj;
 };

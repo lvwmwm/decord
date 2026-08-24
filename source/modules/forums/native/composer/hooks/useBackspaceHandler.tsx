@@ -1,11 +1,11 @@
-// Module ID: 10178
-// Function ID: 10179
+// Module ID: 10217
+// Function ID: 10218
 // Name: useBackspaceHandler
 // Dependencies: [19, 2]
 // Exports: useBackspaceHandler
 
-// Module 10178 (useBackspaceHandler)
-import noop from "noop";
+// Module 10217 (useBackspaceHandler)
+import closure_0 from "noop" /* 19 */;
 
 const re1 = /((\ud83c[\udde6-\uddff]){2}|([#*0-9]\u20e3)|(\u00a9|\u00ae|[\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])((\ud83c[\udffb-\udfff])?(\ud83e[\uddb0-\uddb3])?(\ufe0f?\u200d([\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])\ufe0f?)?)*)/g;
 const result = require("set").fileFinishedImporting("modules/forums/native/composer/hooks/useBackspaceHandler.tsx");
@@ -16,9 +16,7 @@ export const useBackspaceHandler = function useBackspaceHandler(selection) {
   const handleTextChange = selection.handleTextChange;
   const items = [selection, draftContent, handleTextChange];
   return selection.useCallback(() => {
-    let end;
     let num2;
-    let start;
     ({ start, end } = selection);
     if (0 !== start) {
       let num = 1;

@@ -1,12 +1,14 @@
-// Module ID: 4057
-// Function ID: 4058
-// Dependencies: [4058, 1474, 2]
+// Module ID: 4060
+// Function ID: 4061
+// Dependencies: [4061, 1474, 2]
 
-// Module 4057
-import loaderMaker from "loaderMaker";
+// Module 4060
+import set from "set" /* 2 */;
+import awaitOnlineDefault from "awaitOnline" /* 1474 */;
+import loaderMaker from "loaderMaker" /* 4061 */;
 
-loaderMaker.setAwaitOnline(require("awaitOnline").awaitOnline);
-const result = require("set").fileFinishedImporting("modules/core/CodeSplittingUtils.tsx");
+loaderMaker.setAwaitOnline(awaitOnlineDefault.awaitOnline);
+const result = set.fileFinishedImporting("modules/core/CodeSplittingUtils.tsx");
 for (const key10026 in require("loaderMaker")) {
   let tmp4 = key10026;
   arg5[key10026] = require("loaderMaker")[key10026];

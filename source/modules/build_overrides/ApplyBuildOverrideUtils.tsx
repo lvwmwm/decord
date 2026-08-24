@@ -1,21 +1,21 @@
-// Module ID: 10969
-// Function ID: 10970
+// Module ID: 11008
+// Function ID: 11009
 // Name: _applyStaffBuildOverride
-// Dependencies: [5, 1218, 10970, 530, 4290, 2]
+// Dependencies: [5, 1218, 11009, 530, 4294, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 10969 (_applyStaffBuildOverride)
-import importDefaultResult from "set";
-import fetchFingerprint from "fetchFingerprint";
+// Module 11008 (_applyStaffBuildOverride)
+import importDefaultResult from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
 
 let closure_0 = arg1;
 function _applyStaffBuildOverride() {
   const self = this;
   const tmp = importDefaultResult((arg0) => {
-    let closure_0 = arg0;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0) {
       if (c7 === 2) {
         c7 = 3;
@@ -28,7 +28,7 @@ function _applyStaffBuildOverride() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -43,19 +43,19 @@ function _applyStaffBuildOverride() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_3 = tmp3;
+              closure_3 = tmp3;
               const callback2 = tmp7;
               let callback;
-              let c5 = 1;
-              const HTTP = callback(outer1_1[3]).HTTP;
-              const obj1 = { url: null, body: null, headers: null, oldFormErrors: true, rejectWithError: false };
-              obj1[0] = callback(outer1_1[4]).getAPIEndpoint(c5);
+              c5 = 1;
+              const HTTP = callback(closure_1_1[3]).HTTP;
+              obj1 = { url: null, body: null, headers: null, oldFormErrors: true, rejectWithError: false };
+              obj1[0] = callback(closure_1_1[4]).getAPIEndpoint(c5);
               const obj2 = { overrides: null, version: null };
               obj2[0] = callback;
-              obj2[1] = callback(outer1_1[4]).APP_VERSION;
+              obj2[1] = callback(closure_1_1[4]).APP_VERSION;
               obj1[1] = obj2;
-              const token = outer1_4.getToken();
-              let c1 = token;
+              const token = closure_1_4.getToken();
+              c1 = token;
               if (token == null) {
                 c1 = "";
               }
@@ -72,7 +72,7 @@ function _applyStaffBuildOverride() {
             c5 = 0;
             c7 = 3;
             const obj5 = { value: null, done: true };
-            obj5[0] = fetchFingerprint;
+            obj5[0] = closure_4;
             return obj5;
           } else if (2 === tmp7) {
             if (arg0 === 1) {
@@ -109,7 +109,7 @@ function _applyStaffBuildOverride() {
             return obj;
           }
         } catch (tmp15) {
-          fetchFingerprint = tmp15;
+          closure_4 = tmp15;
           if (tmp4 === c5) {
             c7 = tmp2;
             throw tmp15;
@@ -120,7 +120,7 @@ function _applyStaffBuildOverride() {
       }
     })();
   });
-  const _applyStaffBuildOverride = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -132,10 +132,10 @@ function _applyStaffBuildOverride() {
 function _applyPublicBuildOverride() {
   const self = this;
   const tmp = importDefaultResult((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c6 === 2) {
         c6 = 3;
@@ -148,7 +148,7 @@ function _applyPublicBuildOverride() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -164,16 +164,16 @@ function _applyPublicBuildOverride() {
               return obj;
             } else {
               const callback2 = tmp3;
-              let closure_1 = tmp7;
+              closure_1 = tmp7;
               let callback;
               let token = 1;
-              const HTTP = callback(outer1_1[3]).HTTP;
-              const obj1 = { url: null, body: null, oldFormErrors: true, rejectWithError: false };
-              obj1[0] = callback(outer1_1[4]).getAPIEndpoint("/__development/link");
+              const HTTP = callback(closure_1_1[3]).HTTP;
+              obj1 = { url: null, body: null, oldFormErrors: true, rejectWithError: false };
+              obj1[0] = callback(closure_1_1[4]).getAPIEndpoint("/__development/link");
               const obj2 = { payload: null, token: null, version: null };
               obj2[0] = callback;
               obj2[1] = token.getToken();
-              obj2[2] = callback(outer1_1[4]).APP_VERSION;
+              obj2[2] = callback(closure_1_1[4]).APP_VERSION;
               obj1[1] = obj2;
               c5 = 2;
               c6 = 1;
@@ -233,7 +233,7 @@ function _applyPublicBuildOverride() {
       }
     })();
   });
-  const _applyPublicBuildOverride = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -245,15 +245,15 @@ function _applyPublicBuildOverride() {
 function _clearBuildOverride() {
   const self = this;
   const tmp = importDefaultResult(function*() {
-    let closure_1 = tmp2;
-    const HTTP = outer1_0(outer1_1[3]).HTTP;
-    const obj1 = { url: null, oldFormErrors: true, rejectWithError: false };
-    obj1[0] = outer1_0(outer1_1[4]).getAPIEndpoint(outer1_5);
-    let closure_0 = yield HTTP.del(obj1);
+    closure_1 = tmp2;
+    const HTTP = closure_1_0(closure_1_1[3]).HTTP;
+    obj1 = { url: null, oldFormErrors: true, rejectWithError: false };
+    obj1[0] = closure_1_0(closure_1_1[4]).getAPIEndpoint(closure_1_5);
+    closure_0 = yield HTTP.del(obj1);
     yield v0(closure_0);
     return closure_0;
   });
-  const _clearBuildOverride = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -265,9 +265,9 @@ function _clearBuildOverride() {
 let c3 = importDefaultResult;
 let c5 = "/__development/build_overrides";
 closure_0 = importDefaultResult((arg0) => {
-  let closure_0 = arg0;
-  let c2 = 0;
-  let c1 = 0;
+  closure_0 = arg0;
+  c2 = 0;
+  c1 = 0;
   return (function*(arg0) {
     if (table === 2) {
       table = 3;
@@ -280,7 +280,7 @@ closure_0 = importDefaultResult((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -297,7 +297,7 @@ closure_0 = importDefaultResult((arg0) => {
           } else {
             c2 = 1;
             table = 1;
-            const obj1 = { value: null, done: false };
+            obj1 = { value: null, done: false };
             obj1[0] = lib(table[2]).default.setBuildOverrideCookieHeader(lib.headers["set-cookie"]);
             return obj1;
           }
@@ -311,7 +311,7 @@ closure_0 = importDefaultResult((arg0) => {
           return obj;
         } else {
           table = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         table = tmp;
@@ -320,7 +320,7 @@ closure_0 = importDefaultResult((arg0) => {
     }
   })();
 });
-const f86855 = function() {
+const f87441 = function() {
   const self = this;
   const apply = closure_0.apply;
   if (typeof apply === "unknown") {
@@ -330,7 +330,7 @@ const f86855 = function() {
   }
   return applyArgumentsResult;
 };
-const result = require("BundleUpdaterManager").fileFinishedImporting("modules/build_overrides/ApplyBuildOverrideUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/build_overrides/ApplyBuildOverrideUtils.tsx");
 
 export const applyStaffBuildOverride = function applyStaffBuildOverride(arg0) {
   const self = this;
@@ -364,15 +364,13 @@ export const clearBuildOverride = function clearBuildOverride() {
 };
 export const getPublicBuildOverrideLink = function getPublicBuildOverrideLink(arg0) {
   const HTTP = callback(530).HTTP;
-  let obj = { url: null, body: null, headers: null, oldFormErrors: true, rejectWithError: false };
-  obj[0] = callback(4290).getAPIEndpoint("/__development/create_build_override_link");
-  obj[1] = arg0;
+  let obj = { url: callback(4294).getAPIEndpoint("/__development/create_build_override_link"), body: arg0, headers: null, oldFormErrors: true, rejectWithError: false };
   let str = token.getToken();
   if (str == null) {
     str = "";
   }
   obj[2] = { Authorization: str };
-  const obj2 = callback(4290);
+  const obj2 = callback(4294);
   return HTTP.post(obj).then((body) => ({ url: body.body.url, error: false }), (status) => {
     if (400 === status.status) {
       let obj = { url: false, error: null };

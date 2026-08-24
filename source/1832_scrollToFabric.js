@@ -4,14 +4,15 @@
 // Dependencies: [1829, 1658, 1657]
 
 // Module 1832 (scrollToFabric)
-import isJest from "isJest";
-import isJest from "isJest";
+import addLogBoxLog from "addLogBoxLog" /* 1658 */;
+import dispatchCommandFabric from "dispatchCommandFabric" /* 1829 */;
+import isJest from "isJest" /* 1657 */;
 
 function scrollToFabric(arg0, arg1, arg2, arg3) {
   const items = [arg1, arg2, arg3];
-  require(1829) /* dispatchCommandFabric */.dispatchCommand(arg0, "scrollTo", items);
+  dispatchCommandFabric.dispatchCommand(arg0, "scrollTo", items);
 }
-scrollToFabric.__closure = { dispatchCommand: require("dispatchCommandFabric").dispatchCommand };
+scrollToFabric.__closure = { dispatchCommand: dispatchCommandFabric.dispatchCommand };
 scrollToFabric.__workletHash = 5331784934384;
 scrollToFabric.__initData = { code: "function scrollToFabric_Pnpm_scrollToTs1(animatedRef,x,y,animated){const{dispatchCommand}=this.__closure;dispatchCommand(animatedRef,'scrollTo',[x,y,animated]);}" };
 function scrollToPaper(arg0, arg1, arg2, arg3) {
@@ -26,16 +27,16 @@ isJest = isJest.shouldBeUseWeb();
 if (isJest) {
   if (isJest.isJest()) {
     function scrollToJest() {
-      const logger = require(1658) /* addLogBoxLog */.logger;
+      const logger = addLogBoxLog.logger;
       logger.warn("scrollTo() is not supported with Jest.");
     }
   } else {
-    const _module2 = require("isJest");
+    const _module2 = isJest;
     scrollToJest = _module2.isChromeDebugger() ? (function scrollToChromeDebugger() {
-      const logger = require(1658) /* addLogBoxLog */.logger;
+      const logger = addLogBoxLog.logger;
       logger.warn("scrollTo() is not supported with Chrome Debugger.");
     }) : (function scrollToDefault() {
-      const logger = require(1658) /* addLogBoxLog */.logger;
+      const logger = addLogBoxLog.logger;
       logger.warn("scrollTo() is not supported on this configuration.");
     });
   }

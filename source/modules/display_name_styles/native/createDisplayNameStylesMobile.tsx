@@ -1,12 +1,12 @@
-// Module ID: 12799
-// Function ID: 12800
+// Module ID: 12854
+// Function ID: 12855
 // Name: createDisplayNameStylesMobile
-// Dependencies: [4662, 1922, 2]
+// Dependencies: [4669, 1922, 2]
 // Exports: createDisplayNameStylesMobile
 
-// Module 12799 (createDisplayNameStylesMobile)
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 12854 (createDisplayNameStylesMobile)
+import closure_0 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_1 from "mergeGuildAvatar" /* 1922 */;
 
 const result = require("set").fileFinishedImporting("modules/display_name_styles/native/createDisplayNameStylesMobile.tsx");
 

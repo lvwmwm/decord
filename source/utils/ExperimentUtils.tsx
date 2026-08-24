@@ -1,16 +1,16 @@
-// Module ID: 4365
-// Function ID: 4366
+// Module ID: 4369
+// Function ID: 4370
 // Name: getFirstEligibleUserExperiment
-// Dependencies: [32, 4288, 4289, 4296, 12, 2]
+// Dependencies: [32, 4292, 4293, 4300, 12, 2]
 
-// Module 4365 (getFirstEligibleUserExperiment)
-import _slicedToArray from "_slicedToArray";
-import getHash from "getHash";
-import ExperimentBuckets from "ExperimentBuckets";
+// Module 4369 (getFirstEligibleUserExperiment)
+import applyDefault from "apply" /* 12 */;
+import trackExposureToExperiment from "trackExposureToExperiment" /* 4300 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "getHash" /* 4292 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4293 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function getFirstEligibleUserExperiment(arg0) {
   const iter = arg0[Symbol.iterator]();
   const nextResult = iter.next();
@@ -30,7 +30,7 @@ function getFirstEligibleUserExperiment(arg0) {
   return null;
 }
 ({ ExperimentTypes: c5, ExperimentBuckets: closure_6 } = ExperimentBuckets);
-let result = require("ExperimentBuckets").fileFinishedImporting("utils/ExperimentUtils.tsx");
+let result = require("set").fileFinishedImporting("utils/ExperimentUtils.tsx");
 
 export default {
   getFirstEligibleUserExperiment,
@@ -66,7 +66,7 @@ export default {
             return false;
           } else if (type.type === constants.USER) {
             if (type2.type === tmp.USER) {
-              return importDefault(12).isEqual(type.context, type2.context);
+              return applyDefault.isEqual(type.context, type2.context);
             }
           }
         }
@@ -78,7 +78,7 @@ export default {
     const tmp = getFirstEligibleUserExperiment(arg0);
     if (null != tmp) {
       const tmp3 = callback(tmp, 2);
-      const result = require(4296) /* trackExposureToExperiment */.trackExposureToExperiment(tmp3[0], tmp4);
+      const result = trackExposureToExperiment.trackExposureToExperiment(tmp3[0], tmp4);
       return tmp3[1];
     }
   },
@@ -95,15 +95,11 @@ export default {
     return str;
   },
   getRecentExperimentBuckets(arg0, arg1) {
-    let closure_0 = arg1;
+    closure_0 = arg1;
     const entries = Object.entries(arg0);
     return entries.reduce((arg0, arg1) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg1;
       let tmp3 = (function isRecentExperiment(str, closure_0) {
-        let tmp4;
-        let tmp5;
         try {
           [tmp4, tmp5] = callback(str.split("-"), 2);
           if (null == tmp5) {
@@ -121,7 +117,7 @@ export default {
         }
       })(tmp, closure_0);
       if (tmp3) {
-        tmp3 = tmp2 > outer1_6.CONTROL;
+        tmp3 = tmp2 > closure_1_6.CONTROL;
       }
       if (tmp3) {
         arg0[tmp] = tmp2;

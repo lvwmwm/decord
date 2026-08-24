@@ -5,11 +5,15 @@
 // Exports: getRgbaValueAndNativeColor
 
 // Module 374 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _get from "_get";
-import importDefaultResult from "_createClass";
+import normalizeColorDefault from "normalizeColor" /* 51 */;
+import _inheritsDefault from "_inherits" /* 98 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 356 */;
+import _isNativeReflectConstructDefault2 from "_isNativeReflectConstruct" /* 366 */;
+import closure_3 from "_classCallCheck" /* 41 */;
+import closure_4 from "_possibleConstructorReturn" /* 93 */;
+import closure_5 from "_getPrototypeOf" /* 95 */;
+import closure_6 from "_get" /* 96 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
 let AnimatedColor = arg1;
 function _isNativeReflectConstruct() {
@@ -23,10 +27,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -51,7 +55,7 @@ function processColor(arg0) {
     if (tmp) {
       return arg0;
     } else {
-      const tmp4 = importDefault(51)(arg0);
+      const tmp4 = normalizeColorDefault(arg0);
       if (null == tmp4) {
         return null;
       } else {
@@ -78,12 +82,12 @@ let closure_8 = { r: 0, g: 0, b: 0, a: 1 };
 class AnimatedColor {
   constructor(arg0, arg1) {
     self = this;
-    tmp = processColor(this, AnimatedColor);
+    tmp = closure_3(this, AnimatedColor);
     items = [];
     items[0] = arg1;
-    tmp2 = __esModule;
-    obj = __esModule(AnimatedColor);
-    tmp3 = __esModule;
+    tmp2 = closure_5;
+    obj = closure_5(AnimatedColor);
+    tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -95,7 +99,7 @@ class AnimatedColor {
     tmp3Result = tmp3(self, constructResult);
     tmp3Result._suspendCallbacks = 0;
     if (global == null) {
-      tmp6 = defineProperty;
+      tmp6 = closure_8;
     }
     tmp7 = tmp6;
     if (tmp6) {
@@ -124,7 +128,7 @@ class AnimatedColor {
       tmp16 = processColor;
       tmp17 = processColor(tmp6);
       if (tmp17 == null) {
-        tmp17 = defineProperty;
+        tmp17 = closure_8;
       }
       tmp18 = tmp17;
       if (tmp17) {
@@ -146,8 +150,8 @@ class AnimatedColor {
       } else {
         obj1 = { nativeColor: null, rgbaValue: null };
         obj1[0] = tmp17;
-        tmp19 = defineProperty;
-        obj1[1] = defineProperty;
+        tmp19 = closure_8;
+        obj1[1] = closure_8;
       }
       ({ rgbaValue, nativeColor } = obj1);
       if (nativeColor) {
@@ -186,14 +190,14 @@ class AnimatedColor {
     return tmp3Result;
   }
 }
-require("_inherits")(AnimatedColor, require("_isNativeReflectConstruct"));
+_inheritsDefault(AnimatedColor, _isNativeReflectConstructDefault2);
 let items = [
   {
     key: "setValue",
     value: function setValue(arg0) {
       let self = this;
       self = this;
-      const importDefault = false;
+      importDefault = false;
       if (this.__isNative) {
         const API = importDefault(self[9]).API;
         const result = API.setWaitingForIdentifier(self.__getNativeTag().toString());
@@ -203,7 +207,7 @@ let items = [
       if (tmp4 == null) {
         tmp4 = closure_8;
       }
-      const AnimatedColor = tmp4;
+      AnimatedColor = tmp4;
       const result1 = self._withSuspendedCallbacks(() => {
         let tmp2 = closure_0;
         if (closure_0) {
@@ -229,7 +233,7 @@ let items = [
           a.setValue(tmp.a);
           if (null != tmp3.nativeColor) {
             tmp3.nativeColor = null;
-            let c1 = true;
+            c1 = true;
           }
         } else if (tmp3.nativeColor !== tmp) {
           tmp3.nativeColor = tmp;
@@ -327,8 +331,6 @@ let items = [
   {
     key: "__getValue",
     value: function __getValue() {
-      let g;
-      let r;
       const self = this;
       if (null != this.nativeColor) {
         let nativeColor = self.nativeColor;
@@ -431,10 +433,6 @@ let items = [
   {
     key: "__getNativeConfig",
     value: function __getNativeConfig() {
-      let a;
-      let b;
-      let g;
-      let r;
       ({ r, g, b, a } = this);
       return { type: "color", r: r.__getNativeTag(), g: g.__getNativeTag(), b: b.__getNativeTag(), a: a.__getNativeTag(), nativeColor: this.nativeColor, debugID: this.__getDebugID() };
     }

@@ -1,9 +1,11 @@
-// Module ID: 15119
-// Function ID: 15120
+// Module ID: 15183
+// Function ID: 15184
 // Name: get webauthn
 // Dependencies: [1236, 2]
 
-// Module 15119 (get webauthn)
+// Module 15183 (get webauthn)
+import set from "set" /* 2 */;
+
 const obj = {};
 Object.defineProperty(obj, "webauthn", {
   get: () => {
@@ -40,6 +42,6 @@ Object.defineProperty(obj, "backup", {
   },
   set: undefined
 });
-const result = require("set").fileFinishedImporting("modules/mfa/MFAConstants.tsx");
+const result = set.fileFinishedImporting("modules/mfa/MFAConstants.tsx");
 
 export const SELECT_NAMES = obj;

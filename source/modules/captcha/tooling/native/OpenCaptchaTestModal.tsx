@@ -1,22 +1,24 @@
-// Module ID: 15136
-// Function ID: 15137
+// Module ID: 15200
+// Function ID: 15201
 // Name: showCaptchaTestModal
-// Dependencies: [5, 19, 21, 5260, 15137, 2007, 2]
+// Dependencies: [5, 19, 21, 5265, 15201, 2008, 2]
 // Exports: showCaptchaTestModal
 
-// Module 15136 (showCaptchaTestModal)
-import asyncRequireImpl from "asyncRequireImpl";
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15200 (showCaptchaTestModal)
+import noopAll from "noop" /* 19 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/captcha/tooling/native/OpenCaptchaTestModal.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("modules/captcha/tooling/native/OpenCaptchaTestModal.tsx");
 
 export const showCaptchaTestModal = function showCaptchaTestModal() {
-  importDefault(5260).pushLazy(callback(function*() {
-    let closure_0 = tmp2;
-    yield outer1_0(paths[5])(paths[4], paths.paths);
+  _modDef5265.pushLazy(callback(function*() {
+    closure_0 = tmp2;
+    yield closure_1_0(paths[5])(paths[4], paths.paths);
     closure_0 = arg1.default;
-    return () => outer1_4(closure_0, {});
+    return () => closure_1_4(closure_0, {});
   }));
 };

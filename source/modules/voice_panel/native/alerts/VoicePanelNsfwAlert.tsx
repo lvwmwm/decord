@@ -1,26 +1,25 @@
-// Module ID: 16404
-// Function ID: 16405
+// Module ID: 16501
+// Function ID: 16502
 // Name: VoicePanelNsfwAlert
-// Dependencies: [19, 1434, 1910, 21, 4660, 4660, 1236, 6778, 4975, 2]
+// Dependencies: [19, 1434, 1910, 21, 4667, 4667, 1236, 6815, 4980, 2]
 // Exports: default
 
-// Module 16404 (VoicePanelNsfwAlert)
-import "noop";
-import { isGuildNSFW } from "GuildNSFWContentLevel";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import jsxProd from "jsxProd";
+// Module 16501 (VoicePanelNsfwAlert)
+import noopAll from "noop" /* 19 */;
+import { isGuildNSFW } from "GuildNSFWContentLevel" /* 1434 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c5;
-let closure_6;
 const require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNsfwAlert.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNsfwAlert.tsx");
 
 export default function VoicePanelNsfwAlert(guildId) {
   guildId = guildId.guildId;
   const channelId = guildId.channelId;
-  let dependencyMap;
-  let obj = guildId(4660);
+  dependencyMap = undefined;
+  let obj = guildId(4667);
   dependencyMap = obj.useDismissModalCallback();
   const tmp3 = isGuildNSFW(guild.getGuild(guildId));
   const intl = guildId(1236).intl;
@@ -42,32 +41,32 @@ export default function VoicePanelNsfwAlert(guildId) {
   }
   obj[1] = string2Result;
   obj = { children: null };
-  const obj1 = {
+  obj1 = {
     variant: "primary",
     onPress() {
-      channelId(6778).nsfwAgree(guildId);
-      const obj = channelId(6778);
-      const voiceChannel = channelId(4975).selectVoiceChannel(channelId);
+      channelId(6815).nsfwAgree(guildId);
+      const obj = channelId(6815);
+      const voiceChannel = channelId(4980).selectVoiceChannel(channelId);
       dependencyMap();
     },
     text: null
   };
   const intl3 = tmp(1236).intl;
   obj1[2] = intl3.string(guildId(1236).t.wVq7uo);
-  const items = [closure_5(guildId(4660).AlertActionButton, obj1, "confirm"), ];
+  const items = [closure_5(guildId(4667).AlertActionButton, obj1, "confirm"), ];
   const obj2 = {
     variant: "secondary",
     onPress() {
-      channelId(6778).nsfwReturnToSafety(guildId);
+      channelId(6815).nsfwReturnToSafety(guildId);
       dependencyMap();
     },
     text: null
   };
   const intl4 = tmp(1236).intl;
   obj2[2] = intl4.string(guildId(1236).t["/g10LC"]);
-  items[1] = closure_5(guildId(4660).AlertActionButton, obj2, "add-profile-picture");
+  items[1] = closure_5(guildId(4667).AlertActionButton, obj2, "add-profile-picture");
   obj[0] = items;
-  obj[2] = callback(guildId(4660).AlertActions, obj);
-  return closure_5(guildId(4660).AlertModal, obj);
+  obj[2] = callback(guildId(4667).AlertActions, obj);
+  return closure_5(guildId(4667).AlertModal, obj);
 };
 export const VOICE_PANEL_NSFW_KEY = "voice-panel-nsfw";

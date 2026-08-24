@@ -1,11 +1,12 @@
-// Module ID: 4047
-// Function ID: 4048
+// Module ID: 4050
+// Function ID: 4051
 // Name: createFromServer
 // Dependencies: [1931, 2]
 
-// Module 4047 (createFromServer)
-import "toJS";
+// Module 4050 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
 
+toJSDefault;
 const obj = { PRICE_CHANGE_MODE_UNSPECIFIED: "PRICE_CHANGE_MODE_UNSPECIFIED", PRICE_DECREASE: "PRICE_DECREASE", PRICE_INCREASE: "PRICE_INCREASE", OPT_OUT_PRICE_INCREASE: "OPT_OUT_PRICE_INCREASE" };
 let GooglePlayPriceChangeRecord;
 class GooglePlayPriceChangeRecord extends tmp2 {
@@ -18,15 +19,6 @@ class GooglePlayPriceChangeRecord extends tmp2 {
 }
 const prototype = GooglePlayPriceChangeRecord.prototype;
 GooglePlayPriceChangeRecord["createFromServer"] = function createFromServer(arg0) {
-  let expected_charge_time;
-  let new_currency;
-  let new_price;
-  let old_currency;
-  let old_price;
-  let price_change_id;
-  let price_change_mode;
-  let subscription_id;
-  let user_id;
   ({ user_id, subscription_id, old_currency, old_price, new_currency, new_price, price_change_mode } = arg0);
   ({ expected_charge_time, price_change_id } = arg0);
   if (typeof GooglePlayPriceChangeRecord !== "function") {

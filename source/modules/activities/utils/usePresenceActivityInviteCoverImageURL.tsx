@@ -1,24 +1,25 @@
-// Module ID: 12788
-// Function ID: 12789
+// Module ID: 12843
+// Function ID: 12844
 // Name: _getPresenceActivityInviteCoverImageURL
-// Dependencies: [19, 12789, 1896, 7247, 589, 12790, 2]
+// Dependencies: [19, 12844, 1896, 7285, 589, 12845, 2]
 // Exports: getPresenceActivityInviteCoverImageURL, usePresenceActivityInviteCoverImageURL
 
-// Module 12788 (_getPresenceActivityInviteCoverImageURL)
-import noop from "noop";
-import getCoverImageURL from "getCoverImageURL";
+// Module 12843 (_getPresenceActivityInviteCoverImageURL)
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1896 */;
+import updateAssets from "updateAssets" /* 7285 */;
+import setCoverImageURLAll from "setCoverImageURL" /* 12845 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "getCoverImageURL" /* 12844 */;
 
-const require = arg1;
+require = arg1;
 function _getPresenceActivityInviteCoverImageURL(messageId) {
-  let application;
-  let presenceActivity;
   ({ presenceActivity, application } = messageId);
   let obj = { messageId: messageId.messageId };
   coverImageURL = coverImageURL.getCoverImageURL(obj);
   if (null === coverImageURL) {
     return { cachedImageURL: null, imageURL: null };
   } else {
-    const result = 600 * importDefault(1896)();
+    const result = 600 * getDevicePixelRatioDefault();
     obj = { cachedImageURL: null, imageURL: null };
     obj[0] = coverImageURL;
     let invite_cover_image;
@@ -30,8 +31,8 @@ function _getPresenceActivityInviteCoverImageURL(messageId) {
     }
     let assetImage = null;
     if (null != invite_cover_image) {
-      assetImage = require(7247) /* updateAssets */.getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
-      const obj2 = require(7247) /* updateAssets */;
+      assetImage = updateAssets.getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
+      const obj2 = updateAssets;
     }
     if (assetImage == null) {
       assetImage = coverImageURL;
@@ -46,7 +47,7 @@ function _getPresenceActivityInviteCoverImageURL(messageId) {
     return obj;
   }
 }
-let result = require("getDevicePixelRatio").fileFinishedImporting("modules/activities/utils/usePresenceActivityInviteCoverImageURL.tsx");
+let result = require("set").fileFinishedImporting("modules/activities/utils/usePresenceActivityInviteCoverImageURL.tsx");
 
 export const usePresenceActivityInviteCoverImageURL = (messageId) => {
   messageId = messageId.messageId;
@@ -54,9 +55,9 @@ export const usePresenceActivityInviteCoverImageURL = (messageId) => {
   const application = messageId.application;
   let cachedImageURL;
   let imageURL;
-  const items = [getCoverImageURL];
+  const items = [closure_5];
   const items1 = [messageId, presenceActivity, application];
-  const stateFromStoresObject = messageId(cachedImageURL[4]).useStateFromStoresObject(items, () => outer1_6({ messageId, presenceActivity, application }), items1);
+  const stateFromStoresObject = messageId(cachedImageURL[4]).useStateFromStoresObject(items, () => closure_1_6({ messageId, presenceActivity, application }), items1);
   cachedImageURL = stateFromStoresObject.cachedImageURL;
   imageURL = stateFromStoresObject.imageURL;
   const items2 = [cachedImageURL, imageURL, messageId];
@@ -80,8 +81,8 @@ export const getPresenceActivityInviteCoverImageURL = function getPresenceActivi
     obj = { messageId: null, coverImageURL: null };
     obj[0] = messageId;
     obj[1] = imageURL;
-    importAll(12790).setCoverImageURL(obj);
-    const obj2 = importAll(12790);
+    setCoverImageURLAll.setCoverImageURL(obj);
+    const obj2 = setCoverImageURLAll;
   }
   return imageURL;
 };

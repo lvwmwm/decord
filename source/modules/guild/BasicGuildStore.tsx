@@ -1,13 +1,15 @@
-// Module ID: 8180
-// Function ID: 8181
+// Module ID: 8220
+// Function ID: 8221
 // Name: getGuild
 // Dependencies: [589, 709, 2]
 
-// Module 8180 (getGuild)
-import { Store } from "initialize";
+// Module 8220 (getGuild)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0 = 0;
 let closure_1 = {};
+const Store = initializeDefault.Store;
 class BasicGuildStore extends Store {
 }
 const prototype = BasicGuildStore.prototype;
@@ -35,7 +37,7 @@ prototype["getVersion"] = function getVersion() {
   return c0;
 };
 BasicGuildStore.displayName = "BasicGuildStore";
-const basicGuildStore = new BasicGuildStore(require("dispatcher"), {
+const basicGuildStore = new BasicGuildStore(dispatcherDefault, {
   BASIC_GUILD_FETCH: function handleBasicGuildFetch(guildId) {
     closure_1[guildId.guildId] = { type: "loading" };
     return false;

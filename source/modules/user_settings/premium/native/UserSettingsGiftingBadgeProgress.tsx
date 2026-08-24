@@ -1,33 +1,32 @@
-// Module ID: 13003
-// Function ID: 13004
+// Module ID: 13058
+// Function ID: 13059
 // Name: GiftingBadgeIntro
-// Dependencies: [32, 19, 17, 8936, 21, 4661, 712, 1367, 7139, 7159, 589, 8932, 4734, 1236, 2431, 10302, 4745, 9589, 10295, 13004, 13006, 9464, 2]
+// Dependencies: [32, 19, 17, 8973, 21, 4668, 712, 1367, 7177, 7197, 589, 8969, 4739, 1236, 2432, 10341, 4750, 9626, 10334, 13059, 13061, 9501, 2]
 // Exports: default
 
-// Module 13003 (GiftingBadgeIntro)
-import _slicedToArray from "_slicedToArray";
-import getGiftingBadgeProgressPercent from "getGiftingBadgeProgressPercent";
-import get_ActivityIndicator from "GiftIcon";
-import initialize from "initialize";
-import { getSingleRequirementThreshold as closure_8 } from "initialize";
-import jsxProd from "ChevronSmallDownIcon";
-import createCacheKey from "createCacheKey";
+// Module 13058 (GiftingBadgeIntro)
+import ThemesDefault from "Themes" /* 712 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import contextDefault from "context" /* 7177 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "initialize" /* 8973 */;
+import { getSingleRequirementThreshold as closure_8 } from "initialize" /* 8973 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_6;
-let unpackModuleId;
 const require = arg1;
 function GiftingBadgeIntro(analyticsLocation) {
   analyticsLocation = analyticsLocation.analyticsLocation;
-  let importDefault;
+  importDefault = undefined;
   let analyticsLocations;
   const tmp3 = callback4(importDefault(analyticsLocations[7])("UserSettingsGiftingBadgeProgress"));
   importDefault = tmp3;
   analyticsLocations = importDefault(analyticsLocations[8])(importDefault(analyticsLocations[9]).USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
   let obj = analyticsLocation(analyticsLocations[10]);
-  let items = [initialize];
+  let items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => {
     badgeById = badgeById.getBadgeById(analyticsLocation(analyticsLocations[11]).BadgeId.GIFTING);
     let tiers;
@@ -42,38 +41,36 @@ function GiftingBadgeIntro(analyticsLocation) {
     obj[0] = tmp3.wrapper;
     obj = { style: null, children: null };
     obj[0] = tmp3.introContent;
-    let obj1 = { variant: "text-xs/normal", color: "text-muted", children: null };
+    obj1 = { variant: "text-xs/normal", color: "text-muted", children: null };
     let intl = tmp5(tmp2[13]).intl;
     obj1[2] = intl.string(tmp(tmp2[14])["4Yp0mI"]);
     obj[1] = callback2(tmp5(tmp2[12]).Text, obj1);
     let items1 = [callback2(closure_6, obj), , ];
-    let obj2 = { style: null, children: null };
+    const obj2 = { style: null, children: null };
     obj2[0] = tmp3.introGrid;
     obj2[1] = stateFromStores.map((simple_icon_url) => {
-      let obj = { style: _undefined.introGridItem, children: null };
+      let obj = { style: lib.introGridItem, children: null };
       let tmp4 = null != simple_icon_url.simple_icon_url;
       if (tmp4) {
         obj = { icon: null, size: 44 };
         obj[0] = simple_icon_url.simple_icon_url;
-        tmp4 = outer1_9(_undefined(analyticsLocations[15]), obj);
+        tmp4 = closure_1_9(lib(analyticsLocations[15]), obj);
       }
       const items = [tmp4, ];
-      obj = { style: _undefined.badgeCopy, children: null };
+      obj = { style: lib.badgeCopy, children: null };
       let str = simple_icon_url.name;
       if (str == null) {
         str = "";
       }
-      const items1 = [outer1_9(analyticsLocation(analyticsLocations[12]).Text, { variant: "text-sm/semibold", color: "text-subtle", children: str }), ];
-      const obj1 = { variant: "text-xs/normal", color: "text-muted", children: null };
+      const items1 = [closure_1_9(analyticsLocation(analyticsLocations[12]).Text, { variant: "text-sm/semibold", color: "text-subtle", children: str }), ];
+      obj1 = { variant: "text-xs/normal", color: "text-muted", children: null };
       const intl = tmp9(tmp10[13]).intl;
-      const obj2 = { count: null };
-      obj2[0] = outer1_8(simple_icon_url);
-      obj1[2] = intl.format(_undefined(analyticsLocations[14]).qvx9E4, obj2);
-      items1[1] = outer1_9(analyticsLocation(analyticsLocations[12]).Text, obj1);
+      obj1[2] = intl.format(lib(analyticsLocations[14]).qvx9E4, { count: closure_1_8(simple_icon_url) });
+      items1[1] = closure_1_9(analyticsLocation(analyticsLocations[12]).Text, obj1);
       obj[1] = items1;
-      items[1] = outer1_10(outer1_6, obj);
+      items[1] = closure_1_10(closure_1_6, obj);
       obj[1] = items;
-      return outer1_10(outer1_6, obj, simple_icon_url.key);
+      return closure_1_10(closure_1_6, obj, simple_icon_url.key);
     });
     items1[1] = callback2(closure_6, obj2);
     const obj3 = { variant: "primary", icon: null, text: null, onPress: null, grow: true };
@@ -96,75 +93,61 @@ function GiftingBadgeIntro(analyticsLocation) {
 ({ Pressable: c5, View: closure_6 } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
 let closure_12 = createCacheKey.createStyles((arg0) => {
-  let obj = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED, borderRadius: null, padding: null, gap: null };
+  let obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: null, padding: null, gap: null };
   let num = 0;
   if (arg0) {
     num = tmp(712).radii.md;
   }
-  obj = { wrapper: null, progressContainer: null, progressRow: null, progressTitleText: null, progressBarContainer: null, progressBarTrack: null, progressBarFill: null, progressLabels: null, divider: null, dropdownRow: null, badgesRow: null, badgeItem: null, badgeItemActive: null, badgeCopy: null, footerText: null, introContent: null, introGrid: null, introGridItem: null };
-  obj[1] = num;
-  obj[2] = importDefault(712).space.PX_16;
-  obj[3] = importDefault(712).space.PX_16;
-  obj[0] = obj;
+  obj = { wrapper: obj, progressContainer: num, progressRow: tmp(712).space.PX_16, progressTitleText: tmp(712).space.PX_16, progressBarContainer: null, progressBarTrack: null, progressBarFill: null, progressLabels: null, divider: null, dropdownRow: null, badgesRow: null, badgeItem: null, badgeItemActive: null, badgeCopy: null, footerText: null, introContent: null, introGrid: null, introGridItem: null };
   obj = { gap: tmp(712).space.PX_8 };
   obj[1] = obj;
-  obj[2] = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_4 };
+  obj[2] = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
   obj[3] = { flex: 1 };
-  const obj1 = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_4 };
-  obj[4] = { paddingHorizontal: importDefault(712).space.PX_8 };
-  const obj2 = { paddingHorizontal: importDefault(712).space.PX_8 };
-  obj[5] = { height: 6, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-  const obj3 = { height: 6, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-  obj[6] = { height: 6, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).unsafe_rawColors.BRAND_500 };
-  const obj4 = { height: 6, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).unsafe_rawColors.BRAND_500 };
-  obj[7] = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: importDefault(712).space.PX_16, marginTop: importDefault(712).space.PX_4 };
-  const obj5 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: importDefault(712).space.PX_16, marginTop: importDefault(712).space.PX_4 };
-  obj[8] = { height: 1, backgroundColor: importDefault(712).colors.BACKGROUND_MOD_NORMAL };
+  obj1 = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
+  obj[4] = { paddingHorizontal: ThemesDefault.space.PX_8 };
+  const obj2 = { paddingHorizontal: ThemesDefault.space.PX_8 };
+  obj[5] = { height: 6, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
+  const obj3 = { height: 6, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
+  obj[6] = { height: 6, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.unsafe_rawColors.BRAND_500 };
+  const obj4 = { height: 6, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.unsafe_rawColors.BRAND_500 };
+  obj[7] = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: ThemesDefault.space.PX_16, marginTop: ThemesDefault.space.PX_4 };
+  const obj5 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: ThemesDefault.space.PX_16, marginTop: ThemesDefault.space.PX_4 };
+  obj[8] = { height: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL };
   obj[9] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-  const obj6 = { height: 1, backgroundColor: importDefault(712).colors.BACKGROUND_MOD_NORMAL };
-  obj[10] = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: importDefault(712).space.PX_4 };
-  const obj7 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: importDefault(712).space.PX_4 };
-  obj[11] = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_8 };
-  const obj8 = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_8 };
-  obj[12] = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(712).radii.md, borderWidth: 1, borderColor: importDefault(712).colors.BORDER_MUTED };
+  const obj6 = { height: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL };
+  obj[10] = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: ThemesDefault.space.PX_4 };
+  const obj7 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: ThemesDefault.space.PX_4 };
+  obj[11] = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: ThemesDefault.space.PX_8, gap: ThemesDefault.space.PX_8 };
+  const obj8 = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: ThemesDefault.space.PX_8, gap: ThemesDefault.space.PX_8 };
+  obj[12] = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: ThemesDefault.radii.md, borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_MUTED };
   obj[13] = { alignItems: "center", gap: 2 };
-  const obj9 = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(712).radii.md, borderWidth: 1, borderColor: importDefault(712).colors.BORDER_MUTED };
-  obj[14] = { textAlign: "center", marginBottom: importDefault(712).space.PX_16 };
-  const obj10 = { textAlign: "center", marginBottom: importDefault(712).space.PX_16 };
-  obj[15] = { paddingHorizontal: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_4 };
-  const obj11 = { paddingHorizontal: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_4 };
-  obj[16] = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: importDefault(712).space.PX_4, paddingHorizontal: importDefault(712).space.PX_16 };
-  const obj12 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: importDefault(712).space.PX_4, paddingHorizontal: importDefault(712).space.PX_16 };
-  obj[17] = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_8 };
+  const obj9 = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: ThemesDefault.radii.md, borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_MUTED };
+  obj[14] = { textAlign: "center", marginBottom: ThemesDefault.space.PX_16 };
+  const obj10 = { textAlign: "center", marginBottom: ThemesDefault.space.PX_16 };
+  obj[15] = { paddingHorizontal: ThemesDefault.space.PX_8, gap: ThemesDefault.space.PX_4 };
+  const obj11 = { paddingHorizontal: ThemesDefault.space.PX_8, gap: ThemesDefault.space.PX_4 };
+  obj[16] = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: ThemesDefault.space.PX_4, paddingHorizontal: ThemesDefault.space.PX_16 };
+  const obj12 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: ThemesDefault.space.PX_4, paddingHorizontal: ThemesDefault.space.PX_16 };
+  obj[17] = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: ThemesDefault.space.PX_8, gap: ThemesDefault.space.PX_8 };
   return obj;
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/premium/native/UserSettingsGiftingBadgeProgress.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/UserSettingsGiftingBadgeProgress.tsx");
 
 export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
-  let badgeProgress;
-  let c2;
-  let currentTier;
-  let nextTier;
-  let tiers;
-  let tmp5;
   analyticsLocation = analyticsLocation.analyticsLocation;
-  let importDefault;
-  let dependencyMap;
+  importDefault = undefined;
+  dependencyMap = undefined;
   let analyticsLocations;
   currentTier = undefined;
-  const tmp3 = callback4(importDefault(1367)("UserSettingsGiftingBadgeProgress"));
+  const tmp3 = callback4(useIsMobileVisualRefreshExperimentEnabledDefault("UserSettingsGiftingBadgeProgress"));
   importDefault = tmp3;
   [tmp5, c2] = analyticsLocations(currentTier.useState(false), 2);
   const tmp4 = analyticsLocations(currentTier.useState(false), 2);
-  analyticsLocations = importDefault(7139)(importDefault(7159).USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
+  analyticsLocations = contextDefault(QUICK_SWITCHERDefault.USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
   let obj = analyticsLocation(589);
-  let items = [initialize];
+  let items = [closure_7];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    let getBadgeById;
-    let getCurrentTier;
-    let getNextTier;
-    let getRemainingToNextTier;
-    singleRequirementProgress = singleRequirementProgress.getSingleRequirementProgress(analyticsLocation(_undefined2[11]).BadgeId.GIFTING);
+    singleRequirementProgress = singleRequirementProgress.getSingleRequirementProgress(analyticsLocation(_undefined[11]).BadgeId.GIFTING);
     let num;
     if (singleRequirementProgress != null) {
       num = singleRequirementProgress.current;
@@ -172,7 +155,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     if (num == null) {
       num = 0;
     }
-    const obj = { badgeProgress: num, currentTier: getCurrentTier(analyticsLocation(_undefined2[11]).BadgeId.GIFTING), nextTier: getNextTier(analyticsLocation(_undefined2[11]).BadgeId.GIFTING), giftsRemaining: getRemainingToNextTier(analyticsLocation(_undefined2[11]).BadgeId.GIFTING), tiers: null };
+    const obj = { badgeProgress: num, currentTier: getCurrentTier(analyticsLocation(_undefined[11]).BadgeId.GIFTING), nextTier: getNextTier(analyticsLocation(_undefined[11]).BadgeId.GIFTING), giftsRemaining: getRemainingToNextTier(analyticsLocation(_undefined[11]).BadgeId.GIFTING), tiers: null };
     ({ getCurrentTier, getNextTier, getRemainingToNextTier, getBadgeById } = singleRequirementProgress);
     const badgeById = getBadgeById(tmp2(tmp3[11]).BadgeId.GIFTING);
     let tiers;
@@ -194,7 +177,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
   } else {
     let tmp21 = callback(currentTier);
     const tmp27 = callback(nextTier);
-    const giftingBadgeProgressPercent = tmp7(13004).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
+    const giftingBadgeProgressPercent = tmp7(13059).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
     if (null != nextTier) {
       const intl2 = tmp7(1236).intl;
       obj = { count: null, nextTier: null };
@@ -207,7 +190,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
         str2 = "";
       }
       obj[1] = str2;
-      let formatToPlainStringResult = intl2.formatToPlainString(tmp(2431).XTX3OO, obj);
+      let formatToPlainStringResult = intl2.formatToPlainString(tmp(2432).XTX3OO, obj);
     } else {
       let intl = tmp7(1236).intl;
       let str;
@@ -217,11 +200,11 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
       if (str == null) {
         str = "";
       }
-      let obj1 = { currentTier: null };
+      obj1 = { currentTier: null };
       obj1[0] = str;
-      formatToPlainStringResult = intl.formatToPlainString(tmp(2431).LnsdbK, obj1);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(2432).LnsdbK, obj1);
     }
-    let obj2 = { style: null, children: null };
+    const obj2 = { style: null, children: null };
     obj2[0] = tmp3.wrapper;
     const obj3 = { style: null, children: null };
     obj3[0] = tmp3.progressContainer;
@@ -236,13 +219,13 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
       const obj5 = { icon: null, size: 36, style: null };
       obj5[0] = currentTier.simple_icon_url;
       obj5[2] = { margin: 4 };
-      tmp14 = callback2(tmp(10302), obj5);
+      tmp14 = callback2(tmp(10341), obj5);
     }
     let items1 = [tmp14, , ];
     const obj6 = { style: null, variant: "text-md/medium", color: "text-strong", children: null };
     obj6[0] = tmp3.progressTitleText;
     obj6[3] = formatToPlainStringResult;
-    items1[1] = callback2(tmp7(4734).Text, obj6);
+    items1[1] = callback2(tmp7(4739).Text, obj6);
     let simple_icon_url1;
     if (nextTier != null) {
       simple_icon_url1 = nextTier.simple_icon_url;
@@ -252,7 +235,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
       const obj7 = { icon: null, size: 36, style: null };
       obj7[0] = nextTier.simple_icon_url;
       obj7[2] = { margin: 4 };
-      tmp16Result = tmp16(tmp(10302), obj7);
+      tmp16Result = tmp16(tmp(10341), obj7);
     }
     items1[2] = tmp16Result;
     obj4[1] = items1;
@@ -284,8 +267,8 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     }
     const obj14 = { variant: "text-xs/normal", color: "text-subtle", children: null };
     obj13[1] = tmp21;
-    obj14[2] = intl3.format(tmp(2431).iIpfQe, obj13);
-    obj12[1] = callback2(tmp7(4734).Text, obj14);
+    obj14[2] = intl3.format(tmp(2432).iIpfQe, obj13);
+    obj12[1] = callback2(tmp7(4739).Text, obj14);
     items4[1] = callback2(closure_6, obj12);
     obj8[1] = items4;
     items2[1] = closure_10(closure_6, obj8);
@@ -294,31 +277,31 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     const obj15 = { variant: "primary", icon: null, text: null, onPress: null, grow: true };
     const obj16 = { size: "sm", color: null };
     obj16[1] = tmp(712).unsafe_rawColors.WHITE;
-    obj15[1] = callback2(tmp7(9589).GiftIcon, obj16);
+    obj15[1] = callback2(tmp7(9626).GiftIcon, obj16);
     const intl4 = tmp7(1236).intl;
-    obj15[2] = intl4.string(tmp(2431).DZnomS);
+    obj15[2] = intl4.string(tmp(2432).DZnomS);
     obj15[3] = function onPress() {
-      let obj = analyticsLocation(_undefined2[18]);
+      let obj = analyticsLocation(_undefined[18]);
       obj = { analyticsLocation, analyticsLocations };
       obj.openGiftModal(obj);
     };
-    items5[1] = callback2(tmp7(4745).Button, obj15);
+    items5[1] = callback2(tmp7(4750).Button, obj15);
     const obj17 = { style: null };
     obj17[0] = tmp3.divider;
     items5[2] = callback2(closure_6, obj17);
     const obj18 = { style: null, onPress: null, children: null };
     obj18[0] = tmp3.dropdownRow;
     obj18[1] = function onPress() {
-      return _undefined2((arg0) => !arg0);
+      return _undefined((arg0) => !arg0);
     };
     const obj19 = { variant: "text-sm/medium", color: "text-strong", children: null };
     const intl5 = tmp7(1236).intl;
-    obj19[2] = intl5.string(tmp(2431).WZ4cXA);
-    const items6 = [callback2(tmp7(4734).Text, obj19), ];
+    obj19[2] = intl5.string(tmp(2432).WZ4cXA);
+    const items6 = [callback2(tmp7(4739).Text, obj19), ];
     if (tmp11Result) {
-      let ChevronSmallDownIcon = tmp7(13006).ChevronSmallUpIcon;
+      let ChevronSmallDownIcon = tmp7(13061).ChevronSmallUpIcon;
     } else {
-      ChevronSmallDownIcon = tmp7(9464).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp7(9501).ChevronSmallDownIcon;
     }
     const obj20 = { color: null };
     obj20[0] = tmp(712).colors.INTERACTIVE_ICON_DEFAULT;
@@ -330,18 +313,18 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
       const obj22 = { style: null, children: null };
       obj22[0] = tmp3.badgesRow;
       obj22[1] = tiers.map((key) => {
-        const items = [_undefined.badgeItem, ];
+        const items = [lib.badgeItem, ];
         key = undefined;
         if (currentTier != null) {
           key = currentTier.key;
         }
         let obj = { style: items, children: null };
-        items[1] = key.key === key && _undefined.badgeItemActive;
+        items[1] = key.key === key && lib.badgeItemActive;
         let tmp6 = null != key.simple_icon_url;
         if (tmp6) {
           obj = { icon: null, size: 36 };
           obj[0] = key.simple_icon_url;
-          tmp6 = outer1_9(_undefined(_undefined2[15]), obj);
+          tmp6 = closure_1_9(lib(_undefined[15]), obj);
         }
         const items1 = [tmp6, ];
         obj = { style: tmp3.badgeCopy, children: null };
@@ -349,24 +332,22 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
         if (str == null) {
           str = "";
         }
-        const items2 = [outer1_9(analyticsLocation(_undefined2[12]).Text, { variant: "text-sm/semibold", color: "text-strong", children: str }), ];
-        const obj1 = { variant: "text-xs/normal", color: "text-subtle", children: null };
+        const items2 = [closure_1_9(analyticsLocation(_undefined[12]).Text, { variant: "text-sm/semibold", color: "text-strong", children: str }), ];
+        obj1 = { variant: "text-xs/normal", color: "text-subtle", children: null };
         const intl = tmp11(tmp12[13]).intl;
-        const obj2 = { count: null };
-        obj2[0] = outer1_8(key);
-        obj1[2] = intl.format(_undefined(_undefined2[14]).qvx9E4, obj2);
-        items2[1] = outer1_9(analyticsLocation(_undefined2[12]).Text, obj1);
+        obj1[2] = intl.format(lib(_undefined[14]).qvx9E4, { count: closure_1_8(key) });
+        items2[1] = closure_1_9(analyticsLocation(_undefined[12]).Text, obj1);
         obj[1] = items2;
-        items1[1] = outer1_10(outer1_6, obj);
+        items1[1] = closure_1_10(closure_1_6, obj);
         obj[1] = items1;
-        return outer1_10(outer1_6, obj, key.key);
+        return closure_1_10(closure_1_6, obj, key.key);
       });
       const items7 = [tmp16(tmp12, obj22), ];
       const obj23 = { style: null, variant: "text-xs/normal", color: "text-muted", children: null };
       obj23[0] = tmp3.footerText;
       const intl6 = tmp7(1236).intl;
-      obj23[3] = intl6.string(tmp(2431)["4Yp0mI"]);
-      items7[1] = tmp16(tmp7(4734).Text, obj23);
+      obj23[3] = intl6.string(tmp(2432)["4Yp0mI"]);
+      items7[1] = tmp16(tmp7(4739).Text, obj23);
       obj21[0] = items7;
       tmp11Result = tmp11(closure_11, obj21);
     }
@@ -374,5 +355,5 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     obj2[1] = items5;
     return closure_10(closure_6, obj2);
   }
-  let tmp6 = importDefault(7139);
+  let tmp6 = contextDefault;
 };

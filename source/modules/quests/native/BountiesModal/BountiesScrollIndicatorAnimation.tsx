@@ -1,26 +1,27 @@
-// Module ID: 14392
-// Function ID: 14393
+// Module ID: 14460
+// Function ID: 14461
 // Name: BountiesScrollIndicatorAnimation
-// Dependencies: [32, 19, 17, 21, 4661, 4097, 712, 4104, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 4100, 712, 4107, 2]
 // Exports: default
 
-// Module 14392 (BountiesScrollIndicatorAnimation)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14460 (BountiesScrollIndicatorAnimation)
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import ManaContext from "ManaContext" /* 4107 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 let closure_7 = createCacheKey.createStyles(() => ({ container: { width: 80, height: 80 } }));
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollIndicatorAnimation.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollIndicatorAnimation.tsx");
 
 export default function BountiesScrollIndicatorAnimation(startAnimation) {
-  let tmp6;
-  let tmp7;
   const visible = startAnimation.visible;
-  let obj = require(4097) /* map */;
-  const token = obj.useToken(importDefault(712).colors.TEXT_DEFAULT);
+  let obj = map;
+  const token = obj.useToken(ThemesDefault.colors.TEXT_DEFAULT);
   const tmp = callback2();
   const tmp2 = require;
   [tmp6, tmp7] = callback(React.useState(0), 2);
@@ -31,7 +32,7 @@ export default function BountiesScrollIndicatorAnimation(startAnimation) {
       tmp7((arg0) => arg0 + 1);
     }
   }
-  obj = { style: tmp.container, children: jsx(tmp2(4104).BountiesScrollIndicatorRive, { stateMachine: "State Machine 1", fit: "contain", dataBinding: obj }, tmp6) };
+  obj = { style: tmp.container, children: jsx(ManaContext.BountiesScrollIndicatorRive, { stateMachine: "State Machine 1", fit: "contain", dataBinding: obj }, tmp6) };
   obj = { color: token, startAnimation: !startAnimation.isFadingInContent };
   return <View color={token} startAnimation={!arg0.isFadingInContent} />;
 };

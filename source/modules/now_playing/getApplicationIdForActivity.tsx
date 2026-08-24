@@ -1,19 +1,27 @@
-// Module ID: 13297
-// Function ID: 13298
+// Module ID: 13355
+// Function ID: 13356
 // Name: getApplicationIdForActivity
-// Dependencies: [12779, 13298, 13299, 4481, 7261, 8411, 12099, 2]
+// Dependencies: [12834, 13356, 13357, 4485, 7299, 8450, 12151, 2]
 // Exports: default
 
-// Module 13297 (getApplicationIdForActivity)
-import { SpotifyApplication } from "getIconURL";
-import { TWITCH_APPLICATION_ID_PREFIX as closure_3 } from "getIconURL";
-import { XBOX_APPLICATION_ID_PREFIX as closure_4 } from "getIconURL";
-import { XBOX_ACTIVITY_APPLICATION_ID as closure_5 } from "items3";
+// Module 13355 (getApplicationIdForActivity)
+import set from "set" /* 2 */;
+import items3 from "items3" /* 4485 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 7299 */;
+import _isStreamingDefault from "_isStreaming" /* 8450 */;
+import isOnXboxDefault from "isOnXbox" /* 12151 */;
+import getIconURL from "getIconURL" /* 12834 */;
+import getIconURL2 from "getIconURL" /* 13356 */;
+import getIconURL3 from "getIconURL" /* 13357 */;
 
-const result = require("getIconURL").fileFinishedImporting("modules/now_playing/getApplicationIdForActivity.tsx");
+const SpotifyApplication = getIconURL.SpotifyApplication;
+let closure_3 = getIconURL2.TWITCH_APPLICATION_ID_PREFIX;
+let closure_4 = getIconURL3.XBOX_APPLICATION_ID_PREFIX;
+let closure_5 = items3.XBOX_ACTIVITY_APPLICATION_ID;
+const result = set.fileFinishedImporting("modules/now_playing/getApplicationIdForActivity.tsx");
 
 export default function getApplicationIdForActivity(party) {
-  if (importDefault(7261)(party)) {
+  if (isListeningOnSpotifyDefault(party)) {
     if (null != party.party) {
       if (null != party.party.id) {
         let id = SpotifyApplication.id;
@@ -21,7 +29,7 @@ export default function getApplicationIdForActivity(party) {
       return id;
     }
   }
-  if (importDefault(8411)(party)) {
+  if (_isStreamingDefault(party)) {
     if (null != party.url) {
       id = closure_3 + party.url;
     }
@@ -32,7 +40,7 @@ export default function getApplicationIdForActivity(party) {
     }
   }
   id = null;
-  if (importDefault(12099)(party)) {
+  if (isOnXboxDefault(party)) {
     id = closure_4 + party.name;
   }
 };

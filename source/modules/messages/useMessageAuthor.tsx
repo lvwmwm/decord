@@ -1,16 +1,18 @@
-// Module ID: 4814
-// Function ID: 4815
+// Module ID: 4819
+// Function ID: 4820
 // Name: useNullableMessageAuthor
-// Dependencies: [1391, 1990, 1983, 1910, 4030, 1922, 38, 589, 4219, 4815, 2]
+// Dependencies: [1391, 1991, 1984, 1910, 4033, 1922, 38, 589, 4223, 4820, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 4814 (useNullableMessageAuthor)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 4819 (useNullableMessageAuthor)
+import _modDef38 from "module_38" /* 38 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
 function useNullableMessageAuthor(message) {
@@ -48,9 +50,9 @@ function useNullableMessageAuthor(message) {
     return member;
   });
   tmpResult = tmp(tmp2[7]);
-  const items2 = [mergeGuildAvatar];
+  const items2 = [closure_8];
   const items3 = [id];
-  let stateFromStores2 = tmpResult.useStateFromStores(items2, () => outer1_8.getUser(id), items3);
+  let stateFromStores2 = tmpResult.useStateFromStores(items2, () => closure_1_8.getUser(id), items3);
   let bot;
   if (message != null) {
     bot = message.author.bot;
@@ -64,27 +66,27 @@ function useNullableMessageAuthor(message) {
   }
   const name = stateFromStores(id[8]).useName(stateFromStores2);
   const obj4 = stateFromStores(id[8]);
-  const items4 = [createGuildRecordFromRust];
+  const items4 = [closure_6];
   const items5 = [guild_id];
   colorRoleId = undefined;
-  const stateFromStores3 = _require(id[7]).useStateFromStores(items4, () => outer1_6.getGuild(guild_id), items5);
+  const stateFromStores3 = _require(id[7]).useStateFromStores(items4, () => closure_1_6.getGuild(guild_id), items5);
   if (stateFromStores1 != null) {
     colorRoleId = stateFromStores1.colorRoleId;
   }
   const tmpResult1 = _require(id[7]);
-  const items6 = [createGuildRoleRecordFromRust];
+  const items6 = [closure_5];
   const items7 = [guild_id, colorRoleId];
   const stateFromStores4 = _require(id[7]).useStateFromStores(items6, () => {
     let role;
     if (null != guild_id) {
       if (null != colorRoleId) {
-        role = outer1_5.getRole(tmp, tmp3);
+        role = closure_1_5.getRole(tmp, tmp3);
       }
     }
     return role;
   }, items7);
   const tmpResult2 = _require(id[7]);
-  const items8 = [markAllUserIdListsStale];
+  const items8 = [closure_7];
   const stateFromStores5 = _require(id[7]).useStateFromStores(items8, () => {
     let nickname = null;
     if (null != id) {
@@ -94,7 +96,7 @@ function useNullableMessageAuthor(message) {
       }
       nickname = null;
       if (isPrivateResult) {
-        nickname = outer1_7.getNickname(tmp);
+        nickname = closure_1_7.getNickname(tmp);
       }
       obj = stateFromStores;
     }
@@ -126,38 +128,38 @@ function useNullableUserAuthor(author, channel) {
     guild_id = channel.guild_id;
   }
   let obj = _require(guild_id[7]);
-  const items = [trackCommunicationDisabled];
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
     if (null != guild_id) {
       member = null;
       if (null != id) {
-        member = outer1_4.getMember(tmp, tmp3);
+        member = closure_1_4.getMember(tmp, tmp3);
       }
     }
     return member;
   });
-  const items1 = [createGuildRecordFromRust];
+  const items1 = [closure_6];
   const items2 = [guild_id];
   let colorRoleId;
-  const stateFromStores1 = _require(guild_id[7]).useStateFromStores(items1, () => outer1_6.getGuild(guild_id), items2);
+  const stateFromStores1 = _require(guild_id[7]).useStateFromStores(items1, () => closure_1_6.getGuild(guild_id), items2);
   if (stateFromStores != null) {
     colorRoleId = stateFromStores.colorRoleId;
   }
   let tmp3Result = tmp3(tmp4[7]);
-  const items3 = [createGuildRoleRecordFromRust];
+  const items3 = [closure_5];
   const items4 = [guild_id, colorRoleId];
   const stateFromStores2 = tmp3Result.useStateFromStores(items3, () => {
     let role;
     if (null != guild_id) {
       if (null != colorRoleId) {
-        role = outer1_5.getRole(tmp, tmp3);
+        role = closure_1_5.getRole(tmp, tmp3);
       }
     }
     return role;
   }, items4);
   tmp3Result = tmp3(tmp4[7]);
-  const items5 = [markAllUserIdListsStale];
+  const items5 = [closure_7];
   const stateFromStores3 = tmp3Result.useStateFromStores(items5, () => {
     let nickname = null;
     if (null != id) {
@@ -167,7 +169,7 @@ function useNullableUserAuthor(author, channel) {
       }
       nickname = null;
       if (isPrivateResult) {
-        nickname = outer1_7.getNickname(tmp);
+        nickname = closure_1_7.getNickname(tmp);
       }
       obj = closure_0;
     }
@@ -228,18 +230,11 @@ function getUserAuthor(user, channel) {
   return computeMessageAuthor(obj);
 }
 function computeMessageAuthor(channel) {
-  let displayNameStyles;
-  let friendNickname;
-  let guild;
-  let member;
-  let memberColorRole;
-  let user;
-  let userName;
   ({ user, guild, memberColorRole, member, userName, friendNickname, displayNameStyles } = channel);
   let str = "???";
   if (null != user) {
     if (userName == null) {
-      let obj = importDefault(4219);
+      let obj = nameFromUserDefault;
       userName = obj.getName(user);
     }
     str = userName;
@@ -261,7 +256,7 @@ function computeMessageAuthor(channel) {
         obj = { nick: null, colorString: null, colorStrings: null, displayNameStyles: null };
         obj[0] = friendNickname;
         obj[3] = displayNameStyles;
-        let obj1 = obj;
+        obj1 = obj;
       } else if (null == member) {
         obj = { nick: null, colorString: null, colorStrings: null, displayNameStyles: null };
         obj[0] = str;
@@ -297,12 +292,12 @@ function computeMessageAuthor(channel) {
   }
   obj1 = { nick: str, colorString: null, colorStrings: null, displayNameStyles };
 }
-const result = require("createGuildRoleRecordFromRust").fileFinishedImporting("modules/messages/useMessageAuthor.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/useMessageAuthor.tsx");
 
 export default function useMessageNickAndColor(message) {
   let tmp = arg1;
   const tmp2 = useNullableMessageAuthor(message);
-  importDefault(38)(null != tmp2, "Result cannot be null because the message is not null");
+  _modDef38(null != tmp2, "Result cannot be null because the message is not null");
   if (arg1 == null) {
     tmp = tmp2;
   }
@@ -313,7 +308,7 @@ export const getMessageAuthor = function getMessageAuthor(message) {
   return getUserAuthor(message.author, channel.getChannel(message.channel_id));
 };
 export const useUserNickAndColor = function useUserNickAndColor(author, channel) {
-  importDefault(38)(true, "Result cannot be null because user and channel are not null");
+  _modDef38(true, "Result cannot be null because user and channel are not null");
   return useNullableUserAuthor(author, channel);
 };
 export { useNullableUserAuthor };

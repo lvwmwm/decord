@@ -1,22 +1,23 @@
-// Module ID: 16331
-// Function ID: 16332
+// Module ID: 16426
+// Function ID: 16427
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 4539, 676, 21, 589, 9717, 9067, 9723, 1236, 9708, 2]
+// Dependencies: [19, 4544, 676, 21, 589, 9756, 9104, 9762, 1236, 9747, 2]
 // Exports: default
 
-// Module 16331 (SecureFramesCallVerificationBottomSheet)
-import noop from "noop";
-import createRTCConnection from "createRTCConnection";
-import { AnalyticsSections } from "ME";
-import { jsx } from "jsxProd";
+// Module 16426 (SecureFramesCallVerificationBottomSheet)
+import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9762 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "createRTCConnection" /* 4544 */;
+import { AnalyticsSections } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("ME").fileFinishedImporting("modules/rtc/native/SecureFramesCallVerificationBottomSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/rtc/native/SecureFramesCallVerificationBottomSheet.tsx");
 
 export default function SecureFramesCallVerificationBottomSheet(channelId) {
   channelId = channelId.channelId;
   let obj = channelId(589);
-  const items = [createRTCConnection];
+  const items = [closure_4];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => {
     secureFramesState = secureFramesState.getSecureFramesState();
@@ -27,11 +28,11 @@ export default function SecureFramesCallVerificationBottomSheet(channelId) {
     return epochAuthenticator;
   });
   const callback = React.useCallback((message) => {
-    let obj = channelId(outer1_2[5]);
+    let obj = channelId(closure_1_2[5]);
     obj = { channelId };
     const result = obj.trackE2EECallVerificationShareClicked(obj);
     obj = { message };
-    channelId(outer1_2[6]).showShareActionSheet(obj, outer1_5.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
+    channelId(closure_1_2[6]).showShareActionSheet(obj, closure_1_5.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
   obj = { title: null, subtitle: null, footer: null, epochAuthenticator: null, onShareClick: null };
   const intl = channelId(1236).intl;
@@ -40,8 +41,8 @@ export default function SecureFramesCallVerificationBottomSheet(channelId) {
   obj[1] = intl2.string(channelId(1236).t["MPp7+C"]);
   const intl3 = channelId(1236).intl;
   obj = { helpArticle: null };
-  const tmp3 = importDefault(9723);
-  obj[0] = channelId(9708).getSecureFramesHelpdeskArticle();
+  const tmp3 = SecureFramesVerificationBottomSheetDefault;
+  obj[0] = channelId(9747).getSecureFramesHelpdeskArticle();
   obj[2] = intl3.format(channelId(1236).t.wKxADe, obj);
   obj[3] = stateFromStores;
   obj[4] = callback;

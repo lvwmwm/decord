@@ -4,11 +4,14 @@
 // Dependencies: [599, 638]
 
 // Module 722 (isKey)
+import _mod599 from "module_599" /* 599 */;
+import isSymbol from "isSymbol" /* 638 */;
+
 const re2 = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/;
 const re3 = /^\w*$/;
 
 export default function isKey(num) {
-  if (require(599)(num)) {
+  if (_mod599(num)) {
     return false;
   } else {
     let tmp3 = typeof num !== "number";
@@ -22,7 +25,7 @@ export default function isKey(num) {
       tmp3 = null != num;
     }
     if (tmp3) {
-      tmp3 = !tmp(638)(num);
+      tmp3 = !isSymbol(num);
     }
     let tmp5 = !tmp3;
     if (tmp3) {
@@ -42,5 +45,5 @@ export default function isKey(num) {
     }
     return tmp5;
   }
-  tmp = require;
+  const tmp = require;
 };

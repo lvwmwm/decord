@@ -1,28 +1,37 @@
-// Module ID: 11209
-// Function ID: 11210
+// Module ID: 11260
+// Function ID: 11261
 // Name: useKeyboardActionSheetHeight
-// Dependencies: [6370, 1629, 1494, 5444, 2]
+// Dependencies: [6401, 1629, 1494, 5449, 2]
 // Exports: default, getKeyboardActionSheetHeight
 
-// Module 11209 (useKeyboardActionSheetHeight)
-const result = require("useWindowDimensions").fileFinishedImporting("modules/action_sheet/native/useKeyboardActionSheetHeight.tsx");
+// Module 11260 (useKeyboardActionSheetHeight)
+import set from "set" /* 2 */;
+import useWindowDimensions from "useWindowDimensions" /* 1494 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1629 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5449 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5449 */;
+import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 6401 */;
+
+const result = set.fileFinishedImporting("modules/action_sheet/native/useKeyboardActionSheetHeight.tsx");
 
 export default function useKeyboardActionSheetHeight() {
-  const tmp = importDefault(1629)();
-  const minimum = importDefault(5444)();
-  let maximum = importDefault(1494)({ ignoreKeyboard: true }).height - require(6370) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - tmp.top;
+  const tmp = useSafeAreaInsetsDefault();
+  const minimum = useCustomKeyboardHeightDefault();
+  let maximum = useWindowDimensionsDefault({ ignoreKeyboard: true }).height - NAV_BAR_HEIGHT.NAV_BAR_HEIGHT_MULTILINE - tmp.top;
   if (minimum >= maximum) {
     maximum = minimum;
   }
   return { minimum, maximum };
 };
 export const getKeyboardActionSheetHeight = function getKeyboardActionSheetHeight() {
-  const safeAreaInsets = require(1629) /* useSafeAreaInsets */.getSafeAreaInsets();
-  const obj = require(1629) /* useSafeAreaInsets */;
-  const windowDimensions = require(1494) /* useWindowDimensions */.getWindowDimensions({ ignoreKeyboard: true });
-  const obj2 = require(1494) /* useWindowDimensions */;
-  const minimum = require(5444) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
-  let maximum = windowDimensions.height - require(6370) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top;
+  const safeAreaInsets = useSafeAreaInsets.getSafeAreaInsets();
+  const obj = useSafeAreaInsets;
+  const windowDimensions = useWindowDimensions.getWindowDimensions({ ignoreKeyboard: true });
+  const obj2 = useWindowDimensions;
+  const minimum = useCustomKeyboardHeight.getCustomKeyboardHeight();
+  let maximum = windowDimensions.height - NAV_BAR_HEIGHT.NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top;
   if (minimum >= maximum) {
     maximum = minimum;
   }

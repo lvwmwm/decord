@@ -1,24 +1,24 @@
-// Module ID: 11502
-// Function ID: 11503
+// Module ID: 11551
+// Function ID: 11552
 // Name: _computeRows
-// Dependencies: [7592, 5407, 1391, 4021, 4030, 676, 4371, 8920, 1370, 589, 709, 2]
+// Dependencies: [7630, 5412, 1391, 4024, 4033, 676, 4375, 8957, 1370, 589, 709, 2]
 
-// Module 11502 (_computeRows)
-import handleConnectionOpen from "handleConnectionOpen";
-import recomputeAffinities from "recomputeAffinities";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import ME from "ME";
-import { InviteTargetTypes } from "InviteSendStates";
-import { Store } from "initialize";
-import set from "ensureGuildLoaded";
+// Module 11551 (_computeRows)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isGuildMember from "isGuildMember" /* 8957 */;
+import closure_8 from "handleConnectionOpen" /* 7630 */;
+import closure_9 from "recomputeAffinities" /* 5412 */;
+import closure_10 from "ensureGuildLoaded" /* 1391 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_12 from "markAllUserIdListsStale" /* 4033 */;
+import ME from "ME" /* 676 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 4375 */;
+import set from "set" /* 2 */;
 
-let closure_14;
-let map1;
-const require = arg1;
+require = arg1;
 function _computeRows(query) {
-  const set = new Set();
+  set = new Set();
   if (type != null) {
     type = type.type;
   }
@@ -33,10 +33,10 @@ function _computeRows(query) {
   if (!tmp) {
     id = id.id;
   }
-  const mostRecentDMedUser = set1(8920).getMostRecentDMedUser(set, id);
+  const mostRecentDMedUser = set1(8957).getMostRecentDMedUser(set, id);
   let isBlockedOrIgnoredResult = null == mostRecentDMedUser;
   if (!isBlockedOrIgnoredResult) {
-    isBlockedOrIgnoredResult = markAllUserIdListsStale.isBlockedOrIgnored(mostRecentDMedUser.id);
+    isBlockedOrIgnoredResult = closure_12.isBlockedOrIgnored(mostRecentDMedUser.id);
   }
   if (!isBlockedOrIgnoredResult) {
     set.add(mostRecentDMedUser.id);
@@ -52,23 +52,24 @@ function _computeRows(query) {
     const mapped = channelHistory.map((arg0) => channel.getChannel(arg0));
     const found = mapped.filter(set1(1370).isNotNullish);
     const found1 = found.filter((type) => type.type === constants.GUILD_TEXT);
-    const found2 = found1.filter((arg0) => getUncachedChannelPermissions.can(constants2.SEND_MESSAGES, arg0));
+    const found2 = found1.filter((arg0) => closure_11.can(constants2.SEND_MESSAGES, arg0));
     const substr = found2.slice(0, 3);
     const item = substr.forEach((id) => set1.add(id.id));
   }
-  const obj2 = set1(8920);
-  return set1(8920).generateRowsForQuery({ query, omitUserIds: set, suggestedUserIds: set, maxRowsWithoutQuery: 100, omitGuildId: id, suggestedChannelIds: set1, inviteTargetType: closure_7 });
+  const obj2 = set1(8957);
+  return set1(8957).generateRowsForQuery({ query, omitUserIds: set, suggestedUserIds: set, maxRowsWithoutQuery: 100, omitGuildId: id, suggestedChannelIds: set1, inviteTargetType: closure_7 });
 }
 ({ ChannelTypes: map1, Permissions: closure_14 } = ME);
 let set = new Set();
 let closure_17 = [];
 let map = new Map();
 let closure_19 = { numFriends: 0, numDms: 0, numGroupDms: 0, numChannels: 0 };
+const Store = initializeDefault.Store;
 class InviteSuggestionsStore extends Store {
 }
 const prototype = InviteSuggestionsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded, getUncachedChannelPermissions, handleConnectionOpen, markAllUserIdListsStale, recomputeAffinities);
+  this.waitFor(closure_10, closure_11, closure_8, closure_12, closure_9);
 };
 prototype["getInviteSuggestionRows"] = function getInviteSuggestionRows() {
   return closure_17;
@@ -93,27 +94,24 @@ prototype["getSelectedInviteMetadata"] = function getSelectedInviteMetadata(isSu
   }
 };
 InviteSuggestionsStore.displayName = "InviteSuggestionsStore";
-const inviteSuggestionsStore = new InviteSuggestionsStore(require("dispatcher"), {
+const inviteSuggestionsStore = new InviteSuggestionsStore(dispatcherDefault, {
   LOAD_INVITE_SUGGESTIONS: function refreshInviteSuggestions(guild) {
-    let channel;
-    let inviteTargetType;
-    let omitUserIds;
     ({ omitUserIds, channel, inviteTargetType } = guild);
     guild = null;
     if (null != channel) {
       guild = guild.guild;
     }
     const applicationId = guild.applicationId;
-    const blockedOrIgnoredIDs = markAllUserIdListsStale.getBlockedOrIgnoredIDs();
-    let obj = require(8920) /* isGuildMember */;
+    const blockedOrIgnoredIDs = closure_12.getBlockedOrIgnoredIDs();
+    let obj = isGuildMember;
     obj = { channel, applicationId, inviteTargetType };
     const usersAlreadyJoined = obj.getUsersAlreadyJoined(obj);
     const items = [...usersAlreadyJoined];
-    const set = new Set(items);
-    let c3 = false;
+    set = new Set(items);
+    c3 = false;
     const tmp5 = _computeRows("");
     const rows = tmp5.rows;
-    const map = new Map();
+    map = new Map();
     const item = rows.forEach((arg0, index) => {
       const result = map.set(arg0, { index });
     });
@@ -121,7 +119,7 @@ const inviteSuggestionsStore = new InviteSuggestionsStore(require("dispatcher"),
   },
   INVITE_SUGGESTIONS_SEARCH: function handleSearch(query) {
     query = query.query;
-    let closure_3 = "" !== query;
+    closure_3 = "" !== query;
     const rows = _computeRows(query).rows;
     const sorted = rows.sort((score, score2) => {
       let num = 0;
@@ -133,7 +131,7 @@ const inviteSuggestionsStore = new InviteSuggestionsStore(require("dispatcher"),
       }
       return num;
     });
-    const map = new Map();
+    map = new Map();
     const item = rows.forEach((arg0, index) => {
       const result = map.set(arg0, { index });
     });

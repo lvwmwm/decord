@@ -1,17 +1,15 @@
-// Module ID: 12683
-// Function ID: 12684
+// Module ID: 12737
+// Function ID: 12738
 // Name: useConversationBackoffRef
-// Dependencies: [19, 5016, 584, 2]
+// Dependencies: [19, 5021, 584, 2]
 // Exports: useConversationBackoffRef
 
-// Module 12683 (useConversationBackoffRef)
-import noop from "noop";
-import CONVERSATION_COLORS from "CONVERSATION_COLORS";
+// Module 12737 (useConversationBackoffRef)
+import closure_2 from "noop" /* 19 */;
+import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 5021 */;
 
-let c3;
-let c4;
 ({ FETCH_BACKOFF_MAX_MS: c3, FETCH_BACKOFF_MIN_MS: c4 } = CONVERSATION_COLORS);
-const result = require("fails").fileFinishedImporting("modules/conversations/useConversationBackoffRef.tsx");
+const result = require("set").fileFinishedImporting("modules/conversations/useConversationBackoffRef.tsx");
 
 export const useConversationBackoffRef = function useConversationBackoffRef(items) {
   if (items === undefined) {

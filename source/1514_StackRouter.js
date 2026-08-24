@@ -46,7 +46,7 @@ let obj = {
 arg5.StackActions = obj;
 arg5.StackRouter = function StackRouter(arg0) {
   const _require = arg0;
-  let obj = {};
+  obj = {};
   let merged = Object.assign(_require(obj[0]).BaseRouter);
   obj.type = "stack";
   obj.getInitialState = function getInitialState(routeNames) {
@@ -55,7 +55,7 @@ arg5.StackRouter = function StackRouter(arg0) {
       if (routeNames.includes(tmp2.initialRouteName)) {
         let initialRouteName = tmp2.initialRouteName;
       }
-      let obj = { stale: false, type: "stack", key: null, index: 0, routeNames: null, preloadedRoutes: null, routes: null };
+      obj = { stale: false, type: "stack", key: null, index: 0, routeNames: null, preloadedRoutes: null, routes: null };
       const _HermesInternal = HermesInternal;
       obj[2] = "stack-" + lib(obj[1]).nanoid();
       obj[4] = routeNames;
@@ -81,7 +81,7 @@ arg5.StackRouter = function StackRouter(arg0) {
       const routes = stale.routes;
       const found = routes.filter((name) => routeNames.includes(name.name));
       const mapped = found.map((key) => {
-        let obj = {};
+        obj = {};
         const merged = Object.assign(key);
         key = key.key;
         if (!key) {
@@ -106,7 +106,7 @@ arg5.StackRouter = function StackRouter(arg0) {
       if (preloadedRoutes != null) {
         const found1 = preloadedRoutes.filter((name) => routeNames.includes(name.name));
         mapped1 = found1.map((key) => {
-          let obj = {};
+          obj = {};
           const merged = Object.assign(key);
           key = key.key;
           if (!key) {
@@ -131,7 +131,7 @@ arg5.StackRouter = function StackRouter(arg0) {
         mapped1 = [];
       }
       if (0 !== mapped.length) {
-        let obj = { stale: false, type: "stack", key: null, index: null, routeNames: null, routes: null, preloadedRoutes: null };
+        obj = { stale: false, type: "stack", key: null, index: null, routeNames: null, routes: null, preloadedRoutes: null };
         const _HermesInternal2 = HermesInternal;
         obj[2] = "stack-" + lib(obj[1]).nanoid();
         obj[3] = mapped.length - 1;
@@ -167,7 +167,7 @@ arg5.StackRouter = function StackRouter(arg0) {
       return hasItem;
     });
     if (0 !== found.length) {
-      let obj = {};
+      obj = {};
       const merged = Object.assign(routes);
       obj.routeNames = routeNames;
       obj.routes = found;
@@ -190,14 +190,14 @@ arg5.StackRouter = function StackRouter(arg0) {
     }
   };
   obj.getStateForRouteFocus = function getStateForRouteFocus(routes) {
-    let closure_0 = arg1;
+    closure_0 = arg1;
     routes = routes.routes;
     const findIndexResult = routes.findIndex((key) => key.key === closure_0);
     let tmp2 = routes;
     if (-1 !== findIndexResult) {
       tmp2 = routes;
       if (findIndexResult !== routes.index) {
-        const obj = {};
+        obj = {};
         const merged = Object.assign(routes);
         obj.index = findIndexResult;
         routes = routes.routes;
@@ -227,7 +227,7 @@ arg5.StackRouter = function StackRouter(arg0) {
             found = null;
             found = undefined;
             if (found != null) {
-              let obj = { params: null };
+              obj = { params: null };
               obj[0] = type.payload.params;
               found = found(obj);
             }
@@ -237,7 +237,7 @@ arg5.StackRouter = function StackRouter(arg0) {
               if (tmp) {
                 let tmp3Result;
                 if (found != null) {
-                  const obj = { params: null };
+                  obj = { params: null };
                   obj[0] = name.params;
                   tmp3Result = tmp3(obj);
                 }
@@ -246,7 +246,7 @@ arg5.StackRouter = function StackRouter(arg0) {
               }
               return tmp;
             });
-            let closure_5 = found;
+            closure_5 = found;
             found = lib;
             found = obj;
             if (found) {
@@ -255,7 +255,7 @@ arg5.StackRouter = function StackRouter(arg0) {
               obj[1] = routeParamList;
               found = found(found[3]).createParamsFromAction(obj);
               if (found.params !== found) {
-                const obj1 = {};
+                obj1 = {};
                 found = obj1;
                 found = Object.assign(found);
                 obj1.params = found;
@@ -297,21 +297,21 @@ arg5.StackRouter = function StackRouter(arg0) {
           if ("NAVIGATE_DEPRECATED" === type) {
             const routeNames2 = key.routeNames;
             if (routeNames2.includes(type.payload.name)) {
-              let closure_10 = tmp62;
+              closure_10 = tmp62;
               let tmp62Result;
               if (routeParamList.routeGetIdList[type.payload.name] != null) {
                 const obj4 = { params: null };
                 obj4[0] = type.payload.params;
                 tmp62Result = tmp62(obj4);
               }
-              let closure_11 = tmp62Result;
+              closure_11 = tmp62Result;
               const preloadedRoutes2 = key.preloadedRoutes;
               if (preloadedRoutes2.find((name) => {
                 let tmp = name.name === type.payload.name;
                 if (tmp) {
                   let tmp3Result;
                   if (closure_10 != null) {
-                    const obj = { params: null };
+                    obj = { params: null };
                     obj[0] = name.params;
                     tmp3Result = tmp3(obj);
                   }
@@ -329,7 +329,7 @@ arg5.StackRouter = function StackRouter(arg0) {
                     if (tmp) {
                       let tmp3Result;
                       if (closure_10 != null) {
-                        const obj = { params: null };
+                        obj = { params: null };
                         obj[0] = name.params;
                         tmp3Result = tmp3(obj);
                       }
@@ -440,14 +440,14 @@ arg5.StackRouter = function StackRouter(arg0) {
               } else {
                 const routeNames4 = key.routeNames;
                 if (routeNames4.includes(type.payload.name)) {
-                  let closure_12 = tmp18;
+                  closure_12 = tmp18;
                   let tmp18Result;
                   if (routeParamList.routeGetIdList[type.payload.name] != null) {
                     const obj14 = { params: null };
                     obj14[0] = type.payload.params;
                     tmp18Result = tmp18(obj14);
                   }
-                  let closure_13 = tmp18Result;
+                  closure_13 = tmp18Result;
                   if (undefined !== tmp18Result) {
                     routes2 = key.routes;
                     let num3 = routes2.findIndex((name) => {
@@ -455,7 +455,7 @@ arg5.StackRouter = function StackRouter(arg0) {
                       if (tmp) {
                         let tmp3Result;
                         if (closure_12 != null) {
-                          const obj = { params: null };
+                          obj = { params: null };
                           obj[0] = name.params;
                           tmp3Result = tmp3(obj);
                         }
@@ -491,7 +491,7 @@ arg5.StackRouter = function StackRouter(arg0) {
                       if (tmp) {
                         let tmp3Result;
                         if (closure_12 != null) {
-                          const obj = { params: null };
+                          obj = { params: null };
                           obj[0] = name.params;
                           tmp3Result = tmp3(obj);
                         }
@@ -587,14 +587,14 @@ arg5.StackRouter = function StackRouter(arg0) {
           } else if ("PRELOAD" === type) {
             const routeNames = key.routeNames;
             if (routeNames.includes(type.payload.name)) {
-              let closure_16 = tmp4;
+              closure_16 = tmp4;
               let tmp4Result;
               if (routeParamList.routeGetIdList[type.payload.name] != null) {
                 obj = { params: null };
                 obj[0] = type.payload.params;
                 tmp4Result = tmp4(obj);
               }
-              let closure_17 = tmp4Result;
+              closure_17 = tmp4Result;
               let tmp7;
               if (undefined !== tmp4Result) {
                 let routes6 = key.routes;
@@ -603,7 +603,7 @@ arg5.StackRouter = function StackRouter(arg0) {
                   if (tmp) {
                     let tmp3Result;
                     if (closure_16 != null) {
-                      const obj = { params: null };
+                      obj = { params: null };
                       obj[0] = name.params;
                       tmp3Result = tmp3(obj);
                     }
@@ -625,7 +625,7 @@ arg5.StackRouter = function StackRouter(arg0) {
                   }
                   let tmp2 = key;
                   if (key.key === key) {
-                    let obj = {};
+                    obj = {};
                     const merged = Object.assign(key);
                     obj = { action: null, routeParamList: null };
                     obj[0] = type;
@@ -644,7 +644,7 @@ arg5.StackRouter = function StackRouter(arg0) {
                   if (!tmp) {
                     let tmp3Result;
                     if (closure_16 != null) {
-                      const obj = { params: null };
+                      obj = { params: null };
                       obj[0] = name.params;
                       tmp3Result = tmp3(obj);
                     }
@@ -673,14 +673,14 @@ arg5.StackRouter = function StackRouter(arg0) {
       }
       const routeNames3 = key.routeNames;
       if (routeNames3.includes(type.payload.name)) {
-        let closure_8 = tmp92;
+        closure_8 = tmp92;
         let tmp92Result;
         if (routeParamList.routeGetIdList[type.payload.name] != null) {
           const obj26 = { params: null };
           obj26[0] = type.payload.params;
           tmp92Result = tmp92(obj26);
         }
-        let closure_9 = tmp92Result;
+        closure_9 = tmp92Result;
         if (undefined !== tmp92Result) {
           routes7 = key.routes;
           const findLastResult = routes7.findLast((name) => {
@@ -688,7 +688,7 @@ arg5.StackRouter = function StackRouter(arg0) {
             if (tmp) {
               let tmp3Result;
               if (closure_8 != null) {
-                const obj = { params: null };
+                obj = { params: null };
                 obj[0] = name.params;
                 tmp3Result = tmp3(obj);
               }
@@ -718,7 +718,7 @@ arg5.StackRouter = function StackRouter(arg0) {
             if (tmp) {
               let tmp3Result;
               if (closure_8 != null) {
-                const obj = { params: null };
+                obj = { params: null };
                 obj[0] = name.params;
                 tmp3Result = tmp3(obj);
               }

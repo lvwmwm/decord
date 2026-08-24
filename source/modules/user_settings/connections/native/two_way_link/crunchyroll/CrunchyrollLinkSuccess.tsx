@@ -1,51 +1,54 @@
-// Module ID: 9805
-// Function ID: 9806
+// Module ID: 9844
+// Function ID: 9845
 // Name: CrunchyrollLinkDiscordSuccess
-// Dependencies: [19, 17, 21, 4661, 9756, 9806, 4734, 1236, 6803, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 9795, 9845, 4739, 1236, 6840, 4750, 2]
 // Exports: default
 
-// Module 9805 (CrunchyrollLinkDiscordSuccess)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9844 (CrunchyrollLinkDiscordSuccess)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import styles from "styles" /* 9795 */;
+import registerAssetDefault from "registerAsset" /* 9845 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ image: { width: 232, height: 108, marginBottom: 24 } });
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkSuccess.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkSuccess.tsx");
 
 export default function CrunchyrollLinkDiscordSuccess(onClose) {
-  let obj = require(9756) /* styles */;
+  let obj = styles;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container, children: null };
   obj = { style: twoWayLinkStyles.content, children: null };
   const tmp = callback3();
-  const items = [callback(closure_3, { source: importDefault(9806), style: callback3().image }), , ];
+  const items = [callback(closure_3, { source: registerAssetDefault, style: callback3().image }), , ];
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.Fnvxvk);
-  items[1] = callback(require(4734) /* Text */.Text, obj2);
+  const intl = getSystemLocale.intl;
+  obj2[3] = intl.string(getSystemLocale.t.Fnvxvk);
+  items[1] = callback(Text.Text, obj2);
   const obj3 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj3[3] = intl2.string(require(1236) /* getSystemLocale */.t.YwXceg);
-  items[2] = callback(require(4734) /* Text */.Text, obj3);
+  const intl2 = getSystemLocale.intl;
+  obj3[3] = intl2.string(getSystemLocale.t.YwXceg);
+  items[2] = callback(Text.Text, obj3);
   obj[1] = items;
   const items1 = [callback2(closure_4, obj), ];
   const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
   const obj5 = { style: twoWayLinkStyles.footerButton, children: null };
   const obj6 = { size: "md", text: null, onPress: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj6[1] = intl3.string(require(1236) /* getSystemLocale */.t.i4jeWR);
+  const intl3 = getSystemLocale.intl;
+  obj6[1] = intl3.string(getSystemLocale.t.i4jeWR);
   obj6[2] = onClose.onClose;
-  obj5[1] = callback(require(4745) /* Button */.Button, obj6);
+  obj5[1] = callback(Button.Button, obj6);
   obj4[2] = callback(closure_4, obj5);
-  items1[1] = callback(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  items1[1] = callback(SafeAreaPaddingView.SafeAreaPaddingView, obj4);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

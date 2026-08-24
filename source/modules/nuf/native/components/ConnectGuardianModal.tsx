@@ -1,48 +1,47 @@
-// Module ID: 16666
-// Function ID: 16667
+// Module ID: 16762
+// Function ID: 16763
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 676, 5297, 21, 4661, 712, 1629, 16667, 698, 5446, 4734, 1236, 2335, 14238, 4745, 2]
+// Dependencies: [19, 17, 676, 5302, 21, 4668, 712, 1629, 16763, 698, 5451, 4739, 1236, 2336, 14306, 4750, 2]
 // Exports: default
 
-// Module 16666 (ConnectGuardianModal)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { AnalyticEvents } from "ME";
-import { FamilyCenterAction } from "items";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16762 (ConnectGuardianModal)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { FamilyCenterAction } from "items" /* 5302 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: null, centered: null, header: null, title: null, description: null, cardSection: null, scanPrompt: null, grow: null, footer: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: require("Themes").space.PX_16 };
-let obj1 = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: require("Themes").space.PX_16 };
-createCacheKey[2] = { marginBottom: require("Themes").space.PX_40 };
-let obj2 = { marginBottom: require("Themes").space.PX_40 };
-createCacheKey[3] = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_8, textAlign: "center" };
-let obj3 = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_8, textAlign: "center" };
-createCacheKey[4] = { paddingHorizontal: require("Themes").space.PX_16, textAlign: "center" };
+createCacheKey[1] = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: ThemesDefault.space.PX_16 };
+let obj1 = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: ThemesDefault.space.PX_16 };
+createCacheKey[2] = { marginBottom: ThemesDefault.space.PX_40 };
+let obj2 = { marginBottom: ThemesDefault.space.PX_40 };
+createCacheKey[3] = { paddingHorizontal: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_8, textAlign: "center" };
+let obj3 = { paddingHorizontal: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_8, textAlign: "center" };
+createCacheKey[4] = { paddingHorizontal: ThemesDefault.space.PX_16, textAlign: "center" };
 createCacheKey[5] = { alignItems: "center" };
-let obj4 = { paddingHorizontal: require("Themes").space.PX_16, textAlign: "center" };
-createCacheKey[6] = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_24, textAlign: "center" };
+let obj4 = { paddingHorizontal: ThemesDefault.space.PX_16, textAlign: "center" };
+createCacheKey[6] = { paddingHorizontal: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_24, textAlign: "center" };
 createCacheKey[7] = { flexGrow: 1 };
-let obj5 = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_24, textAlign: "center" };
-createCacheKey[8] = { paddingHorizontal: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj6 = { paddingHorizontal: require("Themes").space.PX_16 };
-const result = require("ME").fileFinishedImporting("modules/nuf/native/components/ConnectGuardianModal.tsx");
+let obj5 = { paddingHorizontal: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_24, textAlign: "center" };
+createCacheKey[8] = { paddingHorizontal: ThemesDefault.space.PX_16 };
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+let obj6 = { paddingHorizontal: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/nuf/native/components/ConnectGuardianModal.tsx");
 
 export default function ConnectGuardianModal(route) {
   let onComplete;
   let connectGuardianGate;
-  let dependencyMap;
+  dependencyMap = undefined;
   onComplete = route.route.params.onComplete;
-  const tmp = createCacheKey();
-  let obj = onComplete(16667);
+  const tmp = callback3();
+  let obj = onComplete(16763);
   connectGuardianGate = obj.useConnectGuardianGate();
   dependencyMap = React.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -55,8 +54,8 @@ export default function ConnectGuardianModal(route) {
       ref.current = true;
       let obj = connectGuardianGate(ref[9]);
       obj = { action: null, source: "NUF Connect Guardian" };
-      obj[0] = outer1_6.NufConsentGateLinkCodeError;
-      obj.track(outer1_5.FAMILY_CENTER_ACTION, obj);
+      obj[0] = closure_1_6.NufConsentGateLinkCodeError;
+      obj.track(closure_1_5.FAMILY_CENTER_ACTION, obj);
       if (onComplete != null) {
         onComplete(true);
       }
@@ -67,23 +66,23 @@ export default function ConnectGuardianModal(route) {
     const items1 = [, ];
     ({ container: arr2[0], centered: arr2[1] } = tmp);
     obj[0] = items1;
-    obj[1] = callback(tmp4(5446).ActivityIndicator, {});
+    obj[1] = callback(tmp4(5451).ActivityIndicator, {});
     let tmp9 = callback(View, obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.header;
     const obj2 = { style: null, variant: "heading-xl/bold", color: "text-default", children: null };
     obj2[0] = tmp.title;
     const intl = tmp4(1236).intl;
-    obj2[3] = intl.string(tmp2(2335).ITlV6p);
-    const items2 = [callback(tmp4(4734).Text, obj2), ];
+    obj2[3] = intl.string(tmp2(2336).ITlV6p);
+    const items2 = [callback(tmp4(4739).Text, obj2), ];
     const obj3 = { style: null, variant: "text-sm/medium", color: "text-muted", children: null };
     obj3[0] = tmp.description;
     const intl2 = tmp4(1236).intl;
-    obj3[3] = intl2.format(tmp2(2335).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
-    items2[1] = callback(tmp4(4734).Text, obj3);
+    obj3[3] = intl2.format(tmp2(2336).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
+    items2[1] = callback(tmp4(4739).Text, obj3);
     obj1[1] = items2;
     const items3 = [callback2(View, obj1), , , ];
     const obj4 = { style: null, children: null };
@@ -91,10 +90,10 @@ export default function ConnectGuardianModal(route) {
     const obj5 = { style: null, variant: "text-md/semibold", color: "text-default", children: null };
     obj5[0] = tmp.scanPrompt;
     const intl3 = tmp4(1236).intl;
-    obj5[3] = intl3.string(tmp2(2335).Mi60fm);
-    const items4 = [callback(tmp4(4734).Text, obj5), ];
+    obj5[3] = intl3.string(tmp2(2336).Mi60fm);
+    const items4 = [callback(tmp4(4739).Text, obj5), ];
     ({ linkCode: obj9[1], expiresAt: obj9[2], refresh: obj9[3] } = connectGuardianGate);
-    items4[1] = callback(tmp4(14238).ConnectGuardianCard, { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null });
+    items4[1] = callback(tmp4(14306).ConnectGuardianCard, { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null });
     obj4[1] = items4;
     items3[1] = callback2(View, obj4);
     const obj7 = { style: null };
@@ -116,7 +115,7 @@ export default function ConnectGuardianModal(route) {
       }
       return tmpResult;
     };
-    obj8[1] = callback(tmp4(4745).Button, obj10);
+    obj8[1] = callback(tmp4(4750).Button, obj10);
     items3[3] = callback(View, obj8);
     obj[1] = items3;
     tmp9 = callback2(View, obj);

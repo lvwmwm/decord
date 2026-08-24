@@ -1,13 +1,14 @@
-// Module ID: 9205
-// Function ID: 9206
+// Module ID: 9242
+// Function ID: 9243
 // Name: firstAvatarDecoration
 // Dependencies: [19, 1949, 1236, 2]
 // Exports: getBundleItemNames, useShopProductItems
 
-// Module 9205 (firstAvatarDecoration)
-import noop from "noop";
+// Module 9242 (firstAvatarDecoration)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 class ItemsSortingHat {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -61,29 +62,29 @@ prototype["sortByTypes"] = function sortByTypes(items) {
     return get;
   }, new Map());
 };
-let result = require("getSystemLocale").fileFinishedImporting("modules/collectibles/hooks/useShopProductItems.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/hooks/useShopProductItems.tsx");
 
 export { ItemsSortingHat };
 export const useShopProductItems = function useShopProductItems(product) {
-  let closure_0 = product;
+  closure_0 = product;
   const items = [product];
   return React.useMemo(() => {
-    if (typeof outer1_3 !== "function") {
+    if (typeof closure_1_3 !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    let obj = Object.create(outer1_3.prototype);
+    let obj = Object.create(closure_1_3.prototype);
     obj.itemsByTypes = obj.sortByTypes(product.items);
     obj = { firstProfileEffect: obj.firstProfileEffect, firstAvatarDecoration: obj.firstAvatarDecoration, firstNameplate: obj.firstNameplate, firstProfileFrame: obj.firstProfileFrame };
     return obj;
   }, items);
 };
 export const getBundleItemNames = function getBundleItemNames(bundledProducts) {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  let stringResult = intl.string(require(1236) /* getSystemLocale */.t["7v0T9P"]);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  let stringResult1 = intl2.string(require(1236) /* getSystemLocale */.t.wR5wOo);
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  let stringResult2 = intl3.string(require(1236) /* getSystemLocale */.t.x5CoXR);
+  const intl = getSystemLocale.intl;
+  let stringResult = intl.string(getSystemLocale.t["7v0T9P"]);
+  const intl2 = getSystemLocale.intl;
+  let stringResult1 = intl2.string(getSystemLocale.t.wR5wOo);
+  const intl3 = getSystemLocale.intl;
+  let stringResult2 = intl3.string(getSystemLocale.t.x5CoXR);
   let itemThreeName = stringResult2;
   let itemTwoName = stringResult1;
   let itemOneName = stringResult;

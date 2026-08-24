@@ -1,34 +1,35 @@
-// Module ID: 13436
-// Function ID: 13437
+// Module ID: 13494
+// Function ID: 13495
 // Name: GuildProgressBar
-// Dependencies: [19, 17, 21, 4661, 11643, 712, 4115, 4664, 4667, 2]
+// Dependencies: [19, 17, 21, 4668, 11692, 712, 4119, 4671, 4674, 2]
 // Exports: default
 
-// Module 13436 (GuildProgressBar)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13494 (GuildProgressBar)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 createCacheKey = { wrapper: null, progress: null };
-createCacheKey = { position: "relative", backgroundColor: require("useIOSCompletionStates").PROGRESS_BACKGROUND_COLOR, borderRadius: require("Themes").radii.xs, height: 8 };
+createCacheKey = { position: "relative", backgroundColor: require("useIOSCompletionStates").PROGRESS_BACKGROUND_COLOR, borderRadius: ThemesDefault.radii.xs, height: 8 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { position: "absolute", height: 8, backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.xs };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+createCacheKey[1] = { position: "absolute", height: 8, backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND, borderRadius: ThemesDefault.radii.xs };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
 let closure_7 = { code: "function GuildProgressBarTsx1(){const{percentWidth}=this.__closure;return{width:percentWidth.get()+\"%\"};}" };
-const obj1 = { position: "absolute", height: 8, backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.xs };
-let result = require("jsxProd").fileFinishedImporting("modules/guild_progress/native/components/GuildProgressBar.tsx");
+const obj1 = { position: "absolute", height: 8, backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND, borderRadius: ThemesDefault.radii.xs };
+let result = require("set").fileFinishedImporting("modules/guild_progress/native/components/GuildProgressBar.tsx");
 
 export default function GuildProgressBar(percent) {
   percent = percent.percent;
   let sharedValue;
-  const tmp = createCacheKey();
-  let obj = percent(4115);
+  const tmp = callback();
+  let obj = percent(4119);
   sharedValue = obj.useSharedValue(0);
   const items = [percent, sharedValue];
   const effect = React.useEffect(() => {
-    const result = sharedValue.set(percent(outer1_2[7]).withTiming(percent, percent(outer1_2[8]).timingSlow));
+    const result = sharedValue.set(percent(closure_1_2[7]).withTiming(percent, percent(closure_1_2[8]).timingSlow));
   }, items);
   const fn = function h() {
     return { width: "" + sharedValue.get() + "%" };
@@ -38,8 +39,8 @@ export default function GuildProgressBar(percent) {
   fn.__initData = closure_7;
   obj = { style: items1, children: null };
   items1 = [tmp.wrapper, percent.style];
-  const animatedStyle = percent(4115).useAnimatedStyle(fn);
+  const animatedStyle = percent(4119).useAnimatedStyle(fn);
   const items2 = [tmp.progress, animatedStyle];
-  obj[1] = jsx(sharedValue(4115).View, { style: items2 });
+  obj[1] = jsx(sharedValue(4119).View, { style: items2 });
   return <View style={items1}>{null}</View>;
 };

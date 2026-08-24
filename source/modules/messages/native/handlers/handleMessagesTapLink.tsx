@@ -1,28 +1,32 @@
-// Module ID: 10802
-// Function ID: 10803
+// Module ID: 10841
+// Function ID: 10842
 // Name: handleMessagesTapURLLink
-// Dependencies: [8448, 4478, 8163, 10551, 1930, 1391, 4359, 4994, 1922, 676, 1499, 1398, 5259, 1235, 10800, 4355, 4369, 10801, 9101, 9096, 8775, 10736, 8929, 4342, 9510, 2007, 4975, 9860, 10803, 9926, 10804, 7427, 7159, 8445, 1627, 10805, 4814, 1222, 8211, 10808, 10831, 2]
+// Dependencies: [8487, 4482, 8202, 10590, 1930, 1391, 4363, 4999, 1922, 676, 1499, 1398, 5264, 1235, 10839, 4359, 4373, 10840, 9138, 9133, 8812, 10775, 8966, 4346, 9547, 2008, 4980, 9899, 10842, 9965, 10843, 7465, 7197, 8484, 1627, 10844, 4819, 1222, 8251, 10847, 10870, 2]
 // Exports: handleMessagesTapLink
 
-// Module 10802 (handleMessagesTapURLLink)
-import { getSection } from "getIndexKey";
-import addApplication from "addApplication";
-import handleMessageSendFailedAutomod from "handleMessageSendFailedAutomod";
-import handleQuickSwitcherUpdate from "handleQuickSwitcherUpdate";
-import createdAt from "createdAt";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import updateInvite from "updateInvite";
-import reinjectEphemerals from "reinjectEphemerals";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-import { StaticChannelRoute } from "set";
-import { NotificationTypes } from "str2";
-import { OpenThreadAnalyticsLocations as closure_18 } from "AbortCodes";
+// Module 10841 (handleMessagesTapURLLink)
+import set from "set" /* 2 */;
+import AbortCodes from "AbortCodes" /* 1235 */;
+import set2 from "set" /* 1398 */;
+import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
+import parseQueryDefault from "parseQuery" /* 4359 */;
+import str2 from "str2" /* 5264 */;
+import getIndexKey from "getIndexKey" /* 8487 */;
+import isLinkTrusted from "isLinkTrusted" /* 8812 */;
+import _mod9133 from "module_9133" /* 9133 */;
+import GameProfileEmbedAction from "GameProfileEmbedAction" /* 9138 */;
+import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 10775 */;
+import isLinkTrusted2 from "isLinkTrusted" /* 10839 */;
+import closure_4 from "addApplication" /* 4482 */;
+import closure_5 from "handleMessageSendFailedAutomod" /* 8202 */;
+import closure_6 from "handleQuickSwitcherUpdate" /* 10590 */;
+import closure_7 from "createdAt" /* 1930 */;
+import closure_8 from "ensureGuildLoaded" /* 1391 */;
+import closure_9 from "updateInvite" /* 4363 */;
+import closure_10 from "reinjectEphemerals" /* 4999 */;
+import closure_11 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let closure_12;
-let closure_14;
-let map1;
 function handleMessagesTapURLLink(data, channelId) {
   let flag = null != data.url;
   if (flag) {
@@ -32,10 +36,10 @@ function handleMessagesTapURLLink(data, channelId) {
     const node = data.node;
     let flag2 = false;
     if (null != node) {
-      let obj = require(10800) /* isLinkTrusted */;
+      let obj = isLinkTrusted2;
       flag2 = false;
       if (obj.isLinkTrusted(node)) {
-        const payload = importDefault(4355)(tmp).payload;
+        const payload = parseQueryDefault(tmp).payload;
         flag2 = false;
         if (payload.type === constants.INVITE) {
           flag2 = false;
@@ -43,11 +47,11 @@ function handleMessagesTapURLLink(data, channelId) {
             invite = invite.getInvite(payload.inviteCode);
             let num = null == invite;
             if (!num) {
-              num = !tmp2(4369).isGuildScheduledEventInviteEmbed(invite);
-              const tmp2Result = tmp2(4369);
+              num = !tmp2(4373).isGuildScheduledEventInviteEmbed(invite);
+              const tmp2Result = tmp2(4373);
             }
             if (!num) {
-              tmp4(10801)(invite);
+              tmp4(10840)(invite);
               num = 0;
             }
             flag2 = !num;
@@ -58,7 +62,7 @@ function handleMessagesTapURLLink(data, channelId) {
       tmp2 = require;
     }
     if (!flag2) {
-      const payload2 = importDefault(4355)(data.url).payload;
+      const payload2 = parseQueryDefault(data.url).payload;
       let flag3 = false;
       if (payload2.type === constants.GAME_PROFILE) {
         const gameId = payload2.gameId;
@@ -75,46 +79,47 @@ function handleMessagesTapURLLink(data, channelId) {
         }
         obj = { gameId: null, source: null, sourceUserId: null, gameProfileModalChecks: null };
         obj[0] = gameId;
-        obj[1] = require(9101) /* GameProfileEmbedAction */.GameProfileSources.Deeplink;
+        obj[1] = GameProfileEmbedAction.GameProfileSources.Deeplink;
         obj[2] = tmp13;
         obj = { shouldOpenGameProfile: true, gameId: null };
         obj[1] = gameId;
         obj[3] = obj;
-        require(9096).default.openGameProfileModal(obj);
+        _mod9133.default.openGameProfileModal(obj);
         flag3 = true;
-        const _default = require(9096).default;
+        const _default = _mod9133.default;
       }
       flag2 = flag3;
     }
     flag = true;
     if (!flag2) {
-      const obj1 = { href: null, trusted: null, messageId: null, channelId: null };
+      obj1 = { href: null, trusted: null, messageId: null, channelId: null };
       obj1[0] = data.url;
       let isLinkTrustedResult = null != data.node;
       if (isLinkTrustedResult) {
-        isLinkTrustedResult = tmp19(10800).isLinkTrusted(data.node);
-        const tmp19Result = tmp19(10800);
+        isLinkTrustedResult = tmp19(10839).isLinkTrusted(data.node);
+        const tmp19Result = tmp19(10839);
       }
       obj1[1] = isLinkTrustedResult;
       obj1[2] = data.messageId;
       obj1[3] = channelId;
-      require(8775) /* isLinkTrusted */.handleClick(obj1);
+      isLinkTrusted.handleClick(obj1);
       flag = true;
-      const obj5 = require(8775) /* isLinkTrusted */;
+      const obj5 = isLinkTrusted;
       tmp19 = require;
     }
   }
   return flag;
 }
+const getSection = getIndexKey.getSection;
 ({ AnalyticsLocations: closure_12, LinkingTypes: map1, Routes: closure_14 } = ME);
-const result = require("handleMessageSendFailedAutomod").fileFinishedImporting("modules/messages/native/handlers/handleMessagesTapLink.tsx");
+const AppLauncherRouteName = APP_LAUNCHER_BUILT_IN_SECTION_ICON.AppLauncherRouteName;
+const StaticChannelRoute = set2.StaticChannelRoute;
+const NotificationTypes = str2.NotificationTypes;
+let closure_18 = AbortCodes.OpenThreadAnalyticsLocations;
+const result = set.fileFinishedImporting("modules/messages/native/handlers/handleMessagesTapLink.tsx");
 
 export { handleMessagesTapURLLink };
 export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData) {
-  let chatInputRef;
-  let handleTransitionToThread;
-  let message;
-  let messageChannel;
   ({ chatInputRef, handleTransitionToThread, message, messageChannel } = tapLinkData);
   const data = tapLinkData.tapLinkData.data;
   if (true === tapLinkData.allowWithinModal) {
@@ -138,6 +143,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
     }
     tmp4 = handleMessagesTapURLLink;
   } else {
-    const obj = require(10736) /* isAlertOrActionSheetOpen */;
+    const obj = isAlertOrActionSheetOpen;
   }
 };

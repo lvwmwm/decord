@@ -1,12 +1,17 @@
-// Module ID: 13076
-// Function ID: 13077
+// Module ID: 13132
+// Function ID: 13133
 // Name: reset
-// Dependencies: [676, 4548, 12, 13077, 2]
+// Dependencies: [676, 4553, 12, 13133, 2]
 
-// Module 13076 (reset)
-import { RTCConnectionStates } from "ME";
+// Module 13132 (reset)
+import set from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+import ME from "ME" /* 676 */;
+import sleep from "sleep" /* 4553 */;
+import zipWithNextDefault from "zipWithNext" /* 13133 */;
 
-const result = require("apply").fileFinishedImporting("lib/RTCConnectionStats.tsx");
+const RTCConnectionStates = ME.RTCConnectionStates;
+const result = set.fileFinishedImporting("lib/RTCConnectionStats.tsx");
 class StateHistory {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -33,29 +38,37 @@ prototype["update"] = function update(current) {
     const history = self.history;
     const obj = { state: null, startTime: null };
     obj[0] = current;
-    obj[1] = require(4548) /* sleep */.now();
+    obj[1] = sleep.now();
     history.push(obj);
-    const obj2 = require(4548) /* sleep */;
+    const obj2 = sleep;
   }
 };
 prototype["getVoiceConnectionSuccessStats"] = function getVoiceConnectionSuccessStats(nowResult) {
   if (nowResult === undefined) {
-    let obj = RTC_DISCONNECTED(4548);
+    let obj = RTC_DISCONNECTED(4553);
     nowResult = obj.now();
   }
   const stateDurations = this.getStateDurations(nowResult);
-  obj = { state_awaiting_endpoint_ms: null, state_authenticating_ms: null, state_connecting_ms: null, state_disconnected_ms: null, state_ice_checking_ms: null, state_no_route_ms: null, state_rtc_connecting_ms: null, state_rtc_disconnected_ms: null };
+  obj = {
+    state_awaiting_endpoint_ms: applyDefault.sumBy(stateDurations, (state) => {
+      let num = 0;
+      if (state.state === RTC_DISCONNECTED) {
+        num = state.durationMs;
+      }
+      return num;
+    }),
+    state_authenticating_ms: null,
+    state_connecting_ms: null,
+    state_disconnected_ms: null,
+    state_ice_checking_ms: null,
+    state_no_route_ms: null,
+    state_rtc_connecting_ms: null,
+    state_rtc_disconnected_ms: null
+  };
   RTC_DISCONNECTED = RTCConnectionStates.AWAITING_ENDPOINT;
-  obj[0] = importDefault(12).sumBy(stateDurations, (state) => {
-    let num = 0;
-    if (state.state === RTC_DISCONNECTED) {
-      num = state.durationMs;
-    }
-    return num;
-  });
   RTC_DISCONNECTED = RTCConnectionStates.AUTHENTICATING;
-  const obj3 = importDefault(12);
-  obj[1] = importDefault(12).sumBy(stateDurations, (state) => {
+  const obj3 = applyDefault;
+  obj[1] = applyDefault.sumBy(stateDurations, (state) => {
     let num = 0;
     if (state.state === RTC_DISCONNECTED) {
       num = state.durationMs;
@@ -63,8 +76,8 @@ prototype["getVoiceConnectionSuccessStats"] = function getVoiceConnectionSuccess
     return num;
   });
   RTC_DISCONNECTED = RTCConnectionStates.CONNECTING;
-  const obj4 = importDefault(12);
-  obj[2] = importDefault(12).sumBy(stateDurations, (state) => {
+  const obj4 = applyDefault;
+  obj[2] = applyDefault.sumBy(stateDurations, (state) => {
     let num = 0;
     if (state.state === RTC_DISCONNECTED) {
       num = state.durationMs;
@@ -72,8 +85,8 @@ prototype["getVoiceConnectionSuccessStats"] = function getVoiceConnectionSuccess
     return num;
   });
   RTC_DISCONNECTED = RTCConnectionStates.DISCONNECTED;
-  const obj5 = importDefault(12);
-  obj[3] = importDefault(12).sumBy(stateDurations, (state) => {
+  const obj5 = applyDefault;
+  obj[3] = applyDefault.sumBy(stateDurations, (state) => {
     let num = 0;
     if (state.state === RTC_DISCONNECTED) {
       num = state.durationMs;
@@ -81,8 +94,8 @@ prototype["getVoiceConnectionSuccessStats"] = function getVoiceConnectionSuccess
     return num;
   });
   RTC_DISCONNECTED = RTCConnectionStates.ICE_CHECKING;
-  const obj6 = importDefault(12);
-  obj[4] = importDefault(12).sumBy(stateDurations, (state) => {
+  const obj6 = applyDefault;
+  obj[4] = applyDefault.sumBy(stateDurations, (state) => {
     let num = 0;
     if (state.state === RTC_DISCONNECTED) {
       num = state.durationMs;
@@ -90,8 +103,8 @@ prototype["getVoiceConnectionSuccessStats"] = function getVoiceConnectionSuccess
     return num;
   });
   RTC_DISCONNECTED = RTCConnectionStates.NO_ROUTE;
-  const obj7 = importDefault(12);
-  obj[5] = importDefault(12).sumBy(stateDurations, (state) => {
+  const obj7 = applyDefault;
+  obj[5] = applyDefault.sumBy(stateDurations, (state) => {
     let num = 0;
     if (state.state === RTC_DISCONNECTED) {
       num = state.durationMs;
@@ -99,8 +112,8 @@ prototype["getVoiceConnectionSuccessStats"] = function getVoiceConnectionSuccess
     return num;
   });
   RTC_DISCONNECTED = RTCConnectionStates.RTC_CONNECTING;
-  const obj8 = importDefault(12);
-  obj[6] = importDefault(12).sumBy(stateDurations, (state) => {
+  const obj8 = applyDefault;
+  obj[6] = applyDefault.sumBy(stateDurations, (state) => {
     let num = 0;
     if (state.state === RTC_DISCONNECTED) {
       num = state.durationMs;
@@ -108,8 +121,8 @@ prototype["getVoiceConnectionSuccessStats"] = function getVoiceConnectionSuccess
     return num;
   });
   RTC_DISCONNECTED = RTCConnectionStates.RTC_DISCONNECTED;
-  const obj9 = importDefault(12);
-  obj[7] = importDefault(12).sumBy(stateDurations, (state) => {
+  const obj9 = applyDefault;
+  obj[7] = applyDefault.sumBy(stateDurations, (state) => {
     let num = 0;
     if (state.state === RTC_DISCONNECTED) {
       num = state.durationMs;
@@ -123,8 +136,8 @@ prototype["getStateDurations"] = function getStateDurations(nowResult) {
   if (0 === this.history.length) {
     return [];
   } else {
-    let arr = importDefault(13077)(self.history, (state, startTime) => ({ state: state.state, durationMs: startTime.startTime - state.startTime }));
-    let obj = importDefault(12);
+    let arr = zipWithNextDefault(self.history, (state, startTime) => ({ state: state.state, durationMs: startTime.startTime - state.startTime }));
+    let obj = applyDefault;
     const lastResult = obj.last(self.history);
     obj = { state: null, durationMs: null };
     obj[0] = lastResult.state;

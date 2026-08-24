@@ -1,43 +1,49 @@
-// Module ID: 14814
-// Function ID: 14815
+// Module ID: 14878
+// Function ID: 14879
 // Name: toggle
-// Dependencies: [8198, 14815, 10669, 1236, 4066, 14816, 2]
+// Dependencies: [8238, 14879, 10708, 1236, 4069, 14880, 2]
 
-// Module 14814 (toggle)
-import createToggle from "createToggle";
+// Module 14878 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import apexExperiment from "apexExperiment" /* 14879 */;
+import onProfileUpdatesNotificationSettingsChanged from "onProfileUpdatesNotificationSettingsChanged" /* 14880 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.VxBO2F);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.VxBO2F);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.F4VeBe);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.F4VeBe);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableProfileUpdatesNotifications.useSetting,
-  onValueChange: require("onProfileUpdatesNotificationSettingsChanged").onProfileUpdatesNotificationSettingsChanged,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableProfileUpdatesNotifications.useSetting,
+  onValueChange: onProfileUpdatesNotificationSettingsChanged.onProfileUpdatesNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14815) /* apexExperiment */.useProfileUpdatesNotificationExperiment("tabsV2Settings").showSettingsToggle;
+    return apexExperiment.useProfileUpdatesNotificationExperiment("tabsV2Settings").showSettingsToggle;
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.VxBO2F);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.VxBO2F);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.F4VeBe);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.F4VeBe);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableProfileUpdatesNotifications.useSetting,
-  onValueChange: require("onProfileUpdatesNotificationSettingsChanged").onProfileUpdatesNotificationSettingsChanged,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableProfileUpdatesNotifications.useSetting,
+  onValueChange: onProfileUpdatesNotificationSettingsChanged.onProfileUpdatesNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14815) /* apexExperiment */.useProfileUpdatesNotificationExperiment("tabsV2Settings").showSettingsToggle;
+    return apexExperiment.useProfileUpdatesNotificationExperiment("tabsV2Settings").showSettingsToggle;
   }
 };
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/ProfileUpdatesNotificationSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ProfileUpdatesNotificationSetting.tsx");
 
 export default toggle;

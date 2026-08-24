@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 29 (NativeReactNativeFeatureFlagsCxx)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("NativeReactNativeFeatureFlagsCxx");
+
+export default getAll.get("NativeReactNativeFeatureFlagsCxx");

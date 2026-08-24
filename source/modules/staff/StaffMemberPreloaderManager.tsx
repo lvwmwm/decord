@@ -1,15 +1,16 @@
-// Module ID: 16706
-// Function ID: 16707
+// Module ID: 16802
+// Function ID: 16803
 // Name: prototype
-// Dependencies: [5038, 16707, 2]
+// Dependencies: [5043, 16803, 2]
 
-// Module 16706 (prototype)
-import "initialize";
+// Module 16802 (prototype)
+import initializeDefault from "initialize" /* 5043 */;
 
 let require = arg1;
+initializeDefault;
 let prototype = function StaffMemberPreloaderManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const require = applyArgumentsResult;
+  require = applyArgumentsResult;
   applyArgumentsResult.actions = {
     POST_CONNECTION_OPEN() {
       return applyArgumentsResult.handlePostConnectionOpen();

@@ -1,40 +1,24 @@
-// Module ID: 9341
-// Function ID: 9342
-// Dependencies: [19, 9301, 676, 1925, 1338, 1924, 21, 7139, 7159, 9342, 9306, 9305, 9343, 9344, 9345, 8471, 9350, 8482, 4343, 4344, 4038, 4237, 9351, 4094, 1236, 9302, 9369, 4066, 9375, 9372, 9376, 9379, 9373, 9381, 9382, 9389, 9391, 9393, 2]
+// Module ID: 9378
+// Function ID: 9379
+// Dependencies: [19, 9338, 676, 1925, 1338, 1924, 21, 7177, 7197, 9379, 9343, 9342, 9380, 9381, 9382, 8510, 9387, 8521, 4347, 4348, 4041, 4241, 9388, 4097, 1236, 9339, 9406, 4069, 9412, 9409, 9413, 9416, 9410, 9418, 9419, 9426, 9428, 9430, 2]
 
-// Module 9341
-import importAllResult from "IMPACT_LIGHT";
-import { IMAGE_SIZE } from "IMAGE_SIZE";
-import ME from "ME";
-import set from "set";
-import { MIN_MARGIN } from "ExpressionPickerViewType";
-import { PremiumUpsellTypes } from "GuildFeatures";
-import jsxProd from "getBestActiveInput";
-import set from "ME";
+// Module 9378
+import importAllResult from "noop" /* 19 */;
+import { IMAGE_SIZE } from "IMAGE_SIZE" /* 9338 */;
+import ME from "ME" /* 676 */;
+import set from "set" /* 1925 */;
+import { MIN_MARGIN } from "ExpressionPickerViewType" /* 1338 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c10;
-let c5;
-let c9;
-let closure_14;
-let closure_15;
-let closure_6;
-let error;
-let map1;
-let metroImportAll;
 const require = arg1;
 let c3 = importAllResult;
-({ AnalyticsObjects: c5, AnalyticsPages: closure_6, AnalyticsSections: error, UpsellTypes: metroImportAll } = ME);
+({ AnalyticsObjects: c5, AnalyticsPages: closure_6, AnalyticsSections: error, UpsellTypes: closure_8 } = ME);
 ({ EmojiDisabledReasons: c9, EmojiIntention: c10 } = set);
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
 let result = set.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerList.tsx");
 
 export default importAllResult.memo(function EmojiPickerList(analyticsObject) {
-  let bottomSheetIndex;
-  let categories;
-  let categoryIndexActive;
-  let channel;
-  let emojiPickerListRef;
-  let emojis;
   ({ bottomSheetIndex, emojiPickerListRef } = analyticsObject);
   ({ emojis, channel } = analyticsObject);
   const guildId = analyticsObject.guildId;
@@ -57,7 +41,7 @@ export default importAllResult.memo(function EmojiPickerList(analyticsObject) {
   const searchQueryRef = analyticsObject.searchQueryRef;
   const messageId = analyticsObject.messageId;
   let analyticsLocations;
-  let c9;
+  closure_9 = undefined;
   let rounded;
   let id;
   let useTier0UpsellContent;
@@ -66,7 +50,7 @@ export default importAllResult.memo(function EmojiPickerList(analyticsObject) {
   let setting;
   analyticsLocations = channel(guildId[7])(channel(guildId[8]).EMOJI).analyticsLocations;
   const tmp4 = channel(guildId[9])(flag);
-  c9 = tmp4;
+  closure_9 = tmp4;
   rounded = Math.floor((tmp4 - id) / (onLongPressEmoji + id));
   const newlyAddedEmojis = channel(guildId[10])(guildId, emojiPickerIntention).newlyAddedEmojis;
   id = null;
@@ -79,7 +63,7 @@ export default importAllResult.memo(function EmojiPickerList(analyticsObject) {
     const result = emojiPickerListRef(guildId[11]).updateNewlyAddedLastSeen(guildId, id);
   }, items);
   const tmp8 = channel(guildId[12])();
-  let obj1 = emojiPickerListRef(tmp2[13]);
+  obj1 = emojiPickerListRef(tmp2[13]);
   const trackOnEmojiPickerOpenedForReactions = obj1.useTrackOnEmojiPickerOpenedForReactions({ intention: emojiPickerIntention, rowSize: rounded, analyticsObject: analyticsObject.analyticsObject });
   channel(guildId[14])();
   if (null != emojis) {
@@ -113,14 +97,14 @@ export default importAllResult.memo(function EmojiPickerList(analyticsObject) {
     }
     let obj = emojiPickerListRef(guildId[18]);
     const result = obj.triggerHapticFeedback(channel(guildId[19]).IMPACT_LIGHT);
-    let obj1 = channel(guildId[20]);
+    obj1 = channel(guildId[20]);
     obj = { emoji, channel, intention: emojiPickerIntention, guildId };
     const emojiUnavailableReason = obj1.getEmojiUnavailableReason(obj);
     if (null === emojiUnavailableReason) {
       if (onPressEmoji != null) {
         onPressEmoji(emoji);
       }
-    } else if (_undefined.ROLE_SUBSCRIPTION_LOCKED === emojiUnavailableReason) {
+    } else if (constants.ROLE_SUBSCRIPTION_LOCKED === emojiUnavailableReason) {
       let tmp2Result = tmp2(tmp3[21]);
       tmp2Result.dismissKeyboard();
       if (null != emoji.guildId) {
@@ -231,13 +215,6 @@ export default importAllResult.memo(function EmojiPickerList(analyticsObject) {
   setting = AnimateEmoji.useSetting();
   const items3 = [analyticsLocations, callback, callback1, channel, rounded, tmp4, setting, emojiPickerListRef, useTier0UpsellContent];
   const callback2 = obj.useCallback((item) => {
-    let emojis;
-    let emojisDisabled;
-    let footer;
-    let index;
-    let isSectionNitroLocked;
-    let row;
-    let target;
     item = item.item;
     const type = item.type;
     ({ target, index } = item);
@@ -264,12 +241,12 @@ export default importAllResult.memo(function EmojiPickerList(analyticsObject) {
           } else {
             if (tmp(tmp2[26]).EmojiPickerItemType.EMOJI_ROW === type) {
               ({ emojis, emojisDisabled, footer, row, isSectionNitroLocked } = item);
-              const obj1 = { emojis: null, emojisDisabled: null, category: null, rowSize: null, containerWidth: null, onPressEmoji: null, onLongPressEmoji: null, animateEmoji: null, row: null, isSectionNitroLocked: null };
+              obj1 = { emojis: null, emojisDisabled: null, category: null, rowSize: null, containerWidth: null, onPressEmoji: null, onLongPressEmoji: null, animateEmoji: null, row: null, isSectionNitroLocked: null };
               obj1[0] = emojis;
               obj1[1] = emojisDisabled;
               obj1[2] = footer;
               obj1[3] = rounded;
-              obj1[4] = c9;
+              obj1[4] = closure_9;
               obj1[5] = callback;
               obj1[6] = callback1;
               obj1[7] = setting;

@@ -1,20 +1,18 @@
-// Module ID: 5441
-// Function ID: 5442
+// Module ID: 5446
+// Function ID: 5447
 // Name: useSafeAreaInsetsKeyboardAware
-// Dependencies: [32, 19, 1496, 5442, 5443, 1629, 1497, 500, 1895, 4239, 1627, 5444, 2]
+// Dependencies: [32, 19, 1496, 5447, 5448, 1629, 1497, 500, 1895, 4243, 1627, 5449, 2]
 // Exports: default
 
-// Module 5441 (useSafeAreaInsetsKeyboardAware)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
+// Module 5446 (useSafeAreaInsetsKeyboardAware)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "subscribeToKeyboardUIStore" /* 1496 */;
 
 const require = arg1;
-let result = require("subscribeToKeyboardUIStore").fileFinishedImporting("modules/safe_area/useSafeAreaInsetsKeyboardAware.native.tsx");
+let result = require("set").fileFinishedImporting("modules/safe_area/useSafeAreaInsetsKeyboardAware.native.tsx");
 
 export default function useSafeAreaInsetsKeyboardAware() {
-  let c6;
-  let tmp8;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -27,7 +25,7 @@ export default function useSafeAreaInsetsKeyboardAware() {
   if (flag2 === undefined) {
     flag2 = true;
   }
-  let importDefault = flag2;
+  importDefault = flag2;
   let flag3 = obj.includeCustomKeyboardHeight;
   if (flag3 === undefined) {
     flag3 = true;

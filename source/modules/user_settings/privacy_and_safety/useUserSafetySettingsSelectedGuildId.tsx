@@ -1,19 +1,17 @@
-// Module ID: 15013
-// Function ID: 15014
+// Module ID: 15077
+// Function ID: 15078
 // Name: useUserSafetySettingsSelectedGuildId
-// Dependencies: [1910, 15011, 676, 589, 2]
+// Dependencies: [1910, 15075, 676, 589, 2]
 // Exports: useAllServersOptionSelected, useIsSelectedGuildAHub, useUserSafetySettingsSelectedGuildId
 
-// Module 15013 (useUserSafetySettingsSelectedGuildId)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
-import { GuildFeatures } from "ME";
+// Module 15077 (useUserSafetySettingsSelectedGuildId)
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15075 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
-let c3;
-let c4;
 const require = arg1;
 ({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: c3, useUserSafetySettingsSelectedGuildStore: c4 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
-const result = require("ME").fileFinishedImporting("modules/user_settings/privacy_and_safety/useUserSafetySettingsSelectedGuildId.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/privacy_and_safety/useUserSafetySettingsSelectedGuildId.tsx");
 
 export const useUserSafetySettingsSelectedGuildId = function useUserSafetySettingsSelectedGuildId() {
   return callback().selectedGuildId;
@@ -23,8 +21,8 @@ export const useAllServersOptionSelected = function useAllServersOptionSelected(
 };
 export const useIsSelectedGuildAHub = function useIsSelectedGuildAHub() {
   const selectedGuildId = callback().selectedGuildId;
-  const items = [createGuildRecordFromRust];
-  const stateFromStores = selectedGuildId(589).useStateFromStores(items, () => outer1_2.getGuild(selectedGuildId));
+  const items = [closure_2];
+  const stateFromStores = selectedGuildId(589).useStateFromStores(items, () => closure_1_2.getGuild(selectedGuildId));
   let flag;
   if (stateFromStores != null) {
     const features = stateFromStores.features;

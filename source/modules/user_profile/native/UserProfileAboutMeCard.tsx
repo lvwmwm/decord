@@ -1,30 +1,33 @@
-// Module ID: 9548
-// Function ID: 9549
+// Module ID: 9585
+// Function ID: 9586
 // Name: Heading
-// Dependencies: [19, 17, 1994, 1990, 1910, 7186, 676, 1499, 21, 4661, 4097, 712, 4734, 1236, 9549, 589, 5224, 11, 9551, 7188, 9553, 1297, 8775, 7139, 8934, 9554, 8929, 4342, 4230, 1222, 6548, 4237, 1627, 9559, 4745, 7185, 2]
+// Dependencies: [19, 17, 1995, 1991, 1910, 7224, 676, 1499, 21, 4668, 4100, 712, 4739, 1236, 9586, 589, 5229, 11, 9588, 7226, 9590, 1297, 8812, 7177, 8971, 9591, 8966, 4346, 4234, 1222, 6579, 4241, 1627, 9596, 4750, 7223, 2]
 // Exports: default
 
-// Module 9548 (Heading)
-import GuildIconSizes from "GuildIconSizes";
-import { View } from "DISCORD_EPOCH";
-import _getSystemLocale from "_getSystemLocale";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
-import { Routes } from "ME";
-import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-import jsxProd from "Button";
-import createCacheKey from "createCacheKey";
+// Module 9585 (Heading)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import map from "map" /* 4100 */;
+import Text from "Text" /* 4739 */;
+import DividerDefault from "Divider" /* 7223 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 7226 */;
+import LinkButtonDefault from "LinkButton" /* 9586 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 9590 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "_getSystemLocale" /* 1995 */;
+import closure_6 from "trackCommunicationDisabled" /* 1991 */;
+import closure_7 from "createGuildRecordFromRust" /* 1910 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import { Routes } from "ME" /* 676 */;
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let UserProfileThemeTypes;
-let closure_12;
-let map1;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function Heading(children) {
-  let headingSpacing;
-  let headingVariant;
   const themeType = children.themeType;
   let tmp;
   if (null != themeType) {
@@ -34,16 +37,13 @@ function Heading(children) {
     tmp = closure_14;
   }
   ({ headingVariant, headingSpacing } = tmp);
-  let variant = require(4097) /* map */.useToken(importDefault(712).modules.mobile.USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE);
+  let variant = map.useToken(ThemesDefault.modules.mobile.USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE);
   if (variant == null) {
     variant = headingVariant;
   }
-  return closure_11(require(4734) /* Text */.Text, { accessibilityRole: "header", variant, color: "user-profile-about-me-heading-text", style: { marginBottom }, children: children.children });
+  return closure_11(Text.Text, { accessibilityRole: "header", variant, color: "user-profile-about-me-heading-text", style: { marginBottom }, children: children.children });
 }
 function TextWithIcon(themeType) {
-  let accessibilityLabel;
-  let children;
-  let icon;
   themeType = themeType.themeType;
   ({ icon, children, accessibilityLabel } = themeType);
   let tmp2;
@@ -55,16 +55,11 @@ function TextWithIcon(themeType) {
   }
   const obj = { style: items, accessible: true, accessibilityLabel, children: null };
   items = [callback3().textWithIcon, { columnGap: tmp2.columnGap }];
-  const items1 = [icon, callback(require(4734) /* Text */.Text, { variant: tmp2.textVariant, color: "text-default", children })];
+  const items1 = [icon, callback(Text.Text, { variant: tmp2.textVariant, color: "text-default", children })];
   obj[3] = items1;
   return callback2(View, obj);
 }
 function Bio(arg0) {
-  let displayProfile;
-  let lineClamp;
-  let pendingBio;
-  let themeType;
-  let userId;
   ({ displayProfile, themeType } = arg0);
   let tmp;
   ({ userId, pendingBio, lineClamp } = arg0);
@@ -85,15 +80,15 @@ function Bio(arg0) {
       let obj = { children: null };
       obj = { themeType: null, children: null };
       obj[0] = themeType;
-      const intl = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl.string(require(1236) /* getSystemLocale */.t.ZzAR2Y);
+      const intl = getSystemLocale.intl;
+      obj[1] = intl.string(getSystemLocale.t.ZzAR2Y);
       const items = [callback(Heading, obj), ];
       obj = { bio: null, userId: null, textVariant: null, lineClamp: null };
       obj[0] = previewBio;
       obj[1] = userId;
       obj[2] = tmp.textVariant;
       obj[3] = lineClamp;
-      items[1] = callback(importDefault(9549), obj);
+      items[1] = callback(LinkButtonDefault, obj);
       obj[0] = items;
       tmp4 = callback2(View, obj);
     }
@@ -101,10 +96,6 @@ function Bio(arg0) {
   return tmp4;
 }
 function MemberJoinDates(userId) {
-  let columnGap;
-  let importDefault;
-  let textVariant;
-  let themeType;
   userId = userId.userId;
   ({ guildId: importDefault, themeType } = userId);
   let tmp2;
@@ -116,30 +107,30 @@ function MemberJoinDates(userId) {
   }
   ({ textVariant, columnGap } = tmp2);
   let obj = userId(589);
-  const items = [_getSystemLocale];
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let obj1 = userId(589);
-  const items1 = [createGuildRecordFromRust];
+  obj1 = userId(589);
+  const items1 = [closure_7];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => {
     let guild = null;
     if (null != closure_1) {
-      guild = outer1_7.getGuild(tmp);
+      guild = closure_1_7.getGuild(tmp);
     }
     return guild;
   });
   let obj2 = userId(589);
-  const items2 = [trackCommunicationDisabled];
+  const items2 = [closure_6];
   const stateFromStores2 = obj2.useStateFromStores(items2, () => {
     let member = null;
     if (null != closure_1) {
-      member = outer1_6.getMember(tmp, userId);
+      member = closure_1_6.getMember(tmp, userId);
     }
     return member;
   });
-  let obj3 = userId(5224);
-  let obj4 = importDefault(11);
+  let obj3 = userId(5229);
+  let obj4 = DISCORD_EPOCHDefault;
   const createdAtDate = obj3.getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
-  let obj5 = userId(5224);
+  let obj5 = userId(5229);
   let joinedAt;
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
@@ -151,7 +142,7 @@ function MemberJoinDates(userId) {
   const items3 = [callback(Heading, obj), ];
   obj = { style: items4, children: null };
   items4 = [callback3().memberJoinDates, { columnGap }];
-  obj1 = { themeType, icon: callback(tmp4(9551).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
+  obj1 = { themeType, icon: callback(tmp4(9588).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
   const intl2 = tmp4(1236).intl;
   obj1[2] = intl2.formatToPlainString(userId(1236).t["9t7w53"], { date: createdAtDate });
   obj1[3] = createdAtDate;
@@ -162,13 +153,13 @@ function MemberJoinDates(userId) {
     obj3 = { variant: null, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
     obj3[0] = textVariant;
     obj3[4] = closure_8;
-    const items6 = [tmp15(tmp4(4734).Text, obj3), ];
+    const items6 = [tmp15(tmp4(4739).Text, obj3), ];
     obj4 = { themeType: null, icon: null, accessibilityLabel: null, children: null };
     obj4[0] = themeType;
     obj5 = { guild: null, size: null };
     obj5[0] = stateFromStores1;
-    obj5[1] = tmp4(7188).GuildIconSizes.XXSMALL;
-    obj4[1] = tmp15(importDefault(7188), obj5);
+    obj5[1] = tmp4(7226).GuildIconSizes.XXSMALL;
+    obj4[1] = tmp15(GuildIconSizesDefault, obj5);
     const intl3 = tmp4(1236).intl;
     const obj6 = { guildName: null, date: null };
     obj6[0] = stateFromStores1.name;
@@ -178,7 +169,7 @@ function MemberJoinDates(userId) {
     items6[1] = tmp15(TextWithIcon, obj4);
     obj2[0] = items6;
     tmp13Result = tmp13(closure_13, obj2);
-    const tmp9Result = importDefault(7188);
+    const tmp9Result = GuildIconSizesDefault;
   }
   const obj7 = { children: null };
   items5[1] = tmp13Result;
@@ -196,7 +187,7 @@ function FriendsSinceDate(themeType) {
   if (tmp == null) {
     tmp = closure_14;
   }
-  let obj = require(9553) /* useFriendsSinceDate */;
+  let obj = useFriendsSinceDate;
   const friendsSinceDate = obj.useFriendsSinceDate(themeType.userId);
   let tmp6 = null;
   if (null != friendsSinceDate) {
@@ -206,25 +197,22 @@ function FriendsSinceDate(themeType) {
     const intl = tmp3(1236).intl;
     obj[1] = intl.string(tmp3(1236).t.wlTO8v);
     const items = [callback(Heading, obj), ];
-    const obj1 = { variant: null, color: "text-default", children: null };
+    obj1 = { variant: null, color: "text-default", children: null };
     obj1[0] = tmp.textVariant;
     obj1[2] = friendsSinceDate;
-    items[1] = callback(tmp3(4734).Text, obj1);
+    items[1] = callback(tmp3(4739).Text, obj1);
     obj[0] = items;
     tmp6 = callback2(View, obj);
   }
   return tmp6;
 }
 function PolicyLinks(arg0) {
-  let privacyPolicyUrl;
-  let termsOfServiceUrl;
-  let themeType;
   ({ termsOfServiceUrl, privacyPolicyUrl, themeType } = arg0);
   if (null != termsOfServiceUrl) {
     let obj = { themeType: null, children: null };
     obj[0] = themeType;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl.string(require(1236) /* getSystemLocale */.t.l6DP2n);
+    const intl = getSystemLocale.intl;
+    obj[1] = intl.string(getSystemLocale.t.l6DP2n);
     const items = [callback(Heading, obj), ];
     obj = { style: null, children: null };
     obj[0] = tmp.policyLinks;
@@ -240,7 +228,7 @@ function PolicyLinks(arg0) {
     const items1 = [tmp5Result, ];
     tmp5Result = null != privacyPolicyUrl;
     if (tmp5Result) {
-      const obj1 = { url: null, label: null, themeType: null };
+      obj1 = { url: null, label: null, themeType: null };
       obj1[0] = privacyPolicyUrl;
       const intl3 = tmp7(1236).intl;
       obj1[1] = intl3.string(tmp7(1236).t.kH3JR5);
@@ -259,8 +247,6 @@ function PolicyLinks(arg0) {
   return tmp3Result;
 }
 function PolicyLink(children) {
-  let require;
-  let themeType;
   ({ url: require, themeType } = children);
   let tmp;
   if (null != themeType) {
@@ -269,24 +255,17 @@ function PolicyLink(children) {
   if (tmp == null) {
     tmp = closure_14;
   }
-  let obj = {
+  return callback(Button.PressableOpacity, {
     accessibilityRole: "link",
     onPress() {
-      let obj = outer1_0(outer1_2[22]);
+      let obj = closure_1_0(closure_1_2[22]);
       obj = { href: closure_0 };
       return obj.handleClick(obj);
     },
-    children: null
-  };
-  obj[2] = callback(require(4734) /* Text */.Text, { variant: tmp.textVariant, color: "text-link", children: children.label });
-  return callback(require(1297) /* Button */.PressableOpacity, obj);
+    children: callback(Text.Text, { variant: tmp.textVariant, color: "text-link", children: children.label })
+  });
 }
 function BotSlashCommands(channel) {
-  let application;
-  let applicationId;
-  let commandIds;
-  let commands;
-  let themeType;
   channel = channel.channel;
   let analyticsLocations;
   let context;
@@ -312,11 +291,11 @@ function BotSlashCommands(channel) {
       const items1 = [callback(Heading, obj), , ];
       obj = { style: null, children: null };
       obj[0] = tmp.slashCommands;
-      obj[1] = commands.map((command) => outer1_11(analyticsLocations(context[33]), { application, channel, command }, command.id));
+      obj[1] = commands.map((command) => closure_1_11(analyticsLocations(context[33]), { application, channel, command }, command.id));
       items1[1] = callback(View, obj);
       let tmp10Result = null != application && null != application.bot;
       if (tmp10Result) {
-        const obj1 = { size: "sm", variant: "tertiary", text: null, onPress: null };
+        obj1 = { size: "sm", variant: "tertiary", text: null, onPress: null };
         const intl = tmp3(tmp2[13]).intl;
         obj1[2] = intl.string(tmp3(tmp2[13]).t.VEfKyb);
         obj1[3] = tmp5;
@@ -333,21 +312,14 @@ function BotSlashCommands(channel) {
   }
   return tmp8Result;
 }
-({ DIVIDER_DOT: metroImportAll, UserProfileThemeTypes } = ARBITRARY_LARGE_OFFSET);
+({ DIVIDER_DOT: closure_8, UserProfileThemeTypes } = ARBITRARY_LARGE_OFFSET);
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = jsxProd);
 let closure_14 = { headingVariant: "text-sm/semibold", textVariant: "text-md/normal", headingSpacing: 8, rowGap: 24, columnGap: 6 };
 let closure_15 = { [UserProfileThemeTypes.PREVIEW]: { headingVariant: "text-xs/semibold", textVariant: "text-sm/normal", headingSpacing: 4, rowGap: 12, columnGap: 3 } };
 let closure_16 = createCacheKey.createStyles({ card: { flexDirection: "column" }, textWithIcon: { flexDirection: "row", alignItems: "center" }, memberJoinDates: { flexDirection: "row", flexWrap: "wrap" }, slashCommands: { flex: 1, flexDirection: "row", flexWrap: "wrap", marginBottom: 12 }, policyLinks: { rowGap: 8 } });
-const result = require("_getSystemLocale").fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCard.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCard.tsx");
 
 export default function UserProfileAboutMeCard(arg0) {
-  let bioLineClamp;
-  let channel;
-  let displayProfile;
-  let pendingBio;
-  let style;
-  let themeType;
-  let userId;
   ({ userId, displayProfile, channel, themeType } = arg0);
   ({ pendingBio, bioLineClamp, style } = arg0);
   let tmp2;
@@ -393,7 +365,7 @@ export default function UserProfileAboutMeCard(arg0) {
   }
   let tmp7Result = null != prop && null != channel;
   if (tmp7Result) {
-    const obj1 = { applicationId: null, channel: null, commandIds: null, themeType: null };
+    obj1 = { applicationId: null, channel: null, commandIds: null, themeType: null };
     obj1[0] = application.id;
     obj1[1] = channel;
     obj1[2] = application.popularApplicationCommandIds;
@@ -402,5 +374,5 @@ export default function UserProfileAboutMeCard(arg0) {
   }
   items1[4] = tmp7Result;
   obj[1] = items1;
-  return tmp5(importDefault(7185), obj);
+  return tmp5(DividerDefault, obj);
 };

@@ -1,15 +1,19 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12557
+// Function ID: 12558
 // Name: set
 // Dependencies: [676, 595, 589, 709, 2]
 
-// Module 12503 (set)
-import { StorageKeys } from "ME";
-import { Store } from "initialize";
-import set from "initialize";
+// Module 12557 (set)
+import initializeDefault from "initialize" /* 589 */;
+import Storage2 from "Storage" /* 595 */;
+import ME from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import set from "set" /* 2 */;
 
+const StorageKeys = ME.StorageKeys;
 let set = new Set();
 const set1 = new Set();
+const Store = initializeDefault.Store;
 class TooltipStore extends Store {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -27,25 +31,23 @@ class TooltipStore extends Store {
   }
 }
 TooltipStore.prototype["initialize"] = function initialize() {
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage2.Storage;
   let items = Storage.get(StorageKeys.ACKNOWLEDGED_TOOLTIPS_KEY, []);
   if (items == null) {
     items = [];
   }
-  let closure_4 = Set(...items);
+  closure_4 = Set(...items);
 };
 TooltipStore.displayName = "TooltipStore";
-const tooltipStore = new TooltipStore(require("dispatcher"), {
+const tooltipStore = new TooltipStore(dispatcherDefault, {
   TOOLTIP_ACKNOWLEDGE: function handleTooltipAcknowledge(tooltip) {
     if (set1 != null) {
       set1.add(tooltip.tooltip);
     }
-    const Storage = require(595) /* Storage */.Storage;
+    const Storage = Storage2.Storage;
     const result = Storage.set(StorageKeys.ACKNOWLEDGED_TOOLTIPS_KEY, Array(set1));
   },
   TOOLTIP_SHOW_ATTEMPT: function hasAttemptedToShowTooltip(arg0) {
-    let ignoreMaxShownLimit;
-    let tooltip;
     ({ tooltip, ignoreMaxShownLimit } = arg0);
     if (!set.has(tooltip)) {
       if (!set1.has(tooltip)) {

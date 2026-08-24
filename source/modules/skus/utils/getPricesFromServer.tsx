@@ -1,13 +1,15 @@
-// Module ID: 4517
-// Function ID: 4518
+// Module ID: 4522
+// Function ID: 4523
 // Name: getPricesFromServer
-// Dependencies: [4040, 2]
+// Dependencies: [4043, 2]
 // Exports: default
 
-// Module 4517 (getPricesFromServer)
-import { getPriceFromServer } from "createFromServer";
+// Module 4522 (getPricesFromServer)
+import set from "set" /* 2 */;
+import createFromServer from "createFromServer" /* 4043 */;
 
-const result = require("set").fileFinishedImporting("modules/skus/utils/getPricesFromServer.tsx");
+const getPriceFromServer = createFromServer.getPriceFromServer;
+const result = set.fileFinishedImporting("modules/skus/utils/getPricesFromServer.tsx");
 
 export default function getPricesFromServer(arg0) {
   if (null == arg0) {
@@ -16,8 +18,6 @@ export default function getPricesFromServer(arg0) {
     const _Object = Object;
     const entries = Object.entries(arg0);
     reduced = entries.reduce((arg0, arg1) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg1;
       let obj = { countryPrices: null, paymentSourcePrices: null };
       obj = { countryCode: tmp2.country_prices.country_code, prices: prices.map((arg0) => callback(arg0, true)) };

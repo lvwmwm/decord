@@ -1,16 +1,17 @@
-// Module ID: 6556
-// Function ID: 6557
+// Module ID: 6589
+// Function ID: 6590
 // Name: useIsAgeVerificationIncodeEnabled
 // Dependencies: [1472, 2]
 // Exports: isAgeVerificationIncodeEnabled, useIsAgeVerificationIncodeEnabled
 
-// Module 6556 (useIsAgeVerificationIncodeEnabled)
-import ApexExperiment from "ApexExperiment";
+// Module 6589 (useIsAgeVerificationIncodeEnabled)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_0 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-06-age-verification-incode", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/age_assurance/AgeVerificationIncodeExperiment.tsx");
+const result = set.fileFinishedImporting("modules/age_assurance/AgeVerificationIncodeExperiment.tsx");
 
 export const useIsAgeVerificationIncodeEnabled = function useIsAgeVerificationIncodeEnabled(location) {
   return closure_0.useConfig({ location }).enabled;

@@ -1,13 +1,18 @@
-// Module ID: 16541
-// Function ID: 16542
+// Module ID: 16636
+// Function ID: 16637
 // Name: openChangelog
-// Dependencies: [1978, 4229, 5260, 14850, 2007, 2]
+// Dependencies: [1979, 4233, 5265, 14914, 2008, 2]
 // Exports: openChangelog
 
-// Module 16541 (openChangelog)
-import { CHANGELOG_MODAL_KEY } from "CHANGELOG_MODAL_KEY";
+// Module 16636 (openChangelog)
+import set from "set" /* 2 */;
+import CHANGELOG_MODAL_KEY2 from "CHANGELOG_MODAL_KEY" /* 1979 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import coerceMainRoute from "coerceMainRoute" /* 4233 */;
+import _modDef5265 from "module_5265" /* 5265 */;
 
-const result = require("module_5260").fileFinishedImporting("modules/changelog/openChangelog.native.tsx");
+const CHANGELOG_MODAL_KEY = CHANGELOG_MODAL_KEY2.CHANGELOG_MODAL_KEY;
+const result = set.fileFinishedImporting("modules/changelog/openChangelog.native.tsx");
 
 export const openChangelog = function openChangelog() {
   let flag = arg0;
@@ -16,11 +21,11 @@ export const openChangelog = function openChangelog() {
   }
   let isModalOpenResult = !flag;
   if (!flag) {
-    isModalOpenResult = require(4229) /* coerceMainRoute */.isModalOpen();
-    const obj = require(4229) /* coerceMainRoute */;
+    isModalOpenResult = coerceMainRoute.isModalOpen();
+    const obj = coerceMainRoute;
   }
   if (!isModalOpenResult) {
-    importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(14850, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
-    const obj2 = importDefault(5260);
+    _modDef5265.pushLazy(asyncRequireImpl(14914, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
+    const obj2 = _modDef5265;
   }
 };

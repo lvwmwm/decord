@@ -5,8 +5,11 @@
 // Exports: instrumentStream
 
 // Module 965 (AsyncFromSyncIterator)
-import _awaitAsyncGenerator from "_awaitAsyncGenerator";
-import AsyncGenerator from "AsyncGenerator";
+import getSpanStatusFromHttpCode from "getSpanStatusFromHttpCode" /* 840 */;
+import captureCheckIn from "captureCheckIn" /* 869 */;
+import items2 from "items" /* 964 */;
+import closure_2 from "_awaitAsyncGenerator" /* 966 */;
+import closure_3 from "AsyncGenerator" /* 968 */;
 
 function AsyncFromSyncIterator(arg0) {
   class AsyncFromSyncIterator {
@@ -206,13 +209,13 @@ function processResponsesApiEvent(obj, responsesApiToolCalls, arg2, setStatus) {
       const _Error = Error;
       if (obj instanceof Error) {
         obj = { code: null, message: "internal_error" };
-        obj[0] = require(840) /* getSpanStatusFromHttpCode */.SPAN_STATUS_ERROR;
+        obj[0] = getSpanStatusFromHttpCode.SPAN_STATUS_ERROR;
         setStatus.setStatus(obj);
         obj = { mechanism: null };
         obj[0] = { handled: false, type: "auto.ai.openai.stream-response" };
-        require(869) /* captureCheckIn */.captureException(obj, obj);
+        captureCheckIn.captureException(obj, obj);
       } else if ("type" in obj) {
-        const RESPONSE_EVENT_TYPES = require(964) /* items */.RESPONSE_EVENT_TYPES;
+        const RESPONSE_EVENT_TYPES = items2.RESPONSE_EVENT_TYPES;
         if (RESPONSE_EVENT_TYPES.includes(obj.type)) {
           let output_text = arg2;
           if (arg2) {
@@ -279,13 +282,13 @@ function processResponsesApiEvent(obj, responsesApiToolCalls, arg2, setStatus) {
 }
 function _instrumentStream() {
   const self = this;
-  const tmp = AsyncGenerator((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c21 = 0;
-    let c22 = 0;
-    let c19 = 0;
+  const tmp = callback((arg0, arg1, arg2) => {
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c21 = 0;
+    c22 = 0;
+    c19 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c22 === 2) {
         c22 = 3;
@@ -304,7 +307,7 @@ function _instrumentStream() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -313,7 +316,7 @@ function _instrumentStream() {
               throw arg1;
             } else if (arg0 !== 2) {
               while (true) {
-                let c19 = 1;
+                c19 = 1;
                 let tmp71 = closure_18;
                 let tmp72 = closure_5;
                 if (closure_5) {
@@ -351,7 +354,7 @@ function _instrumentStream() {
                     let tmp95 = closure_18;
                     let tmp96 = closure_17;
                     let tmp97 = store;
-                    let obj1 = {};
+                    obj1 = {};
                     let tmp98 = store;
                     let tmp99 = dependencyMap;
                     let _JSON3 = JSON;
@@ -378,7 +381,7 @@ function _instrumentStream() {
                     throwTypeErrorResult = store.setAttributes(obj2);
                   }
                   throwTypeErrorResult = closure_18;
-                  let closure_11 = 0;
+                  closure_11 = 0;
                   let _Object2 = Object;
                   throwTypeErrorResult = closure_2;
                   let items = [];
@@ -408,7 +411,7 @@ function _instrumentStream() {
                   throwTypeErrorResult = store.end();
                   let num3 = 3;
                   c22 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
             } else {
@@ -467,7 +470,7 @@ function _instrumentStream() {
               c22 = tmp3;
               throw throwTypeErrorResult;
             } else if (tmp2 === throwTypeErrorResult) {
-              let c21 = tmp2;
+              c21 = tmp2;
             } else if (throwTypeErrorResult === throwTypeErrorResult) {
               c21 = throwTypeErrorResult;
             } else if (tmp3 === throwTypeErrorResult) {
@@ -488,7 +491,7 @@ function _instrumentStream() {
       }
     })();
   });
-  const _instrumentStream = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);

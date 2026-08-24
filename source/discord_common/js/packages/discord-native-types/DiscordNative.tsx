@@ -1,9 +1,11 @@
-// Module ID: 4530
-// Function ID: 4531
+// Module ID: 4535
+// Function ID: 4536
 // Name: SystemServiceNotAvailableError
 // Dependencies: [2]
 
-// Module 4530 (SystemServiceNotAvailableError)
+// Module 4535 (SystemServiceNotAvailableError)
+import set from "set" /* 2 */;
+
 class SystemServiceNotAvailableError extends Error {
   constructor() {
     tmp = new tmp("System service not available", new.target);
@@ -12,7 +14,7 @@ class SystemServiceNotAvailableError extends Error {
     return tmp;
   }
 }
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/discord-native-types/DiscordNative.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/discord-native-types/DiscordNative.tsx");
 
 export { SystemServiceNotAvailableError };
 export const StoredCrashInformation = { HasRTCConnection: 0, [0]: "HasRTCConnection", IsSendingVideo: 1, [1]: "IsSendingVideo", IsSendingStream: 2, [2]: "IsSendingStream", IsReceivingVideo: 3, [3]: "IsReceivingVideo", IsReceivingStream: 4, [4]: "IsReceivingStream", VideoMediaSessionId: 5, [5]: "VideoMediaSessionId", StreamMediaSessionId: 6, [6]: "StreamMediaSessionId", IntentionalCrashReason: 7, [7]: "IntentionalCrashReason" };

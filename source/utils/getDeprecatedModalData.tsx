@@ -1,12 +1,12 @@
-// Module ID: 5262
-// Function ID: 5263
+// Module ID: 5267
+// Function ID: 5268
 // Name: getDeprecatedModalData
-// Dependencies: [4662, 676, 2]
+// Dependencies: [4669, 676, 2]
 // Exports: default
 
-// Module 5262 (getDeprecatedModalData)
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { ModalAnimation } from "ME";
+// Module 5267 (getDeprecatedModalData)
+import closure_0 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { ModalAnimation } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("utils/getDeprecatedModalData.tsx");
 

@@ -1,29 +1,24 @@
-// Module ID: 4747
-// Function ID: 4748
+// Module ID: 4752
+// Function ID: 4753
 // Name: IconSizes
-// Dependencies: [19, 17, 21, 4661, 712, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 2]
 // Exports: getIconSize, getIconStyle
 
-// Module 4747 (IconSizes)
-import importAllResult from "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 4752 (IconSizes)
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 let obj = { EXTRA_SMALL_10: "extraSmall10", EXTRA_SMALL: "extraSmall", SMALL: "small", SMALL_20: "small20", MEDIUM: "medium", LARGE: "large", CUSTOM: "custom", REFRESH_SMALL_16: "refreshSmall16", SMALL_14: "small14" };
 let closure_5 = createCacheKey.createStyles(() => {
-  let obj = { iconColor: null };
-  obj = { tintColor: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj = { iconColor: null };
+  obj = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
   obj[0] = obj;
   return obj;
 });
 const memoResult = importAllResult.memo(importAllResult.forwardRef((size) => {
-  let accessibilityLabel;
-  let accessible;
-  let color;
-  let disableColor;
-  let resizeMode;
-  let style;
   ({ color, disableColor } = size);
   if (disableColor === undefined) {
     disableColor = false;
@@ -85,7 +80,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((size) => {
 }));
 memoResult.displayName = "Icon";
 memoResult.Sizes = obj;
-const result = require("jsxProd").fileFinishedImporting("design/void/Icon/native/Icon.tsx");
+const result = require("set").fileFinishedImporting("design/void/Icon/native/Icon.tsx");
 
 export default memoResult;
 export const IconSizes = obj;

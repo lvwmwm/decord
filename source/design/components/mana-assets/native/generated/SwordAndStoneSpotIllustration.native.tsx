@@ -1,18 +1,19 @@
-// Module ID: 6232
-// Function ID: 6233
+// Module ID: 6263
+// Function ID: 6264
 // Name: SwordAndStoneSpotIllustration
-// Dependencies: [21, 5449, 6233, 2]
+// Dependencies: [21, 5454, 6264, 2]
 // Exports: SwordAndStoneSpotIllustration
 
-// Module 6232 (SwordAndStoneSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 6263 (SwordAndStoneSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6264 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SwordAndStoneSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SwordAndStoneSpotIllustration.native.tsx");
 
 export const SwordAndStoneSpotIllustration = function SwordAndStoneSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const SwordAndStoneSpotIllustration = function SwordAndStoneSpotIllustrat
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6233);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const SwordAndStoneSpotIllustration = function SwordAndStoneSpotIllustrat
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

@@ -4,5 +4,7 @@
 // Dependencies: [1729]
 
 // Module 1728 (withDecay)
+import validateConfig from "validateConfig" /* 1729 */;
 
-export const withDecay = require("validateConfig").withDecay;
+
+export const withDecay = validateConfig.withDecay;

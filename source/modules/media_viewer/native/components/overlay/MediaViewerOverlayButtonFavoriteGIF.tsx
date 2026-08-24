@@ -1,10 +1,10 @@
-// Module ID: 12060
-// Function ID: 12061
-// Dependencies: [19, 21, 10199, 10195, 4094, 1236, 10211, 10197, 1341, 8994, 9075, 9410, 712, 9412, 2]
+// Module ID: 12112
+// Function ID: 12113
+// Dependencies: [19, 21, 10238, 10234, 4097, 1236, 10250, 10236, 1341, 9031, 9112, 9447, 712, 9449, 2]
 
-// Module 12060
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 12112
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -39,7 +39,7 @@ const memoResult = importAllResult.memo(function GIFFavButton(source) {
       ({ embedProviderName: obj2[0], thumbnail: obj2[1] } = source);
       const gIFThumbnailForFavorite = tmpResult.getGIFThumbnailForFavorite(obj);
       let obj2 = source(isFavoriteGIF[3]);
-      const obj1 = { url: null, src: null, gifSrc: null, width: null, height: null, format: null };
+      obj1 = { url: null, src: null, gifSrc: null, width: null, height: null, format: null };
       obj1[0] = uri;
       obj1[1] = source.uri;
       obj1[2] = gIFThumbnailForFavorite;
@@ -84,6 +84,6 @@ const memoResult = importAllResult.memo(function GIFFavButton(source) {
   obj[2] = tmp4Result;
   tmp4Result = tmp4(uri(YELLOW_300[10]), obj);
 });
-const result = require("useFavoriteGIFs").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaViewerOverlayButtonFavoriteGIF.tsx");
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaViewerOverlayButtonFavoriteGIF.tsx");
 
 export default memoResult;

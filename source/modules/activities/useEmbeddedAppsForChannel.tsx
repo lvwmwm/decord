@@ -1,23 +1,24 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11284
+// Function ID: 11285
 // Name: useEmbeddedApps
-// Dependencies: [19, 4559, 1922, 1390, 589, 4011, 7145, 1370, 2]
+// Dependencies: [19, 4564, 1922, 1390, 589, 4014, 7183, 1370, 2]
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
-// Module 11233 (useEmbeddedApps)
-import noop from "noop";
-import sortActivity from "sortActivity";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import participantFromServer from "participantFromServer";
-import { NO_ACTIVITIES } from "participantFromServer";
+// Module 11284 (useEmbeddedApps)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7183 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "sortActivity" /* 4564 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "participantFromServer" /* 1390 */;
+import { NO_ACTIVITIES } from "participantFromServer" /* 1390 */;
 
 const require = arg1;
 function useEmbeddedApps(arr, arg1) {
   const _require = arr;
-  const importDefault = arg1;
+  importDefault = arg1;
   let mapped = arr.map((applicationId) => applicationId.applicationId);
-  const tmp2 = importDefault(7145)(mapped);
-  const dependencyMap = tmp2;
+  const tmp2 = useGetOrFetchApplicationsDefault(mapped);
+  dependencyMap = tmp2;
   const set = new Set([]);
   const iter = arr[Symbol.iterator]();
   while (iter !== undefined) {
@@ -30,13 +31,13 @@ function useEmbeddedApps(arr, arg1) {
     }
     continue;
   }
-  let items = [mergeGuildAvatar];
+  let items = [closure_5];
   const items1 = [set];
   const stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => {
     const items = [];
     for (const item10006 of set) {
-      let tmp = outer1_5;
-      let arr = items.push(outer1_5.getUser(item10006));
+      let tmp = closure_1_5;
+      arr = items.push(closure_1_5.getUser(item10006));
       continue;
     }
     return items;
@@ -55,19 +56,19 @@ function useEmbeddedApps(arr, arg1) {
         let tmp4 = map;
         let value = map.get(tmp3);
         if (null != value) {
-          if (null != outer1_1) {
+          if (null != closure_1_1) {
             let tmp8 = value;
             let tmp7Result = tmp7(tmp6);
             if (null != tmp7Result) {
               let tmp11 = tmp7Result;
-              let arr = items.push(tmp10);
+              arr = items.push(tmp10);
             }
           }
         }
         continue;
       }
       let tmp13 = null;
-      if (null != outer1_2[arg1]) {
+      if (null != closure_1_2[arg1]) {
         const obj = { embeddedActivity: null, application: null, userParticipantAvatarUrls: null };
         obj[0] = arg0;
         obj[1] = tmp;
@@ -76,43 +77,43 @@ function useEmbeddedApps(arr, arg1) {
       }
       return tmp13;
     });
-    return mapped.filter(arr(tmp2[7]).isNotNullish);
+    return mapped.filter(arr(table[7]).isNotNullish);
   }, items2);
 }
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/activities/useEmbeddedAppsForChannel.tsx");
+let result = require("set").fileFinishedImporting("modules/activities/useEmbeddedAppsForChannel.tsx");
 
 export default function useEmbeddedAppsForChannel(arg0, arg1) {
   const _require = arg0;
-  const items = [participantFromServer];
+  const items = [closure_6];
   return useEmbeddedApps(_require(589).useStateFromStoresArray(items, () => {
     if (null != closure_0) {
       if (null != tmp.id) {
         if ("" !== tmp.id) {
-          let embeddedActivitiesForChannel = outer1_6.getEmbeddedActivitiesForChannel(tmp.id);
+          let embeddedActivitiesForChannel = closure_1_6.getEmbeddedActivitiesForChannel(tmp.id);
         }
         return embeddedActivitiesForChannel;
       }
     }
-    embeddedActivitiesForChannel = outer1_7;
+    embeddedActivitiesForChannel = closure_1_7;
   }), arg1);
 };
 export const useEmbeddedAppsByChannel = function useEmbeddedAppsByChannel(arg0) {
   const _require = arg0;
-  let items = [participantFromServer];
+  let items = [closure_6];
   const tmp = useEmbeddedApps(_require(589).useStateFromStores(items, () => {
     if (null != closure_0) {
-      let embeddedActivitiesForGuild = outer1_6.getEmbeddedActivitiesForGuild(tmp);
+      let embeddedActivitiesForGuild = closure_1_6.getEmbeddedActivitiesForGuild(tmp);
     } else {
-      embeddedActivitiesForGuild = outer1_7;
+      embeddedActivitiesForGuild = closure_1_7;
     }
     return embeddedActivitiesForGuild;
   }));
-  const importDefault = tmp;
+  closure_1 = tmp;
   const items1 = [tmp];
   return React.useMemo(() => {
     const map = new Map();
-    const item = tmp.forEach((embeddedActivity) => {
-      const embeddedActivityLocationChannelId = map(outer1_2[5]).getEmbeddedActivityLocationChannelId(embeddedActivity.embeddedActivity.location);
+    const item = closure_1.forEach((embeddedActivity) => {
+      const embeddedActivityLocationChannelId = map(closure_1_2[5]).getEmbeddedActivityLocationChannelId(embeddedActivity.embeddedActivity.location);
       if (null != embeddedActivityLocationChannelId) {
         let items = map.get(embeddedActivityLocationChannelId);
         if (items == null) {
@@ -129,7 +130,7 @@ export const useEmbeddedAppsByChannel = function useEmbeddedAppsByChannel(arg0) 
 export { useEmbeddedApps };
 export const useEmbeddedAppsWithPresence = function useEmbeddedAppsWithPresence(arg0) {
   const _require = arg0;
-  const items = [sortActivity];
+  const items = [closure_4];
   const items1 = [arg0];
   return _require(589).useStateFromStores(items, () => {
     const map = new Map();
@@ -149,7 +150,7 @@ export const useEmbeddedAppsWithPresence = function useEmbeddedAppsWithPresence(
       }
       const obj = {};
       const merged = Object.assign(embeddedActivity);
-      obj.presenceActivity = outer1_4.findActivity(value, (application_id) => {
+      obj.presenceActivity = closure_1_4.findActivity(value, (application_id) => {
         let id;
         if (embeddedActivity != null) {
           const application = embeddedActivity.application;

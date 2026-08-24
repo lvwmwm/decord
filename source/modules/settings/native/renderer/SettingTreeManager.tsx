@@ -1,11 +1,15 @@
-// Module ID: 15059
-// Function ID: 15060
+// Module ID: 15123
+// Function ID: 15124
 // Name: get
-// Dependencies: [10670, 13998, 13997, 2]
+// Dependencies: [10709, 14066, 14065, 2]
 
-// Module 15059 (get)
-import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
+// Module 15123 (get)
+import set from "set" /* 2 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 10709 */;
+import map from "map" /* 14065 */;
+import frozen from "frozen" /* 14066 */;
 
+const NodeType = GUILD_SELECT_ALL_SERVERS_OPTION_ID.NodeType;
 class SettingTreeManagerCache {
   constructor() {
     obj = Object.create(new.target.prototype);
@@ -62,19 +66,19 @@ prototype2["validate"] = function validate() {
 prototype2["getAncestors"] = function getAncestors(field) {
   const self = this;
   const items = [];
-  let transformParentResult = this.transformParent(require(13998) /* frozen */.SETTING_RENDERER_CONFIG[field].parent);
+  let transformParentResult = this.transformParent(frozen.SETTING_RENDERER_CONFIG[field].parent);
   if (null != transformParentResult) {
     do {
       let arr = items.push(transformParentResult);
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      transformParentResult = self.transformParent(require(13998) /* frozen */.SETTING_RENDERER_CONFIG[transformParentResult].parent);
+      transformParentResult = self.transformParent(frozen.SETTING_RENDERER_CONFIG[transformParentResult].parent);
     } while (null != transformParentResult);
   }
   return items;
 };
 prototype2["isBlocked"] = function isBlocked(field) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   const ancestors = this.getAncestors(field);
   ancestors.push(field);
   return ancestors.some((arg0) => set.has(arg0));
@@ -97,7 +101,7 @@ prototype2["getHighestLevelAncestor"] = function getHighestLevelAncestor(setting
   }
 };
 prototype2["getNearestRouteAncestorDataOrSelf"] = function getNearestRouteAncestorDataOrSelf(setting) {
-  const tmp = require(13998) /* frozen */.SETTING_RENDERER_CONFIG[setting];
+  const tmp = frozen.SETTING_RENDERER_CONFIG[setting];
   if (tmp.type === NodeType.ROUTE) {
     return tmp;
   } else {
@@ -106,7 +110,7 @@ prototype2["getNearestRouteAncestorDataOrSelf"] = function getNearestRouteAncest
     for (const item10013 of ancestors) {
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      let tmp5 = require(13998) /* frozen */.SETTING_RENDERER_CONFIG[item10013];
+      let tmp5 = frozen.SETTING_RENDERER_CONFIG[item10013];
       let tmp6 = tmp5;
       let tmp7 = NodeType;
       if (tmp5.type === NodeType.ROUTE) {
@@ -117,7 +121,7 @@ prototype2["getNearestRouteAncestorDataOrSelf"] = function getNearestRouteAncest
     }
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("[SettingTree] No route ancestor found for setting: " + setting);
+    error = new Error("[SettingTree] No route ancestor found for setting: " + setting);
     throw error;
   }
 };
@@ -133,7 +137,7 @@ prototype2["getBreadcrumbs"] = function getBreadcrumbs(setting) {
     for (const item10009 of ancestors) {
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      let obj = require(13997) /* map */;
+      let obj = map;
       let cachedSettingTitle = obj.getCachedSettingTitle(item10009);
       if (null != cachedSettingTitle) {
         let tmp7 = cachedSettingTitle;
@@ -159,6 +163,6 @@ obj[0] = obj;
 let obj1 = Object.create(SettingTreeManagerCache.prototype);
 obj1[0] = {};
 obj[1] = obj1;
-let result = require("map").fileFinishedImporting("modules/settings/native/renderer/SettingTreeManager.tsx");
+let result = set.fileFinishedImporting("modules/settings/native/renderer/SettingTreeManager.tsx");
 
 export default obj;

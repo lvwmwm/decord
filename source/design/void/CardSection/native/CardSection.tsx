@@ -1,38 +1,30 @@
-// Module ID: 8114
-// Function ID: 8115
+// Module ID: 8153
+// Function ID: 8154
 // Name: CardSection
-// Dependencies: [19, 17, 676, 21, 4661, 6782, 712, 8115, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 6819, 712, 8154, 2]
 // Exports: default
 
-// Module 8114 (CardSection)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
+// Module 8153 (CardSection)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import _modDef8154 from "module_8154" /* 8154 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let c3;
-let c4;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-createCacheKey = { container: { paddingTop: 16, paddingHorizontal: 16 }, title: null, card: null };
-createCacheKey[1] = require("createTextStyle")(require("ME").Fonts.DISPLAY_EXTRABOLD, require("Themes").colors.TEXT_SUBTLE, 12, { uppercase: true, marginBottom: 6 });
-createCacheKey = { borderRadius: require("Themes").radii.xs, overflow: "hidden", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey = { container: { paddingTop: 16, paddingHorizontal: 16 }, title: importDefaultResult(require("ME").Fonts.DISPLAY_EXTRABOLD, ThemesDefault.colors.TEXT_SUBTLE, 12, { uppercase: true, marginBottom: 6 }), card: null };
+createCacheKey = { borderRadius: ThemesDefault.radii.xs, overflow: "hidden", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST };
 createCacheKey[2] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("ME").fileFinishedImporting("design/void/CardSection/native/CardSection.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("design/void/CardSection/native/CardSection.tsx");
 
 export default function CardSection(arg0) {
-  let accessibilityLabel;
-  let accessibilityRole;
-  let cardStyle;
-  let children;
-  let headerComponent;
-  let style;
-  let title;
-  let titleStyle;
   ({ title, children, headerComponent } = arg0);
   ({ titleStyle, cardStyle, style, accessibilityRole, accessibilityLabel } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { style: items, accessibilityRole, accessibilityLabel, children: null };
   items = [tmp.container, style];
   let tmp4 = null;
@@ -41,7 +33,7 @@ export default function CardSection(arg0) {
     const items1 = [tmp.title, titleStyle];
     obj[0] = items1;
     obj[2] = title;
-    tmp4 = callback(importDefault(8115), obj);
+    tmp4 = callback(_modDef8154, obj);
   }
   const items2 = [tmp4, , ];
   let tmp8 = null;

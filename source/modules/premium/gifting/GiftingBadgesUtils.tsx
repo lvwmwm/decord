@@ -1,14 +1,18 @@
-// Module ID: 13004
-// Function ID: 13005
+// Module ID: 13059
+// Function ID: 13060
 // Name: getGiftingBadgeProgressPercent
-// Dependencies: [8936, 1922, 9592, 13005, 589, 4196, 1377, 2]
+// Dependencies: [8973, 1922, 9629, 13060, 589, 4200, 1377, 2]
 // Exports: getGiftingBadgeProgressPercent, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgesDesktopEnabled
 
-// Module 13004 (getGiftingBadgeProgressPercent)
-import { getSingleRequirementThreshold as closure_2 } from "initialize";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 13059 (getGiftingBadgeProgressPercent)
+import set from "set" /* 2 */;
+import initialize from "initialize" /* 8973 */;
+import apexExperiment from "apexExperiment" /* 9629 */;
+import apexExperiment2 from "apexExperiment" /* 13060 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
-let result = require("apexExperiment").fileFinishedImporting("modules/premium/gifting/GiftingBadgesUtils.tsx");
+let closure_2 = initialize.getSingleRequirementThreshold;
+let result = set.fileFinishedImporting("modules/premium/gifting/GiftingBadgesUtils.tsx");
 
 export const getGiftingBadgeProgressPercent = function getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier) {
   const tmp = callback(currentTier);
@@ -29,10 +33,10 @@ export const getGiftingBadgeProgressPercent = function getGiftingBadgeProgressPe
   return Math.min(Math.max(num3, 0), 100);
 };
 export const useIsGiftingBadgesDesktopEnabled = function useIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = require(9592) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = apexExperiment.GiftingBadgeExperiment;
   let obj = { location };
   const enabled = GiftingBadgeExperiment.useConfig(obj).enabled;
-  const GiftingBadgeDesktopExperiment = require(13005) /* apexExperiment */.GiftingBadgeDesktopExperiment;
+  const GiftingBadgeDesktopExperiment = apexExperiment2.GiftingBadgeDesktopExperiment;
   let str = "-DISABLED";
   if (enabled) {
     str = "";
@@ -41,11 +45,11 @@ export const useIsGiftingBadgesDesktopEnabled = function useIsGiftingBadgesDeskt
   return GiftingBadgeDesktopExperiment.useConfig(obj).enabled && enabled;
 };
 export const getIsGiftingBadgesDesktopEnabled = function getIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = require(9592) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = apexExperiment.GiftingBadgeExperiment;
   let obj = { location };
   let enabled = GiftingBadgeExperiment.getConfig(obj).enabled;
   if (enabled) {
-    const GiftingBadgeDesktopExperiment = require(13005) /* apexExperiment */.GiftingBadgeDesktopExperiment;
+    const GiftingBadgeDesktopExperiment = apexExperiment2.GiftingBadgeDesktopExperiment;
     obj = { location: null };
     obj[0] = location;
     enabled = GiftingBadgeDesktopExperiment.getConfig(obj).enabled;
@@ -54,9 +58,9 @@ export const getIsGiftingBadgesDesktopEnabled = function getIsGiftingBadgesDeskt
 };
 export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleToShowGiftingBadgeCoachmark(location) {
   const _location = location.location;
-  const GiftingBadgeExperiment = require(9592) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = apexExperiment.GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig({ location: _location }).enabled;
-  const GiftingBadgeDesktopExperiment = require(13005) /* apexExperiment */.GiftingBadgeDesktopExperiment;
+  const GiftingBadgeDesktopExperiment = apexExperiment2.GiftingBadgeDesktopExperiment;
   let str = "-DISABLED";
   if ("web" === location.platform) {
     str = "";
@@ -70,7 +74,7 @@ export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleTo
     tmp4 = enabled2;
   }
   let tmpResult = tmp(589);
-  const items = [mergeGuildAvatar];
+  const items = [closure_3];
   const stateFromStores = tmpResult.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let flag;
@@ -82,7 +86,7 @@ export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleTo
     }
     return flag;
   });
-  tmpResult = tmp(4196);
+  tmpResult = tmp(4200);
   const result = tmpResult.useIsDismissibleContentDismissed_UNSAFE(tmp(1377).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
   if (tmp4) {
     tmp4 = stateFromStores;

@@ -1,9 +1,12 @@
-// Module ID: 8390
-// Function ID: 8391
+// Module ID: 8429
+// Function ID: 8430
 // Name: set
-// Dependencies: [2, 8391]
+// Dependencies: [2, 8430]
 
-// Module 8390 (set)
-const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.tsx");
+// Module 8429 (set)
+import set from "set" /* 2 */;
+import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 8430 */;
 
-export { default } from "useMaybeFetchCollectiblesCategories";
+const result = set.fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.tsx");
+
+export default useMaybeFetchCollectiblesCategoriesDefault;

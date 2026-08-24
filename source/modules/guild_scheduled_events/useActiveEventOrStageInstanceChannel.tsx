@@ -1,18 +1,20 @@
-// Module ID: 15448
-// Function ID: 15449
+// Module ID: 15512
+// Function ID: 15513
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [1391, 8891, 15447, 2]
+// Dependencies: [1391, 8928, 15511, 2]
 // Exports: useActiveEventOrStageInstanceChannel
 
-// Module 15448 (useActiveEventOrStageInstanceChannel)
-import ensureGuildLoaded from "ensureGuildLoaded";
+// Module 15512 (useActiveEventOrStageInstanceChannel)
+import useGuildEvents from "useGuildEvents" /* 8928 */;
+import useLiveStageChannelsDefault from "useLiveStageChannels" /* 15511 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
-const require = arg1;
-const result = require("useLiveStageChannels").fileFinishedImporting("modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx");
 
 export const useActiveEventOrStageInstanceChannel = function useActiveEventOrStageInstanceChannel(id) {
-  let firstActiveEventChannel = require(8891) /* useGuildEvents */.useFirstActiveEventChannel(id);
-  const first = importDefault(15447)(id)[0];
+  let firstActiveEventChannel = useGuildEvents.useFirstActiveEventChannel(id);
+  const first = useLiveStageChannelsDefault(id)[0];
   if (first != null) {
     id = first.id;
   }

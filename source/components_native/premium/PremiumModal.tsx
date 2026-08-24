@@ -1,35 +1,19 @@
-// Module ID: 7381
-// Function ID: 7382
+// Module ID: 7419
+// Function ID: 7420
 // Name: PremiumModal
-// Dependencies: [19, 676, 21, 1236, 6314, 7382, 12928, 12931, 12973, 12985, 7139, 6312, 2]
+// Dependencies: [19, 676, 21, 1236, 6345, 7420, 12983, 12986, 13028, 13040, 7177, 6343, 2]
 // Exports: default
 
-// Module 7381 (PremiumModal)
-import "noop";
-import { UserSettingsSections } from "ME";
-import { jsx } from "jsxProd";
+// Module 7419 (PremiumModal)
+import noopAll from "noop" /* 19 */;
+import { UserSettingsSections } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("components_native/premium/PremiumModal.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("components_native/premium/PremiumModal.tsx");
 
 export default function PremiumModal(arg0) {
-  let activitySessionId;
-  let analyticsLocation;
-  let analyticsLocations;
-  let applicationId;
-  let channelId;
-  let giftRecipientId;
-  let guildId;
-  let initialRoute;
-  let isBoostPurchaseFlow;
-  let onBack;
-  let onClose;
-  let onPaymentDismiss;
-  let onPaymentSuccess;
-  let planId;
-  let predicate;
-  let premiumFeatureCardOrder;
-  let showCurrentPlan;
   ({ initialRoute, onClose } = arg0);
   ({ applicationId, analyticsLocation, analyticsLocations, onBack, giftRecipientId, predicate, showCurrentPlan, isBoostPurchaseFlow, planId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss } = arg0);
   if (initialRoute == null) {
@@ -38,7 +22,7 @@ export default function PremiumModal(arg0) {
   let obj = { value: onClose(onBack[10])(analyticsLocations).analyticsLocations, children: null };
   obj = { screens: null, initialRouteName: null };
   obj = {};
-  const obj1 = { title: null, headerLeft: null, render: null };
+  obj1 = { title: null, headerLeft: null, render: null };
   const intl = analyticsLocation(tmp[3]).intl;
   obj1[0] = intl.string(analyticsLocation(onBack[3]).t.lpNrPu);
   let obj4 = analyticsLocation(tmp[4]);
@@ -76,9 +60,6 @@ export default function PremiumModal(arg0) {
   };
   obj4[2] = { predicate, showCurrentPlan, isBoostPurchaseFlow };
   obj4[3] = function render(arg0) {
-    let isBoostPurchaseFlow;
-    let predicate;
-    let showCurrentPlan;
     ({ predicate, showCurrentPlan, isBoostPurchaseFlow } = arg0);
     return planId(onClose(onBack[8]), { analyticsLocation, predicate, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, guildId });
   };

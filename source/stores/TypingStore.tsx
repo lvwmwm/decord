@@ -1,24 +1,23 @@
-// Module ID: 11152
-// Function ID: 11153
+// Module ID: 11191
+// Function ID: 11192
 // Name: handleTypingStart
-// Dependencies: [1218, 1391, 7440, 676, 687, 5389, 530, 709, 589, 2]
+// Dependencies: [1218, 1391, 7478, 676, 687, 5394, 530, 709, 589, 2]
 
-// Module 11152 (handleTypingStart)
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { SlowmodeType } from "setCooldown";
-import { Endpoints } from "ME";
-import { Store } from "initialize";
+// Module 11191 (handleTypingStart)
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import { SlowmodeType } from "setCooldown" /* 7478 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function handleTypingStart(arg0) {
-  let channelId;
-  let guildId;
-  let userId;
-  ({ channelId, userId, guildId } = arg0);
+  ({ channelId, userId, guildId, customTypingIndicatorConfig } = arg0);
   let tmp = dependencyMap[channelId];
   if (tmp == null) {
-    tmp = closure_12;
+    tmp = closure_13;
   }
   let obj = {};
   const merged = Object.assign(tmp);
@@ -33,13 +32,13 @@ function handleTypingStart(arg0) {
   if (null != guildId) {
     let tmp6 = dependencyMap2[guildId];
     if (tmp6 == null) {
-      tmp6 = closure_13;
+      tmp6 = closure_14;
     }
     obj = {};
     const merged1 = Object.assign(tmp6);
     let tmp10 = obj[channelId];
     if (tmp10 == null) {
-      tmp10 = closure_12;
+      tmp10 = closure_13;
     }
     obj = {};
     const merged2 = Object.assign(tmp10);
@@ -49,38 +48,44 @@ function handleTypingStart(arg0) {
     obj[channelId] = obj;
     dependencyMap2[guildId] = obj;
   }
+  let tmp16 = undefined !== customTypingIndicatorConfig;
+  if (tmp16) {
+    tmp16 = obj1[userId] !== customTypingIndicatorConfig;
+  }
+  if (tmp16) {
+    obj1 = {};
+    const merged3 = Object.assign(obj1);
+    obj1[userId] = customTypingIndicatorConfig;
+  }
 }
 function handleTypingStop(arg0) {
-  let channelId;
-  let guildId;
-  let userId;
   ({ channelId, userId, guildId } = arg0);
   if (null != dependencyMap[channelId]) {
-    if (null != tmp7[userId]) {
+    if (null != tmp6[userId]) {
       let obj = {};
-      const merged = Object.assign(tmp7);
+      const merged = Object.assign(tmp6);
       const _clearTimeout = clearTimeout;
       clearTimeout(obj[userId]);
-      delete tmp6[tmp3];
+      delete tmp5[tmp2];
       dependencyMap[channelId] = obj;
       if (null != guildId) {
         if (null != dependencyMap2[guildId]) {
-          if (null != tmp23[channelId]) {
-            if (null != tmp24[userId]) {
+          if (null != tmp27[channelId]) {
+            if (null != tmp28[userId]) {
               obj = {};
-              const merged1 = Object.assign(tmp24);
-              delete tmp5[tmp3];
+              const merged1 = Object.assign(tmp28);
+              delete tmp5[tmp2];
               obj = {};
-              const merged2 = Object.assign(tmp23);
+              const merged2 = Object.assign(tmp27);
               const _Object = Object;
               if (0 === Object.keys(obj).length) {
-                delete tmp3[tmp4];
+                delete tmp4[tmp];
               } else {
                 obj[channelId] = obj;
               }
               const _Object2 = Object;
               if (0 === Object.keys(obj).length) {
-                delete tmp[tmp2];
+                delete tmp[tmp3];
               } else {
                 dependencyMap2[guildId] = obj;
               }
@@ -88,49 +93,68 @@ function handleTypingStop(arg0) {
           }
         }
       }
+      if (userId in obj1) {
+        const _Object3 = Object;
+        const values = Object.values(dependencyMap);
+        if (!values.some((arg0) => userId in arg0)) {
+          obj1 = {};
+          const merged3 = Object.assign(obj1);
+          delete tmp[tmp2];
+        }
+      }
     }
   }
   return false;
 }
 function handleConnectionOpen() {
-  let closure_10 = {};
-  let closure_11 = {};
+  closure_10 = {};
+  closure_11 = {};
+  closure_12 = {};
 }
-let closure_8 = 10 * require("set").Millis.SECOND;
-let closure_9 = 1.5 * require("set").Millis.SECOND;
+let closure_8 = 10 * setDefault.Millis.SECOND;
+let closure_9 = 1.5 * setDefault.Millis.SECOND;
 let closure_10 = {};
 let closure_11 = {};
-let closure_12 = Object.freeze({});
+let closure_12 = {};
 let closure_13 = Object.freeze({});
+let closure_14 = Object.freeze({});
+const Store = initializeDefault.Store;
 class TypingStore extends Store {
 }
 const prototype = TypingStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, ensureGuildLoaded);
+  this.waitFor(closure_4, closure_5);
 };
 prototype["getTypingUsers"] = function getTypingUsers(channelId) {
   let tmp = dependencyMap[channelId];
   if (tmp == null) {
-    tmp = closure_12;
+    tmp = closure_13;
   }
   return tmp;
 };
 prototype["getTypingUsersByGuild"] = function getTypingUsersByGuild(closure_0) {
   let tmp = dependencyMap2[closure_0];
   if (tmp == null) {
-    tmp = closure_13;
+    tmp = closure_14;
   }
   return tmp;
 };
 prototype["isTyping"] = function isTyping(id, id2) {
   let tmp = dependencyMap[id];
   if (tmp == null) {
-    tmp = closure_12;
+    tmp = closure_13;
   }
   return null != tmp[id2];
 };
+prototype["getCustomTypingIndicatorConfig"] = function getCustomTypingIndicatorConfig(arg0) {
+  let tmp = table[arg0];
+  if (tmp == null) {
+    tmp = null;
+  }
+  return tmp;
+};
 TypingStore.displayName = "TypingStore";
-const typingStore = new TypingStore(require("dispatcher"), {
+const typingStore = new TypingStore(dispatcherDefault, {
   TYPING_START: handleTypingStart,
   TYPING_STOP: handleTypingStop,
   TYPING_START_LOCAL: function handleTypingStartLocal(channelId) {
@@ -139,7 +163,7 @@ const typingStore = new TypingStore(require("dispatcher"), {
     id = store.getId();
     if (null == id) {
       return false;
-    } else if (channelId === channelId(5389).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    } else if (channelId === channelId(5394).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       return false;
     } else {
       let tmp3 = null != obj;
@@ -173,26 +197,26 @@ const typingStore = new TypingStore(require("dispatcher"), {
           tmp = obj.channelId === channelId;
         }
         if (tmp) {
-          tmp = id === outer1_4.getId();
+          tmp = id === closure_1_4.getId();
         }
         if (tmp) {
           tmp = null != obj.timeout;
         }
         if (tmp) {
           obj.timeout = null;
-          let tmp10 = outer1_10[channelId];
+          let tmp10 = closure_1_10[channelId];
           if (tmp10 == null) {
-            tmp10 = outer1_12;
+            tmp10 = closure_1_13;
           }
           let num = 0;
-          if (tmp10 !== outer1_12) {
+          if (tmp10 !== closure_1_13) {
             const _Object = Object;
             num = Object.keys(tmp10).length;
           }
           if (num <= 5) {
-            const HTTP = channelId(outer1_2[6]).HTTP;
+            const HTTP = channelId(closure_1_2[6]).HTTP;
             obj = { url: null, oldFormErrors: true, rejectWithError: true };
-            obj[0] = outer1_7.TYPING(tmp8);
+            obj[0] = closure_1_7.TYPING(tmp8);
             HTTP.post(obj).then((status) => {
               if (200 === status.status) {
                 let num = status.body.message_send_cooldown_ms;
@@ -204,20 +228,20 @@ const typingStore = new TypingStore(require("dispatcher"), {
                   num2 = 0;
                 }
                 if (num > 0) {
-                  let obj = outer1_1(outer1_2[7]);
+                  obj = closure_1_1(closure_1_2[7]);
                   obj = { type: "SLOWMODE_SET_COOLDOWN", channelId: null, slowmodeType: null, cooldownMs: null };
                   obj[1] = closure_0;
-                  obj[2] = outer1_6.SendMessage;
+                  obj[2] = closure_1_6.SendMessage;
                   obj[3] = num;
                   obj.dispatch(obj);
                 }
                 if (num2 > 0) {
                   obj = { type: "SLOWMODE_SET_COOLDOWN", channelId: null, slowmodeType: null, cooldownMs: null };
                   obj[1] = closure_0;
-                  obj[2] = outer1_6.CreateThread;
+                  obj[2] = closure_1_6.CreateThread;
                   obj[3] = num2;
-                  outer1_1(outer1_2[7]).dispatch(obj);
-                  const obj3 = outer1_1(outer1_2[7]);
+                  closure_1_1(closure_1_2[7]).dispatch(obj);
+                  const obj3 = closure_1_1(closure_1_2[7]);
                 }
               }
             });
@@ -274,8 +298,6 @@ const typingStore = new TypingStore(require("dispatcher"), {
   CONNECTION_OPEN: handleConnectionOpen,
   OVERLAY_INITIALIZE: handleConnectionOpen,
   MESSAGE_CREATE: function handleIncomingMessage(message) {
-    let channelId;
-    let guildId;
     ({ channelId, guildId } = message);
     const author = message.message.author;
     if (message.optimistic) {
@@ -308,6 +330,6 @@ const typingStore = new TypingStore(require("dispatcher"), {
     return tmp9Result;
   }
 });
-let result = require("setCooldown").fileFinishedImporting("stores/TypingStore.tsx");
+let result = require("set").fileFinishedImporting("stores/TypingStore.tsx");
 
 export default typingStore;

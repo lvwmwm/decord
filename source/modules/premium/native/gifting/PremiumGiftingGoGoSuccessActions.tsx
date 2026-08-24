@@ -1,29 +1,27 @@
-// Module ID: 10387
-// Function ID: 10388
+// Module ID: 10426
+// Function ID: 10427
 // Name: PremiumGiftingGoGoSuccessActions
-// Dependencies: [19, 7628, 676, 678, 21, 4661, 712, 9625, 589, 7931, 10304, 1500, 9592, 4381, 10296, 9067, 5300, 7159, 10309, 1236, 2399, 4745, 2]
+// Dependencies: [19, 7666, 676, 678, 21, 4668, 712, 9662, 589, 7970, 10343, 1500, 9629, 4385, 10335, 9104, 5305, 7197, 10348, 1236, 2400, 4750, 2]
 // Exports: default
 
-// Module 10387 (PremiumGiftingGoGoSuccessActions)
-import getSystemLocale from "getSystemLocale";
-import createEmptyPromotionsByType from "createEmptyPromotionsByType";
-import { AnalyticsSections } from "ME";
-import { CollectiblesMobileShopScreen as closure_6 } from "items";
-import jsxProd from "Button";
-import createCacheKey from "createCacheKey";
+// Module 10426 (PremiumGiftingGoGoSuccessActions)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "createEmptyPromotionsByType" /* 7666 */;
+import { AnalyticsSections } from "ME" /* 676 */;
+import { CollectiblesMobileShopScreen as closure_6 } from "items" /* 678 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles(() => {
   let obj = { promoDetails: null };
-  obj = { marginBottom: importDefault(712).space.PX_6, paddingVertical: importDefault(712).space.PX_12, paddingHorizontal: importDefault(712).space.PX_16, borderRadius: importDefault(712).radii.md, backgroundColor: importDefault(712).colors.BACKGROUND_MOD_SUBTLE };
+  obj = { marginBottom: ThemesDefault.space.PX_6, paddingVertical: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16, borderRadius: ThemesDefault.radii.md, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
   obj[0] = obj;
   return obj;
 });
-let result = require("ME").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftingGoGoSuccessActions.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftingGoGoSuccessActions.tsx");
 
 export default function PremiumGiftingGoGoSuccessActions(giftCode) {
   giftCode = giftCode.giftCode;
@@ -36,7 +34,7 @@ export default function PremiumGiftingGoGoSuccessActions(giftCode) {
   const nativeGiftContext = obj.useNativeGiftContext();
   onClose = nativeGiftContext.onClose;
   prePurchaseGiftingBadgeProgress = nativeGiftContext.prePurchaseGiftingBadgeProgress;
-  let obj1 = onClose(navigation[8]);
+  obj1 = onClose(navigation[8]);
   let items = [giftCodeURL];
   const stateFromStores = obj1.useStateFromStores(items, () => {
     const marketingComponentByType = giftCodeURL.getMarketingComponentByType(onClose(navigation[9]).MarketingComponentType.GIFT_CUSTOMIZATION_BANNER);
@@ -77,7 +75,7 @@ export default function PremiumGiftingGoGoSuccessActions(giftCode) {
   const callback1 = enabled.useCallback(() => {
     let obj = onClose(navigation[15]);
     obj = { url: giftCodeURL };
-    obj.showShareActionSheet(obj, outer1_5.PREMIUM_GIFT_SUCCESS_MODAL);
+    obj.showShareActionSheet(obj, closure_1_5.PREMIUM_GIFT_SUCCESS_MODAL);
     let tmp4 = enabled;
     if (enabled) {
       tmp4 = null != prePurchaseGiftingBadgeProgress;
@@ -95,7 +93,7 @@ export default function PremiumGiftingGoGoSuccessActions(giftCode) {
     obj = { analyticsSource: prePurchaseGiftingBadgeProgress(navigation[17]).PREMIUM_GIFT_SUCCESS_MODAL, analyticsLocations: null, screen: null };
     const items = [prePurchaseGiftingBadgeProgress(navigation[17]).PREMIUM_GIFT_SUCCESS_MODAL];
     obj[1] = items;
-    obj[2] = outer1_6.ORBS;
+    obj[2] = closure_1_6.ORBS;
     const result = obj.openCollectiblesShopMobile(obj);
   }, items3);
   if (tmp16) {

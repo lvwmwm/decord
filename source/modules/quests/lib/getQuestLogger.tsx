@@ -1,18 +1,17 @@
-// Module ID: 7459
-// Function ID: 7460
+// Module ID: 7497
+// Function ID: 7498
 // Name: getQuestLogger
 // Dependencies: [706, 505, 3, 2]
 // Exports: getQuestLogger
 
-// Module 7459 (getQuestLogger)
-import refreshSourceMapCookie from "refreshSourceMapCookie";
-import { NOOP } from "sum";
+// Module 7497 (getQuestLogger)
+import timestampDefault from "timestamp" /* 3 */;
+import closure_2 from "refreshSourceMapCookie" /* 706 */;
+import { NOOP } from "sum" /* 505 */;
 
-const result = require("timestamp").fileFinishedImporting("modules/quests/lib/getQuestLogger.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/lib/getQuestLogger.tsx");
 
 export const getQuestLogger = function getQuestLogger(getQuestLogger) {
-  let _location;
-  let quest;
   let obj = getQuestLogger;
   if (getQuestLogger === undefined) {
     obj = {};
@@ -33,7 +32,7 @@ export const getQuestLogger = function getQuestLogger(getQuestLogger) {
     const _HermesInternal2 = HermesInternal;
     str = "-" + questName + ")";
   }
-  let tmp4 = importDefault(3);
+  let tmp4 = timestampDefault;
   tmp4 = new tmp4("QuestLogger" + str2 + str);
   obj = { log: isLoggingQuestEvents ? tmp4.log : NOOP, warn: isLoggingQuestEvents ? tmp4.warn : NOOP, error: isLoggingQuestEvents ? tmp4.error : NOOP, info: isLoggingQuestEvents ? tmp4.info : NOOP, verbose: isLoggingQuestEvents ? tmp4.verbose : NOOP, trace: isLoggingQuestEvents ? tmp4.trace : NOOP };
   return obj;

@@ -1,17 +1,15 @@
 // Module ID: 6646
 // Function ID: 6647
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 6647, 6648, 6595]
+// Dependencies: [42, 41, 93, 95, 98, 19]
 
 // Module 6646 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
+import _inheritsDefault from "_inherits" /* 98 */;
+import FilterPrimitive from "_classCallCheck" /* 41 */;
+import closure_1 from "_possibleConstructorReturn" /* 93 */;
+import closure_2 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
-const LinearGradient = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -23,59 +21,48 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
-class LinearGradient {
+class FilterPrimitive {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, LinearGradient);
-    tmp2 = __esModule;
-    obj = __esModule(LinearGradient);
-    tmp3 = __esModule;
+    items = [...arguments];
+    closure_0 = undefined;
+    tmp = FilterPrimitive(this, closure_0);
+    items1 = [...items];
+    tmp2 = closure_2;
+    obj = closure_2(closure_0);
+    tmp3 = closure_1;
     if (_isNativeReflectConstruct()) {
-      tmp7 = globalThis;
+      tmp5 = globalThis;
       _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, items1);
     }
-    return tmp3(self, constructResult);
+    tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.root = null;
+    tmp3Result.refMethod = (root) => {
+      closure_0.root = root;
+    };
+    tmp3Result.setNativeProps = (arg0) => {
+      root = root.root;
+      if (root != null) {
+        root.setNativeProps(arg0);
+      }
+    };
+    return tmp3Result;
   }
 }
-require("_inherits")(LinearGradient, require("_isNativeReflectConstruct"));
-const items = [
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const props = this.props;
-      let obj = { x1: props.x1, y1: props.y1, x2: props.x2, y2: props.y2 };
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const merged = Object.assign(obj);
-      const merged1 = Object.assign(self(6648)(props, this));
-      return jsx(self(6647), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
-    }
-  }
-];
-const importDefaultResultResult = importDefaultResult(LinearGradient, items);
-importDefaultResultResult.displayName = "LinearGradient";
-importDefaultResultResult.defaultProps = { x1: "0%", y1: "0%", x2: "100%", y2: "0%" };
+_inheritsDefault(FilterPrimitive, require("noop").Component);
+const importDefaultResultResult = importDefaultResult(FilterPrimitive);
+importDefaultResultResult.defaultPrimitiveProps = {};
 
 export default importDefaultResultResult;

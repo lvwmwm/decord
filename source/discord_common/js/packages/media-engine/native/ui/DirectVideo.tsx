@@ -1,34 +1,17 @@
-// Module ID: 4574
-// Function ID: 4575
+// Module ID: 4579
+// Function ID: 4580
 // Name: logger
-// Dependencies: [19, 21, 4, 4499, 4575, 2]
+// Dependencies: [19, 21, 4, 4580, 4581, 2]
 // Exports: default
 
-// Module 4574 (logger)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 4579 (logger)
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const logger = new require("classNames").Logger("DirectVideo");
+const logger = new require("log").Logger("DirectVideo");
 logger.enableNativeLogger(true);
-class RefCountedStream {
-  constructor(arg0) {
-    obj = Object.create(new.target.prototype);
-    obj.refcount = 1;
-    obj.stream = window.createDiscordStream(global);
-    return obj;
-  }
-}
-const prototype = RefCountedStream.prototype;
-prototype["addref"] = function addref() {
-  this.refcount = this.refcount + 1;
-};
-prototype["release"] = function release() {
-  this.refcount = this.refcount - 1;
-  return 0 === this.refcount;
-};
-const map = new Map();
-let result = require("log").fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/DirectVideo.tsx");
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/DirectVideo.tsx");
 
 export default function DirectVideo(streamId, onContainerResized) {
   streamId = streamId.streamId;
@@ -44,9 +27,9 @@ export default function DirectVideo(streamId, onContainerResized) {
   }
   const merged = Object.assign(streamId, Object.create(null));
   let ref;
-  let closure_6;
-  let closure_7;
-  let closure_8;
+  closure_6 = undefined;
+  closure_7 = undefined;
+  closure_8 = undefined;
   ref = onResize.useRef(null);
   closure_6 = onResize.useRef(null);
   closure_7 = onResize.useRef({ width: 0, height: 0 });
@@ -97,8 +80,6 @@ export default function DirectVideo(streamId, onContainerResized) {
         }
       });
       const listener1 = element.addEventListener("resize", function handleResize() {
-        let height;
-        let width;
         const current = ref.current;
         let num;
         ({ width, height } = ref2.current);
@@ -121,7 +102,7 @@ export default function DirectVideo(streamId, onContainerResized) {
           obj[0] = num;
           obj[1] = num2;
           const current3 = closure_8.current;
-          const onResize = current3.onResize;
+          onResize = current3.onResize;
           if (onResize != null) {
             onResize(obj);
           }
@@ -129,9 +110,9 @@ export default function DirectVideo(streamId, onContainerResized) {
         }
       });
       const listener2 = element.addEventListener("canplaythrough", function handleReady() {
-        outer1_5.info("handleReady for " + closure_8.current.streamId + ", have onReady callback = " + null != closure_8.current.onReady);
+        closure_1_5.info("handleReady for " + closure_8.current.streamId + ", have onReady callback = " + null != closure_8.current.onReady);
         const current = closure_8.current;
-        const onReady = current.onReady;
+        onReady = current.onReady;
         if (onReady != null) {
           onReady();
         }
@@ -163,46 +144,14 @@ export default function DirectVideo(streamId, onContainerResized) {
       if (flag) {
         if (null != current.srcObject) {
           current.srcObject = null;
-          let value = store.get(current);
-          if (tmp16) {
-            let voiceEngine = streamId(onReady[3]).getVoiceEngine();
-            let result = voiceEngine.removeDirectVideoOutputSink(tmp15);
-            obj4.delete(tmp15);
-            const obj6 = streamId(onReady[3]);
-          }
-          obj4 = store;
-          tmp16 = null != value && value.release();
         }
       } else {
         const _HermesInternal = HermesInternal;
         ref.info("attaching srcObject for " + current);
-        value = store.get(current);
-        if (null == value) {
-          if (typeof ref !== "function") {
-            HermesBuiltin.throwTypeError();
-          }
-          const obj = Object.create(ref.prototype);
-          obj.refcount = 1;
-          const _window = window;
-          obj.stream = window.createDiscordStream(tmp2);
-          const voiceEngine1 = streamId(onReady[3]).getVoiceEngine();
-          const result1 = voiceEngine1.addDirectVideoOutputSink(tmp2);
-          const result2 = store.set(tmp2, obj);
-          value = obj;
-          const obj2 = streamId(onReady[3]);
-          const tmp7 = ref;
-        } else {
-          value.addref();
-        }
-        current.srcObject = value.stream;
+        const result = streamId(onReady[3]).acquireDirectVideoStream(current);
+        current.srcObject = result.stream;
         return () => {
-          const value = closure_7.get(current);
-          if (tmp2) {
-            const voiceEngine = streamId(onReady[3]).getVoiceEngine();
-            const result = voiceEngine.removeDirectVideoOutputSink(tmp);
-            closure_7.delete(tmp);
-            const obj3 = streamId(onReady[3]);
-          }
+          closure_1.release();
           current.srcObject = null;
         };
       }

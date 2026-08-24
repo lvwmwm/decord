@@ -1,31 +1,31 @@
-// Module ID: 5948
-// Function ID: 5949
+// Module ID: 5979
+// Function ID: 5980
 // Name: MushroomIllocon
-// Dependencies: [21, 5449, 5949, 2]
+// Dependencies: [21, 5454, 5980, 2]
 // Exports: MushroomIllocon
 
-// Module 5948 (MushroomIllocon)
-import { jsx } from "jsxProd";
+// Module 5979 (MushroomIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5980 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MushroomIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/MushroomIllocon.native.tsx");
 
 export const MushroomIllocon = function MushroomIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5949);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

@@ -1,11 +1,13 @@
-// Module ID: 5091
-// Function ID: 5092
+// Module ID: 5096
+// Function ID: 5097
 // Name: result
 // Dependencies: [687, 2]
 // Exports: createMemberSearchCursor
 
-// Module 5091 (result)
-const result = 2 * require("set").Millis.DAY;
+// Module 5096 (result)
+import setDefault from "set" /* 687 */;
+
+const result = 2 * setDefault.Millis.DAY;
 const result1 = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyElasticSearchQueryTypes.tsx");
 
 export const UNUSUAL_DM_COMPARISON_DELTA = result;

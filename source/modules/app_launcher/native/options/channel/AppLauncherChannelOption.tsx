@@ -1,32 +1,24 @@
-// Module ID: 11365
-// Function ID: 11366
+// Module ID: 11416
+// Function ID: 11417
 // Name: AppLauncherChannelOption
-// Dependencies: [32, 19, 1391, 21, 589, 4984, 11354, 11366, 4342, 11366, 2007, 2]
+// Dependencies: [32, 19, 1391, 21, 589, 4989, 11405, 11417, 4346, 11417, 2008, 2]
 // Exports: default
 
-// Module 11365 (AppLauncherChannelOption)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { jsx } from "jsxProd";
+// Module 11416 (AppLauncherChannelOption)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/app_launcher/native/options/channel/AppLauncherChannelOption.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/options/channel/AppLauncherChannelOption.tsx");
 
 export default function AppLauncherChannelOption(option) {
-  let autoFocus;
-  let _slicedToArray;
-  let noop;
-  let ensureGuildLoaded;
-  let hasError;
-  let importDefault;
-  let onChannelPress;
-  let style;
   option = option.option;
   ({ initialValue: importDefault, onChannelPress } = option);
-  ({ onActionSheetDismiss: _slicedToArray, channel: noop, onPress: ensureGuildLoaded } = option);
+  ({ onActionSheetDismiss: closure_3, channel: closure_4, onPress: closure_5 } = option);
   let first;
-  let closure_7;
+  closure_7 = undefined;
   let stateFromStores;
   ({ style, autoFocus, hasError } = option);
   let tmp = callback(React.useState(() => {
@@ -42,9 +34,9 @@ export default function AppLauncherChannelOption(option) {
   first = tmp[0];
   closure_7 = tmp[1];
   let obj = option(onChannelPress[4]);
-  const items = [ensureGuildLoaded];
+  const items = [closure_5];
   const items1 = [first];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(first), items1);
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getChannel(first), items1);
   const items2 = [onChannelPress, first, stateFromStores];
   const effect = React.useEffect(() => {
     let tmp = null != first;
@@ -67,13 +59,13 @@ export default function AppLauncherChannelOption(option) {
   obj[4] = tmp10;
   obj[5] = first(tmp3(tmp4[7]).ChannelIcon, { channel: stateFromStores });
   obj[6] = function onPress() {
-    if (ensureGuildLoaded != null) {
+    if (closure_5 != null) {
       tmp();
     }
-    let obj = outer1_1(onChannelPress[8]);
+    let obj = closure_1_1(onChannelPress[8]);
     obj = {
       option,
-      channel: noop,
+      channel: closure_4,
       onChannelPress(channel) {
         channel = channel.channel;
         let id;
@@ -83,7 +75,7 @@ export default function AppLauncherChannelOption(option) {
         closure_7(id);
         callback({ channel });
       },
-      onActionSheetDismiss: _slicedToArray
+      onActionSheetDismiss: closure_3
     };
     obj.openLazy(option(onChannelPress[10])(onChannelPress[9], onChannelPress.paths), option(onChannelPress[7]).APP_LAUNCHER_CHANNEL_LIST_ACTION_SHEET_KEY, obj);
   };

@@ -4,36 +4,41 @@
 // Dependencies: [12, 13, 2]
 
 // Module 11 (DISCORD_EPOCH)
-const result = require("set").fileFinishedImporting("utils/SnowflakeUtils.tsx");
+import set from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+import extractTimestamp from "extractTimestamp" /* 13 */;
+import extractTimestampAll from "extractTimestamp" /* 13 */;
+
+const result = set.fileFinishedImporting("utils/SnowflakeUtils.tsx");
 
 export default {
   age(arg0) {
-    return importAll(13).age(arg0);
+    return extractTimestampAll.age(arg0);
   },
   extractTimestamp(arg0) {
-    return importAll(13).extractTimestamp(arg0);
+    return extractTimestampAll.extractTimestamp(arg0);
   },
   compare(arg0, arg1) {
-    return importAll(13).compare(arg0, arg1);
+    return extractTimestampAll.compare(arg0, arg1);
   },
   atPreviousMillisecond(arg0) {
-    return importAll(13).atPreviousMillisecond(arg0);
+    return extractTimestampAll.atPreviousMillisecond(arg0);
   },
   atNextMillisecond(arg0) {
-    return importAll(13).atNextMillisecond(arg0);
+    return extractTimestampAll.atNextMillisecond(arg0);
   },
   fromTimestamp(arg0) {
-    return importAll(13).fromTimestamp(arg0);
+    return extractTimestampAll.fromTimestamp(arg0);
   },
   fromTimestampWithSequence(arg0, arg1) {
-    return importAll(13).fromTimestampWithSequence(arg0, arg1);
+    return extractTimestampAll.fromTimestampWithSequence(arg0, arg1);
   },
   keys(arg0) {
     return Object.keys(arg0);
   },
   forEach(arg0, arg1) {
-    const importDefault = arg1;
-    const item = importDefault(12).forEach(arg0, (arg0, arg1) => callback(arg0, arg1));
+    importDefault = arg1;
+    const item = applyDefault.forEach(arg0, (arg0, arg1) => callback(arg0, arg1));
   },
   forEachKey(recurrenceCounts, arg1) {
     for (const key10004 in arg0) {
@@ -46,7 +51,7 @@ export default {
     return Object.entries(arg0);
   },
   isProbablyAValidSnowflake(arg0) {
-    return importAll(13).isProbablyAValidSnowflake(arg0);
+    return extractTimestampAll.isProbablyAValidSnowflake(arg0);
   },
   castChannelIdAsMessageId(id) {
     return id;
@@ -61,5 +66,5 @@ export default {
     return id;
   }
 };
-export const DISCORD_EPOCH = require("extractTimestamp").DISCORD_EPOCH;
-export const SnowflakeSequence = require("extractTimestamp").SnowflakeSequence;
+export const DISCORD_EPOCH = extractTimestamp.DISCORD_EPOCH;
+export const SnowflakeSequence = extractTimestamp.SnowflakeSequence;

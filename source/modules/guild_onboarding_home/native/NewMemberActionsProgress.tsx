@@ -1,60 +1,59 @@
-// Module ID: 15472
-// Function ID: 15473
+// Module ID: 15536
+// Function ID: 15537
 // Name: ProgressBar
-// Dependencies: [19, 17, 1990, 5048, 5049, 1398, 4009, 21, 4661, 712, 4756, 647, 1403, 5433, 1222, 4734, 1236, 1297, 11640, 2]
+// Dependencies: [19, 17, 1991, 5053, 5054, 1398, 4012, 21, 4668, 712, 4761, 647, 1403, 5438, 1222, 4739, 1236, 1297, 11689, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 15472 (ProgressBar)
-import set from "set";
-import { View } from "Button";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
-import closure_7 from "set";
-import { StaticChannelRoute } from "set";
-import { GuildMemberFlags } from "GuildMemberFlags";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15536 (ProgressBar)
+import ThemesDefault from "Themes" /* 712 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "handleSettingsLoadSuccess" /* 5053 */;
+import closure_7 from "set" /* 5054 */;
+import { StaticChannelRoute } from "set" /* 1398 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4012 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let unpackModuleId;
 const require = arg1;
 function ProgressBar(percent) {
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { style: tmp.progressBackground, children: null };
   obj = { style: null, colors: null, useAngle: true, angle: -90 };
   const items = [tmp.progressForeground, ];
-  obj = { width: null };
-  obj[0] = "" + percent.percent + "%";
+  obj = { width: "" + percent.percent + "%" };
   items[1] = obj;
   obj[0] = items;
   obj[1] = ["rgba(103, 203, 134, 1)", "rgba(59, 165, 92, 1)"];
-  obj[1] = callback(importDefault(4756), obj);
+  obj[1] = callback(LinearGradientDefault, obj);
   return callback(View, obj);
 }
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 createCacheKey = { container: { padding: 16 }, horizontal: { flexDirection: "row", alignItems: "center" }, spaceBetween: { justifyContent: "space-between" }, spaceBelow: { marginBottom: 8 }, progressBackground: null, progressForeground: null };
-createCacheKey = { borderRadius: require("Themes").radii.round, height: 8, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
+createCacheKey = { borderRadius: ThemesDefault.radii.round, height: 8, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL };
 createCacheKey[4] = createCacheKey;
-createCacheKey[5] = { backgroundColor: require("Themes").colors.STATUS_POSITIVE_BACKGROUND, borderRadius: require("Themes").radii.round, height: 8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { backgroundColor: require("Themes").colors.STATUS_POSITIVE_BACKGROUND, borderRadius: require("Themes").radii.round, height: 8 };
-const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/guild_onboarding_home/native/NewMemberActionsProgress.tsx");
+createCacheKey[5] = { backgroundColor: ThemesDefault.colors.STATUS_POSITIVE_BACKGROUND, borderRadius: ThemesDefault.radii.round, height: 8 };
+let closure_12 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { backgroundColor: ThemesDefault.colors.STATUS_POSITIVE_BACKGROUND, borderRadius: ThemesDefault.radii.round, height: 8 };
+const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/native/NewMemberActionsProgress.tsx");
 
 export const NewMemberActionsProgress = function NewMemberActionsProgress(guildId) {
   guildId = guildId.guildId;
   let stateFromStores;
   let stateFromStores1;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = guildId(stateFromStores1[11]);
-  const items = [handleSettingsLoadSuccess];
+  const items = [closure_6];
   const items1 = [guildId];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_6.getNewMemberActions(guildId), items1);
-  let obj1 = guildId(stateFromStores1[11]);
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getNewMemberActions(guildId), items1);
+  obj1 = guildId(stateFromStores1[11]);
   const items2 = [closure_7];
-  stateFromStores1 = obj1.useStateFromStores(items2, () => outer1_7.getCompletedActions(guildId));
+  stateFromStores1 = obj1.useStateFromStores(items2, () => closure_1_7.getCompletedActions(guildId));
   let obj2 = guildId(stateFromStores1[11]);
-  const items3 = [trackCommunicationDisabled];
-  const stateFromStores2 = obj2.useStateFromStores(items3, () => outer1_5.getSelfMember(guildId));
+  const items3 = [closure_5];
+  const stateFromStores2 = obj2.useStateFromStores(items3, () => closure_1_5.getSelfMember(guildId));
   let num;
   if (stateFromStores != null) {
     num = stateFromStores.length;
@@ -66,9 +65,9 @@ export const NewMemberActionsProgress = function NewMemberActionsProgress(guildI
   const memo = React.useMemo(() => {
     if (null != stateFromStores) {
       if (null != stateFromStores1) {
-        let c0 = 0;
+        c0 = 0;
         const item = stateFromStores.forEach((arg0) => {
-          if (null != outer1_2[arg0.channelId]) {
+          if (null != closure_1_2[arg0.channelId]) {
             closure_0 = closure_0 + 1;
           }
         });

@@ -1,17 +1,20 @@
-// Module ID: 9908
-// Function ID: 9909
+// Module ID: 9947
+// Function ID: 9948
 // Name: getChannelCopyForEmbeddedActivity
 // Dependencies: [1236, 2]
 // Exports: default
 
-// Module 9908 (getChannelCopyForEmbeddedActivity)
-const result = require("set").fileFinishedImporting("modules/activities/utils/getChannelCopyForEmbeddedActivity.tsx");
+// Module 9947 (getChannelCopyForEmbeddedActivity)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
+const result = set.fileFinishedImporting("modules/activities/utils/getChannelCopyForEmbeddedActivity.tsx");
 
 export default function getChannelCopyForEmbeddedActivity(arg0) {
   let stringResult = arg0;
   if (null == arg0) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1236) /* getSystemLocale */.t["2YCamo"]);
+    const intl = getSystemLocale.intl;
+    stringResult = intl.string(getSystemLocale.t["2YCamo"]);
   }
   return stringResult;
 };

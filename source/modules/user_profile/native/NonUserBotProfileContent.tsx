@@ -1,41 +1,31 @@
-// Module ID: 8981
-// Function ID: 8982
-// Dependencies: [19, 17, 7186, 6951, 21, 8982, 8934, 4796, 4219, 8983, 8972, 8984, 1629, 8970, 8979, 7167, 4093, 8985, 4115, 8990, 9451, 1236, 9548, 2]
+// Module ID: 9018
+// Function ID: 9019
+// Dependencies: [19, 17, 7224, 6989, 21, 9019, 8971, 4801, 4223, 9020, 9009, 9021, 1629, 9007, 9016, 7205, 4096, 9022, 4119, 9027, 9488, 1236, 9585, 2]
 
-// Module 8981
-import { View } from "UserProfileOverscrollBanner";
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
-import jsxProd from "getSystemLocale";
-import importAllResult from "OpenableUserProfileAvatar";
+// Module 9018
+import getNicknameDefault from "getNickname" /* 4801 */;
+import useProfileThemeDefault from "useProfileTheme" /* 9007 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 9009 */;
+import useSharedStylesDefault from "useSharedStyles" /* 9019 */;
+import useBadgesDefault from "useBadges" /* 9020 */;
+import useUserProfileOverscrollStylesDefault from "useUserProfileOverscrollStyles" /* 9021 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
+import jsxProd from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-let c4;
-let c5;
-let c9;
-let error;
-let metroImportAll;
 const require = arg1;
 ({ PROFILE_CONTENT_BOTTOM_PADDING: c4, PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: c5 } = ARBITRARY_LARGE_OFFSET);
-({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
-const memoResult = require("OpenableUserProfileAvatar").memo(function NonUserBotProfileContent(scrollPosition) {
-  let bannerAnimatedStyle;
-  let bannerImageAnimatedStyle;
-  let blurAnimatedProps;
-  let channel;
-  let contentAnimatedStyle;
-  let displayProfile;
-  let primaryColor;
-  let secondaryColor;
-  let showBlur;
-  let theme;
-  let user;
+({ jsx: error, jsxs: closure_8, Fragment: c9 } = jsxProd);
+const memoResult = importAllResult.memo(function NonUserBotProfileContent(scrollPosition) {
   ({ user, channel, displayProfile } = scrollPosition);
   let trackUserProfileAction;
-  let importDefault;
-  const tmp3 = importDefault(8982)();
-  let obj = trackUserProfileAction(8934);
+  importDefault = undefined;
+  const tmp3 = useSharedStylesDefault();
+  let obj = trackUserProfileAction(8971);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  let obj1 = importDefault(4796);
+  obj1 = getNicknameDefault;
   let guild_id;
   if (channel != null) {
     guild_id = channel.guild_id;
@@ -45,15 +35,15 @@ const memoResult = require("OpenableUserProfileAvatar").memo(function NonUserBot
     id = channel.id;
   }
   const name = obj1.useName(guild_id, id, user);
-  let tmpResult = tmp(4219);
+  let tmpResult = tmp(4223);
   importDefault = tmpResult.useUserTag(user);
-  const tmp9 = importDefault(8972)(ACTION_SHEET_MAX_WIDTH);
-  const tmp8 = importDefault(8983)(displayProfile);
-  ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = importDefault(8984)({ scrollPosition: scrollPosition.scrollPosition, bannerHeight: tmp9 }));
-  const tmp10 = importDefault(8984)({ scrollPosition: scrollPosition.scrollPosition, bannerHeight: tmp9 });
-  ({ theme, primaryColor, secondaryColor } = importDefault(8970)({ user, displayProfile }));
-  const tmp11 = importDefault(8970)({ user, displayProfile });
-  const userProfileColors = trackUserProfileAction(8979).useUserProfileColors({ theme, primaryColor, secondaryColor });
+  const tmp9 = useUserProfileBannerHeightDefault(ACTION_SHEET_MAX_WIDTH);
+  const tmp8 = useBadgesDefault(displayProfile);
+  ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = useUserProfileOverscrollStylesDefault({ scrollPosition: scrollPosition.scrollPosition, bannerHeight: tmp9 }));
+  const tmp10 = useUserProfileOverscrollStylesDefault({ scrollPosition: scrollPosition.scrollPosition, bannerHeight: tmp9 });
+  ({ theme, primaryColor, secondaryColor } = useProfileThemeDefault({ user, displayProfile }));
+  const tmp11 = useProfileThemeDefault({ user, displayProfile });
+  const userProfileColors = trackUserProfileAction(9016).useUserProfileColors({ theme, primaryColor, secondaryColor });
   const containerBackground = userProfileColors.containerBackground;
   if (null == user) {
     return null;
@@ -66,7 +56,7 @@ const memoResult = require("OpenableUserProfileAvatar").memo(function NonUserBot
     obj[4] = bannerImageAnimatedStyle;
     obj[5] = blurAnimatedProps;
     obj[6] = showBlur;
-    const items = [callback(tmp(8985), obj), ];
+    const items = [callback(tmp(9022), obj), ];
     obj = { style: null, children: null };
     obj[0] = contentAnimatedStyle;
     obj1 = { user: null, guildId: null, backgroundColor: null, disableStatus: true };
@@ -77,7 +67,7 @@ const memoResult = require("OpenableUserProfileAvatar").memo(function NonUserBot
     }
     obj1[1] = guildId;
     obj1[2] = tmp13;
-    const items1 = [callback(tmp4(8990).OpenableUserProfileAvatar, obj1), ];
+    const items1 = [callback(tmp4(9027).OpenableUserProfileAvatar, obj1), ];
     const obj2 = { style: null, children: null };
     const items2 = [, , ];
     ({ profileContentWrapper: arr2[0], profileContent: arr2[1] } = tmp3);
@@ -91,7 +81,7 @@ const memoResult = require("OpenableUserProfileAvatar").memo(function NonUserBot
     const obj5 = { user: null, guildId: null, displayName: null, pronouns: null, badges: null, badgeContainerBackground: null, displayNameAccessibilityHint: null, onPressDisplayName: null, onPressUserTag: null, onPressPronouns: null, showBadgeToastOnPress: true };
     obj5[0] = user;
     let guild_id1;
-    tmpResult = tmp(9451);
+    tmpResult = tmp(9488);
     if (channel != null) {
       guild_id1 = channel.guild_id;
     }
@@ -103,9 +93,9 @@ const memoResult = require("OpenableUserProfileAvatar").memo(function NonUserBot
     }
     function handleCopyUsername() {
       trackUserProfileAction({ action: "COPY_USERNAME" });
-      trackUserProfileAction(outer1_2[15]).copy(closure_1);
-      const obj = trackUserProfileAction(outer1_2[15]);
-      const result = trackUserProfileAction(outer1_2[16]).presentUsernameCopied();
+      trackUserProfileAction(closure_1_2[15]).copy(closure_1);
+      const obj = trackUserProfileAction(closure_1_2[15]);
+      const result = trackUserProfileAction(closure_1_2[16]).presentUsernameCopied();
     }
     const obj6 = { children: null };
     obj5[3] = pronouns;
@@ -117,7 +107,7 @@ const memoResult = require("OpenableUserProfileAvatar").memo(function NonUserBot
     obj5[8] = handleCopyUsername;
     obj5[9] = function onPressPronouns() {
       trackUserProfileAction({ action: "PRESS_PRONOUNS" });
-      trackUserProfileAction(outer1_2[16]).presentUserPronouns();
+      trackUserProfileAction(closure_1_2[16]).presentUserPronouns();
     };
     obj4[1] = callback(tmpResult, obj5);
     const items3 = [callback(View, obj4), ];
@@ -132,17 +122,17 @@ const memoResult = require("OpenableUserProfileAvatar").memo(function NonUserBot
     obj9[0] = containerBackground;
     items4[1] = obj9;
     obj8[3] = items4;
-    obj7[1] = callback(tmp(9548), obj8);
+    obj7[1] = callback(tmp(9585), obj8);
     items3[1] = callback(View, obj7);
     obj2[1] = items3;
     items1[1] = closure_8(View, obj2);
     obj[1] = items1;
-    items[1] = closure_8(tmp(4115).View, obj);
+    items[1] = closure_8(tmp(4119).View, obj);
     obj6[0] = items;
     return closure_8(closure_9, obj6);
   }
-  const tmp4Result = trackUserProfileAction(8979);
+  const tmp4Result = trackUserProfileAction(9016);
 });
-let result = require("ARBITRARY_LARGE_OFFSET").fileFinishedImporting("modules/user_profile/native/NonUserBotProfileContent.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/native/NonUserBotProfileContent.tsx");
 
 export default memoResult;

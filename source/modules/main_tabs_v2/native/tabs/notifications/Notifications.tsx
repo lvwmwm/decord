@@ -1,23 +1,35 @@
-// Module ID: 15657
-// Function ID: 15658
+// Module ID: 15726
+// Function ID: 15727
 // Name: goBack
-// Dependencies: [19, 17, 9588, 1388, 21, 4661, 712, 4230, 7925, 8484, 15658, 6803, 5433, 1236, 15659, 4734, 15660, 8489, 15662, 7139, 7159, 5066, 6318, 7126, 15666, 15667, 11075, 4225, 1629, 15280, 9091, 4104, 2]
+// Dependencies: [19, 17, 9625, 1388, 21, 4668, 712, 4234, 7964, 8523, 15727, 6840, 5438, 1236, 15728, 4739, 15729, 8528, 15731, 7177, 7197, 5071, 6349, 7164, 15735, 15736, 11114, 4229, 1629, 15344, 9128, 4107, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 15657 (goBack)
-import importAllResult from "context";
-import { View } from "SavedMessageSortTypes";
-import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "getDeviceMetadata";
-import createCacheKey from "createCacheKey";
+// Module 15726 (goBack)
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import getGuildThemeNameDefault from "getGuildThemeName" /* 4229 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6349 */;
+import Layer from "Layer" /* 7164 */;
+import context from "context" /* 7177 */;
+import contextDefault from "context" /* 7177 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7964 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 9128 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11114 */;
+import CoachmarkImgDefault from "CoachmarkImg" /* 15727 */;
+import NotificationCenterBannerImplDefault from "NotificationCenterBannerImpl" /* 15735 */;
+import YouBarNavigatorScreens2 from "YouBarNavigatorScreens" /* 15736 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS" /* 9625 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function goBack() {
-  const navigation = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
+  const navigation = getRootNavigationRef.getRootNavigationRef();
   if (null != navigation) {
     if (navigation.canGoBack()) {
       navigation.goBack();
@@ -36,11 +48,11 @@ class Notifications {
     if (flag2 === undefined) {
       flag2 = false;
     }
-    tmp = jsxs();
+    tmp = closure_10();
     tmp2 = require("context");
-    layoutEffect = defineProperty.useLayoutEffect(() => callback(5066).trackAppUIViewed(), []);
-    callback = defineProperty.useCallback(() => {
-      const navigation = callback(4230).getRootNavigationRef();
+    layoutEffect = closure_3.useLayoutEffect(() => callback(5071).trackAppUIViewed(), []);
+    callback = closure_3.useCallback(() => {
+      const navigation = callback(4234).getRootNavigationRef();
       if (null != navigation) {
         if (navigation.canGoBack()) {
           navigation.goBack();
@@ -59,7 +71,7 @@ class Notifications {
     items[0] = tmp.container;
     items[1] = global.style;
     items1 = [, , , ];
-    items1[0] = jsx(HeaderInner, { nestedInLaunchPad: flag, inNestedNavigator: flag2 });
+    items1[0] = jsx(closure_12, { nestedInLaunchPad: flag, inNestedNavigator: flag2 });
     items1[1] = jsx(require("NotificationCenterBannerImpl"), {});
     items1[2] = jsx(require("YouBarNavigatorScreens").NotificationCenterForYou, { nestedInLaunchPad: flag });
     items1[3] = jsx(require("TTIFirstContentfulPaint").TTIFirstContentfulPaint, { label: "notifications" });
@@ -75,13 +87,13 @@ class ThemedNotifications {
     top = require("useSafeAreaInsets")().top;
     tmp2 = require("useIsWindowLarge")();
     closure_1 = tmp2;
-    tmp3 = jsxs();
+    tmp3 = closure_10();
     closure_2 = tmp3;
     items = [, , ];
     items[0] = tmp3;
     items[1] = tmp2;
     items[2] = top;
-    memo = defineProperty.useMemo(() => {
+    memo = closure_3.useMemo(() => {
       if (closure_1) {
         const items = [tmp.containerOuterTablet, ];
         const obj = { paddingTop: null };
@@ -121,30 +133,30 @@ class ThemedNotifications {
   }
 }
 let c3 = importAllResult;
-({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);
 let obj = { containerOuter: { flex: 1 }, containerOuterTablet: null, container: null, headerTitle: null, actionButtons: null, headerClose: null, headerText: null, headerBorder: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: require("Themes").space.PX_8, flex: 1 };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: ThemesDefault.space.PX_8, flex: 1 };
 obj[1] = obj;
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderTopLeftRadius: require("Themes").radii.sm, borderTopRightRadius: require("Themes").radii.sm, flexGrow: 1 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, borderTopLeftRadius: ThemesDefault.radii.sm, borderTopRightRadius: ThemesDefault.radii.sm, flexGrow: 1 };
 obj[2] = createCacheKey;
 obj[3] = { height: 56, marginHorizontal: 16, flexDirection: "row", alignItems: "center" };
 obj[4] = { flexDirection: "row", gap: 12 };
-obj[5] = { marginRight: require("Themes").space.PX_16, height: require("Themes").space.PX_32, width: require("Themes").space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.lg };
+obj[5] = { marginRight: ThemesDefault.space.PX_16, height: ThemesDefault.space.PX_32, width: ThemesDefault.space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.lg };
 obj[6] = { flex: 1, marginTop: 2 };
-let obj2 = { marginRight: require("Themes").space.PX_16, height: require("Themes").space.PX_32, width: require("Themes").space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.lg };
-obj[7] = { left: 0, bottom: 0, height: 1, width: "100%", position: "absolute", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+let obj2 = { marginRight: ThemesDefault.space.PX_16, height: ThemesDefault.space.PX_32, width: ThemesDefault.space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.lg };
+obj[7] = { left: 0, bottom: 0, height: 1, width: "100%", position: "absolute", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 let closure_10 = createCacheKey.createStyles(obj);
 let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   nestedInLaunchPad = nestedInLaunchPad.nestedInLaunchPad;
   let _require;
   const tmp = callback3();
-  let obj = _require(8484);
+  let obj = _require(8523);
   const isForLaterExperimentOn = obj.useIsForLaterExperimentOn("NativeNotifications");
   const ref = importAllResult.useRef(null);
-  const tmp8 = importDefault(15658)(ref);
+  const tmp8 = CoachmarkImgDefault(ref);
   _require = tmp8;
   const items = [tmp8];
-  const callback = importAllResult.useCallback(() => _undefined(outer1_6.TAKE_ACTION), items);
+  const callback = importAllResult.useCallback(() => callback(closure_1_6.TAKE_ACTION), items);
   let tmp13 = !nestedInLaunchPad;
   if (!nestedInLaunchPad) {
     tmp13 = !tmp4;
@@ -154,18 +166,18 @@ let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   if (!nestedInLaunchPad) {
     obj = { style: null, children: null };
     obj[0] = tmp.headerTitle;
-    const obj1 = { style: null, accessibilityLabel: null, onPress: null, children: null };
+    obj1 = { style: null, accessibilityLabel: null, onPress: null, children: null };
     obj1[0] = tmp.headerClose;
     const intl = tmp5(1236).intl;
     obj1[1] = intl.string(tmp5(1236).t["13/7kX"]);
     obj1[2] = goBack;
-    obj1[3] = tmp12(tmp5(15659).LeftBackIconWithBadge, {});
-    const items1 = [tmp12(tmp5(5433).PressableOpacity, obj1), , ];
+    obj1[3] = tmp12(tmp5(15728).LeftBackIconWithBadge, {});
+    const items1 = [tmp12(tmp5(5438).PressableOpacity, obj1), , ];
     const obj2 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: null, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     obj2[2] = tmp.headerText;
     const intl2 = tmp5(1236).intl;
     obj2[5] = intl2.string(tmp5(1236).t.HcoRu0);
-    items1[1] = tmp12(tmp5(4734).Text, obj2);
+    items1[1] = tmp12(tmp5(4739).Text, obj2);
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.actionButtons;
     tmp10Result = null;
@@ -173,19 +185,19 @@ let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
       const obj4 = { children: null };
       const obj5 = { ref: null, type: null, onOpen: null };
       obj5[0] = ref;
-      let tmp2Result = tmp2(15660);
-      obj5[1] = tmp5(8489).SavedMessageSortTypes.BOOKMARK;
+      let tmp2Result = tmp2(15729);
+      obj5[1] = tmp5(8528).SavedMessageSortTypes.BOOKMARK;
       obj5[2] = callback;
       const items2 = [tmp12(tmp2Result, obj5), ];
       const obj6 = { type: null, onOpen: null };
-      tmp2Result = tmp2(15660);
-      obj6[0] = tmp5(8489).SavedMessageSortTypes.REMINDER;
+      tmp2Result = tmp2(15729);
+      obj6[0] = tmp5(8528).SavedMessageSortTypes.REMINDER;
       obj6[1] = callback;
       items2[1] = tmp12(tmp2Result, obj6);
       obj4[0] = items2;
       tmp10Result = tmp10(closure_8, obj4);
     }
-    const items3 = [tmp10Result, tmp12(tmp2(15662), {})];
+    const items3 = [tmp10Result, tmp12(tmp2(15731), {})];
     obj3[1] = items3;
     items1[2] = tmp10(tmp11, obj3);
     obj[1] = items1;
@@ -193,14 +205,14 @@ let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   }
   const obj7 = { children: null };
   obj[1] = tmp10Result;
-  const items4 = [closure_7(_require(6803).SafeAreaPaddingView, obj), ];
+  const items4 = [closure_7(_require(6840).SafeAreaPaddingView, obj), ];
   const items5 = [tmp.headerBorder];
   items4[1] = closure_7(View, { style: items5 });
   obj7[0] = items4;
   return closure_9(View, obj7);
 });
-let obj3 = { left: 0, bottom: 0, height: 1, width: "100%", position: "absolute", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-const result = require("MODE_CHANGE_PHYSICS").fileFinishedImporting("modules/main_tabs_v2/native/tabs/notifications/Notifications.tsx");
+let obj3 = { left: 0, bottom: 0, height: 1, width: "100%", position: "absolute", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/notifications/Notifications.tsx");
 
 export default Notifications;
 export { goBack };

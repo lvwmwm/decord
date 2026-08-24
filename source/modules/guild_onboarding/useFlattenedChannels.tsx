@@ -1,16 +1,16 @@
-// Module ID: 6793
-// Function ID: 6794
+// Module ID: 6830
+// Function ID: 6831
 // Name: getFlattenedChannels
 // Dependencies: [1391, 12, 1370, 589, 2]
 // Exports: useFlattenedChannels
 
-// Module 6793 (getFlattenedChannels)
-import ensureGuildLoaded from "ensureGuildLoaded";
+// Module 6830 (getFlattenedChannels)
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;
 function getFlattenedChannels(guildId, set, found, arg3) {
   const _require = set;
-  const importDefault = found;
+  importDefault = found;
   let flag = arg3;
   if (arg3 === undefined) {
     flag = false;
@@ -58,7 +58,7 @@ function getFlattenedChannels(guildId, set, found, arg3) {
       found2.push(iter3);
     }
     if (iter3.has(iter3.id)) {
-      let found = channel[iter3.id];
+      found = channel[iter3.id];
     } else {
       found = lib.filter((parent_id) => parent_id.parent_id === iter3.id);
     }
@@ -85,19 +85,19 @@ function getFlattenedChannels(guildId, set, found, arg3) {
   }
   return sortByResult;
 }
-const result = require("isDiscordFrontendDevelopment").fileFinishedImporting("modules/guild_onboarding/useFlattenedChannels.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_onboarding/useFlattenedChannels.tsx");
 
 export { getFlattenedChannels };
 export const useFlattenedChannels = function useFlattenedChannels(arg0, arg1) {
   const _require = arg0;
-  let closure_1 = arg1;
+  closure_1 = arg1;
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
-  const items = [ensureGuildLoaded];
+  const items = [closure_3];
   return _require(flag[3]).useStateFromStoresArray(items, () => {
     const mapped = Array.from(closure_1).map((arg0) => channel.getChannel(arg0));
-    return outer1_4(callback, closure_1, mapped.filter(callback(flag[2]).isNotNullish), flag);
+    return closure_1_4(callback, closure_1, mapped.filter(callback(flag[2]).isNotNullish), flag);
   });
 };

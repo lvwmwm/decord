@@ -1,16 +1,17 @@
-// Module ID: 9889
-// Function ID: 9890
+// Module ID: 9928
+// Function ID: 9929
 // Name: useIsFriendRequestAlertsV2Enabled
 // Dependencies: [1472, 2]
 // Exports: isFriendRequestAlertsV2Enabled, useIsFriendRequestAlertsV2Enabled
 
-// Module 9889 (useIsFriendRequestAlertsV2Enabled)
-import ApexExperiment from "ApexExperiment";
+// Module 9928 (useIsFriendRequestAlertsV2Enabled)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_0 = ApexExperiment.createApexExperiment({ kind: "user", name: "2025-10-friend-request-alerts-v2", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/FriendRequestAlertsV2.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/content_and_social/FriendRequestAlertsV2.tsx");
 
 export const useIsFriendRequestAlertsV2Enabled = function useIsFriendRequestAlertsV2Enabled(location) {
   return closure_0.useConfig({ location }).enabled;

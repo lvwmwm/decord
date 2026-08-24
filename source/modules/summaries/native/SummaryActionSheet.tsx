@@ -1,43 +1,42 @@
-// Module ID: 10839
-// Function ID: 10840
+// Module ID: 10878
+// Function ID: 10879
 // Name: SummaryActionSheet
-// Dependencies: [19, 17, 1391, 4994, 10551, 676, 21, 4342, 10839, 2007, 4661, 712, 7234, 10810, 4093, 1236, 4979, 9067, 7512, 7524, 4229, 11, 1222, 6950, 6803, 10840, 4734, 10842, 10843, 10846, 8174, 2]
+// Dependencies: [19, 17, 1391, 4999, 10590, 676, 21, 4346, 10878, 2008, 4668, 712, 7272, 10849, 4096, 1236, 4984, 9104, 7550, 7562, 4233, 11, 1222, 6988, 6840, 10879, 4739, 10881, 10882, 10885, 8213, 2]
 // Exports: default, openSummaryDividerActionSheet
 
-// Module 10839 (SummaryActionSheet)
-import dispatcher from "dispatcher";
-import { View } from "showShareActionSheet";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import reinjectEphemerals from "reinjectEphemerals";
-import handleQuickSwitcherUpdate from "handleQuickSwitcherUpdate";
-import ME from "ME";
-import jsxProd from "DISCORD_EPOCH";
-import createCacheKey from "createCacheKey";
+// Module 10878 (SummaryActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "reinjectEphemerals" /* 4999 */;
+import closure_7 from "handleQuickSwitcherUpdate" /* 10590 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
-({ AnalyticsSections: metroImportAll, MessageFlags: c9 } = ME);
+require = arg1;
+({ AnalyticsSections: closure_8, MessageFlags: c9 } = ME);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 createCacheKey = { summaryContainer: { padding: 16, margin: 16, marginBottom: 24, justifyContent: "center", alignItems: "center" }, summaryContent: { textAlign: "center" }, summaryIconContainer: null, summaryIcon: null, summaryTopic: null, divider: null, actionsContainer: null };
-createCacheKey = { marginBottom: 8, borderRadius: require("Themes").radii.round, border: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey = { marginBottom: 8, borderRadius: ThemesDefault.radii.round, border: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
 createCacheKey[2] = createCacheKey;
-createCacheKey[3] = { margin: 8, width: 20, height: 20, tintColor: require("Themes").colors.WHITE };
+createCacheKey[3] = { margin: 8, width: 20, height: 20, tintColor: ThemesDefault.colors.WHITE };
 createCacheKey[4] = { marginBottom: 4 };
-let obj1 = { margin: 8, width: 20, height: 20, tintColor: require("Themes").colors.WHITE };
-createCacheKey[5] = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+const obj1 = { margin: 8, width: 20, height: 20, tintColor: ThemesDefault.colors.WHITE };
+createCacheKey[5] = { height: 1, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 createCacheKey[6] = { flexDirection: "row", justifyContent: "space-evenly", marginBottom: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/summaries/native/SummaryActionSheet.tsx");
+let closure_12 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { height: 1, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+let result = require("set").fileFinishedImporting("modules/summaries/native/SummaryActionSheet.tsx");
 
 export default function SummaryActionSheet(summary) {
   summary = summary.summary;
   let channel;
   let message;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = React;
   channel = channel.getChannel(summary.channelId);
   message = message.getMessage(summary.channelId, summary.startId);
@@ -92,7 +91,7 @@ export default function SummaryActionSheet(summary) {
       obj = { message: null, subject: null };
       obj[0] = formatToPlainStringResult;
       obj[1] = summary.topic;
-      summary(tmp[17]).showShareActionSheet(obj, outer1_8.SUMMARY_ACTION_SHEET);
+      summary(tmp[17]).showShareActionSheet(obj, closure_1_8.SUMMARY_ACTION_SHEET);
       const obj5 = summary(tmp[17]);
     } else {
       const intl = summary(tmp[15]).intl;
@@ -107,7 +106,7 @@ export default function SummaryActionSheet(summary) {
     if (null != channel) {
       if (null != message) {
         let tmpResult = tmp(tmp2[18]);
-        const result = tmpResult.openThreadCreationForMobile(tmp4, summary.startId, outer1_8.SUMMARY_ACTION_SHEET);
+        const result = tmpResult.openThreadCreationForMobile(tmp4, summary.startId, closure_1_8.SUMMARY_ACTION_SHEET);
         tmpResult = tmp(tmp2[19]);
         obj = { name: null };
         obj[0] = summary.topic;
@@ -125,7 +124,7 @@ export default function SummaryActionSheet(summary) {
     const intl = summary(tmp2[15]).intl;
     summary(message[14]).presentError(intl.string(summary(message[15]).t["/+DWeQ"]));
   }, items2);
-  const callback3 = obj.useCallback(() => {
+  callback3 = obj.useCallback(() => {
     channel(message[7]).hideActionSheet();
     let tmp5 = null != channel;
     if (tmp5) {
@@ -139,10 +138,9 @@ export default function SummaryActionSheet(summary) {
   }, items3);
   obj = { ref: React.useRef(null), children: null };
   obj = { style: tmp.summaryContainer, children: null };
-  const obj1 = { style: tmp.summaryIconContainer, children: null };
+  const ref = React.useRef(null);
   obj2 = { style: tmp.summaryIcon, size: "custom" };
-  obj1[1] = callback(summary(message[25]).TopicsIcon, obj2);
-  const items4 = [callback(View, obj1), , ];
+  const items4 = [callback(View, { style: tmp.summaryIconContainer, children: callback(summary(message[25]).TopicsIcon, obj2) }), , ];
   const items5 = [, ];
   ({ summaryContent: arr6[0], summaryTopic: arr6[1] } = tmp);
   items4[1] = callback(summary(message[26]).Text, { style: items5, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: summary.topic });
@@ -189,13 +187,13 @@ export default function SummaryActionSheet(summary) {
   return callback(summary(message[23]).BottomSheet, obj);
 };
 export const openSummaryDividerActionSheet = function openSummaryDividerActionSheet(channelId, summaryId) {
-  const findSummaryResult = handleQuickSwitcherUpdate.findSummary(channelId, summaryId);
+  const findSummaryResult = closure_7.findSummary(channelId, summaryId);
   if (null != findSummaryResult) {
-    let obj = importDefault(4342);
+    let obj = ACTION_SHEET_HEIGHT_HALFDefault;
     const _HermesInternal = HermesInternal;
     obj = { summary: null };
     obj[0] = findSummaryResult;
-    obj.openLazy(require(2007) /* asyncRequireImpl */(10839, dependencyMap.paths), "SummaryDivider" + summaryId, obj);
-    const tmp5 = require(2007) /* asyncRequireImpl */(10839, dependencyMap.paths);
+    obj.openLazy(asyncRequireImpl(10878, dependencyMap.paths), "SummaryDivider" + summaryId, obj);
+    const tmp5 = asyncRequireImpl(10878, dependencyMap.paths);
   }
 };

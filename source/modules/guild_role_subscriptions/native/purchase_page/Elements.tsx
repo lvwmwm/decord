@@ -1,38 +1,40 @@
-// Module ID: 15797
-// Function ID: 15798
+// Module ID: 15866
+// Function ID: 15867
 // Name: TruncatedText
-// Dependencies: [32, 19, 17, 4044, 21, 4661, 712, 4734, 1236, 5433, 1297, 15798, 7935, 14573, 647, 7936, 5316, 2]
+// Dependencies: [32, 19, 17, 4047, 21, 4668, 712, 4739, 1236, 5438, 1297, 15867, 7974, 14641, 647, 7975, 5321, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15797 (TruncatedText)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "set";
-import addSubscriptionPlan from "addSubscriptionPlan";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15866 (TruncatedText)
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import notSupportedDefault from "notSupported" /* 7974 */;
+import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 7975 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 14641 */;
+import registerAssetDefault from "registerAsset" /* 15867 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_8 from "addSubscriptionPlan" /* 4047 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 ({ TouchableOpacity: closure_6, View: error } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { toggleTruncateButton: null, arrowButton: null, arrowButtonText: null, arrowButtonIcon: null };
-createCacheKey = { alignSelf: "flex-start", borderBottomWidth: 0.8, borderColor: require("Themes").colors.TEXT_DEFAULT, marginTop: 2 };
+createCacheKey = { alignSelf: "flex-start", borderBottomWidth: 0.8, borderColor: ThemesDefault.colors.TEXT_DEFAULT, marginTop: 2 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey[1] = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40, borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
 createCacheKey[2] = { flexGrow: 1, flexShrink: 1 };
-let obj1 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
-createCacheKey[3] = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/Elements.tsx");
+let obj1 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40, borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
+createCacheKey[3] = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE };
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE };
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/Elements.tsx");
 
 export const TruncatedText = function TruncatedText(lineClamp) {
-  let c1;
-  let tmp4;
   let num = lineClamp.lineClamp;
   if (num === undefined) {
     num = 8;
@@ -40,9 +42,9 @@ export const TruncatedText = function TruncatedText(lineClamp) {
   const merged = Object.assign(lineClamp, Object.create(null));
   c1 = undefined;
   let first;
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
-  const tmp2 = createCacheKey();
+  const tmp2 = callback4();
   [tmp4, c1] = callback(React.useState(false), 2);
   const tmp5 = callback(React.useState(false), 2);
   first = tmp5[0];
@@ -77,7 +79,7 @@ export const TruncatedText = function TruncatedText(lineClamp) {
         callback(nativeEvent.nativeEvent.lines.length > num);
       }
     };
-    const items = [closure_9(num(4734).Text, obj), first];
+    const items = [closure_9(num(4739).Text, obj), first];
     obj[3] = items;
     return closure_10(closure_6, obj);
   } else {
@@ -91,43 +93,38 @@ export const TruncatedText = function TruncatedText(lineClamp) {
     } else {
       stringResult = string(t.Fbrd8J);
     }
-    const obj1 = { variant: "text-sm/medium", color: "text-default", children: null };
+    obj1 = { variant: "text-sm/medium", color: "text-default", children: null };
     obj1[2] = stringResult;
-    t = tmp7(num(4734).Text, obj1);
+    t = tmp7(num(4739).Text, obj1);
     obj[1] = t;
     closure_9(closure_7, obj);
     const tmp8 = closure_7;
   }
 };
 export const ArrowButton = function ArrowButton(arg0) {
-  let onPress;
-  let text;
   ({ text, onPress } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress, children: null };
   obj = { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
-  const items = [callback2(require(4734) /* Text */.Text, obj), ];
-  obj = { size: null, source: null, style: null };
-  obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL;
-  obj[1] = importDefault(15798);
-  obj[2] = tmp.arrowButtonIcon;
-  items[1] = callback2(require(1297) /* Button */.Icon, obj);
+  const items = [callback2(Text.Text, obj), ];
+  obj = { size: Button.Icon.Sizes.SMALL, source: registerAssetDefault, style: tmp.arrowButtonIcon };
+  items[1] = callback2(Button.Icon, obj);
   obj[3] = items;
-  return callback3(require(5433) /* PressableBase */.PressableOpacity, obj);
+  return callback3(PressableBase.PressableOpacity, obj);
 };
 export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPlan(listingId) {
-  const obj = importDefault(7935);
-  const _require = callback(importAll(14573).useSubscriptionPlan(listingId), 1)[0];
-  const obj2 = importAll(14573);
+  const obj = notSupportedDefault;
+  const _require = callback(getRoleEmojisAll.useSubscriptionPlan(listingId), 1)[0];
+  const obj2 = getRoleEmojisAll;
   const tmp2 = _require;
-  const items = [addSubscriptionPlan];
-  const stateFromStores = _require(647).useStateFromStores(items, () => outer1_8.get(id.id));
-  const price = importDefault(7936)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
+  const items = [closure_8];
+  const stateFromStores = _require(647).useStateFromStores(items, () => closure_1_8.get(id.id));
+  const price = useStoreFrontPriceDefault(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
   let str = "No Price Available";
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    str = "" + tmp2(5316).formatPrice(price.amount, price.currency) + "/mo.";
-    const tmp2Result = tmp2(5316);
+    str = "" + tmp2(5321).formatPrice(price.amount, price.currency) + "/mo.";
+    const tmp2Result = tmp2(5321);
   }
   return str;
 };

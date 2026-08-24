@@ -1,35 +1,38 @@
-// Module ID: 10741
-// Function ID: 10742
+// Module ID: 10780
+// Function ID: 10781
 // Name: ChannelsAndRolesScreen
-// Dependencies: [32, 19, 17, 1910, 5286, 21, 4661, 712, 647, 7296, 8799, 1236, 10096, 10742, 10748, 9930, 2]
+// Dependencies: [32, 19, 17, 1910, 5291, 21, 4668, 712, 647, 7334, 8836, 1236, 10135, 10781, 10787, 9969, 2]
 // Exports: default
 
-// Module 10741 (ChannelsAndRolesScreen)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GuildOnboardingTab } from "serverPromptToClientPrompt";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10780 (ChannelsAndRolesScreen)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7334 */;
+import _modDef9969 from "module_9969" /* 9969 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 5291 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function ChannelsAndRolesScreen(guildId) {
   guildId = guildId.guildId;
   const defaultTab = guildId.defaultTab;
-  let importDefault;
+  importDefault = undefined;
   let first;
   let callback;
   let segmentedControlState;
-  let tmp = createCacheKey();
+  let tmp = callback3();
   let obj = guildId(first[8]);
-  const items = [createGuildRecordFromRust];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getGuild(guildId));
+  const items = [closure_6];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getGuild(guildId));
   const tmp6 = importDefault(first[9])(stateFromStores);
   importDefault = tmp6;
-  let obj1 = segmentedControlState;
+  obj1 = segmentedControlState;
   if (defaultTab != null) {
     const tmp10 = callback(segmentedControlState.useState(defaultTab), 2);
     first = tmp10[0];
@@ -45,13 +48,13 @@ function ChannelsAndRolesScreen(guildId) {
     segmentedControlState = tmp2(tmp3[10]).useSegmentedControlState(obj);
     const items2 = [tmp6, first, segmentedControlState];
     const effect = obj1.useEffect(() => {
-      let tmp = c1;
-      if (!c1) {
-        tmp = first !== outer1_7.CUSTOMIZE;
+      let tmp = closure_1;
+      if (!closure_1) {
+        tmp = first !== closure_1_7.CUSTOMIZE;
       }
       if (!tmp) {
-        _undefined(outer1_7.BROWSE);
-        segmentedControlState.setActiveIndex(outer1_7.BROWSE, false);
+        callback(closure_1_7.BROWSE);
+        segmentedControlState.setActiveIndex(closure_1_7.BROWSE, false);
       }
     }, items2);
     obj = { style: null, children: null };
@@ -81,27 +84,25 @@ function ChannelsAndRolesScreen(guildId) {
     return closure_9(View, obj);
   }
 }
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { screen: null, tabBar: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_12, paddingTop: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { paddingHorizontal: require("Themes").space.PX_12, paddingTop: require("Themes").space.PX_16 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_onboarding/native/ChannelsAndRolesModal.tsx");
+createCacheKey[1] = { paddingHorizontal: ThemesDefault.space.PX_12, paddingTop: ThemesDefault.space.PX_16 };
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingHorizontal: ThemesDefault.space.PX_12, paddingTop: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/guild_onboarding/native/ChannelsAndRolesModal.tsx");
 
 export default function ChannelsAndRolesModal(arg0) {
-  let importDefault;
-  let require;
   ({ guildId: require, defaultTab: importDefault } = arg0);
-  let obj = require(647) /* defaultAreStatesEqual */;
-  const items = [createGuildRecordFromRust];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getGuild(closure_0));
-  const tmp2 = importDefault(7296)(stateFromStores);
+  let obj = defaultAreStatesEqual;
+  const items = [closure_6];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getGuild(closure_0));
+  const tmp2 = useGuildOnboardingAvailableDefault(stateFromStores);
   const tmp3 = closure_8;
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   const string = intl.string;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (tmp2) {
     let stringResult = string(t.h9mGOP);
   } else {
@@ -111,8 +112,8 @@ export default function ChannelsAndRolesModal(arg0) {
     screenKey: "channelAndRolesModal",
     title: stringResult,
     render() {
-      return outer1_8(outer1_11, { guildId: closure_0, defaultTab: closure_1 });
+      return closure_1_8(closure_1_11, { guildId: closure_0, defaultTab: closure_1 });
     }
   };
-  return tmp3(importDefault(9930), obj);
+  return tmp3(_modDef9969, obj);
 };

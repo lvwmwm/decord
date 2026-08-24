@@ -1,12 +1,15 @@
-// Module ID: 7630
-// Function ID: 7631
+// Module ID: 7668
+// Function ID: 7669
 // Name: createFromServer
-// Dependencies: [1931, 7631, 1307, 687, 1217, 2]
+// Dependencies: [1931, 7669, 1307, 687, 1217, 2]
 
-// Module 7630 (createFromServer)
-import "toJS";
+// Module 7668 (createFromServer)
+import setDefault from "set" /* 687 */;
+import MurmurHashV3Default from "MurmurHashV3" /* 1217 */;
+import toJSDefault from "toJS" /* 1931 */;
 
 const require = arg1;
+toJSDefault;
 let MarketingComponentRecord;
 class MarketingComponentRecord extends tmp2 {
   constructor(arg0) {
@@ -18,8 +21,6 @@ class MarketingComponentRecord extends tmp2 {
 }
 const prototype = MarketingComponentRecord.prototype;
 MarketingComponentRecord["createFromServer"] = function createFromServer(start_date, startDate) {
-  let component_type;
-  let id;
   let str = "utf-8";
   const obj = { ignoreBOM: true };
   const textDecoder = new TextDecoder("utf-8", obj);
@@ -48,11 +49,11 @@ MarketingComponentRecord["createFromServer"] = function createFromServer(start_d
     endDate = null;
   }
   ({ id, component_type } = start_date);
-  const PremiumMarketingComponentProperties = textDecoder(7631).PremiumMarketingComponentProperties;
+  const PremiumMarketingComponentProperties = textDecoder(7669).PremiumMarketingComponentProperties;
   const fromBinary = PremiumMarketingComponentProperties.fromBinary;
   const obj2 = textDecoder(1307);
   function readerFactory(buf) {
-    const binaryReader = new textDecoder(outer1_2[2]).BinaryReader(buf, textDecoder);
+    const binaryReader = new textDecoder(closure_1_2[2]).BinaryReader(buf, textDecoder);
     return binaryReader;
   }
   const fromBinaryResult = fromBinary(obj2.base64decode(start_date.properties), { readUnknownField: true, readerFactory });
@@ -96,13 +97,13 @@ prototype["isIncludedInRollout"] = function isIncludedInRollout(id, date) {
       const diff = time - effectiveStartDate.getTime();
       const _Math = Math;
       const _Math2 = Math;
-      const result = 10000 * Math.min(1, Math.max(0, 0.2 * (diff / importDefault(687).Millis.HOUR)));
+      const result = 10000 * Math.min(1, Math.max(0, 0.2 * (diff / setDefault.Millis.HOUR)));
       const _HermesInternal = HermesInternal;
-      return importDefault(1217).v3("" + self.promotionId + ":" + id) % 10000 < result;
+      return MurmurHashV3Default.v3("" + self.promotionId + ":" + id) % 10000 < result;
     }
   }
   return true;
 };
-let result = require("module_1307").fileFinishedImporting("modules/premium/promotions/MarketingComponentRecord.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/promotions/MarketingComponentRecord.tsx");
 
 export default MarketingComponentRecord;

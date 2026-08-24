@@ -1,19 +1,19 @@
-// Module ID: 8410
-// Function ID: 8411
+// Module ID: 8449
+// Function ID: 8450
 // Name: useAvatarDecorationIfNotExpired
-// Dependencies: [32, 19, 676, 1899, 4259, 2]
+// Dependencies: [32, 19, 676, 1899, 4263, 2]
 // Exports: default
 
-// Module 8410 (useAvatarDecorationIfNotExpired)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { MAX_TIMEOUT_MS } from "ME";
+// Module 8449 (useAvatarDecorationIfNotExpired)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import { MAX_TIMEOUT_MS } from "ME" /* 676 */;
 
 const require = arg1;
-let result = require("ME").fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecorationIfNotExpired.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecorationIfNotExpired.tsx");
 
 export default function useAvatarDecorationIfNotExpired(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   callback = tmp[1];
@@ -25,7 +25,7 @@ export default function useAvatarDecorationIfNotExpired(arg0) {
         if ("expiresAt" in tmp) {
           if (null != tmp.expiresAt) {
             const result = maybeScheduleExpirationCheck(first[3]).isAvatarDecorationExpired(tmp);
-            outer1_2(result);
+            closure_1_2(result);
             const _Date = Date;
             const result1 = 1000 * tmp.expiresAt;
             const diff = result1 - Date.now();
@@ -33,10 +33,10 @@ export default function useAvatarDecorationIfNotExpired(arg0) {
               if (0 < diff) {
                 const timeout = new tmp3(tmp4[4]).Timeout();
                 const _Math = Math;
-                timeout.start(Math.min(outer2_4, diff), () => {
+                timeout.start(Math.min(closure_2_4, diff), () => {
                   callback();
                 });
-                outer1_3.current = timeout;
+                closure_1_3.current = timeout;
               }
             }
             const obj = maybeScheduleExpirationCheck(first[3]);
@@ -45,7 +45,7 @@ export default function useAvatarDecorationIfNotExpired(arg0) {
           }
         }
       }
-      outer1_2(false);
+      closure_1_2(false);
     }
     let result = maybeScheduleExpirationCheck();
     return () => {

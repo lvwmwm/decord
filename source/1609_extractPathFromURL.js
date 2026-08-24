@@ -5,7 +5,8 @@
 // Exports: extractPathFromURL
 
 // Module 1609 (extractPathFromURL)
-import _toArray from "_toArray";
+import _modDef1563 from "module_1563" /* 1563 */;
+import closure_2 from "_toArray" /* 853 */;
 
 
 export const extractPathFromURL = function extractPathFromURL(current, AUTO_DISMISS) {
@@ -28,13 +29,13 @@ export const extractPathFromURL = function extractPathFromURL(current, AUTO_DISM
     let _HermesInternal = HermesInternal;
     let tmp5 = new.target;
     let tmp6 = new.target;
-    let regExp = new RegExp("^" + importDefault(1563)(str3));
+    let regExp = new RegExp("^" + _modDef1563(str3));
     let tmp8 = regExp;
     let str4 = str2.replace(regExp, "");
     let str5 = str4.replace(/\/+/g, "/");
     let str6 = str5.replace(/^\//, "");
     let obj = str6;
-    let tmp9 = importDefault(1563)(str3);
+    let tmp9 = _modDef1563(str3);
     let parts = str6.split(".");
     let mapped = parts.map((arg0) => {
       let str = "[^/?#]+";

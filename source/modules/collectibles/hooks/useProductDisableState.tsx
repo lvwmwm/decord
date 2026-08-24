@@ -1,18 +1,20 @@
-// Module ID: 9582
-// Function ID: 9583
+// Module ID: 9619
+// Function ID: 9620
 // Name: useProductDisableState
-// Dependencies: [4045, 589, 679, 1236, 2]
+// Dependencies: [4048, 589, 679, 1236, 2]
 // Exports: useProductDisableState
 
-// Module 9582 (useProductDisableState)
-import reset from "reset";
+// Module 9619 (useProductDisableState)
+import initialize from "initialize" /* 589 */;
+import set from "set" /* 679 */;
+import closure_2 from "reset" /* 4048 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useProductDisableState.tsx");
 
 export const useProductDisableState = function useProductDisableState(skuId) {
-  let obj = require(589) /* initialize */;
-  const items = [reset];
+  let obj = initialize;
+  const items = [closure_2];
   const stateFromStores = obj.useStateFromStores(items, () => {
     premiumSubscription = premiumSubscription.getPremiumSubscription();
     let prop;
@@ -21,7 +23,7 @@ export const useProductDisableState = function useProductDisableState(skuId) {
     }
     return true === prop;
   });
-  const ALL = require(679) /* set */.FractionalPremiumSKUsSets.ALL;
+  const ALL = set.FractionalPremiumSKUsSets.ALL;
   if (ALL.has(skuId)) {
     obj = { isDisabled: null, disabledReason: null };
     obj[0] = stateFromStores;

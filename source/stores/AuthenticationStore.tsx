@@ -1,32 +1,38 @@
 // Module ID: 1218
 // Function ID: 1219
 // Name: fetchFingerprint
-// Dependencies: [1219, 1220, 676, 1221, 3, 707, 595, 1222, 698, 13554, 709, 13555, 8585, 4274, 513, 13556, 1208, 11587, 589, 10683, 13557, 1371, 1954, 2]
+// Dependencies: [1219, 1220, 676, 1221, 3, 707, 595, 1222, 698, 13612, 709, 13613, 8624, 4278, 513, 13614, 1208, 11636, 589, 10722, 13615, 1371, 1954, 2]
 
 // Module 1218 (fetchFingerprint)
-import initialize from "initialize";
-import clearAll from "clearAll";
-import ME from "ME";
-import result from "result";
-import { Store } from "initialize";
-import importDefaultResult from "dispatcher";
+import timestampDefault from "timestamp" /* 3 */;
+import extractId from "extractId" /* 513 */;
+import initializeDefault from "initialize" /* 589 */;
+import Storage6 from "Storage" /* 595 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import setSecondaryTokenAll from "setSecondaryToken" /* 707 */;
+import _modDef1208 from "module_1208" /* 1208 */;
+import transitionTo from "transitionTo" /* 1222 */;
+import getToken from "getToken" /* 1371 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import prototypeDefault from "prototype" /* 4278 */;
+import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 8624 */;
+import isStaffDefault from "isStaff" /* 11636 */;
+import fetchExperiments from "fetchExperiments" /* 13612 */;
+import closure_6 from "initialize" /* 1219 */;
+import closure_7 from "clearAll" /* 1220 */;
+import ME from "ME" /* 676 */;
+import result from "result" /* 1221 */;
+import importDefaultResult from "dispatcher" /* 709 */;
 
-let EXISTING_USER_AGE_GATE_MODAL_KEY;
-let LoginStates;
-let NEW_USER_AGE_GATE_MODAL_KEY;
-let c10;
-let closure_12;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function fetchFingerprint(arg0) {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
   }
-  const Storage = require(595) /* Storage */.Storage;
-  let closure_21 = Storage.get(fingerprint);
-  const Storage2 = require(595) /* Storage */.Storage;
+  const Storage = Storage6.Storage;
+  closure_21 = Storage.get(fingerprint);
+  const Storage2 = Storage6.Storage;
   let value = Storage2.get(analytics_installation);
   if (null == value) {
     const Storage3 = tmp(595).Storage;
@@ -42,14 +48,14 @@ function fetchFingerprint(arg0) {
     }
     value = tmp4;
   }
-  let c23 = value;
+  c23 = value;
   if (null != nextPromise) {
     return nextPromise;
   } else {
     if (null != closure_21) {
       let token = closure_21;
     } else {
-      let obj = importAll(707);
+      let obj = setSecondaryTokenAll;
       token = obj.getToken();
     }
     let tmpResult = tmp(1222);
@@ -57,7 +63,7 @@ function fetchFingerprint(arg0) {
       if (flag) {
         if (!handoffAvailable.isHandoffAvailable()) {
           obj = {};
-          const superPropertiesBase64 = importDefault(698).getSuperPropertiesBase64();
+          const superPropertiesBase64 = expandEventPropertiesDefault.getSuperPropertiesBase64();
           if (null != superPropertiesBase64) {
             obj["X-Super-Properties"] = superPropertiesBase64;
           }
@@ -67,20 +73,16 @@ function fetchFingerprint(arg0) {
           if (null != c23) {
             obj["X-Installation-ID"] = c23;
           }
-          tmpResult = tmp(13554);
+          tmpResult = tmp(13612);
           obj = { withGuildExperiments: null, headers: null, context: null };
           obj[0] = true;
           obj[1] = obj;
-          const obj1 = { location: null };
-          const obj4 = importDefault(698);
+          obj1 = { location: null };
+          const obj4 = expandEventPropertiesDefault;
           obj1[0] = tmp(1222).getFingerprintLocation();
           obj[2] = obj1;
           const experiments = tmpResult.fetchExperiments(obj);
           nextPromise = experiments.then((body) => {
-            let assignments;
-            let fingerprint;
-            let guild_experiments;
-            let installation;
             body = body.body;
             ({ fingerprint, installation } = body);
             let tmp = null != installation;
@@ -101,11 +103,11 @@ function fetchFingerprint(arg0) {
               const obj3 = callback2(709);
             }
             callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
-            let c33 = null;
+            c33 = null;
             const obj5 = callback2(709);
-            callback(13555).onExperimentsLoaded();
+            callback(13613).onExperimentsLoaded();
           }, () => {
-            let c33 = null;
+            c33 = null;
             callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
           });
           const tmpResult1 = tmp(1222);
@@ -117,20 +119,20 @@ function fetchFingerprint(arg0) {
   }
 }
 function handleLogout(isSwitchingAccount) {
-  let obj = importAll(707);
-  const Storage = require(595) /* Storage */.Storage;
+  let obj = setSecondaryTokenAll;
+  const Storage = Storage6.Storage;
   obj = { tokenManagerHasToken: null != obj.getToken(), storageHasToken: null != Storage.get(closure_12) };
-  tmp4.verbose("handleLogout called.", obj);
+  closure_13.verbose("handleLogout called.", obj);
   const tmp2 = null != obj.getToken();
-  const obj3 = importAll(707);
-  const Storage2 = require(595) /* Storage */.Storage;
-  obj = { tokenManagerHasToken: null != importAll(707).getToken(), storageHasToken: null != Storage2.get(closure_12) };
-  tmp4.verbose("removeAuthToken called.", obj);
-  const tmp5 = null != importAll(707).getToken();
-  importAll(707).removeAnalyticsToken();
-  const obj5 = importAll(707);
+  const obj3 = setSecondaryTokenAll;
+  const Storage2 = Storage6.Storage;
+  obj = { tokenManagerHasToken: null != setSecondaryTokenAll.getToken(), storageHasToken: null != Storage2.get(closure_12) };
+  closure_13.verbose("removeAuthToken called.", obj);
+  const tmp5 = null != setSecondaryTokenAll.getToken();
+  setSecondaryTokenAll.removeAnalyticsToken();
+  const obj5 = setSecondaryTokenAll;
   let flag;
-  const obj6 = importAll(707);
+  const obj6 = setSecondaryTokenAll;
   if (isSwitchingAccount != null) {
     flag = isSwitchingAccount.isSwitchingAccount;
   }
@@ -139,15 +141,15 @@ function handleLogout(isSwitchingAccount) {
   }
   if (!flag) {
     if (removeTokenResult) {
-      let closure_22 = c21;
+      closure_22 = c21;
       c21 = null;
       const Storage3 = tmp3(595).Storage;
       Storage3.remove(fingerprint);
     }
     fetchFingerprint();
   }
-  const PersistedStore = importDefault(589).PersistedStore;
-  const obj1 = { omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore", "AccessibilityStore"], type: null };
+  const PersistedStore = initializeDefault.PersistedStore;
+  obj1 = { omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore", "AccessibilityStore"], type: null };
   isSwitchingAccount = undefined;
   if (isSwitchingAccount != null) {
     isSwitchingAccount = isSwitchingAccount.isSwitchingAccount;
@@ -160,23 +162,23 @@ function handleLogout(isSwitchingAccount) {
   PersistedStore.clearAll(obj1);
   const Store = tmp14(589).Store;
   const result = Store.removeAllConditionalListeners();
-  clearAll.clearAll();
-  removeTokenResult = importAll(707).removeToken();
-  importDefault(1208).clearUser();
+  closure_7.clearAll();
+  removeTokenResult = setSecondaryTokenAll.removeToken();
+  _modDef1208.clearUser();
   const Storage4 = tmp3(595).Storage;
   Storage4.remove(user_id_cache);
-  let c17 = null;
-  let c18 = null;
+  c17 = null;
+  c18 = null;
   let isSwitchingAccount1;
   if (isSwitchingAccount != null) {
     isSwitchingAccount1 = isSwitchingAccount.isSwitchingAccount;
   }
-  let closure_25 = isSwitchingAccount1 ? tmp22.LOGGING_IN : tmp22.NONE;
-  let c28 = "";
-  let c30 = null;
-  let c29 = false;
-  let c35 = false;
-  let c36 = false;
+  closure_25 = isSwitchingAccount1 ? tmp22.LOGGING_IN : tmp22.NONE;
+  c28 = "";
+  c30 = null;
+  c29 = false;
+  c35 = false;
+  c36 = false;
   const items = [];
   if (c31) {
     items.push({ type: "totp" });
@@ -188,9 +190,10 @@ function handleLogout(isSwitchingAccount) {
     items.push({ type: "sms" });
   }
 }
-({ AnalyticEvents: metroImportAll, LoginStates } = ME);
+({ AnalyticEvents: closure_8, LoginStates } = ME);
 ({ Platforms: c10, Routes: unpackModuleId, TOKEN_KEY: closure_12 } = ME);
 ({ EXISTING_USER_AGE_GATE_MODAL_KEY, NEW_USER_AGE_GATE_MODAL_KEY } = result);
+let closure_13 = new timestampDefault("AuthenticationStore");
 let fingerprint = "fingerprint";
 const analytics_installation = "analytics_installation";
 const user_id_cache = "user_id_cache";
@@ -215,13 +218,14 @@ let c34 = null;
 let c35 = false;
 let c36 = false;
 let closure_37 = [];
+let Store = initializeDefault.Store;
 class AuthenticationStore extends Store {
 }
 const prototype = AuthenticationStore.prototype;
 prototype["initialize"] = function initialize() {
-  const Storage = require(595) /* Storage */.Storage;
-  let closure_17 = Storage.get(user_id_cache);
-  const Storage2 = require(595) /* Storage */.Storage;
+  const Storage = Storage6.Storage;
+  closure_17 = Storage.get(user_id_cache);
+  const Storage2 = Storage6.Storage;
   let value = Storage2.get(analytics_installation);
   if (null == value) {
     const Storage3 = tmp(595).Storage;
@@ -245,13 +249,13 @@ prototype["initialize"] = function initialize() {
     }
     if (tmp7) {
       function fireApex() {
-        const installationExperiments = callback(10683).fetchInstallationExperiments(null);
+        const installationExperiments = callback(10722).fetchInstallationExperiments(null);
       }
       promise.then(fireApex, fireApex);
     }
     promise = fetchFingerprint();
   }
-  this.addChangeListener(() => callback(13557).setClientState(closure_17));
+  this.addChangeListener(() => callback(13615).setClientState(closure_17));
 };
 prototype["getLoginStatus"] = function getLoginStatus() {
   return NONE;
@@ -269,10 +273,10 @@ prototype["getStaticAuthSessionId"] = function getStaticAuthSessionId() {
   return c20;
 };
 prototype["getToken"] = function getToken() {
-  return require(1371) /* getToken */.getToken();
+  return getToken.getToken();
 };
 prototype["isAuthenticated"] = function isAuthenticated() {
-  return require(1371) /* getToken */.isAuthenticated();
+  return getToken.isAuthenticated();
 };
 prototype["getFingerprint"] = function getFingerprint() {
   return c21;
@@ -287,8 +291,8 @@ prototype["getInstallationForTracking"] = function getInstallationForTracking() 
 prototype["getAnalyticsToken"] = function getAnalyticsToken() {
   let analyticsToken = c24;
   if (c24 == null) {
-    analyticsToken = importAll(707).getAnalyticsToken();
-    const obj = importAll(707);
+    analyticsToken = setSecondaryTokenAll.getAnalyticsToken();
+    const obj = setSecondaryTokenAll;
   }
   return analyticsToken;
 };
@@ -302,12 +306,12 @@ prototype["getLoginInstanceId"] = function getLoginInstanceId() {
   return closure_5;
 };
 prototype["hasTOTPEnabled"] = function hasTOTPEnabled() {
-  return closure_27.includes(require(1954) /* PermissionOverwriteType */.AuthenticatorType.TOTP);
+  return closure_27.includes(PermissionOverwriteType.AuthenticatorType.TOTP);
 };
 prototype["getCredentials"] = function getCredentials() {
   if (null == closure_4) {
     const _Error = Error;
-    const error = new Error("no credentials");
+    error = new Error("no credentials");
     throw error;
   } else {
     return closure_4;
@@ -326,31 +330,21 @@ prototype["attemptedPasswordLogin"] = function attemptedPasswordLogin() {
   return c36;
 };
 AuthenticationStore.displayName = "AuthenticationStore";
-let tmp4 = new require("result")("AuthenticationStore");
-const authenticationStore = new AuthenticationStore(require("dispatcher"), {
+let tmp4 = new timestampDefault("AuthenticationStore");
+const authenticationStore = new AuthenticationStore(importDefaultResult, {
   CONNECTION_OPEN: function handleConnectionOpen(arg0) {
-    let analyticsToken;
-    let apexExperiments;
-    let auth;
-    let authSessionIdHash;
-    let email;
-    let id;
-    let sessionId;
-    let staticAuthSessionId;
-    let user;
-    let username;
     ({ user, analyticsToken, auth, apexExperiments } = arg0);
     ({ sessionId, authSessionIdHash, staticAuthSessionId } = arg0);
-    let obj = importAll(707);
-    const Storage = require(595) /* Storage */.Storage;
+    let obj = setSecondaryTokenAll;
+    const Storage = Storage6.Storage;
     obj = { tokenManagerHasToken: null != obj.getToken(), storageHasToken: null != Storage.get(closure_12) };
-    require.verbose("handleConnectionOpen called", obj);
+    closure_13.verbose("handleConnectionOpen called", obj);
     const tmp = importAll;
     const tmp3 = null != obj.getToken();
     ({ id, username, email } = user);
-    importDefault(1208).setUser(id, username, email, importDefault(11587)(user));
-    const obj3 = importDefault(1208);
-    tmp(707).setAnalyticsToken(analyticsToken);
+    _modDef1208.setUser(id, username, email, isStaffDefault(user));
+    const obj3 = _modDef1208;
+    setSecondaryTokenAll.setAnalyticsToken(analyticsToken);
     id = user.id;
     if (undefined !== auth) {
       const authenticator_types = auth.authenticator_types;
@@ -364,7 +358,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     if (null != installation) {
       installation = apexExperiments.installation;
       if (null == installation) {
-        let tmp6Result = tmp6(13556);
+        let tmp6Result = tmp6(13614);
         if (tmp6Result.canUseInstallationId()) {
           const Storage3 = tmp4(595).Storage;
           const result1 = Storage3.set(analytics_installation, installation);
@@ -382,24 +376,17 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     }
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(arg0) {
-    let analyticsToken;
-    let email;
-    let id;
-    let sessionId;
-    let token;
-    let user;
-    let username;
     ({ user, analyticsToken } = arg0);
     ({ sessionId, token } = arg0);
-    let obj = importDefault(1208);
+    let obj = _modDef1208;
     ({ id, username, email } = user);
-    obj.setUser(id, username, email, importDefault(11587)(user));
+    obj.setUser(id, username, email, isStaffDefault(user));
     const id2 = user.id;
-    const obj2 = importAll(707);
+    const obj2 = setSecondaryTokenAll;
     const tmp = importDefault;
-    const Storage = require(595) /* Storage */.Storage;
-    obj = { tokenManagerHasToken: null != importAll(707).getToken(), storageHasToken: null != Storage.get(closure_12) };
-    importAll.verbose("setAuthToken called.", obj);
+    const Storage = Storage6.Storage;
+    obj = { tokenManagerHasToken: null != setSecondaryTokenAll.getToken(), storageHasToken: null != Storage.get(closure_12) };
+    closure_13.verbose("setAuthToken called.", obj);
     let tmp8 = null != id2;
     if (tmp8) {
       tmp8 = id2 === id;
@@ -414,7 +401,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
       tmp4(707).setAnalyticsToken(analyticsToken);
       const tmp4Result1 = tmp4(707);
     }
-    let closure_22 = c21;
+    closure_22 = c21;
     c21 = null;
     const Storage2 = tmp6(595).Storage;
     Storage2.remove(fingerprint);
@@ -425,26 +412,26 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
   CONNECTION_CLOSED: function handleConnectionClosed(code) {
     code = code.code;
     const combined = "handleConnectionClosed called with code " + code + ".";
-    let obj = importAll(707);
-    const Storage = require(595) /* Storage */.Storage;
+    let obj = setSecondaryTokenAll;
+    const Storage = Storage6.Storage;
     obj = { tokenManagerHasToken: null != obj.getToken(), storageHasToken: null != Storage.get(closure_12) };
-    require.verbose(combined, obj);
+    closure_13.verbose(combined, obj);
     if (4004 === code) {
       if (c26) {
         c26 = true;
         handleLogout();
-        importDefault(709).wait(() => {
+        importDefaultResult.wait(() => {
           callback(1222).transitionTo(constants.REGISTER);
         });
       } else {
         obj = { user_id: null };
-        const Storage2 = tmp4(595).Storage;
+        const Storage2 = Storage6.Storage;
         obj[0] = Storage2.get(user_id_cache);
-        importDefault(698).track(constants.APP_USER_DEAUTHENTICATED, obj);
+        expandEventPropertiesDefault.track(constants.APP_USER_DEAUTHENTICATED, obj);
         handleLogout();
         const _setImmediate = setImmediate;
         setImmediate(() => callback(1222).transitionTo(constants.DEFAULT_LOGGED_OUT));
-        const obj3 = importDefault(698);
+        const obj3 = expandEventPropertiesDefault;
       }
     }
   },
@@ -453,30 +440,30 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
   },
   LOGIN: function handleLogin(arg0) {
     const LOGGING_IN = LoginStates.LOGGING_IN;
-    let tmp2 = c36;
-    if (!c36) {
+    let tmp2 = closure_36;
+    if (!closure_36) {
       tmp2 = true === tmp;
     }
-    c36 = tmp2;
+    closure_36 = tmp2;
   },
   LOGIN_SUCCESS: function handleLoginSuccess(token) {
-    const NONE = LoginStates.NONE;
-    let obj = importAll(707);
-    const Storage = require(595) /* Storage */.Storage;
+    NONE = LoginStates.NONE;
+    let obj = setSecondaryTokenAll;
+    const Storage = Storage6.Storage;
     obj = { tokenManagerHasToken: null != obj.getToken(), storageHasToken: null != Storage.get(closure_12) };
-    tmp4.verbose("setAuthToken called.", obj);
+    closure_13.verbose("setAuthToken called.", obj);
     const tmp = null != obj.getToken();
-    importAll(707).removeAnalyticsToken();
-    const obj3 = importAll(707);
-    importAll(707).setToken(token.token, undefined);
-    let closure_22 = c21;
+    setSecondaryTokenAll.removeAnalyticsToken();
+    const obj3 = setSecondaryTokenAll;
+    setSecondaryTokenAll.setToken(token.token, undefined);
+    closure_22 = c21;
     c21 = null;
-    const Storage2 = require(595) /* Storage */.Storage;
+    const Storage2 = Storage6.Storage;
     Storage2.remove(fingerprint);
-    let c28 = "";
-    let c29 = false;
-    let c30 = null;
-    let c5 = null;
+    c28 = "";
+    c29 = false;
+    c30 = null;
+    c5 = null;
     const items = [];
     if (c31) {
       items.push({ type: "totp" });
@@ -487,13 +474,13 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     if (c29) {
       items.push({ type: "sms" });
     }
-    let c35 = false;
+    c35 = false;
   },
   LOGIN_FAILURE: function handleLoginFailure(error) {
-    let c28 = "";
-    let c29 = false;
-    let c30 = null;
-    let c5 = null;
+    c28 = "";
+    c29 = false;
+    c30 = null;
+    c5 = null;
     const items = [];
     if (c31) {
       items.push({ type: "totp" });
@@ -505,23 +492,21 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
       items.push({ type: "sms" });
     }
     if (null != obj.getAuthenticationErrorsFromV6OrEarlierAPIError(error.error).date_of_birth) {
-      let NONE = LoginStates.LOGIN_AGE_GATE;
+      NONE = LoginStates.LOGIN_AGE_GATE;
     } else {
       NONE = LoginStates.NONE;
     }
   },
   LOGIN_MFA_STEP: function handleLoginMFAStep(arg0) {
-    let ticket;
-    let webauthn;
     ({ ticket, webauthn } = arg0);
     if (null != ticket) {
-      let c29 = tmp;
+      c29 = tmp;
       if (webauthn == null) {
         webauthn = null;
       }
-      let c32 = tmp2;
-      let c31 = tmp3;
-      let closure_5 = tmp4;
+      c32 = tmp2;
+      c31 = tmp3;
+      closure_5 = tmp4;
       const items = [];
       if (null != webauthn) {
         const obj = { type: "webauthn", challenge: null };
@@ -544,7 +529,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     const LOGGING_IN_MFA = LoginStates.LOGGING_IN_MFA;
   },
   LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION: function handleLoginAccountPendingDeletion(credentials) {
-    let closure_25 = LoginStates.ACCOUNT_SCHEDULED_FOR_DELETION;
+    closure_25 = LoginStates.ACCOUNT_SCHEDULED_FOR_DELETION;
     credentials = credentials.credentials;
   },
   LOGIN_ACCOUNT_DISABLED: function handleLoginAccountDisabled(credentials) {
@@ -552,7 +537,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     credentials = credentials.credentials;
   },
   LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION: function handleLoginPasswordRecoveryPhoneVerification(credentials) {
-    let closure_25 = LoginStates.PASSWORD_RECOVERY_PHONE_VERIFICATION;
+    closure_25 = LoginStates.PASSWORD_RECOVERY_PHONE_VERIFICATION;
     credentials = credentials.credentials;
   },
   LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED: function handleLoginPhoneIPAuthorizationRequired(credentials) {
@@ -560,12 +545,12 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     credentials = credentials.credentials;
   },
   LOGIN_RESET: function handleLoginReset(isMultiAccount) {
-    const NONE = LoginStates.NONE;
-    let c28 = "";
-    let c29 = false;
-    let c30 = null;
-    let c5 = null;
-    let c4 = null;
+    NONE = LoginStates.NONE;
+    c28 = "";
+    c29 = false;
+    c30 = null;
+    c5 = null;
+    c4 = null;
     if (!isMultiAccount.isMultiAccount) {
       const items = [];
       if (c31) {
@@ -577,25 +562,25 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
       if (c29) {
         items.push({ type: "sms" });
       }
-      let obj = importAll(707);
-      const Storage = require(595) /* Storage */.Storage;
+      let obj = setSecondaryTokenAll;
+      const Storage = Storage6.Storage;
       obj = { tokenManagerHasToken: null, storageHasToken: null };
       obj[0] = null != obj.getToken();
       obj[1] = null != Storage.get(closure_12);
-      tmp4.verbose("removeAuthToken called.", obj);
+      closure_13.verbose("removeAuthToken called.", obj);
       const tmp9 = null != obj.getToken();
-      importAll(707).removeAnalyticsToken();
-      const obj3 = importAll(707);
-      importAll(707).removeToken();
+      setSecondaryTokenAll.removeAnalyticsToken();
+      const obj3 = setSecondaryTokenAll;
+      setSecondaryTokenAll.removeToken();
       fetchFingerprint(false);
-      const obj4 = importAll(707);
+      const obj4 = setSecondaryTokenAll;
     }
   },
   LOGIN_STATUS_RESET: function handleLoginStatusReset() {
-    const NONE = LoginStates.NONE;
+    NONE = LoginStates.NONE;
   },
   LOGIN_SUSPENDED_USER: function handleSuspendedUserLogin(suspendedUserToken) {
-    let c35 = false;
+    c35 = false;
     suspendedUserToken = suspendedUserToken.suspendedUserToken;
     setImmediate(() => callback(table[7]).transitionTo(constants.ACCOUNT_STANDING));
   },
@@ -606,17 +591,17 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
       if (null != fingerprint) {
         let extractIdResult = null;
         if (null != fingerprint) {
-          extractIdResult = require(513) /* extractId */.extractId(fingerprint);
-          const obj6 = require(513) /* extractId */;
+          extractIdResult = extractId.extractId(fingerprint);
+          const obj6 = extractId;
         }
         let obj = { old_fingerprint: null, new_fingerprint: null };
         obj[0] = extractIdResult;
-        const obj5 = importDefault(698);
-        obj[1] = require(513) /* extractId */.extractId(fingerprint);
+        const obj5 = expandEventPropertiesDefault;
+        obj[1] = extractId.extractId(fingerprint);
         obj5.track(constants.USER_FINGERPRINT_CHANGED, obj);
-        const Storage = require(595) /* Storage */.Storage;
+        const Storage = Storage6.Storage;
         const result = Storage.set(fingerprint, fingerprint);
-        const obj8 = require(513) /* extractId */;
+        const obj8 = extractId;
       } else {
         fetchFingerprint();
       }
@@ -626,13 +611,13 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
         tmp2 = fingerprint !== fingerprint;
       }
       if (tmp2) {
-        obj = importDefault(698);
+        obj = expandEventPropertiesDefault;
         obj = { fingerprint: null, dropped_fingerprint: null };
-        obj[0] = require(513) /* extractId */.extractId(fingerprint);
-        const obj3 = require(513) /* extractId */;
-        obj[1] = require(513) /* extractId */.extractId(fingerprint);
+        obj[0] = extractId.extractId(fingerprint);
+        const obj3 = extractId;
+        obj[1] = extractId.extractId(fingerprint);
         obj.track(constants.EXTERNAL_FINGERPRINT_DROPPED, obj);
-        const obj4 = require(513) /* extractId */;
+        const obj4 = extractId;
       }
     }
   },
@@ -644,41 +629,42 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
       }
     }
     if (obj.canUseInstallationId()) {
-      const Storage = require(595) /* Storage */.Storage;
+      const Storage = Storage6.Storage;
       const result = Storage.set(analytics_installation, installation);
     }
   },
   REGISTER_SUCCESS: function handleRegisterSuccess(token) {
-    let obj = importAll(707);
-    const Storage = require(595) /* Storage */.Storage;
+    let obj = setSecondaryTokenAll;
+    const Storage = Storage6.Storage;
     obj = { tokenManagerHasToken: null != obj.getToken(), storageHasToken: null != Storage.get(closure_12) };
-    tmp4.verbose("setAuthToken called.", obj);
+    closure_13.verbose("setAuthToken called.", obj);
     const tmp = null != obj.getToken();
-    importAll(707).removeAnalyticsToken();
-    const obj3 = importAll(707);
-    importAll(707).setToken(token.token, undefined);
-    let closure_22 = c21;
+    setSecondaryTokenAll.removeAnalyticsToken();
+    const obj3 = setSecondaryTokenAll;
+    setSecondaryTokenAll.setToken(token.token, undefined);
+    closure_22 = c21;
     c21 = null;
-    const Storage2 = require(595) /* Storage */.Storage;
+    const Storage2 = Storage6.Storage;
     Storage2.remove(fingerprint);
   },
   FORGOT_PASSWORD_REQUEST: function handleForgotPasswordRequest() {
     const FORGOT_PASSWORD = LoginStates.FORGOT_PASSWORD;
   },
   FORGOT_PASSWORD_SENT: function handleForgotPasswordSent() {
-    const NONE = LoginStates.NONE;
+    NONE = LoginStates.NONE;
   },
   UPDATE_TOKEN: function handleUpdateToken(userId) {
     userId = userId.userId;
-    let obj = importAll(707);
-    const Storage = require(595) /* Storage */.Storage;
+    let obj = setSecondaryTokenAll;
+    const Storage = Storage6.Storage;
     obj = { tokenManagerHasToken: null != obj.getToken(), storageHasToken: null != Storage.get(closure_12) };
-    require.verbose("handleUpdateToken called", obj);
+    closure_13.verbose("handleUpdateToken called", obj);
     const tmp3 = null != obj.getToken();
-    const obj3 = importAll(707);
-    const Storage2 = require(595) /* Storage */.Storage;
-    obj = { tokenManagerHasToken: null != importAll(707).getToken(), storageHasToken: null != Storage2.get(closure_12) };
-    require.verbose("setAuthToken called.", obj);
+    const tmp4 = require;
+    const obj3 = setSecondaryTokenAll;
+    const Storage2 = Storage6.Storage;
+    obj = { tokenManagerHasToken: null != setSecondaryTokenAll.getToken(), storageHasToken: null != Storage2.get(closure_12) };
+    closure_13.verbose("setAuthToken called.", obj);
     let tmp8 = null != userId;
     if (tmp8) {
       tmp8 = userId === c17;
@@ -689,14 +675,14 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     }
     tmpResult = tmp(707);
     tmpResult.setToken(userId.token, userId);
-    let closure_22 = c21;
+    closure_22 = c21;
     c21 = null;
-    const Storage3 = tmp4(595).Storage;
+    const Storage3 = Storage6.Storage;
     Storage3.remove(fingerprint);
   },
   EXPERIMENTS_FETCH(withGuildExperiments) {
     let obj = {};
-    const superPropertiesBase64 = importDefault(698).getSuperPropertiesBase64();
+    const superPropertiesBase64 = expandEventPropertiesDefault.getSuperPropertiesBase64();
     if (null != superPropertiesBase64) {
       obj["X-Super-Properties"] = superPropertiesBase64;
     }
@@ -706,18 +692,14 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     if (null != c23) {
       obj["X-Installation-ID"] = c23;
     }
-    const obj2 = importDefault(698);
+    const obj2 = expandEventPropertiesDefault;
     obj = { withGuildExperiments: withGuildExperiments.withGuildExperiments, headers: obj, context: null };
     obj = { location: null };
-    let obj3 = require(13554) /* fetchExperiments */;
-    obj[0] = require(1222) /* transitionTo */.getFingerprintLocation();
+    let obj3 = fetchExperiments;
+    obj[0] = transitionTo.getFingerprintLocation();
     obj[2] = obj;
     const experiments = obj3.fetchExperiments(obj);
-    let closure_33 = experiments.then((body) => {
-      let assignments;
-      let fingerprint;
-      let guild_experiments;
-      let installation;
+    closure_33 = experiments.then((body) => {
       body = body.body;
       ({ fingerprint, installation } = body);
       let tmp = null != installation;
@@ -738,11 +720,11 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
         const obj3 = callback2(709);
       }
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
-      let c33 = null;
+      c33 = null;
       const obj5 = callback2(709);
-      callback(13555).onExperimentsLoaded();
+      callback(13613).onExperimentsLoaded();
     }, () => {
-      let c33 = null;
+      c33 = null;
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
     });
   },
@@ -752,68 +734,58 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     if (undefined !== user.authenticator_types) {
       const authenticator_types = user.authenticator_types;
     }
-    const Storage = require(595) /* Storage */.Storage;
+    const Storage = Storage6.Storage;
     const result = Storage.set(user_id_cache, user.id);
   },
   AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: function handleAgeGateUnderage() {
-    let c26 = true;
+    c26 = true;
     handleLogout();
-    importDefault(709).wait(() => {
+    importDefaultResult.wait(() => {
       callback(1222).transitionTo(constants.REGISTER);
     });
   },
   CLOSE_SUSPENDED_USER: function handleSuspendedUserClosed() {
-    let c34 = null;
-    const NONE = LoginStates.NONE;
+    c34 = null;
+    NONE = LoginStates.NONE;
     handleLogout();
     setImmediate(() => callback(table[7]).transitionTo(constants.DEFAULT_LOGGED_OUT));
   },
   PASSWORDLESS_FAILURE: function handlePasswordlessFailure(error) {
     error = error.error;
-    let c28 = "";
-    let c29 = false;
-    let c30 = null;
-    let c35 = false;
-    let c5 = null;
-    if (error instanceof importDefault(4274)) {
+    c28 = "";
+    c29 = false;
+    c30 = null;
+    c35 = false;
+    c5 = null;
+    if (error instanceof prototypeDefault) {
       if (null != obj.getAuthenticationErrorsFromAPIError(error).date_of_birth) {
-        let NONE = LoginStates.LOGIN_AGE_GATE;
+        NONE = LoginStates.LOGIN_AGE_GATE;
       } else {
         NONE = LoginStates.NONE;
       }
-      obj = require(8585) /* getAuthenticationErrorsFromAPIError */;
+      obj = getAuthenticationErrorsFromAPIError;
     } else {
       NONE = LoginStates.NONE;
     }
   },
   PASSWORDLESS_START: function handlePasswordlessStart() {
-    let c35 = true;
+    c35 = true;
   }
 }, require("dispatcher").DispatchBand.Early);
 let obj = {
   CONNECTION_OPEN: function handleConnectionOpen(arg0) {
-    let analyticsToken;
-    let apexExperiments;
-    let auth;
-    let authSessionIdHash;
-    let email;
-    let id;
-    let sessionId;
-    let staticAuthSessionId;
-    let user;
-    let username;
     ({ user, analyticsToken, auth, apexExperiments } = arg0);
     ({ sessionId, authSessionIdHash, staticAuthSessionId } = arg0);
-    let obj = importAll(707);
-    const Storage = require(595) /* Storage */.Storage;
+    let obj = setSecondaryTokenAll;
+    const Storage = Storage6.Storage;
     obj = { tokenManagerHasToken: null != obj.getToken(), storageHasToken: null != Storage.get(closure_12) };
-    require.verbose("handleConnectionOpen called", obj);
+    closure_13.verbose("handleConnectionOpen called", obj);
     const tmp = importAll;
     const tmp3 = null != obj.getToken();
     ({ id, username, email } = user);
-    importDefault(1208).setUser(id, username, email, importDefault(11587)(user));
-    const obj3 = importDefault(1208);
-    tmp(707).setAnalyticsToken(analyticsToken);
+    _modDef1208.setUser(id, username, email, isStaffDefault(user));
+    const obj3 = _modDef1208;
+    setSecondaryTokenAll.setAnalyticsToken(analyticsToken);
     id = user.id;
     if (undefined !== auth) {
       const authenticator_types = auth.authenticator_types;
@@ -827,7 +799,7 @@ let obj = {
     if (null != installation) {
       installation = apexExperiments.installation;
       if (null == installation) {
-        let tmp6Result = tmp6(13556);
+        let tmp6Result = tmp6(13614);
         if (tmp6Result.canUseInstallationId()) {
           const Storage3 = tmp4(595).Storage;
           const result1 = Storage3.set(analytics_installation, installation);
@@ -845,24 +817,17 @@ let obj = {
     }
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(arg0) {
-    let analyticsToken;
-    let email;
-    let id;
-    let sessionId;
-    let token;
-    let user;
-    let username;
     ({ user, analyticsToken } = arg0);
     ({ sessionId, token } = arg0);
-    let obj = importDefault(1208);
+    let obj = _modDef1208;
     ({ id, username, email } = user);
-    obj.setUser(id, username, email, importDefault(11587)(user));
+    obj.setUser(id, username, email, isStaffDefault(user));
     const id2 = user.id;
-    const obj2 = importAll(707);
+    const obj2 = setSecondaryTokenAll;
     const tmp = importDefault;
-    const Storage = require(595) /* Storage */.Storage;
-    obj = { tokenManagerHasToken: null != importAll(707).getToken(), storageHasToken: null != Storage.get(closure_12) };
-    importAll.verbose("setAuthToken called.", obj);
+    const Storage = Storage6.Storage;
+    obj = { tokenManagerHasToken: null != setSecondaryTokenAll.getToken(), storageHasToken: null != Storage.get(closure_12) };
+    closure_13.verbose("setAuthToken called.", obj);
     let tmp8 = null != id2;
     if (tmp8) {
       tmp8 = id2 === id;
@@ -877,7 +842,7 @@ let obj = {
       tmp4(707).setAnalyticsToken(analyticsToken);
       const tmp4Result1 = tmp4(707);
     }
-    let closure_22 = c21;
+    closure_22 = c21;
     c21 = null;
     const Storage2 = tmp6(595).Storage;
     Storage2.remove(fingerprint);
@@ -888,26 +853,26 @@ let obj = {
   CONNECTION_CLOSED: function handleConnectionClosed(code) {
     code = code.code;
     const combined = "handleConnectionClosed called with code " + code + ".";
-    let obj = importAll(707);
-    const Storage = require(595) /* Storage */.Storage;
+    let obj = setSecondaryTokenAll;
+    const Storage = Storage6.Storage;
     obj = { tokenManagerHasToken: null != obj.getToken(), storageHasToken: null != Storage.get(closure_12) };
-    require.verbose(combined, obj);
+    closure_13.verbose(combined, obj);
     if (4004 === code) {
       if (c26) {
         c26 = true;
         handleLogout();
-        importDefault(709).wait(() => {
+        importDefaultResult.wait(() => {
           callback(1222).transitionTo(constants.REGISTER);
         });
       } else {
         obj = { user_id: null };
-        const Storage2 = tmp4(595).Storage;
+        const Storage2 = Storage6.Storage;
         obj[0] = Storage2.get(user_id_cache);
-        importDefault(698).track(constants.APP_USER_DEAUTHENTICATED, obj);
+        expandEventPropertiesDefault.track(constants.APP_USER_DEAUTHENTICATED, obj);
         handleLogout();
         const _setImmediate = setImmediate;
         setImmediate(() => callback(1222).transitionTo(constants.DEFAULT_LOGGED_OUT));
-        const obj3 = importDefault(698);
+        const obj3 = expandEventPropertiesDefault;
       }
     }
   },
@@ -916,30 +881,30 @@ let obj = {
   },
   LOGIN: function handleLogin(arg0) {
     const LOGGING_IN = LoginStates.LOGGING_IN;
-    let tmp2 = c36;
-    if (!c36) {
+    let tmp2 = closure_36;
+    if (!closure_36) {
       tmp2 = true === tmp;
     }
-    c36 = tmp2;
+    closure_36 = tmp2;
   },
   LOGIN_SUCCESS: function handleLoginSuccess(token) {
-    const NONE = LoginStates.NONE;
-    let obj = importAll(707);
-    const Storage = require(595) /* Storage */.Storage;
+    NONE = LoginStates.NONE;
+    let obj = setSecondaryTokenAll;
+    const Storage = Storage6.Storage;
     obj = { tokenManagerHasToken: null != obj.getToken(), storageHasToken: null != Storage.get(closure_12) };
-    tmp4.verbose("setAuthToken called.", obj);
+    closure_13.verbose("setAuthToken called.", obj);
     const tmp = null != obj.getToken();
-    importAll(707).removeAnalyticsToken();
-    const obj3 = importAll(707);
-    importAll(707).setToken(token.token, undefined);
-    let closure_22 = c21;
+    setSecondaryTokenAll.removeAnalyticsToken();
+    const obj3 = setSecondaryTokenAll;
+    setSecondaryTokenAll.setToken(token.token, undefined);
+    closure_22 = c21;
     c21 = null;
-    const Storage2 = require(595) /* Storage */.Storage;
+    const Storage2 = Storage6.Storage;
     Storage2.remove(fingerprint);
-    let c28 = "";
-    let c29 = false;
-    let c30 = null;
-    let c5 = null;
+    c28 = "";
+    c29 = false;
+    c30 = null;
+    c5 = null;
     const items = [];
     if (c31) {
       items.push({ type: "totp" });
@@ -950,13 +915,13 @@ let obj = {
     if (c29) {
       items.push({ type: "sms" });
     }
-    let c35 = false;
+    c35 = false;
   },
   LOGIN_FAILURE: function handleLoginFailure(error) {
-    let c28 = "";
-    let c29 = false;
-    let c30 = null;
-    let c5 = null;
+    c28 = "";
+    c29 = false;
+    c30 = null;
+    c5 = null;
     const items = [];
     if (c31) {
       items.push({ type: "totp" });
@@ -968,23 +933,21 @@ let obj = {
       items.push({ type: "sms" });
     }
     if (null != obj.getAuthenticationErrorsFromV6OrEarlierAPIError(error.error).date_of_birth) {
-      let NONE = LoginStates.LOGIN_AGE_GATE;
+      NONE = LoginStates.LOGIN_AGE_GATE;
     } else {
       NONE = LoginStates.NONE;
     }
   },
   LOGIN_MFA_STEP: function handleLoginMFAStep(arg0) {
-    let ticket;
-    let webauthn;
     ({ ticket, webauthn } = arg0);
     if (null != ticket) {
-      let c29 = tmp;
+      c29 = tmp;
       if (webauthn == null) {
         webauthn = null;
       }
-      let c32 = tmp2;
-      let c31 = tmp3;
-      let closure_5 = tmp4;
+      c32 = tmp2;
+      c31 = tmp3;
+      closure_5 = tmp4;
       const items = [];
       if (null != webauthn) {
         const obj = { type: "webauthn", challenge: null };
@@ -1007,7 +970,7 @@ let obj = {
     const LOGGING_IN_MFA = LoginStates.LOGGING_IN_MFA;
   },
   LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION: function handleLoginAccountPendingDeletion(credentials) {
-    let closure_25 = LoginStates.ACCOUNT_SCHEDULED_FOR_DELETION;
+    closure_25 = LoginStates.ACCOUNT_SCHEDULED_FOR_DELETION;
     credentials = credentials.credentials;
   },
   LOGIN_ACCOUNT_DISABLED: function handleLoginAccountDisabled(credentials) {
@@ -1015,7 +978,7 @@ let obj = {
     credentials = credentials.credentials;
   },
   LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION: function handleLoginPasswordRecoveryPhoneVerification(credentials) {
-    let closure_25 = LoginStates.PASSWORD_RECOVERY_PHONE_VERIFICATION;
+    closure_25 = LoginStates.PASSWORD_RECOVERY_PHONE_VERIFICATION;
     credentials = credentials.credentials;
   },
   LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED: function handleLoginPhoneIPAuthorizationRequired(credentials) {
@@ -1023,12 +986,12 @@ let obj = {
     credentials = credentials.credentials;
   },
   LOGIN_RESET: function handleLoginReset(isMultiAccount) {
-    const NONE = LoginStates.NONE;
-    let c28 = "";
-    let c29 = false;
-    let c30 = null;
-    let c5 = null;
-    let c4 = null;
+    NONE = LoginStates.NONE;
+    c28 = "";
+    c29 = false;
+    c30 = null;
+    c5 = null;
+    c4 = null;
     if (!isMultiAccount.isMultiAccount) {
       const items = [];
       if (c31) {
@@ -1040,25 +1003,25 @@ let obj = {
       if (c29) {
         items.push({ type: "sms" });
       }
-      let obj = importAll(707);
-      const Storage = require(595) /* Storage */.Storage;
+      let obj = setSecondaryTokenAll;
+      const Storage = Storage6.Storage;
       obj = { tokenManagerHasToken: null, storageHasToken: null };
       obj[0] = null != obj.getToken();
       obj[1] = null != Storage.get(closure_12);
-      tmp4.verbose("removeAuthToken called.", obj);
+      closure_13.verbose("removeAuthToken called.", obj);
       const tmp9 = null != obj.getToken();
-      importAll(707).removeAnalyticsToken();
-      const obj3 = importAll(707);
-      importAll(707).removeToken();
+      setSecondaryTokenAll.removeAnalyticsToken();
+      const obj3 = setSecondaryTokenAll;
+      setSecondaryTokenAll.removeToken();
       fetchFingerprint(false);
-      const obj4 = importAll(707);
+      const obj4 = setSecondaryTokenAll;
     }
   },
   LOGIN_STATUS_RESET: function handleLoginStatusReset() {
-    const NONE = LoginStates.NONE;
+    NONE = LoginStates.NONE;
   },
   LOGIN_SUSPENDED_USER: function handleSuspendedUserLogin(suspendedUserToken) {
-    let c35 = false;
+    c35 = false;
     suspendedUserToken = suspendedUserToken.suspendedUserToken;
     setImmediate(() => callback(table[7]).transitionTo(constants.ACCOUNT_STANDING));
   },
@@ -1069,17 +1032,17 @@ let obj = {
       if (null != fingerprint) {
         let extractIdResult = null;
         if (null != fingerprint) {
-          extractIdResult = require(513) /* extractId */.extractId(fingerprint);
-          const obj6 = require(513) /* extractId */;
+          extractIdResult = extractId.extractId(fingerprint);
+          const obj6 = extractId;
         }
         let obj = { old_fingerprint: null, new_fingerprint: null };
         obj[0] = extractIdResult;
-        const obj5 = importDefault(698);
-        obj[1] = require(513) /* extractId */.extractId(fingerprint);
+        const obj5 = expandEventPropertiesDefault;
+        obj[1] = extractId.extractId(fingerprint);
         obj5.track(constants.USER_FINGERPRINT_CHANGED, obj);
-        const Storage = require(595) /* Storage */.Storage;
+        const Storage = Storage6.Storage;
         const result = Storage.set(fingerprint, fingerprint);
-        const obj8 = require(513) /* extractId */;
+        const obj8 = extractId;
       } else {
         fetchFingerprint();
       }
@@ -1089,13 +1052,13 @@ let obj = {
         tmp2 = fingerprint !== fingerprint;
       }
       if (tmp2) {
-        obj = importDefault(698);
+        obj = expandEventPropertiesDefault;
         obj = { fingerprint: null, dropped_fingerprint: null };
-        obj[0] = require(513) /* extractId */.extractId(fingerprint);
-        const obj3 = require(513) /* extractId */;
-        obj[1] = require(513) /* extractId */.extractId(fingerprint);
+        obj[0] = extractId.extractId(fingerprint);
+        const obj3 = extractId;
+        obj[1] = extractId.extractId(fingerprint);
         obj.track(constants.EXTERNAL_FINGERPRINT_DROPPED, obj);
-        const obj4 = require(513) /* extractId */;
+        const obj4 = extractId;
       }
     }
   },
@@ -1107,41 +1070,42 @@ let obj = {
       }
     }
     if (obj.canUseInstallationId()) {
-      const Storage = require(595) /* Storage */.Storage;
+      const Storage = Storage6.Storage;
       const result = Storage.set(analytics_installation, installation);
     }
   },
   REGISTER_SUCCESS: function handleRegisterSuccess(token) {
-    let obj = importAll(707);
-    const Storage = require(595) /* Storage */.Storage;
+    let obj = setSecondaryTokenAll;
+    const Storage = Storage6.Storage;
     obj = { tokenManagerHasToken: null != obj.getToken(), storageHasToken: null != Storage.get(closure_12) };
-    tmp4.verbose("setAuthToken called.", obj);
+    closure_13.verbose("setAuthToken called.", obj);
     const tmp = null != obj.getToken();
-    importAll(707).removeAnalyticsToken();
-    const obj3 = importAll(707);
-    importAll(707).setToken(token.token, undefined);
-    let closure_22 = c21;
+    setSecondaryTokenAll.removeAnalyticsToken();
+    const obj3 = setSecondaryTokenAll;
+    setSecondaryTokenAll.setToken(token.token, undefined);
+    closure_22 = c21;
     c21 = null;
-    const Storage2 = require(595) /* Storage */.Storage;
+    const Storage2 = Storage6.Storage;
     Storage2.remove(fingerprint);
   },
   FORGOT_PASSWORD_REQUEST: function handleForgotPasswordRequest() {
     const FORGOT_PASSWORD = LoginStates.FORGOT_PASSWORD;
   },
   FORGOT_PASSWORD_SENT: function handleForgotPasswordSent() {
-    const NONE = LoginStates.NONE;
+    NONE = LoginStates.NONE;
   },
   UPDATE_TOKEN: function handleUpdateToken(userId) {
     userId = userId.userId;
-    let obj = importAll(707);
-    const Storage = require(595) /* Storage */.Storage;
+    let obj = setSecondaryTokenAll;
+    const Storage = Storage6.Storage;
     obj = { tokenManagerHasToken: null != obj.getToken(), storageHasToken: null != Storage.get(closure_12) };
-    require.verbose("handleUpdateToken called", obj);
+    closure_13.verbose("handleUpdateToken called", obj);
     const tmp3 = null != obj.getToken();
-    const obj3 = importAll(707);
-    const Storage2 = require(595) /* Storage */.Storage;
-    obj = { tokenManagerHasToken: null != importAll(707).getToken(), storageHasToken: null != Storage2.get(closure_12) };
-    require.verbose("setAuthToken called.", obj);
+    const tmp4 = require;
+    const obj3 = setSecondaryTokenAll;
+    const Storage2 = Storage6.Storage;
+    obj = { tokenManagerHasToken: null != setSecondaryTokenAll.getToken(), storageHasToken: null != Storage2.get(closure_12) };
+    closure_13.verbose("setAuthToken called.", obj);
     let tmp8 = null != userId;
     if (tmp8) {
       tmp8 = userId === c17;
@@ -1152,14 +1116,14 @@ let obj = {
     }
     tmpResult = tmp(707);
     tmpResult.setToken(userId.token, userId);
-    let closure_22 = c21;
+    closure_22 = c21;
     c21 = null;
-    const Storage3 = tmp4(595).Storage;
+    const Storage3 = Storage6.Storage;
     Storage3.remove(fingerprint);
   },
   EXPERIMENTS_FETCH(withGuildExperiments) {
     let obj = {};
-    const superPropertiesBase64 = importDefault(698).getSuperPropertiesBase64();
+    const superPropertiesBase64 = expandEventPropertiesDefault.getSuperPropertiesBase64();
     if (null != superPropertiesBase64) {
       obj["X-Super-Properties"] = superPropertiesBase64;
     }
@@ -1169,18 +1133,14 @@ let obj = {
     if (null != c23) {
       obj["X-Installation-ID"] = c23;
     }
-    const obj2 = importDefault(698);
+    const obj2 = expandEventPropertiesDefault;
     obj = { withGuildExperiments: withGuildExperiments.withGuildExperiments, headers: obj, context: null };
     obj = { location: null };
-    let obj3 = require(13554) /* fetchExperiments */;
-    obj[0] = require(1222) /* transitionTo */.getFingerprintLocation();
+    let obj3 = fetchExperiments;
+    obj[0] = transitionTo.getFingerprintLocation();
     obj[2] = obj;
     const experiments = obj3.fetchExperiments(obj);
-    let closure_33 = experiments.then((body) => {
-      let assignments;
-      let fingerprint;
-      let guild_experiments;
-      let installation;
+    closure_33 = experiments.then((body) => {
       body = body.body;
       ({ fingerprint, installation } = body);
       let tmp = null != installation;
@@ -1201,11 +1161,11 @@ let obj = {
         const obj3 = callback2(709);
       }
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
-      let c33 = null;
+      c33 = null;
       const obj5 = callback2(709);
-      callback(13555).onExperimentsLoaded();
+      callback(13613).onExperimentsLoaded();
     }, () => {
-      let c33 = null;
+      c33 = null;
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
     });
   },
@@ -1215,44 +1175,44 @@ let obj = {
     if (undefined !== user.authenticator_types) {
       const authenticator_types = user.authenticator_types;
     }
-    const Storage = require(595) /* Storage */.Storage;
+    const Storage = Storage6.Storage;
     const result = Storage.set(user_id_cache, user.id);
   },
   AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: function handleAgeGateUnderage() {
-    let c26 = true;
+    c26 = true;
     handleLogout();
-    importDefault(709).wait(() => {
+    importDefaultResult.wait(() => {
       callback(1222).transitionTo(constants.REGISTER);
     });
   },
   CLOSE_SUSPENDED_USER: function handleSuspendedUserClosed() {
-    let c34 = null;
-    const NONE = LoginStates.NONE;
+    c34 = null;
+    NONE = LoginStates.NONE;
     handleLogout();
     setImmediate(() => callback(table[7]).transitionTo(constants.DEFAULT_LOGGED_OUT));
   },
   PASSWORDLESS_FAILURE: function handlePasswordlessFailure(error) {
     error = error.error;
-    let c28 = "";
-    let c29 = false;
-    let c30 = null;
-    let c35 = false;
-    let c5 = null;
-    if (error instanceof importDefault(4274)) {
+    c28 = "";
+    c29 = false;
+    c30 = null;
+    c35 = false;
+    c5 = null;
+    if (error instanceof prototypeDefault) {
       if (null != obj.getAuthenticationErrorsFromAPIError(error).date_of_birth) {
-        let NONE = LoginStates.LOGIN_AGE_GATE;
+        NONE = LoginStates.LOGIN_AGE_GATE;
       } else {
         NONE = LoginStates.NONE;
       }
-      obj = require(8585) /* getAuthenticationErrorsFromAPIError */;
+      obj = getAuthenticationErrorsFromAPIError;
     } else {
       NONE = LoginStates.NONE;
     }
   },
   PASSWORDLESS_START: function handlePasswordlessStart() {
-    let c35 = true;
+    c35 = true;
   }
 };
-result = require("ME").fileFinishedImporting("stores/AuthenticationStore.tsx");
+result = require("set").fileFinishedImporting("stores/AuthenticationStore.tsx");
 
 export default authenticationStore;

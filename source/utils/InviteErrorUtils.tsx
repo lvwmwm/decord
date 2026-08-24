@@ -1,20 +1,19 @@
-// Module ID: 11902
-// Function ID: 11903
+// Module ID: 11951
+// Function ID: 11952
 // Name: getDescriptiveInviteError
-// Dependencies: [1922, 676, 4039, 1236, 1993, 2]
+// Dependencies: [1922, 676, 4042, 1236, 1994, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 11902 (getDescriptiveInviteError)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 11951 (getDescriptiveInviteError)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import combinedDefault from "combined" /* 1994 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 ({ AbortCodes: c4, HelpdeskArticles: c5, MAX_USER_GUILDS: closure_6, MAX_USER_GUILDS_PREMIUM: error } = ME);
-const result = require("getPremiumPlanItem").fileFinishedImporting("utils/InviteErrorUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/InviteErrorUtils.tsx");
 
 export const getDescriptiveInviteError = function getDescriptiveInviteError(code) {
   if (constants.TOO_MANY_USER_GUILDS === code) {
@@ -28,36 +27,36 @@ export const getDescriptiveInviteError = function getDescriptiveInviteError(code
         let tmp14 = closure_6;
       }
       let obj = { title: null, description: null };
-      const intl7 = require(1236) /* getSystemLocale */.intl;
+      const intl7 = getSystemLocale.intl;
       obj = { quantity: null };
       obj[0] = tmp14;
-      obj[0] = intl7.formatToPlainString(require(1236) /* getSystemLocale */.t["ttJ/hj"], obj);
-      const intl8 = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl8.string(require(1236) /* getSystemLocale */.t.iLyuDO);
+      obj[0] = intl7.formatToPlainString(getSystemLocale.t["ttJ/hj"], obj);
+      const intl8 = getSystemLocale.intl;
+      obj[1] = intl8.string(getSystemLocale.t.iLyuDO);
       return obj;
     }
     tmp14 = closure_7;
-    obj5 = importDefault(4039);
+    obj5 = getPremiumPlanItemDefault;
   } else if (tmp.GUILD_AT_CAPACITY === code) {
-    const obj1 = { title: null, description: null };
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    obj1[0] = intl5.string(require(1236) /* getSystemLocale */.t.ZZlox4);
-    const intl6 = require(1236) /* getSystemLocale */.intl;
-    obj1[1] = intl6.string(require(1236) /* getSystemLocale */.t.ZUEGFn);
+    obj1 = { title: null, description: null };
+    const intl5 = getSystemLocale.intl;
+    obj1[0] = intl5.string(getSystemLocale.t.ZZlox4);
+    const intl6 = getSystemLocale.intl;
+    obj1[1] = intl6.string(getSystemLocale.t.ZUEGFn);
     return obj1;
   } else if (tmp.GUILD_JOIN_INVITE_LIMITED_ACCESS === code) {
     const obj2 = { title: null, description: null };
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.kJwpBW);
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    obj2[1] = intl4.string(require(1236) /* getSystemLocale */.t.ZUEGFn);
+    const intl3 = getSystemLocale.intl;
+    obj2[0] = intl3.string(getSystemLocale.t.kJwpBW);
+    const intl4 = getSystemLocale.intl;
+    obj2[1] = intl4.string(getSystemLocale.t.ZUEGFn);
     return obj2;
   } else if (tmp.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED === code) {
     obj = { title: null, description: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t["u/xsK9"]);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.SxY4IW);
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t["u/xsK9"]);
+    const intl2 = getSystemLocale.intl;
+    obj[1] = intl2.string(getSystemLocale.t.SxY4IW);
     return obj;
   } else {
     return null;
@@ -65,24 +64,24 @@ export const getDescriptiveInviteError = function getDescriptiveInviteError(code
 };
 export const getInviteError = function getInviteError(arg0) {
   if (constants.TOO_MANY_USER_GUILDS === arg0) {
-    const intl6 = require(1236) /* getSystemLocale */.intl;
-    return intl6.string(require(1236) /* getSystemLocale */.t.iLyuDO);
+    const intl6 = getSystemLocale.intl;
+    return intl6.string(getSystemLocale.t.iLyuDO);
   } else if (tmp.GUILD_AT_CAPACITY === arg0) {
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    return intl5.string(require(1236) /* getSystemLocale */.t.M6unNJ);
+    const intl5 = getSystemLocale.intl;
+    return intl5.string(getSystemLocale.t.M6unNJ);
   } else if (tmp.INVALID_COUNTRY_CODE === arg0) {
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    return intl4.string(require(1236) /* getSystemLocale */.t.sRJGR1);
+    const intl4 = getSystemLocale.intl;
+    return intl4.string(getSystemLocale.t.sRJGR1);
   } else if (tmp.INVALID_CANNOT_FRIEND_SELF === arg0) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(require(1236) /* getSystemLocale */.t["mY2R+F"]);
+    const intl3 = getSystemLocale.intl;
+    return intl3.string(getSystemLocale.t["mY2R+F"]);
   } else if (tmp.INVITES_DISABLED === arg0) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     const obj = { articleLink: null };
-    obj[0] = importDefault(1993).getArticleURL(constants2.INVITE_DISABLED);
-    return intl2.format(require(1236) /* getSystemLocale */.t.RXSeLl, obj);
+    obj[0] = combinedDefault.getArticleURL(constants2.INVITE_DISABLED);
+    return intl2.format(getSystemLocale.t.RXSeLl, obj);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.dDZRdy);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.dDZRdy);
   }
 };

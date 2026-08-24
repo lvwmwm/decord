@@ -4,7 +4,8 @@
 // Dependencies: [17, 1688]
 
 // Module 1795 (AnimatedImage)
-import createAnimatedComponent from "createAnimatedComponent";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import createAnimatedComponent from "createAnimatedComponent" /* 1688 */;
 
 
-export const AnimatedImage = createAnimatedComponent.createAnimatedComponent(require("get ActivityIndicator").Image);
+export const AnimatedImage = createAnimatedComponent.createAnimatedComponent(get_ActivityIndicator.Image);

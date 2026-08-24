@@ -1,14 +1,17 @@
-// Module ID: 4665
-// Function ID: 4666
+// Module ID: 4672
+// Function ID: 4673
 // Name: CONFIG_NEVER_ANIMATE
-// Dependencies: [4115, 2]
+// Dependencies: [4119, 2]
 
-// Module 4665 (CONFIG_NEVER_ANIMATE)
-let obj = { duration: 1, reduceMotion: require("module_4115").ReduceMotion.Always };
+// Module 4672 (CONFIG_NEVER_ANIMATE)
+import set from "set" /* 2 */;
+import _mod4119 from "module_4119" /* 4119 */;
+
+let obj = { duration: 1, reduceMotion: _mod4119.ReduceMotion.Always };
 obj = {};
 const merged = Object.assign(obj);
 obj.reduceMotion = undefined;
-const result = require("set").fileFinishedImporting("design/animation/reanimated/ReanimatedConstants.tsx");
+const result = set.fileFinishedImporting("design/animation/reanimated/ReanimatedConstants.tsx");
 
 export const CONFIG_NEVER_ANIMATE = obj;
 export const CONFIG_NEVER_ANIMATE_TIMING = obj;

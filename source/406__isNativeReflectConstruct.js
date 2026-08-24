@@ -4,13 +4,14 @@
 // Dependencies: [109, 41, 42, 93, 95, 98, 19, 21, 312]
 
 // Module 406 (_isNativeReflectConstruct)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
-import importDefaultResult1 from "_inherits";
-import { jsx } from "jsxProd";
+import noopAll from "noop" /* 19 */;
+import closure_3 from "_objectWithoutProperties" /* 109 */;
+import closure_4 from "_classCallCheck" /* 41 */;
+import closure_5 from "_possibleConstructorReturn" /* 93 */;
+import closure_6 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import importDefaultResult1 from "_inherits" /* 98 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const SectionList = importDefault;
 function _isNativeReflectConstruct() {
@@ -24,10 +25,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -37,12 +38,12 @@ class SectionList {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_4(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_6;
+    obj = closure_6(closure_0);
+    tmp3 = closure_5;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -51,14 +52,14 @@ class SectionList {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result._captureRef = (_wrapperListRef) => {
-      c0._wrapperListRef = _wrapperListRef;
+      closure_0._wrapperListRef = _wrapperListRef;
     };
     return tmp3Result;
   }
 }
-importDefaultResult1(SectionList, require("noop").PureComponent);
+importDefaultResult1(SectionList, noopAll.PureComponent);
 let items = [
   {
     key: "scrollToLocation",

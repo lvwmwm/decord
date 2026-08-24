@@ -1,16 +1,20 @@
-// Module ID: 8640
-// Function ID: 8641
+// Module ID: 8677
+// Function ID: 8678
 // Name: logFastestListError
 // Dependencies: [3, 1208, 2]
 // Exports: logFastestListError
 
-// Module 8640 (logFastestListError)
-const tmp2 = new require("timestamp")("FastestList");
+// Module 8677 (logFastestListError)
+import timestampDefault from "timestamp" /* 3 */;
+import _modDef1208 from "module_1208" /* 1208 */;
+
+let closure_2 = new timestampDefault("FastestList");
+const tmp2 = new timestampDefault("FastestList");
 const result = require("set").fileFinishedImporting("modules/fastest_list/utils/FastestListLogger.native.tsx");
 
 export const logFastestListError = function logFastestListError(arg0, extra) {
-  tmp2.error(arg0, extra);
-  let obj = importDefault(1208);
+  logger.error(arg0, extra);
+  let obj = _modDef1208;
   obj = { extra };
   obj.captureMessage(arg0, obj);
 };

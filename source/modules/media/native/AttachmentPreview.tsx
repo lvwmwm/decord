@@ -1,37 +1,52 @@
-// Module ID: 10139
-// Function ID: 10140
+// Module ID: 10178
+// Function ID: 10179
 // Name: AttachmentIcon
-// Dependencies: [19, 17, 21, 4661, 712, 10140, 10141, 10142, 10143, 10144, 10145, 10146, 10147, 10148, 10149, 10150, 10151, 10152, 10153, 4834, 4734, 500, 5449, 1297, 10071, 9018, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 10179, 10180, 10181, 10182, 10183, 10184, 10185, 10186, 10187, 10188, 10189, 10190, 10191, 10192, 4839, 4739, 500, 5454, 1297, 10110, 9055, 2]
 // Exports: default
 
-// Module 10139 (AttachmentIcon)
-import importAllResult from "getUploadFileSizeSum";
-import get_ActivityIndicator from "registerAsset";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 10178 (AttachmentIcon)
+import set from "set" /* 500 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import preloadDefault from "preload" /* 5454 */;
+import registerAssetDefault from "registerAsset" /* 10179 */;
+import registerAssetDefault2 from "registerAsset" /* 10180 */;
+import registerAssetDefault3 from "registerAsset" /* 10181 */;
+import registerAssetDefault4 from "registerAsset" /* 10182 */;
+import registerAssetDefault5 from "registerAsset" /* 10183 */;
+import registerAssetDefault6 from "registerAsset" /* 10184 */;
+import registerAssetDefault7 from "registerAsset" /* 10185 */;
+import registerAssetDefault8 from "registerAsset" /* 10186 */;
+import registerAssetDefault9 from "registerAsset" /* 10187 */;
+import registerAssetDefault10 from "registerAsset" /* 10188 */;
+import registerAssetDefault11 from "registerAsset" /* 10189 */;
+import registerAssetDefault12 from "registerAsset" /* 10190 */;
+import registerAssetDefault13 from "registerAsset" /* 10191 */;
+import registerAssetDefault14 from "registerAsset" /* 10192 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 class AttachmentIcon {
   constructor(arg0) {
     fileName = global.fileName;
     items = [];
     items[0] = fileName;
-    tmp = jsxs();
+    tmp = closure_8();
     obj = {
       style: tmp.attachmentFileIcon,
-      source: defineProperty.useMemo(() => {
-            const obj = fileName(outer1_2[19]);
+      source: closure_3.useMemo(() => {
+            const obj = fileName(closure_1_2[19]);
             let str = fileName;
             if (fileName == null) {
               str = "";
             }
-            let tmp2 = outer1_9[obj.classifyFileName(obj, str)];
+            let tmp2 = closure_1_9[obj.classifyFileName(obj, str)];
             if (tmp2 == null) {
-              tmp2 = outer1_1(outer1_2[16]);
+              tmp2 = closure_1_1(closure_1_2[16]);
             }
             return tmp2;
           }, items)
@@ -56,7 +71,7 @@ function FilenameText(fileName) {
     obj = { style: null, ellipsizeMode: "middle", lineClamp: 1, variant: "text-xs/medium", color: "mobile-text-heading-primary", children: null };
     obj[0] = tmp.attachmentFileName;
     obj[5] = fileName;
-    tmp5 = callback(require(4734) /* Text */.Text, obj);
+    tmp5 = callback(Text.Text, obj);
   }
   const items = [tmp5, ];
   obj = { style: tmp.attachmentFileName, lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
@@ -68,15 +83,13 @@ function FilenameText(fileName) {
       const str4 = match[1];
     }
   }
-  const obj1 = { children: null };
+  obj1 = { children: null };
   obj[4] = str3;
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  items[1] = callback(Text.Text, obj);
   obj1[0] = items;
   return closure_7(closure_5, obj1);
 }
 function DefaultAttachmentPreview(fileName) {
-  let borderRadius;
-  let maxFileWidth;
   fileName = fileName.fileName;
   ({ maxFileWidth, borderRadius } = fileName);
   const obj = { style: null, children: null };
@@ -90,19 +103,14 @@ let c3 = importAllResult;
 ({ Image: c4, View: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let obj = { fileInfoAttachmentPreviewFile: null, attachmentFileIcon: null, attachmentFileName: null, videoIcon: null };
-obj = { flexDirection: "row", alignItems: "center", overflow: "hidden", borderRadius: require("Themes").radii.sm, height: 75, padding: 12, flex: 1, gap: require("Themes").space.PX_8 };
+obj = { flexDirection: "row", alignItems: "center", overflow: "hidden", borderRadius: ThemesDefault.radii.sm, height: 75, padding: 12, flex: 1, gap: ThemesDefault.space.PX_8 };
 obj[0] = obj;
 obj[1] = { height: 32, width: 24 };
 obj[2] = { paddingRight: 4, paddingLeft: 4, maxWidth: 136 };
 obj[3] = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, alignItems: "center", justifyContent: "center" };
 let closure_8 = createCacheKey.createStyles(obj);
-createCacheKey = { archive: require("registerAsset"), acrobat: require("registerAsset"), ae: require("registerAsset"), ai: require("registerAsset"), audio: require("registerAsset"), code: require("registerAsset"), document: require("registerAsset"), image: require("registerAsset"), photoshop: require("registerAsset"), sketch: require("registerAsset"), spreadsheet: require("registerAsset"), unknown: require("registerAsset"), video: require("registerAsset"), webcode: require("registerAsset") };
+createCacheKey = { archive: registerAssetDefault, acrobat: registerAssetDefault2, ae: registerAssetDefault3, ai: registerAssetDefault4, audio: registerAssetDefault5, code: registerAssetDefault6, document: registerAssetDefault7, image: registerAssetDefault8, photoshop: registerAssetDefault9, sketch: registerAssetDefault10, spreadsheet: registerAssetDefault11, unknown: registerAssetDefault12, video: registerAssetDefault13, webcode: registerAssetDefault14 };
 let closure_13 = importAllResult.memo((borderRadius) => {
-  let fileName;
-  let height;
-  let style;
-  let uri;
-  let width;
   ({ uri, width, height, style, fileName } = borderRadius);
   let obj = { uri, width, height };
   obj = { width, height, borderRadius: borderRadius.borderRadius };
@@ -115,7 +123,7 @@ let closure_13 = importAllResult.memo((borderRadius) => {
     isMatch = obj2.test(fileName);
   }
   if (isMatch) {
-    let isIOSResult = require(500) /* set */.isIOS();
+    let isIOSResult = set.isIOS();
     if (isIOSResult) {
       isIOSResult = uri.startsWith("ph://");
     }
@@ -128,17 +136,17 @@ let closure_13 = importAllResult.memo((borderRadius) => {
       const tmp2Result = tmp2(500);
     }
     isMatch = isIOSResult;
-    const obj4 = require(500) /* set */;
+    const obj4 = set;
     tmp2 = require;
   }
   obj = { style: items, children: null };
   items = [obj, style, { overflow: "hidden" }];
   if (isMatch) {
-    const obj1 = { style: null, source: null, resizeMode: "cover", enableAnimation: true };
+    obj1 = { style: null, source: null, resizeMode: "cover", enableAnimation: true };
     const items1 = [obj, style];
     obj1[0] = items1;
     obj1[1] = obj;
-    obj[1] = tmp6(importDefault(5449), obj1);
+    obj[1] = tmp6(preloadDefault, obj1);
     let tmp10 = obj;
   } else {
     obj2 = { style: null, source: null, localImageSource: null };
@@ -146,20 +154,14 @@ let closure_13 = importAllResult.memo((borderRadius) => {
     obj2[0] = items2;
     obj2[1] = obj;
     obj2[2] = obj;
-    obj[1] = tmp6(require(1297) /* Button */.ThumbnailImage, obj2);
+    obj[1] = tmp6(Button.ThumbnailImage, obj2);
     tmp10 = obj;
   }
   return closure_6(closure_5, tmp10);
 });
-const result = require("jsxProd").fileFinishedImporting("modules/media/native/AttachmentPreview.tsx");
+const result = require("set").fileFinishedImporting("modules/media/native/AttachmentPreview.tsx");
 
 export default function AttachmentPreview(height) {
-  let borderRadius;
-  let fileName;
-  let isVideo;
-  let maxFileWidth;
-  let uri;
-  let width;
   ({ uri, isVideo, width } = height);
   if (width === undefined) {
     width = 75;
@@ -170,7 +172,7 @@ export default function AttachmentPreview(height) {
   }
   ({ fileName, borderRadius, maxFileWidth } = height);
   if (borderRadius === undefined) {
-    borderRadius = importDefault(712).radii.sm;
+    borderRadius = ThemesDefault.radii.sm;
   }
   let flag = height.showPlayOnVideoPreview;
   if (flag === undefined) {
@@ -197,7 +199,7 @@ export default function AttachmentPreview(height) {
     let tmp9 = callback(closure_13, obj);
   } else {
     if (!isVideo) {
-      let obj2 = require(500) /* set */;
+      let obj2 = set;
       if (obj2.isIOS()) {
         let tmp6 = tmp8;
         let CirclePlayIcon = tmp7;
@@ -208,7 +210,7 @@ export default function AttachmentPreview(height) {
         if (tmp7Result.isIOS()) {
           obj = { style: null, children: null };
           obj[0] = style;
-          let obj1 = { style: null, source: null, muted: true, paused: true, resizeMode: "cover", preventsDisplaySleepDuringVideoPlayback: false };
+          obj1 = { style: null, source: null, muted: true, paused: true, resizeMode: "cover", preventsDisplaySleepDuringVideoPlayback: false };
           obj2 = { height: null, width: null };
           obj2[0] = num;
           obj2[1] = width;
@@ -216,7 +218,7 @@ export default function AttachmentPreview(height) {
           const obj3 = { uri: null };
           obj3[0] = uri;
           obj1[1] = obj3;
-          obj[1] = callback(tmp7(9018).VideoComponent, obj1);
+          obj[1] = callback(tmp7(9055).VideoComponent, obj1);
           tmp9 = callback(closure_5, obj);
         }
         tmp7Result = tmp7(500);
@@ -224,7 +226,7 @@ export default function AttachmentPreview(height) {
       tmp8 = dependencyMap;
     } else {
       tmp6 = dependencyMap;
-      obj1 = require(500) /* set */;
+      obj1 = set;
       CirclePlayIcon = require;
     }
     if (flag) {
@@ -241,7 +243,7 @@ export default function AttachmentPreview(height) {
       const obj6 = { style: null, children: null };
       videoIcon = videoIcon.videoIcon;
       obj6[0] = videoIcon;
-      CirclePlayIcon = CirclePlayIcon(10071).CirclePlayIcon;
+      CirclePlayIcon = CirclePlayIcon(10110).CirclePlayIcon;
       tmp6 = callback(CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" });
       obj6[1] = tmp6;
       items[1] = callback(closure_5, obj6);

@@ -5,7 +5,8 @@
 // Exports: warnNoNativePerformance
 
 // Module 164 (warnNoNativePerformance)
-import importDefaultResult from "NativePerformanceCxx";
+import warnOnceDefault from "warnOnce" /* 165 */;
+import importDefaultResult from "NativePerformanceCxx" /* 154 */;
 
 let fn;
 if (importDefaultResult != null) {
@@ -19,6 +20,6 @@ if (fn == null) {
 }
 
 export const warnNoNativePerformance = function warnNoNativePerformance() {
-  importDefault(165)("missing-native-performance", "Missing native implementation of Performance");
+  warnOnceDefault("missing-native-performance", "Missing native implementation of Performance");
 };
 export const getCurrentTimeStamp = fn;

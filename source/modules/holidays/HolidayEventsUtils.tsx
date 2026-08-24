@@ -1,32 +1,35 @@
-// Module ID: 16596
-// Function ID: 16597
+// Module ID: 16692
+// Function ID: 16693
 // Name: HolidayEmojiAnimationType
-// Dependencies: [16593, 2]
+// Dependencies: [16689, 2]
 
-// Module 16596 (HolidayEmojiAnimationType)
-const result = require("set").fileFinishedImporting("modules/holidays/HolidayEventsUtils.tsx");
+// Module 16692 (HolidayEmojiAnimationType)
+import set from "set" /* 2 */;
+import HolidayEmojiAnimationTypeDefault from "HolidayEmojiAnimationType" /* 16689 */;
+
+const result = set.fileFinishedImporting("modules/holidays/HolidayEventsUtils.tsx");
 
 export default {
   isEligible() {
-    const isExperimentEligible = importDefault(16593).getIsExperimentEligible();
+    const isExperimentEligible = HolidayEmojiAnimationTypeDefault.getIsExperimentEligible();
     const timestamp = Date.now();
-    const obj = importDefault(16593);
+    const obj = HolidayEmojiAnimationTypeDefault;
     const tmp = importDefault;
-    return timestamp >= importDefault(16593).startTimeMs && timestamp <= importDefault(16593).endTimeMs && isExperimentEligible;
+    return timestamp >= HolidayEmojiAnimationTypeDefault.startTimeMs && timestamp <= HolidayEmojiAnimationTypeDefault.endTimeMs && isExperimentEligible;
   },
   useHolidaySoundpack() {
-    let obj = importDefault(16593);
+    let obj = HolidayEmojiAnimationTypeDefault;
     const isExperimentEligible = obj.useIsExperimentEligible();
     const timestamp = Date.now();
     let tmp6 = null;
     if (tmp5) {
       tmp6 = null;
-      if (null != tmp(16593).soundpack) {
+      if (null != tmp(16689).soundpack) {
         tmp6 = null;
-        if (null != tmp(16593).soundpackLabel) {
+        if (null != tmp(16689).soundpackLabel) {
           obj = { soundpack: null, soundpackLabel: null };
-          obj[0] = tmp(16593).soundpack;
-          obj[1] = tmp(16593).soundpackLabel;
+          obj[0] = tmp(16689).soundpack;
+          obj[1] = tmp(16689).soundpackLabel;
           tmp6 = obj;
         }
       }
@@ -34,17 +37,17 @@ export default {
     return tmp6;
   },
   useIsEligible() {
-    const isExperimentEligible = importDefault(16593).useIsExperimentEligible();
+    const isExperimentEligible = HolidayEmojiAnimationTypeDefault.useIsExperimentEligible();
     const timestamp = Date.now();
-    const obj = importDefault(16593);
+    const obj = HolidayEmojiAnimationTypeDefault;
     const tmp = importDefault;
-    return timestamp >= importDefault(16593).startTimeMs && timestamp <= importDefault(16593).endTimeMs && isExperimentEligible;
+    return timestamp >= HolidayEmojiAnimationTypeDefault.startTimeMs && timestamp <= HolidayEmojiAnimationTypeDefault.endTimeMs && isExperimentEligible;
   },
   getAppSpinnerSources() {
     const timestamp = Date.now();
     let appSpinnerSources = null;
     if (tmp4) {
-      appSpinnerSources = tmp2(16593).appSpinnerSources;
+      appSpinnerSources = tmp2(16689).appSpinnerSources;
     }
     return appSpinnerSources;
   },
@@ -52,25 +55,25 @@ export default {
     const timestamp = Date.now();
     let tmp5 = null;
     if (tmp4) {
-      const getLoadingTips = tmp2(16593).getLoadingTips;
+      const getLoadingTips = tmp2(16689).getLoadingTips;
       let loadingTips;
       if (getLoadingTips != null) {
         loadingTips = getLoadingTips();
       }
       tmp5 = loadingTips;
-      const tmp2Result = tmp2(16593);
+      const tmp2Result = tmp2(16689);
     }
     return tmp5;
   },
   getHolidaySoundpack() {
-    const isExperimentEligible = importDefault(16593).getIsExperimentEligible();
+    const isExperimentEligible = HolidayEmojiAnimationTypeDefault.getIsExperimentEligible();
     const timestamp = Date.now();
-    const obj = importDefault(16593);
+    const obj = HolidayEmojiAnimationTypeDefault;
     let soundpack = null;
     if (tmp5) {
       soundpack = null;
-      if (null != tmp(16593).soundpack) {
-        soundpack = tmp(16593).soundpack;
+      if (null != tmp(16689).soundpack) {
+        soundpack = tmp(16689).soundpack;
       }
     }
     return soundpack;

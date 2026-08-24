@@ -1,15 +1,16 @@
-// Module ID: 6729
-// Function ID: 6730
+// Module ID: 6766
+// Function ID: 6767
 // Name: fromServer
-// Dependencies: [32, 1432, 1911, 4037, 1914, 2]
+// Dependencies: [32, 1432, 1911, 4040, 1914, 2]
 
-// Module 6729 (fromServer)
-import _slicedToArray from "_slicedToArray";
-import { TypeTag } from "TypeTag";
-import { LibdiscoreStore } from "identity";
-import { LibdiscoreBatchStoreRefactorExperiment } from "items";
+// Module 6766 (fromServer)
+import EmojiTypes from "EmojiTypes" /* 4040 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import { TypeTag } from "TypeTag" /* 1432 */;
+import { LibdiscoreStore } from "identity" /* 1911 */;
+import { LibdiscoreBatchStoreRefactorExperiment } from "items" /* 1914 */;
 
-const require = arg1;
+require = arg1;
 function fromServer(guildId) {
   let obj = {};
   const iter = arg1[Symbol.iterator]();
@@ -22,7 +23,7 @@ function fromServer(guildId) {
     ({ id: obj2.id, animated: obj2.animated, name: obj2.name, require_colons: obj2.require_colons, available: obj2.available, roles: obj2.roles, managed: obj2.managed, version: obj2.version } = nextResult);
     let tmp3 = require;
     let tmp4 = dependencyMap;
-    obj.type = require(4037) /* EmojiTypes */.EmojiTypes.GUILD;
+    obj.type = EmojiTypes.EmojiTypes.GUILD;
     obj[nextResult.id] = obj;
     continue;
   }
@@ -83,8 +84,6 @@ const rawGuildEmojiStore = new RawGuildEmojiStore({
     return clear.clear();
   },
   CONNECTION_OPEN(arg0, getPartitionKeys) {
-    let guilds;
-    let unavailableGuilds;
     ({ guilds, unavailableGuilds } = arg0);
     const set = new Set(guilds.map((id) => id.id));
     for (const item10017 of unavailableGuilds) {
@@ -109,14 +108,12 @@ const rawGuildEmojiStore = new RawGuildEmojiStore({
     }
   },
   OVERLAY_INITIALIZE(emojis, clear) {
-    let closure_0 = clear;
+    closure_0 = clear;
     clear.clear();
     const entries = Object.entries(emojis.emojis);
     const item = entries.forEach((arg0) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg0;
-      partition.setPartition(tmp, outer1_4(tmp, tmp2));
+      partition.setPartition(tmp, closure_1_4(tmp, tmp2));
     });
   },
   CACHED_EMOJIS_LOADED(arg0, setPartition) {
@@ -142,6 +139,6 @@ const rawGuildEmojiStore = new RawGuildEmojiStore({
     removePartition.removePartition(guild.guild.id);
   }
 }, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
-const result = require("identity").fileFinishedImporting("modules/emojis/RawGuildEmojiStore.tsx");
+const result = require("set").fileFinishedImporting("modules/emojis/RawGuildEmojiStore.tsx");
 
 export default rawGuildEmojiStore;

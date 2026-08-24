@@ -1,14 +1,17 @@
-// Module ID: 9946
-// Function ID: 9947
+// Module ID: 9985
+// Function ID: 9986
 // Name: componentDidMount
-// Dependencies: [19, 21, 1236, 687, 4734, 2]
+// Dependencies: [19, 21, 1236, 687, 4739, 2]
 
-// Module 9946 (componentDidMount)
-import { jsx } from "jsxProd";
-import { Component } from "noop";
-import importAllResult from "noop";
+// Module 9985 (componentDidMount)
+import setDefault from "set" /* 687 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
+const Component = importAllResult.Component;
 class CountDown extends Component {
 }
 const prototype = CountDown.prototype;
@@ -26,15 +29,12 @@ prototype["clearRefreshInterval"] = function clearRefreshInterval() {
   }
 };
 prototype["render"] = function render() {
-  let deadline;
-  let freezeAtRemainingSeconds;
-  let postDeadlineText;
   const self = this;
   const style = this.props;
   ({ postDeadlineText, deadline, freezeAtRemainingSeconds } = style);
   if (deadline === Infinity) {
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    let children = intl5.string(require(1236) /* getSystemLocale */.t.PqEzn8);
+    const intl5 = getSystemLocale.intl;
+    let children = intl5.string(getSystemLocale.t.PqEzn8);
   } else {
     const _Math5 = Math;
     const _Number = Number;
@@ -46,15 +46,15 @@ prototype["render"] = function render() {
     }
     if (result < 0) {
       const _Math = Math;
-      const items = [Math.floor(result / importDefault(687).Seconds.DAY), , , ];
+      const items = [Math.floor(result / setDefault.Seconds.DAY), , , ];
       const _Math2 = Math;
-      const result1 = result % importDefault(687).Seconds.DAY;
-      items[1] = Math.floor(result1 / importDefault(687).Seconds.HOUR);
+      const result1 = result % setDefault.Seconds.DAY;
+      items[1] = Math.floor(result1 / setDefault.Seconds.HOUR);
       const _Math3 = Math;
-      const result2 = result1 % importDefault(687).Seconds.HOUR;
-      items[2] = Math.floor(result2 / importDefault(687).Seconds.MINUTE);
+      const result2 = result1 % setDefault.Seconds.HOUR;
+      items[2] = Math.floor(result2 / setDefault.Seconds.MINUTE);
       const _Math4 = Math;
-      items[3] = Math.floor(result2 % importDefault(687).Seconds.MINUTE);
+      items[3] = Math.floor(result2 % setDefault.Seconds.MINUTE);
       let num = 0;
       if (0 === items[0]) {
         items.shift();
@@ -71,14 +71,14 @@ prototype["render"] = function render() {
       const joined = mapped.join(":");
       children = joined;
       if (tmp) {
-        const intl = require(1236) /* getSystemLocale */.intl;
-        const items1 = [intl.string(require(1236) /* getSystemLocale */.t.QJyuxY), , , ];
-        const intl2 = require(1236) /* getSystemLocale */.intl;
-        items1[1] = intl2.string(require(1236) /* getSystemLocale */.t["1LyF1h"]);
-        const intl3 = require(1236) /* getSystemLocale */.intl;
-        items1[2] = intl3.string(require(1236) /* getSystemLocale */.t.n7dksO);
-        const intl4 = require(1236) /* getSystemLocale */.intl;
-        items1[3] = intl4.string(require(1236) /* getSystemLocale */.t["6m/6nM"]);
+        const intl = getSystemLocale.intl;
+        const items1 = [intl.string(getSystemLocale.t.QJyuxY), , , ];
+        const intl2 = getSystemLocale.intl;
+        items1[1] = intl2.string(getSystemLocale.t["1LyF1h"]);
+        const intl3 = getSystemLocale.intl;
+        items1[2] = intl3.string(getSystemLocale.t.n7dksO);
+        const intl4 = getSystemLocale.intl;
+        items1[3] = intl4.string(getSystemLocale.t["6m/6nM"]);
         let tmp11 = num;
         let tmp12 = joined;
         if (-1 !== joined.indexOf(":")) {
@@ -110,8 +110,8 @@ prototype["render"] = function render() {
     const NumberResult = Number(deadline);
     tmp2 = null != freezeAtRemainingSeconds && result <= freezeAtRemainingSeconds;
   }
-  return jsx(require(4734) /* Text */.Text, { tabularNumbers: true, variant: "text-md/semibold", style: style.style, children });
+  return jsx(Text.Text, { tabularNumbers: true, variant: "text-md/semibold", style: style.style, children });
 };
-let result = require("getSystemLocale").fileFinishedImporting("components_native/common/CountDown.tsx");
+let result = require("set").fileFinishedImporting("components_native/common/CountDown.tsx");
 
 export default CountDown;

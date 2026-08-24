@@ -4,7 +4,9 @@
 // Dependencies: [1132, 817]
 
 // Module 1131 (enrichXhrBreadcrumbsForMobileReplay)
-const require = arg1;
+import parseContentLengthHeader from "parseContentLengthHeader" /* 1132 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.enrichXhrBreadcrumbsForMobileReplay = function enrichXhrBreadcrumbsForMobileReplay(category, xhr) {
   if ("xhr" === category.category) {
@@ -24,7 +26,7 @@ arg5.enrichXhrBreadcrumbsForMobileReplay = function enrichXhrBreadcrumbsForMobil
         xhr = xhr.xhr;
         let tmp2 = require;
         let dropUndefinedKeys = dependencyMap;
-        const bodySize = require(1132) /* parseContentLengthHeader */.getBodySize(xhr.input);
+        const bodySize = parseContentLengthHeader.getBodySize(xhr.input);
         if (xhr.getResponseHeader("content-length")) {
           let result = tmp2(1132).parseContentLengthHeader(xhr.getResponseHeader("content-length"));
           const tmp2Result = tmp2(1132);
@@ -56,7 +58,7 @@ arg5.enrichXhrBreadcrumbsForMobileReplay = function enrichXhrBreadcrumbsForMobil
         obj[2] = bodySize;
         obj[3] = result;
         category.data = dropUndefinedKeys(_Object.assign(obj, category.data));
-        const obj2 = require(1132) /* parseContentLengthHeader */;
+        const obj2 = parseContentLengthHeader;
       }
     }
   }

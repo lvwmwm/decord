@@ -1,14 +1,14 @@
-// Module ID: 13010
-// Function ID: 13011
+// Module ID: 13065
+// Function ID: 13066
 // Name: set
-// Dependencies: [19, 4261, 4262, 4265, 589, 11745, 2]
+// Dependencies: [19, 4265, 4266, 4269, 589, 11794, 2]
 // Exports: default
 
-// Module 13010 (set)
-import noop from "noop";
-import calculateAppliedBoosts from "calculateAppliedBoosts";
-import BoostedGuildTiers from "BoostedGuildTiers";
-import set from "BoostedGuildTiers";
+// Module 13065 (set)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "calculateAppliedBoosts" /* 4265 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4266 */;
+import set from "set" /* 2 */;
 
 const require = arg1;
 const GuildPowerupType = BoostedGuildTiers.GuildPowerupType;
@@ -18,20 +18,20 @@ const result = set.fileFinishedImporting("modules/premium/powerups/hooks/useMark
 
 export default function useMarketablePowerupPerks(arg0) {
   const _require = arg0;
-  let items = [calculateAppliedBoosts];
+  let items = [closure_4];
   const stateFromStores = _require(589).useStateFromStores(items, () => {
-    const stateForGuild = outer1_4.getStateForGuild(closure_0);
+    const stateForGuild = closure_1_4.getStateForGuild(closure_0);
     let tmp2;
     if (stateForGuild != null) {
       const powerupCatalog = stateForGuild.powerupCatalog;
       if (powerupCatalog != null) {
-        tmp2 = powerupCatalog[outer1_5.PERK];
+        tmp2 = powerupCatalog[closure_1_5.PERK];
       }
     }
     return tmp2;
   });
-  let tmp2 = stateFromStores(11745)(arg0);
-  const dependencyMap = tmp2;
+  let tmp2 = stateFromStores(11794)(arg0);
+  dependencyMap = tmp2;
   let items1 = [stateFromStores, tmp2];
   return React.useMemo(() => {
     let items = stateFromStores;

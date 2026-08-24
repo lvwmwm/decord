@@ -1,18 +1,18 @@
-// Module ID: 14297
-// Function ID: 14298
+// Module ID: 14365
+// Function ID: 14366
 // Name: AuthorizedAppScreen
-// Dependencies: [19, 21, 7385, 1500, 14298, 2]
+// Dependencies: [19, 21, 7423, 1500, 14366, 2]
 // Exports: default
 
-// Module 14297 (AuthorizedAppScreen)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 14365 (AuthorizedAppScreen)
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("useSettingNavigationRoute").fileFinishedImporting("modules/user_settings/authorized_apps/native/AuthorizedAppScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/authorized_apps/native/AuthorizedAppScreen.tsx");
 
 export default function AuthorizedAppScreen() {
-  let obj = settingNavigationRoute(7385);
+  let obj = settingNavigationRoute(7423);
   settingNavigationRoute = obj.useSettingNavigationRoute();
   const stackNavigation = settingNavigationRoute(1500).useStackNavigation();
   const items = [stackNavigation, settingNavigationRoute.params.oauth2Token.application.name];
@@ -20,5 +20,5 @@ export default function AuthorizedAppScreen() {
     stackNavigation.setOptions({ title: settingNavigationRoute.params.oauth2Token.application.name, headerShown: true });
   }, items);
   obj = { oauth2Token: settingNavigationRoute.params.oauth2Token };
-  return jsx(stackNavigation(14298), { oauth2Token: settingNavigationRoute.params.oauth2Token });
+  return jsx(stackNavigation(14366), { oauth2Token: settingNavigationRoute.params.oauth2Token });
 };

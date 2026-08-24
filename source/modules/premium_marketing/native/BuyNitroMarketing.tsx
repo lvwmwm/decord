@@ -1,51 +1,41 @@
-// Module ID: 7923
-// Function ID: 7924
+// Module ID: 7962
+// Function ID: 7963
 // Name: BuyNitroMarketing
-// Dependencies: [19, 17, 1924, 21, 4661, 712, 7924, 1500, 7926, 7933, 7932, 7937, 7139, 7927, 7931, 8016, 8026, 8027, 8029, 8030, 8038, 12839, 12843, 12844, 12845, 2]
+// Dependencies: [19, 17, 1924, 21, 4668, 712, 7963, 1500, 7965, 7972, 7971, 7976, 7177, 7966, 7970, 8055, 8065, 8066, 8068, 8069, 8077, 12894, 12898, 12899, 12900, 2]
 // Exports: default
 
-// Module 7923 (BuyNitroMarketing)
-import BuyNitroMarketingHeader from "BuyNitroMarketingHeader";
-import { View } from "BuyNitroPerk";
-import { PremiumTypes } from "GuildFeatures";
-import jsxProd from "BuyNitroPlanSelector";
-import createCacheKey from "createCacheKey";
+// Module 7962 (BuyNitroMarketing)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
+({ jsx: closure_6, jsxs: error, Fragment: closure_8 } = jsxProd);
 createCacheKey = { container: null, list: null, listContent: null, listHeader: null, sectionHeader: null, disabled: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flex: 1 };
-createCacheKey[2] = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_24 };
-let obj1 = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_24 };
-createCacheKey[3] = { gap: require("Themes").space.PX_24 };
-let obj2 = { gap: require("Themes").space.PX_24 };
-createCacheKey[4] = { marginTop: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_16 };
+createCacheKey[2] = { paddingHorizontal: ThemesDefault.space.PX_16, paddingBottom: ThemesDefault.space.PX_24 };
+let obj1 = { paddingHorizontal: ThemesDefault.space.PX_16, paddingBottom: ThemesDefault.space.PX_24 };
+createCacheKey[3] = { gap: ThemesDefault.space.PX_24 };
+let obj2 = { gap: ThemesDefault.space.PX_24 };
+createCacheKey[4] = { marginTop: ThemesDefault.space.PX_24, marginBottom: ThemesDefault.space.PX_16 };
 createCacheKey[5] = { pointerEvents: "none" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { marginTop: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_16 };
-let result = require("GuildFeatures").fileFinishedImporting("modules/premium_marketing/native/BuyNitroMarketing.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { marginTop: ThemesDefault.space.PX_24, marginBottom: ThemesDefault.space.PX_16 };
+let result = require("set").fileFinishedImporting("modules/premium_marketing/native/BuyNitroMarketing.tsx");
 
 export default function BuyNitroMarketing(onPaymentDismiss) {
-  let applicationId;
-  let initialLoadCompleted;
-  let initialTier;
-  let listData;
-  let listRef;
-  let onClose;
-  let onPaymentSuccess;
-  let onScroll;
   ({ onClose, applicationId } = onPaymentDismiss);
   ({ initialLoadCompleted, initialTier, onPaymentSuccess } = onPaymentDismiss);
   onPaymentDismiss = onPaymentDismiss.onPaymentDismiss;
   let React;
   let nativeStackNavigation;
   let buyNitroPlanSelection;
-  let closure_6;
+  closure_6 = undefined;
   let onSelectNitroTier;
   let locationStackFromLocationContext;
   let callback;
@@ -53,14 +43,14 @@ export default function BuyNitroMarketing(onPaymentDismiss) {
   React = tmp;
   let obj = applicationId(onPaymentDismiss[6]);
   const youBarSettingsCustomHeaderPaddingTop = obj.useYouBarSettingsCustomHeaderPaddingTop();
-  let obj1 = applicationId(onPaymentDismiss[7]);
+  obj1 = applicationId(onPaymentDismiss[7]);
   nativeStackNavigation = obj1.useNativeStackNavigation();
   let obj2 = applicationId(onPaymentDismiss[8]);
   const buyNitroMarketingLifecycleHooks = obj2.useBuyNitroMarketingLifecycleHooks(nativeStackNavigation, initialLoadCompleted);
   let obj3 = applicationId(onPaymentDismiss[9]);
   let tmp7;
   if (null != initialTier) {
-    obj = { tier: null, productId: "a" };
+    obj = { tier: null, productId: "r" };
     obj[0] = initialTier;
     tmp7 = obj;
   }
@@ -91,11 +81,11 @@ export default function BuyNitroMarketing(onPaymentDismiss) {
     item = item.item;
     if ("section-header" === item.kind) {
       let obj = { style: null, title: null, titleRequiresNitroHack: null, onPress: null };
-      obj[0] = _undefined.sectionHeader;
+      obj[0] = sectionHeader.sectionHeader;
       obj[1] = item.title;
       obj[2] = true === item.highlightNitro;
       obj[3] = function onPress() {
-        return callback(outer1_5.TIER_2);
+        return callback(closure_1_5.TIER_2);
       };
       let tmp6 = ref(onPaymentSuccess(onPaymentDismiss[16]), obj);
     } else {

@@ -1,32 +1,26 @@
-// Module ID: 11607
-// Function ID: 11608
-// Dependencies: [5, 19, 1922, 21, 1500, 11608, 589, 11610, 4094, 1236, 8555, 4768, 11616, 2]
+// Module ID: 11656
+// Function ID: 11657
+// Dependencies: [5, 19, 1922, 21, 1500, 11657, 589, 11659, 4097, 1236, 8594, 4773, 11665, 2]
 
-// Module 11607
-import useIsMessageRequestRestrictedViewer from "useIsMessageRequestRestrictedViewer";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 11656
+import ChatInputGuardDefault from "ChatInputGuard" /* 11665 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
-const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(channel) {
-  let c2;
-  let c3;
-  let isAcceptLoading;
-  let isOptimisticAccepted;
-  let isOptimisticRejected;
-  let isRejectLoading;
-  let isUserProfileLoading;
+const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(channel) {
   channel = channel.channel;
-  let importDefault;
-  let dependencyMap;
+  importDefault = undefined;
+  dependencyMap = undefined;
   c3 = undefined;
   function _onAcceptClick() {
     const self = this;
     const tmp = _undefined2((arg0) => {
-      let closure_0 = arg0;
-      let c2 = 0;
-      let c3 = 0;
+      closure_0 = arg0;
+      c2 = 0;
+      c3 = 0;
       return (function*(arg0) {
         if (c3 === 2) {
           c3 = 3;
@@ -39,7 +33,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -54,11 +48,11 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_1 = tmp4;
+                closure_1 = tmp4;
                 lib.stopPropagation();
                 dependencyMap = 1;
                 c3 = 1;
-                const obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = dependencyMap(lib.id);
                 return obj1;
               }
@@ -71,10 +65,10 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
               obj2[0] = arg1;
               return obj2;
             } else {
-              obj = lib(4768);
+              obj = lib(4773);
               obj.transitionToChannel(lib.id, { navigationReplace: true });
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp14) {
             c3 = tmp;
@@ -83,7 +77,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
         }
       })();
     });
-    const _onAcceptClick = tmp;
+    closure_4 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -95,9 +89,9 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
   function _onRejectClick() {
     const self = this;
     const tmp = _undefined2((arg0) => {
-      let closure_0 = arg0;
-      let c2 = 0;
-      let c1 = 0;
+      closure_0 = arg0;
+      c2 = 0;
+      c1 = 0;
       return (function*(arg0) {
         if (c1 === 2) {
           c1 = 3;
@@ -110,7 +104,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -128,8 +122,8 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
                 closure_0.stopPropagation();
                 c2 = 1;
                 c1 = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = outer1_3(closure_0.id);
+                obj1 = { value: null, done: false };
+                obj1[0] = closure_1_3(closure_0.id);
                 return obj1;
               }
             } else if (arg0 === 1) {
@@ -142,7 +136,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
               return obj;
             } else {
               c1 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp9) {
             c1 = tmp;
@@ -151,7 +145,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
         }
       })();
     });
-    const _onRejectClick = tmp;
+    closure_5 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -162,8 +156,8 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
   }
   let obj = channel(1500);
   importDefault = obj.useNavigation();
-  const isMessageRequestRestrictedViewer = channel(11608).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
-  let obj2 = channel(11608);
+  const isMessageRequestRestrictedViewer = channel(11657).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
+  let obj2 = channel(11657);
   const items = [_onAcceptClick];
   const stateFromStores = channel(589).useStateFromStores(items, () => _onAcceptClick.getUser(channel.getRecipientId()));
   const obj3 = channel(589);
@@ -181,7 +175,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
 
     }
   };
-  const messageRequestActions = channel(11610).useMessageRequestActions(obj);
+  const messageRequestActions = channel(11659).useMessageRequestActions(obj);
   ({ acceptMessageRequest: c2, rejectMessageRequest: c3, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
   let tmp6 = isAcceptLoading;
   if (!isAcceptLoading) {
@@ -197,7 +191,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
     tmp6 = isOptimisticRejected;
   }
   obj = { type: "button-action", message: null, subtext: null, buttonPrimaryText: null, buttonPrimaryOnPress: null, buttonPrimaryDisabled: null, buttonPrimaryLoading: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonSecondaryDisabled: null, buttonSecondaryLoading: null };
-  const obj4 = channel(11610);
+  const obj4 = channel(11659);
   const tmp7 = _onRejectClick;
   let intl = tmp(1236).intl;
   obj[1] = intl.string(channel(1236).t["e/eQVB"]);
@@ -242,8 +236,8 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
     isRejectLoading = isOptimisticRejected;
   }
   obj[10] = isRejectLoading;
-  return tmp7(importDefault(11616), obj);
+  return tmp7(ChatInputGuardDefault, obj);
 });
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardMessageRequest.tsx");
+const result = require("set").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardMessageRequest.tsx");
 
 export default memoResult;

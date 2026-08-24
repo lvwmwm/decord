@@ -1,33 +1,24 @@
-// Module ID: 9009
-// Function ID: 9010
+// Module ID: 9046
+// Function ID: 9047
 // Name: MediaModal
-// Dependencies: [19, 17, 9010, 7383, 676, 21, 8993, 9011, 9000, 589, 500, 8994, 8997, 9015, 9017, 9018, 1892, 8671, 4343, 4344, 4342, 9043, 2007, 12051, 9001, 12069, 12074, 5449, 12076, 2]
+// Dependencies: [19, 17, 9047, 7421, 676, 21, 9030, 9048, 9037, 589, 500, 9031, 9034, 9052, 9054, 9055, 1892, 8708, 4347, 4348, 4346, 9080, 2008, 12103, 9038, 12121, 12126, 5454, 12128, 2]
 // Exports: default
 
-// Module 9009 (MediaModal)
-import IMPACT_LIGHT from "IMPACT_LIGHT";
-import get_ActivityIndicator from "handleOrientationChange";
-import module_9010 from "module_9010";
-import getState from "getState";
-import ME from "ME";
-import { jsx } from "useMediaShareActions";
-import { createElement } from "IMPACT_LIGHT";
+// Module 9046 (MediaModal)
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_9 from "module_9047" /* 9047 */;
+import closure_10 from "getState" /* 7421 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import { createElement } from "noop" /* 19 */;
 
-let c5;
-let closure_12;
-let closure_6;
-let error;
-let map1;
-let metroImportAll;
-let unpackModuleId;
 const require = arg1;
-({ Image: c5, Modal: closure_6, StyleSheet: error, View: metroImportAll } = get_ActivityIndicator);
+({ Image: c5, Modal: closure_6, StyleSheet: error, View: closure_8 } = get_ActivityIndicator);
 ({ Base64JPEGPrefix: unpackModuleId, Base64GIFPrefix: closure_12, AppStates: map1 } = ME);
-let result = require("module_9010").fileFinishedImporting("modules/media_viewer/native/components/MediaModal.tsx");
+let result = require("set").fileFinishedImporting("modules/media_viewer/native/components/MediaModal.tsx");
 
 export default function MediaModal(originLayout) {
-  let onEndReached;
-  let onEndReachedThreshold;
   let num = originLayout.initialIndex;
   if (num === undefined) {
     num = 0;
@@ -56,12 +47,12 @@ export default function MediaModal(originLayout) {
   let mediaViewerSyncer;
   let videoStateStore;
   let stateFromStores;
-  let jsx;
-  let closure_15;
+  jsx = undefined;
+  closure_15 = undefined;
   let id;
-  let closure_17;
+  closure_17 = undefined;
   let callback1;
-  let closure_19;
+  closure_19 = undefined;
   let callback2;
   let mediaPlayerMutedStore;
   ({ onEndReached, onEndReachedThreshold } = originLayout);
@@ -94,7 +85,7 @@ export default function MediaModal(originLayout) {
     let state = contextIcon.getState();
     let freezeLock = state.requestFreezeLock({ lockEnabled: true, key: id });
     return () => {
-      const state = outer1_9.getState();
+      const state = closure_1_9.getState();
       const freezeLock = state.requestFreezeLock({ lockEnabled: false, key: closure_16 });
     };
   }, items2);
@@ -149,7 +140,7 @@ export default function MediaModal(originLayout) {
   closure_19 = flag2.useRef({});
   const items4 = [callback1, num, initialIndexVideoStartTime];
   callback2 = flag2.useCallback((arg0, arg1, arg2) => {
-    let closure_0 = arg2;
+    closure_0 = arg2;
     if (arg0 === closure_0) {
       if (null != closure_1) {
         if (null != ref4.current[arg0]) {
@@ -204,11 +195,6 @@ export default function MediaModal(originLayout) {
   mediaPlayerMutedStore = num(onCloseCallback[24]).useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
   const items7 = [callback1, callback2, mediaPlayerMutedStore, videoStateStore];
   const callback5 = flag2.useCallback((hasSpoiler) => {
-    let index;
-    let key;
-    let pointerEvents;
-    let source;
-    let visible;
     ({ source, index, key, visible, pointerEvents } = hasSpoiler);
     const merged = Object.assign(hasSpoiler, Object.create(null));
     hasSpoiler = !visible;
@@ -240,7 +226,7 @@ export default function MediaModal(originLayout) {
     }
     if (null != source.portal) {
       if (!tmp3Result.isPortalExpired(source.portal)) {
-        const obj1 = {};
+        obj1 = {};
         const merged2 = Object.assign(merged);
         obj1.key = key;
         obj1.pointerEvents = pointerEvents;

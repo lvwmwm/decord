@@ -1,29 +1,32 @@
-// Module ID: 12735
-// Function ID: 12736
+// Module ID: 12790
+// Function ID: 12791
 // Name: BetaTag
-// Dependencies: [19, 17, 7403, 21, 4661, 712, 4756, 691, 4734, 1236, 2]
+// Dependencies: [19, 17, 7441, 21, 4668, 712, 4761, 691, 4739, 1236, 2]
 // Exports: default
 
-// Module 12735 (BetaTag)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { Gradients } from "items";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12790 (BetaTag)
+import noopAll from "noop" /* 19 */;
+import keys from "keys" /* 691 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { Gradients } from "items" /* 7441 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { container: null, text: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.lg, marginLeft: 8, paddingHorizontal: 8, justifyContent: "center" };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND, borderRadius: ThemesDefault.radii.lg, marginLeft: 8, paddingHorizontal: 8, justifyContent: "center" };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { textTransform: "uppercase" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_6 = createCacheKey.createStyles(createCacheKey);
 let obj1 = { SMALL: "small", MEDIUM: "medium" };
-const result = require("items").fileFinishedImporting("design/void/BetaTag/native/BetaTag.tsx");
+const result = require("set").fileFinishedImporting("design/void/BetaTag/native/BetaTag.tsx");
 
 export default function BetaTag(gradient) {
-  let size;
-  let style;
-  let textStyle;
   ({ style, textStyle, size } = gradient);
   if (size === undefined) {
     size = obj1.MEDIUM;
@@ -32,7 +35,7 @@ export default function BetaTag(gradient) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp2 = createCacheKey();
+  const tmp2 = callback();
   let str = "text-xs/bold";
   if (obj1.SMALL !== size) {
     if (obj1.MEDIUM === size) {
@@ -43,18 +46,18 @@ export default function BetaTag(gradient) {
     let obj = { style: null, start: null, end: null, colors: null, children: null };
     const items = [tmp2.container, style];
     obj[0] = items;
-    obj[1] = require(691) /* keys */.HorizontalGradient.START;
-    obj[2] = require(691) /* keys */.HorizontalGradient.END;
+    obj[1] = keys.HorizontalGradient.START;
+    obj[2] = keys.HorizontalGradient.END;
     obj[3] = Gradients.PREMIUM_TIER_2_TRI_COLOR;
     obj = { variant: null, color: "text-overlay-light", style: null, children: null };
     obj[0] = str;
     const items1 = [tmp2.text, textStyle];
     obj[2] = items1;
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.oW0eUd);
-    obj[4] = tmp3(require(4734) /* Text */.Text, obj);
-    let tmp3Result = tmp3(importDefault(4756), obj);
-    const tmp10 = importDefault(4756);
+    const intl2 = getSystemLocale.intl;
+    obj[3] = intl2.string(getSystemLocale.t.oW0eUd);
+    obj[4] = tmp3(Text.Text, obj);
+    let tmp3Result = tmp3(LinearGradientDefault, obj);
+    const tmp10 = LinearGradientDefault;
   } else {
     obj = { style: null, children: null };
     const items2 = [tmp2.container, style];
@@ -63,9 +66,9 @@ export default function BetaTag(gradient) {
     obj1[0] = str;
     const items3 = [tmp2.text, textStyle];
     obj1[2] = items3;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.oW0eUd);
-    obj[1] = tmp3(require(4734) /* Text */.Text, obj1);
+    const intl = getSystemLocale.intl;
+    obj1[3] = intl.string(getSystemLocale.t.oW0eUd);
+    obj[1] = tmp3(Text.Text, obj1);
     tmp3Result = tmp3(View, obj);
   }
   return tmp3Result;

@@ -4,6 +4,10 @@
 // Dependencies: [1960, 1962, 2]
 
 // Module 1970 (prefix)
+import set from "set" /* 2 */;
+import fromDatabaseTransaction from "fromDatabaseTransaction" /* 1960 */;
+import TableId from "TableId" /* 1962 */;
+
 let MessageDao;
 class MessageDao {
   constructor(arg0, arg1, arg2) {
@@ -35,7 +39,7 @@ prototype["withoutLogging"] = function withoutLogging() {
   const obj = Object.create(MessageDao.prototype);
   obj.originalPrefix = originalPrefix;
   const items = [originalPrefix];
-  const table = new require(1960) /* fromDatabaseTransaction */.Table(items, this.table.tableId, this.table.database, false);
+  const table = new fromDatabaseTransaction.Table(items, this.table.tableId, this.table.database, false);
   obj.table = table;
   return obj;
 };
@@ -47,7 +51,7 @@ prototype["get"] = function get(arg0, arg1, str) {
 prototype["getLatest"] = function getLatest(arg0, arg1, limit) {
   const table = this.table;
   const items = [arg0, arg1];
-  return table.getMany(items, { ordering: require(1962) /* TableId */.Ordering.Descending, limit });
+  return table.getMany(items, { ordering: TableId.Ordering.Descending, limit });
 };
 prototype["getRange"] = function getRange(arg0, arg1, str, str2) {
   const table = this.table;
@@ -55,14 +59,14 @@ prototype["getRange"] = function getRange(arg0, arg1, str, str2) {
   const items1 = [arg0, arg1, str2.padStart(19, "0")];
   return table.getRange(items, items1, arg4);
 };
-prototype["getMostRecents"] = function getMostRecents(outer1_0) {
+prototype["getMostRecents"] = function getMostRecents(closure_1_0) {
   const messages = this.table.messages;
-  return messages.getLatest(outer1_0);
+  return messages.getLatest(closure_1_0);
 };
 prototype["put"] = function put(arg0, arg1, data) {
   let Replace = arg3;
   if (arg3 === undefined) {
-    Replace = require(1962) /* TableId */.ConflictOptions.Replace;
+    Replace = TableId.ConflictOptions.Replace;
   }
   const table = this.table;
   const id = data.id;
@@ -72,7 +76,7 @@ prototype["put"] = function put(arg0, arg1, data) {
 };
 prototype["putAll"] = function putAll(arg0, arg1, arr) {
   const _require = arg0;
-  const dependencyMap = arg1;
+  dependencyMap = arg1;
   let Replace = arg3;
   if (arg3 === undefined) {
     Replace = _require(1962).ConflictOptions.Replace;
@@ -105,13 +109,13 @@ prototype["deleteMessage"] = function deleteMessage(arg0, arg1, str) {
   return table.delete(items);
 };
 prototype["transaction"] = function transaction(arg0, arg1) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const table = this.table;
   return table.transaction((transaction) => {
-    if (typeof outer1_2 !== "function") {
+    if (typeof closure_1_2 !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    const obj = Object.create(outer1_2.prototype);
+    const obj = Object.create(closure_1_2.prototype);
     obj.transaction = transaction;
     return closure_0(obj);
   }, arg1);
@@ -143,7 +147,7 @@ MessageDaoTransaction["fromTableTransaction"] = function fromTableTransaction(tr
   return obj;
 };
 MessageDaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTransaction(prefix, tableId, transaction) {
-  const tableTransaction = new require(1960) /* fromDatabaseTransaction */.TableTransaction(prefix, tableId, transaction);
+  const tableTransaction = new fromDatabaseTransaction.TableTransaction(prefix, tableId, transaction);
   if (typeof MessageDaoTransaction !== "function") {
     HermesBuiltin.throwTypeError();
   }
@@ -154,7 +158,7 @@ MessageDaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTransact
 prototype2["put"] = function put(arg0, arg1, data) {
   let Replace = arg3;
   if (arg3 === undefined) {
-    Replace = require(1962) /* TableId */.ConflictOptions.Replace;
+    Replace = TableId.ConflictOptions.Replace;
   }
   const transaction = this.transaction;
   const id = data.id;
@@ -164,7 +168,7 @@ prototype2["put"] = function put(arg0, arg1, data) {
 };
 prototype2["putAll"] = function putAll(arg0, arg1, arr) {
   const _require = arg0;
-  const dependencyMap = arg1;
+  dependencyMap = arg1;
   let Replace = arg3;
   if (arg3 === undefined) {
     Replace = _require(1962).ConflictOptions.Replace;
@@ -217,7 +221,7 @@ prototype2["trimChannelsNotIn"] = function trimChannelsNotIn(arg0, arg1) {
   const messages = this.transaction.messages;
   messages.trimChannelsNotIn(arg0, arg1);
 };
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/MessageDao.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/MessageDao.tsx");
 
 export { MessageDao };
 export { MessageDaoTransaction };

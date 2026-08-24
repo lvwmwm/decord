@@ -1,46 +1,43 @@
-// Module ID: 14978
-// Function ID: 14979
+// Module ID: 15042
+// Function ID: 15043
 // Name: ListEdgeSpacer
-// Dependencies: [19, 17, 5301, 678, 676, 21, 4661, 712, 1500, 9175, 14961, 7139, 7159, 589, 14426, 14428, 5300, 9172, 4734, 4745, 1236, 7126, 8029, 2]
+// Dependencies: [19, 17, 5306, 678, 676, 21, 4668, 712, 1500, 9212, 15025, 7177, 7197, 589, 14494, 14496, 5305, 9209, 4739, 4750, 1236, 7164, 8068, 2]
 // Exports: default
 
-// Module 14978 (ListEdgeSpacer)
-import Button from "Button";
-import get_ActivityIndicator from "CollectiblesShopCardInternalV2";
-import updateCategoriesAndProducts from "updateCategoriesAndProducts";
-import { CollectiblesMobileShopScreen as closure_7 } from "items";
-import { UserSettingsSections } from "ME";
-import jsxProd from "Layer";
-import createCacheKey from "createCacheKey";
+// Module 15042 (ListEdgeSpacer)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "updateCategoriesAndProducts" /* 5306 */;
+import { CollectiblesMobileShopScreen as closure_7 } from "items" /* 678 */;
+import { UserSettingsSections } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c4;
-let c5;
-let c9;
 const require = arg1;
 function ListEdgeSpacer() {
-  return callback(closure_5, { style: createCacheKey().listEdgeSpacer });
+  return callback(closure_5, { style: callback2().listEdgeSpacer });
 }
 function ListItemSeparator() {
-  return callback(closure_5, { style: createCacheKey().listItemSeparator });
+  return callback(closure_5, { style: callback2().listItemSeparator });
 }
 ({ Image: c4, View: c5 } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: null, containerWithBackground: null, backgroundImage: null, header: null, headingWrapper: null, listEdgeSpacer: null, listItemSeparator: null };
-createCacheKey = { width: "100%", paddingTop: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16 };
+createCacheKey = { width: "100%", paddingTop: ThemesDefault.space.PX_16, paddingBottom: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginTop: require("Themes").space.PX_24, paddingTop: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_24, overflow: "hidden" };
+createCacheKey[1] = { marginTop: ThemesDefault.space.PX_24, paddingTop: ThemesDefault.space.PX_24, paddingBottom: ThemesDefault.space.PX_24, overflow: "hidden" };
 createCacheKey[2] = { position: "absolute", top: 0, left: 0, bottom: 0, minWidth: "100%", aspectRatio: 2.5, resizeMode: "cover" };
-let obj1 = { marginTop: require("Themes").space.PX_24, paddingTop: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_24, overflow: "hidden" };
-createCacheKey[3] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16, zIndex: 1 };
+let obj1 = { marginTop: ThemesDefault.space.PX_24, paddingTop: ThemesDefault.space.PX_24, paddingBottom: ThemesDefault.space.PX_24, overflow: "hidden" };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_16, zIndex: 1 };
 createCacheKey[4] = { flexShrink: 1 };
-let obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16, zIndex: 1 };
-createCacheKey[5] = { width: require("Themes").space.PX_16 };
-let obj3 = { width: require("Themes").space.PX_16 };
-createCacheKey[6] = { width: require("Themes").space.PX_12 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj4 = { width: require("Themes").space.PX_12 };
-let result = require("updateCategoriesAndProducts").fileFinishedImporting("modules/collectibles/native/ShelfBlock.tsx");
+let obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_16, zIndex: 1 };
+createCacheKey[5] = { width: ThemesDefault.space.PX_16 };
+let obj3 = { width: ThemesDefault.space.PX_16 };
+createCacheKey[6] = { width: ThemesDefault.space.PX_12 };
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let obj4 = { width: ThemesDefault.space.PX_12 };
+let result = require("set").fileFinishedImporting("modules/collectibles/native/ShelfBlock.tsx");
 
 export default function _default(block) {
   block = block.block;
@@ -48,26 +45,26 @@ export default function _default(block) {
   let navigation;
   let collectiblesAnalyticsContext;
   let stateFromStores;
-  let c5;
-  const tmp = createCacheKey();
+  closure_5 = undefined;
+  const tmp = callback2();
   let obj = block(navigation[8]);
   navigation = obj.useNavigation();
-  let obj1 = block(navigation[9]);
+  obj1 = block(navigation[9]);
   collectiblesAnalyticsContext = obj1.useCollectiblesAnalyticsContext();
   let obj2 = block(navigation[10]);
   let obj3 = block(navigation[13]);
-  let items = [updateCategoriesAndProducts];
+  let items = [closure_6];
   stateFromStores = obj3.useStateFromStores(items, () => {
     let category;
     if (null != block.categorySkuId) {
-      category = outer1_6.getCategory(tmp.categorySkuId);
+      category = closure_1_6.getCategory(tmp.categorySkuId);
     }
     return category;
   });
   const tmp9 = preferVCPrice(navigation[14])();
-  c5 = tmp9;
+  closure_5 = tmp9;
   const items1 = [block.rankedSkuIds, tmp9];
-  const memo = collectiblesAnalyticsContext.useMemo(() => _undefined(block.rankedSkuIds), items1);
+  const memo = collectiblesAnalyticsContext.useMemo(() => callback(block.rankedSkuIds), items1);
   let obj4 = block(navigation[15]);
   const filteredAndSortedProducts = obj4.useFilteredAndSortedProducts({ products: memo });
   const items2 = [stateFromStores, navigation, collectiblesAnalyticsContext];
@@ -79,26 +76,24 @@ export default function _default(block) {
         const items = [preferVCPrice(navigation[12]).COLLECTIBLES_SHOP];
         obj[0] = items;
         obj[1] = preferVCPrice(navigation[12]).COLLECTIBLES_SHOP;
-        obj[2] = outer1_7.ORBS;
+        obj[2] = closure_1_7.ORBS;
         const result = block(navigation[16]).openCollectiblesShopMobile(obj);
         const obj2 = block(navigation[16]);
       } else {
         obj = { category: null, analyticsContext: null };
         obj[0] = tmp;
         obj[1] = collectiblesAnalyticsContext;
-        navigation.navigate(outer1_8.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS, obj);
+        navigation.navigate(closure_1_8.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS, obj);
       }
     }
   }, items2);
   const callback1 = collectiblesAnalyticsContext.useCallback((arg0) => {
-    let index;
-    let item;
     ({ item, index } = arg0);
     obj = { newValue: obj, children: null };
     obj = { tilePosition: index, pageSection: block.name };
     obj = { product: item, preferVCPrice };
-    obj[1] = outer1_9(preferVCPrice(navigation[17]), obj);
-    return outer1_9(block(navigation[9]).CollectiblesAnalyticsProvider, obj);
+    obj[1] = closure_1_9(preferVCPrice(navigation[17]), obj);
+    return closure_1_9(block(navigation[9]).CollectiblesAnalyticsProvider, obj);
   }, items3);
   if (0 === filteredAndSortedProducts.length) {
     return null;
@@ -144,7 +139,7 @@ export default function _default(block) {
     obj6[1] = tmp19;
     obj6[2] = block.name;
     obj4[1] = closure_9(tmp2(tmp3[18]).Heading, obj6);
-    const items6 = [closure_9(c5, obj4), ];
+    const items6 = [closure_9(closure_5, obj4), ];
     tmp14Result = block.showButton && null != stateFromStores;
     if (tmp14Result) {
       let str2 = "secondary";
@@ -160,7 +155,7 @@ export default function _default(block) {
     }
     items6[1] = tmp14Result;
     obj3[1] = items6;
-    items5[1] = closure_10(c5, obj3);
+    items5[1] = closure_10(closure_5, obj3);
     const obj8 = { children: null };
     const obj9 = { horizontal: true, accessibilityRole: "list", accessibilityLabel: null, data: null, keyExtractor: null, onScroll: null, renderItem: null, decelerationRate: "fast", snapToInterval: null, showsHorizontalScrollIndicator: false, ListHeaderComponent: null, ListFooterComponent: null, ItemSeparatorComponent: null };
     obj9[2] = block.name;
@@ -175,7 +170,7 @@ export default function _default(block) {
     obj8[0] = closure_9(tmp2(tmp3[22]).FlashList, obj9);
     items5[2] = closure_9(tmp2(tmp3[21]).LayerScope, obj8);
     obj[1] = items5;
-    obj[1] = closure_10(c5, obj);
+    obj[1] = closure_10(closure_5, obj);
     return closure_9(tmp2(tmp3[11]).AnalyticsLocationProvider, obj);
   }
   tmp6 = preferVCPrice;

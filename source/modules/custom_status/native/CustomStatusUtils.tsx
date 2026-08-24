@@ -1,17 +1,19 @@
-// Module ID: 9290
-// Function ID: 9291
+// Module ID: 9327
+// Function ID: 9328
 // Name: openEditCustomStatusModal
-// Dependencies: [5260, 9291, 2007, 2]
+// Dependencies: [5265, 9328, 2008, 2]
 // Exports: openEditCustomStatusModal
 
-// Module 9290 (openEditCustomStatusModal)
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/custom_status/native/CustomStatusUtils.tsx");
+// Module 9327 (openEditCustomStatusModal)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+
+const result = set.fileFinishedImporting("modules/custom_status/native/CustomStatusUtils.tsx");
 
 export const openEditCustomStatusModal = function openEditCustomStatusModal(arg0) {
-  let _prompt;
-  let analyticsLocations;
   ({ analyticsLocations, prompt: _prompt } = arg0);
-  let obj = importDefault(5260);
+  let obj = _modDef5265;
   obj = { analyticsLocations, prompt: _prompt };
-  obj.pushLazy(require(2007) /* asyncRequireImpl */(9291, dependencyMap.paths), obj, undefined, { presentation: "modal" });
+  obj.pushLazy(asyncRequireImpl(9328, dependencyMap.paths), obj, undefined, { presentation: "modal" });
 };

@@ -1,12 +1,16 @@
-// Module ID: 16591
-// Function ID: 16592
+// Module ID: 16687
+// Function ID: 16688
 // Name: handleMessageCreate
-// Dependencies: [676, 5038, 698, 2]
+// Dependencies: [676, 5043, 698, 2]
 
-// Module 16591 (handleMessageCreate)
-import { AnalyticEvents } from "ME";
-import "initialize";
+// Module 16687 (handleMessageCreate)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import initializeDefault from "initialize" /* 5043 */;
 
+const AnalyticEvents = ME.AnalyticEvents;
+initializeDefault;
 class MessageSessionMetadataManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -37,9 +41,8 @@ prototype["_getAuthorizedApplicationIds"] = function _getAuthorizedApplicationId
   }
 };
 prototype["_trackIfSessionMetadataExists"] = function _trackIfSessionMetadataExists(message) {
-  let author;
   if (null != message.session_metadata) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     obj = { message_id: null, channel_id: null, author_id: null, authorized_application_ids: null };
     ({ id: obj2[0], channel_id: obj2[1], author } = message);
     let id;
@@ -53,6 +56,6 @@ prototype["_trackIfSessionMetadataExists"] = function _trackIfSessionMetadataExi
   }
 };
 const messageSessionMetadataManager = new MessageSessionMetadataManager();
-let result = require("expandEventProperties").fileFinishedImporting("modules/provisional_accounts/MessageSessionMetadataManager.tsx");
+let result = set.fileFinishedImporting("modules/provisional_accounts/MessageSessionMetadataManager.tsx");
 
 export default messageSessionMetadataManager;

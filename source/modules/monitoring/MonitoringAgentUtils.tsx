@@ -1,12 +1,15 @@
-// Module ID: 5010
-// Function ID: 5011
+// Module ID: 5015
+// Function ID: 5016
 // Name: addGlobalTag
 // Dependencies: [673, 2]
 // Exports: addGlobalTag, getGlobalTagsArray
 
-// Module 5010 (addGlobalTag)
-const obj = { design_id: require("DesignIds").DesignIds.DESIGN_TABS_IA };
-const result = require("set").fileFinishedImporting("modules/monitoring/MonitoringAgentUtils.tsx");
+// Module 5015 (addGlobalTag)
+import set from "set" /* 2 */;
+import DesignIds from "DesignIds" /* 673 */;
+
+const obj = { design_id: DesignIds.DesignIds.DESIGN_TABS_IA };
+const result = set.fileFinishedImporting("modules/monitoring/MonitoringAgentUtils.tsx");
 
 export const addGlobalTag = function addGlobalTag(arg0, arg1) {
   obj[arg0] = arg1;

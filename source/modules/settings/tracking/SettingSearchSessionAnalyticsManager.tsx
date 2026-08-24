@@ -1,9 +1,13 @@
-// Module ID: 7358
-// Function ID: 7359
+// Module ID: 7396
+// Function ID: 7397
 // Name: getSearchSessionId
-// Dependencies: [514, 7359, 2]
+// Dependencies: [514, 7397, 2]
 
-// Module 7358 (getSearchSessionId)
+// Module 7396 (getSearchSessionId)
+import set from "set" /* 2 */;
+import v1 from "v1" /* 514 */;
+import trackSettingSearchInputFocused from "trackSettingSearchInputFocused" /* 7397 */;
+
 class SettingSearchSessionAnalyticsManager {
 }
 const prototype = SettingSearchSessionAnalyticsManager.prototype;
@@ -14,21 +18,21 @@ prototype["isSessionActive"] = function isSessionActive() {
   return null != this.searchSessionId;
 };
 prototype["initialize"] = function initialize() {
-  this.searchSessionId = require(514) /* v1 */.v4();
+  this.searchSessionId = v1.v4();
   this.searchSessionStartTime = Date.now();
   this.isQueryEnteredTracked = false;
 };
 prototype["maybeTrackQueryEntered"] = function maybeTrackQueryEntered() {
   if (!this.isQueryEnteredTracked) {
-    const result = require(7359) /* trackSettingSearchInputFocused */.trackSettingSearchQueryEntered();
+    const result = trackSettingSearchInputFocused.trackSettingSearchQueryEntered();
     tmp.isQueryEnteredTracked = true;
-    const obj = require(7359) /* trackSettingSearchInputFocused */;
+    const obj = trackSettingSearchInputFocused;
   }
 };
 prototype["terminate"] = function terminate() {
   const self = this;
   if (tmp) {
-    let obj = require(7359) /* trackSettingSearchInputFocused */;
+    let obj = trackSettingSearchInputFocused;
     obj = { searchSessionDuration: null };
     const _Date = Date;
     obj[0] = Date.now() - self.searchSessionStartTime;
@@ -38,6 +42,6 @@ prototype["terminate"] = function terminate() {
     self.isQueryEnteredTracked = false;
   }
 };
-let result = require("set").fileFinishedImporting("modules/settings/tracking/SettingSearchSessionAnalyticsManager.tsx");
+let result = set.fileFinishedImporting("modules/settings/tracking/SettingSearchSessionAnalyticsManager.tsx");
 
 export default Object.create(SettingSearchSessionAnalyticsManager.prototype);

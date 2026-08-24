@@ -1,26 +1,26 @@
-// Module ID: 11603
-// Function ID: 11604
+// Module ID: 11652
+// Function ID: 11653
 // Name: usePendingGameProfileReturn
-// Dependencies: [19, 4505, 9098, 676, 589, 9096, 9101, 2]
+// Dependencies: [19, 4509, 9135, 676, 589, 9133, 9138, 2]
 // Exports: default
 
-// Module 11603 (usePendingGameProfileReturn)
-import noop from "noop";
-import handleLoadMessages from "handleLoadMessages";
-import getSimilarGames from "getSimilarGames";
-import { AVATAR_SIZE } from "ME";
+// Module 11652 (usePendingGameProfileReturn)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "handleLoadMessages" /* 4509 */;
+import closure_5 from "getSimilarGames" /* 9135 */;
+import { AVATAR_SIZE } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("getSimilarGames").fileFinishedImporting("modules/game_profile/hooks/usePendingGameProfileReturn.tsx");
+const result = require("set").fileFinishedImporting("modules/game_profile/hooks/usePendingGameProfileReturn.tsx");
 
 export default function usePendingGameProfileReturn(channelId) {
   channelId = channelId.channelId;
   let stateFromStores;
   let stateFromStores1;
   let obj = channelId(stateFromStores1[4]);
-  const items = [getSimilarGames];
+  const items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => {
-    const pendingReturn = outer1_5.getPendingReturn();
+    const pendingReturn = closure_1_5.getPendingReturn();
     let tmp2 = null;
     if (null != pendingReturn) {
       tmp2 = null;
@@ -41,7 +41,7 @@ export default function usePendingGameProfileReturn(channelId) {
       obj.returnToGameProfile(obj);
     }
   }, items1);
-  const items2 = [handleLoadMessages];
+  const items2 = [closure_4];
   stateFromStores1 = channelId(stateFromStores1[4]).useStateFromStores(items2, () => {
     let gameId;
     if (stateFromStores != null) {
@@ -49,7 +49,7 @@ export default function usePendingGameProfileReturn(channelId) {
     }
     let game = null;
     if (null != gameId) {
-      game = outer1_4.getGame(tmp.gameId);
+      game = closure_1_4.getGame(tmp.gameId);
     }
     return game;
   });
@@ -63,7 +63,7 @@ export default function usePendingGameProfileReturn(channelId) {
     if (stateFromStores1 != null) {
       id = stateFromStores1.id;
     }
-    return null != id ? (() => outer1_1(outer1_2[5]).clearGameProfilePendingReturn(id.id)) : undefined;
+    return null != id ? (() => closure_1_1(closure_1_2[5]).clearGameProfilePendingReturn(id.id)) : undefined;
   }, items3);
   if (stateFromStores1 != null) {
     const name = stateFromStores1.name;

@@ -1,19 +1,22 @@
-// Module ID: 11856
-// Function ID: 11857
+// Module ID: 11905
+// Function ID: 11906
 // Name: trackNUFStep
 // Dependencies: [676, 698, 2]
 // Exports: trackNUFStep
 
-// Module 11856 (trackNUFStep)
-import { AnalyticEvents } from "ME";
+// Module 11905 (trackNUFStep)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 
+const AnalyticEvents = ME.AnalyticEvents;
 let c3 = 0;
-let result = require("set").fileFinishedImporting("modules/nuf/native/NewUserAnalyticsUtils.tsx");
+let result = set.fileFinishedImporting("modules/nuf/native/NewUserAnalyticsUtils.tsx");
 
 export const trackNUFStep = function trackNUFStep(STEP_GUILD_TEMPLATE, STEP_FRIEND_LIST, arg2) {
   const timestamp = Date.now();
   const result = (timestamp - timestamp) / 1000;
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = {};
   const merged = Object.assign(arg2);
   obj.flow_type = "Mobile NUX Post Reg";

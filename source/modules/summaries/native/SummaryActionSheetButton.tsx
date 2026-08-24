@@ -1,41 +1,41 @@
-// Module ID: 10842
-// Function ID: 10843
+// Module ID: 10881
+// Function ID: 10882
 // Name: SummaryActionSheetButton
-// Dependencies: [19, 17, 21, 4661, 712, 5433, 1297, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 5438, 1297, 4739, 2]
 // Exports: SummaryActionSheetButton
 
-// Module 10842 (SummaryActionSheetButton)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10881 (SummaryActionSheetButton)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 createCacheKey = { container: { flexDirection: "column", justifyContent: "center", alignItems: "center", paddingVertical: 8, width: 78 }, iconBox: null, icon: null, name: null };
-createCacheKey = { borderRadius: require("Themes").radii.round, border: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
-const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey = { borderRadius: ThemesDefault.radii.round, border: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
+const merged = Object.assign(ThemesDefault.shadows.SHADOW_LOW);
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { margin: 12, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[2] = { margin: 12, tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 createCacheKey[3] = { textAlign: "center", marginTop: 8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { margin: 12, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-const result = require("jsxProd").fileFinishedImporting("modules/summaries/native/SummaryActionSheetButton.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const obj1 = { margin: 12, tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+const result = require("set").fileFinishedImporting("modules/summaries/native/SummaryActionSheetButton.tsx");
 
 export const SummaryActionSheetButton = function SummaryActionSheetButton(label) {
-  let iconSource;
-  let onPress;
   label = label.label;
   ({ iconSource, onPress } = label);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { style: tmp.container, onPress, accessibilityRole: "button", accessibilityLabel: label, children: null };
-  obj = { style: items, children: null };
+  obj = { style: items, children: callback(Button.Icon, obj) };
   items = [tmp.iconBox];
   obj = { style: tmp.icon, source: iconSource };
-  obj[1] = callback(require(1297) /* Button */.Icon, obj);
-  const items1 = [callback(View, obj), callback(require(4734) /* Text */.Text, { style: tmp.name, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: label })];
+  const items1 = [callback(View, obj), callback(Text.Text, { style: tmp.name, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: label })];
   obj[4] = items1;
-  return callback2(require(5433) /* PressableBase */.PressableOpacity, obj);
+  return callback2(PressableBase.PressableOpacity, obj);
 };

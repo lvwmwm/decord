@@ -1,11 +1,13 @@
-// Module ID: 4279
-// Function ID: 4280
+// Module ID: 4283
+// Function ID: 4284
 // Name: prototype
 // Dependencies: [676, 2]
 
-// Module 4279 (prototype)
-import { AbortCodes } from "ME";
+// Module 4283 (prototype)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
+const AbortCodes = ME.AbortCodes;
 const prototype = function ClientOutdatedAcceptGiftError(arg0) {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.code = AbortCodes.INVALID_GIFT_REDEMPTION_CLIENT_UPDATE_REQUIRED;
@@ -13,6 +15,6 @@ const prototype = function ClientOutdatedAcceptGiftError(arg0) {
 }.prototype;
 class prototype extends Error {
 }
-const result = require("set").fileFinishedImporting("errors/ClientOutdatedAcceptGiftError.tsx");
+const result = set.fileFinishedImporting("errors/ClientOutdatedAcceptGiftError.tsx");
 
 export default prototype;

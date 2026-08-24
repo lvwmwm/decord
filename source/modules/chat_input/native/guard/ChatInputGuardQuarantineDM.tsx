@@ -1,23 +1,25 @@
-// Module ID: 11619
-// Function ID: 11620
-// Dependencies: [19, 11620, 21, 11616, 11621, 1236, 2]
+// Module ID: 11668
+// Function ID: 11669
+// Dependencies: [19, 11669, 21, 11665, 11670, 1236, 2]
 
-// Module 11619
-import { QUARANTINE_APPEAL_LINK } from "QUARANTINE_APPEAL_LINK";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 11668
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 11665 */;
+import ChatWarningIcon from "ChatWarningIcon" /* 11670 */;
+import { QUARANTINE_APPEAL_LINK } from "QUARANTINE_APPEAL_LINK" /* 11669 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-const memoResult = require("noop").memo(function ChatInputGuardQuarantineDM() {
-  let obj = { type: "simple-action", icon: null, message: null, subtext: null };
-  obj[1] = jsx(require(11621) /* ChatWarningIcon */.ChatWarningIcon, {});
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.EouHwv);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
+require = arg1;
+const memoResult = importAllResult.memo(function ChatInputGuardQuarantineDM() {
+  let obj = { type: "simple-action", icon: jsx(ChatWarningIcon.ChatWarningIcon, {}), message: null, subtext: null };
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.EouHwv);
+  const intl2 = getSystemLocale.intl;
   obj = { appealLink: QUARANTINE_APPEAL_LINK };
-  obj[3] = intl2.format(require(1236) /* getSystemLocale */.t.PThBel, obj);
-  return jsx(importDefault(11616), { appealLink: QUARANTINE_APPEAL_LINK });
+  obj[3] = intl2.format(getSystemLocale.t.PThBel, obj);
+  return jsx(ChatInputGuardDefault, { appealLink: QUARANTINE_APPEAL_LINK });
 });
-const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardQuarantineDM.tsx");
+const result = require("set").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardQuarantineDM.tsx");
 
 export default memoResult;

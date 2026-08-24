@@ -1,20 +1,18 @@
-// Module ID: 10707
-// Function ID: 10708
+// Module ID: 10746
+// Function ID: 10747
 // Name: questMatchesActivity
-// Dependencies: [32, 4478, 6716, 676, 4481, 7476, 7451, 7474, 2]
+// Dependencies: [32, 4482, 6753, 676, 4485, 7514, 7489, 7512, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 10707 (questMatchesActivity)
-import _slicedToArray from "_slicedToArray";
-import addApplication from "addApplication";
-import QuestsExperimentLocations from "QuestsExperimentLocations";
-import { ActivityGamePlatforms } from "ME";
-import { XBOX_ACTIVITY_APPLICATION_ID as closure_8 } from "items3";
+// Module 10746 (questMatchesActivity)
+import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement" /* 7489 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "addApplication" /* 4482 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 6753 */;
+import { ActivityGamePlatforms } from "ME" /* 676 */;
+import { XBOX_ACTIVITY_APPLICATION_ID as closure_8 } from "items3" /* 4485 */;
 
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function questMatchesActivity(arg0, id) {
   let formatted = arg0;
   let tmp2 = null;
@@ -38,8 +36,8 @@ function questMatchesActivity(arg0, id) {
           let tmp13 = tmp2 != formatted.application_id;
           if (tmp13) {
             const application_id = formatted.application_id;
-            const allApplicationIds = application_id(7476).getAllApplicationIds(id);
-            const obj = application_id(7476);
+            const allApplicationIds = application_id(7514).getAllApplicationIds(id);
+            const obj = application_id(7514);
             tmp13 = tmp2 != allApplicationIds && allApplicationIds.some((arg0) => arg0 === closure_0);
             const tmp16 = tmp2 != allApplicationIds && allApplicationIds.some((arg0) => arg0 === closure_0);
           }
@@ -49,7 +47,7 @@ function questMatchesActivity(arg0, id) {
       tmp9 = formatted.platform === ActivityGamePlatforms.PS4 || formatted.platform === tmp8.PS5;
     }
     formatted = formatted.name.toLowerCase();
-    const consoleApplicationId = application_id(7476).getConsoleApplicationId(id);
+    const consoleApplicationId = application_id(7514).getConsoleApplicationId(id);
     let flag = false;
     if (tmp2 != consoleApplicationId) {
       application = application.getApplication(consoleApplicationId);
@@ -61,12 +59,11 @@ function questMatchesActivity(arg0, id) {
       flag = tmp2;
     }
     tmp10 = flag;
-    const obj3 = application_id(7476);
+    const obj3 = application_id(7514);
     const str = formatted.name;
   }
 }
 function getQuestByActivity(result, arg1) {
-  let tmp4;
   const obj = result[Symbol.iterator]();
   while (obj !== undefined) {
     let tmp2 = callback;
@@ -77,7 +74,7 @@ function getQuestByActivity(result, arg1) {
     if (questMatchesActivity(arg1, tmp4)) {
       let tmp7 = require;
       let tmp8 = dependencyMap;
-      let obj2 = require(7451) /* getQuestDeliveryDataForPlacement */;
+      let obj2 = getQuestDeliveryDataForPlacement;
       let tmp9 = tmp4;
       if (!obj2.isQuestExpired(tmp5)) {
         let tmp10 = tmp4;
@@ -91,17 +88,16 @@ function getQuestByActivity(result, arg1) {
 }
 function questMatchesApplicationId(arg0, quest) {
   const _require = arg0;
-  const allApplicationIds = _require(7476).getAllApplicationIds(quest);
-  const obj = _require(7476);
+  const allApplicationIds = _require(7514).getAllApplicationIds(quest);
+  const obj = _require(7514);
   return null != allApplicationIds && allApplicationIds.some((arg0) => arg0 === closure_0);
 }
 ({ DISCORD_APPLICATION_ID: c4, PLAY_ACTIVITY_CLOUD_GAMING_QUEST_ID: c5, PLAY_ACTIVITY_SOCIAL_ENTRY_APPLICATION_ID: closure_6 } = QuestsExperimentLocations);
-const result = require("QuestsExperimentLocations").fileFinishedImporting("modules/quests/utils/QuestMatchingUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/utils/QuestMatchingUtils.tsx");
 
 export { questMatchesActivity };
 export { getQuestByActivity };
 export const getQuestByApplicationId = function getQuestByApplicationId(arg0, arg1) {
-  let tmp5;
   const obj = arg0[Symbol.iterator]();
   while (obj !== undefined) {
     let tmp3 = callback;
@@ -112,7 +108,7 @@ export const getQuestByApplicationId = function getQuestByApplicationId(arg0, ar
     if (questMatchesApplicationId(arg1, tmp5)) {
       let tmp8 = require;
       let tmp9 = dependencyMap;
-      let obj2 = require(7451) /* getQuestDeliveryDataForPlacement */;
+      let obj2 = getQuestDeliveryDataForPlacement;
       let tmp10 = tmp5;
       if (!obj2.isQuestExpired(tmp6)) {
         let tmp = tmp5;
@@ -126,9 +122,9 @@ export const getQuestByApplicationId = function getQuestByApplicationId(arg0, ar
   }
 };
 export const allPlayOnDesktopQuestsByApplicationId = function allPlayOnDesktopQuestsByApplicationId(arr) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   return Array.from(arr.values()).filter((quest) => {
-    let obj = callback(outer1_1[5]);
+    let obj = callback(closure_1_1[5]);
     const allApplicationIds = obj.getAllApplicationIds(quest);
     let hasPlayOnDesktopTaskResult = null != allApplicationIds && allApplicationIds.some((arg0) => arg0 === closure_0);
     if (hasPlayOnDesktopTaskResult) {
@@ -164,7 +160,7 @@ export const getQuestsFromActivities = function getQuestsFromActivities(result, 
   return null;
 };
 export const getEligibleQuestsForApplicationId = function getEligibleQuestsForApplicationId(quests, applicationId, arg2) {
-  let closure_0 = applicationId;
+  closure_0 = applicationId;
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
@@ -188,7 +184,7 @@ export const getEligibleQuestsForApplicationId = function getEligibleQuestsForAp
         canLaunchActivityResult = activityApplicationId === applicationId;
       }
       if (canLaunchActivityResult) {
-        canLaunchActivityResult = activityApplicationId !== outer1_4;
+        canLaunchActivityResult = activityApplicationId !== closure_1_4;
       }
       if (canLaunchActivityResult) {
         userStatus = userStatus.userStatus;

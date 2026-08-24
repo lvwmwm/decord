@@ -1,28 +1,25 @@
-// Module ID: 14040
-// Function ID: 14041
+// Module ID: 14108
+// Function ID: 14109
 // Name: HideBadgeTile
-// Dependencies: [32, 19, 17, 8370, 1922, 8936, 21, 4661, 712, 6292, 1236, 14041, 14043, 8605, 8607, 1629, 1494, 14024, 589, 14021, 8939, 14022, 4097, 10182, 5446, 4734, 6950, 6949, 6952, 2]
+// Dependencies: [32, 19, 17, 8409, 1922, 8973, 21, 4668, 712, 6323, 1236, 14109, 14111, 8642, 8644, 1629, 1494, 14092, 589, 14089, 8976, 14090, 4100, 10221, 5451, 4739, 6988, 6987, 6990, 2]
 // Exports: default
 
-// Module 14040 (HideBadgeTile)
-import _slicedToArray from "_slicedToArray";
-import getSavedBadgeSettings from "getSavedBadgeSettings";
-import { View } from "apexExperiment";
-import handleFormOpen from "handleFormOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import initialize from "initialize";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 14108 (HideBadgeTile)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "handleFormOpen" /* 8409 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_8 from "initialize" /* 8973 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
 const require = arg1;
 function HideBadgeTile(badge) {
-  let onToggle;
-  let size;
   badge = badge.badge;
   ({ size, onToggle } = badge);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   const items = [badge, onToggle];
   const callback = React.useCallback(() => {
     onToggle(badge);
@@ -33,51 +30,48 @@ function HideBadgeTile(badge) {
   const intl = badge(1236).intl;
   obj[7] = intl.string(badge(1236).t.TPp3Mq);
   obj[8] = callback;
-  obj = { badge, size: null, style: null };
-  obj[1] = badge(14043).BADGE_TILE_ICON_SIZE;
+  obj = { badge, size: badge(14111).BADGE_TILE_ICON_SIZE, style: null };
   let badgeIconHidden;
   if (badge.hidden) {
     badgeIconHidden = tmp.badgeIconHidden;
   }
   obj[2] = badgeIconHidden;
-  const items2 = [closure_9(onToggle(14041), obj), ];
-  const obj1 = { style: tmp.indicator, "aria-hidden": true, children: null };
+  const items2 = [closure_9(onToggle(14109), obj), ];
+  obj1 = { style: tmp.indicator, "aria-hidden": true, children: null };
   if (badge.hidden) {
     const obj2 = { size: "sm", color: null };
     obj2[1] = tmp7(712).colors.CONTROL_CRITICAL_SECONDARY_TEXT_DEFAULT;
-    let tmp6Result = tmp6(tmp4(8605).EyeSlashIcon, obj2);
+    let tmp6Result = tmp6(tmp4(8642).EyeSlashIcon, obj2);
   } else {
     const obj3 = { size: "sm", color: null };
     obj3[1] = tmp7(712).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT;
-    tmp6Result = tmp6(tmp4(8607).EyeIcon, obj3);
+    tmp6Result = tmp6(tmp4(8644).EyeIcon, obj3);
   }
   obj1[2] = tmp6Result;
   items2[1] = closure_9(View, obj1);
   obj[9] = items2;
-  return closure_10(badge(6292).Card, obj);
+  return closure_10(badge(6323).Card, obj);
 }
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { grid: null, tile: null, badgeIconHidden: null, indicator: null, message: null, messageText: null };
-createCacheKey = { flexDirection: "row", flexWrap: "wrap", gap: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { flexDirection: "row", flexWrap: "wrap", gap: ThemesDefault.space.PX_16, paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { alignItems: "center", justifyContent: "center", padding: 0 };
 createCacheKey[2] = { opacity: 0.3 };
-createCacheKey[3] = { position: "absolute", top: require("Themes").space.PX_8, end: require("Themes").space.PX_8, width: 32, height: 32, borderRadius: require("Themes").radii.lg, alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
-let obj1 = { position: "absolute", top: require("Themes").space.PX_8, end: require("Themes").space.PX_8, width: 32, height: 32, borderRadius: require("Themes").radii.lg, alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
-createCacheKey[4] = { alignItems: "center", justifyContent: "center", paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_32 };
+createCacheKey[3] = { position: "absolute", top: ThemesDefault.space.PX_8, end: ThemesDefault.space.PX_8, width: 32, height: 32, borderRadius: ThemesDefault.radii.lg, alignItems: "center", justifyContent: "center", backgroundColor: ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
+let obj1 = { position: "absolute", top: ThemesDefault.space.PX_8, end: ThemesDefault.space.PX_8, width: 32, height: 32, borderRadius: ThemesDefault.radii.lg, alignItems: "center", justifyContent: "center", backgroundColor: ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
+createCacheKey[4] = { alignItems: "center", justifyContent: "center", paddingHorizontal: ThemesDefault.space.PX_16, paddingVertical: ThemesDefault.space.PX_32 };
 createCacheKey[5] = { textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { alignItems: "center", justifyContent: "center", paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_32 };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/badges/native/HideBadgesSheet.tsx");
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { alignItems: "center", justifyContent: "center", paddingHorizontal: ThemesDefault.space.PX_16, paddingVertical: ThemesDefault.space.PX_32 };
+let result = require("set").fileFinishedImporting("modules/badges/native/HideBadgesSheet.tsx");
 
 export default function HideBadgesSheet() {
-  let handleFormOpen;
-  let num;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   const bottom = stateFromStores(stateFromStoresArray[15])().bottom;
   let obj = stateFromStores(stateFromStoresArray[17]);
   const tenureBadgeHideable = obj.useConfig({ location: "HideBadgesSheet" }).tenureBadgeHideable;
-  let obj1 = tenureBadgeHideable(stateFromStoresArray[18]);
+  obj1 = tenureBadgeHideable(stateFromStoresArray[18]);
   let items = [badgeTileSize];
   stateFromStores = obj1.useStateFromStores(items, () => {
     const currentUser = badgeTileSize.getCurrentUser();
@@ -88,10 +82,10 @@ export default function HideBadgesSheet() {
     return id;
   });
   let obj2 = tenureBadgeHideable(stateFromStoresArray[18]);
-  const items1 = [initialize];
-  stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => initialize.getBadges(stateFromStores));
+  const items1 = [closure_8];
+  stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => closure_8.getBadges(stateFromStores));
   let obj3 = tenureBadgeHideable(stateFromStoresArray[18]);
-  const items2 = [handleFormOpen];
+  const items2 = [closure_6];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items2, () => {
     pendingChanges = pendingChanges.getPendingChanges();
     return { pendingBadgeDisplayOrder: pendingChanges.pendingBadgeDisplayOrder, pendingBadgeHiddenBadges: pendingChanges.pendingBadgeHiddenBadges };
@@ -106,17 +100,17 @@ export default function HideBadgesSheet() {
     return obj.applyPendingBadgeSettings(stateFromStoresArray, obj);
   }, items3);
   let obj5 = tenureBadgeHideable(stateFromStoresArray[18]);
-  const items4 = [initialize];
+  const items4 = [closure_8];
   const stateFromStores1 = obj5.useStateFromStores(items4, () => {
     let hasCatalogForResult = null != stateFromStores;
     if (hasCatalogForResult) {
-      hasCatalogForResult = initialize.hasCatalogFor(tmp);
+      hasCatalogForResult = closure_8.hasCatalogFor(tmp);
     }
     return hasCatalogForResult;
   });
   let obj6 = tenureBadgeHideable(stateFromStoresArray[18]);
-  const items5 = [initialize];
-  const stateFromStores2 = obj6.useStateFromStores(items5, () => initialize.hasCatalogFetchErrorFor(stateFromStores));
+  const items5 = [closure_8];
+  const stateFromStores2 = obj6.useStateFromStores(items5, () => closure_8.hasCatalogFetchErrorFor(stateFromStores));
   const items6 = [stateFromStores];
   const effect = pendingBadgeHiddenBadges.useEffect(() => {
     if (null != stateFromStores) {
@@ -124,8 +118,8 @@ export default function HideBadgesSheet() {
         const badgeDirectory = tenureBadgeHideable(stateFromStoresArray[20]).fetchBadgeDirectory(tmp);
         const obj2 = tenureBadgeHideable(stateFromStoresArray[20]);
       }
-      const obj = initialize;
-      tmp2 = initialize.hasCatalogFor(tmp) && !initialize.isCatalogStaleFor(tmp);
+      const obj = closure_8;
+      tmp2 = closure_8.hasCatalogFor(tmp) && !closure_8.isCatalogStaleFor(tmp);
     }
   }, items6);
   const items7 = [memo, tenureBadgeHideable];
@@ -134,7 +128,7 @@ export default function HideBadgesSheet() {
     obj = { tenureBadgeHideable };
     return obj.getHideableBadges(memo, tenureBadgeHideable(stateFromStoresArray[21]).getUnhideableBadgeIds(obj));
   }, items7);
-  [num, handleFormOpen] = pendingBadgeDisplayOrder(pendingBadgeHiddenBadges.useState(null), 2);
+  [num, closure_6] = pendingBadgeDisplayOrder(pendingBadgeHiddenBadges.useState(null), 2);
   const callback = pendingBadgeHiddenBadges.useCallback((nativeEvent) => {
     pendingChanges(nativeEvent.nativeEvent.layout.height);
   }, []);
@@ -160,7 +154,7 @@ export default function HideBadgesSheet() {
     }
   }
   const items8 = [memo];
-  initialize = obj4.useCallback((hidden) => {
+  closure_8 = obj4.useCallback((hidden) => {
     const found = memo.filter((hidden) => hidden.hidden);
     const set = new Set(found.map((badge_id) => badge_id.badge_id));
     if (hidden.hidden) {
@@ -201,7 +195,7 @@ export default function HideBadgesSheet() {
   if (0 !== memo1.length) {
     obj5 = { style: null, accessibilityRole: "list", children: null };
     obj5[0] = tmp.grid;
-    obj5[2] = memo1.map((badge) => outer1_9(outer1_12, { badge, size: badgeTileSize, onToggle: initialize }, badge.badge_id));
+    obj5[2] = memo1.map((badge) => closure_1_9(closure_1_12, { badge, size: badgeTileSize, onToggle: closure_8 }, badge.badge_id));
     callback(memo, obj5);
     const tmp32 = callback;
     const tmp33 = memo;

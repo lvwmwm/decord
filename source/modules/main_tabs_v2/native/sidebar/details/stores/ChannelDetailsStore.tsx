@@ -1,58 +1,58 @@
-// Module ID: 8505
-// Function ID: 8506
+// Module ID: 8544
+// Function ID: 8545
 // Name: useChannelDetailsStore
 // Dependencies: [644, 705, 2]
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive, useChannelDetailsSearchActiveSource, useIsChannelDetailsSearchActive
 
-// Module 8505 (useChannelDetailsStore)
-import keys from "keys";
+// Module 8544 (useChannelDetailsStore)
+import set from "set" /* 2 */;
+import batchUpdates from "batchUpdates" /* 705 */;
+import keys from "keys" /* 644 */;
 
 let closure_2 = { isSearchActive: false, searchActiveSource: "initial" };
 let obj = keys.create(() => {
-  const obj = { states: null };
-  obj[0] = new Map();
+  obj = { states: new Map() };
   return obj;
 });
-let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/stores/ChannelDetailsStore.tsx");
+let result = set.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/stores/ChannelDetailsStore.tsx");
 
 export const useChannelDetailsStore = obj;
 export const deleteChannelStates = function deleteChannelStates() {
-  require(705) /* batchUpdates */.batchUpdates(() => {
-    const obj = { states: null };
-    obj[0] = new Map();
+  batchUpdates.batchUpdates(() => {
+    obj = { states: new Map() };
     return state.setState(obj);
   });
 };
 export const useIsChannelDetailsSearchActive = function useIsChannelDetailsSearchActive(arg0) {
-  let closure_0 = arg0;
-  const f81648 = (isSearchActive) => isSearchActive.isSearchActive;
+  closure_0 = arg0;
+  const f82225 = (isSearchActive) => isSearchActive.isSearchActive;
   return obj((states) => {
     states = states.states;
     let value = states.get(closure_0);
     if (value == null) {
-      const obj = {};
-      const merged = Object.assign(outer1_2);
+      obj = {};
+      const merged = Object.assign(closure_1_2);
       value = obj;
     }
-    return f81649(value);
+    return f82226(value);
   });
 };
 export const useChannelDetailsSearchActiveSource = function useChannelDetailsSearchActiveSource(arg0) {
-  let closure_0 = arg0;
-  const f81649 = (searchActiveSource) => searchActiveSource.searchActiveSource;
+  closure_0 = arg0;
+  const f82226 = (searchActiveSource) => searchActiveSource.searchActiveSource;
   return obj((states) => {
     states = states.states;
     let value = states.get(closure_0);
     if (value == null) {
-      const obj = {};
-      const merged = Object.assign(outer1_2);
+      obj = {};
+      const merged = Object.assign(closure_1_2);
       value = obj;
     }
-    return f81649(value);
+    return f82226(value);
   });
 };
 export const setIsChannelDetailsSearchActive = function setIsChannelDetailsSearchActive(arg0, isSearchActive, searchActiveSource) {
-  let obj = { isSearchActive, searchActiveSource };
+  obj = { isSearchActive, searchActiveSource };
   const states = obj.getState().states;
   let value = states.get(arg0);
   if (value == null) {
@@ -65,7 +65,7 @@ export const setIsChannelDetailsSearchActive = function setIsChannelDetailsSearc
   const merged2 = Object.assign(obj);
   const map = new Map(states);
   const result = map.set(arg0, obj);
-  map(705).batchUpdates(() => outer1_3.setState({ states: map }));
+  map(705).batchUpdates(() => closure_1_3.setState({ states: map }));
 };
 export const getIsChannelDetailsSearchActive = function getIsChannelDetailsSearchActive(arg0) {
   const states = obj.getState().states;
@@ -82,5 +82,5 @@ export const deleteChannelDetailsSearchState = function deleteChannelDetailsSear
   states.delete(arg0);
   const map = new Map(states);
   obj = map(705);
-  obj.batchUpdates(() => outer1_3.setState({ states: map }));
+  obj.batchUpdates(() => closure_1_3.setState({ states: map }));
 };

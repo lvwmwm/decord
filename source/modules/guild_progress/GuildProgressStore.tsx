@@ -1,14 +1,16 @@
-// Module ID: 11644
-// Function ID: 11645
+// Module ID: 11693
+// Function ID: 11694
 // Name: completeStep
-// Dependencies: [1218, 1391, 1910, 11637, 11, 589, 709, 2]
+// Dependencies: [1218, 1391, 1910, 11686, 11, 589, 709, 2]
 
-// Module 11644 (completeStep)
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { Steps } from "Steps";
-import { PersistedStore } from "initialize";
+// Module 11693 (completeStep)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import { Steps } from "Steps" /* 11686 */;
 
 function completeStep(guild_id, CHANNEL) {
   let tmp = null != obj;
@@ -26,15 +28,16 @@ function completeStep(guild_id, CHANNEL) {
   return tmp;
 }
 let closure_6 = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class GuildProgressStore extends PersistedStore {
 }
 const prototype = GuildProgressStore.prototype;
 prototype["initialize"] = function initialize(arg0) {
-  const importDefault = arg0;
-  this.waitFor(fetchFingerprint, ensureGuildLoaded, createGuildRecordFromRust);
-  let closure_6 = {};
+  importDefault = arg0;
+  this.waitFor(closure_2, closure_3, closure_4);
+  closure_6 = {};
   if (null != arg0) {
-    const keys = importDefault(11).keys(arg0);
+    const keys = DISCORD_EPOCHDefault.keys(arg0);
     const item = keys.forEach((arg0) => {
       let tmp2 = null != tmp;
       if (tmp2) {
@@ -47,7 +50,7 @@ prototype["initialize"] = function initialize(arg0) {
         closure_6[arg0] = set;
       }
     });
-    const obj = importDefault(11);
+    const obj = DISCORD_EPOCHDefault;
   }
 };
 prototype["getProgress"] = function getProgress(arg0) {
@@ -65,12 +68,12 @@ prototype["getState"] = function getState() {
 };
 GuildProgressStore.displayName = "GuildProgressStore";
 GuildProgressStore.persistKey = "GuildProgressStore";
-const guildProgressStore = new GuildProgressStore(require("dispatcher"), {
+const guildProgressStore = new GuildProgressStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
     const items = [];
     const keys = items(11).keys(closure_6);
     const item = keys.forEach((arg0) => {
-      if (obj.has(outer1_5.COMPLETED)) {
+      if (obj.has(closure_1_5.COMPLETED)) {
         items.push(arg0);
       }
     });
@@ -293,6 +296,6 @@ const guildProgressStore = new GuildProgressStore(require("dispatcher"), {
     return tmp2;
   }
 });
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_progress/GuildProgressStore.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_progress/GuildProgressStore.tsx");
 
 export default guildProgressStore;

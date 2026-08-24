@@ -5,12 +5,14 @@
 // Exports: isPlainObject
 
 // Module 382 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _get from "_get";
-import importDefaultResult from "_createClass";
-import { isValidElement } from "noop";
+import _inheritsDefault from "_inherits" /* 98 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 366 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import closure_5 from "_get" /* 96 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import { isValidElement } from "noop" /* 19 */;
 
 let AnimatedObject = importDefault;
 function _isNativeReflectConstruct() {
@@ -24,10 +26,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -88,7 +90,7 @@ function flatAnimatedNodes(_value, items, arg2) {
   }
 }
 function mapAnimatedNodes(_value, arg1, arg2) {
-  const AnimatedObject = arg1;
+  AnimatedObject = arg1;
   let num = arg2;
   if (arg2 === undefined) {
     num = 0;
@@ -100,7 +102,7 @@ function mapAnimatedNodes(_value, arg1, arg2) {
   } else {
     const _Array = Array;
     if (Array.isArray(_value)) {
-      return _value.map((arg0) => outer1_9(arg0, closure_0, num + 1));
+      return _value.map((arg0) => closure_1_9(arg0, closure_0, num + 1));
     } else {
       let prototypeOf;
       if (null !== _value) {
@@ -140,12 +142,12 @@ function mapAnimatedNodes(_value, arg1, arg2) {
 class AnimatedObject {
   constructor(arg0, arg1, arg2) {
     self = this;
-    tmp = mapAnimatedNodes(this, AnimatedObject);
+    tmp = closure_2(this, AnimatedObject);
     items = [];
     items[0] = importDefault;
-    tmp2 = mapAnimatedNodes;
-    obj = mapAnimatedNodes(AnimatedObject);
-    tmp3 = mapAnimatedNodes;
+    tmp2 = closure_4;
+    obj = closure_4(AnimatedObject);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -159,7 +161,7 @@ class AnimatedObject {
     return tmp3Result;
   }
 }
-require("_inherits")(AnimatedObject, require("_isNativeReflectConstruct"));
+_inheritsDefault(AnimatedObject, _isNativeReflectConstructDefault);
 let obj = {
   key: "__getValue",
   value: function __getValue() {
@@ -172,9 +174,9 @@ let items = [
     key: "__getValueWithStaticObject",
     value: function __getValueWithStaticObject(_value) {
       const _nodes = this._nodes;
-      let c1 = 0;
+      c1 = 0;
       return mapAnimatedNodes(_value, () => {
-        let closure_1 = tmp + 1;
+        closure_1 = tmp + 1;
         return _nodes[+closure_1].__getValue();
       });
     }
@@ -260,10 +262,10 @@ obj = {
       } else {
         constructResult = obj.apply(obj, items);
       }
-      const tmp9Result = _possibleConstructorReturn(obj, constructResult);
+      const tmp9Result = closure_3(obj, constructResult);
       tmp9Result._nodes = arr;
       tmp9Result._value = _value;
-      const tmp9 = _possibleConstructorReturn;
+      const tmp9 = closure_3;
     }
   }
 };

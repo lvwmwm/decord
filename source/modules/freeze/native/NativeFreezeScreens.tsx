@@ -1,23 +1,21 @@
-// Module ID: 15284
-// Function ID: 15285
+// Module ID: 15348
+// Function ID: 15349
 // Name: NativeFreezeScreens
-// Dependencies: [32, 19, 17, 21, 38, 4670, 4661, 2]
+// Dependencies: [32, 19, 17, 21, 38, 4676, 4668, 2]
 // Exports: NativeFreezeScreens
 
-// Module 15284 (NativeFreezeScreens)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { StyleSheet } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15348 (NativeFreezeScreens)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { StyleSheet } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_7 = createCacheKey.createStyles({ screens: { flex: 1, overflow: "hidden" } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/freeze/native/NativeFreezeScreens.tsx");
+const result = require("set").fileFinishedImporting("modules/freeze/native/NativeFreezeScreens.tsx");
 
 export const NativeFreezeScreens = function NativeFreezeScreens(detachInactiveScreens) {
-  let activeIndex;
-  let children;
   ({ children, activeIndex } = detachInactiveScreens);
   let flag = detachInactiveScreens.detachInactiveScreens;
   if (flag === undefined) {

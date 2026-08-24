@@ -4,10 +4,7 @@
 // Dependencies: [1712]
 
 // Module 1722 (RollInData)
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
+import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes" /* 1712 */;
 
 obj = { RollInLeft: { name: "RollInLeft", style: obj, duration: 0.3 }, RollInRight: { name: "RollInRight", style: obj, duration: 0.3 } };
 obj = { 0: { transform: items }, 100: null };

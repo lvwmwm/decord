@@ -1,11 +1,13 @@
-// Module ID: 4284
-// Function ID: 4285
+// Module ID: 4288
+// Function ID: 4289
 // Name: gameServerResponseToInstance
 // Dependencies: [2]
 // Exports: default
 
-// Module 4284 (gameServerResponseToInstance)
-const result = require("set").fileFinishedImporting("modules/game_server/utils/gameServerResponseToInstance.tsx");
+// Module 4288 (gameServerResponseToInstance)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/game_server/utils/gameServerResponseToInstance.tsx");
 
 export default function gameServerResponseToInstance(id) {
   const obj = { id: id.id, name: id.name, regionId: id.region_id, regionName: id.region_name, planId: id.sku_id, planName: id.plan_name, onlineConnectionsCount: null, maxConnectionsCount: null, serverIP: null, port: null, entitlementId: null, subscriptionId: null, providerType: null, gameServerPanelUrl: null, status: null, gameId: null, gameConfig: null };

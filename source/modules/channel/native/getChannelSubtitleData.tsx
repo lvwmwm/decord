@@ -1,11 +1,14 @@
-// Module ID: 15486
-// Function ID: 15487
+// Module ID: 15551
+// Function ID: 15552
 // Name: getChannelSubtitleData
 // Dependencies: [1236, 2]
 // Exports: getChannelSubtitleData
 
-// Module 15486 (getChannelSubtitleData)
-const result = require("set").fileFinishedImporting("modules/channel/native/getChannelSubtitleData.tsx");
+// Module 15551 (getChannelSubtitleData)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
+const result = set.fileFinishedImporting("modules/channel/native/getChannelSubtitleData.tsx");
 
 export const getChannelSubtitleData = function getChannelSubtitleData(subtitle) {
   if (null == subtitle) {
@@ -16,8 +19,8 @@ export const getChannelSubtitleData = function getChannelSubtitleData(subtitle) 
       if ("event" !== type) {
         if ("go-live" === type) {
           let obj = { subtitle: null, type: null };
-          const intl = require(1236) /* getSystemLocale */.intl;
-          obj[0] = intl.string(require(1236) /* getSystemLocale */.t.Pa817q);
+          const intl = getSystemLocale.intl;
+          obj[0] = intl.string(getSystemLocale.t.Pa817q);
           obj[1] = subtitle.type;
           return obj;
         } else if ("voice" === type) {

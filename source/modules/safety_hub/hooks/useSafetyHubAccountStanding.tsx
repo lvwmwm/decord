@@ -1,16 +1,17 @@
-// Module ID: 11068
-// Function ID: 11069
+// Module ID: 11107
+// Function ID: 11108
 // Name: useSafetyHubAccountStanding
-// Dependencies: [11061, 589, 2]
+// Dependencies: [11100, 589, 2]
 // Exports: useSafetyHubAccountStanding
 
-// Module 11068 (useSafetyHubAccountStanding)
-import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
+// Module 11107 (useSafetyHubAccountStanding)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11100 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubAccountStanding.tsx");
 
 export const useSafetyHubAccountStanding = function useSafetyHubAccountStanding() {
-  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
-  return require(589) /* initialize */.useStateFromStores(items, () => accountStanding.getAccountStanding());
+  const items = [closure_2];
+  return initialize.useStateFromStores(items, () => accountStanding.getAccountStanding());
 };

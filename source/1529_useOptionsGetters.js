@@ -5,7 +5,7 @@
 // Exports: useOptionsGetters
 
 // Module 1529 (useOptionsGetters)
-import noop from "noop";
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 
@@ -13,8 +13,8 @@ export const useOptionsGetters = function useOptionsGetters(key) {
   key = key.key;
   const options = key.options;
   const navigation = key.navigation;
-  let closure_3;
-  let closure_4;
+  closure_3 = undefined;
+  closure_4 = undefined;
   let onOptionsChange;
   let addOptionsGetter;
   let callback;
@@ -108,12 +108,12 @@ export const useOptionsGetters = function useOptionsGetters(key) {
   const items5 = [callback];
   return {
     addOptionsGetter: navigation.useCallback((arg0, arg1) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       closure_4.current[arg0] = arg1;
       callback();
       return () => {
         delete tmp2[tmp];
-        outer1_7();
+        closure_1_7();
       };
     }, items5),
     getCurrentOptions: callback2

@@ -1,9 +1,11 @@
-// Module ID: 8318
-// Function ID: 8319
+// Module ID: 8358
+// Function ID: 8359
 // Name: nodeToText
 // Dependencies: [2]
 
-// Module 8318 (nodeToText)
+// Module 8358 (nodeToText)
+import set from "set" /* 2 */;
+
 function nodeToText(content) {
   let str = "";
   if (null != content) {
@@ -26,7 +28,7 @@ function nodeToText(content) {
   }
   return str;
 }
-const result = require("set").fileFinishedImporting("modules/messages/native/renderer/redactRestrictedContent.tsx");
+const result = set.fileFinishedImporting("modules/messages/native/renderer/redactRestrictedContent.tsx");
 function redactRestrictedContent(content) {
   if (null != content) {
     if (typeof content !== "string") {
@@ -100,7 +102,7 @@ function redactRestrictedContent(content) {
             }
           }
         }
-        const obj1 = { type: "inlineCode", content: null };
+        obj1 = { type: "inlineCode", content: null };
         obj1[1] = str4;
         return obj1;
       }

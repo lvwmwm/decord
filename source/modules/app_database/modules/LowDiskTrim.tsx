@@ -1,23 +1,23 @@
-// Module ID: 5403
-// Function ID: 5404
+// Module ID: 5408
+// Function ID: 5409
 // Name: handlePostConnectionOpen
-// Dependencies: [5070, 1955, 2]
+// Dependencies: [5075, 1955, 2]
 
-// Module 5403 (handlePostConnectionOpen)
-import importDefaultResult from "result";
+// Module 5408 (handlePostConnectionOpen)
+import importDefaultResult from "result" /* 5075 */;
 
 let obj = importDefault;
 class LowDiskTrim {
   constructor() {
     obj = Object.create(new.target.prototype);
-    LowDiskTrim = obj;
+    closure_0 = obj;
     obj.isLowDisk = false;
     obj.actions = {
       POST_CONNECTION_OPEN() {
             return obj.handlePostConnectionOpen();
           }
     };
-    addChangeListenerResult = __esModule.addChangeListener(() => obj.handleFileSystemStoreChanged());
+    addChangeListenerResult = closure_2.addChangeListener(() => obj.handleFileSystemStoreChanged());
     return obj;
   }
 }

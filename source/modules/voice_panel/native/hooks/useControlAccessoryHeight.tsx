@@ -1,15 +1,15 @@
-// Module ID: 16419
-// Function ID: 16420
+// Module ID: 16514
+// Function ID: 16515
 // Name: useControlAccessoryHeight
-// Dependencies: [19, 11439, 1367, 16387, 4115, 16392, 16276, 16391, 2]
+// Dependencies: [19, 11488, 1367, 16484, 4119, 16489, 16370, 16488, 2]
 // Exports: default
 
-// Module 16419 (useControlAccessoryHeight)
-import noop from "noop";
+// Module 16514 (useControlAccessoryHeight)
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
 let closure_4 = { code: "function useControlAccessoryHeightTsx1(){const{consoleStatusHeight,floatingCTAHeight}=this.__closure;return consoleStatusHeight.get()+floatingCTAHeight.get();}" };
-let result = require("useIsMobileVisualRefreshExperimentEnabled").fileFinishedImporting("modules/voice_panel/native/hooks/useControlAccessoryHeight.tsx");
+let result = require("set").fileFinishedImporting("modules/voice_panel/native/hooks/useControlAccessoryHeight.tsx");
 
 export default function useControlAccessoryHeight() {
   const channelId = sharedValue1.useContext(sharedValue(shouldShowFloatingCTA[1])).channelId;

@@ -5,25 +5,26 @@
 // Exports: close, crashedLastRun, flush, init, nativeCrash, withScope, wrap
 
 // Module 1180 (init)
-import noop from "noop";
+import NativeModules from "NativeModules" /* 1001 */;
+import closure_2 from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let fn = this;
 if (this) {
   fn = this.__awaiter;
 }
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
+    closure_0 = arg0;
+    closure_1 = arg1;
     let _Promise = arg2;
-    let closure_3 = arg3;
+    closure_3 = arg3;
     if (!arg2) {
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
+      closure_0 = arg0;
+      closure_1 = arg1;
       function fulfilled(arg0) {
         try {
           step(iter.next(arg0));
@@ -79,7 +80,7 @@ if (!fn) {
 let obj = { enableNativeCrashHandling: true, enableNativeNagger: true, autoInitializeNativeSdk: true, enableAutoPerformanceTracing: true, enableWatchdogTerminationTracking: true, patchGlobalPromise: true, sendClientReports: true, maxQueueSize: require("makeNativeTransport").DEFAULT_BUFFER_SIZE, attachStacktrace: true, enableCaptureFailedRequests: false, enableNdk: true, enableAppStartTracking: true, enableNativeFramesTracking: true, enableStallTracking: true, enableUserInteractionTracing: false, propagateTraceparent: false };
 
 export const init = function init(maxQueueSize) {
-  let obj = _require(url[2]);
+  obj = _require(url[2]);
   if (!obj.isRunningInMetroDevServer()) {
     maxQueueSize = maxQueueSize.maxQueueSize;
     if (null === maxQueueSize) {
@@ -168,7 +169,7 @@ export const init = function init(maxQueueSize) {
     if (null === transportOptions) {
       transportOptions = {};
     }
-    const obj1 = { bufferSize: null };
+    obj1 = { bufferSize: null };
     obj1[0] = maxQueueSize;
     obj[4] = Object.assign(Object.assign(merged1, transportOptions), obj1);
     obj[5] = maxQueueSize;
@@ -188,7 +189,7 @@ export const init = function init(maxQueueSize) {
         }
       }
       const data = tmpResult.data;
-      let url;
+      url = undefined;
       if (null !== data) {
         if (undefined !== data) {
           url = data.url;
@@ -247,7 +248,7 @@ export const init = function init(maxQueueSize) {
 };
 export const wrap = function wrap(displayName, profilerProps) {
   const _require = displayName;
-  const dependencyMap = profilerProps;
+  dependencyMap = profilerProps;
   profilerProps = undefined;
   if (null != profilerProps) {
     profilerProps = profilerProps.profilerProps;
@@ -261,7 +262,7 @@ export const wrap = function wrap(displayName, profilerProps) {
       str = displayName;
     }
   }
-  let noop = Object.assign(merged, { name: str, updateProps: {} });
+  closure_2 = Object.assign(merged, { name: str, updateProps: {} });
   if (obj.isWeb()) {
     let ReactNativeProfiler = tmp3(1135).Profiler;
   } else {
@@ -281,7 +282,7 @@ export const wrap = function wrap(displayName, profilerProps) {
   };
 };
 export const nativeCrash = function nativeCrash() {
-  const NATIVE = require(1001) /* NativeModules */.NATIVE;
+  const NATIVE = NativeModules.NATIVE;
   NATIVE.nativeCrash();
 };
 export const flush = function flush() {
@@ -293,11 +294,11 @@ export const flush = function flush() {
       if (arg0 === 1) {
         throw arg1;
       } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
+        obj = { value: null, done: true };
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -313,18 +314,18 @@ export const flush = function flush() {
             return obj;
           } else {
             const callback = tmp3;
-            let c3 = 1;
-            const client = outer1_0(817).getClient();
+            c3 = 1;
+            const client = closure_1_0(817).getClient();
             if (client) {
               dependencyMap = 2;
               c4 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = client.flush();
               return obj1;
             } else {
               c3 = 0;
             }
-            const obj6 = outer1_0(817);
+            const obj6 = closure_1_0(817);
           }
         } else if (1 === tmp7) {
           c3 = 0;
@@ -348,7 +349,7 @@ export const flush = function flush() {
         debug.error("Failed to flush the event queue.");
         c4 = 3;
       } catch (tmp13) {
-        let noop = tmp13;
+        closure_2 = tmp13;
         if (tmp4 === c3) {
           c4 = tmp2;
           throw tmp13;
@@ -368,11 +369,11 @@ export const close = function close() {
       if (arg0 === 1) {
         throw arg1;
       } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
+        obj = { value: null, done: true };
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -388,8 +389,8 @@ export const close = function close() {
             return obj;
           } else {
             const callback = tmp3;
-            let c3 = 1;
-            let obj1 = outer1_0(817);
+            c3 = 1;
+            obj1 = closure_1_0(817);
             const client = obj1.getClient();
             if (client) {
               dependencyMap = 2;
@@ -417,7 +418,7 @@ export const close = function close() {
         }
         c4 = 3;
       } catch (tmp15) {
-        let noop = tmp15;
+        closure_2 = tmp15;
         if (tmp4 === c3) {
           c4 = tmp2;
           throw tmp15;
@@ -434,7 +435,7 @@ export const withScope = function withScope(arg0) {
     try {
       return callback(arg0);
     } catch (tmp3) {
-      const debug = callback(outer1_1[6]).debug;
+      const debug = callback(closure_1_1[6]).debug;
       debug.error("Error while running withScope callback", tmp3);
     }
   });
@@ -448,11 +449,11 @@ export const crashedLastRun = function crashedLastRun() {
       if (arg0 === 1) {
         throw arg1;
       } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
+        obj = { value: null, done: true };
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -466,7 +467,7 @@ export const crashedLastRun = function crashedLastRun() {
           obj[0] = arg1;
           return obj;
         } else {
-          const NATIVE = v0(outer1_1[3]).NATIVE;
+          const NATIVE = v0(closure_1_1[3]).NATIVE;
           v0 = 3;
           obj = { value: null, done: true };
           obj[0] = NATIVE.crashedLastRun();

@@ -1,10 +1,12 @@
-// Module ID: 5837
-// Function ID: 5838
+// Module ID: 5868
+// Function ID: 5869
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5837 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftCardFan3dIllustration-2x.png.js");
+// Module 5868 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftCardFan3dIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/8a77bfe6e7f768d9c287f7e877d02c008d0f52fc50fc5133c61bca8f2286ff1e.png";
 export const metadata = { fileBytes: 171737 };

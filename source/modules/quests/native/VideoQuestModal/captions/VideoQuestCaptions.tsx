@@ -1,35 +1,34 @@
-// Module ID: 14497
-// Function ID: 14498
+// Module ID: 14565
+// Function ID: 14566
 // Name: VideoQuestCaptions
-// Dependencies: [19, 17, 21, 4661, 712, 689, 14498, 14500, 4725, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 689, 14566, 14568, 4730, 4739, 2]
 // Exports: VideoQuestCaptions
 
-// Module 14497 (VideoQuestCaptions)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "n";
+// Module 14565 (VideoQuestCaptions)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "n" /* 689 */;
 
 const require = arg1;
 createCacheKey = { container: null, captionBox: null, captionText: null };
-createCacheKey = { position: "absolute", bottom: require("Themes").space.PX_32, left: require("Themes").space.PX_16, right: require("Themes").space.PX_16, alignItems: "center", justifyContent: "flex-end" };
+createCacheKey = { position: "absolute", bottom: ThemesDefault.space.PX_32, left: ThemesDefault.space.PX_16, right: ThemesDefault.space.PX_16, alignItems: "center", justifyContent: "flex-end" };
 createCacheKey[0] = createCacheKey;
 let obj1 = { backgroundColor: null, padding: null, borderRadius: null, overflow: "hidden" };
-const importDefaultResultResult = require("n")(require("Themes").unsafe_rawColors.BLACK);
-obj1[0] = require("n")(require("Themes").unsafe_rawColors.BLACK).alpha(0.35).hex();
-obj1[1] = require("Themes").space.PX_8;
-obj1[2] = require("Themes").radii.sm;
+const importDefaultResultResult = importDefaultResult(ThemesDefault.unsafe_rawColors.BLACK);
+obj1[0] = importDefaultResult(ThemesDefault.unsafe_rawColors.BLACK).alpha(0.35).hex();
+obj1[1] = ThemesDefault.space.PX_8;
+obj1[2] = ThemesDefault.radii.sm;
 createCacheKey[1] = obj1;
-const alphaResult = require("n")(require("Themes").unsafe_rawColors.BLACK).alpha(0.35);
-createCacheKey[2] = { color: require("Themes").colors.WHITE, textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj2 = { color: require("Themes").colors.WHITE, textAlign: "center" };
-const result = require("jsxProd").fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VideoQuestCaptions.tsx");
+const alphaResult = importDefaultResult(ThemesDefault.unsafe_rawColors.BLACK).alpha(0.35);
+createCacheKey[2] = { color: ThemesDefault.colors.WHITE, textAlign: "center" };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const obj2 = { color: ThemesDefault.colors.WHITE, textAlign: "center" };
+const result = require("set").fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VideoQuestCaptions.tsx");
 
 export const VideoQuestCaptions = function VideoQuestCaptions(currentTime) {
-  let quest;
-  let style;
   currentTime = currentTime.currentTime;
   let flag = currentTime.visible;
   ({ quest, style } = currentTime);
@@ -37,7 +36,7 @@ export const VideoQuestCaptions = function VideoQuestCaptions(currentTime) {
     flag = true;
   }
   let captions;
-  const tmp = createCacheKey();
+  const tmp = callback();
   let obj = currentTime(captions[6]);
   const videoQuestCaptions = obj.useVideoQuestCaptions(quest);
   captions = videoQuestCaptions.captions;
@@ -62,7 +61,7 @@ export const VideoQuestCaptions = function VideoQuestCaptions(currentTime) {
       obj[0] = items1;
       obj = { style: null, blurTheme: "dark", blurStyle: "default", blurAmount: 0.2, children: null };
       obj[0] = tmp.captionBox;
-      const obj1 = { variant: "heading-sm/medium", style: null, children: null };
+      obj1 = { variant: "heading-sm/medium", style: null, children: null };
       obj1[1] = tmp.captionText;
       obj1[2] = memo.text;
       obj[4] = jsx(currentTime(tmp3[9]).Text, { variant: "heading-sm/medium", style: null, children: null });

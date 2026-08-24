@@ -1,33 +1,34 @@
-// Module ID: 10563
-// Function ID: 10564
+// Module ID: 10602
+// Function ID: 10603
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 4495, 4022, 1391, 4497, 4539, 676, 1398, 4661, 712, 10564, 6817, 4239, 647, 1627, 500, 1367, 4097, 8501, 2]
+// Dependencies: [19, 4499, 4025, 1391, 4501, 4544, 676, 1398, 4668, 712, 10603, 6854, 4243, 647, 1627, 500, 1367, 4100, 8540, 2]
 // Exports: default
 
-// Module 10563 (useChannelSafeAreaBottomStyles)
-import set from "set";
-import _handleConnectionOpen from "_handleConnectionOpen";
-import initialize from "initialize";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createRTCConnection from "createRTCConnection";
-import { InputModes } from "ME";
-import { StaticChannelRoute } from "set";
-import createCacheKey from "createCacheKey";
+// Module 10602 (useChannelSafeAreaBottomStyles)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "_handleConnectionOpen" /* 4499 */;
+import closure_5 from "initialize" /* 4025 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_8 from "createRTCConnection" /* 4544 */;
+import { InputModes } from "ME" /* 676 */;
+import { StaticChannelRoute } from "set" /* 1398 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_11 = { LURKER: "lurker", VOICE: "voice", CHAT: "chat", DIRECTORY: "directory", EXPRESSION_PICKER: "expression", MEDIA: "media", APPS: "apps", NONE: "none" };
 let closure_12 = createCacheKey.createStyles((backgroundColor) => {
   let obj = { lurker: null, chat: null, voice: null, expressionPickerBackground: null };
-  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOWER };
+  obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
   obj[0] = obj;
   obj[1] = { backgroundColor };
   obj[2] = { backgroundColor };
-  obj = { backgroundColor: importDefault(712).colors.MOBILE_KEYBOARD_GAP_BACKGROUND };
+  obj = { backgroundColor: ThemesDefault.colors.MOBILE_KEYBOARD_GAP_BACKGROUND };
   obj[3] = obj;
   return obj;
 });
-const result = require("initialize").fileFinishedImporting("modules/main_tabs_v2/native/channel/useChannelSafeAreaBottomStyles.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/channel/useChannelSafeAreaBottomStyles.tsx");
 
 export default function useChannelSafeAreaBottomStyles(arg0) {
   let obj = _require(stateFromStores[16]);
@@ -46,32 +47,32 @@ export default function useChannelSafeAreaBottomStyles(arg0) {
   stateFromStores = importDefault(stateFromStores[11])(arg0).needSubscriptionToAccess;
   React = importDefault(stateFromStores[12])();
   const obj4 = _require(stateFromStores[18]);
-  const items = [_handleConnectionOpen, ensureGuildLoaded, initialize, _detectH265HardwareDecode, createRTCConnection];
+  const items = [closure_4, closure_6, closure_5, closure_7, closure_8];
   stateFromStores = _require(stateFromStores[13]).useStateFromStores(items, () => {
-    const channel = outer1_6.getChannel(lib);
+    const channel = closure_1_6.getChannel(lib);
     if (channel != null) {
       const guildId = channel.getGuildId();
     }
-    if (lib !== outer1_10.GUILD_HOME) {
-      if (tmp !== outer1_10.ROLE_SUBSCRIPTIONS) {
+    if (lib !== closure_1_10.GUILD_HOME) {
+      if (tmp !== closure_1_10.ROLE_SUBSCRIPTIONS) {
         if (!stateFromStores) {
-          if (outer1_4.isConnected()) {
-            if (outer1_7.getMode() !== outer1_9.PUSH_TO_TALK) {
-              if (set === lib(stateFromStores[14]).KeyboardTypes.EXPRESSION) {
+          if (closure_1_4.isConnected()) {
+            if (closure_1_7.getMode() !== closure_1_9.PUSH_TO_TALK) {
+              if (closure_3 === lib(stateFromStores[14]).KeyboardTypes.EXPRESSION) {
                 let tmp10Result = tmp10(tmp11[15]);
                 if (tmp10Result.isAndroid()) {
-                  let VOICE = outer1_11.EXPRESSION_PICKER;
+                  let VOICE = closure_1_11.EXPRESSION_PICKER;
                 }
               }
-              if (set === lib(stateFromStores[14]).KeyboardTypes.MEDIA) {
+              if (closure_3 === lib(stateFromStores[14]).KeyboardTypes.MEDIA) {
                 tmp10Result = tmp10(tmp11[15]);
                 if (tmp10Result.isAndroid()) {
-                  VOICE = outer1_11.MEDIA;
+                  VOICE = closure_1_11.MEDIA;
                 }
               }
-              if (set === lib(stateFromStores[14]).KeyboardTypes.APP_LAUNCHER) {
+              if (closure_3 === lib(stateFromStores[14]).KeyboardTypes.APP_LAUNCHER) {
                 if (tmp10Result1.isAndroid()) {
-                  VOICE = outer1_11.APPS;
+                  VOICE = closure_1_11.APPS;
                 }
                 tmp10Result1 = tmp10(tmp11[15]);
               }
@@ -80,11 +81,11 @@ export default function useChannelSafeAreaBottomStyles(arg0) {
                 isDirectoryResult = channel.isDirectory();
               }
               if (true === isDirectoryResult) {
-                VOICE = outer1_11.DIRECTORY;
+                VOICE = closure_1_11.DIRECTORY;
               } else {
                 if (null != guildId) {
-                  if (outer1_5.isLurking(guildId)) {
-                    VOICE = outer1_11.LURKER;
+                  if (closure_1_5.isLurking(guildId)) {
+                    VOICE = closure_1_11.LURKER;
                   }
                 }
                 let isForumLikeChannelResult;
@@ -93,31 +94,31 @@ export default function useChannelSafeAreaBottomStyles(arg0) {
                 }
                 if (true === isForumLikeChannelResult) {
                   if (!closure_1) {
-                    VOICE = outer1_11.CHAT;
+                    VOICE = closure_1_11.CHAT;
                   }
                 }
                 if (null != tmp) {
-                  let NONE2 = outer1_11.CHAT;
+                  let NONE2 = closure_1_11.CHAT;
                 } else {
-                  NONE2 = outer1_11.NONE;
+                  NONE2 = closure_1_11.NONE;
                 }
               }
             }
-            VOICE = outer1_11.VOICE;
+            VOICE = closure_1_11.VOICE;
           } else if (null == tmp) {
-            let NONE = outer1_11.NONE;
+            let NONE = closure_1_11.NONE;
           } else {
-            NONE = outer1_11.CHAT;
+            NONE = closure_1_11.CHAT;
           }
         }
         return NONE;
       }
     }
-    NONE = outer1_11.NONE;
+    NONE = closure_1_11.NONE;
   });
   const items1 = [tmp2, gradientBottom, stateFromStores];
   return React.useMemo(() => {
-    if (stateFromStores !== outer1_11.NONE) {
+    if (stateFromStores !== closure_1_11.NONE) {
       if (tmp !== tmp2.DIRECTORY) {
         if (tmp !== tmp2.EXPRESSION_PICKER) {
           if (tmp !== tmp2.MEDIA) {

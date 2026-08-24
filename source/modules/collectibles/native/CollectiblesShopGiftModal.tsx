@@ -1,21 +1,19 @@
-// Module ID: 9591
-// Function ID: 9592
+// Module ID: 9628
+// Function ID: 9629
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 5301, 676, 21, 9592, 8939, 8932, 589, 7139, 7159, 1903, 5300, 4052, 9593, 1236, 9594, 11967, 11970, 2]
+// Dependencies: [19, 5306, 676, 21, 9629, 8976, 8969, 589, 7177, 7197, 1903, 5305, 4055, 9630, 1236, 9631, 12016, 12019, 2]
 // Exports: default
 
-// Module 9591 (CollectiblesShopGiftModal)
-import noop from "noop";
-import updateCategoriesAndProducts from "updateCategoriesAndProducts";
-import { COLLECTIBLES_APPLICATION_ID as closure_5 } from "ME";
-import { jsx } from "jsxProd";
+// Module 9628 (CollectiblesShopGiftModal)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "updateCategoriesAndProducts" /* 5306 */;
+import { COLLECTIBLES_APPLICATION_ID as closure_5 } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/collectibles/native/CollectiblesShopGiftModal.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesShopGiftModal.tsx");
 
 export default function CollectiblesShopGiftModal(skuId) {
-  let analyticsLocations;
-  let onGiftModalDismiss;
   skuId = skuId.skuId;
   ({ analyticsLocations, onGiftModalDismiss } = skuId);
   const giftingOrigin = skuId.giftingOrigin;
@@ -70,18 +68,13 @@ export default function CollectiblesShopGiftModal(skuId) {
       obj[5] = giftingOrigin;
       obj[6] = renderProductDetails;
       renderProductDetails = function renderProductDetails(arg0) {
-        let isValidRecipient;
-        let recipientUser;
         ({ recipientUser, isValidRecipient } = arg0);
-        return outer1_6(onGiftModalDismiss(giftingOrigin[16]), { product: skuId2, recipientUser, isValidRecipient, isGift: true });
+        return closure_1_6(onGiftModalDismiss(giftingOrigin[16]), { product: skuId2, recipientUser, isValidRecipient, isGift: true });
       };
       obj[7] = renderProductDetails;
       obj[8] = function renderPurchaseSection(arg0) {
-        let baseAnalyticsFields;
-        let giftOptions;
-        let isPurchaseDisabled;
         ({ isPurchaseDisabled, giftOptions, baseAnalyticsFields } = arg0);
-        return outer1_6(onGiftModalDismiss(giftingOrigin[17]), { product: skuId2, isPurchaseDisabled, giftOptions, baseAnalyticsFields, giftingOrigin, onGiftModalDismiss });
+        return closure_1_6(onGiftModalDismiss(giftingOrigin[17]), { product: skuId2, isPurchaseDisabled, giftOptions, baseAnalyticsFields, giftingOrigin, onGiftModalDismiss });
       };
       let tmp7Result = tmp7(tmp3, obj);
     } else {

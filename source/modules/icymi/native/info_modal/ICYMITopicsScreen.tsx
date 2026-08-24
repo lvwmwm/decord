@@ -1,61 +1,55 @@
-// Module ID: 15732
-// Function ID: 15733
+// Module ID: 15801
+// Function ID: 15802
 // Name: WordTopic
-// Dependencies: [5, 32, 19, 17, 15726, 15733, 21, 9430, 9899, 6883, 15734, 9904, 6871, 8005, 11112, 9832, 15735, 9428, 15737, 9431, 10445, 4661, 712, 4105, 4745, 1629, 1500, 15739, 2007, 9057, 4094, 1236, 589, 9065, 4734, 2]
+// Dependencies: [5, 32, 19, 17, 15795, 15802, 21, 9467, 9938, 6921, 15803, 9943, 6909, 8044, 11151, 9871, 15804, 9465, 15806, 9468, 10484, 4668, 712, 4108, 4750, 1629, 1500, 15808, 2008, 9094, 4097, 1236, 589, 9102, 4739, 2]
 // Exports: default
 
-// Module 15732 (WordTopic)
-import GuildPrimaryCategory from "GuildPrimaryCategory";
-import initialize from "initialize";
-import BicycleIcon from "BicycleIcon";
-import get_ActivityIndicator from "FoodIcon";
-import getPrimaryCategories from "getPrimaryCategories";
-import { GuildPrimaryCategory } from "GuildPrimaryCategory";
-import jsxProd from "createCacheKey";
-import createCacheKey from "createCacheKey";
+// Module 15801 (WordTopic)
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_8 from "getPrimaryCategories" /* 15795 */;
+import { GuildPrimaryCategory } from "GuildPrimaryCategory" /* 15802 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c10;
-let closure_12;
-let closure_6;
-let error;
-let unpackModuleId;
 const require = arg1;
 function WordTopic(categoryid) {
-  let importDefault;
-  let selected;
   categoryid = categoryid.categoryid;
   ({ selected, handlePress: importDefault } = categoryid);
   if (GuildPrimaryCategory.GAMING === categoryid) {
-    let tmp2 = callback2(categoryid(9430).GameControllerIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    let tmp2 = callback2(categoryid(9467).GameControllerIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.ENTERTAINMENT === categoryid) {
-    tmp2 = callback2(categoryid(9899).TvIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(9938).TvIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.GENERAL_CHATTING === categoryid) {
-    tmp2 = callback2(categoryid(6883).ForumIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(6921).ForumIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.SCIENCE_AND_TECH === categoryid) {
-    tmp2 = callback2(categoryid(15734).ScienceIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(15803).ScienceIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.MUSIC === categoryid) {
-    tmp2 = callback2(categoryid(9904).MusicIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(9943).MusicIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.EDUCATION === categoryid) {
-    tmp2 = callback2(categoryid(6871).BookCheckIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(6909).BookCheckIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.CREATIVE_ARTS === categoryid) {
-    tmp2 = callback2(categoryid(8005).PaintPaletteIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(8044).PaintPaletteIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.FINANCE === categoryid) {
-    tmp2 = callback2(categoryid(11112).PiggyBankIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(11151).PiggyBankIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.BOTS === categoryid) {
-    tmp2 = callback2(categoryid(9832).RobotIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(9871).RobotIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.SPORTS === categoryid) {
-    tmp2 = callback2(categoryid(15735).MedalIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(15804).MedalIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.TRAVEL_AND_FOOD === categoryid) {
-    tmp2 = callback2(categoryid(9428).FoodIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(9465).FoodIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.FASHION_AND_BEAUTY === categoryid) {
-    tmp2 = callback2(categoryid(15737).PaintbrushThinIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(15806).PaintbrushThinIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.FITNESS_AND_HEALTH === categoryid) {
-    tmp2 = callback2(categoryid(9431).BicycleIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(9468).BicycleIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (16 === categoryid) {
-    tmp2 = callback2(categoryid(10445).PencilSparkleIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(10484).PencilSparkleIcon, { size: "md", color: "redesign-button-tertiary-text" });
   }
-  let obj = categoryid(4105);
+  let obj = categoryid(4108);
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected });
   let tmp48Result = null;
   if (null != tmp2) {
@@ -72,7 +66,7 @@ function WordTopic(categoryid) {
       return callback(categoryid);
     };
     obj[5] = tmp2;
-    tmp48Result = callback2(categoryid(4745).Button, obj);
+    tmp48Result = callback2(categoryid(4750).Button, obj);
     const tmp48 = callback2;
   }
   return tmp48Result;
@@ -80,31 +74,31 @@ function WordTopic(categoryid) {
 ({ View: closure_6, ScrollView: error, StyleSheet } = get_ActivityIndicator);
 ({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
 createCacheKey = { container: null, footer: null, title: null, subtitle: null, separator: null, topicsContainer: null, scrollContentContainer: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, flex: 1 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { position: "absolute", bottom: 0, left: require("Themes").space.PX_24, right: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_8 };
-let obj1 = { position: "absolute", bottom: 0, left: require("Themes").space.PX_24, right: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_8 };
-createCacheKey[2] = { marginTop: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_8, marginHorizontal: require("Themes").space.PX_24 };
-let obj2 = { marginTop: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_8, marginHorizontal: require("Themes").space.PX_24 };
-createCacheKey[3] = { marginBottom: require("Themes").space.PX_24, marginHorizontal: require("Themes").space.PX_24 };
-let obj3 = { marginBottom: require("Themes").space.PX_24, marginHorizontal: require("Themes").space.PX_24 };
-createCacheKey[4] = { height: StyleSheet.hairlineWidth, width: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-let obj4 = { height: StyleSheet.hairlineWidth, width: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-createCacheKey[5] = { flex: 1, marginHorizontal: require("Themes").space.PX_16, flexWrap: "wrap", flexDirection: "row", gap: require("Themes").space.PX_12 };
-let obj5 = { flex: 1, marginHorizontal: require("Themes").space.PX_16, flexWrap: "wrap", flexDirection: "row", gap: require("Themes").space.PX_12 };
-createCacheKey[6] = { paddingTop: require("Themes").space.PX_24 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj6 = { paddingTop: require("Themes").space.PX_24 };
-let result = require("noop").fileFinishedImporting("modules/icymi/native/info_modal/ICYMITopicsScreen.tsx");
+createCacheKey[1] = { position: "absolute", bottom: 0, left: ThemesDefault.space.PX_24, right: ThemesDefault.space.PX_24, paddingBottom: ThemesDefault.space.PX_8 };
+let obj1 = { position: "absolute", bottom: 0, left: ThemesDefault.space.PX_24, right: ThemesDefault.space.PX_24, paddingBottom: ThemesDefault.space.PX_8 };
+createCacheKey[2] = { marginTop: ThemesDefault.space.PX_24, marginBottom: ThemesDefault.space.PX_8, marginHorizontal: ThemesDefault.space.PX_24 };
+let obj2 = { marginTop: ThemesDefault.space.PX_24, marginBottom: ThemesDefault.space.PX_8, marginHorizontal: ThemesDefault.space.PX_24 };
+createCacheKey[3] = { marginBottom: ThemesDefault.space.PX_24, marginHorizontal: ThemesDefault.space.PX_24 };
+let obj3 = { marginBottom: ThemesDefault.space.PX_24, marginHorizontal: ThemesDefault.space.PX_24 };
+createCacheKey[4] = { height: StyleSheet.hairlineWidth, width: "100%", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+let obj4 = { height: StyleSheet.hairlineWidth, width: "100%", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+createCacheKey[5] = { flex: 1, marginHorizontal: ThemesDefault.space.PX_16, flexWrap: "wrap", flexDirection: "row", gap: ThemesDefault.space.PX_12 };
+let obj5 = { flex: 1, marginHorizontal: ThemesDefault.space.PX_16, flexWrap: "wrap", flexDirection: "row", gap: ThemesDefault.space.PX_12 };
+createCacheKey[6] = { paddingTop: ThemesDefault.space.PX_24 };
+let closure_13 = createCacheKey.createStyles(createCacheKey);
+let obj6 = { paddingTop: ThemesDefault.space.PX_24 };
+let result = require("set").fileFinishedImporting("modules/icymi/native/info_modal/ICYMITopicsScreen.tsx");
 
 export default function ICYMITopicsScreen() {
-  const tmp = createCacheKey();
-  const bottom = importDefault(1629)().bottom;
+  const tmp = callback3();
+  const bottom = useSafeAreaInsetsDefault().bottom;
   const tmp4 = callback(React.useState(new Set()), 2);
   const first = tmp4[0];
   importDefault = tmp4[1];
   const tmp6 = callback(React.useState(false), 2);
-  const dependencyMap = tmp6[1];
+  dependencyMap = tmp6[1];
   let obj = first(1500);
   const navigation = obj.useNavigation();
   const items = [navigation, first];
@@ -120,7 +114,7 @@ export default function ICYMITopicsScreen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -135,13 +129,13 @@ export default function ICYMITopicsScreen() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp4;
-            let closure_0 = tmp4;
+            closure_1 = tmp4;
+            closure_0 = tmp4;
             v0(true);
             v0 = 1;
             arr = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_0(v0[28])(v0[27], v0.paths);
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_0(v0[28])(v0[27], v0.paths);
             return obj1;
           }
         } else if (1 === tmp4) {
@@ -154,7 +148,7 @@ export default function ICYMITopicsScreen() {
             obj2[0] = arg1;
             return obj2;
           } else {
-            let obj3 = outer1_1(v0[29]);
+            let obj3 = closure_1_1(v0[29]);
             const _Array = Array;
             v0 = 2;
             arr = 1;
@@ -174,10 +168,10 @@ export default function ICYMITopicsScreen() {
           if (arg1) {
             arr = arr.push("join_guilds");
           } else {
-            obj = outer1_1(v0[30]);
+            obj = closure_1_1(v0[30]);
             const obj5 = { key: "ICYMIInfoModal", content: null };
-            const intl = outer1_0(v0[31]).intl;
-            obj5[1] = intl.string(outer1_0(v0[31]).t.CG4Hks);
+            const intl = closure_1_0(v0[31]).intl;
+            obj5[1] = intl.string(closure_1_0(v0[31]).t.CG4Hks);
             obj.open(obj5);
           }
           const _setTimeout = setTimeout;
@@ -190,8 +184,8 @@ export default function ICYMITopicsScreen() {
       }
     }
   }), items);
-  let obj1 = first(589);
-  const items1 = [getPrimaryCategories];
+  obj1 = first(589);
+  const items1 = [closure_8];
   const stateFromStoresArray = obj1.useStateFromStoresArray(items1, () => allCategories.getAllCategories());
   const items2 = [first];
   callback = React.useCallback((categoryId) => {
@@ -212,11 +206,11 @@ export default function ICYMITopicsScreen() {
   obj = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
   let intl = first(1236).intl;
   obj[3] = intl.string(first(1236).t.Y5d99L);
-  const children = [callback2(first(4734).Text, obj), , , , ];
+  const children = [callback2(first(4739).Text, obj), , , , ];
   obj = { variant: "text-sm/normal", color: "text-muted", style: tmp.subtitle, children: null };
   const intl2 = first(1236).intl;
   obj[3] = intl2.string(first(1236).t.MGZsfv);
-  children[1] = callback2(first(4734).Text, obj);
+  children[1] = callback2(first(4739).Text, obj);
   obj1 = { style: tmp.separator };
   children[2] = callback2(closure_6, obj1);
   let obj2 = { showsVerticalScrollIndicator: false, style: tmp.container, contentContainerStyle: tmp.scrollContentContainer, contentInset: obj3, children: null };
@@ -225,7 +219,7 @@ export default function ICYMITopicsScreen() {
   const tmp10 = closure_12;
   const tmp11 = closure_11;
   const tmp13 = closure_6;
-  obj2[4] = callback2(closure_6, { style: tmp.topicsContainer, children: stateFromStoresArray.map((categoryId) => outer1_10(outer1_14, { selected: first.has(categoryId.categoryId), topic: categoryId.name, categoryid: categoryId.categoryId, handlePress: initialize }, categoryId.categoryId)) });
+  obj2[4] = callback2(closure_6, { style: tmp.topicsContainer, children: stateFromStoresArray.map((categoryId) => closure_1_10(closure_1_14, { selected: first.has(categoryId.categoryId), topic: categoryId.name, categoryid: categoryId.categoryId, handlePress: closure_4 }, categoryId.categoryId)) });
   children[3] = callback2(closure_7, obj2);
   let tmp12Result = first.size > 0;
   if (tmp12Result) {
@@ -239,7 +233,7 @@ export default function ICYMITopicsScreen() {
     const intl3 = tmp7(1236).intl;
     obj7[2] = intl3.string(tmp7(1236).t.PDTjLN);
     obj7[3] = callback;
-    obj5[1] = tmp12(tmp7(4745).Button, obj7);
+    obj5[1] = tmp12(tmp7(4750).Button, obj7);
     tmp12Result = tmp12(tmp13, obj5);
   }
   children[4] = tmp12Result;

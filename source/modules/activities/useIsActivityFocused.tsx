@@ -1,25 +1,26 @@
-// Module ID: 8679
-// Function ID: 8680
+// Module ID: 8716
+// Function ID: 8717
 // Name: useIsActivityFocused
-// Dependencies: [4773, 1390, 4777, 589, 2]
+// Dependencies: [4778, 1390, 4782, 589, 2]
 // Exports: default, isActivityFocused
 
-// Module 8679 (useIsActivityFocused)
-import getParticipants from "getParticipants";
-import participantFromServer from "participantFromServer";
+// Module 8716 (useIsActivityFocused)
+import sortKey from "sortKey" /* 4782 */;
+import closure_2 from "getParticipants" /* 4778 */;
+import closure_3 from "participantFromServer" /* 1390 */;
 
-const require = arg1;
-const result = require("sortKey").fileFinishedImporting("modules/activities/useIsActivityFocused.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/activities/useIsActivityFocused.tsx");
 
 export default function useIsActivityFocused(arg0) {
   const _require = arg0;
-  const items = [getParticipants, participantFromServer];
+  const items = [closure_2, closure_3];
   return _require(589).useStateFromStores(items, () => {
-    const selectedParticipant = outer1_2.getSelectedParticipant(callback);
-    const currentEmbeddedActivity = outer1_3.getCurrentEmbeddedActivity();
+    const selectedParticipant = closure_1_2.getSelectedParticipant(callback);
+    const currentEmbeddedActivity = closure_1_3.getCurrentEmbeddedActivity();
     let tmp3 = null != selectedParticipant && null != currentEmbeddedActivity;
     if (tmp3) {
-      let obj = callback(outer1_1[2]);
+      let obj = callback(closure_1_1[2]);
       obj = { applicationId: null, instanceId: null };
       obj[0] = currentEmbeddedActivity.applicationId;
       let compositeInstanceId;
@@ -33,14 +34,12 @@ export default function useIsActivityFocused(arg0) {
   });
 };
 export const isActivityFocused = function isActivityFocused(channelId) {
-  let ChannelRTCStore;
-  let EmbeddedActivitiesStore;
   ({ ChannelRTCStore, EmbeddedActivitiesStore } = channelId);
   const selectedParticipant = ChannelRTCStore.getSelectedParticipant(channelId.channelId);
   const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
   let tmp3 = null != selectedParticipant && null != currentEmbeddedActivity;
   if (tmp3) {
-    let obj = require(4777) /* sortKey */;
+    let obj = sortKey;
     obj = { applicationId: null, instanceId: null };
     obj[0] = currentEmbeddedActivity.applicationId;
     let compositeInstanceId;

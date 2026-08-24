@@ -7,9 +7,6 @@
 const require = arg1;
 const dependencyMap = arg6;
 function applyClientOptions(environment, environment2) {
-  let dist;
-  let maxValueLength;
-  let release;
   ({ release, dist, maxValueLength } = environment2);
   let DEFAULT_ENVIRONMENT = environment.environment || environment2.environment;
   if (!DEFAULT_ENVIRONMENT) {
@@ -51,8 +48,8 @@ function applyClientOptions(environment, environment2) {
       if (values != null) {
         const item = values.forEach((value) => {
           if (value.value) {
-            value.value = maxValueLength(outer1_1[5]).truncate(value.value, maxValueLength);
-            const obj = maxValueLength(outer1_1[5]);
+            value.value = maxValueLength(closure_1_1[5]).truncate(value.value, maxValueLength);
+            const obj = maxValueLength(closure_1_1[5]);
           }
         });
       }
@@ -121,8 +118,6 @@ arg5.applyDebugMeta = function applyDebugMeta(exception) {
     const _Object = Object;
     const entries = Object.entries(obj);
     const item1 = entries.forEach((arg0) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg0;
     });
   }
@@ -237,6 +232,7 @@ arg5.prepareEvent = function prepareEvent(normalizeDepth, event_id, event_id2, c
     return result2.then((exception) => {
       if (exception) {
         let obj = {};
+        let callback = obj;
         exception = exception.exception;
         if (exception != null) {
           const values = exception.values;
@@ -273,17 +269,15 @@ arg5.prepareEvent = function prepareEvent(normalizeDepth, event_id, event_id2, c
           const _Object2 = Object;
           const entries = Object.entries(obj);
           const item1 = entries.forEach((arg0) => {
-            let tmp;
-            let tmp2;
             [tmp, tmp2] = arg0;
           });
         }
       }
       let tmp6 = exception;
-      if (typeof obj === "number") {
+      if (typeof callback === "number") {
         tmp6 = exception;
         if (tmp5 > 0) {
-          obj = tmp5;
+          callback = tmp5;
           let tmp32 = null;
           if (exception) {
             obj = {};
@@ -298,9 +292,9 @@ arg5.prepareEvent = function prepareEvent(normalizeDepth, event_id, event_id2, c
                 data = data.data;
                 if (data) {
                   obj = { data: null };
-                  obj[0] = obj(arr[7]).normalize(data.data, obj, arr);
+                  obj[0] = callback(arr[7]).normalize(data.data, callback, arr);
                   data = obj;
-                  const obj3 = obj(arr[7]);
+                  const obj3 = callback(arr[7]);
                 }
                 const merged1 = Object.assign(data);
                 return obj;
@@ -310,7 +304,7 @@ arg5.prepareEvent = function prepareEvent(normalizeDepth, event_id, event_id2, c
             let merged1 = Object.assign(breadcrumbs);
             let user = exception.user;
             if (user) {
-              const obj1 = { user: null };
+              obj1 = { user: null };
               obj1[0] = callback(num2[7]).normalize(exception.user, tmp5, tmp35);
               user = obj1;
               const obj5 = callback(num2[7]);
@@ -355,9 +349,9 @@ arg5.prepareEvent = function prepareEvent(normalizeDepth, event_id, event_id2, c
                 data = data.data;
                 if (data) {
                   obj = { data: null };
-                  obj[0] = obj(arr[7]).normalize(data.data, obj, arr);
+                  obj[0] = callback(arr[7]).normalize(data.data, callback, arr);
                   data = obj;
-                  const obj3 = obj(arr[7]);
+                  const obj3 = callback(arr[7]);
                 }
                 const merged1 = Object.assign(data);
                 return obj;

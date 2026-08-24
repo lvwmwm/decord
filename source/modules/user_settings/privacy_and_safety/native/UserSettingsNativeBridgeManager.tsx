@@ -1,16 +1,20 @@
-// Module ID: 17044
-// Function ID: 17045
+// Module ID: 17137
+// Function ID: 17138
 // Name: prototype
-// Dependencies: [17, 1340, 5038, 500, 2]
+// Dependencies: [17, 1340, 5043, 500, 2]
 
-// Module 17044 (prototype)
-import { NativeModules } from "get ActivityIndicator";
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import "initialize";
+// Module 17137 (prototype)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import set2 from "set" /* 500 */;
+import initializeDefault from "initialize" /* 5043 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
 
+const NativeModules = get_ActivityIndicator.NativeModules;
+initializeDefault;
 let prototype = function UserSettingsNativeBridgeManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.saveExplicitContentSettingsToDisk = require(500) /* set */.isIOS() ? (() => {
+  applyArgumentsResult.saveExplicitContentSettingsToDisk = set2.isIOS() ? (() => {
     settings = settings.settings;
     if (settings != null) {
       const textAndImages = settings.textAndImages;
@@ -32,6 +36,6 @@ let prototype = function UserSettingsNativeBridgeManager() {
 class prototype extends tmp2 {
 }
 prototype = new prototype();
-let result = require("initialize").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/UserSettingsNativeBridgeManager.tsx");
+let result = set.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/UserSettingsNativeBridgeManager.tsx");
 
 export default prototype;

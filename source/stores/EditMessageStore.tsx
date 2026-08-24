@@ -1,20 +1,25 @@
-// Module ID: 7435
-// Function ID: 7436
+// Module ID: 7473
+// Function ID: 7474
 // Name: initialize
-// Dependencies: [4994, 4066, 7436, 7439, 589, 709, 2]
+// Dependencies: [4999, 4069, 7474, 7477, 589, 709, 2]
 
-// Module 7435 (initialize)
-import reinjectEphemerals from "reinjectEphemerals";
-import { Store } from "initialize";
+// Module 7473 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import rebuildDefault from "rebuild" /* 7474 */;
+import createEmptyState from "createEmptyState" /* 7477 */;
+import closure_3 from "reinjectEphemerals" /* 4999 */;
 
-const require = arg1;
+require = arg1;
 let closure_4 = {};
 let closure_5 = {};
+const Store = initializeDefault.Store;
 class EditMessageStore extends Store {
 }
 const prototype = EditMessageStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(reinjectEphemerals);
+  this.waitFor(closure_3);
 };
 prototype["isEditing"] = function isEditing(arg0, arg1) {
   let messageId;
@@ -57,27 +62,23 @@ prototype["getEditingMessage"] = function getEditingMessage(id) {
   }
   return message;
 };
-prototype["getEditActionSource"] = function getEditActionSource(outer1_0) {
-  return table[outer1_0];
+prototype["getEditActionSource"] = function getEditActionSource(closure_1_0) {
+  return table[closure_1_0];
 };
 EditMessageStore.displayName = "EditMessageStore";
-const editMessageStore = new EditMessageStore(require("dispatcher"), {
+const editMessageStore = new EditMessageStore(dispatcherDefault, {
   MESSAGE_START_EDIT: function handleMessageStartEdit(arg0) {
-    let channelId;
-    let content;
-    let messageId;
-    let source;
     ({ channelId, content } = arg0);
     ({ messageId, source } = arg0);
-    const UseLegacyChatInput = require(4066) /* explicitContentFromProto */.UseLegacyChatInput;
+    const UseLegacyChatInput = explicitContentFromProto.UseLegacyChatInput;
     const setting = UseLegacyChatInput.getSetting();
-    let obj = importDefault(7436);
+    let obj = rebuildDefault;
     const unparseResult = obj.unparse(content, channelId);
     obj = { channelId, messageId, textValue: unparseResult, richValue: null };
     if (setting) {
       content = unparseResult;
     }
-    obj[3] = require(7439) /* createEmptyState */.toRichValue(content);
+    obj[3] = createEmptyState.toRichValue(content);
     closure_4[channelId] = obj;
     closure_5[channelId] = source;
   },
@@ -114,10 +115,10 @@ const editMessageStore = new EditMessageStore(require("dispatcher"), {
     }
   },
   LOGOUT: function handleLogout() {
-    let closure_4 = {};
-    let closure_5 = {};
+    closure_4 = {};
+    closure_5 = {};
   }
 });
-const result = require("rebuild").fileFinishedImporting("stores/EditMessageStore.tsx");
+const result = require("set").fileFinishedImporting("stores/EditMessageStore.tsx");
 
 export default editMessageStore;

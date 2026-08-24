@@ -1,17 +1,17 @@
-// Module ID: 7254
-// Function ID: 7255
+// Module ID: 7292
+// Function ID: 7293
 // Name: unpackStageChannelParty
-// Dependencies: [32, 1218, 1391, 1910, 4990, 4978, 676, 2]
+// Dependencies: [32, 1218, 1391, 1910, 4995, 4983, 676, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 7254 (unpackStageChannelParty)
-import _slicedToArray from "_slicedToArray";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import buildStageChannelUserRoles from "buildStageChannelUserRoles";
-import { STAGE_APPLICATION_ID } from "MAX_STAGE_TOPIC_LENGTH";
-import { GuildFeatures } from "ME";
+// Module 7292 (unpackStageChannelParty)
+import closure_0 from "_slicedToArray" /* 32 */;
+import closure_1 from "fetchFingerprint" /* 1218 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "buildStageChannelUserRoles" /* 4995 */;
+import { STAGE_APPLICATION_ID } from "MAX_STAGE_TOPIC_LENGTH" /* 4983 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
 function unpackStageChannelParty(c17) {
   if (null != c17) {
@@ -40,7 +40,7 @@ function unpackStageChannelParty(c17) {
   }
 }
 let c7 = "stage:";
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/stage_channels/StageChannelRichPresenceUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/StageChannelRichPresenceUtils.tsx");
 
 export const packStageChannelPartyId = function packStageChannelPartyId(channel, stageInstanceByChannel) {
   let num = 0;

@@ -1,11 +1,13 @@
-// Module ID: 8428
-// Function ID: 8429
+// Module ID: 8467
+// Function ID: 8468
 // Name: getDisplayFilename
 // Dependencies: [2]
 // Exports: default
 
-// Module 8428 (getDisplayFilename)
-const result = require("set").fileFinishedImporting("modules/messages/getDisplayFilename.tsx");
+// Module 8467 (getDisplayFilename)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/messages/getDisplayFilename.tsx");
 
 export default function getDisplayFilename(title) {
   if (null != title.title) {

@@ -1,39 +1,43 @@
-// Module ID: 14325
-// Function ID: 14326
+// Module ID: 14393
+// Function ID: 14394
 // Name: PlayStationTwoWayLinkUpsell
-// Dependencies: [19, 676, 21, 4661, 1993, 14323, 1236, 5449, 14326, 1377, 9780, 2]
+// Dependencies: [19, 676, 21, 4668, 1994, 14391, 1236, 5454, 14394, 1377, 9819, 2]
 // Exports: PlayStationTwoWayLinkUpsell
 
-// Module 14325 (PlayStationTwoWayLinkUpsell)
-import "noop";
-import ME from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14393 (PlayStationTwoWayLinkUpsell)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import DismissibleContent from "DismissibleContent" /* 1377 */;
+import combinedDefault from "combined" /* 1994 */;
+import preloadDefault from "preload" /* 5454 */;
+import OneWayToTwoWayNewTag from "OneWayToTwoWayNewTag" /* 14391 */;
+import registerAssetDefault from "registerAsset" /* 14394 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ HelpdeskArticles: c3, AnalyticsLocations: c4, PlatformTypes: c5 } = ME);
 let closure_7 = createCacheKey.createStyles({ upsellImage: { alignSelf: "center", width: 84, marginLeft: 16 } });
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationTwoWayLinkUpsell.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationTwoWayLinkUpsell.tsx");
 
 export const PlayStationTwoWayLinkUpsell = function PlayStationTwoWayLinkUpsell() {
-  let obj = importDefault(1993);
+  let obj = combinedDefault;
   const articleURL = obj.getArticleURL(constants.PS_CONNECTION);
   obj = { title: null, body: null, img: null, newIndicatorDismissibleContent: null, onPress: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.v20wwm);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.format(require(1236) /* getSystemLocale */.t.lTZBit, { help_article: articleURL });
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.v20wwm);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.format(getSystemLocale.t.lTZBit, { help_article: articleURL });
   obj = { style: callback().upsellImage, source: null, resizeMode: "contain" };
   const tmp = callback();
-  obj[1] = importDefault(14326);
-  obj[2] = jsx(importDefault(5449), { style: callback().upsellImage, source: null, resizeMode: "contain" });
-  obj[3] = require(1377) /* DismissibleContent */.DismissibleContent.PS_ONE_WAY_RECONNECT;
+  obj[1] = registerAssetDefault;
+  obj[2] = jsx(preloadDefault, { style: callback().upsellImage, source: null, resizeMode: "contain" });
+  obj[3] = DismissibleContent.DismissibleContent.PS_ONE_WAY_RECONNECT;
   obj[4] = function onPress() {
     const items = [constants.RELINK_UPSELL];
     return callback(table[10]).showModal(items, constants2.PLAYSTATION);
   };
-  return jsx(require(14323) /* OneWayToTwoWayNewTag */.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage, source: null, resizeMode: "contain" });
+  return jsx(OneWayToTwoWayNewTag.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage, source: null, resizeMode: "contain" });
 };

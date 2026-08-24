@@ -1,21 +1,21 @@
-// Module ID: 10873
-// Function ID: 10874
+// Module ID: 10912
+// Function ID: 10913
 // Name: _addOrUpdateSavedMessage
-// Dependencies: [5, 10850, 676, 8484, 8479, 8482, 7159, 10874, 10875, 4827, 1236, 8488, 8489, 4094, 8074, 4338, 10876, 2]
+// Dependencies: [5, 10889, 676, 8523, 8518, 8521, 7197, 10913, 10914, 4832, 1236, 8527, 8528, 4097, 8113, 4342, 10915, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 10873 (_addOrUpdateSavedMessage)
-import EntitlementFeatureNames from "EntitlementFeatureNames";
-import getTimeSafe from "getTimeSafe";
-import { AbortCodes } from "ME";
+// Module 10912 (_addOrUpdateSavedMessage)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "getTimeSafe" /* 10889 */;
+import { AbortCodes } from "ME" /* 676 */;
 
 const require = arg1;
 function _addOrUpdateSavedMessage() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
       if (savedMessage === 2) {
         savedMessage = 3;
@@ -28,7 +28,7 @@ function _addOrUpdateSavedMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -43,7 +43,7 @@ function _addOrUpdateSavedMessage() {
               obj[0] = arg1;
               return obj;
             } else {
-              let dependencyMap = tmp5;
+              dependencyMap = tmp5;
               let lib = tmp2;
               let displayToast;
               lib = undefined;
@@ -68,14 +68,14 @@ function _addOrUpdateSavedMessage() {
               } else {
                 if (null == savedMessage.getSavedMessage(lib.channelId, lib.messageId)) {
                   if (!obj10.hasForLaterAccess("addOrUpdateSavedMessage")) {
-                    let items = [lib(7159).FOR_LATER_ROADBLOCK];
-                    lib(8479)(displayToast(8482).EntitlementFeatureNames.SAVED_MESSAGES, undefined, items);
+                    let items = [lib(7197).FOR_LATER_ROADBLOCK];
+                    lib(8518)(displayToast(8521).EntitlementFeatureNames.SAVED_MESSAGES, undefined, items);
                     savedMessage = 3;
-                    const tmp36 = lib(8479);
+                    const tmp36 = lib(8518);
                   }
-                  obj10 = displayToast(8484);
+                  obj10 = displayToast(8523);
                 }
-                let obj3 = displayToast(10874);
+                let obj3 = displayToast(10913);
                 BookmarkIcon = 2;
                 savedMessage = 1;
                 obj3 = { value: null, done: false };
@@ -87,8 +87,8 @@ function _addOrUpdateSavedMessage() {
                       code = body.code;
                     }
                   }
-                  if (code === outer1_5.TOO_MANY_SAVED_MESSAGES) {
-                    const displayToast = tmp5;
+                  if (code === closure_1_5.TOO_MANY_SAVED_MESSAGES) {
+                    closure_0 = tmp5;
                     let obj = displayToast(_undefined[3]);
                     if (obj.isForLaterLimitUpgradable("addOrUpdateSavedMessage")) {
                       let tmp8Result = tmp8(tmp7[8]);
@@ -109,8 +109,8 @@ function _addOrUpdateSavedMessage() {
                       const intl5 = tmp6(tmp7[10]).intl;
                       obj[3] = intl5.string(tmp6(tmp7[10]).t.ZGbTcy);
                       obj[4] = function onCancel() {
-                        const SavedMessageSortTypes = tmp5(outer1_2[12]).SavedMessageSortTypes;
-                        return tmp5(outer1_2[11]).showForLaterModal(tmp5 ? SavedMessageSortTypes.REMINDER : SavedMessageSortTypes.BOOKMARK);
+                        const SavedMessageSortTypes = callback(closure_1_2[12]).SavedMessageSortTypes;
+                        return callback(closure_1_2[11]).showForLaterModal(callback ? SavedMessageSortTypes.REMINDER : SavedMessageSortTypes.BOOKMARK);
                       };
                       tmp8Result.show(obj);
                       const tmp6Result = tmp6(tmp7[3]);
@@ -118,7 +118,7 @@ function _addOrUpdateSavedMessage() {
                     }
                     return null;
                   } else {
-                    const obj1 = { key: "SAVED_MESSAGE_CREATE_ERROR", IconComponent: null, content: null };
+                    obj1 = { key: "SAVED_MESSAGE_CREATE_ERROR", IconComponent: null, content: null };
                     obj1[1] = displayToast(_undefined[14]).CircleErrorIcon;
                     let message;
                     if (body != null) {
@@ -153,11 +153,11 @@ function _addOrUpdateSavedMessage() {
                   }
                   dependencyMap = stringResult;
                   if (null != lib.dueAt) {
-                    BookmarkIcon = displayToast(4338).ClockIcon;
+                    BookmarkIcon = displayToast(4342).ClockIcon;
                   } else {
-                    BookmarkIcon = displayToast(10876).BookmarkIcon;
+                    BookmarkIcon = displayToast(10915).BookmarkIcon;
                   }
-                  obj = lib(4094);
+                  obj = lib(4097);
                   const obj4 = { key: "SAVED_MESSAGE_CREATE_SUCCESS", IconComponent: null, content: null };
                   obj4[1] = BookmarkIcon;
                   obj4[2] = dependencyMap;
@@ -179,7 +179,7 @@ function _addOrUpdateSavedMessage() {
     iter.next();
     return iter;
   });
-  const _addOrUpdateSavedMessage = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -191,12 +191,10 @@ function _addOrUpdateSavedMessage() {
 function _removeSavedMessage() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
       if (c4 === 2) {
         c4 = 3;
         HermesBuiltin.throwTypeError();
@@ -208,7 +206,7 @@ function _removeSavedMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -223,7 +221,7 @@ function _removeSavedMessage() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_2 = tmp5;
+              closure_2 = tmp5;
               let callback2 = tmp2;
               let callback;
               callback2 = undefined;
@@ -251,8 +249,8 @@ function _removeSavedMessage() {
               c4 = 1;
               obj3 = { value: null, done: false };
               obj3[0] = obj3.deleteSavedMessage(closure_2).catch((body) => {
-                let obj = _undefined2(4094);
-                obj = { key: "SAVED_MESSAGE_REMOVE_ERROR", IconComponent: _undefined(8074).CircleErrorIcon, content: null };
+                let obj = _undefined2(4097);
+                obj = { key: "SAVED_MESSAGE_REMOVE_ERROR", IconComponent: _undefined(8113).CircleErrorIcon, content: null };
                 let message;
                 if (body != null) {
                   body = body.body;
@@ -305,7 +303,7 @@ function _removeSavedMessage() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp45) {
           c4 = tmp;
@@ -316,7 +314,7 @@ function _removeSavedMessage() {
     iter.next();
     return iter;
   });
-  const _removeSavedMessage = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -325,7 +323,7 @@ function _removeSavedMessage() {
   }
   return applyArgumentsResult;
 }
-const result = require("ME").fileFinishedImporting("modules/saved_messages/SavedMessageHelpers.native.tsx");
+const result = require("set").fileFinishedImporting("modules/saved_messages/SavedMessageHelpers.native.tsx");
 
 export const addOrUpdateSavedMessage = function addOrUpdateSavedMessage(arg0) {
   const self = this;

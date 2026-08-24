@@ -4,8 +4,8 @@
 // Dependencies: [106, 65]
 
 // Module 434 (__INTERNAL_VIEW_CONFIG)
-import weakSet from "weakSet";
-import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+import weakSet from "weakSet" /* 106 */;
+import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
 let obj = { uiViewClassName: "VirtualView", directEventTypes: { topModeChange: { registrationName: "onModeChange" } }, validAttributes: null };
 obj = { initialHidden: true, removeClippedSubviews: true, renderState: true };

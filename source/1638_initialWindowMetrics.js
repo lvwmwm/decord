@@ -4,7 +4,7 @@
 // Dependencies: [1639]
 
 // Module 1638 (initialWindowMetrics)
-import importDefaultResult from "RNCSafeAreaContext";
+import importDefaultResult from "RNCSafeAreaContext" /* 1639 */;
 
 let initialWindowMetrics;
 if (importDefaultResult != null) {

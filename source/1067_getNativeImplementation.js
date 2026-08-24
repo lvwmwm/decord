@@ -4,13 +4,16 @@
 // Dependencies: [1039, 817, 1035]
 
 // Module 1067 (getNativeImplementation)
-const require = arg1;
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+import WINDOW from "WINDOW" /* 1039 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function getNativeImplementation(fetch) {
   if (table[fetch]) {
     return tmp6;
   } else {
-    const tmp9 = require(1039) /* WINDOW */.WINDOW[fetch];
+    const tmp9 = WINDOW.WINDOW[fetch];
     let obj = tmp9;
     if (obj2.isNativeFunction(tmp9)) {
       const bindResult = obj.bind(tmp7(1039).WINDOW);
@@ -53,7 +56,7 @@ function getNativeImplementation(fetch) {
       }
       return tmp24;
     }
-    obj2 = require(817) /* registerSpanErrorInstrumentation */;
+    obj2 = registerSpanErrorInstrumentation;
   }
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

@@ -1,18 +1,18 @@
-// Module ID: 10187
-// Function ID: 10188
+// Module ID: 10226
+// Function ID: 10227
 // Name: PADDING_HORIZONTAL
-// Dependencies: [1338, 4964, 2]
+// Dependencies: [1338, 4969, 2]
 
-// Module 10187 (PADDING_HORIZONTAL)
-import ExpressionPickerViewType from "ExpressionPickerViewType";
+// Module 10226 (PADDING_HORIZONTAL)
+import set from "set" /* 2 */;
+import StickerFormat from "StickerFormat" /* 4969 */;
+import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1338 */;
 
-let MIN_MARGIN;
-let PADDING_HORIZONTAL;
 const PADDING_VERTICAL = ExpressionPickerViewType.PADDING_VERTICAL;
 ({ PADDING_HORIZONTAL, MIN_MARGIN } = ExpressionPickerViewType);
 const result = 2 * PADDING_VERTICAL;
-const items = [require("StickerFormat").StickerFormat.GIF, require("StickerFormat").StickerFormat.PNG, require("StickerFormat").StickerFormat.APNG];
-const result1 = require("set").fileFinishedImporting("modules/stickers/native/StickerPickerConstants.tsx");
+const items = [StickerFormat.StickerFormat.GIF, StickerFormat.StickerFormat.PNG, StickerFormat.StickerFormat.APNG];
+const result1 = set.fileFinishedImporting("modules/stickers/native/StickerPickerConstants.tsx");
 
 export { PADDING_HORIZONTAL };
 export { PADDING_VERTICAL };

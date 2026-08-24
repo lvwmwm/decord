@@ -1,25 +1,27 @@
-// Module ID: 9756
-// Function ID: 9757
+// Module ID: 9795
+// Function ID: 9796
 // Name: styles
-// Dependencies: [4661, 712, 2]
+// Dependencies: [4668, 712, 2]
 
-// Module 9756 (styles)
-import createCacheKey from "createCacheKey";
+// Module 9795 (styles)
+import set from "set" /* 2 */;
+import ThemesDefault from "Themes" /* 712 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 let obj = { container: null, navHeader: null, content: null, title: null, stepHeader: null, body: null, bodyContent: null, footerContainer: null, footerButton: null };
-obj = { flex: 1, alignItems: "stretch", justifyContent: "flex-start", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj = { flex: 1, alignItems: "stretch", justifyContent: "flex-start", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 obj[0] = obj;
-obj[1] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderBottomColor: require("Themes").colors.BORDER_SUBTLE, shadowColor: "transparent" };
+obj[1] = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, borderBottomColor: ThemesDefault.colors.BORDER_SUBTLE, shadowColor: "transparent" };
 obj[2] = { alignItems: "center", flex: 1, paddingTop: 24, paddingHorizontal: 16, maxWidth: 480, alignSelf: "center" };
 obj[3] = { textAlign: "center" };
 obj[4] = { textTransform: "uppercase" };
 obj[5] = { marginTop: 8, textAlign: "center" };
 obj[6] = { flexDirection: "column", gap: 24, padding: 16 };
-const obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderBottomColor: require("Themes").colors.BORDER_SUBTLE, shadowColor: "transparent" };
-obj[7] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderTopColor: require("Themes").colors.BORDER_SUBTLE, borderTopWidth: 1, paddingTop: 24, paddingBottom: 18, paddingHorizontal: 12, width: "100%", flexShrink: 0 };
+const obj1 = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, borderBottomColor: ThemesDefault.colors.BORDER_SUBTLE, shadowColor: "transparent" };
+obj[7] = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, borderTopColor: ThemesDefault.colors.BORDER_SUBTLE, borderTopWidth: 1, paddingTop: 24, paddingBottom: 18, paddingHorizontal: 12, width: "100%", flexShrink: 0 };
 obj[8] = { marginBottom: 6 };
 const styles = createCacheKey.createStyles(obj);
-const obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderTopColor: require("Themes").colors.BORDER_SUBTLE, borderTopWidth: 1, paddingTop: 24, paddingBottom: 18, paddingHorizontal: 12, width: "100%", flexShrink: 0 };
-const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkStyles.tsx");
+const obj2 = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, borderTopColor: ThemesDefault.colors.BORDER_SUBTLE, borderTopWidth: 1, paddingTop: 24, paddingBottom: 18, paddingHorizontal: 12, width: "100%", flexShrink: 0 };
+const result = set.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkStyles.tsx");
 
 export const useTwoWayLinkStyles = styles;

@@ -4,14 +4,16 @@
 // Dependencies: [5, 93, 95, 98, 158, 32, 41, 42, 817, 1033]
 
 // Module 1088 (_isNativeReflectConstruct)
-import asyncGeneratorStep from "_slicedToArray";
-import c3 from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _wrapNativeSuper from "_wrapNativeSuper";
-import _slicedToArray from "_slicedToArray";
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+import addClsInstrumentationHandler from "addClsInstrumentationHandler" /* 1033 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import closure_5 from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+import closure_6 from "_slicedToArray" /* 32 */;
+import closure_7 from "_classCallCheck" /* 41 */;
+import closure_8 from "_createClass" /* 42 */;
 
 function _isNativeReflectConstruct() {
   try {
@@ -24,24 +26,24 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
-function isShadowRoot(parentNode) {
-  let host;
-  if (parentNode != null) {
-    host = parentNode.host;
+function isShadowRoot(host) {
+  host = undefined;
+  if (host != null) {
+    host = host.host;
   }
   let shadowRoot;
   if (host != null) {
     shadowRoot = host.shadowRoot;
   }
-  return Boolean(shadowRoot === parentNode);
+  return Boolean(shadowRoot === host);
 }
 function isNativeShadowDom(arg0) {
   const call = toString.call;
@@ -75,8 +77,6 @@ function stringifyStylesheet(styleSheet) {
   }
 }
 function stringifyRule(styleSheet) {
-  let cssText;
-  let selectorText;
   cssText = undefined;
   if ((function isCSSImportRule(styleSheet) {
     return "styleSheet" in styleSheet;
@@ -167,9 +167,6 @@ function stringifyRule(styleSheet) {
   return cssText;
 }
 function shouldMaskInput(arg0) {
-  let maskInputOptions;
-  let tagName;
-  let type;
   ({ maskInputOptions, tagName, type } = arg0);
   if ("OPTION" === tagName) {
     tagName = "SELECT";
@@ -192,10 +189,6 @@ function shouldMaskInput(arg0) {
   return Boolean(tmp);
 }
 function maskInputValue(arg0) {
-  let element;
-  let isMasked;
-  let maskInputFn;
-  let value;
   ({ value, maskInputFn, isMasked, element } = arg0);
   if (!value) {
     value = "";
@@ -265,7 +258,7 @@ function getImplementation$1(clearTimeout) {
     const _window = window;
     const _document = window.document;
     const _window2 = window;
-    let obj = window[clearTimeout];
+    obj = window[clearTimeout];
     if (_document) {
       if (typeof _document.createElement === "function") {
         try {
@@ -304,12 +297,12 @@ function getIframeContentDocument(contentDocument) {
   }
 }
 function genId() {
-  let closure_39 = tmp + 1;
+  closure_39 = tmp + 1;
   return +closure_39;
 }
 function absoluteToStylesheet(arg0, arg1) {
   let str = arg0;
-  let closure_0 = arg1;
+  closure_0 = arg1;
   if (!arg0) {
     str = "";
   }
@@ -329,9 +322,9 @@ function absoluteToStylesheet(arg0, arg1) {
       str2 = "";
     }
     if (str) {
-      if (!outer1_43.test(str)) {
-        if (!outer1_44.test(str)) {
-          if (outer1_45.test(str)) {
+      if (!closure_1_43.test(str)) {
+        if (!closure_1_44.test(str)) {
+          if (closure_1_45.test(str)) {
             const _HermesInternal3 = HermesInternal;
             return "url(" + str2 + str + str2 + ")";
           } else if ("/" === 5) {
@@ -519,7 +512,7 @@ function transformAttribute(createElement, arg1, arg2, str, arg4, fn, size) {
                 if (str23) {
                   tmp23 = str23;
                   if ("" !== str23.trim()) {
-                    let obj5 = weakMap;
+                    obj5 = weakMap;
                     let value2 = weakMap.get(createElement);
                     if (!value2) {
                       let element3 = <a />;
@@ -614,9 +607,9 @@ function transformAttribute(createElement, arg1, arg2, str, arg4, fn, size) {
             str2 = "";
           }
           if (str) {
-            if (!outer1_43.test(str)) {
-              if (!outer1_44.test(str)) {
-                if (outer1_45.test(str)) {
+            if (!closure_1_43.test(str)) {
+              if (!closure_1_44.test(str)) {
+                if (closure_1_45.test(str)) {
                   const _HermesInternal3 = HermesInternal;
                   return "url(" + str2 + str + str2 + ")";
                 } else if ("/" === 5) {
@@ -824,8 +817,8 @@ function distanceToMatch(nodeType) {
   return num3;
 }
 function createMatchPredicate(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   return (parentNode) => {
     if (null === parentNode) {
       return false;
@@ -923,25 +916,6 @@ function needMaskingText(nodeType) {
   }
 }
 function serializeNode(nodeType, newlyAddedElement) {
-  let blockClass;
-  let blockSelector;
-  let dataURLOptions;
-  let doc;
-  let inlineImages;
-  let inlineStylesheet;
-  let keepIframeSrcFn;
-  let maskAllText;
-  let maskAttributeFn;
-  let maskInputFn;
-  let maskInputOptions;
-  let maskTextClass;
-  let maskTextFn;
-  let maskTextSelector;
-  let mirror;
-  let recordCanvas;
-  let unblockSelector;
-  let unmaskTextClass;
-  let unmaskTextSelector;
   ({ doc, mirror, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, maskInputOptions } = newlyAddedElement);
   ({ blockClass, blockSelector, unblockSelector, maskAllText, maskAttributeFn, inlineStylesheet } = newlyAddedElement);
   if (undefined === maskInputOptions) {
@@ -967,7 +941,7 @@ function serializeNode(nodeType, newlyAddedElement) {
   nodeType = nodeType.nodeType;
   if (nodeType.DOCUMENT_NODE === nodeType) {
     if ("CSS1Compat" !== nodeType.compatMode) {
-      let obj = { type: null, childNodes: null, compatMode: null };
+      obj = { type: null, childNodes: null, compatMode: null };
       obj[0] = obj.Document;
       obj[1] = [];
       obj[2] = nodeType.compatMode;
@@ -978,13 +952,13 @@ function serializeNode(nodeType, newlyAddedElement) {
     }
     return obj;
   } else if (nodeType.DOCUMENT_TYPE_NODE === nodeType) {
-    let obj1 = { type: null, name: null, publicId: null, systemId: null, rootId: null };
+    obj1 = { type: null, name: null, publicId: null, systemId: null, rootId: null };
     obj1[0] = obj.DocumentType;
     ({ name: obj5[1], publicId: obj5[2], systemId: obj5[3] } = nodeType);
     obj1[4] = tmp2;
     return obj1;
   } else if (nodeType.ELEMENT_NODE === nodeType) {
-    let obj2 = { doc: null, blockClass: null, blockSelector: null, unblockSelector: null, inlineStylesheet: null, maskAttributeFn: null, maskInputOptions: null, maskInputFn: null, dataURLOptions: null, inlineImages: null, recordCanvas: null, keepIframeSrcFn: null, newlyAddedElement: null, rootId: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, ignoreCSSAttributes: null };
+    obj2 = { doc: null, blockClass: null, blockSelector: null, unblockSelector: null, inlineStylesheet: null, maskAttributeFn: null, maskInputOptions: null, maskInputFn: null, dataURLOptions: null, inlineImages: null, recordCanvas: null, keepIframeSrcFn: null, newlyAddedElement: null, rootId: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, ignoreCSSAttributes: null };
     obj2[0] = doc;
     obj2[1] = blockClass;
     obj2[2] = blockSelector;
@@ -1005,24 +979,7 @@ function serializeNode(nodeType, newlyAddedElement) {
     obj2[17] = unmaskTextSelector;
     obj2[18] = newlyAddedElement.ignoreCSSAttributes;
     return (function serializeElementNode(attributes, newlyAddedElement) {
-      let blockClass;
-      let blockSelector;
-      let dataURLOptions;
-      let doc;
-      let ignoreCSSAttributes;
-      let inlineImages;
-      let inlineStylesheet;
-      let keepIframeSrcFn;
-      let maskAttributeFn;
-      let maskInputFn;
-      let maskInputOptions;
-      let maskTextClass;
-      let maskTextSelector;
-      let recordCanvas;
-      let unblockSelector;
-      let unmaskTextClass;
-      let unmaskTextSelector;
-      let closure_0 = attributes;
+      closure_0 = attributes;
       ({ doc, blockClass, blockSelector, unblockSelector, maskInputOptions, inlineStylesheet } = newlyAddedElement);
       if (undefined === maskInputOptions) {
         maskInputOptions = {};
@@ -1081,7 +1038,7 @@ function serializeNode(nodeType, newlyAddedElement) {
           return str2;
         }
       })(attributes);
-      let obj = {};
+      obj = {};
       for (let num = 0; num < length; num = num + 1) {
         let iter = attributes.attributes[num];
         let name = iter.name;
@@ -1219,7 +1176,7 @@ function serializeNode(nodeType, newlyAddedElement) {
                 element1 = <canvas />;
                 let context = element1.getContext("2d");
               }
-              let closure_3 = attributes;
+              closure_3 = attributes;
               let str13 = attributes.currentSrc;
               if (!str13) {
                 str13 = attributes.getAttribute("src");
@@ -1330,11 +1287,11 @@ function serializeNode(nodeType, newlyAddedElement) {
       if ("submit" !== tmp28) {
         if ("button" !== tmp28) {
           if (tmp30) {
-            const obj1 = { type: null, tagName: null, maskInputOptions: null };
+            obj1 = { type: null, tagName: null, maskInputOptions: null };
             obj1[0] = tmp28;
             obj1[1] = callback5(tmp8);
             obj1[2] = maskInputOptions;
-            const obj2 = { isMasked: null, element: null, value: null, maskInputFn: null };
+            obj2 = { isMasked: null, element: null, value: null, maskInputFn: null };
             obj2[0] = callback14(attributes, maskTextClass, maskTextSelector, unmaskTextClass, unmaskTextSelector, callback2(obj1));
             obj2[1] = attributes;
             obj2[2] = tmp30;
@@ -1348,7 +1305,7 @@ function serializeNode(nodeType, newlyAddedElement) {
       }
     })(nodeType, obj2);
   } else if (nodeType.TEXT_NODE === nodeType) {
-    const obj3 = { doc: null, maskAllText: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, maskTextFn: null, maskInputOptions: null, maskInputFn: null, rootId: null };
+    obj3 = { doc: null, maskAllText: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, maskTextFn: null, maskInputOptions: null, maskInputFn: null, rootId: null };
     obj3[0] = doc;
     obj3[1] = maskAllText;
     obj3[2] = maskTextClass;
@@ -1360,14 +1317,6 @@ function serializeNode(nodeType, newlyAddedElement) {
     obj3[8] = maskInputFn;
     obj3[9] = tmp2;
     return (function serializeTextNode(parentNode, rootId) {
-      let maskAllText;
-      let maskInputFn;
-      let maskInputOptions;
-      let maskTextClass;
-      let maskTextFn;
-      let maskTextSelector;
-      let unmaskTextClass;
-      let unmaskTextSelector;
       let tmp = rootId;
       ({ maskAllText, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, maskTextFn, maskInputOptions, maskInputFn } = rootId);
       let tagName = parentNode.parentNode;
@@ -1430,7 +1379,7 @@ function serializeNode(nodeType, newlyAddedElement) {
         if (!tmp4) {
           if ("OPTION" === tagName) {
             if (str) {
-              let obj = { isMasked: null, element: null, value: null, maskInputFn: null };
+              obj = { isMasked: null, element: null, value: null, maskInputFn: null };
               obj = { type: null, tagName: null, maskInputOptions: null };
               obj[1] = tagName;
               obj[2] = maskInputOptions;
@@ -1462,7 +1411,7 @@ function serializeNode(nodeType, newlyAddedElement) {
       }
     })(nodeType, obj3);
   } else if (nodeType.CDATA_SECTION_NODE === nodeType) {
-    const obj4 = { type: null, textContent: "", rootId: null };
+    obj4 = { type: null, textContent: "", rootId: null };
     obj4[0] = obj.CDATA;
     obj4[2] = tmp2;
     return obj4;
@@ -1477,7 +1426,7 @@ function serializeNode(nodeType, newlyAddedElement) {
   }
 }
 function serializeNodeWithId(shadowRoot, doc) {
-  let closure_0 = shadowRoot;
+  closure_0 = shadowRoot;
   doc = doc.doc;
   const mirror = doc.mirror;
   const blockClass = doc.blockClass;
@@ -1490,7 +1439,7 @@ function serializeNodeWithId(shadowRoot, doc) {
   const unmaskTextSelector = doc.unmaskTextSelector;
   const skipChild = doc.skipChild;
   const inlineStylesheet = doc.inlineStylesheet;
-  let c11 = tmp4;
+  closure_11 = tmp4;
   let maskInputOptions = doc.maskInputOptions;
   if (undefined === maskInputOptions) {
     maskInputOptions = {};
@@ -1504,9 +1453,9 @@ function serializeNodeWithId(shadowRoot, doc) {
     dataURLOptions = {};
   }
   const inlineImages = doc.inlineImages;
-  let obj = tmp5;
+  obj = tmp5;
   const recordCanvas = doc.recordCanvas;
-  const isShadowRoot = tmp6;
+  isShadowRoot = tmp6;
   const onSerialize = doc.onSerialize;
   const onIframeLoad = doc.onIframeLoad;
   const iframeLoadTimeout = doc.iframeLoadTimeout;
@@ -1529,7 +1478,7 @@ function serializeNodeWithId(shadowRoot, doc) {
   const ignoreCSSAttributes = doc.ignoreCSSAttributes;
   const preserveWhiteSpace = doc.preserveWhiteSpace;
   let flag = undefined === preserveWhiteSpace || preserveWhiteSpace;
-  let c28 = flag;
+  c28 = flag;
   const tmp8 = serializeNode(shadowRoot, { doc, mirror, blockClass, blockSelector, maskAllText, unblockSelector, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, inlineStylesheet: undefined === inlineStylesheet || inlineStylesheet, maskInputOptions, maskAttributeFn, maskTextFn, maskInputFn, dataURLOptions, inlineImages: undefined !== inlineImages && inlineImages, recordCanvas: undefined !== recordCanvas && recordCanvas, keepIframeSrcFn: fn, newlyAddedElement: undefined !== newlyAddedElement && newlyAddedElement, ignoreCSSAttributes });
   if (tmp8) {
     if (mirror.hasNode(shadowRoot)) {
@@ -1538,11 +1487,11 @@ function serializeNodeWithId(shadowRoot, doc) {
       num4 = -2;
       if (!(function slimDOMExcluded(type, slimDOMOptions) {
         if (slimDOMOptions.comment) {
-          if (type.type === tmp5.Comment) {
+          if (type.type === closure_18.Comment) {
             return true;
           }
         }
-        if (type.type === tmp5.Element) {
+        if (type.type === closure_18.Element) {
           if (slimDOMOptions.script) {
             return true;
           }
@@ -1840,10 +1789,10 @@ function serializeNodeWithId(shadowRoot, doc) {
         }
         if (!needBlock) {
           let tmp29 = (function onceIframeLoaded(contentWindow, arg1, arg2) {
-            let closure_0 = arg1;
+            closure_0 = arg1;
             contentWindow = contentWindow.contentWindow;
             if (contentWindow) {
-              let c1 = false;
+              c1 = false;
               try {
                 const readyState = contentWindow.document.readyState;
                 if ("complete" === readyState) {
@@ -1857,15 +1806,15 @@ function serializeNodeWithId(shadowRoot, doc) {
                   callback(arg1, 0);
                   return contentWindow.addEventListener("load", arg1);
                 } else {
-                  let closure_2 = callback(() => {
+                  closure_2 = callback(() => {
                     if (!c1) {
                       callback();
                       c1 = true;
                     }
                   }, arg2);
                   const listener1 = contentWindow.addEventListener("load", () => {
-                    outer1_35(closure_2);
-                    let c1 = true;
+                    closure_1_35(closure_2);
+                    c1 = true;
                     callback();
                   });
                 }
@@ -1874,10 +1823,10 @@ function serializeNodeWithId(shadowRoot, doc) {
               }
             }
           })(shadowRoot, () => {
-            const tmp2 = outer1_36(closure_0);
+            const tmp2 = closure_1_36(closure_0);
             if (tmp2) {
               if (onIframeLoad) {
-                const obj = { doc: null, mirror: null, blockClass: null, blockSelector: null, unblockSelector: null, maskAllText: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: false, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, inlineImages: null, recordCanvas: null, preserveWhiteSpace: null, onSerialize: null, onIframeLoad: null, iframeLoadTimeout: null, onStylesheetLoad: null, stylesheetLoadTimeout: null, keepIframeSrcFn: null, ignoreCSSAttributes: null };
+                obj = { doc: null, mirror: null, blockClass: null, blockSelector: null, unblockSelector: null, maskAllText: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: false, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, inlineImages: null, recordCanvas: null, preserveWhiteSpace: null, onSerialize: null, onIframeLoad: null, iframeLoadTimeout: null, onStylesheetLoad: null, stylesheetLoadTimeout: null, keepIframeSrcFn: null, ignoreCSSAttributes: null };
                 obj[0] = tmp2;
                 obj[1] = mirror;
                 obj[2] = blockClass;
@@ -1905,7 +1854,7 @@ function serializeNodeWithId(shadowRoot, doc) {
                 obj[25] = num;
                 obj[26] = fn;
                 obj[27] = ignoreCSSAttributes;
-                const tmp30 = outer1_58(tmp2, obj);
+                const tmp30 = closure_1_58(tmp2, obj);
                 if (tmp30) {
                   tmp3(closure_0, tmp30);
                 }
@@ -1918,7 +1867,7 @@ function serializeNodeWithId(shadowRoot, doc) {
           if ("img" === merged.tagName) {
             if (!shadowRoot.complete) {
               if (merged.needBlock) {
-                let closure_30 = shadowRoot;
+                closure_30 = shadowRoot;
                 function updateImageDimensions(href) {
                   if (shadowRoot.isConnected) {
                     if (!obj.complete) {
@@ -1972,19 +1921,19 @@ function serializeNodeWithId(shadowRoot, doc) {
         }
         if (tmp31) {
           let tmp35 = (function onceStylesheetLoaded(sheet, arg1, arg2) {
-            let closure_0 = arg1;
-            let c1 = false;
+            closure_0 = arg1;
+            c1 = false;
             try {
               if (!sheet.sheet) {
-                let closure_2 = callback(() => {
+                closure_2 = callback(() => {
                   if (!c1) {
                     callback();
                     c1 = true;
                   }
                 }, arg2);
                 const listener = sheet.addEventListener("load", () => {
-                  outer1_35(closure_2);
-                  let c1 = true;
+                  closure_1_35(closure_2);
+                  c1 = true;
                   callback();
                 });
               }
@@ -1993,7 +1942,7 @@ function serializeNodeWithId(shadowRoot, doc) {
             }
           })(shadowRoot, () => {
             if (onStylesheetLoad) {
-              const obj = { doc: null, mirror: null, blockClass: null, blockSelector: null, unblockSelector: null, maskAllText: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: false, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, inlineImages: null, recordCanvas: null, preserveWhiteSpace: null, onSerialize: null, onIframeLoad: null, iframeLoadTimeout: null, onStylesheetLoad: null, stylesheetLoadTimeout: null, keepIframeSrcFn: null, ignoreCSSAttributes: null };
+              obj = { doc: null, mirror: null, blockClass: null, blockSelector: null, unblockSelector: null, maskAllText: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: false, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, inlineImages: null, recordCanvas: null, preserveWhiteSpace: null, onSerialize: null, onIframeLoad: null, iframeLoadTimeout: null, onStylesheetLoad: null, stylesheetLoadTimeout: null, keepIframeSrcFn: null, ignoreCSSAttributes: null };
               obj[0] = doc;
               obj[1] = mirror;
               obj[2] = blockClass;
@@ -2021,7 +1970,7 @@ function serializeNodeWithId(shadowRoot, doc) {
               obj[25] = num;
               obj[26] = fn;
               obj[27] = ignoreCSSAttributes;
-              const tmp30 = outer1_58(closure_0, obj);
+              const tmp30 = closure_1_58(closure_0, obj);
               if (tmp30) {
                 tmp(tmp3, tmp30);
               }
@@ -2043,22 +1992,22 @@ function serializeNodeWithId(shadowRoot, doc) {
   }
 }
 function on(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   let _document = arg2;
   if (arg2 === undefined) {
     _document = document;
   }
-  const obj = { capture: true, passive: true };
+  obj = { capture: true, passive: true };
   const listener = _document.addEventListener(arg0, arg1, obj);
   return () => document.removeEventListener(selectionchange, fn, obj);
 }
 function patch(arg0, arg1, arg2) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   try {
     if (arg1 in arg0) {
-      const asyncGeneratorStep = tmp2;
+      closure_2 = tmp2;
       const tmp4 = arg2(arg0[arg1]);
       if (typeof tmp4 === "function") {
         let prototype = tmp5.prototype;
@@ -2067,7 +2016,7 @@ function patch(arg0, arg1, arg2) {
         }
         tmp5.prototype = prototype;
         const _Object = Object;
-        let obj = { __rrweb_original__: null };
+        obj = { __rrweb_original__: null };
         obj = { enumerable: false, value: null };
         obj[1] = tmp2;
         obj[0] = obj;
@@ -2126,7 +2075,7 @@ function getWindowScroll(document) {
       num = 0;
     }
   }
-  const obj = { left: num, top: null };
+  obj = { left: num, top: null };
   if (_document.scrollingElement) {
     let num2 = _document.scrollingElement.scrollTop;
   } else if (undefined !== document.pageYOffset) {
@@ -2183,10 +2132,10 @@ function closestElementOfNode$1(nodeType) {
 }
 function isBlocked(nodeType) {
   if (nodeType) {
-    const obj = closestElementOfNode$1(nodeType);
+    obj = closestElementOfNode$1(nodeType);
     if (obj) {
-      let c0 = arg1;
-      let closure_1 = arg2;
+      c0 = arg1;
+      closure_1 = arg2;
       const fn = (parentNode) => {
         if (null === parentNode) {
           return false;
@@ -2378,7 +2327,7 @@ function isAncestorRemoved(parentNode, has) {
 }
 function inDom(ownerDocument) {
   let host1;
-  let obj = ownerDocument;
+  obj = ownerDocument;
   ownerDocument = ownerDocument.ownerDocument;
   let tmp = ownerDocument;
   if (tmp) {
@@ -2435,7 +2384,7 @@ function getImplementation(arg0) {
     const _window = window;
     const _document = window.document;
     const _window2 = window;
-    let obj = window[arg0];
+    obj = window[arg0];
     if (_document) {
       if (typeof _document.createElement === "function") {
         try {
@@ -2470,7 +2419,6 @@ function getIFrameContentDocument(contentDocument) {
   }
 }
 function isParentRemoved(arr, parentNode, getId) {
-  let obj;
   if (0 === arr.length) {
     return tmp;
   } else {
@@ -2556,7 +2504,7 @@ function getEventTarget(composedPath) {
 }
 function initMutationObserver(doc, doc) {
   let fn = doc;
-  const obj = new closure_82();
+  obj = new closure_82();
   obj.init(doc);
   let __rrMutationObserver = window.MutationObserver;
   if (!__rrMutationObserver) {
@@ -2596,13 +2544,13 @@ function initMutationObserver(doc, doc) {
   };
   if (closure_79) {
     fn = (Pause, arg1) => {
-      const items = [...arguments];
+      items = [...arguments];
       try {
         const items1 = [];
         HermesBuiltin.arraySpread(items, 0);
         return HermesBuiltin.apply(items1, undefined);
       } catch (tmp7) {
-        if (outer1_79) {
+        if (closure_1_79) {
           if (true === tmp8(tmp7)) {
             return () => {
 
@@ -2618,17 +2566,10 @@ function initMutationObserver(doc, doc) {
   return __rrMutationObserver;
 }
 function initMouseInteractionObserver(doc) {
-  let _getPrototypeOf;
-  let _inherits;
-  let asyncGeneratorStep;
-  let closure_3;
-  let dependencyMap;
-  let fn;
-  let sampling;
-  ({ mouseInteractionCb: fn, doc: dependencyMap, mirror: asyncGeneratorStep, blockClass: closure_3, blockSelector: _getPrototypeOf, unblockSelector: _inherits, sampling } = doc);
+  ({ mouseInteractionCb: fn, doc: dependencyMap, mirror: closure_2, blockClass: closure_3, blockSelector: closure_4, unblockSelector: closure_5, sampling } = doc);
   let mouseInteraction;
-  let closure_7;
-  let c8;
+  closure_7 = undefined;
+  c8 = undefined;
   if (false === sampling.mouseInteraction) {
     return () => {
 
@@ -2657,7 +2598,7 @@ function initMouseInteractionObserver(doc) {
         let replaced = str;
         replaced = str;
         if (window.PointerEvent) {
-          if (outer1_75.MouseDown !== outer1_75[str]) {
+          if (closure_1_75.MouseDown !== closure_1_75[str]) {
             if (tmp2.MouseUp !== tmp3) {
               if (tmp2.TouchStart !== tmp3) {
                 replaced = str;
@@ -2666,27 +2607,25 @@ function initMouseInteractionObserver(doc) {
           }
           replaced = str.replace("mouse", "pointer");
         }
-        let fn = (pointerType) => {
-          let clientX;
-          let clientY;
-          const tmp = outer2_88(pointerType);
-          if (!outer2_65(tmp, obj, outer1_4, outer1_5, true)) {
+        fn = (pointerType) => {
+          const tmp = closure_2_88(pointerType);
+          if (!closure_2_65(tmp, obj, closure_1_4, closure_1_5, true)) {
             if ("pointerType" in pointerType) {
               pointerType = pointerType.pointerType;
               if ("mouse" === pointerType) {
-                let Mouse = outer2_76.Mouse;
+                let Mouse = closure_2_76.Mouse;
               } else if ("touch" === pointerType) {
-                Mouse = outer2_76.Touch;
+                Mouse = closure_2_76.Touch;
               } else {
                 Mouse = null;
                 if ("pen" === pointerType) {
-                  Mouse = outer2_76.Pen;
+                  Mouse = closure_2_76.Pen;
                 }
               }
-              if (Mouse === outer2_76.Touch) {
+              if (Mouse === closure_2_76.Touch) {
                 let str2 = "TouchStart";
                 let Touch = Mouse;
-                if (outer2_75[tmp2] !== outer2_75.MouseDown) {
+                if (closure_2_75[tmp2] !== closure_2_75.MouseDown) {
                   str2 = tmp2;
                   Touch = Mouse;
                   if (tmp11[tmp2] === tmp11.MouseUp) {
@@ -2704,20 +2643,20 @@ function initMouseInteractionObserver(doc) {
               str2 = tmp2;
               Touch = null;
               if (Boolean(pointerType.changedTouches)) {
-                Touch = outer2_76.Touch;
+                Touch = closure_2_76.Touch;
                 str2 = tmp2;
               }
             }
             if (null !== Touch) {
-              let outer1_8 = Touch;
+              c8 = Touch;
               let startsWithResult = str2.startsWith("Touch");
               if (startsWithResult) {
-                startsWithResult = Touch === outer2_76.Touch;
+                startsWithResult = Touch === closure_2_76.Touch;
               }
               if (!startsWithResult) {
                 let startsWithResult1 = str2.startsWith("Mouse");
                 if (startsWithResult1) {
-                  startsWithResult1 = Touch === outer2_76.Mouse;
+                  startsWithResult1 = Touch === closure_2_76.Mouse;
                 }
                 startsWithResult = startsWithResult1;
               }
@@ -2727,9 +2666,9 @@ function initMouseInteractionObserver(doc) {
               }
             } else {
               tmp14 = Touch;
-              if (outer2_75[tmp2] === outer2_75.Click) {
-                tmp14 = outer1_8;
-                outer1_8 = null;
+              if (closure_2_75[tmp2] === closure_2_75.Click) {
+                tmp14 = c8;
+                c8 = null;
               }
             }
             const _Boolean2 = Boolean;
@@ -2738,21 +2677,21 @@ function initMouseInteractionObserver(doc) {
               first = pointerType.changedTouches[0];
             }
             if (first) {
-              let fn = replaced;
+              fn = replaced;
               const id = _document.getId(tmp);
               ({ clientX, clientY } = first);
-              if (typeof outer2_86 !== "function") {
+              if (typeof closure_2_86 !== "function") {
                 HermesBuiltin.throwTypeError();
               }
-              if (outer2_79) {
+              if (closure_2_79) {
                 fn = (Pause, arg1) => {
-                  const items = [...arguments];
+                  items = [...arguments];
                   try {
                     const items1 = [];
                     HermesBuiltin.arraySpread(items, 0);
                     return HermesBuiltin.apply(items1, undefined);
                   } catch (tmp7) {
-                    if (outer1_79) {
+                    if (closure_1_79) {
                       if (true === tmp8(tmp7)) {
                         return () => {
 
@@ -2764,7 +2703,7 @@ function initMouseInteractionObserver(doc) {
                 };
               }
               obj = { type: null, id: null, x: null, y: null };
-              obj[0] = outer2_75[str2];
+              obj[0] = closure_2_75[str2];
               obj[1] = id;
               obj[2] = clientX;
               obj[3] = clientY;
@@ -2784,7 +2723,7 @@ function initMouseInteractionObserver(doc) {
         if (fn === undefined) {
           _document = document;
         }
-        let obj = { capture: true, passive: true };
+        obj = { capture: true, passive: true };
         const listener = _document.addEventListener(replaced, fn, obj);
         arr = arr.push(() => document.removeEventListener(selectionchange, fn, obj));
       });
@@ -2796,13 +2735,13 @@ function initMouseInteractionObserver(doc) {
       };
       if (closure_79) {
         fn = (Pause, arg1) => {
-          const items = [...arguments];
+          items = [...arguments];
           try {
             const items1 = [];
             HermesBuiltin.arraySpread(items, 0);
             return HermesBuiltin.apply(items1, undefined);
           } catch (tmp7) {
-            if (outer1_79) {
+            if (closure_1_79) {
               if (true === tmp8(tmp7)) {
                 return () => {
 
@@ -2819,29 +2758,24 @@ function initMouseInteractionObserver(doc) {
   }
 }
 function initScrollObserver(doc) {
-  let _inherits;
-  let c4;
-  let obj;
-  let sampling;
-  let scroll;
   ({ scrollCb: scroll, doc } = doc);
   let fn2 = doc;
-  ({ mirror: doc, blockClass: obj, blockSelector: c4, unblockSelector: _inherits, sampling } = doc);
+  ({ mirror: doc, blockClass: obj, blockSelector: c4, unblockSelector: closure_5, sampling } = doc);
   if (typeof callbackWrapper !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let fn = (arg0) => {
-    const tmp = outer1_88(arg0);
+    const tmp = closure_1_88(arg0);
     if (tmp) {
-      if (!outer1_65(tmp, obj, c4, closure_5, true)) {
+      if (!closure_1_65(tmp, obj, c4, closure_5, true)) {
         const id = doc.getId(tmp);
         if (tmp === fn2) {
           if (tmp9.defaultView) {
             obj = { id: null, x: null, y: null };
             obj[0] = id;
-            ({ left: obj2[1], top: obj2[2] } = outer1_63(tmp9.defaultView));
+            ({ left: obj2[1], top: obj2[2] } = closure_1_63(tmp9.defaultView));
             scroll(obj);
-            const tmp13 = outer1_63(tmp9.defaultView);
+            const tmp13 = closure_1_63(tmp9.defaultView);
           }
         }
         obj = { id: null, x: null, y: null };
@@ -2854,13 +2788,13 @@ function initScrollObserver(doc) {
   scroll = fn;
   if (closure_79) {
     fn = (Pause, arg1) => {
-      const items = [...arguments];
+      items = [...arguments];
       try {
         const items1 = [];
         HermesBuiltin.arraySpread(items, 0);
         return HermesBuiltin.apply(items1, undefined);
       } catch (tmp7) {
-        if (outer1_79) {
+        if (closure_1_79) {
           if (true === tmp8(tmp7)) {
             return () => {
 
@@ -2880,14 +2814,17 @@ function initScrollObserver(doc) {
     HermesBuiltin.throwTypeError();
   }
   fn2 = function() {
-    let items = [...arguments];
+    items = [...arguments];
     let self;
-    let timestamp = Date.now();
-    let tmp2 = timestamp;
-    if (!timestamp) {
+    const timestamp = Date.now();
+    let tmp2 = num;
+    if (!num) {
       tmp2 = false !== closure_2.leading;
     }
-    const diff = self - (timestamp - timestamp);
+    if (!tmp2) {
+      num = timestamp;
+    }
+    const diff = self - (timestamp - num);
     self = this;
     if (diff > 0) {
       if (diff <= self) {
@@ -2896,14 +2833,13 @@ function initScrollObserver(doc) {
           tmp5 = false === closure_2.trailing;
         }
         if (!tmp5) {
-          c3 = outer1_72(() => {
-            let num = 0;
-            if (false !== outer1_2.leading) {
+          c3 = closure_1_72(() => {
+            num = 0;
+            if (false !== closure_1_2.leading) {
               const _Date = Date;
               num = Date.now();
             }
-            const timestamp = num;
-            let c3 = null;
+            c3 = null;
             items.apply(self, items);
           }, diff);
         }
@@ -2911,23 +2847,24 @@ function initScrollObserver(doc) {
     }
     if (c3) {
       !(function clearTimeout$2(arg0) {
-        const items = [...arguments];
+        items = [...arguments];
         return callback("clearTimeout")(...items);
       })(tmp8);
       c3 = null;
     }
+    num = timestamp;
     items.apply(this, items);
   };
   scroll = fn2;
   if (closure_79) {
     fn2 = (Pause, arg1) => {
-      const items = [...arguments];
+      items = [...arguments];
       try {
         const items1 = [];
         HermesBuiltin.arraySpread(items, 0);
         return HermesBuiltin.apply(items1, undefined);
       } catch (tmp7) {
-        if (outer1_79) {
+        if (closure_1_79) {
           if (true === tmp8(tmp7)) {
             return () => {
 
@@ -2947,28 +2884,13 @@ function initScrollObserver(doc) {
   return () => document.removeEventListener(selectionchange, fn, obj);
 }
 function initInputObserver(sampling) {
-  let _classCallCheck;
-  let _createClass;
-  let _getPrototypeOf;
-  let _inherits;
-  let _isNativeReflectConstruct;
-  let _slicedToArray;
-  let asyncGeneratorStep;
-  let c11;
-  let c12;
-  let c13;
-  let c14;
-  let closure_3;
-  let doc;
-  let fn;
-  let sentryReplaySession;
   ({ inputCb: fn, doc } = sampling);
-  ({ mirror: asyncGeneratorStep, blockClass: closure_3, blockSelector: _getPrototypeOf, unblockSelector: _inherits, ignoreClass: _slicedToArray, ignoreSelector: _classCallCheck, maskInputOptions: _createClass, maskInputFn: _isNativeReflectConstruct, userTriggeredOnInput: sentryReplaySession, maskTextClass: c11, unmaskTextClass: c12, maskTextSelector: c13, unmaskTextSelector: c14 } = sampling);
+  ({ mirror: closure_2, blockClass: closure_3, blockSelector: closure_4, unblockSelector: closure_5, ignoreClass: closure_6, ignoreSelector: closure_7, maskInputOptions: closure_8, maskInputFn: _isNativeReflectConstruct, userTriggeredOnInput: sentryReplaySession, maskTextClass: c11, unmaskTextClass: c12, maskTextSelector: c13, unmaskTextSelector: c14 } = sampling);
   let mapped;
   let defaultView;
   function eventHandler(isTrusted) {
-    const tmp = outer1_88(isTrusted);
-    let fn = tmp;
+    const tmp = closure_1_88(isTrusted);
+    fn = tmp;
     let formatted = tmp;
     if (tmp) {
       formatted = tmp.tagName.toUpperCase();
@@ -2982,8 +2904,8 @@ function initInputObserver(sampling) {
     }
     if (iter) {
       if (formatted) {
-        if (outer1_92.indexOf(formatted) >= 0) {
-          if (!outer1_65(iter, checked, closure_4, closure_5, true)) {
+        if (closure_1_92.indexOf(formatted) >= 0) {
+          if (!closure_1_65(iter, checked, closure_4, closure_5, true)) {
             const classList = iter.classList;
             if (!classList.contains(closure_6)) {
               if (!closure_7) {
@@ -3017,7 +2939,7 @@ function initInputObserver(sampling) {
                       tmp10 = "INPUT" === str11 && !str5 && tmp8.text;
                       const tmp12 = "INPUT" === str11 && !str5 && tmp8.text;
                     }
-                    const tmp19 = outer1_56(iter, closure_11, closure_13, closure_12, closure_14, Boolean(tmp10));
+                    const tmp19 = closure_1_56(iter, closure_11, closure_13, closure_12, closure_14, Boolean(tmp10));
                     closure_4 = tmp19;
                     let tmp20 = "radio" !== str5;
                     if (tmp20) {
@@ -3041,7 +2963,7 @@ function initInputObserver(sampling) {
                       repeatResult = "*".repeat(tmp21Result.length);
                     }
                     if (closure_10) {
-                      let obj = { text: null, isChecked: null, userTriggered: null };
+                      obj = { text: null, isChecked: null, userTriggered: null };
                       obj[0] = repeatResult;
                       obj[1] = flag2;
                       obj[2] = isTrusted.isTrusted;
@@ -3050,7 +2972,7 @@ function initInputObserver(sampling) {
                       obj[0] = repeatResult;
                       obj[1] = flag2;
                     }
-                    let value = outer1_93.get(iter);
+                    let value = closure_1_93.get(iter);
                     if (value) {
                       const name = iter.name;
                       if (tmp34) {
@@ -3072,8 +2994,8 @@ function initInputObserver(sampling) {
                                   const repeat = "*".repeat;
                                   repeatResult = "*".repeat(tmpResult.length);
                                 }
-                                if (outer1_10) {
-                                  let obj = { text: null, isChecked: null, userTriggered: false };
+                                if (closure_1_10) {
+                                  obj = { text: null, isChecked: null, userTriggered: false };
                                   obj[0] = repeatResult;
                                   obj[1] = !checked;
                                 } else {
@@ -3081,21 +3003,21 @@ function initInputObserver(sampling) {
                                   obj[0] = repeatResult;
                                   obj[1] = !checked;
                                 }
-                                const value = outer1_93.get(getAttribute);
-                                const result = outer1_93.set(getAttribute, obj);
+                                const value = closure_1_93.get(getAttribute);
+                                const result = closure_1_93.set(getAttribute, obj);
                                 const id = str5.getId(getAttribute);
-                                if (typeof outer1_86 !== "function") {
+                                if (typeof closure_1_86 !== "function") {
                                   HermesBuiltin.throwTypeError();
                                 }
-                                if (outer1_79) {
+                                if (closure_1_79) {
                                   fn = (Pause, arg1) => {
-                                    const items = [...arguments];
+                                    items = [...arguments];
                                     try {
                                       const items1 = [];
                                       HermesBuiltin.arraySpread(items, 0);
                                       return HermesBuiltin.apply(items1, undefined);
                                     } catch (tmp7) {
-                                      if (outer1_79) {
+                                      if (closure_1_79) {
                                         if (true === tmp8(tmp7)) {
                                           return () => {
 
@@ -3110,7 +3032,7 @@ function initInputObserver(sampling) {
                                 const merged = Object.assign(obj);
                                 obj.id = id;
                                 fn(obj);
-                                const obj3 = outer1_93;
+                                obj3 = closure_1_93;
                               }
                               str4 = getAttribute.getAttribute("value") || "";
                             }
@@ -3120,20 +3042,20 @@ function initInputObserver(sampling) {
                       }
                       tmp34 = "radio" === str5 && name && flag2;
                     }
-                    let result = outer1_93.set(iter, obj);
+                    let result = closure_1_93.set(iter, obj);
                     let id = str5.getId(iter);
-                    if (typeof outer1_86 !== "function") {
+                    if (typeof closure_1_86 !== "function") {
                       HermesBuiltin.throwTypeError();
                     }
-                    if (outer1_79) {
+                    if (closure_1_79) {
                       fn = (Pause, arg1) => {
-                        const items = [...arguments];
+                        items = [...arguments];
                         try {
                           const items1 = [];
                           HermesBuiltin.arraySpread(items, 0);
                           return HermesBuiltin.apply(items1, undefined);
                         } catch (tmp7) {
-                          if (outer1_79) {
+                          if (closure_1_79) {
                             if (true === tmp8(tmp7)) {
                               return () => {
 
@@ -3148,7 +3070,7 @@ function initInputObserver(sampling) {
                     let merged = Object.assign(obj);
                     obj.id = id;
                     fn(obj);
-                    let obj3 = outer1_93;
+                    obj3 = closure_1_93;
                   }
                   str10 = iter.getAttribute("value") || "";
                 }
@@ -3161,20 +3083,20 @@ function initInputObserver(sampling) {
     }
   }
   mapped = "last" === sampling.sampling.input ? ["change"] : ["input", "change"].map((arg0) => {
-    let fn = eventHandler;
-    if (typeof outer1_86 !== "function") {
+    fn = eventHandler;
+    if (typeof closure_1_86 !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    let closure_0 = fn;
-    if (outer1_79) {
+    closure_0 = fn;
+    if (closure_1_79) {
       fn = (Pause, arg1) => {
-        const items = [...arguments];
+        items = [...arguments];
         try {
           const items1 = [];
           HermesBuiltin.arraySpread(items, 0);
           return HermesBuiltin.apply(items1, undefined);
         } catch (tmp7) {
-          if (outer1_79) {
+          if (closure_1_79) {
             if (true === tmp8(tmp7)) {
               return () => {
 
@@ -3190,7 +3112,7 @@ function initInputObserver(sampling) {
     if (fn === undefined) {
       _document = document;
     }
-    const obj = { capture: true, passive: true };
+    obj = { capture: true, passive: true };
     const listener = _document.addEventListener(arg0, fn, obj);
     return () => document.removeEventListener(selectionchange, fn, obj);
   });
@@ -3218,24 +3140,22 @@ function initInputObserver(sampling) {
       const push = mapped.push;
       const items7 = [];
       HermesBuiltin.arraySpread(items1.map((arg0) => {
-        let tmp;
-        let tmp2;
         [tmp, tmp2] = arg0;
-        let obj = {
+        obj = {
           set() {
-            let fn = closure_15;
-            if (typeof outer1_86 !== "function") {
+            fn = closure_15;
+            if (typeof closure_1_86 !== "function") {
               HermesBuiltin.throwTypeError();
             }
-            if (outer1_79) {
+            if (closure_1_79) {
               fn = (Pause, arg1) => {
-                const items = [...arguments];
+                items = [...arguments];
                 try {
                   const items1 = [];
                   HermesBuiltin.arraySpread(items, 0);
                   return HermesBuiltin.apply(items1, undefined);
                 } catch (tmp7) {
-                  if (outer1_79) {
+                  if (closure_1_79) {
                     if (true === tmp8(tmp7)) {
                       return () => {
 
@@ -3250,7 +3170,7 @@ function initInputObserver(sampling) {
           }
         };
         let _window = defaultView;
-        const doc = tmp2;
+        doc = tmp2;
         if (defaultView === undefined) {
           _window = window;
         }
@@ -3262,8 +3182,8 @@ function initInputObserver(sampling) {
           set(arg0) {
             let self = this;
             self = this;
-            let closure_0 = arg0;
-            outer1_72(() => {
+            closure_0 = arg0;
+            closure_1_72(() => {
               const call = set.call;
               if (typeof call === "unknown") {
                 const result = set(tmp2);
@@ -3287,36 +3207,36 @@ function initInputObserver(sampling) {
         };
         _Object2.defineProperty(tmp, tmp2, obj);
         return () => {
-          let obj = ownPropertyDescriptor;
+          obj = ownPropertyDescriptor;
           if (!ownPropertyDescriptor) {
             obj = {};
           }
-          let closure_0 = tmp;
-          let closure_1 = tmp2;
+          closure_0 = tmp;
+          closure_1 = tmp2;
           ownPropertyDescriptor = undefined;
           const _Object = window.Object;
           ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(tmp, tmp2);
           const _Object2 = window.Object;
           _Object2.defineProperty(closure_0, closure_1, obj);
           return () => {
-            let obj = ownPropertyDescriptor;
+            obj = ownPropertyDescriptor;
             if (!ownPropertyDescriptor) {
               obj = {};
             }
-            let closure_0 = tmp;
-            let closure_1 = tmp2;
+            closure_0 = tmp;
+            closure_1 = tmp2;
             ownPropertyDescriptor = undefined;
             const _Object = window.Object;
             ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(tmp, tmp2);
             const _Object2 = window.Object;
             _Object2.defineProperty(closure_0, closure_1, obj);
             return () => {
-              let obj = ownPropertyDescriptor;
+              obj = ownPropertyDescriptor;
               if (!ownPropertyDescriptor) {
                 obj = {};
               }
-              let closure_0 = tmp;
-              let closure_1 = tmp2;
+              closure_0 = tmp;
+              closure_1 = tmp2;
               ownPropertyDescriptor = undefined;
               const _Object = window.Object;
               ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(tmp, tmp2);
@@ -3337,13 +3257,13 @@ function initInputObserver(sampling) {
     };
     if (closure_79) {
       fn = (Pause, arg1) => {
-        const items = [...arguments];
+        items = [...arguments];
         try {
           const items1 = [];
           HermesBuiltin.arraySpread(items, 0);
           return HermesBuiltin.apply(items1, undefined);
         } catch (tmp7) {
-          if (outer1_79) {
+          if (closure_1_79) {
             if (true === tmp8(tmp7)) {
               return () => {
 
@@ -3387,10 +3307,8 @@ function getNestedCSSRulePositions(parentRule) {
   items.unshift(Array.from(parentRule.parentRule.cssRules).indexOf(parentRule));
 }
 function initAdoptedStyleSheetObserver(doc, doc) {
-  let fn2;
-  let mirror;
   ({ mirror, stylesheetManager: fn2 } = doc);
-  let closure_1 = doc;
+  closure_1 = doc;
   let ownPropertyDescriptor;
   let id = null;
   if ("#document" === doc.nodeName) {
@@ -3431,7 +3349,7 @@ function initAdoptedStyleSheetObserver(doc, doc) {
       if (ShadowRoot) {
         if (ownPropertyDescriptor) {
           const _Object = Object;
-          const obj = { configurable: null, enumerable: null, get: null, set: null };
+          obj = { configurable: null, enumerable: null, get: null, set: null };
           ({ configurable: obj[0], enumerable: obj[1] } = ownPropertyDescriptor);
           obj[2] = function get() {
             const get = ownPropertyDescriptor.get;
@@ -3466,13 +3384,13 @@ function initAdoptedStyleSheetObserver(doc, doc) {
           };
           if (closure_79) {
             fn2 = (Pause, arg1) => {
-              const items = [...arguments];
+              items = [...arguments];
               try {
                 const items1 = [];
                 HermesBuiltin.arraySpread(items, 0);
                 return HermesBuiltin.apply(items1, undefined);
               } catch (tmp7) {
-                if (outer1_79) {
+                if (closure_1_79) {
                   if (true === tmp8(tmp7)) {
                     return () => {
 
@@ -3497,17 +3415,14 @@ function initObservers(doc) {
   let defaultView = doc.doc.defaultView;
   if (defaultView) {
     if (doc.recordDOM) {
-      let closure_0 = initMutationObserver(doc, doc.doc);
+      closure_0 = initMutationObserver(doc, doc.doc);
     }
-    let closure_1 = (function initMoveObserver(doc) {
-      let fn3;
-      let fn4;
-      let sampling;
+    closure_1 = (function initMoveObserver(doc) {
       ({ mousemoveCb: fn4, sampling, doc, mirror: fn3 } = doc);
       doc = undefined;
-      let obj;
-      let c4;
-      let items;
+      obj = undefined;
+      c4 = undefined;
+      items = undefined;
       if (false === sampling.mousemove) {
         return () => {
 
@@ -3536,13 +3451,13 @@ function initObservers(doc) {
         fn4 = fn;
         if (closure_79) {
           fn = (Pause, arg1) => {
-            const items = [...arguments];
+            items = [...arguments];
             try {
               const items1 = [];
               HermesBuiltin.arraySpread(items, 0);
               return HermesBuiltin.apply(items1, undefined);
             } catch (tmp7) {
-              if (outer1_79) {
+              if (closure_1_79) {
                 if (true === tmp8(tmp7)) {
                   return () => {
 
@@ -3559,14 +3474,17 @@ function initObservers(doc) {
         obj = null;
         c4 = 0;
         c4 = function() {
-          let items = [...arguments];
+          items = [...arguments];
           let self;
-          let timestamp = Date.now();
-          let tmp2 = timestamp;
-          if (!timestamp) {
+          const timestamp = Date.now();
+          let tmp2 = num;
+          if (!num) {
             tmp2 = false !== closure_2.leading;
           }
-          const diff = self - (timestamp - timestamp);
+          if (!tmp2) {
+            num = timestamp;
+          }
+          const diff = self - (timestamp - num);
           self = this;
           if (diff > 0) {
             if (diff <= self) {
@@ -3575,14 +3493,13 @@ function initObservers(doc) {
                 tmp5 = false === closure_2.trailing;
               }
               if (!tmp5) {
-                c3 = outer1_72(() => {
-                  let num = 0;
-                  if (false !== outer1_2.leading) {
+                c3 = closure_1_72(() => {
+                  num = 0;
+                  if (false !== closure_1_2.leading) {
                     const _Date = Date;
                     num = Date.now();
                   }
-                  const timestamp = num;
-                  let c3 = null;
+                  c3 = null;
                   items.apply(self, items);
                 }, diff);
               }
@@ -3590,32 +3507,31 @@ function initObservers(doc) {
           }
           if (c3) {
             !(function clearTimeout$2(arg0) {
-              const items = [...arguments];
+              items = [...arguments];
               return callback("clearTimeout")(...items);
             })(tmp8);
             c3 = null;
           }
+          num = timestamp;
           items.apply(this, items);
         };
         if (typeof closure_86 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let fn2 = (changedTouches) => {
-          let clientX;
-          let clientY;
           let first = changedTouches;
           if (Boolean(changedTouches.changedTouches)) {
             first = changedTouches.changedTouches[0];
           }
           ({ clientX, clientY } = first);
           if (!closure_2) {
-            closure_2 = outer1_62();
+            closure_2 = closure_1_62();
           }
-          const obj = { x: clientX, y: clientY, id: fn3.getId(outer1_88(changedTouches)), timeOffset: outer1_62() - closure_2 };
+          obj = { x: clientX, y: clientY, id: fn3.getId(closure_1_88(changedTouches)), timeOffset: closure_1_62() - closure_2 };
           obj.push(obj);
           if (typeof globalThis.DragEvent !== "undefined") {
             if (changedTouches instanceof globalThis.DragEvent) {
-              let Drag = outer1_74.Drag;
+              let Drag = closure_1_74.Drag;
             }
             tmp5(Drag);
           }
@@ -3624,13 +3540,13 @@ function initObservers(doc) {
         fn4 = fn2;
         if (closure_79) {
           fn2 = (Pause, arg1) => {
-            const items = [...arguments];
+            items = [...arguments];
             try {
               const items1 = [];
               HermesBuiltin.arraySpread(items, 0);
               return HermesBuiltin.apply(items1, undefined);
             } catch (tmp7) {
-              if (outer1_79) {
+              if (closure_1_79) {
                 if (true === tmp8(tmp7)) {
                   return () => {
 
@@ -3650,14 +3566,17 @@ function initObservers(doc) {
           HermesBuiltin.throwTypeError();
         }
         fn3 = function() {
-          let items = [...arguments];
+          items = [...arguments];
           let self;
-          let timestamp = Date.now();
-          let tmp2 = timestamp;
-          if (!timestamp) {
+          const timestamp = Date.now();
+          let tmp2 = num;
+          if (!num) {
             tmp2 = false !== closure_2.leading;
           }
-          const diff = self - (timestamp - timestamp);
+          if (!tmp2) {
+            num = timestamp;
+          }
+          const diff = self - (timestamp - num);
           self = this;
           if (diff > 0) {
             if (diff <= self) {
@@ -3666,14 +3585,13 @@ function initObservers(doc) {
                 tmp5 = false === closure_2.trailing;
               }
               if (!tmp5) {
-                c3 = outer1_72(() => {
-                  let num = 0;
-                  if (false !== outer1_2.leading) {
+                c3 = closure_1_72(() => {
+                  num = 0;
+                  if (false !== closure_1_2.leading) {
                     const _Date = Date;
                     num = Date.now();
                   }
-                  const timestamp = num;
-                  let c3 = null;
+                  c3 = null;
                   items.apply(self, items);
                 }, diff);
               }
@@ -3681,23 +3599,24 @@ function initObservers(doc) {
           }
           if (c3) {
             !(function clearTimeout$2(arg0) {
-              const items = [...arguments];
+              items = [...arguments];
               return callback("clearTimeout")(...items);
             })(tmp8);
             c3 = null;
           }
+          num = timestamp;
           items.apply(this, items);
         };
         fn4 = fn3;
         if (closure_79) {
           fn3 = (Pause, arg1) => {
-            const items = [...arguments];
+            items = [...arguments];
             try {
               const items1 = [];
               HermesBuiltin.arraySpread(items, 0);
               return HermesBuiltin.apply(items1, undefined);
             } catch (tmp7) {
-              if (outer1_79) {
+              if (closure_1_79) {
                 if (true === tmp8(tmp7)) {
                   return () => {
 
@@ -3743,13 +3662,13 @@ function initObservers(doc) {
         };
         if (closure_79) {
           fn4 = (Pause, arg1) => {
-            const items = [...arguments];
+            items = [...arguments];
             try {
               const items1 = [];
               HermesBuiltin.arraySpread(items, 0);
               return HermesBuiltin.apply(items1, undefined);
             } catch (tmp7) {
-              if (outer1_79) {
+              if (closure_1_79) {
                 if (true === tmp8(tmp7)) {
                   return () => {
 
@@ -3763,11 +3682,11 @@ function initObservers(doc) {
         return fn4;
       }
     })(doc);
-    let closure_2 = initMouseInteractionObserver(doc);
-    let closure_3 = initScrollObserver(doc);
-    let obj = { win: null };
+    closure_2 = initMouseInteractionObserver(doc);
+    closure_3 = initScrollObserver(doc);
+    obj = { win: null };
     obj[0] = defaultView;
-    let closure_4 = (function initViewportResizeObserver(viewportResizeCb, win) {
+    closure_4 = (function initViewportResizeObserver(viewportResizeCb, win) {
       let resize = viewportResizeCb.viewportResizeCb;
       let _document = win.win;
       let fn2 = -1;
@@ -3777,7 +3696,7 @@ function initObservers(doc) {
       }
       let fn = () => {
         if (!innerHeight) {
-          const _document = document;
+          _document = document;
           let clientHeight = document.documentElement;
           if (clientHeight) {
             const _document2 = document;
@@ -3817,7 +3736,7 @@ function initObservers(doc) {
           tmp = innerWidth === innerWidth;
         }
         if (!tmp) {
-          const obj = { width: null, height: null };
+          obj = { width: null, height: null };
           const _Number = Number;
           obj[0] = Number(innerWidth);
           const _Number2 = Number;
@@ -3828,13 +3747,13 @@ function initObservers(doc) {
       resize = fn;
       if (closure_79) {
         fn = (Pause, arg1) => {
-          const items = [...arguments];
+          items = [...arguments];
           try {
             const items1 = [];
             HermesBuiltin.arraySpread(items, 0);
             return HermesBuiltin.apply(items1, undefined);
           } catch (tmp7) {
-            if (outer1_79) {
+            if (closure_1_79) {
               if (true === tmp8(tmp7)) {
                 return () => {
 
@@ -3848,20 +3767,23 @@ function initObservers(doc) {
       resize = fn;
       fn2 = 200;
       _document = {};
-      let obj = null;
-      let c4 = 0;
+      obj = null;
+      c4 = 0;
       if (typeof closure_86 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       fn2 = function() {
-        let items = [...arguments];
+        items = [...arguments];
         let self;
-        let timestamp = Date.now();
-        let tmp2 = timestamp;
-        if (!timestamp) {
+        const timestamp = Date.now();
+        let tmp2 = num;
+        if (!num) {
           tmp2 = false !== closure_2.leading;
         }
-        const diff = self - (timestamp - timestamp);
+        if (!tmp2) {
+          num = timestamp;
+        }
+        const diff = self - (timestamp - num);
         self = this;
         if (diff > 0) {
           if (diff <= self) {
@@ -3870,14 +3792,13 @@ function initObservers(doc) {
               tmp5 = false === closure_2.trailing;
             }
             if (!tmp5) {
-              c3 = outer1_72(() => {
-                let num = 0;
-                if (false !== outer1_2.leading) {
+              c3 = closure_1_72(() => {
+                num = 0;
+                if (false !== closure_1_2.leading) {
                   const _Date = Date;
                   num = Date.now();
                 }
-                const timestamp = num;
-                let c3 = null;
+                c3 = null;
                 items.apply(self, items);
               }, diff);
             }
@@ -3885,23 +3806,24 @@ function initObservers(doc) {
         }
         if (c3) {
           !(function clearTimeout$2(arg0) {
-            const items = [...arguments];
+            items = [...arguments];
             return callback("clearTimeout")(...items);
           })(tmp8);
           c3 = null;
         }
+        num = timestamp;
         items.apply(this, items);
       };
       resize = fn2;
       if (closure_79) {
         fn2 = (Pause, arg1) => {
-          const items = [...arguments];
+          items = [...arguments];
           try {
             const items1 = [];
             HermesBuiltin.arraySpread(items, 0);
             return HermesBuiltin.apply(items1, undefined);
           } catch (tmp7) {
-            if (outer1_79) {
+            if (closure_1_79) {
               if (true === tmp8(tmp7)) {
                 return () => {
 
@@ -3920,32 +3842,23 @@ function initObservers(doc) {
       const listener = _document.addEventListener("resize", fn2, obj);
       return () => document.removeEventListener(selectionchange, fn, obj);
     })(doc, obj);
-    let closure_5 = initInputObserver(doc);
-    let closure_6 = (function initMediaInteractionObserver(doc) {
-      let closure_4;
-      let closure_5;
-      let fn2;
-      let fnResult4;
-      let obj2;
+    closure_5 = initInputObserver(doc);
+    closure_6 = (function initMediaInteractionObserver(doc) {
       ({ mediaInteractionCb: fn2, blockClass: fnResult4, blockSelector: doc, unblockSelector: obj2, mirror: closure_4, sampling: closure_5, doc } = doc);
-      let items;
+      items = undefined;
       if (typeof closure_86 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       let fn = (arg0) => {
         let fn = arg0;
-        if (typeof outer1_86 !== "function") {
+        if (typeof closure_1_86 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         fn = (arg0) => {
-          let currentTime;
-          let muted;
-          let playbackRate;
-          let volume;
-          const tmp = outer2_88(arg0);
+          const tmp = closure_2_88(arg0);
           if (tmp) {
-            if (!outer2_65(tmp, closure_1, closure_2, c3, true)) {
-              const obj = { type: null, id: null, currentTime: null, volume: null, muted: null, playbackRate: null };
+            if (!closure_2_65(tmp, closure_1, closure_2, c3, true)) {
+              obj = { type: null, id: null, currentTime: null, volume: null, muted: null, playbackRate: null };
               obj[0] = fn;
               ({ currentTime, volume, muted, playbackRate } = tmp);
               obj[1] = id.getId(tmp);
@@ -3957,15 +3870,15 @@ function initObservers(doc) {
             }
           }
         };
-        if (outer1_79) {
+        if (closure_1_79) {
           fn = (Pause, arg1) => {
-            const items = [...arguments];
+            items = [...arguments];
             try {
               const items1 = [];
               HermesBuiltin.arraySpread(items, 0);
               return HermesBuiltin.apply(items1, undefined);
             } catch (tmp7) {
-              if (outer1_79) {
+              if (closure_1_79) {
                 if (true === tmp8(tmp7)) {
                   return () => {
 
@@ -3976,18 +3889,22 @@ function initObservers(doc) {
             }
           };
         }
-        let closure_2 = {};
-        let c3 = null;
-        let c4 = 0;
+        closure_1 = media.media || 500;
+        closure_2 = {};
+        c3 = null;
+        c4 = 0;
         return function() {
-          let items = [...arguments];
+          items = [...arguments];
           let self;
-          let timestamp = Date.now();
-          let tmp2 = timestamp;
-          if (!timestamp) {
+          const timestamp = Date.now();
+          let tmp2 = num;
+          if (!num) {
             tmp2 = false !== closure_2.leading;
           }
-          const diff = self - (timestamp - timestamp);
+          if (!tmp2) {
+            num = timestamp;
+          }
+          const diff = self - (timestamp - num);
           self = this;
           if (diff > 0) {
             if (diff <= self) {
@@ -3996,14 +3913,13 @@ function initObservers(doc) {
                 tmp5 = false === closure_2.trailing;
               }
               if (!tmp5) {
-                c3 = outer1_72(() => {
-                  let num = 0;
-                  if (false !== outer1_2.leading) {
+                c3 = closure_1_72(() => {
+                  num = 0;
+                  if (false !== closure_1_2.leading) {
                     const _Date = Date;
                     num = Date.now();
                   }
-                  const timestamp = num;
-                  let c3 = null;
+                  c3 = null;
                   items.apply(self, items);
                 }, diff);
               }
@@ -4011,24 +3927,25 @@ function initObservers(doc) {
           }
           if (c3) {
             !(function clearTimeout$2(arg0) {
-              const items = [...arguments];
+              items = [...arguments];
               return callback("clearTimeout")(...items);
             })(tmp8);
             c3 = null;
           }
+          num = timestamp;
           items.apply(this, items);
         };
       };
       fn2 = fn;
       if (closure_79) {
         fn = (Pause, arg1) => {
-          const items = [...arguments];
+          items = [...arguments];
           try {
             const items1 = [];
             HermesBuiltin.arraySpread(items, 0);
             return HermesBuiltin.apply(items1, undefined);
           } catch (tmp7) {
-            if (outer1_79) {
+            if (closure_1_79) {
               if (true === tmp8(tmp7)) {
                 return () => {
 
@@ -4048,7 +3965,7 @@ function initObservers(doc) {
         _document = document;
       }
       doc = _document;
-      let obj = { capture: true, passive: true };
+      obj = { capture: true, passive: true };
       obj2 = obj;
       const listener = _document.addEventListener("play", fnResult, obj);
       items = [() => document.removeEventListener(selectionchange, fn, obj), , , , ];
@@ -4087,7 +4004,7 @@ function initObservers(doc) {
         _document4 = document;
       }
       doc = _document4;
-      const obj1 = { capture: true, passive: true };
+      obj1 = { capture: true, passive: true };
       obj2 = obj1;
       const listener3 = _document4.addEventListener("volumechange", fnResult3, obj1);
       items[3] = () => document.removeEventListener(selectionchange, fn, obj);
@@ -4108,13 +4025,13 @@ function initObservers(doc) {
       };
       if (closure_79) {
         fn2 = (Pause, arg1) => {
-          const items = [...arguments];
+          items = [...arguments];
           try {
             const items1 = [];
             HermesBuiltin.arraySpread(items, 0);
             return HermesBuiltin.apply(items1, undefined);
           } catch (tmp7) {
-            if (outer1_79) {
+            if (closure_1_79) {
               if (true === tmp8(tmp7)) {
                 return () => {
 
@@ -4127,33 +4044,30 @@ function initObservers(doc) {
       }
       return fn2;
     })(doc);
-    let closure_7 = function styleSheetObserver() {
+    closure_7 = function styleSheetObserver() {
 
     };
-    let closure_8 = function adoptedStyleSheetObserver() {
+    closure_8 = function adoptedStyleSheetObserver() {
 
     };
-    let closure_9 = function styleDeclarationObserver() {
+    closure_9 = function styleDeclarationObserver() {
 
     };
-    let closure_10 = function fontObserver() {
+    closure_10 = function fontObserver() {
 
     };
     if (doc.recordDOM) {
       obj = { win: null };
       obj[0] = defaultView;
       closure_7 = (function initStyleSheetObserver(doc, win) {
-        let closure_1;
-        let closure_2;
-        let fn5;
         ({ styleSheetRuleCb: fn5, mirror: closure_1, stylesheetManager: closure_2 } = doc);
         win = win.win;
         let insertRule;
         let replace;
         let replaceSync;
         let deleteRule;
-        let obj2;
-        let closure_9;
+        obj2 = undefined;
+        closure_9 = undefined;
         if (win.CSSStyleSheet) {
           if (win.CSSStyleSheet.prototype) {
             insertRule = win.CSSStyleSheet.prototype.insertRule;
@@ -4161,10 +4075,8 @@ function initObservers(doc) {
               HermesBuiltin.throwTypeError();
             }
             let fn = (apply, ownerNode) => {
-              let id;
-              let styleId;
               replaceSync(arg2, 2);
-              let obj = closure_1;
+              obj = closure_1;
               const styleMirror = closure_2.styleMirror;
               if (ownerNode) {
                 if (ownerNode.ownerNode) {
@@ -4192,10 +4104,10 @@ function initObservers(doc) {
                   obj = { id: null, styleId: null, adds: null };
                   obj[0] = id;
                   obj[1] = styleId;
-                  const obj1 = { rule: null, index: null };
+                  obj1 = { rule: null, index: null };
                   obj1[0] = tmp2;
                   obj1[1] = tmp3;
-                  const items = [obj1];
+                  items = [obj1];
                   obj[2] = items;
                   fn5(obj);
                 }
@@ -4205,13 +4117,13 @@ function initObservers(doc) {
             fn5 = fn;
             if (closure_79) {
               fn = (Pause, arg1) => {
-                const items = [...arguments];
+                items = [...arguments];
                 try {
                   const items1 = [];
                   HermesBuiltin.arraySpread(items, 0);
                   return HermesBuiltin.apply(items1, undefined);
                 } catch (tmp7) {
-                  if (outer1_79) {
+                  if (closure_1_79) {
                     if (true === tmp8(tmp7)) {
                       return () => {
 
@@ -4222,7 +4134,7 @@ function initObservers(doc) {
                 }
               };
             }
-            let obj = { apply: null };
+            obj = { apply: null };
             obj[0] = fn;
             let proxy = new Proxy(insertRule, obj);
             win.CSSStyleSheet.prototype.insertRule = proxy;
@@ -4231,9 +4143,7 @@ function initObservers(doc) {
               HermesBuiltin.throwTypeError();
             }
             let fn2 = (apply, ownerNode) => {
-              let id;
-              let styleId;
-              let obj = closure_1;
+              obj = closure_1;
               const styleMirror = closure_2.styleMirror;
               if (ownerNode) {
                 if (ownerNode.ownerNode) {
@@ -4261,9 +4171,9 @@ function initObservers(doc) {
                   obj = { id: null, styleId: null, removes: null };
                   obj[0] = id;
                   obj[1] = styleId;
-                  const obj1 = { index: null };
+                  obj1 = { index: null };
                   obj1[0] = tmp;
-                  const items = [obj1];
+                  items = [obj1];
                   obj[2] = items;
                   fn5(obj);
                 }
@@ -4273,13 +4183,13 @@ function initObservers(doc) {
             fn5 = fn2;
             if (closure_79) {
               fn2 = (Pause, arg1) => {
-                const items = [...arguments];
+                items = [...arguments];
                 try {
                   const items1 = [];
                   HermesBuiltin.arraySpread(items, 0);
                   return HermesBuiltin.apply(items1, undefined);
                 } catch (tmp7) {
-                  if (outer1_79) {
+                  if (closure_1_79) {
                     if (true === tmp8(tmp7)) {
                       return () => {
 
@@ -4300,9 +4210,7 @@ function initObservers(doc) {
                 HermesBuiltin.throwTypeError();
               }
               let fn3 = (apply, ownerNode) => {
-                let id;
-                let styleId;
-                let obj = closure_1;
+                obj = closure_1;
                 const styleMirror = closure_2.styleMirror;
                 if (ownerNode) {
                   if (ownerNode.ownerNode) {
@@ -4339,13 +4247,13 @@ function initObservers(doc) {
               fn5 = fn3;
               if (closure_79) {
                 fn3 = (Pause, arg1) => {
-                  const items = [...arguments];
+                  items = [...arguments];
                   try {
                     const items1 = [];
                     HermesBuiltin.arraySpread(items, 0);
                     return HermesBuiltin.apply(items1, undefined);
                   } catch (tmp7) {
-                    if (outer1_79) {
+                    if (closure_1_79) {
                       if (true === tmp8(tmp7)) {
                         return () => {
 
@@ -4367,9 +4275,7 @@ function initObservers(doc) {
                 HermesBuiltin.throwTypeError();
               }
               let fn4 = (apply, ownerNode) => {
-                let id;
-                let styleId;
-                let obj = closure_1;
+                obj = closure_1;
                 const styleMirror = closure_2.styleMirror;
                 if (ownerNode) {
                   if (ownerNode.ownerNode) {
@@ -4406,13 +4312,13 @@ function initObservers(doc) {
               fn5 = fn4;
               if (closure_79) {
                 fn4 = (Pause, arg1) => {
-                  const items = [...arguments];
+                  items = [...arguments];
                   try {
                     const items1 = [];
                     HermesBuiltin.arraySpread(items, 0);
                     return HermesBuiltin.apply(items1, undefined);
                   } catch (tmp7) {
-                    if (outer1_79) {
+                    if (closure_1_79) {
                       if (true === tmp8(tmp7)) {
                         return () => {
 
@@ -4423,7 +4329,7 @@ function initObservers(doc) {
                   }
                 };
               }
-              let obj1 = { apply: null };
+              obj1 = { apply: null };
               obj1[0] = fn4;
               const proxy3 = new Proxy(replaceSync, obj1);
               win.CSSStyleSheet.prototype.replaceSync = proxy3;
@@ -4502,17 +4408,13 @@ function initObservers(doc) {
             const _Object = Object;
             let entries = Object.entries(obj2);
             let item = entries.forEach((arg0) => {
-              let tmp;
-              let tmp2;
               [tmp, tmp2] = arg0;
               table[tmp] = { insertRule: tmp2.prototype.insertRule, deleteRule: tmp2.prototype.deleteRule };
-              if (typeof outer1_86 !== "function") {
+              if (typeof closure_1_86 !== "function") {
                 HermesBuiltin.throwTypeError();
               }
               let fn = (apply, parentStyleSheet) => {
-                let id;
-                let styleId;
-                let num = outer1_6(arg2, 2)[1];
+                let num = closure_1_6(arg2, 2)[1];
                 parentStyleSheet = parentStyleSheet.parentStyleSheet;
                 const styleMirror = closure_2.styleMirror;
                 if (parentStyleSheet) {
@@ -4538,36 +4440,36 @@ function initObservers(doc) {
                     tmp6 = tmp7;
                   }
                   if (tmp6) {
-                    let obj = { id: null, styleId: null, adds: null };
+                    obj = { id: null, styleId: null, adds: null };
                     obj[0] = id;
                     obj[1] = styleId;
                     obj = { rule: null, index: null };
                     obj[0] = tmp2;
-                    const items = [];
+                    items = [];
                     if (!num) {
                       num = 0;
                     }
-                    items[HermesBuiltin.arraySpread(outer1_95(parentStyleSheet), 0)] = num;
+                    items[HermesBuiltin.arraySpread(closure_1_95(parentStyleSheet), 0)] = num;
                     obj[1] = items;
                     const items1 = [obj];
                     obj[2] = items1;
                     fn2(obj);
-                    const arraySpreadResult = HermesBuiltin.arraySpread(outer1_95(parentStyleSheet), 0);
+                    const arraySpreadResult = HermesBuiltin.arraySpread(closure_1_95(parentStyleSheet), 0);
                     const tmp8 = fn2;
                   }
                   return apply.apply(parentStyleSheet, arg2);
                 }
               };
               let fn2 = fn;
-              if (outer1_79) {
+              if (closure_1_79) {
                 fn = (Pause, arg1) => {
-                  const items = [...arguments];
+                  items = [...arguments];
                   try {
                     const items1 = [];
                     HermesBuiltin.arraySpread(items, 0);
                     return HermesBuiltin.apply(items1, undefined);
                   } catch (tmp7) {
-                    if (outer1_79) {
+                    if (closure_1_79) {
                       if (true === tmp8(tmp7)) {
                         return () => {
 
@@ -4578,15 +4480,13 @@ function initObservers(doc) {
                   }
                 };
               }
-              let obj = { apply: fn };
+              obj = { apply: fn };
               const proxy = new Proxy(table[tmp].insertRule, obj);
               tmp2.prototype.insertRule = proxy;
-              if (typeof outer1_86 !== "function") {
+              if (typeof closure_1_86 !== "function") {
                 HermesBuiltin.throwTypeError();
               }
               fn2 = (apply, parentStyleSheet) => {
-                let id;
-                let styleId;
                 parentStyleSheet = parentStyleSheet.parentStyleSheet;
                 const styleMirror = closure_2.styleMirror;
                 if (parentStyleSheet) {
@@ -4612,12 +4512,12 @@ function initObservers(doc) {
                     tmp5 = tmp6;
                   }
                   if (tmp5) {
-                    let obj = { id: null, styleId: null, removes: null };
+                    obj = { id: null, styleId: null, removes: null };
                     obj[0] = id;
                     obj[1] = styleId;
                     obj = { index: null };
-                    const items = [];
-                    items[HermesBuiltin.arraySpread(outer1_95(parentStyleSheet), 0)] = tmp;
+                    items = [];
+                    items[HermesBuiltin.arraySpread(closure_1_95(parentStyleSheet), 0)] = tmp;
                     obj[0] = items;
                     const items1 = [obj];
                     obj[2] = items1;
@@ -4626,15 +4526,15 @@ function initObservers(doc) {
                   return apply.apply(parentStyleSheet, arg2);
                 }
               };
-              if (outer1_79) {
+              if (closure_1_79) {
                 fn2 = (Pause, arg1) => {
-                  const items = [...arguments];
+                  items = [...arguments];
                   try {
                     const items1 = [];
                     HermesBuiltin.arraySpread(items, 0);
                     return HermesBuiltin.apply(items1, undefined);
                   } catch (tmp7) {
-                    if (outer1_79) {
+                    if (closure_1_79) {
                       if (true === tmp8(tmp7)) {
                         return () => {
 
@@ -4663,8 +4563,6 @@ function initObservers(doc) {
               }
               const entries = Object.entries(obj2);
               const item = entries.forEach((arg0) => {
-                let tmp;
-                let tmp2;
                 [tmp, tmp2] = arg0;
                 tmp2.prototype.insertRule = dependencyMap[tmp].insertRule;
                 tmp2.prototype.deleteRule = dependencyMap[tmp].deleteRule;
@@ -4672,13 +4570,13 @@ function initObservers(doc) {
             };
             if (closure_79) {
               fn5 = (Pause, arg1) => {
-                const items = [...arguments];
+                items = [...arguments];
                 try {
                   const items1 = [];
                   HermesBuiltin.arraySpread(items, 0);
                   return HermesBuiltin.apply(items1, undefined);
                 } catch (tmp7) {
-                  if (outer1_79) {
+                  if (closure_1_79) {
                     if (true === tmp8(tmp7)) {
                       return () => {
 
@@ -4700,10 +4598,6 @@ function initObservers(doc) {
       obj = { win: null };
       obj[0] = defaultView;
       closure_9 = (function initStyleDeclarationObserver(doc, win) {
-        let closure_1;
-        let closure_2;
-        let closure_3;
-        let fn3;
         ({ styleDeclarationCb: fn3, mirror: closure_1, ignoreCSSAttributes: closure_2, stylesheetManager: closure_3 } = doc);
         win = win.win;
         let setProperty;
@@ -4713,14 +4607,9 @@ function initObservers(doc) {
           HermesBuiltin.throwTypeError();
         }
         let fn = (apply, parentRule) => {
-          let id;
-          let styleId;
-          let tmp2;
-          let tmp3;
-          let tmp4;
           [tmp2, tmp3, tmp4] = removeProperty(arg2, 3);
           if (set.has(tmp2)) {
-            const items = [tmp2, tmp3, tmp4];
+            items = [tmp2, tmp3, tmp4];
             return setProperty.apply(parentRule, items);
           } else {
             parentRule = parentRule.parentRule;
@@ -4752,7 +4641,7 @@ function initObservers(doc) {
                 tmp10 = tmp11;
               }
               if (tmp10) {
-                let obj = { id: null, styleId: null, set: null, index: null };
+                obj = { id: null, styleId: null, set: null, index: null };
                 obj[0] = id;
                 obj[1] = styleId;
                 obj = { property: null, value: null, priority: null };
@@ -4760,7 +4649,7 @@ function initObservers(doc) {
                 obj[1] = tmp3;
                 obj[2] = tmp4;
                 obj[2] = obj;
-                obj[3] = outer1_95(parentRule.parentRule);
+                obj[3] = closure_1_95(parentRule.parentRule);
                 fn3(obj);
               }
               return apply.apply(parentRule, arg2);
@@ -4771,13 +4660,13 @@ function initObservers(doc) {
         fn3 = fn;
         if (closure_79) {
           fn = (Pause, arg1) => {
-            const items = [...arguments];
+            items = [...arguments];
             try {
               const items1 = [];
               HermesBuiltin.arraySpread(items, 0);
               return HermesBuiltin.apply(items1, undefined);
             } catch (tmp7) {
-              if (outer1_79) {
+              if (closure_1_79) {
                 if (true === tmp8(tmp7)) {
                   return () => {
 
@@ -4788,7 +4677,7 @@ function initObservers(doc) {
             }
           };
         }
-        let obj = { apply: fn };
+        obj = { apply: fn };
         const proxy = new Proxy(setProperty, obj);
         win.CSSStyleDeclaration.prototype.setProperty = proxy;
         removeProperty = win.CSSStyleDeclaration.prototype.removeProperty;
@@ -4796,11 +4685,9 @@ function initObservers(doc) {
           HermesBuiltin.throwTypeError();
         }
         let fn2 = (apply, parentRule) => {
-          let id;
-          let styleId;
           const first = removeProperty(arg2, 1)[0];
           if (set.has(first)) {
-            const items = [first];
+            items = [first];
             return removeProperty.apply(parentRule, items);
           } else {
             parentRule = parentRule.parentRule;
@@ -4832,13 +4719,13 @@ function initObservers(doc) {
                 tmp7 = tmp8;
               }
               if (tmp7) {
-                let obj = { id: null, styleId: null, remove: null, index: null };
+                obj = { id: null, styleId: null, remove: null, index: null };
                 obj[0] = id;
                 obj[1] = styleId;
                 obj = { property: null };
                 obj[0] = first;
                 obj[2] = obj;
-                obj[3] = outer1_95(parentRule.parentRule);
+                obj[3] = closure_1_95(parentRule.parentRule);
                 fn3(obj);
               }
               return apply.apply(parentRule, arg2);
@@ -4849,13 +4736,13 @@ function initObservers(doc) {
         fn3 = fn2;
         if (closure_79) {
           fn2 = (Pause, arg1) => {
-            const items = [...arguments];
+            items = [...arguments];
             try {
               const items1 = [];
               HermesBuiltin.arraySpread(items, 0);
               return HermesBuiltin.apply(items1, undefined);
             } catch (tmp7) {
-              if (outer1_79) {
+              if (closure_1_79) {
                 if (true === tmp8(tmp7)) {
                   return () => {
 
@@ -4878,13 +4765,13 @@ function initObservers(doc) {
         };
         if (closure_79) {
           fn3 = (Pause, arg1) => {
-            const items = [...arguments];
+            items = [...arguments];
             try {
               const items1 = [];
               HermesBuiltin.arraySpread(items, 0);
               return HermesBuiltin.apply(items1, undefined);
             } catch (tmp7) {
-              if (outer1_79) {
+              if (closure_1_79) {
                 if (true === tmp8(tmp7)) {
                   return () => {
 
@@ -4899,11 +4786,10 @@ function initObservers(doc) {
       })(doc, obj);
       if (doc.collectFonts) {
         closure_10 = (function initFontObserver(doc) {
-          let fn;
           ({ fontCb: fn, doc } = doc);
           let defaultView;
-          let items;
-          let weakMap;
+          items = undefined;
+          weakMap = undefined;
           let FontFace;
           defaultView = doc.defaultView;
           if (defaultView) {
@@ -4913,7 +4799,7 @@ function initObservers(doc) {
             FontFace = defaultView.FontFace;
             defaultView.FontFace = function FontFace2(family, str, descriptors) {
               const tmp = new FontFace(family, str, descriptors);
-              const obj = { family, buffer: typeof str !== "string", descriptors, fontSource: null };
+              obj = { family, buffer: typeof str !== "string", descriptors, fontSource: null };
               let json = str;
               if (typeof str !== "string") {
                 const _JSON = JSON;
@@ -4930,38 +4816,38 @@ function initObservers(doc) {
               defaultView.FontFace = FontFace;
             });
             items.push(callback13(doc.fonts, "add", (arg0) => {
-              let closure_0 = arg0;
+              closure_0 = arg0;
               return function(arg0) {
-                let fn = arg0;
-                if (typeof outer2_86 !== "function") {
+                fn = arg0;
+                if (typeof closure_2_86 !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 fn = () => {
-                  const value = outer1_3.get(fn);
+                  const value = closure_1_3.get(fn);
                   if (value) {
                     fn(value);
-                    outer1_3.delete(fn);
+                    closure_1_3.delete(fn);
                   }
                 };
-                if (outer2_79) {
+                if (closure_2_79) {
                   fn = (Pause, arg1) => {
-                    const items = [...arguments];
+                    items = [...arguments];
                     try {
                       const items1 = [];
                       HermesBuiltin.arraySpread(items, 0);
                       return HermesBuiltin.apply(items1, undefined);
                     } catch (tmp7) {
-                      if (outer1_79) {
+                      if (closure_1_79) {
                         if (true === tmp8(tmp7)) {
-                          return /* F103427 */ function() { ... };
+                          return /* F104293 */ function() { ... };
                         }
                       }
                       throw tmp7;
                     }
                   };
                 }
-                outer2_72(fn, 0);
-                let items = [arg0];
+                closure_2_72(fn, 0);
+                items = [arg0];
                 return fn.apply(this, items);
               };
             }));
@@ -4973,13 +4859,13 @@ function initObservers(doc) {
             };
             if (closure_79) {
               fn = (Pause, arg1) => {
-                const items = [...arguments];
+                items = [...arguments];
                 try {
                   const items1 = [];
                   HermesBuiltin.arraySpread(items, 0);
                   return HermesBuiltin.apply(items1, undefined);
                 } catch (tmp7) {
-                  if (outer1_79) {
+                  if (closure_1_79) {
                     if (true === tmp8(tmp7)) {
                       return () => {
 
@@ -4999,28 +4885,18 @@ function initObservers(doc) {
         })(doc);
       }
     }
-    let closure_11 = (function initSelectionObserver(doc) {
-      let closure_4;
-      let closure_5;
-      let document;
-      let fn;
-      let obj;
-      let selectionchange;
+    closure_11 = (function initSelectionObserver(doc) {
       ({ doc: selectionchange, mirror: fn, blockClass: document, blockSelector: obj, unblockSelector: closure_4, selectionCb: closure_5 } = doc);
-      let c6 = true;
+      c6 = true;
       if (typeof closure_86 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       fn = () => {
-        let endContainer;
-        let endOffset;
-        let startContainer;
-        let startOffset;
         const selection = selectionchange.getSelection();
         if (selection) {
           if (!closure_6) {
             closure_6 = selection.isCollapsed || false;
-            const items = [];
+            items = [];
             let num = 0;
             if (0 < (selection.rangeCount || 0)) {
               do {
@@ -5035,8 +4911,8 @@ function initObservers(doc) {
                 let tmp13 = closure_4;
                 let flag = true;
                 ({ startOffset, endOffset } = rangeAt);
-                let tmp6 = outer1_65;
-                let tmp6Result = outer1_65(startContainer, document, obj, closure_4, true);
+                let tmp6 = closure_1_65;
+                let tmp6Result = closure_1_65(startContainer, document, obj, closure_4, true);
                 let tmp15 = num;
                 if (!tmp6Result) {
                   let tmp16 = endContainer;
@@ -5072,13 +4948,13 @@ function initObservers(doc) {
       selectionchange = fn;
       if (closure_79) {
         fn = (Pause, arg1) => {
-          const items = [...arguments];
+          items = [...arguments];
           try {
             const items1 = [];
             HermesBuiltin.arraySpread(items, 0);
             return HermesBuiltin.apply(items1, undefined);
           } catch (tmp7) {
-            if (outer1_79) {
+            if (closure_1_79) {
               if (true === tmp8(tmp7)) {
                 return () => {
 
@@ -5096,22 +4972,22 @@ function initObservers(doc) {
       const listener = document.addEventListener("selectionchange", fn, obj);
       return () => document.removeEventListener(selectionchange, fn, obj);
     })(doc);
-    let closure_12 = (function initCustomElementObserver(customElementCb) {
+    closure_12 = (function initCustomElementObserver(customElementCb) {
       customElementCb = customElementCb.customElementCb;
       const defaultView = customElementCb.doc.defaultView;
       if (defaultView) {
         if (defaultView.customElements) {
           let fn = callback13(defaultView.customElements, "define", (arg0) => {
-            let closure_0 = arg0;
+            closure_0 = arg0;
             return function(arg0, arg1, arg2) {
               try {
-                let obj = { define: null };
+                obj = { define: null };
                 obj = { name: null };
                 obj[0] = arg0;
                 obj[0] = obj;
                 callback(obj);
                 const self = this;
-                const items = [arg0, arg1, arg2];
+                items = [arg0, arg1, arg2];
                 return callback.apply(this, items);
               } catch (err) {
               }
@@ -5131,7 +5007,7 @@ function initObservers(doc) {
       continue;
     }
     return callbackWrapper(() => {
-      const item = outer1_87.forEach((reset) => reset.reset());
+      const item = closure_1_87.forEach((reset) => reset.reset());
       if (closure_0 != null) {
         closure_0.disconnect();
       }
@@ -5156,19 +5032,7 @@ function initObservers(doc) {
   }
 }
 function record() {
-  let blockClass;
-  let c1;
-  let c17;
-  let c2;
-  let errorHandler;
-  let maskAttributeFn;
-  let maskInputOptions;
-  let mousemoveWait;
-  let onMutation;
-  let recordDOM;
-  let sampling;
-  let slimDOMOptions;
-  let obj = arg0;
+  obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
@@ -5176,107 +5040,107 @@ function record() {
   c1 = undefined;
   c2 = undefined;
   let str;
-  let c4;
-  let c5;
+  let blockSelector;
+  let unblockSelector;
   let str2;
-  let c7;
-  let c8;
+  let ignoreSelector;
+  closure_8 = undefined;
   let str3;
-  let c10;
-  let c11;
-  let c12;
-  let c13;
+  let unmaskTextClass;
+  let maskTextSelector;
+  let unmaskTextSelector;
+  closure_13 = undefined;
   maskAttributeFn = undefined;
   let maskInputFn;
   let maskTextFn;
   c17 = undefined;
   sampling = undefined;
   let dataURLOptions;
-  let closure_20;
-  let c21;
+  closure_20 = undefined;
+  closure_21 = undefined;
   let recordAfter;
-  let closure_23;
-  let closure_24;
-  let c25;
+  closure_23 = undefined;
+  closure_24 = undefined;
+  closure_25 = undefined;
   let plugins;
   let fn;
   let ignoreCSSAttributes;
   onMutation = undefined;
-  let c30;
-  let c31;
-  let c32;
+  closure_30 = undefined;
+  c31 = undefined;
+  c32 = undefined;
   maskInputOptions = undefined;
   obj = undefined;
-  let c35;
+  c35 = undefined;
   let eventProcessor;
   let wrappedMutationEmit;
   let wrappedScrollEmit;
   let wrappedCanvasMutationEmit;
-  let c40;
-  let c41;
-  let c42;
-  let c43;
-  let c44;
+  closure_40 = undefined;
+  closure_41 = undefined;
+  closure_42 = undefined;
+  closure_43 = undefined;
+  closure_44 = undefined;
   let takeFullSnapshot2;
-  let c46;
-  let c47;
-  let c48;
+  c46 = undefined;
+  c47 = undefined;
+  c48 = undefined;
   emit = obj.emit;
   ({ checkoutEveryNms: c1, checkoutEveryNth: c2, blockClass } = obj);
   str = "rr-block";
   if (undefined !== blockClass) {
     str = blockClass;
   }
-  let blockSelector = obj.blockSelector;
+  blockSelector = obj.blockSelector;
   let tmp = null;
   if (undefined !== blockSelector) {
     tmp = blockSelector;
   }
-  c4 = tmp;
-  let unblockSelector = obj.unblockSelector;
+  blockSelector = tmp;
+  unblockSelector = obj.unblockSelector;
   let tmp2 = null;
   if (undefined !== unblockSelector) {
     tmp2 = unblockSelector;
   }
-  c5 = tmp2;
+  unblockSelector = tmp2;
   const ignoreClass = obj.ignoreClass;
   str2 = "rr-ignore";
   if (undefined !== ignoreClass) {
     str2 = ignoreClass;
   }
-  const ignoreSelector = obj.ignoreSelector;
+  ignoreSelector = obj.ignoreSelector;
   let tmp3 = null;
   if (undefined !== ignoreSelector) {
     tmp3 = ignoreSelector;
   }
-  c7 = tmp3;
+  ignoreSelector = tmp3;
   let maskAllText = obj.maskAllText;
-  c8 = tmp4;
+  closure_8 = tmp4;
   let maskTextClass = obj.maskTextClass;
   str3 = "rr-mask";
   if (undefined !== maskTextClass) {
     str3 = maskTextClass;
   }
-  let unmaskTextClass = obj.unmaskTextClass;
+  unmaskTextClass = obj.unmaskTextClass;
   let tmp5 = null;
   if (undefined !== unmaskTextClass) {
     tmp5 = unmaskTextClass;
   }
-  c10 = tmp5;
-  let maskTextSelector = obj.maskTextSelector;
+  unmaskTextClass = tmp5;
+  maskTextSelector = obj.maskTextSelector;
   let tmp6 = null;
   if (undefined !== maskTextSelector) {
     tmp6 = maskTextSelector;
   }
-  c11 = tmp6;
-  let unmaskTextSelector = obj.unmaskTextSelector;
+  maskTextSelector = tmp6;
+  unmaskTextSelector = obj.unmaskTextSelector;
   let tmp7 = null;
   if (undefined !== unmaskTextSelector) {
     tmp7 = unmaskTextSelector;
   }
-  c12 = tmp7;
+  unmaskTextSelector = tmp7;
   let inlineStylesheet = obj.inlineStylesheet;
-  c13 = tmp8;
+  closure_13 = tmp8;
   ({ maskInputOptions, slimDOMOptions, maskAttributeFn } = obj);
   maskInputFn = obj.maskInputFn;
   maskTextFn = obj.maskTextFn;
@@ -5296,7 +5160,7 @@ function record() {
   ({ mousemoveWait, recordDOM } = obj);
   closure_20 = undefined === recordDOM || recordDOM;
   let recordCanvas = obj.recordCanvas;
-  c21 = tmp10;
+  closure_21 = tmp10;
   const recordCrossOriginIframes = obj.recordCrossOriginIframes;
   recordAfter = obj.recordAfter;
   if (undefined === recordAfter) {
@@ -5311,7 +5175,7 @@ function record() {
   const collectFonts = obj.collectFonts;
   closure_24 = undefined !== collectFonts && collectFonts;
   let inlineImages = obj.inlineImages;
-  c25 = tmp12;
+  closure_25 = tmp12;
   plugins = obj.plugins;
   fn = obj.keepIframeSrcFn;
   if (undefined === fn) {
@@ -5324,7 +5188,7 @@ function record() {
   }
   ({ errorHandler, onMutation } = obj);
   (function registerErrorHandler(errorHandler) {
-    let closure_79 = errorHandler;
+    closure_79 = errorHandler;
   })(errorHandler);
   let tmp17 = !tmp11;
   if (undefined !== recordCrossOriginIframes && recordCrossOriginIframes) {
@@ -5332,7 +5196,7 @@ function record() {
     let _window2 = window;
     tmp17 = window.parent === window;
   }
-  c30 = tmp17;
+  closure_30 = tmp17;
   let flag = false;
   c31 = false;
   if (!tmp17) {
@@ -5350,7 +5214,7 @@ function record() {
   if (tmp17) {
     if (!emit) {
       const _Error = Error;
-      const error = new Error("emit function is required");
+      error = new Error("emit function is required");
       throw error;
     }
   }
@@ -5425,7 +5289,7 @@ function record() {
         items = [];
       }
       for (const item10007 of items) {
-        let obj = item10007;
+        obj = item10007;
         if (item10007.eventProcessor) {
           let tmp2 = item10007;
           let tmp3 = eventProcessorResult;
@@ -5443,32 +5307,32 @@ function record() {
       return eventProcessorResult;
     };
     function le(type) {
-      type.timestamp = outer1_62();
-      const first = outer1_87[0];
+      type.timestamp = closure_1_62();
+      const first = closure_1_87[0];
       let isFrozenResult;
       if (first != null) {
         isFrozenResult = first.isFrozen();
       }
       let tmp2 = !isFrozenResult;
       if (isFrozenResult) {
-        tmp2 = type.type === outer1_73.FullSnapshot;
+        tmp2 = type.type === closure_1_73.FullSnapshot;
       }
       if (!tmp2) {
-        let tmp5 = type.type === outer1_73.IncrementalSnapshot;
+        let tmp5 = type.type === closure_1_73.IncrementalSnapshot;
         if (tmp5) {
-          tmp5 = type.data.source === outer1_74.Mutation;
+          tmp5 = type.data.source === closure_1_74.Mutation;
         }
         tmp2 = tmp5;
       }
       if (!tmp2) {
-        const item = outer1_87.forEach((unfreeze) => unfreeze.unfreeze());
+        const item = closure_1_87.forEach((unfreeze) => unfreeze.unfreeze());
       }
-      if (c30) {
+      if (closure_30) {
         if (emit != null) {
           tmp12(eventProcessor(type), arg1);
         }
       } else if (c31) {
-        const obj = { type: "rrweb", event: null, origin: null, isCheckout: null };
+        obj = { type: "rrweb", event: null, origin: null, isCheckout: null };
         obj[1] = eventProcessor(type);
         const _window = window;
         obj[2] = window.location.origin;
@@ -5476,9 +5340,9 @@ function record() {
         const _window2 = window;
         parent.postMessage(obj, "*");
       }
-      if (type.type === outer1_73.FullSnapshot) {
+      if (type.type === closure_1_73.FullSnapshot) {
         const _undefined = type;
-        let c35 = 0;
+        c35 = 0;
       } else if (type.type === tmp15.IncrementalSnapshot) {
         const sum = c35 + 1;
         c35 = sum;
@@ -5503,21 +5367,21 @@ function record() {
       }
     }
     wrappedMutationEmit = function wrappedMutationEmit(arg0) {
-      let obj = { type: closure_73.IncrementalSnapshot, data: null };
+      obj = { type: closure_73.IncrementalSnapshot, data: null };
       obj = { source: closure_74.Mutation };
       const merged = Object.assign(arg0);
       obj[1] = obj;
       le(obj);
     };
     wrappedScrollEmit = function wrappedScrollEmit(arg0) {
-      let obj = { type: closure_73.IncrementalSnapshot, data: null };
+      obj = { type: closure_73.IncrementalSnapshot, data: null };
       obj = { source: closure_74.Scroll };
       const merged = Object.assign(arg0);
       obj[1] = obj;
       le(obj);
     };
     wrappedCanvasMutationEmit = function wrappedCanvasMutationEmit(arg0) {
-      let obj = { type: closure_73.IncrementalSnapshot, data: null };
+      obj = { type: closure_73.IncrementalSnapshot, data: null };
       obj = { source: closure_74.CanvasMutation };
       const merged = Object.assign(arg0);
       obj[1] = obj;
@@ -5526,27 +5390,27 @@ function record() {
     obj = { mutationCb: null, adoptedStyleSheetCb: null };
     obj[0] = wrappedMutationEmit;
     obj[1] = function adoptedStyleSheetCb(arg0) {
-      let obj = { type: closure_73.IncrementalSnapshot, data: null };
+      obj = { type: closure_73.IncrementalSnapshot, data: null };
       obj = { source: closure_74.AdoptedStyleSheet };
       const merged = Object.assign(arg0);
       obj[1] = obj;
       le(obj);
     };
     let tmp35 = new closure_106(obj);
-    c40 = tmp35;
+    closure_40 = tmp35;
     if (typeof globalThis.__RRWEB_EXCLUDE_IFRAME__ === "boolean") {
       if (globalThis.__RRWEB_EXCLUDE_IFRAME__) {
         let tmp44 = new closure_99();
       }
-      c41 = tmp44;
+      closure_41 = tmp44;
       if (!plugins) {
         plugins = [];
       }
       for (const item10140 of plugins) {
-        let obj5 = item10140;
+        obj5 = item10140;
         if (item10140.getMirror) {
           let tmp50 = item10140;
-          let obj1 = { nodeMirror: null, crossOriginIframeMirror: null, crossOriginIframeStyleMirror: null };
+          obj1 = { nodeMirror: null, crossOriginIframeMirror: null, crossOriginIframeStyleMirror: null };
           let tmp51 = navigation;
           let tmp52 = navigation;
           obj1[0] = navigation;
@@ -5556,13 +5420,13 @@ function record() {
         continue;
       }
       const tmp57 = new closure_107();
-      c42 = tmp57;
-      let obj2 = { mirror: null, win: null, mutationCb: null, recordCanvas: null, blockClass: null, blockSelector: null, unblockSelector: null, maxCanvasSize: null, sampling: null, dataURLOptions: null, errorHandler: null };
+      closure_42 = tmp57;
+      obj2 = { mirror: null, win: null, mutationCb: null, recordCanvas: null, blockClass: null, blockSelector: null, unblockSelector: null, maxCanvasSize: null, sampling: null, dataURLOptions: null, errorHandler: null };
       obj2[0] = navigation;
       let _window4 = window;
       obj2[1] = window;
       obj2[2] = function mutationCb(arg0) {
-        let obj = { type: closure_73.IncrementalSnapshot, data: null };
+        obj = { type: closure_73.IncrementalSnapshot, data: null };
         obj = { source: closure_74.CanvasMutation };
         const merged = Object.assign(arg0);
         obj[1] = obj;
@@ -5591,12 +5455,12 @@ function record() {
           return tmp12;
         }
       })(obj.getCanvasManager, obj2);
-      c43 = tmp61;
+      closure_43 = tmp61;
       if (typeof globalThis.__RRWEB_EXCLUDE_SHADOW_DOM__ !== "boolean") {
-        let obj3 = { mutationCb: null, scrollCb: null, bypassOptions: null, mirror: null };
+        obj3 = { mutationCb: null, scrollCb: null, bypassOptions: null, mirror: null };
         obj3[0] = wrappedMutationEmit;
         obj3[1] = wrappedScrollEmit;
-        let obj4 = { onMutation: null, blockClass: null, blockSelector: null, unblockSelector: null, maskAllText: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, inlineStylesheet: null, maskInputOptions: null, dataURLOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, recordCanvas: null, inlineImages: null, sampling: null, slimDOMOptions: null, iframeManager: null, stylesheetManager: null, canvasManager: null, keepIframeSrcFn: null, processedNodeManager: null, ignoreCSSAttributes: null };
+        obj4 = { onMutation: null, blockClass: null, blockSelector: null, unblockSelector: null, maskAllText: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, inlineStylesheet: null, maskInputOptions: null, dataURLOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, recordCanvas: null, inlineImages: null, sampling: null, slimDOMOptions: null, iframeManager: null, stylesheetManager: null, canvasManager: null, keepIframeSrcFn: null, processedNodeManager: null, ignoreCSSAttributes: null };
         obj4[0] = onMutation;
         obj4[1] = str;
         obj4[2] = tmp;
@@ -5625,27 +5489,15 @@ function record() {
         obj3[2] = obj4;
         obj3[3] = tmp59;
         let tmp66 = new closure_102(obj3);
-        c44 = tmp66;
+        closure_44 = tmp66;
         takeFullSnapshot2 = function takeFullSnapshot2(arg0) {
-          let dataURLOptions;
-          let iframeLoadTimeout;
-          let keepIframeSrcFn;
-          let maskAttributeFn;
-          let maskInputFn;
-          let maskTextFn;
-          let onBlockedImageLoad;
-          let onIframeLoad;
-          let onSerialize;
-          let onStylesheetLoad;
-          let preserveWhiteSpace;
-          let stylesheetLoadTimeout;
           let flag = arg0;
           if (arg0 === undefined) {
             flag = false;
           }
           if (closure_20) {
-            let obj = { type: null, data: null };
-            obj[0] = outer1_73.Meta;
+            obj = { type: null, data: null };
+            obj[0] = closure_1_73.Meta;
             obj = { href: null, width: null, height: null };
             const _window = window;
             obj[0] = window.location.href;
@@ -5691,31 +5543,31 @@ function record() {
             obj[2] = innerHeight;
             obj[1] = obj;
             le(obj, flag);
-            let obj2 = _undefined2;
-            _undefined2.reset();
-            _undefined3.init();
-            const item = outer1_87.forEach((lock) => lock.lock());
+            obj2 = navigation;
+            navigation.reset();
+            closure_44.init();
+            const item = closure_1_87.forEach((lock) => lock.lock());
             const _document9 = document;
             obj = { mirror: null, blockClass: null, blockSelector: null, unblockSelector: null, maskAllText: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, inlineStylesheet: null, maskAllInputs: null, maskAttributeFn: null, maskInputFn: null, maskTextFn: null, slimDOM: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize: null, onIframeLoad: null, onStylesheetLoad: null, onBlockedImageLoad: null, keepIframeSrcFn: null, ignoreCSSAttributes: null };
-            let obj4 = outer1_108;
-            obj[0] = outer1_108;
+            obj4 = closure_1_108;
+            obj[0] = closure_1_108;
             obj[1] = str;
-            obj[2] = c4;
-            obj[3] = c5;
-            obj[4] = c8;
+            obj[2] = blockSelector;
+            obj[3] = unblockSelector;
+            obj[4] = closure_8;
             obj[5] = str3;
-            obj[6] = c10;
-            obj[7] = c11;
-            obj[8] = c12;
-            obj[9] = c13;
+            obj[6] = unmaskTextClass;
+            obj[7] = maskTextSelector;
+            obj[8] = unmaskTextSelector;
+            obj[9] = closure_13;
             obj[10] = maskInputOptions;
             obj[11] = maskAttributeFn;
             obj[12] = maskInputFn;
             obj[13] = maskTextFn;
             obj[14] = obj;
             obj[15] = dataURLOptions;
-            obj[16] = c21;
-            obj[17] = c25;
+            obj[16] = closure_21;
+            obj[17] = closure_25;
             obj[18] = function onSerialize(nodeName) {
               let meta = "IFRAME" === nodeName.nodeName;
               if (meta) {
@@ -5760,20 +5612,19 @@ function record() {
               closure_40.attachLinkElement(nodeName, attributes);
             };
             obj[21] = function onBlockedImageLoad(arg0, id, width) {
-              let obj = { adds: [], removes: [], texts: [], attributes: null };
+              obj = { adds: [], removes: [], texts: [], attributes: null };
               obj = { id: id.id, attributes: null };
-              obj = { style: null };
-              obj[0] = { width: "" + width.width + "px", height: "" + width.height + "px" };
+              obj = { style: { width: "" + width.width + "px", height: "" + width.height + "px" } };
               obj[1] = obj;
               const items = [obj];
               obj[3] = items;
               if (typeof closure_37 !== "function") {
                 HermesBuiltin.throwTypeError();
               }
-              const obj2 = { type: outer1_73.IncrementalSnapshot, data: null };
+              obj2 = { type: closure_1_73.IncrementalSnapshot, data: null };
               const merged = Object.assign(obj);
-              obj2[1] = { source: outer1_74.Mutation };
-              outer1_103(obj2);
+              obj2[1] = { source: closure_1_74.Mutation };
+              closure_1_103(obj2);
             };
             obj[22] = fn;
             obj[23] = ignoreCSSAttributes;
@@ -5786,33 +5637,33 @@ function record() {
             if (undefined !== blockClass) {
               str = blockClass;
             }
-            const blockSelector = obj.blockSelector;
+            blockSelector = obj.blockSelector;
             let tmp31 = null;
             if (undefined !== blockSelector) {
               tmp31 = blockSelector;
             }
-            const unblockSelector = obj.unblockSelector;
+            unblockSelector = obj.unblockSelector;
             let tmp32 = null;
             if (undefined !== unblockSelector) {
               tmp32 = unblockSelector;
             }
             const maskAllText = obj.maskAllText;
             const maskTextClass = obj.maskTextClass;
-            let str2 = "rr-mask";
+            str2 = "rr-mask";
             if (undefined !== maskTextClass) {
               str2 = maskTextClass;
             }
-            const unmaskTextClass = obj.unmaskTextClass;
+            unmaskTextClass = obj.unmaskTextClass;
             let tmp34 = null;
             if (undefined !== unmaskTextClass) {
               tmp34 = unmaskTextClass;
             }
-            const maskTextSelector = obj.maskTextSelector;
+            maskTextSelector = obj.maskTextSelector;
             let tmp35 = null;
             if (undefined !== maskTextSelector) {
               tmp35 = maskTextSelector;
             }
-            const unmaskTextSelector = obj.unmaskTextSelector;
+            unmaskTextSelector = obj.unmaskTextSelector;
             let tmp36 = null;
             if (undefined !== unmaskTextSelector) {
               tmp36 = unmaskTextSelector;
@@ -5833,7 +5684,7 @@ function record() {
               keepIframeSrcFn = () => false;
             }
             ignoreCSSAttributes = obj.ignoreCSSAttributes;
-            const obj1 = { doc: null, mirror: null, blockClass: null, blockSelector: null, unblockSelector: null, maskAllText: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: false, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, inlineImages: null, recordCanvas: null, preserveWhiteSpace: null, onSerialize: null, onIframeLoad: null, iframeLoadTimeout: null, onBlockedImageLoad: null, onStylesheetLoad: null, stylesheetLoadTimeout: null, keepIframeSrcFn: null, newlyAddedElement: false, ignoreCSSAttributes: null };
+            obj1 = { doc: null, mirror: null, blockClass: null, blockSelector: null, unblockSelector: null, maskAllText: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: false, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, inlineImages: null, recordCanvas: null, preserveWhiteSpace: null, onSerialize: null, onIframeLoad: null, iframeLoadTimeout: null, onBlockedImageLoad: null, onStylesheetLoad: null, stylesheetLoadTimeout: null, keepIframeSrcFn: null, newlyAddedElement: false, ignoreCSSAttributes: null };
             obj1[0] = _document9;
             obj1[1] = mirror;
             obj1[2] = str;
@@ -5856,7 +5707,7 @@ function record() {
             obj1[15] = maskInputFn;
             if (true !== tmp40) {
               if ("all" !== tmp40) {
-                let obj3 = tmp40;
+                obj3 = tmp40;
                 if (false === tmp40) {
                   obj3 = {};
                 }
@@ -5882,10 +5733,10 @@ function record() {
               if (tmp41Result) {
                 obj4 = { type: null, data: null };
                 obj4[0] = tmp2.FullSnapshot;
-                const obj5 = { node: null, initialOffset: null };
+                obj5 = { node: null, initialOffset: null };
                 obj5[0] = tmp41Result;
                 const _window4 = window;
-                obj5[1] = outer1_63(window);
+                obj5[1] = closure_1_63(window);
                 obj4[1] = obj5;
                 le(obj4);
                 const item1 = arr.forEach((unlock) => unlock.unlock());
@@ -5907,14 +5758,14 @@ function record() {
             const obj6 = { script: true, comment: true, headFavicon: true, headWhitespace: true, headMetaDescKeywords: null, headMetaSocial: true, headMetaRobots: true, headMetaHttpEquiv: true, headMetaAuthorship: true, headMetaVerification: true };
             obj6[4] = "all" === tmp40;
             obj3 = obj6;
-            arr = outer1_87;
+            arr = closure_1_87;
             const tmp = le;
-            tmp2 = outer1_73;
+            tmp2 = closure_1_73;
             const tmp33 = undefined !== maskAllText && maskAllText;
             const tmp37 = undefined === inlineStylesheet || inlineStylesheet;
             tmp38 = undefined !== inlineImages && inlineImages;
             tmp39 = undefined !== recordCanvas && recordCanvas;
-            tmp41 = outer1_58;
+            tmp41 = closure_1_58;
           }
         };
       } else {
@@ -5933,8 +5784,8 @@ function record() {
   obj = { script: true, comment: true, headFavicon: true, headWhitespace: true, headMetaSocial: true, headMetaRobots: true, headMetaHttpEquiv: true, headMetaVerification: true, headMetaAuthorship: tmp29, headMetaDescKeywords: tmp29 };
 }
 function addBreadcrumbEvent(triggerUserActivity, category) {
-  let closure_0 = triggerUserActivity;
-  let closure_1 = category;
+  closure_0 = triggerUserActivity;
+  closure_1 = category;
   if ("sentry.transaction" !== category.category) {
     const items = ["ui.click", "ui.input"];
     if (items.includes(category.category)) {
@@ -5943,17 +5794,16 @@ function addBreadcrumbEvent(triggerUserActivity, category) {
       const result = triggerUserActivity.checkAndHandleExpiredSession();
     }
     triggerUserActivity.addUpdate(() => {
-      let obj = { type: outer1_73.Custom, timestamp: null, data: null };
-      let num = tmp4.timestamp;
+      obj = { type: closure_1_73.Custom, timestamp: null, data: null };
+      let num = _null.timestamp;
       if (!num) {
         num = 0;
       }
       obj[1] = 1000 * num;
-      obj = { tag: "breadcrumb", payload: null };
-      obj[1] = obj(tmp4[8]).normalize(tmp4, 10, 1000);
+      obj = { tag: "breadcrumb", payload: obj(_null[8]).normalize(_null, 10, 1000) };
       obj[2] = obj;
       obj.throttledAddEvent(obj);
-      return "console" === tmp4.category;
+      return "console" === _null.category;
     });
   }
 }
@@ -6046,7 +5896,7 @@ function getBaseDomBreadcrumb(arg0, message) {
       tmp5 = meta;
     }
   }
-  let obj = { message, data: null };
+  obj = { message, data: null };
   if (tmp5) {
     obj = { nodeId: null, node: null };
     obj[0] = id;
@@ -6068,7 +5918,7 @@ function getBaseDomBreadcrumb(arg0, message) {
     if (data_sentry_element) {
       attributes["data-sentry-component"] = attributes["data-sentry-element"];
     }
-    const obj1 = {};
+    obj1 = {};
     for (const key10049 in attributes) {
       let tmp10 = key10049;
       let tmp11 = set2;
@@ -6090,7 +5940,7 @@ function getBaseDomBreadcrumb(arg0, message) {
     }
     obj[3] = obj1;
     obj[1] = obj;
-    let obj2 = obj;
+    obj2 = obj;
     const arr = Array.from(tmp5.childNodes);
   } else {
     obj2 = {};
@@ -6106,8 +5956,6 @@ function createPerformanceEntry(arg0) {
   return tmpResult;
 }
 function getLargestContentfulPaint(arg0) {
-  let rating;
-  let value;
   let element;
   if (arg0.entries[arg0.entries.length - 1] != null) {
     element = tmp.element;
@@ -6118,8 +5966,8 @@ function getLargestContentfulPaint(arg0) {
     tmp3 = items;
   }
   ({ value, rating } = arg0);
-  let obj = require(817) /* registerSpanErrorInstrumentation */;
-  const result = ((obj.browserPerformanceTimeOrigin() || require(817) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
+  obj = registerSpanErrorInstrumentation;
+  const result = ((obj.browserPerformanceTimeOrigin() || registerSpanErrorInstrumentation.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
   obj = { type: "web-vital", name: "largest-contentful-paint", start: result, end: result, data: null };
   obj = { value, size: value, rating, nodeIds: null, attributions: "find" };
   let mapped;
@@ -6164,7 +6012,7 @@ function getCumulativeLayoutShift(rating) {
         }
         continue;
       }
-      let obj = { value: null, nodeIds: null };
+      obj = { value: null, nodeIds: null };
       let tmp15 = item10012;
       obj[0] = iter.value;
       let tmp16 = items2;
@@ -6180,8 +6028,6 @@ function getCumulativeLayoutShift(rating) {
   return getWebVital(rating, "cumulative-layout-shift", items1, items);
 }
 function getInteractionToNextPaint(arg0) {
-  let rating;
-  let value;
   let target;
   if (arg0.entries[arg0.entries.length - 1] != null) {
     target = tmp.target;
@@ -6192,8 +6038,8 @@ function getInteractionToNextPaint(arg0) {
     tmp3 = items;
   }
   ({ value, rating } = arg0);
-  let obj = require(817) /* registerSpanErrorInstrumentation */;
-  const result = ((obj.browserPerformanceTimeOrigin() || require(817) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
+  obj = registerSpanErrorInstrumentation;
+  const result = ((obj.browserPerformanceTimeOrigin() || registerSpanErrorInstrumentation.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
   obj = { type: "web-vital", name: "interaction-to-next-paint", start: result, end: result, data: null };
   obj = { value, size: value, rating, nodeIds: null, attributions: "find" };
   let mapped;
@@ -6209,8 +6055,8 @@ function getInteractionToNextPaint(arg0) {
 }
 function getWebVital(rating, name, items1, items) {
   const value = rating.value;
-  let obj = require(817) /* registerSpanErrorInstrumentation */;
-  const result = ((obj.browserPerformanceTimeOrigin() || require(817) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
+  obj = registerSpanErrorInstrumentation;
+  const result = ((obj.browserPerformanceTimeOrigin() || registerSpanErrorInstrumentation.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
   obj = { type: "web-vital", name, start: result, end: result, data: null };
   obj = { value, size: value, rating: rating.rating, nodeIds: null, attributions: null };
   let mapped;
@@ -6227,9 +6073,9 @@ function getWebVital(rating, name, items1, items) {
 }
 function hasSessionStorage() {
   try {
-    let sessionStorage = "sessionStorage" in require(817) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ;
+    let sessionStorage = "sessionStorage" in registerSpanErrorInstrumentation.GLOBAL_OBJ;
     if (sessionStorage) {
-      sessionStorage = require(817) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.sessionStorage;
+      sessionStorage = registerSpanErrorInstrumentation.GLOBAL_OBJ.sessionStorage;
     }
     return sessionStorage;
   } catch (err) {
@@ -6251,7 +6097,7 @@ function clearSession(arg0) {
 function saveSession(arg0) {
   if (hasSessionStorage()) {
     try {
-      const sessionStorage = require(817) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.sessionStorage;
+      const sessionStorage = registerSpanErrorInstrumentation.GLOBAL_OBJ.sessionStorage;
       const _JSON = JSON;
       const result = sessionStorage.setItem(sentryReplaySession, JSON.stringify(arg0));
     } catch (err) {
@@ -6262,20 +6108,18 @@ function makeSession(id) {
   const timestamp = Date.now();
   id = id.id;
   if (!id) {
-    let obj = require(817) /* registerSpanErrorInstrumentation */;
+    obj = registerSpanErrorInstrumentation;
     id = obj.uuid4();
   }
   obj = { id, started: tmp4, lastActivity: tmp5, segmentId: tmp6, sampled: id.sampled, previousSessionId: id.previousSessionId, dirty: tmp7 };
   return obj;
 }
 function createSession(allowBuffering, arg1) {
-  let sessionSampleRate;
-  let stickySession;
   ({ sessionSampleRate, stickySession } = allowBuffering);
   if (stickySession === undefined) {
     stickySession = false;
   }
-  let obj = arg1;
+  obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -6293,8 +6137,8 @@ function createSession(allowBuffering, arg1) {
   const timestamp = Date.now();
   let id = obj.id;
   if (!id) {
-    id = require(817) /* registerSpanErrorInstrumentation */.uuid4();
-    const obj3 = require(817) /* registerSpanErrorInstrumentation */;
+    id = registerSpanErrorInstrumentation.uuid4();
+    obj3 = registerSpanErrorInstrumentation;
   }
   obj = { id, started: tmp7, lastActivity: tmp8, segmentId: tmp9, sampled: obj.sampled, previousSessionId: obj.previousSessionId, dirty: tmp10 };
   if (stickySession) {
@@ -6303,9 +6147,6 @@ function createSession(allowBuffering, arg1) {
   return obj;
 }
 function isSessionExpired(started) {
-  let maxReplayDuration;
-  let sessionIdleExpire;
-  let targetTime;
   ({ maxReplayDuration, sessionIdleExpire, targetTime } = arg1);
   if (targetTime === undefined) {
     const _Date = Date;
@@ -6346,9 +6187,6 @@ function isSessionExpired(started) {
   return tmp9;
 }
 function loadOrCreateSession(arg0, stickySession) {
-  let maxReplayDuration;
-  let previousSessionId;
-  let sessionIdleExpire;
   stickySession = stickySession.stickySession;
   ({ sessionIdleExpire, maxReplayDuration, previousSessionId } = arg0);
   if (stickySession) {
@@ -6376,7 +6214,7 @@ function loadOrCreateSession(arg0, stickySession) {
     })();
   }
   if (stickySession) {
-    let obj = { sessionIdleExpire: null, maxReplayDuration: null };
+    obj = { sessionIdleExpire: null, maxReplayDuration: null };
     obj[0] = sessionIdleExpire;
     obj[1] = maxReplayDuration;
     let tmp7 = isSessionExpired(stickySession, obj);
@@ -6457,13 +6295,13 @@ function _addEvent(eventBuffer, timestamp, arg2) {
 }
 function _addEvent3() {
   const self = this;
-  const tmp = asyncGeneratorStep((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+  const tmp = callback((arg0, arg1, arg2) => {
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c8 === 2) {
         c8 = 3;
@@ -6472,11 +6310,11 @@ function _addEvent3() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -6492,16 +6330,16 @@ function _addEvent3() {
               return obj;
             } else {
               let str = tmp3;
-              let c3 = tmp5;
+              closure_3 = tmp5;
               let eventBuffer;
-              let c2;
-              c3 = undefined;
+              closure_2 = undefined;
+              closure_3 = undefined;
               str = undefined;
               let client;
-              let c6;
+              c6 = undefined;
               eventBuffer = lib.eventBuffer;
               if (eventBuffer) {
-                c2 = tmp38;
+                closure_2 = tmp38;
                 c6 = 1;
                 let tmp39 = tmp51;
                 if (tmp51) {
@@ -6534,13 +6372,13 @@ function _addEvent3() {
                 if (tmp41) {
                   c7 = 2;
                   c8 = 1;
-                  const obj1 = { value: null, done: false };
+                  obj1 = { value: null, done: false };
                   obj1[0] = eventBuffer.addEvent(tmp41);
                   return obj1;
                 } else {
                   c6 = 0;
                   c8 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
               c8 = 3;
@@ -6553,23 +6391,23 @@ function _addEvent3() {
             if (c7) {
               tmp12 = c7 instanceof closure_134;
             }
-            c3 = tmp12;
+            closure_3 = tmp12;
             str = "addEvent";
-            if (c3) {
+            if (closure_3) {
               str = "addEventSizeExceeded";
             }
-            let obj3 = lib(eventBuffer[8]);
+            obj3 = lib(eventBuffer[8]);
             client = obj3.getClient();
             if (client) {
               let str2 = "internal_sdk_error";
-              if (c3) {
+              if (closure_3) {
                 str2 = "buffer_overflow";
               }
               c6 = str2;
               client.recordDroppedEvent(c6, "replay");
             }
-            if (c3) {
-              if (c2) {
+            if (closure_3) {
+              if (closure_2) {
                 eventBuffer.clear();
                 eventBuffer.waitForCheckout = true;
                 c8 = 3;
@@ -6577,7 +6415,7 @@ function _addEvent3() {
               }
             }
             lib.handleException(c7);
-            const obj2 = { reason: null };
+            obj2 = { reason: null };
             obj2[0] = str;
             c7 = 3;
             c8 = 1;
@@ -6591,13 +6429,13 @@ function _addEvent3() {
             } else if (arg0 === 2) {
               c6 = 0;
               c8 = 3;
-              const obj4 = { value: null, done: true };
+              obj4 = { value: null, done: true };
               obj4[0] = arg1;
               return obj4;
             } else {
               c6 = 0;
               c8 = 3;
-              const obj5 = { value: null, done: true };
+              obj5 = { value: null, done: true };
               obj5[0] = arg1;
               return obj5;
             }
@@ -6611,7 +6449,7 @@ function _addEvent3() {
             return obj;
           } else {
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp42) {
           client = tmp42;
@@ -6625,7 +6463,7 @@ function _addEvent3() {
       }
     })();
   });
-  const _addEvent3 = tmp;
+  closure_148 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -6635,7 +6473,7 @@ function _addEvent3() {
   return applyArgumentsResult;
 }
 function resetReplayIdOnDynamicSamplingContext() {
-  const currentScope = require(817) /* registerSpanErrorInstrumentation */.getCurrentScope();
+  const currentScope = registerSpanErrorInstrumentation.getCurrentScope();
   if (currentScope.getPropagationContext().dsc) {
     delete tmp4[tmp3];
   }
@@ -6648,10 +6486,10 @@ function resetReplayIdOnDynamicSamplingContext() {
   }
 }
 function createPerformanceSpans(arg0, arr) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return arr.map((op) => {
     const start = op.start;
-    obj = { type: outer1_73.Custom, timestamp: start, data: { tag: "performanceSpan", payload: obj } };
+    obj = { type: closure_1_73.Custom, timestamp: start, data: { tag: "performanceSpan", payload: obj } };
     obj = { op: op.type, description: op.name, startTimestamp: start, endTimestamp: op.end, data: op.data };
     let throttledAddEventResult = closure_0.throttledAddEvent(obj);
     if (typeof throttledAddEventResult === "string") {
@@ -6662,7 +6500,7 @@ function createPerformanceSpans(arg0, arr) {
 }
 function addNetworkBreadcrumb(isEnabled, name) {
   const _require = isEnabled;
-  const dependencyMap = name;
+  dependencyMap = name;
   let isEnabledResult = isEnabled.isEnabled();
   if (isEnabledResult) {
     isEnabledResult = null !== name;
@@ -6673,16 +6511,16 @@ function addNetworkBreadcrumb(isEnabled, name) {
       isSentryRequestUrlResult = !isEnabled.getOptions()._experiments.traceInternals;
     }
     if (isSentryRequestUrlResult) {
-      const obj = _require(817);
+      obj = _require(817);
       isSentryRequestUrlResult = obj.isSentryRequestUrl(name.name, _require(817).getClient());
-      const obj2 = _require(817);
+      obj2 = _require(817);
     }
     if (!isSentryRequestUrlResult) {
       isEnabled.addUpdate(() => {
         const items = [closure_1];
         const mapped = items.map((op) => {
           const start = op.start;
-          obj = { type: outer1_73.Custom, timestamp: start, data: { tag: "performanceSpan", payload: obj } };
+          obj = { type: closure_1_73.Custom, timestamp: start, data: { tag: "performanceSpan", payload: obj } };
           obj = { op: op.type, description: op.name, startTimestamp: start, endTimestamp: op.end, data: op.data };
           let throttledAddEventResult = closure_0.throttledAddEvent(obj);
           if (typeof throttledAddEventResult === "string") {
@@ -6709,7 +6547,7 @@ function getBodySize(fetchRequestArgBody) {
         } else {
           const _FormData = FormData;
           if (fetchRequestArgBody instanceof FormData) {
-            return textEncoder.encode(require(1033) /* addClsInstrumentationHandler */.serializeFormData(fetchRequestArgBody)).length;
+            return textEncoder.encode(addClsInstrumentationHandler.serializeFormData(fetchRequestArgBody)).length;
           } else {
             const _Blob = Blob;
             if (fetchRequestArgBody instanceof Blob) {
@@ -6728,7 +6566,7 @@ function getBodySize(fetchRequestArgBody) {
   }
 }
 function mergeWarning(_meta) {
-  let obj = {};
+  obj = {};
   if (_meta) {
     const merged = Object.assign(_meta._meta);
     const tmp3 = obj.warnings || [];
@@ -6738,7 +6576,7 @@ function mergeWarning(_meta) {
     _meta._meta = obj;
     return _meta;
   } else {
-    obj = { headers: null, size: "Array", _meta: null };
+    obj = { headers: null, size: "Array", _meta: -1 };
     obj[0] = obj;
     obj = { warnings: null };
     const items1 = [arg1];
@@ -6750,7 +6588,7 @@ function mergeWarning(_meta) {
 function makeNetworkReplayBreadcrumb(arg0, startTimestamp) {
   let tmp = null;
   if (startTimestamp) {
-    let obj = { type: null, start: null, end: null, name: null, data: null };
+    obj = { type: null, start: null, end: null, name: null, data: null };
     obj[0] = arg0;
     obj[1] = startTimestamp.startTimestamp / 1000;
     obj[2] = startTimestamp.endTimestamp / 1000;
@@ -6766,12 +6604,11 @@ function buildSkippedNetworkRequestOrResponse(size) {
   return { headers: {}, size, _meta: { warnings: ["URL_SKIPPED"] } };
 }
 function buildNetworkRequestOrResponse(arg0, arg1, body) {
-  let warnings;
   if (!arg1) {
     const _Object = Object;
   }
   if (arg1) {
-    let obj = { headers: null, size: null };
+    obj = { headers: null, size: null };
     obj[0] = arg0;
     obj[1] = arg1;
     if (body) {
@@ -6795,7 +6632,7 @@ function buildNetworkRequestOrResponse(arg0, arg1, body) {
             })(body);
             if (tmp6) {
               const substr = body.slice(0, tmp5);
-              let obj = { body: null, warnings: null };
+              obj = { body: null, warnings: null };
               if (tmp7) {
                 obj[0] = substr;
                 obj[1] = ["MAYBE_JSON_TRUNCATED"];
@@ -6846,7 +6683,7 @@ function buildNetworkRequestOrResponse(arg0, arg1, body) {
   }
 }
 function urlMatches(str) {
-  const baseURI = require(817) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.document.baseURI;
+  const baseURI = registerSpanErrorInstrumentation.GLOBAL_OBJ.document.baseURI;
   let substr = str;
   if (!str.startsWith("http://")) {
     substr = str;
@@ -6871,21 +6708,21 @@ function urlMatches(str) {
       }
     }
   }
-  return require(817) /* registerSpanErrorInstrumentation */.stringMatchesSomePattern(substr, arg1);
+  return registerSpanErrorInstrumentation.stringMatchesSomePattern(substr, arg1);
 }
 function _captureFetchBreadcrumbToReplay() {
   let self = this;
-  const tmp = asyncGeneratorStep((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+  const tmp = callback((arg0, arg1, arg2) => {
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
-      let closure_4 = tmp3;
+      closure_4 = tmp3;
       const replay = closure_2;
-      let c6 = 1;
+      c6 = 1;
       yield (function _prepareFetchData(closure_0, closure_1, closure_2) {
         const self = this;
         const apply = closure_159.apply;
@@ -6898,11 +6735,11 @@ function _captureFetchBreadcrumbToReplay() {
       })(replay, closure_1, closure_2);
       if (1 === tmp7) {
         c6 = 0;
-        let closure_3 = closure_5;
+        closure_3 = closure_5;
         if (closure_130) {
           closure_133.exception(closure_3, "Failed to capture fetch breadcrumb");
         }
-        let c8 = 3;
+        c8 = 3;
       } else if (arg0 === 1) {
         c8 = 3;
         throw arg1;
@@ -6916,7 +6753,7 @@ function _captureFetchBreadcrumbToReplay() {
       return arg1;
     })();
   });
-  const _captureFetchBreadcrumbToReplay = tmp;
+  closure_158 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -6927,17 +6764,13 @@ function _captureFetchBreadcrumbToReplay() {
 }
 function _prepareFetchData2() {
   let self = this;
-  const tmp = asyncGeneratorStep((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c4 = 0;
-    let c5 = 0;
+  const tmp = callback((arg0, arg1, arg2) => {
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0, arg1, arg2) {
-      let c3;
-      let request_body_size;
-      let response_body_size;
-      let status_code;
       if (c5 === 2) {
         c5 = 3;
         HermesBuiltin.throwTypeError();
@@ -6945,11 +6778,11 @@ function _prepareFetchData2() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -6971,7 +6804,7 @@ function _prepareFetchData2() {
               c3 = undefined;
               c4 = undefined;
               c5 = undefined;
-              let closure_6;
+              closure_6 = undefined;
               const _Date = Date;
               const timestamp = Date.now();
               startTimestamp = endTimestamp.startTimestamp;
@@ -6990,22 +6823,19 @@ function _prepareFetchData2() {
               }
               c4 = status_code;
               ({ request_body_size, response_body_size } = data);
-              let tmp15 = outer1_157(url, tmp30.networkDetailAllowUrls);
+              let tmp15 = closure_1_157(url, tmp30.networkDetailAllowUrls);
               if (tmp15) {
                 tmp15 = !tmp14(url, tmp30.networkDetailDenyUrls);
               }
               if (tmp15) {
                 let tmp17 = (function _getRequestInfo(networkRequestHeaders, input, request_body_size) {
-                  let tmp20;
-                  let tmp21;
-                  let warnings;
                   let prop = networkRequestHeaders.networkRequestHeaders;
                   if (input) {
                     if (1 === input.length) {
                       if (typeof input[0] !== "string") {
                         const first = input[0];
                         if (!first) {
-                          let obj = {};
+                          obj = {};
                         }
                         let headers = first.headers;
                         if (!headers) {
@@ -7021,7 +6851,7 @@ function _prepareFetchData2() {
                               prop[arg0] = headers1.get(arg0);
                             }
                           });
-                          let obj1 = headers;
+                          obj1 = headers;
                         } else {
                           const _Array2 = Array;
                           if (Array.isArray(headers)) {
@@ -7031,8 +6861,6 @@ function _prepareFetchData2() {
                             const _Object2 = Object;
                             const entries = Object.entries(headers);
                             obj1 = entries.reduce((arg0, arg1) => {
-                              let str;
-                              let tmp;
                               [str, tmp] = arg1;
                               const formatted = str.toLowerCase();
                               let hasItem = networkResponseHeaders.includes(formatted);
@@ -7060,7 +6888,7 @@ function _prepareFetchData2() {
                               prop[arg0] = headers1.get(arg0);
                             }
                           });
-                          let obj3 = headers1;
+                          obj3 = headers1;
                         } else {
                           const _Array = Array;
                           if (Array.isArray(headers1)) {
@@ -7069,8 +6897,6 @@ function _prepareFetchData2() {
                             const _Object = Object;
                             const entries1 = Object.entries(headers1);
                             obj3 = entries1.reduce((arg0, arg1) => {
-                              let str;
-                              let tmp;
                               [str, tmp] = arg1;
                               const formatted = str.toLowerCase();
                               let hasItem = networkResponseHeaders.includes(formatted);
@@ -7085,7 +6911,7 @@ function _prepareFetchData2() {
                           }
                         }
                       } else {
-                        let obj4 = {};
+                        obj4 = {};
                       }
                     } else {
                       obj4 = {};
@@ -7099,7 +6925,7 @@ function _prepareFetchData2() {
                       [tmp20, tmp21] = callback(obj12.getBodyString(fetchRequestArgBody, closure_133), 2);
                       if (request_body_size) {
                         if (request_body_size) {
-                          const obj5 = { headers: null, size: null };
+                          obj5 = { headers: null, size: null };
                           obj5[0] = obj;
                           obj5[1] = request_body_size;
                           if (tmp20) {
@@ -7109,7 +6935,7 @@ function _prepareFetchData2() {
                                   const tmp7 = (function _strIsProbablyJson() { ... })(body);
                                   if (tmp6) {
                                     const substr = body.slice(0, tmp5);
-                                    let obj = { body: null, warnings: null };
+                                    obj = { body: null, warnings: null };
                                     if (tmp7) {
                                       obj[0] = substr;
                                       obj[1] = ["MAYBE_JSON_TRUNCATED"];
@@ -7157,7 +6983,7 @@ function _prepareFetchData2() {
                                   const tmp7 = (function _strIsProbablyJson() { ... })(body);
                                   if (tmp6) {
                                     const substr = body.slice(0, tmp5);
-                                    let obj = { body: null, warnings: null };
+                                    obj = { body: null, warnings: null };
                                     if (tmp7) {
                                       obj[0] = substr;
                                       obj[1] = ["MAYBE_JSON_TRUNCATED"];
@@ -7210,7 +7036,7 @@ function _prepareFetchData2() {
                           tmp23._meta = obj8;
                           let obj9 = tmp23;
                         } else {
-                          obj9 = { headers: null, size: "Array", _meta: null };
+                          obj9 = { headers: null, size: "Array", _meta: -1 };
                           obj9[0] = obj8;
                           const obj10 = { warnings: null };
                           const items1 = [tmp21];
@@ -7242,7 +7068,7 @@ function _prepareFetchData2() {
                   }
                 })(tmp30, tmp29.input, request_body_size);
               } else {
-                tmp17 = outer1_155(request_body_size);
+                tmp17 = closure_1_155(request_body_size);
               }
               c5 = tmp17;
               (function _getResponseInfo(arg0, arg1, response, response_body_size) {
@@ -7257,7 +7083,7 @@ function _prepareFetchData2() {
               })(tmp15, url, endTimestamp.response, response_body_size);
               c4 = 1;
               c5 = 1;
-              tmp14 = outer1_157;
+              tmp14 = closure_1_157;
               const tmp28 = startTimestamp;
             }
           } else if (arg0 === 1) {
@@ -7265,7 +7091,7 @@ function _prepareFetchData2() {
             throw arg1;
           } else if (arg0 === 2) {
             c5 = 3;
-            let obj1 = { value: null, done: true };
+            obj1 = { value: null, done: true };
             obj1[0] = arg1;
             return obj1;
           } else {
@@ -7279,7 +7105,7 @@ function _prepareFetchData2() {
             obj[5] = c5;
             obj[6] = closure_6;
             c5 = 3;
-            const obj2 = { value: null, done: true };
+            obj2 = { value: null, done: true };
             obj2[0] = obj;
             return obj2;
           }
@@ -7290,7 +7116,7 @@ function _prepareFetchData2() {
       }
     })();
   });
-  const _prepareFetchData2 = tmp;
+  closure_159 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -7301,16 +7127,14 @@ function _prepareFetchData2() {
 }
 function _getResponseInfo2() {
   let self = this;
-  const tmp = asyncGeneratorStep((arg0, arg1, arg2, arg3) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let closure_3 = arg3;
-    let c6 = 0;
-    let c7 = 0;
+  const tmp = callback((arg0, arg1, arg2, arg3) => {
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    closure_3 = arg3;
+    c6 = 0;
+    c7 = 0;
     const iter = (function*(arg0, arg1, arg2, arg3) {
-      let c1;
-      let c2;
       if (dependencyMap === 2) {
         dependencyMap = 3;
         HermesBuiltin.throwTypeError();
@@ -7318,11 +7142,11 @@ function _getResponseInfo2() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -7337,8 +7161,8 @@ function _getResponseInfo2() {
               obj[0] = arg1;
               return obj;
             } else {
-              let obj3 = tmp5;
-              let closure_4 = tmp2;
+              obj3 = tmp5;
+              closure_4 = tmp2;
               c1 = undefined;
               c2 = undefined;
               let headers;
@@ -7349,9 +7173,9 @@ function _getResponseInfo2() {
               obj3 = undefined;
               v0 = undefined;
               dependencyMap = undefined;
-              let closure_8;
-              let closure_9;
-              let closure_10;
+              closure_8 = undefined;
+              closure_9 = undefined;
+              closure_10 = undefined;
               v0 = 1;
               dependencyMap = 1;
               return { value: "ct", done: true };
@@ -7362,15 +7186,15 @@ function _getResponseInfo2() {
               throw arg1;
             } else if (arg0 === 2) {
               dependencyMap = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
               if (!closure_0) {
                 if (undefined !== closure_4) {
                   dependencyMap = 3;
-                  const obj2 = { value: null, done: true };
-                  obj2[0] = outer1_155(closure_4);
+                  obj2 = { value: null, done: true };
+                  obj2[0] = closure_1_155(closure_4);
                   return obj2;
                 }
               }
@@ -7382,7 +7206,7 @@ function _getResponseInfo2() {
               if (headers) {
                 v0 = 2;
                 dependencyMap = 1;
-                const obj4 = { value: null, done: false };
+                obj4 = { value: null, done: false };
                 obj4[0] = (function _parseFetchResponseBody(closure_3) {
                   const self = this;
                   const apply = closure_161.apply;
@@ -7396,8 +7220,8 @@ function _getResponseInfo2() {
                 return obj4;
               }
               dependencyMap = 3;
-              const obj5 = { value: null, done: true };
-              obj5[0] = outer1_156(obj3, closure_4, undefined);
+              obj5 = { value: null, done: true };
+              obj5[0] = closure_1_156(obj3, closure_4, undefined);
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -7464,7 +7288,7 @@ function _getResponseInfo2() {
     iter.next();
     return iter;
   });
-  const _getResponseInfo2 = tmp;
+  closure_160 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -7475,11 +7299,11 @@ function _getResponseInfo2() {
 }
 function _parseFetchResponseBody2() {
   let self = this;
-  const tmp = asyncGeneratorStep((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+  const tmp = callback((arg0) => {
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c6 === 2) {
         c6 = 3;
@@ -7488,11 +7312,11 @@ function _parseFetchResponseBody2() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -7507,9 +7331,9 @@ function _parseFetchResponseBody2() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_2 = tmp3;
+              closure_2 = tmp3;
               let message = tmp7;
-              let closure_0;
+              closure_0 = undefined;
               const tmp28 = (function _tryCloneResponse(closure_0) {
                 try {
                   return closure_0.clone();
@@ -7520,17 +7344,17 @@ function _parseFetchResponseBody2() {
                 }
               })(closure_0);
               if (tmp28) {
-                let c4 = 1;
+                c4 = 1;
                 c5 = 2;
                 c6 = 1;
-                const obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = (function _tryGetResponseText(arg0) {
-                  let closure_0 = arg0;
+                  closure_0 = arg0;
                   return new Promise((closure_0) => {
                     const callback = closure_0;
-                    let closure_1 = arg1;
-                    const timeout = callback(outer1_1[9]).setTimeout(() => { ... }, 500);
-                    const obj = callback(outer1_1[9]);
+                    closure_1 = arg1;
+                    const timeout = callback(closure_1_1[9]).setTimeout(() => { ... }, 500);
+                    obj = callback(closure_1_1[9]);
                     const promise = (function _getResponseText() { ... })(callback);
                     (function _getResponseText() { ... })(callback).then(() => { ... }, () => { ... }).finally(() => { ... });
                   });
@@ -7539,7 +7363,7 @@ function _parseFetchResponseBody2() {
               } else {
                 const items = [undefined, "BODY_PARSE_ERROR"];
                 c6 = 3;
-                const obj2 = { value: null, done: true };
+                obj2 = { value: null, done: true };
                 obj2[0] = items;
                 return obj2;
               }
@@ -7567,7 +7391,7 @@ function _parseFetchResponseBody2() {
           } else if (arg0 === 2) {
             c4 = 0;
             c6 = 3;
-            const obj3 = { value: null, done: true };
+            obj3 = { value: null, done: true };
             obj3[0] = arg1;
             return obj3;
           } else {
@@ -7591,7 +7415,7 @@ function _parseFetchResponseBody2() {
       }
     })();
   });
-  const _parseFetchResponseBody2 = tmp;
+  closure_161 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -7601,8 +7425,8 @@ function _parseFetchResponseBody2() {
   return applyArgumentsResult;
 }
 function getAllHeaders(arg0, arr) {
-  let closure_0 = arg0;
-  const obj = {};
+  closure_0 = arg0;
+  obj = {};
   const item = arr.forEach((arg0) => {
     if (headers1.get(arg0)) {
       prop[arg0] = headers1.get(arg0);
@@ -7612,16 +7436,16 @@ function getAllHeaders(arg0, arr) {
 }
 function _getResponseText2() {
   const self = this;
-  const tmp = asyncGeneratorStep((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+  const tmp = callback((arg0) => {
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       yield closure_0.text();
       return arg1;
     })();
   });
-  const _getResponseText2 = tmp;
+  closure_163 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -7632,13 +7456,13 @@ function _getResponseText2() {
 }
 function _captureXhrBreadcrumbToReplay() {
   const self = this;
-  const tmp = asyncGeneratorStep((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+  const tmp = callback((arg0, arg1, arg2) => {
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c8 === 2) {
         c8 = 3;
@@ -7647,11 +7471,11 @@ function _captureXhrBreadcrumbToReplay() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -7667,21 +7491,10 @@ function _captureXhrBreadcrumbToReplay() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_4 = tmp3;
-              let closure_3 = exceptionResult;
-              let c6 = 1;
-              exceptionResult = outer1_151(replay.replay, outer1_154("resource.xhr", (function _prepareXhrData(closure_0, closure_1, closure_2) {
-                let method;
-                let request_body_size;
-                let response_body_size;
-                let status_code;
-                let tmp13;
-                let tmp14;
-                let tmp16;
-                let tmp17;
-                let url;
-                let warnings;
-                let warnings2;
+              closure_4 = tmp3;
+              closure_3 = exceptionResult;
+              c6 = 1;
+              exceptionResult = closure_1_151(replay.replay, closure_1_154("resource.xhr", (function _prepareXhrData(closure_0, closure_1, closure_2) {
                 const timestamp = Date.now();
                 let startTimestamp = closure_1.startTimestamp;
                 if (undefined === startTimestamp) {
@@ -7710,8 +7523,6 @@ function _captureXhrBreadcrumbToReplay() {
                           const _Object = Object;
                           const entries = Object.entries(request_headers);
                           let reduced = entries.reduce((arg0, arg1) => {
-                            let str;
-                            let tmp;
                             [str, tmp] = arg1;
                             const formatted = str.toLowerCase();
                             let hasItem = networkResponseHeaders.includes(formatted);
@@ -7733,8 +7544,6 @@ function _captureXhrBreadcrumbToReplay() {
                         const _Object2 = Object;
                         const entries1 = Object.entries(result);
                         const reduced1 = entries1.reduce((arg0, arg1) => {
-                          let str;
-                          let tmp;
                           [str, tmp] = arg1;
                           const formatted = str.toLowerCase();
                           let hasItem = networkResponseHeaders.includes(formatted);
@@ -7784,7 +7593,7 @@ function _captureXhrBreadcrumbToReplay() {
                         [tmp16, tmp17] = v0(items, 2);
                         if (request_body_size) {
                           if (request_body_size) {
-                            let obj = { headers: null, size: null };
+                            obj = { headers: null, size: null };
                             obj[0] = reduced;
                             obj[1] = request_body_size;
                             if (tmp13) {
@@ -7794,7 +7603,7 @@ function _captureXhrBreadcrumbToReplay() {
                                     const tmp7 = (function _strIsProbablyJson() { ... })(body);
                                     if (tmp6) {
                                       const substr = body.slice(0, tmp5);
-                                      let obj = { body: null, warnings: null };
+                                      obj = { body: null, warnings: null };
                                       if (tmp7) {
                                         obj[0] = substr;
                                         obj[1] = ["MAYBE_JSON_TRUNCATED"];
@@ -7842,7 +7651,7 @@ function _captureXhrBreadcrumbToReplay() {
                                     const tmp7 = (function _strIsProbablyJson() { ... })(body);
                                     if (tmp6) {
                                       const substr = body.slice(0, tmp5);
-                                      let obj = { body: null, warnings: null };
+                                      obj = { body: null, warnings: null };
                                       if (tmp7) {
                                         obj[0] = substr;
                                         obj[1] = ["MAYBE_JSON_TRUNCATED"];
@@ -7877,7 +7686,7 @@ function _captureXhrBreadcrumbToReplay() {
                               tmp18 = obj;
                             }
                           } else {
-                            const obj1 = { headers: null };
+                            obj1 = { headers: null };
                             obj1[0] = reduced;
                             tmp18 = obj1;
                           }
@@ -7886,7 +7695,7 @@ function _captureXhrBreadcrumbToReplay() {
                         }
                         if (response_body_size) {
                           if (response_body_size) {
-                            const obj2 = { headers: null, size: null };
+                            obj2 = { headers: null, size: null };
                             obj2[0] = reduced1;
                             obj2[1] = response_body_size;
                             if (tmp16) {
@@ -7896,7 +7705,7 @@ function _captureXhrBreadcrumbToReplay() {
                                     const tmp7 = (function _strIsProbablyJson() { ... })(body);
                                     if (tmp6) {
                                       const substr = body.slice(0, tmp5);
-                                      let obj = { body: null, warnings: null };
+                                      obj = { body: null, warnings: null };
                                       if (tmp7) {
                                         obj[0] = substr;
                                         obj[1] = ["MAYBE_JSON_TRUNCATED"];
@@ -7933,7 +7742,7 @@ function _captureXhrBreadcrumbToReplay() {
                               }
                               let tmp22 = obj2;
                               if (length1) {
-                                const obj3 = { warnings: null };
+                                obj3 = { warnings: null };
                                 obj3[0] = warnings2;
                                 obj2._meta = obj3;
                                 tmp22 = obj2;
@@ -7944,7 +7753,7 @@ function _captureXhrBreadcrumbToReplay() {
                                     const tmp7 = (function _strIsProbablyJson() { ... })(body);
                                     if (tmp6) {
                                       const substr = body.slice(0, tmp5);
-                                      let obj = { body: null, warnings: null };
+                                      obj = { body: null, warnings: null };
                                       if (tmp7) {
                                         obj[0] = substr;
                                         obj[1] = ["MAYBE_JSON_TRUNCATED"];
@@ -7979,14 +7788,14 @@ function _captureXhrBreadcrumbToReplay() {
                               tmp22 = obj2;
                             }
                           } else {
-                            const obj4 = { headers: null };
+                            obj4 = { headers: null };
                             obj4[0] = reduced1;
                             tmp22 = obj4;
                           }
                         } else {
                           const _Object4 = Object;
                         }
-                        const obj5 = { startTimestamp: null, endTimestamp: null, url: null, method: null, statusCode: null, request: null, response: null };
+                        obj5 = { startTimestamp: null, endTimestamp: null, url: null, method: null, statusCode: null, request: null, response: null };
                         obj5[0] = startTimestamp;
                         obj5[1] = endTimestamp;
                         obj5[2] = url;
@@ -8008,7 +7817,7 @@ function _captureXhrBreadcrumbToReplay() {
                               tmp22._meta = obj6;
                               let obj7 = tmp22;
                             } else {
-                              obj7 = { headers: null, size: "Array", _meta: null };
+                              obj7 = { headers: null, size: "Array", _meta: -1 };
                               obj7[0] = obj6;
                               const obj8 = { warnings: null };
                               let items2 = [tmp17];
@@ -8027,7 +7836,7 @@ function _captureXhrBreadcrumbToReplay() {
                             tmp18._meta = obj9;
                             let obj10 = tmp18;
                           } else {
-                            obj10 = { headers: null, size: "Array", _meta: null };
+                            obj10 = { headers: null, size: "Array", _meta: -1 };
                             obj10[0] = obj9;
                             const obj11 = { warnings: null };
                             let items4 = [tmp14];
@@ -8088,7 +7897,7 @@ function _captureXhrBreadcrumbToReplay() {
       }
     })();
   });
-  const _captureXhrBreadcrumbToReplay = tmp;
+  closure_164 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -8194,13 +8003,11 @@ function handleNetworkBreadcrumbs(getOptions) {
               }
               if (tmp7) {
                 (function enrichFetchBreadcrumb(data, xhr) {
-                  let input;
-                  let response;
                   ({ input, response } = xhr);
                   let fetchRequestArgBody;
                   if (input) {
                     fetchRequestArgBody = callback(table[9]).getFetchRequestArgBody(input);
-                    const obj = callback(table[9]);
+                    obj = callback(table[9]);
                   }
                   const tmpResult = closure_152(fetchRequestArgBody);
                   let tmp6;
@@ -8252,15 +8059,12 @@ function handleNetworkBreadcrumbs(getOptions) {
 }
 function _addMemoryEntry() {
   const self = this;
-  const tmp = asyncGeneratorStep((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
-    let c3 = 0;
+  const tmp = callback((arg0) => {
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
+    c3 = 0;
     return (function*(arg0) {
-      let jsHeapSizeLimit;
-      let totalJSHeapSize;
-      let usedJSHeapSize;
       if (table === 2) {
         table = 3;
         HermesBuiltin.throwTypeError();
@@ -8268,11 +8072,11 @@ function _addMemoryEntry() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -8287,15 +8091,15 @@ function _addMemoryEntry() {
               obj[0] = arg1;
               return obj;
             } else {
-              let c3 = 1;
+              c3 = 1;
               const _Date = Date;
               ({ jsHeapSizeLimit, totalJSHeapSize, usedJSHeapSize } = callback(table[8]).GLOBAL_OBJ.performance.memory);
               const result = Date.now() / 1000;
-              const obj1 = { type: "memory", name: "memory", start: null, end: null, data: null };
+              obj1 = { type: "memory", name: "memory", start: null, end: null, data: null };
               obj1[2] = result;
               obj1[3] = result;
-              const obj2 = { memory: null };
-              const obj3 = { jsHeapSizeLimit: null, totalJSHeapSize: null, usedJSHeapSize: null };
+              obj2 = { memory: null };
+              obj3 = { jsHeapSizeLimit: null, totalJSHeapSize: null, usedJSHeapSize: null };
               obj3[0] = jsHeapSizeLimit;
               obj3[1] = totalJSHeapSize;
               obj3[2] = usedJSHeapSize;
@@ -8304,8 +8108,8 @@ function _addMemoryEntry() {
               const items = [obj1];
               c3 = 0;
               table = 3;
-              const obj4 = { value: null, done: true };
-              obj4[0] = Promise.all(outer1_150(callback, items));
+              obj4 = { value: null, done: true };
+              obj4[0] = Promise.all(closure_1_150(callback, items));
               return obj4;
             }
           } else {
@@ -8326,7 +8130,7 @@ function _addMemoryEntry() {
       }
     })();
   });
-  const _addMemoryEntry = tmp;
+  closure_167 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -8336,10 +8140,10 @@ function _addMemoryEntry() {
   return applyArgumentsResult;
 }
 function getHandleRecordingEmit(arg0) {
-  let closure_0 = arg0;
-  let c1 = false;
+  closure_0 = arg0;
+  c1 = false;
   return (arg0, arg1) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     if (closure_0.checkAndHandleExpiredSession()) {
       let tmp4 = arg1;
       if (!arg1) {
@@ -8348,14 +8152,14 @@ function getHandleRecordingEmit(arg0) {
       c1 = tmp4;
       c1 = true;
       if (obj.clickDetector) {
-        outer1_118(obj.clickDetector, arg0);
+        closure_1_118(obj.clickDetector, arg0);
       }
       obj.addUpdate(() => {
-        let obj = recordingMode;
+        obj = recordingMode;
         if (tmp) {
           obj.setInitialState();
         }
-        if (outer2_146(obj, recordingMode, c1)) {
+        if (closure_2_146(obj, recordingMode, c1)) {
           if (tmp4) {
             const session = obj.session;
             if (tmp4) {
@@ -8363,7 +8167,7 @@ function getHandleRecordingEmit(arg0) {
                 if (0 === obj.session.segmentId) {
                   const options = obj.getOptions();
                   obj = { type: null, timestamp: null, data: null };
-                  obj[0] = outer2_73.Custom;
+                  obj[0] = closure_2_73.Custom;
                   const _Date2 = Date;
                   obj[1] = Date.now();
                   obj = { shouldRecordCanvas: null, sessionSampleRate: null, errorSampleRate: null, useCompressionOption: null, blockAllMedia: null, maskAllText: null, maskAllInputs: null, useCompression: null, networkDetailHasUrls: null, networkCaptureBodies: null, networkRequestHasHeaders: null, networkResponseHasHeaders: null };
@@ -8373,7 +8177,7 @@ function getHandleRecordingEmit(arg0) {
                   if (eventBuffer) {
                     eventBuffer = "worker" === obj.eventBuffer.type;
                   }
-                  const obj1 = { tag: "options", payload: null };
+                  obj1 = { tag: "options", payload: null };
                   obj[7] = eventBuffer;
                   obj[8] = options.networkDetailAllowUrls.length > 0;
                   obj[9] = options.networkCaptureBodies;
@@ -8392,15 +8196,15 @@ function getHandleRecordingEmit(arg0) {
                     eventBuffer = obj.eventBuffer;
                     const earliestTimestamp = eventBuffer.getEarliestTimestamp();
                     if (earliestTimestamp) {
-                      if (outer2_130) {
+                      if (closure_2_130) {
                         const _Date = Date;
                         const date = new Date(earliestTimestamp);
                         const _HermesInternal = HermesInternal;
-                        outer2_133.log("Updating session start time to earliest event in buffer to " + date);
+                        closure_2_133.log("Updating session start time to earliest event in buffer to " + date);
                       }
                       session.started = earliestTimestamp;
                       if (obj.getOptions().stickySession) {
-                        outer2_141(session);
+                        closure_2_141(session);
                       }
                     }
                   }
@@ -8424,24 +8228,20 @@ function getHandleRecordingEmit(arg0) {
           return true;
         }
         tmp = "buffer" === recordingMode.recordingMode && c1;
-        tmp3 = outer2_146;
+        tmp3 = closure_2_146;
       });
-    } else if (outer1_130) {
-      outer1_133.warn("Received replay event after session expired.");
+    } else if (closure_1_130) {
+      closure_1_133.warn("Received replay event after session expired.");
     }
   };
 }
 function _prepareReplayEvent() {
   const self = this;
-  const tmp = asyncGeneratorStep((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+  const tmp = callback((arg0) => {
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
-      let c3;
       if (c4 === 2) {
         c4 = 3;
         HermesBuiltin.throwTypeError();
@@ -8449,11 +8249,11 @@ function _prepareReplayEvent() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -8469,14 +8269,14 @@ function _prepareReplayEvent() {
               return obj;
             } else {
               c2 = tmp5;
-              let dependencyMap = tmp2;
+              dependencyMap = tmp2;
               let store;
               dependencyMap = undefined;
               c2 = undefined;
               c3 = undefined;
               ({ client: c0, scope: c1, replayId: c2, event: c3 } = store);
               c4 = undefined;
-              let closure_5;
+              closure_5 = undefined;
               let sdk;
               sdk = undefined;
               let name;
@@ -8492,11 +8292,11 @@ function _prepareReplayEvent() {
               throw arg1;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
-              const obj2 = { event_id: null, integrations: null };
+              obj2 = { event_id: null, integrations: null };
               obj2[0] = c2;
               let keys;
               if (typeof store._integrations === "object") {
@@ -8511,12 +8311,12 @@ function _prepareReplayEvent() {
               obj2[1] = keys;
               c4 = obj2;
               store.emit("preprocessEvent", c3, c4);
-              let obj4 = store(817);
+              obj4 = store(817);
               const options = store.getOptions();
-              let obj5 = store(817);
+              obj5 = store(817);
               c3 = 2;
               c4 = 1;
-              const obj3 = { value: null, done: false };
+              obj3 = { value: null, done: false };
               obj3[0] = obj4.prepareEvent(options, c3, c4, dependencyMap, store, obj5.getIsolationScope());
               return obj3;
             }
@@ -8580,7 +8380,7 @@ function _prepareReplayEvent() {
     iter.next();
     return iter;
   });
-  const _prepareReplayEvent = tmp;
+  closure_170 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -8591,18 +8391,12 @@ function _prepareReplayEvent() {
 }
 function _sendReplayRequest() {
   let self = this;
-  let tmp = asyncGeneratorStep((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+  let tmp = callback((arg0) => {
+    closure_0 = arg0;
+    c5 = 0;
+    closure_6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
-      let c3;
-      let c4;
-      let c5;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -8610,11 +8404,11 @@ function _sendReplayRequest() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -8630,7 +8424,7 @@ function _sendReplayRequest() {
               return obj;
             } else {
               c2 = tmp4;
-              let dependencyMap = tmp10;
+              dependencyMap = tmp10;
               let callback;
               dependencyMap = undefined;
               c2 = undefined;
@@ -8640,20 +8434,20 @@ function _sendReplayRequest() {
               let tmp = callback;
               ({ recordingData: c0, replayId: c1, segmentId: c2, eventContext: c3, timestamp: c4, session: c5 } = callback);
               c6 = undefined;
-              let c7;
-              let c8;
-              let c9;
-              let c10;
-              let c11;
-              let c12;
-              let c13;
-              let c14;
-              let c15;
-              let closure_16;
-              let closure_17;
-              let closure_18;
-              let error;
-              let closure_20;
+              c7 = undefined;
+              c8 = undefined;
+              c9 = undefined;
+              c10 = undefined;
+              c11 = undefined;
+              c12 = undefined;
+              c13 = undefined;
+              c14 = undefined;
+              c15 = undefined;
+              closure_16 = undefined;
+              closure_17 = undefined;
+              closure_18 = undefined;
+              error = undefined;
+              closure_20 = undefined;
               c5 = 1;
               c6 = 1;
               return { value: "ct", done: true };
@@ -8664,20 +8458,20 @@ function _sendReplayRequest() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              let obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
               tmp = dependencyMap;
               tmp = c2;
-              let obj2 = { recordingData: null, headers: null };
+              obj2 = { recordingData: null, headers: null };
               tmp = closure_0;
               obj2[0] = closure_0;
-              const obj3 = { segment_id: null };
-              tmp = outer1_2;
-              obj3[0] = outer1_2;
+              obj3 = { segment_id: null };
+              tmp = closure_1_2;
+              obj3[0] = closure_1_2;
               obj2[1] = obj3;
-              c6 = (function prepareRecordingData(recordingData) {
+              closure_6 = (function prepareRecordingData(recordingData) {
                 recordingData = recordingData.recordingData;
                 const combined = "" + JSON.stringify(recordingData.headers) + "\n";
                 if (typeof recordingData === "string") {
@@ -8695,51 +8489,48 @@ function _sendReplayRequest() {
                 }
                 return combined1;
               })(obj2);
-              tmp = outer1_3;
-              const outer1_7 = outer1_3.urls;
-              tmp = outer1_3;
-              const outer1_8 = outer1_3.errorIds;
-              tmp = outer1_3;
-              const outer1_9 = outer1_3.traceIds;
-              tmp = outer1_3;
-              const outer1_10 = outer1_3.initialTimestamp;
+              tmp = closure_1_3;
+              urls = closure_1_3.urls;
+              tmp = closure_1_3;
+              errorIds = closure_1_3.errorIds;
+              tmp = closure_1_3;
+              traceIds = closure_1_3.traceIds;
+              tmp = closure_1_3;
+              initialTimestamp = closure_1_3.initialTimestamp;
               tmp = callback;
               tmp = dependencyMap;
-              const outer1_11 = callback(817).getClient();
+              const client = callback(817).getClient();
               tmp = callback;
               tmp = dependencyMap;
               const obj18 = callback(817);
-              const outer1_12 = callback(817).getCurrentScope();
-              let transport;
-              if (outer1_11 != null) {
-                transport = outer1_11.getTransport();
+              const currentScope = callback(817).getCurrentScope();
+              transport = undefined;
+              if (client != null) {
+                transport = client.getTransport();
               }
-              const outer1_13 = transport;
-              let obj7 = outer1_11;
-              let dsn;
-              if (outer1_11 != null) {
+              let obj7 = client;
+              dsn = undefined;
+              if (client != null) {
                 dsn = obj7.getDsn();
               }
-              const outer1_14 = dsn;
-              if (outer1_11) {
-                if (outer1_13) {
-                  if (outer1_14) {
+              if (client) {
+                if (transport) {
+                  if (dsn) {
                     if (c5.sampled) {
-                      const obj4 = { type: "replay_event", replay_start_timestamp: null, timestamp: null, error_ids: null, trace_ids: null, urls: null, replay_id: null, segment_id: null, replay_type: null };
-                      obj4[1] = outer1_10 / 1000;
+                      obj4 = { type: "replay_event", replay_start_timestamp: null, timestamp: null, error_ids: null, trace_ids: null, urls: null, replay_id: null, segment_id: null, replay_type: null };
+                      obj4[1] = initialTimestamp / 1000;
                       obj4[2] = c4 / 1000;
-                      obj4[3] = outer1_8;
-                      obj4[4] = outer1_9;
-                      obj4[5] = outer1_7;
-                      obj4[6] = outer1_1;
-                      obj4[7] = outer1_2;
+                      obj4[3] = errorIds;
+                      obj4[4] = traceIds;
+                      obj4[5] = urls;
+                      obj4[6] = closure_1_1;
+                      obj4[7] = closure_1_2;
                       obj4[8] = c5.sampled;
-                      const outer1_15 = obj4;
-                      const obj5 = { scope: null, client: null, replayId: null, event: null };
-                      obj5[0] = outer1_12;
-                      obj5[1] = outer1_11;
-                      obj5[2] = outer1_1;
-                      obj5[3] = outer1_15;
+                      obj5 = { scope: null, client: null, replayId: null, event: null };
+                      obj5[0] = currentScope;
+                      obj5[1] = client;
+                      obj5[2] = closure_1_1;
+                      obj5[3] = obj4;
                       c5 = 2;
                       c6 = 1;
                       const obj6 = { value: null, done: false };
@@ -8779,8 +8570,8 @@ function _sendReplayRequest() {
               if (closure_16) {
                 delete tmp7[tmp3];
                 closure_18 = (function createReplayEnvelope(closure_16, c6, c14, tunnel) {
-                  const obj = _undefined(_undefined2[8]);
-                  const obj2 = _undefined(_undefined2[8]);
+                  obj = _undefined(_undefined2[8]);
+                  obj2 = _undefined(_undefined2[8]);
                   const items = [{ type: "replay_event" }, closure_16];
                   const items1 = [items, ];
                   const eventEnvelopeHeaders = obj2.createEventEnvelopeHeaders(closure_16, _undefined(_undefined2[8]).getSdkMetadataForEnvelopeHeader(closure_16), tunnel, c14);
@@ -8799,7 +8590,7 @@ function _sendReplayRequest() {
                 c5 = 5;
                 c6 = 1;
                 const obj9 = { value: null, done: false };
-                obj9[0] = outer1_13.send(outer1_18);
+                obj9[0] = transport.send(closure_1_18);
                 return obj9;
               } else {
                 c11.recordDroppedEvent("event_processor", "replay");
@@ -8815,7 +8606,7 @@ function _sendReplayRequest() {
           } else {
             if (3 === tmp10) {
               c4 = 0;
-              let closure_21 = c3;
+              closure_21 = c3;
               const _Error = Error;
               error = new Error(c11);
               c4 = 2;
@@ -8873,7 +8664,7 @@ function _sendReplayRequest() {
     iter.next();
     return iter;
   });
-  const _sendReplayRequest = tmp;
+  closure_171 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -8894,12 +8685,12 @@ function sendReplay(arg0) {
 }
 function _sendReplay() {
   let self = this;
-  const tmp = asyncGeneratorStep((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+  const tmp = callback((arg0) => {
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     const iter = (function*(arg0) {
       if (c7 === 2) {
         c7 = 3;
@@ -8908,11 +8699,11 @@ function _sendReplay() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -8929,13 +8720,13 @@ function _sendReplay() {
             } else {
               let onError = tmp4;
               let recordingData = tmp9;
-              let obj1;
+              obj1 = undefined;
               if (obj1 === undefined) {
                 obj1 = { count: 0, interval: 5000 };
               }
               recordingData = undefined;
               onError = undefined;
-              let error;
+              error = undefined;
               c6 = 1;
               c7 = 1;
               return { value: "ct", done: true };
@@ -8946,17 +8737,17 @@ function _sendReplay() {
               throw arg1;
             } else if (arg0 === 2) {
               c7 = 3;
-              const obj2 = { value: null, done: true };
+              obj2 = { value: null, done: true };
               obj2[0] = arg1;
               return obj2;
             } else {
               recordingData = lib.recordingData;
               onError = lib.onError;
               if (recordingData.length) {
-                let c5 = 1;
+                c5 = 1;
                 c6 = 3;
                 c7 = 1;
-                const obj3 = { value: null, done: false };
+                obj3 = { value: null, done: false };
                 obj3[0] = (function sendReplayRequest(closure_0) {
                   const self = this;
                   const apply = closure_171.apply;
@@ -8970,7 +8761,7 @@ function _sendReplay() {
                 return obj3;
               } else {
                 c7 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             }
           } else {
@@ -8980,7 +8771,7 @@ function _sendReplay() {
               if (!(c5 instanceof closure_172)) {
                 if (!(c5 instanceof closure_173)) {
                   obj1 = lib(obj1[8]);
-                  const obj4 = { _retryCount: null };
+                  obj4 = { _retryCount: null };
                   obj4[0] = obj1.count;
                   obj1.setContext("Replays", obj4);
                   if (onError) {
@@ -9001,12 +8792,12 @@ function _sendReplay() {
                       let callback = arg0;
                       const timerId = callback(arg1[9]).setTimeout(recordingData(function*() {
                         const callback = tmp3;
-                        let c3 = 1;
-                        yield outer2_174(outer1_0, v0);
+                        c3 = 1;
+                        yield closure_2_174(closure_1_0, v0);
                         if (1 === tmp7) {
                           c3 = 0;
                           v0(closure_2);
-                          let c4 = 3;
+                          c4 = 3;
                         } else if (arg0 === 1) {
                           c4 = 3;
                           throw arg1;
@@ -9019,7 +8810,7 @@ function _sendReplay() {
                       }), obj1.interval);
                     });
                     c7 = 3;
-                    const obj5 = { value: null, done: true };
+                    obj5 = { value: null, done: true };
                     obj5[0] = promise;
                     return obj5;
                   }
@@ -9062,7 +8853,7 @@ function _sendReplay() {
     iter.next();
     return iter;
   });
-  const _sendReplay = tmp;
+  closure_175 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -9101,18 +8892,18 @@ let closure_23 = (() => {
   class Mirror {
     constructor() {
       self = this;
-      tmp = outer1_7(this, Mirror);
-      tmp2 = outer1_17;
+      tmp = closure_1_7(this, Mirror);
+      tmp2 = closure_1_17;
       map = new Map();
-      if (typeof outer1_17 !== "function") {
+      if (typeof closure_1_17 !== "function") {
         str = "Trying to call a non-function";
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }
       if ("idNodeMap" in self) {
-        tmp4 = outer1_16;
+        tmp4 = closure_1_16;
         obj = { enumerable: true, configurable: true, writable: true, value: null };
         obj[3] = map;
-        tmp5 = outer1_16(self, "idNodeMap", obj);
+        tmp5 = closure_1_16(self, "idNodeMap", obj);
       } else {
         self.idNodeMap = map;
       }
@@ -9122,10 +8913,10 @@ let closure_23 = (() => {
         throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
       }
       if ("nodeMetaMap" in self) {
-        tmp7 = outer1_16;
+        tmp7 = closure_1_16;
         obj = { enumerable: true, configurable: true, writable: true, value: null };
         obj[3] = weakMap;
-        tmp8 = outer1_16(self, "nodeMetaMap", obj);
+        tmp8 = closure_1_16(self, "nodeMetaMap", obj);
       } else {
         self.nodeMetaMap = weakMap;
       }
@@ -9228,13 +9019,13 @@ let closure_23 = (() => {
     {
       key: "reset",
       value: function reset() {
-        const obj = { idNodeMap: new Map() };
-        const weakMap = new WeakMap();
+        obj = { idNodeMap: new Map() };
+        weakMap = new WeakMap();
         obj.nodeMetaMap = weakMap;
       }
     }
   ];
-  return _createClass(Mirror, items);
+  return callback2(Mirror, items);
 })();
 const __rrweb_original__ = "__rrweb_original__";
 let closure_32 = {};
@@ -9300,7 +9091,7 @@ if (!obj3.test(str.toString())) {
 let closure_68 = (() => {
   class StyleSheetMirror {
     constructor() {
-      tmp = outer1_7(this, StyleSheetMirror);
+      tmp = closure_1_7(this, StyleSheetMirror);
       this.id = 1;
       weakMap = new WeakMap();
       this.styleIDMap = weakMap;
@@ -9358,8 +9149,8 @@ let closure_68 = (() => {
     {
       key: "reset",
       value: function reset() {
-        const obj = {};
-        const weakMap = new WeakMap();
+        obj = {};
+        weakMap = new WeakMap();
         obj.styleIDMap = weakMap;
         obj.idStyleMap = new Map();
         obj.id = 1;
@@ -9373,7 +9164,7 @@ let closure_68 = (() => {
       }
     }
   ];
-  return _createClass(StyleSheetMirror, items);
+  return callback2(StyleSheetMirror, items);
 })();
 let closure_70 = {};
 let obj1 = {};
@@ -9485,7 +9276,7 @@ let obj5 = {};
 let closure_80 = (() => {
   class DoubleLinkedList {
     constructor() {
-      tmp = outer1_7(this, DoubleLinkedList);
+      tmp = closure_1_7(this, DoubleLinkedList);
       this.length = 0;
       this.head = null;
       this.tail = null;
@@ -9498,7 +9289,7 @@ let closure_80 = (() => {
       value: function get(arg0) {
         if (arg0 >= this.length) {
           const _Error = Error;
-          const error = new Error("Position outside of list range");
+          error = new Error("Position outside of list range");
           throw error;
         } else {
           let iter = tmp.head;
@@ -9528,7 +9319,7 @@ let closure_80 = (() => {
       key: "addNode",
       value: function addNode(previousSibling) {
         const self = this;
-        const obj = { value: previousSibling, previous: null, next: null };
+        obj = { value: previousSibling, previous: null, next: null };
         previousSibling.__ln = obj;
         if (previousSibling.previousSibling) {
           if ("__ln" in previousSibling.previousSibling) {
@@ -9593,7 +9384,7 @@ let closure_80 = (() => {
       }
     }
   ];
-  return _createClass(DoubleLinkedList, items);
+  return callback2(DoubleLinkedList, items);
 })();
 function moveKey(arg0, arg1) {
 
@@ -9602,7 +9393,7 @@ let closure_82 = (() => {
   class MutationBuffer {
     constructor() {
       self = this;
-      tmp = outer1_7(this, self);
+      tmp = closure_1_7(this, self);
       this.frozen = false;
       this.locked = false;
       this.texts = [];
@@ -9631,7 +9422,7 @@ let closure_82 = (() => {
             items = [];
             const _Set = Set;
             const set = new Set();
-            const arr2 = new outer1_80();
+            const arr2 = new closure_1_80();
             function getNextId(value) {
               let id;
               let tmp = value;
@@ -9653,9 +9444,9 @@ let closure_82 = (() => {
             }
             function pushAdd(value) {
               let id1;
-              let items = value;
+              items = value;
               if (value.parentNode) {
-                if (outer2_69(value)) {
+                if (closure_2_69(value)) {
                   const parentNode = value.parentNode;
                   let host;
                   if (parentNode != null) {
@@ -9705,14 +9496,14 @@ let closure_82 = (() => {
                   } while (-2 === id1);
                   if (-1 !== id) {
                     if (-1 !== id1) {
-                      let obj = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize: null, onIframeLoad: null, onStylesheetLoad: null, onBlockedImageLoad: null, ignoreCSSAttributes: null };
+                      obj = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize: null, onIframeLoad: null, onStylesheetLoad: null, onBlockedImageLoad: null, ignoreCSSAttributes: null };
                       ({ doc: obj2[0], mirror: obj2[1], blockClass: obj2[2], blockSelector: obj2[3], maskAllText: obj2[4], unblockSelector: obj2[5], maskTextClass: obj2[6], unmaskTextClass: obj2[7], maskTextSelector: obj2[8], unmaskTextSelector: obj2[9], inlineStylesheet: obj2[12], maskInputOptions: obj2[13], maskAttributeFn: obj2[14], maskTextFn: obj2[15], maskInputFn: obj2[16], slimDOMOptions: obj2[17], dataURLOptions: obj2[18], recordCanvas: obj2[19], inlineImages: obj2[20] } = items);
                       obj[21] = function onSerialize() { ... };
                       obj[22] = function onIframeLoad() { ... };
                       obj[23] = function onStylesheetLoad() { ... };
                       obj[24] = function onBlockedImageLoad() { ... };
                       obj[25] = items.ignoreCSSAttributes;
-                      const tmp25 = outer2_58(value, obj);
+                      const tmp25 = closure_2_58(value, obj);
                       if (tmp25) {
                         obj = { parentId: null, nextId: null, node: null };
                         obj[0] = id;
@@ -9742,10 +9533,10 @@ let closure_82 = (() => {
             const nextResult = iter.next();
             while (iter !== undefined) {
               let tmp20 = nextResult;
-              let tmp21 = outer1_83;
+              let tmp21 = closure_1_83;
               let tmp22 = items;
               let tmp23 = items;
-              let tmp24 = outer1_83(items.removes, nextResult, items.mirror);
+              let tmp24 = closure_1_83(items.removes, nextResult, items.mirror);
               if (tmp24) {
                 let tmp25 = tmp22;
                 let movedSet2 = tmp23.movedSet;
@@ -9763,12 +9554,12 @@ let closure_82 = (() => {
               let tmp33 = item10064;
               let tmp35 = items;
               let tmp36 = items;
-              let tmp34 = outer1_84;
-              if (!outer1_84(items.droppedSet, item10064)) {
-                let tmp37 = outer1_83;
+              let tmp34 = closure_1_84;
+              if (!closure_1_84(items.droppedSet, item10064)) {
+                let tmp37 = closure_1_83;
                 let tmp38 = tmp35;
                 let tmp39 = item10064;
-                if (!outer1_83(tmp36.removes, tmp33, tmp36.mirror)) {
+                if (!closure_1_83(tmp36.removes, tmp33, tmp36.mirror)) {
                   let tmp40 = item10064;
                   let pushAddResult1 = pushAdd(tmp33);
                 }
@@ -9859,7 +9650,7 @@ let closure_82 = (() => {
                 } while (head);
               }
             }
-            let obj = { texts: null, attributes: null, removes: null, adds: null };
+            obj = { texts: null, attributes: null, removes: null, adds: null };
             const texts = items.texts;
             const mapped = texts.map((node) => {
               const mirror = items.mirror;
@@ -9901,7 +9692,7 @@ let closure_82 = (() => {
               obj2.texts = [];
               obj2.attributes = [];
               const _WeakMap = WeakMap;
-              const weakMap = new WeakMap();
+              weakMap = new WeakMap();
               obj2.attributeMap = weakMap;
               obj2.removes = [];
               const _Set2 = Set;
@@ -9921,21 +9712,19 @@ let closure_82 = (() => {
         }
       };
       this.processMutation = (target) => {
-        let attributeName;
-        let target2;
         const _self = target;
-        let obj = _self;
-        if (!outer1_66(target.target, _self.mirror)) {
+        obj = _self;
+        if (!closure_1_66(target.target, _self.mirror)) {
           const type = target.type;
           if ("characterData" === type) {
             if (!tmp46) {
               const texts = obj.texts;
               let tmp48 = str15;
-              if (outer1_56(target.target, obj.maskTextClass, obj.maskTextSelector, obj.unmaskTextClass, obj.unmaskTextSelector, obj.maskAllText)) {
+              if (closure_1_56(target.target, obj.maskTextClass, obj.maskTextSelector, obj.unmaskTextClass, obj.unmaskTextSelector, obj.maskAllText)) {
                 tmp48 = str15;
                 if (str15) {
                   if (obj.maskTextFn) {
-                    let maskTextFnResult = obj.maskTextFn(str15, outer1_64(target.target));
+                    let maskTextFnResult = obj.maskTextFn(str15, closure_1_64(target.target));
                   } else {
                     maskTextFnResult = str15.replace(/[\S]/g, "*");
                   }
@@ -9946,26 +9735,26 @@ let closure_82 = (() => {
               obj[1] = target.target;
               texts.push(obj);
             }
-            tmp46 = outer1_65(target.target, obj.blockClass, obj.blockSelector, obj.unblockSelector, false) || target.target.textContent === target.oldValue;
+            tmp46 = closure_1_65(target.target, obj.blockClass, obj.blockSelector, obj.unblockSelector, false) || target.target.textContent === target.oldValue;
           } else if ("attributes" === type) {
             ({ target, attributeName, target: target2 } = target);
             let attr = target2.getAttribute(attributeName);
             if ("value" === attributeName) {
-              const tmp55 = outer1_29(target);
+              const tmp55 = closure_1_29(target);
               const tagName = target.tagName;
               obj = { maskInputOptions: null, tagName: null, type: null };
               obj[0] = obj.maskInputOptions;
               obj[1] = tagName;
               obj[2] = tmp55;
-              const obj1 = { isMasked: null, element: null, value: null, maskInputFn: null };
-              obj1[0] = outer1_56(target.target, obj.maskTextClass, obj.maskTextSelector, obj.unmaskTextClass, obj.unmaskTextSelector, outer1_24(obj));
+              obj1 = { isMasked: null, element: null, value: null, maskInputFn: null };
+              obj1[0] = closure_1_56(target.target, obj.maskTextClass, obj.maskTextSelector, obj.unmaskTextClass, obj.unmaskTextSelector, closure_1_24(obj));
               obj1[1] = target;
-              obj1[2] = outer1_30(target, tagName, tmp55);
+              obj1[2] = closure_1_30(target, tagName, tmp55);
               obj1[3] = obj.maskInputFn;
-              attr = outer1_25(obj1);
-              const tmp57 = outer1_30(target, tagName, tmp55);
+              attr = closure_1_25(obj1);
+              const tmp57 = closure_1_30(target, tagName, tmp55);
             }
-            if (!outer1_65(target.target, obj.blockClass, obj.blockSelector, obj.unblockSelector, false)) {
+            if (!closure_1_65(target.target, obj.blockClass, obj.blockSelector, obj.unblockSelector, false)) {
               if (attr !== target.oldValue) {
                 const attributeMap2 = obj.attributeMap;
                 const value = attributeMap2.get(target.target);
@@ -9981,7 +9770,7 @@ let closure_82 = (() => {
                 }
                 let tmp7 = value;
                 if (!value) {
-                  const obj2 = { node: null, attributes: null, styleDiff: null, _unchangedStyles: null };
+                  obj2 = { node: null, attributes: null, styleDiff: null, _unchangedStyles: null };
                   obj2[0] = target.target;
                   obj2[1] = {};
                   obj2[2] = {};
@@ -10003,9 +9792,9 @@ let closure_82 = (() => {
                 if (tmp10) {
                   const attr1 = target.setAttribute("data-rr-is-password", "true");
                 }
-                if (!outer1_53(target.tagName, str5)) {
+                if (!closure_1_53(target.tagName, str5)) {
                   const doc = obj.doc;
-                  tmp7.attributes[str5] = outer1_52(doc, outer1_26(target.tagName), outer1_26(str5), attr, target, obj.maskAttributeFn);
+                  tmp7.attributes[str5] = closure_1_52(doc, closure_1_26(target.tagName), closure_1_26(str5), attr, target, obj.maskAttributeFn);
                   if ("style" === str5) {
                     if (!obj.unattachedDoc) {
                       try {
@@ -10070,18 +9859,16 @@ let closure_82 = (() => {
                       continue;
                     }
                   }
-                  const tmp15 = outer1_26(target.tagName);
+                  const tmp15 = closure_1_26(target.tagName);
                 }
               }
             }
           } else if ("childList" === type) {
-            if (!outer1_65(target.target, obj.blockClass, obj.blockSelector, obj.unblockSelector, true)) {
+            if (!closure_1_65(target.target, obj.blockClass, obj.blockSelector, obj.unblockSelector, true)) {
               const addedNodes = target.addedNodes;
               let item = addedNodes.forEach((arg0) => target.genAdds(arg0, target.target));
               const removedNodes = target.removedNodes;
               let item1 = removedNodes.forEach((childNodes) => {
-                let addedSet;
-                let addedSet2;
                 let arr = target;
                 const mirror = target.mirror;
                 const id = mirror.getId(childNodes);
@@ -10102,7 +9889,7 @@ let closure_82 = (() => {
                 } else {
                   id1 = getId(target2);
                 }
-                let tmp7 = outer2_65(tmp3.target, arr.blockClass, arr.blockSelector, arr.unblockSelector, false);
+                let tmp7 = closure_2_65(tmp3.target, arr.blockClass, arr.blockSelector, arr.unblockSelector, false);
                 if (!tmp7) {
                   const mirror3 = arr.mirror;
                   tmp7 = -2 === mirror3.getId(childNodes);
@@ -10175,7 +9962,7 @@ let closure_82 = (() => {
                                     const parentNode5 = parentNode3.parentNode;
                                     let tmp20 = !parentNode5;
                                     if (parentNode5) {
-                                      tmp20 = outer2_67(parentNode3.parentNode, mirror5);
+                                      tmp20 = closure_2_67(parentNode3.parentNode, mirror5);
                                     }
                                     tmp19 = tmp20;
                                   }
@@ -10197,7 +9984,7 @@ let closure_82 = (() => {
                       const movedSet = arr.movedSet;
                       if (!movedSet.has(childNodes)) {
                         const removes = arr.removes;
-                        const obj = { parentId: null, id: null, isShadow: null };
+                        obj = { parentId: null, id: null, isShadow: null };
                         obj[0] = id1;
                         obj[1] = id;
                         const target4 = tmp3.target;
@@ -10223,7 +10010,7 @@ let closure_82 = (() => {
                           const tmp27 = typeof call === "unknown" ? str3() : call(target5);
                         }
                       } else {
-                        if (typeof outer2_81 !== "function") {
+                        if (typeof closure_2_81 !== "function") {
                           HermesBuiltin.throwTypeError();
                         }
                         const _HermesInternal = HermesInternal;
@@ -10245,8 +10032,6 @@ let closure_82 = (() => {
         }
       };
       this.genAdds = (childNodes) => {
-        let mirror5;
-        let movedMap;
         const _self = childNodes;
         let processedNodeManager = _self.processedNodeManager;
         if (!processedNodeManager.inOtherBuffer(childNodes, _self)) {
@@ -10277,7 +10062,7 @@ let closure_82 = (() => {
                   if (tmp6) {
                     ({ mirror: mirror5, movedMap } = tmp);
                     const id1 = mirror5.getId(childNodes);
-                    if (typeof outer1_81 !== "function") {
+                    if (typeof closure_1_81 !== "function") {
                       HermesBuiltin.throwTypeError();
                     }
                     const _HermesInternal = HermesInternal;
@@ -10290,7 +10075,7 @@ let closure_82 = (() => {
                 const droppedSet = tmp.droppedSet;
                 droppedSet.delete(childNodes);
               }
-              if (!outer1_65(childNodes, tmp.blockClass, tmp.blockSelector, tmp.unblockSelector, false)) {
+              if (!closure_1_65(childNodes, tmp.blockClass, tmp.blockSelector, tmp.unblockSelector, false)) {
                 if (childNodes.childNodes) {
                   childNodes = childNodes.childNodes;
                   const item = childNodes.forEach((arg0) => childNodes.genAdds(arg0));
@@ -10320,7 +10105,7 @@ let closure_82 = (() => {
       key: "init",
       value: function init(arg0) {
         const self = this;
-        let closure_0 = arg0;
+        closure_0 = arg0;
         const items = ["mutationCb", "blockClass", "blockSelector", "unblockSelector", "maskAllText", "maskTextClass", "unmaskTextClass", "maskTextSelector", "unmaskTextSelector", "inlineStylesheet", "maskInputOptions", "maskAttributeFn", "maskTextFn", "maskInputFn", "keepIframeSrcFn", "recordCanvas", "inlineImages", "slimDOMOptions", "dataURLOptions", "doc", "mirror", "iframeManager", "stylesheetManager", "shadowDomManager", "canvasManager", "processedNodeManager", "ignoreCSSAttributes"];
         const item = items.forEach((arg0) => {
           self[arg0] = table[arg0];
@@ -10377,18 +10162,18 @@ let closure_82 = (() => {
       }
     }
   ];
-  return _createClass(MutationBuffer, items);
+  return callback2(MutationBuffer, items);
 })();
 function callbackWrapper(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return closure_79 ? ((Pause, arg1) => {
-    const items = [...arguments];
+    items = [...arguments];
     try {
       const items1 = [];
       HermesBuiltin.arraySpread(items, 0);
       return HermesBuiltin.apply(items1, undefined);
     } catch (tmp7) {
-      if (outer1_79) {
+      if (closure_1_79) {
         if (true === tmp8(tmp7)) {
           return () => {
 
@@ -10405,7 +10190,7 @@ let weakMap1 = new WeakMap();
 let closure_98 = (() => {
   class CrossOriginIframeMirror {
     constructor(arg0) {
-      tmp = outer1_7(this, CrossOriginIframeMirror);
+      tmp = closure_1_7(this, CrossOriginIframeMirror);
       this.generateIdFn = arg0;
       weakMap = new WeakMap();
       this.iframeIdToRemoteIdMap = weakMap;
@@ -10480,10 +10265,10 @@ let closure_98 = (() => {
           iframeRemoteIdToIdMap.delete(arg0);
         } else {
           const _WeakMap = WeakMap;
-          const weakMap = new WeakMap();
+          weakMap = new WeakMap();
           self.iframeIdToRemoteIdMap = weakMap;
           const _WeakMap2 = WeakMap;
-          const weakMap1 = new WeakMap();
+          weakMap1 = new WeakMap();
           self.iframeRemoteIdToIdMap = weakMap1;
         }
       }
@@ -10519,13 +10304,13 @@ let closure_98 = (() => {
       }
     }
   ];
-  return _createClass(CrossOriginIframeMirror, items);
+  return callback2(CrossOriginIframeMirror, items);
 })();
 let closure_99 = (() => {
   class IframeManagerNoop {
     constructor() {
-      tmp = outer1_7(this, IframeManagerNoop);
-      tmp2 = new outer1_98(outer1_41);
+      tmp = closure_1_7(this, IframeManagerNoop);
+      tmp2 = new closure_1_98(closure_1_41);
       this.crossOriginIframeMirror = tmp2;
       weakMap = new WeakMap();
       this.crossOriginIframeRootIdMap = weakMap;
@@ -10552,24 +10337,24 @@ let closure_99 = (() => {
       }
     }
   ];
-  return _createClass(IframeManagerNoop, items);
+  return callback2(IframeManagerNoop, items);
 })();
 let closure_100 = (() => {
   class IframeManager {
     constructor(arg0) {
       self = this;
-      tmp = outer1_7(this, IframeManager);
+      tmp = closure_1_7(this, IframeManager);
       weakMap = new WeakMap();
       this.iframes = weakMap;
       weakMap1 = new WeakMap();
       this.crossOriginIframeMap = weakMap1;
-      tmp4 = new outer1_98(outer1_41);
+      tmp4 = new closure_1_98(closure_1_41);
       this.crossOriginIframeMirror = tmp4;
       weakMap2 = new WeakMap();
       this.crossOriginIframeRootIdMap = weakMap2;
       ({ mutationCb: this.mutationCb, wrappedEmit: this.wrappedEmit, stylesheetManager: this.stylesheetManager, recordCrossOriginIframes: this.recordCrossOriginIframes } = arg0);
       generateId = this.stylesheetManager.styleMirror.generateId;
-      tmp6 = new outer1_98(generateId.bind(this.stylesheetManager.styleMirror));
+      tmp6 = new closure_1_98(generateId.bind(this.stylesheetManager.styleMirror));
       this.crossOriginIframeStyleMirror = tmp6;
       this.mirror = arg0.mirror;
       if (this.recordCrossOriginIframes) {
@@ -10602,12 +10387,8 @@ let closure_100 = (() => {
     {
       key: "attachIframe",
       value: function attachIframe(contentWindow, node) {
-        let mirror;
-        let mirror2;
-        let mutationCb;
-        let stylesheetManager;
         const self = this;
-        let obj = { adds: null, removes: null, texts: null, attributes: null, isAttachIframe: true };
+        obj = { adds: null, removes: null, texts: null, attributes: null, isAttachIframe: true };
         obj = { parentId: mirror.getId(contentWindow), nextId: null, node };
         ({ mirror, mutationCb } = this);
         const items = [obj];
@@ -10666,7 +10447,7 @@ let closure_100 = (() => {
       value: function transformCrossOriginEvent(value, event) {
         let self = this;
         self = this;
-        let closure_0 = value;
+        closure_0 = value;
         const type = event.type;
         if (FullSnapshot.FullSnapshot === type) {
           const crossOriginIframeMirror = self.crossOriginIframeMirror;
@@ -10678,7 +10459,7 @@ let closure_100 = (() => {
           let crossOriginIframeRootIdMap = self.crossOriginIframeRootIdMap;
           const result = crossOriginIframeRootIdMap.set(value, id);
           self.patchRootIdOnNode(event.data.node, id);
-          let obj = { timestamp: null, type: null, data: null };
+          obj = { timestamp: null, type: null, data: null };
           obj[0] = event.timestamp;
           obj[1] = tmp.IncrementalSnapshot;
           obj = { source: null, adds: null, removes: null, texts: null, attributes: null, isAttachIframe: true };
@@ -10712,7 +10493,7 @@ let closure_100 = (() => {
                         self.replaceIds(node, closure_0, ["parentId", "nextId", "previousId"]);
                         self.replaceIdOnNode(node.node, closure_0);
                         const crossOriginIframeRootIdMap = self.crossOriginIframeRootIdMap;
-                        const value = crossOriginIframeRootIdMap.get(closure_0);
+                        value = crossOriginIframeRootIdMap.get(closure_0);
                         if (value) {
                           self.patchRootIdOnNode(node.node, value);
                         }
@@ -10864,12 +10645,12 @@ let closure_100 = (() => {
       }
     }
   ];
-  return _createClass(IframeManager, items);
+  return callback2(IframeManager, items);
 })();
 let closure_101 = (() => {
   class ShadowDomManagerNoop {
     constructor() {
-      tmp = outer1_7(this, ShadowDomManagerNoop);
+      tmp = closure_1_7(this, ShadowDomManagerNoop);
       return;
     }
   }
@@ -10899,12 +10680,12 @@ let closure_101 = (() => {
       }
     }
   ];
-  return _createClass(ShadowDomManagerNoop, items);
+  return callback2(ShadowDomManagerNoop, items);
 })();
 let closure_102 = (() => {
   class ShadowDomManager {
     constructor(arg0) {
-      tmp = outer1_7(this, ShadowDomManager);
+      tmp = closure_1_7(this, ShadowDomManager);
       weakSet = new WeakSet();
       this.shadowDoms = weakSet;
       this.restoreHandlers = [];
@@ -10926,7 +10707,7 @@ let closure_102 = (() => {
       value: function addShadowRoot(doc, doc2) {
         let self = this;
         self = this;
-        let closure_1 = doc;
+        closure_1 = doc;
         const call = toString.call;
         if ("[object ShadowRoot]" === (typeof call === "unknown" ? toString() : call(doc))) {
           const shadowDoms2 = self.shadowDoms;
@@ -10935,12 +10716,12 @@ let closure_102 = (() => {
             shadowDoms.add(doc);
             const canvasManager = self.bypassOptions.canvasManager;
             canvasManager.addShadowRoot(doc);
-            let obj = {};
+            obj = {};
             const merged = Object.assign(self.bypassOptions);
             obj.doc = doc2;
             ({ mutationCb: obj.mutationCb, mirror: obj.mirror } = self);
             obj.shadowDomManager = self;
-            let closure_0 = callback4(obj, doc);
+            closure_0 = callback4(obj, doc);
             self.restoreHandlers.push(() => closure_0.disconnect());
             obj = {};
             const merged1 = Object.assign(self.bypassOptions);
@@ -10958,7 +10739,7 @@ let closure_102 = (() => {
                 const mirror = self.mirror;
                 stylesheetManager.adoptStyleSheets(tmp.adoptedStyleSheets, mirror.getId(tmp.host));
               }
-              self.restoreHandlers.push(outer1_96({ mirror: self.mirror, stylesheetManager: self.bypassOptions.stylesheetManager }, doc));
+              self.restoreHandlers.push(closure_1_96({ mirror: self.mirror, stylesheetManager: self.bypassOptions.stylesheetManager }, doc));
             }, 0);
             const restoreHandlers = self.restoreHandlers;
             const restoreHandlers1 = self.restoreHandlers;
@@ -10989,19 +10770,19 @@ let closure_102 = (() => {
     {
       key: "patchAttachShadow",
       value: function patchAttachShadow(Element, document) {
-        let closure_0 = document;
+        closure_0 = document;
         let self = this;
         this.restoreHandlers.push(callback(Element.prototype, "attachShadow", (arg0) => {
-          let closure_0 = arg0;
+          closure_0 = arg0;
           return function(arg0) {
-            const self = this;
+            self = this;
             const call = closure_0.call;
             let shadowRoot = self.shadowRoot;
             if (shadowRoot) {
-              shadowRoot = outer2_69(self);
+              shadowRoot = closure_2_69(self);
             }
             if (shadowRoot) {
-              outer1_1.addShadowRoot(self.shadowRoot, closure_0);
+              closure_1_1.addShadowRoot(self.shadowRoot, closure_0);
             }
             return typeof call === "unknown" ? closure_0(arg0) : call(self, arg0);
           };
@@ -11025,7 +10806,7 @@ let closure_102 = (() => {
       }
     }
   ];
-  return _createClass(ShadowDomManager, items);
+  return callback2(ShadowDomManager, items);
 })();
 if (typeof Uint8Array === "undefined") {
   let items = [];

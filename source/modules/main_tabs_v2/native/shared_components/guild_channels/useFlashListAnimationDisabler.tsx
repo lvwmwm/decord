@@ -1,11 +1,11 @@
-// Module ID: 13477
-// Function ID: 13478
+// Module ID: 13535
+// Function ID: 13536
 // Name: useFlashListAnimationDisabler
-// Dependencies: [19, 4115, 2]
+// Dependencies: [19, 4119, 2]
 // Exports: useFlashListAnimationDisabler
 
-// Module 13477 (useFlashListAnimationDisabler)
-import noop from "noop";
+// Module 13535 (useFlashListAnimationDisabler)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 let closure_3 = { code: "function useFlashListAnimationDisablerTsx1(){const{lastId}=this.__closure;return lastId.get();}" };

@@ -1,32 +1,30 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 16993
+// Function ID: 16994
 // Name: useGuildApplication
-// Dependencies: [5, 32, 19, 4478, 589, 7140, 4273, 2]
+// Dependencies: [5, 32, 19, 4482, 589, 7178, 4277, 2]
 // Exports: default
 
-// Module 16900 (useGuildApplication)
-import fetchApplication from "fetchApplication";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import addApplication from "addApplication";
+// Module 16993 (useGuildApplication)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import closure_6 from "addApplication" /* 4482 */;
 
 const require = arg1;
-const result = require("noop").fileFinishedImporting("modules/applications/useGuildApplication.tsx");
+const result = require("set").fileFinishedImporting("modules/applications/useGuildApplication.tsx");
 
 export default function useGuildApplication(arg0, arg1) {
-  let fetchApplication;
-  let tmp3;
   const _require = arg0;
-  let closure_1 = arg1;
-  const items = [addApplication];
+  closure_1 = arg1;
+  const items = [closure_6];
   application = _require(application[4]).useStateFromStores(items, () => guildApplication.getGuildApplication(closure_0, closure_1));
   let obj = _require(application[4]);
-  [tmp3, fetchApplication] = callback2(first.useState(null == application), 2);
-  const error = callback2(first.useState(), 2);
+  [tmp3, closure_3] = callback2(first.useState(null == application), 2);
+  error = callback2(first.useState(), 2);
   callback2 = error[1];
   const tmp5 = callback2(first.useState(false), 2);
   first = tmp5[0];
-  addApplication = tmp5[1];
+  closure_6 = tmp5[1];
   const items1 = [application, arg1, arg0];
   callback = first.useCallback(callback(function*() {
     if (c5 === 2) {
@@ -40,7 +38,7 @@ export default function useGuildApplication(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -55,16 +53,16 @@ export default function useGuildApplication(arg0, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp4;
-            let closure_0 = tmp8;
-            if (null == outer1_2) {
-              if (null != outer1_0) {
-                outer1_6(true);
+            closure_1 = tmp4;
+            closure_0 = tmp8;
+            if (null == closure_1_2) {
+              if (null != closure_1_0) {
+                closure_1_6(true);
                 v0(true);
                 v0 = 2;
-                let obj1 = outer1_1(outer1_2[5]);
+                obj1 = closure_1_1(closure_1_2[5]);
                 obj1 = { type: null, includeTeam: true };
-                obj1[0] = outer1_1;
+                obj1[0] = closure_1_1;
                 v02 = 3;
                 c5 = 1;
                 const obj2 = { value: null, done: false };
@@ -78,7 +76,7 @@ export default function useGuildApplication(arg0, arg1) {
           if (2 === tmp8) {
             v0 = 1;
             closure_0 = closure_2;
-            const aPIError = new outer1_0(outer1_2[6]).APIError(closure_0);
+            const aPIError = new closure_1_0(closure_1_2[6]).APIError(closure_0);
             v02(aPIError);
           } else if (arg0 === 1) {
             c5 = 3;

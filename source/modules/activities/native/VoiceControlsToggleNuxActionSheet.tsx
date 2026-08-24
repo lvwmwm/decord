@@ -1,45 +1,42 @@
-// Module ID: 16318
-// Function ID: 16319
+// Module ID: 16412
+// Function ID: 16413
 // Name: VoiceControlsToggleActionSheet
-// Dependencies: [32, 19, 17, 4662, 1388, 21, 4661, 712, 8944, 589, 6950, 9018, 4734, 1236, 4745, 2]
+// Dependencies: [32, 19, 17, 4669, 1388, 21, 4668, 712, 8981, 589, 6988, 9055, 4739, 1236, 4750, 2]
 // Exports: default
 
-// Module 16318 (VoiceControlsToggleActionSheet)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16412 (VoiceControlsToggleActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
 const require = arg1;
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let closure_10 = { videoURI: "https://cdn.discordapp.com/assets/activities/platform/activities_pipfab_tutorial_redesign.mp4" };
 createCacheKey = { videoContainer: null, bottomSheetWrapper: null, contentContainer: null, title: null, body: null };
-createCacheKey = { borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+createCacheKey = { borderRadius: ThemesDefault.radii.sm, overflow: "hidden" };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { paddingHorizontal: 24 };
 createCacheKey[2] = { flex: 1, alignItems: "center", paddingTop: 24, paddingBottom: 16 };
 createCacheKey[3] = { marginTop: 16, textAlign: "center" };
 createCacheKey[4] = { marginTop: 8, marginBottom: 24, textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/activities/native/VoiceControlsToggleNuxActionSheet.tsx");
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/activities/native/VoiceControlsToggleNuxActionSheet.tsx");
 
 export default function VoiceControlsToggleActionSheet(markAsDismissed) {
-  let c1;
-  let tmp3;
   markAsDismissed = markAsDismissed.markAsDismissed;
-  let importDefault;
+  importDefault = undefined;
   let isScreenLandscape;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   [tmp3, c1] = callback(React.useState(0), 2);
   let obj = markAsDismissed(isScreenLandscape[8]);
   isScreenLandscape = obj.useIsScreenLandscape();
-  let obj1 = markAsDismissed(isScreenLandscape[9]);
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  obj1 = markAsDismissed(isScreenLandscape[9]);
+  const items = [closure_6];
   let num = 1.5;
   const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   if (isScreenLandscape) {
@@ -48,7 +45,7 @@ export default function VoiceControlsToggleActionSheet(markAsDismissed) {
   obj = {
     startExpanded: true,
     onDismiss() {
-      return markAsDismissed(outer1_7.UNKNOWN);
+      return markAsDismissed(closure_1_7.UNKNOWN);
     },
     children: null
   };
@@ -76,7 +73,7 @@ export default function VoiceControlsToggleActionSheet(markAsDismissed) {
   items1[2] = callback2(markAsDismissed(isScreenLandscape[12]).Text, obj4);
   const obj5 = {
     onPress() {
-      return markAsDismissed(outer1_7.UNKNOWN);
+      return markAsDismissed(closure_1_7.UNKNOWN);
     },
     text: null
   };

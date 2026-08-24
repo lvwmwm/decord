@@ -1,18 +1,19 @@
-// Module ID: 5774
-// Function ID: 5775
+// Module ID: 5805
+// Function ID: 5806
 // Name: GameDiversityTier5LargeBadge
-// Dependencies: [21, 5449, 5775, 2]
+// Dependencies: [21, 5454, 5806, 2]
 // Exports: GameDiversityTier5LargeBadge
 
-// Module 5774 (GameDiversityTier5LargeBadge)
-import { jsx } from "jsxProd";
+// Module 5805 (GameDiversityTier5LargeBadge)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import vanityUrlDefault from "vanityUrl" /* 5806 */;
 
-const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier5LargeBadge.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier5LargeBadge.native.tsx");
 
 export const GameDiversityTier5LargeBadge = function GameDiversityTier5LargeBadge(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const GameDiversityTier5LargeBadge = function GameDiversityTier5LargeBadg
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5775);
+  obj = { uri: vanityUrlDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GameDiversityTier5LargeBadge = function GameDiversityTier5LargeBadg
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

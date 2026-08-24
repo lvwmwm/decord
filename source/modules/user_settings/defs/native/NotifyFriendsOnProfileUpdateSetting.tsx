@@ -1,37 +1,43 @@
-// Module ID: 15053
-// Function ID: 15054
+// Module ID: 15117
+// Function ID: 15118
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 2501, 4066, 15054, 2]
+// Dependencies: [8238, 10708, 1236, 2502, 4069, 15118, 2]
 
-// Module 15053 (toggle)
-import createToggle from "createToggle";
+// Module 15117 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2502 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import onNotifyFriendsOnProfileUpdateSettingsChanged from "onNotifyFriendsOnProfileUpdateSettingsChanged" /* 15118 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2501).F3llsQ);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.F3llsQ);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2501)["6goWcz"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault["6goWcz"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.DATA_AND_PRIVACY,
-  useValue: require("explicitContentFromProto").NotifyFriendsOnProfileUpdate.useSetting,
-  onValueChange: require("onNotifyFriendsOnProfileUpdateSettingsChanged").onNotifyFriendsOnProfileUpdateSettingsChanged
+  parent: MobileUserSettings.MobileUserSettings.DATA_AND_PRIVACY,
+  useValue: explicitContentFromProto.NotifyFriendsOnProfileUpdate.useSetting,
+  onValueChange: onNotifyFriendsOnProfileUpdateSettingsChanged.onNotifyFriendsOnProfileUpdateSettingsChanged
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2501).F3llsQ);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.F3llsQ);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2501)["6goWcz"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault["6goWcz"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.DATA_AND_PRIVACY,
-  useValue: require("explicitContentFromProto").NotifyFriendsOnProfileUpdate.useSetting,
-  onValueChange: require("onNotifyFriendsOnProfileUpdateSettingsChanged").onNotifyFriendsOnProfileUpdateSettingsChanged
+  parent: MobileUserSettings.MobileUserSettings.DATA_AND_PRIVACY,
+  useValue: explicitContentFromProto.NotifyFriendsOnProfileUpdate.useSetting,
+  onValueChange: onNotifyFriendsOnProfileUpdateSettingsChanged.onNotifyFriendsOnProfileUpdateSettingsChanged
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/NotifyFriendsOnProfileUpdateSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/NotifyFriendsOnProfileUpdateSetting.tsx");
 
 export default toggle;

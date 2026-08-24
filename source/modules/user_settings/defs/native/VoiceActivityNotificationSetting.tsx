@@ -1,51 +1,58 @@
-// Module ID: 14808
-// Function ID: 14809
+// Module ID: 14872
+// Function ID: 14873
 // Name: toggle
-// Dependencies: [8198, 676, 4033, 10669, 1236, 4066, 698, 2]
+// Dependencies: [8238, 676, 4036, 10708, 1236, 4069, 698, 2]
 
-// Module 14808 (toggle)
-import { AnalyticEvents } from "ME";
-import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
-import createToggle from "createToggle";
+// Module 14872 (toggle)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4036 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
+const AnalyticEvents = ME.AnalyticEvents;
+let closure_4 = AccountNotificationFlags.NotificationSettingsUpdateType;
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.wtk08S);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.wtk08S);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableVoiceActivityNotifications.useSetting,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableVoiceActivityNotifications.useSetting,
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.rngMNx);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.rngMNx);
   },
   onValueChange(voice_activity_notifications) {
-    const EnableVoiceActivityNotifications = require(4066) /* explicitContentFromProto */.EnableVoiceActivityNotifications;
+    const EnableVoiceActivityNotifications = explicitContentFromProto.EnableVoiceActivityNotifications;
     EnableVoiceActivityNotifications.updateSetting(voice_activity_notifications);
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     obj = { update_type: constants.ACCOUNT, voice_activity_notifications };
     obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj);
   }
 });
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.wtk08S);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.wtk08S);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableVoiceActivityNotifications.useSetting,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableVoiceActivityNotifications.useSetting,
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.rngMNx);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.rngMNx);
   },
   onValueChange(voice_activity_notifications) {
-    const EnableVoiceActivityNotifications = require(4066) /* explicitContentFromProto */.EnableVoiceActivityNotifications;
+    const EnableVoiceActivityNotifications = explicitContentFromProto.EnableVoiceActivityNotifications;
     EnableVoiceActivityNotifications.updateSetting(voice_activity_notifications);
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     obj = { update_type: constants.ACCOUNT, voice_activity_notifications };
     obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj);
   }
 };
-const result = require("AccountNotificationFlags").fileFinishedImporting("modules/user_settings/defs/native/VoiceActivityNotificationSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/VoiceActivityNotificationSetting.tsx");
 
 export default toggle;

@@ -1,18 +1,19 @@
-// Module ID: 7730
-// Function ID: 7731
+// Module ID: 7768
+// Function ID: 7769
 // Name: BlockedPaymentsCountryActionSheet
-// Dependencies: [19, 21, 6950, 7689, 2]
+// Dependencies: [19, 21, 6988, 7727, 2]
 // Exports: default
 
-// Module 7730 (BlockedPaymentsCountryActionSheet)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 7768 (BlockedPaymentsCountryActionSheet)
+import noopAll from "noop" /* 19 */;
+import Background from "Background" /* 6988 */;
+import BlockedPaymentsCountryDisplayDefault from "BlockedPaymentsCountryDisplay" /* 7727 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Background").fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryActionSheet.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryActionSheet.tsx");
 
 export default function BlockedPaymentsCountryActionSheet() {
-  const obj = { children: null };
-  obj[0] = jsx(importDefault(7689), {});
-  return jsx(require(6950) /* Background */.BottomSheet, { children: null });
+  return jsx(Background.BottomSheet, { children: jsx(BlockedPaymentsCountryDisplayDefault, {}) });
 };

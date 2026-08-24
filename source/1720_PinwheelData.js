@@ -4,8 +4,7 @@
 // Dependencies: [1712]
 
 // Module 1720 (PinwheelData)
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
+import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes" /* 1712 */;
 
 obj = { PinwheelIn: { name: "PinwheelIn", style: obj, duration: 0.3 }, PinwheelOut: { name: "PinwheelOut", style: obj, duration: 0.3 } };
 obj = { 0: { transform: items, opacity: 0 }, 100: null };

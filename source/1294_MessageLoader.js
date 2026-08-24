@@ -5,9 +5,9 @@
 // Exports: createLoader, loadAllMessagesInLocale, waitForAllDefaultIntlMessagesLoaded
 
 // Module 1294 (MessageLoader)
-import _slicedToArray from "_slicedToArray";
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
 const MessageLoader = require;
 let fn = this;
@@ -16,16 +16,16 @@ if (this) {
 }
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
+    closure_0 = arg0;
+    closure_1 = arg1;
     let _Promise = arg2;
-    let closure_3 = arg3;
+    closure_3 = arg3;
     if (!arg2) {
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
+      closure_0 = arg0;
+      closure_1 = arg1;
       function fulfilled(arg0) {
         try {
           step(iter.next(arg0));
@@ -81,7 +81,7 @@ if (!fn) {
 class MessageLoader {
   constructor(arg0, arg1) {
     self = this;
-    tmp = outer1_4(this, self);
+    tmp = closure_4(this, self);
     this.messages = {};
     this.localeImportMap = global;
     this.supportedLocales = Object.keys(global);
@@ -95,12 +95,12 @@ class MessageLoader {
     if (closure_1.hot) {
       _Object = Object;
       _loop = function _loop(arg0) {
-        let closure_0 = arg0;
+        closure_0 = arg0;
         hot = hot.hot;
-        hot.accept(hot, () => outer2_5(closure_0, undefined, undefined, function() {
-          const self = this;
-          let c2 = 0;
-          let c3 = 0;
+        hot.accept(hot, () => closure_2_5(closure_0, undefined, undefined, function() {
+          self = this;
+          c2 = 0;
+          c3 = 0;
           return (function*() {
             if (c3 === 2) {
               c3 = 3;
@@ -113,7 +113,7 @@ class MessageLoader {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -128,10 +128,10 @@ class MessageLoader {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    let closure_1 = self;
+                    closure_1 = self;
                     c2 = 1;
                     c3 = 1;
-                    const obj1 = { value: null, done: false };
+                    obj1 = { value: null, done: false };
                     obj1[0] = self._loadLocale(self);
                     return obj1;
                   }
@@ -146,7 +146,7 @@ class MessageLoader {
                 } else {
                   closure_1._parseCache = {};
                   c3 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp8) {
                 c3 = tmp;
@@ -164,9 +164,9 @@ class MessageLoader {
       tmp7 = entries;
       tmp9 = tmp6;
       while (tmp6 !== undefined) {
-        tmp10 = outer1_3;
-        tmp11 = outer1_3(tmp8, 2);
-        InternalIntlMessage = tmp11[1];
+        tmp10 = closure_3;
+        tmp11 = closure_3(tmp8, 2);
+        closure_1 = tmp11[1];
         _loopResult = require("_slicedToArray");
         continue;
       }
@@ -192,7 +192,7 @@ let items = [
           self2 = _parentLoader;
         }
         const _Error = Error;
-        const error = new Error("Setting `fallbackWith` on MessageLoader created a circular chain that would never resolve");
+        error = new Error("Setting `fallbackWith` on MessageLoader created a circular chain that would never resolve");
         throw error;
       }
       self.fallbackLoader = $$loader;
@@ -287,11 +287,11 @@ let items = [
   {
     key: "_loadLocale",
     value: function _loadLocale(c0) {
-      let closure_0 = c0;
+      closure_0 = c0;
       return fn(this, undefined, undefined, function() {
         const self = this;
-        let c5 = 0;
-        let c6 = 0;
+        c5 = 0;
+        c6 = 0;
         return (function*() {
           if (c6 === 2) {
             c6 = 3;
@@ -304,7 +304,7 @@ let items = [
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -319,8 +319,8 @@ let items = [
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  let closure_3 = self;
-                  let closure_4 = tmp2;
+                  closure_3 = self;
+                  closure_4 = tmp2;
                   if (null == self.messages[self]) {
                     let current;
                     if (null !== tmp38._localeLoadingPromises[self]) {
@@ -345,12 +345,12 @@ let items = [
                         if (tmp29) {
                           tmp29 = initialized;
                         }
-                        const obj1 = { initialized: null, current: null };
+                        obj1 = { initialized: null, current: null };
                         obj1[0] = tmp29;
                         obj1[1] = tmp25;
                         tmp38._localeLoadingPromises[self] = obj1;
                         const messages = tmp38.messages;
-                        let closure_1 = self;
+                        closure_1 = self;
                         c5 = 1;
                         c6 = 1;
                         const obj2 = { value: null, done: false };
@@ -361,7 +361,7 @@ let items = [
                         if (supportedLocales.includes(self)) {
                           const _Error = Error;
                           const _HermesInternal = HermesInternal;
-                          const error = new Error("Requested to load locale " + self + ", which should be supported, but no source for translation data was provided.");
+                          error = new Error("Requested to load locale " + self + ", which should be supported, but no source for translation data was provided.");
                           throw error;
                         }
                       }
@@ -427,7 +427,7 @@ let items = [
     key: "onChange",
     value: function onChange(arg0) {
       const self = this;
-      let closure_0 = arg0;
+      closure_0 = arg0;
       let _subscribers = this._subscribers;
       _subscribers.add(arg0);
       return () => {
@@ -474,10 +474,10 @@ let items = [
     value: function waitForLocaleLoaded(defaultLocale, flag) {
       return fn(this, arguments, undefined, function(arg0) {
         const self = this;
-        let closure_1 = arg0;
-        let closure_2 = arg1;
-        let c5 = 0;
-        let c6 = 0;
+        closure_1 = arg0;
+        closure_2 = arg1;
+        c5 = 0;
+        c6 = 0;
         const iter = (function*(arg0) {
           if (c6 === 2) {
             c6 = 3;
@@ -490,7 +490,7 @@ let items = [
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -505,8 +505,8 @@ let items = [
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  let closure_4 = closure_0;
-                  let closure_3 = tmp2;
+                  closure_4 = closure_0;
+                  closure_3 = tmp2;
                   let flag;
                   closure_0 = flag;
                   flag = ref;
@@ -525,7 +525,7 @@ let items = [
                     throw arg1;
                   } else if (arg0 === 2) {
                     c6 = 3;
-                    const obj1 = { value: null, done: true };
+                    obj1 = { value: null, done: true };
                     obj1[0] = arg1;
                     return obj1;
                   } else {
@@ -559,7 +559,7 @@ let items = [
                   return obj;
                 }
                 c6 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp17) {
               c6 = tmp;
@@ -577,9 +577,9 @@ let items = [
     value: function waitForDefaultLocale() {
       return fn(this, arguments, undefined, function() {
         const self = this;
-        let closure_1 = arg0;
-        let c4 = 0;
-        let c5 = 0;
+        closure_1 = arg0;
+        c4 = 0;
+        c5 = 0;
         const iter = (function*() {
           if (c5 === 2) {
             c5 = 3;
@@ -592,7 +592,7 @@ let items = [
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -607,8 +607,8 @@ let items = [
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  let closure_3 = flag;
-                  let closure_2 = tmp2;
+                  closure_3 = flag;
+                  closure_2 = tmp2;
                   flag = undefined;
                   flag = closure_1;
                   if (closure_1 === undefined) {
@@ -623,7 +623,7 @@ let items = [
                 throw arg1;
               } else if (arg0 === 2) {
                 c5 = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -660,7 +660,7 @@ export const loadAllMessagesInLocale = function loadAllMessagesInLocale(closure_
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -677,8 +677,8 @@ export const loadAllMessagesInLocale = function loadAllMessagesInLocale(closure_
           } else {
             c1 = 1;
             c0 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = Promise.all(outer1_7.map((_loadLocale) => _loadLocale._loadLocale(c0)));
+            obj1 = { value: null, done: false };
+            obj1[0] = Promise.all(closure_1_7.map((_loadLocale) => _loadLocale._loadLocale(c0)));
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -691,7 +691,7 @@ export const loadAllMessagesInLocale = function loadAllMessagesInLocale(closure_
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = tmp;
@@ -713,7 +713,7 @@ export const waitForAllDefaultIntlMessagesLoaded = function waitForAllDefaultInt
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -730,8 +730,8 @@ export const waitForAllDefaultIntlMessagesLoaded = function waitForAllDefaultInt
           } else {
             c1 = 1;
             c0 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = Promise.all(outer1_7.map((waitForDefaultLocale) => waitForDefaultLocale.waitForDefaultLocale()));
+            obj1 = { value: null, done: false };
+            obj1[0] = Promise.all(closure_1_7.map((waitForDefaultLocale) => waitForDefaultLocale.waitForDefaultLocale()));
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -744,7 +744,7 @@ export const waitForAllDefaultIntlMessagesLoaded = function waitForAllDefaultInt
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = tmp;

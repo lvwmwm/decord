@@ -1,38 +1,34 @@
-// Module ID: 8808
-// Function ID: 8809
-// Dependencies: [32, 19, 17, 21, 4661, 712, 5441, 2]
+// Module ID: 8845
+// Function ID: 8846
+// Dependencies: [32, 19, 17, 21, 4668, 712, 5446, 2]
 
-// Module 8808
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8845
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5446 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
 let c3 = importAllResult;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let obj = { container: null, flex: null, scroller: null, buttonContainer: null };
-obj = { flex: 1, paddingHorizontal: 0, paddingVertical: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%" };
+obj = { flex: 1, paddingHorizontal: 0, paddingVertical: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%" };
 obj[0] = obj;
 obj[1] = { flex: 1 };
 obj[2] = { paddingHorizontal: 16 };
-createCacheKey = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 16, paddingVertical: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 16, paddingVertical: 16, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 obj[3] = createCacheKey;
 let closure_8 = createCacheKey.createStyles(obj);
 const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
-  let action;
-  let children;
-  let importDefault;
+  importDefault = undefined;
   ({ children, action } = arg0);
   const tmp = callback4();
   const tmp2 = callback(importAllResult.useState(32), 2);
   importDefault = tmp2[1];
-  const insets = importDefault(5441)().insets;
+  const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
   let obj = { style: tmp.container, children: null };
   obj = { ref, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", style: items, contentContainerStyle: tmp.scroller, children };
   items = [tmp.flex, { marginBottom: tmp2[0] + insets.bottom }];
@@ -45,6 +41,6 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   obj[1] = items1;
   return callback3(closure_4, obj);
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventStepContainer.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventStepContainer.tsx");
 
 export default forwardRefResult;

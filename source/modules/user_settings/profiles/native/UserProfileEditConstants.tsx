@@ -1,10 +1,12 @@
-// Module ID: 14003
-// Function ID: 14004
+// Module ID: 14071
+// Function ID: 14072
 // Name: UserProfileEditAutoFocusElement
 // Dependencies: [2]
 
-// Module 14003 (UserProfileEditAutoFocusElement)
-const result = require("set").fileFinishedImporting("modules/user_settings/profiles/native/UserProfileEditConstants.tsx");
+// Module 14071 (UserProfileEditAutoFocusElement)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/user_settings/profiles/native/UserProfileEditConstants.tsx");
 
 export const UserProfileEditAutoFocusElement = { AVATAR: "AVATAR", BIO: "BIO" };
 export const DEFAULT_UPSELL_GRADIENT_COLORS = ["rgba(0, 0, 0, 0)", "#000"];

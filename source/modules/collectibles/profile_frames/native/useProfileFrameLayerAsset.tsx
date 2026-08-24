@@ -1,27 +1,23 @@
-// Module ID: 8966
-// Function ID: 8967
+// Module ID: 9003
+// Function ID: 9004
 // Name: map
 // Dependencies: [32, 19, 17, 1901, 2]
 // Exports: default
 
-// Module 8966 (map)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 9003 (map)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ Image: c4, PixelRatio: c5 } = get_ActivityIndicator);
 const map = new Map();
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/profile_frames/native/useProfileFrameLayerAsset.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/profile_frames/native/useProfileFrameLayerAsset.tsx");
 
 export default function useProfileFrameLayerAsset(width) {
-  let layer;
-  let skuId;
   width = width.width;
   let collectiblesItemAssetUrl;
-  let dependencyMap;
+  dependencyMap = undefined;
   ({ skuId, layer } = width);
   let obj = collectiblesItemAssetUrl(1901);
   obj = { skuId, assetFormat: collectiblesItemAssetUrl(1901).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
@@ -34,12 +30,12 @@ export default function useProfileFrameLayerAsset(width) {
       hasItem = "" === tmp;
     }
     if (!hasItem) {
-      hasItem = outer1_6.has(tmp);
+      hasItem = closure_1_6.has(tmp);
     }
     if (!hasItem) {
-      const size = outer1_4.getSize(tmp, (arg0, arg1) => {
+      const size = closure_1_4.getSize(tmp, (arg0, arg1) => {
         if (arg0 > 0) {
-          const result = outer1_6.set(closure_0, arg1 / arg0);
+          const result = closure_1_6.set(closure_0, arg1 / arg0);
           callback();
         }
       }, () => {

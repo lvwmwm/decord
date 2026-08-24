@@ -1,26 +1,22 @@
-// Module ID: 15133
-// Function ID: 15134
+// Module ID: 15197
+// Function ID: 15198
 // Name: PasswordScreen
-// Dependencies: [5, 32, 19, 17, 21, 8582, 15125, 15124, 1236, 8071, 15127, 2]
+// Dependencies: [5, 32, 19, 17, 21, 8621, 15189, 15188, 1236, 8110, 15191, 2]
 // Exports: default
 
-// Module 15133 (PasswordScreen)
-import useWideAuthView from "useWideAuthView";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 15197 (PasswordScreen)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("noop").fileFinishedImporting("modules/mfa/native/screens/PasswordScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/mfa/native/screens/PasswordScreen.tsx");
 
 export default function PasswordScreen(finish) {
-  let c3;
-  let c4;
-  let tmp10;
-  let tmp8;
   finish = finish.finish;
-  let importDefault;
+  importDefault = undefined;
   let first;
   c3 = undefined;
   let callback;
@@ -37,13 +33,13 @@ export default function PasswordScreen(finish) {
   function _sendPassword() {
     const self = this;
     const tmp = _undefined(function*() {
-      let closure_2 = tmp3;
-      outer1_1(null);
-      outer1_3(true);
+      closure_2 = tmp3;
+      closure_1_1(null);
+      closure_1_3(true);
       let v0 = 1;
-      const obj1 = { mfaType: "password", data: null };
-      obj1[1] = outer1_2;
-      yield outer1_0(obj1);
+      obj1 = { mfaType: "password", data: null };
+      obj1[1] = closure_1_2;
+      yield closure_1_0(obj1);
       if (1 === tmp7) {
         v0 = 0;
         let message = callback;
@@ -57,7 +53,7 @@ export default function PasswordScreen(finish) {
         }
         closure_1(message);
         callback(false);
-        let c6 = 3;
+        c6 = 3;
         const tmp15 = closure_1;
       } else if (arg0 === 1) {
         c6 = 3;
@@ -69,7 +65,7 @@ export default function PasswordScreen(finish) {
       v0 = 0;
       return arg1;
     });
-    const _sendPassword = tmp;
+    closure_5 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -94,7 +90,7 @@ export default function PasswordScreen(finish) {
   const intl = finish(first[8]).intl;
   obj[0] = intl.string(finish(first[8]).t.Rw1XuM);
   obj = { style: screenStyles.inputContainer, children: null };
-  let obj1 = { autoFocus: true, required: true, textContentType: "password", label: null, placeholder: null, autoComplete: "current-password", errorMessage: null, returnKeyType: "done", onChange: null, onSubmitEditing: null, isDisabled: null, isClearable: true, secureTextEntry: true };
+  obj1 = { autoFocus: true, required: true, textContentType: "password", label: null, placeholder: null, autoComplete: "current-password", errorMessage: null, returnKeyType: "done", onChange: null, onSubmitEditing: null, isDisabled: null, isClearable: true, secureTextEntry: true };
   const intl2 = finish(first[8]).intl;
   obj1[3] = intl2.string(finish(first[8]).t["CIGa+7"]);
   const intl3 = finish(first[8]).intl;

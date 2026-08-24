@@ -1,48 +1,47 @@
-// Module ID: 9776
-// Function ID: 9777
+// Module ID: 9815
+// Function ID: 9816
 // Name: error
-// Dependencies: [19, 17, 21, 4661, 712, 6803, 9777, 4734, 1236, 4745, 5260, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 6840, 9816, 4739, 1236, 4750, 5265, 2]
 // Exports: default
 
-// Module 9776 (error)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9815 (error)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import registerAssetDefault from "registerAsset" /* 9816 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: null, inner: null, text: null, image: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, gap: 16, paddingHorizontal: 16, justifyContent: "center", flexDirection: "column" };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, gap: 16, paddingHorizontal: 16, justifyContent: "center", flexDirection: "column" };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flex: 1, flexDirection: "column", alignItems: "center", justifyContent: "center" };
 createCacheKey[2] = { marginTop: 24, textAlign: "center" };
-createCacheKey[3] = { tintColor: require("Themes").colors.TEXT_FEEDBACK_WARNING };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { tintColor: require("Themes").colors.TEXT_FEEDBACK_WARNING };
-const result = require("jsxProd").fileFinishedImporting("modules/oauth2/native/ErrorResult.tsx");
+createCacheKey[3] = { tintColor: ThemesDefault.colors.TEXT_FEEDBACK_WARNING };
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { tintColor: ThemesDefault.colors.TEXT_FEEDBACK_WARNING };
+const result = require("set").fileFinishedImporting("modules/oauth2/native/ErrorResult.tsx");
 
 export default function ErrorResult(error) {
   error = error.error;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { bottom: true, style: tmp.container, children: null };
   obj = { style: tmp.inner, children: null };
-  obj = { source: null, style: null };
-  obj[0] = importDefault(9777);
-  obj[1] = tmp.image;
+  obj = { source: registerAssetDefault, style: tmp.image };
   const items = [callback(closure_3, obj), ];
-  const obj1 = { style: tmp.text, variant: "text-md/medium", children: null };
+  obj1 = { style: tmp.text, variant: "text-md/medium", children: null };
   if (error == null) {
     const intl = tmp3(1236).intl;
     error = intl.string(tmp3(1236).t.mqn873);
   }
   obj1[2] = error;
-  items[1] = callback(require(4734) /* Text */.Text, obj1);
+  items[1] = callback(Text.Text, obj1);
   obj[1] = items;
   const items1 = [closure_6(closure_4, obj), ];
   let tmp6Result = null;
@@ -53,9 +52,9 @@ export default function ErrorResult(error) {
     obj2[2] = function onPress() {
       return callback(table[10]).pop();
     };
-    tmp6Result = tmp6(tmp3(4745).Button, obj2);
+    tmp6Result = tmp6(tmp3(4750).Button, obj2);
   }
   items1[1] = tmp6Result;
   obj[2] = items1;
-  return closure_6(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return closure_6(SafeAreaPaddingView.SafeAreaPaddingView, obj);
 };

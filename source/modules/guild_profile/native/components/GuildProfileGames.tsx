@@ -1,32 +1,27 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 9555
+// Function ID: 9556
 // Name: ClickableGameIcon
-// Dependencies: [19, 17, 21, 4661, 712, 9519, 9101, 9524, 4734, 9528, 9529, 4094, 4342, 9530, 2007, 5433, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 9556, 9138, 9561, 4739, 9565, 9566, 4097, 4346, 9567, 2008, 5438, 2]
 // Exports: default
 
-// Module 9518 (ClickableGameIcon)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9555 (ClickableGameIcon)
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import useGuildProfileGamesDefault from "useGuildProfileGames" /* 9565 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function ClickableGameIcon(game) {
-  let activityLevel;
-  let enabled;
-  let onPressFallback;
-  let style;
   game = game.game;
   ({ enabled, onPressFallback } = game);
-  let dependencyMap;
+  dependencyMap = undefined;
   enabled = undefined;
   ({ style, activityLevel } = game);
-  const obj = { gameId: game.id, source: null, trackEntryPointImpression: null };
-  obj[1] = game(9101).GameProfileSources.GuildProfileGames;
-  obj[2] = enabled;
-  const tmp3Result = onPressFallback(9519)(obj);
+  const obj = { gameId: game.id, source: game(9138).GameProfileSources.GuildProfileGames, trackEntryPointImpression: enabled };
+  const tmp3Result = onPressFallback(9556)(obj);
   dependencyMap = tmp3Result;
   if (enabled) {
     enabled = null != tmp3Result;
@@ -35,37 +30,33 @@ function ClickableGameIcon(game) {
   if (enabled) {
     const onPress = enabled.useCallback(() => {
       if (enabled) {
-        _undefined();
+        callback();
       } else if (onPressFallback != null) {
         tmp(game);
       }
     }, items);
   }
-  return callback(onPressFallback(9524), { style, game, activityLevel, onPress });
+  return callback(onPressFallback(9561), { style, game, activityLevel, onPress });
 }
 function FavoriteGame(game) {
-  let activityLevel;
-  let clickable;
   game = game.game;
   ({ activityLevel, clickable } = game);
   let obj = { style: createCacheKey().favoriteGame, children: null };
   const items = [callback(ClickableGameIcon, { game, activityLevel, enabled: clickable }), ];
   obj = { variant: "text-sm/medium", color: "text-subtle", children: game.name };
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  items[1] = callback(Text.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
 function GuildProfileGamesContent(profile) {
-  let gamesToDisplay;
-  let lastGameToDisplay;
   profile = profile.profile;
   ({ gamesToDisplay, lastGameToDisplay } = profile);
   const remainingGames = profile.remainingGames;
   let React;
   let gameActivity;
   let enabled;
-  let c6;
-  let createCacheKey;
+  closure_6 = undefined;
+  createCacheKey = undefined;
   let tmp = createCacheKey();
   React = tmp;
   gameActivity = profile.gameActivity;
@@ -75,13 +66,13 @@ function GuildProfileGamesContent(profile) {
   if (lastGameToDisplay != null) {
     iconURL = lastGameToDisplay.getIconURL(24);
   }
-  c6 = tmp5;
+  closure_6 = tmp5;
   let items = [lastGameToDisplay, null != iconURL, remainingGames, gameActivity, tmp, enabled];
   const memo = React.useMemo(() => {
     let tmp = lastGameToDisplay;
     let tmp2 = null;
     if (null != lastGameToDisplay) {
-      if (!_undefined2) {
+      if (!callback) {
         tmp2 = null;
       } else if (0 === remainingGames.length) {
         let obj = { game: null, activityLevel: null, enabled: null };
@@ -89,27 +80,27 @@ function GuildProfileGamesContent(profile) {
         tmp = gameActivity[tmp.id];
         obj[1] = tmp;
         obj[2] = enabled;
-        let tmp9 = enabled(outer1_8, obj);
+        let tmp9 = enabled(closure_1_8, obj);
       } else {
         obj = { style: null, children: null };
-        obj[0] = _undefined.lastItem;
+        obj[0] = closure_3.lastItem;
         obj = { style: null, game: null, activityLevel: null };
-        obj[0] = _undefined.lastItemImage;
+        obj[0] = closure_3.lastItemImage;
         obj[1] = tmp;
         obj[2] = gameActivity[tmp.id];
         const items = [enabled(lastGameToDisplay(remainingGames[7]), obj), , ];
-        const obj1 = { style: null };
-        obj1[0] = _undefined.lastItemOverlay;
+        obj1 = { style: null };
+        obj1[0] = closure_3.lastItemOverlay;
         items[1] = enabled(gameActivity, obj1);
         const obj2 = { style: null, children: null };
-        obj2[0] = _undefined.lastItemText;
+        obj2[0] = closure_3.lastItemText;
         const obj3 = { variant: "text-xs/medium", color: "text-overlay-light", children: null };
         const _HermesInternal = HermesInternal;
         obj3[2] = "+" + arr.length;
         obj2[1] = enabled(profile(remainingGames[8]).Text, obj3);
         items[2] = enabled(gameActivity, obj2);
         obj[1] = items;
-        tmp9 = _undefined2(gameActivity, obj);
+        tmp9 = callback(gameActivity, obj);
       }
     }
     return tmp2;
@@ -130,7 +121,7 @@ function GuildProfileGamesContent(profile) {
     obj[1] = enabled(FavoriteGame, obj);
     let tmp14Result = enabled(gameActivity, obj);
   } else if (tmp7) {
-    let obj1 = { style: null, onPress: null, children: null };
+    obj1 = { style: null, onPress: null, children: null };
     obj1[0] = tmp.container;
     obj1[1] = tmp8;
     const items1 = [gamesToDisplay.map((game) => enabled(lastGameToDisplay(remainingGames[7]), { game, activityLevel: gameActivity[game.id] }, game.id)), memo];
@@ -139,7 +130,7 @@ function GuildProfileGamesContent(profile) {
   } else {
     let obj2 = { style: null, children: null };
     obj2[0] = tmp.container;
-    const items2 = [gamesToDisplay.map((game) => enabled(outer1_8, { game, activityLevel: gameActivity[game.id], enabled, onPressFallback: closure_7 }, game.id)), memo];
+    const items2 = [gamesToDisplay.map((game) => enabled(closure_1_8, { game, activityLevel: gameActivity[game.id], enabled, onPressFallback: closure_7 }, game.id)), memo];
     obj2[1] = items2;
     tmp14Result = tmp14(gameActivity, obj2);
   }
@@ -147,16 +138,16 @@ function GuildProfileGamesContent(profile) {
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: { display: "flex", flexDirection: "row", gap: 8 }, favoriteGame: { display: "flex", flexDirection: "row", alignItems: "center", gap: 8 }, lastItem: { position: "relative", width: 32, height: 32 }, lastItemOverlay: null, lastItemImage: null, lastItemText: null };
-createCacheKey = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: require("Themes").colors.BACKGROUND_SCRIM, borderRadius: require("Themes").radii.xs };
+createCacheKey = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_SCRIM, borderRadius: ThemesDefault.radii.xs };
 createCacheKey[3] = createCacheKey;
 createCacheKey[4] = { position: "absolute" };
 createCacheKey[5] = { display: "flex", justifyContent: "center", alignItems: "center", width: 32, height: 32 };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGames.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGames.tsx");
 
 export default function GuildProfileGames(profile) {
   profile = profile.profile;
-  const gamesToDisplay = importDefault(9528)(profile).gamesToDisplay;
+  const gamesToDisplay = useGuildProfileGamesDefault(profile).gamesToDisplay;
   let tmp4 = null;
   if (null != gamesToDisplay) {
     tmp4 = null;

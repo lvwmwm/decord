@@ -1,36 +1,36 @@
-// Module ID: 5227
-// Function ID: 5228
+// Module ID: 5232
+// Function ID: 5233
 // Dependencies: [109, 698, 530, 2]
 
-// Module 5227
-import _objectWithoutProperties from "_objectWithoutProperties";
+// Module 5232
+import closure_3 from "_objectWithoutProperties" /* 109 */;
 
 const require = arg1;
 let closure_2 = ["trackedActionData"];
-const result = require("sendRequest").fileFinishedImporting("utils/TrackedHTTPUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/TrackedHTTPUtils.tsx");
 
 export default {
   get(trackedActionData) {
     get = get(trackedActionData[2]).HTTP.get;
     trackedActionData = undefined;
-    let c2;
+    closure_2 = undefined;
     let callback;
     trackedActionData = trackedActionData.trackedActionData;
-    const tmp = callback(trackedActionData, c2);
-    c2 = tmp;
+    const tmp = callback(trackedActionData, closure_2);
+    closure_2 = tmp;
     callback = { url: tmp.url, request_method: "get" };
     return new Promise((arg0, arg1) => {
-      const del = arg0;
-      let closure_1 = arg1;
-      const promise = del(c2);
-      del(c2).then((status) => {
+      del = arg0;
+      closure_1 = arg1;
+      const promise = del(closure_2);
+      del(closure_2).then((status) => {
         let obj = lib;
         let properties = lib.properties;
         if (typeof lib.properties === "function") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status };
-        const merged = Object.assign(outer1_3);
+        const merged = Object.assign(closure_1_3);
         const merged1 = Object.assign(properties);
         del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
         callback(status);
@@ -53,7 +53,7 @@ export default {
           message = body2.message;
         }
         obj[2] = message;
-        const merged = Object.assign(outer1_3);
+        const merged = Object.assign(closure_1_3);
         const merged1 = Object.assign(properties);
         del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
         lib(status);
@@ -63,24 +63,24 @@ export default {
   post(trackedActionData, responseHandler) {
     post = post(trackedActionData[2]).HTTP.post;
     trackedActionData = undefined;
-    let c2;
+    closure_2 = undefined;
     let callback;
     trackedActionData = trackedActionData.trackedActionData;
-    const tmp = callback(trackedActionData, c2);
-    c2 = tmp;
+    const tmp = callback(trackedActionData, closure_2);
+    closure_2 = tmp;
     callback = { url: tmp.url, request_method: "post" };
     return new Promise((arg0, arg1) => {
-      const del = arg0;
-      let closure_1 = arg1;
-      const promise = del(c2);
-      del(c2).then((status) => {
+      del = arg0;
+      closure_1 = arg1;
+      const promise = del(closure_2);
+      del(closure_2).then((status) => {
         let obj = lib;
         let properties = lib.properties;
         if (typeof lib.properties === "function") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status };
-        const merged = Object.assign(outer1_3);
+        const merged = Object.assign(closure_1_3);
         const merged1 = Object.assign(properties);
         del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
         callback(status);
@@ -103,7 +103,7 @@ export default {
           message = body2.message;
         }
         obj[2] = message;
-        const merged = Object.assign(outer1_3);
+        const merged = Object.assign(closure_1_3);
         const merged1 = Object.assign(properties);
         del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
         lib(status);
@@ -113,24 +113,24 @@ export default {
   put(trackedActionData) {
     put = put(trackedActionData[2]).HTTP.put;
     trackedActionData = undefined;
-    let c2;
+    closure_2 = undefined;
     let callback;
     trackedActionData = trackedActionData.trackedActionData;
-    const tmp = callback(trackedActionData, c2);
-    c2 = tmp;
+    const tmp = callback(trackedActionData, closure_2);
+    closure_2 = tmp;
     callback = { url: tmp.url, request_method: "put" };
     return new Promise((arg0, arg1) => {
-      const del = arg0;
-      let closure_1 = arg1;
-      const promise = del(c2);
-      del(c2).then((status) => {
+      del = arg0;
+      closure_1 = arg1;
+      const promise = del(closure_2);
+      del(closure_2).then((status) => {
         let obj = lib;
         let properties = lib.properties;
         if (typeof lib.properties === "function") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status };
-        const merged = Object.assign(outer1_3);
+        const merged = Object.assign(closure_1_3);
         const merged1 = Object.assign(properties);
         del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
         callback(status);
@@ -153,7 +153,7 @@ export default {
           message = body2.message;
         }
         obj[2] = message;
-        const merged = Object.assign(outer1_3);
+        const merged = Object.assign(closure_1_3);
         const merged1 = Object.assign(properties);
         del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
         lib(status);
@@ -163,24 +163,24 @@ export default {
   patch(trackedActionData) {
     patch = patch(trackedActionData[2]).HTTP.patch;
     trackedActionData = undefined;
-    let c2;
+    closure_2 = undefined;
     let callback;
     trackedActionData = trackedActionData.trackedActionData;
-    const tmp = callback(trackedActionData, c2);
-    c2 = tmp;
+    const tmp = callback(trackedActionData, closure_2);
+    closure_2 = tmp;
     callback = { url: tmp.url, request_method: "patch" };
     return new Promise((arg0, arg1) => {
-      const del = arg0;
-      let closure_1 = arg1;
-      const promise = del(c2);
-      del(c2).then((status) => {
+      del = arg0;
+      closure_1 = arg1;
+      const promise = del(closure_2);
+      del(closure_2).then((status) => {
         let obj = lib;
         let properties = lib.properties;
         if (typeof lib.properties === "function") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status };
-        const merged = Object.assign(outer1_3);
+        const merged = Object.assign(closure_1_3);
         const merged1 = Object.assign(properties);
         del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
         callback(status);
@@ -203,7 +203,7 @@ export default {
           message = body2.message;
         }
         obj[2] = message;
-        const merged = Object.assign(outer1_3);
+        const merged = Object.assign(closure_1_3);
         const merged1 = Object.assign(properties);
         del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
         lib(status);
@@ -213,24 +213,24 @@ export default {
   delete: function del(trackedActionData) {
     del = del(trackedActionData[2]).HTTP.del;
     trackedActionData = undefined;
-    let c2;
+    closure_2 = undefined;
     let callback;
     trackedActionData = trackedActionData.trackedActionData;
-    const tmp = callback(trackedActionData, c2);
-    c2 = tmp;
+    const tmp = callback(trackedActionData, closure_2);
+    closure_2 = tmp;
     callback = { url: tmp.url, request_method: "del" };
     return new Promise((arg0, arg1) => {
-      const del = arg0;
-      let closure_1 = arg1;
-      const promise = del(c2);
-      del(c2).then((status) => {
+      del = arg0;
+      closure_1 = arg1;
+      const promise = del(closure_2);
+      del(closure_2).then((status) => {
         let obj = lib;
         let properties = lib.properties;
         if (typeof lib.properties === "function") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status };
-        const merged = Object.assign(outer1_3);
+        const merged = Object.assign(closure_1_3);
         const merged1 = Object.assign(properties);
         del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
         callback(status);
@@ -253,7 +253,7 @@ export default {
           message = body2.message;
         }
         obj[2] = message;
-        const merged = Object.assign(outer1_3);
+        const merged = Object.assign(closure_1_3);
         const merged1 = Object.assign(properties);
         del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
         lib(status);

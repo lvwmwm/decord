@@ -1,20 +1,20 @@
-// Module ID: 9718
-// Function ID: 9719
+// Module ID: 9757
+// Function ID: 9758
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [19, 4539, 4558, 589, 9708, 2]
+// Dependencies: [19, 4544, 4563, 589, 9747, 2]
 // Exports: useAlertIfSecureFramesKeyInconsistent, useIsSecureFramesKeyInconsistent
 
-// Module 9718 (useIsSecureFramesKeyInconsistent)
-import noop from "noop";
-import createRTCConnection from "createRTCConnection";
-import initialize from "initialize";
+// Module 9757 (useIsSecureFramesKeyInconsistent)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "createRTCConnection" /* 4544 */;
+import closure_4 from "initialize" /* 4563 */;
 
 const require = arg1;
-let result = require("initialize").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesKeyInconsistent.tsx");
+let result = require("set").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesKeyInconsistent.tsx");
 
 export const useIsSecureFramesKeyInconsistent = function useIsSecureFramesKeyInconsistent(userId) {
   userId = userId.userId;
-  const items = [createRTCConnection, initialize];
+  const items = [closure_3, closure_4];
   return userId(589).useStateFromStores(items, () => {
     const items = [onAlertOpen, stateFromStores];
     return userId(userId[4]).getIsSecureFramesKeyInconsistent(userId, items);
@@ -27,7 +27,7 @@ export const useAlertIfSecureFramesKeyInconsistent = function useAlertIfSecureFr
   const nickname = channelId.nickname;
   const onAlertOpen = channelId.onAlertOpen;
   let stateFromStores;
-  let closure_5;
+  closure_5 = undefined;
   let items = [onAlertOpen, stateFromStores];
   stateFromStores = userId(userId[3]).useStateFromStores(items, () => {
     const items = [onAlertOpen, stateFromStores];
@@ -41,8 +41,8 @@ export const useAlertIfSecureFramesKeyInconsistent = function useAlertIfSecureFr
         const _setTimeout = setTimeout;
         tmp.current = setTimeout(() => {
           callback();
-          let obj = current(outer1_1[4]);
-          obj = { userId: closure_1, channelId: current, nickname: noop };
+          let obj = current(closure_1_1[4]);
+          obj = { userId: closure_1, channelId: current, nickname: closure_2 };
           const result = obj.showSecureFramesKeyInconsistentAlert(obj);
         }, 1000);
         let tmp3 = tmp;

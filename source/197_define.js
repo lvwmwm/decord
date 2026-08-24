@@ -5,7 +5,7 @@
 
 // Module 197 (define)
 ((arg0) => {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   function define(arg0, arg1) {
     Object.defineProperty(arg0, arg1, { value: arg2, enumerable: true, configurable: true, writable: true });
     return arg0[arg1];
@@ -49,30 +49,30 @@
       closure_1 = arg1;
       obj = {
         value: function enqueue(arg0, arg1) {
-              let closure_0 = arg0;
-              let closure_1 = arg1;
+              closure_0 = arg0;
+              closure_1 = arg1;
               if (nextPromise) {
                 function callInvokeWithMethodAndArg() {
                   return new closure_1((arg0, arg1) => {
-                    let closure_0 = arg0;
-                    let closure_1 = arg1;
-                    const tmp = outer1_6(outer1_0[closure_0], outer1_0, closure_1);
+                    closure_0 = arg0;
+                    closure_1 = arg1;
+                    const tmp = closure_1_6(closure_1_0[closure_0], closure_1_0, closure_1);
                     if ("throw" !== tmp.type) {
-                      let iter = tmp.arg;
+                      iter = tmp.arg;
                       let value = iter.value;
                       if (value) {
                         if (typeof value === "object") {
-                          let call = outer1_1.call;
+                          let call = closure_1_1.call;
                           if (typeof call === "unknown") {
                             let callResult = tmp8("__await");
                           } else {
                             callResult = call(value, "__await");
                           }
                           if (callResult) {
-                            outer1_1.resolve(value.__await).then((arg0) => {
-                              const tmp2 = outer1_6(lib.next, lib, arg0);
+                            closure_1_1.resolve(value.__await).then((arg0) => {
+                              const tmp2 = closure_1_6(lib.next, lib, arg0);
                               if ("throw" !== tmp2.type) {
-                                const iter = tmp2.arg;
+                                iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
                                   if (typeof value === "object") {
@@ -95,9 +95,9 @@
                                 closure_1(tmp2.arg);
                               }
                             }, (arg0) => {
-                              const tmp2 = outer1_6(lib.throw, lib, arg0);
+                              const tmp2 = closure_1_6(lib.throw, lib, arg0);
                               if ("throw" !== tmp2.type) {
-                                const iter = tmp2.arg;
+                                iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
                                   if (typeof value === "object") {
@@ -120,18 +120,18 @@
                                 closure_1(tmp2.arg);
                               }
                             });
-                            let resolveResult = outer1_1.resolve(value.__await);
+                            let resolveResult = closure_1_1.resolve(value.__await);
                           }
-                          tmp8 = outer1_1;
+                          tmp8 = closure_1_1;
                         }
                       }
-                      outer1_1.resolve(value).then((value) => {
+                      closure_1_1.resolve(value).then((value) => {
                         iter.value = value;
                         lib(iter);
                       }, (arg0) => {
-                        const tmp2 = outer1_6(lib.throw, lib, arg0);
+                        const tmp2 = closure_1_6(lib.throw, lib, arg0);
                         if ("throw" !== tmp2.type) {
-                          const iter = tmp2.arg;
+                          iter = tmp2.arg;
                           let fn = iter.value;
                           if (fn) {
                             if (typeof fn === "object") {
@@ -144,7 +144,7 @@
                               tmp9 = closure_1;
                             }
                             fn = () => { ... };
-                            let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                            nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                             const resolveResult = closure_1.resolve(fn.__await);
                           }
                           nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -153,7 +153,7 @@
                           closure_1(tmp2.arg);
                         }
                       });
-                      let resolveResult1 = outer1_1.resolve(value);
+                      let resolveResult1 = closure_1_1.resolve(value);
                     } else {
                       arg1(tmp.arg);
                     }
@@ -162,25 +162,25 @@
                 nextPromise = nextPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
               } else {
                 nextPromise = new closure_1((arg0, arg1) => {
-                  let closure_0 = arg0;
-                  let closure_1 = arg1;
-                  const tmp = outer1_6(outer1_0[closure_0], outer1_0, closure_1);
+                  closure_0 = arg0;
+                  closure_1 = arg1;
+                  const tmp = closure_1_6(closure_1_0[closure_0], closure_1_0, closure_1);
                   if ("throw" !== tmp.type) {
-                    let iter = tmp.arg;
+                    iter = tmp.arg;
                     let value = iter.value;
                     if (value) {
                       if (typeof value === "object") {
-                        let call = outer1_1.call;
+                        let call = closure_1_1.call;
                         if (typeof call === "unknown") {
                           let callResult = tmp8("__await");
                         } else {
                           callResult = call(value, "__await");
                         }
                         if (callResult) {
-                          outer1_1.resolve(value.__await).then((arg0) => {
-                            const tmp2 = outer1_6(lib.next, lib, arg0);
+                          closure_1_1.resolve(value.__await).then((arg0) => {
+                            const tmp2 = closure_1_6(lib.next, lib, arg0);
                             if ("throw" !== tmp2.type) {
-                              const iter = tmp2.arg;
+                              iter = tmp2.arg;
                               const value = iter.value;
                               if (value) {
                                 if (typeof value === "object") {
@@ -192,9 +192,9 @@
                                   }
                                   if (callResult) {
                                     closure_1.resolve(value.__await).then((arg0) => {
-                                      const tmp2 = outer1_6(lib.next, lib, arg0);
+                                      const tmp2 = closure_1_6(lib.next, lib, arg0);
                                       if ("throw" !== tmp2.type) {
-                                        const iter = tmp2.arg;
+                                        iter = tmp2.arg;
                                         const value = iter.value;
                                         if (value) {
                                           if (typeof value === "object") {
@@ -217,9 +217,9 @@
                                         closure_1(tmp2.arg);
                                       }
                                     }, (arg0) => {
-                                      const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                      const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                       if ("throw" !== tmp2.type) {
-                                        const iter = tmp2.arg;
+                                        iter = tmp2.arg;
                                         const value = iter.value;
                                         if (value) {
                                           if (typeof value === "object") {
@@ -251,9 +251,9 @@
                                 iter.value = value;
                                 lib(iter);
                               }, (arg0) => {
-                                const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                 if ("throw" !== tmp2.type) {
-                                  const iter = tmp2.arg;
+                                  iter = tmp2.arg;
                                   let fn = iter.value;
                                   if (fn) {
                                     if (typeof fn === "object") {
@@ -266,7 +266,7 @@
                                       tmp9 = closure_1;
                                     }
                                     fn = () => { ... };
-                                    let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                                    nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                                     const resolveResult = closure_1.resolve(fn.__await);
                                   }
                                   nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -280,9 +280,9 @@
                               closure_1(tmp2.arg);
                             }
                           }, (arg0) => {
-                            const tmp2 = outer1_6(lib.throw, lib, arg0);
+                            const tmp2 = closure_1_6(lib.throw, lib, arg0);
                             if ("throw" !== tmp2.type) {
-                              const iter = tmp2.arg;
+                              iter = tmp2.arg;
                               const value = iter.value;
                               if (value) {
                                 if (typeof value === "object") {
@@ -294,9 +294,9 @@
                                   }
                                   if (callResult) {
                                     closure_1.resolve(value.__await).then((arg0) => {
-                                      const tmp2 = outer1_6(lib.next, lib, arg0);
+                                      const tmp2 = closure_1_6(lib.next, lib, arg0);
                                       if ("throw" !== tmp2.type) {
-                                        const iter = tmp2.arg;
+                                        iter = tmp2.arg;
                                         const value = iter.value;
                                         if (value) {
                                           if (typeof value === "object") {
@@ -319,9 +319,9 @@
                                         closure_1(tmp2.arg);
                                       }
                                     }, (arg0) => {
-                                      const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                      const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                       if ("throw" !== tmp2.type) {
-                                        const iter = tmp2.arg;
+                                        iter = tmp2.arg;
                                         const value = iter.value;
                                         if (value) {
                                           if (typeof value === "object") {
@@ -353,9 +353,9 @@
                                 iter.value = value;
                                 lib(iter);
                               }, (arg0) => {
-                                const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                 if ("throw" !== tmp2.type) {
-                                  const iter = tmp2.arg;
+                                  iter = tmp2.arg;
                                   let fn = iter.value;
                                   if (fn) {
                                     if (typeof fn === "object") {
@@ -368,7 +368,7 @@
                                       tmp9 = closure_1;
                                     }
                                     fn = () => { ... };
-                                    let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                                    nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                                     const resolveResult = closure_1.resolve(fn.__await);
                                   }
                                   nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -382,18 +382,18 @@
                               closure_1(tmp2.arg);
                             }
                           });
-                          let resolveResult = outer1_1.resolve(value.__await);
+                          let resolveResult = closure_1_1.resolve(value.__await);
                         }
-                        tmp8 = outer1_1;
+                        tmp8 = closure_1_1;
                       }
                     }
-                    outer1_1.resolve(value).then((value) => {
+                    closure_1_1.resolve(value).then((value) => {
                       iter.value = value;
                       lib(iter);
                     }, (arg0) => {
-                      const tmp2 = outer1_6(lib.throw, lib, arg0);
+                      const tmp2 = closure_1_6(lib.throw, lib, arg0);
                       if ("throw" !== tmp2.type) {
-                        const iter = tmp2.arg;
+                        iter = tmp2.arg;
                         let fn = iter.value;
                         if (fn) {
                           if (typeof fn === "object") {
@@ -406,9 +406,9 @@
                             tmp9 = closure_1;
                           }
                           fn = (arg0) => {
-                            const tmp2 = outer1_6(lib.throw, lib, arg0);
+                            const tmp2 = closure_1_6(lib.throw, lib, arg0);
                             if ("throw" !== tmp2.type) {
-                              const iter = tmp2.arg;
+                              iter = tmp2.arg;
                               const value = iter.value;
                               if (value) {
                                 if (typeof value === "object") {
@@ -431,10 +431,10 @@
                               closure_1(tmp2.arg);
                             }
                           };
-                          let nextPromise = closure_1.resolve(fn.__await).then((arg0) => {
-                            const tmp2 = outer1_6(lib.next, lib, arg0);
+                          nextPromise = closure_1.resolve(fn.__await).then((arg0) => {
+                            const tmp2 = closure_1_6(lib.next, lib, arg0);
                             if ("throw" !== tmp2.type) {
-                              const iter = tmp2.arg;
+                              iter = tmp2.arg;
                               const value = iter.value;
                               if (value) {
                                 if (typeof value === "object") {
@@ -463,9 +463,9 @@
                           iter.value = value;
                           lib(iter);
                         }, (arg0) => {
-                          const tmp2 = outer1_6(lib.throw, lib, arg0);
+                          const tmp2 = closure_1_6(lib.throw, lib, arg0);
                           if ("throw" !== tmp2.type) {
-                            const iter = tmp2.arg;
+                            iter = tmp2.arg;
                             let fn = iter.value;
                             if (fn) {
                               if (typeof fn === "object") {
@@ -478,7 +478,7 @@
                                 tmp9 = closure_1;
                               }
                               fn = () => { ... };
-                              let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                              nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                               const resolveResult = closure_1.resolve(fn.__await);
                             }
                             nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -492,7 +492,7 @@
                         closure_1(tmp2.arg);
                       }
                     });
-                    let resolveResult1 = outer1_1.resolve(value);
+                    let resolveResult1 = closure_1_1.resolve(value);
                   } else {
                     arg1(tmp.arg);
                   }
@@ -501,7 +501,7 @@
               return nextPromise;
             }
       };
-      tmp = f66682(this, "_invoke", obj);
+      tmp = f67238(this, "_invoke", obj);
       return;
     }
   }
@@ -587,21 +587,21 @@
     }
   }
   function doneResult() {
-    return { value: "HermesInternal", done: "HermesInternal" };
+    return { value: "HermesInternal", done: null };
   }
   const hasOwnProperty = prototype.hasOwnProperty;
   let tmp = Object.defineProperty || ((arg0, arg1, value) => {
     arg0[arg1] = value.value;
   });
-  let closure_2 = tmp;
+  closure_2 = tmp;
   let tmp2 = typeof Symbol === "function" ? Symbol : {};
-  let closure_3 = tmp3;
-  let closure_4 = tmp5;
+  closure_3 = tmp3;
+  closure_4 = tmp5;
   try {
     define({}, "");
     let tmp7 = define;
     function values(next) {
-      let closure_0 = next;
+      closure_0 = next;
       if (next) {
         if (next[closure_3]) {
           const call = tmp2.call;
@@ -611,7 +611,7 @@
         } else {
           const _isNaN = isNaN;
           if (!isNaN(next.length)) {
-            let c1 = -1;
+            c1 = -1;
             next = function next() {
               let arr;
               const sum = sum1 + 1;
@@ -661,16 +661,15 @@
       obj.reset(true);
       obj = {
         value: function invoke(method, arg1) {
-          let iter;
-          if (closure_3 === outer1_9) {
+          if (closure_3 === closure_1_9) {
             const _Error = Error;
-            const error = new Error("Generator is already running");
+            error = new Error("Generator is already running");
             throw error;
-          } else if (tmp === outer1_10) {
+          } else if (tmp === closure_1_10) {
             if ("throw" === method) {
               throw arg1;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             _undefined.method = method;
@@ -679,11 +678,11 @@
               iter = _undefined;
               let delegate = _undefined.delegate;
               if (delegate) {
-                let tmp2 = outer1_17;
-                let tmp3 = outer1_17(delegate, iter);
+                let tmp2 = closure_1_17;
+                let tmp3 = closure_1_17(delegate, iter);
                 if (tmp3) {
-                  let tmp15 = outer1_11;
-                  if (tmp3 === outer1_11) {
+                  let tmp15 = closure_1_11;
+                  if (tmp3 === closure_1_11) {
                     continue;
                   } else {
                     return tmp3;
@@ -696,8 +695,8 @@
                 iter.sent = arg;
               } else if ("throw" === iter.method) {
                 let tmp5 = closure_3;
-                let tmp6 = outer1_7;
-                if (closure_3 === outer1_7) {
+                let tmp6 = closure_1_7;
+                if (closure_3 === closure_1_7) {
                   break;
                 } else {
                   let dispatchExceptionResult = iter.dispatchException(iter.arg);
@@ -705,16 +704,16 @@
               } else if ("return" === iter.method) {
                 let abruptResult = iter.abrupt("return", iter.arg);
               }
-              let tmp9 = outer1_9;
-              closure_3 = outer1_9;
-              let tmp10 = outer1_6;
+              let tmp9 = closure_1_9;
+              closure_3 = closure_1_9;
+              let tmp10 = closure_1_6;
               let tmp11 = iter;
               let tmp12 = _Promise;
-              let tmp13 = outer1_6(iter, _Promise, iter);
+              let tmp13 = closure_1_6(iter, _Promise, iter);
               if ("normal" === tmp13.type) {
-                closure_3 = iter.done ? outer1_10 : outer1_8;
-                let tmp14 = outer1_11;
-                if (tmp13.arg === outer1_11) {
+                closure_3 = iter.done ? closure_1_10 : closure_1_8;
+                let tmp14 = closure_1_11;
+                if (tmp13.arg === closure_1_11) {
                   continue;
                 } else {
                   let obj = { value: null, done: null };
@@ -726,8 +725,8 @@
                 if ("throw" !== tmp13.type) {
                   continue;
                 } else {
-                  let tmp25 = outer1_10;
-                  closure_3 = outer1_10;
+                  let tmp25 = closure_1_10;
+                  closure_3 = closure_1_10;
                   iter.method = "throw";
                   iter.arg = tmp13.arg;
                   continue;
@@ -736,14 +735,14 @@
               }
               continue;
             }
-            closure_3 = outer1_10;
+            closure_3 = closure_1_10;
             throw iter.arg;
           }
         }
       };
-      let closure_0 = arg0;
-      let closure_1 = arg2;
-      let closure_3 = closure_7;
+      closure_0 = arg0;
+      closure_1 = arg2;
+      closure_3 = closure_7;
       obj(obj, "_invoke", obj);
       return obj;
     };
@@ -768,30 +767,30 @@
         closure_1 = arg1;
         obj = {
           value: function enqueue(arg0, arg1) {
-                  let closure_0 = arg0;
-                  let closure_1 = arg1;
+                  closure_0 = arg0;
+                  closure_1 = arg1;
                   if (nextPromise) {
                     function callInvokeWithMethodAndArg() {
                       return new closure_1((arg0, arg1) => {
-                        let closure_0 = arg0;
-                        let closure_1 = arg1;
-                        const tmp = outer1_6(outer1_0[closure_0], outer1_0, closure_1);
+                        closure_0 = arg0;
+                        closure_1 = arg1;
+                        const tmp = closure_1_6(closure_1_0[closure_0], closure_1_0, closure_1);
                         if ("throw" !== tmp.type) {
-                          let iter = tmp.arg;
+                          iter = tmp.arg;
                           let value = iter.value;
                           if (value) {
                             if (typeof value === "object") {
-                              let call = outer1_1.call;
+                              let call = closure_1_1.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp8("__await");
                               } else {
                                 callResult = call(value, "__await");
                               }
                               if (callResult) {
-                                outer1_1.resolve(value.__await).then((arg0) => {
-                                  const tmp2 = outer1_6(lib.next, lib, arg0);
+                                closure_1_1.resolve(value.__await).then((arg0) => {
+                                  const tmp2 = closure_1_6(lib.next, lib, arg0);
                                   if ("throw" !== tmp2.type) {
-                                    const iter = tmp2.arg;
+                                    iter = tmp2.arg;
                                     const value = iter.value;
                                     if (value) {
                                       if (typeof value === "object") {
@@ -814,9 +813,9 @@
                                     closure_1(tmp2.arg);
                                   }
                                 }, (arg0) => {
-                                  const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                  const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                   if ("throw" !== tmp2.type) {
-                                    const iter = tmp2.arg;
+                                    iter = tmp2.arg;
                                     const value = iter.value;
                                     if (value) {
                                       if (typeof value === "object") {
@@ -839,18 +838,18 @@
                                     closure_1(tmp2.arg);
                                   }
                                 });
-                                let resolveResult = outer1_1.resolve(value.__await);
+                                let resolveResult = closure_1_1.resolve(value.__await);
                               }
-                              tmp8 = outer1_1;
+                              tmp8 = closure_1_1;
                             }
                           }
-                          outer1_1.resolve(value).then((value) => {
+                          closure_1_1.resolve(value).then((value) => {
                             iter.value = value;
                             lib(iter);
                           }, (arg0) => {
-                            const tmp2 = outer1_6(lib.throw, lib, arg0);
+                            const tmp2 = closure_1_6(lib.throw, lib, arg0);
                             if ("throw" !== tmp2.type) {
-                              const iter = tmp2.arg;
+                              iter = tmp2.arg;
                               let fn = iter.value;
                               if (fn) {
                                 if (typeof fn === "object") {
@@ -863,7 +862,7 @@
                                   tmp9 = closure_1;
                                 }
                                 fn = () => { ... };
-                                let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                                nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                                 const resolveResult = closure_1.resolve(fn.__await);
                               }
                               nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -872,7 +871,7 @@
                               closure_1(tmp2.arg);
                             }
                           });
-                          let resolveResult1 = outer1_1.resolve(value);
+                          let resolveResult1 = closure_1_1.resolve(value);
                         } else {
                           arg1(tmp.arg);
                         }
@@ -881,25 +880,25 @@
                     nextPromise = nextPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
                   } else {
                     nextPromise = new closure_1((arg0, arg1) => {
-                      let closure_0 = arg0;
-                      let closure_1 = arg1;
-                      const tmp = outer1_6(outer1_0[closure_0], outer1_0, closure_1);
+                      closure_0 = arg0;
+                      closure_1 = arg1;
+                      const tmp = closure_1_6(closure_1_0[closure_0], closure_1_0, closure_1);
                       if ("throw" !== tmp.type) {
-                        let iter = tmp.arg;
+                        iter = tmp.arg;
                         let value = iter.value;
                         if (value) {
                           if (typeof value === "object") {
-                            let call = outer1_1.call;
+                            let call = closure_1_1.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp8("__await");
                             } else {
                               callResult = call(value, "__await");
                             }
                             if (callResult) {
-                              outer1_1.resolve(value.__await).then((arg0) => {
-                                const tmp2 = outer1_6(lib.next, lib, arg0);
+                              closure_1_1.resolve(value.__await).then((arg0) => {
+                                const tmp2 = closure_1_6(lib.next, lib, arg0);
                                 if ("throw" !== tmp2.type) {
-                                  const iter = tmp2.arg;
+                                  iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
                                     if (typeof value === "object") {
@@ -911,9 +910,9 @@
                                       }
                                       if (callResult) {
                                         closure_1.resolve(value.__await).then((arg0) => {
-                                          const tmp2 = outer1_6(lib.next, lib, arg0);
+                                          const tmp2 = closure_1_6(lib.next, lib, arg0);
                                           if ("throw" !== tmp2.type) {
-                                            const iter = tmp2.arg;
+                                            iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
                                               if (typeof value === "object") {
@@ -936,9 +935,9 @@
                                             closure_1(tmp2.arg);
                                           }
                                         }, (arg0) => {
-                                          const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                          const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                           if ("throw" !== tmp2.type) {
-                                            const iter = tmp2.arg;
+                                            iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
                                               if (typeof value === "object") {
@@ -970,9 +969,9 @@
                                     iter.value = value;
                                     lib(iter);
                                   }, (arg0) => {
-                                    const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                    const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                     if ("throw" !== tmp2.type) {
-                                      const iter = tmp2.arg;
+                                      iter = tmp2.arg;
                                       let fn = iter.value;
                                       if (fn) {
                                         if (typeof fn === "object") {
@@ -985,7 +984,7 @@
                                           tmp9 = closure_1;
                                         }
                                         fn = () => { ... };
-                                        let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                                        nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                                         const resolveResult = closure_1.resolve(fn.__await);
                                       }
                                       nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -999,9 +998,9 @@
                                   closure_1(tmp2.arg);
                                 }
                               }, (arg0) => {
-                                const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                 if ("throw" !== tmp2.type) {
-                                  const iter = tmp2.arg;
+                                  iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
                                     if (typeof value === "object") {
@@ -1013,9 +1012,9 @@
                                       }
                                       if (callResult) {
                                         closure_1.resolve(value.__await).then((arg0) => {
-                                          const tmp2 = outer1_6(lib.next, lib, arg0);
+                                          const tmp2 = closure_1_6(lib.next, lib, arg0);
                                           if ("throw" !== tmp2.type) {
-                                            const iter = tmp2.arg;
+                                            iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
                                               if (typeof value === "object") {
@@ -1038,9 +1037,9 @@
                                             closure_1(tmp2.arg);
                                           }
                                         }, (arg0) => {
-                                          const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                          const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                           if ("throw" !== tmp2.type) {
-                                            const iter = tmp2.arg;
+                                            iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
                                               if (typeof value === "object") {
@@ -1072,9 +1071,9 @@
                                     iter.value = value;
                                     lib(iter);
                                   }, (arg0) => {
-                                    const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                    const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                     if ("throw" !== tmp2.type) {
-                                      const iter = tmp2.arg;
+                                      iter = tmp2.arg;
                                       let fn = iter.value;
                                       if (fn) {
                                         if (typeof fn === "object") {
@@ -1087,7 +1086,7 @@
                                           tmp9 = closure_1;
                                         }
                                         fn = () => { ... };
-                                        let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                                        nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                                         const resolveResult = closure_1.resolve(fn.__await);
                                       }
                                       nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -1101,18 +1100,18 @@
                                   closure_1(tmp2.arg);
                                 }
                               });
-                              let resolveResult = outer1_1.resolve(value.__await);
+                              let resolveResult = closure_1_1.resolve(value.__await);
                             }
-                            tmp8 = outer1_1;
+                            tmp8 = closure_1_1;
                           }
                         }
-                        outer1_1.resolve(value).then((value) => {
+                        closure_1_1.resolve(value).then((value) => {
                           iter.value = value;
                           lib(iter);
                         }, (arg0) => {
-                          const tmp2 = outer1_6(lib.throw, lib, arg0);
+                          const tmp2 = closure_1_6(lib.throw, lib, arg0);
                           if ("throw" !== tmp2.type) {
-                            const iter = tmp2.arg;
+                            iter = tmp2.arg;
                             let fn = iter.value;
                             if (fn) {
                               if (typeof fn === "object") {
@@ -1125,9 +1124,9 @@
                                 tmp9 = closure_1;
                               }
                               fn = (arg0) => {
-                                const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                 if ("throw" !== tmp2.type) {
-                                  const iter = tmp2.arg;
+                                  iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
                                     if (typeof value === "object") {
@@ -1150,10 +1149,10 @@
                                   closure_1(tmp2.arg);
                                 }
                               };
-                              let nextPromise = closure_1.resolve(fn.__await).then((arg0) => {
-                                const tmp2 = outer1_6(lib.next, lib, arg0);
+                              nextPromise = closure_1.resolve(fn.__await).then((arg0) => {
+                                const tmp2 = closure_1_6(lib.next, lib, arg0);
                                 if ("throw" !== tmp2.type) {
-                                  const iter = tmp2.arg;
+                                  iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
                                     if (typeof value === "object") {
@@ -1182,9 +1181,9 @@
                               iter.value = value;
                               lib(iter);
                             }, (arg0) => {
-                              const tmp2 = outer1_6(lib.throw, lib, arg0);
+                              const tmp2 = closure_1_6(lib.throw, lib, arg0);
                               if ("throw" !== tmp2.type) {
-                                const iter = tmp2.arg;
+                                iter = tmp2.arg;
                                 let fn = iter.value;
                                 if (fn) {
                                   if (typeof fn === "object") {
@@ -1197,7 +1196,7 @@
                                     tmp9 = closure_1;
                                   }
                                   fn = () => { ... };
-                                  let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                                  nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                                   const resolveResult = closure_1.resolve(fn.__await);
                                 }
                                 nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -1211,7 +1210,7 @@
                             closure_1(tmp2.arg);
                           }
                         });
-                        let resolveResult1 = outer1_1.resolve(value);
+                        let resolveResult1 = closure_1_1.resolve(value);
                       } else {
                         arg1(tmp.arg);
                       }
@@ -1220,11 +1219,11 @@
                   return nextPromise;
                 }
         };
-        tmp = f66682(this, "_invoke", obj);
+        tmp = f67238(this, "_invoke", obj);
         return;
       }
     }
-    let closure_11 = {};
+    closure_11 = {};
     let obj = {};
     tmp7(obj, tmp3, function() {
       return this;
@@ -1253,11 +1252,11 @@
         obj = tmp9Result;
       }
       function defineIteratorMethods(arg0) {
-        let closure_0 = arg0;
+        closure_0 = arg0;
         const items = ["next", "throw", "return"];
         const item = items.forEach((arg0) => {
-          let closure_0 = arg0;
-          outer1_5(closure_0, arg0, function(arg0) {
+          closure_0 = arg0;
+          closure_1_5(closure_0, arg0, function(arg0) {
             return this._invoke(closure_0, arg0);
           });
         });
@@ -1290,30 +1289,30 @@
           closure_1 = arg1;
           obj = {
             value: function enqueue(arg0, arg1) {
-                      let closure_0 = arg0;
-                      let closure_1 = arg1;
+                      closure_0 = arg0;
+                      closure_1 = arg1;
                       if (nextPromise) {
                         function callInvokeWithMethodAndArg() {
                           return new closure_1((arg0, arg1) => {
-                            let closure_0 = arg0;
-                            let closure_1 = arg1;
-                            const tmp = outer1_6(outer1_0[closure_0], outer1_0, closure_1);
+                            closure_0 = arg0;
+                            closure_1 = arg1;
+                            const tmp = closure_1_6(closure_1_0[closure_0], closure_1_0, closure_1);
                             if ("throw" !== tmp.type) {
-                              let iter = tmp.arg;
+                              iter = tmp.arg;
                               let value = iter.value;
                               if (value) {
                                 if (typeof value === "object") {
-                                  let call = outer1_1.call;
+                                  let call = closure_1_1.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp8("__await");
                                   } else {
                                     callResult = call(value, "__await");
                                   }
                                   if (callResult) {
-                                    outer1_1.resolve(value.__await).then((arg0) => {
-                                      const tmp2 = outer1_6(lib.next, lib, arg0);
+                                    closure_1_1.resolve(value.__await).then((arg0) => {
+                                      const tmp2 = closure_1_6(lib.next, lib, arg0);
                                       if ("throw" !== tmp2.type) {
-                                        const iter = tmp2.arg;
+                                        iter = tmp2.arg;
                                         const value = iter.value;
                                         if (value) {
                                           if (typeof value === "object") {
@@ -1336,9 +1335,9 @@
                                         closure_1(tmp2.arg);
                                       }
                                     }, (arg0) => {
-                                      const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                      const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                       if ("throw" !== tmp2.type) {
-                                        const iter = tmp2.arg;
+                                        iter = tmp2.arg;
                                         const value = iter.value;
                                         if (value) {
                                           if (typeof value === "object") {
@@ -1361,18 +1360,18 @@
                                         closure_1(tmp2.arg);
                                       }
                                     });
-                                    let resolveResult = outer1_1.resolve(value.__await);
+                                    let resolveResult = closure_1_1.resolve(value.__await);
                                   }
-                                  tmp8 = outer1_1;
+                                  tmp8 = closure_1_1;
                                 }
                               }
-                              outer1_1.resolve(value).then((value) => {
+                              closure_1_1.resolve(value).then((value) => {
                                 iter.value = value;
                                 lib(iter);
                               }, (arg0) => {
-                                const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                 if ("throw" !== tmp2.type) {
-                                  const iter = tmp2.arg;
+                                  iter = tmp2.arg;
                                   let fn = iter.value;
                                   if (fn) {
                                     if (typeof fn === "object") {
@@ -1385,7 +1384,7 @@
                                       tmp9 = closure_1;
                                     }
                                     fn = () => { ... };
-                                    let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                                    nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                                     const resolveResult = closure_1.resolve(fn.__await);
                                   }
                                   nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -1394,7 +1393,7 @@
                                   closure_1(tmp2.arg);
                                 }
                               });
-                              let resolveResult1 = outer1_1.resolve(value);
+                              let resolveResult1 = closure_1_1.resolve(value);
                             } else {
                               arg1(tmp.arg);
                             }
@@ -1403,25 +1402,25 @@
                         nextPromise = nextPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
                       } else {
                         nextPromise = new closure_1((arg0, arg1) => {
-                          let closure_0 = arg0;
-                          let closure_1 = arg1;
-                          const tmp = outer1_6(outer1_0[closure_0], outer1_0, closure_1);
+                          closure_0 = arg0;
+                          closure_1 = arg1;
+                          const tmp = closure_1_6(closure_1_0[closure_0], closure_1_0, closure_1);
                           if ("throw" !== tmp.type) {
-                            let iter = tmp.arg;
+                            iter = tmp.arg;
                             let value = iter.value;
                             if (value) {
                               if (typeof value === "object") {
-                                let call = outer1_1.call;
+                                let call = closure_1_1.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp8("__await");
                                 } else {
                                   callResult = call(value, "__await");
                                 }
                                 if (callResult) {
-                                  outer1_1.resolve(value.__await).then((arg0) => {
-                                    const tmp2 = outer1_6(lib.next, lib, arg0);
+                                  closure_1_1.resolve(value.__await).then((arg0) => {
+                                    const tmp2 = closure_1_6(lib.next, lib, arg0);
                                     if ("throw" !== tmp2.type) {
-                                      const iter = tmp2.arg;
+                                      iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
                                         if (typeof value === "object") {
@@ -1433,9 +1432,9 @@
                                           }
                                           if (callResult) {
                                             closure_1.resolve(value.__await).then((arg0) => {
-                                              const tmp2 = outer1_6(lib.next, lib, arg0);
+                                              const tmp2 = closure_1_6(lib.next, lib, arg0);
                                               if ("throw" !== tmp2.type) {
-                                                const iter = tmp2.arg;
+                                                iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
                                                   if (typeof value === "object") {
@@ -1458,9 +1457,9 @@
                                                 closure_1(tmp2.arg);
                                               }
                                             }, (arg0) => {
-                                              const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                              const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                               if ("throw" !== tmp2.type) {
-                                                const iter = tmp2.arg;
+                                                iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
                                                   if (typeof value === "object") {
@@ -1492,9 +1491,9 @@
                                         iter.value = value;
                                         lib(iter);
                                       }, (arg0) => {
-                                        const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                        const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                         if ("throw" !== tmp2.type) {
-                                          const iter = tmp2.arg;
+                                          iter = tmp2.arg;
                                           let fn = iter.value;
                                           if (fn) {
                                             if (typeof fn === "object") {
@@ -1507,7 +1506,7 @@
                                               tmp9 = closure_1;
                                             }
                                             fn = () => { ... };
-                                            let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                                            nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                                             const resolveResult = closure_1.resolve(fn.__await);
                                           }
                                           nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -1521,9 +1520,9 @@
                                       closure_1(tmp2.arg);
                                     }
                                   }, (arg0) => {
-                                    const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                    const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                     if ("throw" !== tmp2.type) {
-                                      const iter = tmp2.arg;
+                                      iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
                                         if (typeof value === "object") {
@@ -1535,9 +1534,9 @@
                                           }
                                           if (callResult) {
                                             closure_1.resolve(value.__await).then((arg0) => {
-                                              const tmp2 = outer1_6(lib.next, lib, arg0);
+                                              const tmp2 = closure_1_6(lib.next, lib, arg0);
                                               if ("throw" !== tmp2.type) {
-                                                const iter = tmp2.arg;
+                                                iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
                                                   if (typeof value === "object") {
@@ -1560,9 +1559,9 @@
                                                 closure_1(tmp2.arg);
                                               }
                                             }, (arg0) => {
-                                              const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                              const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                               if ("throw" !== tmp2.type) {
-                                                const iter = tmp2.arg;
+                                                iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
                                                   if (typeof value === "object") {
@@ -1594,9 +1593,9 @@
                                         iter.value = value;
                                         lib(iter);
                                       }, (arg0) => {
-                                        const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                        const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                         if ("throw" !== tmp2.type) {
-                                          const iter = tmp2.arg;
+                                          iter = tmp2.arg;
                                           let fn = iter.value;
                                           if (fn) {
                                             if (typeof fn === "object") {
@@ -1609,7 +1608,7 @@
                                               tmp9 = closure_1;
                                             }
                                             fn = () => { ... };
-                                            let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                                            nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                                             const resolveResult = closure_1.resolve(fn.__await);
                                           }
                                           nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -1623,18 +1622,18 @@
                                       closure_1(tmp2.arg);
                                     }
                                   });
-                                  let resolveResult = outer1_1.resolve(value.__await);
+                                  let resolveResult = closure_1_1.resolve(value.__await);
                                 }
-                                tmp8 = outer1_1;
+                                tmp8 = closure_1_1;
                               }
                             }
-                            outer1_1.resolve(value).then((value) => {
+                            closure_1_1.resolve(value).then((value) => {
                               iter.value = value;
                               lib(iter);
                             }, (arg0) => {
-                              const tmp2 = outer1_6(lib.throw, lib, arg0);
+                              const tmp2 = closure_1_6(lib.throw, lib, arg0);
                               if ("throw" !== tmp2.type) {
-                                const iter = tmp2.arg;
+                                iter = tmp2.arg;
                                 let fn = iter.value;
                                 if (fn) {
                                   if (typeof fn === "object") {
@@ -1647,9 +1646,9 @@
                                     tmp9 = closure_1;
                                   }
                                   fn = (arg0) => {
-                                    const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                    const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                     if ("throw" !== tmp2.type) {
-                                      const iter = tmp2.arg;
+                                      iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
                                         if (typeof value === "object") {
@@ -1672,10 +1671,10 @@
                                       closure_1(tmp2.arg);
                                     }
                                   };
-                                  let nextPromise = closure_1.resolve(fn.__await).then((arg0) => {
-                                    const tmp2 = outer1_6(lib.next, lib, arg0);
+                                  nextPromise = closure_1.resolve(fn.__await).then((arg0) => {
+                                    const tmp2 = closure_1_6(lib.next, lib, arg0);
                                     if ("throw" !== tmp2.type) {
-                                      const iter = tmp2.arg;
+                                      iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
                                         if (typeof value === "object") {
@@ -1704,9 +1703,9 @@
                                   iter.value = value;
                                   lib(iter);
                                 }, (arg0) => {
-                                  const tmp2 = outer1_6(lib.throw, lib, arg0);
+                                  const tmp2 = closure_1_6(lib.throw, lib, arg0);
                                   if ("throw" !== tmp2.type) {
-                                    const iter = tmp2.arg;
+                                    iter = tmp2.arg;
                                     let fn = iter.value;
                                     if (fn) {
                                       if (typeof fn === "object") {
@@ -1719,7 +1718,7 @@
                                         tmp9 = closure_1;
                                       }
                                       fn = () => { ... };
-                                      let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                                      nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                                       const resolveResult = closure_1.resolve(fn.__await);
                                     }
                                     nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -1733,7 +1732,7 @@
                                 closure_1(tmp2.arg);
                               }
                             });
-                            let resolveResult1 = outer1_1.resolve(value);
+                            let resolveResult1 = closure_1_1.resolve(value);
                           } else {
                             arg1(tmp.arg);
                           }
@@ -1742,7 +1741,7 @@
                       return nextPromise;
                     }
           };
-          tmp = f66682(this, "_invoke", obj);
+          tmp = f67238(this, "_invoke", obj);
           return;
         }
       }
@@ -1779,7 +1778,6 @@
       arg0.async = (arg0, fn) => {
         let _Promise = arg4;
         if (arg4 === undefined) {
-          let tmp = globalThis;
           _Promise = Promise;
         }
         if (!fn) {
@@ -1799,16 +1797,15 @@
         obj.reset(true);
         obj = {
           value: function invoke(method, arg1) {
-            let iter;
-            if (closure_3 === outer1_9) {
+            if (closure_3 === closure_1_9) {
               const _Error = Error;
-              const error = new Error("Generator is already running");
+              error = new Error("Generator is already running");
               throw error;
-            } else if (tmp === outer1_10) {
+            } else if (tmp === closure_1_10) {
               if ("throw" === method) {
                 throw arg1;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               _undefined.method = method;
@@ -1817,11 +1814,11 @@
                 iter = _undefined;
                 let delegate = _undefined.delegate;
                 if (delegate) {
-                  let tmp2 = outer1_17;
-                  let tmp3 = outer1_17(delegate, iter);
+                  let tmp2 = closure_1_17;
+                  let tmp3 = closure_1_17(delegate, iter);
                   if (tmp3) {
-                    let tmp15 = outer1_11;
-                    if (tmp3 === outer1_11) {
+                    let tmp15 = closure_1_11;
+                    if (tmp3 === closure_1_11) {
                       continue;
                     } else {
                       return tmp3;
@@ -1834,8 +1831,8 @@
                   iter.sent = arg;
                 } else if ("throw" === iter.method) {
                   let tmp5 = closure_3;
-                  let tmp6 = outer1_7;
-                  if (closure_3 === outer1_7) {
+                  let tmp6 = closure_1_7;
+                  if (closure_3 === closure_1_7) {
                     break;
                   } else {
                     let dispatchExceptionResult = iter.dispatchException(iter.arg);
@@ -1843,16 +1840,16 @@
                 } else if ("return" === iter.method) {
                   let abruptResult = iter.abrupt("return", iter.arg);
                 }
-                let tmp9 = outer1_9;
-                closure_3 = outer1_9;
-                let tmp10 = outer1_6;
+                let tmp9 = closure_1_9;
+                closure_3 = closure_1_9;
+                let tmp10 = closure_1_6;
                 let tmp11 = iter;
                 let tmp12 = _Promise;
-                let tmp13 = outer1_6(iter, _Promise, iter);
+                let tmp13 = closure_1_6(iter, _Promise, iter);
                 if ("normal" === tmp13.type) {
-                  closure_3 = iter.done ? outer1_10 : outer1_8;
-                  let tmp14 = outer1_11;
-                  if (tmp13.arg === outer1_11) {
+                  closure_3 = iter.done ? closure_1_10 : closure_1_8;
+                  let tmp14 = closure_1_11;
+                  if (tmp13.arg === closure_1_11) {
                     continue;
                   } else {
                     let obj = { value: null, done: null };
@@ -1864,8 +1861,8 @@
                   if ("throw" !== tmp13.type) {
                     continue;
                   } else {
-                    let tmp25 = outer1_10;
-                    closure_3 = outer1_10;
+                    let tmp25 = closure_1_10;
+                    closure_3 = closure_1_10;
                     iter.method = "throw";
                     iter.arg = tmp13.arg;
                     continue;
@@ -1874,49 +1871,49 @@
                 }
                 continue;
               }
-              closure_3 = outer1_10;
+              closure_3 = closure_1_10;
               throw iter.arg;
             }
           }
         };
         let iter = arg0;
         _Promise = arg2;
-        tmp = obj;
-        let closure_3 = closure_7;
-        tmp(obj, "_invoke", obj);
+        let callback = obj;
+        closure_3 = closure_7;
+        callback(obj, "_invoke", obj);
         iter = Object.create(AsyncIterator.prototype);
         iter = obj;
-        tmp = undefined;
-        tmp(iter, "_invoke", {
+        callback = undefined;
+        callback(iter, "_invoke", {
           value: function enqueue(arg0, arg1) {
-            let closure_0 = arg0;
-            let closure_1 = arg1;
+            closure_0 = arg0;
+            closure_1 = arg1;
             if (nextPromise) {
               function callInvokeWithMethodAndArg() {
                 return new closure_1((arg0, arg1) => {
-                  let closure_0 = arg0;
-                  let closure_1 = arg1;
-                  const tmp = outer1_6(outer1_0[closure_0], outer1_0, closure_1);
+                  closure_0 = arg0;
+                  closure_1 = arg1;
+                  const tmp = closure_1_6(closure_1_0[closure_0], closure_1_0, closure_1);
                   if ("throw" !== tmp.type) {
-                    let iter = tmp.arg;
+                    iter = tmp.arg;
                     let value = iter.value;
                     if (value) {
                       if (typeof value === "object") {
-                        let call = outer1_1.call;
+                        let call = closure_1_1.call;
                         if (typeof call === "unknown") {
                           let callResult = tmp8("__await");
                         } else {
                           callResult = call(value, "__await");
                         }
                         if (callResult) {
-                          outer1_1.resolve(value.__await).then(() => { ... }, () => { ... });
-                          let resolveResult = outer1_1.resolve(value.__await);
+                          closure_1_1.resolve(value.__await).then(() => { ... }, () => { ... });
+                          let resolveResult = closure_1_1.resolve(value.__await);
                         }
-                        tmp8 = outer1_1;
+                        tmp8 = closure_1_1;
                       }
                     }
-                    outer1_1.resolve(value).then(() => { ... }, () => { ... });
-                    let resolveResult1 = outer1_1.resolve(value);
+                    closure_1_1.resolve(value).then(() => { ... }, () => { ... });
+                    let resolveResult1 = closure_1_1.resolve(value);
                   } else {
                     arg1(tmp.arg);
                   }
@@ -1925,25 +1922,25 @@
               nextPromise = nextPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
             } else {
               nextPromise = new closure_1((arg0, arg1) => {
-                let closure_0 = arg0;
-                let closure_1 = arg1;
-                const tmp = outer1_6(outer1_0[closure_0], outer1_0, closure_1);
+                closure_0 = arg0;
+                closure_1 = arg1;
+                const tmp = closure_1_6(closure_1_0[closure_0], closure_1_0, closure_1);
                 if ("throw" !== tmp.type) {
-                  let iter = tmp.arg;
+                  iter = tmp.arg;
                   let value = iter.value;
                   if (value) {
                     if (typeof value === "object") {
-                      let call = outer1_1.call;
+                      let call = closure_1_1.call;
                       if (typeof call === "unknown") {
                         let callResult = tmp8("__await");
                       } else {
                         callResult = call(value, "__await");
                       }
                       if (callResult) {
-                        outer1_1.resolve(value.__await).then((arg0) => {
-                          const tmp2 = outer1_6(lib.next, lib, arg0);
+                        closure_1_1.resolve(value.__await).then((arg0) => {
+                          const tmp2 = closure_1_6(lib.next, lib, arg0);
                           if ("throw" !== tmp2.type) {
-                            const iter = tmp2.arg;
+                            iter = tmp2.arg;
                             const value = iter.value;
                             if (value) {
                               if (typeof value === "object") {
@@ -1966,9 +1963,9 @@
                             closure_1(tmp2.arg);
                           }
                         }, (arg0) => {
-                          const tmp2 = outer1_6(lib.throw, lib, arg0);
+                          const tmp2 = closure_1_6(lib.throw, lib, arg0);
                           if ("throw" !== tmp2.type) {
-                            const iter = tmp2.arg;
+                            iter = tmp2.arg;
                             const value = iter.value;
                             if (value) {
                               if (typeof value === "object") {
@@ -1991,18 +1988,18 @@
                             closure_1(tmp2.arg);
                           }
                         });
-                        let resolveResult = outer1_1.resolve(value.__await);
+                        let resolveResult = closure_1_1.resolve(value.__await);
                       }
-                      tmp8 = outer1_1;
+                      tmp8 = closure_1_1;
                     }
                   }
-                  outer1_1.resolve(value).then((value) => {
+                  closure_1_1.resolve(value).then((value) => {
                     iter.value = value;
                     lib(iter);
                   }, (arg0) => {
-                    const tmp2 = outer1_6(lib.throw, lib, arg0);
+                    const tmp2 = closure_1_6(lib.throw, lib, arg0);
                     if ("throw" !== tmp2.type) {
-                      const iter = tmp2.arg;
+                      iter = tmp2.arg;
                       let fn = iter.value;
                       if (fn) {
                         if (typeof fn === "object") {
@@ -2015,7 +2012,7 @@
                           tmp9 = closure_1;
                         }
                         fn = () => { ... };
-                        let nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
+                        nextPromise = closure_1.resolve(fn.__await).then(() => { ... }, fn);
                         const resolveResult = closure_1.resolve(fn.__await);
                       }
                       nextPromise = closure_1.resolve(fn).then(() => { ... }, () => { ... });
@@ -2024,7 +2021,7 @@
                       closure_1(tmp2.arg);
                     }
                   });
-                  let resolveResult1 = outer1_1.resolve(value);
+                  let resolveResult1 = closure_1_1.resolve(value);
                 } else {
                   arg1(tmp.arg);
                 }
@@ -2055,7 +2052,7 @@
       tmp7(obj, "toString", () => "[object Generator]");
       arg0.keys = (arg0) => {
         const ObjectResult = Object(arg0);
-        let closure_0 = ObjectResult;
+        closure_0 = ObjectResult;
         const items = [];
         for (const key10008 in ObjectResult) {
           let tmp3 = key10008;
@@ -2185,7 +2182,7 @@
                   let tmp7 = new.target;
                   let str4 = "try statement without catch or finally";
                   let tmp8 = new.target;
-                  let error = new Error("try statement without catch or finally");
+                  error = new Error("try statement without catch or finally");
                   let tmp10 = error;
                   throw error;
                 }
@@ -2313,11 +2310,11 @@
           }
           return arg;
         }
-        const error = new Error("illegal catch attempt");
+        error = new Error("illegal catch attempt");
         throw error;
       };
       obj[8] = function delegateYield(next, resultName, nextLoc) {
-        let closure_0 = next;
+        closure_0 = next;
         if (!next) {
           const obj = { next: null };
           obj[0] = doneResult;
@@ -2330,7 +2327,7 @@
           if (typeof next.next !== "function") {
             const _isNaN = isNaN;
             if (!isNaN(next.length)) {
-              let c1 = -1;
+              c1 = -1;
               next = function next() {
                 let arr;
                 const sum = sum1 + 1;

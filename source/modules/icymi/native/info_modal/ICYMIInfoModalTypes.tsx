@@ -1,10 +1,12 @@
-// Module ID: 15723
-// Function ID: 15724
+// Module ID: 15792
+// Function ID: 15793
 // Name: ICYMI_INFO_MODAL_KEY
 // Dependencies: [2]
 
-// Module 15723 (ICYMI_INFO_MODAL_KEY)
-const result = require("set").fileFinishedImporting("modules/icymi/native/info_modal/ICYMIInfoModalTypes.tsx");
+// Module 15792 (ICYMI_INFO_MODAL_KEY)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/icymi/native/info_modal/ICYMIInfoModalTypes.tsx");
 
 export const ICYMI_INFO_MODAL_KEY = "icymi-info-modal";
 export const ICYMI_DISCOVERABLE_GUILDS_PAGE_SIZE = 48;

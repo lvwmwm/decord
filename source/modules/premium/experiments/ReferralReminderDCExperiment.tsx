@@ -1,16 +1,17 @@
-// Module ID: 8279
-// Function ID: 8280
+// Module ID: 8319
+// Function ID: 8320
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useIsReferralReminderDCExperimentEnabled
 
-// Module 8279 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 8319 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-referral-reminder-dc", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/premium/experiments/ReferralReminderDCExperiment.tsx");
+const result = set.fileFinishedImporting("modules/premium/experiments/ReferralReminderDCExperiment.tsx");
 
 export const ReferralReminderDCExperiment = apexExperiment;
 export const useIsReferralReminderDCExperimentEnabled = function useIsReferralReminderDCExperimentEnabled(location) {

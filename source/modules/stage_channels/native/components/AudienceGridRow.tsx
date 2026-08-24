@@ -1,17 +1,16 @@
-// Module ID: 12623
-// Function ID: 12624
+// Module ID: 12677
+// Function ID: 12678
 // Name: BlankAudience
-// Dependencies: [19, 17, 4978, 21, 4661, 12624, 12625, 2]
+// Dependencies: [19, 17, 4983, 21, 4668, 12678, 12679, 2]
 
-// Module 12623 (BlankAudience)
-import { View } from "get ActivityIndicator";
-import { MAX_AUDIENCE_ROW_LIMIT } from "MAX_STAGE_TOPIC_LENGTH";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 12677 (BlankAudience)
+import _modDef12678 from "module_12678" /* 12678 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { MAX_AUDIENCE_ROW_LIMIT } from "MAX_STAGE_TOPIC_LENGTH" /* 4983 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c4;
-let c5;
 class BlankAudience {
   constructor(arg0) {
     count = global.count;
@@ -20,17 +19,14 @@ class BlankAudience {
       tmp = jsx;
       tmp2 = closure_0;
       tmp3 = closure_1;
-      arr = items.push(jsx(require("module_12624"), {}, num));
+      arr = items.push(jsx(require("module_12678"), {}, num));
     }
     return items;
   }
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ rowContainer: { flex: 1, flexDirection: "row", marginVertical: 16, paddingHorizontal: 4, justifyContent: "space-between" } });
-const memoResult = require("noop").memo((theme) => {
-  let importDefault;
-  let participants;
-  let renderBlankAudience;
+const memoResult = importAllResult.memo((theme) => {
   ({ channel: importDefault, participants, renderBlankAudience } = theme);
   if (renderBlankAudience === undefined) {
     renderBlankAudience = true;
@@ -47,7 +43,7 @@ const memoResult = require("noop").memo((theme) => {
   }
   let obj = { style: items, children: null };
   items[1] = { justifyContent: str };
-  const items1 = [participants.map((id) => outer1_4(outer1_0(theme[6]), { theme, channel: closure_0, participant: id }, id.id)), ];
+  const items1 = [participants.map((id) => closure_1_4(closure_1_0(theme[6]), { theme, channel: closure_0, participant: id }, id.id)), ];
   let tmp5 = null;
   if (num > 0) {
     obj = { count: null };
@@ -58,7 +54,7 @@ const memoResult = require("noop").memo((theme) => {
   obj[1] = items1;
   return closure_5(View, obj);
 });
-const result = require("MAX_STAGE_TOPIC_LENGTH").fileFinishedImporting("modules/stage_channels/native/components/AudienceGridRow.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/components/AudienceGridRow.tsx");
 
 export default memoResult;
 export { BlankAudience };

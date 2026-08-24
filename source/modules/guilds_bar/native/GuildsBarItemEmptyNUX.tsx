@@ -1,56 +1,48 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 15679
+// Function ID: 15680
 // Name: handlePress
-// Dependencies: [19, 17, 4197, 15548, 676, 9588, 21, 4661, 712, 7302, 4097, 589, 4115, 4744, 15288, 15559, 1236, 15614, 15558, 7190, 8125, 15569, 4734, 2]
+// Dependencies: [19, 17, 4201, 15613, 676, 9625, 21, 4668, 712, 7340, 4100, 589, 4119, 4749, 15352, 15624, 1236, 15680, 15623, 7228, 8164, 15634, 4739, 2]
 
-// Module 15613 (handlePress)
-import importAllResult from "set";
-import get_ActivityIndicator from "registerAsset";
-import handleConnectionOpen from "handleConnectionOpen";
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE";
-import { EMPTY_NUX_SERVER } from "ME";
-import { MODE_CHANGE_PHYSICS } from "MODE_CHANGE_PHYSICS";
-import jsxProd from "HomeDrawerSharedItem";
-import createCacheKey from "createCacheKey";
+// Module 15679 (handlePress)
+import ThemesDefault from "Themes" /* 712 */;
+import transitionToGuild from "transitionToGuild" /* 7340 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "handleConnectionOpen" /* 4201 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15613 */;
+import { EMPTY_NUX_SERVER } from "ME" /* 676 */;
+import { MODE_CHANGE_PHYSICS } from "MODE_CHANGE_PHYSICS" /* 9625 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let c9;
-let closure_12;
-let closure_14;
-let closure_6;
-let map1;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function handlePress() {
-  require(7302) /* transitionToGuild */.transitionToGuild(EMPTY_NUX_SERVER);
+  transitionToGuild.transitionToGuild(EMPTY_NUX_SERVER);
 }
 let c3 = importAllResult;
 ({ Pressable: c4, Image: c5, View: closure_6 } = get_ActivityIndicator);
-({ GUILD_ITEM_HIT_SLOP: metroImportAll, useGuildWrapperSize: c9 } = GUILD_ITEM_SIZE);
+({ GUILD_ITEM_HIT_SLOP: closure_8, useGuildWrapperSize: c9 } = GUILD_ITEM_SIZE);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 let closure_15 = createCacheKey.createStyles((width) => {
   const diff = width - 10;
   let obj = { root: null, container: null, guildIndicator: null, icon: null, backdrop: null, expandedChildren: null };
-  obj = { alignSelf: "stretch", paddingLeft: closure_8.left, marginTop: importDefault(712).modules.mobile.GUILD_BAR_ITEM_PADDING };
+  obj = { alignSelf: "stretch", paddingLeft: closure_8.left, marginTop: ThemesDefault.modules.mobile.GUILD_BAR_ITEM_PADDING };
   obj[0] = obj;
   obj[1] = { position: "relative", flexDirection: "row", alignItems: "center", height: 55, width };
-  obj = { position: "absolute", left: -closure_8.left, top: importDefault(712).modules.mobile.GUILD_BAR_ITEM_MARGIN };
+  obj = { position: "absolute", left: -closure_8.left, top: ThemesDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN };
   obj[2] = obj;
   obj[3] = { width: 59, height: 55, marginLeft: -3 };
-  obj[4] = { position: "absolute", top: 16, width, height: diff, borderRadius: importDefault(712).modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS };
+  obj[4] = { position: "absolute", top: 16, width, height: diff, borderRadius: ThemesDefault.modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS };
   obj[5] = { position: "absolute", left: arg1 + 16, right: 8, top: 16, height: diff, transformOrigin: "0% 50%", flexDirection: "row", alignItems: "center" };
   return obj;
 });
 let closure_17 = { code: "function GuildsBarItemEmptyNUXTsx1(){const{withSpring,selected,activeColor,inactiveColor,MODE_CHANGE_PHYSICS}=this.__closure;return{backgroundColor:withSpring(selected?activeColor:inactiveColor,MODE_CHANGE_PHYSICS,'animate-always')};}" };
 const memoResult = importAllResult.memo(function GuildsBarEmptyNUX() {
-  let guildsBarIconDrawerStyle;
-  let guildsBarLabelDrawerStyle;
   let obj = stateFromStores(token1[10]);
   const token = obj.useToken(sharedValue(token1[8]).modules.mobile.GUILD_BAR_ITEM_SIZE);
   const tmp5 = callback4(token, callback());
-  let obj1 = stateFromStores(token1[11]);
-  const items = [handleConnectionOpen];
+  obj1 = stateFromStores(token1[11]);
+  const items = [closure_7];
   stateFromStores = obj1.useStateFromStores(items, () => guildId.getGuildId() === closure_10);
   let obj2 = stateFromStores(token1[12]);
   sharedValue = obj2.useSharedValue(false);
@@ -69,7 +61,7 @@ const memoResult = importAllResult.memo(function GuildsBarEmptyNUX() {
   let obj5 = stateFromStores(token1[12]);
   const fn = function l() {
     let obj = stateFromStores(token1[13]);
-    obj = { backgroundColor: obj.withSpring(stateFromStores ? token2 : token1, outer1_11, "animate-always") };
+    obj = { backgroundColor: obj.withSpring(stateFromStores ? token2 : token1, closure_1_11, "animate-always") };
     return obj;
   };
   obj = { withSpring: stateFromStores(token1[13]).withSpring, selected: stateFromStores, activeColor: token2, inactiveColor: token1, MODE_CHANGE_PHYSICS };
@@ -121,6 +113,6 @@ const memoResult = importAllResult.memo(function GuildsBarEmptyNUX() {
   obj5[1] = tmp15Result;
   return callback2(sharedValue(token1[19]), obj5);
 });
-let result = require("handleConnectionOpen").fileFinishedImporting("modules/guilds_bar/native/GuildsBarItemEmptyNUX.tsx");
+let result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBarItemEmptyNUX.tsx");
 
 export default memoResult;

@@ -1,11 +1,14 @@
-// Module ID: 7571
-// Function ID: 7572
+// Module ID: 7609
+// Function ID: 7610
 // Name: getDeviceSpecificString
 // Dependencies: [1236, 1625, 2]
 // Exports: getDeviceSpecificString
 
-// Module 7571 (getDeviceSpecificString)
-const result = require("set").fileFinishedImporting("modules/intl/overrides/getDeviceSpecificString.tsx");
+// Module 7609 (getDeviceSpecificString)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
+const result = set.fileFinishedImporting("modules/intl/overrides/getDeviceSpecificString.tsx");
 
 export const getDeviceSpecificString = function getDeviceSpecificString(arg0, _2Yp7dF) {
   let str = null;
@@ -19,6 +22,6 @@ export const getDeviceSpecificString = function getDeviceSpecificString(arg0, _2
   if (tmp3 == null) {
     tmp3 = _2Yp7dF;
   }
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   return intl.string(tmp3);
 };

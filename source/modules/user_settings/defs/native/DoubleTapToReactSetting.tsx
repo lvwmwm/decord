@@ -1,25 +1,29 @@
-// Module ID: 15031
-// Function ID: 15032
+// Module ID: 15095
+// Function ID: 15096
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 4066, 2]
+// Dependencies: [8238, 10708, 1236, 4069, 2]
 
-// Module 15031 (toggle)
-import createToggle from "createToggle";
+// Module 15095 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["4qhAjx"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["4qhAjx"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
+  parent: MobileUserSettings.MobileUserSettings.CHAT,
   useValue() {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     return !DoubleTapReactionEmoji.useSetting().disableDoubleTap;
   },
   onValueChange(disableDoubleTap) {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.getSetting();
-    const DoubleTapReactionEmoji2 = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji2 = explicitContentFromProto.DoubleTapReactionEmoji;
     const obj = { disableDoubleTap: !disableDoubleTap, emojiId: null, emojiName: null, animated: null };
     let emojiId;
     if (setting != null) {
@@ -41,18 +45,18 @@ const toggle = createToggle.createToggle({
 });
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["4qhAjx"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["4qhAjx"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
+  parent: MobileUserSettings.MobileUserSettings.CHAT,
   useValue() {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     return !DoubleTapReactionEmoji.useSetting().disableDoubleTap;
   },
   onValueChange(disableDoubleTap) {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.getSetting();
-    const DoubleTapReactionEmoji2 = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji2 = explicitContentFromProto.DoubleTapReactionEmoji;
     const obj = { disableDoubleTap: !disableDoubleTap, emojiId: null, emojiName: null, animated: null };
     let emojiId;
     if (setting != null) {
@@ -72,6 +76,6 @@ let obj = {
     DoubleTapReactionEmoji2.updateSetting(obj);
   }
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/DoubleTapToReactSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/DoubleTapToReactSetting.tsx");
 
 export default toggle;

@@ -1,41 +1,31 @@
-// Module ID: 16107
-// Function ID: 16108
+// Module ID: 16205
+// Function ID: 16206
 // Name: PendingSpamMessageRequestRow
-// Dependencies: [19, 17, 676, 21, 4661, 712, 1236, 11618, 4094, 8555, 4768, 5260, 11610, 698, 5433, 16092, 1297, 8764, 14280, 8083, 1629, 16101, 16108, 16099, 4761, 5006, 5011, 16102, 500, 4734, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 1236, 11667, 4097, 8594, 4773, 5265, 11659, 698, 5438, 16190, 1297, 8801, 14348, 8122, 1629, 16199, 16206, 16197, 4766, 5011, 5016, 16200, 500, 4739, 2]
 // Exports: default
 
-// Module 16107 (PendingSpamMessageRequestRow)
-import Form from "Form";
-import get_ActivityIndicator from "registerAsset";
-import { AnalyticEvents } from "ME";
-import jsxProd from "useSpamMessageRequestCount";
-import createCacheKey from "createCacheKey";
+// Module 16205 (PendingSpamMessageRequestRow)
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4766 */;
+import MessageRequestEmptyDefault from "MessageRequestEmpty" /* 16200 */;
+import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 16206 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let c9;
-let closure_6;
-let metroImportAll;
 const require = arg1;
 function PendingSpamMessageRequestRow(isLastRow) {
-  let c6;
-  let c7;
-  let hasSingleMessageRequest;
-  let isAcceptLoading;
-  let isOptimisticAccepted;
-  let isOptimisticRejected;
-  let isRejectLoading;
-  let isUserProfileLoading;
-  let messageRequest;
-  let require;
   ({ messageRequest, goToMessageRequestPreview: require, hasSingleMessageRequest } = isLastRow);
   let str;
   let channel;
   let id;
-  let closure_5;
+  closure_5 = undefined;
   c6 = undefined;
   c7 = undefined;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   str = messageRequest.user;
   channel = messageRequest.channel;
   id = channel.id;
@@ -52,13 +42,13 @@ function PendingSpamMessageRequestRow(isLastRow) {
   }, []);
   const callback1 = channel.useCallback(() => {
     if (hasSingleMessageRequest) {
-      outer1_0(str[10]).transitionToChannel(id);
+      closure_1_0(str[10]).transitionToChannel(id);
       let arr = hasSingleMessageRequest(str[11]);
       arr = arr.pop();
-      const obj = outer1_0(str[10]);
+      const obj = closure_1_0(str[10]);
     }
   }, items);
-  let obj1 = require(str[12]);
+  obj1 = require(str[12]);
   const messageRequestActions = obj1.useMessageRequestActions({ user: str, onAcceptSuccess: callback1, onError: callback });
   ({ rejectMessageRequest: c6, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected, markAsNotSpam: c7 } = messageRequestActions);
   let tmp7 = isAcceptLoading;
@@ -96,7 +86,7 @@ function PendingSpamMessageRequestRow(isLastRow) {
   obj[2] = items1;
   obj[3] = function onAccessibilityAction(nativeEvent) {
     const actionName = nativeEvent.nativeEvent.actionName;
-    if (outer1_11.ACCEPT_SPAM_MESSAGE === actionName) {
+    if (closure_1_11.ACCEPT_SPAM_MESSAGE === actionName) {
       _undefined2(channel, closure_5);
     } else if (tmp.IGNORE_SPAM_MESSAGE === actionName) {
       _undefined(channel.id);
@@ -178,50 +168,50 @@ function PendingSpamMessageRequestRow(isLastRow) {
   tmp10Result = tmp10(id, { style: tmp.activityIndicator });
 }
 ({ ActivityIndicator: c4, View: c5, FlatList: closure_6 } = get_ActivityIndicator);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { sectionContainer: null, rowContainer: null, actionContainer: null, actionButton: null, acceptButton: null, pressableRow: null, activityIndicator: null, list: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flexDirection: "row", justifyContent: "space-between", marginTop: 6, marginBottom: 10 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "row", justifyContent: "space-between", marginTop: 6, marginBottom: 10 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 14, marginBottom: 12 };
 createCacheKey[2] = { flexDirection: "row", alignItems: "flex-start", height: "100%" };
-createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("Themes").radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
+createCacheKey[3] = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: ThemesDefault.radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
 createCacheKey[4] = { marginRight: 16 };
-let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("Themes").radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
-createCacheKey[5] = { borderRadius: require("Themes").radii.md };
+let obj1 = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: ThemesDefault.radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
+createCacheKey[5] = { borderRadius: ThemesDefault.radii.md };
 createCacheKey[6] = { height: 16, width: 16 };
-let obj2 = { borderRadius: require("Themes").radii.md };
-createCacheKey[7] = { flex: 1, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { borderRadius: ThemesDefault.radii.md };
+createCacheKey[7] = { flex: 1, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
+let closure_10 = createCacheKey.createStyles(createCacheKey);
 let closure_11 = { ACCEPT_SPAM_MESSAGE: "accept-spam-message-request", IGNORE_SPAM_MESSAGE: "ignore-spam-message-request", PREVIEW_SPAM_MESSAGE: "preview-spam-message-request" };
-let obj3 = { flex: 1, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
-const result = require("ME").fileFinishedImporting("modules/message_request/native/spam/SpamMessageList.tsx");
+let obj3 = { flex: 1, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
+const result = require("set").fileFinishedImporting("modules/message_request/native/spam/SpamMessageList.tsx");
 
 export default function SpamMessageList(goToMessageRequestPreview) {
   goToMessageRequestPreview = goToMessageRequestPreview.goToMessageRequestPreview;
-  let importDefault;
-  let dependencyMap;
+  importDefault = undefined;
+  dependencyMap = undefined;
   let arr;
-  let closure_4;
-  const tmp = createCacheKey();
+  closure_4 = undefined;
+  const tmp = callback2();
   importDefault = tmp;
-  const bottom = importDefault(1629)().bottom;
-  let obj = goToMessageRequestPreview(16101);
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  let obj = goToMessageRequestPreview(16199);
   dependencyMap = obj.useSpamMessageRequestCount();
-  arr = importDefault(16108)();
-  let obj1 = goToMessageRequestPreview(16099);
+  arr = useSortedSpamMessageRequestsDefault();
+  obj1 = goToMessageRequestPreview(16197);
   closure_4 = obj1.useListHasSingleSpamMessageRequest();
-  importDefault(4761)(() => {
-    let obj = _undefined(698);
+  useMountLayoutEffectDefault(() => {
+    let obj = lib(698);
     obj = { num_spam_message_requests: dependencyMap };
-    obj.track(outer1_7.SPAM_MESSAGE_REQUESTS_VIEWED, obj);
-    obj = { name: goToMessageRequestPreview(5011).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
-    _undefined(5006).increment(obj);
+    obj.track(closure_1_7.SPAM_MESSAGE_REQUESTS_VIEWED, obj);
+    obj = { name: goToMessageRequestPreview(5016).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
+    lib(5011).increment(obj);
   });
   if (0 === arr.length) {
     obj = { bodyText: null };
     let intl = tmp4(1236).intl;
     obj[0] = intl.string(tmp4(1236).t.hasFPQ);
-    return callback(tmp2(16102), obj);
+    return callback(MessageRequestEmptyDefault, obj);
   } else {
     const items = ["header-section"];
     HermesBuiltin.arraySpread(arr, 1);
@@ -243,16 +233,16 @@ export default function SpamMessageList(goToMessageRequestPreview) {
       item = item.item;
       if (typeof item === "string") {
         let obj = { style: null, children: null };
-        obj[0] = _undefined.sectionContainer;
+        obj[0] = lib.sectionContainer;
         obj = { variant: "eyebrow", color: "text-default", children: null };
         const intl = goToMessageRequestPreview(1236).intl;
         obj = { count: null };
         obj[0] = arr.length;
         obj[2] = intl.format(goToMessageRequestPreview(1236).t.aNh5Kf, obj);
-        obj[1] = outer1_8(goToMessageRequestPreview(4734).Text, obj);
-        let tmp11Result = outer1_8(outer1_5, obj);
+        obj[1] = closure_1_8(goToMessageRequestPreview(4739).Text, obj);
+        let tmp11Result = closure_1_8(closure_1_5, obj);
       } else {
-        const obj1 = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null };
+        obj1 = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null };
         obj1[0] = item;
         obj1[1] = function goToMessageRequestPreview() {
           return item(item.channel.id);
@@ -263,14 +253,14 @@ export default function SpamMessageList(goToMessageRequestPreview) {
         }
         obj1[2] = item.channel.id === id;
         obj1[3] = closure_4;
-        tmp11Result = outer1_8(outer1_12, obj1, item.channel.id);
-        const tmp11 = outer1_8;
-        const tmp12 = outer1_12;
+        tmp11Result = closure_1_8(closure_1_12, obj1, item.channel.id);
+        const tmp11 = closure_1_8;
+        const tmp12 = closure_1_12;
       }
       return tmp11Result;
     };
     obj[4] = items;
     return callback(closure_6, obj);
   }
-  tmp2 = importDefault;
+  const tmp2 = importDefault;
 };

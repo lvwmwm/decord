@@ -1,15 +1,17 @@
-// Module ID: 7523
-// Function ID: 7524
+// Module ID: 7561
+// Function ID: 7562
 // Name: handleSummarizeThreadFinish
 // Dependencies: [589, 709, 2]
 
-// Module 7523 (handleSummarizeThreadFinish)
-import { Store } from "initialize";
+// Module 7561 (handleSummarizeThreadFinish)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 function handleSummarizeThreadFinish() {
-  let c0 = false;
+  c0 = false;
 }
 let c0 = false;
+const Store = initializeDefault.Store;
 class ThreadSummaryStore extends Store {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -19,15 +21,15 @@ class ThreadSummaryStore extends Store {
 }
 const prototype = ThreadSummaryStore.prototype;
 prototype["initialize"] = function initialize() {
-  let c0 = false;
+  c0 = false;
 };
 prototype["isInProgress"] = function isInProgress() {
   return c0;
 };
 ThreadSummaryStore.displayName = "ThreadSummaryStore";
-const threadSummaryStore = new ThreadSummaryStore(require("dispatcher"), {
+const threadSummaryStore = new ThreadSummaryStore(dispatcherDefault, {
   SUMMARIZE_THREAD_START: function handleSummarizeThreadStart() {
-    let c0 = true;
+    c0 = true;
   },
   SUMMARIZE_THREAD_SUCCESS: handleSummarizeThreadFinish,
   SUMMARIZE_THREAD_FAILURE: handleSummarizeThreadFinish

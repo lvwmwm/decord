@@ -1,16 +1,18 @@
-// Module ID: 4871
-// Function ID: 4872
+// Module ID: 4876
+// Function ID: 4877
 // Name: getCreateAttachmentURL
-// Dependencies: [1391, 676, 4834, 4830, 4872, 4874, 2]
+// Dependencies: [1391, 676, 4839, 4835, 4877, 4879, 2]
 // Exports: getUploadTarget
 
-// Module 4871 (getCreateAttachmentURL)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import ME from "ME";
+// Module 4876 (getCreateAttachmentURL)
+import items from "items" /* 4835 */;
+import getUploadFileSizeSumAll from "getUploadFileSizeSum" /* 4839 */;
+import getCreateAttachmentURLDefault from "getCreateAttachmentURL" /* 4877 */;
+import getCreateAttachmentURLDefault2 from "getCreateAttachmentURL" /* 4879 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ Endpoints: c5, MAX_UPLOAD_COUNT: closure_6 } = ME);
 class MessageAttachmentUploadTarget {
 }
@@ -27,13 +29,13 @@ prototype["getMaxFileSize"] = function getMaxFileSize(arg0) {
   if (basicChannel != null) {
     guild_id = basicChannel.guild_id;
   }
-  return importAll(4834).maxFileSize(guild_id);
+  return getUploadFileSizeSumAll.maxFileSize(guild_id);
 };
 prototype["getMaxAttachmentsCount"] = function getMaxAttachmentsCount() {
   return closure_6;
 };
 prototype["getMaxTotalAttachmentSize"] = function getMaxTotalAttachmentSize() {
-  return require(4830) /* items */.MAX_TOTAL_ATTACHMENT_SIZE;
+  return items.MAX_TOTAL_ATTACHMENT_SIZE;
 };
 Object.defineProperty(prototype, "shouldReactNativeCompressUploads", {
   get: function shouldReactNativeCompressUploads() {
@@ -42,15 +44,15 @@ Object.defineProperty(prototype, "shouldReactNativeCompressUploads", {
   set: undefined
 });
 const obj = { MESSAGE_ATTACHMENT: 0, [0]: "MESSAGE_ATTACHMENT", GUILD_PRODUCT_ATTACHMENT: 1, [1]: "GUILD_PRODUCT_ATTACHMENT", GRAVITY_ATTACHMENT: 2, [2]: "GRAVITY_ATTACHMENT" };
-const result = require("getUploadFileSizeSum").fileFinishedImporting("lib/uploader/UploadTargets.tsx");
+const result = require("set").fileFinishedImporting("lib/uploader/UploadTargets.tsx");
 
 export const UploadTargets = obj;
 export const getUploadTarget = function getUploadTarget(target) {
   if (obj.GUILD_PRODUCT_ATTACHMENT === target) {
-    const tmp14 = new importDefault(4872)();
+    const tmp14 = new getCreateAttachmentURLDefault();
     return tmp14;
   } else if (tmp.GRAVITY_ATTACHMENT === target) {
-    const tmp8 = new importDefault(4874)();
+    const tmp8 = new getCreateAttachmentURLDefault2();
     return tmp8;
   } else {
     const MESSAGE_ATTACHMENT = tmp.MESSAGE_ATTACHMENT;

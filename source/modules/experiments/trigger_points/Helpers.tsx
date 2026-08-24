@@ -1,11 +1,11 @@
-// Module ID: 7660
-// Function ID: 7661
+// Module ID: 7698
+// Function ID: 7699
 // Name: registeredExperimentIds
-// Dependencies: [1212, 4289, 2]
+// Dependencies: [1212, 4293, 2]
 
-// Module 7660 (registeredExperimentIds)
-import initialize from "initialize";
-import { CommonTriggerPoints } from "ExperimentBuckets";
+// Module 7698 (registeredExperimentIds)
+import closure_0 from "initialize" /* 1212 */;
+import { CommonTriggerPoints } from "ExperimentBuckets" /* 4293 */;
 
 let result = require("set").fileFinishedImporting("modules/experiments/trigger_points/Helpers.tsx");
 class CommonTriggerPointConfiguration {
@@ -23,8 +23,6 @@ prototype["registeredExperimentIds"] = function registeredExperimentIds() {
   return experiments.map((definition) => definition.definition.id);
 };
 prototype["trigger"] = function trigger() {
-  let experiments;
-  let triggerPoint;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};

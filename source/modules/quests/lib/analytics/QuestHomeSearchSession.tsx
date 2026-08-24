@@ -1,24 +1,28 @@
-// Module ID: 7486
-// Function ID: 7487
+// Module ID: 7524
+// Function ID: 7525
 // Name: getOrCreateQuestHomeSearchSession
-// Dependencies: [514, 5063, 2]
+// Dependencies: [514, 5068, 2]
 // Exports: clearQuestHomeSearchSession, getCurrentQuestHomeSearchSession, getOrCreateQuestHomeSearchSession
 
-// Module 7486 (getOrCreateQuestHomeSearchSession)
+// Module 7524 (getOrCreateQuestHomeSearchSession)
+import set from "set" /* 2 */;
+import v1 from "v1" /* 514 */;
+import result2 from "result" /* 5068 */;
+
 let c2 = null;
-const result = require("set").fileFinishedImporting("modules/quests/lib/analytics/QuestHomeSearchSession.tsx");
+const result = set.fileFinishedImporting("modules/quests/lib/analytics/QuestHomeSearchSession.tsx");
 
 export const getOrCreateQuestHomeSearchSession = function getOrCreateQuestHomeSearchSession() {
   const timestamp = Date.now();
   if (null == obj) {
     obj = { searchSession: null, isNew: true };
     obj = { uuid: null, createdAtTimestamp: null, lastUsedTimestamp: null, version: null };
-    obj[0] = require(514) /* v1 */.v4();
+    obj[0] = v1.v4();
     obj[1] = timestamp;
     obj[2] = timestamp;
-    obj[3] = require(5063) /* result */.CLIENT_SESSION_STORAGE_VERSION;
+    obj[3] = result2.CLIENT_SESSION_STORAGE_VERSION;
     obj[0] = obj;
-    const obj4 = require(514) /* v1 */;
+    const obj4 = v1;
   } else {
     obj.lastUsedTimestamp = timestamp;
     obj = { searchSession: null, isNew: false };
@@ -27,7 +31,7 @@ export const getOrCreateQuestHomeSearchSession = function getOrCreateQuestHomeSe
   return obj;
 };
 export function clearQuestHomeSearchSession() {
-  let c2 = null;
+  c2 = null;
 }
 export function getCurrentQuestHomeSearchSession() {
   return c2;

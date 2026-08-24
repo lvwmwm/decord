@@ -4,7 +4,11 @@
 // Dependencies: [835, 829, 831, 836, 837, 824]
 
 // Module 834 (regExp)
-const require = arg1;
+import generateSpanId from "generateSpanId" /* 829 */;
+import baggageHeaderToDynamicSamplingContext from "baggageHeaderToDynamicSamplingContext" /* 835 */;
+import dsnFromString from "dsnFromString" /* 837 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 const regExp = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
@@ -30,13 +34,13 @@ arg5.extractTraceparentData = function extractTraceparentData(str) {
 arg5.generateSentryTraceHeader = function generateSentryTraceHeader() {
   let traceId = arg0;
   if (arg0 === undefined) {
-    traceId = require(829) /* generateSpanId */.generateTraceId();
-    const obj = require(829) /* generateSpanId */;
+    traceId = generateSpanId.generateTraceId();
+    const obj = generateSpanId;
   }
   let spanId = arg1;
   if (arg1 === undefined) {
-    spanId = require(829) /* generateSpanId */.generateSpanId();
-    const obj2 = require(829) /* generateSpanId */;
+    spanId = generateSpanId.generateSpanId();
+    const obj2 = generateSpanId;
   }
   let str = "";
   if (undefined !== arg2) {
@@ -50,13 +54,13 @@ arg5.generateSentryTraceHeader = function generateSentryTraceHeader() {
 };
 arg5.generateTraceparentHeader = function generateTraceparentHeader(traceId, propagationSpanId2, sampled2) {
   if (traceId === undefined) {
-    traceId = require(829) /* generateSpanId */.generateTraceId();
-    const obj = require(829) /* generateSpanId */;
+    traceId = generateSpanId.generateTraceId();
+    const obj = generateSpanId;
   }
   let spanId = propagationSpanId2;
   if (propagationSpanId2 === undefined) {
-    spanId = require(829) /* generateSpanId */.generateSpanId();
-    const obj2 = require(829) /* generateSpanId */;
+    spanId = generateSpanId.generateSpanId();
+    const obj2 = generateSpanId;
   }
   let str = "00";
   if (sampled2) {
@@ -82,7 +86,7 @@ arg5.propagationContextFromHeaders = function propagationContextFromHeaders(str)
       tmp = obj;
     }
   }
-  let result = require(835) /* baggageHeaderToDynamicSamplingContext */.baggageHeaderToDynamicSamplingContext(arg1);
+  let result = baggageHeaderToDynamicSamplingContext.baggageHeaderToDynamicSamplingContext(arg1);
   let traceId;
   if (tmp != null) {
     traceId = tmp.traceId;
@@ -139,7 +143,7 @@ arg5.propagationContextFromHeaders = function propagationContextFromHeaders(str)
   }
 };
 arg5.shouldContinueTrace = function shouldContinueTrace(client, org_id) {
-  const result = require(837) /* dsnFromString */.extractOrgIdFromClient(client);
+  const result = dsnFromString.extractOrgIdFromClient(client);
   if (org_id) {
     if (result) {
       if (org_id !== result) {

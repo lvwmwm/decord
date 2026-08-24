@@ -4,7 +4,7 @@
 // Dependencies: [1241]
 
 // Module 3402 (registerAsset)
-import registerAsset from "registerAsset";
+import registerAsset from "registerAsset" /* 1241 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/vibegrations/intl", scales: [1], hash: "bc1453b1b01de38c461047311430d76c", name: "VibegrationsUntranslated.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcml2YXRlX2NoYW5uZWxzL2NsZWFuX3VwX2luYWN0aXZlX2dkbXM=", scales: [1], hash: "719174cb5dd79e1627feee11537c13e0", name: "zh-TW.messages.719174cb5dd79e1627feee11537c13e0.compiled.messages", type: "jsona" });

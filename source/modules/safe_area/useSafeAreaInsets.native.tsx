@@ -5,15 +5,19 @@
 // Exports: default, getSafeAreaInsets
 
 // Module 1629 (useSafeAreaInsets)
-const result = require("set").fileFinishedImporting("modules/safe_area/useSafeAreaInsets.native.tsx");
+import set from "set" /* 2 */;
+import context from "context" /* 1497 */;
+import _modDef1630 from "module_1630" /* 1630 */;
+
+const result = set.fileFinishedImporting("modules/safe_area/useSafeAreaInsets.native.tsx");
 
 export default function useSafeAreaInsets() {
   _require = _require(1497).useAppEntryKey();
-  return importDefault(1630)((arg0) => arg0.byAppEntry[closure_0].safeAreaInsets);
+  return _modDef1630((arg0) => arg0.byAppEntry[closure_0].safeAreaInsets);
 };
 export const getSafeAreaInsets = function getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY) {
   if (DEFAULT_APP_ENTRY_KEY === undefined) {
-    DEFAULT_APP_ENTRY_KEY = require(1497) /* context */.DEFAULT_APP_ENTRY_KEY;
+    DEFAULT_APP_ENTRY_KEY = context.DEFAULT_APP_ENTRY_KEY;
   }
-  return importDefault(1630).getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].safeAreaInsets;
+  return _modDef1630.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].safeAreaInsets;
 };

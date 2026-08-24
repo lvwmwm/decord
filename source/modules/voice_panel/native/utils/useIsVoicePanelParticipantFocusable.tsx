@@ -1,36 +1,33 @@
-// Module ID: 16300
-// Function ID: 16301
+// Module ID: 16394
+// Function ID: 16395
 // Name: isVoicePanelParticipantFocusable
-// Dependencies: [1390, 4773, 4652, 4497, 4544, 11444, 1370, 589, 2]
+// Dependencies: [1390, 4778, 4658, 4501, 4549, 11493, 1370, 589, 2]
 // Exports: default
 
-// Module 16300 (isVoicePanelParticipantFocusable)
-import participantFromServer from "participantFromServer";
-import getParticipants from "getParticipants";
-import reset from "reset";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import ParticipantTypes from "ParticipantTypes";
+// Module 16394 (isVoicePanelParticipantFocusable)
+import closure_2 from "participantFromServer" /* 1390 */;
+import closure_3 from "getParticipants" /* 4778 */;
+import closure_4 from "reset" /* 4658 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4501 */;
+import ParticipantTypes from "ParticipantTypes" /* 4549 */;
 
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
-function isVoicePanelParticipantFocusable(sharedValue1, closure_1, id2, arg3, outer1_4) {
+function isVoicePanelParticipantFocusable(sharedValue1, closure_1, id2, arg3, closure_1_4) {
   let obj = arg3;
   if (arg3 === undefined) {
-    obj = getParticipants;
+    obj = closure_3;
   }
-  let tmp = outer1_4;
-  if (outer1_4 === undefined) {
-    tmp = _detectH265HardwareDecode;
+  let tmp = closure_1_4;
+  if (closure_1_4 === undefined) {
+    tmp = closure_5;
   }
   let obj2 = arg5;
   if (arg5 === undefined) {
-    obj2 = participantFromServer;
+    obj2 = closure_2;
   }
   let obj3 = arg6;
   if (arg6 === undefined) {
-    obj3 = reset;
+    obj3 = closure_4;
   }
   if (null == id2) {
     return false;
@@ -49,7 +46,7 @@ function isVoicePanelParticipantFocusable(sharedValue1, closure_1, id2, arg3, ou
       if (callback2(participant)) {
         let result = null != obj3.getActiveStreamForUser(participant.user.id, sharedValue1);
       } else if (callback3(participant)) {
-        let tmp4Result = tmp4(11444);
+        let tmp4Result = tmp4(11493);
         result = tmp4Result.canRenderParticipantVideo(participant, tmp);
       } else {
         tmp4Result = tmp4(1370);
@@ -59,14 +56,14 @@ function isVoicePanelParticipantFocusable(sharedValue1, closure_1, id2, arg3, ou
     }
   }
 }
-({ isActivityParticipant: closure_6, isStreamParticipant: error, isUserParticipant: metroImportAll } = ParticipantTypes);
-let result = require("reset").fileFinishedImporting("modules/voice_panel/native/utils/useIsVoicePanelParticipantFocusable.tsx");
+({ isActivityParticipant: closure_6, isStreamParticipant: error, isUserParticipant: closure_8 } = ParticipantTypes);
+let result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/useIsVoicePanelParticipantFocusable.tsx");
 
 export default function useIsVoicePanelParticipantFocusable(arg0, arg1, arg2) {
   const _require = arg0;
-  const dependencyMap = arg1;
-  let participantFromServer = arg2;
-  const items = [getParticipants, _detectH265HardwareDecode, participantFromServer, reset];
-  return _require(589).useStateFromStores(items, () => outer1_9(closure_0, closure_1, participantFromServer, outer1_3, outer1_5, participantFromServer, outer1_4));
+  dependencyMap = arg1;
+  closure_2 = arg2;
+  const items = [closure_3, closure_5, closure_2, closure_4];
+  return _require(589).useStateFromStores(items, () => closure_1_9(closure_0, closure_1, closure_2, closure_1_3, closure_1_5, closure_2, closure_1_4));
 };
 export { isVoicePanelParticipantFocusable };

@@ -4,7 +4,10 @@
 // Dependencies: [819, 823, 824, 840, 849, 851]
 
 // Module 818 (registerSpanErrorInstrumentation)
-const require = arg1;
+import instrumentError from "instrumentError" /* 849 */;
+import instrumentUnhandledRejection from "instrumentUnhandledRejection" /* 851 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 let c2 = false;
@@ -31,9 +34,9 @@ arg5.registerSpanErrorInstrumentation = function registerSpanErrorInstrumentatio
     }
     errorCallback.tag = "sentry_tracingErrorCallback";
     c2 = true;
-    const result = require(849) /* instrumentError */.addGlobalErrorInstrumentationHandler(errorCallback);
-    let obj = require(849) /* instrumentError */;
-    const result1 = require(851) /* instrumentUnhandledRejection */.addGlobalUnhandledRejectionInstrumentationHandler(errorCallback);
-    const obj2 = require(851) /* instrumentUnhandledRejection */;
+    const result = instrumentError.addGlobalErrorInstrumentationHandler(errorCallback);
+    let obj = instrumentError;
+    const result1 = instrumentUnhandledRejection.addGlobalUnhandledRejectionInstrumentationHandler(errorCallback);
+    const obj2 = instrumentUnhandledRejection;
   }
 };

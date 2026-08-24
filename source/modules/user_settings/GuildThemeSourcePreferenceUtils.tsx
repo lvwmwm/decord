@@ -5,10 +5,13 @@
 // Exports: resolveDefaultGuildThemePreference, resolveGuildThemeSourcePreference
 
 // Module 1344 (resolveDefaultGuildThemePreference)
-const result = require("set").fileFinishedImporting("modules/user_settings/GuildThemeSourcePreferenceUtils.tsx");
+import set from "set" /* 2 */;
+import create from "create" /* 1306 */;
+
+const result = set.fileFinishedImporting("modules/user_settings/GuildThemeSourcePreferenceUtils.tsx");
 
 export const resolveDefaultGuildThemePreference = function resolveDefaultGuildThemePreference(arg0) {
-  if (arg0 === require(1306) /* create */.GuildThemeSourcePreference.PERSONAL) {
+  if (arg0 === create.GuildThemeSourcePreference.PERSONAL) {
     let GUILD = tmp(1306).GuildThemeSourcePreference.PERSONAL;
   } else {
     GUILD = tmp(1306).GuildThemeSourcePreference.GUILD;
@@ -18,7 +21,7 @@ export const resolveDefaultGuildThemePreference = function resolveDefaultGuildTh
 export const resolveGuildThemeSourcePreference = function resolveGuildThemeSourcePreference(arg0, arg1) {
   let GuildThemeSourcePreference = dependencyMap;
   let tmp2 = arg0;
-  if (arg0 !== require(1306) /* create */.GuildThemeSourcePreference.GUILD) {
+  if (arg0 !== create.GuildThemeSourcePreference.GUILD) {
     tmp2 = arg0;
     if (arg0 !== tmp(1306).GuildThemeSourcePreference.PERSONAL) {
       if (arg1 === tmp(1306).GuildThemeSourcePreference.PERSONAL) {

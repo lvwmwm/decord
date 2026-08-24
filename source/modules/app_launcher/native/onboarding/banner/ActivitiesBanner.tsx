@@ -1,21 +1,22 @@
-// Module ID: 11222
-// Function ID: 11223
+// Module ID: 11273
+// Function ID: 11274
 // Name: ActivitiesBanner
-// Dependencies: [32, 19, 21, 11211, 11223, 11237, 1236, 2]
+// Dependencies: [32, 19, 21, 11262, 11274, 11288, 1236, 2]
 // Exports: default
 
-// Module 11222 (ActivitiesBanner)
-import _slicedToArray from "_slicedToArray";
-import "noop";
-import { jsx } from "jsxProd";
+// Module 11273 (ActivitiesBanner)
+import noopAll from "noop" /* 19 */;
+import useActivityApplications from "useActivityApplications" /* 11262 */;
+import BannerBaseDefault from "BannerBase" /* 11288 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/ActivitiesBanner.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/ActivitiesBanner.tsx");
 
 export default function ActivitiesBanner(context) {
-  let tmp4;
-  let tmp5;
-  let obj = require(11211) /* useActivityApplications */;
+  let obj = useActivityApplications;
   obj = { guildId: context.context.channel.guild_id, fetchesShelf: false };
   [tmp4, tmp5] = callback(obj.useActivityApplications(obj), 2);
   let tmp6Result = null;
@@ -25,11 +26,11 @@ export default function ActivitiesBanner(context) {
       obj = { image: null, text: null };
       obj[0] = tmp8;
       const intl = tmp(1236).intl;
-      const obj1 = { activityName: null };
+      obj1 = { activityName: null };
       obj1[0] = tmp4.name;
       obj[1] = intl.formatToPlainString(tmp(1236).t.zHMWuV, obj1);
-      tmp6Result = jsx(importDefault(11237), { image: null, text: null });
-      const tmp7Result = importDefault(11237);
+      tmp6Result = jsx(BannerBaseDefault, { image: null, text: null });
+      const tmp7Result = BannerBaseDefault;
     }
   }
   return tmp6Result;

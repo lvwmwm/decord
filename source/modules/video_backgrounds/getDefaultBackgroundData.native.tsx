@@ -1,14 +1,16 @@
-// Module ID: 9665
-// Function ID: 9666
+// Module ID: 9704
+// Function ID: 9705
 // Name: DefaultVideoBackground
-// Dependencies: [8381, 2]
+// Dependencies: [8420, 2]
 // Exports: default
 
-// Module 9665 (DefaultVideoBackground)
-import { DefaultVideoBackground } from "VideoFilterType";
+// Module 9704 (DefaultVideoBackground)
+import set from "set" /* 2 */;
+import VideoFilterType from "VideoFilterType" /* 8420 */;
 
+const DefaultVideoBackground = VideoFilterType.DefaultVideoBackground;
 let closure_1 = { id: DefaultVideoBackground.OPTION_1, source: "", name: "" };
-const result = require("set").fileFinishedImporting("modules/video_backgrounds/getDefaultBackgroundData.native.tsx");
+const result = set.fileFinishedImporting("modules/video_backgrounds/getDefaultBackgroundData.native.tsx");
 
 export default function getDefaultBackgroundData() {
   return { [closure_0.OPTION_1]: closure_1, [closure_0.OPTION_2]: closure_1, [closure_0.OPTION_3]: closure_1, [closure_0.OPTION_4]: closure_1, [closure_0.OPTION_7]: closure_1, [closure_0.OPTION_8]: closure_1, [closure_0.OPTION_9]: closure_1, [closure_0.OPTION_10]: closure_1 };

@@ -5,7 +5,7 @@
 // Exports: useLinkBuilder
 
 // Module 1599 (useBuildHref)
-import noop from "noop";
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 function useBuildHref() {
@@ -58,7 +58,7 @@ function useBuildHref() {
       }
       let tmp5 = tmp3;
       if (tmp5) {
-        let obj1 = context(context1[1]);
+        obj1 = context(context1[1]);
         const findFocusedRouteResult = obj1.findFocusedRoute(stateForPath);
         let key1;
         if (findFocusedRouteResult != null) {
@@ -178,7 +178,7 @@ function useBuildAction() {
         return resetResult;
       } else {
         const _Error2 = Error;
-        const error = new Error("Failed to parse the href to a navigation state.");
+        error = new Error("Failed to parse the href to a navigation state.");
         throw error;
       }
       const tmp6 = getStateFromPath;

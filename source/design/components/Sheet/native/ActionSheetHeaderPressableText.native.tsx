@@ -1,22 +1,25 @@
-// Module ID: 8829
-// Function ID: 8830
+// Module ID: 8866
+// Function ID: 8867
 // Name: ActionSheetHeaderPressableText
-// Dependencies: [21, 4661, 1367, 5433, 4734, 2]
+// Dependencies: [21, 4668, 1367, 5438, 4739, 2]
 // Exports: ActionSheetHeaderPressableText
 
-// Module 8829 (ActionSheetHeaderPressableText)
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8866 (ActionSheetHeaderPressableText)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+const jsx = jsxProd.jsx;
 let closure_4 = createCacheKey.createStyles(() => ({ container: { marginTop: 3 } }));
-const result = require("useIsMobileVisualRefreshExperimentEnabled").fileFinishedImporting("design/components/Sheet/native/ActionSheetHeaderPressableText.native.tsx");
+const result = set.fileFinishedImporting("design/components/Sheet/native/ActionSheetHeaderPressableText.native.tsx");
 
 export const ActionSheetHeaderPressableText = function ActionSheetHeaderPressableText(onPress) {
-  let accessibilityLabel;
-  let label;
   ({ label, accessibilityLabel } = onPress);
   let str = "text-md/semibold";
-  if (importDefault(1367)("ActionSheetHeaderPressableText")) {
+  if (useIsMobileVisualRefreshExperimentEnabledDefault("ActionSheetHeaderPressableText")) {
     str = "text-md/medium";
   }
   const obj = { style: callback().container, accessibilityRole: "button", onPress: onPress.onPress, accessibilityLabel: null, children: null };
@@ -25,6 +28,6 @@ export const ActionSheetHeaderPressableText = function ActionSheetHeaderPressabl
     tmp5 = accessibilityLabel;
   }
   obj[3] = tmp5;
-  obj[4] = jsx(require(4734) /* Text */.Text, { variant: str, color: "text-brand", children: label });
-  return jsx(require(5433) /* PressableBase */.PressableOpacity, { style: callback().container, accessibilityRole: "button", onPress: onPress.onPress, accessibilityLabel: null, children: null });
+  obj[4] = jsx(Text.Text, { variant: str, color: "text-brand", children: label });
+  return jsx(PressableBase.PressableOpacity, { style: callback().container, accessibilityRole: "button", onPress: onPress.onPress, accessibilityLabel: null, children: null });
 };

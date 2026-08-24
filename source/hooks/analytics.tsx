@@ -1,15 +1,16 @@
-// Module ID: 9398
-// Function ID: 9399
+// Module ID: 9435
+// Function ID: 9436
 // Name: useAnalyticsContext
 // Dependencies: [19, 698, 2]
 // Exports: useAnalyticsContext
 
-// Module 9398 (useAnalyticsContext)
-import noop from "noop";
+// Module 9435 (useAnalyticsContext)
+import expandEventProperties from "expandEventProperties" /* 698 */;
+import closure_2 from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("hooks/analytics.tsx");
 
 export const useAnalyticsContext = function useAnalyticsContext() {
-  return React.useContext(require(698) /* expandEventProperties */.AnalyticsContext);
+  return React.useContext(expandEventProperties.AnalyticsContext);
 };

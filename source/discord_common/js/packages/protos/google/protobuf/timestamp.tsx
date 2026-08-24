@@ -4,10 +4,11 @@
 // Dependencies: [32, 1307, 2]
 
 // Module 1336 (now)
-import _slicedToArray from "_slicedToArray";
-import { MessageType } from "module_1307";
+import _mod1307 from "module_1307" /* 1307 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import { MessageType } from "module_1307" /* 1307 */;
 
-const require = arg1;
+require = arg1;
 class Timestamp$Type extends MessageType {
   constructor() {
     items = [, ];
@@ -22,13 +23,13 @@ let prototype = Timestamp$Type.prototype;
 prototype["now"] = function now() {
   const obj = this.create();
   const timestamp = Date.now();
-  const PbLong = require(1307).PbLong;
+  const PbLong = _mod1307.PbLong;
   obj.seconds = PbLong.from(Math.floor(timestamp / 1000)).toString();
   obj.nanos = timestamp % 1000 * 1000000;
   return obj;
 };
 prototype["toDate"] = function toDate(seconds) {
-  const PbLong = require(1307).PbLong;
+  const PbLong = _mod1307.PbLong;
   const result = 1000 * PbLong.from(seconds.seconds).toNumber();
   const fromResult = PbLong.from(seconds.seconds);
   return new Date(result + Math.ceil(seconds.nanos / 1000000));
@@ -36,20 +37,20 @@ prototype["toDate"] = function toDate(seconds) {
 prototype["fromDate"] = function fromDate(date) {
   const obj = this.create();
   const time = date.getTime();
-  const PbLong = require(1307).PbLong;
+  const PbLong = _mod1307.PbLong;
   obj.seconds = PbLong.from(Math.floor(time / 1000)).toString();
   obj.nanos = time % 1000 * 1000000;
   return obj;
 };
 prototype["internalJsonWrite"] = function internalJsonWrite(seconds) {
-  const PbLong = require(1307).PbLong;
+  const PbLong = _mod1307.PbLong;
   const result = 1000 * PbLong.from(seconds.seconds).toNumber();
   if (result >= Date.parse("0001-01-01T00:00:00Z")) {
     const _Date2 = Date;
     if (result <= Date.parse("9999-12-31T23:59:59Z")) {
       if (seconds.nanos < 0) {
         const _Error = Error;
-        const error = new Error("Unable to encode invalid Timestamp to JSON. Nanos must not be negative.");
+        error = new Error("Unable to encode invalid Timestamp to JSON. Nanos must not be negative.");
         throw error;
       } else if (seconds.nanos <= 0) {
         const _Date = Date;
@@ -76,8 +77,8 @@ prototype["internalJsonWrite"] = function internalJsonWrite(seconds) {
 prototype["internalJsonRead"] = function internalJsonRead(str) {
   if (typeof str !== "string") {
     const _Error3 = Error;
-    let obj = require(1307);
-    const error = new Error("Unable to parse Timestamp from JSON " + obj.typeofJsonValue(str) + ".");
+    let obj = _mod1307;
+    error = new Error("Unable to parse Timestamp from JSON " + obj.typeofJsonValue(str) + ".");
     throw error;
   } else {
     const match = str.match(/^([0-9]{4})-([0-9]{2})-([0-9]{2})T([0-9]{2}):([0-9]{2}):([0-9]{2})(?:Z|\.([0-9]{3,9})Z|([+-][0-9][0-9]:[0-9][0-9]))$/);
@@ -103,7 +104,7 @@ prototype["internalJsonRead"] = function internalJsonRead(str) {
               const self = this;
               obj = this.create();
             }
-            const PbLong = require(1307).PbLong;
+            const PbLong = _mod1307.PbLong;
             obj.seconds = PbLong.from(parsed / 1000).toString();
             obj.nanos = 0;
             if (match[7]) {
@@ -130,16 +131,14 @@ prototype["create"] = function create(arr) {
   let obj = { seconds: "0", nanos: 0 };
   const _Object = Object;
   obj = { enumerable: false, value: this };
-  _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
+  _Object.defineProperty(obj, _mod1307.MESSAGE_TYPE, obj);
   if (undefined !== arr) {
-    const result = require(1307).reflectionMergePartial(this, obj, arr);
-    const tmpResult = require(1307);
+    const result = _mod1307.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1307;
   }
   return obj;
 };
 prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
-  let tmp5;
-  let tmp6;
   const self = this;
   let obj = arg3;
   if (arg3 == null) {
@@ -169,7 +168,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
           let tmp17 = tmp6;
           let tmp18 = new.target;
           let tmp19 = new.target;
-          let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+          error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
           let tmp21 = error;
           throw error;
         } else {
@@ -178,7 +177,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
             if (true === onRead) {
               let tmp8 = require;
               let tmp9 = dependencyMap;
-              onRead = require(1307).UnknownFieldHandler.onRead;
+              onRead = _mod1307.UnknownFieldHandler.onRead;
             }
             let tmp10 = obj;
             let tmp11 = tmp5;
@@ -194,17 +193,17 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
 };
 prototype["internalBinaryWrite"] = function internalBinaryWrite(seconds, tag, writeUnknownFields) {
   if ("0" !== seconds.seconds) {
-    tag.tag(1, require(1307).WireType.Varint).int64(seconds.seconds);
-    const tagResult = tag.tag(1, require(1307).WireType.Varint);
+    tag.tag(1, _mod1307.WireType.Varint).int64(seconds.seconds);
+    const tagResult = tag.tag(1, _mod1307.WireType.Varint);
   }
   if (0 !== seconds.nanos) {
-    tag.tag(2, require(1307).WireType.Varint).int32(seconds.nanos);
-    const tagResult1 = tag.tag(2, require(1307).WireType.Varint);
+    tag.tag(2, _mod1307.WireType.Varint).int32(seconds.nanos);
+    const tagResult1 = tag.tag(2, _mod1307.WireType.Varint);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = require(1307).UnknownFieldHandler.onWrite;
+      onWrite = _mod1307.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, seconds, tag);

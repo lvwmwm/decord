@@ -1,22 +1,19 @@
-// Module ID: 4582
-// Function ID: 4583
+// Module ID: 4588
+// Function ID: 4589
 // Name: getMaxSinkValue
-// Dependencies: [4529, 2]
+// Dependencies: [4534, 2]
 
-// Module 4582 (getMaxSinkValue)
-import DesktopSources from "DesktopSources";
+// Module 4588 (getMaxSinkValue)
+import set2 from "set" /* 2 */;
+import DesktopSources from "DesktopSources" /* 4534 */;
 
-let c0;
-let c3;
-let closure_1;
-let obj1;
 ({ defaultVideoQualityOptions: c0, VIDEO_QUALITY_FRAMERATE: closure_1, VIDEO_QUALITY_FRAMERATE_MUTED_2: obj1, VIDEO_QUALITY_FRAMERATE_MUTED: c3 } = DesktopSources);
 let MediaSinkWantsLadder;
 class MediaSinkWantsLadder {
   constructor() {
     tmp = global;
     if (global === undefined) {
-      tmp = __esModule;
+      tmp = closure_0;
     }
     ({ width, height } = tmp.videoBudget);
     if (width > 0) {
@@ -35,15 +32,13 @@ class MediaSinkWantsLadder {
 }
 const prototype = MediaSinkWantsLadder.prototype;
 prototype["getMaxSinkValue"] = function getMaxSinkValue(videoParticipantCount, arg1) {
-  let pixelCount;
-  let wantValue2;
   let num = arg1;
   if (arg1 === undefined) {
     num = 0;
   }
   if (videoParticipantCount < 0) {
     const _Error = Error;
-    const error = new Error("getMaxSinkValue: Requested " + videoParticipantCount);
+    error = new Error("getMaxSinkValue: Requested " + videoParticipantCount);
     throw error;
   } else {
     let wantValue = this.orderedLadder[0].wantValue;
@@ -96,9 +91,6 @@ prototype["getResolution"] = function getResolution(arg0) {
   }
 };
 MediaSinkWantsLadder["calculateLadder"] = function calculateLadder(pixelBudget) {
-  let budgetPortion;
-  let height;
-  let width;
   const set = new Set([0, 4, 8, 10]);
   const items = [];
   let num = 1;
@@ -193,6 +185,6 @@ MediaSinkWantsLadder["calculateOrderedLadder"] = function calculateOrderedLadder
   }
   return items;
 };
-let result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/MediaSinkWantsLadder.tsx");
+let result = set2.fileFinishedImporting("../discord_common/js/packages/media-engine/MediaSinkWantsLadder.tsx");
 
 export { MediaSinkWantsLadder };

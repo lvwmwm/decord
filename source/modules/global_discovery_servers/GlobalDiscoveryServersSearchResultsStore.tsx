@@ -1,15 +1,15 @@
-// Module ID: 13254
-// Function ID: 13255
+// Module ID: 13309
+// Function ID: 13310
 // Name: map
-// Dependencies: [8876, 4273, 589, 709, 2]
+// Dependencies: [8913, 4277, 589, 709, 2]
 
-// Module 13254 (map)
-import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID";
-import { Store } from "initialize";
+// Module 13309 (map)
+import set2 from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4277 */;
+import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID" /* 8913 */;
 
-let c3;
-let c4;
-let obj1;
 ({ SEARCH_RESULTS_QUERY_PREFIX: obj1, SEARCH_RESULTS_CATEGORY_PREFIX: c3, SEARCH_RESULTS_LANGUAGE_CODE_PREFIX: c4 } = DEFAULT_DISCOVERY_CATEGORY_ID);
 const map = new Map();
 const map1 = new Map();
@@ -29,12 +29,10 @@ prototype["handleSearchStart"] = function handleSearchStart() {
 prototype["handleSearchFailure"] = function handleSearchFailure(arg0) {
   this.isFetching = false;
   this.isInitialFetchComplete = true;
-  const aPIError = new require(4273) /* V6OrEarlierAPIError */.APIError(arg0);
+  const aPIError = new V6OrEarlierAPIError.APIError(arg0);
   this.error = aPIError;
 };
 prototype["handleSearchSuccess"] = function handleSearchSuccess(arg0) {
-  let guilds;
-  let total;
   const self = this;
   ({ total, guilds } = arg0);
   let items;
@@ -50,6 +48,7 @@ prototype["handleSearchSuccess"] = function handleSearchSuccess(arg0) {
   self.guildIds = items;
   self.offset = items.length;
 };
+const Store = initializeDefault.Store;
 class GlobalDiscoveryServersSearchResultsStore extends Store {
 }
 const prototype2 = GlobalDiscoveryServersSearchResultsStore.prototype;
@@ -113,7 +112,7 @@ prototype2["getLastFetchTimestamp"] = function getLastFetchTimestamp(query) {
 prototype2["getError"] = function getError(query) {
   const items = [closure_2, query.query, closure_3, query.categoryId, closure_4, query.languageCode];
   const value = map.get(items.join("-"));
-  let error = null;
+  error = null;
   if (null != value) {
     error = value.error;
   }
@@ -124,7 +123,7 @@ prototype2["getErrorMessage"] = function getErrorMessage(query) {
   const value = map.get(items.join("-"));
   let tmp2 = null;
   if (null != value) {
-    const error = value.error;
+    error = value.error;
     let anyErrorMessage;
     if (error != null) {
       anyErrorMessage = error.getAnyErrorMessage();
@@ -134,15 +133,12 @@ prototype2["getErrorMessage"] = function getErrorMessage(query) {
   return tmp2;
 };
 GlobalDiscoveryServersSearchResultsStore.displayName = "GlobalDiscoveryServersSearchResultsStore";
-const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearchResultsStore(require("dispatcher"), {
+const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearchResultsStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
     map.clear();
     map1.clear();
   },
   GLOBAL_DISCOVERY_SERVERS_SEARCH_START: function handleGlobalDiscoveryServersSearchStart(reset) {
-    let categoryId;
-    let languageCode;
-    let query;
     ({ query, categoryId, languageCode } = reset);
     const items = [closure_2, query, closure_3, categoryId, closure_4, languageCode];
     if (reset.reset) {
@@ -166,8 +162,6 @@ const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearc
     value.handleSearchStart();
   },
   GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS: function handleGlobalDiscoveryServersSearchSuccess(total) {
-    let guilds;
-    let query;
     ({ query, guilds } = total);
     const items = [closure_2, query, closure_3, total.categoryId, closure_4, total.languageCode];
     const joined = items.join("-");
@@ -214,14 +208,12 @@ const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearc
     const item = map.forEach((query) => {
       if (null != query.query) {
         if (!set.has(query.query)) {
-          outer1_5.delete(arg1);
+          closure_1_5.delete(arg1);
         }
       }
     });
   },
   GUILD_PROFILE_FETCH_SUCCESS: function handleGuildProfileFetchSuccess(arg0) {
-    let guildId;
-    let profile;
     ({ guildId, profile } = arg0);
     let obj = map1;
     const value = map1.get(guildId);
@@ -250,9 +242,6 @@ let obj = {
     map1.clear();
   },
   GLOBAL_DISCOVERY_SERVERS_SEARCH_START: function handleGlobalDiscoveryServersSearchStart(reset) {
-    let categoryId;
-    let languageCode;
-    let query;
     ({ query, categoryId, languageCode } = reset);
     const items = [closure_2, query, closure_3, categoryId, closure_4, languageCode];
     if (reset.reset) {
@@ -276,8 +265,6 @@ let obj = {
     value.handleSearchStart();
   },
   GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS: function handleGlobalDiscoveryServersSearchSuccess(total) {
-    let guilds;
-    let query;
     ({ query, guilds } = total);
     const items = [closure_2, query, closure_3, total.categoryId, closure_4, total.languageCode];
     const joined = items.join("-");
@@ -324,14 +311,12 @@ let obj = {
     const item = map.forEach((query) => {
       if (null != query.query) {
         if (!set.has(query.query)) {
-          outer1_5.delete(arg1);
+          closure_1_5.delete(arg1);
         }
       }
     });
   },
   GUILD_PROFILE_FETCH_SUCCESS: function handleGuildProfileFetchSuccess(arg0) {
-    let guildId;
-    let profile;
     ({ guildId, profile } = arg0);
     let obj = map1;
     const value = map1.get(guildId);
@@ -354,6 +339,6 @@ let obj = {
     }
   }
 };
-let result = require("initialize").fileFinishedImporting("modules/global_discovery_servers/GlobalDiscoveryServersSearchResultsStore.tsx");
+let result = set2.fileFinishedImporting("modules/global_discovery_servers/GlobalDiscoveryServersSearchResultsStore.tsx");
 
 export default globalDiscoveryServersSearchResultsStore;

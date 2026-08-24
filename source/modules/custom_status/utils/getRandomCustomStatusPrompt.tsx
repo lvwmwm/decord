@@ -1,19 +1,18 @@
-// Module ID: 9293
-// Function ID: 9294
+// Module ID: 9330
+// Function ID: 9331
 // Name: getRandomCustomStatusPrompt
-// Dependencies: [9292, 1236, 2]
+// Dependencies: [9329, 1236, 2]
 // Exports: default
 
-// Module 9293 (getRandomCustomStatusPrompt)
-import StatusTypes from "StatusTypes";
+// Module 9330 (getRandomCustomStatusPrompt)
+import set from "set" /* 2 */;
+import StatusTypes from "StatusTypes" /* 9329 */;
 
-let c3;
-let obj1;
 ({ CustomStatusPrompts: obj1, CustomStatusPromptValues: c3 } = StatusTypes);
-const result = require("set").fileFinishedImporting("modules/custom_status/utils/getRandomCustomStatusPrompt.tsx");
+const result = set.fileFinishedImporting("modules/custom_status/utils/getRandomCustomStatusPrompt.tsx");
 
 export default function getRandomCustomStatusPrompt(size) {
-  let closure_0 = size;
+  closure_0 = size;
   if (null != size) {
     if (size.size > 0) {
       let found = closure_2.filter((value) => !size.has(value.value));

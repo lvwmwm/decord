@@ -1,15 +1,15 @@
-// Module ID: 8944
-// Function ID: 8945
+// Module ID: 8981
+// Function ID: 8982
 // Name: getIsScreenLandscape
 // Dependencies: [19, 1495, 1497, 2]
 // Exports: getIsScreenLandscape, useIsScreenLandscape
 
-// Module 8944 (getIsScreenLandscape)
-import noop from "noop";
-import getDimensionsStoreStateForEntry from "getDimensionsStoreStateForEntry";
+// Module 8981 (getIsScreenLandscape)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "getDimensionsStoreStateForEntry" /* 1495 */;
 
 const require = arg1;
-const result = require("context").fileFinishedImporting("modules/screen/useIsScreenLandscape.native.tsx");
+const result = require("set").fileFinishedImporting("modules/screen/useIsScreenLandscape.native.tsx");
 
 export const getIsScreenLandscape = function getIsScreenLandscape() {
   let str = arg0;

@@ -1,10 +1,10 @@
-// Module ID: 4791
-// Function ID: 4792
+// Module ID: 4796
+// Function ID: 4797
 // Name: set
 // Dependencies: [2]
 
-// Module 4791 (set)
-import set from "set";
+// Module 4796 (set)
+import set from "set" /* 2 */;
 
 const obj = { ALL: null, IS_ADULT_ONLY: null };
 let set = new Set([1, 2, 3, 4, 5, 6]);

@@ -1,34 +1,29 @@
-// Module ID: 15759
-// Function ID: 15760
+// Module ID: 15828
+// Function ID: 15829
 // Name: sendMessageWithEmbed
-// Dependencies: [7436, 7427, 2]
+// Dependencies: [7474, 7465, 2]
 // Exports: sendMessageWithEmbed, sendMessageWithoutContentInventoryEntry
 
-// Module 15759 (sendMessageWithEmbed)
-const result = require("set").fileFinishedImporting("modules/content_inventory/reactionUtils.tsx");
+// Module 15828 (sendMessageWithEmbed)
+import set from "set" /* 2 */;
+import trackInviteDefault from "trackInvite" /* 7465 */;
+import rebuildDefault from "rebuild" /* 7474 */;
+
+const result = set.fileFinishedImporting("modules/content_inventory/reactionUtils.tsx");
 
 export const sendMessageWithEmbed = function sendMessageWithEmbed(channel) {
-  let _location;
-  let content;
-  let doNotNotifyOnError;
-  let entry;
-  let whenReady;
   channel = channel.channel;
   ({ content, entry, whenReady, doNotNotifyOnError, location: _location } = channel);
-  let obj = importDefault(7436);
+  let obj = rebuildDefault;
   const parsed = obj.parse(channel, content);
   obj = { contentInventoryEntry: { unverified_content: entry }, doNotNotifyOnError, location: _location };
-  return importDefault(7427).sendMessage(channel.id, parsed, whenReady, obj);
+  return trackInviteDefault.sendMessage(channel.id, parsed, whenReady, obj);
 };
 export const sendMessageWithoutContentInventoryEntry = function sendMessageWithoutContentInventoryEntry(channel) {
-  let _location;
-  let content;
-  let doNotNotifyOnError;
-  let whenReady;
   channel = channel.channel;
   ({ content, whenReady, doNotNotifyOnError, location: _location } = channel);
-  let obj = importDefault(7436);
+  let obj = rebuildDefault;
   const parsed = obj.parse(channel, content);
   obj = { doNotNotifyOnError, location: _location };
-  return importDefault(7427).sendMessage(channel.id, parsed, whenReady, obj);
+  return trackInviteDefault.sendMessage(channel.id, parsed, whenReady, obj);
 };

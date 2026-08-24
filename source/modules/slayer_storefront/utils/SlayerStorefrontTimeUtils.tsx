@@ -1,19 +1,23 @@
-// Module ID: 16145
-// Function ID: 16146
+// Module ID: 16242
+// Function ID: 16243
 // Name: getLimitedOfferTimeLeft
-// Dependencies: [32, 19, 3975, 687, 1236, 3271, 7416, 2]
+// Dependencies: [32, 19, 3978, 687, 1236, 3274, 7454, 2]
 // Exports: useTickingFormattedLimitedOfferTimeLeft
 
-// Module 16145 (getLimitedOfferTimeLeft)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 16242 (getLimitedOfferTimeLeft)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 3274 */;
+import tDefault from "t" /* 3978 */;
+import useIntervalDefault from "useInterval" /* 7454 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 function getLimitedOfferTimeLeft(arg0) {
   if (null == arg0) {
     return null;
   } else {
-    const diffResult = importDefault(3975)(arg0).diff(importDefault(3975)(), "seconds");
+    const diffResult = tDefault(arg0).diff(tDefault(), "seconds");
     let tmp4 = null;
     if (diffResult > 0) {
       const obj = { days: null, hours: null, minutes: null, seconds: null };
@@ -32,43 +36,41 @@ function getLimitedOfferTimeLeft(arg0) {
   }
 }
 function formatLimitedOfferTimeLeft(arg0) {
-  let days;
-  let hours;
   const tmp = getLimitedOfferTimeLeft(arg0);
   if (null == tmp) {
     return null;
   } else {
     ({ days, hours } = tmp);
     if (days > 0) {
-      const intl3 = require(1236) /* getSystemLocale */.intl;
+      const intl3 = getSystemLocale.intl;
       let obj = { days: null };
       obj[0] = days;
-      let formatToPlainStringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.BXpdIg, obj);
+      let formatToPlainStringResult = intl3.formatToPlainString(getSystemLocale.t.BXpdIg, obj);
     } else if (hours > 0) {
-      const intl2 = require(1236) /* getSystemLocale */.intl;
+      const intl2 = getSystemLocale.intl;
       obj = { hours: null };
       obj[0] = hours;
-      formatToPlainStringResult = intl2.formatToPlainString(importDefault(3271).PPaJSw, obj);
+      formatToPlainStringResult = intl2.formatToPlainString(messagesProxyDefault.PPaJSw, obj);
     } else {
-      const intl = require(1236) /* getSystemLocale */.intl;
+      const intl = getSystemLocale.intl;
       obj = { minutes: null };
       const _Math = Math;
       obj[0] = Math.max(tmp12, 1);
-      formatToPlainStringResult = intl.formatToPlainString(importDefault(3271)["7Z+aIf"], obj);
+      formatToPlainStringResult = intl.formatToPlainString(messagesProxyDefault["7Z+aIf"], obj);
     }
     return formatToPlainStringResult;
   }
 }
-let result = require("t").fileFinishedImporting("modules/slayer_storefront/utils/SlayerStorefrontTimeUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/slayer_storefront/utils/SlayerStorefrontTimeUtils.tsx");
 
 export { getLimitedOfferTimeLeft };
 export { formatLimitedOfferTimeLeft };
 export const useTickingFormattedLimitedOfferTimeLeft = function useTickingFormattedLimitedOfferTimeLeft(endDate) {
-  let closure_0 = endDate;
-  const tmp = callback(React.useState(() => outer1_6(closure_0)), 2);
-  const importDefault = tmp[1];
-  importDefault(7416)(() => {
-    callback(outer1_6(closure_0));
+  closure_0 = endDate;
+  const tmp = callback(React.useState(() => closure_1_6(closure_0)), 2);
+  importDefault = tmp[1];
+  useIntervalDefault(() => {
+    callback(closure_1_6(closure_0));
   }, 1000);
   return tmp[0];
 };

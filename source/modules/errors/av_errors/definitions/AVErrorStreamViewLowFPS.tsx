@@ -1,17 +1,17 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 17150
+// Function ID: 17151
 // Name: AVErrorStreamViewLowFPSDefinition
-// Dependencies: [4773, 4652, 1218, 4558, 676, 17058, 4531, 9667, 9668, 17055, 2]
+// Dependencies: [4778, 4658, 1218, 4563, 676, 17151, 4536, 9706, 9707, 17148, 2]
 
-// Module 17057 (AVErrorStreamViewLowFPSDefinition)
-import getParticipants from "getParticipants";
-import reset from "reset";
-import fetchFingerprint from "fetchFingerprint";
-import initialize from "initialize";
-import { ApplicationStreamStates } from "ME";
+// Module 17150 (AVErrorStreamViewLowFPSDefinition)
+import closure_2 from "getParticipants" /* 4778 */;
+import closure_3 from "reset" /* 4658 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "initialize" /* 4563 */;
+import { ApplicationStreamStates } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("fetchFingerprint").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamViewLowFPS.tsx");
+const result = require("set").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamViewLowFPS.tsx");
 
 export const AVErrorStreamViewLowFPSDefinition = {
   getActiveErrors() {

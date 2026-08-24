@@ -1,17 +1,20 @@
-// Module ID: 8621
-// Function ID: 8622
+// Module ID: 8658
+// Function ID: 8659
 // Name: trackUserAvatarUpdated
-// Dependencies: [676, 8385, 698, 1435, 2]
+// Dependencies: [676, 8424, 698, 1435, 2]
 // Exports: trackUserAvatarUpdated
 
-// Module 8621 (trackUserAvatarUpdated)
-import { AnalyticEvents } from "ME";
+// Module 8658 (trackUserAvatarUpdated)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import getAvatarURL from "getAvatarURL" /* 1435 */;
+import AssetOriginTypes from "AssetOriginTypes" /* 8424 */;
 
-const result = require("expandEventProperties").fileFinishedImporting("modules/user_profile/utils/trackUserAvatarUpdated.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/user_profile/utils/trackUserAvatarUpdated.tsx");
 
 export const trackUserAvatarUpdated = function trackUserAvatarUpdated(isGuildProfile) {
-  let avatarHash;
-  let avatarId;
   let flag = isGuildProfile.isGuildProfile;
   ({ avatarHash, avatarId } = isGuildProfile);
   if (flag === undefined) {
@@ -19,18 +22,16 @@ export const trackUserAvatarUpdated = function trackUserAvatarUpdated(isGuildPro
   }
   let NEW_ASSET = isGuildProfile.avatarAssetOrigin;
   if (NEW_ASSET === undefined) {
-    NEW_ASSET = require(8385) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
+    NEW_ASSET = AssetOriginTypes.AssetOriginTypes.NEW_ASSET;
   }
-  let obj = importDefault(698);
-  obj = { animated: null, is_guild_profile: null, recent_avatar_id: null, is_edited_recent_avatar: null };
-  obj[0] = require(1435) /* getAvatarURL */.isAnimatedIconHash(avatarHash);
-  obj[1] = flag;
+  let obj = expandEventPropertiesDefault;
+  obj = { animated: getAvatarURL.isAnimatedIconHash(avatarHash), is_guild_profile: flag, recent_avatar_id: null, is_edited_recent_avatar: null };
   let NumberResult;
-  if (NEW_ASSET === require(8385) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+  if (NEW_ASSET === AssetOriginTypes.AssetOriginTypes.ARCHIVED_ASSET) {
     const _Number = Number;
     NumberResult = Number(avatarId);
   }
   obj[2] = NumberResult;
-  obj[3] = NEW_ASSET === require(8385) /* AssetOriginTypes */.AssetOriginTypes.EDITED_ARCHIVED_ASSET;
+  obj[3] = NEW_ASSET === AssetOriginTypes.AssetOriginTypes.EDITED_ARCHIVED_ASSET;
   obj.track(AnalyticEvents.USER_AVATAR_UPDATED, obj);
 };

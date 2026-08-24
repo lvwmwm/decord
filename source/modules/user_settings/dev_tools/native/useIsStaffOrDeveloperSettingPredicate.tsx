@@ -1,16 +1,17 @@
-// Module ID: 14199
-// Function ID: 14200
+// Module ID: 14267
+// Function ID: 14268
 // Name: useStaffOrDeveloperSettingPredicate
-// Dependencies: [7472, 589, 2]
+// Dependencies: [7510, 589, 2]
 // Exports: useStaffOrDeveloperSettingPredicate
 
-// Module 14199 (useStaffOrDeveloperSettingPredicate)
-import init from "init";
+// Module 14267 (useStaffOrDeveloperSettingPredicate)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "init" /* 7510 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/dev_tools/native/useIsStaffOrDeveloperSettingPredicate.tsx");
 
 export const useStaffOrDeveloperSettingPredicate = function useStaffOrDeveloperSettingPredicate() {
-  const items = [init];
-  return require(589) /* initialize */.useStateFromStores(items, () => isDeveloper.isDeveloper);
+  const items = [closure_2];
+  return initialize.useStateFromStores(items, () => isDeveloper.isDeveloper);
 };

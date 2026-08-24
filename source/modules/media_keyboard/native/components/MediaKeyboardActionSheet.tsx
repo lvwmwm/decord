@@ -1,30 +1,19 @@
-// Module ID: 10271
-// Function ID: 10272
+// Module ID: 10310
+// Function ID: 10311
 // Name: MediaKeyboardActionSheet
-// Dependencies: [19, 1624, 676, 21, 4115, 1236, 10272, 10051, 10274, 4343, 4344, 698, 4761, 10276, 6882, 6950, 1625, 10277, 2]
+// Dependencies: [19, 1624, 676, 21, 4119, 1236, 10311, 10090, 10313, 4347, 4348, 698, 4766, 10315, 6920, 6988, 1625, 10316, 2]
 // Exports: default
 
-// Module 10271 (MediaKeyboardActionSheet)
-import noop from "noop";
-import { MediaPickerActionSheetEngagedActions as closure_4 } from "DRAG_HANDLE";
-import { AnalyticEvents } from "ME";
-import { jsx } from "jsxProd";
+// Module 10310 (MediaKeyboardActionSheet)
+import closure_3 from "noop" /* 19 */;
+import { MediaPickerActionSheetEngagedActions as closure_4 } from "DRAG_HANDLE" /* 1624 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("ME").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardActionSheet.tsx");
 
 export default function MediaKeyboardActionSheet(onAttachPress) {
-  let allowCamera;
-  let channel;
-  let disableWhenReachedLimit;
-  let draftType;
-  let extensions;
-  let includedUploadIds;
-  let onLongPressItem;
-  let onManageLimited;
-  let onPressCamera;
-  let onPressItem;
-  let uploadLimit;
   onAttachPress = onAttachPress.onAttachPress;
   const onViewAll = onAttachPress.onViewAll;
   const onClose = onAttachPress.onClose;
@@ -93,12 +82,6 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
     obj[3] = items;
     return callback2(onViewAll(onClose[13]), obj);
   }, items3);
-  obj = { handleComponent: callback, scrollable: true, startExpanded: null, onExpand: null, onDismiss: null, animatedIndex: null, footer: null, children: null };
-  obj[2] = onAttachPress(onClose[16]).isMetaQuest();
-  obj[3] = callback1;
-  obj[4] = callback2;
-  obj[5] = sharedValue;
-  obj[6] = memo1;
-  obj[7] = callback2(onViewAll(onClose[17]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit });
+  obj = { handleComponent: callback, scrollable: true, startExpanded: onAttachPress(onClose[16]).isMetaQuest(), onExpand: callback1, onDismiss: callback2, animatedIndex: sharedValue, footer: memo1, children: callback2(onViewAll(onClose[17]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit }) };
   return callback2(onAttachPress(onClose[15]).BottomSheet, obj);
 };

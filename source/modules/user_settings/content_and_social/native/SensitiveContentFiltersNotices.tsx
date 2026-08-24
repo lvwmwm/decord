@@ -1,37 +1,57 @@
-// Module ID: 14174
-// Function ID: 14175
+// Module ID: 14242
+// Function ID: 14243
 // Name: SensitiveContentFiltersTeenNotice
-// Dependencies: [19, 5430, 21, 5025, 14104, 1236, 4090, 1993, 5428, 5254, 2]
+// Dependencies: [19, 5435, 21, 5030, 14172, 1236, 4093, 1994, 5433, 5259, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 14174 (SensitiveContentFiltersTeenNotice)
-import "noop";
-import { SafetySettingsNoticeType } from "SafetyToastType";
-import { jsx } from "jsxProd";
+// Module 14242 (SensitiveContentFiltersTeenNotice)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14172 */;
+import { SafetySettingsNoticeType } from "SafetyToastType" /* 5435 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-let result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersNotices.tsx");
+require = arg1;
+noopAll;
+let result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersNotices.tsx");
 
 export const SensitiveContentFiltersTeenNotice = function SensitiveContentFiltersTeenNotice() {
-  let obj = _require(5025);
+  let obj = _require(5030);
   _require = obj.useSensitiveContentFilterHelpArticle();
-  obj = { label: null, labelHook: null, noticeType: null };
-  obj[0] = _require(1236).t.EUo0yj;
-  obj[1] = function labelHook() {
-    const obj = outer1_1(outer1_2[6]);
-    obj.openURL(outer1_1(outer1_2[7]).getArticleURL(closure_0));
+  obj = {
+    label: _require(1236).t.EUo0yj,
+    labelHook() {
+      const obj = closure_1_1(closure_1_2[6]);
+      obj.openURL(closure_1_1(closure_1_2[7]).getArticleURL(closure_0));
+    },
+    noticeType: SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
   };
-  obj[2] = SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE;
-  return jsx(importDefault(14104), { label: null, labelHook: null, noticeType: null });
+  return jsx(SafetySettingsNoticeDefault, {
+    label: _require(1236).t.EUo0yj,
+    labelHook() {
+      const obj = closure_1_1(closure_1_2[6]);
+      obj.openURL(closure_1_1(closure_1_2[7]).getArticleURL(closure_0));
+    },
+    noticeType: SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
+  });
 };
 export const SensitiveContentFiltersAgeVerificationNotice = function SensitiveContentFiltersAgeVerificationNotice() {
-  let obj = { label: null, labelHook: null, noticeType: null };
-  obj[0] = require(1236) /* getSystemLocale */.t.OX4ybh;
-  obj[1] = function labelHook() {
-    let obj = callback2(5428);
-    obj = { entryPoint: callback(5254).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
-    const result = obj.showAgeVerificationGetStartedModal(obj);
+  let obj = {
+    label: getSystemLocale.t.OX4ybh,
+    labelHook() {
+      let obj = callback2(5433);
+      obj = { entryPoint: callback(5259).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+      const result = obj.showAgeVerificationGetStartedModal(obj);
+    },
+    noticeType: SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
   };
-  obj[2] = SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE;
-  return jsx(importDefault(14104), { label: null, labelHook: null, noticeType: null });
+  return jsx(SafetySettingsNoticeDefault, {
+    label: getSystemLocale.t.OX4ybh,
+    labelHook() {
+      let obj = callback2(5433);
+      obj = { entryPoint: callback(5259).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+      const result = obj.showAgeVerificationGetStartedModal(obj);
+    },
+    noticeType: SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
+  });
 };

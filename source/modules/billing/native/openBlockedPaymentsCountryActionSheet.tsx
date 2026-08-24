@@ -1,14 +1,18 @@
-// Module ID: 7729
-// Function ID: 7730
+// Module ID: 7767
+// Function ID: 7768
 // Name: openBlockedPaymentsCountryActionSheet
-// Dependencies: [4342, 7730, 2007, 2]
+// Dependencies: [4346, 7768, 2008, 2]
 // Exports: default
 
-// Module 7729 (openBlockedPaymentsCountryActionSheet)
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/billing/native/openBlockedPaymentsCountryActionSheet.tsx");
+// Module 7767 (openBlockedPaymentsCountryActionSheet)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+
+const result = set.fileFinishedImporting("modules/billing/native/openBlockedPaymentsCountryActionSheet.tsx");
 
 export default function openBlockedPaymentsCountryActionSheet() {
-  importDefault(4342).hideActionSheet();
-  const obj = importDefault(4342);
-  importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(7730, dependencyMap.paths), "BlockedPaymentsCountryActionSheet");
+  ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet();
+  const obj = ACTION_SHEET_HEIGHT_HALFDefault;
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(7768, dependencyMap.paths), "BlockedPaymentsCountryActionSheet");
 };

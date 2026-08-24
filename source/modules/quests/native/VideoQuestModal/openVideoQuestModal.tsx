@@ -1,18 +1,17 @@
-// Module ID: 14476
-// Function ID: 14477
+// Module ID: 14544
+// Function ID: 14545
 // Name: openVideoQuestModal
-// Dependencies: [7453, 14470, 514, 5260, 14477, 2007, 10704, 2]
+// Dependencies: [7491, 14538, 514, 5265, 14545, 2008, 10743, 2]
 // Exports: default
 
-// Module 14476 (openVideoQuestModal)
-import initializeState from "initializeState";
+// Module 14544 (openVideoQuestModal)
+import v1All from "v1" /* 514 */;
+import closure_4 from "initializeState" /* 7491 */;
 
 const require = arg1;
-const result = require("v1").fileFinishedImporting("modules/quests/native/VideoQuestModal/openVideoQuestModal.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/VideoQuestModal/openVideoQuestModal.tsx");
 
 export default function openVideoQuestModal(questId) {
-  let initialStep;
-  let questContentPosition;
   questId = questId.questId;
   const sourceQuestContent = questId.sourceQuestContent;
   ({ questContentPosition, initialStep } = questId);
@@ -26,25 +25,25 @@ export default function openVideoQuestModal(questId) {
       }
     }
     if (null == completedAt) {
-      sourceQuestContent(14470)();
+      sourceQuestContent(14538)();
     }
   }
-  const v4Result = importAll(514).v4();
+  const v4Result = v1All.v4();
   importAll = v4Result;
-  const obj2 = importAll(514);
+  const obj2 = v1All;
   obj = {
     questId,
     questContentPosition,
     videoSessionId: v4Result,
     initialStep,
     onClose() {
-      let obj = questId(outer1_3[6]);
+      let obj = questId(closure_1_3[6]);
       obj = { questId, sourceQuestContent, videoSessionId: closure_2 };
       return obj.handleVideoQuestModalClose(obj);
     },
     sourceQuestContent
   };
-  const obj3 = sourceQuestContent(5260);
-  const tmp8 = questId(2007)(14477, dependencyMap.paths);
-  return obj3.pushLazy(tmp8, obj, questId(10704).getVideoQuestModalKey(questId));
+  const obj3 = sourceQuestContent(5265);
+  const tmp8 = questId(2008)(14545, dependencyMap.paths);
+  return obj3.pushLazy(tmp8, obj, questId(10743).getVideoQuestModalKey(questId));
 };

@@ -1,13 +1,15 @@
-// Module ID: 11232
-// Function ID: 11233
+// Module ID: 11283
+// Function ID: 11284
 // Name: getPreviewVideoAssetUrl
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 11232 (getPreviewVideoAssetUrl)
-import { Endpoints } from "ME";
+// Module 11283 (getPreviewVideoAssetUrl)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/utils/getPreviewVideoAssetUrl.tsx");
+const Endpoints = ME.Endpoints;
+const result = set.fileFinishedImporting("modules/activities/utils/getPreviewVideoAssetUrl.tsx");
 
 export default function getPreviewVideoAssetUrl(closure_7, banner_asset_id) {
   if (null != CDN_HOST) {

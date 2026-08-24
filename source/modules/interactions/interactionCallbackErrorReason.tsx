@@ -1,71 +1,73 @@
-// Module ID: 4807
-// Function ID: 4808
+// Module ID: 4812
+// Function ID: 4813
 // Name: interactionCallbackErrorReason
-// Dependencies: [4478, 4808, 1236, 2]
+// Dependencies: [4482, 4813, 1236, 2]
 // Exports: interactionCallbackErrorReason
 
-// Module 4807 (interactionCallbackErrorReason)
-import addApplication from "addApplication";
+// Module 4812 (interactionCallbackErrorReason)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import prototypeDefault from "prototype" /* 4813 */;
+import closure_3 from "addApplication" /* 4482 */;
 
-const require = arg1;
-const result = require("getSystemLocale").fileFinishedImporting("modules/interactions/interactionCallbackErrorReason.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/interactions/interactionCallbackErrorReason.tsx");
 
 export const interactionCallbackErrorReason = function interactionCallbackErrorReason(reason, applicationId) {
-  if (importDefault(4808).ReasonCodes.TIMEOUT === reason) {
+  if (prototypeDefault.ReasonCodes.TIMEOUT === reason) {
     application = application.getApplication(applicationId);
     if (null != application) {
-      const intl11 = require(1236) /* getSystemLocale */.intl;
+      const intl11 = getSystemLocale.intl;
       const obj = { applicationName: null };
       obj[0] = application.name;
-      let formatToPlainStringResult = intl11.formatToPlainString(require(1236) /* getSystemLocale */.t.u2D2Uj, obj);
+      let formatToPlainStringResult = intl11.formatToPlainString(getSystemLocale.t.u2D2Uj, obj);
     } else {
-      const intl10 = require(1236) /* getSystemLocale */.intl;
-      formatToPlainStringResult = intl10.string(require(1236) /* getSystemLocale */.t["vGU8+r"]);
+      const intl10 = getSystemLocale.intl;
+      formatToPlainStringResult = intl10.string(getSystemLocale.t["vGU8+r"]);
     }
     return formatToPlainStringResult;
-  } else if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_NOT_IN_EXPERIMENT === reason) {
-    const intl9 = require(1236) /* getSystemLocale */.intl;
-    return intl9.string(require(1236) /* getSystemLocale */.t.GyzcrS);
+  } else if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_NOT_IN_EXPERIMENT === reason) {
+    const intl9 = getSystemLocale.intl;
+    return intl9.string(getSystemLocale.t.GyzcrS);
   } else {
-    if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_VERIFICATION_LEVEL !== reason) {
-      if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_PERMISSIONS !== reason) {
-        if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_UNKNOWN_CHANNEL !== reason) {
-          if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_UNKNOWN_GUILD !== reason) {
-            if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CHANNEL_TYPE !== reason) {
-              if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CHANNEL_NO_AFK !== reason) {
-                if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_AGE_GATE === reason) {
-                  const intl6 = require(1236) /* getSystemLocale */.intl;
-                  return intl6.string(require(1236) /* getSystemLocale */.t["4WuFRE"]);
-                } else if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_INVALID_DEV_PREVIEW_GUILD_SIZE === reason) {
-                  const intl5 = require(1236) /* getSystemLocale */.intl;
-                  return intl5.string(require(1236) /* getSystemLocale */.t.RvkXdb);
+    if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_VERIFICATION_LEVEL !== reason) {
+      if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_PERMISSIONS !== reason) {
+        if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_UNKNOWN_CHANNEL !== reason) {
+          if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_UNKNOWN_GUILD !== reason) {
+            if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CHANNEL_TYPE !== reason) {
+              if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CHANNEL_NO_AFK !== reason) {
+                if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_AGE_GATE === reason) {
+                  const intl6 = getSystemLocale.intl;
+                  return intl6.string(getSystemLocale.t["4WuFRE"]);
+                } else if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_INVALID_DEV_PREVIEW_GUILD_SIZE === reason) {
+                  const intl5 = getSystemLocale.intl;
+                  return intl5.string(getSystemLocale.t.RvkXdb);
                 } else {
-                  if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CONFIGURATION_PLATFORM_NOT_SUPPORTED !== reason) {
-                    if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CONFIGURATION_PLATFORM_NOT_RELEASED !== reason) {
-                      if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_NO_ACCESS_TO_ACTIVITY === reason) {
-                        const intl3 = require(1236) /* getSystemLocale */.intl;
-                        return intl3.string(require(1236) /* getSystemLocale */.t.WjNAAA);
-                      } else if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_INVALID_LOCATION_TYPE === reason) {
-                        const intl2 = require(1236) /* getSystemLocale */.intl;
-                        return intl2.string(require(1236) /* getSystemLocale */.t.PtobXW);
-                      } else if (tmp(4808).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_REGION_FOR_APPLICATION === reason) {
-                        const intl = require(1236) /* getSystemLocale */.intl;
-                        return intl.string(require(1236) /* getSystemLocale */.t.PrHIM5);
+                  if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CONFIGURATION_PLATFORM_NOT_SUPPORTED !== reason) {
+                    if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CONFIGURATION_PLATFORM_NOT_RELEASED !== reason) {
+                      if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_NO_ACCESS_TO_ACTIVITY === reason) {
+                        const intl3 = getSystemLocale.intl;
+                        return intl3.string(getSystemLocale.t.WjNAAA);
+                      } else if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_INVALID_LOCATION_TYPE === reason) {
+                        const intl2 = getSystemLocale.intl;
+                        return intl2.string(getSystemLocale.t.PtobXW);
+                      } else if (tmp(4813).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_REGION_FOR_APPLICATION === reason) {
+                        const intl = getSystemLocale.intl;
+                        return intl.string(getSystemLocale.t.PrHIM5);
                       }
                     }
                   }
-                  const intl4 = require(1236) /* getSystemLocale */.intl;
-                  return intl4.string(require(1236) /* getSystemLocale */.t.uGDCcw);
+                  const intl4 = getSystemLocale.intl;
+                  return intl4.string(getSystemLocale.t.uGDCcw);
                 }
               }
             }
           }
         }
-        const intl7 = require(1236) /* getSystemLocale */.intl;
-        return intl7.string(require(1236) /* getSystemLocale */.t.j29zCr);
+        const intl7 = getSystemLocale.intl;
+        return intl7.string(getSystemLocale.t.j29zCr);
       }
     }
-    const intl8 = require(1236) /* getSystemLocale */.intl;
-    return intl8.string(require(1236) /* getSystemLocale */.t.hHGrWz);
+    const intl8 = getSystemLocale.intl;
+    return intl8.string(getSystemLocale.t.hHGrWz);
   }
 };

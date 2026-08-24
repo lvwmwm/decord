@@ -1,14 +1,15 @@
-// Module ID: 17060
-// Function ID: 17061
+// Module ID: 17153
+// Function ID: 17154
 // Name: AVErrorStreamSendHighPacketLossDefinition
-// Dependencies: [4652, 4558, 4531, 17058, 9668, 17055, 2]
+// Dependencies: [4658, 4563, 4536, 17151, 9707, 17148, 2]
 
-// Module 17060 (AVErrorStreamSendHighPacketLossDefinition)
-import reset from "reset";
-import initialize from "initialize";
+// Module 17153 (AVErrorStreamSendHighPacketLossDefinition)
+import isStreamKey from "isStreamKey" /* 4536 */;
+import closure_2 from "reset" /* 4658 */;
+import closure_3 from "initialize" /* 4563 */;
 
-const require = arg1;
-const result = require("isStreamKey").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamSendHighPacketLoss.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamSendHighPacketLoss.tsx");
 
 export const AVErrorStreamSendHighPacketLossDefinition = {
   getActiveErrors() {
@@ -19,7 +20,7 @@ export const AVErrorStreamSendHighPacketLossDefinition = {
     } else if (0 === obj.getViewerIds(currentUserActiveStream).length) {
       return null;
     } else {
-      rTCConnection = rTCConnection.getRTCConnection(require(4531) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
+      rTCConnection = rTCConnection.getRTCConnection(isStreamKey.encodeStreamKey(currentUserActiveStream));
       let mediaEngineConnectionId;
       if (rTCConnection != null) {
         mediaEngineConnectionId = rTCConnection.getMediaEngineConnectionId();
@@ -27,24 +28,24 @@ export const AVErrorStreamSendHighPacketLossDefinition = {
       if (null == mediaEngineConnectionId) {
         return null;
       } else {
-        let tmp8Result = tmp8(17058);
+        let tmp8Result = tmp8(17151);
         const accumulatedStatsWithMinDatapoints = tmp8Result.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
         let tmp6 = null;
         if (null != accumulatedStatsWithMinDatapoints) {
           if (10 < 100 * accumulatedStatsWithMinDatapoints.short.packetLossRate) {
             obj = { type: null };
-            obj[0] = tmp8(9668).AVError.STREAM_SEND_HIGH_PACKET_LOSS;
-            tmp8Result = tmp8(17055);
-            const merged = Object.assign(tmp8Result.getStreamErrorContext(tmp8(4531).encodeStreamKey(currentUserActiveStream)));
+            obj[0] = tmp8(9707).AVError.STREAM_SEND_HIGH_PACKET_LOSS;
+            tmp8Result = tmp8(17148);
+            const merged = Object.assign(tmp8Result.getStreamErrorContext(tmp8(4536).encodeStreamKey(currentUserActiveStream)));
             const items = [obj];
             const tmp3 = items;
-            const tmp8Result1 = tmp8(4531);
+            const tmp8Result1 = tmp8(4536);
           }
           tmp6 = tmp3;
         }
         return tmp6;
       }
-      const obj5 = require(4531) /* isStreamKey */;
+      const obj5 = isStreamKey;
     }
   },
   makeErrorContextKey(streamKey) {

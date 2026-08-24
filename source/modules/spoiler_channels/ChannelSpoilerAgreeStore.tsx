@@ -1,24 +1,26 @@
-// Module ID: 5268
-// Function ID: 5269
+// Module ID: 5273
+// Function ID: 5274
 // Name: initialize
 // Dependencies: [1218, 589, 709, 2]
 
-// Module 5268 (initialize)
-import fetchFingerprint from "fetchFingerprint";
-import { DeviceSettingsStore } from "initialize";
+// Module 5273 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "fetchFingerprint" /* 1218 */;
 
 let closure_1 = { users: {} };
+const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class ChannelSpoilerAgreeStore extends DeviceSettingsStore {
 }
 const prototype = ChannelSpoilerAgreeStore.prototype;
 prototype["initialize"] = function initialize(users) {
-  this.waitFor(fetchFingerprint);
+  this.waitFor(closure_0);
   if (null != users) {
     if (null != users.users) {
       const obj = { users: null };
       obj[0] = users.users;
     }
-    let closure_1 = { users: {} };
+    closure_1 = { users: {} };
   }
 };
 prototype["didAgree"] = function didAgree(arg0) {
@@ -48,7 +50,7 @@ prototype["getUserAgnosticState"] = function getUserAgnosticState() {
 };
 ChannelSpoilerAgreeStore.displayName = "ChannelSpoilerAgreeStore";
 ChannelSpoilerAgreeStore.persistKey = "ChannelSpoilerAgreeStore";
-const channelSpoilerAgreeStore = new ChannelSpoilerAgreeStore(require("dispatcher"), {
+const channelSpoilerAgreeStore = new ChannelSpoilerAgreeStore(dispatcherDefault, {
   CHANNEL_SPOILER_AGREE: function handleChannelSpoilerAgree(channelId) {
     const id = store.getId();
     if (null == id) {
@@ -75,6 +77,6 @@ const channelSpoilerAgreeStore = new ChannelSpoilerAgreeStore(require("dispatche
     return tmp4;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/spoiler_channels/ChannelSpoilerAgreeStore.tsx");
+const result = require("set").fileFinishedImporting("modules/spoiler_channels/ChannelSpoilerAgreeStore.tsx");
 
 export default channelSpoilerAgreeStore;

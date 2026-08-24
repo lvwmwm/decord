@@ -1,24 +1,22 @@
-// Module ID: 14020
-// Function ID: 14021
+// Module ID: 14088
+// Function ID: 14089
 // Name: _updateBadgeSettings
-// Dependencies: [5, 676, 530, 709, 8939, 1208, 2]
+// Dependencies: [5, 676, 530, 709, 8976, 1208, 2]
 // Exports: updateBadgeSettings
 
-// Module 14020 (_updateBadgeSettings)
-import module_1208 from "module_1208";
-import { Endpoints } from "ME";
+// Module 14088 (_updateBadgeSettings)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _updateBadgeSettings() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -30,7 +28,7 @@ function _updateBadgeSettings() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -62,7 +60,7 @@ function _updateBadgeSettings() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              let obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -158,7 +156,7 @@ function _updateBadgeSettings() {
     iter.next();
     return iter;
   });
-  const _updateBadgeSettings = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -167,7 +165,7 @@ function _updateBadgeSettings() {
   }
   return applyArgumentsResult;
 }
-const result = require("sendRequest").fileFinishedImporting("modules/badges/BadgeSettingsActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/badges/BadgeSettingsActionCreators.tsx");
 
 export const updateBadgeSettings = function updateBadgeSettings(arg0) {
   const self = this;

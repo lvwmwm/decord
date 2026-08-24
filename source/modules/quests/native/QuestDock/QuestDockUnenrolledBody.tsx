@@ -1,53 +1,50 @@
-// Module ID: 14548
-// Function ID: 14549
+// Module ID: 14616
+// Function ID: 14617
 // Name: QUEST_DOCK_EXPANDED_PADDING_BOTTOM
-// Dependencies: [5, 19, 17, 7453, 14445, 6716, 14447, 21, 4661, 712, 14469, 14533, 647, 14443, 10684, 1629, 10493, 10494, 14451, 10953, 6719, 7480, 14470, 10477, 14476, 10954, 14515, 14512, 10950, 14516, 4734, 1236, 1297, 10947, 2]
+// Dependencies: [5, 19, 17, 7491, 14513, 6753, 14515, 21, 4668, 712, 14537, 14601, 647, 14511, 10723, 1629, 10532, 10533, 14519, 10992, 6756, 7518, 14538, 10516, 14544, 10993, 14583, 14580, 10989, 14584, 4739, 1236, 1297, 10986, 2]
 
-// Module 14548 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
-import closure_3 from "QuestsExperimentLocations";
-import importAllResult from "useTrackQuestEventWithImpression";
-import { View } from "items";
-import initializeState from "initializeState";
-import QuestDockMode from "QuestDockMode";
-import QuestsExperimentLocations from "QuestsExperimentLocations";
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
-import jsxProd from "getQuestContentName";
-import createCacheKey from "createCacheKey";
+// Module 14616 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "initializeState" /* 7491 */;
+import closure_7 from "QuestDockMode" /* 14513 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 6753 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14515 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let closure_12;
-let metroImportAll;
-let unpackModuleId;
 const require = arg1;
 let c4 = importAllResult;
-({ QuestDockMode: metroImportAll, QuestsExperimentLocations: c9 } = QuestsExperimentLocations);
+({ QuestDockMode: closure_8, QuestsExperimentLocations: c9 } = QuestsExperimentLocations);
 const QUEST_DOCK_EXPANDED_PADDING_BOTTOM = QUEST_DOCK_COLLAPSED_HEIGHT.QUEST_DOCK_EXPANDED_PADDING_BOTTOM;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
 let obj = { wrapper: { flexGrow: 1, flexShrink: 0, justifyContent: "flex-end", paddingHorizontal: QUEST_DOCK_COLLAPSED_HEIGHT.QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM }, rewardContentWrapper: null, rewardContent: null, rewardContentCopy: null, premiumRewardPerkPill: null, titleRow: null, questDockRewardTile: null, questDockCtaWrapper: null, questDockCta: null, questDockCtaRow: null, questDockCtaSaparator: null };
-obj = { borderRadius: require("Themes").modules.mobile.QUEST_DOCK_BORDER_RADIUS, overflow: "hidden", padding: 8, paddingRight: 16 };
+obj = { borderRadius: ThemesDefault.modules.mobile.QUEST_DOCK_BORDER_RADIUS, overflow: "hidden", padding: 8, paddingRight: 16 };
 obj[1] = obj;
 obj[2] = { alignItems: "center", flexDirection: "row", gap: 16 };
 obj[3] = { flexGrow: 1, flexShrink: 1, gap: 4 };
 obj[4] = { alignSelf: "flex-start" };
-createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, flexWrap: "wrap" };
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_8, flexWrap: "wrap" };
 obj[5] = createCacheKey;
-obj[6] = { borderRadius: require("Themes").radii.lg };
+obj[6] = { borderRadius: ThemesDefault.radii.lg };
 obj[7] = { marginTop: 12, paddingHorizontal: 4, paddingTop: 16, position: "relative" };
-let obj2 = { borderRadius: require("Themes").radii.lg };
-obj[8] = { borderRadius: require("Themes").radii.round };
+let obj2 = { borderRadius: ThemesDefault.radii.lg };
+obj[8] = { borderRadius: ThemesDefault.radii.round };
 obj[9] = { alignSelf: "stretch" };
-let obj3 = { borderRadius: require("Themes").radii.round };
-obj[10] = { position: "absolute", left: -12, right: -12, top: 0, backgroundColor: require("Themes").colors.BORDER_SUBTLE, height: 1, opacity: 1 };
+let obj3 = { borderRadius: ThemesDefault.radii.round };
+obj[10] = { position: "absolute", left: -12, right: -12, top: 0, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, height: 1, opacity: 1 };
 let closure_13 = createCacheKey.createStyles(obj);
-let obj4 = { position: "absolute", left: -12, right: -12, top: 0, backgroundColor: require("Themes").colors.BORDER_SUBTLE, height: 1, opacity: 1 };
+let obj4 = { position: "absolute", left: -12, right: -12, top: 0, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, height: 1, opacity: 1 };
 const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
   let obj = questCreative(isMobileActivityQuest[10]);
   questCreative = obj.useQuestCreative();
-  let obj1 = setRestingQuestDockMode;
+  obj1 = setRestingQuestDockMode;
   const isRendered = setRestingQuestDockMode.useContext(hasWatchVideoOnMobileTasks(isMobileActivityQuest[11])).isRendered;
   const tmp5 = callback2();
   let obj2 = questCreative(isMobileActivityQuest[12]);
-  const items = [QuestDockMode];
+  const items = [closure_7];
   const stateFromStores = obj2.useStateFromStores(items, () => obj.prevRestingQuestDockMode === constants.EXPANDED);
   let obj3 = questCreative(isMobileActivityQuest[12]);
   const items1 = [trackQuestContentClickedWithImpression];
@@ -75,25 +72,25 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
   trackQuestContentClickedWithImpression = tmpResult.useTrackQuestContentClickedWithImpression();
   const items2 = [questCreative.id, hasWatchVideoOnMobileTasks, setRestingQuestDockMode, isMobileActivityQuest, launchMobileActivity, isQuestAccessSuspended, trackQuestContentClickedWithImpression];
   const callback = obj1.useCallback(launchMobileActivity(function*() {
-    let c0 = 0;
-    if (outer1_5) {
-      const obj1 = { questId: null, questContent: null, questContentCTA: null, sourceQuestContent: null };
-      obj1[0] = outer1_0.id;
-      obj1[1] = outer1_0(6719).QuestContent.QUEST_BAR_MOBILE;
-      obj1[2] = outer1_0(7480).QuestContentCTA.QUEST_ACCESS_SUSPENDED;
-      obj1[3] = outer1_0(6719).QuestContent.QUEST_BAR_MOBILE;
-      outer1_6(obj1);
-      v0(14470)();
+    c0 = 0;
+    if (closure_1_5) {
+      obj1 = { questId: null, questContent: null, questContentCTA: null, sourceQuestContent: null };
+      obj1[0] = closure_1_0.id;
+      obj1[1] = closure_1_0(6756).QuestContent.QUEST_BAR_MOBILE;
+      obj1[2] = closure_1_0(7518).QuestContentCTA.QUEST_ACCESS_SUSPENDED;
+      obj1[3] = closure_1_0(6756).QuestContent.QUEST_BAR_MOBILE;
+      closure_1_6(obj1);
+      v0(14538)();
     }
-    const obj4 = outer1_0(10477);
+    const obj4 = closure_1_0(10516);
     const obj3 = { questContentCTA: null, questContent: null, sourceQuestContent: null };
-    obj3[0] = outer1_0(7480).QuestContentCTA.ACCEPT_QUEST;
-    obj3[1] = outer1_0(6719).QuestContent.QUEST_BAR_MOBILE;
-    obj3[2] = outer1_0(6719).QuestContent.QUEST_BAR_MOBILE;
-    yield obj4.enrollInQuest(outer1_0.id, obj3);
+    obj3[0] = closure_1_0(7518).QuestContentCTA.ACCEPT_QUEST;
+    obj3[1] = closure_1_0(6756).QuestContent.QUEST_BAR_MOBILE;
+    obj3[2] = closure_1_0(6756).QuestContent.QUEST_BAR_MOBILE;
+    yield obj4.enrollInQuest(closure_1_0.id, obj3);
     if (1 === tmp4) {
       if (arg0 === 1) {
-        let dependencyMap = 3;
+        dependencyMap = 3;
         throw arg1;
       } else if (arg0 === 2) {
         dependencyMap = 3;
@@ -104,16 +101,16 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
         v0 = 2;
         dependencyMap = 1;
         const obj6 = { value: null, done: false };
-        obj6[0] = outer1_3();
+        obj6[0] = closure_1_3();
         return obj6;
       } else {
         if (v0) {
           const obj7 = { questId: null, sourceQuestContent: null };
-          obj7[0] = outer1_0.id;
-          obj7[1] = outer1_0(6719).QuestContent.QUEST_BAR_MOBILE;
-          v0(14476)(obj7);
-          outer1_4(outer1_8.COLLAPSED);
-          const tmp12 = v0(14476);
+          obj7[0] = closure_1_0.id;
+          obj7[1] = closure_1_0(6756).QuestContent.QUEST_BAR_MOBILE;
+          v0(14544)(obj7);
+          closure_1_4(closure_1_8.COLLAPSED);
+          const tmp12 = v0(14544);
         }
         dependencyMap = 3;
       }
@@ -121,7 +118,7 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
       dependencyMap = 3;
       throw arg1;
     } else if (arg0 !== 2) {
-      callback(outer1_8.COLLAPSED);
+      callback(closure_1_8.COLLAPSED);
     }
     return arg1;
   }), items2);
@@ -187,6 +184,6 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
   obj[3] = items7;
   return closure_12(tmp4Result, obj);
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockUnenrolledBody.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockUnenrolledBody.tsx");
 
 export default memoResult;

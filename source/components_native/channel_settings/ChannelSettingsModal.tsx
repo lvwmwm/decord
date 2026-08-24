@@ -1,35 +1,34 @@
-// Module ID: 16027
-// Function ID: 16028
+// Module ID: 16125
+// Function ID: 16126
 // Name: styles
-// Dependencies: [19, 17, 676, 8507, 21, 4661, 712, 16028, 1236, 10082, 15937, 16036, 16037, 16039, 16044, 16045, 16054, 16057, 16066, 16068, 16069, 16070, 16071, 16072, 2]
+// Dependencies: [19, 17, 676, 8546, 21, 4668, 712, 16126, 1236, 10121, 16034, 16134, 16135, 16137, 16142, 16143, 16152, 16155, 16164, 16166, 16167, 16168, 16169, 16170, 2]
 // Exports: getChannelSettingsScreens
 
-// Module 16027 (styles)
-import "EditLinkedLobby";
-import { View } from "WebhookItem";
-import ME from "ME";
-import { SearchTabs } from "MessageEmbedTypes";
-import { jsx } from "handleSetRegion";
-import createCacheKey from "createCacheKey";
+// Module 16125 (styles)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import { SearchTabs } from "MessageEmbedTypes" /* 8546 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
 const require = arg1;
+noopAll;
 ({ ChannelSettingsSections: c4, SearchTypes: c5, WebhookTypes: closure_6 } = ME);
 createCacheKey = { container: null, pinsScreen: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[1] = { flex: 1, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-const result = require("ME").fileFinishedImporting("components_native/channel_settings/ChannelSettingsModal.tsx");
+let obj1 = { flex: 1, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const result = require("set").fileFinishedImporting("components_native/channel_settings/ChannelSettingsModal.tsx");
 
 export const useChannelSettingsScreensStyles = createCacheKey;
 export const getChannelSettingsScreens = function getChannelSettingsScreens(channelId, arg1, channelSettingsScreensStyles) {
   const _require = channelId;
-  let closure_1 = arg1;
-  const dependencyMap = channelSettingsScreensStyles;
+  closure_1 = arg1;
+  dependencyMap = channelSettingsScreensStyles;
   obj = { [closure_4.OVERVIEW]: obj };
   obj = {
     render(autoFocusElement) {
@@ -39,30 +38,30 @@ export const getChannelSettingsScreens = function getChannelSettingsScreens(chan
         autoFocusElement = autoFocusElement.autoFocusElement;
       }
       obj[1] = autoFocusElement;
-      return outer1_8(callback(pinsScreen[7]), obj);
+      return closure_1_8(callback(pinsScreen[7]), obj);
     }
   };
   obj = { title: null, render: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.h850Ss);
   obj[1] = function render() {
-    return outer1_8(callback(pinsScreen[9]), { channelId: closure_0 });
+    return closure_1_8(callback(pinsScreen[9]), { channelId: closure_0 });
   };
   obj[constants.NOTIFICATIONS] = obj;
-  const obj1 = { title: null, render: null };
+  obj1 = { title: null, render: null };
   const intl2 = _require(1236).intl;
   obj1[0] = intl2.string(_require(1236).t["mp1N/2"]);
   obj1[1] = function render() {
-    let obj = { type: outer1_5.GUILD_CHANNEL, guildId: callback, channelId: closure_0 };
-    obj = { style: pinsScreen.pinsScreen, children: outer1_8(callback(pinsScreen[10]), obj) };
-    obj = { searchContext: obj, tab: outer1_7.PINS, isFocused: true };
-    return outer1_8(outer1_3, obj);
+    let obj = { type: closure_1_5.GUILD_CHANNEL, guildId: callback, channelId: closure_0 };
+    obj = { style: pinsScreen.pinsScreen, children: closure_1_8(callback(pinsScreen[10]), obj) };
+    obj = { searchContext: obj, tab: closure_1_7.PINS, isFocused: true };
+    return closure_1_8(closure_1_3, obj);
   };
   obj[constants.PINNED_MESSAGES] = obj1;
   obj[constants.PINNED_CHAT] = {
     postponeRender: true,
     render() {
-      return outer1_8(callback(pinsScreen[11]), { channelId: closure_0 });
+      return closure_1_8(callback(pinsScreen[11]), { channelId: closure_0 });
     }
   };
   const obj2 = { title: null, postponeRender: true, render: null };
@@ -79,7 +78,7 @@ export const getChannelSettingsScreens = function getChannelSettingsScreens(chan
     const obj = {};
     const merged = Object.assign(arg0);
     obj.channelId = closure_0;
-    return outer1_8(callback(pinsScreen[13]), obj);
+    return closure_1_8(callback(pinsScreen[13]), obj);
   };
   obj[constants.PERMISSIONS] = obj3;
   const obj4 = { title: null, postponeRender: true, render: null };
@@ -87,7 +86,7 @@ export const getChannelSettingsScreens = function getChannelSettingsScreens(chan
   obj4[0] = intl5.string(_require(1236).t.vPHdP5);
   obj4[2] = function render(arg0) {
     const merged = Object.assign(arg0);
-    return outer1_8(callback(pinsScreen[14]), { channelId: closure_0 });
+    return closure_1_8(callback(pinsScreen[14]), { channelId: closure_0 });
   };
   obj[constants.NEW_PERMISSION] = obj4;
   const obj5 = { title: null, render: null };
@@ -95,7 +94,7 @@ export const getChannelSettingsScreens = function getChannelSettingsScreens(chan
   obj5[0] = intl6.string(_require(1236).t.D4p9TR);
   obj5[1] = function render(arg0) {
     const merged = Object.assign(arg0);
-    return outer1_8(callback(pinsScreen[15]), { channelId: closure_0 });
+    return closure_1_8(callback(pinsScreen[15]), { channelId: closure_0 });
   };
   obj[constants.PERMISSION_OVERRIDES] = obj5;
   const obj6 = { title: null, render: null };
@@ -103,14 +102,14 @@ export const getChannelSettingsScreens = function getChannelSettingsScreens(chan
   obj6[0] = intl7.string(_require(1236).t.CIsNZw);
   obj6[1] = function render(arg0) {
     const merged = Object.assign(arg0);
-    return outer1_8(callback(pinsScreen[16]), { channelId: closure_0 });
+    return closure_1_8(callback(pinsScreen[16]), { channelId: closure_0 });
   };
   obj[constants.INTEGRATIONS] = obj6;
   const obj7 = { title: null, render: null };
   const intl8 = _require(1236).intl;
   obj7[0] = intl8.string(_require(1236).t.jp25Id);
   obj7[1] = function render() {
-    return outer1_8(callback(pinsScreen[17]), { channelId: closure_0, webhookType: outer1_6.INCOMING });
+    return closure_1_8(callback(pinsScreen[17]), { channelId: closure_0, webhookType: closure_1_6.INCOMING });
   };
   obj[constants.WEBHOOKS] = obj7;
   const obj8 = { title: null, render: null };
@@ -133,34 +132,34 @@ export const getChannelSettingsScreens = function getChannelSettingsScreens(chan
   const intl11 = _require(1236).intl;
   obj10[0] = intl11.string(_require(1236).t.OrV60r);
   obj10[1] = function render() {
-    return outer1_8(callback(pinsScreen[17]), { channelId: closure_0, webhookType: outer1_6.CHANNEL_FOLLOWER });
+    return closure_1_8(callback(pinsScreen[17]), { channelId: closure_0, webhookType: closure_1_6.CHANNEL_FOLLOWER });
   };
   obj[constants.CHANNELS_FOLLOWED] = obj10;
   const obj11 = { title: null, render: null };
   const intl12 = _require(1236).intl;
   obj11[0] = intl12.string(_require(1236).t["+caQHK"]);
   obj11[1] = function render() {
-    return outer1_8(callback(pinsScreen[20]), { channelId: closure_0 });
+    return closure_1_8(callback(pinsScreen[20]), { channelId: closure_0 });
   };
   obj[constants.CHANGE_CATEGORY] = obj11;
   const obj12 = { title: null, render: null };
   const intl13 = _require(1236).intl;
   obj12[0] = intl13.string(_require(1236).t["Ms8bX+"]);
   obj12[1] = function render() {
-    return outer1_8(callback(pinsScreen[21]), { channelId: closure_0 });
+    return closure_1_8(callback(pinsScreen[21]), { channelId: closure_0 });
   };
   obj[constants.CHANGE_RTC_REGION] = obj12;
   obj[constants.EDIT_FORUM_TAG] = {
     render(arg0) {
       const merged = Object.assign(arg0);
-      return outer1_8(callback(pinsScreen[22]), { channelId: closure_0 });
+      return closure_1_8(callback(pinsScreen[22]), { channelId: closure_0 });
     }
   };
   const obj13 = { title: null, render: null };
   const intl14 = _require(1236).intl;
   obj13[0] = intl14.string(_require(1236).t["kQvoC/"]);
   obj13[1] = function render() {
-    return outer1_8(callback(pinsScreen[23]), { channelId: closure_0 });
+    return closure_1_8(callback(pinsScreen[23]), { channelId: closure_0 });
   };
   obj[constants.DEFAULT_FORUM_LAYOUT] = obj13;
   return obj;

@@ -1,32 +1,33 @@
-// Module ID: 13100
-// Function ID: 13101
+// Module ID: 13156
+// Function ID: 13157
 // Name: useIsSpatialAudioAvailable
-// Dependencies: [4497, 4529, 13101, 589, 2]
+// Dependencies: [4501, 4534, 13157, 589, 2]
 // Exports: default, isSpatialAudioAvailable
 
-// Module 13100 (useIsSpatialAudioAvailable)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import { Features } from "DesktopSources";
+// Module 13156 (useIsSpatialAudioAvailable)
+import apexExperimentDefault from "apexExperiment" /* 13157 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import { Features } from "DesktopSources" /* 4534 */;
 
 const require = arg1;
-const result = require("apexExperiment").fileFinishedImporting("modules/spatial_audio/useIsSpatialAudioAvailable.tsx");
+const result = require("set").fileFinishedImporting("modules/spatial_audio/useIsSpatialAudioAvailable.tsx");
 
 export default function useIsSpatialAudioAvailable(location) {
-  let obj = importDefault(13101);
+  let obj = apexExperimentDefault;
   obj = { location };
   let enabled = obj.useConfig(obj).enabled;
-  const items = [_detectH265HardwareDecode];
+  const items = [closure_3];
   if (enabled) {
-    enabled = obj3.useStateFromStores(items, () => _detectH265HardwareDecode.supports(constants.SPATIAL_AUDIO));
+    enabled = obj3.useStateFromStores(items, () => closure_3.supports(constants.SPATIAL_AUDIO));
   }
   return enabled;
 };
 export const isSpatialAudioAvailable = function isSpatialAudioAvailable(RTCConnectionStore) {
-  let obj = importDefault(13101);
+  let obj = apexExperimentDefault;
   obj = { location: RTCConnectionStore };
   let enabled = obj.getConfig(obj).enabled;
   if (enabled) {
-    enabled = _detectH265HardwareDecode.supports(Features.SPATIAL_AUDIO);
+    enabled = closure_3.supports(Features.SPATIAL_AUDIO);
   }
   return enabled;
 };

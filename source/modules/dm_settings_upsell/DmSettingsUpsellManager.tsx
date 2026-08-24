@@ -1,13 +1,18 @@
-// Module ID: 16553
-// Function ID: 16554
+// Module ID: 16648
+// Function ID: 16649
 // Name: handleDmSettingsUpsellShow
-// Dependencies: [676, 5038, 16554, 530, 2]
+// Dependencies: [676, 5043, 16649, 530, 2]
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 16553 (handleDmSettingsUpsellShow)
-import { Endpoints } from "ME";
-import "initialize";
+// Module 16648 (handleDmSettingsUpsellShow)
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import ME from "ME" /* 676 */;
+import initializeDefault from "initialize" /* 5043 */;
+import _modDef16649 from "module_16649" /* 16649 */;
 
+const Endpoints = ME.Endpoints;
+initializeDefault;
 class DmSettingsUpsellManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -16,13 +21,13 @@ class DmSettingsUpsellManager extends tmp2 {
   }
 }
 DmSettingsUpsellManager.prototype["handleDmSettingsUpsellShow"] = function handleDmSettingsUpsellShow(guildId) {
-  const result = importDefault(16554).openDmSettingsUpsellModal(guildId.guildId);
+  const result = _modDef16649.openDmSettingsUpsellModal(guildId.guildId);
 };
 const dmSettingsUpsellManager = new DmSettingsUpsellManager();
-let result = require("module_16554").fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellManager.tsx");
+let result = set.fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellManager.tsx");
 
 export default dmSettingsUpsellManager;
 export const acknowledgeDmSettingsUpsell = function acknowledgeDmSettingsUpsell(guildId) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   return HTTP.post({ url: Endpoints.DM_SETTINGS_UPSELL_ACK(guildId), rejectWithError: false });
 };

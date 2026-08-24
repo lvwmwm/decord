@@ -1,183 +1,177 @@
-// Module ID: 10596
-// Function ID: 10597
+// Module ID: 10635
+// Function ID: 10636
 // Name: IgnoredInformationTable
-// Dependencies: [32, 19, 17, 1391, 1922, 9737, 10594, 676, 21, 4661, 712, 8933, 1236, 4332, 6286, 6291, 1297, 1629, 7139, 7159, 589, 698, 8418, 6950, 6952, 8606, 4734, 4796, 8942, 4342, 10595, 2007, 503, 4745, 9736, 1993, 4090, 2]
+// Dependencies: [32, 19, 17, 1391, 1922, 9776, 10633, 676, 21, 4668, 712, 8970, 1236, 4336, 6317, 6322, 1297, 1629, 7177, 7197, 589, 698, 8457, 6988, 6990, 8643, 4739, 4801, 8979, 4346, 10634, 2008, 503, 4750, 9775, 1994, 4093, 2]
 
-// Module 10596 (IgnoredInformationTable)
-import encodeProperties from "encodeProperties";
-import importAllResult from "QUICK_SWITCHER";
-import { View } from "useSafeAreaInsets";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { UserRemediationAction } from "ClearFriendRequestFilters";
-import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY";
-import ME from "ME";
-import jsxProd from "expandEventProperties";
-import createCacheKey from "createCacheKey";
+// Module 10635 (IgnoredInformationTable)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import registerAssetDefault from "registerAsset" /* 4336 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import registerAssetDefault2 from "registerAsset" /* 8970 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { UserRemediationAction } from "ClearFriendRequestFilters" /* 9776 */;
+import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10633 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_12;
-let closure_14;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function IgnoredInformationTable() {
-  let obj = { hasIcons: true, children: null };
-  obj[1] = items.map((icon) => {
-    let obj = { start: 0 === arg1, end: length.length - 1 === arg1, icon: null, label: null, subLabel: null, accessible: true, accessibilityLabel: null };
-    obj = { size: null, source: null };
-    obj[0] = callback(1297).Icon.Sizes.MEDIUM;
-    obj[1] = icon.icon;
-    obj[2] = callback2(callback(1297).Icon, obj);
-    obj[3] = icon.text();
-    obj[4] = icon.subtext();
-    obj[6] = icon.a11yLabel();
-    return callback2(callback(6291).TableRow, obj, arg1);
+  return callback2(TableRowGroupTitle.TableRowGroup, {
+    hasIcons: true,
+    children: items.map((icon) => {
+      let obj = { start: 0 === arg1, end: length.length - 1 === arg1, icon: null, label: null, subLabel: null, accessible: true, accessibilityLabel: null };
+      obj = { size: callback(1297).Icon.Sizes.MEDIUM, source: icon.icon };
+      obj[2] = callback2(callback(1297).Icon, obj);
+      obj[3] = icon.text();
+      obj[4] = icon.subtext();
+      obj[6] = icon.a11yLabel();
+      return callback2(callback(6322).TableRow, obj, arg1);
+    })
   });
-  return callback2(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 let c4 = importAllResult;
 ({ BLOCK_CONFIRMATION_ACTION_SHEET_KEY: c9, RESTRICTION_CONFIRMATION_ACTION_SHEET_HEIGHT: c10 } = IGNORE_CONFIRMATION_ACTION_SHEET_KEY);
 ({ AnalyticEvents: unpackModuleId, HelpdeskArticles: closure_12 } = ME);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 let obj = { button: { alignContent: "center", textAlign: "center" }, tableContainer: null, otherOptions: null, subTitle: null, title: null, container: null, header: null, avatarContainer: null, avatarIconContainer: null, avatar: null, destructiveIcon: null };
-obj = { marginBottom: require("Themes").space.PX_16 };
+obj = { marginBottom: ThemesDefault.space.PX_16 };
 obj[1] = obj;
-createCacheKey = { marginBottom: require("Themes").space.PX_24 };
+createCacheKey = { marginBottom: ThemesDefault.space.PX_24 };
 obj[2] = createCacheKey;
 obj[3] = { textAlign: "center" };
-obj[4] = { textAlign: "center", marginBottom: require("Themes").space.PX_4 };
-let obj2 = { textAlign: "center", marginBottom: require("Themes").space.PX_4 };
-obj[5] = { flex: 1, paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16 };
-let obj3 = { flex: 1, paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16 };
-obj[6] = { marginBottom: require("Themes").space.PX_16 };
-let obj4 = { marginBottom: require("Themes").space.PX_16 };
-obj[7] = { position: "relative", alignSelf: "center", marginBottom: require("Themes").space.PX_16 };
-let obj5 = { position: "relative", alignSelf: "center", marginBottom: require("Themes").space.PX_16 };
-obj[8] = { position: "absolute", bottom: -8, right: -8, padding: require("Themes").space.PX_4, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.round };
+obj[4] = { textAlign: "center", marginBottom: ThemesDefault.space.PX_4 };
+let obj2 = { textAlign: "center", marginBottom: ThemesDefault.space.PX_4 };
+obj[5] = { flex: 1, paddingHorizontal: ThemesDefault.space.PX_16, paddingTop: ThemesDefault.space.PX_16 };
+let obj3 = { flex: 1, paddingHorizontal: ThemesDefault.space.PX_16, paddingTop: ThemesDefault.space.PX_16 };
+obj[6] = { marginBottom: ThemesDefault.space.PX_16 };
+let obj4 = { marginBottom: ThemesDefault.space.PX_16 };
+obj[7] = { position: "relative", alignSelf: "center", marginBottom: ThemesDefault.space.PX_16 };
+let obj5 = { position: "relative", alignSelf: "center", marginBottom: ThemesDefault.space.PX_16 };
+obj[8] = { position: "absolute", bottom: -8, right: -8, padding: ThemesDefault.space.PX_4, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.round };
 obj[9] = { alignSelf: "center" };
-let obj6 = { position: "absolute", bottom: -8, right: -8, padding: require("Themes").space.PX_4, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.round };
-obj[10] = { color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
+let obj6 = { position: "absolute", bottom: -8, right: -8, padding: ThemesDefault.space.PX_4, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.round };
+obj[10] = { color: ThemesDefault.colors.TEXT_FEEDBACK_CRITICAL };
 let closure_15 = createCacheKey.createStyles(obj);
-let obj7 = { color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
+let obj7 = { color: ThemesDefault.colors.TEXT_FEEDBACK_CRITICAL };
 let items = [
   {
-    icon: require("registerAsset"),
+    icon: registerAssetDefault2,
     text() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.ruhGkg);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.ruhGkg);
     },
     subtext() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t["/FWKKC"]);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t["/FWKKC"]);
     },
     a11yLabel() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.QAzPrp);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.QAzPrp);
     }
   },
 ,
 
 ];
 let obj8 = {
-  icon: require("registerAsset"),
+  icon: registerAssetDefault2,
   text() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.ruhGkg);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.ruhGkg);
   },
   subtext() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["/FWKKC"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["/FWKKC"]);
   },
   a11yLabel() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.QAzPrp);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.QAzPrp);
   }
 };
 items[1] = {
-  icon: require("registerAsset"),
+  icon: registerAssetDefault2,
   text() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.N9v3eq);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.N9v3eq);
   },
   subtext() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.ddpuJg);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.ddpuJg);
   },
   a11yLabel() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.PYR8jT);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.PYR8jT);
   }
 };
 let obj9 = {
-  icon: require("registerAsset"),
+  icon: registerAssetDefault2,
   text() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.N9v3eq);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.N9v3eq);
   },
   subtext() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.ddpuJg);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.ddpuJg);
   },
   a11yLabel() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.PYR8jT);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.PYR8jT);
   }
 };
 items[2] = {
-  icon: require("registerAsset"),
+  icon: registerAssetDefault,
   text() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["4ycGE0"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["4ycGE0"]);
   },
   subtext() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["5yfN+o"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["5yfN+o"]);
   },
   a11yLabel() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["/XoqE6"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["/XoqE6"]);
   }
 };
 let obj10 = {
-  icon: require("registerAsset"),
+  icon: registerAssetDefault,
   text() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["4ycGE0"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["4ycGE0"]);
   },
   subtext() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["5yfN+o"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["5yfN+o"]);
   },
   a11yLabel() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["/XoqE6"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["/XoqE6"]);
   }
 };
 const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(userId) {
-  let c4;
-  let encodeProperties;
-  let dependencyMap;
-  let tmp3;
   userId = userId.userId;
   const channelId = userId.channelId;
-  ({ onIgnore: dependencyMap, onSuccess: encodeProperties } = userId);
+  ({ onIgnore: dependencyMap, onSuccess: closure_3 } = userId);
   let stateFromStores;
   const tmp = callback3();
   [tmp3, c4] = callback(undefined.useState(false), 2);
   const bottom = channelId(1629)().bottom;
   let tmp2 = callback(undefined.useState(false), 2);
-  const items = [channelId(7159).IGNORE_CONFIRMATION_ACTION_SHEET];
+  items = [channelId(7197).IGNORE_CONFIRMATION_ACTION_SHEET];
   let obj = userId(589);
-  const items1 = [mergeGuildAvatar];
+  const items1 = [closure_7];
   const items2 = [userId];
-  stateFromStores = obj.useStateFromStores(items1, () => outer1_7.getUser(userId), items2);
-  let obj1 = userId(589);
-  const items3 = [ensureGuildLoaded];
+  stateFromStores = obj.useStateFromStores(items1, () => closure_1_7.getUser(userId), items2);
+  obj1 = userId(589);
+  const items3 = [closure_6];
   const items4 = [channelId];
   const stateFromStores1 = obj1.useStateFromStores(items3, () => {
-    const channel = outer1_6.getChannel(channelId);
+    const channel = closure_1_6.getChannel(channelId);
     let guild_id;
     if (channel != null) {
       guild_id = channel.guild_id;
@@ -187,8 +181,8 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
   const items5 = [stateFromStores, userId];
   const effect = importAllResult.useEffect(() => {
     if (null == stateFromStores) {
-      const user = userId(outer1_2[22]).getUser(userId);
-      const obj = userId(outer1_2[22]);
+      const user = userId(closure_1_2[22]).getUser(userId);
+      const obj = userId(closure_1_2[22]);
     }
   }, items5);
   let tmp12Result = null;
@@ -224,7 +218,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     obj6[0] = tmp.avatarIconContainer;
     const obj7 = { size: null, source: null };
     obj7[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-    obj7[1] = tmp4(8606);
+    obj7[1] = tmp4(8643);
     obj6[1] = closure_13(tmp7(1297).Icon, obj7);
     items6[1] = closure_13(stateFromStores, obj6);
     obj3[1] = items6;
@@ -233,14 +227,14 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     obj8[0] = tmp.title;
     const intl = tmp7(1236).intl;
     const obj9 = { username: null };
-    obj9[0] = tmp4(4796).getName(stateFromStores1, channelId, stateFromStores);
+    obj9[0] = tmp4(4801).getName(stateFromStores1, channelId, stateFromStores);
     obj8[4] = intl.format(tmp7(1236).t["WrQD/Y"], obj9);
-    items7[1] = closure_13(tmp7(4734).Text, obj8);
+    items7[1] = closure_13(tmp7(4739).Text, obj8);
     const obj10 = { style: null, variant: "heading-md/medium", color: "text-default", accessibilityRole: "header", children: null };
     obj10[0] = tmp.subTitle;
     const intl2 = tmp7(1236).intl;
     obj10[4] = intl2.string(tmp7(1236).t.JKL1u1);
-    items7[2] = closure_13(tmp7(4734).Text, obj10);
+    items7[2] = closure_13(tmp7(4739).Text, obj10);
     obj2[1] = items7;
     const items8 = [closure_14(stateFromStores, obj2), , , ];
     const obj11 = { style: null, children: null };
@@ -255,7 +249,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     const obj14 = { icon: null, label: null, variant: "danger", subLabel: null, accessibilityLabel: null, onPress: null, arrow: true };
     const obj15 = { size: null, source: null, color: null };
     obj15[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-    obj15[1] = tmp4(8942);
+    obj15[1] = tmp4(8979);
     obj15[2] = tmp.destructiveIcon.color;
     obj14[0] = closure_13(tmp7(1297).Icon, obj15);
     const intl4 = tmp7(1236).intl;
@@ -263,19 +257,19 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     const obj16 = { variant: "text-xs/medium", color: "text-feedback-critical", children: null };
     const intl5 = tmp7(1236).intl;
     obj16[2] = intl5.string(tmp7(1236).t.NTnf1T);
-    obj14[3] = closure_13(tmp7(4734).Text, obj16);
+    obj14[3] = closure_13(tmp7(4739).Text, obj16);
     const intl6 = tmp7(1236).intl;
     obj14[4] = intl6.string(tmp7(1236).t["fZ+p9C"]);
     obj14[5] = function onPress() {
-      let obj = channelId(outer1_2[21]);
-      obj = { action: outer1_8.GOTO_BLOCK, location: "user-profile-context-menu" };
-      obj.track(outer1_11.USER_REMEDIATION_ACTION, obj);
-      const obj3 = channelId(outer1_2[29]);
-      obj = { userId, channelId, onSuccess: encodeProperties, impressionName: userId(outer1_2[32]).ImpressionNames.BLOCK_USER_CONFIRMATION };
-      obj3.openLazy(userId(outer1_2[31])(outer1_2[30], outer1_2.paths), outer1_9, obj, "replaceTopSheet");
+      let obj = channelId(closure_1_2[21]);
+      obj = { action: closure_1_8.GOTO_BLOCK, location: "user-profile-context-menu" };
+      obj.track(closure_1_11.USER_REMEDIATION_ACTION, obj);
+      const obj3 = channelId(closure_1_2[29]);
+      obj = { userId, channelId, onSuccess: closure_3, impressionName: userId(closure_1_2[32]).ImpressionNames.BLOCK_USER_CONFIRMATION };
+      obj3.openLazy(userId(closure_1_2[31])(closure_1_2[30], closure_1_2.paths), closure_1_9, obj, "replaceTopSheet");
     };
-    obj13[2] = closure_13(tmp7(6291).TableRow, obj14);
-    obj12[1] = closure_13(tmp7(6286).TableRowGroup, obj13);
+    obj13[2] = closure_13(tmp7(6322).TableRow, obj14);
+    obj12[1] = closure_13(tmp7(6317).TableRowGroup, obj13);
     items8[2] = closure_13(stateFromStores, obj12);
     const obj17 = { style: null, children: null };
     obj17[0] = tmp.button;
@@ -284,24 +278,24 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     obj18[1] = intl7.string(tmp7(1236).t.ytCpKs);
     obj18[2] = function onPress() {
       _undefined(true);
-      const obj = channelId(outer1_2[34]);
+      const obj = channelId(closure_1_2[34]);
       const tmp2 = channelId;
-      const tmp3 = outer1_2;
-      channelId(outer1_2[34]).ignoreUser(userId, channelId(outer1_2[19]).IGNORE_CONFIRMATION_ACTION_SHEET, channelId).then(() => {
-        if (encodeProperties != null) {
+      const tmp3 = closure_1_2;
+      channelId(closure_1_2[34]).ignoreUser(userId, channelId(closure_1_2[19]).IGNORE_CONFIRMATION_ACTION_SHEET, channelId).then(() => {
+        if (closure_3 != null) {
           tmp();
         }
-        outer1_1(outer1_2[29]).hideActionSheet();
+        closure_1_1(closure_1_2[29]).hideActionSheet();
       });
       if (dependencyMap != null) {
         dependencyMap();
       }
-      const ignoreUserResult = channelId(outer1_2[34]).ignoreUser(userId, channelId(outer1_2[19]).IGNORE_CONFIRMATION_ACTION_SHEET, channelId);
-      tmp2(tmp3[21]).track(outer1_11.IGNORE_USER_CONFIRMED);
+      const ignoreUserResult = channelId(closure_1_2[34]).ignoreUser(userId, channelId(closure_1_2[19]).IGNORE_CONFIRMATION_ACTION_SHEET, channelId);
+      tmp2(tmp3[21]).track(closure_1_11.IGNORE_USER_CONFIRMED);
     };
     obj18[3] = tmp3;
     obj18[4] = tmp3;
-    const items9 = [closure_13(tmp7(4745).Button, obj18), ];
+    const items9 = [closure_13(tmp7(4750).Button, obj18), ];
     const obj19 = { onPress: null, style: null, variant: "text-sm/normal", color: "text-default", children: null };
     obj19[0] = handleClose;
     const obj20 = { textAlign: "center", marginTop: null, paddingBottom: null };
@@ -311,25 +305,25 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     const intl8 = tmp7(1236).intl;
     const obj21 = { articleLink: null };
     obj21[0] = function articleLink() {
-      channelId(4342).hideActionSheet();
-      const obj = channelId(4342);
-      const articleURL = channelId(1993).getArticleURL(constants3.STEALTH_REMEDIATION_FEATURE_GUIDE);
-      const obj2 = channelId(1993);
-      channelId(4090).openURL(articleURL);
+      channelId(4346).hideActionSheet();
+      const obj = channelId(4346);
+      const articleURL = channelId(1994).getArticleURL(constants3.STEALTH_REMEDIATION_FEATURE_GUIDE);
+      const obj2 = channelId(1994);
+      channelId(4093).openURL(articleURL);
     };
     obj19[4] = intl8.format(tmp7(1236).t.iX9qtL, obj21);
-    items9[1] = closure_13(tmp7(4734).Text, obj19);
+    items9[1] = closure_13(tmp7(4739).Text, obj19);
     obj17[1] = items9;
     items8[3] = closure_14(stateFromStores, obj17);
     obj4[0] = items8;
-    obj[4] = closure_14(tmp7(6952).BottomSheetScrollView, obj4);
-    obj[1] = closure_13(tmp7(6950).BottomSheet, obj);
-    tmp12Result = tmp12(tmp7(7139).AnalyticsLocationProvider, obj);
+    obj[4] = closure_14(tmp7(6990).BottomSheetScrollView, obj4);
+    obj[1] = closure_13(tmp7(6988).BottomSheet, obj);
+    tmp12Result = tmp12(tmp7(7177).AnalyticsLocationProvider, obj);
     const tmp20 = stateFromStores1;
-    const tmp4Result = tmp4(4796);
+    const tmp4Result = tmp4(4801);
   }
   return tmp12Result;
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/relationships/native/IgnoreConfirmationActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/relationships/native/IgnoreConfirmationActionSheet.tsx");
 
 export default memoResult;

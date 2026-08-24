@@ -6,7 +6,7 @@
 // Module 1046 (observe)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.observe = (arg0, arg1) => {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -15,7 +15,7 @@ arg5.observe = (arg0, arg1) => {
     const supportedEntryTypes = globalThis.PerformanceObserver.supportedEntryTypes;
     if (supportedEntryTypes.includes(arg0)) {
       const performanceObserver = new globalThis.PerformanceObserver((arg0) => {
-        let closure_0 = arg0;
+        closure_0 = arg0;
         const resolved = Promise.resolve();
         resolved.then(() => {
           entries(entries.getEntries());

@@ -1,11 +1,11 @@
-// Module ID: 15457
-// Function ID: 15458
-// Dependencies: [19, 5280, 21, 589, 15458, 1494, 4745, 1236, 6896, 2]
+// Module ID: 15521
+// Function ID: 15522
+// Dependencies: [19, 5285, 21, 589, 15522, 1494, 4750, 1236, 6934, 2]
 
-// Module 15457
-import importAllResult from "noop";
-import handleChange from "handleChange";
-import { jsx } from "jsxProd";
+// Module 15521
+import importAllResult from "noop" /* 19 */;
+import closure_3 from "handleChange" /* 5285 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 const memoResult = importAllResult.memo((guildId) => {
@@ -28,9 +28,9 @@ const memoResult = importAllResult.memo((guildId) => {
           const obj = { animated: false, section: null, item: 0, paddingStart: null };
           obj[1] = closure_1;
           const _Math = Math;
-          obj[3] = Math.round(0.3 * outer1_0(outer1_1[5]).getWindowDimensions().height);
+          obj[3] = Math.round(0.3 * closure_1_0(closure_1_1[5]).getWindowDimensions().height);
           current.scrollToLocation(obj);
-          const obj2 = outer1_0(outer1_1[5]);
+          const obj2 = closure_1_0(closure_1_1[5]);
         }
       }, 0);
     } else {
@@ -52,6 +52,6 @@ const memoResult = importAllResult.memo((guildId) => {
   obj = { text: stringResult, icon: tmp5(guildId(section[8]).VoiceNormalIcon, { size: "sm" }), onPress: callback, variant: "secondary", size: "sm" };
   return jsx(guildId(section[6]).Button, { text: stringResult, icon: tmp5(guildId(section[8]).VoiceNormalIcon, { size: "sm" }), onPress: callback, variant: "secondary", size: "sm" });
 });
-let result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/items/ShowAllVoiceChannelsButton.tsx");
+let result = require("set").fileFinishedImporting("modules/channel_list_v2/native/items/ShowAllVoiceChannelsButton.tsx");
 
 export default memoResult;

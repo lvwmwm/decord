@@ -1,26 +1,28 @@
-// Module ID: 14164
-// Function ID: 14165
+// Module ID: 14232
+// Function ID: 14233
 // Name: route
-// Dependencies: [4030, 8198, 676, 589, 1236, 10669, 8605, 14165, 2]
+// Dependencies: [4033, 8238, 676, 589, 1236, 10708, 8642, 14233, 2]
 
-// Module 14164 (route)
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import createToggle from "createToggle";
+// Module 14232 (route)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "markAllUserIdListsStale" /* 4033 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   IconComponent: require("EyeSlashIcon").EyeSlashIcon,
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["93ZDWE"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["93ZDWE"]);
   },
   useDescription: function useAccountIgnoredUsersSettingDescription() {
-    let obj = require(589) /* initialize */;
-    const items = [markAllUserIdListsStale];
+    let obj = initialize;
+    const items = [closure_2];
     const stateFromStoresArray = obj.useStateFromStoresArray(items, () => ignoredIDs.getIgnoredIDs());
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     obj = { numberOfIgnoredUsers: stateFromStoresArray.length };
-    return intl.format(require(1236) /* getSystemLocale */.t.rXUeOl, obj);
+    return intl.format(getSystemLocale.t.rXUeOl, obj);
   },
   parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   screen: createToggle
@@ -28,10 +30,10 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.IGNORED_USERS,
   getComponent() {
-    return require(14165) /* IgnoredUsersList */.default;
+    return require(14233) /* IgnoredUsersList */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/AccountIgnoredUsersSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AccountIgnoredUsersSetting.tsx");
 
 export default createToggle;

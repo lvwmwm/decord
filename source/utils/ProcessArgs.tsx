@@ -1,16 +1,19 @@
-// Module ID: 4842
-// Function ID: 4843
+// Module ID: 4847
+// Function ID: 4848
 // Name: get
-// Dependencies: [4004, 2]
+// Dependencies: [4007, 2]
 
-// Module 4842 (get)
+// Module 4847 (get)
+import set from "set" /* 2 */;
+import setDefault from "set" /* 4007 */;
+
 let prototype;
 prototype = function ProcessArgs() {
   return Object.create(new.target.prototype);
 }.prototype;
 prototype["get"] = function get() {
   if (null == prototype.cached) {
-    const tmp4 = importDefault(4004);
+    const tmp4 = setDefault;
     let mainArgvSync;
     if (tmp4 != null) {
       const processUtils = tmp4.processUtils;
@@ -40,10 +43,10 @@ prototype["contains"] = function contains(arg0) {
   return value.includes(arg0);
 };
 prototype["isEnvVariableTrue"] = function isEnvVariableTrue(DISCORD_DISALLOW_POPUPS) {
-  if (undefined === importDefault(4004)) {
+  if (undefined === setDefault) {
     return false;
   } else {
-    const tmpResult = tmp(4004);
+    const tmpResult = setDefault;
     let tmp5;
     if (tmpResult != null) {
       const _process = tmpResult.process;
@@ -61,7 +64,7 @@ prototype["isEnvVariableTrue"] = function isEnvVariableTrue(DISCORD_DISALLOW_POP
     }
     return true;
   }
-  tmp = importDefault;
+  const tmp = importDefault;
 };
 prototype["isDisallowPopupsSet"] = function isDisallowPopupsSet() {
   const hasItem = prototype.contains("--disallow-popups");
@@ -77,6 +80,6 @@ prototype["isDiscordTestSet"] = function isDiscordTestSet() {
 prototype["isDiscordGatewayPlaintextSet"] = function isDiscordGatewayPlaintextSet() {
   return false;
 };
-const result = require("set").fileFinishedImporting("utils/ProcessArgs.tsx");
+const result = set.fileFinishedImporting("utils/ProcessArgs.tsx");
 
 export const ProcessArgs = prototype;

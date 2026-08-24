@@ -1,18 +1,19 @@
-// Module ID: 6022
-// Function ID: 6023
+// Module ID: 6053
+// Function ID: 6054
 // Name: NitroWumpusHero3dIllustration
-// Dependencies: [21, 5449, 6023, 2]
+// Dependencies: [21, 5454, 6054, 2]
 // Exports: NitroWumpusHero3dIllustration
 
-// Module 6022 (NitroWumpusHero3dIllustration)
-import { jsx } from "jsxProd";
+// Module 6053 (NitroWumpusHero3dIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6054 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusHero3dIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusHero3dIllustration.native.tsx");
 
 export const NitroWumpusHero3dIllustration = function NitroWumpusHero3dIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const NitroWumpusHero3dIllustration = function NitroWumpusHero3dIllustrat
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6023);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroWumpusHero3dIllustration = function NitroWumpusHero3dIllustrat
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

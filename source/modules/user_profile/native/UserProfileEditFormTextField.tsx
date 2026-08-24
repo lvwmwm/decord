@@ -1,22 +1,20 @@
-// Module ID: 14031
-// Function ID: 14032
+// Module ID: 14099
+// Function ID: 14100
 // Name: UserProfileEditFormTextField
-// Dependencies: [19, 21, 8092, 8071, 2]
+// Dependencies: [19, 21, 8131, 8110, 2]
 // Exports: default
 
-// Module 14031 (UserProfileEditFormTextField)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 14099 (UserProfileEditFormTextField)
+import noopAll from "noop" /* 19 */;
+import TextInput from "TextInput" /* 8110 */;
+import TextArea from "TextArea" /* 8131 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("TextArea").fileFinishedImporting("modules/user_profile/native/UserProfileEditFormTextField.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileEditFormTextField.tsx");
 
 export default function UserProfileEditFormTextField(inputRef) {
-  let containerStyle;
-  let description;
-  let errorMessage;
-  let label;
-  let numberOfLines;
   ({ errorMessage, numberOfLines } = inputRef);
   ({ label, description, containerStyle } = inputRef);
   if (numberOfLines === undefined) {
@@ -35,13 +33,13 @@ export default function UserProfileEditFormTextField(inputRef) {
     obj = { ref: null };
     obj[0] = inputRef;
     const merged2 = Object.assign(obj);
-    let tmp9 = jsx(require(8092) /* TextArea */.TextArea, { ref: null });
+    let tmp9 = jsx(TextArea.TextArea, { ref: null });
   } else {
     obj = { ref: null };
     obj[0] = inputRef;
     const merged3 = Object.assign(obj);
     obj.isClearable = true;
-    tmp9 = jsx(require(8071) /* TextInput */.TextInput, { ref: null });
+    tmp9 = jsx(TextInput.TextInput, { ref: null });
   }
   return tmp9;
 };

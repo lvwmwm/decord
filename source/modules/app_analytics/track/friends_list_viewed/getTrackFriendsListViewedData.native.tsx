@@ -1,33 +1,36 @@
-// Module ID: 15969
-// Function ID: 15970
+// Module ID: 16066
+// Function ID: 16067
 // Name: getTrackFriendsListViewedData
-// Dependencies: [11852, 5410, 5406, 5221, 4030, 676, 4066, 1403, 15970, 11853, 2]
+// Dependencies: [11901, 5415, 5411, 5226, 4033, 676, 4069, 1403, 16067, 11902, 2]
 // Exports: default
 
-// Module 15969 (getTrackFriendsListViewedData)
-import { useContactSyncStore } from "setStoredContacts";
-import initialize from "initialize";
-import recountRelationshipTypes from "recountRelationshipTypes";
-import set from "set";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import ME from "ME";
+// Module 16066 (getTrackFriendsListViewedData)
+import set from "set" /* 2 */;
+import hasFlag from "hasFlag" /* 1403 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import setStoredContacts from "setStoredContacts" /* 11901 */;
+import _uploadContacts from "_uploadContacts" /* 11902 */;
+import getFriendStatusCountsDefault from "getFriendStatusCounts" /* 16067 */;
+import closure_4 from "initialize" /* 5415 */;
+import closure_5 from "recountRelationshipTypes" /* 5411 */;
+import closure_6 from "set" /* 5226 */;
+import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import ME from "ME" /* 676 */;
 
-let c9;
-let metroImportAll;
-({ PlatformTypes: metroImportAll, FriendDiscoveryFlags: c9 } = ME);
-const result = require("recountRelationshipTypes").fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/getTrackFriendsListViewedData.native.tsx");
+const useContactSyncStore = setStoredContacts.useContactSyncStore;
+({ PlatformTypes: closure_8, FriendDiscoveryFlags: c9 } = ME);
+const result = set.fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/getTrackFriendsListViewedData.native.tsx");
 
 export default function getTrackFriendsListViewedData() {
   localAccount = localAccount.getLocalAccount(constants.CONTACTS);
-  const FriendDiscoverySettings = require(4066) /* explicitContentFromProto */.FriendDiscoverySettings;
+  const FriendDiscoverySettings = explicitContentFromProto.FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.getSetting();
-  let obj = require(1403) /* hasFlag */;
+  let obj = hasFlag;
   const hasFlagResult = obj.hasFlag(setting, constants2.FIND_BY_PHONE);
-  const obj2 = require(1403) /* hasFlag */;
+  const obj2 = hasFlag;
   suggestionCount = suggestionCount.getSuggestionCount();
-  obj = { num_friends: null };
-  obj[0] = store2.getFriendCount();
-  const merged = Object.assign(importDefault(15970)());
+  obj = { num_friends: store2.getFriendCount() };
+  const merged = Object.assign(getFriendStatusCountsDefault());
   obj.num_outgoing_requests = store2.getOutgoingCount();
   obj.num_incoming_requests = store2.getPendingCount();
   obj.num_game_friends = store.getGameFriendCount();
@@ -35,8 +38,8 @@ export default function getTrackFriendsListViewedData() {
   obj.num_game_incoming_requests = store.getPendingIncomingCount();
   obj.num_suggestions = suggestionCount;
   obj.was_dismissed = useContactSyncStore.getState().upsellCTADismissed;
-  const hasFlagResult1 = require(1403) /* hasFlag */.hasFlag(setting, constants2.FIND_BY_EMAIL);
-  obj.contact_sync_is_enabled = require(11853) /* _uploadContacts */.isContactSyncEnabled(localAccount);
+  const hasFlagResult1 = hasFlag.hasFlag(setting, constants2.FIND_BY_EMAIL);
+  obj.contact_sync_is_enabled = _uploadContacts.isContactSyncEnabled(localAccount);
   obj.is_discoverable_email = hasFlagResult1;
   obj.is_discoverable_phone = hasFlagResult;
   return obj;

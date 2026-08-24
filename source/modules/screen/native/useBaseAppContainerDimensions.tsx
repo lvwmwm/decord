@@ -1,14 +1,16 @@
-// Module ID: 4234
-// Function ID: 4235
+// Module ID: 4238
+// Function ID: 4239
 // Name: useBaseAppContainerDimensions
 // Dependencies: [19, 1494, 1629, 2]
 // Exports: default, getBaseAppContainerDimensions
 
-// Module 4234 (useBaseAppContainerDimensions)
-import noop from "noop";
+// Module 4238 (useBaseAppContainerDimensions)
+import useWindowDimensions from "useWindowDimensions" /* 1494 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1629 */;
+import closure_3 from "noop" /* 19 */;
 
-const require = arg1;
-const result = require("useSafeAreaInsets").fileFinishedImporting("modules/screen/native/useBaseAppContainerDimensions.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/screen/native/useBaseAppContainerDimensions.tsx");
 
 export default function useBaseAppContainerDimensions() {
   const size = height(left[1])();
@@ -21,12 +23,10 @@ export default function useBaseAppContainerDimensions() {
   return right.useMemo(() => ({ width: width - left - right, height }), items);
 };
 export const getBaseAppContainerDimensions = function getBaseAppContainerDimensions() {
-  let height;
-  let width;
-  let obj = require(1494) /* useWindowDimensions */;
+  let obj = useWindowDimensions;
   const windowDimensions = obj.getWindowDimensions();
   ({ width, height } = windowDimensions);
-  const rect = require(1629) /* useSafeAreaInsets */.getSafeAreaInsets();
+  const rect = useSafeAreaInsets.getSafeAreaInsets();
   obj = { width: width - rect.left - rect.right, height };
   return obj;
 };

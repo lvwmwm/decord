@@ -4,7 +4,9 @@
 // Dependencies: [1412, 574, 542, 573]
 
 // Module 1415 (isRegex)
-import callBoundIntrinsic from "callBoundIntrinsic";
+import _mod542 from "module_542" /* 542 */;
+import bind from "bind" /* 573 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 574 */;
 
 if (tmp) {
   let closure_2 = callBoundIntrinsic("RegExp.prototype.exec");
@@ -23,9 +25,9 @@ if (tmp) {
   function isRegex(obj) {
     if (obj) {
       if (typeof obj === "object") {
-        const tmp8 = require(542)(obj, "lastIndex");
+        const tmp8 = _mod542(obj, "lastIndex");
         if (tmp8) {
-          if (require(573) /* bind */(tmp8, "value")) {
+          if (bind(tmp8, "value")) {
             try {
               callback(obj, obj);
             } catch (tmp4) {

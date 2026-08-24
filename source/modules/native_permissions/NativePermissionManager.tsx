@@ -1,47 +1,54 @@
-// Module ID: 4841
-// Function ID: 4842
+// Module ID: 4846
+// Function ID: 4847
 // Name: isEnabled
-// Dependencies: [4839, 676, 4720, 500, 4842, 709, 4840, 2]
+// Dependencies: [4844, 676, 4726, 500, 4847, 709, 4845, 2]
 
-// Module 4841 (isEnabled)
-import { NativePermissionTypes } from "NativePermissionStatus";
-import { InputModes } from "ME";
-import "initialize";
+// Module 4846 (isEnabled)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+import ME from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 4726 */;
+import NativePermissionStatus from "NativePermissionStatus" /* 4844 */;
+import NativePermissionsRequestOptions from "NativePermissionsRequestOptions" /* 4845 */;
 
+const NativePermissionTypes = NativePermissionStatus.NativePermissionTypes;
+const InputModes = ME.InputModes;
+initializeDefault;
 class NativePermissionManager extends tmp2 {
 }
 const prototype = NativePermissionManager.prototype;
 prototype["isEnabled"] = function isEnabled() {
-  let isDesktopResult = require(500) /* set */.isDesktop();
+  let isDesktopResult = set2.isDesktop();
   if (isDesktopResult) {
     isDesktopResult = tmp(500).isMac();
     const tmpResult = tmp(500);
   }
   if (isDesktopResult) {
-    const ProcessArgs = tmp(4842).ProcessArgs;
+    const ProcessArgs = tmp(4847).ProcessArgs;
     isDesktopResult = !ProcessArgs.isDiscordTestSet();
   }
   return isDesktopResult;
 };
 prototype["_initialize"] = function _initialize() {
   if (this.isEnabled()) {
-    const subscription = importDefault(709).subscribe("AUDIO_SET_MODE", this.handleAudioSetMode);
-    const obj = importDefault(709);
+    const subscription = dispatcherDefault.subscribe("AUDIO_SET_MODE", this.handleAudioSetMode);
+    const obj = dispatcherDefault;
   }
 };
 prototype["_terminate"] = function _terminate() {
   if (this.isEnabled()) {
-    importDefault(709).unsubscribe("AUDIO_SET_MODE", this.handleAudioSetMode);
-    const obj = importDefault(709);
+    dispatcherDefault.unsubscribe("AUDIO_SET_MODE", this.handleAudioSetMode);
+    const obj = dispatcherDefault;
   }
 };
 prototype["handleAudioSetMode"] = function handleAudioSetMode(mode) {
   if (mode.mode === InputModes.PUSH_TO_TALK) {
-    const permission = require(4840) /* NativePermissionsRequestOptions */.default.requestPermission(NativePermissionTypes.INPUT_MONITORING);
-    const _default = require(4840) /* NativePermissionsRequestOptions */.default;
+    const permission = NativePermissionsRequestOptions.default.requestPermission(NativePermissionTypes.INPUT_MONITORING);
+    const _default = NativePermissionsRequestOptions.default;
   }
 };
 const nativePermissionManager = new NativePermissionManager();
-const result = require("initialize").fileFinishedImporting("modules/native_permissions/NativePermissionManager.tsx");
+const result = set.fileFinishedImporting("modules/native_permissions/NativePermissionManager.tsx");
 
 export default nativePermissionManager;

@@ -1,23 +1,22 @@
-// Module ID: 9382
-// Function ID: 9383
-// Dependencies: [19, 17, 21, 4661, 712, 9383, 9387, 6952, 1297, 1236, 2]
+// Module ID: 9419
+// Function ID: 9420
+// Dependencies: [19, 17, 21, 4668, 712, 9420, 9424, 6990, 1297, 1236, 2]
 
-// Module 9382
-import importAllResult from "noop";
-import { ScrollView } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9419
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { ScrollView } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: null, emptyStateImage: null };
-obj = { color: require("Themes").colors.TEXT_SUBTLE };
+obj = { color: ThemesDefault.colors.TEXT_SUBTLE };
 obj[1] = obj;
-createCacheKey = { marginBottom: require("Themes").space.PX_8, marginTop: 0 };
+createCacheKey = { marginBottom: ThemesDefault.space.PX_8, marginTop: 0 };
 obj[2] = createCacheKey;
 let closure_5 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function EmojiPickerListComponentEmpty(insetBottom) {
-  let inActionSheet;
-  let insetTop;
   ({ inActionSheet, insetTop } = insetBottom);
   insetBottom = insetBottom.insetBottom;
   const items = [insetBottom, insetTop];
@@ -44,6 +43,6 @@ const memoResult = importAllResult.memo(function EmojiPickerListComponentEmpty(i
   obj[3] = jsx(insetTop(insetBottom[8]).RefreshEmptyState, { source: searchEmptySource, body: null, bodyStyle: null, containerStyle: null, imageStyle: null });
   return <BottomSheetScrollView source={searchEmptySource} body={null} bodyStyle={null} containerStyle={null} imageStyle={null} />;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponentEmpty.tsx");
+const result = require("set").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponentEmpty.tsx");
 
 export default memoResult;

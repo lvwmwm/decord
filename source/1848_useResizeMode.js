@@ -5,10 +5,9 @@
 // Exports: useFocusedInputHandler, useGenericKeyboardHandler, useKeyboardAnimation, useKeyboardController, useKeyboardHandler, useReanimatedFocusedInput, useReanimatedKeyboardAnimation
 
 // Module 1848 (useResizeMode)
-import noop from "noop";
+import NOOP from "NOOP" /* 1847 */;
+import noop from "noop" /* 19 */;
 
-let c3;
-let obj1;
 ({ useEffect: obj1, useLayoutEffect: c3 } = noop);
 function useResizeMode() {
   callback(() => {
@@ -46,7 +45,7 @@ export const useKeyboardAnimation = () => {
       return KeyboardController.setDefaultMode();
     };
   }, []);
-  return require(1847) /* NOOP */.useKeyboardContext().animated;
+  return NOOP.useKeyboardContext().animated;
 };
 export const useReanimatedKeyboardAnimation = () => {
   if (typeof useResizeMode !== "function") {
@@ -60,11 +59,11 @@ export const useReanimatedKeyboardAnimation = () => {
       return KeyboardController.setDefaultMode();
     };
   }, []);
-  return require(1847) /* NOOP */.useKeyboardContext().reanimated;
+  return NOOP.useKeyboardContext().reanimated;
 };
 export const useGenericKeyboardHandler = function useGenericKeyboardHandler(handler, items10) {
   const _require = handler;
-  const dependencyMap = _require(1847).useKeyboardContext();
+  dependencyMap = _require(1847).useKeyboardContext();
   const obj = _require(1847);
   const obj2 = _require(1654);
   const fn = function u(eventName) {
@@ -100,7 +99,7 @@ export const useGenericKeyboardHandler = function useGenericKeyboardHandler(hand
   fn.__closure = { handler };
   fn.__workletHash = 7080794218426;
   fn.__initData = closure_5;
-  let closure_2 = _require(1654).useEvent(fn, ["onKeyboardMoveStart", "onKeyboardMove", "onKeyboardMoveEnd", "onKeyboardMoveInteractive"], obj2.useHandler(handler, items10).doDependenciesDiffer);
+  closure_2 = _require(1654).useEvent(fn, ["onKeyboardMoveStart", "onKeyboardMove", "onKeyboardMoveEnd", "onKeyboardMoveInteractive"], obj2.useHandler(handler, items10).doDependenciesDiffer);
   callback2(() => {
     keyboardHandlers.setKeyboardHandlers(closure_2);
     return () => callback();
@@ -119,7 +118,7 @@ export const useKeyboardHandler = function useKeyboardHandler(handler, items) {
     };
   }, []);
   const _require = handler;
-  let dependencyMap;
+  dependencyMap = undefined;
   callback = undefined;
   dependencyMap = _require(1847).useKeyboardContext();
   const obj = _require(1847);
@@ -164,20 +163,20 @@ export const useKeyboardHandler = function useKeyboardHandler(handler, items) {
   }, items);
 };
 export const useKeyboardController = function useKeyboardController() {
-  let obj = require(1847) /* NOOP */;
+  let obj = NOOP;
   const keyboardContext = obj.useKeyboardContext();
   obj = { setEnabled: keyboardContext.setEnabled, enabled: keyboardContext.enabled };
   return obj;
 };
 export const useReanimatedFocusedInput = function useReanimatedFocusedInput() {
-  let obj = require(1847) /* NOOP */;
+  let obj = NOOP;
   const keyboardContext = obj.useKeyboardContext();
   obj = { input: keyboardContext.layout, update: keyboardContext.update };
   return obj;
 };
 export const useFocusedInputHandler = function useFocusedInputHandler(handler, items10) {
   const _require = handler;
-  const dependencyMap = _require(1847).useKeyboardContext();
+  dependencyMap = _require(1847).useKeyboardContext();
   const obj = _require(1847);
   const obj2 = _require(1654);
   const fn = function l(eventName) {
@@ -199,7 +198,7 @@ export const useFocusedInputHandler = function useFocusedInputHandler(handler, i
   fn.__closure = { handler };
   fn.__workletHash = 16071593392303;
   fn.__initData = closure_6;
-  let closure_2 = _require(1654).useEvent(fn, ["onFocusedInputTextChanged", "onFocusedInputSelectionChanged"], obj2.useHandler(handler, items10).doDependenciesDiffer);
+  closure_2 = _require(1654).useEvent(fn, ["onFocusedInputTextChanged", "onFocusedInputSelectionChanged"], obj2.useHandler(handler, items10).doDependenciesDiffer);
   callback2(() => {
     inputHandlers.setInputHandlers(closure_2);
     return () => callback();

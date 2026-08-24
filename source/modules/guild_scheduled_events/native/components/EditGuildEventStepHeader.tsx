@@ -1,28 +1,28 @@
-// Module ID: 8872
-// Function ID: 8873
+// Module ID: 8909
+// Function ID: 8910
 // Name: EditGuildEventStepHeader
-// Dependencies: [19, 17, 21, 4661, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 4739, 2]
 // Exports: default
 
-// Module 8872 (EditGuildEventStepHeader)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8909 (EditGuildEventStepHeader)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_5 = createCacheKey.createStyles({ header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginTop: 8, marginBottom: 8 }, headerSubtitle: { textAlign: "center" } });
-const result = require("jsxProd").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventStepHeader.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventStepHeader.tsx");
 
 export default function EditGuildEventStepHeader(children) {
   const subtitle = children.subtitle;
   const tmp = callback2();
   let obj = { style: tmp.header, children: null };
   obj = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: children.title };
-  const items = [callback(require(4734) /* Text */.Text, obj), ];
+  const items = [callback(Text.Text, obj), ];
   let tmp4Result = null;
   if (null != subtitle) {
     tmp4Result = null;
@@ -30,7 +30,7 @@ export default function EditGuildEventStepHeader(children) {
       obj = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
       obj[0] = tmp.headerSubtitle;
       obj[3] = subtitle;
-      tmp4Result = callback(require(4734) /* Text */.Text, obj);
+      tmp4Result = callback(Text.Text, obj);
     }
   }
   items[1] = tmp4Result;

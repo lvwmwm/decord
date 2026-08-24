@@ -1,34 +1,23 @@
-// Module ID: 15130
-// Function ID: 15131
+// Module ID: 15194
+// Function ID: 15195
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 7383, 676, 21, 4661, 589, 8601, 6548, 7167, 8071, 2]
+// Dependencies: [5, 19, 17, 7421, 676, 21, 4668, 589, 8638, 6579, 7205, 8110, 2]
 // Exports: default
 
-// Module 15130 (ClipboardCopyInput)
-import jsxProd from "jsxProd";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import getState from "getState";
-import { AppStates } from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15194 (ClipboardCopyInput)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "getState" /* 7421 */;
+import { AppStates } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_9 = createCacheKey.createStyles({ inputContainer: { flexDirection: "column", alignSelf: "stretch" } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/mfa/native/components/ClipboardCopyInput.tsx");
+const result = require("set").fileFinishedImporting("modules/mfa/native/components/ClipboardCopyInput.tsx");
 
 export default function ClipboardCopyInput(arg0) {
-  let autoComplete;
-  let autoFocus;
-  let error;
-  let isDisabled;
-  let isValidClipboardCode;
-  let keyboardType;
-  let label;
-  let maxLength;
-  let onChangeCode;
-  let placeholder;
-  let textContentType;
   ({ label, onChangeCode, autoFocus } = arg0);
   ({ placeholder, isValidClipboardCode, maxLength, error, textContentType, autoComplete, keyboardType, isDisabled } = arg0);
   if (autoFocus === undefined) {
@@ -37,15 +26,15 @@ export default function ClipboardCopyInput(arg0) {
   let _require;
   let ref;
   let stateFromStores;
-  let c3;
+  closure_3 = undefined;
   _require = React.useRef(null);
   ref = React.useRef(null);
   let obj = _require(stateFromStores[7]);
-  const items = [getState];
+  const items = [closure_6];
   stateFromStores = obj.useStateFromStores(items, () => state.getState());
   let tmp = callback();
   const tmp5 = ref(stateFromStores[8])(isValidClipboardCode);
-  c3 = tmp5;
+  closure_3 = tmp5;
   const items1 = [stateFromStores, tmp5, ref(stateFromStores[8])(onChangeCode)];
   const effect = React.useEffect(() => {
     function _run() {
@@ -62,7 +51,7 @@ export default function ClipboardCopyInput(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -77,13 +66,13 @@ export default function ClipboardCopyInput(arg0) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_1 = tmp4;
+                closure_1 = tmp4;
                 let callback = 0;
                 callback = undefined;
                 let promise = new Promise((arg0) => setTimeout(arg0, 500));
                 c2 = 1;
                 v0 = 1;
-                let obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = promise;
                 return obj1;
               }
@@ -114,7 +103,7 @@ export default function ClipboardCopyInput(arg0) {
                 obj4[0] = arg1;
                 return obj4;
               } else {
-                obj1 = callback(outer2_2[10]);
+                obj1 = callback(closure_2_2[10]);
                 c2 = 3;
                 v0 = 1;
                 const obj5 = { value: null, done: false };
@@ -131,17 +120,17 @@ export default function ClipboardCopyInput(arg0) {
               return obj;
             } else {
               callback = arg1.trim();
-              if (callback !== outer1_0.current) {
-                outer1_0.current = outer1_0;
-                if (v0(outer1_0)) {
-                  const current = outer1_1.current;
+              if (callback !== closure_1_0.current) {
+                closure_1_0.current = closure_1_0;
+                if (v0(closure_1_0)) {
+                  const current = closure_1_1.current;
                   if (current != null) {
-                    current.setText(outer1_0);
+                    current.setText(closure_1_0);
                   }
                 }
               }
               v0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp31) {
             v0 = tmp;
@@ -149,7 +138,7 @@ export default function ClipboardCopyInput(arg0) {
           }
         }
       });
-      const _run = tmp;
+      closure_0 = tmp;
       const apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -158,7 +147,7 @@ export default function ClipboardCopyInput(arg0) {
       }
       return applyArgumentsResult;
     }
-    if (stateFromStores === outer1_7.ACTIVE) {
+    if (stateFromStores === closure_1_7.ACTIVE) {
       (function run() {
         const self = this;
         const apply = _run.apply;

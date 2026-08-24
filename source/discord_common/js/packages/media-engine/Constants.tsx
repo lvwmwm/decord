@@ -1,12 +1,15 @@
-// Module ID: 4529
-// Function ID: 4530
+// Module ID: 4534
+// Function ID: 4535
 // Name: DesktopSources
-// Dependencies: [2, 4530]
+// Dependencies: [2, 4535]
 
-// Module 4529 (DesktopSources)
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/Constants.tsx");
+// Module 4534 (DesktopSources)
+import set from "set" /* 2 */;
+import SystemServiceNotAvailableError from "SystemServiceNotAvailableError" /* 4535 */;
 
-export const DesktopSources = require("SystemServiceNotAvailableError").DesktopSources;
+const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/Constants.tsx");
+
+export const DesktopSources = SystemServiceNotAvailableError.DesktopSources;
 export const MediaEngineContextTypes = { DEFAULT: "default", STREAM: "stream" };
 export const DeviceTypes = { AUDIO_INPUT: "audioinput", AUDIO_OUTPUT: "audiooutput", VIDEO_INPUT: "videoinput" };
 export const InputModes = { PUSH_TO_TALK: "PUSH_TO_TALK", VOICE_ACTIVITY: "VOICE_ACTIVITY" };

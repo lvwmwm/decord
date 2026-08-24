@@ -1,15 +1,15 @@
-// Module ID: 7145
-// Function ID: 7146
+// Module ID: 7183
+// Function ID: 7184
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 4478, 643, 7140, 12, 1370, 589, 2]
+// Dependencies: [19, 4482, 643, 7178, 12, 1370, 589, 2]
 // Exports: default, useGetOrFetchApplication
 
-// Module 7145 (useGetOrFetchApplications)
-import noop from "noop";
-import addApplication from "addApplication";
+// Module 7183 (useGetOrFetchApplications)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "addApplication" /* 4482 */;
 
 const require = arg1;
-const result = require("shallowEqual").fileFinishedImporting("modules/applications/useGetOrFetchApplications.tsx");
+const result = require("set").fileFinishedImporting("modules/applications/useGetOrFetchApplications.tsx");
 
 export default function useGetOrFetchApplications(arg0) {
   const _require = arg0;
@@ -17,7 +17,7 @@ export default function useGetOrFetchApplications(arg0) {
   if (arg1 === undefined) {
     flag = true;
   }
-  let dependencyMap;
+  dependencyMap = undefined;
   dependencyMap = React.useRef([]);
   const items = [arg0, flag];
   const effect = React.useEffect(() => {
@@ -35,7 +35,7 @@ export default function useGetOrFetchApplications(arg0) {
       const iter = found.uniq();
     }
   }, items);
-  const items1 = [addApplication];
+  const items1 = [closure_4];
   return _require(589).useStateFromStoresArray(items1, () => items1.map((arg0) => {
     let application;
     if (null != arg0) {
@@ -58,7 +58,7 @@ export const useGetOrFetchApplication = function useGetOrFetchApplication(applic
   if (flag === undefined) {
     flag = true;
   }
-  let dependencyMap;
+  dependencyMap = undefined;
   dependencyMap = React.useRef([]);
   const items2 = [items1, flag];
   const effect = React.useEffect(() => {
@@ -76,7 +76,7 @@ export const useGetOrFetchApplication = function useGetOrFetchApplication(applic
       const iter = found.uniq();
     }
   }, items2);
-  const items3 = [addApplication];
+  const items3 = [closure_4];
   return items1(589).useStateFromStoresArray(items3, () => items1.map((arg0) => {
     let application;
     if (null != arg0) {

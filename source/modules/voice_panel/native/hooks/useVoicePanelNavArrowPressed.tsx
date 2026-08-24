@@ -1,14 +1,14 @@
-// Module ID: 16321
-// Function ID: 16322
+// Module ID: 16416
+// Function ID: 16417
 // Name: useVoicePanelNavArrowPressed
-// Dependencies: [19, 11438, 11439, 2]
+// Dependencies: [19, 11487, 11488, 2]
 // Exports: default
 
-// Module 16321 (useVoicePanelNavArrowPressed)
-import noop from "noop";
-import { VoicePanelControlsModes } from "VoicePanelControlsModes";
+// Module 16416 (useVoicePanelNavArrowPressed)
+import closure_2 from "noop" /* 19 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11487 */;
 
-const result = require("dismissPanel").fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelNavArrowPressed.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelNavArrowPressed.tsx");
 
 export default function useVoicePanelNavArrowPressed() {
   const context = dismissPanel.useContext(focused(setFocused[2]));

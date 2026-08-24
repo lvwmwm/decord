@@ -1,10 +1,13 @@
-// Module ID: 13228
-// Function ID: 13229
+// Module ID: 13283
+// Function ID: 13284
 // Name: shouldCommit
 // Dependencies: [659, 2]
 
-// Module 13228 (shouldCommit)
-const result = require("set").fileFinishedImporting("lib/StateManager.tsx");
+// Module 13283 (shouldCommit)
+import set from "set" /* 2 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
+
+const result = set.fileFinishedImporting("lib/StateManager.tsx");
 class StateManager {
   constructor() {
     flag = global;
@@ -48,8 +51,8 @@ prototype["update"] = function update() {
   const merged1 = Object.assign(obj);
   const nextState = this.getNextState(obj);
   if (flag) {
-    self.dirty = !importDefault(659)(nextState, self.getInitialState());
-    const tmp14 = importDefault(659);
+    self.dirty = !isUndefinedOrNullDefault(nextState, self.getInitialState());
+    const tmp14 = isUndefinedOrNullDefault;
   } else {
     const _Object = Object;
     const keys = Object.keys(nextState);
@@ -60,7 +63,7 @@ prototype["update"] = function update() {
         let tmp9 = importDefault;
         let tmp10 = dependencyMap;
         let tmp11 = item10021;
-        dirty = !importDefault(659)(self.state[tmp8], nextState[tmp8]);
+        dirty = !isUndefinedOrNullDefault(self.state[tmp8], nextState[tmp8]);
       }
       self.dirty = dirty;
       continue;

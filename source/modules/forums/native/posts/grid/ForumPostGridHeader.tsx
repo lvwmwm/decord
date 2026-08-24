@@ -1,28 +1,28 @@
-// Module ID: 11178
-// Function ID: 11179
+// Module ID: 11230
+// Function ID: 11231
 // Name: ForumPostGridHeader
-// Dependencies: [19, 17, 7273, 1398, 21, 4661, 11179, 11181, 11190, 11191, 11192, 2]
+// Dependencies: [19, 17, 7311, 1398, 21, 4668, 11231, 11233, 11242, 11243, 11244, 2]
 // Exports: default
 
-// Module 11178 (ForumPostGridHeader)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET";
-import { ChannelFlags } from "set";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11230 (ForumPostGridHeader)
+import noopAll from "noop" /* 19 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11231 */;
+import ForumPostUsername from "ForumPostUsername" /* 11233 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 11242 */;
+import ForumPostTitleDefault from "ForumPostTitle" /* 11244 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET" /* 7311 */;
+import { ChannelFlags } from "set" /* 1398 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles({ pinIcon: { marginEnd: 8 }, container: { display: "flex", flexDirection: "column", marginBottom: 4 }, details: { flexDirection: "row", alignItems: "center", marginBottom: 4 }, timestampText: { flex: 1 } });
-const result = require("FORUM_GUIDELINES_ACTION_SHEET").fileFinishedImporting("modules/forums/native/posts/grid/ForumPostGridHeader.tsx");
+const result = require("set").fileFinishedImporting("modules/forums/native/posts/grid/ForumPostGridHeader.tsx");
 
 export default function ForumPostGridHeader(arg0) {
-  let hasUnreads;
-  let isNew;
-  let thread;
   ({ thread, hasUnreads, isNew } = arg0);
   const tmp = callback2();
   let hasFlagResult = thread.hasFlag(ChannelFlags.PINNED);
@@ -31,15 +31,15 @@ export default function ForumPostGridHeader(arg0) {
   if (hasFlagResult) {
     obj = { containerStyle: null };
     obj[0] = tmp.pinIcon;
-    hasFlagResult = callback(importDefault(11179), obj);
+    hasFlagResult = callback(ForumPostPinIconDefault, obj);
   }
-  const items = [hasFlagResult, callback(require(11181) /* ForumPostUsername */.ForumPostAuthor, { thread, hasUnreads }), callback(importDefault(11190), { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText }), ];
+  const items = [hasFlagResult, callback(ForumPostUsername.ForumPostAuthor, { thread, hasUnreads }), callback(ForumPostTimestampDefault, { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText }), ];
   if (isNew) {
-    isNew = tmp8(tmp10(11191), {});
+    isNew = tmp8(tmp10(11243), {});
   }
   items[3] = isNew;
   obj[1] = items;
-  const items1 = [closure_7(View, obj), callback(importDefault(11192), { title: thread.name, hasUnreads })];
+  const items1 = [closure_7(View, obj), callback(ForumPostTitleDefault, { title: thread.name, hasUnreads })];
   obj[1] = items1;
   return closure_7(View, obj);
 };

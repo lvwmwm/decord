@@ -1,12 +1,12 @@
-// Module ID: 4238
-// Function ID: 4239
+// Module ID: 4242
+// Function ID: 4243
 // Name: set
-// Dependencies: [19, 4115, 2]
+// Dependencies: [19, 4119, 2]
 // Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener, useIsScreenIndexFrozenSharedValue
 
-// Module 4238 (set)
-import noop from "noop";
-import set from "set";
+// Module 4242 (set)
+import closure_2 from "noop" /* 19 */;
+import set from "set" /* 2 */;
 
 const require = arg1;
 let set = new Set();
@@ -25,10 +25,10 @@ export const isScreenIndexFrozen = function isScreenIndexFrozen(arg0) {
   return set.has(arg0);
 };
 export const addFrozenScreenIndexesChangedListener = function addFrozenScreenIndexesChangedListener(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   set1.add(arg0);
   return () => {
-    outer1_4.delete(fn);
+    closure_1_4.delete(fn);
   };
 };
 export const removeFrozenScreenIndexesChangedListener = function removeFrozenScreenIndexesChangedListener(arg0) {
@@ -40,11 +40,11 @@ export const useIsScreenIndexFrozenSharedValue = function useIsScreenIndexFrozen
   const items = [arg0, sharedValue];
   const effect = React.useEffect(() => {
     const fn = () => {
-      const result = closure_1.set(outer1_3.has(fn));
+      const result = closure_1.set(closure_1_3.has(fn));
     };
-    outer1_4.add(fn);
+    closure_1_4.add(fn);
     return () => {
-      outer1_4.delete(fn);
+      closure_1_4.delete(fn);
     };
   }, items);
   return sharedValue;

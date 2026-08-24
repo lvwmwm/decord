@@ -1,20 +1,26 @@
-// Module ID: 4829
-// Function ID: 4830
+// Module ID: 4834
+// Function ID: 4835
 // Name: cancel
-// Dependencies: [652, 4830, 12, 4834, 514, 2]
+// Dependencies: [652, 4835, 12, 4839, 514, 2]
 // Exports: isResolvedUpload
 
-// Module 4829 (cancel)
-import { EventEmitter } from "EventEmitter";
+// Module 4834 (cancel)
+import set from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+import v1 from "v1" /* 514 */;
+import EventEmitter2 from "EventEmitter" /* 652 */;
+import items from "items" /* 4835 */;
+import getUploadFileSizeSumAll from "getUploadFileSizeSum" /* 4839 */;
 
 let obj = { REACT_NATIVE: 0, [0]: "REACT_NATIVE", WEB: 1, [1]: "WEB" };
+const EventEmitter = EventEmitter2.EventEmitter;
 class Upload extends EventEmitter {
   constructor(arg0) {
     tmp5 = new Upload(tmp4, tmp3, tmp2, tmp);
     // ThrowIfThisInitialized (0x7c)
     tmp5.allowOptimization = true;
     tmp5.item = global;
-    if (global.platform === __esModule.REACT_NATIVE) {
+    if (global.platform === closure_4.REACT_NATIVE) {
       uri = global.id;
       tmp10 = null;
       if (uri == null) {
@@ -68,7 +74,7 @@ prototype["cancel"] = function cancel() {
 prototype["resetState"] = function resetState() {
   return this;
 };
-const result = require("apply").fileFinishedImporting("lib/uploader/Upload.tsx");
+const result = set.fileFinishedImporting("lib/uploader/Upload.tsx");
 
 export default Upload;
 export const UploadPlatform = obj;

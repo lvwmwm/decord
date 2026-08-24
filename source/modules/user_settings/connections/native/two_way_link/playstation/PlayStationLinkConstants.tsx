@@ -1,9 +1,11 @@
-// Module ID: 9782
-// Function ID: 9783
+// Module ID: 9821
+// Function ID: 9822
 // Name: PlayStationLinkModalScenes
 // Dependencies: [2]
 
-// Module 9782 (PlayStationLinkModalScenes)
-const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkConstants.tsx");
+// Module 9821 (PlayStationLinkModalScenes)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkConstants.tsx");
 
 export const PlayStationLinkModalScenes = { LANDING: "landing", PRE_CONNECT: "pre-connect", DISCORD_CONSENT: "discord-consent", SUCCESS: "success", ERROR: "error" };

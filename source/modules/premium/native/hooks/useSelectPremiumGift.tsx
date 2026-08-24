@@ -1,15 +1,15 @@
-// Module ID: 10298
-// Function ID: 10299
+// Module ID: 10337
+// Function ID: 10338
 // Name: useSelectPremiumGift
-// Dependencies: [5, 19, 1500, 9625, 10299, 4039, 5322, 4656, 1236, 10296, 2]
+// Dependencies: [5, 19, 1500, 9662, 10338, 4042, 5327, 4662, 1236, 10335, 2]
 // Exports: useSelectPremiumGift
 
-// Module 10298 (useSelectPremiumGift)
-import getPremiumPlanItem from "getPremiumPlanItem";
-import noop from "noop";
+// Module 10337 (useSelectPremiumGift)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("useNavigation").fileFinishedImporting("modules/premium/native/hooks/useSelectPremiumGift.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/hooks/useSelectPremiumGift.tsx");
 
 export const useSelectPremiumGift = function useSelectPremiumGift(PremiumGiftPlanSelect) {
   let navigation = _require(recipientUserId[2]).useNavigation();
@@ -24,10 +24,10 @@ export const useSelectPremiumGift = function useSelectPremiumGift(PremiumGiftPla
   const createOrReuseGiftOrder = _require(recipientUserId[4]).useCreateOrReuseGiftOrder(PremiumGiftPlanSelect);
   _require = undefined;
   _require = planInterval((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
+    c3 = 0;
     return (function*(arg0) {
       if (v02 === 2) {
         v02 = 3;
@@ -40,7 +40,7 @@ export const useSelectPremiumGift = function useSelectPremiumGift(PremiumGiftPla
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -55,17 +55,17 @@ export const useSelectPremiumGift = function useSelectPremiumGift(PremiumGiftPla
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_2 = tmp3;
-              let closure_1 = tmp7;
+              closure_2 = tmp3;
+              closure_1 = tmp7;
               let navigation;
               v0(undefined);
-              outer1_1(navigation);
+              closure_1_1(navigation);
               const planIdForPremiumType = navigation(recipientUserId[5]).getPlanIdForPremiumType(navigation, c3);
               const obj8 = navigation(recipientUserId[5]);
               c3 = 1;
-              let obj1 = { planId: null, recipientUserId: null, productId: null };
+              obj1 = { planId: null, recipientUserId: null, productId: null };
               obj1[0] = planIdForPremiumType;
-              obj1[1] = outer1_2;
+              obj1[1] = closure_1_2;
               obj1[2] = navigation(recipientUserId[6]).getProductIdForGift(planIdForPremiumType);
               v0 = 2;
               v02 = 1;
@@ -101,7 +101,7 @@ export const useSelectPremiumGift = function useSelectPremiumGift(PremiumGiftPla
             v0(navigation);
             navigation.navigate(navigation(recipientUserId[9]).PremiumGiftScreens.CUSTOMIZATION);
             v02 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp29) {
           if (tmp4 === c3) {

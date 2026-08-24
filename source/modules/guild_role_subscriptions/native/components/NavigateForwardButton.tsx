@@ -1,36 +1,37 @@
-// Module ID: 14567
-// Function ID: 14568
+// Module ID: 14635
+// Function ID: 14636
 // Name: NavigateForwardButton
-// Dependencies: [19, 21, 4661, 712, 5433, 4734, 1297, 14568, 2]
+// Dependencies: [19, 21, 4668, 712, 5438, 4739, 1297, 14636, 2]
 // Exports: default
 
-// Module 14567 (NavigateForwardButton)
-import "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14635 (NavigateForwardButton)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import registerAssetDefault from "registerAsset" /* 14636 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 createCacheKey = { container: null, text: null };
-createCacheKey = { alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, flexDirection: "row", padding: 16 };
+createCacheKey = { alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL, flexDirection: "row", padding: 16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexGrow: 1 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createCacheKey").fileFinishedImporting("modules/guild_role_subscriptions/native/components/NavigateForwardButton.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/NavigateForwardButton.tsx");
 
 export default function NavigateForwardButton(arg0) {
-  let onPress;
-  let text;
   ({ onPress, text } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { style: tmp.container, onPress, children: null };
   obj = { style: tmp.text, variant: "text-md/semibold", color: "interactive-text-active", children: text };
-  const items = [callback(require(4734) /* Text */.Text, obj), ];
-  obj = { source: null };
-  obj[0] = importDefault(14568);
-  items[1] = callback(require(1297) /* Button */.Icon, obj);
+  const items = [callback(Text.Text, obj), ];
+  obj = { source: registerAssetDefault };
+  items[1] = callback(Button.Icon, obj);
   obj[2] = items;
-  return callback2(require(5433) /* PressableBase */.PressableHighlight, obj);
+  return callback2(PressableBase.PressableHighlight, obj);
 };

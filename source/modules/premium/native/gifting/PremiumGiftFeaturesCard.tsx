@@ -1,117 +1,114 @@
-// Module ID: 10303
-// Function ID: 10304
+// Module ID: 10342
+// Function ID: 10343
 // Name: PremiumGiftPlanSelectPromotionDetails
-// Dependencies: [32, 19, 17, 7628, 1924, 505, 21, 712, 4661, 6782, 589, 7931, 10304, 9328, 10305, 10306, 9629, 5449, 8400, 10307, 9332, 9330, 4734, 1236, 9337, 4745, 4104, 4756, 10309, 2]
+// Dependencies: [32, 19, 17, 7666, 1924, 505, 21, 712, 4668, 6819, 589, 7970, 10343, 9365, 10344, 10345, 9668, 5454, 8439, 10346, 9369, 9367, 4739, 1236, 9374, 4750, 4107, 4761, 10348, 2]
 
-// Module 10303 (PremiumGiftPlanSelectPromotionDetails)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "module_10307";
-import { View } from "preload";
-import createEmptyPromotionsByType from "createEmptyPromotionsByType";
-import GuildFeatures from "GuildFeatures";
-import { Fonts } from "sum";
-import jsxProd from "PremiumFeaturesLogo";
-import createCacheKey from "createCacheKey";
+// Module 10342 (PremiumGiftPlanSelectPromotionDetails)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ManaContext from "ManaContext" /* 4107 */;
+import Button from "Button" /* 4750 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import createTextStyleDefault from "createTextStyle" /* 6819 */;
+import usePremiumFeaturesDefault from "usePremiumFeatures" /* 9365 */;
+import useThemeAndReducedMotionAwareAssetUrl from "useThemeAndReducedMotionAwareAssetUrl" /* 10343 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10344 */;
+import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10345 */;
+import AnimatedImageDefault from "AnimatedImage" /* 10348 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "createEmptyPromotionsByType" /* 7666 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import { Fonts } from "sum" /* 505 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let closure_12;
-let error;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function PremiumGiftPlanSelectPromotionDetails(config) {
-  let isSelected;
-  let onPress;
   config = config.config;
   ({ isSelected, onPress } = config);
-  let obj = require(10304) /* useThemeAndReducedMotionAwareAssetUrl */;
+  obj = useThemeAndReducedMotionAwareAssetUrl;
   const themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(config.avatarAsset, true);
   obj = { theme: "dark", children: null };
   obj = { style: callback4(config.isLargeSize).promotionDetailsContainer, colors: [4294967102, 4294967053], children: null };
   const tmp = callback4(config.isLargeSize);
-  const items = [callback2(importDefault(10309), { imageUrl: themeAndReducedMotionAwareAssetUrl, title: config.header, subtitle: config.mobileBody, shouldAnimate: isSelected }), ];
-  const obj2 = { variant: "primary-overlay", text: null, onPress: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj2[1] = intl.string(require(1236) /* getSystemLocale */.t.Ve9Ge6);
+  const items = [callback2(AnimatedImageDefault, { imageUrl: themeAndReducedMotionAwareAssetUrl, title: config.header, subtitle: config.mobileBody, shouldAnimate: isSelected }), ];
+  obj2 = { variant: "primary-overlay", text: null, onPress: null };
+  const intl = getSystemLocale.intl;
+  obj2[1] = intl.string(getSystemLocale.t.Ve9Ge6);
   obj2[2] = onPress;
-  items[1] = callback2(require(4745) /* Button */.Button, obj2);
+  items[1] = callback2(Button.Button, obj2);
   obj[2] = items;
-  obj[1] = callback3(importDefault(4756), obj);
-  return callback2(require(4104) /* ManaContext */.ThemeContextProvider, obj);
+  obj[1] = callback3(LinearGradientDefault, obj);
+  return callback2(ManaContext.ThemeContextProvider, obj);
 }
 let c4 = importAllResult;
-({ PremiumTypes: error, SubscriptionIntervalTypes: metroImportAll } = GuildFeatures);
+({ PremiumTypes: error, SubscriptionIntervalTypes: closure_8 } = GuildFeatures);
 ({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
 let obj = { default: null, compact: null, smallCompact: null };
-obj = { paddingVertical: require("Themes").space.PX_8 };
+obj = { paddingVertical: ThemesDefault.space.PX_8 };
 obj[0] = obj;
-obj[1] = { paddingVertical: require("Themes").space.PX_4 };
+obj[1] = { paddingVertical: ThemesDefault.space.PX_4 };
 obj[2] = { paddingVertical: 2 };
 let obj2 = { default: null, compact: null, smallCompact: null };
-let obj1 = { paddingVertical: require("Themes").space.PX_4 };
-obj2[0] = { marginTop: require("Themes").space.PX_24 };
-let obj3 = { marginTop: require("Themes").space.PX_24 };
-obj2[1] = { marginTop: require("Themes").space.PX_12 };
-let obj4 = { marginTop: require("Themes").space.PX_12 };
-obj2[2] = { marginTop: require("Themes").space.PX_8 };
+let obj1 = { paddingVertical: ThemesDefault.space.PX_4 };
+obj2[0] = { marginTop: ThemesDefault.space.PX_24 };
+let obj3 = { marginTop: ThemesDefault.space.PX_24 };
+obj2[1] = { marginTop: ThemesDefault.space.PX_12 };
+let obj4 = { marginTop: ThemesDefault.space.PX_12 };
+obj2[2] = { marginTop: ThemesDefault.space.PX_8 };
 let obj6 = { default: null, compact: null, smallCompact: null };
-let obj5 = { marginTop: require("Themes").space.PX_8 };
-obj6[0] = { marginTop: require("Themes").space.PX_8 };
-let obj7 = { marginTop: require("Themes").space.PX_8 };
-obj6[1] = { marginTop: require("Themes").space.PX_12 };
-let obj8 = { marginTop: require("Themes").space.PX_12 };
-obj6[2] = { marginTop: require("Themes").space.PX_8 };
+let obj5 = { marginTop: ThemesDefault.space.PX_8 };
+obj6[0] = { marginTop: ThemesDefault.space.PX_8 };
+let obj7 = { marginTop: ThemesDefault.space.PX_8 };
+obj6[1] = { marginTop: ThemesDefault.space.PX_12 };
+let obj8 = { marginTop: ThemesDefault.space.PX_12 };
+obj6[2] = { marginTop: ThemesDefault.space.PX_8 };
 let obj10 = { default: null, compact: null, smallCompact: null };
-let obj9 = { marginTop: require("Themes").space.PX_8 };
-obj10[0] = { marginTop: require("Themes").space.PX_24 };
-let obj11 = { marginTop: require("Themes").space.PX_24 };
-obj10[1] = { marginTop: require("Themes").space.PX_12 };
-let obj12 = { marginTop: require("Themes").space.PX_12 };
-obj10[2] = { marginTop: require("Themes").space.PX_8 };
+let obj9 = { marginTop: ThemesDefault.space.PX_8 };
+obj10[0] = { marginTop: ThemesDefault.space.PX_24 };
+let obj11 = { marginTop: ThemesDefault.space.PX_24 };
+obj10[1] = { marginTop: ThemesDefault.space.PX_12 };
+let obj12 = { marginTop: ThemesDefault.space.PX_12 };
+obj10[2] = { marginTop: ThemesDefault.space.PX_8 };
 let closure_17 = createCacheKey.createStyles(() => {
-  let obj = { promotional: null, card: null, logo: null, promotionalLogo: null, promotionalLogoSingleLine: null, promotionalLogoSmallCompact: null, pricing: null, featureTitle: null, features: null, button: null, promotionalButton: null, featureIcon: null, featureText: null, promotionalCardImage: null, promotionalBackground: null, promotionDetailsContainer: null };
-  obj = { overflow: "hidden", borderRadius: importDefault(712).radii.sm };
+  obj = { promotional: null, card: null, logo: null, promotionalLogo: null, promotionalLogoSingleLine: null, promotionalLogoSmallCompact: null, pricing: null, featureTitle: null, features: null, button: null, promotionalButton: null, featureIcon: null, featureText: null, promotionalCardImage: null, promotionalBackground: null, promotionDetailsContainer: null };
+  obj = { overflow: "hidden", borderRadius: ThemesDefault.radii.sm };
   obj[0] = obj;
-  obj = { justifyContent: "flex-start", borderRadius: importDefault(712).radii.sm, backgroundColor: importDefault(712).colors.BG_SURFACE_RAISED };
-  const merged = Object.assign(importDefault(712).shadows.SHADOW_LOW);
+  obj = { justifyContent: "flex-start", borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BG_SURFACE_RAISED };
+  const merged = Object.assign(ThemesDefault.shadows.SHADOW_LOW);
   obj[1] = obj;
-  obj[2] = { marginTop: importDefault(712).space.PX_40, marginStart: importDefault(712).space.PX_24 };
-  const obj1 = { marginTop: importDefault(712).space.PX_40, marginStart: importDefault(712).space.PX_24 };
-  obj[3] = { marginTop: importDefault(712).space.PX_24 };
-  const obj2 = { marginTop: importDefault(712).space.PX_24 };
-  obj[4] = { marginTop: importDefault(712).space.PX_32 };
+  obj[2] = { marginTop: ThemesDefault.space.PX_40, marginStart: ThemesDefault.space.PX_24 };
+  obj1 = { marginTop: ThemesDefault.space.PX_40, marginStart: ThemesDefault.space.PX_24 };
+  obj[3] = { marginTop: ThemesDefault.space.PX_24 };
+  obj2 = { marginTop: ThemesDefault.space.PX_24 };
+  obj[4] = { marginTop: ThemesDefault.space.PX_32 };
   obj[5] = { marginTop: 18 };
-  const obj3 = { marginTop: importDefault(712).space.PX_32 };
-  obj[6] = { maxWidth: 140, marginStart: importDefault(712).space.PX_24 };
-  const obj4 = { maxWidth: 140, marginStart: importDefault(712).space.PX_24 };
-  obj[7] = { marginStart: importDefault(712).space.PX_24 };
-  const obj5 = { marginStart: importDefault(712).space.PX_24 };
-  obj[8] = { marginTop: importDefault(712).space.PX_8, marginHorizontal: importDefault(712).space.PX_24 };
-  const obj6 = { marginTop: importDefault(712).space.PX_8, marginHorizontal: importDefault(712).space.PX_24 };
-  obj[9] = { marginHorizontal: importDefault(712).space.PX_24, marginBottom: importDefault(712).space.PX_24 };
-  const obj7 = { marginHorizontal: importDefault(712).space.PX_24, marginBottom: importDefault(712).space.PX_24 };
-  obj[10] = { marginTop: importDefault(712).space.PX_12 };
+  const obj3 = { marginTop: ThemesDefault.space.PX_32 };
+  obj[6] = { maxWidth: 140, marginStart: ThemesDefault.space.PX_24 };
+  const obj4 = { maxWidth: 140, marginStart: ThemesDefault.space.PX_24 };
+  obj[7] = { marginStart: ThemesDefault.space.PX_24 };
+  const obj5 = { marginStart: ThemesDefault.space.PX_24 };
+  obj[8] = { marginTop: ThemesDefault.space.PX_8, marginHorizontal: ThemesDefault.space.PX_24 };
+  obj6 = { marginTop: ThemesDefault.space.PX_8, marginHorizontal: ThemesDefault.space.PX_24 };
+  obj[9] = { marginHorizontal: ThemesDefault.space.PX_24, marginBottom: ThemesDefault.space.PX_24 };
+  const obj7 = { marginHorizontal: ThemesDefault.space.PX_24, marginBottom: ThemesDefault.space.PX_24 };
+  obj[10] = { marginTop: ThemesDefault.space.PX_12 };
   obj[11] = { width: 24, height: 24 };
   const obj9 = {};
-  const obj8 = { marginTop: importDefault(712).space.PX_12 };
-  const merged1 = Object.assign(importDefault(6782)(Fonts.PRIMARY_NORMAL, importDefault(712).colors.WHITE, 16));
+  const obj8 = { marginTop: ThemesDefault.space.PX_12 };
+  const merged1 = Object.assign(createTextStyleDefault(Fonts.PRIMARY_NORMAL, ThemesDefault.colors.WHITE, 16));
   obj9.marginStart = -8;
   obj[12] = obj9;
   obj[13] = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 };
   obj[14] = { position: "absolute", height: 300, width: 150, right: 0 };
-  const tmp2 = importDefault(6782);
-  obj[15] = { marginHorizontal: importDefault(712).space.PX_24, marginTop: importDefault(712).space.PX_20, marginBottom: importDefault(712).space.PX_32, padding: importDefault(712).space.PX_12, gap: importDefault(712).space.PX_12, borderRadius: importDefault(712).radii.sm };
+  const tmp2 = createTextStyleDefault;
+  obj[15] = { marginHorizontal: ThemesDefault.space.PX_24, marginTop: ThemesDefault.space.PX_20, marginBottom: ThemesDefault.space.PX_32, padding: ThemesDefault.space.PX_12, gap: ThemesDefault.space.PX_12, borderRadius: ThemesDefault.radii.sm };
   return obj;
 });
-let obj13 = { marginTop: require("Themes").space.PX_8 };
+let obj13 = { marginTop: ThemesDefault.space.PX_8 };
 const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant) {
-  let c0;
-  let claimableRewards;
-  let isSelected;
-  let onPress;
-  let premiumType;
-  let style;
-  let tmp18;
   ({ premiumType, onPress, style, claimableRewards, isSelected } = variant);
   if (isSelected === undefined) {
     isSelected = true;
@@ -122,8 +119,8 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
   }
   const merged = Object.assign(variant, Object.create(null));
   let _require;
-  let obj = _require(589);
-  const items = [createEmptyPromotionsByType];
+  obj = _require(589);
+  const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => {
     marketingComponentByType = marketingComponentByType.getMarketingComponentByType(_undefined(table[11]).MarketingComponentType.GIFT_PLAN_SELECTION_CARD_BANNER);
     let prop = null;
@@ -135,7 +132,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
     }
     return prop;
   });
-  let obj1 = _require(10304);
+  obj1 = _require(10343);
   let cardAsset;
   if (stateFromStores != null) {
     cardAsset = stateFromStores.cardAsset;
@@ -145,20 +142,20 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
   if (stateFromStores != null) {
     backgroundAsset = stateFromStores.backgroundAsset;
   }
-  const themeAndReducedMotionAwareAssetUrl1 = _require(10304).useThemeAndReducedMotionAwareAssetUrl(backgroundAsset);
+  const themeAndReducedMotionAwareAssetUrl1 = _require(10343).useThemeAndReducedMotionAwareAssetUrl(backgroundAsset);
   let tmp9 = null != claimableRewards;
   if (tmp9) {
     tmp9 = 1 === claimableRewards.length;
   }
   const tmp10 = callback4(tmp9);
-  const tmp2Result = _require(10304);
-  const tmp12 = importDefault(9328)(premiumType);
-  const tmp13 = importDefault(10305)(premiumType, constants.MONTH);
-  let enabled = importDefault(10306)(premiumType) && null != claimableRewards;
+  const tmp2Result = _require(10343);
+  const tmp12 = usePremiumFeaturesDefault(premiumType);
+  const tmp13 = usePremiumProductPricingStringDefault(premiumType, constants.MONTH);
+  let enabled = useShouldShowGiftingPromotionDecoDefault(premiumType) && null != claimableRewards;
   if (enabled) {
     enabled = claimableRewards.length > 0;
   }
-  let tmp11Result = tmp11(9629);
+  let tmp11Result = tmp11(9668);
   const config = tmp11Result.useConfig({ location: "PremiumGiftFeaturesCard" });
   let promotionalButton = enabled;
   if (enabled) {
@@ -171,7 +168,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
   if (promotionalButton) {
     tmp16 = null != themeAndReducedMotionAwareAssetUrl;
   }
-  const tmp14 = importDefault(10305)(premiumType, constants.YEAR);
+  const tmp14 = usePremiumProductPricingStringDefault(premiumType, constants.YEAR);
   [tmp18, c0] = callback(importAllResult.useState(0), 2);
   const items1 = [tmp10.card, style, ];
   let promotional = promotionalButton;
@@ -190,12 +187,12 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
     obj1 = { uri: null };
     obj1[0] = themeAndReducedMotionAwareAssetUrl;
     obj[2] = obj1;
-    tmp22 = callback2(tmp11(5449), obj);
+    tmp22 = callback2(tmp11(5454), obj);
   }
   const items2 = [tmp22, ];
-  const obj2 = { premiumType, opacity: null, style: null };
+  obj2 = { premiumType, opacity: null, style: null };
   let num3 = 1;
-  tmp11Result = tmp11(8400);
+  tmp11Result = tmp11(8439);
   if (tmp16) {
     num3 = 0.82;
   }
@@ -216,7 +213,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
       obj3[1] = claimableRewards;
       obj3[2] = isSelected;
       obj3[3] = callback;
-      tmp29 = callback2(tmp11(10307), obj3);
+      tmp29 = callback2(tmp11(10346), obj3);
     }
     const items4 = [tmp29, ];
     let tmp31 = null != themeAndReducedMotionAwareAssetUrl1;
@@ -227,10 +224,10 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
       obj5[0] = tmp18;
       items5[1] = obj5;
       obj4[0] = items5;
-      const obj6 = { uri: null };
+      obj6 = { uri: null };
       obj6[0] = themeAndReducedMotionAwareAssetUrl1;
       obj4[2] = obj6;
-      tmp31 = callback2(tmp11(5449), obj4);
+      tmp31 = callback2(tmp11(5454), obj4);
     }
     const obj7 = { children: null };
     items4[1] = tmp31;
@@ -240,7 +237,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
   } else {
     const obj8 = { premiumType: null };
     obj8[0] = premiumType;
-    tmp20Result = callback2(tmp11(9332), obj8);
+    tmp20Result = callback2(tmp11(9369), obj8);
   }
   const items6 = [tmp20Result, , , , , , ];
   const items7 = [tmp10.logo, , ];
@@ -258,7 +255,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
     obj9[0] = items7;
     obj9[1] = premiumType;
     items6[1] = tmp33(tmp34, obj9);
-    const obj10 = { style: null, variant: "text-sm/medium", color: "text-overlay-light", children: null };
+    obj10 = { style: null, variant: "text-sm/medium", color: "text-overlay-light", children: null };
     const items8 = [tmp10.pricing, obj6[str]];
     obj10[0] = items8;
     const intl = tmp2(1236).intl;
@@ -266,19 +263,19 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
     obj11[0] = tmp13;
     obj11[1] = tmp14;
     obj10[3] = intl.format(tmp2(1236).t.Ob6fwp, obj11);
-    items6[2] = tmp33(tmp2(4734).Text, obj10);
+    items6[2] = tmp33(tmp2(4739).Text, obj10);
     const obj12 = { style: null, variant: "heading-sm/bold", color: "text-overlay-light", children: null };
     const items9 = [tmp10.featureTitle, obj2[str]];
     obj12[0] = items9;
     const intl2 = tmp2(1236).intl;
     obj12[3] = intl2.string(tmp2(1236).t.JgsVht);
-    items6[3] = tmp33(tmp2(4734).Text, obj12);
+    items6[3] = tmp33(tmp2(4739).Text, obj12);
     const obj13 = { style: null, features: null, iconStyle: null, labelStyle: null, rowStyle: null };
     obj13[0] = tmp10.features;
     obj13[1] = tmp12;
     ({ featureIcon: obj19[2], featureText: obj19[3] } = tmp10);
     obj13[4] = obj[str];
-    items6[4] = tmp33(tmp11(9337), obj13);
+    items6[4] = tmp33(tmp11(9374), obj13);
     const obj14 = { style: null };
     obj14[0] = { flexGrow: 1 };
     items6[5] = tmp33(tmp21, obj14);
@@ -316,10 +313,10 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
     const obj17 = { variant: "primary-overlay", text: null, onPress: null };
     obj17[1] = stringResult;
     obj17[2] = onPress;
-    obj16[1] = tmp33(tmp2(4745).Button, obj17);
+    obj16[1] = tmp33(tmp2(4750).Button, obj17);
     tmp33Result = tmp33(tmp21, obj16);
   }
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftFeaturesCard.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftFeaturesCard.tsx");
 
 export default memoResult;

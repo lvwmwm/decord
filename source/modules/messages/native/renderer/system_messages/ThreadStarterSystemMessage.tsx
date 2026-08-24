@@ -1,27 +1,30 @@
-// Module ID: 8231
-// Function ID: 8232
+// Module ID: 8271
+// Function ID: 8272
 // Name: createThreadStarterSystemMessage
-// Dependencies: [5013, 676, 38, 1236, 8188, 2]
+// Dependencies: [5018, 676, 38, 1236, 8228, 2]
 // Exports: createThreadStarterSystemMessage
 
-// Module 8231 (createThreadStarterSystemMessage)
-import processMessage from "processMessage";
-import { ReferencedMessageState } from "processMessage";
-import { MessageTypes } from "ME";
+// Module 8271 (createThreadStarterSystemMessage)
+import _modDef38 from "module_38" /* 38 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8228 */;
+import closure_3 from "processMessage" /* 5018 */;
+import { ReferencedMessageState } from "processMessage" /* 5018 */;
+import { MessageTypes } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("module_38").fileFinishedImporting("modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx");
 
 export const createThreadStarterSystemMessage = function createThreadStarterSystemMessage(message) {
   message = message.message;
   const type = message.type;
-  importDefault(38)(type === MessageTypes.THREAD_STARTER_MESSAGE, "cannot call createThreadStarterSystemMessage on a message of type " + type);
+  _modDef38(type === MessageTypes.THREAD_STARTER_MESSAGE, "cannot call createThreadStarterSystemMessage on a message of type " + type);
   let tmp5 = null;
   if (messageByReference.getMessageByReference(message.messageReference).state !== ReferencedMessageState.LOADED) {
     const obj = { content: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.OCs36J);
-    const merged = Object.assign(importDefault(8188)(message));
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t.OCs36J);
+    const merged = Object.assign(createCommonMessageDefault(message));
     tmp5 = obj;
   }
   return tmp5;

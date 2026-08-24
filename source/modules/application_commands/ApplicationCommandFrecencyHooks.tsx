@@ -1,20 +1,18 @@
-// Module ID: 8457
-// Function ID: 8458
+// Module ID: 8496
+// Function ID: 8497
 // Name: useTopCommands
-// Dependencies: [19, 8450, 685, 1374, 589, 2]
+// Dependencies: [19, 8489, 685, 1374, 589, 2]
 // Exports: useTopCommands, useTopRealCommands
 
-// Module 8457 (useTopCommands)
-import noop from "noop";
-import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
-import closure_5 from "handleUserSettingsProtoStoreChange";
-import { UserSettingsTypes } from "MAX_FAVORITES";
+// Module 8496 (useTopCommands)
+import closure_2 from "noop" /* 19 */;
+import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange" /* 8489 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 8489 */;
+import { UserSettingsTypes } from "MAX_FAVORITES" /* 685 */;
 
-let c3;
-let c4;
 const require = arg1;
 ({ getFilteredTopCommands: c3, getTopRealCommands: c4 } = handleUserSettingsProtoStoreChange);
-const result = require("MAX_FAVORITES").fileFinishedImporting("modules/application_commands/ApplicationCommandFrecencyHooks.tsx");
+const result = require("set").fileFinishedImporting("modules/application_commands/ApplicationCommandFrecencyHooks.tsx");
 
 export const useTopCommands = function useTopCommands(commandContext) {
   const _require = commandContext;
@@ -25,7 +23,7 @@ export const useTopCommands = function useTopCommands(commandContext) {
   const items = [closure_5];
   stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => topCommandsWithoutLoadingLatest.getTopCommandsWithoutLoadingLatest());
   const items1 = [stateFromStores, commandContext];
-  return React.useMemo(() => outer1_3(stateFromStores, closure_0), items1);
+  return React.useMemo(() => closure_1_3(stateFromStores, closure_0), items1);
 };
 export const useTopRealCommands = function useTopRealCommands(arg0) {
   const _require = arg0;
@@ -36,5 +34,5 @@ export const useTopRealCommands = function useTopRealCommands(arg0) {
   const items = [closure_5];
   stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => topCommandsWithoutLoadingLatest.getTopCommandsWithoutLoadingLatest());
   const items1 = [stateFromStores, arg0];
-  return React.useMemo(() => outer1_4(outer1_3(stateFromStores, closure_0)), items1);
+  return React.useMemo(() => closure_1_4(closure_1_3(stateFromStores, closure_0)), items1);
 };

@@ -4,7 +4,9 @@
 // Dependencies: [30]
 
 // Module 308 (getConstants)
-const enforcing = require("get").getEnforcing("StatusBarManager");
+import getAll from "get" /* 30 */;
+
+const enforcing = getAll.getEnforcing("StatusBarManager");
 let c1 = null;
 
 export default {

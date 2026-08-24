@@ -1,16 +1,20 @@
-// Module ID: 14645
-// Function ID: 14646
+// Module ID: 14713
+// Function ID: 14714
 // Name: getMaxColors
-// Dependencies: [19, 505, 4307, 1349, 4224, 4223, 712, 1339, 4097, 1236, 2]
+// Dependencies: [19, 505, 4311, 1349, 4228, 4227, 712, 1339, 4100, 1236, 2]
 // Exports: convertThemesToAnimatedThemes, useLaunchWelcomeSystemTheme
 
-// Module 14645 (getMaxColors)
-import noop from "noop";
-import { ThemeTypes } from "sum";
+// Module 14713 (getMaxColors)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1339 */;
+import ClientThemeType from "ClientThemeType" /* 1349 */;
+import getCustomThemesName from "getCustomThemesName" /* 4311 */;
+import closure_3 from "noop" /* 19 */;
+import { ThemeTypes } from "sum" /* 505 */;
 
-const require = arg1;
+require = arg1;
 function getMaxColors() {
-  const allMobileThemes = require(4307) /* getCustomThemesName */.getAllMobileThemes();
+  const allMobileThemes = getCustomThemesName.getAllMobileThemes();
   let num = 0;
   const iter = allMobileThemes[Symbol.iterator]();
   const nextResult = iter.next();
@@ -21,7 +25,7 @@ function getMaxColors() {
     let tmp5 = require;
     let tmp6 = dependencyMap;
     let tmp7 = dependencyMap;
-    if (require(1349) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
+    if (ClientThemeType.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
       let _Math3 = Math;
       let tmp14 = num;
       num = Math.max(1, num);
@@ -49,9 +53,9 @@ function getMaxColors() {
   return num;
 }
 function convertBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
-  let closure_0 = theme;
-  let closure_1 = prop;
-  let closure_2 = prop1;
+  closure_0 = theme;
+  closure_1 = prop;
+  closure_2 = prop1;
   let obj = { theme: theme.theme, name: theme.getName(), midpointPercentage: null, angle: null, colors: null };
   let num = theme.midpointPercentage;
   if (num == null) {
@@ -65,9 +69,6 @@ function convertBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
   obj[3] = num2;
   const colors = theme.colors;
   const mapped = colors.map((stop) => {
-    let b;
-    let g;
-    let r;
     let tmp6 = prop(prop1[4]);
     if ("light" !== theme.theme) {
       tmp6 = new tmp6(0, 0, 0, tmp3);
@@ -123,7 +124,7 @@ function convertStandardThemeToAnimatedTheme(theme, items, BACKGROUND_SURFACE_HI
       }
     }
   }
-  const internal = importDefault(712).internal;
+  const internal = ThemesDefault.internal;
   let obj = { enabledExperiments: items };
   const semanticColor = internal.resolveSemanticColor(str, BACKGROUND_SURFACE_HIGH, obj);
   obj = { theme: theme.theme, name: theme.getName(), midpointPercentage: 50, angle: 0, colors: null };
@@ -147,9 +148,9 @@ function convertStandardThemeToAnimatedTheme(theme, items, BACKGROUND_SURFACE_HI
   return obj;
 }
 function convertCustomBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
-  let closure_0 = theme;
-  let closure_1 = prop;
-  let closure_2 = prop1;
+  closure_0 = theme;
+  closure_1 = prop;
+  closure_2 = prop1;
   let obj = { theme: theme.theme, name: theme.getName(), midpointPercentage: 50, angle: null, colors: null };
   let num = theme.customThemeSettings.gradientAngle;
   if (num == null) {
@@ -158,9 +159,6 @@ function convertCustomBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
   obj[3] = num;
   const colors = theme.customThemeSettings.colors;
   const mapped = colors.map((PRIMARY_800) => {
-    let b;
-    let g;
-    let r;
     let tmp7 = prop(prop1[4]);
     if ("light" !== theme.theme) {
       tmp7 = new tmp7(0, 0, 0, tmp2);
@@ -208,7 +206,7 @@ function convertCustomBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
   obj[4] = items;
   return obj;
 }
-const result = require("getCustomThemesName").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearancePickerUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearancePickerUtils.tsx");
 
 export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThemes(arg0, prop, prop1, memo, BACKGROUND_SURFACE_HIGH) {
   let num = prop;
@@ -224,7 +222,7 @@ export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThe
     items = [];
   }
   if (BACKGROUND_SURFACE_HIGH === undefined) {
-    BACKGROUND_SURFACE_HIGH = importDefault(712).colors.BACKGROUND_SURFACE_HIGH;
+    BACKGROUND_SURFACE_HIGH = ThemesDefault.colors.BACKGROUND_SURFACE_HIGH;
   }
   const items1 = [];
   const iter = arg0[Symbol.iterator]();
@@ -235,7 +233,7 @@ export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThe
     let tmp6 = require;
     let tmp7 = dependencyMap;
     let tmp8 = dependencyMap;
-    if (require(1349) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
+    if (ClientThemeType.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
       let tmp17 = convertStandardThemeToAnimatedTheme;
       let tmp18 = nextResult;
       let arr = items1.push(convertStandardThemeToAnimatedTheme(tmp5, items, BACKGROUND_SURFACE_HIGH));
@@ -260,16 +258,16 @@ export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThe
 };
 export const useLaunchWelcomeSystemTheme = function useLaunchWelcomeSystemTheme() {
   let tmp = importDefault;
-  const tmp4 = importDefault(1339)() === ThemeTypes.LIGHT ? ThemeTypes.LIGHT : ThemeTypes.DARKER;
-  token = token(4097).useToken(tmp(712).colors.BACKGROUND_BASE_LOW, tmp4);
+  const tmp4 = getSystemThemeDefault() === ThemeTypes.LIGHT ? ThemeTypes.LIGHT : ThemeTypes.DARKER;
+  token = token(4100).useToken(ThemesDefault.colors.BACKGROUND_BASE_LOW, tmp4);
   let items = [token];
   return React.useMemo(() => {
     let obj = { theme: "system", name: null, midpointPercentage: 50, angle: 0, colors: null };
-    const intl = token(outer1_2[9]).intl;
-    obj[1] = intl.string(token(outer1_2[9]).t.zlvNOj);
+    const intl = token(closure_1_2[9]).intl;
+    obj[1] = intl.string(token(closure_1_2[9]).t.zlvNOj);
     obj = { hex: token, stop: 20 };
     const items = [obj, { hex: token, stop: 40 }, { hex: token, stop: 60 }, { hex: token, stop: 80 }, { hex: token, stop: 100 }];
-    let num = outer1_5();
+    let num = closure_1_5();
     if (num === undefined) {
       num = 5;
     }

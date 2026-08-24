@@ -1,39 +1,51 @@
-// Module ID: 14711
-// Function ID: 14712
+// Module ID: 11202
+// Function ID: 11203
 // Name: CustomTypingIndicatorGlyph
-// Dependencies: [19, 17, 21, 4661, 712, 14707, 1297, 14712, 2]
+// Dependencies: [19, 17, 21, 4668, 11197, 1297, 712, 11203, 2]
 // Exports: default
 
-// Module 14711 (CustomTypingIndicatorGlyph)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11202 (CustomTypingIndicatorGlyph)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
-createCacheKey = { emojiRow: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
-createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorGlyph.tsx");
+noopAll;
+let closure_5 = createCacheKey.createStyles({ emojiRow: { flexDirection: "row", alignItems: "center" } });
+const result = require("set").fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorGlyph.tsx");
 
 export default function CustomTypingIndicatorGlyph(arg0) {
-  let config;
-  let require;
-  ({ config, size: require } = arg0);
+  ({ config, size } = arg0);
+  ({ textEmojiLineHeight: importDefault, bypassReducedMotionCheck: dependencyMap } = arg0);
   let effectiveCustomTypingIndicatorAnimation;
-  let obj = require(14707) /* CustomTypingIndicatorAnimation */;
-  effectiveCustomTypingIndicatorAnimation = obj.getEffectiveCustomTypingIndicatorAnimation(config);
-  const tmp = createCacheKey();
-  const tmp2 = require;
-  if (obj2.hasCustomTypingIndicatorEmojis(config.emojis)) {
+  let obj = dependencyMap;
+  const tmp = callback();
+  const tmp2 = size;
+  effectiveCustomTypingIndicatorAnimation = size(11197).getEffectiveCustomTypingIndicatorAnimation(config);
+  const obj2 = size(11197);
+  if (obj3.hasCustomTypingIndicatorEmojis(config.emojis)) {
+    let items = [tmp.emojiRow, ];
+    if (null == size) {
+      let PX_4 = ThemesDefault.space.PX_4;
+    } else {
+      PX_4 = size / 4;
+    }
     obj = { style: null, children: null };
-    obj[0] = tmp.emojiRow;
-    const emojis = config.emojis;
-    obj[1] = emojis.map((emoji, index) => outer1_4(callback(outer1_2[7]), { emoji, index, animation: callback, size: closure_0 }, index));
-    let tmp4Result = tmp4(View, obj);
+    obj = { gap: null };
+    obj[0] = PX_4;
+    items[1] = obj;
+    obj[0] = items;
+    items = config.emojis;
+    config = items.map;
+    obj[1] = config((emoji, index) => {
+      const obj = { emoji, index, animation: closure_3, size, textEmojiLineHeight: closure_1, bypassReducedMotionCheck: closure_2 };
+      return closure_1_4(closure_1_1(closure_1_2[7]), obj, index);
+    });
+    tmp3(effectiveCustomTypingIndicatorAnimation, obj);
+    const tmp4 = effectiveCustomTypingIndicatorAnimation;
   } else {
-    tmp4Result = tmp4(tmp2(1297).Ellipsis, {});
+    return tmp3(tmp2(1297).Ellipsis, {});
   }
-  return tmp4Result;
 };

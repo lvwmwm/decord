@@ -1,19 +1,24 @@
-// Module ID: 7593
-// Function ID: 7594
+// Module ID: 7631
+// Function ID: 7632
 // Name: sortByMatchScore
-// Dependencies: [2, 7594, 6773, 7602, 7603, 6776]
+// Dependencies: [2, 7632, 6810, 7640, 7641, 6813]
 
-// Module 7593 (sortByMatchScore)
-import HeaderRecord from "HeaderRecord";
+// Module 7631 (sortByMatchScore)
+import set from "set" /* 2 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 6813 */;
+import getAutocompleterBoosterMapDefault from "getAutocompleterBoosterMap" /* 7632 */;
+import HeaderRecord2 from "HeaderRecord" /* 7640 */;
+import _modDef7641 from "module_7641" /* 7641 */;
+import HeaderRecord from "HeaderRecord" /* 6810 */;
 
-const result = require("HeaderRecord").fileFinishedImporting("modules/autocompleter/index.tsx");
+const result = set.fileFinishedImporting("modules/autocompleter/index.tsx");
 for (const key10022 in _module1) {
   let tmp4 = key10022;
   arg5[key10022] = HeaderRecord[key10022];
   continue;
 }
 
-export { default } from "getAutocompleterBoosterMap";
-export const createHeaderResult = require("HeaderRecord").createHeaderResult;
-export const findNextSelectedResult = require("module_7603");
-export const sortByMatchScore = require("sortByMatchScore");
+export default getAutocompleterBoosterMapDefault;
+export const createHeaderResult = HeaderRecord2.createHeaderResult;
+export const findNextSelectedResult = _modDef7641;
+export const sortByMatchScore = sortByMatchScoreDefault;

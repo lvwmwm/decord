@@ -1,11 +1,13 @@
-// Module ID: 4843
-// Function ID: 4844
+// Module ID: 4848
+// Function ID: 4849
 // Name: requestPermissionCore
-// Dependencies: [4844, 2]
+// Dependencies: [4849, 2]
 
-// Module 4843 (requestPermissionCore)
-import { NativePermissionBaseUtils } from "requestAuthorization";
+// Module 4848 (requestPermissionCore)
+import set from "set" /* 2 */;
+import requestAuthorization from "requestAuthorization" /* 4849 */;
 
+const NativePermissionBaseUtils = requestAuthorization.NativePermissionBaseUtils;
 class NativePermissionDesktopNullUtils extends NativePermissionBaseUtils {
 }
 const prototype = NativePermissionDesktopNullUtils.prototype;
@@ -25,6 +27,6 @@ prototype["openAlertModal"] = function openAlertModal() {
 
 };
 const nativePermissionDesktopNullUtils = new NativePermissionDesktopNullUtils();
-const result = require("set").fileFinishedImporting("modules/native_permissions/NativePermissionUtils.null.tsx");
+const result = set.fileFinishedImporting("modules/native_permissions/NativePermissionUtils.null.tsx");
 
 export default nativePermissionDesktopNullUtils;

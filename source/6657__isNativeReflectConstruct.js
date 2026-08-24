@@ -1,17 +1,20 @@
 // Module ID: 6657
 // Function ID: 6658
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 6579, 6649, 6658, 6584, 6595]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 6658, 6645, 6646]
 
 // Module 6657 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
+import noopDefault from "noop" /* 19 */;
+import _inheritsDefault from "_inherits" /* 98 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 6646 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 6658 */;
+import closure_3 from "_classCallCheck" /* 41 */;
+import closure_4 from "_possibleConstructorReturn" /* 93 */;
+import closure_5 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const Pattern = importDefault;
+const FeGaussianBlur = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -23,21 +26,22 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
-class Pattern {
+noopDefault;
+class FeGaussianBlur {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Pattern);
-    tmp2 = __esModule;
-    obj = __esModule(Pattern);
-    tmp3 = __esModule;
+    tmp = closure_3(this, FeGaussianBlur);
+    tmp2 = closure_5;
+    obj = closure_5(FeGaussianBlur);
+    tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -51,67 +55,34 @@ class Pattern {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Pattern, require("_isNativeReflectConstruct"));
-const items = [
-  {
-    key: "render",
-    value: function render() {
-      let children;
-      let height;
-      let id;
-      let patternContentUnits;
-      let patternTransform;
-      let patternUnits;
-      let preserveAspectRatio;
-      let transform;
-      let viewBox;
-      let width;
-      let x;
-      let y;
-      const self = this;
-      const props = this.props;
-      ({ patternTransform, patternUnits, patternContentUnits } = props);
-      ({ transform, id, x, y, width, height, children, viewBox, preserveAspectRatio } = props);
-      if (!patternTransform) {
-        patternTransform = transform;
+_inheritsDefault(FeGaussianBlur, _isNativeReflectConstructDefault);
+let obj = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
       }
-      if (!patternTransform) {
-        patternTransform = props;
-      }
-      const tmp3Result = self(6579)(patternTransform);
-      let obj = { x, y, width, height, name: id, matrix: tmp3Result, patternTransform: tmp3Result, patternUnits: null, patternContentUnits: null };
-      let num = patternUnits;
-      if (patternUnits) {
-        num = tmp(6649)[patternUnits];
-      }
-      if (!num) {
-        num = 0;
-      }
-      obj[7] = num;
-      let num2 = 1;
-      if (patternContentUnits) {
-        num2 = tmp(6649)[patternContentUnits];
-      }
-      obj[8] = num2;
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const tmp3 = self(6579);
-      const merged = Object.assign(obj);
-      const merged1 = Object.assign(tmp(6584)({ viewBox, preserveAspectRatio }));
-      obj.children = children;
-      return jsx(self(6658), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
-    }
+    };
+    const tmp = __INTERNAL_VIEW_CONFIGDefault;
+    const merged = Object.assign(self(6645).extractFilter(this.props));
+    const obj2 = self(6645);
+    const merged1 = Object.assign(self(6645).extractIn(this.props));
+    const obj3 = self(6645);
+    const merged2 = Object.assign(self(6645).extractFeGaussianBlur(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
-];
-const importDefaultResultResult = importDefaultResult(Pattern, items);
-importDefaultResultResult.displayName = "Pattern";
-importDefaultResultResult.defaultProps = { x: "0%", y: "0%", width: "100%", height: "100%" };
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeGaussianBlur, items);
+importDefaultResultResult.displayName = "FeGaussianBlur";
+obj = {};
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.stdDeviation = 0;
+obj.edgeMode = "none";
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

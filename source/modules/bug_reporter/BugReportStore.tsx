@@ -1,10 +1,13 @@
-// Module ID: 10127
-// Function ID: 10128
+// Module ID: 10166
+// Function ID: 10167
 // Name: zustandStore
-// Dependencies: [4241, 2]
+// Dependencies: [4245, 2]
 
-// Module 10127 (zustandStore)
-const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ isReportOpen: false }));
-const result = require("set").fileFinishedImporting("modules/bug_reporter/BugReportStore.tsx");
+// Module 10166 (zustandStore)
+import set from "set" /* 2 */;
+import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4245 */;
+
+const zustandStore = defaultStatesAreEqual.createZustandStore(() => ({ isReportOpen: false }));
+const result = set.fileFinishedImporting("modules/bug_reporter/BugReportStore.tsx");
 
 export default zustandStore;

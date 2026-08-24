@@ -4,7 +4,9 @@
 // Dependencies: [1039]
 
 // Module 1043 (getNavigationEntry)
-const require = arg1;
+import WINDOW from "WINDOW" /* 1039 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.getNavigationEntry = () => {
@@ -12,7 +14,7 @@ arg5.getNavigationEntry = () => {
   if (arg0 === undefined) {
     flag = true;
   }
-  const _performance = require(1039) /* WINDOW */.WINDOW.performance;
+  const _performance = WINDOW.WINDOW.performance;
   let first;
   if (_performance != null) {
     const getEntriesByType = _performance.getEntriesByType;

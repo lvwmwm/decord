@@ -4,5 +4,7 @@
 // Dependencies: [19]
 
 // Module 1566 (NavigationHelpersContext)
+import noopAll from "noop" /* 19 */;
 
-export const NavigationHelpersContext = require("noop").createContext(undefined);
+
+export const NavigationHelpersContext = noopAll.createContext(undefined);

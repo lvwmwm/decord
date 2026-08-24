@@ -1,36 +1,37 @@
-// Module ID: 15492
-// Function ID: 15493
+// Module ID: 15557
+// Function ID: 15558
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [19, 17, 21, 4661, 712, 7149, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 7187, 4739, 2]
 // Exports: default
 
-// Module 15492 (ChannelItemEmbeddedActivities)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15557 (ChannelItemEmbeddedActivities)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import GameIcon from "GameIcon" /* 7187 */;
+import GameIconDefault from "GameIcon" /* 7187 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { overflow: { lineHeight: 16, textAlign: "center", textAlignVertical: "center", padding: 4 }, overflowContainer: null, container: null, modeMuted: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.xs, display: "flex", alignItems: "center", justifyContent: "center" };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: ThemesDefault.radii.xs, display: "flex", alignItems: "center", justifyContent: "center" };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { display: "flex", flexDirection: "row" };
 createCacheKey[3] = { opacity: 0.3 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/guild_sidebar/native/ChannelItemEmbeddedActivities.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_sidebar/native/ChannelItemEmbeddedActivities.tsx");
 
 export default function ChannelItemEmbeddedActivities(muted) {
-  let embeddedApps;
-  let size;
   ({ embeddedApps, size } = muted);
   if (size === undefined) {
-    size = require(7149) /* GameIcon */.GameIconSizes.SIZE_24;
+    size = GameIcon.GameIconSizes.SIZE_24;
   }
   let modeMuted = muted.muted;
-  const tmp3 = createCacheKey();
+  const tmp3 = callback2();
   if (embeddedApps.length <= 0) {
     return null;
   } else if (1 === embeddedApps.length) {
@@ -41,22 +42,22 @@ export default function ChannelItemEmbeddedActivities(muted) {
       modeMuted = tmp3.modeMuted;
     }
     obj[2] = modeMuted;
-    return callback(importDefault(7149), obj);
+    return callback(GameIconDefault, obj);
   } else {
     const diff = embeddedApps.length - 1;
-    const tmp13 = require(7149) /* GameIcon */.GameIconImageSize[size];
+    const tmp13 = GameIcon.GameIconImageSize[size];
     obj = { style: null, children: null };
     obj[0] = tmp3.container;
-    const obj1 = { game: null, size: null, style: null };
+    obj1 = { game: null, size: null, style: null };
     obj1[0] = embeddedApps[0].application;
     obj1[1] = size;
     obj1[2] = { marginRight: 4 };
-    const items = [callback(importDefault(7149), obj1), ];
+    const items = [callback(GameIconDefault, obj1), ];
     if (2 === embeddedApps.length) {
       obj = { game: null, size: null };
       obj[0] = embeddedApps[1].application;
       obj[1] = size;
-      let tmp16Result = tmp16(importDefault(7149), obj);
+      let tmp16Result = tmp16(GameIconDefault, obj);
     } else {
       const obj2 = { style: null, children: null };
       const items1 = [tmp3.overflowContainer, ];
@@ -69,7 +70,7 @@ export default function ChannelItemEmbeddedActivities(muted) {
       obj4[0] = tmp3.overflow;
       const _HermesInternal = HermesInternal;
       obj4[2] = "+" + diff;
-      obj2[1] = tmp16(require(4734) /* Text */.Text, obj4);
+      obj2[1] = tmp16(Text.Text, obj4);
       tmp16Result = tmp16(tmp15, obj2);
     }
     items[1] = tmp16Result;

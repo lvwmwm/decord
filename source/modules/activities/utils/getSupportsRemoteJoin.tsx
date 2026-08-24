@@ -1,18 +1,21 @@
-// Module ID: 10925
-// Function ID: 10926
+// Module ID: 10964
+// Function ID: 10965
 // Name: getSupportsRemoteJoin
-// Dependencies: [676, 7260, 2]
+// Dependencies: [676, 7298, 2]
 // Exports: getSupportsRemoteJoin
 
-// Module 10925 (getSupportsRemoteJoin)
-import { ActivityFlags } from "ME";
+// Module 10964 (getSupportsRemoteJoin)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import hasFlagDefault from "hasFlag" /* 7298 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/utils/getSupportsRemoteJoin.tsx");
+const ActivityFlags = ME.ActivityFlags;
+const result = set.fileFinishedImporting("modules/activities/utils/getSupportsRemoteJoin.tsx");
 
 export const getSupportsRemoteJoin = function getSupportsRemoteJoin(applicationActivity) {
   let tmp = null != applicationActivity;
   if (tmp) {
-    tmp = importDefault(7260)(applicationActivity, ActivityFlags.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN);
+    tmp = hasFlagDefault(applicationActivity, ActivityFlags.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN);
   }
   return tmp;
 };

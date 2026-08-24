@@ -4,14 +4,15 @@
 // Dependencies: [1804, 1657]
 
 // Module 1803 (useAnimatedPropsJS)
-import isJest from "isJest";
+import checkSharedValueUsage from "checkSharedValueUsage" /* 1804 */;
+import isJest from "isJest" /* 1657 */;
 
 if (isJest.shouldBeUseWeb()) {
   function useAnimatedPropsJS(fn, items) {
-    return require(1804) /* checkSharedValueUsage */.useAnimatedStyle(fn, items, arg2, true);
+    return checkSharedValueUsage.useAnimatedStyle(fn, items, arg2, true);
   }
 } else {
-  useAnimatedPropsJS = require("checkSharedValueUsage").useAnimatedStyle;
+  useAnimatedPropsJS = checkSharedValueUsage.useAnimatedStyle;
 }
 
 export const useAnimatedProps = useAnimatedPropsJS;

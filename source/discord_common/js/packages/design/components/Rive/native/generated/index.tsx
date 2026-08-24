@@ -1,9 +1,11 @@
-// Module ID: 4107
-// Function ID: 4108
-// Dependencies: [2, 4108, 4165, 4167, 4169, 4171, 4173, 4175, 4177, 4179, 4181, 4183, 4185, 4187, 4189, 4191]
+// Module ID: 4111
+// Function ID: 4112
+// Dependencies: [2, 4112, 4169, 4171, 4173, 4175, 4177, 4179, 4181, 4183, 4185, 4187, 4189, 4191, 4193, 4195]
 
-// Module 4107
-const result = require("BountiesScrollGradientRive").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/index.tsx");
+// Module 4111
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/index.tsx");
 for (const key10018 in require("BoostThisServerRive")) {
   let tmp3 = key10018;
   arg5[key10018] = require("BoostThisServerRive")[key10018];

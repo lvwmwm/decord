@@ -1,22 +1,25 @@
-// Module ID: 12783
-// Function ID: 12784
+// Module ID: 12838
+// Function ID: 12839
 // Name: getAskToJoinText
-// Dependencies: [1922, 676, 1236, 2789, 4796, 2]
+// Dependencies: [1922, 676, 1236, 2790, 4801, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamText
 
-// Module 12783 (getAskToJoinText)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { ActivityActionTypes } from "ME";
+// Module 12838 (getAskToJoinText)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2790 */;
+import getNickname from "getNickname" /* 4801 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { ActivityActionTypes } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function getAskToJoinText(author, name_override, isPrivate, id1, arg4) {
   if (author.author.id === id1) {
     if (isPrivate.isPrivate()) {
       user = user.getUser(isPrivate.getRecipientId());
       if (null != user) {
-        const intl2 = require(1236) /* getSystemLocale */.intl;
+        const intl2 = getSystemLocale.intl;
         const formatToPlainString2 = intl2.formatToPlainString;
-        const t2 = require(1236) /* getSystemLocale */.t;
+        const t2 = getSystemLocale.t;
         if (arg4) {
           let obj = { username: null, appName: null };
           obj[0] = user.globalName;
@@ -31,11 +34,11 @@ function getAskToJoinText(author, name_override, isPrivate, id1, arg4) {
         return formatToPlainString2Result;
       }
     }
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const t = require(1236) /* getSystemLocale */.t;
+    const t = getSystemLocale.t;
     if (arg4) {
-      const obj1 = { appName: null };
+      obj1 = { appName: null };
       obj1[0] = name_override;
       let formatToPlainStringResult = formatToPlainString(t["2N1kNS"], obj1);
     } else {
@@ -45,9 +48,9 @@ function getAskToJoinText(author, name_override, isPrivate, id1, arg4) {
     }
     return formatToPlainStringResult;
   } else {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
+    const intl3 = getSystemLocale.intl;
     const formatToPlainString3 = intl3.formatToPlainString;
-    const t3 = require(1236) /* getSystemLocale */.t;
+    const t3 = getSystemLocale.t;
     if (arg4) {
       const obj3 = { username: null, appName: null };
       obj3[0] = author.author.globalName;
@@ -62,45 +65,45 @@ function getAskToJoinText(author, name_override, isPrivate, id1, arg4) {
     return formatToPlainString3Result;
   }
 }
-const result = require("getSystemLocale").fileFinishedImporting("modules/activities/utils/InviteEmbedTextUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/utils/InviteEmbedTextUtils.tsx");
 
 export const getHeaderText = function getHeaderText(arg0, arg1, arg2) {
   if (ActivityActionTypes.LISTEN === arg1) {
-    const intl5 = require(1236) /* getSystemLocale */.intl;
+    const intl5 = getSystemLocale.intl;
     let obj = { name: null };
     obj[0] = arg0;
-    return intl5.formatToPlainString(require(1236) /* getSystemLocale */.t["/8czH4"], obj);
+    return intl5.formatToPlainString(getSystemLocale.t["/8czH4"], obj);
   } else if (tmp.WATCH === arg1) {
-    const intl4 = require(1236) /* getSystemLocale */.intl;
+    const intl4 = getSystemLocale.intl;
     obj = { name: null };
     obj[0] = arg0;
-    return intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.BBJXVk, obj);
+    return intl4.formatToPlainString(getSystemLocale.t.BBJXVk, obj);
   } else if (tmp.JOIN === arg1) {
     let stringResult;
     if (!arg2) {
-      const intl3 = require(1236) /* getSystemLocale */.intl;
-      stringResult = intl3.string(require(1236) /* getSystemLocale */.t.pkq6Vq);
+      const intl3 = getSystemLocale.intl;
+      stringResult = intl3.string(getSystemLocale.t.pkq6Vq);
     }
     return stringResult;
   } else if (tmp.STREAM_REQUEST === arg1) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(importDefault(2789).DKHhec);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(messagesProxyDefault.DKHhec);
   } else {
     const JOIN_REQUEST = tmp.JOIN_REQUEST;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.Ckxb6j);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.Ckxb6j);
   }
 };
 export const getRequestToStreamText = function getRequestToStreamText(author, guild_id, id) {
   if (author.author.id === id) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(importDefault(2789)["8B3U5O"]);
+    const intl2 = getSystemLocale.intl;
+    let stringResult = intl2.string(messagesProxyDefault["8B3U5O"]);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const obj = { username: null };
-    obj[0] = require(4796) /* getNickname */.getName(guild_id.guild_id, guild_id.id, author.author);
-    stringResult = intl.formatToPlainString(importDefault(2789)["d/qbC0"], obj);
-    const obj2 = require(4796) /* getNickname */;
+    obj[0] = getNickname.getName(guild_id.guild_id, guild_id.id, author.author);
+    stringResult = intl.formatToPlainString(messagesProxyDefault["d/qbC0"], obj);
+    const obj2 = getNickname;
   }
   return stringResult;
 };
@@ -116,14 +119,14 @@ export const getDeadGameInviteText = function getDeadGameInviteText(activity, na
       if (tmp2.JOIN !== type) {
         if (tmp2.STREAM_REQUEST === type) {
           if (activity.author.id === id1) {
-            const intl2 = require(1236) /* getSystemLocale */.intl;
-            let stringResult = intl2.string(importDefault(2789)["8B3U5O"]);
+            const intl2 = getSystemLocale.intl;
+            let stringResult = intl2.string(messagesProxyDefault["8B3U5O"]);
           } else {
-            const intl = require(1236) /* getSystemLocale */.intl;
+            const intl = getSystemLocale.intl;
             const obj = { username: null };
-            obj[0] = require(4796) /* getNickname */.getName(guild_id.guild_id, guild_id.id, activity.author);
-            stringResult = intl.formatToPlainString(importDefault(2789)["d/qbC0"], obj);
-            const obj2 = require(4796) /* getNickname */;
+            obj[0] = getNickname.getName(guild_id.guild_id, guild_id.id, activity.author);
+            stringResult = intl.formatToPlainString(messagesProxyDefault["d/qbC0"], obj);
+            const obj2 = getNickname;
           }
           return stringResult;
         } else {
@@ -133,43 +136,40 @@ export const getDeadGameInviteText = function getDeadGameInviteText(activity, na
       }
     }
   }
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  const t = require(1236) /* getSystemLocale */.t;
+  const intl3 = getSystemLocale.intl;
+  const t = getSystemLocale.t;
   return intl3.string(arg4 ? t.x1UXGR : t["Ek+51n"]);
 };
 export const getPartyText = function getPartyText(arg0) {
-  let activityActionType;
-  let maxPartySize;
-  let partySize;
   ({ activityActionType, maxPartySize, partySize } = arg0);
   if (activityActionType === ActivityActionTypes.STREAM_REQUEST) {
     return "";
   } else {
     if (activityActionType !== tmp.LISTEN) {
       if (maxPartySize > 0) {
-        const intl2 = require(1236) /* getSystemLocale */.intl;
+        const intl2 = getSystemLocale.intl;
         let obj = { partySize: null, maxPartySize: null };
         obj[0] = partySize;
         obj[1] = maxPartySize;
-        let formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.gLu7NU, obj);
+        let formatToPlainStringResult = intl2.formatToPlainString(getSystemLocale.t.gLu7NU, obj);
       } else {
-        const intl = require(1236) /* getSystemLocale */.intl;
+        const intl = getSystemLocale.intl;
         obj = { partySize: null };
         obj[0] = partySize;
-        formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["65JnWC"], obj);
+        formatToPlainStringResult = intl.formatToPlainString(getSystemLocale.t["65JnWC"], obj);
       }
     }
     if (maxPartySize > 0) {
-      const intl4 = require(1236) /* getSystemLocale */.intl;
+      const intl4 = getSystemLocale.intl;
       obj = { partySize: null, maxPartySize: null };
       obj[0] = partySize;
       obj[1] = maxPartySize;
-      let formatToPlainStringResult1 = intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.Zogoou, obj);
+      let formatToPlainStringResult1 = intl4.formatToPlainString(getSystemLocale.t.Zogoou, obj);
     } else {
-      const intl3 = require(1236) /* getSystemLocale */.intl;
-      const obj1 = { partySize: null };
+      const intl3 = getSystemLocale.intl;
+      obj1 = { partySize: null };
       obj1[0] = partySize;
-      formatToPlainStringResult1 = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.UGei0j, obj1);
+      formatToPlainStringResult1 = intl3.formatToPlainString(getSystemLocale.t.UGei0j, obj1);
     }
   }
 };

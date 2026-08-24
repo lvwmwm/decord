@@ -1,18 +1,23 @@
-// Module ID: 15968
-// Function ID: 15969
+// Module ID: 16065
+// Function ID: 16066
 // Name: trackFriendsListViewed
-// Dependencies: [676, 15969, 698, 5057, 2]
+// Dependencies: [676, 16066, 698, 5062, 2]
 // Exports: default
 
-// Module 15968 (trackFriendsListViewed)
-import { AnalyticEvents } from "ME";
+// Module 16065 (trackFriendsListViewed)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import isClickstreamEnabled from "isClickstreamEnabled" /* 5062 */;
+import getTrackFriendsListViewedDataDefault from "getTrackFriendsListViewedData" /* 16066 */;
 
-const result = require("expandEventProperties").fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/trackFriendListViewed.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/trackFriendListViewed.tsx");
 
 export default function trackFriendsListViewed(source) {
   let str = source.tab_opened;
-  const tmp = importDefault(15969)();
-  let obj = importDefault(698);
+  const tmp = getTrackFriendsListViewedDataDefault();
+  let obj = expandEventPropertiesDefault;
   obj = { tab_opened: str, source: source.source };
   const merged = Object.assign(tmp);
   obj.track(AnalyticEvents.FRIENDS_LIST_VIEWED, obj);
@@ -35,5 +40,5 @@ export default function trackFriendsListViewed(source) {
     num2 = 0;
   }
   obj[3] = num2;
-  require(5057) /* isClickstreamEnabled */.trackClickstream(AnalyticEvents.FRIENDS_LIST_VIEWED_CLICKSTREAM, obj);
+  isClickstreamEnabled.trackClickstream(AnalyticEvents.FRIENDS_LIST_VIEWED_CLICKSTREAM, obj);
 };

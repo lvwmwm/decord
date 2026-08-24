@@ -1,13 +1,15 @@
-// Module ID: 5275
-// Function ID: 5276
+// Module ID: 5280
+// Function ID: 5281
 // Name: set
 // Dependencies: [589, 709, 2]
 
-// Module 5275 (set)
-import { PersistedStore } from "initialize";
-import set from "set";
+// Module 5280 (set)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import set from "set" /* 2 */;
 
 let set = new Set();
+const PersistedStore = initializeDefault.PersistedStore;
 class RecentlyActiveCollapseStore extends PersistedStore {
 }
 const prototype = RecentlyActiveCollapseStore.prototype;
@@ -26,7 +28,7 @@ prototype["getState"] = function getState() {
 };
 RecentlyActiveCollapseStore.displayName = "RecentlyActiveCollapseStore";
 RecentlyActiveCollapseStore.persistKey = "RecentlyActiveCollapseStore";
-const recentlyActiveCollapseStore = new RecentlyActiveCollapseStore(require("dispatcher"), {
+const recentlyActiveCollapseStore = new RecentlyActiveCollapseStore(dispatcherDefault, {
   SET_RECENTLY_ACTIVE_COLLAPSED: function handleSetRecentlyActiveCollapsed(guildId) {
     guildId = guildId.guildId;
     if (guildId.collapsed) {

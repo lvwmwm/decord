@@ -1,21 +1,20 @@
-// Module ID: 16316
-// Function ID: 16317
+// Module ID: 16410
+// Function ID: 16411
 // Name: VoicePanelAccessibilityView
-// Dependencies: [19, 16307, 21, 4717, 16311, 2]
+// Dependencies: [19, 16401, 21, 4723, 16405, 2]
 // Exports: default
 
-// Module 16316 (VoicePanelAccessibilityView)
-import { VoicePanelPIPModes } from "VoicePanelPIPModes";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 16410 (VoicePanelAccessibilityView)
+import context from "context" /* 16405 */;
+import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16401 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-let closure_4 = require("noop").memo(require("AccessibilityView").AccessibilityViewAnimated);
-const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/VoicePanelAccessibilityView.tsx");
+require = arg1;
+let closure_4 = importAllResult.memo(require("AccessibilityView").AccessibilityViewAnimated);
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/VoicePanelAccessibilityView.tsx");
 
 export default function VoicePanelAccessibilityView(pointerEvents) {
-  let nativeID;
-  let onAccessibilityEscape;
   let str = pointerEvents.pointerEvents;
   if (str === undefined) {
     str = "box-none";
@@ -23,7 +22,7 @@ export default function VoicePanelAccessibilityView(pointerEvents) {
   let accessibilityViewIsModal = pointerEvents.accessibilityViewIsModal;
   ({ nativeID, onAccessibilityEscape } = pointerEvents);
   const merged = Object.assign(pointerEvents, Object.create(null));
-  let obj = require(16311) /* context */;
+  let obj = context;
   obj = { style: pointerEvents.style, pointerEvents: str, nativeID, accessibilityViewIsModal: null, onAccessibilityEscape: null };
   if (accessibilityViewIsModal) {
     accessibilityViewIsModal = obj.usePIPState().mode !== VoicePanelPIPModes.IN_APP;

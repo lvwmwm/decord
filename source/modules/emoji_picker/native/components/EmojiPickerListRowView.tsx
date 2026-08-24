@@ -1,15 +1,16 @@
-// Module ID: 9377
-// Function ID: 9378
+// Module ID: 9414
+// Function ID: 9415
 // Name: View
-// Dependencies: [17, 500, 9378, 2]
+// Dependencies: [17, 500, 9415, 2]
 
-// Module 9377 (View)
-import { View } from "get ActivityIndicator";
-import set from "set";
-import set from "__INTERNAL_VIEW_CONFIG";
+// Module 9414 (View)
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 9415 */;
+import set from "set" /* 500 */;
 
+let View = get_ActivityIndicator.View;
 if (set.isAndroid()) {
-  View = require("__INTERNAL_VIEW_CONFIG");
+  View = __INTERNAL_VIEW_CONFIGDefault;
 }
 const result = set.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListRowView.tsx");
 

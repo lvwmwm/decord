@@ -1,26 +1,27 @@
-// Module ID: 12063
-// Function ID: 12064
-// Dependencies: [19, 21, 4661, 712, 1629, 4066, 5433, 10727, 4734, 1236, 2]
+// Module ID: 12115
+// Function ID: 12116
+// Dependencies: [19, 21, 4668, 712, 1629, 4069, 5438, 10766, 4739, 1236, 2]
 
-// Module 12063
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 12115
+import ThemesDefault from "Themes" /* 712 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let closure_4 = createCacheKey.createStyles((arg0) => {
   let obj = { container: null };
-  obj = { backgroundColor: importDefault(712).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE, marginVertical: importDefault(712).space.PX_8, marginHorizontal: importDefault(712).space.PX_8, marginRight: importDefault(712).space.PX_8 + arg0, paddingHorizontal: importDefault(712).space.PX_8, paddingVertical: importDefault(712).space.PX_4, borderRadius: importDefault(712).radii.sm, alignSelf: "flex-end" };
+  obj = { backgroundColor: ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE, marginVertical: ThemesDefault.space.PX_8, marginHorizontal: ThemesDefault.space.PX_8, marginRight: ThemesDefault.space.PX_8 + arg0, paddingHorizontal: ThemesDefault.space.PX_8, paddingVertical: ThemesDefault.space.PX_4, borderRadius: ThemesDefault.radii.sm, alignSelf: "flex-end" };
   obj[0] = obj;
   return obj;
 });
-const memoResult = require("noop").memo(function MediaModalOverlayAltTextButton(description) {
+const memoResult = importAllResult.memo(function MediaModalOverlayAltTextButton(description) {
   let str = description.description;
   str = undefined;
   if (str == null) {
     str = "";
   }
-  const ViewImageDescriptions = str(4066).ViewImageDescriptions;
+  const ViewImageDescriptions = str(4069).ViewImageDescriptions;
   let tmp4 = null;
   if (ViewImageDescriptions.useSetting()) {
     tmp4 = null;
@@ -31,18 +32,18 @@ const memoResult = require("noop").memo(function MediaModalOverlayAltTextButton(
         if (str == null) {
           str = "";
         }
-        outer1_1(outer1_2[7])({ description: str });
+        closure_1_1(closure_1_2[7])({ description: str });
       };
       obj[2] = { top: 6, bottom: 6, left: 6, right: 6 };
       obj = { variant: "text-xs/semibold", color: "text-overlay-light", children: null };
       const intl = tmp3(1236).intl;
       obj[2] = intl.string(tmp3(1236).t.Q5VqrN);
-      obj[3] = jsx(tmp3(4734).Text, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
-      tmp4 = jsx(tmp3(5433).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
+      obj[3] = jsx(tmp3(4739).Text, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
+      tmp4 = jsx(tmp3(5438).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
     }
   }
   return tmp4;
 });
-const result = require("createCacheKey").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayAltText.tsx");
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayAltText.tsx");
 
 export default memoResult;

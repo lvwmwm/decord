@@ -4,7 +4,8 @@
 // Dependencies: [827, 832, 887]
 
 // Module 926 (flattenIssue)
-import setupIntegration from "setupIntegration";
+import isMatchingPattern from "isMatchingPattern" /* 832 */;
+import setupIntegration from "setupIntegration" /* 887 */;
 
 function flattenIssue(path) {
   const obj = {};
@@ -74,7 +75,7 @@ function formatIssueMessage(issues) {
     return "Failed to validate " + str4;
   } else {
     const _HermesInternal = HermesInternal;
-    return "Failed to validate keys: " + require(832) /* isMatchingPattern */.truncate(arr.join(", "), 100);
+    return "Failed to validate keys: " + isMatchingPattern.truncate(arr.join(", "), 100);
   }
   tmp = issues.issues[Symbol.iterator]();
 }
@@ -125,7 +126,7 @@ function applyZodErrorsToEvent(arg0, arg1, exception, originalException) {
             }
             obj = {};
             const merged = Object.assign(exception);
-            const obj1 = {};
+            obj1 = {};
             const merged1 = Object.assign(exception.exception);
             const obj2 = {};
             const merged2 = Object.assign(exception.exception.values[0]);
@@ -182,7 +183,7 @@ export const zodErrorsIntegration = setupIntegration.defineIntegration(() => {
   obj = {
     name: "ZodErrors",
     processEvent(arg0, arg1) {
-      return outer1_5(num, obj.saveZodIssuesAsAttachment, arg0, arg1);
+      return closure_1_5(num, obj.saveZodIssuesAsAttachment, arg0, arg1);
     }
   };
   return obj;

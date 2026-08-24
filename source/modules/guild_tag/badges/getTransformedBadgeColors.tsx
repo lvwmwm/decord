@@ -1,19 +1,15 @@
-// Module ID: 13378
-// Function ID: 13379
+// Module ID: 13436
+// Function ID: 13437
 // Name: getTransformedBadgeColors
 // Dependencies: [689, 2]
 // Exports: getTransformedBadgeColors
 
-// Module 13378 (getTransformedBadgeColors)
-const result = require("set").fileFinishedImporting("modules/guild_tag/badges/getTransformedBadgeColors.tsx");
+// Module 13436 (getTransformedBadgeColors)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/guild_tag/badges/getTransformedBadgeColors.tsx");
 
 export const getTransformedBadgeColors = function getTransformedBadgeColors(arg0) {
-  let primaryTintColor;
-  let primaryTintLuminances;
-  let secondaryBaseColors;
-  let secondaryLuminanceWeights;
-  let secondaryTintColor;
-  let secondaryTintLuminances;
   ({ primaryTintColor, primaryTintLuminances, secondaryBaseColors, secondaryTintColor, secondaryTintLuminances, secondaryLuminanceWeights } = arg0);
   if (null == primaryTintColor) {
     let items = [];
@@ -25,7 +21,7 @@ export const getTransformedBadgeColors = function getTransformedBadgeColors(arg0
         if (obj2.valid(secondaryTintColor)) {
           secondaryTintColor = tmp7(map2[0])(secondaryTintColor);
           primaryTintColor = secondaryTintColor;
-          let closure_2 = secondaryTintColor.luminance();
+          closure_2 = secondaryTintColor.luminance();
           map2 = secondaryTintLuminances.map;
           let map2Result = map2((arg0, arg1) => primaryTintColor.luminance((arg0 * secondaryLuminanceWeights[arg1].base + closure_2 * secondaryLuminanceWeights[arg1].tint) / (secondaryLuminanceWeights[arg1].base + secondaryLuminanceWeights[arg1].tint)).hex());
         } else {

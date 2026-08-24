@@ -5,12 +5,12 @@
 // Exports: areArraysShallowEqual, default
 
 // Module 643 (shallowEqual)
+import set from "set" /* 2 */;
+
 let closure_0 = {};
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/shallow-equal/shallowEqual.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/shallow-equal/shallowEqual.tsx");
 
 export default function shallowEqual(arg0, arg1, arr) {
-  let logCallback;
-  let shouldWarnLargeObjects;
   let tmp = arg3;
   if (arg3 === undefined) {
     tmp = closure_0;
@@ -51,9 +51,7 @@ export default function shallowEqual(arg0, arg1, arr) {
   }
 };
 export const areArraysShallowEqual = function areArraysShallowEqual(items, current) {
-  let logCallback;
-  let shouldWarnLargeObjects;
-  let closure_0 = current;
+  closure_0 = current;
   let tmp = arg2;
   if (arg2 === undefined) {
     tmp = closure_0;

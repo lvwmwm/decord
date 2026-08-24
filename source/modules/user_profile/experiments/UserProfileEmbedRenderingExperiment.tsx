@@ -1,16 +1,17 @@
-// Module ID: 8317
-// Function ID: 8318
+// Module ID: 8357
+// Function ID: 8358
 // Name: useIsUserProfileEmbedRenderingEnabled
 // Dependencies: [1472, 2]
 // Exports: getIsUserProfileEmbedRenderingEnabled, useIsUserProfileEmbedRenderingEnabled
 
-// Module 8317 (useIsUserProfileEmbedRenderingEnabled)
-import ApexExperiment from "ApexExperiment";
+// Module 8357 (useIsUserProfileEmbedRenderingEnabled)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-08-profile-embed-rendering", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/user_profile/experiments/UserProfileEmbedRenderingExperiment.tsx");
+const result = set.fileFinishedImporting("modules/user_profile/experiments/UserProfileEmbedRenderingExperiment.tsx");
 
 export const useIsUserProfileEmbedRenderingEnabled = function useIsUserProfileEmbedRenderingEnabled(location) {
   return closure_0.useConfig({ location }).enabled;

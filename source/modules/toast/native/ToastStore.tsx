@@ -1,12 +1,14 @@
-// Module ID: 16173
-// Function ID: 16174
+// Module ID: 16270
+// Function ID: 16271
 // Name: ToastStore
 // Dependencies: [589, 709, 2]
 
-// Module 16173 (ToastStore)
-import { Store } from "initialize";
+// Module 16270 (ToastStore)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0 = null;
+const Store = initializeDefault.Store;
 class ToastStore extends Store {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -17,7 +19,7 @@ class ToastStore extends Store {
   }
 }
 ToastStore.displayName = "ToastStore";
-const toastStore = new ToastStore(require("dispatcher"), {
+const toastStore = new ToastStore(dispatcherDefault, {
   TOAST_OPEN: function handleOpen(toastProps) {
     toastProps = toastProps.toastProps;
     let key;
@@ -29,7 +31,7 @@ const toastStore = new ToastStore(require("dispatcher"), {
     }
   },
   TOAST_CLOSE: function handleClose() {
-    let c0 = null;
+    c0 = null;
   }
 });
 const result = require("set").fileFinishedImporting("modules/toast/native/ToastStore.tsx");

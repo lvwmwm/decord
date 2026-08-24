@@ -1,19 +1,21 @@
-// Module ID: 15421
-// Function ID: 15422
+// Module ID: 15485
+// Function ID: 15486
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [19, 4086, 589, 15422, 15422, 2007, 4342, 15427, 2]
+// Dependencies: [19, 4089, 589, 15486, 15486, 2008, 4346, 15491, 2]
 // Exports: default
 
-// Module 15421 (useGuildThemeNuxTrigger)
-import noop from "noop";
-import setContent from "setContent";
+// Module 15485 (useGuildThemeNuxTrigger)
+import initialize from "initialize" /* 589 */;
+import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 15491 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "setContent" /* 4089 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/guild_themes/native/useGuildThemeNuxTrigger.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/guild_themes/native/useGuildThemeNuxTrigger.tsx");
 
 export default function useGuildThemeNuxTrigger(arg0) {
-  const items = [setContent];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
+  const items = [closure_4];
+  const stateFromStores = initialize.useStateFromStores(items, () => {
     key = key.getKey();
     return key === callback(paths[3]).GUILD_THEME_NUX_ACTION_SHEET_KEY;
   });
@@ -22,5 +24,5 @@ export default function useGuildThemeNuxTrigger(arg0) {
     callback2(paths[6]).openLazy(tmp, callback(paths[3]).GUILD_THEME_NUX_ACTION_SHEET_KEY, arg0, "stack");
     return tmp;
   }, []);
-  importDefault(15427)(arg0, { isNuxOpen: stateFromStores, openNux: callback });
+  useGuildThemeNuxTriggerDefault(arg0, { isNuxOpen: stateFromStores, openNux: callback });
 };

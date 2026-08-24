@@ -1,27 +1,29 @@
-// Module ID: 12009
-// Function ID: 12010
+// Module ID: 12058
+// Function ID: 12059
 // Name: useGameProfileShopCollection
-// Dependencies: [19, 9098, 589, 9168, 2]
+// Dependencies: [19, 9135, 589, 9205, 2]
 // Exports: useGameProfileShopCollection
 
-// Module 12009 (useGameProfileShopCollection)
-import { useEffect } from "noop";
-import getSimilarGames from "getSimilarGames";
+// Module 12058 (useGameProfileShopCollection)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import closure_3 from "getSimilarGames" /* 9135 */;
 
-let result = require("initialize").fileFinishedImporting("modules/game_profile/hooks/useGameProfileShopCollection.tsx");
+const useEffect = noop.useEffect;
+let result = set.fileFinishedImporting("modules/game_profile/hooks/useGameProfileShopCollection.tsx");
 
 export const useGameProfileShopCollection = function useGameProfileShopCollection(collectionId) {
   const _require = collectionId;
-  const items = [getSimilarGames];
+  const items = [closure_3];
   const stateFromStoresObject = _require(hasFetched[2]).useStateFromStoresObject(items, () => {
     let result = null != closure_0;
     if (result) {
-      result = outer1_3.hasShopCollectionBeenFetched(tmp);
+      result = closure_1_3.hasShopCollectionBeenFetched(tmp);
     }
     const obj = { hasFetched: result, skuIds: null };
     let shopCollectionSkuIds;
     if (null != closure_0) {
-      shopCollectionSkuIds = outer1_3.getShopCollectionSkuIds(tmp);
+      shopCollectionSkuIds = closure_1_3.getShopCollectionSkuIds(tmp);
     }
     obj[1] = shopCollectionSkuIds;
     return obj;
@@ -32,7 +34,7 @@ export const useGameProfileShopCollection = function useGameProfileShopCollectio
   useEffect(() => {
     let result = null == collectionId || hasFetched;
     if (!result) {
-      result = outer1_3.isShopCollectionFetching(tmp);
+      result = closure_1_3.isShopCollectionFetching(tmp);
     }
     if (!result) {
       const shopCollection = collectionId(hasFetched[3]).getShopCollection(tmp);

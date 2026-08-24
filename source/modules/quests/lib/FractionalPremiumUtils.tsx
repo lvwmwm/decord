@@ -1,14 +1,20 @@
-// Module ID: 10495
-// Function ID: 10496
+// Module ID: 10534
+// Function ID: 10535
 // Name: getDurationStringOfFractionalPremium
-// Dependencies: [4039, 1236, 7458, 4063, 687, 2]
+// Dependencies: [4042, 1236, 7496, 4066, 687, 2]
 // Exports: getDurationStringOfFractionalPremium, getFractionalPremiumQuestRewardName, getFractionalPremiumQuestRewards
 
-// Module 10495 (getDurationStringOfFractionalPremium)
-const result = require("QuestRewardTypes").fileFinishedImporting("modules/quests/lib/FractionalPremiumUtils.tsx");
+// Module 10534 (getDurationStringOfFractionalPremium)
+import set from "set" /* 2 */;
+import setDefault from "set" /* 687 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
+import resetCache from "resetCache" /* 4066 */;
+
+const result = set.fileFinishedImporting("modules/quests/lib/FractionalPremiumUtils.tsx");
 
 export const getDurationStringOfFractionalPremium = function getDurationStringOfFractionalPremium(arr) {
-  let obj = require(4039) /* getPremiumPlanItem */;
+  let obj = getPremiumPlanItem;
   const fractionalPremiumUnitsHoursFromSkuIds = obj.getFractionalPremiumUnitsHoursFromSkuIds(arr.map((skuId) => skuId.skuId));
   if (fractionalPremiumUnitsHoursFromSkuIds % 24 === 0) {
     const intl2 = tmp(1236).intl;
@@ -32,15 +38,15 @@ export const getFractionalPremiumQuestRewardName = function getFractionalPremium
   const found = rewards.filter((type) => type.type === callback(table[2]).QuestRewardTypes.FRACTIONAL_PREMIUM);
   const flatMapResult = found.flatMap((quantity) => Array(quantity.quantity).fill(quantity.skuId));
   let obj = { days: null, hours: null, minutes: null };
-  const fractionalPremiumUnitsHoursFromSkuIds = require(4039) /* getPremiumPlanItem */.getFractionalPremiumUnitsHoursFromSkuIds(flatMapResult);
-  obj[0] = require(1236) /* getSystemLocale */.t.fYmirx;
-  obj[1] = require(1236) /* getSystemLocale */.t["C3RO+g"];
-  obj[2] = require(1236) /* getSystemLocale */.t.r77oHc;
-  const obj2 = require(4039) /* getPremiumPlanItem */;
-  const obj4 = require(4063) /* resetCache */;
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const fractionalPremiumUnitsHoursFromSkuIds = getPremiumPlanItem.getFractionalPremiumUnitsHoursFromSkuIds(flatMapResult);
+  obj[0] = getSystemLocale.t.fYmirx;
+  obj[1] = getSystemLocale.t["C3RO+g"];
+  obj[2] = getSystemLocale.t.r77oHc;
+  const obj2 = getPremiumPlanItem;
+  const obj4 = resetCache;
+  const intl = getSystemLocale.intl;
   obj = { time: null };
-  const diffAsUnitsResult = require(4063) /* resetCache */.diffAsUnits(0, fractionalPremiumUnitsHoursFromSkuIds * importDefault(687).Millis.HOUR);
-  obj[0] = require(4063) /* resetCache */.unitsAsStrings(diffAsUnitsResult, obj);
-  return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["4SqnVD"], obj);
+  const diffAsUnitsResult = resetCache.diffAsUnits(0, fractionalPremiumUnitsHoursFromSkuIds * setDefault.Millis.HOUR);
+  obj[0] = resetCache.unitsAsStrings(diffAsUnitsResult, obj);
+  return intl.formatToPlainString(getSystemLocale.t["4SqnVD"], obj);
 };

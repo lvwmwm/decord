@@ -1,25 +1,24 @@
-// Module ID: 12323
-// Function ID: 12324
+// Module ID: 12375
+// Function ID: 12376
 // Name: useWishlistSuggestionsDismissibleContent
-// Dependencies: [32, 19, 5365, 1388, 687, 1472, 589, 7366, 1377, 2]
+// Dependencies: [32, 19, 5370, 1388, 687, 1472, 589, 7404, 1377, 2]
 // Exports: default
 
-// Module 12323 (useWishlistSuggestionsDismissibleContent)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import createUserWidgetFromServer from "createUserWidgetFromServer";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import ApexExperiment from "ApexExperiment";
+// Module 12375 (useWishlistSuggestionsDismissibleContent)
+import setDefault from "set" /* 687 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "createUserWidgetFromServer" /* 5370 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const require = arg1;
-let closure_6 = 90 * require("set").Millis.DAY;
-let closure_7 = 90 * require("set").Millis.DAY;
+let closure_6 = 90 * setDefault.Millis.DAY;
+let closure_7 = 90 * setDefault.Millis.DAY;
 let closure_8 = ApexExperiment.createApexExperiment({ name: "2026-07-smag-wishlist-recommendations-dismiss-threshold", kind: "user", defaultConfig: { minItemsToDismiss: 1 }, variations: { 0: { minItemsToDismiss: 1 }, 1: { minItemsToDismiss: 3 }, 2: { minItemsToDismiss: 10 } } });
-const result = require("createUserWidgetFromServer").fileFinishedImporting("modules/user_profile/hooks/useWishlistSuggestionsDismissibleContent.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useWishlistSuggestionsDismissibleContent.tsx");
 
 export default function useWishlistSuggestionsDismissibleContent(userId) {
-  let tmp4;
-  let tmp5;
   userId = userId.userId;
   const wishlist = userId.wishlist;
   let hasFetchedWishlist = userId.hasFetchedWishlist;
@@ -48,12 +47,12 @@ export default function useWishlistSuggestionsDismissibleContent(userId) {
   }
   const tmp2 = callback;
   const tmp3 = callback(React.useState(false), 2);
-  const items = [createUserWidgetFromServer];
+  const items = [closure_4];
   const items1 = [wishlist, userId];
   const stateFromStores = userId(wishlist[6]).useStateFromStores(items, () => {
     let num = 0;
     if (null != wishlist) {
-      const wishlistSettings = outer1_4.getWishlistSettings(userId, tmp.id);
+      const wishlistSettings = closure_1_4.getWishlistSettings(userId, tmp.id);
       let num2;
       if (wishlistSettings != null) {
         num2 = wishlistSettings.updated_at;
@@ -79,7 +78,7 @@ export default function useWishlistSuggestionsDismissibleContent(userId) {
     isDismissible: tmp,
     markAsDismissed: obj.useCallback(() => {
       _undefined(false);
-      _undefined2(outer1_5.USER_DISMISS);
+      callback(closure_1_5.USER_DISMISS);
     }, items2)
   };
   items2 = [tmp2Result[1]];

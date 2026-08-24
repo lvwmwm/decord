@@ -1,19 +1,22 @@
-// Module ID: 15458
-// Function ID: 15459
+// Module ID: 15522
+// Function ID: 15523
 // Name: voiceCategoryExpand
 // Dependencies: [709, 2]
 // Exports: voiceCategoryCollapse, voiceCategoryExpand
 
-// Module 15458 (voiceCategoryExpand)
-const result = require("set").fileFinishedImporting("modules/guild_sidebar/VoiceCategoryActionCreators.tsx");
+// Module 15522 (voiceCategoryExpand)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/guild_sidebar/VoiceCategoryActionCreators.tsx");
 
 export const voiceCategoryExpand = function voiceCategoryExpand(guildId) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "VOICE_CATEGORY_EXPAND", guildId, expand: true };
   obj.dispatch(obj);
 };
 export const voiceCategoryCollapse = function voiceCategoryCollapse(guildId) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "VOICE_CATEGORY_COLLAPSE", guildId, expand: false };
   obj.dispatch(obj);
 };

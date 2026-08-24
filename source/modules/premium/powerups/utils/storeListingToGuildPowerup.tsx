@@ -1,18 +1,19 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11708
+// Function ID: 11709
 // Name: storeListingToGuildPowerup
-// Dependencies: [1924, 4262, 1925, 2]
+// Dependencies: [1924, 4266, 1925, 2]
 // Exports: default
 
-// Module 11659 (storeListingToGuildPowerup)
-import GuildFeatures from "GuildFeatures";
-import { GuildPowerupType } from "BoostedGuildTiers";
-import { DEFAULT_EMOJI_SLOTS } from "set";
+// Module 11708 (storeListingToGuildPowerup)
+import set from "set" /* 2 */;
+import set2 from "set" /* 1925 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4266 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
-let c0;
-let closure_1;
 ({ DEFAULT_SOUND_SLOTS: c0, DEFAULT_STICKER_SLOTS: closure_1 } = GuildFeatures);
-const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/storeListingToGuildPowerup.tsx");
+const GuildPowerupType = BoostedGuildTiers.GuildPowerupType;
+const DEFAULT_EMOJI_SLOTS = set2.DEFAULT_EMOJI_SLOTS;
+const result = set.fileFinishedImporting("modules/premium/powerups/utils/storeListingToGuildPowerup.tsx");
 
 export default function storeListingToGuildPowerup(arr, powerup_metadata) {
   powerup_metadata = powerup_metadata.powerup_metadata;
@@ -154,7 +155,7 @@ export default function storeListingToGuildPowerup(arr, powerup_metadata) {
           }
           obj = { type: null, features: null };
           obj[0] = GuildPowerupType.LEVEL;
-          const obj1 = {};
+          obj1 = {};
           const merged = Object.assign(guild_features);
           obj1.total_emoji_slots = tmp25;
           obj1.total_sound_slots = tmp24;

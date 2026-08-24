@@ -1,25 +1,23 @@
-// Module ID: 17017
-// Function ID: 17018
+// Module ID: 17110
+// Function ID: 17111
 // Name: useInviteApplicationBypassInfo
-// Dependencies: [4021, 676, 589, 2]
+// Dependencies: [4024, 676, 589, 2]
 // Exports: useInviteApplicationBypassInfo
 
-// Module 17017 (useInviteApplicationBypassInfo)
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import ME from "ME";
+// Module 17110 (useInviteApplicationBypassInfo)
+import closure_2 from "getUncachedChannelPermissions" /* 4024 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
 const require = arg1;
 ({ GuildFeatures: c3, Permissions: c4 } = ME);
-const result = require("initialize").fileFinishedImporting("modules/instant_invite/useInviteApplicationBypassInfo.tsx");
+const result = require("set").fileFinishedImporting("modules/instant_invite/useInviteApplicationBypassInfo.tsx");
 
 export const useInviteApplicationBypassInfo = function useInviteApplicationBypassInfo(guild) {
   const _require = guild;
-  const items = [getUncachedChannelPermissions];
+  const items = [closure_2];
   const items1 = [guild];
   let hasItem;
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_2.can(outer1_4.KICK_MEMBERS, closure_0), items1);
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_2.can(closure_1_4.KICK_MEMBERS, closure_0), items1);
   if (guild != null) {
     const features = guild.features;
     hasItem = features.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);

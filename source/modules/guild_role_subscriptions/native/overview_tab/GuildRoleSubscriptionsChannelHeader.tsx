@@ -1,34 +1,35 @@
-// Module ID: 12706
-// Function ID: 12707
-// Dependencies: [19, 17, 21, 4661, 712, 1297, 11954, 4734, 1236, 2]
+// Module ID: 12761
+// Function ID: 12762
+// Dependencies: [19, 17, 21, 4668, 712, 1297, 12003, 4739, 1236, 2]
 
-// Module 12706
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 12761
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import registerAssetDefault from "registerAsset" /* 12003 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { header: null };
-obj = { flex: 1, flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8 };
+obj = { flex: 1, flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_8 };
 obj[0] = obj;
 let closure_6 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(function GuildRoleSubscriptionsChannelHeader() {
+const memoResult = importAllResult.memo(function GuildRoleSubscriptionsChannelHeader() {
   let obj = { style: callback3().header, children: null };
-  obj = { source: null, size: null, disableColor: true };
-  obj[0] = importDefault(11954);
-  obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
-  const items = [callback(require(1297) /* Button */.Icon, obj), ];
+  obj = { source: registerAssetDefault, size: Button.Icon.Sizes.MEDIUM, disableColor: true };
+  const items = [callback(Button.Icon, obj), ];
   obj = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["KzCF/6"]);
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t["KzCF/6"]);
+  items[1] = callback(Text.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 });
-const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsChannelHeader.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsChannelHeader.tsx");
 
 export default memoResult;

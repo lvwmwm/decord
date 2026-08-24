@@ -4,16 +4,20 @@
 // Dependencies: [592, 593, 10, 38, 2]
 
 // Module 591 (initialize)
+import set from "set" /* 2 */;
+import isTracingDefault from "isTracing" /* 10 */;
+import loggerDefault from "logger" /* 593 */;
+
 let closure_4 = [];
 let c5 = false;
 const promise = new Promise((arg0) => {
-  let closure_0 = arg0;
-  function t() {
+  closure_0 = arg0;
+  c3 = function t() {
     callback();
-    const t = null;
-  }
+    c3 = null;
+  };
 });
-let result = require("isTracing").fileFinishedImporting("../discord_common/js/packages/flux/Store.tsx");
+let result = set.fileFinishedImporting("../discord_common/js/packages/flux/Store.tsx");
 class Store {
   constructor(arg0, arg1, arg2) {
     obj = require;
@@ -35,11 +39,11 @@ class Store {
         hasAnyResult = obj._syncWiths.length > 0;
       }
       if (hasAnyResult) {
-        outer1_1(outer1_2[1]).markChanged(obj);
-        const obj2 = outer1_1(outer1_2[1]);
-        const tmp2 = outer1_1;
-        const tmp3 = outer1_2;
-        let isPaused = outer1_1(outer1_2[1]).getIsPaused();
+        closure_1_1(closure_1_2[1]).markChanged(obj);
+        const obj2 = closure_1_1(closure_1_2[1]);
+        const tmp2 = closure_1_1;
+        const tmp3 = closure_1_2;
+        let isPaused = closure_1_1(closure_1_2[1]).getIsPaused();
         if (isPaused) {
           isPaused = null != obj._mustEmitChanges;
         }
@@ -50,7 +54,7 @@ class Store {
           tmp2(tmp3[1]).resume(false);
           const tmp2Result = tmp2(tmp3[1]);
         }
-        const obj3 = outer1_1(outer1_2[1]);
+        const obj3 = closure_1_1(closure_1_2[1]);
       }
     };
     obj.addChangeListener = obj._changeCallbacks.add;
@@ -75,19 +79,19 @@ class Store {
 }
 const prototype = Store.prototype;
 Store["initialize"] = function initialize() {
-  let c5 = true;
+  c5 = true;
   const item = arr.forEach((initializeIfNeeded) => initializeIfNeeded.initializeIfNeeded());
-  if (null != closure_3) {
-    if (typeof closure_3 !== "function") {
+  if (null != c3) {
+    if (typeof c3 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     require();
-    const outer1_3 = null;
+    c3 = null;
   }
 };
 Store["destroy"] = function destroy() {
   closure_4.length = 0;
-  importDefault(593).destroy();
+  loggerDefault.destroy();
 };
 Store["getAll"] = function getAll() {
   return closure_4;
@@ -118,8 +122,8 @@ prototype["initializeIfNeeded"] = function initializeIfNeeded() {
     const _Date2 = Date;
     const diff = Date.now() - timestamp;
     if (diff > 5) {
-      importDefault(10).mark("\u{1F9A5}", `${self.getName()}.initialize()`, diff);
-      const obj = importDefault(10);
+      isTracingDefault.mark("\u{1F9A5}", `${self.getName()}.initialize()`, diff);
+      const obj = isTracingDefault;
     }
   }
 };
@@ -133,7 +137,7 @@ prototype["syncWith"] = function syncWith(items, handleUserSettingsProtoStoreCha
   items = [...items];
   this.waitFor.apply(items);
   if (null != arg2) {
-    let c2 = 0;
+    c2 = 0;
     wrapper = function wrapper() {
       if (changeSentinel !== obj.getChangeSentinel()) {
         changeSentinel = wrapper(_null[1]).getChangeSentinel();
@@ -143,7 +147,7 @@ prototype["syncWith"] = function syncWith(items, handleUserSettingsProtoStoreCha
         const tmpResult = wrapper(_null[1]);
       }
     };
-    let closure_0 = wrapper;
+    closure_0 = wrapper;
     if (num == null) {
       num = 0;
     }
@@ -158,7 +162,7 @@ prototype["syncWith"] = function syncWith(items, handleUserSettingsProtoStoreCha
         timeout = setTimeout(() => {
           try {
             callback();
-            let c2 = null;
+            c2 = null;
           } catch (tmp4) {
             c2 = null;
             throw tmp4;
@@ -179,9 +183,9 @@ prototype["waitFor"] = function waitFor() {
   const items = [...arguments];
   const mapped = items.map((_dispatcher) => {
     let dispatchToken = null;
-    outer1_1(outer1_2[3])(null != _dispatcher, "Store.waitFor(...) called with null Store at index " + arg1 + " for store " + self.getName());
+    closure_1_1(closure_1_2[3])(null != _dispatcher, "Store.waitFor(...) called with null Store at index " + arg1 + " for store " + self.getName());
     if (null != _dispatcher._dispatcher) {
-      outer1_1(outer1_2[3])(_dispatcher._dispatcher === self._dispatcher, "Stores belong to two separate dispatchers.");
+      closure_1_1(closure_1_2[3])(_dispatcher._dispatcher === self._dispatcher, "Stores belong to two separate dispatchers.");
       dispatchToken = _dispatcher.getDispatchToken();
     }
     return dispatchToken;
@@ -191,7 +195,7 @@ prototype["waitFor"] = function waitFor() {
   _dispatcher.addDependencies(dispatchToken, mapped.filter((arg0) => null != arg0));
 };
 prototype["emitChange"] = function emitChange() {
-  importDefault(593).markChanged(this);
+  loggerDefault.markChanged(this);
 };
 prototype["getDispatchToken"] = function getDispatchToken() {
   return this._dispatchToken;

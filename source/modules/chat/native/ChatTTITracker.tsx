@@ -1,17 +1,16 @@
-// Module ID: 11144
-// Function ID: 11145
+// Module ID: 11183
+// Function ID: 11184
 // Name: ChatTTITracker
-// Dependencies: [21, 11076, 9, 2]
+// Dependencies: [21, 11115, 9, 2]
 // Exports: ChatTTITracker
 
-// Module 11144 (ChatTTITracker)
-import jsxProd from "jsxProd";
+// Module 11183 (ChatTTITracker)
+import set from "set" /* 2 */;
+import TTIMeasurementView from "TTIMeasurementView" /* 11115 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-let c5;
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
-const result = require("serialize").fileFinishedImporting("modules/chat/native/ChatTTITracker.tsx");
+const result = set.fileFinishedImporting("modules/chat/native/ChatTTITracker.tsx");
 
 export const ChatTTITracker = function ChatTTITracker(messages) {
   messages = messages.messages;
@@ -22,7 +21,7 @@ export const ChatTTITracker = function ChatTTITracker(messages) {
       const displayMessagesWithCache = callback(9).displayMessagesWithCache;
       displayMessagesWithCache.record(nativeEvent.nativeEvent.timestamp);
     };
-    tmp3 = callback(require(11076) /* TTIMeasurementView */.TTIMeasurementView, obj, "cached_messages_tti");
+    tmp3 = callback(TTIMeasurementView.TTIMeasurementView, obj, "cached_messages_tti");
   }
   const children = [tmp3, ];
   if (messages.hasFetched) {
@@ -31,7 +30,7 @@ export const ChatTTITracker = function ChatTTITracker(messages) {
       const displayLatestMessages = callback(9).displayLatestMessages;
       displayLatestMessages.record(nativeEvent.nativeEvent.timestamp);
     };
-    let tmp7 = callback(require(11076) /* TTIMeasurementView */.TTIMeasurementView, obj, "latest_messages_tti");
+    let tmp7 = callback(TTIMeasurementView.TTIMeasurementView, obj, "latest_messages_tti");
   } else {
     tmp7 = null;
     if (messages.ready) {

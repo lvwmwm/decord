@@ -1,43 +1,36 @@
-// Module ID: 14951
-// Function ID: 14952
+// Module ID: 15015
+// Function ID: 15016
 // Name: CollectiblesShopInternal
-// Dependencies: [32, 19, 17, 4737, 1302, 1922, 5301, 678, 676, 21, 4661, 7159, 12846, 14952, 589, 7127, 514, 8389, 14953, 500, 5312, 7935, 9176, 9185, 1363, 7139, 1500, 9249, 4052, 14955, 698, 5359, 8417, 14956, 14958, 14979, 1208, 9175, 9585, 14982, 14983, 14961, 14984, 5007, 2]
+// Dependencies: [32, 19, 17, 4742, 1302, 1922, 5306, 678, 676, 21, 4668, 7197, 12901, 15016, 589, 7165, 514, 8428, 15017, 500, 5317, 7974, 9213, 9222, 1363, 7177, 1500, 9286, 4055, 15019, 698, 5364, 8456, 15020, 15022, 15043, 1208, 9212, 9622, 15046, 15047, 15025, 15048, 5012, 2]
 
-// Module 14951 (CollectiblesShopInternal)
-import maybeFetchUserProfile from "maybeFetchUserProfile";
-import set from "set";
-import get_ActivityIndicator from "useFetchPurchases";
-import getUserAgnosticState from "getUserAgnosticState";
-import handleThemeChange from "handleThemeChange";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import updateCategoriesAndProducts from "updateCategoriesAndProducts";
-import items from "items";
-import ME from "ME";
-import jsxProd from "notSupported";
-import createCacheKey from "createCacheKey";
+// Module 15015 (CollectiblesShopInternal)
+import _modDef1208 from "module_1208" /* 1208 */;
+import notSupportedDefault from "notSupported" /* 7974 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "getUserAgnosticState" /* 4742 */;
+import closure_8 from "handleThemeChange" /* 1302 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_10 from "updateCategoriesAndProducts" /* 5306 */;
+import items from "items" /* 678 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_12;
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_6;
-let map1;
-let unpackModuleId;
 const require = arg1;
 class CollectiblesShopV2 {
   constructor(arg0) {
     tmp2 = closure_2;
-    tmp = isStaffPersonal;
+    tmp = closure_1;
     obj = require("notSupported");
     nativeIAPPayments = obj.useNativeIAPPayments();
     nativePaymentsConnected = nativeIAPPayments.nativePaymentsConnected;
     tmp5 = nativePaymentsConnected;
-    tmp4 = jsxs();
+    tmp4 = closure_18();
     obj2 = require("initialize");
     items = [];
-    items[0] = View;
+    items[0] = closure_9;
     stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
     isStaffResult = undefined;
     if (stateFromStores != null) {
@@ -50,11 +43,11 @@ class CollectiblesShopV2 {
       }
       isStaffResult = isStaffPersonalResult;
     }
-    tmp8 = maybeFetchUserProfile(set.useState(false), 2);
-    [tmp9, isStaffPersonal] = tmp8;
+    tmp8 = closure_3(closure_4.useState(false), 2);
+    [tmp9, closure_1] = tmp8;
     items1 = [];
     items1[0] = nativePaymentsConnected;
-    effect = set.useEffect(() => {
+    effect = closure_4.useEffect(() => {
       if (!timeout) {
         const _setTimeout = setTimeout;
         timeout = setTimeout(() => {
@@ -102,10 +95,6 @@ class CollectiblesShopV2 {
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
 let closure_18 = createCacheKey.createStyles({ rootContainer: { height: "100%", width: "100%" }, spinner: { position: "absolute", top: "50%", left: "50%", marginTop: -8, marginLeft: -8 } });
 function CollectiblesShopInternal(analyticsSource) {
-  let fetchShopHomeError;
-  let screen;
-  let shopBlocks;
-  let storeFront;
   analyticsSource = analyticsSource.analyticsSource;
   const onNavigateAway = analyticsSource.onNavigateAway;
   ({ storeFront, screen } = analyticsSource);
@@ -124,7 +113,7 @@ function CollectiblesShopInternal(analyticsSource) {
   let constants;
   let obj = analyticsSource(screen[12]);
   const commonTriggerPoint = obj.useCommonTriggerPoint(analyticsSource(screen[13]).CollectiblesShopOpenTriggerPoint);
-  let obj1 = analyticsSource(screen[14]);
+  obj1 = analyticsSource(screen[14]);
   let items = [isFetchingGoogleSkus];
   const first = bypassGoogleSkuSync(obj1.useStateFromStoresArray(items, () => {
     let num = isFetchingGoogleSkus.lastSuccessfulFetch;
@@ -146,8 +135,7 @@ function CollectiblesShopInternal(analyticsSource) {
     country = storeFront.country;
   }
   const tmp8 = onNavigateAway(screen[15])(() => {
-    const obj = { sessionId: null };
-    obj[0] = analyticsSource(screen[16]).v4();
+    const obj = { sessionId: analyticsSource(screen[16]).v4() };
     return obj;
   });
   sessionId = tmp8.sessionId;
@@ -213,7 +201,7 @@ function CollectiblesShopInternal(analyticsSource) {
                 if (tmp) {
                   const push = navigation.push;
                   const _Object = Object;
-                  const items = [];
+                  items = [];
                   HermesBuiltin.arraySpread(Object.values(googleSkuIds.googleSkuIds), 0);
                   HermesBuiltin.apply(items, navigation);
                 }
@@ -340,7 +328,7 @@ function CollectiblesShopInternal(analyticsSource) {
       obj.trackShopPerf(obj);
     }
     obj = { category: category.item, isDarkTheme: stateFromStores, index };
-    return outer1_16(analyticsSource(screen[33]).ShopCategory, obj);
+    return closure_1_16(analyticsSource(screen[33]).ShopCategory, obj);
   }, items10);
   const items12 = [sessionId, includeUnpublished, noCache];
   const callback1 = obj3.useCallback((index) => {
@@ -365,7 +353,7 @@ function CollectiblesShopInternal(analyticsSource) {
       tmp16 = null;
     }
     obj[1] = tmp16;
-    return outer1_16(onNavigateAway(screen[34]), obj);
+    return closure_1_16(onNavigateAway(screen[34]), obj);
   }, items11);
   const callback2 = obj3.useCallback(() => {
     if (!closure_15.current[stateFromStores.ORBS]) {
@@ -453,7 +441,7 @@ function CollectiblesShopInternal(analyticsSource) {
     tmp33 = 0 === memo2.length || tmp25;
   }
 }
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/CollectiblesShopV2.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesShopV2.tsx");
 
 export default CollectiblesShopV2;
 export { CollectiblesShopV2 };

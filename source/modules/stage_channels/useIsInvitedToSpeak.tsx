@@ -1,22 +1,25 @@
-// Module ID: 12494
-// Function ID: 12495
+// Module ID: 12548
+// Function ID: 12549
 // Name: useIsInvitedToSpeak
-// Dependencies: [1218, 1979, 589, 4981, 2]
+// Dependencies: [1218, 1980, 589, 4986, 2]
 // Exports: default
 
-// Module 12494 (useIsInvitedToSpeak)
-import fetchFingerprint from "fetchFingerprint";
-import handleConnectionOpen from "handleConnectionOpen";
+// Module 12548 (useIsInvitedToSpeak)
+import initialize from "initialize" /* 589 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4986 */;
+import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4986 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/stage_channels/useIsInvitedToSpeak.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/stage_channels/useIsInvitedToSpeak.tsx");
 
 export default function useIsInvitedToSpeak() {
-  const items = [handleConnectionOpen];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => voiceChannelId.getVoiceChannelId());
-  const obj = require(589) /* initialize */;
-  const items1 = [fetchFingerprint];
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => id.getId());
-  const obj2 = require(589) /* initialize */;
-  return importDefault(4981)(stateFromStores1, stateFromStores) === require(4981) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  const items = [closure_4];
+  const stateFromStores = initialize.useStateFromStores(items, () => voiceChannelId.getVoiceChannelId());
+  const obj = initialize;
+  const items1 = [closure_3];
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => id.getId());
+  const obj2 = initialize;
+  return useAudienceRequestToSpeakStateDefault(stateFromStores1, stateFromStores) === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 };

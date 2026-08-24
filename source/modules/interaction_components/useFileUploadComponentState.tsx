@@ -1,23 +1,23 @@
-// Module ID: 16608
-// Function ID: 16609
+// Module ID: 16704
+// Function ID: 16705
 // Name: useFileUploadComponentState
-// Dependencies: [19, 4825, 4824, 8326, 38, 1954, 2]
+// Dependencies: [19, 4830, 4829, 8365, 38, 1954, 2]
 // Exports: useFileUploadComponentState
 
-// Module 16608 (useFileUploadComponentState)
-import noop from "noop";
-import { DraftType } from "handleChanged";
-import map from "map";
+// Module 16704 (useFileUploadComponentState)
+import closure_3 from "noop" /* 19 */;
+import { DraftType } from "handleChanged" /* 4830 */;
+import closure_5 from "map" /* 4829 */;
 
 const require = arg1;
-const result = require("map").fileFinishedImporting("modules/interaction_components/useFileUploadComponentState.tsx");
+const result = require("set").fileFinishedImporting("modules/interaction_components/useFileUploadComponentState.tsx");
 
 export const useFileUploadComponentState = function useFileUploadComponentState(maxValues) {
   const componentStateContext = state(uploadIds[3]).useComponentStateContext();
   executeStateUpdate(uploadIds[4])(null != componentStateContext, "useFileUploadComponentState must be used within a ComponentStateContextProvider");
   const channelId = componentStateContext.channelId;
   executeStateUpdate(uploadIds[4])(null != channelId, "useFileUploadComponentState must be used inside a channel");
-  const error = componentStateContext.useComponentState(maxValues);
+  error = componentStateContext.useComponentState(maxValues);
   state = error.state;
   executeStateUpdate = error.executeStateUpdate;
   const items = [state];
@@ -32,8 +32,8 @@ export const useFileUploadComponentState = function useFileUploadComponentState(
   const items1 = [uploadIds, uploads];
   currentUploads = uploads.useMemo(() => {
     const mapped = uploadIds.map((arg0) => {
-      let closure_0 = arg0;
-      return noop.find((id) => id.id === closure_0);
+      closure_0 = arg0;
+      return closure_3.find((id) => id.id === closure_0);
     });
     return mapped.filter((arg0) => null != arg0);
   }, items1);
@@ -43,7 +43,7 @@ export const useFileUploadComponentState = function useFileUploadComponentState(
   const effect = uploads.useEffect(() => {
     if (uploadIds.length > currentUploads.length) {
       setUploadIds(uploadIds.filter((arg0) => {
-        let closure_0 = arg0;
+        closure_0 = arg0;
         return closure_4.some((id) => id.id === closure_0);
       }));
     }

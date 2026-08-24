@@ -1,21 +1,21 @@
-// Module ID: 10155
-// Function ID: 10156
+// Module ID: 10194
+// Function ID: 10195
 // Name: showNotification
-// Dependencies: [5, 17, 706, 676, 4839, 500, 10029, 10031, 514, 5038, 10156, 2]
+// Dependencies: [5, 17, 706, 676, 4844, 500, 10068, 10070, 514, 5043, 10195, 2]
 
-// Module 10155 (showNotification)
-import set from "set";
-import get_ActivityIndicator from "get ActivityIndicator";
-import refreshSourceMapCookie from "refreshSourceMapCookie";
-import { InAppNotificationTypes } from "ME";
-import { NativePermissionStatus } from "NativePermissionStatus";
-import "initialize";
+// Module 10194 (showNotification)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "refreshSourceMapCookie" /* 706 */;
+import { InAppNotificationTypes } from "ME" /* 676 */;
+import { NativePermissionStatus } from "NativePermissionStatus" /* 4844 */;
 
 const require = arg1;
 function showNotification(uri) {
   function _getAndroidScreenshot() {
     const self = this;
-    const tmp = outer1_4(function*() {
+    const tmp = closure_1_4(function*() {
       if (c3 === 2) {
         c3 = 3;
         HermesBuiltin.throwTypeError();
@@ -27,7 +27,7 @@ function showNotification(uri) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -42,12 +42,12 @@ function showNotification(uri) {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_1 = tmp2;
+              closure_1 = tmp2;
               let edges;
-              const CameraRollUtils = outer1_5.CameraRollUtils;
+              const CameraRollUtils = closure_1_5.CameraRollUtils;
               c2 = 1;
               c3 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = CameraRollUtils.getPhotos({ first: 1, assetType: "photos" });
               return obj1;
             }
@@ -74,7 +74,7 @@ function showNotification(uri) {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c3 = tmp;
@@ -82,7 +82,7 @@ function showNotification(uri) {
         }
       }
     });
-    const _getAndroidScreenshot = tmp;
+    closure_0 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -107,12 +107,12 @@ function showNotification(uri) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
         c3 = 2;
-        if (0 === dependencyMap) {
+        if (0 === c2) {
           if (arg0 === 1) {
             c3 = 3;
             throw arg1;
@@ -122,19 +122,19 @@ function showNotification(uri) {
             obj[0] = arg1;
             return obj;
           } else {
-            let c1 = tmp3;
-            let c0 = tmp2;
+            c1 = tmp3;
+            c0 = tmp2;
             c0 = undefined;
             c1 = undefined;
-            dependencyMap = undefined;
-            if (null != outer1_1) {
-              let obj1 = { uri: null };
+            c2 = undefined;
+            if (null != BUG_REPORTER) {
+              obj1 = { uri: null };
               obj1[0] = tmp36;
               let tmp7 = obj1;
             } else {
-              obj1 = outer1_0(500);
+              obj1 = obj1(500);
               if (!obj1.isIOS()) {
-                dependencyMap = 1;
+                c2 = 1;
                 c3 = 1;
                 const obj2 = { value: null, done: false };
                 obj2[0] = (function getAndroidScreenshot() {
@@ -150,29 +150,29 @@ function showNotification(uri) {
                 return obj2;
               }
             }
-            outer1_0 = tmp7;
-            outer1_1 = outer1_7.BUG_REPORTER;
-            dependencyMap = outer1_0(10029).getNotificationDuration(outer1_1);
-            const obj5 = outer1_0(10029);
+            obj1 = tmp7;
+            BUG_REPORTER = closure_1_7.BUG_REPORTER;
+            dependencyMap = obj1(10068).getNotificationDuration(BUG_REPORTER);
+            const obj5 = obj1(10068);
             const obj3 = { type: null, duration: null, key: null, image: null, imageUri: null, onDismiss: null, inAppNotificationId: null };
-            obj3[0] = outer1_1;
+            obj3[0] = BUG_REPORTER;
             obj3[1] = dependencyMap;
-            const obj6 = outer1_1(10031);
-            obj3[2] = outer1_0(514).v4();
-            obj3[3] = outer1_0;
-            let uri;
-            if (outer1_0 != null) {
-              uri = outer1_0.uri;
+            const obj6 = BUG_REPORTER(10070);
+            obj3[2] = obj1(514).v4();
+            obj3[3] = obj1;
+            uri = undefined;
+            if (obj1 != null) {
+              uri = obj1.uri;
             }
             obj3[4] = uri;
             obj3[5] = function onDismiss() {
               _undefined(table[7]).clearNotification();
             };
-            const obj8 = outer1_0(514);
-            obj3[6] = outer1_0(514).v4();
+            const obj8 = obj1(514);
+            obj3[6] = obj1(514).v4();
             obj6.enqueueNotification(obj3);
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -195,6 +195,7 @@ function showNotification(uri) {
 }
 const NativeModules = get_ActivityIndicator.NativeModules;
 const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(NativeModules.ScreenshotHelper);
+initializeDefault;
 class BugReportManager extends tmp4 {
 }
 const prototype = BugReportManager.prototype;
@@ -220,7 +221,7 @@ prototype["initBugReporter"] = function initBugReporter() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -241,10 +242,10 @@ prototype["initBugReporter"] = function initBugReporter() {
             isBugReporterEnabled = undefined;
             hasBugReporterAccess = undefined;
             c3 = undefined;
-            const NativePermissionManager = outer1_5.NativePermissionManager;
+            const NativePermissionManager = closure_1_5.NativePermissionManager;
             hasBugReporterAccess = 1;
             c3 = 1;
-            const obj1 = { value: null, done: false };
+            obj1 = { value: null, done: false };
             obj1[0] = NativePermissionManager.hasPhotoAuthorization();
             return obj1;
           }
@@ -281,7 +282,7 @@ prototype["initBugReporter"] = function initBugReporter() {
             })();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = tmp;
@@ -291,6 +292,6 @@ prototype["initBugReporter"] = function initBugReporter() {
   })();
 };
 const bugReportManager = new BugReportManager();
-const result = require("refreshSourceMapCookie").fileFinishedImporting("modules/bug_reporter/native/BugReportManager.tsx");
+const result = require("set").fileFinishedImporting("modules/bug_reporter/native/BugReportManager.tsx");
 
 export default bugReportManager;

@@ -4,7 +4,7 @@
 // Dependencies: [1241]
 
 // Module 9840 (registerAsset)
-import registerAsset from "registerAsset";
+import registerAsset from "registerAsset" /* 1241 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/user_settings/connections/native/two_way_link/images", width: 18, height: 18.5, scales: [2, 3], hash: "84a5f82b0047a661ec45232254da9031", name: "app_installed_check", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/user_settings", width: 234, height: 147.5, scales: [2, 3], hash: "251353afd104effe8e007def09df8df2", name: "crunchyroll_link_intro", type: "png" });

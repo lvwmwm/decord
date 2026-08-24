@@ -1,52 +1,47 @@
-// Module ID: 14046
-// Function ID: 14047
+// Module ID: 14114
+// Function ID: 14115
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: [19, 17, 1990, 7186, 505, 21, 4661, 712, 589, 8410, 8376, 10376, 8367, 1236, 14036, 8401, 1297, 8397, 2]
+// Dependencies: [19, 17, 1991, 7224, 505, 21, 4668, 712, 589, 8449, 8415, 10416, 8406, 1236, 14104, 8440, 1297, 8436, 2]
 // Exports: default
 
-// Module 14046 (COLLECTIBLES_PREVIEW_SIZE)
-import noop from "noop";
-import get_ActivityIndicator from "registerAsset";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET";
-import { NOOP } from "sum";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14114 (COLLECTIBLES_PREVIEW_SIZE)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "trackCommunicationDisabled" /* 1991 */;
+import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import { NOOP } from "sum" /* 505 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ ActivityIndicator: c4, View: c5 } = get_ActivityIndicator);
 createCacheKey = { previewContainer: null, noneIcon: null };
-createCacheKey = { position: "relative", height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, borderRadius: require("Themes").radii.xs, overflow: "hidden" };
+createCacheKey = { position: "relative", height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, justifyContent: "center", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: ThemesDefault.radii.xs, overflow: "hidden" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { tintColor: require("Themes").colors.TEXT_SUBTLE };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { tintColor: require("Themes").colors.TEXT_SUBTLE };
-let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/user_profile/native/UserProfileAvatarDecorationEditButton.tsx");
+createCacheKey[1] = { tintColor: ThemesDefault.colors.TEXT_SUBTLE };
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { tintColor: ThemesDefault.colors.TEXT_SUBTLE };
+let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileAvatarDecorationEditButton.tsx");
 
 export default function UserProfileAvatarDecorationEditButton(user) {
-  let isFetching;
-  let isTryItOut;
-  let pendingAvatarDecoration;
-  let product;
   user = user.user;
   const guildId = user.guildId;
   ({ pendingAvatarDecoration, isTryItOut } = user);
   let React;
   let userAvatarDecoration;
-  const tmp = createCacheKey();
+  const tmp = callback();
   React = tmp2;
   let obj = user(isTryItOut[8]);
-  const items = [trackCommunicationDisabled];
+  const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
-    if (c3) {
-      member = outer1_6.getMember(guildId, user.id);
+    if (closure_3) {
+      member = closure_1_6.getMember(guildId, user.id);
     }
     return member;
   });
-  let obj1 = user(isTryItOut[10]);
+  obj1 = user(isTryItOut[10]);
   obj = { pendingValue: pendingAvatarDecoration, userValue: user.avatarDecoration, guildValue: null, guildId: null };
   let avatarDecoration;
   if (stateFromStores != null) {
@@ -69,7 +64,7 @@ export default function UserProfileAvatarDecorationEditButton(user) {
   }
   const items1 = [user, guildId, userAvatarDecoration, isTryItOut];
   let name;
-  const callback = React.useCallback(() => {
+  callback = React.useCallback(() => {
     let obj = user(isTryItOut[12]);
     obj = { user, guildId, currentAvatarDecoration: userAvatarDecoration, isTryItOut };
     const result = obj.openAvatarDecorationActionSheet(obj);

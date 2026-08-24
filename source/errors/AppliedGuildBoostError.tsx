@@ -1,12 +1,16 @@
-// Module ID: 4278
-// Function ID: 4279
+// Module ID: 4282
+// Function ID: 4283
 // Name: _getMessageFromRateLimit
-// Dependencies: [4062, 4063, 687, 1236, 2]
+// Dependencies: [4065, 4066, 687, 1236, 2]
 
-// Module 4278 (_getMessageFromRateLimit)
-import "prototype";
+// Module 4282 (_getMessageFromRateLimit)
+import setDefault from "set" /* 687 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import prototypeDefault from "prototype" /* 4065 */;
+import resetCache from "resetCache" /* 4066 */;
 
-const require = arg1;
+require = arg1;
+prototypeDefault;
 class AppliedGuildBoostError extends tmp2 {
   constructor(arg0, arg1) {
     tmp = new tmp(global, arg1, new.target, tmp);
@@ -18,10 +22,10 @@ class AppliedGuildBoostError extends tmp2 {
   }
 }
 AppliedGuildBoostError.prototype["_getMessageFromRateLimit"] = function _getMessageFromRateLimit(body) {
-  let obj = require(4063) /* resetCache */;
-  const diffAsUnitsResult = obj.diffAsUnits(0, body.body.retry_after * importDefault(687).Millis.SECOND);
-  obj = { days: require(1236) /* getSystemLocale */.t["iXc/Ib"], hours: require(1236) /* getSystemLocale */.t.WW9P57, minutes: require(1236) /* getSystemLocale */.t.I7rYev };
-  return require(4063) /* resetCache */.unitsAsStrings(diffAsUnitsResult, obj);
+  let obj = resetCache;
+  const diffAsUnitsResult = obj.diffAsUnits(0, body.body.retry_after * setDefault.Millis.SECOND);
+  obj = { days: getSystemLocale.t["iXc/Ib"], hours: getSystemLocale.t.WW9P57, minutes: getSystemLocale.t.I7rYev };
+  return resetCache.unitsAsStrings(diffAsUnitsResult, obj);
 };
 const result = require("set").fileFinishedImporting("errors/AppliedGuildBoostError.tsx");
 

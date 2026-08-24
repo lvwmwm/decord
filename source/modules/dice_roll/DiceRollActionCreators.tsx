@@ -1,14 +1,17 @@
-// Module ID: 7212
-// Function ID: 7213
+// Module ID: 7250
+// Function ID: 7251
 // Name: startDiceRoll
 // Dependencies: [709, 2]
 // Exports: startDiceRoll
 
-// Module 7212 (startDiceRoll)
-const result = require("set").fileFinishedImporting("modules/dice_roll/DiceRollActionCreators.tsx");
+// Module 7250 (startDiceRoll)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/dice_roll/DiceRollActionCreators.tsx");
 
 export const startDiceRoll = function startDiceRoll(channelId, diceCount, diceSides) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "DICE_ROLL_START", channelId, diceCount, diceSides };
   obj.dispatch(obj);
 };

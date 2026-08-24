@@ -1,24 +1,24 @@
-// Module ID: 12010
-// Function ID: 12011
+// Module ID: 12059
+// Function ID: 12060
 // Name: useFetchCollectiblesProducts
-// Dependencies: [32, 19, 4521, 5301, 676, 647, 1949, 5300, 2]
+// Dependencies: [32, 19, 4526, 5306, 676, 647, 1949, 5305, 2]
 // Exports: useFetchCollectiblesProducts
 
-// Module 12010 (useFetchCollectiblesProducts)
-import _slicedToArray from "_slicedToArray";
-import { useEffect } from "noop";
-import addSku from "addSku";
-import updateCategoriesAndProducts from "updateCategoriesAndProducts";
-import { SKUProductLines } from "ME";
+// Module 12059 (useFetchCollectiblesProducts)
+import closure_2 from "_slicedToArray" /* 32 */;
+import { useEffect } from "noop" /* 19 */;
+import closure_4 from "addSku" /* 4526 */;
+import closure_5 from "updateCategoriesAndProducts" /* 5306 */;
+import { SKUProductLines } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("addSku").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProducts.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProducts.tsx");
 
 export const useFetchCollectiblesProducts = function useFetchCollectiblesProducts(first) {
   const _require = first;
-  const dependencyMap = arg1;
+  dependencyMap = arg1;
   const items = [stateFromStoresArray2];
-  const stateFromStoresArray = _require(647).useStateFromStoresArray(items, () => lib.map((arg0) => addSku.get(arg0)));
+  const stateFromStoresArray = _require(647).useStateFromStoresArray(items, () => lib.map((arg0) => closure_4.get(arg0)));
   let obj = _require(647);
   const items1 = [stateFromStoresArray3];
   const stateFromStoresArray1 = _require(647).useStateFromStoresArray(items1, () => lib.map((arg0) => product.getProduct(arg0)));
@@ -30,8 +30,6 @@ export const useFetchCollectiblesProducts = function useFetchCollectiblesProduct
   stateFromStoresArray3 = _require(647).useStateFromStoresArray(items3, () => lib.map((closure_0) => productFetchBackedOff.isProductFetchBackedOff(closure_0)));
   const items4 = [first, stateFromStoresArray, stateFromStoresArray2, stateFromStoresArray1, arg1, stateFromStoresArray3];
   stateFromStoresArray1(() => {
-    let tmp6;
-    let tmp8;
     const entries = lib.entries();
     while (tmp2 !== undefined) {
       let tmp4 = stateFromStoresArray;
@@ -71,8 +69,8 @@ export const useFetchCollectiblesProducts = function useFetchCollectiblesProduct
         let tmp27 = null != tmp10;
         if (tmp27) {
           let tmp28 = tmp10;
-          let tmp29 = outer1_6;
-          tmp27 = tmp10.productLine !== outer1_6.COLLECTIBLES;
+          let tmp29 = closure_1_6;
+          tmp27 = tmp10.productLine !== closure_1_6.COLLECTIBLES;
         }
         tmp24 = tmp27;
       }
@@ -92,7 +90,7 @@ export const useFetchCollectiblesProducts = function useFetchCollectiblesProduct
       if (!tmp24) {
         let tmp34 = lib;
         let tmp35 = dependencyMap;
-        let obj = lib(5300);
+        let obj = lib(5305);
         let tmp36 = tmp8;
         obj = { includeBundles: null };
         obj[0] = tmp15;

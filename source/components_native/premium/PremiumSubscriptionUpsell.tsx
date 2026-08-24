@@ -1,59 +1,53 @@
-// Module ID: 12970
-// Function ID: 12971
+// Module ID: 13025
+// Function ID: 13026
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 1994, 1922, 676, 7403, 1924, 21, 4661, 712, 4326, 1236, 1898, 589, 4039, 4756, 691, 4734, 12971, 12972, 9337, 4745, 2]
+// Dependencies: [19, 17, 1995, 1922, 676, 7441, 1924, 21, 4668, 712, 4330, 1236, 1898, 589, 4042, 4761, 691, 4739, 13026, 13027, 9374, 4750, 2]
 // Exports: default
 
-// Module 12970 (PremiumSubscriptionUpsell)
-import "registerAsset";
-import get_ActivityIndicator from "Text";
-import _getSystemLocale from "_getSystemLocale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { Gradients } from "items";
-import GuildFeatures from "GuildFeatures";
-import jsxProd from "Button";
-import createCacheKey from "createCacheKey";
+// Module 13025 (PremiumSubscriptionUpsell)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_5 from "_getSystemLocale" /* 1995 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { Gradients } from "items" /* 7441 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c10;
-let c3;
-let c4;
-let c9;
-let closure_12;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ View: c3, Image: c4, StyleSheet } = get_ActivityIndicator);
-({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: metroImportAll, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: c9 } = GuildFeatures);
+({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_8, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: c9 } = GuildFeatures);
 ({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
 createCacheKey = { title: { textAlign: "center" }, subtitle: { lineHeight: 20, marginTop: 8, textAlign: "center" }, upsell: null, upsellCard: null, upsellFeatures: null, upsellFeatureSubLogo: null, upsellFeatureList: null, upsellButton: null, upsellFeatureLogoTier2: null, upsellLabel: null, upsellRow: null };
-createCacheKey = { paddingTop: 32, borderTopWidth: 2 * StyleSheet.hairlineWidth, borderTopColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey = { paddingTop: 32, borderTopWidth: 2 * StyleSheet.hairlineWidth, borderTopColor: ThemesDefault.colors.BORDER_SUBTLE };
 createCacheKey[2] = createCacheKey;
-createCacheKey[3] = { borderRadius: require("Themes").radii.xs, padding: 16, alignItems: "center" };
-let obj1 = { borderRadius: require("Themes").radii.xs, padding: 16, alignItems: "center" };
-createCacheKey[4] = { borderRadius: require("Themes").radii.sm, padding: 16, marginTop: 12, alignSelf: "stretch", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[3] = { borderRadius: ThemesDefault.radii.xs, padding: 16, alignItems: "center" };
+let obj1 = { borderRadius: ThemesDefault.radii.xs, padding: 16, alignItems: "center" };
+createCacheKey[4] = { borderRadius: ThemesDefault.radii.sm, padding: 16, marginTop: 12, alignSelf: "stretch", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 createCacheKey[5] = { alignSelf: "center", height: 10, width: 54 };
 createCacheKey[6] = { marginTop: 8 };
 createCacheKey[7] = { marginTop: 16 };
 createCacheKey[8] = { alignSelf: "center", height: 20, marginTop: 6, width: 84 };
-let obj2 = { borderRadius: require("Themes").radii.sm, padding: 16, marginTop: 12, alignSelf: "stretch", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-createCacheKey[9] = { color: require("Themes").unsafe_rawColors.WHITE, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20 };
-let obj3 = { color: require("Themes").unsafe_rawColors.WHITE, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20 };
-createCacheKey[10] = { paddingVertical: 0, marginTop: 8, color: require("Themes").unsafe_rawColors.WHITE };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj4 = { paddingVertical: 0, marginTop: 8, color: require("Themes").unsafe_rawColors.WHITE };
-const result = require("_getSystemLocale").fileFinishedImporting("components_native/premium/PremiumSubscriptionUpsell.tsx");
+let obj2 = { borderRadius: ThemesDefault.radii.sm, padding: 16, marginTop: 12, alignSelf: "stretch", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+createCacheKey[9] = { color: ThemesDefault.unsafe_rawColors.WHITE, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20 };
+let obj3 = { color: ThemesDefault.unsafe_rawColors.WHITE, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20 };
+createCacheKey[10] = { paddingVertical: 0, marginTop: 8, color: ThemesDefault.unsafe_rawColors.WHITE };
+let closure_13 = createCacheKey.createStyles(createCacheKey);
+let obj4 = { paddingVertical: 0, marginTop: 8, color: ThemesDefault.unsafe_rawColors.WHITE };
+const result = require("set").fileFinishedImporting("components_native/premium/PremiumSubscriptionUpsell.tsx");
 
 export default function PremiumSubscriptionUpsell(arg0) {
-  let onLearnMorePremium;
-  let style;
   ({ onLearnMorePremium, style } = arg0);
-  let tmp = createCacheKey();
+  let tmp = callback();
   let stringResult = dependencyMap;
-  let obj = require(589) /* initialize */;
-  const items = [mergeGuildAvatar];
+  let obj = initialize;
+  const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = importDefault(4039);
+  obj1 = getPremiumPlanItemDefault;
   if (obj1.canUsePremiumGuildMemberProfile(stateFromStores)) {
     return null;
   } else {
@@ -62,25 +56,25 @@ export default function PremiumSubscriptionUpsell(arg0) {
     obj[0] = items1;
     obj = { style: null, start: null, end: null, colors: null, children: null };
     obj[0] = tmp.upsellCard;
-    let tmp5Result = tmp5(4756);
+    let tmp5Result = tmp5(4761);
     obj[1] = tmp2(691).HorizontalGradient.START;
     obj[2] = tmp2(691).HorizontalGradient.END;
     obj[3] = Gradients.PREMIUM_GUILD;
-    tmp5Result = tmp5(4039);
+    tmp5Result = tmp5(4042);
     if (tmp5Result.isPremium(stateFromStores)) {
       obj1 = { children: null };
       const obj2 = { style: null, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: null };
       obj2[0] = tmp.title;
       const intl2 = tmp2(1236).intl;
       obj2[4] = intl2.string(tmp2(1236).t.YYfHlx);
-      const items2 = [tmp6(tmp2(4734).Text, obj2), ];
+      const items2 = [tmp6(tmp2(4739).Text, obj2), ];
       const obj3 = { style: null, variant: "text-md/semibold", color: "text-overlay-light", children: null };
       obj3[0] = tmp.subtitle;
       const intl3 = tmp2(1236).intl;
       const obj4 = { numFreeGuildSubscriptions: null };
       obj4[0] = closure_8;
       obj3[3] = intl3.format(tmp2(1236).t.Af0zEZ, obj4);
-      items2[1] = tmp6(tmp2(4734).Text, obj3);
+      items2[1] = tmp6(tmp2(4739).Text, obj3);
       obj1[0] = items2;
       let tmp6Result = tmp8(closure_11, obj1);
     } else {
@@ -88,32 +82,32 @@ export default function PremiumSubscriptionUpsell(arg0) {
       obj5[0] = tmp.title;
       const intl = tmp2(1236).intl;
       obj5[4] = intl.string(tmp2(1236).t["qUl+K4"]);
-      tmp6Result = tmp6(tmp2(4734).Text, obj5);
+      tmp6Result = tmp6(tmp2(4739).Text, obj5);
     }
     const items3 = [tmp6Result, , ];
     const obj6 = { style: null, children: null };
     obj6[0] = tmp.upsellFeatures;
     const obj7 = { style: null, source: null };
     obj7[0] = tmp.upsellFeatureSubLogo;
-    obj7[1] = tmp5(12971);
+    obj7[1] = tmp5(13026);
     const items4 = [closure_10(closure_4, obj7), , ];
     const obj8 = { style: null, source: null };
     obj8[0] = tmp.upsellFeatureLogoTier2;
-    obj8[1] = tmp5(12972);
+    obj8[1] = tmp5(13027);
     items4[1] = closure_10(closure_4, obj8);
     const obj9 = { style: null, features: null, labelStyle: null, rowStyle: null };
     obj9[0] = tmp.upsellFeatureList;
     const obj10 = { IconComponent: null, label: null, color: null };
-    obj10[0] = tmp2(4326).CheckmarkLargeIcon;
+    obj10[0] = tmp2(4330).CheckmarkLargeIcon;
     const intl4 = tmp2(1236).intl;
     const obj11 = { discountPercentage: null };
-    const tmp5Result1 = tmp5(9337);
+    const tmp5Result1 = tmp5(9374);
     obj11[0] = tmp2(1898).formatPercent(locale.locale, closure_9 / 100);
     obj10[1] = intl4.formatToPlainString(tmp2(1236).t.P3aEj6, obj11);
     obj10[2] = tmp5(712).unsafe_rawColors.WHITE;
     const items5 = [obj10, ];
     const obj12 = { IconComponent: null, label: null, color: null };
-    obj12[0] = tmp2(4326).CheckmarkLargeIcon;
+    obj12[0] = tmp2(4330).CheckmarkLargeIcon;
     const intl5 = tmp2(1236).intl;
     const obj13 = { numFreeGuildSubscriptions: null };
     obj13[0] = closure_8;
@@ -132,7 +126,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     stringResult = intl6.string(tmp2(1236).t.fJOECn);
     obj15[1] = stringResult;
     obj15[2] = onLearnMorePremium;
-    tmp = tmp6(tmp2(4745).Button, obj15);
+    tmp = tmp6(tmp2(4750).Button, obj15);
     obj14[1] = tmp;
     items3[2] = closure_10(closure_3, obj14);
     obj[4] = items3;

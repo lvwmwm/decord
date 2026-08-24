@@ -1,17 +1,19 @@
-// Module ID: 15127
-// Function ID: 15128
+// Module ID: 15191
+// Function ID: 15192
 // Name: MFAButton
-// Dependencies: [19, 21, 4745, 2]
+// Dependencies: [19, 21, 4750, 2]
 // Exports: default
 
-// Module 15127 (MFAButton)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15191 (MFAButton)
+import noopAll from "noop" /* 19 */;
+import Button from "Button" /* 4750 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Button").fileFinishedImporting("modules/mfa/native/components/button.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/mfa/native/components/button.tsx");
 
 export default function MFAButton(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(require(4745) /* Button */.Button, { size: "lg" });
+  return jsx(Button.Button, { size: "lg" });
 };

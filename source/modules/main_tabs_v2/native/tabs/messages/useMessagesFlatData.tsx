@@ -1,14 +1,14 @@
-// Module ID: 15319
-// Function ID: 15320
+// Module ID: 15383
+// Function ID: 15384
 // Name: useMessagesFlatData
-// Dependencies: [19, 15310, 15320, 15358, 15359, 2]
+// Dependencies: [19, 15374, 15384, 15422, 15423, 2]
 // Exports: default
 
-// Module 15319 (useMessagesFlatData)
-import noop from "noop";
+// Module 15383 (useMessagesFlatData)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("HappeningNowItem").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesFlatData.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesFlatData.tsx");
 
 export default function useMessagesFlatData(channels, listItemHeight) {
   listItemHeight = listItemHeight.listItemHeight;
@@ -82,7 +82,7 @@ export default function useMessagesFlatData(channels, listItemHeight) {
       friendsHeaderIndex = length;
       if (0 < tmp22) {
         do {
-          let obj1 = { kind: "suggestedFriend", row: null };
+          obj1 = { kind: "suggestedFriend", row: null };
           obj1[1] = num4;
           let arr3 = listData.push(obj1);
           num4 = num4 + 1;

@@ -1,18 +1,19 @@
-// Module ID: 10678
-// Function ID: 10679
+// Module ID: 10717
+// Function ID: 10718
 // Name: fetchChannelInfo
-// Dependencies: [4495, 5273, 709, 2]
+// Dependencies: [4499, 5278, 709, 2]
 // Exports: fetchChannelInfo
 
-// Module 10678 (fetchChannelInfo)
-import _handleConnectionOpen from "_handleConnectionOpen";
-import handleConnectionReset from "handleConnectionReset";
+// Module 10717 (fetchChannelInfo)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "_handleConnectionOpen" /* 4499 */;
+import closure_3 from "handleConnectionReset" /* 5278 */;
 
-const result = require("dispatcher").fileFinishedImporting("modules/channel/ChannelInfoActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/channel/ChannelInfoActionCreators.tsx");
 
 export const fetchChannelInfo = function fetchChannelInfo(guild_id) {
-  if (!handleConnectionReset.hasRequestedStatuses(guild_id)) {
-    let obj = importDefault(709);
+  if (!closure_3.hasRequestedStatuses(guild_id)) {
+    let obj = dispatcherDefault;
     obj = { type: "FETCH_CHANNEL_INFO", guildId: null };
     obj[1] = guild_id;
     obj.dispatch(obj);

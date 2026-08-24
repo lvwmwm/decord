@@ -1,19 +1,20 @@
-// Module ID: 16317
-// Function ID: 16318
+// Module ID: 16411
+// Function ID: 16412
 // Name: VoiceControlsNuxActionSheetImporter
-// Dependencies: [32, 19, 4773, 11440, 4544, 21, 16318, 2007, 11439, 4115, 1377, 10261, 10262, 2]
+// Dependencies: [32, 19, 4778, 11489, 4549, 21, 16412, 2008, 11488, 4119, 1377, 10300, 10301, 2]
 
-// Module 16317 (VoiceControlsNuxActionSheetImporter)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import getParticipants from "getParticipants";
-import { VoicePanelModes } from "VoicePanelModes";
-import { isActivityParticipant } from "ParticipantTypes";
-import { jsx } from "jsxProd";
+// Module 16411 (VoiceControlsNuxActionSheetImporter)
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import closure_5 from "getParticipants" /* 4778 */;
+import { VoicePanelModes } from "VoicePanelModes" /* 11489 */;
+import { isActivityParticipant } from "ParticipantTypes" /* 4549 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function VoiceControlsNuxActionSheetImporter() {
-  return require(2007) /* asyncRequireImpl */(16318, dependencyMap.paths);
+  return asyncRequireImpl(16412, dependencyMap.paths);
 }
 let c4 = importAllResult;
 let closure_10 = { code: "function VoicePanelDismissableContentTsx1(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get;return mode.get()===VoicePanelModes.PANEL?(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id:undefined;}" };
@@ -29,14 +30,14 @@ const memoResult = importAllResult.memo(function VoicePanelDismissibleContent() 
   callback = callback.useCallback((arg0) => {
     let tmp = null != arg0;
     if (tmp) {
-      tmp = outer1_7(outer1_5.getParticipant(channelId, arg0));
+      tmp = closure_1_7(closure_1_5.getParticipant(channelId, arg0));
     }
     callback(tmp);
   }, items);
   let obj = channelId(mode[9]);
   const fn = function h() {
     let tmp;
-    if (mode.get() === outer1_6.PANEL) {
+    if (mode.get() === closure_1_6.PANEL) {
       const value = focused.get();
       let id;
       if (value != null) {
@@ -70,8 +71,6 @@ const memoResult = importAllResult.memo(function VoicePanelDismissibleContent() 
   return jsx(focused(mode[11]), {
     contentTypes: items2,
     children(arg0) {
-      let markAsDismissed;
-      let visibleContent;
       ({ visibleContent, markAsDismissed } = arg0);
       let tmp3 = null;
       if (visibleContent === channelId(mode[10]).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX) {
@@ -84,6 +83,6 @@ const memoResult = importAllResult.memo(function VoicePanelDismissibleContent() 
     }
   });
 });
-const result = require("getParticipants").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelDismissableContent.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelDismissableContent.tsx");
 
 export default memoResult;

@@ -1,21 +1,21 @@
-// Module ID: 11628
-// Function ID: 11629
-// Dependencies: [19, 17, 21, 4661, 712, 11616, 1236, 4090, 2]
+// Module ID: 11677
+// Function ID: 11678
+// Dependencies: [19, 17, 21, 4668, 712, 11665, 1236, 4093, 2]
 
-// Module 11628
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 11677
+import ThemesDefault from "Themes" /* 712 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 11665 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let obj = { icon: null };
-obj = { height: 40, width: 40, resizeMode: "contain", borderRadius: require("Themes").radii.md };
+obj = { height: 40, width: 40, resizeMode: "contain", borderRadius: ThemesDefault.radii.md };
 obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(function ChatInputGuardRequiredLobbyApplicationAuthorization(requiredLinkedLobbyApplication) {
-  let shouldRelaunchLinkedLobbyApplication;
-  let showLinkedLobbyApplicationLoadingIndicator;
+const memoResult = importAllResult.memo(function ChatInputGuardRequiredLobbyApplicationAuthorization(requiredLinkedLobbyApplication) {
   requiredLinkedLobbyApplication = requiredLinkedLobbyApplication.requiredLinkedLobbyApplication;
   let connectionEntrypointUrl;
   ({ showLinkedLobbyApplicationLoadingIndicator, shouldRelaunchLinkedLobbyApplication } = requiredLinkedLobbyApplication);
@@ -35,10 +35,10 @@ const memoResult = require("noop").memo(function ChatInputGuardRequiredLobbyAppl
         obj = { name: null };
         obj[0] = requiredLinkedLobbyApplication.name;
         obj[2] = intl3.format(connectionEntrypointUrl(1236).t["SU2mY/"], obj);
-        return jsx(importDefault(11616), { name: null });
+        return jsx(ChatInputGuardDefault, { name: null });
       } else {
         connectionEntrypointUrl = requiredLinkedLobbyApplication.connectionEntrypointUrl;
-        const obj1 = { type: "simple-action", icon: null, message: null, actionLabel: null, actionOnPress: null };
+        obj1 = { type: "simple-action", icon: null, message: null, actionLabel: null, actionOnPress: null };
         obj1[1] = tmp5;
         const intl = connectionEntrypointUrl(1236).intl;
         const obj2 = { name: null };
@@ -52,15 +52,15 @@ const memoResult = require("noop").memo(function ChatInputGuardRequiredLobbyAppl
         obj1[3] = stringResult;
         let fn;
         if (null != connectionEntrypointUrl) {
-          fn = () => outer1_1(outer1_2[7]).openURLExternally(connectionEntrypointUrl);
+          fn = () => closure_1_1(closure_1_2[7]).openURLExternally(connectionEntrypointUrl);
         }
         obj1[4] = fn;
-        return jsx(importDefault(11616), { type: "simple-action", icon: null, message: null, actionLabel: null, actionOnPress: null });
+        return jsx(ChatInputGuardDefault, { type: "simple-action", icon: null, message: null, actionLabel: null, actionOnPress: null });
       }
     }
   }
-  return jsx(importDefault(11616), { type: "simple-action", message: "" });
+  return jsx(ChatInputGuardDefault, { type: "simple-action", message: "" });
 });
-const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardRequiredLobbyApplicationAuthorization.tsx");
+const result = require("set").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardRequiredLobbyApplicationAuthorization.tsx");
 
 export default memoResult;

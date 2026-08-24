@@ -4,7 +4,8 @@
 // Dependencies: [737, 609]
 
 // Module 747 (getNative)
-import getNative from "getNative";
+import _mod609 from "module_609" /* 609 */;
+import getNative from "getNative" /* 737 */;
 
 
-export default getNative(require("module_609"), "Map");
+export default getNative(_mod609, "Map");

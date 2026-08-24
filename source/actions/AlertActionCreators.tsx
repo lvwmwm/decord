@@ -1,9 +1,12 @@
-// Module ID: 4827
-// Function ID: 4828
+// Module ID: 4832
+// Function ID: 4833
 // Name: set
-// Dependencies: [2, 4656]
+// Dependencies: [2, 4662]
 
-// Module 4827 (set)
-const result = require("set").fileFinishedImporting("actions/AlertActionCreators.tsx");
+// Module 4832 (set)
+import set from "set" /* 2 */;
+import _mod4662 from "module_4662" /* 4662 */;
 
-export { default as default } from "module_4656";
+const result = set.fileFinishedImporting("actions/AlertActionCreators.tsx");
+
+export default _mod4662.default;

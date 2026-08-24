@@ -1,24 +1,28 @@
-// Module ID: 12843
-// Function ID: 12844
-// Dependencies: [19, 1922, 4045, 5357, 1924, 21, 4661, 712, 589, 1433, 7922, 2]
+// Module ID: 12898
+// Function ID: 12899
+// Dependencies: [19, 1922, 4048, 5362, 1924, 21, 4668, 712, 589, 1433, 7961, 2]
 
-// Module 12843
-import mergeGuildAvatar from "mergeGuildAvatar";
-import reset from "reset";
-import addEntitlement from "addEntitlement";
-import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_6 } from "GuildFeatures";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 12898
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import areSetsEqual from "areSetsEqual" /* 1433 */;
+import AccountCreditTierDefault from "AccountCreditTier" /* 7961 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "reset" /* 4048 */;
+import closure_5 from "addEntitlement" /* 5362 */;
+import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_6 } from "GuildFeatures" /* 1924 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let obj = { creditList: null };
-obj = { borderRadius: require("Themes").modules.mobile.TABLE_ROW_BORDER_RADIUS };
+obj = { borderRadius: ThemesDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS };
 obj[0] = obj;
 let closure_8 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(function BuyNitroAccountCredit() {
-  let obj = require(589) /* initialize */;
-  const items = [addEntitlement];
+const memoResult = importAllResult.memo(function BuyNitroAccountCredit() {
+  let obj = initialize;
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => {
     forApplication = forApplication.getForApplication(closure_6);
     if (forApplication == null) {
@@ -26,13 +30,13 @@ const memoResult = require("noop").memo(function BuyNitroAccountCredit() {
       forApplication = new Set();
     }
     return forApplication;
-  }, [], require(1433) /* areSetsEqual */.areSetsEqual);
+  }, [], areSetsEqual.areSetsEqual);
   const tmp = callback();
-  const items1 = [reset];
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
-  const obj2 = require(589) /* initialize */;
-  const items2 = [mergeGuildAvatar];
-  const stateFromStores2 = require(589) /* initialize */.useStateFromStores(items2, () => {
+  const items1 = [closure_4];
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  const obj2 = initialize;
+  const items2 = [closure_3];
+  const stateFromStores2 = initialize.useStateFromStores(items2, () => {
     currentUser = currentUser.getCurrentUser();
     let flag;
     if (currentUser != null) {
@@ -44,8 +48,8 @@ const memoResult = require("noop").memo(function BuyNitroAccountCredit() {
     return flag;
   });
   obj = { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 };
-  return jsx(importDefault(7922), { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 });
+  return jsx(AccountCreditTierDefault, { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 });
 });
-const result = require("reset").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroAccountCredit.tsx");
+const result = require("set").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroAccountCredit.tsx");
 
 export default memoResult;

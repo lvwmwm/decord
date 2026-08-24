@@ -1,20 +1,20 @@
-// Module ID: 9928
-// Function ID: 9929
+// Module ID: 9967
+// Function ID: 9968
 // Name: useNavigatorConfirmChangesOnBack
-// Dependencies: [19, 17, 676, 9929, 9446, 2]
+// Dependencies: [19, 17, 676, 9968, 9483, 2]
 // Exports: default
 
-// Module 9928 (useNavigatorConfirmChangesOnBack)
-import noop from "noop";
-import { Keyboard } from "get ActivityIndicator";
-import { NOOP } from "ME";
+// Module 9967 (useNavigatorConfirmChangesOnBack)
+import closure_2 from "noop" /* 19 */;
+import { Keyboard } from "get ActivityIndicator" /* 17 */;
+import { NOOP } from "ME" /* 676 */;
 
-const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/utils/useNavigatorConfirmChangesOnBack.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/utils/useNavigatorConfirmChangesOnBack.tsx");
 
 export default function useNavigatorConfirmChangesOnBack() {
   const ref = React.useRef(null);
-  const dependencyMap = React.useRef(false);
-  obj = { onGoBack: ref(9929)(obj).onGoBack, ref };
+  dependencyMap = React.useRef(false);
+  obj = { onGoBack: ref(9968)(obj).onGoBack, ref };
   obj = {
     onBeforeGoBack(preventable) {
       if (preventable.preventable) {
@@ -29,11 +29,11 @@ export default function useNavigatorConfirmChangesOnBack() {
         }
         if (!current) {
           preventable.preventDefault();
-          outer1_3.dismiss();
+          closure_1_3.dismiss();
           const obj = { hasEdits: true, resetPending: null, onConfirm: null };
-          obj[1] = outer1_4;
+          obj[1] = closure_1_4;
           obj[2] = function onConfirm() {
-            outer1_1.current = true;
+            closure_1_1.current = true;
             preventable.goBack();
           };
           ref(ref2[4])(obj);

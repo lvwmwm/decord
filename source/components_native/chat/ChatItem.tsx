@@ -1,64 +1,60 @@
-// Module ID: 10066
-// Function ID: 10067
+// Module ID: 10105
+// Function ID: 10106
 // Name: DCDChatItem
-// Dependencies: [32, 19, 17, 4662, 676, 8158, 21, 10067, 686, 10068, 5385, 10069, 4661, 712, 500, 8340, 4097, 689, 4756, 2]
+// Dependencies: [32, 19, 17, 4669, 676, 8197, 21, 712, 10106, 686, 10107, 5390, 10108, 4668, 500, 8379, 4100, 689, 4761, 2]
 // Exports: default
 
-// Module 10066 (DCDChatItem)
-import _slicedToArray from "_slicedToArray";
-import set from "set";
-import { View } from "n";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { MessageTypes } from "ME";
-import Changeset from "Changeset";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10105 (DCDChatItem)
+import set from "set" /* 686 */;
+import ThemesDefault from "Themes" /* 712 */;
+import isSystemMessageDefault from "isSystemMessage" /* 5390 */;
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 10106 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { MessageTypes } from "ME" /* 676 */;
+import Changeset from "Changeset" /* 8197 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function DCDChatItem(message) {
   message = message.message;
   const merged = Object.assign(message, Object.create(null));
   if (message.type === MessageTypes.AUTO_MODERATION_ACTION) {
     let obj = {};
     const merged1 = Object.assign(merged);
-    let tmp3Result = callback(require(10067) /* __INTERNAL_VIEW_CONFIG */.default, obj);
+    let tmp3Result = callback(__INTERNAL_VIEW_CONFIG.default, obj);
   } else {
-    const AUTOMOD_INCIDENT_ACTIONS = require(686) /* set */.MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
+    const AUTOMOD_INCIDENT_ACTIONS = set.MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
     if (AUTOMOD_INCIDENT_ACTIONS.has(message.type)) {
       obj = {};
       const merged2 = Object.assign(merged);
-      tmp3Result = callback(tmp21(10068).default, obj);
-    } else if (importDefault(5385)(message)) {
-      const obj1 = {};
+      tmp3Result = callback(tmp21(10107).default, obj);
+    } else if (isSystemMessageDefault(message)) {
+      obj1 = {};
       const merged3 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(10069).default, obj1);
+      tmp3Result = tmp3(tmp21(10108).default, obj1);
     } else {
       obj = {};
       const merged4 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(10068).default, obj);
+      tmp3Result = tmp3(tmp21(10107).default, obj);
     }
   }
   return tmp3Result;
 }
-({ RowType: metroImportAll, Changeset: c9 } = Changeset);
+({ RowType: closure_8, Changeset: c9 } = Changeset);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
-let closure_13 = createCacheKey.createStyles((marginLeft, marginTop) => {
+const PX_4 = ThemesDefault.space.PX_4;
+let closure_14 = createCacheKey.createStyles((marginLeft, marginTop, paddingTop) => {
+  const container = { position: "relative", overflow: "hidden", paddingTop };
   const offset = { marginTop: -marginTop, marginLeft: -marginLeft };
-  return { container: { position: "relative", overflow: "hidden" }, offset, gradient: { position: "absolute", bottom: 0, height: 24, width: "100%" }, itemRow: { backgroundColor: "transparent" } };
+  return { container, offset, gradient: { position: "absolute", bottom: 0, height: 24, width: "100%" }, itemRow: { backgroundColor: "transparent" } };
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("components_native/chat/ChatItem.tsx");
+const result = require("set").fileFinishedImporting("components_native/chat/ChatItem.tsx");
 
 export default function _default(rowGenerator) {
-  let backgroundColor;
-  let c6;
-  let maxHeight;
-  let modifyRow;
-  let pointerEvents;
-  let tmp4;
   rowGenerator = rowGenerator.rowGenerator;
   const message = rowGenerator.message;
   let num = rowGenerator.horizontalOffset;
@@ -70,12 +66,12 @@ export default function _default(rowGenerator) {
   const messageSizeCacheRef = rowGenerator.messageSizeCacheRef;
   ({ backgroundColor, pointerEvents } = rowGenerator);
   if (backgroundColor === undefined) {
-    backgroundColor = message(modifyRow[13]).colors.BACKGROUND_BASE_LOWER;
+    backgroundColor = message(modifyRow[7]).colors.BACKGROUND_BASE_LOWER;
   }
   const gradientColors = rowGenerator.gradientColors;
   let roleStyle;
   let first;
-  let closure_8;
+  closure_8 = undefined;
   roleStyle = undefined;
   let rawRow;
   let token;
@@ -112,17 +108,34 @@ export default function _default(rowGenerator) {
     }
     return num;
   }, items1);
-  const tmp9 = callback2(num, memo1);
+  obj1 = rowGenerator(modifyRow[14]);
+  let num2 = 0;
+  if (!obj1.isAndroid()) {
+    num2 = 0;
+    if (rawRow.contextType !== tmp9(tmp10[15]).MessageContextType.SEARCH) {
+      num2 = 0;
+      if (null != rawRow.message) {
+        num2 = 0;
+        if ("avatarDecorationURL" in rawRow.message) {
+          num2 = 0;
+          if (null != rawRow.message.avatarDecorationURL) {
+            num2 = PX_4;
+          }
+        }
+      }
+    }
+  }
+  const tmp12 = callback2(num, memo1, num2);
   const items2 = [onLayout];
   const items3 = [messageSizeCacheRef, message.id];
-  const callback = messageSizeCacheRef.useCallback((nativeEvent) => {
+  const callback = obj.useCallback((nativeEvent) => {
     lib(nativeEvent.nativeEvent.layout.width);
     if (onLayout != null) {
       onLayout(nativeEvent);
     }
   }, items2);
-  let tmp14Result = null != maxHeight;
-  const callback1 = messageSizeCacheRef.useCallback((nativeEvent) => {
+  let tmp18Result = null != maxHeight;
+  const callback1 = obj.useCallback((nativeEvent) => {
     const height = nativeEvent.nativeEvent.layout.height;
     if (height > 0) {
       if (null != messageSizeCacheRef) {
@@ -133,31 +146,34 @@ export default function _default(rowGenerator) {
       _undefined(height);
     }
   }, items3);
-  if (tmp14Result) {
-    tmp14Result = tmp4 - memo1 >= maxHeight;
+  if (tmp18Result) {
+    tmp18Result = tmp4 - memo1 >= maxHeight;
   }
-  let tmp13;
+  let tmp16;
   if (messageSizeCacheRef != null) {
     const current = messageSizeCacheRef.current;
     if (current != null) {
-      tmp13 = current[message.id];
+      tmp16 = current[message.id];
     }
   }
-  if (tmp14Result) {
-    tmp13 = maxHeight;
+  let sum = tmp16;
+  if (tmp18Result) {
+    sum = tmp16;
+    if (null != maxHeight) {
+      sum = maxHeight + num2;
+    }
   }
-  obj = { style: tmp9.offset, onLayout: callback1, children: rawRow(DCDChatItem, obj) };
-  obj = { message, row: memo.row, style: tmp9.itemRow };
-  const tmp14 = rawRow;
-  const tmp15 = gradientColors;
+  obj = { style: tmp12.offset, onLayout: callback1, children: rawRow(DCDChatItem, obj) };
+  obj = { message, row: memo.row, style: tmp12.itemRow };
+  const tmp18 = rawRow;
+  const tmp19 = gradientColors;
   const tmp3 = onLayout(messageSizeCacheRef.useState(0), 2);
-  const tmp16 = rawRow(gradientColors, obj);
-  const tmp17 = modifyRow;
+  const tmp20 = rawRow(gradientColors, obj);
   token = rowGenerator(modifyRow[16]).useToken(backgroundColor);
   const items4 = [gradientColors, token];
-  const obj1 = { style: items5, onLayout: callback, pointerEvents, children: null };
-  items5 = [tmp9.container, rowGenerator.style, { height: tmp13 }];
-  let tmp21 = null != first;
+  obj1 = { style: items5, onLayout: callback, pointerEvents, children: null };
+  items5 = [tmp12.container, rowGenerator.style, { height: sum }];
+  let tmp24 = null != first;
   const memo2 = obj.useMemo(() => {
     let tmp = gradientColors;
     if (gradientColors == null) {
@@ -168,20 +184,20 @@ export default function _default(rowGenerator) {
     }
     return tmp;
   }, items4);
-  if (tmp21) {
-    tmp21 = tmp16;
+  if (tmp24) {
+    tmp24 = tmp20;
   }
-  const items6 = [tmp21, ];
-  if (tmp14Result) {
+  const items6 = [tmp24, ];
+  if (tmp18Result) {
     const obj2 = { colors: null, style: null };
     obj2[0] = memo2;
-    const items7 = [tmp9.gradient, rowGenerator.gradientStyles];
+    const items7 = [tmp12.gradient, rowGenerator.gradientStyles];
     obj2[1] = items7;
-    tmp14Result = tmp14(message(tmp17[18]), obj2);
+    tmp18Result = tmp18(message(tmp10[18]), obj2);
   }
-  items6[1] = tmp14Result;
+  items6[1] = tmp18Result;
   obj1[3] = items6;
-  return token(tmp15, obj1);
+  return token(tmp19, obj1);
 };
 export const DCDMessageView = require("__INTERNAL_VIEW_CONFIG").default;
 export const DCDSystemMessageView = require("__INTERNAL_VIEW_CONFIG").default;

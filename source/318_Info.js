@@ -4,13 +4,13 @@
 // Dependencies: [42, 41]
 
 // Module 318 (Info)
-import importDefaultResult from "_createClass";
-import _classCallCheck from "_classCallCheck";
+import importDefaultResult from "_createClass" /* 42 */;
+import closure_1 from "_classCallCheck" /* 41 */;
 
 const FillRateHelper = global;
 class Info {
   constructor() {
-    tmp = _classCallCheck(this, Info);
+    tmp = closure_1(this, Info);
     this.any_blank_count = 0;
     this.any_blank_ms = 0;
     this.any_blank_speed_sum = 0;
@@ -31,10 +31,10 @@ let c5 = null;
 class FillRateHelper {
   constructor(arg0) {
     self = this;
-    tmp = _classCallCheck(this, FillRateHelper);
+    tmp = closure_1(this, FillRateHelper);
     this._anyBlankStartTime = null;
     this._enabled = false;
-    tmp2 = new Info();
+    tmp2 = new closure_2();
     this._info = tmp2;
     this._mostlyBlankStartTime = null;
     this._samplesStartTime = null;
@@ -89,9 +89,6 @@ const items = [
   {
     key: "computeBlankness",
     value: function computeBlankness(props, cellsAroundViewport, _scrollMetrics) {
-      let dOffset;
-      let offset;
-      let visibleLength;
       const self = this;
       if (this._enabled) {
         if (0 !== props.getItemCount(props.data)) {
@@ -257,14 +254,14 @@ const items = [
 obj = {
   key: "addListener",
   value: function addListener(arg0) {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     if (null === c5) {
       const _console = console;
       console.warn("Call `FillRateHelper.setSampleRate` before `addListener`.");
     }
     return {
       remove() {
-        outer1_3 = outer1_3.filter((arg0) => closure_0 !== arg0);
+        closure_3 = closure_3.filter((arg0) => closure_0 !== arg0);
       }
     };
   }
@@ -274,13 +271,13 @@ const items1 = [
   {
     key: "setSampleRate",
     value: function setSampleRate(arg0) {
-      let closure_5 = arg0;
+      closure_5 = arg0;
     }
   },
   {
     key: "setMinSampleCount",
     value: function setMinSampleCount(arg0) {
-      let closure_4 = arg0;
+      closure_4 = arg0;
     }
   }
 ];

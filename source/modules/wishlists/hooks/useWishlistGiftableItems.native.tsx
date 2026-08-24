@@ -1,12 +1,12 @@
-// Module ID: 9202
-// Function ID: 9203
+// Module ID: 9239
+// Function ID: 9240
 // Name: set
 // Dependencies: [19, 676, 2]
 // Exports: useWishlistGiftableItems
 
-// Module 9202 (set)
-import noop from "noop";
-import set from "set";
+// Module 9239 (set)
+import closure_0 from "noop" /* 19 */;
+import set from "set" /* 2 */;
 
 let items = [, , ];
 ({ COLLECTIBLES: arr[0], PREMIUM: arr[1], SOCIAL_LAYER_GAME_ITEM: arr[2] } = require("ME").SKUProductLines);

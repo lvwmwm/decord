@@ -1,61 +1,64 @@
-// Module ID: 10965
-// Function ID: 10966
+// Module ID: 11004
+// Function ID: 11005
 // Name: QuestCollectibleRewardModalMessages
-// Dependencies: [1922, 6716, 21, 4661, 712, 589, 10491, 10684, 4734, 1236, 7459, 10389, 2]
+// Dependencies: [1922, 6753, 21, 4668, 712, 589, 10530, 10723, 4739, 1236, 7497, 10428, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 10965 (QuestCollectibleRewardModalMessages)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { QuestsExperimentLocations } from "QuestsExperimentLocations";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11004 (QuestCollectibleRewardModalMessages)
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import getQuestLogger from "getQuestLogger" /* 7497 */;
+import MODAL_KEYDefault from "MODAL_KEY" /* 10428 */;
+import _getDefaultRewardName from "_getDefaultRewardName" /* 10530 */;
+import useQuests from "useQuests" /* 10723 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 6753 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function QuestCollectibleRewardModalMessages(quest) {
   quest = quest.quest;
-  const tmp = createCacheKey();
-  let obj = require(589) /* initialize */;
-  const items = [mergeGuildAvatar];
+  const tmp = callback3();
+  let obj = initialize;
+  const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = require(10491) /* _getDefaultRewardName */;
+  obj1 = _getDefaultRewardName;
   const defaultRewardNameWithArticle = obj1.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
   obj = { children: null };
-  const claimedCollectibleRewardMessage = require(10684) /* useQuests */.useClaimedCollectibleRewardMessage(quest.config);
+  const claimedCollectibleRewardMessage = useQuests.useClaimedCollectibleRewardMessage(quest.config);
   obj = { variant: "heading-xl/bold", style: tmp.title, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.format(require(1236) /* getSystemLocale */.t.YNaxMp, { itemName: defaultRewardNameWithArticle });
-  const items1 = [callback(require(4734) /* Text */.Text, obj), ];
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.format(getSystemLocale.t.YNaxMp, { itemName: defaultRewardNameWithArticle });
+  const items1 = [callback(Text.Text, obj), ];
   obj1 = { variant: "text-md/medium", style: tmp.title, children: claimedCollectibleRewardMessage };
-  items1[1] = callback(require(4734) /* Text */.Text, obj1);
+  items1[1] = callback(Text.Text, obj1);
   obj[0] = items1;
   return callback2(closure_6, obj);
 }
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { title: null };
-createCacheKey = { textAlign: "center", marginHorizontal: require("Themes").space.PX_32 };
+createCacheKey = { textAlign: "center", marginHorizontal: ThemesDefault.space.PX_32 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/quests/native/openQuestCollectibleRewardModal.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/quests/native/openQuestCollectibleRewardModal.tsx");
 
 export const openQuestCollectibleRewardModal = function openQuestCollectibleRewardModal(onSuccess) {
-  let product;
-  let require;
   ({ quest: require, product } = onSuccess);
-  let obj = require(7459) /* getQuestLogger */;
+  let obj = getQuestLogger;
   obj = { location: QuestsExperimentLocations.QUEST_HOME_MOBILE };
   const questLogger = obj.getQuestLogger(obj);
   if (null != product) {
     obj = { product: null, renderMessages: null, onSuccess: null };
     obj[0] = product;
     obj[1] = function renderMessages() {
-      return outer1_5(outer1_9, { quest: closure_0 });
+      return closure_1_5(closure_1_9, { quest: closure_0 });
     };
     obj[2] = onSuccess.onSuccess;
-    importDefault(10389).open(obj);
-    const obj4 = importDefault(10389);
+    MODAL_KEYDefault.open(obj);
+    const obj4 = MODAL_KEYDefault;
   } else {
     questLogger.warn("Product is null");
   }

@@ -1,15 +1,19 @@
-// Module ID: 14890
-// Function ID: 14891
+// Module ID: 14954
+// Function ID: 14955
 // Name: pressable
-// Dependencies: [4288, 1212, 21, 13946, 589, 13947, 14199, 10669, 13957, 2]
+// Dependencies: [4292, 1212, 21, 14014, 589, 14015, 14267, 10708, 14025, 2]
 
-// Module 14890 (pressable)
-import getHash from "getHash";
-import initialize from "initialize";
-import { jsx } from "jsxProd";
-import createToggle from "createToggle";
+// Module 14954 (pressable)
+import initialize from "initialize" /* 589 */;
+import navigateToDevTools from "navigateToDevTools" /* 14014 */;
+import DevToolsContentSortButtons from "DevToolsContentSortButtons" /* 14015 */;
+import useStaffOrDeveloperSettingPredicate from "useStaffOrDeveloperSettingPredicate" /* 14267 */;
+import closure_2 from "getHash" /* 4292 */;
+import closure_3 from "initialize" /* 1212 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
     return "Experiments Overrides Active";
@@ -17,31 +21,30 @@ createToggle = {
   parent: null,
   IconComponent: require("BeakerIcon").BeakerIcon,
   useDescription: function useExperimentOverrideActiveDescription() {
-    let obj = require(589) /* initialize */;
-    const items = [getHash];
+    let obj = initialize;
+    const items = [closure_2];
     const stateFromStores = obj.useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
-    const items1 = [initialize];
-    const obj2 = require(589) /* initialize */;
-    obj = { label: "Experiments overridden: ", value: null };
-    obj[1] = stateFromStores + require(589) /* initialize */.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length).toString();
-    return jsx(require(13947) /* DevToolsContentSortButtons */.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: null });
+    const items1 = [closure_3];
+    const obj2 = initialize;
+    obj = { label: "Experiments overridden: ", value: stateFromStores + initialize.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length).toString() };
+    return jsx(DevToolsContentSortButtons.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: stateFromStores + initialize.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length).toString() });
   },
   usePredicate: function useHasExperimentOverrideActive() {
-    const staffOrDeveloperSettingPredicate = require(14199) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
-    const obj = require(14199) /* useStaffOrDeveloperSettingPredicate */;
-    const items = [getHash];
-    const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
-    const obj2 = require(589) /* initialize */;
-    const items1 = [initialize];
-    const obj3 = require(589) /* initialize */;
-    return stateFromStores + require(589) /* initialize */.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length) > 0 && staffOrDeveloperSettingPredicate;
+    const staffOrDeveloperSettingPredicate = useStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
+    const obj = useStaffOrDeveloperSettingPredicate;
+    const items = [closure_2];
+    const stateFromStores = initialize.useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
+    const obj2 = initialize;
+    const items1 = [closure_3];
+    const obj3 = initialize;
+    return stateFromStores + initialize.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length) > 0 && staffOrDeveloperSettingPredicate;
   },
   onPress: function handleExperimentOverrideActivePress() {
-    require(13946) /* navigateToDevTools */.navigateToDevTools({ screenKey: "experiments" });
+    navigateToDevTools.navigateToDevTools({ screenKey: "experiments" });
   },
   withArrow: true
 };
 createToggle = createToggle.createPressable(createToggle);
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/defs/native/ExperimentOverrideActiveSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/ExperimentOverrideActiveSetting.tsx");
 
 export default createToggle;

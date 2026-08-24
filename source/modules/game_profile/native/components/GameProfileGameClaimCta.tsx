@@ -1,17 +1,17 @@
-// Module ID: 12030
-// Function ID: 12031
+// Module ID: 12079
+// Function ID: 12080
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 676, 21, 9101, 7279, 1954, 4745, 1236, 2]
+// Dependencies: [5, 19, 676, 21, 9138, 7317, 1954, 4750, 1236, 2]
 // Exports: default
 
-// Module 12030 (GameProfileGameClaimCta)
-import createHandoffTokenWithLoadingModal from "createHandoffTokenWithLoadingModal";
-import noop from "noop";
-import { RelativeMarketingURLs } from "ME";
-import { jsx } from "jsxProd";
+// Module 12079 (GameProfileGameClaimCta)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import { RelativeMarketingURLs } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/game_profile/native/components/GameProfileGameClaimCta.tsx");
+const result = require("set").fileFinishedImporting("modules/game_profile/native/components/GameProfileGameClaimCta.tsx");
 
 export default function GameProfileGameClaimCta(trackAction) {
   trackAction = trackAction.trackAction;
@@ -30,7 +30,7 @@ export default function GameProfileGameClaimCta(trackAction) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -45,12 +45,12 @@ export default function GameProfileGameClaimCta(trackAction) {
             obj[0] = arg1;
             return obj;
           } else {
-            v0(v0(outer1_2[4]).GameProfileTrackActionActions.ClaimGame);
-            let obj1 = v02(outer1_2[5]);
+            v0(v0(closure_1_2[4]).GameProfileTrackActionActions.ClaimGame);
+            obj1 = v02(closure_1_2[5]);
             v02 = 1;
             v0 = 1;
             obj1 = { value: null, done: false };
-            obj1[0] = obj1.redirectDeveloperPortalWithHandoffToken(outer1_5.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
+            obj1[0] = obj1.redirectDeveloperPortalWithHandoffToken(closure_1_5.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -63,7 +63,7 @@ export default function GameProfileGameClaimCta(trackAction) {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         v0 = tmp;
@@ -79,7 +79,7 @@ export default function GameProfileGameClaimCta(trackAction) {
     const intl = trackAction(1236).intl;
     obj[2] = intl.string(trackAction(1236).t["mqg+to"]);
     obj[3] = callback;
-    let tmp3 = jsx(trackAction(4745).Button, { variant: "secondary", size: "md", text: null, onPress: null });
+    let tmp3 = jsx(trackAction(4750).Button, { variant: "secondary", size: "md", text: null, onPress: null });
   } else {
     tmp3 = null;
   }

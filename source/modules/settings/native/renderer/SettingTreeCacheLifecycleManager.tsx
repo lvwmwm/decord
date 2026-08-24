@@ -1,14 +1,15 @@
-// Module ID: 16702
-// Function ID: 16703
+// Module ID: 16798
+// Function ID: 16799
 // Name: prototype
-// Dependencies: [5038, 15059, 2]
+// Dependencies: [5043, 15123, 2]
 
-// Module 16702 (prototype)
-import "initialize";
+// Module 16798 (prototype)
+import initializeDefault from "initialize" /* 5043 */;
 
+initializeDefault;
 let prototype = function SettingTreeManagerLifecycleManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const importDefault = applyArgumentsResult;
+  importDefault = applyArgumentsResult;
   applyArgumentsResult.actions = {
     POST_CONNECTION_OPEN() {
       return applyArgumentsResult.handleConnectionOpen();

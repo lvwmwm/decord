@@ -1,19 +1,18 @@
-// Module ID: 5312
-// Function ID: 5313
+// Module ID: 5317
+// Function ID: 5318
 // Name: getProductOrbPrice
-// Dependencies: [32, 5307, 676, 1949, 2]
+// Dependencies: [32, 5312, 676, 1949, 2]
 // Exports: getHasNonOrbPrice, getHasOrbPrice, getIsVariantProduct, getProductFiatPrice, getProductOrbPrice, getProductSkuIds, getProductType, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 5312 (getProductOrbPrice)
-import _slicedToArray from "_slicedToArray";
-import { isProfileEffectRecord } from "fromServer";
-import ME from "ME";
+// Module 5317 (getProductOrbPrice)
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import { isProfileEffectRecord } from "fromServer" /* 5312 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ CurrencyCodes: c4, PriceSetAssignmentPurchaseTypes: c5 } = ME);
-const result = require("ME").fileFinishedImporting("modules/collectibles/utils/CollectiblesProductUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/utils/CollectiblesProductUtils.tsx");
 
 export const getProductOrbPrice = function getProductOrbPrice(arg0) {
   const tmp2 = arg0.product.prices[arg0.hasShopDiscount ? closure_5.PREMIUM_TIER_2 : closure_5.DEFAULT];
@@ -147,7 +146,7 @@ export const isDynamicProduct = function isDynamicProduct(selectedProduct) {
   if (tmp) {
     let type1 = null;
     if (null != selectedProduct) {
-      if (selectedProduct.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP) {
+      if (selectedProduct.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP) {
         type1 = null;
         if (null != selectedProduct.variants) {
           type1 = null;
@@ -164,7 +163,7 @@ export const isDynamicProduct = function isDynamicProduct(selectedProduct) {
         type1 = selectedProduct.type;
       }
     }
-    let someResult = type1 === require(1949) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
+    let someResult = type1 === CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT;
     if (someResult) {
       const items = selectedProduct.items;
       someResult = items.some((effects) => {
@@ -230,7 +229,7 @@ export const getProductsWithOrbsPrice = function getProductsWithOrbsPrice(arr) {
   });
 };
 export const getIsVariantProduct = function getIsVariantProduct(product) {
-  let tmp = product.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
+  let tmp = product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP;
   if (tmp) {
     tmp = null != product.variants;
   }
@@ -240,7 +239,7 @@ export const getIsVariantProduct = function getIsVariantProduct(product) {
   return tmp;
 };
 export const getProductSkuIds = function getProductSkuIds(closure_0) {
-  let tmp = closure_0.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
+  let tmp = closure_0.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP;
   if (tmp) {
     tmp = null != closure_0.variants;
   }
@@ -256,7 +255,7 @@ export const getProductSkuIds = function getProductSkuIds(closure_0) {
   return mapped;
 };
 export const getSelectedProduct = function getSelectedProduct(product, defaultVariantIndex) {
-  let tmp = product.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
+  let tmp = product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP;
   if (tmp) {
     tmp = null != product.variants;
   }
@@ -279,7 +278,7 @@ export const getSelectedProduct = function getSelectedProduct(product, defaultVa
 export const getProductType = function getProductType(product) {
   if (null == product) {
     return null;
-  } else if (product.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP) {
+  } else if (product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP) {
     if (null != product.variants) {
       if (0 !== product.variants.length) {
         const first = product.variants[0];

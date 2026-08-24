@@ -4,10 +4,12 @@
 // Dependencies: [638]
 
 // Module 725 (toKey)
+import isSymbol from "isSymbol" /* 638 */;
+
 
 export default function toKey(str) {
   if (typeof str !== "string") {
-    if (!require(638) /* isSymbol */(str)) {
+    if (!isSymbol(str)) {
       const text = `${str}`;
       if ("0" !== `${str}`) {
         let str2 = text;

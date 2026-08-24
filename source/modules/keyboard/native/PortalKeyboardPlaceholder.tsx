@@ -1,30 +1,39 @@
-// Module ID: 11415
-// Function ID: 11416
+// Module ID: 11466
+// Function ID: 11467
 // Name: PortalKeyboardPlaceholderInner
-// Dependencies: [19, 17, 21, 4661, 500, 712, 1627, 1629, 7925, 1494, 5444, 8501, 4239, 1895, 2]
+// Dependencies: [19, 17, 21, 4668, 500, 712, 1627, 1629, 7964, 1494, 5449, 8540, 4243, 1895, 2]
 
-// Module 11415 (PortalKeyboardPlaceholderInner)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11466 (PortalKeyboardPlaceholderInner)
+import noopAll from "noop" /* 19 */;
+import set from "set" /* 500 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import KeyboardTypes from "KeyboardTypes" /* 1627 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 1895 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4243 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5449 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7964 */;
+import useGradientBottom from "useGradientBottom" /* 8540 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 function PortalKeyboardPlaceholderInner(keyboardType) {
-  const rect = importDefault(1629)();
-  const tmp = importDefault(7925)();
-  const tmp2 = importDefault(1494)();
-  let obj = require(8501) /* useGradientBottom */;
+  const rect = useSafeAreaInsetsDefault();
+  const tmp = useIsWindowLargeDefault();
+  const tmp2 = useWindowDimensionsDefault();
+  let obj = useGradientBottom;
   obj = { style: null };
-  const items = [callback(keyboardType.keyboardType, importDefault(1494)().width - rect.left - rect.right, importDefault(5444)(), tmp).container, obj.useGradientBottom()];
+  const items = [callback(keyboardType.keyboardType, useWindowDimensionsDefault().width - rect.left - rect.right, useCustomKeyboardHeightDefault(), tmp).container, obj.useGradientBottom()];
   obj[0] = items;
   return <closure_3 style={null} />;
 }
+noopAll;
 ({ View: c3, StyleSheet: c4 } = get_ActivityIndicator);
 let closure_6 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
-  let container = require(500) /* set */;
+  let container = set;
   let absoluteFillObject = null;
   if (container.isIOS()) {
     absoluteFillObject = closure_4.absoluteFillObject;
@@ -32,7 +41,7 @@ let closure_6 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
   container = {};
   const merged = Object.assign(absoluteFillObject);
   container.borderTopWidth = closure_4.hairlineWidth;
-  container.borderTopColor = importDefault(712).colors.BORDER_SUBTLE;
+  container.borderTopColor = ThemesDefault.colors.BORDER_SUBTLE;
   let BORDER_SUBTLE;
   if (arg3) {
     BORDER_SUBTLE = tmp7(712).colors.BORDER_SUBTLE;
@@ -54,7 +63,7 @@ let closure_6 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
   }
   container.borderLeftWidth = hairlineWidth1;
   const APP_LAUNCHER = tmp(1627).KeyboardTypes.APP_LAUNCHER;
-  container.backgroundColor = importDefault(712).colors.BACKGROUND_BASE_LOW;
+  container.backgroundColor = ThemesDefault.colors.BACKGROUND_BASE_LOW;
   let tmpResult = tmp(500);
   if (tmpResult.isIOS()) {
     const tmp12 = arg1;
@@ -68,13 +77,13 @@ let closure_6 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
   return { container };
 });
 const jsxResult = jsx(function PortalKeyboardPlaceholder() {
-  const tmp2 = importDefault(4239)();
-  let isAndroidResult = importDefault(1895)() > 0;
+  const tmp2 = useKeyboardTypeDefault();
+  let isAndroidResult = useSystemKeyboardHeightDefault() > 0;
   if (isAndroidResult) {
-    let obj = require(500) /* set */;
+    let obj = set;
     isAndroidResult = obj.isAndroid();
   }
-  if (tmp2 !== require(1627) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
+  if (tmp2 !== KeyboardTypes.KeyboardTypes.SYSTEM) {
     let tmp6 = null;
     if (!isAndroidResult) {
       obj = { keyboardType: null };
@@ -83,10 +92,10 @@ const jsxResult = jsx(function PortalKeyboardPlaceholder() {
     }
   } else {
     tmp6 = null;
-    const tmp5Result = require(500) /* set */;
+    const tmp5Result = set;
   }
   return tmp6;
 }, {});
-const result = require("jsxProd").fileFinishedImporting("modules/keyboard/native/PortalKeyboardPlaceholder.tsx");
+const result = require("set").fileFinishedImporting("modules/keyboard/native/PortalKeyboardPlaceholder.tsx");
 
 export const PORTAL_KEYBOARD_PLACEHOLDER_INSTANCE = jsxResult;

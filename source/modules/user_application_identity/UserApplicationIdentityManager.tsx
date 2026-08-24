@@ -1,16 +1,18 @@
-// Module ID: 17105
-// Function ID: 17106
+// Module ID: 17199
+// Function ID: 17200
 // Name: handleUserApplicationIdentityGatewayEvent
-// Dependencies: [12286, 5038, 2]
+// Dependencies: [12338, 5043, 2]
 
-// Module 17105 (handleUserApplicationIdentityGatewayEvent)
-import "initialize";
+// Module 17199 (handleUserApplicationIdentityGatewayEvent)
+import initializeDefault from "initialize" /* 5043 */;
+import fetchStore from "fetchStore" /* 12338 */;
 
-const require = arg1;
+require = arg1;
 function handleUserApplicationIdentityGatewayEvent(user_id) {
-  const useUserApplicationIdentities = require(12286) /* fetchStore */.useUserApplicationIdentities;
+  const useUserApplicationIdentities = fetchStore.useUserApplicationIdentities;
   useUserApplicationIdentities.refetch(user_id.user_id);
 }
+initializeDefault;
 let prototype = function UserApplicationIdentityManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { USER_APPLICATION_IDENTITY_UPDATE: handleUserApplicationIdentityGatewayEvent, USER_APPLICATION_IDENTITY_REMOVE: handleUserApplicationIdentityGatewayEvent };

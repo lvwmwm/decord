@@ -1,24 +1,22 @@
-// Module ID: 5305
-// Function ID: 5306
+// Module ID: 5310
+// Function ID: 5311
 // Name: createCollectiblesItemsFromServerResponse
-// Dependencies: [5306, 1947, 5307, 5308, 5309, 676, 1949, 2]
+// Dependencies: [5311, 1947, 5312, 5313, 5314, 676, 1949, 2]
 // Exports: createCollectiblesItemsFromServerResponse
 
-// Module 5305 (createCollectiblesItemsFromServerResponse)
-import fromServer from "fromServer";
-import closure_3 from "fromServer";
-import closure_4 from "fromServer";
-import closure_5 from "fromServer";
-import closure_6 from "fromServer";
-import ME from "ME";
+// Module 5310 (createCollectiblesItemsFromServerResponse)
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+import closure_2 from "fromServer" /* 5311 */;
+import closure_3 from "fromServer" /* 1947 */;
+import closure_4 from "fromServer" /* 5312 */;
+import closure_5 from "fromServer" /* 5313 */;
+import closure_6 from "fromServer" /* 5314 */;
+import ME from "ME" /* 676 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
-({ SKUProductLines: error, SKUTypes: metroImportAll } = ME);
-const result = require("fromServer").fileFinishedImporting("modules/collectibles/records/CollectiblesItemRecord.tsx");
+require = arg1;
+({ SKUProductLines: error, SKUTypes: closure_8 } = ME);
+const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesItemRecord.tsx");
 function transformSKUToCollectiblesItem(productLine) {
-  let effects;
   if (productLine.productLine === constants.COLLECTIBLES) {
     if (productLine.type === constants2.BUNDLE) {
       const items = [];
@@ -60,12 +58,12 @@ function transformSKUToCollectiblesItem(productLine) {
       }
       if (null != item) {
         type = item.type;
-        if (require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+        if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
           obj = { type: "single", item: null };
-          const obj1 = { skuId: null, type: null, asset: null, label: null };
+          obj1 = { skuId: null, type: null, asset: null, label: null };
           obj1[0] = productLine.id;
           ({ type: obj8[1], asset: obj8[2], label: obj8[3] } = item);
-          const tmp28 = new fromServer(obj1);
+          const tmp28 = new closure_2(obj1);
           obj[1] = tmp28;
           return obj;
         } else if (tmp4(1949).CollectiblesItemType.NAMEPLATE === type) {
@@ -111,7 +109,7 @@ export const createCollectiblesItemsFromServerResponse = function createCollecti
     items = arr.reduce((arr, type) => {
       type = type.type;
       if (callback(table[6]).CollectiblesItemType.AVATAR_DECORATION === type) {
-        arr.push(fromServer.fromServer(type));
+        arr.push(closure_2.fromServer(type));
       } else if (tmp(tmp2[6]).CollectiblesItemType.NAMEPLATE === type) {
         arr.push(closure_3.fromServer(type));
       } else if (tmp(tmp2[6]).CollectiblesItemType.PROFILE_EFFECT === type) {

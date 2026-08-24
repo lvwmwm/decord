@@ -1,16 +1,17 @@
-// Module ID: 14999
-// Function ID: 15000
+// Module ID: 15063
+// Function ID: 15064
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: isAdTopicOptOutClientEnabled, useIsAdTopicOptOutClientEnabled
 
-// Module 14999 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 15063 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null, 2: { enabled: false }, 3: { enabled: true }, 4: { enabled: true }, 5: { enabled: true } };
 obj[5] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-08-ad-topic-opt-out-client", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/ads/AdTopicOptOutClientExperiment.tsx");
+const result = set.fileFinishedImporting("modules/ads/AdTopicOptOutClientExperiment.tsx");
 
 export const AdTopicOptOutClientExperiment = apexExperiment;
 export const useIsAdTopicOptOutClientEnabled = function useIsAdTopicOptOutClientEnabled() {

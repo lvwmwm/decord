@@ -1,25 +1,21 @@
-// Module ID: 14378
-// Function ID: 14379
+// Module ID: 14446
+// Function ID: 14447
 // Name: BountyVideo
-// Dependencies: [32, 19, 17, 6716, 21, 501, 10486, 712, 4661, 14379, 10711, 10712, 4115, 4097, 4664, 4667, 14368, 14380, 14390, 5449, 14391, 14393, 14395, 10400, 2]
+// Dependencies: [32, 19, 17, 6753, 21, 501, 10525, 712, 4668, 14447, 10750, 10751, 4119, 4100, 4671, 4674, 14436, 14448, 14458, 5454, 14459, 14461, 14463, 10439, 2]
 // Exports: BountyVideo
 
-// Module 14378 (BountyVideo)
-import _slicedToArray from "_slicedToArray";
-import preload from "preload";
-import get_ActivityIndicator from "hasVideoEnded";
-import { QuestsExperimentLocations } from "QuestsExperimentLocations";
-import jsxProd from "BountiesModalAdvertiserCtaContent";
-import PlatformTypes from "PlatformTypes";
-import createCacheKey from "createCacheKey";
+// Module 14446 (BountyVideo)
+import ThemesDefault from "Themes" /* 712 */;
+import BountiesModalProgress from "BountiesModalProgress" /* 14447 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 6753 */;
+import jsxProd from "jsxProd" /* 21 */;
+import PlatformTypes from "PlatformTypes" /* 501 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_6;
-let error;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 ({ View: c5, StyleSheet: closure_6, ActivityIndicator: error } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
 let num = 0;
@@ -27,7 +23,7 @@ if (PlatformTypes.isAndroid()) {
   num = 150;
 }
 let closure_13 = { top: 48, bottom: 16, left: 16, right: 16 };
-const lg = require("Themes").radii.lg;
+const lg = ThemesDefault.radii.lg;
 let closure_15 = createCacheKey.createStyles(() => {
   let obj = { videoContainer: null, leftRow: null, progress: null, poster: null };
   obj = {};
@@ -35,9 +31,9 @@ let closure_15 = createCacheKey.createStyles(() => {
   obj.overflow = "hidden";
   obj.borderRadius = lg;
   obj[0] = obj;
-  obj = { position: "absolute", top: importDefault(712).space.PX_8, left: importDefault(712).space.PX_8, flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_8 };
+  obj = { position: "absolute", top: ThemesDefault.space.PX_8, left: ThemesDefault.space.PX_8, flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_8 };
   obj[1] = obj;
-  obj[2] = { position: "absolute", bottom: 0, height: require(14379) /* BountiesModalProgress */.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
+  obj[2] = { position: "absolute", bottom: 0, height: BountiesModalProgress.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
   const obj2 = {};
   const merged1 = Object.assign(closure_6.absoluteFillObject);
   obj2.backgroundColor = "#000000";
@@ -49,37 +45,9 @@ let closure_15 = createCacheKey.createStyles(() => {
 let closure_16 = { code: "function BountyVideoTsx1(){const{posterOpacity}=this.__closure;return{opacity:posterOpacity.get()};}" };
 let closure_17 = { code: "function BountyVideoTsx2(){const{isScrollingInBoundsSharedValue,withTiming,isActive,timingStandard}=this.__closure;var _isScrollingInBoundsS;const isScrollingInBounds=((_isScrollingInBoundsS=isScrollingInBoundsSharedValue)===null||_isScrollingInBoundsS===void 0?void 0:_isScrollingInBoundsS.get())===true;return{opacity:withTiming(isActive&&!isScrollingInBounds?1:0,timingStandard)};}" };
 let closure_18 = { code: "function BountyVideoTsx3(){const{peekScale,AUTO_SCROLL_PEEK_SCALE,height,AUTO_SCROLL_PEEK_TOP_OFFSET}=this.__closure;if(peekScale==null){return{};}const scale=peekScale.get();const scaleProgress=(1-scale)/(1-AUTO_SCROLL_PEEK_SCALE);const centerPivotCompensation=height*(1-scale)/2;return{transform:[{translateY:scaleProgress*AUTO_SCROLL_PEEK_TOP_OFFSET-centerPivotCompensation},{scale:scale}]};}" };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/BountiesModal/BountyVideo.tsx");
+let result = require("set").fileFinishedImporting("modules/quests/native/BountiesModal/BountyVideo.tsx");
 
 export const BountyVideo = function BountyVideo(bounty) {
-  let balanceWidgetPillResetKey;
-  let c9;
-  let handleVideoEnd;
-  let handleVideoPaused;
-  let handleVideoProgress;
-  let handleVideoResumed;
-  let initialProgress;
-  let isCompleted;
-  let isCtaVisible;
-  let isEndCardVisible;
-  let isProgressBarVisible;
-  let isScrollIndicatorEnabled;
-  let normalizedProgress;
-  let onBuffer;
-  let onLoadStart;
-  let onPlayerStateChange;
-  let onVideoTracks;
-  let orbsBalance;
-  let ownedByVerticalScrollExperiment;
-  let playerRef;
-  let renderEndCard;
-  let repeat;
-  let rewardRemainingSeconds;
-  let rewardTotalSeconds;
-  let shouldLoadHls;
-  let sourceQuestContent;
-  let stage1Enabled;
-  let tmp7;
   bounty = bounty.bounty;
   ({ isCtaVisible, isEndCardVisible, isScrollIndicatorEnabled, handleVideoProgress } = bounty);
   const handleVideoError = bounty.handleVideoError;
@@ -107,15 +75,15 @@ export const BountyVideo = function BountyVideo(bounty) {
   }
   let callback;
   let first;
-  let c11;
-  let closure_12;
+  closure_11 = undefined;
+  closure_12 = undefined;
   let sharedValue;
   callback = undefined;
   const tmp = callback2();
   let obj = bounty(handleVideoError[10]);
   const bountiesExperience = obj.useBountiesExperience(peekScale.VIDEO_MODAL_MOBILE);
   ({ stage1Enabled, ownedByVerticalScrollExperiment } = bountiesExperience);
-  let obj1 = bounty(handleVideoError[11]);
+  obj1 = bounty(handleVideoError[11]);
   const isBountiesVerticalScrollExperimentEnabled = obj1.useIsBountiesVerticalScrollExperimentEnabled("BountyVideo");
   if (flag3) {
     flag3 = !flag;
@@ -124,7 +92,7 @@ export const BountyVideo = function BountyVideo(bounty) {
   [tmp7, c9] = onFirstFrame(flag.useState(false), 2);
   const tmp8 = onFirstFrame(flag.useState(false), 2);
   first = tmp8[0];
-  c11 = tmp10;
+  closure_11 = tmp10;
   closure_12 = flag.useRef(null);
   let tmp2Result = tmp2(tmp3[12]);
   sharedValue = tmp2Result.useSharedValue(1);
@@ -164,7 +132,7 @@ export const BountyVideo = function BountyVideo(bounty) {
       clearTimeout(tmp.current);
       tmp.current = null;
     }
-    _undefined2(true);
+    callback(true);
   }, []);
   const items3 = [onFirstFrame];
   const items4 = [callback, handleVideoError];
@@ -373,16 +341,16 @@ export const BountyVideo = function BountyVideo(bounty) {
   }
   const obj11 = { children: null };
   items7[3] = isScrollIndicatorEnabled;
-  const obj12 = { style: items11, pointerEvents: "box-none", children: null };
-  items11 = [width.absoluteFillObject, animatedStyle1];
-  obj12[2] = tmp42(handleVideoProgress(handleVideoError[21]), { bounty, visible: tmp28, sourceQuestContent });
-  items7[4] = tmp42(handleVideoProgress(handleVideoError[12]).View, obj12);
+  const tmp2Result3 = bounty(handleVideoError[12]);
+  const tmp31 = closure_11;
+  const tmp33 = isScrollingInBoundsSharedValue;
+  const items11 = [width.absoluteFillObject, animatedStyle1];
+  items7[4] = tmp42(handleVideoProgress(handleVideoError[12]).View, { style: items11, pointerEvents: "box-none", children: tmp42(handleVideoProgress(handleVideoError[21]), { bounty, visible: tmp28, sourceQuestContent }) });
   obj2[1] = items7;
-  const items12 = [first(isScrollingInBoundsSharedValue, obj2), ];
-  const obj13 = { style: items13, children: null };
-  items13 = [tmp.progress, animatedStyle1];
-  obj13[1] = tmp42(handleVideoProgress(handleVideoError[9]), { progress: normalizedProgress, visible: isProgressBarVisible });
-  items12[1] = tmp42(handleVideoProgress(handleVideoError[12]).View, obj13);
+  const items12 = [first(tmp33, obj2), ];
+  const obj12 = { style: items11, pointerEvents: "box-none", children: tmp42(handleVideoProgress(handleVideoError[21]), { bounty, visible: tmp28, sourceQuestContent }) };
+  const items13 = [tmp.progress, animatedStyle1];
+  items12[1] = tmp42(handleVideoProgress(handleVideoError[12]).View, { style: items13, children: tmp42(handleVideoProgress(handleVideoError[9]), { progress: normalizedProgress, visible: isProgressBarVisible }) });
   obj1[1] = items12;
   const items14 = [first(handleVideoProgress(handleVideoError[12]).View, obj1), ];
   const obj14 = { style: items15, children: null };
@@ -391,5 +359,5 @@ export const BountyVideo = function BountyVideo(bounty) {
   obj14[1] = items16;
   items14[1] = first(handleVideoProgress(handleVideoError[12]).View, obj14);
   obj11[0] = items14;
-  return first(c11, obj11);
+  return first(tmp31, obj11);
 };

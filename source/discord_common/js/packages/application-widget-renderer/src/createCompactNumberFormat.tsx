@@ -1,10 +1,12 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12243
+// Function ID: 12244
 // Name: toAsciiDigits
 // Dependencies: [2]
 // Exports: createCompactNumberFormat
 
-// Module 12191 (toAsciiDigits)
+// Module 12243 (toAsciiDigits)
+import set from "set" /* 2 */;
+
 function toAsciiDigits(arg0, get) {
   let str = "";
   const iter = arg0[Symbol.iterator]();
@@ -21,7 +23,7 @@ function toAsciiDigits(arg0, get) {
   }
   return str;
 }
-let result = require("set").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/createCompactNumberFormat.tsx");
+let result = set.fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/createCompactNumberFormat.tsx");
 
 export const createCompactNumberFormat = function createCompactNumberFormat(stateFromStores) {
   const numberFormat = new Intl.NumberFormat(stateFromStores, { useGrouping: false });
@@ -34,7 +36,7 @@ export const createCompactNumberFormat = function createCompactNumberFormat(stat
     num = num + 1;
   } while (num <= 9);
   const numberFormat1 = new Intl.NumberFormat(stateFromStores, { notation: "compact", compactDisplay: "short" });
-  const map1 = new Map();
+  map1 = new Map();
   return {
     format(arg0) {
       let tmp10;

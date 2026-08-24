@@ -1,16 +1,21 @@
-// Module ID: 5089
-// Function ID: 5090
+// Module ID: 5094
+// Function ID: 5095
 // Name: getSearchIndex
-// Dependencies: [32, 1990, 1922, 687, 5090, 5243, 5249, 5092, 12, 5094, 2]
+// Dependencies: [32, 1991, 1922, 687, 5095, 5248, 5254, 5097, 12, 5099, 2]
 
-// Module 5089 (getSearchIndex)
-import _slicedToArray from "_slicedToArray";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 5094 (getSearchIndex)
+import apply from "apply" /* 12 */;
+import setDefault from "set" /* 687 */;
+import getGuildMemberSecondaryIndexes from "getGuildMemberSecondaryIndexes" /* 5095 */;
+import getJoinedAtDateFormatter from "getJoinedAtDateFormatter" /* 5097 */;
+import hasStringMatch from "hasStringMatch" /* 5248 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "trackCommunicationDisabled" /* 1991 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
-let closure_5 = 3 * require("set").Millis.SECOND;
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetyPageStore.tsx");
+require = arg1;
+let closure_5 = 3 * setDefault.Millis.SECOND;
+let result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetyPageStore.tsx");
 class GuildMemberSafetyPageStore {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -27,27 +32,25 @@ const prototype = GuildMemberSafetyPageStore.prototype;
 prototype["getSearchIndex"] = function getSearchIndex() {
   if (null != this._search) {
     if (!this._search.hasDefaultQuery) {
-      let CURRENT_GUILD_MEMBER = require(5090) /* getGuildMemberSecondaryIndexes */.MemberSafetySecondaryIndex.INCLUDED_IN_SEARCH_RESULTS;
+      let CURRENT_GUILD_MEMBER = getGuildMemberSecondaryIndexes.MemberSafetySecondaryIndex.INCLUDED_IN_SEARCH_RESULTS;
     }
     return CURRENT_GUILD_MEMBER;
   }
-  CURRENT_GUILD_MEMBER = require(5090) /* getGuildMemberSecondaryIndexes */.MemberSafetySecondaryIndex.CURRENT_GUILD_MEMBER;
+  CURRENT_GUILD_MEMBER = getGuildMemberSecondaryIndexes.MemberSafetySecondaryIndex.CURRENT_GUILD_MEMBER;
 };
 prototype["initialize"] = function initialize() {
-  let _members;
-  let guildId;
   const self = this;
   if (this._initialized) {
     const _Date = Date;
     self.lastCursorTimestamp = Date.now();
   } else {
     self._initialized = true;
-    const guildMemberSafetySearch = new require(5243) /* hasStringMatch */.GuildMemberSafetySearch(self.guildId);
+    const guildMemberSafetySearch = new hasStringMatch.GuildMemberSafetySearch(self.guildId);
     self._search = guildMemberSafetySearch;
-    const guildMemberSafetyMembers = new require(5090) /* getGuildMemberSecondaryIndexes */.GuildMemberSafetyMembers(self.guildId);
+    const guildMemberSafetyMembers = new getGuildMemberSecondaryIndexes.GuildMemberSafetyMembers(self.guildId);
     self._members = guildMemberSafetyMembers;
     ({ guildId, _members } = self);
-    const guildMemberSafetyPagination = new require(5249) /* items */.GuildMemberSafetyPagination(guildId, _members.values(self.getSearchIndex()));
+    const guildMemberSafetyPagination = new require(5254) /* items */.GuildMemberSafetyPagination(guildId, _members.values(self.getSearchIndex()));
     self._pagination = guildMemberSafetyPagination;
   }
 };
@@ -89,8 +92,8 @@ Object.defineProperty(prototype, "searchChunkSize", {
       num = 0;
       if (self._initialized) {
         const _pagination = self._pagination;
-        num = require(5249) /* items */.getSearchChunkLimit(_pagination.getPaginationState());
-        const obj = require(5249) /* items */;
+        num = require(5254) /* items */.getSearchChunkLimit(_pagination.getPaginationState());
+        const obj = require(5254) /* items */;
       }
     }
     return num;
@@ -322,7 +325,7 @@ prototype["updateClientMembers"] = function updateClientMembers(items, requiresU
           if (flag2) {
             let tmp11 = require;
             let tmp12 = dependencyMap;
-            let obj2 = require(5092) /* getJoinedAtDateFormatter */;
+            let obj2 = getJoinedAtDateFormatter;
             let tmp13 = nextResult;
             obj = {};
             let tmp15 = tmp10;
@@ -400,7 +403,7 @@ prototype["updateMembersByMemberIds"] = function updateMembersByMemberIds(items)
   if (null != this._members) {
     if (self._initialized) {
       return self.updateClientMembers(items.reduce((arr, id) => {
-        const trueMember = outer1_3.getTrueMember(self.guildId, id);
+        const trueMember = closure_1_3.getTrueMember(self.guildId, id);
         if (null != trueMember) {
           arr.push(trueMember);
         }
@@ -412,13 +415,13 @@ prototype["updateMembersByMemberIds"] = function updateMembersByMemberIds(items)
 };
 prototype["updateMembersSort"] = function updateMembersSort(selectedSort) {
   const self = this;
-  let closure_0 = selectedSort;
+  closure_0 = selectedSort;
   return new Promise((arg0) => {
     const items = [...selectedSort(self[8]).cloneDeep(self.getMembersByIndex(closure_0(self[4]).MemberSafetySecondaryIndex.CURRENT_GUILD_MEMBER)[0])];
     let obj = selectedSort(self[8]);
     HermesBuiltin.arraySpread(selectedSort(self[8]).cloneDeep(self.getMembersByIndex(selectedSort(self[4]).MemberSafetySecondaryIndex.NEW_GUILD_MEMBER)[0]), tmp);
     const item = items.forEach((joinedAt) => {
-      let obj = outer1_0(outer1_1[9]);
+      let obj = closure_1_0(closure_1_1[9]);
       _search = _search._search;
       let flag;
       const sortValueForMember = obj.getSortValueForMember(joinedAt, closure_0);
@@ -463,7 +466,7 @@ prototype["updateSearchedMembersByMemberIds"] = function updateSearchedMembersBy
     if (null != self._members) {
       if (self._initialized) {
         return self.updateClientMembers(memberIds.reduce((arr, id) => {
-          const trueMember = outer1_3.getTrueMember(self.guildId, id);
+          const trueMember = closure_1_3.getTrueMember(self.guildId, id);
           if (null != trueMember) {
             arr.push(trueMember);
           }
@@ -506,9 +509,9 @@ prototype["refreshNewMembersAndSearchResults"] = function refreshNewMembersAndSe
         const _Date = Date;
         const NumberResult = Number(Date.now());
         self._scheduleRefresh(NumberResult);
-        let obj = require(12) /* apply */;
+        let obj = apply;
         const _members = self._members;
-        const cloneDeepResult = obj.cloneDeep(_members.values(require(5090) /* getGuildMemberSecondaryIndexes */.MemberSafetySecondaryIndex.NEW_GUILD_MEMBER));
+        const cloneDeepResult = obj.cloneDeep(_members.values(getGuildMemberSecondaryIndexes.MemberSafetySecondaryIndex.NEW_GUILD_MEMBER));
         let flag2 = false;
         for (const item10031 of cloneDeepResult) {
           let _members2 = self._members;
@@ -575,9 +578,9 @@ prototype["updateSearchState"] = function updateSearchState(selectedSort) {
             return self.updatePaginationChunks();
           }
         }
-        let obj = require(12) /* apply */;
+        let obj = apply;
         const _members = self._members;
-        const cloneDeepResult = obj.cloneDeep(_members.values(require(5090) /* getGuildMemberSecondaryIndexes */.MemberSafetySecondaryIndex.CURRENT_GUILD_MEMBER));
+        const cloneDeepResult = obj.cloneDeep(_members.values(getGuildMemberSecondaryIndexes.MemberSafetySecondaryIndex.CURRENT_GUILD_MEMBER));
         let flag2 = BooleanResult !== self._search.hasDefaultQuery;
         for (const item10048 of cloneDeepResult) {
           let tmp11 = item10048;
@@ -618,7 +621,7 @@ prototype["getSearchState"] = function getSearchState() {
     }
     return searchState;
   }
-  searchState = require(5243) /* hasStringMatch */.getDefaultSearchState();
+  searchState = hasStringMatch.getDefaultSearchState();
 };
 prototype["hasDefaultSearchState"] = function hasDefaultSearchState() {
   const self = this;
@@ -690,7 +693,7 @@ prototype["getPaginationState"] = function getPaginationState() {
     }
     return paginationState;
   }
-  paginationState = require(5249) /* items */.createDefaultMemberSafetyPaginationState();
+  paginationState = require(5254) /* items */.createDefaultMemberSafetyPaginationState();
 };
 prototype["getPaginatedMembers"] = function getPaginatedMembers() {
   const self = this;

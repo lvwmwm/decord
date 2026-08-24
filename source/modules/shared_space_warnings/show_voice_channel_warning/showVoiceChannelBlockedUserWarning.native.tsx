@@ -1,25 +1,25 @@
-// Module ID: 13288
-// Function ID: 13289
+// Module ID: 13346
+// Function ID: 13347
 // Name: showVoiceChannelBlockedUserWarning
-// Dependencies: [7383, 13283, 13286, 691, 4342, 13289, 2007, 503, 2]
+// Dependencies: [7421, 13341, 13344, 691, 4346, 13347, 2008, 503, 2]
 // Exports: showVoiceChannelBlockedUserWarning
 
-// Module 13288 (showVoiceChannelBlockedUserWarning)
-import getState from "getState";
-import useSharedSpacesWarningStore from "useSharedSpacesWarningStore";
-import { VoiceChannelWarningSurfaces as closure_6 } from "GdmWarningMedium";
+// Module 13346 (showVoiceChannelBlockedUserWarning)
+import keys from "keys" /* 691 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import closure_3 from "getState" /* 7421 */;
+import useSharedSpacesWarningStore from "useSharedSpacesWarningStore" /* 13341 */;
+import { VoiceChannelWarningSurfaces as closure_6 } from "GdmWarningMedium" /* 13344 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ queueBlockWarning: c4, dequeueBlockWarning: c5 } = useSharedSpacesWarningStore);
-const result = require("GdmWarningMedium").fileFinishedImporting("modules/shared_space_warnings/show_voice_channel_warning/showVoiceChannelBlockedUserWarning.native.tsx");
+const result = require("set").fileFinishedImporting("modules/shared_space_warnings/show_voice_channel_warning/showVoiceChannelBlockedUserWarning.native.tsx");
 
 export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlockedUserWarning(channelId, id) {
   state = state.getState();
-  if (state === require(691) /* keys */.AppStates.ACTIVE) {
+  if (state === keys.AppStates.ACTIVE) {
     callback2();
-    let obj = importDefault(4342);
+    let obj = ACTION_SHEET_HEIGHT_HALFDefault;
     obj = { channelId: null, blockedUserId: null, impressionName: null, impressionProperties: null };
     obj[0] = channelId;
     obj[1] = id;
@@ -30,8 +30,8 @@ export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlock
     obj[1] = items;
     obj[2] = constants.POST_JOIN_SHEET;
     obj[3] = obj;
-    obj.openLazy(tmp2(2007)(13289, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
-    const tmp11 = tmp2(2007)(13289, dependencyMap.paths);
+    obj.openLazy(tmp2(2008)(13347, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
+    const tmp11 = tmp2(2008)(13347, dependencyMap.paths);
   } else {
     callback();
   }

@@ -1,11 +1,11 @@
-// Module ID: 14957
-// Function ID: 14958
+// Module ID: 15021
+// Function ID: 15022
 // Name: INITIAL_SCROLL_DELAY_MS
 // Dependencies: [19, 2]
 // Exports: useScrollToInitialIndexOnce
 
-// Module 14957 (INITIAL_SCROLL_DELAY_MS)
-import noop from "noop";
+// Module 15021 (INITIAL_SCROLL_DELAY_MS)
+import closure_0 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/collectibles/native/hooks/useScrollToInitialIndexOnce.tsx");
 
@@ -19,8 +19,8 @@ export const useScrollToInitialIndexOnce = function useScrollToInitialIndexOnce(
     num = 100;
   }
   const resetKey = initialScrollIndex.resetKey;
-  let closure_5;
-  let closure_6;
+  closure_5 = undefined;
+  closure_6 = undefined;
   closure_5 = initialScrollIndex.useRef(false);
   closure_6 = initialScrollIndex.useRef(resetKey);
   const items = [shouldScroll, initialScrollIndex, num, flashListRef, resetKey];
@@ -40,7 +40,7 @@ export const useScrollToInitialIndexOnce = function useScrollToInitialIndexOnce(
         const current = ref.current;
         if (current != null) {
           const obj = { animated: true, index: null };
-          obj[1] = noop;
+          obj[1] = closure_0;
           current.scrollToIndex(obj);
         }
       }, num);

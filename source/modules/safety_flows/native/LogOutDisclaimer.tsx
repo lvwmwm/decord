@@ -1,30 +1,36 @@
-// Module ID: 17091
-// Function ID: 17092
+// Module ID: 17184
+// Function ID: 17185
 // Name: LogOutDisclaimer
-// Dependencies: [21, 13540, 4734, 1236, 2597, 5256, 2]
+// Dependencies: [21, 13598, 4739, 1236, 2598, 5261, 2]
 // Exports: default
 
-// Module 17091 (LogOutDisclaimer)
-import { jsx } from "jsxProd";
+// Module 17184 (LogOutDisclaimer)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2598 */;
+import Text from "Text" /* 4739 */;
+import ModalDisclaimer from "ModalDisclaimer" /* 13598 */;
 
-const result = require("Text").fileFinishedImporting("modules/safety_flows/native/LogOutDisclaimer.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("modules/safety_flows/native/LogOutDisclaimer.tsx");
 
 export default function LogOutDisclaimer() {
   let obj = { children: null };
   obj = { variant: "text-xs/medium", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   obj = {
     handleLogOut() {
       callback(table[5]).logout("safety_flows_enter_email_screen");
     }
   };
-  obj[1] = intl.format(importDefault(2597)["0DHxym"], obj);
-  obj[0] = jsx(require(4734) /* Text */.Text, {
+  obj[1] = intl.format(messagesProxyDefault["0DHxym"], obj);
+  obj[0] = jsx(Text.Text, {
     handleLogOut() {
       callback(table[5]).logout("safety_flows_enter_email_screen");
     }
   });
-  return jsx(require(13540) /* ModalDisclaimer */.ModalDisclaimer, {
+  return jsx(ModalDisclaimer.ModalDisclaimer, {
     handleLogOut() {
       callback(table[5]).logout("safety_flows_enter_email_screen");
     }

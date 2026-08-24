@@ -1,16 +1,15 @@
-// Module ID: 4874
-// Function ID: 4875
+// Module ID: 4879
+// Function ID: 4880
 // Name: getCreateAttachmentURL
-// Dependencies: [676, 4830, 2]
+// Dependencies: [676, 4835, 2]
 
-// Module 4874 (getCreateAttachmentURL)
-import ME from "ME";
+// Module 4879 (getCreateAttachmentURL)
+import set from "set" /* 2 */;
+import items from "items" /* 4835 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
-let obj1;
 ({ Endpoints: obj1, MAX_ATTACHMENT_SIZE: c3, MAX_UPLOAD_COUNT: c4 } = ME);
-const result = require("set").fileFinishedImporting("modules/icymi/ICYMIAttachmentUploadTarget.tsx");
+const result = set.fileFinishedImporting("modules/icymi/ICYMIAttachmentUploadTarget.tsx");
 class ICYMIAttachmentUploadTarget {
 }
 const prototype = ICYMIAttachmentUploadTarget.prototype;
@@ -27,7 +26,7 @@ prototype["getMaxAttachmentsCount"] = function getMaxAttachmentsCount() {
   return closure_4;
 };
 prototype["getMaxTotalAttachmentSize"] = function getMaxTotalAttachmentSize() {
-  return require(4830) /* items */.MAX_TOTAL_ATTACHMENT_SIZE;
+  return items.MAX_TOTAL_ATTACHMENT_SIZE;
 };
 Object.defineProperty(prototype, "shouldReactNativeCompressUploads", {
   get: function shouldReactNativeCompressUploads() {

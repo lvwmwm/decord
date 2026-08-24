@@ -1,10 +1,10 @@
-// Module ID: 11300
-// Function ID: 11301
+// Module ID: 11351
+// Function ID: 11352
 // Name: set
 // Dependencies: [2]
 
-// Module 11300 (set)
-import set from "set";
+// Module 11351 (set)
+import set from "set" /* 2 */;
 
 const obj = { ALL: null };
 let set = new Set([1, 2, 3]);

@@ -1,14 +1,16 @@
-// Module ID: 13565
-// Function ID: 13566
+// Module ID: 13623
+// Function ID: 13624
 // Name: snapshotForBreadcrumbs
-// Dependencies: [13561, 13562, 2]
+// Dependencies: [13619, 13620, 2]
 
-// Module 13565 (snapshotForBreadcrumbs)
-import "append";
-import importDefaultResult1 from "TelemetryChannel";
+// Module 13623 (snapshotForBreadcrumbs)
+import appendDefault from "append" /* 13619 */;
+import TelemetryChannel from "TelemetryChannel" /* 13620 */;
+import importDefaultResult1 from "TelemetryChannel" /* 13620 */;
 
-const require = arg1;
+require = arg1;
 let closure_3 = { type: "BYTES", limit: 1048576 };
+appendDefault;
 class SentryTelemetryImpl extends tmp3 {
   constructor() {
     tmp2 = require("TelemetryChannel");

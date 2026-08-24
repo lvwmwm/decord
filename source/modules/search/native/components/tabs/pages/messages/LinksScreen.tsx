@@ -1,24 +1,16 @@
-// Module ID: 15923
-// Function ID: 15924
-// Dependencies: [19, 8507, 21, 15909, 15914, 15922, 15866, 15915, 15916, 11509, 15920, 15873, 2]
+// Module ID: 16020
+// Function ID: 16021
+// Dependencies: [19, 8546, 21, 16006, 16011, 16019, 15963, 16012, 16013, 11558, 16017, 15970, 2]
 
-// Module 15923
-import importAllResult from "noop";
-import MessageEmbedTypes from "MessageEmbedTypes";
-import { jsx } from "jsxProd";
+// Module 16020
+import importAllResult from "noop" /* 19 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 let c3 = importAllResult;
 ({ SearchListItemTypes: c4, CARD_ESTIMATED_ITEM_SIZE: c5, FILES_OR_LINKS_NUM_COLUMNS: closure_6, FILES_OR_LINKS_GAP_WIDTH: error } = MessageEmbedTypes);
 const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
-  let isFirstPageLoading;
-  let isFocused;
-  let isNextPageLoading;
-  let width;
   searchContext = searchContext.searchContext;
   const tab = searchContext.tab;
   let searchMessages;
@@ -49,8 +41,6 @@ const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
   let items = [onPressMessageItem, searchContext];
   ({ isFirstPageLoading, isNextPageLoading } = searchMessagesLoadingState);
   callback = onPressMessageItem.useCallback((arg0, index) => {
-    let channelId;
-    let messageId;
     ({ channelId, messageId } = arg0);
     let obj = searchContext(fileOrLinkImageDimensions[8]);
     obj = { searchContext, channelId, messageId, index };
@@ -59,10 +49,6 @@ const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
   }, items);
   const items1 = [onPressSearchLink, searchContext];
   callback1 = onPressMessageItem.useCallback((arg0, index) => {
-    let channelId;
-    let messageId;
-    let trusted;
-    let url;
     ({ channelId, messageId, url, trusted } = arg0);
     let obj = searchContext(fileOrLinkImageDimensions[8]);
     obj = { searchContext, channelId, messageId, index };
@@ -71,9 +57,6 @@ const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
   }, items1);
   const items2 = [onPressGuildVoiceChannel, searchContext];
   callback2 = onPressMessageItem.useCallback((arg0, index) => {
-    let channelId;
-    let mentionedChannelId;
-    let messageId;
     ({ channelId, messageId, mentionedChannelId } = arg0);
     let obj = searchContext(fileOrLinkImageDimensions[8]);
     obj = { searchContext, channelId, messageId, index };
@@ -83,30 +66,30 @@ const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
   const items3 = [callback2, callback1, callback, fileOrLinkImageDimensions, searchMessages, placeholderCount, searchContext];
   const memo = onPressMessageItem.useMemo(() => {
     const items = [];
-    let c1 = 0;
+    c1 = 0;
     if (c1 != null) {
       let item = c1.forEach((getContentMessage) => {
         const links = searchContext(fileOrLinkImageDimensions[9]).getLinks(items, getContentMessage);
         const item = links.forEach((data) => {
           const sum = closure_1 + arg1;
           let arr = sum;
-          let obj = { type: outer2_4.LINK, props: null };
+          let obj = { type: closure_2_4.LINK, props: null };
           obj = {
             data,
             onPress(arg0) {
-              return outer1_7(arg0, closure_0);
+              return closure_1_7(arg0, closure_0);
             },
             onPressSearchLink(url, trusted) {
-              return outer1_8(url, closure_0);
+              return closure_1_8(url, closure_0);
             },
             onPressGuildVoiceChannelMention(arg0) {
-              return outer1_9(arg0, closure_0);
+              return closure_1_9(arg0, closure_0);
             },
-            imageStyle: outer1_2,
+            imageStyle: closure_1_2,
             containerStyle: null
           };
-          obj = { itemIndex: sum, spacing: outer2_7, numColumns: outer2_6 };
-          obj[5] = items(outer2_2[9]).getGridItemSpacingStyles(obj);
+          obj = { itemIndex: sum, spacing: closure_2_7, numColumns: closure_2_6 };
+          obj[5] = items(closure_2_2[9]).getGridItemSpacingStyles(obj);
           obj[1] = obj;
           arr = arr.push(obj);
         });
@@ -131,7 +114,7 @@ const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
         let tmp5 = searchContext;
         let tmp6 = fileOrLinkImageDimensions;
         let obj3 = searchContext(fileOrLinkImageDimensions[9]);
-        let obj1 = { itemIndex: null, spacing: null, numColumns: null };
+        obj1 = { itemIndex: null, spacing: null, numColumns: null };
         obj1[0] = length + num;
         let tmp7 = callback;
         obj1[1] = callback;
@@ -153,6 +136,6 @@ const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
   obj[8] = isNextPageLoading;
   return callback1(searchMessages(fileOrLinkImageDimensions[8]), obj);
 });
-let result = require("jsxProd").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/LinksScreen.tsx");
+let result = require("set").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/LinksScreen.tsx");
 
 export default memoResult;

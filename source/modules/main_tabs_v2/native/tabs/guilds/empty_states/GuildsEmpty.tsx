@@ -1,36 +1,36 @@
-// Module ID: 15532
-// Function ID: 15533
+// Module ID: 15597
+// Function ID: 15598
 // Name: handleJoinGuild
-// Dependencies: [32, 19, 17, 1218, 1910, 4197, 676, 21, 4661, 712, 4734, 11881, 15533, 1236, 4733, 4745, 1501, 647, 9177, 503, 1913, 4231, 8944, 14452, 2]
+// Dependencies: [32, 19, 17, 1218, 1910, 4201, 676, 21, 4668, 712, 4739, 11930, 15598, 1236, 4738, 4750, 1501, 647, 9214, 503, 1913, 4235, 8981, 14520, 2]
 
-// Module 15532 (handleJoinGuild)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "encodeProperties";
-import get_ActivityIndicator from "defaultAreStatesEqual";
-import fetchFingerprint from "fetchFingerprint";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import handleConnectionOpen from "handleConnectionOpen";
-import ME from "ME";
-import jsxProd from "getInitialGuildState";
-import createCacheKey from "createCacheKey";
+// Module 15597 (handleJoinGuild)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Stack from "Stack" /* 4738 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import _modDef11930 from "module_11930" /* 11930 */;
+import registerAssetDefault from "registerAsset" /* 15598 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_8 from "fetchFingerprint" /* 1218 */;
+import closure_9 from "createGuildRecordFromRust" /* 1910 */;
+import closure_10 from "handleConnectionOpen" /* 4201 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_12;
-let closure_14;
-let closure_6;
-let error;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function handleJoinGuild() {
-  const result = importDefault(11881).openGuildJoinServerScreen();
+  const result = _modDef11930.openGuildJoinServerScreen();
 }
 function handleCreateGuild() {
-  importDefault(11881).openCreateGuildModal();
+  _modDef11930.openCreateGuildModal();
 }
 class GuildsEmptyContent {
   constructor(arg0) {
-    tmp = jsxs();
+    tmp = closure_15();
     obj = { alwaysBounceVertical: false, bounces: false, style: tmp.scrollView, contentContainerStyle: items, children: null };
     items = [, ];
     items[0] = tmp.scrollViewContentContainer;
@@ -83,22 +83,22 @@ let c4 = importAllResult;
 ({ ME: unpackModuleId, MOBILE_GUILD_UPSELL_LIST: closure_12 } = ME);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 let obj = { scrollView: null, header: null, headerTitle: null, scrollViewContentContainer: null, headerInner: null, content: null, illustrationWrapper: null, illustration: null, buttonContainer: null, textWrapper: null, headerText: null, text: null };
-obj = { borderTopLeftRadius: require("Themes").radii.xxl, borderTopRightRadius: require("Themes").radii.sm };
+obj = { borderTopLeftRadius: ThemesDefault.radii.xxl, borderTopRightRadius: ThemesDefault.radii.sm };
 obj[0] = obj;
-createCacheKey = { zIndex: 100, width: "100%", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+createCacheKey = { zIndex: 100, width: "100%", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj[1] = createCacheKey;
 obj[2] = { height: 56, marginLeft: 16, marginRight: 8, flexDirection: "row", alignItems: "center" };
-obj[3] = { flexGrow: 2, justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[3] = { flexGrow: 2, justifyContent: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 obj[4] = { flex: 1, flexDirection: "row", alignItems: "center" };
-let obj2 = { flexGrow: 2, justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
-obj[5] = { flexGrow: 2, paddingHorizontal: require("Themes").space.PX_16, alignItems: "center", justifyContent: "center" };
+let obj2 = { flexGrow: 2, justifyContent: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
+obj[5] = { flexGrow: 2, paddingHorizontal: ThemesDefault.space.PX_16, alignItems: "center", justifyContent: "center" };
 obj[6] = { width: "100%", paddingHorizontal: 36 };
-let obj3 = { flexGrow: 2, paddingHorizontal: require("Themes").space.PX_16, alignItems: "center", justifyContent: "center" };
-obj[7] = { resizeMode: "contain", alignSelf: "center", marginBottom: require("Themes").space.PX_24 };
-let obj4 = { resizeMode: "contain", alignSelf: "center", marginBottom: require("Themes").space.PX_24 };
-obj[8] = { paddingBottom: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
-let obj5 = { paddingBottom: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
-obj[9] = { marginHorizontal: require("Themes").space.PX_16, marginVertical: require("Themes").space.PX_24 };
+let obj3 = { flexGrow: 2, paddingHorizontal: ThemesDefault.space.PX_16, alignItems: "center", justifyContent: "center" };
+obj[7] = { resizeMode: "contain", alignSelf: "center", marginBottom: ThemesDefault.space.PX_24 };
+let obj4 = { resizeMode: "contain", alignSelf: "center", marginBottom: ThemesDefault.space.PX_24 };
+obj[8] = { paddingBottom: ThemesDefault.space.PX_16, paddingHorizontal: ThemesDefault.space.PX_16, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
+let obj5 = { paddingBottom: ThemesDefault.space.PX_16, paddingHorizontal: ThemesDefault.space.PX_16, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
+obj[9] = { marginHorizontal: ThemesDefault.space.PX_16, marginVertical: ThemesDefault.space.PX_24 };
 let obj7 = {};
 const merged = Object.assign(require("Text").TextStyleSheet["heading-md/bold"]);
 obj7.fontSize = 18;
@@ -106,67 +106,63 @@ obj7.marginBottom = 8;
 obj[10] = obj7;
 obj[11] = { textAlign: "center" };
 let closure_15 = createCacheKey.createStyles(obj);
-let obj6 = { marginHorizontal: require("Themes").space.PX_16, marginVertical: require("Themes").space.PX_24 };
+let obj6 = { marginHorizontal: ThemesDefault.space.PX_16, marginVertical: ThemesDefault.space.PX_24 };
 const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
-  let selectedGuildId;
-  let style;
   let navigation;
-  let importDefault;
+  selectedGuildId = undefined;
   ({ selectedGuildId, style } = arg0);
   const tmp = callback3();
   let obj = navigation(1501);
   navigation = obj.useNavigation();
-  let obj1 = navigation(647);
-  const items = [fetchFingerprint];
+  obj1 = navigation(647);
+  const items = [closure_8];
   const stateFromStores = obj1.useStateFromStores(items, () => null != sessionId.getSessionId());
   let tmp6 = null;
   if (stateFromStores) {
     tmp6 = selectedGuildId;
   }
-  importDefault = tmp6;
-  obj = { type: null, name: null };
-  obj[0] = navigation(503).ImpressionTypes.VIEW;
-  obj[1] = navigation(503).ImpressionNames.GUILDS_EMPTY_NUX;
-  importDefault(9177)(obj);
+  selectedGuildId = tmp6;
+  obj = { type: navigation(503).ImpressionTypes.VIEW, name: navigation(503).ImpressionNames.GUILDS_EMPTY_NUX };
+  selectedGuildId(9214)(obj);
   const items1 = [tmp6, navigation];
   const effect = importAllResult.useEffect(() => {
-    if (null != c1) {
+    if (null != selectedGuildId) {
       if (null != closure_0) {
-        if (tmp !== outer1_11) {
+        if (tmp !== closure_1_11) {
           if (!obj3.isFavoritesGuildId(tmp)) {
-            if (tmp !== outer1_12) {
-              let guild = outer1_9.getGuild(tmp);
+            if (tmp !== closure_1_12) {
+              let guild = closure_1_9.getGuild(tmp);
               if (guild == null) {
-                guild = obj4.getGuild(outer1_10.getGuildId());
+                guild = obj4.getGuild(closure_1_10.getGuildId());
               }
               if (guild == null) {
-                guild = obj4.getGuild(outer1_10.getLastSelectedGuildId());
+                guild = obj4.getGuild(closure_1_10.getLastSelectedGuildId());
               }
               if (guild == null) {
                 const guilds = obj4.getGuilds();
                 guild = guilds[obj4.getGuildIds(obj4)[0]];
               }
               if (null != guild) {
-                closure_0 = outer1_3(tmp10(tmp11[21]).getInitialGuildState(guild.id, undefined, false), 2)[1];
+                closure_0 = closure_1_3(tmp10(tmp11[21]).getInitialGuildState(guild.id, undefined, false), 2)[1];
                 obj2.dispatch(() => {
-                  const CommonActions = callback(outer1_2[16]).CommonActions;
+                  const CommonActions = callback(closure_1_2[16]).CommonActions;
                   return CommonActions.reset(callback);
                 });
                 const tmp10Result = tmp10(tmp11[21]);
               }
             }
           }
-          obj3 = navigation(outer1_2[20]);
+          obj3 = navigation(closure_1_2[20]);
           tmp10 = navigation;
-          tmp11 = outer1_2;
+          tmp11 = closure_1_2;
         }
       }
       obj2 = closure_0;
     }
   }, items1);
-  let tmp2Result = tmp2(8944);
+  let tmp2Result = tmp2(8981);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  tmp2Result = tmp2(14452);
+  tmp2Result = tmp2(14520);
   let tmp14Result = null;
   if (stateFromStores) {
     obj = { style: null, children: null };
@@ -179,7 +175,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
     let obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     const intl = tmp2(1236).intl;
     obj3[4] = intl.string(tmp2(1236).t["7hB4kg"]);
-    obj2[1] = callback(tmp2(4734).Text, obj3);
+    obj2[1] = callback(tmp2(4739).Text, obj3);
     obj1[1] = callback(closure_6, obj2);
     const items3 = [callback(closure_6, obj1), ];
     let tmp18;
@@ -200,7 +196,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   }
   return tmp14Result;
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/empty_states/GuildsEmpty.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/empty_states/GuildsEmpty.tsx");
 
 export default memoResult;
 export { GuildsEmptyContent };

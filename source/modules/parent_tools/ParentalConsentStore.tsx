@@ -1,12 +1,14 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 15288
+// Function ID: 15289
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 15224 (initialize)
-import { PersistedStore } from "initialize";
+// Module 15288 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0 = false;
+const PersistedStore = initializeDefault.PersistedStore;
 class ParentalConsentStore extends PersistedStore {
 }
 const prototype = ParentalConsentStore.prototype;
@@ -27,17 +29,17 @@ prototype["getState"] = function getState() {
 };
 ParentalConsentStore.displayName = "ParentalConsentStore";
 ParentalConsentStore.persistKey = "ParentalConsentStore";
-const parentalConsentStore = new ParentalConsentStore(require("dispatcher"), {
+const parentalConsentStore = new ParentalConsentStore(dispatcherDefault, {
   GUARDIAN_CONNECT_REQUIRED: function handleGuardianConnectRequired(shouldShowGuardianConnect) {
-    let closure_0 = true === shouldShowGuardianConnect.shouldShowGuardianConnect;
+    closure_0 = true === shouldShowGuardianConnect.shouldShowGuardianConnect;
     parentalConsentStore.persist();
   },
   GUARDIAN_CONNECT_CLEARED: function handleGuardianConnectCleared() {
-    let c0 = false;
+    c0 = false;
     parentalConsentStore.persist();
   },
   NUF_COMPLETE: function handleNUFCompleted() {
-    let c0 = false;
+    c0 = false;
     parentalConsentStore.persist();
   }
 });

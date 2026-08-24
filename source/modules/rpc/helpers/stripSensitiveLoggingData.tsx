@@ -1,14 +1,16 @@
-// Module ID: 8749
-// Function ID: 8750
+// Module ID: 8786
+// Function ID: 8787
 // Name: stripSensitiveLoggingData
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 8749 (stripSensitiveLoggingData)
-import { RPCCommands } from "ME";
+// Module 8786 (stripSensitiveLoggingData)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
+const RPCCommands = ME.RPCCommands;
 let c1 = "<removed>";
-const result = require("set").fileFinishedImporting("modules/rpc/helpers/stripSensitiveLoggingData.tsx");
+const result = set.fileFinishedImporting("modules/rpc/helpers/stripSensitiveLoggingData.tsx");
 
 export default function stripSensitiveLoggingData(arg0) {
   let obj = {};
@@ -37,7 +39,7 @@ export default function stripSensitiveLoggingData(arg0) {
       }
       obj = {};
       const merged2 = Object.assign(merged3);
-      const obj1 = {};
+      obj1 = {};
       merged3 = Object.assign(merged3.data);
       obj1.access_token = c1;
       obj.data = obj1;

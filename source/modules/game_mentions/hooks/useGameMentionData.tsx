@@ -1,19 +1,20 @@
-// Module ID: 6898
-// Function ID: 6899
+// Module ID: 6936
+// Function ID: 6937
 // Name: getGameMentionData
-// Dependencies: [4505, 6899, 1922, 6901, 589, 643, 2]
+// Dependencies: [4509, 6937, 1922, 6939, 589, 643, 2]
 // Exports: getGameMentionData, useGameMentionData
 
-// Module 6898 (getGameMentionData)
-import handleLoadMessages from "handleLoadMessages";
-import set from "set";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 6936 (getGameMentionData)
+import shallowEqualDefault from "shallowEqual" /* 643 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 6939 */;
+import closure_3 from "handleLoadMessages" /* 4509 */;
+import closure_4 from "set" /* 6937 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/game_mentions/hooks/useGameMentionData.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/game_mentions/hooks/useGameMentionData.tsx");
 
 export const getGameMentionData = function getGameMentionData(closure_0) {
-  let media;
   currentUser = currentUser.getCurrentUser();
   game = game.getGame(closure_0);
   gameById = gameById.getGameById(closure_0);
@@ -33,7 +34,7 @@ export const getGameMentionData = function getGameMentionData(closure_0) {
       obj[2] = icon;
       let tmp4 = obj;
     }
-    obj2 = require(6901) /* useGameProfileObscured */;
+    obj2 = useGameProfileObscured;
   } else if (null != gameById) {
     obj = { gameId: null, gameName: null, gameIcon: null };
     obj[0] = closure_0;
@@ -44,13 +45,12 @@ export const getGameMentionData = function getGameMentionData(closure_0) {
 };
 export const useGameMentionData = function useGameMentionData(gameId) {
   const _require = gameId;
-  const items = [handleLoadMessages, set, mergeGuildAvatar];
+  const items = [closure_3, closure_4, closure_5];
   const items1 = [gameId];
   return _require(589).useStateFromStores(items, () => {
-    let media;
-    const currentUser = outer1_5.getCurrentUser();
-    const game = outer1_3.getGame(gameId);
-    const gameById = outer1_4.getGameById(gameId);
+    const currentUser = closure_1_5.getCurrentUser();
+    const game = closure_1_3.getGame(gameId);
+    const gameById = closure_1_4.getGameById(gameId);
     if (null != game) {
       let nsfwAllowed;
       if (currentUser != null) {
@@ -67,7 +67,7 @@ export const useGameMentionData = function useGameMentionData(gameId) {
         obj[2] = icon;
         let tmp5 = obj;
       }
-      obj2 = gameId(outer1_2[3]);
+      obj2 = gameId(closure_1_2[3]);
     } else if (null != gameById) {
       obj = { gameId: null, gameName: null, gameIcon: null };
       obj[0] = tmp;
@@ -75,5 +75,5 @@ export const useGameMentionData = function useGameMentionData(gameId) {
       tmp5 = obj;
     }
     return tmp5;
-  }, items1, importDefault(643));
+  }, items1, shallowEqualDefault);
 };

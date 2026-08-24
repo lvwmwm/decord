@@ -1,20 +1,11 @@
-// Module ID: 5337
-// Function ID: 5338
+// Module ID: 5342
+// Function ID: 5343
 // Name: fromServer
-// Dependencies: [5302, 5338, 5340, 5343, 5344, 5345, 5346, 5347, 5348, 5349, 5350, 5339, 2]
+// Dependencies: [5307, 5343, 5345, 5348, 5349, 5350, 5351, 5352, 5353, 5354, 5355, 5344, 2]
 
-// Module 5337 (fromServer)
-import fromServer from "fromServer";
-import { CountdownTimerBlockRecord } from "fromServer";
-import { FeaturedBlockRecord } from "fromServer";
-import { FeedBlockRecord } from "fromServer";
-import { GameServerHostingBannerBlockRecord as closure_6 } from "fromServer";
-import { HeroBlockRecord } from "fromServer";
-import { ImmersiveBannerBlockRecord as closure_8 } from "fromServer";
-import { RewardHeroBlockRecord } from "fromServer";
-import { ShelfBlockRecord } from "fromServer";
-import { SocialLayerStorefrontPromotionalBannerBlockRecord as closure_11 } from "fromServer";
-import { WideBannerBlockRecord } from "fromServer";
+// Module 5342 (fromServer)
+import closure_2 from "fromServer" /* 5307 */;
+import { CountdownTimerBlockRecord, FeaturedBlockRecord, FeedBlockRecord, GameServerHostingBannerBlockRecord as closure_6, HeroBlockRecord, ImmersiveBannerBlockRecord as closure_8, RewardHeroBlockRecord, ShelfBlockRecord, SocialLayerStorefrontPromotionalBannerBlockRecord as closure_11, WideBannerBlockRecord } from "fromServer" /* 5343 */;
 
 const require = arg1;
 let prototype;
@@ -47,7 +38,7 @@ prototype = function CollectiblesShopHomeRecord(shop_blocks) {
   });
   obj.shopBlocks = mapped.filter((arg0) => undefined !== arg0);
   const categories = shop_blocks.categories;
-  obj.categories = categories.map((arg0) => fromServer.fromServer(arg0));
+  obj.categories = categories.map((arg0) => closure_2.fromServer(arg0));
   return obj;
 }.prototype;
 prototype["fromServer"] = function fromServer(shop_blocks) {
@@ -82,9 +73,9 @@ prototype["fromServer"] = function fromServer(shop_blocks) {
   });
   obj.shopBlocks = mapped.filter((arg0) => undefined !== arg0);
   const categories = shop_blocks.categories;
-  obj.categories = categories.map((arg0) => fromServer.fromServer(arg0));
+  obj.categories = categories.map((arg0) => closure_2.fromServer(arg0));
   return obj;
 };
-const result = require("fromServer").fileFinishedImporting("modules/collectibles/records/CollectiblesShopHomeRecord.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesShopHomeRecord.tsx");
 
 export const CollectiblesShopHomeRecord = prototype;

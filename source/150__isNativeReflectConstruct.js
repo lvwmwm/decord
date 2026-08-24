@@ -4,10 +4,12 @@
 // Dependencies: [41, 42, 93, 95, 98, 142, 136, 139, 131]
 
 // Module 150 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
+import _inheritsDefault from "_inherits" /* 98 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 131 */;
+import closure_3 from "_classCallCheck" /* 41 */;
+import closure_4 from "_possibleConstructorReturn" /* 93 */;
+import closure_5 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
 const ReadOnlyCharacterData = arg1;
 function _isNativeReflectConstruct() {
@@ -21,10 +23,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -32,10 +34,10 @@ function _isNativeReflectConstruct() {
 class ReadOnlyCharacterData {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, ReadOnlyCharacterData);
-    tmp2 = __esModule;
-    obj = __esModule(ReadOnlyCharacterData);
-    tmp3 = __esModule;
+    tmp = closure_3(this, ReadOnlyCharacterData);
+    tmp2 = closure_5;
+    obj = closure_5(ReadOnlyCharacterData);
+    tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -49,7 +51,7 @@ class ReadOnlyCharacterData {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(ReadOnlyCharacterData, require("_isNativeReflectConstruct"));
+_inheritsDefault(ReadOnlyCharacterData, _isNativeReflectConstructDefault);
 const items = [
   {
     key: "nextElementSibling",

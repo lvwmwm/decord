@@ -1,19 +1,23 @@
-// Module ID: 12688
-// Function ID: 12689
+// Module ID: 12742
+// Function ID: 12743
 // Name: closeConversationsAndJumpToMessage
-// Dependencies: [4230, 4768, 2]
+// Dependencies: [4234, 4773, 2]
 // Exports: closeConversationsAndJumpToMessage
 
-// Module 12688 (closeConversationsAndJumpToMessage)
-const result = require("set").fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorUtils.tsx");
+// Module 12742 (closeConversationsAndJumpToMessage)
+import set from "set" /* 2 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+import transitionToChannel from "transitionToChannel" /* 4773 */;
+
+const result = set.fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorUtils.tsx");
 
 export const closeConversationsAndJumpToMessage = function closeConversationsAndJumpToMessage(channelId, id) {
-  const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = getRootNavigationRef.getRootNavigationRef();
   if (rootNavigationRef != null) {
     rootNavigationRef.goBack();
   }
-  const obj = require(4230) /* getRootNavigationRef */;
+  const obj = getRootNavigationRef;
   const tmp = require;
-  require(4768) /* transitionToChannel */.transitionToMessage(channelId, id, { navigationReplace: true });
+  transitionToChannel.transitionToMessage(channelId, id, { navigationReplace: true });
 };
 export const ConversationNavigatorScreens = { LIST: "conversation_list", FOCUS: "conversation_focus" };

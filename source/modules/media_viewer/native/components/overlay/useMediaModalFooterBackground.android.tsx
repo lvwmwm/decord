@@ -1,19 +1,22 @@
-// Module ID: 12065
-// Function ID: 12066
+// Module ID: 12117
+// Function ID: 12118
 // Name: useMediaModalFooterBackground
-// Dependencies: [32, 689, 4097, 712, 2]
+// Dependencies: [32, 689, 4100, 712, 2]
 // Exports: default
 
-// Module 12065 (useMediaModalFooterBackground)
-import _slicedToArray from "_slicedToArray";
+// Module 12117 (useMediaModalFooterBackground)
+import nDefault from "n" /* 689 */;
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import closure_3 from "_slicedToArray" /* 32 */;
 
-const require = arg1;
-const result = require("map").fileFinishedImporting("modules/media_viewer/native/components/overlay/useMediaModalFooterBackground.android.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/components/overlay/useMediaModalFooterBackground.android.tsx");
 
 export default function useMediaModalFooterBackground() {
-  let mediaModalFooterBackgroundColorRgba = require(4097) /* map */;
-  const tmp = importDefault(689);
-  const tmp2 = callback(importDefault(689)(mediaModalFooterBackgroundColorRgba.useToken(importDefault(712).colors.THEME_LOCKED_BLUR_FALLBACK)).rgba(), 4);
+  let mediaModalFooterBackgroundColorRgba = map;
+  const tmp = nDefault;
+  const tmp2 = callback(nDefault(mediaModalFooterBackgroundColorRgba.useToken(ThemesDefault.colors.THEME_LOCKED_BLUR_FALLBACK)).rgba(), 4);
   mediaModalFooterBackgroundColorRgba = { r: tmp2[0], g: tmp2[1], b: tmp2[2], a: tmp2[3] };
-  return { mediaModalFooterBackgroundColorRgba, MediaModalFooterUnderlay: "a" };
+  return { mediaModalFooterBackgroundColorRgba, MediaModalFooterUnderlay: "r" };
 };

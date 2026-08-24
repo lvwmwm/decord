@@ -1,34 +1,31 @@
-// Module ID: 14353
-// Function ID: 14354
+// Module ID: 14421
+// Function ID: 14422
 // Name: QuestHomeSetting
-// Dependencies: [32, 19, 10948, 6716, 21, 4661, 712, 1500, 4006, 7877, 14354, 14358, 2]
+// Dependencies: [32, 19, 10987, 6753, 21, 4668, 712, 1500, 4009, 7916, 14422, 14426, 2]
 // Exports: default
 
-// Module 14353 (QuestHomeSetting)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import zustandStore from "zustandStore";
-import QuestsExperimentLocations from "QuestsExperimentLocations";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14421 (QuestHomeSetting)
+import ThemesDefault from "Themes" /* 712 */;
+import QuestHomeHeaderTitleDefault from "QuestHomeHeaderTitle" /* 14422 */;
+import EmptyStateNoQuestsAvailableDefault from "EmptyStateNoQuestsAvailable" /* 14426 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "zustandStore" /* 10987 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 6753 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
 const require = arg1;
 ({ QuestHomeSortMethods: closure_6, getQuestHomeFilterOptionItem: error } = QuestsExperimentLocations);
 createCacheKey = { container: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_9 = createCacheKey.createStyles(createCacheKey);
 let closure_10 = [];
-const result = require("zustandStore").fileFinishedImporting("modules/quests/native/QuestHomeSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/QuestHomeSetting.tsx");
 
 export default function QuestHomeSetting() {
-  let tmp3;
-  let tmp4;
-  let tmp6;
-  let tmp7;
-  let tmp = createCacheKey();
+  let tmp = callback2();
   [tmp3, tmp4] = callback(React.useState(() => {
     let SUGGESTED = store.getField("sort");
     if (null == SUGGESTED) {
@@ -64,34 +61,34 @@ export default function QuestHomeSetting() {
     }
     return found;
   }), 2);
-  let importDefault = tmp7;
-  const effect = React.useEffect(() => outer1_5.subscribe((self) => ({ sort: self.sort, filter: self.filter }), (self, self2) => {
+  importDefault = tmp7;
+  const effect = React.useEffect(() => closure_1_5.subscribe((self) => ({ sort: self.sort, filter: self.filter }), (self, self2) => {
     if (self.sort !== self2.sort) {
       let SUGGESTED = self.sort;
       if (null == SUGGESTED) {
-        SUGGESTED = outer1_6.SUGGESTED;
+        SUGGESTED = closure_1_6.SUGGESTED;
       } else {
         const _Object = Object;
-        const values = Object.values(outer1_6);
+        const values = Object.values(closure_1_6);
       }
       closure_0(SUGGESTED);
       const tmp = closure_0;
     }
     if (self.filter !== self2.filter) {
       if (null == self.filter) {
-        let found = outer1_10;
+        let found = closure_1_10;
       } else {
         const parts = str.split(",");
         const mapped = parts.map((arg0) => callback(arg0));
         found = mapped.filter((arg0) => null != arg0);
         if (found.length <= 0) {
-          found = outer1_10;
+          found = closure_1_10;
         }
       }
       closure_1(found);
       const tmp7 = closure_1;
     }
-  }, { equalityFn: navigation(outer1_2[8]).shallow, fireImmediately: true }), []);
+  }, { equalityFn: navigation(closure_1_2[8]).shallow, fireImmediately: true }), []);
   navigation = undefined;
   importDefault = undefined;
   let obj = navigation(1500);
@@ -101,14 +98,14 @@ export default function QuestHomeSetting() {
   const items = [navigation];
   const effect1 = React.useEffect(() => navigation.addListener("transitionEnd", () => callback(true)), items);
   callback = React.useCallback(() => {
-    callback(outer1_10);
+    callback(closure_1_10);
   }, []);
   const effect2 = React.useEffect(() => () => {
     callback(table[9]).close();
-    zustandStore.resetState();
+    closure_5.resetState();
   }, []);
-  const field = zustandStore.useField("scrollToQuestId");
-  importDefault(14354)({ setSelectedSortMethod: tmp4, setSelectedFilters: tmp7, selectedFilters: tmp6, selectedSortMethod: tmp3 });
+  const field = closure_5.useField("scrollToQuestId");
+  QuestHomeHeaderTitleDefault({ setSelectedSortMethod: tmp4, setSelectedFilters: tmp7, selectedFilters: tmp6, selectedSortMethod: tmp3 });
   obj = { containerStyle: tmp.container, isNavigationComplete: tmp10[0], scrollToQuestId: field, sortMethod: tmp3, filters: tmp6, onClearFilters: callback };
-  return jsx(importDefault(14358), { containerStyle: tmp.container, isNavigationComplete: tmp10[0], scrollToQuestId: field, sortMethod: tmp3, filters: tmp6, onClearFilters: callback });
+  return jsx(EmptyStateNoQuestsAvailableDefault, { containerStyle: tmp.container, isNavigationComplete: tmp10[0], scrollToQuestId: field, sortMethod: tmp3, filters: tmp6, onClearFilters: callback });
 };

@@ -1,13 +1,14 @@
-// Module ID: 7576
-// Function ID: 7577
+// Module ID: 7614
+// Function ID: 7615
 // Name: POLL_ATTACHMENT_FOLDER
 // Dependencies: [1338, 2]
 
-// Module 7576 (POLL_ATTACHMENT_FOLDER)
-import set from "set";
+// Module 7614 (POLL_ATTACHMENT_FOLDER)
+import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1338 */;
+import set from "set" /* 2 */;
 
 const items = [, ];
-({ GIF: arr[0], EMOJI: arr[1] } = require("ExpressionPickerViewType").ExpressionPickerViewType);
+({ GIF: arr[0], EMOJI: arr[1] } = ExpressionPickerViewType.ExpressionPickerViewType);
 let set = new Set(items);
 const result = set.fileFinishedImporting("modules/polls/PollsConstants.tsx");
 

@@ -4,15 +4,17 @@
 // Dependencies: [817, 1059]
 
 // Module 1063 (resourceTimingToSpanAttributes)
-const require = arg1;
+import extractNetworkProtocol from "extractNetworkProtocol" /* 1059 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.resourceTimingToSpanAttributes = function resourceTimingToSpanAttributes(nextHopProtocol) {
   let obj = {};
   if (null != nextHopProtocol.nextHopProtocol) {
-    const result = require(1059) /* extractNetworkProtocol */.extractNetworkProtocol(nextHopProtocol.nextHopProtocol);
+    const result = extractNetworkProtocol.extractNetworkProtocol(nextHopProtocol.nextHopProtocol);
     ({ version: obj["network.protocol.version"], name: obj["network.protocol.name"] } = result);
-    const obj2 = require(1059) /* extractNetworkProtocol */;
+    const obj2 = extractNetworkProtocol;
   }
   if (obj3.browserPerformanceTimeOrigin()) {
     obj = {};
@@ -170,7 +172,6 @@ arg5.resourceTimingToSpanAttributes = function resourceTimingToSpanAttributes(ne
     const _Object2 = Object;
     const entries = Object.entries(obj);
     let fromEntriesResult = Object.fromEntries(entries.filter((arg0) => {
-      let tmp;
       [, tmp] = arg0;
       return null != tmp;
     }));

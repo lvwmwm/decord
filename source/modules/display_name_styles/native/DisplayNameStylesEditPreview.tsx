@@ -1,48 +1,44 @@
-// Module ID: 14700
-// Function ID: 14701
+// Module ID: 14768
+// Function ID: 14769
 // Name: ChatPreview
-// Dependencies: [19, 17, 21, 4661, 712, 8376, 1946, 9284, 1236, 2693, 10418, 4063, 1297, 9452, 9453, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 8415, 1946, 9321, 1236, 2694, 10457, 4066, 1297, 9489, 9490, 4739, 2]
 // Exports: default
 
-// Module 14700 (ChatPreview)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14768 (ChatPreview)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import messagesProxyDefault from "messagesProxy" /* 2694 */;
+import Text from "Text" /* 4739 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 9489 */;
+import DisplayNameStyleColorPreset from "DisplayNameStyleColorPreset" /* 9490 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function ChatPreview(arg0) {
-  let displayName;
-  let displayNameStyles;
-  let guildId;
-  let user;
   ({ user, guildId } = arg0);
   ({ displayName, displayNameStyles } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { style: tmp.chatContainer, pointerEvents: "none", children: null };
   const memo = React.useMemo(() => {
     const obj = callback(table[11]);
     return obj.calendarFormat(new Date(), true);
   }, []);
-  obj = { user, size: null, guildId: null };
-  obj[1] = require(1297) /* Button */.AvatarSizes.NORMAL;
-  obj[2] = guildId;
-  const items = [callback(require(1297) /* Button */.Avatar, obj), ];
+  obj = { user, size: Button.AvatarSizes.NORMAL, guildId };
+  const items = [callback(Button.Avatar, obj), ];
   obj = { style: tmp.chatContent, children: null };
-  const obj1 = { style: tmp.chatHeader, children: null };
-  const obj2 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: null, lineClamp: 1, pendingDisplayNameStyles: null, style: null };
-  obj2[4] = require(9453) /* DisplayNameStyleColorPreset */.EffectDisplayType.PLAIN;
-  obj2[6] = displayNameStyles;
-  obj2[7] = tmp.chatUsername;
-  const items1 = [callback(importDefault(9452), obj2), callback(require(4734) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo })];
+  obj1 = { style: tmp.chatHeader, children: null };
+  const obj2 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: DisplayNameStyleColorPreset.EffectDisplayType.PLAIN, lineClamp: 1, pendingDisplayNameStyles: displayNameStyles, style: tmp.chatUsername };
+  const items1 = [callback(AVERAGE_FONT_WIDTH_RATIODefault, obj2), callback(Text.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo })];
   obj1[1] = items1;
   const items2 = [callback2(View, obj1), ];
   const obj4 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj4[3] = intl.string(importDefault(2693).h5Cuej);
-  items2[1] = callback(require(4734) /* Text */.Text, obj4);
+  const intl = getSystemLocale.intl;
+  obj4[3] = intl.string(messagesProxyDefault.h5Cuej);
+  items2[1] = callback(Text.Text, obj4);
   obj[1] = items2;
   items[1] = callback2(View, obj);
   obj[2] = items;
@@ -50,37 +46,30 @@ function ChatPreview(arg0) {
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { previewSection: null, chatPreviewWrapper: null, nameplatePreviewWrapper: null, chatContainer: null, chatContent: null, chatHeader: null, chatUsername: null, chatTimestamp: null, chatMessageText: null };
-createCacheKey = { marginBottom: require("Themes").space.PX_24, alignItems: "center", alignSelf: "center", width: "100%", maxWidth: 360 };
+createCacheKey = { marginBottom: ThemesDefault.space.PX_24, alignItems: "center", alignSelf: "center", width: "100%", maxWidth: 360 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[1] = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: ThemesDefault.radii.sm, borderWidth: 1, borderColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
 createCacheKey[2] = { marginTop: -6, width: 260 };
-let obj1 = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-createCacheKey[3] = { flexDirection: "row", borderRadius: require("Themes").radii.sm, padding: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, gap: require("Themes").space.PX_12 };
+let obj1 = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: ThemesDefault.radii.sm, borderWidth: 1, borderColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[3] = { flexDirection: "row", borderRadius: ThemesDefault.radii.sm, padding: ThemesDefault.space.PX_16, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, gap: ThemesDefault.space.PX_12 };
 createCacheKey[4] = { flex: 1 };
 createCacheKey[5] = { flexDirection: "row", alignItems: "baseline", gap: 6 };
 createCacheKey[6] = { flexShrink: 1, minWidth: 0 };
 createCacheKey[7] = { marginTop: -8, flexShrink: 0 };
 createCacheKey[8] = {};
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { flexDirection: "row", borderRadius: require("Themes").radii.sm, padding: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, gap: require("Themes").space.PX_12 };
-const result = require("jsxProd").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEditPreview.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { flexDirection: "row", borderRadius: ThemesDefault.radii.sm, padding: ThemesDefault.space.PX_16, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, gap: ThemesDefault.space.PX_12 };
+const result = require("set").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEditPreview.tsx");
 
 export default function DisplayNameStylesEditPreview(selectedEffectId) {
-  let displayName;
-  let guildId;
-  let guildNameplate;
-  let pendingNameplate;
-  let selectedFontId;
-  let user;
-  let userNameplate;
   ({ user, displayName, guildId, selectedFontId } = selectedEffectId);
   selectedEffectId = selectedEffectId.selectedEffectId;
   const selectedColors = selectedEffectId.selectedColors;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = selectedFontId(selectedColors[5]);
   const guildMemberAndUserPendingNameplate = obj.useGuildMemberAndUserPendingNameplate(user, guildId);
   ({ pendingNameplate, userNameplate, guildNameplate } = guildMemberAndUserPendingNameplate);
-  let obj1 = selectedFontId(selectedColors[6]);
+  obj1 = selectedFontId(selectedColors[6]);
   let nameplateData = obj1.getNameplateData(guildNameplate);
   const items = [selectedFontId, selectedEffectId, selectedColors];
   const memo = React.useMemo(() => ({ fontId: selectedFontId, effectId: selectedEffectId, colors: selectedColors }), items);

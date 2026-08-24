@@ -4,13 +4,18 @@
 // Dependencies: [41, 42, 38, 201, 203, 204]
 
 // Module 200 (BlobManager)
-import _classCallCheck from "_classCallCheck";
+import _modDef38 from "module_38" /* 38 */;
+import _createClassDefault from "_createClass" /* 42 */;
+import BlobModuleDefault from "BlobModule" /* 201 */;
+import Blob from "Blob" /* 203 */;
+import map from "map" /* 204 */;
+import closure_4 from "_classCallCheck" /* 41 */;
 
 const BlobManager = global;
-const require = arg1;
+require = arg1;
 class BlobManager {
   constructor() {
-    tmp = _classCallCheck(this, BlobManager);
+    tmp = closure_4(this, BlobManager);
     return;
   }
 }
@@ -18,7 +23,7 @@ const items = [
   {
     key: "createFromParts",
     value: function createFromParts(arr, type) {
-      importDefault(38)(importDefault(201), "NativeBlobModule is available.");
+      _modDef38(BlobModuleDefault, "NativeBlobModule is available.");
       const replaced = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (arg0) => {
         const tmp = 16 * Math.random() | 0;
         let str = tmp;
@@ -42,7 +47,7 @@ const items = [
             return obj;
           }
         }
-        const error = new Error("Creating blobs from 'ArrayBuffer' and 'ArrayBufferView' are not supported");
+        error = new Error("Creating blobs from 'ArrayBuffer' and 'ArrayBufferView' are not supported");
         throw error;
       });
       const reduced = mapped.reduce((arg0, type) => {
@@ -54,7 +59,7 @@ const items = [
         }
         return sum;
       }, 0);
-      let obj = importDefault(201);
+      let obj = BlobModuleDefault;
       const fromParts = obj.createFromParts(mapped, replaced);
       obj = { blobId: replaced, offset: 0, size: reduced, type: null, lastModified: null };
       let str = "";
@@ -75,10 +80,10 @@ const items = [
   {
     key: "createFromOptions",
     value: function createFromOptions(_response) {
-      let obj = require(204) /* map */;
+      let obj = map;
       obj.register(_response.blobId);
       let data = _response;
-      obj = Object.create(require(203) /* Blob */.default.prototype);
+      obj = Object.create(Blob.default.prototype);
       if (null == _response.__collector) {
         obj = {};
         const merged = Object.assign(_response);
@@ -96,51 +101,51 @@ const items = [
   {
     key: "release",
     value: function release(arg0) {
-      importDefault(38)(importDefault(201), "NativeBlobModule is available.");
+      _modDef38(BlobModuleDefault, "NativeBlobModule is available.");
       const tmp = importDefault;
-      const tmp3 = importDefault(38);
-      require(204) /* map */.unregister(arg0);
-      const obj = require(204) /* map */;
+      const tmp3 = _modDef38;
+      map.unregister(arg0);
+      const obj = map;
       if (!obj2.has(arg0)) {
-        tmp(201).release(arg0);
-        const tmpResult = tmp(201);
+        BlobModuleDefault.release(arg0);
+        const tmpResult = BlobModuleDefault;
       }
     }
   },
   {
     key: "addNetworkingHandler",
     value: function addNetworkingHandler() {
-      importDefault(38)(importDefault(201), "NativeBlobModule is available.");
-      const tmp = importDefault(38);
-      importDefault(201).addNetworkingHandler();
+      _modDef38(BlobModuleDefault, "NativeBlobModule is available.");
+      const tmp = _modDef38;
+      BlobModuleDefault.addNetworkingHandler();
     }
   },
   {
     key: "addWebSocketHandler",
     value: function addWebSocketHandler(arg0) {
-      importDefault(38)(importDefault(201), "NativeBlobModule is available.");
-      const tmp = importDefault(38);
-      importDefault(201).addWebSocketHandler(arg0);
+      _modDef38(BlobModuleDefault, "NativeBlobModule is available.");
+      const tmp = _modDef38;
+      BlobModuleDefault.addWebSocketHandler(arg0);
     }
   },
   {
     key: "removeWebSocketHandler",
     value: function removeWebSocketHandler(arg0) {
-      importDefault(38)(importDefault(201), "NativeBlobModule is available.");
-      const tmp = importDefault(38);
-      const result = importDefault(201).removeWebSocketHandler(arg0);
+      _modDef38(BlobModuleDefault, "NativeBlobModule is available.");
+      const tmp = _modDef38;
+      const result = BlobModuleDefault.removeWebSocketHandler(arg0);
     }
   },
   {
     key: "sendOverSocket",
     value: function sendOverSocket(data) {
-      importDefault(38)(importDefault(201), "NativeBlobModule is available.");
-      const tmp = importDefault(38);
-      importDefault(201).sendOverSocket(data.data, arg1);
+      _modDef38(BlobModuleDefault, "NativeBlobModule is available.");
+      const tmp = _modDef38;
+      BlobModuleDefault.sendOverSocket(data.data, arg1);
     }
   }
 ];
-const tmp2 = require("_createClass")(BlobManager, null, items);
-tmp2.isAvailable = require("BlobModule");
+const tmp2 = _createClassDefault(BlobManager, null, items);
+tmp2.isAvailable = BlobModuleDefault;
 
 export default tmp2;

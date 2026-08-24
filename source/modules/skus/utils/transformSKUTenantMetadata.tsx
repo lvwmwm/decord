@@ -1,12 +1,14 @@
-// Module ID: 4518
-// Function ID: 4519
+// Module ID: 4523
+// Function ID: 4524
 // Name: transformProfileEffectKeyFrameFromServer
 // Dependencies: [1949, 2]
 // Exports: default
 
-// Module 4518 (transformProfileEffectKeyFrameFromServer)
+// Module 4523 (transformProfileEffectKeyFrameFromServer)
+import set from "set" /* 2 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+
 function transformProfileEffectKeyFrameFromServer(src) {
-  let randomizedSources;
   const obj = { src: src.src, loop: src.loop, height: src.height, width: src.width, duration: null, start: null, loopDelay: null, position: null, zIndex: null, randomizedSources: null };
   let num = src.duration;
   if (num == null) {
@@ -26,13 +28,9 @@ function transformProfileEffectKeyFrameFromServer(src) {
   obj[9] = mapped;
   return obj;
 }
-const result = require("set").fileFinishedImporting("modules/skus/utils/transformSKUTenantMetadata.tsx");
+const result = set.fileFinishedImporting("modules/skus/utils/transformSKUTenantMetadata.tsx");
 
 export default function transformSKUTenantMetadata(social_layer) {
-  let assets;
-  let assets2;
-  let effects;
-  let item;
   if (null != social_layer) {
     social_layer = social_layer.social_layer;
     let tmp;
@@ -66,8 +64,8 @@ export default function transformSKUTenantMetadata(social_layer) {
       let tmp7;
       if (null != item) {
         const type = item.type;
-        if (require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
-          const obj1 = { id: null, type: null, asset: null, assets: null, label: null };
+        if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
+          obj1 = { id: null, type: null, asset: null, assets: null, label: null };
           ({ id: obj7[0], type: obj7[1], asset: obj7[2], assets: assets2 } = item);
           let tmp13;
           if (null != assets2) {

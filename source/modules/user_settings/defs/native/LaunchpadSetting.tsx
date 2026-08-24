@@ -1,61 +1,68 @@
-// Module ID: 14840
-// Function ID: 14841
+// Module ID: 14904
+// Function ID: 14905
 // Name: radio
-// Dependencies: [8198, 10665, 4066, 1306, 1236, 10669, 10666, 2]
+// Dependencies: [8238, 10704, 4069, 1306, 1236, 10708, 10705, 2]
 
-// Module 14840 (radio)
-import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG";
-import createToggle from "createToggle";
+// Module 14904 (radio)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import create from "create" /* 1306 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 10704 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 10705 */;
+import createToggle from "createToggle" /* 10708 */;
 
+const LaunchPadTypes = LAUNCH_PAD_SPRING_CONFIG.LaunchPadTypes;
 const radio = createToggle.createRadio({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.JqV7IC);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.JqV7IC);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ADVANCED,
-  useValue: require("useLaunchPadType"),
+  parent: MobileUserSettings.MobileUserSettings.ADVANCED,
+  useValue: useLaunchPadTypeDefault,
   onValueChange: function onLaunchpadSettingValueChange(arg0) {
     if (LaunchPadTypes.GESTURE_FULL === arg0) {
-      const LaunchPadModeSetting3 = require(4066) /* explicitContentFromProto */.LaunchPadModeSetting;
-      LaunchPadModeSetting3.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_GESTURE_FULL_SCREEN);
+      const LaunchPadModeSetting3 = explicitContentFromProto.LaunchPadModeSetting;
+      LaunchPadModeSetting3.updateSetting(create.LaunchPadMode.LAUNCH_PAD_GESTURE_FULL_SCREEN);
     } else if (tmp.GESTURE_EDGE === arg0) {
-      const LaunchPadModeSetting2 = require(4066) /* explicitContentFromProto */.LaunchPadModeSetting;
-      LaunchPadModeSetting2.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_GESTURE_RIGHT_EDGE);
+      const LaunchPadModeSetting2 = explicitContentFromProto.LaunchPadModeSetting;
+      LaunchPadModeSetting2.updateSetting(create.LaunchPadMode.LAUNCH_PAD_GESTURE_RIGHT_EDGE);
     } else if (tmp.PULL_TAB === arg0) {
-      const LaunchPadModeSetting = require(4066) /* explicitContentFromProto */.LaunchPadModeSetting;
-      LaunchPadModeSetting.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_PULL_TAB);
+      const LaunchPadModeSetting = explicitContentFromProto.LaunchPadModeSetting;
+      LaunchPadModeSetting.updateSetting(create.LaunchPadMode.LAUNCH_PAD_PULL_TAB);
     } else if (tmp.DISABLED === arg0) {
-      const LaunchPadModeSetting4 = require(4066) /* explicitContentFromProto */.LaunchPadModeSetting;
-      LaunchPadModeSetting4.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_DISABLED);
+      const LaunchPadModeSetting4 = explicitContentFromProto.LaunchPadModeSetting;
+      LaunchPadModeSetting4.updateSetting(create.LaunchPadMode.LAUNCH_PAD_DISABLED);
     }
   },
   useOptions: function useLaunchpadSettingOptions() {
     let obj = { label: null, subLabel: null, value: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.Q3abNB);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["/gdTGA"]);
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t.Q3abNB);
+    const intl2 = getSystemLocale.intl;
+    obj[1] = intl2.string(getSystemLocale.t["/gdTGA"]);
     obj[2] = LaunchPadTypes.GESTURE_FULL;
     const items = [obj, , , ];
     obj = { label: null, subLabel: null, value: null };
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.dQN6qS);
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl4.string(require(1236) /* getSystemLocale */.t["W+cPjG"]);
+    const intl3 = getSystemLocale.intl;
+    obj[0] = intl3.string(getSystemLocale.t.dQN6qS);
+    const intl4 = getSystemLocale.intl;
+    obj[1] = intl4.string(getSystemLocale.t["W+cPjG"]);
     obj[2] = LaunchPadTypes.GESTURE_EDGE;
     items[1] = obj;
     obj = { label: null, subLabel: null, value: null };
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl5.string(require(1236) /* getSystemLocale */.t["PgDGl+"]);
-    const intl6 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl6.string(require(1236) /* getSystemLocale */.t.uVc5MG);
+    const intl5 = getSystemLocale.intl;
+    obj[0] = intl5.string(getSystemLocale.t["PgDGl+"]);
+    const intl6 = getSystemLocale.intl;
+    obj[1] = intl6.string(getSystemLocale.t.uVc5MG);
     obj[2] = LaunchPadTypes.PULL_TAB;
     items[2] = obj;
-    const obj1 = { label: null, subLabel: null, value: null };
-    const intl7 = require(1236) /* getSystemLocale */.intl;
-    obj1[0] = intl7.string(require(1236) /* getSystemLocale */.t.HnzBCZ);
-    const intl8 = require(1236) /* getSystemLocale */.intl;
-    obj1[1] = intl8.string(require(1236) /* getSystemLocale */.t.It18o2);
+    obj1 = { label: null, subLabel: null, value: null };
+    const intl7 = getSystemLocale.intl;
+    obj1[0] = intl7.string(getSystemLocale.t.HnzBCZ);
+    const intl8 = getSystemLocale.intl;
+    obj1[1] = intl8.string(getSystemLocale.t.It18o2);
     obj1[2] = LaunchPadTypes.DISABLED;
     items[3] = obj1;
     return items;
@@ -63,58 +70,58 @@ const radio = createToggle.createRadio({
 });
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.JqV7IC);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.JqV7IC);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ADVANCED,
-  useValue: require("useLaunchPadType"),
+  parent: MobileUserSettings.MobileUserSettings.ADVANCED,
+  useValue: useLaunchPadTypeDefault,
   onValueChange: function onLaunchpadSettingValueChange(arg0) {
     if (LaunchPadTypes.GESTURE_FULL === arg0) {
-      const LaunchPadModeSetting3 = require(4066) /* explicitContentFromProto */.LaunchPadModeSetting;
-      LaunchPadModeSetting3.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_GESTURE_FULL_SCREEN);
+      const LaunchPadModeSetting3 = explicitContentFromProto.LaunchPadModeSetting;
+      LaunchPadModeSetting3.updateSetting(create.LaunchPadMode.LAUNCH_PAD_GESTURE_FULL_SCREEN);
     } else if (tmp.GESTURE_EDGE === arg0) {
-      const LaunchPadModeSetting2 = require(4066) /* explicitContentFromProto */.LaunchPadModeSetting;
-      LaunchPadModeSetting2.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_GESTURE_RIGHT_EDGE);
+      const LaunchPadModeSetting2 = explicitContentFromProto.LaunchPadModeSetting;
+      LaunchPadModeSetting2.updateSetting(create.LaunchPadMode.LAUNCH_PAD_GESTURE_RIGHT_EDGE);
     } else if (tmp.PULL_TAB === arg0) {
-      const LaunchPadModeSetting = require(4066) /* explicitContentFromProto */.LaunchPadModeSetting;
-      LaunchPadModeSetting.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_PULL_TAB);
+      const LaunchPadModeSetting = explicitContentFromProto.LaunchPadModeSetting;
+      LaunchPadModeSetting.updateSetting(create.LaunchPadMode.LAUNCH_PAD_PULL_TAB);
     } else if (tmp.DISABLED === arg0) {
-      const LaunchPadModeSetting4 = require(4066) /* explicitContentFromProto */.LaunchPadModeSetting;
-      LaunchPadModeSetting4.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_DISABLED);
+      const LaunchPadModeSetting4 = explicitContentFromProto.LaunchPadModeSetting;
+      LaunchPadModeSetting4.updateSetting(create.LaunchPadMode.LAUNCH_PAD_DISABLED);
     }
   },
   useOptions: function useLaunchpadSettingOptions() {
     let obj = { label: null, subLabel: null, value: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.Q3abNB);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["/gdTGA"]);
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t.Q3abNB);
+    const intl2 = getSystemLocale.intl;
+    obj[1] = intl2.string(getSystemLocale.t["/gdTGA"]);
     obj[2] = LaunchPadTypes.GESTURE_FULL;
     const items = [obj, , , ];
     obj = { label: null, subLabel: null, value: null };
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.dQN6qS);
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl4.string(require(1236) /* getSystemLocale */.t["W+cPjG"]);
+    const intl3 = getSystemLocale.intl;
+    obj[0] = intl3.string(getSystemLocale.t.dQN6qS);
+    const intl4 = getSystemLocale.intl;
+    obj[1] = intl4.string(getSystemLocale.t["W+cPjG"]);
     obj[2] = LaunchPadTypes.GESTURE_EDGE;
     items[1] = obj;
     obj = { label: null, subLabel: null, value: null };
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl5.string(require(1236) /* getSystemLocale */.t["PgDGl+"]);
-    const intl6 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl6.string(require(1236) /* getSystemLocale */.t.uVc5MG);
+    const intl5 = getSystemLocale.intl;
+    obj[0] = intl5.string(getSystemLocale.t["PgDGl+"]);
+    const intl6 = getSystemLocale.intl;
+    obj[1] = intl6.string(getSystemLocale.t.uVc5MG);
     obj[2] = LaunchPadTypes.PULL_TAB;
     items[2] = obj;
-    const obj1 = { label: null, subLabel: null, value: null };
-    const intl7 = require(1236) /* getSystemLocale */.intl;
-    obj1[0] = intl7.string(require(1236) /* getSystemLocale */.t.HnzBCZ);
-    const intl8 = require(1236) /* getSystemLocale */.intl;
-    obj1[1] = intl8.string(require(1236) /* getSystemLocale */.t.It18o2);
+    obj1 = { label: null, subLabel: null, value: null };
+    const intl7 = getSystemLocale.intl;
+    obj1[0] = intl7.string(getSystemLocale.t.HnzBCZ);
+    const intl8 = getSystemLocale.intl;
+    obj1[1] = intl8.string(getSystemLocale.t.It18o2);
     obj1[2] = LaunchPadTypes.DISABLED;
     items[3] = obj1;
     return items;
   }
 };
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/LaunchpadSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/LaunchpadSetting.tsx");
 
 export default radio;

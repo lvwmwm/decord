@@ -1,20 +1,15 @@
-// Module ID: 9016
-// Function ID: 9017
+// Module ID: 9053
+// Function ID: 9054
 // Name: PlayerState
-// Dependencies: [19, 17, 21, 500, 4661, 4115, 4664, 4090, 6304, 2]
+// Dependencies: [19, 17, 21, 500, 4668, 4119, 4671, 4093, 6335, 2]
 
-// Module 9016 (PlayerState)
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import set from "set";
-import createCacheKey from "createCacheKey";
-import set from "jsxProd";
+// Module 9053 (PlayerState)
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import set from "set" /* 500 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 let c3 = importAllResult;
 ({ ActivityIndicator: c4, View: c5 } = get_ActivityIndicator);
@@ -30,8 +25,6 @@ let closure_12 = { code: "function MediaModalWebViewTsx2(){const{withTiming,load
 let result = set.fileFinishedImporting("modules/media_viewer/native/components/MediaModalWebView.tsx");
 
 export default importAllResult.memo(importAllResult.forwardRef((playerState, ref) => {
-  let injectedJavaScript;
-  let style;
   playerState = playerState.playerState;
   const onDataReceived = playerState.onDataReceived;
   const baseURL = playerState.baseURL;
@@ -40,14 +33,13 @@ export default importAllResult.memo(importAllResult.forwardRef((playerState, ref
   const merged = Object.assign(playerState, Object.create(null));
   let sharedValue;
   let sharedValue1;
-  let obj = playerState(baseURL[5]);
+  obj = playerState(baseURL[5]);
   sharedValue = obj.useSharedValue(1);
-  let obj1 = playerState(baseURL[5]);
+  obj1 = playerState(baseURL[5]);
   sharedValue1 = obj1.useSharedValue(0);
   let obj2 = playerState(baseURL[5]);
   const fn = function f() {
-    const obj = { opacity: null };
-    obj[0] = playerState(baseURL[6]).withTiming(sharedValue1.get());
+    obj = { opacity: playerState(baseURL[6]).withTiming(sharedValue1.get()) };
     return obj;
   };
   obj = { withTiming: playerState(baseURL[6]).withTiming, webviewOpacity: sharedValue1 };
@@ -60,7 +52,7 @@ export default importAllResult.memo(importAllResult.forwardRef((playerState, ref
     constructor() {
       obj = { opacity: null };
       obj2 = playerState(baseURL[6]);
-      obj[0] = obj2.withTiming(c4.get());
+      obj[0] = obj2.withTiming(closure_4.get());
       return obj;
     }
   }
@@ -79,8 +71,6 @@ export default importAllResult.memo(importAllResult.forwardRef((playerState, ref
   const items1 = [onDataReceived, panGestureConfig];
   const items2 = [baseURL];
   const callback = panGestureConfig.useCallback((nativeEvent) => {
-    let overlayEnabled;
-    let overlayEnabled2;
     const parsed = JSON.parse(nativeEvent.nativeEvent.data);
     if (null != parsed) {
       if ("click" === parsed.event) {
@@ -105,7 +95,7 @@ export default importAllResult.memo(importAllResult.forwardRef((playerState, ref
     if (tmp) {
       onDataReceived(baseURL[7]).openURL(url.url);
       flag = false;
-      const obj = onDataReceived(baseURL[7]);
+      obj = onDataReceived(baseURL[7]);
     }
     return flag;
   }, items2);

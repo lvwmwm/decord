@@ -1,11 +1,15 @@
-// Module ID: 14494
-// Function ID: 14495
+// Module ID: 14562
+// Function ID: 14563
 // Name: logger
-// Dependencies: [4, 14495, 2]
+// Dependencies: [4, 14563, 2]
 
-// Module 14494 (logger)
-const logger = new require("log").Logger("MobileMuxWrapper");
-let result = require("set").fileFinishedImporting("modules/video-qoe/MobileMuxWrapper.tsx");
+// Module 14562 (logger)
+import set from "set" /* 2 */;
+import log from "log" /* 4 */;
+import logger2 from "logger" /* 14563 */;
+
+const logger = new log.Logger("MobileMuxWrapper");
+let result = set.fileFinishedImporting("modules/video-qoe/MobileMuxWrapper.tsx");
 class MobileMuxWrapper {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -17,7 +21,7 @@ const prototype = MobileMuxWrapper.prototype;
 prototype["initialize"] = function initialize() {
   const self = this;
   try {
-    const mobileCustomMuxIntegration = new require(14495) /* logger */.MobileCustomMuxIntegration(self.config);
+    const mobileCustomMuxIntegration = new logger2.MobileCustomMuxIntegration(self.config);
     self.muxIntegration = mobileCustomMuxIntegration;
     const muxIntegration = self.muxIntegration;
     muxIntegration.initialize();
@@ -179,7 +183,7 @@ prototype["onReadyForDisplay"] = function onReadyForDisplay(nativeEvent) {
   }
 };
 prototype["onVideoTrackChange"] = function onVideoTrackChange(selectedVideoTrackId, videoTracks) {
-  let closure_0 = selectedVideoTrackId;
+  closure_0 = selectedVideoTrackId;
   const size = videoTracks.find((trackId) => trackId.trackId === closure_0);
   if (null != size) {
     const self = this;

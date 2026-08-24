@@ -4,5 +4,7 @@
 // Dependencies: [19]
 
 // Module 1570 (PreventRemoveContext)
+import noopAll from "noop" /* 19 */;
 
-export const PreventRemoveContext = require("noop").createContext(undefined);
+
+export const PreventRemoveContext = noopAll.createContext(undefined);

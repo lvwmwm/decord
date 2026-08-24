@@ -1,21 +1,23 @@
-// Module ID: 13293
-// Function ID: 13294
+// Module ID: 13351
+// Function ID: 13352
 // Name: getSkuIdForChannel
 // Dependencies: [589, 709, 2]
 
-// Module 13293 (getSkuIdForChannel)
-import { Store } from "initialize";
+// Module 13351 (getSkuIdForChannel)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let closure_0 = {};
+const Store = initializeDefault.Store;
 class ChannelSKUStore extends Store {
 }
 ChannelSKUStore.prototype["getSkuIdForChannel"] = function getSkuIdForChannel(arg0) {
   return table[arg0];
 };
 ChannelSKUStore.displayName = "ChannelSKUStore";
-const channelSKUStore = new ChannelSKUStore(require("dispatcher"), {
+const channelSKUStore = new ChannelSKUStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_0 = {};
+    closure_0 = {};
   },
   STORE_LISTING_FETCH_SUCCESS: function handleStoreListingFetchSuccess(channelId) {
     channelId = channelId.channelId;

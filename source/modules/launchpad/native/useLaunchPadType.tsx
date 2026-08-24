@@ -1,18 +1,22 @@
-// Module ID: 10666
-// Function ID: 10667
+// Module ID: 10705
+// Function ID: 10706
 // Name: useLaunchPadType
-// Dependencies: [10665, 4066, 1306, 2]
+// Dependencies: [10704, 4069, 1306, 2]
 // Exports: default
 
-// Module 10666 (useLaunchPadType)
-import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG";
+// Module 10705 (useLaunchPadType)
+import set from "set" /* 2 */;
+import create from "create" /* 1306 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 10704 */;
 
-const result = require("create").fileFinishedImporting("modules/launchpad/native/useLaunchPadType.tsx");
+const LaunchPadTypes = LAUNCH_PAD_SPRING_CONFIG.LaunchPadTypes;
+const result = set.fileFinishedImporting("modules/launchpad/native/useLaunchPadType.tsx");
 
 export default function useLaunchPadType() {
-  const LaunchPadModeSetting = require(4066) /* explicitContentFromProto */.LaunchPadModeSetting;
+  const LaunchPadModeSetting = explicitContentFromProto.LaunchPadModeSetting;
   const setting = LaunchPadModeSetting.useSetting();
-  if (require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_DISABLED === setting) {
+  if (create.LaunchPadMode.LAUNCH_PAD_DISABLED === setting) {
     return LaunchPadTypes.DISABLED;
   } else if (tmp(1306).LaunchPadMode.LAUNCH_PAD_GESTURE_FULL_SCREEN === setting) {
     return LaunchPadTypes.GESTURE_FULL;

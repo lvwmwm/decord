@@ -4,10 +4,13 @@
 // Dependencies: [817, 1039]
 
 // Module 1066 (instrumentHistory)
-const require = arg1;
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+import WINDOW2 from "WINDOW" /* 1039 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function instrumentHistory() {
-  const WINDOW = require(1039) /* WINDOW */.WINDOW;
+  const WINDOW = WINDOW2.WINDOW;
   const listener = WINDOW.addEventListener("popstate", () => {
     const href = callback(table[1]).WINDOW.location.href;
     if (href !== href) {
@@ -20,7 +23,7 @@ function instrumentHistory() {
   });
   if (obj.supportsHistory()) {
     function historyReplacementFunction(arg0) {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return function() {
         const items = [...arguments];
         let tmp;
@@ -39,17 +42,17 @@ function instrumentHistory() {
               return tmp;
             }
           })(String(tmp));
-          const outer1_2 = tmp4;
-          if (outer1_2 === tmp4) {
+          closure_2 = tmp4;
+          if (closure_2 === tmp4) {
             return callback.apply(self, items);
           } else {
             const obj = { from: null, to: null };
             obj[0] = tmp2;
             obj[1] = tmp4;
-            callback(outer1_1[0]).triggerHandlers("history", obj);
-            const obj2 = callback(outer1_1[0]);
+            callback(closure_1_1[0]).triggerHandlers("history", obj);
+            const obj2 = callback(closure_1_1[0]);
           }
-          tmp2 = outer1_2;
+          tmp2 = closure_2;
         }
         return callback.apply(self, items);
       };
@@ -62,8 +65,8 @@ function instrumentHistory() {
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.addHistoryInstrumentationHandler = function addHistoryInstrumentationHandler(arg0) {
-  require(817) /* registerSpanErrorInstrumentation */.addHandler("history", arg0);
-  const obj = require(817) /* registerSpanErrorInstrumentation */;
-  require(817) /* registerSpanErrorInstrumentation */.maybeInstrument("history", instrumentHistory);
+  registerSpanErrorInstrumentation.addHandler("history", arg0);
+  const obj = registerSpanErrorInstrumentation;
+  registerSpanErrorInstrumentation.maybeInstrument("history", instrumentHistory);
 };
 arg5.instrumentHistory = instrumentHistory;

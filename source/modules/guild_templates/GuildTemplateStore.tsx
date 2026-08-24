@@ -1,11 +1,14 @@
-// Module ID: 7429
-// Function ID: 7430
+// Module ID: 7467
+// Function ID: 7468
 // Name: handleGuildTemplateResolveSuccess
-// Dependencies: [7289, 7288, 589, 709, 2]
+// Dependencies: [7327, 7326, 589, 709, 2]
 
-// Module 7429 (handleGuildTemplateResolveSuccess)
-import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
-import { Store } from "initialize";
+// Module 7467 (handleGuildTemplateResolveSuccess)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import createResolvedGuildTemplateDefault from "createResolvedGuildTemplate" /* 7326 */;
+import GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 7327 */;
 
 function handleGuildTemplateResolveSuccess(guildTemplate) {
   guildTemplate = guildTemplate.guildTemplate;
@@ -20,7 +23,7 @@ function handleGuildTemplateResolveSuccess(guildTemplate) {
       obj[0] = code;
       obj[1] = GuildTemplateStates.RESOLVING;
     }
-    const tmp7 = importDefault(7288)(guildTemplate);
+    const tmp7 = createResolvedGuildTemplateDefault(guildTemplate);
     for (const key10019 in tmp7) {
       let tmp17 = key10019;
       obj[key10019] = tmp7[key10019];
@@ -50,8 +53,10 @@ function handleGuildTemplateResolveFailure(code) {
     const result = map.set(code, obj);
   }
 }
+const GuildTemplateStates = GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD.GuildTemplateStates;
 let map = new Map();
 let c4 = null;
+const Store = initializeDefault.Store;
 class GuildTemplateStore extends Store {
 }
 const prototype = GuildTemplateStore.prototype;
@@ -92,7 +97,7 @@ prototype["getDisplayedGuildTemplateCode"] = function getDisplayedGuildTemplateC
   return c4;
 };
 GuildTemplateStore.displayName = "GuildTemplateStore";
-const guildTemplateStore = new GuildTemplateStore(require("dispatcher"), {
+const guildTemplateStore = new GuildTemplateStore(dispatcherDefault, {
   GUILD_TEMPLATE_RESOLVE: function handleGuildTemplateResolve(code) {
     code = code.code;
     map = new Map(map);
@@ -194,9 +199,9 @@ const guildTemplateStore = new GuildTemplateStore(require("dispatcher"), {
     code = code.code;
   },
   GUILD_TEMPLATE_MODAL_HIDE: function handleGuildTemplateModalHide() {
-    let c4 = null;
+    c4 = null;
   }
 });
-let result = require("initialize").fileFinishedImporting("modules/guild_templates/GuildTemplateStore.tsx");
+let result = set.fileFinishedImporting("modules/guild_templates/GuildTemplateStore.tsx");
 
 export default guildTemplateStore;

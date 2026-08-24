@@ -1,25 +1,28 @@
-// Module ID: 10061
-// Function ID: 10062
+// Module ID: 10100
+// Function ID: 10101
 // Name: HighlightText
-// Dependencies: [19, 676, 21, 4661, 4223, 712, 1297, 2]
+// Dependencies: [19, 676, 21, 4668, 4227, 712, 1297, 2]
 // Exports: default
 
-// Module 10061 (HighlightText)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import hexToRgba from "hexToRgba";
+// Module 10100 (HighlightText)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { text: null };
 createCacheKey = { fontFamily: require("ME").Fonts.PRIMARY_BOLD, backgroundColor: null, color: null };
-createCacheKey[1] = hexToRgba.hexOpacityToRgba(require("Themes").unsafe_rawColors.YELLOW_300, 0.3);
-createCacheKey[2] = require("Themes").colors.TEXT_STRONG;
+createCacheKey[1] = hexToRgba.hexOpacityToRgba(ThemesDefault.unsafe_rawColors.YELLOW_300, 0.3);
+createCacheKey[2] = ThemesDefault.colors.TEXT_STRONG;
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/HighlightText.tsx");
+let closure_3 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/search/native/components/HighlightText.tsx");
 
 export default function HighlightText(children) {
-  const tmp = createCacheKey();
-  return jsx(require(1297) /* Button */.LegacyText, { style: createCacheKey().text, children: children.children });
+  const tmp = callback();
+  return jsx(Button.LegacyText, { style: callback().text, children: children.children });
 };

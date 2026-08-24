@@ -1,40 +1,37 @@
-// Module ID: 15487
-// Function ID: 15488
+// Module ID: 15552
+// Function ID: 15553
 // Name: LimitAndDurationInfo
-// Dependencies: [19, 5276, 1910, 4021, 4772, 4542, 676, 21, 4661, 589, 11233, 8513, 15488, 15489, 4980, 1297, 15491, 15492, 15380, 4988, 11461, 15381, 15493, 12105, 2]
+// Dependencies: [19, 5281, 1910, 4024, 4777, 4547, 676, 21, 4668, 589, 11284, 8552, 15553, 15554, 4985, 1297, 15556, 15557, 15444, 4993, 11510, 15445, 15558, 12157, 2]
 // Exports: default
 
-// Module 15487 (LimitAndDurationInfo)
-import "useStageHasMedia";
-import guildHasCommunity from "guildHasCommunity";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import updateVoiceState from "updateVoiceState";
-import ME from "ME";
-import { jsx } from "ConnectedUserLimit";
-import createCacheKey from "createCacheKey";
+// Module 15552 (LimitAndDurationInfo)
+import noopAll from "noop" /* 19 */;
+import useEmbeddedAppsDefault from "useEmbeddedApps" /* 11284 */;
+import ActiveTimestamp from "ActiveTimestamp" /* 12157 */;
+import showChannelBadgeDefault from "showChannelBadge" /* 15553 */;
+import useStartTime from "useStartTime" /* 15558 */;
+import closure_3 from "guildHasCommunity" /* 5281 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_6 from "generateOldThreadCutoff" /* 4777 */;
+import closure_7 from "updateVoiceState" /* 4547 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let Fonts;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function LimitAndDurationInfo(channel) {
-  let hasMedia;
-  let hasVideo;
-  let selected;
-  let voiceStatesCount;
   channel = channel.channel;
   ({ voiceStatesCount, selected } = channel);
   let obj = channel(589);
-  const items = [updateVoiceState, getUncachedChannelPermissions];
+  const items = [closure_7, closure_5];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let isGuildStageVoiceResult = channel.isGuildStageVoice();
     if (isGuildStageVoiceResult) {
-      let obj = channel(outer1_2[19]);
+      let obj = channel(closure_1_2[19]);
       isGuildStageVoiceResult = obj.getStageHasMedia(tmp.id);
     }
-    obj = { isLocked: !outer1_5.can(outer1_9.CONNECT, tmp), hasVideo: outer1_7.hasVideo(channel.id), hasMedia: isGuildStageVoiceResult };
+    obj = { isLocked: !closure_1_5.can(closure_1_9.CONNECT, tmp), hasVideo: closure_1_7.hasVideo(channel.id), hasMedia: isGuildStageVoiceResult };
     return obj;
   });
   ({ hasVideo, hasMedia } = stateFromStoresObject);
@@ -53,16 +50,16 @@ function LimitAndDurationInfo(channel) {
     }
     obj[1] = hasVideo;
     obj[2] = channel;
-    let tmp6Result = tmp6(channel(15381).ConnectedUserLimit, obj);
+    let tmp6Result = tmp6(channel(15445).ConnectedUserLimit, obj);
   } else {
-    const obj1 = { channel: null };
+    obj1 = { channel: null };
     obj1[0] = channel;
     tmp6Result = tmp6(DurationInfo, obj1);
   }
   return tmp6Result;
 }
 function DurationInfo(channel) {
-  let obj = require(15493) /* useStartTime */;
+  let obj = useStartTime;
   const startTime = obj.useStartTime(channel.channel);
   let tmp5 = null;
   if (null != startTime) {
@@ -71,36 +68,27 @@ function DurationInfo(channel) {
     obj[0] = startTime;
     obj[0] = obj;
     obj[1] = tmp.activeTimestamp;
-    tmp5 = jsx(require(12105) /* ActiveTimestamp */.ActiveTimestamp, { start: null });
+    tmp5 = jsx(ActiveTimestamp.ActiveTimestamp, { start: null });
   }
   return tmp5;
 }
-({ GuildFeatures: metroImportAll, Permissions: c9, Fonts } = ME);
+noopAll;
+({ GuildFeatures: closure_8, Permissions: c9, Fonts } = ME);
 createCacheKey = { fontFamily: Fonts.CODE_NORMAL, fontSize: 12, lineHeight: 16 };
 let closure_11 = createCacheKey.createStyles({ activeTimestamp: createCacheKey });
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_sidebar/native/ChannelInfo.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_sidebar/native/ChannelInfo.tsx");
 
 export default function ChannelInfo(channel) {
-  let enableActivities;
-  let enableConnectedUserLimit;
-  let guild;
-  let isChannelCollapsed;
-  let isNewChannel;
-  let isSubscriptionGated;
-  let mentionsCount;
-  let muted;
-  let needSubscriptionToAccess;
-  let voiceStates;
   channel = channel.channel;
   ({ isChannelCollapsed, voiceStates, enableConnectedUserLimit, enableActivities, muted, isSubscriptionGated, needSubscriptionToAccess } = channel);
   let obj = channel(589);
-  const items = [createGuildRecordFromRust, generateOldThreadCutoff, guildHasCommunity];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ guild: outer1_4.getGuild(channel.guild_id), mentionsCount: outer1_6.getMentionCount(channel.id), isMentionLowImportance: outer1_6.getIsMentionLowImportance(channel.id), isNewChannel: outer1_3.shouldIndicateNewChannel(channel.guild_id, channel.id) }));
+  const items = [closure_4, closure_6, closure_3];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ guild: closure_1_4.getGuild(channel.guild_id), mentionsCount: closure_1_6.getMentionCount(channel.id), isMentionLowImportance: closure_1_6.getIsMentionLowImportance(channel.id), isNewChannel: closure_1_3.shouldIndicateNewChannel(channel.guild_id, channel.id) }));
   ({ guild, mentionsCount, isNewChannel } = stateFromStoresObject);
-  const tmp5 = importDefault(11233)(channel);
-  let obj1 = channel(8513);
+  const tmp5 = useEmbeddedAppsDefault(channel);
+  obj1 = channel(8552);
   const postsWithUnreadsCount = obj1.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
-  if (importDefault(15488)({ mentionsCount, isNewChannel, postsWithUnreadsCount, muted })) {
+  if (showChannelBadgeDefault({ mentionsCount, isNewChannel, postsWithUnreadsCount, muted })) {
     obj = { mentionCount: null, isMentionLowImportance: null, isNewChannel: null, postsWithUnreadsCount: null, muted: null };
     obj[0] = mentionsCount;
     obj[1] = stateFromStoresObject.isMentionLowImportance;
@@ -111,9 +99,9 @@ export default function ChannelInfo(channel) {
     }
     obj[3] = tmp18;
     obj[4] = muted;
-    let tmp11Result = jsx(tmp4(15489), { mentionCount: null, isMentionLowImportance: null, isNewChannel: null, postsWithUnreadsCount: null, muted: null });
+    let tmp11Result = jsx(tmp4(15554), { mentionCount: null, isMentionLowImportance: null, isNewChannel: null, postsWithUnreadsCount: null, muted: null });
     const tmp16 = jsx;
-    const tmp4Result = tmp4(15489);
+    const tmp4Result = tmp4(15554);
   } else {
     if (null != isChannelCollapsed) {
       if (isChannelCollapsed) {
@@ -123,7 +111,7 @@ export default function ChannelInfo(channel) {
           hasItem = features.has(constants.COMMUNITY);
         }
         if (hasItem) {
-          let tmpResult = tmp(4980);
+          let tmpResult = tmp(4985);
           if (tmpResult.hasStream(voiceStates)) {
             tmp11Result = jsx(tmp(1297).LiveTag, {});
           }
@@ -132,12 +120,12 @@ export default function ChannelInfo(channel) {
     }
     if (null != enableActivities) {
       if (enableActivities) {
-        tmpResult = tmp(15491);
+        tmpResult = tmp(15556);
         if (tmpResult.showChannelItemEmbeddedActivities(tmp5)) {
           obj = { embeddedApps: null, muted: null };
           obj[0] = tmp5;
           obj[1] = muted;
-          tmp11Result = jsx(tmp4(15492), { embeddedApps: null, muted: null });
+          tmp11Result = jsx(tmp4(15557), { embeddedApps: null, muted: null });
         }
       }
     }
@@ -146,7 +134,7 @@ export default function ChannelInfo(channel) {
         if (isSubscriptionGated) {
           obj1 = { locked: null };
           obj1[0] = needSubscriptionToAccess;
-          tmp11Result = jsx(tmp4(15380), { locked: null });
+          tmp11Result = jsx(tmp4(15444), { locked: null });
         }
       }
     }

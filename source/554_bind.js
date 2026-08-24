@@ -4,8 +4,10 @@
 // Dependencies: [555]
 
 // Module 554 (bind)
+import concatty from "concatty" /* 555 */;
+
 if (!bind) {
-  bind = require("concatty");
+  bind = concatty;
 }
 
 export default bind;

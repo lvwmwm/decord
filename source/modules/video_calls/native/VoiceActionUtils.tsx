@@ -1,15 +1,18 @@
-// Module ID: 12567
-// Function ID: 12568
+// Module ID: 12621
+// Function ID: 12622
 // Name: NOOP
-// Dependencies: [9647, 2]
+// Dependencies: [9686, 2]
 // Exports: createDeafHandler, createMuteHandler
 
-// Module 12567 (NOOP)
+// Module 12621 (NOOP)
+import set from "set" /* 2 */;
+import _handleToggleVideo from "_handleToggleVideo" /* 9686 */;
+
 function NOOP() {
 
 }
 const obj = { SERVER_MUTE: 0, [0]: "SERVER_MUTE", SUPPRESS: 1, [1]: "SUPPRESS", SELF_MUTE: 2, [2]: "SELF_MUTE", NONE: 3, [3]: "NONE" };
-const result = require("set").fileFinishedImporting("modules/video_calls/native/VoiceActionUtils.tsx");
+const result = set.fileFinishedImporting("modules/video_calls/native/VoiceActionUtils.tsx");
 
 export const DominantMuteState = obj;
 export const createMuteHandler = function createMuteHandler(muteStates, stateFromStores) {
@@ -24,23 +27,23 @@ export const createMuteHandler = function createMuteHandler(muteStates, stateFro
   if (flag) {
     let onPress = NOOP;
   } else {
-    onPress = require(9647) /* _handleToggleVideo */.handleToggleSelfMute;
+    onPress = _handleToggleVideo.handleToggleSelfMute;
   }
   if (muteStates.suppress) {
-    onPress = require(9647) /* _handleToggleVideo */.showSuppressedAlert;
+    onPress = _handleToggleVideo.showSuppressedAlert;
     dominantMuteState = tmp.SUPPRESS;
   }
   if (muteStates.mute) {
-    onPress = require(9647) /* _handleToggleVideo */.showServerMuteAlert;
+    onPress = _handleToggleVideo.showServerMuteAlert;
     dominantMuteState = tmp.SERVER_MUTE;
   }
   const mute = muteStates.selfMute || muteStates.mute || muteStates.suppress;
   return { mute, onPress, dominantMuteState };
 };
 export const createDeafHandler = function createDeafHandler(deafStates) {
-  let onPress = require(9647) /* _handleToggleVideo */.handleToggleSelfDeaf;
+  let onPress = _handleToggleVideo.handleToggleSelfDeaf;
   if (deafStates.deaf) {
-    onPress = require(9647) /* _handleToggleVideo */.showServerDeafenAlert;
+    onPress = _handleToggleVideo.showServerDeafenAlert;
   }
   const deaf = deafStates.selfDeaf || deafStates.deaf;
   return { deaf, onPress };

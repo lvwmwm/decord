@@ -1,14 +1,15 @@
-// Module ID: 15865
-// Function ID: 15866
+// Module ID: 15962
+// Function ID: 15963
 // Name: deserialize
-// Dependencies: [8507, 1404, 12, 589, 709, 2]
+// Dependencies: [8546, 1404, 12, 589, 709, 2]
 
-// Module 15865 (deserialize)
-import MessageEmbedTypes from "MessageEmbedTypes";
-import { PersistedStore } from "initialize";
+// Module 15962 (deserialize)
+import set from "set" /* 2 */;
+import apply from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
 
-let NATIVE_SEARCH_HISTORY_STORAGE_KEY;
-let NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME;
 const SearchHistoryItemTypes = MessageEmbedTypes.SearchHistoryItemTypes;
 class SearchHistory {
   constructor() {
@@ -59,12 +60,13 @@ prototype["add"] = function add(type) {
   }
 };
 prototype["remove"] = function remove(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const items = this.items;
-  this.items = items.filter((arg0) => !callback(outer1_1[2]).isEqual(arg0, callback));
+  this.items = items.filter((arg0) => !callback(closure_1_1[2]).isEqual(arg0, callback));
 };
 let closure_4 = {};
 ({ NATIVE_SEARCH_HISTORY_STORAGE_KEY, NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME } = MessageEmbedTypes);
+const PersistedStore = initializeDefault.PersistedStore;
 class SearchHistoryStore extends PersistedStore {
 }
 const prototype2 = SearchHistoryStore.prototype;
@@ -72,8 +74,6 @@ prototype2["getState"] = function getState() {
   const searchHistories = {};
   const entries = Object.entries(closure_4);
   const item = entries.forEach((arg0) => {
-    let obj;
-    let tmp;
     [tmp, obj] = arg0;
     if (null != obj) {
       searchHistories[tmp] = obj.serialize();
@@ -87,7 +87,7 @@ prototype2["initialize"] = function initialize(searchHistories) {
     searchHistories = searchHistories.searchHistories;
   }
   if (null != searchHistories) {
-    let closure_4 = require(12) /* apply */.mapValues(searchHistories, (arg0) => {
+    closure_4 = apply.mapValues(searchHistories, (arg0) => {
       if (typeof closure_3 !== "function") {
         HermesBuiltin.throwTypeError();
       }
@@ -96,7 +96,7 @@ prototype2["initialize"] = function initialize(searchHistories) {
       obj.deserialize(arg0);
       return obj;
     });
-    let obj = require(12) /* apply */;
+    let obj = apply;
   }
 };
 prototype2["getSearchHistory"] = function getSearchHistory(handleChange) {
@@ -114,7 +114,7 @@ prototype2["getSearchHistory"] = function getSearchHistory(handleChange) {
 };
 SearchHistoryStore.displayName = NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME;
 SearchHistoryStore.persistKey = NATIVE_SEARCH_HISTORY_STORAGE_KEY;
-const searchHistoryStore = new SearchHistoryStore(require("dispatcher"), {
+const searchHistoryStore = new SearchHistoryStore(dispatcherDefault, {
   SEARCH_HISTORY_NATIVE_CLEAR_ITEMS: function handleSearchHistoryClearItems(arg0) {
     delete tmp[tmp2];
   },
@@ -147,6 +147,6 @@ const searchHistoryStore = new SearchHistoryStore(require("dispatcher"), {
     obj.add(id.item);
   }
 });
-const result = require("apply").fileFinishedImporting("modules/search/native/stores/SearchHistoryStore.tsx");
+const result = set.fileFinishedImporting("modules/search/native/stores/SearchHistoryStore.tsx");
 
 export default searchHistoryStore;

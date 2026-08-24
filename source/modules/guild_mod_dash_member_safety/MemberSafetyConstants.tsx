@@ -1,13 +1,15 @@
-// Module ID: 4025
-// Function ID: 4026
+// Module ID: 4028
+// Function ID: 4029
 // Name: MemberSafetyPagePermissions
 // Dependencies: [676, 506, 2]
 
-// Module 4025 (MemberSafetyPagePermissions)
-import { Permissions } from "ME";
-import importAllResult from "fromString";
+// Module 4028 (MemberSafetyPagePermissions)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import importAllResult from "fromString" /* 506 */;
 
-const combineResult = require("fromString").combine(Permissions.ADMINISTRATOR, Permissions.MANAGE_GUILD, Permissions.BAN_MEMBERS, Permissions.KICK_MEMBERS, Permissions.MODERATE_MEMBERS, Permissions.MANAGE_ROLES, Permissions.MANAGE_NICKNAMES);
-const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyConstants.tsx");
+const Permissions = ME.Permissions;
+const combineResult = importAllResult.combine(Permissions.ADMINISTRATOR, Permissions.MANAGE_GUILD, Permissions.BAN_MEMBERS, Permissions.KICK_MEMBERS, Permissions.MODERATE_MEMBERS, Permissions.MANAGE_ROLES, Permissions.MANAGE_NICKNAMES);
+const result = set.fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyConstants.tsx");
 
 export const MemberSafetyPagePermissions = combineResult;

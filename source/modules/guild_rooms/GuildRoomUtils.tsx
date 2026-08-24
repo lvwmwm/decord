@@ -1,16 +1,18 @@
-// Module ID: 9866
-// Function ID: 9867
+// Module ID: 9905
+// Function ID: 9906
 // Name: serverGuildRoomObjectToClient
-// Dependencies: [9867, 9868, 9865, 2]
+// Dependencies: [9906, 9907, 9904, 2]
 // Exports: findSeat, serverGuildRoomToClient
 
-// Module 9866 (serverGuildRoomObjectToClient)
-import { GUILD_ROOM_BACKGROUND_CONFIG as closure_2 } from "getName";
+// Module 9905 (serverGuildRoomObjectToClient)
+import set2 from "set" /* 2 */;
+import GuildRoomObjectTypes from "GuildRoomObjectTypes" /* 9904 */;
+import items from "items" /* 9906 */;
 
 function serverGuildRoomObjectToClient(object_type) {
-  if (object_type.object_type === require(9865) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.PLANT) {
+  if (object_type.object_type === GuildRoomObjectTypes.GuildRoomObjectTypes.PLANT) {
     let obj = { objectType: null };
-    obj[0] = tmp(9865).GuildRoomObjectTypes.PLANT;
+    obj[0] = tmp(9904).GuildRoomObjectTypes.PLANT;
     obj = { objectId: null, createdBy: null, updatedAt: null, updatedBy: null };
     ({ object_id: obj2[0], created_by: obj2[1] } = object_type);
     let date;
@@ -23,8 +25,8 @@ function serverGuildRoomObjectToClient(object_type) {
     const merged = Object.assign(obj);
   } else {
     obj = { objectType: null };
-    obj[0] = tmp(9865).GuildRoomObjectTypes.NOTE;
-    const obj1 = { objectId: null, createdBy: null, updatedAt: null, updatedBy: null };
+    obj[0] = tmp(9904).GuildRoomObjectTypes.NOTE;
+    obj1 = { objectId: null, createdBy: null, updatedAt: null, updatedBy: null };
     ({ object_id: obj4[0], created_by: obj4[1] } = object_type);
     let date1;
     if (null != object_type.updated_at) {
@@ -38,26 +40,28 @@ function serverGuildRoomObjectToClient(object_type) {
   }
   return obj;
 }
-let result = require("GuildRoomObjectTypes").fileFinishedImporting("modules/guild_rooms/GuildRoomUtils.tsx");
+let closure_2 = items.GUILD_ROOM_BACKGROUND_CONFIG;
+let result = set2.fileFinishedImporting("modules/guild_rooms/GuildRoomUtils.tsx");
 
 export const findSeat = function findSeat(items1) {
   const _require = items1;
-  const seats = table[_require(undefined, 9868).GuildRoomBackgrounds.DEFAULT].seats;
+  const seats = table[_require(undefined, 9907).GuildRoomBackgrounds.DEFAULT].seats;
   return seats.find((position) => position.position.x === items1.x && position.position.y === tmp.y);
 };
 export const serverGuildRoomToClient = function serverGuildRoomToClient(body) {
-  const obj = { roomId: body.room_id, users: null, background: null, objects: null };
-  const users = body.users;
-  obj[1] = users.reduce((set, userId) => {
-    const result = set.set(userId.user_id, { userId: userId.user_id, position: userId.position, statusId: userId.status_id, statusText: userId.status_text });
-    return set;
-  }, new Map());
-  obj[2] = body.background;
+  const obj = {
+    roomId: body.room_id,
+    users: users.reduce((set, userId) => {
+      const result = set.set(userId.user_id, { userId: userId.user_id, position: userId.position, statusId: userId.status_id, statusText: userId.status_text });
+      return set;
+    }, new Map()),
+    background: body.background,
+    objects: null
+  };
+  users = body.users;
   const entries = Object.entries(body.objects);
   const map = new Map();
   obj[3] = entries.reduce((set) => {
-    let arr;
-    let tmp;
     [tmp, arr] = arg1;
     const result = set.set(+tmp, arr.map(closure_3));
     return set;

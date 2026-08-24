@@ -1,28 +1,23 @@
-// Module ID: 7377
-// Function ID: 7378
+// Module ID: 7415
+// Function ID: 7416
 // Name: LinkButton
-// Dependencies: [19, 21, 4661, 5433, 4734, 2]
+// Dependencies: [19, 21, 4668, 5438, 4739, 2]
 // Exports: LinkButton
 
-// Module 7377 (LinkButton)
-import "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7415 (LinkButton)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: obj1, jsxs: c3 } = jsxProd);
 let closure_4 = createCacheKey.createStyles({ defaultContainerStyle: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }, disabledContainerStyle: { opacity: 0.5 } });
-const result = require("createCacheKey").fileFinishedImporting("modules/premium/native/components/LinkButton.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/components/LinkButton.tsx");
 
 export const LinkButton = function LinkButton(textColor) {
-  let containerStyle;
-  let disabled;
-  let onPress;
-  let text;
-  let textStyle;
-  let variant;
   ({ disabled, variant } = textColor);
   ({ onPress, text, containerStyle, textStyle } = textColor);
   if (variant === undefined) {
@@ -41,7 +36,7 @@ export const LinkButton = function LinkButton(textColor) {
   const obj = { style: items, hitSlop: { top: 8, right: 8, bottom: 8 }, accessibilityRole: "button", activeOpacity: 0.2, disabled, onPress, children: null };
   items[1] = disabledContainerStyle;
   items[2] = containerStyle;
-  const items1 = [callback(require(4734) /* Text */.Text, { style: textStyle, variant, color: str, children: text }), textColor.iconRight];
+  const items1 = [callback(Text.Text, { style: textStyle, variant, color: str, children: text }), textColor.iconRight];
   obj[6] = items1;
-  return closure_3(require(5433) /* PressableBase */.PressableOpacity, obj);
+  return closure_3(PressableBase.PressableOpacity, obj);
 };

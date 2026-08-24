@@ -1,29 +1,28 @@
-// Module ID: 6703
-// Function ID: 6704
+// Module ID: 6740
+// Function ID: 6741
 // Name: sortKey
-// Dependencies: [4652, 1391, 6704, 1990, 4030, 1922, 4542, 4545, 4990, 1396, 4778, 4981, 4017, 4796, 6706, 4531, 2]
+// Dependencies: [4658, 1391, 6741, 1991, 4033, 1922, 4547, 4550, 4995, 1396, 4783, 4986, 4020, 4801, 6743, 4536, 2]
 // Exports: isRequestedToSpeakAll
 
-// Module 6703 (sortKey)
-import reset from "reset";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionReset from "handleConnectionReset";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import updateVoiceState from "updateVoiceState";
-import { getComparator } from "getVoiceStatesForGuild";
-import buildStageChannelUserRoles from "buildStageChannelUserRoles";
-import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
+// Module 6740 (sortKey)
+import version from "version" /* 4020 */;
+import getParticipantUserKeyDefault from "getParticipantUserKey" /* 4783 */;
+import getNicknameDefault from "getNickname" /* 4801 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4986 */;
+import getHighestHoistedRole from "getHighestHoistedRole" /* 6743 */;
+import closure_3 from "reset" /* 4658 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "handleConnectionReset" /* 6741 */;
+import closure_6 from "trackCommunicationDisabled" /* 1991 */;
+import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "updateVoiceState" /* 4547 */;
+import { getComparator } from "getVoiceStatesForGuild" /* 4550 */;
+import closure_11 from "buildStageChannelUserRoles" /* 4995 */;
+import closure_12 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
 
-const require = arg1;
+require = arg1;
 function sortKey(speaker) {
-  let connectedOn;
-  let role;
-  let type;
-  let user;
-  let userNick;
-  let voiceState;
   ({ role, connectedOn, voiceState } = speaker);
   let str = "\u0001";
   let str2 = "\u0001";
@@ -50,7 +49,7 @@ function sortKey(speaker) {
     num = 999;
   }
   const combined = "" + num;
-  return "" + str2 + str3 + str4 + str + combined.padStart(3, "0") + connectedOn + importDefault(4778)(userNick, user);
+  return "" + str2 + str3 + str4 + str + combined.padStart(3, "0") + connectedOn + getParticipantUserKeyDefault(userNick, user);
 }
 function requestToSpeakSortKey(user) {
   user = user.user;
@@ -65,19 +64,13 @@ function requestToSpeakSortKey(user) {
   return id;
 }
 function getParticipantIndex(arg0) {
-  let blocked;
-  let ignored;
-  let isFriend;
-  let role;
-  let rtsState;
-  let speaker;
   ({ role, rtsState } = arg0);
   ({ speaker, blocked, ignored, isFriend } = arg0);
   const items = [];
   if (tmp3) {
     items.push(obj.ALL_REQUESTED_TO_SPEAK);
   }
-  if (rtsState === require(4981) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK) {
+  if (rtsState === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK) {
     items.push(obj.REQUESTED_TO_SPEAK_ONLY);
   }
   if (speaker) {
@@ -104,7 +97,7 @@ function getParticipantIndex(arg0) {
 }
 let obj = { SPEAKER: "SPEAKER", AUDIENCE: "AUDIENCE", NO_ROLE: "NO_ROLE", ALL_REQUESTED_TO_SPEAK: "ALL_REQUESTED_TO_SPEAK", REQUESTED_TO_SPEAK_ONLY: "REQUESTED_TO_SPEAK_ONLY", BLOCKED: "BLOCKED", IGNORED: "IGNORED", FRIEND: "FRIEND", SELECTED: "SELECTED", MEDIA: "MEDIA" };
 obj = { VOICE: "VOICE", STREAM: "STREAM" };
-let result = require("handleConnectionReset").fileFinishedImporting("modules/stage_channels/StageChannelParticipants.tsx");
+let result = require("set").fileFinishedImporting("modules/stage_channels/StageChannelParticipants.tsx");
 class StageChannelParticipants {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -114,7 +107,7 @@ class StageChannelParticipants {
     secondaryIndexMap1 = new require("version").SecondaryIndexMap(() => [], requestToSpeakSortKey);
     obj[2] = secondaryIndexMap1;
     obj.channelId = global;
-    channel = getParticipantIndex.getChannel(global);
+    channel = closure_4.getChannel(global);
     guildId = undefined;
     if (channel != null) {
       guildId = channel.getGuildId();
@@ -138,7 +131,7 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
         isPublicResult = _public.isPublic(self.channelId);
       }
       if (isPublicResult) {
-        const member = handleConnectionReset.requestMember(self.guildId, userId);
+        const member = closure_5.requestMember(self.guildId, userId);
       }
       return items;
     } else {
@@ -155,22 +148,22 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
         nick = member1.nick;
       }
       if (nick == null) {
-        let obj = importDefault(4796);
+        obj = getNicknameDefault;
         nick = obj.getName(self.guildId, self.channelId, user);
       }
       obj = { user: null, userNick: null, nick: null, comparator: null, voiceState: null, role: null, speaker: null, member: null, blocked: null, ignored: null, isFriend: null, connectedOn: null };
       obj[0] = user;
-      obj[1] = importDefault(4796).getName(self.guildId, self.channelId, user);
+      obj[1] = getNicknameDefault.getName(self.guildId, self.channelId, user);
       obj[2] = nick;
       obj[3] = getComparator(voiceStateForChannel, nick);
       obj[4] = voiceStateForChannel;
-      const obj3 = importDefault(4796);
-      obj[5] = require(6706) /* getHighestHoistedRole */.getHighestHoistedRole(self.guildId, userId);
+      const obj3 = getNicknameDefault;
+      obj[5] = getHighestHoistedRole.getHighestHoistedRole(self.guildId, userId);
       obj[6] = speaker.isSpeaker(userId, self.channelId);
       obj[7] = member1;
-      obj[8] = markAllUserIdListsStale.isBlocked(user.id);
-      obj[9] = markAllUserIdListsStale.isIgnored(user.id);
-      obj[10] = markAllUserIdListsStale.isFriend(user.id);
+      obj[8] = closure_7.isBlocked(user.id);
+      obj[9] = closure_7.isIgnored(user.id);
+      obj[10] = closure_7.isFriend(user.id);
       let connectedOn;
       if (first != null) {
         connectedOn = first.connectedOn;
@@ -184,7 +177,7 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       const merged = Object.assign(obj);
       obj.type = obj.VOICE;
       obj.id = user.id;
-      let tmp11Result = tmp11(4981);
+      let tmp11Result = tmp11(4986);
       obj.rtsState = tmp11Result.getAudienceRequestToSpeakState(voiceStateForChannel);
       items.push(obj);
       streamForUser = streamForUser.getStreamForUser(userId, self.guildId);
@@ -193,12 +186,12 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       }
       if (null != streamForUser) {
         if (streamForUser.channelId === self.channelId) {
-          tmp11Result = tmp11(4531);
-          const obj1 = {};
+          tmp11Result = tmp11(4536);
+          obj1 = {};
           const merged1 = Object.assign(obj);
           obj1.id = tmp11Result.encodeStreamKey(streamForUser);
           obj1.type = obj.STREAM;
-          obj1.rtsState = tmp11(4981).RequestToSpeakStates.NONE;
+          obj1.rtsState = tmp11(4986).RequestToSpeakStates.NONE;
           items.push(obj1);
           const encodeStreamKeyResult = tmp11Result.encodeStreamKey(streamForUser);
         }
@@ -209,7 +202,7 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
 };
 prototype["updateParticipant"] = function updateParticipant(arg0) {
   const self = this;
-  let closure_0 = arg0;
+  closure_0 = arg0;
   let result = this._getParticipantsForUser(arg0, arr);
   let flag = null != arr;
   if (!flag) {
@@ -299,5 +292,5 @@ export default StageChannelParticipants;
 export const StageChannelParticipantNamedIndex = obj;
 export const StageChannelParticipantTypes = obj;
 export const isRequestedToSpeakAll = function isRequestedToSpeakAll(rtsState) {
-  return rtsState === require(4981) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK || rtsState === require(4981) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  return rtsState === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK || rtsState === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 };

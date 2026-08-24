@@ -1,27 +1,23 @@
-// Module ID: 8771
-// Function ID: 8772
+// Module ID: 8808
+// Function ID: 8809
 // Name: _installApplicationOnDemandIfNeeded
-// Dependencies: [5, 4479, 4478, 676, 8772, 7140, 8770, 5042, 4237, 8773, 2]
+// Dependencies: [5, 4483, 4482, 676, 8809, 7178, 8807, 5047, 4241, 8810, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 8771 (_installApplicationOnDemandIfNeeded)
-import fetchApplication from "fetchApplication";
-import createExecutable from "createExecutable";
-import addApplication from "addApplication";
-import { AnalyticEvents } from "ME";
+// Module 8808 (_installApplicationOnDemandIfNeeded)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "createExecutable" /* 4483 */;
+import closure_4 from "addApplication" /* 4482 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;
 function _installApplicationOnDemandIfNeeded() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
-      let c3;
       if (application === 2) {
         application = 3;
         HermesBuiltin.throwTypeError();
@@ -33,7 +29,7 @@ function _installApplicationOnDemandIfNeeded() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -49,7 +45,7 @@ function _installApplicationOnDemandIfNeeded() {
               return obj;
             } else {
               c2 = tmp5;
-              let dependencyMap = tmp2;
+              dependencyMap = tmp2;
               let callback;
               dependencyMap = undefined;
               c2 = undefined;
@@ -70,7 +66,7 @@ function _installApplicationOnDemandIfNeeded() {
                 throw arg1;
               } else if (arg0 === 2) {
                 application = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -81,7 +77,7 @@ function _installApplicationOnDemandIfNeeded() {
                 if (obj11.shouldInstallApplicationOnDemand(obj2)) {
                   application = application.getApplication(callback);
                   if (null == application) {
-                    let obj5 = callback(7140);
+                    let obj5 = callback(7178);
                     c3 = 2;
                     application = 1;
                     const obj3 = { value: null, done: false };
@@ -94,7 +90,7 @@ function _installApplicationOnDemandIfNeeded() {
                   obj4[0] = Promise.resolve({ isAuthorized: true });
                   return obj4;
                 }
-                obj11 = callback(8772);
+                obj11 = callback(8809);
               }
             } else if (arg0 === 1) {
               application = 3;
@@ -108,7 +104,7 @@ function _installApplicationOnDemandIfNeeded() {
               obj = arg1;
               application = c3.createFromServer(obj);
             }
-            USER_INSTALL = callback(8770).ApplicationIntegrationType.USER_INSTALL;
+            USER_INSTALL = callback(8807).ApplicationIntegrationType.USER_INSTALL;
             scopes = undefined;
             if (application != null) {
               const integrationTypesConfig = application.integrationTypesConfig;
@@ -122,7 +118,7 @@ function _installApplicationOnDemandIfNeeded() {
               }
             }
             if (null != c3) {
-              obj2 = callback(5042);
+              obj2 = callback(5047);
               obj5 = { application_id: null, location: null, section_name: null, source: null };
               obj5[0] = callback;
               obj5[1] = c3.location;
@@ -131,7 +127,7 @@ function _installApplicationOnDemandIfNeeded() {
               obj2.trackWithMetadata(obj.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, obj5);
             }
             const promise = new Promise((arg0) => {
-              let closure_0 = arg0;
+              closure_0 = arg0;
               let obj = _undefined(_undefined2[8]);
               obj.dismissKeyboard();
               obj = {
@@ -140,7 +136,7 @@ function _installApplicationOnDemandIfNeeded() {
                 scopes,
                 callback(location) {
                   if (null != location.location) {
-                    if (null != outer1_3) {
+                    if (null != closure_1_3) {
                       let obj = callback(table[7]);
                       obj = { application_id: null, location: null, section_name: null, source: null };
                       obj[0] = callback;
@@ -148,7 +144,7 @@ function _installApplicationOnDemandIfNeeded() {
                       obj.trackWithMetadata(obj.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, obj);
                     }
                     callback({ isAuthorized: true });
-                    tmp3 = outer1_3;
+                    tmp3 = closure_1_3;
                   } else {
                     callback({ isAuthorized: false });
                   }
@@ -170,7 +166,7 @@ function _installApplicationOnDemandIfNeeded() {
     iter.next();
     return iter;
   });
-  const _installApplicationOnDemandIfNeeded = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -179,7 +175,7 @@ function _installApplicationOnDemandIfNeeded() {
   }
   return applyArgumentsResult;
 }
-const result = require("addApplication").fileFinishedImporting("modules/applications/installApplicationOnDemandIfNeeded.native.tsx");
+const result = require("set").fileFinishedImporting("modules/applications/installApplicationOnDemandIfNeeded.native.tsx");
 
 export const installApplicationOnDemandIfNeeded = function installApplicationOnDemandIfNeeded(arg0) {
   const self = this;

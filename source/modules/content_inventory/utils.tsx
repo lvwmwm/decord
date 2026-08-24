@@ -1,25 +1,31 @@
-// Module ID: 8348
-// Function ID: 8349
+// Module ID: 8387
+// Function ID: 8388
 // Name: calculateTimestampDurations
-// Dependencies: [687, 11, 1236, 3975, 8349, 3618, 8344, 2]
-// Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
+// Dependencies: [687, 11, 1236, 3978, 8388, 3621, 8383, 2]
+// Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 8348 (calculateTimestampDurations)
+// Module 8387 (calculateTimestampDurations)
+import set from "set" /* 2 */;
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import setDefault from "set" /* 687 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import _mod3621 from "module_3621" /* 3621 */;
+import tDefault from "t" /* 3978 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8383 */;
+
 function calculateTimestampDurations(end, now) {
   const bound = Math.max(end - now, 0);
-  const result = bound / importDefault(687).Millis.SECOND;
+  const result = bound / setDefault.Millis.SECOND;
   const obj = { seconds: null, minutes: null, hours: null, days: null };
   const rounded = Math.floor(result);
-  obj[0] = rounded % importDefault(687).Seconds.MINUTE;
-  const rounded1 = Math.floor(result / importDefault(687).Seconds.MINUTE);
-  obj[1] = rounded1 % importDefault(687).Seconds.MINUTE;
-  obj[2] = Math.floor(result / importDefault(687).Seconds.HOUR);
-  obj[3] = Math.floor(result / importDefault(687).Seconds.DAY);
+  obj[0] = rounded % setDefault.Seconds.MINUTE;
+  const rounded1 = Math.floor(result / setDefault.Seconds.MINUTE);
+  obj[1] = rounded1 % setDefault.Seconds.MINUTE;
+  obj[2] = Math.floor(result / setDefault.Seconds.HOUR);
+  obj[3] = Math.floor(result / setDefault.Seconds.DAY);
   return obj;
 }
 function formatActiveTimestamp(entry, now) {
-  let hours;
-  let minutes;
   let end;
   if ("end" in entry) {
     end = entry.end;
@@ -56,8 +62,8 @@ function formatActiveTimestamp(entry, now) {
     }
   }
   if ("id" in entry) {
-    let start = importDefault(11).extractTimestamp(entry.id);
-    const obj = importDefault(11);
+    let start = DISCORD_EPOCHDefault.extractTimestamp(entry.id);
+    const obj = DISCORD_EPOCHDefault;
   } else {
     start = entry.start;
   }
@@ -72,21 +78,19 @@ function formatActiveTimestamp(entry, now) {
   tmp6Result = calculateTimestampDurations(bound, start);
 }
 function formatTimestampToA11yLabel(hours) {
-  let minutes;
-  let seconds;
   hours = hours.hours;
   const items = [];
   ({ minutes, seconds } = hours);
   if (hours > 0) {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const obj = { hours: null };
     obj[0] = hours;
-    items.push(intl.formatToPlainString(require(1236) /* getSystemLocale */.t.xCjYxK, obj));
+    items.push(intl.formatToPlainString(getSystemLocale.t.xCjYxK, obj));
   }
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  items.push(intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.iXLF9W, { minutes }));
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  items.push(intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.geSp4K, { seconds }));
+  const intl2 = getSystemLocale.intl;
+  items.push(intl2.formatToPlainString(getSystemLocale.t.iXLF9W, { minutes }));
+  const intl3 = getSystemLocale.intl;
+  items.push(intl3.formatToPlainString(getSystemLocale.t.geSp4K, { seconds }));
   return items.join(", ");
 }
 function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
@@ -98,11 +102,11 @@ function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
   if (formatSet === undefined) {
     formatSet = closure_6;
   }
-  const obj2 = importDefault(3975)(timestamp);
-  const tmp3 = importDefault(3975);
-  const diffResult = obj2.diff(tmp3(importDefault(11).extractTimestamp(entry.id)), "s");
+  const obj2 = tDefault(timestamp);
+  const tmp3 = tDefault;
+  const diffResult = obj2.diff(tmp3(DISCORD_EPOCHDefault.extractTimestamp(entry.id)), "s");
   const absolute = Math.abs(diffResult);
-  if (absolute < importDefault(687).Seconds.MINUTE) {
+  if (absolute < setDefault.Seconds.MINUTE) {
     return formatSet.secondsAgo(diffResult);
   } else if (absolute < tmp(687).Seconds.HOUR) {
     const _Math5 = Math;
@@ -120,35 +124,35 @@ function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
     const _Math = Math;
     return formatSet.monthsAgo(Math.round(diffResult / tmp(687).Seconds.DAYS_30));
   }
-  const obj3 = importDefault(11);
+  const obj3 = DISCORD_EPOCHDefault;
 }
 let closure_6 = {
   secondsAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.EOrEJl, { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t.EOrEJl, { count });
   },
   minutesAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.LRNgHp, { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t.LRNgHp, { count });
   },
   hoursAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.raJpz3, { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t.raJpz3, { count });
   },
   daysAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.KkvKhi, { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t.KkvKhi, { count });
   },
   weeksAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.sDtO6D, { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t.sDtO6D, { count });
   },
   monthsAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.ITymou, { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t.ITymou, { count });
   }
 };
-let result = require("getSystemLocale").fileFinishedImporting("modules/content_inventory/utils.tsx");
+let result = set.fileFinishedImporting("modules/content_inventory/utils.tsx");
 
 export { calculateTimestampDurations };
 export const calculateActiveTimestampDurations = function calculateActiveTimestampDurations(end, now) {
@@ -171,8 +175,8 @@ export const calculateActiveTimestampDurations = function calculateActiveTimesta
     }
   }
   if ("id" in end) {
-    let start = importDefault(11).extractTimestamp(end.id);
-    const obj = importDefault(11);
+    let start = DISCORD_EPOCHDefault.extractTimestamp(end.id);
+    const obj = DISCORD_EPOCHDefault;
   } else {
     start = end.start;
   }
@@ -211,7 +215,7 @@ export const formatActiveA11yTimestamp = function formatActiveA11yTimestamp(end,
     }
   }
   if ("id" in end) {
-    obj = importDefault(11);
+    obj = DISCORD_EPOCHDefault;
     let start = obj.extractTimestamp(end.id);
   } else {
     start = end.start;
@@ -228,28 +232,28 @@ export const formatActiveA11yTimestamp = function formatActiveA11yTimestamp(end,
 };
 export const A11Y_FORMAT_SET = {
   secondsAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.jfUoRQ, { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t.jfUoRQ, { count });
   },
   minutesAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.DmvRVO, { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t.DmvRVO, { count });
   },
   hoursAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.AfXezt, { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t.AfXezt, { count });
   },
   daysAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.Lru1rV, { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t.Lru1rV, { count });
   },
   weeksAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["jovF+x"], { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t["jovF+x"], { count });
   },
   monthsAgo(count) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.nmSbST, { count });
+    const intl = getSystemLocale.intl;
+    return intl.formatToPlainString(getSystemLocale.t.nmSbST, { count });
   }
 };
 export { formatEndedTimestamp };
@@ -263,7 +267,7 @@ export const formatEntryTimestamp = function formatEntryTimestamp(contentInvento
   if (arg3 === undefined) {
     obj = {};
   }
-  IS_LIVE = IS_LIVE(8349).ContentInventoryTraitType.IS_LIVE;
+  IS_LIVE = IS_LIVE(8388).ContentInventoryTraitType.IS_LIVE;
   const traits = contentInventoryEntry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let flag;
@@ -281,12 +285,12 @@ export const formatEntryTimestamp = function formatEntryTimestamp(contentInvento
   return tmp8;
 };
 export const getTrait = function getTrait(contentInventoryEntry, AGGREGATE_COUNT) {
-  let closure_0 = AGGREGATE_COUNT;
+  closure_0 = AGGREGATE_COUNT;
   const traits = contentInventoryEntry.traits;
   return traits.find((type) => type.type === TRENDING_CONTENT);
 };
 export const isEntryActive = function isEntryActive(entry) {
-  IS_LIVE = IS_LIVE(8349).ContentInventoryTraitType.IS_LIVE;
+  IS_LIVE = IS_LIVE(8388).ContentInventoryTraitType.IS_LIVE;
   const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let flag;
@@ -299,7 +303,7 @@ export const isEntryActive = function isEntryActive(entry) {
   return flag;
 };
 export const isEntryNew = function isEntryNew(entry) {
-  FIRST_TIME = FIRST_TIME(8349).ContentInventoryTraitType.FIRST_TIME;
+  FIRST_TIME = FIRST_TIME(8388).ContentInventoryTraitType.FIRST_TIME;
   const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let flag;
@@ -312,8 +316,8 @@ export const isEntryNew = function isEntryNew(entry) {
   return flag;
 };
 export const isEntryRecent = function isEntryRecent(id) {
-  const obj = importDefault(11);
-  return importDefault(11).age(id.id) / importDefault(687).Millis.HOUR < 48;
+  const obj = DISCORD_EPOCHDefault;
+  return DISCORD_EPOCHDefault.age(id.id) / setDefault.Millis.HOUR < 48;
 };
 export const isEntryExpired = function isEntryExpired(content) {
   let tmp = null != content.expires_at;
@@ -327,7 +331,7 @@ export const isEntryExpired = function isEntryExpired(content) {
   return tmp;
 };
 export const isEntryLive = function isEntryLive(traits) {
-  IS_LIVE = IS_LIVE(8349).ContentInventoryTraitType.IS_LIVE;
+  IS_LIVE = IS_LIVE(8388).ContentInventoryTraitType.IS_LIVE;
   traits = traits.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let flag;
@@ -351,7 +355,7 @@ export const isEntryLive = function isEntryLive(traits) {
   return flag;
 };
 export const getEntryDuration = function getEntryDuration(contentInventoryEntry) {
-  DURATION_SECONDS = DURATION_SECONDS(8349).ContentInventoryTraitType.DURATION_SECONDS;
+  DURATION_SECONDS = DURATION_SECONDS(8388).ContentInventoryTraitType.DURATION_SECONDS;
   const traits = contentInventoryEntry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let duration_seconds;
@@ -361,7 +365,7 @@ export const getEntryDuration = function getEntryDuration(contentInventoryEntry)
   return duration_seconds;
 };
 export const getAggregateRange = function getAggregateRange(traits) {
-  AGGREGATE_RANGE = AGGREGATE_RANGE(8349).ContentInventoryTraitType.AGGREGATE_RANGE;
+  AGGREGATE_RANGE = AGGREGATE_RANGE(8388).ContentInventoryTraitType.AGGREGATE_RANGE;
   traits = traits.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let range;
@@ -371,7 +375,7 @@ export const getAggregateRange = function getAggregateRange(traits) {
   return range;
 };
 export const isEntryMarathon = function isEntryMarathon(entry) {
-  MARATHON = MARATHON(8349).ContentInventoryTraitType.MARATHON;
+  MARATHON = MARATHON(8388).ContentInventoryTraitType.MARATHON;
   const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let marathon;
@@ -381,7 +385,7 @@ export const isEntryMarathon = function isEntryMarathon(entry) {
   return marathon;
 };
 export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastPlayTime(entry) {
-  RESURRECTED = RESURRECTED(8349).ContentInventoryTraitType.RESURRECTED;
+  RESURRECTED = RESURRECTED(8388).ContentInventoryTraitType.RESURRECTED;
   const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let prop;
@@ -396,9 +400,8 @@ export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastP
   return date;
 };
 export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(start) {
-  let obj = require(3618);
-  obj = { start, end: null };
-  obj[1] = new Date();
+  let obj = _mod3621;
+  obj = { start, end: new Date() };
   const intervalToDurationResult = obj.intervalToDuration(obj);
   const months = intervalToDurationResult.months;
   let num = 0;
@@ -430,7 +433,7 @@ export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(
     }
   }
   obj[2] = num5;
-  return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.NXBtjF, obj);
+  return intl.formatToPlainString(getSystemLocale.t.NXBtjF, obj);
 };
 export const getEpisodeBadgeText = function getEpisodeBadgeText(large_text) {
   if (null != large_text) {
@@ -438,16 +441,31 @@ export const getEpisodeBadgeText = function getEpisodeBadgeText(large_text) {
       const match = /\w+ (\d+), \w+ (\d+)/.exec(large_text);
       let formatToPlainStringResult = null;
       if (null != match) {
-        const intl = require(1236) /* getSystemLocale */.intl;
+        const intl = getSystemLocale.intl;
         const obj = { seasonNum: null, episodeNum: null };
         obj[0] = match[1];
         obj[1] = match[2];
-        formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.ijVm6y, obj);
+        formatToPlainStringResult = intl.formatToPlainString(getSystemLocale.t.ijVm6y, obj);
       }
       return formatToPlainStringResult;
     }
   }
   return null;
+};
+export const getEpisodeBadgeA11yText = function getEpisodeBadgeA11yText(arg0) {
+  if (null != arg0) {
+    if ("" !== arg0) {
+      let obj = /\w+ (\d+), \w+ (\d+)/;
+      const match = obj.exec(arg0);
+      if (null != match) {
+        const intl = getSystemLocale.intl;
+        obj = { seasonNum: null, episodeNum: null };
+        obj[0] = match[1];
+        obj[1] = match[2];
+        return intl.formatToPlainString(getSystemLocale.t.zmi5IM, obj);
+      }
+    }
+  }
 };
 export const getRichGameStateBadgeText = function getRichGameStateBadgeText(state, party) {
   let first;
@@ -468,11 +486,11 @@ export const getRichGameStateBadgeText = function getRichGameStateBadgeText(stat
     if (null != tmp2) {
       if (first > 0) {
         if (tmp2 > 0) {
-          const intl2 = require(1236) /* getSystemLocale */.intl;
+          const intl2 = getSystemLocale.intl;
           let obj = { count: null, max: null };
           obj[0] = first;
           obj[1] = tmp2;
-          let formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.wmUSiy, obj);
+          let formatToPlainStringResult = intl2.formatToPlainString(getSystemLocale.t.wmUSiy, obj);
         }
         if (null != formatToPlainStringResult) {
           if (null != state) {
@@ -493,17 +511,17 @@ export const getRichGameStateBadgeText = function getRichGameStateBadgeText(stat
     tmp3 = first > 0;
   }
   if (tmp3) {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     obj = { count: null };
     obj[0] = first;
-    formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.UTYMsa, obj);
+    formatToPlainStringResult = intl.formatToPlainString(getSystemLocale.t.UTYMsa, obj);
   }
 };
 export const isEntryTopGame = function isEntryTopGame(contentInventoryEntry) {
-  return contentInventoryEntry.content_type === require(8344) /* ContentInventoryEntryType */.ContentInventoryEntryType.TOP_GAME;
+  return contentInventoryEntry.content_type === ContentInventoryEntryType.ContentInventoryEntryType.TOP_GAME;
 };
 export const getStreakCount = function getStreakCount(entry) {
-  STREAK_DAYS = STREAK_DAYS(8349).ContentInventoryTraitType.STREAK_DAYS;
+  STREAK_DAYS = STREAK_DAYS(8388).ContentInventoryTraitType.STREAK_DAYS;
   const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let streak_count_days;
@@ -513,7 +531,7 @@ export const getStreakCount = function getStreakCount(entry) {
   return streak_count_days;
 };
 export const isValidStreak = function isValidStreak(traits) {
-  STREAK_DAYS = STREAK_DAYS(8349).ContentInventoryTraitType.STREAK_DAYS;
+  STREAK_DAYS = STREAK_DAYS(8388).ContentInventoryTraitType.STREAK_DAYS;
   traits = traits.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let streak_count_days;
@@ -526,13 +544,13 @@ export const isValidStreak = function isValidStreak(traits) {
     return false;
   } else {
     const _Date = Date;
-    const obj = importDefault(11);
-    const diff = Date.now() - importDefault(11).extractTimestamp(traits.id);
-    return diff <= 48 * importDefault(687).Millis.HOUR;
+    const obj = DISCORD_EPOCHDefault;
+    const diff = Date.now() - DISCORD_EPOCHDefault.extractTimestamp(traits.id);
+    return diff <= 48 * setDefault.Millis.HOUR;
   }
 };
 export const getMarathonDescription = function getMarathonDescription(entry) {
-  DURATION_SECONDS = DURATION_SECONDS(8349).ContentInventoryTraitType.DURATION_SECONDS;
+  DURATION_SECONDS = DURATION_SECONDS(8388).ContentInventoryTraitType.DURATION_SECONDS;
   const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let duration_seconds;
@@ -540,14 +558,14 @@ export const getMarathonDescription = function getMarathonDescription(entry) {
     duration_seconds = found.duration_seconds;
   }
   if (null == duration_seconds) {
-    return { text: null, tooltipText: null };
+    return { text: null, tooltipText: null, a11yText: null };
   } else {
     const _Math = Math;
-    const rounded = Math.round(duration_seconds / importDefault(687).Seconds.HOUR);
+    const rounded = Math.round(duration_seconds / setDefault.Seconds.HOUR);
     if (rounded <= 0) {
-      let obj = { text: null, tooltipText: null };
+      let obj = { text: null, tooltipText: null, a11yText: null };
     } else {
-      obj = { text: null, tooltipText: null };
+      obj = { text: null, tooltipText: null, a11yText: null };
       const intl = tmp(1236).intl;
       obj = { hours: null };
       obj[0] = rounded;
@@ -556,12 +574,16 @@ export const getMarathonDescription = function getMarathonDescription(entry) {
       obj = { hours: null };
       obj[0] = rounded;
       obj[1] = intl2.formatToPlainString(tmp(1236).t.S5F485, obj);
+      const intl3 = tmp(1236).intl;
+      obj1 = { hours: null };
+      obj1[0] = rounded;
+      obj[2] = intl3.formatToPlainString(tmp(1236).t["RZY+tX"], obj1);
     }
     return obj;
   }
 };
 export const getTrendingType = function getTrendingType(entry) {
-  TRENDING_CONTENT = TRENDING_CONTENT(8349).ContentInventoryTraitType.TRENDING_CONTENT;
+  TRENDING_CONTENT = TRENDING_CONTENT(8388).ContentInventoryTraitType.TRENDING_CONTENT;
   const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let trending;

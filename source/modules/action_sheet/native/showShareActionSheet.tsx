@@ -1,34 +1,34 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9104
+// Function ID: 9105
 // Name: showShareActionSheet
-// Dependencies: [17, 501, 9068, 9069, 9072, 1208, 2]
+// Dependencies: [17, 501, 9105, 9106, 9109, 1208, 2]
 // Exports: showShareActionSheet
 
-// Module 9067 (showShareActionSheet)
-import PlatformTypes from "PlatformTypes";
+// Module 9104 (showShareActionSheet)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import enforcingDefault from "enforcing" /* 9105 */;
+import trackAppClickInNativeShareSheet from "trackAppClickInNativeShareSheet" /* 9106 */;
+import PlatformTypes from "PlatformTypes" /* 501 */;
 
 if (PlatformTypes.isAndroid()) {
-  const nativeEventEmitter = new require("get ActivityIndicator").NativeEventEmitter(require("enforcing"));
+  const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(enforcingDefault);
   nativeEventEmitter.addListener("share-broadcast-receiver-app-clicked", (arg0) => {
-    let _location;
-    let app;
     ({ app, location: _location } = arg0);
-    const result = require(9069) /* trackAppClickInNativeShareSheet */.trackAppClickInNativeShareSheet(app, _location);
+    const result = trackAppClickInNativeShareSheet.trackAppClickInNativeShareSheet(app, _location);
   });
 }
-let result = require("enforcing").fileFinishedImporting("modules/action_sheet/native/showShareActionSheet.tsx");
+let result = set.fileFinishedImporting("modules/action_sheet/native/showShareActionSheet.tsx");
 
 export const showShareActionSheet = function showShareActionSheet(source, PREMIUM_GIFT_SUCCESS_MODAL) {
-  let mediaFallbackUrl;
-  let mediaStagingOptions;
   const _require = source;
   let tmp = PREMIUM_GIFT_SUCCESS_MODAL;
-  const importDefault = PREMIUM_GIFT_SUCCESS_MODAL;
+  importDefault = PREMIUM_GIFT_SUCCESS_MODAL;
   if (null != source.source) {
     let mediaShareParams = _require(fn[3]).getMediaShareParams(source.source);
     const obj2 = _require(fn[3]);
   } else {
-    mediaShareParams = { mediaFallbackUrl: "r", mediaStagingOptions: "accessibilityRole" };
+    mediaShareParams = { mediaFallbackUrl: "Array", mediaStagingOptions: "ct" };
   }
   ({ mediaFallbackUrl, mediaStagingOptions } = mediaShareParams);
   if (null == source.source) {

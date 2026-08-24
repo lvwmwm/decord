@@ -1,45 +1,43 @@
-// Module ID: 15966
-// Function ID: 15967
+// Module ID: 16063
+// Function ID: 16064
 // Name: FriendsScreen
-// Dependencies: [19, 17, 5406, 4030, 21, 4661, 712, 1500, 7139, 7159, 1629, 589, 15967, 1892, 8929, 15968, 15971, 15700, 4320, 1236, 6291, 11540, 5447, 4745, 9635, 11075, 2]
+// Dependencies: [19, 17, 5411, 4033, 21, 4668, 712, 1500, 7177, 7197, 1629, 589, 16064, 1892, 8966, 16065, 16068, 15769, 4324, 1236, 6322, 11589, 5452, 4750, 9674, 11114, 2]
 // Exports: default
 
-// Module 15966 (FriendsScreen)
-import getSystemLocale from "getSystemLocale";
-import { View } from "registerAsset";
-import recountRelationshipTypes from "recountRelationshipTypes";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import jsxProd from "NoResults";
-import createCacheKey from "createCacheKey";
+// Module 16063 (FriendsScreen)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "recountRelationshipTypes" /* 5411 */;
+import closure_6 from "markAllUserIdListsStale" /* 4033 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: null, requestsButtonContainer: null, emptyContainer: null, buttonContainer: null };
-createCacheKey = { paddingTop: require("Themes").space.PX_8, flex: 1 };
+createCacheKey = { paddingTop: ThemesDefault.space.PX_8, flex: 1 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginHorizontal: require("Themes").space.PX_16, borderRadius: require("Themes").radii.lg, overflow: "hidden" };
+createCacheKey[1] = { marginHorizontal: ThemesDefault.space.PX_16, borderRadius: ThemesDefault.radii.lg, overflow: "hidden" };
 createCacheKey[2] = { justifyContent: "center", flexGrow: 1 };
-let obj1 = { marginHorizontal: require("Themes").space.PX_16, borderRadius: require("Themes").radii.lg, overflow: "hidden" };
-createCacheKey[3] = { flexDirection: "row", marginBottom: require("Themes").space.PX_16, width: "100%" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { flexDirection: "row", marginBottom: require("Themes").space.PX_16, width: "100%" };
-let result = require("recountRelationshipTypes").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendsScreen.tsx");
+let obj1 = { marginHorizontal: ThemesDefault.space.PX_16, borderRadius: ThemesDefault.radii.lg, overflow: "hidden" };
+createCacheKey[3] = { flexDirection: "row", marginBottom: ThemesDefault.space.PX_16, width: "100%" };
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { flexDirection: "row", marginBottom: ThemesDefault.space.PX_16, width: "100%" };
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendsScreen.tsx");
 
 export default function FriendsScreen() {
   let obj = navigation(analyticsLocations[7]);
   navigation = obj.useNavigation();
-  let tmp2 = createCacheKey();
-  const importDefault = tmp2;
+  let tmp2 = callback2();
+  importDefault = tmp2;
   analyticsLocations = importDefault(analyticsLocations[8])(importDefault(analyticsLocations[9]).FRIENDS_LIST).analyticsLocations;
   const bottom = importDefault(analyticsLocations[10])().bottom;
   const tmp3 = importDefault(analyticsLocations[8]);
   let items = [spam, outgoing];
   const stateFromStoresObject = navigation(analyticsLocations[11]).useStateFromStoresObject(items, () => {
-    const obj = { incoming: null, outgoing: null, spam: null, pendingIgnored: null };
-    const items = [spam, outgoing];
-    obj[0] = navigation(analyticsLocations[12]).getIncomingFriendRequestCount(items);
+    const obj = { incoming: navigation(analyticsLocations[12]).getIncomingFriendRequestCount(items), outgoing: null, spam: null, pendingIgnored: null };
+    items = [spam, outgoing];
     const obj2 = navigation(analyticsLocations[12]);
     const items1 = [spam, outgoing];
     obj[1] = navigation(analyticsLocations[12]).getOutgoingFriendRequestCount(items1);
@@ -57,13 +55,14 @@ export default function FriendsScreen() {
     let obj = navigation(analyticsLocations[13]);
     const result = obj.dismissGlobalKeyboard();
     obj = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
+    lib(analyticsLocations[14])(obj);
   }, items1);
   const callback1 = bottom.useCallback((defaultSelectedUserId) => {
     navigation.navigate("friends", { screen: "new-message", params: { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" } });
   }, items2);
   const effect = bottom.useEffect(() => {
-    tmp2(analyticsLocations[15])({ tab_opened: null });
-    tmp2 = tmp2(analyticsLocations[16])({ tab_opened: null });
+    lib(analyticsLocations[15])({ tab_opened: null });
+    lib(analyticsLocations[16])({ tab_opened: null });
   }, []);
   const items3 = [incoming, navigation, outgoing, spam, pendingIgnored];
   const items4 = [bottom, incoming, navigation, outgoing, tmp2, spam];
@@ -76,7 +75,7 @@ export default function FriendsScreen() {
     const items = [];
     if (tmp2) {
       let obj = { icon: null, IconComponent: null, iconVariant: "default", label: null, subLabel: null, onPress: null };
-      obj[0] = tmp2(analyticsLocations[17]);
+      obj[0] = lib(analyticsLocations[17]);
       obj[1] = navigation(analyticsLocations[18]).SendMessageIcon;
       const intl = navigation(analyticsLocations[19]).intl;
       obj[3] = intl.string(navigation(analyticsLocations[19]).t.fyA115);
@@ -93,7 +92,7 @@ export default function FriendsScreen() {
     return items;
   }, items3);
   const memo1 = bottom.useMemo(() => {
-    let obj = { style: tmp2.container, children: null };
+    let obj = { style: lib.container, children: null };
     if (incoming + outgoing + spam <= 0) {
       const items = [null, ];
       obj = { title: null, fullHeight: true, containerStyle: null, illustration: null, children: null };
@@ -103,7 +102,7 @@ export default function FriendsScreen() {
       obj[3] = navigation(analyticsLocations[22]).WumpusCouchSpotIllustration;
       obj = { style: null, children: null };
       const items1 = [tmp3.buttonContainer, ];
-      const obj1 = { paddingBottom: null };
+      obj1 = { paddingBottom: null };
       obj1[0] = bottom;
       items1[1] = obj1;
       obj[0] = items1;
@@ -115,7 +114,7 @@ export default function FriendsScreen() {
       };
       obj[1] = pendingIgnored(navigation(analyticsLocations[23]).Button, obj2);
       obj[4] = pendingIgnored(tmp2, obj);
-      items[1] = pendingIgnored(tmp2(analyticsLocations[21]), obj);
+      items[1] = pendingIgnored(lib(analyticsLocations[21]), obj);
       obj[1] = items;
       return tmp(tmp2, obj);
     } else {
@@ -124,7 +123,7 @@ export default function FriendsScreen() {
       let obj6 = analyticsLocations;
       let obj4 = { start: true, end: true, icon: null, trailing: null, label: null, subLabel: null, onPress: null };
       const obj5 = { source: null };
-      obj5[0] = tmp2(analyticsLocations[17]);
+      obj5[0] = lib(analyticsLocations[17]);
       obj4[2] = pendingIgnored(navigation(analyticsLocations[20]).TableRow.Icon, obj5);
       obj4[3] = pendingIgnored(navigation(analyticsLocations[20]).TableRow.Arrow, {});
       const intl5 = navigation(analyticsLocations[19]).intl;
@@ -143,7 +142,7 @@ export default function FriendsScreen() {
       }
       obj4[5] = formatToPlainStringResult;
       obj4[6] = function onPress() {
-        if (closure_4 + recountRelationshipTypes > 0) {
+        if (closure_4 + closure_5 > 0) {
           navigation.navigate("friends", { screen: "requests" });
         } else {
           navigation.navigate("friends", { screen: "spam-requests" });

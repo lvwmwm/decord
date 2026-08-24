@@ -1,27 +1,29 @@
-// Module ID: 10264
-// Function ID: 10265
+// Module ID: 10303
+// Function ID: 10304
 // Name: ForumTagContextMenu
-// Dependencies: [21, 4066, 1236, 9563, 7167, 4093, 9958, 2]
+// Dependencies: [21, 4069, 1236, 9600, 7205, 4096, 9997, 2]
 // Exports: default
 
-// Module 10264 (ForumTagContextMenu)
-import { jsx } from "jsxProd";
+// Module 10303 (ForumTagContextMenu)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-const result = require("getSystemLocale").fileFinishedImporting("modules/forums/native/ForumTagContextMenu.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("modules/forums/native/ForumTagContextMenu.tsx");
 
 export default function ForumTagContextMenu(children) {
   const tagId = children.tagId;
-  const DeveloperMode = tagId(4066).DeveloperMode;
+  const DeveloperMode = tagId(4069).DeveloperMode;
   let obj = { label: null, IconComponent: null, action: null };
   const enabled = DeveloperMode.useSetting();
   const intl = tagId(1236).intl;
   obj[0] = intl.string(tagId(1236).t["8VG6IY"]);
-  obj[1] = tagId(9563).IdIcon;
+  obj[1] = tagId(9600).IdIcon;
   obj[2] = function action() {
-    tagId(outer1_1[4]).copy(tagId);
-    const obj = tagId(outer1_1[4]);
-    tagId(outer1_1[5]).presentIdCopied();
+    tagId(closure_1_1[4]).copy(tagId);
+    const obj = tagId(closure_1_1[4]);
+    tagId(closure_1_1[5]).presentIdCopied();
   };
   const items = [obj];
-  return jsx(tagId(9958).ContextMenu, { triggerOnLongPress: true, items, enabled, children: children.children });
+  return jsx(tagId(9997).ContextMenu, { triggerOnLongPress: true, items, enabled, children: children.children });
 };

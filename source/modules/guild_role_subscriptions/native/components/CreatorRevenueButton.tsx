@@ -1,25 +1,22 @@
-// Module ID: 9353
-// Function ID: 9354
+// Module ID: 9390
+// Function ID: 9391
 // Name: CreatorRevenueButton
-// Dependencies: [19, 21, 4661, 9354, 2]
+// Dependencies: [19, 21, 4668, 9391, 2]
 // Exports: CreatorRevenueButton
 
-// Module 9353 (CreatorRevenueButton)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9390 (CreatorRevenueButton)
+import noopAll from "noop" /* 19 */;
+import ShinyButtonDefault from "ShinyButton" /* 9391 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+noopAll;
 let closure_3 = createCacheKey.createStyles({ container: { borderRadius: 3 } });
-const result = require("createCacheKey").fileFinishedImporting("modules/guild_role_subscriptions/native/components/CreatorRevenueButton.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/CreatorRevenueButton.tsx");
 
 export const CreatorRevenueButton = function CreatorRevenueButton(arg0) {
-  let disabled;
-  let loading;
-  let onPress;
-  let style;
-  let text;
   ({ disabled, text, onPress, style, loading } = arg0);
   style = [callback().container, ];
   style[1] = style;
-  return jsx(importDefault(9354), { style, loading, disabled, onPress, text });
+  return jsx(ShinyButtonDefault, { style, loading, disabled, onPress, text });
 };

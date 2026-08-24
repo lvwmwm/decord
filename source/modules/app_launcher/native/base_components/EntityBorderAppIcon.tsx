@@ -1,28 +1,30 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 11280
+// Function ID: 11281
 // Name: EntityBorderAppIcon
-// Dependencies: [17, 21, 712, 4661, 5449, 2]
+// Dependencies: [17, 21, 712, 4668, 5454, 2]
 // Exports: default
 
-// Module 11229 (EntityBorderAppIcon)
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11280 (EntityBorderAppIcon)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import ThemesDefault from "Themes" /* 712 */;
+import preloadDefault from "preload" /* 5454 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const sm = require("Themes").radii.sm;
+const View = get_ActivityIndicator.View;
+const jsx = jsxProd.jsx;
+const sm = ThemesDefault.radii.sm;
 let closure_5 = createCacheKey.createStyles((width, borderRadius) => {
   obj = { appIcon: obj, entityWrapper: null };
   obj = { width, height: width, borderRadius };
-  obj = { padding: 1, backgroundColor: importDefault(712).colors.BORDER_SUBTLE, overflow: "hidden", borderRadius: borderRadius + 1 };
+  obj = { padding: 1, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, overflow: "hidden", borderRadius: borderRadius + 1 };
   obj[1] = obj;
   return obj;
 });
-const result = require("Themes").fileFinishedImporting("modules/app_launcher/native/base_components/EntityBorderAppIcon.tsx");
+const result = set.fileFinishedImporting("modules/app_launcher/native/base_components/EntityBorderAppIcon.tsx");
 
 export default function EntityBorderAppIcon(iconSize) {
-  let iconSource;
-  let iconStyle;
-  let wrapperStyle;
   let num = iconSize.iconSize;
   ({ iconSource, wrapperStyle, iconStyle } = iconSize);
   if (num === undefined) {
@@ -35,5 +37,5 @@ export default function EntityBorderAppIcon(iconSize) {
   const tmp = callback(num, iconBorderRadius);
   const items = [tmp.entityWrapper, wrapperStyle];
   const items1 = [tmp.appIcon, iconStyle];
-  return <View style={items}>{jsx(importDefault(5449), { style: items1, source: iconSource })}</View>;
+  return <View style={items}>{jsx(preloadDefault, { style: items1, source: iconSource })}</View>;
 };

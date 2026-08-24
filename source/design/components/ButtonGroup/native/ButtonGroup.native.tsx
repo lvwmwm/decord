@@ -1,21 +1,21 @@
-// Module ID: 6687
-// Function ID: 6688
+// Module ID: 6723
+// Function ID: 6724
 // Name: ButtonGroup
-// Dependencies: [19, 21, 4661, 4733, 2]
+// Dependencies: [19, 21, 4668, 4738, 2]
 // Exports: ButtonGroup
 
-// Module 6687 (ButtonGroup)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 6723 (ButtonGroup)
+import noopAll from "noop" /* 19 */;
+import Stack from "Stack" /* 4738 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_3 = createCacheKey.createStyles({ container: { paddingVertical: 16 } });
-const result = require("createCacheKey").fileFinishedImporting("design/components/ButtonGroup/native/ButtonGroup.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/ButtonGroup/native/ButtonGroup.native.tsx");
 
 export const ButtonGroup = function ButtonGroup(size) {
-  let children;
-  let style;
   let str = size.size;
   if (str === undefined) {
     str = "md";
@@ -32,5 +32,5 @@ export const ButtonGroup = function ButtonGroup(size) {
   const items = [callback().container, style];
   obj.style = items;
   obj.children = children;
-  return jsx(require(4733) /* Stack */.Stack, {});
+  return jsx(Stack.Stack, {});
 };

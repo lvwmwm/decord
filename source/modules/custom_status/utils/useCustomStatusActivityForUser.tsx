@@ -1,26 +1,26 @@
-// Module ID: 9449
-// Function ID: 9450
+// Module ID: 9486
+// Function ID: 9487
 // Name: useCustomStatusActivityForUser
-// Dependencies: [1218, 4559, 676, 589, 7256, 2]
+// Dependencies: [1218, 4564, 676, 589, 7294, 2]
 // Exports: default
 
-// Module 9449 (useCustomStatusActivityForUser)
-import fetchFingerprint from "fetchFingerprint";
-import sortActivity from "sortActivity";
-import { ActivityTypes } from "ME";
+// Module 9486 (useCustomStatusActivityForUser)
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "sortActivity" /* 4564 */;
+import { ActivityTypes } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/custom_status/utils/useCustomStatusActivityForUser.tsx");
+const result = require("set").fileFinishedImporting("modules/custom_status/utils/useCustomStatusActivityForUser.tsx");
 
 export default function useCustomStatusActivityForUser(arg0) {
   const _require = arg0;
-  const items = [fetchFingerprint];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_2.getId() === closure_0);
+  const items = [closure_2];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_2.getId() === closure_0);
   const obj = _require(589);
-  const customStatusActivity = _require(7256).useCustomStatusActivity();
-  const obj2 = _require(7256);
-  const items1 = [sortActivity];
-  let stateFromStores1 = _require(589).useStateFromStores(items1, () => outer1_3.findActivity(closure_0, (type) => type.type === constants.CUSTOM_STATUS));
+  const customStatusActivity = _require(7294).useCustomStatusActivity();
+  const obj2 = _require(7294);
+  const items1 = [closure_3];
+  let stateFromStores1 = _require(589).useStateFromStores(items1, () => closure_1_3.findActivity(closure_0, (type) => type.type === constants.CUSTOM_STATUS));
   if (stateFromStores) {
     stateFromStores1 = customStatusActivity;
   }

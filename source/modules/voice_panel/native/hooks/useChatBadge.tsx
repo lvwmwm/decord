@@ -1,23 +1,23 @@
-// Module ID: 16406
-// Function ID: 16407
+// Module ID: 16443
+// Function ID: 16444
 // Name: useChatBadge
-// Dependencies: [4772, 589, 2]
+// Dependencies: [4777, 589, 2]
 // Exports: default
 
-// Module 16406 (useChatBadge)
-import generateOldThreadCutoff from "generateOldThreadCutoff";
+// Module 16443 (useChatBadge)
+import closure_2 from "generateOldThreadCutoff" /* 4777 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/hooks/useChatBadge.tsx");
 
 export default function useChatBadge(arg0) {
   const _require = arg0;
-  const items = [generateOldThreadCutoff];
+  const items = [closure_2];
   return _require(589).useStateFromStores(items, () => {
     let str = "mention";
-    if (outer1_2.getMentionCount(closure_0) <= 0) {
+    if (closure_1_2.getMentionCount(closure_0) <= 0) {
       let str2 = null;
-      if (outer1_2.hasUnread(closure_0)) {
+      if (closure_1_2.hasUnread(closure_0)) {
         str2 = "unread";
       }
       str = str2;

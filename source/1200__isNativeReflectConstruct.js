@@ -4,17 +4,14 @@
 // Dependencies: [41, 42, 93, 95, 98, 19, 17, 1198, 1199, 1201, 1202, 1197, 1203]
 
 // Module 1200 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
+import _inheritsDefault from "_inherits" /* 98 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
 const FeedbackButton = arg1;
 function _isNativeReflectConstruct() {
   try {
@@ -27,25 +24,25 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
 let c5 = importAllResult;
-({ Appearance: closure_6, Image: error, Text: metroImportAll, TouchableOpacity: c9 } = get_ActivityIndicator);
+({ Appearance: closure_6, Image: error, Text: closure_8, TouchableOpacity: c9 } = get_ActivityIndicator);
 class FeedbackButton {
   constructor(arg0) {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeedbackButton);
+    tmp = closure_2(this, FeedbackButton);
     items = [];
     items[0] = global;
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(FeedbackButton);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_4;
+    obj = closure_4(FeedbackButton);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -59,7 +56,7 @@ class FeedbackButton {
     return tmp3Result;
   }
 }
-require("_inherits")(FeedbackButton, importAllResult.Component);
+_inheritsDefault(FeedbackButton, importAllResult.Component);
 let items = [
   {
     key: "componentDidMount",
@@ -86,7 +83,7 @@ let items = [
       let obj = FeedbackButton(1199);
       const theme = obj.getTheme();
       const merged = Object.assign(Object.assign({}, FeedbackButton(1201).defaultButtonConfiguration), this.props);
-      let obj1 = FeedbackButton(1202);
+      obj1 = FeedbackButton(1202);
       const styles = this.props.styles;
       let triggerButton;
       const merged1 = Object.assign({}, obj1.defaultButtonStyles(theme).triggerButton);

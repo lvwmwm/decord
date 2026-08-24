@@ -1,11 +1,12 @@
-// Module ID: 11383
-// Function ID: 11384
+// Module ID: 11434
+// Function ID: 11435
 // Name: restartState
-// Dependencies: [19, 38, 7127, 2]
+// Dependencies: [19, 38, 7165, 2]
 // Exports: default
 
-// Module 11383 (restartState)
-import noop from "noop";
+// Module 11434 (restartState)
+import _modDef38 from "module_38" /* 38 */;
+import closure_2 from "noop" /* 19 */;
 
 let closure_3 = function FocusHelperState() {
   const obj = Object.create(new.target.prototype);
@@ -17,8 +18,8 @@ class FocusHelperImpl {
   constructor() {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
-    tmp2 = FocusHelperState;
-    if (typeof FocusHelperState !== "function") {
+    tmp2 = closure_3;
+    if (typeof closure_3 !== "function") {
       str = "Trying to call a non-function";
       throwTypeErrorResult = HermesBuiltin.throwTypeError();
     }
@@ -27,8 +28,6 @@ class FocusHelperImpl {
     obj1[1] = [];
     obj.validState = obj1;
     obj.focusNext = function focusNext() {
-      let keyOrder;
-      let refsByKey;
       ({ refsByKey, keyOrder } = obj.validState);
       let tmp2;
       const keys = Object.keys();
@@ -61,7 +60,7 @@ class FocusHelperImpl {
             }
           }
         }
-        const onAddAnswer = obj.onAddAnswer;
+        onAddAnswer = obj.onAddAnswer;
         if (onAddAnswer != null) {
           onAddAnswer();
         }
@@ -98,7 +97,7 @@ prototype["commitState"] = function commitState() {
 };
 prototype["refWithKey"] = function refWithKey(question) {
   const pendingState = this.pendingState;
-  importDefault(38)(null != pendingState, "Called refWithKey without a valid state");
+  _modDef38(null != pendingState, "Called refWithKey without a valid state");
   const keyOrder = pendingState.keyOrder;
   keyOrder.push(question);
   if (null != pendingState.refsByKey[question]) {
@@ -109,7 +108,7 @@ prototype["refWithKey"] = function refWithKey(question) {
     return ref;
   }
 };
-const result = require("useInitialValue").fileFinishedImporting("modules/polls/native/useFocusHelper.tsx");
+const result = require("set").fileFinishedImporting("modules/polls/native/useFocusHelper.tsx");
 
 export default function useFocusHelper() {
   let obj = arg0;
@@ -131,8 +130,6 @@ export default function useFocusHelper() {
     obj[1] = [];
     obj.validState = obj;
     obj.focusNext = function focusNext() {
-      let keyOrder;
-      let refsByKey;
       ({ refsByKey, keyOrder } = obj.validState);
       let tmp2;
       const keys = Object.keys();
@@ -165,7 +162,7 @@ export default function useFocusHelper() {
             }
           }
         }
-        const onAddAnswer = obj.onAddAnswer;
+        onAddAnswer = obj.onAddAnswer;
         if (onAddAnswer != null) {
           onAddAnswer();
         }

@@ -1,12 +1,13 @@
-// Module ID: 5328
-// Function ID: 5329
+// Module ID: 5333
+// Function ID: 5334
 // Name: fromServer
-// Dependencies: [1931, 5311, 688, 2]
+// Dependencies: [1931, 5316, 688, 2]
 
-// Module 5328 (fromServer)
-import "toJS";
+// Module 5333 (fromServer)
+import toJSDefault from "toJS" /* 1931 */;
 
 const require = arg1;
+toJSDefault;
 let prototype;
 prototype = function CollectiblesStoreListingStylesRecord(arg0) {
   const tmp = new prototype(new.target, new.target);
@@ -17,20 +18,17 @@ prototype = function CollectiblesStoreListingStylesRecord(arg0) {
 class prototype extends tmp2 {
 }
 prototype["fromServer"] = function fromServer(arg0) {
-  let background_colors;
-  let button_colors;
-  let confetti_colors;
   ({ background_colors, button_colors, confetti_colors } = arg0);
   const mapped = background_colors.map((color) => {
-    const tmp = callback2(5311);
+    const tmp = callback2(5316);
     return tmp(callback(688).int2hex(color));
   });
   const mapped1 = button_colors.map((color) => {
-    const tmp = callback2(5311);
+    const tmp = callback2(5316);
     return tmp(callback(688).int2hex(color));
   });
   const mapped2 = confetti_colors.map((color) => {
-    const tmp = callback2(5311);
+    const tmp = callback2(5316);
     return tmp(callback(688).int2hex(color));
   });
   if (typeof prototype !== "function") {
@@ -43,6 +41,6 @@ prototype["fromServer"] = function fromServer(arg0) {
   tmp5.confettiColors = mapped2;
   return tmp5;
 };
-const result = require("int2hslRaw").fileFinishedImporting("modules/collectibles/records/CollectiblesStoreListingStylesRecord.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesStoreListingStylesRecord.tsx");
 
 export default prototype;

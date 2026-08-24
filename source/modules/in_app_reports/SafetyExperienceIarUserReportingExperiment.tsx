@@ -1,15 +1,16 @@
-// Module ID: 12087
-// Function ID: 12088
+// Module ID: 12139
+// Function ID: 12140
 // Name: experiment
-// Dependencies: [4286, 2]
+// Dependencies: [4290, 2]
 // Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
 
-// Module 12087 (experiment)
-import createExperiment from "createExperiment";
+// Module 12139 (experiment)
+import set from "set" /* 2 */;
+import createExperiment from "createExperiment" /* 4290 */;
 
 const items = [{ id: 1, label: "Enabled", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "user", id: "2023-09_iar_user_reporting", label: "Safety Experience IAR User Reporting", defaultConfig: { enabled: false }, treatments: items });
-const result = require("set").fileFinishedImporting("modules/in_app_reports/SafetyExperienceIarUserReportingExperiment.tsx");
+const result = set.fileFinishedImporting("modules/in_app_reports/SafetyExperienceIarUserReportingExperiment.tsx");
 
 export default experiment;
 export const useIsIarUserReportingEnabled = function useIsIarUserReportingEnabled(location) {

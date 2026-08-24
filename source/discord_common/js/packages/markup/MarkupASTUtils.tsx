@@ -1,10 +1,12 @@
-// Module ID: 6904
-// Function ID: 6905
+// Module ID: 6942
+// Function ID: 6943
 // Name: collectAst
 // Dependencies: [2]
 // Exports: astToString, getIndexedAST
 
-// Module 6904 (collectAst)
+// Module 6942 (collectAst)
+import set2 from "set" /* 2 */;
+
 function collectAst(arr) {
   let items = arg1;
   if (arg1 === undefined) {
@@ -55,7 +57,7 @@ function collectAst(arr) {
                     } else if (typeof content.content === "string") {
                       items1.push(content.content);
                     } else if (null != content.content) {
-                      outer1_0(content.content, items1);
+                      closure_1_0(content.content, items1);
                     }
                   }
                   return items;
@@ -94,7 +96,7 @@ function collectAst(arr) {
                       } else if (typeof content.content === "string") {
                         items1.push(content.content);
                       } else if (null != content.content) {
-                        outer1_0(content.content, items1);
+                        closure_1_0(content.content, items1);
                       }
                     }
                     return items;
@@ -102,7 +104,7 @@ function collectAst(arr) {
                 } else if (typeof content.content === "string") {
                   items1.push(content.content);
                 } else if (null != content.content) {
-                  outer1_0(content.content, items1);
+                  closure_1_0(content.content, items1);
                 }
               }
               return items;
@@ -148,7 +150,7 @@ function collectAst(arr) {
                       } else if (typeof content.content === "string") {
                         items1.push(content.content);
                       } else if (null != content.content) {
-                        outer1_0(content.content, items1);
+                        closure_1_0(content.content, items1);
                       }
                     }
                     return items;
@@ -187,7 +189,7 @@ function collectAst(arr) {
                         } else if (typeof content.content === "string") {
                           items1.push(content.content);
                         } else if (null != content.content) {
-                          outer1_0(content.content, items1);
+                          closure_1_0(content.content, items1);
                         }
                       }
                       return items;
@@ -195,7 +197,7 @@ function collectAst(arr) {
                   } else if (typeof content.content === "string") {
                     items1.push(content.content);
                   } else if (null != content.content) {
-                    outer1_0(content.content, items1);
+                    closure_1_0(content.content, items1);
                   }
                 }
                 return items;
@@ -203,7 +205,7 @@ function collectAst(arr) {
             } else if (typeof content.content === "string") {
               items1.push(content.content);
             } else if (null != content.content) {
-              outer1_0(content.content, items1);
+              closure_1_0(content.content, items1);
             }
           }
           return items;
@@ -256,7 +258,7 @@ function collectAst(arr) {
                       } else if (typeof content.content === "string") {
                         items1.push(content.content);
                       } else if (null != content.content) {
-                        outer1_0(content.content, items1);
+                        closure_1_0(content.content, items1);
                       }
                     }
                     return items;
@@ -295,7 +297,7 @@ function collectAst(arr) {
                         } else if (typeof content.content === "string") {
                           items1.push(content.content);
                         } else if (null != content.content) {
-                          outer1_0(content.content, items1);
+                          closure_1_0(content.content, items1);
                         }
                       }
                       return items;
@@ -303,7 +305,7 @@ function collectAst(arr) {
                   } else if (typeof content.content === "string") {
                     items1.push(content.content);
                   } else if (null != content.content) {
-                    outer1_0(content.content, items1);
+                    closure_1_0(content.content, items1);
                   }
                 }
                 return items;
@@ -349,7 +351,7 @@ function collectAst(arr) {
                         } else if (typeof content.content === "string") {
                           items1.push(content.content);
                         } else if (null != content.content) {
-                          outer1_0(content.content, items1);
+                          closure_1_0(content.content, items1);
                         }
                       }
                       return items;
@@ -388,7 +390,7 @@ function collectAst(arr) {
                           } else if (typeof content.content === "string") {
                             items1.push(content.content);
                           } else if (null != content.content) {
-                            outer1_0(content.content, items1);
+                            closure_1_0(content.content, items1);
                           }
                         }
                         return items;
@@ -396,7 +398,7 @@ function collectAst(arr) {
                     } else if (typeof content.content === "string") {
                       items1.push(content.content);
                     } else if (null != content.content) {
-                      outer1_0(content.content, items1);
+                      closure_1_0(content.content, items1);
                     }
                   }
                   return items;
@@ -404,7 +406,7 @@ function collectAst(arr) {
               } else if (typeof content.content === "string") {
                 items1.push(content.content);
               } else if (null != content.content) {
-                outer1_0(content.content, items1);
+                closure_1_0(content.content, items1);
               }
             }
             return items;
@@ -412,7 +414,7 @@ function collectAst(arr) {
         } else if (typeof content.content === "string") {
           items1.push(content.content);
         } else if (null != content.content) {
-          outer1_0(content.content, items1);
+          closure_1_0(content.content, items1);
         }
       }
       return items;
@@ -497,9 +499,9 @@ class prototype extends Error {
 prototype["getMessage"] = function getMessage(join) {
   return "MarkupParserNodeTypeError: Unknown AST node type in \"" + join.join(", ") + "\" caused rendering failure";
 };
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/markup/MarkupASTUtils.tsx");
+const result = set2.fileFinishedImporting("../discord_common/js/packages/markup/MarkupASTUtils.tsx");
 function flattenAst(isSlate, content, content) {
-  let closure_0 = isSlate;
+  closure_0 = isSlate;
   let tmp3 = content;
   if (content === undefined) {
     tmp3 = null;
@@ -570,7 +572,7 @@ function flattenAst(isSlate, content, content) {
       content.items = items1.map((arg0) => {
         let tmp = arg0;
         if (Array.isArray(arg0)) {
-          tmp = outer1_4(closure_0, arg0, null);
+          tmp = closure_1_4(closure_0, arg0, null);
         }
         return tmp;
       });
@@ -613,7 +615,7 @@ function constrainAst(content, arg1) {
       }
       if ("list" === content.type) {
         const items = content.items;
-        content.items = items.map((arg0) => outer1_5(arg0, obj).ast);
+        content.items = items.map((arg0) => closure_1_5(arg0, obj).ast);
       }
     }
   }
@@ -669,7 +671,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                     } else if (typeof content.content === "string") {
                       items1.push(content.content);
                     } else if (null != content.content) {
-                      outer1_0(content.content, items1);
+                      closure_1_0(content.content, items1);
                     }
                   }
                   return items;
@@ -708,7 +710,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                       } else if (typeof content.content === "string") {
                         items1.push(content.content);
                       } else if (null != content.content) {
-                        outer1_0(content.content, items1);
+                        closure_1_0(content.content, items1);
                       }
                     }
                     return items;
@@ -716,7 +718,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                 } else if (typeof content.content === "string") {
                   items1.push(content.content);
                 } else if (null != content.content) {
-                  outer1_0(content.content, items1);
+                  closure_1_0(content.content, items1);
                 }
               }
               return items;
@@ -762,7 +764,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                       } else if (typeof content.content === "string") {
                         items1.push(content.content);
                       } else if (null != content.content) {
-                        outer1_0(content.content, items1);
+                        closure_1_0(content.content, items1);
                       }
                     }
                     return items;
@@ -801,7 +803,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                         } else if (typeof content.content === "string") {
                           items1.push(content.content);
                         } else if (null != content.content) {
-                          outer1_0(content.content, items1);
+                          closure_1_0(content.content, items1);
                         }
                       }
                       return items;
@@ -809,7 +811,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                   } else if (typeof content.content === "string") {
                     items1.push(content.content);
                   } else if (null != content.content) {
-                    outer1_0(content.content, items1);
+                    closure_1_0(content.content, items1);
                   }
                 }
                 return items;
@@ -817,7 +819,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
             } else if (typeof content.content === "string") {
               items1.push(content.content);
             } else if (null != content.content) {
-              outer1_0(content.content, items1);
+              closure_1_0(content.content, items1);
             }
           }
           return items;
@@ -870,7 +872,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                       } else if (typeof content.content === "string") {
                         items1.push(content.content);
                       } else if (null != content.content) {
-                        outer1_0(content.content, items1);
+                        closure_1_0(content.content, items1);
                       }
                     }
                     return items;
@@ -909,7 +911,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                         } else if (typeof content.content === "string") {
                           items1.push(content.content);
                         } else if (null != content.content) {
-                          outer1_0(content.content, items1);
+                          closure_1_0(content.content, items1);
                         }
                       }
                       return items;
@@ -917,7 +919,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                   } else if (typeof content.content === "string") {
                     items1.push(content.content);
                   } else if (null != content.content) {
-                    outer1_0(content.content, items1);
+                    closure_1_0(content.content, items1);
                   }
                 }
                 return items;
@@ -963,7 +965,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                         } else if (typeof content.content === "string") {
                           items1.push(content.content);
                         } else if (null != content.content) {
-                          outer1_0(content.content, items1);
+                          closure_1_0(content.content, items1);
                         }
                       }
                       return items;
@@ -1002,7 +1004,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                           } else if (typeof content.content === "string") {
                             items1.push(content.content);
                           } else if (null != content.content) {
-                            outer1_0(content.content, items1);
+                            closure_1_0(content.content, items1);
                           }
                         }
                         return items;
@@ -1010,7 +1012,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                     } else if (typeof content.content === "string") {
                       items1.push(content.content);
                     } else if (null != content.content) {
-                      outer1_0(content.content, items1);
+                      closure_1_0(content.content, items1);
                     }
                   }
                   return items;
@@ -1018,7 +1020,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
               } else if (typeof content.content === "string") {
                 items1.push(content.content);
               } else if (null != content.content) {
-                outer1_0(content.content, items1);
+                closure_1_0(content.content, items1);
               }
             }
             return items;
@@ -1026,7 +1028,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
         } else if (typeof content.content === "string") {
           items1.push(content.content);
         } else if (null != content.content) {
-          outer1_0(content.content, items1);
+          closure_1_0(content.content, items1);
         }
       }
       return items;
@@ -1082,7 +1084,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                       } else if (typeof content.content === "string") {
                         items1.push(content.content);
                       } else if (null != content.content) {
-                        outer1_0(content.content, items1);
+                        closure_1_0(content.content, items1);
                       }
                     }
                     return items;
@@ -1121,7 +1123,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                         } else if (typeof content.content === "string") {
                           items1.push(content.content);
                         } else if (null != content.content) {
-                          outer1_0(content.content, items1);
+                          closure_1_0(content.content, items1);
                         }
                       }
                       return items;
@@ -1129,7 +1131,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                   } else if (typeof content.content === "string") {
                     items1.push(content.content);
                   } else if (null != content.content) {
-                    outer1_0(content.content, items1);
+                    closure_1_0(content.content, items1);
                   }
                 }
                 return items;
@@ -1175,7 +1177,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                         } else if (typeof content.content === "string") {
                           items1.push(content.content);
                         } else if (null != content.content) {
-                          outer1_0(content.content, items1);
+                          closure_1_0(content.content, items1);
                         }
                       }
                       return items;
@@ -1214,7 +1216,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                           } else if (typeof content.content === "string") {
                             items1.push(content.content);
                           } else if (null != content.content) {
-                            outer1_0(content.content, items1);
+                            closure_1_0(content.content, items1);
                           }
                         }
                         return items;
@@ -1222,7 +1224,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                     } else if (typeof content.content === "string") {
                       items1.push(content.content);
                     } else if (null != content.content) {
-                      outer1_0(content.content, items1);
+                      closure_1_0(content.content, items1);
                     }
                   }
                   return items;
@@ -1230,7 +1232,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
               } else if (typeof content.content === "string") {
                 items1.push(content.content);
               } else if (null != content.content) {
-                outer1_0(content.content, items1);
+                closure_1_0(content.content, items1);
               }
             }
             return items;
@@ -1283,7 +1285,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                         } else if (typeof content.content === "string") {
                           items1.push(content.content);
                         } else if (null != content.content) {
-                          outer1_0(content.content, items1);
+                          closure_1_0(content.content, items1);
                         }
                       }
                       return items;
@@ -1322,7 +1324,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                           } else if (typeof content.content === "string") {
                             items1.push(content.content);
                           } else if (null != content.content) {
-                            outer1_0(content.content, items1);
+                            closure_1_0(content.content, items1);
                           }
                         }
                         return items;
@@ -1330,7 +1332,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                     } else if (typeof content.content === "string") {
                       items1.push(content.content);
                     } else if (null != content.content) {
-                      outer1_0(content.content, items1);
+                      closure_1_0(content.content, items1);
                     }
                   }
                   return items;
@@ -1376,7 +1378,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                           } else if (typeof content.content === "string") {
                             items1.push(content.content);
                           } else if (null != content.content) {
-                            outer1_0(content.content, items1);
+                            closure_1_0(content.content, items1);
                           }
                         }
                         return items;
@@ -1415,7 +1417,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                             } else if (typeof content.content === "string") {
                               items1.push(content.content);
                             } else if (null != content.content) {
-                              outer1_0(content.content, items1);
+                              closure_1_0(content.content, items1);
                             }
                           }
                           return items;
@@ -1423,7 +1425,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                       } else if (typeof content.content === "string") {
                         items1.push(content.content);
                       } else if (null != content.content) {
-                        outer1_0(content.content, items1);
+                        closure_1_0(content.content, items1);
                       }
                     }
                     return items;
@@ -1431,7 +1433,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
                 } else if (typeof content.content === "string") {
                   items1.push(content.content);
                 } else if (null != content.content) {
-                  outer1_0(content.content, items1);
+                  closure_1_0(content.content, items1);
                 }
               }
               return items;
@@ -1439,7 +1441,7 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
           } else if (typeof content.content === "string") {
             items1.push(content.content);
           } else if (null != content.content) {
-            outer1_0(content.content, items1);
+            closure_1_0(content.content, items1);
           }
         }
         return items;
@@ -1455,9 +1457,9 @@ export const astToString = function astToString(applicationSubscriptionSystemMes
 export { flattenAst };
 export { constrainAst };
 export const getIndexedAST = function getIndexedAST(arr) {
-  let closure_0 = arr;
-  let closure_1 = arg1;
-  let c2 = 0;
+  closure_0 = arr;
+  closure_1 = arg1;
+  c2 = 0;
   return arr.map((type) => {
     let num = 0;
     if (0 !== c2) {

@@ -1,21 +1,25 @@
-// Module ID: 15576
-// Function ID: 15577
+// Module ID: 15641
+// Function ID: 15642
 // Name: HomeDrawerFavoritesRowExpandedChildren
-// Dependencies: [19, 21, 15569, 4734, 1236, 2]
+// Dependencies: [19, 21, 15634, 4739, 1236, 2]
 // Exports: HomeDrawerFavoritesRowExpandedChildren
 
-// Module 15576 (HomeDrawerFavoritesRowExpandedChildren)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15641 (HomeDrawerFavoritesRowExpandedChildren)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import HomeDrawerSharedItem from "HomeDrawerSharedItem" /* 15634 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("HomeDrawerSharedItem").fileFinishedImporting("modules/home_drawer/native/HomeDrawerFavoritesRow.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/home_drawer/native/HomeDrawerFavoritesRow.tsx");
 
 export const HomeDrawerFavoritesRowExpandedChildren = function HomeDrawerFavoritesRowExpandedChildren() {
   let obj = { title: null, subtitle: null };
   obj = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.wMWyci);
-  obj[0] = jsx(require(4734) /* Text */.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
-  return jsx(require(15569) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
+  const intl = getSystemLocale.intl;
+  obj[3] = intl.string(getSystemLocale.t.wMWyci);
+  obj[0] = jsx(Text.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
+  return jsx(HomeDrawerSharedItem.HomeDrawerSharedItem, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
 };

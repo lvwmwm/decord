@@ -1,67 +1,68 @@
-// Module ID: 12823
-// Function ID: 12824
+// Module ID: 12878
+// Function ID: 12879
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 4978, 676, 21, 4661, 712, 4342, 9647, 8081, 1297, 1236, 4734, 4745, 8062, 2]
+// Dependencies: [19, 17, 4983, 676, 21, 4668, 712, 4346, 9686, 8120, 1297, 1236, 4739, 4750, 8101, 2]
 // Exports: default
 
-// Module 12823 (EndStageActionSheet)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "MAX_STAGE_TOPIC_LENGTH";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12878 (EndStageActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 8120 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "MAX_STAGE_TOPIC_LENGTH" /* 4983 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: { paddingVertical: 24, paddingHorizontal: 16, alignItems: "center" }, title: null, subtitle: null, cancelButton: null, confirmButton: null };
-createCacheKey = { fontSize: 24, fontFamily: require("ME").Fonts.PRIMARY_BOLD, textAlign: "center", color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey = { fontSize: 24, fontFamily: require("ME").Fonts.PRIMARY_BOLD, textAlign: "center", color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { marginTop: 8, textAlign: "center" };
 createCacheKey[3] = { marginTop: 24, alignSelf: "stretch" };
 createCacheKey[4] = { marginTop: 8, alignSelf: "stretch" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("MAX_STAGE_TOPIC_LENGTH").fileFinishedImporting("modules/stage_channels/native/components/EndStageActionSheet.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/components/EndStageActionSheet.tsx");
 
 export default function EndStageActionSheet(channel) {
   channel = channel.channel;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { children: null };
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", children: null };
   const intl = channel(1236).intl;
   obj[2] = intl.string(channel(1236).t.pADdJu);
   const items = [callback(channel(1297).LegacyText, obj), , , ];
-  const obj1 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: null };
+  obj1 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = channel(1236).intl;
   obj1[3] = intl2.string(channel(1236).t.mT7jwN);
-  items[1] = callback(channel(4734).Text, obj1);
+  items[1] = callback(channel(4739).Text, obj1);
   let obj2 = { style: tmp.cancelButton, children: null };
   const obj3 = { variant: "secondary", text: null, onPress: null };
   const intl3 = channel(1236).intl;
   obj3[1] = intl3.string(channel(1236).t.xTwqz2);
   obj3[2] = function handleClose() {
-    outer1_1(outer1_2[7]).hideActionSheet(outer1_4);
-    const obj = outer1_1(outer1_2[7]);
-    channel(outer1_2[8]).handleDisconnect(channel);
+    closure_1_1(closure_1_2[7]).hideActionSheet(closure_1_4);
+    const obj = closure_1_1(closure_1_2[7]);
+    channel(closure_1_2[8]).handleDisconnect(channel);
   };
-  obj2[1] = callback(channel(4745).Button, obj3);
+  obj2[1] = callback(channel(4750).Button, obj3);
   items[2] = callback(View, obj2);
   const obj4 = { style: tmp.confirmButton, children: null };
   const obj5 = { variant: "destructive", text: null, onPress: null };
   const intl4 = channel(1236).intl;
   obj5[1] = intl4.string(channel(1236).t.wnWqGg);
   obj5[2] = function onPress() {
-    channel(outer1_2[14]).endStage(channel);
-    const obj = channel(outer1_2[14]);
-    outer1_1(outer1_2[7]).hideActionSheet(outer1_4);
-    const obj2 = outer1_1(outer1_2[7]);
-    channel(outer1_2[8]).handleDisconnect(channel);
+    channel(closure_1_2[14]).endStage(channel);
+    const obj = channel(closure_1_2[14]);
+    closure_1_1(closure_1_2[7]).hideActionSheet(closure_1_4);
+    const obj2 = closure_1_1(closure_1_2[7]);
+    channel(closure_1_2[8]).handleDisconnect(channel);
   };
-  obj4[1] = callback(channel(4745).Button, obj5);
+  obj4[1] = callback(channel(4750).Button, obj5);
   items[3] = callback(View, obj4);
   obj[1] = items;
   obj[0] = callback2(View, obj);
-  return callback(importDefault(8081), obj);
+  return callback(ScrollHandlingActionSheetDefault, obj);
 };

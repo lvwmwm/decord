@@ -1,13 +1,17 @@
-// Module ID: 16496
-// Function ID: 16497
+// Module ID: 16591
+// Function ID: 16592
 // Name: trackHttpRequest
-// Dependencies: [676, 16497, 16498, 698, 2]
+// Dependencies: [676, 16592, 16593, 698, 2]
 // Exports: default
 
-// Module 16496 (trackHttpRequest)
-import { AnalyticEvents } from "ME";
+// Module 16591 (trackHttpRequest)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import trackZoomedInHttpRequestDefault from "trackZoomedInHttpRequest" /* 16593 */;
 
-const result = require("trackZoomedInHttpRequest").fileFinishedImporting("modules/telemetry_ring/trackHttpRequest.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/telemetry_ring/trackHttpRequest.tsx");
 
 export default function trackHttpRequest(url) {
   let obj = {};
@@ -18,13 +22,13 @@ export default function trackHttpRequest(url) {
     const str2 = str.split(/[?#]/)[0];
   }
   obj.url = replaced;
-  importDefault(16498)(obj);
+  trackZoomedInHttpRequestDefault(obj);
   const random = Math.random();
   if (random < obj2.getHttpRequestSampleRate()) {
     obj = {};
     const merged1 = Object.assign(obj);
     obj.source = "sample";
-    importDefault(698).track(AnalyticEvents.HTTP_REQUEST, obj);
-    const tmp3Result = importDefault(698);
+    expandEventPropertiesDefault.track(AnalyticEvents.HTTP_REQUEST, obj);
+    const tmp3Result = expandEventPropertiesDefault;
   }
 };

@@ -4,10 +4,15 @@
 // Dependencies: [1414, 1412, 574, 546]
 
 // Module 1413 (isGeneratorFunction)
-let closure_3 = require("regexTester")(/^\s*(?:function)?\*/);
-let closure_4 = require("hasToStringTagShams")();
-let closure_5 = require("callBoundIntrinsic")("Object.prototype.toString");
-let closure_6 = require("callBoundIntrinsic")("Function.prototype.toString");
+import getProto from "getProto" /* 546 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 574 */;
+import hasToStringTagShams from "hasToStringTagShams" /* 1412 */;
+import regexTester from "regexTester" /* 1414 */;
+
+let closure_3 = regexTester(/^\s*(?:function)?\*/);
+let closure_4 = hasToStringTagShams();
+let closure_5 = callBoundIntrinsic("Object.prototype.toString");
+let closure_6 = callBoundIntrinsic("Function.prototype.toString");
 
 export default function isGeneratorFunction(fn) {
   if (typeof fn !== "function") {
@@ -15,7 +20,7 @@ export default function isGeneratorFunction(fn) {
   } else if (callback(callback3(fn))) {
     return true;
   } else if (closure_4) {
-    if (require(546) /* getProto */) {
+    if (getProto) {
       if (undefined === closure_2) {
         const tmp6 = (() => {
           if (closure_4) {

@@ -1,52 +1,46 @@
-// Module ID: 8028
-// Function ID: 8029
+// Module ID: 8067
+// Function ID: 8068
 // Name: BuyNitroGradient
-// Dependencies: [19, 1924, 21, 4115, 4756, 4664, 4667, 2]
+// Dependencies: [19, 1924, 21, 4119, 4761, 4671, 4674, 2]
 // Exports: default
 
-// Module 8028 (BuyNitroGradient)
-import "noop";
-import { PremiumTypes } from "GuildFeatures";
-import jsxProd from "jsxProd";
-import LinearGradient from "LinearGradient";
-import importDefaultResult from "module_4115";
+// Module 8067 (BuyNitroGradient)
+import noopAll from "noop" /* 19 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import jsxProd from "jsxProd" /* 21 */;
+import importDefaultResult from "module_4119" /* 4119 */;
 
-let c4;
-let c5;
-let closure_6;
 const require = arg1;
+noopAll;
 ({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = importDefaultResult.createAnimatedComponent(LinearGradientDefault);
 let closure_8 = { code: "function BuyNitroGradientTsx1(){const{withTiming,selectedTier,PremiumTypes,timingStandard}=this.__closure;return{opacity:withTiming(selectedTier===PremiumTypes.TIER_0?1:0,timingStandard)};}" };
-const result = require("jsxProd").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroGradient.tsx");
+const result = require("set").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroGradient.tsx");
 
 export default function BuyNitroGradient(selectedTier) {
-  let basicColors;
-  let end;
-  let nitroColors;
-  let start;
-  let style;
   selectedTier = selectedTier.selectedTier;
   ({ start, end, style } = selectedTier);
   ({ nitroColors, basicColors } = selectedTier);
-  let obj = selectedTier(4115);
+  let obj = selectedTier(4119);
   const fn = function f() {
-    let obj = selectedTier(outer1_2[5]);
+    let obj = selectedTier(closure_1_2[5]);
     let num = 0;
-    if (selectedTier === outer1_3.TIER_0) {
+    if (selectedTier === closure_1_3.TIER_0) {
       num = 1;
     }
-    obj = { opacity: obj.withTiming(num, selectedTier(outer1_2[6]).timingStandard) };
+    obj = { opacity: obj.withTiming(num, selectedTier(closure_1_2[6]).timingStandard) };
     return obj;
   };
-  obj = { withTiming: selectedTier(4664).withTiming, selectedTier, PremiumTypes, timingStandard: selectedTier(4667).timingStandard };
+  obj = { withTiming: selectedTier(4671).withTiming, selectedTier, PremiumTypes, timingStandard: selectedTier(4674).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 14014615431537;
   fn.__initData = closure_8;
   obj = { children: null };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const items = [callback(importDefault(4756), { style, colors: nitroColors, start, end }), ];
+  const items = [callback(LinearGradientDefault, { style, colors: nitroColors, start, end }), ];
   const items1 = [style, animatedStyle];
-  items[1] = callback(LinearGradient, { style: items1, colors: basicColors, start, end });
+  items[1] = callback(closure_7, { style: items1, colors: basicColors, start, end });
   obj[0] = items;
   return callback2(closure_5, obj);
 };

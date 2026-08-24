@@ -1,21 +1,24 @@
-// Module ID: 5279
-// Function ID: 5280
+// Module ID: 5284
+// Function ID: 5285
 // Name: getFlattenedChannelList
 // Dependencies: [12, 2]
 // Exports: default
 
-// Module 5279 (getFlattenedChannelList)
-const result = require("set").fileFinishedImporting("modules/channel/getFlattedChannelList.tsx");
+// Module 5284 (getFlattenedChannelList)
+import set from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+
+const result = set.fileFinishedImporting("modules/channel/getFlattedChannelList.tsx");
 
 export default function getFlattenedChannelList(arg0, arg1) {
-  const importDefault = arg1;
+  importDefault = arg1;
   let fn = arg2;
   if (arg2 === undefined) {
     fn = function l() {
       return true;
     };
   }
-  const mapped = importDefault(12)(arg0).map((channel) => {
+  const mapped = applyDefault(arg0).map((channel) => {
     if ("null" === channel.channel.id) {
       let items = dependencyMap[channel.channel.id];
     } else {
@@ -23,7 +26,7 @@ export default function getFlattenedChannelList(arg0, arg1) {
     }
     return items;
   });
-  const arr = importDefault(12)(arg0);
+  const arr = applyDefault(arg0);
   const flattenDeepResult = mapped.flattenDeep();
   return mapped.flattenDeep().filter(fn).value();
 };

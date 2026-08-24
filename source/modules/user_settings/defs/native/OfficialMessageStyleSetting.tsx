@@ -1,21 +1,24 @@
-// Module ID: 14679
-// Function ID: 14680
+// Module ID: 14747
+// Function ID: 14748
 // Name: useOfficialMessageStyleSettingValue
-// Dependencies: [19, 4662, 8198, 589, 13813, 1236, 10669, 2]
+// Dependencies: [19, 4669, 8238, 589, 13871, 1236, 10708, 2]
 // Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 14679 (useOfficialMessageStyleSettingValue)
-import noop from "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import createToggle from "createToggle";
+// Module 14747 (useOfficialMessageStyleSettingValue)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import setFontSize from "setFontSize" /* 13871 */;
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 function useOfficialMessageStyleSettingValue() {
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
-  return require(589) /* initialize */.useStateFromStores(items, () => officialMessageStyle.officialMessageStyle);
+  const items = [closure_3];
+  return initialize.useStateFromStores(items, () => officialMessageStyle.officialMessageStyle);
 }
 function onOfficialMessageStyleSettingValueChange(officialMessageStyle) {
-  const result = require(13813) /* setFontSize */.setOfficialMessageStyle(officialMessageStyle);
+  const result = setFontSize.setOfficialMessageStyle(officialMessageStyle);
 }
 function useOfficialMessageStyleSettingOptions() {
   return React.useMemo(() => {
@@ -31,7 +34,7 @@ function useOfficialMessageStyleSettingOptions() {
     const intl3 = callback(1236).intl;
     obj[0] = intl3.string(callback(1236).t.O2vBoY);
     items[2] = obj;
-    const obj1 = { label: null, value: "hidden" };
+    obj1 = { label: null, value: "hidden" };
     const intl4 = callback(1236).intl;
     obj1[0] = intl4.string(callback(1236).t["+loyQl"]);
     items[3] = obj1;
@@ -40,8 +43,8 @@ function useOfficialMessageStyleSettingOptions() {
 }
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.nC2XBl);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.nC2XBl);
   },
   parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
   useValue: useOfficialMessageStyleSettingValue,
@@ -49,7 +52,7 @@ createToggle = {
   useOptions: useOfficialMessageStyleSettingOptions
 };
 createToggle = createToggle.createRadio(createToggle);
-let result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/OfficialMessageStyleSetting.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/OfficialMessageStyleSetting.tsx");
 
 export default createToggle;
 export { useOfficialMessageStyleSettingValue };

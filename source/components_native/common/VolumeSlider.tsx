@@ -1,21 +1,25 @@
-// Module ID: 12139
-// Function ID: 12140
+// Module ID: 12191
+// Function ID: 12192
 // Name: VolumeSlider
-// Dependencies: [19, 17, 4529, 21, 500, 4661, 712, 4097, 12140, 8105, 4782, 1236, 6896, 2]
+// Dependencies: [19, 17, 4534, 21, 500, 4668, 712, 4100, 12192, 8144, 4787, 1236, 6934, 2]
 // Exports: default
 
-// Module 12139 (VolumeSlider)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources";
-import jsxProd from "jsxProd";
-import set from "set";
-import createCacheKey from "createCacheKey";
-import set from "DesktopSources";
+// Module 12191 (VolumeSlider)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import map from "map" /* 4100 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 6934 */;
+import _getRequireWildcardCacheDefault from "_getRequireWildcardCache" /* 8144 */;
+import VoiceXIcon from "VoiceXIcon" /* 12192 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources" /* 4534 */;
+import jsxProd from "jsxProd" /* 21 */;
+import set from "set" /* 500 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let num = 16;
 if (set.isAndroid()) {
@@ -25,13 +29,9 @@ let closure_7 = createCacheKey.createStyles({ volumerSlider: { flexDirection: "r
 const result = set.fileFinishedImporting("components_native/common/VolumeSlider.tsx");
 
 export default function VolumeSlider(maxTrackTintColor) {
-  let maxVolume;
-  let onResponderGrant;
-  let require;
-  let value;
   let PRIMARY_400 = maxTrackTintColor.maxTrackTintColor;
   if (PRIMARY_400 === undefined) {
-    PRIMARY_400 = importDefault(712).unsafe_rawColors.PRIMARY_400;
+    PRIMARY_400 = ThemesDefault.unsafe_rawColors.PRIMARY_400;
   }
   ({ maxVolume, value } = maxTrackTintColor);
   if (maxVolume === undefined) {
@@ -40,25 +40,25 @@ export default function VolumeSlider(maxTrackTintColor) {
   ({ onValueChange: require, onResponderGrant } = maxTrackTintColor);
   const merged = Object.assign(maxTrackTintColor, Object.create(null));
   const tmp4 = callback2();
-  let obj = require(4097) /* map */;
+  let obj = map;
   let minTrackColor = merged.minTrackColor;
   if (minTrackColor == null) {
-    minTrackColor = obj.useToken(importDefault(712).colors.BACKGROUND_BRAND);
+    minTrackColor = obj.useToken(ThemesDefault.colors.BACKGROUND_BRAND);
   }
   obj = { style: items, children: null };
   items = [tmp4.volumerSlider, maxTrackTintColor.style];
   obj = { style: tmp4.leftIcon };
-  const items1 = [callback(require(12140) /* VoiceXIcon */.VoiceXIcon, obj), , ];
-  const obj1 = { style: tmp4.volumerSliderNative, value: null, minimumValue: 0, maximumValue: null, minimumTrackTintColor: null, maximumTrackTintColor: null, accessibilityLabel: null, onValueChange: null, onResponderGrant: null };
-  let tmp5Result = tmp5(4782);
+  const items1 = [callback(VoiceXIcon.VoiceXIcon, obj), , ];
+  obj1 = { style: tmp4.volumerSliderNative, value: null, minimumValue: 0, maximumValue: null, minimumTrackTintColor: null, maximumTrackTintColor: null, accessibilityLabel: null, onValueChange: null, onResponderGrant: null };
+  let tmp5Result = tmp5(4787);
   obj1[1] = tmp5Result.amplitudeToPerceptual(value);
   obj1[3] = maxVolume;
   obj1[4] = minTrackColor;
   obj1[5] = PRIMARY_400;
   const intl = tmp5(1236).intl;
-  obj1[6] = intl.string(require(1236) /* getSystemLocale */.t.xPHVBs);
+  obj1[6] = intl.string(getSystemLocale.t.xPHVBs);
   obj1[7] = function onValueChange(arg0) {
-    return callback(outer1_0(outer1_2[10]).perceptualToAmplitude(arg0));
+    return callback(closure_1_0(closure_1_2[10]).perceptualToAmplitude(arg0));
   };
   if (onResponderGrant == null) {
     tmp5Result = tmp5(500);
@@ -69,8 +69,8 @@ export default function VolumeSlider(maxTrackTintColor) {
     onResponderGrant = fn;
   }
   obj1[8] = onResponderGrant;
-  items1[1] = callback(importDefault(8105), obj1);
-  items1[2] = callback(require(6896) /* VoiceNormalIcon */.VoiceNormalIcon, { style: tmp4.rightIcon });
+  items1[1] = callback(_getRequireWildcardCacheDefault, obj1);
+  items1[2] = callback(VoiceNormalIcon.VoiceNormalIcon, { style: tmp4.rightIcon });
   obj[1] = items1;
   return closure_6(View, obj);
 };

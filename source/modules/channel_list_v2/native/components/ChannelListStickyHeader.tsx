@@ -1,32 +1,33 @@
-// Module ID: 15397
-// Function ID: 15398
+// Module ID: 15461
+// Function ID: 15462
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 676, 21, 4115, 4661, 712, 1367, 15367, 1913, 1236, 15398, 13367, 15396, 6295, 4097, 9410, 4734, 9152, 1297, 6685, 15411, 11464, 15416, 15417, 2]
+// Dependencies: [19, 17, 676, 21, 4119, 4668, 712, 1367, 15431, 1913, 1236, 15462, 13425, 15460, 6326, 4100, 9447, 4739, 9189, 1297, 6721, 15475, 11513, 15480, 15481, 2]
 // Exports: default
 
-// Module 15397 (ChannelListStickyHeader)
-import Button from "Button";
-import get_ActivityIndicator from "Text";
-import { JoinGuildSources } from "ME";
-import jsxProd from "FavoritesGuildHeaderActionButton";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4115";
+// Module 15461 (ChannelListStickyHeader)
+import ThemesDefault from "Themes" /* 712 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import GuildBadgeV2Default from "GuildBadgeV2" /* 9189 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 15431 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 15460 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { JoinGuildSources } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "module_4119" /* 4119 */;
 
-let Pressable;
-let c4;
-let closure_6;
-let error;
 const require = arg1;
 ({ View: c4, Pressable } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
-let closure_8 = require("module_4115").createAnimatedComponent(Pressable);
+let closure_8 = importDefaultResult.createAnimatedComponent(Pressable);
 let closure_9 = createCacheKey.createStyles((arg0) => {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
   let obj = { chevron: { flexShrink: 0, flexGrow: 0 }, container: null, divider: null, guildBadge: null, flex: null, header: null, headerRow: null, headerRowTitle: null, headerRowInset: null, headerIcon: null, subheader: null, ellipse: null, joinButton: null };
-  obj = { gap: importDefault(712).space.PX_8, paddingTop: importDefault(712).space.PX_16, paddingBottom: null };
+  obj = { gap: ThemesDefault.space.PX_8, paddingTop: ThemesDefault.space.PX_16, paddingBottom: null };
   if (flag) {
     let num = 0;
     if (!arg0) {
@@ -46,33 +47,30 @@ let closure_9 = createCacheKey.createStyles((arg0) => {
   const merged = Object.assign(obj);
   obj.zIndex = 1;
   obj[1] = obj;
-  obj[2] = { height: 1, backgroundColor: importDefault(712).colors.BORDER_SUBTLE, marginHorizontal: importDefault(712).space.PX_16 };
+  obj[2] = { height: 1, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, marginHorizontal: ThemesDefault.space.PX_16 };
   obj[3] = { margin: 0 };
   obj[4] = { flexShrink: 1 };
-  const obj1 = { height: 1, backgroundColor: importDefault(712).colors.BORDER_SUBTLE, marginHorizontal: importDefault(712).space.PX_16 };
-  obj[5] = { alignItems: "center", flexDirection: "row", gap: importDefault(712).space.PX_4, paddingHorizontal: importDefault(712).space.PX_16 };
-  const obj2 = { alignItems: "center", flexDirection: "row", gap: importDefault(712).space.PX_4, paddingHorizontal: importDefault(712).space.PX_16 };
-  obj[6] = { alignItems: "center", flexDirection: "row", gap: importDefault(712).space.PX_8 };
+  obj1 = { height: 1, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, marginHorizontal: ThemesDefault.space.PX_16 };
+  obj[5] = { alignItems: "center", flexDirection: "row", gap: ThemesDefault.space.PX_4, paddingHorizontal: ThemesDefault.space.PX_16 };
+  const obj2 = { alignItems: "center", flexDirection: "row", gap: ThemesDefault.space.PX_4, paddingHorizontal: ThemesDefault.space.PX_16 };
+  obj[6] = { alignItems: "center", flexDirection: "row", gap: ThemesDefault.space.PX_8 };
   obj[7] = { flexGrow: 1, flexShrink: 1 };
-  const obj3 = { alignItems: "center", flexDirection: "row", gap: importDefault(712).space.PX_8 };
-  obj[8] = { paddingEnd: importDefault(712).space.PX_16 };
-  const obj4 = { paddingEnd: importDefault(712).space.PX_16 };
-  obj[9] = { marginRight: importDefault(712).space.PX_4 };
-  const obj5 = { marginRight: importDefault(712).space.PX_4 };
-  obj[10] = { flexDirection: "row", alignItems: "center", paddingHorizontal: importDefault(712).space.PX_16, gap: importDefault(712).space.PX_8 };
+  const obj3 = { alignItems: "center", flexDirection: "row", gap: ThemesDefault.space.PX_8 };
+  obj[8] = { paddingEnd: ThemesDefault.space.PX_16 };
+  const obj4 = { paddingEnd: ThemesDefault.space.PX_16 };
+  obj[9] = { marginRight: ThemesDefault.space.PX_4 };
+  const obj5 = { marginRight: ThemesDefault.space.PX_4 };
+  obj[10] = { flexDirection: "row", alignItems: "center", paddingHorizontal: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8 };
   const colors = tmp(712).colors;
-  const obj6 = { flexDirection: "row", alignItems: "center", paddingHorizontal: importDefault(712).space.PX_16, gap: importDefault(712).space.PX_8 };
-  obj[11] = { width: 4, height: 4, backgroundColor: arg0 ? colors.TEXT_SUBTLE : colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(712).radii.round };
-  const obj7 = { width: 4, height: 4, backgroundColor: arg0 ? colors.TEXT_SUBTLE : colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(712).radii.round };
-  obj[12] = { marginHorizontal: importDefault(712).space.PX_16, marginBottom: importDefault(712).space.PX_8 };
+  const obj6 = { flexDirection: "row", alignItems: "center", paddingHorizontal: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8 };
+  obj[11] = { width: 4, height: 4, backgroundColor: arg0 ? colors.TEXT_SUBTLE : colors.BACKGROUND_MOD_STRONG, borderRadius: ThemesDefault.radii.round };
+  const obj7 = { width: 4, height: 4, backgroundColor: arg0 ? colors.TEXT_SUBTLE : colors.BACKGROUND_MOD_STRONG, borderRadius: ThemesDefault.radii.round };
+  obj[12] = { marginHorizontal: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_8 };
   return obj;
 });
-const result = require("ME").fileFinishedImporting("modules/channel_list_v2/native/components/ChannelListStickyHeader.tsx");
+const result = require("set").fileFinishedImporting("modules/channel_list_v2/native/components/ChannelListStickyHeader.tsx");
 
 export default function ChannelListStickyHeader(guild) {
-  let onPressIn;
-  let onPressOut;
-  let pressableStyles;
   guild = guild.guild;
   let flag = guild.showExtraButtons;
   if (flag === undefined) {
@@ -86,13 +84,13 @@ export default function ChannelListStickyHeader(guild) {
   if (flag3 === undefined) {
     flag3 = false;
   }
-  let importDefault;
-  const tmp3 = importDefault(1367)("ChannelListStickyHeader");
+  importDefault = undefined;
+  const tmp3 = useIsMobileVisualRefreshExperimentEnabledDefault("ChannelListStickyHeader");
   const tmp4 = callback2(tmp3, flag);
-  let tmp25Result2 = importDefault(15367)(guild.id);
+  let tmp25Result2 = useIsGameCommunityServerPreviewDefault(guild.id);
   let obj = React;
   const ref = React.useRef(null);
-  let obj1 = guild(1913);
+  obj1 = guild(1913);
   const isFavoritesGuildIdResult = obj1.isFavoritesGuildId(guild.id);
   importDefault = isFavoritesGuildIdResult;
   if (!flag2) {
@@ -107,16 +105,16 @@ export default function ChannelListStickyHeader(guild) {
       tmp(tmp2[12])(guild);
     }
   }, items);
-  const tmp11 = importDefault(15396)(guild);
-  let tmp7Result = tmp7(6295);
+  const tmp11 = useStickyServerHeaderSubtitleDefault(guild);
+  let tmp7Result = tmp7(6326);
   const iOSPressEffects = tmp7Result.useIOSPressEffects(4);
   ({ onPressIn, onPressOut, pressableStyles } = iOSPressEffects);
   tmp7Result = tmp7(1913);
   const favoritesAwareGuildName = tmp7Result.getFavoritesAwareGuildName(guild);
-  const token = guild(4097).useToken(tmp(712).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
-  const tmp7Result1 = guild(4097);
+  const token = guild(4100).useToken(tmp(712).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
+  const tmp7Result1 = guild(4100);
   const tmp9 = isFavoritesGuildIdResult ? t.hW8QDk : t["Gpyp/e"];
-  const token1 = guild(4097).useToken(tmp(712).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
+  const token1 = guild(4100).useToken(tmp(712).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   obj = { style: items1, onPress: null, onPressIn: null, onPressOut: null, accessible: true, accessibilityRole: null, accessibilityHint: null, children: null };
   items1 = [pressableStyles, tmp4.headerRowTitle];
   let tmp18;
@@ -151,23 +149,23 @@ export default function ChannelListStickyHeader(guild) {
     obj1 = { style: null, size: "sm", color: null };
     obj1[0] = tmp4.headerIcon;
     obj1[2] = tmp(712).colors.MOBILE_TEXT_HEADING_PRIMARY;
-    tmp23 = callback(tmp7(9410).StarIcon, obj1);
+    tmp23 = callback(tmp7(9447).StarIcon, obj1);
   }
   const items2 = [tmp23, , , ];
   const tmp17 = closure_8;
-  const tmp7Result2 = guild(4097);
-  items2[1] = callback(closure_4, { ref, collapsable: false, style: tmp4.flex, children: callback(guild(4734).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) });
+  const tmp7Result2 = guild(4100);
+  items2[1] = callback(closure_4, { ref, collapsable: false, style: tmp4.flex, children: callback(guild(4739).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) });
   const obj3 = { guild, size: null, style: null };
-  const obj2 = { ref, collapsable: false, style: tmp4.flex, children: callback(guild(4734).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) };
+  const obj2 = { ref, collapsable: false, style: tmp4.flex, children: callback(guild(4739).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) };
   obj3[1] = guild(1297).Icon.Sizes.REFRESH_SMALL_16;
   obj3[2] = tmp4.guildBadge;
-  items2[2] = callback(importDefault(9152), obj3);
+  items2[2] = callback(GuildBadgeV2Default, obj3);
   let tmp25Result = null;
   if (flag2) {
     const obj4 = { size: "xxs", color: null, style: null };
     obj4[1] = tmp(712).colors.TEXT_SUBTLE;
     obj4[2] = tmp4.chevron;
-    tmp25Result = tmp25(tmp7(6685).ChevronSmallRightIcon, obj4);
+    tmp25Result = tmp25(tmp7(6721).ChevronSmallRightIcon, obj4);
   }
   items2[3] = tmp25Result;
   obj[1] = items2;
@@ -184,7 +182,7 @@ export default function ChannelListStickyHeader(guild) {
       const obj7 = { count: null };
       obj7[0] = tmp11;
       obj6[4] = intl2.format(tmp7(1236).t.zRl6XR, obj7);
-      const items4 = [tmp25(tmp7(4734).Text, obj6), , ];
+      const items4 = [tmp25(tmp7(4739).Text, obj6), , ];
       const obj8 = { style: null };
       obj8[0] = tmp4.ellipse;
       items4[1] = tmp25(tmp22, obj8);
@@ -192,7 +190,7 @@ export default function ChannelListStickyHeader(guild) {
       obj9[2] = token1;
       const intl3 = tmp7(1236).intl;
       obj9[4] = intl3.string(tmp7(1236).t["1g9A/f"]);
-      items4[2] = tmp25(tmp7(4734).Text, obj9);
+      items4[2] = tmp25(tmp7(4739).Text, obj9);
       obj5[1] = items4;
       tmp16Result = tmp16(tmp22, obj5);
     }
@@ -211,7 +209,7 @@ export default function ChannelListStickyHeader(guild) {
   const items6 = [tmp16Result, ];
   tmp25Result = null;
   if (isFavoritesGuildIdResult) {
-    tmp25Result = tmp25(tmp7(15411).FavoritesGuildHeaderActionButton, {});
+    tmp25Result = tmp25(tmp7(15475).FavoritesGuildHeaderActionButton, {});
   }
   items6[1] = tmp25Result;
   obj11[1] = items6;
@@ -220,7 +218,7 @@ export default function ChannelListStickyHeader(guild) {
   if (flag) {
     const obj12 = { guild: null, useButtonComponent: true, useEventsButton: true };
     obj12[0] = guild;
-    tmp25Result1 = tmp25(tmp(11464), obj12);
+    tmp25Result1 = tmp25(tmp(11513), obj12);
   }
   items7[1] = tmp25Result1;
   if (tmp25Result2) {
@@ -229,7 +227,7 @@ export default function ChannelListStickyHeader(guild) {
     const obj14 = { guildId: null, joinSource: null };
     obj14[0] = guild.id;
     obj14[1] = JoinGuildSources.CHANNEL_LIST_STICKY_HEADER_LURKER;
-    obj13[1] = tmp25(tmp(15416), obj14);
+    obj13[1] = tmp25(tmp(15480), obj14);
     tmp25Result2 = tmp25(tmp22, obj13);
   }
   items7[2] = tmp25Result2;
@@ -245,7 +243,7 @@ export default function ChannelListStickyHeader(guild) {
     const obj16 = { targetRef: null, guild: null };
     obj16[0] = ref;
     obj16[1] = guild;
-    tmp25Result4 = tmp25(tmp(15417), obj16);
+    tmp25Result4 = tmp25(tmp(15481), obj16);
   }
   items7[4] = tmp25Result4;
   obj10[1] = items7;

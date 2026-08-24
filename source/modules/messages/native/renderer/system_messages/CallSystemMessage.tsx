@@ -1,18 +1,21 @@
-// Module ID: 8202
-// Function ID: 8203
+// Module ID: 8242
+// Function ID: 8243
 // Name: createCallSystemMessage
-// Dependencies: [4773, 1218, 4542, 676, 4544, 8203, 8204, 1236, 1438, 4063, 8188, 2]
+// Dependencies: [4778, 1218, 4547, 676, 4549, 8243, 8244, 1236, 1438, 4066, 8228, 2]
 // Exports: createCallSystemMessage
 
-// Module 8202 (createCallSystemMessage)
-import getParticipants from "getParticipants";
-import fetchFingerprint from "fetchFingerprint";
-import updateVoiceState from "updateVoiceState";
-import { ME } from "ME";
-import { ParticipantTypes } from "ParticipantTypes";
+// Module 8242 (createCallSystemMessage)
+import createCommonMessageDefault from "createCommonMessage" /* 8228 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8243 */;
+import useIsCallActive from "useIsCallActive" /* 8244 */;
+import closure_3 from "getParticipants" /* 4778 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "updateVoiceState" /* 4547 */;
+import { ME } from "ME" /* 676 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4549 */;
 
-const require = arg1;
-const result = require("updateVoiceState").fileFinishedImporting("modules/messages/native/renderer/system_messages/CallSystemMessage.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/CallSystemMessage.tsx");
 
 export const createCallSystemMessage = function createCallSystemMessage(message) {
   message = message.message;
@@ -20,9 +23,9 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   const channelId = message.getChannelId();
   const call = message.call;
   userVoiceChannelId = userVoiceChannelId.getUserVoiceChannelId(ME, id);
-  const tmp6 = importDefault(8203)(message);
+  const tmp6 = getHumanizedCallDurationDefault(message);
   participants = participants.getParticipants(channelId);
-  let obj = require(8204) /* useIsCallActive */;
+  let obj = useIsCallActive;
   const checkIsCallActiveResult = obj.checkIsCallActive(channelId, message.id);
   let tmp9 = !checkIsCallActiveResult;
   if (!checkIsCallActiveResult) {
@@ -63,11 +66,11 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
       const intl2 = tmp7(1236).intl;
       obj = { duration: null, timestamp: null };
       obj[0] = tmp6;
-      let tmp7Result = tmp7(4063);
+      let tmp7Result = tmp7(4066);
       obj[1] = tmp7Result.calendarFormat(message.timestamp);
       formatToPlainStringResult = intl2.formatToPlainString(tmp7(1236).t.SBDnp1, obj);
     } else {
-      tmp7Result = tmp7(4063);
+      tmp7Result = tmp7(4066);
       formatToPlainStringResult = tmp7Result.calendarFormat(message.timestamp);
     }
     const author = message.author;
@@ -76,6 +79,6 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   }
   obj = { title: stringResult1, description: formatToPlainStringResult, isCallActive: checkIsCallActiveResult, missed: tmp9, avatarURLs: mapped, rawMilliseconds: timestamp.valueOf() };
   timestamp = message.timestamp;
-  const merged = Object.assign(importDefault(8188)(message));
+  const merged = Object.assign(createCommonMessageDefault(message));
   return obj;
 };

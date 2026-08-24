@@ -5,17 +5,19 @@
 // Exports: init
 
 // Module 1136 (init)
-import noop from "noop";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+import feedbackAsyncIntegration from "feedbackAsyncIntegration" /* 1024 */;
+import closure_2 from "noop" /* 19 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const init = function init(arg0) {
   let obj = {};
   const merged = Object.assign(arg0);
-  require(817) /* registerSpanErrorInstrumentation */.applySdkMetadata(obj, "react");
-  const obj2 = require(817) /* registerSpanErrorInstrumentation */;
-  obj = { version: noop.version };
-  require(1024) /* feedbackAsyncIntegration */.setContext("react", obj);
-  const obj3 = require(1024) /* feedbackAsyncIntegration */;
-  return require(1024) /* feedbackAsyncIntegration */.init(obj);
+  registerSpanErrorInstrumentation.applySdkMetadata(obj, "react");
+  const obj2 = registerSpanErrorInstrumentation;
+  obj = { version: version.version };
+  feedbackAsyncIntegration.setContext("react", obj);
+  const obj3 = feedbackAsyncIntegration;
+  return feedbackAsyncIntegration.init(obj);
 };

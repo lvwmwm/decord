@@ -1,25 +1,29 @@
-// Module ID: 4062
-// Function ID: 4063
+// Module ID: 4065
+// Function ID: 4066
 // Name: prototype
 // Dependencies: [676, 530, 1236, 2]
 
-// Module 4062 (prototype)
-import { Links } from "ME";
-import { V6OrEarlierAPIError } from "sendRequest";
+// Module 4065 (prototype)
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
 
+const Links = ME.Links;
+const V6OrEarlierAPIError = sendRequest.V6OrEarlierAPIError;
 const prototype = function APIErrorWithDefaultMessage(arg0, arg1) {
   if (null != arg1) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     let obj = { statusPageURL: null, details: null };
     obj[0] = Links.STATUS;
     const _HermesInternal = HermesInternal;
     obj[1] = "" + arg1;
-    intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.aKRa0Q, obj);
+    intl2.formatToPlainString(getSystemLocale.t.aKRa0Q, obj);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     obj = { statusPageURL: null };
     obj[0] = Links.STATUS;
-    intl.formatToPlainString(require(1236) /* getSystemLocale */.t.aTVNes, obj);
+    intl.formatToPlainString(getSystemLocale.t.aTVNes, obj);
   }
   tmp = new tmp();
   // ThrowIfThisInitialized (0x7c)
@@ -27,6 +31,6 @@ const prototype = function APIErrorWithDefaultMessage(arg0, arg1) {
 }.prototype;
 class prototype extends V6OrEarlierAPIError {
 }
-const result = require("getSystemLocale").fileFinishedImporting("errors/V6OrEarlierAPIError.tsx");
+const result = set.fileFinishedImporting("errors/V6OrEarlierAPIError.tsx");
 
 export default prototype;

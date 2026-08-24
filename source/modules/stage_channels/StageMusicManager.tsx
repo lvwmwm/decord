@@ -1,26 +1,27 @@
-// Module ID: 12508
-// Function ID: 12509
+// Module ID: 12562
+// Function ID: 12563
 // Name: checkVoiceStates
-// Dependencies: [1391, 4497, 1979, 4542, 4989, 1396, 12506, 10040, 589, 6708, 6703, 5038, 2]
+// Dependencies: [1391, 4501, 1980, 4547, 4994, 1396, 12560, 10079, 589, 6745, 6740, 5043, 2]
 // Exports: shouldShowStageMusicMuteButton, useShowStageMusicMuteButton
 
-// Module 12508 (checkVoiceStates)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import importDefaultResult from "_detectH265HardwareDecode";
-import handleConnectionOpen from "handleConnectionOpen";
-import updateVoiceState from "updateVoiceState";
-import getActiveStageChannelIds from "getActiveStageChannelIds";
-import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
-import initialize from "initialize";
-import createSoundForPack from "createSoundForPack";
-import "initialize";
+// Module 12562 (checkVoiceStates)
+import initializeDefault from "initialize" /* 5043 */;
+import sortKey from "sortKey" /* 6740 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import importDefaultResult from "_detectH265HardwareDecode" /* 4501 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "updateVoiceState" /* 4547 */;
+import closure_6 from "getActiveStageChannelIds" /* 4994 */;
+import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
+import closure_8 from "initialize" /* 12560 */;
+import createSoundForPack from "createSoundForPack" /* 10079 */;
 
-const require = arg1;
+require = arg1;
 function checkVoiceStates() {
   const voiceChannelId = store2.getVoiceChannelId();
   if (null == voiceChannelId) {
     closure_10.stop();
-    let c9 = false;
+    c9 = false;
   } else {
     const channel = store.getChannel(voiceChannelId);
     let isGuildStageVoiceResult;
@@ -32,11 +33,11 @@ function checkVoiceStates() {
         closure_10.stop();
         c9 = false;
       } else {
-        if (initialize.shouldPlay()) {
+        if (closure_8.shouldPlay()) {
           closure_10.volume = obj.getOutputVolume() / 400;
           closure_10.loop();
           c9 = true;
-        } else if (handleStageInstanceCreateOrUpdate.isLive(voiceChannelId)) {
+        } else if (closure_7.isLive(voiceChannelId)) {
           closure_10.stop();
           c9 = false;
         } else if (obj2.isMuted()) {
@@ -65,7 +66,7 @@ function checkVoiceStates() {
             c9 = false;
           }
         }
-        obj2 = initialize;
+        obj2 = closure_8;
       }
     } else {
       closure_10.stop();
@@ -76,6 +77,7 @@ function checkVoiceStates() {
 let c3 = importDefaultResult;
 let c9 = false;
 let closure_10 = createSoundForPack.createSound("stage_waiting", "stage_waiting", importDefaultResult.getOutputVolume() / 400);
+initializeDefault;
 class StageMusicManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -96,7 +98,7 @@ prototype["handleVoiceChannelSelect"] = function handleVoiceChannelSelect(channe
       checkVoiceStates();
     } else {
       closure_10.stop();
-      let c9 = false;
+      c9 = false;
     }
   } else {
     closure_10.stop();
@@ -105,20 +107,20 @@ prototype["handleVoiceChannelSelect"] = function handleVoiceChannelSelect(channe
 };
 prototype["handleLogout"] = function handleLogout() {
   closure_10.stop();
-  let c9 = false;
+  c9 = false;
 };
 prototype["handlePlay"] = function handlePlay(play) {
   if (play.play) {
     checkVoiceStates();
   } else {
     closure_10.pause();
-    let c9 = false;
+    c9 = false;
   }
 };
 prototype["handleMute"] = function handleMute(muted) {
   if (muted.muted) {
     closure_10.pause();
-    let c9 = false;
+    c9 = false;
   } else {
     checkVoiceStates();
   }
@@ -133,23 +135,23 @@ prototype["handleToggleSelfDeaf"] = function handleToggleSelfDeaf() {
   checkVoiceStates();
 };
 const stageMusicManager = new StageMusicManager();
-const result = require("handleConnectionOpen").fileFinishedImporting("modules/stage_channels/StageMusicManager.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/StageMusicManager.tsx");
 
 export default stageMusicManager;
 export const useShowStageMusicMuteButton = function useShowStageMusicMuteButton(channelId) {
   const _require = channelId;
-  const items = [handleConnectionOpen];
-  let stateFromStores = _require(589).useStateFromStores(items, () => outer1_4.getVoiceChannelId() === closure_0);
+  const items = [closure_4];
+  let stateFromStores = _require(589).useStateFromStores(items, () => closure_1_4.getVoiceChannelId() === closure_0);
   const obj = _require(589);
-  const stageParticipants = _require(6708).useStageParticipants(channelId, _require(6703).StageChannelParticipantNamedIndex.SPEAKER);
-  const obj2 = _require(6708);
+  const stageParticipants = _require(6745).useStageParticipants(channelId, _require(6740).StageChannelParticipantNamedIndex.SPEAKER);
+  const obj2 = _require(6745);
   const tmp2 = null != stageParticipants.find((voiceState) => {
     voiceState = voiceState.voiceState;
     return !voiceState.isVoiceMuted();
   });
-  const items1 = [handleStageInstanceCreateOrUpdate];
+  const items1 = [closure_7];
   if (stateFromStores) {
-    stateFromStores = null == obj3.useStateFromStores(items1, () => outer1_7.getStageInstanceByChannel(closure_0));
+    stateFromStores = null == obj3.useStateFromStores(items1, () => closure_1_7.getStageInstanceByChannel(closure_0));
   }
   if (stateFromStores) {
     stateFromStores = !tmp2;
@@ -158,9 +160,9 @@ export const useShowStageMusicMuteButton = function useShowStageMusicMuteButton(
 };
 export const shouldShowStageMusicMuteButton = function shouldShowStageMusicMuteButton(id) {
   let tmp = store2.getVoiceChannelId() === id;
-  mutableParticipants = mutableParticipants.getMutableParticipants(id, require(6703) /* sortKey */.StageChannelParticipantNamedIndex.SPEAKER);
+  mutableParticipants = mutableParticipants.getMutableParticipants(id, sortKey.StageChannelParticipantNamedIndex.SPEAKER);
   if (tmp) {
-    tmp = null == handleStageInstanceCreateOrUpdate.getStageInstanceByChannel(id);
+    tmp = null == closure_7.getStageInstanceByChannel(id);
   }
   if (tmp) {
     tmp = !tmp2;

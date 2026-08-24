@@ -1,33 +1,26 @@
-// Module ID: 11361
-// Function ID: 11362
+// Module ID: 11412
+// Function ID: 11413
 // Name: AppLauncherRoleOption
-// Dependencies: [32, 19, 1983, 21, 647, 11354, 4342, 11359, 2007, 11359, 2]
+// Dependencies: [32, 19, 1984, 21, 647, 11405, 4346, 11410, 2008, 11410, 2]
 // Exports: default
 
-// Module 11361 (AppLauncherRoleOption)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import { jsx } from "jsxProd";
+// Module 11412 (AppLauncherRoleOption)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 1984 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("createGuildRoleRecordFromRust").fileFinishedImporting("modules/app_launcher/native/options/role/AppLauncherRoleOption.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/options/role/AppLauncherRoleOption.tsx");
 
 export default function AppLauncherRoleOption(option) {
-  let autoFocus;
-  let channel;
-  let _slicedToArray;
-  let hasError;
-  let importDefault;
-  let onRolePress;
-  let style;
   option = option.option;
   ({ initialValue: importDefault, onRolePress } = option);
-  ({ onActionSheetDismiss: _slicedToArray, channel } = option);
+  ({ onActionSheetDismiss: closure_3, channel } = option);
   const onPress = option.onPress;
   let guild_id;
   let first;
-  let closure_8;
+  closure_8 = undefined;
   let stateFromStores;
   guild_id = channel.guild_id;
   ({ style, autoFocus, hasError } = option);
@@ -74,7 +67,7 @@ export default function AppLauncherRoleOption(option) {
     if (onPress != null) {
       tmp();
     }
-    let obj = outer1_1(onRolePress[6]);
+    let obj = closure_1_1(onRolePress[6]);
     obj = {
       option,
       channel,
@@ -83,7 +76,7 @@ export default function AppLauncherRoleOption(option) {
         callback2(role.id);
         callback({ role });
       },
-      onActionSheetDismiss: _slicedToArray
+      onActionSheetDismiss: closure_3
     };
     obj.openLazy(option(onRolePress[8])(onRolePress[7], onRolePress.paths), option(onRolePress[9]).APP_LAUNCHER_ROLE_LIST_ACTION_SHEET_KEY, obj);
   };

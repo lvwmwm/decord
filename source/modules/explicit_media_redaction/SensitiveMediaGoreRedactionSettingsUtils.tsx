@@ -1,18 +1,19 @@
-// Module ID: 5025
-// Function ID: 5026
+// Module ID: 5030
+// Function ID: 5031
 // Name: resolveGoreSettingWithDefaults
-// Dependencies: [19, 1922, 676, 1306, 4072, 4079, 4066, 2]
+// Dependencies: [19, 1922, 676, 1306, 4075, 4082, 4069, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 5025 (resolveGoreSettingWithDefaults)
-import noop from "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { HelpdeskArticles } from "ME";
+// Module 5030 (resolveGoreSettingWithDefaults)
+import create from "create" /* 1306 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4082 */;
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { HelpdeskArticles } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function resolveGoreSettingWithDefaults(isFriend) {
-  let isDm;
-  let setting;
   ({ setting, isDm } = isFriend);
   if (isDm === undefined) {
     isDm = false;
@@ -22,13 +23,13 @@ function resolveGoreSettingWithDefaults(isFriend) {
     flag = false;
   }
   if (null != setting) {
-    if (setting !== require(1306) /* create */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION) {
+    if (setting !== create.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION) {
       return setting;
     }
   }
   currentUser = currentUser.getCurrentUser();
   let ExplicitContentRedaction = dependencyMap;
-  if (obj.isSettingTeenByDefault(require(4079) /* SettingsDefaultFeature */.SettingsDefaultFeature.SENSITIVE_CONTENT)) {
+  if (obj.isSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.SENSITIVE_CONTENT)) {
     if (isDm === undefined) {
       isDm = false;
     }
@@ -81,7 +82,7 @@ function resolveGoreSettingWithDefaults(isFriend) {
     }
   }
 }
-const result = require("ME").fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaGoreRedactionSettingsUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaGoreRedactionSettingsUtils.tsx");
 
 export { resolveGoreSettingWithDefaults };
 export const resolveGoreSettingWithDefaultsForTeen = function resolveGoreSettingWithDefaultsForTeen(isDm) {
@@ -95,17 +96,17 @@ export const resolveGoreSettingWithDefaultsForTeen = function resolveGoreSetting
   }
   if (flag) {
     if (flag2) {
-      let BLUR = require(1306) /* create */.ExplicitContentRedaction.BLUR;
+      let BLUR = create.ExplicitContentRedaction.BLUR;
     }
     return BLUR;
   }
-  const ExplicitContentRedaction = require(1306) /* create */.ExplicitContentRedaction;
+  const ExplicitContentRedaction = create.ExplicitContentRedaction;
   BLUR = flag ? ExplicitContentRedaction.BLOCK : ExplicitContentRedaction.BLUR;
 };
 export const getGoreContentSettingOrDefault = function getGoreContentSettingOrDefault(arg0) {
   let setting = arg0;
   if (arg0 == null) {
-    const GoreContentSettings = require(4066) /* explicitContentFromProto */.GoreContentSettings;
+    const GoreContentSettings = explicitContentFromProto.GoreContentSettings;
     setting = GoreContentSettings.getSetting();
   }
   let goreContentGuilds;
@@ -126,7 +127,7 @@ export const getGoreContentSettingOrDefault = function getGoreContentSettingOrDe
   return obj;
 };
 export const updateGoreContentSetting = function updateGoreContentSetting(arg0) {
-  const GoreContentSettings = require(4066) /* explicitContentFromProto */.GoreContentSettings;
+  const GoreContentSettings = explicitContentFromProto.GoreContentSettings;
   const setting = GoreContentSettings.getSetting();
   let goreContentGuilds;
   if (setting != null) {
@@ -143,7 +144,7 @@ export const updateGoreContentSetting = function updateGoreContentSetting(arg0) 
     goreContentFriendDm = setting.goreContentFriendDm;
   }
   obj[2] = resolveGoreSettingWithDefaults({ setting: goreContentFriendDm, isDm: true, isFriend: true });
-  const GoreContentSettings2 = require(4066) /* explicitContentFromProto */.GoreContentSettings;
+  const GoreContentSettings2 = explicitContentFromProto.GoreContentSettings;
   obj = {};
   const merged = Object.assign(obj);
   const merged1 = Object.assign(arg0);

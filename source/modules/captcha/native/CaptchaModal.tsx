@@ -1,26 +1,27 @@
-// Module ID: 16500
-// Function ID: 16501
+// Module ID: 16595
+// Function ID: 16596
 // Name: CaptchaModal
-// Dependencies: [19, 17, 15212, 15213, 21, 4661, 8582, 1501, 16501, 6950, 4733, 5447, 4734, 1236, 4745, 10478, 16502, 15220, 2]
+// Dependencies: [19, 17, 15276, 15277, 21, 4668, 8621, 1501, 16596, 6988, 4738, 5452, 4739, 1236, 4750, 10517, 16597, 15284, 2]
 // Exports: default
 
-// Module 16500 (CaptchaModal)
-import noop from "noop";
-import get_ActivityIndicator from "trackRegTransition";
-import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore";
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16595 (CaptchaModal)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
+import Stack from "Stack" /* 4738 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5452 */;
+import Background from "Background" /* 6988 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore" /* 15276 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15277 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c4;
-let c5;
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 ({ Keyboard: c4, View: c5 } = get_ActivityIndicator);
-({ RegisterTransitionSteps: error, RegistrationTransitionActionTypes: metroImportAll } = RegistrationTransitionActionTypes);
+({ RegisterTransitionSteps: error, RegistrationTransitionActionTypes: closure_8 } = RegistrationTransitionActionTypes);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let closure_11 = createCacheKey.createStyles((arg0) => {
   let paddingHorizontal = 8;
@@ -29,25 +30,15 @@ let closure_11 = createCacheKey.createStyles((arg0) => {
   }
   return { contentContainer: { alignItems: "center", paddingVertical: 8, paddingHorizontal }, description: { paddingBottom: 12, paddingTop: 4 } };
 });
-let result = require("useRegistrationUIStore").fileFinishedImporting("modules/captcha/native/CaptchaModal.tsx");
+let result = require("set").fileFinishedImporting("modules/captcha/native/CaptchaModal.tsx");
 
 export default function CaptchaModal(arg0) {
-  let bodyText;
-  let noop;
-  let closure_4;
-  let closure_5;
-  let closure_6;
-  let closure_7;
-  let dependencyMap;
-  let headerText;
-  let onReject;
-  let require;
   ({ onCaptchaVerify: require, onReject } = arg0);
-  ({ close: dependencyMap, sitekey: noop, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
+  ({ close: dependencyMap, sitekey: closure_3, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
   let navigation;
   let callback;
-  const tmp2 = callback2(onReject(8582)());
-  let obj = require(1501) /* createStandardNavigationFactories */;
+  const tmp2 = callback2(onReject(8621)());
+  let obj = createStandardNavigationFactories;
   navigation = obj.useNavigation();
   const items = [navigation];
   const memo = React.useMemo(() => {
@@ -62,32 +53,32 @@ export default function CaptchaModal(arg0) {
     let str = "Guild Join Captcha";
     if ("auth" === name) {
       str = "Guild Join Captcha";
-      if (outer1_6()) {
+      if (closure_1_6()) {
         str = "User Registration Captcha";
       }
     }
     return str;
   }, items);
-  callback = onReject(16501)({ onReject, analyticsType: memo });
+  callback = onReject(16596)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
     closure_4.dismiss();
   }, []);
   obj = { style: tmp2.contentContainer, spacing: 12, children: null };
-  const items1 = [callback(require(5447) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
+  const items1 = [callback(AccountAgeTier10LargeBadge.DisguiseSpotIllustration, { scale: 0.5 }), , ];
   if (headerText == null) {
     const intl = tmp3(1236).intl;
     headerText = intl.string(tmp3(1236).t.FpoiHe);
   }
-  const items2 = [callback(require(4734) /* Text */.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
+  const items2 = [callback(Text.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
   obj = { variant: "text-md/medium", color: "text-subtle", style: tmp2.description, children: null };
   if (bodyText == null) {
     const intl2 = tmp3(1236).intl;
     bodyText = intl2.string(tmp3(1236).t["/CidxO"]);
   }
-  const obj1 = { startHeight: 900, startExpanded: true, children: null };
+  obj1 = { startHeight: 900, startExpanded: true, children: null };
   let obj2 = { children: null };
   obj[3] = bodyText;
-  items2[1] = callback(require(4734) /* Text */.Text, obj);
+  items2[1] = callback(Text.Text, obj);
   obj2[0] = items2;
   items1[1] = closure_10(closure_5, obj2);
   const obj3 = {
@@ -95,11 +86,11 @@ export default function CaptchaModal(arg0) {
     onPress() {
       callback2();
       callback();
-      const result = outer1_0(outer1_2[15]).emitCaptchaDistributionMetric(closure_7);
-      let obj = outer1_0(outer1_2[15]);
-      let obj2 = onReject(outer1_2[16]);
-      const showCaptchaResult = onReject(outer1_2[16]).showCaptcha(closure_4, noop, closure_5);
-      onReject(outer1_2[16]).showCaptcha(closure_4, noop, closure_5).then((arg0) => {
+      const result = closure_1_0(closure_1_2[15]).emitCaptchaDistributionMetric(closure_7);
+      let obj = closure_1_0(closure_1_2[15]);
+      let obj2 = onReject(closure_1_2[16]);
+      const showCaptchaResult = onReject(closure_1_2[16]).showCaptcha(closure_4, closure_3, closure_5);
+      onReject(closure_1_2[16]).showCaptcha(closure_4, closure_3, closure_5).then((arg0) => {
         let obj = state;
         state = state.getState();
         let name;
@@ -111,14 +102,14 @@ export default function CaptchaModal(arg0) {
         }
         let tmp4 = "auth" === name;
         if (tmp4) {
-          tmp4 = outer1_6();
+          tmp4 = closure_1_6();
         }
         if (tmp4) {
           obj = { step: null, actionType: null };
-          obj[0] = outer1_7.CAPTCHA;
-          obj[1] = outer1_8.SUBMITTED;
-          outer1_0(outer1_2[17]).trackRegTransition(obj);
-          const obj2 = outer1_0(outer1_2[17]);
+          obj[0] = closure_1_7.CAPTCHA;
+          obj[1] = closure_1_8.SUBMITTED;
+          closure_1_0(closure_1_2[17]).trackRegTransition(obj);
+          const obj2 = closure_1_0(closure_1_2[17]);
         }
         callback(arg0, closure_6);
         const state1 = obj.getState();
@@ -131,14 +122,14 @@ export default function CaptchaModal(arg0) {
         }
         let tmp15 = "auth" === name1;
         if (tmp15) {
-          tmp15 = outer1_6();
+          tmp15 = closure_1_6();
         }
         if (tmp15) {
           obj = { step: null, actionType: null };
-          obj[0] = outer1_7.CAPTCHA;
-          obj[1] = outer1_8.SUCCESS;
-          outer1_0(outer1_2[17]).trackRegTransition(obj);
-          const obj4 = outer1_0(outer1_2[17]);
+          obj[0] = closure_1_7.CAPTCHA;
+          obj[1] = closure_1_8.SUCCESS;
+          closure_1_0(closure_1_2[17]).trackRegTransition(obj);
+          const obj4 = closure_1_0(closure_1_2[17]);
         }
       }).catch((arg0) => {
         if (closure_1 != null) {
@@ -149,9 +140,9 @@ export default function CaptchaModal(arg0) {
     text: null
   };
   const intl3 = tmp3(1236).intl;
-  obj3[2] = intl3.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
-  items1[2] = callback(require(4745) /* Button */.Button, obj3);
+  obj3[2] = intl3.string(getSystemLocale.t["cY+Oob"]);
+  items1[2] = callback(Button.Button, obj3);
   obj[2] = items1;
-  obj1[2] = closure_10(require(4733) /* Stack */.Stack, obj);
-  return callback(require(6950) /* Background */.BottomSheet, obj1);
+  obj1[2] = closure_10(Stack.Stack, obj);
+  return callback(Background.BottomSheet, obj1);
 };

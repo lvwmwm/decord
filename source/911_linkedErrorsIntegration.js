@@ -4,7 +4,7 @@
 // Dependencies: [912, 893, 887]
 
 // Module 911 (linkedErrorsIntegration)
-import setupIntegration from "setupIntegration";
+import setupIntegration from "setupIntegration" /* 887 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
@@ -13,8 +13,8 @@ export const linkedErrorsIntegration = setupIntegration.defineIntegration(() => 
   if (arg0 === undefined) {
     obj = {};
   }
-  let closure_0;
-  let closure_1;
+  closure_0 = undefined;
+  closure_1 = undefined;
   closure_0 = obj.limit || 5;
   closure_1 = obj.key || "cause";
   obj = {

@@ -1,11 +1,15 @@
-// Module ID: 13569
-// Function ID: 13570
+// Module ID: 13627
+// Function ID: 13628
 // Name: getUpdatedOptions
 // Dependencies: [709, 594, 2]
 // Exports: getUpdatedOptions
 
-// Module 13569 (getUpdatedOptions)
-const result = require("set").fileFinishedImporting("utils/ErrorCommonUtils.tsx");
+// Module 13627 (getUpdatedOptions)
+import set from "set" /* 2 */;
+import add from "add" /* 594 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("utils/ErrorCommonUtils.tsx");
 
 export const getUpdatedOptions = function getUpdatedOptions(extra) {
   let obj = {};
@@ -16,16 +20,16 @@ export const getUpdatedOptions = function getUpdatedOptions(extra) {
   }
   obj = {};
   const merged1 = Object.assign(extra);
-  if (null != importDefault(709)._currentDispatchActionType) {
+  if (null != dispatcherDefault._currentDispatchActionType) {
     obj = { currentAction: null };
-    obj[0] = importDefault(709)._currentDispatchActionType;
-    let obj1 = obj;
+    obj[0] = dispatcherDefault._currentDispatchActionType;
+    obj1 = obj;
   } else {
     obj1 = {};
   }
   const obj2 = {};
   const merged2 = Object.assign(obj1);
-  obj2.lastFewActions = require(594) /* add */.serialize();
+  obj2.lastFewActions = add.serialize();
   const merged3 = Object.assign(obj2);
   obj.extra = obj;
   return obj;

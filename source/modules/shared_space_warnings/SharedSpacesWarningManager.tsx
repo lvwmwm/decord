@@ -1,23 +1,22 @@
-// Module ID: 13282
-// Function ID: 13283
+// Module ID: 13340
+// Function ID: 13341
 // Name: handleChannelSelect
-// Dependencies: [1391, 4539, 4030, 13283, 13281, 687, 13284, 691, 13288, 5038, 2]
+// Dependencies: [1391, 4544, 4033, 13341, 13339, 687, 13342, 691, 13346, 5043, 2]
 // Exports: userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 13282 (handleChannelSelect)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createRTCConnection from "createRTCConnection";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import useSharedSpacesWarningStore from "useSharedSpacesWarningStore";
-import init from "init";
-import "initialize";
+// Module 13340 (handleChannelSelect)
+import setDefault from "set" /* 687 */;
+import keys from "keys" /* 691 */;
+import initializeDefault from "initialize" /* 5043 */;
+import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 13342 */;
+import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 13346 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "createRTCConnection" /* 4544 */;
+import closure_4 from "markAllUserIdListsStale" /* 4033 */;
+import useSharedSpacesWarningStore from "useSharedSpacesWarningStore" /* 13341 */;
+import closure_10 from "init" /* 13339 */;
 
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function handleChannelSelect(channelId) {
   channelId = channelId.channelId;
   if (null != channelId) {
@@ -25,9 +24,9 @@ function handleChannelSelect(channelId) {
     if (null != channel) {
       if (channel.isGroupDM()) {
         const recipients = channel.recipients;
-        const found = recipients.filter((arg0) => markAllUserIdListsStale.isBlocked(arg0));
+        const found = recipients.filter((arg0) => closure_4.isBlocked(arg0));
         const recipients1 = channel.recipients;
-        const found1 = recipients1.filter((arg0) => markAllUserIdListsStale.isIgnored(arg0));
+        const found1 = recipients1.filter((arg0) => closure_4.isIgnored(arg0));
         if (tmp) {
           let blockedUserWarningDismissed = channel.blockedUserWarningDismissed;
           if (!blockedUserWarningDismissed) {
@@ -39,7 +38,7 @@ function handleChannelSelect(channelId) {
             blockedUserWarningDismissed = num2 > Date.now() - closure_11;
           }
           if (!blockedUserWarningDismissed) {
-            let obj = require(13284) /* showGdmBlockedUserModal */;
+            let obj = showGdmBlockedUserModal;
             obj = { channelId: null, blockedUserIds: null, ignoredUserIds: null };
             obj[0] = channelId;
             obj[1] = found;
@@ -53,7 +52,7 @@ function handleChannelSelect(channelId) {
   }
 }
 function handleAppStateChanged(state) {
-  if (state.state === require(691) /* keys */.AppStates.ACTIVE) {
+  if (state.state === keys.AppStates.ACTIVE) {
     const channelId = store2.getChannelId();
     if (null != channelId) {
       const blockedUsersForVoiceChannel = authStore.getBlockedUsersForVoiceChannel(channelId);
@@ -89,8 +88,8 @@ function handleAppStateChanged(state) {
           if (!everyResult) {
             const items1 = [];
             HermesBuiltin.arraySpread(ignoredUsersForVoiceChannel, HermesBuiltin.arraySpread(blockedUsersForVoiceChannel, 0));
-            const result = require(13288) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, items1[0]);
-            const tmpResult = require(13288) /* showVoiceChannelBlockedUserWarning */;
+            const result = showVoiceChannelBlockedUserWarning.showVoiceChannelBlockedUserWarning(channelId, items1[0]);
+            const tmpResult = showVoiceChannelBlockedUserWarning;
           }
         }
       }
@@ -100,10 +99,11 @@ function handleAppStateChanged(state) {
     }
   }
 }
-({ getChannelDismissTimestamp: c5, getUserDismissTimestamp: closure_6, getGlobalDismissTimestamp: error, isBlockedWarningQueued: metroImportAll, dequeueBlockWarning: c9 } = useSharedSpacesWarningStore);
-let closure_11 = 3 * require("set").Millis.DAY;
-let closure_12 = 2 * require("set").Millis.DAY;
-const HOUR = require("set").Millis.HOUR;
+({ getChannelDismissTimestamp: c5, getUserDismissTimestamp: closure_6, getGlobalDismissTimestamp: error, isBlockedWarningQueued: closure_8, dequeueBlockWarning: c9 } = useSharedSpacesWarningStore);
+let closure_11 = 3 * setDefault.Millis.DAY;
+let closure_12 = 2 * setDefault.Millis.DAY;
+const HOUR = setDefault.Millis.HOUR;
+initializeDefault;
 class SharedSpacesWarningManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -132,14 +132,14 @@ SharedSpacesWarningManager.prototype["handleBlockedOrIgnoredUserVoiceChannelJoin
         tmp6 = num2 > Date.now() - closure_12;
       }
       if (!tmp6) {
-        const result = require(13288) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, id);
-        const obj = require(13288) /* showVoiceChannelBlockedUserWarning */;
+        const result = showVoiceChannelBlockedUserWarning.showVoiceChannelBlockedUserWarning(channelId, id);
+        const obj = showVoiceChannelBlockedUserWarning;
       }
     }
   }
 };
 const sharedSpacesWarningManager = new SharedSpacesWarningManager();
-let result = require("markAllUserIdListsStale").fileFinishedImporting("modules/shared_space_warnings/SharedSpacesWarningManager.tsx");
+let result = require("set").fileFinishedImporting("modules/shared_space_warnings/SharedSpacesWarningManager.tsx");
 
 export default sharedSpacesWarningManager;
 export const voiceBlockedWarningInCooldownForUsers = function voiceBlockedWarningInCooldownForUsers(arg0) {

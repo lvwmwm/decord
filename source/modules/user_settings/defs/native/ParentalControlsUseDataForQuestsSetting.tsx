@@ -1,32 +1,35 @@
-// Module ID: 15045
-// Function ID: 15046
+// Module ID: 15109
+// Function ID: 15110
 // Name: toggle
-// Dependencies: [5296, 8198, 14182, 1236, 2335, 10669, 2]
+// Dependencies: [5301, 8238, 14250, 1236, 2336, 10708, 2]
 
-// Module 15045 (toggle)
-import freshTeenActivityWithMap from "freshTeenActivityWithMap";
-import createToggle from "createToggle";
+// Module 15109 (toggle)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2336 */;
+import result2 from "result" /* 14250 */;
+import closure_3 from "freshTeenActivityWithMap" /* 5301 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle: function useDataForQuestsSettingTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2335).ZhaNu8);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.ZhaNu8);
   },
   parent: require("MobileUserSettings").MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToSupportQuestsSettingValue() {
     const selectedTeenId = store.getSelectedTeenId();
-    const ParentalControlledDropsOptedOut = require(14182) /* result */.ParentalControlledDropsOptedOut;
+    const ParentalControlledDropsOptedOut = result2.ParentalControlledDropsOptedOut;
     return !ParentalControlledDropsOptedOut.useControlledSetting(selectedTeenId);
   },
   onValueChange: function onDataToSupportQuestsSettingValueChange(arg0) {
     const selectedTeenId = store.getSelectedTeenId();
-    const ParentalControlledDropsOptedOut = require(14182) /* result */.ParentalControlledDropsOptedOut;
+    const ParentalControlledDropsOptedOut = result2.ParentalControlledDropsOptedOut;
     const result = ParentalControlledDropsOptedOut.updateControlledSetting(selectedTeenId, !arg0);
   },
   unsearchable: true
 };
 createToggle = createToggle.createToggle(createToggle);
-let result = require("result").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataForQuestsSetting.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataForQuestsSetting.tsx");
 
 export default createToggle;

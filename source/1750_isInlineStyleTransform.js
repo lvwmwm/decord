@@ -5,31 +5,32 @@
 // Exports: getInlineStyle, hasInlineStyles
 
 // Module 1750 (isInlineStyleTransform)
-import _classCallCheck from "_classCallCheck";
-import _slicedToArray from "_slicedToArray";
+import _createClassDefault from "_createClass" /* 42 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_slicedToArray" /* 32 */;
 
 let InlinePropManager = arg1;
 function isInlineStyleTransform(arr) {
   return Array.isArray(arr) && arr.some((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     let someResult = arg0;
     if (someResult) {
       let _Object = Object;
       let keys = Object.keys(arg0);
       someResult = keys.some((arg0) => {
-        let isSharedValueResult = dependencyMap(outer1_1[3]).isSharedValue(obj);
+        let isSharedValueResult = dependencyMap(closure_1_1[3]).isSharedValue(obj);
         if (!isSharedValueResult) {
           let tmp2 = "transform" === arg0;
           if (tmp2) {
             let _Array = Array;
             tmp2 = Array.isArray(obj) && obj.some((arg0) => {
-              let closure_0 = arg0;
+              closure_0 = arg0;
               let someResult = arg0;
               if (someResult) {
                 let _Object = Object;
                 let keys = Object.keys(arg0);
                 someResult = keys.some((arg0) => {
-                  let isSharedValueResult = dependencyMap(outer1_1[3]).isSharedValue(obj);
+                  let isSharedValueResult = dependencyMap(closure_1_1[3]).isSharedValue(obj);
                   if (!isSharedValueResult) {
                     let tmp2 = "transform" === arg0;
                     if (tmp2) {
@@ -45,13 +46,13 @@ function isInlineStyleTransform(arr) {
               return someResult;
             });
             let tmp4 = Array.isArray(obj) && obj.some((arg0) => {
-              let closure_0 = arg0;
+              closure_0 = arg0;
               let someResult = arg0;
               if (someResult) {
                 let _Object = Object;
                 let keys = Object.keys(arg0);
                 someResult = keys.some((arg0) => {
-                  let isSharedValueResult = dependencyMap(outer1_1[3]).isSharedValue(obj);
+                  let isSharedValueResult = dependencyMap(closure_1_1[3]).isSharedValue(obj);
                   if (!isSharedValueResult) {
                     let tmp2 = "transform" === arg0;
                     if (tmp2) {
@@ -76,8 +77,6 @@ function isInlineStyleTransform(arr) {
   });
 }
 function getInlinePropsUpdate(viewDescriptors) {
-  let tmp6;
-  let tmp7;
   const obj = {};
   const entries = Object.entries(viewDescriptors);
   while (tmp2 !== undefined) {
@@ -122,7 +121,7 @@ getInlinePropsUpdate.__initData = { code: "function getInlinePropsUpdate_Pnpm_In
 let closure_6 = { code: "function pnpm_InlinePropManagerTs2(){const{getInlinePropsUpdate,newInlineProps,updateProps,shareableViewDescriptors}=this.__closure;const update=getInlinePropsUpdate(newInlineProps);updateProps(shareableViewDescriptors,update);}" };
 class InlinePropManager {
   constructor() {
-    tmp = isInlineStyleTransform(this, InlinePropManager);
+    tmp = closure_2(this, InlinePropManager);
     this._inlinePropsViewDescriptors = null;
     this._inlinePropsMapperId = null;
     this._inlineProps = {};
@@ -132,9 +131,6 @@ class InlinePropManager {
 obj = {
   key: "attachInlineProps",
   value: function attachInlineProps(self, self2) {
-    let shadowNodeWrapper;
-    let viewName;
-    let viewTag;
     const props = self.props;
     let obj = {};
     for (const key10008 in props) {
@@ -150,15 +146,13 @@ obj = {
         }
         let flattenArrayResult = obj3.flattenArray(style);
         let item = flattenArrayResult.forEach((arg0) => {
-          let tmp10;
-          let tmp11;
           if (arg0) {
             const _Object = Object;
             const entries = Object.entries(arg0);
             const tmp4 = entries[Symbol.iterator]();
             while (tmp4 !== undefined) {
-              let tmp8 = outer1_3;
-              let tmp9 = outer1_3(tmp6, 2);
+              let tmp8 = closure_1_3;
+              let tmp9 = closure_1_3(tmp6, 2);
               [tmp10, tmp11] = tmp9;
               let tmp12 = tmp11;
               let tmp13 = obj;
@@ -169,9 +163,9 @@ obj = {
                 let tmp16 = tmp10;
                 let tmp17 = "transform" === tmp10;
                 if (tmp17) {
-                  let tmp18 = outer1_4;
+                  let tmp18 = closure_1_4;
                   let tmp19 = tmp11;
-                  tmp17 = outer1_4(tmp12);
+                  tmp17 = closure_1_4(tmp12);
                 }
                 isSharedValueResult = tmp17;
               }
@@ -241,7 +235,7 @@ obj = {
       shareableViewDescriptors = self._inlinePropsViewDescriptors.shareableViewDescriptors;
       const fn = function o() {
         obj = obj(shareableViewDescriptors[7]);
-        obj.updateProps(shareableViewDescriptors, outer1_5(obj));
+        obj.updateProps(shareableViewDescriptors, closure_1_5(obj));
       };
       obj = { getInlinePropsUpdate: null, newInlineProps: null, updateProps: null, shareableViewDescriptors: null };
       obj[0] = getInlinePropsUpdate;
@@ -280,31 +274,31 @@ const items = [
 ];
 
 export const hasInlineStyles = function hasInlineStyles(viewDescriptors) {
-  let closure_0 = viewDescriptors;
+  closure_0 = viewDescriptors;
   let someResult = viewDescriptors;
   if (someResult) {
     const _Object = Object;
     const keys = Object.keys(viewDescriptors);
     someResult = keys.some((arg0) => {
-      let isSharedValueResult = dependencyMap(outer1_1[3]).isSharedValue(obj);
+      let isSharedValueResult = dependencyMap(closure_1_1[3]).isSharedValue(obj);
       if (!isSharedValueResult) {
         let tmp2 = "transform" === arg0;
         if (tmp2) {
           let _Array = Array;
           tmp2 = Array.isArray(obj) && obj.some((arg0) => {
-            let closure_0 = arg0;
+            closure_0 = arg0;
             let someResult = arg0;
             if (someResult) {
               let _Object = Object;
               let keys = Object.keys(arg0);
               someResult = keys.some((arg0) => {
-                let isSharedValueResult = dependencyMap(outer1_1[3]).isSharedValue(obj);
+                let isSharedValueResult = dependencyMap(closure_1_1[3]).isSharedValue(obj);
                 if (!isSharedValueResult) {
                   let tmp2 = "transform" === arg0;
                   if (tmp2) {
                     let _Array = Array;
                     tmp2 = Array.isArray(obj) && obj.some((arg0) => {
-                      let closure_0 = arg0;
+                      closure_0 = arg0;
                       let someResult = arg0;
                       if (someResult) {
                         let _Object = Object;
@@ -314,7 +308,7 @@ export const hasInlineStyles = function hasInlineStyles(viewDescriptors) {
                       return someResult;
                     });
                     let tmp4 = Array.isArray(obj) && obj.some((arg0) => {
-                      let closure_0 = arg0;
+                      closure_0 = arg0;
                       let someResult = arg0;
                       if (someResult) {
                         let _Object = Object;
@@ -332,19 +326,19 @@ export const hasInlineStyles = function hasInlineStyles(viewDescriptors) {
             return someResult;
           });
           let tmp4 = Array.isArray(obj) && obj.some((arg0) => {
-            let closure_0 = arg0;
+            closure_0 = arg0;
             let someResult = arg0;
             if (someResult) {
               let _Object = Object;
               let keys = Object.keys(arg0);
               someResult = keys.some((arg0) => {
-                let isSharedValueResult = dependencyMap(outer1_1[3]).isSharedValue(obj);
+                let isSharedValueResult = dependencyMap(closure_1_1[3]).isSharedValue(obj);
                 if (!isSharedValueResult) {
                   let tmp2 = "transform" === arg0;
                   if (tmp2) {
                     let _Array = Array;
                     tmp2 = Array.isArray(obj) && obj.some((arg0) => {
-                      let closure_0 = arg0;
+                      closure_0 = arg0;
                       let someResult = arg0;
                       if (someResult) {
                         let _Object = Object;
@@ -354,7 +348,7 @@ export const hasInlineStyles = function hasInlineStyles(viewDescriptors) {
                       return someResult;
                     });
                     let tmp4 = Array.isArray(obj) && obj.some((arg0) => {
-                      let closure_0 = arg0;
+                      closure_0 = arg0;
                       let someResult = arg0;
                       if (someResult) {
                         let _Object = Object;
@@ -380,8 +374,6 @@ export const hasInlineStyles = function hasInlineStyles(viewDescriptors) {
   return someResult;
 };
 export const getInlineStyle = function getInlineStyle(viewDescriptors, _isFirstRender) {
-  let tmp10;
-  let tmp11;
   if (_isFirstRender) {
     return getInlinePropsUpdate(viewDescriptors);
   } else {
@@ -418,4 +410,4 @@ export const getInlineStyle = function getInlineStyle(viewDescriptors, _isFirstR
     return obj;
   }
 };
-export const InlinePropManager = require("_createClass")(InlinePropManager, items);
+export const InlinePropManager = _createClassDefault(InlinePropManager, items);

@@ -1,23 +1,23 @@
-// Module ID: 4098
-// Function ID: 4099
+// Module ID: 4101
+// Function ID: 4102
 // Name: getSemanticColorContextFromThemeContext
-// Dependencies: [688, 689, 4099, 4103, 4194, 2]
+// Dependencies: [688, 689, 4102, 4106, 4198, 2]
 // Exports: getSemanticColorContextFromThemeContext
 
-// Module 4098 (getSemanticColorContextFromThemeContext)
-const result = require("getNodeText").fileFinishedImporting("design/tokens/native/SemanticColorContext.native.tsx");
+// Module 4101 (getSemanticColorContextFromThemeContext)
+import set from "set" /* 2 */;
+import nDefault from "n" /* 689 */;
+import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 4106 */;
+import getGradientColorByPercentage from "getGradientColorByPercentage" /* 4198 */;
+
+const result = set.fileFinishedImporting("design/tokens/native/SemanticColorContext.native.tsx");
 
 export const getSemanticColorContextFromThemeContext = function getSemanticColorContextFromThemeContext(themeContext) {
-  let contrast;
-  let enabledExperiments;
-  let primaryColor2;
-  let saturation;
-  let secondaryColor;
-  let obj = require(4103) /* getGradientThemeFromFlags */;
+  let obj = getGradientThemeFromFlags;
   const primaryColor = themeContext.primaryColor;
   const gradientThemeFromFlags = obj.getGradientThemeFromFlags(themeContext);
   ({ contrast, saturation, enabledExperiments } = themeContext);
-  let obj1 = require(4194) /* getGradientColorByPercentage */;
+  obj1 = getGradientColorByPercentage;
   let gradientThemeMetadata = obj1.getGradientThemeMetadata(gradientThemeFromFlags, themeContext.gradient);
   if (null != primaryColor) {
     ({ primaryColor: primaryColor2, secondaryColor } = themeContext);
@@ -30,9 +30,9 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
         secondaryColor = primaryColor2;
       }
       const int2hexResult1 = tmpResult.int2hex(secondaryColor);
-      const obj5 = importDefault(689)(int2hexResult);
-      const mixResult = importDefault(689)(int2hexResult).mix(int2hexResult1, 0.5);
-      const hexResult = importDefault(689)(int2hexResult).mix(int2hexResult1, 0.5).hex();
+      const obj5 = nDefault(int2hexResult);
+      const mixResult = nDefault(int2hexResult).mix(int2hexResult1, 0.5);
+      const hexResult = nDefault(int2hexResult).mix(int2hexResult1, 0.5).hex();
       let str = "dark";
       if (tmpResult1.isThemeLight(tmp10)) {
         str = "light";
@@ -49,7 +49,7 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
       obj[6] = int2hexResult1;
       obj[1] = obj;
       tmp9 = obj;
-      tmpResult1 = tmp(4099);
+      tmpResult1 = tmp(4102);
     }
     gradientThemeMetadata = tmp9;
   }

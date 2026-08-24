@@ -1,35 +1,23 @@
-// Module ID: 14002
-// Function ID: 14003
+// Module ID: 14070
+// Function ID: 14071
 // Name: EditUserProfileBanner
-// Dependencies: [19, 17, 8936, 9537, 7186, 676, 685, 14003, 21, 8385, 14004, 4039, 7139, 7159, 14005, 4342, 14006, 2007, 8377, 8374, 8376, 1236, 8982, 14017, 8372, 7349, 5441, 712, 9444, 14018, 8389, 11051, 8416, 7256, 14023, 8384, 8983, 14021, 14024, 589, 8939, 8970, 8979, 14025, 4734, 4104, 9285, 14026, 9286, 9451, 14031, 14032, 14037, 14039, 14046, 14047, 14051, 14055, 14060, 14061, 14064, 14065, 2]
+// Dependencies: [19, 17, 8973, 9574, 7224, 676, 685, 14071, 21, 8424, 14072, 4042, 7177, 7197, 14073, 4346, 14074, 2008, 8416, 8413, 8415, 1236, 9019, 14085, 8411, 7387, 5446, 712, 9481, 14086, 8428, 11090, 8455, 7294, 14091, 8423, 9020, 14089, 14092, 589, 8976, 9007, 9016, 14093, 4739, 4107, 9322, 14094, 9323, 9488, 14099, 14100, 14105, 14107, 14114, 14115, 14119, 14123, 14128, 14129, 14132, 14133, 2]
 // Exports: default
 
-// Module 14002 (EditUserProfileBanner)
-import setPendingChanges from "setPendingChanges";
-import get_ActivityIndicator from "asyncRequireImpl";
-import initialize from "initialize";
-import zustandStore from "zustandStore";
-import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET";
-import ME from "ME";
-import { ProfileCustomizationScrollPositions as closure_11 } from "MAX_FAVORITES";
-import { UserProfileEditAutoFocusElement as closure_12 } from "UserProfileEditAutoFocusElement";
-import jsxProd from "getSystemLocale";
+// Module 14070 (EditUserProfileBanner)
+import registerAssetDefault from "registerAsset" /* 14072 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "initialize" /* 8973 */;
+import closure_7 from "zustandStore" /* 9574 */;
+import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import ME from "ME" /* 676 */;
+import { ProfileCustomizationScrollPositions as closure_11 } from "MAX_FAVORITES" /* 685 */;
+import { UserProfileEditAutoFocusElement as closure_12 } from "UserProfileEditAutoFocusElement" /* 14071 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c10;
-let c4;
-let c5;
-let c9;
-let closure_14;
-let map1;
 const require = arg1;
 function EditUserProfileBanner(user) {
-  let disabled;
-  let isTryItOut;
-  let pendingAccentColor;
-  let pendingAvatarSrc;
-  let pendingBanner;
-  let pendingThemeColors;
-  let tryItOutBanner;
   user = user.user;
   const displayProfile = user.displayProfile;
   ({ pendingBanner, tryItOutBanner, isTryItOut } = user);
@@ -55,13 +43,13 @@ function EditUserProfileBanner(user) {
   obj[6] = 12;
   obj[7] = canUseCollectiblesResult;
   obj[8] = function onPressEdit() {
-    let obj = displayProfile(isTryItOut[15]);
+    obj = displayProfile(isTryItOut[15]);
     obj = { user, analyticsLocations, onBannerChange: null, showRemoveBanner: null, isTryItOut: null };
     if (isTryItOut) {
       let fn = tmp2(tmp[18]).setTryItOutBanner;
     } else {
       fn = (banner) => {
-        let obj = callback(table[19]);
+        obj = callback(table[19]);
         obj = { banner };
         return obj.setPendingChanges(obj);
       };
@@ -86,40 +74,10 @@ function EditUserProfileBanner(user) {
 ({ ScrollView: c4, View: c5 } = get_ActivityIndicator);
 ({ DISPLAY_NAME_MAX_LENGTH: c9, PRONOUNS_MAX_LENGTH: c10 } = ME);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-let obj = { assetOrigin: require("AssetOriginTypes").AssetOriginTypes.NEW_ASSET, imageUri: require("registerAsset"), staticImageUri: require("registerAsset"), description: "", originalAsset: "accessibilityRole" };
-let result = require("initialize").fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
+let obj = { assetOrigin: require("AssetOriginTypes").AssetOriginTypes.NEW_ASSET, imageUri: registerAssetDefault, staticImageUri: registerAssetDefault, description: "", originalAsset: "accessibilityLabel" };
+let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 
 export default function UserProfileEditForm(currentUser) {
-  let autoFocusElement;
-  let containerBackground;
-  let errors;
-  let gradientFallbackBackground;
-  let gradientSecondaryBackground;
-  let isSubmitting;
-  let isTryItOut;
-  let pendingAccentColor;
-  let pendingAvatar;
-  let pendingAvatarDecoration;
-  let pendingBadgeDisplayOrder;
-  let pendingBanner;
-  let pendingBio;
-  let pendingDisplayNameStyles;
-  let pendingGlobalName;
-  let pendingLegacyUsernameDisabled;
-  let pendingNameplate;
-  let pendingPrimaryGuildId;
-  let pendingProfileEffect;
-  let pendingProfileFrame;
-  let pendingPronouns;
-  let pendingThemeColors;
-  let primaryColor;
-  let secondaryColor;
-  let theme;
-  let tryItOutAvatarDecoration;
-  let tryItOutBanner;
-  let tryItOutDisplayNameStyles;
-  let tryItOutProfileEffect;
-  let tryItOutThemeColors;
   const str = currentUser.currentUser;
   ({ autoFocusElement, isTryItOut } = currentUser);
   if (isTryItOut === undefined) {
@@ -131,13 +89,13 @@ export default function UserProfileEditForm(currentUser) {
   let isBadgeManagementEnabled;
   let stateFromStores;
   let stateFromStoresArray;
-  let zustandStore;
+  closure_7 = undefined;
   const tmp3 = pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[22])();
   const tmp4 = pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[23])();
-  let obj = str(pendingBadgeHiddenBadges[24]);
+  obj = str(pendingBadgeHiddenBadges[24]);
   const bioMaxLength = obj.useBioMaxLength({ location: "user_profile_edit_form" });
   const tmp7 = pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[25])();
-  let obj1 = arr2;
+  obj1 = arr2;
   const ref = arr2.useRef(null);
   const ref1 = arr2.useRef(null);
   const ref2 = arr2.useRef(null);
@@ -147,8 +105,7 @@ export default function UserProfileEditForm(currentUser) {
   obj = { insets, inputs: null, scrollViewRef: null };
   const items = [{ ref: ref1, offset: { type: "toRef", ref: ref2, extraOffset: PX_16 } }, { ref: ref2, offset: { type: "toRef", ref: ref3, extraOffset: PX_16 } }, ];
   obj = { ref: ref3, offset: null };
-  obj1 = { type: "toValue", value: null };
-  obj1[1] = pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[27]).space.PX_64;
+  obj1 = { type: "toValue", value: pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[27]).space.PX_64 };
   obj[1] = obj1;
   items[2] = obj;
   obj[1] = items;
@@ -175,7 +132,7 @@ export default function UserProfileEditForm(currentUser) {
   arr2 = tmp(tmp2[36])(tmp16Result, pendingLegacyUsernameDisabled);
   const items1 = [arr2, pendingBadgeDisplayOrder, pendingBadgeHiddenBadges];
   const memo = obj1.useMemo(() => {
-    let obj = str(pendingBadgeHiddenBadges[37]);
+    obj = str(pendingBadgeHiddenBadges[37]);
     obj = { pendingBadgeDisplayOrder, pendingBadgeHiddenBadges };
     return obj.applyPendingBadgeSettingsToProfileBadges(arr2, obj);
   }, items1);
@@ -195,7 +152,7 @@ export default function UserProfileEditForm(currentUser) {
         const badgeDirectory = str(pendingBadgeHiddenBadges[40]).fetchBadgeDirectory(tmp.id);
         const obj2 = str(pendingBadgeHiddenBadges[40]);
       }
-      const obj = stateFromStoresArray;
+      obj = stateFromStoresArray;
       tmp2 = stateFromStoresArray.hasCatalogFor(str.id) && !stateFromStoresArray.isCatalogStaleFor(str.id);
     }
   }, items4);
@@ -203,7 +160,7 @@ export default function UserProfileEditForm(currentUser) {
   const memo1 = obj1.useMemo(() => {
     let found = null;
     if (stateFromStores) {
-      let obj = str(pendingBadgeHiddenBadges[37]);
+      obj = str(pendingBadgeHiddenBadges[37]);
       obj = { pendingBadgeDisplayOrder: null, pendingBadgeHiddenBadges: null };
       obj[0] = pendingBadgeDisplayOrder;
       obj[1] = pendingBadgeHiddenBadges;
@@ -302,8 +259,8 @@ export default function UserProfileEditForm(currentUser) {
       stringResult = intl.string(tmp5(tmp2[21]).t["84MExs"]);
     }
   }
-  const field = zustandStore.useField("scrollPosition");
-  zustandStore = tmp(tmp2[43])(ref, field);
+  const field = closure_7.useField("scrollPosition");
+  closure_7 = tmp(tmp2[43])(ref, field);
   obj5 = { theme, primaryColor, secondaryColor, children: null };
   const obj6 = { style: items6, children: null };
   items6 = [tmp4.container, { backgroundColor: gradientSecondaryBackground }];
@@ -367,7 +324,7 @@ export default function UserProfileEditForm(currentUser) {
   obj18[3] = pendingGlobalName;
   obj18[4] = onFocus;
   obj18[5] = function onChange(globalName) {
-    let obj = str(pendingBadgeHiddenBadges[19]);
+    obj = str(pendingBadgeHiddenBadges[19]);
     obj = { globalName };
     return obj.setPendingChanges(obj);
   };
@@ -397,7 +354,7 @@ export default function UserProfileEditForm(currentUser) {
   obj20[3] = pendingPronouns;
   obj20[4] = onFocus;
   obj20[5] = function onChange(pronouns) {
-    let obj = str(pendingBadgeHiddenBadges[19]);
+    obj = str(pendingBadgeHiddenBadges[19]);
     obj = { pronouns };
     return obj.setPendingChanges(obj);
   };
@@ -415,7 +372,7 @@ export default function UserProfileEditForm(currentUser) {
   obj21[3] = pendingBio;
   obj21[4] = onFocus;
   obj21[5] = function onChange(bio) {
-    let obj = str(pendingBadgeHiddenBadges[19]);
+    obj = str(pendingBadgeHiddenBadges[19]);
     obj = { bio };
     return obj.setPendingChanges(obj);
   };
@@ -429,7 +386,7 @@ export default function UserProfileEditForm(currentUser) {
     let fn = tmp5(tmp2[18]).setTryItOutThemeColors;
   } else {
     fn = (themeColors) => {
-      let obj = str(pendingBadgeHiddenBadges[19]);
+      obj = str(pendingBadgeHiddenBadges[19]);
       obj = { themeColors };
       return obj.setPendingChanges(obj);
     };
@@ -488,7 +445,7 @@ export default function UserProfileEditForm(currentUser) {
   items14[12] = callback(stateFromStores, {
     ref(arg0) {
       if (null != arg0) {
-        ref.current[outer1_11.GUILD_TAG] = arg0;
+        ref.current[closure_1_11.GUILD_TAG] = arg0;
       }
     },
     children: callback(pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[59]), { user: str, disabled: isSubmitting, tagStyle: { backgroundColor: containerBackground }, pendingPrimaryGuildId })

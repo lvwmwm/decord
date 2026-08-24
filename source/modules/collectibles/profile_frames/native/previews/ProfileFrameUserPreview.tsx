@@ -1,30 +1,33 @@
-// Module ID: 9570
-// Function ID: 9571
+// Module ID: 9607
+// Function ID: 9608
 // Name: ProfileFrameUserPreview
-// Dependencies: [19, 21, 9284, 1236, 2]
+// Dependencies: [19, 21, 9321, 1236, 2]
 // Exports: default
 
-// Module 9570 (ProfileFrameUserPreview)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 9607 (ProfileFrameUserPreview)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import filterLayerDefault from "filterLayer" /* 9321 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("filterLayer").fileFinishedImporting("modules/collectibles/profile_frames/native/previews/ProfileFrameUserPreview.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/collectibles/profile_frames/native/previews/ProfileFrameUserPreview.tsx");
 
 export default function ProfileFrameUserPreview(profileFrame) {
   profileFrame = profileFrame.profileFrame;
   const merged = Object.assign(profileFrame, Object.create(null));
   let obj = { profileFrameOverride: profileFrame, accessibilityLabel: null };
   if (null != profileFrame) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     obj = { a11y_text: null };
     obj[0] = profileFrame.label;
-    let formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["DT/PwH"], obj);
+    let formatToPlainStringResult = intl2.formatToPlainString(getSystemLocale.t["DT/PwH"], obj);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    formatToPlainStringResult = intl.string(require(1236) /* getSystemLocale */.t.vQx51z);
+    const intl = getSystemLocale.intl;
+    formatToPlainStringResult = intl.string(getSystemLocale.t.vQx51z);
   }
   obj[1] = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(9284), { profileFrameOverride: profileFrame, accessibilityLabel: null });
+  return jsx(filterLayerDefault, { profileFrameOverride: profileFrame, accessibilityLabel: null });
 };

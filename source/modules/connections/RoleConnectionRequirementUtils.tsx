@@ -1,13 +1,15 @@
-// Module ID: 16858
-// Function ID: 16859
+// Module ID: 16951
+// Function ID: 16952
 // Name: realizedOperatorFor
-// Dependencies: [5225, 2]
+// Dependencies: [5230, 2]
 // Exports: displayedValueFor, minDisplayedValueFor, realizedOperatorFor, storedValueFor
 
-// Module 16858 (realizedOperatorFor)
-import { OperatorTypes } from "OperatorTypes";
+// Module 16951 (realizedOperatorFor)
+import set from "set" /* 2 */;
+import OperatorTypes2 from "OperatorTypes" /* 5230 */;
 
-const result = require("set").fileFinishedImporting("modules/connections/RoleConnectionRequirementUtils.tsx");
+const OperatorTypes = OperatorTypes2.OperatorTypes;
+const result = set.fileFinishedImporting("modules/connections/RoleConnectionRequirementUtils.tsx");
 
 export const realizedOperatorFor = function realizedOperatorFor(operator) {
   let GREATER_THAN = operator;

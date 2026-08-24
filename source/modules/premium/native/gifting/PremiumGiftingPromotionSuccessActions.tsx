@@ -1,32 +1,30 @@
-// Module ID: 10388
-// Function ID: 10389
+// Module ID: 10427
+// Function ID: 10428
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [19, 17, 5306, 1947, 1922, 21, 4661, 712, 589, 9625, 1500, 9592, 10376, 10296, 10389, 9221, 1946, 1297, 10381, 4745, 1236, 2]
+// Dependencies: [19, 17, 5311, 1947, 1922, 21, 4668, 712, 589, 9662, 1500, 9629, 10416, 10335, 10428, 9258, 1946, 1297, 10421, 4750, 1236, 2]
 // Exports: default
 
-// Module 10388 (PremiumGiftingPromotionSuccessActions)
-import Button from "Button";
-import { View } from "Button";
-import { isAvatarDecorationRecord } from "fromServer";
-import { isNameplateRecord } from "fromServer";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 10427 (PremiumGiftingPromotionSuccessActions)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { isAvatarDecorationRecord, isNameplateRecord } from "fromServer" /* 5311 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
 const require = arg1;
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { container: null, nameplateContainer: null, nameplateWrapper: null, singleAvatarContainer: null };
-createCacheKey = { flexDirection: "column", alignItems: "center", gap: require("Themes").space.PX_16 };
+createCacheKey = { flexDirection: "column", alignItems: "center", gap: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { width: 234, height: 40, flexDirection: "row", alignItems: "center", position: "relative", borderRadius: require("Themes").radii.sm, overflow: "hidden" };
-let obj1 = { width: 234, height: 40, flexDirection: "row", alignItems: "center", position: "relative", borderRadius: require("Themes").radii.sm, overflow: "hidden" };
-createCacheKey[2] = { position: "absolute", left: 0, right: 0, top: 0, bottom: 0, borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+createCacheKey[1] = { width: 234, height: 40, flexDirection: "row", alignItems: "center", position: "relative", borderRadius: ThemesDefault.radii.sm, overflow: "hidden" };
+let obj1 = { width: 234, height: 40, flexDirection: "row", alignItems: "center", position: "relative", borderRadius: ThemesDefault.radii.sm, overflow: "hidden" };
+createCacheKey[2] = { position: "absolute", left: 0, right: 0, top: 0, bottom: 0, borderRadius: ThemesDefault.radii.sm, overflow: "hidden" };
 createCacheKey[3] = { flexDirection: "row", paddingRight: 15, justifyContent: "center", alignItems: "center", marginLeft: 5 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { position: "absolute", left: 0, right: 0, top: 0, bottom: 0, borderRadius: require("Themes").radii.sm, overflow: "hidden" };
-const result = require("fromServer").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftingPromotionSuccessActions.tsx");
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { position: "absolute", left: 0, right: 0, top: 0, bottom: 0, borderRadius: ThemesDefault.radii.sm, overflow: "hidden" };
+const result = require("set").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftingPromotionSuccessActions.tsx");
 
 export default function PremiumGiftingPromotionSuccessActions(purchase) {
   purchase = purchase.purchase;
@@ -34,13 +32,13 @@ export default function PremiumGiftingPromotionSuccessActions(purchase) {
   let prePurchaseGiftingBadgeProgress;
   let navigation;
   let enabled;
-  let c4;
+  c4 = undefined;
   let callback;
-  let tmp = createCacheKey();
+  let tmp = callback2();
   let obj = onClose(navigation[8]);
-  const items = [mergeGuildAvatar];
+  const items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = onClose(navigation[9]);
+  obj1 = onClose(navigation[9]);
   const nativeGiftContext = obj1.useNativeGiftContext();
   onClose = nativeGiftContext.onClose;
   prePurchaseGiftingBadgeProgress = nativeGiftContext.prePurchaseGiftingBadgeProgress;

@@ -1,9 +1,11 @@
-// Module ID: 8233
-// Function ID: 8234
+// Module ID: 8273
+// Function ID: 8274
 // Name: AutomodRaidAlertTypes
 // Dependencies: [2]
 
-// Module 8233 (AutomodRaidAlertTypes)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodRaidAlertTypes.tsx");
+// Module 8273 (AutomodRaidAlertTypes)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodRaidAlertTypes.tsx");
 
 export const AutomodRaidAlertTypes = { JOIN_RAID: "JOIN_RAID", DM_RAID: "DM_RAID", MENTION_RAID: "MENTION_RAID" };

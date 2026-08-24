@@ -1,11 +1,14 @@
-// Module ID: 7184
-// Function ID: 7185
+// Module ID: 7222
+// Function ID: 7223
 // Name: sortRolesByVerification
-// Dependencies: [1987, 2]
+// Dependencies: [1988, 2]
 // Exports: sortRolesByVerification
 
-// Module 7184 (sortRolesByVerification)
-const result = require("set").fileFinishedImporting("modules/user_profile/UserProfileRoleUtils.tsx");
+// Module 7222 (sortRolesByVerification)
+import set from "set" /* 2 */;
+import compareGuildRoles from "compareGuildRoles" /* 1988 */;
+
+const result = set.fileFinishedImporting("modules/user_profile/UserProfileRoleUtils.tsx");
 
 export const sortRolesByVerification = function sortRolesByVerification(tags, tags2) {
   tags = tags.tags;
@@ -20,8 +23,8 @@ export const sortRolesByVerification = function sortRolesByVerification(tags, ta
   }
   if (undefined === guild_connections) {
     if (tmp3) {
-      let num2 = require(1987) /* compareGuildRoles */.compareGuildRoles(tags, tags2);
-      const obj = require(1987) /* compareGuildRoles */;
+      let num2 = compareGuildRoles.compareGuildRoles(tags, tags2);
+      const obj = compareGuildRoles;
     } else {
       num2 = -1;
     }

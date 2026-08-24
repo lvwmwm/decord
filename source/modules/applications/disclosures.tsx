@@ -1,27 +1,28 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9807
+// Function ID: 9808
 // Name: _getDisclosures
-// Dependencies: [5, 676, 530, 9769, 1236, 2]
+// Dependencies: [5, 676, 530, 9808, 1236, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 9768 (_getDisclosures)
-import set from "set";
-import { Endpoints } from "ME";
+// Module 9807 (_getDisclosures)
+import create from "create" /* 9808 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function _getDisclosures() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     return (function*(arg0) {
-      let closure_1 = tmp2;
+      closure_1 = tmp2;
       const result = c3.APPLICATION_DISCLOSURES(lib);
-      const HTTP = lib(outer1_1[2]).HTTP;
-      const obj1 = { url: null, retries: 3, rejectWithError: null };
+      const HTTP = lib(closure_1_1[2]).HTTP;
+      obj1 = { url: null, retries: 3, rejectWithError: null };
       obj1[0] = result;
-      obj1[2] = lib(outer1_1[2]).rejectWithMigratedError();
+      obj1[2] = lib(closure_1_1[2]).rejectWithMigratedError();
       lib = yield HTTP.get(obj1);
       const obj = { disclosures: null, ackedDisclosures: null, allAcked: null };
       obj[0] = lib.body.disclosures;
@@ -30,7 +31,7 @@ function _getDisclosures() {
       return obj;
     })();
   });
-  const _getDisclosures = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -42,10 +43,10 @@ function _getDisclosures() {
 function _ackDisclosures() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c3 = 0;
-    let c2 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c3 = 0;
+    c2 = 0;
     return (function*(arg0, arg1) {
       if (c2 === 2) {
         c2 = 3;
@@ -58,7 +59,7 @@ function _ackDisclosures() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -75,7 +76,7 @@ function _ackDisclosures() {
             } else {
               const result = c3.APPLICATION_DISCLOSURES(callback);
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, body: null, rejectWithError: null };
+              obj1 = { url: null, body: null, rejectWithError: null };
               obj1[0] = result;
               const obj2 = { disclosures: null };
               obj2[0] = dependencyMap;
@@ -97,7 +98,7 @@ function _ackDisclosures() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c2 = tmp;
@@ -106,7 +107,7 @@ function _ackDisclosures() {
       }
     })();
   });
-  const _ackDisclosures = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -115,7 +116,7 @@ function _ackDisclosures() {
   }
   return applyArgumentsResult;
 }
-let result = require("sendRequest").fileFinishedImporting("modules/applications/disclosures.tsx");
+let result = require("set").fileFinishedImporting("modules/applications/disclosures.tsx");
 
 export const ApplicationDisclosure = require("create").ApplicationDisclosureType;
 export const getDisclosures = function getDisclosures(closure_0) {
@@ -128,7 +129,7 @@ export const getDisclosures = function getDisclosures(closure_0) {
   }
   return applyArgumentsResult;
 };
-export const ackDisclosures = function ackDisclosures(closure_0, outer1_50) {
+export const ackDisclosures = function ackDisclosures(closure_0, closure_1_50) {
   const self = this;
   const apply = _ackDisclosures.apply;
   if (typeof apply === "unknown") {
@@ -139,10 +140,10 @@ export const ackDisclosures = function ackDisclosures(closure_0, outer1_50) {
   return applyArgumentsResult;
 };
 export const getTextForDisclosure = function getTextForDisclosure(toFixed) {
-  if (require(9769) /* create */.ApplicationDisclosureType.IP_LOCATION === toFixed) {
+  if (create.ApplicationDisclosureType.IP_LOCATION === toFixed) {
     const intl2 = tmp(1236).intl;
     return intl2.string(tmp(1236).t["6wPmjo"]);
-  } else if (tmp(9769).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === toFixed) {
+  } else if (tmp(9808).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === toFixed) {
     const intl = tmp(1236).intl;
     return intl.string(tmp(1236).t["/uOMKZ"]);
   } else {

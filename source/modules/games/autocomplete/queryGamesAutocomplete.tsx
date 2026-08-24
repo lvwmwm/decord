@@ -1,25 +1,26 @@
-// Module ID: 7599
-// Function ID: 7600
+// Module ID: 7637
+// Function ID: 7638
 // Name: queryGamesAutocomplete
-// Dependencies: [6899, 636, 7600, 6900, 2]
+// Dependencies: [6937, 636, 7638, 6938, 2]
 // Exports: queryGamesAutocomplete
 
-// Module 7599 (queryGamesAutocomplete)
-import set from "set";
-import importDefaultResult from "debounce";
+// Module 7637 (queryGamesAutocomplete)
+import GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH from "GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH" /* 6938 */;
+import fetchStore from "fetchStore" /* 7638 */;
+import closure_2 from "set" /* 6937 */;
+import importDefaultResult from "debounce" /* 636 */;
 
-const require = arg1;
-const obj = { leading: true, maxWait: null };
-obj[1] = require("fetchStore").GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS;
-let closure_3 = require("debounce")((arg0) => {
-  const useGameAutocomplete = require(7600) /* fetchStore */.useGameAutocomplete;
+require = arg1;
+let closure_3 = importDefaultResult((arg0) => {
+  const useGameAutocomplete = fetchStore.useGameAutocomplete;
   const items = [arg0];
   const many = useGameAutocomplete.fetchMany(items);
-}, require("fetchStore").GAME_AUTOCOMPLETE_DEBOUNCE_MS, obj);
-let result = require("fetchStore").fileFinishedImporting("modules/games/autocomplete/queryGamesAutocomplete.tsx");
+}, require("fetchStore").GAME_AUTOCOMPLETE_DEBOUNCE_MS, { leading: true, maxWait: require("fetchStore").GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS });
+const obj = { leading: true, maxWait: require("fetchStore").GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS };
+let result = require("set").fileFinishedImporting("modules/games/autocomplete/queryGamesAutocomplete.tsx");
 
 export const queryGamesAutocomplete = function queryGamesAutocomplete(query) {
-  const result = require(6900) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.normalizeGameAutocompleteQuery(query);
+  const result = GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH.normalizeGameAutocompleteQuery(query);
   let found = null;
   if (null != result) {
     callback(result);
@@ -27,7 +28,7 @@ export const queryGamesAutocomplete = function queryGamesAutocomplete(query) {
     if (closestResults == null) {
       closestResults = [];
     }
-    found = closestResults.filter(require(6900) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.isGameAutocompleteResultAllowedInGameWidgets);
+    found = closestResults.filter(GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH.isGameAutocompleteResultAllowedInGameWidgets);
   }
   return found;
 };

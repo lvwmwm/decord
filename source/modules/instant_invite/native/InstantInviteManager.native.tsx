@@ -1,22 +1,23 @@
-// Module ID: 16619
-// Function ID: 16620
+// Module ID: 16715
+// Function ID: 16716
 // Name: prototype
-// Dependencies: [5038, 4094, 1236, 2]
+// Dependencies: [5043, 4097, 1236, 2]
 
-// Module 16619 (prototype)
-import "initialize";
+// Module 16715 (prototype)
+import initializeDefault from "initialize" /* 5043 */;
 
 let require = arg1;
+initializeDefault;
 let prototype = function InstantInviteManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const require = applyArgumentsResult;
+  require = applyArgumentsResult;
   applyArgumentsResult.actions = {
     NATIVE_APP_INSTANT_INVITE_GDM_SHARE_FAILED() {
       return applyArgumentsResult.shareInviteFailed();
     }
   };
   applyArgumentsResult.shareInviteFailed = function shareInviteFailed() {
-    let obj = callback(4094);
+    let obj = callback(4097);
     obj = { key: "GROUP_DM_ADD_ERROR", content: null };
     const intl = applyArgumentsResult(1236).intl;
     obj[1] = intl.string(applyArgumentsResult(1236).t["N/9OFy"]);
@@ -27,6 +28,6 @@ let prototype = function InstantInviteManager() {
 class prototype extends tmp2 {
 }
 prototype = new prototype();
-const result = require("getSystemLocale").fileFinishedImporting("modules/instant_invite/native/InstantInviteManager.native.tsx");
+const result = require("set").fileFinishedImporting("modules/instant_invite/native/InstantInviteManager.native.tsx");
 
 export default prototype;

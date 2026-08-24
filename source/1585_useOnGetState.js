@@ -5,7 +5,7 @@
 // Exports: useOnGetState
 
 // Module 1585 (useOnGetState)
-import noop from "noop";
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 

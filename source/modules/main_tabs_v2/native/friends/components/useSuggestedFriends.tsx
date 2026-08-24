@@ -1,17 +1,17 @@
-// Module ID: 15311
-// Function ID: 15312
+// Module ID: 15375
+// Function ID: 15376
 // Name: useSuggestedFriends
-// Dependencies: [32, 19, 5410, 11872, 647, 12, 4219, 2]
+// Dependencies: [32, 19, 5415, 11921, 647, 12, 4223, 2]
 // Exports: default
 
-// Module 15311 (useSuggestedFriends)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import initialize from "initialize";
-import { SuggestedFriendSource } from "SuggestedFriendSource";
+// Module 15375 (useSuggestedFriends)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "initialize" /* 5415 */;
+import { SuggestedFriendSource } from "SuggestedFriendSource" /* 11921 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx");
 
 export default function useSuggestedFriends(arg0) {
   let obj = arg0;
@@ -19,7 +19,7 @@ export default function useSuggestedFriends(arg0) {
     obj = {};
   }
   let flag = obj.isConnected;
-  const items = [initialize];
+  const items = [closure_5];
   stateFromStoresArray = stateFromStoresArray(flag[4]).useStateFromStoresArray(items, () => suggestions.getSuggestions());
   const tmp = callback(React.useState([]), 2);
   const first = tmp[0];
@@ -31,18 +31,15 @@ export default function useSuggestedFriends(arg0) {
     if (flag) {
       const found = first.filter((source) => source.source === constants.USER_SUGGESTIONS);
       const mapped = stateFromStoresArray.map((user) => {
-        const obj = { user: user.user, friendSuggestionName: null, source: null, contactNames: null };
-        const name = user.name;
-        obj[1] = name;
-        obj[2] = constants.USER_SUGGESTIONS;
-        obj[3] = user.contactNames;
+        const obj = { user: user.user, friendSuggestionName: name, source: constants.USER_SUGGESTIONS, contactNames: user.contactNames };
+        name = user.name;
         return obj;
       });
       let obj = first(flag[5]);
       return first(flag[5]).unionBy(found, mapped, (user) => user.user.id).sort((user, user2) => {
-        const name = callback(4219).getName(user.user);
-        const obj = callback(4219);
-        return name.localeCompare(callback(4219).getName(user2.user));
+        const name = callback(4223).getName(user.user);
+        const obj = callback(4223);
+        return name.localeCompare(callback(4223).getName(user2.user));
       });
     } else {
       return [];

@@ -1,16 +1,14 @@
-// Module ID: 15200
-// Function ID: 15201
+// Module ID: 15264
+// Function ID: 15265
 // Name: _getLatestVideo
-// Dependencies: [5, 17, 15199, 4827, 15201, 15202, 4342, 15203, 2007, 10130, 4829, 8949, 10129, 1494, 2]
+// Dependencies: [5, 17, 15263, 4832, 15265, 15266, 4346, 15267, 2008, 10169, 4834, 8986, 10168, 1494, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 15200 (_getLatestVideo)
-import SURVEY_CONFIGS from "SURVEY_CONFIGS";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { useScreenRecordingStore } from "useScreenRecordingStore";
+// Module 15264 (_getLatestVideo)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { useScreenRecordingStore } from "useScreenRecordingStore" /* 15263 */;
 
-let NativeEventEmitter;
-let NativeModules;
 const require = arg1;
 function _getLatestVideo() {
   const self = this;
@@ -26,7 +24,7 @@ function _getLatestVideo() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -42,10 +40,10 @@ function _getLatestVideo() {
             return obj;
           } else {
             let callback = tmp3;
-            let closure_0 = tmp7;
+            closure_0 = tmp7;
             closure_0 = undefined;
-            let c3 = 1;
-            const obj1 = { first: 1, groupTypes: "Recents", assetType: "Videos", include: null };
+            c3 = 1;
+            obj1 = { first: 1, groupTypes: "Recents", assetType: "Videos", include: null };
             obj1[3] = ["filename", "fileSize", "playableDuration", "imageSize"];
             c4 = 2;
             photos = 1;
@@ -101,7 +99,7 @@ function _getLatestVideo() {
       }
     }
   });
-  const _getLatestVideo = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -124,7 +122,7 @@ function _checkAndRequestPermissions() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -140,19 +138,19 @@ function _checkAndRequestPermissions() {
             return obj;
           } else {
             let callback = tmp3;
-            let closure_0 = tmp7;
+            closure_0 = tmp7;
             closure_0 = undefined;
-            let c3 = 1;
+            c3 = 1;
             c4 = 2;
             c5 = 1;
-            let obj1 = { value: null, done: false };
-            obj1[0] = outer1_1(outer1_2[4]).requestPermissions();
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_1(closure_1_2[4]).requestPermissions();
             return obj1;
           }
         } else if (1 === tmp7) {
           c3 = 0;
           callback = dependencyMap;
-          let obj3 = callback(4827);
+          let obj3 = callback(4832);
           const obj2 = { title: "Error", body: null };
           const _HermesInternal = HermesInternal;
           obj2[1] = "Failed to check permissions, error: " + callback;
@@ -173,12 +171,12 @@ function _checkAndRequestPermissions() {
           if (closure_0.photosGranted) {
             let flag2 = closure_0.microphoneGranted;
             if (!flag2) {
-              obj1 = callback(4827);
+              obj1 = callback(4832);
               obj1.show({ title: "Error", body: "Microphone permission is required to record audio" });
               flag2 = false;
             }
           } else {
-            obj = callback(4827);
+            obj = callback(4832);
             obj.show({ title: "Error", body: "Photos permission is required to save recordings" });
           }
           c3 = 0;
@@ -195,7 +193,7 @@ function _checkAndRequestPermissions() {
       }
     }
   });
-  const _checkAndRequestPermissions = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -207,10 +205,10 @@ function _checkAndRequestPermissions() {
 function _startRecordingProcess() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c6 === 2) {
         c6 = 3;
@@ -223,7 +221,7 @@ function _startRecordingProcess() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -245,15 +243,15 @@ function _startRecordingProcess() {
               let store = 1;
               c5 = 2;
               c6 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_1(outer1_2[4]).startRecording();
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_1(closure_1_2[4]).startRecording();
               return obj1;
             }
           } else if (1 === tmp7) {
             store = 0;
             let obj2 = { title: "Error", body: null };
             const _HermesInternal = HermesInternal;
-            obj2[1] = "Failed to start screen recording, error: " + SURVEY_CONFIGS;
+            obj2[1] = "Failed to start screen recording, error: " + closure_3;
             lib(surveyConfig[3]).show(obj2);
             const state = store.getState();
             state.stopRecording();
@@ -302,7 +300,7 @@ function _startRecordingProcess() {
             }
           }
         } catch (tmp49) {
-          SURVEY_CONFIGS = tmp49;
+          closure_3 = tmp49;
           if (tmp4 === store) {
             c6 = tmp2;
             throw tmp49;
@@ -313,7 +311,7 @@ function _startRecordingProcess() {
       }
     })();
   });
-  const _startRecordingProcess = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -336,7 +334,7 @@ function _stopRecordingProcess() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -352,18 +350,18 @@ function _stopRecordingProcess() {
             return obj;
           } else {
             const callback = tmp3;
-            let closure_0 = tmp7;
-            let c3 = 1;
+            closure_0 = tmp7;
+            c3 = 1;
             state = 2;
             c5 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_1(outer1_2[4]).stopRecording();
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_1(closure_1_2[4]).stopRecording();
             return obj1;
           }
         } else if (1 === tmp7) {
           c3 = 0;
           closure_0 = dependencyMap;
-          let obj3 = callback(4827);
+          let obj3 = callback(4832);
           const obj2 = { title: "Error", body: null };
           const _HermesInternal = HermesInternal;
           obj2[1] = "Failed to stop screen recording, error: " + closure_0;
@@ -384,7 +382,7 @@ function _stopRecordingProcess() {
         } else {
           let flag = arg1.success;
           if (!flag) {
-            obj = callback(4827);
+            obj = callback(4832);
             obj.show({ title: "Error", body: "Failed to stop screen recording, but not error" });
             flag = false;
           }
@@ -405,7 +403,7 @@ function _stopRecordingProcess() {
       }
     }
   });
-  const _stopRecordingProcess = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -417,11 +415,11 @@ function _stopRecordingProcess() {
 function _submitBugReportWithScreenRecording() {
   let self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c9 = 0;
-    let c10 = 0;
-    let c8 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c9 = 0;
+    c10 = 0;
+    c8 = 0;
     return (function*(arg0, features) {
       if (c10 === 2) {
         c10 = 3;
@@ -440,7 +438,7 @@ function _submitBugReportWithScreenRecording() {
             obj[0] = features;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -455,56 +453,56 @@ function _submitBugReportWithScreenRecording() {
                 obj[0] = features;
                 return obj;
               } else {
-                let c6 = tmp3;
-                let closure_5 = tmp5;
+                c6 = tmp3;
+                closure_5 = tmp5;
                 throwTypeErrorResult = lib;
                 throwTypeErrorResult = lib2;
                 let uri;
-                let SURVEY_CONFIGS;
+                closure_3 = undefined;
                 let obj14;
                 closure_5 = undefined;
                 c6 = undefined;
-                let closure_7;
-                let c8;
+                closure_7 = undefined;
+                c8 = undefined;
                 c9 = undefined;
                 c10 = undefined;
-                let closure_11;
-                let c12;
-                let closure_13;
+                closure_11 = undefined;
+                c12 = undefined;
+                closure_13 = undefined;
                 let obj13;
                 c8 = 1;
-                throwTypeErrorResult = outer1_4;
-                const currentSurveyId = outer1_4.getState().currentSurveyId;
+                throwTypeErrorResult = closure_1_4;
+                const currentSurveyId = closure_1_4.getState().currentSurveyId;
                 if (null != currentSurveyId) {
                   if ("" !== currentSurveyId) {
                     throwTypeErrorResult = lib;
-                    throwTypeErrorResult = outer1_2;
-                    throwTypeErrorResult = lib(outer1_2[5]).getSurveyConfig(currentSurveyId);
+                    throwTypeErrorResult = closure_1_2;
+                    throwTypeErrorResult = lib(closure_1_2[5]).getSurveyConfig(currentSurveyId);
                     uri = throwTypeErrorResult;
                     if (null == throwTypeErrorResult) {
                       throwTypeErrorResult = lib2;
-                      throwTypeErrorResult = outer1_2;
-                      throwTypeErrorResult = lib2(outer1_2[3]).show({ title: "Submission Failed", body: "Survey configuration not found" });
+                      throwTypeErrorResult = closure_1_2;
+                      throwTypeErrorResult = lib2(closure_1_2[3]).show({ title: "Submission Failed", body: "Survey configuration not found" });
                       c8 = 0;
                       c10 = 3;
-                      let obj1 = { value: null, done: true };
+                      obj1 = { value: null, done: true };
                       obj1[0] = undefined;
                       return obj1;
                     } else {
                       throwTypeErrorResult = lib;
-                      throwTypeErrorResult = outer1_2;
+                      throwTypeErrorResult = closure_1_2;
                       c9 = 2;
                       c10 = 1;
                       const obj2 = { value: null, done: false };
-                      obj2[0] = lib(outer1_2[9]).fetchBugReportConfig();
+                      obj2[0] = lib(closure_1_2[9]).fetchBugReportConfig();
                       return obj2;
                     }
-                    const obj31 = lib(outer1_2[5]);
+                    const obj31 = lib(closure_1_2[5]);
                   }
                 }
                 throwTypeErrorResult = lib2;
-                throwTypeErrorResult = outer1_2;
-                throwTypeErrorResult = lib2(outer1_2[3]).show({ title: "Submission Failed", body: "No survey selected" });
+                throwTypeErrorResult = closure_1_2;
+                throwTypeErrorResult = lib2(closure_1_2[3]).show({ title: "Submission Failed", body: "No survey selected" });
                 c8 = 0;
                 c10 = 3;
                 const obj3 = { value: null, done: true };
@@ -514,9 +512,9 @@ function _submitBugReportWithScreenRecording() {
             } else {
               if (1 === tmp8) {
                 c8 = 0;
-                lib2(outer1_2[3]).show({ title: "Submission Failed", body: "Something went wrong and there's no way to fix it. Thanks anyway!" });
+                lib2(closure_1_2[3]).show({ title: "Submission Failed", body: "Something went wrong and there's no way to fix it. Thanks anyway!" });
                 c10 = 3;
-                const obj20 = lib2(outer1_2[3]);
+                const obj20 = lib2(closure_1_2[3]);
               } else if (2 === tmp8) {
                 if (arg0 === 1) {
                   c10 = 3;
@@ -529,7 +527,7 @@ function _submitBugReportWithScreenRecording() {
                   return obj4;
                 } else {
                   features = features.features;
-                  SURVEY_CONFIGS = features.find((name) => {
+                  closure_3 = features.find((name) => {
                     let hasItem;
                     if (name.name != null) {
                       const formatted = str.toLowerCase();
@@ -611,13 +609,13 @@ function _submitBugReportWithScreenRecording() {
                         throwTypeErrorResult = lib2;
                         const parts = lib2.split("/");
                         throwTypeErrorResult = parts.pop();
-                        SURVEY_CONFIGS = throwTypeErrorResult;
+                        closure_3 = throwTypeErrorResult;
                         if (throwTypeErrorResult == null) {
                           const _Date = Date;
                           const _HermesInternal = HermesInternal;
-                          SURVEY_CONFIGS = "audio_" + Date.now() + ".wav";
+                          closure_3 = "audio_" + Date.now() + ".wav";
                         }
-                        closure_7 = SURVEY_CONFIGS;
+                        closure_7 = closure_3;
                         const obj8 = { id: null, uri: null, originalUri: null, mimeType: "audio/wav", filename: null, platform: null };
                         const _Date2 = Date;
                         let tmp63 = lib2(uri[10]);
@@ -637,10 +635,7 @@ function _submitBugReportWithScreenRecording() {
                     if (undefined !== lib) {
                       if (lib.length > 0) {
                         c9 = (function formatTranscription(closure_0) {
-                          const obj = { generated: null, totalSegments: null, segments: null };
-                          obj[0] = new Date().toISOString();
-                          obj[1] = closure_0.length;
-                          obj[2] = closure_0.map((text) => ({ text: text.text, startTime: text.startTime, duration: text.duration }));
+                          const obj = { generated: new Date().toISOString(), totalSegments: closure_0.length, segments: closure_0.map((text) => ({ text: text.text, startTime: text.startTime, duration: text.duration })) };
                           return JSON.stringify(obj, null, 2);
                         })(lib);
                         const _Date3 = Date;
@@ -730,9 +725,9 @@ function _submitBugReportWithScreenRecording() {
                       obj13[1] = uri.uploadConfig.reportDescription;
                       throwTypeErrorResult = uri;
                       obj13[2] = uri.uploadConfig.priority;
-                      throwTypeErrorResult = SURVEY_CONFIGS;
-                      obj14 = SURVEY_CONFIGS;
-                      if (SURVEY_CONFIGS == null) {
+                      throwTypeErrorResult = closure_3;
+                      obj14 = closure_3;
+                      if (closure_3 == null) {
                         obj14 = { name: null, squad: null, asana_inbox_id: "Array" };
                         obj14[0] = uri.uploadConfig.featureName;
                         obj14[1] = uri.uploadConfig.squadName;
@@ -789,7 +784,7 @@ function _submitBugReportWithScreenRecording() {
       }
     })();
   });
-  const _submitBugReportWithScreenRecording = tmp;
+  closure_11 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -801,9 +796,9 @@ function _submitBugReportWithScreenRecording() {
 function _handleStopAndSend() {
   let self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -816,7 +811,7 @@ function _handleStopAndSend() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -831,12 +826,12 @@ function _handleStopAndSend() {
               obj[0] = arg1;
               return obj;
             } else {
-              c1 = outer1_6.addListener("ScreenRecordingPreviewFinished", (saved) => {
-                let closure_0 = saved;
+              c1 = closure_1_6.addListener("ScreenRecordingPreviewFinished", (saved) => {
+                closure_0 = saved;
                 v3.remove();
                 if (saved.saved) {
                   const _setTimeout = setTimeout;
-                  const timerId = setTimeout(outer1_3(function*() {
+                  const timerId = setTimeout(closure_1_3(function*() {
                     if (c2 === 2) {
                       c2 = 3;
                       HermesBuiltin.throwTypeError();
@@ -848,7 +843,7 @@ function _handleStopAndSend() {
                         obj[0] = arg1;
                         return obj;
                       } else {
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -863,14 +858,14 @@ function _handleStopAndSend() {
                             obj[0] = arg1;
                             return obj;
                           } else {
-                            let closure_0 = tmp4;
-                            if (outer1_0 != null) {
+                            closure_0 = tmp4;
+                            if (closure_1_0 != null) {
                               tmp9();
                             }
                             c1 = 1;
                             c2 = 1;
-                            const obj1 = { value: null, done: false };
-                            obj1[0] = (function submitBugReportWithScreenRecording() { ... })(outer1_0.timestampedTranscription, outer1_0.audioFilePath);
+                            obj1 = { value: null, done: false };
+                            obj1[0] = (function submitBugReportWithScreenRecording() { ... })(closure_1_0.timestampedTranscription, closure_1_0.audioFilePath);
                             return obj1;
                           }
                         } else if (arg0 === 1) {
@@ -882,12 +877,12 @@ function _handleStopAndSend() {
                           obj2[0] = arg1;
                           return obj2;
                         } else {
-                          const state = outer2_4.getState();
+                          const state = closure_2_4.getState();
                           state.setIsUploading(false);
-                          const state1 = outer2_4.getState();
+                          const state1 = closure_2_4.getState();
                           state1.stopRecording();
                           c2 = 3;
-                          return { value: "HermesInternal", done: "HermesInternal" };
+                          return { value: "HermesInternal", done: null };
                         }
                       } catch (tmp13) {
                         c2 = tmp;
@@ -906,11 +901,11 @@ function _handleStopAndSend() {
                   obj.show(obj);
                 }
               });
-              let state = outer1_4.getState();
+              let state = closure_1_4.getState();
               state.setIsUploading(true);
               c2 = 1;
               c1 = 1;
-              let obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = (function stopRecordingProcess() {
                 const self = this;
                 const apply = closure_10.apply;
@@ -933,7 +928,7 @@ function _handleStopAndSend() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c1 = tmp;
@@ -942,7 +937,7 @@ function _handleStopAndSend() {
       }
     })();
   });
-  const _handleStopAndSend = tmp;
+  closure_12 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -954,9 +949,9 @@ function _handleStopAndSend() {
 function _handleRecordingPhase() {
   let self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       let callback2 = tmp2;
       yield (function checkAndRequestPermissions() {
@@ -1033,7 +1028,7 @@ function _handleRecordingPhase() {
       return arg1;
     })();
   });
-  const _handleRecordingPhase = tmp;
+  closure_13 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -1045,7 +1040,7 @@ function _handleRecordingPhase() {
 ({ NativeModules, NativeEventEmitter } = get_ActivityIndicator);
 const DCDPhotos = NativeModules.DCDPhotos;
 const nativeEventEmitter = new NativeEventEmitter(NativeModules.DCDScreenRecordingManager);
-const result = require("useScreenRecordingStore").fileFinishedImporting("modules/screen_recording/native/ScreenRecordingUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/screen_recording/native/ScreenRecordingUtils.tsx");
 
 export const handleStopAndSend = function handleStopAndSend() {
   const self = this;

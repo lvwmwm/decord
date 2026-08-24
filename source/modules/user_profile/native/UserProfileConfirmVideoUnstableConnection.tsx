@@ -1,36 +1,37 @@
-// Module ID: 11795
-// Function ID: 11796
+// Module ID: 11844
+// Function ID: 11845
 // Name: UserProfileConfirmVideoUnstableConnection
-// Dependencies: [19, 21, 4660, 1236, 4660, 2]
+// Dependencies: [19, 21, 4667, 1236, 4667, 2]
 // Exports: default
 
-// Module 11795 (UserProfileConfirmVideoUnstableConnection)
-import "noop";
-import jsxProd from "jsxProd";
+// Module 11844 (UserProfileConfirmVideoUnstableConnection)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: obj1, jsxs: c3 } = jsxProd);
-const result = require("getAlertModalItemKey").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmVideoUnstableConnection.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmVideoUnstableConnection.tsx");
 
 export default function UserProfileConfirmVideoUnstableConnection(onConfirm) {
   let obj = { title: null, content: null, actions: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.m2Hyj0);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.EhaK6B);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.m2Hyj0);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t.EhaK6B);
   obj = { children: null };
   obj = { text: null, onPress: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.ND1my3);
+  const intl3 = getSystemLocale.intl;
+  obj[0] = intl3.string(getSystemLocale.t.ND1my3);
   obj[1] = onConfirm.onConfirm;
-  const items = [callback(require(4660) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
-  const obj1 = { variant: "secondary", text: null };
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t.jEqEhy);
-  items[1] = callback(require(4660) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
+  const items = [callback(getAlertModalItemKey.AlertActionButton, obj, "confirm"), ];
+  obj1 = { variant: "secondary", text: null };
+  const intl4 = getSystemLocale.intl;
+  obj1[1] = intl4.string(getSystemLocale.t.jEqEhy);
+  items[1] = callback(getAlertModalItemKey.AlertActionButton, obj1, "cancel");
   obj[0] = items;
-  obj[2] = callback2(require(4660) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4660) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[2] = callback2(getAlertModalItemKey.AlertActions, obj);
+  return callback(getAlertModalItemKey.AlertModal, obj);
 };

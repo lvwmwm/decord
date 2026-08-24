@@ -1,35 +1,38 @@
-// Module ID: 13937
-// Function ID: 13938
+// Module ID: 14005
+// Function ID: 14006
 // Name: MaybeClearBuildOverride
-// Dependencies: [5, 32, 19, 17, 10638, 21, 4661, 589, 10968, 4745, 1236, 4104, 1208, 709, 1297, 12362, 4734, 2]
+// Dependencies: [5, 32, 19, 17, 10677, 21, 4668, 589, 11007, 4750, 1236, 4107, 1208, 709, 1297, 12414, 4739, 2]
 
-// Module 13937 (MaybeClearBuildOverride)
-import closure_3 from "jsxProd";
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import get_ActivityIndicator from "set";
-import getCurrentBuildOverride from "getCurrentBuildOverride";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14005 (MaybeClearBuildOverride)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import _modDef1208 from "module_1208" /* 1208 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import Button2 from "Button" /* 4750 */;
+import getAppCrashSource from "getAppCrashSource" /* 12414 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_8 from "getCurrentBuildOverride" /* 10677 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function MaybeClearBuildOverride() {
   function _clearOverride() {
     const self = this;
-    const tmp = outer1_3(function*() {
+    const tmp = closure_1_3(function*() {
       const callback = tmp3;
-      let c3 = 1;
-      outer1_0(true);
-      const obj1 = outer1_0(outer1_2[8]);
+      c3 = 1;
+      closure_1_0(true);
+      obj1 = closure_1_0(closure_1_2[8]);
       yield obj1.clearBuildOverride();
       if (1 === tmp7) {
         c3 = 0;
         callback(false);
-        let c4 = 3;
+        c4 = 3;
       } else if (arg0 === 1) {
         c4 = 3;
         throw arg1;
@@ -39,7 +42,7 @@ function MaybeClearBuildOverride() {
       c3 = 0;
       return arg1;
     });
-    const _clearOverride = tmp;
+    closure_1 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -51,7 +54,7 @@ function MaybeClearBuildOverride() {
   let tmp = callback(importAllResult.useState(false), 2);
   const _require = tmp[1];
   let obj = _require(589);
-  const items = [getCurrentBuildOverride];
+  const items = [closure_8];
   if (null == obj.useStateFromStores(items, () => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let id;
@@ -79,7 +82,7 @@ function MaybeClearBuildOverride() {
       }
       return applyArgumentsResult;
     };
-    return callback2(tmp2(4745).Button, obj);
+    return callback2(tmp2(4750).Button, obj);
   }
 }
 let c5 = importAllResult;
@@ -103,9 +106,9 @@ prototype["triggerSoftCrash"] = function triggerSoftCrash(error, extra) {
   let obj = { error, info: extra };
   this.setState(obj);
   obj = { extra };
-  importDefault(1208).captureCrash(error, obj);
-  const obj2 = importDefault(1208);
-  importDefault(709).dispatch({ type: "CLEAR_CACHES", reason: "App Crashed" });
+  _modDef1208.captureCrash(error, obj);
+  const obj2 = _modDef1208;
+  dispatcherDefault.dispatch({ type: "CLEAR_CACHES", reason: "App Crashed" });
 };
 prototype["handleReload"] = function handleReload() {
   BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
@@ -133,14 +136,14 @@ prototype["componentWillUnmount"] = function componentWillUnmount() {
 prototype["render"] = function render() {
   const self = this;
   const tmp = callback3(this.context);
-  const error = this.state.error;
+  error = this.state.error;
   if (null !== error) {
     let obj = { Illustration: null, title: null, body: null, titleStyle: null, bodyStyle: null, children: null };
-    obj[0] = require(12362) /* getAppCrashSource */.AppCrash;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl.string(require(1236) /* getSystemLocale */.t.tx8CkI);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.CvQlAH);
+    obj[0] = getAppCrashSource.AppCrash;
+    const intl = getSystemLocale.intl;
+    obj[1] = intl.string(getSystemLocale.t.tx8CkI);
+    const intl2 = getSystemLocale.intl;
+    obj[2] = intl2.string(getSystemLocale.t.CvQlAH);
     ({ text: obj[3], text: obj[4] } = tmp);
     obj = { style: null, variant: "text-sm/medium", color: "text-muted", children: null };
     obj[0] = tmp.error;
@@ -159,26 +162,26 @@ prototype["render"] = function render() {
       str = "Unknown Error";
     }
     obj[3] = str;
-    const items = [closure_9(require(4734) /* Text */.Text, obj), , ];
+    const items = [closure_9(Text.Text, obj), , ];
     obj = { style: null, children: null };
     obj[0] = tmp.buttons;
     const items1 = [closure_9(MaybeClearBuildOverride, {}), ];
-    const obj1 = { text: null, onPress: null };
+    obj1 = { text: null, onPress: null };
     const intl3 = tmp3(1236).intl;
-    obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t["4n8OJn"]);
+    obj1[0] = intl3.string(getSystemLocale.t["4n8OJn"]);
     obj1[1] = self.handleReload;
-    items1[1] = closure_9(require(4745) /* Button */.Button, obj1);
+    items1[1] = closure_9(Button2.Button, obj1);
     obj[1] = items1;
     items[1] = closure_10(closure_7, obj);
     items[2] = null;
     obj[5] = items;
-    let children = tmp2(require(1297) /* Button */.EmptyState, obj);
+    let children = tmp2(Button.EmptyState, obj);
   } else {
     children = self.props.children;
   }
   return children;
 };
 ErrorBoundary.contextType = require("ManaContext").ThemeContext;
-const result = require("noop").fileFinishedImporting("components_native/ErrorBoundary.tsx");
+const result = require("set").fileFinishedImporting("components_native/ErrorBoundary.tsx");
 
 export default ErrorBoundary;

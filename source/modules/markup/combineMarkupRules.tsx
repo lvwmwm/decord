@@ -1,11 +1,13 @@
-// Module ID: 6808
-// Function ID: 6809
+// Module ID: 6845
+// Function ID: 6846
 // Name: combineMarkupRules
 // Dependencies: [2]
 // Exports: default
 
-// Module 6808 (combineMarkupRules)
-const result = require("set").fileFinishedImporting("modules/markup/combineMarkupRules.tsx");
+// Module 6845 (combineMarkupRules)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/markup/combineMarkupRules.tsx");
 
 export default function combineMarkupRules(arg0) {
   let obj = {};

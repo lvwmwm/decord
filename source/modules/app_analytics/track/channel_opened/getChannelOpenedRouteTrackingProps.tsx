@@ -1,25 +1,27 @@
-// Module ID: 15959
-// Function ID: 15960
+// Module ID: 16056
+// Function ID: 16057
 // Name: getChannelOpenedRouteTrackingProps
-// Dependencies: [1391, 7521, 1222, 2]
+// Dependencies: [1391, 7559, 1222, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 15959 (getChannelOpenedRouteTrackingProps)
-import ensureGuildLoaded from "ensureGuildLoaded";
+// Module 16056 (getChannelOpenedRouteTrackingProps)
+import transitionTo from "transitionTo" /* 1222 */;
+import collectThreadMetadata from "collectThreadMetadata" /* 7559 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
 
-const require = arg1;
-let result = require("transitionTo").fileFinishedImporting("modules/app_analytics/track/channel_opened/getChannelOpenedRouteTrackingProps.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("modules/app_analytics/track/channel_opened/getChannelOpenedRouteTrackingProps.tsx");
 
 export const getChannelOpenedRouteTrackingProps = function getChannelOpenedRouteTrackingProps(selectedChannelId) {
-  let obj = require(7521) /* collectThreadMetadata */;
+  let obj = collectThreadMetadata;
   const result = obj.collectThreadMetadata(channel.getChannel(selectedChannelId), true);
   let _location;
   if (result != null) {
     _location = result.location;
   }
   if (_location == null) {
-    _location = require(1222) /* transitionTo */.getLastRouteChangeSource();
-    const tmpResult = require(1222) /* transitionTo */;
+    _location = transitionTo.getLastRouteChangeSource();
+    const tmpResult = transitionTo;
   }
   obj = result;
   if (result == null) {
@@ -28,7 +30,7 @@ export const getChannelOpenedRouteTrackingProps = function getChannelOpenedRoute
   obj = {};
   const merged = Object.assign(obj);
   if (null != _location) {
-    const obj1 = { location: null };
+    obj1 = { location: null };
     obj1[0] = _location;
     let obj2 = obj1;
   } else {

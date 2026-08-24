@@ -1,20 +1,20 @@
-// Module ID: 10641
-// Function ID: 10642
+// Module ID: 10680
+// Function ID: 10681
 // Name: updateGiftCode
-// Dependencies: [9626, 676, 4259, 3975, 4381, 709, 10642, 589, 2]
+// Dependencies: [9663, 676, 4263, 3978, 4385, 709, 10681, 589, 2]
 
-// Module 10641 (updateGiftCode)
-import frozen from "frozen";
-import ME from "ME";
-import { Store } from "initialize";
-import set from "start";
+// Module 10680 (updateGiftCode)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import tDefault from "t" /* 3978 */;
+import _resolveGiftCode from "_resolveGiftCode" /* 4385 */;
+import closure_3 from "frozen" /* 9663 */;
+import ME from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function updateGiftCode(giftCode) {
-  const fromServer = frozen.createFromServer(giftCode);
+  const fromServer = closure_3.createFromServer(giftCode);
   const code = fromServer.code;
   if (map.has(code)) {
     let value = obj.get(code);
@@ -22,14 +22,14 @@ function updateGiftCode(giftCode) {
   } else {
     const result1 = set(code, fromServer);
     if (null != fromServer.expiresAt) {
-      const timeout = new code(4259).Timeout();
+      const timeout = new code(4263).Timeout();
       closure_7[code] = timeout;
       value = obj.get(code);
       if (null != value) {
         if (null != value.expiresAt) {
           const expiresAt = value.expiresAt;
           const valueOfResult = expiresAt.valueOf();
-          const diff = valueOfResult - importDefault(3975)().valueOf();
+          const diff = valueOfResult - tDefault().valueOf();
           if (diff <= 0) {
             obj.delete(code);
             delete tmp2[tmp];
@@ -37,80 +37,80 @@ function updateGiftCode(giftCode) {
           } else if (null != tmp18[code]) {
             const _Math = Math;
             obj2.start(Math.min(closure_5, diff), () => {
-              let value = outer1_8.get(closure_0);
+              let value = closure_1_8.get(closure_0);
               if (null != value) {
                 if (null != value.expiresAt) {
                   let expiresAt = value.expiresAt;
                   let valueOfResult = expiresAt.valueOf();
-                  let diff = valueOfResult - outer1_1(outer1_2[3])().valueOf();
+                  let diff = valueOfResult - closure_1_1(closure_1_2[3])().valueOf();
                   if (diff <= 0) {
-                    outer1_8.delete(tmp3);
+                    closure_1_8.delete(tmp3);
                     delete tmp[tmp2];
-                    outer1_18.emitChange();
-                  } else if (null != outer1_7[tmp3]) {
+                    closure_1_18.emitChange();
+                  } else if (null != closure_1_7[tmp3]) {
                     let _Math = Math;
-                    obj2.start(Math.min(outer1_5, diff), () => {
-                      let value = outer1_8.get(closure_0);
+                    obj2.start(Math.min(closure_1_5, diff), () => {
+                      let value = closure_1_8.get(closure_0);
                       if (null != value) {
                         if (null != value.expiresAt) {
                           let expiresAt = value.expiresAt;
                           let valueOfResult = expiresAt.valueOf();
-                          let diff = valueOfResult - outer1_1(outer1_2[3])().valueOf();
+                          let diff = valueOfResult - closure_1_1(closure_1_2[3])().valueOf();
                           if (diff <= 0) {
-                            outer1_8.delete(tmp3);
+                            closure_1_8.delete(tmp3);
                             delete tmp[tmp2];
-                            outer1_18.emitChange();
-                          } else if (null != outer1_7[tmp3]) {
+                            closure_1_18.emitChange();
+                          } else if (null != closure_1_7[tmp3]) {
                             let _Math = Math;
-                            obj2.start(Math.min(outer1_5, diff), () => {
-                              let value = outer1_8.get(closure_0);
+                            obj2.start(Math.min(closure_1_5, diff), () => {
+                              let value = closure_1_8.get(closure_0);
                               if (null != value) {
                                 if (null != value.expiresAt) {
                                   let expiresAt = value.expiresAt;
                                   let valueOfResult = expiresAt.valueOf();
-                                  let diff = valueOfResult - outer1_1(outer1_2[3])().valueOf();
+                                  let diff = valueOfResult - closure_1_1(closure_1_2[3])().valueOf();
                                   if (diff <= 0) {
-                                    outer1_8.delete(tmp3);
+                                    closure_1_8.delete(tmp3);
                                     delete tmp[tmp2];
-                                    outer1_18.emitChange();
-                                  } else if (null != outer1_7[tmp3]) {
+                                    closure_1_18.emitChange();
+                                  } else if (null != closure_1_7[tmp3]) {
                                     let _Math = Math;
-                                    obj2.start(Math.min(outer1_5, diff), () => {
-                                      let value = outer1_8.get(closure_0);
+                                    obj2.start(Math.min(closure_1_5, diff), () => {
+                                      let value = closure_1_8.get(closure_0);
                                       if (null != value) {
                                         if (null != value.expiresAt) {
                                           let expiresAt = value.expiresAt;
                                           let valueOfResult = expiresAt.valueOf();
-                                          let diff = valueOfResult - outer1_1(outer1_2[3])().valueOf();
+                                          let diff = valueOfResult - closure_1_1(closure_1_2[3])().valueOf();
                                           if (diff <= 0) {
-                                            outer1_8.delete(tmp3);
+                                            closure_1_8.delete(tmp3);
                                             delete tmp[tmp2];
-                                            outer1_18.emitChange();
-                                          } else if (null != outer1_7[tmp3]) {
+                                            closure_1_18.emitChange();
+                                          } else if (null != closure_1_7[tmp3]) {
                                             let _Math = Math;
-                                            obj2.start(Math.min(outer1_5, diff), () => { ... });
+                                            obj2.start(Math.min(closure_1_5, diff), () => { ... });
                                           }
-                                          let obj3 = outer1_1(outer1_2[3])();
+                                          let obj3 = closure_1_1(closure_1_2[3])();
                                         }
                                       }
                                     });
                                   }
-                                  let obj3 = outer1_1(outer1_2[3])();
+                                  let obj3 = closure_1_1(closure_1_2[3])();
                                 }
                               }
                             });
                           }
-                          let obj3 = outer1_1(outer1_2[3])();
+                          let obj3 = closure_1_1(closure_1_2[3])();
                         }
                       }
                     });
                   }
-                  let obj3 = outer1_1(outer1_2[3])();
+                  let obj3 = closure_1_1(closure_1_2[3])();
                 }
               }
             });
           }
-          const obj4 = importDefault(3975)();
+          const obj4 = tDefault();
         }
       }
       tmp18 = closure_7;
@@ -127,9 +127,9 @@ function resolveMessageGiftCodes(message, arg1) {
       return false;
     }
   }
-  let obj = require(4381) /* _resolveGiftCode */;
-  const isGiftCodeEmbedResult = require(4381) /* _resolveGiftCode */.isGiftCodeEmbed(message);
-  const findGiftCodes = require(4381) /* _resolveGiftCode */.findGiftCodes;
+  let obj = _resolveGiftCode;
+  const isGiftCodeEmbedResult = _resolveGiftCode.isGiftCodeEmbed(message);
+  const findGiftCodes = _resolveGiftCode.findGiftCodes;
   if (isGiftCodeEmbedResult) {
     let embeds;
     if (message != null) {
@@ -149,7 +149,7 @@ function resolveMessageGiftCodes(message, arg1) {
   }
   if (0 !== findGiftCodesResult.length) {
     const item = findGiftCodesResult.forEach((arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       let hasItem = items.includes(arg0);
       if (!hasItem) {
         hasItem = closure_11.includes(arg0);
@@ -160,8 +160,8 @@ function resolveMessageGiftCodes(message, arg1) {
           items[HermesBuiltin.arraySpread(items, 0)] = arg0;
         }
         callback(table[5]).wait(() => {
-          const giftCode = outer1_1(outer1_2[6]).resolveGiftCode(closure_0, false, true);
-          return giftCode.catch(outer1_6);
+          const giftCode = closure_1_1(closure_1_2[6]).resolveGiftCode(closure_0, false, true);
+          return giftCode.catch(closure_1_6);
         });
         const obj = callback(table[5]);
       }
@@ -202,6 +202,7 @@ let set = new Set();
 let closure_13 = {};
 let closure_14 = {};
 const set1 = new Set();
+const Store = initializeDefault.Store;
 class GiftCodeStore extends Store {
 }
 const prototype = GiftCodeStore.prototype;
@@ -224,9 +225,9 @@ prototype["getError"] = function getError(arg0) {
   return tmp;
 };
 prototype["getForGifterSKUAndPlan"] = function getForGifterSKUAndPlan(id, skuId, subscriptionPlanId) {
-  let closure_0 = id;
-  let closure_1 = skuId;
-  let closure_2 = subscriptionPlanId;
+  closure_0 = id;
+  closure_1 = skuId;
+  closure_2 = subscriptionPlanId;
   return Array.from(map.values()).filter((userId) => {
     let tmp = userId.userId === closure_0;
     if (tmp) {
@@ -252,10 +253,10 @@ prototype["getIsAccepting"] = function getIsAccepting(code) {
   return closure_10.includes(code);
 };
 prototype["getUserGiftCodesFetchingForSKUAndPlan"] = function getUserGiftCodesFetchingForSKUAndPlan(skuId, subscriptionPlanId) {
-  return set.has(require(4381) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
+  return set.has(_resolveGiftCode.makeComboId(skuId, subscriptionPlanId));
 };
 prototype["getUserGiftCodesLoadedAtForSKUAndPlan"] = function getUserGiftCodesLoadedAtForSKUAndPlan(skuId, subscriptionPlanId) {
-  const obj = require(4381) /* _resolveGiftCode */;
+  const obj = _resolveGiftCode;
   return table2[obj.makeComboId(obj, skuId, subscriptionPlanId)];
 };
 prototype["getResolvingCodes"] = function getResolvingCodes() {
@@ -268,7 +269,7 @@ prototype["getAcceptingCodes"] = function getAcceptingCodes() {
   return closure_10;
 };
 GiftCodeStore.displayName = "GiftCodeStore";
-const giftCodeStore = new GiftCodeStore(require("dispatcher"), {
+const giftCodeStore = new GiftCodeStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
     set1.clear();
     return false;
@@ -298,7 +299,7 @@ const giftCodeStore = new GiftCodeStore(require("dispatcher"), {
   },
   GIFT_CODE_RESOLVE_FAILURE: function handleGiftCodeResolveFailure(code) {
     code = code.code;
-    const error = code.error;
+    error = code.error;
     closure_9 = closure_9.filter((arg0) => arg0 !== code);
     if (!items.includes(code)) {
       items = [];
@@ -328,7 +329,7 @@ const giftCodeStore = new GiftCodeStore(require("dispatcher"), {
   },
   GIFT_CODE_REDEEM_FAILURE: function handleGiftCodeAcceptFailure(code) {
     code = code.code;
-    const error = code.error;
+    error = code.error;
     closure_10 = closure_10.filter((arg0) => arg0 !== code);
     const value = map.get(code);
     closure_14[code] = error;
@@ -357,26 +358,20 @@ const giftCodeStore = new GiftCodeStore(require("dispatcher"), {
     updateGiftCode(giftCode.giftCode);
   },
   GIFT_CODES_FETCH: function handleGiftCodesFetch(arg0) {
-    let skuId;
-    let subscriptionPlanId;
     ({ skuId, subscriptionPlanId } = arg0);
-    set.add(require(4381) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
+    set.add(_resolveGiftCode.makeComboId(skuId, subscriptionPlanId));
   },
   GIFT_CODES_FETCH_SUCCESS: function handleGiftCodesFetchSuccess(giftCodes) {
-    let skuId;
-    let subscriptionPlanId;
     giftCodes = giftCodes.giftCodes;
     ({ skuId, subscriptionPlanId } = giftCodes);
     const item = giftCodes.forEach(updateGiftCode);
-    const comboId = require(4381) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId);
+    const comboId = _resolveGiftCode.makeComboId(skuId, subscriptionPlanId);
     closure_13[comboId] = Date.now();
     set.delete(comboId);
   },
   GIFT_CODES_FETCH_FAILURE: function handleGiftCodesFetchFail(arg0) {
-    let skuId;
-    let subscriptionPlanId;
     ({ skuId, subscriptionPlanId } = arg0);
-    set.delete(require(4381) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
+    set.delete(_resolveGiftCode.makeComboId(skuId, subscriptionPlanId));
   },
   MESSAGE_CREATE: handleMessage,
   MESSAGE_UPDATE: handleMessage,

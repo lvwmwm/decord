@@ -1,33 +1,48 @@
-// Module ID: 14585
-// Function ID: 14586
+// Module ID: 14653
+// Function ID: 14654
 // Name: EmojiGallery
-// Dependencies: [19, 17, 21, 9420, 9422, 14586, 2]
+// Dependencies: [19, 17, 21, 9457, 9459, 14654, 2]
 // Exports: default
 
-// Module 14585 (EmojiGallery)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 14653 (EmojiGallery)
+import noopAll from "noop" /* 19 */;
+import chunkDefault from "chunk" /* 9457 */;
+import GappedList from "GappedList" /* 9459 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionEmojiGallery.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionEmojiGallery.tsx");
 
 export default function EmojiGallery(emojiIds) {
-  let maxPerRow;
-  let require;
   ({ guildId: require, maxPerRow } = emojiIds);
   if (maxPerRow === undefined) {
     maxPerRow = 9;
   }
   let obj = { children: null };
-  obj = { gap: 8, children: null };
-  obj[1] = importDefault(9420)(emojiIds.emojiIds, maxPerRow).map((arr) => {
-    let obj = { style: { flexDirection: "row" }, children: null };
-    obj = { gap: 16, children: null };
-    obj[1] = arr.map((id) => outer1_4(outer1_1(outer1_2[5]), { size: 22, fontSize: 18, guildId: closure_0, id }, id));
-    obj[1] = outer1_4(outer1_0(outer1_2[4]).GappedList, obj);
-    return outer1_4(outer1_3, obj, arg1);
+  obj = {
+    gap: 8,
+    children: chunkDefault(emojiIds.emojiIds, maxPerRow).map((arr) => {
+      let obj = { style: { flexDirection: "row" }, children: null };
+      obj = { gap: 16, children: arr.map((id) => closure_1_4(closure_1_1(closure_1_2[5]), { size: 22, fontSize: 18, guildId: closure_0, id }, id)) };
+      obj[1] = closure_1_4(closure_1_0(closure_1_2[4]).GappedList, obj);
+      return closure_1_4(closure_1_3, obj, arg1);
+    })
+  };
+  obj[0] = jsx(GappedList.GappedList, {
+    gap: 8,
+    children: chunkDefault(emojiIds.emojiIds, maxPerRow).map((arr) => {
+      let obj = { style: { flexDirection: "row" }, children: null };
+      obj = { gap: 16, children: arr.map((id) => closure_1_4(closure_1_1(closure_1_2[5]), { size: 22, fontSize: 18, guildId: closure_0, id }, id)) };
+      obj[1] = closure_1_4(closure_1_0(closure_1_2[4]).GappedList, obj);
+      return closure_1_4(closure_1_3, obj, arg1);
+    })
   });
-  obj[0] = jsx(require(9422) /* GappedList */.GappedList, { gap: 8, children: null });
-  return <View gap={8}>{null}</View>;
+  return <View gap={8}>{chunkDefault(arg0.emojiIds, maxPerRow).map((arr) => {
+    let obj = { style: { flexDirection: "row" }, children: null };
+    obj = { gap: 16, children: arr.map((id) => closure_1_4(closure_1_1(closure_1_2[5]), { size: 22, fontSize: 18, guildId: closure_0, id }, id)) };
+    obj[1] = closure_1_4(closure_1_0(closure_1_2[4]).GappedList, obj);
+    return closure_1_4(closure_1_3, obj, arg1);
+  })}</View>;
 };

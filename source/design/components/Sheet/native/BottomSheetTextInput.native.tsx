@@ -1,28 +1,24 @@
-// Module ID: 8863
-// Function ID: 8864
+// Module ID: 8900
+// Function ID: 8901
 // Name: BottomSheetTextInput
-// Dependencies: [19, 21, 7350, 7348, 8864, 2]
+// Dependencies: [19, 21, 7388, 7386, 8901, 2]
 // Exports: BottomSheetTextInput
 
-// Module 8863 (BottomSheetTextInput)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 8900 (BottomSheetTextInput)
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("useBottomSheetKeyboardHandling").fileFinishedImporting("design/components/Sheet/native/BottomSheetTextInput.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Sheet/native/BottomSheetTextInput.native.tsx");
 
 export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
-  let onBlur;
-  let onBlur2;
-  let onFocus;
-  let onFocus2;
   ref = ref.ref;
   ({ onFocus, onBlur } = ref);
   ref = undefined;
   const merged = Object.assign(ref, Object.create(null));
   ref = React.useRef(null);
-  ({ onFocus: onFocus2, onBlur: onBlur2 } = ref(7350)({ onFocus, onBlur }));
-  let obj = ref(7348);
+  ({ onFocus: onFocus2, onBlur: onBlur2 } = ref(7388)({ onFocus, onBlur }));
+  let obj = ref(7386);
   const keyboardBlurring = obj.useKeyboardBlurring(ref);
   obj = {
     ref(current) {
@@ -36,9 +32,9 @@ export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
     onFocus: onFocus2,
     onBlur: onBlur2
   };
-  const tmp3 = ref(7350)({ onFocus, onBlur });
+  const tmp3 = ref(7388)({ onFocus, onBlur });
   const merged1 = Object.assign(merged);
-  return jsx(ref(8864), {
+  return jsx(ref(8901), {
     ref(current) {
       ref.current = current;
       if (typeof ref === "function") {

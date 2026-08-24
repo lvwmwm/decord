@@ -1,17 +1,21 @@
-// Module ID: 13831
-// Function ID: 13832
+// Module ID: 13889
+// Function ID: 13890
 // Name: readFavoriteGIFs
 // Dependencies: [685, 676, 589, 1341, 12, 1342, 595, 11, 2]
 
-// Module 13831 (readFavoriteGIFs)
-import MAX_FAVORITES from "MAX_FAVORITES";
-import { ID_REGEX } from "ME";
+// Module 13889 (readFavoriteGIFs)
+import set from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import Storage4 from "Storage" /* 595 */;
+import ME from "ME" /* 676 */;
+import create from "create" /* 1341 */;
+import b64ToProto from "b64ToProto" /* 1342 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
 
-let c3;
-let c4;
 function readFavoriteGIFs(arg0) {
-  let c0 = 1;
-  const importDefault = { IMAGE: "IMAGE", VIDEO: "VIDEO" };
+  c0 = 1;
+  importDefault = { IMAGE: "IMAGE", VIDEO: "VIDEO" };
   const PersistedStore = importDefault(state[2]).PersistedStore;
   const items = [
     (arg0) => {
@@ -67,6 +71,7 @@ function readFavoriteGIFs(arg0) {
   }
 }
 ({ MAX_FAVORITES: c3, MAX_FAVORITE_GIFS_SIZE: c4 } = MAX_FAVORITES);
+const ID_REGEX = ME.ID_REGEX;
 const selectedChannelGuildFrecency = "selectedChannelGuildFrecency";
 let items = [
   {
@@ -77,7 +82,7 @@ let items = [
         return false;
       } else {
         if (null == favoriteGifs.favoriteGifs) {
-          const FavoriteGIFs = require(1341) /* create */.FavoriteGIFs;
+          const FavoriteGIFs = create.FavoriteGIFs;
           favoriteGifs.favoriteGifs = FavoriteGIFs.create();
         }
         favoriteGifs.favoriteGifs.gifs = {};
@@ -96,7 +101,7 @@ let items = [
   {
     version: 3,
     run(favoriteStickers) {
-      const PersistedStore = importDefault(589).PersistedStore;
+      const PersistedStore = initializeDefault.PersistedStore;
       const items = [
         (arg0) => {
           let tmp = arg0;
@@ -131,7 +136,7 @@ let items = [
       } else {
         let flag = false;
         if (state.favorites.length > 0) {
-          const FavoriteStickers = require(1341) /* create */.FavoriteStickers;
+          const FavoriteStickers = create.FavoriteStickers;
           favoriteStickers.favoriteStickers = FavoriteStickers.create();
           let tmpResult = tmp(12);
           favoriteStickers.favoriteStickers.stickerIds = tmpResult.uniq(state.favorites).slice(0, closure_3);
@@ -140,24 +145,24 @@ let items = [
         }
         tmpResult = tmp(12);
         if (tmpResult.size(state.usageHistory) > 0) {
-          const StickerFrecency = require(1341) /* create */.StickerFrecency;
+          const StickerFrecency = create.StickerFrecency;
           favoriteStickers.stickerFrecency = StickerFrecency.create();
-          favoriteStickers.stickerFrecency.stickers = require(1342) /* b64ToProto */.serializeUsageHistory(state.usageHistory, 100);
+          favoriteStickers.stickerFrecency.stickers = b64ToProto.serializeUsageHistory(state.usageHistory, 100);
           flag = true;
-          const obj3 = require(1342) /* b64ToProto */;
+          const obj3 = b64ToProto;
         }
         return flag;
       }
     },
     cleanup() {
-      const Storage = require(595) /* Storage */.Storage;
+      const Storage = Storage4.Storage;
       Storage.remove("StickersPersistedStore");
     }
   },
   {
     version: 4,
     run(favoriteEmojis) {
-      const PersistedStore = importDefault(589).PersistedStore;
+      const PersistedStore = initializeDefault.PersistedStore;
       const items = [
         () => {
           const Storage = callback(table[6]).Storage;
@@ -175,7 +180,7 @@ let items = [
         }
         let flag = false;
         if (tmp3) {
-          const FavoriteEmojis = require(1341) /* create */.FavoriteEmojis;
+          const FavoriteEmojis = create.FavoriteEmojis;
           favoriteEmojis.favoriteEmojis = FavoriteEmojis.create();
           let tmpResult = tmp(12);
           favoriteEmojis.favoriteEmojis.emojis = tmpResult.uniq(state.favorites).slice(0, closure_3);
@@ -184,21 +189,21 @@ let items = [
         }
         tmpResult = tmp(12);
         if (tmpResult.size(state.usageHistory) > 0) {
-          const EmojiFrecency = require(1341) /* create */.EmojiFrecency;
+          const EmojiFrecency = create.EmojiFrecency;
           favoriteEmojis.emojiFrecency = EmojiFrecency.create();
-          favoriteEmojis.emojiFrecency.emojis = require(1342) /* b64ToProto */.serializeUsageHistory(state.usageHistory, 100);
+          favoriteEmojis.emojiFrecency.emojis = b64ToProto.serializeUsageHistory(state.usageHistory, 100);
           flag = true;
-          const obj3 = require(1342) /* b64ToProto */;
+          const obj3 = b64ToProto;
         }
         return flag;
       }
     },
     cleanup() {
-      const Storage = require(595) /* Storage */.Storage;
+      const Storage = Storage4.Storage;
       Storage.remove("EmojiStore");
-      const Storage2 = require(595) /* Storage */.Storage;
+      const Storage2 = Storage4.Storage;
       Storage2.remove("EmojiUsageHistory");
-      const Storage3 = require(595) /* Storage */.Storage;
+      const Storage3 = Storage4.Storage;
       Storage3.remove("EmojiDiversitySurrogate");
     }
   },
@@ -217,8 +222,8 @@ let items = [
       if (0 === arr.length) {
         return false;
       } else {
-        const values = importDefault(12)(favoriteGifs.favoriteGifs.gifs).values();
-        const obj = importDefault(12)(favoriteGifs.favoriteGifs.gifs);
+        const values = applyDefault(favoriteGifs.favoriteGifs.gifs).values();
+        const obj = applyDefault(favoriteGifs.favoriteGifs.gifs);
         const item = values.sortBy("order").forEach((arg0, arg1) => {
           const sum = arr.length + 1 + arg1;
           arg0.order = sum;
@@ -299,25 +304,25 @@ let items = [
   {
     version: 7,
     run(applicationCommandFrecency) {
-      const PersistedStore = importDefault(589).PersistedStore;
+      const PersistedStore = initializeDefault.PersistedStore;
       const state = PersistedStore.migrateAndReadStoreState("ApplicationCommandFrecency", []).state;
       if (null == state) {
         return false;
       } else {
         let flag = false;
         if (tmpResult.size(state.usageHistory) > 0) {
-          const ApplicationCommandFrecency = require(1341) /* create */.ApplicationCommandFrecency;
+          const ApplicationCommandFrecency = create.ApplicationCommandFrecency;
           applicationCommandFrecency.applicationCommandFrecency = ApplicationCommandFrecency.create();
-          applicationCommandFrecency.applicationCommandFrecency.applicationCommands = require(1342) /* b64ToProto */.serializeUsageHistory(state.usageHistory, 500);
+          applicationCommandFrecency.applicationCommandFrecency.applicationCommands = b64ToProto.serializeUsageHistory(state.usageHistory, 500);
           flag = true;
-          const obj = require(1342) /* b64ToProto */;
+          const obj = b64ToProto;
         }
         return flag;
       }
       const tmp = importDefault;
     },
     cleanup() {
-      const Storage = require(595) /* Storage */.Storage;
+      const Storage = Storage4.Storage;
       Storage.remove("ApplicationCommandFrecency");
     }
   },
@@ -352,14 +357,14 @@ let items = [
       }
     },
     cleanup() {
-      const Storage = require(595) /* Storage */.Storage;
+      const Storage = Storage4.Storage;
       Storage.remove("SoundboardFavoriteStore");
     }
   },
   {
     version: 9,
     run(guildAndChannelFrecency) {
-      const Storage = require(595) /* Storage */.Storage;
+      const Storage = Storage4.Storage;
       const value = Storage.get(selectedChannelGuildFrecency);
       if (null == value) {
         return false;
@@ -375,14 +380,14 @@ let items = [
           }
           continue;
         }
-        const GuildAndChannelFrecency = require(1341) /* create */.GuildAndChannelFrecency;
+        const GuildAndChannelFrecency = create.GuildAndChannelFrecency;
         guildAndChannelFrecency.guildAndChannelFrecency = GuildAndChannelFrecency.create();
-        guildAndChannelFrecency.guildAndChannelFrecency.guildAndChannels = require(1342) /* b64ToProto */.serializeUsageHistory(value, 100);
+        guildAndChannelFrecency.guildAndChannelFrecency.guildAndChannels = b64ToProto.serializeUsageHistory(value, 100);
         return true;
       }
     },
     cleanup() {
-      const Storage = require(595) /* Storage */.Storage;
+      const Storage = Storage4.Storage;
       Storage.remove(selectedChannelGuildFrecency);
     }
   },
@@ -398,9 +403,9 @@ let items = [
         }
         let flag = false;
         if (obj2.size(emojis) > 0) {
-          const EmojiFrecency = require(1341) /* create */.EmojiFrecency;
+          const EmojiFrecency = create.EmojiFrecency;
           const obj = EmojiFrecency.create();
-          const EmojiFrecency2 = require(1341) /* create */.EmojiFrecency;
+          const EmojiFrecency2 = create.EmojiFrecency;
           EmojiFrecency2.mergePartial(obj, emojiFrecency.emojiFrecency);
           if (null != emojiFrecency.emojiReactionFrecency) {
             const EmojiFrecency3 = tmp3(1341).EmojiFrecency;
@@ -443,7 +448,7 @@ let items = [
                 }
                 let tmp3 = require;
                 let tmp4 = dependencyMap;
-                let isMatch = tmp9.format !== require(1341) /* create */.GIFType.IMAGE;
+                let isMatch = tmp9.format !== create.GIFType.IMAGE;
                 if (isMatch) {
                   let obj = /\.(webp|avif|gif)(\?|$)/i;
                   isMatch = obj.test(tmp9.src);
@@ -468,6 +473,6 @@ let items = [
     }
   }
 ];
-const result = require("initialize").fileFinishedImporting("modules/user_settings/FrecencySettingsMigrations.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/FrecencySettingsMigrations.tsx");
 
 export default items;

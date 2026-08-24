@@ -4,13 +4,13 @@
 // Dependencies: [41, 42, 92, 38]
 
 // Module 209 (NativeEventEmitter)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import _createClassDefault from "_createClass" /* 42 */;
+import closure_2 from "_classCallCheck" /* 41 */;
 
 let NativeEventEmitter = importDefault;
 class NativeEventEmitter {
   constructor(arg0) {
-    tmp = outer1_2(this, NativeEventEmitter);
+    tmp = closure_2(this, NativeEventEmitter);
     tmp2 = global && typeof global.addListener === "function";
     tmp3 = global && typeof global.removeListeners === "function";
     if (global) {
@@ -92,4 +92,4 @@ let items = [
   }
 ];
 
-export default _createClass(NativeEventEmitter, items);
+export default _createClassDefault(NativeEventEmitter, items);

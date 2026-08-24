@@ -5,7 +5,9 @@
 // Exports: arrayIsNotEmpty, assertUnreachable, dangerouslyCast, exact, hasOwnProperty
 
 // Module 1404 (exact)
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/type-utils/TypeUtils.tsx");
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/packages/type-utils/TypeUtils.tsx");
 
 export function exact(arg0) {
   return arg0;
@@ -27,7 +29,7 @@ export const assertUnreachable = function assertUnreachable(closure_0, arg1) {
   }
   if (flag) {
     const _Error = Error;
-    const error = new Error();
+    error = new Error();
     throw error;
   }
 };

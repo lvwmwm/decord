@@ -1,20 +1,23 @@
-// Module ID: 6719
-// Function ID: 6720
+// Module ID: 6756
+// Function ID: 6757
 // Name: QuestsVisibleMessagesChangedSource
-// Dependencies: [6720, 2, 6721, 6722]
+// Dependencies: [6757, 2, 6758, 6759]
 
-// Module 6719 (QuestsVisibleMessagesChangedSource)
-import set from "set";
+// Module 6756 (QuestsVisibleMessagesChangedSource)
+import QuestRewardCodePlatforms from "QuestRewardCodePlatforms" /* 6757 */;
+import set2 from "set" /* 6758 */;
+import AdPlacement from "AdPlacement" /* 6759 */;
+import set from "set" /* 2 */;
 
-const values = Object.values(require("QuestRewardCodePlatforms").QuestRewardCodePlatforms);
+const values = Object.values(QuestRewardCodePlatforms.QuestRewardCodePlatforms);
 let set = new Set(values.filter((num) => typeof num === "number"));
 const result = set.fileFinishedImporting("modules/quests/QuestTypes.tsx");
 
 export const QuestsVisibleMessagesChangedSource = { FIRST_LAYOUT: "FIRST_LAYOUT", SCROLL: "SCROLL", VISIBILITY_CHANGED: "VISIBILITY_CHANGED" };
 export const QUEST_REWARD_CODE_PLATFORMS_SET = set;
-export const QuestRewardCodePlatforms = require("QuestRewardCodePlatforms").QuestRewardCodePlatforms;
-export const QuestContent = require("set").QuestContent;
-export const AdPlacement = require("AdPlacement").AdPlacement;
+export const QuestRewardCodePlatforms = QuestRewardCodePlatforms.QuestRewardCodePlatforms;
+export const QuestContent = set2.QuestContent;
+export const AdPlacement = AdPlacement.AdPlacement;
 export const QuestConsoleStartErrorLocal = { GENERIC: "generic", RATE_LIMITED: "rate_limited" };
 export const TaskPlatformScreen = { DESKTOP: "desktop", CONSOLE: "console", SELECT: "select" };
 export const VideoPauseReason = { PAUSE_BUTTON: "PAUSE_BUTTON", LOST_FOCUS: "LOST_FOCUS", MODAL_CLOSED: "MODAL_CLOSED", ANOTHER_MODAL_OPENED: "ANOTHER_MODAL_OPENED", PICTURE_IN_PICTURE: "PICTURE_IN_PICTURE" };

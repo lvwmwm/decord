@@ -1,23 +1,32 @@
-// Module ID: 7570
-// Function ID: 7571
+// Module ID: 7608
+// Function ID: 7609
 // Name: onDismiss
-// Dependencies: [19, 17, 21, 4661, 712, 4342, 7571, 1236, 6950, 7531, 7572, 7510, 1297, 4734, 4745, 4196, 1377, 7570, 2007, 709, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4346, 7609, 1236, 6988, 7569, 7610, 7548, 1297, 4739, 4750, 4200, 1377, 7608, 2008, 709, 2]
 // Exports: default, openBurstReactionFirstSendActionSheet
 
-// Module 7570 (onDismiss)
-import "dispatcher";
-import get_ActivityIndicator from "onDismiss";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7608 (onDismiss)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import DismissibleContent from "DismissibleContent" /* 1377 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import Text from "Text" /* 4739 */;
+import Button2 from "Button" /* 4750 */;
+import Background from "Background" /* 6988 */;
+import ReactionTypes from "ReactionTypes" /* 7548 */;
+import _generateAnimationSource from "_generateAnimationSource" /* 7569 */;
+import getDeviceSpecificString from "getDeviceSpecificString" /* 7609 */;
+import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 7610 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c3;
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function onDismiss() {
-  importDefault(4342).hideActionSheet();
+  ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet();
 }
+noopAll;
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: { paddingTop: 24, paddingBottom: 24, paddingLeft: 12, paddingRight: 12 }, fill: null, nitroWheel: null, textContainer: null, body: null, content: null };
@@ -28,61 +37,52 @@ createCacheKey.alignItems = "center";
 createCacheKey.justifyContent = "center";
 createCacheKey.top = -120;
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { tintColor: require("Themes").colors.TEXT_SUBTLE, width: 37.5, height: 37.5 };
+createCacheKey[2] = { tintColor: ThemesDefault.colors.TEXT_SUBTLE, width: 37.5, height: 37.5 };
 createCacheKey[3] = { flexDirection: "row", flexShrink: 1, alignItems: "center", alignSelf: "center", textAlign: "center" };
 createCacheKey[4] = { paddingTop: 8, paddingBottom: 18 };
 createCacheKey[5] = { paddingHorizontal: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { tintColor: require("Themes").colors.TEXT_SUBTLE, width: 37.5, height: 37.5 };
-let result = require("jsxProd").fileFinishedImporting("components_native/reactions/BurstReactionFirstSendActionSheet.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { tintColor: ThemesDefault.colors.TEXT_SUBTLE, width: 37.5, height: 37.5 };
+let result = require("set").fileFinishedImporting("components_native/reactions/BurstReactionFirstSendActionSheet.tsx");
 
 export default function BurstReactionFirstSendActionSheet(arg0) {
-  let channelId;
-  let emoji;
-  let messageId;
   ({ emoji, channelId, messageId } = arg0);
-  const tmp = createCacheKey();
-  let obj = require(7571) /* getDeviceSpecificString */;
-  obj = { quest: require(1236) /* getSystemLocale */.t["5TpPli"] };
-  const deviceSpecificString = obj.getDeviceSpecificString(obj, require(1236) /* getSystemLocale */.t["2Yp7dF"]);
-  obj = { backdropOpacity: null, contentStyles: null, backdropChildren: null, onDismiss: null, children: null };
-  obj[0] = require(7531) /* _generateAnimationSource */.BACKDROP_OPACITY;
-  obj[1] = tmp.content;
-  const obj1 = { style: tmp.fill, children: null };
-  const obj2 = { channelId, emoji, messageId, reactionType: null };
-  obj2[3] = require(7510) /* ReactionTypes */.ReactionTypes.BURST;
-  obj1[1] = callback(importDefault(7572), obj2);
+  const tmp = callback3();
+  let obj = getDeviceSpecificString;
+  obj = { quest: getSystemLocale.t["5TpPli"] };
+  const deviceSpecificString = obj.getDeviceSpecificString(obj, getSystemLocale.t["2Yp7dF"]);
+  obj = { backdropOpacity: _generateAnimationSource.BACKDROP_OPACITY, contentStyles: tmp.content, backdropChildren: null, onDismiss: null, children: null };
+  obj1 = { style: tmp.fill, children: null };
+  const obj2 = { channelId, emoji, messageId, reactionType: ReactionTypes.ReactionTypes.BURST };
+  obj1[1] = callback(BurstReactionAnimationPreviewDefault, obj2);
   obj[2] = callback(closure_3, obj1);
   obj[3] = onDismiss;
   const obj3 = { style: tmp.container, children: null };
   const obj4 = { style: tmp.textContainer, children: null };
-  const items = [callback(require(1297) /* Button */.NitroWheel, { style: tmp.nitroWheel }), ];
+  const items = [callback(Button.NitroWheel, { style: tmp.nitroWheel }), ];
   const obj6 = { variant: "heading-xl/bold", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj6[1] = intl.string(require(1236) /* getSystemLocale */.t.NX7HI7);
-  items[1] = callback(require(4734) /* Text */.Text, obj6);
+  const intl = getSystemLocale.intl;
+  obj6[1] = intl.string(getSystemLocale.t.NX7HI7);
+  items[1] = callback(Text.Text, obj6);
   obj4[1] = items;
   const items1 = [callback2(closure_3, obj4), , ];
   const obj5 = { style: tmp.nitroWheel };
-  const tmp3 = importDefault(7572);
-  items1[1] = callback(closure_3, { style: tmp.body, children: callback(require(4734) /* Text */.Text, obj8) });
+  const tmp3 = BurstReactionAnimationPreviewDefault;
+  items1[1] = callback(closure_3, { style: tmp.body, children: callback(Text.Text, obj8) });
   const obj9 = { text: null, onPress: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj9[0] = intl2.string(require(1236) /* getSystemLocale */.t["+IrDzN"]);
+  const intl2 = getSystemLocale.intl;
+  obj9[0] = intl2.string(getSystemLocale.t["+IrDzN"]);
   obj9[1] = onDismiss;
-  items1[2] = callback(require(4745) /* Button */.Button, obj9);
+  items1[2] = callback(Button2.Button, obj9);
   obj3[1] = items1;
   obj[4] = callback2(closure_3, obj3);
-  return callback(require(6950) /* Background */.BottomSheet, obj);
+  return callback(Background.BottomSheet, obj);
 };
 export const openBurstReactionFirstSendActionSheet = function openBurstReactionFirstSendActionSheet(arg0) {
-  let channelId;
-  let emoji;
-  let messageId;
   ({ channelId, messageId, emoji } = arg0);
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj.hideActionSheet();
-  if (obj2.UNSAFE_isDismissibleContentDismissed(require(1377) /* DismissibleContent */.DismissibleContent.SUPER_REACTIONS_FIRST_SENT)) {
+  if (obj2.UNSAFE_isDismissibleContentDismissed(DismissibleContent.DismissibleContent.SUPER_REACTIONS_FIRST_SENT)) {
     let tmpResult = tmp(709);
     obj = { type: "BURST_REACTION_EFFECT_SEND", channelId: null, messageId: null, emoji: null };
     obj[1] = channelId;
@@ -90,13 +90,13 @@ export const openBurstReactionFirstSendActionSheet = function openBurstReactionF
     obj[3] = emoji;
     tmpResult.dispatch(obj);
   } else {
-    const result = tmp4(4196).UNSAFE_markDismissibleContentAsDismissed(tmp4(1377).DismissibleContent.SUPER_REACTIONS_FIRST_SENT);
-    tmpResult = tmp(4342);
+    const result = tmp4(4200).UNSAFE_markDismissibleContentAsDismissed(tmp4(1377).DismissibleContent.SUPER_REACTIONS_FIRST_SENT);
+    tmpResult = tmp(4346);
     obj = { channelId: null, messageId: null, emoji: null };
     obj[0] = channelId;
     obj[1] = messageId;
     obj[2] = emoji;
-    tmpResult.openLazy(tmp4(2007)(7570, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
-    const tmp4Result = tmp4(4196);
+    tmpResult.openLazy(tmp4(2008)(7608, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
+    const tmp4Result = tmp4(4200);
   }
 };

@@ -1,14 +1,18 @@
-// Module ID: 11136
-// Function ID: 11137
+// Module ID: 11175
+// Function ID: 11176
 // Name: handleSharedClientThemeViewed
-// Dependencies: [9177, 503, 2]
+// Dependencies: [9214, 503, 2]
 // Exports: handleSharedClientThemeViewed
 
-// Module 11136 (handleSharedClientThemeViewed)
-const result = require("set").fileFinishedImporting("modules/client_themes/native/chat/sharedClientThemeViewed.tsx");
+// Module 11175 (handleSharedClientThemeViewed)
+import set from "set" /* 2 */;
+import encodeProperties from "encodeProperties" /* 503 */;
+import trackImpression from "trackImpression" /* 9214 */;
+
+const result = set.fileFinishedImporting("modules/client_themes/native/chat/sharedClientThemeViewed.tsx");
 
 export const handleSharedClientThemeViewed = function handleSharedClientThemeViewed() {
-  let obj = require(9177) /* trackImpression */;
-  obj = { type: require(503) /* encodeProperties */.ImpressionTypes.VIEW, name: require(503) /* encodeProperties */.ImpressionNames.CUSTOM_THEME_SHARE, properties: {} };
+  let obj = trackImpression;
+  obj = { type: encodeProperties.ImpressionTypes.VIEW, name: encodeProperties.ImpressionNames.CUSTOM_THEME_SHARE, properties: {} };
   obj.trackImpression(obj);
 };

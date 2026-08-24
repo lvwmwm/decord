@@ -1,9 +1,11 @@
-// Module ID: 4280
-// Function ID: 4281
+// Module ID: 4284
+// Function ID: 4285
 // Name: displayMessage
 // Dependencies: [1236, 2]
 
-// Module 4280 (displayMessage)
+// Module 4284 (displayMessage)
+import set from "set" /* 2 */;
+
 let obj = { GENERAL: 0, [0]: "GENERAL", NO_FILE: 1, [1]: "NO_FILE", PROGRESS: 2, [2]: "PROGRESS", UPLOAD: 3, [3]: "UPLOAD", READ: 4, [4]: "READ" };
 class UploadVoiceDebugLogsError {
   constructor(arg0) {
@@ -35,7 +37,7 @@ Object.defineProperty(UploadVoiceDebugLogsError.prototype, "displayMessage", {
   },
   set: undefined
 });
-const result = require("set").fileFinishedImporting("errors/UploadVoiceDebugLogsError.tsx");
+const result = set.fileFinishedImporting("errors/UploadVoiceDebugLogsError.tsx");
 
 export default UploadVoiceDebugLogsError;
 export const UploadErrorCodes = obj;

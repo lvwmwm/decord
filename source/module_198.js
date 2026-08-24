@@ -3,32 +3,22 @@
 // Dependencies: [123, 199, 211, 215, 217, 203, 222, 223, 226, 228]
 
 // Module 198
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
-import polyfillObjectProperty from "polyfillObjectProperty";
+import t from "t" /* 215 */;
+import URL from "URL" /* 226 */;
+import _isNativeReflectConstruct from "_isNativeReflectConstruct" /* 228 */;
+import polyfillObjectProperty from "polyfillObjectProperty" /* 123 */;
 
 polyfillObjectProperty.polyfillGlobal("XMLHttpRequest", () => require(199) /* _isNativeReflectConstruct */.default);
 polyfillObjectProperty.polyfillGlobal("FormData", () => require(211) /* FormData */.default);
-polyfillObjectProperty.polyfillGlobal("fetch", () => require(215) /* t */.fetch);
-polyfillObjectProperty.polyfillGlobal("Headers", () => require(215) /* t */.Headers);
-polyfillObjectProperty.polyfillGlobal("Request", () => require(215) /* t */.Request);
-polyfillObjectProperty.polyfillGlobal("Response", () => require(215) /* t */.Response);
+polyfillObjectProperty.polyfillGlobal("fetch", () => t.fetch);
+polyfillObjectProperty.polyfillGlobal("Headers", () => t.Headers);
+polyfillObjectProperty.polyfillGlobal("Request", () => t.Request);
+polyfillObjectProperty.polyfillGlobal("Response", () => t.Response);
 polyfillObjectProperty.polyfillGlobal("WebSocket", () => require(217) /* _isNativeReflectConstruct */.default);
 polyfillObjectProperty.polyfillGlobal("Blob", () => require(203) /* Blob */.default);
 polyfillObjectProperty.polyfillGlobal("File", () => require(222) /* _isNativeReflectConstruct */.default);
 polyfillObjectProperty.polyfillGlobal("FileReader", () => require(223) /* _isNativeReflectConstruct */.default);
-polyfillObjectProperty.polyfillGlobal("URL", () => require(226) /* URL */.URL);
-polyfillObjectProperty.polyfillGlobal("URLSearchParams", () => require(226) /* URL */.URLSearchParams);
-polyfillObjectProperty.polyfillGlobal("AbortController", () => require(228) /* _isNativeReflectConstruct */.AbortController);
-polyfillObjectProperty.polyfillGlobal("AbortSignal", () => require(228) /* _isNativeReflectConstruct */.AbortSignal);
+polyfillObjectProperty.polyfillGlobal("URL", () => URL.URL);
+polyfillObjectProperty.polyfillGlobal("URLSearchParams", () => URL.URLSearchParams);
+polyfillObjectProperty.polyfillGlobal("AbortController", () => _isNativeReflectConstruct.AbortController);
+polyfillObjectProperty.polyfillGlobal("AbortSignal", () => _isNativeReflectConstruct.AbortSignal);

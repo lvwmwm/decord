@@ -1,26 +1,25 @@
-// Module ID: 14592
-// Function ID: 14593
+// Module ID: 14660
+// Function ID: 14661
 // Name: route
-// Dependencies: [4497, 676, 589, 1236, 10669, 11422, 14593, 2]
+// Dependencies: [4501, 676, 589, 1236, 10708, 11473, 14661, 2]
 
-// Module 14592 (route)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import ME from "ME";
-import createToggle from "createToggle";
+// Module 14660 (route)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4501 */;
+import ME from "ME" /* 676 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let UserSettingsSections;
-let c3;
-const require = arg1;
+require = arg1;
 ({ InputModes: c3, UserSettingsSections } = ME);
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.K3lovD);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.K3lovD);
   },
   parent: null,
   IconComponent: require("MicrophoneIcon").MicrophoneIcon,
   useTrailing: function useVoiceSettingTrailing() {
-    const items = [_detectH265HardwareDecode];
+    const items = [closure_2];
     if (obj.useStateFromStores(items, () => mode.getMode()) === constants.PUSH_TO_TALK) {
       const intl2 = tmp(1236).intl;
       let stringResult = intl2.string(tmp(1236).t.Q8gkVL);
@@ -32,18 +31,18 @@ createToggle = {
   },
   screen: createToggle,
   useSearchTerms() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1236) /* getSystemLocale */.t.nuFtHH)];
+    const intl = getSystemLocale.intl;
+    const items = [intl.string(getSystemLocale.t.nuFtHH)];
     return items;
   }
 };
 createToggle = {
   route: UserSettingsSections.VOICE,
   getComponent() {
-    return require(14593) /* KrispLogo */.default;
+    return require(14661) /* KrispLogo */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/VoiceSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/VoiceSetting.tsx");
 
 export default createToggle;

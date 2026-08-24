@@ -1,29 +1,34 @@
-// Module ID: 14778
-// Function ID: 14779
+// Module ID: 14842
+// Function ID: 14843
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 4066, 14771, 2]
+// Dependencies: [8238, 10708, 1236, 4069, 14835, 2]
 
-// Module 14778 (toggle)
-import createToggle from "createToggle";
+// Module 14842 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import UserSettingsText from "UserSettingsText" /* 14835 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["29xPVZ"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["29xPVZ"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
-  useValue: require("explicitContentFromProto").IncludeStickersInAutocomplete.useSetting,
-  onValueChange: require("UserSettingsText").setStickerAutocomplete
+  parent: MobileUserSettings.MobileUserSettings.CHAT,
+  useValue: explicitContentFromProto.IncludeStickersInAutocomplete.useSetting,
+  onValueChange: UserSettingsText.setStickerAutocomplete
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["29xPVZ"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["29xPVZ"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
-  useValue: require("explicitContentFromProto").IncludeStickersInAutocomplete.useSetting,
-  onValueChange: require("UserSettingsText").setStickerAutocomplete
+  parent: MobileUserSettings.MobileUserSettings.CHAT,
+  useValue: explicitContentFromProto.IncludeStickersInAutocomplete.useSetting,
+  onValueChange: UserSettingsText.setStickerAutocomplete
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/StickerAutocompleteSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/StickerAutocompleteSetting.tsx");
 
 export default toggle;

@@ -1,11 +1,12 @@
-// Module ID: 14478
-// Function ID: 14479
+// Module ID: 14546
+// Function ID: 14547
 // Name: context
 // Dependencies: [19, 38, 2]
 // Exports: useVideoQuestModalContext
 
-// Module 14478 (context)
-import importAllResult from "noop";
+// Module 14546 (context)
+import _modDef38 from "module_38" /* 38 */;
+import importAllResult from "noop" /* 19 */;
 
 let context = importAllResult.createContext({ quest: null, videoSessionId: "" });
 const result = require("set").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalContext.tsx");
@@ -13,6 +14,6 @@ const result = require("set").fileFinishedImporting("modules/quests/native/Video
 export default context;
 export const useVideoQuestModalContext = function useVideoQuestModalContext() {
   context = importAllResult.useContext(context);
-  importDefault(38)(null != context, "useVideoQuestModalContext must be used within a VideoQuestModalProvider");
+  _modDef38(null != context, "useVideoQuestModalContext must be used within a VideoQuestModalProvider");
   return context;
 };

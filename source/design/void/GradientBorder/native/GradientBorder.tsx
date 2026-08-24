@@ -1,17 +1,18 @@
-// Module ID: 13455
-// Function ID: 13456
+// Module ID: 13513
+// Function ID: 13514
 // Name: GradientBorder
-// Dependencies: [19, 17, 676, 21, 4486, 712, 4756, 2]
+// Dependencies: [19, 17, 676, 21, 4490, 712, 4761, 2]
 
-// Module 13455 (GradientBorder)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import ME from "ME";
-import { jsx } from "jsxProd";
+// Module 13513 (GradientBorder)
+import ThemesDefault from "Themes" /* 712 */;
+import t from "t" /* 4490 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 class GradientBorder {
   constructor(arg0) {
     ({ children, borderWidth } = global);
@@ -30,16 +31,16 @@ class GradientBorder {
     tmp4 = closure_2;
     str = require("t");
     match = str.match(direction);
-    withResult = match.with(jsx.HORIZONTAL, () => closure_5);
-    withResult1 = withResult.with(jsx.VERTICAL, () => closure_6);
-    withResult2 = withResult1.with(jsx.DIAGONAL, () => ({ START: { x: 0, y: 0 }, END: { x: 1, y: 1 } }));
-    withResult3 = withResult2.with(jsx.ANTI_DIAGONAL, () => ({ START: { x: 0, y: 1 }, END: { x: 1, y: 0 } }));
+    withResult = match.with(closure_8.HORIZONTAL, () => closure_5);
+    withResult1 = withResult.with(closure_8.VERTICAL, () => closure_6);
+    withResult2 = withResult1.with(closure_8.DIAGONAL, () => ({ START: { x: 0, y: 0 }, END: { x: 1, y: 1 } }));
+    withResult3 = withResult2.with(closure_8.ANTI_DIAGONAL, () => ({ START: { x: 0, y: 1 }, END: { x: 1, y: 0 } }));
     exhaustiveResult = withResult3.exhaustive();
     tmp8 = null;
     if (null != children) {
-      obj6 = noop;
+      obj6 = closure_3;
       tmp8 = null;
-      if (noop.isValidElement(children)) {
+      if (closure_3.isValidElement(children)) {
         tmp9 = jsx;
         tmp10 = closure_1;
         obj = { start: null, end: null, style: null };
@@ -95,6 +96,6 @@ class GradientBorder {
 ({ HorizontalGradient: c5, VerticalGradient: closure_6 } = ME);
 let obj = { HORIZONTAL: "horizontal", VERTICAL: "vertical", DIAGONAL: "diagonal", ANTI_DIAGONAL: "anti-diagonal" };
 GradientBorder.Direction = obj;
-const result = require("ME").fileFinishedImporting("design/void/GradientBorder/native/GradientBorder.tsx");
+const result = require("set").fileFinishedImporting("design/void/GradientBorder/native/GradientBorder.tsx");
 
 export default GradientBorder;

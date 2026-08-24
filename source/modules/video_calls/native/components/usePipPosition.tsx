@@ -1,28 +1,28 @@
-// Module ID: 8684
-// Function ID: 8685
+// Module ID: 8721
+// Function ID: 8722
 // Name: usePipPosition
-// Dependencies: [32, 19, 595, 8685, 2]
+// Dependencies: [32, 19, 595, 8722, 2]
 // Exports: default
 
-// Module 8684 (usePipPosition)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 8721 (usePipPosition)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
 const CameraPreviewPosition = "CameraPreviewPosition";
-let result = require("Storage").fileFinishedImporting("modules/video_calls/native/components/usePipPosition.tsx");
+let result = require("set").fileFinishedImporting("modules/video_calls/native/components/usePipPosition.tsx");
 
 export default function usePipPosition() {
   const tmp = callback(React.useState(() => {
     const Storage = callback(595).Storage;
-    return Storage.get(closure_4, callback(8685).DEFAULT_PIP_POSITION);
+    return Storage.get(closure_4, callback(8722).DEFAULT_PIP_POSITION);
   }), 2);
-  let closure_0 = tmp[1];
+  closure_0 = tmp[1];
   const items = [
     tmp[0],
     React.useCallback((arg0) => {
-      const Storage = callback(outer1_1[2]).Storage;
-      const result = Storage.set(outer1_4, arg0);
+      const Storage = callback(closure_1_1[2]).Storage;
+      const result = Storage.set(closure_1_4, arg0);
       callback(arg0);
     }, [])
   ];

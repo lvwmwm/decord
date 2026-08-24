@@ -1,28 +1,24 @@
-// Module ID: 14041
-// Function ID: 14042
+// Module ID: 14109
+// Function ID: 14110
 // Name: BadgeCatalogIcon
-// Dependencies: [32, 19, 17, 21, 14042, 5449, 6571, 2]
+// Dependencies: [32, 19, 17, 21, 14110, 5454, 6607, 2]
 // Exports: default
 
-// Module 14041 (BadgeCatalogIcon)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 14109 (BadgeCatalogIcon)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 const re7 = /\.svg(?:[?#]|$)/i;
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/badges/native/BadgeCatalogIcon.tsx");
+const result = require("set").fileFinishedImporting("modules/badges/native/BadgeCatalogIcon.tsx");
 
 export default function BadgeCatalogIcon(style) {
-  let badge;
-  let c2;
-  let size;
-  let tmp4;
   ({ badge, size } = style);
   let complex_icon_animated_url;
   let isMatch;
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
   complex_icon_animated_url = badge.simple_icon_url;
   if (complex_icon_animated_url == null) {
@@ -52,7 +48,7 @@ export default function BadgeCatalogIcon(style) {
               const obj = { url: null, xml: null };
               obj[0] = abortController;
               obj[1] = arg0;
-              outer1_2(obj);
+              closure_1_2(obj);
             }
           }).catch(() => {
 
@@ -79,18 +75,18 @@ export default function BadgeCatalogIcon(style) {
     if (url === complex_icon_animated_url) {
       let xml = tmp4.xml;
     } else {
-      let obj5 = complex_icon_animated_url(14042);
+      let obj5 = complex_icon_animated_url(14110);
       xml = obj5.getCachedSvgXml(complex_icon_animated_url);
     }
     obj = { style: null, "aria-hidden": true, children: null };
     obj[0] = items1;
     let tmp15Result = null;
     if (null != xml) {
-      const obj1 = { xml: null, width: null, height: null };
+      obj1 = { xml: null, width: null, height: null };
       obj1[0] = xml;
       obj1[1] = size;
       obj1[2] = size;
-      tmp15Result = tmp15(complex_icon_animated_url(6571).SvgXml, obj1);
+      tmp15Result = tmp15(complex_icon_animated_url(6607).SvgXml, obj1);
     }
     obj[2] = tmp15Result;
     return <View style={null} aria-hidden>{null}</View>;
@@ -111,7 +107,7 @@ export default function BadgeCatalogIcon(style) {
       obj5[1] = size;
       obj3[1] = obj5;
       obj3[2] = tmp7;
-      obj[2] = tmp8(isMatch(5449), obj3);
+      obj[2] = tmp8(isMatch(5454), obj3);
     }
     return <View {...obj} />;
   }

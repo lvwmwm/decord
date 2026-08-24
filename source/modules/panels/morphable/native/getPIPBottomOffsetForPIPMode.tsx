@@ -1,12 +1,14 @@
-// Module ID: 16126
-// Function ID: 16127
+// Module ID: 16224
+// Function ID: 16225
 // Name: PIP_WINDOW_OFFSET
-// Dependencies: [11441, 2]
+// Dependencies: [11490, 2]
 // Exports: default
 
-// Module 16126 (PIP_WINDOW_OFFSET)
-import { PIP_WINDOW_OFFSET } from "MIN_PAN_GESTURE_MOVE";
+// Module 16224 (PIP_WINDOW_OFFSET)
+import set from "set" /* 2 */;
+import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE" /* 11490 */;
 
+const PIP_WINDOW_OFFSET = MIN_PAN_GESTURE_MOVE.PIP_WINDOW_OFFSET;
 const fn = function _(arg0) {
   if ("panels" !== arg0) {
     if ("channel" !== arg0) {
@@ -25,7 +27,7 @@ const fn = function _(arg0) {
 fn.__closure = { DEFAULT_CHANNEL_INPUT_HEIGHT: 60, PIP_WINDOW_OFFSET, PIP_AVOIDANCE_TAB_BAR_HEIGHT: 46 };
 fn.__workletHash = 11461742802267;
 fn.__initData = { code: "function getPIPBottomOffsetForPIPMode_getPIPBottomOffsetForPIPModeTsx1(screenName){const{DEFAULT_CHANNEL_INPUT_HEIGHT,PIP_WINDOW_OFFSET,PIP_AVOIDANCE_TAB_BAR_HEIGHT}=this.__closure;switch(screenName){case'panels':return DEFAULT_CHANNEL_INPUT_HEIGHT+PIP_WINDOW_OFFSET;case'channel':return DEFAULT_CHANNEL_INPUT_HEIGHT+PIP_WINDOW_OFFSET;case'notifications':case'main_tab':case'guilds':return PIP_AVOIDANCE_TAB_BAR_HEIGHT+PIP_WINDOW_OFFSET;default:return 0;}}" };
-const result = require("set").fileFinishedImporting("modules/panels/morphable/native/getPIPBottomOffsetForPIPMode.tsx");
+const result = set.fileFinishedImporting("modules/panels/morphable/native/getPIPBottomOffsetForPIPMode.tsx");
 
 export default fn;
 export const PIP_AVOIDANCE_TAB_BAR_HEIGHT = 46;

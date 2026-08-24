@@ -1,12 +1,13 @@
-// Module ID: 4464
-// Function ID: 4465
+// Module ID: 4468
+// Function ID: 4469
 // Name: num2
-// Dependencies: [4465, 2]
+// Dependencies: [4469, 2]
 // Exports: canUseWebp, getChromeVersion, getEdgeVersion, getElectronVersion, getFirefoxVersion, getSafariVersion, isFirefox, isSafari, supportsHEVCAlpha
 
-// Module 4464 (num2)
-import { name as str } from "format";
+// Module 4468 (num2)
+import formatDefault from "format" /* 4469 */;
 
+let str = formatDefault.name;
 if (str == null) {
   str = "unknown";
 }
@@ -14,7 +15,7 @@ const str2 = str.toLowerCase();
 let num = -1;
 let num2 = -1;
 if ("chrome" === str2.toLowerCase()) {
-  let str3 = require("format").version;
+  let str3 = formatDefault.version;
   if (str3 == null) {
     str3 = "";
   }
@@ -22,7 +23,7 @@ if ("chrome" === str2.toLowerCase()) {
 }
 let parsed = num;
 if ("electron" === str2.toLowerCase()) {
-  let str4 = require("format").version;
+  let str4 = formatDefault.version;
   if (str4 == null) {
     str4 = "";
   }
@@ -30,7 +31,7 @@ if ("electron" === str2.toLowerCase()) {
 }
 let parsed1 = num;
 if ("firefox" === str2.toLowerCase()) {
-  let str5 = require("format").version;
+  let str5 = formatDefault.version;
   if (str5 == null) {
     str5 = "";
   }
@@ -38,14 +39,14 @@ if ("firefox" === str2.toLowerCase()) {
 }
 let parsed2 = num;
 if ("edge" === str2.toLowerCase()) {
-  let str6 = require("format").version;
+  let str6 = formatDefault.version;
   if (str6 == null) {
     str6 = "";
   }
   parsed2 = parseInt(str6, 10);
 }
 if ("safari" === str2.toLowerCase()) {
-  let str7 = require("format").version;
+  let str7 = formatDefault.version;
   if (str7 == null) {
     str7 = "";
   }

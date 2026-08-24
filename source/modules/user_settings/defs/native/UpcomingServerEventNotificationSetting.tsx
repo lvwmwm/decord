@@ -1,43 +1,49 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 14883
+// Function ID: 14884
 // Name: toggle
-// Dependencies: [8198, 14820, 10669, 1236, 4066, 14821, 2]
+// Dependencies: [8238, 14884, 10708, 1236, 4069, 14885, 2]
 
-// Module 14819 (toggle)
-import createToggle from "createToggle";
+// Module 14883 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import apexExperiment from "apexExperiment" /* 14884 */;
+import onUpcomingServerEventNotificationSettingsChanged from "onUpcomingServerEventNotificationSettingsChanged" /* 14885 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.MCVmjA);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.MCVmjA);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.R0VpSW);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.R0VpSW);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableUpcomingServerEventNotifications.useSetting,
-  onValueChange: require("onUpcomingServerEventNotificationSettingsChanged").onUpcomingServerEventNotificationSettingsChanged,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableUpcomingServerEventNotifications.useSetting,
+  onValueChange: onUpcomingServerEventNotificationSettingsChanged.onUpcomingServerEventNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14820) /* apexExperiment */.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
+    return apexExperiment.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.MCVmjA);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.MCVmjA);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.R0VpSW);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.R0VpSW);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableUpcomingServerEventNotifications.useSetting,
-  onValueChange: require("onUpcomingServerEventNotificationSettingsChanged").onUpcomingServerEventNotificationSettingsChanged,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableUpcomingServerEventNotifications.useSetting,
+  onValueChange: onUpcomingServerEventNotificationSettingsChanged.onUpcomingServerEventNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14820) /* apexExperiment */.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
+    return apexExperiment.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
   }
 };
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/UpcomingServerEventNotificationSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/UpcomingServerEventNotificationSetting.tsx");
 
 export default toggle;

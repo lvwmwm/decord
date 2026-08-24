@@ -1,26 +1,26 @@
-// Module ID: 14563
-// Function ID: 14564
+// Module ID: 14631
+// Function ID: 14632
 // Name: FormSeparator
-// Dependencies: [19, 17, 21, 4661, 712, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 2]
 // Exports: default
 
-// Module 14563 (FormSeparator)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14631 (FormSeparator)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+noopAll;
 createCacheKey = { container: { alignSelf: "stretch" }, margins: { marginTop: 16 }, separator: null };
-createCacheKey = { width: "100%", height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey = { width: "100%", height: 1, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 createCacheKey[2] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormSeparator.tsx");
+let closure_2 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormSeparator.tsx");
 
 export default function FormSeparator(arg0) {
-  let style;
-  let withoutMargins;
   ({ style, withoutMargins } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback();
   const items = [tmp.container, , ];
   let margins;
   if (!withoutMargins) {

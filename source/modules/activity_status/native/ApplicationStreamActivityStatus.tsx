@@ -1,26 +1,22 @@
-// Module ID: 9897
-// Function ID: 9898
+// Module ID: 9936
+// Function ID: 9937
 // Name: ApplicationStreamActivityStatus
-// Dependencies: [19, 21, 1236, 9898, 9899, 9901, 2]
+// Dependencies: [19, 21, 1236, 9937, 9938, 9940, 2]
 // Exports: default
 
-// Module 9897 (ApplicationStreamActivityStatus)
-import "noop";
-import jsxProd from "jsxProd";
+// Module 9936 (ApplicationStreamActivityStatus)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 9937 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 9940 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
-const result = require("getSystemLocale").fileFinishedImporting("modules/activity_status/native/ApplicationStreamActivityStatus.tsx");
+const result = require("set").fileFinishedImporting("modules/activity_status/native/ApplicationStreamActivityStatus.tsx");
 
 export default function ApplicationStreamActivityStatus(hideText) {
-  let game;
-  let hideIcon;
-  let iconStyle;
-  let maxFontSizeMultiplier;
-  let textStyle;
   ({ game, hideIcon } = hideText);
   ({ iconStyle, textStyle, maxFontSizeMultiplier } = hideText);
   if (hideIcon === undefined) {
@@ -48,23 +44,23 @@ export default function ApplicationStreamActivityStatus(hideText) {
     tmp2 = name1;
   }
   if (null != tmp2) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     let obj = { name: null };
     obj[0] = tmp2;
-    let formatResult = intl2.format(require(1236) /* getSystemLocale */.t["0wJXSh"], obj);
+    let formatResult = intl2.format(getSystemLocale.t["0wJXSh"], obj);
     let tmp7 = require;
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    formatResult = intl.string(require(1236) /* getSystemLocale */.t.eXan7B);
+    const intl = getSystemLocale.intl;
+    formatResult = intl.string(getSystemLocale.t.eXan7B);
     tmp7 = require;
   }
   let tmp12 = !hideIcon;
   if (!hideIcon) {
     obj = { icon: null, style: null };
-    obj[0] = tmp7(9899).TvIcon;
+    obj[0] = tmp7(9938).TvIcon;
     obj[1] = iconStyle;
-    tmp12 = callback(importDefault(9898), obj);
-    const tmp15 = importDefault(9898);
+    tmp12 = callback(ActivityStatusIconDefault, obj);
+    const tmp15 = ActivityStatusIconDefault;
   }
   const children = [tmp12, ];
   let tmp16 = !flag;
@@ -73,7 +69,7 @@ export default function ApplicationStreamActivityStatus(hideText) {
     obj[0] = textStyle;
     obj[1] = maxFontSizeMultiplier;
     obj[2] = formatResult;
-    tmp16 = callback(importDefault(9901), obj);
+    tmp16 = callback(ActivityStatusTextDefault, obj);
   }
   children[1] = tmp16;
   return closure_5(closure_4, { children });

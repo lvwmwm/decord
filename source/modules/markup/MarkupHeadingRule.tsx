@@ -1,13 +1,16 @@
-// Module ID: 6828
-// Function ID: 6829
+// Module ID: 6866
+// Function ID: 6867
 // Name: match
-// Dependencies: [4092, 2]
+// Dependencies: [4095, 2]
 
-// Module 6828 (match)
-const require = arg1;
+// Module 6866 (match)
+import t from "t" /* 4095 */;
+import tDefault from "t" /* 4095 */;
+
+require = arg1;
 const re2 = /\n$/;
 let obj = {};
-const merged = Object.assign(require("t").defaultRules.heading);
+const merged = Object.assign(tDefault.defaultRules.heading);
 obj.requiredFirstCharacters = [" ", "#"];
 obj.match = function match(arg0, allowHeading, str) {
   let tmp = null;
@@ -17,8 +20,8 @@ obj.match = function match(arg0, allowHeading, str) {
         tmp = null;
       }
     }
-    tmp = require(4092) /* t */.anyScopeRegex(/^ *(#{1,3})(?:\s+)((?!\s*#{1,3}\s)[^\n]+?)#*\s*(?:\n|$)/)(arg0, allowHeading, str);
-    const obj = require(4092) /* t */;
+    tmp = t.anyScopeRegex(/^ *(#{1,3})(?:\s+)((?!\s*#{1,3}\s)[^\n]+?)#*\s*(?:\n|$)/)(arg0, allowHeading, str);
+    const obj = t;
   }
   return tmp;
 };

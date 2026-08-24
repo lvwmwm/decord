@@ -1,39 +1,40 @@
-// Module ID: 12573
-// Function ID: 12574
+// Module ID: 12627
+// Function ID: 12628
 // Name: DisconnectRemoteButton
-// Dependencies: [19, 4540, 21, 589, 8694, 8143, 12543, 1236, 9845, 9647, 2]
+// Dependencies: [19, 4545, 21, 589, 8731, 8182, 12597, 1236, 9884, 9686, 2]
 // Exports: DisconnectRemoteButton
 
-// Module 12573 (DisconnectRemoteButton)
-import "noop";
-import set from "set";
-import { jsx } from "jsxProd";
+// Module 12627 (DisconnectRemoteButton)
+import noopAll from "noop" /* 19 */;
+import ActionButtonAll from "ActionButton" /* 8731 */;
+import closure_4 from "set" /* 4545 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/DisconnectRemoteButton.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("modules/video_calls/native/components/DisconnectRemoteButton.tsx");
 
 export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
   channel = channel.channel;
   let remoteSessionId;
   let obj = channel(589);
-  const items = [set];
+  const items = [closure_4];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ awaitingRemote: null != store.getAwaitingRemoteSessionInfo(), remoteSessionId: store.getRemoteSessionId() }));
   remoteSessionId = stateFromStoresObject.remoteSessionId;
-  obj = { source: null, accessibilityLabel: null, isSmallSize: null, onPress: null };
-  obj[0] = remoteSessionId(stateFromStoresObject.awaitingRemote ? 8143 : 12543);
+  obj = { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 8182 : 12597), accessibilityLabel: null, isSmallSize: null, onPress: null };
   const intl = tmp(1236).intl;
   obj[1] = intl.string(channel(1236).t["6vrfgt"]);
   obj[2] = channel.isSmallSize;
   obj[3] = function onPress() {
     if (null != remoteSessionId) {
-      channel(outer1_3[8]).remoteDisconnect(tmp);
-      const obj2 = channel(outer1_3[8]);
-      channel(outer1_3[9]).handleDisconnect(channel);
-      const obj3 = channel(outer1_3[9]);
+      channel(closure_1_3[8]).remoteDisconnect(tmp);
+      const obj2 = channel(closure_1_3[8]);
+      channel(closure_1_3[9]).handleDisconnect(channel);
+      const obj3 = channel(closure_1_3[9]);
     } else {
-      channel(outer1_3[8]).disconnectRemote();
-      const obj = channel(outer1_3[8]);
+      channel(closure_1_3[8]).disconnectRemote();
+      const obj = channel(closure_1_3[8]);
     }
   };
-  return jsx(importAll(8694).PrimaryActionButton, { source: null, accessibilityLabel: null, isSmallSize: null, onPress: null });
+  return jsx(ActionButtonAll.PrimaryActionButton, { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 8182 : 12597), accessibilityLabel: null, isSmallSize: null, onPress: null });
 };

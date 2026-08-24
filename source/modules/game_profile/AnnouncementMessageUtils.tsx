@@ -1,22 +1,22 @@
-// Module ID: 9163
-// Function ID: 9164
+// Module ID: 9200
+// Function ID: 9201
 // Name: toAnnouncementMessages
-// Dependencies: [4031, 1954, 4810, 4811, 9164, 4803, 8431, 1236, 1487, 2]
+// Dependencies: [4034, 1954, 4815, 4816, 9201, 4808, 8470, 1236, 1487, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 9163 (toAnnouncementMessages)
-import { isMessageComponentsV2 } from "hasFlag";
+// Module 9200 (toAnnouncementMessages)
+import set from "set" /* 2 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
+import hasFlag from "hasFlag" /* 4034 */;
+import formatExpirationLabel from "formatExpirationLabel" /* 8470 */;
 
+const isMessageComponentsV2 = hasFlag.isMessageComponentsV2;
 const re4 = /^#{1,3}\s+(.+)$/;
 const re5 = /^https?:\/\/\S+$/;
-let result = require("messageAttachmentToUnfurledMediaItem").fileFinishedImporting("modules/game_profile/AnnouncementMessageUtils.tsx");
+let result = set.fileFinishedImporting("modules/game_profile/AnnouncementMessageUtils.tsx");
 
 export const toAnnouncementMessages = function toAnnouncementMessages(messages) {
   return messages.map((reactions) => {
-    let body;
-    let color;
-    let title;
-    let url;
     let obj = found4(found6[5]);
     const tmp2Result = found5(found6[4])(obj.createMessageRecord(reactions));
     if (callback(tmp2Result)) {
@@ -81,7 +81,7 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
         }
         const match = str9.match(closure_4);
         if (null != match) {
-          const obj1 = { title: null, body: null };
+          obj1 = { title: null, body: null };
           obj1[0] = match[1].trim();
           let str11 = "";
           if (!tmp28) {
@@ -247,7 +247,7 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
   });
 };
 export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
-  let result = require(8431) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
+  let result = formatExpirationLabel.formatExpirationLabel(poll.expiry);
   if (result == null) {
     const intl = tmp(1236).intl;
     result = intl.string(tmp(1236).t["e+J3JZ"]);
@@ -255,7 +255,7 @@ export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
   return result;
 };
 export const getPosterUrl = function getPosterUrl(proxyUrl, arg1, c12) {
-  let str = importDefault(1487).toURLSafe(proxyUrl);
+  let str = isDiscordProxiedAssetUrlDefault.toURLSafe(proxyUrl);
   str = null;
   if (null != str) {
     const searchParams = str.searchParams;

@@ -1,19 +1,24 @@
-// Module ID: 16713
-// Function ID: 16714
-// Dependencies: [16714, 4656, 1236, 16716, 2]
+// Module ID: 16809
+// Function ID: 16810
+// Dependencies: [16810, 4662, 1236, 16812, 2]
 
-// Module 16713
-const require = arg1;
-const tmp2 = new require("maybeShowUrgentMessageModal")(() => {
-  let obj = importDefault(4656);
+// Module 16809
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+import maybeShowUrgentMessageModalDefault from "maybeShowUrgentMessageModal" /* 16810 */;
+import navigateToSystemDMDefault from "navigateToSystemDM" /* 16812 */;
+
+require = arg1;
+const tmp2 = new maybeShowUrgentMessageModalDefault(() => {
+  let obj = _modDef4662;
   obj = { title: null, body: null, isDismissable: false, onConfirm: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.bAhz9l);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["7KjxW3"]);
-  obj[3] = importDefault(16716);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.bAhz9l);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t["7KjxW3"]);
+  obj[3] = navigateToSystemDMDefault;
   return obj.show(obj);
 });
-const result = require("getSystemLocale").fileFinishedImporting("modules/urgent_system_dm/native/UrgentSystemDMManager.tsx");
+const result = require("set").fileFinishedImporting("modules/urgent_system_dm/native/UrgentSystemDMManager.tsx");
 
 export default tmp2;

@@ -1,18 +1,19 @@
-// Module ID: 5992
-// Function ID: 5993
+// Module ID: 6023
+// Function ID: 6024
 // Name: NitroRubyBadgeLargeBadge
-// Dependencies: [21, 5449, 5993, 2]
+// Dependencies: [21, 5454, 6024, 2]
 // Exports: NitroRubyBadgeLargeBadge
 
-// Module 5992 (NitroRubyBadgeLargeBadge)
-import { jsx } from "jsxProd";
+// Module 6023 (NitroRubyBadgeLargeBadge)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import vanityUrlDefault from "vanityUrl" /* 6024 */;
 
-const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/NitroRubyBadgeLargeBadge.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroRubyBadgeLargeBadge.native.tsx");
 
 export const NitroRubyBadgeLargeBadge = function NitroRubyBadgeLargeBadge(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const NitroRubyBadgeLargeBadge = function NitroRubyBadgeLargeBadge(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5993);
+  obj = { uri: vanityUrlDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroRubyBadgeLargeBadge = function NitroRubyBadgeLargeBadge(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

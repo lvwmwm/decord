@@ -1,13 +1,16 @@
-// Module ID: 10994
-// Function ID: 10995
+// Module ID: 11033
+// Function ID: 11034
 // Name: GiftIntentType
 // Dependencies: [1924, 676, 2]
 // Exports: getGiftIntentTypeForLocation, getPremiumGiftingIntentAnalyticsLocation, parseGiftIntentType
 
-// Module 10994 (GiftIntentType)
-import { GiftIntentType } from "GuildFeatures";
-import { AnalyticsLocations } from "ME";
+// Module 11033 (GiftIntentType)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
+const GiftIntentType = GuildFeatures.GiftIntentType;
+const AnalyticsLocations = ME.AnalyticsLocations;
 const items = [AnalyticsLocations.FRIEND_ANNIVERSARIES_CHAT, GiftIntentType.FRIEND_ANNIVERSARY];
 const items1 = [items, , ];
 const items2 = [AnalyticsLocations.FRIEND_ANNIVERSARIES_ACTION_BUTTON, GiftIntentType.FRIEND_ANNIVERSARY];
@@ -15,7 +18,7 @@ items1[1] = items2;
 const items3 = [AnalyticsLocations.FRIEND_ANNIVERSARIES_ACTION_BUTTON_COACHMARK, GiftIntentType.FRIEND_ANNIVERSARY];
 items1[2] = items3;
 const map = new Map(items1);
-const result = require("set").fileFinishedImporting("modules/premium/gifting/utils/PremiumGiftingIntentUtils.tsx");
+const result = set.fileFinishedImporting("modules/premium/gifting/utils/PremiumGiftingIntentUtils.tsx");
 
 export const getPremiumGiftingIntentAnalyticsLocation = function getPremiumGiftingIntentAnalyticsLocation(arg0) {
   if (arg0 === GiftIntentType.FRIEND_ANNIVERSARY) {

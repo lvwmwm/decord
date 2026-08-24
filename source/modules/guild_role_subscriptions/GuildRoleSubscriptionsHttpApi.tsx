@@ -1,24 +1,24 @@
-// Module ID: 7222
-// Function ID: 7223
+// Module ID: 7260
+// Function ID: 7261
 // Name: _updateGuildRoleSubscriptionGroupListing
-// Dependencies: [5, 676, 505, 530, 4273, 2]
+// Dependencies: [5, 676, 505, 530, 4277, 2]
 // Exports: archiveGuildRoleSubscriptionListing, createGuildRoleSubscriptionGroupListing, createGuildRoleSubscriptionListing, deleteGuildRoleSubscriptionGroupListing, deleteGuildRoleSubscriptionListing, fetchHighlightedCreatorGuildDetails, getGuildMonetizationRestrictions, getGuildRoleSubscriptionGroupForSubscriptionPlan, getGuildRoleSubscriptionGroupListing, getGuildRoleSubscriptionGroupListingsForGuild, getGuildRoleSubscriptionTrialEligibility, getGuildRoleSubscriptionTrials, getGuildRoleSubscriptionsSettings, getPriceTiers, updateGuildRoleSubscriptionGroupListing, updateGuildRoleSubscriptionListing, updateGuildRoleSubscriptionsSettings, updateGuildRoleSubscriptionsTrial
 
-// Module 7222 (_updateGuildRoleSubscriptionGroupListing)
-import set from "set";
-import { Endpoints } from "ME";
-import { PriceTierTypes } from "sum";
+// Module 7260 (_updateGuildRoleSubscriptionGroupListing)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
+import { PriceTierTypes } from "sum" /* 505 */;
 
 const require = arg1;
 function _updateGuildRoleSubscriptionGroupListing() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let set = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, body) {
       if (c8 === 2) {
         c8 = 3;
@@ -31,7 +31,7 @@ function _updateGuildRoleSubscriptionGroupListing() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -46,13 +46,13 @@ function _updateGuildRoleSubscriptionGroupListing() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_4 = tmp3;
-              let closure_3 = tmp7;
-              let c6 = 1;
+              closure_4 = tmp3;
+              closure_3 = tmp7;
+              c6 = 1;
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, body: null, rejectWithError: null };
-              obj1[0] = outer1_3.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS(callback, dependencyMap);
-              obj1[1] = set;
+              obj1 = { url: null, body: null, rejectWithError: null };
+              obj1[0] = closure_1_3.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS(callback, dependencyMap);
+              obj1[1] = closure_2;
               obj1[2] = callback(530).rejectWithMigratedError();
               c7 = 2;
               c8 = 1;
@@ -63,7 +63,7 @@ function _updateGuildRoleSubscriptionGroupListing() {
           } else if (1 === tmp7) {
             c6 = 0;
             callback = closure_5;
-            const aPIError = new callback(4273).APIError(callback);
+            const aPIError = new callback(4277).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -93,7 +93,7 @@ function _updateGuildRoleSubscriptionGroupListing() {
       }
     })();
   });
-  const _updateGuildRoleSubscriptionGroupListing = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -105,11 +105,11 @@ function _updateGuildRoleSubscriptionGroupListing() {
 function _createGuildRoleSubscriptionGroupListing() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0, body) {
       if (c7 === 2) {
         c7 = 3;
@@ -122,7 +122,7 @@ function _createGuildRoleSubscriptionGroupListing() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -137,12 +137,12 @@ function _createGuildRoleSubscriptionGroupListing() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_3 = tmp3;
-              let set = tmp7;
-              let c5 = 1;
+              closure_3 = tmp3;
+              closure_2 = tmp7;
+              c5 = 1;
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, body: null, rejectWithError: null };
-              obj1[0] = outer1_3.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS(callback);
+              obj1 = { url: null, body: null, rejectWithError: null };
+              obj1[0] = closure_1_3.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS(callback);
               obj1[1] = dependencyMap;
               obj1[2] = callback(530).rejectWithMigratedError();
               c6 = 2;
@@ -154,7 +154,7 @@ function _createGuildRoleSubscriptionGroupListing() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = closure_4;
-            const aPIError = new callback(4273).APIError(callback);
+            const aPIError = new callback(4277).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -184,7 +184,7 @@ function _createGuildRoleSubscriptionGroupListing() {
       }
     })();
   });
-  const _createGuildRoleSubscriptionGroupListing = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -196,11 +196,11 @@ function _createGuildRoleSubscriptionGroupListing() {
 function _deleteGuildRoleSubscriptionGroupListing() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (c7 === 2) {
         c7 = 3;
@@ -213,7 +213,7 @@ function _deleteGuildRoleSubscriptionGroupListing() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -228,12 +228,12 @@ function _deleteGuildRoleSubscriptionGroupListing() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_3 = tmp3;
-              let set = tmp7;
-              let c5 = 1;
+              closure_3 = tmp3;
+              closure_2 = tmp7;
+              c5 = 1;
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_3.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS(callback, dependencyMap);
+              obj1 = { url: null, rejectWithError: null };
+              obj1[0] = closure_1_3.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS(callback, dependencyMap);
               obj1[1] = callback(530).rejectWithMigratedError();
               c6 = 2;
               c7 = 1;
@@ -244,7 +244,7 @@ function _deleteGuildRoleSubscriptionGroupListing() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = closure_4;
-            const aPIError = new callback(4273).APIError(callback);
+            const aPIError = new callback(4277).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -258,7 +258,7 @@ function _deleteGuildRoleSubscriptionGroupListing() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           closure_4 = tmp19;
@@ -272,7 +272,7 @@ function _deleteGuildRoleSubscriptionGroupListing() {
       }
     })();
   });
-  const _deleteGuildRoleSubscriptionGroupListing = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -284,12 +284,12 @@ function _deleteGuildRoleSubscriptionGroupListing() {
 function _createGuildRoleSubscriptionListing() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let set = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     const iter = (function*(arg0, body) {
       if (c8 === 2) {
         c8 = 3;
@@ -302,7 +302,7 @@ function _createGuildRoleSubscriptionListing() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -317,8 +317,8 @@ function _createGuildRoleSubscriptionListing() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_4 = tmp3;
-              let closure_3 = tmp5;
+              closure_4 = tmp3;
+              closure_3 = tmp5;
               let priceTier;
               closure_3 = undefined;
               priceTier = priceTier.priceTier;
@@ -337,7 +337,7 @@ function _createGuildRoleSubscriptionListing() {
               obj2[0] = body;
               return obj2;
             } else {
-              let c6 = 1;
+              c6 = 1;
               const HTTP = callback(530).HTTP;
               const obj3 = { url: null, body: null, rejectWithError: null };
               obj3[0] = closure_3.GUILD_ROLE_SUBSCRIPTION_LISTINGS(callback, dependencyMap);
@@ -355,7 +355,7 @@ function _createGuildRoleSubscriptionListing() {
           } else if (2 === tmp8) {
             c6 = 0;
             closure_4 = closure_5;
-            const aPIError = new callback(4273).APIError(closure_4);
+            const aPIError = new callback(4277).APIError(closure_4);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -387,7 +387,7 @@ function _createGuildRoleSubscriptionListing() {
     iter.next();
     return iter;
   });
-  const _createGuildRoleSubscriptionListing = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -399,13 +399,13 @@ function _createGuildRoleSubscriptionListing() {
 function _updateGuildRoleSubscriptionListing() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2, arg3) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let set = arg2;
-    let closure_3 = arg3;
-    let c8 = 0;
-    let c9 = 0;
-    let c7 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    closure_3 = arg3;
+    c8 = 0;
+    c9 = 0;
+    c7 = 0;
     const iter = (function*(arg0, body) {
       if (c9 === 2) {
         c9 = 3;
@@ -418,7 +418,7 @@ function _updateGuildRoleSubscriptionListing() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -433,8 +433,8 @@ function _updateGuildRoleSubscriptionListing() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_5 = tmp3;
-              let closure_4 = tmp5;
+              closure_5 = tmp3;
+              closure_4 = tmp5;
               let priceTier;
               closure_4 = undefined;
               priceTier = priceTier.priceTier;
@@ -453,10 +453,10 @@ function _updateGuildRoleSubscriptionListing() {
               obj2[0] = body;
               return obj2;
             } else {
-              let c7 = 1;
+              c7 = 1;
               const HTTP = callback(530).HTTP;
               const obj3 = { url: null, body: null, rejectWithError: null };
-              obj3[0] = priceTier.GUILD_ROLE_SUBSCRIPTION_LISTINGS(callback, dependencyMap, set);
+              obj3[0] = priceTier.GUILD_ROLE_SUBSCRIPTION_LISTINGS(callback, dependencyMap, closure_2);
               const obj4 = {};
               const merged = Object.assign(closure_4);
               obj4.price_tier = priceTier;
@@ -471,7 +471,7 @@ function _updateGuildRoleSubscriptionListing() {
           } else if (2 === tmp8) {
             c7 = 0;
             closure_5 = closure_6;
-            const aPIError = new callback(4273).APIError(closure_5);
+            const aPIError = new callback(4277).APIError(closure_5);
             throw aPIError;
           } else if (arg0 === 1) {
             c9 = 3;
@@ -503,7 +503,7 @@ function _updateGuildRoleSubscriptionListing() {
     iter.next();
     return iter;
   });
-  const _updateGuildRoleSubscriptionListing = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -515,11 +515,11 @@ function _updateGuildRoleSubscriptionListing() {
 function _getGuildRoleSubscriptionGroupListingsForGuild() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     const iter = (function*(arg0, body) {
       if (c7 === 2) {
         c7 = 3;
@@ -532,7 +532,7 @@ function _getGuildRoleSubscriptionGroupListingsForGuild() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -547,9 +547,9 @@ function _getGuildRoleSubscriptionGroupListingsForGuild() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_3 = tmp3;
+              closure_3 = tmp3;
               let obj3 = tmp7;
-              let obj1;
+              obj1 = undefined;
               if (obj1 === undefined) {
                 obj1 = { includeSoftDeleted: false };
               }
@@ -571,7 +571,7 @@ function _getGuildRoleSubscriptionGroupListingsForGuild() {
               obj3 = { include_soft_deleted: null, country_code: null };
               obj3[0] = obj1.includeSoftDeleted;
               obj3[1] = obj1.countryCode;
-              let c5 = 1;
+              c5 = 1;
               const HTTP = callback(obj1[3]).HTTP;
               const obj4 = { url: null, query: null, rejectWithError: null };
               obj4[0] = closure_3.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS(callback);
@@ -618,7 +618,7 @@ function _getGuildRoleSubscriptionGroupListingsForGuild() {
     iter.next();
     return iter;
   });
-  const _getGuildRoleSubscriptionGroupListingsForGuild = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -630,20 +630,20 @@ function _getGuildRoleSubscriptionGroupListingsForGuild() {
 function _getGuildRoleSubscriptionsSettings() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0, body) {
       const HTTP = callback(530).HTTP;
-      const obj1 = { url: null, rejectWithError: null };
-      obj1[0] = outer1_3.GUILD_ROLE_SUBSCRIPTIONS_SETTINGS(callback);
+      obj1 = { url: null, rejectWithError: null };
+      obj1[0] = closure_1_3.GUILD_ROLE_SUBSCRIPTIONS_SETTINGS(callback);
       const obj3 = callback(530);
       obj1[1] = obj3.rejectWithMigratedError();
       yield HTTP.get(obj1);
       return body.body;
     })();
   });
-  const _getGuildRoleSubscriptionsSettings = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -655,11 +655,11 @@ function _getGuildRoleSubscriptionsSettings() {
 function _updateGuildRoleSubscriptionsSettings() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0, body) {
       if (c7 === 2) {
         c7 = 3;
@@ -672,7 +672,7 @@ function _updateGuildRoleSubscriptionsSettings() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -687,12 +687,12 @@ function _updateGuildRoleSubscriptionsSettings() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_3 = tmp3;
-              let set = tmp7;
-              let c5 = 1;
+              closure_3 = tmp3;
+              closure_2 = tmp7;
+              c5 = 1;
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, body: null, rejectWithError: null };
-              obj1[0] = outer1_3.GUILD_ROLE_SUBSCRIPTIONS_SETTINGS(callback);
+              obj1 = { url: null, body: null, rejectWithError: null };
+              obj1[0] = closure_1_3.GUILD_ROLE_SUBSCRIPTIONS_SETTINGS(callback);
               obj1[1] = dependencyMap;
               obj1[2] = callback(530).rejectWithMigratedError();
               c6 = 2;
@@ -704,7 +704,7 @@ function _updateGuildRoleSubscriptionsSettings() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = closure_4;
-            const aPIError = new callback(4273).APIError(callback);
+            const aPIError = new callback(4277).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -734,7 +734,7 @@ function _updateGuildRoleSubscriptionsSettings() {
       }
     })();
   });
-  const _updateGuildRoleSubscriptionsSettings = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -746,10 +746,10 @@ function _updateGuildRoleSubscriptionsSettings() {
 function _getPriceTiers() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0, body) {
       if (c6 === 2) {
         c6 = 3;
@@ -762,7 +762,7 @@ function _getPriceTiers() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -777,17 +777,17 @@ function _getPriceTiers() {
               obj[0] = body;
               return obj;
             } else {
-              let set = tmp3;
+              closure_2 = tmp3;
               const table = tmp7;
               let constants = 1;
-              const HTTP = callback(outer1_1[3]).HTTP;
-              const obj1 = { url: null, query: null, rejectWithError: null };
-              obj1[0] = outer1_3.PRICE_TIERS;
+              const HTTP = callback(closure_1_1[3]).HTTP;
+              obj1 = { url: null, query: null, rejectWithError: null };
+              obj1[0] = closure_1_3.PRICE_TIERS;
               const obj2 = { price_tier_type: null, guild_id: null };
               obj2[0] = constants.GUILD_ROLE_SUBSCRIPTIONS;
               obj2[1] = callback;
               obj1[1] = obj2;
-              obj1[2] = callback(outer1_1[3]).rejectWithMigratedError();
+              obj1[2] = callback(closure_1_1[3]).rejectWithMigratedError();
               c5 = 2;
               c6 = 1;
               const obj3 = { value: null, done: false };
@@ -827,7 +827,7 @@ function _getPriceTiers() {
       }
     })();
   });
-  const _getPriceTiers = tmp;
+  closure_13 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -839,12 +839,12 @@ function _getPriceTiers() {
 function _getGuildRoleSubscriptionGroupListing() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let set = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     const iter = (function*(arg0, body) {
       if (c8 === 2) {
         c8 = 3;
@@ -857,7 +857,7 @@ function _getGuildRoleSubscriptionGroupListing() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -872,9 +872,9 @@ function _getGuildRoleSubscriptionGroupListing() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_4 = tmp3;
-              let closure_3 = tmp5;
-              let obj1;
+              closure_4 = tmp3;
+              closure_3 = tmp5;
+              obj1 = undefined;
               if (obj1 === undefined) {
                 obj1 = {};
               }
@@ -892,7 +892,7 @@ function _getGuildRoleSubscriptionGroupListing() {
               obj2[0] = body;
               return obj2;
             } else {
-              let c6 = 1;
+              c6 = 1;
               const HTTP = callback(530).HTTP;
               const obj3 = { url: null, query: null, rejectWithError: null };
               obj3[0] = closure_3.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS(callback, dependencyMap);
@@ -910,7 +910,7 @@ function _getGuildRoleSubscriptionGroupListing() {
           } else if (2 === tmp8) {
             c6 = 0;
             closure_3 = closure_5;
-            const aPIError = new callback(4273).APIError(closure_3);
+            const aPIError = new callback(4277).APIError(closure_3);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -942,7 +942,7 @@ function _getGuildRoleSubscriptionGroupListing() {
     iter.next();
     return iter;
   });
-  const _getGuildRoleSubscriptionGroupListing = tmp;
+  closure_14 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -954,10 +954,10 @@ function _getGuildRoleSubscriptionGroupListing() {
 function _getGuildRoleSubscriptionGroupForSubscriptionPlan() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0, body) {
       if (c6 === 2) {
         c6 = 3;
@@ -970,7 +970,7 @@ function _getGuildRoleSubscriptionGroupForSubscriptionPlan() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -985,13 +985,13 @@ function _getGuildRoleSubscriptionGroupForSubscriptionPlan() {
               obj[0] = body;
               return obj;
             } else {
-              let set = tmp3;
+              closure_2 = tmp3;
               const table = tmp7;
-              let c4 = 1;
-              const HTTP = callback(outer1_1[3]).HTTP;
-              const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_3.SUBSCRIPTION_PLAN_GUILD_ROLE_GROUP_LISTING(callback);
-              obj1[1] = callback(outer1_1[3]).rejectWithMigratedError();
+              c4 = 1;
+              const HTTP = callback(closure_1_1[3]).HTTP;
+              obj1 = { url: null, rejectWithError: null };
+              obj1[0] = closure_1_3.SUBSCRIPTION_PLAN_GUILD_ROLE_GROUP_LISTING(callback);
+              obj1[1] = callback(closure_1_1[3]).rejectWithMigratedError();
               c5 = 2;
               c6 = 1;
               const obj2 = { value: null, done: false };
@@ -1031,7 +1031,7 @@ function _getGuildRoleSubscriptionGroupForSubscriptionPlan() {
       }
     })();
   });
-  const _getGuildRoleSubscriptionGroupForSubscriptionPlan = tmp;
+  closure_15 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -1043,12 +1043,12 @@ function _getGuildRoleSubscriptionGroupForSubscriptionPlan() {
 function _deleteGuildRoleSubscriptionListing() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let set = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c8 === 2) {
         c8 = 3;
@@ -1061,7 +1061,7 @@ function _deleteGuildRoleSubscriptionListing() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1076,12 +1076,12 @@ function _deleteGuildRoleSubscriptionListing() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_4 = tmp3;
-              let closure_3 = tmp7;
-              let c6 = 1;
+              closure_4 = tmp3;
+              closure_3 = tmp7;
+              c6 = 1;
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_3.GUILD_ROLE_SUBSCRIPTION_LISTINGS(callback, dependencyMap, set);
+              obj1 = { url: null, rejectWithError: null };
+              obj1[0] = closure_1_3.GUILD_ROLE_SUBSCRIPTION_LISTINGS(callback, dependencyMap, closure_2);
               obj1[1] = callback(530).rejectWithMigratedError();
               c7 = 2;
               c8 = 1;
@@ -1092,7 +1092,7 @@ function _deleteGuildRoleSubscriptionListing() {
           } else if (1 === tmp7) {
             c6 = 0;
             callback = closure_5;
-            const aPIError = new callback(4273).APIError(callback);
+            const aPIError = new callback(4277).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -1106,7 +1106,7 @@ function _deleteGuildRoleSubscriptionListing() {
           } else {
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           closure_5 = tmp19;
@@ -1120,7 +1120,7 @@ function _deleteGuildRoleSubscriptionListing() {
       }
     })();
   });
-  const _deleteGuildRoleSubscriptionListing = tmp;
+  closure_16 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -1132,12 +1132,12 @@ function _deleteGuildRoleSubscriptionListing() {
 function _archiveGuildRoleSubscriptionListing() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let set = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, body) {
       if (c8 === 2) {
         c8 = 3;
@@ -1150,7 +1150,7 @@ function _archiveGuildRoleSubscriptionListing() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1165,12 +1165,12 @@ function _archiveGuildRoleSubscriptionListing() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_4 = tmp3;
-              let closure_3 = tmp7;
-              let c6 = 1;
+              closure_4 = tmp3;
+              closure_3 = tmp7;
+              c6 = 1;
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_3.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTING_ARCHIVE(callback, dependencyMap, set);
+              obj1 = { url: null, rejectWithError: null };
+              obj1[0] = closure_1_3.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTING_ARCHIVE(callback, dependencyMap, closure_2);
               obj1[1] = callback(530).rejectWithMigratedError();
               c7 = 2;
               c8 = 1;
@@ -1181,7 +1181,7 @@ function _archiveGuildRoleSubscriptionListing() {
           } else if (1 === tmp7) {
             c6 = 0;
             callback = closure_5;
-            const aPIError = new callback(4273).APIError(callback);
+            const aPIError = new callback(4277).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -1211,7 +1211,7 @@ function _archiveGuildRoleSubscriptionListing() {
       }
     })();
   });
-  const _archiveGuildRoleSubscriptionListing = tmp;
+  closure_17 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -1223,10 +1223,10 @@ function _archiveGuildRoleSubscriptionListing() {
 function _getGuildRoleSubscriptionTrials() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0, body) {
       if (c6 === 2) {
         c6 = 3;
@@ -1239,7 +1239,7 @@ function _getGuildRoleSubscriptionTrials() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1254,13 +1254,13 @@ function _getGuildRoleSubscriptionTrials() {
               obj[0] = body;
               return obj;
             } else {
-              let set = tmp3;
+              closure_2 = tmp3;
               const table = tmp7;
-              let c4 = 1;
-              const HTTP = callback(outer1_1[3]).HTTP;
-              const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_3.GUILD_ROLE_SUBSCRIPTION_TRIALS(callback);
-              obj1[1] = callback(outer1_1[3]).rejectWithMigratedError();
+              c4 = 1;
+              const HTTP = callback(closure_1_1[3]).HTTP;
+              obj1 = { url: null, rejectWithError: null };
+              obj1[0] = closure_1_3.GUILD_ROLE_SUBSCRIPTION_TRIALS(callback);
+              obj1[1] = callback(closure_1_1[3]).rejectWithMigratedError();
               c5 = 2;
               c6 = 1;
               const obj2 = { value: null, done: false };
@@ -1300,7 +1300,7 @@ function _getGuildRoleSubscriptionTrials() {
       }
     })();
   });
-  const _getGuildRoleSubscriptionTrials = tmp;
+  closure_18 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -1312,12 +1312,12 @@ function _getGuildRoleSubscriptionTrials() {
 function _updateGuildRoleSubscriptionsTrial() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let set = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, body) {
       if (c8 === 2) {
         c8 = 3;
@@ -1330,7 +1330,7 @@ function _updateGuildRoleSubscriptionsTrial() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1345,13 +1345,13 @@ function _updateGuildRoleSubscriptionsTrial() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_4 = tmp3;
-              let closure_3 = tmp7;
-              let c6 = 1;
+              closure_4 = tmp3;
+              closure_3 = tmp7;
+              c6 = 1;
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, body: null, rejectWithError: null };
-              obj1[0] = outer1_3.GUILD_ROLE_SUBSCRIPTION_LISTING_TRIAL(callback, dependencyMap);
-              obj1[1] = set;
+              obj1 = { url: null, body: null, rejectWithError: null };
+              obj1[0] = closure_1_3.GUILD_ROLE_SUBSCRIPTION_LISTING_TRIAL(callback, dependencyMap);
+              obj1[1] = closure_2;
               obj1[2] = callback(530).rejectWithMigratedError();
               c7 = 2;
               c8 = 1;
@@ -1362,7 +1362,7 @@ function _updateGuildRoleSubscriptionsTrial() {
           } else if (1 === tmp7) {
             c6 = 0;
             callback = closure_5;
-            const aPIError = new callback(4273).APIError(callback);
+            const aPIError = new callback(4277).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -1392,7 +1392,7 @@ function _updateGuildRoleSubscriptionsTrial() {
       }
     })();
   });
-  const _updateGuildRoleSubscriptionsTrial = tmp;
+  closure_19 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -1404,12 +1404,12 @@ function _updateGuildRoleSubscriptionsTrial() {
 function _getGuildRoleSubscriptionTrialEligibility() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let set = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, body) {
       if (c8 === 2) {
         c8 = 3;
@@ -1422,7 +1422,7 @@ function _getGuildRoleSubscriptionTrialEligibility() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1437,12 +1437,12 @@ function _getGuildRoleSubscriptionTrialEligibility() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_4 = tmp3;
-              let closure_3 = tmp7;
-              let c6 = 1;
+              closure_4 = tmp3;
+              closure_3 = tmp7;
+              c6 = 1;
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_3.GUILD_ROLE_SUBSCRIPTION_TRIAL_ELIGIBILITY(callback, dependencyMap, set);
+              obj1 = { url: null, rejectWithError: null };
+              obj1[0] = closure_1_3.GUILD_ROLE_SUBSCRIPTION_TRIAL_ELIGIBILITY(callback, dependencyMap, closure_2);
               obj1[1] = callback(530).rejectWithMigratedError();
               c7 = 2;
               c8 = 1;
@@ -1453,7 +1453,7 @@ function _getGuildRoleSubscriptionTrialEligibility() {
           } else if (1 === tmp7) {
             c6 = 0;
             callback = closure_5;
-            const aPIError = new callback(4273).APIError(callback);
+            const aPIError = new callback(4277).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -1483,7 +1483,7 @@ function _getGuildRoleSubscriptionTrialEligibility() {
       }
     })();
   });
-  const _getGuildRoleSubscriptionTrialEligibility = tmp;
+  closure_20 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -1495,11 +1495,11 @@ function _getGuildRoleSubscriptionTrialEligibility() {
 function _getGuildMonetizationRestrictions() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     const iter = (function*(arg0, body) {
       if (c7 === 2) {
         c7 = 3;
@@ -1512,7 +1512,7 @@ function _getGuildMonetizationRestrictions() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1527,10 +1527,10 @@ function _getGuildMonetizationRestrictions() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_3 = tmp3;
-              let set = tmp5;
+              closure_3 = tmp3;
+              closure_2 = tmp5;
               let signal;
-              let obj1 = signal;
+              obj1 = signal;
               if (signal === undefined) {
                 obj1 = {};
               }
@@ -1549,7 +1549,7 @@ function _getGuildMonetizationRestrictions() {
               obj2[0] = body;
               return obj2;
             } else {
-              let c5 = 1;
+              c5 = 1;
               const HTTP = callback(signal[3]).HTTP;
               const obj3 = { url: null, signal: null, rejectWithError: null };
               obj3[0] = closure_3.CREATOR_MONETIZATION_RESTRICTIONS(callback);
@@ -1563,8 +1563,8 @@ function _getGuildMonetizationRestrictions() {
             }
           } else if (2 === tmp8) {
             c5 = 0;
-            set = closure_4;
-            const aPIError = new callback(signal[4]).APIError(set);
+            closure_2 = closure_4;
+            const aPIError = new callback(signal[4]).APIError(closure_2);
             throw aPIError;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -1596,7 +1596,7 @@ function _getGuildMonetizationRestrictions() {
     iter.next();
     return iter;
   });
-  const _getGuildMonetizationRestrictions = tmp;
+  closure_21 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -1608,10 +1608,10 @@ function _getGuildMonetizationRestrictions() {
 function _fetchHighlightedCreatorGuildDetails() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0) {
       if (c7 === 2) {
         c7 = 3;
@@ -1624,7 +1624,7 @@ function _fetchHighlightedCreatorGuildDetails() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1639,14 +1639,14 @@ function _fetchHighlightedCreatorGuildDetails() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_3 = tmp3;
-              let set = tmp7;
+              closure_3 = tmp3;
+              closure_2 = tmp7;
               let lib;
-              let c5 = 1;
-              const HTTP = lib(outer1_1[3]).HTTP;
-              const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_3.GUILD_DISCOVERY_SLUG(lib);
-              obj1[1] = lib(outer1_1[3]).rejectWithMigratedError();
+              c5 = 1;
+              const HTTP = lib(closure_1_1[3]).HTTP;
+              obj1 = { url: null, rejectWithError: null };
+              obj1[0] = closure_1_3.GUILD_DISCOVERY_SLUG(lib);
+              obj1[1] = lib(closure_1_1[3]).rejectWithMigratedError();
               c6 = 2;
               c7 = 1;
               const obj2 = { value: null, done: false };
@@ -1693,7 +1693,7 @@ function _fetchHighlightedCreatorGuildDetails() {
       }
     })();
   });
-  const _fetchHighlightedCreatorGuildDetails = tmp;
+  closure_22 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -1702,9 +1702,9 @@ function _fetchHighlightedCreatorGuildDetails() {
   }
   return applyArgumentsResult;
 }
-const result = require("sum").fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsHttpApi.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsHttpApi.tsx");
 
-export const updateGuildRoleSubscriptionGroupListing = function updateGuildRoleSubscriptionGroupListing(closure_0, closure_1, set) {
+export const updateGuildRoleSubscriptionGroupListing = function updateGuildRoleSubscriptionGroupListing(closure_0, closure_1, closure_2) {
   const self = this;
   const apply = _updateGuildRoleSubscriptionGroupListing.apply;
   if (typeof apply === "unknown") {
@@ -1784,7 +1784,7 @@ export const updateGuildRoleSubscriptionsSettings = function updateGuildRoleSubs
   }
   return applyArgumentsResult;
 };
-export const getPriceTiers = function getPriceTiers(outer1_0) {
+export const getPriceTiers = function getPriceTiers(closure_1_0) {
   const self = this;
   const apply = _getPriceTiers.apply;
   if (typeof apply === "unknown") {
@@ -1814,7 +1814,7 @@ export const getGuildRoleSubscriptionGroupForSubscriptionPlan = function getGuil
   }
   return applyArgumentsResult;
 };
-export const deleteGuildRoleSubscriptionListing = function deleteGuildRoleSubscriptionListing(closure_0, closure_1, set) {
+export const deleteGuildRoleSubscriptionListing = function deleteGuildRoleSubscriptionListing(closure_0, closure_1, closure_2) {
   const self = this;
   const apply = _deleteGuildRoleSubscriptionListing.apply;
   if (typeof apply === "unknown") {
@@ -1824,7 +1824,7 @@ export const deleteGuildRoleSubscriptionListing = function deleteGuildRoleSubscr
   }
   return applyArgumentsResult;
 };
-export const archiveGuildRoleSubscriptionListing = function archiveGuildRoleSubscriptionListing(closure_0, closure_1, set) {
+export const archiveGuildRoleSubscriptionListing = function archiveGuildRoleSubscriptionListing(closure_0, closure_1, closure_2) {
   const self = this;
   const apply = _archiveGuildRoleSubscriptionListing.apply;
   if (typeof apply === "unknown") {
@@ -1844,7 +1844,7 @@ export const getGuildRoleSubscriptionTrials = function getGuildRoleSubscriptionT
   }
   return applyArgumentsResult;
 };
-export const updateGuildRoleSubscriptionsTrial = function updateGuildRoleSubscriptionsTrial(closure_0, closure_1, set) {
+export const updateGuildRoleSubscriptionsTrial = function updateGuildRoleSubscriptionsTrial(closure_0, closure_1, closure_2) {
   const self = this;
   const apply = _updateGuildRoleSubscriptionsTrial.apply;
   if (typeof apply === "unknown") {

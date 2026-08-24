@@ -1,23 +1,26 @@
-// Module ID: 16228
-// Function ID: 16229
+// Module ID: 16325
+// Function ID: 16326
 // Name: applyActivityOrientationLock
-// Dependencies: [4481, 10964, 2]
+// Dependencies: [4485, 11003, 2]
 // Exports: default
 
-// Module 16228 (applyActivityOrientationLock)
-import { OrientationLockState } from "items3";
+// Module 16325 (applyActivityOrientationLock)
+import set from "set" /* 2 */;
+import items3 from "items3" /* 4485 */;
+import applyOrientationLock from "applyOrientationLock" /* 11003 */;
 
-let result = require("set").fileFinishedImporting("modules/activities/native/applyActivityOrientationLock.tsx");
+const OrientationLockState = items3.OrientationLockState;
+let result = set.fileFinishedImporting("modules/activities/native/applyActivityOrientationLock.tsx");
 
 export default function applyActivityOrientationLock(arg0) {
   if (OrientationLockState.UNLOCKED === arg0) {
-    const result = require(10964) /* applyOrientationLock */.releaseOrientationLock({ unlockAfterRotatingToPreviousLock: true });
-    const obj3 = require(10964) /* applyOrientationLock */;
+    const result = applyOrientationLock.releaseOrientationLock({ unlockAfterRotatingToPreviousLock: true });
+    const obj3 = applyOrientationLock;
   } else if (tmp.PORTRAIT === arg0) {
-    require(10964) /* applyOrientationLock */.applyOrientationLock("PORTRAIT");
-    const obj2 = require(10964) /* applyOrientationLock */;
+    applyOrientationLock.applyOrientationLock("PORTRAIT");
+    const obj2 = applyOrientationLock;
   } else if (tmp.LANDSCAPE === arg0) {
-    require(10964) /* applyOrientationLock */.applyOrientationLock("LANDSCAPE");
-    const obj = require(10964) /* applyOrientationLock */;
+    applyOrientationLock.applyOrientationLock("LANDSCAPE");
+    const obj = applyOrientationLock;
   }
 };

@@ -1,10 +1,12 @@
-// Module ID: 5565
-// Function ID: 5566
+// Module ID: 5572
+// Function ID: 5573
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5565 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BumpingFistsSpotIllustration-2x.png.js");
+// Module 5572 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BumpingFistsSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/0830976830e01b68a35cf6d066964d973d8102bda6d683d0d2e9c012fe8c5f4e.png";
 export const metadata = { fileBytes: 23409 };

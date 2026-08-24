@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 498 (Vibration)
+import getAll from "get" /* 30 */;
 
-export default require("get").getEnforcing("Vibration");
+
+export default getAll.getEnforcing("Vibration");

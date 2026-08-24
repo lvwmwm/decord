@@ -4,10 +4,14 @@
 // Dependencies: [41, 42, 93, 95, 98, 141, 136, 139, 144, 27, 112, 146, 135, 149]
 
 // Module 143 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
+import javaScriptFlagGetterAll from "javaScriptFlagGetter" /* 27 */;
+import _inheritsDefault from "_inherits" /* 98 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 141 */;
+import setDefault from "set" /* 144 */;
+import closure_4 from "_classCallCheck" /* 41 */;
+import closure_5 from "_possibleConstructorReturn" /* 93 */;
+import closure_6 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
 const ReactNativeElement = arg1;
 function _isNativeReflectConstruct() {
@@ -21,10 +25,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -35,13 +39,13 @@ function noop() {
 class ReactNativeElement {
   constructor(arg0, arg1, arg2, arg3) {
     self = this;
-    tmp = _isNativeReflectConstruct(this, ReactNativeElement);
+    tmp = closure_4(this, ReactNativeElement);
     items = [, ];
     items[0] = importDefault;
     items[1] = importAll;
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(ReactNativeElement);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_6;
+    obj = closure_6(ReactNativeElement);
+    tmp3 = closure_5;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -56,7 +60,7 @@ class ReactNativeElement {
     return tmp3Result;
   }
 }
-require("_inherits")(ReactNativeElement, require("_isNativeReflectConstruct"));
+_inheritsDefault(ReactNativeElement, _isNativeReflectConstructDefault);
 let obj = {
   key: "offsetHeight",
   get() {
@@ -116,14 +120,14 @@ let items = [
     value: function blur() {
       const self = this;
       if (obj.isTextInput(this)) {
-        importDefault(144).blurTextInput(self);
-        const tmpResult = importDefault(144);
+        setDefault.blurTextInput(self);
+        const tmpResult = setDefault;
       } else {
         if (obj2.enableImperativeFocus()) {
           const Commands = ReactNativeElement(112).Commands;
           Commands.blur(self);
         }
-        obj2 = importAll(27);
+        obj2 = javaScriptFlagGetterAll;
       }
     }
   },
@@ -132,14 +136,14 @@ let items = [
     value: function focus() {
       const self = this;
       if (obj.isTextInput(this)) {
-        importDefault(144).focusTextInput(self);
-        const tmpResult = importDefault(144);
+        setDefault.focusTextInput(self);
+        const tmpResult = setDefault;
       } else {
         if (obj2.enableImperativeFocus()) {
           const Commands = ReactNativeElement(112).Commands;
           Commands.focus(self);
         }
-        obj2 = importAll(27);
+        obj2 = javaScriptFlagGetterAll;
       }
     }
   },

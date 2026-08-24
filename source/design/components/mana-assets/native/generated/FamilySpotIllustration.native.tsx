@@ -1,18 +1,19 @@
-// Module ID: 5694
-// Function ID: 5695
+// Module ID: 5725
+// Function ID: 5726
 // Name: FamilySpotIllustration
-// Dependencies: [21, 5449, 5695, 2]
+// Dependencies: [21, 5454, 5726, 2]
 // Exports: FamilySpotIllustration
 
-// Module 5694 (FamilySpotIllustration)
-import { jsx } from "jsxProd";
+// Module 5725 (FamilySpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5726 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/FamilySpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/FamilySpotIllustration.native.tsx");
 
 export const FamilySpotIllustration = function FamilySpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const FamilySpotIllustration = function FamilySpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5695);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const FamilySpotIllustration = function FamilySpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

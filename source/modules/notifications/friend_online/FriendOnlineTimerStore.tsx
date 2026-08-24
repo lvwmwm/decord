@@ -1,13 +1,16 @@
-// Module ID: 17029
-// Function ID: 17030
+// Module ID: 17122
+// Function ID: 17123
 // Name: initialize
 // Dependencies: [687, 589, 709, 2]
 
-// Module 17029 (initialize)
-import { PersistedStore } from "initialize";
+// Module 17122 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
-const HOUR = require("set").Millis.HOUR;
+const HOUR = setDefault.Millis.HOUR;
 let obj = { lastReportedAtMs: null };
+const PersistedStore = initializeDefault.PersistedStore;
 class FriendOnlineTimerStore extends PersistedStore {
 }
 const prototype = FriendOnlineTimerStore.prototype;
@@ -19,6 +22,7 @@ prototype["initialize"] = function initialize() {
   if (tmp == null) {
     tmp = obj;
   }
+  closure_2 = tmp;
 };
 prototype["isCooldownElapsed"] = function isCooldownElapsed() {
   let tmp = null == obj.lastReportedAtMs;
@@ -39,7 +43,7 @@ obj = {
     return true;
   }
 };
-const friendOnlineTimerStore = new FriendOnlineTimerStore(require("dispatcher"), obj);
-const result = require("dispatcher").fileFinishedImporting("modules/notifications/friend_online/FriendOnlineTimerStore.tsx");
+const friendOnlineTimerStore = new FriendOnlineTimerStore(dispatcherDefault, obj);
+const result = require("set").fileFinishedImporting("modules/notifications/friend_online/FriendOnlineTimerStore.tsx");
 
 export default friendOnlineTimerStore;

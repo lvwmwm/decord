@@ -1,27 +1,27 @@
-// Module ID: 15161
-// Function ID: 15162
+// Module ID: 15225
+// Function ID: 15226
 // Name: useManaTextMigrationHighlightRestartNotice
-// Dependencies: [19, 4737, 589, 4656, 2]
+// Dependencies: [19, 4742, 589, 4662, 2]
 // Exports: useManaTextMigrationHighlightRestartNotice
 
-// Module 15161 (useManaTextMigrationHighlightRestartNotice)
-import noop from "noop";
-import getUserAgnosticState from "getUserAgnosticState";
+// Module 15225 (useManaTextMigrationHighlightRestartNotice)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "getUserAgnosticState" /* 4742 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("design/components/Text/native/useManaTextMigrationHighlightRestartNotice.tsx");
+const result = require("set").fileFinishedImporting("design/components/Text/native/useManaTextMigrationHighlightRestartNotice.tsx");
 
 export const useManaTextMigrationHighlightRestartNotice = function useManaTextMigrationHighlightRestartNotice() {
-  const items = [getUserAgnosticState];
-  const stateFromStores = _require(589).useStateFromStores(items, () => getUserAgnosticState.get("highlight_mana_text"));
+  const items = [closure_4];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_4.get("highlight_mana_text"));
   _require = React.useRef(true);
   const items1 = [stateFromStores];
   const effect = React.useEffect(() => {
     if (ref.current) {
       tmp.current = false;
     } else {
-      outer1_1(outer1_2[3]).show({ title: "Mana Text Migration Highlighter", body: "Restart the app (force quit and reopen) to see the change." });
-      const obj = outer1_1(outer1_2[3]);
+      closure_1_1(closure_1_2[3]).show({ title: "Mana Text Migration Highlighter", body: "Restart the app (force quit and reopen) to see the change." });
+      const obj = closure_1_1(closure_1_2[3]);
     }
   }, items1);
 };

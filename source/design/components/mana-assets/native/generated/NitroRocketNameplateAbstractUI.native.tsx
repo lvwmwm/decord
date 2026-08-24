@@ -1,18 +1,19 @@
-// Module ID: 5990
-// Function ID: 5991
+// Module ID: 6021
+// Function ID: 6022
 // Name: NitroRocketNameplateAbstractUI
-// Dependencies: [21, 5449, 5991, 2]
+// Dependencies: [21, 5454, 6022, 2]
 // Exports: NitroRocketNameplateAbstractUI
 
-// Module 5990 (NitroRocketNameplateAbstractUI)
-import { jsx } from "jsxProd";
+// Module 6021 (NitroRocketNameplateAbstractUI)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6022 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroRocketNameplateAbstractUI.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroRocketNameplateAbstractUI.native.tsx");
 
 export const NitroRocketNameplateAbstractUI = function NitroRocketNameplateAbstractUI(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const NitroRocketNameplateAbstractUI = function NitroRocketNameplateAbstr
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5991);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroRocketNameplateAbstractUI = function NitroRocketNameplateAbstr
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

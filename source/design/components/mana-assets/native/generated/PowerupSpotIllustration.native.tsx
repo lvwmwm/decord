@@ -1,18 +1,19 @@
-// Module ID: 6062
-// Function ID: 6063
+// Module ID: 6093
+// Function ID: 6094
 // Name: PowerupSpotIllustration
-// Dependencies: [21, 5449, 6063, 2]
+// Dependencies: [21, 5454, 6094, 2]
 // Exports: PowerupSpotIllustration
 
-// Module 6062 (PowerupSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 6093 (PowerupSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6094 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PowerupSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PowerupSpotIllustration.native.tsx");
 
 export const PowerupSpotIllustration = function PowerupSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const PowerupSpotIllustration = function PowerupSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6063);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const PowerupSpotIllustration = function PowerupSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

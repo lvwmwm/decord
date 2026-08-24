@@ -1,10 +1,12 @@
-// Module ID: 8356
-// Function ID: 8357
+// Module ID: 8395
+// Function ID: 8396
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8356 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/checkpoint/card-capybara.png.js");
+// Module 8395 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/checkpoint/card-capybara.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/377e58c9356f0ba294b41aa722b33093952e438e21d5c4571e3ed239a61529fd.png";
 export const metadata = { fileBytes: 11430 };

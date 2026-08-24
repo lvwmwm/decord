@@ -4,6 +4,8 @@
 // Dependencies: [610]
 
 // Module 624 (_process)
+import _mod610 from "module_610" /* 610 */;
+
 let tmp = typeof exports === "object";
 if (typeof exports === "object") {
   tmp = exports;
@@ -27,19 +29,19 @@ if (tmp2) {
 if (tmp2) {
   tmp2 = module;
 }
-let c0 = tmp2;
+module = tmp2;
 let _process = tmp2;
 if (tmp2) {
   _process = tmp2.exports === tmp;
 }
 if (_process) {
-  _process = require("module_610").process;
+  _process = _mod610.process;
 }
 
 export default (() => {
   try {
-    let types = closure_0;
-    if (closure_0) {
+    let types = module;
+    if (module) {
       types = obj.require;
     }
     if (types) {

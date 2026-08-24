@@ -1,18 +1,20 @@
-// Module ID: 9053
-// Function ID: 9054
+// Module ID: 9090
+// Function ID: 9091
 // Name: fetchGuildAffinities
 // Dependencies: [676, 530, 709, 2]
 // Exports: fetchGuildAffinities
 
-// Module 9053 (fetchGuildAffinities)
-import { Endpoints } from "ME";
+// Module 9090 (fetchGuildAffinities)
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import ME from "ME" /* 676 */;
 
-const result = require("dispatcher").fileFinishedImporting("actions/GuildAffinitiesActionCreators.tsx");
+const Endpoints = ME.Endpoints;
+const result = set.fileFinishedImporting("actions/GuildAffinitiesActionCreators.tsx");
 
 export const fetchGuildAffinities = function fetchGuildAffinities() {
-  const HTTP = require(530) /* sendRequest */.HTTP;
-  const obj = { url: Endpoints.GUILD_AFFINITIES, oldFormErrors: true, rejectWithError: null };
-  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+  const HTTP = sendRequest.HTTP;
+  const obj = { url: Endpoints.GUILD_AFFINITIES, oldFormErrors: true, rejectWithError: sendRequest.rejectWithMigratedError() };
   const value = HTTP.get(obj);
   return value.then((guildAffinities) => {
     callback(709).dispatch({ type: "LOAD_GUILD_AFFINITIES_SUCCESS", guildAffinities: guildAffinities.body.guild_affinities });

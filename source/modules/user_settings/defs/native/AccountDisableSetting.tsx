@@ -1,31 +1,35 @@
-// Module ID: 14169
-// Function ID: 14170
+// Module ID: 14237
+// Function ID: 14238
 // Name: pressable
-// Dependencies: [8198, 14168, 10669, 1236, 2]
+// Dependencies: [8238, 14236, 10708, 1236, 2]
 
-// Module 14169 (pressable)
-import createToggle from "createToggle";
+// Module 14237 (pressable)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import handleDisableAccountDefault from "handleDisableAccount" /* 14236 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.jf5GGb);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.jf5GGb);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT,
   onPress: function onAccountDisablePress() {
-    importDefault(14168)(false);
+    handleDisableAccountDefault(false);
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.jf5GGb);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.jf5GGb);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT,
   onPress: function onAccountDisablePress() {
-    importDefault(14168)(false);
+    handleDisableAccountDefault(false);
   }
 };
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/AccountDisableSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/AccountDisableSetting.tsx");
 
 export default pressable;

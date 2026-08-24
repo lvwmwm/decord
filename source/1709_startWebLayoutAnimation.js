@@ -4,10 +4,15 @@
 // Dependencies: [1679, 1710, 1658, 1723, 1724, 1742, 1740, 1741, 1706]
 
 // Module 1709 (startWebLayoutAnimation)
-const require = arg1;
+import isWorkletFunction from "isWorkletFunction" /* 1679 */;
+import TransitionType from "TransitionType" /* 1710 */;
+import setElementAnimation from "setElementAnimation" /* 1723 */;
+import findDescendantWithExitingAnimation from "findDescendantWithExitingAnimation" /* 1741 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function startWebLayoutAnimation(props, _componentDOMRef, ENTERING, easingY) {
-  if (ENTERING === require(1679) /* isWorkletFunction */.LayoutAnimationType.ENTERING) {
+  if (ENTERING === isWorkletFunction.LayoutAnimationType.ENTERING) {
     let entering = props.entering;
   } else if (ENTERING === tmp(1679).LayoutAnimationType.EXITING) {
     entering = props.exiting;
@@ -58,12 +63,12 @@ function startWebLayoutAnimation(props, _componentDOMRef, ENTERING, easingY) {
     }
     const tmp8 = ENTERING === tmp(1679).LayoutAnimationType.LAYOUT || tmp5 || undefined !== entering.initialValues;
   }
-  const result = require(1723) /* setElementAnimation */.maybeModifyStyleForKeyframe(_componentDOMRef, props.entering);
+  const result = setElementAnimation.maybeModifyStyleForKeyframe(_componentDOMRef, props.entering);
   let animationName;
   if (processedConfig != null) {
     animationName = processedConfig.animationName;
   }
-  if (animationName in require(1710) /* TransitionType */.Animations) {
+  if (animationName in TransitionType.Animations) {
     let animationName1;
     if (processedConfig != null) {
       animationName1 = processedConfig.animationName;
@@ -108,7 +113,7 @@ arg5.startWebLayoutAnimation = startWebLayoutAnimation;
 arg5.tryActivateLayoutTransition = function tryActivateLayoutTransition(props, _componentDOMRef, arg2) {
   if (props.layout) {
     const size = _componentDOMRef.getBoundingClientRect();
-    let obj = require(1741) /* findDescendantWithExitingAnimation */;
+    let obj = findDescendantWithExitingAnimation;
     if (!obj.areDOMRectsEqual(size, arg2)) {
       const enteringV = props.layout.enteringV;
       let presetName;

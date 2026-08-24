@@ -1,25 +1,25 @@
-// Module ID: 4976
-// Function ID: 4977
+// Module ID: 4981
+// Function ID: 4982
 // Name: selectVoiceChannelAdditional
-// Dependencies: [1391, 1910, 4977, 4021, 1979, 1922, 4542, 4978, 4979, 4986, 4093, 4987, 4988, 4342, 6707, 2007, 13059, 514, 709, 2]
+// Dependencies: [1391, 1910, 4982, 4024, 1980, 1922, 4547, 4983, 4984, 4991, 4096, 4992, 4993, 4346, 6744, 2008, 13114, 514, 709, 2]
 // Exports: selectVoiceChannelAdditional
 
-// Module 4976 (selectVoiceChannelAdditional)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import recomputeGuild from "recomputeGuild";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import handleConnectionOpen from "handleConnectionOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import updateVoiceState from "updateVoiceState";
-import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH";
+// Module 4981 (selectVoiceChannelAdditional)
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import closure_5 from "recomputeGuild" /* 4982 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_7 from "handleConnectionOpen" /* 1980 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "updateVoiceState" /* 4547 */;
+import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 4983 */;
 
 const require = arg1;
-const result = require("recomputeGuild").fileFinishedImporting("actions/SelectedChannelActionCreatorsAdditional.native.tsx");
+const result = require("set").fileFinishedImporting("actions/SelectedChannelActionCreatorsAdditional.native.tsx");
 
 export const selectVoiceChannelAdditional = function selectVoiceChannelAdditional(id, guildId, flag, flag2, arg4) {
   const _require = id;
-  const importDefault = guildId;
+  importDefault = guildId;
   if (flag === undefined) {
     flag = false;
   }
@@ -42,7 +42,7 @@ export const selectVoiceChannelAdditional = function selectVoiceChannelAdditiona
   currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
     if (null != channel) {
-      const isChannelFullResult = _require(flag[8]).isChannelFull(channel, updateVoiceState, flag3);
+      const isChannelFullResult = _require(flag[8]).isChannelFull(channel, closure_9, flag3);
       const check = flag4.getCheck(channel.guild_id);
       if (!check.canChat) {
         let tmp14Result = tmp14(tmp15[9]);
@@ -51,7 +51,7 @@ export const selectVoiceChannelAdditional = function selectVoiceChannelAdditiona
           return tmp14Result.unverifiedVoiceGate(check);
         }
       }
-      const tmp4 = importDefault(flag[11])(channel, getUncachedChannelPermissions);
+      const tmp4 = importDefault(flag[11])(channel, closure_6);
       if (isChannelFullResult) {
         if (channel.isGuildStageVoice()) {
           if (tmp14Result1.getStageHasMedia(channel.id)) {
@@ -66,7 +66,7 @@ export const selectVoiceChannelAdditional = function selectVoiceChannelAdditiona
     importDefault(flag[16])(() => {
       let obj = id(flag[17]);
       const v4Result = obj.v4();
-      obj = { type: "VOICE_CHANNEL_SELECT", guildId, channelId: id, currentVoiceChannelId: outer1_7.getVoiceChannelId(), video: flag, stream: flag2, lockVoiceStateForResume: flag3, joinVoiceId: v4Result, bypassIdleUpdate: flag4 };
+      obj = { type: "VOICE_CHANNEL_SELECT", guildId, channelId: id, currentVoiceChannelId: closure_1_7.getVoiceChannelId(), video: flag, stream: flag2, lockVoiceStateForResume: flag3, joinVoiceId: v4Result, bypassIdleUpdate: flag4 };
       guildId(flag[18]).dispatch(obj);
     }, id, flag2, flag);
   }

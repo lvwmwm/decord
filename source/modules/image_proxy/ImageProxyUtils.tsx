@@ -1,11 +1,14 @@
-// Module ID: 4508
-// Function ID: 4509
+// Module ID: 4512
+// Function ID: 4513
 // Name: isImageProxyURL
-// Dependencies: [1487, 1469, 2]
+// Dependencies: [4513, 1487, 1469, 2]
 // Exports: getSizedImageProxyURL, isImageProxyURL
 
-// Module 4508 (isImageProxyURL)
-import set from "set";
+// Module 4512 (isImageProxyURL)
+import handleImageLoad from "handleImageLoad" /* 1469 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
+import getHostWithoutPort from "getHostWithoutPort" /* 4513 */;
+import set from "set" /* 2 */;
 
 let parts;
 if (window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS != null) {
@@ -23,22 +26,14 @@ function isImageProxyURL(hostname) {
   return startsWithResult;
 }
 const mapped = parts.map((str) => str.substring(2));
-const mapped1 = mapped.map(function getHostWithoutPort(arg0) {
-  let first;
-  if (arg0 != null) {
-    first = arg0.split(":")[0];
-  }
-  return first;
-});
+const mapped1 = mapped.map(getHostWithoutPort.getHostWithoutPort);
 let set = new Set(mapped1.filter(Boolean));
 let result = set.fileFinishedImporting("modules/image_proxy/ImageProxyUtils.tsx");
 
 export { isImageProxyURL };
 export const getSizedImageProxyURL = function getSizedImageProxyURL(value, arg1) {
-  let keepAspectRatio;
-  let size;
   ({ size, keepAspectRatio } = arg1);
-  const str = importDefault(1487).toURLSafe(value);
+  const str = isDiscordProxiedAssetUrlDefault.toURLSafe(value);
   if (null != str) {
     let startsWithResult = set.has(str.hostname);
     if (startsWithResult) {
@@ -48,13 +43,13 @@ export const getSizedImageProxyURL = function getSizedImageProxyURL(value, arg1)
     if (startsWithResult) {
       if (null != size) {
         const _String = String;
-        const obj2 = require(1469) /* handleImageLoad */;
-        const StringResult = String(obj2.getBestMediaProxySize(size * require(1469) /* handleImageLoad */.getDevicePixelRatio()));
+        const obj2 = handleImageLoad;
+        const StringResult = String(obj2.getBestMediaProxySize(size * handleImageLoad.getDevicePixelRatio()));
         const searchParams = str.searchParams;
         const result = searchParams.set("width", StringResult);
         const searchParams2 = str.searchParams;
         const result1 = searchParams2.set("height", StringResult);
-        const obj3 = require(1469) /* handleImageLoad */;
+        const obj3 = handleImageLoad;
       }
       if (null != keepAspectRatio) {
         const searchParams3 = str.searchParams;

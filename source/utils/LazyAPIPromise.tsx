@@ -1,20 +1,20 @@
-// Module ID: 8798
-// Function ID: 8799
+// Module ID: 8835
+// Function ID: 8836
 // Name: useLazyAPIPromise
-// Dependencies: [5, 32, 19, 4273, 2]
+// Dependencies: [5, 32, 19, 4277, 2]
 // Exports: default
 
-// Module 8798 (useLazyAPIPromise)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 8835 (useLazyAPIPromise)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("noop").fileFinishedImporting("utils/LazyAPIPromise.tsx");
+const result = require("set").fileFinishedImporting("utils/LazyAPIPromise.tsx");
 
 export default function useLazyAPIPromise(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   function _execFn() {
     const self = this;
     const tmp = callback(function*() {
@@ -29,7 +29,7 @@ export default function useLazyAPIPromise(arg0, arg1) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -45,25 +45,25 @@ export default function useLazyAPIPromise(arg0, arg1) {
               return obj;
             } else {
               let aPIError = tmp3;
-              let closure_0 = tmp7;
+              closure_0 = tmp7;
               closure_0 = undefined;
               aPIError = undefined;
-              outer1_2(true);
+              closure_1_2(true);
               v0(null);
               v0 = 1;
               c4 = 2;
               c5 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0();
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_0();
               return obj1;
             }
           } else if (1 === tmp7) {
             v0 = 0;
-            aPIError = new outer1_0(outer1_1[3]).APIError(callback);
+            aPIError = new closure_1_0(closure_1_1[3]).APIError(callback);
             if (aPIError != null) {
               tmp25(aPIError);
             }
-            v0(outer1_1);
+            v0(closure_1_1);
             callback(false);
             c5 = 3;
             return { value: null, done: true };
@@ -97,7 +97,7 @@ export default function useLazyAPIPromise(arg0, arg1) {
         }
       }
     });
-    const _execFn = tmp;
+    closure_4 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -107,7 +107,7 @@ export default function useLazyAPIPromise(arg0, arg1) {
     return applyArgumentsResult;
   }
   let tmp = callback(_execFn.useState(false), 2);
-  let asyncGeneratorStep = tmp[1];
+  closure_2 = tmp[1];
   const tmp2 = callback(_execFn.useState(null), 2);
   callback = tmp2[1];
   const items = [

@@ -1,29 +1,28 @@
-// Module ID: 8870
-// Function ID: 8871
+// Module ID: 8907
+// Function ID: 8908
 // Name: AddModerators
-// Dependencies: [32, 19, 17, 1910, 8064, 21, 4661, 712, 1500, 38, 8847, 4986, 1954, 1236, 6314, 5432, 4734, 1297, 8871, 1399, 2]
+// Dependencies: [32, 19, 17, 1910, 8103, 21, 4668, 712, 1500, 38, 8884, 4991, 1954, 1236, 6345, 5437, 4739, 1297, 8908, 1399, 2]
 // Exports: default
 
-// Module 8870 (AddModerators)
-import _slicedToArray from "_slicedToArray";
-import Permissions from "Permissions";
-import { View } from "Button";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { RowType } from "RowType";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8907 (AddModerators)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import { RowType } from "RowType" /* 8103 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
 const require = arg1;
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { addMembersContainer: null, moderatorDescriptionContainer: null, errorMessage: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { margin: 16 };
 createCacheKey[2] = { margin: 16, marginBottom: 0 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/stage_channels/native/create_channel/AddModerators.tsx");
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/create_channel/AddModerators.tsx");
 
 export default function AddModerators(guildId) {
   guildId = guildId.guildId;
@@ -34,7 +33,7 @@ export default function AddModerators(guildId) {
   let React;
   let first1;
   let callback;
-  const tmp3 = createCacheKey();
+  const tmp3 = callback2();
   let obj = guildId(navigation[8]);
   navigation = obj.useNavigation();
   const guild = callback.getGuild(guildId);
@@ -51,11 +50,11 @@ export default function AddModerators(guildId) {
     const mapped = found.map((row) => {
       row = row.row;
       if (row.rowType === constants.ROLE) {
-        let moderatorOverwrite = callback(4986).createModeratorOverwrite(row.id, callback(1954).PermissionOverwriteType.ROLE);
-        const obj2 = callback(4986);
+        let moderatorOverwrite = callback(4991).createModeratorOverwrite(row.id, callback(1954).PermissionOverwriteType.ROLE);
+        const obj2 = callback(4991);
       } else {
-        moderatorOverwrite = callback(4986).createModeratorOverwrite(row.id, callback(1954).PermissionOverwriteType.MEMBER);
-        const obj = callback(4986);
+        moderatorOverwrite = callback(4991).createModeratorOverwrite(row.id, callback(1954).PermissionOverwriteType.MEMBER);
+        const obj = callback(4991);
       }
       return moderatorOverwrite;
     });
@@ -69,7 +68,7 @@ export default function AddModerators(guildId) {
     }
     HermesBuiltin.arraySpread(overwrites, tmp4);
     obj.overwrites = items;
-    return c4(obj);
+    return closure_4(obj);
   }, items);
   const items1 = [callback, navigation, first1, first];
   const layoutEffect = React.useLayoutEffect(() => {
@@ -81,11 +80,11 @@ export default function AddModerators(guildId) {
       stringResult = intl.string(guildId(navigation[13]).t["5Wxrcd"]);
     }
     guildId = stringResult;
-    navigation.setOptions({ headerRight: first ? (() => callback(stringResult(table[14]).HeaderSubmittingIndicator, {})) : (() => outer2_8(guildId(navigation[15]).HeaderActionButton, { text: closure_0, onPress: outer1_6 })) });
+    navigation.setOptions({ headerRight: first ? (() => callback(stringResult(table[14]).HeaderSubmittingIndicator, {})) : (() => closure_2_8(guildId(navigation[15]).HeaderActionButton, { text: closure_0, onPress: closure_1_6 })) });
   }, items1);
   obj = { style: tmp3.addMembersContainer, children: null };
   obj = { style: tmp3.moderatorDescriptionContainer, children: null };
-  const obj1 = { variant: "text-sm/medium", color: "text-default", children: null };
+  obj1 = { variant: "text-sm/medium", color: "text-default", children: null };
   let intl = guildId(navigation[13]).intl;
   obj1[2] = intl.string(guildId(navigation[13]).t.f7VbhF);
   obj[1] = callback(guildId(navigation[16]).Text, obj1);
@@ -100,8 +99,7 @@ export default function AddModerators(guildId) {
     tmp = tmp20(tmp19, obj2);
   }
   items2[1] = tmp;
-  const obj4 = { channel: null, guild, permission: null, inputDesc: null, pendingAdditions: null, setPendingAdditions: null };
-  obj4[2] = guildId(navigation[19]).MODERATE_STAGE_CHANNEL_PERMISSIONS;
+  const obj4 = { channel: null, guild, permission: guildId(navigation[19]).MODERATE_STAGE_CHANNEL_PERMISSIONS, inputDesc: null, pendingAdditions: null, setPendingAdditions: null };
   let intl2 = tmp4(tmp5[13]).intl;
   obj4[3] = intl2.string(guildId(navigation[13]).t["Ch6+n4"]);
   obj4[4] = first1;

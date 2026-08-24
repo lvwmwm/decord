@@ -1,37 +1,40 @@
-// Module ID: 14969
-// Function ID: 14970
+// Module ID: 15033
+// Function ID: 15034
 // Name: Subblocks
-// Dependencies: [19, 17, 21, 712, 4661, 9175, 14970, 7139, 7159, 2]
+// Dependencies: [19, 17, 21, 712, 4668, 9212, 15034, 7177, 7197, 2]
 // Exports: default
 
-// Module 14969 (Subblocks)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15033 (Subblocks)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import context from "context" /* 7177 */;
+import contextDefault from "context" /* 7177 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 function Subblocks(style) {
   style = style.style;
   const subblocks = style.featuredBlock.subblocks;
   return subblocks.map((subblock, tilePosition) => {
     obj = { newValue: obj, children: null };
     obj = { tilePosition };
-    obj = { style, children: null };
-    obj[1] = outer1_4(outer1_1(outer1_2[6]), { subblock });
-    obj[1] = outer1_4(outer1_3, obj);
-    return outer1_4(style(outer1_2[5]).CollectiblesAnalyticsProvider, obj, tilePosition);
+    obj = { style, children: closure_1_4(closure_1_1(closure_1_2[6]), obj1) };
+    obj[1] = closure_1_4(closure_1_3, obj);
+    return closure_1_4(style(closure_1_2[5]).CollectiblesAnalyticsProvider, obj, tilePosition);
   });
 }
-let closure_5 = createCacheKey.createStyles({ container: { display: "flex", width: "100%", flexDirection: "row", flexWrap: "wrap", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 }, featuredSubblock: { flex: 1, flexBasis: 400, maxWidth: "100%" } });
-const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/FeaturedBlock.tsx");
+noopAll;
+let closure_5 = createCacheKey.createStyles({ container: { display: "flex", width: "100%", flexDirection: "row", flexWrap: "wrap", gap: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16 }, featuredSubblock: { flex: 1, flexBasis: 400, maxWidth: "100%" } });
+const result = require("set").fileFinishedImporting("modules/collectibles/native/FeaturedBlock.tsx");
 
 export default function FeaturedBlock(featuredBlock) {
   const tmp = callback();
-  let obj = { value: importDefault(7139)(importDefault(7159).COLLECTIBLES_SHOP_FEATURED_BLOCK).analyticsLocations, children: null };
-  obj = { style: tmp.container, children: null };
+  let obj = { value: contextDefault(QUICK_SWITCHERDefault.COLLECTIBLES_SHOP_FEATURED_BLOCK).analyticsLocations, children: null };
+  obj = { style: tmp.container, children: <Subblocks value={contextDefault(QUICK_SWITCHERDefault.COLLECTIBLES_SHOP_FEATURED_BLOCK).analyticsLocations}>{null}</Subblocks> };
   obj = { featuredBlock: featuredBlock.featuredBlock, style: tmp.featuredSubblock };
-  obj[1] = <Subblocks featuredBlock={arg0.featuredBlock} style={tmp.featuredSubblock} />;
   obj[1] = <View featuredBlock={arg0.featuredBlock} style={tmp.featuredSubblock} />;
-  return jsx(require(7139) /* context */.AnalyticsLocationProvider, { featuredBlock: featuredBlock.featuredBlock, style: tmp.featuredSubblock });
+  return jsx(context.AnalyticsLocationProvider, { featuredBlock: featuredBlock.featuredBlock, style: tmp.featuredSubblock });
 };

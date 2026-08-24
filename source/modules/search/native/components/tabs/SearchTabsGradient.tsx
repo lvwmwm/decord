@@ -1,23 +1,25 @@
-// Module ID: 15940
-// Function ID: 15941
+// Module ID: 16037
+// Function ID: 16038
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 4097, 712, 4223, 11938, 2]
+// Dependencies: [19, 21, 4100, 712, 4227, 11987, 2]
 // Exports: default
 
-// Module 15940 (SearchTabsGradient)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 16037 (SearchTabsGradient)
+import ThemesDefault from "Themes" /* 712 */;
+import TabsGradientDefault from "TabsGradient" /* 11987 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("map").fileFinishedImporting("modules/search/native/components/tabs/SearchTabsGradient.tsx");
+const result = require("set").fileFinishedImporting("modules/search/native/components/tabs/SearchTabsGradient.tsx");
 
 export default function SearchTabsGradient(state) {
   let token;
-  token = token(4097).useToken(importDefault(712).colors.BACKGROUND_BASE_LOW);
+  token = token(4100).useToken(ThemesDefault.colors.BACKGROUND_BASE_LOW);
   let items = [token];
   const colors = React.useMemo(() => {
-    const items = [token, token(outer1_2[4]).hexWithOpacity(token, 0)];
+    const items = [token, token(closure_1_2[4]).hexWithOpacity(token, 0)];
     return items;
   }, items);
-  return jsx(importDefault(11938), { state: state.state, colors });
+  return jsx(TabsGradientDefault, { state: state.state, colors });
 };

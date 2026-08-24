@@ -1,14 +1,14 @@
-// Module ID: 13940
-// Function ID: 13941
+// Module ID: 14008
+// Function ID: 14009
 // Name: KeyCommandsView
-// Dependencies: [32, 19, 21, 4661, 13941, 2]
+// Dependencies: [32, 19, 21, 4668, 14009, 2]
 // Exports: default, useKeyCommands
 
-// Module 13940 (KeyCommandsView)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14008 (KeyCommandsView)
+import closure_2 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 let c3 = importAllResult;
 let closure_5 = createCacheKey.createStyles({ viewDefaults: { flex: 1 } });
@@ -21,19 +21,19 @@ let context = importAllResult.createContext({
 
   }
 });
-const result = require("jsxProd").fileFinishedImporting("modules/keyboard/native/KeyCommandsView.tsx");
+const result = require("set").fileFinishedImporting("modules/keyboard/native/KeyCommandsView.tsx");
 
 export default function KeyCommandsView(style) {
   const merged = Object.assign(style, Object.create(null));
   let first;
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
   let callback1;
   const tmp3 = callback(callback1.useState([]), 2);
   first = tmp3[0];
   dependencyMap = tmp3[1];
   callback = callback1.useCallback((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     callback((arg0) => {
       const items = [];
       items[HermesBuiltin.arraySpread(arg0, 0)] = closure_0;
@@ -41,7 +41,7 @@ export default function KeyCommandsView(style) {
     });
   }, []);
   callback1 = callback1.useCallback((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     callback((arr) => arr.filter((eventName) => eventName.eventName !== closure_0));
   }, []);
   let items = [first, callback, callback1];
@@ -59,11 +59,11 @@ export default function KeyCommandsView(style) {
       found.onKeyCommand(nativeEvent);
     }
   };
-  obj[1] = jsx(first(13941), {});
+  obj[1] = jsx(first(14009), {});
   return <redux.Provider />;
 };
 export const useKeyCommands = function useKeyCommands(memo) {
-  let closure_0 = memo;
+  closure_0 = memo;
   const context = importAllResult.useContext(closure_6);
   const addKeyCommand = context.addKeyCommand;
   const removeKeyCommand = context.removeKeyCommand;

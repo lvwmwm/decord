@@ -1,12 +1,14 @@
-// Module ID: 13290
-// Function ID: 13291
+// Module ID: 13348
+// Function ID: 13349
 // Name: onPostConnectionOpen
-// Dependencies: [5038, 8041, 2]
+// Dependencies: [5043, 8080, 2]
 
-// Module 13290 (onPostConnectionOpen)
-import "initialize";
+// Module 13348 (onPostConnectionOpen)
+import initializeDefault from "initialize" /* 5043 */;
+import _fetchSocialLayerStorefront from "_fetchSocialLayerStorefront" /* 8080 */;
 
-const require = arg1;
+require = arg1;
+initializeDefault;
 class SocialLayerStorefrontConfigManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -17,7 +19,7 @@ class SocialLayerStorefrontConfigManager extends tmp2 {
   }
 }
 SocialLayerStorefrontConfigManager.prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
-  const socialLayerStorefrontConfig = require(8041) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontConfig();
+  const socialLayerStorefrontConfig = _fetchSocialLayerStorefront.fetchSocialLayerStorefrontConfig();
 };
 const socialLayerStorefrontConfigManager = new SocialLayerStorefrontConfigManager();
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontConfigManager.tsx");

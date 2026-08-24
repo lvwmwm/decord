@@ -3,8 +3,9 @@
 // Dependencies: [1281, 1282, 1283]
 
 // Module 1280
-import e from "e";
-import e from "e";
+import parseDateTimeSkeleton from "parseDateTimeSkeleton" /* 1282 */;
+import __exportStarResult1 from "__exportStarResult1" /* 1283 */;
+import e from "e" /* 1281 */;
 
-e.__exportStar(require("parseDateTimeSkeleton"), exports);
-e.__exportStar(require("__exportStarResult1"), exports);
+e.__exportStar(parseDateTimeSkeleton, exports);
+e.__exportStar(__exportStarResult1, exports);

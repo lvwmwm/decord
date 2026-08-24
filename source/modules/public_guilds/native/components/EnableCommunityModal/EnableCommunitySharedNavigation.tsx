@@ -1,42 +1,32 @@
-// Module ID: 16884
-// Function ID: 16885
+// Module ID: 16977
+// Function ID: 16978
 // Name: EnableCommunityModalSteps
-// Dependencies: [19, 17, 8875, 676, 21, 4661, 589, 1500, 4721, 4731, 709, 16882, 6549, 6803, 4745, 1236, 2]
+// Dependencies: [19, 17, 8912, 676, 21, 4668, 589, 1500, 4727, 4736, 709, 16975, 6580, 6840, 4750, 1236, 2]
 // Exports: EnableCommunityModalScreen
 
-// Module 16884 (EnableCommunityModalSteps)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import handleFormInit from "handleFormInit";
-import { GuildFeatures } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16977 (EnableCommunityModalSteps)
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "handleFormInit" /* 8912 */;
+import { GuildFeatures } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let c9;
-let metroImportAll;
 const require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles({ container: { flex: 1, height: "100%" }, modal: { height: "100%", flex: 1, justifyContent: "space-between" }, button: { flexGrow: 0, paddingLeft: 16, paddingTop: 16, paddingRight: 16 } });
 createCacheKey = { STEP_1: "STEP_1", STEP_2: "STEP_2", STEP_3: "STEP_3" };
-const result = require("handleFormInit").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/EnableCommunitySharedNavigation.tsx");
+const result = require("set").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/EnableCommunitySharedNavigation.tsx");
 
 export const EnableCommunityModalSteps = createCacheKey;
 export const EnableCommunityModalScreen = function EnableCommunityModalScreen(arg0) {
-  let buttonText;
-  let children;
-  let disableNextStep;
-  let headerRef;
-  let importDefault;
-  let require;
   ({ onSuccess: require, buttonText, currentStep: importDefault, headerRef } = arg0);
   let guild;
   let hasItem;
-  let closure_5;
+  closure_5 = undefined;
   let isScreenReaderEnabled;
-  let GuildFeatures;
+  GuildFeatures = undefined;
   ({ disableNextStep, children } = arg0);
   const tmp = callback2();
   let obj = require(headerRef[6]);
@@ -55,11 +45,11 @@ export const EnableCommunityModalScreen = function EnableCommunityModalScreen(ar
   const items1 = [isScreenReaderEnabled, null != guild, headerRef];
   const effect = guild.useEffect(() => {
     if (isScreenReaderEnabled) {
-      if (c7) {
+      if (closure_7) {
         if (null != headerRef) {
           const _setTimeout = setTimeout;
           const timeout = setTimeout(() => {
-            let obj = callback(outer1_2[9]);
+            let obj = callback(closure_1_2[9]);
             obj = { ref: closure_2 };
             return obj.setAccessibilityFocus(obj);
           }, 100);
@@ -71,8 +61,8 @@ export const EnableCommunityModalScreen = function EnableCommunityModalScreen(ar
   const items2 = [hasItem];
   const effect1 = guild.useEffect(() => {
     if (hasItem) {
-      outer1_1(headerRef[10]).wait(() => callback(table[11]).close());
-      const obj = outer1_1(headerRef[10]);
+      closure_1_1(headerRef[10]).wait(() => callback(table[11]).close());
+      const obj = closure_1_1(headerRef[10]);
     }
   }, items2);
   if (null == guild) {
@@ -82,7 +72,7 @@ export const EnableCommunityModalScreen = function EnableCommunityModalScreen(ar
     obj[0] = tmp.container;
     obj = { bottom: true, style: null, children: null };
     obj[1] = tmp.modal;
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = { flexGrow: 1 };
     obj1[1] = children;
     const items3 = [callback(hasItem, obj1), ];
@@ -96,7 +86,7 @@ export const EnableCommunityModalScreen = function EnableCommunityModalScreen(ar
     obj3[2] = buttonText;
     obj3[3] = function onPress() {
       if (null != guild) {
-        if (outer1_11.STEP_1 === closure_1) {
+        if (closure_1_11.STEP_1 === closure_1) {
           arr = arr.push(tmp3.STEP_2);
         } else if (tmp3.STEP_2 === tmp2) {
           arr = arr.push(tmp3.STEP_3);

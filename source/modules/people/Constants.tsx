@@ -1,10 +1,12 @@
-// Module ID: 9891
-// Function ID: 9892
+// Module ID: 9930
+// Function ID: 9931
 // Name: RELATIONSHIP_COUNT_ANIMATION_THRESHOLD
 // Dependencies: [2]
 
-// Module 9891 (RELATIONSHIP_COUNT_ANIMATION_THRESHOLD)
-const result = require("set").fileFinishedImporting("modules/people/Constants.tsx");
+// Module 9930 (RELATIONSHIP_COUNT_ANIMATION_THRESHOLD)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/people/Constants.tsx");
 
 export const RELATIONSHIP_COUNT_ANIMATION_THRESHOLD = 64;
 export const PEOPLE_LIST_ITEM_HEIGHT = 61;

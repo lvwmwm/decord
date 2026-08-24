@@ -1,23 +1,22 @@
-// Module ID: 11510
-// Function ID: 11511
+// Module ID: 11559
+// Function ID: 11560
 // Name: prototype
-// Dependencies: [1391, 4030, 1922, 8507, 8506, 676, 4984, 1236, 11511, 11523, 1989, 589, 709, 2]
+// Dependencies: [1391, 4033, 1922, 8546, 8545, 676, 4989, 1236, 11560, 11572, 1990, 589, 709, 2]
 
-// Module 11510 (prototype)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import MessageEmbedTypes from "MessageEmbedTypes";
-import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
-import ME from "ME";
-import areArraysShallowlyEqual from "areArraysShallowlyEqual";
-import { Store } from "initialize";
+// Module 11559 (prototype)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 11560 */;
+import isCompleteDefault from "isComplete" /* 11572 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "markAllUserIdListsStale" /* 4033 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
+import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 8545 */;
+import ME from "ME" /* 676 */;
+import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1990 */;
 
-let c10;
-let c9;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 ({ EMPTY_SEARCH_QUERY_STRING: closure_6, SearchQueryTagTypes: error } = MessageEmbedTypes);
 ({ SearchTokenTypes: c9, SearchTypes: c10 } = ME);
 const prototype = function SearchQueryStateManager(type) {
@@ -145,9 +144,9 @@ const prototype = function SearchQueryStateManager(type) {
     }
   };
   obj.reset = function reset() {
-    obj.textInputValue = outer1_6;
+    obj.textInputValue = closure_1_6;
     obj.textInputChangedFromInput = false;
-    obj.searchResultsQuery = outer1_6;
+    obj.searchResultsQuery = closure_1_6;
     obj.draftTextInputValue = null;
     obj.isExplicitSearchSubmitted = false;
     const tagsManager = obj.tagsManager;
@@ -162,7 +161,7 @@ const prototype = function SearchQueryStateManager(type) {
       let items = [];
     }
     obj.initialTagsSnapshot = items;
-    const tmp12 = new importDefault(11523)();
+    const tmp12 = new isCompleteDefault();
     obj.tagsManager = tmp12;
     let tagsManager = obj.tagsManager;
     let result = tagsManager.set(obj.initialTagsSnapshot);
@@ -179,8 +178,8 @@ const prototype = function SearchQueryStateManager(type) {
   } else {
     let channelName;
     if (null != channel) {
-      channelName = obj(4984).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
-      const obj2 = obj(4984);
+      channelName = obj(4989).computeChannelName(channel, closure_5, closure_4);
+      const obj2 = obj(4989);
     }
     if (null == channelName) {
       let items1 = [];
@@ -191,25 +190,26 @@ const prototype = function SearchQueryStateManager(type) {
       const intl = obj(1236).intl;
       const stringResult = intl.string(obj(1236).t.WNpFHa);
       let _HermesInternal = HermesInternal;
-      obj[2] = "" + stringResult + ": " + obj(11511).quoteChannelName(channelName);
+      obj[2] = "" + stringResult + ": " + obj(11560).quoteChannelName(channelName);
       obj[3] = type.channelId;
       obj[4] = SearchFilterAddLocations.CLIENT_AUTO_ADD;
       items1 = [obj];
-      const obj4 = obj(11511);
+      const obj4 = obj(11560);
     }
     items = items1;
   }
 }.prototype;
 const map = new Map();
 let closure_13 = areArraysShallowlyEqual.cachedFunction((arg0) => new prototype(arg0));
+const Store = initializeDefault.Store;
 class NativeSearchQueryStore extends Store {
 }
 const prototype2 = NativeSearchQueryStore.prototype;
 prototype2["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded, mergeGuildAvatar, markAllUserIdListsStale);
+  this.waitFor(closure_3, closure_5, closure_4);
 };
 prototype2["getManager"] = function getManager(closure_0) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(closure_0));
+  let value = map.get(SearchTokenTypes.getSearchContextId(closure_0));
   if (value == null) {
     value = callback(closure_0);
   }
@@ -220,98 +220,98 @@ prototype2["getQueryString"] = function getQueryString(searchContext) {
   if (arg1 === undefined) {
     flag = false;
   }
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getQueryString(flag);
 };
 prototype2["isQueryStringEmpty"] = function isQueryStringEmpty(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.isQueryStringEmpty();
 };
 prototype2["getTextInputValue"] = function getTextInputValue(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getTextInputValue();
 };
 prototype2["isInitialSearchQuery"] = function isInitialSearchQuery(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.isInitialSearchQuery();
 };
 prototype2["getSearchResultsQuery"] = function getSearchResultsQuery(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getSearchResultsQuery();
 };
 prototype2["isTextInputValueEmpty"] = function isTextInputValueEmpty(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.isTextInputValueEmpty();
 };
 prototype2["getTextValueChangedFromInput"] = function getTextValueChangedFromInput(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getTextValueChangedFromInput();
 };
 prototype2["hasUserAddedTags"] = function hasUserAddedTags(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.hasUserAddedTags();
 };
 prototype2["getTags"] = function getTags(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getTags();
 };
 prototype2["getPrefixTag"] = function getPrefixTag(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getPrefixTag();
 };
 prototype2["isAutocompleteVisible"] = function isAutocompleteVisible(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.isAutocompleteVisible();
 };
 prototype2["getChannelIds"] = function getChannelIds(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getChannelIds();
 };
 prototype2["getUserIds"] = function getUserIds(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getUserIds(arg1);
 };
 prototype2["isTagsEmpty"] = function isTagsEmpty(searchContext) {
-  let value = map.get(require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(SearchTokenTypes.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
@@ -321,7 +321,7 @@ NativeSearchQueryStore.displayName = "NativeSearchQueryStore";
 areArraysShallowlyEqual = {
   SEARCH_QUERY_NATIVE_UPDATE: function handleSearchQueryNativeUpdate(searchContext) {
     searchContext = searchContext.searchContext;
-    const searchContextId = require(11511) /* SearchTokenTypes */.getSearchContextId(searchContext);
+    const searchContextId = SearchTokenTypes.getSearchContextId(searchContext);
     let value = map.get(searchContextId);
     if (null == value) {
       const tmp6 = new prototype(searchContext);
@@ -334,8 +334,8 @@ areArraysShallowlyEqual = {
     map.delete(id.id);
   }
 };
-const nativeSearchQueryStore = new NativeSearchQueryStore(require("dispatcher"), areArraysShallowlyEqual);
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/search/native/stores/SearchQueryStore.tsx");
+const nativeSearchQueryStore = new NativeSearchQueryStore(dispatcherDefault, areArraysShallowlyEqual);
+let result = require("set").fileFinishedImporting("modules/search/native/stores/SearchQueryStore.tsx");
 
 export default nativeSearchQueryStore;
 export const SearchQueryStateManager = prototype;

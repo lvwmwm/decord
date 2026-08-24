@@ -1,26 +1,28 @@
-// Module ID: 8877
-// Function ID: 8878
+// Module ID: 8914
+// Function ID: 8915
 // Name: canUseMobileServerTagSettings
-// Dependencies: [1910, 4021, 676, 8878, 8375, 2]
+// Dependencies: [1910, 4024, 676, 8915, 8414, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 8877 (canUseMobileServerTagSettings)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "ME";
+// Module 8914 (canUseMobileServerTagSettings)
+import guildHasTag from "guildHasTag" /* 8414 */;
+import apexExperimentDefault from "apexExperiment" /* 8915 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 const GuildSettingsServerTag = "GuildSettingsServerTag";
-const result = require("ME").fileFinishedImporting("modules/guild_settings/GuildSettingsServerTagUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_settings/GuildSettingsServerTagUtils.tsx");
 
 export const canUseMobileServerTagSettings = function canUseMobileServerTagSettings(guildId) {
   const guild = store.getGuild(guildId);
   let enabled = null != guild;
   if (enabled) {
-    enabled = getUncachedChannelPermissions.can(Permissions.MANAGE_GUILD, guild);
+    enabled = closure_4.can(Permissions.MANAGE_GUILD, guild);
   }
   if (enabled) {
-    let obj = importDefault(8878);
+    let obj = apexExperimentDefault;
     obj = { location: null };
     obj[0] = GuildSettingsServerTag;
     enabled = obj.getConfig(obj).enabled;
@@ -31,18 +33,18 @@ export const canViewMobileServerTag = function canViewMobileServerTag(id) {
   const guild = store.getGuild(id);
   let enabled = null != guild;
   if (enabled) {
-    let obj = require(8375) /* guildHasTag */;
+    let obj = guildHasTag;
     enabled = obj.guildSupportsTags(guild);
   }
   if (enabled) {
-    enabled = require(8375) /* guildHasTag */.guildHasTag(guild);
-    const obj2 = require(8375) /* guildHasTag */;
+    enabled = guildHasTag.guildHasTag(guild);
+    const obj2 = guildHasTag;
   }
   if (enabled) {
     obj = { location: null };
     obj[0] = GuildSettingsServerTag;
-    enabled = importDefault(8878).getConfig(obj).enabled;
-    const obj3 = importDefault(8878);
+    enabled = apexExperimentDefault.getConfig(obj).enabled;
+    const obj3 = apexExperimentDefault;
   }
   return enabled;
 };

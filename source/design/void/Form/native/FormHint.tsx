@@ -1,34 +1,34 @@
-// Module ID: 8090
-// Function ID: 8091
+// Module ID: 8129
+// Function ID: 8130
 // Name: FormHint
-// Dependencies: [19, 17, 21, 4661, 712, 6939, 4734, 1297, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 6977, 4739, 1297, 2]
 // Exports: default
 
-// Module 8090 (FormHint)
-import noop from "noop";
-import { Platform } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8129 (FormHint)
+import ThemesDefault from "Themes" /* 712 */;
+import context from "context" /* 6977 */;
+import closure_2 from "noop" /* 19 */;
+import { Platform } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 createCacheKey = { formHintText: null, redesignHorizontalPadding: null, horizonatalPadding: null };
-createCacheKey = { fontSize: 14, marginBottom: 0, color: require("Themes").colors.TEXT_MUTED };
+createCacheKey = { fontSize: 14, marginBottom: 0, color: ThemesDefault.colors.TEXT_MUTED };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { paddingHorizontal: 12 };
 createCacheKey[2] = { paddingHorizontal: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormHint.tsx");
+let closure_4 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("design/void/Form/native/FormHint.tsx");
 
 export default function FormHint(inset) {
-  let children;
-  let style;
   let flag = inset.inset;
   if (flag === undefined) {
     flag = false;
   }
   ({ style, children } = inset);
-  const tmp = createCacheKey();
-  if (React.useContext(require(6939) /* context */.RedesignCompatContext)) {
+  const tmp = callback();
+  if (React.useContext(context.RedesignCompatContext)) {
     let redesignHorizontalPadding = !flag;
     if (!flag) {
       redesignHorizontalPadding = tmp.redesignHorizontalPadding;
@@ -37,7 +37,7 @@ export default function FormHint(inset) {
     const items = [redesignHorizontalPadding, style];
     obj[2] = items;
     obj[3] = children;
-    let tmp4Result = tmp4(tmp2(4734).Text, obj);
+    let tmp4Result = tmp4(tmp2(4739).Text, obj);
   } else {
     const items1 = [tmp.formHintText, , ];
     let horizonatalPadding = !flag;

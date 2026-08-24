@@ -1,41 +1,41 @@
-// Module ID: 14961
-// Function ID: 14962
+// Module ID: 15025
+// Function ID: 15026
 // Name: useCollectiblesCoachmarkScrollDismissContext
 // Dependencies: [19, 505, 21, 2]
 // Exports: CollectiblesCoachmarkScrollDismissProvider, useCollectiblesCoachmarkScrollDismissContext
 
-// Module 14961 (useCollectiblesCoachmarkScrollDismissContext)
-import importAllResult from "noop";
-import { NOOP } from "sum";
-import { jsx } from "jsxProd";
+// Module 15025 (useCollectiblesCoachmarkScrollDismissContext)
+import importAllResult from "noop" /* 19 */;
+import { NOOP } from "sum" /* 505 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 let c0 = importAllResult;
 const context = importAllResult.createContext({
   registerDismiss(arg0) {
     return NOOP;
   },
-  handleDismissCoachmarkOnScroll: "a"
+  handleDismissCoachmarkOnScroll: "r"
 });
-const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx");
 
 export const useCollectiblesCoachmarkScrollDismissContext = function useCollectiblesCoachmarkScrollDismissContext() {
   return importAllResult.useContext(closure_3);
 };
 export const CollectiblesCoachmarkScrollDismissProvider = function CollectiblesCoachmarkScrollDismissProvider(children) {
-  let importAllResult;
-  let closure_1;
+  importAllResult = undefined;
+  closure_1 = undefined;
   let callback;
   let callback1;
   importAllResult = importAllResult.useRef(null);
   closure_1 = importAllResult.useRef(null);
   callback = importAllResult.useCallback((current) => {
-    let closure_0 = current;
+    closure_0 = current;
     closure_0.current = current;
     closure_1.current = null;
     return () => {
       if (ref.current === ref) {
         tmp.current = null;
-        outer1_1.current = null;
+        closure_1_1.current = null;
       }
     };
   }, []);

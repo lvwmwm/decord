@@ -1,41 +1,37 @@
-// Module ID: 11893
-// Function ID: 11894
+// Module ID: 11942
+// Function ID: 11943
 // Name: JoinServerContainer
-// Dependencies: [32, 19, 8617, 21, 4661, 6370, 1500, 6314, 11856, 6803, 8616, 1236, 8042, 2]
+// Dependencies: [32, 19, 8654, 21, 4668, 6401, 1500, 6345, 11905, 6840, 8653, 1236, 8081, 2]
 // Exports: default
 
-// Module 11893 (JoinServerContainer)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11942 (JoinServerContainer)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics" /* 8654 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 ({ CreateGuildModalStates: c5, NUXGuildTemplatesAnalytics: closure_6 } = NUXGuildTemplatesAnalytics);
 createCacheKey = { flex: { flex: 1 }, contentContainer: null };
 createCacheKey = { marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("NUXGuildTemplatesAnalytics").fileFinishedImporting("modules/create_guild/native/components/JoinServer.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/create_guild/native/components/JoinServer.tsx");
 
 export default function JoinServerContainer(initialRoute) {
-  let c5;
-  let tmp5;
   initialRoute = initialRoute.initialRoute;
   const onClose = initialRoute.onClose;
   const location = initialRoute.location;
   let first;
   let React;
   c5 = undefined;
-  let closure_6;
+  closure_6 = undefined;
   let navigation;
   const tmp2 = first(React.useState(""), 2);
   first = tmp2[0];
   React = tmp2[1];
-  const tmp = createCacheKey();
+  const tmp = callback();
   [tmp5, c5] = first(React.useState(false), 2);
   const tmp6 = first(React.useState(false), 2);
   closure_6 = tmp6[1];
@@ -45,7 +41,7 @@ export default function JoinServerContainer(initialRoute) {
   const layoutEffect = React.useLayoutEffect(() => {
     if (initialRoute === _undefined.JOIN_SERVER) {
       let headerCloseButton = initialRoute(location[7]).getHeaderCloseButton(() => {
-        outer1_0(outer1_2[8]).trackNUFStep(outer1_6.STEP_GUILD_JOIN, outer1_6.STEP_FRIEND_LIST, { skip: true });
+        closure_1_0(closure_1_2[8]).trackNUFStep(closure_1_6.STEP_GUILD_JOIN, closure_1_6.STEP_FRIEND_LIST, { skip: true });
         callback();
       });
       const obj2 = initialRoute(location[7]);

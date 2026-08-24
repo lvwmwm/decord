@@ -1,32 +1,35 @@
-// Module ID: 1986
-// Function ID: 1987
+// Module ID: 1987
+// Function ID: 1988
 // Name: extractColorStringsFromServerColors
 // Dependencies: [676, 688, 2]
 // Exports: extractColorStringsFromServerColors, getAuthorHasGradientRole, getIsDefaultErc
 
-// Module 1986 (extractColorStringsFromServerColors)
-import { DEFAULT_ROLE_COLOR_HEX } from "ME";
+// Module 1987 (extractColorStringsFromServerColors)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import int2hslRaw from "int2hslRaw" /* 688 */;
 
-const result = require("set").fileFinishedImporting("modules/premium/enhanced_role_colors/EnhancedRoleColorUtils.tsx");
+const DEFAULT_ROLE_COLOR_HEX = ME.DEFAULT_ROLE_COLOR_HEX;
+const result = set.fileFinishedImporting("modules/premium/enhanced_role_colors/EnhancedRoleColorUtils.tsx");
 
 export const extractColorStringsFromServerColors = function extractColorStringsFromServerColors(colors) {
   if (0 === colors.primary_color) {
     let int2hexResult = DEFAULT_ROLE_COLOR_HEX;
   } else {
-    let obj = require(688) /* int2hslRaw */;
+    let obj = int2hslRaw;
     int2hexResult = obj.int2hex(colors.primary_color);
   }
   obj = { primaryColor: int2hexResult, secondaryColor: null, tertiaryColor: null };
   let int2hexResult1 = null;
   if (null != colors.secondary_color) {
-    int2hexResult1 = require(688) /* int2hslRaw */.int2hex(colors.secondary_color);
-    const obj3 = require(688) /* int2hslRaw */;
+    int2hexResult1 = int2hslRaw.int2hex(colors.secondary_color);
+    const obj3 = int2hslRaw;
   }
   obj[1] = int2hexResult1;
   let int2hexResult2 = null;
   if (null != colors.tertiary_color) {
-    int2hexResult2 = require(688) /* int2hslRaw */.int2hex(colors.tertiary_color);
-    const obj4 = require(688) /* int2hslRaw */;
+    int2hexResult2 = int2hslRaw.int2hex(colors.tertiary_color);
+    const obj4 = int2hslRaw;
   }
   obj[2] = int2hexResult2;
   return obj;

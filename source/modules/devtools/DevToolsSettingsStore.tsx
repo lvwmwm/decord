@@ -1,13 +1,15 @@
-// Module ID: 7471
-// Function ID: 7472
+// Module ID: 7509
+// Function ID: 7510
 // Name: initialize
-// Dependencies: [7472, 589, 709, 2]
+// Dependencies: [7510, 589, 709, 2]
 
-// Module 7471 (initialize)
-import init from "init";
-import { DeviceSettingsStore } from "initialize";
+// Module 7509 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "init" /* 7510 */;
 
 let closure_3 = { sidebarWidth: 460, lastOpenTabId: null, lastOpenSubTabId: null, displayTools: false, showDevWidget: false, devWidgetPosition: { x: 0, y: 0 }, sortedScreenKeys: [] };
+const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class DevToolsSettingsStore extends DeviceSettingsStore {
 }
 const prototype = DevToolsSettingsStore.prototype;
@@ -24,7 +26,7 @@ prototype["initialize"] = function initialize(arg0) {
   obj = {};
   const merged = Object.assign(obj);
   obj.sortedScreenKeys = sortedScreenKeys;
-  importDefault(709).actionLogger.persist = init.isDeveloper;
+  dispatcherDefault.actionLogger.persist = closure_2.isDeveloper;
 };
 prototype["getUserAgnosticState"] = function getUserAgnosticState() {
   return closure_3;
@@ -61,7 +63,7 @@ Object.defineProperty(prototype, "lastOpenSubTabId", {
 });
 Object.defineProperty(prototype, "displayTools", {
   get: function displayTools() {
-    let displayTools = init.isDeveloper;
+    let displayTools = closure_2.isDeveloper;
     if (displayTools) {
       displayTools = closure_3.displayTools;
     }
@@ -71,7 +73,7 @@ Object.defineProperty(prototype, "displayTools", {
 });
 Object.defineProperty(prototype, "showDevWidget", {
   get: function showDevWidget(arg0) {
-    let showDevWidget = init.isDeveloper;
+    let showDevWidget = closure_2.isDeveloper;
     if (showDevWidget) {
       showDevWidget = closure_3.showDevWidget;
     }
@@ -93,16 +95,16 @@ Object.defineProperty(prototype, "sortedScreenKeys", {
 });
 DevToolsSettingsStore.displayName = "DevToolsSettingsStore";
 DevToolsSettingsStore.persistKey = "DevToolsSettingsStore";
-const devToolsSettingsStore = new DevToolsSettingsStore(require("dispatcher"), {
+const devToolsSettingsStore = new DevToolsSettingsStore(dispatcherDefault, {
   DEV_TOOLS_SETTINGS_UPDATE: function handleDevToolsSettingsUpdate(settings) {
-    if (init.isDeveloper) {
+    if (closure_2.isDeveloper) {
       const obj = {};
       const merged = Object.assign(obj);
       const merged1 = Object.assign(settings.settings);
     }
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/devtools/DevToolsSettingsStore.tsx");
+const result = require("set").fileFinishedImporting("modules/devtools/DevToolsSettingsStore.tsx");
 
 export default devToolsSettingsStore;
 export const DEVTOOLS_SIDEBAR_MIN_WIDTH = 460;

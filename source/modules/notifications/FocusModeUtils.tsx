@@ -1,24 +1,25 @@
-// Module ID: 10024
-// Function ID: 10025
+// Module ID: 10063
+// Function ID: 10064
 // Name: useFocusModeEnabled
-// Dependencies: [7250, 4033, 676, 4066, 1374, 1337, 698, 4827, 1236, 10025, 2]
+// Dependencies: [7288, 4036, 676, 4069, 1374, 1337, 698, 4832, 1236, 10064, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 10024 (useFocusModeEnabled)
-import filterPlayingActivities from "filterPlayingActivities";
-import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
-import ME from "ME";
+// Module 10063 (useFocusModeEnabled)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import setDefault from "set" /* 4832 */;
+import closure_3 from "filterPlayingActivities" /* 7288 */;
+import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags" /* 4036 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ AnalyticEvents: c5, StatusTypes: closure_6 } = ME);
-const result = require("ME").fileFinishedImporting("modules/notifications/FocusModeUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/notifications/FocusModeUtils.tsx");
 
 export const useFocusModeEnabled = function useFocusModeEnabled() {
-  const FocusMode = require(4066) /* explicitContentFromProto */.FocusMode;
+  const FocusMode = explicitContentFromProto.FocusMode;
   let setting = FocusMode.useSetting();
-  const FocusModeExpiresAtSetting = require(4066) /* explicitContentFromProto */.FocusModeExpiresAtSetting;
+  const FocusModeExpiresAtSetting = explicitContentFromProto.FocusModeExpiresAtSetting;
   const setting1 = FocusModeExpiresAtSetting.useSetting();
   if (setting) {
     let tmp3 = "0" === setting1;
@@ -36,9 +37,9 @@ export const useFocusModeEnabled = function useFocusModeEnabled() {
   return setting;
 };
 export const getFocusModeEnabled = function getFocusModeEnabled() {
-  const FocusMode = require(4066) /* explicitContentFromProto */.FocusMode;
+  const FocusMode = explicitContentFromProto.FocusMode;
   let setting = FocusMode.getSetting();
-  const FocusModeExpiresAtSetting = require(4066) /* explicitContentFromProto */.FocusModeExpiresAtSetting;
+  const FocusModeExpiresAtSetting = explicitContentFromProto.FocusModeExpiresAtSetting;
   const setting1 = FocusModeExpiresAtSetting.getSetting();
   if (setting) {
     setting = null != setting1;
@@ -56,12 +57,12 @@ export const getFocusModeEnabled = function getFocusModeEnabled() {
 };
 export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
   const _require = quiet_mode_enabled;
-  const importDefault = arg1;
-  const FocusMode = _require(4066).FocusMode;
+  importDefault = arg1;
+  const FocusMode = _require(4069).FocusMode;
   const setting = FocusMode.getSetting();
   const PreloadedUserSettingsActionCreators = _require(1374).PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("notifications", (arg0) => {
-    const BoolValue = quiet_mode_enabled(outer1_2[5]).BoolValue;
+    const BoolValue = quiet_mode_enabled(closure_1_2[5]).BoolValue;
     arg0.quietMode = BoolValue.create({ value: quiet_mode_enabled });
     let str = "0";
     if (quiet_mode_enabled) {
@@ -74,7 +75,7 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
     }
     arg0.focusModeExpiresAtMs = str;
   }, _require(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { update_type: constants.ACCOUNT, quiet_mode_enabled, quiet_mode_enabled_old: setting };
   obj.track(constants2.NOTIFICATION_SETTINGS_UPDATED, obj);
   let tmp7 = status.getStatus() === constants3.DND && quiet_mode_enabled;
@@ -94,7 +95,7 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
     obj[4] = function onConfirm() {
       callback(table[9])({ nextStatus: constants.ONLINE });
     };
-    importDefault(4827).show(obj);
-    const tmp5Result = importDefault(4827);
+    setDefault.show(obj);
+    const tmp5Result = setDefault;
   }
 };

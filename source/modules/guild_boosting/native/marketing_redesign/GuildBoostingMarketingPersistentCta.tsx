@@ -1,60 +1,55 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7409
+// Function ID: 7410
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 4662, 676, 21, 4661, 712, 647, 4115, 4744, 4756, 7188, 4734, 7372, 2]
+// Dependencies: [19, 17, 4669, 676, 21, 4668, 712, 647, 4119, 4749, 4761, 7226, 4739, 7410, 2]
 // Exports: default
 
-// Module 7371 (GuildBoostingMarketingPersistentCta)
-import "noop";
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { AnalyticsSections } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7409 (GuildBoostingMarketingPersistentCta)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { AnalyticsSections } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
 const require = arg1;
+noopAll;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = { stiffness: 70, damping: 10 };
 createCacheKey = { wrapper: { display: "flex", alignItems: "center", position: "absolute", width: "100%", zIndex: 1, bottom: -76 }, innerWraper: null, guildInfoContainer: null, guildIcon: null, guildIconText: null, guildName: null, buttonContainer: null, button: null, border: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, display: "flex", flexDirection: "row", alignItems: "center", position: "relative", height: 76, width: 343, borderRadius: 76, paddingLeft: 13, paddingVertical: 13, paddingRight: 27 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL, display: "flex", flexDirection: "row", alignItems: "center", position: "relative", height: 76, width: 343, borderRadius: 76, paddingLeft: 13, paddingVertical: 13, paddingRight: 27 };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { display: "flex", flexDirection: "row", alignItems: "center", flex: 1, marginRight: 10 };
-createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, marginRight: 10, height: 50, width: 50, borderRadius: 25 };
-let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, marginRight: 10, height: 50, width: 50, borderRadius: 25 };
-createCacheKey[4] = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[3] = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, marginRight: 10, height: 50, width: 50, borderRadius: 25 };
+let obj1 = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, marginRight: 10, height: 50, width: 50, borderRadius: 25 };
+createCacheKey[4] = { color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 createCacheKey[5] = { flexGrow: 1, flexShrink: 1, flexBasis: "auto" };
 createCacheKey[6] = { height: 40 };
 createCacheKey[7] = { minWidth: 100 };
 createCacheKey[8] = { padding: 2, borderRadius: 80 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_9 = createCacheKey.createStyles(createCacheKey);
 let closure_10 = { code: "function GuildBoostingMarketingPersistentCtaTsx1(){const{useReducedMotion,VISIBILITY_OFFSET,withSpring,isVisible,SPRING_CONFIG}=this.__closure;return{transform:[{translateY:useReducedMotion?-VISIBILITY_OFFSET:withSpring(isVisible?-VISIBILITY_OFFSET:VISIBILITY_OFFSET,SPRING_CONFIG)}],opacity:withSpring(isVisible?1:0,SPRING_CONFIG)};}" };
-let obj2 = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingPersistentCta.tsx");
+let obj2 = { color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+const result = require("set").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingPersistentCta.tsx");
 
 export default function GuildBoostingMarketingPersistentCta(arg0) {
-  let fractionalPremiumState;
-  let guild;
-  let isVisible;
-  let premiumGroupRole;
-  let previousGuildSubscriptionSlot;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   ({ guild, isVisible } = arg0);
   ({ fractionalPremiumState, previousGuildSubscriptionSlot, premiumGroupRole } = arg0);
   let obj = isVisible(647);
-  let items = [maybeApplyNoTextColorForLightCustomTheme];
+  let items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj1 = isVisible(4115);
+  obj1 = isVisible(4119);
   const fn = function _() {
     let num = -120;
     if (!stateFromStores) {
-      let obj = isVisible(outer1_2[9]);
+      let obj = isVisible(closure_1_2[9]);
       let num2 = 120;
       if (isVisible) {
         num2 = -120;
       }
-      num = obj.withSpring(num2, outer1_8);
+      num = obj.withSpring(num2, closure_1_8);
     }
     obj = { transform: items, opacity: null };
     items = [{ translateY: num }];
@@ -62,10 +57,10 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
     if (isVisible) {
       num3 = 1;
     }
-    obj[1] = isVisible(outer1_2[9]).withSpring(num3, outer1_8);
+    obj[1] = isVisible(closure_1_2[9]).withSpring(num3, closure_1_8);
     return obj;
   };
-  obj = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET: 120, withSpring: isVisible(4744).withSpring, isVisible, SPRING_CONFIG: closure_8 };
+  obj = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET: 120, withSpring: isVisible(4749).withSpring, isVisible, SPRING_CONFIG: closure_8 };
   fn.__closure = obj;
   fn.__workletHash = 14370895185277;
   fn.__initData = closure_10;
@@ -80,17 +75,17 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
   const obj2 = { style: tmp.innerWraper, children: null };
   const obj3 = { style: tmp.guildInfoContainer, children: null };
   const obj4 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: null };
-  const tmp4 = stateFromStores(4756);
-  obj4[3] = isVisible(7188).GuildIconSizes.LARGE;
-  const items3 = [callback(stateFromStores(7188), obj4), callback(isVisible(4734).Text, { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name })];
+  const tmp4 = stateFromStores(4761);
+  obj4[3] = isVisible(7226).GuildIconSizes.LARGE;
+  const items3 = [callback(stateFromStores(7226), obj4), callback(isVisible(4739).Text, { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name })];
   obj3[1] = items3;
   const items4 = [callback2(View, obj3), ];
   const obj5 = { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name };
-  const tmp5 = stateFromStores(7188);
-  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(7372), obj7) });
+  const tmp5 = stateFromStores(7226);
+  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(7410), obj7) });
   obj2[1] = items4;
   obj1[6] = callback2(View, obj2);
   obj[1] = callback(tmp4, obj1);
-  return callback(stateFromStores(4115).View, obj);
+  return callback(stateFromStores(4119).View, obj);
 };
 export const VISIBILITY_OFFSET = 120;

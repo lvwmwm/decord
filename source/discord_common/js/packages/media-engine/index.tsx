@@ -1,17 +1,22 @@
-// Module ID: 4569
-// Function ID: 4570
+// Module ID: 4574
+// Function ID: 4575
 // Name: BaseConnectionEvent
-// Dependencies: [4529, 4570, 4640, 2, 4580, 4641]
+// Dependencies: [4534, 4575, 4646, 2, 4586, 4647]
 // Exports: determineMediaEngine, initializeMediaEngine
 
-// Module 4569 (BaseConnectionEvent)
-import DesktopSources from "DesktopSources";
+// Module 4574 (BaseConnectionEvent)
+import set from "set" /* 2 */;
+import destroy from "destroy" /* 4575 */;
+import destroy2 from "destroy" /* 4586 */;
+import Video from "Video" /* 4646 */;
+import MediaEngineEvent from "MediaEngineEvent" /* 4647 */;
+import DesktopSources from "DesktopSources" /* 4534 */;
 
 let closure_2 = DesktopSources.MediaEngineImplementations;
-const result = require("Video").fileFinishedImporting("../discord_common/js/packages/media-engine/index.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/index.tsx");
 
-export const BaseConnectionEvent = require("destroy").BaseConnectionEvent;
-export const MediaEngineEvent = require("MediaEngineEvent").MediaEngineEvent;
+export const BaseConnectionEvent = destroy2.BaseConnectionEvent;
+export const MediaEngineEvent = MediaEngineEvent.MediaEngineEvent;
 export const MediaEngineContextTypes = DesktopSources.MediaEngineContextTypes;
 export const DesktopSourceEndReason = { SOURCE_NOT_FOUND: 0, [0]: "SOURCE_NOT_FOUND", USER_STOPPED: 1, [1]: "USER_STOPPED", OTHER_ERROR: 2, [2]: "OTHER_ERROR" };
 export const FilterTargetType = { INPUT_DEVICE: "input_device", STREAM: "stream" };
@@ -22,12 +27,12 @@ export const determineMediaEngine = function determineMediaEngine() {
   ({ NATIVE: arr[0], WEBRTC: arr[1] } = closure_2);
   let DUMMY = items.find((arg0) => {
     if (constants.NATIVE === arg0) {
-      let _default = callback(4570).default;
+      let _default = callback(4575).default;
     } else {
       if (tmp.WEBRTC !== arg0) {
         const DUMMY = tmp.DUMMY;
       }
-      _default = callback(4640).default;
+      _default = callback(4646).default;
     }
     return _default.supported();
   });
@@ -38,12 +43,12 @@ export const determineMediaEngine = function determineMediaEngine() {
 };
 export const initializeMediaEngine = function initializeMediaEngine(BaseConnectionEvent) {
   if (constants.NATIVE === BaseConnectionEvent) {
-    let _default = require(4570) /* destroy */.default;
+    let _default = destroy.default;
   } else {
     if (tmp.WEBRTC !== BaseConnectionEvent) {
       const DUMMY = tmp.DUMMY;
     }
-    _default = require(4640) /* Video */.default;
+    _default = Video.default;
   }
   _default = new _default();
   return _default;

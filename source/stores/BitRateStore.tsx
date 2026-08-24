@@ -1,12 +1,16 @@
-// Module ID: 4537
-// Function ID: 4538
+// Module ID: 4542
+// Function ID: 4543
 // Name: bitrate
-// Dependencies: [4529, 589, 709, 2]
+// Dependencies: [4534, 589, 709, 2]
 
-// Module 4537 (bitrate)
-import { DEFAULT_VOICE_BITRATE } from "DesktopSources";
-import { Store } from "initialize";
+// Module 4542 (bitrate)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import DesktopSources from "DesktopSources" /* 4534 */;
 
+const DEFAULT_VOICE_BITRATE = DesktopSources.DEFAULT_VOICE_BITRATE;
+const Store = initializeDefault.Store;
 class BitRateStore extends Store {
 }
 Object.defineProperty(BitRateStore.prototype, "bitrate", {
@@ -16,11 +20,11 @@ Object.defineProperty(BitRateStore.prototype, "bitrate", {
   set: undefined
 });
 BitRateStore.displayName = "BitRateStore";
-const bitRateStore = new BitRateStore(require("dispatcher"), {
+const bitRateStore = new BitRateStore(dispatcherDefault, {
   SET_CHANNEL_BITRATE: function handleSetChannelBitrate(bitrate) {
     bitrate = bitrate.bitrate;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("stores/BitRateStore.tsx");
+const result = set.fileFinishedImporting("stores/BitRateStore.tsx");
 
 export default bitRateStore;

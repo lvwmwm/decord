@@ -5,10 +5,8 @@
 // Exports: useAnimatedKeyboard
 
 // Module 1802 (useAnimatedKeyboard)
-import noop from "noop";
+import noop from "noop" /* 19 */;
 
-let c3;
-let obj1;
 ({ useEffect: obj1, useRef: c3 } = noop);
 let closure_4 = { code: "function pnpm_useAnimatedKeyboardTs1(state,height){const{keyboardEventData}=this.__closure;keyboardEventData.state.value=state;keyboardEventData.height.value=height;}" };
 let closure_5 = { code: "function pnpm_useAnimatedKeyboardTs2(state,height){const{_keyboardEventData}=this.__closure;_keyboardEventData.state.value=state;_keyboardEventData.height.value=height;}" };
@@ -16,9 +14,9 @@ let closure_5 = { code: "function pnpm_useAnimatedKeyboardTs2(state,height){cons
 export const useAnimatedKeyboard = function useAnimatedKeyboard() {
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = { isStatusBarTranslucentAndroid: "r", isNavigationBarTranslucentAndroid: "accessibilityRole" };
+    obj = { isStatusBarTranslucentAndroid: "Array", isNavigationBarTranslucentAndroid: "ct" };
   }
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
   let callback2;
   obj = undefined;
@@ -49,10 +47,10 @@ export const useAnimatedKeyboard = function useAnimatedKeyboard() {
     const obj5 = obj(1698);
   }
   callback(() => {
-    if (false === _undefined2.current) {
-      if (null !== _undefined.current) {
-        const current = _undefined.current;
-        obj = obj(_undefined[1]);
+    if (false === ref2.current) {
+      if (null !== ref.current) {
+        const current = ref.current;
+        obj = obj(ref[1]);
         const fn = function u(value, value2) {
           current.state.value = value;
           current.height.value = value2;
@@ -61,13 +59,13 @@ export const useAnimatedKeyboard = function useAnimatedKeyboard() {
         obj[0] = current;
         fn.__closure = obj;
         fn.__workletHash = 5041909921996;
-        fn.__initData = outer1_5;
-        c2.current = obj.subscribeForKeyboardEvents(fn, current);
+        fn.__initData = closure_1_5;
+        closure_2.current = obj.subscribeForKeyboardEvents(fn, current);
         tmp.current = true;
       }
     }
     return () => {
-      const result = current(outer1_1[1]).unsubscribeFromKeyboardEvents(ref.current);
+      const result = current(closure_1_1[1]).unsubscribeFromKeyboardEvents(ref.current);
       closure_3.current = false;
     };
   }, []);

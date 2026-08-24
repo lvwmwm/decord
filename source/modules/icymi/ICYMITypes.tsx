@@ -1,15 +1,13 @@
-// Module ID: 7589
-// Function ID: 7590
+// Module ID: 7627
+// Function ID: 7628
 // Name: MessageEmbedTypes
 // Dependencies: [676, 2]
 // Exports: typeToString
 
-// Module 7589 (MessageEmbedTypes)
-import ME from "ME";
-import set from "set";
+// Module 7627 (MessageEmbedTypes)
+import ME from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-let MessageEmbedTypes;
-let c0;
 ({ ChannelTypes: c0, MessageEmbedTypes } = ME);
 const obj = { MESSAGE: 0, [0]: "MESSAGE", ACTIVITY: 2, [2]: "ACTIVITY", CUSTOM_STATUS: 3, [3]: "CUSTOM_STATUS", GUILD_EVENT: 5, [5]: "GUILD_EVENT", RECOMMENDED_GUILDS: 6, [6]: "RECOMMENDED_GUILDS" };
 const items = [, ];

@@ -5,14 +5,15 @@
 // Exports: back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, shouldNavigate, transitionToGuild
 
 // Module 1222 (transitionTo)
-import ME from "ME";
-import _extends from "_extends";
+import set from "set" /* 2 */;
+import timestampDefault from "timestamp" /* 3 */;
+import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
+import set2 from "set" /* 1234 */;
+import ME from "ME" /* 676 */;
+import _extends from "_extends" /* 1223 */;
 
-let c5;
-let closure_6;
-let error;
 function transitionTo(ME, closure_1) {
-  let closure_0 = ME;
+  closure_0 = ME;
   let tmp = typeof ME !== "string";
   if (typeof ME === "string") {
     tmp = !items.some((arg0) => ME.startsWith(arg0));
@@ -20,7 +21,7 @@ function transitionTo(ME, closure_1) {
   let flag = !tmp;
   if (!tmp) {
     const _HermesInternal = HermesInternal;
-    globalThis.log("" + "assign" + " - route to external path " + ME);
+    logger.log("" + "assign" + " - route to external path " + ME);
     const _window = window;
     const _Event = Event;
     const event = new Event("beforeunload");
@@ -32,7 +33,7 @@ function transitionTo(ME, closure_1) {
   }
   if (!flag) {
     const _HermesInternal2 = HermesInternal;
-    tmp3.log("transitionTo - Transitioning to " + ME);
+    logger.log("transitionTo - Transitioning to " + ME);
     let source;
     if (closure_1 != null) {
       source = closure_1.source;
@@ -56,7 +57,7 @@ function transitionTo(ME, closure_1) {
   }
 }
 ({ Routes: c5, PageAnalyticsLocations: closure_6, ComponentActions: error } = ME);
-const metroImportAll = new require("ComponentDispatcher")("Routing/Utils");
+let closure_8 = new timestampDefault("Routing/Utils");
 const items = [ME.RelativeMarketingURLs.DEVELOPER_PORTAL];
 _extends = _extends.createMemoryHistory();
 let closure_10 = _extends.listen((arg0, arg1) => {
@@ -64,28 +65,28 @@ let closure_10 = _extends.listen((arg0, arg1) => {
     callback();
   }
 });
-const tmp3 = new require("ComponentDispatcher")("Routing/Utils");
-const result = require("_extends").fileFinishedImporting("modules/routing/router_utils.tsx");
+const tmp3 = new timestampDefault("Routing/Utils");
+const result = set.fileFinishedImporting("modules/routing/router_utils.tsx");
 
 export const shouldNavigate = function shouldNavigate() {
-  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
+  const ComponentDispatch = ComponentDispatcher.ComponentDispatch;
   return !ComponentDispatch.hasSubscribers(constants2.MODAL_CLOSE);
 };
 export { transitionTo };
 export const transitionToGuild = function transitionToGuild(guildId, channelId, messageId, closure_1) {
-  tmp3.log("transitionToGuild - Transitioning to " + JSON.stringify({ guildId, channelId, messageId }));
+  logger.log("transitionToGuild - Transitioning to " + JSON.stringify({ guildId, channelId, messageId }));
   transitionTo(closure_5.CHANNEL(guildId, channelId, messageId), closure_1);
 };
 export const currentRouteHasBackNavigation = function currentRouteHasBackNavigation() {
   let hasItem = null != closure_3;
   if (hasItem) {
-    const ChannelBackNavigationSources = require(1234) /* set */.ChannelBackNavigationSources;
+    const ChannelBackNavigationSources = set2.ChannelBackNavigationSources;
     hasItem = ChannelBackNavigationSources.has(closure_3);
   }
   return hasItem;
 };
 export const replaceWith = function replaceWith(ME, state) {
-  let closure_0 = ME;
+  closure_0 = ME;
   let tmp = typeof ME !== "string";
   if (typeof ME === "string") {
     tmp = !items.some((arg0) => ME.startsWith(arg0));
@@ -93,7 +94,7 @@ export const replaceWith = function replaceWith(ME, state) {
   let flag = !tmp;
   if (!tmp) {
     const _HermesInternal = HermesInternal;
-    globalThis.log("" + "replace" + " - route to external path " + ME);
+    logger.log("" + "replace" + " - route to external path " + ME);
     const _window = window;
     const _Event = Event;
     const event = new Event("beforeunload");
@@ -105,13 +106,13 @@ export const replaceWith = function replaceWith(ME, state) {
   }
   if (!flag) {
     const _HermesInternal2 = HermesInternal;
-    tmp3.log("Replacing route with " + ME);
+    logger.log("Replacing route with " + ME);
     if (typeof ME === "string") {
       const replaced1 = _extends.replace(ME, state);
     } else {
       const replaced2 = _extends.replace(ME);
     }
-    let closure_3 = arg2;
+    closure_3 = arg2;
   }
 };
 export function getHistory() {
@@ -170,16 +171,16 @@ export function hasNavigated() {
   return false;
 }
 export const back = function back() {
-  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
+  const ComponentDispatch = ComponentDispatcher.ComponentDispatch;
   if (!hasSubscribersResult) {
-    let c3 = null;
+    c3 = null;
     _extends.goBack();
   }
 };
 export const forward = function forward() {
-  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
+  const ComponentDispatch = ComponentDispatcher.ComponentDispatch;
   if (!hasSubscribersResult) {
-    let c3 = null;
+    c3 = null;
     _extends.goForward();
   }
 };

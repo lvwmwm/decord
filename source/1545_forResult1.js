@@ -4,5 +4,7 @@
 // Dependencies: [1546]
 
 // Module 1545 (forResult1)
+import forResult1 from "forResult1" /* 1546 */;
 
-export { default } from "forResult1";
+
+export default forResult1;

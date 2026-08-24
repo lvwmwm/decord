@@ -1,83 +1,86 @@
-// Module ID: 11160
-// Function ID: 11161
-// Dependencies: [11161, 7501, 2]
+// Module ID: 11212
+// Function ID: 11213
+// Dependencies: [11213, 7539, 2]
 
-// Module 11160
-let result = require("set").fileFinishedImporting("modules/chat_input/native/ChatInputNativeCommands.tsx");
+// Module 11212
+import set2 from "set" /* 2 */;
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 11213 */;
+
+let result = set2.fileFinishedImporting("modules/chat_input/native/ChatInputNativeCommands.tsx");
 
 export default {
   backspace(arg0) {
     if (null != arg0) {
-      const Commands = require(11161) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = __INTERNAL_VIEW_CONFIG.Commands;
       Commands.backspace(arg0);
     }
   },
   blur(arg0) {
     if (null != arg0) {
-      const Commands = require(11161) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = __INTERNAL_VIEW_CONFIG.Commands;
       Commands.blur(arg0);
     }
   },
   closeCustomKeyboard(arg0) {
     if (null != arg0) {
-      const Commands = require(11161) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = __INTERNAL_VIEW_CONFIG.Commands;
       Commands.closeCustomKeyboard(arg0);
     }
   },
   flushText(arg0, arg1) {
     if (null != arg0) {
-      const Commands = require(11161) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = __INTERNAL_VIEW_CONFIG.Commands;
       Commands.flushText(arg0, arg1);
     }
   },
   getText(arg0, set) {
     const _require = set;
-    const dependencyMap = arg2;
+    dependencyMap = arg2;
     if (null == arg0) {
       return null;
     } else {
-      const nonce = _require(7501).createNonce();
+      const nonce = _require(7539).createNonce();
       const result = set.set(nonce, (arg0) => {
         set.delete(nonce);
         callback(arg0);
       });
-      const Commands = _require(11161).Commands;
+      const Commands = _require(11213).Commands;
       Commands.flushText(arg0, nonce);
     }
   },
   focus(arg0) {
     if (null != arg0) {
-      const Commands = require(11161) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = __INTERNAL_VIEW_CONFIG.Commands;
       Commands.focus(arg0);
     }
   },
   openCustomKeyboard(arg0) {
     if (null != arg0) {
-      const Commands = require(11161) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = __INTERNAL_VIEW_CONFIG.Commands;
       Commands.openCustomKeyboard(arg0);
     }
   },
   openSystemKeyboard(arg0) {
     if (null != arg0) {
-      const Commands = require(11161) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = __INTERNAL_VIEW_CONFIG.Commands;
       Commands.openSystemKeyboard(arg0);
     }
   },
   setText(arg0, arg1) {
     if (null != arg0) {
-      const Commands = require(11161) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = __INTERNAL_VIEW_CONFIG.Commands;
       Commands.setText(arg0, arg1);
     }
   },
   setSelectedRange(arg0, arg1, arg2) {
     if (null != arg0) {
-      const Commands = require(11161) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = __INTERNAL_VIEW_CONFIG.Commands;
       Commands.setSelectedRange(arg0, arg1, arg2);
     }
   },
   updateTextBlocks(arg0, arg1, arg2) {
     if (null != arg0) {
-      const Commands = require(11161) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = __INTERNAL_VIEW_CONFIG.Commands;
       const _JSON = JSON;
       const json = JSON.stringify(arg1);
       Commands.updateTextBlocks(arg0, json, arg2);
@@ -85,10 +88,6 @@ export default {
     }
   },
   replaceRange(arg0, keepCursorPosition) {
-    let _location;
-    let length;
-    let nodes;
-    let text;
     ({ location: _location, length, text, nodes } = keepCursorPosition);
     if (nodes === undefined) {
       nodes = [];
@@ -99,7 +98,7 @@ export default {
     }
     const editId = keepCursorPosition.editId;
     if (null != arg0) {
-      const Commands = require(11161) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = __INTERNAL_VIEW_CONFIG.Commands;
       const _JSON = JSON;
       Commands.replaceRange(arg0, _location, length, text, JSON.stringify(nodes), flag, editId);
     }

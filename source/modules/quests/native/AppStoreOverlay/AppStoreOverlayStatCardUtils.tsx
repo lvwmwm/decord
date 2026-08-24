@@ -1,11 +1,13 @@
-// Module ID: 10698
-// Function ID: 10699
+// Module ID: 10737
+// Function ID: 10738
 // Name: formatAppStoreRatingValue
 // Dependencies: [2]
 // Exports: formatAppStoreChartRank, formatAppStoreRatingCount, formatAppStoreRatingValue, getAppStoreStarFillAmounts
 
-// Module 10698 (formatAppStoreRatingValue)
-const result = require("set").fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStatCardUtils.tsx");
+// Module 10737 (formatAppStoreRatingValue)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStatCardUtils.tsx");
 
 export const formatAppStoreRatingValue = function formatAppStoreRatingValue(rating, currentLocale) {
   const numberFormat = new Intl.NumberFormat(currentLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -20,7 +22,7 @@ export const getAppStoreStarFillAmounts = function getAppStoreStarFillAmounts(ra
   if (arg1 === undefined) {
     num = 5;
   }
-  let closure_0;
+  closure_0 = undefined;
   const length = Math.max(1, num);
   closure_0 = Math.max(0, Math.min(rating, length));
   return Array.from({ length }, (arg0, arg1) => Math.min(1, Math.max(0, closure_0 - arg1)));

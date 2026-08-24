@@ -1,18 +1,19 @@
-// Module ID: 6106
-// Function ID: 6107
+// Module ID: 6137
+// Function ID: 6138
 // Name: SafetyShieldRight3dIllustration
-// Dependencies: [21, 5449, 6107, 2]
+// Dependencies: [21, 5454, 6138, 2]
 // Exports: SafetyShieldRight3dIllustration
 
-// Module 6106 (SafetyShieldRight3dIllustration)
-import { jsx } from "jsxProd";
+// Module 6137 (SafetyShieldRight3dIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6138 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SafetyShieldRight3dIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SafetyShieldRight3dIllustration.native.tsx");
 
 export const SafetyShieldRight3dIllustration = function SafetyShieldRight3dIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const SafetyShieldRight3dIllustration = function SafetyShieldRight3dIllus
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6107);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const SafetyShieldRight3dIllustration = function SafetyShieldRight3dIllus
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

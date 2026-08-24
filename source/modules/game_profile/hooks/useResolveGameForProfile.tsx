@@ -1,17 +1,20 @@
-// Module ID: 9522
-// Function ID: 9523
+// Module ID: 9559
+// Function ID: 9560
 // Name: useResolveGameForProfile
-// Dependencies: [7145, 4643, 9523, 4644, 5378, 2]
+// Dependencies: [7183, 4649, 9560, 4650, 5383, 2]
 // Exports: default
 
-// Module 9522 (useResolveGameForProfile)
-let result = require("useResolveGame").fileFinishedImporting("modules/game_profile/hooks/useResolveGameForProfile.tsx");
+// Module 9559 (useResolveGameForProfile)
+import set from "set" /* 2 */;
+import importDefaultResult1 from "importDefaultResult1" /* 5383 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7183 */;
+import useResolveGameDefault from "useResolveGame" /* 9560 */;
+
+let result = set.fileFinishedImporting("modules/game_profile/hooks/useResolveGameForProfile.tsx");
 
 export default function useResolveGameForProfile(arg0) {
-  let applicationId;
-  let gameId;
   ({ applicationId, gameId } = arg0);
-  let obj = require(7145) /* useGetOrFetchApplications */;
+  let obj = useGetOrFetchApplications;
   let tmp3;
   if (null == gameId) {
     tmp3 = applicationId;
@@ -19,30 +22,30 @@ export default function useResolveGameForProfile(arg0) {
   const getOrFetchApplication = obj.useGetOrFetchApplication(tmp3);
   let result = null != getOrFetchApplication;
   if (result) {
-    let tmpResult = tmp(4643);
+    let tmpResult = tmp(4649);
     result = tmpResult.isRobloxSubgameApplication(getOrFetchApplication);
   }
   obj = { applicationId, gameId: null };
   if (result) {
-    gameId = tmp(4644).ROBLOX_GAME_ID;
+    gameId = tmp(4650).ROBLOX_GAME_ID;
   }
   obj[1] = gameId;
-  let tmp6Result = importDefault(9523)(obj);
+  let tmp6Result = useResolveGameDefault(obj);
   let isRobloxSubgameGameResult = null != tmp6Result.gameRecord;
   if (isRobloxSubgameGameResult) {
-    tmpResult = tmp(4643);
+    tmpResult = tmp(4649);
     isRobloxSubgameGameResult = tmpResult.isRobloxSubgameGame(tmp6Result.gameRecord);
   }
-  const tmp6 = importDefault(9523);
+  const tmp6 = useResolveGameDefault;
   let ROBLOX_GAME_ID;
   if (isRobloxSubgameGameResult) {
-    ROBLOX_GAME_ID = tmp(4644).ROBLOX_GAME_ID;
+    ROBLOX_GAME_ID = tmp(4650).ROBLOX_GAME_ID;
   }
-  const game = require(5378) /* importDefaultResult1 */.useGame(ROBLOX_GAME_ID);
+  const game = importDefaultResult1.useGame(ROBLOX_GAME_ID);
   let data = game.data;
   if (isRobloxSubgameGameResult) {
     obj = { gameId: null, gameRecord: null, isLoading: null };
-    obj[0] = tmp(4644).ROBLOX_GAME_ID;
+    obj[0] = tmp(4650).ROBLOX_GAME_ID;
     if (data == null) {
       data = null;
     }

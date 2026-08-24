@@ -1,31 +1,28 @@
-// Module ID: 8497
-// Function ID: 8498
+// Module ID: 8536
+// Function ID: 8537
 // Name: MaskedBadge
-// Dependencies: [19, 21, 4661, 712, 1297, 8498, 2]
+// Dependencies: [19, 21, 4668, 712, 1297, 8537, 2]
 // Exports: default
 
-// Module 8497 (MaskedBadge)
-import noop from "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8536 (MaskedBadge)
+import ThemesDefault from "Themes" /* 712 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 8537 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
-createCacheKey = { maskStyle: { position: "relative", right: "call" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: null };
-createCacheKey = { backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_400 };
+createCacheKey = { maskStyle: { position: "relative", right: "channel" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: null };
+createCacheKey = { backgroundColor: ThemesDefault.unsafe_rawColors.PRIMARY_400 };
 createCacheKey[4] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createCacheKey").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MaskedBadge.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MaskedBadge.tsx");
 
 export default function MaskedBadge(backgroundColor) {
-  let lowPriority;
-  let maxValue;
-  let size;
-  let style;
-  let unread;
   backgroundColor = backgroundColor.backgroundColor;
   const value = backgroundColor.value;
   ({ unread, maxValue, lowPriority, size, style } = backgroundColor);
-  const tmp = createCacheKey();
+  const tmp = callback();
   [][0] = backgroundColor;
   if (value > 0) {
     let obj = { maskStyle: null, dotStyle: null, style: null, value: null, maxValue: null };
@@ -51,7 +48,7 @@ export default function MaskedBadge(backgroundColor) {
       obj[0] = size;
       obj[1] = backgroundColor;
       obj[2] = tmp.unreadBadge;
-      tmp7Result = jsx(importDefault(8498), { size: null, maskColor: null, style: null });
+      tmp7Result = jsx(DEFAULT_BADGE_SIZEDefault, { size: null, maskColor: null, style: null });
     }
   }
   return tmp7Result;

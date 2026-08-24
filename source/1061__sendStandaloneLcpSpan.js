@@ -4,10 +4,14 @@
 // Dependencies: [1059, 1034, 1035, 817]
 
 // Module 1061 (_sendStandaloneLcpSpan)
-const require = arg1;
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+import __SENTRY_DEBUG__ from "__SENTRY_DEBUG__" /* 1035 */;
+import extractNetworkProtocol from "extractNetworkProtocol" /* 1059 */;
+
+require = arg1;
 let dependencyMap = arg6;
 function _sendStandaloneLcpSpan(arg0, startTime, sentry_pageload_span_id, sentry_report_event) {
-  if (require(1035) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
+  if (__SENTRY_DEBUG__.DEBUG_BUILD) {
     const debug = tmp(817).debug;
     const _HermesInternal = HermesInternal;
     debug.log("Sending LCP span (" + arg0 + ")");
@@ -23,7 +27,7 @@ function _sendStandaloneLcpSpan(arg0, startTime, sentry_pageload_span_id, sentry
   }
   const msToSecResult = tmpResult.msToSec((tmpResult.browserPerformanceTimeOrigin() || 0) + num);
   const tmp5 = tmpResult.browserPerformanceTimeOrigin() || 0;
-  const currentScope = require(817) /* registerSpanErrorInstrumentation */.getCurrentScope();
+  const currentScope = registerSpanErrorInstrumentation.getCurrentScope();
   let str3 = "Largest contentful paint";
   if (startTime) {
     str3 = tmp(817).htmlTreeAsString(startTime.element);
@@ -51,8 +55,8 @@ function _sendStandaloneLcpSpan(arg0, startTime, sentry_pageload_span_id, sentry
       obj["lcp.size"] = startTime.size;
     }
   }
-  const tmpResult1 = require(817) /* registerSpanErrorInstrumentation */;
-  const result = require(1059) /* extractNetworkProtocol */.startStandaloneWebVitalSpan({ name: str3, transaction: currentScope.getScopeData().transactionName, attributes: obj, startTime: msToSecResult });
+  const tmpResult1 = registerSpanErrorInstrumentation;
+  const result = extractNetworkProtocol.startStandaloneWebVitalSpan({ name: str3, transaction: currentScope.getScopeData().transactionName, attributes: obj, startTime: msToSecResult });
   if (result) {
     obj = {};
     obj[tmp(817).SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = "millisecond";
@@ -64,14 +68,14 @@ function _sendStandaloneLcpSpan(arg0, startTime, sentry_pageload_span_id, sentry
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5._sendStandaloneLcpSpan = _sendStandaloneLcpSpan;
 arg5.trackLcpAsStandaloneSpan = function trackLcpAsStandaloneSpan(client) {
-  const dependencyMap = 0;
+  dependencyMap = 0;
   if (obj.supportsWebVital("largest-contentful-paint")) {
     let tmpResult = tmp(1034);
-    let closure_2 = tmpResult.addLcpInstrumentationHandler((metric) => {
+    closure_2 = tmpResult.addLcpInstrumentationHandler((metric) => {
       const tmp = metric.metric.entries[metric.metric.entries.length - 1];
       if (tmp) {
         const value = iter.value;
-        let closure_0 = tmp;
+        closure_0 = tmp;
       }
     }, true);
     tmpResult = tmp(1059);

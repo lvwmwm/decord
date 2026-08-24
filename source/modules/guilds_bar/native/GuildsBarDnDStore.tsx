@@ -1,28 +1,29 @@
-// Module ID: 15547
-// Function ID: 15548
+// Module ID: 15612
+// Function ID: 15613
 // Name: withEqualityFn
-// Dependencies: [5078, 700, 4115, 705, 1208, 4006, 2]
+// Dependencies: [5083, 700, 4119, 705, 1208, 4009, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 15547 (withEqualityFn)
-import { GuildsNodeType } from "insertUnsortedGuilds";
-import identity from "identity";
+// Module 15612 (withEqualityFn)
+import set from "set" /* 2 */;
+import insertUnsortedGuilds from "insertUnsortedGuilds" /* 5083 */;
+import identity from "identity" /* 700 */;
 
+const GuildsNodeType = insertUnsortedGuilds.GuildsNodeType;
 let obj = { mode: null, initialX: 0, initialY: 0, absoluteX: 0, absoluteY: 0 };
 let c5 = -1;
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   const _require = arg0;
-  let closure_1 = arg1;
-  let obj = { dragSpecs: "Boolean", overSpecs: "disabled", dropSpecs: "isArray", dragRegion: null, gestureState: null, dragDropInProgress: null, listInsets: "sans-serif-medium", scrollPosition: "normal", windowSize: "<string:973079306>", setStateShallow: "<string:167772559>", dropStart: "<string:838861251>", dropComplete: "<string:2835350031>" };
-  obj[3] = _require(4115).makeMutable({ min: 0, max: 0 });
-  const obj2 = _require(4115);
-  obj[4] = _require(4115).makeMutable(obj);
-  const obj3 = _require(4115);
-  obj[5] = _require(4115).makeMutable(false);
-  let obj4 = _require(4115);
-  obj[6] = _require(4115).makeMutable({ start: 0, end: 0 });
-  const obj5 = _require(4115);
-  obj[7] = _require(4115).makeMutable(0);
+  closure_1 = arg1;
+  obj = { dragSpecs: "Boolean", overSpecs: "disabled", dropSpecs: "isArray", dragRegion: _require(4119).makeMutable({ min: 0, max: 0 }), gestureState: null, dragDropInProgress: null, listInsets: "ExposureTime", scrollPosition: null, windowSize: "\u{1F1E7}\u{1F1F9}", setStateShallow: 6, dropStart: 1385, dropComplete: "flag_bt" };
+  const obj2 = _require(4119);
+  obj[4] = _require(4119).makeMutable(obj);
+  const obj3 = _require(4119);
+  obj[5] = _require(4119).makeMutable(false);
+  let obj4 = _require(4119);
+  obj[6] = _require(4119).makeMutable({ start: 0, end: 0 });
+  const obj5 = _require(4119);
+  obj[7] = _require(4119).makeMutable(0);
   obj[9] = function setStateShallow(obj) {
     const callback = obj;
     const tmp = callback2();
@@ -33,10 +34,10 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
         continue;
       } else {
         let tmp2 = callback;
-        let tmp3 = outer1_2;
-        obj = callback(outer1_2[3]);
+        let tmp3 = closure_1_2;
+        obj = callback(closure_1_2[3]);
         let batchUpdatesResult = obj.batchUpdates(() => {
-          const obj = {};
+          obj = {};
           const merged = Object.assign(closure_1);
           const merged1 = Object.assign(obj);
           return obj(obj);
@@ -45,26 +46,24 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
     }
   };
   obj[10] = function dropStart(newDropSpec) {
-    let dropSpecs;
-    let gestureState;
     const callback = newDropSpec;
     ({ dropSpecs, gestureState } = gestureState());
-    let obj = callback2(outer1_2[4]);
+    obj = callback2(closure_1_2[4]);
     obj = { category: "GuildsBarGesture", message: "dropStart started", data: null };
     obj = { newDropSpec, dropSpecs, gestureState: gestureState.get() };
     obj[2] = obj;
     obj.addBreadcrumb(obj);
     if (null != dropSpecs) {
       const _Error = Error;
-      const error = new Error("GuildsBarDnDStore.dropStart: you cannot start a drop while an existing drop is in progress");
+      error = new Error("GuildsBarDnDStore.dropStart: you cannot start a drop while an existing drop is in progress");
       throw error;
     } else {
-      callback(tmp2[3]).batchUpdates(() => newDropSpec({ dropSpecs: newDropSpec, dragSpecs: "Array", overSpecs: "text" }));
+      callback(tmp2[3]).batchUpdates(() => newDropSpec({ dropSpecs: newDropSpec, dragSpecs: "Array", overSpecs: "applicationId" }));
       const _clearTimeout = clearTimeout;
-      clearTimeout(outer1_5);
+      clearTimeout(timeout);
       const _setTimeout = setTimeout;
-      outer1_5 = setTimeout(() => {
-        let obj = gestureState;
+      timeout = setTimeout(() => {
+        obj = gestureState;
         const value = gestureState.get();
         if ("drag" === value.mode) {
           obj = {};
@@ -75,54 +74,46 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
       }, 0);
     }
     const tmp = gestureState();
-    tmp2 = outer1_2;
+    tmp2 = closure_1_2;
   };
   obj[11] = function dropComplete() {
-    let dragDropInProgress;
-    let dragSpecs;
-    let dropSpecs;
-    let gestureState;
     ({ gestureState, dragDropInProgress, dropSpecs, dragSpecs } = callback2());
-    let obj = callback2(outer1_2[4]);
+    obj = callback2(closure_1_2[4]);
     obj = { category: "GuildsBarGesture", message: "dropComplete started", data: null };
     obj = { gestureState: gestureState.get(), dropSpecs, dragSpecs };
     obj[2] = obj;
     obj.addBreadcrumb(obj);
     if (null != dropSpecs) {
-      callback(outer1_2[3]).batchUpdates(() => callback({ dropSpecs: "r" }));
+      callback(closure_1_2[3]).batchUpdates(() => callback({ dropSpecs: "r" }));
       const _clearTimeout = clearTimeout;
-      clearTimeout(outer1_5);
+      clearTimeout(closure_5);
       if (null == dragSpecs) {
         const result = dragDropInProgress.set(false);
       }
       const value = gestureState.get();
       if ("drag" === value.mode) {
-        const obj1 = {};
+        obj1 = {};
         const merged = Object.assign(value);
         obj1.mode = null;
         const result1 = gestureState.set(obj1);
       }
-      const obj4 = callback(outer1_2[3]);
+      const obj4 = callback(closure_1_2[3]);
     }
   };
   return obj;
 });
-let result = require("module_4115").fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
+let result = set.fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
 
 export default withEqualityFn;
 export const INITIAL_GESTURE_STATE = obj;
 export const useItemDragState = function useItemDragState(arg0, arg1) {
   const _require = arg0;
-  let closure_1 = arg1;
+  closure_1 = arg1;
   return withEqualityFn((arg0) => {
-    let dragDropInProgress;
-    let dragSpecs;
-    let dropSpecs;
-    let overSpecs;
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        let obj = { isDragTarget: false, dragState: "disabled", overState: "isArray", itemSize: null, dragDropInProgress: true };
+        obj = { isDragTarget: false, dragState: "disabled", overState: "isArray", itemSize: null, dragDropInProgress: true };
         obj[4] = dragDropInProgress;
         return obj;
       }
@@ -213,13 +204,11 @@ export const useItemDragState = function useItemDragState(arg0, arg1) {
     obj[3] = num;
     obj[4] = dragDropInProgress;
     return obj;
-  }, _require(4006).shallow);
+  }, _require(4009).shallow);
 };
 export const useFolderBGHeightOffset = function useFolderBGHeightOffset(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return withEqualityFn((dropSpecs) => {
-    let dragSpecs;
-    let overSpecs;
     ({ dragSpecs, overSpecs } = dropSpecs);
     let num = 0;
     if (null == dropSpecs.dropSpecs) {
@@ -230,7 +219,7 @@ export const useFolderBGHeightOffset = function useFolderBGHeightOffset(arg0) {
           num = 0;
           if ("self" !== overSpecs.state) {
             num = 0;
-            if (dragSpecs.node.type === outer1_3.GUILD) {
+            if (dragSpecs.node.type === closure_1_3.GUILD) {
               if (dragSpecs.node.parentId === closure_0) {
                 let num3 = 0;
                 if (overSpecs.node.parentId !== tmp3) {

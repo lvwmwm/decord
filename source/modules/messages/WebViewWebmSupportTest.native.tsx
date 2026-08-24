@@ -1,16 +1,20 @@
-// Module ID: 4812
-// Function ID: 4813
+// Module ID: 4817
+// Function ID: 4818
 // Name: isIOSWithWebM
-// Dependencies: [500, 4354, 2]
+// Dependencies: [500, 4358, 2]
 // Exports: isIOSWithWebM
 
-// Module 4812 (isIOSWithWebM)
+// Module 4817 (isIOSWithWebM)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4358 */;
+
 const ARM64_ = "ARM64_";
-const result = require("set").fileFinishedImporting("modules/messages/WebViewWebmSupportTest.native.tsx");
+const result = set.fileFinishedImporting("modules/messages/WebViewWebmSupportTest.native.tsx");
 
 export const isIOSWithWebM = function isIOSWithWebM() {
   if (obj.isIOS()) {
-    const str = tmp(4354).getSocName();
+    const str = DCDDeviceManager.getSocName();
     let tmp4 = null == str;
     if (!tmp4) {
       tmp4 = !str.startsWith(ARM64_);
@@ -40,6 +44,6 @@ export const isIOSWithWebM = function isIOSWithWebM() {
   } else {
     return false;
   }
-  obj = require(500) /* set */;
-  tmp = require;
+  obj = set2;
+  const tmp = require;
 };

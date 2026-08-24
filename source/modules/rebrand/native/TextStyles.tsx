@@ -1,15 +1,17 @@
-// Module ID: 6782
-// Function ID: 6783
+// Module ID: 6819
+// Function ID: 6820
 // Name: createTextStyle
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 6782 (createTextStyle)
-import { Fonts } from "ME";
+// Module 6819 (createTextStyle)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
+const Fonts = ME.Fonts;
 let closure_1 = { 10: 10, 11: 11, 12: 12, 13: 13, 14: 14, 16: 16, 18: 17, 20: 20, 24: 25, 32: 34 };
 let closure_2 = { 10: 14, 11: 14, 12: 16, 13: 16, 14: 18, 16: 20, 18: 24, 20: 24, 24: 30, 32: 40 };
-const result = require("set").fileFinishedImporting("modules/rebrand/native/TextStyles.tsx");
+const result = set.fileFinishedImporting("modules/rebrand/native/TextStyles.tsx");
 
 export default function createTextStyle(fontFamily, color, arg2, uppercase) {
   const obj = { fontFamily, fontSize: table[arg2], lineHeight: table2[arg2] };

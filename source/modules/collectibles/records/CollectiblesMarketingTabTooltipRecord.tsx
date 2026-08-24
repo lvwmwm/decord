@@ -1,13 +1,16 @@
-// Module ID: 5335
-// Function ID: 5336
+// Module ID: 5340
+// Function ID: 5341
 // Name: fromServer
-// Dependencies: [5332, 2]
+// Dependencies: [5337, 2]
 
-// Module 5335 (fromServer)
+// Module 5340 (fromServer)
+import set from "set" /* 2 */;
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 5337 */;
+
 let prototype;
 prototype = function CollectiblesMarketingTabTooltipRecord(arg0) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(5332) /* CollectiblesMarketingType */.CollectiblesMarketingType.TAB_TOOLTIP;
+  obj.type = CollectiblesMarketingType.CollectiblesMarketingType.TAB_TOOLTIP;
   ({ title: tmp.title, body: tmp.body, asset: tmp.asset, dismissibleContent: tmp.dismissibleContent, version: tmp.version, refTargetBackground: tmp.refTargetBackground, badgeIcon: tmp.badgeIcon, badgeText: tmp.badgeText, showHoverGradient: tmp.showHoverGradient } = arg0);
   return obj;
 }.prototype;
@@ -19,10 +22,10 @@ prototype["fromServer"] = function fromServer(arg0) {
     HermesBuiltin.throwTypeError();
   }
   obj = Object.create(prototype.prototype);
-  obj.type = require(5332) /* CollectiblesMarketingType */.CollectiblesMarketingType.TAB_TOOLTIP;
+  obj.type = CollectiblesMarketingType.CollectiblesMarketingType.TAB_TOOLTIP;
   ({ title: tmp3.title, body: tmp3.body, asset: tmp3.asset, dismissibleContent: tmp3.dismissibleContent, version: tmp3.version, refTargetBackground: tmp3.refTargetBackground, badgeIcon: tmp3.badgeIcon, badgeText: tmp3.badgeText, showHoverGradient: tmp3.showHoverGradient } = obj);
   return obj;
 };
-const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingTabTooltipRecord.tsx");
+const result = set.fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingTabTooltipRecord.tsx");
 
 export default prototype;

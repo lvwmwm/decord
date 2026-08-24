@@ -1,10 +1,11 @@
-// Module ID: 4086
-// Function ID: 4087
+// Module ID: 4089
+// Function ID: 4090
 // Name: setContent
 // Dependencies: [589, 709, 2]
 
-// Module 4086 (setContent)
-import { Store } from "initialize";
+// Module 4089 (setContent)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let array = new Array();
 let c1;
@@ -12,6 +13,7 @@ const QuickSwitcher = "QuickSwitcher";
 function setContent(arg0) {
 
 }
+const Store = initializeDefault.Store;
 class ActionSheetStore extends Store {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -78,13 +80,8 @@ Object.defineProperty(prototype, "backdropKind", {
   set: undefined
 });
 ActionSheetStore.displayName = "ActionSheetStore";
-const actionSheetStore = new ActionSheetStore(require("dispatcher"), {
+const actionSheetStore = new ActionSheetStore(dispatcherDefault, {
   SHOW_ACTION_SHEET: function handleShowActionSheet(stackingBehavior) {
-    let backdropKind;
-    let content;
-    let impressionName;
-    let impressionProperties;
-    let key;
     if (typeof setContent !== "function") {
       HermesBuiltin.throwTypeError();
     }
@@ -114,11 +111,6 @@ const actionSheetStore = new ActionSheetStore(require("dispatcher"), {
     }
   },
   SHOW_ACTION_SHEET_QUICK_SWITCHER: function handleShowActionSheetQuickSwitcher(arg0) {
-    let backdropKind;
-    let content;
-    let impressionName;
-    let impressionProperties;
-    let key;
     let obj = { key: QuickSwitcher };
     const merged = Object.assign(arg0);
     if (typeof setContent !== "function") {
@@ -150,17 +142,17 @@ const actionSheetStore = new ActionSheetStore(require("dispatcher"), {
     }
   },
   HIDE_ACTION_SHEET: function handleHideActionSheet(key) {
-    let array = key;
+    array = key;
     if (null == key.key) {
       array = array.slice(0, -1);
     }
     array = array.filter((key) => key.key !== closure_0);
   },
   HIDE_ALL_ACTION_SHEETS: function handleHideAllActionSheets() {
-    let closure_0 = [];
+    closure_0 = [];
   },
   HIDE_ACTION_SHEET_QUICK_SWITCHER: function handleHideActionSheetQuickSwitcher() {
-    let array = QuickSwitcher;
+    array = QuickSwitcher;
     if (null == QuickSwitcher) {
       array = array.slice(0, -1);
     }

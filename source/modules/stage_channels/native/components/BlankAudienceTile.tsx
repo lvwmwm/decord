@@ -1,23 +1,25 @@
-// Module ID: 12624
-// Function ID: 12625
-// Dependencies: [19, 17, 21, 1494, 12625, 2]
+// Module ID: 12678
+// Function ID: 12679
+// Dependencies: [19, 17, 21, 1494, 12679, 2]
 
-// Module 12624
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 12678
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import RaisedHandIcon from "RaisedHandIcon" /* 12679 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-const memoResult = require("noop").memo(() => {
-  let obj = require(12625) /* RaisedHandIcon */;
+require = arg1;
+const memoResult = importAllResult.memo(() => {
+  let obj = RaisedHandIcon;
   const audienceTileStyles = obj.useAudienceTileStyles();
   obj = { style: null };
   const items = [audienceTileStyles.container, ];
-  obj = { width: require(12625) /* RaisedHandIcon */.getTileWidthStyle(importDefault(1494)().width) };
+  obj = { width: RaisedHandIcon.getTileWidthStyle(useWindowDimensionsDefault().width) };
   items[1] = obj;
   obj[0] = items;
-  return <View width={require(12625) /* RaisedHandIcon */.getTileWidthStyle(importDefault(1494)().width)} />;
+  return <View width={RaisedHandIcon.getTileWidthStyle(useWindowDimensionsDefault().width)} />;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/stage_channels/native/components/BlankAudienceTile.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/components/BlankAudienceTile.tsx");
 
 export default memoResult;

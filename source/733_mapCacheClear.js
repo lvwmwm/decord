@@ -4,14 +4,16 @@
 // Dependencies: [734, 747, 748]
 
 // Module 733 (mapCacheClear)
+import Hash from "Hash" /* 734 */;
+import getNative from "getNative" /* 747 */;
+
 
 export default function mapCacheClear() {
-  const obj = { hash: null, map: null, string: null };
-  obj[0] = new require(734) /* Hash */();
-  let tmp4 = require(747) /* getNative */ || tmp(748);
+  const obj = { hash: new Hash(), map: null, string: null };
+  let tmp4 = getNative || tmp(748);
   tmp4 = new tmp4();
   obj[1] = tmp4;
-  const tmp3 = new require(734) /* Hash */();
-  obj[2] = new require(734) /* Hash */();
+  const tmp3 = new Hash();
+  obj[2] = new Hash();
   { size: 0 }.__data__ = obj;
 };

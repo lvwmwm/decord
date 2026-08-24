@@ -1,26 +1,26 @@
-// Module ID: 6868
-// Function ID: 6869
+// Module ID: 6906
+// Function ID: 6907
 // Name: ThreadLockIcon
-// Dependencies: [19, 21, 712, 4096, 6833, 2]
+// Dependencies: [19, 21, 712, 4099, 6871, 2]
 // Exports: ThreadLockIcon
 
-// Module 6868 (ThreadLockIcon)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 6906 (ThreadLockIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import BaseIconImage from "BaseIconImage" /* 4099 */;
+import registerAsset from "registerAsset" /* 6871 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/ThreadLockIcon.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Icon/native/redesign/generated/ThreadLockIcon.tsx");
 
 export const ThreadLockIcon = function ThreadLockIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = ThemesDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.create(null));
-  const obj = { source: null, color: null, style: null };
-  obj[0] = require(6833) /* registerAsset */;
-  obj[1] = INTERACTIVE_ICON_DEFAULT;
-  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(BaseIconImage.BaseIconImage, { source: registerAsset, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

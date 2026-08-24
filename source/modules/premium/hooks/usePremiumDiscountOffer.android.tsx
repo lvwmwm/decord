@@ -1,26 +1,25 @@
-// Module ID: 7625
-// Function ID: 7626
+// Module ID: 7663
+// Function ID: 7664
 // Name: usePremiumDiscountOffer
-// Dependencies: [5319, 1924, 7626, 5322, 647, 2]
+// Dependencies: [5324, 1924, 7664, 5327, 647, 2]
 // Exports: usePremiumDiscountOffer, usePremiumGroupDiscountOffer
 
-// Module 7625 (usePremiumDiscountOffer)
-import updateProduct from "updateProduct";
-import GuildFeatures from "GuildFeatures";
+// Module 7663 (usePremiumDiscountOffer)
+import useDiscountOfferDefault from "useDiscountOffer" /* 7664 */;
+import closure_3 from "updateProduct" /* 5324 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: c4, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: c5 } = GuildFeatures);
-const result = require("useDiscountOffer").fileFinishedImporting("modules/premium/hooks/usePremiumDiscountOffer.android.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/hooks/usePremiumDiscountOffer.android.tsx");
 
 export const usePremiumDiscountOffer = function usePremiumDiscountOffer() {
-  const items = [updateProduct];
-  offerIds = offerIds(647).useStateFromStoresObject(items, () => ({ isFetchingProducts: updateProduct.isFetchingProducts(), offerIds: updateProduct.getOfferIds() })).offerIds;
+  const items = [closure_3];
+  offerIds = offerIds(647).useStateFromStoresObject(items, () => ({ isFetchingProducts: closure_3.isFetchingProducts(), offerIds: closure_3.getOfferIds() })).offerIds;
   const obj = offerIds(647);
   const tmp = offerIds;
   const tmp3 = importDefault;
-  let values = Object.values(offerIds(5322).DiscountIdToProductOfferId[closure_4]);
+  let values = Object.values(offerIds(5327).DiscountIdToProductOfferId[closure_4]);
   let tmp5 = null;
   if (0 !== values.length) {
     let tmp6 = null;
@@ -29,8 +28,8 @@ export const usePremiumDiscountOffer = function usePremiumDiscountOffer() {
     }
     tmp5 = tmp6;
   }
-  tmp4 = importDefault(7626)(closure_4);
-  values = Object.values(tmp(5322).DiscountIdToProductOfferId[closure_5]);
+  tmp4 = useDiscountOfferDefault(closure_4);
+  values = Object.values(tmp(5327).DiscountIdToProductOfferId[closure_5]);
   let tmp8 = null;
   if (0 !== values.length) {
     let tmp9 = null;

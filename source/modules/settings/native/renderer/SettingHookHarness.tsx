@@ -1,14 +1,14 @@
-// Module ID: 13997
-// Function ID: 13998
+// Module ID: 14065
+// Function ID: 14066
 // Name: map
-// Dependencies: [32, 19, 13994, 10670, 13998, 2]
+// Dependencies: [32, 19, 14062, 10709, 14066, 2]
 // Exports: getCachedSettingSearchTerms, getCachedSettingTitle
 
-// Module 13997 (map)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import zustandStore from "zustandStore";
-import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
+// Module 14065 (map)
+import closure_2 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import closure_4 from "zustandStore" /* 14062 */;
+import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 10709 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -16,8 +16,6 @@ let closure_6 = [];
 const map = new Map();
 const map1 = new Map();
 const memoResult = importAllResult.memo(function SettingHookHarness() {
-  let obj2;
-  let tmp3;
   field = field.getField("blocklist");
   const items = [];
   const items1 = [];
@@ -71,17 +69,17 @@ const memoResult = importAllResult.memo(function SettingHookHarness() {
   const effect = importAllResult.useEffect(() => {
     if (set.length > 0) {
       const _Set = Set;
-      set = new Set(outer1_4.getField("blocklist"));
+      set = new Set(closure_1_4.getField("blocklist"));
       const item = set.forEach((arg0) => set.add(arg0));
       const item1 = items1.forEach((arg0) => set.delete(arg0));
       const obj = { blocklist: null };
       obj[0] = set;
-      outer1_4.setState(obj);
+      closure_1_4.setState(obj);
     }
   });
   return null;
 });
-let result = require("zustandStore").fileFinishedImporting("modules/settings/native/renderer/SettingHookHarness.tsx");
+let result = require("set").fileFinishedImporting("modules/settings/native/renderer/SettingHookHarness.tsx");
 
 export default memoResult;
 export const getCachedSettingTitle = function getCachedSettingTitle(setting) {

@@ -1,27 +1,32 @@
-// Module ID: 11739
-// Function ID: 11740
+// Module ID: 11788
+// Function ID: 11789
 // Name: GuildPowerupsSinglePerkCard
-// Dependencies: [19, 21, 11689, 11668, 11665, 11688, 11736, 11740, 2]
+// Dependencies: [19, 21, 11738, 11717, 11714, 11737, 11785, 11789, 2]
 // Exports: default
 
-// Module 11739 (GuildPowerupsSinglePerkCard)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 11788 (GuildPowerupsSinglePerkCard)
+import noopAll from "noop" /* 19 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 11714 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 11717 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 11737 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 11738 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 11785 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 11789 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("useGetGuildPowerupBannerImage").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSinglePerkCard.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSinglePerkCard.tsx");
 
 export default function GuildPowerupsSinglePerkCard(badge) {
-  let guildId;
-  let powerup;
   ({ guildId, powerup } = badge);
-  let str = importDefault(11689)(powerup, true);
-  const tmp = importDefault(11668)(guildId, powerup);
-  let obj = require(11688) /* useCalculatePowerupCardStatus */;
-  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp, importDefault(11665)(guildId, powerup, "GuildPowerupsSinglePerkCard"));
-  const tmp2 = importDefault(11665)(guildId, powerup, "GuildPowerupsSinglePerkCard");
+  let str = useGetGuildPowerupBannerImageDefault(powerup, true);
+  const tmp = usePowerupActiveStatusDefault(guildId, powerup);
+  let obj = useCalculatePowerupCardStatus;
+  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp, useGuildPowerupRollbackEnabledDefault(guildId, powerup, "GuildPowerupsSinglePerkCard"));
+  const tmp2 = useGuildPowerupRollbackEnabledDefault(guildId, powerup, "GuildPowerupsSinglePerkCard");
   obj = { title: powerup.title, description: powerup.description, cost: powerup.cost, imageUrl: null, status: null, onPress: null, badge: null };
-  const tmp4 = importDefault(11736)(guildId, powerup);
+  const tmp4 = useGuildPowerupOnShowMoreDefault(guildId, powerup);
   const tmp5 = jsx;
   if (str == null) {
     str = "";
@@ -30,5 +35,5 @@ export default function GuildPowerupsSinglePerkCard(badge) {
   obj[4] = calculatePowerupCardStatus;
   obj[5] = tmp4;
   obj[6] = badge.badge;
-  return tmp5(importDefault(11740), obj);
+  return tmp5(GuildPowerupsPerkCardDefault, obj);
 };

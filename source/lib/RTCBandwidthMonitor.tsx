@@ -1,10 +1,13 @@
-// Module ID: 5065
-// Function ID: 5066
+// Module ID: 5070
+// Function ID: 5071
 // Name: create
 // Dependencies: [12, 2]
 // Exports: getRTCTotalBytes
 
-// Module 5065 (create)
+// Module 5070 (create)
+import set from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+
 let closure_2 = [];
 let RTCBandwidthMonitor;
 class RTCBandwidthMonitor {
@@ -122,11 +125,11 @@ RTCBandwidthMonitor["create"] = function create() {
   return obj.record;
 };
 RTCBandwidthMonitor.prototype["getTotalBytes"] = function getTotalBytes() {
-  return importDefault(12).sum(Object.values(this.bytes));
+  return applyDefault.sum(Object.values(this.bytes));
 };
-const result = require("set").fileFinishedImporting("lib/RTCBandwidthMonitor.tsx");
+const result = set.fileFinishedImporting("lib/RTCBandwidthMonitor.tsx");
 
 export default RTCBandwidthMonitor;
 export const getRTCTotalBytes = function getRTCTotalBytes() {
-  return importDefault(12).sum(arr.map((getTotalBytes) => getTotalBytes.getTotalBytes()));
+  return applyDefault.sum(arr.map((getTotalBytes) => getTotalBytes.getTotalBytes()));
 };

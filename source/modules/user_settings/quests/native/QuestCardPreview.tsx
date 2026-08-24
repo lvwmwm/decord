@@ -1,28 +1,30 @@
-// Module ID: 14523
-// Function ID: 14524
+// Module ID: 14591
+// Function ID: 14592
 // Name: QuestCardPreview
-// Dependencies: [21, 10957, 6719, 14524, 1236, 14442, 712, 2]
+// Dependencies: [21, 10996, 6756, 14592, 1236, 14510, 712, 2]
 // Exports: QuestCardPreview
 
-// Module 14523 (QuestCardPreview)
-import { jsx } from "jsxProd";
+// Module 14591 (QuestCardPreview)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-const result = require("QuestsVisibleMessagesChangedSource").fileFinishedImporting("modules/user_settings/quests/native/QuestCardPreview.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("modules/user_settings/quests/native/QuestCardPreview.tsx");
 
 export const QuestCardPreview = function QuestCardPreview(quest) {
   quest = quest.quest;
-  let obj = { questOrQuests: quest, questContent: null, sourceQuestContent: null, trackGuildAndChannelMetadata: false, children: null };
-  obj[1] = quest(6719).QuestContent.INTERNAL_PREVIEW_TOOL;
-  obj[2] = quest(6719).QuestContent.INTERNAL_PREVIEW_TOOL;
-  obj[4] = function children() {
-    let obj = { title: null, children: null };
-    const intl = quest(outer1_2[4]).intl;
-    obj[0] = intl.string(quest(outer1_2[4]).t.BDUDau);
-    obj = { quest, containerPadding: null, sourceQuestContent: null };
-    obj[1] = outer1_1(outer1_2[6]).space.PX_16;
-    obj[2] = quest(outer1_2[2]).QuestContent.INTERNAL_PREVIEW_TOOL;
-    obj[1] = outer1_3(quest(outer1_2[5]).QuestCard, obj);
-    return outer1_3(outer1_1(outer1_2[3]), obj);
-  };
-  return jsx(quest(10957).QuestContentImpressionTrackerNative, { questOrQuests: quest, questContent: null, sourceQuestContent: null, trackGuildAndChannelMetadata: false, children: null });
+  return jsx(quest(10996).QuestContentImpressionTrackerNative, {
+    questOrQuests: quest,
+    questContent: quest(6756).QuestContent.INTERNAL_PREVIEW_TOOL,
+    sourceQuestContent: quest(6756).QuestContent.INTERNAL_PREVIEW_TOOL,
+    trackGuildAndChannelMetadata: false,
+    children() {
+      let obj = { title: null, children: null };
+      const intl = quest(closure_1_2[4]).intl;
+      obj[0] = intl.string(quest(closure_1_2[4]).t.BDUDau);
+      obj = { quest, containerPadding: closure_1_1(closure_1_2[6]).space.PX_16, sourceQuestContent: quest(closure_1_2[2]).QuestContent.INTERNAL_PREVIEW_TOOL };
+      obj[1] = closure_1_3(quest(closure_1_2[5]).QuestCard, obj);
+      return closure_1_3(closure_1_1(closure_1_2[3]), obj);
+    }
+  });
 };

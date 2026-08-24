@@ -1,11 +1,13 @@
-// Module ID: 12409
-// Function ID: 12410
+// Module ID: 12461
+// Function ID: 12462
 // Name: isRemainingUsersGroup
 // Dependencies: [2]
 // Exports: isRemainingUsersGroup
 
-// Module 12409 (isRemainingUsersGroup)
-const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/native/components/event_detail/EventDetailTypes.tsx");
+// Module 12461 (isRemainingUsersGroup)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/guild_scheduled_events/native/components/event_detail/EventDetailTypes.tsx");
 
 export const isRemainingUsersGroup = function isRemainingUsersGroup(item) {
   return undefined !== item.count;

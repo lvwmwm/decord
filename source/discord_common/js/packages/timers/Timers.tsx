@@ -1,11 +1,11 @@
-// Module ID: 4259
-// Function ID: 4260
+// Module ID: 4263
+// Function ID: 4264
 // Name: start
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 4259 (start)
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 4263 (start)
+import closure_0 from "asyncGeneratorStep" /* 5 */;
 
 class Timeout {
 }
@@ -13,7 +13,7 @@ const prototype = Timeout.prototype;
 prototype["start"] = function start(arg0, arg1) {
   let self = this;
   self = this;
-  let asyncGeneratorStep = arg1;
+  closure_0 = arg1;
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
@@ -106,7 +106,7 @@ class BatchInvocationManager {
       obj = {};
     }
     obj = Object.create(new.target.prototype);
-    asyncGeneratorStep = obj;
+    closure_0 = obj;
     set = new Set();
     obj._promises = set;
     set1 = new Set();
@@ -194,7 +194,7 @@ prototype5["queue"] = function queue(arg0) {
 prototype5["reset"] = function reset() {
   const items = [...this._pending];
   const items1 = [...this._promises];
-  let asyncGeneratorStep = new prototype3("BatchInvocationManager was reset");
+  closure_0 = new prototype3("BatchInvocationManager was reset");
   const _pending = this._pending;
   _pending.clear();
   const _promises = this._promises;
@@ -207,7 +207,7 @@ prototype5["reset"] = function reset() {
       onCancelled(items);
     }
   }
-  const item = items1.forEach((reject) => reject.reject(asyncGeneratorStep));
+  const item = items1.forEach((reject) => reject.reject(closure_0));
 };
 prototype5["_flush"] = function _flush() {
   const self = this;
@@ -223,7 +223,7 @@ prototype5["_flush"] = function _flush() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -238,29 +238,29 @@ prototype5["_flush"] = function _flush() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_2 = tmp6;
+            closure_2 = tmp6;
             let items1;
             items1 = 0;
             const items = [];
-            items1 = HermesBuiltin.arraySpread(outer1_0._pending, items1);
-            const _pending = outer1_0._pending;
+            items1 = HermesBuiltin.arraySpread(closure_1_0._pending, items1);
+            const _pending = closure_1_0._pending;
             _pending.clear();
-            let closure_1 = 0;
+            closure_1 = 0;
             items1 = [];
-            closure_1 = HermesBuiltin.arraySpread(outer1_0._promises, closure_1);
-            const _promises = outer1_0._promises;
+            closure_1 = HermesBuiltin.arraySpread(closure_1_0._promises, closure_1);
+            const _promises = closure_1_0._promises;
             _promises.clear();
             if (0 !== items.length) {
-              let c5 = 1;
+              c5 = 1;
               c3 = 2;
               c6 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = obj5.invoke(items);
               return obj1;
             } else {
               const item = items1.forEach((resolve) => resolve.resolve());
             }
-            obj5 = outer1_0;
+            obj5 = closure_1_0;
           }
         } else {
           if (1 === tmp6) {
@@ -298,10 +298,10 @@ export { Timeout };
 export { DelayedCall };
 export { Interval };
 export const timeoutPromise = function timeoutPromise(arg0) {
-  let asyncGeneratorStep = arg0;
+  closure_0 = arg0;
   return new Promise((arg0) => {
-    let asyncGeneratorStep = arg0;
-    const timerId = setTimeout(() => callback(), asyncGeneratorStep);
+    closure_0 = arg0;
+    const timerId = setTimeout(() => callback(), closure_0);
   });
 };
 export const DEFAULT_BATCH_INVOCATION_DELAY_MS = 32;

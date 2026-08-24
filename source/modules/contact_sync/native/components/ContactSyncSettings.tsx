@@ -1,26 +1,20 @@
-// Module ID: 14201
-// Function ID: 14202
+// Module ID: 14269
+// Function ID: 14270
 // Name: syncContacts
-// Dependencies: [5, 19, 1922, 11852, 676, 21, 11853, 4094, 1236, 8555, 11857, 698, 11849, 589, 4066, 1403, 8083, 5260, 14202, 2007, 2]
+// Dependencies: [5, 19, 1922, 11901, 676, 21, 11902, 4097, 1236, 8594, 11906, 698, 11898, 589, 4069, 1403, 8122, 5265, 14270, 2008, 2]
 // Exports: default, handleSyncContacts
 
-// Module 14201 (syncContacts)
-import closure_3 from "jsxProd";
-import "asyncRequireImpl";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import setStoredContacts from "setStoredContacts";
-import ME from "ME";
-import jsxProd from "jsxProd";
+// Module 14269 (syncContacts)
+import noopAll from "noop" /* 19 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import handleNameInputScreenOrSuggestions from "handleNameInputScreenOrSuggestions" /* 11898 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import setStoredContacts from "setStoredContacts" /* 11901 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c10;
-let c5;
-let c9;
-let closure_12;
-let closure_6;
-let error;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function syncContacts(closure_1, closure_0, arg2) {
   const self = this;
   const apply = _syncContacts.apply;
@@ -34,12 +28,12 @@ function syncContacts(closure_1, closure_0, arg2) {
 function _syncContacts() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c8 === 2) {
         c8 = 3;
@@ -52,7 +46,7 @@ function _syncContacts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -67,12 +61,12 @@ function _syncContacts() {
               obj[0] = arg1;
               return obj;
             } else {
-              let mergeGuildAvatar = tmp3;
-              let closure_3 = tmp5;
+              closure_4 = tmp3;
+              closure_3 = tmp5;
               let lib;
               let names;
               let payload;
-              outer1_5();
+              closure_1_5();
               if (payload) {
                 if (null != tmp44) {
                   if (null != tmp45) {
@@ -80,7 +74,7 @@ function _syncContacts() {
                     let obj4 = lib(table[6]);
                     c7 = 2;
                     c8 = 1;
-                    let obj1 = { value: null, done: false };
+                    obj1 = { value: null, done: false };
                     obj1[0] = obj4.getContacts(tmp45);
                     return obj1;
                   }
@@ -146,7 +140,7 @@ function _syncContacts() {
       }
     })();
   });
-  const _syncContacts = tmp;
+  closure_14 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -168,12 +162,12 @@ function updateFriendSync(localAccount, phone, arg2) {
 function _updateFriendSync() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c8 === 2) {
         c8 = 3;
@@ -186,7 +180,7 @@ function _updateFriendSync() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -201,12 +195,12 @@ function _updateFriendSync() {
               obj[0] = arg1;
               return obj;
             } else {
-              let mergeGuildAvatar = tmp3;
-              let closure_3 = tmp5;
+              closure_4 = tmp3;
+              closure_3 = tmp5;
               if (null != callback) {
-                let c6 = 1;
-                let obj5 = callback2(11857);
-                const obj1 = { enabled: null };
+                c6 = 1;
+                let obj5 = callback2(11906);
+                obj1 = { enabled: null };
                 obj1[0] = tmp38;
                 c7 = 2;
                 c8 = 1;
@@ -218,11 +212,11 @@ function _updateFriendSync() {
           } else {
             if (1 === tmp8) {
               c6 = 0;
-              let obj3 = callback2(4094);
+              let obj3 = callback2(4097);
               obj3 = { key: "CONTACT_SYNC_FAILED_ALERT_TITLE", content: null, icon: null };
               const intl = callback(1236).intl;
               obj3[1] = intl.string(callback(1236).t.GCwBtE);
-              obj3[2] = callback2(8555);
+              obj3[2] = callback2(8594);
               obj3.open(obj3);
             } else if (2 === tmp8) {
               if (arg0 === 1) {
@@ -255,7 +249,7 @@ function _updateFriendSync() {
           }
           c8 = 3;
         } catch (tmp27) {
-          let closure_5 = tmp27;
+          closure_5 = tmp27;
           if (tmp4 === c6) {
             c8 = tmp2;
             throw tmp27;
@@ -266,7 +260,7 @@ function _updateFriendSync() {
       }
     })();
   });
-  const _updateFriendSync = tmp;
+  closure_16 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -275,16 +269,17 @@ function _updateFriendSync() {
   }
   return applyArgumentsResult;
 }
+noopAll;
 ({ deleteStoredContacts: c5, setStoredContacts: closure_6 } = setStoredContacts);
-({ AnalyticEvents: error, FriendDiscoveryFlags: metroImportAll, AnalyticsSections: c9 } = ME);
+({ AnalyticEvents: error, FriendDiscoveryFlags: closure_8, AnalyticsSections: c9 } = ME);
 ({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncSettings.tsx");
+let result = require("set").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncSettings.tsx");
 
 export default function ContactSyncSettings() {
-  let obj = contactSyncAccount(11853);
+  let obj = contactSyncAccount(11902);
   contactSyncAccount = obj.useContactSyncAccount();
-  let obj1 = contactSyncAccount(589);
-  const items = [mergeGuildAvatar];
+  obj1 = contactSyncAccount(589);
+  const items = [closure_4];
   const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
   let phone;
   if (stateFromStores != null) {
@@ -294,12 +289,12 @@ export default function ContactSyncSettings() {
   if (stateFromStores != null) {
     isStaffResult = stateFromStores.isStaff();
   }
-  let tmpResult = tmp(11853);
-  const FriendDiscoverySettings = tmp(4066).FriendDiscoverySettings;
+  let tmpResult = tmp(11902);
+  const FriendDiscoverySettings = tmp(4069).FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
   tmpResult = tmp(1403);
   const hasFlagResult = tmpResult.hasFlag(setting, constants2.FIND_BY_PHONE);
-  const dependencyMap = hasFlagResult;
+  dependencyMap = hasFlagResult;
   const isContactSyncEnabledResult = tmpResult.isContactSyncEnabled(contactSyncAccount);
   const hasFlagResult1 = contactSyncAccount(1403).hasFlag(setting, constants2.FIND_BY_EMAIL);
   obj = { title: null, children: null };
@@ -309,8 +304,8 @@ export default function ContactSyncSettings() {
   if (isStaffResult) {
     obj = { children: null };
     obj1 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: null };
-    obj1[2] = tmp(11853).adminDeleteContactSync;
-    const items1 = [callback2(tmp(8083).FormSwitchRow, obj1), callback2(tmp(8083).FormDivider, {})];
+    obj1[2] = tmp(11902).adminDeleteContactSync;
+    const items1 = [callback2(tmp(8122).FormSwitchRow, obj1), callback2(tmp(8122).FormDivider, {})];
     obj[0] = items1;
     tmp10Result = tmp10(tmp11, obj);
   }
@@ -323,49 +318,48 @@ export default function ContactSyncSettings() {
     if (null == contactSyncAccount) {
       let obj = phone(hasFlagResult[11]);
       obj = { type: null, location: null };
-      obj[0] = outer1_9.CONTACT_SYNC_MODAL;
+      obj[0] = closure_1_9.CONTACT_SYNC_MODAL;
       obj[1] = { page: "User Settings" };
-      obj.track(outer1_7.OPEN_MODAL, obj);
+      obj.track(closure_1_7.OPEN_MODAL, obj);
       contactSyncAccount(hasFlagResult[12]).openContactSyncModal({}, { page: "User Settings" });
       const obj3 = contactSyncAccount(hasFlagResult[12]);
     } else {
-      outer1_15(tmp, tmp2, arg0);
+      closure_1_15(tmp, tmp2, arg0);
     }
   };
-  items2[1] = callback2(contactSyncAccount(8083).FormSwitchRow, obj2);
+  items2[1] = callback2(contactSyncAccount(8122).FormSwitchRow, obj2);
   tmp10Result = null;
   if (null != contactSyncAccount) {
     let obj3 = { children: null };
-    const items3 = [tmp14(tmp(8083).FormDivider, {}), ];
+    const items3 = [tmp14(tmp(8122).FormDivider, {}), ];
     const obj4 = { label: null, trailing: null, onPress: null };
     const intl3 = tmp(1236).intl;
     obj4[0] = intl3.string(tmp(1236).t.nAsWKy);
     const obj5 = { label: null };
     obj5[0] = contactSyncAccount.name;
-    obj4[1] = tmp14(tmp(8083).FormRow.Arrow, obj5);
+    obj4[1] = tmp14(tmp(8122).FormRow.Arrow, obj5);
     obj4[2] = function onPress() {
       phone(hasFlagResult[11]).track(constants.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
       const obj = phone(hasFlagResult[11]);
       phone(hasFlagResult[17]).pushLazy(contactSyncAccount(hasFlagResult[19])(hasFlagResult[18], hasFlagResult.paths), "Contact Sync Name Update Modal");
     };
-    items3[1] = tmp14(tmp(8083).FormRow, obj4);
+    items3[1] = tmp14(tmp(8122).FormRow, obj4);
     obj3[0] = items3;
     tmp10Result = tmp10(tmp11, obj3);
   }
   const obj6 = { children: null };
   items2[2] = tmp10Result;
   obj[1] = items2;
-  const items4 = [closure_12(contactSyncAccount(8083).FormSection, obj), , , ];
+  const items4 = [closure_12(contactSyncAccount(8122).FormSection, obj), , , ];
   const obj7 = { children: null };
   const intl4 = tmp(1236).intl;
-  const obj8 = { onClick: null };
-  obj8[0] = contactSyncAccount(11853).handleOpenLearnMoreLink;
-  obj7[0] = intl4.format(contactSyncAccount(1236).t.BoR0dO, obj8);
-  items4[1] = callback2(contactSyncAccount(8083).FormHint, obj7);
+  const tmpResult1 = contactSyncAccount(1403);
+  obj7[0] = intl4.format(contactSyncAccount(1236).t.BoR0dO, { onClick: contactSyncAccount(11902).handleOpenLearnMoreLink });
+  items4[1] = callback2(contactSyncAccount(8122).FormHint, obj7);
   const obj9 = { children: null };
   const intl5 = tmp(1236).intl;
   obj9[0] = intl5.string(contactSyncAccount(1236).t.cW1nr9);
-  items4[2] = callback2(contactSyncAccount(8083).FormHint, obj9);
+  items4[2] = callback2(contactSyncAccount(8122).FormHint, obj9);
   const obj10 = { title: null, children: null };
   const intl6 = tmp(1236).intl;
   obj10[0] = intl6.string(contactSyncAccount(1236).t["0t2wRW"]);
@@ -380,7 +374,7 @@ export default function ContactSyncSettings() {
     obj = { phone, email: hasFlagResult1 };
     const result = obj.updateDiscoverability(obj);
   };
-  const items5 = [callback2(contactSyncAccount(8083).FormSwitchRow, obj11), callback2(contactSyncAccount(8083).FormDivider, {}), ];
+  const items5 = [callback2(contactSyncAccount(8122).FormSwitchRow, obj11), callback2(contactSyncAccount(8122).FormDivider, {}), ];
   const obj12 = { label: null, subLabel: null, value: null, onValueChange: null };
   const intl9 = tmp(1236).intl;
   obj12[0] = intl9.string(contactSyncAccount(1236).t.dI4d4S);
@@ -392,9 +386,9 @@ export default function ContactSyncSettings() {
     obj = { phone: closure_2, email };
     const result = obj.updateDiscoverability(obj);
   };
-  items5[2] = callback2(contactSyncAccount(8083).FormSwitchRow, obj12);
+  items5[2] = callback2(contactSyncAccount(8122).FormSwitchRow, obj12);
   obj10[1] = items5;
-  items4[3] = closure_12(contactSyncAccount(8083).FormSection, obj10);
+  items4[3] = closure_12(contactSyncAccount(8122).FormSection, obj10);
   obj6[0] = items4;
   return closure_12(closure_11, obj6);
 };
@@ -402,13 +396,13 @@ export { syncContacts };
 export { updateFriendSync };
 export const handleSyncContacts = function handleSyncContacts(localAccount, phone, arg2) {
   if (null == localAccount) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     obj = { type: null, location: null };
     obj[0] = constants3.CONTACT_SYNC_MODAL;
     obj[1] = { page: "User Settings" };
     obj.track(constants.OPEN_MODAL, obj);
-    require(11849) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, { page: "User Settings" });
-    const obj3 = require(11849) /* handleNameInputScreenOrSuggestions */;
+    handleNameInputScreenOrSuggestions.openContactSyncModal({}, { page: "User Settings" });
+    const obj3 = handleNameInputScreenOrSuggestions;
   } else {
     updateFriendSync(localAccount, phone, arg2);
   }

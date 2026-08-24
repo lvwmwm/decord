@@ -4,20 +4,20 @@
 // Dependencies: [70, 71, 72, 49]
 
 // Module 69 (RN$LegacyInterop_UIManager_getConstants)
-let error;
-let metroImportAll;
+import nullthrowsDefault from "nullthrows" /* 70 */;
+
 let c0 = arg1;
 let c1 = importDefault;
 const RN$LegacyInterop_UIManager_getConstants = global.RN$LegacyInterop_UIManager_getConstants;
 let c3 = false;
 let closure_4 = {};
-const f17568 = () => {
+const f17662 = () => {
 
 };
-({ RN$LegacyInterop_UIManager_getConstantsForViewManager: error, RN$LegacyInterop_UIManager_getDefaultEventTypes: metroImportAll } = global);
+({ RN$LegacyInterop_UIManager_getConstantsForViewManager: error, RN$LegacyInterop_UIManager_getDefaultEventTypes: closure_8 } = global);
 c0 = false;
 c1 = null;
-const f66262 = () => {
+const f66818 = () => {
 
 };
 let obj = {};
@@ -42,7 +42,7 @@ const merged = Object.assign(obj);
 obj = {
   getConstantsForViewManager(arg0) {
     if (closure_7) {
-      let obj = tmp(arg0);
+      obj = tmp(arg0);
     } else {
       const _console = console;
       const _HermesInternal = HermesInternal;
@@ -53,11 +53,11 @@ obj = {
   },
   getDefaultEventTypes() {
     if (closure_8) {
-      if (typeof f66262 !== "function") {
+      if (typeof f66818 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       if (!c0) {
-        let closure_1 = _null(70)(outer1_8)();
+        closure_1 = _null(70)(closure_1_8)();
         c0 = true;
       }
       let items = closure_1;
@@ -123,11 +123,11 @@ const merged2 = Object.assign({
 });
 obj.getViewManagerConfig = function getViewManagerConfig(arg0) {
   if (RN$LegacyInterop_UIManager_getConstants) {
-    if (typeof f17568 !== "function") {
+    if (typeof f17662 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     if (!c3) {
-      const dependencyMap = _null(70)(tmp)();
+      dependencyMap = _null(70)(tmp)();
       c3 = true;
     }
     let getConstantsForViewManager = !tmp15;
@@ -159,11 +159,11 @@ obj.hasViewManagerConfig = function hasViewManagerConfig(arg0) {
 };
 obj.getConstants = function getConstants() {
   if (RN$LegacyInterop_UIManager_getConstants) {
-    if (typeof f17568 !== "function") {
+    if (typeof f17662 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     if (!c3) {
-      let closure_4 = _null(70)(tmp)();
+      closure_4 = _null(70)(tmp)();
       c3 = true;
     }
     let tmp4 = closure_4;
@@ -187,7 +187,7 @@ obj.findSubviewIn = function findSubviewIn(arg0, arg1, arg2) {
         const node = stateNode.stateNode.node;
         if (node) {
           const nativeTag = stateNode.stateNode.canonical.nativeTag;
-          tmpResult.measure(node, (arg0, arg1, arg2, arg3, arg4, arg5) => {
+          closure_1.measure(node, (arg0, arg1, arg2, arg3, arg4, arg5) => {
             nativeTag(nativeTag, arg4, arg5, arg2, arg3);
           });
         } else {
@@ -227,21 +227,21 @@ obj.viewIsDescendantOf = function viewIsDescendantOf(arg0, arg1, arg2) {
 };
 obj.configureNextLayoutAnimation = function configureNextLayoutAnimation(duration, onAnimationComplete, fn) {
   const tmp = _null(70);
-  const obj = callback(71);
+  obj = callback(71);
   const result = tmp(callback(71).getFabricUIManager()).configureNextLayoutAnimation(duration, onAnimationComplete, fn);
 };
 if (RN$LegacyInterop_UIManager_getConstants) {
   if (!c3) {
-    closure_4 = require("nullthrows")(RN$LegacyInterop_UIManager_getConstants)();
+    closure_4 = nullthrowsDefault(RN$LegacyInterop_UIManager_getConstants)();
     c3 = true;
   }
   const keys = Object.keys(closure_4);
   const item = keys.forEach((arg0) => {
-    if (typeof f17568 !== "function") {
+    if (typeof f17662 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     if (!c3) {
-      const dependencyMap = _null(70)(RN$LegacyInterop_UIManager_getConstants)();
+      dependencyMap = _null(70)(RN$LegacyInterop_UIManager_getConstants)();
       c3 = true;
     }
     obj[arg0] = dependencyMap[arg0];
@@ -249,10 +249,10 @@ if (RN$LegacyInterop_UIManager_getConstants) {
   if (obj.getConstants().ViewManagerNames) {
     const ViewManagerNames = obj.getConstants().ViewManagerNames;
     const item1 = ViewManagerNames.forEach((arg0) => {
-      let closure_0 = arg0;
-      const obj = {
+      closure_0 = arg0;
+      obj = {
         get() {
-          return outer1_1(outer1_2[0])(outer1_10.getConstantsForViewManager)(closure_0);
+          return closure_1_1(closure_1_2[0])(closure_1_10.getConstantsForViewManager)(closure_0);
         }
       };
       _null(49)(obj, arg0, obj);

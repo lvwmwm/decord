@@ -1,10 +1,12 @@
-// Module ID: 15932
-// Function ID: 15933
+// Module ID: 16029
+// Function ID: 16030
 // Name: CachedSearchResultParser
 // Dependencies: [2]
 
-// Module 15932 (CachedSearchResultParser)
-let result = require("set").fileFinishedImporting("modules/search/native/message_parsers/CachedSearchResultParser.tsx");
+// Module 16029 (CachedSearchResultParser)
+import set from "set" /* 2 */;
+
+let result = set.fileFinishedImporting("modules/search/native/message_parsers/CachedSearchResultParser.tsx");
 
 export const CachedSearchResultParser = function CachedSearchResultParser() {
   const obj = Object.create(new.target.prototype);

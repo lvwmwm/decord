@@ -1,13 +1,16 @@
-// Module ID: 5381
-// Function ID: 5382
+// Module ID: 5386
+// Function ID: 5387
 // Name: getTieredTenureBadgeData
-// Dependencies: [1924, 3975, 2]
+// Dependencies: [1924, 3978, 2]
 // Exports: getEarnedOnDate, getTieredTenureBadge, getTieredTenureBadgeData
 
-// Module 5381 (getTieredTenureBadgeData)
-import { TENURE_BADGES } from "GuildFeatures";
+// Module 5386 (getTieredTenureBadgeData)
+import set from "set" /* 2 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import tDefault from "t" /* 3978 */;
 
-const result = require("set").fileFinishedImporting("modules/user_profile/TieredTenureBadgeUtils.tsx");
+const TENURE_BADGES = GuildFeatures.TENURE_BADGES;
+const result = set.fileFinishedImporting("modules/user_profile/TieredTenureBadgeUtils.tsx");
 
 export const getTieredTenureBadgeData = function getTieredTenureBadgeData(tieredTenureBadge) {
   return TENURE_BADGES[tieredTenureBadge];
@@ -25,7 +28,7 @@ export const getEarnedOnDate = function getEarnedOnDate(tieredTenureBadgeForUser
   } else if (null == TENURE_BADGES[tieredTenureBadgeForUser]) {
     return null;
   } else {
-    const obj = importDefault(3975)(premiumSince);
+    const obj = tDefault(premiumSince);
     obj.add(tmp3.tenureReqNumMonths, "months");
     obj.add(1, "days");
     return obj.toDate();

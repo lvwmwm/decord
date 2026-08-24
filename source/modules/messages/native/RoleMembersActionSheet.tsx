@@ -1,55 +1,54 @@
-// Module ID: 10784
-// Function ID: 10785
+// Module ID: 10823
+// Function ID: 10824
 // Name: RoleMembersActionSheet
-// Dependencies: [19, 17, 4662, 7249, 1983, 21, 4661, 712, 11, 6929, 589, 6927, 1297, 4734, 6950, 10785, 2]
+// Dependencies: [19, 17, 4669, 7287, 1984, 21, 4668, 712, 11, 6967, 589, 6965, 1297, 4739, 6988, 10824, 2]
 // Exports: default
 
-// Module 10784 (RoleMembersActionSheet)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { EVERYONE_CHANNEL_ID } from "getMemberListId";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10823 (RoleMembersActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { EVERYONE_CHANNEL_ID } from "getMemberListId" /* 7287 */;
+import closure_7 from "createGuildRoleRecordFromRust" /* 1984 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
 const require = arg1;
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { header: null, headerText: null, roleDot: null, memberCount: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4, paddingTop: require("Themes").space.PX_12, paddingBottom: require("Themes").space.PX_4, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4, paddingTop: ThemesDefault.space.PX_12, paddingBottom: ThemesDefault.space.PX_4, paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flex: 1 };
 createCacheKey[2] = { paddingTop: 0 };
-createCacheKey[3] = { color: require("Themes").colors.TEXT_MUTED };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { color: require("Themes").colors.TEXT_MUTED };
-let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/messages/native/RoleMembersActionSheet.tsx");
+createCacheKey[3] = { color: ThemesDefault.colors.TEXT_MUTED };
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { color: ThemesDefault.colors.TEXT_MUTED };
+let result = require("set").fileFinishedImporting("modules/messages/native/RoleMembersActionSheet.tsx");
 
 export default function RoleMembersActionSheet(guildId) {
   guildId = guildId.guildId;
   const roleId = guildId.roleId;
   let channelId = guildId.channelId;
-  let dependencyMap;
+  dependencyMap = undefined;
   let stateFromStores;
-  let c4;
-  let c5;
-  const tmp = createCacheKey();
+  closure_4 = undefined;
+  c5 = undefined;
+  const tmp = callback();
   dependencyMap = tmp;
   let items = [guildId, roleId];
   const effect = stateFromStores.useEffect(() => {
     if (roleId !== obj.castGuildIdAsEveryoneGuildRoleId(guildId)) {
-      const membersForRole = guildId(_undefined[9]).requestMembersForRole(guildId, roleId);
-      const obj2 = guildId(_undefined[9]);
+      const membersForRole = guildId(header[9]).requestMembersForRole(guildId, roleId);
+      const obj2 = guildId(header[9]);
     }
   }, items);
   let obj = guildId(589);
-  const items1 = [createGuildRoleRecordFromRust];
+  const items1 = [closure_7];
   const items2 = [guildId, roleId];
-  stateFromStores = obj.useStateFromStores(items1, () => outer1_7.getRole(guildId, roleId), items2);
+  stateFromStores = obj.useStateFromStores(items1, () => closure_1_7.getRole(guildId, roleId), items2);
   const items3 = [c5];
-  let tmp6 = "dot" === guildId(589).useStateFromStores(items3, () => _undefined2.roleStyle);
+  let tmp6 = "dot" === guildId(589).useStateFromStores(items3, () => _null.roleStyle);
   if (tmp6) {
     let colorString;
     if (stateFromStores != null) {
@@ -57,12 +56,12 @@ export default function RoleMembersActionSheet(guildId) {
     }
     tmp6 = null != colorString;
   }
-  c4 = tmp6;
+  closure_4 = tmp6;
   let obj2 = guildId(589);
   const tmp3 = guildId;
   const tmp9 = roleId;
   const result = roleId(11).castGuildIdAsEveryoneGuildRoleId(guildId);
-  const tmp11 = roleId(6927)(guildId);
+  const tmp11 = roleId(6965)(guildId);
   let tmp12 = null;
   if (roleId !== result) {
     let tmp13;
@@ -87,9 +86,9 @@ export default function RoleMembersActionSheet(guildId) {
     }
     obj[1] = channelId;
     obj[2] = roleId;
-    obj[2] = closure_8(tmp9(10785), obj);
-    tmp16Result = tmp16(tmp3(6950).BottomSheet, obj);
-    let tmp9Result = tmp9(10785);
+    obj[2] = closure_8(tmp9(10824), obj);
+    tmp16Result = tmp16(tmp3(6988).BottomSheet, obj);
+    let tmp9Result = tmp9(10824);
   }
   return tmp16Result;
 };

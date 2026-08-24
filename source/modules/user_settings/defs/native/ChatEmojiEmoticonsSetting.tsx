@@ -1,29 +1,33 @@
-// Module ID: 14777
-// Function ID: 14778
+// Module ID: 14841
+// Function ID: 14842
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 4066, 2]
+// Dependencies: [8238, 10708, 1236, 4069, 2]
 
-// Module 14777 (toggle)
-import createToggle from "createToggle";
+// Module 14841 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["79qal8"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["79qal8"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
-  useValue: require("explicitContentFromProto").ConvertEmoticons.useSetting,
-  onValueChange: require("explicitContentFromProto").ConvertEmoticons.updateSetting
+  parent: MobileUserSettings.MobileUserSettings.CHAT,
+  useValue: explicitContentFromProto.ConvertEmoticons.useSetting,
+  onValueChange: explicitContentFromProto.ConvertEmoticons.updateSetting
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["79qal8"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["79qal8"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
-  useValue: require("explicitContentFromProto").ConvertEmoticons.useSetting,
-  onValueChange: require("explicitContentFromProto").ConvertEmoticons.updateSetting
+  parent: MobileUserSettings.MobileUserSettings.CHAT,
+  useValue: explicitContentFromProto.ConvertEmoticons.useSetting,
+  onValueChange: explicitContentFromProto.ConvertEmoticons.updateSetting
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/ChatEmojiEmoticonsSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ChatEmojiEmoticonsSetting.tsx");
 
 export default toggle;

@@ -1,54 +1,45 @@
-// Module ID: 12398
-// Function ID: 12399
+// Module ID: 12450
+// Function ID: 12451
 // Name: ImageButton
-// Dependencies: [19, 17, 21, 4661, 4749, 712, 4750, 4115, 4744, 4748, 4752, 8036, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 4754, 712, 4755, 4119, 4749, 4753, 4757, 8075, 4739, 2]
 
-// Module 12398 (ImageButton)
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12450 (ImageButton)
+import ThemesDefault from "Themes" /* 712 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4754 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles((arg0, arg1, arg2) => {
-  let MEDIUM_BUTTON_PADDING = require(4749) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_PADDING;
+  let MEDIUM_BUTTON_PADDING = MINIMUM_HIT_AREA.LARGE_BUTTON_PADDING;
   if ("sm" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(4749).SMALL_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(4754).SMALL_BUTTON_PADDING;
   } else if ("md" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(4749).MEDIUM_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(4754).MEDIUM_BUTTON_PADDING;
   }
   const sum = arg1 + 2 * MEDIUM_BUTTON_PADDING;
-  const buttonBorderRadius = require(4749) /* MINIMUM_HIT_AREA */.getButtonBorderRadius(arg0);
-  let obj = { paddingBottom: importDefault(712).space.PX_4, gap: importDefault(712).space.PX_8, alignItems: "center", alignSelf: "center", flexGrow: null };
+  const buttonBorderRadius = MINIMUM_HIT_AREA.getButtonBorderRadius(arg0);
+  let obj = { paddingBottom: ThemesDefault.space.PX_4, gap: ThemesDefault.space.PX_8, alignItems: "center", alignSelf: "center", flexGrow: null };
   let num = 0;
   if (arg2) {
     num = 1;
   }
-  obj = { labelPressable: obj, pill: null, imageWrapper: null, image: null, imageDim: null };
-  obj[4] = num;
-  const tmpResult = require(4749) /* MINIMUM_HIT_AREA */;
-  obj[1] = { paddingHorizontal: 0, paddingVertical: 0, minHeight: sum, minWidth: sum, borderRadius: buttonBorderRadius, borderWidth: 0, outlineWidth: require(4749) /* MINIMUM_HIT_AREA */.BUTTON_BORDER_WIDTH, outlineColor: importDefault(712).colors.CONTROL_SECONDARY_BORDER_DEFAULT, outlineStyle: "solid" };
+  obj = { labelPressable: obj, pill: null, imageWrapper: null, image: null, imageDim: num };
+  const tmpResult = MINIMUM_HIT_AREA;
+  obj[1] = { paddingHorizontal: 0, paddingVertical: 0, minHeight: sum, minWidth: sum, borderRadius: buttonBorderRadius, borderWidth: 0, outlineWidth: MINIMUM_HIT_AREA.BUTTON_BORDER_WIDTH, outlineColor: ThemesDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT, outlineStyle: "solid" };
   obj[2] = { width: sum, height: sum, position: "relative" };
   obj[3] = { width: sum, height: sum };
-  const obj1 = { paddingHorizontal: 0, paddingVertical: 0, minHeight: sum, minWidth: sum, borderRadius: buttonBorderRadius, borderWidth: 0, outlineWidth: require(4749) /* MINIMUM_HIT_AREA */.BUTTON_BORDER_WIDTH, outlineColor: importDefault(712).colors.CONTROL_SECONDARY_BORDER_DEFAULT, outlineStyle: "solid" };
-  obj[4] = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: importDefault(712).colors.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND, borderRadius: buttonBorderRadius };
+  obj1 = { paddingHorizontal: 0, paddingVertical: 0, minHeight: sum, minWidth: sum, borderRadius: buttonBorderRadius, borderWidth: 0, outlineWidth: MINIMUM_HIT_AREA.BUTTON_BORDER_WIDTH, outlineColor: ThemesDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT, outlineStyle: "solid" };
+  obj[4] = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: ThemesDefault.colors.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND, borderRadius: buttonBorderRadius };
   return obj;
 });
 let closure_9 = { code: "function ImageButtonNativeTsx1(){const{withSpring,pressed,ON_PRESS_SPRING}=this.__closure;return{opacity:withSpring(pressed.get()===1?1:0,ON_PRESS_SPRING,'animate-always')};}" };
 const forwardRefResult = importAllResult.forwardRef((size) => {
-  let accessibilityLabel;
-  let grow;
-  let image;
-  let label;
-  let maxFontSizeMultiplier;
-  let onPressIn;
   let str = size.size;
   if (str === undefined) {
     str = "lg";
@@ -60,7 +51,7 @@ const forwardRefResult = importAllResult.forwardRef((size) => {
   let sharedValue;
   let obj = onPressIn(sharedValue[6]);
   const tmp4 = callback3(str, obj.useIconSizeStyles(str, true, maxFontSizeMultiplier).width, grow);
-  let obj1 = onPressIn(sharedValue[7]);
+  obj1 = onPressIn(sharedValue[7]);
   sharedValue = obj1.useSharedValue(0);
   const items = [sharedValue, onPressIn];
   const callback = importAllResult.useCallback((arg0) => {
@@ -80,10 +71,10 @@ const forwardRefResult = importAllResult.forwardRef((size) => {
   class B {
     constructor() {
       tmp = onPressIn;
-      tmp2 = c2;
-      obj = onPressIn(c2[8]);
+      tmp2 = closure_2;
+      obj = onPressIn(closure_2[8]);
       num = 0;
-      if (1 === c2.get()) {
+      if (1 === closure_2.get()) {
         num = 1;
       }
       obj = { opacity: obj.withSpring(num, tmp(tmp2[9]).ON_PRESS_SPRING, "animate-always") };
@@ -142,6 +133,6 @@ const forwardRefResult = importAllResult.forwardRef((size) => {
   }
   return tmp10Result;
 });
-let result = require("jsxProd").fileFinishedImporting("design/components/Button/native/ImageButton.native.tsx");
+let result = require("set").fileFinishedImporting("design/components/Button/native/ImageButton.native.tsx");
 
 export const ImageButton = forwardRefResult;

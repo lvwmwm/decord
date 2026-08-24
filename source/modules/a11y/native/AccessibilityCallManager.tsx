@@ -1,19 +1,21 @@
-// Module ID: 13818
-// Function ID: 13819
+// Module ID: 13876
+// Function ID: 13877
 // Name: set
-// Dependencies: [1218, 1391, 4030, 1922, 500, 4066, 4984, 1363, 1236, 4720, 709, 2]
+// Dependencies: [1218, 1391, 4033, 1922, 500, 4069, 4989, 1363, 1236, 4726, 709, 2]
 
-// Module 13818 (set)
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import "initialize";
-import set from "markAllUserIdListsStale";
+// Module 13876 (set)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 4726 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import set from "set" /* 2 */;
 
 const require = arg1;
 let set = new Set();
 const map = new Map();
+initializeDefault;
 class AccessibilityCallManager extends tmp4 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -27,7 +29,7 @@ class AccessibilityCallManager extends tmp4 {
           if (!obj2.isIOS()) {
             const channel = store2.getChannel(channelId);
             if (null != channel) {
-              const channelName = tmp4(4984).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+              const channelName = tmp4(4989).computeChannelName(channel, closure_6, closure_5);
               if (null != channelName) {
                 obj.add(channelId);
                 const AccessibilityAnnouncer = tmp4(1363).AccessibilityAnnouncer;
@@ -36,10 +38,10 @@ class AccessibilityCallManager extends tmp4 {
                 obj[0] = channelName;
                 AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp4(1236).t["Bm0A/p"], obj), "assertive");
               }
-              const tmp4Result = tmp4(4984);
+              const tmp4Result = tmp4(4989);
             }
           } else {
-            const NativePhoneIntegrationEnabled = tmp4(4066).NativePhoneIntegrationEnabled;
+            const NativePhoneIntegrationEnabled = tmp4(4069).NativePhoneIntegrationEnabled;
           }
           obj2 = callback(500);
         }
@@ -60,7 +62,7 @@ class AccessibilityCallManager extends tmp4 {
             if (!obj3.isIOS()) {
               const channel = store2.getChannel(channelId);
               if (null != channel) {
-                const channelName = tmp4(4984).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+                const channelName = tmp4(4989).computeChannelName(channel, closure_6, closure_5);
                 if (null != channelName) {
                   obj2.add(channelId);
                   const AccessibilityAnnouncer = tmp4(1363).AccessibilityAnnouncer;
@@ -69,10 +71,10 @@ class AccessibilityCallManager extends tmp4 {
                   obj[0] = channelName;
                   AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp4(1236).t["Bm0A/p"], obj), "assertive");
                 }
-                const tmp4Result = tmp4(4984);
+                const tmp4Result = tmp4(4989);
               }
             } else {
-              const NativePhoneIntegrationEnabled = tmp4(4066).NativePhoneIntegrationEnabled;
+              const NativePhoneIntegrationEnabled = tmp4(4069).NativePhoneIntegrationEnabled;
             }
             obj3 = callback(500);
           }
@@ -100,22 +102,22 @@ class AccessibilityCallManager extends tmp4 {
 }
 const prototype = AccessibilityCallManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  const subscription = importDefault(709).subscribe("CALL_CREATE", this.handleCallCreate);
-  const obj = importDefault(709);
-  const subscription1 = importDefault(709).subscribe("CALL_UPDATE", this.handleCallUpdate);
-  const obj2 = importDefault(709);
-  const subscription2 = importDefault(709).subscribe("CALL_DELETE", this.handleCallDelete);
-  const obj3 = importDefault(709);
-  const subscription3 = importDefault(709).subscribe("CONNECTION_OPEN", this.handleConnectionOpen);
+  const subscription = dispatcherDefault.subscribe("CALL_CREATE", this.handleCallCreate);
+  const obj = dispatcherDefault;
+  const subscription1 = dispatcherDefault.subscribe("CALL_UPDATE", this.handleCallUpdate);
+  const obj2 = dispatcherDefault;
+  const subscription2 = dispatcherDefault.subscribe("CALL_DELETE", this.handleCallDelete);
+  const obj3 = dispatcherDefault;
+  const subscription3 = dispatcherDefault.subscribe("CONNECTION_OPEN", this.handleConnectionOpen);
 };
 prototype["_terminate"] = function _terminate() {
-  importDefault(709).unsubscribe("CALL_CREATE", this.handleCallCreate);
-  const obj = importDefault(709);
-  importDefault(709).unsubscribe("CALL_UPDATE", this.handleCallUpdate);
-  const obj2 = importDefault(709);
-  importDefault(709).unsubscribe("CALL_DELETE", this.handleCallDelete);
-  const obj3 = importDefault(709);
-  importDefault(709).unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen);
+  dispatcherDefault.unsubscribe("CALL_CREATE", this.handleCallCreate);
+  const obj = dispatcherDefault;
+  dispatcherDefault.unsubscribe("CALL_UPDATE", this.handleCallUpdate);
+  const obj2 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("CALL_DELETE", this.handleCallDelete);
+  const obj3 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen);
   map.clear();
   set.clear();
 };

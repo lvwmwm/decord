@@ -1,25 +1,25 @@
-// Module ID: 13349
-// Function ID: 13350
+// Module ID: 13407
+// Function ID: 13408
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [19, 17, 21, 4661, 13350, 6950, 6949, 4734, 1297, 13354, 4342, 4745, 38, 8874, 2]
+// Dependencies: [19, 17, 21, 4668, 13408, 6988, 6987, 4739, 1297, 13412, 4346, 4750, 38, 8911, 2]
 
-// Module 13349 (GuildSettingsPickerBottomSheet)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13407 (GuildSettingsPickerBottomSheet)
+import noopAll from "noop" /* 19 */;
+import GuildPickerDefault from "GuildPicker" /* 13412 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ content: { paddingHorizontal: 16 } });
-const result = require("jsxProd").fileFinishedImporting("modules/guild_settings_picker/native/GuildSettingsPickerBottomSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_settings_picker/native/GuildSettingsPickerBottomSheet.tsx");
 class GuildSettingsPickerBottomSheet {
   constructor(arg0) {
     feature = global.feature;
     ({ section, subsection, guildId } = global);
-    tmp = jsxs();
+    tmp = closure_6();
     obj = require("useGuildSettingsPickerFeature");
     guildSettingsPickerFeature = obj.useGuildSettingsPickerFeature(feature);
     ({ selectGuildCta, title, description, isGuildSupported } = guildSettingsPickerFeature);
@@ -32,7 +32,7 @@ class GuildSettingsPickerBottomSheet {
     obj2 = {
       guildId,
       onChange(guildId) {
-            let obj = outer1_1(outer1_2[10]);
+            let obj = closure_1_1(closure_1_2[10]);
             obj = { feature, section: closure_1, subsection: closure_2, guildId };
             obj.openLazy(() => Promise.resolve(closure_7), "GuildSettingsPickerBottomSheet", obj);
           },
@@ -46,10 +46,10 @@ class GuildSettingsPickerBottomSheet {
       text: selectGuildCta,
       disabled: null == guildId,
       onPress() {
-            outer1_1(outer1_2[12])(null != guildId, "Guild ID must not be null on click");
-            outer1_1(outer1_2[13]).open(guildId, closure_1, undefined, closure_2);
-            const obj = outer1_1(outer1_2[13]);
-            outer1_1(outer1_2[10]).hideActionSheet();
+            closure_1_1(closure_1_2[12])(null != guildId, "Guild ID must not be null on click");
+            closure_1_1(closure_1_2[13]).open(guildId, closure_1, undefined, closure_2);
+            const obj = closure_1_1(closure_1_2[13]);
+            closure_1_1(closure_1_2[10]).hideActionSheet();
           }
     };
     items[5] = jsx(guildId, obj3);

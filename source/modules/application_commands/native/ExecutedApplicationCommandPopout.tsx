@@ -1,44 +1,30 @@
-// Module ID: 10806
-// Function ID: 10807
+// Module ID: 10845
+// Function ID: 10846
 // Name: getCommandOptionComponents
-// Dependencies: [19, 17, 1391, 1983, 1910, 4994, 4030, 1922, 8448, 5246, 676, 1499, 6810, 21, 4661, 712, 1954, 1297, 4342, 8929, 4219, 4734, 4984, 1236, 7139, 589, 5449, 1438, 6292, 500, 10807, 4093, 6291, 1627, 5248, 4733, 6286, 7159, 8331, 6950, 2]
+// Dependencies: [19, 17, 1391, 1984, 1910, 4999, 4033, 1922, 8487, 5251, 676, 1499, 6847, 21, 4668, 712, 1954, 1297, 4346, 8966, 4223, 4739, 4989, 1236, 7177, 589, 5454, 1438, 6323, 500, 10846, 4096, 6322, 1627, 5253, 4738, 6317, 7197, 8370, 6988, 2]
 // Exports: default
 
-// Module 10806 (getCommandOptionComponents)
-import showUserProfileActionSheet from "showUserProfileActionSheet";
-import get_ActivityIndicator from "Button";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import reinjectEphemerals from "reinjectEphemerals";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import getIndexKey from "getIndexKey";
-import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME";
-import ME from "ME";
-import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-import regExp from "regExp";
-import jsxProd from "Text";
-import createCacheKey from "createCacheKey";
+// Module 10845 (getCommandOptionComponents)
+import ThemesDefault from "Themes" /* 712 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_9 from "createGuildRecordFromRust" /* 1910 */;
+import closure_10 from "reinjectEphemerals" /* 4999 */;
+import closure_11 from "markAllUserIdListsStale" /* 4033 */;
+import closure_12 from "mergeGuildAvatar" /* 1922 */;
+import closure_13 from "getIndexKey" /* 8487 */;
+import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME" /* 5251 */;
+import ME from "ME" /* 676 */;
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
+import regExp from "regExp" /* 6847 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let Fonts;
-let c5;
-let closure_15;
-let closure_16;
-let closure_18;
-let closure_19;
-let closure_20;
-let closure_21;
-let closure_22;
-let closure_23;
-let closure_6;
 const require = arg1;
 function getCommandOptionComponents(option) {
-  let analyticsLocations;
-  let commandOptionSpec;
-  let guild;
-  let messageId;
-  let styles;
   const iter = option.option;
   let channel = option.channel;
   ({ guild, commandOptionSpec, styles } = option);
@@ -67,24 +53,24 @@ function getCommandOptionComponents(option) {
           let obj = {
             style: styles.commandOptionMentionText,
             onPress() {
-              let obj = channel(outer2_3[18]);
+              let obj = channel(closure_2_3[18]);
               obj.hideActionSheet();
               obj = { userId: user.id, channelId: null };
               let id;
-              if (outer1_1 != null) {
-                id = outer1_1.id;
+              if (closure_1_1 != null) {
+                id = closure_1_1.id;
               }
               obj[1] = id;
-              channel(outer2_3[19])(obj);
+              channel(closure_2_3[19])(obj);
             },
             children: null
           };
-          const items = [outer1_20, channel(outer1_3[20]).getUserTag(user, { decoration: "never" })];
+          const items = [closure_1_20, channel(closure_1_3[20]).getUserTag(user, { decoration: "never" })];
           obj[2] = items;
-          return outer1_22(user(outer1_3[17]).LegacyText, obj, "optionValue-" + user.name);
+          return closure_1_22(user(closure_1_3[17]).LegacyText, obj, "optionValue-" + user.name);
         }
         function getCommandValueText(intl) {
-          return outer1_21(iter(outer1_3[21]).Text, { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl }, "optionValue-" + iter.name);
+          return closure_1_21(iter(closure_1_3[21]).Text, { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl }, "optionValue-" + iter.name);
         }
         const type = iter.type;
         if (tmp6(1954).ApplicationCommandOptionType.USER === type) {
@@ -100,17 +86,17 @@ function getCommandOptionComponents(option) {
           if (null != channel) {
             let obj = { style: null, children: null };
             obj[0] = styles.commandOptionMentionText;
-            const items1 = [closure_18, tmp6(4984).computeChannelName(channel, authStore, markAllUserIdListsStale)];
+            const items1 = [closure_18, tmp6(4989).computeChannelName(channel, authStore, closure_11)];
             obj[1] = items1;
             const _HermesInternal3 = HermesInternal;
             userComponent = callback2(tmp6(1297).LegacyText, obj, "optionValue-" + iter.name);
-            const tmp6Result = tmp6(4984);
+            const tmp6Result = tmp6(4989);
           }
           const str3 = iter.value;
         } else {
           function getRoleComponent(role) {
-            const items = [outer1_20, role.name];
-            return outer1_22(iter(outer1_3[17]).LegacyText, { style: styles.commandOptionMentionText, children: items }, "optionValue-" + iter.name);
+            const items = [closure_1_20, role.name];
+            return closure_1_22(iter(closure_1_3[17]).LegacyText, { style: styles.commandOptionMentionText, children: items }, "optionValue-" + iter.name);
           }
           if (tmp6(1954).ApplicationCommandOptionType.ROLE === type) {
             const value = iter.value;
@@ -187,9 +173,7 @@ function getCommandOptionComponents(option) {
       return items;
     }
   }
-  const obj1 = { children: null };
-  obj1[0] = callback(iter(1297).LegacyText, { children: combined }, "optionKey-" + iter.name);
-  items.push(callback(React.Fragment, obj1, text));
+  items.push(callback(React.Fragment, { children: callback(iter(1297).LegacyText, { children: combined }, "optionKey-" + iter.name) }, text));
   if (null != iter.options) {
     let options;
     if (commandOptionSpec != null) {
@@ -250,16 +234,16 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
           const user = authStore.getUser(item10118.value.toString());
           sum = null;
           if (null != user) {
-            sum = closure_20 + importDefault(4219).getUserTag(user, { decoration: "never" });
-            const obj3 = importDefault(4219);
+            sum = closure_20 + nameFromUserDefault.getUserTag(user, { decoration: "never" });
+            const obj3 = nameFromUserDefault;
           }
           const str5 = item10118.value;
         } else if (tmp5(1954).ApplicationCommandOptionType.CHANNEL === type) {
           const channel = store.getChannel(item10118.value.toString());
           sum = null;
           if (null != channel) {
-            sum = closure_18 + tmp5(4984).computeChannelName(channel, authStore, markAllUserIdListsStale);
-            const tmp5Result = tmp5(4984);
+            sum = closure_18 + tmp5(4989).computeChannelName(channel, authStore, closure_11);
+            const tmp5Result = tmp5(4989);
           }
           const str4 = item10118.value;
         } else if (tmp5(1954).ApplicationCommandOptionType.ROLE === type) {
@@ -286,8 +270,8 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
               const user1 = authStore.getUser(str);
               sum = null;
               if (null != user1) {
-                sum = closure_20 + importDefault(4219).getUserTag(user1, { decoration: "never" });
-                const obj = importDefault(4219);
+                sum = closure_20 + nameFromUserDefault.getUserTag(user1, { decoration: "never" });
+                const obj = nameFromUserDefault;
               }
             }
             const str6 = item10118.value;
@@ -343,28 +327,22 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
   return items;
 }
 function CommandContentContainer(channelId) {
-  let showUserProfileActionSheet;
-  let closure_5;
-  let data;
-  let importAll;
-  let importDefault;
-  let messageId;
   channelId = channelId.channelId;
   ({ author: importDefault, applicationUser: importAll, data } = channelId);
-  ({ guildId: showUserProfileActionSheet, messageType: closure_5, messageId } = channelId);
-  let c7;
+  ({ guildId: closure_4, messageType: closure_5, messageId } = channelId);
+  closure_7 = undefined;
   let analyticsLocations;
   let channel;
   let guild;
   let name_localized;
-  let tmp = createCacheKey();
-  c7 = tmp;
+  let tmp = callback3();
+  closure_7 = tmp;
   analyticsLocations = importDefault(data[24])().analyticsLocations;
   let obj = channelId(data[25]);
-  let items = [c7, channel];
+  let items = [closure_7, channel];
   const items1 = [channelId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const channel = _undefined.getChannel(channelId);
+    channel = channel.getChannel(channelId);
     const obj = { channel, guild: null };
     let guild_id;
     if (channel != null) {
@@ -386,31 +364,31 @@ function CommandContentContainer(channelId) {
   const intl = tmp3(tmp2[23]).intl;
   obj = {
     userHook() {
-      const items = [_undefined.commandUserText, ];
+      const items = [channel.commandUserText, ];
       let color = colorString.colorString;
       if (color == null) {
-        color = _undefined.commandText.color;
+        color = channel.commandText.color;
       }
       items[1] = { color };
-      return outer1_21(channelId(data[17]).LegacyText, { style: items, children: colorString.nick }, "user");
+      return closure_1_21(channelId(data[17]).LegacyText, { style: items, children: colorString.nick }, "user");
     },
     commandHook() {
-      if (closure_5 === outer1_15.CHAT_INPUT_COMMAND) {
+      if (closure_5 === closure_1_15.CHAT_INPUT_COMMAND) {
         const _HermesInternal = HermesInternal;
-        let children = "" + outer1_19 + name_localized;
+        let children = "" + closure_1_19 + name_localized;
       } else {
         children = name_localized;
       }
-      return outer1_21(channelId(data[21]).Text, { variant: "text-sm/semibold", children }, "command");
+      return closure_1_21(channelId(data[21]).Text, { variant: "text-sm/semibold", children }, "command");
     },
     applicationHook() {
-      let obj = { style: _undefined.applicationNameText, variant: "text-sm/semibold", children: null };
-      obj = { style: _undefined.applicationIcon, source: null };
-      const tmp = outer1_1(data[26]);
-      obj[1] = channelId(data[27]).ensureAvatarSource(avatarSource.getAvatarSource(showUserProfileActionSheet));
-      const items = [outer1_21(tmp, obj, "icon-" + avatarSource.id), ` ${closure_2.username}`];
+      let obj = { style: channel.applicationNameText, variant: "text-sm/semibold", children: null };
+      obj = { style: channel.applicationIcon, source: null };
+      const tmp = closure_1_1(data[26]);
+      obj[1] = channelId(data[27]).ensureAvatarSource(avatarSource.getAvatarSource(closure_4));
+      const items = [closure_1_21(tmp, obj, "icon-" + avatarSource.id), ` ${closure_2.username}`];
       obj[2] = items;
-      return outer1_22(channelId(data[21]).Text, obj, "application");
+      return closure_1_22(channelId(data[21]).Text, obj, "application");
     }
   };
   const items2 = [channel, guild, messageId, , , , , , ];
@@ -420,7 +398,7 @@ function CommandContentContainer(channelId) {
   items2[8] = analyticsLocations;
   const memo = React.useMemo(() => {
     let obj = { children: `/${name_localized}` };
-    let items = [outer1_21(channelId(data[17]).LegacyText, obj, "integrationName-" + data.name)];
+    let items = [closure_1_21(channelId(data[17]).LegacyText, obj, "integrationName-" + data.name)];
     let combined = items;
     if (null != data.options) {
       const application_command = tmp.application_command;
@@ -436,7 +414,7 @@ function CommandContentContainer(channelId) {
       const nextResult = iter.next();
       while (iter !== undefined) {
         let tmp7 = combined;
-        let tmp8 = outer1_25;
+        let tmp8 = closure_1_25;
         obj = { option: null, channel: null, guild: null, messageId: null, parentOptionName: "", commandOptionSpec: null, styles: null, analyticsLocations: null };
         obj[0] = nextResult;
         let tmp9 = channel;
@@ -446,11 +424,11 @@ function CommandContentContainer(channelId) {
         let tmp11 = messageId;
         obj[3] = messageId;
         obj[5] = fromEntriesResult[nextResult.name];
-        let tmp12 = c7;
-        obj[6] = c7;
+        let tmp12 = closure_7;
+        obj[6] = closure_7;
         let tmp13 = analyticsLocations;
         obj[7] = analyticsLocations;
-        combined = combined.concat(outer1_25(obj));
+        combined = combined.concat(closure_1_25(obj));
         continue;
       }
       fromEntriesResult = Object.fromEntries(options.map((name) => {
@@ -472,23 +450,23 @@ function CommandActionsContainer(channelId) {
   const data = channelId.data;
   let channel;
   let guild;
-  let closure_5;
+  closure_5 = undefined;
   let options = data.options;
   let someResult;
   if (options != null) {
     someResult = options.some((type) => type.type === channelId(channel[16]).ApplicationCommandOptionType.ATTACHMENT);
   }
   let obj = channelId(channel[25]);
-  let items = [ensureGuildLoaded, createGuildRecordFromRust];
+  let items = [closure_7, closure_9];
   let items1 = [channelId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const channel = outer1_7.getChannel(channelId);
+    channel = closure_1_7.getChannel(channelId);
     const obj = { channel, guild: null };
     let guild_id;
     if (channel != null) {
       guild_id = channel.guild_id;
     }
-    obj[1] = outer1_9.getGuild(guild_id);
+    obj[1] = closure_1_9.getGuild(guild_id);
     return obj;
   }, items1);
   channel = stateFromStoresObject.channel;
@@ -503,7 +481,7 @@ function CommandActionsContainer(channelId) {
     if (name_localized == null) {
       name_localized = tmp.name;
     }
-    let items = [outer1_19 + name_localized];
+    let items = [closure_1_19 + name_localized];
     let combined = items;
     if (null != data.options) {
       const application_command2 = tmp.application_command;
@@ -518,14 +496,14 @@ function CommandActionsContainer(channelId) {
       options = tmp.options;
       for (const item10021 of options) {
         let tmp6 = combined;
-        let tmp7 = outer1_26;
+        let tmp7 = closure_1_26;
         let tmp8 = channel;
         let tmp9 = channel;
         let tmp10 = guild;
         let num = 0;
         let tmp11 = item10021;
         let tmp12 = channel;
-        combined = combined.concat(outer1_26(item10021, channel, guild, tmp3[item10021.name]));
+        combined = combined.concat(closure_1_26(item10021, channel, guild, tmp3[item10021.name]));
         continue;
       }
     }
@@ -537,7 +515,7 @@ function CommandActionsContainer(channelId) {
         const result = obj3.setItem(json, "application/x-discord-interaction-data", combined.join(" "));
       }
     } else {
-      const DCDClipboardManager = outer1_6.DCDClipboardManager;
+      const DCDClipboardManager = closure_1_6.DCDClipboardManager;
       const _JSON = JSON;
       const json1 = JSON.stringify(data);
       const result1 = DCDClipboardManager.setItem(json1, "application/x-discord-interaction-data", combined.join(" "));
@@ -548,7 +526,7 @@ function CommandActionsContainer(channelId) {
       obj = { commandTypes: null };
       const items1 = [tmp13(tmp14[16]).ApplicationCommandType.CHAT];
       obj[0] = items1;
-      const query = outer1_13.query(obj, obj, { allowFetch: true });
+      const query = closure_1_13.query(obj, obj, { allowFetch: true });
     }
     obj2 = channelId(channel[29]);
     channelId(channel[31]).presentCommandCopied();
@@ -592,11 +570,11 @@ function CommandActionsContainer(channelId) {
                 obj = { type: null, context: null };
                 obj[0] = tmp4(tmp[33]).KeyboardTypes.APP_LAUNCHER;
                 obj = { initialRouteName: null, analyticsLocation: null, preSelectedCommand: null };
-                obj[0] = outer1_17.COMMAND_VIEW;
+                obj[0] = closure_1_17.COMMAND_VIEW;
                 obj[1] = tmp4(tmp[34]).ApplicationCommandTriggerLocations.RECALL;
-                const obj1 = { commandId: null, prefilledOptions: null };
-                const sum = tmp3.id + outer1_14;
-                obj1[0] = sum + items1.join(outer1_14);
+                obj1 = { commandId: null, prefilledOptions: null };
+                const sum = tmp3.id + closure_1_14;
+                obj1[0] = sum + items1.join(closure_1_14);
                 obj1[1] = options;
                 obj[2] = obj1;
                 obj[1] = obj;
@@ -612,7 +590,7 @@ function CommandActionsContainer(channelId) {
           const obj2 = { type: null, context: null };
           obj2[0] = channelId(tmp[33]).KeyboardTypes.APP_LAUNCHER;
           const obj3 = { initialRouteName: null, analyticsLocation: null, preSelectedCommand: null };
-          obj3[0] = outer1_17.COMMAND_VIEW;
+          obj3[0] = closure_1_17.COMMAND_VIEW;
           obj3[1] = channelId(tmp[34]).ApplicationCommandTriggerLocations.RECALL;
           const obj4 = { commandId: null, prefilledOptions: null };
           ({ id: obj4[0], options: obj4[1] } = tmp3);
@@ -626,7 +604,7 @@ function CommandActionsContainer(channelId) {
   }
   let tmp9 = null;
   if (0 !== items3.length) {
-    let obj1 = { spacing: 8, children: null };
+    obj1 = { spacing: 8, children: null };
     let obj2 = { variant: "text-sm/semibold", color: "text-subtle", children: null };
     const intl3 = tmp2(tmp3[23]).intl;
     obj2[2] = intl3.string(tmp2(tmp3[23]).t["3eF5/L"]);
@@ -645,28 +623,22 @@ function CommandActionsContainer(channelId) {
 ({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
 createCacheKey = { container: { paddingVertical: 8, paddingHorizontal: 16, gap: 16 }, activityIndicator: { padding: 16 }, commandUserText: createCacheKey, applicationIcon: { width: 18, height: 18, borderRadius: 9, alignSelf: "center" }, applicationNameText: { textAlignVertical: "center" }, commandOptionText: { marginTop: 12 }, commandOptionMentionText: null, commandText: null };
 createCacheKey = { fontFamily: Fonts.PRIMARY_SEMIBOLD };
-createCacheKey[6] = { color: require("Themes").colors.BACKGROUND_BRAND };
-let obj1 = { color: require("Themes").colors.BACKGROUND_BRAND };
-createCacheKey[7] = { fontSize: 16, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { fontSize: 16, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/application_commands/native/ExecutedApplicationCommandPopout.tsx");
+createCacheKey[6] = { color: ThemesDefault.colors.BACKGROUND_BRAND };
+let obj1 = { color: ThemesDefault.colors.BACKGROUND_BRAND };
+createCacheKey[7] = { fontSize: 16, color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+let closure_24 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { fontSize: 16, color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+let result = require("set").fileFinishedImporting("modules/application_commands/native/ExecutedApplicationCommandPopout.tsx");
 
 export default function ExecutedCommandPopout(channelId) {
-  let applicationUser;
-  let author;
-  let chatInputRef;
-  let guildId;
-  let messageType;
-  let user;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   let stateFromStores;
   ({ user, chatInputRef, author, applicationUser, guildId, messageType } = channelId);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = channelId(589);
-  const items = [reinjectEphemerals];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_10.getMessage(channelId, messageId));
+  const items = [closure_10];
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_10.getMessage(channelId, messageId));
   const items1 = [channelId, messageId, ];
   let interactionData;
   if (stateFromStores != null) {
@@ -684,7 +656,7 @@ export default function ExecutedCommandPopout(channelId) {
       if (tmp != null) {
         type = tmp.interactionData.type;
       }
-      let tmp7 = type === channelId(outer1_3[16]).ApplicationCommandType.CHAT;
+      let tmp7 = type === channelId(closure_1_3[16]).ApplicationCommandType.CHAT;
       if (tmp7) {
         let application_command;
         if (tmp != null) {
@@ -695,18 +667,18 @@ export default function ExecutedCommandPopout(channelId) {
       tmp3 = tmp7;
     }
     if (tmp3) {
-      const messageInteractionData = stateFromStores(outer1_3[38]).fetchMessageInteractionData(channelId, messageId);
-      const obj = stateFromStores(outer1_3[38]);
+      const messageInteractionData = stateFromStores(closure_1_3[38]).fetchMessageInteractionData(channelId, messageId);
+      const obj = stateFromStores(closure_1_3[38]);
     }
   }, items1);
-  obj = { value: messageId(7139)(messageId(7159).EXECUTED_COMMAND).analyticsLocations, children: null };
+  obj = { value: messageId(7177)(messageId(7197).EXECUTED_COMMAND).analyticsLocations, children: null };
   obj = { startExpanded: true, bodyStyles: tmp.container, children: null };
   let interactionData1;
   if (stateFromStores != null) {
     interactionData1 = stateFromStores.interactionData;
   }
   if (null != interactionData1) {
-    const obj1 = { guildId: null, user: null, channelId: null, messageId: null, author: null, applicationUser: null, data: null, messageType: null };
+    obj1 = { guildId: null, user: null, channelId: null, messageId: null, author: null, applicationUser: null, data: null, messageType: null };
     obj1[0] = guildId;
     obj1[1] = user;
     obj1[2] = channelId;
@@ -742,6 +714,6 @@ export default function ExecutedCommandPopout(channelId) {
     tmp9Result = tmp9(closure_5, obj4);
   }
   obj[2] = tmp9Result;
-  obj[1] = closure_21(channelId(6950).BottomSheet, obj);
-  return closure_21(channelId(7139).AnalyticsLocationProvider, obj);
+  obj[1] = closure_21(channelId(6988).BottomSheet, obj);
+  return closure_21(channelId(7177).AnalyticsLocationProvider, obj);
 };

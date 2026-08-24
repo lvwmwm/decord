@@ -4,9 +4,12 @@
 // Dependencies: [161, 99]
 
 // Module 160 (_construct)
+import _setPrototypeOf from "_setPrototypeOf" /* 99 */;
+import _isNativeReflectConstruct from "_isNativeReflectConstruct" /* 161 */;
+
 
 export default function _construct(bind) {
-  if (require(161) /* _isNativeReflectConstruct */()) {
+  if (_isNativeReflectConstruct()) {
     const _Reflect = Reflect;
     const apply = construct.apply;
     if (typeof apply === "unknown") {
@@ -22,9 +25,9 @@ export default function _construct(bind) {
     bind = bind.bind;
     const tmp9 = new bind.apply(bind, items)();
     if (arg2) {
-      tmp(99)(tmp9, arg2.prototype);
+      _setPrototypeOf(tmp9, arg2.prototype);
     }
     return tmp9;
   }
-  tmp = require;
+  const tmp = require;
 };

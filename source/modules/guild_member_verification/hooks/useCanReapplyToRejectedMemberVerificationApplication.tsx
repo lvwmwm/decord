@@ -1,38 +1,38 @@
-// Module ID: 8540
-// Function ID: 8541
+// Module ID: 8579
+// Function ID: 8580
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 4359, 4198, 676, 589, 6906, 2]
+// Dependencies: [5, 32, 19, 4363, 4202, 676, 589, 6944, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 8540 (useCanReapplyToRejectedMemberVerificationApplication)
-import ME from "ME";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import updateInvite from "updateInvite";
-import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
-import { GuildFeatures } from "ME";
+// Module 8579 (useCanReapplyToRejectedMemberVerificationApplication)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import closure_6 from "updateInvite" /* 4363 */;
+import closure_7 from "handleGatewayJoinRequestUpdate" /* 4202 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("noop").fileFinishedImporting("modules/guild_member_verification/hooks/useCanReapplyToRejectedMemberVerificationApplication.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/useCanReapplyToRejectedMemberVerificationApplication.tsx");
 
 export const useCanReapplyToRejectedMemberVerificationApplication = function useCanReapplyToRejectedMemberVerificationApplication(guildId) {
   let _require = guildId;
   const isLoading = callback2(React.useState(true), 2);
-  let closure_1 = isLoading[1];
-  const items = [handleGatewayJoinRequestUpdate];
+  closure_1 = isLoading[1];
+  const items = [closure_7];
   const stateFromStores = _require(callback[6]).useStateFromStores(items, () => {
     let joinRequestGuild;
     if (null != closure_0) {
-      joinRequestGuild = outer1_7.getJoinRequestGuild(tmp);
+      joinRequestGuild = closure_1_7.getJoinRequestGuild(tmp);
     }
     return joinRequestGuild;
   });
   _require = undefined;
   _require = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c5 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c5 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c5 === 2) {
         c5 = 3;
@@ -45,7 +45,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -60,11 +60,11 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
               obj[0] = arg1;
               return obj;
             } else {
-              const callback = tmp3;
-              let c4 = 1;
-              const inviteKeyForGuildId = outer2_6.getInviteKeyForGuildId(closure_0);
+              callback = tmp3;
+              c4 = 1;
+              const inviteKeyForGuildId = closure_2_6.getInviteKeyForGuildId(closure_0);
               if (null != inviteKeyForGuildId) {
-                let obj1 = callback(callback[7]);
+                obj1 = callback(callback[7]);
                 c2 = 2;
                 c5 = 1;
                 obj1 = { value: null, done: false };
@@ -75,25 +75,25 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
             }
           } else if (1 === tmp7) {
             c4 = 0;
-            outer1_1(false);
-            throw ME;
+            closure_1_1(false);
+            throw closure_3;
           } else if (arg0 === 1) {
             c5 = 3;
             throw arg1;
           } else if (arg0 === 2) {
             c4 = 0;
-            outer1_1(false);
+            closure_1_1(false);
             c5 = 3;
             obj = { value: null, done: true };
             obj[0] = arg1;
             return obj;
           }
           c4 = 0;
-          outer1_1(false);
+          closure_1_1(false);
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp18) {
-          ME = tmp18;
+          closure_3 = tmp18;
           if (tmp4 === c4) {
             c5 = tmp2;
             throw tmp18;

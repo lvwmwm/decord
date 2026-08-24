@@ -1,25 +1,27 @@
-// Module ID: 6901
-// Function ID: 6902
+// Module ID: 6939
+// Function ID: 6940
 // Name: useGameProfileObscured
-// Dependencies: [1922, 4786, 589, 2]
+// Dependencies: [1922, 4791, 589, 2]
 // Exports: default, isGameProfileObscured
 
-// Module 6901 (useGameProfileObscured)
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 6939 (useGameProfileObscured)
+import initialize from "initialize" /* 589 */;
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 4791 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
-let result = require("initialize").fileFinishedImporting("modules/game_profile/hooks/useGameProfileObscured.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("modules/game_profile/hooks/useGameProfileObscured.tsx");
 
 export default function useGameProfileObscured(contentClassification) {
-  require(589) /* initialize */;
-  [][0] = mergeGuildAvatar;
+  initialize;
+  [][0] = closure_2;
   let result = null != contentClassification;
   if (result) {
     result = false === tmp4;
   }
   if (result) {
-    result = require(4786) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(contentClassification.contentClassification);
-    const tmpResult = require(4786) /* isAgeRestrictedContentClassification */;
+    result = isAgeRestrictedContentClassification.isAgeRestrictedContentClassification(contentClassification.contentClassification);
+    const tmpResult = isAgeRestrictedContentClassification;
   }
   return result;
 };
@@ -29,8 +31,8 @@ export const isGameProfileObscured = function isGameProfileObscured(game, nsfwAl
     result = false === nsfwAllowed;
   }
   if (result) {
-    result = require(4786) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(game.contentClassification);
-    const obj = require(4786) /* isAgeRestrictedContentClassification */;
+    result = isAgeRestrictedContentClassification.isAgeRestrictedContentClassification(game.contentClassification);
+    const obj = isAgeRestrictedContentClassification;
   }
   return result;
 };

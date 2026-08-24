@@ -1,29 +1,28 @@
-// Module ID: 12426
-// Function ID: 12427
+// Module ID: 12478
+// Function ID: 12479
 // Name: authorizeCallback
-// Dependencies: [8774, 5260, 9776, 2007, 1487, 12427, 4340, 691, 4090, 2]
+// Dependencies: [8811, 5265, 9815, 2008, 1487, 12479, 4344, 691, 4093, 2]
 // Exports: default
 
-// Module 12426 (authorizeCallback)
-import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
+// Module 12478 (authorizeCallback)
+import set from "set" /* 2 */;
+import keys from "keys" /* 691 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef4093 from "module_4093" /* 4093 */;
+import NativeModules from "NativeModules" /* 4344 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 8811 */;
 
-let c3;
-let c4;
 ({ OAUTH2_SUCCESS_RESULT_MODAL_KEY: c3, OAUTH2_ERROR_RESULT_MODAL_KEY: c4 } = OAUTH2_AUTHORIZE_MODAL_KEY);
 const re5 = /oauth2\/authorized/;
 const re6 = /oauth2\/error/;
-const result = require("error").fileFinishedImporting("modules/oauth2/native/authorizeCallback.tsx");
+const result = set.fileFinishedImporting("modules/oauth2/native/authorizeCallback.tsx");
 
 export default function authorizeCallback(arg0) {
-  let _location;
-  let canceled;
-  let host;
-  let pathname;
-  let searchParams;
-  let wasDeepLink;
   ({ location: _location, canceled, wasDeepLink } = arg0);
   if (null != _location) {
-    let toURLSafeResult = importDefault(1487).toURLSafe(_location);
+    let toURLSafeResult = isDiscordProxiedAssetUrlDefault.toURLSafe(_location);
     if (toURLSafeResult == null) {
       toURLSafeResult = {};
     }
@@ -33,15 +32,15 @@ export default function authorizeCallback(arg0) {
       if (tmp8Result.isDiscordHostname(host)) {
         if (null != pathname) {
           if (null != pathname.match(closure_5)) {
-            tmp8Result = tmp8(5260);
+            tmp8Result = tmp8(5265);
             let obj = { application: null, guild: null };
             obj[0] = tmp;
             obj[1] = tmp2;
-            tmp8Result.pushLazy(require(2007) /* asyncRequireImpl */(12427, tmp9.paths), obj, closure_3);
+            tmp8Result.pushLazy(asyncRequireImpl(12479, tmp9.paths), obj, closure_3);
           } else if (null != pathname.match(closure_6)) {
             if (!canceled) {
               let str;
-              const tmp8Result1 = tmp8(5260);
+              const tmp8Result1 = tmp8(5265);
               if (searchParams != null) {
                 str = "error_description";
                 const str2 = searchParams.get("error_description");
@@ -61,27 +60,27 @@ export default function authorizeCallback(arg0) {
               }
               obj = { error: null };
               obj[0] = str;
-              tmp8Result1.pushLazy(require(2007) /* asyncRequireImpl */(9776, tmp9.paths), obj, closure_4);
-              const tmp17 = require(2007) /* asyncRequireImpl */(9776, tmp9.paths);
+              tmp8Result1.pushLazy(asyncRequireImpl(9815, tmp9.paths), obj, closure_4);
+              const tmp17 = asyncRequireImpl(9815, tmp9.paths);
             }
           }
         }
       }
     }
     if (wasDeepLink) {
-      const browserManagerSelectedBrowser = require(4340) /* NativeModules */.getBrowserManagerSelectedBrowser();
-      wasDeepLink = browserManagerSelectedBrowser === require(691) /* keys */.WebBrowserType.IN_APP;
-      const obj5 = require(4340) /* NativeModules */;
+      const browserManagerSelectedBrowser = NativeModules.getBrowserManagerSelectedBrowser();
+      wasDeepLink = browserManagerSelectedBrowser === keys.WebBrowserType.IN_APP;
+      const obj5 = NativeModules;
     }
-    const obj2 = importDefault(1487);
+    const obj2 = isDiscordProxiedAssetUrlDefault;
     let SAFARI;
     if (wasDeepLink) {
-      SAFARI = require(691) /* keys */.WebBrowserType.SAFARI;
+      SAFARI = keys.WebBrowserType.SAFARI;
     }
-    importDefault(4090).openURL(_location, SAFARI);
-    const tmp8Result2 = importDefault(4090);
+    _modDef4093.openURL(_location, SAFARI);
+    const tmp8Result2 = _modDef4093;
   } else if (!canceled) {
-    obj = importDefault(5260);
-    obj.pushLazy(require(2007) /* asyncRequireImpl */(9776, dependencyMap.paths), undefined, closure_4);
+    obj = _modDef5265;
+    obj.pushLazy(asyncRequireImpl(9815, dependencyMap.paths), undefined, closure_4);
   }
 };

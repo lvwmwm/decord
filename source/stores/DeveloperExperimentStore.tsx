@@ -1,31 +1,34 @@
-// Module ID: 7472
-// Function ID: 7473
+// Module ID: 7510
+// Function ID: 7511
 // Name: init
-// Dependencies: [1910, 1922, 4289, 1929, 1928, 589, 709, 2]
+// Dependencies: [1910, 1922, 4293, 1929, 1928, 589, 709, 2]
 
-// Module 7472 (init)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { ExperimentBuckets } from "ExperimentBuckets";
-import { Environments } from "Environments";
-import { Store } from "initialize";
+// Module 7510 (init)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import validatePremiumType from "validatePremiumType" /* 1928 */;
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { ExperimentBuckets } from "ExperimentBuckets" /* 4293 */;
+import { Environments } from "Environments" /* 1929 */;
 
-const require = arg1;
+require = arg1;
 let tmp2 = "production" === Environments.DEVELOPMENT;
 if (!tmp2) {
   const _window = window;
   tmp2 = window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.STAGING;
 }
 function init() {
-  let closure_5 = require(1928) /* validatePremiumType */.isStaffEnv(authStore.getCurrentUser());
+  closure_5 = validatePremiumType.isStaffEnv(authStore.getCurrentUser());
 }
-let c5 = tmp2;
+let closure_5 = tmp2;
+const Store = initializeDefault.Store;
 class DeveloperExperimentStore extends Store {
 }
 const prototype = DeveloperExperimentStore.prototype;
 prototype["initialize"] = function initialize() {
   const self = this;
-  this.waitFor(authStore, createGuildRecordFromRust);
+  this.waitFor(authStore, closure_2);
   Object.defineProperties(this, {
     isDeveloper: {
       configurable: false,
@@ -37,7 +40,7 @@ prototype["initialize"] = function initialize() {
       }
     }
   });
-  let closure_5 = self(1928).isStaffEnv(authStore.getCurrentUser());
+  closure_5 = self(1928).isStaffEnv(authStore.getCurrentUser());
   const timerId = setTimeout(() => Object.freeze(self));
 };
 prototype["getExperimentDescriptor"] = function getExperimentDescriptor() {
@@ -50,7 +53,7 @@ prototype["getExperimentDescriptor"] = function getExperimentDescriptor() {
   return tmp;
 };
 DeveloperExperimentStore.displayName = "DeveloperExperimentStore";
-const developerExperimentStore = new DeveloperExperimentStore(require("dispatcher"), { CONNECTION_OPEN: init, OVERLAY_INITIALIZE: init, CURRENT_USER_UPDATE: init });
-const result = require("ExperimentBuckets").fileFinishedImporting("stores/DeveloperExperimentStore.tsx");
+const developerExperimentStore = new DeveloperExperimentStore(dispatcherDefault, { CONNECTION_OPEN: init, OVERLAY_INITIALIZE: init, CURRENT_USER_UPDATE: init });
+const result = require("set").fileFinishedImporting("stores/DeveloperExperimentStore.tsx");
 
 export default developerExperimentStore;

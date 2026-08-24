@@ -1,10 +1,10 @@
-// Module ID: 9761
-// Function ID: 9762
+// Module ID: 9800
+// Function ID: 9801
 // Name: set
 // Dependencies: [2]
 
-// Module 9761 (set)
-import set from "set";
+// Module 9800 (set)
+import set from "set" /* 2 */;
 
 const obj = { ALL: null };
 let set = new Set(["desktop", "device_code", "mobile", "web"]);

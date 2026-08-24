@@ -1,20 +1,19 @@
-// Module ID: 11433
-// Function ID: 11434
-// Dependencies: [19, 7440, 21, 4661, 712, 589, 7441, 4094, 10793, 5433, 4734, 2]
+// Module ID: 11204
+// Function ID: 11205
+// Dependencies: [19, 7478, 21, 4668, 712, 589, 7479, 4097, 10832, 5438, 4739, 2]
 
-// Module 11433
-import importAllResult from "noop";
-import setCooldown from "setCooldown";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11204
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import closure_4 from "setCooldown" /* 7478 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 let c3 = importAllResult;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { container: { alignItems: "center", flexDirection: "row" }, icon: null };
-obj = { marginLeft: require("Themes").space.PX_4 };
+obj = { marginLeft: ThemesDefault.space.PX_4 };
 obj[1] = obj;
 let closure_7 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function SlowModeIndicator(channel) {
@@ -41,8 +40,7 @@ const memoResult = importAllResult.memo(function SlowModeIndicator(channel) {
   }, items1);
   const callback = stateFromStores.useCallback(() => {
     let obj = hasTypingText(slowmodeType[7]);
-    obj = { key: "CHANNEL_SLOWMODE_INFO", IconComponent: channel(slowmodeType[8]).TimerIcon, content: null };
-    obj[2] = channel(slowmodeType[6]).getSlowmodeDescription(channel.rateLimitPerUser);
+    obj = { key: "CHANNEL_SLOWMODE_INFO", IconComponent: channel(slowmodeType[8]).TimerIcon, content: channel(slowmodeType[6]).getSlowmodeDescription(channel.rateLimitPerUser) };
     obj.open(obj);
   }, items2);
   obj = { onPress: callback, style: tmp.container, children: null };
@@ -52,6 +50,6 @@ const memoResult = importAllResult.memo(function SlowModeIndicator(channel) {
   obj[2] = items3;
   return callback2(channel(slowmodeType[9]).PressableOpacity, obj);
 });
-const result = require("jsxProd").fileFinishedImporting("modules/chat/native/SlowModeIndicator.tsx");
+const result = require("set").fileFinishedImporting("modules/chat/native/SlowModeIndicator.tsx");
 
 export default memoResult;

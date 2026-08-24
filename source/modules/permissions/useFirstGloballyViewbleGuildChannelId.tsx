@@ -1,31 +1,31 @@
-// Module ID: 15325
-// Function ID: 15326
+// Module ID: 15389
+// Function ID: 15390
 // Name: useFirstGloballyViewbleGuildChannelId
-// Dependencies: [1980, 505, 589, 4026, 2]
+// Dependencies: [1981, 505, 589, 4029, 2]
 // Exports: useFirstGloballyViewbleGuildChannelId
 
-// Module 15325 (useFirstGloballyViewbleGuildChannelId)
-import comparator from "comparator";
-import { Permissions } from "sum";
+// Module 15389 (useFirstGloballyViewbleGuildChannelId)
+import closure_3 from "comparator" /* 1981 */;
+import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/permissions/useFirstGloballyViewbleGuildChannelId.tsx");
+const result = require("set").fileFinishedImporting("modules/permissions/useFirstGloballyViewbleGuildChannelId.tsx");
 
 export const useFirstGloballyViewbleGuildChannelId = function useFirstGloballyViewbleGuildChannelId(guildId) {
   const _require = guildId;
-  const items = [comparator];
+  const items = [closure_3];
   const items1 = [guildId];
   return _require(589).useStateFromStores(items, () => {
     if (null != closure_0) {
-      const selectableChannels = outer1_3.getSelectableChannels(tmp);
+      const selectableChannels = closure_1_3.getSelectableChannels(tmp);
       for (const item10010 of selectableChannels) {
         let channel = item10010.channel;
         let tmp6 = channel;
-        let tmp7 = outer1_1;
-        let tmp8 = outer1_2;
-        let obj2 = outer1_1(outer1_2[3]);
-        let tmp9 = outer1_4;
-        if (obj2.canEveryone(outer1_4.VIEW_CHANNEL, channel)) {
+        let tmp7 = closure_1_1;
+        let tmp8 = closure_1_2;
+        let obj2 = closure_1_1(closure_1_2[3]);
+        let tmp9 = closure_1_4;
+        if (obj2.canEveryone(closure_1_4.VIEW_CHANNEL, channel)) {
           let tmp10 = obj;
           obj.return();
           return channel.id;

@@ -1,19 +1,20 @@
-// Module ID: 14068
-// Function ID: 14069
+// Module ID: 14136
+// Function ID: 14137
 // Name: useTabSelectedGuildId
-// Dependencies: [4197, 5078, 647, 2]
+// Dependencies: [4201, 5083, 647, 2]
 // Exports: default
 
-// Module 14068 (useTabSelectedGuildId)
-import handleConnectionOpen from "handleConnectionOpen";
-import insertUnsortedGuilds from "insertUnsortedGuilds";
+// Module 14136 (useTabSelectedGuildId)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+import closure_2 from "handleConnectionOpen" /* 4201 */;
+import closure_3 from "insertUnsortedGuilds" /* 5083 */;
 
-const require = arg1;
-const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/main_tabs_v2/native/utils/useTabSelectedGuildId.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/utils/useTabSelectedGuildId.tsx");
 
 export default function useTabSelectedGuildId() {
-  const items = [handleConnectionOpen, insertUnsortedGuilds];
-  return require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
+  const items = [closure_2, closure_3];
+  return defaultAreStatesEqual.useStateFromStores(items, () => {
     let guildId = store.getGuildId();
     const lastSelectedGuildId = store.getLastSelectedGuildId();
     if (guildId == null) {

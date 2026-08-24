@@ -1,42 +1,43 @@
-// Module ID: 16148
-// Function ID: 16149
+// Module ID: 16245
+// Function ID: 16246
 // Name: GooglePlayPriceChangeActionSheet
-// Dependencies: [19, 17, 4045, 16149, 676, 1388, 21, 4661, 712, 589, 4039, 5316, 6950, 4734, 1236, 1993, 4745, 2]
+// Dependencies: [19, 17, 4048, 16246, 676, 1388, 21, 4668, 712, 589, 4042, 5321, 6988, 4739, 1236, 1994, 4750, 2]
 // Exports: default
 
-// Module 16148 (GooglePlayPriceChangeActionSheet)
-import "noop";
-import { View } from "set";
-import reset from "reset";
-import onInitializeSync from "onInitializeSync";
-import { HelpdeskArticles } from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16245 (GooglePlayPriceChangeActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import combinedDefault from "combined" /* 1994 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "reset" /* 4048 */;
+import closure_5 from "onInitializeSync" /* 16246 */;
+import { HelpdeskArticles } from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
 const require = arg1;
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+noopAll;
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { container: null, textContainer: null, header: null, body: null };
-createCacheKey = { padding: require("Themes").space.PX_32, paddingTop: require("Themes").space.PX_24 };
+createCacheKey = { padding: ThemesDefault.space.PX_32, paddingTop: ThemesDefault.space.PX_24 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginBottom: require("Themes").space.PX_24 };
-let obj1 = { marginBottom: require("Themes").space.PX_24 };
-createCacheKey[2] = { marginBottom: require("Themes").space.PX_16, alignItems: "center", textAlign: "center" };
+createCacheKey[1] = { marginBottom: ThemesDefault.space.PX_24 };
+let obj1 = { marginBottom: ThemesDefault.space.PX_24 };
+createCacheKey[2] = { marginBottom: ThemesDefault.space.PX_16, alignItems: "center", textAlign: "center" };
 createCacheKey[3] = { textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { marginBottom: require("Themes").space.PX_16, alignItems: "center", textAlign: "center" };
-const result = require("reset").fileFinishedImporting("modules/premium/native/google_play_price_changes/GooglePlayPriceChangeActionSheet.tsx");
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { marginBottom: ThemesDefault.space.PX_16, alignItems: "center", textAlign: "center" };
+const result = require("set").fileFinishedImporting("modules/premium/native/google_play_price_changes/GooglePlayPriceChangeActionSheet.tsx");
 
 export default function GooglePlayPriceChangeActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = markAsDismissed(589);
-  const items = [onInitializeSync];
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => priceChangeRecord.priceChangeRecord);
-  let obj1 = markAsDismissed(589);
-  const items1 = [reset];
+  obj1 = markAsDismissed(589);
+  const items1 = [closure_4];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => premiumSubscription.getPremiumSubscription(true));
   let str;
   if (stateFromStores1 != null) {
@@ -45,43 +46,43 @@ export default function GooglePlayPriceChangeActionSheet(markAsDismissed) {
   if (str == null) {
     str = "";
   }
-  let tmp2Result = tmp2(4039);
+  let tmp2Result = tmp2(4042);
   const tierDisplayNameByPlanId = tmp2Result.getTierDisplayNameByPlanId(str);
-  tmp2Result = tmp2(4039);
-  const intervalStringAsNoun = markAsDismissed(4039).getIntervalStringAsNoun(tmp2Result.getInterval(str).intervalType);
-  const tmp2Result1 = markAsDismissed(4039);
-  const tmp2Result2 = markAsDismissed(5316);
-  const formatPriceResult = markAsDismissed(5316).formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const tmp2Result3 = markAsDismissed(5316);
+  tmp2Result = tmp2(4042);
+  const intervalStringAsNoun = markAsDismissed(4042).getIntervalStringAsNoun(tmp2Result.getInterval(str).intervalType);
+  const tmp2Result1 = markAsDismissed(4042);
+  const tmp2Result2 = markAsDismissed(5321);
+  const formatPriceResult = markAsDismissed(5321).formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
+  const tmp2Result3 = markAsDismissed(5321);
   obj = { children: null };
   obj = { style: tmp.container, children: null };
   obj1 = { style: tmp.textContainer, children: null };
   const obj2 = { variant: "heading-xl/bold", style: tmp.header, children: null };
   const intl = tmp2(1236).intl;
   obj2[2] = intl.format(markAsDismissed(1236).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId });
-  const items2 = [callback(markAsDismissed(4734).Text, obj2), ];
+  const items2 = [callback(markAsDismissed(4739).Text, obj2), ];
   const obj3 = { variant: "text-md/medium", style: tmp.body, children: null };
   const intl2 = tmp2(1236).intl;
   const obj4 = { subscriptionName: tierDisplayNameByPlanId, changeDate: null, interval: null, newPrice: null, oldPrice: null, hc_article_url: null };
-  const formatPriceResult1 = markAsDismissed(5316).formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
+  const formatPriceResult1 = markAsDismissed(5321).formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
   obj4[1] = new Date(stateFromStores.expectedChargeTime);
   obj4[2] = intervalStringAsNoun;
   obj4[3] = formatPriceResult1;
   obj4[4] = formatPriceResult;
   const date = new Date(stateFromStores.expectedChargeTime);
-  obj4[5] = importDefault(1993).getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL);
+  obj4[5] = combinedDefault.getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL);
   obj3[2] = intl2.format(markAsDismissed(1236).t["n+Hrjb"], obj4);
-  items2[1] = callback(markAsDismissed(4734).Text, obj3);
+  items2[1] = callback(markAsDismissed(4739).Text, obj3);
   obj1[1] = items2;
   const items3 = [callback2(View, obj1), ];
   const obj5 = { variant: "primary", text: null, onPress: null };
   const intl3 = tmp2(1236).intl;
   obj5[1] = intl3.string(markAsDismissed(1236).t.BddRzS);
   obj5[2] = function onPress() {
-    markAsDismissed(outer1_7.USER_DISMISS);
+    markAsDismissed(closure_1_7.USER_DISMISS);
   };
-  items3[1] = callback(markAsDismissed(4745).Button, obj5);
+  items3[1] = callback(markAsDismissed(4750).Button, obj5);
   obj[1] = items3;
   obj[0] = callback2(View, obj);
-  return callback(markAsDismissed(6950).BottomSheet, obj);
+  return callback(markAsDismissed(6988).BottomSheet, obj);
 };

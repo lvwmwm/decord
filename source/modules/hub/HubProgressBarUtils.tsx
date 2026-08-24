@@ -1,21 +1,22 @@
-// Module ID: 11842
-// Function ID: 11843
+// Module ID: 11891
+// Function ID: 11892
 // Name: getHubProgressTitleForStep
-// Dependencies: [19, 1340, 5221, 11506, 676, 589, 1306, 1236, 1370, 1403, 2]
+// Dependencies: [19, 1340, 5226, 11555, 676, 589, 1306, 1236, 1370, 1403, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep, useHubProgressBarCompletedSteps
 
-// Module 11842 (getHubProgressTitleForStep)
-import noop from "noop";
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import set from "set";
-import { HUB_PROGRESS_STEP_ORDER } from "items";
-import { PlatformTypes } from "ME";
+// Module 11891 (getHubProgressTitleForStep)
+import create from "create" /* 1306 */;
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
+import closure_4 from "set" /* 5226 */;
+import { HUB_PROGRESS_STEP_ORDER } from "items" /* 11555 */;
+import { PlatformTypes } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx");
 
 export const getHubProgressTitleForStep = function getHubProgressTitleForStep(nextHubProgressStep) {
-  if (require(1306) /* create */.HubProgressStep.JOIN_GUILD === nextHubProgressStep) {
+  if (create.HubProgressStep.JOIN_GUILD === nextHubProgressStep) {
     const intl3 = tmp(1236).intl;
     return intl3.string(tmp(1236).t.iNR25n);
   } else if (tmp(1306).HubProgressStep.INVITE_USER === nextHubProgressStep) {
@@ -36,11 +37,11 @@ export const useHubProgressBarCompletedSteps = function useHubProgressBarComplet
     id = guild.id;
   }
   let memo = id;
-  const items = [handleConnectionClosedOrResumed];
+  const items = [closure_3];
   const stateFromStores = memo(stateFromStores1[5]).useStateFromStores(items, () => {
     let num = 0;
     if (null != memo) {
-      const guilds = outer1_3.settings.guilds;
+      const guilds = closure_1_3.settings.guilds;
       let num2;
       if (guilds != null) {
         if (guilds.guilds[tmp] != null) {
@@ -72,7 +73,7 @@ export const useHubProgressBarCompletedSteps = function useHubProgressBarComplet
     return set;
   })(stateFromStores1), items1);
   const obj = memo(stateFromStores1[5]);
-  const items2 = [set];
+  const items2 = [closure_4];
   stateFromStores1 = memo(stateFromStores1[5]).useStateFromStores(items2, () => null != localAccount.getLocalAccount(constants.CONTACTS));
   const items3 = [memo, stateFromStores1];
   return React.useMemo(() => {

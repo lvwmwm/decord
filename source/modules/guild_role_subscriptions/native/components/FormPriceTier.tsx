@@ -1,24 +1,21 @@
-// Module ID: 16991
-// Function ID: 16992
+// Module ID: 17084
+// Function ID: 17085
 // Name: FormPriceTier
-// Dependencies: [19, 16950, 676, 21, 1236, 13356, 5316, 38, 4342, 8821, 2007, 2]
+// Dependencies: [19, 17043, 676, 21, 1236, 13414, 5321, 38, 4346, 8858, 2008, 2]
 // Exports: default
 
-// Module 16991 (FormPriceTier)
-import "noop";
-import usePriceTiers from "usePriceTiers";
-import { CurrencyCodes } from "ME";
-import { jsx } from "jsxProd";
+// Module 17084 (FormPriceTier)
+import noopAll from "noop" /* 19 */;
+import usePriceTiers from "usePriceTiers" /* 17043 */;
+import { CurrencyCodes } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
 const require = arg1;
+noopAll;
 ({ LoadingState: c3, usePriceTiersAvailableInGuild: c4 } = usePriceTiers);
-const result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormPriceTier.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormPriceTier.tsx");
 
 export default function FormPriceTier(guildId) {
-  let c4;
-  let state;
   guildId = guildId.guildId;
   const price = guildId.price;
   const onChange = guildId.onChange;
@@ -62,16 +59,14 @@ export default function FormPriceTier(guildId) {
       const intl = guildId(onChange[4]).intl;
       obj[0] = intl.string(guildId(onChange[4]).t.nCOuYJ);
       obj[1] = tiers.map((amount) => {
-        const obj = { label: null, value: null };
-        obj[0] = outer1_0(outer1_2[6]).formatPrice(amount, closure_5);
-        obj[1] = amount;
+        const obj = { label: closure_1_0(closure_1_2[6]).formatPrice(amount, closure_5), value: amount };
         return obj;
       });
       obj[2] = function onItemSelect(arg0) {
         if (closure_2 != null) {
           tmp(arg0);
         }
-        outer1_1(outer1_2[8]).hideActionSheet();
+        closure_1_1(closure_1_2[8]).hideActionSheet();
       };
       obj[3] = price;
       obj.openLazy(guildId(onChange[10])(onChange[9], onChange.paths), "GuildRoleSubscriptionPriceTierSelect", obj);

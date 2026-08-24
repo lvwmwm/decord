@@ -1,9 +1,11 @@
-// Module ID: 4078
-// Function ID: 4079
+// Module ID: 4081
+// Function ID: 4082
 // Name: isFeatureTeenByDefault
 // Dependencies: [2]
 
-// Module 4078 (isFeatureTeenByDefault)
+// Module 4081 (isFeatureTeenByDefault)
+import set from "set" /* 2 */;
+
 class SettingsConfig {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -91,7 +93,7 @@ RegionalFeatureConfig["fromConnectionOpen"] = function fromConnectionOpen(region
   if (typeof AppStoreConfig !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const obj1 = Object.create(AppStoreConfig.prototype);
+  obj1 = Object.create(AppStoreConfig.prototype);
   obj1.shouldCollectSignal = true === regionalFeatureConfig.should_collect_app_store_signal;
   if (typeof RegionalFeatureConfig !== "function") {
     HermesBuiltin.throwTypeError();
@@ -102,7 +104,7 @@ RegionalFeatureConfig["fromConnectionOpen"] = function fromConnectionOpen(region
   obj2.appStore = obj1;
   return obj2;
 };
-const result = require("set").fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigModels.tsx");
+const result = set.fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigModels.tsx");
 
 export { SettingsConfig };
 export { AgeVerificationConfig };

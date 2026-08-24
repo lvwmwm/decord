@@ -1,20 +1,20 @@
-// Module ID: 9949
-// Function ID: 9950
+// Module ID: 9988
+// Function ID: 9989
 // Name: canUnlinkLobbyChannel
-// Dependencies: [4021, 676, 589, 2]
+// Dependencies: [4024, 676, 589, 2]
 // Exports: canUnlinkLobbyChannel, useCanUnlinkLobbyChannel
 
-// Module 9949 (canUnlinkLobbyChannel)
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "ME";
+// Module 9988 (canUnlinkLobbyChannel)
+import closure_2 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/lobbies/LobbyUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/lobbies/LobbyUtils.tsx");
 
 export const canUnlinkLobbyChannel = function canUnlinkLobbyChannel(channel, closure_0) {
   let obj = closure_0;
   if (closure_0 === undefined) {
-    obj = getUncachedChannelPermissions;
+    obj = closure_2;
   }
   let tmp = null != channel;
   if (tmp) {
@@ -34,20 +34,20 @@ export const canUnlinkLobbyChannel = function canUnlinkLobbyChannel(channel, clo
 };
 export const useCanUnlinkLobbyChannel = function useCanUnlinkLobbyChannel(channel) {
   const _require = channel;
-  const items = [getUncachedChannelPermissions];
+  const items = [closure_2];
   return _require(589).useStateFromStores(items, () => {
-    if (outer1_2 !== undefined) {
+    if (closure_1_2 !== undefined) {
       let tmp3 = null != tmp;
       if (tmp3) {
         let canResult = null != tmp.linkedLobby;
         if (canResult) {
-          canResult = obj.can(outer1_3.MANAGE_CHANNELS, tmp);
+          canResult = obj.can(closure_1_3.MANAGE_CHANNELS, tmp);
         }
         if (canResult) {
-          canResult = obj.can(outer1_3.VIEW_CHANNEL, tmp);
+          canResult = obj.can(closure_1_3.VIEW_CHANNEL, tmp);
         }
         if (canResult) {
-          canResult = obj.can(outer1_3.SEND_MESSAGES, tmp);
+          canResult = obj.can(closure_1_3.SEND_MESSAGES, tmp);
         }
         tmp3 = canResult;
       }

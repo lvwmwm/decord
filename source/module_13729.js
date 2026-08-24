@@ -1,10 +1,12 @@
 // Module ID: 13729
 // Function ID: 13730
-// Dependencies: [13676, 13727, 13710]
+// Dependencies: [13730, 13795]
 
 // Module 13729
+import assign from "assign" /* 13795 */;
+import module_13730 from "module_13730" /* 13730 */;
 
-export default require("getOwnPropertyDescriptor") ? ((arg0, arg1, arg2) => require(13727) /* defineProperty */.f(arg0, arg1, require(13710)(1, arg2))) : ((arg0, arg1, arg2) => {
-  arg0[arg1] = arg2;
-  return arg0;
-});
+let obj = { target: "Object", stat: true, arity: 2, forced: null };
+obj[3] = Object.assign !== assign;
+obj = { assign };
+module_13730(obj, obj);

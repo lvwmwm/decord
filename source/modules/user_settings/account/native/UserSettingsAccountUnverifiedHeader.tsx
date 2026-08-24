@@ -1,57 +1,60 @@
-// Module ID: 8624
-// Function ID: 8625
+// Module ID: 8661
+// Function ID: 8662
 // Name: handleOpenEmailVerification
-// Dependencies: [19, 1922, 21, 4661, 712, 8561, 1236, 589, 5433, 4734, 2]
+// Dependencies: [19, 1922, 21, 4668, 712, 8600, 1236, 589, 5438, 4739, 2]
 // Exports: default
 
-// Module 8624 (handleOpenEmailVerification)
-import "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8661 (handleOpenEmailVerification)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import _modDef8600 from "module_8600" /* 8600 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function handleOpenEmailVerification() {
-  importDefault(8561).open();
+  _modDef8600.open();
 }
 function getBannerText(currentUser) {
   if (null == currentUser) {
     return null;
   } else if (null == currentUser.email) {
     let obj = { title: null, button: null };
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["/yqgqs"]);
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl4.string(require(1236) /* getSystemLocale */.t.ydw5nX);
+    const intl3 = getSystemLocale.intl;
+    obj[0] = intl3.string(getSystemLocale.t["/yqgqs"]);
+    const intl4 = getSystemLocale.intl;
+    obj[1] = intl4.string(getSystemLocale.t.ydw5nX);
     let tmp3 = obj;
   } else {
     tmp3 = null;
     if (!currentUser.verified) {
       obj = { title: null, button: null };
-      const intl = require(1236) /* getSystemLocale */.intl;
-      obj[0] = intl.string(require(1236) /* getSystemLocale */.t["3sWbf3"]);
-      const intl2 = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["13ofGu"]);
+      const intl = getSystemLocale.intl;
+      obj[0] = intl.string(getSystemLocale.t["3sWbf3"]);
+      const intl2 = getSystemLocale.intl;
+      obj[1] = intl2.string(getSystemLocale.t["13ofGu"]);
       tmp3 = obj;
     }
   }
 }
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { accountWarning: null, accountWarningText: null, accountWarningButton: null };
-createCacheKey = { backgroundColor: require("Themes").unsafe_rawColors.RED_400, height: 36, alignItems: "center", alignSelf: "stretch", flexDirection: "row", paddingHorizontal: 16 };
+createCacheKey = { backgroundColor: ThemesDefault.unsafe_rawColors.RED_400, height: 36, alignItems: "center", alignSelf: "stretch", flexDirection: "row", paddingHorizontal: 16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flex: 1, lineHeight: 16 };
-createCacheKey[2] = { borderWidth: 1, borderColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.xs, paddingHorizontal: 8, paddingVertical: 4 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { borderWidth: 1, borderColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.xs, paddingHorizontal: 8, paddingVertical: 4 };
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountUnverifiedHeader.tsx");
+createCacheKey[2] = { borderWidth: 1, borderColor: ThemesDefault.colors.WHITE, borderRadius: ThemesDefault.radii.xs, paddingHorizontal: 8, paddingVertical: 4 };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderWidth: 1, borderColor: ThemesDefault.colors.WHITE, borderRadius: ThemesDefault.radii.xs, paddingHorizontal: 8, paddingVertical: 4 };
+const result = require("set").fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountUnverifiedHeader.tsx");
 
 export default function UserSettingsAccountUnverifiedHeader() {
-  const tmp = createCacheKey();
-  let obj = require(589) /* initialize */;
-  const items = [mergeGuildAvatar];
+  const tmp = callback3();
+  let obj = initialize;
+  const items = [closure_3];
   const tmp4 = getBannerText(obj.useStateFromStores(items, () => currentUser.getCurrentUser()));
   let tmp5 = null;
   if (null != tmp4) {
@@ -61,13 +64,13 @@ export default function UserSettingsAccountUnverifiedHeader() {
     obj = { style: null, variant: "text-xs/bold", color: "text-overlay-light", children: null };
     obj[0] = tmp.accountWarningText;
     obj[3] = tmp4.title;
-    const items1 = [callback(tmp2(4734).Text, obj), ];
-    const obj1 = { style: null, variant: "text-xs/medium", color: "text-overlay-light", children: null };
+    const items1 = [callback(tmp2(4739).Text, obj), ];
+    obj1 = { style: null, variant: "text-xs/medium", color: "text-overlay-light", children: null };
     obj1[0] = tmp.accountWarningButton;
     obj1[3] = tmp4.button;
-    items1[1] = callback(tmp2(4734).Text, obj1);
+    items1[1] = callback(tmp2(4739).Text, obj1);
     obj[3] = items1;
-    tmp5 = callback2(tmp2(5433).PressableOpacity, obj);
+    tmp5 = callback2(tmp2(5438).PressableOpacity, obj);
   }
   return tmp5;
 };

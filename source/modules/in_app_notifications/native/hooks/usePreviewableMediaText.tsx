@@ -1,14 +1,14 @@
-// Module ID: 10078
-// Function ID: 10079
+// Module ID: 10117
+// Function ID: 10118
 // Name: usePreviewableMediaText
-// Dependencies: [19, 10070, 1236, 2]
+// Dependencies: [19, 10109, 1236, 2]
 // Exports: usePreviewableMediaText
 
-// Module 10078 (usePreviewableMediaText)
-import noop from "noop";
+// Module 10117 (usePreviewableMediaText)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("getSystemLocale").fileFinishedImporting("modules/in_app_notifications/native/hooks/usePreviewableMediaText.tsx");
+const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/hooks/usePreviewableMediaText.tsx");
 
 export const usePreviewableMediaText = function usePreviewableMediaText(previewableMedia) {
   previewableMedia = previewableMedia.previewableMedia;
@@ -27,7 +27,7 @@ export const usePreviewableMediaText = function usePreviewableMediaText(previewa
           obj = { username: null };
           obj[0] = tmp90.nick;
           obj[0] = intl20.formatToPlainString(previewableMedia(author[2]).t.pTiyNB, obj);
-          let obj1 = obj;
+          obj1 = obj;
         } else {
           obj1 = { text: null, secondaryText: null };
           const intl19 = previewableMedia(author[2]).intl;

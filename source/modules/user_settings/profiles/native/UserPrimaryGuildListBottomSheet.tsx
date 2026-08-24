@@ -1,20 +1,18 @@
-// Module ID: 14063
-// Function ID: 14064
+// Module ID: 14131
+// Function ID: 14132
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [19, 17, 8168, 21, 4661, 500, 712, 8375, 6291, 4342, 1236, 7188, 9509, 8102, 12, 6950, 4734, 8029, 8083, 2]
+// Dependencies: [19, 17, 8207, 21, 4668, 500, 712, 8414, 6322, 4346, 1236, 7226, 9546, 8141, 12, 6988, 4739, 8068, 8122, 2]
 // Exports: default
 
-// Module 14063 (UserPrimaryGuildListBottomSheet)
-import importAllResult from "set";
-import { View } from "noop";
-import { GuildTagBadgeSize } from "items";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import set from "set";
-import set from "items";
+// Module 14131 (UserPrimaryGuildListBottomSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { GuildTagBadgeSize } from "items" /* 8207 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import set from "set" /* 500 */;
 
-let closure_6;
-let error;
 const require = arg1;
 let c3 = importAllResult;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -24,13 +22,11 @@ if (set.isAndroid()) {
   num = 16;
 }
 obj[3] = { lineHeight: num };
-obj = { backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+obj = { backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 obj[4] = obj;
 obj[5] = { flexDirection: "row", alignItems: "center", gap: 8, height: 20 };
 let closure_8 = createCacheKey.createStyles(obj);
 let closure_9 = importAllResult.memo((item) => {
-  let end;
-  let start;
   item = item.item;
   const selected = item.selected;
   const onSelectGuild = item.onSelectGuild;
@@ -87,7 +83,7 @@ let closure_9 = importAllResult.memo((item) => {
     const tmp12 = selected(tmp9[11]);
   }
   obj[4] = tmp7Result;
-  const obj1 = { style: tmp.itemTrailingStyle, children: null };
+  obj1 = { style: tmp.itemTrailingStyle, children: null };
   tmp7Result = null != item;
   if (tmp7Result) {
     tmp7Result = null != profile;
@@ -109,18 +105,16 @@ let closure_9 = importAllResult.memo((item) => {
 const result = set.fileFinishedImporting("modules/user_settings/profiles/native/UserPrimaryGuildListBottomSheet.tsx");
 
 export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
-  let dependencyMap;
-  let importDefault;
   availableGuilds = availableGuilds.availableGuilds;
   ({ userPrimaryGuild: importDefault, onSelectGuild: dependencyMap } = availableGuilds);
-  let importAllResult;
+  importAllResult = undefined;
   let memo;
   const tmp = callback2();
   importAllResult = tmp;
   let items = [availableGuilds];
   memo = importAllResult.useMemo(() => {
     const items = [null];
-    HermesBuiltin.arraySpread(outer1_1(outer1_2[14]).sortBy(availableGuilds, (name) => name.name.toLowerCase()), 1);
+    HermesBuiltin.arraySpread(closure_1_1(closure_1_2[14]).sortBy(availableGuilds, (name) => name.name.toLowerCase()), 1);
     return items;
   }, items);
   let obj = { scrollable: true, startExpanded: true, header: null, children: null };
@@ -128,11 +122,11 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
   obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
   const intl = availableGuilds(1236).intl;
   obj[3] = intl.string(availableGuilds(1236).t.Fo0g9x);
-  obj[1] = callback(availableGuilds(4734).Text, obj);
+  obj[1] = callback(availableGuilds(4739).Text, obj);
   obj[2] = callback(memo, obj);
-  obj[3] = callback(availableGuilds(8029).BottomSheetFlashList, {
+  obj[3] = callback(availableGuilds(8068).BottomSheetFlashList, {
     ItemSeparatorComponent() {
-      return outer1_6(availableGuilds(outer1_2[18]).FormDivider, { iconPush: true, style: _undefined.divider });
+      return closure_1_6(availableGuilds(closure_1_2[18]).FormDivider, { iconPush: true, style: divider.divider });
     },
     data: memo,
     contentContainerStyle: { padding: 16 },
@@ -144,8 +138,6 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
       return str;
     },
     renderItem(arg0) {
-      let index;
-      let item;
       ({ item, index } = arg0);
       const obj = { start: 0 === index, end: index === memo.length - 1, item, selected: null, onSelectGuild: null };
       let id;
@@ -158,8 +150,8 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
       }
       obj[3] = id === id1;
       obj[4] = closure_2;
-      return outer1_6(outer1_9, obj);
+      return closure_1_6(closure_1_9, obj);
     }
   });
-  return callback(availableGuilds(6950).BottomSheet, obj);
+  return callback(availableGuilds(6988).BottomSheet, obj);
 };

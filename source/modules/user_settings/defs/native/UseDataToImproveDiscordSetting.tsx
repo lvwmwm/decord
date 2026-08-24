@@ -1,54 +1,60 @@
-// Module ID: 14211
-// Function ID: 14212
+// Module ID: 14279
+// Function ID: 14280
 // Name: toggle
-// Dependencies: [5258, 8198, 676, 14181, 4827, 1236, 4763, 14212, 14213, 589, 10669, 2]
+// Dependencies: [5263, 8238, 676, 14249, 4832, 1236, 4768, 14280, 14281, 589, 10708, 2]
 
-// Module 14211 (toggle)
-import hasConsented from "hasConsented";
-import { Consents } from "ME";
-import createToggle from "createToggle";
+// Module 14279 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import componentDidMountDefault from "componentDidMount" /* 4768 */;
+import setDefault from "set" /* 4832 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14249 */;
+import handleRequestSuccess from "handleRequestSuccess" /* 14280 */;
+import closure_3 from "hasConsented" /* 5263 */;
+import { Consents } from "ME" /* 676 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.XuADY2);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.XuADY2);
   },
   parent: require("MobileUserSettings").MobileUserSettings.DATA_AND_PRIVACY,
   useValue: function useDataToImproveDiscordSettingValue() {
-    const items = [hasConsented];
-    return require(589) /* initialize */.useStateFromStores(items, () => hasConsented.hasConsented(constants.USAGE_STATISTICS));
+    const items = [closure_3];
+    return initialize.useStateFromStores(items, () => closure_3.hasConsented(constants.USAGE_STATISTICS));
   },
   onValueChange: function handleUsageStatisticsChange(arg0) {
     if (arg0) {
       let items = [Consents.USAGE_STATISTICS];
-      const obj3 = require(14212) /* handleRequestSuccess */;
-      require(14212) /* handleRequestSuccess */.setConsents(items, []).catch((message) => callback(14213).showDataPrivacyRateLimitAlert(message.message));
-      const setConsentsResult = require(14212) /* handleRequestSuccess */.setConsents(items, []);
+      const obj3 = handleRequestSuccess;
+      handleRequestSuccess.setConsents(items, []).catch((message) => callback(14281).showDataPrivacyRateLimitAlert(message.message));
+      const setConsentsResult = handleRequestSuccess.setConsents(items, []);
     } else {
-      let obj = importDefault(4827);
+      let obj = setDefault;
       obj = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null };
-      const intl = require(1236) /* getSystemLocale */.intl;
-      obj[0] = intl.string(require(1236) /* getSystemLocale */.t.OdPCbN);
-      const intl2 = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.MGWabA);
-      const intl3 = require(1236) /* getSystemLocale */.intl;
-      obj[2] = intl3.string(require(1236) /* getSystemLocale */.t["D3+rU4"]);
-      const intl4 = require(1236) /* getSystemLocale */.intl;
-      obj[3] = intl4.string(require(1236) /* getSystemLocale */.t.kYpG0u);
-      obj[4] = importDefault(4763).Colors.RED;
+      const intl = getSystemLocale.intl;
+      obj[0] = intl.string(getSystemLocale.t.OdPCbN);
+      const intl2 = getSystemLocale.intl;
+      obj[1] = intl2.string(getSystemLocale.t.MGWabA);
+      const intl3 = getSystemLocale.intl;
+      obj[2] = intl3.string(getSystemLocale.t["D3+rU4"]);
+      const intl4 = getSystemLocale.intl;
+      obj[3] = intl4.string(getSystemLocale.t.kYpG0u);
+      obj[4] = componentDidMountDefault.Colors.RED;
       obj[5] = function onConfirm() {
         const items = [constants.USAGE_STATISTICS];
-        return callback(14212).setConsents([], items);
+        return callback(14280).setConsents([], items);
       };
       obj.show(obj);
     }
   },
   useIsDisabled() {
-    return require(14181) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return useParentalControlledExplicitContentSettings.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/UseDataToImproveDiscordSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/UseDataToImproveDiscordSetting.tsx");
 
 export default createToggle;

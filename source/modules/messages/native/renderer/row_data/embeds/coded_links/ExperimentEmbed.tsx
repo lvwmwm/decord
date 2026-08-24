@@ -1,16 +1,17 @@
-// Module ID: 10986
-// Function ID: 10987
+// Module ID: 11025
+// Function ID: 11026
 // Name: ExperimentOverrideActionSheet
-// Dependencies: [19, 17, 1218, 4289, 4371, 21, 8169, 4364, 10681, 10682, 1364, 10987, 10988, 10989, 8171, 10990, 4366, 4342, 4296, 6950, 6949, 10991, 10680, 2]
+// Dependencies: [19, 17, 1218, 4293, 4375, 21, 8208, 4368, 10720, 10721, 1364, 11026, 11027, 11028, 8210, 11029, 4370, 4346, 4300, 6988, 6987, 11030, 10719, 2]
 // Exports: createExperimentEmbed, default
 
-// Module 10986 (ExperimentOverrideActionSheet)
-import Background from "Background";
-import { Image } from "ACTION_SHEET_HEIGHT_HALF";
-import fetchFingerprint from "fetchFingerprint";
-import { ExperimentEmbedType } from "ExperimentBuckets";
-import { InviteTypes } from "InviteSendStates";
-import { jsx } from "UserExperimentDebugView";
+// Module 11025 (ExperimentOverrideActionSheet)
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8208 */;
+import closure_3 from "noop" /* 19 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "fetchFingerprint" /* 1218 */;
+import { ExperimentEmbedType } from "ExperimentBuckets" /* 4293 */;
+import { InviteTypes } from "InviteSendStates" /* 4375 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 function ExperimentOverrideActionSheet(override) {
@@ -39,21 +40,21 @@ function ExperimentOverrideActionSheet(override) {
       });
       items = [];
       const item1 = map.forEach((label) => {
-        let closure_0 = label;
+        closure_0 = label;
         items.push({
           label: label.label,
           onPress() {
-            items(outer2_2[17]).hideActionSheet("ExperimentOverrideSheet");
-            const obj = items(outer2_2[17]);
-            map(outer2_2[18]).overrideBucket(outer1_1.system, label, label.id);
+            items(closure_2_2[17]).hideActionSheet("ExperimentOverrideSheet");
+            const obj = items(closure_2_2[17]);
+            map(closure_2_2[18]).overrideBucket(closure_1_1.system, label, label.id);
           }
         });
       });
       let obj = { label: "Clear Override", isDestructive: true, onPress: null };
       obj[2] = function onPress() {
-        items(outer1_2[17]).hideActionSheet("ExperimentOverrideSheet");
-        const obj = items(outer1_2[17]);
-        map(outer1_2[18]).overrideBucket(items.system, map, null);
+        items(closure_1_2[17]).hideActionSheet("ExperimentOverrideSheet");
+        const obj = items(closure_1_2[17]);
+        map(closure_1_2[18]).overrideBucket(items.system, map, null);
       };
       items.push(obj);
       return items;
@@ -68,7 +69,7 @@ function ExperimentOverrideActionSheet(override) {
   obj[1] = jsx(id(memo[21]).ExperimentDetails, { experiment, override: override.override, id, options: memo1, onCopyLink: callback });
   return jsx(id(memo[19]).BottomSheet, { title: experiment.title, subtitle: id });
 }
-let result = require("fetchFingerprint").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/ExperimentEmbed.tsx");
+let result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/ExperimentEmbed.tsx");
 
 export default function ConnectedExperimentOverrideActionSheet(id) {
   id = id.id;
@@ -120,20 +121,16 @@ export default function ConnectedExperimentOverrideActionSheet(id) {
   return tmp7;
 };
 export const createExperimentEmbed = function createExperimentEmbed(url, closure_2) {
-  let baseColors;
-  let colors;
-  let experiments;
-  let overridesInfo;
-  ({ colors, baseColors } = importDefault(8169)(closure_2));
-  let obj = experimentTreatmentFromEmbedURL(4364);
+  ({ colors, baseColors } = getEmbedThemeColorsDefault(closure_2));
+  let obj = experimentTreatmentFromEmbedURL(4368);
   const experimentFromEmbedURL = obj.getExperimentFromEmbedURL(url);
-  let obj1 = experimentTreatmentFromEmbedURL(4364);
+  obj1 = experimentTreatmentFromEmbedURL(4368);
   experimentTreatmentFromEmbedURL = obj1.getExperimentTreatmentFromEmbedURL(url);
-  const tmp3 = importDefault(8169)(closure_2);
-  const legacyExperiments = experimentTreatmentFromEmbedURL(10681).getLegacyExperiments();
+  const tmp3 = getEmbedThemeColorsDefault(closure_2);
+  const legacyExperiments = experimentTreatmentFromEmbedURL(10720).getLegacyExperiments();
   ({ experiments, overridesInfo } = legacyExperiments);
-  const obj3 = experimentTreatmentFromEmbedURL(10681);
-  const apexExperiments = experimentTreatmentFromEmbedURL(10682).getApexExperiments();
+  const obj3 = experimentTreatmentFromEmbedURL(10720);
+  const apexExperiments = experimentTreatmentFromEmbedURL(10721).getApexExperiments();
   let tmp10 = null;
   if (null != experimentFromEmbedURL) {
     let tmp11 = experiments[experimentFromEmbedURL];
@@ -151,7 +148,7 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
       if (tmp12 == null) {
         tmp12 = null;
       }
-      let tmp4Result = tmp4(4364);
+      let tmp4Result = tmp4(4368);
       const experimentBuckets = tmp4Result.getExperimentBuckets(tmp10);
       const iter = experimentBuckets.find((value) => value.value === experimentTreatmentFromEmbedURL);
       if (null != iter) {
@@ -162,9 +159,9 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
         EXPERIMENT = ExperimentEmbedType.EXPERIMENT;
       }
       id = id.getId();
-      tmp4Result = tmp4(10989);
+      tmp4Result = tmp4(11028);
       const experimentServerAssignment = tmp4Result.getExperimentServerAssignment(tmp10, id);
-      const experimentServerAssignmentLabel = tmp4(4364).getExperimentServerAssignmentLabel(tmp10, experimentServerAssignment);
+      const experimentServerAssignmentLabel = tmp4(4368).getExperimentServerAssignmentLabel(tmp10, experimentServerAssignment);
       if (EXPERIMENT === tmp13.EXPERIMENT_TREATMENT) {
         if (null != iter) {
           let label = iter.label;
@@ -179,7 +176,7 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
         obj.titleColor = colors.titleColor;
         obj.subtitle = label;
         obj.subtitleColor = colors.subtitleColor;
-        obj.thumbnailUrl = tmp4(8171).getAssetUriForEmbed(tmp(10990));
+        obj.thumbnailUrl = tmp4(8210).getAssetUriForEmbed(tmp(11029));
         obj.thumbnailBackgroundColor = colors.backgroundColor;
         obj.acceptLabelColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedColor : colors.acceptLabelGreenColor;
         obj.acceptLabelBackgroundColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedBackgroundColor : colors.acceptLabelGreenBackgroundColor;
@@ -208,14 +205,14 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
         }
         obj.subtitle = combined1;
         obj.subtitleColor = colors.subtitleColor;
-        obj.thumbnailUrl = tmp4(8171).getAssetUriForEmbed(tmp(10990));
+        obj.thumbnailUrl = tmp4(8210).getAssetUriForEmbed(tmp(11029));
         ({ backgroundColor: obj13.thumbnailBackgroundColor, acceptLabelGreenColor: obj13.acceptLabelColor, acceptLabelGreenBackgroundColor: obj13.acceptLabelBackgroundColor } = colors);
         obj.acceptLabelText = "View Experiment Details";
         obj.embedCanBeTapped = true;
         obj.type = InviteTypes.GUILD;
         return obj;
       }
-      const tmp4Result1 = tmp4(4364);
+      const tmp4Result1 = tmp4(4368);
     }
   }
   obj1 = {};
@@ -231,11 +228,11 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
   obj1.subtitleColor = colors.subtitleColor;
   obj1.bodyText = "This client is missing this experiment. You may need to open the surface where the experiment is used first.";
   obj1.bodyTextColor = colors.bodyTextColor;
-  const obj4 = experimentTreatmentFromEmbedURL(10682);
+  const obj4 = experimentTreatmentFromEmbedURL(10721);
   if (tmp4Result4.isThemeDark(closure_2)) {
-    let tmpResult = tmp(10987);
+    let tmpResult = tmp(11026);
   } else {
-    tmpResult = tmp(10988);
+    tmpResult = tmp(11027);
   }
   obj1.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
   obj1.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;

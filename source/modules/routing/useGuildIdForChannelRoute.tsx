@@ -1,20 +1,21 @@
-// Module ID: 4769
-// Function ID: 4770
+// Module ID: 4774
+// Function ID: 4775
 // Name: useGuildIdForChannelRoute
-// Dependencies: [1394, 4197, 676, 589, 1913, 2]
+// Dependencies: [1394, 4201, 676, 589, 1913, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
-// Module 4769 (useGuildIdForChannelRoute)
-import initializeFromUserSettings from "initializeFromUserSettings";
-import handleConnectionOpen from "handleConnectionOpen";
-import { FAVORITES } from "ME";
+// Module 4774 (useGuildIdForChannelRoute)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "initializeFromUserSettings" /* 1394 */;
+import closure_3 from "handleConnectionOpen" /* 4201 */;
+import { FAVORITES } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/routing/useGuildIdForChannelRoute.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/routing/useGuildIdForChannelRoute.tsx");
 
 export default function useGuildIdForChannelRoute(getGuildId) {
-  const items = [handleConnectionOpen];
-  let stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => guildId.getGuildId());
+  const items = [closure_3];
+  let stateFromStores = initialize.useStateFromStores(items, () => guildId.getGuildId());
   if (null == stateFromStores) {
     stateFromStores = getGuildId.getGuildId();
   }

@@ -1,25 +1,28 @@
-// Module ID: 12278
-// Function ID: 12279
+// Module ID: 12330
+// Function ID: 12331
 // Name: ImageSkeleton
-// Dependencies: [19, 17, 21, 4661, 712, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4739, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 12278 (ImageSkeleton)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12330 (ImageSkeleton)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { skeleton: null };
-createCacheKey = { borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
+createCacheKey = { borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetSkeletons.tsx");
+let closure_4 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetSkeletons.tsx");
 
 export const ImageSkeleton = function ImageSkeleton(style) {
   const obj = { style: null };
-  const items = [createCacheKey().skeleton, style.style];
+  const items = [callback().skeleton, style.style];
   obj[0] = items;
   return <View style={null} />;
 };
@@ -29,7 +32,7 @@ export const TextSkeleton = function TextSkeleton(widthChars) {
   if (num === undefined) {
     num = 15;
   }
-  const tmp2 = require(4734) /* Text */.TextStyleSheet[widthChars.variant];
-  const style = [createCacheKey().skeleton, { width: 0.46 * tmp2.fontSize * num, height: 0.8 * tmp2.lineHeight }];
+  const tmp2 = Text.TextStyleSheet[widthChars.variant];
+  const style = [callback().skeleton, { width: 0.46 * tmp2.fontSize * num, height: 0.8 * tmp2.lineHeight }];
   return <View style={style} />;
 };

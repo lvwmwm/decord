@@ -1,21 +1,20 @@
-// Module ID: 13859
-// Function ID: 13860
+// Module ID: 13924
+// Function ID: 13925
 // Name: items
-// Dependencies: [32, 4030, 1922, 4277, 676, 13846, 4375, 506, 8752, 8757, 2]
+// Dependencies: [32, 4033, 1922, 4281, 676, 13909, 4379, 506, 8789, 8794, 2]
 
-// Module 13859 (items)
-import _slicedToArray from "_slicedToArray";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import createRPCCommand from "createRPCCommand";
+// Module 13924 (items)
+import fromStringAll from "fromString" /* 506 */;
+import prototypeDefault from "prototype" /* 8789 */;
+import recurseReplaceContentTree from "recurseReplaceContentTree" /* 8794 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 13909 */;
 
-let RPCCommands;
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
-({ ApplicationFlags: error, RelationshipTypes: metroImportAll, RPCCommands, RPCErrors: c9 } = ME);
+require = arg1;
+({ ApplicationFlags: error, RelationshipTypes: closure_8, RPCCommands, RPCErrors: c9 } = ME);
 let obj = {};
 obj = { scope: null, handler: null };
 obj = {};
@@ -23,20 +22,18 @@ let items = [require("set").OAuth2Scopes.RELATIONSHIPS_READ];
 obj[require("RPC_SCOPE_CONFIG").RPC_SCOPE_CONFIG.ANY] = items;
 obj[0] = obj;
 obj[1] = function handler(socket) {
-  let tmp14;
-  let tmp15;
-  let obj = importAll(506);
+  let obj = fromStringAll;
   let num = socket.socket.application.flags;
   if (num == null) {
     num = 0;
   }
-  const obj2 = importAll(506);
+  const obj2 = fromStringAll;
   const tmp = importAll;
-  const deserializeResult = importAll(506).deserialize(num);
+  const deserializeResult = fromStringAll.deserialize(num);
   if (obj.has(deserializeResult, tmpResult.deserialize(constants.DISABLE_RELATIONSHIPS_ACCESS))) {
     obj = { errorCode: null };
     obj[0] = constants3.INVALID_PERMISSIONS;
-    const tmp34 = new importDefault(8752)(obj, "Missing Permissions");
+    const tmp34 = new prototypeDefault(obj, "Missing Permissions");
     throw tmp34;
   } else {
     const items = [];
@@ -56,11 +53,11 @@ obj[1] = function handler(socket) {
           let tmp22 = require;
           let tmp23 = dependencyMap;
           let tmp24 = dependencyMap;
-          let obj5 = require(8757) /* recurseReplaceContentTree */;
+          let obj5 = recurseReplaceContentTree;
           let tmp25 = tmp15;
           let tmp26 = user;
           let result = obj5.transformBaseRelationship(tmp16, tmp21);
-          let obj6 = require(8757) /* recurseReplaceContentTree */;
+          let obj6 = recurseReplaceContentTree;
           let arr = items.push(obj6.transformApplicationRelationship(result, socket.socket.application.id));
         }
       }
@@ -70,9 +67,9 @@ obj[1] = function handler(socket) {
     obj[0] = items;
     return obj;
   }
-  tmpResult = tmp(506);
+  tmpResult = fromStringAll;
 };
-obj[RPCCommands.GET_RELATIONSHIPS] = createRPCCommand.createRPCCommand(RPCCommands.GET_RELATIONSHIPS, obj);
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/rpc/server/commands/relationships.tsx");
+obj[RPCCommands.GET_RELATIONSHIPS] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.GET_RELATIONSHIPS, obj);
+let result = require("set").fileFinishedImporting("modules/rpc/server/commands/relationships.tsx");
 
 export default obj;

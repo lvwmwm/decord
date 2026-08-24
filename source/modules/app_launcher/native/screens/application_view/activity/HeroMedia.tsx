@@ -1,28 +1,30 @@
-// Module ID: 11260
-// Function ID: 11261
+// Module ID: 11311
+// Function ID: 11312
 // Name: HeroMedia
-// Dependencies: [19, 4662, 1499, 6951, 21, 4661, 9567, 11231, 589, 7145, 11232, 9018, 1236, 2]
+// Dependencies: [19, 4669, 1499, 6989, 21, 4668, 9604, 11282, 589, 7183, 11283, 9055, 1236, 2]
 // Exports: default, useHeroMediaDimensions
 
-// Module 11260 (HeroMedia)
-import "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11311 (HeroMedia)
+import noopAll from "noop" /* 19 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 9604 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11282 */;
+import getPreviewVideoAssetUrlDefault from "getPreviewVideoAssetUrl" /* 11283 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_7 = createCacheKey.createStyles({ mediaBackground: { backgroundColor: "black" } });
-const result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/app_launcher/native/screens/application_view/activity/HeroMedia.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/application_view/activity/HeroMedia.tsx");
 
 export default function HeroMedia(width) {
-  let applicationId;
-  let containerHeight;
   ({ applicationId, containerHeight } = width);
   const tmp = callback();
   width = { width: width.width }.width;
-  require(9567) /* useDefaultAppLauncherWidth */;
+  useDefaultAppLauncherWidth;
   let bound = width;
   if (width == null) {
     let tmp8 = width;
@@ -33,11 +35,11 @@ export default function HeroMedia(width) {
   }
   const diff = bound - 2 * DEFAULT_CONTENT_PADDING;
   const rounded = Math.floor(9 * diff / 16);
-  const tmp13 = importDefault(11231)({ applicationId, size: diff, names: ["embedded_cover"] });
+  const tmp13 = useEmbeddedActivityBackgroundDefault({ applicationId, size: diff, names: ["embedded_cover"] });
   let tmp2Result = tmp2(589);
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const items = [closure_3];
   const stateFromStores = tmp2Result.useStateFromStores(items, () => useReducedMotion.useReducedMotion, []);
-  tmp2Result = tmp2(7145);
+  tmp2Result = tmp2(7183);
   const getOrFetchApplication = tmp2Result.useGetOrFetchApplication(applicationId);
   let prop;
   if (getOrFetchApplication != null) {
@@ -49,7 +51,7 @@ export default function HeroMedia(width) {
   }
   let tmp18 = null;
   if (null != prop1) {
-    tmp18 = importDefault(11232)(applicationId, prop.activity_preview_video_asset_id);
+    tmp18 = getPreviewVideoAssetUrlDefault(applicationId, prop.activity_preview_video_asset_id);
   }
   let tmp21Result = null;
   if (null != tmp18) {
@@ -75,7 +77,7 @@ export default function HeroMedia(width) {
         if (str3 == null) {
           str3 = "";
         }
-        const obj1 = { applicationName: null };
+        obj1 = { applicationName: null };
         obj1[0] = str3;
         obj[7] = intl.formatToPlainString(tmp2(1236).t["Af+EQD"], obj1);
         const items1 = [tmp.mediaBackground, , ];
@@ -113,7 +115,7 @@ export const useHeroMediaDimensions = function useHeroMediaDimensions(arg0) {
     obj = {};
   }
   const width = obj.width;
-  require(9567) /* useDefaultAppLauncherWidth */;
+  useDefaultAppLauncherWidth;
   let bound = width;
   if (width == null) {
     let tmp5 = width;

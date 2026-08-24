@@ -1,10 +1,14 @@
-// Module ID: 4830
-// Function ID: 4831
+// Module ID: 4835
+// Function ID: 4836
 // Name: items
-// Dependencies: [4831, 4829, 2]
+// Dependencies: [4836, 4834, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData
 
-// Module 4830 (items)
+// Module 4835 (items)
+import set from "set" /* 2 */;
+import cancel from "cancel" /* 4834 */;
+import getClipCreatedAt from "getClipCreatedAt" /* 4836 */;
+
 const items = [
   {
     reName: /\.jpe?g$/i,
@@ -105,7 +109,7 @@ const items = [
     type: "image/webm"
   }
 ];
-const result = require("set").fileFinishedImporting("utils/UploadUtils.tsx");
+const result = set.fileFinishedImporting("utils/UploadUtils.tsx");
 
 export const MAX_TOTAL_ATTACHMENT_SIZE = 524288000;
 export const MAX_TOTAL_ATTACHMENT_SIZE_MB = 500;
@@ -151,17 +155,17 @@ export const getAttachmentPayload = function getAttachmentPayload(closure_0, clo
     obj.is_clip = true;
     obj.title = closure_0.clip.name;
     obj.application_id = closure_0.clip.applicationId;
-    obj.clip_created_at = require(4831) /* getClipCreatedAt */.getClipCreatedAt(closure_0.clip.createdAt);
-    const obj2 = require(4831) /* getClipCreatedAt */;
-    obj.clip_participant_ids = require(4831) /* getClipCreatedAt */.getClipParticipantIds(closure_0.clip.users);
+    obj.clip_created_at = getClipCreatedAt.getClipCreatedAt(closure_0.clip.createdAt);
+    const obj2 = getClipCreatedAt;
+    obj.clip_participant_ids = getClipCreatedAt.getClipParticipantIds(closure_0.clip.users);
     obj.clip_remote_id = closure_0.clip.remoteClipId;
-    const obj3 = require(4831) /* getClipCreatedAt */;
-    obj.clip_events_timeline = require(4831) /* getClipCreatedAt */.getClipEventsTimeline(closure_0.clip);
-    const obj4 = require(4831) /* getClipCreatedAt */;
+    const obj3 = getClipCreatedAt;
+    obj.clip_events_timeline = getClipCreatedAt.getClipEventsTimeline(closure_0.clip);
+    const obj4 = getClipCreatedAt;
   }
   let tmp9 = "item" in closure_0 && null != closure_0.item;
   if (tmp9) {
-    tmp9 = closure_0.item.platform === require(4829) /* cancel */.UploadPlatform.WEB;
+    tmp9 = closure_0.item.platform === cancel.UploadPlatform.WEB;
   }
   if (tmp9) {
     str = "mimeType";
@@ -176,11 +180,11 @@ export const getAttachmentPayload = function getAttachmentPayload(closure_0, clo
   return obj;
 };
 export const getFileData = function getFileData(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   let xMLHttpRequest = new XMLHttpRequest();
   return new Promise((arg0, arg1) => {
-    let closure_0 = arg0;
-    const xMLHttpRequest = arg1;
+    closure_0 = arg0;
+    xMLHttpRequest = arg1;
     xMLHttpRequest.open("GET", closure_0, true);
     xMLHttpRequest.responseType = "blob";
     xMLHttpRequest.onabort = (arg0) => lib(arg0);
@@ -200,10 +204,10 @@ export const getFileData = function getFileData(arg0) {
   });
 };
 export const getFileContentLength = function getFileContentLength(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return new Promise((arg0, onerror) => {
-    let closure_0 = arg0;
-    let closure_1 = onerror;
+    closure_0 = arg0;
+    closure_1 = onerror;
     const xMLHttpRequest = new XMLHttpRequest();
     xMLHttpRequest.open("HEAD", closure_0, true);
     xMLHttpRequest.onload = () => {
@@ -217,7 +221,7 @@ export const getFileContentLength = function getFileContentLength(arg0) {
             }
           }
           const _Error = Error;
-          const error = new Error("Content-Length header is missing");
+          error = new Error("Content-Length header is missing");
           onerror(error);
         }
       }
@@ -231,9 +235,6 @@ export const getFileContentLength = function getFileContentLength(arg0) {
   });
 };
 export const getFile = function getFile(overrideType) {
-  let i;
-  let overrideFilename;
-  let uri;
   ({ uri, i, overrideFilename } = overrideType);
   let str = overrideType.overrideType;
   let str3;

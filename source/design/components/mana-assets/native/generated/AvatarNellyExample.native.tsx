@@ -1,18 +1,19 @@
-// Module ID: 5526
-// Function ID: 5527
+// Module ID: 5531
+// Function ID: 5532
 // Name: AvatarNellyExample
-// Dependencies: [21, 5449, 5527, 2]
+// Dependencies: [21, 5454, 5532, 2]
 // Exports: AvatarNellyExample
 
-// Module 5526 (AvatarNellyExample)
-import { jsx } from "jsxProd";
+// Module 5531 (AvatarNellyExample)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5532 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarNellyExample.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarNellyExample.native.tsx");
 
 export const AvatarNellyExample = function AvatarNellyExample(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const AvatarNellyExample = function AvatarNellyExample(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5527);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AvatarNellyExample = function AvatarNellyExample(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

@@ -1,41 +1,43 @@
-// Module ID: 16444
-// Function ID: 16445
+// Module ID: 16539
+// Function ID: 16540
 // Name: getMessages
-// Dependencies: [16445, 16454, 16455, 16456, 16457, 16458, 16459, 16460, 16461, 16462, 16463, 16464, 16465, 16466, 16467, 16468, 16469, 16470, 16471, 16472, 16473, 16474, 16475, 16476, 16477, 16478, 16479, 16480, 16481, 16482, 652, 16486, 16487, 665, 2]
+// Dependencies: [16540, 16549, 16550, 16551, 16552, 16553, 16554, 16555, 16556, 16557, 16558, 16559, 16560, 16561, 16562, 16563, 16564, 16565, 16566, 16567, 16568, 16569, 16570, 16571, 16572, 16573, 16574, 16575, 16576, 16577, 652, 16581, 16582, 665, 2]
 
-// Module 16444 (getMessages)
-import module_16454 from "module_16454";
-import module_16455 from "module_16455";
-import module_16456 from "module_16456";
-import module_16457 from "module_16457";
-import module_16458 from "module_16458";
-import module_16459 from "module_16459";
-import module_16460 from "module_16460";
-import module_16461 from "module_16461";
-import module_16462 from "module_16462";
-import module_16463 from "module_16463";
-import module_16464 from "module_16464";
-import module_16465 from "module_16465";
-import module_16466 from "module_16466";
-import module_16467 from "module_16467";
-import module_16468 from "module_16468";
-import module_16469 from "module_16469";
-import module_16470 from "module_16470";
-import module_16471 from "module_16471";
-import module_16472 from "module_16472";
-import module_16473 from "module_16473";
-import module_16474 from "module_16474";
-import module_16475 from "module_16475";
-import module_16476 from "module_16476";
-import module_16477 from "module_16477";
-import module_16478 from "module_16478";
-import module_16479 from "module_16479";
-import module_16480 from "module_16480";
-import module_16481 from "module_16481";
-import { EventEmitter } from "EventEmitter";
+// Module 16539 (getMessages)
+import _modDef16540 from "module_16540" /* 16540 */;
+import format from "format" /* 16582 */;
+import module_16549 from "module_16549" /* 16549 */;
+import module_16550 from "module_16550" /* 16550 */;
+import module_16551 from "module_16551" /* 16551 */;
+import module_16552 from "module_16552" /* 16552 */;
+import module_16553 from "module_16553" /* 16553 */;
+import module_16554 from "module_16554" /* 16554 */;
+import module_16555 from "module_16555" /* 16555 */;
+import module_16556 from "module_16556" /* 16556 */;
+import module_16557 from "module_16557" /* 16557 */;
+import module_16558 from "module_16558" /* 16558 */;
+import module_16559 from "module_16559" /* 16559 */;
+import module_16560 from "module_16560" /* 16560 */;
+import module_16561 from "module_16561" /* 16561 */;
+import module_16562 from "module_16562" /* 16562 */;
+import module_16563 from "module_16563" /* 16563 */;
+import module_16564 from "module_16564" /* 16564 */;
+import module_16565 from "module_16565" /* 16565 */;
+import module_16566 from "module_16566" /* 16566 */;
+import module_16567 from "module_16567" /* 16567 */;
+import module_16568 from "module_16568" /* 16568 */;
+import module_16569 from "module_16569" /* 16569 */;
+import module_16570 from "module_16570" /* 16570 */;
+import module_16571 from "module_16571" /* 16571 */;
+import module_16572 from "module_16572" /* 16572 */;
+import module_16573 from "module_16573" /* 16573 */;
+import module_16574 from "module_16574" /* 16574 */;
+import module_16575 from "module_16575" /* 16575 */;
+import module_16576 from "module_16576" /* 16576 */;
+import { EventEmitter } from "EventEmitter" /* 652 */;
 
-let require = arg1;
-global.IntlMessageFormat = require("module_16445");
+require = arg1;
+global.IntlMessageFormat = _modDef16540;
 delete tmp2[tmp];
 if (typeof Intl === "undefined") {
   require("_default2");
@@ -59,20 +61,20 @@ class LazyPropertyProvider extends Provider {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
     closure_0 = applyArgumentsResult;
     applyArgumentsResult._refresh = function _refresh(defaultMessages, _parsedMessages) {
-      let closure_0 = defaultMessages;
+      closure_0 = defaultMessages;
       let obj = _parsedMessages;
       if (_parsedMessages === undefined) {
         obj = {};
       }
       const keys = Object.keys(defaultMessages.defaultMessages);
       const item = keys.forEach((arg0) => {
-        let closure_0 = arg0;
-        const obj = {
+        closure_0 = arg0;
+        obj = {
           configurable: true,
           get() {
             delete tmp2[tmp];
             const _getParsedMessagesResult = closure_0._getParsedMessages(closure_0, closure_0, closure_0._refresh);
-            outer1_1[closure_0] = _getParsedMessagesResult;
+            closure_1_1[closure_0] = _getParsedMessagesResult;
             return _getParsedMessagesResult;
           }
         };
@@ -130,8 +132,6 @@ _instance_members_initializer_I18N_ = function() {
   this._languages = [];
   this._chosenLocale = "";
   this._getParsedMessages = function _getParsedMessages(_context, closure_0, _createProxy) {
-    let defaultMessages;
-    let locale;
     ({ defaultMessages, locale } = _context);
     if (typeof _context.messages[closure_0] || defaultMessages[closure_0] === "object") {
       let obj = { messages: null, defaultMessages: null, locale: null };
@@ -141,11 +141,11 @@ _instance_members_initializer_I18N_ = function() {
       return _createProxy(obj);
     } else {
       try {
-        obj = self(16487);
+        obj = self(16582);
         return obj.getMessage(tmp4, locale);
       } catch (err) {
         if (typeof tmp3[tmp2] === "string") {
-          return self(16487).getMessage(tmp7, tmp);
+          return self(16582).getMessage(tmp7, tmp);
         } else {
           return "";
         }
@@ -174,7 +174,7 @@ class I18N extends EventEmitter {
       _Intl = Intl;
       tmp9 = closure_0;
       tmp10 = closure_1;
-      __addLocaleDataResult = Intl.__addLocaleData(require("module_16486"));
+      __addLocaleDataResult = Intl.__addLocaleData(require("module_16581"));
     }
     tmp6._languages = getLanguages();
     if (null != window.Proxy) {
@@ -194,18 +194,18 @@ class I18N extends EventEmitter {
   }
 }
 const prototype = I18N.prototype;
-prototype["updateMessagesForExperiment"] = function updateMessagesForExperiment(outer1_2) {
+prototype["updateMessagesForExperiment"] = function updateMessagesForExperiment(closure_1_2) {
   let self = this;
   self = this;
-  let closure_1 = outer1_2;
-  let closure_0 = arg1;
-  const _fetchMessagesResult = this._fetchMessages(outer1_2);
+  closure_1 = closure_1_2;
+  closure_0 = arg1;
+  const _fetchMessagesResult = this._fetchMessages(closure_1_2);
   if (_fetchMessagesResult instanceof Promise) {
     _fetchMessagesResult.then((arg0) => {
       const result = self._applyMessagesForLocale(callback(arg0), closure_1);
     });
   } else {
-    let result = self._applyMessagesForLocale(arg1(_fetchMessagesResult), outer1_2);
+    let result = self._applyMessagesForLocale(arg1(_fetchMessagesResult), closure_1_2);
   }
 };
 prototype["setLocale"] = function setLocale(_requestedLocale) {
@@ -218,7 +218,7 @@ prototype["setLocale"] = function setLocale(_requestedLocale) {
   }
 };
 prototype["setUpdateRules"] = function setUpdateRules(arg0) {
-  require(16487) /* format */.setUpdateRules(arg0);
+  format.setUpdateRules(arg0);
 };
 prototype["getLanguages"] = function getLanguages() {
   return this._languages;
@@ -228,8 +228,6 @@ prototype["getAvailableLocales"] = function getAvailableLocales() {
   const _languages = this._languages;
   const found = _languages.filter((enabled) => enabled.enabled);
   const mapped = found.map((arg0) => {
-    let code;
-    let name;
     ({ code, name } = arg0);
     const obj = { value: code, name, localizedName: null };
     let tmp = self.Messages[code];
@@ -300,7 +298,7 @@ prototype["getDefaultLocale"] = function getDefaultLocale() {
 prototype["_loadMessagesForLocale"] = function _loadMessagesForLocale(_requestedLocale) {
   let self = this;
   self = this;
-  let closure_0 = _requestedLocale;
+  closure_0 = _requestedLocale;
   const _fetchMessagesResult = this._fetchMessages(_requestedLocale);
   if (_fetchMessagesResult instanceof Promise) {
     let nextPromise = _fetchMessagesResult.then((_fetchMessagesResult) => self._applyMessagesForLocale(_fetchMessagesResult, closure_0));
@@ -330,18 +328,18 @@ prototype["_findMessages"] = function _findMessages(c2) {
   const _fetchMessagesResult = this._fetchMessages(c2);
   if (_fetchMessagesResult instanceof Promise) {
     const _Error = Error;
-    const error = new Error("Messages are still loading.");
+    error = new Error("Messages are still loading.");
     throw error;
   } else {
     return _fetchMessagesResult;
   }
 };
-prototype["_fetchMessages"] = function _fetchMessages(outer1_2) {
+prototype["_fetchMessages"] = function _fetchMessages(closure_1_2) {
   let self = this;
   self = this;
-  let closure_0 = outer1_2;
+  closure_0 = closure_1_2;
   try {
-    const _getMessagesResult = self._getMessages(outer1_2);
+    const _getMessagesResult = self._getMessages(closure_1_2);
     if (_getMessagesResult instanceof Promise) {
       let catchPromise = promise.catch(tmp3);
     } else {
@@ -352,7 +350,7 @@ prototype["_fetchMessages"] = function _fetchMessages(outer1_2) {
     return tmp();
   }
 };
-let result = require("module_16455").fileFinishedImporting("../discord_common/js/packages/i18n/i18n.tsx");
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/i18n/i18n.tsx");
 
 export const getSystemLocale = require("getSystemLocale").getSystemLocale;
 export { I18N };

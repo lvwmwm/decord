@@ -4,7 +4,9 @@
 // Dependencies: [1512]
 
 // Module 1511 (TabRouter)
-let require = arg1;
+import getRouteHistory from "getRouteHistory" /* 1512 */;
+
+require = arg1;
 const dependencyMap = arg6;
 let obj = {
   jumpTo(name, params) {
@@ -14,7 +16,7 @@ let obj = {
 };
 arg5.TabActions = obj;
 arg5.TabRouter = function TabRouter(merged) {
-  let obj = require(1512) /* getRouteHistory */;
+  obj = getRouteHistory;
   const SwitchRouterResult = obj.SwitchRouter(merged);
   require = SwitchRouterResult;
   obj = {};
@@ -22,7 +24,7 @@ arg5.TabRouter = function TabRouter(merged) {
   obj.type = "tab";
   obj.getInitialState = function getInitialState(arg0) {
     const initialState = SwitchRouterResult.getInitialState(arg0);
-    const obj = {};
+    obj = {};
     const merged = Object.assign(initialState);
     obj.type = "tab";
     obj.key = "tab-" + initialState.key;
@@ -33,7 +35,7 @@ arg5.TabRouter = function TabRouter(merged) {
       return stale;
     } else {
       const rehydratedState = SwitchRouterResult.getRehydratedState(stale, arg1);
-      const obj = {};
+      obj = {};
       const merged = Object.assign(rehydratedState);
       obj.type = "tab";
       const _HermesInternal = HermesInternal;

@@ -1,13 +1,13 @@
-// Module ID: 8644
-// Function ID: 8645
+// Module ID: 8681
+// Function ID: 8682
 // Name: useFastestListSections
-// Dependencies: [19, 7127, 8645, 8646, 2]
+// Dependencies: [19, 7165, 8682, 8683, 2]
 // Exports: default
 
-// Module 8644 (useFastestListSections)
-import noop from "noop";
+// Module 8681 (useFastestListSections)
+import closure_2 from "noop" /* 19 */;
 
-const result = require("ITEM").fileFinishedImporting("modules/fastest_list/useFastestListSections.android.tsx");
+const result = require("set").fileFinishedImporting("modules/fastest_list/useFastestListSections.android.tsx");
 
 export default function useFastestListSections(fastestListId) {
   fastestListId = fastestListId.fastestListId;
@@ -30,9 +30,9 @@ export default function useFastestListSections(fastestListId) {
   if (num4 === undefined) {
     num4 = 0;
   }
-  let c8;
+  closure_8 = undefined;
   const tmp = fastestListId(itemSize[1])(() => {
-    let c0 = 0;
+    c0 = 0;
     return {
       getId() {
         return "" + c0;
@@ -43,7 +43,7 @@ export default function useFastestListSections(fastestListId) {
       }
     };
   });
-  c8 = tmp;
+  closure_8 = tmp;
   let items = [keyExtractor, itemSize, num, num2, num3, num4, fastestListId, tmp, sections];
   const memo = keyExtractor.useMemo(() => {
     let tmp2Result = num;
@@ -103,7 +103,7 @@ export default function useFastestListSections(fastestListId) {
         obj[4] = str2;
         obj[5] = tmp7;
         obj[6] = sections;
-        obj[7] = _undefined.getId();
+        obj[7] = closure_8.getId();
         obj[8] = items1;
         obj[9] = items5;
         obj[10] = typeof tmp10 === "number";
@@ -149,7 +149,7 @@ export default function useFastestListSections(fastestListId) {
           let tmp24 = sections;
           let tmp25 = sections[num3];
           if (typeof tmp !== "number") {
-            let obj1 = { sizes: null };
+            obj1 = { sizes: null };
             obj1[0] = [];
             let arr9 = items3.push(obj1);
           }
@@ -185,7 +185,7 @@ export default function useFastestListSections(fastestListId) {
   }, items);
   let items1 = [tmp, memo];
   const effect = keyExtractor.useEffect(() => {
-    _undefined.incrementId();
+    closure_8.incrementId();
   }, items1);
   return fastestListId(itemSize[3])(memo);
 };

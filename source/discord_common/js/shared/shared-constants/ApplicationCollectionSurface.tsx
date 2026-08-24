@@ -1,9 +1,11 @@
-// Module ID: 11253
-// Function ID: 11254
+// Module ID: 11304
+// Function ID: 11305
 // Name: ApplicationCollectionSurface
 // Dependencies: [2]
 
-// Module 11253 (ApplicationCollectionSurface)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionSurface.tsx");
+// Module 11304 (ApplicationCollectionSurface)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionSurface.tsx");
 
 export const ApplicationCollectionSurface = { APPLICATION_DIRECTORY: 1, [1]: "APPLICATION_DIRECTORY", APP_LAUNCHER_IN_TEXT: 2, [2]: "APP_LAUNCHER_IN_TEXT", APP_LAUNCHER_IN_VOICE_BANNER: 3, [3]: "APP_LAUNCHER_IN_VOICE_BANNER" };

@@ -4,8 +4,8 @@
 // Dependencies: [41, 42]
 
 // Module 1050 (LayoutShiftManager)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import LayoutShiftManager from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 class LayoutShiftManager {
@@ -30,7 +30,6 @@ class LayoutShiftManager {
     return;
   }
 }
-_classCallCheck = LayoutShiftManager;
 let items = [
   {
     key: "__init",

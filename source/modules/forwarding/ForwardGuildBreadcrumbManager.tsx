@@ -1,11 +1,14 @@
-// Module ID: 17045
-// Function ID: 17046
+// Module ID: 17138
+// Function ID: 17139
 // Name: fetchForwardReferencedGuilds
-// Dependencies: [676, 17046, 5038, 16635, 2]
+// Dependencies: [676, 17139, 5043, 16731, 2]
 
-// Module 17045 (fetchForwardReferencedGuilds)
-import { MessageReferenceTypes } from "ME";
-import "initialize";
+// Module 17138 (fetchForwardReferencedGuilds)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import initializeDefault from "initialize" /* 5043 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 16731 */;
+import _fetchBasicGuild from "_fetchBasicGuild" /* 17139 */;
 
 function fetchForwardReferencedGuilds(message_reference) {
   message_reference = message_reference.message_reference;
@@ -16,11 +19,13 @@ function fetchForwardReferencedGuilds(message_reference) {
   if (type === MessageReferenceTypes.FORWARD) {
     const guild_id = message_reference.message_reference.guild_id;
     if (null != guild_id) {
-      const basicGuild = require(17046) /* _fetchBasicGuild */.fetchBasicGuild(guild_id);
-      const obj = require(17046) /* _fetchBasicGuild */;
+      const basicGuild = _fetchBasicGuild.fetchBasicGuild(guild_id);
+      const obj = _fetchBasicGuild;
     }
   }
 }
+const MessageReferenceTypes = ME.MessageReferenceTypes;
+initializeDefault;
 class ForwardGuildBreadcrumbManager extends tmp6 {
   constructor() {
     tmp3 = new ForwardGuildBreadcrumbManager(tmp2, tmp, new.target);
@@ -31,7 +36,7 @@ class ForwardGuildBreadcrumbManager extends tmp6 {
 }
 tmp = new tmp(tmp4, tmp3, tmp2, Object, defineProperty, ForwardGuildBreadcrumbManager, importDefault);
 // ThrowIfThisInitialized (0x7c)
-require("setupLoadFromMessageManagerHandlers")(tmp, fetchForwardReferencedGuilds);
-const result = require("initialize").fileFinishedImporting("modules/forwarding/ForwardGuildBreadcrumbManager.tsx");
+setupLoadFromMessageManagerHandlersDefault(tmp, fetchForwardReferencedGuilds);
+const result = set.fileFinishedImporting("modules/forwarding/ForwardGuildBreadcrumbManager.tsx");
 
 export default tmp;

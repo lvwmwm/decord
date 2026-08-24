@@ -1,16 +1,23 @@
-// Module ID: 16537
-// Function ID: 16538
+// Module ID: 16632
+// Function ID: 16633
 // Name: handleConnectionOpen
-// Dependencies: [4495, 5067, 3, 687, 5038, 5402, 14878, 500, 691, 2]
+// Dependencies: [4499, 5072, 3, 687, 5043, 5407, 14942, 500, 691, 2]
 
-// Module 16537 (handleConnectionOpen)
-import _handleConnectionOpen from "_handleConnectionOpen";
-import handleClearCaches from "handleClearCaches";
-import "initialize";
+// Module 16632 (handleConnectionOpen)
+import timestampDefault from "timestamp" /* 3 */;
+import set from "set" /* 500 */;
+import setDefault from "set" /* 687 */;
+import keys from "keys" /* 691 */;
+import initializeDefault from "initialize" /* 5043 */;
+import okAsyncDefault from "okAsync" /* 5407 */;
+import _writeCaches from "_writeCaches" /* 14942 */;
+import closure_3 from "_handleConnectionOpen" /* 4499 */;
+import closure_4 from "handleClearCaches" /* 5072 */;
 
-let require = arg1;
-let c5 = new require("set")("CacheStore");
-let closure_6 = 15 * require("set").Millis.MINUTE;
+require = arg1;
+let closure_5 = new timestampDefault("CacheStore");
+let closure_6 = 15 * setDefault.Millis.MINUTE;
+initializeDefault;
 class CacheManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -30,7 +37,7 @@ class CacheManager extends tmp3 {
 }
 const prototype = CacheManager.prototype;
 prototype["handleConnectionOpen"] = function handleConnectionOpen() {
-  const result = importDefault(5402).doesDatabaseVersionMatchJsConstants();
+  const result = okAsyncDefault.doesDatabaseVersionMatchJsConstants();
   result.then((arg0) => {
     if (!arg0) {
       callback(table[6]).writeCaches();
@@ -42,16 +49,16 @@ prototype["handleConnectionClose"] = function handleConnectionClose() {
   return false;
 };
 prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
-  const obj = require(500) /* set */;
+  const obj = set;
   const tmp = require;
-  const AppStates = require(691) /* keys */.AppStates;
-  let isConnectedResult = (require(500) /* set */.isAndroid() ? AppStates.BACKGROUND : AppStates.INACTIVE) === state.state;
+  const AppStates = keys.AppStates;
+  let isConnectedResult = (set.isAndroid() ? AppStates.BACKGROUND : AppStates.INACTIVE) === state.state;
   if (isConnectedResult) {
     isConnectedResult = connected.isConnected();
   }
   if (isConnectedResult) {
-    tmp(14878).writeCaches();
-    const tmpResult = tmp(14878);
+    _writeCaches.writeCaches();
+    const tmpResult = _writeCaches;
   }
   return false;
 };
@@ -59,17 +66,17 @@ prototype["handleWindowFocus"] = function handleWindowFocus(focused) {
   if (!focused.focused) {
     const _Date = Date;
     if (Date.now() - lastWriteTime.lastWriteTime > closure_6) {
-      tmp2.verbose("Writing cache from window unfocus");
-      require(14878) /* _writeCaches */.writeCaches();
-      const obj = require(14878) /* _writeCaches */;
+      closure_5.verbose("Writing cache from window unfocus");
+      _writeCaches.writeCaches();
+      const obj = _writeCaches;
     } else {
-      tmp2.verbose("Not writing cache from window unfocus");
+      closure_5.verbose("Not writing cache from window unfocus");
     }
   }
   return false;
 };
 const cacheManager = new CacheManager();
-const tmp2 = new require("set")("CacheStore");
-let result = require("timestamp").fileFinishedImporting("modules/cache/CacheManager.native.tsx");
+const tmp2 = new timestampDefault("CacheStore");
+let result = require("set").fileFinishedImporting("modules/cache/CacheManager.native.tsx");
 
 export default cacheManager;

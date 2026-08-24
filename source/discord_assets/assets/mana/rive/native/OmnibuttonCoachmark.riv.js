@@ -1,10 +1,12 @@
-// Module ID: 4188
-// Function ID: 4189
+// Module ID: 4192
+// Function ID: 4193
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4188 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/OmnibuttonCoachmark.riv.js");
+// Module 4192 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/OmnibuttonCoachmark.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/2fd5e65f4e6005bad7e6390ff97b3307cdcd3d45dafb7a743b0455859ccf5a22.riv";
 export const metadata = { fileBytes: 4652 };

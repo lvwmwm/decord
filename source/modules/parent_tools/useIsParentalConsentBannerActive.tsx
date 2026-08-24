@@ -1,19 +1,23 @@
-// Module ID: 14222
-// Function ID: 14223
+// Module ID: 14290
+// Function ID: 14291
 // Name: useIsParentalConsentBannerActive
-// Dependencies: [14223, 14225, 2]
+// Dependencies: [14291, 14293, 2]
 // Exports: useIsParentalConsentBannerActive
 
-// Module 14222 (useIsParentalConsentBannerActive)
-const result = require("set").fileFinishedImporting("modules/parent_tools/useIsParentalConsentBannerActive.tsx");
+// Module 14290 (useIsParentalConsentBannerActive)
+import set from "set" /* 2 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 14291 */;
+import frozen from "frozen" /* 14293 */;
+
+const result = set.fileFinishedImporting("modules/parent_tools/useIsParentalConsentBannerActive.tsx");
 
 export const useIsParentalConsentBannerActive = function useIsParentalConsentBannerActive() {
-  const parentalConsentWarning = require(14223) /* useParentalConsentWarning */.useParentalConsentWarning();
+  const parentalConsentWarning = useParentalConsentWarning.useParentalConsentWarning();
   let hasItem;
   if (parentalConsentWarning != null) {
     const surfaces = parentalConsentWarning.surfaces;
     if (surfaces != null) {
-      hasItem = surfaces.includes(require(14225) /* frozen */.ParentalConsentWarningSurface.BANNER);
+      hasItem = surfaces.includes(frozen.ParentalConsentWarningSurface.BANNER);
     }
   }
   return true === hasItem;

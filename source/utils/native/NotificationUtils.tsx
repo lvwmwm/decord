@@ -1,21 +1,22 @@
-// Module ID: 11590
-// Function ID: 11591
-// Dependencies: [5, 17, 11578, 676, 11584, 698, 11579, 10040, 2]
+// Module ID: 11639
+// Function ID: 11640
+// Dependencies: [5, 17, 11627, 676, 11633, 698, 11628, 10079, 2]
 
-// Module 11590
-import expandEventProperties from "expandEventProperties";
-import { NativeModules } from "get ActivityIndicator";
-import { PermissionStateType } from "set";
-import { AnalyticEvents } from "ME";
+// Module 11639
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import createSoundForPack from "createSoundForPack" /* 10079 */;
+import NativeModulesDefault from "NativeModules" /* 11628 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import { PermissionStateType } from "set" /* 11627 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 let result = require("set").fileFinishedImporting("utils/native/NotificationUtils.tsx");
 
 export default {
   hasPermission() {
-    return importDefault(11579).requestPermissions((badge) => {
-      let _alert;
-      let sound;
+    return NativeModulesDefault.requestPermissions((badge) => {
       ({ alert: _alert, sound } = badge);
       if (!_alert) {
         _alert = badge.badge;
@@ -28,14 +29,12 @@ export default {
   },
   requestPermission(arg0) {
     const _require = arg0;
-    let result = _require(11584).setPushPermissionState(PermissionStateType.REQUESTED);
-    let obj = _require(11584);
-    importDefault(698).track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
-    const obj2 = importDefault(698);
-    const permissions = importDefault(11579).requestPermissions();
+    let result = _require(11633).setPushPermissionState(PermissionStateType.REQUESTED);
+    let obj = _require(11633);
+    expandEventPropertiesDefault.track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
+    const obj2 = expandEventPropertiesDefault;
+    const permissions = NativeModulesDefault.requestPermissions();
     permissions.then((sound) => {
-      let _alert;
-      let badge;
       ({ alert: _alert, badge } = sound);
       if (!_alert) {
         _alert = sound.sound;
@@ -47,8 +46,8 @@ export default {
       if (_alert) {
         str = "accepted";
       }
-      outer1_1(outer1_2[5]).track(outer1_6.PERMISSIONS_ACKED, { type: "notification", action: str });
-      const NativePermissionManager = outer1_4.NativePermissionManager;
+      closure_1_1(closure_1_2[5]).track(closure_1_6.PERMISSIONS_ACKED, { type: "notification", action: str });
+      const NativePermissionManager = closure_1_4.NativePermissionManager;
       const notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
       notificationAuthorizationStatus.then((closure_0) => {
         if (null != closure_0) {
@@ -76,7 +75,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -91,7 +90,7 @@ export default {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c0 = tmp;
@@ -106,6 +105,6 @@ export default {
     if (arg1 === undefined) {
       num = 1;
     }
-    require(10040) /* createSoundForPack */.playSound(arg0, num, undefined, arg2);
+    createSoundForPack.playSound(arg0, num, undefined, arg2);
   }
 };

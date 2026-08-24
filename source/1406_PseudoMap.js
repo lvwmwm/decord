@@ -4,6 +4,8 @@
 // Dependencies: [1407]
 
 // Module 1406 (PseudoMap)
+import PseudoMap from "PseudoMap" /* 1407 */;
+
 let tmp = "pseudomap" === process.env.npm_package_name;
 if (tmp) {
   const _process = process;
@@ -21,4 +23,4 @@ if (typeof Map === "function") {
   }
 }
 
-export { default } from "PseudoMap";
+export default PseudoMap;

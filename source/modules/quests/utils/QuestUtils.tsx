@@ -1,27 +1,29 @@
-// Module ID: 7474
-// Function ID: 7475
+// Module ID: 7512
+// Function ID: 7513
 // Name: isSponsoredPlayQuest
-// Dependencies: [32, 4540, 1910, 4021, 4542, 7475, 6716, 7476, 7477, 7478, 7479, 7480, 2]
+// Dependencies: [32, 4545, 1910, 4024, 4547, 7513, 6753, 7514, 7515, 7516, 7517, 7518, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 7474 (isSponsoredPlayQuest)
-import _slicedToArray from "_slicedToArray";
-import set from "set";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import updateVoiceState from "updateVoiceState";
-import keys from "keys";
-import QuestsExperimentLocations from "QuestsExperimentLocations";
+// Module 7512 (isSponsoredPlayQuest)
+import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7514 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 7515 */;
+import canStreamInChannel from "canStreamInChannel" /* 7516 */;
+import QuestType2 from "QuestType" /* 7517 */;
+import getQuestContentName from "getQuestContentName" /* 7518 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "set" /* 4545 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_6 from "updateVoiceState" /* 4547 */;
+import closure_7 from "keys" /* 7513 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 6753 */;
 
-let c10;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function isSponsoredPlayQuest(quest) {
   if (null == quest) {
     return false;
   } else {
-    const desktopApplicationIds = require(7476) /* getApplicationIdsByTaskTypes */.getDesktopApplicationIds(quest);
+    const desktopApplicationIds = getApplicationIdsByTaskTypes.getDesktopApplicationIds(quest);
     let tmp3 = null != desktopApplicationIds;
     if (tmp3) {
       tmp3 = desktopApplicationIds.length > 1;
@@ -32,25 +34,23 @@ function isSponsoredPlayQuest(quest) {
 function hasVariant(nextResult, NON_GAMING_PLAY_QUEST) {
   return new Set(nextResult.config.features).has(NON_GAMING_PLAY_QUEST);
 }
-({ DISCORD_APPLICATION_ID: metroImportAll, QuestVariants: c9, RewardFilterTypes: c10 } = QuestsExperimentLocations);
-let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/quests/utils/QuestUtils.tsx");
+({ DISCORD_APPLICATION_ID: closure_8, QuestVariants: c9, RewardFilterTypes: c10 } = QuestsExperimentLocations);
+let result = require("set").fileFinishedImporting("modules/quests/utils/QuestUtils.tsx");
 
 export { isSponsoredPlayQuest };
 export const isPlayAnyActivityQuest = function isPlayAnyActivityQuest(quest) {
-  return require(7476) /* getApplicationIdsByTaskTypes */.getPlayActivityApplicationId(quest) === closure_8;
+  return getApplicationIdsByTaskTypes.getPlayActivityApplicationId(quest) === closure_8;
 };
 export { hasVariant };
 export const canLaunchActivity = function canLaunchActivity(quest) {
-  let hasPlayActivityTaskResult = require(7476) /* getApplicationIdsByTaskTypes */.hasPlayActivityTask(quest);
+  let hasPlayActivityTaskResult = getApplicationIdsByTaskTypes.hasPlayActivityTask(quest);
   if (!hasPlayActivityTaskResult) {
-    hasPlayActivityTaskResult = require(7476) /* getApplicationIdsByTaskTypes */.hasAchievementActivityTask(quest);
-    const tmpResult = require(7476) /* getApplicationIdsByTaskTypes */;
+    hasPlayActivityTaskResult = getApplicationIdsByTaskTypes.hasAchievementActivityTask(quest);
+    const tmpResult = getApplicationIdsByTaskTypes;
   }
   return hasPlayActivityTaskResult;
 };
-export const filterQuestsForSocialEntrypoints = function filterQuestsForSocialEntrypoints(stateFromStores, outer1_15) {
-  let tmp5;
-  let tmp6;
+export const filterQuestsForSocialEntrypoints = function filterQuestsForSocialEntrypoints(stateFromStores, closure_1_15) {
   const map = new Map();
   while (tmp !== undefined) {
     let tmp3 = callback;
@@ -65,7 +65,7 @@ export const filterQuestsForSocialEntrypoints = function filterQuestsForSocialEn
       if (!hasVariant(tmp7, constants.NON_GAMING_PLAY_QUEST)) {
         let tmp12 = require;
         let tmp13 = dependencyMap;
-        let obj2 = require(7476) /* getApplicationIdsByTaskTypes */;
+        let obj2 = getApplicationIdsByTaskTypes;
         let tmp14 = tmp6;
         let questTaskTypes = obj2.getQuestTaskTypes(tmp7);
         let tmp16 = questTaskTypes;
@@ -88,20 +88,20 @@ export const filterQuestsForSocialEntrypoints = function filterQuestsForSocialEn
   return map;
 };
 export const isShareableQuest = function isShareableQuest(config) {
-  return config.sharePolicy !== require(7477) /* QuestSharePolicy */.QuestSharePolicy.NOT_SHAREABLE;
+  return config.sharePolicy !== QuestSharePolicy.QuestSharePolicy.NOT_SHAREABLE;
 };
 export const isStreamingAndCanWatch = function isStreamingAndCanWatch(arg0, stateFromStores) {
   let first = null != arg0 && null != stateFromStores;
   if (first) {
-    const obj = require(7478) /* canStreamInChannel */;
-    first = obj.canWatchStream(stateFromStores, updateVoiceState, createGuildRecordFromRust, getUncachedChannelPermissions, set)[0];
+    const obj = canStreamInChannel;
+    first = obj.canWatchStream(stateFromStores, closure_6, closure_4, closure_5, closure_3)[0];
   }
   return first;
 };
 export const getQuestType = function getQuestType(config) {
-  let obj = require(7476) /* getApplicationIdsByTaskTypes */;
+  let obj = getApplicationIdsByTaskTypes;
   obj = { config };
-  const QuestType = require(7479) /* QuestType */.QuestType;
+  const QuestType = QuestType2.QuestType;
   return obj.hasWatchVideoTasks(obj) ? QuestType.VIDEO : QuestType.GAMEPLAY;
 };
 export const isQuestFeaturedByHero = function isQuestFeaturedByHero(questHomeHero, id) {
@@ -137,13 +137,8 @@ export const shouldShowBountiesGivenFilters = function shouldShowBountiesGivenFi
   return tmp2;
 };
 export const setQuestHomeUtmContext = function setQuestHomeUtmContext(arg0) {
-  let fromContent;
-  let questId;
-  let utmMedium;
-  let utmSource;
   ({ questId, fromContent, utmSource, utmMedium } = arg0);
   state = state.getState();
-  const obj = { utmSourceCurrent: utmSource, utmMediumCurrent: utmMedium, utmCampaignCurrent: questId, utmContentCurrent: null };
-  obj[3] = require(7480) /* getQuestContentName */.getQuestContentName(fromContent);
+  const obj = { utmSourceCurrent: utmSource, utmMediumCurrent: utmMedium, utmCampaignCurrent: questId, utmContentCurrent: getQuestContentName.getQuestContentName(fromContent) };
   state.setUtmCurrentContext(obj);
 };

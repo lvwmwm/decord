@@ -1,12 +1,13 @@
-// Module ID: 14888
-// Function ID: 14889
-// Dependencies: [13770, 14199, 10669, 14867, 2]
+// Module ID: 14952
+// Function ID: 14953
+// Dependencies: [13828, 14267, 10708, 14931, 2]
 
-// Module 14888
-import checkForNewerBuild from "checkForNewerBuild";
-import createToggle from "createToggle";
+// Module 14952
+import useStaffOrDeveloperSettingPredicate from "useStaffOrDeveloperSettingPredicate" /* 14267 */;
+import closure_2 from "checkForNewerBuild" /* 13828 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
     return "Internal Build Active";
@@ -17,11 +18,11 @@ createToggle = {
     return "Build installed from builds.discord.tools";
   },
   usePredicate: function useHasCheckNativeUpdateSetting() {
-    const obj = require(14199) /* useStaffOrDeveloperSettingPredicate */;
-    return hasUpdatesConfigured.hasUpdatesConfigured && require(14199) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
+    const obj = useStaffOrDeveloperSettingPredicate;
+    return hasUpdatesConfigured.hasUpdatesConfigured && useStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
   }
 };
 createToggle = createToggle.createStatic(createToggle);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/InternalBuildActiveSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/InternalBuildActiveSetting.tsx");
 
 export default createToggle;

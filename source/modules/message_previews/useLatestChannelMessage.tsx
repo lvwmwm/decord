@@ -1,20 +1,18 @@
-// Module ID: 14664
-// Function ID: 14665
+// Module ID: 14732
+// Function ID: 14733
 // Name: useLatestChannelMessage
-// Dependencies: [32, 19, 13265, 589, 14665, 2]
+// Dependencies: [32, 19, 13323, 589, 14733, 2]
 // Exports: default
 
-// Module 14664 (useLatestChannelMessage)
-import _slicedToArray from "_slicedToArray";
-import { useEffect } from "noop";
-import initialize from "initialize";
+// Module 14732 (useLatestChannelMessage)
+import closure_3 from "_slicedToArray" /* 32 */;
+import { useEffect } from "noop" /* 19 */;
+import closure_5 from "initialize" /* 13323 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/message_previews/useLatestChannelMessage.tsx");
+const result = require("set").fileFinishedImporting("modules/message_previews/useLatestChannelMessage.tsx");
 
 export default function useLatestChannelMessage(arg0) {
-  let c1;
-  let id;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -23,13 +21,13 @@ export default function useLatestChannelMessage(arg0) {
   id = undefined;
   let callback;
   ({ guild_id: c1, id } = arg0);
-  let items = [initialize];
+  let items = [closure_5];
   const tmp = callback(flag(id[3]).useStateFromStoresArray(items, () => {
     if (flag) {
       const items = [null, true];
       let items1 = items;
     } else {
-      items1 = [outer1_5.message(c1, id), outer1_5.isLatest(c1, id)];
+      items1 = [closure_1_5.message(c1, id), closure_1_5.isLatest(c1, id)];
     }
     return items1;
   }), 2);
@@ -38,7 +36,7 @@ export default function useLatestChannelMessage(arg0) {
   useEffect(() => {
     let tmp2 = null == id;
     if (!tmp2) {
-      tmp2 = c3;
+      tmp2 = closure_3;
     }
     if (!tmp2) {
       _undefined(id[4]).addWant(id);

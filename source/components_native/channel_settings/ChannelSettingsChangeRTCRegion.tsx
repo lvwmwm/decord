@@ -1,24 +1,29 @@
-// Module ID: 16070
-// Function ID: 16071
+// Module ID: 16168
+// Function ID: 16169
 // Name: handleSetRegion
-// Dependencies: [853, 19, 1391, 16029, 21, 4661, 712, 4104, 1236, 8132, 8100, 8101, 8083, 589, 38, 2]
+// Dependencies: [853, 19, 1391, 16127, 21, 4668, 712, 4107, 1236, 8171, 8139, 8140, 8122, 589, 38, 2]
 // Exports: default
 
-// Module 16070 (handleSetRegion)
-import _toArray from "_toArray";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import initialize from "initialize";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import { PureComponent } from "noop";
-import importAllResult from "noop";
+// Module 16168 (handleSetRegion)
+import _modDef38 from "module_38" /* 38 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Form from "Form" /* 8122 */;
+import TableRadioRow from "TableRadioRow" /* 8139 */;
+import closure_3 from "_toArray" /* 853 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "initialize" /* 16127 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let require = arg1;
+require = arg1;
 const AUTOMATIC_RTC_REGION = "AUTOMATIC_RTC_REGION";
 createCacheKey = { form: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+let closure_8 = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+const PureComponent = importAllResult.PureComponent;
 class ChannelSettingsChangeRTCRegion extends PureComponent {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -26,7 +31,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
     obj = { regions: [], submitting: false, selectedRegionId: AUTOMATIC_RTC_REGION };
     channel = applyArgumentsResult.props.channel;
     tmp3 = AUTOMATIC_RTC_REGION;
-    regions = __esModule.getRegions(channel.getGuildId());
+    regions = closure_5.getRegions(channel.getGuildId());
     obj = { id: AUTOMATIC_RTC_REGION, name: null, sample_hostname: "", sample_port: 0, vip: false, deprecated: false, optimal: false, hidden: false };
     intl = require("getSystemLocale").intl;
     obj[1] = intl.string(require("getSystemLocale").t.JEmsap);
@@ -69,7 +74,7 @@ prototype["handleSetRegion"] = function handleSetRegion(arg0) {
   let self = this;
   self = this;
   let tmp = arg0;
-  let c0 = arg0;
+  c0 = arg0;
   let tmp2 = arg0;
   if (arg0 == null) {
     tmp2 = AUTOMATIC_RTC_REGION;
@@ -79,21 +84,21 @@ prototype["handleSetRegion"] = function handleSetRegion(arg0) {
     c0 = null;
     tmp = null;
   }
-  self(8132).updateChannel({ rtcRegion: tmp });
+  self(8171).updateChannel({ rtcRegion: tmp });
   self.setState({ submitting: true }, () => {
-    let obj = self(outer1_2[9]);
+    let obj = self(closure_1_2[9]);
     obj = { rtcRegion: c0 };
     obj.saveChannel(self.props.channel.id, obj);
   });
 };
 prototype["renderRegion"] = function renderRegion(label) {
-  return jsx(require(8100) /* TableRadioRow */.TableRadioRow, { label: label.name, value: label.id }, label.id);
+  return jsx(TableRadioRow.TableRadioRow, { label: label.name, value: label.id }, label.id);
 };
 prototype["renderRegions"] = function renderRegions() {
   const self = this;
   const substr = callback(this.state.regions).slice(0);
   const mapped = substr.map(this.renderRegion, this);
-  return jsx(self(8101).TableRadioGroup, {
+  return jsx(self(8140).TableRadioGroup, {
     defaultValue: this.state.selectedRegionId,
     onChange(arg0) {
       return self.handleSetRegion(arg0);
@@ -103,17 +108,16 @@ prototype["renderRegions"] = function renderRegions() {
   });
 };
 prototype["render"] = function render() {
-  const obj = { style: createCacheKey(this.context).form, children: null };
-  obj[1] = this.renderRegions();
-  return jsx(require(8083) /* Form */.Form, { style: createCacheKey(this.context).form, children: null });
+  const tmp = callback2(this.context);
+  return jsx(Form.Form, { style: callback2(this.context).form, children: this.renderRegions() });
 };
 ChannelSettingsChangeRTCRegion.contextType = require("ManaContext").ThemeContext;
-const result = require("ensureGuildLoaded").fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeRTCRegion.tsx");
+const result = require("set").fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeRTCRegion.tsx");
 
 export default function ConnectedChannelSettingsChangeRTCRegion(channelId) {
   channelId = channelId.channelId;
-  const items = [ensureGuildLoaded];
-  const channel = channelId(589).useStateFromStores(items, () => outer1_4.getChannel(channelId));
-  importDefault(38)(null != channel, "ConnectedChannelSettingsChangeRTCRegion: channel cannot be undefined");
+  const items = [closure_4];
+  const channel = channelId(589).useStateFromStores(items, () => closure_1_4.getChannel(channelId));
+  _modDef38(null != channel, "ConnectedChannelSettingsChangeRTCRegion: channel cannot be undefined");
   return <ChannelSettingsChangeRTCRegion channel={channel} />;
 };

@@ -1,26 +1,22 @@
-// Module ID: 14983
-// Function ID: 14984
+// Module ID: 15047
+// Function ID: 15048
 // Name: onRenderFirstOrbsItem
-// Dependencies: [19, 17, 5301, 678, 21, 4661, 7139, 9175, 14955, 4342, 9264, 14959, 1297, 8974, 1236, 14982, 2]
+// Dependencies: [19, 17, 5306, 678, 21, 4668, 7177, 9212, 15019, 4346, 9301, 15023, 1297, 9011, 1236, 15046, 2]
 // Exports: default
 
-// Module 14983 (onRenderFirstOrbsItem)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import updateCategoriesAndProducts from "updateCategoriesAndProducts";
-import { CollectiblesMobileShopScreen as closure_6 } from "items";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15047 (onRenderFirstOrbsItem)
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "updateCategoriesAndProducts" /* 5306 */;
+import { CollectiblesMobileShopScreen as closure_6 } from "items" /* 678 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_8 = createCacheKey.createStyles({ container: { display: "flex", flex: 1 } });
-let result = require("updateCategoriesAndProducts").fileFinishedImporting("modules/collectibles/native/CollectiblesShopOrbsPage.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesShopOrbsPage.tsx");
 
 export default function _default(arg0) {
-  let fetchShopHomeError;
-  let getItemType;
-  let onRenderFirstOrbsItem;
-  let shopBlocks;
   ({ shopBlocks, onRenderFirstOrbsItem } = arg0);
   let analyticsLocations;
   let collectiblesAnalyticsContext;
@@ -31,7 +27,7 @@ export default function _default(arg0) {
   analyticsLocations = analyticsLocations(collectiblesAnalyticsContext[6])().analyticsLocations;
   let obj = onRenderFirstOrbsItem(collectiblesAnalyticsContext[7]);
   collectiblesAnalyticsContext = obj.useCollectiblesAnalyticsContext();
-  let obj1 = onRenderFirstOrbsItem(collectiblesAnalyticsContext[8]);
+  obj1 = onRenderFirstOrbsItem(collectiblesAnalyticsContext[8]);
   const collectiblesShopDeepLinkProps = obj1.useCollectiblesShopDeepLinkProps({});
   initialProductSkuId = collectiblesShopDeepLinkProps.initialProductSkuId;
   initialVariantIndex = collectiblesShopDeepLinkProps.initialVariantIndex;
@@ -44,7 +40,7 @@ export default function _default(arg0) {
         let found;
         if (category != null) {
           const products = category.products;
-          found = products.find((skuId) => skuId.skuId === noop);
+          found = products.find((skuId) => skuId.skuId === closure_3);
         }
         if (null != found) {
           let obj = analyticsLocations(collectiblesAnalyticsContext[9]);
@@ -73,10 +69,9 @@ export default function _default(arg0) {
     return tmp10;
   }
   obj = { style: callback().container, children: null };
-  obj1 = { style: { marginTop: 42 }, Illustration: null, body: null };
-  obj1[1] = onRenderFirstOrbsItem(collectiblesAnalyticsContext[13]).NoResults;
+  obj1 = { style: { marginTop: 42 }, Illustration: tmp4(tmp3[13]).NoResults, body: null };
   const intl = tmp4(tmp3[14]).intl;
   obj1[2] = intl.string(onRenderFirstOrbsItem(collectiblesAnalyticsContext[14]).t.eAn6z2);
-  obj[1] = jsx(onRenderFirstOrbsItem(collectiblesAnalyticsContext[12]).EmptyState, { style: { marginTop: 42 }, Illustration: null, body: null });
+  obj[1] = jsx(onRenderFirstOrbsItem(collectiblesAnalyticsContext[12]).EmptyState, { style: { marginTop: 42 }, Illustration: tmp4(tmp3[13]).NoResults, body: null });
   tmp10 = <initialVariantIndex style={callback().container}>{null}</initialVariantIndex>;
 };

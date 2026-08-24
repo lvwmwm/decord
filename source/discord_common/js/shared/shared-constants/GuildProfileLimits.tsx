@@ -1,10 +1,12 @@
-// Module ID: 6908
-// Function ID: 6909
+// Module ID: 6946
+// Function ID: 6947
 // Name: MAX_TRAITS
 // Dependencies: [2]
 
-// Module 6908 (MAX_TRAITS)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildProfileLimits.tsx");
+// Module 6946 (MAX_TRAITS)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildProfileLimits.tsx");
 
 export const MAX_TRAITS = 5;
 export const MAX_TRAIT_LABEL_LENGTH = 24;

@@ -5,14 +5,16 @@
 // Exports: createReactNativeRewriteFrames
 
 // Module 1121 (ANDROID_DEFAULT_BUNDLE_NAME)
-import { Platform } from "get ActivityIndicator";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
 
+const Platform = get_ActivityIndicator.Platform;
 let c2 = "app:///index.android.bundle";
 
 export const ANDROID_DEFAULT_BUNDLE_NAME = "app:///index.android.bundle";
 export const IOS_DEFAULT_BUNDLE_NAME = "app:///main.jsbundle";
 export const createReactNativeRewriteFrames = function createReactNativeRewriteFrames() {
-  let obj = require(817) /* registerSpanErrorInstrumentation */;
+  let obj = registerSpanErrorInstrumentation;
   obj = {
     iteratee(platform) {
       if ("java" !== platform.platform) {

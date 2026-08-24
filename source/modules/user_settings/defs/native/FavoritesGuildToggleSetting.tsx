@@ -1,39 +1,46 @@
-// Module ID: 14670
-// Function ID: 14671
+// Module ID: 14738
+// Function ID: 14739
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 3079, 9979, 14671, 9978, 2]
+// Dependencies: [8238, 10708, 1236, 3082, 10018, 14739, 10017, 2]
 
-// Module 14670 (toggle)
-import createToggle from "createToggle";
+// Module 14738 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 3082 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import getNextPositionFromChannels from "getNextPositionFromChannels" /* 10017 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10018 */;
+import computeIsFavoritesGuildVisibleDefault from "computeIsFavoritesGuildVisible" /* 14739 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(3079).OT1NK5);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.OT1NK5);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
+  parent: MobileUserSettings.MobileUserSettings.APPEARANCE,
   usePredicate() {
-    return require(9979) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
+    return useFavoritesAccess.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
   },
   useValue() {
-    return importDefault(14671)(false);
+    return computeIsFavoritesGuildVisibleDefault(false);
   },
-  onValueChange: require("getNextPositionFromChannels").setFavoritesGuildVisibilityFromSettings
+  onValueChange: getNextPositionFromChannels.setFavoritesGuildVisibilityFromSettings
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(3079).OT1NK5);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.OT1NK5);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
+  parent: MobileUserSettings.MobileUserSettings.APPEARANCE,
   usePredicate() {
-    return require(9979) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
+    return useFavoritesAccess.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
   },
   useValue() {
-    return importDefault(14671)(false);
+    return computeIsFavoritesGuildVisibleDefault(false);
   },
-  onValueChange: require("getNextPositionFromChannels").setFavoritesGuildVisibilityFromSettings
+  onValueChange: getNextPositionFromChannels.setFavoritesGuildVisibilityFromSettings
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/FavoritesGuildToggleSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/FavoritesGuildToggleSetting.tsx");
 
 export default toggle;

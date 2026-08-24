@@ -1,20 +1,20 @@
-// Module ID: 15351
-// Function ID: 15352
+// Module ID: 15415
+// Function ID: 15416
 // Name: useEnsureHydratedUsers
-// Dependencies: [19, 6704, 1922, 7275, 2]
+// Dependencies: [19, 6741, 1922, 7313, 2]
 // Exports: useEnsureHydratedUsers
 
-// Module 15351 (useEnsureHydratedUsers)
-import noop from "noop";
-import handleConnectionReset from "handleConnectionReset";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 15415 (useEnsureHydratedUsers)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "handleConnectionReset" /* 6741 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useEnsureHydratedUsers.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useEnsureHydratedUsers.tsx");
 
 export const useEnsureHydratedUsers = function useEnsureHydratedUsers(guild_id, items1) {
   const _require = guild_id;
-  const dependencyMap = items1;
+  dependencyMap = items1;
   const items = [guild_id, items1];
   items1 = [guild_id, items1];
   const memo = React.useMemo(() => {
@@ -28,10 +28,10 @@ export const useEnsureHydratedUsers = function useEnsureHydratedUsers(guild_id, 
   }, items);
   const effect = React.useEffect(() => {
     const item = items1.forEach((id) => {
-      if (null == outer1_4.getUser(id)) {
-        const member = outer1_3.requestMember(closure_0, id);
+      if (null == closure_1_4.getUser(id)) {
+        const member = closure_1_3.requestMember(closure_0, id);
       }
     });
   }, items1);
-  const subscribeGuildMembers = _require(7275).useSubscribeGuildMembers(memo, "useEnsureHydratedUsers");
+  const subscribeGuildMembers = _require(7313).useSubscribeGuildMembers(memo, "useEnsureHydratedUsers");
 };

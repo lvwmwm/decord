@@ -1,17 +1,18 @@
-// Module ID: 16540
-// Function ID: 16541
+// Module ID: 16635
+// Function ID: 16636
 // Name: getAppMajorVersion
 // Dependencies: [1626, 2]
 // Exports: getAppMajorVersion
 
-// Module 16540 (getAppMajorVersion)
-import getConstants from "getConstants";
+// Module 16635 (getAppMajorVersion)
+import set from "set" /* 2 */;
+import getConstants from "getConstants" /* 1626 */;
 
-getConstants = getConstants.getConstants();
-const result = require("set").fileFinishedImporting("utils/native/AppInfoUtils.tsx");
+const constants = getConstants.getConstants();
+const result = set.fileFinishedImporting("utils/native/AppInfoUtils.tsx");
 
 export const getAppMajorVersion = function getAppMajorVersion() {
-  if (undefined === getConstants) {
+  if (undefined === closure_0) {
     return -1;
   } else {
     const parts = tmp.Version.split(".");

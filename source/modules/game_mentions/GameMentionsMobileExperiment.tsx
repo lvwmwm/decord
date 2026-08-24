@@ -1,12 +1,13 @@
-// Module ID: 7295
-// Function ID: 7296
+// Module ID: 7333
+// Function ID: 7334
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 7295 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 7333 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-07-game-mentions-v2-mobile", kind: "user", defaultConfig: { enabled: false, showNewTag: false, combineMentionAutocomplete: false }, variations: { 0: { enabled: false, showNewTag: false, combineMentionAutocomplete: false }, 1: { enabled: true, showNewTag: true, combineMentionAutocomplete: false }, 2: { enabled: true, showNewTag: false, combineMentionAutocomplete: false }, 3: { enabled: true, showNewTag: false, combineMentionAutocomplete: true } } });
-const result = require("set").fileFinishedImporting("modules/game_mentions/GameMentionsMobileExperiment.tsx");
+const result = set.fileFinishedImporting("modules/game_mentions/GameMentionsMobileExperiment.tsx");
 
 export const GameMentionsMobileExperiment = apexExperiment;

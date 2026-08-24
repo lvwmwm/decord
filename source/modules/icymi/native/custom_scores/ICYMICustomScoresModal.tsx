@@ -1,30 +1,30 @@
-// Module ID: 15711
-// Function ID: 15712
+// Module ID: 15780
+// Function ID: 15781
 // Name: ICYMICustomScoresModal
-// Dependencies: [19, 21, 9931, 4661, 712, 6312, 8492, 1236, 9941, 15712, 15713, 2]
+// Dependencies: [19, 21, 9970, 4668, 712, 6343, 8531, 1236, 9980, 15781, 15782, 2]
 // Exports: default
 
-// Module 15711 (ICYMICustomScoresModal)
-import "noop";
-import jsxProd from "jsxProd";
-import createNativeStackNavigator from "createNativeStackNavigator";
-import createCacheKey from "createCacheKey";
+// Module 15780 (ICYMICustomScoresModal)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 9970 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
 const require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
+let closure_5 = createNativeStackNavigator.createNativeStackNavigator();
 createNativeStackNavigator = { header: null };
-createNativeStackNavigator = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createNativeStackNavigator = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createNativeStackNavigator[0] = createNativeStackNavigator;
-createNativeStackNavigator = createCacheKey.createStyles(createNativeStackNavigator);
-const result = require("createNativeStackNavigator").fileFinishedImporting("modules/icymi/native/custom_scores/ICYMICustomScoresModal.tsx");
+let closure_6 = createCacheKey.createStyles(createNativeStackNavigator);
+const result = require("set").fileFinishedImporting("modules/icymi/native/custom_scores/ICYMICustomScoresModal.tsx");
 
 export default function ICYMICustomScoresModal() {
-  const _require = createNativeStackNavigator();
-  let obj = _require(6312);
-  let closure_1 = obj.useAccessibilityNativeStackOptions();
+  const _require = callback3();
+  let obj = _require(6343);
+  closure_1 = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions() {
       let merged = Object.assign(closure_1);
@@ -47,28 +47,27 @@ export default function ICYMICustomScoresModal() {
       const obj = { title: null, headerLeft: null };
       const intl = lib(1236).intl;
       obj[0] = intl.string(lib(1236).t.jVshKt);
-      obj[1] = lib(8492).getRenderModalCloseImage(navigation.navigation);
-      const merged = Object.assign(callback(9941)());
+      obj[1] = lib(8531).getRenderModalCloseImage(navigation.navigation);
+      const merged = Object.assign(callback(9980)());
       return obj;
     },
     getComponent() {
-      return lib(15712).default;
+      return lib(15781).default;
     }
   };
   const items = [
-    callback(createNativeStackNavigator.Screen, obj),
-    callback(createNativeStackNavigator.Screen, {
+    callback(closure_5.Screen, obj),
+    callback(closure_5.Screen, {
       name: "guild",
       options(navigation) {
-        const obj = { headerLeft: null };
-        obj[0] = lib(8492).getRenderModalBackImage(navigation.navigation);
+        const obj = { headerLeft: lib(8531).getRenderModalBackImage(navigation.navigation) };
         return obj;
       },
       getComponent() {
-        return lib(15713).default;
+        return lib(15782).default;
       }
     })
   ];
   obj[2] = items;
-  return callback2(createNativeStackNavigator.Navigator, obj);
+  return callback2(closure_5.Navigator, obj);
 };

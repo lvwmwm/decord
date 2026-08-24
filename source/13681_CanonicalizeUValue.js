@@ -1,0 +1,15 @@
+// Module ID: 13681
+// Function ID: 13682
+// Name: CanonicalizeUValue
+// Dependencies: [13675]
+
+// Module 13681 (CanonicalizeUValue)
+import isMatched from "isMatched" /* 13675 */;
+
+require = arg1;
+const dependencyMap = arg6;
+arg5.CanonicalizeUValue = function CanonicalizeUValue(formatted, str) {
+  formatted = str.toLowerCase();
+  isMatched.invariant(undefined !== formatted, "ukey must be defined");
+  return formatted;
+};

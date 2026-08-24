@@ -1,12 +1,14 @@
-// Module ID: 4048
-// Function ID: 4049
+// Module ID: 4051
+// Function ID: 4052
 // Name: createFromServer
-// Dependencies: [1931, 4049, 2]
+// Dependencies: [1931, 4052, 2]
 
-// Module 4048 (createFromServer)
-import "toJS";
+// Module 4051 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
+import coalesceInvoiceItems from "coalesceInvoiceItems" /* 4052 */;
 
-const require = arg1;
+require = arg1;
+toJSDefault;
 let BaseInvoiceRecord;
 class BaseInvoiceRecord extends tmp2 {
   constructor(arg0) {
@@ -22,10 +24,6 @@ class BaseInvoiceRecord extends tmp2 {
 }
 const prototype = BaseInvoiceRecord.prototype;
 BaseInvoiceRecord["createFromServer"] = function createFromServer(currency) {
-  let invoice_items;
-  let subtotal;
-  let tax;
-  let total;
   ({ total, subtotal, tax, invoice_items } = currency);
   let mapped = invoice_items.map((skuId) => ({ skuId: skuId.sku_id, quantity: skuId.quantity, description: skuId.description }));
   if (typeof BaseInvoiceRecord !== "function") {
@@ -44,11 +42,7 @@ BaseInvoiceRecord["createFromServer"] = function createFromServer(currency) {
   return tmp2;
 };
 BaseInvoiceRecord["createInvoiceFromOrder"] = function createInvoiceFromOrder(billing_facet) {
-  let currency;
-  let subtotal;
-  let tax;
-  let total;
-  let closure_0 = billing_facet;
+  closure_0 = billing_facet;
   billing_facet = billing_facet.billing_facet;
   let invoice_preview = null;
   if (null != billing_facet) {
@@ -59,7 +53,7 @@ BaseInvoiceRecord["createInvoiceFromOrder"] = function createInvoiceFromOrder(bi
   } else {
     const line_items = invoice_preview.line_items;
     const mapped = line_items.map((unit_price) => {
-      const billing_facet = unit_price;
+      billing_facet = unit_price;
       const order_line_items = billing_facet.order_line_items;
       const found = order_line_items.find((id) => id.id === unit_price.ref_order_line_item_id);
       let tmp2 = null;
@@ -94,7 +88,7 @@ BaseInvoiceRecord["createInvoiceFromOrder"] = function createInvoiceFromOrder(bi
   }
 };
 prototype["getInvoicePreviewLineItemForSku"] = function getInvoicePreviewLineItemForSku(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const invoiceItems = this.invoiceItems;
   let found = invoiceItems.find((skuId) => skuId.skuId === closure_0);
   if (found == null) {
@@ -129,12 +123,11 @@ class InvoiceRecord extends BaseInvoiceRecord {
 }
 const prototype2 = InvoiceRecord.prototype;
 InvoiceRecord["createInvoiceFromServer"] = function createInvoiceFromServer(body) {
-  let invoiceItems;
   const obj = { id: body.id, invoiceItems: null, total: null, subtotal: null, currency: null, tax: null, taxInclusive: null, subscriptionPeriodStart: null, subscriptionPeriodEnd: null, status: null, orbsReward: null, checkoutContext: null };
   const invoice_items = body.invoice_items;
   let mapped;
   if (invoice_items != null) {
-    mapped = invoice_items.map(require(4049) /* coalesceInvoiceItems */.createInvoiceItemFromServer);
+    mapped = invoice_items.map(coalesceInvoiceItems.createInvoiceItemFromServer);
     const tmp3 = require;
   }
   obj[1] = mapped;
@@ -159,15 +152,13 @@ InvoiceRecord["createInvoiceFromServer"] = function createInvoiceFromServer(body
   return tmp8;
 };
 InvoiceRecord["createFromOTPPreview"] = function createFromOTPPreview(invoice_items) {
-  let invoiceItems;
   invoice_items = invoice_items.invoice_items;
   let mapped;
   if (invoice_items != null) {
-    mapped = invoice_items.map(require(4049) /* coalesceInvoiceItems */.createInvoiceItemFromServer);
+    mapped = invoice_items.map(coalesceInvoiceItems.createInvoiceItemFromServer);
     const tmp3 = require;
   }
-  const obj = { id: "", invoiceItems: mapped, total: invoice_items.amount, subtotal: invoice_items.subtotal, currency: invoice_items.currency, tax: invoice_items.tax, taxInclusive: invoice_items.tax_inclusive, subscriptionPeriodStart: null, subscriptionPeriodEnd: null, orbsReward: null, checkoutContext: null };
-  obj[7] = new Date(0);
+  const obj = { id: "", invoiceItems: mapped, total: invoice_items.amount, subtotal: invoice_items.subtotal, currency: invoice_items.currency, tax: invoice_items.tax, taxInclusive: invoice_items.tax_inclusive, subscriptionPeriodStart: new Date(0), subscriptionPeriodEnd: null, orbsReward: null, checkoutContext: null };
   const date = new Date(0);
   const tmp5 = new.target;
   const tmp7 = new.target;
@@ -189,7 +180,7 @@ InvoiceRecord["createFromOTPPreview"] = function createFromOTPPreview(invoice_it
   return tmp9;
 };
 prototype2["findInvoiceItemByPlanId"] = function findInvoiceItemByPlanId(id) {
-  let closure_0 = id;
+  closure_0 = id;
   const invoiceItems = this.invoiceItems;
   let found = invoiceItems.find((subscriptionPlanId) => subscriptionPlanId.subscriptionPlanId === closure_0);
   if (found == null) {

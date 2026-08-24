@@ -1,31 +1,30 @@
-// Module ID: 14282
-// Function ID: 14283
+// Module ID: 14350
+// Function ID: 14351
 // Name: FamilyCenterModalAcceptScreen
-// Dependencies: [19, 17, 21, 4661, 712, 5260, 4093, 1236, 11104, 5440, 5445, 14279, 4319, 4734, 2335, 14249, 11106, 11114, 6687, 4745, 6314, 11115, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 5265, 4096, 1236, 11143, 5445, 5450, 14347, 4323, 4739, 2336, 14317, 11145, 11153, 6723, 4750, 6345, 11154, 2]
 // Exports: default
 
-// Module 14282 (FamilyCenterModalAcceptScreen)
-import Button from "Button";
-import { View } from "ModalFooter";
-import jsxProd from "Modal";
-import createCacheKey from "createCacheKey";
+// Module 14350 (FamilyCenterModalAcceptScreen)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 function FamilyCenterModalAcceptScreen(otherUser) {
   otherUser = otherUser.otherUser;
   let acceptLinkRequest;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const callback = React.useCallback(() => {
-    let arr = acceptLinkRequest(5260);
+    let arr = acceptLinkRequest(5265);
     arr = arr.pop();
   }, []);
   const callback1 = React.useCallback(() => {
     const intl = otherUser(1236).intl;
-    otherUser(4093).presentFailedToast(intl.string(otherUser(1236).t.R0RpRX));
+    otherUser(4096).presentFailedToast(intl.string(otherUser(1236).t.R0RpRX));
   }, []);
-  let obj = otherUser(11104);
+  let obj = otherUser(11143);
   const familyCenterActions = obj.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   acceptLinkRequest = familyCenterActions.acceptLinkRequest;
   const isAcceptLoading = familyCenterActions.isAcceptLoading;
@@ -35,68 +34,68 @@ function FamilyCenterModalAcceptScreen(otherUser) {
   }, items);
   obj = { children: null };
   obj = { children: null };
-  const obj1 = { style: tmp.header, children: null };
-  const obj2 = { otherUser, iconSrc: null, iconStyles: null };
-  obj2[1] = acceptLinkRequest(4319);
-  obj2[2] = tmp.icon;
-  const items1 = [callback(acceptLinkRequest(14279), obj2), , ];
+  obj1 = { style: tmp.header, children: null };
+  const obj2 = { otherUser, iconSrc: acceptLinkRequest(4323), iconStyles: tmp.icon };
+  const items1 = [callback(acceptLinkRequest(14347), obj2), , ];
   const obj3 = { style: tmp.headerText, variant: "text-lg/bold", children: null };
   let intl = otherUser(1236).intl;
-  obj3[2] = intl.string(acceptLinkRequest(2335).rlNJwZ);
-  items1[1] = callback(otherUser(4734).Text, obj3);
-  items1[2] = callback(acceptLinkRequest(14249), { user: otherUser });
+  obj3[2] = intl.string(acceptLinkRequest(2336).rlNJwZ);
+  items1[1] = callback(otherUser(4739).Text, obj3);
+  items1[2] = callback(acceptLinkRequest(14317), { user: otherUser });
   obj1[1] = items1;
-  const items2 = [callback2(View, obj1), callback(acceptLinkRequest(11106), {}), ];
+  const items2 = [callback2(View, obj1), callback(acceptLinkRequest(11145), {}), ];
   const obj4 = { style: tmp.disclaimer, variant: "text-xs/normal", color: "text-default", children: null };
   const intl2 = otherUser(1236).intl;
-  obj4[3] = intl2.format(acceptLinkRequest(2335).snlFqR, { username: otherUser.username });
-  items2[2] = callback(otherUser(4734).Text, obj4);
+  obj4[3] = intl2.format(acceptLinkRequest(2336).snlFqR, { username: otherUser.username });
+  items2[2] = callback(otherUser(4739).Text, obj4);
   obj[0] = items2;
-  const items3 = [callback2(otherUser(5445).ModalContent, obj), ];
+  const items3 = [callback2(otherUser(5450).ModalContent, obj), ];
   const obj6 = { children: null };
   const obj7 = { children: null };
   const obj8 = { variant: "primary", disabled: isAcceptLoading, loading: isAcceptLoading, text: null, onPress: null };
   const intl3 = otherUser(1236).intl;
-  obj8[3] = intl3.string(acceptLinkRequest(2335)["wI/jo3"]);
+  obj8[3] = intl3.string(acceptLinkRequest(2336)["wI/jo3"]);
   obj8[4] = callback2;
-  const items4 = [callback(otherUser(4745).Button, obj8), ];
+  const items4 = [callback(otherUser(4750).Button, obj8), ];
   const obj9 = { variant: "tertiary", text: null, onPress: null };
   const intl4 = otherUser(1236).intl;
   obj9[1] = intl4.string(otherUser(1236).t["ETE/oC"]);
-  obj9[2] = acceptLinkRequest(5260).pop;
-  items4[1] = callback(otherUser(4745).Button, obj9);
+  obj9[2] = acceptLinkRequest(5265).pop;
+  items4[1] = callback(otherUser(4750).Button, obj9);
   obj7[0] = items4;
-  obj6[0] = callback2(otherUser(6687).ButtonGroup, obj7);
-  items3[1] = callback(otherUser(11114).ModalFooter, obj6);
+  obj6[0] = callback2(otherUser(6723).ButtonGroup, obj7);
+  items3[1] = callback(otherUser(11153).ModalFooter, obj6);
   obj[0] = items3;
-  return callback2(otherUser(5440).ModalScreen, obj);
+  return callback2(otherUser(5445).ModalScreen, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { header: null, headerText: null, icon: null, disclaimer: null };
-createCacheKey = { display: "flex", alignItems: "center", justifyContent: "center", marginBottom: require("Themes").space.PX_16 };
+createCacheKey = { display: "flex", alignItems: "center", justifyContent: "center", marginBottom: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginTop: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_4 };
-let obj1 = { marginTop: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_4 };
+createCacheKey[1] = { marginTop: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_4 };
+let obj1 = { marginTop: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_4 };
 let items = [{ rotate: "45deg" }];
-createCacheKey[2] = { transform: items, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-let obj2 = { transform: items, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-createCacheKey[3] = { marginTop: require("Themes").space.PX_12 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { marginTop: require("Themes").space.PX_12 };
-const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterModalAccept.tsx");
+createCacheKey[2] = { transform: items, tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+let obj2 = { transform: items, tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[3] = { marginTop: ThemesDefault.space.PX_12 };
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { marginTop: ThemesDefault.space.PX_12 };
+const result = require("set").fileFinishedImporting("modules/parent_tools/native/FamilyCenterModalAccept.tsx");
 
 export default function FamilyCenterModalAccept(otherUser) {
   otherUser = otherUser.otherUser;
   const items = [otherUser];
   const memo = React.useMemo(() => {
     let obj = { ACCEPT: null };
-    obj = { headerShown: true, headerLeft: null, headerTitle: null, render: null };
-    obj[1] = otherUser(outer1_2[20]).getHeaderCloseButton(outer1_1(outer1_2[5]).pop);
-    obj[2] = function headerTitle() {
-      return null;
-    };
-    obj[3] = function render() {
-      return outer1_5(outer1_8, { otherUser: closure_0 });
+    obj = {
+      headerShown: true,
+      headerLeft: otherUser(closure_1_2[20]).getHeaderCloseButton(closure_1_1(closure_1_2[5]).pop),
+      headerTitle() {
+        return null;
+      },
+      render() {
+        return closure_1_5(closure_1_8, { otherUser: closure_0 });
+      }
     };
     obj[0] = obj;
     return obj;
@@ -104,5 +103,5 @@ export default function FamilyCenterModalAccept(otherUser) {
   let obj = { initialRouteName: "ACCEPT", screens: memo, headerBackTitle: null };
   const intl = otherUser(1236).intl;
   obj[2] = intl.string(otherUser(1236).t["13/7kX"]);
-  return callback(otherUser(11115).Modal, obj);
+  return callback(otherUser(11154).Modal, obj);
 };

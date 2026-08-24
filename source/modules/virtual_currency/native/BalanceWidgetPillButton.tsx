@@ -1,13 +1,15 @@
-// Module ID: 10410
-// Function ID: 10411
+// Module ID: 10449
+// Function ID: 10450
 // Name: BalanceWidgetPillButton
-// Dependencies: [19, 21, 4745, 9239, 1236, 2]
+// Dependencies: [19, 21, 4750, 9276, 1236, 2]
 
-// Module 10410 (BalanceWidgetPillButton)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 10449 (BalanceWidgetPillButton)
+import noopAll from "noop" /* 19 */;
+import Button from "Button" /* 4750 */;
+import registerAssetDefault from "registerAsset" /* 9276 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 class BalanceWidgetPillButton {
   constructor(arg0) {
     ({ balance, variant } = global);
@@ -53,8 +55,9 @@ class BalanceWidgetPillButton {
     return tmp(require("Button").Button, obj);
   }
 }
+noopAll;
 BalanceWidgetPillButton.displayName = "BalanceWidgetPillButton";
-const result = require("Button").fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetPillButton.tsx");
+const result = require("set").fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetPillButton.tsx");
 
 export default BalanceWidgetPillButton;
 export { BalanceWidgetPillButton };

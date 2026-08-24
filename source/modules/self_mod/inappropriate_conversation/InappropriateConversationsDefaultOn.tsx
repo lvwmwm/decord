@@ -1,18 +1,20 @@
-// Module ID: 10578
-// Function ID: 10579
+// Module ID: 10617
+// Function ID: 10618
 // Name: InappropriateConversationsDefaultOn
 // Dependencies: [1368, 2]
 // Exports: isEligibleForInappropriateConversationDefaultOn, useIsEligibleForInappropriateConversationDefaultOn
 
-// Module 10578 (InappropriateConversationsDefaultOn)
-const tmp2 = require("getUnitId")({ name: "2026-04-inappropriate-conversations-default-on", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
-let c0 = tmp2;
+// Module 10617 (InappropriateConversationsDefaultOn)
+import getUnitIdDefault from "getUnitId" /* 1368 */;
+
+const tmp2 = getUnitIdDefault({ name: "2026-04-inappropriate-conversations-default-on", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let closure_0 = tmp2;
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsDefaultOn.tsx");
 
 export const InappropriateConversationsDefaultOn = tmp2;
 export const isEligibleForInappropriateConversationDefaultOn = function isEligibleForInappropriateConversationDefaultOn(location) {
-  return tmp2.getConfig({ location: location.location }).enabled;
+  return closure_0.getConfig({ location: location.location }).enabled;
 };
 export const useIsEligibleForInappropriateConversationDefaultOn = function useIsEligibleForInappropriateConversationDefaultOn(location) {
-  return tmp2.useConfig({ location: location.location }).enabled;
+  return closure_0.useConfig({ location: location.location }).enabled;
 };

@@ -1,23 +1,27 @@
-// Module ID: 13060
-// Function ID: 13061
+// Module ID: 13115
+// Function ID: 13116
 // Name: map
-// Dependencies: [38, 589, 6913, 709, 698, 2007, 2]
+// Dependencies: [38, 589, 6951, 709, 698, 2008, 2]
 
-// Module 13060 (map)
-import { Store } from "initialize";
-import set from "getWindowId";
+// Module 13115 (map)
+import _modDef38 from "module_38" /* 38 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getWindowId from "getWindowId" /* 6951 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 let c3 = null;
 const map = new Map();
 let set = new Set();
+const Store = initializeDefault.Store;
 class WindowStore extends Store {
 }
 const prototype = WindowStore.prototype;
 prototype["isFocused"] = function isFocused() {
   let mainWindowId = arg0;
   if (arg0 === undefined) {
-    let obj = require(6913) /* getWindowId */;
+    let obj = getWindowId;
     mainWindowId = obj.getMainWindowId();
   }
   let value = map.get(mainWindowId);
@@ -35,7 +39,7 @@ prototype["isAppFocused"] = function isAppFocused() {
 prototype["isVisible"] = function isVisible() {
   let mainWindowId = arg0;
   if (arg0 === undefined) {
-    let obj = require(6913) /* getWindowId */;
+    let obj = getWindowId;
     mainWindowId = obj.getMainWindowId();
   }
   let value = map.get(mainWindowId);
@@ -48,10 +52,10 @@ prototype["isVisible"] = function isVisible() {
   return value.visible;
 };
 prototype["getFocusedWindowId"] = function getFocusedWindowId() {
-  let c0 = null;
+  c0 = null;
   const item = map.forEach((focused) => {
     if (focused.focused) {
-      let closure_0 = arg1;
+      closure_0 = arg1;
     }
   });
   return c0;
@@ -62,7 +66,7 @@ prototype["getLastFocusedWindowId"] = function getLastFocusedWindowId() {
 prototype["isElementFullScreen"] = function isElementFullScreen() {
   let mainWindowId = arg0;
   if (arg0 === undefined) {
-    let obj = require(6913) /* getWindowId */;
+    let obj = getWindowId;
     mainWindowId = obj.getMainWindowId();
   }
   let value = map.get(mainWindowId);
@@ -77,7 +81,7 @@ prototype["isElementFullScreen"] = function isElementFullScreen() {
 prototype["windowSize"] = function windowSize() {
   let mainWindowId = arg0;
   if (arg0 === undefined) {
-    let obj = require(6913) /* getWindowId */;
+    let obj = getWindowId;
     mainWindowId = obj.getMainWindowId();
   }
   let value = map.get(mainWindowId);
@@ -90,9 +94,9 @@ prototype["windowSize"] = function windowSize() {
   return value.windowSize;
 };
 WindowStore.displayName = "WindowStore";
-const windowStore = new WindowStore(require("dispatcher"), {
+const windowStore = new WindowStore(dispatcherDefault, {
   WINDOW_INIT: function handleWindowInit(isElementFullscreen) {
-    importDefault(38)(!map.has(isElementFullscreen.windowId), "Window initialized multiple times");
+    _modDef38(!map.has(isElementFullscreen.windowId), "Window initialized multiple times");
     const focused = isElementFullscreen.focused;
     obj = { windowSize: obj, isElementFullscreen: isElementFullscreen.isElementFullscreen, focused, visible: isElementFullscreen.visible };
     obj = { width: isElementFullscreen.width, height: isElementFullscreen.height };
@@ -163,7 +167,7 @@ const windowStore = new WindowStore(require("dispatcher"), {
       obj.windowSize = { width: null, height: null };
       const result = obj.set(windowId.windowId, obj);
       flag = true;
-      const obj1 = { width: null, height: null };
+      obj1 = { width: null, height: null };
     }
     return flag;
   },

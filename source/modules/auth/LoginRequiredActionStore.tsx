@@ -4,7 +4,8 @@
 // Dependencies: [589, 709, 2]
 
 // Module 1384 (handleUpdateUser)
-import { PersistedStore } from "initialize";
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 function handleUpdateUser(user) {
   const id = user.user.id;
@@ -12,12 +13,13 @@ function handleUpdateUser(user) {
 let closure_0 = {};
 let c1 = null;
 let c2 = null;
+const PersistedStore = initializeDefault.PersistedStore;
 class LoginRequiredActionStore extends PersistedStore {
 }
 const prototype = LoginRequiredActionStore.prototype;
 prototype["initialize"] = function initialize(arg0) {
   if (null != arg0) {
-    let closure_0 = arg0;
+    closure_0 = arg0;
   }
 };
 prototype["requiredActions"] = function requiredActions(id) {
@@ -29,7 +31,7 @@ prototype["requiredActions"] = function requiredActions(id) {
 };
 prototype["requiredActionsIncludes"] = function requiredActionsIncludes(id, items) {
   const requiredActionsResult = this.requiredActions(id);
-  let closure_0 = requiredActionsResult;
+  closure_0 = requiredActionsResult;
   let reduced = null != requiredActionsResult;
   if (reduced) {
     reduced = items.reduce((arg0, arg1) => {
@@ -50,10 +52,8 @@ prototype["getState"] = function getState() {
 };
 LoginRequiredActionStore.displayName = "LoginRequiredActionStore";
 LoginRequiredActionStore.persistKey = "LoginRequiredActionStore";
-const loginRequiredActionStore = new LoginRequiredActionStore(require("dispatcher"), {
+const loginRequiredActionStore = new LoginRequiredActionStore(dispatcherDefault, {
   LOGIN_ATTEMPTED: function handleLoginAttempted(arg0) {
-    let required_actions;
-    let user_id;
     ({ required_actions, user_id } = arg0);
     if (null == required_actions) {
       if (user_id in closure_0) {

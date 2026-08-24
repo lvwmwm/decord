@@ -1,29 +1,28 @@
-// Module ID: 10866
-// Function ID: 10867
+// Module ID: 10905
+// Function ID: 10906
 // Name: retrySendMessage
-// Dependencies: [4663, 7427, 10255, 4828, 8467, 2]
+// Dependencies: [4670, 7465, 10294, 4833, 8506, 2]
 // Exports: default
 
-// Module 10866 (retrySendMessage)
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+// Module 10905 (retrySendMessage)
+import set from "set" /* 2 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4670 */;
+import trackInviteDefault from "trackInvite" /* 7465 */;
 
-let result = require("_executeCommand").fileFinishedImporting("modules/messages/retrySendMessage.native.tsx");
+const MessageSendLocation = MESSAGE_GROUP_SPACING.MessageSendLocation;
+let result = set.fileFinishedImporting("modules/messages/retrySendMessage.native.tsx");
 
 export default function retrySendMessage(id, id2, arr) {
-  let content;
-  let flags;
-  let nonce;
-  let tts;
   const _require = id;
   let obj = arg3;
   if (arg3 === undefined) {
     obj = {};
   }
-  importDefault(7427).deleteMessage(id.id, id2.id, true);
+  trackInviteDefault.deleteMessage(id.id, id2.id, true);
   if (id2.isCommandType()) {
     if (tmp17) {
-      _require(10255).retryCommandMessage(id2, id, obj);
-      const obj6 = _require(10255);
+      _require(10294).retryCommandMessage(id2, id, obj);
+      const obj6 = _require(10294);
     }
     tmp17 = null != id2.interactionData && null != obj.applicationId;
   } else {
@@ -40,7 +39,7 @@ export default function retrySendMessage(id, id2, arr) {
         return fromJsonResult;
       });
     }
-    const tmpResult = importDefault(7427);
+    const tmpResult = trackInviteDefault;
     id = id.id;
     obj = { content: null, tts: null, invalidEmojis: null, validNonShortcutEmojis: null };
     obj[0] = content;
@@ -55,7 +54,7 @@ export default function retrySendMessage(id, id2, arr) {
     obj.location = MessageSendLocation.RETRY;
     obj.attachmentsToUpload = mapped;
     obj.onAttachmentUploadError = function onAttachmentUploadError(file, code, reason) {
-      let obj = guildId(outer1_2[4]);
+      let obj = guildId(closure_1_2[4]);
       obj = { file, guildId: guildId.getGuildId(), analyticsLocations: [], code, reason };
       const result = obj.handleUploadMessageAttachmentsErrors(obj);
     };

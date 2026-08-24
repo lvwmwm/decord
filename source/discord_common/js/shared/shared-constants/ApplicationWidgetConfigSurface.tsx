@@ -1,9 +1,11 @@
-// Module ID: 12273
-// Function ID: 12274
+// Module ID: 12325
+// Function ID: 12326
 // Name: ApplicationWidgetConfigSurface
 // Dependencies: [2]
 
-// Module 12273 (ApplicationWidgetConfigSurface)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationWidgetConfigSurface.tsx");
+// Module 12325 (ApplicationWidgetConfigSurface)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationWidgetConfigSurface.tsx");
 
 export const ApplicationWidgetConfigSurface = { WIDGET_TOP: "widget_top", WIDGET_BOTTOM: "widget_bottom", ADD_WIDGET_PREVIEW: "add_widget_preview", MINI_PROFILE: "mini_profile", ACTIVITY_ACCESSORY: "activity_accessory" };

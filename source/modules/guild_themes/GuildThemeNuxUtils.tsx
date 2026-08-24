@@ -1,21 +1,22 @@
-// Module ID: 15423
-// Function ID: 15424
+// Module ID: 15487
+// Function ID: 15488
 // Name: _saveGuildThemeNuxPreference
-// Dependencies: [5, 1340, 4306, 1374, 2]
+// Dependencies: [5, 1340, 4310, 1374, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 15423 (_saveGuildThemeNuxPreference)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+// Module 15487 (_saveGuildThemeNuxPreference)
+import GuildThemeSourcePreference2 from "GuildThemeSourcePreference" /* 4310 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
 
-const require = arg1;
+require = arg1;
 function _saveGuildThemeNuxPreference() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (c5 === 2) {
         c5 = 3;
@@ -28,7 +29,7 @@ function _saveGuildThemeNuxPreference() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -43,9 +44,9 @@ function _saveGuildThemeNuxPreference() {
               obj[0] = arg1;
               return obj;
             } else {
-              let handleConnectionClosedOrResumed = tmp5;
-              let asyncGeneratorStep = tmp2;
-              let GuildThemeSourcePreference = callback(4306).GuildThemeSourcePreference;
+              closure_3 = tmp5;
+              closure_2 = tmp2;
+              let GuildThemeSourcePreference = callback(4310).GuildThemeSourcePreference;
               if (dependencyMap) {
                 let GUILD = GuildThemeSourcePreference.PERSONAL;
               } else {
@@ -62,7 +63,7 @@ function _saveGuildThemeNuxPreference() {
               throw arg1;
             } else if (arg0 === 2) {
               c5 = 3;
-              let obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -83,7 +84,7 @@ function _saveGuildThemeNuxPreference() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c5 = tmp;
@@ -92,7 +93,7 @@ function _saveGuildThemeNuxPreference() {
       }
     })();
   });
-  const _saveGuildThemeNuxPreference = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -101,18 +102,18 @@ function _saveGuildThemeNuxPreference() {
   }
   return applyArgumentsResult;
 }
-let result = require("GuildThemeSourcePreference").fileFinishedImporting("modules/guild_themes/GuildThemeNuxUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_themes/GuildThemeNuxUtils.tsx");
 
 export const getInitialGuildThemeNuxSelection = function getInitialGuildThemeNuxSelection() {
   defaultGuildThemePreference = defaultGuildThemePreference.getDefaultGuildThemePreference();
-  if (defaultGuildThemePreference === require(4306) /* GuildThemeSourcePreference */.GuildThemeSourcePreference.PERSONAL) {
-    let GUILD = tmp2(4306).GuildThemeSourcePreference.PERSONAL;
+  if (defaultGuildThemePreference === GuildThemeSourcePreference2.GuildThemeSourcePreference.PERSONAL) {
+    let GUILD = tmp2(4310).GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = tmp2(4306).GuildThemeSourcePreference.GUILD;
+    GUILD = tmp2(4310).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
 };
-export const saveGuildThemeNuxPreference = function saveGuildThemeNuxPreference(arg0, outer1_6) {
+export const saveGuildThemeNuxPreference = function saveGuildThemeNuxPreference(arg0, closure_1_6) {
   const self = this;
   const apply = _saveGuildThemeNuxPreference.apply;
   if (typeof apply === "unknown") {

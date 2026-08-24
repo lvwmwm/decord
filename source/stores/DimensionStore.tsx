@@ -1,14 +1,17 @@
-// Module ID: 4973
-// Function ID: 4974
+// Module ID: 4978
+// Function ID: 4979
 // Name: percentageScrolled
 // Dependencies: [643, 589, 709, 2]
 
-// Module 4973 (percentageScrolled)
-import { Store } from "initialize";
+// Module 4978 (percentageScrolled)
+import initializeDefault from "initialize" /* 589 */;
+import shallowEqualDefault from "shallowEqual" /* 643 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let closure_2 = {};
 let closure_3 = {};
 let closure_4 = { scrollTop: 0 };
+const Store = initializeDefault.Store;
 class DimensionStore extends Store {
 }
 const prototype = DimensionStore.prototype;
@@ -42,12 +45,8 @@ prototype["isAtBottom"] = function isAtBottom(channelId) {
   return tmp;
 };
 DimensionStore.displayName = "DimensionStore";
-const dimensionStore = new DimensionStore(require("dispatcher"), {
+const dimensionStore = new DimensionStore(dispatcherDefault, {
   UPDATE_CHANNEL_DIMENSIONS: function handleChannelScroll(arg0) {
-    let channelId;
-    let offsetHeight;
-    let scrollHeight;
-    let scrollTop;
     ({ channelId, scrollTop, scrollHeight, offsetHeight } = arg0);
     if (null != scrollTop) {
       if (null != scrollHeight) {
@@ -58,7 +57,7 @@ const dimensionStore = new DimensionStore(require("dispatcher"), {
           obj[2] = scrollHeight;
           obj[3] = offsetHeight;
           if (null != tmp4) {
-            if (importDefault(643)(tmp4, obj)) {
+            if (shallowEqualDefault(tmp4, obj)) {
               return false;
             }
           }
@@ -73,9 +72,6 @@ const dimensionStore = new DimensionStore(require("dispatcher"), {
     }
   },
   UPDATE_CHANNEL_LIST_DIMENSIONS: function handleGuildUpdate(arg0) {
-    let guildId;
-    let scrollTo;
-    let scrollTop;
     ({ guildId, scrollTop, scrollTo } = arg0);
     if (null == dependencyMap2[guildId]) {
       const obj = { guildId: null, scrollTop: null, scrollTo: null };
@@ -106,6 +102,6 @@ const dimensionStore = new DimensionStore(require("dispatcher"), {
     }
   }
 });
-const result = require("dispatcher").fileFinishedImporting("stores/DimensionStore.tsx");
+const result = require("set").fileFinishedImporting("stores/DimensionStore.tsx");
 
 export default dimensionStore;

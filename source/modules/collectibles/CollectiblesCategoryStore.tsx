@@ -1,12 +1,15 @@
-// Module ID: 5301
-// Function ID: 5302
+// Module ID: 5306
+// Function ID: 5307
 // Name: updateCategoriesAndProducts
-// Dependencies: [1994, 5302, 687, 584, 709, 12, 5313, 589, 2]
+// Dependencies: [1995, 5307, 687, 584, 709, 12, 5318, 589, 2]
 
-// Module 5301 (updateCategoriesAndProducts)
-import _getSystemLocale from "_getSystemLocale";
-import fromServer from "fromServer";
-import { Store } from "initialize";
+// Module 5306 (updateCategoriesAndProducts)
+import failsDefault from "fails" /* 584 */;
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "_getSystemLocale" /* 1995 */;
+import closure_4 from "fromServer" /* 5307 */;
 
 const require = arg1;
 function updateCategoriesAndProducts(map) {
@@ -15,7 +18,7 @@ function updateCategoriesAndProducts(map) {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;
   }));
-  const productsFromCategories = map1(5313).getProductsFromCategories(map, true);
+  const productsFromCategories = map1(5318).getProductsFromCategories(map, true);
   map1 = new Map(productsFromCategories.map((skuId) => {
     const items = [skuId.skuId, skuId];
     return items;
@@ -25,30 +28,30 @@ function updateCategoriesAndProducts(map) {
       const result = map1.set(skuId.skuId, skuId);
     }
   });
-  const obj = map1(5313);
-  const productsFromCategories1 = map1(5313).getProductsFromCategories(map, false);
-  const map2 = new Map(productsFromCategories1.map((storeListingId) => {
+  const obj = map1(5318);
+  const productsFromCategories1 = map1(5318).getProductsFromCategories(map, false);
+  map2 = new Map(productsFromCategories1.map((storeListingId) => {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;
   }));
-  let closure_11 = [...map2.values()];
+  closure_11 = [...map2.values()];
 }
 function reset() {
-  let closure_14 = map;
-  let closure_9 = map1;
-  let c18;
-  let c16 = false;
-  let closure_13 = {};
+  closure_14 = map;
+  closure_9 = map1;
+  c18 = undefined;
+  c16 = false;
+  closure_13 = {};
   const values = Object.values(closure_12);
   const item = values.forEach((cancel) => cancel.cancel());
   closure_12 = {};
-  let c17;
-  let c19;
-  let closure_20 = {};
-  let c21 = 0;
+  c17 = undefined;
+  c19 = undefined;
+  closure_20 = {};
+  c21 = 0;
 }
-let closure_5 = 10 * require("set").Millis.SECOND;
-let closure_6 = 10 * require("set").Millis.MINUTE;
+let closure_5 = 10 * setDefault.Millis.SECOND;
+let closure_6 = 10 * setDefault.Millis.MINUTE;
 let map = new Map();
 let map1 = new Map();
 let map2 = new Map();
@@ -62,11 +65,12 @@ let c18;
 let c19;
 let closure_20 = {};
 let c21 = 0;
+const Store = initializeDefault.Store;
 class CollectiblesCategoryStore extends Store {
 }
 const prototype = CollectiblesCategoryStore.prototype;
 prototype["initialize"] = function initialize() {
-  const items = [_getSystemLocale];
+  const items = [closure_3];
   this.syncWith(items, reset);
 };
 Object.defineProperty(prototype, "isFetchingCategories", {
@@ -193,11 +197,11 @@ prototype["getCategoryForProduct"] = function getCategoryForProduct(closure_0) {
   return this.getCategory(categorySkuId);
 };
 CollectiblesCategoryStore.displayName = "CollectiblesCategoryStore";
-const collectiblesCategoryStore = new CollectiblesCategoryStore(require("dispatcher"), {
+const collectiblesCategoryStore = new CollectiblesCategoryStore(dispatcherDefault, {
   COLLECTIBLES_CATEGORIES_FETCH: function handleFetchCategories(options) {
-    let c16 = true;
-    let c17;
-    let c19;
+    c16 = true;
+    c17 = undefined;
+    c19 = undefined;
     options = options.options;
   },
   COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: function handleFetchCategoriesSuccess(categories) {
@@ -208,7 +212,7 @@ const collectiblesCategoryStore = new CollectiblesCategoryStore(require("dispatc
       mapped = categories.categories.categories;
     }
     if (0 === mapped.length) {
-      let closure_9 = map1;
+      closure_9 = map1;
     } else {
       obj = map(12);
       let items = [];
@@ -240,25 +244,23 @@ const collectiblesCategoryStore = new CollectiblesCategoryStore(require("dispatc
         }
       }
     }
-    let closure_18 = Date.now();
-    let c16 = false;
-    let c17;
-    let c19;
+    closure_18 = Date.now();
+    c16 = false;
+    c17 = undefined;
+    c19 = undefined;
   },
   COLLECTIBLES_CATEGORIES_FETCH_FAILURE: function handleFetchCategoriesFailure(error) {
-    let closure_14 = map;
-    let closure_9 = map1;
-    let c16 = false;
-    let closure_13 = {};
+    closure_14 = map;
+    closure_9 = map1;
+    c16 = false;
+    closure_13 = {};
     error = error.error;
-    let closure_19 = Date.now();
+    closure_19 = Date.now();
   },
   COLLECTIBLES_PRODUCT_FETCH: function handleFetchProduct(skuId) {
     closure_13[skuId.skuId] = { state: "fetching", startedAt: skuId.startedAt };
   },
   COLLECTIBLES_PRODUCT_FETCH_SUCCESS: function handleFetchProductSuccess(endedAt) {
-    let product;
-    let skuId;
     ({ skuId, product } = endedAt);
     let value = map1.get(skuId);
     if (null != value) {
@@ -269,7 +271,7 @@ const collectiblesCategoryStore = new CollectiblesCategoryStore(require("dispatc
           if (null != product.bundledProducts) {
             const _Map = Map;
             let bundledProducts = value.bundledProducts;
-            const map = new Map(bundledProducts.map((arg0) => {
+            map = new Map(bundledProducts.map((arg0) => {
               const items = [, ];
               ({ skuId: arr[0], prices: arr[1] } = arg0);
               return items;
@@ -307,8 +309,6 @@ const collectiblesCategoryStore = new CollectiblesCategoryStore(require("dispatc
     }
   },
   COLLECTIBLES_PRODUCT_FETCH_FAILURE: function handleFetchProductFailure(skuId) {
-    let endedAt;
-    let error;
     skuId = skuId.skuId;
     let startedAt;
     ({ error, endedAt } = skuId);
@@ -318,13 +318,13 @@ const collectiblesCategoryStore = new CollectiblesCategoryStore(require("dispatc
     dependencyMap2[skuId] = { state: "error", startedAt, endedAt, error };
     let obj = dependencyMap[skuId];
     if (null == obj) {
-      const tmp10 = new importDefault(584)(closure_5, closure_6);
+      const tmp10 = new failsDefault(closure_5, closure_6);
       dependencyMap[skuId] = tmp10;
       obj = tmp10;
     }
     if (!obj.pending) {
       obj.fail(() => {
-        let obj = outer1_1(outer1_2[4]);
+        let obj = closure_1_1(closure_1_2[4]);
         obj = { type: "COLLECTIBLES_PRODUCT_FETCH_BACKOFF_EXPIRED", skuId };
         return obj.dispatch(obj);
       });
@@ -339,14 +339,14 @@ const collectiblesCategoryStore = new CollectiblesCategoryStore(require("dispatc
     if (0 !== shopHome.shopHome.categories.length) {
       const _Map = Map;
       const categories = shopHome.shopHome.categories;
-      const map = new Map(categories.map((skuId) => {
+      map = new Map(categories.map((skuId) => {
         const items = [skuId.skuId, skuId];
         return items;
       }));
       const _Map2 = Map;
       let items = [];
       HermesBuiltin.arraySpread(map, HermesBuiltin.arraySpread(map, 0));
-      const map1 = new Map(items);
+      map1 = new Map(items);
       updateCategoriesAndProducts(map1);
     }
   },

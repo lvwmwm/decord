@@ -1,16 +1,19 @@
-// Module ID: 11523
-// Function ID: 11524
+// Module ID: 11572
+// Function ID: 11573
 // Name: isComplete
-// Dependencies: [8507, 8506, 2]
+// Dependencies: [8546, 8545, 2]
 
-// Module 11523 (isComplete)
-import { SearchQueryTagTypes } from "MessageEmbedTypes";
-import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
+// Module 11572 (isComplete)
+import set2 from "set" /* 2 */;
+import SearchEntrypointAnalyticsLocations from "SearchEntrypointAnalyticsLocations" /* 8545 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
 
 function isComplete(type) {
   return type.type === SearchQueryTagTypes.COMPLETE;
 }
-const result = require("set").fileFinishedImporting("modules/search/native/stores/SearchQueryTagManager.tsx");
+let SearchQueryTagTypes = MessageEmbedTypes.SearchQueryTagTypes;
+const SearchFilterAddLocations = SearchEntrypointAnalyticsLocations.SearchFilterAddLocations;
+const result = set2.fileFinishedImporting("modules/search/native/stores/SearchQueryTagManager.tsx");
 class SearchQueryTagManager {
   constructor() {
     obj = Object.create(new.target.prototype);
@@ -42,8 +45,8 @@ prototype["markChanged"] = function markChanged() {
   this.version = this.version + 1;
 };
 prototype["mergeTag"] = function mergeTag(location, channelId) {
-  const SearchQueryTagTypes = location;
-  let closure_1 = channelId;
+  SearchQueryTagTypes = location;
+  closure_1 = channelId;
   const tags = this.tags;
   const items = [];
   items[HermesBuiltin.arraySpread(tags.filter((arg0) => {
@@ -56,8 +59,8 @@ prototype["mergeTag"] = function mergeTag(location, channelId) {
   this.tags = items;
 };
 prototype["replaceTag"] = function replaceTag(arg0, type) {
-  let closure_0 = arg0;
-  let closure_1 = type;
+  closure_0 = arg0;
+  closure_1 = type;
   const tags = this.tags;
   this.tags = tags.map((arg0) => {
     let tmp = arg0;
@@ -75,7 +78,7 @@ prototype["getChannelIds"] = function getChannelIds() {
   return this.channelIds;
 };
 prototype["getUserIds"] = function getUserIds(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const set = new Set();
   const tags = this.tags;
   const item = tags.forEach((type) => {

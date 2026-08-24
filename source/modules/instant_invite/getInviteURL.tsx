@@ -1,11 +1,13 @@
-// Module ID: 7506
-// Function ID: 7507
+// Module ID: 7544
+// Function ID: 7545
 // Name: getInviteURL
 // Dependencies: [2]
 // Exports: default
 
-// Module 7506 (getInviteURL)
-const result = require("set").fileFinishedImporting("modules/instant_invite/getInviteURL.tsx");
+// Module 7544 (getInviteURL)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/instant_invite/getInviteURL.tsx");
 
 export default function getInviteURL() {
   let str = arg0;

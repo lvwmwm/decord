@@ -1,13 +1,15 @@
-// Module ID: 8802
-// Function ID: 8803
+// Module ID: 8839
+// Function ID: 8840
 // Name: canViewInviteModal
 // Dependencies: [676, 2]
 // Exports: canViewInviteModal
 
-// Module 8802 (canViewInviteModal)
-import { Permissions } from "ME";
+// Module 8839 (canViewInviteModal)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/instant_invite/canViewInviteModal.tsx");
+const Permissions = ME.Permissions;
+const result = set.fileFinishedImporting("modules/instant_invite/canViewInviteModal.tsx");
 
 export const canViewInviteModal = function canViewInviteModal(closure_6, guild, closure_0, stageInstanceByChannel) {
   let tmp = closure_0;

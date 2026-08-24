@@ -1,36 +1,33 @@
-// Module ID: 12351
-// Function ID: 12352
+// Module ID: 12403
+// Function ID: 12404
 // Name: RemediatedUserNotice
-// Dependencies: [19, 17, 4030, 676, 21, 4661, 712, 8982, 647, 4734, 1236, 9736, 2]
+// Dependencies: [19, 17, 4033, 676, 21, 4668, 712, 9019, 647, 4739, 1236, 9775, 2]
 // Exports: default
 
-// Module 12351 (RemediatedUserNotice)
-import "noop";
-import { View } from "get ActivityIndicator";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import { RelationshipTypes } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12403 (RemediatedUserNotice)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "markAllUserIdListsStale" /* 4033 */;
+import { RelationshipTypes } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+noopAll;
+({ jsx: closure_6, Fragment: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: null };
-createCacheKey = { padding: require("Themes").space.PX_12, gap: require("Themes").space.PX_8, flexDirection: "row", alignItems: "center" };
+createCacheKey = { padding: ThemesDefault.space.PX_12, gap: ThemesDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/user_profile/native/UserProfileRemediatedNotice.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileRemediatedNotice.tsx");
 
 export default function RemediatedUserNotice(user) {
-  let isBlocked;
-  let isIgnored;
   user = user.user;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = user(647);
-  const items = [markAllUserIdListsStale];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isPendingIncoming: outer1_4.getRelationshipType(user.id) === outer1_5.PENDING_INCOMING, isBlocked: outer1_4.isBlocked(user.id), isIgnored: outer1_4.isIgnored(user.id) }));
+  const items = [closure_4];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isPendingIncoming: closure_1_4.getRelationshipType(user.id) === closure_1_5.PENDING_INCOMING, isBlocked: closure_1_4.isBlocked(user.id), isIgnored: closure_1_4.isIgnored(user.id) }));
   ({ isBlocked, isIgnored } = stateFromStoresObject);
   if (isBlocked) {
     obj = { style: null, children: null };
@@ -40,24 +37,24 @@ export default function RemediatedUserNotice(user) {
       obj = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl = tmp4(1236).intl;
       obj[3] = intl.string(tmp4(1236).t["oC/fU6"]);
-      isBlocked = callback(tmp4(4734).Text, obj);
+      isBlocked = callback(tmp4(4739).Text, obj);
     }
     const items2 = [isBlocked, ];
     if (isIgnored) {
-      const obj1 = { children: null };
+      obj1 = { children: null };
       const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl2 = tmp4(1236).intl;
       obj2[3] = intl2.string(tmp4(1236).t.HXz5An);
-      const items3 = [callback(tmp4(4734).Text, obj2), callback(tmp4(4734).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      const items3 = [callback(tmp4(4739).Text, obj2), callback(tmp4(4739).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = tmp4(1236).intl;
       const obj3 = { unignoreHook: null };
       obj3[0] = function unignoreHook(children) {
-        return outer1_6(user(outer1_2[9]).Text, {
+        return closure_1_6(user(closure_1_2[9]).Text, {
           role: "button",
           variant: "heading-sm/medium",
           color: "text-link",
           onPress() {
-            return outer1_1(outer1_2[11]).unignoreUser(id.id, "UserProfileRemediatedNotice");
+            return closure_1_1(closure_1_2[11]).unignoreUser(id.id, "UserProfileRemediatedNotice");
           },
           children
         });

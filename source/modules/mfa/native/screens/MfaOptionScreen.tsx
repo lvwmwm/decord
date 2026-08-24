@@ -1,33 +1,29 @@
-// Module ID: 15124
-// Function ID: 15125
+// Module ID: 15188
+// Function ID: 15189
 // Name: MFAOptionScreen
-// Dependencies: [17, 21, 8582, 15125, 6803, 4733, 4734, 15126, 8612, 2]
+// Dependencies: [17, 21, 8621, 15189, 6840, 4738, 4739, 15190, 8649, 2]
 // Exports: default
 
-// Module 15124 (MFAOptionScreen)
-import { ScrollView } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
+// Module 15188 (MFAOptionScreen)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import Stack from "Stack" /* 4738 */;
+import Text from "Text" /* 4739 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 8621 */;
+import BackgroundImageDefault from "BackgroundImage" /* 8649 */;
+import _modDef15189 from "module_15189" /* 15189 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
-let closure_6;
+const ScrollView = get_ActivityIndicator.ScrollView;
 ({ jsx: c4, jsxs: c5, Fragment: closure_6 } = jsxProd);
-const result = require("useWideAuthView").fileFinishedImporting("modules/mfa/native/screens/MfaOptionScreen.tsx");
+const result = set.fileFinishedImporting("modules/mfa/native/screens/MfaOptionScreen.tsx");
 
 export default function MFAOptionScreen(arg0) {
-  let content;
-  let error;
-  let headerImage;
-  let headerText;
-  let input;
-  let mfaMethod;
-  let screenProps;
-  let submit;
-  let subtitle;
   ({ headerImage, subtitle, screenProps, error } = arg0);
   ({ headerText, input, submit, mfaMethod, content } = arg0);
-  const tmp3 = importDefault(8582)();
-  let obj = importDefault(15125);
+  const tmp3 = useWideAuthViewDefault();
+  let obj = _modDef15189;
   const screenStyles = obj.useScreenStyles(tmp3);
   const first = screenProps.mfaChallenge.methods[0];
   let type;
@@ -40,40 +36,40 @@ export default function MFAOptionScreen(arg0) {
   if (tmp9) {
     tmp9 = headerImage;
   }
-  const items = [tmp9, callback(require(4734) /* Text */.Text, { variant: "heading-xl/extrabold", style: screenStyles.mfaContainerHeaderText, children: headerText }), , ];
+  const items = [tmp9, callback(Text.Text, { variant: "heading-xl/extrabold", style: screenStyles.mfaContainerHeaderText, children: headerText }), , ];
   let tmp10Result = null != subtitle;
   if (tmp10Result) {
     const obj2 = { variant: "heading-sm/normal", color: "text-default", children: null };
     obj2[2] = subtitle;
-    tmp10Result = tmp10(tmp8(4734).Text, obj2);
+    tmp10Result = tmp10(tmp8(4739).Text, obj2);
   }
   items[2] = tmp10Result;
   tmp10Result = null != error;
   if (tmp10Result) {
     const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: null };
     obj3[2] = error;
-    tmp10Result = tmp10(tmp8(4734).Text, obj3);
+    tmp10Result = tmp10(tmp8(4739).Text, obj3);
   }
   let tmp10Result1 = type === mfaMethod;
   const obj4 = { children: null };
   items[3] = tmp10Result;
   obj[2] = items;
-  const items1 = [closure_5(require(4733) /* Stack */.Stack, obj), input];
+  const items1 = [closure_5(Stack.Stack, obj), input];
   obj4[0] = items1;
-  const items2 = [closure_5(require(4733) /* Stack */.Stack, obj4), content, ];
+  const items2 = [closure_5(Stack.Stack, obj4), content, ];
   const obj5 = { style: screenStyles.submit, children: null };
   const items3 = [submit, ];
   if (tmp10Result1) {
     const obj6 = { props: null };
     obj6[0] = screenProps;
-    tmp10Result1 = tmp10(tmp(15126), obj6);
+    tmp10Result1 = tmp10(tmp(15190), obj6);
   }
   items3[1] = tmp10Result1;
   obj5[1] = items3;
-  items2[2] = closure_5(require(4733) /* Stack */.Stack, obj5);
+  items2[2] = closure_5(Stack.Stack, obj5);
   obj[3] = items2;
-  const tmp7Result = closure_5(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
-  const children = [callback(importDefault(8612), { backgroundImageCover: false }), ];
+  const tmp7Result = closure_5(SafeAreaPaddingView.SafeAreaPaddingView, obj);
+  const children = [callback(BackgroundImageDefault, { backgroundImageCover: false }), ];
   let tmp10Result2 = tmp7Result;
   if (tmp3) {
     const obj7 = { keyboardShouldPersistTaps: "handled", children: null };

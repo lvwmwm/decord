@@ -1,31 +1,30 @@
-// Module ID: 10184
-// Function ID: 10185
+// Module ID: 10223
+// Function ID: 10224
 // Name: RoleLabel
-// Dependencies: [19, 17, 4662, 21, 4661, 589, 1297, 8083, 2]
+// Dependencies: [19, 17, 4669, 21, 4668, 589, 1297, 8122, 2]
 // Exports: RoleLabel
 
-// Module 10184 (RoleLabel)
-import "noop";
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10223 (RoleLabel)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import Form from "Form" /* 8122 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ container: { display: "flex", flexDirection: "row" }, roleDot: { marginRight: 4 } });
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("design/void/RoleLabel/native/RoleLabel.tsx");
+const result = require("set").fileFinishedImporting("design/void/RoleLabel/native/RoleLabel.tsx");
 
 export const RoleLabel = function RoleLabel(color) {
-  let colors;
-  let name;
   color = color.color;
   ({ name, colors } = color);
   const tmp = callback2();
-  let obj = require(589) /* initialize */;
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  let obj = initialize;
+  const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => roleStyle.roleStyle);
   let tmp5 = "username" === stateFromStores;
   if (tmp5) {
@@ -41,13 +40,13 @@ export const RoleLabel = function RoleLabel(color) {
     tmp10 = null != color;
   }
   if (tmp10) {
-    const obj1 = { color: null, colors: null, containerStyles: null };
+    obj1 = { color: null, colors: null, containerStyles: null };
     obj1[0] = color;
     obj1[1] = colors;
     obj1[2] = tmp.roleDot;
     tmp10 = callback(tmp2(1297).RoleDot, obj1);
   }
-  const items1 = [tmp10, callback(require(8083) /* Form */.FormLabel, { style: {}, text: name })];
+  const items1 = [tmp10, callback(Form.FormLabel, { style: {}, text: name })];
   obj[1] = items1;
   return closure_5(View, obj);
 };

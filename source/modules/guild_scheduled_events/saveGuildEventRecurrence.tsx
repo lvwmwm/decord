@@ -1,28 +1,33 @@
-// Module ID: 8806
-// Function ID: 8807
+// Module ID: 8843
+// Function ID: 8844
 // Name: saveGuildEventRecurrence
-// Dependencies: [8785, 8783, 11, 2]
+// Dependencies: [8822, 8820, 11, 2]
 // Exports: default
 
-// Module 8806 (saveGuildEventRecurrence)
-let result = require("DISCORD_EPOCH").fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");
+// Module 8843 (saveGuildEventRecurrence)
+import set from "set" /* 2 */;
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import _modDef8820 from "module_8820" /* 8820 */;
+import getRRule from "getRRule" /* 8822 */;
+
+let result = set.fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");
 
 export default function saveGuildEventRecurrence(guild_id, c2, startDate, event_exception_id) {
-  let obj = require(8785) /* getRRule */;
+  let obj = getRRule;
   const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(c2, guild_id);
   startDate = null;
   if (!obj2.areDatesIdentical(baseScheduleForRecurrence.startDate, startDate.startDate)) {
     startDate = startDate.startDate;
   }
-  let tmpResult = tmp(8785);
+  let tmpResult = tmp(8822);
   let endDate = null;
   if (!tmpResult.areDatesIdentical(baseScheduleForRecurrence.endDate, startDate.endDate)) {
     endDate = startDate.endDate;
   }
   if (null != event_exception_id) {
-    tmpResult = tmp(8785);
+    tmpResult = tmp(8822);
     const result = tmpResult.areSchedulesIdentical(startDate, baseScheduleForRecurrence);
-    const obj5 = importDefault(8783);
+    const obj5 = _modDef8820;
     if (result) {
       let result1 = obj5.deleteGuildEventException(guild_id.guild_id, guild_id.id, event_exception_id.event_exception_id);
     } else {
@@ -42,8 +47,8 @@ export default function saveGuildEventRecurrence(guild_id, c2, startDate, event_
     }
     return result1;
   } else {
-    const extractTimestampResult = importDefault(11).extractTimestamp(c2);
-    const obj7 = importDefault(11);
+    const extractTimestampResult = DISCORD_EPOCHDefault.extractTimestamp(c2);
+    const obj7 = DISCORD_EPOCHDefault;
     obj = { original_scheduled_start_time: null, scheduled_start_time: null, scheduled_end_time: null, is_canceled: false };
     const _Date = Date;
     const date = new Date(extractTimestampResult);
@@ -58,7 +63,7 @@ export default function saveGuildEventRecurrence(guild_id, c2, startDate, event_
       toISOStringResult3 = endDate.toISOString();
     }
     obj[2] = toISOStringResult3;
-    return importDefault(8783).createGuildEventException(obj, guild_id.guild_id, guild_id.id);
+    return _modDef8820.createGuildEventException(obj, guild_id.guild_id, guild_id.id);
   }
-  obj2 = require(8785) /* getRRule */;
+  obj2 = getRRule;
 };

@@ -1,28 +1,22 @@
-// Module ID: 15898
-// Function ID: 15899
+// Module ID: 15995
+// Function ID: 15996
 // Name: getLinkNodeAtIndex
-// Dependencies: [32, 19, 17, 1391, 4971, 8507, 21, 4661, 589, 1236, 8315, 15899, 4734, 6867, 11509, 4318, 10800, 15891, 5433, 15889, 38, 8775, 2]
+// Dependencies: [32, 19, 17, 1391, 4976, 8546, 21, 4668, 589, 1236, 8355, 15996, 4739, 6905, 11558, 4322, 10839, 15988, 5438, 15986, 38, 8812, 2]
 
-// Module 15898 (getLinkNodeAtIndex)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "SearchMediaObscurityIcon";
-import get_ActivityIndicator from "SearchListContentAuthor";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleReaction from "handleReaction";
-import MessageEmbedTypes from "MessageEmbedTypes";
-import jsxProd from "isLinkTrusted";
-import createCacheKey from "createCacheKey";
+// Module 15995 (getLinkNodeAtIndex)
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "handleReaction" /* 4976 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_12;
-let closure_6;
-let unpackModuleId;
 const require = arg1;
 function getLinkNodeAtIndex(content, arg1, arg2) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
+  closure_0 = arg1;
+  closure_1 = arg2;
   if (Array.isArray(content)) {
     const item = content.forEach((arr) => {
       if (Array.isArray(arr)) {
@@ -38,8 +32,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                       if ("channelMention" !== arr.type) {
                         if (null != arr.content) {
                           const content = arr.content;
-                          let closure_0 = tmp;
-                          let closure_1 = tmp2;
+                          closure_0 = tmp;
+                          closure_1 = tmp2;
                           const _Array = Array;
                           if (Array.isArray(content)) {
                             const item1 = content.forEach(() => { ... });
@@ -47,14 +41,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if ("link" !== content.type) {
                               if ("channelMention" !== content.type) {
                                 if (null != content.content) {
-                                  outer1_14(content.content, tmp, tmp2);
+                                  closure_1_14(content.content, tmp, tmp2);
                                 }
                               }
                             }
                             if (0 === tmp) {
                               tmp2(content);
                             } else {
-                              outer1_14(content, tmp - 1, tmp2);
+                              closure_1_14(content, tmp - 1, tmp2);
                             }
                           }
                         }
@@ -63,7 +57,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                     if (0 === tmp) {
                       tmp2(arr);
                     } else {
-                      const diff = tmp - 1;
+                      diff = tmp - 1;
                       closure_0 = diff;
                       closure_1 = tmp2;
                       const _Array2 = Array;
@@ -73,14 +67,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if ("link" !== arr.type) {
                           if ("channelMention" !== arr.type) {
                             if (null != arr.content) {
-                              outer1_14(arr.content, diff, tmp2);
+                              closure_1_14(arr.content, diff, tmp2);
                             }
                           }
                         }
                         if (0 === diff) {
                           tmp2(arr);
                         } else {
-                          outer1_14(arr, diff - 1, tmp2);
+                          closure_1_14(arr, diff - 1, tmp2);
                         }
                       }
                     }
@@ -92,8 +86,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                   if ("channelMention" !== arr.type) {
                     if (null != arr.content) {
                       const content = arr.content;
-                      let closure_0 = tmp;
-                      let closure_1 = tmp2;
+                      closure_0 = tmp;
+                      closure_1 = tmp2;
                       const _Array = Array;
                       if (Array.isArray(content)) {
                         const item1 = content.forEach((arr) => {
@@ -104,8 +98,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
                                   const content = arr.content;
-                                  let closure_0 = tmp;
-                                  let closure_1 = tmp2;
+                                  closure_0 = tmp;
+                                  closure_1 = tmp2;
                                   const _Array = Array;
                                   if (Array.isArray(content)) {
                                     const item1 = content.forEach(() => { ... });
@@ -113,14 +107,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== content.type) {
                                       if ("channelMention" !== content.type) {
                                         if (null != content.content) {
-                                          outer1_14(content.content, tmp, tmp2);
+                                          closure_1_14(content.content, tmp, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === tmp) {
                                       tmp2(content);
                                     } else {
-                                      outer1_14(content, tmp - 1, tmp2);
+                                      closure_1_14(content, tmp - 1, tmp2);
                                     }
                                   }
                                 }
@@ -129,7 +123,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if (0 === tmp) {
                               tmp2(arr);
                             } else {
-                              const diff = tmp - 1;
+                              diff = tmp - 1;
                               closure_0 = diff;
                               closure_1 = tmp2;
                               const _Array2 = Array;
@@ -139,14 +133,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== arr.type) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
-                                      outer1_14(arr.content, diff, tmp2);
+                                      closure_1_14(arr.content, diff, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === diff) {
                                   tmp2(arr);
                                 } else {
-                                  outer1_14(arr, diff - 1, tmp2);
+                                  closure_1_14(arr, diff - 1, tmp2);
                                 }
                               }
                             }
@@ -157,14 +151,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if ("link" !== content.type) {
                           if ("channelMention" !== content.type) {
                             if (null != content.content) {
-                              outer1_14(content.content, tmp, tmp2);
+                              closure_1_14(content.content, tmp, tmp2);
                             }
                           }
                         }
                         if (0 === tmp) {
                           tmp2(content);
                         } else {
-                          outer1_14(content, tmp - 1, tmp2);
+                          closure_1_14(content, tmp - 1, tmp2);
                         }
                       }
                     }
@@ -173,7 +167,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                 if (0 === tmp) {
                   tmp2(arr);
                 } else {
-                  const diff = tmp - 1;
+                  diff = tmp - 1;
                   closure_0 = diff;
                   closure_1 = tmp2;
                   const _Array2 = Array;
@@ -186,8 +180,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                           if ("channelMention" !== arr.type) {
                             if (null != arr.content) {
                               const content = arr.content;
-                              let closure_0 = tmp;
-                              let closure_1 = tmp2;
+                              closure_0 = tmp;
+                              closure_1 = tmp2;
                               const _Array = Array;
                               if (Array.isArray(content)) {
                                 const item1 = content.forEach(() => { ... });
@@ -195,14 +189,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== content.type) {
                                   if ("channelMention" !== content.type) {
                                     if (null != content.content) {
-                                      outer1_14(content.content, tmp, tmp2);
+                                      closure_1_14(content.content, tmp, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === tmp) {
                                   tmp2(content);
                                 } else {
-                                  outer1_14(content, tmp - 1, tmp2);
+                                  closure_1_14(content, tmp - 1, tmp2);
                                 }
                               }
                             }
@@ -211,7 +205,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if (0 === tmp) {
                           tmp2(arr);
                         } else {
-                          const diff = tmp - 1;
+                          diff = tmp - 1;
                           closure_0 = diff;
                           closure_1 = tmp2;
                           const _Array2 = Array;
@@ -221,14 +215,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if ("link" !== arr.type) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
-                                  outer1_14(arr.content, diff, tmp2);
+                                  closure_1_14(arr.content, diff, tmp2);
                                 }
                               }
                             }
                             if (0 === diff) {
                               tmp2(arr);
                             } else {
-                              outer1_14(arr, diff - 1, tmp2);
+                              closure_1_14(arr, diff - 1, tmp2);
                             }
                           }
                         }
@@ -239,14 +233,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                     if ("link" !== arr.type) {
                       if ("channelMention" !== arr.type) {
                         if (null != arr.content) {
-                          outer1_14(arr.content, diff, tmp2);
+                          closure_1_14(arr.content, diff, tmp2);
                         }
                       }
                     }
                     if (0 === diff) {
                       tmp2(arr);
                     } else {
-                      outer1_14(arr, diff - 1, tmp2);
+                      closure_1_14(arr, diff - 1, tmp2);
                     }
                   }
                 }
@@ -258,8 +252,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
               if ("channelMention" !== arr.type) {
                 if (null != arr.content) {
                   const content = arr.content;
-                  let closure_0 = tmp;
-                  let closure_1 = tmp2;
+                  closure_0 = tmp;
+                  closure_1 = tmp2;
                   const _Array = Array;
                   if (Array.isArray(content)) {
                     const item1 = content.forEach((arr) => {
@@ -272,8 +266,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
                                   const content = arr.content;
-                                  let closure_0 = tmp;
-                                  let closure_1 = tmp2;
+                                  closure_0 = tmp;
+                                  closure_1 = tmp2;
                                   const _Array = Array;
                                   if (Array.isArray(content)) {
                                     const item1 = content.forEach(() => { ... });
@@ -281,14 +275,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== content.type) {
                                       if ("channelMention" !== content.type) {
                                         if (null != content.content) {
-                                          outer1_14(content.content, tmp, tmp2);
+                                          closure_1_14(content.content, tmp, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === tmp) {
                                       tmp2(content);
                                     } else {
-                                      outer1_14(content, tmp - 1, tmp2);
+                                      closure_1_14(content, tmp - 1, tmp2);
                                     }
                                   }
                                 }
@@ -297,7 +291,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if (0 === tmp) {
                               tmp2(arr);
                             } else {
-                              const diff = tmp - 1;
+                              diff = tmp - 1;
                               closure_0 = diff;
                               closure_1 = tmp2;
                               const _Array2 = Array;
@@ -307,14 +301,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== arr.type) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
-                                      outer1_14(arr.content, diff, tmp2);
+                                      closure_1_14(arr.content, diff, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === diff) {
                                   tmp2(arr);
                                 } else {
-                                  outer1_14(arr, diff - 1, tmp2);
+                                  closure_1_14(arr, diff - 1, tmp2);
                                 }
                               }
                             }
@@ -326,8 +320,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                           if ("channelMention" !== arr.type) {
                             if (null != arr.content) {
                               const content = arr.content;
-                              let closure_0 = tmp;
-                              let closure_1 = tmp2;
+                              closure_0 = tmp;
+                              closure_1 = tmp2;
                               const _Array = Array;
                               if (Array.isArray(content)) {
                                 const item1 = content.forEach((arr) => {
@@ -338,8 +332,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
                                           const content = arr.content;
-                                          let closure_0 = tmp;
-                                          let closure_1 = tmp2;
+                                          closure_0 = tmp;
+                                          closure_1 = tmp2;
                                           const _Array = Array;
                                           if (Array.isArray(content)) {
                                             const item1 = content.forEach(() => { ... });
@@ -347,14 +341,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                             if ("link" !== content.type) {
                                               if ("channelMention" !== content.type) {
                                                 if (null != content.content) {
-                                                  outer1_14(content.content, tmp, tmp2);
+                                                  closure_1_14(content.content, tmp, tmp2);
                                                 }
                                               }
                                             }
                                             if (0 === tmp) {
                                               tmp2(content);
                                             } else {
-                                              outer1_14(content, tmp - 1, tmp2);
+                                              closure_1_14(content, tmp - 1, tmp2);
                                             }
                                           }
                                         }
@@ -363,7 +357,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if (0 === tmp) {
                                       tmp2(arr);
                                     } else {
-                                      const diff = tmp - 1;
+                                      diff = tmp - 1;
                                       closure_0 = diff;
                                       closure_1 = tmp2;
                                       const _Array2 = Array;
@@ -373,14 +367,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== arr.type) {
                                           if ("channelMention" !== arr.type) {
                                             if (null != arr.content) {
-                                              outer1_14(arr.content, diff, tmp2);
+                                              closure_1_14(arr.content, diff, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === diff) {
                                           tmp2(arr);
                                         } else {
-                                          outer1_14(arr, diff - 1, tmp2);
+                                          closure_1_14(arr, diff - 1, tmp2);
                                         }
                                       }
                                     }
@@ -391,14 +385,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== content.type) {
                                   if ("channelMention" !== content.type) {
                                     if (null != content.content) {
-                                      outer1_14(content.content, tmp, tmp2);
+                                      closure_1_14(content.content, tmp, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === tmp) {
                                   tmp2(content);
                                 } else {
-                                  outer1_14(content, tmp - 1, tmp2);
+                                  closure_1_14(content, tmp - 1, tmp2);
                                 }
                               }
                             }
@@ -407,7 +401,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if (0 === tmp) {
                           tmp2(arr);
                         } else {
-                          const diff = tmp - 1;
+                          diff = tmp - 1;
                           closure_0 = diff;
                           closure_1 = tmp2;
                           const _Array2 = Array;
@@ -420,8 +414,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
                                       const content = arr.content;
-                                      let closure_0 = tmp;
-                                      let closure_1 = tmp2;
+                                      closure_0 = tmp;
+                                      closure_1 = tmp2;
                                       const _Array = Array;
                                       if (Array.isArray(content)) {
                                         const item1 = content.forEach(() => { ... });
@@ -429,14 +423,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== content.type) {
                                           if ("channelMention" !== content.type) {
                                             if (null != content.content) {
-                                              outer1_14(content.content, tmp, tmp2);
+                                              closure_1_14(content.content, tmp, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === tmp) {
                                           tmp2(content);
                                         } else {
-                                          outer1_14(content, tmp - 1, tmp2);
+                                          closure_1_14(content, tmp - 1, tmp2);
                                         }
                                       }
                                     }
@@ -445,7 +439,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if (0 === tmp) {
                                   tmp2(arr);
                                 } else {
-                                  const diff = tmp - 1;
+                                  diff = tmp - 1;
                                   closure_0 = diff;
                                   closure_1 = tmp2;
                                   const _Array2 = Array;
@@ -455,14 +449,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== arr.type) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
-                                          outer1_14(arr.content, diff, tmp2);
+                                          closure_1_14(arr.content, diff, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === diff) {
                                       tmp2(arr);
                                     } else {
-                                      outer1_14(arr, diff - 1, tmp2);
+                                      closure_1_14(arr, diff - 1, tmp2);
                                     }
                                   }
                                 }
@@ -473,14 +467,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if ("link" !== arr.type) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
-                                  outer1_14(arr.content, diff, tmp2);
+                                  closure_1_14(arr.content, diff, tmp2);
                                 }
                               }
                             }
                             if (0 === diff) {
                               tmp2(arr);
                             } else {
-                              outer1_14(arr, diff - 1, tmp2);
+                              closure_1_14(arr, diff - 1, tmp2);
                             }
                           }
                         }
@@ -491,14 +485,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                     if ("link" !== content.type) {
                       if ("channelMention" !== content.type) {
                         if (null != content.content) {
-                          outer1_14(content.content, tmp, tmp2);
+                          closure_1_14(content.content, tmp, tmp2);
                         }
                       }
                     }
                     if (0 === tmp) {
                       tmp2(content);
                     } else {
-                      outer1_14(content, tmp - 1, tmp2);
+                      closure_1_14(content, tmp - 1, tmp2);
                     }
                   }
                 }
@@ -507,7 +501,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
             if (0 === tmp) {
               tmp2(arr);
             } else {
-              const diff = tmp - 1;
+              diff = tmp - 1;
               closure_0 = diff;
               closure_1 = tmp2;
               const _Array2 = Array;
@@ -522,8 +516,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                           if ("channelMention" !== arr.type) {
                             if (null != arr.content) {
                               const content = arr.content;
-                              let closure_0 = tmp;
-                              let closure_1 = tmp2;
+                              closure_0 = tmp;
+                              closure_1 = tmp2;
                               const _Array = Array;
                               if (Array.isArray(content)) {
                                 const item1 = content.forEach(() => { ... });
@@ -531,14 +525,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== content.type) {
                                   if ("channelMention" !== content.type) {
                                     if (null != content.content) {
-                                      outer1_14(content.content, tmp, tmp2);
+                                      closure_1_14(content.content, tmp, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === tmp) {
                                   tmp2(content);
                                 } else {
-                                  outer1_14(content, tmp - 1, tmp2);
+                                  closure_1_14(content, tmp - 1, tmp2);
                                 }
                               }
                             }
@@ -547,7 +541,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if (0 === tmp) {
                           tmp2(arr);
                         } else {
-                          const diff = tmp - 1;
+                          diff = tmp - 1;
                           closure_0 = diff;
                           closure_1 = tmp2;
                           const _Array2 = Array;
@@ -557,14 +551,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if ("link" !== arr.type) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
-                                  outer1_14(arr.content, diff, tmp2);
+                                  closure_1_14(arr.content, diff, tmp2);
                                 }
                               }
                             }
                             if (0 === diff) {
                               tmp2(arr);
                             } else {
-                              outer1_14(arr, diff - 1, tmp2);
+                              closure_1_14(arr, diff - 1, tmp2);
                             }
                           }
                         }
@@ -576,8 +570,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                       if ("channelMention" !== arr.type) {
                         if (null != arr.content) {
                           const content = arr.content;
-                          let closure_0 = tmp;
-                          let closure_1 = tmp2;
+                          closure_0 = tmp;
+                          closure_1 = tmp2;
                           const _Array = Array;
                           if (Array.isArray(content)) {
                             const item1 = content.forEach((arr) => {
@@ -588,8 +582,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
                                       const content = arr.content;
-                                      let closure_0 = tmp;
-                                      let closure_1 = tmp2;
+                                      closure_0 = tmp;
+                                      closure_1 = tmp2;
                                       const _Array = Array;
                                       if (Array.isArray(content)) {
                                         const item1 = content.forEach(() => { ... });
@@ -597,14 +591,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== content.type) {
                                           if ("channelMention" !== content.type) {
                                             if (null != content.content) {
-                                              outer1_14(content.content, tmp, tmp2);
+                                              closure_1_14(content.content, tmp, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === tmp) {
                                           tmp2(content);
                                         } else {
-                                          outer1_14(content, tmp - 1, tmp2);
+                                          closure_1_14(content, tmp - 1, tmp2);
                                         }
                                       }
                                     }
@@ -613,7 +607,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if (0 === tmp) {
                                   tmp2(arr);
                                 } else {
-                                  const diff = tmp - 1;
+                                  diff = tmp - 1;
                                   closure_0 = diff;
                                   closure_1 = tmp2;
                                   const _Array2 = Array;
@@ -623,14 +617,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== arr.type) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
-                                          outer1_14(arr.content, diff, tmp2);
+                                          closure_1_14(arr.content, diff, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === diff) {
                                       tmp2(arr);
                                     } else {
-                                      outer1_14(arr, diff - 1, tmp2);
+                                      closure_1_14(arr, diff - 1, tmp2);
                                     }
                                   }
                                 }
@@ -641,14 +635,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if ("link" !== content.type) {
                               if ("channelMention" !== content.type) {
                                 if (null != content.content) {
-                                  outer1_14(content.content, tmp, tmp2);
+                                  closure_1_14(content.content, tmp, tmp2);
                                 }
                               }
                             }
                             if (0 === tmp) {
                               tmp2(content);
                             } else {
-                              outer1_14(content, tmp - 1, tmp2);
+                              closure_1_14(content, tmp - 1, tmp2);
                             }
                           }
                         }
@@ -657,7 +651,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                     if (0 === tmp) {
                       tmp2(arr);
                     } else {
-                      const diff = tmp - 1;
+                      diff = tmp - 1;
                       closure_0 = diff;
                       closure_1 = tmp2;
                       const _Array2 = Array;
@@ -670,8 +664,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
                                   const content = arr.content;
-                                  let closure_0 = tmp;
-                                  let closure_1 = tmp2;
+                                  closure_0 = tmp;
+                                  closure_1 = tmp2;
                                   const _Array = Array;
                                   if (Array.isArray(content)) {
                                     const item1 = content.forEach(() => { ... });
@@ -679,14 +673,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== content.type) {
                                       if ("channelMention" !== content.type) {
                                         if (null != content.content) {
-                                          outer1_14(content.content, tmp, tmp2);
+                                          closure_1_14(content.content, tmp, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === tmp) {
                                       tmp2(content);
                                     } else {
-                                      outer1_14(content, tmp - 1, tmp2);
+                                      closure_1_14(content, tmp - 1, tmp2);
                                     }
                                   }
                                 }
@@ -695,7 +689,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if (0 === tmp) {
                               tmp2(arr);
                             } else {
-                              const diff = tmp - 1;
+                              diff = tmp - 1;
                               closure_0 = diff;
                               closure_1 = tmp2;
                               const _Array2 = Array;
@@ -705,14 +699,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== arr.type) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
-                                      outer1_14(arr.content, diff, tmp2);
+                                      closure_1_14(arr.content, diff, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === diff) {
                                   tmp2(arr);
                                 } else {
-                                  outer1_14(arr, diff - 1, tmp2);
+                                  closure_1_14(arr, diff - 1, tmp2);
                                 }
                               }
                             }
@@ -723,14 +717,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if ("link" !== arr.type) {
                           if ("channelMention" !== arr.type) {
                             if (null != arr.content) {
-                              outer1_14(arr.content, diff, tmp2);
+                              closure_1_14(arr.content, diff, tmp2);
                             }
                           }
                         }
                         if (0 === diff) {
                           tmp2(arr);
                         } else {
-                          outer1_14(arr, diff - 1, tmp2);
+                          closure_1_14(arr, diff - 1, tmp2);
                         }
                       }
                     }
@@ -741,14 +735,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                 if ("link" !== arr.type) {
                   if ("channelMention" !== arr.type) {
                     if (null != arr.content) {
-                      outer1_14(arr.content, diff, tmp2);
+                      closure_1_14(arr.content, diff, tmp2);
                     }
                   }
                 }
                 if (0 === diff) {
                   tmp2(arr);
                 } else {
-                  outer1_14(arr, diff - 1, tmp2);
+                  closure_1_14(arr, diff - 1, tmp2);
                 }
               }
             }
@@ -760,8 +754,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
           if ("channelMention" !== arr.type) {
             if (null != arr.content) {
               const content = arr.content;
-              let closure_0 = tmp;
-              let closure_1 = tmp2;
+              closure_0 = tmp;
+              closure_1 = tmp2;
               const _Array = Array;
               if (Array.isArray(content)) {
                 const item1 = content.forEach((arr) => {
@@ -776,8 +770,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
                                   const content = arr.content;
-                                  let closure_0 = tmp;
-                                  let closure_1 = tmp2;
+                                  closure_0 = tmp;
+                                  closure_1 = tmp2;
                                   const _Array = Array;
                                   if (Array.isArray(content)) {
                                     const item1 = content.forEach(() => { ... });
@@ -785,14 +779,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== content.type) {
                                       if ("channelMention" !== content.type) {
                                         if (null != content.content) {
-                                          outer1_14(content.content, tmp, tmp2);
+                                          closure_1_14(content.content, tmp, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === tmp) {
                                       tmp2(content);
                                     } else {
-                                      outer1_14(content, tmp - 1, tmp2);
+                                      closure_1_14(content, tmp - 1, tmp2);
                                     }
                                   }
                                 }
@@ -801,7 +795,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if (0 === tmp) {
                               tmp2(arr);
                             } else {
-                              const diff = tmp - 1;
+                              diff = tmp - 1;
                               closure_0 = diff;
                               closure_1 = tmp2;
                               const _Array2 = Array;
@@ -811,14 +805,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== arr.type) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
-                                      outer1_14(arr.content, diff, tmp2);
+                                      closure_1_14(arr.content, diff, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === diff) {
                                   tmp2(arr);
                                 } else {
-                                  outer1_14(arr, diff - 1, tmp2);
+                                  closure_1_14(arr, diff - 1, tmp2);
                                 }
                               }
                             }
@@ -830,8 +824,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                           if ("channelMention" !== arr.type) {
                             if (null != arr.content) {
                               const content = arr.content;
-                              let closure_0 = tmp;
-                              let closure_1 = tmp2;
+                              closure_0 = tmp;
+                              closure_1 = tmp2;
                               const _Array = Array;
                               if (Array.isArray(content)) {
                                 const item1 = content.forEach((arr) => {
@@ -842,8 +836,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
                                           const content = arr.content;
-                                          let closure_0 = tmp;
-                                          let closure_1 = tmp2;
+                                          closure_0 = tmp;
+                                          closure_1 = tmp2;
                                           const _Array = Array;
                                           if (Array.isArray(content)) {
                                             const item1 = content.forEach(() => { ... });
@@ -851,14 +845,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                             if ("link" !== content.type) {
                                               if ("channelMention" !== content.type) {
                                                 if (null != content.content) {
-                                                  outer1_14(content.content, tmp, tmp2);
+                                                  closure_1_14(content.content, tmp, tmp2);
                                                 }
                                               }
                                             }
                                             if (0 === tmp) {
                                               tmp2(content);
                                             } else {
-                                              outer1_14(content, tmp - 1, tmp2);
+                                              closure_1_14(content, tmp - 1, tmp2);
                                             }
                                           }
                                         }
@@ -867,7 +861,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if (0 === tmp) {
                                       tmp2(arr);
                                     } else {
-                                      const diff = tmp - 1;
+                                      diff = tmp - 1;
                                       closure_0 = diff;
                                       closure_1 = tmp2;
                                       const _Array2 = Array;
@@ -877,14 +871,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== arr.type) {
                                           if ("channelMention" !== arr.type) {
                                             if (null != arr.content) {
-                                              outer1_14(arr.content, diff, tmp2);
+                                              closure_1_14(arr.content, diff, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === diff) {
                                           tmp2(arr);
                                         } else {
-                                          outer1_14(arr, diff - 1, tmp2);
+                                          closure_1_14(arr, diff - 1, tmp2);
                                         }
                                       }
                                     }
@@ -895,14 +889,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== content.type) {
                                   if ("channelMention" !== content.type) {
                                     if (null != content.content) {
-                                      outer1_14(content.content, tmp, tmp2);
+                                      closure_1_14(content.content, tmp, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === tmp) {
                                   tmp2(content);
                                 } else {
-                                  outer1_14(content, tmp - 1, tmp2);
+                                  closure_1_14(content, tmp - 1, tmp2);
                                 }
                               }
                             }
@@ -911,7 +905,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if (0 === tmp) {
                           tmp2(arr);
                         } else {
-                          const diff = tmp - 1;
+                          diff = tmp - 1;
                           closure_0 = diff;
                           closure_1 = tmp2;
                           const _Array2 = Array;
@@ -924,8 +918,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
                                       const content = arr.content;
-                                      let closure_0 = tmp;
-                                      let closure_1 = tmp2;
+                                      closure_0 = tmp;
+                                      closure_1 = tmp2;
                                       const _Array = Array;
                                       if (Array.isArray(content)) {
                                         const item1 = content.forEach(() => { ... });
@@ -933,14 +927,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== content.type) {
                                           if ("channelMention" !== content.type) {
                                             if (null != content.content) {
-                                              outer1_14(content.content, tmp, tmp2);
+                                              closure_1_14(content.content, tmp, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === tmp) {
                                           tmp2(content);
                                         } else {
-                                          outer1_14(content, tmp - 1, tmp2);
+                                          closure_1_14(content, tmp - 1, tmp2);
                                         }
                                       }
                                     }
@@ -949,7 +943,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if (0 === tmp) {
                                   tmp2(arr);
                                 } else {
-                                  const diff = tmp - 1;
+                                  diff = tmp - 1;
                                   closure_0 = diff;
                                   closure_1 = tmp2;
                                   const _Array2 = Array;
@@ -959,14 +953,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== arr.type) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
-                                          outer1_14(arr.content, diff, tmp2);
+                                          closure_1_14(arr.content, diff, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === diff) {
                                       tmp2(arr);
                                     } else {
-                                      outer1_14(arr, diff - 1, tmp2);
+                                      closure_1_14(arr, diff - 1, tmp2);
                                     }
                                   }
                                 }
@@ -977,14 +971,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if ("link" !== arr.type) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
-                                  outer1_14(arr.content, diff, tmp2);
+                                  closure_1_14(arr.content, diff, tmp2);
                                 }
                               }
                             }
                             if (0 === diff) {
                               tmp2(arr);
                             } else {
-                              outer1_14(arr, diff - 1, tmp2);
+                              closure_1_14(arr, diff - 1, tmp2);
                             }
                           }
                         }
@@ -996,8 +990,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                       if ("channelMention" !== arr.type) {
                         if (null != arr.content) {
                           const content = arr.content;
-                          let closure_0 = tmp;
-                          let closure_1 = tmp2;
+                          closure_0 = tmp;
+                          closure_1 = tmp2;
                           const _Array = Array;
                           if (Array.isArray(content)) {
                             const item1 = content.forEach((arr) => {
@@ -1010,8 +1004,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
                                           const content = arr.content;
-                                          let closure_0 = tmp;
-                                          let closure_1 = tmp2;
+                                          closure_0 = tmp;
+                                          closure_1 = tmp2;
                                           const _Array = Array;
                                           if (Array.isArray(content)) {
                                             const item1 = content.forEach(() => { ... });
@@ -1019,14 +1013,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                             if ("link" !== content.type) {
                                               if ("channelMention" !== content.type) {
                                                 if (null != content.content) {
-                                                  outer1_14(content.content, tmp, tmp2);
+                                                  closure_1_14(content.content, tmp, tmp2);
                                                 }
                                               }
                                             }
                                             if (0 === tmp) {
                                               tmp2(content);
                                             } else {
-                                              outer1_14(content, tmp - 1, tmp2);
+                                              closure_1_14(content, tmp - 1, tmp2);
                                             }
                                           }
                                         }
@@ -1035,7 +1029,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if (0 === tmp) {
                                       tmp2(arr);
                                     } else {
-                                      const diff = tmp - 1;
+                                      diff = tmp - 1;
                                       closure_0 = diff;
                                       closure_1 = tmp2;
                                       const _Array2 = Array;
@@ -1045,14 +1039,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== arr.type) {
                                           if ("channelMention" !== arr.type) {
                                             if (null != arr.content) {
-                                              outer1_14(arr.content, diff, tmp2);
+                                              closure_1_14(arr.content, diff, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === diff) {
                                           tmp2(arr);
                                         } else {
-                                          outer1_14(arr, diff - 1, tmp2);
+                                          closure_1_14(arr, diff - 1, tmp2);
                                         }
                                       }
                                     }
@@ -1064,8 +1058,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
                                       const content = arr.content;
-                                      let closure_0 = tmp;
-                                      let closure_1 = tmp2;
+                                      closure_0 = tmp;
+                                      closure_1 = tmp2;
                                       const _Array = Array;
                                       if (Array.isArray(content)) {
                                         const item1 = content.forEach((arr) => {
@@ -1076,8 +1070,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                               if ("channelMention" !== arr.type) {
                                                 if (null != arr.content) {
                                                   const content = arr.content;
-                                                  let closure_0 = tmp;
-                                                  let closure_1 = tmp2;
+                                                  closure_0 = tmp;
+                                                  closure_1 = tmp2;
                                                   const _Array = Array;
                                                   if (Array.isArray(content)) {
                                                     const item1 = content.forEach(() => { ... });
@@ -1085,14 +1079,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                                     if ("link" !== content.type) {
                                                       if ("channelMention" !== content.type) {
                                                         if (null != content.content) {
-                                                          outer1_14(content.content, tmp, tmp2);
+                                                          closure_1_14(content.content, tmp, tmp2);
                                                         }
                                                       }
                                                     }
                                                     if (0 === tmp) {
                                                       tmp2(content);
                                                     } else {
-                                                      outer1_14(content, tmp - 1, tmp2);
+                                                      closure_1_14(content, tmp - 1, tmp2);
                                                     }
                                                   }
                                                 }
@@ -1101,7 +1095,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                             if (0 === tmp) {
                                               tmp2(arr);
                                             } else {
-                                              const diff = tmp - 1;
+                                              diff = tmp - 1;
                                               closure_0 = diff;
                                               closure_1 = tmp2;
                                               const _Array2 = Array;
@@ -1111,14 +1105,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                                 if ("link" !== arr.type) {
                                                   if ("channelMention" !== arr.type) {
                                                     if (null != arr.content) {
-                                                      outer1_14(arr.content, diff, tmp2);
+                                                      closure_1_14(arr.content, diff, tmp2);
                                                     }
                                                   }
                                                 }
                                                 if (0 === diff) {
                                                   tmp2(arr);
                                                 } else {
-                                                  outer1_14(arr, diff - 1, tmp2);
+                                                  closure_1_14(arr, diff - 1, tmp2);
                                                 }
                                               }
                                             }
@@ -1129,14 +1123,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== content.type) {
                                           if ("channelMention" !== content.type) {
                                             if (null != content.content) {
-                                              outer1_14(content.content, tmp, tmp2);
+                                              closure_1_14(content.content, tmp, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === tmp) {
                                           tmp2(content);
                                         } else {
-                                          outer1_14(content, tmp - 1, tmp2);
+                                          closure_1_14(content, tmp - 1, tmp2);
                                         }
                                       }
                                     }
@@ -1145,7 +1139,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if (0 === tmp) {
                                   tmp2(arr);
                                 } else {
-                                  const diff = tmp - 1;
+                                  diff = tmp - 1;
                                   closure_0 = diff;
                                   closure_1 = tmp2;
                                   const _Array2 = Array;
@@ -1158,8 +1152,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                           if ("channelMention" !== arr.type) {
                                             if (null != arr.content) {
                                               const content = arr.content;
-                                              let closure_0 = tmp;
-                                              let closure_1 = tmp2;
+                                              closure_0 = tmp;
+                                              closure_1 = tmp2;
                                               const _Array = Array;
                                               if (Array.isArray(content)) {
                                                 const item1 = content.forEach(() => { ... });
@@ -1167,14 +1161,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                                 if ("link" !== content.type) {
                                                   if ("channelMention" !== content.type) {
                                                     if (null != content.content) {
-                                                      outer1_14(content.content, tmp, tmp2);
+                                                      closure_1_14(content.content, tmp, tmp2);
                                                     }
                                                   }
                                                 }
                                                 if (0 === tmp) {
                                                   tmp2(content);
                                                 } else {
-                                                  outer1_14(content, tmp - 1, tmp2);
+                                                  closure_1_14(content, tmp - 1, tmp2);
                                                 }
                                               }
                                             }
@@ -1183,7 +1177,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if (0 === tmp) {
                                           tmp2(arr);
                                         } else {
-                                          const diff = tmp - 1;
+                                          diff = tmp - 1;
                                           closure_0 = diff;
                                           closure_1 = tmp2;
                                           const _Array2 = Array;
@@ -1193,14 +1187,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                             if ("link" !== arr.type) {
                                               if ("channelMention" !== arr.type) {
                                                 if (null != arr.content) {
-                                                  outer1_14(arr.content, diff, tmp2);
+                                                  closure_1_14(arr.content, diff, tmp2);
                                                 }
                                               }
                                             }
                                             if (0 === diff) {
                                               tmp2(arr);
                                             } else {
-                                              outer1_14(arr, diff - 1, tmp2);
+                                              closure_1_14(arr, diff - 1, tmp2);
                                             }
                                           }
                                         }
@@ -1211,14 +1205,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== arr.type) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
-                                          outer1_14(arr.content, diff, tmp2);
+                                          closure_1_14(arr.content, diff, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === diff) {
                                       tmp2(arr);
                                     } else {
-                                      outer1_14(arr, diff - 1, tmp2);
+                                      closure_1_14(arr, diff - 1, tmp2);
                                     }
                                   }
                                 }
@@ -1229,14 +1223,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if ("link" !== content.type) {
                               if ("channelMention" !== content.type) {
                                 if (null != content.content) {
-                                  outer1_14(content.content, tmp, tmp2);
+                                  closure_1_14(content.content, tmp, tmp2);
                                 }
                               }
                             }
                             if (0 === tmp) {
                               tmp2(content);
                             } else {
-                              outer1_14(content, tmp - 1, tmp2);
+                              closure_1_14(content, tmp - 1, tmp2);
                             }
                           }
                         }
@@ -1245,7 +1239,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                     if (0 === tmp) {
                       tmp2(arr);
                     } else {
-                      const diff = tmp - 1;
+                      diff = tmp - 1;
                       closure_0 = diff;
                       closure_1 = tmp2;
                       const _Array2 = Array;
@@ -1260,8 +1254,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
                                       const content = arr.content;
-                                      let closure_0 = tmp;
-                                      let closure_1 = tmp2;
+                                      closure_0 = tmp;
+                                      closure_1 = tmp2;
                                       const _Array = Array;
                                       if (Array.isArray(content)) {
                                         const item1 = content.forEach(() => { ... });
@@ -1269,14 +1263,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== content.type) {
                                           if ("channelMention" !== content.type) {
                                             if (null != content.content) {
-                                              outer1_14(content.content, tmp, tmp2);
+                                              closure_1_14(content.content, tmp, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === tmp) {
                                           tmp2(content);
                                         } else {
-                                          outer1_14(content, tmp - 1, tmp2);
+                                          closure_1_14(content, tmp - 1, tmp2);
                                         }
                                       }
                                     }
@@ -1285,7 +1279,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if (0 === tmp) {
                                   tmp2(arr);
                                 } else {
-                                  const diff = tmp - 1;
+                                  diff = tmp - 1;
                                   closure_0 = diff;
                                   closure_1 = tmp2;
                                   const _Array2 = Array;
@@ -1295,14 +1289,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== arr.type) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
-                                          outer1_14(arr.content, diff, tmp2);
+                                          closure_1_14(arr.content, diff, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === diff) {
                                       tmp2(arr);
                                     } else {
-                                      outer1_14(arr, diff - 1, tmp2);
+                                      closure_1_14(arr, diff - 1, tmp2);
                                     }
                                   }
                                 }
@@ -1314,8 +1308,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
                                   const content = arr.content;
-                                  let closure_0 = tmp;
-                                  let closure_1 = tmp2;
+                                  closure_0 = tmp;
+                                  closure_1 = tmp2;
                                   const _Array = Array;
                                   if (Array.isArray(content)) {
                                     const item1 = content.forEach((arr) => {
@@ -1326,8 +1320,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                           if ("channelMention" !== arr.type) {
                                             if (null != arr.content) {
                                               const content = arr.content;
-                                              let closure_0 = tmp;
-                                              let closure_1 = tmp2;
+                                              closure_0 = tmp;
+                                              closure_1 = tmp2;
                                               const _Array = Array;
                                               if (Array.isArray(content)) {
                                                 const item1 = content.forEach(() => { ... });
@@ -1335,14 +1329,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                                 if ("link" !== content.type) {
                                                   if ("channelMention" !== content.type) {
                                                     if (null != content.content) {
-                                                      outer1_14(content.content, tmp, tmp2);
+                                                      closure_1_14(content.content, tmp, tmp2);
                                                     }
                                                   }
                                                 }
                                                 if (0 === tmp) {
                                                   tmp2(content);
                                                 } else {
-                                                  outer1_14(content, tmp - 1, tmp2);
+                                                  closure_1_14(content, tmp - 1, tmp2);
                                                 }
                                               }
                                             }
@@ -1351,7 +1345,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if (0 === tmp) {
                                           tmp2(arr);
                                         } else {
-                                          const diff = tmp - 1;
+                                          diff = tmp - 1;
                                           closure_0 = diff;
                                           closure_1 = tmp2;
                                           const _Array2 = Array;
@@ -1361,14 +1355,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                             if ("link" !== arr.type) {
                                               if ("channelMention" !== arr.type) {
                                                 if (null != arr.content) {
-                                                  outer1_14(arr.content, diff, tmp2);
+                                                  closure_1_14(arr.content, diff, tmp2);
                                                 }
                                               }
                                             }
                                             if (0 === diff) {
                                               tmp2(arr);
                                             } else {
-                                              outer1_14(arr, diff - 1, tmp2);
+                                              closure_1_14(arr, diff - 1, tmp2);
                                             }
                                           }
                                         }
@@ -1379,14 +1373,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== content.type) {
                                       if ("channelMention" !== content.type) {
                                         if (null != content.content) {
-                                          outer1_14(content.content, tmp, tmp2);
+                                          closure_1_14(content.content, tmp, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === tmp) {
                                       tmp2(content);
                                     } else {
-                                      outer1_14(content, tmp - 1, tmp2);
+                                      closure_1_14(content, tmp - 1, tmp2);
                                     }
                                   }
                                 }
@@ -1395,7 +1389,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if (0 === tmp) {
                               tmp2(arr);
                             } else {
-                              const diff = tmp - 1;
+                              diff = tmp - 1;
                               closure_0 = diff;
                               closure_1 = tmp2;
                               const _Array2 = Array;
@@ -1408,8 +1402,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
                                           const content = arr.content;
-                                          let closure_0 = tmp;
-                                          let closure_1 = tmp2;
+                                          closure_0 = tmp;
+                                          closure_1 = tmp2;
                                           const _Array = Array;
                                           if (Array.isArray(content)) {
                                             const item1 = content.forEach(() => { ... });
@@ -1417,14 +1411,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                             if ("link" !== content.type) {
                                               if ("channelMention" !== content.type) {
                                                 if (null != content.content) {
-                                                  outer1_14(content.content, tmp, tmp2);
+                                                  closure_1_14(content.content, tmp, tmp2);
                                                 }
                                               }
                                             }
                                             if (0 === tmp) {
                                               tmp2(content);
                                             } else {
-                                              outer1_14(content, tmp - 1, tmp2);
+                                              closure_1_14(content, tmp - 1, tmp2);
                                             }
                                           }
                                         }
@@ -1433,7 +1427,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if (0 === tmp) {
                                       tmp2(arr);
                                     } else {
-                                      const diff = tmp - 1;
+                                      diff = tmp - 1;
                                       closure_0 = diff;
                                       closure_1 = tmp2;
                                       const _Array2 = Array;
@@ -1443,14 +1437,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== arr.type) {
                                           if ("channelMention" !== arr.type) {
                                             if (null != arr.content) {
-                                              outer1_14(arr.content, diff, tmp2);
+                                              closure_1_14(arr.content, diff, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === diff) {
                                           tmp2(arr);
                                         } else {
-                                          outer1_14(arr, diff - 1, tmp2);
+                                          closure_1_14(arr, diff - 1, tmp2);
                                         }
                                       }
                                     }
@@ -1461,14 +1455,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== arr.type) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
-                                      outer1_14(arr.content, diff, tmp2);
+                                      closure_1_14(arr.content, diff, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === diff) {
                                   tmp2(arr);
                                 } else {
-                                  outer1_14(arr, diff - 1, tmp2);
+                                  closure_1_14(arr, diff - 1, tmp2);
                                 }
                               }
                             }
@@ -1479,14 +1473,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if ("link" !== arr.type) {
                           if ("channelMention" !== arr.type) {
                             if (null != arr.content) {
-                              outer1_14(arr.content, diff, tmp2);
+                              closure_1_14(arr.content, diff, tmp2);
                             }
                           }
                         }
                         if (0 === diff) {
                           tmp2(arr);
                         } else {
-                          outer1_14(arr, diff - 1, tmp2);
+                          closure_1_14(arr, diff - 1, tmp2);
                         }
                       }
                     }
@@ -1497,14 +1491,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                 if ("link" !== content.type) {
                   if ("channelMention" !== content.type) {
                     if (null != content.content) {
-                      outer1_14(content.content, tmp, tmp2);
+                      closure_1_14(content.content, tmp, tmp2);
                     }
                   }
                 }
                 if (0 === tmp) {
                   tmp2(content);
                 } else {
-                  outer1_14(content, tmp - 1, tmp2);
+                  closure_1_14(content, tmp - 1, tmp2);
                 }
               }
             }
@@ -1513,7 +1507,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
         if (0 === tmp) {
           tmp2(arr);
         } else {
-          const diff = tmp - 1;
+          diff = tmp - 1;
           closure_0 = diff;
           closure_1 = tmp2;
           const _Array2 = Array;
@@ -1530,8 +1524,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                           if ("channelMention" !== arr.type) {
                             if (null != arr.content) {
                               const content = arr.content;
-                              let closure_0 = tmp;
-                              let closure_1 = tmp2;
+                              closure_0 = tmp;
+                              closure_1 = tmp2;
                               const _Array = Array;
                               if (Array.isArray(content)) {
                                 const item1 = content.forEach(() => { ... });
@@ -1539,14 +1533,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== content.type) {
                                   if ("channelMention" !== content.type) {
                                     if (null != content.content) {
-                                      outer1_14(content.content, tmp, tmp2);
+                                      closure_1_14(content.content, tmp, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === tmp) {
                                   tmp2(content);
                                 } else {
-                                  outer1_14(content, tmp - 1, tmp2);
+                                  closure_1_14(content, tmp - 1, tmp2);
                                 }
                               }
                             }
@@ -1555,7 +1549,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if (0 === tmp) {
                           tmp2(arr);
                         } else {
-                          const diff = tmp - 1;
+                          diff = tmp - 1;
                           closure_0 = diff;
                           closure_1 = tmp2;
                           const _Array2 = Array;
@@ -1565,14 +1559,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if ("link" !== arr.type) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
-                                  outer1_14(arr.content, diff, tmp2);
+                                  closure_1_14(arr.content, diff, tmp2);
                                 }
                               }
                             }
                             if (0 === diff) {
                               tmp2(arr);
                             } else {
-                              outer1_14(arr, diff - 1, tmp2);
+                              closure_1_14(arr, diff - 1, tmp2);
                             }
                           }
                         }
@@ -1584,8 +1578,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                       if ("channelMention" !== arr.type) {
                         if (null != arr.content) {
                           const content = arr.content;
-                          let closure_0 = tmp;
-                          let closure_1 = tmp2;
+                          closure_0 = tmp;
+                          closure_1 = tmp2;
                           const _Array = Array;
                           if (Array.isArray(content)) {
                             const item1 = content.forEach((arr) => {
@@ -1596,8 +1590,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
                                       const content = arr.content;
-                                      let closure_0 = tmp;
-                                      let closure_1 = tmp2;
+                                      closure_0 = tmp;
+                                      closure_1 = tmp2;
                                       const _Array = Array;
                                       if (Array.isArray(content)) {
                                         const item1 = content.forEach(() => { ... });
@@ -1605,14 +1599,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== content.type) {
                                           if ("channelMention" !== content.type) {
                                             if (null != content.content) {
-                                              outer1_14(content.content, tmp, tmp2);
+                                              closure_1_14(content.content, tmp, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === tmp) {
                                           tmp2(content);
                                         } else {
-                                          outer1_14(content, tmp - 1, tmp2);
+                                          closure_1_14(content, tmp - 1, tmp2);
                                         }
                                       }
                                     }
@@ -1621,7 +1615,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if (0 === tmp) {
                                   tmp2(arr);
                                 } else {
-                                  const diff = tmp - 1;
+                                  diff = tmp - 1;
                                   closure_0 = diff;
                                   closure_1 = tmp2;
                                   const _Array2 = Array;
@@ -1631,14 +1625,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== arr.type) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
-                                          outer1_14(arr.content, diff, tmp2);
+                                          closure_1_14(arr.content, diff, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === diff) {
                                       tmp2(arr);
                                     } else {
-                                      outer1_14(arr, diff - 1, tmp2);
+                                      closure_1_14(arr, diff - 1, tmp2);
                                     }
                                   }
                                 }
@@ -1649,14 +1643,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if ("link" !== content.type) {
                               if ("channelMention" !== content.type) {
                                 if (null != content.content) {
-                                  outer1_14(content.content, tmp, tmp2);
+                                  closure_1_14(content.content, tmp, tmp2);
                                 }
                               }
                             }
                             if (0 === tmp) {
                               tmp2(content);
                             } else {
-                              outer1_14(content, tmp - 1, tmp2);
+                              closure_1_14(content, tmp - 1, tmp2);
                             }
                           }
                         }
@@ -1665,7 +1659,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                     if (0 === tmp) {
                       tmp2(arr);
                     } else {
-                      const diff = tmp - 1;
+                      diff = tmp - 1;
                       closure_0 = diff;
                       closure_1 = tmp2;
                       const _Array2 = Array;
@@ -1678,8 +1672,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
                                   const content = arr.content;
-                                  let closure_0 = tmp;
-                                  let closure_1 = tmp2;
+                                  closure_0 = tmp;
+                                  closure_1 = tmp2;
                                   const _Array = Array;
                                   if (Array.isArray(content)) {
                                     const item1 = content.forEach(() => { ... });
@@ -1687,14 +1681,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== content.type) {
                                       if ("channelMention" !== content.type) {
                                         if (null != content.content) {
-                                          outer1_14(content.content, tmp, tmp2);
+                                          closure_1_14(content.content, tmp, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === tmp) {
                                       tmp2(content);
                                     } else {
-                                      outer1_14(content, tmp - 1, tmp2);
+                                      closure_1_14(content, tmp - 1, tmp2);
                                     }
                                   }
                                 }
@@ -1703,7 +1697,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if (0 === tmp) {
                               tmp2(arr);
                             } else {
-                              const diff = tmp - 1;
+                              diff = tmp - 1;
                               closure_0 = diff;
                               closure_1 = tmp2;
                               const _Array2 = Array;
@@ -1713,14 +1707,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== arr.type) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
-                                      outer1_14(arr.content, diff, tmp2);
+                                      closure_1_14(arr.content, diff, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === diff) {
                                   tmp2(arr);
                                 } else {
-                                  outer1_14(arr, diff - 1, tmp2);
+                                  closure_1_14(arr, diff - 1, tmp2);
                                 }
                               }
                             }
@@ -1731,14 +1725,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if ("link" !== arr.type) {
                           if ("channelMention" !== arr.type) {
                             if (null != arr.content) {
-                              outer1_14(arr.content, diff, tmp2);
+                              closure_1_14(arr.content, diff, tmp2);
                             }
                           }
                         }
                         if (0 === diff) {
                           tmp2(arr);
                         } else {
-                          outer1_14(arr, diff - 1, tmp2);
+                          closure_1_14(arr, diff - 1, tmp2);
                         }
                       }
                     }
@@ -1750,8 +1744,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                   if ("channelMention" !== arr.type) {
                     if (null != arr.content) {
                       const content = arr.content;
-                      let closure_0 = tmp;
-                      let closure_1 = tmp2;
+                      closure_0 = tmp;
+                      closure_1 = tmp2;
                       const _Array = Array;
                       if (Array.isArray(content)) {
                         const item1 = content.forEach((arr) => {
@@ -1764,8 +1758,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
                                       const content = arr.content;
-                                      let closure_0 = tmp;
-                                      let closure_1 = tmp2;
+                                      closure_0 = tmp;
+                                      closure_1 = tmp2;
                                       const _Array = Array;
                                       if (Array.isArray(content)) {
                                         const item1 = content.forEach(() => { ... });
@@ -1773,14 +1767,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== content.type) {
                                           if ("channelMention" !== content.type) {
                                             if (null != content.content) {
-                                              outer1_14(content.content, tmp, tmp2);
+                                              closure_1_14(content.content, tmp, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === tmp) {
                                           tmp2(content);
                                         } else {
-                                          outer1_14(content, tmp - 1, tmp2);
+                                          closure_1_14(content, tmp - 1, tmp2);
                                         }
                                       }
                                     }
@@ -1789,7 +1783,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if (0 === tmp) {
                                   tmp2(arr);
                                 } else {
-                                  const diff = tmp - 1;
+                                  diff = tmp - 1;
                                   closure_0 = diff;
                                   closure_1 = tmp2;
                                   const _Array2 = Array;
@@ -1799,14 +1793,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== arr.type) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
-                                          outer1_14(arr.content, diff, tmp2);
+                                          closure_1_14(arr.content, diff, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === diff) {
                                       tmp2(arr);
                                     } else {
-                                      outer1_14(arr, diff - 1, tmp2);
+                                      closure_1_14(arr, diff - 1, tmp2);
                                     }
                                   }
                                 }
@@ -1818,8 +1812,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
                                   const content = arr.content;
-                                  let closure_0 = tmp;
-                                  let closure_1 = tmp2;
+                                  closure_0 = tmp;
+                                  closure_1 = tmp2;
                                   const _Array = Array;
                                   if (Array.isArray(content)) {
                                     const item1 = content.forEach((arr) => {
@@ -1830,8 +1824,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                           if ("channelMention" !== arr.type) {
                                             if (null != arr.content) {
                                               const content = arr.content;
-                                              let closure_0 = tmp;
-                                              let closure_1 = tmp2;
+                                              closure_0 = tmp;
+                                              closure_1 = tmp2;
                                               const _Array = Array;
                                               if (Array.isArray(content)) {
                                                 const item1 = content.forEach(() => { ... });
@@ -1839,14 +1833,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                                 if ("link" !== content.type) {
                                                   if ("channelMention" !== content.type) {
                                                     if (null != content.content) {
-                                                      outer1_14(content.content, tmp, tmp2);
+                                                      closure_1_14(content.content, tmp, tmp2);
                                                     }
                                                   }
                                                 }
                                                 if (0 === tmp) {
                                                   tmp2(content);
                                                 } else {
-                                                  outer1_14(content, tmp - 1, tmp2);
+                                                  closure_1_14(content, tmp - 1, tmp2);
                                                 }
                                               }
                                             }
@@ -1855,7 +1849,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if (0 === tmp) {
                                           tmp2(arr);
                                         } else {
-                                          const diff = tmp - 1;
+                                          diff = tmp - 1;
                                           closure_0 = diff;
                                           closure_1 = tmp2;
                                           const _Array2 = Array;
@@ -1865,14 +1859,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                             if ("link" !== arr.type) {
                                               if ("channelMention" !== arr.type) {
                                                 if (null != arr.content) {
-                                                  outer1_14(arr.content, diff, tmp2);
+                                                  closure_1_14(arr.content, diff, tmp2);
                                                 }
                                               }
                                             }
                                             if (0 === diff) {
                                               tmp2(arr);
                                             } else {
-                                              outer1_14(arr, diff - 1, tmp2);
+                                              closure_1_14(arr, diff - 1, tmp2);
                                             }
                                           }
                                         }
@@ -1883,14 +1877,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== content.type) {
                                       if ("channelMention" !== content.type) {
                                         if (null != content.content) {
-                                          outer1_14(content.content, tmp, tmp2);
+                                          closure_1_14(content.content, tmp, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === tmp) {
                                       tmp2(content);
                                     } else {
-                                      outer1_14(content, tmp - 1, tmp2);
+                                      closure_1_14(content, tmp - 1, tmp2);
                                     }
                                   }
                                 }
@@ -1899,7 +1893,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if (0 === tmp) {
                               tmp2(arr);
                             } else {
-                              const diff = tmp - 1;
+                              diff = tmp - 1;
                               closure_0 = diff;
                               closure_1 = tmp2;
                               const _Array2 = Array;
@@ -1912,8 +1906,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
                                           const content = arr.content;
-                                          let closure_0 = tmp;
-                                          let closure_1 = tmp2;
+                                          closure_0 = tmp;
+                                          closure_1 = tmp2;
                                           const _Array = Array;
                                           if (Array.isArray(content)) {
                                             const item1 = content.forEach(() => { ... });
@@ -1921,14 +1915,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                             if ("link" !== content.type) {
                                               if ("channelMention" !== content.type) {
                                                 if (null != content.content) {
-                                                  outer1_14(content.content, tmp, tmp2);
+                                                  closure_1_14(content.content, tmp, tmp2);
                                                 }
                                               }
                                             }
                                             if (0 === tmp) {
                                               tmp2(content);
                                             } else {
-                                              outer1_14(content, tmp - 1, tmp2);
+                                              closure_1_14(content, tmp - 1, tmp2);
                                             }
                                           }
                                         }
@@ -1937,7 +1931,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if (0 === tmp) {
                                       tmp2(arr);
                                     } else {
-                                      const diff = tmp - 1;
+                                      diff = tmp - 1;
                                       closure_0 = diff;
                                       closure_1 = tmp2;
                                       const _Array2 = Array;
@@ -1947,14 +1941,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== arr.type) {
                                           if ("channelMention" !== arr.type) {
                                             if (null != arr.content) {
-                                              outer1_14(arr.content, diff, tmp2);
+                                              closure_1_14(arr.content, diff, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === diff) {
                                           tmp2(arr);
                                         } else {
-                                          outer1_14(arr, diff - 1, tmp2);
+                                          closure_1_14(arr, diff - 1, tmp2);
                                         }
                                       }
                                     }
@@ -1965,14 +1959,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== arr.type) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
-                                      outer1_14(arr.content, diff, tmp2);
+                                      closure_1_14(arr.content, diff, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === diff) {
                                   tmp2(arr);
                                 } else {
-                                  outer1_14(arr, diff - 1, tmp2);
+                                  closure_1_14(arr, diff - 1, tmp2);
                                 }
                               }
                             }
@@ -1983,14 +1977,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if ("link" !== content.type) {
                           if ("channelMention" !== content.type) {
                             if (null != content.content) {
-                              outer1_14(content.content, tmp, tmp2);
+                              closure_1_14(content.content, tmp, tmp2);
                             }
                           }
                         }
                         if (0 === tmp) {
                           tmp2(content);
                         } else {
-                          outer1_14(content, tmp - 1, tmp2);
+                          closure_1_14(content, tmp - 1, tmp2);
                         }
                       }
                     }
@@ -1999,7 +1993,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                 if (0 === tmp) {
                   tmp2(arr);
                 } else {
-                  const diff = tmp - 1;
+                  diff = tmp - 1;
                   closure_0 = diff;
                   closure_1 = tmp2;
                   const _Array2 = Array;
@@ -2014,8 +2008,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
                                   const content = arr.content;
-                                  let closure_0 = tmp;
-                                  let closure_1 = tmp2;
+                                  closure_0 = tmp;
+                                  closure_1 = tmp2;
                                   const _Array = Array;
                                   if (Array.isArray(content)) {
                                     const item1 = content.forEach(() => { ... });
@@ -2023,14 +2017,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== content.type) {
                                       if ("channelMention" !== content.type) {
                                         if (null != content.content) {
-                                          outer1_14(content.content, tmp, tmp2);
+                                          closure_1_14(content.content, tmp, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === tmp) {
                                       tmp2(content);
                                     } else {
-                                      outer1_14(content, tmp - 1, tmp2);
+                                      closure_1_14(content, tmp - 1, tmp2);
                                     }
                                   }
                                 }
@@ -2039,7 +2033,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if (0 === tmp) {
                               tmp2(arr);
                             } else {
-                              const diff = tmp - 1;
+                              diff = tmp - 1;
                               closure_0 = diff;
                               closure_1 = tmp2;
                               const _Array2 = Array;
@@ -2049,14 +2043,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== arr.type) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
-                                      outer1_14(arr.content, diff, tmp2);
+                                      closure_1_14(arr.content, diff, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === diff) {
                                   tmp2(arr);
                                 } else {
-                                  outer1_14(arr, diff - 1, tmp2);
+                                  closure_1_14(arr, diff - 1, tmp2);
                                 }
                               }
                             }
@@ -2068,8 +2062,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                           if ("channelMention" !== arr.type) {
                             if (null != arr.content) {
                               const content = arr.content;
-                              let closure_0 = tmp;
-                              let closure_1 = tmp2;
+                              closure_0 = tmp;
+                              closure_1 = tmp2;
                               const _Array = Array;
                               if (Array.isArray(content)) {
                                 const item1 = content.forEach((arr) => {
@@ -2080,8 +2074,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
                                           const content = arr.content;
-                                          let closure_0 = tmp;
-                                          let closure_1 = tmp2;
+                                          closure_0 = tmp;
+                                          closure_1 = tmp2;
                                           const _Array = Array;
                                           if (Array.isArray(content)) {
                                             const item1 = content.forEach(() => { ... });
@@ -2089,14 +2083,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                             if ("link" !== content.type) {
                                               if ("channelMention" !== content.type) {
                                                 if (null != content.content) {
-                                                  outer1_14(content.content, tmp, tmp2);
+                                                  closure_1_14(content.content, tmp, tmp2);
                                                 }
                                               }
                                             }
                                             if (0 === tmp) {
                                               tmp2(content);
                                             } else {
-                                              outer1_14(content, tmp - 1, tmp2);
+                                              closure_1_14(content, tmp - 1, tmp2);
                                             }
                                           }
                                         }
@@ -2105,7 +2099,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if (0 === tmp) {
                                       tmp2(arr);
                                     } else {
-                                      const diff = tmp - 1;
+                                      diff = tmp - 1;
                                       closure_0 = diff;
                                       closure_1 = tmp2;
                                       const _Array2 = Array;
@@ -2115,14 +2109,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== arr.type) {
                                           if ("channelMention" !== arr.type) {
                                             if (null != arr.content) {
-                                              outer1_14(arr.content, diff, tmp2);
+                                              closure_1_14(arr.content, diff, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === diff) {
                                           tmp2(arr);
                                         } else {
-                                          outer1_14(arr, diff - 1, tmp2);
+                                          closure_1_14(arr, diff - 1, tmp2);
                                         }
                                       }
                                     }
@@ -2133,14 +2127,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if ("link" !== content.type) {
                                   if ("channelMention" !== content.type) {
                                     if (null != content.content) {
-                                      outer1_14(content.content, tmp, tmp2);
+                                      closure_1_14(content.content, tmp, tmp2);
                                     }
                                   }
                                 }
                                 if (0 === tmp) {
                                   tmp2(content);
                                 } else {
-                                  outer1_14(content, tmp - 1, tmp2);
+                                  closure_1_14(content, tmp - 1, tmp2);
                                 }
                               }
                             }
@@ -2149,7 +2143,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                         if (0 === tmp) {
                           tmp2(arr);
                         } else {
-                          const diff = tmp - 1;
+                          diff = tmp - 1;
                           closure_0 = diff;
                           closure_1 = tmp2;
                           const _Array2 = Array;
@@ -2162,8 +2156,8 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                   if ("channelMention" !== arr.type) {
                                     if (null != arr.content) {
                                       const content = arr.content;
-                                      let closure_0 = tmp;
-                                      let closure_1 = tmp2;
+                                      closure_0 = tmp;
+                                      closure_1 = tmp2;
                                       const _Array = Array;
                                       if (Array.isArray(content)) {
                                         const item1 = content.forEach(() => { ... });
@@ -2171,14 +2165,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                         if ("link" !== content.type) {
                                           if ("channelMention" !== content.type) {
                                             if (null != content.content) {
-                                              outer1_14(content.content, tmp, tmp2);
+                                              closure_1_14(content.content, tmp, tmp2);
                                             }
                                           }
                                         }
                                         if (0 === tmp) {
                                           tmp2(content);
                                         } else {
-                                          outer1_14(content, tmp - 1, tmp2);
+                                          closure_1_14(content, tmp - 1, tmp2);
                                         }
                                       }
                                     }
@@ -2187,7 +2181,7 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                 if (0 === tmp) {
                                   tmp2(arr);
                                 } else {
-                                  const diff = tmp - 1;
+                                  diff = tmp - 1;
                                   closure_0 = diff;
                                   closure_1 = tmp2;
                                   const _Array2 = Array;
@@ -2197,14 +2191,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                                     if ("link" !== arr.type) {
                                       if ("channelMention" !== arr.type) {
                                         if (null != arr.content) {
-                                          outer1_14(arr.content, diff, tmp2);
+                                          closure_1_14(arr.content, diff, tmp2);
                                         }
                                       }
                                     }
                                     if (0 === diff) {
                                       tmp2(arr);
                                     } else {
-                                      outer1_14(arr, diff - 1, tmp2);
+                                      closure_1_14(arr, diff - 1, tmp2);
                                     }
                                   }
                                 }
@@ -2215,14 +2209,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                             if ("link" !== arr.type) {
                               if ("channelMention" !== arr.type) {
                                 if (null != arr.content) {
-                                  outer1_14(arr.content, diff, tmp2);
+                                  closure_1_14(arr.content, diff, tmp2);
                                 }
                               }
                             }
                             if (0 === diff) {
                               tmp2(arr);
                             } else {
-                              outer1_14(arr, diff - 1, tmp2);
+                              closure_1_14(arr, diff - 1, tmp2);
                             }
                           }
                         }
@@ -2233,14 +2227,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
                     if ("link" !== arr.type) {
                       if ("channelMention" !== arr.type) {
                         if (null != arr.content) {
-                          outer1_14(arr.content, diff, tmp2);
+                          closure_1_14(arr.content, diff, tmp2);
                         }
                       }
                     }
                     if (0 === diff) {
                       tmp2(arr);
                     } else {
-                      outer1_14(arr, diff - 1, tmp2);
+                      closure_1_14(arr, diff - 1, tmp2);
                     }
                   }
                 }
@@ -2251,14 +2245,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
             if ("link" !== arr.type) {
               if ("channelMention" !== arr.type) {
                 if (null != arr.content) {
-                  outer1_14(arr.content, diff, tmp2);
+                  closure_1_14(arr.content, diff, tmp2);
                 }
               }
             }
             if (0 === diff) {
               tmp2(arr);
             } else {
-              outer1_14(arr, diff - 1, tmp2);
+              closure_1_14(arr, diff - 1, tmp2);
             }
           }
         }
@@ -2282,16 +2276,14 @@ function getLinkNodeAtIndex(content, arg1, arg2) {
   return content;
 }
 function LinkParsedGridItem(author) {
-  let containerStyle;
-  let imageStyle;
   author = author.author;
-  let linkIndex = author.linkIndex;
+  const linkIndex = author.linkIndex;
   let channelId = author.channelId;
   const messageId = author.messageId;
   const onPressSearchLink = author.onPressSearchLink;
   const onPressGuildVoiceChannelMention = author.onPressGuildVoiceChannelMention;
   const onPress = author.onPress;
-  let c7;
+  closure_7 = undefined;
   let stateFromStores;
   let stateFromStores1;
   let first;
@@ -2299,20 +2291,20 @@ function LinkParsedGridItem(author) {
   callback = undefined;
   ({ imageStyle, containerStyle } = author);
   const tmp = callback2();
-  c7 = tmp;
+  closure_7 = tmp;
   let obj = author(channelId[8]);
   const items = [stateFromStores];
   stateFromStores = obj.useStateFromStores(items, () => stateFromStores.getMessage(messageId));
-  let obj1 = author(channelId[8]);
-  const items1 = [c7];
-  stateFromStores1 = obj1.useStateFromStores(items1, () => _undefined.getChannel(channelId));
+  obj1 = author(channelId[8]);
+  const items1 = [closure_7];
+  stateFromStores1 = obj1.useStateFromStores(items1, () => store.getChannel(channelId));
   const tmp6 = messageId(onPressSearchLink.useState(null), 2);
   first = tmp6[0];
   callback = tmp6[1];
   const items2 = [linkIndex];
   callback = onPressSearchLink.useCallback((arr) => {
-    let author = linkIndex;
-    linkIndex = closure_11;
+    author = closure_1;
+    closure_1 = closure_11;
     if (Array.isArray(arr)) {
       let item = arr.forEach((arr) => {
         if (Array.isArray(arr)) {
@@ -2326,8 +2318,8 @@ function LinkParsedGridItem(author) {
                     if ("channelMention" !== arr.type) {
                       if (null != arr.content) {
                         const content = arr.content;
-                        let closure_0 = tmp;
-                        let closure_1 = tmp2;
+                        closure_0 = tmp;
+                        closure_1 = tmp2;
                         const _Array = Array;
                         if (Array.isArray(content)) {
                           const item1 = content.forEach(() => { ... });
@@ -2335,14 +2327,14 @@ function LinkParsedGridItem(author) {
                           if ("link" !== content.type) {
                             if ("channelMention" !== content.type) {
                               if (null != content.content) {
-                                outer1_14(content.content, tmp, tmp2);
+                                closure_1_14(content.content, tmp, tmp2);
                               }
                             }
                           }
                           if (0 === tmp) {
                             tmp2(content);
                           } else {
-                            outer1_14(content, tmp - 1, tmp2);
+                            closure_1_14(content, tmp - 1, tmp2);
                           }
                         }
                       }
@@ -2351,7 +2343,7 @@ function LinkParsedGridItem(author) {
                   if (0 === tmp) {
                     tmp2(arr);
                   } else {
-                    const diff = tmp - 1;
+                    diff = tmp - 1;
                     closure_0 = diff;
                     closure_1 = tmp2;
                     const _Array2 = Array;
@@ -2361,14 +2353,14 @@ function LinkParsedGridItem(author) {
                       if ("link" !== arr.type) {
                         if ("channelMention" !== arr.type) {
                           if (null != arr.content) {
-                            outer1_14(arr.content, diff, tmp2);
+                            closure_1_14(arr.content, diff, tmp2);
                           }
                         }
                       }
                       if (0 === diff) {
                         tmp2(arr);
                       } else {
-                        outer1_14(arr, diff - 1, tmp2);
+                        closure_1_14(arr, diff - 1, tmp2);
                       }
                     }
                   }
@@ -2380,8 +2372,8 @@ function LinkParsedGridItem(author) {
                 if ("channelMention" !== arr.type) {
                   if (null != arr.content) {
                     const content = arr.content;
-                    let closure_0 = tmp;
-                    let closure_1 = tmp2;
+                    closure_0 = tmp;
+                    closure_1 = tmp2;
                     const _Array = Array;
                     if (Array.isArray(content)) {
                       const item1 = content.forEach((arr) => {
@@ -2392,8 +2384,8 @@ function LinkParsedGridItem(author) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
                                 const content = arr.content;
-                                let closure_0 = tmp;
-                                let closure_1 = tmp2;
+                                closure_0 = tmp;
+                                closure_1 = tmp2;
                                 const _Array = Array;
                                 if (Array.isArray(content)) {
                                   const item1 = content.forEach(() => { ... });
@@ -2401,14 +2393,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== content.type) {
                                     if ("channelMention" !== content.type) {
                                       if (null != content.content) {
-                                        outer1_14(content.content, tmp, tmp2);
+                                        closure_1_14(content.content, tmp, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === tmp) {
                                     tmp2(content);
                                   } else {
-                                    outer1_14(content, tmp - 1, tmp2);
+                                    closure_1_14(content, tmp - 1, tmp2);
                                   }
                                 }
                               }
@@ -2417,7 +2409,7 @@ function LinkParsedGridItem(author) {
                           if (0 === tmp) {
                             tmp2(arr);
                           } else {
-                            const diff = tmp - 1;
+                            diff = tmp - 1;
                             closure_0 = diff;
                             closure_1 = tmp2;
                             const _Array2 = Array;
@@ -2427,14 +2419,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== arr.type) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
-                                    outer1_14(arr.content, diff, tmp2);
+                                    closure_1_14(arr.content, diff, tmp2);
                                   }
                                 }
                               }
                               if (0 === diff) {
                                 tmp2(arr);
                               } else {
-                                outer1_14(arr, diff - 1, tmp2);
+                                closure_1_14(arr, diff - 1, tmp2);
                               }
                             }
                           }
@@ -2445,14 +2437,14 @@ function LinkParsedGridItem(author) {
                       if ("link" !== content.type) {
                         if ("channelMention" !== content.type) {
                           if (null != content.content) {
-                            outer1_14(content.content, tmp, tmp2);
+                            closure_1_14(content.content, tmp, tmp2);
                           }
                         }
                       }
                       if (0 === tmp) {
                         tmp2(content);
                       } else {
-                        outer1_14(content, tmp - 1, tmp2);
+                        closure_1_14(content, tmp - 1, tmp2);
                       }
                     }
                   }
@@ -2461,7 +2453,7 @@ function LinkParsedGridItem(author) {
               if (0 === tmp) {
                 tmp2(arr);
               } else {
-                const diff = tmp - 1;
+                diff = tmp - 1;
                 closure_0 = diff;
                 closure_1 = tmp2;
                 const _Array2 = Array;
@@ -2474,8 +2466,8 @@ function LinkParsedGridItem(author) {
                         if ("channelMention" !== arr.type) {
                           if (null != arr.content) {
                             const content = arr.content;
-                            let closure_0 = tmp;
-                            let closure_1 = tmp2;
+                            closure_0 = tmp;
+                            closure_1 = tmp2;
                             const _Array = Array;
                             if (Array.isArray(content)) {
                               const item1 = content.forEach(() => { ... });
@@ -2483,14 +2475,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== content.type) {
                                 if ("channelMention" !== content.type) {
                                   if (null != content.content) {
-                                    outer1_14(content.content, tmp, tmp2);
+                                    closure_1_14(content.content, tmp, tmp2);
                                   }
                                 }
                               }
                               if (0 === tmp) {
                                 tmp2(content);
                               } else {
-                                outer1_14(content, tmp - 1, tmp2);
+                                closure_1_14(content, tmp - 1, tmp2);
                               }
                             }
                           }
@@ -2499,7 +2491,7 @@ function LinkParsedGridItem(author) {
                       if (0 === tmp) {
                         tmp2(arr);
                       } else {
-                        const diff = tmp - 1;
+                        diff = tmp - 1;
                         closure_0 = diff;
                         closure_1 = tmp2;
                         const _Array2 = Array;
@@ -2509,14 +2501,14 @@ function LinkParsedGridItem(author) {
                           if ("link" !== arr.type) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
-                                outer1_14(arr.content, diff, tmp2);
+                                closure_1_14(arr.content, diff, tmp2);
                               }
                             }
                           }
                           if (0 === diff) {
                             tmp2(arr);
                           } else {
-                            outer1_14(arr, diff - 1, tmp2);
+                            closure_1_14(arr, diff - 1, tmp2);
                           }
                         }
                       }
@@ -2527,14 +2519,14 @@ function LinkParsedGridItem(author) {
                   if ("link" !== arr.type) {
                     if ("channelMention" !== arr.type) {
                       if (null != arr.content) {
-                        outer1_14(arr.content, diff, tmp2);
+                        closure_1_14(arr.content, diff, tmp2);
                       }
                     }
                   }
                   if (0 === diff) {
                     tmp2(arr);
                   } else {
-                    outer1_14(arr, diff - 1, tmp2);
+                    closure_1_14(arr, diff - 1, tmp2);
                   }
                 }
               }
@@ -2546,8 +2538,8 @@ function LinkParsedGridItem(author) {
             if ("channelMention" !== arr.type) {
               if (null != arr.content) {
                 const content = arr.content;
-                let closure_0 = tmp;
-                let closure_1 = tmp2;
+                closure_0 = tmp;
+                closure_1 = tmp2;
                 const _Array = Array;
                 if (Array.isArray(content)) {
                   const item1 = content.forEach((arr) => {
@@ -2560,8 +2552,8 @@ function LinkParsedGridItem(author) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
                                 const content = arr.content;
-                                let closure_0 = tmp;
-                                let closure_1 = tmp2;
+                                closure_0 = tmp;
+                                closure_1 = tmp2;
                                 const _Array = Array;
                                 if (Array.isArray(content)) {
                                   const item1 = content.forEach(() => { ... });
@@ -2569,14 +2561,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== content.type) {
                                     if ("channelMention" !== content.type) {
                                       if (null != content.content) {
-                                        outer1_14(content.content, tmp, tmp2);
+                                        closure_1_14(content.content, tmp, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === tmp) {
                                     tmp2(content);
                                   } else {
-                                    outer1_14(content, tmp - 1, tmp2);
+                                    closure_1_14(content, tmp - 1, tmp2);
                                   }
                                 }
                               }
@@ -2585,7 +2577,7 @@ function LinkParsedGridItem(author) {
                           if (0 === tmp) {
                             tmp2(arr);
                           } else {
-                            const diff = tmp - 1;
+                            diff = tmp - 1;
                             closure_0 = diff;
                             closure_1 = tmp2;
                             const _Array2 = Array;
@@ -2595,14 +2587,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== arr.type) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
-                                    outer1_14(arr.content, diff, tmp2);
+                                    closure_1_14(arr.content, diff, tmp2);
                                   }
                                 }
                               }
                               if (0 === diff) {
                                 tmp2(arr);
                               } else {
-                                outer1_14(arr, diff - 1, tmp2);
+                                closure_1_14(arr, diff - 1, tmp2);
                               }
                             }
                           }
@@ -2614,8 +2606,8 @@ function LinkParsedGridItem(author) {
                         if ("channelMention" !== arr.type) {
                           if (null != arr.content) {
                             const content = arr.content;
-                            let closure_0 = tmp;
-                            let closure_1 = tmp2;
+                            closure_0 = tmp;
+                            closure_1 = tmp2;
                             const _Array = Array;
                             if (Array.isArray(content)) {
                               const item1 = content.forEach((arr) => {
@@ -2626,8 +2618,8 @@ function LinkParsedGridItem(author) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
                                         const content = arr.content;
-                                        let closure_0 = tmp;
-                                        let closure_1 = tmp2;
+                                        closure_0 = tmp;
+                                        closure_1 = tmp2;
                                         const _Array = Array;
                                         if (Array.isArray(content)) {
                                           const item1 = content.forEach(() => { ... });
@@ -2635,14 +2627,14 @@ function LinkParsedGridItem(author) {
                                           if ("link" !== content.type) {
                                             if ("channelMention" !== content.type) {
                                               if (null != content.content) {
-                                                outer1_14(content.content, tmp, tmp2);
+                                                closure_1_14(content.content, tmp, tmp2);
                                               }
                                             }
                                           }
                                           if (0 === tmp) {
                                             tmp2(content);
                                           } else {
-                                            outer1_14(content, tmp - 1, tmp2);
+                                            closure_1_14(content, tmp - 1, tmp2);
                                           }
                                         }
                                       }
@@ -2651,7 +2643,7 @@ function LinkParsedGridItem(author) {
                                   if (0 === tmp) {
                                     tmp2(arr);
                                   } else {
-                                    const diff = tmp - 1;
+                                    diff = tmp - 1;
                                     closure_0 = diff;
                                     closure_1 = tmp2;
                                     const _Array2 = Array;
@@ -2661,14 +2653,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== arr.type) {
                                         if ("channelMention" !== arr.type) {
                                           if (null != arr.content) {
-                                            outer1_14(arr.content, diff, tmp2);
+                                            closure_1_14(arr.content, diff, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === diff) {
                                         tmp2(arr);
                                       } else {
-                                        outer1_14(arr, diff - 1, tmp2);
+                                        closure_1_14(arr, diff - 1, tmp2);
                                       }
                                     }
                                   }
@@ -2679,14 +2671,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== content.type) {
                                 if ("channelMention" !== content.type) {
                                   if (null != content.content) {
-                                    outer1_14(content.content, tmp, tmp2);
+                                    closure_1_14(content.content, tmp, tmp2);
                                   }
                                 }
                               }
                               if (0 === tmp) {
                                 tmp2(content);
                               } else {
-                                outer1_14(content, tmp - 1, tmp2);
+                                closure_1_14(content, tmp - 1, tmp2);
                               }
                             }
                           }
@@ -2695,7 +2687,7 @@ function LinkParsedGridItem(author) {
                       if (0 === tmp) {
                         tmp2(arr);
                       } else {
-                        const diff = tmp - 1;
+                        diff = tmp - 1;
                         closure_0 = diff;
                         closure_1 = tmp2;
                         const _Array2 = Array;
@@ -2708,8 +2700,8 @@ function LinkParsedGridItem(author) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
                                     const content = arr.content;
-                                    let closure_0 = tmp;
-                                    let closure_1 = tmp2;
+                                    closure_0 = tmp;
+                                    closure_1 = tmp2;
                                     const _Array = Array;
                                     if (Array.isArray(content)) {
                                       const item1 = content.forEach(() => { ... });
@@ -2717,14 +2709,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== content.type) {
                                         if ("channelMention" !== content.type) {
                                           if (null != content.content) {
-                                            outer1_14(content.content, tmp, tmp2);
+                                            closure_1_14(content.content, tmp, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === tmp) {
                                         tmp2(content);
                                       } else {
-                                        outer1_14(content, tmp - 1, tmp2);
+                                        closure_1_14(content, tmp - 1, tmp2);
                                       }
                                     }
                                   }
@@ -2733,7 +2725,7 @@ function LinkParsedGridItem(author) {
                               if (0 === tmp) {
                                 tmp2(arr);
                               } else {
-                                const diff = tmp - 1;
+                                diff = tmp - 1;
                                 closure_0 = diff;
                                 closure_1 = tmp2;
                                 const _Array2 = Array;
@@ -2743,14 +2735,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== arr.type) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
-                                        outer1_14(arr.content, diff, tmp2);
+                                        closure_1_14(arr.content, diff, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === diff) {
                                     tmp2(arr);
                                   } else {
-                                    outer1_14(arr, diff - 1, tmp2);
+                                    closure_1_14(arr, diff - 1, tmp2);
                                   }
                                 }
                               }
@@ -2761,14 +2753,14 @@ function LinkParsedGridItem(author) {
                           if ("link" !== arr.type) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
-                                outer1_14(arr.content, diff, tmp2);
+                                closure_1_14(arr.content, diff, tmp2);
                               }
                             }
                           }
                           if (0 === diff) {
                             tmp2(arr);
                           } else {
-                            outer1_14(arr, diff - 1, tmp2);
+                            closure_1_14(arr, diff - 1, tmp2);
                           }
                         }
                       }
@@ -2779,14 +2771,14 @@ function LinkParsedGridItem(author) {
                   if ("link" !== content.type) {
                     if ("channelMention" !== content.type) {
                       if (null != content.content) {
-                        outer1_14(content.content, tmp, tmp2);
+                        closure_1_14(content.content, tmp, tmp2);
                       }
                     }
                   }
                   if (0 === tmp) {
                     tmp2(content);
                   } else {
-                    outer1_14(content, tmp - 1, tmp2);
+                    closure_1_14(content, tmp - 1, tmp2);
                   }
                 }
               }
@@ -2795,7 +2787,7 @@ function LinkParsedGridItem(author) {
           if (0 === tmp) {
             tmp2(arr);
           } else {
-            const diff = tmp - 1;
+            diff = tmp - 1;
             closure_0 = diff;
             closure_1 = tmp2;
             const _Array2 = Array;
@@ -2810,8 +2802,8 @@ function LinkParsedGridItem(author) {
                         if ("channelMention" !== arr.type) {
                           if (null != arr.content) {
                             const content = arr.content;
-                            let closure_0 = tmp;
-                            let closure_1 = tmp2;
+                            closure_0 = tmp;
+                            closure_1 = tmp2;
                             const _Array = Array;
                             if (Array.isArray(content)) {
                               const item1 = content.forEach(() => { ... });
@@ -2819,14 +2811,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== content.type) {
                                 if ("channelMention" !== content.type) {
                                   if (null != content.content) {
-                                    outer1_14(content.content, tmp, tmp2);
+                                    closure_1_14(content.content, tmp, tmp2);
                                   }
                                 }
                               }
                               if (0 === tmp) {
                                 tmp2(content);
                               } else {
-                                outer1_14(content, tmp - 1, tmp2);
+                                closure_1_14(content, tmp - 1, tmp2);
                               }
                             }
                           }
@@ -2835,7 +2827,7 @@ function LinkParsedGridItem(author) {
                       if (0 === tmp) {
                         tmp2(arr);
                       } else {
-                        const diff = tmp - 1;
+                        diff = tmp - 1;
                         closure_0 = diff;
                         closure_1 = tmp2;
                         const _Array2 = Array;
@@ -2845,14 +2837,14 @@ function LinkParsedGridItem(author) {
                           if ("link" !== arr.type) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
-                                outer1_14(arr.content, diff, tmp2);
+                                closure_1_14(arr.content, diff, tmp2);
                               }
                             }
                           }
                           if (0 === diff) {
                             tmp2(arr);
                           } else {
-                            outer1_14(arr, diff - 1, tmp2);
+                            closure_1_14(arr, diff - 1, tmp2);
                           }
                         }
                       }
@@ -2864,8 +2856,8 @@ function LinkParsedGridItem(author) {
                     if ("channelMention" !== arr.type) {
                       if (null != arr.content) {
                         const content = arr.content;
-                        let closure_0 = tmp;
-                        let closure_1 = tmp2;
+                        closure_0 = tmp;
+                        closure_1 = tmp2;
                         const _Array = Array;
                         if (Array.isArray(content)) {
                           const item1 = content.forEach((arr) => {
@@ -2876,8 +2868,8 @@ function LinkParsedGridItem(author) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
                                     const content = arr.content;
-                                    let closure_0 = tmp;
-                                    let closure_1 = tmp2;
+                                    closure_0 = tmp;
+                                    closure_1 = tmp2;
                                     const _Array = Array;
                                     if (Array.isArray(content)) {
                                       const item1 = content.forEach(() => { ... });
@@ -2885,14 +2877,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== content.type) {
                                         if ("channelMention" !== content.type) {
                                           if (null != content.content) {
-                                            outer1_14(content.content, tmp, tmp2);
+                                            closure_1_14(content.content, tmp, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === tmp) {
                                         tmp2(content);
                                       } else {
-                                        outer1_14(content, tmp - 1, tmp2);
+                                        closure_1_14(content, tmp - 1, tmp2);
                                       }
                                     }
                                   }
@@ -2901,7 +2893,7 @@ function LinkParsedGridItem(author) {
                               if (0 === tmp) {
                                 tmp2(arr);
                               } else {
-                                const diff = tmp - 1;
+                                diff = tmp - 1;
                                 closure_0 = diff;
                                 closure_1 = tmp2;
                                 const _Array2 = Array;
@@ -2911,14 +2903,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== arr.type) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
-                                        outer1_14(arr.content, diff, tmp2);
+                                        closure_1_14(arr.content, diff, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === diff) {
                                     tmp2(arr);
                                   } else {
-                                    outer1_14(arr, diff - 1, tmp2);
+                                    closure_1_14(arr, diff - 1, tmp2);
                                   }
                                 }
                               }
@@ -2929,14 +2921,14 @@ function LinkParsedGridItem(author) {
                           if ("link" !== content.type) {
                             if ("channelMention" !== content.type) {
                               if (null != content.content) {
-                                outer1_14(content.content, tmp, tmp2);
+                                closure_1_14(content.content, tmp, tmp2);
                               }
                             }
                           }
                           if (0 === tmp) {
                             tmp2(content);
                           } else {
-                            outer1_14(content, tmp - 1, tmp2);
+                            closure_1_14(content, tmp - 1, tmp2);
                           }
                         }
                       }
@@ -2945,7 +2937,7 @@ function LinkParsedGridItem(author) {
                   if (0 === tmp) {
                     tmp2(arr);
                   } else {
-                    const diff = tmp - 1;
+                    diff = tmp - 1;
                     closure_0 = diff;
                     closure_1 = tmp2;
                     const _Array2 = Array;
@@ -2958,8 +2950,8 @@ function LinkParsedGridItem(author) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
                                 const content = arr.content;
-                                let closure_0 = tmp;
-                                let closure_1 = tmp2;
+                                closure_0 = tmp;
+                                closure_1 = tmp2;
                                 const _Array = Array;
                                 if (Array.isArray(content)) {
                                   const item1 = content.forEach(() => { ... });
@@ -2967,14 +2959,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== content.type) {
                                     if ("channelMention" !== content.type) {
                                       if (null != content.content) {
-                                        outer1_14(content.content, tmp, tmp2);
+                                        closure_1_14(content.content, tmp, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === tmp) {
                                     tmp2(content);
                                   } else {
-                                    outer1_14(content, tmp - 1, tmp2);
+                                    closure_1_14(content, tmp - 1, tmp2);
                                   }
                                 }
                               }
@@ -2983,7 +2975,7 @@ function LinkParsedGridItem(author) {
                           if (0 === tmp) {
                             tmp2(arr);
                           } else {
-                            const diff = tmp - 1;
+                            diff = tmp - 1;
                             closure_0 = diff;
                             closure_1 = tmp2;
                             const _Array2 = Array;
@@ -2993,14 +2985,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== arr.type) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
-                                    outer1_14(arr.content, diff, tmp2);
+                                    closure_1_14(arr.content, diff, tmp2);
                                   }
                                 }
                               }
                               if (0 === diff) {
                                 tmp2(arr);
                               } else {
-                                outer1_14(arr, diff - 1, tmp2);
+                                closure_1_14(arr, diff - 1, tmp2);
                               }
                             }
                           }
@@ -3011,14 +3003,14 @@ function LinkParsedGridItem(author) {
                       if ("link" !== arr.type) {
                         if ("channelMention" !== arr.type) {
                           if (null != arr.content) {
-                            outer1_14(arr.content, diff, tmp2);
+                            closure_1_14(arr.content, diff, tmp2);
                           }
                         }
                       }
                       if (0 === diff) {
                         tmp2(arr);
                       } else {
-                        outer1_14(arr, diff - 1, tmp2);
+                        closure_1_14(arr, diff - 1, tmp2);
                       }
                     }
                   }
@@ -3029,14 +3021,14 @@ function LinkParsedGridItem(author) {
               if ("link" !== arr.type) {
                 if ("channelMention" !== arr.type) {
                   if (null != arr.content) {
-                    outer1_14(arr.content, diff, tmp2);
+                    closure_1_14(arr.content, diff, tmp2);
                   }
                 }
               }
               if (0 === diff) {
                 tmp2(arr);
               } else {
-                outer1_14(arr, diff - 1, tmp2);
+                closure_1_14(arr, diff - 1, tmp2);
               }
             }
           }
@@ -3049,7 +3041,7 @@ function LinkParsedGridItem(author) {
           if (null != arr.content) {
             let content = arr.content;
             author = tmp;
-            linkIndex = tmp2;
+            closure_1 = tmp2;
             let _Array = Array;
             if (Array.isArray(content)) {
               let item1 = content.forEach((arr) => {
@@ -3064,8 +3056,8 @@ function LinkParsedGridItem(author) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
                                 const content = arr.content;
-                                let closure_0 = tmp;
-                                let closure_1 = tmp2;
+                                closure_0 = tmp;
+                                closure_1 = tmp2;
                                 const _Array = Array;
                                 if (Array.isArray(content)) {
                                   const item1 = content.forEach(() => { ... });
@@ -3073,14 +3065,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== content.type) {
                                     if ("channelMention" !== content.type) {
                                       if (null != content.content) {
-                                        outer1_14(content.content, tmp, tmp2);
+                                        closure_1_14(content.content, tmp, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === tmp) {
                                     tmp2(content);
                                   } else {
-                                    outer1_14(content, tmp - 1, tmp2);
+                                    closure_1_14(content, tmp - 1, tmp2);
                                   }
                                 }
                               }
@@ -3089,7 +3081,7 @@ function LinkParsedGridItem(author) {
                           if (0 === tmp) {
                             tmp2(arr);
                           } else {
-                            const diff = tmp - 1;
+                            diff = tmp - 1;
                             closure_0 = diff;
                             closure_1 = tmp2;
                             const _Array2 = Array;
@@ -3099,14 +3091,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== arr.type) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
-                                    outer1_14(arr.content, diff, tmp2);
+                                    closure_1_14(arr.content, diff, tmp2);
                                   }
                                 }
                               }
                               if (0 === diff) {
                                 tmp2(arr);
                               } else {
-                                outer1_14(arr, diff - 1, tmp2);
+                                closure_1_14(arr, diff - 1, tmp2);
                               }
                             }
                           }
@@ -3118,8 +3110,8 @@ function LinkParsedGridItem(author) {
                         if ("channelMention" !== arr.type) {
                           if (null != arr.content) {
                             const content = arr.content;
-                            let closure_0 = tmp;
-                            let closure_1 = tmp2;
+                            closure_0 = tmp;
+                            closure_1 = tmp2;
                             const _Array = Array;
                             if (Array.isArray(content)) {
                               const item1 = content.forEach((arr) => {
@@ -3130,8 +3122,8 @@ function LinkParsedGridItem(author) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
                                         const content = arr.content;
-                                        let closure_0 = tmp;
-                                        let closure_1 = tmp2;
+                                        closure_0 = tmp;
+                                        closure_1 = tmp2;
                                         const _Array = Array;
                                         if (Array.isArray(content)) {
                                           const item1 = content.forEach(() => { ... });
@@ -3139,14 +3131,14 @@ function LinkParsedGridItem(author) {
                                           if ("link" !== content.type) {
                                             if ("channelMention" !== content.type) {
                                               if (null != content.content) {
-                                                outer1_14(content.content, tmp, tmp2);
+                                                closure_1_14(content.content, tmp, tmp2);
                                               }
                                             }
                                           }
                                           if (0 === tmp) {
                                             tmp2(content);
                                           } else {
-                                            outer1_14(content, tmp - 1, tmp2);
+                                            closure_1_14(content, tmp - 1, tmp2);
                                           }
                                         }
                                       }
@@ -3155,7 +3147,7 @@ function LinkParsedGridItem(author) {
                                   if (0 === tmp) {
                                     tmp2(arr);
                                   } else {
-                                    const diff = tmp - 1;
+                                    diff = tmp - 1;
                                     closure_0 = diff;
                                     closure_1 = tmp2;
                                     const _Array2 = Array;
@@ -3165,14 +3157,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== arr.type) {
                                         if ("channelMention" !== arr.type) {
                                           if (null != arr.content) {
-                                            outer1_14(arr.content, diff, tmp2);
+                                            closure_1_14(arr.content, diff, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === diff) {
                                         tmp2(arr);
                                       } else {
-                                        outer1_14(arr, diff - 1, tmp2);
+                                        closure_1_14(arr, diff - 1, tmp2);
                                       }
                                     }
                                   }
@@ -3183,14 +3175,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== content.type) {
                                 if ("channelMention" !== content.type) {
                                   if (null != content.content) {
-                                    outer1_14(content.content, tmp, tmp2);
+                                    closure_1_14(content.content, tmp, tmp2);
                                   }
                                 }
                               }
                               if (0 === tmp) {
                                 tmp2(content);
                               } else {
-                                outer1_14(content, tmp - 1, tmp2);
+                                closure_1_14(content, tmp - 1, tmp2);
                               }
                             }
                           }
@@ -3199,7 +3191,7 @@ function LinkParsedGridItem(author) {
                       if (0 === tmp) {
                         tmp2(arr);
                       } else {
-                        const diff = tmp - 1;
+                        diff = tmp - 1;
                         closure_0 = diff;
                         closure_1 = tmp2;
                         const _Array2 = Array;
@@ -3212,8 +3204,8 @@ function LinkParsedGridItem(author) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
                                     const content = arr.content;
-                                    let closure_0 = tmp;
-                                    let closure_1 = tmp2;
+                                    closure_0 = tmp;
+                                    closure_1 = tmp2;
                                     const _Array = Array;
                                     if (Array.isArray(content)) {
                                       const item1 = content.forEach(() => { ... });
@@ -3221,14 +3213,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== content.type) {
                                         if ("channelMention" !== content.type) {
                                           if (null != content.content) {
-                                            outer1_14(content.content, tmp, tmp2);
+                                            closure_1_14(content.content, tmp, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === tmp) {
                                         tmp2(content);
                                       } else {
-                                        outer1_14(content, tmp - 1, tmp2);
+                                        closure_1_14(content, tmp - 1, tmp2);
                                       }
                                     }
                                   }
@@ -3237,7 +3229,7 @@ function LinkParsedGridItem(author) {
                               if (0 === tmp) {
                                 tmp2(arr);
                               } else {
-                                const diff = tmp - 1;
+                                diff = tmp - 1;
                                 closure_0 = diff;
                                 closure_1 = tmp2;
                                 const _Array2 = Array;
@@ -3247,14 +3239,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== arr.type) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
-                                        outer1_14(arr.content, diff, tmp2);
+                                        closure_1_14(arr.content, diff, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === diff) {
                                     tmp2(arr);
                                   } else {
-                                    outer1_14(arr, diff - 1, tmp2);
+                                    closure_1_14(arr, diff - 1, tmp2);
                                   }
                                 }
                               }
@@ -3265,14 +3257,14 @@ function LinkParsedGridItem(author) {
                           if ("link" !== arr.type) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
-                                outer1_14(arr.content, diff, tmp2);
+                                closure_1_14(arr.content, diff, tmp2);
                               }
                             }
                           }
                           if (0 === diff) {
                             tmp2(arr);
                           } else {
-                            outer1_14(arr, diff - 1, tmp2);
+                            closure_1_14(arr, diff - 1, tmp2);
                           }
                         }
                       }
@@ -3284,8 +3276,8 @@ function LinkParsedGridItem(author) {
                     if ("channelMention" !== arr.type) {
                       if (null != arr.content) {
                         const content = arr.content;
-                        let closure_0 = tmp;
-                        let closure_1 = tmp2;
+                        closure_0 = tmp;
+                        closure_1 = tmp2;
                         const _Array = Array;
                         if (Array.isArray(content)) {
                           const item1 = content.forEach((arr) => {
@@ -3298,8 +3290,8 @@ function LinkParsedGridItem(author) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
                                         const content = arr.content;
-                                        let closure_0 = tmp;
-                                        let closure_1 = tmp2;
+                                        closure_0 = tmp;
+                                        closure_1 = tmp2;
                                         const _Array = Array;
                                         if (Array.isArray(content)) {
                                           const item1 = content.forEach(() => { ... });
@@ -3307,14 +3299,14 @@ function LinkParsedGridItem(author) {
                                           if ("link" !== content.type) {
                                             if ("channelMention" !== content.type) {
                                               if (null != content.content) {
-                                                outer1_14(content.content, tmp, tmp2);
+                                                closure_1_14(content.content, tmp, tmp2);
                                               }
                                             }
                                           }
                                           if (0 === tmp) {
                                             tmp2(content);
                                           } else {
-                                            outer1_14(content, tmp - 1, tmp2);
+                                            closure_1_14(content, tmp - 1, tmp2);
                                           }
                                         }
                                       }
@@ -3323,7 +3315,7 @@ function LinkParsedGridItem(author) {
                                   if (0 === tmp) {
                                     tmp2(arr);
                                   } else {
-                                    const diff = tmp - 1;
+                                    diff = tmp - 1;
                                     closure_0 = diff;
                                     closure_1 = tmp2;
                                     const _Array2 = Array;
@@ -3333,14 +3325,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== arr.type) {
                                         if ("channelMention" !== arr.type) {
                                           if (null != arr.content) {
-                                            outer1_14(arr.content, diff, tmp2);
+                                            closure_1_14(arr.content, diff, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === diff) {
                                         tmp2(arr);
                                       } else {
-                                        outer1_14(arr, diff - 1, tmp2);
+                                        closure_1_14(arr, diff - 1, tmp2);
                                       }
                                     }
                                   }
@@ -3352,8 +3344,8 @@ function LinkParsedGridItem(author) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
                                     const content = arr.content;
-                                    let closure_0 = tmp;
-                                    let closure_1 = tmp2;
+                                    closure_0 = tmp;
+                                    closure_1 = tmp2;
                                     const _Array = Array;
                                     if (Array.isArray(content)) {
                                       const item1 = content.forEach((arr) => {
@@ -3364,8 +3356,8 @@ function LinkParsedGridItem(author) {
                                             if ("channelMention" !== arr.type) {
                                               if (null != arr.content) {
                                                 const content = arr.content;
-                                                let closure_0 = tmp;
-                                                let closure_1 = tmp2;
+                                                closure_0 = tmp;
+                                                closure_1 = tmp2;
                                                 const _Array = Array;
                                                 if (Array.isArray(content)) {
                                                   const item1 = content.forEach(() => { ... });
@@ -3373,14 +3365,14 @@ function LinkParsedGridItem(author) {
                                                   if ("link" !== content.type) {
                                                     if ("channelMention" !== content.type) {
                                                       if (null != content.content) {
-                                                        outer1_14(content.content, tmp, tmp2);
+                                                        closure_1_14(content.content, tmp, tmp2);
                                                       }
                                                     }
                                                   }
                                                   if (0 === tmp) {
                                                     tmp2(content);
                                                   } else {
-                                                    outer1_14(content, tmp - 1, tmp2);
+                                                    closure_1_14(content, tmp - 1, tmp2);
                                                   }
                                                 }
                                               }
@@ -3389,7 +3381,7 @@ function LinkParsedGridItem(author) {
                                           if (0 === tmp) {
                                             tmp2(arr);
                                           } else {
-                                            const diff = tmp - 1;
+                                            diff = tmp - 1;
                                             closure_0 = diff;
                                             closure_1 = tmp2;
                                             const _Array2 = Array;
@@ -3399,14 +3391,14 @@ function LinkParsedGridItem(author) {
                                               if ("link" !== arr.type) {
                                                 if ("channelMention" !== arr.type) {
                                                   if (null != arr.content) {
-                                                    outer1_14(arr.content, diff, tmp2);
+                                                    closure_1_14(arr.content, diff, tmp2);
                                                   }
                                                 }
                                               }
                                               if (0 === diff) {
                                                 tmp2(arr);
                                               } else {
-                                                outer1_14(arr, diff - 1, tmp2);
+                                                closure_1_14(arr, diff - 1, tmp2);
                                               }
                                             }
                                           }
@@ -3417,14 +3409,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== content.type) {
                                         if ("channelMention" !== content.type) {
                                           if (null != content.content) {
-                                            outer1_14(content.content, tmp, tmp2);
+                                            closure_1_14(content.content, tmp, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === tmp) {
                                         tmp2(content);
                                       } else {
-                                        outer1_14(content, tmp - 1, tmp2);
+                                        closure_1_14(content, tmp - 1, tmp2);
                                       }
                                     }
                                   }
@@ -3433,7 +3425,7 @@ function LinkParsedGridItem(author) {
                               if (0 === tmp) {
                                 tmp2(arr);
                               } else {
-                                const diff = tmp - 1;
+                                diff = tmp - 1;
                                 closure_0 = diff;
                                 closure_1 = tmp2;
                                 const _Array2 = Array;
@@ -3446,8 +3438,8 @@ function LinkParsedGridItem(author) {
                                         if ("channelMention" !== arr.type) {
                                           if (null != arr.content) {
                                             const content = arr.content;
-                                            let closure_0 = tmp;
-                                            let closure_1 = tmp2;
+                                            closure_0 = tmp;
+                                            closure_1 = tmp2;
                                             const _Array = Array;
                                             if (Array.isArray(content)) {
                                               const item1 = content.forEach(() => { ... });
@@ -3455,14 +3447,14 @@ function LinkParsedGridItem(author) {
                                               if ("link" !== content.type) {
                                                 if ("channelMention" !== content.type) {
                                                   if (null != content.content) {
-                                                    outer1_14(content.content, tmp, tmp2);
+                                                    closure_1_14(content.content, tmp, tmp2);
                                                   }
                                                 }
                                               }
                                               if (0 === tmp) {
                                                 tmp2(content);
                                               } else {
-                                                outer1_14(content, tmp - 1, tmp2);
+                                                closure_1_14(content, tmp - 1, tmp2);
                                               }
                                             }
                                           }
@@ -3471,7 +3463,7 @@ function LinkParsedGridItem(author) {
                                       if (0 === tmp) {
                                         tmp2(arr);
                                       } else {
-                                        const diff = tmp - 1;
+                                        diff = tmp - 1;
                                         closure_0 = diff;
                                         closure_1 = tmp2;
                                         const _Array2 = Array;
@@ -3481,14 +3473,14 @@ function LinkParsedGridItem(author) {
                                           if ("link" !== arr.type) {
                                             if ("channelMention" !== arr.type) {
                                               if (null != arr.content) {
-                                                outer1_14(arr.content, diff, tmp2);
+                                                closure_1_14(arr.content, diff, tmp2);
                                               }
                                             }
                                           }
                                           if (0 === diff) {
                                             tmp2(arr);
                                           } else {
-                                            outer1_14(arr, diff - 1, tmp2);
+                                            closure_1_14(arr, diff - 1, tmp2);
                                           }
                                         }
                                       }
@@ -3499,14 +3491,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== arr.type) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
-                                        outer1_14(arr.content, diff, tmp2);
+                                        closure_1_14(arr.content, diff, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === diff) {
                                     tmp2(arr);
                                   } else {
-                                    outer1_14(arr, diff - 1, tmp2);
+                                    closure_1_14(arr, diff - 1, tmp2);
                                   }
                                 }
                               }
@@ -3517,14 +3509,14 @@ function LinkParsedGridItem(author) {
                           if ("link" !== content.type) {
                             if ("channelMention" !== content.type) {
                               if (null != content.content) {
-                                outer1_14(content.content, tmp, tmp2);
+                                closure_1_14(content.content, tmp, tmp2);
                               }
                             }
                           }
                           if (0 === tmp) {
                             tmp2(content);
                           } else {
-                            outer1_14(content, tmp - 1, tmp2);
+                            closure_1_14(content, tmp - 1, tmp2);
                           }
                         }
                       }
@@ -3533,7 +3525,7 @@ function LinkParsedGridItem(author) {
                   if (0 === tmp) {
                     tmp2(arr);
                   } else {
-                    const diff = tmp - 1;
+                    diff = tmp - 1;
                     closure_0 = diff;
                     closure_1 = tmp2;
                     const _Array2 = Array;
@@ -3548,8 +3540,8 @@ function LinkParsedGridItem(author) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
                                     const content = arr.content;
-                                    let closure_0 = tmp;
-                                    let closure_1 = tmp2;
+                                    closure_0 = tmp;
+                                    closure_1 = tmp2;
                                     const _Array = Array;
                                     if (Array.isArray(content)) {
                                       const item1 = content.forEach(() => { ... });
@@ -3557,14 +3549,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== content.type) {
                                         if ("channelMention" !== content.type) {
                                           if (null != content.content) {
-                                            outer1_14(content.content, tmp, tmp2);
+                                            closure_1_14(content.content, tmp, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === tmp) {
                                         tmp2(content);
                                       } else {
-                                        outer1_14(content, tmp - 1, tmp2);
+                                        closure_1_14(content, tmp - 1, tmp2);
                                       }
                                     }
                                   }
@@ -3573,7 +3565,7 @@ function LinkParsedGridItem(author) {
                               if (0 === tmp) {
                                 tmp2(arr);
                               } else {
-                                const diff = tmp - 1;
+                                diff = tmp - 1;
                                 closure_0 = diff;
                                 closure_1 = tmp2;
                                 const _Array2 = Array;
@@ -3583,14 +3575,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== arr.type) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
-                                        outer1_14(arr.content, diff, tmp2);
+                                        closure_1_14(arr.content, diff, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === diff) {
                                     tmp2(arr);
                                   } else {
-                                    outer1_14(arr, diff - 1, tmp2);
+                                    closure_1_14(arr, diff - 1, tmp2);
                                   }
                                 }
                               }
@@ -3602,8 +3594,8 @@ function LinkParsedGridItem(author) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
                                 const content = arr.content;
-                                let closure_0 = tmp;
-                                let closure_1 = tmp2;
+                                closure_0 = tmp;
+                                closure_1 = tmp2;
                                 const _Array = Array;
                                 if (Array.isArray(content)) {
                                   const item1 = content.forEach((arr) => {
@@ -3614,8 +3606,8 @@ function LinkParsedGridItem(author) {
                                         if ("channelMention" !== arr.type) {
                                           if (null != arr.content) {
                                             const content = arr.content;
-                                            let closure_0 = tmp;
-                                            let closure_1 = tmp2;
+                                            closure_0 = tmp;
+                                            closure_1 = tmp2;
                                             const _Array = Array;
                                             if (Array.isArray(content)) {
                                               const item1 = content.forEach(() => { ... });
@@ -3623,14 +3615,14 @@ function LinkParsedGridItem(author) {
                                               if ("link" !== content.type) {
                                                 if ("channelMention" !== content.type) {
                                                   if (null != content.content) {
-                                                    outer1_14(content.content, tmp, tmp2);
+                                                    closure_1_14(content.content, tmp, tmp2);
                                                   }
                                                 }
                                               }
                                               if (0 === tmp) {
                                                 tmp2(content);
                                               } else {
-                                                outer1_14(content, tmp - 1, tmp2);
+                                                closure_1_14(content, tmp - 1, tmp2);
                                               }
                                             }
                                           }
@@ -3639,7 +3631,7 @@ function LinkParsedGridItem(author) {
                                       if (0 === tmp) {
                                         tmp2(arr);
                                       } else {
-                                        const diff = tmp - 1;
+                                        diff = tmp - 1;
                                         closure_0 = diff;
                                         closure_1 = tmp2;
                                         const _Array2 = Array;
@@ -3649,14 +3641,14 @@ function LinkParsedGridItem(author) {
                                           if ("link" !== arr.type) {
                                             if ("channelMention" !== arr.type) {
                                               if (null != arr.content) {
-                                                outer1_14(arr.content, diff, tmp2);
+                                                closure_1_14(arr.content, diff, tmp2);
                                               }
                                             }
                                           }
                                           if (0 === diff) {
                                             tmp2(arr);
                                           } else {
-                                            outer1_14(arr, diff - 1, tmp2);
+                                            closure_1_14(arr, diff - 1, tmp2);
                                           }
                                         }
                                       }
@@ -3667,14 +3659,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== content.type) {
                                     if ("channelMention" !== content.type) {
                                       if (null != content.content) {
-                                        outer1_14(content.content, tmp, tmp2);
+                                        closure_1_14(content.content, tmp, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === tmp) {
                                     tmp2(content);
                                   } else {
-                                    outer1_14(content, tmp - 1, tmp2);
+                                    closure_1_14(content, tmp - 1, tmp2);
                                   }
                                 }
                               }
@@ -3683,7 +3675,7 @@ function LinkParsedGridItem(author) {
                           if (0 === tmp) {
                             tmp2(arr);
                           } else {
-                            const diff = tmp - 1;
+                            diff = tmp - 1;
                             closure_0 = diff;
                             closure_1 = tmp2;
                             const _Array2 = Array;
@@ -3696,8 +3688,8 @@ function LinkParsedGridItem(author) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
                                         const content = arr.content;
-                                        let closure_0 = tmp;
-                                        let closure_1 = tmp2;
+                                        closure_0 = tmp;
+                                        closure_1 = tmp2;
                                         const _Array = Array;
                                         if (Array.isArray(content)) {
                                           const item1 = content.forEach(() => { ... });
@@ -3705,14 +3697,14 @@ function LinkParsedGridItem(author) {
                                           if ("link" !== content.type) {
                                             if ("channelMention" !== content.type) {
                                               if (null != content.content) {
-                                                outer1_14(content.content, tmp, tmp2);
+                                                closure_1_14(content.content, tmp, tmp2);
                                               }
                                             }
                                           }
                                           if (0 === tmp) {
                                             tmp2(content);
                                           } else {
-                                            outer1_14(content, tmp - 1, tmp2);
+                                            closure_1_14(content, tmp - 1, tmp2);
                                           }
                                         }
                                       }
@@ -3721,7 +3713,7 @@ function LinkParsedGridItem(author) {
                                   if (0 === tmp) {
                                     tmp2(arr);
                                   } else {
-                                    const diff = tmp - 1;
+                                    diff = tmp - 1;
                                     closure_0 = diff;
                                     closure_1 = tmp2;
                                     const _Array2 = Array;
@@ -3731,14 +3723,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== arr.type) {
                                         if ("channelMention" !== arr.type) {
                                           if (null != arr.content) {
-                                            outer1_14(arr.content, diff, tmp2);
+                                            closure_1_14(arr.content, diff, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === diff) {
                                         tmp2(arr);
                                       } else {
-                                        outer1_14(arr, diff - 1, tmp2);
+                                        closure_1_14(arr, diff - 1, tmp2);
                                       }
                                     }
                                   }
@@ -3749,14 +3741,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== arr.type) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
-                                    outer1_14(arr.content, diff, tmp2);
+                                    closure_1_14(arr.content, diff, tmp2);
                                   }
                                 }
                               }
                               if (0 === diff) {
                                 tmp2(arr);
                               } else {
-                                outer1_14(arr, diff - 1, tmp2);
+                                closure_1_14(arr, diff - 1, tmp2);
                               }
                             }
                           }
@@ -3767,14 +3759,14 @@ function LinkParsedGridItem(author) {
                       if ("link" !== arr.type) {
                         if ("channelMention" !== arr.type) {
                           if (null != arr.content) {
-                            outer1_14(arr.content, diff, tmp2);
+                            closure_1_14(arr.content, diff, tmp2);
                           }
                         }
                       }
                       if (0 === diff) {
                         tmp2(arr);
                       } else {
-                        outer1_14(arr, diff - 1, tmp2);
+                        closure_1_14(arr, diff - 1, tmp2);
                       }
                     }
                   }
@@ -3785,14 +3777,14 @@ function LinkParsedGridItem(author) {
               if ("link" !== content.type) {
                 if ("channelMention" !== content.type) {
                   if (null != content.content) {
-                    outer1_14(content.content, tmp, tmp2);
+                    closure_1_14(content.content, tmp, tmp2);
                   }
                 }
               }
               if (0 === tmp) {
                 tmp2(content);
               } else {
-                outer1_14(content, tmp - 1, tmp2);
+                closure_1_14(content, tmp - 1, tmp2);
               }
             }
           }
@@ -3803,7 +3795,7 @@ function LinkParsedGridItem(author) {
       } else {
         let diff = tmp - 1;
         author = diff;
-        linkIndex = tmp2;
+        closure_1 = tmp2;
         let _Array2 = Array;
         if (Array.isArray(arr)) {
           let item2 = arr.forEach((arr) => {
@@ -3818,8 +3810,8 @@ function LinkParsedGridItem(author) {
                         if ("channelMention" !== arr.type) {
                           if (null != arr.content) {
                             const content = arr.content;
-                            let closure_0 = tmp;
-                            let closure_1 = tmp2;
+                            closure_0 = tmp;
+                            closure_1 = tmp2;
                             const _Array = Array;
                             if (Array.isArray(content)) {
                               const item1 = content.forEach(() => { ... });
@@ -3827,14 +3819,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== content.type) {
                                 if ("channelMention" !== content.type) {
                                   if (null != content.content) {
-                                    outer1_14(content.content, tmp, tmp2);
+                                    closure_1_14(content.content, tmp, tmp2);
                                   }
                                 }
                               }
                               if (0 === tmp) {
                                 tmp2(content);
                               } else {
-                                outer1_14(content, tmp - 1, tmp2);
+                                closure_1_14(content, tmp - 1, tmp2);
                               }
                             }
                           }
@@ -3843,7 +3835,7 @@ function LinkParsedGridItem(author) {
                       if (0 === tmp) {
                         tmp2(arr);
                       } else {
-                        const diff = tmp - 1;
+                        diff = tmp - 1;
                         closure_0 = diff;
                         closure_1 = tmp2;
                         const _Array2 = Array;
@@ -3853,14 +3845,14 @@ function LinkParsedGridItem(author) {
                           if ("link" !== arr.type) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
-                                outer1_14(arr.content, diff, tmp2);
+                                closure_1_14(arr.content, diff, tmp2);
                               }
                             }
                           }
                           if (0 === diff) {
                             tmp2(arr);
                           } else {
-                            outer1_14(arr, diff - 1, tmp2);
+                            closure_1_14(arr, diff - 1, tmp2);
                           }
                         }
                       }
@@ -3872,8 +3864,8 @@ function LinkParsedGridItem(author) {
                     if ("channelMention" !== arr.type) {
                       if (null != arr.content) {
                         const content = arr.content;
-                        let closure_0 = tmp;
-                        let closure_1 = tmp2;
+                        closure_0 = tmp;
+                        closure_1 = tmp2;
                         const _Array = Array;
                         if (Array.isArray(content)) {
                           const item1 = content.forEach((arr) => {
@@ -3884,8 +3876,8 @@ function LinkParsedGridItem(author) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
                                     const content = arr.content;
-                                    let closure_0 = tmp;
-                                    let closure_1 = tmp2;
+                                    closure_0 = tmp;
+                                    closure_1 = tmp2;
                                     const _Array = Array;
                                     if (Array.isArray(content)) {
                                       const item1 = content.forEach(() => { ... });
@@ -3893,14 +3885,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== content.type) {
                                         if ("channelMention" !== content.type) {
                                           if (null != content.content) {
-                                            outer1_14(content.content, tmp, tmp2);
+                                            closure_1_14(content.content, tmp, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === tmp) {
                                         tmp2(content);
                                       } else {
-                                        outer1_14(content, tmp - 1, tmp2);
+                                        closure_1_14(content, tmp - 1, tmp2);
                                       }
                                     }
                                   }
@@ -3909,7 +3901,7 @@ function LinkParsedGridItem(author) {
                               if (0 === tmp) {
                                 tmp2(arr);
                               } else {
-                                const diff = tmp - 1;
+                                diff = tmp - 1;
                                 closure_0 = diff;
                                 closure_1 = tmp2;
                                 const _Array2 = Array;
@@ -3919,14 +3911,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== arr.type) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
-                                        outer1_14(arr.content, diff, tmp2);
+                                        closure_1_14(arr.content, diff, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === diff) {
                                     tmp2(arr);
                                   } else {
-                                    outer1_14(arr, diff - 1, tmp2);
+                                    closure_1_14(arr, diff - 1, tmp2);
                                   }
                                 }
                               }
@@ -3937,14 +3929,14 @@ function LinkParsedGridItem(author) {
                           if ("link" !== content.type) {
                             if ("channelMention" !== content.type) {
                               if (null != content.content) {
-                                outer1_14(content.content, tmp, tmp2);
+                                closure_1_14(content.content, tmp, tmp2);
                               }
                             }
                           }
                           if (0 === tmp) {
                             tmp2(content);
                           } else {
-                            outer1_14(content, tmp - 1, tmp2);
+                            closure_1_14(content, tmp - 1, tmp2);
                           }
                         }
                       }
@@ -3953,7 +3945,7 @@ function LinkParsedGridItem(author) {
                   if (0 === tmp) {
                     tmp2(arr);
                   } else {
-                    const diff = tmp - 1;
+                    diff = tmp - 1;
                     closure_0 = diff;
                     closure_1 = tmp2;
                     const _Array2 = Array;
@@ -3966,8 +3958,8 @@ function LinkParsedGridItem(author) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
                                 const content = arr.content;
-                                let closure_0 = tmp;
-                                let closure_1 = tmp2;
+                                closure_0 = tmp;
+                                closure_1 = tmp2;
                                 const _Array = Array;
                                 if (Array.isArray(content)) {
                                   const item1 = content.forEach(() => { ... });
@@ -3975,14 +3967,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== content.type) {
                                     if ("channelMention" !== content.type) {
                                       if (null != content.content) {
-                                        outer1_14(content.content, tmp, tmp2);
+                                        closure_1_14(content.content, tmp, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === tmp) {
                                     tmp2(content);
                                   } else {
-                                    outer1_14(content, tmp - 1, tmp2);
+                                    closure_1_14(content, tmp - 1, tmp2);
                                   }
                                 }
                               }
@@ -3991,7 +3983,7 @@ function LinkParsedGridItem(author) {
                           if (0 === tmp) {
                             tmp2(arr);
                           } else {
-                            const diff = tmp - 1;
+                            diff = tmp - 1;
                             closure_0 = diff;
                             closure_1 = tmp2;
                             const _Array2 = Array;
@@ -4001,14 +3993,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== arr.type) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
-                                    outer1_14(arr.content, diff, tmp2);
+                                    closure_1_14(arr.content, diff, tmp2);
                                   }
                                 }
                               }
                               if (0 === diff) {
                                 tmp2(arr);
                               } else {
-                                outer1_14(arr, diff - 1, tmp2);
+                                closure_1_14(arr, diff - 1, tmp2);
                               }
                             }
                           }
@@ -4019,14 +4011,14 @@ function LinkParsedGridItem(author) {
                       if ("link" !== arr.type) {
                         if ("channelMention" !== arr.type) {
                           if (null != arr.content) {
-                            outer1_14(arr.content, diff, tmp2);
+                            closure_1_14(arr.content, diff, tmp2);
                           }
                         }
                       }
                       if (0 === diff) {
                         tmp2(arr);
                       } else {
-                        outer1_14(arr, diff - 1, tmp2);
+                        closure_1_14(arr, diff - 1, tmp2);
                       }
                     }
                   }
@@ -4038,8 +4030,8 @@ function LinkParsedGridItem(author) {
                 if ("channelMention" !== arr.type) {
                   if (null != arr.content) {
                     const content = arr.content;
-                    let closure_0 = tmp;
-                    let closure_1 = tmp2;
+                    closure_0 = tmp;
+                    closure_1 = tmp2;
                     const _Array = Array;
                     if (Array.isArray(content)) {
                       const item1 = content.forEach((arr) => {
@@ -4052,8 +4044,8 @@ function LinkParsedGridItem(author) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
                                     const content = arr.content;
-                                    let closure_0 = tmp;
-                                    let closure_1 = tmp2;
+                                    closure_0 = tmp;
+                                    closure_1 = tmp2;
                                     const _Array = Array;
                                     if (Array.isArray(content)) {
                                       const item1 = content.forEach(() => { ... });
@@ -4061,14 +4053,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== content.type) {
                                         if ("channelMention" !== content.type) {
                                           if (null != content.content) {
-                                            outer1_14(content.content, tmp, tmp2);
+                                            closure_1_14(content.content, tmp, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === tmp) {
                                         tmp2(content);
                                       } else {
-                                        outer1_14(content, tmp - 1, tmp2);
+                                        closure_1_14(content, tmp - 1, tmp2);
                                       }
                                     }
                                   }
@@ -4077,7 +4069,7 @@ function LinkParsedGridItem(author) {
                               if (0 === tmp) {
                                 tmp2(arr);
                               } else {
-                                const diff = tmp - 1;
+                                diff = tmp - 1;
                                 closure_0 = diff;
                                 closure_1 = tmp2;
                                 const _Array2 = Array;
@@ -4087,14 +4079,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== arr.type) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
-                                        outer1_14(arr.content, diff, tmp2);
+                                        closure_1_14(arr.content, diff, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === diff) {
                                     tmp2(arr);
                                   } else {
-                                    outer1_14(arr, diff - 1, tmp2);
+                                    closure_1_14(arr, diff - 1, tmp2);
                                   }
                                 }
                               }
@@ -4106,8 +4098,8 @@ function LinkParsedGridItem(author) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
                                 const content = arr.content;
-                                let closure_0 = tmp;
-                                let closure_1 = tmp2;
+                                closure_0 = tmp;
+                                closure_1 = tmp2;
                                 const _Array = Array;
                                 if (Array.isArray(content)) {
                                   const item1 = content.forEach((arr) => {
@@ -4118,8 +4110,8 @@ function LinkParsedGridItem(author) {
                                         if ("channelMention" !== arr.type) {
                                           if (null != arr.content) {
                                             const content = arr.content;
-                                            let closure_0 = tmp;
-                                            let closure_1 = tmp2;
+                                            closure_0 = tmp;
+                                            closure_1 = tmp2;
                                             const _Array = Array;
                                             if (Array.isArray(content)) {
                                               const item1 = content.forEach(() => { ... });
@@ -4127,14 +4119,14 @@ function LinkParsedGridItem(author) {
                                               if ("link" !== content.type) {
                                                 if ("channelMention" !== content.type) {
                                                   if (null != content.content) {
-                                                    outer1_14(content.content, tmp, tmp2);
+                                                    closure_1_14(content.content, tmp, tmp2);
                                                   }
                                                 }
                                               }
                                               if (0 === tmp) {
                                                 tmp2(content);
                                               } else {
-                                                outer1_14(content, tmp - 1, tmp2);
+                                                closure_1_14(content, tmp - 1, tmp2);
                                               }
                                             }
                                           }
@@ -4143,7 +4135,7 @@ function LinkParsedGridItem(author) {
                                       if (0 === tmp) {
                                         tmp2(arr);
                                       } else {
-                                        const diff = tmp - 1;
+                                        diff = tmp - 1;
                                         closure_0 = diff;
                                         closure_1 = tmp2;
                                         const _Array2 = Array;
@@ -4153,14 +4145,14 @@ function LinkParsedGridItem(author) {
                                           if ("link" !== arr.type) {
                                             if ("channelMention" !== arr.type) {
                                               if (null != arr.content) {
-                                                outer1_14(arr.content, diff, tmp2);
+                                                closure_1_14(arr.content, diff, tmp2);
                                               }
                                             }
                                           }
                                           if (0 === diff) {
                                             tmp2(arr);
                                           } else {
-                                            outer1_14(arr, diff - 1, tmp2);
+                                            closure_1_14(arr, diff - 1, tmp2);
                                           }
                                         }
                                       }
@@ -4171,14 +4163,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== content.type) {
                                     if ("channelMention" !== content.type) {
                                       if (null != content.content) {
-                                        outer1_14(content.content, tmp, tmp2);
+                                        closure_1_14(content.content, tmp, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === tmp) {
                                     tmp2(content);
                                   } else {
-                                    outer1_14(content, tmp - 1, tmp2);
+                                    closure_1_14(content, tmp - 1, tmp2);
                                   }
                                 }
                               }
@@ -4187,7 +4179,7 @@ function LinkParsedGridItem(author) {
                           if (0 === tmp) {
                             tmp2(arr);
                           } else {
-                            const diff = tmp - 1;
+                            diff = tmp - 1;
                             closure_0 = diff;
                             closure_1 = tmp2;
                             const _Array2 = Array;
@@ -4200,8 +4192,8 @@ function LinkParsedGridItem(author) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
                                         const content = arr.content;
-                                        let closure_0 = tmp;
-                                        let closure_1 = tmp2;
+                                        closure_0 = tmp;
+                                        closure_1 = tmp2;
                                         const _Array = Array;
                                         if (Array.isArray(content)) {
                                           const item1 = content.forEach(() => { ... });
@@ -4209,14 +4201,14 @@ function LinkParsedGridItem(author) {
                                           if ("link" !== content.type) {
                                             if ("channelMention" !== content.type) {
                                               if (null != content.content) {
-                                                outer1_14(content.content, tmp, tmp2);
+                                                closure_1_14(content.content, tmp, tmp2);
                                               }
                                             }
                                           }
                                           if (0 === tmp) {
                                             tmp2(content);
                                           } else {
-                                            outer1_14(content, tmp - 1, tmp2);
+                                            closure_1_14(content, tmp - 1, tmp2);
                                           }
                                         }
                                       }
@@ -4225,7 +4217,7 @@ function LinkParsedGridItem(author) {
                                   if (0 === tmp) {
                                     tmp2(arr);
                                   } else {
-                                    const diff = tmp - 1;
+                                    diff = tmp - 1;
                                     closure_0 = diff;
                                     closure_1 = tmp2;
                                     const _Array2 = Array;
@@ -4235,14 +4227,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== arr.type) {
                                         if ("channelMention" !== arr.type) {
                                           if (null != arr.content) {
-                                            outer1_14(arr.content, diff, tmp2);
+                                            closure_1_14(arr.content, diff, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === diff) {
                                         tmp2(arr);
                                       } else {
-                                        outer1_14(arr, diff - 1, tmp2);
+                                        closure_1_14(arr, diff - 1, tmp2);
                                       }
                                     }
                                   }
@@ -4253,14 +4245,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== arr.type) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
-                                    outer1_14(arr.content, diff, tmp2);
+                                    closure_1_14(arr.content, diff, tmp2);
                                   }
                                 }
                               }
                               if (0 === diff) {
                                 tmp2(arr);
                               } else {
-                                outer1_14(arr, diff - 1, tmp2);
+                                closure_1_14(arr, diff - 1, tmp2);
                               }
                             }
                           }
@@ -4271,14 +4263,14 @@ function LinkParsedGridItem(author) {
                       if ("link" !== content.type) {
                         if ("channelMention" !== content.type) {
                           if (null != content.content) {
-                            outer1_14(content.content, tmp, tmp2);
+                            closure_1_14(content.content, tmp, tmp2);
                           }
                         }
                       }
                       if (0 === tmp) {
                         tmp2(content);
                       } else {
-                        outer1_14(content, tmp - 1, tmp2);
+                        closure_1_14(content, tmp - 1, tmp2);
                       }
                     }
                   }
@@ -4287,7 +4279,7 @@ function LinkParsedGridItem(author) {
               if (0 === tmp) {
                 tmp2(arr);
               } else {
-                const diff = tmp - 1;
+                diff = tmp - 1;
                 closure_0 = diff;
                 closure_1 = tmp2;
                 const _Array2 = Array;
@@ -4302,8 +4294,8 @@ function LinkParsedGridItem(author) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
                                 const content = arr.content;
-                                let closure_0 = tmp;
-                                let closure_1 = tmp2;
+                                closure_0 = tmp;
+                                closure_1 = tmp2;
                                 const _Array = Array;
                                 if (Array.isArray(content)) {
                                   const item1 = content.forEach(() => { ... });
@@ -4311,14 +4303,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== content.type) {
                                     if ("channelMention" !== content.type) {
                                       if (null != content.content) {
-                                        outer1_14(content.content, tmp, tmp2);
+                                        closure_1_14(content.content, tmp, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === tmp) {
                                     tmp2(content);
                                   } else {
-                                    outer1_14(content, tmp - 1, tmp2);
+                                    closure_1_14(content, tmp - 1, tmp2);
                                   }
                                 }
                               }
@@ -4327,7 +4319,7 @@ function LinkParsedGridItem(author) {
                           if (0 === tmp) {
                             tmp2(arr);
                           } else {
-                            const diff = tmp - 1;
+                            diff = tmp - 1;
                             closure_0 = diff;
                             closure_1 = tmp2;
                             const _Array2 = Array;
@@ -4337,14 +4329,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== arr.type) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
-                                    outer1_14(arr.content, diff, tmp2);
+                                    closure_1_14(arr.content, diff, tmp2);
                                   }
                                 }
                               }
                               if (0 === diff) {
                                 tmp2(arr);
                               } else {
-                                outer1_14(arr, diff - 1, tmp2);
+                                closure_1_14(arr, diff - 1, tmp2);
                               }
                             }
                           }
@@ -4356,8 +4348,8 @@ function LinkParsedGridItem(author) {
                         if ("channelMention" !== arr.type) {
                           if (null != arr.content) {
                             const content = arr.content;
-                            let closure_0 = tmp;
-                            let closure_1 = tmp2;
+                            closure_0 = tmp;
+                            closure_1 = tmp2;
                             const _Array = Array;
                             if (Array.isArray(content)) {
                               const item1 = content.forEach((arr) => {
@@ -4368,8 +4360,8 @@ function LinkParsedGridItem(author) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
                                         const content = arr.content;
-                                        let closure_0 = tmp;
-                                        let closure_1 = tmp2;
+                                        closure_0 = tmp;
+                                        closure_1 = tmp2;
                                         const _Array = Array;
                                         if (Array.isArray(content)) {
                                           const item1 = content.forEach(() => { ... });
@@ -4377,14 +4369,14 @@ function LinkParsedGridItem(author) {
                                           if ("link" !== content.type) {
                                             if ("channelMention" !== content.type) {
                                               if (null != content.content) {
-                                                outer1_14(content.content, tmp, tmp2);
+                                                closure_1_14(content.content, tmp, tmp2);
                                               }
                                             }
                                           }
                                           if (0 === tmp) {
                                             tmp2(content);
                                           } else {
-                                            outer1_14(content, tmp - 1, tmp2);
+                                            closure_1_14(content, tmp - 1, tmp2);
                                           }
                                         }
                                       }
@@ -4393,7 +4385,7 @@ function LinkParsedGridItem(author) {
                                   if (0 === tmp) {
                                     tmp2(arr);
                                   } else {
-                                    const diff = tmp - 1;
+                                    diff = tmp - 1;
                                     closure_0 = diff;
                                     closure_1 = tmp2;
                                     const _Array2 = Array;
@@ -4403,14 +4395,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== arr.type) {
                                         if ("channelMention" !== arr.type) {
                                           if (null != arr.content) {
-                                            outer1_14(arr.content, diff, tmp2);
+                                            closure_1_14(arr.content, diff, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === diff) {
                                         tmp2(arr);
                                       } else {
-                                        outer1_14(arr, diff - 1, tmp2);
+                                        closure_1_14(arr, diff - 1, tmp2);
                                       }
                                     }
                                   }
@@ -4421,14 +4413,14 @@ function LinkParsedGridItem(author) {
                               if ("link" !== content.type) {
                                 if ("channelMention" !== content.type) {
                                   if (null != content.content) {
-                                    outer1_14(content.content, tmp, tmp2);
+                                    closure_1_14(content.content, tmp, tmp2);
                                   }
                                 }
                               }
                               if (0 === tmp) {
                                 tmp2(content);
                               } else {
-                                outer1_14(content, tmp - 1, tmp2);
+                                closure_1_14(content, tmp - 1, tmp2);
                               }
                             }
                           }
@@ -4437,7 +4429,7 @@ function LinkParsedGridItem(author) {
                       if (0 === tmp) {
                         tmp2(arr);
                       } else {
-                        const diff = tmp - 1;
+                        diff = tmp - 1;
                         closure_0 = diff;
                         closure_1 = tmp2;
                         const _Array2 = Array;
@@ -4450,8 +4442,8 @@ function LinkParsedGridItem(author) {
                                 if ("channelMention" !== arr.type) {
                                   if (null != arr.content) {
                                     const content = arr.content;
-                                    let closure_0 = tmp;
-                                    let closure_1 = tmp2;
+                                    closure_0 = tmp;
+                                    closure_1 = tmp2;
                                     const _Array = Array;
                                     if (Array.isArray(content)) {
                                       const item1 = content.forEach(() => { ... });
@@ -4459,14 +4451,14 @@ function LinkParsedGridItem(author) {
                                       if ("link" !== content.type) {
                                         if ("channelMention" !== content.type) {
                                           if (null != content.content) {
-                                            outer1_14(content.content, tmp, tmp2);
+                                            closure_1_14(content.content, tmp, tmp2);
                                           }
                                         }
                                       }
                                       if (0 === tmp) {
                                         tmp2(content);
                                       } else {
-                                        outer1_14(content, tmp - 1, tmp2);
+                                        closure_1_14(content, tmp - 1, tmp2);
                                       }
                                     }
                                   }
@@ -4475,7 +4467,7 @@ function LinkParsedGridItem(author) {
                               if (0 === tmp) {
                                 tmp2(arr);
                               } else {
-                                const diff = tmp - 1;
+                                diff = tmp - 1;
                                 closure_0 = diff;
                                 closure_1 = tmp2;
                                 const _Array2 = Array;
@@ -4485,14 +4477,14 @@ function LinkParsedGridItem(author) {
                                   if ("link" !== arr.type) {
                                     if ("channelMention" !== arr.type) {
                                       if (null != arr.content) {
-                                        outer1_14(arr.content, diff, tmp2);
+                                        closure_1_14(arr.content, diff, tmp2);
                                       }
                                     }
                                   }
                                   if (0 === diff) {
                                     tmp2(arr);
                                   } else {
-                                    outer1_14(arr, diff - 1, tmp2);
+                                    closure_1_14(arr, diff - 1, tmp2);
                                   }
                                 }
                               }
@@ -4503,14 +4495,14 @@ function LinkParsedGridItem(author) {
                           if ("link" !== arr.type) {
                             if ("channelMention" !== arr.type) {
                               if (null != arr.content) {
-                                outer1_14(arr.content, diff, tmp2);
+                                closure_1_14(arr.content, diff, tmp2);
                               }
                             }
                           }
                           if (0 === diff) {
                             tmp2(arr);
                           } else {
-                            outer1_14(arr, diff - 1, tmp2);
+                            closure_1_14(arr, diff - 1, tmp2);
                           }
                         }
                       }
@@ -4521,14 +4513,14 @@ function LinkParsedGridItem(author) {
                   if ("link" !== arr.type) {
                     if ("channelMention" !== arr.type) {
                       if (null != arr.content) {
-                        outer1_14(arr.content, diff, tmp2);
+                        closure_1_14(arr.content, diff, tmp2);
                       }
                     }
                   }
                   if (0 === diff) {
                     tmp2(arr);
                   } else {
-                    outer1_14(arr, diff - 1, tmp2);
+                    closure_1_14(arr, diff - 1, tmp2);
                   }
                 }
               }
@@ -4539,14 +4531,14 @@ function LinkParsedGridItem(author) {
           if ("link" !== arr.type) {
             if ("channelMention" !== arr.type) {
               if (null != arr.content) {
-                outer1_14(arr.content, diff, tmp2);
+                closure_1_14(arr.content, diff, tmp2);
               }
             }
           }
           if (0 === diff) {
             tmp2(arr);
           } else {
-            outer1_14(arr, diff - 1, tmp2);
+            closure_1_14(arr, diff - 1, tmp2);
           }
         }
       }
@@ -4564,7 +4556,7 @@ function LinkParsedGridItem(author) {
       obj = { postProcessor: null };
       obj[0] = callback;
       obj = { pointerEvents: "none", children: null };
-      const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
+      obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
       obj1[3] = obj.renderMessageMarkupWithParser(author(channelId[11]).NativeSearchResultLinkPreviewParser, tmp, obj).content;
       obj[1] = callback(author(channelId[12]).Text, obj1);
       return callback(onPressGuildVoiceChannelMention, obj);
@@ -4594,7 +4586,7 @@ function LinkParsedGridItem(author) {
         return callback(author(channelId[12]).Text, obj);
       }
     }
-    obj = { variant: "text-xs/normal", color: "interactive-text-default", lineClamp: 1, style: _undefined.tapToSee, children: null };
+    obj = { variant: "text-xs/normal", color: "interactive-text-default", lineClamp: 1, style: store.tapToSee, children: null };
     const intl = author(channelId[9]).intl;
     obj[4] = intl.string(author(channelId[9]).t.q2IIoP);
     return callback(author(channelId[12]).Text, obj);
@@ -4640,13 +4632,13 @@ function LinkParsedGridItem(author) {
       const obj4 = author(channelId[16]);
     } else if ("channelMention" === tmp.type) {
       channelId = tmp.channelId;
-      const channel = _undefined.getChannel(channelId);
+      const channel = store.getChannel(channelId);
       let isGuildVocalResult;
       if (channel != null) {
         isGuildVocalResult = channel.isGuildVocal();
       }
       if (isGuildVocalResult) {
-        const obj1 = { channelId: null, messageId: null, mentionedChannelId: null };
+        obj1 = { channelId: null, messageId: null, mentionedChannelId: null };
         obj1[0] = channelId;
         obj1[1] = messageId;
         obj1[2] = channelId;
@@ -4676,12 +4668,10 @@ function LinkParsedGridItem(author) {
     onPress({ channelId, messageId });
   }, items8);
   obj = { containerStyle, onPress: callback1, children: null };
-  obj = { thumbnail: null };
-  const items9 = [tmp.iconContainer, imageStyle];
-  obj[0] = callback(onPressGuildVoiceChannelMention, { style: items9, children: memo2 });
+  obj = { thumbnail: callback(onPressGuildVoiceChannelMention, { style: items9, children: memo2 }) };
+  items9 = [tmp.iconContainer, imageStyle];
   const items10 = [callback(author(channelId[17]).SearchListCardThumbnail, obj), callback(author(channelId[17]).SearchListCardContent, { label: memo, subLabel: memo1 }), ];
-  obj1 = { onPress: callback2, children: null };
-  obj1[1] = callback(author(channelId[17]).SearchListCardFooter, { author, avatarSource: memo3, channel: stateFromStores1 });
+  obj1 = { onPress: callback2, children: callback(tmp2(tmp3[17]).SearchListCardFooter, { author, avatarSource: memo3, channel: stateFromStores1 }) };
   items10[2] = callback(author(channelId[18]).PressableHighlight, obj1);
   obj[2] = items10;
   return callback(author(channelId[17]).SearchListCardContainer, obj);
@@ -4695,17 +4685,17 @@ function LinkEmbedGridItem(containerStyle) {
   const onPressSearchLink = containerStyle.onPressSearchLink;
   const onPress = containerStyle.onPress;
   const imageStyle = containerStyle.imageStyle;
-  let c8;
+  closure_8 = undefined;
   let stateFromStores1;
   let scale;
   let url;
   let url2;
   const tmp = callback2();
-  c8 = tmp;
+  closure_8 = tmp;
   let obj = embed(author[8]);
-  let items = [c8];
-  const stateFromStores = obj.useStateFromStores(items, () => _undefined.getMessage(messageId));
-  let obj1 = embed(author[8]);
+  let items = [closure_8];
+  const stateFromStores = obj.useStateFromStores(items, () => message.getMessage(messageId));
+  obj1 = embed(author[8]);
   const items1 = [imageStyle];
   stateFromStores1 = obj1.useStateFromStores(items1, () => imageStyle.getChannel(channelId));
   scale = onPress().scale;
@@ -4733,8 +4723,8 @@ function LinkEmbedGridItem(containerStyle) {
     embed,
     containerStyle: imageStyle,
     renderFallback() {
-      const items = [iconContainer.iconContainer, ensureGuildLoaded];
-      return outer1_11(outer1_5, { style: items, children: outer1_11(outer1_0(outer1_2[15]).LinkIcon, { size: "md" }) });
+      const items = [iconContainer.iconContainer, closure_7];
+      return closure_1_11(closure_1_5, { style: items, children: closure_1_11(closure_1_0(closure_1_2[15]).LinkIcon, { size: "md" }) });
     },
     scale,
     containerHeight: imageStyle.height + stateFromStores1,
@@ -4755,10 +4745,7 @@ function LinkEmbedGridItem(containerStyle) {
   const items5 = [channelId, messageId, onPress];
   const callback = obj3.useCallback(() => {
     sources(author[20])(null != url, "[LinkGridItem] Embed url cannot be null");
-    const obj = { url, trusted: null, messageId: null, channelId: null };
-    obj[1] = embed(author[21]).isLinkTrusted(url, url2);
-    obj[2] = messageId;
-    obj[3] = channelId;
+    const obj = { url, trusted: embed(author[21]).isLinkTrusted(url, url2), messageId, channelId };
     onPressSearchLink(obj);
   }, items4);
   const callback1 = obj3.useCallback(() => {
@@ -4777,8 +4764,7 @@ function LinkEmbedGridItem(containerStyle) {
   }
   obj[1] = url(embed(author[12]).Text, { variant: "text-xs/normal", color: "text-link", lineClamp: 1, children: url });
   items6[1] = url(embed(author[17]).SearchListCardContent, obj);
-  obj1 = { onPress: callback1, children: null };
-  obj1[1] = url(embed(author[17]).SearchListCardFooter, { author, avatarSource: memo1, channel: stateFromStores1 });
+  obj1 = { onPress: callback1, children: tmp13(tmp2(tmp3[17]).SearchListCardFooter, { author, avatarSource: memo1, channel: stateFromStores1 }) };
   items6[2] = url(embed(author[18]).PressableHighlight, obj1);
   obj[2] = items6;
   return url2(embed(author[17]).SearchListCardContainer, obj);
@@ -4789,11 +4775,6 @@ let c4 = importAllResult;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
 let closure_13 = createCacheKey.createStyles({ iconContainer: { alignItems: "center", justifyContent: "center" }, tapToSee: { fontStyle: "italic" } });
 const memoResult = importAllResult.memo(function LinkGridItem(arg0) {
-  let containerStyle;
-  let data;
-  let imageStyle;
-  let onPress;
-  let onPressSearchLink;
   ({ data, onPressSearchLink, onPress, imageStyle, containerStyle } = arg0);
   const type = data.type;
   if (constants.EMBED === type) {
@@ -4817,6 +4798,6 @@ const memoResult = importAllResult.memo(function LinkGridItem(arg0) {
     return null;
   }
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/search/native/components/list/rows/LinkGridItem.tsx");
+const result = require("set").fileFinishedImporting("modules/search/native/components/list/rows/LinkGridItem.tsx");
 
 export default memoResult;

@@ -1,14 +1,14 @@
-// Module ID: 14508
-// Function ID: 14509
+// Module ID: 14576
+// Function ID: 14577
 // Name: useVideoQuestClickCtaAndMaybeCloseModal
-// Dependencies: [19, 10687, 1487, 10496, 10689, 6719, 7480, 2]
+// Dependencies: [19, 10726, 1487, 10535, 10728, 6756, 7518, 2]
 // Exports: useVideoQuestClickCtaAndMaybeCloseModal
 
-// Module 14508 (useVideoQuestClickCtaAndMaybeCloseModal)
-import noop from "noop";
+// Module 14576 (useVideoQuestClickCtaAndMaybeCloseModal)
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("isDiscordProxiedAssetUrl").fileFinishedImporting("modules/quests/native/VideoQuestModal/useVideoQuestClickCtaAndMaybeCloseModal.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/VideoQuestModal/useVideoQuestClickCtaAndMaybeCloseModal.tsx");
 
 export const useVideoQuestClickCtaAndMaybeCloseModal = function useVideoQuestClickCtaAndMaybeCloseModal(quest) {
   quest = quest.quest;

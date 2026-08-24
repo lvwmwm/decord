@@ -1,13 +1,14 @@
-// Module ID: 16718
-// Function ID: 16719
+// Module ID: 16814
+// Function ID: 16815
 // Name: setVerifyTimezone
-// Dependencies: [5038, 4066, 2]
+// Dependencies: [5043, 4069, 2]
 
-// Module 16718 (setVerifyTimezone)
-import "initialize";
+// Module 16814 (setVerifyTimezone)
+import initializeDefault from "initialize" /* 5043 */;
 
 let require = arg1;
 let c2 = false;
+initializeDefault;
 class UserSettingsManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -24,7 +25,7 @@ class UserSettingsManager extends tmp2 {
 }
 const prototype = UserSettingsManager.prototype;
 prototype["setVerifyTimezone"] = function setVerifyTimezone() {
-  let c2 = true;
+  c2 = true;
 };
 prototype["ensureTimezoneUpdated"] = function ensureTimezoneUpdated() {
   if (c2) {
@@ -32,11 +33,11 @@ prototype["ensureTimezoneUpdated"] = function ensureTimezoneUpdated() {
     const _Date = Date;
     const date = new Date();
     const timezoneOffset = date.getTimezoneOffset();
-    let TimezoneOffset = timezoneOffset(4066).TimezoneOffset;
+    let TimezoneOffset = timezoneOffset(4069).TimezoneOffset;
     if (TimezoneOffset.getSetting() !== timezoneOffset) {
       const _setImmediate = setImmediate;
       setImmediate(() => {
-        const TimezoneOffset = timezoneOffset(outer1_1[1]).TimezoneOffset;
+        const TimezoneOffset = timezoneOffset(closure_1_1[1]).TimezoneOffset;
         return TimezoneOffset.updateSetting(timezoneOffset);
       });
     }

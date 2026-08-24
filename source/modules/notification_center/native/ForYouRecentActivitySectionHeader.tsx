@@ -1,30 +1,34 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15761
+// Function ID: 15762
 // Name: ForYouRecentActivitySectionHeader
-// Dependencies: [19, 17, 21, 4661, 712, 4734, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4739, 1236, 2]
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 15692 (ForYouRecentActivitySectionHeader)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15761 (ForYouRecentActivitySectionHeader)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { container: null, textHeader: null };
-createCacheKey = { marginTop: require("Themes").space.PX_8, marginBottom: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_24 };
+createCacheKey = { marginTop: ThemesDefault.space.PX_8, marginBottom: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_24 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginTop: require("Themes").space.PX_8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { marginTop: require("Themes").space.PX_8 };
-const result = require("jsxProd").fileFinishedImporting("modules/notification_center/native/ForYouRecentActivitySectionHeader.tsx");
+createCacheKey[1] = { marginTop: ThemesDefault.space.PX_8 };
+let closure_4 = createCacheKey.createStyles(createCacheKey);
+const obj1 = { marginTop: ThemesDefault.space.PX_8 };
+const result = require("set").fileFinishedImporting("modules/notification_center/native/ForYouRecentActivitySectionHeader.tsx");
 
 export const ForYouRecentActivitySectionHeader = function ForYouRecentActivitySectionHeader() {
-  const tmp = createCacheKey();
+  const tmp = callback();
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[4] = intl.string(require(1236) /* getSystemLocale */.t.yM9Krm);
-  obj[1] = jsx(require(4734) /* Text */.Text, { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: null });
+  const intl = getSystemLocale.intl;
+  obj[4] = intl.string(getSystemLocale.t.yM9Krm);
+  obj[1] = jsx(Text.Text, { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: null });
   return <View style={tmp.textHeader} color="text-muted" variant="text-sm/semibold" accessibilityRole="header">{null}</View>;
 };

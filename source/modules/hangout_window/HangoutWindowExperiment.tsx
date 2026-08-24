@@ -1,16 +1,18 @@
-// Module ID: 16048
-// Function ID: 16049
+// Module ID: 16146
+// Function ID: 16147
 // Name: experiment
-// Dependencies: [4289, 4286, 2]
+// Dependencies: [4293, 4290, 2]
 // Exports: getHangoutWindowExperiment, useHangoutWindowExperiment
 
-// Module 16048 (experiment)
-import createExperiment from "createExperiment";
+// Module 16146 (experiment)
+import set from "set" /* 2 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4293 */;
+import createExperiment from "createExperiment" /* 4290 */;
 
 const items = [{ id: 1, label: "Enable Hangout Window", config: { enableHangoutWindow: true } }];
-const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-02_hangout_window", label: "Hangout Window", defaultConfig: { enableHangoutWindow: false }, commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL, treatments: items });
-const obj = { kind: "guild", id: "2026-02_hangout_window", label: "Hangout Window", defaultConfig: { enableHangoutWindow: false }, commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL, treatments: items };
-const result = require("set").fileFinishedImporting("modules/hangout_window/HangoutWindowExperiment.tsx");
+const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-02_hangout_window", label: "Hangout Window", defaultConfig: { enableHangoutWindow: false }, commonTriggerPoint: ExperimentBuckets.CommonTriggerPoints.VOICE_CALL, treatments: items });
+const obj = { kind: "guild", id: "2026-02_hangout_window", label: "Hangout Window", defaultConfig: { enableHangoutWindow: false }, commonTriggerPoint: ExperimentBuckets.CommonTriggerPoints.VOICE_CALL, treatments: items };
+const result = set.fileFinishedImporting("modules/hangout_window/HangoutWindowExperiment.tsx");
 
 export const HangoutWindowExperiment = experiment;
 export const useHangoutWindowExperiment = function useHangoutWindowExperiment(guildId) {

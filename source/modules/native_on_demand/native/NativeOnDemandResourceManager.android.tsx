@@ -1,17 +1,18 @@
-// Module ID: 16642
-// Function ID: 16643
+// Module ID: 16738
+// Function ID: 16739
 // Name: prototype
-// Dependencies: [4497, 7383, 676, 5038, 16643, 9654, 2]
+// Dependencies: [4501, 7421, 676, 5043, 16739, 9693, 2]
 
-// Module 16642 (prototype)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import getState from "getState";
-import { AppStates } from "ME";
-import "initialize";
+// Module 16738 (prototype)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_3 from "getState" /* 7421 */;
+import { AppStates } from "ME" /* 676 */;
 
+initializeDefault;
 let prototype = function NativeOnDemandResourceManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const importDefault = applyArgumentsResult;
+  importDefault = applyArgumentsResult;
   applyArgumentsResult.actions = {
     POST_CONNECTION_OPEN() {
       return applyArgumentsResult.handlePostConnectionOpen();
@@ -31,8 +32,8 @@ let prototype = function NativeOnDemandResourceManager() {
   };
   applyArgumentsResult.maybeLoadKrisp = function maybeLoadKrisp() {
     if (mode.isPastConnectionOpen) {
-      if (outer1_3.getState() === outer1_4.ACTIVE) {
-        const obj3 = applyArgumentsResult(outer1_1[4]);
+      if (closure_1_3.getState() === closure_1_4.ACTIVE) {
+        const obj3 = applyArgumentsResult(closure_1_1[4]);
         let hasOnDemandResourceResult;
         if (obj3 != null) {
           hasOnDemandResourceResult = obj3.hasOnDemandResource("krisp");
@@ -40,8 +41,8 @@ let prototype = function NativeOnDemandResourceManager() {
         if (!hasOnDemandResourceResult) {
           if (!tmp.hasFetchedKrisp) {
             tmp.hasFetchedKrisp = true;
-            mode = outer1_2.getMode();
-            const autoThreshold = outer1_2.getModeOptions().autoThreshold;
+            mode = closure_1_2.getMode();
+            const autoThreshold = closure_1_2.getModeOptions().autoThreshold;
             let tmp9Result = tmp9(tmp10[5]);
             tmp9Result.setMode(mode, { autoThreshold: false });
             tmp9Result = tmp9(tmp10[4]);
@@ -49,7 +50,7 @@ let prototype = function NativeOnDemandResourceManager() {
               const onDemandResource = tmp9Result.fetchOnDemandResource("krisp");
               if (onDemandResource != null) {
                 onDemandResource.then((arg0) => {
-                  let obj = applyArgumentsResult(outer2_1[4]);
+                  let obj = applyArgumentsResult(closure_2_1[4]);
                   if (obj != null) {
                     const result = obj.isOnDemandResourcingAvailable();
                   }
@@ -59,7 +60,7 @@ let prototype = function NativeOnDemandResourceManager() {
                     }
                   }
                   obj = { autoThreshold };
-                  applyArgumentsResult(outer2_1[5]).setMode(mode, obj);
+                  applyArgumentsResult(closure_2_1[5]).setMode(mode, obj);
                 });
               }
             }
@@ -73,6 +74,6 @@ let prototype = function NativeOnDemandResourceManager() {
 class prototype extends tmp2 {
 }
 prototype = new prototype();
-let result = require("ME").fileFinishedImporting("modules/native_on_demand/native/NativeOnDemandResourceManager.android.tsx");
+let result = require("set").fileFinishedImporting("modules/native_on_demand/native/NativeOnDemandResourceManager.android.tsx");
 
 export default prototype;

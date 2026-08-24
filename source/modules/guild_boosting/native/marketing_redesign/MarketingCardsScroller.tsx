@@ -1,31 +1,28 @@
-// Module ID: 11733
-// Function ID: 11734
+// Module ID: 11782
+// Function ID: 11783
 // Name: items
-// Dependencies: [32, 19, 17, 4662, 21, 4661, 4223, 712, 589, 1236, 501, 5433, 10205, 11542, 2]
+// Dependencies: [32, 19, 17, 4669, 21, 4668, 4227, 712, 589, 1236, 501, 5438, 10244, 11591, 2]
 
-// Module 11733 (items)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import hexToRgba from "hexToRgba";
+// Module 11782 (items)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
 
-let c5;
-let c9;
-let closure_6;
-let metroImportAll;
 const require = arg1;
 let c4 = importAllResult;
 ({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
-let previous = "previous";
-let next = "next";
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
+const previous = "previous";
+const next = "next";
 let obj = { wrapper: { position: "relative" }, navigationButton: null, navigationButtonPrevious: null, navigationButtonNext: null };
 obj = { alignItems: "center", backgroundColor: null, borderRadius: null, height: 44, justifyContent: "center", position: "absolute", top: "50%", transform: null, width: 44, zIndex: 1 };
-obj[1] = hexToRgba.hexWithOpacity(require("Themes").unsafe_rawColors.BLACK, 0.56);
-obj[2] = require("Themes").radii.round;
+obj[1] = hexToRgba.hexWithOpacity(ThemesDefault.unsafe_rawColors.BLACK, 0.56);
+obj[2] = ThemesDefault.radii.round;
 let items = [{ translateY: -22 }];
 obj[7] = items;
 obj[1] = obj;
@@ -33,10 +30,6 @@ obj[2] = { left: 16 };
 obj[3] = { right: 16 };
 let closure_12 = createCacheKey.createStyles(obj);
 const forwardRefResult = importAllResult.forwardRef((initialIndex, ref) => {
-  let cardMarginRight;
-  let cardWidth;
-  let children;
-  let contentContainerStyle;
   function handleScrollEnd(nativeEvent) {
     lib(Math.max(0, Math.min(itemCount - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / closure_4))));
     if (obj.isIOS()) {
@@ -64,18 +57,18 @@ const forwardRefResult = importAllResult.forwardRef((initialIndex, ref) => {
   const tmp = callback();
   ref = importAllResult.useRef(null);
   const sum = cardWidth + cardMarginRight;
-  let closure_5 = importAllResult.useRef(Math.max(0, Math.min(itemCount - 1, num)) * sum);
+  closure_5 = importAllResult.useRef(Math.max(0, Math.min(itemCount - 1, num)) * sum);
   let tmp4 = ref(sum.useState(() => Math.max(0, Math.min(itemCount - 1, num))), 2);
   const first = tmp4[0];
-  let maybeApplyNoTextColorForLightCustomTheme = tmp4[1];
+  closure_7 = tmp4[1];
   let obj = num(onScrollingChange[8]);
-  let items = [maybeApplyNoTextColorForLightCustomTheme];
+  let items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => lib.useReducedMotion);
-  let closure_9 = importAllResult.useRef(stateFromStores);
+  closure_9 = importAllResult.useRef(stateFromStores);
   let tmp18Result = first > 0;
-  const previous = tmp18Result;
+  closure_10 = tmp18Result;
   tmp18Result = first < itemCount - 1;
-  const next = tmp18Result;
+  closure_11 = tmp18Result;
   const items1 = [itemCount, sum];
   const items2 = [stateFromStores];
   const memo = importAllResult.useMemo(() => {
@@ -171,7 +164,7 @@ const forwardRefResult = importAllResult.forwardRef((initialIndex, ref) => {
         callback(first - 1);
       }
     }
-    const obj1 = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, children: null };
+    obj1 = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, children: null };
     let intl = tmp6(tmp7[9]).intl;
     obj1[0] = intl.string(tmp6(tmp7[9]).t.vgfxaA);
     obj1[2] = handleNavigatePrevious;
@@ -206,6 +199,6 @@ const forwardRefResult = importAllResult.forwardRef((initialIndex, ref) => {
   obj[1] = items7;
   return closure_9(first, obj);
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/MarketingCardsScroller.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/MarketingCardsScroller.tsx");
 
 export const MarketingCardsScroller = forwardRefResult;

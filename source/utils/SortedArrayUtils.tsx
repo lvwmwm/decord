@@ -1,11 +1,13 @@
-// Module ID: 4998
-// Function ID: 4999
+// Module ID: 5003
+// Function ID: 5004
 // Name: insertionIndex
 // Dependencies: [2]
 // Exports: insert, insertionIndex
 
-// Module 4998 (insertionIndex)
-const result = require("set").fileFinishedImporting("utils/SortedArrayUtils.tsx");
+// Module 5003 (insertionIndex)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("utils/SortedArrayUtils.tsx");
 
 export const insertionIndex = function insertionIndex(arg0, arg1, arg2) {
   let sum;

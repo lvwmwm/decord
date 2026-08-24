@@ -5,7 +5,7 @@
 // Exports: registerWebWorker
 
 // Module 1109 (INTEGRATION_NAME)
-import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const WebWorker = "WebWorker";
@@ -14,13 +14,11 @@ export const INTEGRATION_NAME = "WebWorker";
 export const registerWebWorker = function registerWebWorker(self) {
   const _self = self.self;
   const _sentryDebugIds = _self._sentryDebugIds;
-  let obj = { _sentryMessage: true, _sentryDebugIds, _sentryModuleMetadata: null };
-  const _sentryModuleMetadata = _self._sentryModuleMetadata;
-  obj[2] = _sentryModuleMetadata;
+  let obj = { _sentryMessage: true, _sentryDebugIds, _sentryModuleMetadata };
+  _sentryModuleMetadata = _self._sentryModuleMetadata;
   _self.postMessage(obj);
   const listener = _self.addEventListener("unhandledrejection", (reason) => {
-    const obj = { reason: null, filename: null };
-    obj[0] = _self(outer1_1[3])._getUnhandledRejectionError(reason);
+    const obj = { reason: _self(closure_1_1[3])._getUnhandledRejectionError(reason), filename: null };
     const _location = _self.location;
     let href;
     if (_location != null) {
@@ -28,7 +26,7 @@ export const registerWebWorker = function registerWebWorker(self) {
     }
     obj[1] = href;
     _self.postMessage({ _sentryMessage: true, _sentryWorkerError: obj });
-    if (_self(outer1_1[1]).DEBUG_BUILD) {
+    if (_self(closure_1_1[1]).DEBUG_BUILD) {
       const debug = tmp(tmp2[0]).debug;
       debug.log("[Sentry Worker] Forwarding unhandled rejection to parent", obj);
     }
@@ -125,7 +123,7 @@ export const webWorkerIntegration = registerSpanErrorInstrumentation.defineInteg
                 }
                 result1.level = "error";
                 if (_sentryWorkerError.filename) {
-                  const obj1 = {};
+                  obj1 = {};
                   const merged4 = Object.assign(result1.contexts);
                   const obj2 = { filename: null };
                   obj2[0] = _sentryWorkerError.filename;
@@ -226,7 +224,7 @@ export const webWorkerIntegration = registerSpanErrorInstrumentation.defineInteg
               }
               result1.level = "error";
               if (_sentryWorkerError.filename) {
-                const obj1 = {};
+                obj1 = {};
                 const merged4 = Object.assign(result1.contexts);
                 const obj2 = { filename: null };
                 obj2[0] = _sentryWorkerError.filename;

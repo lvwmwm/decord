@@ -1,20 +1,24 @@
-// Module ID: 8438
-// Function ID: 8439
+// Module ID: 8477
+// Function ID: 8478
 // Name: createVoiceChannelBadge
-// Dependencies: [17, 1391, 4021, 4542, 676, 8439, 6832, 5252, 2]
+// Dependencies: [17, 1391, 4024, 4547, 676, 8478, 6870, 5257, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 8438 (createVoiceChannelBadge)
-import { Image } from "get ActivityIndicator";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import updateVoiceState from "updateVoiceState";
-import { Permissions } from "ME";
+// Module 8477 (createVoiceChannelBadge)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import experiment from "experiment" /* 8478 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_5 from "updateVoiceState" /* 4547 */;
 
-let result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/messages/native/renderer/row_data/VoiceChannelBadge.tsx");
+const Image = get_ActivityIndicator.Image;
+const Permissions = ME.Permissions;
+let result = set.fileFinishedImporting("modules/messages/native/renderer/row_data/VoiceChannelBadge.tsx");
 
 export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guildId) {
-  let obj = require(8439) /* experiment */;
+  let obj = experiment;
   if (obj.getVoiceChannelBadgeExperiment({ guildId, location: "VoiceChannelBadgeNative" }).enabled) {
     if (null != guildId) {
       discoverableVoiceState = discoverableVoiceState.getDiscoverableVoiceState(guildId, id);
@@ -25,25 +29,25 @@ export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guil
         }
         channel = channel.getChannel(channelId);
         if (null != channel) {
-          let tmpResult = tmp(6832);
+          let tmpResult = tmp(6870);
           const assetSource = Image.resolveAssetSource(tmpResult.getChannelIcon(channel));
           let uri;
           if (assetSource != null) {
             uri = assetSource.uri;
           }
           if (null != uri) {
-            tmpResult = tmp(5252);
+            tmpResult = tmp(5257);
             let result = tmpResult.shouldAgeVerifyForAgeGate();
             if (result) {
-              result = tmp(5252).shouldShowAgeGateForChannelId(channel.id);
-              const tmpResult1 = tmp(5252);
+              result = tmp(5257).shouldShowAgeGateForChannelId(channel.id);
+              const tmpResult1 = tmp(5257);
             }
             let isPrivateResult = channel.isPrivate();
             if (!isPrivateResult) {
-              isPrivateResult = getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel) && getUncachedChannelPermissions.can(Permissions.CONNECT, channel);
-              const obj4 = getUncachedChannelPermissions;
+              isPrivateResult = closure_4.can(Permissions.VIEW_CHANNEL, channel) && closure_4.can(Permissions.CONNECT, channel);
+              const obj4 = closure_4;
               const tmp8 = Permissions;
-              const tmp9 = getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel) && getUncachedChannelPermissions.can(Permissions.CONNECT, channel);
+              const tmp9 = closure_4.can(Permissions.VIEW_CHANNEL, channel) && closure_4.can(Permissions.CONNECT, channel);
             }
             if (!result) {
               if (isPrivateResult) {

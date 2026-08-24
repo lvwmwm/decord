@@ -1,26 +1,29 @@
-// Module ID: 10049
-// Function ID: 10050
+// Module ID: 10088
+// Function ID: 10089
 // Name: useTruncatedGradientColors
-// Dependencies: [19, 4661, 4097, 712, 689, 2]
+// Dependencies: [19, 4668, 4100, 712, 689, 2]
 // Exports: default
 
-// Module 10049 (useTruncatedGradientColors)
-import { useMemo } from "noop";
-import createCacheKey from "createCacheKey";
+// Module 10088 (useTruncatedGradientColors)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+const useMemo = noop.useMemo;
 let closure_4 = createCacheKey.createStyles({ gradient: { height: 40 } });
-const result = require("map").fileFinishedImporting("modules/in_app_notifications/native/hooks/useTruncatedGradientColors.tsx");
+const result = set.fileFinishedImporting("modules/in_app_notifications/native/hooks/useTruncatedGradientColors.tsx");
 
 export default function useTruncatedGradientColors() {
-  let obj = token(4097);
-  token = obj.useToken(importDefault(712).colors.MOBILE_ALERT_BACKGROUND_DEFAULT);
+  let obj = token(4100);
+  token = obj.useToken(ThemesDefault.colors.MOBILE_ALERT_BACKGROUND_DEFAULT);
   obj = {
     gradientColors: useMemo(() => {
-      const obj = outer1_1(outer1_2[4])(token);
-      const items = [outer1_1(outer1_2[4])(token).alpha(0).hex(), ];
-      const alphaResult = outer1_1(outer1_2[4])(token).alpha(0);
-      const obj3 = outer1_1(outer1_2[4])(token);
-      items[1] = outer1_1(outer1_2[4])(token).alpha(0.72).hex();
+      const obj = closure_1_1(closure_1_2[4])(token);
+      const items = [closure_1_1(closure_1_2[4])(token).alpha(0).hex(), ];
+      const alphaResult = closure_1_1(closure_1_2[4])(token).alpha(0);
+      const obj3 = closure_1_1(closure_1_2[4])(token);
+      items[1] = closure_1_1(closure_1_2[4])(token).alpha(0.72).hex();
       return items;
     }, items),
     gradientStyles: callback().gradient

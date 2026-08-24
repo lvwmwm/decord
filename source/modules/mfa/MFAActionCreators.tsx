@@ -1,17 +1,19 @@
-// Module ID: 15118
-// Function ID: 15119
+// Module ID: 15182
+// Function ID: 15183
 // Name: openMFAModal
-// Dependencies: [15119, 15120, 15129, 2]
+// Dependencies: [15183, 15184, 15193, 2]
 // Exports: openMFAModal
 
-// Module 15118 (openMFAModal)
-import { SELECT_NAMES } from "get webauthn";
+// Module 15182 (openMFAModal)
+import set from "set" /* 2 */;
+import get_webauthn from "get webauthn" /* 15183 */;
 
-const result = require("finishMFACheck").fileFinishedImporting("modules/mfa/MFAActionCreators.tsx");
+const SELECT_NAMES = get_webauthn.SELECT_NAMES;
+const result = set.fileFinishedImporting("modules/mfa/MFAActionCreators.tsx");
 
 export const openMFAModal = function openMFAModal(methods) {
   const _require = arg1;
   methods = methods.methods;
   methods.methods = methods.filter((type) => Object.hasOwn(closure_2, type.type));
-  _require(15120).openMFAModal(methods, (arg0) => callback(outer1_1[2]).trySubmit(arg0, callback), arg2);
+  _require(15184).openMFAModal(methods, (arg0) => callback(closure_1_1[2]).trySubmit(arg0, callback), arg2);
 };

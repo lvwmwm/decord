@@ -1,28 +1,34 @@
-// Module ID: 14509
-// Function ID: 14510
+// Module ID: 14577
+// Function ID: 14578
 // Name: useVideoExternallyPaused
-// Dependencies: [4086, 9959, 4229, 10704, 589, 4657, 500, 2]
+// Dependencies: [4089, 9998, 4233, 10743, 589, 4663, 500, 2]
 // Exports: useVideoExternallyPaused
 
-// Module 14509 (useVideoExternallyPaused)
-import setContent from "setContent";
+// Module 14577 (useVideoExternallyPaused)
+import set from "set" /* 500 */;
+import initialize from "initialize" /* 589 */;
+import coerceMainRoute from "coerceMainRoute" /* 4233 */;
+import useAlertStore from "useAlertStore" /* 4663 */;
+import updateContextMenuState from "updateContextMenuState" /* 9998 */;
+import getVideoQuestWatchCtaText from "getVideoQuestWatchCtaText" /* 10743 */;
+import closure_2 from "setContent" /* 4089 */;
 
-const require = arg1;
-const result = require("coerceMainRoute").fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoExternallyPaused.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoExternallyPaused.tsx");
 
 export const useVideoExternallyPaused = function useVideoExternallyPaused(id, arg1) {
-  const activeContextMenu = require(9959) /* updateContextMenuState */.useActiveContextMenu();
-  const obj = require(9959) /* updateContextMenuState */;
-  const openModalKey = require(4229) /* coerceMainRoute */.useOpenModalKey();
-  const obj2 = require(4229) /* coerceMainRoute */;
-  const videoQuestModalKey = require(10704) /* getVideoQuestWatchCtaText */.getVideoQuestModalKey(id);
-  const obj3 = require(10704) /* getVideoQuestWatchCtaText */;
-  const items = [setContent];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => key.getKey());
-  const obj4 = require(589) /* initialize */;
-  const obj5 = require(4657) /* useAlertStore */;
-  const tmp5 = require(4657) /* useAlertStore */.useAlertStore((alerts) => alerts.alerts).length > 0;
-  let tmp6 = require(500) /* set */.isIOS() && arg1;
+  const activeContextMenu = updateContextMenuState.useActiveContextMenu();
+  const obj = updateContextMenuState;
+  const openModalKey = coerceMainRoute.useOpenModalKey();
+  const obj2 = coerceMainRoute;
+  const videoQuestModalKey = getVideoQuestWatchCtaText.getVideoQuestModalKey(id);
+  const obj3 = getVideoQuestWatchCtaText;
+  const items = [closure_2];
+  const stateFromStores = initialize.useStateFromStores(items, () => key.getKey());
+  const obj4 = initialize;
+  const obj5 = useAlertStore;
+  const tmp5 = useAlertStore.useAlertStore((alerts) => alerts.alerts).length > 0;
+  let tmp6 = set.isIOS() && arg1;
   if (!tmp6) {
     tmp6 = null != stateFromStores;
   }

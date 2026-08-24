@@ -4,13 +4,15 @@
 // Dependencies: [31, 38]
 
 // Module 30 (get)
-const require = arg1;
+import genModule from "genModule" /* 31 */;
+
+require = arg1;
 const module = arg2;
 const dependencyMap = arg6;
 __turboModuleProxy = __turboModuleProxy.__turboModuleProxy;
 arg5.get = function get(arg0) {
   if (null == __turboModuleProxy) {
-    const tmp5 = require(31) /* genModule */.default[arg0];
+    const tmp5 = genModule.default[arg0];
     let tmp6 = null;
     if (null != tmp5) {
       tmp6 = tmp5;
@@ -23,7 +25,7 @@ arg5.get = function get(arg0) {
 };
 arg5.getEnforcing = function getEnforcing(RNGestureHandlerModule) {
   if (null == __turboModuleProxy) {
-    const tmp5 = require(31) /* genModule */.default[RNGestureHandlerModule];
+    const tmp5 = genModule.default[RNGestureHandlerModule];
     let tmp6 = null;
     if (null != tmp5) {
       tmp6 = tmp5;

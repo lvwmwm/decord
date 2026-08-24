@@ -4,8 +4,9 @@
 // Dependencies: [19]
 
 // Module 409 (context)
-import "noop";
+import noopAll from "noop" /* 19 */;
 
+noopAll;
 const context = require("noop").createContext(null);
 const frozen = Object.freeze({ horizontal: true });
 

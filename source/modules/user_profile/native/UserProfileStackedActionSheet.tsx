@@ -1,38 +1,38 @@
-// Module ID: 9450
-// Function ID: 9451
+// Module ID: 9487
+// Function ID: 9488
 // Name: UserProfileStackedActionSheet
-// Dependencies: [19, 17, 21, 4661, 712, 1629, 6952, 8083, 500, 6950, 5433, 1236, 6316, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1629, 6990, 8122, 500, 6988, 5438, 1236, 6347, 4739, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 9450 (UserProfileStackedActionSheet)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9487 (UserProfileStackedActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import Background from "Background" /* 6988 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { header: null, headerSpacer: null, list: null, contentContainer: null, divider: null };
-createCacheKey = { flexDirection: "row", marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { flexDirection: "row", marginHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { width: require("Themes").space.PX_24, height: require("Themes").space.PX_24 };
+createCacheKey[1] = { width: ThemesDefault.space.PX_24, height: ThemesDefault.space.PX_24 };
 createCacheKey[2] = { flex: 1 };
-let obj1 = { width: require("Themes").space.PX_24, height: require("Themes").space.PX_24 };
-createCacheKey[3] = { marginHorizontal: require("Themes").space.PX_16 };
+let obj1 = { width: ThemesDefault.space.PX_24, height: ThemesDefault.space.PX_24 };
+createCacheKey[3] = { marginHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[4] = { marginLeft: 64 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj2 = { marginHorizontal: require("Themes").space.PX_16 };
-const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileStackedActionSheet.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const obj2 = { marginHorizontal: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileStackedActionSheet.tsx");
 
 export default function UserProfileStackedActionSheet(onBack) {
-  let children;
-  let title;
   onBack = onBack.onBack;
   ({ title, children } = onBack);
   const merged = Object.assign(onBack, Object.create(null));
-  const tmp2 = createCacheKey();
+  const tmp2 = callback2();
   let tmp4Result = null != onBack;
   let obj = {};
   const merged1 = Object.assign(merged);
@@ -48,12 +48,12 @@ export default function UserProfileStackedActionSheet(onBack) {
     const intl = tmp5(1236).intl;
     obj[1] = intl.string(tmp5(1236).t["13/7kX"]);
     obj[2] = onBack;
-    obj[3] = tmp4(tmp5(6316).ArrowLargeLeftIcon, { size: "md" });
-    tmp4Result = tmp4(tmp5(5433).PressableOpacity, obj);
+    obj[3] = tmp4(tmp5(6347).ArrowLargeLeftIcon, { size: "md" });
+    tmp4Result = tmp4(tmp5(5438).PressableOpacity, obj);
   }
-  const items1 = [tmp4Result, closure_4(require(4734) /* Text */.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];
+  const items1 = [tmp4Result, closure_4(Text.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];
   if (tmp4Result) {
-    const obj1 = { style: null };
+    obj1 = { style: null };
     obj1[0] = tmp2.headerSpacer;
     tmp4Result = tmp4(tmp9, obj1);
   }
@@ -61,21 +61,21 @@ export default function UserProfileStackedActionSheet(onBack) {
   obj[1] = items1;
   obj.header = closure_5(View, obj);
   obj.children = children;
-  return closure_4(require(6950) /* Background */.BottomSheet, obj);
+  return closure_4(Background.BottomSheet, obj);
 };
 export const UserProfileStackedActionSheetList = function UserProfileStackedActionSheetList(data) {
   data = data.data;
   const renderItem = data.renderItem;
-  let dependencyMap;
+  dependencyMap = undefined;
   const merged = Object.assign(data, Object.create(null));
-  const tmp2 = createCacheKey();
+  const tmp2 = callback2();
   dependencyMap = tmp2;
   const obj = {};
   const merged1 = Object.assign(merged);
   obj.data = data;
   obj.style = tmp2.list;
   obj.ItemSeparatorComponent = function ItemSeparatorComponent() {
-    return outer1_4(data(_undefined[7]).FormDivider, { style: _undefined.divider });
+    return closure_1_4(data(divider[7]).FormDivider, { style: divider.divider });
   };
   const items = [tmp2.contentContainer, , ];
   let num = 0;
@@ -89,13 +89,13 @@ export const UserProfileStackedActionSheetList = function UserProfileStackedActi
     index = index.index;
     return renderItem({ item: index.item, index, start: 0 === index, end: index === data.length - 1 });
   };
-  return closure_4(data(6952).BottomSheetFlatList, obj);
+  return closure_4(data(6990).BottomSheetFlatList, obj);
 };
 export const UserProfileStackedActionSheetSectionList = function UserProfileStackedActionSheetSectionList(renderItem) {
   renderItem = renderItem.renderItem;
-  let closure_1;
+  closure_1 = undefined;
   const merged = Object.assign(renderItem, Object.create(null));
-  closure_1 = createCacheKey();
+  closure_1 = callback2();
   const obj = {};
   const merged1 = Object.assign(merged);
   obj.contentContainerStyle = renderItem.contentContainerStyle;
@@ -104,7 +104,7 @@ export const UserProfileStackedActionSheetSectionList = function UserProfileStac
     return renderItem({ item: index.item, start: 0 === index, end: index === index.section.data.length - 1 });
   };
   obj.ItemSeparatorComponent = function ItemSeparatorComponent() {
-    return outer1_4(renderItem(outer1_2[7]).FormDivider, { style: divider.divider });
+    return closure_1_4(renderItem(closure_1_2[7]).FormDivider, { style: divider.divider });
   };
-  return callback(renderItem(6952).BottomSheetSectionList, obj);
+  return callback(renderItem(6990).BottomSheetSectionList, obj);
 };

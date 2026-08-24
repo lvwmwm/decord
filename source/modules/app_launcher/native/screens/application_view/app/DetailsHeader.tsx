@@ -1,63 +1,53 @@
-// Module ID: 9815
-// Function ID: 9816
-// Dependencies: [32, 19, 17, 21, 4661, 712, 4115, 8447, 9550, 8944, 6701, 6804, 4734, 1236, 4664, 4667, 6352, 4756, 691, 2]
+// Module ID: 9854
+// Function ID: 9855
+// Dependencies: [32, 19, 17, 21, 4668, 712, 4119, 8486, 9587, 8981, 6738, 6841, 4739, 1236, 4671, 4674, 6383, 4761, 691, 2]
 
-// Module 9815
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "set";
-import get_ActivityIndicator from "LinearGradient";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9854
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 let c4 = importAllResult;
 ({ View: c5, Pressable: closure_6, StyleSheet: error } = get_ActivityIndicator);
-({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);
+({ jsx: closure_8, jsxs: c9, Fragment: c10 } = jsxProd);
 let closure_11 = ["black", "transparent"];
 let obj = { animatedViewContainer: { overflow: "hidden" }, container: { position: "relative", width: "100%" }, measuringContainer: { width: "100%", position: "absolute" }, descriptionContainer: { marginTop: 8 }, viewMoreCTA: { position: "absolute", right: 0, bottom: 0, pointerEvents: "none" }, maskFill: { flex: 1, backgroundColor: "black" }, maskLastLine: { flexDirection: "row" }, maskFade: { width: 32 }, collapseDescriptionCTA: { marginTop: 4 }, nameContainer: null, nameText: null, partnerLabelWrapper: null };
-obj = { display: "flex", flexDirection: "row", gap: require("Themes").space.PX_4, overflow: "hidden" };
+obj = { display: "flex", flexDirection: "row", gap: ThemesDefault.space.PX_4, overflow: "hidden" };
 obj[9] = obj;
 obj[10] = { flexShrink: 1 };
-createCacheKey = { justifyContent: "center", paddingVertical: 2, paddingHorizontal: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: require("Themes").radii.lg };
+createCacheKey = { justifyContent: "center", paddingVertical: 2, paddingHorizontal: ThemesDefault.space.PX_8, backgroundColor: ThemesDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: ThemesDefault.radii.lg };
 obj[11] = createCacheKey;
 let closure_12 = createCacheKey.createStyles(obj);
 let closure_13 = { code: "function DetailsHeaderTsx1(){const{height}=this.__closure;return{height:height.get()};}" };
 let closure_14 = { code: "function DetailsHeaderTsx2(){const{runOnJS,setShouldLineClamp}=this.__closure;runOnJS(setShouldLineClamp)(true);}" };
 const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyle) {
-  let application;
-  let c14;
-  let hideName;
-  let mainContainerStyle;
-  let tmp18;
   ({ application, mainContainerStyle, hideName } = viewContainerStyle);
   let sharedValue;
   let first;
-  let dependencyMap;
+  dependencyMap = undefined;
   let first1;
-  let importAllResult;
-  let closure_5;
+  importAllResult = undefined;
+  closure_5 = undefined;
   sharedValue = undefined;
   let str;
   let num2;
-  let closure_9;
+  closure_9 = undefined;
   let num3;
-  let closure_11;
+  closure_11 = undefined;
   let callback;
-  let closure_13;
+  closure_13 = undefined;
   c14 = undefined;
   let first2;
-  let closure_16;
+  closure_16 = undefined;
   let isScreenLandscape;
-  let c18;
+  closure_18 = undefined;
   let tmp = callback();
-  let obj = sharedValue(8447);
-  let obj1 = importAllResult;
+  let obj = sharedValue(8486);
+  obj1 = importAllResult;
   const ref = importAllResult.useRef(null);
   sharedValue = ref;
   const tmp7 = first1(importAllResult.useState(false), 2);
@@ -68,9 +58,9 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   importAllResult = tmp9[1];
   closure_5 = importAllResult.useRef(true);
   sharedValue = undefined;
-  let obj2 = sharedValue(4115);
+  let obj2 = sharedValue(4119);
   sharedValue = obj2.useSharedValue(null);
-  let obj3 = sharedValue(4115);
+  let obj3 = sharedValue(4119);
   let fn = function t() {
     return { height: sharedValue.get() };
   };
@@ -78,9 +68,9 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   fn.__workletHash = 23826674246;
   fn.__initData = closure_13;
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  let obj4 = sharedValue(8447);
+  let obj4 = sharedValue(8486);
   const sectionName = obj4.getSectionName(application);
-  let obj5 = sharedValue(8447);
+  let obj5 = sharedValue(8486);
   str = obj5.getSectionDescription(application);
   let tmp28Result1 = null != str;
   if (tmp28Result1) {
@@ -103,25 +93,25 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   const memo = obj1.useMemo(() => {
     let result = null;
     if (null != str) {
-      result = sharedValue(9550).parseBioReactWithCachedAST(tmp);
-      const obj = sharedValue(9550);
+      result = sharedValue(9587).parseBioReactWithCachedAST(tmp);
+      const obj = sharedValue(9587);
     }
     return result;
   }, items);
   const tmp6Result1 = first1(obj1.useState(false), 2);
-  isScreenLandscape = sharedValue(8944).useIsScreenLandscape();
-  const tmp24 = first(6701)(isScreenLandscape);
-  c18 = tmp24;
+  isScreenLandscape = sharedValue(8981).useIsScreenLandscape();
+  const tmp24 = first(6738)(isScreenLandscape);
+  closure_18 = tmp24;
   const items1 = [isScreenLandscape, tmp24];
   const effect = obj1.useEffect(() => {
-    if (isScreenLandscape !== c18) {
+    if (isScreenLandscape !== closure_18) {
       callback4(false);
       closure_13.current = 0;
       closure_12.current = 0;
     }
   }, items1);
   let tmp27 = first;
-  const tmp2Result = sharedValue(8944);
+  const tmp2Result = sharedValue(8981);
   if (first) {
     tmp27 = !first1;
   }
@@ -149,7 +139,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     obj2 = { style: null, variant: "heading-lg/bold", color: "text-default", lineClamp: 1, children: null };
     obj2[0] = tmp.nameText;
     obj2[4] = sectionName;
-    tmp30Result = tmp30(tmp2(4734).Heading, obj2);
+    tmp30Result = tmp30(tmp2(4739).Heading, obj2);
   }
   const items4 = [tmp30Result, ];
   tmp30Result = null;
@@ -159,7 +149,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     obj4 = { variant: "text-xs/medium", color: "text-default", children: null };
     const intl = tmp2(1236).intl;
     obj4[2] = intl.string(tmp2(1236).t.LO4f0P);
-    obj3[1] = tmp30(tmp2(4734).Text, obj4);
+    obj3[1] = tmp30(tmp2(4739).Text, obj4);
     tmp30Result = tmp30(tmp31, obj3);
   }
   items4[1] = tmp30Result;
@@ -177,22 +167,22 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       if (first) {
         closure_5.current = false;
         if (first1) {
-          const obj2 = sharedValue(4664);
+          const obj2 = sharedValue(4671);
           const current = ref.current;
           const fn = function t() {
-            outer1_0(outer1_2[6]).runOnJS(closure_14)(true);
+            closure_1_0(closure_1_2[6]).runOnJS(closure_14)(true);
           };
           let obj = { runOnJS: null, setShouldLineClamp: null };
-          obj[0] = sharedValue(4115).runOnJS;
+          obj[0] = sharedValue(4119).runOnJS;
           obj[1] = _undefined;
           fn.__closure = obj;
           fn.__workletHash = 6050776164847;
           fn.__initData = _undefined;
-          const result = sharedValue.set(obj2.withTiming(current, sharedValue(4667).timingStandard, "respect-motion-settings", fn));
+          const result = sharedValue.set(obj2.withTiming(current, sharedValue(4674).timingStandard, "respect-motion-settings", fn));
         } else {
           _undefined(false);
-          obj = sharedValue(4664);
-          const result1 = sharedValue.set(obj.withTiming(ref2.current, sharedValue(4667).timingStandard));
+          obj = sharedValue(4671);
+          const result1 = sharedValue.set(obj.withTiming(ref2.current, sharedValue(4674).timingStandard));
         }
         callback(!first1);
         const tmp2 = first1;
@@ -200,7 +190,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     };
     const obj6 = { style: null };
     const absoluteFill = str.absoluteFill;
-    let tmp23Result = tmp23(6352);
+    let tmp23Result = tmp23(6383);
     if (tmp27) {
       const obj7 = { style: null, children: null };
       obj7[0] = absoluteFill;
@@ -219,7 +209,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       obj10[0] = tmp.maskFill;
       const items8 = [tmp30(tmp31, obj10), , ];
       const obj11 = { start: null, end: null, colors: null, style: null };
-      tmp23Result = tmp23(4756);
+      tmp23Result = tmp23(4761);
       obj11[0] = tmp2(691).HorizontalGradient.START;
       obj11[1] = tmp2(691).HorizontalGradient.END;
       obj11[2] = closure_11;
@@ -247,7 +237,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     const obj15 = { variant: "text-sm/medium", color: "text-default", lineClamp: null, children: null };
     obj15[2] = num4;
     obj15[3] = memo;
-    obj14[1] = tmp30(tmp2(4734).Text, obj15);
+    obj14[1] = tmp30(tmp2(4739).Text, obj15);
     const items10 = [tmp30(tmp23Result, obj14), , ];
     let tmp30Result2 = null;
     if (tmp27) {
@@ -262,7 +252,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       const intl2 = tmp2(1236).intl;
       const items11 = ["\u2026 ", intl2.string(tmp2(1236).t["OBCR+p"])];
       obj17[3] = items11;
-      obj16[1] = tmp28(tmp2(4734).Text, obj17);
+      obj16[1] = tmp28(tmp2(4739).Text, obj17);
       tmp30Result2 = tmp30(tmp31, obj16);
     }
     items10[1] = tmp30Result2;
@@ -274,7 +264,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
         obj18[2] = tmp.collapseDescriptionCTA;
         const intl3 = tmp2(1236).intl;
         obj18[3] = intl3.string(tmp2(1236).t.D5xGUK);
-        tmp30Result3 = tmp30(tmp2(4734).Text, obj18);
+        tmp30Result3 = tmp30(tmp2(4739).Text, obj18);
       }
     }
     items10[2] = tmp30Result3;
@@ -285,7 +275,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   items5[1] = tmp28Result;
   obj[2] = items5;
   obj[1] = closure_9(closure_5, obj);
-  const children = [num2(first(4115).View, obj), ];
+  const children = [num2(first(4119).View, obj), ];
   let tmp28Result2 = !first2;
   if (!first2) {
     const obj19 = { style: null, onLayout: null, children: null };
@@ -305,7 +295,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     if (!hideName) {
       const obj20 = { variant: "heading-lg/bold", color: "text-default", children: null };
       obj20[2] = sectionName;
-      tmp30Result4 = tmp30(tmp2(4734).Heading, obj20);
+      tmp30Result4 = tmp30(tmp2(4739).Heading, obj20);
     }
     const items14 = [tmp30Result4, ];
     if (tmp28Result1) {
@@ -330,12 +320,12 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
         }
       };
       obj22[3] = memo;
-      const items15 = [tmp30(tmp2(4734).Text, obj22), ];
+      const items15 = [tmp30(tmp2(4739).Text, obj22), ];
       const obj23 = { variant: "text-sm/medium", color: "text-brand", style: null, children: null };
       obj23[2] = tmp.collapseDescriptionCTA;
       const intl4 = tmp2(1236).intl;
       obj23[3] = intl4.string(tmp2(1236).t.D5xGUK);
-      items15[1] = tmp30(tmp2(4734).Text, obj23);
+      items15[1] = tmp30(tmp2(4739).Text, obj23);
       obj21[1] = items15;
       tmp28Result1 = tmp28(tmp31, obj21);
     }
@@ -346,6 +336,6 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   children[1] = tmp28Result2;
   return closure_9(num3, { children });
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/DetailsHeader.tsx");
+let result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/DetailsHeader.tsx");
 
 export default memoResult;

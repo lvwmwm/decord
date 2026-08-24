@@ -1,29 +1,32 @@
-// Module ID: 16826
-// Function ID: 16827
+// Module ID: 16919
+// Function ID: 16920
 // Name: MAX_SUBCATEGORIES
 // Dependencies: [1236, 2]
 // Exports: getSettingsErrorMessage
 
-// Module 16826 (MAX_SUBCATEGORIES)
+// Module 16919 (MAX_SUBCATEGORIES)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
 const obj = {
   afk_channel_id() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.KuYcnU);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.KuYcnU);
   },
   public_updates_channel_id() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.vAyDGU);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.vAyDGU);
   },
   safety_alerts_channel_id() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.sMkYE8);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.sMkYE8);
   },
   system_channel_id() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.NASFnq);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.NASFnq);
   }
 };
-const result = require("set").fileFinishedImporting("modules/guild_settings/GuildSettingsConstants.tsx");
+const result = set.fileFinishedImporting("modules/guild_settings/GuildSettingsConstants.tsx");
 
 export const MAX_SUBCATEGORIES = 5;
 export const MAX_KEYWORDS = 10;

@@ -4,21 +4,23 @@
 // Dependencies: [19, 26, 106, 65, 114]
 
 // Module 310 (__INTERNAL_VIEW_CONFIG)
-import "noop";
-import weakSet from "weakSet";
-import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+import noopAll from "noop" /* 19 */;
+import renderElement from "renderElement" /* 114 */;
+import weakSet from "weakSet" /* 106 */;
+import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let obj = { uiViewClassName: "AndroidDrawerLayout", directEventTypes: { topDrawerSlide: { registrationName: "onDrawerSlide" }, topDrawerStateChanged: { registrationName: "onDrawerStateChanged" }, topDrawerOpen: { registrationName: "onDrawerOpen" }, topDrawerClose: { registrationName: "onDrawerClose" } }, validAttributes: null };
 obj = { keyboardDismissMode: true, drawerBackgroundColor: require("result").colorAttribute, drawerPosition: true, drawerWidth: true, drawerLockMode: true, statusBarBackgroundColor: require("result").colorAttribute };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onDrawerSlide: true, onDrawerStateChanged: true, onDrawerOpen: true, onDrawerClose: true }));
 obj[2] = obj;
 obj = {
   openDrawer(arg0) {
-    require(114) /* renderElement */.dispatchCommand(arg0, "openDrawer", []);
+    renderElement.dispatchCommand(arg0, "openDrawer", []);
   },
   closeDrawer(arg0) {
-    require(114) /* renderElement */.dispatchCommand(arg0, "closeDrawer", []);
+    renderElement.dispatchCommand(arg0, "closeDrawer", []);
   }
 };
 

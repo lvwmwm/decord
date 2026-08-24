@@ -1,19 +1,22 @@
-// Module ID: 13243
-// Function ID: 13244
+// Module ID: 13298
+// Function ID: 13299
 // Name: handleConnectionOpen
-// Dependencies: [4288, 1212, 13244, 589, 709, 2]
+// Dependencies: [4292, 1212, 13299, 589, 709, 2]
 
-// Module 13243 (handleConnectionOpen)
-import getHash from "getHash";
-import initialize from "initialize";
-import { Store } from "initialize";
-import importDefaultResult from "dispatcher";
+// Module 13298 (handleConnectionOpen)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcher from "dispatcher" /* 709 */;
+import commonTriggerPointConfiguration from "commonTriggerPointConfiguration" /* 13299 */;
+import closure_3 from "getHash" /* 4292 */;
+import closure_4 from "initialize" /* 1212 */;
+import importDefaultResult from "dispatcher" /* 709 */;
 
-const require = arg1;
+require = arg1;
 function handleConnectionOpen() {
-  const MobileConnectionOpenTriggerPoint = require(13244) /* commonTriggerPointConfiguration */.MobileConnectionOpenTriggerPoint;
+  const MobileConnectionOpenTriggerPoint = commonTriggerPointConfiguration.MobileConnectionOpenTriggerPoint;
   MobileConnectionOpenTriggerPoint.trigger();
 }
+const Store = initializeDefault.Store;
 class MobileExperimentTriggerPointStore extends Store {
   constructor() {
     tmp2 = require("dispatcher");
@@ -25,12 +28,12 @@ class MobileExperimentTriggerPointStore extends Store {
 }
 const prototype = MobileExperimentTriggerPointStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(getHash, initialize);
+  this.waitFor(closure_3, closure_4);
 };
 MobileExperimentTriggerPointStore.displayName = "MobileExperimentTriggerPointStore";
 const obj = { CONNECTION_OPEN: handleConnectionOpen };
 // ThrowIfThisInitialized (0x7c)
 const tmp3 = new "initialize"(importDefaultResult, obj, require("dispatcher").DispatchBand.Early, prototype, MobileExperimentTriggerPointStore, "initialize", importDefaultResult, obj);
-const result = require("commonTriggerPointConfiguration").fileFinishedImporting("modules/experiments/native/MobileExperimentTriggerPointStore.tsx");
+const result = require("set").fileFinishedImporting("modules/experiments/native/MobileExperimentTriggerPointStore.tsx");
 
 export default tmp3;

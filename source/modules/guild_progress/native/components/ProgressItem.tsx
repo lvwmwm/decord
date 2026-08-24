@@ -1,40 +1,36 @@
-// Module ID: 11647
-// Function ID: 11648
+// Module ID: 11696
+// Function ID: 11697
 // Name: ProgressItem
-// Dependencies: [19, 17, 676, 21, 4661, 712, 5042, 8083, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 5047, 8122, 2]
 // Exports: default
 
-// Module 11647 (ProgressItem)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { AnalyticEvents } from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11696 (ProgressItem)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 createCacheKey = { formCTAContainer: { marginBottom: 8 }, formCTA: null, formCTAFullWidth: null };
-createCacheKey = { backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT };
+createCacheKey = { backgroundColor: ThemesDefault.colors.CARD_BACKGROUND_DEFAULT };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { width: "100%" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("ME").fileFinishedImporting("modules/guild_progress/native/components/ProgressItem.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_progress/native/components/ProgressItem.tsx");
 
 export default function ProgressItem(onPress) {
-  let description;
-  let fullWidth;
-  let iconStyle;
-  let source;
-  let title;
   onPress = onPress.onPress;
   const isCompleted = onPress.isCompleted;
   const analyticsSetupType = onPress.analyticsSetupType;
   const analyticsAction = onPress.analyticsAction;
   const renderEndComponent = onPress.renderEndComponent;
   ({ title, source, description, fullWidth, iconStyle } = onPress);
-  const tmp = createCacheKey();
+  const tmp = callback();
   const items = [analyticsAction, analyticsSetupType, onPress, isCompleted];
   let obj = { style: tmp.formCTAContainer, children: null };
-  const callback = analyticsAction.useCallback(() => {
+  callback = analyticsAction.useCallback(() => {
     let tmp2 = null != analyticsAction;
     if (tmp2) {
       tmp2 = null != analyticsSetupType;
@@ -45,7 +41,7 @@ export default function ProgressItem(onPress) {
       obj[0] = analyticsSetupType;
       obj[1] = analyticsAction;
       obj[2] = isCompleted;
-      obj.trackWithMetadata(outer1_5.SERVER_SETUP_CTA_CLICKED, obj);
+      obj.trackWithMetadata(closure_1_5.SERVER_SETUP_CTA_CLICKED, obj);
     }
     onPress();
   }, items);

@@ -1,45 +1,45 @@
-// Module ID: 13837
-// Function ID: 13838
-// Dependencies: [4478, 4277, 676, 8755, 8757, 13838, 7873, 8752, 8716, 698, 530, 7871, 2]
+// Module ID: 13900
+// Function ID: 13901
+// Dependencies: [4482, 4281, 676, 8792, 8794, 13901, 7912, 8789, 8753, 698, 530, 7910, 2]
 
-// Module 13837
-import addApplication from "addApplication";
-import ME from "ME";
+// Module 13900
+import sendRequest from "sendRequest" /* 530 */;
+import isTestModeForApplication from "isTestModeForApplication" /* 7910 */;
+import prototypeDefault from "prototype" /* 8789 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8792 */;
+import recurseReplaceContentTree from "recurseReplaceContentTree" /* 8794 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 13901 */;
+import closure_3 from "addApplication" /* 4482 */;
+import ME from "ME" /* 676 */;
 
-let RPCCommands;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ ApplicationFlags: c4, Endpoints: c5, RPCCommands, RPCErrors: closure_6 } = ME);
 let obj = {
   validation(string) {
-    let obj = importDefault(8755)(string);
+    let obj = createRpcJoiSchemaObjectDefault(string);
     obj = { event_name: null, event_properties: null };
     const requiredResult = obj.required();
     obj[0] = string.string().required();
     const stringResult = string.string();
-    obj[1] = importDefault(8755)(string).required();
+    obj[1] = createRpcJoiSchemaObjectDefault(string).required();
     return requiredResult.keys(obj);
   },
   handler(arg0) {
-    let args;
-    let socket;
     ({ socket, args } = arg0);
     const event_properties = args.event_properties;
-    let obj = require(8757) /* recurseReplaceContentTree */;
+    let obj = recurseReplaceContentTree;
     const result = obj.validatePostMessageTransport(socket.transport);
-    let obj1 = require(8757) /* recurseReplaceContentTree */;
+    obj1 = recurseReplaceContentTree;
     obj1.validateApplication(socket.application);
     const id = socket.application.id;
-    const obj3 = importDefault(13838)();
+    const obj3 = getCurrentEmbeddedActivityChannelDefault();
     if (obj3 != null) {
       const guildId = obj3.getGuildId();
     }
     application = application.getApplication(id);
-    let tmpResult = tmp(7873);
+    let tmpResult = tmp(7912);
     if (tmpResult.hasApplicationFlag(application, constants.EMBEDDED_FIRST_PARTY)) {
-      tmpResult = tmp(8716);
+      tmpResult = tmp(8753);
       const activeAnalyticsSessionIDs = tmpResult.getActiveAnalyticsSessionIDs(id);
       obj = { activity_application_id: null, activity_channel_type: null, activity_guild_id: null, activity_user_session_id: null };
       obj[0] = id;
@@ -61,7 +61,7 @@ let obj = {
     } else {
       obj1 = { errorCode: null };
       obj1[0] = constants2.INVALID_COMMAND;
-      const tmp12 = new tmp5(8752)(obj1, "This application cannot access this API");
+      const tmp12 = new tmp5(8789)(obj1, "This application cannot access this API");
       throw tmp12;
     }
   }
@@ -73,20 +73,20 @@ obj = {
     if (null == id) {
       let obj = { errorCode: null };
       obj[0] = constants2.INVALID_COMMAND;
-      const tmp7 = new importDefault(8752)(obj, "No application.");
-      throw tmp7;
+      const tmp10 = new prototypeDefault(obj, "No application.");
+      throw tmp10;
     } else {
-      const HTTP = require(530) /* sendRequest */.HTTP;
+      const HTTP = sendRequest.HTTP;
       obj = { url: null, body: null, retries: 3, oldFormErrors: true, rejectWithError: false };
       obj[0] = closure_5.APPLICATION_TICKET(id);
       obj = { test_mode: null };
-      obj[0] = require(7871) /* isTestModeForApplication */.isTestModeForApplication(id);
+      obj[0] = isTestModeForApplication.isTestModeForApplication(id);
       obj[1] = obj;
-      const obj4 = require(7871) /* isTestModeForApplication */;
+      const obj3 = isTestModeForApplication;
       return HTTP.post(obj).then((body) => body.body);
     }
   }
 };
-let result = require("ME").fileFinishedImporting("modules/rpc/server/commands/application.tsx");
+let result = require("set").fileFinishedImporting("modules/rpc/server/commands/application.tsx");
 
 export default { [RPCCommands.SEND_ANALYTICS_EVENT]: obj, [RPCCommands.GET_APPLICATION_TICKET]: obj };

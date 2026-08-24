@@ -4,16 +4,20 @@
 // Dependencies: [820, 829, 834, 838, 839, 840, 822, 825, 841, 844, 848, 824]
 
 // Module 819 (spanToJSON)
-const require = arg1;
+import unwrapScopeFromWeakRef from "unwrapScopeFromWeakRef" /* 820 */;
+import addNonEnumerableProperty from "addNonEnumerableProperty" /* 822 */;
+import consoleSandbox from "consoleSandbox" /* 824 */;
+import getGlobalSingleton from "getGlobalSingleton" /* 825 */;
+import generateSpanId from "generateSpanId" /* 829 */;
+import regExp from "regExp" /* 834 */;
+import dateTimestampInSeconds from "dateTimestampInSeconds" /* 838 */;
+import _mod839 from "module_839" /* 839 */;
+import getSpanStatusFromHttpCode from "getSpanStatusFromHttpCode" /* 840 */;
+import getAsyncContextStrategy from "getAsyncContextStrategy" /* 841 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function spanToJSON(getSpanJSON) {
-  let attributes;
-  let endTime;
-  let links;
-  let spanId;
-  let startTime;
-  let status;
-  let traceId;
   if (typeof getSpanJSON.getSpanJSON === "function") {
     return getSpanJSON.getSpanJSON();
   } else {
@@ -56,8 +60,8 @@ function spanToJSON(getSpanJSON) {
             }
             sum = result1;
           } else {
-            sum = require(838) /* dateTimestampInSeconds */.timestampInSeconds();
-            const obj3 = require(838) /* dateTimestampInSeconds */;
+            sum = dateTimestampInSeconds.timestampInSeconds();
+            const obj3 = dateTimestampInSeconds;
           }
         }
       }
@@ -82,15 +86,15 @@ function spanToJSON(getSpanJSON) {
             }
             sum1 = result3;
           } else {
-            sum1 = require(838) /* dateTimestampInSeconds */.timestampInSeconds();
-            const obj4 = require(838) /* dateTimestampInSeconds */;
+            sum1 = dateTimestampInSeconds.timestampInSeconds();
+            const obj4 = dateTimestampInSeconds;
           }
         }
       }
       obj[6] = sum1;
       let tmp16;
       if (status) {
-        if (status.code !== require(840) /* getSpanStatusFromHttpCode */.SPAN_STATUS_UNSET) {
+        if (status.code !== getSpanStatusFromHttpCode.SPAN_STATUS_UNSET) {
           let str3 = "ok";
           if (status.code !== tmp17(840).SPAN_STATUS_OK) {
             str3 = status.message || "internal_error";
@@ -101,15 +105,12 @@ function spanToJSON(getSpanJSON) {
         tmp17 = require;
       }
       obj[7] = tmp16;
-      obj[8] = attributes[require(undefined, 839).SEMANTIC_ATTRIBUTE_SENTRY_OP];
-      obj[9] = attributes[require(undefined, 839).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN];
+      obj[8] = attributes[_mod839.SEMANTIC_ATTRIBUTE_SENTRY_OP];
+      obj[9] = attributes[_mod839.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN];
       let mapped;
       if (links) {
         if (links.length > 0) {
           mapped = links.map((attributes) => {
-            let spanId;
-            let traceFlags;
-            let traceId;
             const context = attributes.context;
             ({ spanId, traceId, traceFlags } = context);
             const merged = Object.assign(Object.assign(context, Object.create(null)));
@@ -144,7 +145,7 @@ arg5.addChildSpanToSpan = function addChildSpanToSpan(arg0, arg1) {
   if (!tmp2) {
     tmp2 = arg0;
   }
-  const result = require(822) /* addNonEnumerableProperty */.addNonEnumerableProperty(arg1, _sentryRootSpan, tmp2);
+  const result = addNonEnumerableProperty.addNonEnumerableProperty(arg1, _sentryRootSpan, tmp2);
   if (arg0[_sentryChildSpans]) {
     arg0[tmp6].add(arg1);
     const obj3 = arg0[tmp6];
@@ -152,8 +153,8 @@ arg5.addChildSpanToSpan = function addChildSpanToSpan(arg0, arg1) {
     const _Set = Set;
     const items = [arg1];
     const set = new Set(items);
-    const result1 = require(822) /* addNonEnumerableProperty */.addNonEnumerableProperty(arg0, tmp6, set);
-    const tmp3Result = require(822) /* addNonEnumerableProperty */;
+    const result1 = addNonEnumerableProperty.addNonEnumerableProperty(arg0, tmp6, set);
+    const tmp3Result = addNonEnumerableProperty;
   }
 };
 arg5.convertSpanLinksForEnvelope = function convertSpanLinksForEnvelope(_links) {
@@ -161,9 +162,6 @@ arg5.convertSpanLinksForEnvelope = function convertSpanLinksForEnvelope(_links) 
   if (_links) {
     if (_links.length > 0) {
       mapped = _links.map((attributes) => {
-        let spanId;
-        let traceFlags;
-        let traceId;
         const context = attributes.context;
         ({ spanId, traceId, traceFlags } = context);
         const merged = Object.assign(Object.assign(context, Object.create(null)));
@@ -174,9 +172,9 @@ arg5.convertSpanLinksForEnvelope = function convertSpanLinksForEnvelope(_links) 
   return mapped;
 };
 arg5.getActiveSpan = function getActiveSpan() {
-  const mainCarrier = require(825) /* getGlobalSingleton */.getMainCarrier();
-  const obj = require(825) /* getGlobalSingleton */;
-  const asyncContextStrategy = require(841) /* getAsyncContextStrategy */.getAsyncContextStrategy(mainCarrier);
+  const mainCarrier = getGlobalSingleton.getMainCarrier();
+  const obj = getGlobalSingleton;
+  const asyncContextStrategy = getAsyncContextStrategy.getAsyncContextStrategy(mainCarrier);
   if (asyncContextStrategy.getActiveSpan) {
     let activeSpan = asyncContextStrategy.getActiveSpan();
   } else {
@@ -193,10 +191,10 @@ arg5.getSpanDescendants = function getSpanDescendants(arg0) {
   const set = new Set();
   function addSpanChildren(arg0) {
     if (!set.has(arg0)) {
-      if (outer1_4(arg0)) {
+      if (closure_1_4(arg0)) {
         set.add(arg0);
-        let tmp3 = outer1_5;
-        if (arg0[outer1_5]) {
+        let tmp3 = closure_1_5;
+        if (arg0[closure_1_5]) {
           const _Array = Array;
           let items = Array.from(arg0[tmp3]);
         } else {
@@ -212,7 +210,7 @@ arg5.getSpanDescendants = function getSpanDescendants(arg0) {
 };
 arg5.getStatusMessage = function getStatusMessage(code) {
   if (code) {
-    if (code.code !== require(840) /* getSpanStatusFromHttpCode */.SPAN_STATUS_UNSET) {
+    if (code.code !== getSpanStatusFromHttpCode.SPAN_STATUS_UNSET) {
       let str = "ok";
       if (code.code !== tmp(840).SPAN_STATUS_OK) {
         str = code.message || "internal_error";
@@ -231,11 +229,11 @@ arg5.removeChildSpanFromSpan = function removeChildSpanFromSpan(arg0, arg1) {
 };
 arg5.showSpanDropWarning = function showSpanDropWarning() {
   if (!c2) {
-    require(824) /* consoleSandbox */.consoleSandbox(() => {
+    consoleSandbox.consoleSandbox(() => {
       console.warn("[Sentry] Returning null from `beforeSendSpan` is disallowed. To drop certain spans, configure the respective integrations directly or use `ignoreSpans`.");
     });
     c2 = true;
-    const obj = require(824) /* consoleSandbox */;
+    const obj = consoleSandbox;
   }
 };
 arg5.spanIsSampled = spanIsSampled;
@@ -260,8 +258,8 @@ arg5.spanTimeInputToSeconds = function spanTimeInputToSeconds(num) {
         }
         sum = result1;
       } else {
-        sum = require(838) /* dateTimestampInSeconds */.timestampInSeconds();
-        const obj = require(838) /* dateTimestampInSeconds */;
+        sum = dateTimestampInSeconds.timestampInSeconds();
+        const obj = dateTimestampInSeconds;
       }
     }
   }
@@ -269,15 +267,13 @@ arg5.spanTimeInputToSeconds = function spanTimeInputToSeconds(num) {
 };
 arg5.spanToJSON = spanToJSON;
 arg5.spanToTraceContext = function spanToTraceContext(spanContext) {
-  let isRemote;
-  let spanId;
   const spanContextResult = spanContext.spanContext();
   ({ spanId, isRemote } = spanContextResult);
   let parent_span_id = spanId;
   if (!isRemote) {
     parent_span_id = spanToJSON(spanContext).parent_span_id;
   }
-  let obj = require(820) /* unwrapScopeFromWeakRef */;
+  let obj = unwrapScopeFromWeakRef;
   const scope = obj.getCapturedScopesOnSpan(spanContext).scope;
   obj = { parent_span_id, span_id: null, trace_id: null };
   if (isRemote) {
@@ -286,8 +282,8 @@ arg5.spanToTraceContext = function spanToTraceContext(spanContext) {
       propagationSpanId = scope.getPropagationContext().propagationSpanId;
     }
     if (!propagationSpanId) {
-      propagationSpanId = require(829) /* generateSpanId */.generateSpanId();
-      const tmp3Result = require(829) /* generateSpanId */;
+      propagationSpanId = generateSpanId.generateSpanId();
+      const tmp3Result = generateSpanId;
     }
     spanId = propagationSpanId;
   }
@@ -296,22 +292,16 @@ arg5.spanToTraceContext = function spanToTraceContext(spanContext) {
   return obj;
 };
 arg5.spanToTraceHeader = function spanToTraceHeader(spanContext) {
-  let spanId;
-  let traceId;
   ({ traceId, spanId } = spanContext.spanContext());
   const spanContextResult = spanContext.spanContext();
-  return require(834) /* regExp */.generateSentryTraceHeader(traceId, spanId, 1 === spanContext.spanContext().traceFlags);
+  return regExp.generateSentryTraceHeader(traceId, spanId, 1 === spanContext.spanContext().traceFlags);
 };
 arg5.spanToTraceparentHeader = function spanToTraceparentHeader(span) {
-  let spanId;
-  let traceId;
   ({ traceId, spanId } = span.spanContext());
   const spanContextResult = span.spanContext();
-  return require(834) /* regExp */.generateTraceparentHeader(traceId, spanId, 1 === span.spanContext().traceFlags);
+  return regExp.generateTraceparentHeader(traceId, spanId, 1 === span.spanContext().traceFlags);
 };
 arg5.spanToTransactionTraceContext = function spanToTransactionTraceContext(spanContext) {
-  let spanId;
-  let traceId;
   ({ spanId, traceId } = spanContext.spanContext());
   const tmp2 = spanToJSON(spanContext);
   return { parent_span_id: tmp2.parent_span_id, span_id: spanId, trace_id: traceId, data: tmp2.data, op: tmp2.op, status: tmp2.status, origin: tmp2.origin, links: tmp2.links };

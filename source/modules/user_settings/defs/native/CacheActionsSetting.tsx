@@ -1,19 +1,27 @@
-// Module ID: 14877
-// Function ID: 14878
+// Module ID: 14941
+// Function ID: 14942
 // Name: handleCacheActionPress
-// Dependencies: [5, 4495, 21, 4342, 4094, 4330, 1236, 589, 4066, 7175, 6949, 7177, 13987, 14878, 14879, 10669, 2]
+// Dependencies: [5, 4499, 21, 4346, 4097, 4334, 1236, 589, 4069, 7213, 6987, 7215, 14055, 14942, 14943, 10708, 2]
 
-// Module 14877 (handleCacheActionPress)
-import CircleInformationIcon from "CircleInformationIcon";
-import _handleConnectionOpen from "_handleConnectionOpen";
-import jsxProd from "jsxProd";
-import createToggle from "createToggle";
+// Module 14941 (handleCacheActionPress)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import dispatcherDefault from "dispatcher" /* 4097 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
+import ActionSheet from "ActionSheet" /* 7213 */;
+import ActionSheetRowIcon from "ActionSheetRowIcon" /* 7215 */;
+import FileUpIcon from "FileUpIcon" /* 14055 */;
+import FileWarningIcon from "FileWarningIcon" /* 14943 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_handleConnectionOpen" /* 4499 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function handleCacheActionPress(key) {
-  let obj = importDefault(4094);
+  let obj = dispatcherDefault;
   obj = {
     key,
     icon() {
@@ -22,19 +30,18 @@ function handleCacheActionPress(key) {
     content: key
   };
   obj.open(obj);
-  importDefault(4342).hideActionSheet(CacheActionsActionSheet);
+  ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet(CacheActionsActionSheet);
 }
 function CacheActionsActionSheet() {
   let obj = { header: null, children: null };
   obj = { title: null };
-  let intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.ZVZVwR);
-  obj[0] = callback2(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  let intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.ZVZVwR);
+  obj[0] = callback2(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, obj);
   obj = { hasIcons: true, children: null };
-  let obj1 = { icon: null, label: null, onPress: null };
-  obj1[0] = callback2(require(13987) /* FileUpIcon */.FileUpIcon, {});
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t["/GUaXh"]);
+  obj1 = { icon: callback2(FileUpIcon.FileUpIcon, {}), label: null, onPress: null };
+  const intl2 = getSystemLocale.intl;
+  obj1[1] = intl2.string(getSystemLocale.t["/GUaXh"]);
   obj1[2] = callback(function*() {
     if (dependencyMap === 2) {
       dependencyMap = 3;
@@ -47,7 +54,7 @@ function CacheActionsActionSheet() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -63,7 +70,7 @@ function CacheActionsActionSheet() {
             return obj;
           } else {
             const callback = tmp2;
-            let obj1 = outer1_0(14878);
+            obj1 = closure_1_0(14942);
             c1 = 1;
             dependencyMap = 1;
             obj1 = { value: null, done: false };
@@ -82,7 +89,7 @@ function CacheActionsActionSheet() {
           const intl = callback(1236).intl;
           callback2(intl.string(callback(1236).t.GgUIfl));
           dependencyMap = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         dependencyMap = tmp;
@@ -90,13 +97,12 @@ function CacheActionsActionSheet() {
       }
     }
   });
-  const items = [callback2(require(7177) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
-  let obj2 = { variant: "danger", icon: null, label: null, onPress: null };
-  obj2[1] = callback2(require(14879) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" });
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.tgwiMO);
+  const items = [callback2(ActionSheetRowIcon.ActionSheetRow, obj1), ];
+  let obj2 = { variant: "danger", icon: callback2(FileWarningIcon.FileWarningIcon, { color: "text-feedback-critical" }), label: null, onPress: null };
+  const intl3 = getSystemLocale.intl;
+  obj2[2] = intl3.string(getSystemLocale.t.tgwiMO);
   obj2[3] = function onPress() {
-    let obj = callback(14878);
+    let obj = callback(14942);
     obj.clearCaches();
     const intl = callback(1236).intl;
     const stringResult = intl.string(callback(1236).t["23xR5w"]);
@@ -107,39 +113,39 @@ function CacheActionsActionSheet() {
       },
       content: stringResult
     };
-    callback2(4094).open(obj);
-    const obj2 = callback2(4094);
-    callback2(4342).hideActionSheet(closure_7);
+    callback2(4097).open(obj);
+    const obj2 = callback2(4097);
+    callback2(4346).hideActionSheet(closure_7);
   };
-  items[1] = callback2(require(7177) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
+  items[1] = callback2(ActionSheetRowIcon.ActionSheetRow, obj2);
   obj[1] = items;
-  obj[1] = callback3(require(7177) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback2(require(7175) /* ActionSheet */.ActionSheet, obj);
+  obj[1] = callback3(ActionSheetRowIcon.ActionSheetRow.Group, obj);
+  return callback2(ActionSheet.ActionSheet, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 CacheActionsActionSheet = "CacheActionsActionSheet";
 createToggle = {
   useTitle: function useCacheActionsTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.ZVZVwR);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.ZVZVwR);
   },
   parent: null,
   IconComponent: require("FileWarningIcon").FileWarningIcon,
   onPress: function handleCacheActionsPress() {
-    let obj = importDefault(4342);
+    let obj = ACTION_SHEET_HEIGHT_HALFDefault;
     obj = { default: CacheActionsActionSheet };
     obj.openLazy(Promise.resolve(obj), CacheActionsActionSheet);
   },
   usePredicate: function useCacheActionsPredicate() {
-    const items = [_handleConnectionOpen];
-    const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => connected.isConnected());
-    const DeveloperMode = require(4066) /* explicitContentFromProto */.DeveloperMode;
-    const obj = require(589) /* initialize */;
+    const items = [closure_4];
+    const stateFromStores = initialize.useStateFromStores(items, () => connected.isConnected());
+    const DeveloperMode = explicitContentFromProto.DeveloperMode;
+    const obj = initialize;
     return DeveloperMode.useSetting() && stateFromStores;
   },
   withArrow: true
 };
 createToggle = createToggle.createPressable(createToggle);
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/defs/native/CacheActionsSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/CacheActionsSetting.tsx");
 
 export default createToggle;

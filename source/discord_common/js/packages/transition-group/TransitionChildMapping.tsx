@@ -1,11 +1,11 @@
-// Module ID: 11596
-// Function ID: 11597
+// Module ID: 11645
+// Function ID: 11646
 // Name: getChildMapping
 // Dependencies: [19, 2]
 // Exports: getChildMapping, mergeChildMappings
 
-// Module 11596 (getChildMapping)
-import noop from "noop";
+// Module 11645 (getChildMapping)
+import closure_0 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/transition-group/TransitionChildMapping.tsx");
 
@@ -57,7 +57,7 @@ export const mergeChildMappings = function mergeChildMappings(children, childMap
       continue;
     }
   }
-  const obj1 = {};
+  obj1 = {};
   for (const key10018 in obj) {
     let tmp13 = key10018;
     if (obj.hasOwnProperty(key10018)) {

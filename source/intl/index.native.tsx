@@ -1,20 +1,25 @@
 // Module ID: 1236
 // Function ID: 1237
 // Name: getSystemLocale
-// Dependencies: [19, 676, 21, 17, 500, 666, 1237, 1274, 1297, 13548, 2, 13549, 13552]
+// Dependencies: [19, 676, 21, 17, 500, 666, 1237, 1274, 1297, 13606, 2, 13607, 13610]
 // Exports: getSystemLocale, useSyncMessages
 
 // Module 1236 (getSystemLocale)
-import "noop";
-import { Fonts } from "ME";
-import { jsx } from "jsxProd";
-import get_ActivityIndicator from "get ActivityIndicator";
-import set from "set";
-import getAvailableLocales from "getAvailableLocales";
-import module_1274 from "module_1274";
-import set from "jsxProd";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import noopAll from "noop" /* 19 */;
+import enforcing from "enforcing" /* 666 */;
+import getAvailableLocales2 from "getAvailableLocales" /* 1237 */;
+import Button from "Button" /* 1297 */;
+import IntlLink from "IntlLink" /* 13606 */;
+import messagesProxyDefault from "messagesProxy" /* 13610 */;
+import { Fonts } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import set from "set" /* 500 */;
+import getAvailableLocales from "getAvailableLocales" /* 1237 */;
+import module_1274 from "module_1274" /* 1274 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let obj = { fontFamily: Fonts.PRIMARY_SEMIBOLD };
 obj = { fontFamily: Fonts.CODE_NORMAL };
 let closure_3 = { strong: obj, italic: { fontStyle: "italic" }, code: obj, del: { textDecorationLine: "line-through", textDecorationStyle: "solid" } };
@@ -29,9 +34,9 @@ if (null != LocalizationManager) {
 }
 function getSystemLocale(arg0) {
   const tmp = require;
-  const tmp3 = require(17) /* get ActivityIndicator */;
+  const tmp3 = get_ActivityIndicator;
   if (obj.isAndroid()) {
-    let LocalizationManager = tmp(666).default;
+    let LocalizationManager = enforcing.default;
   } else {
     LocalizationManager = tmp3.NativeModules.LocalizationManager;
   }
@@ -44,24 +49,23 @@ function getSystemLocale(arg0) {
 const normalizedLocale = getAvailableLocales.getNormalizedLocale(str, "en-US");
 obj = {
   $i(children) {
-    return jsx(require(1297) /* Button */.LegacyText, { style: closure_3.italic, children }, arg1);
+    return jsx(Button.LegacyText, { style: closure_3.italic, children }, arg1);
   },
   $b(children) {
-    return jsx(require(1297) /* Button */.LegacyText, { style: closure_3.strong, children }, arg1);
+    return jsx(Button.LegacyText, { style: closure_3.strong, children }, arg1);
   },
   $del(children) {
-    return jsx(require(1297) /* Button */.LegacyText, { style: closure_3.del, children }, arg1);
+    return jsx(Button.LegacyText, { style: closure_3.del, children }, arg1);
   },
   $p(children) {
-    return jsx(require(1297) /* Button */.LegacyText, { children }, arg1);
+    return jsx(Button.LegacyText, { children }, arg1);
   },
   $code(children) {
-    return jsx(require(1297) /* Button */.LegacyText, { style: closure_3.code, children }, arg1);
+    return jsx(Button.LegacyText, { style: closure_3.code, children }, arg1);
   },
   $link(children) {
-    let tmp;
     [tmp] = arg2;
-    return jsx(require(13548) /* IntlLink */.IntlLink, { target: tmp, children }, arg1);
+    return jsx(IntlLink.IntlLink, { target: tmp, children }, arg1);
   }
 };
 const reactFormatter = module_1274.makeReactFormatter(obj);
@@ -75,9 +79,9 @@ export { getSystemLocale };
 export const getAvailableLocales = require("getAvailableLocales").getAvailableLocales;
 export const getLanguages = require("getAvailableLocales").getLanguages;
 export const useSyncMessages = function useSyncMessages(arg0) {
-  return require(1237) /* getAvailableLocales */.useSyncMessages(arg0, set);
+  return getAvailableLocales2.useSyncMessages(arg0, set);
 };
 export const t = require("_defaultMessages")._defaultMessages;
-export const international = require("messagesProxy");
+export const international = messagesProxyDefault;
 export const systemLocale = str;
 export const initialLocale = normalizedLocale;

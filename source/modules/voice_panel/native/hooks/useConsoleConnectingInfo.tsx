@@ -1,36 +1,40 @@
-// Module ID: 16387
-// Function ID: 16388
+// Module ID: 16484
+// Function ID: 16485
 // Name: useConsoleConnectingInfo
-// Dependencies: [4540, 4541, 9748, 647, 16388, 9884, 16389, 16390, 2]
+// Dependencies: [4545, 4546, 9787, 647, 16485, 9923, 16486, 16487, 2]
 // Exports: default
 
-// Module 16387 (useConsoleConnectingInfo)
-import set from "set";
-import handleUpdate from "handleUpdate";
+// Module 16484 (useConsoleConnectingInfo)
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9787 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 9923 */;
+import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 16485 */;
+import getConsoleColorDefault from "getConsoleColor" /* 16487 */;
+import closure_3 from "set" /* 4545 */;
+import closure_4 from "handleUpdate" /* 4546 */;
 
-let require = arg1;
-const result = require("useVoiceStateForRemoteSession").fileFinishedImporting("modules/voice_panel/native/hooks/useConsoleConnectingInfo.tsx");
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/hooks/useConsoleConnectingInfo.tsx");
 
 export default function useConsoleConnectingInfo(arg0) {
-  const tmp3 = importDefault(9748)();
-  const require = tmp3;
+  const tmp3 = useVoiceStateForRemoteSessionDefault();
+  const _require = tmp3;
   let channelId;
   if (tmp3 != null) {
     channelId = tmp3.channelId;
   }
-  let obj = require(647) /* defaultAreStatesEqual */;
-  const items = [set];
+  let obj = _require(647);
+  const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
-  const items1 = [handleUpdate];
-  const stateFromStores1 = require(647) /* defaultAreStatesEqual */.useStateFromStores(items1, () => {
+  const items1 = [closure_4];
+  const stateFromStores1 = _require(647).useStateFromStores(items1, () => {
     let str;
-    if (tmp3 != null) {
-      str = tmp3.sessionId;
+    if (sessionId != null) {
+      str = sessionId.sessionId;
     }
     if (str == null) {
       str = "";
     }
-    return outer1_4.getSessionById(str);
+    return closure_1_4.getSessionById(str);
   });
   let str;
   if (stateFromStores != null) {
@@ -47,8 +51,8 @@ export default function useConsoleConnectingInfo(arg0) {
     str = "";
   }
   let channelId1;
-  const obj2 = require(647) /* defaultAreStatesEqual */;
-  const tmp5 = require;
+  const obj2 = _require(647);
+  const tmp5 = _require;
   if (stateFromStores != null) {
     channelId1 = stateFromStores.channelId;
   }
@@ -58,10 +62,10 @@ export default function useConsoleConnectingInfo(arg0) {
     channelId2 = stateFromStores.channelId;
   }
   obj[1] = channelId2 === arg0 || channelId === arg0;
-  obj[2] = importDefault(9884)(str);
-  const tmp9 = importDefault(16388)(stateFromStores);
-  obj[3] = tmp5(16389).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
-  obj[4] = importDefault(16390)(str);
+  obj[2] = getConsoleIconDefault(str);
+  const tmp9 = useShouldDisplayCancelConsoleTransferDefault(stateFromStores);
+  obj[3] = tmp5(16486).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
+  obj[4] = getConsoleColorDefault(str);
   obj[5] = tmp9;
   return obj;
 };

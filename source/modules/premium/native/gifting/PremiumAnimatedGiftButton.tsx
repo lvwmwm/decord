@@ -1,79 +1,71 @@
-// Module ID: 11412
-// Function ID: 11413
+// Module ID: 11463
+// Function ID: 11464
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 4662, 21, 4661, 712, 1367, 4097, 589, 500, 4115, 5433, 7130, 2]
+// Dependencies: [19, 4669, 21, 4668, 712, 1367, 4100, 589, 500, 4119, 5438, 7168, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 11412 (PremiumAnimatedGiftButton)
-import noop from "noop";
-import { useRef } from "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11463 (PremiumAnimatedGiftButton)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { useRef } from "noop" /* 19 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let require = arg1;
+const require = arg1;
 let closure_7 = createCacheKey.createStyles((width, marginHorizontal) => {
   let obj = { container: null, containerRefresh: null, animation: null, animationRefresh: null };
-  obj = { backgroundColor: importDefault(712).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, width, height: width, borderRadius: importDefault(712).radii.round, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
+  obj = { backgroundColor: ThemesDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, width, height: width, borderRadius: ThemesDefault.radii.round, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
   obj[0] = obj;
-  obj = { width, height: width, borderRadius: importDefault(712).radii.sm, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
+  obj = { width, height: width, borderRadius: ThemesDefault.radii.sm, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
   obj[1] = obj;
   obj[2] = { width: 30, height: 30 };
   obj[3] = { width: 24, height: 24 };
   return obj;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gifting/PremiumAnimatedGiftButton.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/gifting/PremiumAnimatedGiftButton.tsx");
 
 export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0) {
-  let accessibilityState;
-  let active;
-  let activeStyle;
-  let animationDataUrl;
-  let channelId;
-  let disabled;
-  let loop;
-  let onAnimationFinished;
-  let style;
   ({ active, disabled, accessibilityState } = arg0);
   ({ style, activeStyle, channelId, animationDataUrl, onAnimationFinished, loop } = arg0);
-  let obj = require(1367) /* useIsMobileVisualRefreshExperimentEnabled */;
+  let obj = _require(1367);
   const enabled = obj.useMobileVisualRefreshConfig({ location: "PremiumAnimatedGiftButton" }).enabled;
-  let obj1 = require(4097) /* map */;
+  obj1 = _require(4100);
   const token = obj1.useToken(stateFromStores(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  let obj2 = require(4097) /* map */;
+  let obj2 = _require(4100);
   const token1 = obj2.useToken(stateFromStores(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
-  const token2 = require(4097) /* map */.useToken(stateFromStores(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const token2 = _require(4100).useToken(stateFromStores(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp7 = callback(token, token1);
   const bound = Math.max(0, (token2 - token) / 2);
   const tmp9 = useRef(null);
-  require = tmp9;
-  const obj4 = require(4097) /* map */;
+  _require = tmp9;
+  const obj4 = _require(4100);
   const tmp3 = stateFromStores;
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
-  stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const items = [closure_5];
+  stateFromStores = _require(589).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const items1 = [channelId, stateFromStores];
   const effect = React.useEffect(() => {
     if (!stateFromStores) {
       if (obj.isIOS()) {
-        if (tmp9 != null) {
-          const current = tmp9.current;
+        if (ref != null) {
+          const current = ref.current;
           if (current != null) {
             current.reset();
           }
         }
       }
-      if (tmp9 != null) {
-        const current2 = tmp9.current;
+      if (ref != null) {
+        const current2 = ref.current;
         if (current2 != null) {
           current2.play();
         }
       }
-      obj = tmp9(outer1_2[8]);
+      obj = ref(closure_1_2[8]);
     }
   }, items1);
   let FadeOut;
   if (!stateFromStores) {
-    FadeOut = tmp(4115).FadeOut;
+    FadeOut = tmp(4119).FadeOut;
   }
   obj = { exiting: FadeOut, children: null };
   const items2 = [enabled ? tmp7.containerRefresh : tmp7.container, style, ];
@@ -95,7 +87,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   obj[3] = obj1;
   const merged1 = Object.assign(arg0);
   obj2 = { ref: tmp9, style: enabled ? tmp7.animationRefresh : tmp7.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished };
-  obj.children = jsx(tmp3(7130), { ref: tmp9, style: enabled ? tmp7.animationRefresh : tmp7.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
-  obj[1] = jsx(require(5433) /* PressableBase */.PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
-  return jsx(stateFromStores(4115).View, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
+  obj.children = jsx(tmp3(7168), { ref: tmp9, style: enabled ? tmp7.animationRefresh : tmp7.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
+  obj[1] = jsx(_require(5438).PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
+  return jsx(stateFromStores(4119).View, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
 };

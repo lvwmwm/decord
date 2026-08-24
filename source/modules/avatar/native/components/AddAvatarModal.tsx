@@ -1,29 +1,30 @@
-// Module ID: 16647
-// Function ID: 16648
+// Module ID: 16743
+// Function ID: 16744
 // Name: AddAvatarScreen
-// Dependencies: [5, 32, 19, 17, 8370, 676, 21, 4661, 712, 6370, 6782, 1629, 589, 14007, 16648, 8384, 8413, 4838, 8374, 8376, 4734, 1236, 16657, 1297, 4745, 16645, 503, 5432, 6314, 6312, 2]
+// Dependencies: [5, 32, 19, 17, 8409, 676, 21, 4668, 712, 6401, 6819, 1629, 589, 14075, 16744, 8423, 8452, 4843, 8413, 8415, 4739, 1236, 16753, 1297, 4750, 16741, 503, 5437, 6345, 6343, 2]
 
-// Module 16647 (AddAvatarScreen)
-import closure_3 from "ME";
-import _slicedToArray from "_slicedToArray";
-import useAvatarsWithGuilds from "useAvatarsWithGuilds";
-import { View } from "openImagePickerUnhandled";
-import handleFormOpen from "handleFormOpen";
-import ME from "ME";
-import jsxProd from "getSystemLocale";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
+// Module 16743 (AddAvatarScreen)
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import Button2 from "Button" /* 4750 */;
+import NavigationStack from "NavigationStack" /* 6343 */;
+import useDominantRGBFromImage from "useDominantRGBFromImage" /* 8452 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_7 from "handleFormOpen" /* 8409 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let Fonts;
-let ModalAnimation;
-let c10;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function AddAvatarScreen() {
-  let require;
-  let tmp3;
-  function _handleSelectAvatar(useAvatarsWithGuilds, arg1) {
+  function _handleSelectAvatar(closure_5, arg1) {
     const self = this;
     const tmp = pendingImage(function*() {
       if (c3 === 2) {
@@ -37,7 +38,7 @@ function AddAvatarScreen() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -52,17 +53,17 @@ function AddAvatarScreen() {
               obj[0] = arg1;
               return obj;
             } else {
-              let c1 = tmp5;
+              c1 = tmp5;
               let base64 = tmp2;
               base64 = undefined;
               c1 = undefined;
-              outer1_0(false);
-              const obj1 = { size: null };
-              obj1[0] = outer1_8;
+              closure_1_0(false);
+              obj1 = { size: null };
+              obj1[0] = closure_1_8;
               dependencyMap = 1;
               c3 = 1;
               let obj2 = { value: null, done: false };
-              obj2[0] = outer1_0(4838).openImagePicker(obj1);
+              obj2[0] = closure_1_0(4843).openImagePicker(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -76,30 +77,29 @@ function AddAvatarScreen() {
           } else {
             base64 = arg1.base64;
             if (null == base64) {
-              let pendingImage;
-              if (null != outer1_0) {
-                obj = outer1_0(14007);
+              pendingImage = undefined;
+              if (null != closure_1_0) {
+                obj = closure_1_0(14075);
                 const obj4 = { imageUri: null, description: null };
                 obj4[0] = base64;
-                obj2 = outer1_0(8384);
+                obj2 = closure_1_0(8423);
                 obj4[1] = obj2.generateAvatarDescription();
                 pendingImage = obj.createPendingImage(obj4);
               }
-              const outer1_1 = pendingImage;
-              obj3 = outer1_0(8374);
+              obj3 = closure_1_0(8413);
               let obj5 = { avatar: null };
-              obj5[0] = outer1_1;
+              obj5[0] = pendingImage;
               obj3.setPendingChanges(obj5);
-              obj5 = outer1_0(8376);
+              obj5 = closure_1_0(8415);
               let str = "set";
-              if (null == outer1_1) {
+              if (null == pendingImage) {
                 str = "remove";
               }
               const result = obj5.announcePendingAvatarChange(str);
               dependencyMap(undefined);
               c3 = 3;
             }
-            outer1_0(true);
+            closure_1_0(true);
           }
         } catch (tmp42) {
           c3 = tmp;
@@ -107,7 +107,7 @@ function AddAvatarScreen() {
         }
       }
     });
-    const _handleSelectAvatar = tmp;
+    closure_4 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -116,21 +116,21 @@ function AddAvatarScreen() {
     }
     return applyArgumentsResult;
   }
-  let tmp = createCacheKey();
+  let tmp = callback2();
   [tmp3, require] = _handleSelectAvatar(React.useState(false), 2);
   const tmp4 = _handleSelectAvatar(React.useState(), 2);
   const first = tmp4[0];
-  let dependencyMap = tmp6;
+  dependencyMap = tmp6;
   const bottom = first(1629)().bottom;
-  let obj = require(589) /* initialize */;
-  const items = [handleFormOpen];
+  let obj = initialize;
+  const items = [closure_7];
   let pendingImage;
   const stateFromStores = obj.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
   if (null != first) {
-    let tmp9Result = tmp9(14007);
+    let tmp9Result = tmp9(14075);
     obj = { imageUri: null, description: null };
-    obj[0] = tmp9(16648).DEFAULT_AVATARS[first];
-    tmp9Result = tmp9(8384);
+    obj[0] = tmp9(16744).DEFAULT_AVATARS[first];
+    tmp9Result = tmp9(8423);
     obj[1] = tmp9Result.generateAvatarDescription();
     pendingImage = tmp9Result.createPendingImage(obj);
   }
@@ -144,27 +144,27 @@ function AddAvatarScreen() {
   }
   const items1 = [tmp.container, ];
   let num = 16;
-  const tmp9Result1 = require(8413) /* useDominantRGBFromImage */;
+  const tmp9Result1 = useDominantRGBFromImage;
   if (bottom > 0) {
     num = bottom;
   }
   obj = { style: items1, children: null };
   items1[1] = { paddingBottom: num };
-  let obj1 = { style: tmp.headerContainer, children: null };
+  obj1 = { style: tmp.headerContainer, children: null };
   let obj2 = { children: null };
   let obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp9(1236).intl;
-  obj3[4] = intl.string(require(1236) /* getSystemLocale */.t.XQRWvR);
-  const items2 = [callback(require(4734) /* Text */.Text, obj3), ];
+  obj3[4] = intl.string(getSystemLocale.t.XQRWvR);
+  const items2 = [callback(Text.Text, obj3), ];
   let obj4 = { style: tmp.subtitle, variant: "heading-deprecated-12/medium", color: "text-default", children: null };
   const intl2 = tmp9(1236).intl;
-  obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.fH9TLT);
-  items2[1] = callback(require(4734) /* Text */.Text, obj4);
+  obj4[3] = intl2.string(getSystemLocale.t.fH9TLT);
+  items2[1] = callback(Text.Text, obj4);
   obj2[0] = items2;
   const items3 = [closure_10(View, obj2), , ];
-  const memoizedImageSourceResult = require(8413) /* useDominantRGBFromImage */.memoizedImageSource(imageUri);
-  items3[1] = callback(first(16657), {
-    avatarSource: require(8413) /* useDominantRGBFromImage */.memoizedImageSource(imageUri),
+  const memoizedImageSourceResult = useDominantRGBFromImage.memoizedImageSource(imageUri);
+  items3[1] = callback(first(16753), {
+    avatarSource: useDominantRGBFromImage.memoizedImageSource(imageUri),
     showPendingAvatar: null != pendingImage,
     onSelectAvatar: function handleSelectAvatar() {
       const self = this;
@@ -184,26 +184,26 @@ function AddAvatarScreen() {
     stringResult = intl3.string(tmp9(1236).t.XyLlVm);
   }
   obj7[1] = stringResult;
-  obj6[1] = callback(require(1297) /* Button */.LegacyText, obj7);
+  obj6[1] = callback(Button.LegacyText, obj7);
   items3[2] = callback(View, obj6);
   obj1[1] = items3;
-  const items4 = [closure_10(View, obj1), callback(first(16648), { onAvatarSelect: tmp4[1], selectedAvatar: first }), ];
+  const items4 = [closure_10(View, obj1), callback(first(16744), { onAvatarSelect: tmp4[1], selectedAvatar: first }), ];
   const obj8 = { style: tmp.buttonContainer, children: null };
   const obj9 = { text: null, grow: true, onPress: null, disabled: null };
   const intl4 = tmp9(1236).intl;
-  obj9[0] = intl4.string(require(1236) /* getSystemLocale */.t.PDTjLN);
+  obj9[0] = intl4.string(getSystemLocale.t.PDTjLN);
   obj9[2] = function onPress() {
-    return outer1_0(tmp6[25]).handlePressNext(pendingImage, first);
+    return closure_1_0(table[25]).handlePressNext(pendingImage, first);
   };
   obj9[3] = null == pendingImage;
-  obj8[1] = callback(require(4745) /* Button */.Button, obj9);
+  obj8[1] = callback(Button2.Button, obj9);
   items4[2] = callback(View, obj8);
   obj[1] = items4;
   return closure_10(View, obj);
 }
 class AddAvatarModal {
   constructor() {
-    memo = useAvatarsWithGuilds.useMemo(() => {
+    memo = closure_5.useMemo(() => {
       let obj = { ADD_AVATAR: null };
       obj = {
         impressionName: callback(503).ImpressionNames.AVATAR_UPLOAD,
@@ -214,19 +214,17 @@ class AddAvatarModal {
           obj[1] = function onPress() {
             return callback(table[25]).showSkipAvatarModal();
           };
-          return callback2(callback(5432).HeaderActionButton, obj);
+          return callback2(callback(5437).HeaderActionButton, obj);
         },
         headerLeft() {
           return null;
         },
-        headerTitle: null,
+        headerTitle: callback(6345).getHeaderNoTitle(),
         ignoreKeyboard: true,
         fullscreen: true,
-        render: null
-      };
-      obj[3] = callback(6314).getHeaderNoTitle();
-      obj[6] = function render() {
-        return callback2(closure_12, {});
+        render() {
+          return callback2(closure_12, {});
+        }
       };
       obj[0] = obj;
       return obj;
@@ -234,21 +232,21 @@ class AddAvatarModal {
     return jsx(require("NavigationStack").Navigator, { screens: memo, initialRouteName: "ADD_AVATAR" });
   }
 }
-({ UPLOAD_MEDIUM_SIZE: metroImportAll, Fonts, ModalAnimation } = ME);
+({ UPLOAD_MEDIUM_SIZE: closure_8, Fonts, ModalAnimation } = ME);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: null, headerContainer: null, buttonContainer: null, title: null, subtitle: null, errorContainer: null, errorText: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32, alignItems: "center" };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32, alignItems: "center" };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { display: "flex", alignItems: "center" };
 createCacheKey[2] = { marginHorizontal: 16, marginBottom: 16 };
 createCacheKey[3] = { marginBottom: 8, textAlign: "center" };
 createCacheKey[4] = { textAlign: "center" };
 createCacheKey[5] = { alignSelf: "center", paddingTop: 24 };
-const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_MEDIUM, require("Themes").unsafe_rawColors.RED_400, 12));
+const merged = Object.assign(importDefaultResult(Fonts.DISPLAY_MEDIUM, ThemesDefault.unsafe_rawColors.RED_400, 12));
 createCacheKey[6] = {};
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_11 = createCacheKey.createStyles(createCacheKey);
 AddAvatarModal.modalConfig = { animation: ModalAnimation.SLIDE_IN_OUT };
 let obj1 = {};
-let result = require("noop").fileFinishedImporting("modules/avatar/native/components/AddAvatarModal.tsx");
+let result = require("set").fileFinishedImporting("modules/avatar/native/components/AddAvatarModal.tsx");
 
 export default AddAvatarModal;

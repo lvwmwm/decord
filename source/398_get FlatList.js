@@ -4,11 +4,15 @@
 // Dependencies: [273, 399, 354, 400, 401, 402, 405, 407, 408]
 
 // Module 398 (get FlatList)
+import get_VersionDefault from "get Version" /* 273 */;
+import _combineCallbacksDefault from "_combineCallbacks" /* 354 */;
+import mockCompositeAnimationDefault from "mockCompositeAnimation" /* 399 */;
+
 const require = arg1;
-if (require("get Version").isDisableAnimations) {
-  let importDefaultResult = require("mockCompositeAnimation");
+if (get_VersionDefault.isDisableAnimations) {
+  let importDefaultResult = mockCompositeAnimationDefault;
 } else {
-  importDefaultResult = require("_combineCallbacks");
+  importDefaultResult = _combineCallbacksDefault;
 }
 const obj = {};
 Object.defineProperty(obj, "FlatList", { get: () => require(400).default, set: undefined });

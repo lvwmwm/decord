@@ -1,20 +1,19 @@
-// Module ID: 7503
-// Function ID: 7504
+// Module ID: 7541
+// Function ID: 7542
 // Name: startBackgroundTask
-// Dependencies: [5, 17, 500, 7504, 7505, 2]
+// Dependencies: [5, 17, 500, 7542, 7543, 2]
 // Exports: backgroundify, endBackgroundTask
 
-// Module 7503 (startBackgroundTask)
-import closure_3 from "set";
-import { NativeModules } from "get ActivityIndicator";
-import set from "set";
-import set from "set";
+// Module 7541 (startBackgroundTask)
+import set2 from "set" /* 500 */;
+import initializeDefault from "initialize" /* 7542 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import set from "set" /* 500 */;
 
-const require = arg1;
+require = arg1;
 function startBackgroundTask(arg0) {
-  let content;
-  let title;
-  let obj = require(500) /* set */;
+  let obj = set2;
   if (obj.isAndroid()) {
     if (null == arg0) {
       const promise = new Promise((arg0) => arg0(closure_5));
@@ -24,9 +23,9 @@ function startBackgroundTask(arg0) {
       obj = { title: null, content: null, priority: null, type: null, usesGateway: false };
       obj[0] = title;
       obj[1] = content;
-      obj[2] = tmp(7505).ServiceNotificationPriority.MEDIUM;
-      obj[3] = tmp(7505).ServiceNotificationType.FILE_UPLOAD;
-      return importDefault(7504).addServiceHandler(obj);
+      obj[2] = tmp(7543).ServiceNotificationPriority.MEDIUM;
+      obj[3] = tmp(7543).ServiceNotificationType.FILE_UPLOAD;
+      return initializeDefault.addServiceHandler(obj);
     }
   } else {
     const DCDBackgroundTaskManager = NativeModules.DCDBackgroundTaskManager;
@@ -40,18 +39,18 @@ if (!set.isAndroid()) {
 function endBackgroundTask(c7) {
   if (c7 !== num) {
     if (obj.isAndroid()) {
-      importDefault(7504).removeServiceHandler(c7);
-      const obj2 = importDefault(7504);
+      initializeDefault.removeServiceHandler(c7);
+      const obj2 = initializeDefault;
     } else {
       const DCDBackgroundTaskManager = NativeModules.DCDBackgroundTaskManager;
       DCDBackgroundTaskManager.endBackgroundTask(c7);
     }
-    obj = require(500) /* set */;
+    obj = set2;
   }
 }
 function backgroundify(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   return callback(function*() {
     if (c5 === 2) {
       c5 = 3;
@@ -64,7 +63,7 @@ function backgroundify(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -79,14 +78,14 @@ function backgroundify(arg0, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp3;
+            closure_1 = tmp3;
             let callback = tmp5;
             callback = c5;
-            let c3 = 1;
+            c3 = 1;
             c4 = 2;
             c5 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_6(outer1_1);
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_6(closure_1_1);
             return obj1;
           }
         } else if (1 === tmp8) {
@@ -124,7 +123,7 @@ function backgroundify(arg0, arg1) {
           return obj;
         }
       } catch (tmp18) {
-        let closure_2 = tmp18;
+        closure_2 = tmp18;
         if (tmp4 === c3) {
           c5 = tmp2;
           throw tmp18;

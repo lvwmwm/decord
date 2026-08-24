@@ -1,26 +1,25 @@
-// Module ID: 15766
-// Function ID: 15767
+// Module ID: 15835
+// Function ID: 15836
 // Name: CustomStatusEntryRow
-// Dependencies: [19, 21, 15762, 15767, 2]
+// Dependencies: [19, 21, 15831, 15836, 2]
 // Exports: default
 
-// Module 15766 (CustomStatusEntryRow)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15835 (CustomStatusEntryRow)
+import noopAll from "noop" /* 19 */;
+import useReplyActions from "useReplyActions" /* 15831 */;
+import UploadPlaceholderDefault from "UploadPlaceholder" /* 15836 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("useReplyActions").fileFinishedImporting("modules/icymi/native/content_inventory/CustomStatusEntryRow.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/icymi/native/content_inventory/CustomStatusEntryRow.tsx");
 
 export default function CustomStatusEntryRow(content) {
-  let openEmojiPicker;
-  let openReplyActionSheet;
-  let renderForScreenshot;
-  let visible;
   content = content.content;
   ({ renderForScreenshot, visible } = content);
-  let obj = require(15762) /* useReplyActions */;
+  let obj = useReplyActions;
   const replyActions = obj.useReplyActions({ content });
   ({ openEmojiPicker, openReplyActionSheet } = replyActions);
   obj = { id: content.id, userId: content.author_id, customStatusExtra: content.extra, renderForScreenshot, visible, variant: { kind: "otherUserStatus", handlePressPrimary: openReplyActionSheet, handlePressSecondary: openEmojiPicker } };
-  return jsx(importDefault(15767), { id: content.id, userId: content.author_id, customStatusExtra: content.extra, renderForScreenshot, visible, variant: { kind: "otherUserStatus", handlePressPrimary: openReplyActionSheet, handlePressSecondary: openEmojiPicker } });
+  return jsx(UploadPlaceholderDefault, { id: content.id, userId: content.author_id, customStatusExtra: content.extra, renderForScreenshot, visible, variant: { kind: "otherUserStatus", handlePressPrimary: openReplyActionSheet, handlePressSecondary: openEmojiPicker } });
 };

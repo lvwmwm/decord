@@ -1,18 +1,19 @@
-// Module ID: 5626
-// Function ID: 5627
+// Module ID: 5633
+// Function ID: 5634
 // Name: DevCommerceWideAbstractUI
-// Dependencies: [21, 5449, 5627, 2]
+// Dependencies: [21, 5454, 5634, 2]
 // Exports: DevCommerceWideAbstractUI
 
-// Module 5626 (DevCommerceWideAbstractUI)
-import { jsx } from "jsxProd";
+// Module 5633 (DevCommerceWideAbstractUI)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5634 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DevCommerceWideAbstractUI.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DevCommerceWideAbstractUI.native.tsx");
 
 export const DevCommerceWideAbstractUI = function DevCommerceWideAbstractUI(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const DevCommerceWideAbstractUI = function DevCommerceWideAbstractUI(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5627);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const DevCommerceWideAbstractUI = function DevCommerceWideAbstractUI(widt
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

@@ -4,6 +4,9 @@
 // Dependencies: [532, 576]
 
 // Module 582 (RequestBase)
+import _createForOfIteratorHelper from "_createForOfIteratorHelper" /* 532 */;
+import _mod576 from "module_576" /* 576 */;
+
 class RequestBase {
   constructor() {
     return;
@@ -127,8 +130,8 @@ class RequestBase {
         }
         if (require) {
           if (require.status) {
-            tmp8 = f19090;
-            if (f19090.has(require.status)) {
+            tmp8 = closure_3;
+            if (closure_3.has(require.status)) {
               flag7 = true;
               return true;
             }
@@ -189,7 +192,7 @@ class RequestBase {
       tmp5 = new.target;
       promise = new Promise((arg0, arg1) => {
         const _self = arg0;
-        let closure_1 = arg1;
+        closure_1 = arg1;
         _self.on("abort", () => {
           if (!lib._maxRetries) {
             if (tmp.timedout) {
@@ -198,7 +201,7 @@ class RequestBase {
               }
             }
             const _Error = Error;
-            const error = new Error("Aborted");
+            error = new Error("Aborted");
             error.code = "ABORTED";
             ({ status: tmp5.status, method: tmp5.method, url: tmp5.url } = tmp);
             lib(error);
@@ -657,7 +660,7 @@ class RequestBase {
           sorted1 = parts.sort();
         }
         url2 = self.url;
-        str2 = require("_createForOfIteratorHelper") + str2;
+        str2 = require("module_0") + str2;
         self.url = str2 + parts.join("&");
       }
     }

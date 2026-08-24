@@ -4,7 +4,9 @@
 // Dependencies: [817]
 
 // Module 1133 (_getClientIntegration)
-const require = arg1;
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+
+require = arg1;
 const dependencyMap = arg6;
 let fn = this;
 if (this) {
@@ -62,11 +64,6 @@ function _getClientIntegration() {
 }
 arg5.MOBILE_FEEDBACK_INTEGRATION_NAME = "MobileFeedback";
 arg5.feedbackIntegration = (D) => {
-  let buttonOptions;
-  let colorScheme;
-  let screenshotButtonOptions;
-  let themeDark;
-  let themeLight;
   let obj = D;
   if (D === undefined) {
     obj = {};
@@ -99,7 +96,7 @@ arg5.getFeedbackOptions = () => {
   if (typeof _getClientIntegration !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const client = require(817) /* registerSpanErrorInstrumentation */.getClient();
+  const client = registerSpanErrorInstrumentation.getClient();
   let integrationByName;
   if (null !== client) {
     if (undefined !== client) {
@@ -112,7 +109,7 @@ arg5.getFeedbackButtonOptions = () => {
   if (typeof _getClientIntegration !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const client = require(817) /* registerSpanErrorInstrumentation */.getClient();
+  const client = registerSpanErrorInstrumentation.getClient();
   let integrationByName;
   if (null !== client) {
     if (undefined !== client) {
@@ -125,7 +122,7 @@ arg5.getScreenshotButtonOptions = () => {
   if (typeof _getClientIntegration !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const client = require(817) /* registerSpanErrorInstrumentation */.getClient();
+  const client = registerSpanErrorInstrumentation.getClient();
   let integrationByName;
   if (null !== client) {
     if (undefined !== client) {
@@ -138,7 +135,7 @@ arg5.getColorScheme = () => {
   if (typeof _getClientIntegration !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const client = require(817) /* registerSpanErrorInstrumentation */.getClient();
+  const client = registerSpanErrorInstrumentation.getClient();
   let integrationByName;
   if (null !== client) {
     if (undefined !== client) {
@@ -159,7 +156,7 @@ arg5.getFeedbackLightTheme = () => {
   if (typeof _getClientIntegration !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const client = require(817) /* registerSpanErrorInstrumentation */.getClient();
+  const client = registerSpanErrorInstrumentation.getClient();
   let integrationByName;
   if (null !== client) {
     if (undefined !== client) {
@@ -172,7 +169,7 @@ arg5.getFeedbackDarkTheme = () => {
   if (typeof _getClientIntegration !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const client = require(817) /* registerSpanErrorInstrumentation */.getClient();
+  const client = registerSpanErrorInstrumentation.getClient();
   let integrationByName;
   if (null !== client) {
     if (undefined !== client) {

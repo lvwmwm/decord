@@ -1,21 +1,23 @@
-// Module ID: 15299
-// Function ID: 15300
-// Dependencies: [19, 4662, 1218, 4559, 11152, 1922, 10055, 21, 4661, 712, 1297, 589, 9916, 2]
+// Module ID: 15363
+// Function ID: 15364
+// Dependencies: [19, 4669, 1218, 4564, 11191, 1922, 10094, 21, 4668, 712, 1297, 589, 9955, 2]
 
-// Module 15299
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import fetchFingerprint from "fetchFingerprint";
-import sortActivity from "sortActivity";
-import handleTypingStart from "handleTypingStart";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 15363
+import ThemesDefault from "Themes" /* 712 */;
+import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 9955 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "sortActivity" /* 4564 */;
+import closure_6 from "handleTypingStart" /* 11191 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10094 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let closure_10 = createCacheKey.createStyles((arg0) => {
-  const avatar = { borderRadius: importDefault(712).radii.round, marginRight: importDefault(712).modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_MARGIN_END, width: importDefault(712).modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, height: importDefault(712).modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, opacity: null };
+  const avatar = { borderRadius: ThemesDefault.radii.round, marginRight: ThemesDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_MARGIN_END, width: ThemesDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, height: ThemesDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, opacity: null };
   let num = 1;
   if (arg0) {
     num = MUTED_OPACITY_CONTENT;
@@ -23,16 +25,10 @@ let closure_10 = createCacheKey.createStyles((arg0) => {
   avatar[4] = num;
   return { avatar };
 });
-const memoResult = require("noop").memo(function MessagesItemChannelAvatar(channel) {
-  let blocked;
-  let channelSelected;
-  let importDefault;
-  let isStreaming;
-  let muted;
-  let status;
+const memoResult = importAllResult.memo(function MessagesItemChannelAvatar(channel) {
   channel = channel.channel;
   ({ hasUnreadMessages: importDefault, muted, status } = channel);
-  let dependencyMap;
+  dependencyMap = undefined;
   let stateFromStores;
   ({ channelSelected, isStreaming, blocked } = channel);
   if (!muted) {
@@ -48,9 +44,9 @@ const memoResult = require("noop").memo(function MessagesItemChannelAvatar(chann
   const REFRESH_MEDIUM_32 = channel(1297).AvatarSizes.REFRESH_MEDIUM_32;
   dependencyMap = id.getId();
   let obj = channel(589);
-  const items = [handleTypingStart];
+  const items = [closure_6];
   stateFromStores = obj.useStateFromStores(items, () => {
-    const typingUsers = outer1_6.getTypingUsers(channel.id);
+    const typingUsers = closure_1_6.getTypingUsers(channel.id);
     for (const key10007 in typingUsers) {
       let tmp2 = key10007;
       let tmp3 = closure_2;
@@ -79,29 +75,29 @@ const memoResult = require("noop").memo(function MessagesItemChannelAvatar(chann
   const obj2 = channel(589);
   let tmp = closure_10;
   let tmp3 = channel;
-  const items2 = [mergeGuildAvatar];
+  const items2 = [closure_7];
   const stateFromStores2 = channel(589).useStateFromStores(items2, () => {
     let recipientId;
     if (true === channel.isDM()) {
       recipientId = channel.getRecipientId();
     }
-    return outer1_7.getUser(recipientId);
+    return closure_1_7.getUser(recipientId);
   });
   const obj3 = channel(589);
-  const items3 = [sortActivity];
+  const items3 = [closure_5];
   const stateFromStores3 = channel(589).useStateFromStores(items3, () => {
     let isMobileOnlineResult = channel.isDM();
     if (isMobileOnlineResult) {
-      isMobileOnlineResult = outer1_5.isMobileOnline(channel.getRecipientId());
+      isMobileOnlineResult = closure_1_5.isMobileOnline(channel.getRecipientId());
     }
     return isMobileOnlineResult;
   });
   const obj5 = channel(589);
-  const items4 = [sortActivity];
+  const items4 = [closure_5];
   const stateFromStores4 = channel(589).useStateFromStores(items4, () => {
     let isVROnlineResult = channel.isDM();
     if (isVROnlineResult) {
-      isVROnlineResult = outer1_5.isVROnline(channel.getRecipientId());
+      isVROnlineResult = closure_1_5.isVROnline(channel.getRecipientId());
     }
     return isVROnlineResult;
   });
@@ -112,11 +108,11 @@ const memoResult = require("noop").memo(function MessagesItemChannelAvatar(chann
     obj[2] = channel;
     obj[3] = stateFromStores1;
     obj[4] = tmpResult.avatar;
-    let tmp11Result = jsx(importDefault(9916), { status: null, size: null, channel: null, animate: null, style: null });
+    let tmp11Result = jsx(FacepileGroupDMAvatarDefault, { status: null, size: null, channel: null, animate: null, style: null });
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      obj = { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "md", size: "primary", animate: null, typing: null, autoStatusCutout: null };
+      obj = { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "danger", size: null, animate: null, typing: null, autoStatusCutout: "redux.action" };
       obj[0] = stateFromStores2;
       obj[1] = stateFromStores2.avatarDecoration;
       obj[3] = stateFromStores3;
@@ -131,12 +127,12 @@ const memoResult = require("noop").memo(function MessagesItemChannelAvatar(chann
       obj[8] = REFRESH_MEDIUM_32;
       obj[9] = stateFromStores1;
       obj[10] = stateFromStores;
-      tmp11Result = jsx(tmp3(1297).Avatar, { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "md", size: "primary", animate: null, typing: null, autoStatusCutout: null });
+      tmp11Result = jsx(tmp3(1297).Avatar, { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "danger", size: null, animate: null, typing: null, autoStatusCutout: "redux.action" });
       const tmp11 = jsx;
     }
   }
   return tmp11Result;
 });
-const result = require("fetchFingerprint").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelAvatar.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelAvatar.tsx");
 
 export default memoResult;

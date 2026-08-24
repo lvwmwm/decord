@@ -1,14 +1,17 @@
-// Module ID: 9095
-// Function ID: 9096
+// Module ID: 9132
+// Function ID: 9133
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 9095 (dispatcher)
-let result = require("set").fileFinishedImporting("actions/DimensionActionCreators.tsx");
+// Module 9132 (dispatcher)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+let result = set.fileFinishedImporting("actions/DimensionActionCreators.tsx");
 
 export default {
   updateChannelDimensions(id, eventTimestamp, scrollTop, scrollHeight, offsetHeight, arg5) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPDATE_CHANNEL_DIMENSIONS", channelId: id, timestamp: eventTimestamp, scrollTop, scrollHeight, offsetHeight };
     obj.dispatch(obj);
     if (arg5 != null) {
@@ -20,17 +23,17 @@ export default {
     if (arg2 === undefined) {
       items = [];
     }
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPDATE_CHANNEL_LIST_DIMENSIONS", guildId, scrollTop, channelIds: items };
     obj.dispatch(obj);
   },
   channelListScrollTo(closure_12, dMFromUserId) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPDATE_CHANNEL_LIST_DIMENSIONS", guildId: closure_12, scrollTo: dMFromUserId, channelIds: [] };
     obj.dispatch(obj);
   },
   clearChannelListScrollTo(guildId) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPDATE_CHANNEL_LIST_DIMENSIONS", guildId, scrollTo: null, channelIds: [] };
     obj.dispatch(obj);
   },
@@ -38,7 +41,7 @@ export default {
     const result = this.updateChannelDimensions(channelId, Date.now(), null, null, null, arg1);
   },
   updateGuildListScrollTo(scrollTop) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPDATE_GUILD_LIST_DIMENSIONS", scrollTop };
     obj.dispatch(obj);
   }

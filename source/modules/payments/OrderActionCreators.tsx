@@ -1,27 +1,24 @@
-// Module ID: 7210
-// Function ID: 7211
+// Module ID: 7248
+// Function ID: 7249
 // Name: _signOrder
-// Dependencies: [5, 676, 3, 4061, 530, 4054, 2]
+// Dependencies: [5, 676, 3, 4064, 530, 4057, 2]
 // Exports: fetchOrderEntitlements, getOrder, signOrder
 
-// Module 7210 (_signOrder)
-import _createGatewayCheckoutContext from "_createGatewayCheckoutContext";
-import { Endpoints } from "ME";
-import "set";
-import "set";
+// Module 7248 (_signOrder)
+import timestampDefault from "timestamp" /* 3 */;
+import setDefault from "set" /* 4064 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _signOrder() {
   const self = this;
   let tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -33,7 +30,7 @@ function _signOrder() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -49,13 +46,13 @@ function _signOrder() {
               return obj;
             } else {
               c2 = tmp3;
-              let dependencyMap = tmp7;
+              dependencyMap = tmp7;
               let callback;
               dependencyMap = undefined;
               c2 = undefined;
               ({ orderId: c0, expectedRevision: c1, loadId: c2 } = callback);
-              let closure_3;
-              let c4;
+              closure_3 = undefined;
+              c4 = undefined;
               c5 = 1;
               c6 = 1;
               return { value: "ct", done: true };
@@ -66,7 +63,7 @@ function _signOrder() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -128,7 +125,7 @@ function _signOrder() {
             c4 = 0;
             if (null == closure_3.body) {
               const _Error = Error;
-              const error = new Error("Invalid sign order response");
+              error = new Error("Invalid sign order response");
               throw error;
             } else {
               c6 = 3;
@@ -151,7 +148,7 @@ function _signOrder() {
     iter.next();
     return iter;
   });
-  const _signOrder = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -163,10 +160,10 @@ function _signOrder() {
 function _getOrder() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0, body) {
       if (c6 === 2) {
         c6 = 3;
@@ -179,7 +176,7 @@ function _getOrder() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -194,12 +191,12 @@ function _getOrder() {
               obj[0] = body;
               return obj;
             } else {
-              let _createGatewayCheckoutContext = tmp3;
+              closure_2 = tmp3;
               let table = tmp7;
               let logger = 1;
-              const HTTP = callback(outer1_1[4]).HTTP;
-              const obj1 = { url: null, rejectWithError: true };
-              obj1[0] = outer1_3.ORDER_GET(callback);
+              const HTTP = callback(closure_1_1[4]).HTTP;
+              obj1 = { url: null, rejectWithError: true };
+              obj1[0] = closure_1_3.ORDER_GET(callback);
               c5 = 2;
               c6 = 1;
               const obj2 = { value: null, done: false };
@@ -254,7 +251,7 @@ function _getOrder() {
       }
     })();
   });
-  const _getOrder = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -266,10 +263,10 @@ function _getOrder() {
 function _fetchOrderEntitlements() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c5 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c5 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c5 === 2) {
         c5 = 3;
@@ -282,7 +279,7 @@ function _fetchOrderEntitlements() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -297,12 +294,12 @@ function _fetchOrderEntitlements() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_1 = tmp6;
+              closure_1 = tmp6;
               let lib;
-              let c4 = 1;
-              const HTTP = lib(outer1_1[4]).HTTP;
-              const obj1 = { url: null, rejectWithError: false };
-              obj1[0] = outer1_3.ORDER_ENTITLEMENTS(lib);
+              c4 = 1;
+              const HTTP = lib(closure_1_1[4]).HTTP;
+              obj1 = { url: null, rejectWithError: false };
+              obj1[0] = closure_1_3.ORDER_ENTITLEMENTS(lib);
               c2 = 2;
               c5 = 1;
               const obj2 = { value: null, done: false };
@@ -335,7 +332,7 @@ function _fetchOrderEntitlements() {
             c5 = 3;
           }
         } catch (tmp16) {
-          let closure_3 = tmp16;
+          closure_3 = tmp16;
           if (tmp3 === c4) {
             c5 = tmp2;
             throw tmp16;
@@ -346,7 +343,7 @@ function _fetchOrderEntitlements() {
       }
     })();
   });
-  const _fetchOrderEntitlements = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -355,7 +352,8 @@ function _fetchOrderEntitlements() {
   }
   return applyArgumentsResult;
 }
-let c4 = new require("set")("OrderActionCreators");
+let closure_4 = new timestampDefault("OrderActionCreators");
+setDefault;
 class OrderSigningFailedWithConstraintsError extends tmp3 {
   constructor(arg0) {
     tmp = new tmp("Order signing failed due to unsatisfied constraints", new.target);
@@ -364,6 +362,7 @@ class OrderSigningFailedWithConstraintsError extends tmp3 {
     return tmp;
   }
 }
+setDefault;
 const prototype = function OrderProcessingPendingError() {
   tmp = new tmp("Order signed but entitlements not yet visible after polling", new.target);
   // ThrowIfThisInitialized (0x7c)
@@ -371,8 +370,8 @@ const prototype = function OrderProcessingPendingError() {
 }.prototype;
 class prototype extends tmp4 {
 }
-const tmp2 = new require("set")("OrderActionCreators");
-let result = require("timestamp").fileFinishedImporting("modules/payments/OrderActionCreators.tsx");
+const tmp2 = new timestampDefault("OrderActionCreators");
+let result = require("set").fileFinishedImporting("modules/payments/OrderActionCreators.tsx");
 
 export { OrderSigningFailedWithConstraintsError };
 export const OrderProcessingPendingError = prototype;
@@ -386,7 +385,7 @@ export const signOrder = function signOrder(arg0) {
   }
   return applyArgumentsResult;
 };
-export const getOrder = function getOrder(outer1_0) {
+export const getOrder = function getOrder(closure_0) {
   const self = this;
   const apply = _getOrder.apply;
   if (typeof apply === "unknown") {

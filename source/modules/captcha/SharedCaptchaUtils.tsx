@@ -1,17 +1,16 @@
-// Module ID: 10478
-// Function ID: 10479
+// Module ID: 10517
+// Function ID: 10518
 // Name: prototype
-// Dependencies: [10479, 10480, 2]
+// Dependencies: [10518, 10519, 2]
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse
 
-// Module 10478 (prototype)
-import useCaptchaStore from "useCaptchaStore";
-import { CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS as closure_3 } from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS";
+// Module 10517 (prototype)
+import set from "set" /* 2 */;
+import CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS" /* 10519 */;
+import useCaptchaStore from "useCaptchaStore" /* 10518 */;
 
-let c0;
-let closure_1;
-let obj1;
 ({ incrementCaptchaServeVolume: c0, flushCaptchaServeVolume: closure_1, isCaptchaStoreVolumeEmpty: obj1 } = useCaptchaStore);
+let closure_3 = CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS.CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS;
 const prototype = function CaptchaCancelError() {
   tmp = new tmp("Captcha cancelled", new.target);
   // ThrowIfThisInitialized (0x7c)
@@ -19,7 +18,7 @@ const prototype = function CaptchaCancelError() {
 }.prototype;
 class prototype extends Error {
 }
-const result = require("set").fileFinishedImporting("modules/captcha/SharedCaptchaUtils.tsx");
+const result = set.fileFinishedImporting("modules/captcha/SharedCaptchaUtils.tsx");
 
 export const CaptchaError = { CANCEL: "cancel", ERROR: "error", EXPIRED: "expired" };
 export const extractCaptchaPropsFromResponse = function extractCaptchaPropsFromResponse(body) {

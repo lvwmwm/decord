@@ -1,25 +1,23 @@
-// Module ID: 15978
-// Function ID: 15979
+// Module ID: 16075
+// Function ID: 16076
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1499, 21, 4115, 9565, 9566, 9567, 6950, 11257, 11371, 7122, 2]
+// Dependencies: [32, 19, 1499, 21, 4119, 9602, 9603, 9604, 6988, 11308, 11422, 7160, 2]
 // Exports: useAppLauncherActionSheet
 
-// Module 15978 (AppLauncherActionSheet)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-import { jsx } from "jsxProd";
+// Module 16075 (AppLauncherActionSheet)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 function AppLauncherActionSheet(arg0) {
-  let channel;
-  let require;
   ({ chatInputRef: require, channel } = arg0);
   let ref;
   ref = React.useRef(null);
   let obj = require(ref[4]);
   const sharedValue = obj.useSharedValue(-1);
-  let obj1 = require(ref[4]);
+  obj1 = require(ref[4]);
   const sharedValue1 = obj1.useSharedValue(0);
   const ref1 = React.useRef(undefined);
   const TEXT = require(ref[6]).AppLauncherEntrypoint.TEXT;
@@ -65,13 +63,13 @@ function AppLauncherActionSheet(arg0) {
   obj[4] = <tmp10 bottomSheetIndex={sharedValue} bottomSheetPosition={sharedValue1} bottomSheetExpandReasonRef={ref1} context={memo} chatInputRef={React.useRef(obj)} entrypoint={TEXT} keyboardCloseReasonRef={ref2} width={defaultAppLauncherWidth} overrideParams={null} />;
   return jsx(require(ref[8]).BottomSheet, { ref, animatedIndex: sharedValue, scrollable: true, startExpanded: true, children: null });
 }
-const result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/app_launcher/native/AppLauncherActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/AppLauncherActionSheet.tsx");
 
 export const useAppLauncherActionSheet = function useAppLauncherActionSheet(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   let tmp = callback(React.useState(false), 2);
   const first = tmp[0];
-  const dependencyMap = tmp3;
+  closure_2 = tmp3;
   const items = [first, arg0];
   return {
     appLauncherActionSheet: React.useMemo(() => {
@@ -91,8 +89,8 @@ export const useAppLauncherActionSheet = function useAppLauncherActionSheet(arg0
         obj[0] = obj;
         obj = {};
         const merged = Object.assign(closure_0);
-        obj[1] = outer1_6(outer1_7, obj);
-        tmp = outer1_6(first(tmp3[11]).Provider, obj);
+        obj[1] = closure_1_6(closure_1_7, obj);
+        tmp = closure_1_6(first(table[11]).Provider, obj);
       }
       return tmp;
     }, items),

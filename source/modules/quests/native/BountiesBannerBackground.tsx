@@ -1,36 +1,32 @@
-// Module ID: 14438
-// Function ID: 14439
-// Dependencies: [19, 17, 4662, 21, 589, 9018, 4756, 2]
+// Module ID: 14506
+// Function ID: 14507
+// Dependencies: [19, 17, 4669, 21, 589, 9055, 4761, 2]
 
-// Module 14438
-import get_ActivityIndicator from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import jsxProd from "jsxProd";
-import importAllResult from "noop";
+// Module 14506
+import initialize from "initialize" /* 589 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import VideoComponent from "VideoComponent" /* 9055 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import jsxProd from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-let c3;
-let c4;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 ({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = [0, 0.6];
 let closure_9 = ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.9)"];
-const memoResult = require("noop").memo(function BountiesBannerBackground(arg0) {
-  let children;
-  let style;
-  let uri;
+const memoResult = importAllResult.memo(function BountiesBannerBackground(arg0) {
   ({ children, style, uri } = arg0);
-  let obj = require(589) /* initialize */;
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  let obj = initialize;
+  const items = [closure_5];
   obj = { style, children: null };
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   obj = { source: { uri }, style: closure_3.absoluteFillObject, resizeMode: "cover", muted: true, disableFocus: true, paused: stateFromStores, importantForAccessibility: "no-hide-descendants" };
-  const items1 = [callback(require(9018) /* VideoComponent */.VideoComponent, obj), callback(importDefault(4756), { colors: closure_9, locations: closure_8, style: closure_3.absoluteFillObject }), children];
+  const items1 = [callback(VideoComponent.VideoComponent, obj), callback(LinearGradientDefault, { colors: closure_9, locations: closure_8, style: closure_3.absoluteFillObject }), children];
   obj[1] = items1;
   return callback2(closure_4, obj);
 });
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/quests/native/BountiesBannerBackground.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/BountiesBannerBackground.tsx");
 
 export default memoResult;

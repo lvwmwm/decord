@@ -1,27 +1,29 @@
-// Module ID: 12766
-// Function ID: 12767
+// Module ID: 12821
+// Function ID: 12822
 // Name: createEmbeddedActivityInviteEmbed
-// Dependencies: [32, 17, 1390, 7248, 4478, 1218, 1391, 4359, 4030, 1922, 10510, 4371, 709, 7247, 8169, 6832, 1236, 4984, 12767, 2]
+// Dependencies: [32, 17, 1390, 7286, 4482, 1218, 1391, 4363, 4033, 1922, 10549, 4375, 709, 7285, 8208, 6870, 1236, 4989, 12822, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 12766 (createEmbeddedActivityInviteEmbed)
-import _slicedToArray from "_slicedToArray";
-import { Image } from "computeChannelName";
-import participantFromServer from "participantFromServer";
-import handleFetchEmbeddedActivityShelfSuccess from "handleFetchEmbeddedActivityShelfSuccess";
-import { FetchState } from "handleFetchEmbeddedActivityShelfSuccess";
-import addApplication from "addApplication";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import updateInvite from "updateInvite";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { CodedLinkExtendedType } from "CodedLinkExtendedType";
-import { InviteTargetTypes } from "InviteSendStates";
+// Module 12821 (createEmbeddedActivityInviteEmbed)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8208 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "participantFromServer" /* 1390 */;
+import closure_6 from "handleFetchEmbeddedActivityShelfSuccess" /* 7286 */;
+import { FetchState } from "handleFetchEmbeddedActivityShelfSuccess" /* 7286 */;
+import closure_8 from "addApplication" /* 4482 */;
+import closure_9 from "fetchFingerprint" /* 1218 */;
+import closure_10 from "ensureGuildLoaded" /* 1391 */;
+import closure_11 from "updateInvite" /* 4363 */;
+import closure_12 from "markAllUserIdListsStale" /* 4033 */;
+import closure_13 from "mergeGuildAvatar" /* 1922 */;
+import { CodedLinkExtendedType } from "CodedLinkExtendedType" /* 10549 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 4375 */;
 
 const require = arg1;
 let closure_16 = ["embedded_cover"];
-const result = require("participantFromServer").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/EmbeddedActivityInviteEmbed.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/EmbeddedActivityInviteEmbed.tsx");
 
 export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivityInviteEmbed(inviteCode) {
   let id;
@@ -33,17 +35,17 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
     if (invite.target_type === InviteTargetTypes.EMBEDDED_APPLICATION) {
       if (null != target_application) {
         if (null == application.getApplication(target_application.id)) {
-          let obj = importDefault(709);
+          let obj = dispatcherDefault;
           obj = { type: "APPLICATION_UPDATE", application: null };
           obj[1] = target_application;
           obj.dispatch(obj);
         }
         id = target_application.id;
         if (applicationAssetFetchState.getApplicationAssetFetchState(id) === FetchState.NOT_FETCHED) {
-          let obj2 = id(7247);
+          let obj2 = id(7285);
           const assetIds = obj2.fetchAssetIds(id, closure_16);
         }
-        const tmp13 = importDefault(8169)(inviteCode.theme);
+        const tmp13 = getEmbedThemeColorsDefault(inviteCode.theme);
         const baseColors = tmp13.baseColors;
         const guild = invite.guild;
         let name;
@@ -65,7 +67,7 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
         }
         let simpleChannelIcon = null;
         if (null != channel) {
-          let obj3 = id(6832);
+          let obj3 = id(6870);
           simpleChannelIcon = obj3.getSimpleChannelIcon(channel);
         }
         if (null != simpleChannelIcon) {
@@ -88,8 +90,8 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
           if (null != name) {
             const intl2 = tmp25(1236).intl;
             obj = { channelName: null, guildName: null };
-            let tmp25Result = tmp25(4984);
-            obj[0] = tmp25Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+            let tmp25Result = tmp25(4989);
+            obj[0] = tmp25Result.computeChannelName(channel, closure_13, closure_12);
             obj[1] = name;
             let formatToPartsResult = intl2.formatToParts(tmp25(1236).t.omZR7L, obj);
           }
@@ -108,8 +110,8 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
           }
           if (null != id) {
             if (null != id2) {
-              tmp25Result = tmp25(12767);
-              const obj1 = { channelId: null, guildId: null, applicationId: null };
+              tmp25Result = tmp25(12822);
+              obj1 = { channelId: null, guildId: null, applicationId: null };
               obj1[0] = id;
               obj1[1] = id2;
               obj1[2] = id;
@@ -126,15 +128,15 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
                 stringResult = intl3.string(tmp25(1236).t.KC26NR);
               }
             }
-            let assetIds1 = tmp25(7247).getAssetIds(id, closure_16);
+            let assetIds1 = tmp25(7285).getAssetIds(id, closure_16);
             if (assetIds1 == null) {
               assetIds1 = [];
             }
             const first = callback(assetIds1, 1)[0];
             let assetImage;
             if (null != first) {
-              assetImage = tmp25(7247).getAssetImage(id, first, 1024);
-              const tmp25Result2 = tmp25(7247);
+              assetImage = tmp25(7285).getAssetImage(id, first, 1024);
+              const tmp25Result2 = tmp25(7285);
             }
             obj2 = {};
             const merged = Object.assign(baseColors);

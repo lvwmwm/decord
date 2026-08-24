@@ -1,20 +1,15 @@
-// Module ID: 8649
-// Function ID: 8650
+// Module ID: 8686
+// Function ID: 8687
 // Name: getFastestListVisibleItemsDefault
 // Dependencies: [2]
 // Exports: default
 
-// Module 8649 (getFastestListVisibleItemsDefault)
-const result = require("set").fileFinishedImporting("modules/fastest_list/getFastestListVisibleItemsDefault.tsx");
+// Module 8686 (getFastestListVisibleItemsDefault)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/fastest_list/getFastestListVisibleItemsDefault.tsx");
 
 export default function getFastestListVisibleItemsDefault(arg0) {
-  let estimatedListSize;
-  let itemSizes;
-  let listHeaderSize;
-  let sectionFooterSizes;
-  let sectionHeaderSizes;
-  let sections;
-  let sectionsVersioned;
   ({ estimatedListSize, sectionsVersioned } = arg0);
   ({ itemSizes, listHeaderSize, sections, sectionFooterSizes, sectionHeaderSizes } = sectionsVersioned);
   const obj = { sectionsId: sectionsVersioned.sectionsId, sectionStart: 0, sectionEnd: 0, itemStart: 0, itemEnd: -1 };

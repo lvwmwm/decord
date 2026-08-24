@@ -1,33 +1,30 @@
-// Module ID: 11460
-// Function ID: 11461
-// Dependencies: [19, 17, 4021, 4542, 676, 21, 4661, 712, 500, 8502, 4310, 1363, 8675, 647, 6708, 6703, 4988, 11461, 4734, 1236, 4745, 6892, 6896, 2]
+// Module ID: 11509
+// Function ID: 11510
+// Dependencies: [19, 17, 4024, 4547, 676, 21, 4668, 712, 500, 8541, 4314, 1363, 8712, 647, 6745, 6740, 4993, 11510, 4739, 1236, 4750, 6930, 6934, 2]
 
-// Module 11460
-import importAllResult from "getSystemLocale";
-import get_ActivityIndicator from "useShowConnectedUserLimit";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import updateVoiceState from "updateVoiceState";
-import ME from "ME";
-import { jsx } from "StageIcon";
-import createCacheKey from "createCacheKey";
+// Module 11509
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_7 from "updateVoiceState" /* 4547 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let c9;
-let metroImportAll;
 const require = arg1;
 let c3 = importAllResult;
 ({ View: c4, Pressable: c5 } = get_ActivityIndicator);
-({ NOOP: metroImportAll, Permissions: c9 } = ME);
+({ NOOP: closure_8, Permissions: c9 } = ME);
 let closure_11 = createCacheKey.createStyles((arg0, arg1) => {
-  let obj = { borderRadius: importDefault(712).radii.xxl, paddingHorizontal: importDefault(712).space.PX_8, paddingVertical: importDefault(712).space.PX_4, marginVertical: -importDefault(712).space.PX_4, backgroundColor: importDefault(712).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, minHeight: 28, justifyContent: "center", elevation: null, shadowRadius: 4, shadowOffset: null, shadowColor: null, shadowOpacity: null, borderColor: null, borderWidth: 1 };
+  let obj = { borderRadius: ThemesDefault.radii.xxl, paddingHorizontal: ThemesDefault.space.PX_8, paddingVertical: ThemesDefault.space.PX_4, marginVertical: -ThemesDefault.space.PX_4, backgroundColor: ThemesDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, minHeight: 28, justifyContent: "center", elevation: null, shadowRadius: 4, shadowOffset: null, shadowColor: null, shadowOpacity: null, borderColor: null, borderWidth: 1 };
   let num = 1;
   if (arg0) {
     num = 0;
   }
   obj[7] = num;
   obj[9] = { width: 0, height: 1 };
-  obj[10] = importDefault(712).colors.BLACK;
+  obj[10] = ThemesDefault.colors.BLACK;
   let num2 = 0.14;
   if (arg1) {
     num2 = 0.08;
@@ -41,8 +38,8 @@ let closure_11 = createCacheKey.createStyles((arg0, arg1) => {
   obj[12] = str;
   obj = { tintColor: tmp(712).colors.WHITE };
   obj[2] = obj;
-  obj[3] = { tintColor: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
-  const obj1 = { tintColor: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj[3] = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+  obj1 = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
   let num3 = 0;
   if (obj5.isAndroid()) {
     num3 = -2;
@@ -51,8 +48,6 @@ let closure_11 = createCacheKey.createStyles((arg0, arg1) => {
   return obj;
 });
 const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel) {
-  let noIcon;
-  let small;
   channel = channel.channel;
   let voiceStates = channel.voiceStates;
   if (voiceStates === undefined) {
@@ -63,22 +58,22 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
     small = false;
   }
   let VJlc0S = dependencyMap;
-  const tmp = voiceStates(8502)();
+  const tmp = voiceStates(8541)();
   let obj = channel(1363);
-  let joinButtonText = callback(tmp, obj.isThemeLight(voiceStates(4310)()));
-  let obj1 = channel(8675);
+  let joinButtonText = callback(tmp, obj.isThemeLight(voiceStates(4314)()));
+  obj1 = channel(8712);
   const isConnectedToVoiceChannel = obj1.useIsConnectedToVoiceChannel(channel);
   let obj2 = channel(647);
-  const items = [getUncachedChannelPermissions];
-  const stateFromStores = obj2.useStateFromStores(items, () => !outer1_6.can(outer1_9.CONNECT, channel));
-  let obj3 = channel(6708);
-  const stageParticipantsCount = obj3.useStageParticipantsCount(channel.id, channel(6703).StageChannelParticipantNamedIndex.AUDIENCE);
+  const items = [closure_6];
+  const stateFromStores = obj2.useStateFromStores(items, () => !closure_1_6.can(closure_1_9.CONNECT, channel));
+  let obj3 = channel(6745);
+  const stageParticipantsCount = obj3.useStageParticipantsCount(channel.id, channel(6740).StageChannelParticipantNamedIndex.AUDIENCE);
   const isGuildStageVoiceResult = channel.isGuildStageVoice();
-  const tmp2 = voiceStates(4310)();
-  const obj5 = channel(4988);
+  const tmp2 = voiceStates(4314)();
+  const obj5 = channel(4993);
   let tmp3Result = tmp3(647);
-  const items1 = [updateVoiceState];
-  const stateFromStores1 = tmp3Result.useStateFromStores(items1, () => outer1_7.hasVideo(channel.id));
+  const items1 = [closure_7];
+  const stateFromStores1 = tmp3Result.useStateFromStores(items1, () => closure_1_7.hasVideo(channel.id));
   const sum = stageParticipantsCount + voiceStates.length;
   const items2 = [voiceStates];
   const memo = importAllResult.useMemo(() => {
@@ -92,10 +87,10 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
   if (!stateFromStores1) {
     tmp12 = tmp8;
   }
-  tmp3Result = tmp3(11461);
+  tmp3Result = tmp3(11510);
   const connectedUserLimit = tmp3Result.useConnectedUserLimit({ channel, video: tmp12 });
-  tmp8 = channel(4988).useStageHasMedia(channel.id) && isGuildStageVoiceResult;
-  let connectedUserLimitFormatted = channel(11461).useConnectedUserLimitFormatted({ channel, video: tmp12, userCount: sum });
+  tmp8 = channel(4993).useStageHasMedia(channel.id) && isGuildStageVoiceResult;
+  let connectedUserLimitFormatted = channel(11510).useConnectedUserLimitFormatted({ channel, video: tmp12, userCount: sum });
   let tmp15 = !stateFromStores;
   if (!stateFromStores) {
     tmp15 = !isConnectedToVoiceChannel;
@@ -126,7 +121,7 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
       connectedUserLimitFormatted = intl2.string(VJlc0S);
     }
     obj1[4] = connectedUserLimitFormatted;
-    obj[1] = tmp17(tmp3(4734).Text, obj1);
+    obj[1] = tmp17(tmp3(4739).Text, obj1);
     obj[7] = tmp17(closure_4, obj);
     let tmp17Result = tmp17(closure_5, obj);
     const tmp26 = closure_5;
@@ -141,9 +136,9 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
         }
         const items3 = [joinButtonIconActive, { marginRight: 3, marginLeft: -1 }];
         if (isGuildStageVoiceResult) {
-          let VoiceNormalIcon = tmp3(6892).StageIcon;
+          let VoiceNormalIcon = tmp3(6930).StageIcon;
         } else {
-          VoiceNormalIcon = tmp3(6896).VoiceNormalIcon;
+          VoiceNormalIcon = tmp3(6934).VoiceNormalIcon;
         }
         obj3 = { size: "xs", style: null };
         obj3[1] = items3;
@@ -172,6 +167,6 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
     }
   }
 });
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/channel_list_v2/native/components/VocalChannelJoinButton.tsx");
+const result = require("set").fileFinishedImporting("modules/channel_list_v2/native/components/VocalChannelJoinButton.tsx");
 
 export default memoResult;

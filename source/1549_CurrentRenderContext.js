@@ -4,5 +4,7 @@
 // Dependencies: [19]
 
 // Module 1549 (CurrentRenderContext)
+import noopAll from "noop" /* 19 */;
 
-export const CurrentRenderContext = require("noop").createContext(undefined);
+
+export const CurrentRenderContext = noopAll.createContext(undefined);

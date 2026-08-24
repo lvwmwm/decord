@@ -4,6 +4,8 @@
 // Dependencies: [638, 606, 639]
 
 // Module 637 (toNumber)
+import isSymbol from "isSymbol" /* 638 */;
+
 const re2 = /^[-+]0x[0-9a-f]+$/i;
 const re3 = /^0b[01]+$/i;
 const re4 = /^0o[0-7]+$/i;
@@ -11,7 +13,7 @@ const re4 = /^0o[0-7]+$/i;
 export default function toNumber(num) {
   if (typeof num === "number") {
     return num;
-  } else if (require(638) /* isSymbol */(num)) {
+  } else if (isSymbol(num)) {
     return NaN;
   } else {
     let tmp = num;

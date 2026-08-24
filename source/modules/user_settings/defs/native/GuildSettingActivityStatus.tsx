@@ -1,71 +1,74 @@
-// Module ID: 15022
-// Function ID: 15023
+// Module ID: 15086
+// Function ID: 15087
 // Name: toggle
-// Dependencies: [15011, 8198, 4066, 7357, 10669, 1236, 2]
+// Dependencies: [15075, 8238, 4069, 7395, 10708, 1236, 2]
 
-// Module 15022 (toggle)
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
-import createToggle from "createToggle";
+// Module 15086 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds" /* 7395 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15075 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let c3;
-let obj1;
 ({ getSelectedGuildId: obj1, useUserSafetySettingsSelectedGuildStore: c3 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.IQO6Bi);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.IQO6Bi);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.TUKMak);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.TUKMak);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: MobileUserSettings.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
-    const ActivityRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = explicitContentFromProto.ActivityRestrictedGuilds;
     const setting = ActivityRestrictedGuilds.useSetting();
     return !setting.includes(callback2().selectedGuildId);
   },
   onValueChange(arg0) {
     const tmp = callback();
-    const sanitizedActivityRestrictedGuilds = require(7357) /* getSanitizedRestrictedGuilds */.getSanitizedActivityRestrictedGuilds();
+    const sanitizedActivityRestrictedGuilds = getSanitizedRestrictedGuilds.getSanitizedActivityRestrictedGuilds();
     if (arg0) {
       sanitizedActivityRestrictedGuilds.delete(tmp);
     } else {
       sanitizedActivityRestrictedGuilds.add(tmp);
     }
-    const ActivityRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = explicitContentFromProto.ActivityRestrictedGuilds;
     const items = [...sanitizedActivityRestrictedGuilds];
     ActivityRestrictedGuilds.updateSetting(items);
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.IQO6Bi);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.IQO6Bi);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.TUKMak);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.TUKMak);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: MobileUserSettings.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
-    const ActivityRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = explicitContentFromProto.ActivityRestrictedGuilds;
     const setting = ActivityRestrictedGuilds.useSetting();
     return !setting.includes(callback2().selectedGuildId);
   },
   onValueChange(arg0) {
     const tmp = callback();
-    const sanitizedActivityRestrictedGuilds = require(7357) /* getSanitizedRestrictedGuilds */.getSanitizedActivityRestrictedGuilds();
+    const sanitizedActivityRestrictedGuilds = getSanitizedRestrictedGuilds.getSanitizedActivityRestrictedGuilds();
     if (arg0) {
       sanitizedActivityRestrictedGuilds.delete(tmp);
     } else {
       sanitizedActivityRestrictedGuilds.add(tmp);
     }
-    const ActivityRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = explicitContentFromProto.ActivityRestrictedGuilds;
     const items = [...sanitizedActivityRestrictedGuilds];
     ActivityRestrictedGuilds.updateSetting(items);
   }
 };
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/GuildSettingActivityStatus.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/GuildSettingActivityStatus.tsx");
 
 export default toggle;

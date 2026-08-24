@@ -1,15 +1,16 @@
-// Module ID: 17025
-// Function ID: 17026
+// Module ID: 17118
+// Function ID: 17119
 // Name: handleChannelCreate
-// Dependencies: [5, 13320, 676, 5038, 13319, 7211, 2]
+// Dependencies: [5, 13378, 676, 5043, 13377, 7249, 2]
 
-// Module 17025 (handleChannelCreate)
-import _safeTransitionTo from "_safeTransitionTo";
-import { MIDJOURNEY_GUILD_ID } from "MIDJOURNEY_GUILD_ID";
-import { Routes } from "ME";
-import "initialize";
+// Module 17118 (handleChannelCreate)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { MIDJOURNEY_GUILD_ID } from "MIDJOURNEY_GUILD_ID" /* 13378 */;
+import { Routes } from "ME" /* 676 */;
 
 const require = arg1;
+initializeDefault;
 class MidjourneyOnboardingManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -31,7 +32,7 @@ MidjourneyOnboardingManager.prototype["handleChannelCreate"] = function handleCh
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -47,24 +48,24 @@ MidjourneyOnboardingManager.prototype["handleChannelCreate"] = function handleCh
             return obj;
           } else {
             const id = tmp2;
-            if (obj6.isEligibleForMidjourneyRedirect(outer1_0)) {
+            if (obj6.isEligibleForMidjourneyRedirect(closure_1_0)) {
               v0 = 1;
               dependencyMap = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = tmp22(13319).hasRedirectedToGuild(outer1_4);
+              obj1 = { value: null, done: false };
+              obj1[0] = tmp22(13377).hasRedirectedToGuild(closure_1_4);
               return obj1;
             } else {
               dependencyMap = 3;
             }
-            obj6 = outer1_0(13319);
-            tmp22 = outer1_0;
+            obj6 = closure_1_0(13377);
+            tmp22 = closure_1_0;
           }
         } else if (arg0 === 1) {
           dependencyMap = 3;
           throw arg1;
         } else if (arg0 !== 2) {
-          v0(7211)(outer1_5.CHANNEL(null, id.id));
-          const tmp9 = v0(7211);
+          v0(7249)(closure_1_5.CHANNEL(null, id.id));
+          const tmp9 = v0(7249);
         }
         dependencyMap = 3;
         obj = { value: null, done: true };
@@ -78,6 +79,6 @@ MidjourneyOnboardingManager.prototype["handleChannelCreate"] = function handleCh
   })();
 };
 const midjourneyOnboardingManager = new MidjourneyOnboardingManager();
-const result = require("ME").fileFinishedImporting("modules/midjourney_onboarding/MidjourneyOnboardingManager.tsx");
+const result = require("set").fileFinishedImporting("modules/midjourney_onboarding/MidjourneyOnboardingManager.tsx");
 
 export default midjourneyOnboardingManager;

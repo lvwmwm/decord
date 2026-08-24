@@ -1,28 +1,30 @@
-// Module ID: 8747
-// Function ID: 8748
+// Module ID: 8784
+// Function ID: 8785
 // Name: toggleUseActivityUrlOverride
 // Dependencies: [709, 2]
 // Exports: markActivityUsed, setActivityUrlOverride, toggleUseActivityUrlOverride, updateFilter
 
-// Module 8747 (toggleUseActivityUrlOverride)
-const result = require("set").fileFinishedImporting("modules/activities/DeveloperActivityShelfActionCreators.tsx");
+// Module 8784 (toggleUseActivityUrlOverride)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/activities/DeveloperActivityShelfActionCreators.tsx");
 
 export const toggleUseActivityUrlOverride = function toggleUseActivityUrlOverride() {
-  importDefault(709).dispatch({ type: "DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE" });
+  dispatcherDefault.dispatch({ type: "DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE" });
 };
 export const setActivityUrlOverride = function setActivityUrlOverride(activityUrlOverride) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE", activityUrlOverride };
   obj.dispatch(obj);
 };
 export const markActivityUsed = function markActivityUsed(id) {
-  let obj = importDefault(709);
-  obj = { type: "DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED", applicationId: id, timestamp: null };
-  obj[2] = new Date().getTime();
+  let obj = dispatcherDefault;
+  obj = { type: "DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED", applicationId: id, timestamp: new Date().getTime() };
   obj.dispatch(obj);
 };
 export const updateFilter = function updateFilter(filter) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER", filter };
   obj.dispatch(obj);
 };

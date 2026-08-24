@@ -1,11 +1,15 @@
-// Module ID: 10171
-// Function ID: 10172
+// Module ID: 10210
+// Function ID: 10211
 // Name: items
-// Dependencies: [676, 10172, 1236, 2]
+// Dependencies: [676, 10211, 1236, 2]
 
-// Module 10171 (items)
-import { TOKEN_REGEX } from "ME";
+// Module 10210 (items)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import parsedItemUsesEveryoneRoleDefault from "parsedItemUsesEveryoneRole" /* 10211 */;
 
+const TOKEN_REGEX = ME.TOKEN_REGEX;
 const items = [
   {
     check(arg0, getGuildId) {
@@ -13,13 +17,13 @@ const items = [
         if (null == getGuildId.getGuildId()) {
           return false;
         } else {
-          const extractEveryoneRoleResult = importDefault(10172).extractEveryoneRole(arg0, getGuildId);
+          const extractEveryoneRoleResult = parsedItemUsesEveryoneRoleDefault.extractEveryoneRole(arg0, getGuildId);
           if (null == extractEveryoneRoleResult) {
             return false;
           } else {
-            let tmp8Result = tmp8(10172);
+            let tmp8Result = tmp8(10211);
             if (tmp8Result.shouldShowEveryoneGuard(extractEveryoneRoleResult, getGuildId)) {
-              tmp8Result = tmp8(10172);
+              tmp8Result = tmp8(10211);
               const everyoneMemberCountResult = tmp8Result.everyoneMemberCount(extractEveryoneRoleResult, getGuildId);
               const _Math = Math;
               const _Math2 = Math;
@@ -37,28 +41,28 @@ const items = [
               obj[1] = result.toLocaleString();
               obj[0] = intl.formatToPlainString(_2YaiQ1, obj);
               const intl2 = tmp6(1236).intl;
-              obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.mVyrtu);
+              obj[1] = intl2.string(getSystemLocale.t.mVyrtu);
               return obj;
             } else {
               return false;
             }
           }
-          const obj5 = importDefault(10172);
+          const obj5 = parsedItemUsesEveryoneRoleDefault;
         }
       } else {
         return false;
       }
     },
     analyticsType: "@Everyone Warning",
-    animation: "call"
+    animation: "accessibilityLabel"
   },
   {
     check(arg0) {
       let isMatch = TOKEN_REGEX.test(arg0);
       if (isMatch) {
         const obj = { body: null };
-        const intl = require(1236) /* getSystemLocale */.intl;
-        obj[0] = intl.string(require(1236) /* getSystemLocale */.t.sTwS1a);
+        const intl = getSystemLocale.intl;
+        obj[0] = intl.string(getSystemLocale.t.sTwS1a);
         isMatch = obj;
       }
       return isMatch;
@@ -66,6 +70,6 @@ const items = [
     analyticsType: "API Token Warning"
   }
 ];
-let result = require("getSystemLocale").fileFinishedImporting("utils/ChatRestrictions.tsx");
+let result = set.fileFinishedImporting("utils/ChatRestrictions.tsx");
 
 export const RESTRICTIONS = items;

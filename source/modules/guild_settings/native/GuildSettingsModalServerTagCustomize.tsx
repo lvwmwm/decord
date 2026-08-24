@@ -1,48 +1,45 @@
-// Module ID: 16808
-// Function ID: 16809
+// Module ID: 16901
+// Function ID: 16902
 // Name: PX_16
-// Dependencies: [32, 19, 17, 8854, 8875, 8168, 21, 712, 4661, 8877, 1494, 8855, 589, 8856, 8874, 4342, 16809, 2007, 6549, 9532, 8083, 4733, 8071, 1236, 4330, 4734, 16810, 16814, 2]
+// Dependencies: [32, 19, 17, 8891, 8912, 8207, 21, 712, 4668, 8914, 1494, 8892, 589, 8893, 8911, 4346, 16902, 2008, 6580, 9569, 8122, 4738, 8110, 1236, 4334, 4739, 16903, 16907, 2]
 // Exports: default
 
-// Module 16808 (PX_16)
-import _slicedToArray from "_slicedToArray";
-import GuildProfileLoadingError from "GuildProfileLoadingError";
-import { View } from "asyncRequireImpl";
-import { GuildProfileFetchStatus } from "handleUpdateStart";
-import handleFormInit from "handleFormInit";
-import { BADGES } from "items";
-import jsxProd from "Stack";
-import createCacheKey from "createCacheKey";
+// Module 16901 (PX_16)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { GuildProfileFetchStatus } from "handleUpdateStart" /* 8891 */;
+import closure_7 from "handleFormInit" /* 8912 */;
+import { BADGES } from "items" /* 8207 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
 const require = arg1;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
-const PX_8 = require("Themes").space.PX_8;
-const PX_16 = require("Themes").space.PX_16;
+const PX_8 = ThemesDefault.space.PX_8;
+const PX_16 = ThemesDefault.space.PX_16;
 createCacheKey = { container: { flex: 1 }, containerContent: { paddingTop: 16, paddingHorizontal: PX_16 }, warning: null, warningText: null };
-createCacheKey = { flexDirection: "row", gap: require("Themes").space.PX_8, alignItems: "flex-start", marginTop: require("Themes").space.PX_8, padding: require("Themes").space.PX_12, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey = { flexDirection: "row", gap: ThemesDefault.space.PX_8, alignItems: "flex-start", marginTop: ThemesDefault.space.PX_8, padding: ThemesDefault.space.PX_12, borderRadius: ThemesDefault.radii.md, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
 createCacheKey[2] = createCacheKey;
 createCacheKey[3] = { flex: 1 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalServerTagCustomize.tsx");
+let closure_13 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalServerTagCustomize.tsx");
 
 export default function GuildSettingsModalServerTagCustomize(guildId) {
-  let c6;
-  let tmp16;
   guildId = guildId.guildId;
   let fetchStatus;
   let stateFromStores;
   let str;
   let badge;
   let stateFromStores2;
-  let GuildProfileFetchStatus;
+  GuildProfileFetchStatus = undefined;
   let callback2;
-  let tmp = createCacheKey();
+  let tmp = callback2();
   let obj = guildId(stateFromStores[9]);
   const result = obj.canUseMobileServerTagSettings(guildId);
   const rounded = Math.floor((fetchStatus(stateFromStores[10])().width - 2 * PX_16 - 4 * PX_8) / 5);
-  let obj1 = guildId(stateFromStores[11]);
+  obj1 = guildId(stateFromStores[11]);
   let guildProfile = obj1.useGuildProfile(guildId);
   fetchStatus = guildProfile.fetchStatus;
   let obj2 = guildId(stateFromStores[12]);

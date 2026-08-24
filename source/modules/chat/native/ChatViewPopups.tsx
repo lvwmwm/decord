@@ -1,42 +1,43 @@
-// Module ID: 11821
-// Function ID: 11822
+// Module ID: 11870
+// Function ID: 11871
 // Name: ChatViewPopups
-// Dependencies: [19, 11822, 11826, 11834, 2]
+// Dependencies: [19, 11871, 11875, 11883, 2]
 
-// Module 11821 (ChatViewPopups)
-import importAllResult from "noop";
+// Module 11870 (ChatViewPopups)
+import useIsHubRealNamePromptShowingDefault from "useIsHubRealNamePromptShowing" /* 11871 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 class ChatViewPopups {
   constructor(arg0) {
     guildId = global.guildId;
-    useRef = undefined;
-    c2 = undefined;
-    channelId = undefined;
-    useRef = channelId.useRef(false);
+    closure_1 = undefined;
+    closure_2 = undefined;
+    closure_3 = undefined;
+    closure_1 = closure_3.useRef(false);
     tmp = require("useIsHubRealNamePromptShowing")(guildId);
-    c2 = tmp;
+    closure_2 = tmp;
     obj = require("useShowWelcomeModal");
     showWelcomeModal = obj.useShowWelcomeModal(guildId, global.channelId);
-    channelId = showWelcomeModal;
+    closure_3 = showWelcomeModal;
     items = [, , ];
     items[0] = guildId;
     items[1] = showWelcomeModal;
     items[2] = tmp;
-    effect = channelId.useEffect(() => {
+    effect = closure_3.useEffect(() => {
       if (!ref.current) {
-        if (_undefined) {
+        if (dependencyMap) {
           let obj = { guildId: null, onHide: null };
           obj[0] = guildId;
           obj[1] = function onHide() {
             closure_1.current = false;
             return false;
           };
-          ref(_undefined[3]).open(obj);
+          ref(11883).open(obj);
           tmp.current = true;
-          const obj3 = ref(_undefined[3]);
+          const obj3 = ref(11883);
         } else if (showWelcomeModal) {
-          obj = guildId(_undefined[2]);
+          obj = guildId(11875);
           obj = { guildId: null, onHide: null };
           obj[0] = guildId;
           obj[1] = function onHide() {
@@ -53,7 +54,7 @@ class ChatViewPopups {
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo(ChatViewPopups);
-let result = require("useShowWelcomeModal").fileFinishedImporting("modules/chat/native/ChatViewPopups.tsx");
+let result = require("set").fileFinishedImporting("modules/chat/native/ChatViewPopups.tsx");
 
 export default memoResult;
 export { ChatViewPopups };

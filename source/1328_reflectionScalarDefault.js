@@ -4,14 +4,16 @@
 // Dependencies: [1320, 1325, 1314]
 
 // Module 1328 (reflectionScalarDefault)
-const require = arg1;
+import RepeatType from "RepeatType" /* 1320 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.reflectionScalarDefault = function reflectionScalarDefault(T, L) {
   let STRING = L;
   if (L === undefined) {
-    STRING = require(1320) /* RepeatType */.LongType.STRING;
+    STRING = RepeatType.LongType.STRING;
   }
-  if (require(1320) /* RepeatType */.ScalarType.BOOL === T) {
+  if (RepeatType.ScalarType.BOOL === T) {
     return false;
   } else {
     if (tmp3(1320).ScalarType.UINT64 !== T) {

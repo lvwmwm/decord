@@ -1,26 +1,33 @@
-// Module ID: 12537
-// Function ID: 12538
+// Module ID: 12591
+// Function ID: 12592
 // Name: JoinStageView
-// Dependencies: [19, 21, 6708, 6703, 12491, 1236, 8063, 12505, 2]
+// Dependencies: [19, 21, 6745, 6740, 12545, 1236, 8102, 12559, 2]
 // Exports: default
 
-// Module 12537 (JoinStageView)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 12591 (JoinStageView)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import sortKey from "sortKey" /* 6740 */;
+import useStageParticipants from "useStageParticipants" /* 6745 */;
+import fillChunk from "fillChunk" /* 8102 */;
+import stylesDefault from "styles" /* 12545 */;
+import AgeVerificationSpeakerActionSheet from "AgeVerificationSpeakerActionSheet" /* 12559 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("useStageParticipants").fileFinishedImporting("modules/stage_channels/native/components/JoinStageView.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/components/JoinStageView.tsx");
 
 export default function JoinStageView(channel) {
   channel = channel.channel;
-  let obj = require(6708) /* useStageParticipants */;
-  const stageParticipants = obj.useStageParticipants(channel.id, require(6703) /* sortKey */.StageChannelParticipantNamedIndex.SPEAKER);
+  let obj = useStageParticipants;
+  const stageParticipants = obj.useStageParticipants(channel.id, sortKey.StageChannelParticipantNamedIndex.SPEAKER);
   const found = stageParticipants.filter((type) => type.type === callback(table[3]).StageChannelParticipantTypes.VOICE);
   obj = { title: null, body: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.WZOeQv);
-  const tmp2 = importDefault(12491);
-  obj[1] = require(8063) /* fillChunk */.getParticipantNamesText(channel, found);
-  obj[2] = jsx(require(12505) /* AgeVerificationSpeakerActionSheet */.JoinStagePrompt, { channel });
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.WZOeQv);
+  const tmp2 = stylesDefault;
+  obj[1] = fillChunk.getParticipantNamesText(channel, found);
+  obj[2] = jsx(AgeVerificationSpeakerActionSheet.JoinStagePrompt, { channel });
   return <tmp2 title={null} body={null}>{null}</tmp2>;
 };

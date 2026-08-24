@@ -1,22 +1,20 @@
-// Module ID: 8375
-// Function ID: 8376
+// Module ID: 8414
+// Function ID: 8415
 // Name: guildHasTag
-// Dependencies: [1990, 1910, 1922, 8168, 676, 589, 4027, 2]
+// Dependencies: [1991, 1910, 1922, 8207, 676, 589, 4030, 2]
 // Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 8375 (guildHasTag)
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import items from "items";
-import { GuildFeatures } from "ME";
+// Module 8414 (guildHasTag)
+import GuildMemberFlags from "GuildMemberFlags" /* 4030 */;
+import closure_2 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import items from "items" /* 8207 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
-let GuildTagBadgeMediaProxySizes;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ GuildTagBadgeMediaProxySizes, GuildTagBadgeMediaProxySizesMobile: c5, GuildTagBadgeSize: closure_6 } = items);
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_tag/GuildTagUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_tag/GuildTagUtils.tsx");
 
 export const guildHasTag = function guildHasTag(guild) {
   let tag;
@@ -54,13 +52,12 @@ export const getUserPrimaryGuild = function getUserPrimaryGuild(primaryGuild) {
   }
 };
 export const useUserPrimaryGuild = function useUserPrimaryGuild(arg0) {
-  let profile;
   let tmp = arg0;
   const _require = arg0;
   let obj = _require(589);
-  const items = [createGuildRecordFromRust];
+  const items = [closure_3];
   const items1 = [arg0];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getGuild(closure_0), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_3.getGuild(closure_0), items1);
   if (null != arg0) {
     let tmp3 = stateFromStores;
     if (null != stateFromStores) {
@@ -85,18 +82,18 @@ export const useUserPrimaryGuild = function useUserPrimaryGuild(arg0) {
 };
 export const useShouldDisplayGuildTag = function useShouldDisplayGuildTag(arg0, arg1, arg2) {
   const _require = arg0;
-  const dependencyMap = arg1;
+  dependencyMap = arg1;
   let tmp = arg2;
   let obj = _require(589);
-  const items = [mergeGuildAvatar];
+  const items = [closure_4];
   const items1 = [arg0];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getUser(closure_0), items1);
-  const items2 = [trackCommunicationDisabled];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getUser(closure_0), items1);
+  const items2 = [closure_2];
   const items3 = [arg1, arg0];
   const stateFromStores1 = _require(589).useStateFromStores(items2, () => {
     if (null != table) {
       if (null != callback) {
-        const member = outer1_2.getMember(tmp, tmp2);
+        const member = closure_1_2.getMember(tmp, tmp2);
         return callback(table[6]).hasAutomodQuarantinedProfile(member);
       }
     }
@@ -137,8 +134,8 @@ export const shouldDisplayGuildTag = function shouldDisplayGuildTag(id, merged) 
     if (tmp5) {
       let result = null != merged && null != id;
       if (result) {
-        result = require(4027) /* GuildMemberFlags */.hasAutomodQuarantinedProfile(member.getMember(merged, id));
-        const obj3 = require(4027) /* GuildMemberFlags */;
+        result = GuildMemberFlags.hasAutomodQuarantinedProfile(member.getMember(merged, id));
+        const obj3 = GuildMemberFlags;
       }
       tmp5 = !result;
     }

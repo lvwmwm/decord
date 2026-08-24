@@ -1,16 +1,16 @@
-// Module ID: 9126
-// Function ID: 9127
+// Module ID: 9163
+// Function ID: 9164
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 9126 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
+// Module 9163 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { enabled: false, dense: false };
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-06-similar-games-desktop", defaultConfig: obj, variations: { 0: obj, 1: { enabled: true, dense: true }, 2: { enabled: true, dense: false } } });
 const apexExperiment1 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-06-similar-games-mobile", defaultConfig: obj, variations: { 0: obj, 1: { enabled: true, dense: true }, 2: { enabled: true, dense: false } } });
-const result = require("set").fileFinishedImporting("modules/game_profile/SimilarGamesExperiments.tsx");
+const result = set.fileFinishedImporting("modules/game_profile/SimilarGamesExperiments.tsx");
 
 export const GameProfileSimilarGamesDesktopExperiment = apexExperiment;
 export const GameProfileSimilarGamesMobileExperiment = apexExperiment1;

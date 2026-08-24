@@ -1,30 +1,34 @@
-// Module ID: 15440
-// Function ID: 15441
+// Module ID: 15504
+// Function ID: 15505
 // Name: ServerPreviewPill
-// Dependencies: [19, 17, 21, 4661, 712, 4734, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4739, 1236, 2]
 // Exports: default
 
-// Module 15440 (ServerPreviewPill)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15504 (ServerPreviewPill)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { pill: null, text: null };
-createCacheKey = { paddingHorizontal: 10, paddingVertical: require("Themes").space.PX_4, borderRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.WHITE };
+createCacheKey = { paddingHorizontal: 10, paddingVertical: ThemesDefault.space.PX_4, borderRadius: ThemesDefault.radii.lg, backgroundColor: ThemesDefault.colors.WHITE };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { color: require("Themes").colors.BLACK, textTransform: "uppercase", letterSpacing: 0.5 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { color: require("Themes").colors.BLACK, textTransform: "uppercase", letterSpacing: 0.5 };
-const result = require("jsxProd").fileFinishedImporting("modules/lurker_mode/native/ServerPreviewPill.tsx");
+createCacheKey[1] = { color: ThemesDefault.colors.BLACK, textTransform: "uppercase", letterSpacing: 0.5 };
+let closure_4 = createCacheKey.createStyles(createCacheKey);
+const obj1 = { color: ThemesDefault.colors.BLACK, textTransform: "uppercase", letterSpacing: 0.5 };
+const result = require("set").fileFinishedImporting("modules/lurker_mode/native/ServerPreviewPill.tsx");
 
 export default function ServerPreviewPill() {
-  const tmp = createCacheKey();
+  const tmp = callback();
   let obj = { style: tmp.pill, accessibilityRole: "text", children: null };
   obj = { variant: "text-xs/bold", style: tmp.text, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.KNhFgD);
-  obj[2] = jsx(require(4734) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text, children: null });
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.KNhFgD);
+  obj[2] = jsx(Text.Text, { variant: "text-xs/bold", style: tmp.text, children: null });
   return <View variant="text-xs/bold" style={tmp.text}>{null}</View>;
 };

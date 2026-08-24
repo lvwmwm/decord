@@ -1,41 +1,38 @@
-// Module ID: 12119
-// Function ID: 12120
+// Module ID: 12171
+// Function ID: 12172
 // Name: UserProfileActivityTimebar
-// Dependencies: [19, 17, 676, 21, 4661, 712, 1367, 12120, 4734, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 1367, 12172, 4739, 2]
 // Exports: default
 
-// Module 12119 (UserProfileActivityTimebar)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { Fonts } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12171 (UserProfileActivityTimebar)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import Text from "Text" /* 4739 */;
+import useActivityTimerDefault from "useActivityTimer" /* 12172 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { Fonts } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { bar: null, progress: null, textRow: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, borderRadius: require("Themes").radii.xs, height: 4, marginBottom: 4 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: ThemesDefault.radii.xs, height: 4, marginBottom: 4 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { backgroundColor: require("Themes").colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: require("Themes").radii.xs, height: "100%", minWidth: 4 };
+createCacheKey[1] = { backgroundColor: ThemesDefault.colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: ThemesDefault.radii.xs, height: "100%", minWidth: 4 };
 createCacheKey[2] = { flexDirection: "row", justifyContent: "space-between" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { backgroundColor: require("Themes").colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: require("Themes").radii.xs, height: "100%", minWidth: 4 };
-const result = require("ME").fileFinishedImporting("modules/user_profile/native/UserProfileActivityTimebar.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const obj1 = { backgroundColor: ThemesDefault.colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: ThemesDefault.radii.xs, height: "100%", minWidth: 4 };
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileActivityTimebar.tsx");
 
 export default function UserProfileActivityTimebar(arg0) {
-  let duration;
-  let elapsed;
-  let end;
-  let percentage;
-  let start;
-  let style;
   ({ start, end, style } = arg0);
-  const tmp2 = importDefault(1367)("UserProfileActivityTimebar");
-  const tmp3 = createCacheKey();
+  const tmp2 = useIsMobileVisualRefreshExperimentEnabledDefault("UserProfileActivityTimebar");
+  const tmp3 = callback2();
   let tmp5;
-  ({ elapsed, duration, percentage } = importDefault(12120)({ start, end }));
+  ({ elapsed, duration, percentage } = useActivityTimerDefault({ start, end }));
   if (!tmp2) {
     let obj = { fontFamily: null };
     obj[0] = Fonts.CODE_NORMAL;
@@ -46,26 +43,24 @@ export default function UserProfileActivityTimebar(arg0) {
   items = [tmp3.progress, { width: `${100 * percentage}%` }];
   const items1 = [callback(View, obj), ];
   const obj2 = { style: tmp3.textRow, children: null };
-  const obj3 = { variant: "text-xs/normal", style: tmp5, tabularNumbers: null, color: null, children: null };
-  obj3[2] = tmp2;
+  const obj3 = { variant: "text-xs/normal", style: tmp5, tabularNumbers: tmp2, color: null, children: null };
   let str;
   if (tmp2) {
     str = "text-subtle";
   }
   obj3[3] = str;
-  let tmp10Result = tmp10(12120);
+  let tmp10Result = tmp10(12172);
   obj3[4] = tmp10Result.formatTime(elapsed);
-  const items2 = [callback(require(4734) /* Text */.Text, obj3), ];
-  const obj4 = { variant: "text-xs/normal", style: tmp5, tabularNumbers: null, color: null, children: null };
-  obj4[2] = tmp2;
+  const items2 = [callback(Text.Text, obj3), ];
+  const obj4 = { variant: "text-xs/normal", style: tmp5, tabularNumbers: tmp2, color: null, children: null };
   let str2;
   if (tmp2) {
     str2 = "text-subtle";
   }
   obj4[3] = str2;
-  tmp10Result = tmp10(12120);
+  tmp10Result = tmp10(12172);
   obj4[4] = tmp10Result.formatTime(duration);
-  items2[1] = callback(require(4734) /* Text */.Text, obj4);
+  items2[1] = callback(Text.Text, obj4);
   obj2[1] = items2;
   items1[1] = closure_6(View, obj2);
   obj[1] = items1;

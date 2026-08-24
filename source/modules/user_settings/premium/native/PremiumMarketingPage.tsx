@@ -1,28 +1,25 @@
-// Module ID: 12896
-// Function ID: 12897
+// Module ID: 12951
+// Function ID: 12952
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 676, 1388, 1924, 21, 4661, 712, 6289, 12846, 12847, 1500, 7139, 7924, 1629, 12897, 4115, 7927, 7931, 4196, 1377, 1379, 12664, 1236, 8037, 4039, 5356, 12898, 8624, 698, 12903, 4734, 12905, 8038, 9326, 12906, 12907, 12924, 12927, 2]
+// Dependencies: [32, 19, 17, 676, 1388, 1924, 21, 4668, 712, 6320, 12901, 12902, 1500, 7177, 7963, 1629, 12952, 4119, 7966, 7970, 4200, 1377, 1379, 12718, 1236, 8076, 4042, 5361, 12953, 8661, 698, 12958, 4739, 12960, 8077, 9363, 12961, 12962, 12979, 12982, 2]
 // Exports: default
 
-// Module 12896 (PremiumMarketingPage)
-import Text from "Text";
-import MarketingComponentType from "MarketingComponentType";
-import get_ActivityIndicator from "module_4115";
-import { AnalyticEvents } from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { FractionalPremiumStates } from "GuildFeatures";
-import jsxProd from "DismissibleContent";
-import createCacheKey from "createCacheKey";
+// Module 12951 (PremiumMarketingPage)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { FractionalPremiumStates } from "GuildFeatures" /* 1924 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let closure_6;
-let unpackModuleId;
 const require = arg1;
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 createCacheKey = { container: { display: "flex" }, scrollContainer: { flexDirection: "column", alignItems: "center", marginTop: 16 }, arrowIcon: null, backButton: null, sectionWithTopMargin: null, sectionWithPadding: null, sectionWidth: null, accountCreditContainer: null, accountCreditContainerWithSpacing: null, themedBackground: null, backButtonBackground: null, promotionCardHeader: null };
-createCacheKey = { tintColor: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey = { tintColor: ThemesDefault.colors.TEXT_DEFAULT };
 createCacheKey[2] = createCacheKey;
 let items = [{ scaleX: -1 }];
 createCacheKey[3] = { transform: items, position: "absolute", left: 16 };
@@ -35,25 +32,11 @@ createCacheKey[9] = { backgroundColor: require("result").DARK_PRIMARY_700_LIGHT_
 let obj1 = { backgroundColor: require("result").DARK_PRIMARY_700_LIGHT_WHITE_500 };
 createCacheKey[10] = { backgroundColor: require("result").TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
 createCacheKey[11] = { marginBottom: 16, marginHorizontal: "auto", textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_12 = createCacheKey.createStyles(createCacheKey);
 let obj2 = { backgroundColor: require("result").TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingPage.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingPage.tsx");
 
 export default function PremiumMarketingPage(userHasSubscription) {
-  let accountCredit;
-  let applicationId;
-  let billingInfo;
-  let c3;
-  let c4;
-  let c5;
-  let enabled;
-  let entitlements;
-  let isFullScreenPresentation;
-  let onClose;
-  let onPaymentDismiss;
-  let onPaymentSuccess;
-  let premiumFeatureCardOrder;
-  let subscriptionDetails;
   userHasSubscription = userHasSubscription.userHasSubscription;
   ({ applicationId, onClose, entitlements, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation } = userHasSubscription);
   ({ subscriptionDetails, billingInfo, accountCredit, premiumFeatureCardOrder } = userHasSubscription);
@@ -65,17 +48,17 @@ export default function PremiumMarketingPage(userHasSubscription) {
   let callback;
   let React;
   c5 = undefined;
-  let c6;
-  let closure_7;
-  let closure_8;
-  let FractionalPremiumStates;
+  enabled = undefined;
+  closure_7 = undefined;
+  closure_8 = undefined;
+  FractionalPremiumStates = undefined;
   let sharedValue;
   let promotionMarketingComponent;
   onClose = undefined;
   let obj = userHasSubscription(analyticsLocations[10]);
   const commonTriggerPoint = obj.useCommonTriggerPoint(userHasSubscription(analyticsLocations[11]).OpenNitroTriggerPoint);
   const tmp4 = onClose();
-  let obj1 = userHasSubscription(analyticsLocations[12]);
+  obj1 = userHasSubscription(analyticsLocations[12]);
   navigation = obj1.useNavigation();
   analyticsLocations = navigation(analyticsLocations[13])().analyticsLocations;
   let obj2 = React;
@@ -93,7 +76,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
   if (!userHasSubscription) {
     tmp9 = enabled;
   }
-  c6 = tmp9;
+  enabled = tmp9;
   closure_7 = obj2.useRef(0);
   closure_8 = obj2.useRef(0);
   FractionalPremiumStates = obj2.useRef(0);
@@ -185,7 +168,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
         obj.track(ref.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, obj);
         _undefined(true);
       }
-      if (c6) {
+      if (enabled) {
         if (c5) {
           let current = ref3.current;
         } else {

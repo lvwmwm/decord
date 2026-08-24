@@ -1,19 +1,20 @@
-// Module ID: 16704
-// Function ID: 16705
+// Module ID: 16800
+// Function ID: 16801
 // Name: handleVoiceStateUpdates
-// Dependencies: [1218, 1391, 4994, 4021, 1979, 1922, 676, 5038, 1399, 16705, 686, 7427, 2]
+// Dependencies: [1218, 1391, 4999, 4024, 1980, 1922, 676, 5043, 1399, 16801, 686, 7465, 2]
 
-// Module 16704 (handleVoiceStateUpdates)
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import reinjectEphemerals from "reinjectEphemerals";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import handleConnectionOpen from "handleConnectionOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { MessageFlags } from "ME";
-import "initialize";
+// Module 16800 (handleVoiceStateUpdates)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "reinjectEphemerals" /* 4999 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_7 from "handleConnectionOpen" /* 1980 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import { MessageFlags } from "ME" /* 676 */;
 
 const require = arg1;
+initializeDefault;
 class StageChannelRequestToSpeakMessageManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -24,15 +25,13 @@ class StageChannelRequestToSpeakMessageManager extends tmp2 {
 StageChannelRequestToSpeakMessageManager.prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(voiceStates) {
   voiceStates = voiceStates.voiceStates;
   const item = voiceStates.forEach((requestToSpeakTimestamp) => {
-    let channelId;
-    let userId;
     ({ channelId, userId } = requestToSpeakTimestamp);
     requestToSpeakTimestamp = requestToSpeakTimestamp.requestToSpeakTimestamp;
     if (voiceChannelId.getVoiceChannelId() === channelId) {
       if (requestToSpeakTimestamp.suppress) {
         if (null != channelId) {
           if (userId !== id.getId()) {
-            if (getUncachedChannelPermissions.can(userId(table[8]).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel.getChannel(channelId))) {
+            if (closure_6.can(userId(table[8]).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel.getChannel(channelId))) {
               if (null != requestToSpeakTimestamp) {
                 user = user.getUser(userId);
                 if (null != user) {
@@ -42,9 +41,9 @@ StageChannelRequestToSpeakMessageManager.prototype["handleVoiceStateUpdates"] = 
               } else {
                 messages = messages.getMessages(channelId);
                 const findNewestResult = messages.findNewest((type) => {
-                  let hasFlagResult = type.type === userId(outer1_2[10]).MessageTypes.STAGE_RAISE_HAND;
+                  let hasFlagResult = type.type === userId(closure_1_2[10]).MessageTypes.STAGE_RAISE_HAND;
                   if (hasFlagResult) {
-                    hasFlagResult = type.hasFlag(outer1_9.EPHEMERAL);
+                    hasFlagResult = type.hasFlag(closure_1_9.EPHEMERAL);
                   }
                   if (hasFlagResult) {
                     hasFlagResult = type.author.id === userId;
@@ -65,6 +64,6 @@ StageChannelRequestToSpeakMessageManager.prototype["handleVoiceStateUpdates"] = 
   });
 };
 const stageChannelRequestToSpeakMessageManager = new StageChannelRequestToSpeakMessageManager();
-let result = require("reinjectEphemerals").fileFinishedImporting("modules/stage_channels/StageChannelRequestToSpeakMessageManager.tsx");
+let result = require("set").fileFinishedImporting("modules/stage_channels/StageChannelRequestToSpeakMessageManager.tsx");
 
 export default stageChannelRequestToSpeakMessageManager;

@@ -1,45 +1,42 @@
-// Module ID: 8567
-// Function ID: 8568
+// Module ID: 8606
+// Function ID: 8607
 // Name: ChangeEmailWarning
-// Dependencies: [19, 17, 1922, 8565, 676, 21, 4661, 712, 1500, 589, 698, 691, 5447, 4734, 1236, 4745, 8561, 2]
+// Dependencies: [19, 17, 1922, 8604, 676, 21, 4668, 712, 1500, 589, 698, 691, 5452, 4739, 1236, 4750, 8600, 2]
 // Exports: default
 
-// Module 8567 (ChangeEmailWarning)
-import noop from "noop";
-import get_ActivityIndicator from "set";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { COMMON_SCAMS_EDUCATION_HC_ARTICLE as closure_7 } from "ChangeEmailReasons";
-import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8606 (ChangeEmailWarning)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { COMMON_SCAMS_EDUCATION_HC_ARTICLE as closure_7 } from "ChangeEmailReasons" /* 8604 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c4;
-let c5;
-let c9;
 const require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: null, title: null, body: null, buttonContainer: null };
-createCacheKey = { flex: 1, padding: require("Themes").space.PX_16, alignItems: "center", justifyContent: "center" };
+createCacheKey = { flex: 1, padding: ThemesDefault.space.PX_16, alignItems: "center", justifyContent: "center" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginTop: require("Themes").space.PX_16 };
-let obj1 = { marginTop: require("Themes").space.PX_16 };
-createCacheKey[2] = { marginTop: require("Themes").space.PX_8, textAlign: "center" };
-let obj2 = { marginTop: require("Themes").space.PX_8, textAlign: "center" };
-createCacheKey[3] = { flexDirection: "row", gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { flexDirection: "row", gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_16 };
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/verification/native/components/ChangeEmailWarning.tsx");
+createCacheKey[1] = { marginTop: ThemesDefault.space.PX_16 };
+let obj1 = { marginTop: ThemesDefault.space.PX_16 };
+createCacheKey[2] = { marginTop: ThemesDefault.space.PX_8, textAlign: "center" };
+let obj2 = { marginTop: ThemesDefault.space.PX_8, textAlign: "center" };
+createCacheKey[3] = { flexDirection: "row", gap: ThemesDefault.space.PX_8, marginTop: ThemesDefault.space.PX_16 };
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { flexDirection: "row", gap: ThemesDefault.space.PX_8, marginTop: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/verification/native/components/ChangeEmailWarning.tsx");
 
 export default function ChangeEmailWarning(changeEmailReason) {
   changeEmailReason = changeEmailReason.changeEmailReason;
   let navigation;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = changeEmailReason(1500);
   navigation = obj.useNavigation();
-  let obj1 = changeEmailReason(589);
-  const items = [mergeGuildAvatar];
+  obj1 = changeEmailReason(589);
+  const items = [closure_6];
   const items1 = [navigation, changeEmailReason];
   const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
   let tmp7 = null;
@@ -47,12 +44,12 @@ export default function ChangeEmailWarning(changeEmailReason) {
     obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    const items2 = [callback(tmp2(5447).TrafficConeSpotIllustration, {}), , , ];
+    const items2 = [callback(tmp2(5452).TrafficConeSpotIllustration, {}), , , ];
     obj1 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj1[0] = tmp.title;
     const intl = tmp2(1236).intl;
     obj1[4] = intl.string(tmp2(1236).t.hhR7gX);
-    items2[1] = callback(tmp2(4734).Text, obj1);
+    items2[1] = callback(tmp2(4739).Text, obj1);
     const obj2 = { style: null, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary", children: null };
     obj2[0] = tmp.body;
     const intl2 = tmp2(1236).intl;
@@ -62,21 +59,21 @@ export default function ChangeEmailWarning(changeEmailReason) {
     const intl3 = tmp2(1236).intl;
     items3[2] = intl3.string(tmp2(1236).t["3LW10C"]);
     obj2[4] = items3;
-    items2[2] = callback2(tmp2(4734).Text, obj2);
+    items2[2] = callback2(tmp2(4739).Text, obj2);
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.buttonContainer;
     const obj5 = { size: "md", variant: "tertiary", text: null, onPress: null, shrink: true };
     const intl4 = tmp2(1236).intl;
     obj5[2] = intl4.string(tmp2(1236).t.rwTBFs);
     obj5[3] = tmp6;
-    const items4 = [callback(tmp2(4745).Button, obj5), ];
+    const items4 = [callback(tmp2(4750).Button, obj5), ];
     const obj6 = { size: "md", variant: "primary", text: null, onPress: null, shrink: true };
     const intl5 = tmp2(1236).intl;
     obj6[2] = intl5.string(tmp2(1236).t["ETE/oC"]);
     obj6[3] = function onPress() {
       return navigation(table[16]).close();
     };
-    items4[1] = callback(tmp2(4745).Button, obj6);
+    items4[1] = callback(tmp2(4750).Button, obj6);
     obj4[1] = items4;
     items2[3] = callback2(closure_4, obj4);
     obj[1] = items2;

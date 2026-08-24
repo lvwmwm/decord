@@ -1,12 +1,13 @@
-// Module ID: 16167
-// Function ID: 16168
+// Module ID: 16264
+// Function ID: 16265
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 16167 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 16264 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-01-mobile-action-sheet-killswitch", defaultConfig: { disabled: false }, variations: { 0: { disabled: false }, 1: { disabled: true } } });
-const result = require("set").fileFinishedImporting("modules/upsell_tooltip/experiments/MainViewTooltipActionSheetsDisabledExperiment.tsx");
+const result = set.fileFinishedImporting("modules/upsell_tooltip/experiments/MainViewTooltipActionSheetsDisabledExperiment.tsx");
 
 export default apexExperiment;

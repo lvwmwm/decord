@@ -1,18 +1,21 @@
-// Module ID: 9199
-// Function ID: 9200
+// Module ID: 9236
+// Function ID: 9237
 // Name: map
-// Dependencies: [589, 9046, 709, 2]
+// Dependencies: [589, 9083, 709, 2]
 
-// Module 9199 (map)
-import { Store } from "initialize";
-import set from "dispatcher";
+// Module 9236 (map)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isMatchingListeningActivity from "isMatchingListeningActivity" /* 9083 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 let map = new Map();
 let set = new Set();
 let c4 = null;
 let c5 = false;
 let c6 = false;
+const Store = initializeDefault.Store;
 class ContentInventoryOutboxStore extends Store {
 }
 const prototype = ContentInventoryOutboxStore.prototype;
@@ -21,7 +24,7 @@ prototype["getMatchingOutboxEntry"] = function getMatchingOutboxEntry(activity) 
   const value = map.get(activity.userId);
   if (null != value) {
     if (null != activity) {
-      return require(9046) /* isMatchingListeningActivity */.findMatchingEntry(value.entries, activity);
+      return isMatchingListeningActivity.findMatchingEntry(value.entries, activity);
     }
   }
 };
@@ -50,19 +53,19 @@ Object.defineProperty(prototype, "hasInitialized", {
   set: undefined
 });
 ContentInventoryOutboxStore.displayName = "ContentInventoryOutboxStore";
-const contentInventoryOutboxStore = new ContentInventoryOutboxStore(require("dispatcher"), {
+const contentInventoryOutboxStore = new ContentInventoryOutboxStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    const map = new Map();
-    const set = new Set();
-    let c4 = null;
-    let c5 = false;
-    let c6 = true;
+    map = new Map();
+    set = new Set();
+    c4 = null;
+    c5 = false;
+    c6 = true;
   },
   LOGOUT: function handleLogOut() {
-    const map = new Map();
-    const set = new Set();
-    let c4 = null;
-    let c5 = false;
+    map = new Map();
+    set = new Set();
+    c4 = null;
+    c5 = false;
   },
   CONTENT_INVENTORY_FETCH_OUTBOX_START: function handleFetchOutboxStart(userId) {
     set.add(userId.userId);
@@ -79,14 +82,12 @@ const contentInventoryOutboxStore = new ContentInventoryOutboxStore(require("dis
     set.delete(userId.userId);
   },
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_START: function handleDeleteOutboxEntryStart() {
-    let c4 = null;
-    let c5 = true;
+    c4 = null;
+    c5 = true;
   },
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_SUCCESS: function handleDeleteOutboxEntrySuccess(arg0) {
-    let require;
-    let userId;
     ({ entry: require, userId } = arg0);
-    let c4 = null;
+    c4 = null;
     const value = map.get(userId);
     if (null == value) {
       return false;
@@ -97,16 +98,16 @@ const contentInventoryOutboxStore = new ContentInventoryOutboxStore(require("dis
       const merged = Object.assign(value);
       obj.entries = found;
       const result = map.set(userId, obj);
-      let c5 = false;
+      c5 = false;
     }
   },
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_FAILURE: function handleDeleteOutboxEntryFailure(error) {
     error = error.error;
-    let c5 = false;
+    c5 = false;
   },
   CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR: function handleClearError() {
-    let c4 = null;
-    let c5 = false;
+    c4 = null;
+    c5 = false;
   }
 });
 let result = set.fileFinishedImporting("modules/content_inventory/ContentInventoryOutboxStore.tsx");

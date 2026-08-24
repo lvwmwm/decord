@@ -1,13 +1,14 @@
-// Module ID: 13306
-// Function ID: 13307
+// Module ID: 13364
+// Function ID: 13365
 // Name: handleUserStoreUpdates
-// Dependencies: [1980, 1922, 676, 589, 709, 2]
+// Dependencies: [1981, 1922, 676, 589, 709, 2]
 
-// Module 13306 (handleUserStoreUpdates)
-import comparator from "comparator";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { MFALevels } from "ME";
-import { Store } from "initialize";
+// Module 13364 (handleUserStoreUpdates)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "comparator" /* 1981 */;
+import closure_1 from "mergeGuildAvatar" /* 1922 */;
+import { MFALevels } from "ME" /* 676 */;
 
 function handleUserStoreUpdates() {
   currentUser = currentUser.getCurrentUser();
@@ -19,12 +20,13 @@ function handleUserStoreUpdates() {
   return false;
 }
 let c3 = null;
+const Store = initializeDefault.Store;
 class GuildMFAWarningStore extends Store {
 }
 const prototype = GuildMFAWarningStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(mergeGuildAvatar, comparator);
-  const items = [mergeGuildAvatar, comparator];
+  this.waitFor(closure_1, closure_0);
+  const items = [closure_1, closure_0];
   this.syncWith(items, handleUserStoreUpdates);
 };
 prototype["isVisible"] = function isVisible(mfaLevel) {
@@ -36,17 +38,17 @@ prototype["isVisible"] = function isVisible(mfaLevel) {
     result = false === c3;
   }
   if (result) {
-    result = comparator.hasElevatedPermissions(mfaLevel.id);
+    result = closure_0.hasElevatedPermissions(mfaLevel.id);
   }
   return result;
 };
 GuildMFAWarningStore.displayName = "GuildMFAWarningStore";
-const guildMFAWarningStore = new GuildMFAWarningStore(require("dispatcher"), {
+const guildMFAWarningStore = new GuildMFAWarningStore(dispatcherDefault, {
   CONNECTION_OPEN: handleUserStoreUpdates,
   GUILD_UPDATE: function handleGuildPermissionsUpdate() {
     return true;
   }
 });
-let result = require("ME").fileFinishedImporting("stores/channel_notices/GuildMFAWarningStore.tsx");
+let result = require("set").fileFinishedImporting("stores/channel_notices/GuildMFAWarningStore.tsx");
 
 export default guildMFAWarningStore;

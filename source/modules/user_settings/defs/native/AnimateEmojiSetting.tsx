@@ -1,29 +1,33 @@
-// Module ID: 14726
-// Function ID: 14727
+// Module ID: 14790
+// Function ID: 14791
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 4066, 2]
+// Dependencies: [8238, 10708, 1236, 4069, 2]
 
-// Module 14726 (toggle)
-import createToggle from "createToggle";
+// Module 14790 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.iIaOlc);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.iIaOlc);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
-  useValue: require("explicitContentFromProto").AnimateEmoji.useSetting,
-  onValueChange: require("explicitContentFromProto").AnimateEmoji.updateSetting
+  parent: MobileUserSettings.MobileUserSettings.ACCESSIBILITY,
+  useValue: explicitContentFromProto.AnimateEmoji.useSetting,
+  onValueChange: explicitContentFromProto.AnimateEmoji.updateSetting
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.iIaOlc);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.iIaOlc);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
-  useValue: require("explicitContentFromProto").AnimateEmoji.useSetting,
-  onValueChange: require("explicitContentFromProto").AnimateEmoji.updateSetting
+  parent: MobileUserSettings.MobileUserSettings.ACCESSIBILITY,
+  useValue: explicitContentFromProto.AnimateEmoji.useSetting,
+  onValueChange: explicitContentFromProto.AnimateEmoji.updateSetting
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/AnimateEmojiSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/AnimateEmojiSetting.tsx");
 
 export default toggle;

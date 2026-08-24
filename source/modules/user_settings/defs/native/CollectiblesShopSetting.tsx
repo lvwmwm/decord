@@ -1,38 +1,42 @@
-// Module ID: 14948
-// Function ID: 14949
+// Module ID: 15012
+// Function ID: 15013
 // Name: route
-// Dependencies: [676, 10669, 1236, 11316, 14949, 5300, 7159, 2]
+// Dependencies: [676, 10708, 1236, 11367, 15013, 5305, 7197, 2]
 
-// Module 14948 (route)
-import createToggle from "createToggle";
+// Module 15012 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ShopIcon from "ShopIcon" /* 11367 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.pWG4ze);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.pWG4ze);
   },
   parent: null,
-  IconComponent: require("ShopIcon").ShopIcon,
+  IconComponent: ShopIcon.ShopIcon,
   screen: obj,
   usePreNavigationAction() {
     return () => {
-      let obj = callback(5300);
+      let obj = callback(5305);
       obj = { analyticsLocations: null, analyticsSource: null };
-      const items = [callback2(7159).USER_SETTINGS];
+      const items = [callback2(7197).USER_SETTINGS];
       obj[0] = items;
-      obj[1] = callback2(7159).USER_SETTINGS;
+      obj[1] = callback2(7197).USER_SETTINGS;
       const result = obj.openCollectiblesShopMobile(obj);
       return false;
     };
   }
 };
 obj = {
-  route: require("ME").UserSettingsSections.COLLECTIBLES_SHOP,
+  route: ME.UserSettingsSections.COLLECTIBLES_SHOP,
   getComponent() {
-    return require(14949) /* CollectiblesShopScreen */.default;
+    return require(15013) /* CollectiblesShopScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-let result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/CollectiblesShopSetting.tsx");
+let result = set.fileFinishedImporting("modules/user_settings/defs/native/CollectiblesShopSetting.tsx");
 
 export default route;

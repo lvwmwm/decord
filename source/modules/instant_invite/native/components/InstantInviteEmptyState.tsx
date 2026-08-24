@@ -1,46 +1,44 @@
-// Module ID: 12366
-// Function ID: 12367
+// Module ID: 12418
+// Function ID: 12419
 // Name: stateFromStores
-// Dependencies: [19, 17, 8919, 21, 4661, 712, 589, 1297, 12367, 1236, 8577, 5433, 7355, 4734, 8920, 4745, 2]
+// Dependencies: [19, 17, 8956, 21, 4668, 712, 589, 1297, 12419, 1236, 8616, 5438, 7393, 4739, 8957, 4750, 2]
 // Exports: default
 
-// Module 12366 (stateFromStores)
-import "noop";
-import { View } from "get ActivityIndicator";
-import updateWithLatestInvite from "updateWithLatestInvite";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12418 (stateFromStores)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import ClearButtonDefault from "ClearButton" /* 8616 */;
+import registerAssetDefault from "registerAsset" /* 12419 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "updateWithLatestInvite" /* 8956 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: { padding: 16 }, emptyStateContainer: { padding: 0, marginBottom: 16 }, emptyStateArt: { marginBottom: 16 }, emptyStateTitle: { marginBottom: 4 }, linkContainer: { maxWidth: "100%", flexDirection: "row", marginBottom: 8, gap: 8 }, inviteInput: { flexShrink: 1 }, expireCaption: { marginBottom: 16 }, settingsButton: null };
-createCacheKey = { width: 48, height: 48, justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.xs };
+createCacheKey = { width: 48, height: 48, justifyContent: "center", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: ThemesDefault.radii.xs };
 createCacheKey[7] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("updateWithLatestInvite").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteEmptyState.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteEmptyState.tsx");
 
 export default function _default(link) {
-  let onCopy;
-  let onPressSettings;
-  let onShare;
   let str = link.link;
   let stateFromStores;
   ({ onCopy, onShare, onPressSettings } = link);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = stateFromStores(589);
-  const items = [updateWithLatestInvite];
+  const items = [closure_4];
   stateFromStores = obj.useStateFromStores(items, () => inviteSettings.getInviteSettings());
   obj = { style: tmp.container, children: null };
-  obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: null, title: null, body: null };
-  obj[3] = importDefault(12367);
+  obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: registerAssetDefault, title: null, body: null };
   const intl = stateFromStores(1236).intl;
   obj[4] = intl.string(stateFromStores(1236).t.tQc0l8);
   const intl2 = stateFromStores(1236).intl;
   obj[5] = intl2.string(stateFromStores(1236).t.DXgdcD);
   const items1 = [callback(stateFromStores(1297).RefreshEmptyState, obj), , , ];
-  const obj1 = { style: tmp.linkContainer, children: null };
+  obj1 = { style: tmp.linkContainer, children: null };
   const obj2 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: null, style: null, forceAccessibleContainer: true, clearButtonVisibility: null };
   if (str == null) {
     str = "";
@@ -48,14 +46,14 @@ export default function _default(link) {
   obj2[3] = str;
   obj2[4] = tmp.inviteInput;
   obj2[6] = stateFromStores(1297).ClearButtonVisibility.NEVER;
-  const items2 = [callback(importDefault(8577), obj2), ];
+  const items2 = [callback(ClearButtonDefault, obj2), ];
   const obj3 = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, children: null };
   const intl3 = tmp2(1236).intl;
   obj3[0] = intl3.string(stateFromStores(1236).t["3D5yo/"]);
   obj3[2] = onPressSettings;
   obj3[3] = tmp.settingsButton;
-  obj3[4] = callback(stateFromStores(7355).SettingsIcon, {});
-  items2[1] = callback(stateFromStores(5433).PressableOpacity, obj3);
+  obj3[4] = callback(stateFromStores(7393).SettingsIcon, {});
+  items2[1] = callback(stateFromStores(5438).PressableOpacity, obj3);
   obj1[1] = items2;
   items1[1] = closure_6(View, obj1);
   const obj4 = { style: tmp.expireCaption, variant: "text-xs/medium", color: "text-muted", children: null };
@@ -66,11 +64,11 @@ export default function _default(link) {
     const intl5 = tmp2(1236).intl;
     obj5[0] = intl5.string(tmp2(1236).t.Ej3B3Y);
     obj5[1] = onShare;
-    items1[3] = tmp7(tmp2(4745).Button, obj5);
+    items1[3] = tmp7(tmp2(4750).Button, obj5);
     obj[1] = items1;
     return tmp5(tmp6, obj);
   } else {
-    const maxAgeOptionByValue = tmp8(8920).getMaxAgeOptionByValue(stateFromStores.maxAge);
+    const maxAgeOptionByValue = tmp8(8957).getMaxAgeOptionByValue(stateFromStores.maxAge);
     let str2 = "";
     let str3 = "";
     if (null != maxAgeOptionByValue) {
@@ -80,7 +78,7 @@ export default function _default(link) {
       }
       str3 = descriptiveLabel;
     }
-    const getMaxUsesOptions = tmp8(8920).getMaxUsesOptions;
+    const getMaxUsesOptions = tmp8(8957).getMaxUsesOptions;
     const found = getMaxUsesOptions.find((value) => value.value === stateFromStores.maxUses);
     if (null != found) {
       str2 = found.descriptiveLabel;
@@ -95,6 +93,6 @@ export default function _default(link) {
     obj6[0] = str3;
     obj6[1] = str2;
     intl4.format(dqPWMN, obj6);
-    const tmp8Result = tmp8(8920);
+    const tmp8Result = tmp8(8957);
   }
 };

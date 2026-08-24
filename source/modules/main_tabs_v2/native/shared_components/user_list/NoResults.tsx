@@ -1,31 +1,24 @@
-// Module ID: 11540
-// Function ID: 11541
+// Module ID: 11589
+// Function ID: 11590
 // Name: NoResults
-// Dependencies: [19, 17, 21, 4661, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 4739, 2]
 // Exports: default
 
-// Module 11540 (NoResults)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11589 (NoResults)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ View: obj1, ScrollView: c3 } = get_ActivityIndicator);
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ headerContainer: { paddingHorizontal: 16 }, container: { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: 16, paddingBottom: 16, paddingTop: 32 }, image: { marginBottom: 12 }, textContainer: { justifyContent: "center", alignItems: "center" }, text: { textAlign: "center", marginTop: 4 }, fullHeightContentContainer: { paddingBottom: 0, paddingTop: 0 }, fullHeightScrollContent: { flexGrow: 1 } });
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NoResults.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NoResults.tsx");
 
 export default function NoResults(illustration) {
-  let children;
-  let containerStyle;
-  let fullHeight;
-  let subtitle;
-  let title;
   ({ subtitle, fullHeight } = illustration);
   ({ title, children, containerStyle } = illustration);
   if (fullHeight === undefined) {
@@ -55,14 +48,14 @@ export default function NoResults(illustration) {
     tmp5 = callback(tmp4, obj);
   }
   const items2 = [tmp5, ];
-  const obj1 = { style: tmp.textContainer, children: null };
-  const items3 = [callback(require(4734) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: title }), ];
+  obj1 = { style: tmp.textContainer, children: null };
+  const items3 = [callback(Text.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: title }), ];
   let tmp7Result = null;
   if (null != subtitle) {
     const obj3 = { variant: "text-xs/medium", color: "interactive-text-default", style: null, children: null };
     obj3[2] = tmp.text;
     obj3[3] = subtitle;
-    tmp7Result = callback(require(4734) /* Text */.Text, obj3);
+    tmp7Result = callback(Text.Text, obj3);
   }
   items3[1] = tmp7Result;
   obj1[1] = items3;

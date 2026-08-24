@@ -1,38 +1,37 @@
-// Module ID: 16357
-// Function ID: 16358
+// Module ID: 16454
+// Function ID: 16455
 // Name: UserVideoFailed
-// Dependencies: [17, 676, 21, 4661, 712, 9668, 12071, 4734, 1236, 4745, 12452, 4569, 9654, 2]
+// Dependencies: [17, 676, 21, 4668, 712, 9707, 12123, 4739, 1236, 4750, 12504, 4574, 9693, 2]
 // Exports: default
 
-// Module 16357 (UserVideoFailed)
-import { View } from "get ActivityIndicator";
-import { VideoToggleState } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16454 (UserVideoFailed)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import mapped from "mapped" /* 9707 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
+const View = get_ActivityIndicator.View;
+const VideoToggleState = ME.VideoToggleState;
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 let obj = { container: null, placeholderImage: null, button: null };
-obj = { alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_700, padding: 8 };
+obj = { alignItems: "center", justifyContent: "center", backgroundColor: ThemesDefault.unsafe_rawColors.PRIMARY_700, padding: 8 };
 obj[0] = obj;
 obj[1] = { marginBottom: 8, width: "100%", resizeMode: "contain" };
 obj[2] = { marginTop: 16, alignSelf: "center" };
 let closure_8 = createCacheKey.createStyles(obj);
-let result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/UserVideoFailed.tsx");
+let result = set.fileFinishedImporting("modules/video_calls/native/components/UserVideoFailed.tsx");
 
 export default function UserVideoFailed(arg0) {
-  let avError;
-  let removeRetryButton;
-  let removeSplashImage;
-  let require;
-  let style;
   ({ userId: require, removeRetryButton, removeSplashImage } = arg0);
   ({ style, avError } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   const tmp2 = callback2();
-  let obj = require(9668) /* mapped */;
+  let obj = mapped;
   obj = {};
   const merged1 = Object.assign(merged);
   const items = [tmp2.container, style];
@@ -41,20 +40,20 @@ export default function UserVideoFailed(arg0) {
   if (!removeSplashImage) {
     obj = { style: null };
     obj[0] = tmp2.placeholderImage;
-    tmp9 = callback(tmp3(12071).StreamFailed, obj);
+    tmp9 = callback(tmp3(12123).StreamFailed, obj);
   }
-  const obj1 = { children: null };
+  obj1 = { children: null };
   const items1 = [tmp9, ];
   const obj2 = { variant: "text-md/semibold", color: "text-strong", children: null };
   const intl = tmp3(1236).intl;
-  obj2[2] = intl.string(require(1236) /* getSystemLocale */.t["z+mxvo"]);
-  items1[1] = callback(require(4734) /* Text */.Text, obj2);
+  obj2[2] = intl.string(getSystemLocale.t["z+mxvo"]);
+  items1[1] = callback(Text.Text, obj2);
   obj1[0] = items1;
   const items2 = [closure_7(closure_6, obj1), , ];
   const obj3 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: null };
   const intl2 = tmp3(1236).intl;
-  obj3[3] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.ejOT95, { errorCode: obj.getErrorInfo(avError).errorCode });
-  items2[1] = callback(require(4734) /* Text */.Text, obj3);
+  obj3[3] = intl2.formatToPlainString(getSystemLocale.t.ejOT95, { errorCode: obj.getErrorInfo(avError).errorCode });
+  items2[1] = callback(Text.Text, obj3);
   const obj4 = { style: tmp2.button, children: null };
   let tmp11Result = !removeRetryButton;
   if (!removeRetryButton) {
@@ -62,14 +61,14 @@ export default function UserVideoFailed(arg0) {
     const intl3 = tmp3(1236).intl;
     obj5[1] = intl3.string(tmp3(1236).t["hxmQ/e"]);
     obj5[2] = function onPress() {
-      const result = outer1_0(outer1_2[10]).clearVideoStreamTimeout(outer1_0(outer1_2[11]).MediaEngineContextTypes.DEFAULT, closure_0);
-      const obj = outer1_0(outer1_2[10]);
-      outer1_1(outer1_2[12]).setDisableLocalVideo(closure_0, outer1_4.DISABLED, outer1_0(outer1_2[11]).MediaEngineContextTypes.DEFAULT, false);
+      const result = closure_1_0(closure_1_2[10]).clearVideoStreamTimeout(closure_1_0(closure_1_2[11]).MediaEngineContextTypes.DEFAULT, closure_0);
+      const obj = closure_1_0(closure_1_2[10]);
+      closure_1_1(closure_1_2[12]).setDisableLocalVideo(closure_0, closure_1_4.DISABLED, closure_1_0(closure_1_2[11]).MediaEngineContextTypes.DEFAULT, false);
       const timerId = setTimeout(() => {
-        outer1_1(outer1_2[12]).setDisableLocalVideo(closure_0, outer1_4.MANUAL_ENABLED, outer1_0(outer1_2[11]).MediaEngineContextTypes.DEFAULT, false);
+        closure_1_1(closure_1_2[12]).setDisableLocalVideo(closure_0, closure_1_4.MANUAL_ENABLED, closure_1_0(closure_1_2[11]).MediaEngineContextTypes.DEFAULT, false);
       }, 1000);
     };
-    tmp11Result = tmp11(tmp3(4745).Button, obj5);
+    tmp11Result = tmp11(tmp3(4750).Button, obj5);
   }
   obj4[1] = tmp11Result;
   items2[2] = callback(View, obj4);

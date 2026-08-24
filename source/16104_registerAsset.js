@@ -4,7 +4,7 @@
 // Dependencies: [1241]
 
 // Module 16104 (registerAsset)
-import registerAsset from "registerAsset";
+import registerAsset from "registerAsset" /* 1241 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 414.5, height: 200, scales: [2, 3], hash: "98918a2680690cf1174a4749a18c1a4a", name: "pending_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/referral_program/native/images", width: 200.5, height: 114, scales: [2, 3], hash: "fbbee3b1c0716eaa554a8f9a94badc67", name: "asset_nitro_ticket", type: "png" });

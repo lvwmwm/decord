@@ -1,15 +1,17 @@
-// Module ID: 1985
-// Function ID: 1986
+// Module ID: 1986
+// Function ID: 1987
 // Name: fromServerArray
-// Dependencies: [1431, 1984, 506, 688, 1986, 2]
+// Dependencies: [1431, 1985, 506, 688, 1987, 2]
 // Exports: constructGuildRoleInPlace, fromSerializedPartition, fromSyncOperation, isGuildRoleRecord, toSerializedPartition
 
-// Module 1985 (fromServerArray)
-import isValueEqual from "isValueEqual";
-import { GuildRoleRecordTypeTag } from "GuildRoleRecordTypeTag";
+// Module 1986 (fromServerArray)
+import set from "set" /* 2 */;
+import fromStringAll from "fromString" /* 506 */;
+import int2hslRaw from "int2hslRaw" /* 688 */;
+import GuildRoleRecordTypeTag2 from "GuildRoleRecordTypeTag" /* 1985 */;
+import extractColorStringsFromServerColors from "extractColorStringsFromServerColors" /* 1987 */;
+import isValueEqual from "isValueEqual" /* 1431 */;
 
-let c3;
-let c4;
 function fromServerArray(id, roles) {
   const obj = {};
   const iter = roles[Symbol.iterator]();
@@ -22,15 +24,12 @@ function fromServerArray(id, roles) {
   return obj;
 }
 function fromServer(guildId, id) {
-  let flags;
-  let managed;
-  const obj = { id: id.id, name: id.name, guildId, permissions: null, mentionable: null, position: null, color: null, colorString: null, colors: null, colorStrings: null, hoist: null, managed: null, tags: null, icon: null, unicodeEmoji: null, flags: null, description: null, version: null };
-  obj[3] = importAll(506).deserialize(id.permissions);
+  const obj = { id: id.id, name: id.name, guildId, permissions: fromStringAll.deserialize(id.permissions), mentionable: null, position: null, color: null, colorString: null, colors: null, colorStrings: null, hoist: null, managed: null, tags: null, icon: null, unicodeEmoji: null, flags: null, description: null, version: null };
   ({ mentionable: obj[4], position: obj[5], color: obj[6] } = id);
   let int2hexResult = null;
   if (0 !== id.color) {
-    int2hexResult = require(688) /* int2hslRaw */.int2hex(id.color);
-    const obj3 = require(688) /* int2hslRaw */;
+    int2hexResult = int2hslRaw.int2hex(id.color);
+    const obj3 = int2hslRaw;
   }
   obj[7] = int2hexResult;
   let colors = id.colors;
@@ -40,8 +39,8 @@ function fromServer(guildId, id) {
   obj[8] = colors;
   let result = null;
   if (null != id.colors) {
-    result = require(1986) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
-    const obj4 = require(1986) /* extractColorStringsFromServerColors */;
+    result = extractColorStringsFromServerColors.extractColorStringsFromServerColors(id.colors);
+    const obj4 = extractColorStringsFromServerColors;
   }
   obj[9] = result;
   ({ hoist: obj[10], managed } = id);
@@ -68,17 +67,14 @@ function fromServer(guildId, id) {
   return callback(GuildRoleRecordTypeTag, obj);
 }
 function fromSerialized(guildId, id) {
-  let flags;
-  let managed;
-  const obj = { id: id.id, name: id.name, guildId, permissions: null, mentionable: null, position: null, color: null, colorString: null, colors: null, colorStrings: null, hoist: null, managed: null, tags: null, icon: null, unicodeEmoji: null, flags: null, description: null, version: null };
-  obj[3] = importAll(506).deserialize(id.permissions);
+  const obj = { id: id.id, name: id.name, guildId, permissions: fromStringAll.deserialize(id.permissions), mentionable: null, position: null, color: null, colorString: null, colors: null, colorStrings: null, hoist: null, managed: null, tags: null, icon: null, unicodeEmoji: null, flags: null, description: null, version: null };
   ({ mentionable: obj[4], position: obj[5], color: obj[6] } = id);
   let int2hexResult = null;
   if (null != id.color) {
     int2hexResult = null;
     if (0 !== id.color) {
-      int2hexResult = require(688) /* int2hslRaw */.int2hex(id.color);
-      const obj3 = require(688) /* int2hslRaw */;
+      int2hexResult = int2hslRaw.int2hex(id.color);
+      const obj3 = int2hslRaw;
     }
   }
   obj[7] = int2hexResult;
@@ -89,8 +85,8 @@ function fromSerialized(guildId, id) {
   obj[8] = colors;
   let result = null;
   if (null != id.colors) {
-    result = require(1986) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
-    const obj4 = require(1986) /* extractColorStringsFromServerColors */;
+    result = extractColorStringsFromServerColors.extractColorStringsFromServerColors(id.colors);
+    const obj4 = extractColorStringsFromServerColors;
   }
   obj[9] = result;
   ({ hoist: obj[10], managed } = id);
@@ -117,7 +113,8 @@ function fromSerialized(guildId, id) {
   return callback(GuildRoleRecordTypeTag, obj);
 }
 ({ constructInPlace: c3, objectIsPlainRecordOfType: c4 } = isValueEqual);
-let result = require("fromString").fileFinishedImporting("utils/GuildRoleRecordUtils.tsx");
+const GuildRoleRecordTypeTag = GuildRoleRecordTypeTag2.GuildRoleRecordTypeTag;
+let result = set.fileFinishedImporting("utils/GuildRoleRecordUtils.tsx");
 
 export const isGuildRoleRecord = function isGuildRoleRecord(arg0) {
   return callback2(GuildRoleRecordTypeTag, arg0);

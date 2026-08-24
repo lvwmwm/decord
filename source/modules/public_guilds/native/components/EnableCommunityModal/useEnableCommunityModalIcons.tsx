@@ -1,13 +1,14 @@
-// Module ID: 16887
-// Function ID: 16888
+// Module ID: 16980
+// Function ID: 16981
 // Name: safetyCheck
-// Dependencies: [32, 19, 505, 1363, 16888, 16889, 16890, 16894, 16895, 8143, 4310, 2]
+// Dependencies: [32, 19, 505, 1363, 16981, 16982, 16983, 16987, 16988, 8182, 4314, 2]
 // Exports: default
 
-// Module 16887 (safetyCheck)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { ThemeTypes } from "sum";
+// Module 16980 (safetyCheck)
+import useThemeDefault from "useTheme" /* 4314 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { ThemeTypes } from "sum" /* 505 */;
 
 const require = arg1;
 class EnableCommunityModalIcons {
@@ -22,9 +23,9 @@ const prototype = EnableCommunityModalIcons.prototype;
 Object.defineProperty(prototype, "safetyCheck", {
   get: function safetyCheck() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(16888);
+      let tmpResult = tmp(16981);
     } else {
-      tmpResult = tmp(16889);
+      tmpResult = tmp(16982);
     }
     return tmpResult;
   },
@@ -32,16 +33,16 @@ Object.defineProperty(prototype, "safetyCheck", {
 });
 Object.defineProperty(prototype, "channelSetup", {
   get: function channelSetup() {
-    return require(16890) /* getChannelSetupSource */.getChannelSetupSource(this.theme);
+    return require(16983) /* getChannelSetupSource */.getChannelSetupSource(this.theme);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "finishingTouches", {
   get: function finishingTouches() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(16894);
+      let tmpResult = tmp(16987);
     } else {
-      tmpResult = tmp(16895);
+      tmpResult = tmp(16988);
     }
     return tmpResult;
   },
@@ -49,20 +50,20 @@ Object.defineProperty(prototype, "finishingTouches", {
 });
 Object.defineProperty(prototype, "close", {
   get: function close() {
-    return require(8143) /* registerAsset */;
+    return require(8182) /* registerAsset */;
   },
   set: undefined
 });
-const result = require("sum").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/useEnableCommunityModalIcons.tsx");
+const result = require("set").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/useEnableCommunityModalIcons.tsx");
 
 export default function useEnableCommunityModalIcons() {
-  let closure_0 = importDefault(4310)();
+  closure_0 = useThemeDefault();
   return callback(React.useState(() => {
-    if (typeof outer1_6 !== "function") {
+    if (typeof closure_1_6 !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    const obj = Object.create(outer1_6.prototype);
-    obj[0] = outer1_5.LIGHT;
+    const obj = Object.create(closure_1_6.prototype);
+    obj[0] = closure_1_5.LIGHT;
     obj.theme = closure_0;
     return obj;
   }), 1)[0];

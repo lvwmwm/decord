@@ -1,11 +1,13 @@
-// Module ID: 11652
-// Function ID: 11653
+// Module ID: 11701
+// Function ID: 11702
 // Name: handleGameServerUpsert
-// Dependencies: [4263, 589, 709, 2]
+// Dependencies: [4267, 589, 709, 2]
 
-// Module 11652 (handleGameServerUpsert)
-import { GAME_SERVER_SHOP_MAX_INSTANCES } from "str11";
-import { Store } from "initialize";
+// Module 11701 (handleGameServerUpsert)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import str11 from "str11" /* 4267 */;
 
 function handleGameServerUpsert(gameServer) {
   gameServer = gameServer.gameServer;
@@ -40,7 +42,9 @@ function handleGameServerUpsert(gameServer) {
     }
   }
 }
+const GAME_SERVER_SHOP_MAX_INSTANCES = str11.GAME_SERVER_SHOP_MAX_INSTANCES;
 let closure_1 = [];
+const Store = initializeDefault.Store;
 class OwnedGameServersStore extends Store {
 }
 const prototype = OwnedGameServersStore.prototype;
@@ -51,17 +55,15 @@ prototype["getMaxServers"] = function getMaxServers() {
   return GAME_SERVER_SHOP_MAX_INSTANCES;
 };
 OwnedGameServersStore.displayName = "OwnedGameServersStore";
-const ownedGameServersStore = new OwnedGameServersStore(require("dispatcher"), {
+const ownedGameServersStore = new OwnedGameServersStore(dispatcherDefault, {
   LOGOUT: function handleReset() {
-    let closure_1 = [];
-    let closure_2 = GAME_SERVER_SHOP_MAX_INSTANCES;
+    closure_1 = [];
+    closure_2 = GAME_SERVER_SHOP_MAX_INSTANCES;
   },
   GAME_SERVER_FETCH_MY_SERVERS_SUCCESS: function handleFetchMyServersSuccess(arg0) {
-    let gameServers;
-    let maxServers;
     ({ gameServers, maxServers } = arg0);
-    let closure_1 = gameServers.map((subscription_id) => {
-      let closure_0 = subscription_id;
+    closure_1 = gameServers.map((subscription_id) => {
+      closure_0 = subscription_id;
       const found = closure_1.find((id) => id.id === subscription_id.id);
       let tmp2 = subscription_id;
       if (null == subscription_id.subscription_id) {
@@ -92,6 +94,6 @@ const ownedGameServersStore = new OwnedGameServersStore(require("dispatcher"), {
     }
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/game_server/OwnedGameServersStore.tsx");
+const result = set.fileFinishedImporting("modules/game_server/OwnedGameServersStore.tsx");
 
 export default ownedGameServersStore;

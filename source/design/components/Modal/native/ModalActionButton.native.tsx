@@ -1,22 +1,21 @@
-// Module ID: 11964
-// Function ID: 11965
+// Module ID: 12013
+// Function ID: 12014
 // Name: ModalActionButton
-// Dependencies: [19, 17, 21, 4661, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 4750, 2]
 // Exports: ModalActionButton
 
-// Module 11964 (ModalActionButton)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12013 (ModalActionButton)
+import noopAll from "noop" /* 19 */;
+import Button from "Button" /* 4750 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ spacer: { marginTop: 12 } });
-const result = require("jsxProd").fileFinishedImporting("design/components/Modal/native/ModalActionButton.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Modal/native/ModalActionButton.native.tsx");
 
 export const ModalActionButton = function ModalActionButton(variant) {
   variant = variant.variant;
@@ -33,7 +32,7 @@ export const ModalActionButton = function ModalActionButton(variant) {
   const merged1 = Object.assign(merged);
   obj.variant = variant;
   obj.size = "lg";
-  items[1] = callback(require(4745) /* Button */.Button, obj);
+  items[1] = callback(Button.Button, obj);
   obj[0] = items;
   return closure_5(closure_4, obj);
 };

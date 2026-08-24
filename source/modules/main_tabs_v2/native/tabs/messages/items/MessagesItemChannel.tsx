@@ -1,28 +1,30 @@
-// Module ID: 15295
-// Function ID: 15296
+// Module ID: 15359
+// Function ID: 15360
 // Name: getMessagesItemChannelSizes
-// Dependencies: [32, 19, 1391, 21, 9288, 712, 15296, 589, 15305, 8029, 15306, 2]
+// Dependencies: [32, 19, 1391, 21, 9325, 712, 15360, 589, 15369, 8068, 15370, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 15295 (getMessagesItemChannelSizes)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { jsx } from "jsxProd";
+// Module 15359 (getMessagesItemChannelSizes)
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 9325 */;
+import MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING from "MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING" /* 15360 */;
+import MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDINGDefault from "MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING" /* 15360 */;
+import _modDef15369 from "module_15369" /* 15369 */;
+import toNativeHorizontalOffset from "toNativeHorizontalOffset" /* 15370 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let require = arg1;
+require = arg1;
 let c4 = importAllResult;
 let closure_7 = importAllResult.memo(function MessagesItemChannel(arg0) {
-  let isPressed;
-  let placeholderHeight;
-  let require;
-  let row;
-  let setIsPressed;
   ({ channelId: require, placeholderHeight } = arg0);
   ({ row, isPressed, setIsPressed } = arg0);
-  let obj = require(589) /* initialize */;
-  const items = [ensureGuildLoaded];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(closure_0));
+  let obj = initialize;
+  const items = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getChannel(closure_0));
   let isPrivateResult;
   if (stateFromStores != null) {
     isPrivateResult = stateFromStores.isPrivate();
@@ -33,18 +35,16 @@ let closure_7 = importAllResult.memo(function MessagesItemChannel(arg0) {
     obj[1] = placeholderHeight;
     obj[2] = isPressed;
     obj[3] = setIsPressed;
-    let tmp5 = jsx(importDefault(15296), { channel: null, height: null, isPressed: null, setIsPressed: null });
+    let tmp5 = jsx(MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDINGDefault, { channel: null, height: null, isPressed: null, setIsPressed: null });
   } else {
     obj = { height: null, row: null };
     obj[0] = placeholderHeight;
     obj[1] = row;
-    tmp5 = jsx(importDefault(15305), { height: null, row: null });
+    tmp5 = jsx(_modDef15369, { height: null, row: null });
   }
   return tmp5;
 });
 const memoResult = importAllResult.memo((arg0) => {
-  let tmp2;
-  let tmp3;
   const obj = {};
   [tmp2, tmp3] = callback(importAllResult.useState(false), 2);
   const merged = Object.assign(arg0);
@@ -53,22 +53,20 @@ const memoResult = importAllResult.memo((arg0) => {
   return <closure_7 />;
 });
 const memoResult1 = importAllResult.memo((channelId) => {
-  let obj = require(8029) /* noop */;
+  let obj = _require(8068);
   const items = [channelId.channelId];
   const tmp = callback(obj.useRecyclingState(false, items), 2);
-  require = tmp2;
+  _require = tmp2;
   const items1 = [tmp[1]];
   obj = {};
-  callback = importAllResult.useCallback((arg0) => tmp2(arg0, true), items1);
+  callback = importAllResult.useCallback((arg0) => callback(arg0, true), items1);
   const merged = Object.assign(channelId);
   obj.isPressed = tmp[0];
   obj.setIsPressed = callback;
   return <closure_7 />;
 });
 const memoResult2 = importAllResult.memo((arg0) => {
-  let tmp2;
-  let tmp3;
-  let obj = require(15306) /* toNativeHorizontalOffset */;
+  let obj = toNativeHorizontalOffset;
   obj = {};
   [tmp2, tmp3] = callback(obj.useRecyclingState(false), 2);
   const merged = Object.assign(arg0);
@@ -76,17 +74,17 @@ const memoResult2 = importAllResult.memo((arg0) => {
   obj.setIsPressed = tmp3;
   return <closure_7 />;
 });
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemChannel.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemChannel.tsx");
 
 export const getMessagesItemChannelSizes = function getMessagesItemChannelSizes(fontScale) {
-  let obj = require(9288) /* map */;
+  let obj = map;
   const scaleTextLineHeightResult = obj.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
-  const scaleTextLineHeightResult1 = require(9288) /* map */.scaleTextLineHeight("text-xs/medium", fontScale);
-  const PX_16 = importDefault(712).space.PX_16;
-  const PX_32 = importDefault(712).space.PX_32;
+  const scaleTextLineHeightResult1 = map.scaleTextLineHeight("text-xs/medium", fontScale);
+  const PX_16 = ThemesDefault.space.PX_16;
+  const PX_32 = ThemesDefault.space.PX_32;
   obj = { avatar: PX_32, height: null, label: null, labelSecondary: null, padding: null };
   const sum = Math.max(PX_32, scaleTextLineHeightResult + scaleTextLineHeightResult1) + PX_16;
-  obj[1] = sum + require(15296) /* MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING */.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
+  obj[1] = sum + MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
   obj[2] = scaleTextLineHeightResult;
   obj[3] = scaleTextLineHeightResult1;
   obj[4] = PX_16;

@@ -1,15 +1,16 @@
-// Module ID: 16322
-// Function ID: 16323
+// Module ID: 16417
+// Function ID: 16418
 // Name: areStableParticipantsEqual
-// Dependencies: [4773, 1218, 4497, 1922, 4544, 643, 589, 4796, 4797, 11444, 2]
+// Dependencies: [4778, 1218, 4501, 1922, 4549, 643, 589, 4801, 4802, 11493, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 16322 (areStableParticipantsEqual)
-import getParticipants from "getParticipants";
-import fetchFingerprint from "fetchFingerprint";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { ParticipantTypes } from "ParticipantTypes";
+// Module 16417 (areStableParticipantsEqual)
+import shallowEqualDefault from "shallowEqual" /* 643 */;
+import closure_3 from "getParticipants" /* 4778 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4549 */;
 
 const require = arg1;
 function areStableParticipantsEqual(arg0, arg1) {
@@ -17,44 +18,41 @@ function areStableParticipantsEqual(arg0, arg1) {
   if (!tmp) {
     let tmp3 = null != arg0 && null != arg1;
     if (tmp3) {
-      tmp3 = importDefault(643)(arg0, arg1);
+      tmp3 = shallowEqualDefault(arg0, arg1);
     }
     tmp = tmp3;
   }
   return tmp;
 }
-const result = require("_detectH265HardwareDecode").fileFinishedImporting("modules/voice_panel/native/utils/useStableParticipant.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/useStableParticipant.tsx");
 
 export default function useStableParticipant(arg0, arg1, arg2) {
   const _require = arg0;
-  let closure_1 = arg1;
-  const dependencyMap = arg2;
-  const items = [getParticipants, mergeGuildAvatar, fetchFingerprint, _detectH265HardwareDecode];
+  closure_1 = arg1;
+  dependencyMap = arg2;
+  const items = [closure_3, closure_6, closure_4, closure_5];
   const items1 = [arg0, arg1, arg2];
   return _require(589).useStateFromStores(items, () => {
-    let streamId;
-    let streamId2;
-    let voiceState;
     if (null != callback) {
-      const participant = outer1_3.getParticipant(callback2, tmp);
+      const participant = closure_1_3.getParticipant(callback2, tmp);
       if (null == participant) {
-        const user = outer1_6.getUser(tmp);
+        const user = closure_1_6.getUser(tmp);
         if (null != user) {
-          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: 0.785, isSelf: 0.607 };
-          obj[0] = outer1_7.USER;
+          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: 41.774, isSelf: 42.358 };
+          obj[0] = closure_1_7.USER;
           obj[1] = tmp;
           obj[2] = user;
-          const id = outer1_4.getId();
-          obj[5] = callback(4796).getName(dependencyMap, tmp3, user);
-          const obj5 = callback(4796);
-          obj[6] = callback(4797).getAvatarDecoration(user, dependencyMap);
+          const id = closure_1_4.getId();
+          obj[5] = callback(4801).getName(dependencyMap, tmp3, user);
+          const obj5 = callback(4801);
+          obj[6] = callback(4802).getAvatarDecoration(user, dependencyMap);
           obj[10] = user.id === id;
           return obj;
         }
       } else {
-        const tmp15 = callback2(11444)(participant);
+        const tmp15 = callback2(11493)(participant);
         const type = participant.type;
-        if (outer1_7.ACTIVITY === type) {
+        if (closure_1_7.ACTIVITY === type) {
           obj = { type: null, id: null, applicationId: null };
           obj[0] = participant.type;
           obj[1] = tmp;
@@ -69,7 +67,7 @@ export default function useStableParticipant(arg0, arg1, arg2) {
                 obj[1] = tmp;
                 ({ user: obj[2], voiceState } = participant);
                 let flag;
-                const id1 = outer1_4.getId();
+                const id1 = closure_1_4.getId();
                 if (voiceState != null) {
                   flag = voiceState.selfVideo;
                 }
@@ -83,7 +81,7 @@ export default function useStableParticipant(arg0, arg1, arg2) {
                 obj[8] = tmp15;
                 let tmp7 = tmp15;
                 if (tmp15) {
-                  tmp7 = !outer1_5.isLocalVideoDisabled(participant.user.id);
+                  tmp7 = !closure_1_5.isLocalVideoDisabled(participant.user.id);
                 }
                 obj[9] = tmp7;
                 obj[10] = participant.user.id === id1;
@@ -91,11 +89,11 @@ export default function useStableParticipant(arg0, arg1, arg2) {
               }
             }
           }
-          const obj1 = { type: null, id: null, user: null, userNick: null, streamId: null, streamGuildId: null, hasVideo: null, isSelf: null };
+          obj1 = { type: null, id: null, user: null, userNick: null, streamId: null, streamGuildId: null, hasVideo: null, isSelf: null };
           obj1[0] = participant.type;
           obj1[1] = tmp;
           ({ user: obj2[2], userNick: obj2[3], streamId: streamId2 } = participant);
-          const id2 = outer1_4.getId();
+          const id2 = closure_1_4.getId();
           obj1[4] = streamId2;
           const guildId = participant.stream.guildId;
           obj1[5] = guildId;

@@ -1,37 +1,36 @@
-// Module ID: 11703
-// Function ID: 11704
+// Module ID: 11752
+// Function ID: 11753
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 4261, 4262, 589, 11668, 1236, 2367, 2]
+// Dependencies: [19, 4265, 4266, 589, 11717, 1236, 2368, 2]
 // Exports: default
 
-// Module 11703 (useCanGuildPowerupBeToggled)
-import noop from "noop";
-import calculateAppliedBoosts from "calculateAppliedBoosts";
-import { PowerupActiveStatusType } from "BoostedGuildTiers";
+// Module 11752 (useCanGuildPowerupBeToggled)
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 11717 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "calculateAppliedBoosts" /* 4265 */;
+import { PowerupActiveStatusType } from "BoostedGuildTiers" /* 4266 */;
 
 const require = arg1;
-const result = require("BoostedGuildTiers").fileFinishedImporting("modules/premium/powerups/hooks/useCanGuildPowerupBeToggled.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useCanGuildPowerupBeToggled.tsx");
 
 export default function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
   const _require = arg0;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
-  const items = [calculateAppliedBoosts];
-  const stateFromStores = _require(589).useStateFromStores(items, () => tmp2.getStateForGuild(closure_0));
-  const tmp2 = importDefault(11668)(arg0, arg1);
-  calculateAppliedBoosts = tmp2;
+  importDefault = arg1;
+  dependencyMap = arg2;
+  const items = [closure_4];
+  const stateFromStores = _require(589).useStateFromStores(items, () => stateForGuild.getStateForGuild(closure_0));
+  const tmp2 = usePowerupActiveStatusDefault(arg0, arg1);
+  closure_4 = tmp2;
   const items1 = [stateFromStores, , , , ];
   ({ skuId: arr2[1], dependencies: arr2[2] } = arg1);
   items1[3] = arg2;
   items1[4] = tmp2.type;
   return stateFromStores.useMemo(() => {
-    let allPowerups;
-    let unlockedPowerups;
     if (null == stateFromStores) {
       return { disabled: true, reason: "a" };
     } else {
-      if (tmp2.type !== outer1_5.LEVEL_ACTIVATED) {
-        if (tmp2.type !== tmp15.TIER_OVERRIDE_ACTIVATED) {
+      if (stateForGuild.type !== closure_1_5.LEVEL_ACTIVATED) {
+        if (stateForGuild.type !== tmp15.TIER_OVERRIDE_ACTIVATED) {
           ({ allPowerups, unlockedPowerups } = tmp);
           if (dependencyMap) {
             const _Object = Object;
@@ -59,7 +58,7 @@ export default function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
           if (null != found1) {
             if (null != allPowerups[found1]) {
               const intl = callback(1236).intl;
-              const tmp11 = lib(2367);
+              const tmp11 = lib(2368);
               let title;
               if (allPowerups[found1] != null) {
                 title = tmp13.title;

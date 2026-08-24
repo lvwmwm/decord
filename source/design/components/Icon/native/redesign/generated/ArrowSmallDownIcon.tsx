@@ -1,26 +1,26 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15254
+// Function ID: 15255
 // Name: ArrowSmallDownIcon
-// Dependencies: [19, 21, 712, 4096, 15191, 2]
+// Dependencies: [19, 21, 712, 4099, 15255, 2]
 // Exports: ArrowSmallDownIcon
 
-// Module 15190 (ArrowSmallDownIcon)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15254 (ArrowSmallDownIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import BaseIconImage from "BaseIconImage" /* 4099 */;
+import registerAsset from "registerAsset" /* 15255 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/ArrowSmallDownIcon.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Icon/native/redesign/generated/ArrowSmallDownIcon.tsx");
 
 export const ArrowSmallDownIcon = function ArrowSmallDownIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = ThemesDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.create(null));
-  const obj = { source: null, color: null, style: null };
-  obj[0] = require(15191) /* registerAsset */;
-  obj[1] = INTERACTIVE_ICON_DEFAULT;
-  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(BaseIconImage.BaseIconImage, { source: registerAsset, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

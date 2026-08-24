@@ -4,6 +4,9 @@
 // Dependencies: [606, 636]
 
 // Module 635 (throttle)
+import isObject from "isObject" /* 606 */;
+import debounce from "debounce" /* 636 */;
+
 
 export default function throttle(fn, arg1, leading) {
   if (typeof fn !== "function") {
@@ -13,7 +16,7 @@ export default function throttle(fn, arg1, leading) {
   } else {
     let flag3 = true;
     let flag4 = true;
-    if (require(606) /* isObject */(leading)) {
+    if (isObject(leading)) {
       let flag = true;
       if ("leading" in leading) {
         flag = leading.leading;
@@ -29,6 +32,6 @@ export default function throttle(fn, arg1, leading) {
     obj[0] = flag4;
     obj[1] = arg1;
     obj[2] = flag3;
-    return require(636) /* debounce */(fn, arg1, obj);
+    return debounce(fn, arg1, obj);
   }
 };

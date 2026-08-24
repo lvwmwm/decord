@@ -1,10 +1,83 @@
-// Module ID: 17124
-// Function ID: 17125
+// Module ID: 17218
+// Function ID: 17219
 // Name: NATIVE_REQUIRED_ASSETS_ICONS
-// Dependencies: [6839, 7975, 10898, 9089, 6317, 17125, 10052, 12727, 7980, 13070, 4327, 11634, 6934, 9465, 6298, 17126, 17127, 14505, 14330, 11034, 17128, 17129, 15656, 15654, 4325, 8608, 8606, 8350, 8296, 6837, 12534, 16772, 17130, 6855, 6856, 4319, 6866, 10164, 12155, 11423, 9686, 9416, 9905, 12162, 9006, 8190, 8509, 8511, 9994, 9004, 12018, 10273, 7940, 13953, 12016, 13068, 9562, 15344, 6840, 7991, 7986, 6834, 14554, 10841, 8287, 6841, 12141, 8079, 12050, 6369, 9124, 2]
+// Dependencies: [6877, 8014, 10937, 9126, 6348, 17219, 10091, 12782, 8019, 13126, 4331, 11683, 6972, 9502, 6329, 17220, 17221, 14573, 14398, 11073, 17222, 17223, 15725, 15723, 4329, 8645, 8643, 8389, 8336, 6875, 12588, 16865, 17224, 6893, 6894, 4323, 6904, 10203, 12207, 11474, 9725, 9453, 9944, 12214, 9043, 8230, 8548, 8550, 10033, 9041, 12067, 10312, 7979, 14021, 12065, 13124, 9599, 15408, 6878, 8030, 8025, 6872, 14622, 10880, 8327, 6879, 12193, 8118, 12102, 6400, 9161, 2]
 
-// Module 17124 (NATIVE_REQUIRED_ASSETS_ICONS)
-const obj = { AnnouncementsIcon: require("registerAsset"), AppsIcon: require("registerAsset"), ArrowAngleLeftUpIcon: require("registerAsset"), ArrowAngleRightUpIcon: require("registerAsset"), ArrowLargeLeftIcon: require("registerAsset"), ArrowLargeRightIcon: require("registerAsset"), AttachmentIcon: require("registerAsset"), BellZIcon: require("registerAsset"), BoostGemIcon: require("registerAsset"), ChannelListMagnifyingGlassIcon: require("registerAsset"), CheckmarkLargeIcon: require("registerAsset"), ChatXIcon: require("registerAsset"), CheckmarkSmallIcon: require("registerAsset"), ChevronSmallDownIcon: require("registerAsset"), ChevronSmallRightIcon: require("registerAsset"), CircleErrorIcon: require("registerAsset"), CircleInformationIcon: require("registerAsset"), CircleQuestionIcon: require("registerAsset"), ClipsIcon: require("registerAsset"), ClockWarningIcon: require("registerAsset"), ConnectionAverageIcon: require("registerAsset"), ConnectionBadIcon: require("registerAsset"), ConnectionFineIcon: require("registerAsset"), ConnectionUnknownIcon: require("registerAsset"), DownloadIcon: require("registerAsset"), EyeIcon: require("registerAsset"), EyeSlashIcon: require("registerAsset"), GameControllerIcon: require("registerAsset"), GifIcon: require("registerAsset"), GroupIcon: require("registerAsset"), HandRequestSpeakIcon: require("registerAsset"), HomeIcon: require("registerAsset"), ImageBrokenIcon: require("registerAsset"), ImageIcon: require("registerAsset"), ImageWarningIcon: require("registerAsset"), LinkIcon: require("registerAsset"), LockIcon: require("registerAsset"), LockUnlockedIcon: require("registerAsset"), MicrophoneArrowRightIcon: require("registerAsset"), MicrophoneIcon: require("registerAsset"), MicrophoneSlashIcon: require("registerAsset"), MoreHorizontalIcon: require("registerAsset"), MusicIcon: require("registerAsset"), PaperIcon: require("registerAsset"), PauseIcon: require("registerAsset"), PencilIcon: require("registerAsset"), PhoneCallIcon: require("registerAsset"), PhoneHangUpIcon: require("registerAsset"), PinIcon: require("registerAsset"), PlayIcon: require("registerAsset"), PlaystationNeutralIcon: require("registerAsset"), PollsIcon: require("registerAsset"), ReactionIcon: require("registerAsset"), RefreshIcon: require("registerAsset"), ScreenIcon: require("registerAsset"), SignPostIcon: require("registerAsset"), SlashBoxIcon: require("registerAsset"), SpotifyNeutralIcon: require("registerAsset"), StageIcon: require("registerAsset"), StickerIcon: require("registerAsset"), SuperReactionIcon: require("registerAsset"), ThreadIcon: require("registerAsset"), TicketIcon: require("registerAsset"), TopicsIcon: require("registerAsset"), UserCheckIcon: require("registerAsset"), VoiceNormalIcon: require("registerAsset"), VoiceXIcon: require("registerAsset"), WarningIcon: require("registerAsset"), WindowLaunchIcon: require("registerAsset"), XSmallIcon: require("registerAsset"), XboxNeutralIcon: require("registerAsset") };
-const result = require("registerAsset").fileFinishedImporting("modules/react_asset/native/native_required_assets_icons.tsx");
+// Module 17218 (NATIVE_REQUIRED_ASSETS_ICONS)
+import set from "set" /* 2 */;
+import registerAssetDefault from "registerAsset" /* 4323 */;
+import registerAssetDefault2 from "registerAsset" /* 4329 */;
+import registerAssetDefault3 from "registerAsset" /* 4331 */;
+import registerAssetDefault4 from "registerAsset" /* 6329 */;
+import registerAssetDefault5 from "registerAsset" /* 6348 */;
+import registerAssetDefault6 from "registerAsset" /* 6400 */;
+import registerAssetDefault7 from "registerAsset" /* 6872 */;
+import registerAssetDefault8 from "registerAsset" /* 6875 */;
+import registerAssetDefault9 from "registerAsset" /* 6877 */;
+import registerAssetDefault10 from "registerAsset" /* 6878 */;
+import registerAssetDefault11 from "registerAsset" /* 6879 */;
+import registerAssetDefault12 from "registerAsset" /* 6893 */;
+import registerAssetDefault13 from "registerAsset" /* 6894 */;
+import registerAssetDefault14 from "registerAsset" /* 6904 */;
+import registerAssetDefault15 from "registerAsset" /* 6972 */;
+import registerAssetDefault16 from "registerAsset" /* 7979 */;
+import registerAssetDefault17 from "registerAsset" /* 8014 */;
+import registerAssetDefault18 from "registerAsset" /* 8019 */;
+import registerAssetDefault19 from "registerAsset" /* 8025 */;
+import registerAssetDefault20 from "registerAsset" /* 8030 */;
+import registerAssetDefault21 from "registerAsset" /* 8118 */;
+import registerAssetDefault22 from "registerAsset" /* 8230 */;
+import registerAssetDefault23 from "registerAsset" /* 8327 */;
+import registerAssetDefault24 from "registerAsset" /* 8336 */;
+import registerAssetDefault25 from "registerAsset" /* 8389 */;
+import registerAssetDefault26 from "registerAsset" /* 8548 */;
+import registerAssetDefault27 from "registerAsset" /* 8550 */;
+import registerAssetDefault28 from "registerAsset" /* 8643 */;
+import registerAssetDefault29 from "registerAsset" /* 8645 */;
+import registerAssetDefault30 from "registerAsset" /* 9041 */;
+import registerAssetDefault31 from "registerAsset" /* 9043 */;
+import registerAssetDefault32 from "registerAsset" /* 9126 */;
+import registerAssetDefault33 from "registerAsset" /* 9161 */;
+import registerAssetDefault34 from "registerAsset" /* 9453 */;
+import registerAssetDefault35 from "registerAsset" /* 9502 */;
+import registerAssetDefault36 from "registerAsset" /* 9599 */;
+import registerAssetDefault37 from "registerAsset" /* 9725 */;
+import registerAssetDefault38 from "registerAsset" /* 9944 */;
+import registerAssetDefault39 from "registerAsset" /* 10033 */;
+import registerAssetDefault40 from "registerAsset" /* 10091 */;
+import registerAssetDefault41 from "registerAsset" /* 10203 */;
+import registerAssetDefault42 from "registerAsset" /* 10312 */;
+import registerAssetDefault43 from "registerAsset" /* 10880 */;
+import registerAssetDefault44 from "registerAsset" /* 10937 */;
+import registerAssetDefault45 from "registerAsset" /* 11073 */;
+import registerAssetDefault46 from "registerAsset" /* 11474 */;
+import registerAssetDefault47 from "registerAsset" /* 11683 */;
+import registerAssetDefault48 from "registerAsset" /* 12065 */;
+import registerAssetDefault49 from "registerAsset" /* 12067 */;
+import registerAssetDefault50 from "registerAsset" /* 12102 */;
+import registerAssetDefault51 from "registerAsset" /* 12193 */;
+import registerAssetDefault52 from "registerAsset" /* 12207 */;
+import registerAssetDefault53 from "registerAsset" /* 12214 */;
+import registerAssetDefault54 from "registerAsset" /* 12588 */;
+import registerAssetDefault55 from "registerAsset" /* 12782 */;
+import registerAssetDefault56 from "registerAsset" /* 13124 */;
+import registerAssetDefault57 from "registerAsset" /* 13126 */;
+import registerAssetDefault58 from "registerAsset" /* 14021 */;
+import registerAssetDefault59 from "registerAsset" /* 14398 */;
+import registerAssetDefault60 from "registerAsset" /* 14573 */;
+import registerAssetDefault61 from "registerAsset" /* 14622 */;
+import registerAssetDefault62 from "registerAsset" /* 15408 */;
+import registerAssetDefault63 from "registerAsset" /* 15723 */;
+import registerAssetDefault64 from "registerAsset" /* 15725 */;
+import registerAssetDefault65 from "registerAsset" /* 16865 */;
+import registerAssetDefault66 from "registerAsset" /* 17219 */;
+import registerAssetDefault67 from "registerAsset" /* 17220 */;
+import registerAssetDefault68 from "registerAsset" /* 17221 */;
+import registerAssetDefault69 from "registerAsset" /* 17222 */;
+import registerAssetDefault70 from "registerAsset" /* 17223 */;
+import registerAssetDefault71 from "registerAsset" /* 17224 */;
+
+const obj = { AnnouncementsIcon: registerAssetDefault9, AppsIcon: registerAssetDefault17, ArrowAngleLeftUpIcon: registerAssetDefault44, ArrowAngleRightUpIcon: registerAssetDefault32, ArrowLargeLeftIcon: registerAssetDefault5, ArrowLargeRightIcon: registerAssetDefault66, AttachmentIcon: registerAssetDefault40, BellZIcon: registerAssetDefault55, BoostGemIcon: registerAssetDefault18, ChannelListMagnifyingGlassIcon: registerAssetDefault57, CheckmarkLargeIcon: registerAssetDefault3, ChatXIcon: registerAssetDefault47, CheckmarkSmallIcon: registerAssetDefault15, ChevronSmallDownIcon: registerAssetDefault35, ChevronSmallRightIcon: registerAssetDefault4, CircleErrorIcon: registerAssetDefault67, CircleInformationIcon: registerAssetDefault68, CircleQuestionIcon: registerAssetDefault60, ClipsIcon: registerAssetDefault59, ClockWarningIcon: registerAssetDefault45, ConnectionAverageIcon: registerAssetDefault69, ConnectionBadIcon: registerAssetDefault70, ConnectionFineIcon: registerAssetDefault64, ConnectionUnknownIcon: registerAssetDefault63, DownloadIcon: registerAssetDefault2, EyeIcon: registerAssetDefault29, EyeSlashIcon: registerAssetDefault28, GameControllerIcon: registerAssetDefault25, GifIcon: registerAssetDefault24, GroupIcon: registerAssetDefault8, HandRequestSpeakIcon: registerAssetDefault54, HomeIcon: registerAssetDefault65, ImageBrokenIcon: registerAssetDefault71, ImageIcon: registerAssetDefault12, ImageWarningIcon: registerAssetDefault13, LinkIcon: registerAssetDefault, LockIcon: registerAssetDefault14, LockUnlockedIcon: registerAssetDefault41, MicrophoneArrowRightIcon: registerAssetDefault52, MicrophoneIcon: registerAssetDefault46, MicrophoneSlashIcon: registerAssetDefault37, MoreHorizontalIcon: registerAssetDefault34, MusicIcon: registerAssetDefault38, PaperIcon: registerAssetDefault53, PauseIcon: registerAssetDefault31, PencilIcon: registerAssetDefault22, PhoneCallIcon: registerAssetDefault26, PhoneHangUpIcon: registerAssetDefault27, PinIcon: registerAssetDefault39, PlayIcon: registerAssetDefault30, PlaystationNeutralIcon: registerAssetDefault49, PollsIcon: registerAssetDefault42, ReactionIcon: registerAssetDefault16, RefreshIcon: registerAssetDefault58, ScreenIcon: registerAssetDefault48, SignPostIcon: registerAssetDefault56, SlashBoxIcon: registerAssetDefault36, SpotifyNeutralIcon: registerAssetDefault62, StageIcon: registerAssetDefault10, StickerIcon: registerAssetDefault20, SuperReactionIcon: registerAssetDefault19, ThreadIcon: registerAssetDefault7, TicketIcon: registerAssetDefault61, TopicsIcon: registerAssetDefault43, UserCheckIcon: registerAssetDefault23, VoiceNormalIcon: registerAssetDefault11, VoiceXIcon: registerAssetDefault51, WarningIcon: registerAssetDefault21, WindowLaunchIcon: registerAssetDefault50, XSmallIcon: registerAssetDefault6, XboxNeutralIcon: registerAssetDefault33 };
+const result = set.fileFinishedImporting("modules/react_asset/native/native_required_assets_icons.tsx");
 
 export const NATIVE_REQUIRED_ASSETS_ICONS = obj;

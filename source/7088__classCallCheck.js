@@ -1,0 +1,14 @@
+// Module ID: 7088
+// Function ID: 7089
+// Name: _classCallCheck
+// Dependencies: []
+
+// Module 7088 (_classCallCheck)
+
+export default function _classCallCheck(arg0, arg1) {
+  if (!(arg0 instanceof arg1)) {
+    const _TypeError = TypeError;
+    const typeError = new TypeError("Cannot call a class as a function");
+    throw typeError;
+  }
+};

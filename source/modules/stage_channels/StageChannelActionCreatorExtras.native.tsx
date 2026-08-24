@@ -1,62 +1,65 @@
-// Module ID: 8058
-// Function ID: 8059
+// Module ID: 8097
+// Function ID: 8098
 // Name: openStageChannelSettings
-// Dependencies: [8059, 4978, 4342, 8061, 2007, 8080, 8121, 8128, 12823, 8665, 8663, 5260, 8668, 8929, 8123, 2]
+// Dependencies: [8098, 4983, 4346, 8100, 2008, 8119, 8160, 8167, 12878, 8702, 8700, 5265, 8705, 8966, 8162, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannel, openStageChannelAudienceNoticeModal, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
-// Module 8058 (openStageChannelSettings)
-import { setIsOnStartStageScreen } from "setIsOnStartStageScreen";
-import MAX_STAGE_TOPIC_LENGTH from "MAX_STAGE_TOPIC_LENGTH";
+// Module 8097 (openStageChannelSettings)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import setIsOnStartStageScreen2 from "setIsOnStartStageScreen" /* 8098 */;
+import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8162 */;
+import useIsStageVoicePanelEnabled from "useIsStageVoicePanelEnabled" /* 8702 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8966 */;
+import MAX_STAGE_TOPIC_LENGTH from "MAX_STAGE_TOPIC_LENGTH" /* 4983 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
-({ STAGE_AUDIENCE_NOTICE_SHEET_KEY: c4, START_STAGE_CHANNEL_EVENT_SHEET_KEY: c5, STAGE_BLOCKED_USERS_SHEET_KEY: closure_6, STAGE_SETTINGS_SHEET_KEY: error, EXPLICIT_END_STAGE_SHEET_KEY: metroImportAll } = MAX_STAGE_TOPIC_LENGTH);
-const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/stage_channels/StageChannelActionCreatorExtras.native.tsx");
+const setIsOnStartStageScreen = setIsOnStartStageScreen2.setIsOnStartStageScreen;
+({ STAGE_AUDIENCE_NOTICE_SHEET_KEY: c4, START_STAGE_CHANNEL_EVENT_SHEET_KEY: c5, STAGE_BLOCKED_USERS_SHEET_KEY: closure_6, STAGE_SETTINGS_SHEET_KEY: error, EXPLICIT_END_STAGE_SHEET_KEY: closure_8 } = MAX_STAGE_TOPIC_LENGTH);
+const result = set.fileFinishedImporting("modules/stage_channels/StageChannelActionCreatorExtras.native.tsx");
 
 export const openStageChannelSettings = function openStageChannelSettings(closure_0) {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channel: closure_0 };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(8061, dependencyMap.paths), closure_5, obj);
+  obj.openLazy(asyncRequireImpl(8100, dependencyMap.paths), closure_5, obj);
 };
 export function openEndGuildEventConfirmationModal() {
 
 }
 export const openStageChannelAudienceNoticeModal = function openStageChannelAudienceNoticeModal(channelId) {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channelId };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(8080, dependencyMap.paths), closure_4, obj);
+  obj.openLazy(asyncRequireImpl(8119, dependencyMap.paths), closure_4, obj);
 };
 export const openStageBlockedUsersSheet = function openStageBlockedUsersSheet(channel, onAccept) {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channel, onAccept };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(8121, dependencyMap.paths), closure_6, obj);
+  obj.openLazy(asyncRequireImpl(8160, dependencyMap.paths), closure_6, obj);
 };
 export const openStageSettingsSheet = function openStageSettingsSheet(closure_0, closure_1) {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channelId: closure_0, onOpenRTCDebugOverlay: closure_1 };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(8128, dependencyMap.paths), closure_7, obj);
+  obj.openLazy(asyncRequireImpl(8167, dependencyMap.paths), closure_7, obj);
 };
 export const openEndStageModal = function openEndStageModal(closure_0) {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channel: closure_0 };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(12823, dependencyMap.paths), closure_8, obj);
+  obj.openLazy(asyncRequireImpl(12878, dependencyMap.paths), closure_8, obj);
 };
-export const openStageChannel = function openStageChannel(outer1_0) {
-  if (outer1_0.isGuildStageVoice()) {
-    let obj = require(8665) /* useIsStageVoicePanelEnabled */;
+export const openStageChannel = function openStageChannel(closure_0) {
+  if (closure_0.isGuildStageVoice()) {
+    let obj = useIsStageVoicePanelEnabled;
     if (obj.isStageVoicePanelEnabled("stage_channel_action_creator_extras")) {
-      let tmpResult = tmp(8663);
-      tmpResult.openGuildVoiceModal(outer1_0);
+      let tmpResult = tmp(8700);
+      tmpResult.openGuildVoiceModal(closure_0);
     } else {
       obj = { channel: null };
-      obj[0] = outer1_0;
-      const obj2 = importDefault(5260);
-      tmpResult = tmp(8663);
-      obj2.pushLazy(tmp(2007)(8668, tmp2.paths), obj, tmpResult.getVoiceChannelKey(outer1_0.id));
-      const tmp4 = tmp(2007)(8668, tmp2.paths);
+      obj[0] = closure_0;
+      const obj2 = _modDef5265;
+      tmpResult = tmp(8700);
+      obj2.pushLazy(tmp(2008)(8705, tmp2.paths), obj, tmpResult.getVoiceChannelKey(closure_0.id));
+      const tmp4 = tmp(2008)(8705, tmp2.paths);
     }
     tmp2 = dependencyMap;
   }
@@ -65,30 +68,30 @@ export const showPlatformUserProfile = function showPlatformUserProfile(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj.isVoiceContext = true;
-  importDefault(8929)(obj);
+  showUserProfileActionSheetDefault(obj);
 };
 export const shouldShowBlockedUsers = function shouldShowBlockedUsers(id) {
-  const stageBlockedUsersCount = require(8123) /* useStageBlockedUsersCount */.getStageBlockedUsersCount(id);
-  const obj = require(8123) /* useStageBlockedUsersCount */;
-  const obj2 = require(8123) /* useStageBlockedUsersCount */;
-  return stageBlockedUsersCount > 0 || require(8123) /* useStageBlockedUsersCount */.getStageIgnoredUsersCount(id) > 0;
+  const stageBlockedUsersCount = useStageBlockedUsersCount.getStageBlockedUsersCount(id);
+  const obj = useStageBlockedUsersCount;
+  const obj2 = useStageBlockedUsersCount;
+  return stageBlockedUsersCount > 0 || useStageBlockedUsersCount.getStageIgnoredUsersCount(id) > 0;
 };
 export const navigateToStage = function navigateToStage(id) {
   if (arg1 !== id.id) {
     setIsOnStartStageScreen(true);
   }
   if (id.isGuildStageVoice()) {
-    let obj = require(8665) /* useIsStageVoicePanelEnabled */;
+    let obj = useIsStageVoicePanelEnabled;
     if (obj.isStageVoicePanelEnabled("stage_channel_action_creator_extras")) {
-      let tmp3Result = tmp3(8663);
+      let tmp3Result = tmp3(8700);
       tmp3Result.openGuildVoiceModal(id);
     } else {
       obj = { channel: null };
       obj[0] = id;
-      const obj2 = importDefault(5260);
-      tmp3Result = tmp3(8663);
-      obj2.pushLazy(tmp3(2007)(8668, tmp4.paths), obj, tmp3Result.getVoiceChannelKey(id.id));
-      const tmp6 = tmp3(2007)(8668, tmp4.paths);
+      const obj2 = _modDef5265;
+      tmp3Result = tmp3(8700);
+      obj2.pushLazy(tmp3(2008)(8705, tmp4.paths), obj, tmp3Result.getVoiceChannelKey(id.id));
+      const tmp6 = tmp3(2008)(8705, tmp4.paths);
     }
     tmp4 = dependencyMap;
   }

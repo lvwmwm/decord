@@ -1,49 +1,42 @@
-// Module ID: 11353
-// Function ID: 11354
+// Module ID: 11404
+// Function ID: 11405
 // Name: AttachmentPreviewAppLauncher
-// Dependencies: [19, 17, 4825, 4824, 21, 4661, 712, 10139, 10076, 1954, 11336, 589, 8466, 11354, 1236, 4829, 10439, 2]
+// Dependencies: [19, 17, 4830, 4829, 21, 4668, 712, 10178, 10115, 1954, 11387, 589, 8505, 11405, 1236, 4834, 10478, 2]
 // Exports: default
 
-// Module 11353 (AttachmentPreviewAppLauncher)
-import noop from "noop";
-import { View } from "set";
-import { DraftType } from "handleChanged";
-import map from "map";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11404 (AttachmentPreviewAppLauncher)
+import ThemesDefault from "Themes" /* 712 */;
+import FileIcon from "FileIcon" /* 10115 */;
+import AttachmentIconDefault from "AttachmentIcon" /* 10178 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { DraftType } from "handleChanged" /* 4830 */;
+import closure_6 from "map" /* 4829 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 function AttachmentPreviewAppLauncher(arg0) {
-  let height;
-  let isImage;
-  let isVideo;
-  let uri;
-  let width;
   ({ uri, isImage, isVideo } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback();
   ({ width, height } = tmp.selectedImage);
-  const obj = { uri, isImage, isVideo, width, height, style: tmp.selectedImage, defaultPreview: null };
-  obj[6] = jsx(require(10076) /* FileIcon */.FileIcon, { size: "sm" });
-  return jsx(importDefault(10139), { uri, isImage, isVideo, width, height, style: tmp.selectedImage, defaultPreview: null });
+  const obj = { uri, isImage, isVideo, width, height, style: tmp.selectedImage, defaultPreview: jsx(FileIcon.FileIcon, { size: "sm" }) };
+  return jsx(AttachmentIconDefault, { uri, isImage, isVideo, width, height, style: tmp.selectedImage, defaultPreview: jsx(FileIcon.FileIcon, { size: "sm" }) });
 }
 createCacheKey = { imageIconWrapper: null, selectedImage: null };
-createCacheKey = { justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, width: 32, height: 32, borderRadius: require("Themes").radii.lg };
+createCacheKey = { justifyContent: "center", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE, width: 32, height: 32, borderRadius: ThemesDefault.radii.lg };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { width: 32, height: 32, borderRadius: require("Themes").radii.sm };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { width: 32, height: 32, borderRadius: require("Themes").radii.sm };
-const result = require("handleChanged").fileFinishedImporting("modules/app_launcher/native/options/attachment/AppLauncherAttachmentOption.tsx");
+createCacheKey[1] = { width: 32, height: 32, borderRadius: ThemesDefault.radii.sm };
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { width: 32, height: 32, borderRadius: ThemesDefault.radii.sm };
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/options/attachment/AppLauncherAttachmentOption.tsx");
 
 export default function AppLauncherAttachmentOption(option) {
-  let autoFocus;
-  let hasError;
-  let onPress;
-  let style;
   option = option.option;
   const channel = option.channel;
   const onSelectAttachment = option.onSelectAttachment;
   let stateFromStores;
-  let closure_4;
+  closure_4 = undefined;
   ({ style, autoFocus, hasError, onPress } = option);
   let fileTypes;
   if (option.type === option(onSelectAttachment[9]).ApplicationCommandOptionType.ATTACHMENT) {
@@ -52,10 +45,10 @@ export default function AppLauncherAttachmentOption(option) {
   let tmp2Result = tmp2(tmp3[10]);
   const fileTypesFormattedString = tmp2Result.useFileTypesFormattedString(fileTypes);
   tmp2Result = tmp2(tmp3[11]);
-  const items = [map];
-  stateFromStores = tmp2Result.useStateFromStores(items, () => outer1_6.getUpload(channel.id, option.name, outer1_5.ApplicationLauncherCommand));
+  const items = [closure_6];
+  stateFromStores = tmp2Result.useStateFromStores(items, () => closure_1_6.getUpload(channel.id, option.name, closure_1_5.ApplicationLauncherCommand));
   const items1 = [channel.id, option.name];
-  const effect = stateFromStores.useEffect(() => () => outer1_1(outer1_2[12]).remove(id.id, name.name, outer1_5.ApplicationLauncherCommand), items1);
+  const effect = stateFromStores.useEffect(() => () => closure_1_1(closure_1_2[12]).remove(id.id, name.name, closure_1_5.ApplicationLauncherCommand), items1);
   closure_4 = stateFromStores.useRef(onSelectAttachment);
   const effect1 = stateFromStores.useEffect(() => {
     closure_4.current = onSelectAttachment;
@@ -79,7 +72,7 @@ export default function AppLauncherAttachmentOption(option) {
   }, items2);
   let obj = { style, hasError, option, selected: null != stateFromStores, selectedItemName: null, unselectedSubLabel: null, leading: null, onPress: null, autoFocus: null };
   let filename1;
-  const tmp = createCacheKey();
+  const tmp = callback();
   if (null != stateFromStores) {
     filename1 = stateFromStores.filename;
   }
@@ -94,7 +87,7 @@ export default function AppLauncherAttachmentOption(option) {
   obj[5] = formatResult;
   if (null != stateFromStores) {
     if (stateFromStores.item.platform === tmp2(tmp3[15]).UploadPlatform.REACT_NATIVE) {
-      const obj1 = { uri: null, isImage: null, isVideo: null };
+      obj1 = { uri: null, isImage: null, isVideo: null };
       obj1[0] = stateFromStores.item.uri;
       ({ isImage: obj6[1], isVideo: obj6[2] } = stateFromStores);
       let tmp12Result = tmp12(AttachmentPreviewAppLauncher, obj1);

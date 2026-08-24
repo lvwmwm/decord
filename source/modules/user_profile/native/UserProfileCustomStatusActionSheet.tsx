@@ -1,55 +1,54 @@
-// Module ID: 9448
-// Function ID: 9449
+// Module ID: 9485
+// Function ID: 9486
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1922, 7186, 21, 4661, 712, 589, 9449, 4796, 1236, 9450, 8409, 9286, 2]
+// Dependencies: [19, 17, 1922, 7224, 21, 4668, 712, 589, 9486, 4801, 1236, 9487, 8448, 9323, 2]
 // Exports: default
 
-// Module 9448 (UserProfileCustomStatusActionSheet)
-import "noop";
-import { View } from "get ActivityIndicator";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9485 (UserProfileCustomStatusActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getNicknameDefault from "getNickname" /* 4801 */;
+import _modDef8448 from "module_8448" /* 8448 */;
+import EmojiImageDefault from "EmojiImage" /* 9323 */;
+import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 9486 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 9487 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let AVATAR_CONTAINER_SIZE;
-let AVATAR_CUSTOM_STATUS_GAP;
-let c5;
-let closure_6;
 const require = arg1;
+noopAll;
 ({ AVATAR_CONTAINER_SIZE, AVATAR_CUSTOM_STATUS_GAP } = ARBITRARY_LARGE_OFFSET);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { statusPreviewContainer: null, avatarContainer: null, avatarStatus: null, customStatusBubble: null };
-createCacheKey = { flexDirection: "row", columnGap: AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { flexDirection: "row", columnGap: AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { height: AVATAR_CONTAINER_SIZE, width: AVATAR_CONTAINER_SIZE, alignItems: "center", justifyContent: "center" };
-createCacheKey[2] = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[2] = { backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createCacheKey[3] = { marginTop: AVATAR_CONTAINER_SIZE / 2 + 10, flexShrink: 1, flexGrow: 1 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let obj2 = { marginTop: AVATAR_CONTAINER_SIZE / 2 + 10, flexShrink: 1, flexGrow: 1 };
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_profile/native/UserProfileCustomStatusActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileCustomStatusActionSheet.tsx");
 
 export default function UserProfileCustomStatusActionSheet(user) {
-  let channelId;
-  let guildId;
-  let previewEmoji;
-  let previewText;
   user = user.user;
   ({ guildId, channelId, previewEmoji, previewText } = user);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = user(589);
-  const items = [mergeGuildAvatar];
+  const items = [closure_4];
   const items1 = [user];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const currentUser = outer1_4.getCurrentUser();
+    const currentUser = closure_1_4.getCurrentUser();
     let id;
     if (currentUser != null) {
       id = currentUser.id;
     }
     return id === user.id;
   }, items1);
-  let obj1 = importDefault(4796);
+  obj1 = getNicknameDefault;
   const name = obj1.useName(guildId, channelId, user);
   const intl = user(1236).intl;
   if (stateFromStores) {
@@ -62,10 +61,10 @@ export default function UserProfileCustomStatusActionSheet(user) {
   obj = { title: stringResult, children: null };
   obj1 = { style: tmp.statusPreviewContainer, children: null };
   const obj2 = { style: tmp.avatarContainer, children: null };
-  const tmp6 = importDefault(9449)(user.id);
-  obj2[1] = callback(importDefault(8409), { user, statusStyle: tmp.avatarStatus });
-  const items2 = [callback(View, obj2), callback(importDefault(9286), { customStatusActivity: tmp6, hasCustomProfileTheme: false, showFullStatus: true, style: tmp.customStatusBubble, previewEmoji, previewText })];
+  const tmp6 = useCustomStatusActivityForUserDefault(user.id);
+  obj2[1] = callback(_modDef8448, { user, statusStyle: tmp.avatarStatus });
+  const items2 = [callback(View, obj2), callback(EmojiImageDefault, { customStatusActivity: tmp6, hasCustomProfileTheme: false, showFullStatus: true, style: tmp.customStatusBubble, previewEmoji, previewText })];
   obj1[1] = items2;
   obj[1] = callback2(View, obj1);
-  return callback(importDefault(9450), obj);
+  return callback(UserProfileStackedActionSheetDefault, obj);
 };

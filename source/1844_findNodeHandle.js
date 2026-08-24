@@ -4,5 +4,7 @@
 // Dependencies: [17]
 
 // Module 1844 (findNodeHandle)
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-export const findNodeHandle = require("get ActivityIndicator").findNodeHandle;
+
+export const findNodeHandle = get_ActivityIndicator.findNodeHandle;

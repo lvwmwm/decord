@@ -1,34 +1,30 @@
-// Module ID: 8568
-// Function ID: 8569
+// Module ID: 8607
+// Function ID: 8608
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 1385, 1922, 676, 21, 4661, 1500, 589, 38, 8569, 8561, 5447, 4734, 1236, 4745, 5256, 4094, 2]
+// Dependencies: [32, 19, 17, 1385, 1922, 676, 21, 4668, 1500, 589, 38, 8608, 8600, 5452, 4739, 1236, 4750, 5261, 4097, 2]
 // Exports: default
 
-// Module 8568 (ResendEmail)
-import _slicedToArray from "_slicedToArray";
-import set from "set";
-import { View } from "handleLogout";
-import handleRequiredAction from "handleRequiredAction";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { VerificationModalScenes } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8607 (ResendEmail)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "handleRequiredAction" /* 1385 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { VerificationModalScenes } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
 const require = arg1;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let closure_11 = createCacheKey.createStyles({ container: { flex: 1, padding: 16, justifyContent: "center", alignItems: "center" }, title: { marginTop: 16, textAlign: "center" }, body: { marginTop: 8, lineHeight: 18, textAlign: "center" }, resend: { marginTop: 16, width: "100%" }, change: { marginTop: 8, width: "100%" } });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/verification/native/components/ResendEmail.tsx");
+let result = require("set").fileFinishedImporting("modules/verification/native/components/ResendEmail.tsx");
 
 export default function ResendEmail() {
-  let dependencyMap;
-  let tmp10;
   let tmp = callback3();
   let obj = navigation(1500);
   navigation = obj.useNavigation();
-  let obj1 = navigation(589);
-  const items = [mergeGuildAvatar];
+  obj1 = navigation(589);
+  const items = [closure_7];
   const stateFromStores = obj1.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     verified(38)(null != currentUser, "ResendEmail: user cannot be undefined");
@@ -36,9 +32,9 @@ export default function ResendEmail() {
   });
   const verified = stateFromStores.verified;
   let obj2 = navigation(589);
-  const items1 = [handleRequiredAction];
+  const items1 = [closure_6];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => action.getAction());
-  let obj3 = verified(8569);
+  let obj3 = verified(8608);
   const result = obj3.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
   [tmp10, dependencyMap] = callback(React.useState(false), 2);
@@ -50,23 +46,23 @@ export default function ResendEmail() {
       tmp = false === ref.current;
     }
     if (tmp) {
-      verified(outer1_2[12]).close();
-      const obj = verified(outer1_2[12]);
+      verified(closure_1_2[12]).close();
+      const obj = verified(closure_1_2[12]);
     }
   }, items2);
   const effect1 = React.useEffect(() => {
-    _slicedToArray.current = verified;
+    closure_3.current = verified;
   });
   const items3 = [navigation];
   obj = { style: tmp.container, children: null };
   callback = React.useCallback(() => {
-    navigation.push(outer1_8.ENTER_EMAIL);
+    navigation.push(closure_1_8.ENTER_EMAIL);
   }, items3);
-  const items4 = [callback2(navigation(5447).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  const items4 = [callback2(navigation(5452).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = navigation(1236).intl;
   obj[4] = intl.string(navigation(1236).t.fUtddV);
-  items4[1] = callback2(navigation(4734).Text, obj);
+  items4[1] = callback2(navigation(4739).Text, obj);
   obj1 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = navigation(1236).intl;
   if (tmp10) {
@@ -77,21 +73,21 @@ export default function ResendEmail() {
     formatResult = intl2.string(tmp2(1236).t.tSXg8O);
   }
   obj1[3] = formatResult;
-  items4[2] = callback2(navigation(4734).Text, obj1);
+  items4[2] = callback2(navigation(4739).Text, obj1);
   obj3 = { style: tmp.resend, children: null };
   const obj4 = { text: null, variant: "primary", onPress: null, grow: true };
   const intl3 = tmp2(1236).intl;
   obj4[0] = intl3.string(navigation(1236).t.WnX4J2);
   obj4[2] = function onPress() {
     dependencyMap(true);
-    let obj = verified(outer1_2[17]);
+    let obj = verified(closure_1_2[17]);
     obj.verifyResend();
     obj = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-    const intl = navigation(outer1_2[15]).intl;
-    obj[1] = intl.string(navigation(outer1_2[15]).t["84yeoz"]);
-    verified(outer1_2[18]).open(obj);
+    const intl = navigation(closure_1_2[15]).intl;
+    obj[1] = intl.string(navigation(closure_1_2[15]).t["84yeoz"]);
+    verified(closure_1_2[18]).open(obj);
   };
-  obj3[1] = callback2(navigation(4745).Button, obj4);
+  obj3[1] = callback2(navigation(4750).Button, obj4);
   items4[3] = callback2(View, obj3);
   if (!result) {
     const obj5 = { style: null, children: null };
@@ -100,7 +96,7 @@ export default function ResendEmail() {
     const intl4 = tmp2(1236).intl;
     obj6[0] = intl4.string(tmp2(1236).t.Vm8akB);
     obj6[2] = callback;
-    obj5[1] = tmp16(tmp2(4745).Button, obj6);
+    obj5[1] = tmp16(tmp2(4750).Button, obj6);
     tmp16Result = tmp16(tmp15, obj5);
   }
   items4[4] = tmp16Result;

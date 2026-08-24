@@ -1,13 +1,14 @@
-// Module ID: 5061
-// Function ID: 5062
+// Module ID: 5066
+// Function ID: 5067
 // Name: shouldLogClientHeartbeatSkipped
-// Dependencies: [1922, 5062, 2]
+// Dependencies: [1922, 5067, 2]
 // Exports: shouldLogClientHeartbeatSkipped
 
-// Module 5061 (shouldLogClientHeartbeatSkipped)
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 5066 (shouldLogClientHeartbeatSkipped)
+import sampleWithUserId from "sampleWithUserId" /* 5067 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/analytics_sessions/SkippedClientHeartbeatUtil.tsx");
 
 export const shouldLogClientHeartbeatSkipped = function shouldLogClientHeartbeatSkipped() {
@@ -16,8 +17,8 @@ export const shouldLogClientHeartbeatSkipped = function shouldLogClientHeartbeat
   if (tmp) {
     let isStaffResult = currentUser.isStaff();
     if (!isStaffResult) {
-      isStaffResult = require(5062) /* sampleWithUserId */.sampleWithUserId(currentUser.id, 0.02);
-      const obj2 = require(5062) /* sampleWithUserId */;
+      isStaffResult = sampleWithUserId.sampleWithUserId(currentUser.id, 0.02);
+      const obj2 = sampleWithUserId;
     }
     tmp = isStaffResult;
   }

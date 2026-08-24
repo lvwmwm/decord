@@ -1,10 +1,10 @@
-// Module ID: 16333
-// Function ID: 16334
-// Dependencies: [19, 21, 6794, 7190, 6291, 1236, 6296, 13069, 2]
+// Module ID: 16428
+// Function ID: 16429
+// Dependencies: [19, 21, 6831, 7228, 6322, 1236, 6327, 13125, 2]
 
-// Module 16333
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 16428
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -13,7 +13,7 @@ const memoResult = importAllResult.memo(function VoicePanelChannelOptInNotice(ch
   const analyticsSection = channel.analyticsSection;
   const items = [channel, analyticsSection];
   const callback = importAllResult.useCallback(() => {
-    let obj = channel(outer1_2[2]);
+    let obj = channel(closure_1_2[2]);
     obj = { section: analyticsSection };
     obj.setOptInChannel(channel.guild_id, channel.id, true, obj);
   }, items);
@@ -23,13 +23,12 @@ const memoResult = importAllResult.memo(function VoicePanelChannelOptInNotice(ch
   obj[0] = intl.string(channel(1236).t["9mysCh"]);
   const intl2 = channel(1236).intl;
   obj[1] = intl2.string(channel(1236).t.PDUCIN);
-  obj = { IconComponent: null };
-  obj[0] = channel(13069).ChannelListMagnifyingGlassIcon;
-  obj[2] = jsx(channel(6296).TableRowIcon, { IconComponent: null });
+  obj = { IconComponent: channel(13125).ChannelListMagnifyingGlassIcon };
+  obj[2] = jsx(channel(6327).TableRowIcon, { IconComponent: channel(13125).ChannelListMagnifyingGlassIcon });
   obj[3] = callback;
-  obj[1] = jsx(channel(6291).TableRow, { IconComponent: null });
-  return jsx(analyticsSection(7190), { IconComponent: null });
+  obj[1] = jsx(channel(6322).TableRow, { IconComponent: channel(13125).ChannelListMagnifyingGlassIcon });
+  return jsx(analyticsSection(7228), { IconComponent: channel(13125).ChannelListMagnifyingGlassIcon });
 });
-const result = require("_persistOptInChannelUpdates2").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelChannelOptInNotice.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelChannelOptInNotice.tsx");
 
 export default memoResult;

@@ -1,22 +1,22 @@
-// Module ID: 9165
-// Function ID: 9166
+// Module ID: 9202
+// Function ID: 9203
 // Name: ImagePlaceholderVersions
-// Dependencies: [17, 21, 500, 9166, 5449, 2]
+// Dependencies: [17, 21, 500, 9203, 5454, 2]
 // Exports: ImageWithPlaceholder
 
-// Module 9165 (ImagePlaceholderVersions)
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import set from "set";
-import set from "set";
+// Module 9202 (ImagePlaceholderVersions)
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 9203 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import set from "set" /* 500 */;
 
-let obj1;
-let requireNativeComponent;
 ({ View: obj1, requireNativeComponent } = get_ActivityIndicator);
+const jsx = jsxProd.jsx;
 let closure_4 = { flex: 1 };
 let obj = { THUMBHASH: 1, [1]: "THUMBHASH" };
 if (set.isAndroid()) {
-  let importDefaultResult = require("__INTERNAL_VIEW_CONFIG");
+  let importDefaultResult = __INTERNAL_VIEW_CONFIGDefault;
 } else {
   importDefaultResult = requireNativeComponent("DCDImageWithThumbhashPlaceholderView");
 }
@@ -24,11 +24,6 @@ const result = set.fileFinishedImporting("components_native/common/ImageWithPlac
 
 export const ImagePlaceholderVersions = obj;
 export const ImageWithPlaceholder = function ImageWithPlaceholder(arg0) {
-  let alt;
-  let placeholder;
-  let placeholderVersion;
-  let style;
-  let uri;
   ({ uri, placeholder, placeholderVersion, alt, style } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   if (null != placeholder) {
@@ -47,6 +42,6 @@ export const ImageWithPlaceholder = function ImageWithPlaceholder(arg0) {
   obj = { style };
   const merged2 = Object.assign(merged);
   obj = { style: closure_4, resizeMode: "cover", source: { uri }, alt };
-  obj.children = jsx(importDefault(5449), { style: closure_4, resizeMode: "cover", source: { uri }, alt });
+  obj.children = jsx(preloadDefault, { style: closure_4, resizeMode: "cover", source: { uri }, alt });
   tmp4 = <closure_2 style={closure_4} resizeMode="cover" source={{ uri }} alt={alt} />;
 };

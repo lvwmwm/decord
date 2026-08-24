@@ -1,14 +1,15 @@
-// Module ID: 4308
-// Function ID: 4309
+// Module ID: 4312
+// Function ID: 4313
 // Name: validateSavedTheme
 // Dependencies: [1305, 1208, 589, 709, 2]
 
-// Module 4308 (validateSavedTheme)
-import SystemThemeState from "SystemThemeState";
-import { PersistedStore } from "initialize";
+// Module 4312 (validateSavedTheme)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import _modDef1208 from "module_1208" /* 1208 */;
+import SystemThemeState from "SystemThemeState" /* 1305 */;
 
-let PROTO_THEME_MAP_WEB_REFRESH;
-let obj1;
 function validateSavedTheme(colors) {
   try {
     let tmp5 = colors.colors.length > 0;
@@ -23,7 +24,7 @@ function validateSavedTheme(colors) {
     }
     return tmp5;
   } catch (tmp8) {
-    let obj = importDefault(1208);
+    obj = _modDef1208;
     obj = { tags: null };
     obj[0] = { app_context: "SavedCustomThemeStore" };
     obj.captureMessage("Invalid saved custom theme: " + tmp8, obj);
@@ -34,6 +35,7 @@ function validateSavedTheme(colors) {
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", IS_FETCHING: 1, [1]: "IS_FETCHING", HAS_FETCHED: 2, [2]: "HAS_FETCHED", ERROR: 3, [3]: "ERROR" };
 let closure_4 = [];
 let NOT_FETCHED = obj.NOT_FETCHED;
+const PersistedStore = initializeDefault.PersistedStore;
 class SavedCustomThemeStore extends PersistedStore {
 }
 const prototype = SavedCustomThemeStore.prototype;
@@ -41,7 +43,7 @@ prototype["initialize"] = function initialize(savedCustomThemes) {
   if (null != savedCustomThemes) {
     savedCustomThemes = savedCustomThemes.savedCustomThemes;
   }
-  const NOT_FETCHED = obj.NOT_FETCHED;
+  NOT_FETCHED = obj.NOT_FETCHED;
 };
 prototype["getState"] = function getState() {
   let savedCustomThemes = closure_4;
@@ -93,16 +95,16 @@ obj = {
     themes = themes.themes;
     const HAS_FETCHED = obj.HAS_FETCHED;
     const found = themes.filter(validateSavedTheme);
-    let closure_4 = found.map((colors) => ({ colors: colors.colors, gradient_angle: colors.gradient_angle, base_mix: colors.base_mix, base_theme: table[colors.base_theme] }));
+    closure_4 = found.map((colors) => ({ colors: colors.colors, gradient_angle: colors.gradient_angle, base_mix: colors.base_mix, base_theme: table[colors.base_theme] }));
   },
   SAVED_CUSTOM_THEMES_FETCH_FAILURE: function handleCustomThemesFetchFailure(error) {
     const ERROR = obj.ERROR;
-    obj = importDefault(1208);
+    obj = _modDef1208;
     obj.captureException(error.error, { tags: { app_context: "SavedCustomThemeStore" } });
   }
 };
-const savedCustomThemeStore = new SavedCustomThemeStore(require("dispatcher"), obj);
-const result = require("initialize").fileFinishedImporting("modules/client_themes/SavedCustomThemeStore.tsx");
+const savedCustomThemeStore = new SavedCustomThemeStore(dispatcherDefault, obj);
+const result = set.fileFinishedImporting("modules/client_themes/SavedCustomThemeStore.tsx");
 
 export default savedCustomThemeStore;
 export const FetchState = obj;

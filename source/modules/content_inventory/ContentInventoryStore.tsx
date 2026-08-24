@@ -1,16 +1,19 @@
-// Module ID: 9045
-// Function ID: 9046
+// Module ID: 9082
+// Function ID: 9083
 // Name: map
-// Dependencies: [589, 9046, 709, 2]
+// Dependencies: [589, 9083, 709, 2]
 
-// Module 9045 (map)
-import { Store } from "initialize";
+// Module 9082 (map)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isMatchingListeningActivity from "isMatchingListeningActivity" /* 9083 */;
 
-const require = arg1;
+require = arg1;
 let map = new Map();
 const map1 = new Map();
 const map2 = new Map();
 let c6 = false;
+const Store = initializeDefault.Store;
 class ContentInventoryStore extends Store {
 }
 const prototype = ContentInventoryStore.prototype;
@@ -41,8 +44,6 @@ prototype["getDebugImpressionCappingDisabled"] = function getDebugImpressionCapp
   return c6;
 };
 prototype["getMatchingInboxEntry"] = function getMatchingInboxEntry(feedId) {
-  let activity;
-  let require;
   ({ activity, userId: require } = feedId);
   const feed = this.getFeed(feedId.feedId);
   if (null != feed) {
@@ -59,14 +60,14 @@ prototype["getMatchingInboxEntry"] = function getMatchingInboxEntry(feedId) {
         }
         return items1;
       }, []);
-      return require(9046) /* isMatchingListeningActivity */.findMatchingEntry(reduced, activity);
+      return isMatchingListeningActivity.findMatchingEntry(reduced, activity);
     }
   }
 };
 ContentInventoryStore.displayName = "ContentInventoryStore";
-const contentInventoryStore = new ContentInventoryStore(require("dispatcher"), {
+const contentInventoryStore = new ContentInventoryStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    const map = new Map();
+    map = new Map();
   },
   CONTENT_INVENTORY_SET_FEED: function handleSetContentInventoryFeed(feedId) {
     feedId = feedId.feedId;
@@ -94,6 +95,6 @@ const contentInventoryStore = new ContentInventoryStore(require("dispatcher"), {
     closure_6 = !closure_6;
   }
 });
-let result = require("dispatcher").fileFinishedImporting("modules/content_inventory/ContentInventoryStore.tsx");
+let result = require("set").fileFinishedImporting("modules/content_inventory/ContentInventoryStore.tsx");
 
 export default contentInventoryStore;

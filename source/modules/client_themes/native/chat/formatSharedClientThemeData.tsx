@@ -1,13 +1,18 @@
-// Module ID: 8437
-// Function ID: 8438
+// Module ID: 8476
+// Function ID: 8477
 // Name: formatSharedClientThemeData
-// Dependencies: [17, 7989, 1236, 2533, 2]
+// Dependencies: [17, 8028, 1236, 2534, 2]
 // Exports: formatSharedClientThemeData
 
-// Module 8437 (formatSharedClientThemeData)
-import { Image } from "get ActivityIndicator";
+// Module 8476 (formatSharedClientThemeData)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2534 */;
+import registerAssetDefault from "registerAsset" /* 8028 */;
 
-const result = require("getSystemLocale").fileFinishedImporting("modules/client_themes/native/chat/formatSharedClientThemeData.tsx");
+const Image = get_ActivityIndicator.Image;
+const result = set.fileFinishedImporting("modules/client_themes/native/chat/formatSharedClientThemeData.tsx");
 
 export const formatSharedClientThemeData = function formatSharedClientThemeData(message, ensureAvatarSourceResult, nick) {
   const sharedClientTheme = message.sharedClientTheme;
@@ -20,14 +25,14 @@ export const formatSharedClientThemeData = function formatSharedClientThemeData(
       str2 = ensureAvatarSourceResult.uri;
     }
     obj[3] = str2;
-    obj[4] = Image.resolveAssetSource(importDefault(7989)).uri;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[5] = intl.string(require(1236) /* getSystemLocale */.t.SKNnqq);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[6] = intl2.string(importDefault(2533).yl1iMm);
-    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj[4] = Image.resolveAssetSource(registerAssetDefault).uri;
+    const intl = getSystemLocale.intl;
+    obj[5] = intl.string(getSystemLocale.t.SKNnqq);
+    const intl2 = getSystemLocale.intl;
+    obj[6] = intl2.string(messagesProxyDefault.yl1iMm);
+    const intl3 = getSystemLocale.intl;
     const _HermesInternal = HermesInternal;
-    obj[7] = "" + intl3.format(importDefault(2533).fQPSEf, { username: "__USERNAME__" });
+    obj[7] = "" + intl3.format(messagesProxyDefault.fQPSEf, { username: "__USERNAME__" });
     return obj;
   }
 };

@@ -1,10 +1,11 @@
-// Module ID: 13176
-// Function ID: 13177
+// Module ID: 13232
+// Function ID: 13233
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 13176 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 13232 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 let obj = { probeAudioEffects: false };
 obj = { name: "2026-03-audio-effects-probe", kind: "user", defaultConfig: obj, variations: null };
@@ -15,6 +16,6 @@ obj1.probeAudioEffects = true;
 obj[1] = obj1;
 obj[3] = obj;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const result = require("set").fileFinishedImporting("modules/media_engine/AudioEffectsExperiment.tsx");
+const result = set.fileFinishedImporting("modules/media_engine/AudioEffectsExperiment.tsx");
 
 export default apexExperiment;

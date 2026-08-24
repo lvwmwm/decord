@@ -1,62 +1,65 @@
-// Module ID: 16872
-// Function ID: 16873
+// Module ID: 16965
+// Function ID: 16966
 // Name: getBansEmptySource
-// Dependencies: [19, 17, 21, 7907, 16873, 16874, 16875, 1363, 2]
+// Dependencies: [19, 17, 21, 7946, 16966, 16967, 16968, 1363, 2]
 // Exports: BansEmpty, getBansEmptySource, useBansEmptySource
 
-// Module 16872 (getBansEmptySource)
-import "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 16965 (getBansEmptySource)
+import noopAll from "noop" /* 19 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/BansEmpty.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Illustration/native/redesign/generated/BansEmpty.tsx");
 
 export const getBansEmptySource = function getBansEmptySource(theme) {
-  let obj = require(7907) /* getIllustrationSource */;
+  let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(16873);
+      return callback(16966);
     },
     darker() {
-      return callback(16874);
+      return callback(16967);
     },
     light() {
-      return callback(16875);
+      return callback(16968);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useBansEmptySource = function useBansEmptySource() {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16873);
+      return callback(16966);
     },
     darker() {
-      return callback(16874);
+      return callback(16967);
     },
     light() {
-      return callback(16875);
+      return callback(16968);
     }
   };
-  return require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const BansEmpty = function BansEmpty(arg0) {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16873);
+      return callback(16966);
     },
     darker() {
-      return callback(16874);
+      return callback(16967);
     },
     light() {
-      return callback(16875);
+      return callback(16968);
     }
   };
   obj = {};
-  const illustrationSource = require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

@@ -1,12 +1,14 @@
-// Module ID: 4101
-// Function ID: 4102
+// Module ID: 4104
+// Function ID: 4105
 // Name: chainCallbacks
 // Dependencies: [2]
 // Exports: mergeProps, mergeRefs
 
-// Module 4101 (chainCallbacks)
+// Module 4104 (chainCallbacks)
+import set from "set" /* 2 */;
+
 function chainCallbacks(arg0, arg1) {
-  let closure_0 = [...arguments];
+  closure_0 = [...arguments];
   return () => {
     const items = [...arguments];
     for (const item10008 of closure_0) {
@@ -25,7 +27,7 @@ function chainCallbacks(arg0, arg1) {
     }
   };
 }
-const result = require("set").fileFinishedImporting("design/utils/native/mergeProps.native.tsx");
+const result = set.fileFinishedImporting("design/utils/native/mergeProps.native.tsx");
 
 export { chainCallbacks };
 export const mergeRefs = function mergeRefs(ref, ref2) {

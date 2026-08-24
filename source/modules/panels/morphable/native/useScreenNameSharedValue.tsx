@@ -1,19 +1,19 @@
-// Module ID: 16230
-// Function ID: 16231
+// Module ID: 16327
+// Function ID: 16328
 // Name: useScreenNameSharedValue
-// Dependencies: [19, 4230, 4115, 2]
+// Dependencies: [19, 4234, 4119, 2]
 // Exports: default
 
-// Module 16230 (useScreenNameSharedValue)
-import noop from "noop";
+// Module 16327 (useScreenNameSharedValue)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 const unknown = "unknown";
-let result = require("module_4115").fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
+let result = require("set").fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
 
 export default function useScreenNameSharedValue() {
-  let rootNavigationRef = sharedValue(4230).getRootNavigationRef();
-  let obj = sharedValue(4230);
+  let rootNavigationRef = sharedValue(4234).getRootNavigationRef();
+  let obj = sharedValue(4234);
   let isReadyResult;
   if (rootNavigationRef != null) {
     isReadyResult = rootNavigationRef.isReady();
@@ -31,7 +31,7 @@ export default function useScreenNameSharedValue() {
   } else {
     tmp2 = unknown;
   }
-  sharedValue = sharedValue(4115).useSharedValue(tmp2);
+  sharedValue = sharedValue(4119).useSharedValue(tmp2);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     function handleStateChange() {
@@ -49,14 +49,14 @@ export default function useScreenNameSharedValue() {
         }
       }
     }
-    const rootNavigationRef = sharedValue(outer1_1[1]).getRootNavigationRef();
+    const rootNavigationRef = sharedValue(closure_1_1[1]).getRootNavigationRef();
     if (null != rootNavigationRef) {
       rootNavigationRef.addListener("state", handleStateChange);
       return () => {
         rootNavigationRef.removeListener("state", handleStateChange);
       };
     }
-    const obj = sharedValue(outer1_1[1]);
+    const obj = sharedValue(closure_1_1[1]);
   }, items);
   return sharedValue;
 };

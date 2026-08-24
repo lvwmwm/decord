@@ -1,12 +1,12 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 17055
+// Function ID: 17056
 // Name: useEditStateContext
 // Dependencies: [19, 21, 2]
 // Exports: EditStateContextProvider, useEditStateContext
 
-// Module 16962 (useEditStateContext)
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 17055 (useEditStateContext)
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 let c0 = importAllResult;
 let context = importAllResult.createContext(undefined);
@@ -16,7 +16,7 @@ export const useEditStateContext = function useEditStateContext() {
   const context = importAllResult.useContext(closure_2);
   if (null == context) {
     const _Error = Error;
-    const error = new Error("No edit state; are you missing an <EditStateContextProvider />?");
+    error = new Error("No edit state; are you missing an <EditStateContextProvider />?");
     throw error;
   } else {
     return context;

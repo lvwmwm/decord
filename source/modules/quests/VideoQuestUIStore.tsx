@@ -1,13 +1,12 @@
-// Module ID: 7455
-// Function ID: 7456
+// Module ID: 7493
+// Function ID: 7494
 // Name: _toPropertyKey
-// Dependencies: [109, 700, 4242, 7456, 705, 7457, 2]
+// Dependencies: [109, 700, 4246, 7494, 705, 7495, 2]
 
-// Module 7455 (_toPropertyKey)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import identity from "identity";
-import createJSONStorage from "createJSONStorage";
-import createJSONStorage from "createJSONStorage";
+// Module 7493 (_toPropertyKey)
+import closure_3 from "_objectWithoutProperties" /* 109 */;
+import identity from "identity" /* 700 */;
+import createJSONStorage from "createJSONStorage" /* 4246 */;
 
 const require = arg1;
 function _toPropertyKey(obj) {
@@ -44,15 +43,15 @@ function _toPropertyKey(obj) {
 let obj = { UNKNOWN: "UNKNOWN", NOT_STARTED: "NOT_STARTED", IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED" };
 identity = identity.createWithEqualityFn();
 obj = { name: "videoQuestUIState", storage: null, partialize: null, version: 0 };
-obj[1] = createJSONStorage.createJSONStorage(() => importDefault(7457));
+obj[1] = createJSONStorage.createJSONStorage(() => importDefault(7495));
 obj[2] = function partialize(volume) {
   return { volume: volume.volume, muted: volume.muted, videoProgress: volume.videoProgress };
 };
 const withEqualityFnResult = identity(createJSONStorage.persist((arg0, arg1) => {
   const _require = arg0;
-  let closure_1 = arg1;
+  closure_1 = arg1;
   return {
-    volume: _require(7456).DEFAULT_VIDEO_VOLUME,
+    volume: _require(7494).DEFAULT_VIDEO_VOLUME,
     muted: false,
     transcriptEnabled: false,
     captionEnabled: false,
@@ -60,16 +59,16 @@ const withEqualityFnResult = identity(createJSONStorage.persist((arg0, arg1) => 
     transcript: null,
     setVolume(arg0) {
       const callback = arg0;
-      callback(outer1_2[4]).batchUpdates(() => callback({ volume: callback }));
+      callback(closure_1_2[4]).batchUpdates(() => callback({ volume: callback }));
     },
     setMuted(arg0) {
       const callback = arg0;
-      callback(outer1_2[4]).batchUpdates(() => callback({ muted: callback }));
+      callback(closure_1_2[4]).batchUpdates(() => callback({ muted: callback }));
     },
     setVideoProgress(arg0, arg1, arg2) {
       const callback = arg0;
       const callback2 = arg1;
-      let closure_2 = arg2;
+      closure_2 = arg2;
       const tmp = callback2().videoProgress[arg0];
       let num;
       if (tmp != null) {
@@ -78,12 +77,12 @@ const withEqualityFnResult = identity(createJSONStorage.persist((arg0, arg1) => 
       if (num == null) {
         num = 0;
       }
-      let _objectWithoutProperties = Math.max(num, arg1);
-      callback(outer1_2[4]).batchUpdates(() => {
-        let obj = { videoProgress: null };
+      closure_3 = Math.max(num, arg1);
+      callback(closure_1_2[4]).batchUpdates(() => {
+        obj = { videoProgress: null };
         obj = {};
         const merged = Object.assign(callback2().videoProgress);
-        obj = { timestampSec: callback2, duration: closure_2, maxTimestampSec: _objectWithoutProperties };
+        obj = { timestampSec: callback2, duration: closure_2, maxTimestampSec: closure_3 };
         obj[callback] = obj;
         obj[0] = obj;
         return callback(obj);
@@ -91,11 +90,11 @@ const withEqualityFnResult = identity(createJSONStorage.persist((arg0, arg1) => 
     },
     setTranscriptEnabled(arg0) {
       const callback = arg0;
-      callback(outer1_2[4]).batchUpdates(() => callback({ transcriptEnabled: callback }));
+      callback(closure_1_2[4]).batchUpdates(() => callback({ transcriptEnabled: callback }));
     },
     setCaptionEnabled(arg0) {
       const callback = arg0;
-      callback(outer1_2[4]).batchUpdates(() => callback({ captionEnabled: callback }));
+      callback(closure_1_2[4]).batchUpdates(() => callback({ captionEnabled: callback }));
     },
     getVideoProgress(questId) {
       return callback2().videoProgress[questId];
@@ -103,37 +102,37 @@ const withEqualityFnResult = identity(createJSONStorage.persist((arg0, arg1) => 
     getVideoProgressState(arg0) {
       const tmp = callback2().videoProgress[arg0];
       if (null == tmp) {
-        let IN_PROGRESS = outer1_5.UNKNOWN;
+        let IN_PROGRESS = closure_1_5.UNKNOWN;
       } else if (0 === tmp.timestampSec) {
-        IN_PROGRESS = outer1_5.NOT_STARTED;
+        IN_PROGRESS = closure_1_5.NOT_STARTED;
       } else if (tmp.timestampSec >= tmp.duration) {
-        IN_PROGRESS = outer1_5.COMPLETED;
+        IN_PROGRESS = closure_1_5.COMPLETED;
       } else {
-        IN_PROGRESS = outer1_5.IN_PROGRESS;
+        IN_PROGRESS = closure_1_5.IN_PROGRESS;
       }
       return IN_PROGRESS;
     },
     resetQuest(questId) {
       const callback = questId;
-      callback(outer1_2[4]).batchUpdates(() => {
+      callback(closure_1_2[4]).batchUpdates(() => {
         const items = [questId];
-        questId({ videoProgress: outer2_3(outer1_1().videoProgress, items.map(outer2_4)) });
+        questId({ videoProgress: closure_2_3(closure_1_1().videoProgress, items.map(closure_2_4)) });
       });
     },
     clearState() {
-      callback(outer1_2[4]).batchUpdates(() => {
+      callback(closure_1_2[4]).batchUpdates(() => {
         callback({ videoProgress: {} });
       });
     },
     setTranscriptAsset(arg0) {
       const callback = arg0;
-      callback(outer1_2[4]).batchUpdates(() => {
+      callback(closure_1_2[4]).batchUpdates(() => {
         callback({ transcript: callback });
       });
     }
   };
 }, obj));
-const result = require("createJSONStorage").fileFinishedImporting("modules/quests/VideoQuestUIStore.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/VideoQuestUIStore.tsx");
 
 export default withEqualityFnResult;
 export const DEFAULT_VIDEO_PROGRESS = { timestampSec: 0, duration: 10, maxTimestampSec: 0 };

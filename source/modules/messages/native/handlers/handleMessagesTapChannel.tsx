@@ -1,27 +1,23 @@
-// Module ID: 10740
-// Function ID: 10741
+// Module ID: 10779
+// Function ID: 10780
 // Name: maybeStartLurking
-// Dependencies: [5, 1395, 1434, 1391, 1990, 1983, 1910, 4021, 676, 1398, 5286, 6785, 7301, 8780, 8308, 5260, 10741, 2007, 7211, 4342, 10754, 10762, 1370, 4488, 8663, 4975, 2]
+// Dependencies: [5, 1395, 1434, 1391, 1991, 1984, 1910, 4024, 676, 1398, 5291, 6822, 7339, 8817, 8348, 5265, 10780, 2008, 7249, 4346, 10793, 10801, 1370, 4492, 8700, 4980, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 10740 (maybeStartLurking)
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import { isGuildVocalChannelType } from "createChannelRecord";
-import { isGuildLurker } from "GuildNSFWContentLevel";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import closure_9 from "createGuildRoleRecordFromRust";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import ME from "ME";
-import { StaticChannelRoute } from "set";
-import { GuildOnboardingTab } from "serverPromptToClientPrompt";
-import { CHANNELS_AND_ROLES_MODAL_KEY as closure_18 } from "GUILD_ONBOARDING_MODAL_KEY";
+// Module 10779 (maybeStartLurking)
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import { isGuildVocalChannelType } from "createChannelRecord" /* 1395 */;
+import { isGuildLurker } from "GuildNSFWContentLevel" /* 1434 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_10 from "createGuildRecordFromRust" /* 1910 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4024 */;
+import ME from "ME" /* 676 */;
+import { StaticChannelRoute } from "set" /* 1398 */;
+import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 5291 */;
+import { CHANNELS_AND_ROLES_MODAL_KEY as closure_18 } from "GUILD_ONBOARDING_MODAL_KEY" /* 6822 */;
 
-let closure_12;
-let closure_14;
-let closure_15;
-let map1;
 const require = arg1;
 function maybeStartLurking() {
   const self = this;
@@ -36,13 +32,13 @@ function maybeStartLurking() {
 function _maybeStartLurking() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2, arg3) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let closure_3 = arg3;
-    let c5 = 0;
-    let c4 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    closure_3 = arg3;
+    c5 = 0;
+    c4 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2, arg3) {
       if (c4 === 2) {
         c4 = 3;
@@ -55,7 +51,7 @@ function _maybeStartLurking() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -71,7 +67,7 @@ function _maybeStartLurking() {
               return obj;
             } else {
               let v0 = 1;
-              let obj1 = callback(table[12]);
+              obj1 = callback(table[12]);
               obj1 = { channelId: null, messageId: null };
               obj1[0] = callback;
               obj1[1] = table;
@@ -109,7 +105,7 @@ function _maybeStartLurking() {
       }
     })();
   });
-  const _maybeStartLurking = tmp;
+  closure_20 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -121,14 +117,10 @@ function _maybeStartLurking() {
 function _handleMessagesTapChannel() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c2;
-      let c3;
-      let navigationReplace;
       if (channelId === 2) {
         channelId = 3;
         let throwTypeErrorResult = HermesBuiltin.throwTypeError();
@@ -144,7 +136,7 @@ function _handleMessagesTapChannel() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -190,7 +182,7 @@ function _handleMessagesTapChannel() {
                   throw arg1;
                 } else if (arg0 === 2) {
                   channelId = 3;
-                  const obj1 = { value: null, done: true };
+                  obj1 = { value: null, done: true };
                   obj1[0] = arg1;
                   return obj1;
                 } else {
@@ -222,7 +214,7 @@ function _handleMessagesTapChannel() {
                         throwTypeErrorResult = selfMember;
                         if (null == selfMember) {
                           channelId = 3;
-                          return { value: "HermesInternal", done: "HermesInternal" };
+                          return { value: "HermesInternal", done: null };
                         } else {
                           throwTypeErrorResult = navigationReplace;
                           throwTypeErrorResult = channelId;
@@ -250,7 +242,7 @@ function _handleMessagesTapChannel() {
                               const obj27 = navigationReplace(v0[15]);
                             } else {
                               channelId = 3;
-                              return { value: "HermesInternal", done: "HermesInternal" };
+                              return { value: "HermesInternal", done: null };
                             }
                           } else if ("customize" === throwTypeErrorResult) {
                             throwTypeErrorResult = callback;
@@ -276,7 +268,7 @@ function _handleMessagesTapChannel() {
                               const obj25 = navigationReplace(v0[15]);
                             } else {
                               channelId = 3;
-                              return { value: "HermesInternal", done: "HermesInternal" };
+                              return { value: "HermesInternal", done: null };
                             }
                           } else {
                             if ("home" !== throwTypeErrorResult) {
@@ -294,7 +286,7 @@ function _handleMessagesTapChannel() {
                                     throwTypeErrorResult = guild;
                                     if (null == guild) {
                                       channelId = 3;
-                                      return { value: "HermesInternal", done: "HermesInternal" };
+                                      return { value: "HermesInternal", done: null };
                                     } else {
                                       throwTypeErrorResult = navigationReplace;
                                       throwTypeErrorResult = callback;
@@ -388,14 +380,14 @@ function _handleMessagesTapChannel() {
                               throwTypeErrorResult = throwTypeErrorResult(closure_15.CHANNEL(guildId, constants4.GUILD_HOME), obj8);
                             } else {
                               channelId = 3;
-                              return { value: "HermesInternal", done: "HermesInternal" };
+                              return { value: "HermesInternal", done: null };
                             }
                           }
                         }
                       }
                       channelId = 3;
                       channelId = 3;
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   }
                   if (null != messageId) {
@@ -445,7 +437,7 @@ function _handleMessagesTapChannel() {
                               throwTypeErrorResult = channel;
                               if (!role2.can(constants3.CONNECT, channel)) {
                                 channelId = 3;
-                                return { value: "HermesInternal", done: "HermesInternal" };
+                                return { value: "HermesInternal", done: null };
                               }
                             }
                             throwTypeErrorResult = navigationReplace;
@@ -542,7 +534,7 @@ function _handleMessagesTapChannel() {
                   return obj14;
                 } else if (arg1) {
                   channelId = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else if (3 === tmp5) {
                 if (arg0 === 1) {
@@ -555,7 +547,7 @@ function _handleMessagesTapChannel() {
                   return obj15;
                 } else if (arg1) {
                   channelId = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else if (arg0 === 1) {
                 channelId = 3;
@@ -603,7 +595,7 @@ function _handleMessagesTapChannel() {
     iter.next();
     return iter;
   });
-  const _handleMessagesTapChannel = tmp;
+  closure_21 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -613,7 +605,7 @@ function _handleMessagesTapChannel() {
   return applyArgumentsResult;
 }
 ({ ChannelTypes: closure_12, GuildFeatures: map1, Permissions: closure_14, Routes: closure_15 } = ME);
-let result = require("GuildNSFWContentLevel").fileFinishedImporting("modules/messages/native/handlers/handleMessagesTapChannel.tsx");
+let result = require("set").fileFinishedImporting("modules/messages/native/handlers/handleMessagesTapChannel.tsx");
 
 export const handleMessagesTapChannel = function handleMessagesTapChannel(arg0) {
   const self = this;

@@ -1,11 +1,14 @@
-// Module ID: 12849
-// Function ID: 12850
+// Module ID: 12904
+// Function ID: 12905
 // Name: zustandStore
-// Dependencies: [4241, 2]
+// Dependencies: [4245, 2]
 
-// Module 12849 (zustandStore)
-const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ scrollToSectionId: "r" }));
-const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/PremiumNitroNavigationStore.tsx");
+// Module 12904 (zustandStore)
+import set from "set" /* 2 */;
+import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4245 */;
+
+const zustandStore = defaultStatesAreEqual.createZustandStore(() => ({ scrollToSectionId: "r" }));
+const result = set.fileFinishedImporting("modules/user_settings/premium/native/PremiumNitroNavigationStore.tsx");
 
 export default zustandStore;
 export const NitroHomeSectionId = { REFERRAL_PROGRAM: "referralProgram" };

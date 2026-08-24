@@ -1,21 +1,21 @@
-// Module ID: 16341
-// Function ID: 16342
+// Module ID: 16436
+// Function ID: 16437
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [5221, 7250, 4540, 9763, 676, 589, 16342, 2]
+// Dependencies: [5226, 7288, 4545, 9802, 676, 589, 16437, 2]
 // Exports: default
 
-// Module 16341 (useConsoleConnectedAccountForVoiceUpsell)
-import set from "set";
-import filterPlayingActivities from "filterPlayingActivities";
-import closure_5 from "set";
-import { CONSOLE_VOICE_PLATFORMS } from "XBOX_URL_BASE";
-import { ActivityTypes } from "ME";
+// Module 16436 (useConsoleConnectedAccountForVoiceUpsell)
+import closure_3 from "set" /* 5226 */;
+import closure_4 from "filterPlayingActivities" /* 7288 */;
+import closure_5 from "set" /* 4545 */;
+import { CONSOLE_VOICE_PLATFORMS } from "XBOX_URL_BASE" /* 9802 */;
+import { ActivityTypes } from "ME" /* 676 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_console/useConsoleConnectedAccountForVoiceUpsell.tsx");
 
 export default function useConsoleConnectedAccountForVoiceUpsell() {
-  const items = [filterPlayingActivities];
+  const items = [closure_4];
   const stateFromStores = found(589).useStateFromStores(items, () => activities.getActivities(true));
   found = stateFromStores.filter((platform) => {
     platform = platform.platform;
@@ -32,7 +32,7 @@ export default function useConsoleConnectedAccountForVoiceUpsell() {
   const items1 = [closure_5];
   const stateFromStores1 = found(589).useStateFromStores(items1, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo() || null != awaitingRemoteSessionInfo.getRemoteSessionId());
   const obj2 = found(589);
-  const items2 = [set];
+  const items2 = [closure_3];
   const stateFromStores2 = found(589).useStateFromStores(items2, () => {
     const mapped = found.map((platform) => {
       platform = platform.platform;

@@ -1,32 +1,30 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11395
+// Function ID: 11396
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [19, 17, 1499, 21, 4661, 712, 6950, 6949, 7176, 4342, 1297, 2]
+// Dependencies: [19, 17, 1499, 21, 4668, 712, 6988, 6987, 7214, 4346, 1297, 2]
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 11344 (AppLauncherCommandOptionActionSheet)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11395 (AppLauncherCommandOptionActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
+noopAll;
 createCacheKey = { actionSheetBackground: null, titleContainer: null, titleWrapper: null, subtitleWrapper: null, contentContainer: null };
-createCacheKey = { backgroundColor: require("Themes").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+createCacheKey = { backgroundColor: ThemesDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { backgroundColor: "transparent" };
 createCacheKey[2] = { alignItems: "center" };
 createCacheKey[3] = { paddingHorizontal: 12, textAlign: "center" };
 createCacheKey[4] = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/app_launcher/native/options/AppLauncherCommandOptionActionSheet.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/options/AppLauncherCommandOptionActionSheet.tsx");
 
 export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOptionActionSheet(startExpanded) {
-  let children;
-  let contentContainerStyles;
-  let option;
-  let scrollable;
   ({ option, scrollable } = startExpanded);
   ({ children, contentContainerStyles } = startExpanded);
   if (scrollable === undefined) {
@@ -37,28 +35,19 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
     flag = true;
   }
   const merged = Object.assign(startExpanded, Object.create(null));
-  const tmp2 = createCacheKey();
+  const tmp2 = callback();
   let obj = {};
   const merged1 = Object.assign(merged);
   obj.backgroundStyles = tmp2.actionSheetBackground;
   obj.scrollable = scrollable;
   obj.startExpanded = flag;
   obj = { titleContainerStyle: tmp2.titleContainer, titleWrapperStyle: tmp2.titleWrapper, subtitleStyle: tmp2.subtitleWrapper, leading: null, title: null, subtitle: null, trailing: null };
-  obj = { style: { alignSelf: "flex-start" }, children: null };
-  obj[1] = jsx(merged(7176).ActionSheetCloseButton, {
-    onPress() {
-      outer1_1(outer1_2[9]).hideActionSheet();
-      const onDismiss = merged.onDismiss;
-      if (onDismiss != null) {
-        onDismiss();
-      }
-    }
-  });
-  obj[3] = <View style={{ alignSelf: "flex-start" }}>{null}</View>;
+  obj = { style: { alignSelf: "flex-start" }, children: jsx(merged(7214).ActionSheetCloseButton, obj1) };
+  obj[3] = <View style={{ alignSelf: "flex-start" }}>{jsx(merged(7214).ActionSheetCloseButton, obj1)}</View>;
   ({ displayName: obj2[4], displayDescription: obj2[5] } = option);
   obj[6] = jsx(merged(1297).Spacer, { size: 24 });
-  obj.header = jsx(merged(6949).BottomSheetTitleHeader, { style: { alignSelf: "flex-start" }, children: null });
+  obj.header = jsx(merged(6987).BottomSheetTitleHeader, { style: { alignSelf: "flex-start" }, children: jsx(merged(7214).ActionSheetCloseButton, obj1) });
   const items = [tmp2.contentContainer, contentContainerStyles];
   obj.children = <View style={items}>{children}</View>;
-  return jsx(merged(6950).BottomSheet, { style: { alignSelf: "flex-start" }, children: null }, option.name);
+  return jsx(merged(6988).BottomSheet, { style: { alignSelf: "flex-start" }, children: jsx(merged(7214).ActionSheetCloseButton, obj1) }, option.name);
 };

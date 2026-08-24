@@ -1,18 +1,19 @@
-// Module ID: 10755
-// Function ID: 10756
+// Module ID: 10794
+// Function ID: 10795
 // Name: request
-// Dependencies: [19, 4478, 4259, 12, 7140, 589, 2]
+// Dependencies: [19, 4482, 4263, 12, 7178, 589, 2]
 // Exports: useGetOrFetchApplicationBatched, useRequestApplication
 
-// Module 10755 (request)
-import noop from "noop";
-import addApplication from "addApplication";
-import set from "start";
+// Module 10794 (request)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "addApplication" /* 4482 */;
+import set from "set" /* 2 */;
 
+let set = arg1;
 class ApplicationFetchManager {
   constructor() {
     obj = Object.create(new.target.prototype);
-    ApplicationFetchManager = obj;
+    closure_0 = obj;
     map = new Map();
     obj._lastFetchedAttempted = map;
     set = new Set();
@@ -56,7 +57,7 @@ prototype["_flush"] = function _flush() {
   const items1 = [];
   const items2 = [];
   const item1 = items.forEach((applicationId) => {
-    if (outer1_4.didFetchingApplicationFail(applicationId)) {
+    if (closure_1_4.didFetchingApplicationFail(applicationId)) {
       items2.push(applicationId);
     } else {
       items1.push(applicationId);
@@ -77,7 +78,7 @@ prototype["_flush"] = function _flush() {
     const chunkResult1 = items(items1[3]).chunk(items2, 20);
   }
 };
-let set = Object.create(ApplicationFetchManager.prototype);
+set = Object.create(ApplicationFetchManager.prototype);
 set._lastFetchedAttempted = new Map();
 set = new Set();
 set._pending = set;
@@ -86,7 +87,7 @@ set._flushHandler = delayedCall;
 let result = set.fileFinishedImporting("modules/applications/useGetOrFetchApplicationBatched.tsx");
 
 export const useRequestApplication = function useRequestApplication(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const items = [arg0];
   const effect = React.useEffect(() => {
     let tmp2 = null != closure_0;
@@ -94,12 +95,11 @@ export const useRequestApplication = function useRequestApplication(arg0) {
       tmp2 = "" !== tmp;
     }
     if (tmp2) {
-      outer1_5.request(tmp);
+      closure_1_5.request(tmp);
     }
   }, items);
 };
 export const useGetOrFetchApplicationBatched = function useGetOrFetchApplicationBatched(applicationId) {
-  let obj = applicationId;
   const items = [applicationId];
   const effect = React.useEffect(() => {
     let tmp2 = null != closure_0;
@@ -107,18 +107,17 @@ export const useGetOrFetchApplicationBatched = function useGetOrFetchApplication
       tmp2 = "" !== tmp;
     }
     if (tmp2) {
-      outer1_5.request(tmp);
+      closure_1_5.request(tmp);
     }
   }, items);
-  obj = obj(589);
-  const items1 = [addApplication];
+  const items1 = [closure_4];
   const items2 = [applicationId];
-  return obj.useStateFromStores(items1, () => {
+  return applicationId(589).useStateFromStores(items1, () => {
     let application = null;
     if (null != closure_0) {
       application = null;
       if ("" !== tmp) {
-        application = outer1_4.getApplication(tmp);
+        application = closure_1_4.getApplication(tmp);
       }
     }
     return application;

@@ -1,25 +1,24 @@
-// Module ID: 11461
-// Function ID: 11462
+// Module ID: 11510
+// Function ID: 11511
 // Name: useShowConnectedUserLimit
-// Dependencies: [676, 9653, 2]
+// Dependencies: [676, 9692, 2]
 // Exports: default, useConnectedUserLimit, useConnectedUserLimitFormatted
 
-// Module 11461 (useShowConnectedUserLimit)
-import { MAX_STAGE_VOICE_USER_LIMIT as closure_2 } from "ME";
+// Module 11510 (useShowConnectedUserLimit)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9692 */;
 
-const result = require("set").fileFinishedImporting("modules/guild_sidebar/useShowConnectedUserLimit.tsx");
+let closure_2 = ME.MAX_STAGE_VOICE_USER_LIMIT;
+const result = set.fileFinishedImporting("modules/guild_sidebar/useShowConnectedUserLimit.tsx");
 
 export default function useShowConnectedUserLimit(channel) {
-  let considerMaxStageVoiceUserLimit;
-  let locked;
-  let selected;
-  let video;
   ({ channel, video, considerMaxStageVoiceUserLimit } = { channel: channel.channel, video: channel.video });
   ({ locked, selected } = channel);
   if (considerMaxStageVoiceUserLimit === undefined) {
     considerMaxStageVoiceUserLimit = true;
   }
-  const limit = importDefault(9653)(channel).limit;
+  const limit = useChannelVideoLimitDefault(channel).limit;
   let num = -1;
   if (channel.userLimit > 0) {
     num = channel.userLimit;
@@ -44,14 +43,11 @@ export default function useShowConnectedUserLimit(channel) {
   return num2 > 0 && !locked && !selected;
 };
 export const useConnectedUserLimit = function useConnectedUserLimit(arg0) {
-  let channel;
-  let considerMaxStageVoiceUserLimit;
-  let video;
   ({ channel, video, considerMaxStageVoiceUserLimit } = arg0);
   if (considerMaxStageVoiceUserLimit === undefined) {
     considerMaxStageVoiceUserLimit = true;
   }
-  const limit = importDefault(9653)(channel).limit;
+  const limit = useChannelVideoLimitDefault(channel).limit;
   let num = -1;
   if (channel.userLimit > 0) {
     num = channel.userLimit;
@@ -76,14 +72,12 @@ export const useConnectedUserLimit = function useConnectedUserLimit(arg0) {
   return num2;
 };
 export const useConnectedUserLimitFormatted = function useConnectedUserLimitFormatted(channel) {
-  let considerMaxStageVoiceUserLimit;
-  let video;
   const userCount = channel.userCount;
   ({ channel, video, considerMaxStageVoiceUserLimit } = { channel: channel.channel, video: channel.video });
   if (considerMaxStageVoiceUserLimit === undefined) {
     considerMaxStageVoiceUserLimit = true;
   }
-  const limit = importDefault(9653)(channel).limit;
+  const limit = useChannelVideoLimitDefault(channel).limit;
   let num = -1;
   if (channel.userLimit > 0) {
     num = channel.userLimit;

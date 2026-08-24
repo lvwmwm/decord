@@ -1,26 +1,20 @@
-// Module ID: 8194
-// Function ID: 8195
+// Module ID: 8234
+// Function ID: 8235
 // Name: canReactToMessageInternal
-// Dependencies: [1990, 4977, 4021, 1922, 676, 1403, 4010, 589, 2]
+// Dependencies: [1991, 4982, 4024, 1922, 676, 1403, 4013, 589, 2]
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 8194 (canReactToMessageInternal)
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import recomputeGuild from "recomputeGuild";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 8234 (canReactToMessageInternal)
+import hasFlag from "hasFlag" /* 1403 */;
+import isCommunicationDisabled from "isCommunicationDisabled" /* 4013 */;
+import closure_2 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "recomputeGuild" /* 4982 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function canReactToMessageInternal(state, getGuildId, items) {
-  let obj;
-  let obj2;
-  let obj3;
-  let obj4;
   [obj, obj2, obj3, obj4] = items;
   const guildId = getGuildId.getGuildId();
   const currentUser = obj.getCurrentUser();
@@ -52,28 +46,28 @@ function canReactToMessageInternal(state, getGuildId, items) {
     canResult = state.type !== constants3.THREAD_STARTER_MESSAGE;
   }
   if (canResult) {
-    canResult = !require(1403) /* hasFlag */.hasFlag(state.flags, constants4.EPHEMERAL);
-    const obj5 = require(1403) /* hasFlag */;
+    canResult = !hasFlag.hasFlag(state.flags, constants4.EPHEMERAL);
+    const obj5 = hasFlag;
   }
   if (canResult) {
-    canResult = !require(4010) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member);
-    const obj6 = require(4010) /* isCommunicationDisabled */;
+    canResult = !isCommunicationDisabled.isMemberCommunicationDisabled(member);
+    const obj6 = isCommunicationDisabled;
   }
   return canResult;
 }
-({ Permissions: closure_6, MessageStates: error, MessageTypes: metroImportAll, MessageFlags: c9 } = ME);
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/reactions/canReactToMessage.tsx");
+({ Permissions: closure_6, MessageStates: error, MessageTypes: closure_8, MessageFlags: c9 } = ME);
+const result = require("set").fileFinishedImporting("modules/reactions/canReactToMessage.tsx");
 
 export const canReactToMessage = function canReactToMessage(message, channel) {
-  const items = [mergeGuildAvatar, trackCommunicationDisabled, recomputeGuild, getUncachedChannelPermissions];
+  const items = [closure_5, closure_2, closure_3, closure_4];
   return canReactToMessageInternal(message, channel, items);
 };
 export const useCanReactToMessage = function useCanReactToMessage(arg0, arg1) {
   const _require = arg0;
-  const dependencyMap = arg1;
-  let items = [mergeGuildAvatar, trackCommunicationDisabled, recomputeGuild, getUncachedChannelPermissions];
+  dependencyMap = arg1;
+  let items = [closure_5, closure_2, closure_3, closure_4];
   return _require(589).useStateFromStores(items, () => {
-    const items = [outer1_5, outer1_2, outer1_3, outer1_4];
-    return outer1_10(closure_0, closure_1, items);
+    const items = [closure_1_5, closure_1_2, closure_1_3, closure_1_4];
+    return closure_1_10(closure_0, closure_1, items);
   });
 };

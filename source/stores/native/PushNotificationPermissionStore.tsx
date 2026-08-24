@@ -1,11 +1,13 @@
-// Module ID: 11578
-// Function ID: 11579
+// Module ID: 11627
+// Function ID: 11628
 // Name: set
-// Dependencies: [589, 11579, 709, 2]
+// Dependencies: [589, 11628, 709, 2]
 
-// Module 11578 (set)
-import { DeviceSettingsStore } from "initialize";
-import set from "dispatcher";
+// Module 11627 (set)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import NativeModulesDefault from "NativeModules" /* 11628 */;
+import set from "set" /* 2 */;
 
 let obj = { INIT: 0, [0]: "INIT", REQUESTED: 1, [1]: "REQUESTED", PROMPT_SEEN: 2, [2]: "PROMPT_SEEN", PROMPT_SKIPPED: 3, [3]: "PROMPT_SKIPPED" };
 obj = { MESSAGE_SENT: 0, [0]: "MESSAGE_SENT", INVITE_ACCEPTED: 1, [1]: "INVITE_ACCEPTED", FRIEND_REQUEST_SENT: 2, [2]: "FRIEND_REQUEST_SENT", DM_SPACE: 3, [3]: "DM_SPACE", CHANNEL_BANNER: 5, [5]: "CHANNEL_BANNER", POST_REACTION_BANNER: 6, [6]: "POST_REACTION_BANNER", GUILD_OPEN_BOTTOM_SHEET: 7, [7]: "GUILD_OPEN_BOTTOM_SHEET", CALL_DISCONNECT_BOTTOM_SHEET: 8, [8]: "CALL_DISCONNECT_BOTTOM_SHEET" };
@@ -13,11 +15,12 @@ obj = { permissionState: obj.INIT, promptLastSeen: { [obj.MESSAGE_SENT]: null, [
 let set = new Set([]);
 obj[2] = set;
 let c6 = null;
+const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class PushNotificationPermissionStore extends DeviceSettingsStore {
 }
 const prototype = PushNotificationPermissionStore.prototype;
 prototype["initialize"] = function initialize(promptLastSeen) {
-  let obj = {};
+  obj = {};
   const merged = Object.assign(obj);
   let tmp3 = promptLastSeen;
   if (promptLastSeen == null) {
@@ -43,9 +46,7 @@ prototype["initialize"] = function initialize(promptLastSeen) {
   HermesBuiltin.arraySpread(eligiblePromptTypes, tmp8);
   obj.eligiblePromptTypes = new Set(items.filter((arg0) => arg0 !== constants2.POST_REACTION_BANNER));
   const set = new Set(items.filter((arg0) => arg0 !== constants2.POST_REACTION_BANNER));
-  importDefault(11579).checkPermissions((sound) => {
-    let _alert;
-    let badge;
+  NativeModulesDefault.checkPermissions((sound) => {
     ({ alert: _alert, badge } = sound);
     if (!_alert) {
       _alert = sound.sound;
@@ -85,7 +86,7 @@ PushNotificationPermissionStore.displayName = "PushNotificationPermissionStore";
 PushNotificationPermissionStore.persistKey = "PushNotificationPermissionStoreKey_1";
 let items = [
   (promptLastSeen) => {
-    let obj = {};
+    obj = {};
     const merged = Object.assign(obj);
     const merged1 = Object.assign(promptLastSeen);
     obj = {};
@@ -115,7 +116,7 @@ let items = [
   }
 ];
 PushNotificationPermissionStore.migrations = items;
-const pushNotificationPermissionStore = new PushNotificationPermissionStore(require("dispatcher"), {
+const pushNotificationPermissionStore = new PushNotificationPermissionStore(dispatcherDefault, {
   PUSH_NOTIFICATION_PERMISSION_SET_STATE: function setPushNotificationPermissionState(permissionState) {
     obj.permissionState = permissionState.permissionState;
   },

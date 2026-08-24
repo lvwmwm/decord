@@ -1,13 +1,15 @@
-// Module ID: 16712
-// Function ID: 16713
+// Module ID: 16808
+// Function ID: 16809
 // Name: handleChannelDelete
-// Dependencies: [1218, 1391, 5038, 589, 709, 8516, 2]
+// Dependencies: [1218, 1391, 5043, 589, 709, 8555, 2]
 
-// Module 16712 (handleChannelDelete)
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import "initialize";
+// Module 16808 (handleChannelDelete)
+import initializeDefault from "initialize" /* 5043 */;
+import withErrorHandlingDefault from "withErrorHandling" /* 8555 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
+initializeDefault;
 class ThreadManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -26,8 +28,8 @@ prototype["handleChannelDelete"] = function handleChannelDelete(channel) {
       Emitter.batched(() => {
         for (const item10005 of allThreadsForParent) {
           let tmp = allThreadsForParent;
-          let tmp2 = outer1_1;
-          let obj = allThreadsForParent(outer1_1[4]);
+          let tmp2 = closure_1_1;
+          let obj = allThreadsForParent(closure_1_1[4]);
           obj = { type: "THREAD_DELETE", channel: null };
           obj[1] = item10005;
           let dispatchResult = obj.dispatch(obj);
@@ -62,8 +64,8 @@ prototype["handleMessageCreate"] = function handleMessageCreate(channelId) {
       const _Date = Date;
       const time = date.getTime();
       if (Date.now() - time < 5000) {
-        importDefault(8516).resort(channel.parent_id);
-        const obj3 = importDefault(8516);
+        withErrorHandlingDefault.resort(channel.parent_id);
+        const obj3 = withErrorHandlingDefault;
       }
     }
   }
@@ -78,8 +80,8 @@ prototype["handleGuildDelete"] = function handleGuildDelete(guild) {
       Emitter.batched(() => {
         for (const item10005 of allThreadsForGuild) {
           let tmp = allThreadsForGuild;
-          let tmp2 = outer1_1;
-          let obj = allThreadsForGuild(outer1_1[4]);
+          let tmp2 = closure_1_1;
+          let obj = allThreadsForGuild(closure_1_1[4]);
           obj = { type: "THREAD_DELETE", channel: null };
           obj[1] = item10005;
           let dispatchResult = obj.dispatch(obj);
@@ -90,6 +92,6 @@ prototype["handleGuildDelete"] = function handleGuildDelete(guild) {
   }
 };
 const threadManager = new ThreadManager();
-const result = require("initialize").fileFinishedImporting("modules/threads/ThreadManager.tsx");
+const result = require("set").fileFinishedImporting("modules/threads/ThreadManager.tsx");
 
 export default threadManager;

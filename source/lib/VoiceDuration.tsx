@@ -1,12 +1,15 @@
-// Module ID: 13094
-// Function ID: 13095
+// Module ID: 13150
+// Function ID: 13151
 // Name: start
-// Dependencies: [4548, 4584, 2]
+// Dependencies: [4553, 4590, 2]
 
-// Module 13094 (start)
+// Module 13150 (start)
+import set2 from "set" /* 2 */;
+import sleep from "sleep" /* 4553 */;
+
 let closure_2 = [1, 100, 1000, 10000];
 let closure_3 = [100, 500, 1000, 5000];
-let result = require("set").fileFinishedImporting("lib/VoiceDuration.tsx");
+let result = set2.fileFinishedImporting("lib/VoiceDuration.tsx");
 class VoiceDuration {
   constructor(arg0, arg1) {
     TimeStampProducer = importDefault;
@@ -84,7 +87,7 @@ prototype["start"] = function start(flag, flag2) {
   const connected2 = self.connected;
   connected2.start();
   const connection = self.connection;
-  connection.on(self(4584).BaseConnectionEvent.Speaking, (arg0, arg1) => {
+  connection.on(self(4590).BaseConnectionEvent.Speaking, (arg0, arg1) => {
     if (self.userId === arg0) {
       obj.onSpeaking(0 !== arg1);
     } else {
@@ -94,11 +97,11 @@ prototype["start"] = function start(flag, flag2) {
   self.onMuted(flag);
   self.onDeafened(flag2);
   const connection2 = self.connection;
-  connection2.on(self(4584).BaseConnectionEvent.Mute, (flag) => {
+  connection2.on(self(4590).BaseConnectionEvent.Mute, (flag) => {
     self.onMuted(flag);
   });
   const connection3 = self.connection;
-  connection3.on(self(4584).BaseConnectionEvent.Deafen, (flag2) => {
+  connection3.on(self(4590).BaseConnectionEvent.Deafen, (flag2) => {
     self.onDeafened(flag2);
   });
 };
@@ -165,13 +168,13 @@ prototype["onDeafened"] = function onDeafened(flag2) {
 };
 prototype["computeSpeakingDurationMilestones"] = function computeSpeakingDurationMilestones(lastStartTime, lastStartTime2, lastElapsed) {
   const self = this;
-  let closure_1 = lastStartTime;
-  let closure_2 = lastStartTime2;
-  let closure_3 = lastElapsed;
+  closure_1 = lastStartTime;
+  closure_2 = lastStartTime2;
+  closure_3 = lastElapsed;
   if (null != lastStartTime) {
     if (null != lastStartTime2) {
       const speaking = this.speaking;
-      let closure_0 = speaking.elapsed().asMilliseconds();
+      closure_0 = speaking.elapsed().asMilliseconds();
       const found = closure_2.filter((arg0) => {
         const timesUntilSpeakingDurationMilestonesMs = self.timesUntilSpeakingDurationMilestonesMs;
         return !timesUntilSpeakingDurationMilestonesMs.has(arg0);
@@ -190,7 +193,7 @@ prototype["addSpeechChunk"] = function addSpeechChunk() {
   const lastStartTime = this.speaking.lastStartTime;
   if (null != lastStartTime) {
     const timestampProducer = this.timestampProducer;
-    let closure_0 = timestampProducer.now() - lastStartTime;
+    closure_0 = timestampProducer.now() - lastStartTime;
     const found = closure_3.filter((arg0) => closure_0 >= arg0);
     const item = found.forEach((arg0) => {
       const speakingMinimumChunks = self.speakingMinimumChunks;
@@ -242,9 +245,8 @@ prototype["getDurationStats"] = function getDurationStats() {
     num = timestampProducer.now() - lastStartTime;
   }
   const speakingDurationMilestones = self.computeSpeakingDurationMilestones(self.connected.lastStartTime, self.speaking.lastStartTime, self.speaking.lastElapsed);
-  let obj = { duration_listening_ms: null, duration_speaking_ms: null, duration_participation_ms: null, duration_connected_ms: null, duration_muted_ms: null, duration_deafened_ms: null, duration_noise_cancellation_enabled_ms: null, duration_spatial_ms: null, speech_event_count: null };
-  const listening = self.listening;
-  obj[0] = listening.elapsed().asMilliseconds();
+  let obj = { duration_listening_ms: listening.elapsed().asMilliseconds(), duration_speaking_ms: null, duration_participation_ms: null, duration_connected_ms: null, duration_muted_ms: null, duration_deafened_ms: null, duration_noise_cancellation_enabled_ms: null, duration_spatial_ms: null, speech_event_count: null };
+  listening = self.listening;
   const speaking = self.speaking;
   const elapsedResult = listening.elapsed();
   obj[1] = speaking.elapsed().asMilliseconds();
@@ -290,7 +292,7 @@ prototype["getDurationStats"] = function getDurationStats() {
     const merged = Object.assign(arg0);
     const speakingMinimumChunks = self.speakingMinimumChunks;
     const combined = "duration_speaking_gte_" + arg1 + "ms_ms";
-    let num = speakingMinimumChunks.get(arg1);
+    num = speakingMinimumChunks.get(arg1);
     if (num == null) {
       num = 0;
     }

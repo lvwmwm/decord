@@ -4,9 +4,11 @@
 // Dependencies: [1421]
 
 // Module 1420 (forEach)
+import apply from "apply" /* 1421 */;
+
 
 export default function forEach(str, call) {
-  if (require(1421) /* apply */(call)) {
+  if (apply(call)) {
     call = toString.call;
     if ("[object Array]" === (typeof call === "unknown" ? toString() : call(str))) {
       let num4 = 0;

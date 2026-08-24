@@ -1,13 +1,17 @@
-// Module ID: 9906
-// Function ID: 9907
+// Module ID: 9945
+// Function ID: 9946
 // Name: getActivityStatusText
-// Dependencies: [676, 9907, 7259, 9908, 1236, 7261, 7254, 9051, 2]
+// Dependencies: [676, 9946, 7297, 9947, 1236, 7299, 7292, 9088, 2]
 // Exports: default
 
-// Module 9906 (getActivityStatusText)
-import { ActivityTypes } from "ME";
+// Module 9945 (getActivityStatusText)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7297 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 9946 */;
 
-const result = require("isEmbeddedActivity").fileFinishedImporting("modules/activity_status/getActivityStatusText.tsx");
+const ActivityTypes = ME.ActivityTypes;
+const result = set.fileFinishedImporting("modules/activity_status/getActivityStatusText.tsx");
 
 export default function getActivityStatusText(name) {
   let flag = arg1;
@@ -66,12 +70,12 @@ export default function getActivityStatusText(name) {
   if (name != null) {
     status_display_type = name.status_display_type;
   }
-  if (status_display_type !== require(9907) /* StatusDisplayTypes */.StatusDisplayTypes.NAME) {
+  if (status_display_type !== StatusDisplayTypes.StatusDisplayTypes.NAME) {
     let status_display_type1;
     if (name != null) {
       status_display_type1 = name.status_display_type;
     }
-    if (status_display_type1 !== tmp15(9907).StatusDisplayTypes.STATE) {
+    if (status_display_type1 !== tmp15(9946).StatusDisplayTypes.STATE) {
       let status_display_type2;
       if (name != null) {
         status_display_type2 = name.status_display_type;
@@ -80,15 +84,15 @@ export default function getActivityStatusText(name) {
       if (tmp20) {
         tmp17 = tmp5;
       }
-      tmp20 = status_display_type2 === tmp15(9907).StatusDisplayTypes.DETAILS && null != tmp5;
+      tmp20 = status_display_type2 === tmp15(9946).StatusDisplayTypes.DETAILS && null != tmp5;
     } else {
       tmp17 = tmp8;
     }
   } else {
     tmp17 = tmp2;
   }
-  if (importDefault(7259)(name)) {
-    const tmp28 = tmp21(9908)(tmp2);
+  if (isEmbeddedActivityDefault(name)) {
+    const tmp28 = tmp21(9947)(tmp2);
     let obj = { text: null, tooltip: null };
     obj[0] = tmp28;
     obj[1] = tmp28;
@@ -103,13 +107,13 @@ export default function getActivityStatusText(name) {
         obj = { text: null, tooltip: null };
         obj[0] = tmp17;
         const intl8 = tmp15(1236).intl;
-        const obj1 = { game: null };
+        obj1 = { game: null };
         obj1[0] = tmp17;
         obj[1] = intl8.formatToPlainString(tmp15(1236).t.lFApmz, obj1);
         return obj;
       }
     }
-    if (tmp21(7261)(name)) {
+    if (tmp21(7299)(name)) {
       if (flag) {
         if (null != tmp8) {
           const parts = tmp8.split("; ");
@@ -154,7 +158,7 @@ export default function getActivityStatusText(name) {
         obj16 = obj6;
       }
     }
-    if (tmp21(9051)(name)) {
+    if (tmp21(9088)(name)) {
       if (flag) {
         if (null != tmp5) {
           const obj8 = { text: null, tooltip: null };
@@ -213,6 +217,6 @@ export default function getActivityStatusText(name) {
       }
     }
     obj16 = {};
-    tmp15Result = tmp15(7254);
+    tmp15Result = tmp15(7292);
   }
 };

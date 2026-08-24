@@ -1,32 +1,32 @@
-// Module ID: 15286
-// Function ID: 15287
+// Module ID: 15350
+// Function ID: 15351
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 676, 4751, 1629, 1367, 15287, 15295, 15307, 712, 2]
+// Dependencies: [109, 19, 676, 4756, 1629, 1367, 15351, 15359, 15371, 712, 2]
 // Exports: default
 
-// Module 15286 (useMessagesSpecs)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import noop from "noop";
-import { DM_WIDTH } from "ME";
+// Module 15350 (useMessagesSpecs)
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import closure_5 from "noop" /* 19 */;
+import { DM_WIDTH } from "ME" /* 676 */;
 
 const require = arg1;
 let closure_3 = ["height"];
-const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesSpecs.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesSpecs.tsx");
 
 export default function useMessagesSpecs() {
-  fontScale = fontScale(4751).useFontScale();
+  fontScale = fontScale(4756).useFontScale();
   top = top(1629)().top;
   const tmp2 = top(1367)("MessagesHeader");
-  const dependencyMap = tmp2;
+  dependencyMap = tmp2;
   const items = [fontScale, top, tmp2];
   return React.useMemo(() => {
-    let obj = fontScale(tmp2[6]);
-    const messagesHeaderHeight = obj.getMessagesHeaderHeight(fontScale, tmp2);
-    const messagesItemChannelSizes = fontScale(tmp2[7]).getMessagesItemChannelSizes(fontScale);
-    obj = { headerSize: messagesHeaderHeight, listTop: top + messagesHeaderHeight, listLeft: outer1_6, listItemHeight: messagesItemChannelSizes.height, listItemSizes: outer1_4(messagesItemChannelSizes, outer1_3), listItemSuggestedFriendHeight: null, scrollIndicatorInsetEnd: null };
-    const obj2 = fontScale(tmp2[7]);
-    obj[5] = fontScale(tmp2[8]).getMessagesItemSuggestedFriendHeight(fontScale);
-    obj[6] = top(tmp2[9]).space.PX_4;
+    let obj = fontScale(15351);
+    const messagesHeaderHeight = obj.getMessagesHeaderHeight(fontScale, dependencyMap);
+    const messagesItemChannelSizes = fontScale(15359).getMessagesItemChannelSizes(fontScale);
+    obj = { headerSize: messagesHeaderHeight, listTop: top + messagesHeaderHeight, listLeft: closure_1_6, listItemHeight: messagesItemChannelSizes.height, listItemSizes: closure_1_4(messagesItemChannelSizes, closure_1_3), listItemSuggestedFriendHeight: null, scrollIndicatorInsetEnd: null };
+    const obj2 = fontScale(15359);
+    obj[5] = fontScale(15371).getMessagesItemSuggestedFriendHeight(fontScale);
+    obj[6] = top(712).space.PX_4;
     return obj;
   }, items);
 };

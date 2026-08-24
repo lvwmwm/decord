@@ -1,16 +1,17 @@
-// Module ID: 4657
-// Function ID: 4658
+// Module ID: 4663
+// Function ID: 4664
 // Name: useAlertStore
-// Dependencies: [32, 644, 705, 4658, 4659, 2]
+// Dependencies: [32, 644, 705, 4664, 4666, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 4657 (useAlertStore)
-import _slicedToArray from "_slicedToArray";
-import keys from "keys";
+// Module 4663 (useAlertStore)
+import markAccessibilityFocusDefault from "markAccessibilityFocus" /* 4666 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import keys from "keys" /* 644 */;
 
 const require = arg1;
 keys = keys.create(() => ({ alerts: [] }));
-const result = require("batchUpdates").fileFinishedImporting("design/components/AlertModal/native/useAlertStore.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/AlertModal/native/useAlertStore.native.tsx");
 
 export const useAlertStore = keys;
 export const dismissAlerts = function dismissAlerts() {
@@ -28,7 +29,7 @@ export const dismissAlerts = function dismissAlerts() {
   const first = tmp[0];
   const arr4 = tmp[1];
   first(705).batchUpdates(() => {
-    outer1_4.setState({ alerts: arr4 });
+    closure_1_4.setState({ alerts: arr4 });
     const item = first.forEach((onDismiss) => {
       onDismiss = onDismiss.onDismiss;
       let onDismissResult;
@@ -39,7 +40,7 @@ export const dismissAlerts = function dismissAlerts() {
     });
   });
   if (tmp4) {
-    arr4(4658)();
+    arr4(4664)();
   }
 };
 export const dismissAlert = function dismissAlert(c6) {
@@ -57,7 +58,7 @@ export const dismissAlert = function dismissAlert(c6) {
       tmp2 = key === c6;
     }
     _require(705).batchUpdates(() => {
-      outer1_4.setState((alerts) => {
+      closure_1_4.setState((alerts) => {
         alerts = alerts.alerts;
         return { alerts: alerts.filter((key) => key.key !== closure_0) };
       });
@@ -67,21 +68,21 @@ export const dismissAlert = function dismissAlert(c6) {
       }
     });
     if (tmp2) {
-      found(4658)();
+      found(4664)();
     }
     const obj = _require(705);
   }
 };
 export const openAlert = function openAlert(DeleteEventAlert, arg1, onCloseCallback, arg3) {
   const _require = DeleteEventAlert;
-  const importDefault = arg1;
-  const dependencyMap = onCloseCallback;
-  let _slicedToArray = arg3;
+  importDefault = arg1;
+  dependencyMap = onCloseCallback;
+  closure_3 = arg3;
   if (0 === keys.getState().alerts.length) {
-    importDefault(4659)();
+    markAccessibilityFocusDefault();
   }
   _require(705).batchUpdates(() => {
-    outer1_4.setState((alerts) => {
+    closure_1_4.setState((alerts) => {
       alerts = [...alerts.alerts];
       const obj = { key: closure_0, node: closure_1, onDismiss: closure_2, dismissable: null };
       let dismissable;

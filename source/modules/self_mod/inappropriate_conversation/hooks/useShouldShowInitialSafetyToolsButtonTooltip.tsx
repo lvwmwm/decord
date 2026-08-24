@@ -1,20 +1,20 @@
-// Module ID: 10609
-// Function ID: 10610
+// Module ID: 10648
+// Function ID: 10649
 // Name: useShouldShowInitialSafetyToolsButtonTooltip
-// Dependencies: [9921, 10608, 589, 2]
+// Dependencies: [9960, 10647, 589, 2]
 // Exports: useShouldShowInitialSafetyToolsButtonTooltip
 
-// Module 10609 (useShouldShowInitialSafetyToolsButtonTooltip)
-import handleConnectionOpen from "handleConnectionOpen";
+// Module 10648 (useShouldShowInitialSafetyToolsButtonTooltip)
+import closure_2 from "handleConnectionOpen" /* 9960 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useShouldShowInitialSafetyToolsButtonTooltip.tsx");
+const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useShouldShowInitialSafetyToolsButtonTooltip.tsx");
 
 export const useShouldShowInitialSafetyToolsButtonTooltip = function useShouldShowInitialSafetyToolsButtonTooltip(channelId) {
   const _require = channelId;
-  const inappropriateConversationSafetyToolsWarningForChannel = _require(10608).useInappropriateConversationSafetyToolsWarningForChannel(channelId);
-  const obj = _require(10608);
-  const items = [handleConnectionOpen];
+  const inappropriateConversationSafetyToolsWarningForChannel = _require(10647).useInappropriateConversationSafetyToolsWarningForChannel(channelId);
+  const obj = _require(10647);
+  const items = [closure_2];
   const obj2 = _require(589);
-  return null != inappropriateConversationSafetyToolsWarningForChannel && !_require(589).useStateFromStores(items, () => outer1_2.hasShownInitialTooltipForChannel(closure_0));
+  return null != inappropriateConversationSafetyToolsWarningForChannel && !_require(589).useStateFromStores(items, () => closure_1_2.hasShownInitialTooltipForChannel(closure_0));
 };

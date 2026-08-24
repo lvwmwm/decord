@@ -4,14 +4,7 @@
 // Dependencies: [1712]
 
 // Module 1718 (SlideInData)
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
-import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
+import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes" /* 1712 */;
 
 obj = { SlideInRight: { name: "SlideInRight", style: obj, duration: 0.3 }, SlideInLeft: { name: "SlideInLeft", style: obj, duration: 0.3 }, SlideInUp: { name: "SlideInUp", style: obj1, duration: 0.3 }, SlideInDown: { name: "SlideInDown", style: obj2, duration: 0.3 } };
 obj = { 0: { transform: items }, 100: null };

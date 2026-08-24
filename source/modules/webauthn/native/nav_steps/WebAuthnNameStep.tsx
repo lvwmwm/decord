@@ -1,34 +1,32 @@
-// Module ID: 14098
-// Function ID: 14099
+// Module ID: 14166
+// Function ID: 14167
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 14078, 21, 4661, 1500, 5264, 4094, 1236, 10286, 4335, 8083, 1297, 4745, 2]
+// Dependencies: [5, 32, 19, 17, 14146, 21, 4668, 1500, 5269, 4097, 1236, 10325, 4339, 8122, 1297, 4750, 2]
 // Exports: default
 
-// Module 14098 (WebAuthnNameStep)
-import closure_3 from "jsxProd";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { WebAuthnScreens } from "WebAuthnScreens";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14166 (WebAuthnNameStep)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import useNavigation from "useNavigation" /* 1500 */;
+import Button2 from "Button" /* 4750 */;
+import Form from "Form" /* 8122 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { WebAuthnScreens } from "WebAuthnScreens" /* 14146 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
-const require = arg1;
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+require = arg1;
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles({ margin: { margin: 16 } });
-const result = require("noop").fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnNameStep.tsx");
+const result = require("set").fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnNameStep.tsx");
 
 export default function WebAuthnNameStep(arg0) {
-  let c4;
-  let importDefault;
-  let name;
-  let require;
-  let tmp8;
   ({ ticket: require, credential: importDefault, name } = arg0);
-  let dependencyMap;
-  let closure_3;
+  dependencyMap = undefined;
+  closure_3 = undefined;
   let callback;
   let first;
   function _onPress() {
@@ -45,7 +43,7 @@ export default function WebAuthnNameStep(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -60,14 +58,14 @@ export default function WebAuthnNameStep(arg0) {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_0 = tmp4;
+              closure_0 = tmp4;
               let v02 = 2;
               v02(true);
-              let obj2 = outer1_0(outer1_2[8]);
+              let obj2 = closure_1_0(closure_1_2[8]);
               v0 = 3;
               v03 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = obj2.finishRegisterWebAuthnCredential(outer1_5, outer1_0, v0);
+              obj1 = { value: null, done: false };
+              obj1[0] = obj2.finishRegisterWebAuthnCredential(closure_1_5, closure_1_0, v0);
               return obj1;
             }
           } else if (1 === tmp8) {
@@ -97,14 +95,14 @@ export default function WebAuthnNameStep(arg0) {
             v02 = 0;
             v02(false);
             const obj3 = { key: "WEBAUTHN_CREDENTIAL_REGISTER_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-success" };
-            const intl = outer1_0(outer1_2[10]).intl;
-            obj3[1] = intl.string(outer1_0(outer1_2[10]).t.j3d5qI);
-            obj3[2] = v0(outer1_2[11]);
-            obj3[3] = outer1_0(outer1_2[12]).CircleCheckIcon;
-            v0(outer1_2[9]).open(obj3);
-            arr = arr.push(outer1_7.SUCCESS, {});
+            const intl = closure_1_0(closure_1_2[10]).intl;
+            obj3[1] = intl.string(closure_1_0(closure_1_2[10]).t.j3d5qI);
+            obj3[2] = v0(closure_1_2[11]);
+            obj3[3] = closure_1_0(closure_1_2[12]).CircleCheckIcon;
+            v0(closure_1_2[9]).open(obj3);
+            arr = arr.push(closure_1_7.SUCCESS, {});
             v03 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp32) {
           arr = tmp32;
@@ -119,7 +117,7 @@ export default function WebAuthnNameStep(arg0) {
         }
       }
     });
-    const _onPress = tmp;
+    closure_6 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -129,7 +127,7 @@ export default function WebAuthnNameStep(arg0) {
     return applyArgumentsResult;
   }
   let tmp = callback4();
-  let obj = require(1500) /* useNavigation */;
+  let obj = useNavigation;
   dependencyMap = obj.useNavigation();
   const tmp6 = callback(first.useState(false), 2);
   closure_3 = tmp6[1];
@@ -142,13 +140,13 @@ export default function WebAuthnNameStep(arg0) {
   obj = { children: null };
   obj = { showTopContainer: false, value: first, onChange: tmp5Result[1], style: tmp.margin, error: tmp8, title: null, placeholder: null, disabled: null, clearButtonVisibility: null, autoFocus: true, showBorder: true, required: true, large: true };
   let intl = tmp2(1236).intl;
-  obj[5] = intl.string(require(1236) /* getSystemLocale */.t["Jzd+z/"]);
+  obj[5] = intl.string(getSystemLocale.t["Jzd+z/"]);
   const intl2 = tmp2(1236).intl;
-  obj[6] = intl2.string(require(1236) /* getSystemLocale */.t["I/sJtJ"]);
+  obj[6] = intl2.string(getSystemLocale.t["I/sJtJ"]);
   obj[7] = tmp6[0];
-  obj[8] = require(1297) /* Button */.ClearButtonVisibility.WITH_CONTENT;
-  const items = [callback2(require(8083) /* Form */.FormInput, obj), callback2(require(8083) /* Form */.FormDivider, {}), ];
-  let obj1 = { style: tmp.margin, children: null };
+  obj[8] = Button.ClearButtonVisibility.WITH_CONTENT;
+  const items = [callback2(Form.FormInput, obj), callback2(Form.FormDivider, {}), ];
+  obj1 = { style: tmp.margin, children: null };
   let obj2 = {
     onPress() {
       const self = this;
@@ -165,10 +163,10 @@ export default function WebAuthnNameStep(arg0) {
     size: "lg"
   };
   const intl3 = tmp2(1236).intl;
-  obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t["5dyZ1S"]);
+  obj2[1] = intl3.string(getSystemLocale.t["5dyZ1S"]);
   obj2[2] = "" === first;
-  obj1[1] = callback2(require(4745) /* Button */.Button, obj2);
+  obj1[1] = callback2(Button2.Button, obj2);
   items[2] = callback2(_onPress, obj1);
   obj[0] = items;
-  return callback3(require(8083) /* Form */.Form, obj);
+  return callback3(Form.Form, obj);
 };

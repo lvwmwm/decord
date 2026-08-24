@@ -1,26 +1,28 @@
-// Module ID: 11918
-// Function ID: 11919
+// Module ID: 11967
+// Function ID: 11968
 // Name: _initialize
-// Dependencies: [1910, 676, 4720, 709, 7302, 2]
+// Dependencies: [1910, 676, 4726, 709, 7340, 2]
 
-// Module 11918 (_initialize)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GuildFeatures } from "ME";
-import "initialize";
+// Module 11967 (_initialize)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 4726 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
 let require = arg1;
+initializeDefault;
 class HubJoinManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
     closure_0 = applyArgumentsResult;
     applyArgumentsResult.handleGuildCreate = function handleGuildCreate(guild) {
-      guild = outer1_3.getGuild(guild.guild.id);
+      guild = closure_1_3.getGuild(guild.guild.id);
       let tmp2 = null != guild;
       if (tmp2) {
         const features = guild.features;
         let hasItem;
         if (features != null) {
-          hasItem = features.has(outer1_4.HUB);
+          hasItem = features.has(closure_1_4.HUB);
         }
         tmp2 = hasItem;
       }
@@ -29,8 +31,8 @@ class HubJoinManager extends tmp2 {
         if (onClose != null) {
           onClose();
         }
-        applyArgumentsResult(outer1_2[4]).transitionToGuild(guild.id);
-        const obj = applyArgumentsResult(outer1_2[4]);
+        applyArgumentsResult(closure_1_2[4]).transitionToGuild(guild.id);
+        const obj = applyArgumentsResult(closure_1_2[4]);
       }
     };
     return applyArgumentsResult;
@@ -39,12 +41,12 @@ class HubJoinManager extends tmp2 {
 const prototype = HubJoinManager.prototype;
 prototype["_initialize"] = function _initialize(onClose) {
   this.onClose = onClose;
-  const subscription = importDefault(709).subscribe("GUILD_CREATE", this.handleGuildCreate);
+  const subscription = dispatcherDefault.subscribe("GUILD_CREATE", this.handleGuildCreate);
 };
 prototype["_terminate"] = function _terminate() {
-  importDefault(709).unsubscribe("GUILD_CREATE", this.handleGuildCreate);
+  dispatcherDefault.unsubscribe("GUILD_CREATE", this.handleGuildCreate);
 };
 const hubJoinManager = new HubJoinManager();
-const result = require("initialize").fileFinishedImporting("modules/hub/HubJoinManager.tsx");
+const result = require("set").fileFinishedImporting("modules/hub/HubJoinManager.tsx");
 
 export default hubJoinManager;

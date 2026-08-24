@@ -1,12 +1,13 @@
-// Module ID: 4666
-// Function ID: 4667
+// Module ID: 4673
+// Function ID: 4674
 // Name: mutable
-// Dependencies: [4115, 2]
+// Dependencies: [4119, 2]
 
-// Module 4666 (mutable)
-import module_4115 from "module_4115";
+// Module 4673 (mutable)
+import set from "set" /* 2 */;
+import module_4119 from "module_4119" /* 4119 */;
 
-const mutable = module_4115.makeMutable({ reduceMotion: false, prefersCrossfades: false, screenReaderEnabled: false });
-const result = require("set").fileFinishedImporting("design/animation/reanimated/AccessibilityPreferencesSharedValue.native.tsx");
+const mutable = module_4119.makeMutable({ reduceMotion: false, prefersCrossfades: false, screenReaderEnabled: false });
+const result = set.fileFinishedImporting("design/animation/reanimated/AccessibilityPreferencesSharedValue.native.tsx");
 
 export const accessibilityPreferencesSharedValue = mutable;

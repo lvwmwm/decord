@@ -1,11 +1,11 @@
-// Module ID: 5326
-// Function ID: 5327
+// Module ID: 5331
+// Function ID: 5332
 // Name: fromServer
-// Dependencies: [5327, 5302, 2]
+// Dependencies: [5332, 5307, 2]
 
-// Module 5326 (fromServer)
-import fromServer from "fromServer";
-import closure_1 from "fromServer";
+// Module 5331 (fromServer)
+import closure_0 from "fromServer" /* 5332 */;
+import closure_1 from "fromServer" /* 5307 */;
 
 let prototype;
 prototype = function CollectiblesCategoriesRecord(categories) {
@@ -13,7 +13,7 @@ prototype = function CollectiblesCategoriesRecord(categories) {
   categories = categories.categories;
   obj.categories = categories.map((arg0) => closure_1.fromServer(arg0));
   const collections = categories.collections;
-  obj.collections = collections.map((arg0) => fromServer.fromServer(arg0));
+  obj.collections = collections.map((arg0) => closure_0.fromServer(arg0));
   return obj;
 }.prototype;
 prototype["fromServer"] = function fromServer(categories) {
@@ -24,7 +24,7 @@ prototype["fromServer"] = function fromServer(categories) {
   categories = categories.categories;
   obj.categories = categories.map((arg0) => closure_1.fromServer(arg0));
   const collections = categories.collections;
-  obj.collections = collections.map((arg0) => fromServer.fromServer(arg0));
+  obj.collections = collections.map((arg0) => closure_0.fromServer(arg0));
   return obj;
 };
 const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesCategoriesRecord.tsx");

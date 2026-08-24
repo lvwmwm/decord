@@ -1,18 +1,21 @@
-// Module ID: 8066
-// Function ID: 8067
+// Module ID: 8105
+// Function ID: 8106
 // Name: getSystemLocale
 // Dependencies: [1236, 2]
 
-// Module 8066 (getSystemLocale)
-const result = require("set").fileFinishedImporting("modules/text_in_voice/GuildTiVPlatformUtils.native.tsx");
+// Module 8105 (getSystemLocale)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
+const result = set.fileFinishedImporting("modules/text_in_voice/GuildTiVPlatformUtils.native.tsx");
 
 export default {
   getTextInVoiceSendMessageChannelPermissionText(sendMessagesDisabled) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.WQ6zpT);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.WQ6zpT);
   },
   getTextInVoiceReadMessageHistoryChannelPermissionText(prop) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.cuMfH0);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.cuMfH0);
   }
 };

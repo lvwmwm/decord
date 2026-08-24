@@ -1,26 +1,30 @@
-// Module ID: 14341
-// Function ID: 14342
+// Module ID: 14409
+// Function ID: 14410
 // Name: route
-// Dependencies: [8198, 676, 10669, 1236, 14342, 2]
+// Dependencies: [8238, 676, 10708, 1236, 14410, 2]
 
-// Module 14341 (route)
-import createToggle from "createToggle";
+// Module 14409 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["8jmdON"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["8jmdON"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.PREMIUM,
+  parent: MobileUserSettings.MobileUserSettings.PREMIUM,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.PREMIUM_MANAGE_PLAN,
+  route: ME.UserSettingsSections.PREMIUM_MANAGE_PLAN,
   getComponent() {
-    return require(14342) /* PremiumPlanSelectSettingScreen */.default;
+    return require(14410) /* PremiumPlanSelectSettingScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/PremiumManagePlanSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/PremiumManagePlanSetting.tsx");
 
 export default route;

@@ -1,47 +1,45 @@
-// Module ID: 15883
-// Function ID: 15884
+// Module ID: 15980
+// Function ID: 15981
 // Name: GuildChannelLabel
-// Dependencies: [19, 17, 8507, 21, 4661, 712, 4984, 15884, 6832, 15886, 15876, 2]
+// Dependencies: [19, 17, 8546, 21, 4668, 712, 4989, 15981, 6870, 15983, 15973, 2]
 
-// Module 15883 (GuildChannelLabel)
-import get_ActivityIndicator from "get ActivityIndicator";
-import { CHANNEL_LIST_SEARCH_LAYOUT as closure_5 } from "MessageEmbedTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 15980 (GuildChannelLabel)
+import ThemesDefault from "Themes" /* 712 */;
+import computeChannelNameDefault from "computeChannelName" /* 4989 */;
+import getChannelIcon from "getChannelIcon" /* 6870 */;
+import SearchListRow from "SearchListRow" /* 15973 */;
+import ChannelContentComponent from "ChannelContentComponent" /* 15981 */;
+import LaunchpadChannelIcon from "LaunchpadChannelIcon" /* 15983 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { CHANNEL_LIST_SEARCH_LAYOUT as closure_5 } from "MessageEmbedTypes" /* 8546 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 function GuildChannelLabel(channel) {
   channel = channel.channel;
   let obj = { style: callback().content, children: null };
   const tmp = callback();
-  const tmp2 = importDefault(4984)(channel);
+  const tmp2 = computeChannelNameDefault(channel);
   obj = { channel, layout: closure_5, name: tmp2 };
-  obj[1] = require(15884) /* ChannelContentComponent */.renderChannelContent(obj);
+  obj[1] = ChannelContentComponent.renderChannelContent(obj);
   return <closure_4 channel={channel} layout={closure_5} name={tmp2} />;
 }
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
 let obj = { container: { paddingVertical: 10 }, content: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 0 }, simpleIcon: null };
-obj = { width: 20, height: 20, marginRight: 8, tintColor: require("Themes").colors.TEXT_MUTED };
+obj = { width: 20, height: 20, marginRight: 8, tintColor: ThemesDefault.colors.TEXT_MUTED };
 obj[3] = obj;
 let closure_7 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(function GuildChannelRow(channel) {
-  let extras;
-  let onPress;
-  let subtitle;
-  let trailing;
-  let voiceStates;
+const memoResult = importAllResult.memo(function GuildChannelRow(channel) {
   channel = channel.channel;
   ({ subtitle, trailing, extras, onPress, voiceStates } = channel);
   const merged = Object.assign(channel, Object.create(null));
   const tmp2 = callback();
-  let obj = require(15886) /* LaunchpadChannelIcon */;
+  let obj = LaunchpadChannelIcon;
   const channelAccessibilityProps = obj.getChannelAccessibilityProps({ channel, unread: false, mentionCount: 0, voiceStates });
-  obj = { style: tmp2.simpleIcon, source: null };
-  obj[1] = require(6832) /* getChannelIcon */.getSimpleChannelIcon(channel);
-  const obj3 = require(6832) /* getChannelIcon */;
+  obj = { style: tmp2.simpleIcon, source: getChannelIcon.getSimpleChannelIcon(channel) };
+  const obj3 = getChannelIcon;
   obj = {};
   const merged1 = Object.assign(channelAccessibilityProps);
   const merged2 = Object.assign(merged);
@@ -53,8 +51,8 @@ const memoResult = require("noop").memo(function GuildChannelRow(channel) {
   obj.onPress = onPress;
   obj.trailing = trailing;
   obj.extras = extras;
-  return jsx(require(15876) /* SearchListRow */.SearchListRow, {});
+  return jsx(SearchListRow.SearchListRow, {});
 });
-const result = require("MessageEmbedTypes").fileFinishedImporting("modules/search/native/components/list/rows/GuildChannelRow.tsx");
+const result = require("set").fileFinishedImporting("modules/search/native/components/list/rows/GuildChannelRow.tsx");
 
 export default memoResult;

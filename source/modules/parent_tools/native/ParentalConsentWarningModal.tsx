@@ -1,54 +1,48 @@
-// Module ID: 16680
-// Function ID: 16681
+// Module ID: 16776
+// Function ID: 16777
 // Name: ParentalConsentWarningModal
-// Dependencies: [19, 17, 5296, 5297, 676, 1388, 21, 1377, 5298, 4230, 7360, 5263, 4661, 712, 1629, 1236, 2335, 698, 709, 1379, 4342, 5260, 16681, 2007, 6950, 4733, 5447, 4734, 4745, 2]
+// Dependencies: [19, 17, 5301, 5302, 676, 1388, 21, 1377, 5303, 4234, 7398, 5268, 4668, 712, 1629, 1236, 2336, 698, 709, 1379, 4346, 5265, 16777, 2008, 6988, 4738, 5452, 4739, 4750, 2]
 // Exports: default
 
-// Module 16680 (ParentalConsentWarningModal)
-import addVersionedDismissedContent from "addVersionedDismissedContent";
-import { View } from "expandEventProperties";
-import freshTeenActivityWithMap from "freshTeenActivityWithMap";
-import items from "items";
-import ME from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "module_5260";
-import createCacheKey from "createCacheKey";
+// Module 16776 (ParentalConsentWarningModal)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "freshTeenActivityWithMap" /* 5301 */;
+import items from "items" /* 5302 */;
+import ME from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_12;
-let closure_6;
-let error;
-let map1;
-let metroImportAll;
 const require = arg1;
-({ FamilyCenterSubPages: closure_6, UserLinkStatus: error, UserLinkType: metroImportAll } = items);
+({ FamilyCenterSubPages: closure_6, UserLinkStatus: error, UserLinkType: closure_8 } = items);
 ({ AnalyticEvents: c9, UserSettingsSections: c10 } = ME);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 const modal = "modal";
 let closure_15 = require("DismissibleContent").DismissibleContent.PARENTAL_CONSENT_GRACE_WARNING;
 createCacheKey = { container: null, illustration: null, title: null, body: null };
-createCacheKey = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { alignItems: "center", paddingTop: require("Themes").space.PX_12 };
+createCacheKey[1] = { alignItems: "center", paddingTop: ThemesDefault.space.PX_12 };
 createCacheKey[2] = { textAlign: "center" };
 createCacheKey[3] = { textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { alignItems: "center", paddingTop: require("Themes").space.PX_12 };
-let result = require("freshTeenActivityWithMap").fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningModal.tsx");
+let closure_16 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { alignItems: "center", paddingTop: ThemesDefault.space.PX_12 };
+let result = require("set").fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningModal.tsx");
 
 export default function ParentalConsentWarningModal(daysRemaining) {
   daysRemaining = daysRemaining.daysRemaining;
-  let importDefault;
+  importDefault = undefined;
   let callback;
   let callback1;
-  let tmp = createCacheKey();
+  let tmp = callback3();
   let obj = daysRemaining(callback[15]);
   const syncMessages = obj.useSyncMessages(daysRemaining(callback[16]).messagesLoader);
   const effect = callback1.useEffect(() => {
     let obj = ref(callback[17]);
-    obj = { surface_type: outer1_14, days_remaining: daysRemaining };
-    obj.track(outer1_9.PARENTAL_CONSENT_WARNING_SURFACE_SHOWN, obj);
+    obj = { surface_type: closure_1_14, days_remaining: daysRemaining };
+    obj.track(closure_1_9.PARENTAL_CONSENT_WARNING_SURFACE_SHOWN, obj);
     ref(callback[18]).dispatch({ type: "PARENTAL_CONSENT_WARNING_MODAL_SHOWN" });
   }, []);
   importDefault = callback1.useRef(false);
@@ -59,8 +53,8 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       tmp.current = true;
       let obj = daysRemaining(callback[19]);
       obj = { dismissAction: null };
-      obj[0] = outer1_11.USER_DISMISS;
-      const result = obj.markTimeRecurringDismissibleContentAsDismissed(outer1_15, obj);
+      obj[0] = closure_1_11.USER_DISMISS;
+      const result = obj.markTimeRecurringDismissibleContentAsDismissed(closure_1_15, obj);
       flag = true;
     }
     return flag;
@@ -70,9 +64,9 @@ export default function ParentalConsentWarningModal(daysRemaining) {
     if (callback()) {
       let obj = ref(callback[17]);
       obj = { surface_type: null, days_remaining: null };
-      obj[0] = outer1_14;
+      obj[0] = closure_1_14;
       obj[1] = daysRemaining;
-      obj.track(outer1_9.PARENTAL_CONSENT_WARNING_SURFACE_DISMISSED, obj);
+      obj.track(closure_1_9.PARENTAL_CONSENT_WARNING_SURFACE_DISMISSED, obj);
     }
   }, items);
   const items1 = [callback1];
@@ -81,11 +75,11 @@ export default function ParentalConsentWarningModal(daysRemaining) {
     callback1();
     ref(callback[20]).hideActionSheet();
   }, items1);
-  const callback3 = callback1.useCallback(() => {
+  callback3 = callback1.useCallback(() => {
     callback();
     let obj = ref(callback[20]);
     obj.hideActionSheet();
-    const values = Object.values(outer1_5.getLinkedUsers());
+    const values = Object.values(closure_1_5.getLinkedUsers());
     if (values.some((link_status) => {
       let tmp = link_status.link_status === constants.PENDING;
       if (tmp) {
@@ -94,12 +88,12 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       return tmp;
     })) {
       let tmp2Result = tmp2(tmp3[8]);
-      const tab = tmp2Result.selectTab(outer1_6.REQUESTS);
+      const tab = tmp2Result.selectTab(closure_1_6.REQUESTS);
       const rootNavigationRef = daysRemaining(tmp3[9]).getRootNavigationRef();
       if (null != rootNavigationRef) {
         if (rootNavigationRef.isReady()) {
           obj = { screen: null };
-          obj[0] = outer1_10.FAMILY_CENTER;
+          obj[0] = closure_1_10.FAMILY_CENTER;
           tmp9(tmp3[10]).openUserSettings(obj);
           const tmp9Result = tmp9(tmp3[10]);
         }
@@ -133,14 +127,12 @@ export default function ParentalConsentWarningModal(daysRemaining) {
     obj[0] = daysRemaining;
     stringResult1 = intl2.formatToPlainString(tmp2(tmp3[16]).mQcGGY, obj);
   }
-  const obj1 = { startExpanded: true, onDismiss: callback1, children: null };
+  obj1 = { startExpanded: true, onDismiss: callback1, children: null };
   const obj2 = { style: items3, children: null };
   items3 = [tmp.container, { paddingBottom: importDefault(callback[14])().bottom }];
-  const obj3 = { spacing: null, children: null };
-  obj3[0] = importDefault(callback[13]).space.PX_16;
+  const obj3 = { spacing: importDefault(callback[13]).space.PX_16, children: null };
   const items4 = [callback(View, { style: tmp.illustration, children: callback(daysRemaining(callback[26]).FamilyKeysSpotIllustration, { accessible: false }) }), callback(daysRemaining(callback[27]).Text, { variant: "heading-lg/bold", color: "text-default", style: tmp.title, accessibilityRole: "header", children: stringResult }), callback(daysRemaining(callback[27]).Text, { variant: "text-md/medium", color: "text-default", style: tmp.body, children: stringResult1 }), ];
-  const obj7 = { spacing: null, children: null };
-  obj7[0] = importDefault(callback[13]).space.PX_8;
+  const obj7 = { spacing: importDefault(callback[13]).space.PX_8, children: null };
   const obj8 = { size: "lg", variant: "primary", grow: true, text: null, onPress: null };
   const intl3 = tmp4(tmp3[15]).intl;
   obj8[3] = intl3.string(importDefault(callback[16]).Kp7sjX);

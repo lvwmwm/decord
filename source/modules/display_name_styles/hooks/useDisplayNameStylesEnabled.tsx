@@ -1,20 +1,24 @@
-// Module ID: 4816
-// Function ID: 4817
+// Module ID: 4821
+// Function ID: 4822
 // Name: useDisplayNameStylesEnabled
-// Dependencies: [19, 4662, 589, 4817, 2]
+// Dependencies: [19, 4669, 589, 4822, 2]
 // Exports: useDisplayNameStylesEnabled
 
-// Module 4816 (useDisplayNameStylesEnabled)
-import { useContext } from "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+// Module 4821 (useDisplayNameStylesEnabled)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import context from "context" /* 4822 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
 
-const result = require("initialize").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEnabled.tsx");
+const useContext = noop.useContext;
+const result = set.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEnabled.tsx");
 
 export const useDisplayNameStylesEnabled = function useDisplayNameStylesEnabled(arg0) {
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
-  let overrideSettings = require(589) /* initialize */.useStateFromStores(items, () => obj.displayNameStylesEnabled);
+  const items = [closure_3];
+  let overrideSettings = initialize.useStateFromStores(items, () => obj.displayNameStylesEnabled);
   if (!overrideSettings) {
-    overrideSettings = useContext(require(4817) /* context */.DisplayNameStylesContext).overrideSettings;
+    overrideSettings = useContext(context.DisplayNameStylesContext).overrideSettings;
   }
   return overrideSettings;
 };

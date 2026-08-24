@@ -1,14 +1,15 @@
-// Module ID: 17041
-// Function ID: 17042
+// Module ID: 17134
+// Function ID: 17135
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 17041 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 17134 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null, 2: { enabled: true, limit: 1, cooldownMs: 60000, debounceMs: 3000 }, 3: { enabled: true, limit: 25, cooldownMs: 60000, debounceMs: 3000 }, 4: { enabled: true, limit: 10, cooldownMs: 60000, debounceMs: 3000 }, 5: { enabled: true, limit: 25, cooldownMs: 0, debounceMs: 3000 }, 6: { enabled: true, limit: 10, cooldownMs: 0, debounceMs: 3000 }, 7: { enabled: true, limit: 25, cooldownMs: 0, debounceMs: 0 } };
 obj[7] = { enabled: true, limit: 10, cooldownMs: 0, debounceMs: 0 };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-notification-load-messages", kind: "user", defaultConfig: { enabled: false, limit: 1, cooldownMs: 0, debounceMs: 0 }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/cache/NotificationLoadMessagesExperiment.tsx");
+const result = set.fileFinishedImporting("modules/cache/NotificationLoadMessagesExperiment.tsx");
 
 export default apexExperiment;

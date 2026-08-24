@@ -1,25 +1,29 @@
-// Module ID: 15958
-// Function ID: 15959
+// Module ID: 16055
+// Function ID: 16056
 // Name: trackFavoritesGuildViewed
-// Dependencies: [1922, 1394, 676, 1924, 9979, 1945, 698, 9985, 2]
+// Dependencies: [1922, 1394, 676, 1924, 10018, 1945, 698, 10024, 2]
 // Exports: default
 
-// Module 15958 (trackFavoritesGuildViewed)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import initializeFromUserSettings from "initializeFromUserSettings";
-import { AnalyticEvents } from "ME";
-import { PremiumTypes } from "GuildFeatures";
+// Module 16055 (trackFavoritesGuildViewed)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import isPremiumAtLeastDefault from "isPremiumAtLeast" /* 1945 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10018 */;
+import setNextFavoritesGuildViewSource from "setNextFavoritesGuildViewSource" /* 10024 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "initializeFromUserSettings" /* 1394 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
-const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/favorites/analytics/trackFavoritesGuildViewed.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/favorites/analytics/trackFavoritesGuildViewed.tsx");
 
 export default function trackFavoritesGuildViewed() {
-  let obj = require(9979) /* useFavoritesAccess */;
-  const obj2 = importDefault(1945);
-  const isPremiumExactlyResult = importDefault(1945).isPremiumExactly(currentUser.getCurrentUser(), PremiumTypes.TIER_2);
+  let obj = useFavoritesAccess;
+  const obj2 = isPremiumAtLeastDefault;
+  const isPremiumExactlyResult = isPremiumAtLeastDefault.isPremiumExactly(currentUser.getCurrentUser(), PremiumTypes.TIER_2);
   obj = { source: null, total_favorites: null, is_xp_enabled: null, is_premium_tier_2: null };
-  const obj3 = importDefault(698);
-  obj[0] = require(9985) /* setNextFavoritesGuildViewSource */.consumeNextFavoritesGuildViewSource();
+  const obj3 = expandEventPropertiesDefault;
+  obj[0] = setNextFavoritesGuildViewSource.consumeNextFavoritesGuildViewSource();
   obj[1] = favoritesCountAgainstLimit.getFavoritesCountAgainstLimit();
   obj[2] = obj.getFavoritesAccess().isExperimentEnabled;
   obj[3] = isPremiumExactlyResult;

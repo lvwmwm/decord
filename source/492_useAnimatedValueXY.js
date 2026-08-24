@@ -5,13 +5,15 @@
 // Exports: default
 
 // Module 492 (useAnimatedValueXY)
-import { useRef } from "noop";
+import noop from "noop" /* 19 */;
+import get_FlatListDefault from "get FlatList" /* 397 */;
 
+const useRef = noop.useRef;
 
 export default function useAnimatedValueXY(arg0, arg1) {
   const tmp = useRef(null);
   if (null == tmp.current) {
-    const valueXY = new importDefault(397).ValueXY(arg0, arg1);
+    const valueXY = new get_FlatListDefault.ValueXY(arg0, arg1);
     tmp.current = valueXY;
   }
   return tmp.current;

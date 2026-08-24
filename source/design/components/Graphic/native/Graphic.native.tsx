@@ -1,19 +1,20 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8058
+// Function ID: 8059
 // Name: ImageGraphic
-// Dependencies: [19, 17, 21, 4661, 5449, 4104, 4193, 2]
+// Dependencies: [19, 17, 21, 4668, 5454, 4107, 4197, 2]
 // Exports: Graphic
 
-// Module 8019 (ImageGraphic)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8058 (ImageGraphic)
+import preloadDefault from "preload" /* 5454 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 function ImageGraphic(source) {
   const tmp = callback();
-  return jsx(importDefault(5449), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
+  return jsx(preloadDefault, { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
 }
 function RiveGraphic(riveProps) {
   riveProps = riveProps.riveProps;
@@ -30,7 +31,7 @@ function RiveGraphic(riveProps) {
 }
 let closure_6 = { "21/9": 2.3333333333333335, "16/9": 1.7777777777777777, "6/4": 1.5, "2/1": 2, "1/1": 1 };
 let closure_7 = createCacheKey.createStyles({ container: { width: "100%", justifyContent: "center", alignItems: "center", overflow: "hidden" }, image: { width: "100%", height: "100%" } });
-const result = require("jsxProd").fileFinishedImporting("design/components/Graphic/native/Graphic.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Graphic/native/Graphic.native.tsx");
 
 export const Graphic = function Graphic(aspectRatio) {
   let str = aspectRatio.aspectRatio;
@@ -42,19 +43,19 @@ export const Graphic = function Graphic(aspectRatio) {
   let obj = {
     style: items1,
     children: React.useMemo(() => {
-      let obj = merged(outer1_2[5]);
+      let obj = merged(closure_1_2[5]);
       if (obj.isImage(merged)) {
         obj = {};
         merged = Object.assign(tmp3);
-        let tmp4 = outer1_5(outer1_8, obj);
+        let tmp4 = closure_1_5(closure_1_8, obj);
       } else {
         tmp4 = null;
         if (tmpResult.isRive(tmp3)) {
           obj = {};
           const merged1 = Object.assign(tmp3);
-          tmp4 = outer1_5(outer1_9, obj);
+          tmp4 = closure_1_5(closure_1_9, obj);
         }
-        tmpResult = merged(outer1_2[6]);
+        tmpResult = merged(closure_1_2[6]);
       }
       return tmp4;
     }, items)

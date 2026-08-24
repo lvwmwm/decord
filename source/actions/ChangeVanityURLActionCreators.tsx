@@ -1,23 +1,27 @@
-// Module ID: 16865
-// Function ID: 16866
+// Module ID: 16958
+// Function ID: 16959
 // Dependencies: [676, 709, 530, 2]
 
-// Module 16865
-import { Endpoints } from "ME";
+// Module 16958
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import ME from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
-const result = require("sendRequest").fileFinishedImporting("actions/ChangeVanityURLActionCreators.tsx");
+const Endpoints = ME.Endpoints;
+const result = set.fileFinishedImporting("actions/ChangeVanityURLActionCreators.tsx");
 
 export default {
   openModal(id, vanityURLCode) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "CHANGE_VANITY_URL_MODAL_OPEN", guildId: id, code: vanityURLCode };
     obj.dispatch(obj);
   },
   closeModal() {
-    importDefault(709).dispatch({ type: "CHANGE_VANITY_URL_MODAL_CLOSE" });
+    dispatcherDefault.dispatch({ type: "CHANGE_VANITY_URL_MODAL_CLOSE" });
   },
   removeVanityURL(id) {
-    const HTTP = require(530) /* sendRequest */.HTTP;
+    const HTTP = sendRequest.HTTP;
     const obj = { url: Endpoints.GUILD_VANITY_URL(id), body: { code: null }, oldFormErrors: true, rejectWithError: true };
     return HTTP.patch({ url: Endpoints.GUILD_VANITY_URL(id), body: { code: null }, oldFormErrors: true, rejectWithError: true }).then(() => {
       callback(table[1]).dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code: null, uses: 0 });
@@ -25,16 +29,14 @@ export default {
   },
   changeVanityURL(id, vanityURLCode) {
     const self = this;
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj.dispatch({ type: "CHANGE_VANITY_URL_MODAL_SUBMIT" });
     const HTTP = self(530).HTTP;
     obj = { url: Endpoints.GUILD_VANITY_URL(id), body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { code: vanityURLCode };
     return HTTP.patch(obj).then((body) => {
-      let code;
-      let uses;
       ({ code, uses } = body.body);
-      outer1_1(outer1_2[1]).dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code, uses });
+      closure_1_1(closure_1_2[1]).dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code, uses });
       self.closeModal();
     }, (body) => {
       let obj = callback(table[1]);
@@ -44,14 +46,12 @@ export default {
     });
   },
   setVanityURL(id, code) {
-    const HTTP = require(530) /* sendRequest */.HTTP;
+    const HTTP = sendRequest.HTTP;
     obj = { url: Endpoints.GUILD_VANITY_URL(id), body: obj, oldFormErrors: true, rejectWithError: null };
     obj = { code };
-    obj[3] = require(530) /* sendRequest */.rejectWithMigratedError();
-    const obj3 = require(530) /* sendRequest */;
+    obj[3] = sendRequest.rejectWithMigratedError();
+    const obj3 = sendRequest;
     return HTTP.patch(obj).then((body) => {
-      let code;
-      let uses;
       ({ code, uses } = body.body);
       callback(709).dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code, uses });
     }, (body) => {

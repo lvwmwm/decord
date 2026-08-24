@@ -1,27 +1,31 @@
-// Module ID: 14786
-// Function ID: 14787
+// Module ID: 14850
+// Function ID: 14851
 // Name: route
-// Dependencies: [676, 10669, 1236, 10003, 14787, 2]
+// Dependencies: [676, 10708, 1236, 10042, 14851, 2]
 
-// Module 14786 (route)
-import createToggle from "createToggle";
+// Module 14850 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import BellIcon from "BellIcon" /* 10042 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.HcoRu0);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.HcoRu0);
   },
   parent: null,
-  IconComponent: require("BellIcon").BellIcon,
+  IconComponent: BellIcon.BellIcon,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.NOTIFICATIONS,
+  route: ME.UserSettingsSections.NOTIFICATIONS,
   getComponent() {
-    return require(14787) /* SystemNotificationsSubLabel */.default;
+    return require(14851) /* SystemNotificationsSubLabel */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/NotificationsSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/NotificationsSetting.tsx");
 
 export default route;

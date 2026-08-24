@@ -1,27 +1,32 @@
-// Module ID: 12924
-// Function ID: 12925
+// Module ID: 12979
+// Function ID: 12980
 // Name: Footer
-// Dependencies: [19, 17, 21, 4661, 12925, 7159, 4734, 1236, 4745, 5449, 12926, 2]
+// Dependencies: [19, 17, 21, 4668, 12980, 7197, 4739, 1236, 4750, 5454, 12981, 2]
 // Exports: default
 
-// Module 12924 (Footer)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12979 (Footer)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import preloadDefault from "preload" /* 5454 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 12980 */;
+import registerAssetDefault from "registerAsset" /* 12981 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "center", width: "100%" }, footerText: { marginBottom: 24 }, button: { marginBottom: 40 }, easterEggSpacing: { position: "absolute", top: 40 } });
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/premium/native/Footer.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/Footer.tsx");
 
 export default function Footer(showSubscribeButton) {
   showSubscribeButton = showSubscribeButton.showSubscribeButton;
   const tmp = callback2();
-  importDefault(12925)(importDefault(7159).PREMIUM_MARKETING_FOOTER);
+  useOpenPremiumMarketingPaymentDefault(QUICK_SWITCHERDefault.PREMIUM_MARKETING_FOOTER);
   let obj = { style: items, children: null };
   items = [tmp.container, showSubscribeButton.style];
   let tmp8Result = showSubscribeButton;
@@ -29,15 +34,15 @@ export default function Footer(showSubscribeButton) {
     obj = { children: null };
     obj = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj[0] = tmp.footerText;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[3] = intl.string(require(1236) /* getSystemLocale */.t["2bSPbq"]);
-    const items1 = [callback(require(4734) /* Text */.Text, obj), ];
-    const obj1 = { style: null, children: null };
+    const intl = getSystemLocale.intl;
+    obj[3] = intl.string(getSystemLocale.t["2bSPbq"]);
+    const items1 = [callback(Text.Text, obj), ];
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.button;
     const obj2 = { text: null, variant: "primary", size: "lg", onPress: null, grow: true };
     obj2[0] = tmp7;
     obj2[3] = tmp6;
-    obj1[1] = callback(require(4745) /* Button */.Button, obj2);
+    obj1[1] = callback(Button.Button, obj2);
     items1[1] = callback(tmp9, obj1);
     obj[0] = items1;
     tmp8Result = tmp8(closure_5, obj);
@@ -45,12 +50,12 @@ export default function Footer(showSubscribeButton) {
   const items2 = [tmp8Result, ];
   let easterEggSpacing = null;
   const tmp14 = callback;
-  const tmp4 = importDefault(12925);
+  const tmp4 = useOpenPremiumMarketingPaymentDefault;
   if (!showSubscribeButton) {
     easterEggSpacing = tmp.easterEggSpacing;
   }
-  const tmp2Result = importDefault(5449);
-  items2[1] = tmp14(tmp2Result, { style: easterEggSpacing, source: importDefault(12926) });
+  const tmp2Result = preloadDefault;
+  items2[1] = tmp14(tmp2Result, { style: easterEggSpacing, source: registerAssetDefault });
   obj[1] = items2;
   return closure_6(View, obj);
 };

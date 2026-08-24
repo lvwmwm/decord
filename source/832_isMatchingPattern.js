@@ -4,7 +4,9 @@
 // Dependencies: [827, 833]
 
 // Module 832 (isMatchingPattern)
-const require = arg1;
+import isInstanceOf from "isInstanceOf" /* 827 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.isMatchingPattern = function isMatchingPattern(arr, test) {
@@ -12,7 +14,7 @@ arg5.isMatchingPattern = function isMatchingPattern(arr, test) {
   if (arg2 === undefined) {
     flag = false;
   }
-  const isStringResult = require(827) /* isInstanceOf */.isString(arr);
+  const isStringResult = isInstanceOf.isString(arr);
   if (!isStringResult) {
     return isStringResult;
   } else {
@@ -47,7 +49,7 @@ arg5.safeJoin = function safeJoin(__v_isVNode) {
           arr = push(String(tmp2));
         }
         num = num + 1;
-        obj = require(827) /* isInstanceOf */;
+        obj = isInstanceOf;
         tmp4 = require;
       } catch (err) {
         arr.push(tmp);
@@ -94,7 +96,7 @@ arg5.snipLine = function snipLine(arr) {
   }
 };
 arg5.stringMatchesSomePattern = function stringMatchesSomePattern(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   let items = arg1;
   if (arg1 === undefined) {
     items = [];

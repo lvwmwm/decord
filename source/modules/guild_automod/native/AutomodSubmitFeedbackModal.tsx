@@ -1,70 +1,75 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11085
+// Function ID: 11086
 // Name: Navbar
-// Dependencies: [32, 19, 17, 676, 21, 4661, 712, 6803, 5432, 1236, 8143, 5242, 1629, 4734, 8083, 1297, 4745, 5042, 11047, 5241, 4093, 6312, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4668, 712, 6840, 5437, 1236, 8182, 5247, 1629, 4739, 8122, 1297, 4750, 5047, 11086, 5246, 4096, 6343, 2]
 // Exports: default
 
-// Module 11046 (Navbar)
-import _slicedToArray from "_slicedToArray";
-import AutomodAlertActionType from "AutomodAlertActionType";
-import { View } from "collectGuildAnalyticsMetadata";
-import { AnalyticEvents } from "ME";
-import jsxProd from "NavigationStack";
-import createCacheKey from "createCacheKey";
+// Module 11085 (Navbar)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import Feedback from "Feedback" /* 5247 */;
+import HeaderActionButton from "HeaderActionButton" /* 5437 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import registerAssetDefault from "registerAsset" /* 8182 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function Navbar(onClose) {
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = { top: true, style: tmp.header, children: null };
   obj = { style: tmp.closeButtonContainer, children: null };
   obj = { accessibilityLabel: null, onPress: null, source: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.cpT0Cq);
   obj[1] = onClose.onClose;
-  obj[2] = importDefault(8143);
-  obj[1] = callback2(require(5432) /* HeaderActionButton */.HeaderActionButton, obj);
+  obj[2] = registerAssetDefault;
+  obj[1] = callback2(HeaderActionButton.HeaderActionButton, obj);
   obj[2] = callback2(View, obj);
-  return callback2(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback2(SafeAreaPaddingView.SafeAreaPaddingView, obj);
 }
 function SubmitFeedbackScreen(onSubmit) {
-  let importDefault;
-  let require;
   ({ feedback: require, onChange: importDefault } = onSubmit);
-  let dependencyMap;
+  dependencyMap = undefined;
   let feedbackOptions;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   dependencyMap = tmp;
-  let obj = require(5242) /* Feedback */;
+  let obj = Feedback;
   feedbackOptions = obj.generateFeedbackOptions();
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t["7bdzNo"]);
-  const items = [callback2(require(4734) /* Text */.Text, obj), , , ];
-  const obj1 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.Lbpk6m);
-  items[1] = callback2(require(4734) /* Text */.Text, obj1);
+  const intl = getSystemLocale.intl;
+  obj[3] = intl.string(getSystemLocale.t["7bdzNo"]);
+  const items = [callback2(Text.Text, obj), , , ];
+  obj1 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl2 = getSystemLocale.intl;
+  obj1[3] = intl2.string(getSystemLocale.t.Lbpk6m);
+  items[1] = callback2(Text.Text, obj1);
   items[2] = callback2(View, {
     style: tmp.formBody,
     children: feedbackOptions.map((children) => {
       const value = children.value;
-      let closure_0 = value;
+      closure_0 = value;
       let obj = {
         onPress() {
-          return outer1_1(closure_0);
+          return closure_1_1(closure_0);
         },
         trailing: null,
         label: null
       };
-      obj = { active: closure_0 === value, style: _undefined.radioIndicator };
-      obj[1] = outer1_7(outer1_0(_undefined[15]).RadioIndicator, obj);
-      obj = { style: _undefined.formRow, variant: "text-md/semibold", color: "interactive-text-active", children: children.name };
-      obj[2] = outer1_7(outer1_0(_undefined[13]).Text, obj);
-      children = [outer1_7(outer1_0(_undefined[14]).FormRow, obj), arg1 < feedbackOptions.length - 1 && outer1_7(outer1_0(_undefined[14]).FormDivider, {})];
-      return outer1_8(outer1_4.Fragment, { children }, value);
+      obj = { active: closure_0 === value, style: closure_2.radioIndicator };
+      obj[1] = closure_1_7(closure_1_0(closure_2[15]).RadioIndicator, obj);
+      obj = { style: closure_2.formRow, variant: "text-md/semibold", color: "interactive-text-active", children: children.name };
+      obj[2] = closure_1_7(closure_1_0(closure_2[13]).Text, obj);
+      children = [closure_1_7(closure_1_0(closure_2[14]).FormRow, obj), arg1 < feedbackOptions.length - 1 && closure_1_7(closure_1_0(closure_2[14]).FormDivider, {})];
+      return closure_1_8(closure_1_4.Fragment, { children }, value);
     })
   });
   const obj3 = { style: items1, children: null };
@@ -73,50 +78,50 @@ function SubmitFeedbackScreen(onSubmit) {
     style: tmp.formBody,
     children: feedbackOptions.map((children) => {
       const value = children.value;
-      let closure_0 = value;
+      closure_0 = value;
       let obj = {
         onPress() {
-          return outer1_1(closure_0);
+          return closure_1_1(closure_0);
         },
         trailing: null,
         label: null
       };
-      obj = { active: closure_0 === value, style: _undefined.radioIndicator };
-      obj[1] = outer1_7(outer1_0(_undefined[15]).RadioIndicator, obj);
-      obj = { style: _undefined.formRow, variant: "text-md/semibold", color: "interactive-text-active", children: children.name };
-      obj[2] = outer1_7(outer1_0(_undefined[13]).Text, obj);
-      children = [outer1_7(outer1_0(_undefined[14]).FormRow, obj), arg1 < feedbackOptions.length - 1 && outer1_7(outer1_0(_undefined[14]).FormDivider, {})];
-      return outer1_8(outer1_4.Fragment, { children }, value);
+      obj = { active: closure_0 === value, style: closure_2.radioIndicator };
+      obj[1] = closure_1_7(closure_1_0(closure_2[15]).RadioIndicator, obj);
+      obj = { style: closure_2.formRow, variant: "text-md/semibold", color: "interactive-text-active", children: children.name };
+      obj[2] = closure_1_7(closure_1_0(closure_2[13]).Text, obj);
+      children = [closure_1_7(closure_1_0(closure_2[14]).FormRow, obj), arg1 < feedbackOptions.length - 1 && closure_1_7(closure_1_0(closure_2[14]).FormDivider, {})];
+      return closure_1_8(closure_1_4.Fragment, { children }, value);
     })
   };
-  items1[1] = { paddingBottom: importDefault(1629)().bottom + 16 };
+  items1[1] = { paddingBottom: useSafeAreaInsetsDefault().bottom + 16 };
   const obj5 = { size: "md", text: null, onPress: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj5[1] = intl3.string(require(1236) /* getSystemLocale */.t.Z6DZZ6);
+  const intl3 = getSystemLocale.intl;
+  obj5[1] = intl3.string(getSystemLocale.t.Z6DZZ6);
   obj5[2] = onSubmit.onSubmit;
-  obj3[1] = callback2(require(4745) /* Button */.Button, obj5);
+  obj3[1] = callback2(Button.Button, obj5);
   items[3] = callback2(View, obj3);
   obj[1] = items;
   return callback3(View, obj);
 }
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 const SUBMIT_FEEDBACK = "SUBMIT_FEEDBACK";
 createCacheKey = { container: null, header: null, headerTitle: null, headerSubtitle: null, closeButtonContainer: null, formBody: null, formRow: null, radioIndicator: null, submitButtonContainer: null };
-createCacheKey = { flex: 1, paddingHorizontal: 16, paddingVertical: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%", paddingTop: 8 };
+createCacheKey = { flex: 1, paddingHorizontal: 16, paddingVertical: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%", paddingTop: 8 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 16, paddingVertical: 8, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[1] = { flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 16, paddingVertical: 8, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[2] = { textAlign: "center" };
 createCacheKey[3] = { textAlign: "center", marginTop: 8 };
 createCacheKey[4] = { marginVertical: 14 };
-let obj1 = { flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 16, paddingVertical: 8, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
-createCacheKey[5] = { marginTop: 24, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+let obj1 = { flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 16, paddingVertical: 8, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
+createCacheKey[5] = { marginTop: 24, borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
 createCacheKey[6] = { paddingVertical: 2 };
 createCacheKey[7] = { marginRight: 0 };
-let obj2 = { marginTop: 24, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
-createCacheKey[8] = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 16, paddingVertical: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 16, paddingVertical: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_automod/native/AutomodSubmitFeedbackModal.tsx");
+let obj2 = { marginTop: 24, borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[8] = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 16, paddingVertical: 16, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 16, paddingVertical: 16, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
+const result = require("set").fileFinishedImporting("modules/guild_automod/native/AutomodSubmitFeedbackModal.tsx");
 
 export default function AutomodSubmitFeedbackModal(onCloseModal) {
   onCloseModal = onCloseModal.onCloseModal;
@@ -128,16 +133,14 @@ export default function AutomodSubmitFeedbackModal(onCloseModal) {
   callback = tmp[1];
   const items = [first, onCloseModal, automodDecision];
   const memo = React.useMemo(() => {
-    let closure_1 = onChange;
+    closure_1 = onChange;
     onChange = function onChange(arg0) {
       onSubmit(arg0);
     };
     function onSubmit() {
-      let channel;
-      let messageId;
       let obj = callback(onChange[17]);
       obj = { feedback_type: onChange, message_id: closure_1.messageId, content: closure_1.messageContent, decision_id: closure_1.decisionId };
-      obj.trackWithMetadata(outer1_6.GUILD_AUTOMOD_FEEDBACK, obj);
+      obj.trackWithMetadata(closure_1_6.GUILD_AUTOMOD_FEEDBACK, obj);
       ({ messageId, channel } = closure_1);
       callback(onChange[18]).executeAlertAction(messageId, channel, callback(onChange[19]).AutomodAlertActionType.SUBMIT_FEEDBACK);
       const obj3 = callback(onChange[18]);
@@ -145,17 +148,17 @@ export default function AutomodSubmitFeedbackModal(onCloseModal) {
       callback();
     }
     return {
-      [outer1_9]: {
+      [closure_1_9]: {
         ignoreKeyboard: true,
         title: "",
         customNavbar() {
-          return outer1_7(outer1_11, { onClose: closure_0 });
+          return closure_1_7(closure_1_11, { onClose: closure_0 });
         },
         headerLeft() {
           return null;
         },
         render() {
-          return outer1_7(outer1_12, { feedback: closure_1, onChange, onSubmit });
+          return closure_1_7(closure_1_12, { feedback: closure_1, onChange, onSubmit });
         }
       }
     };

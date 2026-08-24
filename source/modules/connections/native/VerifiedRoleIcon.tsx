@@ -1,36 +1,32 @@
-// Module ID: 7182
-// Function ID: 7183
+// Module ID: 7220
+// Function ID: 7221
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 676, 21, 712, 4661, 7183, 7163, 4318, 2]
+// Dependencies: [19, 17, 676, 21, 712, 4668, 7221, 7201, 4322, 2]
 // Exports: default
 
-// Module 7182 (VerifiedRoleIcon)
-import "noop";
-import { View } from "get ActivityIndicator";
-import ME from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7220 (VerifiedRoleIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import LinkIcon from "LinkIcon" /* 4322 */;
+import useRoleIcon from "useRoleIcon" /* 7201 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 7221 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ DEFAULT_ROLE_COLOR_HEX: c3, EMPTY_STRING_SNOWFLAKE_ID: c4 } = ME);
-const WHITE = require("Themes").unsafe_rawColors.WHITE;
-const PRIMARY_630 = require("Themes").unsafe_rawColors.PRIMARY_630;
+const WHITE = ThemesDefault.unsafe_rawColors.WHITE;
+const PRIMARY_630 = ThemesDefault.unsafe_rawColors.PRIMARY_630;
 createCacheKey = { iconContainer: null };
-createCacheKey = { alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.round };
+createCacheKey = { alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.round };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("ME").fileFinishedImporting("modules/connections/native/VerifiedRoleIcon.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/connections/native/VerifiedRoleIcon.tsx");
 
 export default function VerifiedRoleIcon(arg0) {
-  let displayRoleIcon;
-  let guildId;
-  let role;
-  let roleColor;
-  let roleId;
-  let size;
-  let style;
   ({ role, roleId, roleColor, size } = arg0);
   ({ guildId, style, displayRoleIcon } = arg0);
   if (roleColor == null) {
@@ -43,11 +39,11 @@ export default function VerifiedRoleIcon(arg0) {
   if (roleColor == null) {
     roleColor = closure_3;
   }
-  let obj = require(7183) /* getHigherContrastColor */;
+  let obj = getHigherContrastColor;
   const items = [WHITE, PRIMARY_630];
   const diff = size - size / 8 * 2;
   const higherContrastColor = obj.getHigherContrastColor({ backgroundColor: roleColor, colors: items });
-  let obj1 = require(7163) /* useRoleIcon */;
+  obj1 = useRoleIcon;
   obj = { guildId, roleId: null, size: null };
   if (roleId == null) {
     let id;
@@ -63,7 +59,7 @@ export default function VerifiedRoleIcon(arg0) {
   obj[2] = diff;
   let roleIcon = obj1.useRoleIcon(obj);
   obj = { style: items1, children: null };
-  items1 = [style, createCacheKey().iconContainer, { width: size, height: size, backgroundColor: roleColor }];
+  items1 = [style, callback().iconContainer, { width: size, height: size, backgroundColor: roleColor }];
   if (false === displayRoleIcon) {
     obj1 = { style: null, size: "custom", color: null };
     const obj2 = { width: null, height: null };
@@ -71,7 +67,7 @@ export default function VerifiedRoleIcon(arg0) {
     obj2[1] = diff;
     obj1[0] = obj2;
     obj1[2] = higherContrastColor;
-    roleIcon = tmp9(require(4318) /* LinkIcon */.LinkIcon, obj1);
+    roleIcon = tmp9(LinkIcon.LinkIcon, obj1);
   }
   obj[1] = roleIcon;
   return <View style={items1}>{null}</View>;

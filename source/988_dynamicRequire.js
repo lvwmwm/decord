@@ -4,7 +4,9 @@
 // Dependencies: [989]
 
 // Module 988 (dynamicRequire)
-const require = arg1;
+import getSDKSource from "getSDKSource" /* 989 */;
+
+require = arg1;
 let dependencyMap = arg4;
 dependencyMap = arg6;
 function dynamicRequire(require) {
@@ -12,7 +14,7 @@ function dynamicRequire(require) {
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.isNodeEnv = function isNodeEnv() {
-  const isBrowserBundleResult = require(989) /* getSDKSource */.isBrowserBundle();
+  const isBrowserBundleResult = getSDKSource.isBrowserBundle();
   if (isBrowserBundleResult) {
     return !isBrowserBundleResult;
   } else {

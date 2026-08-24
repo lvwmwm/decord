@@ -1,19 +1,18 @@
-// Module ID: 8991
-// Function ID: 8992
+// Module ID: 9028
+// Function ID: 9029
 // Name: openUserProfileAvatarMediaViewer
-// Dependencies: [4662, 676, 8992, 2]
+// Dependencies: [4669, 676, 9029, 2]
 // Exports: default
 
-// Module 8991 (openUserProfileAvatarMediaViewer)
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { AVATAR_MAX_SIZE } from "ME";
+// Module 9028 (openUserProfileAvatarMediaViewer)
+import _openMediaModal from "_openMediaModal" /* 9029 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { AVATAR_MAX_SIZE } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("_openMediaModal").fileFinishedImporting("modules/user_profile/native/openUserProfileAvatarMediaViewer.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/user_profile/native/openUserProfileAvatarMediaViewer.tsx");
 
 export default function openUserProfileAvatarMediaViewer(user) {
-  let guildId;
-  let originViewOrOriginLayout;
   user = user.user;
   useReducedMotion = useReducedMotion.useReducedMotion;
   let animate = !useReducedMotion;
@@ -23,7 +22,7 @@ export default function openUserProfileAvatarMediaViewer(user) {
   }
   const avatarURL = user.getAvatarURL(guildId, tmp, animate);
   if (typeof avatarURL === "string") {
-    let obj = require(8992) /* _openMediaModal */;
+    let obj = _openMediaModal;
     obj = { initialSources: null, originViewOrOriginLayout: null, analyticsSource: "user_profile_avatar", openAs: "action-sheet", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
     obj = { uri: null, mediaIndex: 0, height: null, width: null, accessoryType: "embed" };
     obj[0] = avatarURL;

@@ -1,51 +1,54 @@
-// Module ID: 14564
-// Function ID: 14565
+// Module ID: 14632
+// Function ID: 14633
 // Name: ResubscribedAlert
-// Dependencies: [19, 17, 21, 4661, 712, 4763, 1236, 14565, 1297, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4768, 1236, 14633, 1297, 4739, 2]
 // Exports: default
 
-// Module 14564 (ResubscribedAlert)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14632 (ResubscribedAlert)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import componentDidMountDefault from "componentDidMount" /* 4768 */;
+import registerAssetDefault from "registerAsset" /* 14633 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ View: c3, Image: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: null, body: null, centerText: null, headerImage: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { alignItems: "center", textAlign: "center" };
 createCacheKey[2] = { textAlign: "center" };
 createCacheKey[3] = { width: 87, height: 87 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/ResubscribedAlert.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/ResubscribedAlert.tsx");
 
 export default function ResubscribedAlert(onClose) {
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { confirmText: null, onConfirm: null, style: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["NX+WJN"]);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["NX+WJN"]);
   obj[1] = onClose.onClose;
   obj[2] = tmp.container;
   obj = { style: tmp.body, children: null };
-  obj = { source: importDefault(14565), style: tmp.headerImage };
-  const items = [callback(closure_4, obj), callback(require(1297) /* Button */.Spacer, { size: 27 }), , , ];
-  const obj1 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.oPV2cy);
-  items[2] = callback(require(4734) /* Text */.Text, obj1);
-  items[3] = callback(require(1297) /* Button */.Spacer, { size: 12 });
+  obj = { source: registerAssetDefault, style: tmp.headerImage };
+  const items = [callback(closure_4, obj), callback(Button.Spacer, { size: 27 }), , , ];
+  obj1 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: null };
+  const intl2 = getSystemLocale.intl;
+  obj1[3] = intl2.string(getSystemLocale.t.oPV2cy);
+  items[2] = callback(Text.Text, obj1);
+  items[3] = callback(Button.Spacer, { size: 12 });
   const obj2 = { variant: "text-md/normal", color: "mobile-text-heading-primary", style: tmp.centerText, children: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj2[3] = intl3.string(require(1236) /* getSystemLocale */.t.DdRizV);
-  items[4] = callback(require(4734) /* Text */.Text, obj2);
+  const intl3 = getSystemLocale.intl;
+  obj2[3] = intl3.string(getSystemLocale.t.DdRizV);
+  items[4] = callback(Text.Text, obj2);
   obj[1] = items;
   obj[3] = callback2(closure_3, obj);
-  return callback(importDefault(4763), obj);
+  return callback(componentDidMountDefault, obj);
 };

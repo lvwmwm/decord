@@ -1,23 +1,24 @@
-// Module ID: 10131
-// Function ID: 10132
+// Module ID: 10170
+// Function ID: 10171
 // Name: _uploadDebugLogFiles
-// Dependencies: [5, 1391, 676, 3, 17, 4273, 9668, 10132, 7, 10133, 10135, 1917, 4236, 10136, 10137, 10138, 530, 2]
+// Dependencies: [5, 1391, 676, 3, 17, 4277, 9707, 10171, 7, 10172, 10174, 1917, 4240, 10175, 10176, 10177, 530, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 10131 (_uploadDebugLogFiles)
-import V6OrEarlierAPIError from "V6OrEarlierAPIError";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { Endpoints } from "ME";
+// Module 10170 (_uploadDebugLogFiles)
+import timestampDefault from "timestamp" /* 3 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _uploadDebugLogFiles() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (c7 === 2) {
         c7 = 3;
@@ -30,7 +31,7 @@ function _uploadDebugLogFiles() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -45,21 +46,21 @@ function _uploadDebugLogFiles() {
               obj[0] = arg1;
               return obj;
             } else {
-              const dependencyMap = tmp3;
-              let closure_2 = tmp7;
+              dependencyMap = tmp3;
+              closure_2 = tmp7;
               const callback = closure_1;
               closure_1 = undefined;
-              let c5 = 1;
+              c5 = 1;
               c6 = 2;
               c7 = 1;
-              let obj1 = { value: null, done: false };
-              obj1[0] = outer1_11(callback);
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_11(callback);
               return obj1;
             }
           } else if (1 === tmp7) {
             c5 = 0;
-            closure_2 = V6OrEarlierAPIError;
-            if (closure_2 instanceof callback(4273).UploadVoiceDebugLogsError) {
+            closure_2 = closure_4;
+            if (closure_2 instanceof callback(4277).UploadVoiceDebugLogsError) {
               closure_1 = (function uploadErrorToAVUnderlyingError(closure_2) {
                 const code = closure_2.code;
                 if (callback(tmp3[5]).UploadErrorCodes.GENERAL === code) {
@@ -75,13 +76,13 @@ function _uploadDebugLogFiles() {
                 }
               })(closure_2);
             }
-            let obj4 = callback(9668);
+            let obj4 = callback(9707);
             const obj2 = { type: null, underlyingError: null, errorMessage: null };
-            obj2[0] = callback(9668).AVError.DEBUG_LOG_UPLOAD_FAILED;
+            obj2[0] = callback(9707).AVError.DEBUG_LOG_UPLOAD_FAILED;
             obj2[1] = closure_1;
-            obj2[2] = outer1_2.message;
+            obj2[2] = closure_1_2.message;
             obj4.reportAVError(obj2);
-            throw outer1_2;
+            throw closure_1_2;
           } else if (2 === tmp7) {
             if (arg0 === 1) {
               c7 = 3;
@@ -93,7 +94,7 @@ function _uploadDebugLogFiles() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(10132);
+              obj1 = callback(10171);
               c6 = 3;
               c7 = 1;
               obj4 = { value: null, done: false };
@@ -112,10 +113,10 @@ function _uploadDebugLogFiles() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp35) {
-          V6OrEarlierAPIError = tmp35;
+          closure_4 = tmp35;
           if (tmp4 === c5) {
             c7 = tmp2;
             throw tmp35;
@@ -126,7 +127,7 @@ function _uploadDebugLogFiles() {
       }
     })();
   });
-  const _uploadDebugLogFiles = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -148,19 +149,11 @@ function uploadAppLogFiles() {
 function _uploadAppLogFiles() {
   const self = this;
   let tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0) {
-      let length;
-      let length2;
-      let length3;
-      let length4;
-      let slice;
-      let slice2;
-      let slice3;
-      let slice4;
       if (c7 === 2) {
         c7 = 3;
         HermesBuiltin.throwTypeError();
@@ -177,7 +170,7 @@ function _uploadAppLogFiles() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -192,22 +185,22 @@ function _uploadAppLogFiles() {
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_3 = tmp4;
+                closure_3 = tmp4;
                 let lib2 = tmp8;
                 tmp = callback;
                 let lib;
                 lib2 = undefined;
                 closure_3 = undefined;
-                let V6OrEarlierAPIError;
+                closure_4 = undefined;
                 let debugInfo;
                 c6 = undefined;
                 c7 = undefined;
                 let logger;
                 let getSystemLog;
                 debugInfo = 2;
-                tmp = outer1_2;
-                tmp = outer1_3;
-                lib = outer1_2(outer1_3[8]).stringify();
+                tmp = closure_1_2;
+                tmp = closure_1_3;
+                lib = closure_1_2(closure_1_3[8]).stringify();
                 debugInfo = 1;
                 debugInfo = 3;
                 getSystemLog = undefined;
@@ -219,7 +212,7 @@ function _uploadAppLogFiles() {
                   let promise = new Promise((arg0) => systemLog.getSystemLog(arg0));
                   c6 = 5;
                   c7 = 1;
-                  const obj1 = { value: null, done: false };
+                  obj1 = { value: null, done: false };
                   obj1[0] = promise;
                   return obj1;
                 } else {
@@ -231,12 +224,12 @@ function _uploadAppLogFiles() {
                   c6 = 7;
                   c7 = 1;
                 }
-                const obj14 = outer1_2(outer1_3[8]);
+                const obj14 = closure_1_2(closure_1_3[8]);
               }
             } else {
               if (1 === tmp11) {
                 debugInfo = 0;
-                const message = V6OrEarlierAPIError;
+                const message = closure_4;
                 const _HermesInternal6 = HermesInternal;
                 logger.error("uploadAppLogFiles: upload app log files error " + message.message);
                 c7 = 3;
@@ -244,12 +237,12 @@ function _uploadAppLogFiles() {
                 if (3 === tmp11) {
                   debugInfo = 1;
                   const _HermesInternal4 = HermesInternal;
-                  lib2 = "System Logs failed " + V6OrEarlierAPIError;
+                  lib2 = "System Logs failed " + closure_4;
                 } else {
                   if (4 === tmp11) {
                     debugInfo = 1;
                     const _HermesInternal2 = HermesInternal;
-                    closure_3 = "Push logs failed: " + V6OrEarlierAPIError;
+                    closure_3 = "Push logs failed: " + closure_4;
                     debugInfo = 5;
                     let obj4 = callback(closure_3[11]);
                     const consumeLogsResult = obj4.consumeLogs();
@@ -257,7 +250,7 @@ function _uploadAppLogFiles() {
                     if (consumeLogsResult == null) {
                       lib = "";
                     }
-                    V6OrEarlierAPIError = lib;
+                    closure_4 = lib;
                     debugInfo = 1;
                   } else if (5 === tmp11) {
                     if (arg0 === 1) {
@@ -277,7 +270,7 @@ function _uploadAppLogFiles() {
                     if (6 === tmp11) {
                       debugInfo = 1;
                       const _HermesInternal = HermesInternal;
-                      V6OrEarlierAPIError = "LibDiscore logs failed: " + V6OrEarlierAPIError;
+                      closure_4 = "LibDiscore logs failed: " + closure_4;
                     } else if (7 === tmp11) {
                       if (arg0 === 1) {
                         c7 = 3;
@@ -320,7 +313,7 @@ function _uploadAppLogFiles() {
                     const _JSON2 = JSON;
                     const json = JSON.stringify(lib(closure_3[15])(), undefined, 2);
                     const _HermesInternal3 = HermesInternal;
-                    logger = "\n    " + tmp42 + "\n\n    " + result + "\n\n    Metadata:\n    " + json + "\n\n    ChannelStore:\n    " + JSON.stringify(debugInfo.getDebugInfo(), undefined, 2) + "\n\n    Logs:\n    " + lib + "\n\n    System logs:\n    " + lib2 + "\n\n    LibDiscore logs:\n    " + V6OrEarlierAPIError + "\n\n    Push Notifications:\n    " + closure_3 + "\n    ";
+                    logger = "\n    " + tmp42 + "\n\n    " + result + "\n\n    Metadata:\n    " + json + "\n\n    ChannelStore:\n    " + JSON.stringify(debugInfo.getDebugInfo(), undefined, 2) + "\n\n    Logs:\n    " + lib + "\n\n    System logs:\n    " + lib2 + "\n\n    LibDiscore logs:\n    " + closure_4 + "\n\n    Push Notifications:\n    " + closure_3 + "\n    ";
                     let obj6 = lib2(closure_3[8]);
                     obj6.clear();
                     getSystemLog = c6.DEBUG_LOG(callback, "discord_app_logs");
@@ -335,7 +328,7 @@ function _uploadAppLogFiles() {
                     obj6[0] = HTTP.post(obj5);
                     return obj6;
                   }
-                  debugInfo = lib.length + lib2.length + closure_3.length + V6OrEarlierAPIError.length;
+                  debugInfo = lib.length + lib2.length + closure_3.length + closure_4.length;
                   if (debugInfo > c7) {
                     tmp = lib2;
                     tmp = closure_3;
@@ -363,13 +356,13 @@ function _uploadAppLogFiles() {
                     tmp = c6;
                     ({ slice: slice3, length: length3 } = closure_3);
                     closure_3 = slice3(length3 - Math.floor(closure_3.length * c6));
-                    tmp = V6OrEarlierAPIError;
-                    tmp = V6OrEarlierAPIError;
+                    tmp = closure_4;
+                    tmp = closure_4;
                     const _Math4 = Math;
-                    tmp = V6OrEarlierAPIError;
+                    tmp = closure_4;
                     tmp = c6;
-                    ({ slice: slice4, length: length4 } = V6OrEarlierAPIError);
-                    V6OrEarlierAPIError = slice4(length4 - Math.floor(V6OrEarlierAPIError.length * c6));
+                    ({ slice: slice4, length: length4 } = closure_4);
+                    closure_4 = slice4(length4 - Math.floor(closure_4.length * c6));
                   }
                   tmp12 = null;
                   if (null != callback(closure_3[12]).default) {
@@ -389,9 +382,9 @@ function _uploadAppLogFiles() {
             }
             debugInfo = 1;
             const _HermesInternal5 = HermesInternal;
-            lib = "Logs failed: " + V6OrEarlierAPIError;
+            lib = "Logs failed: " + closure_4;
           } catch (tmp94) {
-            V6OrEarlierAPIError = tmp94;
+            closure_4 = tmp94;
             if (tmp5 === debugInfo) {
               c7 = tmp3;
               throw tmp94;
@@ -411,7 +404,7 @@ function _uploadAppLogFiles() {
       }
     })();
   });
-  const _uploadAppLogFiles = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -421,10 +414,10 @@ function _uploadAppLogFiles() {
   return applyArgumentsResult;
 }
 let c7 = 9437184;
-const metroImportAll = new require("timestamp")("DebugUploadManager");
-const CrashReportingManager = require("set").NativeModules.CrashReportingManager;
-const tmp2 = new require("timestamp")("DebugUploadManager");
-let result = require("ME").fileFinishedImporting("modules/debug/DebugUploadManager.tsx");
+let closure_8 = new timestampDefault("DebugUploadManager");
+const CrashReportingManager = require("get ActivityIndicator").NativeModules.CrashReportingManager;
+const tmp2 = new timestampDefault("DebugUploadManager");
+let result = require("set").fileFinishedImporting("modules/debug/DebugUploadManager.tsx");
 
 export const uploadDebugLogFiles = function uploadDebugLogFiles(ANDROID_APP) {
   const self = this;

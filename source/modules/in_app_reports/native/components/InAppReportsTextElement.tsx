@@ -1,29 +1,27 @@
-// Module ID: 8155
-// Function ID: 8156
+// Module ID: 8194
+// Function ID: 8195
 // Name: TextElement
-// Dependencies: [19, 17, 21, 4661, 4764, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 4769, 4739, 2]
 // Exports: default
 
-// Module 8155 (TextElement)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8194 (TextElement)
+import Text from "Text" /* 4739 */;
+import createRulesAll from "createRules" /* 4769 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ container: { marginBottom: 16, paddingHorizontal: 16 }, header: { marginBottom: 8 }, body: { marginBottom: 16 } });
-const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsTextElement.tsx");
+const result = require("set").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsTextElement.tsx");
 
 export default function TextElement(element) {
-  let body;
-  let header;
   const data = element.element.data;
   ({ header, body } = data);
   const tmp = callback2();
-  let obj = importAll(4764);
+  let obj = createRulesAll;
   let tmp3 = null;
   if (data.is_localized) {
     if (null != header) {
@@ -34,15 +32,15 @@ export default function TextElement(element) {
         obj = { style: null, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
         obj[0] = tmp.header;
         obj[3] = header;
-        tmp7 = callback(require(4734) /* Text */.Text, obj);
+        tmp7 = callback(Text.Text, obj);
       }
       const items = [tmp7, ];
       let tmp10 = null != body;
       if (tmp10) {
-        const obj1 = { style: null, variant: "text-md/medium", children: null };
+        obj1 = { style: null, variant: "text-md/medium", children: null };
         obj1[0] = tmp.body;
         obj1[2] = ref.current(body);
-        tmp10 = callback(require(4734) /* Text */.Text, obj1);
+        tmp10 = callback(Text.Text, obj1);
       }
       items[1] = tmp10;
       obj[1] = items;

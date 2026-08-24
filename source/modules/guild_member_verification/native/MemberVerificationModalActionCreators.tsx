@@ -1,25 +1,29 @@
-// Module ID: 8523
-// Function ID: 8524
-// Dependencies: [6860, 676, 698, 6906, 5260, 8524, 2007, 2]
+// Module ID: 8562
+// Function ID: 8563
+// Dependencies: [6898, 676, 698, 6944, 5265, 8563, 2008, 2]
 
-// Module 8523
-import items from "items";
-import { AnalyticEvents } from "ME";
+// Module 8562
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import _fetchVerificationFormDefault from "_fetchVerificationForm" /* 6944 */;
+import items from "items" /* 6898 */;
 
-let c3;
-let c4;
 ({ MEMBER_VERIFICATION_TYPE: c3, IN_APP_MEMBER_VERIFICATION_MODAL_KEY: c4 } = items);
-const result = require("expandEventProperties").fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalActionCreators.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalActionCreators.tsx");
 
 export default {
   openMemberVerificationModal(guildId, connect) {
-    let obj = importDefault(6906);
+    let obj = _fetchVerificationFormDefault;
     const verificationForm = obj.fetchVerificationForm(guildId);
     obj = { type: closure_3, guild_id: guildId };
-    importDefault(698).track(AnalyticEvents.OPEN_MODAL, obj);
-    const obj2 = importDefault(698);
+    expandEventPropertiesDefault.track(AnalyticEvents.OPEN_MODAL, obj);
+    const obj2 = expandEventPropertiesDefault;
     obj = { guildId, onClose: connect };
-    importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(8524, dependencyMap.paths), obj, closure_4);
+    _modDef5265.pushLazy(asyncRequireImpl(8563, dependencyMap.paths), obj, closure_4);
   },
   closeMemberVerificationModal() {
     let flag = arg0;
@@ -27,11 +31,11 @@ export default {
       flag = false;
     }
     if (!flag) {
-      let obj = importDefault(698);
+      let obj = expandEventPropertiesDefault;
       obj = { type: null };
       obj[0] = closure_3;
       obj.track(AnalyticEvents.MODAL_DISMISSED, obj);
     }
-    importDefault(5260).popWithKey(closure_4);
+    _modDef5265.popWithKey(closure_4);
   }
 };

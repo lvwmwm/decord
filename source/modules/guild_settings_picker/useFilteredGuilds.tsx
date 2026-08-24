@@ -1,17 +1,17 @@
-// Module ID: 13355
-// Function ID: 13356
+// Module ID: 13413
+// Function ID: 13414
 // Name: useFilteredGuilds
-// Dependencies: [19, 1910, 5078, 1922, 589, 38, 2]
+// Dependencies: [19, 1910, 5083, 1922, 589, 38, 2]
 // Exports: default
 
-// Module 13355 (useFilteredGuilds)
-import noop from "noop";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import insertUnsortedGuilds from "insertUnsortedGuilds";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 13413 (useFilteredGuilds)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import closure_5 from "insertUnsortedGuilds" /* 5083 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
-const result = require("insertUnsortedGuilds").fileFinishedImporting("modules/guild_settings_picker/useFilteredGuilds.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_settings_picker/useFilteredGuilds.tsx");
 
 export default function useFilteredGuilds(isGuildIncluded) {
   isGuildIncluded = isGuildIncluded.isGuildIncluded;
@@ -20,12 +20,12 @@ export default function useFilteredGuilds(isGuildIncluded) {
   let stateFromStores1;
   let stateFromStores2;
   let obj = isGuildIncluded(stateFromStores1[4]);
-  let items = [insertUnsortedGuilds];
+  let items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => flattenedGuildIds.getFlattenedGuildIds());
-  const items1 = [createGuildRecordFromRust];
+  const items1 = [closure_4];
   stateFromStores1 = isGuildIncluded(stateFromStores1[4]).useStateFromStores(items1, () => guilds.getGuilds());
   const obj2 = isGuildIncluded(stateFromStores1[4]);
-  const items2 = [mergeGuildAvatar];
+  const items2 = [closure_6];
   stateFromStores2 = isGuildIncluded(stateFromStores1[4]).useStateFromStores(items2, () => currentUser.getCurrentUser());
   obj = {
     options: stateFromStores2.useMemo(() => {
@@ -36,12 +36,12 @@ export default function useFilteredGuilds(isGuildIncluded) {
           let found = stateFromStores;
         } else {
           found = stateFromStores.filter((arg0) => {
-            outer1_1(outer1_2[5])(null != dependencyMap[arg0], "guild should not be null");
-            return callback(dependencyMap[arg0], noop);
+            closure_1_1(closure_1_2[5])(null != dependencyMap[arg0], "guild should not be null");
+            return callback(dependencyMap[arg0], closure_3);
           });
         }
         items = found.map((id) => {
-          outer1_1(outer1_2[5])(null != dependencyMap[id], "guild should not be null");
+          closure_1_1(closure_1_2[5])(null != dependencyMap[id], "guild should not be null");
           return { id, label: dependencyMap[id].name, value: dependencyMap[id].id };
         });
       }

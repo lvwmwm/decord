@@ -1,18 +1,20 @@
-// Module ID: 7141
-// Function ID: 7142
+// Module ID: 7179
+// Function ID: 7180
 // Name: set
-// Dependencies: [4479, 589, 709, 2]
+// Dependencies: [4483, 589, 709, 2]
 
-// Module 7141 (set)
-import createExecutable from "createExecutable";
-import { Store } from "initialize";
-import set from "dispatcher";
+// Module 7179 (set)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "createExecutable" /* 4483 */;
+import set from "set" /* 2 */;
 
 let obj = { FETCHING: 0, [0]: "FETCHING", FETCHED: 1, [1]: "FETCHED", ERROR: 2, [2]: "ERROR" };
 let closure_2 = {};
 let closure_3 = {};
 let set = new Set();
 let closure_5 = {};
+const Store = initializeDefault.Store;
 class ApplicationDirectoryApplicationsStore extends Store {
 }
 const prototype = ApplicationDirectoryApplicationsStore.prototype;
@@ -24,16 +26,16 @@ prototype["getApplication"] = function getApplication(arg0) {
 prototype["getApplicationRecord"] = function getApplicationRecord(arg0) {
   if (null != arg0) {
     if (null != dependencyMap[arg0]) {
-      return createExecutable.createFromServer(tmp2);
+      return closure_0.createFromServer(tmp2);
     }
   }
 };
 prototype["getApplications"] = function getApplications() {
   return closure_2;
 };
-prototype["getApplicationFetchState"] = function getApplicationFetchState(createExecutable) {
-  if (null != createExecutable) {
-    return table[createExecutable];
+prototype["getApplicationFetchState"] = function getApplicationFetchState(closure_0) {
+  if (null != closure_0) {
+    return table[closure_0];
   }
 };
 prototype["getApplicationFetchStates"] = function getApplicationFetchStates() {
@@ -49,24 +51,24 @@ prototype["isInvalidApplication"] = function isInvalidApplication(arg0) {
 prototype["getInvalidApplicationIds"] = function getInvalidApplicationIds() {
   return set;
 };
-prototype["isFetching"] = function isFetching(createExecutable) {
-  return this.getApplicationFetchState(createExecutable) === obj.FETCHING;
+prototype["isFetching"] = function isFetching(closure_0) {
+  return this.getApplicationFetchState(closure_0) === obj.FETCHING;
 };
-prototype["getApplicationLastFetchTime"] = function getApplicationLastFetchTime(createExecutable) {
-  if (null != createExecutable) {
-    return table2[createExecutable];
+prototype["getApplicationLastFetchTime"] = function getApplicationLastFetchTime(closure_0) {
+  if (null != closure_0) {
+    return table2[closure_0];
   }
 };
 ApplicationDirectoryApplicationsStore.displayName = "ApplicationDirectoryApplicationsStore";
 obj = {
   APPLICATION_DIRECTORY_FETCH_APPLICATION: function handleFetchAppDirectoryApplication(applicationId) {
-    const obj = {};
+    obj = {};
     const merged = Object.assign(obj);
     obj[applicationId.applicationId] = obj.FETCHING;
   },
   APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS: function handleFetchAppDirectoryAppSuccess(application) {
     application = application.application;
-    let obj = {};
+    obj = {};
     const merged = Object.assign(obj);
     obj[application.id] = application;
     obj = {};
@@ -84,7 +86,7 @@ obj = {
   },
   APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE: function handleFetchAppDirectoryAppFailure(applicationId) {
     applicationId = applicationId.applicationId;
-    const obj = {};
+    obj = {};
     const merged = Object.assign(obj);
     obj[applicationId] = obj.ERROR;
     if (applicationId.isInvalidApplication) {
@@ -94,7 +96,7 @@ obj = {
     }
   }
 };
-const applicationDirectoryApplicationsStore = new ApplicationDirectoryApplicationsStore(require("dispatcher"), obj);
+const applicationDirectoryApplicationsStore = new ApplicationDirectoryApplicationsStore(dispatcherDefault, obj);
 const result = set.fileFinishedImporting("modules/global_discovery_apps/stores/ApplicationDirectoryApplicationsStore.tsx");
 
 export default applicationDirectoryApplicationsStore;

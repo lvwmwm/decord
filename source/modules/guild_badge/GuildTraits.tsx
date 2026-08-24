@@ -1,17 +1,17 @@
-// Module ID: 9155
-// Function ID: 9156
+// Module ID: 9192
+// Function ID: 9193
 // Name: GuildVisibility
 // Dependencies: [676, 1430, 2]
 // Exports: getGuildTraits, isDiscoverableGuild, isPremiumGuild
 
-// Module 9155 (GuildVisibility)
-import ME from "ME";
+// Module 9192 (GuildVisibility)
+import set2 from "set" /* 2 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let obj1;
 ({ GuildFeatures: obj1, BoostedGuildTiers: c3 } = ME);
 let obj = { PUBLIC: "PUBLIC", INVITE_ONLY: "INVITE_ONLY", APPLY_TO_JOIN: "APPLY_TO_JOIN" };
-const result = require("set").fileFinishedImporting("modules/guild_badge/GuildTraits.tsx");
+const result = set2.fileFinishedImporting("modules/guild_badge/GuildTraits.tsx");
 
 export const GuildVisibility = obj;
 export const getGuildTraits = function getGuildTraits(fromGuildProfileResult) {
@@ -24,12 +24,12 @@ export const getGuildTraits = function getGuildTraits(fromGuildProfileResult) {
     if (null == fromGuildProfileResult) {
       let num3 = 0;
       if (tmp5) {
-        let num4 = require(1430) /* fromGuildPropertiesWithAdditionalFields */.isGuildRecord(fromGuildProfileResult) ? fromGuildProfileResult.premiumSubscriberCount : fromGuildProfileResult.premiumSubscriptionCount;
+        let num4 = fromGuildPropertiesWithAdditionalFields.isGuildRecord(fromGuildProfileResult) ? fromGuildProfileResult.premiumSubscriberCount : fromGuildProfileResult.premiumSubscriptionCount;
         if (num4 == null) {
           num4 = 0;
         }
         num3 = num4;
-        const obj3 = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
+        const obj3 = fromGuildPropertiesWithAdditionalFields;
       }
       if (obj4.isGuildRecord(fromGuildProfileResult)) {
         let NONE = fromGuildProfileResult.premiumTier;
@@ -59,7 +59,7 @@ export const getGuildTraits = function getGuildTraits(fromGuildProfileResult) {
           tmp8 = fromGuildProfileResult.premiumSubscriptionCount > 0;
         }
       }
-      obj2 = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
+      obj2 = fromGuildPropertiesWithAdditionalFields;
     }
   }
   if (tmp3) {
@@ -84,7 +84,7 @@ export const isPremiumGuild = function isPremiumGuild(has) {
         tmp4 = premiumTier.premiumSubscriptionCount > 0;
       }
     }
-    obj = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
+    obj = fromGuildPropertiesWithAdditionalFields;
   }
 };
 export const isDiscoverableGuild = function isDiscoverableGuild(features) {

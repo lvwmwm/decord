@@ -1,47 +1,64 @@
-// Module ID: 15596
-// Function ID: 15597
+// Module ID: 15662
+// Function ID: 15663
 // Name: getMediaIcon
-// Dependencies: [19, 21, 4661, 712, 4097, 7190, 1297, 8897, 8896, 6892, 8129, 12015, 15597, 7998, 15598, 6896, 15599, 7974, 7975, 15594, 2]
+// Dependencies: [19, 21, 4668, 712, 4100, 7228, 1297, 8934, 8933, 6930, 8168, 12064, 15663, 8037, 15664, 6934, 15665, 8013, 8014, 15658, 2]
 // Exports: useActivityIndicatorState
 
-// Module 15596 (getMediaIcon)
-import importAllResult from "canConnectToChannel";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15662 (getMediaIcon)
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import map from "map" /* 4100 */;
+import StageIcon from "StageIcon" /* 6930 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 6934 */;
+import setDefault from "set" /* 7228 */;
+import AppsIcon from "AppsIcon" /* 8013 */;
+import registerAssetDefault from "registerAsset" /* 8014 */;
+import VideoIcon from "VideoIcon" /* 8037 */;
+import registerAssetDefault2 from "registerAsset" /* 8168 */;
+import registerAssetDefault3 from "registerAsset" /* 8933 */;
+import CalendarIcon from "CalendarIcon" /* 8934 */;
+import ScreenIcon from "ScreenIcon" /* 12064 */;
+import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 15658 */;
+import registerAssetDefault4 from "registerAsset" /* 15663 */;
+import registerAssetDefault5 from "registerAsset" /* 15664 */;
+import registerAssetDefault6 from "registerAsset" /* 15665 */;
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let require = arg1;
+require = arg1;
 function getMediaIcon(closure_3) {
   if (closure_3.activeEvent) {
     let obj = { icon: null, source: null };
-    obj[0] = require(8897) /* CalendarIcon */.CalendarIcon;
-    obj[1] = importDefault(8896);
+    obj[0] = CalendarIcon.CalendarIcon;
+    obj[1] = registerAssetDefault3;
     let tmp6 = obj;
   } else if (tmp4) {
     obj = { icon: null, source: null };
-    obj[0] = require(6892) /* StageIcon */.StageIcon;
-    obj[1] = importDefault(8129);
+    obj[0] = StageIcon.StageIcon;
+    obj[1] = registerAssetDefault2;
     tmp6 = obj;
   } else if (tmp3) {
-    const obj1 = { icon: null, source: null };
-    obj1[0] = require(12015) /* ScreenIcon */.ScreenIcon;
-    obj1[1] = importDefault(15597);
+    obj1 = { icon: null, source: null };
+    obj1[0] = ScreenIcon.ScreenIcon;
+    obj1[1] = registerAssetDefault4;
     tmp6 = obj1;
   } else if (tmp2) {
     const obj2 = { icon: null, source: null };
-    obj2[0] = require(7998) /* VideoIcon */.VideoIcon;
-    obj2[1] = importDefault(15598);
+    obj2[0] = VideoIcon.VideoIcon;
+    obj2[1] = registerAssetDefault5;
     tmp6 = obj2;
   } else if (tmp) {
     const obj3 = { icon: null, source: null };
-    obj3[0] = require(6896) /* VoiceNormalIcon */.VoiceNormalIcon;
-    obj3[1] = importDefault(15599);
+    obj3[0] = VoiceNormalIcon.VoiceNormalIcon;
+    obj3[1] = registerAssetDefault6;
     tmp6 = obj3;
   } else {
     tmp6 = null;
     if (tmp5) {
       obj = { icon: null, source: null };
-      obj[0] = require(7974) /* AppsIcon */.AppsIcon;
-      obj[1] = importDefault(7975);
+      obj[0] = AppsIcon.AppsIcon;
+      obj[1] = registerAssetDefault;
       tmp6 = obj;
     }
   }
@@ -49,30 +66,26 @@ function getMediaIcon(closure_3) {
 }
 let c3 = importAllResult;
 let obj = { activityWrapper: null, activityIconWrapper: null, activityIconWrapperActive: null, activityIcon: null };
-obj = { position: "absolute", top: -3, right: -3, justifyContent: "center", width: 22, height: 22, padding: 3, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+obj = { position: "absolute", top: -3, right: -3, justifyContent: "center", width: 22, height: 22, padding: 3, borderRadius: ThemesDefault.radii.md, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST };
 obj[0] = obj;
-createCacheKey = { justifyContent: "center", width: 16, height: 16, padding: 2, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+createCacheKey = { justifyContent: "center", width: 16, height: 16, padding: 2, borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG };
 obj[1] = createCacheKey;
-obj[2] = { backgroundColor: require("Themes").colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
-let obj2 = { backgroundColor: require("Themes").colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
-obj[3] = { width: 12, height: 12, borderRadius: require("Themes").radii.none };
+obj[2] = { backgroundColor: ThemesDefault.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
+let obj2 = { backgroundColor: ThemesDefault.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
+obj[3] = { width: 12, height: 12, borderRadius: ThemesDefault.radii.none };
 let closure_5 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {
-  let IconComponent;
-  let isCurrentUserConnected;
-  let source;
-  let style;
   ({ IconComponent, isCurrentUserConnected } = arg0);
   ({ style, source } = arg0);
   let activityIcon = callback();
-  let obj = require(4097) /* map */;
-  let WHITE = obj.useToken(importDefault(712).colors.ICON_DEFAULT);
+  let obj = map;
+  let WHITE = obj.useToken(ThemesDefault.colors.ICON_DEFAULT);
   obj = { style: items, children: null };
   items = [activityIcon.activityWrapper, style];
   const items1 = [activityIcon.activityIconWrapper, ];
   let prop = null;
   const tmp = require;
-  const tmp5 = importDefault(7190);
+  const tmp5 = setDefault;
   if (isCurrentUserConnected) {
     prop = activityIcon.activityIconWrapperActive;
   }
@@ -87,27 +100,25 @@ const memoResult = importAllResult.memo((arg0) => {
     tmp4(IconComponent, colors);
     const tmp8 = isCurrentUserConnected ? colors.WHITE : colors.ICON_DEFAULT;
   } else {
-    const obj1 = { source: null, color: null, style: null };
+    obj1 = { source: null, color: null, style: null };
     obj1[0] = source;
     if (isCurrentUserConnected) {
       WHITE = tmp3(712).unsafe_rawColors.WHITE;
     }
     obj1[1] = WHITE;
     obj1[2] = activityIcon.activityIcon;
-    obj[1] = tmp4(tmp(1297).Icon, obj1);
+    obj[1] = tmp4(Button.Icon, obj1);
     obj[1] = tmp4(tmp6, obj);
     return tmp4(tmp5, obj);
   }
 });
-let obj3 = { width: 12, height: 12, borderRadius: require("Themes").radii.none };
+let obj3 = { width: 12, height: 12, borderRadius: ThemesDefault.radii.none };
 const memoResult1 = importAllResult.memo(function GuildsBarGuildActivityIndicator(arg0) {
-  let guildId;
-  let style;
-  let c0;
-  let importDefault;
+  closure_0 = undefined;
+  importDefault = undefined;
   ({ guildId, style } = arg0);
-  const tmp = importDefault(15594)(guildId);
-  c0 = tmp;
+  const tmp = useGuildsBarGuildMediaStateDefault(guildId);
+  closure_0 = tmp;
   const tmp2 = getMediaIcon(tmp);
   importDefault = tmp2;
   let icon;
@@ -123,19 +134,19 @@ const memoResult1 = importAllResult.memo(function GuildsBarGuildActivityIndicato
   items[2] = tmp.isCurrentUserConnected;
   const memo = importAllResult.useMemo(() => {
     let icon;
-    if (c1 != null) {
+    if (closure_1 != null) {
       icon = tmp.icon;
     }
     const obj = { IconComponent: icon, source: null, isCurrentUserConnected: null };
     let source;
-    if (c1 != null) {
+    if (closure_1 != null) {
       source = tmp.source;
     }
     if (source == null) {
       source = null;
     }
     obj[1] = source;
-    obj[2] = _undefined.isCurrentUserConnected;
+    obj[2] = obj.isCurrentUserConnected;
     return obj;
   }, items);
   source = memo.source;
@@ -150,14 +161,14 @@ const memoResult1 = importAllResult.memo(function GuildsBarGuildActivityIndicato
   }
   return tmp9;
 });
-const result = require("createCacheKey").fileFinishedImporting("modules/guilds_bar/native/GuildsBarActivityIndicator.tsx");
+const result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBarActivityIndicator.tsx");
 
 export default memoResult1;
 export const GuildsBarActivityIndicatorBase = memoResult;
 export { getMediaIcon };
 export const useActivityIndicatorState = function useActivityIndicatorState(guildId) {
-  const tmp = importDefault(15594)(guildId);
-  const require = tmp;
+  const tmp = useGuildsBarGuildMediaStateDefault(guildId);
+  closure_0 = tmp;
   const tmp2 = getMediaIcon(tmp);
   importDefault = tmp2;
   let icon;
@@ -173,19 +184,19 @@ export const useActivityIndicatorState = function useActivityIndicatorState(guil
   items[2] = tmp.isCurrentUserConnected;
   return importAllResult.useMemo(() => {
     let icon;
-    if (c1 != null) {
+    if (closure_1 != null) {
       icon = tmp.icon;
     }
     const obj = { IconComponent: icon, source: null, isCurrentUserConnected: null };
     let source;
-    if (c1 != null) {
+    if (closure_1 != null) {
       source = tmp.source;
     }
     if (source == null) {
       source = null;
     }
     obj[1] = source;
-    obj[2] = _undefined.isCurrentUserConnected;
+    obj[2] = obj.isCurrentUserConnected;
     return obj;
   }, items);
 };

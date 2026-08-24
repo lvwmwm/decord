@@ -1,17 +1,15 @@
-// Module ID: 4659
-// Function ID: 4660
+// Module ID: 4666
+// Function ID: 4667
 // Name: markAccessibilityFocus
-// Dependencies: [17, 500, 2]
+// Dependencies: [4665, 2]
 // Exports: default
 
-// Module 4659 (markAccessibilityFocus)
-import { NativeModules } from "get ActivityIndicator";
+// Module 4666 (markAccessibilityFocus)
+import set from "set" /* 2 */;
+import enforcingDefault from "enforcing" /* 4665 */;
 
-const result = require("set").fileFinishedImporting("modules/a11y/native/markAccessibilityFocus.tsx");
+const result = set.fileFinishedImporting("modules/a11y/native/markAccessibilityFocus.tsx");
 
 export default function markAccessibilityFocus() {
-  if (obj.isIOS()) {
-    const DCDAccessibilityManager = NativeModules.DCDAccessibilityManager;
-    DCDAccessibilityManager.markCurrentFocus();
-  }
+  enforcingDefault.markCurrentFocus();
 };

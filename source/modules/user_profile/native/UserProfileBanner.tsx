@@ -1,32 +1,23 @@
-// Module ID: 8987
-// Function ID: 8988
+// Module ID: 9024
+// Function ID: 9025
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 676, 21, 4661, 4066, 8412, 1435, 8988, 5433, 1236, 8989, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4668, 4069, 8451, 1435, 9025, 5438, 1236, 9026, 2]
 // Exports: default
 
-// Module 8987 (UserProfileBanner)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { BANNER_HEIGHT } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9024 (UserProfileBanner)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { BANNER_HEIGHT } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ bannerContainer: { position: "relative" }, gifTag: { position: "absolute", left: 12, top: 12, right: "auto", bottom: "auto" } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileBanner.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileBanner.tsx");
 
 export default function UserProfileBanner(displayProfile) {
-  let View;
-  let bannerSafeArea;
-  let noop;
-  let disableInteraction;
-  let importDefault;
-  let pendingAvatarSrc;
-  let pendingBanner;
   displayProfile = displayProfile.displayProfile;
   ({ style: importDefault, bannerSafeArea } = displayProfile);
   if (bannerSafeArea === undefined) {
@@ -36,13 +27,13 @@ export default function UserProfileBanner(displayProfile) {
   if (bannerHeight === undefined) {
     bannerHeight = first;
   }
-  ({ pendingBanner, pendingAccentColor: noop, pendingThemeColors: View, disableInteraction, pendingAvatarSrc } = displayProfile);
+  ({ pendingBanner, pendingAccentColor: closure_4, pendingThemeColors: View, disableInteraction, pendingAvatarSrc } = displayProfile);
   if (disableInteraction === undefined) {
     disableInteraction = false;
   }
   first = undefined;
-  let closure_7;
-  let closure_8;
+  closure_7 = undefined;
+  closure_8 = undefined;
   let source;
   const tmp = source();
   const GifAutoPlay = displayProfile(bannerSafeArea[6]).GifAutoPlay;
@@ -82,12 +73,12 @@ export default function UserProfileBanner(displayProfile) {
   }
   function renderBanner() {
     const obj = { style: closure_1, bannerSource: source, backgroundColor: null, bannerSafeArea: null, bannerHeight: null };
-    let first;
+    first = undefined;
     if (table != null) {
       first = table[0];
     }
     if (first == null) {
-      first = noop;
+      first = closure_4;
     }
     if (first == null) {
       let primaryColor;
@@ -106,9 +97,9 @@ export default function UserProfileBanner(displayProfile) {
     if (displayProfile != null) {
       banner = displayProfile.banner;
     }
-    return closure_7(outer1_1(bannerSafeArea[9]), obj, banner);
+    return closure_7(closure_1_1(bannerSafeArea[9]), obj, banner);
   }
-  const obj1 = { style: tmp.bannerContainer, children: null };
+  obj1 = { style: tmp.bannerContainer, children: null };
   if (tmp2Result1.isAnimatedImageURL(bannerURL)) {
     if (!setting) {
       if (!disableInteraction) {

@@ -1,32 +1,37 @@
-// Module ID: 15346
-// Function ID: 15347
+// Module ID: 15410
+// Function ID: 15411
 // Name: TypingIndicator
-// Dependencies: [19, 17, 21, 4661, 712, 4310, 1363, 1297, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4314, 1363, 1297, 2]
 // Exports: TypingIndicator
 
-// Module 15346 (TypingIndicator)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15410 (TypingIndicator)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_5 = createCacheKey.createStyles((arg0) => {
   let obj = { ellipsisWrapper: null, ellipsis: null, ellipsisDot: null };
-  obj = { zIndex: 10, borderRadius: 17, borderWidth: 2, borderColor: importDefault(712).colors.BACKGROUND_BASE_LOW };
+  obj = { zIndex: 10, borderRadius: 17, borderWidth: 2, borderColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
   obj[0] = obj;
-  const unsafe_rawColors = importDefault(712).unsafe_rawColors;
+  const unsafe_rawColors = ThemesDefault.unsafe_rawColors;
   obj[1] = { borderRadius: 13, paddingVertical: 4, paddingStart: 4, paddingEnd: 2, marginRight: 0, backgroundColor: arg0 ? unsafe_rawColors.BRAND_200 : unsafe_rawColors.BRAND_500 };
-  const unsafe_rawColors2 = importDefault(712).unsafe_rawColors;
+  const unsafe_rawColors2 = ThemesDefault.unsafe_rawColors;
   obj[2] = { width: 4, height: 4, backgroundColor: arg0 ? unsafe_rawColors2.BRAND_500 : unsafe_rawColors2.WHITE };
   return obj;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/typing_indicators/TypingIndicator.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/typing_indicators/TypingIndicator.tsx");
 
 export const TypingIndicator = function TypingIndicator(style) {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
-  const tmp2 = callback(obj.isThemeLight(importDefault(4310)()));
-  obj = { style: items, children: jsx(require(1297) /* Button */.Ellipsis, obj) };
+  let obj = AccessibilityAnnouncer;
+  const tmp2 = callback(obj.isThemeLight(useThemeDefault()));
+  obj = { style: items, children: jsx(Button.Ellipsis, obj) };
   items = [tmp2.ellipsisWrapper, style.style];
   obj = { style: items1, dotStyle: tmp2.ellipsisDot, disableScale: true };
   items1 = [tmp2.ellipsis];

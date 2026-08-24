@@ -1,48 +1,43 @@
-// Module ID: 14658
-// Function ID: 14659
+// Module ID: 14726
+// Function ID: 14727
 // Name: CircleMinusIcon
-// Dependencies: [19, 17, 21, 712, 4096, 14659, 14660, 2]
+// Dependencies: [19, 17, 21, 712, 4099, 14727, 14728, 2]
 // Exports: CircleMinusIcon
 
-// Module 14658 (CircleMinusIcon)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
+// Module 14726 (CircleMinusIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import BaseIconImage from "BaseIconImage" /* 4099 */;
+import registerAsset from "registerAsset" /* 14727 */;
+import registerAsset2 from "registerAsset" /* 14728 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
-const result = require("jsxProd").fileFinishedImporting("design/components/Icon/native/redesign/generated/CircleMinusIcon.tsx");
+const result = require("set").fileFinishedImporting("design/components/Icon/native/redesign/generated/CircleMinusIcon.tsx");
 
 export const CircleMinusIcon = function CircleMinusIcon(color) {
-  let secondaryColor;
-  let style;
   ({ style, secondaryColor } = color);
   if (secondaryColor === undefined) {
     secondaryColor = "transparent";
   }
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = ThemesDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.create(null));
   let obj = { children: null };
-  obj = { source: null, color: null, style: null };
-  obj[0] = require(14659) /* registerAsset */;
-  obj[1] = secondaryColor;
-  obj[2] = style;
+  obj = { source: registerAsset, color: secondaryColor, style };
   const merged1 = Object.assign(merged);
-  const items = [callback(require(4096) /* BaseIconImage */.BaseIconImage, obj), ];
-  obj = { source: null, color: null, style: null };
-  obj[0] = require(14660) /* registerAsset */;
-  obj[1] = INTERACTIVE_ICON_DEFAULT;
+  const items = [callback(BaseIconImage.BaseIconImage, obj), ];
+  obj = { source: registerAsset2, color: INTERACTIVE_ICON_DEFAULT, style: items2 };
   const items1 = [style];
-  const items2 = [];
+  items2 = [];
   items2[HermesBuiltin.arraySpread(items1.flat(), 0)] = { position: "absolute", top: 0 };
-  obj[2] = items2;
   const merged2 = Object.assign(merged);
-  items[1] = callback(require(4096) /* BaseIconImage */.BaseIconImage, obj);
+  items[1] = callback(BaseIconImage.BaseIconImage, obj);
   obj[0] = items;
   return callback2(View, obj);
 };

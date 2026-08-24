@@ -1,20 +1,21 @@
-// Module ID: 7873
-// Function ID: 7874
+// Module ID: 7912
+// Function ID: 7913
 // Name: getApplicationFlags
-// Dependencies: [4479, 506, 2]
+// Dependencies: [4483, 506, 2]
 // Exports: hasApplicationFlag
 
-// Module 7873 (getApplicationFlags)
-import createExecutable from "createExecutable";
+// Module 7912 (getApplicationFlags)
+import fromStringAll from "fromString" /* 506 */;
+import closure_2 from "createExecutable" /* 4483 */;
 
 function getApplicationFlags(application) {
   if (null == application) {
-    let flags = importAll(506).deserialize(0);
-    const obj2 = importAll(506);
+    let flags = fromStringAll.deserialize(0);
+    const obj2 = fromStringAll;
   } else {
     let tmp5 = null != application;
     if (tmp5) {
-      let tmp2 = application instanceof createExecutable;
+      let tmp2 = application instanceof closure_2;
       if (!tmp2) {
         tmp2 = "flags" in application && typeof application.flags === "bigint";
         const tmp3 = "flags" in application && typeof application.flags === "bigint";
@@ -38,8 +39,8 @@ function getApplicationFlags(application) {
       if (num == null) {
         num = 0;
       }
-      flags = importAll(506).deserialize(num);
-      const obj = importAll(506);
+      flags = fromStringAll.deserialize(num);
+      const obj = fromStringAll;
     }
   }
   return flags;
@@ -48,5 +49,5 @@ const result = require("set").fileFinishedImporting("modules/applications/utils/
 
 export { getApplicationFlags };
 export const hasApplicationFlag = function hasApplicationFlag(application, EMBEDDED) {
-  return importAll(506).has(getApplicationFlags(application), EMBEDDED);
+  return fromStringAll.has(getApplicationFlags(application), EMBEDDED);
 };

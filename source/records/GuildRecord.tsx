@@ -5,16 +5,14 @@
 // Exports: getGuildAcronym, getGuildEveryoneRoleId, getGuildIconSource, getGuildIconURL, isGuildLurker, isGuildNSFW, isGuildOwner, isGuildOwnerWithRequiredMfaLevel, updateGameApplications, updateJoinedAt
 
 // Module 1434 (GuildNSFWContentLevel)
-import isValueEqual from "isValueEqual";
-import ME from "ME";
-import set from "getAvatarURL";
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import isNullOrEmpty from "isNullOrEmpty" /* 1903 */;
+import apexExperiment from "apexExperiment" /* 1907 */;
+import isValueEqual from "isValueEqual" /* 1431 */;
+import ME from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-let BoostedGuildTiers;
-let GuildExplicitContentFilterTypes;
-let TypeTag;
-let UserNotificationSettings;
-let VerificationLevels;
-let c3;
 ({ set: c3, TypeTag } = isValueEqual);
 const GuildNSFWContentLevel = ME.GuildNSFWContentLevel;
 const MFALevels = ME.MFALevels;
@@ -22,8 +20,7 @@ const items = [, ];
 ({ EXPLICIT: arr[0], AGE_RESTRICTED: arr[1] } = GuildNSFWContentLevel);
 ({ BoostedGuildTiers, GuildExplicitContentFilterTypes, UserNotificationSettings, VerificationLevels } = ME);
 let set = new Set(items);
-let obj = { mfaLevel: MFALevels.NONE, preferredLocale: "en-US", afkTimeout: 0, defaultMessageNotifications: UserNotificationSettings.ALL_MESSAGES, verificationLevel: VerificationLevels.NONE, explicitContentFilter: GuildExplicitContentFilterTypes.DISABLED, premiumProgressBarEnabled: false, premiumProgressBarEnabledUserUpdatedAt: null, systemChannelFlags: 0, maxStageVideoChannelUsers: -1, maxVideoChannelUsers: -1, maxMembers: -1, premiumTier: BoostedGuildTiers.NONE, nsfwLevel: GuildNSFWContentLevel.DEFAULT, premiumSubscriberCount: 0, features: null, description: null, icon: null, ownerId: null, systemChannelId: null, joinedAt: null, discoverySplash: null, splash: null, banner: null, homeHeader: null, afkChannelId: null, application_id: null, vanityURLCode: null, rulesChannelId: null, safetyAlertsChannelId: null, publicUpdatesChannelId: null, ownerConfiguredContentLevel: null, hubType: null, latestOnboardingQuestionId: null, profile: null, guildTheme: null, premiumFeatures: null, moderatorReporting: null, guildSpaceSettings: null, verificationRoleId: null, gameApplicationIds: null, officialMessageColor: null, incidentsData: null };
-obj[15] = new Set();
+let obj = { mfaLevel: MFALevels.NONE, preferredLocale: "en-US", afkTimeout: 0, defaultMessageNotifications: UserNotificationSettings.ALL_MESSAGES, verificationLevel: VerificationLevels.NONE, explicitContentFilter: GuildExplicitContentFilterTypes.DISABLED, premiumProgressBarEnabled: false, premiumProgressBarEnabledUserUpdatedAt: null, systemChannelFlags: 0, maxStageVideoChannelUsers: -1, maxVideoChannelUsers: -1, maxMembers: -1, premiumTier: BoostedGuildTiers.NONE, nsfwLevel: GuildNSFWContentLevel.DEFAULT, premiumSubscriberCount: 0, features: new Set(), description: null, icon: null, ownerId: null, systemChannelId: null, joinedAt: null, discoverySplash: null, splash: null, banner: null, homeHeader: null, afkChannelId: null, application_id: null, vanityURLCode: null, rulesChannelId: null, safetyAlertsChannelId: null, publicUpdatesChannelId: null, ownerConfiguredContentLevel: null, hubType: null, latestOnboardingQuestionId: null, profile: null, guildTheme: null, premiumFeatures: null, moderatorReporting: null, guildSpaceSettings: null, verificationRoleId: null, gameApplicationIds: null, officialMessageColor: null, incidentsData: null };
 const frozen = Object.freeze(obj);
 const result = set.fileFinishedImporting("records/GuildRecord.tsx");
 
@@ -39,24 +36,24 @@ export const getGuildIconURL = function getGuildIconURL(id, size) {
   if (arg3 === undefined) {
     flag2 = false;
   }
-  let obj = importDefault(1435);
+  let obj = getAvatarURLDefault;
   obj = { id: id.id, size, icon: id.icon, canAnimate: flag, lossless: flag2 };
   return obj.getGuildIconURL(obj);
 };
 export const getGuildIconSource = function getGuildIconSource(arg0, arg1, flag) {
-  let closure_0 = arg0;
-  const importDefault = arg1;
+  closure_0 = arg0;
+  importDefault = arg1;
   if (flag === undefined) {
     flag = false;
   }
-  return importDefault(1435).getAnimatableSourceWithFallback(flag, (canAnimate) => {
-    let obj = callback(outer1_2[2]);
+  return getAvatarURLDefault.getAnimatableSourceWithFallback(flag, (canAnimate) => {
+    let obj = callback(closure_1_2[2]);
     obj = { id: closure_0.id, size: callback, icon: closure_0.icon, canAnimate };
     return obj.getGuildIconSource(obj);
   });
 };
 export const getGuildAcronym = function getGuildAcronym(guild) {
-  return require(1903) /* isNullOrEmpty */.getAcronym(guild.name);
+  return isNullOrEmpty.getAcronym(guild.name);
 };
 export const isGuildOwner = function isGuildOwner(guild, currentUser) {
   let tmp = currentUser;
@@ -93,7 +90,7 @@ export const isGuildLurker = function isGuildLurker(guild) {
   return null == guild.joinedAt;
 };
 export const getGuildEveryoneRoleId = function getGuildEveryoneRoleId(closure_7) {
-  return importDefault(11).castGuildIdAsEveryoneGuildRoleId(closure_7.id);
+  return DISCORD_EPOCHDefault.castGuildIdAsEveryoneGuildRoleId(closure_7.id);
 };
 export const updateJoinedAt = function updateJoinedAt(guild, joinedAt) {
   let date = joinedAt;
@@ -122,6 +119,6 @@ export const isGuildNSFW = function isGuildNSFW(guild) {
       }
       hasItem = has(DEFAULT);
     }
-    obj = require(1907) /* apexExperiment */;
+    obj = apexExperiment;
   }
 };

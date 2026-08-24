@@ -1,24 +1,24 @@
-// Module ID: 13439
-// Function ID: 13440
+// Module ID: 13497
+// Function ID: 13498
 // Name: _openActivityDMLauncher
-// Dependencies: [5, 1499, 7140, 4770, 12411, 8746, 7159, 5248, 4237, 1627, 2]
+// Dependencies: [5, 1499, 7178, 4775, 12463, 8783, 7197, 5253, 4241, 1627, 2]
 // Exports: default
 
-// Module 13439 (_openActivityDMLauncher)
-import _handleUsePrimaryEntryPointAppCommand from "_handleUsePrimaryEntryPointAppCommand";
-import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
+// Module 13497 (_openActivityDMLauncher)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
 
 const require = arg1;
 function _openActivityDMLauncher() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2, arg3) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let _handleUsePrimaryEntryPointAppCommand = arg3;
-    let closure_4 = arg4;
-    let c7 = 0;
-    let c8 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    closure_3 = arg3;
+    closure_4 = arg4;
+    c7 = 0;
+    c8 = 0;
     const iter = (function*(arg0, customId) {
       if (customId === 2) {
         customId = 3;
@@ -31,7 +31,7 @@ function _openActivityDMLauncher() {
           obj[0] = customId;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -66,14 +66,14 @@ function _openActivityDMLauncher() {
               throw customId;
             } else if (arg0 === 2) {
               customId = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = customId;
               return obj1;
             } else {
               c7 = 2;
               customId = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = callback2(7140).fetchApplication(callback);
+              obj2[0] = callback2(7178).fetchApplication(callback);
               return obj2;
             }
           } else {
@@ -95,7 +95,7 @@ function _openActivityDMLauncher() {
                 }
                 if (null != bot) {
                   if (null != id) {
-                    let obj9 = callback2(4770);
+                    let obj9 = callback2(4775);
                     const obj4 = { recipientIds: null };
                     obj4[0] = id;
                     c7 = 3;
@@ -118,11 +118,11 @@ function _openActivityDMLauncher() {
                 return obj6;
               } else {
                 c7 = customId;
-                obj6 = callback(12411);
+                obj6 = callback(12463);
                 c7 = 4;
                 customId = 1;
                 const obj7 = { value: null, done: false };
-                obj7[0] = obj6.getCustomActivityLinkParams(callback, _handleUsePrimaryEntryPointAppCommand, dependencyMap);
+                obj7[0] = obj6.getCustomActivityLinkParams(callback, closure_3, dependencyMap);
                 return obj7;
               }
             } else if (4 === tmp5) {
@@ -132,7 +132,7 @@ function _openActivityDMLauncher() {
               } else if (arg0 !== 2) {
                 customId = customId.customId;
                 if (flag) {
-                  obj3 = callback(4237);
+                  obj3 = callback(4241);
                   const bestActiveInput = obj3.getBestActiveInput();
                   if (bestActiveInput != null) {
                     const obj8 = { type: null, context: null };
@@ -150,15 +150,15 @@ function _openActivityDMLauncher() {
                   obj10[0] = callback;
                   obj10[1] = {};
                   obj10[2] = c7;
-                  const items = [callback2(7159).ACTIVITY_BOOKMARK];
+                  const items = [callback2(7197).ACTIVITY_BOOKMARK];
                   obj10[3] = items;
-                  obj10[4] = callback(5248).CommandOrigin.ACTIVITY_BOOKMARK_EMBED;
+                  obj10[4] = callback(5253).CommandOrigin.ACTIVITY_BOOKMARK_EMBED;
                   obj10[5] = callback2;
                   obj10[6] = customId;
                   c7 = 5;
                   customId = 1;
                   const obj11 = { value: null, done: false };
-                  obj11[0] = callback2(8746)(obj10);
+                  obj11[0] = callback2(8783)(obj10);
                   return obj11;
                 }
               }
@@ -185,7 +185,7 @@ function _openActivityDMLauncher() {
     iter.next();
     return iter;
   });
-  const _openActivityDMLauncher = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -194,7 +194,7 @@ function _openActivityDMLauncher() {
   }
   return applyArgumentsResult;
 }
-const result = require("fetchApplication").fileFinishedImporting("modules/activities/native/openActivityDMLauncher.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/native/openActivityDMLauncher.tsx");
 
 export default function openActivityDMLauncher() {
   const self = this;

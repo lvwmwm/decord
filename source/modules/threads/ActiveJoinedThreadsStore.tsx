@@ -1,27 +1,31 @@
-// Module ID: 5251
-// Function ID: 5252
+// Module ID: 5256
+// Function ID: 5257
 // Name: rebuild
-// Dependencies: [1395, 1391, 1910, 4772, 1979, 4969, 4023, 1398, 11, 5252, 5269, 709, 12, 589, 2]
+// Dependencies: [1395, 1391, 1910, 4777, 1980, 4974, 4026, 1398, 11, 5257, 5274, 709, 12, 589, 2]
 
-// Module 5251 (rebuild)
-import createChannelRecord from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import handleConnectionOpen from "handleConnectionOpen";
-import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
-import storeThread from "storeThread";
-import { ChannelFlags } from "set";
-import { Store } from "initialize";
+// Module 5256 (rebuild)
+import set from "set" /* 2 */;
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import set2 from "set" /* 1398 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 5257 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5274 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_7 from "generateOldThreadCutoff" /* 4777 */;
+import closure_8 from "handleConnectionOpen" /* 1980 */;
+import closure_9 from "handleThreadCreateOrUpdate" /* 4974 */;
+import closure_10 from "storeThread" /* 4026 */;
 
-let c3;
-let c4;
 function rebuild() {
-  let closure_12 = {};
-  let closure_16 = {};
-  let closure_13 = {};
+  closure_12 = {};
+  closure_16 = {};
+  closure_13 = {};
   const dependencyMap3 = {};
-  let closure_15 = {};
+  closure_15 = {};
   const channelId = store3.getChannelId();
   for (const key10012 in closure_19) {
     let tmp4 = key10012;
@@ -31,10 +35,10 @@ function rebuild() {
     continue;
   }
   const dependencyMap7 = {};
-  handleThreadCreateOrUpdate.forEachGuild((arg0) => {
+  closure_9.forEachGuild((arg0) => {
     callback(arg0);
   });
-  let closure_17 = {};
+  closure_17 = {};
   for (const key10022 in closure_14) {
     let tmp7 = key10022;
     let tmp8 = dependencyMap3;
@@ -54,10 +58,7 @@ function rebuild() {
   }
 }
 function rebuildGuild_(guildId) {
-  let isRelevant;
-  let isTimedRelevant;
-  let isUnread;
-  const threadsForGuild = handleThreadCreateOrUpdate.getThreadsForGuild(guildId);
+  const threadsForGuild = closure_9.getThreadsForGuild(guildId);
   for (const key10011 in threadsForGuild) {
     let tmp52 = key10011;
     let keys = Object.keys();
@@ -80,10 +81,10 @@ function rebuildGuild_(guildId) {
         if (null == channel) {
           continue;
         } else {
-          let tmp12 = storeThread;
-          let joinTimestampResult = storeThread.joinTimestamp(tmp6);
+          let tmp12 = closure_10;
+          let joinTimestampResult = closure_10.joinTimestamp(tmp6);
           if (null != joinTimestampResult) {
-            let obj = { channel: null, joinTimestamp: null };
+            obj = { channel: null, joinTimestamp: null };
             obj[0] = channel;
             obj[1] = joinTimestampResult.getTime();
             let tmp25 = parseThreadState;
@@ -130,17 +131,16 @@ function rebuildGuild_(guildId) {
                 let tmp47 = dependencyMap7;
                 delete tmp2[tmp3];
               }
-              let require = channel;
               let tmp48 = dependencyMap7;
               let _setTimeout = setTimeout;
               let tmp49 = importDefault;
               let tmp50 = dependencyMap;
               let _Date = Date;
-              let tmp51 = importDefault(5269)(channel);
+              let tmp51 = getThreadAutoArchiveTimeOnceDefault(channel);
               dependencyMap7[channel.id] = setTimeout(() => {
-                channel = outer1_5.getChannel(channel.id);
+                channel = closure_1_5.getChannel(channel.id);
                 if (null != channel) {
-                  let obj = outer1_1(outer1_2[11]);
+                  obj = closure_1_1(closure_1_2[11]);
                   obj = { type: "THREAD_UPDATE", channel: null };
                   obj[1] = channel;
                   obj.dispatch(obj);
@@ -196,8 +196,8 @@ function recountParent(guild_id, id) {
               const _Date2 = Date;
               let timestamp = Date.now();
               if (null == guild.joinedAt) {
-                trackedAckMessageId = importDefault(11).fromTimestamp(timestamp);
-                const obj2 = importDefault(11);
+                trackedAckMessageId = DISCORD_EPOCHDefault.fromTimestamp(timestamp);
+                const obj2 = DISCORD_EPOCHDefault;
               } else {
                 const _Date = Date;
                 const joinedAt = guild.joinedAt;
@@ -227,7 +227,7 @@ function recountParent(guild_id, id) {
               } else {
                 let tmp12 = importDefault;
                 let tmp13 = dependencyMap;
-                let obj3 = importDefault(11);
+                let obj3 = DISCORD_EPOCHDefault;
                 let tmp14 = obj3.compare(key10034, trackedAckMessageId) > 0;
                 if (tmp14) {
                   let tmp15 = store2;
@@ -252,9 +252,6 @@ function recountParent(guild_id, id) {
   }
 }
 function updateThread(guild_id, parent_id, id) {
-  let isRelevant;
-  let isTimedRelevant;
-  let isUnread;
   if (null == parent_id) {
     return false;
   } else {
@@ -262,12 +259,12 @@ function updateThread(guild_id, parent_id, id) {
     clearTimeoutResult = id;
     clearTimeoutResult = store;
     let _Date = store.getChannel(id);
-    clearTimeoutResult = storeThread;
-    let joinTimestampResult = storeThread.joinTimestamp(id);
+    clearTimeoutResult = closure_10;
+    let joinTimestampResult = closure_10.joinTimestamp(id);
     if (null != _Date) {
-      if (handleThreadCreateOrUpdate.isActive(guild_id, parent_id, id)) {
+      if (closure_9.isActive(guild_id, parent_id, id)) {
         if (null != joinTimestampResult) {
-          let obj = { channel: null, joinTimestamp: null };
+          obj = { channel: null, joinTimestamp: null };
           obj[0] = _Date;
           obj[1] = joinTimestampResult.getTime();
           ({ isUnread, isRelevant, isTimedRelevant } = parseThreadState(_Date));
@@ -303,12 +300,12 @@ function updateThread(guild_id, parent_id, id) {
             const _setTimeout = setTimeout;
             clearTimeoutResult = importDefault;
             clearTimeoutResult = dependencyMap;
-            clearTimeoutResult = importDefault(5269)(_Date);
+            clearTimeoutResult = getThreadAutoArchiveTimeOnceDefault(_Date);
             _Date = Date;
             dependencyMap7[_Date.id] = setTimeout(() => {
-              channel = outer1_5.getChannel(channel.id);
+              channel = closure_1_5.getChannel(channel.id);
               if (null != channel) {
-                let obj = outer1_1(outer1_2[11]);
+                obj = closure_1_1(closure_1_2[11]);
                 obj = { type: "THREAD_UPDATE", channel: null };
                 obj[1] = channel;
                 obj.dispatch(obj);
@@ -364,7 +361,7 @@ function updateThread(guild_id, parent_id, id) {
       obj[parent_id] = obj;
       tmp7[guild_id] = obj;
       delete tmp5[tmp4];
-      let obj2 = importDefault(12);
+      let obj2 = applyDefault;
       if (obj2.isEmpty(tmp7[guild_id][parent_id])) {
         delete tmp2[tmp];
       }
@@ -375,14 +372,14 @@ function updateThread(guild_id, parent_id, id) {
       const tmp20 = guild_id in tmp18 && parent_id in tmp18[guild_id] && id in tmp18[guild_id][parent_id];
     }
     if (tmp19) {
-      const obj1 = {};
+      obj1 = {};
       const merged2 = Object.assign(tmp18[guild_id]);
       obj2 = {};
       const merged3 = Object.assign(tmp18[guild_id][parent_id]);
       obj1[parent_id] = obj2;
       tmp18[guild_id] = obj1;
       delete tmp5[tmp4];
-      let obj5 = importDefault(12);
+      let obj5 = applyDefault;
       if (obj5.isEmpty(tmp18[guild_id][parent_id])) {
         delete tmp2[tmp];
       }
@@ -400,7 +397,7 @@ function updateThread(guild_id, parent_id, id) {
       obj3[parent_id] = obj4;
       tmp29[guild_id] = obj3;
       delete tmp5[tmp4];
-      let obj8 = importDefault(12);
+      let obj8 = applyDefault;
       if (obj8.isEmpty(tmp29[guild_id][parent_id])) {
         delete tmp2[tmp];
       }
@@ -421,7 +418,7 @@ function updateThread(guild_id, parent_id, id) {
       if (obj12.isEmpty(tmp40[guild_id][parent_id])) {
         delete tmp2[tmp];
       }
-      obj12 = importDefault(12);
+      obj12 = applyDefault;
     }
     let tmp52 = null != guild_id && null != parent_id && null != id;
     if (tmp52) {
@@ -439,7 +436,7 @@ function updateThread(guild_id, parent_id, id) {
       if (obj15.isEmpty(tmp51[guild_id][parent_id])) {
         delete tmp2[tmp];
       }
-      obj15 = importDefault(12);
+      obj15 = applyDefault;
     }
     if (id in dependencyMap7) {
       const _clearTimeout = clearTimeout;
@@ -465,7 +462,7 @@ function anyThreadsNSFW(guild_id, parent_id) {
         let tmp10 = key10006;
         let tmp11 = require;
         let tmp12 = dependencyMap;
-        let obj = require(5252) /* shouldShowAgeGateForVoiceChannel */;
+        obj = shouldShowAgeGateForVoiceChannel;
         if (!obj.isChannelContentGated(tmp[key10006].channel)) {
           continue;
         } else {
@@ -483,7 +480,7 @@ function anyThreadsNSFW(guild_id, parent_id) {
         let tmp13 = key10015;
         let tmp14 = require;
         let tmp15 = dependencyMap;
-        let obj2 = require(5252) /* shouldShowAgeGateForVoiceChannel */;
+        let obj2 = shouldShowAgeGateForVoiceChannel;
         if (!obj2.isChannelContentGated(tmp5[key10015])) {
           continue;
         } else {
@@ -499,7 +496,7 @@ function handleThreadMemberUpdate(id) {
   const channel = store.getChannel(id.id);
   let tmp2 = null == channel;
   if (!tmp2) {
-    tmp2 = !handleThreadCreateOrUpdate.isActive(id.guildId, channel.parent_id, id.id);
+    tmp2 = !closure_9.isActive(id.guildId, channel.parent_id, id.id);
   }
   let tmp4 = !tmp2;
   if (!tmp2) {
@@ -508,19 +505,7 @@ function handleThreadMemberUpdate(id) {
   return tmp4;
 }
 function handleReadStateChannelAction(channelId) {
-  let guild_id;
-  let guild_id2;
-  let guild_id3;
-  let guild_id4;
-  let guild_id5;
-  let isRelevant;
-  let isUnread;
-  let parent_id;
-  let parent_id2;
-  let parent_id3;
-  let parent_id4;
-  let parent_id5;
-  let channel = store.getChannel(channelId.channelId);
+  const channel = store.getChannel(channelId.channelId);
   if (null == channel) {
     rebuildReadStates();
   } else {
@@ -550,15 +535,15 @@ function handleReadStateChannelAction(channelId) {
             const _setTimeout = setTimeout;
             const _Date = Date;
             dependencyMap7[channel.id] = setTimeout(() => {
-              channel = outer1_5.getChannel(channel.id);
+              channel = closure_1_5.getChannel(channel.id);
               if (null != channel) {
-                let obj = outer1_1(outer1_2[11]);
+                obj = closure_1_1(closure_1_2[11]);
                 obj = { type: "THREAD_UPDATE", channel: null };
                 obj[1] = channel;
                 obj.dispatch(obj);
               }
-            }, importDefault(5269)(channel) - Date.now() + 1);
-            const tmp33 = importDefault(5269)(channel);
+            }, getThreadAutoArchiveTimeOnceDefault(channel) - Date.now() + 1);
+            const tmp33 = getThreadAutoArchiveTimeOnceDefault(channel);
           }
           ({ guild_id: guild_id2, parent_id: parent_id2 } = channel);
           let tmp35 = guild_id2 in closure_13;
@@ -629,10 +614,8 @@ function handleReadStateChannelAction(channelId) {
   }
 }
 function rebuildReadStates() {
-  let isRelevant;
-  let isTimedRelevant;
-  let closure_13 = {};
-  let closure_16 = {};
+  closure_13 = {};
+  closure_16 = {};
   for (const key10008 in closure_12) {
     let tmp31 = key10008;
     let tmp32 = dependencyMap;
@@ -685,17 +668,16 @@ function rebuildReadStates() {
             if (!isTimedRelevant) {
               continue;
             } else {
-              let require = channel;
               let tmp19 = dependencyMap7;
               let _setTimeout = setTimeout;
               let tmp20 = importDefault;
               let tmp21 = dependencyMap;
               let _Date = Date;
-              let tmp22 = importDefault(5269)(channel);
+              let tmp22 = getThreadAutoArchiveTimeOnceDefault(channel);
               dependencyMap7[channel.id] = setTimeout(() => {
-                channel = outer1_5.getChannel(channel.id);
+                channel = closure_1_5.getChannel(channel.id);
                 if (null != channel) {
-                  let obj = outer1_1(outer1_2[11]);
+                  obj = closure_1_1(closure_1_2[11]);
                   obj = { type: "THREAD_UPDATE", channel: null };
                   obj[1] = channel;
                   obj.dispatch(obj);
@@ -711,7 +693,7 @@ function rebuildReadStates() {
     }
     continue;
   }
-  let closure_15 = {};
+  closure_15 = {};
   for (const key10052 in closure_14) {
     let tmp42 = key10052;
     let tmp43 = dependencyMap3;
@@ -753,7 +735,7 @@ function rebuildReadStates() {
     }
     continue;
   }
-  let closure_17 = {};
+  closure_17 = {};
   for (const key10065 in closure_14) {
     let tmp52 = key10065;
     let tmp53 = dependencyMap3;
@@ -800,15 +782,15 @@ function parseThreadState(channel) {
   const tmp = store2.getMentionCount(channel.id) > 0;
   let hasUnreadResult = store2.hasUnread(channel.id);
   if (hasUnreadResult) {
-    hasUnreadResult = !storeThread.isMuted(channel.id);
+    hasUnreadResult = !closure_10.isMuted(channel.id);
   }
   const hasFlagResult = channel.hasFlag(ChannelFlags.PINNED);
   const isActiveThreadResult = channel.isActiveThread();
   let tmp6 = isActiveThreadResult;
   if (isActiveThreadResult) {
     const _Date = Date;
-    tmp6 = importDefault(5269)(channel) > Date.now();
-    const tmp9 = importDefault(5269)(channel);
+    tmp6 = getThreadAutoArchiveTimeOnceDefault(channel) > Date.now();
+    const tmp9 = getThreadAutoArchiveTimeOnceDefault(channel);
   }
   let tmp12 = isActiveThreadResult;
   const voiceChannelId = store3.getVoiceChannelId();
@@ -821,7 +803,7 @@ function parseThreadState(channel) {
   if (!tmp12) {
     tmp12 = tmp;
   }
-  const obj = { isUnread: tmp12, isRelevant: null, isTimedRelevant: null };
+  obj = { isUnread: tmp12, isRelevant: null, isTimedRelevant: null };
   let tmp13 = tmp6;
   if (!tmp6) {
     tmp13 = hasFlagResult;
@@ -847,9 +829,6 @@ function clearTimer(arg0) {
   }
 }
 function updateIn(closure_12, _Date, _Date2, arg3) {
-  let guild_id;
-  let id;
-  let parent_id;
   ({ guild_id, parent_id, id } = _Date);
   if (tmp5) {
     if (!(guild_id in closure_12)) {
@@ -859,7 +838,7 @@ function updateIn(closure_12, _Date, _Date2, arg3) {
       closure_12[guild_id][parent_id] = {};
     }
     if (arg3) {
-      let obj = {};
+      obj = {};
       const merged = Object.assign(closure_12[guild_id]);
       obj = {};
       const merged1 = Object.assign(closure_12[guild_id][parent_id]);
@@ -871,13 +850,14 @@ function updateIn(closure_12, _Date, _Date2, arg3) {
       if (obj3.isEmpty(closure_12[guild_id][parent_id])) {
         delete tmp[tmp2];
       }
-      obj3 = importDefault(12);
+      obj3 = applyDefault;
     } else {
       closure_12[guild_id][parent_id][id] = _Date2;
     }
   }
 }
 ({ THREADED_CHANNEL_TYPES: c3, THREAD_CHANNEL_TYPES: c4 } = createChannelRecord);
+const ChannelFlags = set2.ChannelFlags;
 let closure_12 = {};
 let closure_13 = {};
 let closure_14 = {};
@@ -891,12 +871,13 @@ let closure_32 = {};
 let closure_33 = {};
 let closure_34 = {};
 let closure_35 = {};
+const Store = initializeDefault.Store;
 class ActiveJoinedThreadsStore extends Store {
 }
 const prototype = ActiveJoinedThreadsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(handleThreadCreateOrUpdate, ensureGuildLoaded, createGuildRecordFromRust, storeThread, generateOldThreadCutoff, handleConnectionOpen);
-  const items = [handleConnectionOpen];
+  this.waitFor(closure_9, closure_5, closure_6, closure_10, closure_7, closure_8);
+  const items = [closure_8];
   this.syncWith(items, updateSelectedChannel);
 };
 prototype["hasActiveJoinedUnreadThreads"] = function hasActiveJoinedUnreadThreads(arg0, arg1) {
@@ -1042,7 +1023,7 @@ prototype["getNewThreadCount"] = function getNewThreadCount(arg0, arg1) {
   return num;
 };
 prototype["getActiveThreadCount"] = function getActiveThreadCount(arg0, arg1) {
-  let obj = importDefault(12);
+  obj = applyDefault;
   obj = undefined;
   if (dependencyMap[arg0] != null) {
     obj = tmp3[arg1];
@@ -1059,7 +1040,7 @@ prototype["getActiveThreadCount"] = function getActiveThreadCount(arg0, arg1) {
   if (obj == null) {
     obj = {};
   }
-  return sizeResult + importDefault(12).size(obj);
+  return sizeResult + applyDefault.size(obj);
 };
 ActiveJoinedThreadsStore.displayName = "ActiveJoinedThreadsStore";
 obj = {
@@ -1122,7 +1103,7 @@ obj = {
     while (iter !== undefined) {
       let tmp2 = require;
       let tmp3 = dependencyMap;
-      let obj = require(5252) /* shouldShowAgeGateForVoiceChannel */;
+      obj = shouldShowAgeGateForVoiceChannel;
       let tmp5 = anyThreadsNSFW;
       let result = obj.isChannelContentGated(nextResult);
       if (result !== anyThreadsNSFW(nextResult.guild_id, nextResult.parent_id)) {
@@ -1162,12 +1143,12 @@ obj = {
         tmp15 = channel.parent_id in dependencyMap5[channel.guild_id];
       }
       if (tmp15) {
-        const keys = importDefault(11).keys(dependencyMap5[channel.guild_id][channel.parent_id]);
+        const keys = DISCORD_EPOCHDefault.keys(dependencyMap5[channel.guild_id][channel.parent_id]);
         const item = keys.forEach(clearTimer);
         const parent_id3 = channel.parent_id;
         delete tmp2[tmp];
         flag2 = true;
-        const obj = importDefault(11);
+        obj = DISCORD_EPOCHDefault;
       }
       let tmp25 = channel.guild_id in dependencyMap3;
       if (tmp25) {
@@ -1224,7 +1205,7 @@ obj = {
       if (hasItem1) {
         recountParent(basicChannel1.guild_id, basicChannel1.id);
       }
-      const obj = store;
+      obj = store;
     }
   },
   PASSIVE_UPDATE_V2: function handlePassiveUpdateV2(channels) {
@@ -1257,8 +1238,8 @@ obj = {
   TRY_ACK: rebuildReadStates,
   BULK_ACK: rebuildReadStates
 };
-const activeJoinedThreadsStore = new ActiveJoinedThreadsStore(require("dispatcher"), obj);
-let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/threads/ActiveJoinedThreadsStore.tsx");
+const activeJoinedThreadsStore = new ActiveJoinedThreadsStore(dispatcherDefault, obj);
+let result = set.fileFinishedImporting("modules/threads/ActiveJoinedThreadsStore.tsx");
 
 export default activeJoinedThreadsStore;
 export const NO_GUILD_JOINED_THREADS = obj;

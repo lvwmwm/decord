@@ -1,10 +1,10 @@
-// Module ID: 9846
-// Function ID: 9847
+// Module ID: 9885
+// Function ID: 9886
 // Name: set
 // Dependencies: [2]
 
-// Module 9846 (set)
-import set from "set";
+// Module 9885 (set)
+import set from "set" /* 2 */;
 
 const obj = { ALL: null };
 let set = new Set(["CREATE_NEW_CALL", "TRANSFER_EXISTING_CALL"]);

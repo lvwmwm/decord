@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 225 (FileReaderModule)
+import getAll from "get" /* 30 */;
 
-export default require("get").getEnforcing("FileReaderModule");
+
+export default getAll.getEnforcing("FileReaderModule");

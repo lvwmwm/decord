@@ -1,30 +1,34 @@
-// Module ID: 11328
-// Function ID: 11329
+// Module ID: 11379
+// Function ID: 11380
 // Name: CommandListSortActionSheet
-// Dependencies: [19, 11313, 21, 1236, 6950, 6949, 11329, 712, 8101, 8100, 2]
+// Dependencies: [19, 11364, 21, 1236, 6988, 6987, 11380, 712, 8140, 8139, 2]
 // Exports: default
 
-// Module 11328 (CommandListSortActionSheet)
-import "noop";
-import { CommandListSortOrder } from "CommandListSortOrder";
-import { jsx } from "jsxProd";
+// Module 11379 (CommandListSortActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
+import Background from "Background" /* 6988 */;
+import context from "context" /* 8140 */;
+import ArrowsUpDownIcon from "ArrowsUpDownIcon" /* 11380 */;
+import { CommandListSortOrder } from "CommandListSortOrder" /* 11364 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/sort/CommandListSortActionSheet.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/sort/CommandListSortActionSheet.tsx");
 
 export default function CommandListSortActionSheet(sortOrder) {
-  let importDefault;
-  let require;
   ({ onClose: require, onSortOptionPress: importDefault } = sortOrder);
   let obj = { startExpanded: true, header: null, children: null };
   obj = { leading: null, title: null };
-  obj = { size: "sm", color: null };
-  obj[1] = importDefault(712).colors.TEXT_DEFAULT;
-  obj[0] = jsx(require(11329) /* ArrowsUpDownIcon */.ArrowsUpDownIcon, { size: "sm", color: null });
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.yeYaHf);
-  obj[1] = jsx(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { size: "sm", color: null });
-  const obj1 = {
+  obj = { size: "sm", color: ThemesDefault.colors.TEXT_DEFAULT };
+  obj[0] = jsx(ArrowsUpDownIcon.ArrowsUpDownIcon, { size: "sm", color: ThemesDefault.colors.TEXT_DEFAULT });
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t.yeYaHf);
+  obj[1] = jsx(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, { size: "sm", color: ThemesDefault.colors.TEXT_DEFAULT });
+  obj1 = {
     hasIcons: false,
     value: sortOrder.sortOrder,
     onChange(arg0) {
@@ -34,20 +38,20 @@ export default function CommandListSortActionSheet(sortOrder) {
     children: null
   };
   const obj2 = { label: null, value: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj2[0] = intl2.string(require(1236) /* getSystemLocale */.t.SzxiqK);
+  const intl2 = getSystemLocale.intl;
+  obj2[0] = intl2.string(getSystemLocale.t.SzxiqK);
   obj2[1] = CommandListSortOrder.POPULAR;
   const items = [obj2, ];
   const obj3 = { label: null, value: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj3[0] = intl3.string(require(1236) /* getSystemLocale */.t.m8xsti);
+  const intl3 = getSystemLocale.intl;
+  obj3[0] = intl3.string(getSystemLocale.t.m8xsti);
   obj3[1] = CommandListSortOrder.ALPHABETICAL;
   items[1] = obj3;
   obj1[3] = items.map((label) => {
     const value = label.value;
     return callback3(callback(table[9]).TableRadioRow, { label: label.label, value }, value);
   });
-  obj[2] = jsx(require(8101) /* context */.TableRadioGroup, {
+  obj[2] = jsx(context.TableRadioGroup, {
     hasIcons: false,
     value: sortOrder.sortOrder,
     onChange(arg0) {
@@ -56,5 +60,5 @@ export default function CommandListSortActionSheet(sortOrder) {
     },
     children: null
   });
-  return jsx(require(6950) /* Background */.BottomSheet, { size: "sm", color: null });
+  return jsx(Background.BottomSheet, { size: "sm", color: ThemesDefault.colors.TEXT_DEFAULT });
 };

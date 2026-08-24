@@ -1,27 +1,30 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 11845
+// Function ID: 11846
 // Name: UserProfileAlertUserReported
-// Dependencies: [19, 21, 4660, 1236, 4660, 2]
+// Dependencies: [19, 21, 4667, 1236, 4667, 2]
 // Exports: default
 
-// Module 11796 (UserProfileAlertUserReported)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 11845 (UserProfileAlertUserReported)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("getAlertModalItemKey").fileFinishedImporting("modules/user_profile/native/UserProfileAlertUserReported.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileAlertUserReported.tsx");
 
 export default function UserProfileAlertUserReported() {
   let obj = { title: null, content: null, actions: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.IwHU3R);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.qxyRaq);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.IwHU3R);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t.qxyRaq);
   obj = { children: null };
   obj = { text: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.BddRzS);
-  obj[0] = jsx(require(4660) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "okay");
-  obj[2] = jsx(require(4660) /* getAlertModalItemKey */.AlertActions, { text: null });
-  return jsx(require(4660) /* getAlertModalItemKey */.AlertModal, { text: null });
+  const intl3 = getSystemLocale.intl;
+  obj[0] = intl3.string(getSystemLocale.t.BddRzS);
+  obj[0] = jsx(getAlertModalItemKey.AlertActionButton, { text: null }, "okay");
+  obj[2] = jsx(getAlertModalItemKey.AlertActions, { text: null });
+  return jsx(getAlertModalItemKey.AlertModal, { text: null });
 };

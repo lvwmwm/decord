@@ -1,29 +1,23 @@
-// Module ID: 10450
-// Function ID: 10451
+// Module ID: 10489
+// Function ID: 10490
 // Name: ForumPostTagsActionSheet
-// Dependencies: [32, 19, 17, 7273, 21, 4661, 1236, 7237, 7175, 6949, 10451, 4745, 8516, 4342, 2]
+// Dependencies: [32, 19, 17, 7311, 21, 4668, 1236, 7275, 7213, 6987, 10490, 4750, 8555, 4346, 2]
 // Exports: default
 
-// Module 10450 (ForumPostTagsActionSheet)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { MAX_FORUM_POST_TAGS } from "FORUM_GUIDELINES_ACTION_SHEET";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10489 (ForumPostTagsActionSheet)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { MAX_FORUM_POST_TAGS } from "FORUM_GUIDELINES_ACTION_SHEET" /* 7311 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ tagsContainer: { display: "flex", flexDirection: "row", flexWrap: "wrap" }, saveButton: { marginTop: 8, marginHorizontal: 16, marginBottom: 16 }, subtitle: { marginTop: 4 } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/forums/native/ForumPostTagsActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/forums/native/ForumPostTagsActionSheet.tsx");
 
 export default function ForumPostTagsActionSheet(thread) {
-  let _slicedToArray;
-  let dependencyMap;
-  let tags;
-  let title;
   thread = thread.thread;
   let flag = thread.canManageThread;
   if (flag === undefined) {
@@ -34,10 +28,10 @@ export default function ForumPostTagsActionSheet(thread) {
     const intl = thread(1236).intl;
     title = intl.string(thread(1236).t["436ZFw"]);
   }
-  ({ tags, onClose: _slicedToArray } = thread);
+  ({ tags, onClose: closure_3 } = thread);
   let first;
-  let closure_5;
-  let closure_6;
+  closure_5 = undefined;
+  closure_6 = undefined;
   function toggleTag(closure_5, arg1) {
     if (null != closure_5) {
       const _Set = Set;
@@ -51,7 +45,7 @@ export default function ForumPostTagsActionSheet(thread) {
     }
   }
   const tmp3 = callback3();
-  let obj = thread(7237);
+  let obj = thread(7275);
   let appliedTags = obj.useAppliedTags(thread);
   if (null != tags) {
     appliedTags = tags;
@@ -61,7 +55,7 @@ export default function ForumPostTagsActionSheet(thread) {
   closure_5 = tmp9[1];
   closure_6 = first.size >= closure_6;
   let set = new Set(appliedTags);
-  const visibleForumTags = thread(7237).useVisibleForumTags(thread.parentChannel);
+  const visibleForumTags = thread(7275).useVisibleForumTags(thread.parentChannel);
   obj = {
     onDismiss() {
       let tmp;
@@ -77,8 +71,8 @@ export default function ForumPostTagsActionSheet(thread) {
   const intl2 = tmp4(1236).intl;
   obj[1] = intl2.string(thread(1236).t["+HS9+m"]);
   obj[2] = tmp3.subtitle;
-  obj[1] = toggleTag(thread(6949).BottomSheetTitleHeader, obj);
-  const tmp4Result = thread(7237);
+  obj[1] = toggleTag(thread(6987).BottomSheetTitleHeader, obj);
+  const tmp4Result = thread(7275);
   let items = [
     toggleTag(closure_5, {
       style: tmp3.tagsContainer,
@@ -96,7 +90,7 @@ export default function ForumPostTagsActionSheet(thread) {
         obj[1] = tmp4;
         obj[2] = toggleTag;
         obj[3] = hasItem;
-        return toggleTag(flag(outer1_2[10]), obj, id.id);
+        return toggleTag(flag(closure_1_2[10]), obj, id.id);
       })
     }),
 
@@ -112,13 +106,13 @@ export default function ForumPostTagsActionSheet(thread) {
       HermesBuiltin.arraySpread(tmp, 0);
       tmp4(items);
     } else if (null != thread) {
-      flag(outer1_2[12]).updateForumPostTags(tmp5.id, tmp3);
-      const obj = flag(outer1_2[12]);
+      flag(closure_1_2[12]).updateForumPostTags(tmp5.id, tmp3);
+      const obj = flag(closure_1_2[12]);
     }
-    flag(outer1_2[13]).hideActionSheet();
+    flag(closure_1_2[13]).hideActionSheet();
   };
-  obj2[1] = toggleTag(thread(4745).Button, obj3);
+  obj2[1] = toggleTag(thread(4750).Button, obj3);
   items[1] = toggleTag(closure_5, obj2);
   obj[2] = items;
-  return callback2(thread(7175).ActionSheet, obj);
+  return callback2(thread(7213).ActionSheet, obj);
 };

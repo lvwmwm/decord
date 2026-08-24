@@ -4,9 +4,11 @@
 // Dependencies: [599, 770, 621, 775, 623, 781, 787, 791]
 
 // Module 769 (baseIsEqualDeep)
+import _mod599 from "module_599" /* 599 */;
+
 
 export default function baseIsEqualDeep(value, value2) {
-  const tmp3 = require(599)(value);
+  const tmp3 = _mod599(value);
   let str = "[object Array]";
   let str2 = "[object Array]";
   if (!tmp3) {

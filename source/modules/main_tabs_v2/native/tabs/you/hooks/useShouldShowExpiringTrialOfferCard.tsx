@@ -1,25 +1,29 @@
-// Module ID: 16022
-// Function ID: 16023
+// Module ID: 16120
+// Function ID: 16121
 // Name: useShouldShowExpiringTrialOfferCard
-// Dependencies: [13270, 676, 1924, 687, 647, 7418, 7410, 2]
+// Dependencies: [13328, 676, 1924, 687, 647, 7456, 7448, 2]
 // Exports: useShouldShowExpiringTrialOfferCard
 
-// Module 16022 (useShouldShowExpiringTrialOfferCard)
-import clearDismissUntil from "clearDismissUntil";
-import { NoticeTypes } from "ME";
-import { PremiumSubscriptionSKUs } from "GuildFeatures";
+// Module 16120 (useShouldShowExpiringTrialOfferCard)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+import setDefault from "set" /* 687 */;
+import useCountdownDefault from "useCountdown" /* 7448 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7456 */;
+import closure_3 from "clearDismissUntil" /* 13328 */;
+import { NoticeTypes } from "ME" /* 676 */;
+import { PremiumSubscriptionSKUs } from "GuildFeatures" /* 1924 */;
 
-const require = arg1;
-let closure_6 = 10 * require("set").Millis.SECOND;
-const result = require("GuildFeatures").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/hooks/useShouldShowExpiringTrialOfferCard.tsx");
+require = arg1;
+let closure_6 = 10 * setDefault.Millis.SECOND;
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/hooks/useShouldShowExpiringTrialOfferCard.tsx");
 
 export const useShouldShowExpiringTrialOfferCard = function useShouldShowExpiringTrialOfferCard() {
-  const items = [clearDismissUntil];
-  const stateFromStores = require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => noticeType.getNoticeType());
-  const obj = require(647) /* defaultAreStatesEqual */;
-  const premiumTrialOffer = require(7418) /* usePremiumTrialOffer */.usePremiumTrialOffer();
+  const items = [closure_3];
+  const stateFromStores = defaultAreStatesEqual.useStateFromStores(items, () => noticeType.getNoticeType());
+  const obj = defaultAreStatesEqual;
+  const premiumTrialOffer = usePremiumTrialOffer.usePremiumTrialOffer();
   let num = 0;
-  const obj2 = require(7418) /* usePremiumTrialOffer */;
+  const obj2 = usePremiumTrialOffer;
   if (null != premiumTrialOffer) {
     num = 0;
     if (null != premiumTrialOffer.expiresAt) {
@@ -28,7 +32,7 @@ export const useShouldShowExpiringTrialOfferCard = function useShouldShowExpirin
     }
   }
   let tmp5 = null != premiumTrialOffer;
-  const tmp3 = importDefault(7410);
+  const tmp3 = useCountdownDefault;
   if (tmp5) {
     tmp5 = null != stateFromStores;
   }

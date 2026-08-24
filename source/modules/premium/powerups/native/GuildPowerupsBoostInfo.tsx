@@ -1,42 +1,46 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11771
+// Function ID: 11772
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4262, 21, 4661, 712, 8307, 11723, 7979, 4734, 2]
+// Dependencies: [17, 4266, 21, 4668, 712, 8347, 11772, 8018, 4739, 2]
 // Exports: default
 
-// Module 11722 (GuildPowerupsBoostInfo)
-import { View } from "get ActivityIndicator";
-import { BoostInfoType } from "BoostedGuildTiers";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11771 (GuildPowerupsBoostInfo)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ThemesDefault from "Themes" /* 712 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4266 */;
+import Text from "Text" /* 4739 */;
+import BoostGemIcon from "BoostGemIcon" /* 8018 */;
+import apexExperiment from "apexExperiment" /* 8347 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 11772 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
+const View = get_ActivityIndicator.View;
+const BoostInfoType = BoostedGuildTiers.BoostInfoType;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { container: null, headerContainer: null };
-obj = { flex: 1, alignItems: "center", justifyContent: "center", paddingVertical: require("Themes").space.PX_12 };
+obj = { flex: 1, alignItems: "center", justifyContent: "center", paddingVertical: ThemesDefault.space.PX_12 };
 obj[0] = obj;
 obj[1] = { flexDirection: "row", alignItems: "center", justifyContent: "center", display: "flex" };
 let closure_7 = createCacheKey.createStyles(obj);
-const result = require("jsxProd").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostInfo.tsx");
+const result = set.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostInfo.tsx");
 
 export default function GuildPowerupsBoostInfo(arg0) {
-  let count;
-  let type;
   ({ count, type } = arg0);
   const tmp = callback();
-  let obj = require(8307) /* apexExperiment */;
+  let obj = apexExperiment;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsBoostInfo");
-  let obj1 = require(11723) /* getGuildPowerupsBoostInfoText */;
+  obj1 = getGuildPowerupsBoostInfoText;
   const guildPowerupsBoostInfoText = obj1.getGuildPowerupsBoostInfoText(count, type);
   obj = { style: tmp.container, accessible: true, accessibilityLabel: "" + count + ", " + guildPowerupsBoostInfoText, children: null };
   obj = { style: tmp.headerContainer, importantForAccessibility: "no-hide-descendants", accessible: false, children: null };
   if (type === BoostInfoType.AVAILABLE) {
-    let TEXT_MUTED = importDefault(712).unsafe_rawColors.GUILD_BOOSTING_PINK;
+    let TEXT_MUTED = ThemesDefault.unsafe_rawColors.GUILD_BOOSTING_PINK;
   } else {
-    TEXT_MUTED = importDefault(712).colors.TEXT_MUTED;
+    TEXT_MUTED = ThemesDefault.colors.TEXT_MUTED;
   }
-  const items = [closure_5(require(7979) /* BoostGemIcon */.BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
+  const items = [closure_5(BoostGemIcon.BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-lg/medium";
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-lg/semibold";
@@ -48,9 +52,9 @@ export default function GuildPowerupsBoostInfo(arg0) {
   }
   obj1[1] = str2;
   obj1[3] = count;
-  items[1] = closure_5(require(4734) /* Text */.Text, obj1);
+  items[1] = closure_5(Text.Text, obj1);
   obj[3] = items;
-  const items1 = [closure_6(View, obj), closure_5(require(4734) /* Text */.Text, { variant: "text-md/normal", color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText })];
+  const items1 = [closure_6(View, obj), closure_5(Text.Text, { variant: "text-md/normal", color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText })];
   obj[3] = items1;
   return closure_6(View, obj);
 };

@@ -1,16 +1,20 @@
-// Module ID: 12490
-// Function ID: 12491
+// Module ID: 12544
+// Function ID: 12545
 // Name: useStageChannelConnectAction
-// Dependencies: [8060, 12489, 2]
+// Dependencies: [8099, 12543, 2]
 // Exports: default, useStageChannelStartEvent
 
-// Module 12490 (useStageChannelConnectAction)
+// Module 12544 (useStageChannelConnectAction)
+import set from "set" /* 2 */;
+import useStageChannelIsLiveDefault from "useStageChannelIsLive" /* 8099 */;
+import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 12543 */;
+
 const obj = { NORMAL: 0, [0]: "NORMAL", START_EVENT: 1, [1]: "START_EVENT" };
-const result = require("set").fileFinishedImporting("modules/stage_channels/useStageChannelConnectAction.tsx");
+const result = set.fileFinishedImporting("modules/stage_channels/useStageChannelConnectAction.tsx");
 
 export default function useStageChannelConnectAction(arg0) {
   if (!tmp) {
-    if (importDefault(12489)(arg0, true).moderator) {
+    if (useCurrentUserStageRolesDefault(arg0, true).moderator) {
       let NORMAL = obj.START_EVENT;
     }
     return NORMAL;
@@ -19,5 +23,5 @@ export default function useStageChannelConnectAction(arg0) {
 };
 export const ChannelConnectAction = obj;
 export const useStageChannelStartEvent = function useStageChannelStartEvent(id) {
-  return { isLive: importDefault(8060)(id), isModerator: importDefault(12489)(id, true).moderator };
+  return { isLive: useStageChannelIsLiveDefault(id), isModerator: useCurrentUserStageRolesDefault(id, true).moderator };
 };

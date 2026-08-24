@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 478 (PermissionsAndroid)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("PermissionsAndroid");
+
+export default getAll.get("PermissionsAndroid");

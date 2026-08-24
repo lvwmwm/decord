@@ -1,21 +1,23 @@
-// Module ID: 16275
-// Function ID: 16276
+// Module ID: 16369
+// Function ID: 16370
 // Name: trackActivityThermalStateNoticeShown
-// Dependencies: [1391, 4539, 1390, 676, 4011, 698, 2]
+// Dependencies: [1391, 4544, 1390, 676, 4014, 698, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 16275 (trackActivityThermalStateNoticeShown)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createRTCConnection from "createRTCConnection";
-import participantFromServer from "participantFromServer";
-import { AnalyticEvents } from "ME";
+// Module 16369 (trackActivityThermalStateNoticeShown)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId" /* 4014 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "createRTCConnection" /* 4544 */;
+import closure_5 from "participantFromServer" /* 1390 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("participantFromServer").fileFinishedImporting("modules/activities/trackActivityThermalStateNoticeShown.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/activities/trackActivityThermalStateNoticeShown.tsx");
 
 export const trackActivityThermalStateNoticeShown = function trackActivityThermalStateNoticeShown() {
   currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
-  let obj = require(4011) /* getEmbeddedActivityLocationChannelId */;
+  let obj = getEmbeddedActivityLocationChannelId;
   let _location;
   if (currentEmbeddedActivity != null) {
     _location = currentEmbeddedActivity.location;
@@ -37,5 +39,5 @@ export const trackActivityThermalStateNoticeShown = function trackActivityTherma
   }
   obj[3] = guild_id;
   obj[4] = mediaSessionId.getMediaSessionId();
-  importDefault(698).track(AnalyticEvents.ACTIVITY_THERMAL_STATE_NOTICE_SHOWN, obj);
+  expandEventPropertiesDefault.track(AnalyticEvents.ACTIVITY_THERMAL_STATE_NOTICE_SHOWN, obj);
 };

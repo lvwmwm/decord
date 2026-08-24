@@ -1,16 +1,16 @@
-// Module ID: 10172
-// Function ID: 10173
+// Module ID: 10211
+// Function ID: 10212
 // Name: parsedItemUsesEveryoneRole
-// Dependencies: [32, 7249, 4021, 676, 38, 7436, 2]
+// Dependencies: [32, 7287, 4024, 676, 38, 7474, 2]
 
-// Module 10172 (parsedItemUsesEveryoneRole)
-import _slicedToArray from "_slicedToArray";
-import getMemberListId from "getMemberListId";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import ME from "ME";
+// Module 10211 (parsedItemUsesEveryoneRole)
+import _modDef38 from "module_38" /* 38 */;
+import rebuildDefault from "rebuild" /* 7474 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "getMemberListId" /* 7287 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
 function parsedItemUsesEveryoneRole(content) {
   if (typeof content.content === "string") {
     if ("inlineCode" !== content.type) {
@@ -47,14 +47,14 @@ function parsedItemUsesEveryoneRole(content) {
 }
 ({ Permissions: c5, StatusTypes: closure_6 } = ME);
 const regExp = new RegExp(/@(:?everyone|here)/);
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("utils/MentionGuardUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/MentionGuardUtils.tsx");
 
 export default {
   shouldShowEveryoneGuard(extractEveryoneRoleResult, getGuildId) {
     const guildId = getGuildId.getGuildId();
-    importDefault(38)(null != guildId, "isGuildChannel with null guildId");
+    _modDef38(null != guildId, "isGuildChannel with null guildId");
     importDefault = extractEveryoneRoleResult;
-    const dependencyMap = 0;
+    dependencyMap = 0;
     if (getGuildId.isThread()) {
       let num = getGuildId.memberCount;
       if (num == null) {
@@ -66,7 +66,7 @@ export default {
       const item = groups.forEach((id) => {
         let tmp = "@everyone" !== closure_0;
         if (tmp) {
-          tmp = id.id === outer1_6.OFFLINE;
+          tmp = id.id === closure_1_6.OFFLINE;
         }
         if (!tmp) {
           closure_1 = closure_1 + id.count;
@@ -76,13 +76,13 @@ export default {
     }
     let canResult = tmp5 > 30;
     if (canResult) {
-      canResult = getUncachedChannelPermissions.can(constants.MENTION_EVERYONE, getGuildId);
+      canResult = closure_4.can(constants.MENTION_EVERYONE, getGuildId);
     }
     return canResult;
   },
   everyoneMemberCount(extractEveryoneRoleResult, isThread) {
-    let closure_0 = extractEveryoneRoleResult;
-    let c1 = 0;
+    closure_0 = extractEveryoneRoleResult;
+    c1 = 0;
     if (isThread.isThread()) {
       let num = isThread.memberCount;
       if (num == null) {
@@ -94,7 +94,7 @@ export default {
       const item = groups.forEach((id) => {
         let tmp = "@everyone" !== closure_0;
         if (tmp) {
-          tmp = id.id === outer1_6.OFFLINE;
+          tmp = id.id === closure_1_6.OFFLINE;
         }
         if (!tmp) {
           closure_1 = closure_1 + id.count;
@@ -105,8 +105,8 @@ export default {
     return tmp3;
   },
   extractEveryoneRole(arg0, getGuildId) {
-    const obj = importDefault(7436);
-    const obj2 = importDefault(7436).parsePreprocessor(getGuildId, arg0)[Symbol.iterator]();
+    const obj = rebuildDefault;
+    const obj2 = rebuildDefault.parsePreprocessor(getGuildId, arg0)[Symbol.iterator]();
     while (obj2 !== undefined) {
       let tmp3 = parsedItemUsesEveryoneRole;
       let tmp4 = parsedItemUsesEveryoneRole(tmp2);

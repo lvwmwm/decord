@@ -1,21 +1,22 @@
-// Module ID: 9520
-// Function ID: 9521
+// Module ID: 9557
+// Function ID: 9558
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 4505, 676, 698, 1403, 9521, 4786, 9522, 38, 2]
+// Dependencies: [19, 4509, 676, 698, 1403, 9558, 4791, 9559, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable
 
-// Module 9520 (useShouldOpenGameProfileModal)
-import noop from "noop";
-import handleLoadMessages from "handleLoadMessages";
-import { AnalyticEvents } from "ME";
+// Module 9557 (useShouldOpenGameProfileModal)
+import hasFlagAll from "hasFlag" /* 1403 */;
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 4791 */;
+import GameFlags from "GameFlags" /* 9558 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "handleLoadMessages" /* 4509 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 let closure_7 = { NoMatch: "no match", NSFW: "nsfw", Disabled: "profile disabled" };
-const result = require("ME").fileFinishedImporting("modules/game_profile/hooks/useShouldOpenGameProfileModal.tsx");
+const result = require("set").fileFinishedImporting("modules/game_profile/hooks/useShouldOpenGameProfileModal.tsx");
 
 export default function useShouldOpenGameProfileModal(applicationId) {
-  let gameId;
-  let trackEntryPointImpression;
   let str = applicationId.applicationId;
   if (str === undefined) {
     str = "";
@@ -25,7 +26,7 @@ export default function useShouldOpenGameProfileModal(applicationId) {
   if (trackEntryPointImpression === undefined) {
     trackEntryPointImpression = true;
   }
-  let importAll;
+  importAll = undefined;
   let gameRecord;
   let isLoading;
   let shouldOpenGameProfile;
@@ -56,24 +57,24 @@ export default function useShouldOpenGameProfileModal(applicationId) {
       trackEntryPointImpression(gameRecord[8])(null != source, "Cannot track a Game Profile Entry Point Impressions without a source.");
       let flag = shouldOpenGameProfile;
       if (null == gameRecord) {
-        const items = [outer1_7.NoMatch];
+        const items = [closure_1_7.NoMatch];
         let tmp11 = items;
       } else {
         const items1 = [];
         if (obj3.hasFlag(tmp8.gameFlags, source(GAME_PROFILE_ENTRY_POINT_AVAILABLE[5]).GameFlags.GAME_PROFILE_DISABLED)) {
-          items1.push(outer1_7.Disabled);
+          items1.push(closure_1_7.Disabled);
         }
         obj3 = ref(GAME_PROFILE_ENTRY_POINT_AVAILABLE[4]);
         const tmp19 = source;
         tmp11 = items1;
         if (tmp19Result.isAgeRestrictedContentClassification(tmp8.contentClassification)) {
-          items1.push(outer1_7.NSFW);
+          items1.push(closure_1_7.NSFW);
           tmp11 = items1;
         }
         tmp19Result = source(GAME_PROFILE_ENTRY_POINT_AVAILABLE[6]);
       }
       track = track(GAME_PROFILE_ENTRY_POINT_AVAILABLE[3]).track;
-      GAME_PROFILE_ENTRY_POINT_AVAILABLE = outer1_6.GAME_PROFILE_ENTRY_POINT_AVAILABLE;
+      GAME_PROFILE_ENTRY_POINT_AVAILABLE = closure_1_6.GAME_PROFILE_ENTRY_POINT_AVAILABLE;
       const obj = { game_profile_available: null, application_id: null, rejection_reason: null, source: null };
       obj[0] = flag;
       obj[1] = gameRecord.id;
@@ -94,17 +95,17 @@ export const gameIsAcceptable = function gameIsAcceptable(gameFlags) {
     let arr = items;
   } else {
     const items1 = [];
-    if (obj2.hasFlag(gameFlags.gameFlags, require(9521) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(gameFlags.gameFlags, GameFlags.GameFlags.GAME_PROFILE_DISABLED)) {
       arr = items1.push(closure_7.Disabled);
     }
-    obj2 = importAll(1403);
+    obj2 = hasFlagAll;
     const tmp8 = require;
     arr = items1;
     if (tmp8Result.isAgeRestrictedContentClassification(gameFlags.contentClassification)) {
       arr = items1.push(closure_7.NSFW);
       arr = items1;
     }
-    tmp8Result = require(4786) /* isAgeRestrictedContentClassification */;
+    tmp8Result = isAgeRestrictedContentClassification;
   }
   return 0 === arr.length;
 };
@@ -115,17 +116,17 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(closure_0) {
     let arr = items;
   } else {
     const items1 = [];
-    if (obj2.hasFlag(game.gameFlags, require(9521) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(game.gameFlags, GameFlags.GameFlags.GAME_PROFILE_DISABLED)) {
       arr = items1.push(closure_7.Disabled);
     }
-    obj2 = importAll(1403);
+    obj2 = hasFlagAll;
     const tmp9 = require;
     arr = items1;
     if (tmp9Result.isAgeRestrictedContentClassification(game.contentClassification)) {
       arr = items1.push(closure_7.NSFW);
       arr = items1;
     }
-    tmp9Result = require(4786) /* isAgeRestrictedContentClassification */;
+    tmp9Result = isAgeRestrictedContentClassification;
   }
   return 0 === arr.length;
 };

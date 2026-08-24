@@ -1,19 +1,23 @@
-// Module ID: 8885
-// Function ID: 8886
+// Module ID: 8922
+// Function ID: 8923
 // Name: getEventLocationIconSource
-// Dependencies: [8788, 8825, 6832, 8826, 2]
+// Dependencies: [8825, 8862, 6870, 8863, 2]
 // Exports: getEventLocationIconComponent, getEventLocationIconSource
 
-// Module 8885 (getEventLocationIconSource)
-const result = require("getChannelIcon").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventUtils.tsx");
+// Module 8922 (getEventLocationIconSource)
+import set from "set" /* 2 */;
+import getChannelIcon from "getChannelIcon" /* 6870 */;
+import registerAssetDefault from "registerAsset" /* 8862 */;
+
+const result = set.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventUtils.tsx");
 
 export const getEventLocationIconSource = function getEventLocationIconSource(event, channel, stateFromStores2) {
   if (null != obj.getLocationFromEvent(event)) {
-    let tmp4 = importDefault(8825);
+    let tmp4 = registerAssetDefault;
   } else {
     tmp4 = null;
     if (null != channel) {
-      const tmpResult = require(6832) /* getChannelIcon */;
+      const tmpResult = getChannelIcon;
       if (stateFromStores2) {
         let channelIcon = tmpResult.getChannelIcon(channel);
       } else {
@@ -25,11 +29,11 @@ export const getEventLocationIconSource = function getEventLocationIconSource(ev
 };
 export const getEventLocationIconComponent = function getEventLocationIconComponent(event, channel, stateFromStores1) {
   if (null != obj.getLocationFromEvent(event)) {
-    let LocationIcon = tmp(8826).LocationIcon;
+    let LocationIcon = tmp(8863).LocationIcon;
   } else {
     LocationIcon = null;
     if (null != channel) {
-      const tmpResult = tmp(6832);
+      const tmpResult = tmp(6870);
       if (stateFromStores1) {
         let channelIconComponent = tmpResult.getChannelIconComponent(channel);
       } else {

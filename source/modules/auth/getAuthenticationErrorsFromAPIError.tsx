@@ -1,11 +1,13 @@
-// Module ID: 8585
-// Function ID: 8586
+// Module ID: 8624
+// Function ID: 8625
 // Name: getAuthenticationErrorsFromAPIError
 // Dependencies: [2]
 // Exports: getAuthenticationErrorsFromAPIError, getAuthenticationErrorsFromV6OrEarlierAPIError
 
-// Module 8585 (getAuthenticationErrorsFromAPIError)
-const result = require("set").fileFinishedImporting("modules/auth/getAuthenticationErrorsFromAPIError.tsx");
+// Module 8624 (getAuthenticationErrorsFromAPIError)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/auth/getAuthenticationErrorsFromAPIError.tsx");
 
 export const getAuthenticationErrorsFromAPIError = function getAuthenticationErrorsFromAPIError(c6) {
   const obj = { error_code: c6.code };
@@ -26,14 +28,14 @@ export const getAuthenticationErrorsFromAPIError = function getAuthenticationErr
     return obj;
   }
 };
-export const getAuthenticationErrorsFromV6OrEarlierAPIError = function getAuthenticationErrorsFromV6OrEarlierAPIError(closure_4) {
-  if (Object.keys(closure_4.fields).length > 0) {
-    return closure_4.fields;
+export const getAuthenticationErrorsFromV6OrEarlierAPIError = function getAuthenticationErrorsFromV6OrEarlierAPIError(closure_2) {
+  if (Object.keys(closure_2.fields).length > 0) {
+    return closure_2.fields;
   } else {
     const obj = { message: null };
-    obj[0] = closure_4.message;
-    if (null != closure_4.retryAfter) {
-      obj.retry_after = closure_4.retryAfter;
+    obj[0] = closure_2.message;
+    if (null != closure_2.retryAfter) {
+      obj.retry_after = closure_2.retryAfter;
     }
     return obj;
   }

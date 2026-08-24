@@ -4,5 +4,7 @@
 // Dependencies: [100]
 
 // Module 465 (getConstants)
+import getConstantsDefault from "getConstants" /* 100 */;
 
-export { default } from "getConstants";
+
+export default getConstantsDefault;

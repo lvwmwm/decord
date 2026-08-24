@@ -1,21 +1,23 @@
-// Module ID: 8253
-// Function ID: 8254
+// Module ID: 8293
+// Function ID: 8294
 // Name: isPublicSystemMessage
-// Dependencies: [8254, 676, 8255, 8256, 698, 5042, 2]
+// Dependencies: [8294, 676, 8295, 8296, 698, 5047, 2]
 // Exports: getPublicSystemMessageAvatar, isPublicSystemMessage, trackEnableCommunityFlow
 
-// Module 8253 (isPublicSystemMessage)
-import PUBLIC_SUCCESS_MODAL_SEEN_KEY from "PUBLIC_SUCCESS_MODAL_SEEN_KEY";
-import { AnalyticEvents } from "ME";
+// Module 8293 (isPublicSystemMessage)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 5047 */;
+import isCrosspostDefault from "isCrosspost" /* 8295 */;
+import PUBLIC_SUCCESS_MODAL_SEEN_KEY from "PUBLIC_SUCCESS_MODAL_SEEN_KEY" /* 8294 */;
 
-let c3;
-let c4;
-let c5;
 ({ PUBLIC_GUILD_ANNOUNCEMENTS_GUILD_ID: c3, PUBLIC_GUILD_UPDATES_WEBHOOK_USER_ID: c4, ENABLE_COMMUNITY_FLOW_MODAL_KEY: c5 } = PUBLIC_SUCCESS_MODAL_SEEN_KEY);
-const result = require("isCrosspost").fileFinishedImporting("modules/public_guilds/PublicGuildsUtils.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/public_guilds/PublicGuildsUtils.tsx");
 
 export const isPublicSystemMessage = function isPublicSystemMessage(message) {
-  let tmp = importDefault(8255)(message);
+  let tmp = isCrosspostDefault(message);
   if (tmp) {
     tmp = message.messageReference.guild_id === closure_3;
   }
@@ -29,11 +31,11 @@ export const isPublicSystemMessage = function isPublicSystemMessage(message) {
   return tmp;
 };
 export const getPublicSystemMessageAvatar = function getPublicSystemMessageAvatar() {
-  return importDefault(8256);
+  return importDefault(8296);
 };
 export const trackEnableCommunityFlow = function trackEnableCommunityFlow(fromStep) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { flow_type: closure_5, from_step: fromStep.fromStep, to_step: fromStep.toStep };
-  const merged = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(fromStep.guildId));
+  const merged = Object.assign(collectGuildAnalyticsMetadata.collectGuildAnalyticsMetadata(fromStep.guildId));
   obj.track(AnalyticEvents.USER_FLOW_TRANSITION, obj);
 };

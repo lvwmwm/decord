@@ -1,12 +1,14 @@
-// Module ID: 5095
-// Function ID: 5096
+// Module ID: 5100
+// Function ID: 5101
 // Name: hasMemberSupplemental
-// Dependencies: [5096, 2]
+// Dependencies: [5101, 2]
 // Exports: getMemberSupplementalByGuildId, hasMemberSupplemental, syncMemberSupplemental
 
-// Module 5095 (hasMemberSupplemental)
+// Module 5100 (hasMemberSupplemental)
+import set from "set" /* 2 */;
+
 let closure_2 = {};
-const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyStoreSupplemental.tsx");
+const result = set.fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyStoreSupplemental.tsx");
 
 export const hasMemberSupplemental = function hasMemberSupplemental(arg0, arg1) {
   let tmp2 = null != dependencyMap[arg0];
@@ -28,10 +30,8 @@ export const syncMemberSupplemental = function syncMemberSupplemental(guildId, m
     if (null == dependencyMap[guildId]) {
       tmp2[guildId] = {};
     }
-    let closure_0 = tmp2[guildId];
+    closure_0 = tmp2[guildId];
     const item = memberSupplementals.forEach((joinSourceType) => {
-      let sourceInviteCode;
-      let userId;
       joinSourceType = joinSourceType.joinSourceType;
       if (joinSourceType == null) {
         let joinSourceType1;
@@ -45,13 +45,13 @@ export const syncMemberSupplemental = function syncMemberSupplemental(guildId, m
       }
       let tmp5 = null != joinSourceType;
       if (tmp5) {
-        tmp5 = joinSourceType !== dependencyMap(outer1_1[0]).JoinSourceType.UNSPECIFIED;
+        tmp5 = joinSourceType !== dependencyMap(closure_1_1[0]).JoinSourceType.UNSPECIFIED;
       }
       if (!tmp5) {
         tmp5 = null == joinSourceType.sourceInviteCode;
       }
       if (!tmp5) {
-        joinSourceType = dependencyMap(outer1_1[0]).JoinSourceType.INVITE;
+        joinSourceType = dependencyMap(closure_1_1[0]).JoinSourceType.INVITE;
       }
       const obj = { userId: joinSourceType.userId, sourceInviteCode: null, joinSourceType: null, inviterId: null, integrationType: null, joinSourceApplicationId: null, joinSourceChannelId: null };
       ({ sourceInviteCode, userId } = joinSourceType);

@@ -1,14 +1,16 @@
-// Module ID: 13482
-// Function ID: 13483
+// Module ID: 13540
+// Function ID: 13541
 // Name: PassthroughTouchView
-// Dependencies: [19, 21, 13483, 2]
+// Dependencies: [19, 21, 13541, 2]
 // Exports: default
 
-// Module 13482 (PassthroughTouchView)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 13540 (PassthroughTouchView)
+import noopAll from "noop" /* 19 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 13541 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const result = require("__INTERNAL_VIEW_CONFIG").fileFinishedImporting("design/void/PassthroughTouchView/native/PassthroughTouchView.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("design/void/PassthroughTouchView/native/PassthroughTouchView.tsx");
 
 export default function PassthroughTouchView(onTouchDown) {
   const merged = Object.assign(onTouchDown, Object.create(null));
@@ -16,5 +18,5 @@ export default function PassthroughTouchView(onTouchDown) {
   const merged1 = Object.assign(merged);
   obj.onTouchDown = onTouchDown.onTouchDown;
   obj.pointerEvents = "box-none";
-  return jsx(importDefault(13483), {});
+  return jsx(__INTERNAL_VIEW_CONFIGDefault, {});
 };

@@ -1,11 +1,13 @@
-// Module ID: 4024
-// Function ID: 4025
+// Module ID: 4027
+// Function ID: 4028
 // Name: reset
 // Dependencies: [2]
 // Exports: computeIsMuted, isTemporarilyMuted
 
-// Module 4024 (reset)
-const result = require("set").fileFinishedImporting("lib/MuteTimers.tsx");
+// Module 4027 (reset)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("lib/MuteTimers.tsx");
 class MuteTimers {
   constructor() {
     obj = Object.create(new.target.prototype);

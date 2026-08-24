@@ -1,10 +1,10 @@
-// Module ID: 8565
-// Function ID: 8566
+// Module ID: 8604
+// Function ID: 8605
 // Name: ChangeEmailReasons
 // Dependencies: [2]
 
-// Module 8565 (ChangeEmailReasons)
-import set from "set";
+// Module 8604 (ChangeEmailReasons)
+import set from "set" /* 2 */;
 
 const obj = { DISCORD_EMPLOYEE_ASKED_ME_TO: 0, [0]: "DISCORD_EMPLOYEE_ASKED_ME_TO", SOMEONE_ASKED_ME_TO: 1, [1]: "SOMEONE_ASKED_ME_TO", NEW_EMAIL: 2, [2]: "NEW_EMAIL", SOMETHING_ELSE: 3, [3]: "SOMETHING_ELSE" };
 const items = [, , , ];

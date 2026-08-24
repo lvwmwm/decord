@@ -1,21 +1,26 @@
-// Module ID: 14884
-// Function ID: 14885
+// Module ID: 14948
+// Function ID: 14949
 // Name: pressable
-// Dependencies: [13949, 10669, 14882, 13946, 14199, 2]
+// Dependencies: [14017, 10708, 14946, 14014, 14267, 2]
 
-// Module 14884 (pressable)
-import createToggle from "createToggle";
+// Module 14948 (pressable)
+import set from "set" /* 2 */;
+import navigateToDevTools from "navigateToDevTools" /* 14014 */;
+import DevToolsScreens from "DevToolsScreens" /* 14017 */;
+import useStaffOrDeveloperSettingPredicate from "useStaffOrDeveloperSettingPredicate" /* 14267 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 14946 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const pressable = createToggle.createPressable({
   useTitle() {
     return "Show Dev Tools";
   },
   parent: null,
-  IconComponent: require("StaffBadgeIcon").StaffBadgeIcon,
-  onPress: require("navigateToDevTools").navigateToDevTools,
-  usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate,
+  IconComponent: StaffBadgeIcon.StaffBadgeIcon,
+  onPress: navigateToDevTools.navigateToDevTools,
+  usePredicate: useStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
   useSearchTerms: function getAdditionalSearchTerms() {
-    const items = [...Object.values(require(13949) /* DevToolsScreens */.DevToolsScreens), ...Object.values(require(13949) /* DevToolsScreens */.PerformanceTestingScreens)];
+    const items = [...Object.values(DevToolsScreens.DevToolsScreens), ...Object.values(DevToolsScreens.PerformanceTestingScreens)];
     return items.map((headerTitle) => headerTitle.headerTitle);
   },
   withArrow: true
@@ -25,15 +30,15 @@ const obj = {
     return "Show Dev Tools";
   },
   parent: null,
-  IconComponent: require("StaffBadgeIcon").StaffBadgeIcon,
-  onPress: require("navigateToDevTools").navigateToDevTools,
-  usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate,
+  IconComponent: StaffBadgeIcon.StaffBadgeIcon,
+  onPress: navigateToDevTools.navigateToDevTools,
+  usePredicate: useStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
   useSearchTerms: function getAdditionalSearchTerms() {
-    const items = [...Object.values(require(13949) /* DevToolsScreens */.DevToolsScreens), ...Object.values(require(13949) /* DevToolsScreens */.PerformanceTestingScreens)];
+    const items = [...Object.values(DevToolsScreens.DevToolsScreens), ...Object.values(DevToolsScreens.PerformanceTestingScreens)];
     return items.map((headerTitle) => headerTitle.headerTitle);
   },
   withArrow: true
 };
-const result = require("StaffBadgeIcon").fileFinishedImporting("modules/user_settings/defs/native/ShowDevToolsSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ShowDevToolsSetting.tsx");
 
 export default pressable;

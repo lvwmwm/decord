@@ -1,17 +1,17 @@
-// Module ID: 11213
-// Function ID: 11214
+// Module ID: 11264
+// Function ID: 11265
 // Name: useActivityShelfData
-// Dependencies: [19, 1922, 7874, 1390, 589, 7145, 1370, 8718, 500, 9557, 2]
+// Dependencies: [19, 1922, 7913, 1390, 589, 7183, 1370, 8755, 500, 9594, 2]
 // Exports: useActivityShelfData
 
-// Module 11213 (useActivityShelfData)
-import noop from "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import reset from "reset";
-import participantFromServer from "participantFromServer";
+// Module 11264 (useActivityShelfData)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "reset" /* 7913 */;
+import closure_6 from "participantFromServer" /* 1390 */;
 
 const require = arg1;
-const result = require("reset").fileFinishedImporting("modules/activities/useActivityShelfData.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/useActivityShelfData.tsx");
 
 export const useActivityShelfData = function useActivityShelfData(guildId) {
   const _require = guildId;
@@ -34,7 +34,7 @@ export const useActivityShelfData = function useActivityShelfData(guildId) {
   const tmp9 = stateFromStores(tmp[5])(tmp5);
   getCurrentUser = tmp9;
   const items4 = [tmp9];
-  memo = stateFromStores1.useMemo(() => tmp9.filter(guildId(stateFromStoresArray[6]).isNotNullish), items4);
+  memo = stateFromStores1.useMemo(() => closure_4.filter(guildId(stateFromStoresArray[6]).isNotNullish), items4);
   const items5 = [memo, stateFromStores1];
   memo1 = stateFromStores1.useMemo(() => {
     if (null != stateFromStores1) {
@@ -54,8 +54,8 @@ export const useActivityShelfData = function useActivityShelfData(guildId) {
   const items6 = [stateFromStoresArray, memo];
   const memo2 = stateFromStores1.useMemo(() => {
     const mapped = stateFromStoresArray.map((arg0) => {
-      let closure_0 = arg0;
-      const found = reset.find((id) => id.id === application_id.application_id);
+      closure_0 = arg0;
+      const found = closure_5.find((id) => id.id === application_id.application_id);
       let tmp2 = null;
       if (null != found) {
         const obj = { activity: null, application: null };
@@ -79,7 +79,7 @@ export const useActivityShelfData = function useActivityShelfData(guildId) {
       if (supported_platforms == null) {
         supported_platforms = [];
       }
-      const tmp = lib(8718);
+      const tmp = lib(8755);
       return supported_platforms.includes(tmp(callback(500).getOS()));
     });
     const found1 = found.filter((activity) => {
@@ -108,7 +108,7 @@ export const useActivityShelfData = function useActivityShelfData(guildId) {
       }
       let tmp2 = false === nsfwAllowed;
       if (tmp2) {
-        tmp2 = outer1_1(outer1_2[9])(application.application.id);
+        tmp2 = closure_1_1(closure_1_2[9])(application.application.id);
       }
       return !tmp2;
     });

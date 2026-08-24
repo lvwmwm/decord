@@ -1,17 +1,16 @@
-// Module ID: 13092
-// Function ID: 13093
+// Module ID: 13148
+// Function ID: 13149
 // Name: _initStats
-// Dependencies: [4564, 676, 4548, 2]
+// Dependencies: [4569, 676, 4553, 2]
 
-// Module 13092 (_initStats)
-import handleConnectionInfoChange from "handleConnectionInfoChange";
-import ME from "ME";
+// Module 13148 (_initStats)
+import sleep from "sleep" /* 4553 */;
+import closure_2 from "handleConnectionInfoChange" /* 4569 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 ({ NetworkConnectionTypes: c3, NetworkConnectionSpeeds: c4 } = ME);
-let result = require("sleep").fileFinishedImporting("lib/NetworkQuality.tsx");
+let result = require("set").fileFinishedImporting("lib/NetworkQuality.tsx");
 class NetworkQuality {
   constructor() {
     obj = Object.create(new.target.prototype);

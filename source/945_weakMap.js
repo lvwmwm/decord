@@ -5,7 +5,10 @@
 // Exports: cleanupPendingSpansForTransport, completeSpanWithResults, storeSpanForRequest
 
 // Module 945 (weakMap)
-import _slicedToArray from "_slicedToArray";
+import getSpanStatusFromHttpCode from "getSpanStatusFromHttpCode" /* 840 */;
+import extractClientInfo from "extractClientInfo" /* 938 */;
+import extractPromptResultAttributes from "extractPromptResultAttributes" /* 946 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const weakMap = new WeakMap();
@@ -15,13 +18,13 @@ export const cleanupPendingSpansForTransport = function cleanupPendingSpansForTr
   if (value) {
     const tmp2 = value[Symbol.iterator]();
     while (tmp2 !== undefined) {
-      let tmp6 = _slicedToArray;
-      let tmp7 = _slicedToArray(tmp4, 2)[1];
+      let tmp6 = callback;
+      let tmp7 = callback(tmp4, 2)[1];
       let span = tmp7.span;
       let obj = { code: null, message: "cancelled" };
       let tmp8 = require;
       let tmp9 = dependencyMap;
-      obj[0] = require(840) /* getSpanStatusFromHttpCode */.SPAN_STATUS_ERROR;
+      obj[0] = getSpanStatusFromHttpCode.SPAN_STATUS_ERROR;
       let setStatusResult = span.setStatus(obj);
       let span2 = tmp7.span;
       let endResult = span2.end();
@@ -31,8 +34,6 @@ export const cleanupPendingSpansForTransport = function cleanupPendingSpansForTr
   }
 };
 export const completeSpanWithResults = function completeSpanWithResults(closure_4, id, result, self) {
-  let method;
-  let span;
   let setAttributesResult = weakMap;
   let value = weakMap.get(closure_4);
   if (!value) {
@@ -46,11 +47,11 @@ export const completeSpanWithResults = function completeSpanWithResults(closure_
     let protocolVersion = result;
     ({ span, method } = value);
     if ("initialize" === method) {
-      const result1 = require(938) /* extractClientInfo */.extractSessionDataFromInitializeResponse(protocolVersion);
+      const result1 = extractClientInfo.extractSessionDataFromInitializeResponse(protocolVersion);
       setAttributesResult = {};
-      const obj5 = require(938) /* extractClientInfo */;
+      const obj5 = extractClientInfo;
       const tmp10 = require;
-      const merged = Object.assign(require(938) /* extractClientInfo */.buildServerAttributesFromInfo(result1.serverInfo));
+      const merged = Object.assign(extractClientInfo.buildServerAttributesFromInfo(result1.serverInfo));
       protocolVersion = result1.protocolVersion;
       if (protocolVersion) {
         setAttributesResult[tmp10(940).MCP_PROTOCOL_VERSION_ATTRIBUTE] = result1.protocolVersion;
@@ -58,18 +59,18 @@ export const completeSpanWithResults = function completeSpanWithResults(closure_
       setAttributesResult = span.setAttributes(setAttributesResult);
       span.end();
       value.delete(id);
-      const obj6 = require(938) /* extractClientInfo */;
+      const obj6 = extractClientInfo;
     } else {
       setAttributesResult = self;
       if ("tools/call" !== method) {
         if ("prompts/get" === method) {
-          span.setAttributes(require(946) /* extractPromptResultAttributes */.extractPromptResultAttributes(protocolVersion, setAttributesResult.recordOutputs));
-          const obj7 = require(946) /* extractPromptResultAttributes */;
+          span.setAttributes(extractPromptResultAttributes.extractPromptResultAttributes(protocolVersion, setAttributesResult.recordOutputs));
+          const obj7 = extractPromptResultAttributes;
         }
       }
     }
-    setAttributesResult = span.setAttributes(require(946) /* extractPromptResultAttributes */.extractToolResultAttributes(protocolVersion, setAttributesResult.recordOutputs));
-    const obj3 = require(946) /* extractPromptResultAttributes */;
+    setAttributesResult = span.setAttributes(extractPromptResultAttributes.extractToolResultAttributes(protocolVersion, setAttributesResult.recordOutputs));
+    const obj3 = extractPromptResultAttributes;
   }
 };
 export const storeSpanForRequest = function storeSpanForRequest(arg0, id, startInactiveSpanResult, method) {

@@ -1,28 +1,29 @@
-// Module ID: 16545
-// Function ID: 16546
+// Module ID: 16640
+// Function ID: 16641
 // Name: showTakeoverModal
-// Dependencies: [10569, 10576, 5260, 15175, 2007, 2]
+// Dependencies: [10608, 10615, 5265, 15239, 2008, 2]
 // Exports: showTakeoverModal
 
-// Module 16545 (showTakeoverModal)
-import { TAKEOVER_MODAL_KEY } from "LOCATION_CONTEXT_MOBILE";
+// Module 16640 (showTakeoverModal)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 10608 */;
+import InappropriateConversationExperiment from "InappropriateConversationExperiment" /* 10615 */;
 
-const result = require("module_5260").fileFinishedImporting("modules/self_mod/inappropriate_conversation/takeover_modal/showTakeoverModal.native.tsx");
+const TAKEOVER_MODAL_KEY = LOCATION_CONTEXT_MOBILE.TAKEOVER_MODAL_KEY;
+const result = set.fileFinishedImporting("modules/self_mod/inappropriate_conversation/takeover_modal/showTakeoverModal.native.tsx");
 
 export const showTakeoverModal = function showTakeoverModal(arg0) {
-  let channelId;
-  let senderId;
-  let warningId;
-  let warningType;
   ({ warningId, warningType, senderId, channelId } = arg0);
-  let obj = require(10576) /* InappropriateConversationExperiment */;
+  let obj = InappropriateConversationExperiment;
   if (obj.isEligibleForInappropriateConversationWarning({ location: "takeover-modal" })) {
     obj = { warningId: null, warningType: null, senderId: null, channelId: null };
     obj[0] = warningId;
     obj[1] = warningType;
     obj[2] = senderId;
     obj[3] = channelId;
-    importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(15175, dependencyMap.paths), obj, TAKEOVER_MODAL_KEY);
-    const obj2 = importDefault(5260);
+    _modDef5265.pushLazy(asyncRequireImpl(15239, dependencyMap.paths), obj, TAKEOVER_MODAL_KEY);
+    const obj2 = _modDef5265;
   }
 };

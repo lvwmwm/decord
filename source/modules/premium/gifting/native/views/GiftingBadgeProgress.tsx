@@ -1,21 +1,24 @@
-// Module ID: 10421
-// Function ID: 10422
+// Module ID: 10460
+// Function ID: 10461
 // Name: GiftingBadgeProgressBar
-// Dependencies: [19, 17, 8936, 21, 4661, 712, 10302, 4734, 1236, 2431, 2]
+// Dependencies: [19, 17, 8973, 21, 4668, 712, 10341, 4739, 1236, 2432, 2]
 // Exports: default
 
-// Module 10421 (GiftingBadgeProgressBar)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { getSingleRequirementThreshold as closure_4 } from "initialize";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10460 (GiftingBadgeProgressBar)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2432 */;
+import Text from "Text" /* 4739 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10341 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { getSingleRequirementThreshold as closure_4 } from "initialize" /* 8973 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function GiftingBadgeProgressBar(percent) {
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { style: tmp.progressBarTrack, children: null };
   obj = { style: null };
   const items = [tmp.progressBarFill, ];
@@ -25,32 +28,29 @@ function GiftingBadgeProgressBar(percent) {
   obj[1] = callback2(View, obj);
   return callback2(View, obj);
 }
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: null, content: null, progressBarTrack: null, progressBarFill: null, labels: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_16 };
+createCacheKey = { flexDirection: "row", alignItems: "center", padding: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flex: 1, paddingHorizontal: require("Themes").space.PX_8, gap: require("Themes").space.PX_4 };
-let obj1 = { flex: 1, paddingHorizontal: require("Themes").space.PX_8, gap: require("Themes").space.PX_4 };
-createCacheKey[2] = { height: 6, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-let obj2 = { height: 6, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-createCacheKey[3] = { height: 6, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
-let obj3 = { height: 6, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
-createCacheKey[4] = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj4 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: require("Themes").space.PX_16 };
-const result = require("initialize").fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgress.tsx");
+createCacheKey[1] = { flex: 1, paddingHorizontal: ThemesDefault.space.PX_8, gap: ThemesDefault.space.PX_4 };
+let obj1 = { flex: 1, paddingHorizontal: ThemesDefault.space.PX_8, gap: ThemesDefault.space.PX_4 };
+createCacheKey[2] = { height: 6, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
+let obj2 = { height: 6, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
+createCacheKey[3] = { height: 6, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
+let obj3 = { height: 6, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
+createCacheKey[4] = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: ThemesDefault.space.PX_16 };
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+let obj4 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgress.tsx");
 
 export default function GiftingBadgeProgress(title) {
-  let currentTier;
-  let iconSize;
-  let nextTier;
-  let progress;
   ({ progress, currentTier, nextTier, iconSize } = title);
   if (iconSize === undefined) {
     iconSize = 24;
   }
   title = title.title;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const tmp2 = callback(nextTier);
   let tmp3 = null != nextTier;
   if (tmp3) {
@@ -72,27 +72,27 @@ export default function GiftingBadgeProgress(title) {
     obj = { icon: null, size: null };
     obj[0] = currentTier.simple_icon_url;
     obj[1] = iconSize;
-    tmp8 = callback2(importDefault(10302), obj);
+    tmp8 = callback2(GiftingBadgeIconDefault, obj);
   }
   const items = [tmp8, , ];
   obj = { style: tmp.content, children: null };
   let tmp12 = null != title;
   if (tmp12) {
-    const obj1 = { variant: "text-md/semibold", children: null };
+    obj1 = { variant: "text-md/semibold", children: null };
     obj1[1] = title;
-    tmp12 = callback2(require(4734) /* Text */.Text, obj1);
+    tmp12 = callback2(Text.Text, obj1);
   }
   const items1 = [tmp12, callback2(GiftingBadgeProgressBar, { percent: num2 }), ];
   const obj2 = { style: tmp.labels, children: null };
   let tmp16Result = null != nextTier;
   if (tmp16Result) {
     const obj3 = { variant: "text-xs/normal", color: "text-muted", children: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const obj4 = { count: null, threshold: null };
     obj4[0] = progress;
     obj4[1] = tmp2;
-    obj3[2] = intl.format(importDefault(2431).iIpfQe, obj4);
-    tmp16Result = tmp16(require(4734) /* Text */.Text, obj3);
+    obj3[2] = intl.format(messagesProxyDefault.iIpfQe, obj4);
+    tmp16Result = tmp16(Text.Text, obj3);
   }
   obj2[1] = tmp16Result;
   items1[2] = callback2(View, obj2);
@@ -107,7 +107,7 @@ export default function GiftingBadgeProgress(title) {
     const obj5 = { icon: null, size: null };
     obj5[0] = nextTier.simple_icon_url;
     obj5[1] = iconSize;
-    tmp16Result = tmp16(importDefault(10302), obj5);
+    tmp16Result = tmp16(GiftingBadgeIconDefault, obj5);
   }
   items[2] = tmp16Result;
   obj[1] = items;

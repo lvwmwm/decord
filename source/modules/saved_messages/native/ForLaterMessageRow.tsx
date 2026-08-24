@@ -1,21 +1,19 @@
-// Module ID: 12730
-// Function ID: 12731
+// Module ID: 12785
+// Function ID: 12786
 // Name: ForLaterMessageRow
-// Dependencies: [19, 21, 4310, 4661, 712, 4066, 8157, 10066, 500, 2]
+// Dependencies: [19, 21, 4314, 4668, 712, 4069, 8196, 10105, 500, 2]
 // Exports: ForLaterMessageRow
 
-// Module 12730 (ForLaterMessageRow)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 12785 (ForLaterMessageRow)
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("useTheme").fileFinishedImporting("modules/saved_messages/native/ForLaterMessageRow.tsx");
+const result = require("set").fileFinishedImporting("modules/saved_messages/native/ForLaterMessageRow.tsx");
 
 export const ForLaterMessageRow = function ForLaterMessageRow(lineClamp) {
-  let maxHeight;
-  let message;
   lineClamp = lineClamp.lineClamp;
-  let importDefault;
+  importDefault = undefined;
   let setting;
   let setting1;
   let setting2;

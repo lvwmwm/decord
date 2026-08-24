@@ -1,10 +1,13 @@
-// Module ID: 13891
-// Function ID: 13892
-// Dependencies: [8754, 13892, 2]
+// Module ID: 13958
+// Function ID: 13959
+// Dependencies: [8791, 13959, 2]
 
-// Module 13891
-const require = arg1;
-const tmp2 = new require("registerTransport")(() => Promise.resolve(require(8754) /* root */));
+// Module 13958
+import root from "root" /* 8791 */;
+import registerTransportDefault from "registerTransport" /* 13959 */;
+
+require = arg1;
+const tmp2 = new registerTransportDefault(() => Promise.resolve(root));
 const result = require("set").fileFinishedImporting("modules/rpc/native/NativeRPCServer.tsx");
 
 export default tmp2;

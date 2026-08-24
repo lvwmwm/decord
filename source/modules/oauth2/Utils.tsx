@@ -1,16 +1,20 @@
-// Module ID: 9770
-// Function ID: 9771
+// Module ID: 9809
+// Function ID: 9810
 // Name: getApplicationDetailsText
-// Dependencies: [676, 9771, 1236, 4786, 2]
+// Dependencies: [676, 9810, 1236, 4791, 2]
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
-// Module 9770 (getApplicationDetailsText)
-import { MarketingURLs } from "ME";
+// Module 9809 (getApplicationDetailsText)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 4791 */;
+import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 9810 */;
 
-let result = require("getSystemLocale").fileFinishedImporting("modules/oauth2/Utils.tsx");
+const MarketingURLs = ME.MarketingURLs;
+let result = set.fileFinishedImporting("modules/oauth2/Utils.tsx");
 
 export const getApplicationDetailsText = function getApplicationDetailsText(application) {
-  let obj = require(9771) /* useIsSocialLayerParentApplication */;
+  let obj = useIsSocialLayerParentApplication;
   const isSocialLayerParentApplication = obj.getIsSocialLayerParentApplication(application);
   if (null != application.privacy_policy_url) {
     if (null != application.terms_of_service_url) {
@@ -32,7 +36,7 @@ export const getApplicationDetailsText = function getApplicationDetailsText(appl
   } else if (null != application.terms_of_service_url) {
     const t2 = tmp(1236).t;
     const intl2 = tmp(1236).intl;
-    const obj1 = { application: null, termsOfServiceURL: null, discordPrivacyPolicyURL: null };
+    obj1 = { application: null, termsOfServiceURL: null, discordPrivacyPolicyURL: null };
     ({ name: obj3[0], terms_of_service_url: obj3[1] } = application);
     obj1[2] = MarketingURLs.PRIVACY;
     return intl2.format(isSocialLayerParentApplication ? t2.nBLOp5 : t2["q0T/Q1"], obj1);
@@ -48,8 +52,8 @@ export const getApplicationDetailsText = function getApplicationDetailsText(appl
 export const isContentClassificationRestricted = function isContentClassificationRestricted(content_classification, closure_32) {
   let result = null != content_classification;
   if (result) {
-    result = require(4786) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(content_classification);
-    const obj = require(4786) /* isAgeRestrictedContentClassification */;
+    result = isAgeRestrictedContentClassification.isAgeRestrictedContentClassification(content_classification);
+    const obj = isAgeRestrictedContentClassification;
   }
   if (result) {
     result = false === closure_32;

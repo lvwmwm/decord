@@ -1,18 +1,19 @@
-// Module ID: 7703
-// Function ID: 7704
+// Module ID: 7741
+// Function ID: 7742
 // Name: useResubscribeSubscriptionParams
-// Dependencies: [19, 7701, 514, 2]
+// Dependencies: [19, 7739, 514, 2]
 // Exports: default
 
-// Module 7703 (useResubscribeSubscriptionParams)
-import noop from "noop";
+// Module 7741 (useResubscribeSubscriptionParams)
+import useToggleOnIAPSuccessDefault from "useToggleOnIAPSuccess" /* 7739 */;
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("v1").fileFinishedImporting("modules/billing/native/subscription/useResubscribeSubscriptionParams.tsx");
+const result = require("set").fileFinishedImporting("modules/billing/native/subscription/useResubscribeSubscriptionParams.tsx");
 
 export default function useResubscribeSubscriptionParams(arg0) {
-  let closure_0 = arg0;
-  const tmp = importDefault(7701)();
+  closure_0 = arg0;
+  const tmp = useToggleOnIAPSuccessDefault();
   importDefault = tmp;
   const items = [arg0, tmp];
   return React.useMemo(() => {
@@ -21,10 +22,10 @@ export default function useResubscribeSubscriptionParams(arg0) {
       tmp2 = null;
       if (null != closure_1) {
         const obj = { requestIdentifier: null, subscriptionId: null };
-        obj[0] = callback(outer1_2[2]).v4();
+        obj[0] = callback(closure_1_2[2]).v4();
         obj[1] = tmp;
         tmp2 = obj;
-        const obj2 = callback(outer1_2[2]);
+        const obj2 = callback(closure_1_2[2]);
       }
     }
     return tmp2;

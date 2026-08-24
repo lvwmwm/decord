@@ -1,11 +1,14 @@
-// Module ID: 8291
-// Function ID: 8292
+// Module ID: 8331
+// Function ID: 8332
 // Name: FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS
-// Dependencies: [3618, 2]
+// Dependencies: [3621, 2]
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince
 
-// Module 8291 (FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS)
-const result = require("set").fileFinishedImporting("modules/premium/gifting/shared/FriendAnniversaryUtils.tsx");
+// Module 8331 (FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS)
+import set from "set" /* 2 */;
+import _mod3621 from "module_3621" /* 3621 */;
+
+const result = set.fileFinishedImporting("modules/premium/gifting/shared/FriendAnniversaryUtils.tsx");
 
 export const FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS = 7;
 export const isFriendAnniversary = function isFriendAnniversary(date) {
@@ -16,13 +19,13 @@ export const isFriendAnniversary = function isFriendAnniversary(date) {
   while (obj2 !== undefined) {
     let tmp3 = require;
     let tmp4 = dependencyMap;
-    let obj3 = require(3618);
+    let obj3 = _mod3621;
     let setYearResult = obj3.setYear(date, fullYear + tmp2);
     let tmp6 = setYearResult;
-    let obj4 = require(3618);
+    let obj4 = _mod3621;
     if (!obj4.isSameDay(setYearResult, date)) {
       let _Math = Math;
-      let tmp3Result = tmp3(3618);
+      let tmp3Result = tmp3(3621);
       let tmp7 = setYearResult;
       if (Math.abs(tmp3Result.differenceInDays(date, tmp6)) <= 7) {
         let tmp8 = obj2;
@@ -36,7 +39,7 @@ export const isFriendAnniversary = function isFriendAnniversary(date) {
   return false;
 };
 export const yearsSince = function yearsSince(friendsSince) {
-  const obj = require(3618);
+  const obj = _mod3621;
   return Math.round(obj.differenceInMonths(new Date(), friendsSince) / 12);
 };
 export const categorizeFriendAnniversariesByAffinity = function categorizeFriendAnniversariesByAffinity(closure_11, arg1, flag) {

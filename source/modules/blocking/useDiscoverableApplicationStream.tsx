@@ -1,51 +1,49 @@
-// Module ID: 9895
-// Function ID: 9896
+// Module ID: 9934
+// Function ID: 9935
 // Name: getDiscoverableApplicationStream
-// Dependencies: [4652, 4030, 676, 589, 2]
+// Dependencies: [4658, 4033, 676, 589, 2]
 // Exports: default
 
-// Module 9895 (getDiscoverableApplicationStream)
-import reset from "reset";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import { RelationshipTypes } from "ME";
+// Module 9934 (getDiscoverableApplicationStream)
+import closure_2 from "reset" /* 4658 */;
+import closure_3 from "markAllUserIdListsStale" /* 4033 */;
+import { RelationshipTypes } from "ME" /* 676 */;
 
 const require = arg1;
-function getDiscoverableApplicationStream(arg0) {
-  let obj;
-  let obj2;
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    const items = [reset, markAllUserIdListsStale];
+function getDiscoverableApplicationStream(id, items) {
+  let tmp = items;
+  if (items === undefined) {
+    items = [closure_2, closure_3];
     tmp = items;
   }
   [obj, obj2] = tmp;
-  if (null != arg0) {
-    let NONE = obj2.getRelationshipType(arg0);
+  if (null != id) {
+    let NONE = obj2.getRelationshipType(id);
   } else {
     NONE = RelationshipTypes.NONE;
   }
   let anyDiscoverableStreamForUser = null;
-  if (null != arg0) {
-    anyDiscoverableStreamForUser = obj.getAnyDiscoverableStreamForUser(arg0);
+  if (null != id) {
+    anyDiscoverableStreamForUser = obj.getAnyDiscoverableStreamForUser(id);
   }
   let tmp6 = null;
   if (NONE !== RelationshipTypes.BLOCKED) {
     tmp6 = null;
-    if (null != arg0) {
+    if (null != id) {
       tmp6 = anyDiscoverableStreamForUser;
     }
   }
   return tmp6;
 }
-const result = require("ME").fileFinishedImporting("modules/blocking/useDiscoverableApplicationStream.tsx");
+const result = require("set").fileFinishedImporting("modules/blocking/useDiscoverableApplicationStream.tsx");
 
 export default function useDiscoverableApplicationStream(arg0) {
   const _require = arg0;
-  let items = [reset, markAllUserIdListsStale];
+  let items = [closure_2, closure_3];
   const items1 = [arg0];
   return _require(589).useStateFromStores(items, () => {
-    const items = [outer1_2, outer1_3];
-    return outer1_5(closure_0, items);
+    const items = [closure_1_2, closure_1_3];
+    return closure_1_5(closure_0, items);
   }, items1);
 };
 export { getDiscoverableApplicationStream };

@@ -1,17 +1,21 @@
-// Module ID: 15843
-// Function ID: 15844
+// Module ID: 15940
+// Function ID: 15941
 // Name: FormSubmitErrorType
-// Dependencies: [1236, 7608, 2]
+// Dependencies: [1236, 7646, 2]
 // Exports: makeApiNameRequiredError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTitleError, renderError
 
-// Module 15843 (FormSubmitErrorType)
+// Module 15940 (FormSubmitErrorType)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAutomodErrorMessageFromErrorResponse from "getAutomodErrorMessageFromErrorResponse" /* 7646 */;
+
 let obj = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", ApiValidation: 2, [2]: "ApiValidation" };
-const result = require("set").fileFinishedImporting("modules/threads/FormError.tsx");
+const result = set.fileFinishedImporting("modules/threads/FormError.tsx");
 
 export const FormSubmitErrorType = obj;
 export const makeEmptyTitleError = function makeEmptyTitleError() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  let stringResult = intl.string(require(1236) /* getSystemLocale */.t.uXA573);
+  const intl = getSystemLocale.intl;
+  let stringResult = intl.string(getSystemLocale.t.uXA573);
   obj = { type: obj.EmptyContent, message: null };
   if (stringResult == null) {
     stringResult = null;
@@ -20,8 +24,8 @@ export const makeEmptyTitleError = function makeEmptyTitleError() {
   return obj;
 };
 export const makeEmptyMessageError = function makeEmptyMessageError() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  let stringResult = intl.string(require(1236) /* getSystemLocale */.t.kesTVT);
+  const intl = getSystemLocale.intl;
+  let stringResult = intl.string(getSystemLocale.t.kesTVT);
   obj = { type: obj.EmptyContent, message: null };
   if (stringResult == null) {
     stringResult = null;
@@ -30,8 +34,8 @@ export const makeEmptyMessageError = function makeEmptyMessageError() {
   return obj;
 };
 export const makeApiNameRequiredError = function makeApiNameRequiredError() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  let stringResult = intl.string(require(1236) /* getSystemLocale */.t.uXA573);
+  const intl = getSystemLocale.intl;
+  let stringResult = intl.string(getSystemLocale.t.uXA573);
   obj = { type: obj.ApiValidation, message: null };
   if (stringResult == null) {
     stringResult = null;
@@ -40,7 +44,7 @@ export const makeApiNameRequiredError = function makeApiNameRequiredError() {
   return obj;
 };
 export const makeAutomodViolationError = function makeAutomodViolationError(errorResponseBody, id) {
-  let obj = require(7608) /* getAutomodErrorMessageFromErrorResponse */;
+  obj = getAutomodErrorMessageFromErrorResponse;
   id = undefined;
   if (id != null) {
     id = id.id;

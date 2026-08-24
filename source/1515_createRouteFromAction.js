@@ -4,15 +4,16 @@
 // Dependencies: [1509, 1513]
 
 // Module 1515 (createRouteFromAction)
-const require = arg1;
+import nanoid from "nanoid" /* 1509 */;
+import createParamsFromAction from "createParamsFromAction" /* 1513 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.createRouteFromAction = function createRouteFromAction(routeParamList) {
   const action = routeParamList.action;
   const name = action.payload.name;
-  const obj = { key: null, name: null, params: null };
-  obj[0] = "" + name + "-" + require(1509) /* nanoid */.nanoid();
-  obj[1] = name;
-  const obj2 = require(1509) /* nanoid */;
-  obj[2] = require(1513) /* createParamsFromAction */.createParamsFromAction({ action, routeParamList: routeParamList.routeParamList });
+  const obj = { key: "" + name + "-" + nanoid.nanoid(), name, params: null };
+  const obj2 = nanoid;
+  obj[2] = createParamsFromAction.createParamsFromAction({ action, routeParamList: routeParamList.routeParamList });
   return obj;
 };

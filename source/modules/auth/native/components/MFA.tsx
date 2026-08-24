@@ -1,24 +1,23 @@
-// Module ID: 15242
-// Function ID: 15243
+// Module ID: 15306
+// Function ID: 15307
 // Name: statesAreEqual
-// Dependencies: [19, 1218, 21, 12, 1500, 8582, 589, 5256, 15120, 501, 712, 2]
+// Dependencies: [19, 1218, 21, 12, 1500, 8621, 589, 5261, 15184, 501, 712, 2]
 // Exports: default
 
-// Module 15242 (statesAreEqual)
-import noop from "noop";
-import fetchFingerprint from "fetchFingerprint";
-import { jsx } from "jsxProd";
+// Module 15306 (statesAreEqual)
+import applyDefault from "apply" /* 12 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 function statesAreEqual(arg0, arg1) {
-  return importDefault(12).isEqual(arg0, arg1);
+  return applyDefault.isEqual(arg0, arg1);
 }
 let closure_7 = { flex: 1, position: "relative" };
-const result = require("jsxProd").fileFinishedImporting("modules/auth/native/components/MFA.tsx");
+const result = require("set").fileFinishedImporting("modules/auth/native/components/MFA.tsx");
 
 export default function ConnectedMFA() {
-  let inContainer;
-  let isMultiAccount;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -27,19 +26,16 @@ export default function ConnectedMFA() {
   let navigation;
   navigation = isMultiAccount(1500).useNavigation();
   if (inContainer) {
-    inContainer = navigation(8582)();
+    inContainer = navigation(8621)();
   }
   let tmpResult = tmp(589);
-  const items = [fetchFingerprint];
+  const items = [closure_4];
   const items1 = [isMultiAccount];
   const stateFromStores = tmpResult.useStateFromStores(items, () => ({ ticket: store.getMFATicket(), methods: store.getMFAMethods() }), [], statesAreEqual);
   const items2 = [navigation];
   const callback = React.useCallback((arg0) => {
-    let data;
-    let mfaType;
-    let ticket;
     ({ mfaType, data, ticket } = arg0);
-    let obj = navigation(outer1_2[7]);
+    let obj = navigation(closure_1_2[7]);
     obj = { code: data, ticket, mfaType, isMultiAccount };
     return obj.loginMFAv2(obj);
   }, items1);
@@ -67,7 +63,7 @@ export default function ConnectedMFA() {
       tmp13 = obj;
     }
     obj[7] = tmp13;
-    return jsx(tmp(15120).MFAModal, obj);
+    return jsx(tmp(15184).MFAModal, obj);
   } else {
     tmpResult = tmp(501);
     let space = tmp4(712).space;

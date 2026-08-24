@@ -4,13 +4,17 @@
 // Dependencies: [823, 824, 848]
 
 // Module 895 (initAndBind)
-const require = arg1;
+import __SENTRY_DEBUG__ from "__SENTRY_DEBUG__" /* 823 */;
+import consoleSandbox from "consoleSandbox" /* 824 */;
+import getClient from "getClient" /* 848 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.initAndBind = function initAndBind(arg0, debug) {
   if (true === debug.debug) {
-    const obj = require(824) /* consoleSandbox */;
-    if (require(823) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
+    const obj = consoleSandbox;
+    if (__SENTRY_DEBUG__.DEBUG_BUILD) {
       debug = obj.debug;
       debug.enable();
     } else {
@@ -19,16 +23,16 @@ arg5.initAndBind = function initAndBind(arg0, debug) {
       });
     }
   }
-  const currentScope = require(848) /* getClient */.getCurrentScope();
+  const currentScope = getClient.getCurrentScope();
   currentScope.update(debug.initialScope);
   const obj4 = new arg0(debug);
-  const obj2 = require(848) /* getClient */;
-  const currentScope1 = require(848) /* getClient */.getCurrentScope();
+  const obj2 = getClient;
+  const currentScope1 = getClient.getCurrentScope();
   currentScope1.setClient(obj4);
   obj4.init();
   return obj4;
 };
 arg5.setCurrentClient = function setCurrentClient(arg0) {
-  const currentScope = require(848) /* getClient */.getCurrentScope();
+  const currentScope = getClient.getCurrentScope();
   currentScope.setClient(arg0);
 };

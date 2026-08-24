@@ -1,13 +1,14 @@
-// Module ID: 17047
-// Function ID: 17048
+// Module ID: 17140
+// Function ID: 17141
 // Name: handleAuthenticatorDelete
-// Dependencies: [5, 1218, 5038, 5265, 2]
+// Dependencies: [5, 1218, 5043, 5270, 2]
 
-// Module 17047 (handleAuthenticatorDelete)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import fetchFingerprint from "fetchFingerprint";
-import "initialize";
+// Module 17140 (handleAuthenticatorDelete)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
 
+initializeDefault;
 class WebAuthnSignalManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -30,7 +31,7 @@ prototype["handleAuthenticatorDelete"] = function handleAuthenticatorDelete(cred
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -45,7 +46,7 @@ prototype["handleAuthenticatorDelete"] = function handleAuthenticatorDelete(cred
             obj[0] = arg1;
             return obj;
           } else {
-            let obj1 = v0(table[3]);
+            obj1 = v0(table[3]);
             table = 1;
             v0 = 1;
             obj1 = { value: null, done: false };
@@ -62,7 +63,7 @@ prototype["handleAuthenticatorDelete"] = function handleAuthenticatorDelete(cred
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         v0 = tmp;
@@ -85,7 +86,7 @@ prototype["handleWebAuthnCredentialsLoaded"] = function handleWebAuthnCredential
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -100,8 +101,8 @@ prototype["handleWebAuthnCredentialsLoaded"] = function handleWebAuthnCredential
             obj[0] = arg1;
             return obj;
           } else {
-            const id = outer1_3.getId();
-            let obj1 = v0(table[3]);
+            const id = closure_1_3.getId();
+            obj1 = v0(table[3]);
             table = 1;
             v0 = 1;
             obj1 = { value: null, done: false };
@@ -118,7 +119,7 @@ prototype["handleWebAuthnCredentialsLoaded"] = function handleWebAuthnCredential
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         v0 = tmp;
@@ -141,7 +142,7 @@ prototype["handleCurrentUserUpdate"] = function handleCurrentUserUpdate(user) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -156,7 +157,7 @@ prototype["handleCurrentUserUpdate"] = function handleCurrentUserUpdate(user) {
             obj[0] = arg1;
             return obj;
           } else {
-            let obj1 = v0(table[3]);
+            obj1 = v0(table[3]);
             table = 1;
             v0 = 1;
             obj1 = { value: null, done: false };
@@ -173,7 +174,7 @@ prototype["handleCurrentUserUpdate"] = function handleCurrentUserUpdate(user) {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         v0 = tmp;
@@ -183,6 +184,6 @@ prototype["handleCurrentUserUpdate"] = function handleCurrentUserUpdate(user) {
   })();
 };
 const webAuthnSignalManager = new WebAuthnSignalManager();
-const result = require("initialize").fileFinishedImporting("modules/webauthn/WebAuthnSignalManager.tsx");
+const result = require("set").fileFinishedImporting("modules/webauthn/WebAuthnSignalManager.tsx");
 
 export default webAuthnSignalManager;

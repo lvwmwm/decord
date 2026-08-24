@@ -1,19 +1,19 @@
-// Module ID: 4840
-// Function ID: 4841
+// Module ID: 4845
+// Function ID: 4846
 // Name: NativePermissionsRequestOptions
-// Dependencies: [4841, 4842, 4843, 4847, 2, 4844]
+// Dependencies: [4846, 4847, 4848, 4852, 2, 4849]
 
-// Module 4840 (NativePermissionsRequestOptions)
-import { ProcessArgs } from "get";
-import importDefaultResult from "isEnabled";
+// Module 4845 (NativePermissionsRequestOptions)
+import { ProcessArgs } from "get" /* 4847 */;
+import importDefaultResult from "isEnabled" /* 4846 */;
 
-require("isEnabled").initialize();
+importDefaultResult.initialize();
 if (ProcessArgs.isDiscordTestSet()) {
   let _default = require("requestPermissionCore").default;
 } else {
   _default = require("combineStatuses").default;
 }
-const result = require("requestPermissionCore").fileFinishedImporting("modules/native_permissions/NativePermissionUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/native_permissions/NativePermissionUtils.tsx");
 
 export default _default;
 export const NativePermissionsRequestOptions = require("requestAuthorization").NativePermissionsRequestOptions;

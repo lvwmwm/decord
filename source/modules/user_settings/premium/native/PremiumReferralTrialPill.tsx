@@ -1,29 +1,35 @@
-// Module ID: 12851
-// Function ID: 12852
+// Module ID: 12906
+// Function ID: 12907
 // Name: PremiumReferralTrialPill
-// Dependencies: [17, 21, 4661, 712, 4734, 1236, 2]
+// Dependencies: [17, 21, 4668, 712, 4739, 1236, 2]
 // Exports: PremiumReferralTrialPill
 
-// Module 12851 (PremiumReferralTrialPill)
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12906 (PremiumReferralTrialPill)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+const View = get_ActivityIndicator.View;
+const jsx = jsxProd.jsx;
 let obj = { pillParent: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "center" }, pillParentExtraMargin: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "center", marginTop: 36, marginBottom: 20 }, pillContainer: null, text: null };
-obj = { backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", margin: 8, paddingHorizontal: 8, overflow: "visible" };
+obj = { backgroundColor: ThemesDefault.colors.WHITE, borderRadius: ThemesDefault.radii.round, alignItems: "center", justifyContent: "center", margin: 8, paddingHorizontal: 8, overflow: "visible" };
 obj[2] = obj;
 obj[3] = { color: "#AC46C3", paddingHorizontal: 1, paddingBottom: 2, textAlign: "center" };
 let closure_4 = createCacheKey.createStyles(obj);
-const result = require("createCacheKey").fileFinishedImporting("modules/user_settings/premium/native/PremiumReferralTrialPill.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/premium/native/PremiumReferralTrialPill.tsx");
 
 export const PremiumReferralTrialPill = (hasExtraMargin) => {
   const tmp = callback();
   let obj = { style: hasExtraMargin.hasExtraMargin ? tmp.pillParentExtraMargin : tmp.pillParent, children: null };
   obj = { style: tmp.pillContainer, children: null };
   obj = { variant: "text-xs/bold", style: tmp.text, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.Y1q7js).toUpperCase();
-  obj[1] = jsx(require(4734) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text, children: null });
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.Y1q7js).toUpperCase();
+  obj[1] = jsx(Text.Text, { variant: "text-xs/bold", style: tmp.text, children: null });
   obj[1] = <View variant="text-xs/bold" style={tmp.text}>{null}</View>;
   return <View variant="text-xs/bold" style={tmp.text}>{null}</View>;
 };

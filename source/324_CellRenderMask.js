@@ -4,13 +4,14 @@
 // Dependencies: [32, 41, 42, 38]
 
 // Module 324 (CellRenderMask)
-import _slicedToArray from "_slicedToArray";
-import _classCallCheck from "_classCallCheck";
+import _createClassDefault from "_createClass" /* 42 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "_classCallCheck" /* 41 */;
 
 const CellRenderMask = importDefault;
 class CellRenderMask {
   constructor(arg0) {
-    tmp = outer1_3(this, CellRenderMask);
+    tmp = closure_3(this, CellRenderMask);
     tmp2 = require("module_38")(global >= 0, "CellRenderMask must contain a non-negative number os cells");
     this._numCells = global;
     if (0 === global) {
@@ -36,10 +37,6 @@ let items = [
   {
     key: "addCells",
     value: function addCells(VirtualizedList) {
-      let last;
-      let splice;
-      let tmp24;
-      let tmp25;
       let self = this;
       let tmp2 = VirtualizedList.first >= 0;
       if (tmp2) {
@@ -108,7 +105,7 @@ let items = [
     key: "equals",
     value: function equals(_numCells) {
       const self = this;
-      let closure_0 = _numCells;
+      closure_0 = _numCells;
       let everyResult = this._numCells === _numCells._numCells && self._regions.length === _numCells._regions.length;
       if (everyResult) {
         const _regions = self._regions;
@@ -158,4 +155,4 @@ let items = [
   }
 ];
 
-export const CellRenderMask = require("_createClass")(CellRenderMask, items);
+export const CellRenderMask = _createClassDefault(CellRenderMask, items);

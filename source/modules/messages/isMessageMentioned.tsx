@@ -1,21 +1,15 @@
-// Module ID: 4819
-// Function ID: 4820
+// Module ID: 4824
+// Function ID: 4825
 // Name: isMentioned
-// Dependencies: [1391, 1990, 1910, 2]
+// Dependencies: [1391, 1991, 1910, 2]
 // Exports: default, isRawMessageMentioned
 
-// Module 4819 (isMentioned)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
+// Module 4824 (isMentioned)
+import closure_0 from "ensureGuildLoaded" /* 1391 */;
+import closure_1 from "trackCommunicationDisabled" /* 1991 */;
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
 
 function isMentioned(suppressRoles) {
-  let channelId;
-  let mentionEveryone;
-  let mentionRoles;
-  let mentionUsers;
-  let suppressEveryone;
-  let userId;
   ({ userId, mentionUsers, mentionRoles, suppressEveryone } = suppressRoles);
   ({ channelId, mentionEveryone } = suppressRoles);
   if (suppressEveryone === undefined) {
@@ -60,11 +54,9 @@ function isMentioned(suppressRoles) {
     return false;
   }
 }
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/messages/isMessageMentioned.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/isMessageMentioned.tsx");
 
 export default function isMessageMentioned(suppressRoles) {
-  let message;
-  let suppressEveryone;
   ({ message, suppressEveryone } = suppressRoles);
   if (suppressEveryone === undefined) {
     suppressEveryone = false;
@@ -76,8 +68,6 @@ export default function isMessageMentioned(suppressRoles) {
   return isMentioned({ userId: suppressRoles.userId, channelId: message.channel_id, mentionEveryone: message.mentionEveryone, mentionUsers: message.mentions, mentionRoles: message.mentionRoles, suppressEveryone, suppressRoles: flag });
 };
 export const isRawMessageMentioned = function isRawMessageMentioned(suppressRoles) {
-  let rawMessage;
-  let suppressEveryone;
   ({ rawMessage, suppressEveryone } = suppressRoles);
   if (suppressEveryone === undefined) {
     suppressEveryone = false;

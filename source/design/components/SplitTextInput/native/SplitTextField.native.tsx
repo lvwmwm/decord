@@ -1,30 +1,27 @@
-// Module ID: 8604
-// Function ID: 8605
+// Module ID: 8641
+// Function ID: 8642
 // Name: SplitTextField
-// Dependencies: [19, 17, 21, 7345, 7339, 7340, 7344, 7347, 2]
+// Dependencies: [19, 17, 21, 7383, 7377, 7378, 7382, 7385, 2]
 
-// Module 8604 (SplitTextField)
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 8641 (SplitTextField)
+import useTextFieldState from "useTextFieldState" /* 7377 */;
+import useInputClearButton from "useInputClearButton" /* 7378 */;
+import useInputStyles from "useInputStyles" /* 7383 */;
+import BaseTextField from "BaseTextField" /* 7385 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-let c3;
-let obj1;
-const require = arg1;
+require = arg1;
 ({ Pressable: obj1, View: c3 } = get_ActivityIndicator);
-const forwardRefResult = require("noop").forwardRef((size, ref) => {
-  let innerRef;
-  let inputProps;
-  let inputStyle;
-  let state;
-  let trailing;
-  let obj = require(7345) /* useInputStyles */;
+const forwardRefResult = importAllResult.forwardRef((size, ref) => {
+  let obj = useInputStyles;
   obj = { size: size.size, isRound: size.isRound };
   const inputStyles = obj.useInputStyles(obj);
-  let obj2 = require(7339) /* useTextFieldState */;
+  let obj2 = useTextFieldState;
   const textField = obj2.useTextField(size, ref);
   ({ inputProps, innerRef, state } = textField);
-  let obj3 = require(7340) /* useInputClearButton */;
+  let obj3 = useInputClearButton;
   const inputClearButtonConfig = obj3.useInputClearButtonConfig(size, state);
   let tmp6;
   if (null != inputClearButtonConfig) {
@@ -32,14 +29,14 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
     ({ content: obj5[0], pressableProps: obj5[1] } = inputClearButtonConfig);
     tmp6 = obj;
   }
-  let tmpResult = tmp(7344);
+  let tmpResult = tmp(7382);
   const inputAttachments = tmpResult.useInputAttachments(size, tmp6);
   let tmp8 = null;
   ({ trailing, inputStyle } = inputAttachments);
   if (null != size.leadingText) {
     tmp8 = null;
     if (size.leadingText.length > 0) {
-      const obj1 = { style: null, children: null };
+      obj1 = { style: null, children: null };
       obj1[0] = inputStyles.splitBorder;
       obj2 = { style: null };
       obj2[0] = function style(pressed) {
@@ -51,7 +48,7 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
         return items;
       };
       const merged = Object.assign(size.leadingPressableProps);
-      tmpResult = tmp(7344);
+      tmpResult = tmp(7382);
       obj2.children = tmpResult.renderInputAttachment(undefined, size.leadingText, inputStyles.text);
       obj1[1] = <closure_2 style={null} />;
       tmp8 = <closure_3 style={null}>{null}</closure_3>;
@@ -63,8 +60,8 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
   obj3.leading = tmp8;
   obj3.trailing = trailing;
   obj3.inputStyle = inputStyle;
-  return jsx(require(7347) /* BaseTextField */.BaseTextField, {});
+  return jsx(BaseTextField.BaseTextField, {});
 });
-const result = require("jsxProd").fileFinishedImporting("design/components/SplitTextInput/native/SplitTextField.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/SplitTextInput/native/SplitTextField.native.tsx");
 
 export const SplitTextField = forwardRefResult;

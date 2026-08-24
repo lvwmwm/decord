@@ -4,14 +4,16 @@
 // Dependencies: [1019]
 
 // Module 1022 (items)
-const require = arg1;
+import noop from "noop" /* 1019 */;
+
+require = arg1;
 let dependencyMap = arg6;
 const items = [ReferenceError, TypeError, RangeError];
 let c3 = false;
 arg5.disable = function disable() {
-  let c3 = false;
-  require(1019) /* noop */._37 = null;
-  require(1019) /* noop */._87 = null;
+  c3 = false;
+  noop._37 = null;
+  noop._87 = null;
 };
 arg5.enable = function enable(arg0) {
   let obj = arg0;
@@ -24,10 +26,10 @@ arg5.enable = function enable(arg0) {
         whitelist = c2;
       }
       error = dependencyMap[arg0].error;
-      allRejections = whitelist.some((arg0) => error instanceof arg0);
+      allRejections = whitelist.some((arg0) => closure_0 instanceof arg0);
     }
     if (allRejections) {
-      let closure_2 = tmp4 + 1;
+      closure_2 = tmp4 + 1;
       dependencyMap[arg0].displayId = +closure_2;
       dependencyMap[arg0].logged = true;
       if (obj.onUnhandled) {
@@ -58,8 +60,8 @@ arg5.enable = function enable(arg0) {
     obj(1019)._87 = null;
   }
   closure_3 = true;
-  const dependencyMap = 0;
-  let c2 = 0;
+  dependencyMap = 0;
+  c2 = 0;
   closure_3 = {};
   obj(1019)._37 = (_65) => {
     let _51 = _65;
@@ -90,13 +92,13 @@ arg5.enable = function enable(arg0) {
   };
   obj(1019)._87 = (_40) => {
     if (0 === _40._40) {
-      let closure_1 = tmp3 + 1;
+      closure_1 = tmp3 + 1;
       _40._51 = +closure_1;
-      const obj = { displayId: null, error: null, timeout: null, logged: false };
+      obj = { displayId: null, error: null, timeout: null, logged: false };
       obj[1] = arg1;
-      let closure_0 = arg1;
+      closure_0 = arg1;
       let num = 2000;
-      if (c2.some((arg0) => error instanceof arg0)) {
+      if (c2.some((arg0) => closure_0 instanceof arg0)) {
         num = 100;
       }
       obj[2] = setTimeout(onUnhandled.bind(null, _40._51), num);

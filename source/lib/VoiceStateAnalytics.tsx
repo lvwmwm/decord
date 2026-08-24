@@ -1,16 +1,17 @@
-// Module ID: 13099
-// Function ID: 13100
+// Module ID: 13155
+// Function ID: 13156
 // Name: updateVoiceStates
-// Dependencies: [4497, 4542, 4545, 4529, 12, 2]
+// Dependencies: [4501, 4547, 4550, 4534, 12, 2]
 
-// Module 13099 (updateVoiceStates)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import updateVoiceState from "updateVoiceState";
-import getVoiceStatesForGuild from "getVoiceStatesForGuild";
-import { SpeakingFlags } from "DesktopSources";
+// Module 13155 (updateVoiceStates)
+import apply from "apply" /* 12 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_3 from "updateVoiceState" /* 4547 */;
+import closure_4 from "getVoiceStatesForGuild" /* 4550 */;
+import { SpeakingFlags } from "DesktopSources" /* 4534 */;
 
-const require = arg1;
-const result = require("getVoiceStatesForGuild").fileFinishedImporting("lib/VoiceStateAnalytics.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("lib/VoiceStateAnalytics.tsx");
 class VoiceStateAnalytics {
   constructor(arg0, arg1) {
     obj = Object.create(new.target.prototype);
@@ -32,7 +33,7 @@ prototype["updateVoiceStates"] = function updateVoiceStates(userId, channelId) {
     const totalParticipants = self.totalParticipants;
     totalParticipants.add(userId);
     const _Math = Math;
-    self.maxVoiceStateCount = Math.max(getVoiceStatesForGuild.countVoiceStatesForChannel(channelId), self.maxVoiceStateCount);
+    self.maxVoiceStateCount = Math.max(closure_4.countVoiceStatesForChannel(channelId), self.maxVoiceStateCount);
   } else {
     if (tmp2) {
       self.totalSpeakers[userId] = SpeakingFlags.NONE;
@@ -55,10 +56,10 @@ prototype["getUserVoiceSettingsStats"] = function getUserVoiceSettingsStats(arg0
   set.delete(this.userId);
   const obj = { num_local_voice_user_mutes: null, num_local_voice_volumes: null };
   let arr = Array.from(set);
-  obj[0] = require(12) /* apply */.intersection(arr, Array.from(this.totalParticipants)).length;
-  const obj4 = require(12) /* apply */;
+  obj[0] = apply.intersection(arr, Array.from(this.totalParticipants)).length;
+  const obj4 = apply;
   arr = Array.from(set1);
-  obj[1] = require(12) /* apply */.intersection(arr, Array.from(this.totalParticipants)).length;
+  obj[1] = apply.intersection(arr, Array.from(this.totalParticipants)).length;
   return obj;
 };
 prototype["setSpeaking"] = function setSpeaking(userId, speaking) {

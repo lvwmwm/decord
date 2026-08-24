@@ -1,13 +1,16 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 16666
+// Function ID: 16667
 // Name: getActivityReportOptions
-// Dependencies: [4481, 1236, 2]
+// Dependencies: [4485, 1236, 2]
 // Exports: default
 
-// Module 16570 (getActivityReportOptions)
-import { ActivityFeedbackReasons } from "items3";
+// Module 16666 (getActivityReportOptions)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import items3 from "items3" /* 4485 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/getActivityReportOptions.tsx");
+const ActivityFeedbackReasons = items3.ActivityFeedbackReasons;
+const result = set.fileFinishedImporting("modules/activities/getActivityReportOptions.tsx");
 
 export default function getActivityReportOptions(arg0) {
   let flag = arg1;
@@ -15,9 +18,9 @@ export default function getActivityReportOptions(arg0) {
     flag = false;
   }
   let obj = { value: ActivityFeedbackReasons.FAILED_LOAD, label: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   const string = intl.string;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (arg0) {
     let stringResult = string(t.uaiF6B);
     let tmp6 = tmp2;
@@ -49,7 +52,7 @@ export default function getActivityReportOptions(arg0) {
   }
   obj[1] = string3Result;
   items[2] = obj;
-  const obj1 = { value: ActivityFeedbackReasons.NOT_FUN, label: null };
+  obj1 = { value: ActivityFeedbackReasons.NOT_FUN, label: null };
   const intl4 = tmp6(1236).intl;
   const string4 = intl4.string;
   const t4 = tmp6(1236).t;

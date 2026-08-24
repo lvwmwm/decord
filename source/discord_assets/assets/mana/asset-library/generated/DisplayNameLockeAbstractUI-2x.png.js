@@ -1,10 +1,12 @@
-// Module ID: 5661
-// Function ID: 5662
+// Module ID: 5668
+// Function ID: 5669
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5661 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DisplayNameLockeAbstractUI-2x.png.js");
+// Module 5668 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DisplayNameLockeAbstractUI-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/05f6c2654ef93fa281c4d85b951529c90e24a4722ec056cfaf3d4dbb30f3bd27.png";
 export const metadata = { fileBytes: 51005 };

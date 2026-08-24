@@ -1,29 +1,30 @@
-// Module ID: 4384
-// Function ID: 4385
+// Module ID: 4388
+// Function ID: 4389
 // Name: _httpGetWithCountryCodeQuery
-// Dependencies: [5, 1218, 4041, 4042, 4045, 676, 4385, 4383, 4464, 1469, 4466, 530, 500, 1236, 2]
+// Dependencies: [5, 1218, 4044, 4045, 4048, 676, 4389, 4387, 4468, 1469, 4470, 530, 500, 1236, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 4384 (_httpGetWithCountryCodeQuery)
-import closure_2 from "ME";
-import fetchFingerprint from "fetchFingerprint";
-import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
-import handlePaymentSourceUpdate from "handlePaymentSourceUpdate";
-import reset from "reset";
-import ME from "ME";
-import { isMobile } from "isTablet";
-import importDefaultResult from "allSettled";
+// Module 4388 (_httpGetWithCountryCodeQuery)
+import set from "set" /* 500 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import handleImageLoad from "handleImageLoad" /* 1469 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "handlePaymentSourceCreateEnd" /* 4044 */;
+import closure_5 from "handlePaymentSourceUpdate" /* 4045 */;
+import closure_6 from "reset" /* 4048 */;
+import ME from "ME" /* 676 */;
+import { isMobile } from "isTablet" /* 4387 */;
+import importDefaultResult from "allSettled" /* 4389 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function _httpGetWithCountryCodeQuery() {
   let self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c7 = 0;
-    let c8 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c7 = 0;
+    c8 = 0;
     const iter = (function*(arg0) {
       if (merged === 2) {
         merged = 3;
@@ -36,7 +37,7 @@ function _httpGetWithCountryCodeQuery() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -57,7 +58,7 @@ function _httpGetWithCountryCodeQuery() {
               if (flag === undefined) {
                 flag = true;
               }
-              let c2;
+              c2 = undefined;
               let arr;
               let defaultBillingCountryCode;
               paymentSourceId = undefined;
@@ -74,7 +75,7 @@ function _httpGetWithCountryCodeQuery() {
                 throw arg1;
               } else if (arg0 === 2) {
                 merged = 3;
-                let obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -96,12 +97,12 @@ function _httpGetWithCountryCodeQuery() {
                       arr = arr.push(obj3.fetchIpCountryCode());
                     }
                     arr.push((function waitForSubscriptionsToBeFetched() {
-                      let closure_0;
+                      closure_0 = undefined;
                       closure_0 = _null((arg0) => {
-                        let closure_0 = arg0;
-                        let c2 = 0;
-                        let c3 = 0;
-                        return (/* F120893 */ function*() { ... })();
+                        closure_0 = arg0;
+                        c2 = 0;
+                        c3 = 0;
+                        return (/* F121923 */ function*() { ... })();
                       });
                       return new Promise(function() {
                         const self = this;
@@ -174,7 +175,7 @@ function _httpGetWithCountryCodeQuery() {
               }
               if (typeof obj3.query === "string") {
                 const _Error = Error;
-                const error = new Error("string query not supported");
+                error = new Error("string query not supported");
                 throw error;
               } else {
                 const obj4 = {};
@@ -201,7 +202,7 @@ function _httpGetWithCountryCodeQuery() {
     iter.next();
     return iter;
   });
-  const _httpGetWithCountryCodeQuery = tmp;
+  closure_10 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -210,8 +211,8 @@ function _httpGetWithCountryCodeQuery() {
   }
   return applyArgumentsResult;
 }
-({ Endpoints: error, OperatingSystems: metroImportAll } = ME);
-require("allSettled").shim();
+({ Endpoints: error, OperatingSystems: closure_8 } = ME);
+importDefaultResult.shim();
 let tmp4 = !isMobile;
 if (!isMobile) {
   tmp4 = !require("isTablet").isTablet;
@@ -220,8 +221,8 @@ if (tmp4) {
   tmp4 = -1 !== require("num2").getChromeVersion();
   let obj2 = require("num2");
 }
-let c9 = tmp4;
-const result = require("handlePaymentSourceCreateEnd").fileFinishedImporting("utils/StoreUtils.tsx");
+let closure_9 = tmp4;
+const result = require("set").fileFinishedImporting("utils/StoreUtils.tsx");
 
 export const SUPPORTS_WEBP = tmp4;
 export const getAssetURL = function getAssetURL(closure_7, mimeType, arg2, mp4) {
@@ -252,10 +253,10 @@ export const getAssetURL = function getAssetURL(closure_7, mimeType, arg2, mp4) 
   }
   let sum = combined;
   if (null != arg2) {
-    const obj = require(1469) /* handleImageLoad */;
+    const obj = handleImageLoad;
     const _HermesInternal3 = HermesInternal;
-    sum = combined + "?size=" + obj.getBestMediaProxySize(arg2 * require(1469) /* handleImageLoad */.getDevicePixelRatio());
-    const obj2 = require(1469) /* handleImageLoad */;
+    sum = combined + "?size=" + obj.getBestMediaProxySize(arg2 * handleImageLoad.getDevicePixelRatio());
+    const obj2 = handleImageLoad;
   }
   return sum;
 };
@@ -270,7 +271,7 @@ export const httpGetWithCountryCodeQuery = function httpGetWithCountryCodeQuery(
   return applyArgumentsResult;
 };
 export const nativePlatformTypeToSKUOperatingSystem = function nativePlatformTypeToSKUOperatingSystem(platform) {
-  if (require(500) /* set */.PlatformTypes.WINDOWS === platform) {
+  if (set.PlatformTypes.WINDOWS === platform) {
     return constants.WINDOWS;
   } else if (tmp(500).PlatformTypes.OSX === platform) {
     return constants.MACOS;
@@ -282,18 +283,18 @@ export const nativePlatformTypeToSKUOperatingSystem = function nativePlatformTyp
 };
 export const skuOperatingSystemToText = function skuOperatingSystemToText(arg0) {
   if (constants.WINDOWS === arg0) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(require(1236) /* getSystemLocale */.t["0/xHFO"]);
+    const intl3 = getSystemLocale.intl;
+    return intl3.string(getSystemLocale.t["0/xHFO"]);
   } else if (tmp.MACOS === arg0) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(require(1236) /* getSystemLocale */.t.E4u4n5);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(getSystemLocale.t.E4u4n5);
   } else if (tmp.LINUX === arg0) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.tcawo3);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.tcawo3);
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("Unknown operating system value: " + arg0);
+    error = new Error("Unknown operating system value: " + arg0);
     throw error;
   }
 };

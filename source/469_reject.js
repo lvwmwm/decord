@@ -4,10 +4,12 @@
 // Dependencies: [184, 38]
 
 // Module 469 (reject)
-const require = arg1;
+import _mod38 from "module_38" /* 38 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function reject(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const timerId = setTimeout(() => {
     throw closure_0;
   }, 0);
@@ -15,28 +17,28 @@ function reject(arg0) {
 arg5.default = {
   Events: { interactionStart: "interactionStart", interactionComplete: "interactionComplete" },
   runAfterInteractions(arg0) {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const promise = new Promise((arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       const immediate = setImmediate(() => {
         if (typeof callback === "object") {
           if (null !== obj) {
             if (typeof obj.gen === "function") {
-              obj.gen().then(callback, outer2_2);
+              obj.gen().then(callback, closure_2_2);
               const genResult = obj.gen();
             } else if (typeof obj.run === "function") {
               try {
                 obj.run();
                 callback();
               } catch (tmp12) {
-                outer2_2(callback(outer2_1[0]).default(tmp12));
-                const obj3 = callback(outer2_1[0]);
+                closure_2_2(callback(closure_2_1[0]).default(tmp12));
+                const obj3 = callback(closure_2_1[0]);
               }
             } else {
               const _TypeError2 = TypeError;
               const _HermesInternal = HermesInternal;
               const typeError = new TypeError("Task \"" + obj.name + "\" missing gen or run.");
-              outer2_2(typeError);
+              closure_2_2(typeError);
             }
           }
         }
@@ -45,13 +47,13 @@ arg5.default = {
             obj();
             callback();
           } catch (tmp4) {
-            outer2_2(callback(outer2_1[0]).default(tmp4));
-            const obj2 = callback(outer2_1[0]);
+            closure_2_2(callback(closure_2_1[0]).default(tmp4));
+            const obj2 = callback(closure_2_1[0]);
           }
         } else {
           const _TypeError = TypeError;
           const typeError1 = new TypeError("Invalid task of type: " + typeof obj);
-          outer2_2(typeError1);
+          closure_2_2(typeError1);
         }
       });
     });
@@ -67,7 +69,7 @@ arg5.default = {
     return -1;
   },
   clearInteractionHandle(current) {
-    require(38)(current, "InteractionManager: Must provide a handle to clear.");
+    _mod38(current, "InteractionManager: Must provide a handle to clear.");
   },
   addListener(arg0, arg1, arg2) {
     return {

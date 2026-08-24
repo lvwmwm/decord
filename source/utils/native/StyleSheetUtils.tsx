@@ -1,9 +1,11 @@
-// Module ID: 5434
-// Function ID: 5435
+// Module ID: 5439
+// Function ID: 5440
 // Name: getStyleProp
 // Dependencies: [2]
 
-// Module 5434 (getStyleProp)
+// Module 5439 (getStyleProp)
+import set from "set" /* 2 */;
+
 function getStyleProp(style, borderRadius) {
   if (null != borderRadius) {
     if ("" !== borderRadius) {
@@ -25,6 +27,6 @@ function getStyleProp(style, borderRadius) {
     }
   }
 }
-const result = require("set").fileFinishedImporting("utils/native/StyleSheetUtils.tsx");
+const result = set.fileFinishedImporting("utils/native/StyleSheetUtils.tsx");
 
 export default { getStyleProp };

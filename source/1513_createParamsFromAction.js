@@ -5,8 +5,6 @@
 
 // Module 1513 (createParamsFromAction)
 arg5.createParamsFromAction = function createParamsFromAction(routeParamList) {
-  let name;
-  let params;
   routeParamList = routeParamList.routeParamList;
   ({ name, params } = routeParamList.action.payload);
   let tmp = params;

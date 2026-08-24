@@ -5,12 +5,8 @@
 // Exports: useSyncExternalStoreWithSelector
 
 // Module 702 (is)
-import noop from "noop";
+import noop from "noop" /* 19 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
 if (typeof Object.is === "function") {
   const _Object = Object;
 } else {
@@ -34,8 +30,8 @@ if (typeof Object.is === "function") {
 
 export const useSyncExternalStoreWithSelector = (subscribe) => {
   const _require = arg1;
-  const dependencyMap = arg2;
-  let closure_2 = arg3;
+  dependencyMap = arg2;
+  closure_2 = arg3;
   let callback = arg4;
   let tmp = callback(null);
   if (null === tmp.current) {
@@ -47,15 +43,15 @@ export const useSyncExternalStoreWithSelector = (subscribe) => {
   }
   let items = [arg1, arg2, arg3, arg4];
   const tmp2 = syncExternalStore(() => {
-    let c2 = false;
+    c2 = false;
     let tmp = null;
     if (undefined !== closure_1) {
       tmp = closure_1;
     }
-    let closure_3 = tmp;
+    closure_3 = tmp;
     const items = [
       () => {
-        const tmp = outer1_0();
+        const tmp = closure_1_0();
         if (callback) {
           let tmp3 = closure_1;
           if (!callback(closure_0, tmp)) {
@@ -72,8 +68,8 @@ export const useSyncExternalStoreWithSelector = (subscribe) => {
           closure_0 = tmp;
           tmp3 = callback(tmp);
           if (undefined !== closure_3) {
-            if (outer1_4.hasValue) {
-              const value = outer1_4.value;
+            if (closure_1_4.hasValue) {
+              const value = closure_1_4.value;
               if (tmp4(value, tmp3)) {
                 closure_1 = value;
                 tmp3 = value;
@@ -89,12 +85,12 @@ export const useSyncExternalStoreWithSelector = (subscribe) => {
     let fn;
     if (null !== tmp) {
       fn = () => {
-        tmp = tmp();
+        const tmp = callback2();
         if (callback) {
           let tmp3 = closure_1;
           if (!callback(closure_0, tmp)) {
             let tmp10 = callback(tmp);
-            if (undefined === tmp) {
+            if (undefined === callback2) {
               closure_0 = tmp;
               closure_1 = tmp10;
             }
@@ -105,10 +101,10 @@ export const useSyncExternalStoreWithSelector = (subscribe) => {
           callback = true;
           closure_0 = tmp;
           tmp3 = callback(tmp);
-          if (undefined !== tmp) {
-            if (outer1_4.hasValue) {
-              const value = outer1_4.value;
-              if (tmp(value, tmp3)) {
+          if (undefined !== callback2) {
+            if (closure_1_4.hasValue) {
+              const value = closure_1_4.value;
+              if (callback2(value, tmp3)) {
                 closure_1 = value;
                 tmp3 = value;
               }

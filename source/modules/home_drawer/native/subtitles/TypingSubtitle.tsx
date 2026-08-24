@@ -1,36 +1,33 @@
-// Module ID: 15590
-// Function ID: 15591
+// Module ID: 15654
+// Function ID: 15655
 // Name: TypingSubtitle
-// Dependencies: [19, 17, 21, 15589, 6832, 6876, 4734, 2]
+// Dependencies: [19, 17, 21, 15653, 6870, 6914, 4739, 2]
 // Exports: default
 
-// Module 15590 (TypingSubtitle)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
+// Module 15654 (TypingSubtitle)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import styles from "styles" /* 15653 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-const result = require("jsxProd").fileFinishedImporting("modules/home_drawer/native/subtitles/TypingSubtitle.tsx");
+const result = require("set").fileFinishedImporting("modules/home_drawer/native/subtitles/TypingSubtitle.tsx");
 
 export default function TypingSubtitle(arg0) {
-  let channel;
-  let channelName;
-  let guild;
-  let text;
   ({ channel, channelName } = arg0);
   ({ guild, text } = arg0);
-  let obj = require(15589) /* styles */;
+  let obj = styles;
   const subtitleStyles = obj.useSubtitleStyles();
   let channelIconComponentWithGuild;
   if (null != channel) {
-    channelIconComponentWithGuild = tmp(6832).getChannelIconComponentWithGuild(channel, guild);
-    const tmpResult = tmp(6832);
+    channelIconComponentWithGuild = tmp(6870).getChannelIconComponentWithGuild(channel, guild);
+    const tmpResult = tmp(6870);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(6876).TextIcon;
+    channelIconComponentWithGuild = tmp(6914).TextIcon;
   }
   obj = { style: subtitleStyles.subtitleRow, children: null };
   let tmp7 = null;
@@ -40,17 +37,17 @@ export default function TypingSubtitle(arg0) {
     tmp7 = callback(channelIconComponentWithGuild, obj);
   }
   const items = [tmp7, ];
-  const obj1 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: null };
+  obj1 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: null };
   let tmp5Result = null;
   if (null != channelName) {
     const obj2 = { variant: "text-xs/medium", children: null };
     const items1 = [channelName, "  \u00B7  "];
     obj2[1] = items1;
-    tmp5Result = tmp5(tmp(4734).Text, obj2);
+    tmp5Result = tmp5(tmp(4739).Text, obj2);
   }
   const items2 = [tmp5Result, text];
   obj1[4] = items2;
-  items[1] = closure_4(require(4734) /* Text */.Text, obj1);
+  items[1] = closure_4(Text.Text, obj1);
   obj[1] = items;
   return closure_4(View, obj);
 };

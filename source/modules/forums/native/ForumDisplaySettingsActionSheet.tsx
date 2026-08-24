@@ -1,33 +1,22 @@
-// Module ID: 11942
-// Function ID: 11943
+// Module ID: 11991
+// Function ID: 11992
 // Name: ForumDisplaySettingsActionSheet
-// Dependencies: [32, 19, 1391, 11177, 21, 1236, 1400, 1401, 1402, 589, 4761, 7514, 7175, 6949, 8829, 6952, 4733, 712, 8101, 8100, 2]
+// Dependencies: [32, 19, 1391, 11229, 21, 1236, 1400, 1401, 1402, 589, 4766, 7552, 7213, 6987, 8866, 6990, 4738, 712, 8140, 8139, 2]
 // Exports: default
 
-// Module 11942 (ForumDisplaySettingsActionSheet)
-import _slicedToArray from "_slicedToArray";
-import TableRadioRow from "TableRadioRow";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import set from "set";
-import jsxProd from "jsxProd";
-import set from "ensureGuildLoaded";
+// Module 11991 (ForumDisplaySettingsActionSheet)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import set from "set" /* 11229 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 ({ useForumChannelStoreApi: closure_6, useForumChannelStore: error } = set);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let result = set.fileFinishedImporting("modules/forums/native/ForumDisplaySettingsActionSheet.tsx");
 
 export default function ForumDisplaySettingsActionSheet(channelId) {
-  let c10;
-  let c5;
-  let c6;
-  let c7;
-  let c8;
-  let c9;
   channelId = channelId.channelId;
   let stateFromStores;
   let sortOrder;
@@ -95,7 +84,7 @@ export default function ForumDisplaySettingsActionSheet(channelId) {
     obj = { title: null, leading: null };
     const intl = tmp(tmp2[5]).intl;
     obj[0] = intl.string(tmp(tmp2[5]).t.xyYt8A);
-    const obj1 = { onPress: null, label: null };
+    obj1 = { onPress: null, label: null };
     obj1[0] = tmp11;
     const intl2 = tmp(tmp2[5]).intl;
     obj1[1] = intl2.string(tmp(tmp2[5]).t.yBZMsQ);

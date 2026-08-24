@@ -1,40 +1,40 @@
-// Module ID: 16110
-// Function ID: 16111
+// Module ID: 16208
+// Function ID: 16209
 // Name: MessageRequestsScreen
-// Dependencies: [19, 4772, 676, 21, 11608, 9084, 10011, 16111, 10546, 2]
+// Dependencies: [19, 4777, 676, 21, 11657, 9121, 10050, 16209, 10585, 2]
 // Exports: default
 
-// Module 16110 (MessageRequestsScreen)
-import noop from "noop";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import { ME } from "ME";
-import { jsx } from "jsxProd";
+// Module 16208 (MessageRequestsScreen)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "generateOldThreadCutoff" /* 4777 */;
+import { ME } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsPreviewScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsPreviewScreen.tsx");
 
 export default function MessageRequestsScreen(route) {
   const channelId = route.route.params.channelId;
-  let obj = channelId(11608);
+  let obj = channelId(11657);
   const items = [channelId];
   const isMessageRequestRestrictedViewer = obj.useIsMessageRequestRestrictedViewer("MessageRequestsPreviewScreen");
   const effect = React.useEffect(() => {
-    let obj = outer1_1(outer1_2[5]);
-    obj = { channelId, messageId: outer1_4.lastMessageId(channelId) };
+    let obj = closure_1_1(closure_1_2[5]);
+    obj = { channelId, messageId: closure_1_4.lastMessageId(channelId) };
     const messages = obj.fetchMessages(obj);
   }, items);
   obj = { guildId: ME, channelId, children: null };
   if (isMessageRequestRestrictedViewer) {
     obj = { channelId: null };
     obj[0] = channelId;
-    let tmp5Result = tmp5(tmp7(16111), obj);
+    let tmp5Result = tmp5(tmp7(16209), obj);
   } else {
-    const obj1 = { guildId: null, channelId: null, chatInputRef: null, HACK_fixModalInteraction: true, screenIndex: "message-request" };
+    obj1 = { guildId: null, channelId: null, chatInputRef: null, HACK_fixModalInteraction: true, screenIndex: "message-request" };
     obj1[0] = tmp6;
     obj1[1] = channelId;
     obj1[2] = ref;
-    tmp5Result = tmp5(tmp7(10546), obj1);
+    tmp5Result = tmp5(tmp7(10585), obj1);
   }
   obj[2] = tmp5Result;
-  return jsx(channelId(10011).ChannelContainer, { guildId: ME, channelId, children: null });
+  return jsx(channelId(10050).ChannelContainer, { guildId: ME, channelId, children: null });
 };

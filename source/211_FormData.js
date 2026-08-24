@@ -4,8 +4,8 @@
 // Dependencies: [41, 42]
 
 // Module 211 (FormData)
-import FormData from "_classCallCheck";
-import _createClass from "_createClass";
+import _createClassDefault from "_createClass" /* 42 */;
+import FormData from "_classCallCheck" /* 41 */;
 
 class FormData {
   constructor() {
@@ -26,15 +26,13 @@ let items = [
   {
     key: "getAll",
     value: function getAll(arg0) {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       const _parts = this._parts;
       const found = _parts.filter((arg0) => {
-        let tmp;
         [tmp] = arg0;
         return tmp === closure_0;
       });
       return found.map((arg0) => {
-        let tmp;
         [, tmp] = arg0;
         return tmp;
       });
@@ -45,8 +43,6 @@ let items = [
     value: function getParts() {
       const _parts = this._parts;
       return _parts.map((arg0) => {
-        let tmp;
-        let tmp2;
         [tmp, tmp2] = arg0;
         let obj = { "content-disposition": `form-data; name="${tmp}"` };
         if (typeof tmp2 === "object") {
@@ -76,4 +72,4 @@ let items = [
   }
 ];
 
-export default _createClass(FormData, items);
+export default _createClassDefault(FormData, items);

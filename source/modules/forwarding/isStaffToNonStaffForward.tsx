@@ -1,16 +1,16 @@
-// Module ID: 9082
-// Function ID: 9083
+// Module ID: 9119
+// Function ID: 9120
 // Name: isStaffToNonStaffForward
 // Dependencies: [1391, 1910, 1922, 676, 2]
 // Exports: default
 
-// Module 9082 (isStaffToNonStaffForward)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { GuildFeatures } from "ME";
+// Module 9119 (isStaffToNonStaffForward)
+import closure_0 from "ensureGuildLoaded" /* 1391 */;
+import closure_1 from "createGuildRecordFromRust" /* 1910 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/forwarding/isStaffToNonStaffForward.tsx");
+const result = require("set").fileFinishedImporting("modules/forwarding/isStaffToNonStaffForward.tsx");
 
 export default function isStaffToNonStaffForward(channel_id, arr) {
   currentUser = currentUser.getCurrentUser();

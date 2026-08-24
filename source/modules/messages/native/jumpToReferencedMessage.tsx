@@ -1,11 +1,14 @@
-// Module ID: 11116
-// Function ID: 11117
+// Module ID: 11155
+// Function ID: 11156
 // Name: jumpToReferencedMessage
-// Dependencies: [7427, 2]
+// Dependencies: [7465, 2]
 // Exports: default
 
-// Module 11116 (jumpToReferencedMessage)
-const result = require("set").fileFinishedImporting("modules/messages/native/jumpToReferencedMessage.tsx");
+// Module 11155 (jumpToReferencedMessage)
+import set from "set" /* 2 */;
+import trackInviteDefault from "trackInvite" /* 7465 */;
+
+const result = set.fileFinishedImporting("modules/messages/native/jumpToReferencedMessage.tsx");
 
 export default function jumpToReferencedMessage(messageReference) {
   messageReference = messageReference.messageReference;
@@ -14,7 +17,7 @@ export default function jumpToReferencedMessage(messageReference) {
     channel_id = messageReference.channel_id;
   }
   if (tmp2) {
-    let obj = importDefault(7427);
+    let obj = trackInviteDefault;
     obj = { channelId: null, messageId: null, flash: true, returnMessageId: null };
     ({ channel_id: obj2[0], message_id: obj2[1] } = messageReference);
     obj[3] = messageReference.id;

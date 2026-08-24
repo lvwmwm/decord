@@ -1,18 +1,21 @@
-// Module ID: 13770
-// Function ID: 13771
+// Module ID: 13828
+// Function ID: 13829
 // Name: checkForNewerBuild
-// Dependencies: [4356, 3, 589, 709, 13366, 2]
+// Dependencies: [4360, 3, 589, 709, 13424, 2]
 
-// Module 13770 (checkForNewerBuild)
-import UPDATE_CHECK_INTERVAL from "UPDATE_CHECK_INTERVAL";
-import { Store } from "initialize";
+// Module 13828 (checkForNewerBuild)
+import set from "set" /* 2 */;
+import timestampDefault from "timestamp" /* 3 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import _checkForNewerBuild from "_checkForNewerBuild" /* 13424 */;
+import UPDATE_CHECK_INTERVAL from "UPDATE_CHECK_INTERVAL" /* 4360 */;
 
-let c3;
-let c4;
 ({ UPDATE_CONFIG: c3, UPDATE_CHECK_INTERVAL: c4 } = UPDATE_CHECK_INTERVAL);
-let c5 = new require("dispatcher")("MobileNativeUpdateStore");
+let closure_5 = new timestampDefault("MobileNativeUpdateStore");
 let closure_6 = { lastCheck: null, checking: false, newBuild: null };
 let c7 = null;
+const Store = initializeDefault.Store;
 class MobileNativeUpdateStore extends Store {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -23,17 +26,17 @@ class MobileNativeUpdateStore extends Store {
 const prototype = MobileNativeUpdateStore.prototype;
 prototype["checkForNewerBuild"] = function checkForNewerBuild() {
   if (true !== checking.checking) {
-    importDefault(709).dispatch({ type: "MOBILE_NATIVE_UPDATE_CHECK_STARTED" });
-    let obj = importDefault(709);
-    const obj2 = require(13366) /* _checkForNewerBuild */;
-    require(13366) /* _checkForNewerBuild */.checkForNewerBuild().then((newBuild) => {
+    dispatcherDefault.dispatch({ type: "MOBILE_NATIVE_UPDATE_CHECK_STARTED" });
+    let obj = dispatcherDefault;
+    const obj2 = _checkForNewerBuild;
+    _checkForNewerBuild.checkForNewerBuild().then((newBuild) => {
       let obj = callback(709);
       obj = { type: "MOBILE_NATIVE_UPDATE_CHECK_FINISHED", newBuild };
       obj.dispatch(obj);
     }, () => {
       callback(709).dispatch({ type: "MOBILE_NATIVE_UPDATE_CHECK_FAILED" });
     });
-    const checkForNewerBuildResult = require(13366) /* _checkForNewerBuild */.checkForNewerBuild();
+    const checkForNewerBuildResult = _checkForNewerBuild.checkForNewerBuild();
   }
 };
 prototype["ensureInitialized"] = function ensureInitialized() {
@@ -41,7 +44,7 @@ prototype["ensureInitialized"] = function ensureInitialized() {
   if (this.hasUpdatesConfigured) {
     if (null === interval) {
       function backgroundUpdateCheck() {
-        outer1_5.info("Checking for new native builds in the background");
+        closure_1_5.info("Checking for new native builds in the background");
         self.checkForNewerBuild();
       }
       const _setInterval = setInterval;
@@ -56,7 +59,7 @@ prototype["latestFetchedBuild"] = function latestFetchedBuild() {
   return closure_6;
 };
 MobileNativeUpdateStore.displayName = "MobileNativeUpdateStore";
-const mobileNativeUpdateStore = new MobileNativeUpdateStore(require("dispatcher"), {
+const mobileNativeUpdateStore = new MobileNativeUpdateStore(dispatcherDefault, {
   MOBILE_NATIVE_UPDATE_CHECK_STARTED: function handleCheckStarted() {
     const obj = {};
     const merged = Object.assign(obj);
@@ -68,9 +71,7 @@ const mobileNativeUpdateStore = new MobileNativeUpdateStore(require("dispatcher"
     obj.checking = false;
   },
   MOBILE_NATIVE_UPDATE_CHECK_FINISHED: function handleCheckFinished(newBuild) {
-    const obj = { lastCheck: null, checking: false, newBuild: null };
-    obj[0] = new Date();
-    obj[2] = newBuild.newBuild;
+    const obj = { lastCheck: new Date(), checking: false, newBuild: newBuild.newBuild };
   }
 });
 let obj = {
@@ -85,12 +86,10 @@ let obj = {
     obj.checking = false;
   },
   MOBILE_NATIVE_UPDATE_CHECK_FINISHED: function handleCheckFinished(newBuild) {
-    const obj = { lastCheck: null, checking: false, newBuild: null };
-    obj[0] = new Date();
-    obj[2] = newBuild.newBuild;
+    const obj = { lastCheck: new Date(), checking: false, newBuild: newBuild.newBuild };
   }
 };
-const tmp3 = new require("dispatcher")("MobileNativeUpdateStore");
-const result = require("initialize").fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateStore.tsx");
+const tmp3 = new timestampDefault("MobileNativeUpdateStore");
+const result = set.fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateStore.tsx");
 
 export default mobileNativeUpdateStore;

@@ -1,11 +1,14 @@
-// Module ID: 10917
-// Function ID: 10918
+// Module ID: 10956
+// Function ID: 10957
 // Name: result
 // Dependencies: [687, 11, 2]
 // Exports: default
 
-// Module 10917 (result)
-const result = 2 * require("set").Millis.HOUR;
+// Module 10956 (result)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import setDefault from "set" /* 687 */;
+
+const result = 2 * setDefault.Millis.HOUR;
 const result1 = require("set").fileFinishedImporting("modules/activities/utils/isInviteActive.tsx");
 
 export default function isInviteActive(party, activity) {
@@ -26,9 +29,9 @@ export default function isInviteActive(party, activity) {
       tmp2 = id !== party_id;
     }
     const _Date = Date;
-    const sum = importDefault(11).extractTimestamp(activity.id) + closure_2;
+    const sum = DISCORD_EPOCHDefault.extractTimestamp(activity.id) + closure_2;
     let tmp10 = null != party.application_id;
-    const obj = importDefault(11);
+    const obj = DISCORD_EPOCHDefault;
     if (tmp10) {
       tmp10 = party.application_id !== arg2;
     }

@@ -1,31 +1,34 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14623
+// Function ID: 14624
 // Name: GuildRoleSubscriptionsSectionHeader
-// Dependencies: [19, 17, 21, 4661, 4734, 1236, 1297, 14556, 14557, 14558, 14561, 14562, 2]
+// Dependencies: [19, 17, 21, 4668, 4739, 1236, 1297, 14624, 14625, 14626, 14629, 14630, 2]
 // Exports: default
 
-// Module 14555 (GuildRoleSubscriptionsSectionHeader)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14623 (GuildRoleSubscriptionsSectionHeader)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import useRestorePurchasesDefault from "useRestorePurchases" /* 14624 */;
+import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 14625 */;
+import useFetchListingsForGuild from "useFetchListingsForGuild" /* 14626 */;
+import LoadingIndicatorDefault from "LoadingIndicator" /* 14629 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function GuildRoleSubscriptionsSectionHeader() {
   const tmp = callback3();
   let obj = { style: tmp.sectionHeader, children: null };
   obj = { variant: "eyebrow", color: "text-default", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["KzCF/6"]);
-  const items = [callback(require(4734) /* Text */.Text, obj), ];
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t["KzCF/6"]);
+  const items = [callback(Text.Text, obj), ];
   obj = { style: tmp.sectionSubtitle, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl2.string(require(1236) /* getSystemLocale */.t["Y+ucR7"]);
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  const intl2 = getSystemLocale.intl;
+  obj[3] = intl2.string(getSystemLocale.t["Y+ucR7"]);
+  items[1] = callback(Text.Text, obj);
   obj[1] = items;
   return callback2(closure_3, obj);
 }
@@ -37,27 +40,28 @@ function renderSectionHeader(section) {
   return tmp;
 }
 function ItemSeparator() {
-  return callback(require(1297) /* Button */.Spacer, { size: 8 });
+  return callback(Button.Spacer, { size: 8 });
 }
+noopAll;
 ({ View: c3, SectionList: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let c7 = "role-subscriptions";
 let closure_8 = createCacheKey.createStyles({ container: { flex: 1 }, list: { flex: 1 }, listContentContainer: { paddingHorizontal: 16 }, sectionHeader: { paddingVertical: 24 }, sectionSubtitle: { marginTop: 4 } });
-const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/UserSettingsGuildRoleSubscriptions.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/UserSettingsGuildRoleSubscriptions.tsx");
 
 export default function UserSettingsGuildRoleSubscriptions() {
   const tmp = callback3();
-  importDefault(14556)({ forceRestore: true });
-  const tmp5 = importDefault(14557)({ ensureFresh: true });
-  let obj = require(14558) /* useFetchListingsForGuild */;
+  useRestorePurchasesDefault({ forceRestore: true });
+  const tmp5 = useActiveGuildSubscriptionsDefault({ ensureFresh: true });
+  let obj = useFetchListingsForGuild;
   if (obj.useFetchListingsForSubscriptions(tmp5).loading) {
-    let tmp6Result = tmp6(importDefault(14561), {});
+    let tmp6Result = tmp6(LoadingIndicatorDefault, {});
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.container;
     obj = { contentContainerStyle: null, style: null, sections: null, stickySectionHeadersEnabled: false, keyExtractor: null, renderSectionHeader: null, renderItem: null, ItemSeparatorComponent: null };
     ({ listContentContainer: obj3[0], list: obj3[1] } = tmp);
-    const obj1 = { key: null, data: null };
+    obj1 = { key: null, data: null };
     obj1[0] = c7;
     obj1[1] = tmp5;
     const items = [obj1];

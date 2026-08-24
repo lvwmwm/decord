@@ -1,21 +1,21 @@
-// Module ID: 10425
-// Function ID: 10426
+// Module ID: 10464
+// Function ID: 10465
 // Name: _handleDocumentSelection
-// Dependencies: [5, 676, 10426, 500, 4656, 1236, 5042, 2]
+// Dependencies: [5, 676, 10465, 500, 4662, 1236, 5047, 2]
 // Exports: handleDocumentSelection
 
-// Module 10425 (_handleDocumentSelection)
-import getSystemLocale from "getSystemLocale";
-import { AnalyticEvents } from "ME";
+// Module 10464 (_handleDocumentSelection)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;
 function _handleDocumentSelection() {
   const self = this;
   const tmp = callback(() => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     let iter = (function*() {
       if (c6 === 2) {
         c6 = 3;
@@ -28,7 +28,7 @@ function _handleDocumentSelection() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -43,11 +43,11 @@ function _handleDocumentSelection() {
               obj[0] = arg1;
               return obj;
             } else {
-              let dependencyMap = tmp3;
+              dependencyMap = tmp3;
               let extensions = tmp7;
               let flag;
               extensions = undefined;
-              let obj1 = flag;
+              obj1 = flag;
               if (flag === undefined) {
                 obj1 = {};
               }
@@ -57,7 +57,7 @@ function _handleDocumentSelection() {
               }
               extensions = obj1.extensions;
               dependencyMap = undefined;
-              let getSystemLocale;
+              closure_3 = undefined;
               c5 = 1;
               c6 = 1;
               return { value: "ct", done: true };
@@ -113,10 +113,10 @@ function _handleDocumentSelection() {
                   })(extensions);
                 }
               }
-              const outer1_2 = tmp54;
-              let c4 = 1;
-              let pick = callback(outer1_2[2]).pick;
-              let obj8 = callback(outer1_2[3]);
+              dependencyMap = tmp54;
+              c4 = 1;
+              let pick = callback(10465).pick;
+              let obj8 = callback(500);
               if (obj8.isIOS()) {
                 let obj3 = { mode: "open" };
               } else {
@@ -129,24 +129,24 @@ function _handleDocumentSelection() {
               pick = pick(obj4);
               c5 = 3;
               c6 = 1;
-              const tmp61 = callback(outer1_2[2]);
+              const tmp61 = callback(10465);
             }
           } else if (2 === tmp7) {
             c4 = 0;
-            c4 = getSystemLocale;
-            obj3 = flag(10426);
+            c4 = closure_3;
+            obj3 = flag(10465);
             if (obj3.isErrorWithCode(c4)) {
-              if (c4.code === flag(10426).errorCodes.OPERATION_CANCELED) {
+              if (c4.code === flag(10465).errorCodes.OPERATION_CANCELED) {
                 c6 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             }
-            obj4 = flag(5042);
+            obj4 = flag(5047);
             const obj5 = { error_message: null };
             const _JSON = JSON;
             obj5[0] = JSON.stringify(c4);
             obj4.trackWithMetadata(c4.MOBILE_FILE_PICKER_ERROR, obj5);
-            let obj6 = extensions(4656);
+            let obj6 = extensions(4662);
             obj6 = { title: null, body: null };
             const intl3 = flag(1236).intl;
             obj6[0] = intl3.string(flag(1236).t.rWHepR);
@@ -154,7 +154,7 @@ function _handleDocumentSelection() {
             obj6[1] = intl4.string(flag(1236).t.fZRH9P);
             obj6.show(obj6);
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c6 = 3;
             throw arg1;
@@ -165,9 +165,9 @@ function _handleDocumentSelection() {
             obj7[0] = arg1;
             return obj7;
           } else {
-            getSystemLocale = arg1;
-            if (getSystemLocale.some((size) => 0 === size.size)) {
-              obj = extensions(4656);
+            closure_3 = arg1;
+            if (closure_3.some((size) => 0 === size.size)) {
+              obj = extensions(4662);
               obj8 = { title: null, body: null };
               const intl = flag(1236).intl;
               obj8[0] = intl.string(flag(1236).t.B3vFdU);
@@ -179,7 +179,7 @@ function _handleDocumentSelection() {
             c6 = 3;
           }
         } catch (tmp70) {
-          getSystemLocale = tmp70;
+          closure_3 = tmp70;
           if (tmp4 === c4) {
             c6 = tmp2;
             throw tmp70;
@@ -192,7 +192,7 @@ function _handleDocumentSelection() {
     iter.next();
     return iter;
   });
-  const _handleDocumentSelection = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -201,7 +201,7 @@ function _handleDocumentSelection() {
   }
   return applyArgumentsResult;
 }
-const result = require("isKnownType").fileFinishedImporting("utils/native/FilePickerUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/native/FilePickerUtils.tsx");
 
 export const handleDocumentSelection = function handleDocumentSelection(arg0) {
   const self = this;

@@ -1,36 +1,39 @@
-// Module ID: 14595
-// Function ID: 14596
+// Module ID: 14663
+// Function ID: 14664
 // Name: toggle
-// Dependencies: [4497, 8198, 589, 9654, 10669, 1236, 2]
+// Dependencies: [4501, 8238, 589, 9693, 10708, 1236, 2]
 
-// Module 14595 (toggle)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createToggle from "createToggle";
+// Module 14663 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9693 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.Z4oaN0);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.Z4oaN0);
   },
   parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useValue: function useAutoVoiceSensitivitySettingValue() {
-    const items = [_detectH265HardwareDecode];
-    return require(589) /* initialize */.useStateFromStores(items, () => modeOptions.getModeOptions().autoThreshold);
+    const items = [closure_3];
+    return initialize.useStateFromStores(items, () => modeOptions.getModeOptions().autoThreshold);
   },
   onValueChange: function onAutoVoiceSensitivitySettingValueChange(autoThreshold) {
     mode = mode.getMode();
-    let obj = importDefault(9654);
+    let obj = trackDeviceChangedDefault;
     obj = { autoThreshold };
     obj.setMode(mode, obj);
   },
   useSearchTerms() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1236) /* getSystemLocale */.t.nuFtHH)];
+    const intl = getSystemLocale.intl;
+    const items = [intl.string(getSystemLocale.t.nuFtHH)];
     return items;
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/AutoVoiceSensitivitySetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AutoVoiceSensitivitySetting.tsx");
 
 export default createToggle;

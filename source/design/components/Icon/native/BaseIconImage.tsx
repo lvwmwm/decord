@@ -1,30 +1,28 @@
-// Module ID: 4096
-// Function ID: 4097
+// Module ID: 4099
+// Function ID: 4100
 // Name: BaseIconImage
-// Dependencies: [19, 17, 21, 4097, 2]
+// Dependencies: [19, 17, 21, 4100, 2]
 // Exports: BaseIconImage
 
-// Module 4096 (BaseIconImage)
-import "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 4099 (BaseIconImage)
+import noopAll from "noop" /* 19 */;
+import map from "map" /* 4100 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "r", height: "accessibilityRole" }, refresh_sm: { width: 18, height: 18 } };
-const result = require("jsxProd").fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
+require = arg1;
+noopAll;
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "ct" }, refresh_sm: { width: 18, height: 18 } };
+const result = require("set").fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 
 export const BaseIconImage = function BaseIconImage(source) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
-  let style;
   let str = source.size;
   if (str === undefined) {
     str = "md";
   }
   const color = source.color;
   ({ resizeMode, style, accessible, accessibilityLabel } = source);
-  let obj = require(4097) /* map */;
+  let obj = map;
   const token = obj.useToken(color);
   if (null != token) {
     obj = { tintColor: null };

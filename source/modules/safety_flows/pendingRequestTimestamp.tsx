@@ -1,24 +1,29 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 17196
+// Function ID: 17197
 // Name: SENT_TIMESTAMP_FORMATTER
-// Dependencies: [1236, 2597, 5363, 2]
+// Dependencies: [1236, 2598, 5368, 2]
 // Exports: formatPendingRequestSentText
 
-// Module 17103 (SENT_TIMESTAMP_FORMATTER)
+// Module 17196 (SENT_TIMESTAMP_FORMATTER)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2598 */;
+import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 5368 */;
+
 function SENT_TIMESTAMP_FORMATTER() {
   const obj = { seconds: null, minutes: null, hours: null, yesterday: null, days: null, date: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(importDefault(2597).M4NOO3);
-  obj[1] = importDefault(2597)["9nem85"];
-  obj[2] = importDefault(2597).sJjWRY;
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl2.string(importDefault(2597)["7SxW32"]);
-  obj[4] = importDefault(2597).tVHevX;
-  obj[5] = importDefault(2597).q6jzya;
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(messagesProxyDefault.M4NOO3);
+  obj[1] = messagesProxyDefault["9nem85"];
+  obj[2] = messagesProxyDefault.sJjWRY;
+  const intl2 = getSystemLocale.intl;
+  obj[3] = intl2.string(messagesProxyDefault["7SxW32"]);
+  obj[4] = messagesProxyDefault.tVHevX;
+  obj[5] = messagesProxyDefault.q6jzya;
   return obj;
 }
-const result = require("getEmptyActivityFormatter").fileFinishedImporting("modules/safety_flows/pendingRequestTimestamp.tsx");
+const result = set.fileFinishedImporting("modules/safety_flows/pendingRequestTimestamp.tsx");
 
 export const formatPendingRequestSentText = function formatPendingRequestSentText(created_at) {
-  return require(5363) /* getEmptyActivityFormatter */.formatLinkTimestamp(Date.parse(created_at), SENT_TIMESTAMP_FORMATTER);
+  return getEmptyActivityFormatter.formatLinkTimestamp(Date.parse(created_at), SENT_TIMESTAMP_FORMATTER);
 };

@@ -1,32 +1,37 @@
-// Module ID: 17098
-// Function ID: 17099
+// Module ID: 17191
+// Function ID: 17192
 // Name: ParentalConsentConnectionNavbar
-// Dependencies: [19, 17, 1922, 21, 4661, 6370, 712, 1629, 589, 4734, 5256, 1236, 2597, 2]
+// Dependencies: [19, 17, 1922, 21, 4668, 6401, 712, 1629, 589, 4739, 5261, 1236, 2598, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 17098 (ParentalConsentConnectionNavbar)
-import "noop";
-import { View } from "get ActivityIndicator";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 17191 (ParentalConsentConnectionNavbar)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import messagesProxyDefault from "messagesProxy" /* 2598 */;
+import Text from "Text" /* 4739 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { row: null, logOut: null };
-createCacheKey = { height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { position: "absolute", left: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { position: "absolute", left: require("Themes").space.PX_16 };
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/safety_flows/native/tasks/ParentalConsentConnectionHeader.tsx");
+createCacheKey[1] = { position: "absolute", left: ThemesDefault.space.PX_16 };
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { position: "absolute", left: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/safety_flows/native/tasks/ParentalConsentConnectionHeader.tsx");
 
 export const ParentalConsentConnectionNavbar = function ParentalConsentConnectionNavbar() {
-  const tmp = createCacheKey();
-  let obj = require(589) /* initialize */;
-  const items = [mergeGuildAvatar];
+  const tmp = callback2();
+  let obj = initialize;
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let username;
@@ -35,9 +40,9 @@ export const ParentalConsentConnectionNavbar = function ParentalConsentConnectio
     }
     return username;
   });
-  obj = { style: { paddingTop: importDefault(1629)().top }, children: null };
+  obj = { style: { paddingTop: useSafeAreaInsetsDefault().top }, children: null };
   obj = { style: tmp.row, children: null };
-  const obj1 = {
+  obj1 = {
     accessibilityRole: "button",
     variant: "text-md/medium",
     color: "text-link",
@@ -47,14 +52,14 @@ export const ParentalConsentConnectionNavbar = function ParentalConsentConnectio
     },
     children: null
   };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj1[5] = intl.string(importDefault(2597)["3HuGuY"]);
-  const items1 = [callback(require(4734) /* Text */.Text, obj1), ];
+  const intl = getSystemLocale.intl;
+  obj1[5] = intl.string(messagesProxyDefault["3HuGuY"]);
+  const items1 = [callback(Text.Text, obj1), ];
   let tmp5Result = null != stateFromStores;
   if (tmp5Result) {
     const obj2 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj2[3] = stateFromStores;
-    tmp5Result = tmp5(require(4734) /* Text */.Text, obj2);
+    tmp5Result = tmp5(Text.Text, obj2);
   }
   items1[1] = tmp5Result;
   obj[1] = items1;

@@ -1,19 +1,19 @@
-// Module ID: 9666
-// Function ID: 9667
+// Module ID: 9705
+// Function ID: 9706
 // Name: isVideoBackgroundSupported
-// Dependencies: [4497, 4529, 2]
+// Dependencies: [4501, 4534, 2]
 // Exports: default
 
-// Module 9666 (isVideoBackgroundSupported)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import { Features } from "DesktopSources";
+// Module 9705 (isVideoBackgroundSupported)
+import closure_0 from "_detectH265HardwareDecode" /* 4501 */;
+import { Features } from "DesktopSources" /* 4534 */;
 
 const result = require("set").fileFinishedImporting("modules/video_backgrounds/isVideoBackgroundSupported.tsx");
 
 export default function isVideoBackgroundSupported() {
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = _detectH265HardwareDecode;
+    obj = closure_0;
   }
   let supportsResult = obj.supports(Features.MEDIAPIPE);
   if (supportsResult) {

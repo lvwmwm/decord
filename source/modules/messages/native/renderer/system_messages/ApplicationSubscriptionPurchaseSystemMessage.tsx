@@ -1,19 +1,25 @@
-// Module ID: 8249
-// Function ID: 8250
+// Module ID: 8289
+// Function ID: 8290
 // Name: createApplicationSubscriptionPurchaseSystemMessage
-// Dependencies: [8185, 8214, 8187, 8188, 2]
+// Dependencies: [8225, 8254, 8227, 8228, 2]
 // Exports: createApplicationSubscriptionPurchaseSystemMessage
 
-// Module 8249 (createApplicationSubscriptionPurchaseSystemMessage)
-const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/ApplicationSubscriptionPurchaseSystemMessage.tsx");
+// Module 8289 (createApplicationSubscriptionPurchaseSystemMessage)
+import set from "set" /* 2 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8225 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8227 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8228 */;
+import getApplicationSubscriptionSystemMessageASTContent from "getApplicationSubscriptionSystemMessageASTContent" /* 8254 */;
+
+const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/ApplicationSubscriptionPurchaseSystemMessage.tsx");
 
 export const createApplicationSubscriptionPurchaseSystemMessage = function createApplicationSubscriptionPurchaseSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(8185) /* getMessageAuthorWithProcessedColor */;
+  let obj = getMessageAuthorWithProcessedColor;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   obj = { content: null };
-  obj = { application: message.application, username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(8187)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
-  obj[0] = require(8214) /* getApplicationSubscriptionSystemMessageASTContent */.getApplicationSubscriptionSystemMessageASTContent(obj);
-  const merged = Object.assign(importDefault(8188)(roleStyle));
+  obj = { application: message.application, username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj[0] = getApplicationSubscriptionSystemMessageASTContent.getApplicationSubscriptionSystemMessageASTContent(obj);
+  const merged = Object.assign(createCommonMessageDefault(roleStyle));
   return obj;
 };

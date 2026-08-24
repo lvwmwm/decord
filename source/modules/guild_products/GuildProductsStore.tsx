@@ -1,16 +1,19 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 13311
+// Function ID: 13312
 // Name: secondaryIndexMap
-// Dependencies: [687, 11, 4017, 589, 709, 2]
+// Dependencies: [687, 11, 4020, 589, 709, 2]
 
-// Module 13256 (secondaryIndexMap)
-import { Store } from "initialize";
+// Module 13311 (secondaryIndexMap)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED" };
 let closure_3 = {};
 let closure_4 = {};
 let closure_5 = {};
-let closure_6 = 10 * require("set").Millis.MINUTE;
+let closure_6 = 10 * setDefault.Millis.MINUTE;
 const secondaryIndexMap = new require("version").SecondaryIndexMap((guild_id) => {
   const items = ["guild:" + guild_id.guild_id];
   if (guild_id.published) {
@@ -19,7 +22,7 @@ const secondaryIndexMap = new require("version").SecondaryIndexMap((guild_id) =>
   }
   return items;
 }, (id) => {
-  const extractTimestampResult = importDefault(11).extractTimestamp(id.id);
+  const extractTimestampResult = DISCORD_EPOCHDefault.extractTimestamp(id.id);
   if (id.published) {
     let diff = -extractTimestampResult;
   } else {
@@ -28,6 +31,7 @@ const secondaryIndexMap = new require("version").SecondaryIndexMap((guild_id) =>
   return diff;
 });
 let closure_8 = [];
+const Store = initializeDefault.Store;
 class GuildProductsStore extends Store {
 }
 const prototype = GuildProductsStore.prototype;
@@ -74,9 +78,9 @@ GuildProductsStore.displayName = "GuildProductsStore";
 obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
     secondaryIndexMap.clear();
-    let closure_3 = {};
-    let closure_4 = {};
-    let closure_5 = {};
+    closure_3 = {};
+    closure_4 = {};
+    closure_5 = {};
   },
   GUILD_PRODUCTS_FETCH: function handleFetchGuildProducts(guildId) {
     guildId = guildId.guildId;
@@ -87,8 +91,6 @@ obj = {
     });
   },
   GUILD_PRODUCTS_FETCH_SUCCESS: function handleFetchProductsSuccess(arg0) {
-    let guildId;
-    let products;
     ({ guildId, products } = arg0);
     closure_3[guildId] = obj.FETCHED;
     closure_5[guildId] = Date.now();
@@ -127,8 +129,8 @@ obj = {
     }
   }
 };
-const guildProductsStore = new GuildProductsStore(require("dispatcher"), obj);
-let result = require("version").fileFinishedImporting("modules/guild_products/GuildProductsStore.tsx");
+const guildProductsStore = new GuildProductsStore(dispatcherDefault, obj);
+let result = require("set").fileFinishedImporting("modules/guild_products/GuildProductsStore.tsx");
 
 export default guildProductsStore;
 export const FetchState = obj;

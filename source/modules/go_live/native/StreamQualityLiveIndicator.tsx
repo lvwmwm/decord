@@ -1,53 +1,48 @@
-// Module ID: 12456
-// Function ID: 12457
+// Module ID: 12508
+// Function ID: 12509
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 676, 1924, 4529, 21, 4661, 712, 8678, 9398, 7139, 4115, 4664, 1297, 9667, 12457, 698, 9325, 9326, 4039, 5433, 5449, 9367, 2]
+// Dependencies: [19, 17, 676, 1924, 4534, 21, 4668, 712, 8715, 9435, 7177, 4119, 4671, 1297, 9706, 12509, 698, 9362, 9363, 4042, 5438, 5454, 9404, 2]
 // Exports: default
 
-// Module 12456 (StreamQualityLiveIndicator)
-import getPremiumPlanItem from "getPremiumPlanItem";
-import { View } from "openPremiumModal";
-import { AnalyticEvents } from "ME";
-import GuildFeatures from "GuildFeatures";
-import { ResolutionTypes } from "DesktopSources";
-import jsxProd from "preload";
-import createCacheKey from "createCacheKey";
+// Module 12508 (StreamQualityLiveIndicator)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import { ResolutionTypes } from "DesktopSources" /* 4534 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_6;
-let error;
 const require = arg1;
 ({ PremiumTypes: closure_6, PremiumUpsellTypes: error } = GuildFeatures);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { liveIndicator: { flexDirection: "row", alignItems: "center", height: 18 }, liveTag: null, qualityTag: null, qualityTagText: null, reducedQualityTagText: null, nitroWheel: null };
-createCacheKey = { borderBottomLeftRadius: require("Themes").radii.none, borderTopLeftRadius: require("Themes").radii.none, height: 18, textAlign: "center" };
+createCacheKey = { borderBottomLeftRadius: ThemesDefault.radii.none, borderTopLeftRadius: ThemesDefault.radii.none, height: 18, textAlign: "center" };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { borderBottomLeftRadius: require("Themes").radii.sm, borderTopLeftRadius: require("Themes").radii.sm, backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_800, opacity: 0.8, paddingLeft: 8, paddingRight: 4, flexDirection: "row", alignItems: "center", height: 18 };
+createCacheKey[2] = { borderBottomLeftRadius: ThemesDefault.radii.sm, borderTopLeftRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.unsafe_rawColors.PRIMARY_800, opacity: 0.8, paddingLeft: 8, paddingRight: 4, flexDirection: "row", alignItems: "center", height: 18 };
 createCacheKey[3] = { color: "#fff", textAlign: "center", fontWeight: "700" };
-let obj1 = { borderBottomLeftRadius: require("Themes").radii.sm, borderTopLeftRadius: require("Themes").radii.sm, backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_800, opacity: 0.8, paddingLeft: 8, paddingRight: 4, flexDirection: "row", alignItems: "center", height: 18 };
-createCacheKey[4] = { color: require("Themes").unsafe_rawColors.PRIMARY_300 };
+let obj1 = { borderBottomLeftRadius: ThemesDefault.radii.sm, borderTopLeftRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.unsafe_rawColors.PRIMARY_800, opacity: 0.8, paddingLeft: 8, paddingRight: 4, flexDirection: "row", alignItems: "center", height: 18 };
+createCacheKey[4] = { color: ThemesDefault.unsafe_rawColors.PRIMARY_300 };
 createCacheKey[5] = { width: 20, marginLeft: -4 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_11 = createCacheKey.createStyles(createCacheKey);
 let closure_12 = { code: "function StreamQualityLiveIndicatorTsx1(){const{withTiming,reveal,STANDARD_EASING}=this.__closure;return{opacity:withTiming(reveal?1:0,{easing:STANDARD_EASING,duration:250})};}" };
-let obj2 = { color: require("Themes").unsafe_rawColors.PRIMARY_300 };
-const result = require("ME").fileFinishedImporting("modules/go_live/native/StreamQualityLiveIndicator.tsx");
+let obj2 = { color: ThemesDefault.unsafe_rawColors.PRIMARY_300 };
+const result = require("set").fileFinishedImporting("modules/go_live/native/StreamQualityLiveIndicator.tsx");
 
 export default function StreamQualityLiveIndicator(arg0) {
-  let participant;
-  let style;
   ({ participant, style } = arg0);
   let _require;
-  let importDefault;
+  importDefault = undefined;
   let reveal;
   let _location;
   let analyticsLocations;
-  let closure_5;
-  let TIER_1;
-  let tmp2 = createCacheKey();
+  closure_5 = undefined;
+  let flag2;
+  let tmp2 = callback();
   let obj = _location;
   reveal = _location.useContext(_require(reveal[8]).RevealContext).reveal;
-  let obj1 = _require(reveal[9]);
+  obj1 = _require(reveal[9]);
   _location = obj1.useAnalyticsContext().location;
   analyticsLocations = importDefault(reveal[10])().analyticsLocations;
   closure_5 = _location.useRef(false);
@@ -78,24 +73,24 @@ export default function StreamQualityLiveIndicator(arg0) {
     try {
       tmp3Result = tmp3(tmp4[14]);
       const isPremiumResolutionResult = tmp3Result.isPremiumResolution(maxQuality);
-      let flag2 = isPremiumResolutionResult;
+      flag2 = isPremiumResolutionResult;
       importDefault = isPremiumResolutionResult;
       let tmp21Result = flag;
       if (!flag) {
         tmp21Result = flag2;
       }
-      TIER_1 = tmp21Result;
+      flag2 = tmp21Result;
       const items = [analyticsLocations, tmp21Result, flag, flag2];
       const effect = obj.useEffect(() => {
         const current = ref.current;
         let tmp2 = !current;
         if (!current) {
-          tmp2 = c6;
+          tmp2 = flag2;
         }
         if (tmp2) {
           let obj = _undefined2(reveal[16]);
           obj = { type: null, has_premium_stream_fps: null, has_premium_stream_resolution: null, location_stack: null };
-          obj[0] = outer1_7.STREAM_QUALITY_INDICATOR;
+          obj[0] = closure_1_7.STREAM_QUALITY_INDICATOR;
           obj[1] = c0;
           obj[2] = _undefined2;
           obj[3] = analyticsLocations;
@@ -104,19 +99,18 @@ export default function StreamQualityLiveIndicator(arg0) {
         }
       }, items);
       const items1 = [_location, analyticsLocations];
-      const callback = obj.useCallback(() => {
-        const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: null };
-        obj[2] = _undefined(reveal[18]).PremiumFeatureCardOrder.TIER_0_LEADING;
+      callback = obj.useCallback(() => {
+        const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: _undefined(reveal[18]).PremiumFeatureCardOrder.TIER_0_LEADING };
         _undefined2(reveal[17])(obj);
       }, items1);
       let tmp5Result = tmp5(tmp4[19]);
-      const isPremiumResult = tmp5Result.isPremium(participant.user, TIER_1.TIER_1);
+      const isPremiumResult = tmp5Result.isPremium(participant.user, flag2.TIER_1);
       let tmp16 = !isPremiumResult;
       if (!isPremiumResult) {
         tmp5Result = tmp5(tmp4[19]);
         tmp16 = !tmp5Result.canStreamQuality(tmp5(tmp4[19]).StreamQuality.MID, participant.user);
       }
-      let isPremiumExactlyResult = tmp5(tmp4[19]).isPremiumExactly(participant.user, TIER_1.TIER_1);
+      let isPremiumExactlyResult = tmp5(tmp4[19]).isPremiumExactly(participant.user, flag2.TIER_1);
       if (isPremiumExactlyResult) {
         let type;
         if (maxQuality != null) {

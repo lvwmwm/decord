@@ -1,21 +1,23 @@
-// Module ID: 5264
-// Function ID: 5265
+// Module ID: 5269
+// Function ID: 5270
 // Name: _fetchWebAuthnConditionalChallenge
-// Dependencies: [5, 676, 530, 709, 5227, 663, 2]
+// Dependencies: [5, 676, 530, 709, 5232, 663, 2]
 // Exports: clearWebAuthnRegisterTrigger, deleteWebAuthnCredential, editWebAuthnCredential, fetchWebAuthnConditionalChallenge, fetchWebAuthnCredentials, fetchWebAuthnPasswordlessChallenge, finishRegisterWebAuthnCredential, startRegisterWebAuthnCredential, triggerWebAuthnRegister
 
-// Module 5264 (_fetchWebAuthnConditionalChallenge)
-import ImpressionNames from "ImpressionNames";
-import { Endpoints } from "ME";
+// Module 5269 (_fetchWebAuthnConditionalChallenge)
+import sendRequest from "sendRequest" /* 530 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function _fetchWebAuthnConditionalChallenge() {
   const self = this;
   const tmp = callback(function*() {
     let body = tmp4;
-    const HTTP = outer1_0(table[2]).HTTP;
-    const obj1 = { url: null, headers: null, rejectWithError: true };
-    obj1[0] = outer1_4.WEBAUTHN_CONDITIONAL_UI_CHALLENGE;
+    const HTTP = closure_1_0(table[2]).HTTP;
+    obj1 = { url: null, headers: null, rejectWithError: true };
+    obj1[0] = closure_1_4.WEBAUTHN_CONDITIONAL_UI_CHALLENGE;
     obj1[1] = { authorization: "" };
     yield HTTP.post(obj1);
     body = arg1.body;
@@ -24,7 +26,7 @@ function _fetchWebAuthnConditionalChallenge() {
     obj[1] = body.ticket;
     return obj;
   });
-  const _fetchWebAuthnConditionalChallenge = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -37,9 +39,9 @@ function _fetchWebAuthnPasswordlessChallenge() {
   const self = this;
   const tmp = callback(function*() {
     let body = tmp4;
-    const HTTP = outer1_0(table[2]).HTTP;
-    const obj1 = { url: null, rejectWithError: true };
-    obj1[0] = outer1_4.WEBAUTHN_PASSWORDLESS_CHALLENGE;
+    const HTTP = closure_1_0(table[2]).HTTP;
+    obj1 = { url: null, rejectWithError: true };
+    obj1[0] = closure_1_4.WEBAUTHN_PASSWORDLESS_CHALLENGE;
     yield HTTP.post(obj1);
     body = arg1.body;
     const obj = { challenge: null, ticket: null };
@@ -47,7 +49,7 @@ function _fetchWebAuthnPasswordlessChallenge() {
     obj[1] = body.ticket;
     return obj;
   });
-  const _fetchWebAuthnPasswordlessChallenge = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -59,13 +61,13 @@ function _fetchWebAuthnPasswordlessChallenge() {
 function _deleteWebAuthnCredential() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       const HTTP = lib(table[2]).HTTP;
-      const obj1 = { url: null, rejectWithError: true };
-      obj1[0] = outer1_4.MFA_WEBAUTHN_CREDENTIAL(lib.id);
+      obj1 = { url: null, rejectWithError: true };
+      obj1[0] = closure_1_4.MFA_WEBAUTHN_CREDENTIAL(lib.id);
       yield HTTP.del(obj1).then(() => {
         let obj = v3(table[3]);
         obj = { type: "AUTHENTICATOR_DELETE", credential: closure_0 };
@@ -74,7 +76,7 @@ function _deleteWebAuthnCredential() {
       return arg1;
     })();
   });
-  const _deleteWebAuthnCredential = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -86,10 +88,10 @@ function _deleteWebAuthnCredential() {
 function _editWebAuthnCredential() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (c5 === 2) {
         c5 = 3;
@@ -102,7 +104,7 @@ function _editWebAuthnCredential() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -123,8 +125,8 @@ function _editWebAuthnCredential() {
               let body;
               date = undefined;
               obj = undefined;
-              const HTTP = lib(outer1_2[2]).HTTP;
-              let obj1 = { url: null, body: null, rejectWithError: false };
+              const HTTP = lib(closure_1_2[2]).HTTP;
+              obj1 = { url: null, body: null, rejectWithError: false };
               obj1[0] = c4.MFA_WEBAUTHN_CREDENTIAL(lib);
               const obj2 = { name: null };
               obj2[0] = body;
@@ -161,7 +163,7 @@ function _editWebAuthnCredential() {
               obj1.dispatch(obj5);
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           c5 = tmp;
@@ -170,7 +172,7 @@ function _editWebAuthnCredential() {
       }
     })();
   });
-  const _editWebAuthnCredential = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -183,9 +185,9 @@ function _startRegisterWebAuthnCredential() {
   const self = this;
   const tmp = callback(function*() {
     let body = tmp4;
-    const HTTP = outer1_0(table[2]).HTTP;
-    const obj1 = { url: null, body: null, rejectWithError: false };
-    obj1[0] = outer1_4.MFA_WEBAUTHN_CREDENTIALS;
+    const HTTP = closure_1_0(table[2]).HTTP;
+    obj1 = { url: null, body: null, rejectWithError: false };
+    obj1[0] = closure_1_4.MFA_WEBAUTHN_CREDENTIALS;
     obj1[1] = {};
     yield HTTP.post(obj1);
     body = arg1.body;
@@ -194,7 +196,7 @@ function _startRegisterWebAuthnCredential() {
     obj[1] = body.challenge;
     return obj;
   });
-  const _startRegisterWebAuthnCredential = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -206,11 +208,11 @@ function _startRegisterWebAuthnCredential() {
 function _finishRegisterWebAuthnCredential() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c5 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c5 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c6 === 2) {
         c6 = 3;
@@ -223,7 +225,7 @@ function _finishRegisterWebAuthnCredential() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -238,11 +240,11 @@ function _finishRegisterWebAuthnCredential() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_4 = tmp2;
-              let ImpressionNames = tmp5;
+              closure_4 = tmp2;
+              closure_3 = tmp5;
               let lib;
-              const obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: true };
-              obj1[0] = outer1_4.MFA_WEBAUTHN_CREDENTIALS;
+              obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: true };
+              obj1[0] = closure_1_4.MFA_WEBAUTHN_CREDENTIALS;
               const obj2 = { name: null, ticket: null, credential: null };
               obj2[0] = lib;
               obj2[1] = callback;
@@ -254,7 +256,7 @@ function _finishRegisterWebAuthnCredential() {
               c5 = 1;
               c6 = 1;
               let obj4 = { value: null, done: false };
-              obj4[0] = callback(5227).post(obj1);
+              obj4[0] = callback(5232).post(obj1);
               return obj4;
             }
           } else if (arg0 === 1) {
@@ -276,7 +278,7 @@ function _finishRegisterWebAuthnCredential() {
             obj6[1] = lib.body.backup_codes;
             obj6.dispatch(obj6);
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp6) {
           c6 = tmp;
@@ -285,7 +287,7 @@ function _finishRegisterWebAuthnCredential() {
       }
     })();
   });
-  const _finishRegisterWebAuthnCredential = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -294,7 +296,7 @@ function _finishRegisterWebAuthnCredential() {
   }
   return applyArgumentsResult;
 }
-const result = require("sendRequest").fileFinishedImporting("modules/webauthn/WebAuthnActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/webauthn/WebAuthnActionCreators.tsx");
 
 export const fetchWebAuthnConditionalChallenge = function fetchWebAuthnConditionalChallenge() {
   const self = this;
@@ -317,7 +319,7 @@ export const fetchWebAuthnPasswordlessChallenge = function fetchWebAuthnPassword
   return applyArgumentsResult;
 };
 export const fetchWebAuthnCredentials = function fetchWebAuthnCredentials() {
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   const value = HTTP.get({ url: Endpoints.MFA_WEBAUTHN_CREDENTIALS, rejectWithError: true });
   value.then((body) => {
     if (null != body.body) {
@@ -370,7 +372,7 @@ export const startRegisterWebAuthnCredential = function startRegisterWebAuthnCre
   }
   return applyArgumentsResult;
 };
-export const finishRegisterWebAuthnCredential = function finishRegisterWebAuthnCredential(intl, closure_0, c1) {
+export const finishRegisterWebAuthnCredential = function finishRegisterWebAuthnCredential(closure_1_5, closure_0, c1) {
   const self = this;
   const apply = _finishRegisterWebAuthnCredential.apply;
   if (typeof apply === "unknown") {
@@ -381,8 +383,8 @@ export const finishRegisterWebAuthnCredential = function finishRegisterWebAuthnC
   return applyArgumentsResult;
 };
 export const triggerWebAuthnRegister = function triggerWebAuthnRegister() {
-  importDefault(709).dispatch({ type: "WEBAUTHN_TRIGGER_REGISTER" });
+  dispatcherDefault.dispatch({ type: "WEBAUTHN_TRIGGER_REGISTER" });
 };
 export const clearWebAuthnRegisterTrigger = function clearWebAuthnRegisterTrigger() {
-  importDefault(709).dispatch({ type: "WEBAUTHN_CLEAR_REGISTER_TRIGGER" });
+  dispatcherDefault.dispatch({ type: "WEBAUTHN_CLEAR_REGISTER_TRIGGER" });
 };

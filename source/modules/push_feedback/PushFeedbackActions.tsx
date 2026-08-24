@@ -1,17 +1,20 @@
-// Module ID: 10812
-// Function ID: 10813
+// Module ID: 10851
+// Function ID: 10852
 // Name: receivedNotification
 // Dependencies: [709, 2]
 // Exports: handleSurveyCleanup, receivedNotification
 
-// Module 10812 (receivedNotification)
-const result = require("set").fileFinishedImporting("modules/push_feedback/PushFeedbackActions.tsx");
+// Module 10851 (receivedNotification)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/push_feedback/PushFeedbackActions.tsx");
 
 export const receivedNotification = function receivedNotification(messageId, channelId, tracking_type) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "PUSH_FEEDBACK_RECEIVED_NOTIFICATION", messageId, channelId, notificationType: tracking_type };
   obj.dispatch(obj);
 };
 export const handleSurveyCleanup = function handleSurveyCleanup() {
-  importDefault(709).dispatch({ type: "PUSH_FEEDBACK_CLEANUP" });
+  dispatcherDefault.dispatch({ type: "PUSH_FEEDBACK_CLEANUP" });
 };

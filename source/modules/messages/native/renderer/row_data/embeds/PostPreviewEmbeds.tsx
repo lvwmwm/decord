@@ -1,17 +1,19 @@
-// Module ID: 12793
-// Function ID: 12794
+// Module ID: 12848
+// Function ID: 12849
 // Name: createPostPreviewEmbeds
-// Dependencies: [676, 12794, 2]
+// Dependencies: [676, 12849, 2]
 // Exports: createPostPreviewEmbeds
 
-// Module 12793 (createPostPreviewEmbeds)
-import { MessageEmbedTypes } from "ME";
+// Module 12848 (createPostPreviewEmbeds)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/PostPreviewEmbeds.tsx");
+const MessageEmbedTypes = ME.MessageEmbedTypes;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/PostPreviewEmbeds.tsx");
 
 export const createPostPreviewEmbeds = function createPostPreviewEmbeds(message, roleStyle, useReducedMotion) {
-  let closure_0 = message;
-  let closure_1 = roleStyle;
+  closure_0 = message;
+  closure_1 = roleStyle;
   let flag = useReducedMotion;
   if (useReducedMotion === undefined) {
     flag = false;

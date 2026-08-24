@@ -1,16 +1,17 @@
-// Module ID: 8307
-// Function ID: 8308
+// Module ID: 8347
+// Function ID: 8348
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useManaTypeConsolidationExperiment
 
-// Module 8307 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 8347 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-05-mana-type-consolidation", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/design/ManaTypeConsolidationExperiment.tsx");
+const result = set.fileFinishedImporting("modules/design/ManaTypeConsolidationExperiment.tsx");
 
 export default apexExperiment;
 export const useManaTypeConsolidationExperiment = function useManaTypeConsolidationExperiment(ChangeLogStrong) {

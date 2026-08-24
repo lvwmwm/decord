@@ -1,20 +1,22 @@
-// Module ID: 13911
-// Function ID: 13912
+// Module ID: 13979
+// Function ID: 13980
 // Name: _initialize
-// Dependencies: [4737, 4720, 709, 5300, 5361, 2]
+// Dependencies: [4742, 4726, 709, 5305, 5366, 2]
 
-// Module 13911 (_initialize)
-import getUserAgnosticState from "getUserAgnosticState";
-import "initialize";
+// Module 13979 (_initialize)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 4726 */;
+import closure_3 from "getUserAgnosticState" /* 4742 */;
 
 const require = arg1;
+initializeDefault;
 class CollectiblesMarketingManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
     applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
-      const value = getUserAgnosticState.get("shop_include_unpublished");
-      let obj = callback(5300);
-      const CollectiblesMarketingReleaseType = callback(5361).CollectiblesMarketingReleaseType;
+      const value = closure_3.get("shop_include_unpublished");
+      let obj = callback(5305);
+      const CollectiblesMarketingReleaseType = callback(5366).CollectiblesMarketingReleaseType;
       obj = { release: value ? CollectiblesMarketingReleaseType.BETA : CollectiblesMarketingReleaseType.PROD };
       const collectiblesMarketings = obj.fetchCollectiblesMarketings(obj);
     };
@@ -23,12 +25,12 @@ class CollectiblesMarketingManager extends tmp2 {
 }
 const prototype = CollectiblesMarketingManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  const subscription = importDefault(709).subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  const subscription = dispatcherDefault.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
 };
 prototype["_terminate"] = function _terminate() {
-  importDefault(709).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  dispatcherDefault.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
 };
 const collectiblesMarketingManager = new CollectiblesMarketingManager();
-const result = require("dispatcher").fileFinishedImporting("modules/collectibles/CollectiblesMarketingManager.native.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/CollectiblesMarketingManager.native.tsx");
 
 export default collectiblesMarketingManager;

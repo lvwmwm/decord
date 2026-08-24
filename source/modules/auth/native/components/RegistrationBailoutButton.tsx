@@ -1,26 +1,29 @@
-// Module ID: 15241
-// Function ID: 15242
+// Module ID: 15305
+// Function ID: 15306
 // Name: RegistrationBailoutButton
-// Dependencies: [19, 21, 4661, 1297, 1236, 2]
+// Dependencies: [19, 21, 4668, 1297, 1236, 2]
 // Exports: default
 
-// Module 15241 (RegistrationBailoutButton)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15305 (RegistrationBailoutButton)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_3 = createCacheKey.createStyles({ bail: { marginBottom: 16, marginLeft: "auto", marginRight: "auto" } });
-const result = require("createCacheKey").fileFinishedImporting("modules/auth/native/components/RegistrationBailoutButton.tsx");
+const result = require("set").fileFinishedImporting("modules/auth/native/components/RegistrationBailoutButton.tsx");
 
 export default function RegistrationBailoutButton(onBail) {
   const obj = { shrink: true, text: null, size: null, look: null, color: null, style: null, onPress: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.CZ7wvG);
-  obj[2] = require(1297) /* Button */.Button.Sizes.MEDIUM;
-  obj[3] = require(1297) /* Button */.ButtonLooks.LINK;
-  obj[4] = require(1297) /* Button */.ButtonColors.LINK;
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t.CZ7wvG);
+  obj[2] = Button.Button.Sizes.MEDIUM;
+  obj[3] = Button.ButtonLooks.LINK;
+  obj[4] = Button.ButtonColors.LINK;
   obj[5] = callback().bail;
   obj[6] = onBail.onBail;
-  return jsx(require(1297) /* Button */.Button, { shrink: true, text: null, size: null, look: null, color: null, style: null, onPress: null });
+  return jsx(Button.Button, { shrink: true, text: null, size: null, look: null, color: null, style: null, onPress: null });
 };

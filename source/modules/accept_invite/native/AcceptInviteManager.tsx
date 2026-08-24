@@ -1,27 +1,25 @@
-// Module ID: 16514
-// Function ID: 16515
+// Module ID: 16609
+// Function ID: 16610
 // Name: prototype
-// Dependencies: [1218, 1391, 1990, 1910, 4359, 4021, 5417, 676, 4369, 1222, 4342, 5260, 16515, 2007, 5038, 16516, 709, 9151, 2]
+// Dependencies: [1218, 1391, 1991, 1910, 4363, 4024, 5422, 676, 4373, 1222, 4346, 5265, 16610, 2008, 5043, 16611, 709, 9188, 2]
 
-// Module 16514 (prototype)
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import updateInvite from "updateInvite";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { ACCEPT_INVITE_MODAL_KEY } from "ACCEPT_INVITE_MODAL_KEY";
-import ME from "ME";
-import "initialize";
+// Module 16609 (prototype)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_7 from "updateInvite" /* 4363 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4024 */;
+import { ACCEPT_INVITE_MODAL_KEY } from "ACCEPT_INVITE_MODAL_KEY" /* 5422 */;
+import ME from "ME" /* 676 */;
 
-let c10;
-let closure_12;
-let unpackModuleId;
 let require = arg1;
 ({ InviteStates: c10, Permissions: unpackModuleId, Routes: closure_12 } = ME);
+initializeDefault;
 let prototype = function AcceptInviteManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const require = applyArgumentsResult;
+  require = applyArgumentsResult;
   applyArgumentsResult._isRegistration = false;
   applyArgumentsResult.actions = {
     DISPLAYED_INVITE_SHOW(code) {
@@ -38,11 +36,9 @@ let prototype = function AcceptInviteManager() {
     }
   };
   applyArgumentsResult._handleShowInvite = function _handleShowInvite(code) {
-    let deeplinkAttemptId;
-    let invite_instance_id;
     code = code.code;
     ({ deeplinkAttemptId, invite_instance_id } = code);
-    if (outer1_3.isAuthenticated()) {
+    if (closure_1_3.isAuthenticated()) {
       obj._handleInvite(code, deeplinkAttemptId, invite_instance_id);
     } else {
       obj._deferredCode = code;
@@ -51,7 +47,7 @@ let prototype = function AcceptInviteManager() {
   applyArgumentsResult._handleClearInvite = function _handleClearInvite() {
     closure_0._deferredCode = null;
     closure_0._isRegistration = false;
-    outer1_1(outer1_2[11]).popWithKey(outer1_9);
+    closure_1_1(closure_1_2[11]).popWithKey(closure_1_9);
   };
   applyArgumentsResult._handleShowDeferredInvite = function _handleShowDeferredInvite() {
     if (null != applyArgumentsResult._deferredCode) {
@@ -60,15 +56,15 @@ let prototype = function AcceptInviteManager() {
     }
   };
   applyArgumentsResult._handleInvite = function _handleInvite(_deferredCode, deeplinkAttemptId, invite_instance_id) {
-    let closure_0 = _deferredCode;
-    let closure_1 = deeplinkAttemptId;
-    let closure_2 = invite_instance_id;
-    const result = outer1_7.addConditionalChangeListener(() => {
-      const invite = outer2_7.getInvite(set);
+    closure_0 = _deferredCode;
+    closure_1 = deeplinkAttemptId;
+    closure_2 = invite_instance_id;
+    const result = closure_1_7.addConditionalChangeListener(() => {
+      const invite = closure_2_7.getInvite(set);
       let flag = null == invite;
       if (!flag) {
-        flag = invite.state !== outer2_10.RESOLVED && invite.state !== outer2_10.EXPIRED && invite.state !== outer2_10.BANNED && invite.state !== outer2_10.ERROR;
-        const tmp4 = invite.state !== outer2_10.RESOLVED && invite.state !== outer2_10.EXPIRED && invite.state !== outer2_10.BANNED && invite.state !== outer2_10.ERROR;
+        flag = invite.state !== closure_2_10.RESOLVED && invite.state !== closure_2_10.EXPIRED && invite.state !== closure_2_10.BANNED && invite.state !== closure_2_10.ERROR;
+        const tmp4 = invite.state !== closure_2_10.RESOLVED && invite.state !== closure_2_10.EXPIRED && invite.state !== closure_2_10.BANNED && invite.state !== closure_2_10.ERROR;
       }
       if (!flag) {
         if (null == invite.channel) {
@@ -80,17 +76,17 @@ let prototype = function AcceptInviteManager() {
               }
               let obj = { location: null };
               obj[0] = str;
-              applyArgumentsResult(outer2_2[15]).acceptFriendInvite(invite, obj);
-              const obj6 = applyArgumentsResult(outer2_2[15]);
-              const tmp34 = outer2_2;
-              outer2_1(outer2_2[16]).wait(() => set(9151).clearDisplayedInvite());
+              applyArgumentsResult(closure_2_2[15]).acceptFriendInvite(invite, obj);
+              const obj6 = applyArgumentsResult(closure_2_2[15]);
+              const tmp34 = closure_2_2;
+              closure_2_1(closure_2_2[16]).wait(() => set(9188).clearDisplayedInvite());
               flag = false;
-              const obj8 = outer2_1(outer2_2[16]);
+              const obj8 = closure_2_1(closure_2_2[16]);
             }
           }
         }
         let flag2 = false;
-        if (invite.state === outer2_10.RESOLVED) {
+        if (invite.state === closure_2_10.RESOLVED) {
           flag2 = false;
           if (!obj9.isStreamInvite(invite)) {
             const guild = invite.guild;
@@ -104,10 +100,10 @@ let prototype = function AcceptInviteManager() {
               flag2 = false;
               if (null != target_channel_id) {
                 flag2 = false;
-                if (null != outer2_6.getGuild(id)) {
+                if (null != closure_2_6.getGuild(id)) {
                   if (null != invite.roles) {
                     if (invite.roles.length > 0) {
-                      const selfMember = outer2_5.getSelfMember(id);
+                      const selfMember = closure_2_5.getSelfMember(id);
                       let roles;
                       if (selfMember != null) {
                         roles = selfMember.roles;
@@ -120,10 +116,10 @@ let prototype = function AcceptInviteManager() {
                       flag2 = false;
                     }
                   }
-                  let flag3 = outer2_8.can(outer2_11.VIEW_CHANNEL, outer2_4.getChannel(target_channel_id));
+                  let flag3 = closure_2_8.can(closure_2_11.VIEW_CHANNEL, closure_2_4.getChannel(target_channel_id));
                   if (flag3) {
                     const target_message_id = invite.target_message_id;
-                    tmp39(tmp40[9]).transitionTo(outer2_12.CHANNEL(id, target_channel_id, target_message_id), { navigationReplace: true, openChannel: true });
+                    tmp39(tmp40[9]).transitionTo(closure_2_12.CHANNEL(id, target_channel_id, target_message_id), { navigationReplace: true, openChannel: true });
                     flag3 = true;
                     const tmp39Result = tmp39(tmp40[9]);
                   }
@@ -132,25 +128,25 @@ let prototype = function AcceptInviteManager() {
               }
             }
           }
-          obj9 = applyArgumentsResult(outer2_2[8]);
+          obj9 = applyArgumentsResult(closure_2_2[8]);
           tmp39 = applyArgumentsResult;
-          tmp40 = outer2_2;
+          tmp40 = closure_2_2;
         }
         if (flag2) {
-          outer2_1(outer2_2[16]).wait(() => set(9151).clearDisplayedInvite());
+          closure_2_1(closure_2_2[16]).wait(() => set(9188).clearDisplayedInvite());
           flag = false;
-          const obj5 = outer2_1(outer2_2[16]);
+          const obj5 = closure_2_1(closure_2_2[16]);
         } else {
-          outer2_1(outer2_2[10]).hideActionSheet();
-          const obj2 = outer2_1(outer2_2[10]);
+          closure_2_1(closure_2_2[10]).hideActionSheet();
+          const obj2 = closure_2_1(closure_2_2[10]);
           obj = { code: null, isRegistration: null, deeplinkAttemptId: null, inviteInstanceId: null };
           obj[0] = set;
           obj[1] = _isRegistration._isRegistration;
           obj[2] = closure_1;
           obj[3] = closure_2;
-          outer2_1(outer2_2[11]).pushLazy(applyArgumentsResult(outer2_2[13])(outer2_2[12], outer2_2.paths), obj, outer2_9);
+          closure_2_1(closure_2_2[11]).pushLazy(applyArgumentsResult(closure_2_2[13])(closure_2_2[12], closure_2_2.paths), obj, closure_2_9);
           flag = false;
-          const obj3 = outer2_1(outer2_2[11]);
+          const obj3 = closure_2_1(closure_2_2[11]);
         }
       }
       return flag;
@@ -164,6 +160,6 @@ let prototype = function AcceptInviteManager() {
 class prototype extends tmp3 {
 }
 prototype = new prototype();
-let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/accept_invite/native/AcceptInviteManager.tsx");
+let result = require("set").fileFinishedImporting("modules/accept_invite/native/AcceptInviteManager.tsx");
 
 export default prototype;

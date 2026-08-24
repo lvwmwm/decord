@@ -1,18 +1,16 @@
-// Module ID: 16234
-// Function ID: 16235
+// Module ID: 16331
+// Function ID: 16332
 // Name: useActivityWebViewLock
-// Dependencies: [19, 8703, 8126, 2]
+// Dependencies: [19, 8740, 8165, 2]
 
-// Module 16234 (useActivityWebViewLock)
-import createFakeSharedValue from "createFakeSharedValue";
-import createFakeSharedValue from "createFakeSharedValue";
-import createFakeSharedValue from "createFakeSharedValue";
-import importAllResult from "noop";
+// Module 16331 (useActivityWebViewLock)
+import createFakeSharedValue from "createFakeSharedValue" /* 8165 */;
+import importAllResult from "noop" /* 19 */;
 
 const obj = {
   mode: require("ActivityPanelModes").ActivityPanelModes.PANEL,
   setMode() {
-    const error = new Error("ActivityPanelStateContextType.Provider.setMode: not called within a context provider");
+    error = new Error("ActivityPanelStateContextType.Provider.setMode: not called within a context provider");
     throw error;
   },
   wrapperDimensions: { width: 9, height: 16, isLandscape: false, isWindowLandscape: false },
@@ -27,8 +25,8 @@ obj[5] = createFakeSharedValue.createFakeSharedValue({ x: 0, y: 0, gestureActive
 obj[6] = function useActivityWebViewLock() {
   return true;
 };
-const context = require("noop").createContext(obj);
-const result = require("createFakeSharedValue").fileFinishedImporting("modules/activities/panel/native/ActivityPanelStateContext.tsx");
+const context = importAllResult.createContext(obj);
+const result = require("set").fileFinishedImporting("modules/activities/panel/native/ActivityPanelStateContext.tsx");
 
 export default context;
 export const activityPanelStateContextDefault = obj;

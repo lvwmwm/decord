@@ -4,15 +4,15 @@
 // Dependencies: [41, 42, 1320, 1322, 1324, 1326, 1327, 1329, 1330, 1331, 1332, 1312, 1317, 1315, 1308]
 
 // Module 1319 (MessageType)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import closure_2 from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
 const MessageType = require;
 class MessageType {
   constructor(arg0, arg1, arg2) {
     self = this;
     obj = importDefault;
-    tmp = outer1_2(this, MessageType);
+    tmp = closure_2(this, MessageType);
     this.defaultCheckDepth = 16;
     this.typeName = global;
     tmp2 = MessageType;
@@ -161,7 +161,7 @@ const items = [
         }
       }
       obj = MessageType(1308);
-      const error = new Error("Unable to parse message " + self.typeName + " from JSON " + obj.typeofJsonValue(obj) + ".");
+      error = new Error("Unable to parse message " + self.typeName + " from JSON " + obj.typeofJsonValue(obj) + ".");
       throw error;
     }
   },

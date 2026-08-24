@@ -1,17 +1,17 @@
-// Module ID: 12816
-// Function ID: 12817
+// Module ID: 12871
+// Function ID: 12872
 // Name: LeaveGuildElement
-// Dependencies: [32, 19, 676, 21, 8874, 5042, 12811, 1236, 4656, 4763, 12514, 2]
+// Dependencies: [32, 19, 676, 21, 8911, 5047, 12866, 1236, 4662, 4768, 12568, 2]
 // Exports: default
 
-// Module 12816 (LeaveGuildElement)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { AnalyticEvents } from "ME";
-import { jsx } from "jsxProd";
+// Module 12871 (LeaveGuildElement)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsLeaveGuildElement.tsx");
+const result = require("set").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsLeaveGuildElement.tsx");
 
 export default function LeaveGuildElement(guild) {
   guild = guild.guild;
@@ -19,18 +19,18 @@ export default function LeaveGuildElement(guild) {
   const reportId = guild.reportId;
   let callback;
   let React;
-  let closure_5;
+  closure_5 = undefined;
   const tmp = callback(React.useState(false), 2);
   callback = tmp[1];
   React = tmp2;
   const items = [null != guild];
   const effect = React.useEffect(() => {
-    callback(!c4);
+    callback(!closure_4);
   }, items);
   const items1 = [addCallback, reportId, guild];
   closure_5 = React.useCallback(() => {
     if (null != guild) {
-      addCallback(() => outer1_1(outer1_2[4]).leaveGuild(id.id));
+      addCallback(() => closure_1_1(closure_1_2[4]).leaveGuild(id.id));
       let obj = addCallback(reportId[5]);
       obj = { guild_id: null, report_id: null };
       obj[0] = tmp.id;

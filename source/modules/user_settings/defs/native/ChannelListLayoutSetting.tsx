@@ -1,36 +1,41 @@
-// Module ID: 14841
-// Function ID: 14842
+// Module ID: 14905
+// Function ID: 14906
 // Name: useChannelListLayoutPredicate
-// Dependencies: [8198, 4066, 1236, 4071, 10669, 2]
+// Dependencies: [8238, 4069, 1236, 4074, 10708, 2]
 // Exports: useChannelListLayoutPredicate
 
-// Module 14841 (useChannelListLayoutPredicate)
-import createToggle from "createToggle";
+// Module 14905 (useChannelListLayoutPredicate)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 4074 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 function useChannelListLayoutPredicate() {
   return false;
 }
 const radio = createToggle.createRadio({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.eY1X1e);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.eY1X1e);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ADVANCED,
-  useValue: require("explicitContentFromProto").ChannelListLayoutSetting.useSetting,
+  parent: MobileUserSettings.MobileUserSettings.ADVANCED,
+  useValue: explicitContentFromProto.ChannelListLayoutSetting.useSetting,
   onValueChange: function onChannelListLayoutValueChange(arg0) {
-    const ChannelListLayoutSetting = require(4066) /* explicitContentFromProto */.ChannelListLayoutSetting;
+    const ChannelListLayoutSetting = explicitContentFromProto.ChannelListLayoutSetting;
     ChannelListLayoutSetting.updateSetting(arg0);
   },
   useOptions: function useChannelListLayoutOptions() {
     let obj = { label: null, value: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.T7G4Y0);
-    obj[1] = require(4071) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY;
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t.T7G4Y0);
+    obj[1] = ChannelListLayoutTypes.ChannelListLayoutTypes.COZY;
     const items = [obj, ];
     obj = { label: null, value: null };
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["7iegX4"]);
-    obj[1] = require(4071) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT;
+    const intl2 = getSystemLocale.intl;
+    obj[0] = intl2.string(getSystemLocale.t["7iegX4"]);
+    obj[1] = ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT;
     items[1] = obj;
     return items;
   },
@@ -38,31 +43,31 @@ const radio = createToggle.createRadio({
 });
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.eY1X1e);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.eY1X1e);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ADVANCED,
-  useValue: require("explicitContentFromProto").ChannelListLayoutSetting.useSetting,
+  parent: MobileUserSettings.MobileUserSettings.ADVANCED,
+  useValue: explicitContentFromProto.ChannelListLayoutSetting.useSetting,
   onValueChange: function onChannelListLayoutValueChange(arg0) {
-    const ChannelListLayoutSetting = require(4066) /* explicitContentFromProto */.ChannelListLayoutSetting;
+    const ChannelListLayoutSetting = explicitContentFromProto.ChannelListLayoutSetting;
     ChannelListLayoutSetting.updateSetting(arg0);
   },
   useOptions: function useChannelListLayoutOptions() {
     let obj = { label: null, value: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.T7G4Y0);
-    obj[1] = require(4071) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY;
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t.T7G4Y0);
+    obj[1] = ChannelListLayoutTypes.ChannelListLayoutTypes.COZY;
     const items = [obj, ];
     obj = { label: null, value: null };
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["7iegX4"]);
-    obj[1] = require(4071) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT;
+    const intl2 = getSystemLocale.intl;
+    obj[0] = intl2.string(getSystemLocale.t["7iegX4"]);
+    obj[1] = ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT;
     items[1] = obj;
     return items;
   },
   usePredicate: useChannelListLayoutPredicate
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/ChannelListLayoutSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ChannelListLayoutSetting.tsx");
 
 export default radio;
 export { useChannelListLayoutPredicate };

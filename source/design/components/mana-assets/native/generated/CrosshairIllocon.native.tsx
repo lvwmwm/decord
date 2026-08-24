@@ -1,31 +1,31 @@
-// Module ID: 5618
-// Function ID: 5619
+// Module ID: 5625
+// Function ID: 5626
 // Name: CrosshairIllocon
-// Dependencies: [21, 5449, 5619, 2]
+// Dependencies: [21, 5454, 5626, 2]
 // Exports: CrosshairIllocon
 
-// Module 5618 (CrosshairIllocon)
-import { jsx } from "jsxProd";
+// Module 5625 (CrosshairIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5626 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CrosshairIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CrosshairIllocon.native.tsx");
 
 export const CrosshairIllocon = function CrosshairIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5619);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

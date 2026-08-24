@@ -1,17 +1,21 @@
-// Module ID: 10170
-// Function ID: 10171
+// Module ID: 10209
+// Function ID: 10210
 // Name: FormSubmitErrorType
-// Dependencies: [1236, 7608, 2]
+// Dependencies: [1236, 7646, 2]
 // Exports: makeApiNameValidationError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTagsError, makeEmptyTitleError, renderError
 
-// Module 10170 (FormSubmitErrorType)
+// Module 10209 (FormSubmitErrorType)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAutomodErrorMessageFromErrorResponse from "getAutomodErrorMessageFromErrorResponse" /* 7646 */;
+
 let obj = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", EmptyTags: 2, [2]: "EmptyTags", ApiValidation: 3, [3]: "ApiValidation" };
-const result = require("set").fileFinishedImporting("modules/forums/FormError.tsx");
+const result = set.fileFinishedImporting("modules/forums/FormError.tsx");
 
 export const FormSubmitErrorType = obj;
 export const makeEmptyTitleError = function makeEmptyTitleError() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  let stringResult = intl.string(require(1236) /* getSystemLocale */.t["71wuR0"]);
+  const intl = getSystemLocale.intl;
+  let stringResult = intl.string(getSystemLocale.t["71wuR0"]);
   obj = { type: obj.EmptyContent, message: null };
   if (stringResult == null) {
     stringResult = null;
@@ -20,8 +24,8 @@ export const makeEmptyTitleError = function makeEmptyTitleError() {
   return obj;
 };
 export const makeEmptyMessageError = function makeEmptyMessageError() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  let stringResult = intl.string(require(1236) /* getSystemLocale */.t["w/BT3G"]);
+  const intl = getSystemLocale.intl;
+  let stringResult = intl.string(getSystemLocale.t["w/BT3G"]);
   obj = { type: obj.EmptyContent, message: null };
   if (stringResult == null) {
     stringResult = null;
@@ -30,7 +34,7 @@ export const makeEmptyMessageError = function makeEmptyMessageError() {
   return obj;
 };
 export const makeAutomodViolationError = function makeAutomodViolationError(errorResponseBody, id) {
-  let obj = require(7608) /* getAutomodErrorMessageFromErrorResponse */;
+  obj = getAutomodErrorMessageFromErrorResponse;
   id = undefined;
   if (id != null) {
     id = id.id;
@@ -44,8 +48,8 @@ export const makeAutomodViolationError = function makeAutomodViolationError(erro
   return obj;
 };
 export const makeApiNameValidationError = function makeApiNameValidationError() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  let stringResult = intl.string(require(1236) /* getSystemLocale */.t["71wuR0"]);
+  const intl = getSystemLocale.intl;
+  let stringResult = intl.string(getSystemLocale.t["71wuR0"]);
   obj = { type: obj.ApiValidation, message: null };
   if (stringResult == null) {
     stringResult = null;
@@ -54,8 +58,8 @@ export const makeApiNameValidationError = function makeApiNameValidationError() 
   return obj;
 };
 export const makeEmptyTagsError = function makeEmptyTagsError() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  let stringResult = intl.string(require(1236) /* getSystemLocale */.t.xPfNQi);
+  const intl = getSystemLocale.intl;
+  let stringResult = intl.string(getSystemLocale.t.xPfNQi);
   obj = { type: obj.EmptyTags, message: null };
   if (stringResult == null) {
     stringResult = null;

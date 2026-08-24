@@ -5,7 +5,7 @@
 // Exports: clickedOnVisibleImage, cssValueToNumber, eventOwnerDocument, getParentElementByAttribute, getParentElementByClassName, isElement, isInputLikeElement, removeNode
 
 // Module 1906 (set)
-import set from "set";
+import set from "set" /* 2 */;
 
 const re0 = /input/i;
 const re1 = /textarea/i;
@@ -85,12 +85,6 @@ export const eventOwnerDocument = function eventOwnerDocument(target) {
   }
 };
 export const clickedOnVisibleImage = function clickedOnVisibleImage(arg0, arg1, arg2, arg3) {
-  let height;
-  let height2;
-  let left;
-  let top;
-  let width;
-  let width2;
   ({ width, height } = arg2);
   ({ width: width2, height: height2 } = arg3);
   ({ top, left } = arg3);

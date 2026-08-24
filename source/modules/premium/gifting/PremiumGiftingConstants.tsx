@@ -1,23 +1,15 @@
-// Module ID: 11974
-// Function ID: 11975
+// Module ID: 12023
+// Function ID: 12024
 // Name: GIFT_STYLE_DESCRIPTIONS
-// Dependencies: [1924, 2399, 2]
+// Dependencies: [1924, 2400, 2]
 
-// Module 11974 (GIFT_STYLE_DESCRIPTIONS)
-let BOX;
-let CAKE;
-let CHEST;
-let COFFEE;
-let CUP;
-let NITROWEEN_STANDARD;
-let SEASONAL_CAKE;
-let SEASONAL_CHEST;
-let SEASONAL_COFFEE;
-let SEASONAL_STANDARD_BOX;
-let SNOWGLOBE;
-let STANDARD_BOX;
-({ SNOWGLOBE, BOX, CUP, STANDARD_BOX, CAKE, CHEST, COFFEE, SEASONAL_STANDARD_BOX, SEASONAL_CAKE, SEASONAL_CHEST, SEASONAL_COFFEE, NITROWEEN_STANDARD } = require("GuildFeatures").PremiumGiftStyles);
-const obj = { [SNOWGLOBE]: require("messagesProxy").M6cPwB, [BOX]: require("messagesProxy").B9XqQk, [CUP]: require("messagesProxy")["6dCq/u"], [STANDARD_BOX]: require("messagesProxy").GzPel1, [CAKE]: require("messagesProxy").AJ4iir, [CHEST]: require("messagesProxy").P5keo3, [COFFEE]: require("messagesProxy").w84vET, [SEASONAL_STANDARD_BOX]: require("messagesProxy")["vd1fu/"], [SEASONAL_CAKE]: require("messagesProxy").aubYGR, [SEASONAL_CHEST]: require("messagesProxy").vjxYqU, [SEASONAL_COFFEE]: require("messagesProxy").bHuJLa, [NITROWEEN_STANDARD]: require("messagesProxy")["+HMF8k"] };
-const result = require("set").fileFinishedImporting("modules/premium/gifting/PremiumGiftingConstants.tsx");
+// Module 12023 (GIFT_STYLE_DESCRIPTIONS)
+import set from "set" /* 2 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import messagesProxyDefault from "messagesProxy" /* 2400 */;
+
+({ SNOWGLOBE, BOX, CUP, STANDARD_BOX, CAKE, CHEST, COFFEE, SEASONAL_STANDARD_BOX, SEASONAL_CAKE, SEASONAL_CHEST, SEASONAL_COFFEE, NITROWEEN_STANDARD } = GuildFeatures.PremiumGiftStyles);
+const obj = { [SNOWGLOBE]: messagesProxyDefault.M6cPwB, [BOX]: messagesProxyDefault.B9XqQk, [CUP]: messagesProxyDefault["6dCq/u"], [STANDARD_BOX]: messagesProxyDefault.GzPel1, [CAKE]: messagesProxyDefault.AJ4iir, [CHEST]: messagesProxyDefault.P5keo3, [COFFEE]: messagesProxyDefault.w84vET, [SEASONAL_STANDARD_BOX]: messagesProxyDefault["vd1fu/"], [SEASONAL_CAKE]: messagesProxyDefault.aubYGR, [SEASONAL_CHEST]: messagesProxyDefault.vjxYqU, [SEASONAL_COFFEE]: messagesProxyDefault.bHuJLa, [NITROWEEN_STANDARD]: messagesProxyDefault["+HMF8k"] };
+const result = set.fileFinishedImporting("modules/premium/gifting/PremiumGiftingConstants.tsx");
 
 export const GIFT_STYLE_DESCRIPTIONS = obj;

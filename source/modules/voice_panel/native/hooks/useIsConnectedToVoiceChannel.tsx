@@ -1,40 +1,40 @@
-// Module ID: 16256
-// Function ID: 16257
+// Module ID: 16353
+// Function ID: 16354
 // Name: useIsConnectedToVoiceChannel
-// Dependencies: [1218, 4539, 4542, 676, 589, 2]
+// Dependencies: [1218, 4544, 4547, 676, 589, 2]
 // Exports: default
 
-// Module 16256 (useIsConnectedToVoiceChannel)
-import fetchFingerprint from "fetchFingerprint";
-import createRTCConnection from "createRTCConnection";
-import updateVoiceState from "updateVoiceState";
-import { RTCConnectionStates } from "ME";
+// Module 16353 (useIsConnectedToVoiceChannel)
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "createRTCConnection" /* 4544 */;
+import closure_4 from "updateVoiceState" /* 4547 */;
+import { RTCConnectionStates } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("updateVoiceState").fileFinishedImporting("modules/voice_panel/native/hooks/useIsConnectedToVoiceChannel.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/hooks/useIsConnectedToVoiceChannel.tsx");
 
 export default function useIsConnectedToVoiceChannel(arg0) {
   const _require = arg0;
-  const items = [createRTCConnection, updateVoiceState, fetchFingerprint];
+  const items = [closure_3, closure_4, closure_2];
   return _require(589).useStateFromStores(items, () => {
-    const channelId = outer1_3.getChannelId();
+    const channelId = closure_1_3.getChannelId();
     let tmp2 = closure_0;
     if (closure_0 == null) {
       tmp2 = channelId;
     }
     if (tmp2 !== channelId) {
       return false;
-    } else if (outer1_4.isInChannel(tmp2, outer1_2.getId())) {
+    } else if (closure_1_4.isInChannel(tmp2, closure_1_2.getId())) {
       return true;
     } else {
       const state = obj.getState();
-      if (outer1_5.DISCONNECTED !== state) {
-        if (outer1_5.NO_ROUTE !== state) {
+      if (closure_1_5.DISCONNECTED !== state) {
+        if (closure_1_5.NO_ROUTE !== state) {
           return true;
         }
       }
       return false;
     }
-    obj = outer1_3;
+    obj = closure_1_3;
   });
 };

@@ -1,67 +1,65 @@
-// Module ID: 16081
-// Function ID: 16082
+// Module ID: 16179
+// Function ID: 16180
 // Name: SearchNavigatorScreen
-// Dependencies: [19, 17, 21, 4661, 712, 15847, 4234, 16082, 5433, 1236, 6316, 9091, 15624, 15849, 15860, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 15944, 4238, 16180, 5438, 1236, 6347, 9128, 15690, 15946, 15957, 2]
 // Exports: default
 
-// Module 16081 (SearchNavigatorScreen)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16179 (SearchNavigatorScreen)
+import ThemesDefault from "Themes" /* 712 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4238 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 9128 */;
+import _modDef15946 from "module_15946" /* 15946 */;
+import SearchFreezeContainerDefault from "SearchFreezeContainer" /* 15957 */;
+import useSearchLayoutInsetTopDefault from "useSearchLayoutInsetTop" /* 16180 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6, Fragment: error } = jsxProd);
 createCacheKey = { wrapper: null, tabs: null, back: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flex: 1, marginTop: require("Themes").space.PX_16 };
-let obj1 = { flex: 1, marginTop: require("Themes").space.PX_16 };
-createCacheKey[2] = { marginLeft: require("Themes").space.PX_16, marginRight: require("Themes").space.PX_12 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj2 = { marginLeft: require("Themes").space.PX_16, marginRight: require("Themes").space.PX_12 };
-const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorScreen.tsx");
+createCacheKey[1] = { flex: 1, marginTop: ThemesDefault.space.PX_16 };
+let obj1 = { flex: 1, marginTop: ThemesDefault.space.PX_16 };
+createCacheKey[2] = { marginLeft: ThemesDefault.space.PX_16, marginRight: ThemesDefault.space.PX_12 };
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const obj2 = { marginLeft: ThemesDefault.space.PX_16, marginRight: ThemesDefault.space.PX_12 };
+const result = require("set").fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorScreen.tsx");
 
 export default function SearchNavigatorScreen(navigation) {
-  let dismissed;
-  let gesture;
-  let onLayoutMeasure;
-  let setDismissed;
   navigation = navigation.navigation;
   const searchContext = navigation.route.params.searchContext;
-  let importDefault;
-  const tmp = createCacheKey();
+  importDefault = undefined;
+  const tmp = callback3();
   importDefault = tmp;
-  let obj = navigation(15847);
+  let obj = navigation(15944);
   const searchSuggestionsGesture = obj.useSearchSuggestionsGesture(searchContext);
   ({ gesture, dismissed, setDismissed, onLayoutMeasure } = searchSuggestionsGesture);
   const items = [navigation.goBack, tmp.back];
   obj = { children: null };
   const memo = React.useMemo(() => {
     let obj = { children: null };
-    obj = { style: _undefined.back, accessibilityLabel: null, accessibilityRole: "button", onPress: null, children: null };
-    const intl = navigation(outer1_2[9]).intl;
-    obj[1] = intl.string(navigation(outer1_2[9]).t["13/7kX"]);
+    obj = { style: lib.back, accessibilityLabel: null, accessibilityRole: "button", onPress: null, children: null };
+    const intl = navigation(closure_1_2[9]).intl;
+    obj[1] = intl.string(navigation(closure_1_2[9]).t["13/7kX"]);
     obj[3] = navigation.goBack;
-    obj = { color: null };
-    obj[0] = _undefined(outer1_2[4]).colors.INTERACTIVE_TEXT_DEFAULT;
-    obj[4] = outer1_5(navigation(outer1_2[10]).ArrowLargeLeftIcon, obj);
-    obj[0] = outer1_5(navigation(outer1_2[8]).PressableOpacity, obj);
-    return outer1_5(outer1_4, obj);
+    obj = { color: lib(closure_1_2[4]).colors.INTERACTIVE_TEXT_DEFAULT };
+    obj[4] = closure_1_5(navigation(closure_1_2[10]).ArrowLargeLeftIcon, obj);
+    obj[0] = closure_1_5(navigation(closure_1_2[8]).PressableOpacity, obj);
+    return closure_1_5(closure_1_4, obj);
   }, items);
-  const items1 = [callback(importDefault(9091), { absolute: true, wide: true, tall: true }), ];
+  const items1 = [callback(getMixedGradientColorDefault, { absolute: true, wide: true, tall: true }), ];
   obj = { gesture, children: null };
-  const obj1 = { style: items2, children: null };
-  items2 = [tmp.wrapper, { paddingTop: importDefault(16082)() }];
-  const items3 = [callback(importDefault(15849), { searchContext, suggestionsDismissed: dismissed, setSuggestionsDismissed: setDismissed, onSuggestionsLayoutMesure: onLayoutMeasure, backButton: memo }), ];
-  const tmp3 = importDefault(16082)();
-  items3[1] = callback(View, { style: tmp.tabs, children: callback(importDefault(15860), { searchContext, width: importDefault(4234)().width }) });
+  obj1 = { style: items2, children: null };
+  items2 = [tmp.wrapper, { paddingTop: useSearchLayoutInsetTopDefault() }];
+  const items3 = [callback(_modDef15946, { searchContext, suggestionsDismissed: dismissed, setSuggestionsDismissed: setDismissed, onSuggestionsLayoutMesure: onLayoutMeasure, backButton: memo }), ];
+  const tmp3 = useSearchLayoutInsetTopDefault();
+  items3[1] = callback(View, { style: tmp.tabs, children: callback(SearchFreezeContainerDefault, { searchContext, width: useBaseAppContainerDimensionsDefault().width }) });
   obj1[1] = items3;
   obj[1] = callback2(View, obj1);
-  items1[1] = callback(navigation(15624).NonCollapsableGestureDetector, obj);
+  items1[1] = callback(navigation(15690).NonCollapsableGestureDetector, obj);
   obj[0] = items1;
   return callback2(closure_7, obj);
 };

@@ -1,13 +1,16 @@
-// Module ID: 12785
-// Function ID: 12786
+// Module ID: 12840
+// Function ID: 12841
 // Name: getCoverImageFromActivity
-// Dependencies: [4481, 7247, 2]
+// Dependencies: [4485, 7285, 2]
 // Exports: default
 
-// Module 12785 (getCoverImageFromActivity)
-import { ACTIVITY_INVITE_COVER_IMAGE_SIZE as closure_2 } from "items3";
+// Module 12840 (getCoverImageFromActivity)
+import set from "set" /* 2 */;
+import items3 from "items3" /* 4485 */;
+import updateAssets from "updateAssets" /* 7285 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/utils/getCoverImageFromActivity.tsx");
+let closure_2 = items3.ACTIVITY_INVITE_COVER_IMAGE_SIZE;
+const result = set.fileFinishedImporting("modules/activities/utils/getCoverImageFromActivity.tsx");
 
 export default function getCoverImageFromActivity(assets, application_id) {
   let assetImage = null;
@@ -17,8 +20,8 @@ export default function getCoverImageFromActivity(assets, application_id) {
       assetImage = null;
       if (null != assets.assets.large_image) {
         const items = [closure_2, closure_2];
-        assetImage = require(7247) /* updateAssets */.getAssetImage(application_id, assets.assets.large_image, items);
-        const obj = require(7247) /* updateAssets */;
+        assetImage = updateAssets.getAssetImage(application_id, assets.assets.large_image, items);
+        const obj = updateAssets;
       }
     }
   }

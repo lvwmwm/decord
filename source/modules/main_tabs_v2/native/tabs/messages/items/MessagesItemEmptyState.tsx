@@ -1,32 +1,33 @@
-// Module ID: 15358
-// Function ID: 15359
+// Module ID: 15422
+// Function ID: 15423
 // Name: MESSAGES_ITEM_EMPTY_STATE_HEIGHT
-// Dependencies: [19, 17, 21, 4661, 712, 4230, 15317, 4734, 1236, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4234, 15381, 4739, 1236, 4750, 2]
 
-// Module 15358 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15422 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import registerAssetDefault from "registerAsset" /* 15381 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 ({ Image: c4, View: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let obj = { container: null, containerImage: null, image: null, body: null, title: null };
-obj = { padding: require("Themes").space.PX_16, flex: 1, height: 325 };
+obj = { padding: ThemesDefault.space.PX_16, flex: 1, height: 325 };
 obj[0] = obj;
-createCacheKey = { marginBottom: require("Themes").space.PX_16, flexShrink: 1, flexGrow: 1 };
+createCacheKey = { marginBottom: ThemesDefault.space.PX_16, flexShrink: 1, flexGrow: 1 };
 obj[1] = createCacheKey;
 obj[2] = { height: "100%", width: "100%" };
-obj[3] = { marginBottom: require("Themes").space.PX_16, marginTop: require("Themes").space.PX_8, textAlign: "center" };
+obj[3] = { marginBottom: ThemesDefault.space.PX_16, marginTop: ThemesDefault.space.PX_8, textAlign: "center" };
 obj[4] = { textAlign: "center" };
 let closure_8 = createCacheKey.createStyles(obj);
-let obj2 = { marginBottom: require("Themes").space.PX_16, marginTop: require("Themes").space.PX_8, textAlign: "center" };
+let obj2 = { marginBottom: ThemesDefault.space.PX_16, marginTop: ThemesDefault.space.PX_8, textAlign: "center" };
 const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
   const tmp = callback3();
   let obj = { style: tmp.container, collapsable: false, children: null };
@@ -44,27 +45,27 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
       }
     }
   }, []);
-  obj[1] = importDefault(15317);
+  obj[1] = registerAssetDefault;
   obj[2] = tmp.image;
   obj[1] = callback(closure_4, obj);
   const items = [callback(closure_5, obj), , , ];
-  const obj1 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.title, maxFontSizeMultiplier: 2, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj1[4] = intl.string(require(1236) /* getSystemLocale */.t["8JZof8"]);
-  items[1] = callback(require(4734) /* Text */.Heading, obj1);
+  obj1 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.title, maxFontSizeMultiplier: 2, children: null };
+  const intl = getSystemLocale.intl;
+  obj1[4] = intl.string(getSystemLocale.t["8JZof8"]);
+  items[1] = callback(Text.Heading, obj1);
   const obj2 = { color: "text-default", variant: "text-md/medium", style: tmp.body, maxFontSizeMultiplier: 2, children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj2[4] = intl2.string(require(1236) /* getSystemLocale */.t["qm+H7x"]);
-  items[2] = callback(require(4734) /* Text */.Text, obj2);
+  const intl2 = getSystemLocale.intl;
+  obj2[4] = intl2.string(getSystemLocale.t["qm+H7x"]);
+  items[2] = callback(Text.Text, obj2);
   const obj3 = { text: null, onPress: null, size: "lg" };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj3[0] = intl3.string(require(1236) /* getSystemLocale */.t.zIJnA6);
+  const intl3 = getSystemLocale.intl;
+  obj3[0] = intl3.string(getSystemLocale.t.zIJnA6);
   obj3[1] = callback;
-  items[3] = callback(require(4745) /* Button */.Button, obj3);
+  items[3] = callback(Button.Button, obj3);
   obj[2] = items;
   return callback2(closure_5, obj);
 });
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemEmptyState.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemEmptyState.tsx");
 
 export default memoResult;
 export const MESSAGES_ITEM_EMPTY_STATE_HEIGHT = 325;

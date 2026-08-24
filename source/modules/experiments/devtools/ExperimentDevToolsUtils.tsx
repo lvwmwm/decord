@@ -1,15 +1,19 @@
-// Module ID: 4366
-// Function ID: 4367
+// Module ID: 4370
+// Function ID: 4371
 // Name: getExperimentVariantsForDevTools
-// Dependencies: [4367, 4296, 2]
+// Dependencies: [4371, 4300, 2]
 // Exports: getExperimentVariantsForDevTools
 
-// Module 4366 (getExperimentVariantsForDevTools)
-const obj = { id: -1, label: "Not Eligible", shortLabel: "Not Eligible", type: require("create").Variation_Type.OVERRIDE };
-const result = require("set").fileFinishedImporting("modules/experiments/devtools/ExperimentDevToolsUtils.tsx");
+// Module 4370 (getExperimentVariantsForDevTools)
+import set from "set" /* 2 */;
+import trackExposureToExperiment from "trackExposureToExperiment" /* 4300 */;
+import create from "create" /* 4371 */;
+
+const obj = { id: -1, label: "Not Eligible", shortLabel: "Not Eligible", type: create.Variation_Type.OVERRIDE };
+const result = set.fileFinishedImporting("modules/experiments/devtools/ExperimentDevToolsUtils.tsx");
 
 export const getExperimentVariantsForDevTools = function getExperimentVariantsForDevTools(experiment) {
-  if (experiment.system !== require(4296) /* trackExposureToExperiment */.ExperimentSystem.APEX) {
+  if (experiment.system !== trackExposureToExperiment.ExperimentSystem.APEX) {
     let variants = experiment.variants;
   } else {
     const items = [obj];

@@ -1,18 +1,18 @@
-// Module ID: 9796
-// Function ID: 9797
+// Module ID: 9835
+// Function ID: 9836
 // Name: useAccountLinkStepTracking
 // Dependencies: [19, 676, 698, 2]
 // Exports: useAccountLinkStepTracking
 
-// Module 9796 (useAccountLinkStepTracking)
-import noop from "noop";
-import { AnalyticEvents } from "ME";
+// Module 9835 (useAccountLinkStepTracking)
+import closure_2 from "noop" /* 19 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const result = require("expandEventProperties").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useAccountLinkStepTracking.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useAccountLinkStepTracking.tsx");
 
 export const useAccountLinkStepTracking = function useAccountLinkStepTracking(CRUNCHYROLL, locationStack) {
-  let closure_0 = CRUNCHYROLL;
-  let closure_1 = locationStack;
+  closure_0 = CRUNCHYROLL;
+  closure_1 = locationStack;
   React = React.useRef(null);
   let items = [locationStack, CRUNCHYROLL];
   const items1 = [locationStack, CRUNCHYROLL];
@@ -29,7 +29,7 @@ export const useAccountLinkStepTracking = function useAccountLinkStepTracking(CR
       obj[1] = tmp7;
       obj[2] = index.routeNames[index];
       obj[3] = tmp2;
-      obj.track(outer1_3.ACCOUNT_LINK_STEP, obj);
+      obj.track(closure_1_3.ACCOUNT_LINK_STEP, obj);
       tmp.current = index;
     }
   }, items);
@@ -44,7 +44,7 @@ export const useAccountLinkStepTracking = function useAccountLinkStepTracking(CR
     obj[1] = tmp3;
     obj[2] = items[0];
     obj[3] = CRUNCHYROLL;
-    obj.track(outer1_3.ACCOUNT_LINK_STEP, obj);
+    obj.track(closure_1_3.ACCOUNT_LINK_STEP, obj);
     ref.current = 0;
   }, items1);
   return callback;

@@ -1,36 +1,40 @@
-// Module ID: 13810
-// Function ID: 13811
-// Dependencies: [5, 17, 4662, 676, 1305, 13811, 709, 698, 13814, 10561, 13812, 4222, 1363, 2]
+// Module ID: 13868
+// Function ID: 13869
+// Dependencies: [5, 17, 4669, 676, 1305, 13869, 709, 698, 13872, 10600, 13870, 4226, 1363, 2]
 
-// Module 13810
-import AccessibilityFeatureFlags from "AccessibilityFeatureFlags";
-import get_ActivityIndicator from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { AnalyticEvents } from "ME";
-import { SystemTheme } from "SystemThemeState";
+// Module 13868
+import dispatcherDefault from "dispatcher" /* 709 */;
+import setSystemTheme from "setSystemTheme" /* 4226 */;
+import uDefault from "u" /* 10600 */;
+import AccessibilityFeatureFlagsDefault from "AccessibilityFeatureFlags" /* 13869 */;
+import A11Y_FEATURE_MAP from "A11Y_FEATURE_MAP" /* 13870 */;
+import updateSaturation from "updateSaturation" /* 13872 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { SystemTheme } from "SystemThemeState" /* 1305 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ AccessibilityInfo: c4, Appearance: c5 } = get_ActivityIndicator);
-let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/a11y/native/AccessibilityManager.tsx");
+let result = require("set").fileFinishedImporting("modules/a11y/native/AccessibilityManager.tsx");
 
 export default {
   init() {
     const self = this;
-    importDefault(13811).init();
+    AccessibilityFeatureFlagsDefault.init();
     this.updateNativeColors();
     this.updateMotionSettings();
-    maybeApplyNoTextColorForLightCustomTheme.addChangeListener(this.updateNativeColors);
-    maybeApplyNoTextColorForLightCustomTheme.addChangeListener(this.updateMotionSettings);
-    let obj = importDefault(13811);
-    const subscription = importDefault(709).subscribe("CONNECTION_OPEN", this.updateMotionSettings);
+    closure_6.addChangeListener(this.updateNativeColors);
+    closure_6.addChangeListener(this.updateMotionSettings);
+    let obj = AccessibilityFeatureFlagsDefault;
+    const subscription = dispatcherDefault.subscribe("CONNECTION_OPEN", this.updateMotionSettings);
     closure_5.addChangeListener(this.updateSystemAppearance);
     const listener = closure_4.addEventListener("screenReaderChanged", (arg0) => {
       const result = self.updateScreenReaderEnabled(arg0);
     });
-    const obj2 = importDefault(709);
-    const subscription1 = importDefault(709).subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
+    const obj2 = dispatcherDefault;
+    const subscription1 = dispatcherDefault.subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
       let obj = callback(table[7]);
       obj = { colorblind_enabled: colorblindMode.colorblindMode };
       obj.track(constants.LOCAL_SETTINGS_UPDATED, obj);
@@ -38,10 +42,10 @@ export default {
     let result = this.startAnnouncementQueue();
   },
   updateNativeColors() {
-    require(13814) /* updateSaturation */.updateSaturation(maybeApplyNoTextColorForLightCustomTheme.saturation);
+    updateSaturation.updateSaturation(closure_6.saturation);
   },
   updateMotionSettings() {
-    importDefault(10561)(require(13812) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { reduceMotion: maybeApplyNoTextColorForLightCustomTheme.useReducedMotion, prefersCrossfades: maybeApplyNoTextColorForLightCustomTheme.systemPrefersCrossfades });
+    uDefault(A11Y_FEATURE_MAP.accessibilityPreferencesSharedValue, { reduceMotion: closure_6.useReducedMotion, prefersCrossfades: closure_6.systemPrefersCrossfades });
   },
   checkScreenreaderEnabled() {
     const self = this;
@@ -57,7 +61,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -72,13 +76,13 @@ export default {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_1 = tmp5;
-              let closure_0 = tmp2;
+              closure_1 = tmp5;
+              closure_0 = tmp2;
               closure_0 = undefined;
               c2 = 1;
               c3 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_4.isScreenReaderEnabled();
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_4.isScreenReaderEnabled();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -93,7 +97,7 @@ export default {
             closure_0 = arg1;
             const result = closure_0.updateScreenReaderEnabled(closure_0);
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;
@@ -103,7 +107,7 @@ export default {
     })();
   },
   updateScreenReaderEnabled(screenReaderEnabled) {
-    importDefault(10561)(require(13812) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { screenReaderEnabled });
+    uDefault(A11Y_FEATURE_MAP.accessibilityPreferencesSharedValue, { screenReaderEnabled });
   },
   updateSystemAppearance(colorScheme) {
     let DARK = SystemTheme.NO_PREFERENCE;
@@ -113,7 +117,7 @@ export default {
     } else if ("dark" === colorScheme) {
       DARK = tmp.DARK;
     }
-    require(4222) /* setSystemTheme */.setSystemTheme(DARK);
+    setSystemTheme.setSystemTheme(DARK);
   },
   startAnnouncementQueue() {
     const set = new Set();
@@ -123,7 +127,7 @@ export default {
           set.add(success.announcement);
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
-            const AccessibilityAnnouncer = success(outer1_2[12]).AccessibilityAnnouncer;
+            const AccessibilityAnnouncer = success(closure_1_2[12]).AccessibilityAnnouncer;
             AccessibilityAnnouncer.announce(success.announcement);
           }, 150);
         }

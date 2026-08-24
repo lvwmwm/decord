@@ -1,15 +1,15 @@
-// Module ID: 14117
-// Function ID: 14118
+// Module ID: 14185
+// Function ID: 14186
 // Name: useUsernameStatus
-// Dependencies: [32, 19, 14118, 2]
+// Dependencies: [32, 19, 14186, 2]
 // Exports: useUsernameStatus
 
-// Module 14117 (useUsernameStatus)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 14185 (useUsernameStatus)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("useUsernameLiveCheck").fileFinishedImporting("modules/unique_usernames/useUsernameStatus.tsx");
+const result = require("set").fileFinishedImporting("modules/unique_usernames/useUsernameStatus.tsx");
 
 export const useUsernameStatus = (arg0, flag, flag2) => {
   const _require = arg0;
@@ -19,10 +19,10 @@ export const useUsernameStatus = (arg0, flag, flag2) => {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const dependencyMap = tmp;
+  dependencyMap = tmp;
   let usernameLiveCheck;
   let React;
-  usernameLiveCheck = _require(14118).useUsernameLiveCheck(arg0, flag, flag2);
+  usernameLiveCheck = _require(14186).useUsernameLiveCheck(arg0, flag, flag2);
   const tmp3 = usernameLiveCheck(React.useState(undefined), 2);
   React = tmp3[1];
   const items = [usernameLiveCheck, arg0, arg3];

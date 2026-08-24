@@ -1,17 +1,20 @@
-// Module ID: 11276
-// Function ID: 11277
+// Module ID: 11327
+// Function ID: 11328
 // Name: setLastSeenTimeMs
 // Dependencies: [709, 2]
 // Exports: setLastSeenTimeMs, setTriggeredOnboardingContentMetadata
 
-// Module 11276 (setLastSeenTimeMs)
-const result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/AppLauncherOnboardingActionCreators.tsx");
+// Module 11327 (setLastSeenTimeMs)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/app_launcher/native/onboarding/AppLauncherOnboardingActionCreators.tsx");
 
 export const setLastSeenTimeMs = function setLastSeenTimeMs() {
-  importDefault(709).dispatch({ type: "APP_LAUNCHER_ONBOARDING_SET_LAST_SEEN_TIME_MS" });
+  dispatcherDefault.dispatch({ type: "APP_LAUNCHER_ONBOARDING_SET_LAST_SEEN_TIME_MS" });
 };
 export const setTriggeredOnboardingContentMetadata = function setTriggeredOnboardingContentMetadata(triggeredOnboardingContentMetadata) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "APP_LAUNCHER_ONBOARDING_SET_TRIGGERED_ONBOARDING_CONTENT_METADATA", triggeredOnboardingContentMetadata };
   obj.dispatch(obj);
 };

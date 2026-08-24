@@ -1,13 +1,13 @@
-// Module ID: 7519
-// Function ID: 7520
+// Module ID: 7557
+// Function ID: 7558
 // Name: setFilterTagIds
 // Dependencies: [1391, 2]
 
-// Module 7519 (setFilterTagIds)
-import "ensureGuildLoaded";
-import set from "set";
+// Module 7557 (setFilterTagIds)
+import set from "ensureGuildLoaded" /* 1391 */;
+import set from "set" /* 2 */;
 
-let set = Object.create(function ForumChannelAnalyticsManager() {
+set = Object.create(function ForumChannelAnalyticsManager() {
   const obj = Object.create(new.target.prototype);
   obj.setFilterTagIds = function setFilterTagIds(filterTagIds) {
     obj.filterTagIds = filterTagIds;

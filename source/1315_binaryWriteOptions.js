@@ -5,8 +5,8 @@
 // Exports: binaryWriteOptions
 
 // Module 1315 (binaryWriteOptions)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import closure_2 from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
 const BinaryWriter = require;
 let closure_3 = {
@@ -19,7 +19,7 @@ class BinaryWriter {
   constructor(arg0) {
     self = this;
     textEncoder = global;
-    tmp2 = outer1_2(this, BinaryWriter);
+    tmp2 = closure_2(this, BinaryWriter);
     this.stack = [];
     if (null == global) {
       tmp3 = globalThis;
@@ -93,7 +93,7 @@ const items = [
         return self.raw(finishResult);
       } else {
         const _Error = Error;
-        const error = new Error("invalid state, fork stack empty");
+        error = new Error("invalid state, fork stack empty");
         throw error;
       }
     }

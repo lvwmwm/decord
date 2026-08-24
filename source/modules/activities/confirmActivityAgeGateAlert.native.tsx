@@ -1,52 +1,54 @@
-// Module ID: 8740
-// Function ID: 8741
+// Module ID: 8777
+// Function ID: 8778
 // Name: ConfirmActivityGateContent
-// Dependencies: [19, 17, 21, 4661, 712, 8741, 4734, 1236, 4827, 1297, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 8778, 4739, 1236, 4832, 1297, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 8740 (ConfirmActivityGateContent)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8777 (ConfirmActivityGateContent)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import setDefault from "set" /* 4832 */;
+import SvgComponentDefault from "SvgComponent" /* 8778 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function ConfirmActivityGateContent(children) {
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { style: tmp.alertContainer, children: null };
-  const items = [callback(importDefault(8741), {}), ];
+  const items = [callback(SvgComponentDefault, {}), ];
   obj = { style: tmp.alertBodyText, variant: "text-md/normal", children: children.description };
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  items[1] = callback(Text.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertBodyText: null };
-createCacheKey = { fontSize: 16, lineHeight: 24, color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, textAlign: "center" };
+createCacheKey = { fontSize: 16, lineHeight: 24, color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT, textAlign: "center" };
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/activities/confirmActivityAgeGateAlert.native.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/activities/confirmActivityAgeGateAlert.native.tsx");
 
 export const confirmActivityAgeGateAlert = function confirmActivityAgeGateAlert(arg0) {
-  let application;
-  let onAgree;
-  let onDisagree;
   ({ application, onAgree, onDisagree } = arg0);
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   let obj = { applicationName: application.name };
-  const formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.OgmIqy, obj);
+  const formatToPlainStringResult = intl.formatToPlainString(getSystemLocale.t.OgmIqy, obj);
   obj = { title: null, children: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, confirmColor: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.SSDPOF);
+  const intl2 = getSystemLocale.intl;
+  obj[0] = intl2.string(getSystemLocale.t.SSDPOF);
   obj[1] = callback(ConfirmActivityGateContent, { description: formatToPlainStringResult });
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.hg1uxn);
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl4.string(require(1236) /* getSystemLocale */.t.wVq7uo);
+  const intl3 = getSystemLocale.intl;
+  obj[2] = intl3.string(getSystemLocale.t.hg1uxn);
+  const intl4 = getSystemLocale.intl;
+  obj[3] = intl4.string(getSystemLocale.t.wVq7uo);
   obj[4] = onAgree;
   obj[5] = onDisagree;
-  obj[6] = require(1297) /* Button */.ButtonColors.RED;
-  return Promise.resolve(importDefault(4827).show(obj));
+  obj[6] = Button.ButtonColors.RED;
+  return Promise.resolve(setDefault.show(obj));
 };

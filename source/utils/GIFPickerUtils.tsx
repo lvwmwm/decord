@@ -1,22 +1,25 @@
-// Module ID: 10197
-// Function ID: 10198
+// Module ID: 10236
+// Function ID: 10237
 // Name: isKlipyProvider
-// Dependencies: [676, 10196, 2]
+// Dependencies: [676, 10235, 2]
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite, isKlipyProvider, shouldUseAnimatedWebPThumbnail
 
-// Module 10197 (isKlipyProvider)
-import { SearchTypes } from "ME";
+// Module 10236 (isKlipyProvider)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import GIF_PROVIDER from "GIF_PROVIDER" /* 10235 */;
 
-const result = require("set").fileFinishedImporting("utils/GIFPickerUtils.tsx");
+const SearchTypes = ME.SearchTypes;
+const result = set.fileFinishedImporting("utils/GIFPickerUtils.tsx");
 
 export const isKlipyProvider = function isKlipyProvider(arg0) {
-  return arg0 === require(10196) /* GIF_PROVIDER */.GIF_PROVIDER_EMBED_NAME;
+  return arg0 === GIF_PROVIDER.GIF_PROVIDER_EMBED_NAME;
 };
 export const shouldUseAnimatedWebPThumbnail = function shouldUseAnimatedWebPThumbnail(arg0) {
-  return arg0 === require(10196) /* GIF_PROVIDER */.GIF_PROVIDER_EMBED_NAME;
+  return arg0 === GIF_PROVIDER.GIF_PROVIDER_EMBED_NAME;
 };
 export const getGIFThumbnailForFavorite = function getGIFThumbnailForFavorite(providerName) {
-  if (providerName.providerName === require(10196) /* GIF_PROVIDER */.GIF_PROVIDER_EMBED_NAME) {
+  if (providerName.providerName === GIF_PROVIDER.GIF_PROVIDER_EMBED_NAME) {
     const thumbnail = providerName.thumbnail;
     if (null != thumbnail) {
       let uri = thumbnail.proxyURL;
@@ -31,9 +34,6 @@ export const getGIFThumbnailForFavorite = function getGIFThumbnailForFavorite(pr
   }
 };
 export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(analyticsID, TRENDING_GIFS, arg2) {
-  let limit;
-  let offset;
-  let results;
   if (null != TRENDING_GIFS) {
     let obj = {};
     obj[TRENDING_GIFS] = 1;
@@ -45,7 +45,7 @@ export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(an
     obj = {};
   }
   ({ offset, limit, results } = obj);
-  const obj1 = { search_type: SearchTypes.GIF, load_id: analyticsID, limit, offset, page: null, total_results: null, page_results: null, num_modifiers: null, modifiers: null };
+  obj1 = { search_type: SearchTypes.GIF, load_id: analyticsID, limit, offset, page: null, total_results: null, page_results: null, num_modifiers: null, modifiers: null };
   let num2 = 1;
   if (null != limit) {
     num2 = 1;

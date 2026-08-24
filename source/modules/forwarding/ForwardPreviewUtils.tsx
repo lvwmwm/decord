@@ -1,18 +1,16 @@
-// Module ID: 12040
-// Function ID: 12041
+// Module ID: 12092
+// Function ID: 12093
 // Name: useForwardPreviewContent
-// Dependencies: [4021, 589, 4821, 2]
+// Dependencies: [4024, 589, 4826, 2]
 // Exports: useForwardPreviewContent
 
-// Module 12040 (useForwardPreviewContent)
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+// Module 12092 (useForwardPreviewContent)
+import closure_2 from "getUncachedChannelPermissions" /* 4024 */;
 
 const require = arg1;
-let result = require("getEffectiveVideoProvider").fileFinishedImporting("modules/forwarding/ForwardPreviewUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/forwarding/ForwardPreviewUtils.tsx");
 
 export const useForwardPreviewContent = function useForwardPreviewContent(message) {
-  let dependencyMap;
-  let forwardOptions;
   message = message.message;
   ({ channel: dependencyMap, forwardOptions } = message);
   let onlyAttachmentIds;
@@ -43,12 +41,12 @@ export const useForwardPreviewContent = function useForwardPreviewContent(messag
   if (obj.useStateFromStores(items1, () => {
     let shouldStripEmbedsResult = null != closure_1;
     if (shouldStripEmbedsResult) {
-      shouldStripEmbedsResult = !message(outer1_1[2]).canEmbedLinks(tmp, onlyAttachmentIds);
-      const obj = message(outer1_1[2]);
+      shouldStripEmbedsResult = !message(closure_1_1[2]).canEmbedLinks(tmp, onlyAttachmentIds);
+      const obj = message(closure_1_1[2]);
     }
     if (shouldStripEmbedsResult) {
-      shouldStripEmbedsResult = message(outer1_1[2]).shouldStripEmbeds(message);
-      const obj2 = message(outer1_1[2]);
+      shouldStripEmbedsResult = message(closure_1_1[2]).shouldStripEmbeds(message);
+      const obj2 = message(closure_1_1[2]);
     }
     return shouldStripEmbedsResult;
   })) {

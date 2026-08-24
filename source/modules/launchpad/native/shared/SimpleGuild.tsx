@@ -1,42 +1,24 @@
-// Module ID: 16189
-// Function ID: 16190
+// Module ID: 16286
+// Function ID: 16287
 // Name: SimpleGuild
-// Dependencies: [19, 17, 1434, 5383, 1910, 676, 21, 4661, 7188, 16190, 589, 16191, 16193, 1236, 15596, 6867, 712, 16192, 2]
+// Dependencies: [19, 17, 1434, 5388, 1910, 676, 21, 4668, 7226, 16287, 589, 16288, 16290, 1236, 15662, 6905, 712, 16289, 2]
 // Exports: default
 
-// Module 16189 (SimpleGuild)
-import noop from "noop";
-import { View } from "module_16192";
-import { getGuildIconSource } from "GuildNSFWContentLevel";
-import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { ME } from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16286 (SimpleGuild)
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { getGuildIconSource } from "GuildNSFWContentLevel" /* 1434 */;
+import closure_6 from "updateGuildUnreadSentinel" /* 5388 */;
+import closure_7 from "createGuildRecordFromRust" /* 1910 */;
+import { ME } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_10 = createCacheKey.createStyles({ dmsWrapper: { flex: 1, justifyContent: "center", alignItems: "center" } });
-const result = require("GuildNSFWContentLevel").fileFinishedImporting("modules/launchpad/native/shared/SimpleGuild.tsx");
+const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/SimpleGuild.tsx");
 
 export default function SimpleGuild(guildId) {
-  let animated;
-  let backgroundColor;
-  let badge;
-  let borderRadius;
-  let containerSizeStyle;
-  let containerStyles;
-  let guildIconRef;
-  let iconBackground;
-  let iconBackgroundBrand;
-  let iconSize;
-  let iconStroke;
-  let onAccessibilityAction;
-  let onLayout;
-  let onLongPress;
-  let onPress;
-  let size;
-  let style;
-  let unread;
   guildId = guildId.guildId;
   ({ backgroundColor, animated } = guildId);
   ({ guildIconRef, style, onPress, onLongPress, onAccessibilityAction, onLayout } = guildId);
@@ -62,8 +44,8 @@ export default function SimpleGuild(guildId) {
   const tmp3 = callback();
   ({ iconStroke, iconBackground, iconBackgroundBrand } = str(unread2[9])());
   let obj = guildId(unread2[10]);
-  const items = [createGuildRecordFromRust];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(guildId));
+  const items = [closure_7];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_7.getGuild(guildId));
   str = undefined;
   if (stateFromStores != null) {
     str = stateFromStores.name;
@@ -72,9 +54,9 @@ export default function SimpleGuild(guildId) {
     str = "";
   }
   let tmp7Result = tmp7(tmp5[10]);
-  const items1 = [updateGuildUnreadSentinel];
+  const items1 = [closure_6];
   const items2 = [guildId];
-  const stateFromStoresObject = tmp7Result.useStateFromStoresObject(items1, () => ({ unread: outer1_6.hasUnread(guildId), badge: outer1_6.getMentionCount(guildId) }), items2);
+  const stateFromStoresObject = tmp7Result.useStateFromStoresObject(items1, () => ({ unread: closure_1_6.hasUnread(guildId), badge: closure_1_6.getMentionCount(guildId) }), items2);
   unread2 = stateFromStoresObject.unread;
   badge2 = stateFromStoresObject.badge;
   tmp7Result = tmp7(tmp5[11]);
@@ -168,7 +150,7 @@ export default function SimpleGuild(guildId) {
         obj = { style: null, children: null };
         obj[0] = tmp3.dmsWrapper;
         let colors = tmp4(tmp5[16]).colors;
-        const obj1 = { color: null };
+        obj1 = { color: null };
         obj1[0] = flag2 ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
         colors = tmp20(tmp7(tmp5[15]).ChatIcon, obj1);
         obj[1] = colors;

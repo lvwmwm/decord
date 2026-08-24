@@ -1,46 +1,39 @@
-// Module ID: 11348
-// Function ID: 11349
+// Module ID: 11399
+// Function ID: 11400
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 676, 21, 4661, 712, 1892, 4342, 11349, 2007, 11347, 5433, 4734, 2]
+// Dependencies: [32, 19, 676, 21, 4668, 712, 1892, 4346, 11400, 2008, 11398, 5438, 4739, 2]
 // Exports: default
 
-// Module 11348 (AppLauncherAutocompleteOption)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11399 (AppLauncherAutocompleteOption)
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11398 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 createCacheKey = { container: null, hasError: null, inputText: null };
-createCacheKey = { width: "100%", backgroundColor: require("Themes").colors.INPUT_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg, padding: 12, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" };
+createCacheKey = { width: "100%", backgroundColor: ThemesDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: ThemesDefault.radii.lg, padding: 12, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { borderColor: require("Themes").colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
-const obj1 = { borderColor: require("Themes").colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
-createCacheKey[2] = { fontSize: 16, alignSelf: "center", fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, color: require("Themes").colors.TEXT_DEFAULT };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj2 = { fontSize: 16, alignSelf: "center", fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, color: require("Themes").colors.TEXT_DEFAULT };
-let result = require("ME").fileFinishedImporting("modules/app_launcher/native/options/autocomplete/AppLauncherAutocompleteOption.tsx");
+createCacheKey[1] = { borderColor: ThemesDefault.colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
+const obj1 = { borderColor: ThemesDefault.colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
+createCacheKey[2] = { fontSize: 16, alignSelf: "center", fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, color: ThemesDefault.colors.TEXT_DEFAULT };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const obj2 = { fontSize: 16, alignSelf: "center", fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, color: ThemesDefault.colors.TEXT_DEFAULT };
+let result = require("set").fileFinishedImporting("modules/app_launcher/native/options/autocomplete/AppLauncherAutocompleteOption.tsx");
 
 export default function AppLauncherAutocompleteOption(arg0) {
-  let autoFocus;
-  let _slicedToArray;
-  let noop;
-  let closure_7;
-  let createCacheKey;
-  let dependencyMap;
-  let hasError;
-  let importDefault;
-  let jsx;
-  let require;
-  let style;
-  ({ option: require, onSelect: importDefault, onOpenAutocompleteSheet: dependencyMap, onDismissAutocompleteSheet: _slicedToArray, channel: noop, activeCommand: jsx, optionValues: createCacheKey, initialValue: closure_7, hasError } = arg0);
+  ({ option: require, onSelect: importDefault, onOpenAutocompleteSheet: dependencyMap, onDismissAutocompleteSheet: closure_3, channel: closure_4, activeCommand: jsx, optionValues: closure_6, initialValue: closure_7, hasError } = arg0);
   let first;
-  let closure_9;
+  closure_9 = undefined;
   function onPress() {
     if (closure_2 != null) {
       tmp();
     }
-    let obj = outer1_0(outer1_2[6]);
+    let obj = closure_1_0(closure_1_2[6]);
     const result = obj.dismissGlobalKeyboard();
     obj = {
       option: closure_0,
@@ -49,12 +42,12 @@ export default function AppLauncherAutocompleteOption(arg0) {
         callback2(arg0);
         callback(arg0);
       },
-      channel: noop,
+      channel: closure_4,
       activeCommand: closure_5,
-      onDismissAutocompleteSheet: _slicedToArray,
+      onDismissAutocompleteSheet: closure_3,
       optionValues: ref.current
     };
-    outer1_1(outer1_2[7]).openLazy(outer1_0(outer1_2[9])(outer1_2[8], outer1_2.paths), "AppLauncherAutocompleteActionSheet", obj);
+    closure_1_1(closure_1_2[7]).openLazy(closure_1_0(closure_1_2[9])(closure_1_2[8], closure_1_2.paths), "AppLauncherAutocompleteActionSheet", obj);
   }
   ({ style, autoFocus } = arg0);
   const tmp = callback(React.useState(() => {
@@ -70,8 +63,8 @@ export default function AppLauncherAutocompleteOption(arg0) {
   }), 2);
   first = tmp[0];
   closure_9 = tmp[1];
-  const tmp3 = createCacheKey();
-  let obj = require(11347) /* useAnimationDelayedAutoFocus */;
+  const tmp3 = callback2();
+  let obj = useAnimationDelayedAutoFocus;
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, onPress);
   obj = { onPress, style: null, children: null };
   const items = [tmp3.container, , ];
@@ -87,6 +80,6 @@ export default function AppLauncherAutocompleteOption(arg0) {
     str = first.displayName;
   }
   obj[2] = str;
-  obj[2] = jsx(require(4734) /* Text */.Text, { variant: "text-md/normal", style: tmp3.inputText, children: null });
-  return jsx(require(5433) /* PressableBase */.PressableOpacity, { variant: "text-md/normal", style: tmp3.inputText, children: null });
+  obj[2] = jsx(Text.Text, { variant: "text-md/normal", style: tmp3.inputText, children: null });
+  return jsx(PressableBase.PressableOpacity, { variant: "text-md/normal", style: tmp3.inputText, children: null });
 };

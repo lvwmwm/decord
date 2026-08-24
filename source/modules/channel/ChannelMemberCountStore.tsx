@@ -1,27 +1,30 @@
-// Module ID: 12717
-// Function ID: 12718
+// Module ID: 12772
+// Function ID: 12773
 // Name: initialize
-// Dependencies: [4495, 1391, 11, 589, 709, 2]
+// Dependencies: [4499, 1391, 11, 589, 709, 2]
 
-// Module 12717 (initialize)
-import _handleConnectionOpen from "_handleConnectionOpen";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { PersistedStore } from "initialize";
+// Module 12772 (initialize)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "_handleConnectionOpen" /* 4499 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
 let closure_4 = Object.freeze({ online: null, total: null });
 let closure_5 = {};
 let closure_6 = {};
 let c7 = null;
+const PersistedStore = initializeDefault.PersistedStore;
 class ChannelMemberCountStore extends PersistedStore {
 }
 const prototype = ChannelMemberCountStore.prototype;
 prototype["initialize"] = function initialize(arg0) {
   let tmp = arg0;
-  this.waitFor(_handleConnectionOpen, ensureGuildLoaded);
+  this.waitFor(closure_2, closure_3);
   if (arg0 == null) {
     tmp = closure_5;
   }
-  let closure_6 = tmp;
+  closure_6 = tmp;
 };
 prototype["getState"] = function getState() {
   return closure_6;
@@ -34,19 +37,19 @@ prototype["getMemberCount"] = function getMemberCount(arg0) {
   return tmp;
 };
 prototype["requestCount"] = function requestCount(guild_id, id) {
-  let closure_7 = { guildId: guild_id, channelId: id };
+  closure_7 = { guildId: guild_id, channelId: id };
   const socket = store.getSocket();
   const channelMemberCount = socket.requestChannelMemberCount(guild_id, id);
 };
 ChannelMemberCountStore.displayName = "ChannelMemberCountStore";
 ChannelMemberCountStore.persistKey = "channelMemberCounts";
-const channelMemberCountStore = new ChannelMemberCountStore(require("dispatcher"), {
+const channelMemberCountStore = new ChannelMemberCountStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
     if (null != _null) {
       const socket = store.getSocket();
       const channelMemberCount = socket.requestChannelMemberCount(_null.guildId, _null.channelId);
     }
-    const keys = importDefault(11).keys(closure_6);
+    const keys = DISCORD_EPOCHDefault.keys(closure_6);
     const item = keys.forEach((arg0) => {
       if (null == channel.getChannel(arg0)) {
         delete tmp[tmp2];
@@ -54,8 +57,6 @@ const channelMemberCountStore = new ChannelMemberCountStore(require("dispatcher"
     });
   },
   CHANNEL_MEMBER_COUNT_UPDATE: function handleMemberCountUpdate(channelId) {
-    let online;
-    let total;
     ({ online, total } = channelId);
     let tmp = null == online;
     if (tmp) {
@@ -70,6 +71,6 @@ const channelMemberCountStore = new ChannelMemberCountStore(require("dispatcher"
     return true;
   }
 });
-const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/channel/ChannelMemberCountStore.tsx");
+const result = require("set").fileFinishedImporting("modules/channel/ChannelMemberCountStore.tsx");
 
 export default channelMemberCountStore;

@@ -1,17 +1,17 @@
-// Module ID: 5425
-// Function ID: 5426
+// Module ID: 5430
+// Function ID: 5431
 // Name: canEditMessage
-// Dependencies: [676, 5385, 4803, 5026, 2]
+// Dependencies: [676, 5390, 4808, 5031, 2]
 // Exports: default
 
-// Module 5425 (canEditMessage)
-import ME from "ME";
+// Module 5430 (canEditMessage)
+import set from "set" /* 2 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+import isSystemMessageDefault from "isSystemMessage" /* 5390 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
-let c5;
 ({ MessageFlags: c3, MessageStates: c4, MessageTypes: c5 } = ME);
-let result = require("createMinimalMessageRecord").fileFinishedImporting("modules/messages/canEditMessage.tsx");
+let result = set.fileFinishedImporting("modules/messages/canEditMessage.tsx");
 
 export default function canEditMessage(author) {
   let tmp = null != arg1;
@@ -20,10 +20,10 @@ export default function canEditMessage(author) {
     if (tmp3) {
       let tmp5 = author.state === constants2.SENT;
       if (tmp5) {
-        const tmp8 = importDefault(5385)(author);
+        const tmp8 = isSystemMessageDefault(author);
         let tmp9 = !tmp8;
         if (!tmp8) {
-          let result = require(4803) /* createMinimalMessageRecord */.canEditMessageWithStickers(author);
+          let result = createMinimalMessageRecord.canEditMessageWithStickers(author);
           if (result) {
             const hasFlagResult = author.hasFlag(constants.IS_VOICE_MESSAGE);
             let tmp14 = !hasFlagResult;
@@ -33,7 +33,7 @@ export default function canEditMessage(author) {
                 const isPollResult = author.isPoll();
                 let tmp17 = !isPollResult;
                 if (!isPollResult) {
-                  const tmp18 = tmp6(5026)(author);
+                  const tmp18 = tmp6(5031)(author);
                   let tmp19 = !tmp18;
                   if (!tmp18) {
                     tmp19 = author.type !== constants3.MEDIA_MENTION_MESSAGE;
@@ -47,7 +47,7 @@ export default function canEditMessage(author) {
             result = tmp14;
           }
           tmp9 = result;
-          const obj = require(4803) /* createMinimalMessageRecord */;
+          const obj = createMinimalMessageRecord;
         }
         tmp5 = tmp9;
         tmp6 = importDefault;

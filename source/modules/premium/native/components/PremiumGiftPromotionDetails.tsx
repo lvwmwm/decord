@@ -1,24 +1,21 @@
-// Module ID: 10309
-// Function ID: 10310
+// Module ID: 10348
+// Function ID: 10349
 // Name: AnimatedImage
-// Dependencies: [32, 19, 17, 4662, 21, 4661, 712, 589, 9217, 501, 7699, 5449, 4734, 2]
+// Dependencies: [32, 19, 17, 4669, 21, 4668, 712, 589, 9254, 501, 7737, 5454, 4739, 2]
 // Exports: default
 
-// Module 10309 (AnimatedImage)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10348 (AnimatedImage)
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function AnimatedImage(arg0) {
-  let imageUrl;
-  let shouldAnimate;
-  let style;
   ({ imageUrl, style, shouldAnimate } = arg0);
   if (shouldAnimate === undefined) {
     shouldAnimate = true;
@@ -28,7 +25,7 @@ function AnimatedImage(arg0) {
   let first;
   let React;
   let obj = shouldAnimate(aPNGPlayerControls[7]);
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const items = [closure_6];
   stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let num = null;
   const ref = React.useRef(null);
@@ -75,23 +72,19 @@ function AnimatedImage(arg0) {
   }
   tmp13 = callback(tmp9(tmp2[11]), { style, resizeMode: "contain", source: { uri: imageUrl } });
 }
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles(() => {
   let obj = { container: null, image: null, textContainer: null };
-  obj = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_12 };
+  obj = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_12 };
   obj[0] = obj;
-  obj = { width: importDefault(712).space.PX_40, height: importDefault(712).space.PX_40, borderRadius: importDefault(712).radii.xs };
+  obj = { width: ThemesDefault.space.PX_40, height: ThemesDefault.space.PX_40, borderRadius: ThemesDefault.radii.xs };
   obj[1] = obj;
   obj[2] = { flex: 1 };
   return obj;
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/components/PremiumGiftPromotionDetails.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/components/PremiumGiftPromotionDetails.tsx");
 
 export default function PremiumGiftPromotionDetails(imageUrl) {
-  let shouldAnimate;
-  let style;
-  let subtitle;
-  let title;
   imageUrl = imageUrl.imageUrl;
   ({ style, title, subtitle, shouldAnimate } = imageUrl);
   const tmp = callback2();
@@ -107,7 +100,7 @@ export default function PremiumGiftPromotionDetails(imageUrl) {
   }
   const items1 = [tmp4, ];
   obj = { style: tmp.textContainer, children: null };
-  const items2 = [callback(require(4734) /* Text */.Text, { variant: "text-md/bold", color: "text-default", children: title }), callback(require(4734) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: subtitle })];
+  const items2 = [callback(Text.Text, { variant: "text-md/bold", color: "text-default", children: title }), callback(Text.Text, { variant: "text-sm/medium", color: "text-default", children: subtitle })];
   obj[1] = items2;
   items1[1] = closure_8(View, obj);
   obj[1] = items1;

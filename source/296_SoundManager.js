@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 296 (SoundManager)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("SoundManager");
+
+export default getAll.get("SoundManager");

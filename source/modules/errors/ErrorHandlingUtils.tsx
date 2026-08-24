@@ -1,14 +1,16 @@
-// Module ID: 5360
-// Function ID: 5361
+// Module ID: 5365
+// Function ID: 5366
 // Name: items
 // Dependencies: [676, 1208, 2]
 // Exports: captureOrIgnoreApiError
 
-// Module 5360 (items)
-import set from "set";
+// Module 5365 (items)
+import ME from "ME" /* 676 */;
+import _modDef1208 from "module_1208" /* 1208 */;
+import set from "set" /* 2 */;
 
 const items = [, , ];
-({ UNAUTHORIZED: arr[0], EMAIL_VERIFICATION_REQUIRED: arr[1], USER_BANNED: arr[2] } = require("ME").AbortCodes);
+({ UNAUTHORIZED: arr[0], EMAIL_VERIFICATION_REQUIRED: arr[1], USER_BANNED: arr[2] } = ME.AbortCodes);
 let set = new Set([500, 502, 503, 504]);
 const set1 = new Set([401, 403, 405, 409, 429]);
 const result = set.fileFinishedImporting("modules/errors/ErrorHandlingUtils.tsx");
@@ -70,7 +72,7 @@ export const captureOrIgnoreApiError = function captureOrIgnoreApiError(aPIError
     tmp = flag;
   }
   if (!tmp) {
-    importDefault(1208).captureException(aPIError);
-    const obj = importDefault(1208);
+    _modDef1208.captureException(aPIError);
+    const obj = _modDef1208;
   }
 };

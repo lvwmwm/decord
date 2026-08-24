@@ -1,30 +1,32 @@
-// Module ID: 13913
-// Function ID: 13914
+// Module ID: 13981
+// Function ID: 13982
 // Name: updateEnabledState
-// Dependencies: [1922, 13559, 13914, 4720, 2]
+// Dependencies: [1922, 13617, 13982, 4726, 2]
 
-// Module 13913 (updateEnabledState)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import "initialize";
+// Module 13981 (updateEnabledState)
+import initializeDefault from "initialize" /* 4726 */;
+import apexExperiment from "apexExperiment" /* 13617 */;
+import enforcingDefault from "enforcing" /* 13982 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
+require = arg1;
 function updateEnabledState() {
-  const currentUser = mergeGuildAvatar.getCurrentUser();
+  const currentUser = closure_3.getCurrentUser();
   let isStaffResult;
   if (currentUser != null) {
     isStaffResult = currentUser.isStaff();
   }
   let result = true === isStaffResult;
   if (!result) {
-    result = require(13559) /* apexExperiment */.isZoomedExperimentEnabled();
-    const obj2 = require(13559) /* apexExperiment */;
+    result = apexExperiment.isZoomedExperimentEnabled();
+    const obj2 = apexExperiment;
   }
   if (result) {
     if (!c4) {
       try {
-        importDefault(13914).enableTouchLogging();
+        enforcingDefault.enableTouchLogging();
         c4 = true;
-        const obj3 = importDefault(13914);
+        const obj3 = enforcingDefault;
       } catch (err) {
         c4 = false;
       }
@@ -33,34 +35,35 @@ function updateEnabledState() {
   if (!result) {
     if (c4) {
       try {
-        importDefault(13914).disableTouchLogging();
+        enforcingDefault.disableTouchLogging();
         c4 = false;
-        const obj4 = importDefault(13914);
+        const obj4 = enforcingDefault;
       } catch (err) {
       }
     }
   }
 }
 let c4 = false;
+initializeDefault;
 class TouchEventAnalyticsManager extends tmp2 {
 }
 const prototype = TouchEventAnalyticsManager.prototype;
 prototype["_initialize"] = function _initialize() {
   updateEnabledState();
-  mergeGuildAvatar.addChangeListener(updateEnabledState);
+  closure_3.addChangeListener(updateEnabledState);
 };
 prototype["_terminate"] = function _terminate() {
-  mergeGuildAvatar.removeChangeListener(updateEnabledState);
+  closure_3.removeChangeListener(updateEnabledState);
   if (c4) {
     try {
-      importDefault(13914).disableTouchLogging();
+      enforcingDefault.disableTouchLogging();
       c4 = false;
-      const obj = importDefault(13914);
+      const obj = enforcingDefault;
     } catch (err) {
     }
   }
 };
 const touchEventAnalyticsManager = new TouchEventAnalyticsManager();
-let result = require("enforcing").fileFinishedImporting("modules/touch_analytics/TouchEventAnalyticsManager.android.tsx");
+let result = require("set").fileFinishedImporting("modules/touch_analytics/TouchEventAnalyticsManager.android.tsx");
 
 export default touchEventAnalyticsManager;

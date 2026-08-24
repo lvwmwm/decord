@@ -4,7 +4,9 @@
 // Dependencies: [19]
 
 // Module 1537 (context)
-const context = require("noop").createContext(undefined);
+import noopAll from "noop" /* 19 */;
+
+const context = noopAll.createContext(undefined);
 context.displayName = "ThemeContext";
 
 export const ThemeContext = context;

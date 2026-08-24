@@ -1,15 +1,21 @@
-// Module ID: 6819
-// Function ID: 6820
-// Dependencies: [4092, 2]
+// Module ID: 6856
+// Function ID: 6857
+// Name: regExp
+// Dependencies: [6857, 4095, 2]
 
-// Module 6819
-const re0 = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(?:attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/;
+// Module 6856 (regExp)
+import set from "set" /* 2 */;
+import tDefault from "t" /* 4095 */;
+import set2 from "set" /* 6857 */;
+
+const mapped = Array.from(set2.ATTACHMENT_PATH_PREFIXES).map((str) => str.replaceAll("/", ""));
+const regExp = new RegExp("^https://(?:(?:media|images)\\.discordapp\\.net|(?:cdn\\.discordapp\\.com))/(?:" + mapped.join("|") + ")/\\d+/\\d+/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?");
 let obj = { attachmentLink: null };
 obj = {
-  order: require("t").defaultRules.url.order - 0.5,
+  order: tDefault.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    return regex.exec(arg0);
+    return regExp.exec(arg0);
   },
   parse(attachmentUrl) {
     const items = [{ type: "text", content: attachmentUrl[1] }];
@@ -17,6 +23,7 @@ obj = {
   }
 };
 obj[0] = obj;
-const result = require("set").fileFinishedImporting("modules/markup/MarkupAttachmentLinkRule.tsx");
+const arr = Array.from(set2.ATTACHMENT_PATH_PREFIXES);
+const result = set.fileFinishedImporting("modules/markup/MarkupAttachmentLinkRule.tsx");
 
 export default obj;

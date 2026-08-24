@@ -4,5 +4,7 @@
 // Dependencies: [19]
 
 // Module 1616 (ServerContext)
+import noopAll from "noop" /* 19 */;
 
-export const ServerContext = require("noop").createContext(undefined);
+
+export const ServerContext = noopAll.createContext(undefined);

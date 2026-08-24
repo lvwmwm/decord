@@ -1,26 +1,26 @@
-// Module ID: 13853
-// Function ID: 13854
+// Module ID: 13918
+// Function ID: 13919
 // Name: ACTIVITY_SHARE_LINK_MODAL
-// Dependencies: [4237, 5260, 13854, 2007, 2]
+// Dependencies: [4241, 5265, 13919, 2008, 2]
 // Exports: closeActivityShareLinkModal, openActivityShareLinkModal
 
-// Module 13853 (ACTIVITY_SHARE_LINK_MODAL)
+// Module 13918 (ACTIVITY_SHARE_LINK_MODAL)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import getBestActiveInput from "getBestActiveInput" /* 4241 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+
 const ACTIVITY_SHARE_LINK_MODAL = "ACTIVITY_SHARE_LINK_MODAL";
-const result = require("ActivityShareLinkModal").fileFinishedImporting("modules/activities/openActivityShareLinkModal.native.tsx");
+const result = set.fileFinishedImporting("modules/activities/openActivityShareLinkModal.native.tsx");
 
 export const ACTIVITY_SHARE_LINK_MODAL = "ACTIVITY_SHARE_LINK_MODAL";
 export const openActivityShareLinkModal = function openActivityShareLinkModal(arg0) {
-  let applicationId;
-  let customId;
-  let linkId;
-  let message;
-  let onShare;
   ({ applicationId, customId, linkId, message, onShare } = arg0);
-  let obj = require(4237) /* getBestActiveInput */;
+  let obj = getBestActiveInput;
   obj.dismissKeyboard();
   obj = { applicationId, customId, linkId, message, onShare };
-  importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(13854, dependencyMap.paths), obj, ACTIVITY_SHARE_LINK_MODAL, { presentation: "modal" });
+  _modDef5265.pushLazy(asyncRequireImpl(13919, dependencyMap.paths), obj, ACTIVITY_SHARE_LINK_MODAL, { presentation: "modal" });
 };
 export const closeActivityShareLinkModal = function closeActivityShareLinkModal() {
-  importDefault(5260).popWithKey(ACTIVITY_SHARE_LINK_MODAL);
+  _modDef5265.popWithKey(ACTIVITY_SHARE_LINK_MODAL);
 };

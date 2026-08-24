@@ -1,26 +1,32 @@
-// Module ID: 9543
-// Function ID: 9544
+// Module ID: 9580
+// Function ID: 9581
 // Name: formatClearAfterOption
-// Dependencies: [9292, 4063, 1236, 687, 1370, 2]
+// Dependencies: [9329, 4066, 1236, 687, 1370, 2]
 // Exports: default
 
-// Module 9543 (formatClearAfterOption)
-import { ClearAfterValues } from "StatusTypes";
+// Module 9580 (formatClearAfterOption)
+import set from "set" /* 2 */;
+import setDefault from "set" /* 687 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import resetCache from "resetCache" /* 4066 */;
+import StatusTypes from "StatusTypes" /* 9329 */;
 
-let result = require("getSystemLocale").fileFinishedImporting("modules/custom_status/utils/formatClearAfterOption.tsx");
+const ClearAfterValues = StatusTypes.ClearAfterValues;
+let result = set.fileFinishedImporting("modules/custom_status/utils/formatClearAfterOption.tsx");
 
 export default function formatClearAfterOption(arg0) {
   if (ClearAfterValues.TODAY === arg0) {
-    const intl8 = require(1236) /* getSystemLocale */.intl;
-    const formatToPlainStringResult = intl8.formatToPlainString(require(1236) /* getSystemLocale */.t.Rea2gR, { hours: 24 });
+    const intl8 = getSystemLocale.intl;
+    const formatToPlainStringResult = intl8.formatToPlainString(getSystemLocale.t.Rea2gR, { hours: 24 });
     const _Date10 = Date;
-    const sum = Date.now() + importDefault(687).Millis.DAY;
+    const sum = Date.now() + setDefault.Millis.DAY;
     const _Date11 = Date;
     const date = new Date();
     const _Date12 = Date;
     const date1 = new Date(sum);
-    const obj8 = require(4063) /* resetCache */;
-    const intl9 = require(1236) /* getSystemLocale */.intl;
+    const obj8 = resetCache;
+    const intl9 = getSystemLocale.intl;
     if (isSameDayResult) {
       const data8 = intl9.data;
       let formatTimeResult = data8.formatTime(sum, { format: "short" });
@@ -33,17 +39,17 @@ export default function formatClearAfterOption(arg0) {
     const _HermesInternal4 = HermesInternal;
     return "" + formatToPlainStringResult + " (" + formatTimeResult + ")";
   } else if (tmp.HOURS_4 === arg0) {
-    const intl6 = require(1236) /* getSystemLocale */.intl;
-    const formatToPlainStringResult1 = intl6.formatToPlainString(require(1236) /* getSystemLocale */.t.Rea2gR, { hours: 4 });
+    const intl6 = getSystemLocale.intl;
+    const formatToPlainStringResult1 = intl6.formatToPlainString(getSystemLocale.t.Rea2gR, { hours: 4 });
     const _Date7 = Date;
-    const result = 4 * importDefault(687).Millis.HOUR;
+    const result = 4 * setDefault.Millis.HOUR;
     const sum1 = Date.now() + result;
     const _Date8 = Date;
     const date2 = new Date();
     const _Date9 = Date;
     const date3 = new Date(sum1);
-    const obj6 = require(4063) /* resetCache */;
-    const intl7 = require(1236) /* getSystemLocale */.intl;
+    const obj6 = resetCache;
+    const intl7 = getSystemLocale.intl;
     if (isSameDayResult1) {
       const data6 = intl7.data;
       let formatTimeResult1 = data6.formatTime(sum1, { format: "short" });
@@ -56,21 +62,21 @@ export default function formatClearAfterOption(arg0) {
     const _HermesInternal3 = HermesInternal;
     return "" + formatToPlainStringResult1 + " (" + formatTimeResult1 + ")";
   } else if (tmp.HOURS_1 === arg0) {
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    const formatToPlainStringResult2 = intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.Rea2gR, { hours: 1 });
+    const intl4 = getSystemLocale.intl;
+    const formatToPlainStringResult2 = intl4.formatToPlainString(getSystemLocale.t.Rea2gR, { hours: 1 });
     const _Date4 = Date;
-    const sum2 = Date.now() + importDefault(687).Millis.HOUR;
+    const sum2 = Date.now() + setDefault.Millis.HOUR;
     const _Date5 = Date;
     const date4 = new Date();
     const _Date6 = Date;
     const date5 = new Date(sum2);
-    const obj4 = require(4063) /* resetCache */;
-    const intl5 = require(1236) /* getSystemLocale */.intl;
+    const obj4 = resetCache;
+    const intl5 = getSystemLocale.intl;
     if (isSameDayResult2) {
       const data4 = intl5.data;
       let formatTimeResult2 = data4.formatTime(sum2, { format: "short" });
     } else {
-      let obj1 = { time: null };
+      obj1 = { time: null };
       const data3 = tmp27(1236).intl.data;
       obj1[0] = data3.formatTime(sum2, { format: "short" });
       formatTimeResult2 = intl5.formatToPlainString(tmp27(1236).t.DN91Jz, obj1);
@@ -78,17 +84,17 @@ export default function formatClearAfterOption(arg0) {
     const _HermesInternal2 = HermesInternal;
     return "" + formatToPlainStringResult2 + " (" + formatTimeResult2 + ")";
   } else if (tmp.MINUTES_30 === arg0) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    const formatToPlainStringResult3 = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.TS3eJb, { minutes: 30 });
+    const intl2 = getSystemLocale.intl;
+    const formatToPlainStringResult3 = intl2.formatToPlainString(getSystemLocale.t.TS3eJb, { minutes: 30 });
     const _Date = Date;
-    const result1 = 30 * importDefault(687).Millis.MINUTE;
+    const result1 = 30 * setDefault.Millis.MINUTE;
     const sum3 = Date.now() + result1;
-    obj1 = require(4063) /* resetCache */;
+    obj1 = resetCache;
     const _Date2 = Date;
     const date6 = new Date();
     const _Date3 = Date;
     const date7 = new Date(sum3);
-    const intl3 = require(1236) /* getSystemLocale */.intl;
+    const intl3 = getSystemLocale.intl;
     if (isSameDayResult3) {
       const data2 = intl3.data;
       let formatTimeResult3 = data2.formatTime(sum3, { format: "short" });
@@ -101,10 +107,10 @@ export default function formatClearAfterOption(arg0) {
     const _HermesInternal = HermesInternal;
     return "" + formatToPlainStringResult3 + " (" + formatTimeResult3 + ")";
   } else if (tmp.DONT_CLEAR === arg0) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.bRn8cq);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.bRn8cq);
   } else {
-    obj = require(1370) /* isDiscordFrontendDevelopment */;
+    obj = isDiscordFrontendDevelopment;
     obj.assertNever(arg0);
   }
 };

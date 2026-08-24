@@ -1,21 +1,19 @@
-// Module ID: 11898
-// Function ID: 11899
+// Module ID: 11947
+// Function ID: 11948
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4661, 1987, 4733, 4734, 1236, 9971, 2]
+// Dependencies: [19, 17, 21, 4668, 1988, 4738, 4739, 1236, 10010, 2]
 // Exports: default
 
-// Module 11898 (InviteRolesList)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11947 (InviteRolesList)
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ rolesRow: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", gap: 4 } });
-const result = require("jsxProd").fileFinishedImporting("modules/accept_invite/native/InviteRolesList.tsx");
+const result = require("set").fileFinishedImporting("modules/accept_invite/native/InviteRolesList.tsx");
 
 export default function InviteRolesList(invite) {
   invite = invite.invite;
@@ -30,8 +28,8 @@ export default function InviteRolesList(invite) {
         if (0 !== arr.length) {
           const items = [];
           HermesBuiltin.arraySpread(arr, 0);
-          const sorted = items.sort(guild(outer1_2[4]).sortInviteRoles);
-          const mapped = sorted.map((id) => outer1_0(outer1_2[4]).inviteRoleToDisplayData(id.id, id));
+          const sorted = items.sort(guild(closure_1_2[4]).sortInviteRoles);
+          const mapped = sorted.map((id) => closure_1_0(closure_1_2[4]).inviteRoleToDisplayData(id.id, id));
         }
         return [];
       }
@@ -46,13 +44,13 @@ export default function InviteRolesList(invite) {
       obj = { variant: "text-sm/semibold", color: "text-default", children: null };
       const intl = guild(1236).intl;
       obj[2] = intl.string(guild(1236).t.stcSfI);
-      const items1 = [callback(guild(4734).Text, obj), ];
+      const items1 = [callback(guild(4739).Text, obj), ];
       obj = { style: null, children: null };
       obj[0] = tmp.rolesRow;
-      obj[1] = memo.map((id) => outer1_5(roles(outer1_2[8]), { role: id, guildId: guild.id }, id.id));
+      obj[1] = memo.map((id) => closure_1_5(roles(closure_1_2[8]), { role: id, guildId: guild.id }, id.id));
       items1[1] = callback(View, obj);
       obj[2] = items1;
-      tmp2 = callback2(guild(4733).Stack, obj);
+      tmp2 = callback2(guild(4738).Stack, obj);
     }
   }
   return tmp2;

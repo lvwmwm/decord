@@ -1,14 +1,17 @@
-// Module ID: 4995
-// Function ID: 4996
+// Module ID: 5000
+// Function ID: 5001
 // Name: dropChannelIfEmpty
-// Dependencies: [1391, 676, 1403, 4803, 589, 709, 2]
+// Dependencies: [1391, 676, 1403, 4808, 589, 709, 2]
 
-// Module 4995 (dropChannelIfEmpty)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { MessageFlags } from "ME";
-import { Store } from "initialize";
+// Module 5000 (dropChannelIfEmpty)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import hasFlag from "hasFlag" /* 1403 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import { MessageFlags } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function dropChannelIfEmpty(channelId, value) {
   if (0 === value.size) {
     map.delete(channelId);
@@ -24,11 +27,12 @@ function clearAll() {
 }
 let closure_4 = [];
 let map = new Map();
+const Store = initializeDefault.Store;
 class EphemeralMessageStore extends Store {
 }
 const prototype = EphemeralMessageStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded);
+  this.waitFor(closure_2);
 };
 prototype["getMessages"] = function getMessages(arg0) {
   const value = map.get(arg0);
@@ -42,10 +46,8 @@ prototype["getMessages"] = function getMessages(arg0) {
   arr = closure_4;
 };
 EphemeralMessageStore.displayName = "EphemeralMessageStore";
-const ephemeralMessageStore = new EphemeralMessageStore(require("dispatcher"), {
+const ephemeralMessageStore = new EphemeralMessageStore(dispatcherDefault, {
   MESSAGE_CREATE: function handleMessageCreate(arg0) {
-    let channelId;
-    let message;
     ({ channelId, message } = arg0);
     let num = message.flags;
     if (num == null) {
@@ -59,7 +61,7 @@ const ephemeralMessageStore = new EphemeralMessageStore(require("dispatcher"), {
         const result = map.set(channelId, map);
         value = map;
       }
-      const result1 = value.set(message.id, tmp(4803).createMessageRecord(message));
+      const result1 = value.set(message.id, createMinimalMessageRecord.createMessageRecord(message));
       if (value.size > 50) {
         const iter2 = value.keys().next();
         while (true !== iter2.done) {
@@ -73,12 +75,10 @@ const ephemeralMessageStore = new EphemeralMessageStore(require("dispatcher"), {
     } else {
       return false;
     }
-    obj = require(1403) /* hasFlag */;
-    tmp = require;
+    obj = hasFlag;
+    const tmp = require;
   },
   MESSAGE_UPDATE: function handleMessageUpdate(message) {
-    let channel_id;
-    let id;
     message = message.message;
     ({ channel_id, id } = message);
     if (null != channel_id) {
@@ -91,7 +91,7 @@ const ephemeralMessageStore = new EphemeralMessageStore(require("dispatcher"), {
           if (null == value) {
             return false;
           } else {
-            const result = value.set(id, require(4803) /* createMinimalMessageRecord */.updateMessageRecord(value, message));
+            const result = value.set(id, createMinimalMessageRecord.updateMessageRecord(value, message));
           }
         }
       }
@@ -111,8 +111,6 @@ const ephemeralMessageStore = new EphemeralMessageStore(require("dispatcher"), {
     return false;
   },
   MESSAGE_DELETE_BULK: function handleMessageDeleteBulk(arg0) {
-    let channelId;
-    let ids;
     ({ channelId, ids } = arg0);
     const value = map.get(channelId);
     if (null == value) {
@@ -180,6 +178,6 @@ const ephemeralMessageStore = new EphemeralMessageStore(require("dispatcher"), {
   OVERLAY_INITIALIZE: clearAll,
   LOGOUT: clearAll
 });
-let result = require("hasFlag").fileFinishedImporting("modules/messages/EphemeralMessageStore.tsx");
+let result = require("set").fileFinishedImporting("modules/messages/EphemeralMessageStore.tsx");
 
 export default ephemeralMessageStore;

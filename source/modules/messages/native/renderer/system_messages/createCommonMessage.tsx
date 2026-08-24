@@ -1,45 +1,50 @@
-// Module ID: 8188
-// Function ID: 8189
+// Module ID: 8228
+// Function ID: 8229
 // Name: createCommonMessage
-// Dependencies: [1391, 4661, 1363, 4223, 712, 4063, 8171, 8189, 8190, 8191, 2]
+// Dependencies: [1391, 4668, 1363, 4227, 712, 4066, 8210, 8229, 8230, 8231, 2]
 // Exports: default
 
-// Module 8188 (createCommonMessage)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
+// Module 8228 (createCommonMessage)
+import ThemesDefault from "Themes" /* 712 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import resetCache from "resetCache" /* 4066 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
+import frozen from "frozen" /* 8210 */;
+import registerAssetDefault from "registerAsset" /* 8229 */;
+import registerAssetDefault2 from "registerAsset" /* 8230 */;
+import MessageAccessibilityAction from "MessageAccessibilityAction" /* 8231 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 const result = createCacheKey.experimental_createToken((theme) => {
   let str = "rgba(201,210,240,0.6)";
   if (obj.isThemeDark(theme.theme)) {
-    str = require(4223) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.WHITE, 0.1);
-    const tmpResult = require(4223) /* hexToRgba */;
+    str = hexToRgba.hexWithOpacity(ThemesDefault.unsafe_rawColors.WHITE, 0.1);
+    const tmpResult = hexToRgba;
   }
   return str;
 });
-createCacheKey = { timestampColor: require("Themes").colors.TEXT_MUTED, highlightColor: result };
-createCacheKey = createCacheKey.createNativeStyleProperties(createCacheKey);
-const result1 = require("AccessibilityAnnouncer").fileFinishedImporting("modules/messages/native/renderer/system_messages/createCommonMessage.tsx");
+createCacheKey = { timestampColor: ThemesDefault.colors.TEXT_MUTED, highlightColor: result };
+let closure_4 = createCacheKey.createNativeStyleProperties(createCacheKey);
+const result1 = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/createCommonMessage.tsx");
 
 export default function createCommonMessage(reactions) {
-  let message;
-  let theme;
   ({ message, theme } = reactions);
-  const tmp = createCacheKey(theme);
+  const tmp = callback(theme);
   const obj = { id: message.id, channelId: message.channel_id, type: message.type, mentioned: message.mentioned, timestamp: null, timestampColor: null, dark: null, highlightColor: null, reactions: null, swipeToReplyIconUrl: null, swipeToEditIconUrl: null, accessibilityActions: null };
   channel = channel.getChannel(message.channel_id);
-  obj[4] = require(4063) /* resetCache */.calendarFormat(message.timestamp, true);
+  obj[4] = resetCache.calendarFormat(message.timestamp, true);
   obj[5] = tmp.timestampColor;
-  const obj2 = require(4063) /* resetCache */;
-  obj[6] = require(1363) /* AccessibilityAnnouncer */.isThemeDark(theme);
+  const obj2 = resetCache;
+  obj[6] = AccessibilityAnnouncer.isThemeDark(theme);
   obj[7] = tmp.highlightColor;
   obj[8] = reactions.reactions;
-  const obj3 = require(1363) /* AccessibilityAnnouncer */;
-  obj[9] = require(8171) /* frozen */.getAssetUriForEmbed(importDefault(8189));
-  const obj4 = require(8171) /* frozen */;
-  obj[10] = require(8171) /* frozen */.getAssetUriForEmbed(importDefault(8190));
-  const obj5 = require(8171) /* frozen */;
-  obj[11] = require(8191) /* MessageAccessibilityAction */.createMessageAccessibilityActions(message, channel);
+  const obj3 = AccessibilityAnnouncer;
+  obj[9] = frozen.getAssetUriForEmbed(registerAssetDefault);
+  const obj4 = frozen;
+  obj[10] = frozen.getAssetUriForEmbed(registerAssetDefault2);
+  const obj5 = frozen;
+  obj[11] = MessageAccessibilityAction.createMessageAccessibilityActions(message, channel);
   return obj;
 };

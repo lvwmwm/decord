@@ -1,31 +1,34 @@
-// Module ID: 14600
-// Function ID: 14601
+// Module ID: 14668
+// Function ID: 14669
 // Name: toggle
-// Dependencies: [12548, 8198, 589, 1236, 10669, 12555, 2]
+// Dependencies: [12602, 8238, 589, 1236, 10708, 12609, 2]
 
-// Module 14600 (toggle)
-import getUserAgnosticState from "getUserAgnosticState";
-import createToggle from "createToggle";
+// Module 14668 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import dispatcherDefault from "dispatcher" /* 12609 */;
+import closure_2 from "getUserAgnosticState" /* 12602 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["9CSZJm"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["9CSZJm"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useValue: function useAndroidMobileOverlaySettingValue() {
-    const items = [getUserAgnosticState];
-    return require(589) /* initialize */.useStateFromStores(items, () => enabled.getEnabled());
+    const items = [closure_2];
+    return initialize.useStateFromStores(items, () => enabled.getEnabled());
   },
-  onValueChange: require("dispatcher").setEnabled,
+  onValueChange: dispatcherDefault.setEnabled,
   useDescription: function useAndroidMobileOverlaySettingDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.Wfoivk);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.Wfoivk);
   },
   usePredicate: require("getUserAgnosticState").isMobileOverlaySupported
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/AndroidMobileOverlaySetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AndroidMobileOverlaySetting.tsx");
 
 export default createToggle;

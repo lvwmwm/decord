@@ -1,15 +1,15 @@
-// Module ID: 15999
-// Function ID: 16000
+// Module ID: 16096
+// Function ID: 16097
 // Name: filterFromPending
-// Dependencies: [4030, 676, 2]
+// Dependencies: [4033, 676, 2]
 // Exports: getPendingRelationshipIds
 
-// Module 15999 (filterFromPending)
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import { RelationshipTypes } from "ME";
+// Module 16096 (filterFromPending)
+import closure_0 from "markAllUserIdListsStale" /* 4033 */;
+import { RelationshipTypes } from "ME" /* 676 */;
 
 function filterFromPending(arg0) {
-  return markAllUserIdListsStale.isSpam(arg0) || markAllUserIdListsStale.isIgnored(arg0);
+  return closure_0.isSpam(arg0) || closure_0.isIgnored(arg0);
 }
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/friends/hooks/getPendingRelationshipIds.tsx");
 
@@ -44,9 +44,9 @@ export const getPendingRelationshipIds = function getPendingRelationshipIds(muta
     let tmp15 = value;
     let isSpamResult = tmp5 === tmp6.PENDING_INCOMING;
     if (isSpamResult) {
-      let tmp17 = markAllUserIdListsStale;
+      let tmp17 = closure_0;
       let tmp18 = nextResult;
-      isSpamResult = markAllUserIdListsStale.isSpam(tmp3);
+      isSpamResult = closure_0.isSpam(tmp3);
     }
     if (isSpamResult) {
       let tmp19 = nextResult;
@@ -55,9 +55,9 @@ export const getPendingRelationshipIds = function getPendingRelationshipIds(muta
     let tmp21 = value;
     let isIgnoredResult = tmp5 === tmp6.PENDING_INCOMING;
     if (isIgnoredResult) {
-      let tmp23 = markAllUserIdListsStale;
+      let tmp23 = closure_0;
       let tmp24 = nextResult;
-      isIgnoredResult = markAllUserIdListsStale.isIgnored(tmp3);
+      isIgnoredResult = closure_0.isIgnored(tmp3);
     }
     if (isIgnoredResult) {
       let tmp25 = nextResult;

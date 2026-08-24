@@ -4,9 +4,12 @@
 // Dependencies: [599, 618, 621, 623, 627, 628]
 
 // Module 617 (arrayLikeKeys)
+import _mod599 from "module_599" /* 599 */;
+import isIndex from "isIndex" /* 628 */;
+
 
 export default function arrayLikeKeys(obj) {
-  const tmp3 = require(599)(obj);
+  const tmp3 = _mod599(obj);
   let tmp4 = !tmp3;
   if (!tmp3) {
     tmp4 = tmp(618)(obj);
@@ -80,7 +83,7 @@ export default function arrayLikeKeys(obj) {
           if (!tmp14) {
             let tmp19 = require;
             let tmp20 = dependencyMap;
-            tmp14 = require(628) /* isIndex */(key10033, tmp9);
+            tmp14 = isIndex(key10033, tmp9);
           }
           tmp13 = tmp14;
         }

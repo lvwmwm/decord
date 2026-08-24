@@ -1,14 +1,15 @@
-// Module ID: 13088
-// Function ID: 13089
+// Module ID: 13144
+// Function ID: 13145
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 13088 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 13144 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { bitrate: 3500000, enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-06-server-ladder", kind: "user", defaultConfig: { bitrate: 9000000, enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/media_engine/ServerLadderExperiment.tsx");
+const result = set.fileFinishedImporting("modules/media_engine/ServerLadderExperiment.tsx");
 
 export const ServerLadderExperiment = apexExperiment;

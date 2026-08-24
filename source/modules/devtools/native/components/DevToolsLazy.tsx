@@ -1,23 +1,23 @@
-// Module ID: 13944
-// Function ID: 13945
+// Module ID: 14012
+// Function ID: 14013
 // Name: NativeModules
-// Dependencies: [5, 19, 17, 7472, 7471, 21, 500, 13945, 13946, 2007, 589, 13940, 15192, 2]
+// Dependencies: [5, 19, 17, 7510, 7509, 21, 500, 14013, 14014, 2008, 589, 14008, 15256, 2]
 // Exports: default
 
-// Module 13944 (NativeModules)
-import jsxProd from "jsxProd";
-import noop from "noop";
-import { NativeModules } from "get ActivityIndicator";
-import init from "init";
-import initialize from "initialize";
-import { jsx } from "jsxProd";
-import set from "set";
-import set from "get ActivityIndicator";
+// Module 14012 (NativeModules)
+import enforcingDefault from "enforcing" /* 14013 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "noop" /* 19 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "init" /* 7510 */;
+import closure_6 from "initialize" /* 7509 */;
+import { jsx } from "jsxProd" /* 21 */;
+import set from "set" /* 500 */;
 
 const require = arg1;
 if (set.isAndroid()) {
-  let keyModifierControl = require("enforcing").getConstants().keyModifierControl;
-  const importDefaultResult = require("enforcing");
+  let keyModifierControl = enforcingDefault.getConstants().keyModifierControl;
+  const importDefaultResult = enforcingDefault;
 } else {
   keyModifierControl = NativeModules.KeyCommandsView.keyModifierControl;
 }
@@ -39,7 +39,7 @@ set = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -56,7 +56,7 @@ set = {
             } else {
               paths = 1;
               v0 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = v0(paths[9])(paths[8], paths.paths);
               return obj1;
             }
@@ -71,7 +71,7 @@ set = {
           } else {
             arg1.navigateToDevTools();
             v0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           v0 = tmp;
@@ -85,16 +85,16 @@ let items = [set];
 let result = set.fileFinishedImporting("modules/devtools/native/components/DevToolsLazy.tsx");
 
 export default function DevToolsLazy() {
-  const items = [init];
+  items = [closure_5];
   stateFromStores = stateFromStores(589).useStateFromStores(items, () => isDeveloper.isDeveloper);
   const obj = stateFromStores(589);
   const tmp = stateFromStores;
-  const items1 = [initialize];
+  const items1 = [closure_6];
   const stateFromStores1 = stateFromStores(589).useStateFromStores(items1, () => showDevWidget.showDevWidget);
   const effect = React.useEffect(() => {
     if (obj.isIOS()) {
-      outer1_5.addChangeListener(() => {
-        const NSUserDefaultsBridge = outer1_4.NSUserDefaultsBridge;
+      closure_1_5.addChangeListener(() => {
+        const NSUserDefaultsBridge = closure_1_4.NSUserDefaultsBridge;
         if (NSUserDefaultsBridge != null) {
           const result = NSUserDefaultsBridge.setIsDiscordDeveloper(closure_0);
         }
@@ -102,10 +102,10 @@ export default function DevToolsLazy() {
     }
   });
   const obj2 = stateFromStores(589);
-  const keyCommands = stateFromStores(13940).useKeyCommands(stateFromStores ? items : []);
+  const keyCommands = stateFromStores(14008).useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(15192).default, {});
+      return jsx(tmp(15256).default, {});
     }
   }
   return null;

@@ -1,31 +1,31 @@
-// Module ID: 13352
-// Function ID: 13353
-// Dependencies: [4288, 4021, 676, 1236, 589, 13353, 2]
+// Module ID: 13410
+// Function ID: 13411
+// Dependencies: [4292, 4024, 676, 1236, 589, 13411, 2]
 
-// Module 13352
-import getHash from "getHash";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import ME from "ME";
+// Module 13410
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "getHash" /* 4292 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ GuildFeatures: c4, Permissions: c5 } = ME);
-const result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/ui/RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/ui/RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec.tsx");
 
 export default {
   title() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.aTFQKh);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.aTFQKh);
   },
   description() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.oTbFQg);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.oTbFQg);
   },
   canCreateGuild: false,
   useIsGuildSupported() {
-    const items = [getHash, getUncachedChannelPermissions];
-    return require(589) /* initialize */.useStateFromStores(items, () => (features) => {
+    const items = [closure_2, closure_3];
+    return initialize.useStateFromStores(items, () => (features) => {
       features = features.features;
       let hasItem = features.has(constants.ROLE_SUBSCRIPTIONS_ENABLED);
       if (hasItem) {
@@ -33,7 +33,7 @@ export default {
         hasItem = !features2.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
       }
       if (hasItem) {
-        hasItem = getUncachedChannelPermissions.can(constants2.ADMINISTRATOR, features);
+        hasItem = closure_3.can(constants2.ADMINISTRATOR, features);
       }
       if (hasItem) {
         hasItem = callback(table[5]).isGuildEligibleForTierTemplates(features.id);

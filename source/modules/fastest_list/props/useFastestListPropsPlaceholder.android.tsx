@@ -1,33 +1,30 @@
-// Module ID: 8642
-// Function ID: 8643
+// Module ID: 8679
+// Function ID: 8680
 // Name: createNativePlaceholderConfig
-// Dependencies: [19, 17, 8643, 4223, 2]
+// Dependencies: [19, 17, 8680, 4227, 2]
 // Exports: default
 
-// Module 8642 (createNativePlaceholderConfig)
-import noop from "noop";
-import { processColor } from "get ActivityIndicator";
+// Module 8679 (createNativePlaceholderConfig)
+import FastestListPropsPlaceholderType from "FastestListPropsPlaceholderType" /* 8680 */;
+import closure_2 from "noop" /* 19 */;
+import { processColor } from "get ActivityIndicator" /* 17 */;
 
-let require = arg1;
+require = arg1;
 function createNativePlaceholderConfig(type) {
-  let labelPaddingInnerRatio;
-  let labelSecondarySize;
-  let spaceGap;
-  let verticalAlignment;
   type = undefined;
   if (type != null) {
     type = type.type;
   }
   let NONE = type;
   if (type == null) {
-    NONE = require(8643) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
+    NONE = FastestListPropsPlaceholderType.FastestListPropsPlaceholderType.NONE;
   }
-  const obj = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "diversity", borderBottomLeftRadius: "Button", borderBottomRightRadius: "e", divider: "isArray", dividerColor: "isArray", dividerPaddingLeft: "t", dividerPaddingRight: "e", placeholderShape: "isArray", placeholderShapeColor: "isArray", placeholderShapeCount: "to", placeholderShapeGap: "e", placeholderShapePaddingHorizontal: "isArray", placeholderShapePaddingVertical: "isArray", placeholderFeedBackgroundColor: "Date", placeholderFeedColor: "e", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "TypeError", placeholderFeedLabelSecondarySize: "e", placeholderFeedPadding: "isArray", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "diversity", placeholderType: NONE, width: null, height: null, verticalAlignment: null, horizontalAlignment: null };
+  obj = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "disabled", borderBottomLeftRadius: "paddingHorizontal", borderBottomRightRadius: "w", divider: "PX_16", dividerColor: "HermesInternal", dividerPaddingLeft: "disabled", dividerPaddingRight: "Boolean", placeholderShape: "isArray", placeholderShapeColor: "isArray", placeholderShapeCount: "isArray", placeholderShapeGap: "Icon", placeholderShapePaddingHorizontal: "Array", placeholderShapePaddingVertical: "disabled", placeholderFeedBackgroundColor: "Array", placeholderFeedColor: "isArray", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "HermesInternal", placeholderFeedLabelSecondarySize: "Array", placeholderFeedPadding: "sa", placeholderFeedShape: "T", placeholderFeedShapeSize: "isArray", placeholderType: NONE, width: null, height: null, verticalAlignment: null, horizontalAlignment: null };
   if (null == type) {
     return obj;
   } else {
-    if (require(8643) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
-      if (tmp15(8643).FastestListPropsPlaceholderType.SHAPE === type) {
+    if (FastestListPropsPlaceholderType.FastestListPropsPlaceholderType.NONE !== type) {
+      if (tmp15(8680).FastestListPropsPlaceholderType.SHAPE === type) {
         let num9 = type.borderRadius;
         if (num9 == null) {
           num9 = 0;
@@ -48,7 +45,7 @@ function createNativePlaceholderConfig(type) {
           num11 = 0;
         }
         obj.placeholderShapePaddingVertical = num11;
-        const tmp14 = processColor(tmp15(4223).hexToRgbaString(type.colorHex, type.opacity));
+        const tmp14 = processColor(tmp15(4227).hexToRgbaString(type.colorHex, type.opacity));
         obj.placeholderShapeColor = tmp14;
         let num12 = type.shapeCount;
         if (num12 == null) {
@@ -65,8 +62,8 @@ function createNativePlaceholderConfig(type) {
           str2 = "center";
         }
         obj.horizontalAlignment = str2;
-        const tmp15Result = tmp15(4223);
-      } else if (tmp15(8643).FastestListPropsPlaceholderType.FEED_ITEM === type) {
+        const tmp15Result = tmp15(4227);
+      } else if (tmp15(8680).FastestListPropsPlaceholderType.FEED_ITEM === type) {
         let num = type.borderRadius;
         if (num == null) {
           num = 0;
@@ -132,7 +129,7 @@ function createNativePlaceholderConfig(type) {
       } else {
         const _Error = Error;
         const _HermesInternal = HermesInternal;
-        const error = new Error("Invalid placeholder type: " + type);
+        error = new Error("Invalid placeholder type: " + type);
         throw error;
       }
     }
@@ -142,14 +139,14 @@ function createNativePlaceholderConfig(type) {
 let obj = { sectionItem: null };
 obj = { type: require("FastestListPropsPlaceholderType").FastestListPropsPlaceholderType.NONE };
 obj[0] = obj;
-const result = require("FastestListPropsPlaceholderType").fileFinishedImporting("modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx");
+const result = require("set").fileFinishedImporting("modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx");
 
 export default function useFastestListPropsPlaceholder() {
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = obj;
   }
-  const require = tmp;
+  closure_0 = tmp;
   const items = [tmp];
-  return React.useMemo(() => ({ listFooter: outer1_5(tmp.listFooter), listHeader: outer1_5(tmp.listHeader), sectionFooter: outer1_5(tmp.sectionFooter), sectionHeader: outer1_5(tmp.sectionHeader), sectionItem: outer1_5(tmp.sectionItem), sectionItemAtFront: outer1_5(tmp.sectionItemAtFront), sectionItemAtRear: outer1_5(tmp.sectionItemAtRear), sectionItemSingleton: outer1_5(tmp.sectionItemSingleton) }), items);
+  return React.useMemo(() => ({ listFooter: closure_1_5(closure_0.listFooter), listHeader: closure_1_5(closure_0.listHeader), sectionFooter: closure_1_5(closure_0.sectionFooter), sectionHeader: closure_1_5(closure_0.sectionHeader), sectionItem: closure_1_5(closure_0.sectionItem), sectionItemAtFront: closure_1_5(closure_0.sectionItemAtFront), sectionItemAtRear: closure_1_5(closure_0.sectionItemAtRear), sectionItemSingleton: closure_1_5(closure_0.sectionItemSingleton) }), items);
 };

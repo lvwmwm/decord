@@ -1,27 +1,30 @@
-// Module ID: 7340
-// Function ID: 7341
+// Module ID: 7378
+// Function ID: 7379
 // Name: useInputClearButton
-// Dependencies: [19, 17, 21, 7341, 1236, 2]
+// Dependencies: [19, 17, 21, 7379, 1236, 2]
 // Exports: useInputClearButton, useInputClearButtonConfig
 
-// Module 7340 (useInputClearButton)
-import "noop";
-import { Pressable } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 7378 (useInputClearButton)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import CircleXIcon from "CircleXIcon" /* 7379 */;
+import { Pressable } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("design/components/Input/native/useInputClearButton.native.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Input/native/useInputClearButton.native.tsx");
 
 export const useInputClearButton = function useInputClearButton(clearProps, clearState) {
   let tmp;
   if (clearProps.isClearable) {
     if (clearState.hasValue) {
       let obj = { content: null, pressableProps: null };
-      obj[0] = jsx(require(7341) /* CircleXIcon */.CircleXIcon, { size: "xs" });
+      obj[0] = jsx(CircleXIcon.CircleXIcon, { size: "xs" });
       obj = { onPress: null, accessibilityLabel: null, accessibilityRole: "button", hitSlop: 4 };
       obj[0] = clearState.clear;
-      const intl = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl.string(require(1236) /* getSystemLocale */.t.VkKicb);
+      const intl = getSystemLocale.intl;
+      obj[1] = intl.string(getSystemLocale.t.VkKicb);
       obj[1] = obj;
       tmp = obj;
     }
@@ -39,11 +42,11 @@ export const useInputClearButtonConfig = function useInputClearButtonConfig(isCl
   if (isClearable.isClearable) {
     if (state.hasValue) {
       let obj = { content: null, pressableProps: null };
-      obj[0] = jsx(require(7341) /* CircleXIcon */.CircleXIcon, { size: "xs" });
+      obj[0] = jsx(CircleXIcon.CircleXIcon, { size: "xs" });
       obj = { onPress: null, accessibilityLabel: null, accessibilityRole: "button", hitSlop: 4 };
       obj[0] = state.clear;
-      const intl = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl.string(require(1236) /* getSystemLocale */.t.VkKicb);
+      const intl = getSystemLocale.intl;
+      obj[1] = intl.string(getSystemLocale.t.VkKicb);
       obj[1] = obj;
       return obj;
     }

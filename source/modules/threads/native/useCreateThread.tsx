@@ -1,30 +1,24 @@
-// Module ID: 10169
-// Function ID: 10170
+// Module ID: 10208
+// Function ID: 10209
 // Name: useCreateThread
-// Dependencies: [5, 19, 4825, 4663, 7139, 8463, 7427, 7436, 8467, 8466, 7583, 4876, 4834, 8468, 2]
+// Dependencies: [5, 19, 4830, 4670, 7177, 8502, 7465, 7474, 8506, 8505, 7621, 4881, 4839, 8507, 2]
 // Exports: default, useCreateForumPost
 
-// Module 10169 (useCreateThread)
-import getIsPrivate from "getIsPrivate";
-import noop from "noop";
-import { DraftType } from "handleChanged";
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+// Module 10208 (useCreateThread)
+import contextDefault from "context" /* 7177 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import { DraftType } from "handleChanged" /* 4830 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4670 */;
 
 const require = arg1;
-const result = require("handleChanged").fileFinishedImporting("modules/threads/native/useCreateThread.tsx");
+const result = require("set").fileFinishedImporting("modules/threads/native/useCreateThread.tsx");
 
 export default function useCreateThread(arg0) {
-  let _location;
-  let onThreadCreated;
-  let parentChannel;
-  let parentMessageId;
-  let privateThreadMode;
-  let threadSettings;
-  let useDefaultThreadName;
   let analyticsLocations;
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
-  analyticsLocations = importDefault(7139)().analyticsLocations;
-  let obj = analyticsLocations(8463);
+  analyticsLocations = contextDefault().analyticsLocations;
+  let obj = analyticsLocations(8502);
   obj = {
     parentChannel,
     parentMessageId,
@@ -34,59 +28,57 @@ export default function useCreateThread(arg0) {
     onThreadCreated,
     useDefaultThreadName,
     uploadHandler(id, attachmentsToUpload) {
-      let closure_0 = id;
-      let closure_1 = attachmentsToUpload;
-      let obj = outer1_1(outer1_2[6]);
+      closure_0 = id;
+      closure_1 = attachmentsToUpload;
+      let obj = closure_1_1(closure_1_2[6]);
       obj = {
-        location: outer1_6.THREAD_CREATION,
+        location: closure_1_6.THREAD_CREATION,
         attachmentsToUpload,
         onAttachmentUploadError(file, code, reason) {
-          let obj = analyticsLocations(outer2_2[8]);
+          let obj = analyticsLocations(closure_2_2[8]);
           obj = { file, guildId: guildId.getGuildId(), analyticsLocations: guildId, code, reason };
           if (obj.handleUploadMessageAttachmentsErrors(obj)) {
             obj = { channelId: null, uploads: null, draftType: null, resetState: true };
             obj[0] = guildId.id;
             obj[1] = closure_1;
-            obj[2] = outer2_5.FirstThreadMessage;
-            outer2_1(outer2_2[9]).setUploads(obj);
-            const obj3 = outer2_1(outer2_2[9]);
+            obj[2] = closure_2_5.FirstThreadMessage;
+            closure_2_1(closure_2_2[9]).setUploads(obj);
+            const obj3 = closure_2_1(closure_2_2[9]);
           }
         }
       };
-      obj.sendMessage(id.id, outer1_1(outer1_2[7]).parse(id, arg2), undefined, obj);
+      obj.sendMessage(id.id, closure_1_1(closure_1_2[7]).parse(id, arg2), undefined, obj);
     }
   };
   return obj.useCreateThreadCommon(obj);
 };
 export const useCreateForumPost = function useCreateForumPost(parentChannel) {
-  let appliedTags;
-  let onThreadCreated;
   parentChannel = parentChannel.parentChannel;
   let _require = parentChannel;
   const threadSettings = parentChannel.threadSettings;
   let analyticsLocations;
   ({ appliedTags, onThreadCreated } = parentChannel);
-  analyticsLocations = analyticsLocations(7139)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7177)().analyticsLocations;
   _require = undefined;
   _require = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     return (function*(arg0) {
       let obj7 = tmp4;
-      obj7 = new analyticsLocations(outer2_2[10])();
-      const kestrelConfig = guildId(outer2_2[11]).getKestrelConfig({ location: "native.useCreateForumPost" });
-      const obj8 = guildId(outer2_2[11]);
-      const maxFileSizeResult = guildId(outer2_2[12]).maxFileSize(guildId.getGuildId());
-      const obj9 = guildId(outer2_2[12]);
+      obj7 = new analyticsLocations(closure_2_2[10])();
+      const kestrelConfig = guildId(closure_2_2[11]).getKestrelConfig({ location: "native.useCreateForumPost" });
+      const obj8 = guildId(closure_2_2[11]);
+      const maxFileSizeResult = guildId(closure_2_2[12]).maxFileSize(guildId.getGuildId());
+      const obj9 = guildId(closure_2_2[12]);
       obj7.on("progress", (currentSize) => {
         if (currentSize.currentSize > c3) {
           obj7.cancel();
-          let obj = outer2_1(8466);
+          let obj = closure_2_1(8505);
           obj = { channelId: null, uploads: null, draftType: null, resetState: true };
           obj[0] = guildId.id;
           obj[1] = guildId;
-          obj[2] = outer2_5.FirstThreadMessage;
+          obj[2] = closure_2_5.FirstThreadMessage;
           obj.setUploads(obj);
           obj = { file: null, maxSize: null, baseMaxSize: null, guildId: null, analyticsLocations: null };
           obj[0] = currentSize;
@@ -94,14 +86,14 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
           obj[2] = dependencyMap;
           obj[3] = guildId.getGuildId();
           obj[4] = obj7;
-          outer2_1(8468)(obj);
-          const tmp10 = outer2_1(8468);
+          closure_2_1(8507)(obj);
+          const tmp10 = closure_2_1(8507);
         }
       });
-      let noop = yield obj7.uploadFiles(guildId);
+      closure_4 = yield obj7.uploadFiles(guildId);
       let obj = { uploaderFile: null, files: null };
       obj[0] = obj7._file;
-      obj[1] = noop;
+      obj[1] = closure_4;
       return obj;
     })();
   });
@@ -116,7 +108,7 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
     }
     return applyArgumentsResult;
   }, items);
-  let obj = _require(8463);
+  let obj = _require(8502);
   obj = { parentChannel, name: null, appliedTags: null, analyticsLocations: null, onThreadCreated: null, upload: null };
   let str;
   if (threadSettings != null) {

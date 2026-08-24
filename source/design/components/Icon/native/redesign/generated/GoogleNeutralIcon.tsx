@@ -1,26 +1,26 @@
-// Module ID: 6564
-// Function ID: 6565
+// Module ID: 6597
+// Function ID: 6598
 // Name: GoogleNeutralIcon
-// Dependencies: [19, 21, 712, 4096, 6565, 2]
+// Dependencies: [19, 21, 712, 4099, 6598, 2]
 // Exports: GoogleNeutralIcon
 
-// Module 6564 (GoogleNeutralIcon)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 6597 (GoogleNeutralIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import BaseIconImage from "BaseIconImage" /* 4099 */;
+import registerAsset from "registerAsset" /* 6598 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/GoogleNeutralIcon.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Icon/native/redesign/generated/GoogleNeutralIcon.tsx");
 
 export const GoogleNeutralIcon = function GoogleNeutralIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = ThemesDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.create(null));
-  const obj = { source: null, color: null, style: null };
-  obj[0] = require(6565) /* registerAsset */;
-  obj[1] = INTERACTIVE_ICON_DEFAULT;
-  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(BaseIconImage.BaseIconImage, { source: registerAsset, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

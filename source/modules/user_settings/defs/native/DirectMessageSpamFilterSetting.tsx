@@ -1,17 +1,19 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14261
+// Function ID: 14262
 // Name: radio
-// Dependencies: [19, 8198, 14194, 4066, 10669, 1236, 14196, 2]
+// Dependencies: [19, 8238, 14262, 4069, 10708, 1236, 14264, 2]
 
-// Module 14193 (radio)
-import noop from "noop";
-import createToggle from "createToggle";
+// Module 14261 (radio)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import closure_2 from "noop" /* 19 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.tiCXaH);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.tiCXaH);
   },
   parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useOptions: function useDmSpamFilterSettingOptions() {
@@ -22,18 +24,18 @@ createToggle = {
   },
   useValue: require("useDerivedDmSpamFilterSettingValue").useDerivedDmSpamFilterSettingValue,
   onValueChange: function onDmSpamFilterSettingValueChange(arg0) {
-    const DmSpamFilterV2 = require(4066) /* explicitContentFromProto */.DmSpamFilterV2;
+    const DmSpamFilterV2 = explicitContentFromProto.DmSpamFilterV2;
     DmSpamFilterV2.updateSetting(Number(arg0));
   },
   useSearchTerms() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1236) /* getSystemLocale */.t.H9XOl3), ];
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    items[1] = intl2.string(require(1236) /* getSystemLocale */.t.k4W40P);
+    const intl = getSystemLocale.intl;
+    const items = [intl.string(getSystemLocale.t.H9XOl3), ];
+    const intl2 = getSystemLocale.intl;
+    items[1] = intl2.string(getSystemLocale.t.k4W40P);
     return items;
   }
 };
 createToggle = createToggle.createRadio(createToggle);
-const result = require("mapColorToHighlightColor").fileFinishedImporting("modules/user_settings/defs/native/DirectMessageSpamFilterSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/DirectMessageSpamFilterSetting.tsx");
 
 export default createToggle;

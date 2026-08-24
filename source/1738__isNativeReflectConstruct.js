@@ -4,10 +4,11 @@
 // Dependencies: [41, 42, 93, 95, 98, 1726, 1725]
 
 // Module 1738 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
+import _inheritsDefault from "_inherits" /* 98 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
 const ComplexAnimationBuilder = arg1;
 function _isNativeReflectConstruct() {
@@ -21,10 +22,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -32,10 +33,10 @@ function _isNativeReflectConstruct() {
 class ComplexAnimationBuilder {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, ComplexAnimationBuilder);
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(ComplexAnimationBuilder);
-    tmp3 = _isNativeReflectConstruct;
+    tmp = closure_2(this, ComplexAnimationBuilder);
+    tmp2 = closure_4;
+    obj = closure_4(ComplexAnimationBuilder);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -49,7 +50,7 @@ class ComplexAnimationBuilder {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(ComplexAnimationBuilder, require("BaseAnimationBuilder").BaseAnimationBuilder);
+_inheritsDefault(ComplexAnimationBuilder, require("BaseAnimationBuilder").BaseAnimationBuilder);
 let obj = {
   key: "easing",
   value: function easing(easingV) {
@@ -131,16 +132,6 @@ let items = [
   {
     key: "getAnimationAndConfig",
     value: function getAnimationAndConfig() {
-      let dampingRatioV;
-      let dampingV;
-      let durationV;
-      let easingV;
-      let massV;
-      let overshootClampingV;
-      let restDisplacementThresholdV;
-      let restSpeedThresholdV;
-      let rotateV;
-      let stiffnessV;
       const self = this;
       ({ easingV, durationV, rotateV } = this);
       if (this.type) {

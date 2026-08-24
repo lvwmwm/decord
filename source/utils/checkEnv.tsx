@@ -3,6 +3,8 @@
 // Dependencies: [2]
 
 // Module 16
+import set from "set" /* 2 */;
+
 if (null == window.GLOBAL_ENV) {
   const _window = window;
   window.GLOBAL_ENV = {};
@@ -147,4 +149,4 @@ global.window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST = "discordsays.com";
 global.window.GLOBAL_ENV.PUBLIC_PATH = "/assets/";
 global.window.GLOBAL_ENV.DEV_SESSION_KEY = process.env.DEV_SESSION_KEY;
 global.window.GLOBAL_ENV.MUX_ENV_KEY = "1qd16mdmdjasipqg3irobln4u";
-const result = require("set").fileFinishedImporting("utils/checkEnv.tsx");
+const result = set.fileFinishedImporting("utils/checkEnv.tsx");

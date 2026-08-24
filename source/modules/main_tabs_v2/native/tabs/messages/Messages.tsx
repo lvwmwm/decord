@@ -1,36 +1,27 @@
-// Module ID: 15285
-// Function ID: 15286
-// Dependencies: [19, 17, 4662, 4495, 21, 4661, 712, 7139, 7159, 4115, 14452, 14443, 15286, 15310, 15312, 15313, 15314, 12846, 15315, 1367, 500, 4230, 4229, 5443, 5066, 9, 14451, 1236, 8403, 15287, 15316, 15318, 15364, 15365, 11075, 2]
+// Module ID: 15349
+// Function ID: 15350
+// Dependencies: [19, 17, 4669, 4499, 21, 4668, 712, 7177, 7197, 4119, 14520, 14511, 15350, 15374, 15376, 15377, 15378, 12901, 15379, 1367, 500, 4234, 4233, 5448, 5071, 9, 14519, 1236, 8442, 15351, 15380, 15382, 15428, 15429, 11114, 2]
 
-// Module 15285
-import importAllResult from "useIsMobileVisualRefreshExperimentEnabled";
-import { View } from "useCommonTriggerPoint";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import _handleConnectionOpen from "_handleConnectionOpen";
-import jsxProd from "getRootNavigationRef";
-import createCacheKey from "createCacheKey";
+// Module 15349
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_6 from "_handleConnectionOpen" /* 4499 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
 let c3 = importAllResult;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles(() => {
   let obj = { container: null };
-  obj = { flex: 1, backgroundColor: importDefault(712).colors.PANEL_BG };
+  obj = { flex: 1, backgroundColor: ThemesDefault.colors.PANEL_BG };
   obj[0] = obj;
   return obj;
 });
 let closure_10 = { code: "function MessagesTsx1(event){const{scrollPosition,handleGuildsNavigationScroll}=this.__closure;scrollPosition.set(event.contentOffset.y);handleGuildsNavigationScroll(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);}" };
 const memoResult = importAllResult.memo(function Messages(style) {
-  let headerSize;
-  let list;
-  let listItemHeight;
-  let listItemSizes;
-  let listItemSuggestedFriendHeight;
-  let listLeft;
-  let listTop;
-  let recycleItems;
   let sharedValue;
   let dataKey;
   let sections;
@@ -38,7 +29,7 @@ const memoResult = importAllResult.memo(function Messages(style) {
   const tmp = callback2();
   let obj = sharedValue(sections[9]);
   sharedValue = obj.useSharedValue(0);
-  let obj1 = sharedValue(sections[10]);
+  obj1 = sharedValue(sections[10]);
   const youBarTotalHeight = obj1.useYouBarTotalHeight();
   let obj2 = sharedValue(sections[11]);
   const sum = youBarTotalHeight + obj2.useMobileQuestDockHeight();
@@ -64,7 +55,7 @@ const memoResult = importAllResult.memo(function Messages(style) {
   const effect = externalScrollEventHandler.useEffect(() => {
     if (null != dataKey) {
       if (!obj7.isAndroid()) {
-        if (!outer1_5.useReducedMotion) {
+        if (!closure_1_5.useReducedMotion) {
           let tmp5Result = tmp5(tmp6[21]);
           const rootNavigationRef = tmp5Result.getRootNavigationRef();
           let tmp2 = null != rootNavigationRef && rootNavigationRef.isReady();
@@ -91,7 +82,7 @@ const memoResult = importAllResult.memo(function Messages(style) {
     sharedValue(sections[24]).trackAppUIViewed();
     const obj = sharedValue(sections[24]);
     const reduced = sections.reduce((arg0, arg1) => arg0 + arg1, 0);
-    dataKey(sections[25]).recordRender(reduced, outer1_6.isConnected());
+    dataKey(sections[25]).recordRender(reduced, closure_1_6.isConnected());
   });
   const tmp18 = dataKey(sections[19])("Messages");
   externalScrollEventHandler = sharedValue(sections[26]).useExternalScrollEventHandler({ id: "messages" });
@@ -146,6 +137,6 @@ const memoResult = importAllResult.memo(function Messages(style) {
   obj[1] = callback(View, obj1);
   return callback(sharedValue(sections[7]).AnalyticsLocationProvider, obj);
 });
-let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/Messages.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/Messages.tsx");
 
 export default memoResult;

@@ -1,14 +1,14 @@
-// Module ID: 15230
-// Function ID: 15231
+// Module ID: 15294
+// Function ID: 15295
 // Name: useFocusRefOnNavigation
-// Dependencies: [19, 1501, 6548, 2]
+// Dependencies: [19, 1501, 6579, 2]
 // Exports: default
 
-// Module 15230 (useFocusRefOnNavigation)
-import noop from "noop";
+// Module 15294 (useFocusRefOnNavigation)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("runAfterInteractions").fileFinishedImporting("design/components/Navigator/native/useFocusRefOnNavigation.tsx");
+const result = require("set").fileFinishedImporting("design/components/Navigator/native/useFocusRefOnNavigation.tsx");
 
 export default function useFocusRefOnNavigation(inputRef) {
   inputRef = inputRef.inputRef;
@@ -20,10 +20,10 @@ export default function useFocusRefOnNavigation(inputRef) {
   isFocused = inputRef(flag[1]).useIsFocused();
   const items = [flag, inputRef, isFocused];
   const effect = isFocused.useEffect(() => {
-    let closure_0 = inputRef(flag[2]).runAfterInteractions(() => {
+    closure_0 = inputRef(flag[2]).runAfterInteractions(() => {
       let tmp = closure_1;
       if (closure_1) {
-        tmp = noop;
+        tmp = closure_2;
       }
       if (tmp) {
         const current = ref.current;

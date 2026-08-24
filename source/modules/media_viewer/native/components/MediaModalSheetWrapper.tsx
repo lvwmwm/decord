@@ -1,15 +1,15 @@
-// Module ID: 9008
-// Function ID: 9009
+// Module ID: 9045
+// Function ID: 9046
 // Name: MediaModalSheetWrapper
-// Dependencies: [19, 676, 21, 7122, 4342, 9009, 2]
+// Dependencies: [19, 676, 21, 7160, 4346, 9046, 2]
 // Exports: default
 
-// Module 9008 (MediaModalSheetWrapper)
-import noop from "noop";
-import { MEDIA_MODAL_KEY } from "ME";
-import { jsx } from "jsxProd";
+// Module 9045 (MediaModalSheetWrapper)
+import closure_2 from "noop" /* 19 */;
+import { MEDIA_MODAL_KEY } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const result = require("jsxProd").fileFinishedImporting("modules/media_viewer/native/components/MediaModalSheetWrapper.tsx");
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/components/MediaModalSheetWrapper.tsx");
 
 export default function MediaModalSheetWrapper(onCloseCallback) {
   onCloseCallback = onCloseCallback.onCloseCallback;
@@ -31,7 +31,7 @@ export default function MediaModalSheetWrapper(onCloseCallback) {
     if (onCloseCallback != null) {
       tmp();
     }
-    onCloseCallback(context[4]).hideActionSheet(outer1_3);
+    onCloseCallback(context[4]).hideActionSheet(closure_1_3);
   }, items1);
   const obj = {};
   const merged1 = Object.assign(merged);

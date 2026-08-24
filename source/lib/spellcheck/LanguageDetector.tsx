@@ -1,10 +1,12 @@
-// Module ID: 6920
-// Function ID: 6921
+// Module ID: 6958
+// Function ID: 6959
 // Name: language
-// Dependencies: [6921, 2]
+// Dependencies: [6959, 2]
 
-// Module 6920 (language)
-const result = require("set").fileFinishedImporting("lib/spellcheck/LanguageDetector.tsx");
+// Module 6958 (language)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("lib/spellcheck/LanguageDetector.tsx");
 class LanguageDetector {
   constructor(arg0, arg1) {
     obj = Object.create(new.target.prototype);
@@ -40,7 +42,7 @@ Object.defineProperty(prototype, "languageHint", {
 });
 prototype["process"] = function process(arg0) {
   const self = this;
-  let closure_0 = arg0;
+  closure_0 = arg0;
   if (!this._processing) {
     tmp._processing = true;
     requestIdleCallback((timeRemaining) => {
@@ -58,12 +60,12 @@ prototype["process"] = function process(arg0) {
           let cld = lib(_languageHint[0]).requireModule("discord_spellcheck").cld;
           const obj = lib(_languageHint[0]);
           return new Promise((arg0, arg1) => {
-            const cld = arg0;
-            let closure_1 = arg1;
-            cld.detect(cld, { httpHint: outer1_1, encodingHint: "UTF8" }, (message, reliable) => {
+            cld = arg0;
+            closure_1 = arg1;
+            cld.detect(cld, { httpHint: closure_1_1, encodingHint: "UTF8" }, (message, reliable) => {
               if (null != message) {
                 const _Error2 = Error;
-                const error = new Error(message.message);
+                error = new Error(message.message);
                 callback2(error);
               } else {
                 if (reliable.reliable) {
@@ -89,12 +91,12 @@ prototype["process"] = function process(arg0) {
           let cld = lib(_languageHint[0]).requireModule("discord_spellcheck").cld;
           const obj = lib(_languageHint[0]);
           return new Promise((arg0, arg1) => {
-            const cld = arg0;
-            let closure_1 = arg1;
-            cld.detect(cld, { httpHint: outer1_1, encodingHint: "UTF8" }, (message, reliable) => {
+            cld = arg0;
+            closure_1 = arg1;
+            cld.detect(cld, { httpHint: closure_1_1, encodingHint: "UTF8" }, (message, reliable) => {
               if (null != message) {
                 const _Error2 = Error;
-                const error = new Error(message.message);
+                error = new Error(message.message);
                 callback2(error);
               } else {
                 if (reliable.reliable) {

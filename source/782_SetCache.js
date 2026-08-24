@@ -4,10 +4,10 @@
 // Dependencies: [732, 783, 784]
 
 // Module 782 (SetCache)
-import setCacheAdd from "setCacheAdd";
+import MapCache from "MapCache" /* 732 */;
+import setCacheHas from "setCacheHas" /* 784 */;
+import setCacheAdd from "setCacheAdd" /* 783 */;
 
-let prototype;
-let prototype2;
 class SetCache {
   constructor(arg0) {
     num = 0;
@@ -26,6 +26,6 @@ class SetCache {
 ({ prototype, prototype: prototype2 } = SetCache);
 prototype2.push = setCacheAdd;
 prototype.add = setCacheAdd;
-SetCache.prototype.has = require("setCacheHas");
+SetCache.prototype.has = setCacheHas;
 
 export default SetCache;

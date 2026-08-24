@@ -1,71 +1,65 @@
-// Module ID: 16336
-// Function ID: 16337
-// Dependencies: [109, 19, 17, 16337, 4540, 16338, 9648, 1391, 4541, 676, 21, 16340, 16314, 9647, 9886, 9748, 647, 9884, 9747, 16344, 500, 9672, 9649, 1236, 9669, 9671, 16345, 9749, 4196, 1377, 7190, 16254, 13497, 2]
+// Module ID: 16431
+// Function ID: 16432
+// Dependencies: [109, 19, 17, 16432, 4545, 16433, 9687, 1391, 4546, 676, 21, 16435, 16408, 9686, 9925, 9787, 647, 9923, 9786, 16439, 500, 9711, 9688, 1236, 9708, 9710, 16440, 9788, 4200, 1377, 7228, 16351, 13555, 2]
 
-// Module 16336
-import _objectWithoutProperties from "_objectWithoutProperties";
-import importAllResult from "useCanConnect";
-import { NativeModules } from "getConsoleIcon";
-import { setVoiceUpsellDismissed } from "useConsoleVoiceUpsellStore";
-import set from "set";
-import handleAudioRouteChanged from "handleAudioRouteChanged";
-import closure_10 from "handleAudioRouteChanged";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleUpdate from "handleUpdate";
-import { PlatformTypes } from "ME";
-import jsxProd from "showAudioOutputSelector";
+// Module 16431
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 16435 */;
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import importAllResult from "noop" /* 19 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import { setVoiceUpsellDismissed } from "useConsoleVoiceUpsellStore" /* 16432 */;
+import closure_8 from "set" /* 4545 */;
+import closure_9 from "handleAudioRouteChanged" /* 16433 */;
+import closure_10 from "handleAudioRouteChanged" /* 9687 */;
+import closure_11 from "ensureGuildLoaded" /* 1391 */;
+import closure_12 from "handleUpdate" /* 4546 */;
+import { PlatformTypes } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let closure_14;
-let closure_15;
-let closure_16;
 const require = arg1;
 let closure_3 = ["ref"];
 let c5 = importAllResult;
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
 let closure_17 = [];
 let closure_18 = importAllResult.memo((arg0) => {
-  let canShowTooltip;
-  let targetRef;
   ({ targetRef, canShowTooltip } = arg0);
-  importDefault(16340)(targetRef, canShowTooltip);
+  useSpeakerTooltipsDefault(targetRef, canShowTooltip);
   return null;
 });
 const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConnectedToVoiceChannel) {
-  let c5;
-  let c6;
   isConnectedToVoiceChannel = isConnectedToVoiceChannel.isConnectedToVoiceChannel;
   const channelId = isConnectedToVoiceChannel.channelId;
   const style = isConnectedToVoiceChannel.style;
-  let c3;
+  closure_3 = undefined;
   let toggleAudio;
   c6 = undefined;
-  let c7;
-  let set;
+  closure_7 = undefined;
+  closure_8 = undefined;
   let stateFromStores;
-  let closure_10;
+  closure_10 = undefined;
   let stateFromStores1;
-  let handleUpdate;
+  closure_12 = undefined;
   let arr5;
   let callback;
-  let closure_15;
+  closure_15 = undefined;
   let stateFromStores2;
   let ref;
   const tmp2 = channelId(style[12])();
-  c3 = tmp2;
+  closure_3 = tmp2;
   let obj = isConnectedToVoiceChannel(style[13]);
   const maskedSpeakerStates = obj.useMaskedSpeakerStates();
   toggleAudio = maskedSpeakerStates.toggleAudio;
   ({ routeSource: c5, isAudioRouteEnabled: c6 } = maskedSpeakerStates);
   let tmp5 = channelId(style[14])();
-  c7 = tmp5;
-  set = channelId(style[15])();
-  let obj1 = isConnectedToVoiceChannel(style[16]);
-  let items = [set];
+  closure_7 = tmp5;
+  closure_8 = channelId(style[15])();
+  obj1 = isConnectedToVoiceChannel(style[16]);
+  let items = [closure_8];
   stateFromStores = obj1.useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
   const items1 = [stateFromStores];
   closure_10 = isConnectedToVoiceChannel(style[16]).useStateFromStores(items1, () => stateFromStores.getQueueAudioSwap());
   const obj3 = isConnectedToVoiceChannel(style[16]);
-  const items2 = [handleUpdate];
+  const items2 = [closure_12];
   stateFromStores1 = isConnectedToVoiceChannel(style[16]).useStateFromStores(items2, () => {
     let str;
     if (awaitingRemoteSessionInfo != null) {
@@ -77,7 +71,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
     return sessionById.getSessionById(str);
   });
   const items3 = [stateFromStores, stateFromStores1];
-  handleUpdate = importAllResult.useMemo(() => {
+  closure_12 = importAllResult.useMemo(() => {
     let type;
     if (stateFromStores != null) {
       type = stateFromStores.type;
@@ -128,9 +122,9 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
     if (!obj.isAndroid()) {
       if (0 !== arr5.length) {
         let items = [];
-        let tmp9 = c7;
-        let tmp5 = c7;
-        if (!c7) {
+        let tmp9 = closure_7;
+        let tmp5 = closure_7;
+        if (!closure_7) {
           tmp5 = stateFromStores2 !== tmp(tmp2[22]).RouteTypes.SPEAKER;
         }
         if (!tmp5) {
@@ -166,27 +160,27 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
           };
           items.push(obj);
         }
-        const obj1 = { label: null, iconSource: null, showIconFirst: false, action: null };
+        obj1 = { label: null, iconSource: null, showIconFirst: false, action: null };
         const intl3 = tmp(tmp2[23]).intl;
         obj1[0] = intl3.string(tmp(tmp2[23]).t.dnI0AL);
         obj1[1] = channelId(tmp2[26]);
         obj1[3] = function action() {
-          const result = items(outer1_2[21]).showAudioOutputSelector(closure_1, items);
+          const result = items(closure_1_2[21]).showAudioOutputSelector(closure_1, items);
         };
         items.push(obj1);
         for (const item10074 of tmp3) {
           let tmp16 = (function _loop(item10074) {
-            const items = item10074;
+            items = item10074;
             if (item10074.type === arr5.XBOX) {
               let obj = { label: null, iconSource: null, showIconFirst: false, action: null };
               const intl = isConnectedToVoiceChannel(style[23]).intl;
               obj[0] = intl.string(isConnectedToVoiceChannel(style[23]).t["qVE/VF"]);
               obj[1] = channelId(style[17])(item10074.type);
               obj[3] = function action() {
-                const channel = outer2_11.getChannel(outer1_1);
+                const channel = closure_2_11.getChannel(closure_1_1);
                 if (null != channel) {
-                  items(outer2_2[27]).onConnectToConsole(channel, closure_0);
-                  const obj = items(outer2_2[27]);
+                  items(closure_2_2[27]).onConnectToConsole(channel, closure_0);
+                  const obj = items(closure_2_2[27]);
                 }
               };
               items.push(obj);
@@ -197,10 +191,10 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
               obj[0] = intl2.string(isConnectedToVoiceChannel(style[23]).t.vzfxmY);
               obj[1] = channelId(style[17])(item10074.type);
               obj[3] = function action() {
-                const channel = outer2_11.getChannel(outer1_1);
+                const channel = closure_2_11.getChannel(closure_1_1);
                 if (null != channel) {
-                  items(outer2_2[27]).onConnectToConsole(channel, closure_0);
-                  const obj = items(outer2_2[27]);
+                  items(closure_2_2[27]).onConnectToConsole(channel, closure_0);
+                  const obj = items(closure_2_2[27]);
                 }
               };
               items.push(obj);
@@ -215,32 +209,32 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
   }, items6);
   callback = obj5.useCallback(() => {
     const result = isConnectedToVoiceChannel(style[28]).UNSAFE_markDismissibleContentAsDismissed(isConnectedToVoiceChannel(style[29]).DismissibleContent.DONUT_MOBILE_NUX);
-    _undefined2(true);
-    _undefined.lock();
+    callback(true);
+    closure_3.lock();
   }, items7);
   ref = obj5.useRef(null);
   if (tmp10) {
     function renderButton(arg0) {
       let tmp = arg0;
       if (arg0 == null) {
-        let obj = { onPress: null, ref: "a" };
+        let obj = { onPress: null, ref: "r" };
         obj[0] = closure_15;
         tmp = obj;
       }
       obj = { targetRef: ref, canShowTooltip: null };
-      let tmp9 = c14;
-      if (c14) {
+      let tmp9 = closure_14;
+      if (closure_14) {
         tmp9 = isConnectedToVoiceChannel;
       }
       obj[1] = tmp9;
-      const items = [c14(outer1_18, obj), ];
+      const items = [closure_14(closure_1_18, obj), ];
       obj = { style, ref, children: null };
-      const tmp3 = toggleAudio(tmp, c3);
+      const tmp3 = toggleAudio(tmp, closure_3);
       const tmp4 = stateFromStores2;
       const tmp5 = closure_15;
-      const tmp7 = outer1_18;
+      const tmp7 = closure_1_18;
       const tmp8 = ref;
-      const obj1 = { ref: tmp.ref };
+      obj1 = { ref: tmp.ref };
       const tmp11 = channelId(style[30]);
       const merged = Object.assign(tmp3);
       obj1.disabled = closure_10;
@@ -252,16 +246,16 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
       }
       obj1.overrideVariant = str;
       obj1.loading = null != stateFromStores;
-      let tmp15 = handleUpdate;
-      if (handleUpdate == null) {
+      let tmp15 = closure_12;
+      if (closure_12 == null) {
         tmp15 = c5;
       }
       const obj2 = { children: null };
       obj1.icon = tmp15;
       const intl = isConnectedToVoiceChannel(tmp10[23]).intl;
       obj1.accessibilityLabel = intl.string(isConnectedToVoiceChannel(style[23]).t.dnI0AL);
-      obj[2] = c14(channelId(style[31]), obj1);
-      items[1] = c14(tmp11, obj);
+      obj[2] = closure_14(channelId(style[31]), obj1);
+      items[1] = closure_14(tmp11, obj);
       obj2[0] = items;
       return tmp4(tmp5, obj2);
     }
@@ -289,6 +283,6 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
     return null;
   }
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderSpeaker.tsx");
+let result = require("set").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderSpeaker.tsx");
 
 export default memoResult;

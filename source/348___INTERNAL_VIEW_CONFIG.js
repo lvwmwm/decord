@@ -4,8 +4,8 @@
 // Dependencies: [106, 65]
 
 // Module 348 (__INTERNAL_VIEW_CONFIG)
-import weakSet from "weakSet";
-import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+import weakSet from "weakSet" /* 106 */;
+import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
 let obj = { uiViewClassName: "RCTModalHostView", directEventTypes: { topRequestClose: { registrationName: "onRequestClose" }, topShow: { registrationName: "onShow" }, topDismiss: { registrationName: "onDismiss" }, topOrientationChange: { registrationName: "onOrientationChange" } }, validAttributes: null };
 obj = { animationType: true, presentationStyle: true, transparent: true, statusBarTranslucent: true, navigationBarTranslucent: true, hardwareAccelerated: true, visible: true, animated: true, allowSwipeDismissal: true, supportedOrientations: true, identifier: true };

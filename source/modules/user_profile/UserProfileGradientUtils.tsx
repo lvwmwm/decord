@@ -1,21 +1,24 @@
-// Module ID: 8422
-// Function ID: 8423
+// Module ID: 8461
+// Function ID: 8462
 // Name: getProfileTheme
-// Dependencies: [32, 676, 688, 4224, 12, 1363, 689, 2]
+// Dependencies: [32, 676, 688, 4228, 12, 1363, 689, 2]
 // Exports: calculateGradientSplitColors, calculateOverlayedColor, getGradientPercentageColorInRgb, getProfileTheme, getUserProfileGradientContainerColors, getValueInColorGradientByPercentage
 
-// Module 8422 (getProfileTheme)
-import _slicedToArray from "_slicedToArray";
-import { ThemeTypes } from "ME";
-import apply from "apply";
-import apply from "apply";
+// Module 8461 (getProfileTheme)
+import apply2 from "apply" /* 12 */;
+import int2hslRaw from "int2hslRaw" /* 688 */;
+import nDefault from "n" /* 689 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import { ThemeTypes } from "ME" /* 676 */;
+import apply from "apply" /* 12 */;
 
-const require = arg1;
+require = arg1;
 const memoizeResult = apply.memoize((arg0) => {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
-  obj = { base: "#ffffff", contrastRatio: require(1363) /* AccessibilityAnnouncer */.WCAGContrastRatios.HighContrastText };
+  let obj = AccessibilityAnnouncer;
+  obj = { base: "#ffffff", contrastRatio: AccessibilityAnnouncer.WCAGContrastRatios.HighContrastText };
   const contrastingColor = obj.getContrastingColor(arg0, obj);
-  return require(688) /* int2hslRaw */.hex2int(contrastingColor);
+  return int2hslRaw.hex2int(contrastingColor);
 }, (arg0) => arg0);
 const memoizeResult1 = apply.memoize((hex2intResult) => {
   let tmp = arg2;
@@ -28,25 +31,25 @@ const memoizeResult1 = apply.memoize((hex2intResult) => {
       } else {
         LIGHT = ThemeTypes.LIGHT;
       }
-      obj = require(688) /* int2hslRaw */;
+      obj = int2hslRaw;
     }
   }
-  const obj2 = importDefault(689);
+  const obj2 = nDefault;
   const tmp8 = importDefault;
-  const mixResult = obj2.mix(importDefault(689)(hex2intResult), importDefault(689)(arg1), 0.5, "lab");
+  const mixResult = obj2.mix(nDefault(hex2intResult), nDefault(arg1), 0.5, "lab");
   const result = Math.round(100 * mixResult.get("hsl.l")) / 100;
   if (tmp !== ThemeTypes.LIGHT) {
-    let clampResult = require(12) /* apply */.clamp(result, 0, 0.1);
-    const obj5 = require(12) /* apply */;
+    let clampResult = apply2.clamp(result, 0, 0.1);
+    const obj5 = apply2;
   } else {
-    clampResult = require(12) /* apply */.clamp(result, 0.8, 1);
-    const obj4 = require(12) /* apply */;
+    clampResult = apply2.clamp(result, 0.8, 1);
+    const obj4 = apply2;
   }
-  const tmp10 = importDefault(689)(hex2intResult);
-  const result1 = tmp8(689)(mixResult).set("hsl.l", clampResult);
+  const tmp10 = nDefault(hex2intResult);
+  const result1 = nDefault(mixResult).set("hsl.l", clampResult);
   return result1.num();
 }, (arg0, arg1, arg2) => "" + arg0 + "-" + arg1 + "-" + arg2);
-let result = require("int2hslRaw").fileFinishedImporting("modules/user_profile/UserProfileGradientUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/UserProfileGradientUtils.tsx");
 
 export const getProfileTheme = function getProfileTheme(first) {
   if (null == first) {
@@ -57,7 +60,7 @@ export const getProfileTheme = function getProfileTheme(first) {
     } else {
       LIGHT = ThemeTypes.LIGHT;
     }
-    obj = require(688) /* int2hslRaw */;
+    obj = int2hslRaw;
   }
 };
 export const getValueInColorGradientByPercentage = function getValueInColorGradientByPercentage(items, items1, arg2) {
@@ -67,15 +70,12 @@ export const getValueInColorGradientByPercentage = function getValueInColorGradi
   return items;
 };
 export const calculateOverlayedColor = function calculateOverlayedColor(secondaryColor, overlay) {
-  let tmp10;
-  let tmp8;
-  let tmp9;
   const obj = items1(688);
   const tmp = items1;
   if (null == overlay) {
     return 0;
   } else {
-    const parseStringResult = alpha(4224).parseString(overlay);
+    const parseStringResult = alpha(4228).parseString(overlay);
     if (null == parseStringResult) {
       return 0;
     } else {
@@ -89,7 +89,7 @@ export const calculateOverlayedColor = function calculateOverlayedColor(secondar
       const _HermesInternal = HermesInternal;
       return tmp(688).rgb2int("rgba(" + tmp8 + ", " + tmp9 + ", " + tmp10 + ")");
     }
-    const obj2 = alpha(4224);
+    const obj2 = alpha(4228);
   }
   int2rgbArrayResult = items1(688).int2rgbArray(secondaryColor);
 };
@@ -105,9 +105,9 @@ export const calculateGradientSplitColors = function calculateGradientSplitColor
   if (0 === arg2) {
     return [];
   } else {
-    const int2rgbArrayResult = require(688) /* int2hslRaw */.int2rgbArray(modalV2BackgroundColor);
-    const obj = require(688) /* int2hslRaw */;
-    const int2rgbArrayResult1 = require(688) /* int2hslRaw */.int2rgbArray(modalV2BackgroundColor);
+    const int2rgbArrayResult = int2hslRaw.int2rgbArray(modalV2BackgroundColor);
+    const obj = int2hslRaw;
+    const int2rgbArrayResult1 = int2hslRaw.int2rgbArray(modalV2BackgroundColor);
     const result = 100 * arg3 / arg2 / 100;
     const diff = 1 - result;
     const _Math = Math;
@@ -136,27 +136,27 @@ export const getUserProfileGradientContainerColors = function getUserProfileGrad
   if (typeof closure_2 === "string") {
     let int2rgbaResult = int2rgbaResult1;
     if (null != result) {
-      int2rgbaResult = require(688) /* int2hslRaw */.int2rgba(result, 1);
-      const obj3 = require(688) /* int2hslRaw */;
+      int2rgbaResult = int2hslRaw.int2rgba(result, 1);
+      const obj3 = int2hslRaw;
     }
     const items = [int2rgbaResult, ];
     if (null != result1) {
-      int2rgbaResult1 = require(688) /* int2hslRaw */.int2rgba(result1, 1);
-      const obj4 = require(688) /* int2hslRaw */;
+      int2rgbaResult1 = int2hslRaw.int2rgba(result1, 1);
+      const obj4 = int2hslRaw;
     }
     items[1] = int2rgbaResult1;
     let items1 = items;
   } else {
     if (null != result) {
-      let int2rgbaResult2 = require(688) /* int2hslRaw */.int2rgba(result, 1);
-      const obj = require(688) /* int2hslRaw */;
+      let int2rgbaResult2 = int2hslRaw.int2rgba(result, 1);
+      const obj = int2hslRaw;
     } else {
       int2rgbaResult2 = int2rgbaResult1[0];
     }
     items1 = [int2rgbaResult2, ];
     if (null != result1) {
-      let int2rgbaResult3 = require(688) /* int2hslRaw */.int2rgba(result1, 1);
-      const obj2 = require(688) /* int2hslRaw */;
+      let int2rgbaResult3 = int2hslRaw.int2rgba(result1, 1);
+      const obj2 = int2hslRaw;
     } else {
       int2rgbaResult3 = int2rgbaResult1[1];
     }

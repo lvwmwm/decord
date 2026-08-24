@@ -1,18 +1,17 @@
-// Module ID: 8372
-// Function ID: 8373
+// Module ID: 8411
+// Function ID: 8412
 // Name: useBioMaxLength
 // Dependencies: [676, 1472, 2]
 // Exports: getBioMaxLength, useBioMaxLength
 
-// Module 8372 (useBioMaxLength)
-import ME from "ME";
-import ApexExperiment from "ApexExperiment";
+// Module 8411 (useBioMaxLength)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
-let BIO_MAX_LENGTH;
-let BIO_MAX_LENGTH_INCREASED;
 ({ BIO_MAX_LENGTH, BIO_MAX_LENGTH_INCREASED } = ME);
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-08-user-bio-max-length", kind: "user", defaultConfig: { maxLength: BIO_MAX_LENGTH }, variations: { 0: { maxLength: BIO_MAX_LENGTH }, 1: { maxLength: BIO_MAX_LENGTH_INCREASED } } });
-const result = require("set").fileFinishedImporting("modules/user_profile/experiments/BioMaxLengthExperiment.tsx");
+const result = set.fileFinishedImporting("modules/user_profile/experiments/BioMaxLengthExperiment.tsx");
 
 export const useBioMaxLength = function useBioMaxLength(location) {
   return closure_0.useConfig({ location: location.location }).maxLength;

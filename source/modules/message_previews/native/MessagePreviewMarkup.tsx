@@ -1,28 +1,29 @@
-// Module ID: 10053
-// Function ID: 10054
+// Module ID: 10092
+// Function ID: 10093
 // Name: getOrParseMessagePreviewMarkupAST
-// Dependencies: [6808, 6809, 10054, 4092, 6807, 4071, 1405, 2]
+// Dependencies: [6845, 6846, 10093, 4095, 6844, 4074, 1405, 2]
 // Exports: getMessagePreviewASTParser, renderASTToReact, renderMessagePreviewMarkup
 
-// Module 10053 (getOrParseMessagePreviewMarkupAST)
-const require = arg1;
+// Module 10092 (getOrParseMessagePreviewMarkupAST)
+import privDefault from "priv" /* 1405 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 4074 */;
+import tDefault from "t" /* 4095 */;
+import get_defaultRulesDefault from "get defaultRules" /* 6844 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 6845 */;
+import parseLinkDefault from "parseLink" /* 6846 */;
+import defaultReactFnDefault from "defaultReactFn" /* 10093 */;
+
+require = arg1;
 function getOrParseMessagePreviewMarkupAST(arg0) {
-  let color;
-  let content;
-  let fontScale;
-  let initialParserState;
-  let layout;
-  let maxFontSizeMultiplier;
-  let postProcessor;
   ({ content, layout, color, initialParserState, postProcessor, fontScale, maxFontSizeMultiplier } = arg0);
-  const value = tmp2.get(content);
+  const value = closure_3.get(content);
   if (null != value) {
     return value;
   } else {
-    const items = [importDefault(6809).RULES, importDefault(10054)(layout, color, fontScale, maxFontSizeMultiplier)];
-    const tmp11 = importDefault(6808);
-    const tmp11Result = importDefault(6808)(items);
-    const obj3 = importDefault(6807);
+    const items = [parseLinkDefault.RULES, defaultReactFnDefault(layout, color, fontScale, maxFontSizeMultiplier)];
+    const tmp11 = combineMarkupRulesDefault;
+    const tmp11Result = combineMarkupRulesDefault(items);
+    const obj3 = get_defaultRulesDefault;
     let startsWithResult = content.startsWith("```");
     let tmp3;
     if (!startsWithResult) {
@@ -33,52 +34,36 @@ function getOrParseMessagePreviewMarkupAST(arg0) {
     if (startsWithResult) {
       tmp3 = content;
     }
-    const astParserForResultResult = importDefault(6807).astParserFor(tmp11Result)(tmp3, true, initialParserState, postProcessor);
+    const astParserForResultResult = get_defaultRulesDefault.astParserFor(tmp11Result)(tmp3, true, initialParserState, postProcessor);
     const result = obj.set(content, astParserForResultResult);
     return astParserForResultResult;
   }
-  obj = tmp2;
+  obj = closure_3;
 }
-const tmp2 = new require("priv")({ max: 2000 });
-let c3 = tmp2;
-let result = require("defaultReactFn").fileFinishedImporting("modules/message_previews/native/MessagePreviewMarkup.tsx");
+const tmp2 = new privDefault({ max: 2000 });
+let closure_3 = tmp2;
+let result = require("set").fileFinishedImporting("modules/message_previews/native/MessagePreviewMarkup.tsx");
 
 export const renderASTToReact = function renderASTToReact(layout) {
-  let color;
-  let fontScale;
-  let initialParserState;
-  let maxFontSizeMultiplier;
-  let tree;
   ({ tree, initialParserState, color, fontScale, maxFontSizeMultiplier } = layout);
-  const items = [importDefault(6809).RULES, importDefault(10054)(layout.layout, color, fontScale, maxFontSizeMultiplier)];
-  const tmp = importDefault(6808);
-  const tmpResult = importDefault(6808)(items);
-  const obj = importDefault(4092);
-  return obj.reactFor(importDefault(4092).ruleOutput(tmpResult, "react"))(tree, initialParserState);
+  const items = [parseLinkDefault.RULES, defaultReactFnDefault(layout.layout, color, fontScale, maxFontSizeMultiplier)];
+  const tmp = combineMarkupRulesDefault;
+  const tmpResult = combineMarkupRulesDefault(items);
+  const obj = tDefault;
+  return obj.reactFor(tDefault.ruleOutput(tmpResult, "react"))(tree, initialParserState);
 };
 export const getMessagePreviewASTParser = function getMessagePreviewASTParser(layout) {
-  let color;
-  let fontScale;
-  let maxFontSizeMultiplier;
   ({ color, fontScale, maxFontSizeMultiplier } = layout);
-  const items = [importDefault(6809).RULES, importDefault(10054)(layout.layout, color, fontScale, maxFontSizeMultiplier)];
-  const tmp = importDefault(6808);
-  const tmpResult = importDefault(6808)(items);
-  return importDefault(6807).astParserFor(tmpResult);
+  const items = [parseLinkDefault.RULES, defaultReactFnDefault(layout.layout, color, fontScale, maxFontSizeMultiplier)];
+  const tmp = combineMarkupRulesDefault;
+  const tmpResult = combineMarkupRulesDefault(items);
+  return get_defaultRulesDefault.astParserFor(tmpResult);
 };
 export const renderMessagePreviewMarkup = function renderMessagePreviewMarkup(fontScale) {
-  let channelId;
-  let color;
-  let content;
-  let disableAnimatedEmoji;
-  let guildId;
-  let layout;
-  let muted;
-  let postProcessor;
   ({ content, muted, layout } = fontScale);
   ({ guildId, channelId } = fontScale);
   if (layout === undefined) {
-    layout = require(4071) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT;
+    layout = ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT;
   }
   ({ color, disableAnimatedEmoji, postProcessor } = fontScale);
   if (disableAnimatedEmoji === undefined) {
@@ -111,11 +96,11 @@ export const renderMessagePreviewMarkup = function renderMessagePreviewMarkup(fo
     obj[5] = maxFontSizeMultiplier;
     obj[6] = postProcessor;
     const tmp4 = getOrParseMessagePreviewMarkupAST(obj);
-    const items = [importDefault(6809).RULES, importDefault(10054)(layout, color, num, maxFontSizeMultiplier)];
-    const tmp7 = importDefault(6808);
-    const tmp7Result = importDefault(6808)(items);
-    const obj2 = importDefault(4092);
-    return obj2.reactFor(importDefault(4092).ruleOutput(tmp7Result, "react"))(tmp4, obj);
+    const items = [parseLinkDefault.RULES, defaultReactFnDefault(layout, color, num, maxFontSizeMultiplier)];
+    const tmp7 = combineMarkupRulesDefault;
+    const tmp7Result = combineMarkupRulesDefault(items);
+    const obj2 = tDefault;
+    return obj2.reactFor(tDefault.ruleOutput(tmp7Result, "react"))(tmp4, obj);
   }
 };
 export const messagePreviewASTCache = tmp2;

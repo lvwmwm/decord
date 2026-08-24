@@ -1,19 +1,18 @@
-// Module ID: 11038
-// Function ID: 11039
+// Module ID: 11077
+// Function ID: 11078
 // Name: BanConfirmModal
-// Dependencies: [19, 21, 9929, 9930, 1236, 11031, 2]
+// Dependencies: [19, 21, 9968, 9969, 1236, 11070, 2]
 // Exports: default
 
-// Module 11038 (BanConfirmModal)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 11077 (BanConfirmModal)
+import noopAll from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("useNavigatorBackHandler").fileFinishedImporting("modules/guild_moderation/native/BanConfirmModal.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("modules/guild_moderation/native/BanConfirmModal.tsx");
 
 export default function BanConfirmModal(onBeforeGoBack) {
-  let importDefault;
-  let require;
   ({ guildId: require, userId: importDefault } = onBeforeGoBack);
   let onGoBack;
   onGoBack = importDefault(onGoBack[2])({ onBeforeGoBack: onBeforeGoBack.cancelButtonCallback }).onGoBack;
@@ -21,7 +20,7 @@ export default function BanConfirmModal(onBeforeGoBack) {
   const intl = require(onGoBack[4]).intl;
   obj[1] = intl.string(require(onGoBack[4]).t.R3QeLQ);
   obj[2] = function render() {
-    return outer1_3(outer1_1(onGoBack[5]), { onBan: onGoBack, guildId: closure_0, userId: closure_1 });
+    return closure_1_3(closure_1_1(onGoBack[5]), { onBan: onGoBack, guildId: closure_0, userId: closure_1 });
   };
   return jsx(importDefault(onGoBack[3]), { screenKey: "ban", title: null, render: null });
 };

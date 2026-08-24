@@ -1,23 +1,28 @@
-// Module ID: 7924
-// Function ID: 7925
+// Module ID: 7963
+// Function ID: 7964
 // Name: useYouBarSettingsCustomHeaderPaddingTop
-// Dependencies: [1629, 7925, 501, 2]
+// Dependencies: [1629, 7964, 501, 2]
 // Exports: useYouBarSettingsCustomHeaderPaddingTop, useYouBarSettingsOutsideSafeAreaTop
 
-// Module 7924 (useYouBarSettingsCustomHeaderPaddingTop)
-const result = require("PlatformTypes").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarSettingsSafeArea.tsx");
+// Module 7963 (useYouBarSettingsCustomHeaderPaddingTop)
+import set from "set" /* 2 */;
+import PlatformTypes from "PlatformTypes" /* 501 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7964 */;
+
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarSettingsSafeArea.tsx");
 
 export const useYouBarSettingsCustomHeaderPaddingTop = function useYouBarSettingsCustomHeaderPaddingTop() {
-  const tmp = importDefault(7925)();
-  const obj = require(501) /* PlatformTypes */;
+  const tmp = useIsWindowLargeDefault();
+  const obj = PlatformTypes;
   let num = 16;
   if (!tmp2) {
-    num = importDefault(1629)().top;
+    num = useSafeAreaInsetsDefault().top;
   }
   return num;
 };
 export const useYouBarSettingsOutsideSafeAreaTop = function useYouBarSettingsOutsideSafeAreaTop() {
-  const tmp = importDefault(7925)();
-  const obj = require(501) /* PlatformTypes */;
-  return require(501) /* PlatformTypes */.isIOS() || tmp;
+  const tmp = useIsWindowLargeDefault();
+  const obj = PlatformTypes;
+  return PlatformTypes.isIOS() || tmp;
 };

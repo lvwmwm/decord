@@ -1,19 +1,20 @@
-// Module ID: 7282
-// Function ID: 7283
+// Module ID: 7320
+// Function ID: 7321
 // Name: _createHandoffToken
 // Dependencies: [5, 676, 514, 530, 2]
 
-// Module 7282 (_createHandoffToken)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import { Endpoints } from "ME";
+// Module 7320 (_createHandoffToken)
+import v1 from "v1" /* 514 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function _createHandoffToken() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     return (function*(arg0, body) {
       if (constants === 2) {
         constants = 3;
@@ -26,7 +27,7 @@ function _createHandoffToken() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -41,10 +42,10 @@ function _createHandoffToken() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_1 = tmp4;
+              closure_1 = tmp4;
               let handoff_token;
-              const HTTP = callback(outer1_1[3]).HTTP;
-              const obj1 = { url: null, body: null, oldFormErrors: true, retries: 1, rejectWithError: false };
+              const HTTP = callback(closure_1_1[3]).HTTP;
+              obj1 = { url: null, body: null, oldFormErrors: true, retries: 1, rejectWithError: false };
               obj1[0] = constants.HANDOFF;
               const obj2 = { key: null };
               obj2[0] = handoff_token;
@@ -72,7 +73,7 @@ function _createHandoffToken() {
               return obj;
             } else {
               const _Error = Error;
-              const error = new Error("Missing handoff token!");
+              error = new Error("Missing handoff token!");
               throw error;
             }
           }
@@ -83,7 +84,7 @@ function _createHandoffToken() {
       }
     })();
   });
-  const _createHandoffToken = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -92,11 +93,11 @@ function _createHandoffToken() {
   }
   return applyArgumentsResult;
 }
-const result = require("v1").fileFinishedImporting("modules/mobile_web_handoff/MobileWebHandoffUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/mobile_web_handoff/MobileWebHandoffUtils.tsx");
 
 export default {
   generateNonce() {
-    return require(514) /* v1 */.v4();
+    return v1.v4();
   },
   createHandoffToken(closure_0) {
     const self = this;

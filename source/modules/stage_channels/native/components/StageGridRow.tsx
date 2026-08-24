@@ -1,33 +1,32 @@
-// Module ID: 12612
-// Function ID: 12613
-// Dependencies: [19, 17, 21, 4661, 12605, 6703, 8944, 12613, 12604, 2]
+// Module ID: 12666
+// Function ID: 12667
+// Dependencies: [19, 17, 21, 4668, 12659, 6740, 8981, 12667, 12658, 2]
 
-// Module 12612
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 12666
+import getIsScreenLandscape from "getIsScreenLandscape" /* 8981 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let closure_5 = createCacheKey.createStyles({ container: { flexDirection: "row", alignItems: "center" }, containerLandscape: { justifyContent: "center" } });
-const memoResult = require("noop").memo((row) => {
-  let participants;
-  let require;
+const memoResult = importAllResult.memo((row) => {
   ({ channel: require, participants } = row);
   let THIRD;
   const tmp = callback();
-  let obj = require(8944) /* getIsScreenLandscape */;
+  let obj = getIsScreenLandscape;
   let containerLandscape = obj.useIsScreenLandscape();
   let num = 3;
   if (0 === row.row) {
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(12605).StageTileSize.FULL;
+    THIRD = tmp2(12659).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(12605).StageTileSize.HALF;
+    THIRD = tmp2(12659).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(12605).StageTileSize.THIRD;
+    THIRD = tmp2(12659).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   if (containerLandscape) {
@@ -38,9 +37,9 @@ const memoResult = require("noop").memo((row) => {
     children: participants.map((type) => {
       type = type.type;
       let flag = true;
-      if (outer1_0(outer1_2[5]).StageChannelParticipantTypes.STREAM !== type) {
+      if (closure_1_0(closure_1_2[5]).StageChannelParticipantTypes.STREAM !== type) {
         flag = false;
-        if (outer1_0(tmp2[5]).StageChannelParticipantTypes.VOICE === type) {
+        if (closure_1_0(tmp2[5]).StageChannelParticipantTypes.VOICE === type) {
           const voiceState = type.voiceState;
           let selfVideo;
           if (voiceState != null) {
@@ -73,9 +72,9 @@ const memoResult = require("noop").memo((row) => {
   return <View style={items}>{participants.map((type) => {
     type = type.type;
     let flag = true;
-    if (outer1_0(outer1_2[5]).StageChannelParticipantTypes.STREAM !== type) {
+    if (closure_1_0(closure_1_2[5]).StageChannelParticipantTypes.STREAM !== type) {
       flag = false;
-      if (outer1_0(tmp2[5]).StageChannelParticipantTypes.VOICE === type) {
+      if (closure_1_0(tmp2[5]).StageChannelParticipantTypes.VOICE === type) {
         const voiceState = type.voiceState;
         let selfVideo;
         if (voiceState != null) {
@@ -104,6 +103,6 @@ const memoResult = require("noop").memo((row) => {
     return tmp5Result;
   })}</View>;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/stage_channels/native/components/StageGridRow.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/components/StageGridRow.tsx");
 
 export default memoResult;

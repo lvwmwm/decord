@@ -1,19 +1,19 @@
-// Module ID: 17054
-// Function ID: 17055
+// Module ID: 17147
+// Function ID: 17148
 // Name: AVErrorNoAudioInputDetectedDefinition
-// Dependencies: [1391, 4497, 4539, 676, 9668, 17055, 2]
+// Dependencies: [1391, 4501, 4544, 676, 9707, 17148, 2]
 
-// Module 17054 (AVErrorNoAudioInputDetectedDefinition)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createRTCConnection from "createRTCConnection";
-import ME from "ME";
+// Module 17147 (AVErrorNoAudioInputDetectedDefinition)
+import mapped from "mapped" /* 9707 */;
+import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17148 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_4 from "createRTCConnection" /* 4544 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ InputModes: c5, RTCConnectionStates: closure_6 } = ME);
-const result = require("createRTCConnection").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoAudioInputDetected.tsx");
+const result = require("set").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoAudioInputDetected.tsx");
 
 export const AVErrorNoAudioInputDetectedDefinition = {
   getActiveErrors(voiceState) {
@@ -40,8 +40,8 @@ export const AVErrorNoAudioInputDetectedDefinition = {
                   if (!isGuildStageVoiceResult) {
                     if (!obj5.isSelfMute()) {
                       const obj = { type: null };
-                      obj[0] = require(9668) /* mapped */.AVError.NO_AUDIO_INPUT_DETECTED;
-                      const merged = Object.assign(require(17055) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
+                      obj[0] = mapped.AVError.NO_AUDIO_INPUT_DETECTED;
+                      const merged = Object.assign(getVoiceChannelErrorContext.getVoiceChannelErrorContext());
                       const items = [obj];
                       return items;
                     }

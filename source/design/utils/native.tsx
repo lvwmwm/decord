@@ -1,15 +1,21 @@
-// Module ID: 4099
-// Function ID: 4100
+// Module ID: 4102
+// Function ID: 4103
 // Name: getNodeText
-// Dependencies: [2, 4100, 4101, 4102, 1364]
+// Dependencies: [2, 4103, 4104, 4105, 1364]
 
-// Module 4099 (getNodeText)
-const result = require("chainCallbacks").fileFinishedImporting("design/utils/native.tsx");
+// Module 4102 (getNodeText)
+import set from "set" /* 2 */;
+import isThemeLight from "isThemeLight" /* 1364 */;
+import getNodeText from "getNodeText" /* 4103 */;
+import chainCallbacks from "chainCallbacks" /* 4104 */;
+import useFocus from "useFocus" /* 4105 */;
 
-export const getNodeText = require("getNodeText").getNodeText;
-export const chainCallbacks = require("chainCallbacks").chainCallbacks;
-export const mergeProps = require("chainCallbacks").mergeProps;
-export const mergeRefs = require("chainCallbacks").mergeRefs;
-export const useFocus = require("useFocus").useFocus;
-export const isThemeLight = require("isThemeLight").isThemeLight;
-export const isThemeDark = require("isThemeLight").isThemeDark;
+const result = set.fileFinishedImporting("design/utils/native.tsx");
+
+export const getNodeText = getNodeText.getNodeText;
+export const chainCallbacks = chainCallbacks.chainCallbacks;
+export const mergeProps = chainCallbacks.mergeProps;
+export const mergeRefs = chainCallbacks.mergeRefs;
+export const useFocus = useFocus.useFocus;
+export const isThemeLight = isThemeLight.isThemeLight;
+export const isThemeDark = isThemeLight.isThemeDark;

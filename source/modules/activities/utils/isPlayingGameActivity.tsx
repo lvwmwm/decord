@@ -1,14 +1,18 @@
-// Module ID: 9733
-// Function ID: 9734
+// Module ID: 9772
+// Function ID: 9773
 // Name: isPlayingGameActivity
-// Dependencies: [4481, 676, 7259, 2]
+// Dependencies: [4485, 676, 7297, 2]
 // Exports: default
 
-// Module 9733 (isPlayingGameActivity)
-import { XBOX_ACTIVITY_APPLICATION_ID as closure_2 } from "items3";
-import { ActivityTypes } from "ME";
+// Module 9772 (isPlayingGameActivity)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import items3 from "items3" /* 4485 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7297 */;
 
-const result = require("isEmbeddedActivity").fileFinishedImporting("modules/activities/utils/isPlayingGameActivity.tsx");
+let closure_2 = items3.XBOX_ACTIVITY_APPLICATION_ID;
+const ActivityTypes = ME.ActivityTypes;
+const result = set.fileFinishedImporting("modules/activities/utils/isPlayingGameActivity.tsx");
 
 export default function isPlayingGameActivity(application_id) {
   let tmp = null != application_id;
@@ -18,7 +22,7 @@ export default function isPlayingGameActivity(application_id) {
       tmp2 = application_id.type === ActivityTypes.PLAYING;
     }
     if (tmp2) {
-      tmp2 = !importDefault(7259)(application_id);
+      tmp2 = !isEmbeddedActivityDefault(application_id);
     }
     if (tmp2) {
       tmp2 = application_id.application_id !== closure_2;

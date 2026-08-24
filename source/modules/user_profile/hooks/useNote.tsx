@@ -1,23 +1,23 @@
-// Module ID: 12159
-// Function ID: 12160
+// Module ID: 12211
+// Function ID: 12212
 // Name: _fetchNote
-// Dependencies: [5, 19, 12160, 676, 589, 709, 530, 2]
+// Dependencies: [5, 19, 12212, 676, 589, 709, 530, 2]
 // Exports: default
 
-// Module 12159 (_fetchNote)
-import dispatcher from "dispatcher";
-import noop from "noop";
-import getNote from "getNote";
-import { Endpoints } from "ME";
+// Module 12211 (_fetchNote)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "getNote" /* 12212 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _fetchNote() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0, body) {
       if (c6 === 2) {
         c6 = 3;
@@ -30,7 +30,7 @@ function _fetchNote() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -45,14 +45,14 @@ function _fetchNote() {
               obj[0] = body;
               return obj;
             } else {
-              const dependencyMap = tmp3;
+              dependencyMap = tmp3;
               body = tmp7;
               body = undefined;
-              const obj1 = { type: "USER_NOTE_LOAD_START", userId: null };
+              obj1 = { type: "USER_NOTE_LOAD_START", userId: null };
               obj1[1] = callback;
-              outer1_1(outer1_2[5]).dispatch(obj1);
-              let c4 = 1;
-              const HTTP = callback(outer1_2[6]).HTTP;
+              closure_1_1(closure_1_2[5]).dispatch(obj1);
+              c4 = 1;
+              const HTTP = callback(closure_1_2[6]).HTTP;
               const obj2 = { url: null, oldFormErrors: true, rejectWithError: true };
               obj2[0] = c6.NOTE(callback);
               c5 = 2;
@@ -90,11 +90,11 @@ function _fetchNote() {
               }
             }
             const _Error = Error;
-            const error = new Error("Invalid response from server");
+            error = new Error("Invalid response from server");
             throw error;
           }
         } catch (tmp26) {
-          let dispatcher = tmp26;
+          closure_3 = tmp26;
           if (tmp4 === c4) {
             c6 = tmp2;
             throw tmp26;
@@ -105,7 +105,7 @@ function _fetchNote() {
       }
     })();
   });
-  const _fetchNote = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -114,12 +114,12 @@ function _fetchNote() {
   }
   return applyArgumentsResult;
 }
-const result = require("getNote").fileFinishedImporting("modules/user_profile/hooks/useNote.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useNote.tsx");
 
 export default function useNote(arg0) {
   const _require = arg0;
-  const items = [getNote];
-  let stateFromStores = _require(589).useStateFromStores(items, () => outer1_5.getNote(closure_0));
+  const items = [closure_5];
+  let stateFromStores = _require(589).useStateFromStores(items, () => closure_1_5.getNote(closure_0));
   const items1 = [stateFromStores, arg0];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {

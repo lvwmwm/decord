@@ -1,21 +1,20 @@
-// Module ID: 15873
-// Function ID: 15874
+// Module ID: 15970
+// Function ID: 15971
 // Name: MessageVerticalSeparator
-// Dependencies: [19, 17, 8507, 21, 4661, 2]
+// Dependencies: [19, 17, 8546, 21, 4668, 2]
 // Exports: CardVerticalSeparator, MediaVerticalSeparator, MessageVerticalSeparator
 
-// Module 15873 (MessageVerticalSeparator)
-import "noop";
-import { View } from "get ActivityIndicator";
-import MessageEmbedTypes from "MessageEmbedTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15970 (MessageVerticalSeparator)
+import noopAll from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let FILES_OR_LINKS_GAP_WIDTH;
-let MEDIA_ITEM_GAP_WIDTH;
+noopAll;
 ({ MEDIA_ITEM_GAP_WIDTH, FILES_OR_LINKS_GAP_WIDTH } = MessageEmbedTypes);
 let closure_2 = createCacheKey.createStyles({ filesOrLinksSeparator: { height: FILES_OR_LINKS_GAP_WIDTH }, mediaSeparator: { height: MEDIA_ITEM_GAP_WIDTH }, messageSeparator: { height: 4 } });
-const result = require("MessageEmbedTypes").fileFinishedImporting("modules/search/native/components/list/rows/Separators.tsx");
+const result = require("set").fileFinishedImporting("modules/search/native/components/list/rows/Separators.tsx");
 
 export const MessageVerticalSeparator = function MessageVerticalSeparator() {
   return <View style={callback().messageSeparator} />;

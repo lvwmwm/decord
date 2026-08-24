@@ -1,31 +1,31 @@
-// Module ID: 5620
-// Function ID: 5621
+// Module ID: 5627
+// Function ID: 5628
 // Name: CrownIllocon
-// Dependencies: [21, 5449, 5621, 2]
+// Dependencies: [21, 5454, 5628, 2]
 // Exports: CrownIllocon
 
-// Module 5620 (CrownIllocon)
-import { jsx } from "jsxProd";
+// Module 5627 (CrownIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5628 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CrownIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CrownIllocon.native.tsx");
 
 export const CrownIllocon = function CrownIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5621);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

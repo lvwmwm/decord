@@ -1,27 +1,29 @@
-// Module ID: 7225
-// Function ID: 7226
+// Module ID: 7263
+// Function ID: 7264
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1922, 7226, 7227, 4014, 2]
+// Dependencies: [1922, 7264, 7265, 4017, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 7225 (canUserSeeMonetizationOnboarding)
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 7263 (canUserSeeMonetizationOnboarding)
+import isRestrictedFromShowingGuildPurchaseEntryPoints from "isRestrictedFromShowingGuildPurchaseEntryPoints" /* 4017 */;
+import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 7264 */;
+import set from "set" /* 7265 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_settings/creator_monetization/canUserSeeMonetizationOnboarding.tsx");
 
-export const canUserSeeMonetizationOnboarding = function canUserSeeMonetizationOnboarding(mergeGuildAvatar) {
+export const canUserSeeMonetizationOnboarding = function canUserSeeMonetizationOnboarding(closure_2) {
   currentUser = currentUser.getCurrentUser();
   let id;
   if (currentUser != null) {
     id = currentUser.id;
   }
-  let obj = require(7226) /* computeGuildRoleSubscriptionSettingsVisibility */;
-  obj = { guild: mergeGuildAvatar, isOwner: mergeGuildAvatar.ownerId === id, canManageGuildRoleSubscriptions: null, isUserInCreatorMonetizationEligibleCountry: null, shouldRestrictUpdatingRoleSubscriptionSettings: null };
-  obj[2] = require(7226) /* computeGuildRoleSubscriptionSettingsVisibility */.canManageGuildRoleSubscriptions(mergeGuildAvatar);
-  const obj3 = require(7226) /* computeGuildRoleSubscriptionSettingsVisibility */;
-  obj[3] = require(7227) /* set */.isUserInCreatorMonetizationEligibleCountry();
-  const obj4 = require(7227) /* set */;
-  obj[4] = require(4014) /* isRestrictedFromShowingGuildPurchaseEntryPoints */.shouldRestrictUpdatingCreatorMonetizationSettings(mergeGuildAvatar.id);
+  let obj = computeGuildRoleSubscriptionSettingsVisibility;
+  obj = { guild: closure_2, isOwner: closure_2.ownerId === id, canManageGuildRoleSubscriptions: computeGuildRoleSubscriptionSettingsVisibility.canManageGuildRoleSubscriptions(closure_2), isUserInCreatorMonetizationEligibleCountry: null, shouldRestrictUpdatingRoleSubscriptionSettings: null };
+  const obj3 = computeGuildRoleSubscriptionSettingsVisibility;
+  obj[3] = set.isUserInCreatorMonetizationEligibleCountry();
+  const obj4 = set;
+  obj[4] = isRestrictedFromShowingGuildPurchaseEntryPoints.shouldRestrictUpdatingCreatorMonetizationSettings(closure_2.id);
   return obj.canSeeGuildRoleSubscriptionSettings(obj);
 };

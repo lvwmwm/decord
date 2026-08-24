@@ -1,53 +1,54 @@
-// Module ID: 15928
-// Function ID: 15929
-// Dependencies: [19, 17, 21, 4661, 712, 1297, 11399, 4734, 1236, 4745, 2]
+// Module ID: 16025
+// Function ID: 16026
+// Dependencies: [19, 17, 21, 4668, 712, 1297, 11450, 4739, 1236, 4750, 2]
 
-// Module 15928
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 16025
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import registerAssetDefault from "registerAsset" /* 11450 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { container: { flex: 1, justifyContent: "center", alignItems: "center" }, iconWrapper: null, title: null, subtext: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("Themes").radii.round, padding: 12 };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: ThemesDefault.radii.round, padding: 12 };
 obj[1] = obj;
 obj[2] = { textAlign: "center", marginTop: 16, marginHorizontal: 16 };
 obj[3] = { textAlign: "center", marginTop: 4, marginHorizontal: 16, marginBottom: 16 };
 let closure_6 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo((onCreateThreadPress) => {
+const memoResult = importAllResult.memo((onCreateThreadPress) => {
   onCreateThreadPress = onCreateThreadPress.onCreateThreadPress;
   const tmp = callback2();
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.iconWrapper, children: null };
-  obj = { source: null, size: null };
-  obj[0] = importDefault(11399);
-  obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
-  obj[1] = callback(require(1297) /* Button */.Icon, obj);
+  obj = { source: registerAssetDefault, size: Button.Icon.Sizes.MEDIUM };
+  obj[1] = callback(Button.Icon, obj);
   const items = [callback(View, obj), , , ];
-  const obj1 = { style: tmp.title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj1[5] = intl.string(require(1236) /* getSystemLocale */.t.HgTQ8p);
-  items[1] = callback(require(4734) /* Text */.Text, obj1);
+  obj1 = { style: tmp.title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl = getSystemLocale.intl;
+  obj1[5] = intl.string(getSystemLocale.t.HgTQ8p);
+  items[1] = callback(Text.Text, obj1);
   const obj2 = { style: tmp.subtext, maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj2[4] = intl2.string(require(1236) /* getSystemLocale */.t.jmq9GC);
-  items[2] = callback(require(4734) /* Text */.Text, obj2);
+  const intl2 = getSystemLocale.intl;
+  obj2[4] = intl2.string(getSystemLocale.t.jmq9GC);
+  items[2] = callback(Text.Text, obj2);
   let tmp4Result = null != onCreateThreadPress;
   if (tmp4Result) {
     const obj3 = { onPress: null, text: null };
     obj3[0] = onCreateThreadPress;
     const intl3 = tmp5(1236).intl;
     obj3[1] = intl3.string(tmp5(1236).t.rBIGBL);
-    tmp4Result = callback(tmp5(4745).Button, obj3);
+    tmp4Result = callback(tmp5(4750).Button, obj3);
   }
   items[3] = tmp4Result;
   obj[1] = items;
   return closure_5(View, obj);
 });
-const result = require("jsxProd").fileFinishedImporting("modules/threads/native/components/redesign/ThreadListEmpty.tsx");
+const result = require("set").fileFinishedImporting("modules/threads/native/components/redesign/ThreadListEmpty.tsx");
 
 export default memoResult;

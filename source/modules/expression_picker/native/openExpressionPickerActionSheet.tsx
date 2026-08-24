@@ -1,14 +1,18 @@
-// Module ID: 10185
-// Function ID: 10186
+// Module ID: 10224
+// Function ID: 10225
 // Name: EXPRESSION_PICKER_ACTION_SHEET_KEY
-// Dependencies: [4342, 10186, 2007, 2]
+// Dependencies: [4346, 10225, 2008, 2]
 // Exports: openExpressionPickerActionSheet
 
-// Module 10185 (EXPRESSION_PICKER_ACTION_SHEET_KEY)
+// Module 10224 (EXPRESSION_PICKER_ACTION_SHEET_KEY)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+
 const ExpressionPickerActionSheet = "ExpressionPickerActionSheet";
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/expression_picker/native/openExpressionPickerActionSheet.tsx");
+const result = set.fileFinishedImporting("modules/expression_picker/native/openExpressionPickerActionSheet.tsx");
 
 export const EXPRESSION_PICKER_ACTION_SHEET_KEY = "ExpressionPickerActionSheet";
 export const openExpressionPickerActionSheet = function openExpressionPickerActionSheet(arg0) {
-  importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(10186, dependencyMap.paths), ExpressionPickerActionSheet, arg0);
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(10225, dependencyMap.paths), ExpressionPickerActionSheet, arg0);
 };

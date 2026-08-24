@@ -1,17 +1,17 @@
-// Module ID: 12780
-// Function ID: 12781
+// Module ID: 12835
+// Function ID: 12836
 // Name: updateParty
-// Dependencies: [1218, 4030, 7250, 676, 12, 589, 709, 2]
+// Dependencies: [1218, 4033, 7288, 676, 12, 589, 709, 2]
 
-// Module 12780 (updateParty)
-import fetchFingerprint from "fetchFingerprint";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import filterPlayingActivities from "filterPlayingActivities";
-import ME from "ME";
-import { Store } from "initialize";
+// Module 12835 (updateParty)
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "markAllUserIdListsStale" /* 4033 */;
+import closure_4 from "filterPlayingActivities" /* 7288 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
 function updateParty(closure_6, id, activities, status) {
   const found = activities.find((party) => {
     let BooleanResult = null != party.party;
@@ -54,7 +54,7 @@ function updateParty(closure_6, id, activities, status) {
                 map.delete(tmp9);
               }
             }
-            obj3 = importDefault(12);
+            obj3 = applyDefault;
           }
         }
       }
@@ -65,8 +65,8 @@ function updateParty(closure_6, id, activities, status) {
         tmp19 = obj;
       }
       tmp19[closure_6] = id;
-      if (!markAllUserIdListsStale.isBlocked(id)) {
-        if (!markAllUserIdListsStale.isIgnored(id)) {
+      if (!closure_3.isBlocked(id)) {
+        if (!closure_3.isIgnored(id)) {
           value = map.get(id);
           if (value == null) {
             const _Set = Set;
@@ -81,7 +81,7 @@ function updateParty(closure_6, id, activities, status) {
   }
   let flag3 = null != tmp8;
   if (flag3) {
-    let obj1 = dependencyMap[id];
+    obj1 = dependencyMap[id];
     if (obj1 == null) {
       obj1 = {};
     }
@@ -101,7 +101,7 @@ function updateParty(closure_6, id, activities, status) {
           flag3 = true;
         }
       }
-      obj9 = importDefault(12);
+      obj9 = applyDefault;
     }
   }
   return flag3;
@@ -125,7 +125,7 @@ function handleLocalPresenceUpdate() {
 }
 function handleRelationshipAddOrUpdate(relationship) {
   relationship = relationship.relationship;
-  if (!markAllUserIdListsStale.isBlocked(relationship.id)) {
+  if (!closure_3.isBlocked(relationship.id)) {
     if (!obj.isIgnored(relationship.id)) {
       return false;
     }
@@ -133,7 +133,7 @@ function handleRelationshipAddOrUpdate(relationship) {
   if (null == dependencyMap[relationship.id]) {
     return false;
   } else {
-    const values = importDefault(12).values(tmp);
+    const values = applyDefault.values(tmp);
     for (const item10025 of values) {
       let tmp7 = map;
       let value = map.get(item10025);
@@ -145,18 +145,19 @@ function handleRelationshipAddOrUpdate(relationship) {
       continue;
     }
   }
-  obj = markAllUserIdListsStale;
+  obj = closure_3;
 }
 ({ StatusTypes: c5, ME: closure_6 } = ME);
 let closure_7 = {};
 let map = new Map();
+const Store = initializeDefault.Store;
 class GamePartyStore extends Store {
 }
 const prototype = GamePartyStore.prototype;
 prototype["initialize"] = function initialize() {
-  const items = [filterPlayingActivities];
+  const items = [closure_4];
   this.syncWith(items, handleLocalPresenceUpdate);
-  this.waitFor(fetchFingerprint, markAllUserIdListsStale, filterPlayingActivities);
+  this.waitFor(closure_2, closure_3, closure_4);
 };
 prototype["getParty"] = function getParty(id) {
   let value = null;
@@ -175,13 +176,8 @@ prototype["getParties"] = function getParties() {
   return map;
 };
 GamePartyStore.displayName = "GamePartyStore";
-const gamePartyStore = new GamePartyStore(require("dispatcher"), {
+const gamePartyStore = new GamePartyStore(dispatcherDefault, {
   CONNECTION_OPEN_SUPPLEMENTAL: function handleConnectionOpenSupplemental(arg0) {
-    let activities;
-    let guilds;
-    let presences;
-    let status;
-    let user;
     ({ guilds, presences } = arg0);
     let flag = false;
     const iter = presences[Symbol.iterator]();
@@ -215,7 +211,7 @@ const gamePartyStore = new GamePartyStore(require("dispatcher"), {
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(parties) {
     parties = parties.parties;
-    const map = new Map();
+    map = new Map();
     const obj = {};
     const merged = Object.assign(parties.userParties);
     const keys = Object.keys(parties);
@@ -223,8 +219,6 @@ const gamePartyStore = new GamePartyStore(require("dispatcher"), {
   },
   GUILD_CREATE: handleGuildCreate,
   PRESENCES_REPLACE: function handlePresenceReplace(arg0) {
-    let activities;
-    let user;
     let flag = false;
     const iter = arg0.presences[Symbol.iterator]();
     while (iter !== undefined) {
@@ -247,9 +241,6 @@ const gamePartyStore = new GamePartyStore(require("dispatcher"), {
   PRESENCE_UPDATES: function handlePresenceUpdates(updates) {
     updates = updates.updates;
     const mapped = updates.map((user) => {
-      let activities;
-      let guildId;
-      let status;
       ({ guildId, status, activities } = user);
       if (guildId == null) {
         guildId = closure_6;
@@ -262,14 +253,14 @@ const gamePartyStore = new GamePartyStore(require("dispatcher"), {
     members = members.members;
     const mapped = members.map((presence) => presence.presence);
     const guildId = members.guildId;
-    let c1 = false;
+    c1 = false;
     const item = mapped.forEach((user) => {
       let tmp = null != user;
       if (tmp) {
-        tmp = outer1_9(closure_0, user.user.id, user.activities, user.status);
+        tmp = closure_1_9(closure_0, user.user.id, user.activities, user.status);
       }
       if (tmp) {
-        let c1 = true;
+        c1 = true;
       }
     });
     return c1;
@@ -279,15 +270,15 @@ const gamePartyStore = new GamePartyStore(require("dispatcher"), {
     let tmp2 = null != addedMembers;
     if (tmp2) {
       const mapped = addedMembers.map((presence) => presence.presence);
-      const importDefault = tmp;
-      let c1 = false;
+      importDefault = tmp;
+      c1 = false;
       const item = mapped.forEach((user) => {
         let tmp = null != user;
         if (tmp) {
-          tmp = outer1_9(closure_0, user.user.id, user.activities, user.status);
+          tmp = closure_1_9(closure_0, user.user.id, user.activities, user.status);
         }
         if (tmp) {
-          let c1 = true;
+          c1 = true;
         }
       });
       tmp2 = c1;
@@ -301,7 +292,7 @@ const gamePartyStore = new GamePartyStore(require("dispatcher"), {
     if (null == dependencyMap[relationship.id]) {
       return false;
     } else {
-      const values = importDefault(12).values(tmp);
+      const values = applyDefault.values(tmp);
       for (const item10017 of values) {
         let tmp7 = map;
         let value = map.get(item10017);
@@ -315,6 +306,6 @@ const gamePartyStore = new GamePartyStore(require("dispatcher"), {
     }
   }
 });
-let result = require("filterPlayingActivities").fileFinishedImporting("stores/GamePartyStore.tsx");
+let result = require("set").fileFinishedImporting("stores/GamePartyStore.tsx");
 
 export default gamePartyStore;

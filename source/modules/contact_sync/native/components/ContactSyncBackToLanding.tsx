@@ -1,17 +1,19 @@
-// Module ID: 11875
-// Function ID: 11876
+// Module ID: 11924
+// Function ID: 11925
 // Name: ContactSyncBackToLanding
-// Dependencies: [1500, 6314, 11849, 2]
+// Dependencies: [1500, 6345, 11898, 2]
 // Exports: default
 
-// Module 11875 (ContactSyncBackToLanding)
-let result = require("handleNameInputScreenOrSuggestions").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncBackToLanding.tsx");
+// Module 11924 (ContactSyncBackToLanding)
+import set from "set" /* 2 */;
+
+let result = set.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncBackToLanding.tsx");
 
 export default function ContactSyncBackToLanding(arg0) {
   const _require = arg0;
-  const dependencyMap = _require(1500).useNavigation();
+  dependencyMap = _require(1500).useNavigation();
   const obj = _require(1500);
-  return _require(6314).getHeaderBackButton(() => {
+  return _require(6345).getHeaderBackButton(() => {
     if (null != lib.navigateToLandingPage) {
       const result = lib.navigateToLandingPage();
     } else {

@@ -1,11 +1,13 @@
-// Module ID: 5063
-// Function ID: 5064
+// Module ID: 5068
+// Function ID: 5069
 // Name: result
 // Dependencies: [687, 2]
 // Exports: isSessionExpired, timestampOrZero
 
-// Module 5063 (result)
-const result = 30 * require("set").Millis.MINUTE;
+// Module 5068 (result)
+import setDefault from "set" /* 687 */;
+
+const result = 30 * setDefault.Millis.MINUTE;
 let c0 = result;
 const result1 = require("set").fileFinishedImporting("modules/analytics_sessions/SessionUtils.tsx");
 

@@ -1,29 +1,23 @@
-// Module ID: 13480
-// Function ID: 13481
+// Module ID: 13538
+// Function ID: 13539
 // Name: AccessibilityFocusView
-// Dependencies: [19, 17, 21, 500, 13481, 2]
+// Dependencies: [19, 21, 13539, 2]
 // Exports: default
 
-// Module 13480 (AccessibilityFocusView)
-import "noop";
-import { jsx } from "jsxProd";
-import set from "set";
-import set from "jsxProd";
+// Module 13538 (AccessibilityFocusView)
+import noopAll from "noop" /* 19 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 13539 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-if (set.isAndroid()) {
-  let importDefaultResult = require("__INTERNAL_VIEW_CONFIG");
-} else {
-  importDefaultResult = require("get ActivityIndicator").requireNativeComponent("AccessibilityFocusView");
-}
-const result = set.fileFinishedImporting("design/void/AccessibilityFocusView/native/AccessibilityFocusView.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("design/void/AccessibilityFocusView/native/AccessibilityFocusView.tsx");
 
 export default function AccessibilityFocusView(arg0) {
-  let onAccessibilityBlur;
-  let onAccessibilityFocus;
   ({ onAccessibilityFocus, onAccessibilityBlur } = arg0);
+  const merged = Object.assign(arg0, Object.create(null));
   const obj = {};
-  const merged = Object.assign(Object.assign(arg0, Object.create(null)));
+  const merged1 = Object.assign(merged);
   obj.onAccessibilityFocus = onAccessibilityFocus;
   obj.onAccessibilityBlur = onAccessibilityBlur;
-  return <closure_1 />;
+  return jsx(__INTERNAL_VIEW_CONFIGDefault, {});
 };

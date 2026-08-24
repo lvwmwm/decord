@@ -4,14 +4,17 @@
 // Dependencies: [109, 41, 42, 93, 95, 98, 19, 21, 292, 114, 112, 50]
 
 // Module 291 (_isNativeReflectConstruct)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
-import importAllResult from "noop";
-import { cloneElement } from "noop";
-import { jsx } from "jsxProd";
+import processColorDefault from "processColor" /* 50 */;
+import _inheritsDefault from "_inherits" /* 98 */;
+import isActiveSignalDefault from "isActiveSignal" /* 292 */;
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import closure_5 from "_classCallCheck" /* 41 */;
+import closure_6 from "_possibleConstructorReturn" /* 93 */;
+import closure_7 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import importAllResult from "noop" /* 19 */;
+import { cloneElement } from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const TouchableNativeFeedback = arg1;
 function _isNativeReflectConstruct() {
@@ -25,25 +28,24 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
 let closure_3 = ["onBlur", "onFocus"];
-const metroImportAll = importAllResult;
 class TouchableNativeFeedback {
   constructor() {
     self = this;
     items = [...arguments];
-    tmp = _isNativeReflectConstruct(this, TouchableNativeFeedback);
+    tmp = closure_5(this, TouchableNativeFeedback);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(TouchableNativeFeedback);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_7;
+    obj = closure_7(TouchableNativeFeedback);
+    tmp3 = closure_6;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -60,7 +62,7 @@ class TouchableNativeFeedback {
     return tmp3Result;
   }
 }
-require("_inherits")(TouchableNativeFeedback, importAllResult.Component);
+_inheritsDefault(TouchableNativeFeedback, importAllResult.Component);
 let items = [
   {
     key: "_createPressabilityConfig",
@@ -125,8 +127,6 @@ let items = [
   {
     key: "_dispatchHotspotUpdate",
     value: function _dispatchHotspotUpdate(nativeEvent) {
-      let locationX;
-      let locationY;
       ({ locationX, locationY } = nativeEvent.nativeEvent);
       const result = TouchableNativeFeedback(114).findHostInstance_DEPRECATED(this);
       if (null == result) {
@@ -147,8 +147,6 @@ let items = [
   {
     key: "render",
     value: function render() {
-      let onBlur;
-      let onFocus;
       const self = this;
       const Children = importAllResult.Children;
       const onlyResult = Children.only(this.props.children);
@@ -266,7 +264,7 @@ let items = [
         accessibilityLabel = self.props.accessibilityLabel;
       }
       const items1 = [onlyResult, ];
-      const obj1 = {};
+      obj1 = {};
       const merged1 = Object.assign(callback(eventHandlers, closure_3));
       if (undefined === self.props.background) {
         let background = TouchableNativeFeedback.SelectableBackground();
@@ -356,7 +354,7 @@ const importDefaultResultResult = importDefaultResult(TouchableNativeFeedback, i
 const unpackModuleId = importDefaultResultResult;
 importDefaultResultResult.SelectableBackground = (rippleRadius) => ({ type: "ThemeAttrAndroid", attribute: "selectableItemBackground", rippleRadius });
 importDefaultResultResult.SelectableBackgroundBorderless = (rippleRadius) => ({ type: "ThemeAttrAndroid", attribute: "selectableItemBackgroundBorderless", rippleRadius });
-importDefaultResultResult.Ripple = (arg0, borderless, rippleRadius) => ({ type: "RippleAndroid", color: importDefault(50)(arg0), borderless, rippleRadius });
+importDefaultResultResult.Ripple = (arg0, borderless, rippleRadius) => ({ type: "RippleAndroid", color: processColorDefault(arg0), borderless, rippleRadius });
 importDefaultResultResult.canUseNativeForeground = () => true;
 function getBackgroundProp(arg0, arg1) {
 

@@ -1,27 +1,30 @@
-// Module ID: 12736
-// Function ID: 12737
+// Module ID: 12791
+// Function ID: 12792
 // Name: getAttachmentUploadAbortAlertContent
-// Dependencies: [676, 1236, 4830, 2]
+// Dependencies: [676, 1236, 4835, 2]
 // Exports: getAttachmentUploadAbortAlertContent
 
-// Module 12736 (getAttachmentUploadAbortAlertContent)
-import { AbortCodes } from "ME";
+// Module 12791 (getAttachmentUploadAbortAlertContent)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
 
-const result = require("items").fileFinishedImporting("modules/media_uploads/getAttachmentUploadAbortAlert.tsx");
+const AbortCodes = ME.AbortCodes;
+const result = set.fileFinishedImporting("modules/media_uploads/getAttachmentUploadAbortAlert.tsx");
 
 export const getAttachmentUploadAbortAlertContent = function getAttachmentUploadAbortAlertContent(code) {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  const stringResult = intl.string(require(1236) /* getSystemLocale */.t.B3vFdU);
+  const intl = getSystemLocale.intl;
+  const stringResult = intl.string(getSystemLocale.t.B3vFdU);
   if (AbortCodes.TOTAL_ATTACHMENT_SIZE_TOO_LARGE === code) {
     let obj = { title: null, body: null };
     obj[0] = stringResult;
     const intl4 = tmp(1236).intl;
     obj = { maxSizeMb: null };
-    obj[0] = tmp(4830).MAX_TOTAL_ATTACHMENT_SIZE_MB;
+    obj[0] = tmp(4835).MAX_TOTAL_ATTACHMENT_SIZE_MB;
     obj[1] = intl4.formatToPlainString(tmp(1236).t.DYFPg2, obj);
     return obj;
   } else if (tmp4.CLOUD_UPLOAD_NOT_FOUND === code) {
-    const obj1 = { title: null, body: null };
+    obj1 = { title: null, body: null };
     obj1[0] = stringResult;
     const intl3 = tmp(1236).intl;
     obj1[1] = intl3.string(tmp(1236).t.bQldfH);

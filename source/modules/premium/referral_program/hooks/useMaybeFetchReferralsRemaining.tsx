@@ -1,34 +1,32 @@
-// Module ID: 8275
-// Function ID: 8276
+// Module ID: 8315
+// Function ID: 8316
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1922, 7423, 1924, 589, 8276, 8277, 5356, 1945, 2]
+// Dependencies: [19, 1922, 7461, 1924, 589, 8316, 8317, 5361, 1945, 2]
 // Exports: useMaybeFetchReferralsRemaining
 
-// Module 8275 (useMaybeFetchReferralsRemaining)
-import noop from "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import emitChanges from "emitChanges";
-import GuildFeatures from "GuildFeatures";
+// Module 8315 (useMaybeFetchReferralsRemaining)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "emitChanges" /* 7461 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
-let closure_6;
-let error;
 const require = arg1;
 ({ PremiumTypes: closure_6, FractionalPremiumStates: error } = GuildFeatures);
-let result = require("emitChanges").fileFinishedImporting("modules/premium/referral_program/hooks/useMaybeFetchReferralsRemaining.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/referral_program/hooks/useMaybeFetchReferralsRemaining.tsx");
 
 export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRemaining(flag) {
   if (flag === undefined) {
     flag = false;
   }
   let fetched;
-  const items = [mergeGuildAvatar];
+  const items = [closure_4];
   const stateFromStores = flag(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = flag(589);
   let tmp = flag;
-  const hasDiscountApplied = flag(8276).useHasDiscountApplied();
-  const obj2 = flag(8276);
-  const hasActiveTrial = flag(8277).useHasActiveTrial();
-  const tmp6 = fetched(5356)();
+  const hasDiscountApplied = flag(8316).useHasDiscountApplied();
+  const obj2 = flag(8316);
+  const hasActiveTrial = flag(8317).useHasActiveTrial();
+  const tmp6 = fetched(5361)();
   let verified;
   if (stateFromStores != null) {
     verified = stateFromStores.verified;
@@ -57,7 +55,7 @@ export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRe
       tmp = !flag;
     }
     if (tmp) {
-      const result = outer1_5.checkAndFetchReferralsRemaining();
+      const result = closure_1_5.checkAndFetchReferralsRemaining();
     }
   }, items1);
 };

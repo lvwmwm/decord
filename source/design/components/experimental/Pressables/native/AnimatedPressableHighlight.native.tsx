@@ -1,24 +1,24 @@
-// Module ID: 6294
-// Function ID: 6295
+// Module ID: 6325
+// Function ID: 6326
 // Name: AnimatedPressableHighlight
-// Dependencies: [19, 17, 21, 4115, 5433, 6295, 4097, 712, 500, 2]
+// Dependencies: [19, 17, 21, 4119, 5438, 6326, 4100, 712, 500, 2]
 
-// Module 6294 (AnimatedPressableHighlight)
-import noop from "noop";
-import { Pressable } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import set from "set";
-import importDefaultResult from "module_4115";
-import set from "jsxProd";
+// Module 6325 (AnimatedPressableHighlight)
+import SPRING_CONFIG from "SPRING_CONFIG" /* 6326 */;
+import closure_3 from "noop" /* 19 */;
+import { Pressable } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import set from "set" /* 500 */;
+import importDefaultResult from "module_4119" /* 4119 */;
 
-const require = arg1;
-let closure_6 = require("module_4115").createAnimatedComponent(require("PressableBase").PressableHighlight);
+require = arg1;
+let closure_6 = importDefaultResult.createAnimatedComponent(require("PressableBase").PressableHighlight);
 const result = set.fileFinishedImporting("design/components/experimental/Pressables/native/AnimatedPressableHighlight.native.tsx");
 
 export const AnimatedPressableHighlight = set.isAndroid() ? (function AnimatedPressableHighlightAndroid(children) {
   const merged = Object.assign(children, Object.create(null));
   let token;
-  let obj = merged(4097);
+  let obj = merged(4100);
   token = obj.useToken(token(712).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
   const items = [token, ];
   let androidRippleConfig = merged.androidRippleConfig;
@@ -59,7 +59,7 @@ export const AnimatedPressableHighlight = set.isAndroid() ? (function AnimatedPr
   }, items)} />;
 }) : (function AnimatedPressableHighlightiOS(children) {
   const merged = Object.assign(children, Object.create(null));
-  let obj = require(6295) /* SPRING_CONFIG */;
+  let obj = SPRING_CONFIG;
   const iOSPressEffects = obj.useIOSPressEffects(4);
   obj = { accessibilityRole: "button", onPressIn: iOSPressEffects.onPressIn, onPressOut: iOSPressEffects.onPressOut };
   const merged1 = Object.assign(merged);

@@ -1,26 +1,28 @@
-// Module ID: 13991
-// Function ID: 13992
-// Dependencies: [19, 10670, 21, 13992, 15068, 2]
+// Module ID: 14059
+// Function ID: 14060
+// Dependencies: [19, 10709, 21, 14060, 15132, 2]
 
-// Module 13991
-import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 14059
+import SearchListSectionLabel from "SearchListSectionLabel" /* 14060 */;
+import SettingSegmentedControlDefault from "SettingSegmentedControl" /* 15132 */;
+import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 10709 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-const memoResult = require("noop").memo(function SettingLayout(node) {
+require = arg1;
+const memoResult = importAllResult.memo(function SettingLayout(node) {
   node = node.node;
   const type = node.type;
   if (NodeType.LIST === type) {
     let obj = { node: null };
     obj[0] = node;
-    return jsx(require(13992) /* SearchListSectionLabel */.SettingsList, { node: null });
+    return jsx(SearchListSectionLabel.SettingsList, { node: null });
   } else if (tmp.SEGMENTED_CONTROL === type) {
     obj = { node: null };
     obj[0] = node;
-    return jsx(importDefault(15068), { node: null });
+    return jsx(SettingSegmentedControlDefault, { node: null });
   }
 });
-const result = require("jsxProd").fileFinishedImporting("modules/settings/native/renderer/SettingLayout.tsx");
+const result = require("set").fileFinishedImporting("modules/settings/native/renderer/SettingLayout.tsx");
 
 export default memoResult;

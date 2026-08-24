@@ -1,33 +1,34 @@
-// Module ID: 8234
-// Function ID: 8235
+// Module ID: 8274
+// Function ID: 8275
 // Name: DATE_CONFIG
-// Dependencies: [8235, 3975, 8236, 1236, 2]
+// Dependencies: [8275, 3978, 8276, 1236, 2]
 // Exports: getDisabledInterventions, getEnabledInterventions, getIncidentAlertType, getSecurityActionDetailsString, hasDMsDisabled, hasDetectedActivity, hasDetectedDMRaid, hasDetectedRaid, hasInvitesDisabled, initialLockdownDurationHours, isUnderLockdown
 
-// Module 8234 (DATE_CONFIG)
-import GUILD_REPORT_RAID_MOBILE_KEY from "GUILD_REPORT_RAID_MOBILE_KEY";
+// Module 8274 (DATE_CONFIG)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import tDefault from "t" /* 3978 */;
+import GuildIncidentActionSources from "GuildIncidentActionSources" /* 8276 */;
+import GUILD_REPORT_RAID_MOBILE_KEY from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8275 */;
 
-let c3;
-let c4;
-let c5;
 ({ NAGBAR_DISPLAY_MAX_HOURS: c3, DEFAULT_LOCKDOWN_DURATION: c4, getTimeframes: c5 } = GUILD_REPORT_RAID_MOBILE_KEY);
 let obj = { month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit" };
-const result = require("GuildIncidentActionSources").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidUtils.tsx");
+const result = set.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidUtils.tsx");
 
 export const DATE_CONFIG = obj;
 export const hasDetectedActivity = function hasDetectedActivity(incidentsData) {
   let tmp = null != incidentsData.dmSpamDetectedAt;
   if (tmp) {
-    const obj = importDefault(3975)(incidentsData.dmSpamDetectedAt);
-    tmp = importDefault(3975)(incidentsData.dmSpamDetectedAt).add(closure_3, "hours") > importDefault(3975)();
-    const addResult = importDefault(3975)(incidentsData.dmSpamDetectedAt).add(closure_3, "hours");
+    obj = tDefault(incidentsData.dmSpamDetectedAt);
+    tmp = tDefault(incidentsData.dmSpamDetectedAt).add(closure_3, "hours") > tDefault();
+    const addResult = tDefault(incidentsData.dmSpamDetectedAt).add(closure_3, "hours");
   }
   if (!tmp) {
     let tmp6 = null != incidentsData.raidDetectedAt;
     if (tmp6) {
-      const obj2 = importDefault(3975)(incidentsData.raidDetectedAt);
-      tmp6 = importDefault(3975)(incidentsData.raidDetectedAt).add(closure_3, "hours") > importDefault(3975)();
-      const addResult1 = importDefault(3975)(incidentsData.raidDetectedAt).add(closure_3, "hours");
+      const obj2 = tDefault(incidentsData.raidDetectedAt);
+      tmp6 = tDefault(incidentsData.raidDetectedAt).add(closure_3, "hours") > tDefault();
+      const addResult1 = tDefault(incidentsData.raidDetectedAt).add(closure_3, "hours");
     }
     tmp = tmp6;
   }
@@ -36,18 +37,18 @@ export const hasDetectedActivity = function hasDetectedActivity(incidentsData) {
 export const hasDetectedRaid = function hasDetectedRaid(raidDetectedAt) {
   let tmp = null != raidDetectedAt.raidDetectedAt;
   if (tmp) {
-    const obj = importDefault(3975)(raidDetectedAt.raidDetectedAt);
-    tmp = importDefault(3975)(raidDetectedAt.raidDetectedAt).add(closure_3, "hours") > importDefault(3975)();
-    const addResult = importDefault(3975)(raidDetectedAt.raidDetectedAt).add(closure_3, "hours");
+    obj = tDefault(raidDetectedAt.raidDetectedAt);
+    tmp = tDefault(raidDetectedAt.raidDetectedAt).add(closure_3, "hours") > tDefault();
+    const addResult = tDefault(raidDetectedAt.raidDetectedAt).add(closure_3, "hours");
   }
   return tmp;
 };
 export const hasDetectedDMRaid = function hasDetectedDMRaid(dmSpamDetectedAt) {
   let tmp = null != dmSpamDetectedAt.dmSpamDetectedAt;
   if (tmp) {
-    const obj = importDefault(3975)(dmSpamDetectedAt.dmSpamDetectedAt);
-    tmp = importDefault(3975)(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours") > importDefault(3975)();
-    const addResult = importDefault(3975)(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours");
+    obj = tDefault(dmSpamDetectedAt.dmSpamDetectedAt);
+    tmp = tDefault(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours") > tDefault();
+    const addResult = tDefault(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours");
   }
   return tmp;
 };
@@ -55,30 +56,30 @@ export const getIncidentAlertType = function getIncidentAlertType(guildIncident)
   if (null != guildIncident) {
     let tmp = null != guildIncident.raidDetectedAt;
     if (tmp) {
-      const obj = importDefault(3975)(guildIncident.raidDetectedAt);
-      tmp = importDefault(3975)(guildIncident.raidDetectedAt).add(closure_3, "hours") > importDefault(3975)();
-      const addResult = importDefault(3975)(guildIncident.raidDetectedAt).add(closure_3, "hours");
+      obj = tDefault(guildIncident.raidDetectedAt);
+      tmp = tDefault(guildIncident.raidDetectedAt).add(closure_3, "hours") > tDefault();
+      const addResult = tDefault(guildIncident.raidDetectedAt).add(closure_3, "hours");
     }
-    const GuildIncidentAlertTypes = require(8236) /* GuildIncidentActionSources */.GuildIncidentAlertTypes;
+    const GuildIncidentAlertTypes = GuildIncidentActionSources.GuildIncidentAlertTypes;
   }
 };
 export const getEnabledInterventions = function getEnabledInterventions(pauseInvites, pauseDms) {
   const items = [];
   if (pauseInvites) {
-    items.push(require(8236) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
+    items.push(GuildIncidentActionSources.GuildIncidentActionTypes.INVITES_DISABLED);
   }
   if (pauseDms) {
-    items.push(require(8236) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
+    items.push(GuildIncidentActionSources.GuildIncidentActionTypes.DMS_DISABLED);
   }
   return items;
 };
 export const getDisabledInterventions = function getDisabledInterventions(pauseInvites, pauseDms) {
   const items = [];
   if (!pauseInvites) {
-    items.push(require(8236) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
+    items.push(GuildIncidentActionSources.GuildIncidentActionTypes.INVITES_DISABLED);
   }
   if (!pauseDms) {
-    items.push(require(8236) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
+    items.push(GuildIncidentActionSources.GuildIncidentActionTypes.DMS_DISABLED);
   }
   return items;
 };
@@ -142,7 +143,7 @@ export const initialLockdownDurationHours = function initialLockdownDurationHour
   if (null == prop) {
     prop = closure_4;
   } else {
-    const obj = callback();
+    obj = callback();
   }
   return prop;
 };
@@ -159,29 +160,29 @@ export const getSecurityActionDetailsString = function getSecurityActionDetailsS
       tmp = tmp28;
     }
     if (tmp === true) {
-      const intl3 = require(1236) /* getSystemLocale */.intl;
-      let obj = { guildName: null, time: null };
+      const intl3 = getSystemLocale.intl;
+      obj = { guildName: null, time: null };
       obj[0] = arg1;
       const _Date3 = Date;
       const date = new Date(invitesDisabledUntil);
-      obj[1] = date.toLocaleString(require(1236) /* getSystemLocale */.intl.currentLocale, obj);
-      return intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.hCZitf, obj);
+      obj[1] = date.toLocaleString(getSystemLocale.intl.currentLocale, obj);
+      return intl3.formatToPlainString(getSystemLocale.t.hCZitf, obj);
     } else if (tmp27 === true) {
-      const intl2 = require(1236) /* getSystemLocale */.intl;
+      const intl2 = getSystemLocale.intl;
       obj = { guildName: null, time: null };
       obj[0] = arg1;
       const _Date2 = Date;
       const date1 = new Date(invitesDisabledUntil);
-      obj[1] = date1.toLocaleString(require(1236) /* getSystemLocale */.intl.currentLocale, obj);
-      return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["HNKxf+"], obj);
+      obj[1] = date1.toLocaleString(getSystemLocale.intl.currentLocale, obj);
+      return intl2.formatToPlainString(getSystemLocale.t["HNKxf+"], obj);
     } else if (tmp28 === true) {
-      const intl = require(1236) /* getSystemLocale */.intl;
+      const intl = getSystemLocale.intl;
       obj = { guildName: null, time: null };
       obj[0] = arg1;
       const _Date = Date;
       const date2 = new Date(invitesDisabledUntil);
-      obj[1] = date2.toLocaleString(require(1236) /* getSystemLocale */.intl.currentLocale, obj);
-      return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.M3iSyL, obj);
+      obj[1] = date2.toLocaleString(getSystemLocale.intl.currentLocale, obj);
+      return intl.formatToPlainString(getSystemLocale.t.M3iSyL, obj);
     } else {
       return "";
     }

@@ -1,27 +1,32 @@
-// Module ID: 9807
-// Function ID: 9808
+// Module ID: 9846
+// Function ID: 9847
 // Name: CrunchyrollLinkDiscordError
-// Dependencies: [19, 9799, 21, 1500, 9793, 9794, 1236, 2]
+// Dependencies: [19, 9838, 21, 1500, 9832, 9833, 1236, 2]
 // Exports: default
 
-// Module 9807 (CrunchyrollLinkDiscordError)
-import "noop";
-import { CrunchyrollLinkModalScenes as closure_2 } from "CrunchyrollLinkModalScenes";
-import { jsx } from "jsxProd";
+// Module 9846 (CrunchyrollLinkDiscordError)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useNavigation from "useNavigation" /* 1500 */;
+import useConnectRetry from "useConnectRetry" /* 9832 */;
+import TwoWayLinkError from "TwoWayLinkError" /* 9833 */;
+import { CrunchyrollLinkModalScenes as closure_2 } from "CrunchyrollLinkModalScenes" /* 9838 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkError.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkError.tsx");
 
 export default function CrunchyrollLinkDiscordError(onClose) {
-  let obj = require(1500) /* useNavigation */;
+  let obj = useNavigation;
   const navigation = obj.useNavigation();
-  const connectRetry = require(9793) /* useConnectRetry */.useConnectRetry(navigation, constants.PRE_CONNECT);
+  const connectRetry = useConnectRetry.useConnectRetry(navigation, constants.PRE_CONNECT);
   obj = { title: null, body: null, onClose: null, onRetry: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["8YK70c"]);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.moyYLf);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["8YK70c"]);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t.moyYLf);
   obj[2] = onClose.onClose;
   obj[3] = connectRetry;
-  return jsx(require(9794) /* TwoWayLinkError */.TwoWayLinkError, { title: null, body: null, onClose: null, onRetry: null });
+  return jsx(TwoWayLinkError.TwoWayLinkError, { title: null, body: null, onClose: null, onRetry: null });
 };

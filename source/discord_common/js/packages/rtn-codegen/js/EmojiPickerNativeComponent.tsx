@@ -1,11 +1,13 @@
-// Module ID: 9390
-// Function ID: 9391
+// Module ID: 9427
+// Function ID: 9428
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [106, 65, 114, 2]
 
-// Module 9390 (__INTERNAL_VIEW_CONFIG)
-import weakSet from "weakSet";
-import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+// Module 9427 (__INTERNAL_VIEW_CONFIG)
+import set from "set" /* 2 */;
+import renderElement from "renderElement" /* 114 */;
+import weakSet from "weakSet" /* 106 */;
+import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
 let obj = { uiViewClassName: "EmojiPickerView", directEventTypes: { topStickyHeaderRender: { registrationName: "onStickyHeaderRender" }, topPressEmoji: { registrationName: "onPressEmoji" }, topLongPressEmoji: { registrationName: "onLongPressEmoji" }, topScroll: { registrationName: "onScroll" }, topScrollBeginDrag: { registrationName: "onScrollBeginDrag" }, topScrollEndDrag: { registrationName: "onScrollEndDrag" }, topShowNitroUpsell: { registrationName: "onShowNitroUpsell" } }, validAttributes: null };
 obj = { config: true, paddingTop: true, paddingBottom: true, useTier0UpsellContent: true, emojiData: true, emojiMargin: true, emojiSize: true };
@@ -13,19 +15,19 @@ const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onStick
 obj[2] = obj;
 obj = {
   refreshEmojis(current) {
-    require(114) /* renderElement */.dispatchCommand(current, "refreshEmojis", []);
+    renderElement.dispatchCommand(current, "refreshEmojis", []);
   },
   scrollingEnabled(current, arg1) {
     const items = [arg1];
-    require(114) /* renderElement */.dispatchCommand(current, "scrollingEnabled", items);
+    renderElement.dispatchCommand(current, "scrollingEnabled", items);
   },
   scrollToHeaderIndex(arg0, arg1, arg2) {
     const items = [arg1, arg2];
-    require(114) /* renderElement */.dispatchCommand(arg0, "scrollToHeaderIndex", items);
+    renderElement.dispatchCommand(arg0, "scrollToHeaderIndex", items);
   }
 };
 const value = setRuntimeConfigProvider.get("EmojiPickerView", () => obj);
-const result = require("renderElement").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/EmojiPickerNativeComponent.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/EmojiPickerNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

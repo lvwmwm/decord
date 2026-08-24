@@ -1,85 +1,85 @@
-// Module ID: 13260
-// Function ID: 13261
+// Module ID: 13318
+// Function ID: 13319
 // Name: isGameCommunityAddServerEntryEnabled
-// Dependencies: [5, 5258, 676, 13261, 13259, 501, 4646, 698, 709, 2]
+// Dependencies: [5, 5263, 676, 13319, 13317, 501, 4652, 698, 709, 2]
 // Exports: detectLocalApps
 
-// Module 13260 (isGameCommunityAddServerEntryEnabled)
-import PlatformTypes from "PlatformTypes";
-import hasConsented from "hasConsented";
-import ME from "ME";
+// Module 13318 (isGameCommunityAddServerEntryEnabled)
+import DetectableAppNames from "DetectableAppNames" /* 13317 */;
+import GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT from "GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT" /* 13319 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "hasConsented" /* 5263 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function isGameCommunityAddServerEntryEnabled() {
-  const GameCommunityAddServerEntryExperiment = require(13261) /* GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT */.GameCommunityAddServerEntryExperiment;
+  const GameCommunityAddServerEntryExperiment = GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT.GameCommunityAddServerEntryExperiment;
   return GameCommunityAddServerEntryExperiment.getConfig({ location: "LocalAppDetectionUtils" }).enabled;
 }
 function getDetectableApp(arg0) {
-  if (require(13259) /* DetectableAppNames */.DetectableAppNames.ROBLOX === arg0) {
+  if (DetectableAppNames.DetectableAppNames.ROBLOX === arg0) {
     return { androidScheme: "roblox", iosScheme: "roblox" };
-  } else if (tmp(13259).DetectableAppNames.MINECRAFT === arg0) {
+  } else if (tmp(13317).DetectableAppNames.MINECRAFT === arg0) {
     let obj = { androidScheme: "minecraft", iosScheme: "minecraft", predicate: null };
     obj[2] = isGameCommunityAddServerEntryEnabled;
     return obj;
-  } else if (tmp(13259).DetectableAppNames.FORTNITE === arg0) {
+  } else if (tmp(13317).DetectableAppNames.FORTNITE === arg0) {
     obj = { androidScheme: "fortnite", iosScheme: "com.epicgames.fortnite", predicate: null };
     obj[2] = isGameCommunityAddServerEntryEnabled;
     return obj;
-  } else if (tmp(13259).DetectableAppNames.GENSHIN === arg0) {
-    const obj1 = { androidScheme: "genshin", iosScheme: "genshin", predicate: null };
+  } else if (tmp(13317).DetectableAppNames.GENSHIN === arg0) {
+    obj1 = { androidScheme: "genshin", iosScheme: "genshin", predicate: null };
     obj1[2] = isGameCommunityAddServerEntryEnabled;
     return obj1;
-  } else if (tmp(13259).DetectableAppNames.PUBG_MOBILE === arg0) {
+  } else if (tmp(13317).DetectableAppNames.PUBG_MOBILE === arg0) {
     const obj2 = { androidScheme: "pubgmobile", iosScheme: "igame1320", predicate: null };
     obj2[2] = isGameCommunityAddServerEntryEnabled;
     return obj2;
-  } else if (tmp(13259).DetectableAppNames.CALL_OF_DUTY_MOBILE === arg0) {
+  } else if (tmp(13317).DetectableAppNames.CALL_OF_DUTY_MOBILE === arg0) {
     const obj3 = { androidScheme: "codm", iosScheme: "codm", predicate: null };
     obj3[2] = isGameCommunityAddServerEntryEnabled;
     return obj3;
-  } else if (tmp(13259).DetectableAppNames.CLASH_OF_CLANS === arg0) {
+  } else if (tmp(13317).DetectableAppNames.CLASH_OF_CLANS === arg0) {
     const obj4 = { androidScheme: "clashofclans", iosScheme: "clashofclans", predicate: null };
     obj4[2] = isGameCommunityAddServerEntryEnabled;
     return obj4;
-  } else if (tmp(13259).DetectableAppNames.MOBILE_LEGENDS_BANG_BANG === arg0) {
+  } else if (tmp(13317).DetectableAppNames.MOBILE_LEGENDS_BANG_BANG === arg0) {
     const obj5 = { androidScheme: "mobilelegends", iosScheme: "mobilelegends", predicate: null };
     obj5[2] = isGameCommunityAddServerEntryEnabled;
     return obj5;
-  } else if (tmp(13259).DetectableAppNames.GARENA_FREE_FIRE === arg0) {
+  } else if (tmp(13317).DetectableAppNames.GARENA_FREE_FIRE === arg0) {
     const obj6 = { androidScheme: "garenafreefire", iosScheme: "freefire", predicate: null };
     obj6[2] = isGameCommunityAddServerEntryEnabled;
     return obj6;
-  } else if (tmp(13259).DetectableAppNames.POKEMON_GO === arg0) {
+  } else if (tmp(13317).DetectableAppNames.POKEMON_GO === arg0) {
     const obj7 = { androidScheme: "pokemongo", iosScheme: "pokemongo", predicate: null };
     obj7[2] = isGameCommunityAddServerEntryEnabled;
     return obj7;
-  } else if (tmp(13259).DetectableAppNames.POKEMON_TCG_POCKET === arg0) {
+  } else if (tmp(13317).DetectableAppNames.POKEMON_TCG_POCKET === arg0) {
     const obj8 = { androidScheme: "pokemontcgp", iosScheme: "pokemontcgp", predicate: null };
     obj8[2] = isGameCommunityAddServerEntryEnabled;
     return obj8;
-  } else if (tmp(13259).DetectableAppNames.CLASH_ROYALE === arg0) {
+  } else if (tmp(13317).DetectableAppNames.CLASH_ROYALE === arg0) {
     const obj9 = { androidScheme: "clashroyale", iosScheme: "clashroyale", predicate: null };
     obj9[2] = isGameCommunityAddServerEntryEnabled;
     return obj9;
-  } else if (tmp(13259).DetectableAppNames.AMONG_US === arg0) {
+  } else if (tmp(13317).DetectableAppNames.AMONG_US === arg0) {
     const obj10 = { androidScheme: "amongus", iosScheme: "amongus", predicate: null };
     obj10[2] = isGameCommunityAddServerEntryEnabled;
     return obj10;
-  } else if (tmp(13259).DetectableAppNames.MONOPOLY_GO === arg0) {
+  } else if (tmp(13317).DetectableAppNames.MONOPOLY_GO === arg0) {
     const obj11 = { androidScheme: "monopolygo", iosScheme: "monopolygo", predicate: null };
     obj11[2] = isGameCommunityAddServerEntryEnabled;
     return obj11;
-  } else if (tmp(13259).DetectableAppNames.BRAWL_STARS === arg0) {
+  } else if (tmp(13317).DetectableAppNames.BRAWL_STARS === arg0) {
     const obj12 = { androidScheme: "brawlstars", iosScheme: "brawlstars", predicate: null };
     obj12[2] = isGameCommunityAddServerEntryEnabled;
     return obj12;
-  } else if (tmp(13259).DetectableAppNames.BRAWLHALLA === arg0) {
+  } else if (tmp(13317).DetectableAppNames.BRAWLHALLA === arg0) {
     const obj13 = { androidScheme: "brawlhalla", iosScheme: null, predicate: null };
     obj13[2] = isGameCommunityAddServerEntryEnabled;
     return obj13;
-  } else if (tmp(13259).DetectableAppNames.WUTHERING_WAVES === arg0) {
+  } else if (tmp(13317).DetectableAppNames.WUTHERING_WAVES === arg0) {
     obj = { androidScheme: "wutheringwaves", iosScheme: "akioversea", predicate: null };
     obj[2] = isGameCommunityAddServerEntryEnabled;
     return obj;
@@ -88,10 +88,10 @@ function getDetectableApp(arg0) {
 function _detectLocalApps() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0) {
       if (v0 === 2) {
         v0 = 3;
@@ -104,7 +104,7 @@ function _detectLocalApps() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -122,17 +122,17 @@ function _detectLocalApps() {
               obj[0] = arg1;
               return obj;
             } else {
-              let hasConsented = tmp;
-              let PlatformTypes = tmp2;
+              closure_4 = tmp;
+              closure_3 = tmp2;
               let tmp48 = callback;
               let lib;
               let predicate;
-              PlatformTypes = undefined;
-              hasConsented = undefined;
+              closure_3 = undefined;
+              closure_4 = undefined;
               callback = {};
-              let tmp49 = outer1_4;
+              let tmp49 = closure_1_4;
               let tmp50 = constants2;
-              if (outer1_4.hasConsented(constants2.PERSONALIZATION)) {
+              if (closure_1_4.hasConsented(constants2.PERSONALIZATION)) {
                 predicate = tmp48;
                 let tmp21 = tmp48;
                 predicate = tmp48;
@@ -140,8 +140,8 @@ function _detectLocalApps() {
                 let tmp22 = predicate;
                 let tmp23 = lib;
                 if (lib !== undefined) {
-                  let tmp51 = PlatformTypes;
-                  let tmp52 = hasConsented;
+                  let tmp51 = closure_3;
+                  let tmp52 = closure_4;
                   constants2 = 1;
                   lib = tmp24;
                   let tmp53 = v0;
@@ -150,41 +150,41 @@ function _detectLocalApps() {
                   let tmp55 = callback;
                   let tmp56 = predicate;
                   let obj10 = callback(predicate[5]);
-                  let tmp57 = PlatformTypes;
+                  let tmp57 = closure_3;
                   let tmp58 = predicate;
-                  let tmp25 = PlatformTypes;
-                  PlatformTypes = obj10.isIOS() ? tmp58.iosScheme : tmp58.androidScheme;
-                  let tmp26 = PlatformTypes;
-                  if (null != PlatformTypes) {
-                    let tmp27 = PlatformTypes;
+                  let tmp25 = closure_3;
+                  closure_3 = obj10.isIOS() ? tmp58.iosScheme : tmp58.androidScheme;
+                  let tmp26 = closure_3;
+                  if (null != closure_3) {
+                    let tmp27 = closure_3;
                     predicate = predicate.predicate;
                     let predicateResult;
                     if (predicate != null) {
                       predicateResult = predicate();
                     }
                     if (false !== predicateResult) {
-                      let tmp32 = PlatformTypes;
-                      let tmp33 = hasConsented;
+                      let tmp32 = closure_3;
+                      let tmp33 = closure_4;
                       let tmp34 = callback;
                       let tmp35 = predicate;
                       let obj3 = callback(predicate[6]);
-                      let tmp36 = PlatformTypes;
+                      let tmp36 = closure_3;
                       c7 = 2;
                       let num4 = 1;
                       v0 = 1;
-                      let obj1 = { value: null, done: false };
-                      obj1[0] = obj3.canOpenUrlScheme(PlatformTypes);
+                      obj1 = { value: null, done: false };
+                      obj1[0] = obj3.canOpenUrlScheme(closure_3);
                       return obj1;
                     }
                   }
-                  let tmp29 = PlatformTypes;
+                  let tmp29 = closure_3;
                   let tmp30 = callback;
                   let tmp31 = lib;
                   callback[lib] = false;
                 }
               }
-              let tmp37 = PlatformTypes;
-              let tmp38 = hasConsented;
+              let tmp37 = closure_3;
+              let tmp38 = closure_4;
               let tmp39 = lib;
               let tmp40 = predicate;
               let obj6 = lib(predicate[8]);
@@ -194,7 +194,7 @@ function _detectLocalApps() {
               let dispatchResult = obj6.dispatch(obj2);
               let num5 = 3;
               v0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp5) {
             let tmp18 = constants;
@@ -217,22 +217,22 @@ function _detectLocalApps() {
             obj3[0] = arg1;
             return obj3;
           } else {
-            let tmp6 = PlatformTypes;
-            let tmp7 = hasConsented;
-            hasConsented = arg1;
+            let tmp6 = closure_3;
+            let tmp7 = closure_4;
+            closure_4 = arg1;
             let tmp8 = callback;
             let tmp9 = lib;
-            let tmp10 = hasConsented;
-            callback[lib] = hasConsented;
+            let tmp10 = closure_4;
+            callback[lib] = closure_4;
             let tmp11 = lib;
             let tmp12 = predicate;
             obj = lib(predicate[7]);
             let tmp13 = constants;
             let obj4 = { scheme: null, result: null };
-            let tmp14 = PlatformTypes;
-            obj4[0] = PlatformTypes;
-            let tmp15 = hasConsented;
-            obj4[1] = hasConsented;
+            let tmp14 = closure_3;
+            obj4[0] = closure_3;
+            let tmp15 = closure_4;
+            obj4[1] = closure_4;
             let trackResult = obj.track(constants.CAN_OPEN_URL_REQUESTED, obj4);
           }
           constants2 = 0;
@@ -240,7 +240,7 @@ function _detectLocalApps() {
       }
     })();
   });
-  const _detectLocalApps = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -250,7 +250,7 @@ function _detectLocalApps() {
   return applyArgumentsResult;
 }
 ({ AnalyticEvents: c5, Consents: closure_6 } = ME);
-const result = require("ME").fileFinishedImporting("modules/local_app_detection/native/LocalAppDetectionUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/local_app_detection/native/LocalAppDetectionUtils.tsx");
 
 export const detectLocalApps = function detectLocalApps(ALL_DETECTABLE_APP_NAMES) {
   const self = this;

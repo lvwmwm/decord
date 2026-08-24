@@ -1,32 +1,46 @@
-// Module ID: 12585
-// Function ID: 12586
+// Module ID: 12639
+// Function ID: 12640
 // Name: SingleStream
-// Dependencies: [19, 8669, 21, 12438, 12445, 8666, 2]
+// Dependencies: [19, 8706, 21, 12490, 12497, 8703, 2]
 // Exports: default
 
-// Module 12585 (SingleStream)
-import "noop";
-import VoiceChatDrawerState from "VoiceChatDrawerState";
-import { jsx } from "jsxProd";
+// Module 12639 (SingleStream)
+import noopAll from "noop" /* 19 */;
+import StreamTextOverlayDefault from "StreamTextOverlay" /* 12490 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 8706 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
 const require = arg1;
+noopAll;
 ({ toggleFocus: c3, resetFocus: c4 } = VoiceChatDrawerState);
-const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/SingleStream.tsx");
+const result = require("set").fileFinishedImporting("modules/video_calls/native/components/SingleStream.tsx");
 
 export default function SingleStream(channel) {
   channel = channel.channel;
-  const obj = { gestureEnabled: true, resizeMode: null, onSingleTap: null, onDoubleTap: null, participant: null, style: null };
-  obj[1] = channel(12445).ResizeMode.CONTAIN;
-  obj[2] = function onSingleTap() {
-    callback();
+  const obj = {
+    gestureEnabled: true,
+    resizeMode: channel(12497).ResizeMode.CONTAIN,
+    onSingleTap() {
+      callback();
+    },
+    onDoubleTap() {
+      closure_1_4();
+      const participant = closure_1_1(closure_1_2[5]).selectParticipant(channel.id, null);
+    },
+    participant: channel.participant,
+    style: { flex: 1 }
   };
-  obj[3] = function onDoubleTap() {
-    outer1_4();
-    const participant = outer1_1(outer1_2[5]).selectParticipant(channel.id, null);
-  };
-  obj[4] = channel.participant;
-  obj[5] = { flex: 1 };
-  return jsx(importDefault(12438), { gestureEnabled: true, resizeMode: null, onSingleTap: null, onDoubleTap: null, participant: null, style: null });
+  return jsx(StreamTextOverlayDefault, {
+    gestureEnabled: true,
+    resizeMode: channel(12497).ResizeMode.CONTAIN,
+    onSingleTap() {
+      callback();
+    },
+    onDoubleTap() {
+      closure_1_4();
+      const participant = closure_1_1(closure_1_2[5]).selectParticipant(channel.id, null);
+    },
+    participant: channel.participant,
+    style: { flex: 1 }
+  });
 };

@@ -1,42 +1,44 @@
-// Module ID: 15897
-// Function ID: 15898
+// Module ID: 15994
+// Function ID: 15995
 // Name: FormRowPlaceholderItem
-// Dependencies: [19, 17, 8507, 21, 4661, 712, 15870, 4115, 2]
+// Dependencies: [19, 17, 8546, 21, 4668, 712, 15967, 4119, 2]
 // Exports: default
 
-// Module 15897 (FormRowPlaceholderItem)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15994 (FormRowPlaceholderItem)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import useFullscreenPlaceholderCount from "useFullscreenPlaceholderCount" /* 15967 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { itemContainer: { flexDirection: "row", paddingHorizontal: 16, overflow: "hidden", height: 64, paddingVertical: require("MessageEmbedTypes").SEARCH_ROW_TAP_STATE_PADDING, alignItems: "center" }, avatar: null, innerContainer: null, upperText: null, lowerText: null };
-createCacheKey = { height: 48, width: 48, borderRadius: require("Themes").radii.xl, marginRight: 16, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey = { height: 48, width: 48, borderRadius: ThemesDefault.radii.xl, marginRight: 16, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { justifyContent: "center", flex: 1 };
-createCacheKey[3] = { width: "50%", borderRadius: require("Themes").radii.md, height: 16, marginBottom: 8, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-let obj1 = { width: "50%", borderRadius: require("Themes").radii.md, height: 16, marginBottom: 8, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-createCacheKey[4] = { justifyContent: "center", width: "100%", borderRadius: require("Themes").radii.md, height: 16, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj2 = { justifyContent: "center", width: "100%", borderRadius: require("Themes").radii.md, height: 16, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-const result = require("MessageEmbedTypes").fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/FormRowPlaceholder.tsx");
+createCacheKey[3] = { width: "50%", borderRadius: ThemesDefault.radii.md, height: 16, marginBottom: 8, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+let obj1 = { width: "50%", borderRadius: ThemesDefault.radii.md, height: 16, marginBottom: 8, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+createCacheKey[4] = { justifyContent: "center", width: "100%", borderRadius: ThemesDefault.radii.md, height: 16, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const obj2 = { justifyContent: "center", width: "100%", borderRadius: ThemesDefault.radii.md, height: 16, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+const result = require("set").fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/FormRowPlaceholder.tsx");
 
 export default function FormRowPlaceholderItem(style) {
-  const tmp = createCacheKey();
-  let obj = require(15870) /* useFullscreenPlaceholderCount */;
+  const tmp = callback3();
+  let obj = useFullscreenPlaceholderCount;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
   obj = { style: items, pointerEvents: "none", children: null };
   items = [placeholderAnimatedStyle, tmp.itemContainer, style.style];
   obj = { style: tmp.avatar };
   const items1 = [callback(View, obj), ];
-  const obj1 = { style: tmp.innerContainer, children: null };
+  obj1 = { style: tmp.innerContainer, children: null };
   const items2 = [callback(View, { style: tmp.upperText }), callback(View, { style: tmp.lowerText })];
   obj1[1] = items2;
   items1[1] = callback2(View, obj1);
   obj[2] = items1;
-  return callback2(importDefault(4115).View, obj);
+  return callback2(_modDef4119.View, obj);
 };

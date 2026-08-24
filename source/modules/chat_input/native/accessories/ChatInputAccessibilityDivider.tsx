@@ -1,19 +1,18 @@
-// Module ID: 11427
-// Function ID: 11428
+// Module ID: 11478
+// Function ID: 11479
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [19, 17, 21, 4721, 500, 1236, 2]
+// Dependencies: [19, 17, 21, 4727, 500, 1236, 2]
 
-// Module 11427 (ChatInputAccessibilityDivider)
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 11478 (ChatInputAccessibilityDivider)
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4727 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-let c3;
-let obj1;
-const require = arg1;
+require = arg1;
 ({ StyleSheet: obj1, View: c3 } = get_ActivityIndicator);
-const memoResult = require("noop").memo(() => {
-  let obj = require(4721) /* SCREEN_READER_ENABLED_GETTER */;
+const memoResult = importAllResult.memo(() => {
+  let obj = SCREEN_READER_ENABLED_GETTER;
   let tmp3 = null;
   if (obj.useIsScreenReaderEnabled()) {
     tmp3 = null;
@@ -29,6 +28,6 @@ const memoResult = require("noop").memo(() => {
   }
   return tmp3;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputAccessibilityDivider.tsx");
+const result = require("set").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputAccessibilityDivider.tsx");
 
 export const ChatInputAccessibilityDivider = memoResult;

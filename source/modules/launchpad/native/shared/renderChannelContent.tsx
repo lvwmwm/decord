@@ -1,45 +1,32 @@
-// Module ID: 16201
-// Function ID: 16202
+// Module ID: 16298
+// Function ID: 16299
 // Name: ChannelContent
-// Dependencies: [19, 17, 10055, 5044, 21, 4661, 500, 16196, 5287, 16202, 4734, 6890, 8078, 15380, 2]
+// Dependencies: [19, 17, 10094, 5049, 21, 4668, 500, 16293, 5292, 16299, 4739, 6928, 8117, 15444, 2]
 // Exports: default
 
-// Module 16201 (ChannelContent)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
-import { UnreadSetting } from "ReadStateTypes";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import set from "set";
-import set from "set";
-import set from "hairlineWidth";
+// Module 16298 (ChannelContent)
+import Text from "Text" /* 4739 */;
+import LockIcon from "LockIcon" /* 6928 */;
+import WarningIcon from "WarningIcon" /* 8117 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16293 */;
+import _modDef16299 from "module_16299" /* 16299 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth" /* 10094 */;
+import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import set from "set" /* 500 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function ChannelContent(arg0) {
-  let channel;
-  let channelCategoryName;
-  let connected;
-  let isSubscriptionGated;
-  let lastMessageTimestampString;
-  let locked;
-  let mentionBadge;
-  let mentionCount;
-  let muted;
-  let name;
-  let needSubscriptionToAccess;
-  let resolvedUnreadSetting;
-  let subtitle;
-  let unread;
   ({ subtitle, resolvedUnreadSetting, locked, muted, lastMessageTimestampString, channel, channelCategoryName, mentionCount, mentionBadge, isSubscriptionGated } = arg0);
   ({ name, unread, connected, needSubscriptionToAccess } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let tmp9Result = null != channel;
   if (tmp9Result) {
     if (!locked) {
-      locked = tmp2(5287)(channel);
+      locked = tmp2(5292)(channel);
     }
     tmp9Result = locked;
   }
@@ -59,7 +46,7 @@ function ChannelContent(arg0) {
   if (isValidElementResult) {
     str = "space-between";
   }
-  const obj1 = { style: items, children: null };
+  obj1 = { style: items, children: null };
   items[1] = { justifyContent: str };
   let num = 0;
   if (tmp9Result3) {
@@ -67,19 +54,19 @@ function ChannelContent(arg0) {
   }
   const obj2 = { style: { flexDirection: "row", paddingRight: num, alignItems: "center" }, children: null };
   const obj3 = { title: name, muted, unread, resolvedUnreadSetting: null, connected: null };
-  const tmp4 = importDefault(16196)();
+  const tmp4 = getLayoutStyleDefault();
   if (resolvedUnreadSetting == null) {
     resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
   }
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
-  const items1 = [closure_7(importDefault(16202), obj3), , ];
+  const items1 = [closure_7(_modDef16299, obj3), , ];
   tmp9Result = null;
   if (null != channelCategoryName) {
     const obj4 = { variant: "text-xs/bold", color: "text-muted", style: null, children: null };
     obj4[2] = { marginRight: 4 };
     obj4[3] = channelCategoryName;
-    tmp9Result = tmp9(require(4734) /* Text */.Text, obj4);
+    tmp9Result = tmp9(Text.Text, obj4);
   }
   items1[1] = tmp9Result;
   let tmp11Result = tmp9Result;
@@ -103,19 +90,19 @@ function ChannelContent(arg0) {
     if (tmp9Result) {
       const obj7 = { size: "xxs", color: "icon-muted", style: null };
       obj7[2] = tmp.channelTraitIcon;
-      tmp9Result = tmp9(require(6890) /* LockIcon */.LockIcon, obj7);
+      tmp9Result = tmp9(LockIcon.LockIcon, obj7);
     }
     const items3 = [tmp9Result, , ];
     if (isNSFWResult) {
       const obj8 = { size: "xxs", color: "icon-muted", style: null };
       obj8[2] = tmp.channelTraitIcon;
-      isNSFWResult = tmp9(require(8078) /* WarningIcon */.WarningIcon, obj8);
+      isNSFWResult = tmp9(WarningIcon.WarningIcon, obj8);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj9 = { locked: null, isInMainTabsExperiment: true };
       obj9[0] = needSubscriptionToAccess;
-      isSubscriptionGated = tmp9(tmp2(15380), obj9);
+      isSubscriptionGated = tmp9(tmp2(15444), obj9);
     }
     items3[2] = isSubscriptionGated;
     obj5[1] = items3;
@@ -159,7 +146,7 @@ function ChannelContent(arg0) {
     obj15[1] = num6;
     obj14[2] = obj15;
     obj14[4] = lastMessageTimestampString;
-    tmp9Result2 = tmp9(require(4734) /* Text */.Text, obj14);
+    tmp9Result2 = tmp9(Text.Text, obj14);
   }
   const items7 = [tmp9Result2, , ];
   const items8 = [{ alignItems: "center", paddingLeft: 4 }, ];
@@ -180,7 +167,7 @@ function ChannelContent(arg0) {
   obj[1] = closure_8(View, obj);
   return closure_7(View, obj);
 }
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let num = -1;
 if (set.isIOS()) {
   num = 2;
@@ -193,7 +180,7 @@ if (set.isAndroid()) {
 }
 createCacheKey[2] = num2;
 createCacheKey[6] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_9 = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("modules/launchpad/native/shared/renderChannelContent.tsx");
 
 export default function renderChannelContent(arg0) {

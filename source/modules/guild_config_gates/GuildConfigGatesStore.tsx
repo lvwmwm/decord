@@ -1,12 +1,14 @@
-// Module ID: 16861
-// Function ID: 16862
+// Module ID: 16954
+// Function ID: 16955
 // Name: hasLoaded
 // Dependencies: [589, 709, 2]
 
-// Module 16861 (hasLoaded)
-import { Store } from "initialize";
+// Module 16954 (hasLoaded)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let closure_0 = {};
+const Store = initializeDefault.Store;
 class GuildConfigGatesStore extends Store {
 }
 const prototype = GuildConfigGatesStore.prototype;
@@ -21,12 +23,12 @@ prototype["getGates"] = function getGates(arg0) {
   return obj;
 };
 GuildConfigGatesStore.displayName = "GuildConfigGatesStore";
-const guildConfigGatesStore = new GuildConfigGatesStore(require("dispatcher"), {
+const guildConfigGatesStore = new GuildConfigGatesStore(dispatcherDefault, {
   GUILD_CONFIG_GATES_FETCH_SUCCESS: function handleFetchSuccess(guildId) {
     closure_0[guildId.guildId] = { guildVerificationRoleEnabled: guildId.guildVerificationRoleEnabled, applicationIdentityLinkedRolesEnabled: guildId.applicationIdentityLinkedRolesEnabled };
   },
   LOGOUT: function handleLogout() {
-    let closure_0 = {};
+    closure_0 = {};
   }
 });
 const result = require("set").fileFinishedImporting("modules/guild_config_gates/GuildConfigGatesStore.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 10219
-// Function ID: 10220
+// Module ID: 10258
+// Function ID: 10259
 // Name: useStickerCategories
-// Dependencies: [19, 17, 1910, 1922, 10220, 676, 1338, 10217, 4964, 10221, 10222, 1627, 2]
+// Dependencies: [19, 17, 1910, 1922, 10259, 676, 1338, 10256, 4969, 10260, 10261, 1627, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
-// Module 10219 (useStickerCategories)
-import noop from "noop";
-import { NativeModules } from "get ActivityIndicator";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { useStickerPickerStore } from "useStickerPickerStore";
-import { GuildNSFWContentLevel } from "ME";
-import { ExpressionPickerViewType } from "ExpressionPickerViewType";
+// Module 10258 (useStickerCategories)
+import closure_3 from "noop" /* 19 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { useStickerPickerStore } from "useStickerPickerStore" /* 10259 */;
+import { GuildNSFWContentLevel } from "ME" /* 676 */;
+import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1338 */;
 
 const require = arg1;
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/stickers/native/StickersUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/stickers/native/StickersUtils.tsx");
 
 export const useStickerCategories = function useStickerCategories(channel) {
   stickerPackCategories = stickerPackCategories(guilds[7]).useStickerPackCategories(channel);
@@ -24,7 +24,7 @@ export const useStickerCategories = function useStickerCategories(channel) {
   return React.useMemo(() => {
     const found = stickerPackCategories.filter((stickers) => stickers.stickers.length > 0);
     const found1 = found.filter((type) => {
-      let tmp2 = type.type !== outer1_0(outer1_2[8]).StickerCategoryTypes.GUILD;
+      let tmp2 = type.type !== closure_1_0(closure_1_2[8]).StickerCategoryTypes.GUILD;
       if (!tmp2) {
         let nsfwAllowed;
         if (lib != null) {
@@ -36,21 +36,21 @@ export const useStickerCategories = function useStickerCategories(channel) {
         tmp2 = null == tmp;
       }
       if (!tmp2) {
-        tmp2 = tmp.nsfwLevel !== outer1_8.AGE_RESTRICTED && tmp.nsfwLevel !== tmp6.EXPLICIT;
-        const tmp7 = tmp.nsfwLevel !== outer1_8.AGE_RESTRICTED && tmp.nsfwLevel !== tmp6.EXPLICIT;
+        tmp2 = tmp.nsfwLevel !== closure_1_8.AGE_RESTRICTED && tmp.nsfwLevel !== tmp6.EXPLICIT;
+        const tmp7 = tmp.nsfwLevel !== closure_1_8.AGE_RESTRICTED && tmp.nsfwLevel !== tmp6.EXPLICIT;
       }
       return tmp2;
     });
     return found1.map((type) => {
-      if (type.type !== callback(4964).StickerCategoryTypes.FAVORITE) {
-        if (type.type !== tmp(4964).StickerCategoryTypes.RECENT) {
+      if (type.type !== callback(4969).StickerCategoryTypes.FAVORITE) {
+        if (type.type !== tmp(4969).StickerCategoryTypes.RECENT) {
           return type;
         }
       }
-      if (type.type === callback(4964).StickerCategoryTypes.FAVORITE) {
-        let tmp4 = lib(10221);
+      if (type.type === callback(4969).StickerCategoryTypes.FAVORITE) {
+        let tmp4 = lib(10260);
       } else {
-        tmp4 = lib(10222);
+        tmp4 = lib(10261);
       }
       const obj = {};
       const merged = Object.assign(type);
@@ -68,15 +68,15 @@ export const dropPreloadedSticker = function dropPreloadedSticker(arg0) {
   NativeLottieUtils.dropPreload(arg0);
 };
 export const openStickerPickerToPackId = function openStickerPickerToPackId(arg0, pack_id) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const state = useStickerPickerStore.getState();
   state.setPackToScrollTo(pack_id);
   const timerId = setTimeout(() => {
     const current = ref.current;
     if (current != null) {
       const obj = { type: null, context: null };
-      obj[0] = ref(outer1_2[11]).KeyboardTypes.EXPRESSION;
-      obj[1] = outer1_9.STICKER;
+      obj[0] = ref(closure_1_2[11]).KeyboardTypes.EXPRESSION;
+      obj[1] = closure_1_9.STICKER;
       current.openCustomKeyboard(obj);
     }
   }, 1);

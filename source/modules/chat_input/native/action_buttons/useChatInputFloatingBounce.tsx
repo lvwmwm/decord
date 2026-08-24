@@ -1,24 +1,20 @@
-// Module ID: 11410
-// Function ID: 11411
+// Module ID: 11461
+// Function ID: 11462
 // Name: useChatInputFloatingBounce
-// Dependencies: [32, 19, 11149, 4115, 4664, 4744, 2]
+// Dependencies: [32, 19, 11188, 4119, 4671, 4749, 2]
 // Exports: default
 
-// Module 11410 (useChatInputFloatingBounce)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import TextAreaCta from "TextAreaCta";
+// Module 11461 (useChatInputFloatingBounce)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import TextAreaCta from "TextAreaCta" /* 11188 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 ({ CHAT_INPUT_FLOATING_BOUNCE_SPRING_CONFIG: c4, CHAT_INPUT_FLOATING_COLLAPSED_SCALE: c5, CHAT_INPUT_FLOATING_ENTER_OPACITY_TIMING_CONFIG: closure_6, CHAT_INPUT_FLOATING_EXIT_TIMING_CONFIG: error } = TextAreaCta);
 let closure_8 = { code: "function useChatInputFloatingBounceTsx1(finished){const{runOnJS,setEnterFinished}=this.__closure;if(finished===true){runOnJS(setEnterFinished)(true);}}" };
 let closure_9 = { code: "function useChatInputFloatingBounceTsx2(finished){const{runOnJS,handleExitFinished}=this.__closure;if(finished===true){runOnJS(handleExitFinished)();}}" };
 let closure_10 = { code: "function useChatInputFloatingBounceTsx3(){const{opacity,scale}=this.__closure;return{opacity:opacity.get(),transform:[{scale:scale.get()}]};}" };
-let result = require("TextAreaCta").fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingBounce.tsx");
+let result = require("set").fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingBounce.tsx");
 
 export default function useChatInputFloatingBounce(visible) {
   visible = visible.visible;
@@ -37,8 +33,8 @@ export default function useChatInputFloatingBounce(visible) {
   }
   let sharedValue;
   let sharedValue1;
-  let c5;
-  let closure_6;
+  closure_5 = undefined;
+  closure_6 = undefined;
   let obj = visible(num[3]);
   let num2 = 0;
   if (initiallyVisible) {
@@ -48,11 +44,11 @@ export default function useChatInputFloatingBounce(visible) {
   let tmpResult = tmp(tmp2[3]);
   let num3 = 1;
   if (!initiallyVisible) {
-    num3 = c5;
+    num3 = closure_5;
   }
   sharedValue1 = tmpResult.useSharedValue(num3);
   const tmp5 = onExitComplete(sharedValue.useState(initiallyVisible), 2);
-  c5 = tmp6;
+  closure_5 = tmp6;
   const tmp7 = onExitComplete(sharedValue.useState(visible), 2);
   if (visible !== tmp7[0]) {
     tmp7[1](visible);
@@ -89,8 +85,8 @@ export default function useChatInputFloatingBounce(visible) {
         constructor(arg0) {
           if (true === arg0) {
             tmp = handleExitFinished;
-            tmp2 = outer1_1;
-            obj = handleExitFinished(outer1_1[3]);
+            tmp2 = closure_1_1;
+            obj = handleExitFinished(closure_1_1[3]);
             tmp3 = closure_5;
             tmp4 = obj.runOnJS(closure_5)(true);
           }
@@ -99,10 +95,10 @@ export default function useChatInputFloatingBounce(visible) {
       }
       let obj = { runOnJS: null, setEnterFinished: null };
       obj[0] = visible(num[3]).runOnJS;
-      obj[1] = c5;
+      obj[1] = closure_5;
       I.__closure = obj;
       I.__workletHash = 9490441890617;
-      I.__initData = outer1_8;
+      I.__initData = closure_1_8;
       const withTimingResult = obj4.withTiming(1, closure_6, "respect-motion-settings", I);
       let withDelayResult = withTimingResult;
       if (num > 0) {
@@ -123,8 +119,8 @@ export default function useChatInputFloatingBounce(visible) {
         constructor(arg0) {
           if (true === arg0) {
             tmp = handleExitFinished;
-            tmp2 = outer1_1;
-            obj = handleExitFinished(outer1_1[3]);
+            tmp2 = closure_1_1;
+            obj = handleExitFinished(closure_1_1[3]);
             tmp3 = closure_5;
             tmp4 = obj.runOnJS(closure_5)(true);
           }
@@ -142,9 +138,9 @@ export default function useChatInputFloatingBounce(visible) {
       obj[1] = handleExitFinished;
       fn.__closure = obj;
       fn.__workletHash = 6186469155404;
-      fn.__initData = outer1_9;
-      const result2 = sharedValue.set(obj.withTiming(0, outer1_7, "respect-motion-settings", fn));
-      const result3 = sharedValue1.set(visible(6186469155404[4]).withTiming(c5, outer1_7, "respect-motion-settings"));
+      fn.__initData = closure_1_9;
+      const result2 = sharedValue.set(obj.withTiming(0, closure_1_7, "respect-motion-settings", fn));
+      const result3 = sharedValue1.set(visible(6186469155404[4]).withTiming(closure_5, closure_1_7, "respect-motion-settings"));
       const obj3 = visible(6186469155404[4]);
     }
   }, items1);
@@ -152,8 +148,8 @@ export default function useChatInputFloatingBounce(visible) {
   tmpResult = tmp(tmp2[3]);
   class J {
     constructor() {
-      obj = { opacity: c3.get(), transform: null };
-      obj = { scale: useSharedValue.get() };
+      obj = { opacity: closure_3.get(), transform: null };
+      obj = { scale: closure_4.get() };
       items = [];
       items[0] = obj;
       obj[1] = items;

@@ -1,14 +1,22 @@
 // Module ID: 1210
 // Function ID: 1211
 // Name: TelemetryRingLifecycle
-// Dependencies: [2, 1211, 13558, 13565, 13566, 13559, 13562]
+// Dependencies: [2, 1211, 13616, 13623, 13624, 13617, 13620]
 
 // Module 1210 (TelemetryRingLifecycle)
-const result = require("shouldRun").fileFinishedImporting("modules/telemetry_ring/native/index.tsx");
+import set from "set" /* 2 */;
+import _updateZoomedInExportDefault from "_updateZoomedInExport" /* 1211 */;
+import shouldRunDefault from "shouldRun" /* 13616 */;
+import apexExperiment from "apexExperiment" /* 13617 */;
+import TelemetryChannel from "TelemetryChannel" /* 13620 */;
+import snapshotForBreadcrumbsDefault from "snapshotForBreadcrumbs" /* 13623 */;
+import NormalTelemetryImplDefault from "NormalTelemetryImpl" /* 13624 */;
 
-export const TelemetryRingLifecycle = require("_updateZoomedInExport");
-export const ZoomedInTelemetry = require("shouldRun");
-export const SentryTelemetry = require("snapshotForBreadcrumbs");
-export const NormalTelemetry = require("NormalTelemetryImpl");
-export const isZoomedExperimentEnabled = require("apexExperiment").isZoomedExperimentEnabled;
-export const TelemetryChannel = require("TelemetryChannel").TelemetryChannel;
+const result = set.fileFinishedImporting("modules/telemetry_ring/native/index.tsx");
+
+export const TelemetryRingLifecycle = _updateZoomedInExportDefault;
+export const ZoomedInTelemetry = shouldRunDefault;
+export const SentryTelemetry = snapshotForBreadcrumbsDefault;
+export const NormalTelemetry = NormalTelemetryImplDefault;
+export const isZoomedExperimentEnabled = apexExperiment.isZoomedExperimentEnabled;
+export const TelemetryChannel = TelemetryChannel.TelemetryChannel;

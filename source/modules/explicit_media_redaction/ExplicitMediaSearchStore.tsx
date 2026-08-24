@@ -1,15 +1,18 @@
-// Module ID: 5018
-// Function ID: 5019
+// Module ID: 5023
+// Function ID: 5024
 // Name: handleSearchMessagesSuccess
-// Dependencies: [4803, 5001, 589, 709, 2]
+// Dependencies: [4808, 5006, 589, 709, 2]
 
-// Module 5018 (handleSearchMessagesSuccess)
-import { Store } from "initialize";
+// Module 5023 (handleSearchMessagesSuccess)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 5006 */;
 
-const require = arg1;
+require = arg1;
 function handleSearchMessagesSuccess(data) {
   data = data.data;
-  let closure_2 = {};
+  closure_2 = {};
   let item = data.forEach((messages) => {
     messages = messages.messages;
     let item = messages.forEach((arr) => {
@@ -21,13 +24,14 @@ function handleSearchMessagesSuccess(data) {
   });
 }
 let closure_2 = {};
+const Store = initializeDefault.Store;
 class ExplicitMediaSearchStore extends Store {
 }
 ExplicitMediaSearchStore.prototype["getMessage"] = function getMessage(arg0, arg1) {
   return dependencyMap["" + arg1 + ":" + arg0];
 };
 ExplicitMediaSearchStore.displayName = "SearchMessageStore";
-const explicitMediaSearchStore = new ExplicitMediaSearchStore(require("dispatcher"), {
+const explicitMediaSearchStore = new ExplicitMediaSearchStore(dispatcherDefault, {
   SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
   MESSAGE_UPDATE: function handleMessageUpdate(message) {
@@ -38,7 +42,7 @@ const explicitMediaSearchStore = new ExplicitMediaSearchStore(require("dispatche
         const combined = "" + message.channel_id + ":" + message.id;
         let flag = null != tmp7;
         if (flag) {
-          let obj = require(4803) /* createMinimalMessageRecord */;
+          let obj = createMinimalMessageRecord;
           obj = { attachments: null, embeds: null };
           ({ attachments: obj2[0], embeds: obj2[1] } = message);
           dependencyMap[combined] = obj.updateMessageRecord(tmp7, obj);
@@ -50,19 +54,19 @@ const explicitMediaSearchStore = new ExplicitMediaSearchStore(require("dispatche
     return false;
   },
   LOGOUT: function handleLogout() {
-    let closure_2 = {};
+    closure_2 = {};
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_2 = {};
+    closure_2 = {};
   },
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: function handleScanTimeout(channelId) {
     const combined = "" + channelId.channelId + ":" + channelId.messageId;
     if (null != dependencyMap[combined]) {
-      dependencyMap[combined] = require(5001) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(tmp2);
-      const obj = require(5001) /* redactionSettingToRenderedString */;
+      dependencyMap[combined] = redactionSettingToRenderedString.handleExplicitMediaScanTimeoutForMessage(tmp2);
+      const obj = redactionSettingToRenderedString;
     }
   }
 });
-const result = require("initialize").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaSearchStore.tsx");
+const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaSearchStore.tsx");
 
 export default explicitMediaSearchStore;

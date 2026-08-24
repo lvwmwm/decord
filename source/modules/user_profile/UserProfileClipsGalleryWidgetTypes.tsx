@@ -1,9 +1,13 @@
-// Module ID: 5374
-// Function ID: 5375
+// Module ID: 5379
+// Function ID: 5380
 // Name: convertClip
-// Dependencies: [5366, 659, 2]
+// Dependencies: [5371, 659, 2]
 
-// Module 5374 (convertClip)
+// Module 5379 (convertClip)
+import set from "set" /* 2 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
+import WidgetType from "WidgetType" /* 5371 */;
+
 function convertClip(gameId) {
   let obj = { game_id: gameId.gameId, title: gameId.title, tags: gameId.tags };
   if ("saved" === gameId.status) {
@@ -49,7 +53,7 @@ prototype["isEqual"] = function isEqual(clips) {
   let tmp = clips instanceof ClipsGalleryWidget;
   if (tmp) {
     const self = this;
-    tmp = importDefault(659)(this.clips, clips.clips);
+    tmp = isUndefinedOrNullDefault(this.clips, clips.clips);
   }
   return tmp;
 };
@@ -62,7 +66,7 @@ prototype["getProfileAnalyticsOptions"] = function getProfileAnalyticsOptions() 
 prototype["getProfileEditAnalyticsOptions"] = function getProfileEditAnalyticsOptions() {
   return { widgetEdited: this.type };
 };
-const result = require("set").fileFinishedImporting("modules/user_profile/UserProfileClipsGalleryWidgetTypes.tsx");
+const result = set.fileFinishedImporting("modules/user_profile/UserProfileClipsGalleryWidgetTypes.tsx");
 
 export { ClipsGalleryWidget };
 export const WIDGET_CLIP_CONTENT_TYPE = "video/mp4";

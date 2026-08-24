@@ -1,18 +1,17 @@
-// Module ID: 13826
-// Function ID: 13827
+// Module ID: 13884
+// Function ID: 13885
 // Name: getAssignedNotifSettingsAndMappings
-// Dependencies: [32, 13820, 13827, 2]
+// Dependencies: [32, 13878, 13885, 2]
 // Exports: getAssignedNotifSettingsAndMappings
 
-// Module 13826 (getAssignedNotifSettingsAndMappings)
-import _slicedToArray from "_slicedToArray";
-import items2 from "items2";
+// Module 13884 (getAssignedNotifSettingsAndMappings)
+import knownExperimentConfigs from "knownExperimentConfigs" /* 13885 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import items2 from "items2" /* 13878 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 ({ NOTIF_SETTING_MAPPING: c3, NOTIF_SETTINGS: c4 } = items2);
-const result = require("knownExperimentConfigs").fileFinishedImporting("modules/notifications/NotificationSettingsUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/notifications/NotificationSettingsUtils.tsx");
 
 export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSettingsAndMappings() {
   const settings = [];
@@ -26,7 +25,7 @@ export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSett
       let tmp4 = require;
       let tmp5 = dependencyMap;
       let tmp6 = nextResult;
-      let tmp7 = require(13827) /* knownExperimentConfigs */.knownExperimentConfigs[tmp3.experiment];
+      let tmp7 = knownExperimentConfigs.knownExperimentConfigs[tmp3.experiment];
       let obj2 = tmp7;
       if (tmp7.definition.name !== tmp3.experiment) {
         let _Error = Error;
@@ -35,7 +34,7 @@ export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSett
         let str2 = "Experiment called ";
         let tmp13 = new.target;
         let tmp14 = new.target;
-        let error = new Error("Experiment called " + tmp7.definition.name + " assigned to name " + nextResult.experiment);
+        error = new Error("Experiment called " + tmp7.definition.name + " assigned to name " + nextResult.experiment);
         let tmp16 = error;
         throw error;
       } else {

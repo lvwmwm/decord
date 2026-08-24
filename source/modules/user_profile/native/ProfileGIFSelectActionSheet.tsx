@@ -1,40 +1,41 @@
-// Module ID: 14029
-// Function ID: 14030
+// Module ID: 14097
+// Function ID: 14098
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 4661, 712, 4858, 14007, 8384, 8377, 8374, 8376, 8385, 4342, 6950, 6949, 1236, 7988, 10193, 2]
+// Dependencies: [32, 5, 19, 17, 21, 4668, 712, 4863, 14075, 8423, 8416, 8413, 8415, 8424, 4346, 6988, 6987, 1236, 8027, 10232, 2]
 // Exports: default
 
-// Module 14029 (ProfileGIFSelectActionSheet)
-import _slicedToArray from "_slicedToArray";
-import closure_4 from "createCacheKey";
-import module_10193 from "module_10193";
-import { View } from "getSystemLocale";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14097 (ProfileGIFSelectActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
+import Background from "Background" /* 6988 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8027 */;
+import _modDef10232 from "module_10232" /* 10232 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+require = arg1;
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { titleWrapper: { flex: 0 }, titleContainer: { justifyContent: "flex-start" }, gifPicker: null };
-createCacheKey = { flex: 1, marginTop: require("Themes").space.PX_4, marginLeft: require("Themes").space.PX_8, marginRight: require("Themes").space.PX_8 };
+createCacheKey = { flex: 1, marginTop: ThemesDefault.space.PX_4, marginLeft: ThemesDefault.space.PX_8, marginRight: ThemesDefault.space.PX_8 };
 createCacheKey[2] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_9 = createCacheKey.createStyles(createCacheKey);
 let obj1 = { AVATAR: 0, [0]: "AVATAR", BANNER: 1, [1]: "BANNER" };
 let obj2 = { PROFILE_EDIT: 0, [0]: "PROFILE_EDIT", PROFILE_TRY_IT_OUT: 1, [1]: "PROFILE_TRY_IT_OUT" };
-let result = require("noop").fileFinishedImporting("modules/user_profile/native/ProfileGIFSelectActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/native/ProfileGIFSelectActionSheet.tsx");
 
 export default function ProfileGIFSelectActionSheet(arg0) {
-  let dependencyMap;
-  let importDefault;
-  let require;
   ({ profileAssetType: require, selectionContext: importDefault, guildId: dependencyMap } = arg0);
   function _onPressGIF() {
     const self = this;
-    const tmp = outer1_4((arg0) => {
-      let closure_0 = arg0;
-      let c4 = 0;
-      let c5 = 0;
+    const tmp = closure_1_4((arg0) => {
+      closure_0 = arg0;
+      c4 = 0;
+      c5 = 0;
       return (function*(arg0) {
         if (c5 === 2) {
           c5 = 3;
@@ -47,7 +48,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -62,17 +63,17 @@ export default function ProfileGIFSelectActionSheet(arg0) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                let _slicedToArray = tmp5;
-                let closure_2 = tmp2;
+                closure_3 = tmp5;
+                closure_2 = tmp2;
                 let lib;
                 let src;
                 closure_2 = undefined;
-                _slicedToArray = undefined;
+                closure_3 = undefined;
                 dependencyMap = undefined;
                 c5 = undefined;
-                let closure_6;
-                let closure_7;
-                let closure_8;
+                closure_6 = undefined;
+                closure_7 = undefined;
+                closure_8 = undefined;
                 const gifSrc = lib.gifSrc;
                 src = gifSrc;
                 if (gifSrc == null) {
@@ -81,7 +82,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
                 const _fetch = fetch;
                 dependencyMap = 1;
                 c5 = 1;
-                const obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = fetch(src);
                 return obj1;
               }
@@ -91,15 +92,15 @@ export default function ProfileGIFSelectActionSheet(arg0) {
                 throw arg1;
               } else if (arg0 === 2) {
                 c5 = 3;
-                let obj2 = { value: null, done: true };
+                obj2 = { value: null, done: true };
                 obj2[0] = arg1;
                 return obj2;
               } else {
-                const outer1_1 = arg1;
+                const lib2 = arg1;
                 dependencyMap = 2;
                 c5 = 1;
                 let obj3 = { value: null, done: false };
-                obj3[0] = outer1_1.blob();
+                obj3[0] = lib2.blob();
                 return obj3;
               }
             } else if (2 === tmp5) {
@@ -120,8 +121,8 @@ export default function ProfileGIFSelectActionSheet(arg0) {
                   const asDataURL = fileReader.readAsDataURL(closure_0);
                 });
                 const items = [promise, ];
-                const obj22 = outer1_1(outer1_2[7]);
-                items[1] = outer1_1(outer1_2[7]).fromBlob(closure_2).catch(() => null);
+                const obj22 = lib2(closure_1_2[7]);
+                items[1] = lib2(closure_1_2[7]).fromBlob(closure_2).catch(() => null);
                 dependencyMap = 3;
                 c5 = 1;
                 let obj5 = { value: null, done: false };
@@ -137,50 +138,50 @@ export default function ProfileGIFSelectActionSheet(arg0) {
               obj6[0] = arg1;
               return obj6;
             } else {
-              _slicedToArray = arg1;
-              dependencyMap = outer1_3(_slicedToArray, 2);
+              closure_3 = arg1;
+              dependencyMap = closure_1_3(closure_3, 2);
               c5 = 32;
               closure_6 = 5;
-              if (outer1_10.AVATAR === lib) {
-                obj3 = lib(outer1_2[8]);
+              if (closure_1_10.AVATAR === lib) {
+                obj3 = lib(closure_1_2[8]);
                 const obj7 = { imageUri: null, description: null, originalMd5: null };
                 obj7[0] = c5;
-                obj5 = lib(outer1_2[9]);
+                obj5 = lib(closure_1_2[9]);
                 obj7[1] = obj5.generateAvatarDescription();
                 obj7[2] = closure_6;
                 closure_7 = obj3.createPendingImage(obj7);
-                if (outer1_1 === outer1_11.PROFILE_TRY_IT_OUT) {
-                  let obj9 = lib(outer1_2[10]);
-                  obj9.setTryItOutAvatar(outer1_7);
+                if (lib2 === closure_1_11.PROFILE_TRY_IT_OUT) {
+                  let obj9 = lib(closure_1_2[10]);
+                  obj9.setTryItOutAvatar(closure_1_7);
                 } else {
-                  obj6 = lib(outer1_2[11]);
+                  obj6 = lib(closure_1_2[11]);
                   let obj8 = { guildId: null, avatar: null };
                   obj8[0] = closure_2;
                   obj8[1] = closure_7;
                   obj6.setPendingChanges(obj8);
-                  obj8 = lib(outer1_2[12]);
+                  obj8 = lib(closure_1_2[12]);
                   let result = obj8.announcePendingAvatarChange("set");
                 }
               } else {
-                if (outer1_10.BANNER === tmp65) {
-                  obj9 = { assetOrigin: null, imageUri: null, description: "", originalAsset: "Array", originalMd5: "icons" };
-                  obj9[0] = lib(outer1_2[13]).AssetOriginTypes.NEW_ASSET;
+                if (closure_1_10.BANNER === tmp65) {
+                  obj9 = { assetOrigin: null, imageUri: null, description: "", originalAsset: "Array", originalMd5: "Wumpus" };
+                  obj9[0] = lib(closure_1_2[13]).AssetOriginTypes.NEW_ASSET;
                   obj9[1] = c5;
                   obj9[4] = closure_6;
-                  closure_8 = lib(outer1_2[8]).createPendingImage(obj9);
-                  if (src !== outer1_11.PROFILE_TRY_IT_OUT) {
-                    obj = lib(outer1_2[11]);
+                  closure_8 = lib(closure_1_2[8]).createPendingImage(obj9);
+                  if (src !== closure_1_11.PROFILE_TRY_IT_OUT) {
+                    obj = lib(closure_1_2[11]);
                     let obj10 = { guildId: null, banner: null };
                     obj10[0] = closure_2;
                     obj10[1] = closure_8;
                     obj.setPendingChanges(obj10);
                   }
-                  const obj20 = lib(outer1_2[8]);
+                  const obj20 = lib(closure_1_2[8]);
                 }
-                obj2 = lib(outer1_2[10]);
-                obj2.setTryItOutBanner(outer1_8);
+                obj2 = lib(closure_1_2[10]);
+                obj2.setTryItOutBanner(closure_1_8);
               }
-              obj10 = outer1_1(outer1_2[14]);
+              obj10 = lib2(closure_1_2[14]);
               obj10.hideActionSheet();
               c5 = 3;
             }
@@ -191,7 +192,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
         }
       })();
     });
-    const _onPressGIF = tmp;
+    closure_3 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -200,19 +201,19 @@ export default function ProfileGIFSelectActionSheet(arg0) {
     }
     return applyArgumentsResult;
   }
-  let tmp = createCacheKey();
+  let tmp = callback3();
   const ref = React.useRef(null);
   let obj = { ref, scrollable: true, startExpanded: true, children: null };
   obj = { title: null, trailing: null, titleWrapperStyle: null, titleContainerStyle: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["xsC+/y"]);
-  obj[1] = callback(require(7988) /* NitroWheelIcon */.NitroWheelIcon, {});
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["xsC+/y"]);
+  obj[1] = callback(NitroWheelIcon.NitroWheelIcon, {});
   ({ titleWrapper: obj2[2], titleContainer: obj2[3] } = tmp);
-  let items = [callback(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
-  obj = { style: tmp.gifPicker, children: callback(importDefault(10193), obj1) };
+  let items = [callback(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, obj), ];
+  obj = { style: tmp.gifPicker, children: callback(_modDef10232, obj1) };
   items[1] = callback(View, obj);
   obj[3] = items;
-  return callback2(require(6950) /* Background */.BottomSheet, obj);
+  return callback2(Background.BottomSheet, obj);
 };
 export const ProfileAssetType = obj1;
 export const GIFSelectionContext = obj2;

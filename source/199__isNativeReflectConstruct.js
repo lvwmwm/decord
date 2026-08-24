@@ -4,12 +4,15 @@
 // Dependencies: [96, 41, 42, 93, 95, 98, 200, 205, 132, 38, 206, 135, 207, 208, 133]
 
 // Module 199 (_isNativeReflectConstruct)
-import _get from "_get";
-import _classCallCheck from "_classCallCheck";
-import importDefaultResult from "_createClass";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult1 from "_inherits";
+import dispatchDefault from "dispatch" /* 132 */;
+import EventDefault from "Event" /* 133 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 207 */;
+import closure_3 from "_get" /* 96 */;
+import closure_4 from "_classCallCheck" /* 41 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import closure_5 from "_possibleConstructorReturn" /* 93 */;
+import closure_6 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult1 from "_inherits" /* 98 */;
 
 let XMLHttpRequest = arg1;
 function _isNativeReflectConstruct() {
@@ -23,10 +26,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -39,10 +42,10 @@ let closure_8 = { arraybuffer: typeof global.ArrayBuffer === "function", blob: t
 class XMLHttpRequestEventTarget {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, XMLHttpRequest);
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(XMLHttpRequest);
-    tmp3 = _isNativeReflectConstruct;
+    tmp = closure_4(this, XMLHttpRequest);
+    tmp2 = closure_6;
+    obj = closure_6(XMLHttpRequest);
+    tmp3 = closure_5;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -57,7 +60,7 @@ class XMLHttpRequestEventTarget {
   }
 }
 XMLHttpRequest = XMLHttpRequestEventTarget;
-importDefaultResult1(XMLHttpRequestEventTarget, require("dispatch"));
+importDefaultResult1(XMLHttpRequestEventTarget, dispatchDefault);
 let obj = {
   key: "onload",
   get() {
@@ -128,10 +131,10 @@ let closure_9 = importDefaultResult(XMLHttpRequestEventTarget, items);
 class XMLHttpRequest {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, XMLHttpRequest);
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(XMLHttpRequest);
-    tmp3 = _isNativeReflectConstruct;
+    tmp = closure_4(this, XMLHttpRequest);
+    tmp2 = closure_6;
+    obj = closure_6(XMLHttpRequest);
+    tmp3 = closure_5;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -149,7 +152,7 @@ class XMLHttpRequest {
     tmp3Result.status = 0;
     tmp3Result.timeout = 0;
     tmp3Result.withCredentials = true;
-    tmp6 = new set();
+    tmp6 = new closure_9();
     tmp3Result.upload = tmp6;
     tmp3Result._aborted = false;
     tmp3Result._hasError = false;
@@ -164,7 +167,7 @@ class XMLHttpRequest {
     return tmp3Result;
   }
 }
-importDefaultResult1(XMLHttpRequest, require("dispatch"));
+importDefaultResult1(XMLHttpRequest, dispatchDefault);
 obj = {
   key: "_reset",
   value: function _reset() {
@@ -194,7 +197,7 @@ const items1 = [
     set(_responseType) {
       if (this._sent) {
         const _Error = Error;
-        const error = new Error("Failed to set the 'responseType' property on 'XMLHttpRequest': The response type cannot be set after the request has been sent.");
+        error = new Error("Failed to set the 'responseType' property on 'XMLHttpRequest': The response type cannot be set after the request has been sent.");
         throw error;
       } else if (closure_8.hasOwnProperty(_responseType)) {
         let tmp9 = closure_8[_responseType];
@@ -225,7 +228,7 @@ const items1 = [
         if ("text" !== self._responseType) {
           const _Error = Error;
           const _HermesInternal = HermesInternal;
-          const error = new Error("The 'responseText' property is only available if 'responseType' is set to '' or 'text', but it is '" + self._responseType + "'.");
+          error = new Error("The 'responseText' property is only available if 'responseType' is set to '' or 'text', but it is '" + self._responseType + "'.");
           throw error;
         }
       }
@@ -238,8 +241,6 @@ const items1 = [
   {
     key: "response",
     get() {
-      let _response;
-      let _response2;
       const self = this;
       const responseType = this.responseType;
       if ("" !== responseType) {
@@ -265,7 +266,7 @@ const items1 = [
                 const _Error = Error;
                 ({ _response: _response2, _response } = self);
                 const _HermesInternal = HermesInternal;
-                const error = new Error("Invalid response for blob - expecting object, was " + typeof _response + ": " + _response2.trim());
+                error = new Error("Invalid response for blob - expecting object, was " + typeof _response + ": " + _response2.trim());
                 throw error;
               } else {
                 self._cachedResponse = XMLHttpRequest(200).default.createFromParts([]);
@@ -316,7 +317,7 @@ const items1 = [
         obj = { lengthComputable: true, loaded: null, total: null };
         obj[1] = arg1;
         obj[2] = arg2;
-        const tmp10 = new importDefault(207)("progress", obj);
+        const tmp10 = new _isNativeReflectConstructDefault("progress", obj);
         obj.dispatchTrustedEvent(tmp.upload, tmp10);
       }
     }
@@ -401,7 +402,7 @@ const items1 = [
         obj[0] = arg2 >= 0;
         obj[1] = arg1;
         obj[2] = arg2;
-        const tmp10 = new importDefault(207)("progress", obj);
+        const tmp10 = new _isNativeReflectConstructDefault("progress", obj);
         obj.dispatchTrustedEvent(tmp, tmp10);
       }
     }
@@ -527,7 +528,7 @@ const items1 = [
     value: function setRequestHeader(baggage, StringResult) {
       if (this.readyState !== this.OPENED) {
         const _Error = Error;
-        const error = new Error("Request has not been opened");
+        error = new Error("Request has not been opened");
         throw error;
       } else {
         const _String = String;
@@ -556,7 +557,7 @@ const items1 = [
       const self = this;
       if (this.readyState !== this.UNSENT) {
         const _Error3 = Error;
-        const error = new Error("Cannot open, already sending");
+        error = new Error("Cannot open, already sending");
         throw error;
       } else {
         if (undefined !== arg2) {
@@ -582,17 +583,11 @@ const items1 = [
   {
     key: "send",
     value: function send(arg0) {
-      let __didCreateRequest;
-      let _headers;
-      let _method;
-      let _trackingName;
-      let _url2;
-      let timeout;
       let self = this;
       self = this;
       if (this.readyState !== this.OPENED) {
         const _Error2 = Error;
-        const error = new Error("Request has not been opened");
+        error = new Error("Request has not been opened");
         throw error;
       } else if (self._sent) {
         const _Error = Error;
@@ -712,24 +707,24 @@ const items1 = [
       let obj = XMLHttpRequest;
       let tmp2 = importDefault;
       const obj2 = XMLHttpRequest(135);
-      obj2.dispatchTrustedEvent(this, new importDefault(133)("readystatechange"));
+      obj2.dispatchTrustedEvent(this, new EventDefault("readystatechange"));
       if (DONE === this.DONE) {
         if (self._aborted) {
           let objResult = obj(135);
-          const tmp23 = new tmp2(133)("abort");
+          const tmp23 = new EventDefault("abort");
           objResult.dispatchTrustedEvent(self, tmp23);
           obj = obj(135);
-          let tmp2Result = tmp2(133);
+          let tmp2Result = EventDefault;
           tmp2 = new.target;
           tmp2Result = new tmp2Result("loadend");
           obj.dispatchTrustedEvent(self, tmp2Result);
         } else if (!self._hasError) {
           objResult = obj(135);
-          const tmp7 = new tmp2(133)("load");
+          const tmp7 = new EventDefault("load");
           objResult.dispatchTrustedEvent(self, tmp7);
         }
         const dispatchTrustedEvent = obj(135).dispatchTrustedEvent;
-        const tmp2Result1 = tmp2(133);
+        const tmp2Result1 = EventDefault;
         if (self._timedOut) {
           const tmp2Result11 = new tmp2Result1("timeout");
           dispatchTrustedEvent(self, tmp2Result11);

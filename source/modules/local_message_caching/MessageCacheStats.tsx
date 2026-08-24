@@ -1,10 +1,10 @@
-// Module ID: 5082
-// Function ID: 5083
+// Module ID: 5087
+// Function ID: 5088
 // Name: recordChannelFetchStart
 // Dependencies: [2]
 
-// Module 5082 (recordChannelFetchStart)
-import set from "set";
+// Module 5087 (recordChannelFetchStart)
+import set from "set" /* 2 */;
 
 class MessageCacheStats {
   constructor() {

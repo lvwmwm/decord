@@ -1,10 +1,14 @@
-// Module ID: 7462
-// Function ID: 7463
+// Module ID: 7500
+// Function ID: 7501
 // Name: _firstPartyTasksFromServer
-// Dependencies: [7463, 6723, 7464, 7465, 2]
+// Dependencies: [7501, 6760, 7502, 7503, 2]
 // Exports: questTaskConfigFromServer, questTaskConfigV2FromServer
 
-// Module 7462 (_firstPartyTasksFromServer)
+// Module 7500 (_firstPartyTasksFromServer)
+import set from "set" /* 2 */;
+import QuestTaskConfigTypes from "QuestTaskConfigTypes" /* 7501 */;
+import QuestTaskJoinOperator from "QuestTaskJoinOperator" /* 7503 */;
+
 function _firstPartyTasksFromServer(tasks) {
   let obj = {};
   const keys = Object.keys(tasks);
@@ -43,19 +47,19 @@ function _thirdPartyTasksFromServer(tasks) {
   }
   return obj;
 }
-const result = require("videoAssetFromServer").fileFinishedImporting("modules/quests/types/v2/Task.tsx");
+const result = set.fileFinishedImporting("modules/quests/types/v2/Task.tsx");
 
 export const questTaskConfigFromServer = function questTaskConfigFromServer(type) {
   type = type.type;
-  if (require(7463) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.FIRST_PARTY === type) {
+  if (QuestTaskConfigTypes.QuestTaskConfigTypes.FIRST_PARTY === type) {
     let obj = { type: null, tasks: null, joinOperator: null };
-    obj[0] = tmp(7463).QuestTaskConfigTypes.FIRST_PARTY;
+    obj[0] = tmp(7501).QuestTaskConfigTypes.FIRST_PARTY;
     obj[1] = _firstPartyTasksFromServer(type.tasks);
     obj[2] = type.join_operator;
     return obj;
-  } else if (tmp(7463).QuestTaskConfigTypes.THIRD_PARTY === type) {
+  } else if (tmp(7501).QuestTaskConfigTypes.THIRD_PARTY === type) {
     obj = { type: null, tasks: null, enrollmentUrl: null, developerApplicationId: null, joinOperator: null };
-    obj[0] = tmp(7463).QuestTaskConfigTypes.THIRD_PARTY;
+    obj[0] = tmp(7501).QuestTaskConfigTypes.THIRD_PARTY;
     obj[1] = _thirdPartyTasksFromServer(type.tasks);
     ({ enrollment_url: obj[2], developer_application_id: obj[3], join_operator: obj[4] } = type);
     return obj;
@@ -66,8 +70,6 @@ export const questTaskConfigV2FromServer = function questTaskConfigV2FromServer(
     const _Object = Object;
     const entries = Object.entries(task_config_v2.tasks);
     const mapped = entries.map((arg0) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg0;
       const items = [tmp, ];
       const type = tmp2.type;
@@ -90,7 +92,7 @@ export const questTaskConfigV2FromServer = function questTaskConfigV2FromServer(
         tmp5 = obj;
         const tmp3Result2 = tmp3(tmp4[2]);
       } else if (tmp3(tmp4[1]).FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP === type) {
-        const obj1 = { type: null, target: null, applications: null };
+        obj1 = { type: null, target: null, applications: null };
         obj1[0] = tmp3(tmp4[1]).FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP;
         ({ target: obj7[1], applications: obj7[2] } = tmp2);
         tmp5 = obj1;
@@ -144,7 +146,6 @@ export const questTaskConfigV2FromServer = function questTaskConfigV2FromServer(
     let obj = { tasks: null, joinOperator: null };
     const _Object2 = Object;
     obj[0] = Object.fromEntries(mapped.filter((arg0) => {
-      let tmp;
       [, tmp] = arg0;
       return null !== tmp;
     }));
@@ -153,7 +154,7 @@ export const questTaskConfigV2FromServer = function questTaskConfigV2FromServer(
   } catch (err) {
     obj = { tasks: null, joinOperator: null };
     obj[0] = {};
-    obj[1] = require(7465) /* QuestTaskJoinOperator */.QuestTaskJoinOperator.OR;
+    obj[1] = QuestTaskJoinOperator.QuestTaskJoinOperator.OR;
     return obj;
   }
 };

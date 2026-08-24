@@ -4,10 +4,12 @@
 // Dependencies: [231]
 
 // Module 230 (Alert)
-const require = arg1;
+import Alert from "Alert" /* 231 */;
+
+require = arg1;
 const dependencyMap = arg6;
 if (!alert.alert) {
   alert.alert = (arg0) => {
-    require(231) /* Alert */.default.alert("Alert", "" + arg0);
+    Alert.default.alert("Alert", "" + arg0);
   };
 }

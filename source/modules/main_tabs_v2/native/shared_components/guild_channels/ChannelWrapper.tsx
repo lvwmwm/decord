@@ -1,27 +1,25 @@
-// Module ID: 15697
-// Function ID: 15698
+// Module ID: 15766
+// Function ID: 15767
 // Name: renderChannelWrapper
-// Dependencies: [19, 17, 21, 10056, 2]
+// Dependencies: [19, 17, 21, 10095, 2]
 // Exports: renderChannelWrapper
 
-// Module 15697 (renderChannelWrapper)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 15766 (renderChannelWrapper)
+import noopAll from "noop" /* 19 */;
+import getLayoutStyles from "getLayoutStyles" /* 10095 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-let result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelWrapper.tsx");
+require = arg1;
+noopAll;
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelWrapper.tsx");
 
 export const renderChannelWrapper = function renderChannelWrapper(children, fontScale) {
-  let channel;
-  let launchpad;
-  let layout;
-  let panelVariant;
   ({ channel, layout, launchpad, panelVariant } = fontScale);
   if (panelVariant === undefined) {
     panelVariant = false;
   }
-  let obj = require(10056) /* getLayoutStyles */;
+  let obj = getLayoutStyles;
   let isThreadResult;
   if (channel != null) {
     isThreadResult = channel.isThread();
@@ -30,7 +28,7 @@ export const renderChannelWrapper = function renderChannelWrapper(children, font
     isThreadResult = !launchpad;
   }
   const scaledChannelRowHeight = obj.getScaledChannelRowHeight(fontScale.fontScale, layout, isThreadResult);
-  const layoutStyles = require(10056) /* getLayoutStyles */.getLayoutStyles(layout, launchpad);
+  const layoutStyles = getLayoutStyles.getLayoutStyles(layout, launchpad);
   const items = [{ flex: 1, flexDirection: "row", alignItems: "center", position: "relative" }, , ];
   let isThreadResult1;
   if (channel != null) {

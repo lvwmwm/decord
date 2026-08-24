@@ -1,26 +1,30 @@
-// Module ID: 16169
-// Function ID: 16170
+// Module ID: 16266
+// Function ID: 16267
 // Name: useGiftingPromotionAssetsReady
-// Dependencies: [10304, 16170, 2]
+// Dependencies: [10343, 16267, 2]
 // Exports: default
 
-// Module 16169 (useGiftingPromotionAssetsReady)
-const result = require("set").fileFinishedImporting("modules/premium/gifting/native/hooks/useGiftingPromotionAssetsReady.tsx");
+// Module 16266 (useGiftingPromotionAssetsReady)
+import set from "set" /* 2 */;
+import useThemeAndReducedMotionAwareAssetUrl from "useThemeAndReducedMotionAwareAssetUrl" /* 10343 */;
+import usePreloadedAssetDefault from "usePreloadedAsset" /* 16267 */;
+
+const result = set.fileFinishedImporting("modules/premium/gifting/native/hooks/useGiftingPromotionAssetsReady.tsx");
 
 export default function useGiftingPromotionAssetsReady(asset, asset2) {
-  let obj = require(10304) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let obj = useThemeAndReducedMotionAwareAssetUrl;
   asset = undefined;
   if (asset != null) {
     asset = asset.asset;
   }
   const themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(asset);
-  const status = importDefault(16170)(themeAndReducedMotionAwareAssetUrl).status;
+  const status = usePreloadedAssetDefault(themeAndReducedMotionAwareAssetUrl).status;
   let asset1;
   if (asset2 != null) {
     asset1 = asset2.asset;
   }
-  const themeAndReducedMotionAwareAssetUrl1 = require(10304) /* useThemeAndReducedMotionAwareAssetUrl */.useThemeAndReducedMotionAwareAssetUrl(asset1);
-  const status2 = importDefault(16170)(themeAndReducedMotionAwareAssetUrl1).status;
+  const themeAndReducedMotionAwareAssetUrl1 = useThemeAndReducedMotionAwareAssetUrl.useThemeAndReducedMotionAwareAssetUrl(asset1);
+  const status2 = usePreloadedAssetDefault(themeAndReducedMotionAwareAssetUrl1).status;
   let tmp8 = "skipped" === status;
   if (!tmp8) {
     tmp8 = "preloaded" === status;

@@ -1,20 +1,21 @@
-// Module ID: 12779
-// Function ID: 12780
+// Module ID: 12834
+// Function ID: 12835
 // Name: getIconURL
-// Dependencies: [4479, 5097, 2]
+// Dependencies: [4483, 5102, 2]
 
-// Module 12779 (getIconURL)
-import "createExecutable";
-import importDefaultResult1 from "getPlatformUserUrl";
+// Module 12834 (getIconURL)
+import createExecutableDefault from "createExecutable" /* 4483 */;
+import importDefaultResult1 from "getPlatformUserUrl" /* 5102 */;
 
+createExecutableDefault;
 const spotify = "spotify";
-const value = require("getPlatformUserUrl").get("spotify");
+const value = importDefaultResult1.get("spotify");
 class SpotifyApplicationRecord extends tmp4 {
   constructor() {
     tmp = new tmp({}, new.target, tmp);
     // ThrowIfThisInitialized (0x7c)
     tmp.id = spotify;
-    tmp.name = get.name;
+    tmp.name = closure_1.name;
     return tmp;
   }
 }

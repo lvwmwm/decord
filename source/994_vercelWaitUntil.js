@@ -4,13 +4,15 @@
 // Dependencies: [821]
 
 // Module 994 (vercelWaitUntil)
-const require = arg1;
+import _mod821 from "module_821" /* 821 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.vercelWaitUntil = function vercelWaitUntil(arg0) {
   if (typeof globalThis.EdgeRuntime === "string") {
     const _Symbol = Symbol;
-    const tmp7 = require(821).GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")];
+    const tmp7 = _mod821.GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")];
     let value;
     if (tmp7 != null) {
       const get = tmp7.get;

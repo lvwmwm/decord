@@ -1,14 +1,16 @@
-// Module ID: 13238
-// Function ID: 13239
+// Module ID: 13293
+// Function ID: 13294
 // Name: map
 // Dependencies: [589, 709, 2]
 
-// Module 13238 (map)
-import { Store } from "initialize";
+// Module 13293 (map)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let map = new Map();
 let map1 = new Map();
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED" };
+const Store = initializeDefault.Store;
 class CreatorMonetizationStore extends Store {
 }
 const prototype = CreatorMonetizationStore.prototype;
@@ -41,19 +43,17 @@ obj = {
     guildId = guildId.guildId;
     if (!map1.has(guildId)) {
       const _Map = Map;
-      const map = new Map();
+      map = new Map();
       const result = obj.set(guildId, map);
     }
     const value = obj.get(guildId);
     const result1 = value.set(guildId.priceTierType, obj.FETCHING);
   },
   CREATOR_MONETIZATION_PRICE_TIERS_FETCH_SUCCESS: function handleFetchPriceTiersSuccess(priceTiers) {
-    let guildId;
-    let priceTierType;
     ({ guildId, priceTierType } = priceTiers);
     if (!map1.has(guildId)) {
       const _Map = Map;
-      const map = new Map();
+      map = new Map();
       const result = obj.set(guildId, map);
     }
     let value = obj.get(guildId);
@@ -70,14 +70,14 @@ obj = {
     guildId = guildId.guildId;
     if (!map1.has(guildId)) {
       const _Map = Map;
-      const map = new Map();
+      map = new Map();
       const result = obj.set(guildId, map);
     }
     const value = obj.get(guildId);
     const result1 = value.set(guildId.priceTierType, obj.FETCHED);
   }
 };
-const creatorMonetizationStore = new CreatorMonetizationStore(require("dispatcher"), obj);
+const creatorMonetizationStore = new CreatorMonetizationStore(dispatcherDefault, obj);
 let result = require("set").fileFinishedImporting("modules/creator_monetization/CreatorMonetizationStore.tsx");
 
 export default creatorMonetizationStore;

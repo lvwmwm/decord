@@ -1,17 +1,18 @@
-// Module ID: 8216
-// Function ID: 8217
+// Module ID: 8256
+// Function ID: 8257
 // Name: computeIsStickerReplyEnabled
-// Dependencies: [1990, 4021, 1922, 676, 7234, 2]
+// Dependencies: [1991, 4024, 1922, 676, 7272, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 8216 (computeIsStickerReplyEnabled)
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { Permissions } from "ME";
+// Module 8256 (computeIsStickerReplyEnabled)
+import useCanUnarchiveThread from "useCanUnarchiveThread" /* 7272 */;
+import closure_2 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import { Permissions } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/messages/native/renderer/system_messages/useIsStickerReplyEnabled.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/useIsStickerReplyEnabled.tsx");
 
 export const computeIsStickerReplyEnabled = function computeIsStickerReplyEnabled(guildId, channel, message, arg3) {
   currentUser = currentUser.getCurrentUser();
@@ -24,8 +25,8 @@ export const computeIsStickerReplyEnabled = function computeIsStickerReplyEnable
     }
     tmp2 = isPending;
   }
-  const isReadOnlyThread = require(7234) /* useCanUnarchiveThread */.computeIsReadOnlyThread(channel);
-  let canResult = getUncachedChannelPermissions.can(Permissions.SEND_MESSAGES, channel);
+  const isReadOnlyThread = useCanUnarchiveThread.computeIsReadOnlyThread(channel);
+  let canResult = closure_3.can(Permissions.SEND_MESSAGES, channel);
   if (canResult) {
     canResult = !isReadOnlyThread;
   }

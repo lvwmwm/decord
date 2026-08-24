@@ -1,23 +1,25 @@
-// Module ID: 9501
-// Function ID: 9502
+// Module ID: 9538
+// Function ID: 9539
 // Name: CoachmarkImg
-// Dependencies: [32, 19, 17, 676, 1388, 21, 4661, 9470, 5449, 5381, 1377, 7366, 1236, 7360, 9314, 2]
+// Dependencies: [32, 19, 17, 676, 1388, 21, 4668, 9507, 5454, 5386, 1377, 7404, 1236, 7398, 9351, 2]
 // Exports: default
 
-// Module 9501 (CoachmarkImg)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { UserSettingsSections } from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9538 (CoachmarkImg)
+import preloadDefault from "preload" /* 5454 */;
+import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 9507 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { UserSettingsSections } from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 function CoachmarkImg(badge) {
   badge = badge.badge;
   const tmp = callback2();
-  let obj = require(9470) /* useMobileTenureBadgeImages */;
+  let obj = useMobileTenureBadgeImages;
   let id;
   if (badge != null) {
     id = badge.id;
@@ -32,28 +34,26 @@ function CoachmarkImg(badge) {
     obj[0] = tmp.imageContainer;
     obj = { resizeMode: "contain", style: null, source: null };
     obj[1] = tmp.image;
-    const obj1 = { uri: null };
+    obj1 = { uri: null };
     obj1[0] = medium;
     obj[2] = obj1;
-    obj[1] = jsx(importDefault(5449), { resizeMode: "contain", style: null, source: null });
+    obj[1] = jsx(preloadDefault, { resizeMode: "contain", style: null, source: null });
     tmp5 = <View resizeMode="contain" style={null} source={null} />;
   }
   return tmp5;
 }
 let closure_9 = createCacheKey.createStyles({ image: { width: "100%", height: "100%" }, imageContainer: { width: 110, height: 72, marginTop: 16 } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/tiered_tenure_badging/native/TieredTenureBadgeCoachmark.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/tiered_tenure_badging/native/TieredTenureBadgeCoachmark.tsx");
 
 export default function TieredTenureBadgeCoachmark(arg0) {
-  let badgeId;
-  let targetRef;
   let tieredTenureBadgeData;
   let first;
-  let dependencyMap;
+  dependencyMap = undefined;
   ({ targetRef, badgeId } = arg0);
-  const tieredTenureBadge = tieredTenureBadgeData(5381).getTieredTenureBadge(badgeId);
+  const tieredTenureBadge = tieredTenureBadgeData(5386).getTieredTenureBadge(badgeId);
   tieredTenureBadgeData = null;
   if (null != tieredTenureBadge) {
-    let tmpResult = tmp(5381);
+    let tmpResult = tmp(5386);
     tieredTenureBadgeData = tmpResult.getTieredTenureBadgeData(tieredTenureBadge);
   }
   if (null != tieredTenureBadgeData) {
@@ -62,35 +62,35 @@ export default function TieredTenureBadgeCoachmark(arg0) {
   } else {
     items1 = [];
   }
-  tmpResult = tmp(7366);
+  tmpResult = tmp(7404);
   const tmp5 = callback(tmpResult.useSelectedDismissibleContent(items1), 2);
   first = tmp5[0];
   dependencyMap = tmp7;
   const items2 = [tmp5[1], first, tieredTenureBadgeData];
   const memo = React.useMemo(() => {
     let obj = { offsetY: 12, title: null, description: null, position: "bottom", visible: null, onDismiss: null, renderImgComponent: null, onButtonPress: null, buttonLabel: null, buttonVariant: "experimental_premium-primary" };
-    const intl = tieredTenureBadgeData(_undefined[12]).intl;
-    obj[1] = intl.string(tieredTenureBadgeData(_undefined[12]).t.Ajj8iG);
-    const intl2 = tieredTenureBadgeData(_undefined[12]).intl;
-    obj[2] = intl2.string(tieredTenureBadgeData(_undefined[12]).t["WUNqD/"]);
-    obj[4] = first === tieredTenureBadgeData(_undefined[10]).DismissibleContent.TIERED_TENURE_BADGE_COACHMARK;
+    const intl = tieredTenureBadgeData(1236).intl;
+    obj[1] = intl.string(tieredTenureBadgeData(1236).t.Ajj8iG);
+    const intl2 = tieredTenureBadgeData(1236).intl;
+    obj[2] = intl2.string(tieredTenureBadgeData(1236).t["WUNqD/"]);
+    obj[4] = first === tieredTenureBadgeData(1377).DismissibleContent.TIERED_TENURE_BADGE_COACHMARK;
     obj[5] = function onDismiss() {
-      callback(outer1_7.USER_DISMISS);
+      callback(closure_1_7.USER_DISMISS);
     };
     obj[6] = function renderImgComponent() {
-      return outer1_8(outer1_10, { badge: closure_0 });
+      return closure_1_8(closure_1_10, { badge: closure_0 });
     };
     obj[7] = function onButtonPress() {
-      callback(outer1_7.TAKE_ACTION);
-      let obj = outer1_0(outer1_2[13]);
-      obj = { screen: outer1_6.PREMIUM };
+      callback(closure_1_7.TAKE_ACTION);
+      let obj = closure_1_0(closure_1_2[13]);
+      obj = { screen: closure_1_6.PREMIUM };
       obj.openUserSettings(obj);
     };
-    const intl3 = tieredTenureBadgeData(_undefined[12]).intl;
-    obj[8] = intl3.string(tieredTenureBadgeData(_undefined[12]).t.RzWDqY);
+    const intl3 = tieredTenureBadgeData(1236).intl;
+    obj[8] = intl3.string(tieredTenureBadgeData(1236).t.RzWDqY);
     return obj;
   }, items2);
-  let obj = tieredTenureBadgeData(5381);
-  const coachmark = tieredTenureBadgeData(9314).useCoachmark(targetRef, memo);
+  let obj = tieredTenureBadgeData(5386);
+  const coachmark = tieredTenureBadgeData(9351).useCoachmark(targetRef, memo);
   return null;
 };

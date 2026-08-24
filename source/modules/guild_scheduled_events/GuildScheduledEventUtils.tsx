@@ -1,26 +1,24 @@
-// Module ID: 8893
-// Function ID: 8894
+// Module ID: 8930
+// Function ID: 8931
 // Name: getNextShownUpcomingEventNoticeType
-// Dependencies: [1397, 3975, 11, 2]
+// Dependencies: [1397, 3978, 11, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 8893 (getNextShownUpcomingEventNoticeType)
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
+// Module 8930 (getNextShownUpcomingEventNoticeType)
+import set from "set" /* 2 */;
+import tDefault from "t" /* 3978 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 
-let c3;
-let c4;
-let c5;
-let obj1;
 ({ UpcomingGuildEventNoticeTypes: obj1, NEW_EVENT_WINDOW_MILLISECONDS: c3, EVENT_STARTING_SOON_WINDOW_MILLISECONDS: c4, ACKED_RECENTLY_WINDOW_DAYS: c5 } = GUILD_EVENT_MAX_NAME_LENGTH);
-const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventUtils.tsx");
+const result = set.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventUtils.tsx");
 
 export const getNextShownUpcomingEventNoticeType = function getNextShownUpcomingEventNoticeType(guildScheduledEvent, arg1, arg2, flag) {
-  const obj = importDefault(3975)();
+  const obj = tDefault();
   const time = new Date(guildScheduledEvent.scheduled_start_time).getTime();
   const diff = time - closure_4;
   if (obj.isBetween(diff, time)) {
     if (null != arg1) {
-      const obj4 = tmp(3975)(arg1);
+      const obj4 = tmp(3978)(arg1);
       const isBetweenResult = obj4.isBetween(diff, time);
       let EVENT_STARTING_SOON;
       if (!isBetweenResult) {

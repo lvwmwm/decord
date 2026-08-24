@@ -1,18 +1,19 @@
-// Module ID: 6260
-// Function ID: 6261
+// Module ID: 6291
+// Function ID: 6292
 // Name: VoiceFiltersSpotIllustration
-// Dependencies: [21, 5449, 6261, 2]
+// Dependencies: [21, 5454, 6292, 2]
 // Exports: VoiceFiltersSpotIllustration
 
-// Module 6260 (VoiceFiltersSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 6291 (VoiceFiltersSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6292 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/VoiceFiltersSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/VoiceFiltersSpotIllustration.native.tsx");
 
 export const VoiceFiltersSpotIllustration = function VoiceFiltersSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const VoiceFiltersSpotIllustration = function VoiceFiltersSpotIllustratio
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6261);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const VoiceFiltersSpotIllustration = function VoiceFiltersSpotIllustratio
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

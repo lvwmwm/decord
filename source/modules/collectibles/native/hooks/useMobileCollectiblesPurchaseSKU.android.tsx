@@ -1,27 +1,30 @@
-// Module ID: 11971
-// Function ID: 11972
+// Module ID: 12020
+// Function ID: 12021
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [1922, 589, 9249, 10357, 2]
+// Dependencies: [1922, 589, 9286, 10396, 2]
 // Exports: default
 
-// Module 11971 (useMobileCollectiblesPurchaseSKU)
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 12020 (useMobileCollectiblesPurchaseSKU)
+import initialize from "initialize" /* 589 */;
+import hasAtLeastOneGPlaySynced from "hasAtLeastOneGPlaySynced" /* 9286 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10396 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
-const result = require("hasAtLeastOneGPlaySynced").fileFinishedImporting("modules/collectibles/native/hooks/useMobileCollectiblesPurchaseSKU.android.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/collectibles/native/hooks/useMobileCollectiblesPurchaseSKU.android.tsx");
 
 export default function useMobileCollectiblesPurchaseSKU(product) {
   product = product.product;
   const merged = Object.assign(product, Object.create(null));
-  let obj = require(589) /* initialize */;
-  const items = [mergeGuildAvatar];
+  let obj = initialize;
+  const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const collectibleGoogleSkuId = require(9249) /* hasAtLeastOneGPlaySynced */.getCollectibleGoogleSkuId(product, stateFromStores);
+  const collectibleGoogleSkuId = hasAtLeastOneGPlaySynced.getCollectibleGoogleSkuId(product, stateFromStores);
   obj = {};
-  const obj2 = require(9249) /* hasAtLeastOneGPlaySynced */;
+  const obj2 = hasAtLeastOneGPlaySynced;
   const merged1 = Object.assign(merged);
   obj.skuId = product.skuId;
   obj.platformSkuId = collectibleGoogleSkuId;
   obj.isFreeForStaffSelfPurchase = true;
-  return importDefault(10357)(obj);
+  return useMobilePurchaseSKUDefault(obj);
 };

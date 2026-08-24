@@ -1,20 +1,21 @@
-// Module ID: 6725
-// Function ID: 6726
+// Module ID: 6762
+// Function ID: 6763
 // Name: settingsPathToRoute
-// Dependencies: [32, 685, 676, 6726, 698, 4376, 2]
+// Dependencies: [32, 685, 676, 6763, 698, 4380, 2]
 // Exports: parseSettingsUrl, settingsPathToRoute, trackParseSettingsUrl
 
-// Module 6725 (settingsPathToRoute)
-import _slicedToArray from "_slicedToArray";
-import { UserSettingsPath } from "MAX_FAVORITES";
-import ME from "ME";
+// Module 6762 (settingsPathToRoute)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import keysSorter from "keysSorter" /* 4380 */;
+import WebUserSettings from "WebUserSettings" /* 6763 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import { UserSettingsPath } from "MAX_FAVORITES" /* 685 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ AnalyticEvents: c5, Routes: closure_6 } = ME);
 const re7 = /[_\s]|%20/g;
-const result = require("ME").fileFinishedImporting("modules/user_settings/UserSettingsURLUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/UserSettingsURLUtils.tsx");
 
 export const settingsPathToRoute = function settingsPathToRoute(ACCOUNT) {
   const parts = ACCOUNT.split("/");
@@ -26,10 +27,10 @@ export const trackParseSettingsUrl = function trackParseSettingsUrl(path) {
     let obj = { user_settings_url_path: null, user_settings_url_origin: null };
     obj[0] = path;
     obj[1] = arg1;
-    importDefault(698).track(constants.USER_SETTINGS_URL_PARSED, obj);
-    const obj3 = importDefault(698);
+    expandEventPropertiesDefault.track(constants.USER_SETTINGS_URL_PARSED, obj);
+    const obj3 = expandEventPropertiesDefault;
   } else {
-    obj = importDefault(698);
+    obj = expandEventPropertiesDefault;
     obj = { user_settings_url_origin: null, user_settings_url_path: null };
     obj[0] = arg1;
     obj[1] = path;
@@ -37,47 +38,6 @@ export const trackParseSettingsUrl = function trackParseSettingsUrl(path) {
   }
 };
 export const parseSettingsUrl = function parseSettingsUrl(arg0) {
-  let ACCESSIBILITY;
-  let ACCOUNT_ACCOUNT_STANDING;
-  let ACCOUNT_STANDING;
-  let ACTIVITY_PRIVACY;
-  let ADVANCED;
-  let APPEARANCE;
-  let AUTHORIZED_APPS;
-  let BILLING;
-  let CLIPS;
-  let CONNECTED_GAMES;
-  let CONNECTIONS;
-  let CONTENT_AND_SOCIAL;
-  let CONTENT_AND_SOCIAL_CONNECTED_GAMES;
-  let DATA_AND_PRIVACY;
-  let DEVELOPER_OPTIONS;
-  let EMAILS;
-  let EXPERIMENTS;
-  let FAMILY_CENTER;
-  let GUILD_BOOSTING;
-  let INVENTORY;
-  let KEYBINDS;
-  let LANGUAGE;
-  let LINUX;
-  let NOTIFICATIONS;
-  let NOTIFICATIONS_EMAILS;
-  let OVERLAY;
-  let POGGERMODE;
-  let PREMIUM;
-  let PRIVACY_AND_SAFETY;
-  let PROFILE_CUSTOMIZATION;
-  let REGISTERED_GAMES;
-  let SESSIONS;
-  let STREAMER_MODE;
-  let SUBSCRIPTIONS;
-  let SUBSCRIPTIONS_ROLE_SUBSCRIPTIONS;
-  let SYSTEM;
-  let TEXT;
-  let VOICE;
-  let WINDOWS;
-  let path;
-  let search;
   ({ path, search } = arg0);
   const tmp = callback(path.split("?")[0].split("/"), 4);
   let str4 = "";
@@ -94,7 +54,7 @@ export const parseSettingsUrl = function parseSettingsUrl(arg0) {
   items[1] = str4;
   const found = items.filter(Boolean);
   const joined = found.join("/");
-  let obj = { [closure_4.ACCOUNT]: require(6726) /* WebUserSettings */.WebUserSettings.ACCOUNT_PANEL, [ACCOUNT_STANDING]: require(6726) /* WebUserSettings */.WebUserSettings.ACCOUNT_STANDING_CATEGORY, [ACCOUNT_ACCOUNT_STANDING]: require(6726) /* WebUserSettings */.WebUserSettings.ACCOUNT_STANDING_CATEGORY, [PROFILE_CUSTOMIZATION]: require(6726) /* WebUserSettings */.WebUserSettings.PROFILE_PANEL, [CONTENT_AND_SOCIAL]: require(6726) /* WebUserSettings */.WebUserSettings.MESSAGING_PERMISSIONS_PANEL, [CONNECTED_GAMES]: require(6726) /* WebUserSettings */.WebUserSettings.CONNECTED_GAMES_CATEGORY, [CONTENT_AND_SOCIAL_CONNECTED_GAMES]: require(6726) /* WebUserSettings */.WebUserSettings.CONNECTED_GAMES_CATEGORY, [DATA_AND_PRIVACY]: require(6726) /* WebUserSettings */.WebUserSettings.DATA_AND_PRIVACY_PANEL, [PRIVACY_AND_SAFETY]: require(6726) /* WebUserSettings */.WebUserSettings.DATA_AND_PRIVACY_PANEL, [FAMILY_CENTER]: require(6726) /* WebUserSettings */.WebUserSettings.FAMILY_CENTER_PANEL, [SESSIONS]: require(6726) /* WebUserSettings */.WebUserSettings.SESSIONS_PANEL, [AUTHORIZED_APPS]: require(6726) /* WebUserSettings */.WebUserSettings.AUTHORIZED_APPS_CATEGORY, [CONNECTIONS]: require(6726) /* WebUserSettings */.WebUserSettings.CONNECTIONS_CATEGORY, [CLIPS]: require(6726) /* WebUserSettings */.WebUserSettings.CLIPS_PANEL, [PREMIUM]: require(6726) /* WebUserSettings */.WebUserSettings.NITRO_PANEL, [GUILD_BOOSTING]: require(6726) /* WebUserSettings */.WebUserSettings.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, [SUBSCRIPTIONS]: require(6726) /* WebUserSettings */.WebUserSettings.SUBSCRIPTIONS_PANEL, [SUBSCRIPTIONS_ROLE_SUBSCRIPTIONS]: require(6726) /* WebUserSettings */.WebUserSettings.SUBSCRIPTIONS_PANEL, [INVENTORY]: require(6726) /* WebUserSettings */.WebUserSettings.GIFT_PANEL, [BILLING]: require(6726) /* WebUserSettings */.WebUserSettings.BILLING_PANEL, [APPEARANCE]: require(6726) /* WebUserSettings */.WebUserSettings.APPEARANCE_PANEL, [ACCESSIBILITY]: require(6726) /* WebUserSettings */.WebUserSettings.ACCESSIBILITY_PANEL, [VOICE]: require(6726) /* WebUserSettings */.WebUserSettings.VOICE_AND_VIDEO_PANEL, [POGGERMODE]: require(6726) /* WebUserSettings */.WebUserSettings.POGGERMODE_PANEL, [TEXT]: require(6726) /* WebUserSettings */.WebUserSettings.APPEARANCE_MESSAGES_CATEGORY, [NOTIFICATIONS]: require(6726) /* WebUserSettings */.WebUserSettings.NOTIFICATIONS_PANEL, [EMAILS]: require(6726) /* WebUserSettings */.WebUserSettings.NOTIFICATIONS_EMAIL_CATEGORY, [NOTIFICATIONS_EMAILS]: require(6726) /* WebUserSettings */.WebUserSettings.NOTIFICATIONS_EMAIL_CATEGORY, [KEYBINDS]: require(6726) /* WebUserSettings */.WebUserSettings.SYSTEM_CUSTOM_KEYBINDS_CATEGORY, [SYSTEM]: require(6726) /* WebUserSettings */.WebUserSettings.SYSTEM_PANEL, [LANGUAGE]: require(6726) /* WebUserSettings */.WebUserSettings.LANGUAGE_AND_TIME_PANEL, [WINDOWS]: require(6726) /* WebUserSettings */.WebUserSettings.SYSTEM_PANEL, [LINUX]: require(6726) /* WebUserSettings */.WebUserSettings.SYSTEM_PANEL, [STREAMER_MODE]: require(6726) /* WebUserSettings */.WebUserSettings.STREAMER_MODE_CATEGORY, [ADVANCED]: require(6726) /* WebUserSettings */.WebUserSettings.DEVELOPER_PANEL, [ACTIVITY_PRIVACY]: require(6726) /* WebUserSettings */.WebUserSettings.ACTIVITY_PRIVACY_PANEL, [REGISTERED_GAMES]: require(6726) /* WebUserSettings */.WebUserSettings.REGISTERED_GAMES_PANEL, [OVERLAY]: require(6726) /* WebUserSettings */.WebUserSettings.OVERLAY_PANEL, [EXPERIMENTS]: require(6726) /* WebUserSettings */.WebUserSettings.EXPERIMENTS_PANEL, [DEVELOPER_OPTIONS]: require(6726) /* WebUserSettings */.WebUserSettings.DEVELOPER_OPTIONS_PANEL };
+  let obj = { [closure_4.ACCOUNT]: WebUserSettings.WebUserSettings.ACCOUNT_PANEL, [ACCOUNT_STANDING]: WebUserSettings.WebUserSettings.ACCOUNT_STANDING_CATEGORY, [ACCOUNT_ACCOUNT_STANDING]: WebUserSettings.WebUserSettings.ACCOUNT_STANDING_CATEGORY, [PROFILE_CUSTOMIZATION]: WebUserSettings.WebUserSettings.PROFILE_PANEL, [CONTENT_AND_SOCIAL]: WebUserSettings.WebUserSettings.MESSAGING_PERMISSIONS_PANEL, [CONNECTED_GAMES]: WebUserSettings.WebUserSettings.CONNECTED_GAMES_CATEGORY, [CONTENT_AND_SOCIAL_CONNECTED_GAMES]: WebUserSettings.WebUserSettings.CONNECTED_GAMES_CATEGORY, [DATA_AND_PRIVACY]: WebUserSettings.WebUserSettings.DATA_AND_PRIVACY_PANEL, [PRIVACY_AND_SAFETY]: WebUserSettings.WebUserSettings.DATA_AND_PRIVACY_PANEL, [FAMILY_CENTER]: WebUserSettings.WebUserSettings.FAMILY_CENTER_PANEL, [SESSIONS]: WebUserSettings.WebUserSettings.SESSIONS_PANEL, [AUTHORIZED_APPS]: WebUserSettings.WebUserSettings.AUTHORIZED_APPS_CATEGORY, [CONNECTIONS]: WebUserSettings.WebUserSettings.CONNECTIONS_CATEGORY, [CLIPS]: WebUserSettings.WebUserSettings.CLIPS_PANEL, [PREMIUM]: WebUserSettings.WebUserSettings.NITRO_PANEL, [GUILD_BOOSTING]: WebUserSettings.WebUserSettings.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, [SUBSCRIPTIONS]: WebUserSettings.WebUserSettings.SUBSCRIPTIONS_PANEL, [SUBSCRIPTIONS_ROLE_SUBSCRIPTIONS]: WebUserSettings.WebUserSettings.SUBSCRIPTIONS_PANEL, [INVENTORY]: WebUserSettings.WebUserSettings.GIFT_PANEL, [BILLING]: WebUserSettings.WebUserSettings.BILLING_PANEL, [APPEARANCE]: WebUserSettings.WebUserSettings.APPEARANCE_PANEL, [ACCESSIBILITY]: WebUserSettings.WebUserSettings.ACCESSIBILITY_PANEL, [VOICE]: WebUserSettings.WebUserSettings.VOICE_AND_VIDEO_PANEL, [POGGERMODE]: WebUserSettings.WebUserSettings.POGGERMODE_PANEL, [TEXT]: WebUserSettings.WebUserSettings.APPEARANCE_MESSAGES_CATEGORY, [NOTIFICATIONS]: WebUserSettings.WebUserSettings.NOTIFICATIONS_PANEL, [EMAILS]: WebUserSettings.WebUserSettings.NOTIFICATIONS_EMAIL_CATEGORY, [NOTIFICATIONS_EMAILS]: WebUserSettings.WebUserSettings.NOTIFICATIONS_EMAIL_CATEGORY, [KEYBINDS]: WebUserSettings.WebUserSettings.SYSTEM_CUSTOM_KEYBINDS_CATEGORY, [SYSTEM]: WebUserSettings.WebUserSettings.SYSTEM_PANEL, [LANGUAGE]: WebUserSettings.WebUserSettings.LANGUAGE_AND_TIME_PANEL, [WINDOWS]: WebUserSettings.WebUserSettings.SYSTEM_PANEL, [LINUX]: WebUserSettings.WebUserSettings.SYSTEM_PANEL, [STREAMER_MODE]: WebUserSettings.WebUserSettings.STREAMER_MODE_CATEGORY, [ADVANCED]: WebUserSettings.WebUserSettings.DEVELOPER_PANEL, [ACTIVITY_PRIVACY]: WebUserSettings.WebUserSettings.ACTIVITY_PRIVACY_PANEL, [REGISTERED_GAMES]: WebUserSettings.WebUserSettings.REGISTERED_GAMES_PANEL, [OVERLAY]: WebUserSettings.WebUserSettings.OVERLAY_PANEL, [EXPERIMENTS]: WebUserSettings.WebUserSettings.EXPERIMENTS_PANEL, [DEVELOPER_OPTIONS]: WebUserSettings.WebUserSettings.DEVELOPER_OPTIONS_PANEL };
   ({ ACCOUNT_STANDING, ACCOUNT_ACCOUNT_STANDING, PROFILE_CUSTOMIZATION, CONTENT_AND_SOCIAL, CONNECTED_GAMES, CONTENT_AND_SOCIAL_CONNECTED_GAMES, DATA_AND_PRIVACY, PRIVACY_AND_SAFETY, FAMILY_CENTER, SESSIONS, AUTHORIZED_APPS, CONNECTIONS, CLIPS, PREMIUM, GUILD_BOOSTING, SUBSCRIPTIONS, SUBSCRIPTIONS_ROLE_SUBSCRIPTIONS, INVENTORY, BILLING, APPEARANCE, ACCESSIBILITY, VOICE, POGGERMODE, TEXT, NOTIFICATIONS, EMAILS, NOTIFICATIONS_EMAILS, KEYBINDS, SYSTEM, LANGUAGE, WINDOWS, LINUX, STREAMER_MODE, ADVANCED, ACTIVITY_PRIVACY, REGISTERED_GAMES, OVERLAY, EXPERIMENTS, DEVELOPER_OPTIONS } = UserSettingsPath);
   let values = Object.values(UserSettingsPath);
   let tmp8;
@@ -118,6 +78,6 @@ export const parseSettingsUrl = function parseSettingsUrl(arg0) {
     const _location = location;
     search = location.search;
   }
-  obj[2] = require(4376) /* keysSorter */.parse(search);
+  obj[2] = keysSorter.parse(search);
   return obj;
 };

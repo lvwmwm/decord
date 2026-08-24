@@ -1,20 +1,20 @@
-// Module ID: 12568
-// Function ID: 12569
+// Module ID: 12622
+// Function ID: 12623
 // Name: VoicePanelRiveMicButton
-// Dependencies: [19, 17, 21, 4104, 9685, 11422, 2]
+// Dependencies: [19, 17, 21, 4107, 9724, 11473, 2]
 // Exports: VoicePanelRiveMicButton
 
-// Module 12568 (VoicePanelRiveMicButton)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 12622 (VoicePanelRiveMicButton)
+import noopAll from "noop" /* 19 */;
+import ManaContext from "ManaContext" /* 4107 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelRiveMicButton.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelRiveMicButton.tsx");
 
 export const VoicePanelRiveMicButton = function VoicePanelRiveMicButton(arg0) {
-  let color;
-  let muted;
   ({ color, muted } = arg0);
   let obj = { style: { width: 24, height: 24, pointerEvents: "none" }, children: null };
   obj = { dataBinding: obj, defaultViewModelInstance: null, fallback: null };
@@ -25,11 +25,11 @@ export const VoicePanelRiveMicButton = function VoicePanelRiveMicButton(arg0) {
   }
   obj[1] = str;
   if (muted) {
-    let MicrophoneIcon = tmp3(9685).MicrophoneSlashIcon;
+    let MicrophoneIcon = tmp3(9724).MicrophoneSlashIcon;
   } else {
-    MicrophoneIcon = tmp3(11422).MicrophoneIcon;
+    MicrophoneIcon = tmp3(11473).MicrophoneIcon;
   }
   obj[2] = <MicrophoneIcon color={color} />;
-  obj[1] = jsx(require(4104) /* ManaContext */.MicrophoneRive, { fill: color, on: !muted });
+  obj[1] = jsx(ManaContext.MicrophoneRive, { fill: color, on: !muted });
   return <View fill={color} on={!muted} />;
 };

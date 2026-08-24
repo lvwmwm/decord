@@ -1,12 +1,14 @@
-// Module ID: 7203
-// Function ID: 7204
+// Module ID: 7241
+// Function ID: 7242
 // Name: STOREFRONT_MARKETING_GUILD_ID
 // Dependencies: [1929, 2]
 // Exports: getChannelsGameShopPrefix, isGameShopPath
 
-// Module 7203 (STOREFRONT_MARKETING_GUILD_ID)
-import { Environments } from "Environments";
+// Module 7241 (STOREFRONT_MARKETING_GUILD_ID)
+import set from "set" /* 2 */;
+import Environments2 from "Environments" /* 1929 */;
 
+const Environments = Environments2.Environments;
 let str = "1193841000108531764";
 if (window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.STAGING) {
   str = "1438570979889512448";
@@ -16,7 +18,7 @@ if (window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.STAGING) {
   tmp2 = null;
 }
 const re0 = /^\/(?:channels\/\d+\/)?game-shop(?:\/|$)/;
-const result = require("set").fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontConstants.tsx");
+const result = set.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontConstants.tsx");
 
 export const STOREFRONT_MARKETING_GUILD_ID = str;
 export const STOREFRONT_MARKETING_GUILD_ID_TEST = tmp2;

@@ -1,18 +1,19 @@
-// Module ID: 7409
-// Function ID: 7410
+// Module ID: 7447
+// Function ID: 7448
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 4661, 712, 4310, 7410, 7417, 1236, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4314, 7448, 7455, 1236, 4739, 2]
 // Exports: PremiumPill
 
-// Module 7409 (PremiumPill)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7447 (PremiumPill)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_6 = createCacheKey.createStyles((arg0) => {
-  const tmp3 = importDefault(712);
+  const tmp3 = ThemesDefault;
   if (arg0) {
     let WHITE = tmp3.unsafe_rawColors.BLACK;
     let tmp5 = tmp;
@@ -26,11 +27,9 @@ let closure_6 = createCacheKey.createStyles((arg0) => {
   obj[1] = { textAlign: "center" };
   return obj;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/premium/native/PremiumPill.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/PremiumPill.tsx");
 
 export const PremiumPill = (discountOffer) => {
-  let style;
-  let useWhiteBackground;
   discountOffer = discountOffer.discountOffer;
   let flag = discountOffer.shouldShowDiscountUpsell;
   if (flag === undefined) {
@@ -75,10 +74,11 @@ export const PremiumPill = (discountOffer) => {
     }
     return num;
   }, items);
-  const tmp8 = flag(flag2[6])(memo, 60000);
-  callback = tmp8;
+  const tmp8Result = flag(flag2[6])(memo, 60000, undefined, isNaN(memo));
+  callback = tmp8Result;
+  const tmp8 = flag(flag2[6]);
   premiumTrialOfferPremiumType = discountOffer(flag2[7]).usePremiumTrialOfferPremiumType();
-  const items1 = [flag2, discountOffer, flag, trialOffer, premiumType, premiumTrialOfferPremiumType, tmp8.days, flag3];
+  const items1 = [flag2, discountOffer, flag, trialOffer, premiumType, premiumTrialOfferPremiumType, tmp8Result.days, flag3];
   const str3 = premiumType.useMemo(() => {
     if (flag2) {
       const intl4 = discountOffer(flag2[8]).intl;
@@ -98,14 +98,14 @@ export const PremiumPill = (discountOffer) => {
         if (premiumType === premiumTrialOfferPremiumType) {
           if (!flag3) {
             const _Number = Number;
-            if (!Number.isNaN(_undefined.days)) {
+            if (!Number.isNaN(days.days)) {
               const intl = discountOffer(flag2[8]).intl;
               obj = { days: null };
               const _Math = Math;
               obj[0] = Math.max(tmp9.days, 1);
               let formatToPlainStringResult = intl.formatToPlainString(discountOffer(flag2[8]).t["+FgdjP"], obj);
             }
-            tmp9 = _undefined;
+            tmp9 = days;
           }
           const intl2 = discountOffer(flag2[8]).intl;
           formatToPlainStringResult = intl2.string(discountOffer(flag2[8]).t.qVcfa0);
@@ -114,7 +114,7 @@ export const PremiumPill = (discountOffer) => {
     }
     return stringResult;
   }, items1);
-  let tmp10 = null;
+  let tmp11 = null;
   if (null != str3) {
     let obj = { style: null, children: null };
     const items2 = [tmp6.pillContainer, style];
@@ -124,7 +124,7 @@ export const PremiumPill = (discountOffer) => {
     obj[2] = tmp6.discountPillText;
     obj[3] = str3.toUpperCase();
     obj[1] = flag3(tmp(tmp2[9]).Text, obj);
-    tmp10 = flag3(trialOffer, obj);
+    tmp11 = flag3(trialOffer, obj);
   }
-  return tmp10;
+  return tmp11;
 };

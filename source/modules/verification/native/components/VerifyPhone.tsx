@@ -1,23 +1,19 @@
-// Module ID: 8655
-// Function ID: 8656
+// Module ID: 8692
+// Function ID: 8693
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 21, 8629, 8656, 8657, 1236, 2]
+// Dependencies: [5, 32, 19, 21, 8666, 8693, 8694, 1236, 2]
 // Exports: default
 
-// Module 8655 (VerifyPhone)
-import SmsAutofillManager from "SmsAutofillManager";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 8692 (VerifyPhone)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("noop").fileFinishedImporting("modules/verification/native/components/VerifyPhone.tsx");
+const result = require("set").fileFinishedImporting("modules/verification/native/components/VerifyPhone.tsx");
 
 export default function VerifyPhone(phone) {
-  let backgroundStyle;
-  let disableKeyboardAvoidingView;
-  let error;
-  let onCodeEnteredIntercept;
   phone = phone.phone;
   let _require = phone;
   let flag = phone.loading;
@@ -36,10 +32,10 @@ export default function VerifyPhone(phone) {
   callback2 = tmp2[1];
   _require = undefined;
   _require = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0, token) {
       if (c6 === 2) {
         c6 = 3;
@@ -52,7 +48,7 @@ export default function VerifyPhone(phone) {
           obj[0] = token;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -67,15 +63,15 @@ export default function VerifyPhone(phone) {
               obj[0] = token;
               return obj;
             } else {
-              let closure_2 = tmp3;
+              closure_2 = tmp3;
               token = tmp7;
               token = undefined;
-              let c4 = 1;
-              if (null != outer1_1) {
+              c4 = 1;
+              if (null != closure_1_1) {
                 c5 = 3;
                 c6 = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = outer1_1(closure_0);
+                obj1 = { value: null, done: false };
+                obj1[0] = closure_1_1(closure_0);
                 return obj1;
               }
             }
@@ -87,16 +83,16 @@ export default function VerifyPhone(phone) {
               if (body != null) {
                 message = body.message;
               }
-              outer1_3(message);
+              closure_1_3(message);
               c6 = 3;
-              const tmp16 = outer1_3;
+              const tmp16 = closure_1_3;
             } else if (2 === tmp7) {
               if (arg0 === 1) {
                 c6 = 3;
                 throw token;
               } else if (arg0 !== 2) {
                 token = token.token;
-                outer1_2(token);
+                closure_1_2(token);
                 c4 = 0;
               }
             } else if (arg0 === 1) {
@@ -111,7 +107,7 @@ export default function VerifyPhone(phone) {
             } else if (token) {
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
             c4 = 0;
             c6 = 3;
@@ -150,9 +146,9 @@ export default function VerifyPhone(phone) {
   }, items);
   _require = undefined;
   _require = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     return (function*(arg0) {
       if (c3 === 2) {
         c3 = 3;
@@ -165,7 +161,7 @@ export default function VerifyPhone(phone) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -180,12 +176,12 @@ export default function VerifyPhone(phone) {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_1 = tmp4;
-              outer1_4(true);
+              closure_1 = tmp4;
+              closure_1_4(true);
               c2 = 1;
               c3 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_5(closure_0);
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_5(closure_0);
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -197,9 +193,9 @@ export default function VerifyPhone(phone) {
             obj[0] = arg1;
             return obj;
           } else {
-            outer1_4(false);
+            closure_1_4(false);
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;

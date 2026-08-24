@@ -4,7 +4,9 @@
 // Dependencies: [17, 1121]
 
 // Module 1120 (DEFAULT_BUNDLE_NAME)
-import { Platform } from "get ActivityIndicator";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ANDROID_DEFAULT_BUNDLE_NAME from "ANDROID_DEFAULT_BUNDLE_NAME" /* 1121 */;
 
+const Platform = get_ActivityIndicator.Platform;
 
-export const DEFAULT_BUNDLE_NAME = require("ANDROID_DEFAULT_BUNDLE_NAME").ANDROID_DEFAULT_BUNDLE_NAME;
+export const DEFAULT_BUNDLE_NAME = ANDROID_DEFAULT_BUNDLE_NAME.ANDROID_DEFAULT_BUNDLE_NAME;

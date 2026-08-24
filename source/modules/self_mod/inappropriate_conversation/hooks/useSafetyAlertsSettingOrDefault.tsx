@@ -1,20 +1,22 @@
-// Module ID: 10577
-// Function ID: 10578
+// Module ID: 10616
+// Function ID: 10617
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1340, 1922, 589, 8152, 10578, 2]
+// Dependencies: [1340, 1922, 589, 8191, 10617, 2]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 10577 (useSafetyAlertsSettingOrDefault)
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 10616 (useSafetyAlertsSettingOrDefault)
+import initialize from "initialize" /* 589 */;
+import useUserIsTeen from "useUserIsTeen" /* 8191 */;
+import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx");
 
 export const useSafetyAlertsSettingOrDefault = function useSafetyAlertsSettingOrDefault() {
   currentUser = currentUser.getCurrentUser();
-  const items = [handleConnectionClosedOrResumed];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
+  const items = [closure_2];
+  const stateFromStores = initialize.useStateFromStores(items, () => {
     const privacy = settings.settings.privacy;
     let flag;
     if (privacy != null) {
@@ -27,9 +29,9 @@ export const useSafetyAlertsSettingOrDefault = function useSafetyAlertsSettingOr
     }
     return flag;
   });
-  const obj2 = require(589) /* initialize */;
-  let userIsTeen = require(8152) /* useUserIsTeen */.useUserIsTeen();
-  const obj3 = require(8152) /* useUserIsTeen */;
+  const obj2 = initialize;
+  let userIsTeen = useUserIsTeen.useUserIsTeen();
+  const obj3 = useUserIsTeen;
   let tmp3 = !userIsTeen;
   if (userIsTeen) {
     tmp3 = !obj4.useIsEligibleForInappropriateConversationDefaultOn({ location: "useSafetyAlertsSettingOrDefault" });

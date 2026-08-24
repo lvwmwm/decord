@@ -1,11 +1,14 @@
-// Module ID: 4090
-// Function ID: 4091
-// Dependencies: [17, 4085, 2]
+// Module ID: 4093
+// Function ID: 4094
+// Dependencies: [17, 4088, 2]
 
-// Module 4090
-import { Linking } from "get ActivityIndicator";
+// Module 4093
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import sanitizeURLPart from "sanitizeURLPart" /* 4088 */;
 
-const result = require("set").fileFinishedImporting("lib/native/Linking.tsx");
+const Linking = get_ActivityIndicator.Linking;
+const result = set.fileFinishedImporting("lib/native/Linking.tsx");
 
 export default {
   openURL(arg0, arg1) {
@@ -13,10 +16,10 @@ export default {
     if (arg2 === undefined) {
       flag = true;
     }
-    require(4085) /* sanitizeURLPart */.default(arg0, arg1, { allowExternal: flag });
+    sanitizeURLPart.default(arg0, arg1, { allowExternal: flag });
   },
   openURLExternally(href, SAFARI) {
-    require(4085) /* sanitizeURLPart */.default(href, SAFARI, { forceExternalBrowser: true });
+    sanitizeURLPart.default(href, SAFARI, { forceExternalBrowser: true });
   },
   performURLNavigation(href) {
     Linking.openURL(href).catch(() => {

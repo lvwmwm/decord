@@ -5,7 +5,9 @@
 // Exports: useWorkletCallback
 
 // Module 1818 (useWorkletCallback)
-require("noop").useCallback;
+import noop from "noop" /* 19 */;
+
+noop.useCallback;
 
 export const useWorkletCallback = function useWorkletCallback(fn, items) {
   if (items == null) {

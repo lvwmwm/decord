@@ -1,18 +1,19 @@
-// Module ID: 5974
-// Function ID: 5975
+// Module ID: 6005
+// Function ID: 6006
 // Name: NitroGradientBackgroundAbstractUI
-// Dependencies: [21, 5449, 5975, 2]
+// Dependencies: [21, 5454, 6006, 2]
 // Exports: NitroGradientBackgroundAbstractUI
 
-// Module 5974 (NitroGradientBackgroundAbstractUI)
-import { jsx } from "jsxProd";
+// Module 6005 (NitroGradientBackgroundAbstractUI)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6006 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroGradientBackgroundAbstractUI.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroGradientBackgroundAbstractUI.native.tsx");
 
 export const NitroGradientBackgroundAbstractUI = function NitroGradientBackgroundAbstractUI(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const NitroGradientBackgroundAbstractUI = function NitroGradientBackgroun
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5975);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroGradientBackgroundAbstractUI = function NitroGradientBackgroun
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

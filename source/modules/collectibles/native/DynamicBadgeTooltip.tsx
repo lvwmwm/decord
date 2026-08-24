@@ -1,21 +1,19 @@
-// Module ID: 9277
-// Function ID: 9278
+// Module ID: 9314
+// Function ID: 9315
 // Name: DynamicBadgeTooltip
-// Dependencies: [32, 19, 21, 1236, 9270, 5433, 2]
+// Dependencies: [32, 19, 21, 1236, 9307, 5438, 2]
 // Exports: DynamicBadgeTooltip
 
-// Module 9277 (DynamicBadgeTooltip)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 9314 (DynamicBadgeTooltip)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let closure_5 = { top: 14, bottom: 14, left: 14, right: 14 };
-const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/DynamicBadgeTooltip.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/native/DynamicBadgeTooltip.tsx");
 
 export const DynamicBadgeTooltip = function DynamicBadgeTooltip(tooltipPosition) {
-  let accessibilityLabel;
-  let children;
   let str = tooltipPosition.tooltipPosition;
   ({ children, accessibilityLabel } = tooltipPosition);
   if (str === undefined) {

@@ -1,20 +1,23 @@
-// Module ID: 16432
-// Function ID: 16433
+// Module ID: 16527
+// Function ID: 16528
 // Name: getStreamIssueReportOptions
-// Dependencies: [4532, 1236, 2]
+// Dependencies: [4537, 1236, 2]
 // Exports: default
 
-// Module 16432 (getStreamIssueReportOptions)
-import { StreamIssueReportReasons } from "StreamIssueReportReasons";
+// Module 16527 (getStreamIssueReportOptions)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import StreamIssueReportReasons2 from "StreamIssueReportReasons" /* 4537 */;
 
-const result = require("set").fileFinishedImporting("modules/go_live/utils/getStreamIssueReportOptions.tsx");
+const StreamIssueReportReasons = StreamIssueReportReasons2.StreamIssueReportReasons;
+const result = set.fileFinishedImporting("modules/go_live/utils/getStreamIssueReportOptions.tsx");
 
 export default function getStreamIssueReportOptions(isEndStream) {
   isEndStream = isEndStream.isEndStream;
   let obj = { id: "black-screen", value: StreamIssueReportReasons.BLACK_SCREEN, label: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   const string = intl.string;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (isEndStream) {
     let stringResult = string(t["0X5Zbq"]);
     let tmp6 = tmp2;
@@ -46,7 +49,7 @@ export default function getStreamIssueReportOptions(isEndStream) {
   }
   obj[2] = string3Result;
   items[2] = obj;
-  const obj1 = { id: "out-of-sync", value: StreamIssueReportReasons.OUT_OF_SYNC, label: null };
+  obj1 = { id: "out-of-sync", value: StreamIssueReportReasons.OUT_OF_SYNC, label: null };
   const intl4 = tmp6(1236).intl;
   const string4 = intl4.string;
   const t4 = tmp6(1236).t;

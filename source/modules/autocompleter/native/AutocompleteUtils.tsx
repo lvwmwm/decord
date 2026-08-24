@@ -1,43 +1,40 @@
-// Module ID: 10176
-// Function ID: 10177
+// Module ID: 10215
+// Function ID: 10216
 // Name: AutocompleteFormDivider
-// Dependencies: [19, 17, 1395, 1980, 4030, 1922, 676, 10177, 6810, 21, 4661, 712, 4984, 6714, 4219, 7693, 2]
+// Dependencies: [19, 17, 1395, 1981, 4033, 1922, 676, 10216, 6847, 21, 4668, 712, 4989, 6751, 4223, 7731, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 10176 (AutocompleteFormDivider)
-import "noop";
-import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord";
-import comparator from "comparator";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT";
-import regExp from "regExp";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10215 (AutocompleteFormDivider)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import computeChannelName from "computeChannelName" /* 4989 */;
+import DividerDefault from "Divider" /* 7731 */;
+import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord" /* 1395 */;
+import closure_4 from "comparator" /* 1981 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT" /* 10216 */;
+import regExp from "regExp" /* 6847 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_12;
-let closure_14;
-let error;
-let map1;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function AutocompleteFormDivider() {
-  const tmp = createCacheKey();
-  return jsx(importDefault(7693), { style: createCacheKey().itemDivider });
+  const tmp = callback2();
+  return jsx(DividerDefault, { style: callback2().itemDivider });
 }
-({ AutoCompleteResultTypes: error, WHITESPACE_RE: metroImportAll } = ME);
+noopAll;
+({ AutoCompleteResultTypes: error, WHITESPACE_RE: closure_8 } = ME);
 ({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: c9, AUTOCOMPLETE_ROW_HEIGHT: c10 } = AUTOCOMPLETE_ROW_HEIGHT);
 ({ CHANNEL_SENTINEL: unpackModuleId, EMOJI_SENTINEL: closure_12, GAME_MENTION_SENTINEL: map1, MENTION_SENTINEL: closure_14 } = regExp);
 const hairlineWidth = require("get ActivityIndicator").StyleSheet.hairlineWidth;
 createCacheKey = { itemDivider: null };
-createCacheKey = { marginLeft: 16, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey = { marginLeft: 16, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("createChannelRecord").fileFinishedImporting("modules/autocompleter/native/AutocompleteUtils.tsx");
+let closure_17 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/autocompleter/native/AutocompleteUtils.tsx");
 
 export const getItemLayout = function getItemLayout(arg0, index) {
   let type;
@@ -64,8 +61,8 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
       let combined = "" + tmp34 + user.tag;
     } else {
       const _HermesInternal8 = HermesInternal;
-      combined = "" + tmp34 + importDefault(4219).getUserTag(user);
-      const tmp32Result = importDefault(4219);
+      combined = "" + tmp34 + nameFromUserDefault.getUserTag(user);
+      const tmp32Result = nameFromUserDefault;
     }
     return combined;
   } else if (tmp.GLOBAL === type) {
@@ -76,9 +73,9 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
   } else if (tmp.CHANNEL === type) {
     channel = type.channel;
     if (channel.isThread()) {
-      const obj3 = require(4984) /* computeChannelName */;
+      const obj3 = computeChannelName;
       const _HermesInternal6 = HermesInternal;
-      return "#\"" + obj3.escapeChannelName(require(4984) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, markAllUserIdListsStale)) + "\"";
+      return "#\"" + obj3.escapeChannelName(computeChannelName.computeChannelName(type.channel, closure_6, closure_5)) + "\"";
     } else {
       channel2 = type.channel;
       const guildId = channel2.getGuildId();
@@ -90,15 +87,15 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
             name = tmp16.name;
           }
           if (name == null) {
-            name = require(4984) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, markAllUserIdListsStale);
-            const obj2 = require(4984) /* computeChannelName */;
+            name = computeChannelName.computeChannelName(type.channel, closure_6, closure_5);
+            const obj2 = computeChannelName;
           }
           const _HermesInternal5 = HermesInternal;
           return "" + closure_11 + name;
         }
       }
       const _HermesInternal4 = HermesInternal;
-      return "" + closure_11 + require(4984) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, markAllUserIdListsStale);
+      return "" + closure_11 + computeChannelName.computeChannelName(type.channel, closure_6, closure_5);
     }
   } else if (tmp.GAME_MENTION === type) {
     const _HermesInternal3 = HermesInternal;
@@ -126,8 +123,8 @@ export const getMentionTextWithUser = function getMentionTextWithUser(messageCha
     let combined = "" + tmp3 + user.tag;
   } else {
     const _HermesInternal = HermesInternal;
-    combined = "" + tmp3 + importDefault(4219).getUserTag(user);
-    const tmpResult = importDefault(4219);
+    combined = "" + tmp3 + nameFromUserDefault.getUserTag(user);
+    const tmpResult = nameFromUserDefault;
   }
   return combined;
 };

@@ -1,25 +1,25 @@
-// Module ID: 15770
-// Function ID: 15771
+// Module ID: 15839
+// Function ID: 15840
 // Name: ICYMIBottomLoading
-// Dependencies: [19, 17, 21, 4661, 712, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 2]
 // Exports: ICYMIBottomLoading
 
-// Module 15770 (ICYMIBottomLoading)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15839 (ICYMIBottomLoading)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let obj1;
+noopAll;
 ({ View: obj1, ActivityIndicator: c3 } = get_ActivityIndicator);
 let closure_5 = createCacheKey.createStyles(() => {
   let obj = { container: null };
-  obj = { paddingTop: importDefault(712).space.PX_8, paddingBottom: importDefault(712).space.PX_24, alignItems: "center", justifyContent: "center" };
+  obj = { paddingTop: ThemesDefault.space.PX_8, paddingBottom: ThemesDefault.space.PX_24, alignItems: "center", justifyContent: "center" };
   obj[0] = obj;
   return obj;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/icymi/native/ICYMIBottomLoading.tsx");
+const result = require("set").fileFinishedImporting("modules/icymi/native/ICYMIBottomLoading.tsx");
 
 export const ICYMIBottomLoading = function ICYMIBottomLoading() {
   return <closure_2 style={callback().container}><closure_3 size="small" /></closure_2>;

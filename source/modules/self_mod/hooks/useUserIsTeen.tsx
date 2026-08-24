@@ -1,18 +1,19 @@
-// Module ID: 8152
-// Function ID: 8153
+// Module ID: 8191
+// Function ID: 8192
 // Name: useUserIsTeen
 // Dependencies: [1922, 589, 2]
 // Exports: useUserIsTeen
 
-// Module 8152 (useUserIsTeen)
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 8191 (useUserIsTeen)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/hooks/useUserIsTeen.tsx");
 
 export const useUserIsTeen = function useUserIsTeen() {
-  const items = [mergeGuildAvatar];
-  return false === require(589) /* initialize */.useStateFromStores(items, () => {
+  const items = [closure_2];
+  return false === initialize.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let nsfwAllowed;
     if (currentUser != null) {

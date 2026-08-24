@@ -1,20 +1,23 @@
-// Module ID: 6780
-// Function ID: 6781
+// Module ID: 6817
+// Function ID: 6818
 // Name: openQuarantineModeInfoModal
-// Dependencies: [19, 17, 21, 4237, 4656, 6781, 2007, 2]
+// Dependencies: [19, 17, 21, 4241, 4662, 6818, 2008, 2]
 // Exports: default
 
-// Module 6780 (openQuarantineModeInfoModal)
-import "noop";
-import { Keyboard } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 6817 (openQuarantineModeInfoModal)
+import noopAll from "noop" /* 19 */;
+import getBestActiveInput from "getBestActiveInput" /* 4241 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+import { Keyboard } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/quarantine/openQuarantineModeInfoModal.native.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/quarantine/openQuarantineModeInfoModal.native.tsx");
 
 export default function openQuarantineModeInfoModal() {
   Keyboard.dismiss();
-  let obj = require(4237) /* getBestActiveInput */;
+  let obj = getBestActiveInput;
   const bestActiveInput = obj.getBestActiveInput();
   if (bestActiveInput != null) {
     bestActiveInput.blur();
@@ -22,13 +25,13 @@ export default function openQuarantineModeInfoModal() {
   obj = {
     importer() {
       return callback(paths[6])(paths[5], paths.paths).then((arg0) => {
-        let closure_0 = arg0.default;
+        closure_0 = arg0.default;
         return (arg0) => {
           const merged = Object.assign(arg0);
-          return outer1_4(closure_0, {});
+          return closure_1_4(closure_0, {});
         };
       });
     }
   };
-  importDefault(4656).openLazy(obj);
+  _modDef4662.openLazy(obj);
 };

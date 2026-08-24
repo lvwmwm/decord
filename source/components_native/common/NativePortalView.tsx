@@ -1,26 +1,23 @@
-// Module ID: 8997
-// Function ID: 8998
+// Module ID: 9034
+// Function ID: 9035
 // Name: MediaPlayerManager
-// Dependencies: [19, 17, 21, 4661, 500, 8998, 8999, 2]
+// Dependencies: [19, 17, 21, 4668, 500, 9035, 9036, 2]
 // Exports: createPortalControls, isPortalExpired, markPortalAlive
 
-// Module 8997 (MediaPlayerManager)
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import set from "set";
-import set from "jsxProd";
+// Module 9034 (MediaPlayerManager)
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 9035 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import set from "set" /* 500 */;
 
-let NativeEventEmitter;
-let NativeModules;
-let requireNativeComponent;
 const require = arg1;
 let c3 = importAllResult;
 ({ NativeModules, requireNativeComponent, NativeEventEmitter } = get_ActivityIndicator);
 let closure_5 = createCacheKey.createStyles({ base: { overflow: "hidden" } });
 if (set.isAndroid()) {
-  let importDefaultResult = require("__INTERNAL_VIEW_CONFIG");
+  let importDefaultResult = __INTERNAL_VIEW_CONFIGDefault;
 } else {
   importDefaultResult = requireNativeComponent("DCDPortalView");
 }
@@ -31,8 +28,6 @@ set = new Set();
 const result = set.fileFinishedImporting("components_native/common/NativePortalView.tsx");
 
 export default importAllResult.memo((paused) => {
-  let children;
-  let style;
   paused = paused.paused;
   const muted = paused.muted;
   const onLoad = paused.onLoad;
@@ -40,19 +35,19 @@ export default importAllResult.memo((paused) => {
   const merged = Object.assign(paused, Object.create(null));
   if (null != children) {
     const _Error = Error;
-    const error = new Error("The <NativePortalView> component cannot contain children.");
+    error = new Error("The <NativePortalView> component cannot contain children.");
     throw error;
   } else {
     const items = [merged.portal, paused];
     const layoutEffect = merged.useLayoutEffect(() => {
       if (null != merged.portal) {
-        outer1_7.toggle(tmp.portal, !paused);
+        closure_1_7.toggle(tmp.portal, !paused);
       }
     }, items);
     const items1 = [merged.portal, muted];
     const layoutEffect1 = merged.useLayoutEffect(() => {
       if (null != merged.portal) {
-        outer1_7.setMuted(tmp.portal, muted);
+        closure_1_7.setMuted(tmp.portal, muted);
       }
     }, items1);
     const items2 = [onLoad, merged.portal];
@@ -62,16 +57,16 @@ export default importAllResult.memo((paused) => {
           onLoad();
         }
       }
-      outer1_7.setLoopPlayback(merged.portal, true);
+      closure_1_7.setLoopPlayback(merged.portal, true);
       return () => {
-        outer1_7.setLoopPlayback(portal.portal, false);
+        closure_1_7.setLoopPlayback(portal.portal, false);
         if (obj.isAndroid()) {
-          outer1_1(outer1_2[6]).unregisterView(tmp.portal);
-          const obj2 = outer1_1(outer1_2[6]);
+          closure_1_1(closure_1_2[6]).unregisterView(tmp.portal);
+          const obj2 = closure_1_1(closure_1_2[6]);
         } else {
-          outer1_8.unregisterView(tmp.portal);
+          closure_1_8.unregisterView(tmp.portal);
         }
-        outer1_10.add(portal.portal);
+        closure_1_10.add(portal.portal);
       };
     }, items2);
     const items3 = [onLoad, merged.portal];
@@ -97,21 +92,21 @@ export default importAllResult.memo((paused) => {
   }
 });
 export function createPortalControls(portal) {
-  let closure_0 = portal;
+  closure_0 = portal;
   return {
     seek(arg0) {
-      outer1_7.changeProgress(closure_0, arg0);
+      closure_1_7.changeProgress(closure_0, arg0);
     },
     pause(arg0) {
-      outer1_7.toggle(closure_0, !arg0);
+      closure_1_7.toggle(closure_0, !arg0);
     },
     useSubscribe(arg0, arg1, arg2) {
-      let closure_1 = arg0;
-      let closure_2 = arg1;
-      let closure_3 = arg2;
+      closure_1 = arg0;
+      closure_2 = arg1;
+      closure_3 = arg2;
       const items = [closure_0, arg1, arg0, arg2];
-      const effect = outer1_3.useEffect(() => {
-        let closure_0 = outer1_9.addListener("MediaPlayerProgress", (duration) => {
+      const effect = closure_1_3.useEffect(() => {
+        closure_0 = closure_1_9.addListener("MediaPlayerProgress", (duration) => {
           duration = duration.duration;
           let tmp = duration.id === closure_0;
           if (tmp) {
@@ -121,7 +116,7 @@ export function createPortalControls(portal) {
             lib(duration.time, duration);
           }
         });
-        let closure_1 = outer1_9.addListener("MediaPlayerDownloadProgress", (id) => {
+        closure_1 = closure_1_9.addListener("MediaPlayerDownloadProgress", (id) => {
           let tmp2 = id.id === closure_0;
           if (tmp2) {
             tmp2 = tmp > 0;
@@ -133,7 +128,7 @@ export function createPortalControls(portal) {
             callback(id.progressPercent);
           }
         });
-        let closure_2 = outer1_9.addListener("MediaPlayerPause", (id) => {
+        closure_2 = closure_1_9.addListener("MediaPlayerPause", (id) => {
           if (id.id === closure_0) {
             lib2(tmp);
           }

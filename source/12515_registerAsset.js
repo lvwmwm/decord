@@ -4,7 +4,7 @@
 // Dependencies: [1241]
 
 // Module 12515 (registerAsset)
-import registerAsset from "registerAsset";
+import registerAsset from "registerAsset" /* 1241 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "2deb3f64961131491b7db6bb10903f69", name: "DoorExitIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/user_profile", width: 24, height: 24, scales: [2, 3], hash: "af427c90f62cf9f5d8fe96c2adf6bb3f", name: "ic_video_disabled_white", type: "png" });

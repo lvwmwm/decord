@@ -1,28 +1,29 @@
-// Module ID: 8708
-// Function ID: 8709
+// Module ID: 8745
+// Function ID: 8746
 // Name: map
-// Dependencies: [8709, 8703, 505, 8710, 589, 709, 2]
+// Dependencies: [8746, 8740, 505, 8747, 589, 709, 2]
 
-// Module 8708 (map)
-import FrameLayoutModes from "FrameLayoutModes";
-import { ActivityPanelModes } from "ActivityPanelModes";
-import { NOOP_TRUE } from "sum";
-import { Store } from "initialize";
+// Module 8745 (map)
+import set from "set" /* 2 */;
+import sum from "sum" /* 505 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import ActivityPanelModes2 from "ActivityPanelModes" /* 8740 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 8747 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 8746 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-let obj1;
 ({ FrameIntent: obj1, FrameLayoutModes: c3, getFrameIntentForSurface: c4, isLaunched: c5, makeFrameId: closure_6 } = FrameLayoutModes);
+const ActivityPanelModes = ActivityPanelModes2.ActivityPanelModes;
+const NOOP_TRUE = sum.NOOP_TRUE;
 const map = new Map();
 let c10 = null;
+const Store = initializeDefault.Store;
 class FramesStoreClass extends Store {
 }
 const prototype = FramesStoreClass.prototype;
-prototype["getFrame"] = function getFrame(closure_0) {
-  if (null != closure_0) {
-    return map.get(closure_0);
+prototype["getFrame"] = function getFrame(frameId) {
+  if (null != frameId) {
+    return map.get(frameId);
   }
 };
 prototype["getMainFrame"] = function getMainFrame() {
@@ -55,14 +56,12 @@ prototype["getFrameByIframeId"] = function getFrameByIframeId(iframeId) {
     continue;
   }
 };
-prototype["getFrameBySurface"] = function getFrameBySurface(arg0, arg1) {
-  return map.get(callback3(arg0, arg1));
+prototype["getFrameBySurface"] = function getFrameBySurface(arg0, closure_1) {
+  return map.get(callback3(arg0, closure_1));
 };
 FramesStoreClass.displayName = "FramesStore";
-const framesStoreClass = new FramesStoreClass(require("dispatcher"), {
+const framesStoreClass = new FramesStoreClass(dispatcherDefault, {
   FRAME_LAUNCH_START: function handleFrameLaunchStart(applicationId) {
-    let frameId;
-    let surface;
     ({ frameId, surface } = applicationId);
     const tmp = callback(surface);
     const result = map.set(frameId, { id: frameId, applicationId: applicationId.applicationId, intent: tmp, surface, state: "loading", data: null });
@@ -72,7 +71,7 @@ const framesStoreClass = new FramesStoreClass(require("dispatcher"), {
     let obj = map;
     const value = map.get(frameId);
     if (null != value) {
-      const tmp14 = importDefault(8710)(value.applicationId);
+      const tmp14 = getURLForApplicationDefault(value.applicationId);
       if (null == tmp14) {
         obj.delete(frameId);
         if (c10 === frameId) {
@@ -82,7 +81,7 @@ const framesStoreClass = new FramesStoreClass(require("dispatcher"), {
         obj = {};
         const merged = Object.assign(value);
         obj.state = "launched";
-        obj = { url: null, connectedSince: null, layoutMode: null, activityPanelMode: null, proxyTicket: null, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, iframeId: null };
+        obj = { url: null, connectedSince: null, layoutMode: null, activityPanelMode: null, proxyTicket: null, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, prefersPictureInPictureOnNavigateAway: false, iframeId: null };
         obj[0] = tmp14;
         const _Date = Date;
         obj[1] = Date.now();
@@ -172,9 +171,6 @@ const framesStoreClass = new FramesStoreClass(require("dispatcher"), {
     return flag;
   },
   FRAME_SET_ORIENTATION_LOCK_STATE: function handleOrientationLockState(arg0) {
-    let frameId;
-    let lockState;
-    let pictureInPictureLockState;
     ({ frameId, lockState, pictureInPictureLockState } = arg0);
     let flag = false;
     if (null != frameId) {
@@ -204,6 +200,31 @@ const framesStoreClass = new FramesStoreClass(require("dispatcher"), {
         tmp4 = flag2;
       }
       flag = tmp4;
+    }
+    return flag;
+  },
+  FRAME_SET_PREFERS_PICTURE_IN_PICTURE_ON_NAVIGATE_AWAY: function handleSetPrefersPictureInPictureOnNavigateAway(frameId) {
+    frameId = frameId.frameId;
+    let flag = false;
+    if (null != frameId) {
+      let obj = map;
+      const value = map.get(frameId);
+      let tmp5 = callback2(value);
+      if (tmp5) {
+        let flag2 = tmp2(value.data);
+        if (flag2) {
+          obj = {};
+          const merged = Object.assign(value);
+          obj = {};
+          const merged1 = Object.assign(value.data);
+          obj.prefersPictureInPictureOnNavigateAway = tmp;
+          obj.data = obj;
+          const result = obj.set(frameId, obj);
+          flag2 = true;
+        }
+        tmp5 = flag2;
+      }
+      flag = tmp5;
     }
     return flag;
   },
@@ -257,28 +278,30 @@ const framesStoreClass = new FramesStoreClass(require("dispatcher"), {
     }
     return flag;
   },
-  FRAME_IFRAME_MOUNT: function handleFrameIframeMount(frameId) {
-    frameId = frameId.frameId;
+  FRAME_IFRAME_MOUNT: function handleFrameIframeMount(arg0) {
+    ({ frameId, iframeId } = arg0);
     let flag = false;
     if (null != frameId) {
       let obj = map;
       const value = map.get(frameId);
-      let tmp5 = callback2(value);
-      if (tmp5) {
-        let flag2 = tmp2(value.data);
+      let tmp4 = callback2(value);
+      if (tmp4) {
+        let flag2 = tmp(value.data);
         if (flag2) {
           obj = {};
           const merged = Object.assign(value);
+          const data = value.data;
           obj = {};
-          const merged1 = Object.assign(value.data);
-          obj.iframeId = tmp;
+          const merged1 = Object.assign(data);
+          obj.iframeId = iframeId;
+          obj.prefersPictureInPictureOnNavigateAway = data.iframeId === iframeId && data.prefersPictureInPictureOnNavigateAway;
           obj.data = obj;
           const result = obj.set(frameId, obj);
           flag2 = true;
         }
-        tmp5 = flag2;
+        tmp4 = flag2;
       }
-      flag = tmp5;
+      flag = tmp4;
     }
     return flag;
   },
@@ -297,6 +320,7 @@ const framesStoreClass = new FramesStoreClass(require("dispatcher"), {
           obj = {};
           const merged1 = Object.assign(value.data);
           obj.iframeId = null;
+          obj.prefersPictureInPictureOnNavigateAway = false;
           obj.data = obj;
           const result = obj.set(frameId, obj);
           flag2 = true;
@@ -332,6 +356,6 @@ const framesStoreClass = new FramesStoreClass(require("dispatcher"), {
     return flag;
   }
 });
-let result = require("sum").fileFinishedImporting("modules/frames/FramesStore.tsx");
+let result = set.fileFinishedImporting("modules/frames/FramesStore.tsx");
 
 export default framesStoreClass;

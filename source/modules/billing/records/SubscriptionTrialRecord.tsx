@@ -1,11 +1,12 @@
-// Module ID: 7426
-// Function ID: 7427
+// Module ID: 7464
+// Function ID: 7465
 // Name: createFromServer
 // Dependencies: [1931, 2]
 
-// Module 7426 (createFromServer)
-import "toJS";
+// Module 7464 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
 
+toJSDefault;
 let SubscriptionTrialRecord;
 class SubscriptionTrialRecord extends tmp2 {
   constructor(arg0) {
@@ -16,10 +17,6 @@ class SubscriptionTrialRecord extends tmp2 {
   }
 }
 SubscriptionTrialRecord["createFromServer"] = function createFromServer(arg0) {
-  let id;
-  let interval;
-  let interval_count;
-  let sku_id;
   ({ id, interval } = arg0);
   ({ interval_count, sku_id } = arg0);
   if (typeof SubscriptionTrialRecord !== "function") {

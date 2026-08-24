@@ -1,10 +1,12 @@
-// Module ID: 15058
-// Function ID: 15059
+// Module ID: 15122
+// Function ID: 15123
 // Name: frozen
 // Dependencies: [2]
 
-// Module 15058 (frozen)
+// Module 15122 (frozen)
+import set from "set" /* 2 */;
+
 const frozen = Object.freeze({ VOICE_ACTIVITY: "Voice Activity" });
-const result = require("set").fileFinishedImporting("modules/user_settings/notifications/native/codegen/MobileNotifSettingsSections.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/notifications/native/codegen/MobileNotifSettingsSections.tsx");
 
 export const MobileNotifSettingsSections = frozen;

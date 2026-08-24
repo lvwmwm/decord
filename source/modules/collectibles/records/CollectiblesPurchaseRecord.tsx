@@ -1,14 +1,14 @@
-// Module ID: 5336
-// Function ID: 5337
+// Module ID: 5341
+// Function ID: 5342
 // Name: fromServer
-// Dependencies: [5304, 5305, 5303, 678, 676, 4517, 2]
+// Dependencies: [5309, 5310, 5308, 678, 676, 4522, 2]
 
-// Module 5336 (fromServer)
-import fromServer from "fromServer";
-import { createCollectiblesItemsFromServerResponse as closure_3 } from "createCollectiblesItemsFromServerResponse";
-import { CollectiblesVariantProductRecord as closure_4 } from "fromServer";
-import { REWARD_CATEGORY_AND_REWARD_SKU_IDS as closure_5 } from "items";
-import { PREMIUM_TYPE_NONE } from "ME";
+// Module 5341 (fromServer)
+import closure_2 from "fromServer" /* 5309 */;
+import { createCollectiblesItemsFromServerResponse as closure_3 } from "createCollectiblesItemsFromServerResponse" /* 5310 */;
+import { CollectiblesVariantProductRecord as closure_4 } from "fromServer" /* 5308 */;
+import { REWARD_CATEGORY_AND_REWARD_SKU_IDS as closure_5 } from "items" /* 678 */;
+import { PREMIUM_TYPE_NONE } from "ME" /* 676 */;
 
 let prototype;
 prototype = function CollectiblesPurchaseRecord(arg0) {
@@ -16,22 +16,6 @@ prototype = function CollectiblesPurchaseRecord(arg0) {
   return Object.create(new.target.prototype);
 }.prototype;
 prototype["fromServer"] = function fromServer(sku_id) {
-  let base_variant_name;
-  let base_variant_sku_id;
-  let bundled_products;
-  let category_sku_id;
-  let eligible_offers;
-  let expires_at;
-  let google_sku_ids;
-  let name;
-  let premium_type;
-  let prices;
-  let purchase_type;
-  let purchased_at;
-  let type;
-  let variant_label;
-  let variant_value;
-  let variants;
   sku_id = sku_id.sku_id;
   ({ premium_type, bundled_products, variants, purchased_at, expires_at } = sku_id);
   ({ type, name, category_sku_id, prices, base_variant_name, base_variant_sku_id, variant_label, variant_value, purchase_type } = sku_id);
@@ -42,7 +26,7 @@ prototype["fromServer"] = function fromServer(sku_id) {
   }
   const someResult = closure_5.some((rewardSkuId) => rewardSkuId.rewardSkuId === sku_id);
   let mapped;
-  const tmp5 = sku_id(4517)(prices);
+  const tmp5 = sku_id(4522)(prices);
   if (bundled_products != null) {
     mapped = bundled_products.map(fromServer.fromServer);
   }
@@ -86,6 +70,6 @@ prototype["fromServer"] = function fromServer(sku_id) {
   obj.expiresAt = date1;
   return obj;
 };
-const result = require("fromServer").fileFinishedImporting("modules/collectibles/records/CollectiblesPurchaseRecord.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesPurchaseRecord.tsx");
 
 export default prototype;

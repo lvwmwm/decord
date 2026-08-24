@@ -1,14 +1,17 @@
-// Module ID: 10202
-// Function ID: 10203
+// Module ID: 10241
+// Function ID: 10242
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 10202 (dispatcher)
-const result = require("set").fileFinishedImporting("modules/tooltip/TooltipActionCreators.tsx");
+// Module 10241 (dispatcher)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/tooltip/TooltipActionCreators.tsx");
 
 export default {
   acknowledgeTooltip(GIF_PICKER_TOOLTIP) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "TOOLTIP_ACKNOWLEDGE", tooltip: GIF_PICKER_TOOLTIP };
     obj.dispatch(obj);
   },
@@ -16,7 +19,7 @@ export default {
     if (flag === undefined) {
       flag = false;
     }
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "TOOLTIP_SHOW_ATTEMPT", tooltip: closure_0, ignoreMaxShownLimit: flag };
     obj.dispatch(obj);
   }

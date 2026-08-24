@@ -1,16 +1,17 @@
-// Module ID: 10936
-// Function ID: 10937
+// Module ID: 10975
+// Function ID: 10976
 // Name: getGoLiveAutoQualityExperimentConfig
-// Dependencies: [1212, 4562, 4524, 1368, 589, 595, 9860, 2]
+// Dependencies: [1212, 4567, 4529, 1368, 589, 595, 9899, 2]
 // Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 10936 (getGoLiveAutoQualityExperimentConfig)
-import initialize from "initialize";
-import ApplicationStreamPresets from "ApplicationStreamPresets";
-import { ApplicationStreamPresets } from "RESOLUTION_720";
-import importDefaultResult from "getUnitId";
+// Module 10975 (getGoLiveAutoQualityExperimentConfig)
+import Storage3 from "Storage" /* 595 */;
+import closure_2 from "initialize" /* 1212 */;
+import closure_3 from "ApplicationStreamPresets" /* 4567 */;
+import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4529 */;
+import importDefaultResult from "getUnitId" /* 1368 */;
 
-const require = arg1;
+require = arg1;
 let obj = { allowAutoQuality: false, defaultAutoQuality: false, migrateAutoQuality: false };
 const GoLiveAutoQualityMigrationVersion = "GoLiveAutoQualityMigrationVersion";
 obj = { name: "2025-10-go-live-auto-quality", kind: "user", defaultConfig: obj, variations: null };
@@ -26,19 +27,19 @@ obj2.allowAutoQuality = true;
 obj2.defaultAutoQuality = true;
 obj[2] = obj2;
 obj[3] = obj;
-let closure_6 = require("getUnitId")(obj);
-let result = require("RESOLUTION_720").fileFinishedImporting("modules/go_live/GoLiveAutoQualityExperiment.tsx");
+let closure_6 = importDefaultResult(obj);
+let result = require("set").fileFinishedImporting("modules/go_live/GoLiveAutoQualityExperiment.tsx");
 
 export const getGoLiveAutoQualityExperimentConfig = function getGoLiveAutoQualityExperimentConfig(location) {
   return store.getConfig({ location: location.location });
 };
 export const useGoLiveAutoQualityExperimentConfig = function useGoLiveAutoQualityExperimentConfig(location) {
   location = location.location;
-  const items = [initialize];
-  return location(589).useStateFromStores(items, () => outer1_6.getConfig({ location }));
+  const items = [closure_2];
+  return location(589).useStateFromStores(items, () => closure_1_6.getConfig({ location }));
 };
 export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage3.Storage;
   let num = Storage.get(GoLiveAutoQualityMigrationVersion);
   if (num == null) {
     num = 0;
@@ -50,10 +51,10 @@ export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
         const obj = { preset: null, resolution: null, frameRate: null, soundshareEnabled: null, noTrack: true };
         obj[0] = tmp9.PRESET_AUTO;
         ({ resolution: obj2[1], fps: obj2[2], soundshareEnabled: obj2[3] } = state);
-        tmp(9860).updateStreamSettings(obj);
+        tmp(9899).updateStreamSettings(obj);
         const Storage2 = tmp(595).Storage;
         const result = Storage2.set(GoLiveAutoQualityMigrationVersion, 1);
-        const tmpResult = tmp(9860);
+        const tmpResult = tmp(9899);
       }
     }
   }

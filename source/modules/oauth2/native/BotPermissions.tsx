@@ -1,75 +1,67 @@
-// Module ID: 9823
-// Function ID: 9824
+// Module ID: 9862
+// Function ID: 9863
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 4661, 712, 4026, 506, 9775, 9824, 4733, 6368, 4734, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 4029, 506, 9814, 9863, 4738, 6399, 4739, 1236, 2]
 // Exports: default
 
-// Module 9823 (BotPermissions)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9862 (BotPermissions)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { disabledPermissionIcon: null };
-createCacheKey = { width: 24, height: 24, flexGrow: 0, flexShrink: 0, alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.ICON_FEEDBACK_CRITICAL };
+createCacheKey = { width: 24, height: 24, flexGrow: 0, flexShrink: 0, alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.ICON_FEEDBACK_CRITICAL };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/oauth2/native/BotPermissions.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/oauth2/native/BotPermissions.tsx");
 
 export default function BotPermissions(guild) {
-  let application;
-  let c5;
-  let c6;
-  let importAll;
-  let onPermissionsChange;
-  let permissions;
   ({ application, permissions } = guild);
   ({ deniedPermissions: importAll, onPermissionsChange } = guild);
   guild = guild.guild;
   let React;
   c5 = undefined;
   let callback;
-  React = createCacheKey();
+  React = callback3();
   [c5, c6] = guild(React.useState(importAll(onPermissionsChange[6]).NONE), 2);
   let items = [guild.permissions, onPermissionsChange, permissions];
   const effect = React.useEffect(() => {
     onPermissionsChange(true, permissions);
-    _undefined(outer1_1(onPermissionsChange[7]).invert(guild.permissions));
-    const obj = outer1_1(onPermissionsChange[7]);
-    onPermissionsChange(false, outer1_1(onPermissionsChange[7]).invert(guild.permissions));
+    _undefined(closure_1_1(onPermissionsChange[7]).invert(guild.permissions));
+    const obj = closure_1_1(onPermissionsChange[7]);
+    onPermissionsChange(false, closure_1_1(onPermissionsChange[7]).invert(guild.permissions));
   }, items);
   const OrderedPermissions = permissions(onPermissionsChange[8]).OrderedPermissions;
-  const found = OrderedPermissions.filter((arg0) => outer1_1(onPermissionsChange[7]).has(permissions, arg0));
-  const found1 = found.filter((arg0) => !outer1_1(onPermissionsChange[7]).has(c5, arg0));
+  const found = OrderedPermissions.filter((arg0) => closure_1_1(onPermissionsChange[7]).has(permissions, arg0));
+  const found1 = found.filter((arg0) => !closure_1_1(onPermissionsChange[7]).has(c5, arg0));
   const mapped = found1.map((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     let obj = permissions(onPermissionsChange[8]);
     const permissionName = obj.getPermissionName(arg0);
-    const obj2 = outer1_1(onPermissionsChange[7]);
+    const obj2 = closure_1_1(onPermissionsChange[7]);
     obj = {
-      checked: !outer1_1(onPermissionsChange[7]).has(closure_1, arg0),
+      checked: !closure_1_1(onPermissionsChange[7]).has(closure_1, arg0),
       onToggle(arg0) {
-        return outer1_2(arg0, closure_0);
+        return closure_1_2(arg0, closure_0);
       },
       label: permissionName
     };
     return _undefined(permissions(onPermissionsChange[9]).Checkbox, obj, String(arg0));
   });
-  const found2 = found.filter((arg0) => outer1_1(onPermissionsChange[7]).has(c5, arg0));
+  const found2 = found.filter((arg0) => closure_1_1(onPermissionsChange[7]).has(c5, arg0));
   const mapped1 = found2.map((arg0) => {
     let obj = permissions(onPermissionsChange[8]);
     const permissionName = obj.getPermissionName(arg0);
     obj = { direction: "horizontal", align: "center", children: null };
-    obj = { style: obj.disabledPermissionIcon, children: null };
-    obj[1] = _undefined(permissions(onPermissionsChange[11]).XSmallIcon, { size: "sm", color: "white" });
+    obj = { style: obj.disabledPermissionIcon, children: _undefined(permissions(onPermissionsChange[11]).XSmallIcon, { size: "sm", color: "white" }) };
     const items = [_undefined(c5, obj), _undefined(permissions(onPermissionsChange[12]).Text, { variant: "text-md/medium", children: permissionName })];
     obj[2] = items;
-    return outer1_7(permissions(onPermissionsChange[10]).Stack, obj, String(arg0));
+    return closure_1_7(permissions(onPermissionsChange[10]).Stack, obj, String(arg0));
   });
   let obj = { children: null };
   obj = { variant: "text-sm/medium", color: "text-subtle", children: null };
@@ -81,7 +73,7 @@ export default function BotPermissions(guild) {
   const children = [callback2(permissions(onPermissionsChange[10]).Stack, obj), ];
   let tmp6Result = null;
   if (mapped1.length > 0) {
-    const obj1 = { children: null };
+    obj1 = { children: null };
     let obj2 = { variant: "text-sm/medium", color: "text-subtle", children: null };
     const intl2 = tmp4(tmp[13]).intl;
     const obj3 = { applicationName: null };

@@ -4,7 +4,9 @@
 // Dependencies: [66]
 
 // Module 149 (topLevelTypeToEventType)
-const require = arg1;
+import map from "map" /* 66 */;
+
+require = arg1;
 const dependencyMap = arg6;
 let closure_2 = {};
 arg5.topLevelTypeToEventType = function topLevelTypeToEventType(str) {
@@ -26,7 +28,7 @@ arg5.getEventTypePropName = function getEventTypePropName(arg0, arg1) {
   if (undefined !== table[arg0]) {
     return arg1 ? tmp3.captured : tmp3.bubbled;
   } else {
-    for (const key10005 in require(66) /* map */.customBubblingEventTypes) {
+    for (const key10005 in map.customBubblingEventTypes) {
       let tmp22 = key10005;
       let charCodeAtResult = key10005.charCodeAt(3);
       let formatted = key10005;
@@ -45,7 +47,7 @@ arg5.getEventTypePropName = function getEventTypePropName(arg0, arg1) {
       } else {
         let tmp5 = require;
         let tmp6 = dependencyMap;
-        let phasedRegistrationNames = require(66) /* map */.customBubblingEventTypes[key10005].phasedRegistrationNames;
+        let phasedRegistrationNames = map.customBubblingEventTypes[key10005].phasedRegistrationNames;
         if (null == phasedRegistrationNames) {
           continue;
         } else {
@@ -99,7 +101,7 @@ arg5.getEventTypePropName = function getEventTypePropName(arg0, arg1) {
         } else {
           let tmp14 = require;
           let tmp15 = dependencyMap;
-          let tmp16 = require(66) /* map */.customDirectEventTypes[arr];
+          let tmp16 = map.customDirectEventTypes[arr];
           if (null == tmp16.registrationName) {
             continue;
           } else {

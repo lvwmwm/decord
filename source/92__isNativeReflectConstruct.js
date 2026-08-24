@@ -4,11 +4,13 @@
 // Dependencies: [41, 42, 93, 95, 96, 98, 46, 89]
 
 // Module 92 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _get from "_get";
-import importDefaultResult from "_createClass";
+import EventEmitterDefault from "EventEmitter" /* 89 */;
+import _inheritsDefault from "_inherits" /* 98 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import closure_5 from "_get" /* 96 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
 const RCTDeviceEventEmitterImpl = arg1;
 function _isNativeReflectConstruct() {
@@ -22,10 +24,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -33,10 +35,10 @@ function _isNativeReflectConstruct() {
 class RCTDeviceEventEmitterImpl {
   constructor() {
     self = this;
-    tmp = outer1_2(this, RCTDeviceEventEmitterImpl);
-    tmp2 = __esModule;
-    obj = __esModule(RCTDeviceEventEmitterImpl);
-    tmp3 = __esModule;
+    tmp = closure_2(this, RCTDeviceEventEmitterImpl);
+    tmp2 = closure_4;
+    obj = closure_4(RCTDeviceEventEmitterImpl);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -50,7 +52,7 @@ class RCTDeviceEventEmitterImpl {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(RCTDeviceEventEmitterImpl, require("EventEmitter"));
+_inheritsDefault(RCTDeviceEventEmitterImpl, EventEmitterDefault);
 let items = [
   {
     key: "emit",
@@ -67,13 +69,13 @@ let items = [
           if (1) {
             prototype = closure_0.prototype;
           }
-          const tmpResult = _get(_getPrototypeOf(prototype), "emit", arg2);
-          let closure_1 = tmpResult;
+          const tmpResult = closure_5(closure_4(prototype), "emit", arg2);
+          closure_1 = tmpResult;
           let fn = tmpResult;
           if (2) {
             fn = tmpResult;
             if (typeof tmpResult === "function") {
-              fn = (arg0) => tmpResult.apply(closure_0, arg0);
+              fn = (arg0) => callback.apply(closure_0, arg0);
             }
           }
           return fn;
@@ -84,13 +86,13 @@ let items = [
           if (1) {
             prototype = closure_0.prototype;
           }
-          const tmpResult = _get(_getPrototypeOf(prototype), "emit", arg2);
-          let closure_1 = tmpResult;
+          const tmpResult = closure_5(closure_4(prototype), "emit", arg2);
+          closure_1 = tmpResult;
           let fn = tmpResult;
           if (2) {
             fn = tmpResult;
             if (typeof tmpResult === "function") {
-              fn = (arg0) => tmpResult.apply(closure_0, arg0);
+              fn = (arg0) => callback.apply(closure_0, arg0);
             }
           }
           return fn;

@@ -1,27 +1,28 @@
-// Module ID: 4870
-// Function ID: 4871
+// Module ID: 4875
+// Function ID: 4876
 // Name: getUploadPayload
-// Dependencies: [1994, 1218, 706, 4830, 12, 698, 2]
+// Dependencies: [1995, 1218, 706, 4835, 12, 698, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
-// Module 4870 (getUploadPayload)
-import _getSystemLocale from "_getSystemLocale";
-import fetchFingerprint from "fetchFingerprint";
-import refreshSourceMapCookie from "refreshSourceMapCookie";
+// Module 4875 (getUploadPayload)
+import applyDefault from "apply" /* 12 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import closure_3 from "_getSystemLocale" /* 1995 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "refreshSourceMapCookie" /* 706 */;
 
 const require = arg1;
-function getUploadPayload(outer1_0) {
-  const obj = { filename: outer1_0.filename, file_size: outer1_0.currentSize, id: null, original_content_type: "Array" };
-  obj[2] = importDefault(12).uniqueId();
+function getUploadPayload(closure_0) {
+  const obj = { filename: closure_0.filename, file_size: closure_0.currentSize, id: applyDefault.uniqueId(), original_content_type: "ct" };
   return obj;
 }
-let result = require("refreshSourceMapCookie").fileFinishedImporting("lib/uploader/native/CloudUploaderUtils.tsx");
+let result = require("set").fileFinishedImporting("lib/uploader/native/CloudUploaderUtils.tsx");
 
 export default { getUploadPayload };
 export const prepareMessagePayload = function prepareMessagePayload(arg0, arr) {
   const items = [];
   const item = arr.forEach((closure_0, closure_1) => {
-    let obj = items(outer1_2[3]);
+    let obj = items(closure_1_2[3]);
     obj = {};
     const merged = Object.assign(obj.getAttachmentPayload(closure_0, closure_1));
     items.push(obj);
@@ -31,16 +32,16 @@ export const prepareMessagePayload = function prepareMessagePayload(arg0, arr) {
       let obj = {};
       let merged = Object.assign(arg2);
       const items1 = [];
-      HermesBuiltin.arraySpread(items, HermesBuiltin.arraySpread(importDefault(12).get(obj, arg3, []), 0));
-      const obj3 = importDefault(12);
-      let result = importDefault(12).set(obj, arg3, items1);
-      const obj4 = importDefault(12);
+      HermesBuiltin.arraySpread(items, HermesBuiltin.arraySpread(applyDefault.get(obj, arg3, []), 0));
+      const obj3 = applyDefault;
+      let result = applyDefault.set(obj, arg3, items1);
+      const obj4 = applyDefault;
     }
     obj = { Authorization: null, "X-Debug-Options": null, "Accept-Language": null };
     obj[0] = arg0;
     obj[1] = debugOptionsHeaderValue.getDebugOptionsHeaderValue();
     obj[2] = locale.locale;
-    const superPropertiesBase64 = importDefault(698).getSuperPropertiesBase64();
+    const superPropertiesBase64 = expandEventPropertiesDefault.getSuperPropertiesBase64();
     if (null != superPropertiesBase64) {
       obj["X-Super-Properties"] = superPropertiesBase64;
     }
@@ -48,7 +49,7 @@ export const prepareMessagePayload = function prepareMessagePayload(arg0, arr) {
     if (null != fingerprint) {
       obj["X-Fingerprint"] = fingerprint;
     }
-    const obj1 = { headers: null, body: null };
+    obj1 = { headers: null, body: null };
     obj1[0] = obj;
     obj1[1] = result;
     return obj1;

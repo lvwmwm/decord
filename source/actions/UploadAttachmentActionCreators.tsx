@@ -1,65 +1,54 @@
-// Module ID: 8466
-// Function ID: 8467
+// Module ID: 8505
+// Function ID: 8506
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 8466 (dispatcher)
-const result = require("set").fileFinishedImporting("actions/UploadAttachmentActionCreators.tsx");
+// Module 8505 (dispatcher)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("actions/UploadAttachmentActionCreators.tsx");
 
 export default {
   popFirstFile(channelId) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPLOAD_ATTACHMENT_POP_FILE", channelId };
     obj.dispatch(obj);
   },
   addFiles(arg0) {
-    let channelId;
-    let draftType;
-    let files;
     ({ files, channelId, draftType } = arg0);
-    importDefault(709).dispatch({ type: "UPLOAD_ATTACHMENT_ADD_FILES", channelId, files, draftType });
+    dispatcherDefault.dispatch({ type: "UPLOAD_ATTACHMENT_ADD_FILES", channelId, files, draftType });
   },
   addFile(arg0) {
-    let allowOptimization;
-    let channelId;
-    let draftType;
-    let file;
     ({ file, channelId, draftType, allowOptimization } = arg0);
     const items = [file];
-    importDefault(709).dispatch({ type: "UPLOAD_ATTACHMENT_ADD_FILES", channelId, files: items, draftType, allowOptimization });
+    dispatcherDefault.dispatch({ type: "UPLOAD_ATTACHMENT_ADD_FILES", channelId, files: items, draftType, allowOptimization });
   },
   remove(channelId, id, draftType) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPLOAD_ATTACHMENT_REMOVE_FILE", channelId, id, draftType };
     obj.dispatch(obj);
   },
   removeFiles(channelId, found, InteractionModal) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPLOAD_ATTACHMENT_REMOVE_FILES", channelId, attachmentIds: found, draftType: InteractionModal };
     obj.dispatch(obj);
   },
   clearAll(channelId, draftType) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPLOAD_ATTACHMENT_CLEAR_ALL_FILES", channelId, draftType };
     obj.dispatch(obj);
   },
   update(channelId, id, draftType) {
-    let description;
-    let filename;
-    let spoiler;
-    let thumbnail;
     ({ description, filename, spoiler, thumbnail } = arg3);
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPLOAD_ATTACHMENT_UPDATE_FILE", channelId, id, filename, description, thumbnail, spoiler, draftType };
     obj.dispatch(obj);
   },
   setUploads(uploads) {
-    let channelId;
-    let draftType;
-    let resetState;
     uploads = uploads.uploads;
     ({ channelId, draftType, resetState } = uploads);
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPLOAD_ATTACHMENT_SET_UPLOADS", channelId, uploads: null, draftType: null };
     let mapped = uploads;
     if (resetState) {
@@ -70,12 +59,7 @@ export default {
     obj.dispatch(obj);
   },
   setFile(arg0) {
-    let allowOptimization;
-    let channelId;
-    let draftType;
-    let file;
-    let id;
     ({ file, channelId, id, draftType, allowOptimization } = arg0);
-    importDefault(709).dispatch({ type: "UPLOAD_ATTACHMENT_SET_FILE", channelId, id, file, draftType, allowOptimization });
+    dispatcherDefault.dispatch({ type: "UPLOAD_ATTACHMENT_SET_FILE", channelId, id, file, draftType, allowOptimization });
   }
 };

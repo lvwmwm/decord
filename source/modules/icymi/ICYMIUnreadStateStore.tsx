@@ -1,14 +1,18 @@
-// Module ID: 9055
-// Function ID: 9056
+// Module ID: 9092
+// Function ID: 9093
 // Name: initialize
-// Dependencies: [687, 7589, 9056, 589, 709, 2]
+// Dependencies: [687, 7627, 9093, 589, 709, 2]
 
-// Module 9055 (initialize)
-import { DeviceSettingsStore } from "initialize";
+// Module 9092 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7627 */;
 
-const require = arg1;
-let closure_2 = 7 * require("set").Millis.DAY;
+require = arg1;
+let closure_2 = 7 * setDefault.Millis.DAY;
 let closure_3 = { readIdToTimestampMap: {} };
+const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class ICYMIUnreadStateStore extends DeviceSettingsStore {
 }
 const prototype = ICYMIUnreadStateStore.prototype;
@@ -18,7 +22,7 @@ prototype["initialize"] = function initialize(arg0) {
     let obj = { readIdToTimestampMap: null };
     obj[0] = {};
     const _Date = Date;
-    let closure_0 = Date.now() - closure_2;
+    closure_0 = Date.now() - closure_2;
     const _Object = Object;
     const keys = Object.keys(obj.readIdToTimestampMap);
     const found = keys.filter((arg0) => obj.readIdToTimestampMap[arg0] < closure_0);
@@ -37,19 +41,17 @@ prototype["getUserAgnosticState"] = function getUserAgnosticState() {
 };
 ICYMIUnreadStateStore.displayName = "ICYMIUnreadStateStore";
 ICYMIUnreadStateStore.persistKey = "ICYMIUnreadStateStore";
-const iCYMIUnreadStateStore = new ICYMIUnreadStateStore(require("dispatcher"), {
+const iCYMIUnreadStateStore = new ICYMIUnreadStateStore(dispatcherDefault, {
   ICYMI_ACK_ITEMS: function handleTabAck(arg0) {
-    let items;
-    let require;
     ({ items, override: require } = arg0);
     const item = items.forEach((id) => {
       let tmp = null != id;
       if (tmp) {
-        tmp = null == outer1_3.readIdToTimestampMap[id.id] || closure_0;
-        const tmp3 = null == outer1_3.readIdToTimestampMap[id.id] || closure_0;
+        tmp = null == closure_1_3.readIdToTimestampMap[id.id] || closure_0;
+        const tmp3 = null == closure_1_3.readIdToTimestampMap[id.id] || closure_0;
       }
       if (tmp) {
-        outer1_3.readIdToTimestampMap[id.id] = id.timestamp;
+        closure_1_3.readIdToTimestampMap[id.id] = id.timestamp;
       }
     });
   },
@@ -60,7 +62,7 @@ const iCYMIUnreadStateStore = new ICYMIUnreadStateStore(require("dispatcher"), {
       let tmp2 = nextResult;
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      if (nextResult.type === require(7589) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
+      if (nextResult.type === MessageEmbedTypes.ICYMIItemTypes.MESSAGE) {
         let tmp11 = closure_3;
         let tmp12 = nextResult;
         let result = null != closure_3.readIdToTimestampMap[tmp2.id];
@@ -74,7 +76,7 @@ const iCYMIUnreadStateStore = new ICYMIUnreadStateStore(require("dispatcher"), {
           result = null != prop;
         }
         if (!result) {
-          let tmp3Result = tmp3(9056);
+          let tmp3Result = tmp3(9093);
           let tmp8 = nextResult;
           result = tmp3Result.isItemUnreadInChannel(tmp2.data.channel_id, tmp2.data.message_id);
         }
@@ -91,6 +93,6 @@ const iCYMIUnreadStateStore = new ICYMIUnreadStateStore(require("dispatcher"), {
     closure_3.readIdToTimestampMap = {};
   }
 });
-let result = require("generateHydrationId").fileFinishedImporting("modules/icymi/ICYMIUnreadStateStore.tsx");
+let result = require("set").fileFinishedImporting("modules/icymi/ICYMIUnreadStateStore.tsx");
 
 export default iCYMIUnreadStateStore;

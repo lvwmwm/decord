@@ -4,12 +4,14 @@
 // Dependencies: [1849]
 
 // Module 1872 (TEST_ID_KEYBOARD_TOOLBAR)
+import AndroidSoftInputModes from "AndroidSoftInputModes" /* 1849 */;
+
 const combined = "" + "keyboard.toolbar" + ".previous";
 const combined1 = "" + "keyboard.toolbar" + ".next";
 const combined2 = "" + "keyboard.toolbar" + ".content";
 const combined3 = "" + "keyboard.toolbar" + ".done";
 let num = 0;
-const tmp6 = require("AndroidSoftInputModes").KEYBOARD_BORDER_RADIUS > 0;
+const tmp6 = AndroidSoftInputModes.KEYBOARD_BORDER_RADIUS > 0;
 if (tmp6) {
   num = -11;
 }

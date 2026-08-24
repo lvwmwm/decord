@@ -5,24 +5,25 @@
 // Exports: observe, registerObserver, unobserve, unregisterObserver
 
 // Module 264 (getTargetFromInstanceHandle)
-import _slicedToArray from "_slicedToArray";
+import isEnabledAll from "isEnabled" /* 46 */;
+import getInstanceHandle from "getInstanceHandle" /* 136 */;
+import NativeIntersectionObserverCxxDefault from "NativeIntersectionObserverCxx" /* 265 */;
+import closure_4 from "_slicedToArray" /* 32 */;
 
-const require = arg1;
+require = arg1;
 function getTargetFromInstanceHandle(arg0) {
   return weakMap.get(arg0);
 }
 function notifyIntersectionObservers() {
-  importAll(46).beginEvent("IntersectionObserverManager.notifyIntersectionObservers");
+  isEnabledAll.beginEvent("IntersectionObserverManager.notifyIntersectionObservers");
   try {
     (function doNotifyIntersectionObservers() {
-      let callback;
-      let observer;
       if (null == callback2(265)) {
         callback5();
       } else {
         const takeRecordsResult = tmp(265).takeRecords();
         const _Map = Map;
-        const map = new Map();
+        map = new Map();
         const iter = takeRecordsResult[Symbol.iterator]();
         const nextResult = iter.next();
         while (iter !== undefined) {
@@ -83,14 +84,14 @@ function notifyIntersectionObservers() {
       tmp = callback2;
       const tmp2 = dependencyMap;
     })();
-    importAll(46).endEvent();
+    isEnabledAll.endEvent();
   } catch (tmp9) {
     tmp3(tmp[4]).endEvent();
     throw tmp9;
   }
 }
 function throwIfNoNativeIntersectionObserver() {
-  const error = new Error("Missing native implementation of IntersectionObserver");
+  error = new Error("Missing native implementation of IntersectionObserver");
   throw error;
 }
 let c5 = 1;
@@ -110,21 +111,18 @@ export const unregisterObserver = function unregisterObserver(arg0) {
     deleteResult = 0 === map.size;
   }
   if (deleteResult) {
-    const obj = importDefault(265);
+    const obj = NativeIntersectionObserverCxxDefault;
     if (obj != null) {
       obj.disconnect();
     }
-    let c6 = false;
+    c6 = false;
   }
 };
 export const observe = function observe(arg0) {
-  let intersectionObserverId;
-  let root;
-  let target;
   ({ intersectionObserverId, root, target } = arg0);
-  if (null == importDefault(265)) {
+  if (null == NativeIntersectionObserverCxxDefault) {
     const _Error = Error;
-    const error = new Error("Missing native implementation of IntersectionObserver");
+    error = new Error("Missing native implementation of IntersectionObserver");
     throw error;
   } else {
     const value = map.get(intersectionObserverId);
@@ -134,7 +132,7 @@ export const observe = function observe(arg0) {
       console.error("IntersectionObserverManager: could not start observing target because IntersectionObserver with ID " + intersectionObserverId + " was not registered.");
       return false;
     } else {
-      const nativeNodeReference = require(136) /* getInstanceHandle */.getNativeNodeReference(target);
+      const nativeNodeReference = getInstanceHandle.getNativeNodeReference(target);
       if (null == nativeNodeReference) {
         return false;
       } else {
@@ -175,12 +173,12 @@ export const observe = function observe(arg0) {
           return true;
         }
       }
-      const obj4 = require(136) /* getInstanceHandle */;
+      const obj4 = getInstanceHandle;
     }
   }
 };
 export const unobserve = function unobserve(arg0, arg1) {
-  if (null != importDefault(265)) {
+  if (null != NativeIntersectionObserverCxxDefault) {
     if (null != map.get(arg0)) {
       const value = weakMap1.get(arg1);
       if (null != value) {
@@ -197,7 +195,7 @@ export const unobserve = function unobserve(arg0, arg1) {
     }
   } else {
     const _Error = Error;
-    const error = new Error("Missing native implementation of IntersectionObserver");
+    error = new Error("Missing native implementation of IntersectionObserver");
     throw error;
   }
 };

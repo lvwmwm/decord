@@ -1,18 +1,18 @@
-// Module ID: 9785
-// Function ID: 9786
+// Module ID: 9824
+// Function ID: 9825
 // Name: PlayStationLinkPreConnect
-// Dependencies: [19, 9782, 21, 4661, 1500, 9786, 9760, 1236, 2]
+// Dependencies: [19, 9821, 21, 4668, 1500, 9825, 9799, 1236, 2]
 // Exports: PlayStationLinkPreConnect
 
-// Module 9785 (PlayStationLinkPreConnect)
-import noop from "noop";
-import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9824 (PlayStationLinkPreConnect)
+import closure_3 from "noop" /* 19 */;
+import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes" /* 9821 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_6 = createCacheKey.createStyles({ image: { width: 231, height: 160 } });
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkPreConnect.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkPreConnect.tsx");
 
 export const PlayStationLinkPreConnect = function PlayStationLinkPreConnect(platformType) {
   let navigation;
@@ -21,10 +21,10 @@ export const PlayStationLinkPreConnect = function PlayStationLinkPreConnect(plat
   const items = [navigation];
   const items1 = [navigation];
   const callback = React.useCallback((arg0) => {
-    navigation.push(outer1_4.DISCORD_CONSENT, arg0);
+    navigation.push(closure_1_4.DISCORD_CONSENT, arg0);
   }, items);
   const callback1 = React.useCallback(() => {
-    navigation.push(outer1_4.ERROR, {});
+    navigation.push(closure_1_4.ERROR, {});
   }, items1);
   const memo = React.useMemo(() => ({ uri: callback(table[5]) }), []);
   obj = { platformType: platformType.platformType, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image, title: null, body: null };
@@ -32,5 +32,5 @@ export const PlayStationLinkPreConnect = function PlayStationLinkPreConnect(plat
   obj[5] = intl.string(navigation(1236).t["6n+UPR"]);
   const intl2 = navigation(1236).intl;
   obj[6] = intl2.string(navigation(1236).t.JaaqIf);
-  return jsx(navigation(9760).TwoWayLinkPreConnect, { platformType: platformType.platformType, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image, title: null, body: null });
+  return jsx(navigation(9799).TwoWayLinkPreConnect, { platformType: platformType.platformType, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image, title: null, body: null });
 };

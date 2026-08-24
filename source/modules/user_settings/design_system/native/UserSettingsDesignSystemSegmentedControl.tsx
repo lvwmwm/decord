@@ -1,38 +1,35 @@
-// Module ID: 14917
-// Function ID: 14918
+// Module ID: 14981
+// Function ID: 14982
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 4661, 712, 4734, 8799, 4733, 10096, 11785, 4745, 1351, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 4739, 8836, 4738, 10135, 11834, 4750, 1351, 2]
 // Exports: default
 
-// Module 14917 (UserSettingsDesignSystemSegmentedControl)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14981 (UserSettingsDesignSystemSegmentedControl)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
 ({ jsxs: closure_6, jsx: error } = jsxProd);
 createCacheKey = { container: { margin: 16, flex: 1, alignItems: "center", padding: 40 }, item: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderColor: require("Themes").colors.BORDER_STRONG, flex: 1, alignItems: "center", justifyContent: "center", height: 400 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderColor: ThemesDefault.colors.BORDER_STRONG, flex: 1, alignItems: "center", justifyContent: "center", height: 400 };
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemSegmentedControl.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemSegmentedControl.tsx");
 
 export default function UserSettingsDesignSystemSegmentedControl() {
   const tmp = callback(React.useState(0), 2);
   let first = tmp[1];
   let tmp2 = callback(React.useState(3), 2);
   first = tmp2[0];
-  let dependencyMap = first;
+  dependencyMap = first;
   callback = tmp2[1];
   dependencyMap = undefined;
-  let tmp5 = createCacheKey();
+  let tmp5 = callback4();
   dependencyMap = tmp5;
   let items = [first, tmp5.item];
   const memo = React.useMemo(() => {
@@ -47,19 +44,19 @@ export default function UserSettingsDesignSystemSegmentedControl() {
         obj[0] = "Item " + sum;
         let _HermesInternal2 = HermesInternal;
         obj[1] = "item-" + sum;
-        let tmp2 = outer1_7;
-        let tmp3 = outer1_4;
+        let tmp2 = closure_1_7;
+        let tmp3 = closure_1_4;
         obj = { style: null, children: null };
-        let tmp4 = _undefined;
-        obj[0] = _undefined.item;
-        let tmp5 = outer1_6;
+        let tmp4 = item;
+        obj[0] = item.item;
+        let tmp5 = closure_1_6;
         let tmp6 = first;
-        let tmp7 = _undefined;
+        let tmp7 = item;
         obj = { variant: "heading-xxl/bold", children: null };
         let items1 = ["Item ", sum];
         obj[1] = items1;
-        obj[1] = outer1_6(first(_undefined[6]).Text, obj);
-        obj[2] = outer1_7(outer1_4, obj);
+        obj[1] = closure_1_6(first(item[6]).Text, obj);
+        obj[2] = closure_1_7(closure_1_4, obj);
         let arr = items.push(obj);
         let tmp9 = first;
         num = sum;
@@ -67,49 +64,49 @@ export default function UserSettingsDesignSystemSegmentedControl() {
     }
     return items;
   }, items);
-  let obj = first(8799);
+  let obj = first(8836);
   const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: tmp[0], defaultIndex: 1 });
   obj = { children: null };
   obj = {
-    style: createCacheKey().container,
+    style: callback4().container,
     onLayout: React.useCallback((nativeEvent) => {
       first(nativeEvent.nativeEvent.layout.width);
     }, []),
     children: null
   };
-  const obj1 = { spacing: 24, children: null };
-  let items1 = [callback3(first(10096).SegmentedControl, { state: segmentedControlState }), callback3(first(11785).SegmentedControlPages, { state: segmentedControlState }), ];
+  obj1 = { spacing: 24, children: null };
+  let items1 = [callback3(first(10135).SegmentedControl, { state: segmentedControlState }), callback3(first(11834).SegmentedControlPages, { state: segmentedControlState }), ];
   const obj2 = { spacing: 8, direction: "horizontal", children: null };
   const items2 = [
-    callback3(first(4745).Button, {
+    callback3(first(4750).Button, {
       text: "Add Tab",
       variant: "active",
       size: "sm",
       disabled: first >= 5,
       onPress() {
-        const sum = _undefined + 1;
+        const sum = item + 1;
         callback(sum);
-        const AccessibilityAnnouncer = first(_undefined[12]).AccessibilityAnnouncer;
+        const AccessibilityAnnouncer = first(item[12]).AccessibilityAnnouncer;
         AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
       }
     }),
-    callback3(first(4745).Button, {
+    callback3(first(4750).Button, {
       text: "Remove Tab",
       variant: "destructive",
       size: "sm",
       disabled: 2 === first,
       onPress() {
-        const diff = _undefined - 1;
+        const diff = item - 1;
         callback(diff);
-        const AccessibilityAnnouncer = first(_undefined[12]).AccessibilityAnnouncer;
+        const AccessibilityAnnouncer = first(item[12]).AccessibilityAnnouncer;
         AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
       }
     })
   ];
   obj2[2] = items2;
-  items1[2] = callback2(first(4733).Stack, obj2);
+  items1[2] = callback2(first(4738).Stack, obj2);
   obj1[1] = items1;
-  obj[2] = callback2(first(4733).Stack, obj1);
+  obj[2] = callback2(first(4738).Stack, obj1);
   obj[0] = callback3(closure_4, obj);
   return callback3(closure_5, obj);
 };

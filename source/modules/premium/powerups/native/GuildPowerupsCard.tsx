@@ -1,46 +1,46 @@
-// Module ID: 11737
-// Function ID: 11738
+// Module ID: 11786
+// Function ID: 11787
 // Name: importDefaultResult1
-// Dependencies: [19, 17, 21, 4661, 689, 712, 6292, 2]
+// Dependencies: [19, 17, 21, 4668, 689, 712, 6323, 2]
 // Exports: default
 
-// Module 11737 (importDefaultResult1)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "n";
-import importDefaultResult1 from "n";
-import importDefaultResult2 from "n";
+// Module 11786 (importDefaultResult1)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import PressableCard from "PressableCard" /* 6323 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "n" /* 689 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { cardActive: null, cardExpiring: null, cardRemoving: null };
 createCacheKey = { borderColor: null };
-const importDefaultResultResult = require("n")(require("Themes").unsafe_rawColors.GREEN_360);
-createCacheKey[0] = require("n")(require("Themes").unsafe_rawColors.GREEN_360).alpha(0.35).hex();
+const importDefaultResultResult = importDefaultResult(ThemesDefault.unsafe_rawColors.GREEN_360);
+createCacheKey[0] = importDefaultResult(ThemesDefault.unsafe_rawColors.GREEN_360).alpha(0.35).hex();
 createCacheKey[0] = createCacheKey;
 const obj1 = { borderColor: null };
-const alphaResult = require("n")(require("Themes").unsafe_rawColors.GREEN_360).alpha(0.35);
-const importDefaultResult1Result = require("n")(require("Themes").unsafe_rawColors.YELLOW_300);
-obj1[0] = require("n")(require("Themes").unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+const alphaResult = importDefaultResult(ThemesDefault.unsafe_rawColors.GREEN_360).alpha(0.35);
+const importDefaultResult1 = importDefaultResult;
+const importDefaultResult1Result = importDefaultResult(ThemesDefault.unsafe_rawColors.YELLOW_300);
+obj1[0] = importDefaultResult(ThemesDefault.unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
 createCacheKey[1] = obj1;
 const obj2 = { borderColor: null };
-const alphaResult1 = require("n")(require("Themes").unsafe_rawColors.YELLOW_300).alpha(0.35);
-const importDefaultResult2Result = require("n")(require("Themes").unsafe_rawColors.YELLOW_300);
-obj2[0] = require("n")(require("Themes").unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+const alphaResult1 = importDefaultResult(ThemesDefault.unsafe_rawColors.YELLOW_300).alpha(0.35);
+const importDefaultResult2 = importDefaultResult;
+const importDefaultResult2Result = importDefaultResult(ThemesDefault.unsafe_rawColors.YELLOW_300);
+obj2[0] = importDefaultResult(ThemesDefault.unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
 createCacheKey[2] = obj2;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const alphaResult2 = require("n")(require("Themes").unsafe_rawColors.YELLOW_300).alpha(0.35);
-const result = require("jsxProd").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsCard.tsx");
+let closure_4 = createCacheKey.createStyles(createCacheKey);
+const alphaResult2 = importDefaultResult(ThemesDefault.unsafe_rawColors.YELLOW_300).alpha(0.35);
+const result = require("set").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsCard.tsx");
 
 export default function GuildPowerupsCard(status) {
-  let children;
-  let containerStyle;
-  let style;
   status = status.status;
   ({ children, containerStyle, style } = status);
   const merged = Object.assign(status, Object.create(null));
-  const tmp2 = createCacheKey();
+  const tmp2 = callback();
   let obj = { style: containerStyle, children: null };
   obj = { border: "faint", radius: 16, shadow: "none" };
   const merged1 = Object.assign(merged);
@@ -62,6 +62,6 @@ export default function GuildPowerupsCard(status) {
   items[3] = style;
   obj.style = items;
   obj.children = children;
-  obj[1] = jsx(require(6292) /* PressableCard */.Card, { border: "faint", radius: 16, shadow: "none" });
+  obj[1] = jsx(PressableCard.Card, { border: "faint", radius: 16, shadow: "none" });
   return <View border="faint" radius={16} shadow="none" />;
 };

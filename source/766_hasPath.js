@@ -4,11 +4,18 @@
 // Dependencies: [728, 725, 604, 628, 599, 618]
 
 // Module 766 (hasPath)
+import _mod599 from "module_599" /* 599 */;
+import isLength from "isLength" /* 604 */;
+import baseIsArguments from "baseIsArguments" /* 618 */;
+import isIndex from "isIndex" /* 628 */;
+import toKey from "toKey" /* 725 */;
+import castPath from "castPath" /* 728 */;
+
 
 export default function hasPath(arg0, arg1, arg2) {
   let tmp4;
   let tmp = require;
-  const arr = require(728) /* castPath */(arg1, arg0);
+  const arr = castPath(arg1, arg0);
   let num = 0;
   let tmp3 = arg0;
   let flag = false;
@@ -18,7 +25,7 @@ export default function hasPath(arg0, arg1, arg2) {
     while (true) {
       let tmp5 = require;
       let tmp6 = dependencyMap;
-      let tmp7 = require(725) /* toKey */(arr[num]);
+      let tmp7 = toKey(arr[num]);
       let tmp8 = null != tmp3;
       let tmp9 = num;
       let tmp10 = tmp3;
@@ -56,10 +63,10 @@ export default function hasPath(arg0, arg1, arg2) {
       if (null != arr2) {
         num3 = arr2.length;
       }
-      let tmp12 = num3 && tmp(604)(num3) && tmp(628)(tmp4, num3);
+      let tmp12 = num3 && isLength(num3) && isIndex(tmp4, num3);
       if (tmp12) {
-        tmp12 = tmp(599)(arr2) || tmp(618)(arr2);
-        const tmp13 = tmp(599)(arr2) || tmp(618)(arr2);
+        tmp12 = _mod599(arr2) || baseIsArguments(arr2);
+        const tmp13 = _mod599(arr2) || baseIsArguments(arr2);
       }
       tmp11 = tmp12;
     }

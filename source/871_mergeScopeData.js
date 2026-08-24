@@ -4,35 +4,27 @@
 // Dependencies: [846, 848, 819, 857]
 
 // Module 871 (mergeScopeData)
-const require = arg1;
+import spanToJSON from "spanToJSON" /* 819 */;
+import merge from "merge" /* 846 */;
+import getClient from "getClient" /* 848 */;
+import getDynamicSamplingContextFromSpan from "getDynamicSamplingContextFromSpan" /* 857 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function mergeScopeData(extra) {
-  let attachments;
-  let attributes;
-  let breadcrumbs;
-  let contexts;
-  let eventProcessors;
-  let fingerprint;
-  let level;
-  let propagationContext;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let transactionName;
-  let user;
   ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
   ({ extra, tags, attributes, user, contexts, sdkProcessingMetadata } = arg1);
-  let obj = require(846) /* merge */;
+  let obj = merge;
   extra.extra = obj.merge(extra.extra, extra, 1);
-  extra.tags = require(846) /* merge */.merge(extra.tags, tags, 1);
-  const obj2 = require(846) /* merge */;
-  extra.attributes = require(846) /* merge */.merge(extra.attributes, attributes, 1);
-  const obj3 = require(846) /* merge */;
-  extra.user = require(846) /* merge */.merge(extra.user, user, 1);
-  const obj4 = require(846) /* merge */;
-  extra.contexts = require(846) /* merge */.merge(extra.contexts, contexts, 1);
-  const obj5 = require(846) /* merge */;
-  extra.sdkProcessingMetadata = require(846) /* merge */.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
+  extra.tags = merge.merge(extra.tags, tags, 1);
+  const obj2 = merge;
+  extra.attributes = merge.merge(extra.attributes, attributes, 1);
+  const obj3 = merge;
+  extra.user = merge.merge(extra.user, user, 1);
+  const obj4 = merge;
+  extra.contexts = merge.merge(extra.contexts, contexts, 1);
+  const obj5 = merge;
+  extra.sdkProcessingMetadata = merge.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
   if (level) {
     extra.level = level;
   }
@@ -69,15 +61,6 @@ function mergeScopeData(extra) {
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.applyScopeDataToEvent = function applyScopeDataToEvent(extra) {
-  let breadcrumbs;
-  let contexts;
-  let fingerprint;
-  let level;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let transactionName;
-  let user;
   ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, extra, tags, user, contexts, level, transactionName } = arg1);
   if (Object.keys(extra).length) {
     let obj = {};
@@ -98,7 +81,7 @@ arg5.applyScopeDataToEvent = function applyScopeDataToEvent(extra) {
     extra.user = obj;
   }
   if (Object.keys(contexts).length) {
-    const obj1 = {};
+    obj1 = {};
     const merged6 = Object.assign(contexts);
     const merged7 = Object.assign(extra.contexts);
     extra.contexts = obj1;
@@ -115,18 +98,18 @@ arg5.applyScopeDataToEvent = function applyScopeDataToEvent(extra) {
   }
   if (span) {
     const obj2 = { trace: null };
-    obj2[0] = require(819) /* spanToJSON */.spanToTraceContext(span);
+    obj2[0] = spanToJSON.spanToTraceContext(span);
     const merged8 = Object.assign(extra.contexts);
     extra.contexts = obj2;
     const obj3 = { dynamicSamplingContext: null };
-    const obj6 = require(819) /* spanToJSON */;
-    obj3[0] = require(857) /* getDynamicSamplingContextFromSpan */.getDynamicSamplingContextFromSpan(span);
+    const obj6 = spanToJSON;
+    obj3[0] = getDynamicSamplingContextFromSpan.getDynamicSamplingContextFromSpan(span);
     const merged9 = Object.assign(extra.sdkProcessingMetadata);
     extra.sdkProcessingMetadata = obj3;
-    const obj8 = require(857) /* getDynamicSamplingContextFromSpan */;
-    const rootSpan = require(819) /* spanToJSON */.getRootSpan(span);
-    const obj9 = require(819) /* spanToJSON */;
-    const description = require(819) /* spanToJSON */.spanToJSON(rootSpan).description;
+    const obj8 = getDynamicSamplingContextFromSpan;
+    const rootSpan = spanToJSON.getRootSpan(span);
+    const obj9 = spanToJSON;
+    const description = spanToJSON.spanToJSON(rootSpan).description;
     let tmp31 = description;
     if (description) {
       tmp31 = !extra.transaction;
@@ -137,7 +120,7 @@ arg5.applyScopeDataToEvent = function applyScopeDataToEvent(extra) {
     if (tmp31) {
       extra.transaction = description;
     }
-    const obj10 = require(819) /* spanToJSON */;
+    const obj10 = spanToJSON;
   }
   if (extra.fingerprint) {
     const _Array = Array;
@@ -171,7 +154,7 @@ arg5.applyScopeDataToEvent = function applyScopeDataToEvent(extra) {
   }
 };
 arg5.getCombinedScopeData = function getCombinedScopeData(isolationScope, currentScope) {
-  const globalScope = require(848) /* getClient */.getGlobalScope();
+  const globalScope = getClient.getGlobalScope();
   const scopeData = globalScope.getScopeData();
   if (isolationScope) {
     mergeScopeData(scopeData, isolationScope.getScopeData());
@@ -182,6 +165,6 @@ arg5.getCombinedScopeData = function getCombinedScopeData(isolationScope, curren
   return scopeData;
 };
 arg5.mergeAndOverwriteScopeData = function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
-  arg0[arg1] = require(846) /* merge */.merge(arg0[arg1], arg2, 1);
+  arg0[arg1] = merge.merge(arg0[arg1], arg2, 1);
 };
 arg5.mergeScopeData = mergeScopeData;

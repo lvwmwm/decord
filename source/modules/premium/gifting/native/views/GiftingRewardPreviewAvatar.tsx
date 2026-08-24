@@ -1,33 +1,36 @@
-// Module ID: 10381
-// Function ID: 10382
+// Module ID: 10421
+// Function ID: 10422
 // Name: GiftingRewardPreviewAvatar
-// Dependencies: [19, 4662, 1922, 21, 589, 1297, 2]
+// Dependencies: [19, 4669, 1922, 21, 589, 1297, 2]
 // Exports: default
 
-// Module 10381 (GiftingRewardPreviewAvatar)
-import "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { jsx } from "jsxProd";
+// Module 10421 (GiftingRewardPreviewAvatar)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import Button from "Button" /* 1297 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/premium/gifting/native/views/GiftingRewardPreviewAvatar.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/premium/gifting/native/views/GiftingRewardPreviewAvatar.tsx");
 
 export default function GiftingRewardPreviewAvatar(asset) {
-  let obj = require(589) /* initialize */;
-  const items = [mergeGuildAvatar];
+  let obj = initialize;
+  const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const items1 = [maybeApplyNoTextColorForLightCustomTheme];
+  const items1 = [closure_2];
   let tmp5;
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
   if (null != asset.asset) {
     obj = { asset: null };
     obj[0] = asset.asset;
     tmp5 = obj;
   }
-  obj = { user: stateFromStores, guildId: "r", avatarDecoration: "ct", animate: null };
+  obj = { user: stateFromStores, guildId: "r", avatarDecoration: false, animate: false };
   obj[2] = tmp5;
   obj[3] = !stateFromStores1;
   const merged = Object.assign(asset);
-  return jsx(require(1297) /* Button */.Avatar, { user: stateFromStores, guildId: "r", avatarDecoration: "ct", animate: null });
+  return jsx(Button.Avatar, { user: stateFromStores, guildId: "r", avatarDecoration: false, animate: false });
 };

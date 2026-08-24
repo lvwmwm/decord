@@ -1,42 +1,25 @@
-// Module ID: 12085
-// Function ID: 12086
-// Dependencies: [19, 17, 1922, 7186, 6951, 21, 8982, 8972, 8984, 1629, 8934, 589, 4796, 4219, 7275, 8983, 9449, 8970, 8979, 7167, 4093, 8985, 4115, 12086, 8990, 9286, 4342, 9448, 2007, 9451, 1236, 12090, 12093, 8772, 12094, 4745, 6867, 712, 5260, 4770, 12095, 9548, 7162, 12151, 12158, 2]
+// Module ID: 12137
+// Function ID: 12138
+// Dependencies: [19, 17, 1922, 7224, 6989, 21, 9019, 9009, 9021, 1629, 8971, 589, 4801, 4223, 7313, 9020, 9486, 9007, 9016, 7205, 4096, 9022, 4119, 12138, 9027, 9323, 4346, 9485, 2008, 9488, 1236, 12142, 12145, 8809, 12146, 4750, 6905, 712, 5265, 4775, 12147, 9585, 7200, 12203, 12210, 2]
 
-// Module 12085
-import importAllResult from "_copy";
-import { View } from "useProfileTheme";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
-import jsxProd from "UserProfileOverscrollBanner";
+// Module 12137
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c10;
-let c9;
-let closure_6;
-let error;
-let unpackModuleId;
 const require = arg1;
 let c3 = importAllResult;
 ({ PROFILE_CONTENT_BOTTOM_PADDING: closure_6, PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: error } = ARBITRARY_LARGE_OFFSET);
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
 const memoResult = importAllResult.memo(function BotUserProfileContent(user) {
-  let bannerAnimatedStyle;
-  let bannerImageAnimatedStyle;
-  let blurAnimatedProps;
-  let contentAnimatedStyle;
-  let disableMessage;
-  let displayProfile;
-  let primaryColor;
-  let scrollPosition;
-  let secondaryColor;
-  let showBlur;
-  let showUserProfileActionSheet;
-  let theme;
   user = user.user;
   const channel = user.channel;
   ({ displayProfile, showUserProfileActionSheet } = user);
   let trackUserProfileAction;
-  let importAllResult;
+  importAllResult = undefined;
   let guild_id;
   ({ disableMessage, scrollPosition } = user);
   const tmp3 = channel(trackUserProfileAction[6])();
@@ -44,8 +27,8 @@ const memoResult = importAllResult.memo(function BotUserProfileContent(user) {
   ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = channel(trackUserProfileAction[8])({ scrollPosition, bannerHeight: tmp5 }));
   let obj = user(trackUserProfileAction[10]);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  let obj1 = user(trackUserProfileAction[11]);
-  let items = [mergeGuildAvatar];
+  obj1 = user(trackUserProfileAction[11]);
+  let items = [closure_5];
   const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj2 = channel(trackUserProfileAction[12]);
   let guildId;
@@ -290,6 +273,6 @@ const memoResult = importAllResult.memo(function BotUserProfileContent(user) {
   }
   return null;
 });
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_profile/native/BotUserProfileContent.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/native/BotUserProfileContent.tsx");
 
 export default memoResult;

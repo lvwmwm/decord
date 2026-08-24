@@ -1,11 +1,17 @@
-// Module ID: 14520
-// Function ID: 14521
+// Module ID: 14588
+// Function ID: 14589
 // Name: clearTimeoutTimer
-// Dependencies: [676, 698, 5006, 5011, 10501, 2]
+// Dependencies: [676, 698, 5011, 5016, 10540, 2]
 
-// Module 14520 (clearTimeoutTimer)
-import { AnalyticEvents } from "ME";
+// Module 14588 (clearTimeoutTimer)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import setDefault from "set" /* 5011 */;
+import set2 from "set" /* 5016 */;
+import _modDef10540 from "module_10540" /* 10540 */;
 
+const AnalyticEvents = ME.AnalyticEvents;
 let c4 = 30000;
 class QuestHomeRoundtripTracker {
 }
@@ -19,19 +25,19 @@ prototype["clearTimeoutTimer"] = function clearTimeoutTimer() {
   }
 };
 prototype["sendMetric"] = function sendMetric(timeout, duration) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { timeout, duration };
   obj.track(AnalyticEvents.QUEST_HOME_ROUNDTRIP, obj);
   if (Math.random() <= 0.1) {
     obj = { name: null, tags: null };
-    obj[0] = require(5011) /* set */.MetricEvents.QUEST_HOME_ROUNDTRIP;
+    obj[0] = set2.MetricEvents.QUEST_HOME_ROUNDTRIP;
     const _HermesInternal = HermesInternal;
     const items = ["includes_bounties:" + arg2, ];
     const _HermesInternal2 = HermesInternal;
     items[1] = "timeout:" + timeout;
     obj[1] = items;
-    importDefault(5006).distribution(obj, duration);
-    const tmpResult = importDefault(5006);
+    setDefault.distribution(obj, duration);
+    const tmpResult = setDefault;
   }
 };
 prototype["startTracking"] = function startTracking() {
@@ -79,13 +85,13 @@ prototype["stopTracking"] = function stopTracking() {
       const _Math2 = Math;
       self.sendMetric(flag2, Math.min(rounded, c4), flag);
     }
-    obj2 = importDefault(10501);
+    obj2 = _modDef10540;
   }
 };
 prototype["clearTracking"] = function clearTracking() {
   this.clearTimeoutTimer();
   this.startTime = null;
 };
-const result = require("set").fileFinishedImporting("modules/quests/QuestHomeRoundtripTracker.tsx");
+const result = set.fileFinishedImporting("modules/quests/QuestHomeRoundtripTracker.tsx");
 
 export default Object.create(QuestHomeRoundtripTracker.prototype);

@@ -5,19 +5,21 @@
 // Exports: addXhrInstrumentationHandler
 
 // Module 1068 (instrumentXHR)
-import _slicedToArray from "_slicedToArray";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+import WINDOW from "WINDOW" /* 1039 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
 function instrumentXHR() {
-  if (require(1039) /* WINDOW */.WINDOW.XMLHttpRequest) {
+  if (WINDOW.WINDOW.XMLHttpRequest) {
     const _XMLHttpRequest = XMLHttpRequest;
     let _Proxy = Proxy;
     let obj = { apply: null };
     obj[0] = function apply(apply, onreadystatechange) {
       const callback = onreadystatechange;
-      const error = new Error();
+      error = new Error();
       let obj = callback(error[1]);
-      let closure_2 = 1000 * obj.timestampInSeconds();
-      let obj1 = callback(error[1]);
+      closure_2 = 1000 * obj.timestampInSeconds();
+      obj1 = callback(error[1]);
       let formatted;
       if (obj1.isString(arg2[0])) {
         formatted = arg2[0].toUpperCase();
@@ -76,8 +78,6 @@ function instrumentXHR() {
             const _Proxy2 = Proxy;
             obj1 = { apply: null };
             obj1[0] = function apply(apply) {
-              let str;
-              let tmp2;
               [str, tmp2] = callback(arg2, 2);
               let isStringResult = tmp3;
               if (arg1[onreadystatechangeHandler]) {
@@ -131,8 +131,8 @@ const __sentry_xhr_v3__ = "__sentry_xhr_v3__";
 
 export const SENTRY_XHR_DATA_KEY = "__sentry_xhr_v3__";
 export const addXhrInstrumentationHandler = function addXhrInstrumentationHandler(arg0) {
-  require(817) /* registerSpanErrorInstrumentation */.addHandler("xhr", arg0);
-  const obj = require(817) /* registerSpanErrorInstrumentation */;
-  require(817) /* registerSpanErrorInstrumentation */.maybeInstrument("xhr", instrumentXHR);
+  registerSpanErrorInstrumentation.addHandler("xhr", arg0);
+  const obj = registerSpanErrorInstrumentation;
+  registerSpanErrorInstrumentation.maybeInstrument("xhr", instrumentXHR);
 };
 export { instrumentXHR };

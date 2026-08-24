@@ -1,60 +1,61 @@
-// Module ID: 13345
-// Function ID: 13346
+// Module ID: 13403
+// Function ID: 13404
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 4661, 1236, 4374, 5449, 1435, 13344, 4734, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 1236, 4378, 5454, 1435, 13402, 4739, 4750, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 13345 (ActivateDeviceSuccess)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13403 (ActivateDeviceSuccess)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAvatarURL from "getAvatarURL" /* 1435 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import preloadDefault from "preload" /* 5454 */;
+import innerContentDefault from "innerContent" /* 13402 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5, Fragment: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ image: { width: 300, height: 200, alignSelf: "center" } });
-const result = require("jsxProd").fileFinishedImporting("modules/activate_device/native/ActivateDeviceSuccess.tsx");
+const result = require("set").fileFinishedImporting("modules/activate_device/native/ActivateDeviceSuccess.tsx");
 
 export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) {
-  let data;
-  let successImage;
   ({ data, successImage } = onComplete);
   if (null != data.twoWayLinkCode) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1236) /* getSystemLocale */.t.QhATl2);
+    const intl2 = getSystemLocale.intl;
+    let stringResult = intl2.string(getSystemLocale.t.QhATl2);
   } else {
     const scopes = data.scopes;
     stringResult = null;
     if (scopes.some((arg0) => callback(table[5]).isSocialLayerUmbrellaScope(arg0))) {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1236) /* getSystemLocale */.t.vBPvK3);
+      const intl = getSystemLocale.intl;
+      stringResult = intl.string(getSystemLocale.t.vBPvK3);
     }
   }
   let tmp9 = null;
   if (null != successImage) {
     let obj = { source: null, style: null, resizeMode: "contain" };
-    let obj1 = require(1435) /* getAvatarURL */;
+    obj1 = getAvatarURL;
     obj[0] = obj1.makeSource(successImage);
     obj[1] = tmp.image;
-    tmp9 = callback(importDefault(5449), obj);
-    const tmp13 = importDefault(5449);
+    tmp9 = callback(preloadDefault, obj);
+    const tmp13 = preloadDefault;
   }
   const items = [tmp9, , ];
-  obj = { style: importDefault(13344).innerContent, children: null };
-  obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
-  obj[2] = importDefault(13344).centerText;
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl3.string(require(1236) /* getSystemLocale */.t.qDtJmD);
-  const items1 = [callback(require(4734) /* Text */.Text, obj), ];
+  obj = { style: innerContentDefault.innerContent, children: null };
+  obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: innerContentDefault.centerText, children: null };
+  const intl3 = getSystemLocale.intl;
+  obj[3] = intl3.string(getSystemLocale.t.qDtJmD);
+  const items1 = [callback(Text.Text, obj), ];
   let tmp18Result = null;
   if (null != stringResult) {
     obj1 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
-    obj1[2] = importDefault(13344).centerText;
+    obj1[2] = innerContentDefault.centerText;
     obj1[3] = stringResult;
-    tmp18Result = tmp18(tmp19(4734).Text, obj1);
+    tmp18Result = tmp18(tmp19(4739).Text, obj1);
   }
   const obj2 = { children: null };
   items1[1] = tmp18Result;
@@ -62,9 +63,9 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
   items[1] = closure_5(View, obj);
   const obj3 = { size: "lg", text: null, onPress: null, grow: true };
   const intl4 = tmp19(1236).intl;
-  obj3[1] = intl4.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  obj3[1] = intl4.string(getSystemLocale.t.cpT0Cq);
   obj3[2] = onComplete.onComplete;
-  items[2] = callback(require(4745) /* Button */.Button, obj3);
+  items[2] = callback(Button.Button, obj3);
   obj2[0] = items;
   return closure_5(closure_6, obj2);
 };

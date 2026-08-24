@@ -1,37 +1,42 @@
-// Module ID: 14419
-// Function ID: 14420
+// Module ID: 14487
+// Function ID: 14488
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4661, 712, 4342, 14418, 8017, 1236, 5554, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4346, 14486, 8056, 1236, 5561, 4750, 2]
 // Exports: default
 
-// Module 14419 (BountiesNuxPromoSheet)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14487 (BountiesNuxPromoSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 4750 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 5561 */;
+import PromoSheet from "PromoSheet" /* 8056 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 createCacheKey = { illustrationContainer: null };
-createCacheKey = { paddingTop: require("Themes").space.PX_12 };
+createCacheKey = { paddingTop: ThemesDefault.space.PX_12 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/quests/native/BountiesNuxPromoSheet.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/quests/native/BountiesNuxPromoSheet.tsx");
 
 export default function BountiesNuxPromoSheet() {
   const callback = React.useCallback(() => {
-    callback2(4342).hideActionSheet(callback(14418).PROMO_SHEET_KEY);
+    callback2(4346).hideActionSheet(callback(14486).PROMO_SHEET_KEY);
   }, []);
   let obj = { gradientColor: "purple", title: null, description: null, illustration: null, actions: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.DDpHZG);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t["LY+igv"]);
-  obj = { style: createCacheKey().illustrationContainer, children: jsx(require(5554) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 }) };
-  obj[3] = <View style={createCacheKey().illustrationContainer}>{jsx(require(5554) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 })}</View>;
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t.DDpHZG);
+  const intl2 = getSystemLocale.intl;
+  obj[2] = intl2.string(getSystemLocale.t["LY+igv"]);
+  obj = { style: callback().illustrationContainer, children: jsx(BountiesPosterSpotIllustration.BountiesPosterSpotIllustration, { width: 273, height: 205 }) };
+  obj[3] = <View style={callback().illustrationContainer}>{jsx(BountiesPosterSpotIllustration.BountiesPosterSpotIllustration, { width: 273, height: 205 })}</View>;
   obj = { grow: true, size: "lg", variant: "primary", text: null, onPress: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl3.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  const intl3 = getSystemLocale.intl;
+  obj[3] = intl3.string(getSystemLocale.t.cpT0Cq);
   obj[4] = callback;
-  obj[4] = jsx(require(4745) /* Button */.Button, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
-  return jsx(require(8017) /* PromoSheet */.PromoSheet, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
+  obj[4] = jsx(Button.Button, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
+  return jsx(PromoSheet.PromoSheet, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
 };

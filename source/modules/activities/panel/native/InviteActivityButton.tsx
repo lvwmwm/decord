@@ -1,38 +1,38 @@
-// Module ID: 16245
-// Function ID: 16246
-// Dependencies: [19, 7251, 7250, 21, 4342, 16246, 2007, 589, 10924, 4745, 9992, 1236, 2]
+// Module ID: 16342
+// Function ID: 16343
+// Dependencies: [19, 7289, 7288, 21, 4346, 16343, 2008, 589, 10963, 4750, 10031, 1236, 2]
 
-// Module 16245
-import updateActivities from "updateActivities";
-import filterPlayingActivities from "filterPlayingActivities";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 16342
+import closure_3 from "updateActivities" /* 7289 */;
+import closure_4 from "filterPlayingActivities" /* 7288 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
-const memoResult = require("noop").memo(function InviteActivityButton(applicationId) {
+const memoResult = importAllResult.memo(function InviteActivityButton(applicationId) {
   applicationId = applicationId.applicationId;
   let stateFromStores;
   let obj = applicationId(589);
-  const items = [updateActivities, filterPlayingActivities];
+  const items = [closure_3, closure_4];
   const items1 = [applicationId];
-  stateFromStores = obj.useStateFromStores(items, () => stateFromStores(outer1_2[8])(outer1_3, outer1_4, applicationId), items1);
+  stateFromStores = obj.useStateFromStores(items, () => stateFromStores(closure_1_2[8])(closure_1_3, closure_1_4, applicationId), items1);
   let tmp4 = null;
   if (null != stateFromStores) {
     obj = { onPress: null, icon: null, text: null, accessibilityLabel: null, variant: "secondary-overlay", size: "sm", shrink: true, maxFontSizeMultiplier: 1 };
     obj[0] = function onPress() {
-      let obj = stateFromStores(outer1_2[4]);
+      let obj = stateFromStores(closure_1_2[4]);
       obj = { activity: stateFromStores };
-      obj.openLazy(applicationId(outer1_2[6])(outer1_2[5], outer1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
+      obj.openLazy(applicationId(closure_1_2[6])(closure_1_2[5], closure_1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
     };
-    obj[1] = stateFromStores(9992);
+    obj[1] = stateFromStores(10031);
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t["OzOM/q"]);
     const intl2 = tmp(1236).intl;
     obj[3] = intl2.string(tmp(1236).t["OzOM/q"]);
-    tmp4 = jsx(tmp(4745).Button, { onPress: null, icon: null, text: null, accessibilityLabel: null, variant: "secondary-overlay", size: "sm", shrink: true, maxFontSizeMultiplier: 1 });
+    tmp4 = jsx(tmp(4750).Button, { onPress: null, icon: null, text: null, accessibilityLabel: null, variant: "secondary-overlay", size: "sm", shrink: true, maxFontSizeMultiplier: 1 });
   }
   return tmp4;
 });
-const result = require("filterPlayingActivities").fileFinishedImporting("modules/activities/panel/native/InviteActivityButton.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/panel/native/InviteActivityButton.tsx");
 
 export default memoResult;

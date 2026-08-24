@@ -1,47 +1,43 @@
-// Module ID: 15801
-// Function ID: 15802
+// Module ID: 15870
+// Function ID: 15871
 // Name: ContentHeader
-// Dependencies: [32, 19, 17, 1391, 21, 4661, 712, 4734, 4342, 15802, 2007, 9422, 14586, 1297, 589, 4984, 1236, 6832, 14573, 15797, 5449, 15803, 2]
+// Dependencies: [32, 19, 17, 1391, 21, 4668, 712, 4739, 4346, 15871, 2008, 9459, 14654, 1297, 589, 4989, 1236, 6870, 14641, 15866, 5454, 15872, 2]
 // Exports: default
 
-// Module 15801 (ContentHeader)
-import _slicedToArray from "_slicedToArray";
-import "TruncatedText";
-import get_ActivityIndicator from "getChannelIcon";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import jsxProd from "emphasisHook";
-import createCacheKey from "createCacheKey";
+// Module 15870 (ContentHeader)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import GappedList from "GappedList" /* 9459 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 14641 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_6;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function ContentHeader(arg0) {
-  let count;
-  let title;
   ({ count, title } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = { variant: "text-xs/bold", color: "text-muted", style: tmp.contentHeader, children: null };
   obj = { variant: "text-xs/bold", color: "text-default", style: tmp.contentHeader, children: count };
-  const items = [callback2(require(4734) /* Text */.Text, obj), " ", title];
+  const items = [callback2(Text.Text, obj), " ", title];
   obj[3] = items;
-  return callback3(require(4734) /* Text */.Text, obj);
+  return callback3(Text.Text, obj);
 }
 function Separator() {
-  return callback2(closure_6, { style: createCacheKey().separator });
+  return callback2(closure_6, { style: callback4().separator });
 }
 function EmojiGallery(arg0) {
-  let emojiIds;
-  let maxEmojis;
-  let require;
   ({ emojiIds, maxEmojis, guildId: require } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback4();
   const substr = emojiIds.slice(0, maxEmojis);
   const diff = emojiIds.length - maxEmojis;
   let obj = { style: tmp.emojiGallery, children: null };
-  const items = [...substr.map((id) => outer1_8(outer1_1(outer1_3[12]), { size: 30, fontSize: 20, guildId: closure_0, id }, id))];
+  const items = [...substr.map((id) => closure_1_8(closure_1_1(closure_1_3[12]), { size: 30, fontSize: 20, guildId: closure_0, id }, id))];
   let tmp3Result = diff > 0;
   if (tmp3Result) {
     obj = { style: null, children: null };
@@ -49,31 +45,29 @@ function EmojiGallery(arg0) {
     obj = { variant: "text-sm/bold", color: "text-default", children: null };
     const items1 = ["+", diff];
     obj[2] = items1;
-    obj[1] = callback3(require(4734) /* Text */.Text, obj);
+    obj[1] = callback3(Text.Text, obj);
     tmp3Result = tmp3(tmp4, obj, "andMore");
   }
   items[tmp7] = tmp3Result;
-  obj[1] = closure_8(require(9422) /* GappedList */.GappedList, { gap: 18, children: items });
+  obj[1] = closure_8(GappedList.GappedList, { gap: 18, children: items });
   return closure_8(closure_6, obj);
 }
 function BenefitShowCase(arg0) {
-  let description;
-  let title;
   ({ title, description } = arg0);
   let tmp3 = title;
   if (typeof title === "string") {
     let obj = { variant: "text-md/semibold", color: "text-default", children: null };
     obj[2] = title;
-    tmp3 = callback2(require(4734) /* Text */.Text, obj);
+    tmp3 = callback2(Text.Text, obj);
   }
   const children = [tmp3, ];
   let tmpResult = null != description;
   if (tmpResult) {
     obj = { children: null };
-    const items1 = [callback2(require(1297) /* Button */.Spacer, { size: 2 }), ];
+    const items1 = [callback2(Button.Spacer, { size: 2 }), ];
     obj = { variant: "text-sm/medium", color: "interactive-text-default", children: null };
     obj[2] = description;
-    items1[1] = callback2(require(4734) /* Text */.Text, obj);
+    items1[1] = callback2(Text.Text, obj);
     obj[0] = items1;
     tmpResult = tmp(closure_10, obj);
   }
@@ -83,9 +77,9 @@ function BenefitShowCase(arg0) {
 function ChannelBenefitShowCase(description) {
   const channelId = description.channelId;
   let obj = channelId(589);
-  const items = [ensureGuildLoaded];
+  const items = [closure_7];
   const items1 = [channelId];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getChannel(channelId), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_7.getChannel(channelId), items1);
   const intl = channelId(1236).intl;
   let title = intl.string(channelId(1236).t.bz1PZX);
   if (null != stateFromStores) {
@@ -93,66 +87,67 @@ function ChannelBenefitShowCase(description) {
     obj[0] = { flexDirection: "row", alignItems: "center" };
     obj = { size: null, source: null };
     obj[0] = tmp(1297).Icon.Sizes.REFRESH_SMALL_16;
-    obj[1] = tmp(6832).getChannelIcon(stateFromStores);
+    obj[1] = tmp(6870).getChannelIcon(stateFromStores);
     const items2 = [callback2(tmp(1297).Icon, obj), callback2(tmp(1297).Spacer, { size: 4 }), ];
-    const obj1 = { variant: "text-md/semibold", color: "text-default", children: null };
+    obj1 = { variant: "text-md/semibold", color: "text-default", children: null };
     obj1[2] = tmp4;
-    items2[2] = callback2(tmp(4734).Text, obj1);
+    items2[2] = callback2(tmp(4739).Text, obj1);
     obj[1] = items2;
     title = callback3(closure_6, obj);
-    const tmpResult = tmp(6832);
+    const tmpResult = tmp(6870);
   }
   return callback2(BenefitShowCase, { title, description: description.description });
 }
 function ShowAllButton(onPress) {
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = { onPress: onPress.onPress, style: tmp.showAllButton, activeOpacity: 0.5, children: null };
   obj = { children: null };
   obj = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t["hub6t/"]);
-  const items = [callback2(require(4734) /* Text */.Text, obj), callback2(require(1297) /* Button */.Spacer, { size: 3 }), callback2(closure_6, { style: tmp.showAllButtonUnderline })];
+  const intl = getSystemLocale.intl;
+  obj[3] = intl.string(getSystemLocale.t["hub6t/"]);
+  const items = [callback2(Text.Text, obj), callback2(Button.Spacer, { size: 3 }), callback2(closure_6, { style: tmp.showAllButtonUnderline })];
   obj[0] = items;
   obj[3] = callback3(closure_6, obj);
   return callback2(closure_5, obj);
 }
+noopAll;
 ({ TouchableOpacity: c5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);
+({ jsx: closure_8, jsxs: c9, Fragment: c10 } = jsxProd);
 createCacheKey = { container: null, header: null, image: null, separator: null, contentContainer: null, contentHeader: null, emojiGallery: null, emojiTruncatedContainer: null, showAllButton: null, showAllButtonUnderline: null };
-createCacheKey = { padding: 16, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
+createCacheKey = { padding: 16, borderRadius: ThemesDefault.radii.md, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexDirection: "row" };
-createCacheKey[2] = { width: 48, height: 48, borderRadius: require("Themes").radii.xl };
-let obj1 = { width: 48, height: 48, borderRadius: require("Themes").radii.xl };
-createCacheKey[3] = { width: "100%", height: 1, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 16 };
-let obj2 = { width: "100%", height: 1, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 16 };
-createCacheKey[4] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: require("Themes").radii.sm, borderTopLeftRadius: require("Themes").radii.sm, padding: 16 };
+createCacheKey[2] = { width: 48, height: 48, borderRadius: ThemesDefault.radii.xl };
+let obj1 = { width: 48, height: 48, borderRadius: ThemesDefault.radii.xl };
+createCacheKey[3] = { width: "100%", height: 1, backgroundColor: ThemesDefault.colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 16 };
+let obj2 = { width: "100%", height: 1, backgroundColor: ThemesDefault.colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 16 };
+createCacheKey[4] = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: ThemesDefault.radii.sm, borderTopLeftRadius: ThemesDefault.radii.sm, padding: 16 };
 createCacheKey[5] = { textTransform: "uppercase" };
 createCacheKey[6] = { flexDirection: "row" };
-let obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: require("Themes").radii.sm, borderTopLeftRadius: require("Themes").radii.sm, padding: 16 };
-createCacheKey[7] = { width: 32, height: 32, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, paddingTop: 1 };
-let obj4 = { width: 32, height: 32, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, paddingTop: 1 };
-createCacheKey[8] = { paddingVertical: 16, paddingHorizontal: 20, justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: require("Themes").radii.sm, borderBottomRightRadius: require("Themes").radii.sm };
-let obj5 = { paddingVertical: 16, paddingHorizontal: 20, justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: require("Themes").radii.sm, borderBottomRightRadius: require("Themes").radii.sm };
-createCacheKey[9] = { position: "absolute", left: 0, right: 0, height: 1, bottom: 0, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj6 = { position: "absolute", left: 0, right: 0, height: 1, bottom: 0, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchasePreviewCard.tsx");
+let obj3 = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: ThemesDefault.radii.sm, borderTopLeftRadius: ThemesDefault.radii.sm, padding: 16 };
+createCacheKey[7] = { width: 32, height: 32, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.xs, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, paddingTop: 1 };
+let obj4 = { width: 32, height: 32, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.xs, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, paddingTop: 1 };
+createCacheKey[8] = { paddingVertical: 16, paddingHorizontal: 20, justifyContent: "center", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: ThemesDefault.radii.sm, borderBottomRightRadius: ThemesDefault.radii.sm };
+let obj5 = { paddingVertical: 16, paddingHorizontal: 20, justifyContent: "center", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: ThemesDefault.radii.sm, borderBottomRightRadius: ThemesDefault.radii.sm };
+createCacheKey[9] = { position: "absolute", left: 0, right: 0, height: 1, bottom: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let obj6 = { position: "absolute", left: 0, right: 0, height: 1, bottom: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchasePreviewCard.tsx");
 
 export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   listingId = listingId.listingId;
   const guildId = listingId.guildId;
-  const tmp = createCacheKey();
-  let obj = importAll(14573);
+  const tmp = callback4();
+  let obj = getRoleEmojisAll;
   let str = callback(obj.useImage(listingId), 1)[0];
-  let obj1 = importAll(14573);
-  let obj2 = importAll(14573);
+  obj1 = getRoleEmojisAll;
+  let obj2 = getRoleEmojisAll;
   const first = callback(obj2.useTierEmojiIds(listingId, guildId), 1)[0];
-  let obj3 = importAll(14573);
+  let obj3 = getRoleEmojisAll;
   const first1 = callback(obj3.useChannelBenefits(listingId), 1)[0];
-  let obj4 = importAll(14573);
+  let obj4 = getRoleEmojisAll;
   const first2 = callback(obj4.useIntangibleBenefits(listingId), 1)[0];
-  let obj5 = listingId(15797);
+  let obj5 = listingId(15866);
   const first3 = first1[0];
   const first4 = first2[0];
   const size = first.size;
@@ -163,13 +158,13 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
     str = "";
   }
   obj1 = { source: { uri: str }, style: tmp.image };
-  const items = [closure_8(guildId(5449), obj1), closure_8(listingId(1297).Spacer, { size: 16 }), ];
+  const items = [closure_8(guildId(5454), obj1), closure_8(listingId(1297).Spacer, { size: 16 }), ];
   obj2 = { children: null };
-  const items1 = [closure_8(listingId(4734).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: callback(obj1.useName(listingId), 1)[0] }), closure_8(listingId(1297).Spacer, { size: 4 }), closure_8(listingId(4734).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
+  const items1 = [closure_8(listingId(4739).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: callback(obj1.useName(listingId), 1)[0] }), closure_8(listingId(1297).Spacer, { size: 4 }), closure_8(listingId(4739).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
   obj2[0] = items1;
   items[2] = closure_9(closure_6, obj2);
   obj[1] = items;
-  const items2 = [closure_9(closure_6, obj), closure_8(listingId(1297).Spacer, { size: 16 }), closure_8(guildId(15803), { listingId }), ];
+  const items2 = [closure_9(closure_6, obj), closure_8(listingId(1297).Spacer, { size: 16 }), closure_8(guildId(15872), { listingId }), ];
   let tmp8Result2 = length > 0 || size > 0 || length2 > 0;
   if (tmp8Result2) {
     const items3 = [tmp10(tmp4(1297).Spacer, { size: 24 }), , ];
@@ -236,13 +231,13 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
     const obj16 = { children: null };
     items6[2] = tmp8Result1;
     obj4[1] = items6;
-    obj3[1] = tmp8(tmp4(9422).GappedList, obj4);
+    obj3[1] = tmp8(tmp4(9459).GappedList, obj4);
     items3[1] = tmp10(tmp9, obj3);
     const obj17 = { onPress: null };
     obj17[0] = function onPress() {
-      let obj = guildId(outer1_3[8]);
+      let obj = guildId(closure_1_3[8]);
       obj = { listingId, guildId };
-      obj.openLazy(listingId(outer1_3[10])(outer1_3[9], outer1_3.paths), "PurchaseCard:" + listingId, obj);
+      obj.openLazy(listingId(closure_1_3[10])(closure_1_3[9], closure_1_3.paths), "PurchaseCard:" + listingId, obj);
     };
     items3[2] = tmp10(ShowAllButton, obj17);
     obj16[0] = items3;

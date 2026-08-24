@@ -1,27 +1,30 @@
-// Module ID: 15270
-// Function ID: 15271
+// Module ID: 15334
+// Function ID: 15335
 // Name: convertPortraitToLandscapeScreens
-// Dependencies: [4230, 4229, 1505, 514, 2]
+// Dependencies: [4234, 4233, 1505, 514, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 15270 (convertPortraitToLandscapeScreens)
-const result = require("CommonActions").fileFinishedImporting("modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx");
+// Module 15334 (convertPortraitToLandscapeScreens)
+import set from "set" /* 2 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx");
 
 export const convertPortraitToLandscapeScreens = function convertPortraitToLandscapeScreens() {
-  let obj = require(4230) /* getRootNavigationRef */;
+  let obj = getRootNavigationRef;
   const store = obj.getRootNavigationRef();
   if (null != store) {
     let state = store.getState();
     if (null != state) {
-      let tmpResult = tmp(4229);
+      let tmpResult = tmp(4233);
       const coerceMainRouteResult = tmpResult.coerceMainRoute(state.routes[0]);
       if (null != coerceMainRouteResult) {
         const state2 = coerceMainRouteResult.state;
         if (null != state2) {
           if (0 !== state2.index) {
-            tmpResult = tmp(4229);
+            tmpResult = tmp(4233);
             if (null != tmpResult.coerceChannelRoute(state2.routes[1])) {
-              const coerceTabsRouteResult = tmp(4229).coerceTabsRoute(state2.routes[0]);
+              const coerceTabsRouteResult = tmp(4233).coerceTabsRoute(state2.routes[0]);
               if (null != coerceTabsRouteResult) {
                 const state3 = coerceTabsRouteResult.state;
                 let tmp4;
@@ -52,9 +55,9 @@ export const convertPortraitToLandscapeScreens = function convertPortraitToLands
                   obj.index = items1.length - 1;
                   store.dispatch(CommonActions.reset(obj));
                 }
-                tmpResult2 = tmp(4229);
+                tmpResult2 = tmp(4233);
               }
-              const tmpResult1 = tmp(4229);
+              const tmpResult1 = tmp(4233);
             }
           }
         }
@@ -63,22 +66,22 @@ export const convertPortraitToLandscapeScreens = function convertPortraitToLands
   }
 };
 export const convertLandscapeToPortraitScreens = function convertLandscapeToPortraitScreens() {
-  let obj = require(4230) /* getRootNavigationRef */;
+  let obj = getRootNavigationRef;
   const store = obj.getRootNavigationRef();
   if (null != store) {
     let state = store.getState();
     if (null != state) {
-      let tmpResult = tmp(4229);
+      let tmpResult = tmp(4233);
       const coerceMainRouteResult = tmpResult.coerceMainRoute(state.routes[0]);
       if (null != coerceMainRouteResult) {
         const state2 = coerceMainRouteResult.state;
         if (null != state2) {
           if (0 === state.index) {
             if (0 !== state2.index) {
-              tmpResult = tmp(4229);
+              tmpResult = tmp(4233);
             }
           }
-          const coerceTabsRouteResult = tmp(4229).coerceTabsRoute(state2.routes[0]);
+          const coerceTabsRouteResult = tmp(4233).coerceTabsRoute(state2.routes[0]);
           if (null != coerceTabsRouteResult) {
             const state3 = coerceTabsRouteResult.state;
             let tmp5;
@@ -90,7 +93,7 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               }
               tmp5 = state3.routes[index];
             }
-            const coerceGuildsRouteResult = tmp(4229).coerceGuildsRoute(tmp5);
+            const coerceGuildsRouteResult = tmp(4233).coerceGuildsRoute(tmp5);
             if (null != coerceGuildsRouteResult) {
               obj = {};
               const merged = Object.assign(state2);
@@ -113,7 +116,7 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               if (params != null) {
                 channelId1 = params.channelId;
               }
-              const obj1 = { channelId: null, guildId: null };
+              obj1 = { channelId: null, guildId: null };
               obj1[0] = channelId1;
               const params2 = coerceGuildsRouteResult.params;
               let guildId;
@@ -137,9 +140,9 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               obj2.index = items1.length - 1;
               store.dispatch(CommonActions.reset(obj2));
             }
-            const tmpResult2 = tmp(4229);
+            const tmpResult2 = tmp(4233);
           }
-          const tmpResult1 = tmp(4229);
+          const tmpResult1 = tmp(4233);
         }
       }
     }

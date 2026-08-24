@@ -1,18 +1,19 @@
-// Module ID: 5610
-// Function ID: 5611
+// Module ID: 5617
+// Function ID: 5618
 // Name: ConnectionCablesSpotIllustration
-// Dependencies: [21, 5449, 5611, 2]
+// Dependencies: [21, 5454, 5618, 2]
 // Exports: ConnectionCablesSpotIllustration
 
-// Module 5610 (ConnectionCablesSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 5617 (ConnectionCablesSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5618 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ConnectionCablesSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ConnectionCablesSpotIllustration.native.tsx");
 
 export const ConnectionCablesSpotIllustration = function ConnectionCablesSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const ConnectionCablesSpotIllustration = function ConnectionCablesSpotIll
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5611);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ConnectionCablesSpotIllustration = function ConnectionCablesSpotIll
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

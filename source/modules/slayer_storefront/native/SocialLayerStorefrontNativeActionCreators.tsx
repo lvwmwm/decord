@@ -1,69 +1,78 @@
-// Module ID: 10351
-// Function ID: 10352
+// Module ID: 10390
+// Function ID: 10391
 // Name: SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY
-// Dependencies: [21, 4656, 1236, 3271, 8323, 8041, 5260, 10352, 2007, 10361, 10365, 2]
+// Dependencies: [4526, 21, 4662, 1236, 3274, 8080, 5265, 10391, 2008, 4055, 10397, 10401, 10405, 2]
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal, openSocialLayerStorefrontUnsupportedOnMobileAlert
 
-// Module 10351 (SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY)
-import { jsx } from "jsxProd";
+// Module 10390 (SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import messagesProxyDefault from "messagesProxy" /* 3274 */;
+import isPremiumGiftingSupported from "isPremiumGiftingSupported" /* 4055 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import _fetchSocialLayerStorefront from "_fetchSocialLayerStorefront" /* 8080 */;
+import closure_3 from "addSku" /* 4526 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c4 = "social-layer-storefront-product-details-native-modal";
-let c5 = "social-layer-storefront-native-gift-modal";
-const result = require("getSystemLocale").fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontNativeActionCreators.tsx");
+require = arg1;
+let c5 = "social-layer-storefront-product-details-native-modal";
+let c6 = "social-layer-storefront-native-gift-modal";
+const result = require("set").fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontNativeActionCreators.tsx");
 
 export const SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY = "social-layer-storefront-product-details-native-modal";
 export const SOCIAL_LAYER_STOREFRONT_GIFT_MODAL_KEY = "social-layer-storefront-native-gift-modal";
 export const SOCIAL_LAYER_STOREFRONT_SELF_PURCHASE_SUCCESS_MODAL_KEY = "social-layer-storefront-self-purchase-success-native-modal";
 export const SOCIAL_LAYER_STOREFRONT_GIFT_PURCHASE_SUCCESS_MODAL_KEY = "social-layer-storefront-gift-purchase-success-native-modal";
 export const openSocialLayerStorefrontUnsupportedOnMobileAlert = function openSocialLayerStorefrontUnsupportedOnMobileAlert() {
-  let obj = importDefault(4656);
+  let obj = _modDef4662;
   obj = { title: null, body: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(importDefault(3271).XjhkM5);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(importDefault(3271).NBFa62);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(messagesProxyDefault.XjhkM5);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(messagesProxyDefault.NBFa62);
   obj.show(obj);
 };
 export const openSocialLayerStorefrontProductDetailsModal = function openSocialLayerStorefrontProductDetailsModal(closure_0) {
-  let obj = require(8323) /* apexExperiment */;
-  if (obj.getIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "social_layer_storefront_product_details_modal" })) {
-    const socialLayerStorefrontConfig = tmp(8041).fetchSocialLayerStorefrontConfig();
-    const obj5 = importDefault(5260);
-    obj5.pushLazy(tmp(2007)(10352, dependencyMap.paths), closure_0, c4, { presentation: "modal" });
-    const tmpResult = tmp(8041);
-  } else {
-    obj = { title: null, body: null };
-    const intl = tmp(1236).intl;
-    obj[0] = intl.string(importDefault(3271).XjhkM5);
-    const intl2 = tmp(1236).intl;
-    obj[1] = intl2.string(importDefault(3271).NBFa62);
-    importDefault(4656).show(obj);
-    const obj2 = importDefault(4656);
-  }
+  const socialLayerStorefrontConfig = _fetchSocialLayerStorefront.fetchSocialLayerStorefrontConfig();
+  const obj = _fetchSocialLayerStorefront;
+  _modDef5265.pushLazy(asyncRequireImpl(10391, dependencyMap.paths), closure_0, c5, { presentation: "modal" });
 };
 export const closeSocialLayerStorefrontProductDetailsModal = function closeSocialLayerStorefrontProductDetailsModal() {
-  importDefault(5260).popWithKey(c4);
+  _modDef5265.popWithKey(c5);
 };
-export const openSocialLayerStorefrontGiftModal = function openSocialLayerStorefrontGiftModal(closure_0) {
-  if (obj.getIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "social_layer_storefront_gift_modal" })) {
-    importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(10361, dependencyMap.paths), closure_0, c5);
-    const obj2 = importDefault(5260);
+export const openSocialLayerStorefrontGiftModal = function openSocialLayerStorefrontGiftModal(skuId) {
+  let obj = isPremiumGiftingSupported;
+  if (obj.isSocialLayerStorefrontGiftingSupported()) {
+    let tmp3Result = tmp3(5265);
+    tmp3Result.pushLazy(asyncRequireImpl(10401, dependencyMap.paths), skuId, c6);
+  } else {
+    tmp3Result = tmp3(10397);
+    const value = closure_3.get(skuId.skuId);
+    let applicationId;
+    if (value != null) {
+      applicationId = value.applicationId;
+    }
+    obj = { applicationId: null, skuId: null, source: "openSocialLayerStorefrontGiftModal" };
+    obj[0] = applicationId;
+    obj[1] = skuId.skuId;
+    tmp3Result(obj);
   }
 };
 export const closeSocialLayerStorefrontGiftModal = function closeSocialLayerStorefrontGiftModal() {
-  importDefault(5260).popWithKey(c5);
+  _modDef5265.popWithKey(c6);
 };
 export const openSocialLayerStorefrontProductSelfPurchaseSuccessModal = function openSocialLayerStorefrontProductSelfPurchaseSuccessModal(arg0) {
-  let closure_0 = arg0;
-  let obj = importDefault(4656);
+  closure_0 = arg0;
+  let obj = _modDef4662;
   obj = {
     importer() {
-      return callback(outer1_2[8])(outer1_2[10], outer1_2.paths).then((SocialLayerStorefrontProductSelfPurchaseSuccessModal) => {
-        let closure_0 = SocialLayerStorefrontProductSelfPurchaseSuccessModal.SocialLayerStorefrontProductSelfPurchaseSuccessModal;
+      return callback(closure_1_2[8])(closure_1_2[12], closure_1_2.paths).then((SocialLayerStorefrontProductSelfPurchaseSuccessModal) => {
+        closure_0 = SocialLayerStorefrontProductSelfPurchaseSuccessModal.SocialLayerStorefrontProductSelfPurchaseSuccessModal;
         return (arg0) => {
           const merged = Object.assign(closure_0);
           const merged1 = Object.assign(arg0);
-          return outer2_3(closure_0, {});
+          return closure_2_4(closure_0, {});
         };
       });
     }
@@ -71,16 +80,16 @@ export const openSocialLayerStorefrontProductSelfPurchaseSuccessModal = function
   return obj.openLazy(obj);
 };
 export const openSocialLayerStorefrontProductGiftPurchaseSuccessModal = function openSocialLayerStorefrontProductGiftPurchaseSuccessModal(arg0) {
-  let closure_0 = arg0;
-  let obj = importDefault(4656);
+  closure_0 = arg0;
+  let obj = _modDef4662;
   obj = {
     importer() {
-      return callback(outer1_2[8])(outer1_2[10], outer1_2.paths).then((SocialLayerStorefrontProductGiftPurchaseSuccessModal) => {
-        let closure_0 = SocialLayerStorefrontProductGiftPurchaseSuccessModal.SocialLayerStorefrontProductGiftPurchaseSuccessModal;
+      return callback(closure_1_2[8])(closure_1_2[12], closure_1_2.paths).then((SocialLayerStorefrontProductGiftPurchaseSuccessModal) => {
+        closure_0 = SocialLayerStorefrontProductGiftPurchaseSuccessModal.SocialLayerStorefrontProductGiftPurchaseSuccessModal;
         return (arg0) => {
           const merged = Object.assign(closure_0);
           const merged1 = Object.assign(arg0);
-          return outer2_3(closure_0, {});
+          return closure_2_4(closure_0, {});
         };
       });
     }

@@ -1,34 +1,32 @@
-// Module ID: 14835
-// Function ID: 14836
+// Module ID: 14899
+// Function ID: 14900
 // Name: BackwardsCompatibleAppIconRows
-// Dependencies: [32, 19, 17, 1922, 21, 4661, 7947, 6286, 1236, 14836, 7945, 589, 1945, 2]
+// Dependencies: [32, 19, 17, 1922, 21, 4668, 7986, 6317, 1236, 14900, 7984, 589, 1945, 2]
 // Exports: default
 
-// Module 14835 (BackwardsCompatibleAppIconRows)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { createElement } from "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14899 (BackwardsCompatibleAppIconRows)
+import initialize from "initialize" /* 589 */;
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
+import fetchCurrentAppIcon from "fetchCurrentAppIcon" /* 7984 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { createElement } from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function BackwardsCompatibleAppIconRows(arg0) {
-  let c1;
-  let c2;
   if (arg0 == null) {
     HermesBuiltin.throwTypeError();
   } else {
     let merged = Object.assign(arg0, undefined);
     c1 = undefined;
-    let dependencyMap;
-    function onLongPress(noop, arg1) {
+    dependencyMap = undefined;
+    function onLongPress(closure_4, arg1) {
       let tmp = null;
-      if (noop === merged(_undefined2[6]).FreemiumAppIconIds.DEFAULT) {
+      if (closure_4 === merged(_undefined2[6]).FreemiumAppIconIds.DEFAULT) {
         tmp = _undefined2(true);
       }
       return tmp;
@@ -49,28 +47,25 @@ function BackwardsCompatibleAppIconRows(arg0) {
       obj.icon = id;
       obj.showEasterEgg = _undefined;
       obj.onLongPress = onLongPress;
-      return outer1_7(_undefined(_undefined2[9]), obj);
+      return closure_1_7(_undefined(_undefined2[9]), obj);
     });
-    obj[1] = callback(merged(6286).TableRowGroup, obj);
+    obj[1] = callback(merged(6317).TableRowGroup, obj);
     return callback(View, obj);
   }
 }
-({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
 let closure_11 = createCacheKey.createStyles({ container: { padding: 16 }, bottomUpsellPadding: { paddingBottom: 56 } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/app_icons/native/AppIconRows.tsx");
+const result = require("set").fileFinishedImporting("modules/app_icons/native/AppIconRows.tsx");
 
 export default function AppIconRows(onSelect) {
-  let currentAppIcon;
-  let limitedTimeAppIcons;
-  let officialAppIcons;
   onSelect = onSelect.onSelect;
-  let obj = require(7945) /* fetchCurrentAppIcon */;
+  let obj = fetchCurrentAppIcon;
   const appIcons = obj.useAppIcons();
   ({ limitedTimeAppIcons, currentAppIcon, officialAppIcons } = appIcons);
-  let obj1 = require(589) /* initialize */;
-  const items = [mergeGuildAvatar];
+  obj1 = initialize;
+  const items = [closure_6];
   const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = require(1945) /* isPremiumAtLeast */;
+  let obj2 = isPremiumAtLeast;
   const isPremiumResult = obj2.isPremium(stateFromStores);
   const tmp7 = limitedTimeAppIcons.length > 0 && limitedTimeAppIcons.filter((isHidden) => !isHidden.isHidden).length > 0;
   let tmp10 = null;

@@ -1,20 +1,22 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 16068
+// Function ID: 16069
 // Name: trackFriendsListClicked
-// Dependencies: [676, 15969, 698, 2]
+// Dependencies: [676, 16066, 698, 2]
 // Exports: default
 
-// Module 15971 (trackFriendsListClicked)
-import { AnalyticEvents } from "ME";
+// Module 16068 (trackFriendsListClicked)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import getTrackFriendsListViewedDataDefault from "getTrackFriendsListViewedData" /* 16066 */;
 
-const result = require("expandEventProperties").fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/trackFriendListClicked.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/trackFriendListClicked.tsx");
 
 export default function trackFriendsListClicked(arg0) {
-  let source;
-  let tab_opened;
   ({ tab_opened, source } = arg0);
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { tab_opened, source };
-  const merged = Object.assign(importDefault(15969)());
+  const merged = Object.assign(getTrackFriendsListViewedDataDefault());
   obj.track(AnalyticEvents.FRIENDS_LIST_CLICKED, obj);
 };

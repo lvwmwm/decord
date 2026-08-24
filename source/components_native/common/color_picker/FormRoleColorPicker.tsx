@@ -1,18 +1,18 @@
-// Module ID: 15554
-// Function ID: 15555
+// Module ID: 15619
+// Function ID: 15620
 // Name: FormRoleColorPicker
-// Dependencies: [19, 676, 21, 4661, 4342, 15555, 2007, 8083, 14011, 688, 2]
+// Dependencies: [19, 676, 21, 4668, 4346, 15620, 2008, 8122, 14079, 688, 2]
 // Exports: default
 
-// Module 15554 (FormRoleColorPicker)
-import noop from "noop";
-import { DEFAULT_ROLE_COLOR } from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15619 (FormRoleColorPicker)
+import closure_3 from "noop" /* 19 */;
+import { DEFAULT_ROLE_COLOR } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_6 = createCacheKey.createStyles({ rowColorBlock: { marginHorizontal: 0, marginVertical: 0, marginRight: 8, minWidth: 24, height: 24, borderRadius: 3 } });
-const result = require("jsxProd").fileFinishedImporting("components_native/common/color_picker/FormRoleColorPicker.tsx");
+const result = require("set").fileFinishedImporting("components_native/common/color_picker/FormRoleColorPicker.tsx");
 
 export default function FormRoleColorPicker(color) {
   color = color.color;
@@ -26,16 +26,16 @@ export default function FormRoleColorPicker(color) {
   const onChange = color.onChange;
   const items = [color, onChange];
   const callback = React.useCallback(() => {
-    let obj = onChange(outer1_2[4]);
+    let obj = onChange(closure_1_2[4]);
     obj = { color, onSelect: onChange };
-    obj.openLazy(color(outer1_2[6])(outer1_2[5], outer1_2.paths), "RoleColorPicker", obj);
+    obj.openLazy(color(closure_1_2[6])(closure_1_2[5], closure_1_2.paths), "RoleColorPicker", obj);
   }, items);
   let obj = { leading: null, label: null, disabled: null, onPress: null };
   obj = { color, style: callback().rowColorBlock, onSelect: callback };
-  obj[0] = jsx(onChange(14011), { color, style: callback().rowColorBlock, onSelect: callback });
+  obj[0] = jsx(onChange(14079), { color, style: callback().rowColorBlock, onSelect: callback });
   const tmp = callback();
   obj[1] = color(688).int2hex(color);
   obj[2] = flag;
   obj[3] = callback;
-  return jsx(color(8083).FormRow, { color, style: callback().rowColorBlock, onSelect: callback });
+  return jsx(color(8122).FormRow, { color, style: callback().rowColorBlock, onSelect: callback });
 };

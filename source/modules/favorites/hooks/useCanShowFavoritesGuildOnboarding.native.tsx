@@ -1,25 +1,27 @@
-// Module ID: 9989
-// Function ID: 9990
+// Module ID: 10028
+// Function ID: 10029
 // Name: useCanShowFavoritesGuildOnboarding
-// Dependencies: [4086, 1979, 589, 4229, 2]
+// Dependencies: [4089, 1980, 589, 4233, 2]
 // Exports: default
 
-// Module 9989 (useCanShowFavoritesGuildOnboarding)
-import setContent from "setContent";
-import handleConnectionOpen from "handleConnectionOpen";
+// Module 10028 (useCanShowFavoritesGuildOnboarding)
+import initialize from "initialize" /* 589 */;
+import coerceMainRoute from "coerceMainRoute" /* 4233 */;
+import closure_2 from "setContent" /* 4089 */;
+import closure_3 from "handleConnectionOpen" /* 1980 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/favorites/hooks/useCanShowFavoritesGuildOnboarding.native.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/favorites/hooks/useCanShowFavoritesGuildOnboarding.native.tsx");
 
 export default function useCanShowFavoritesGuildOnboarding() {
-  const items = [handleConnectionOpen];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => null != voiceChannelId.getVoiceChannelId());
-  const obj = require(589) /* initialize */;
-  const items1 = [setContent];
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => open.isOpen());
-  const obj2 = require(589) /* initialize */;
+  const items = [closure_3];
+  const stateFromStores = initialize.useStateFromStores(items, () => null != voiceChannelId.getVoiceChannelId());
+  const obj = initialize;
+  const items1 = [closure_2];
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => open.isOpen());
+  const obj2 = initialize;
   let tmp4 = !stateFromStores;
-  const isModalOpen = require(4229) /* coerceMainRoute */.useIsModalOpen();
+  const isModalOpen = coerceMainRoute.useIsModalOpen();
   if (!stateFromStores) {
     tmp4 = !stateFromStores1;
   }

@@ -1,66 +1,48 @@
-// Module ID: 8217
-// Function ID: 8218
-// Name: transform
-// Dependencies: [19, 4069, 4823, 8218, 1236, 4066, 8177, 2]
-// Exports: default, transformSticker
+// Module ID: 8257
+// Function ID: 8258
+// Name: transformSticker
+// Dependencies: [4072, 4828, 8258, 8216, 1236, 4069, 2]
+// Exports: transformSticker
 
-// Module 8217 (transform)
-import noop from "noop";
-import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID";
+// Module 8257 (transformSticker)
+import set from "set" /* 2 */;
+import STICKER_PICKER_TAB_PANEL_ID from "STICKER_PICKER_TAB_PANEL_ID" /* 4072 */;
 
-const require = arg1;
-function transform(id, isPreview) {
+const StickerAnimationSettings = STICKER_PICKER_TAB_PANEL_ID.StickerAnimationSettings;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/transformSticker.tsx");
+
+export const transformSticker = function transformSticker(tmp5Result1) {
+  const AnimateStickers = _require(4069).AnimateStickers;
+  _require = tmp5Result1;
   let obj = {};
-  const merged = Object.assign(id);
-  let str = id.id;
+  const setting = AnimateStickers.getSetting();
+  const merged = Object.assign(tmp5Result1);
+  let str = tmp5Result1.id;
   if (str == null) {
     str = "";
   }
   obj.asset = str;
-  obj = { isPreview: !isPreview };
-  let str2 = require(4823) /* getStickerExtensionFromFormatType */.getStickerAssetUrl(id, obj);
+  let tmpResult = tmp(4828);
+  obj = { isPreview: !tmp5 };
+  let str2 = tmpResult.getStickerAssetUrl(tmp5Result1, obj);
   if (str2 == null) {
     str2 = "";
   }
   obj.url = str2;
-  const NativeLottieRenderMode = tmp2(8218).NativeLottieRenderMode;
-  obj.renderMode = isPreview ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
-  const intl = tmp2(1236).intl;
-  if (arg2) {
-    let stringResult = intl.string(tmp2(1236).t["fT+Yjp"]);
-  } else {
-    obj = { stickerName: null };
-    obj[0] = id.name;
-    stringResult = intl.formatToPlainString(tmp2(1236).t.rk6pOw, obj);
-  }
-  obj.accessibilityLabel = stringResult;
-  const intl2 = tmp2(1236).intl;
-  obj.accessibilityHint = intl2.string(require(1236) /* getSystemLocale */.t.GCEruV);
+  const NativeLottieRenderMode = tmp(8258).NativeLottieRenderMode;
+  obj.renderMode = setting === StickerAnimationSettings.ALWAYS_ANIMATE ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
+  tmpResult = tmp(8216);
+  obj = {
+    expensive() {
+      const intl = tmp5Result1(closure_1_1[4]).intl;
+      return intl.formatToPlainString(tmp5Result1(closure_1_1[4]).t.rk6pOw, { stickerName: tmp5Result1.name });
+    },
+    cheap: null
+  };
+  let intl = tmp(1236).intl;
+  obj[1] = intl.string(_require(1236).t["fT+Yjp"]);
+  obj.accessibilityLabel = tmpResult.getAccessibilityLabelOrCheapFallbackUnsafe(obj);
+  const intl2 = tmp(1236).intl;
+  obj.accessibilityHint = intl2.string(_require(1236).t.GCEruV);
   return obj;
-}
-let result = require("getStickerExtensionFromFormatType").fileFinishedImporting("modules/messages/native/renderer/system_messages/transformSticker.tsx");
-
-export default function useTransformedSticker(sticker) {
-  sticker = sticker.sticker;
-  const isStickerReplyEnabled = sticker.isStickerReplyEnabled;
-  let React;
-  let StickerAnimationSettings;
-  const AnimateStickers = sticker(isStickerReplyEnabled[5]).AnimateStickers;
-  let tmp = AnimateStickers.useSetting() === StickerAnimationSettings.ALWAYS_ANIMATE;
-  React = tmp;
-  const result = sticker(isStickerReplyEnabled[6]).shouldSkipAccessibilityLabels();
-  StickerAnimationSettings = result;
-  const items = [tmp, isStickerReplyEnabled, result, sticker];
-  return React.useMemo(() => {
-    let tmp;
-    if (isStickerReplyEnabled) {
-      tmp = outer1_4(sticker, c2, c3);
-    }
-    return tmp;
-  }, items);
-};
-export const transformSticker = function transformSticker(tmp5Result1) {
-  const AnimateStickers = require(4066) /* explicitContentFromProto */.AnimateStickers;
-  const setting = AnimateStickers.getSetting();
-  return transform(tmp5Result1, setting === StickerAnimationSettings.ALWAYS_ANIMATE, require(8177) /* apexExperiment */.shouldSkipAccessibilityLabels());
 };

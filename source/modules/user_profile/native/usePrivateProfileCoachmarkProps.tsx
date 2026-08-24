@@ -1,23 +1,24 @@
-// Module ID: 15627
-// Function ID: 15628
+// Module ID: 15693
+// Function ID: 15694
 // Name: PrivateProfileCoachmarkImage
-// Dependencies: [19, 17, 676, 1388, 21, 4661, 6070, 1306, 1236, 8152, 4066, 1377, 7360, 2]
+// Dependencies: [19, 17, 676, 1388, 21, 4668, 6101, 1306, 1236, 8191, 4069, 1377, 7398, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 15627 (PrivateProfileCoachmarkImage)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { UserSettingsSections } from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15693 (PrivateProfileCoachmarkImage)
+import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 6101 */;
+import closure_2 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { UserSettingsSections } from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 function PrivateProfileCoachmarkImage() {
-  return <View style={callback().imageContainer}>{jsx(require(6070) /* PrivateProfileAbstractUI */.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>;
+  return <View style={callback().imageContainer}>{jsx(PrivateProfileAbstractUI.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>;
 }
 let closure_7 = createCacheKey.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
-const result = require("ME").fileFinishedImporting("modules/user_profile/native/usePrivateProfileCoachmarkProps.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/usePrivateProfileCoachmarkProps.tsx");
 
 export const usePrivateProfileCoachmarkProps = function usePrivateProfileCoachmarkProps(visibleContent) {
   visibleContent = visibleContent.visibleContent;
@@ -49,7 +50,7 @@ export const usePrivateProfileCoachmarkProps = function usePrivateProfileCoachma
     obj[1] = stringResult1;
     obj[3] = visibleContent === visibleContent(markAsDismissed[11]).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
     obj[4] = function onDismiss() {
-      return callback(outer1_5.USER_DISMISS);
+      return callback(closure_1_5.USER_DISMISS);
     };
     obj[5] = function renderImgComponent() {
       return callback2(closure_8, {});
@@ -57,9 +58,9 @@ export const usePrivateProfileCoachmarkProps = function usePrivateProfileCoachma
     const intl2 = visibleContent(markAsDismissed[8]).intl;
     obj[6] = intl2.string(visibleContent(markAsDismissed[8]).t.eOoTMX);
     obj[8] = function onButtonPress() {
-      callback(outer1_5.TAKE_ACTION);
-      let obj = outer1_0(outer1_1[12]);
-      obj = { screen: outer1_4.DATA_AND_PRIVACY };
+      callback(closure_1_5.TAKE_ACTION);
+      let obj = closure_1_0(closure_1_1[12]);
+      obj = { screen: closure_1_4.DATA_AND_PRIVACY };
       obj.openUserSettings(obj);
     };
     return obj;

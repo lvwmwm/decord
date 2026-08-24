@@ -4,7 +4,8 @@
 // Dependencies: [19, 252]
 
 // Module 251 (children)
-import "noop";
+import noopAll from "noop" /* 19 */;
 
+noopAll;
 
 export { default as default } from "children";

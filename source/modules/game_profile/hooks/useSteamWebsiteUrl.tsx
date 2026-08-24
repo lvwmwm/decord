@@ -1,36 +1,36 @@
-// Module ID: 9105
-// Function ID: 9106
+// Module ID: 9142
+// Function ID: 9143
 // Name: buildSteamStoreUrl
-// Dependencies: [4505, 676, 589, 9106, 9104, 1903, 2]
+// Dependencies: [4509, 676, 589, 9143, 9141, 1903, 2]
 // Exports: buildSteamStoreUrl, useSteamWebsiteUrl
 
-// Module 9105 (buildSteamStoreUrl)
-import handleLoadMessages from "handleLoadMessages";
-import { Distributors } from "ME";
+// Module 9142 (buildSteamStoreUrl)
+import closure_2 from "handleLoadMessages" /* 4509 */;
+import { Distributors } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/game_profile/hooks/useSteamWebsiteUrl.tsx");
+const result = require("set").fileFinishedImporting("modules/game_profile/hooks/useSteamWebsiteUrl.tsx");
 
 export const buildSteamStoreUrl = function buildSteamStoreUrl(arg0) {
   return "https://store.steampowered.com/app/" + encodeURIComponent(arg0);
 };
 export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
   const _require = id;
-  const items = [handleLoadMessages];
+  const items = [closure_2];
   const items1 = [id];
   return _require(589).useStateFromStores(items, () => {
     if (null == id) {
       return null;
     } else {
-      const game = outer1_2.getGame(tmp);
+      const game = closure_1_2.getGame(tmp);
       if (null == game) {
         return null;
       } else {
-        if (game.steamReleaseStatus === id(outer1_1[3]).SteamReleaseStatus.RETIRED_ABANDONED) {
+        if (game.steamReleaseStatus === id(closure_1_1[3]).SteamReleaseStatus.RETIRED_ABANDONED) {
           return null;
         } else {
           const websites = game.websites;
-          const found = websites.find((category) => category.category === callback(9104).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          const found = websites.find((category) => category.category === callback(9141).ThirdPartyGameApplicationWebsiteCategory.STEAM);
           if (found != null) {
             const url = found.url;
           }
@@ -69,7 +69,7 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
           return tmp7;
         }
         const tmp11 = id;
-        const tmp12 = outer1_1;
+        const tmp12 = closure_1_1;
       }
     }
   }, items1);

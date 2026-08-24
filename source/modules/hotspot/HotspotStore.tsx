@@ -1,15 +1,19 @@
-// Module ID: 7194
-// Function ID: 7195
+// Module ID: 7232
+// Function ID: 7233
 // Name: set
-// Dependencies: [683, 589, 4842, 709, 2]
+// Dependencies: [683, 589, 4847, 709, 2]
 
-// Module 7194 (set)
-import { CONFERENCE_MODE_ENABLED } from "CONFERENCE_MODE_ENABLED";
-import { PersistedStore } from "initialize";
-import set from "get";
+// Module 7232 (set)
+import initializeDefault from "initialize" /* 589 */;
+import CONFERENCE_MODE_ENABLED2 from "CONFERENCE_MODE_ENABLED" /* 683 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import get from "get" /* 4847 */;
+import set from "set" /* 2 */;
 
+const CONFERENCE_MODE_ENABLED = CONFERENCE_MODE_ENABLED2.CONFERENCE_MODE_ENABLED;
 let set = new Set();
 let closure_4 = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class HotspotStore extends PersistedStore {
 }
 const prototype = HotspotStore.prototype;
@@ -18,7 +22,7 @@ prototype["initialize"] = function initialize(hiddenHotspots) {
     const _Array = Array;
     if (Array.isArray(hiddenHotspots.hiddenHotspots)) {
       const _Set = Set;
-      const set = new Set(hiddenHotspots.hiddenHotspots);
+      set = new Set(hiddenHotspots.hiddenHotspots);
     }
     if (null != hiddenHotspots.hotspotOverrides) {
       const hotspotOverrides = hiddenHotspots.hotspotOverrides;
@@ -36,7 +40,7 @@ prototype["hasHotspot"] = function hasHotspot(LIVE_STAGE_NOTIFICATION_BADGE) {
   }
   let tmp3 = !CONFERENCE_MODE_ENABLED;
   if (!CONFERENCE_MODE_ENABLED) {
-    const ProcessArgs = require(4842) /* get */.ProcessArgs;
+    const ProcessArgs = get.ProcessArgs;
     const isDisallowPopupsSetResult = ProcessArgs.isDisallowPopupsSet();
     let tmp7 = !isDisallowPopupsSetResult;
     if (!isDisallowPopupsSetResult) {
@@ -70,9 +74,9 @@ const items = [
   }
 ];
 HotspotStore.migrations = items;
-const hotspotStore = new HotspotStore(require("dispatcher"), {
+const hotspotStore = new HotspotStore(dispatcherDefault, {
   OVERLAY_INITIALIZE: function handleOverlayInitialize(hiddenHotspots) {
-    const set = new Set(hiddenHotspots.hiddenHotspots);
+    set = new Set(hiddenHotspots.hiddenHotspots);
   },
   HOTSPOT_HIDE: function handleHotspotHide(location) {
     const _location = location.location;

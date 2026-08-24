@@ -1,12 +1,14 @@
-// Module ID: 5015
-// Function ID: 5016
+// Module ID: 5020
+// Function ID: 5021
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 5015 (initialize)
-import { DeviceSettingsStore } from "initialize";
+// Module 5020 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0 = true;
+const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class ConversationVisibilityStore extends DeviceSettingsStore {
 }
 const prototype = ConversationVisibilityStore.prototype;
@@ -30,7 +32,7 @@ prototype["getUserAgnosticState"] = function getUserAgnosticState() {
 };
 ConversationVisibilityStore.displayName = "ConversationVisibilityStore";
 ConversationVisibilityStore.persistKey = "ConversationVisibilityStore";
-const conversationVisibilityStore = new ConversationVisibilityStore(require("dispatcher"), {
+const conversationVisibilityStore = new ConversationVisibilityStore(dispatcherDefault, {
   CONVERSATIONS_TOGGLE_HIGHLIGHTING: function handleToggleHighlighting() {
     closure_0 = !closure_0;
   }

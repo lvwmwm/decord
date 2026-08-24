@@ -1,24 +1,29 @@
-// Module ID: 10165
-// Function ID: 10166
+// Module ID: 10204
+// Function ID: 10205
 // Name: openCreateForumPostModal
-// Dependencies: [7514, 5260, 10166, 2007, 2]
+// Dependencies: [7552, 5265, 10205, 2008, 2]
 // Exports: closeCreateForumPostModal, openCreateForumPostModal
 
-// Module 10165 (openCreateForumPostModal)
+// Module 10204 (openCreateForumPostModal)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7552 */;
+
 let c3 = "create-forum-post";
-let result = require("ForumComposerModal").fileFinishedImporting("modules/forums/native/composer/ForumComposerModalActionCreators.tsx");
+let result = set.fileFinishedImporting("modules/forums/native/composer/ForumComposerModalActionCreators.tsx");
 
 export const openCreateForumPostModal = function openCreateForumPostModal(guildId) {
-  let obj = require(7514) /* trackForumChannelSeenBatch */;
+  let obj = trackForumChannelSeenBatch;
   obj = { guildId: guildId.guildId, channelId: guildId.parentChannelId, location: guildId.analyticsLocationObject };
   const result = obj.trackMobileForumComposerOpened(obj);
   if (!tmp4) {
     obj = { guildId: null, channelId: null };
     ({ guildId: obj4[0], parentChannelId: obj4[1] } = guildId);
-    const result1 = tmp(7514).trackForumCreateNewPostStarted(obj);
-    const tmpResult = tmp(7514);
+    const result1 = tmp(7552).trackForumCreateNewPostStarted(obj);
+    const tmpResult = tmp(7552);
   }
-  importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(10166, dependencyMap.paths), guildId, c3);
+  _modDef5265.pushLazy(asyncRequireImpl(10205, dependencyMap.paths), guildId, c3);
 };
 export const closeCreateForumPostModal = function closeCreateForumPostModal() {
   let flag = arg0;
@@ -26,8 +31,8 @@ export const closeCreateForumPostModal = function closeCreateForumPostModal() {
     flag = false;
   }
   if (!flag) {
-    const result = require(7514) /* trackForumChannelSeenBatch */.trackMobileForumComposerDismissed();
-    const obj = require(7514) /* trackForumChannelSeenBatch */;
+    const result = trackForumChannelSeenBatch.trackMobileForumComposerDismissed();
+    const obj = trackForumChannelSeenBatch;
   }
-  importDefault(5260).popWithKey(c3);
+  _modDef5265.popWithKey(c3);
 };

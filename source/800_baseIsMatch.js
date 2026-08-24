@@ -4,6 +4,8 @@
 // Dependencies: [775, 768]
 
 // Module 800 (baseIsMatch)
+import Stack from "Stack" /* 775 */;
+
 
 export default function baseIsMatch(arg0, arg1, arg2, arg3) {
   if (null == arg0) {
@@ -59,7 +61,7 @@ export default function baseIsMatch(arg0, arg1, arg2, arg3) {
         let tmp17 = dependencyMap;
         let tmp18 = new.target;
         let tmp19 = new.target;
-        let tmp20 = new require(775) /* Stack */();
+        let tmp20 = new Stack();
         let tmp21 = tmp20;
         if (arg3) {
           let tmp22 = tmp11;

@@ -1,19 +1,22 @@
-// Module ID: 9299
-// Function ID: 9300
+// Module ID: 9336
+// Function ID: 9337
 // Name: toggleGuildExpandedState
 // Dependencies: [709, 2]
 // Exports: initiateEmojiInteraction, toggleGuildExpandedState
 
-// Module 9299 (toggleGuildExpandedState)
-const result = require("set").fileFinishedImporting("modules/emojis/EmojiActionCreators.tsx");
+// Module 9336 (toggleGuildExpandedState)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/emojis/EmojiActionCreators.tsx");
 
 export const toggleGuildExpandedState = function toggleGuildExpandedState(guildId) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "TOGGLE_GUILD_EXPANDED_STATE", guildId };
   obj.dispatch(obj);
 };
 export const initiateEmojiInteraction = function initiateEmojiInteraction(AutocompleteWrapperShown) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "EMOJI_INTERACTION_INITIATED", interaction: AutocompleteWrapperShown };
   obj.dispatch(obj);
 };

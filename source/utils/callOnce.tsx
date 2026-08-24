@@ -1,22 +1,24 @@
-// Module ID: 5416
-// Function ID: 5417
+// Module ID: 5421
+// Function ID: 5422
 // Name: callOnce
 // Dependencies: [2]
 // Exports: callOnce
 
-// Module 5416 (callOnce)
-const result = require("set").fileFinishedImporting("utils/callOnce.tsx");
+// Module 5421 (callOnce)
+import set from "set" /* 2 */;
 
-export function callOnce(outer1_1) {
-  let closure_0 = outer1_1;
-  let c2 = false;
+const result = set.fileFinishedImporting("utils/callOnce.tsx");
+
+export function callOnce(closure_1_1) {
+  closure_0 = closure_1_1;
+  c2 = false;
   return () => {
     const items = [...arguments];
     if (!c2) {
       c2 = true;
       const items1 = [];
       HermesBuiltin.arraySpread(items, 0);
-      let closure_1 = HermesBuiltin.apply(items1, undefined);
+      closure_1 = HermesBuiltin.apply(items1, undefined);
     }
     return closure_1;
   };

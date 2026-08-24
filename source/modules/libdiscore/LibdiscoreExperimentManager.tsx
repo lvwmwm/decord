@@ -1,15 +1,18 @@
-// Module ID: 17078
-// Function ID: 17079
+// Module ID: 17171
+// Function ID: 17172
 // Name: experimentStoreUpdateHandler
-// Dependencies: [1212, 1917, 1914, 643, 1472, 5038, 2]
+// Dependencies: [1212, 1917, 1914, 643, 1472, 5043, 2]
 
-// Module 17078 (experimentStoreUpdateHandler)
-import initialize from "initialize";
-import "initialize";
+// Module 17171 (experimentStoreUpdateHandler)
+import shallowEqualDefault from "shallowEqual" /* 643 */;
+import items2 from "items" /* 1914 */;
+import isBlockedDomain from "isBlockedDomain" /* 1917 */;
+import initializeDefault from "initialize" /* 5043 */;
+import closure_3 from "initialize" /* 1212 */;
 
-const require = arg1;
+require = arg1;
 function experimentStoreUpdateHandler() {
-  let obj = require(1917) /* isBlockedDomain */;
+  let obj = isBlockedDomain;
   if (obj.isLibdiscoreInitialized()) {
     if (!tmpResult.isExperimentSyncDisabled()) {
       obj = {};
@@ -20,31 +23,32 @@ function experimentStoreUpdateHandler() {
       }
       let tmp7 = null != obj;
       if (tmp7) {
-        tmp7 = importDefault(643)(obj, obj);
+        tmp7 = shallowEqualDefault(obj, obj);
       }
       if (!tmp7) {
-        const experimentCacher = require(1917) /* isBlockedDomain */.getExperimentCacher();
+        const experimentCacher = isBlockedDomain.getExperimentCacher();
         const _JSON = JSON;
         experimentCacher.flushToCache(JSON.stringify(obj));
-        const obj4 = require(1917) /* isBlockedDomain */;
+        const obj4 = isBlockedDomain;
       }
     }
     tmpResult = tmp(1914);
   }
 }
 let c4 = null;
+initializeDefault;
 class LibdiscoreExperimentManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
     applyArgumentsResult.actions = {};
     map = new Map();
-    applyArgumentsResult.stores = map.set(experimentStoreUpdateHandler, experimentStoreUpdateHandler);
+    applyArgumentsResult.stores = map.set(closure_3, experimentStoreUpdateHandler);
     return applyArgumentsResult;
   }
 }
 const prototype = LibdiscoreExperimentManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  const prop = require(1914) /* items */.ALL_LIBDISCORE_EXPERIMENTS;
+  const prop = items2.ALL_LIBDISCORE_EXPERIMENTS;
   const item = prop.forEach((id) => {
     let obj = callback(table[4]);
     obj = { kind: "user", name: id.id, defaultConfig: { treatmentId: -1 }, variations: null };
@@ -61,6 +65,6 @@ prototype["_terminate"] = function _terminate() {
 
 };
 const libdiscoreExperimentManager = new LibdiscoreExperimentManager();
-const result = require("items").fileFinishedImporting("modules/libdiscore/LibdiscoreExperimentManager.tsx");
+const result = require("set").fileFinishedImporting("modules/libdiscore/LibdiscoreExperimentManager.tsx");
 
 export default libdiscoreExperimentManager;

@@ -1,18 +1,23 @@
-// Module ID: 11218
-// Function ID: 11219
+// Module ID: 11269
+// Function ID: 11270
 // Name: initialize
-// Dependencies: [1922, 11, 11216, 5248, 589, 709, 2]
+// Dependencies: [1922, 11, 11267, 5253, 589, 709, 2]
 
-// Module 11218 (initialize)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { Store } from "initialize";
+// Module 11269 (initialize)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 5253 */;
+import result2 from "result" /* 11267 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
+require = arg1;
+const Store = initializeDefault.Store;
 class AppLauncherOnboardingStore extends Store {
 }
 const prototype = AppLauncherOnboardingStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(mergeGuildAvatar);
+  this.waitFor(closure_5);
 };
 prototype["getRecentMessageMetadata"] = function getRecentMessageMetadata() {
   return closure_3;
@@ -21,13 +26,11 @@ prototype["getRecentApplicationCommandMetadata"] = function getRecentApplication
   return closure_4;
 };
 AppLauncherOnboardingStore.displayName = "AppLauncherOnboardingStore";
-const appLauncherOnboardingStore = new AppLauncherOnboardingStore(require("dispatcher"), {
+const appLauncherOnboardingStore = new AppLauncherOnboardingStore(dispatcherDefault, {
   APPLICATION_COMMAND_USED: function handleApplicationCommandUsed(context) {
-    let command;
-    let commandOrigin;
     context = context.context;
     ({ command, commandOrigin } = context);
-    let tmp = commandOrigin !== require(5248) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER;
+    let tmp = commandOrigin !== ApplicationCommandSectionType.CommandOrigin.APPLICATION_LAUNCHER;
     if (tmp) {
       tmp = null != context.channel;
     }
@@ -46,8 +49,6 @@ const appLauncherOnboardingStore = new AppLauncherOnboardingStore(require("dispa
     }
   },
   MESSAGE_CREATE: function handleMessageCreate(message) {
-    let channelId;
-    let guildId;
     message = message.message;
     ({ channelId, guildId } = message);
     currentUser = currentUser.getCurrentUser();
@@ -55,11 +56,11 @@ const appLauncherOnboardingStore = new AppLauncherOnboardingStore(require("dispa
       if (null != currentUser.id) {
         if (null != message.author) {
           if (currentUser.id === message.author.id) {
-            let obj = importDefault(11);
+            let obj = DISCORD_EPOCHDefault;
             const extractTimestampResult = obj.extractTimestamp(message.id);
             const _Date = Date;
             const timestamp = Date.now();
-            if (timestamp <= extractTimestampResult + require(11216) /* result */.RECENT_MESSAGE_MS) {
+            if (timestamp <= extractTimestampResult + result2.RECENT_MESSAGE_MS) {
               obj = { timeMs: null, guildId: null, channelId: null };
               obj[0] = extractTimestampResult;
               obj[1] = guildId;
@@ -71,6 +72,6 @@ const appLauncherOnboardingStore = new AppLauncherOnboardingStore(require("dispa
     }
   }
 });
-const result = require("result").fileFinishedImporting("modules/app_launcher/native/onboarding/stores/AppLauncherOnboardingStore.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/stores/AppLauncherOnboardingStore.tsx");
 
 export default appLauncherOnboardingStore;

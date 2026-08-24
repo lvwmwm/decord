@@ -1,27 +1,28 @@
-// Module ID: 7250
-// Function ID: 7251
+// Module ID: 7288
+// Function ID: 7289
 // Name: filterPlayingActivities
-// Dependencies: [7241, 1340, 4509, 4974, 4512, 7251, 4559, 4541, 676, 4520, 4066, 1403, 7261, 659, 12, 589, 709, 2]
+// Dependencies: [7279, 1340, 4514, 4979, 4517, 7289, 4564, 4546, 676, 4525, 4069, 1403, 7299, 659, 12, 589, 709, 2]
 
-// Module 7250 (filterPlayingActivities)
-import upsertAccount from "upsertAccount";
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import gameFromServer from "gameFromServer";
-import checkIdleAFK from "checkIdleAFK";
-import setLibraryApplications from "setLibraryApplications";
-import updateActivities from "updateActivities";
-import sortActivity from "sortActivity";
-import { sortActivity } from "sortActivity";
-import handleUpdate from "handleUpdate";
-import ME from "ME";
-import { Store } from "initialize";
+// Module 7288 (filterPlayingActivities)
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import hasFlag from "hasFlag" /* 1403 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 7299 */;
+import closure_3 from "upsertAccount" /* 7279 */;
+import closure_4 from "handleConnectionClosedOrResumed" /* 1340 */;
+import closure_5 from "gameFromServer" /* 4514 */;
+import closure_6 from "checkIdleAFK" /* 4979 */;
+import closure_7 from "setLibraryApplications" /* 4517 */;
+import closure_8 from "updateActivities" /* 7289 */;
+import closure_9 from "sortActivity" /* 4564 */;
+import { sortActivity } from "sortActivity" /* 4564 */;
+import closure_11 from "handleUpdate" /* 4546 */;
+import ME from "ME" /* 676 */;
 
-let closure_14;
-let closure_15;
-let closure_17;
-let closure_18;
-let map1;
-const require = arg1;
+require = arg1;
 function filterPlayingActivities(arg0) {
   if (0 === arg0.length) {
     return arg0;
@@ -65,27 +66,27 @@ function shouldShowActivity(flags) {
   } else {
     const type = flags.type;
     if (constants2.LISTENING === type) {
-      if (importDefault(7261)(flags)) {
-        let shouldShowActivityResult = upsertAccount.shouldShowActivity();
+      if (isListeningOnSpotifyDefault(flags)) {
+        let shouldShowActivityResult = closure_3.shouldShowActivity();
       } else {
         shouldShowActivityResult = null != flags.application_id;
         if (shouldShowActivityResult) {
-          let tmpResult = tmp(4520);
-          shouldShowActivityResult = tmpResult.shouldShareApplicationActivity(flags.application_id, setLibraryApplications);
+          let tmpResult = tmp(4525);
+          shouldShowActivityResult = tmpResult.shouldShareApplicationActivity(flags.application_id, closure_7);
         }
       }
       return shouldShowActivityResult;
     } else if (tmp3.PLAYING === type) {
       if (null != flags.application_id) {
-        tmpResult = tmp(4520);
-        let result = tmpResult.shouldShareApplicationActivity(flags.application_id, setLibraryApplications);
+        tmpResult = tmp(4525);
+        let result = tmpResult.shouldShareApplicationActivity(flags.application_id, closure_7);
       } else {
-        const searchGamesByNameResult = gameFromServer.searchGamesByName(flags.name);
+        const searchGamesByNameResult = closure_5.searchGamesByName(flags.name);
         if (1 === searchGamesByNameResult.length) {
-          result = tmp(4520).shouldShareApplicationActivity(searchGamesByNameResult[0], setLibraryApplications);
-          const tmpResult1 = tmp(4520);
+          result = tmp(4525).shouldShareApplicationActivity(searchGamesByNameResult[0], closure_7);
+          const tmpResult1 = tmp(4525);
         } else {
-          const ShowCurrentGame = tmp(4066).ShowCurrentGame;
+          const ShowCurrentGame = tmp(4069).ShowCurrentGame;
           result = ShowCurrentGame.getSetting();
         }
       }
@@ -96,20 +97,20 @@ function shouldShowActivity(flags) {
       }
       let result1 = null == flags.application_id;
       if (!result1) {
-        result1 = tmp(4520).shouldShareApplicationActivity(flags.application_id, setLibraryApplications);
-        const tmpResult2 = tmp(4520);
+        result1 = tmp(4525).shouldShareApplicationActivity(flags.application_id, closure_7);
+        const tmpResult2 = tmp(4525);
       }
       return result1;
     }
   }
-  obj = require(1403) /* hasFlag */;
+  obj = hasFlag;
 }
 function handleUpdate() {
   let num = idleSince.getIdleSince();
   if (num == null) {
     num = 0;
   }
-  let closure_22 = idleSince.isAFK();
+  closure_22 = idleSince.isAFK();
   if (c23) {
     let IDLE = closure_18;
     let ONLINE = closure_18;
@@ -118,7 +119,7 @@ function handleUpdate() {
     IDLE = INVISIBLE;
     ONLINE = INVISIBLE;
   } else {
-    const StatusSetting = require(4066) /* explicitContentFromProto */.StatusSetting;
+    const StatusSetting = explicitContentFromProto.StatusSetting;
     ONLINE = StatusSetting.getSetting();
     if (ONLINE === StatusTypes.UNKNOWN) {
       ONLINE = StatusTypes.ONLINE;
@@ -138,8 +139,8 @@ function handleUpdate() {
       let found = activities.filter(shouldShowActivity);
     }
     let flag = false;
-    if (!importDefault(659)(found, found)) {
-      let closure_21 = filterPlayingActivities(found);
+    if (!isUndefinedOrNullDefault(found, found)) {
+      closure_21 = filterPlayingActivities(found);
       flag = true;
     }
     remoteActivities = remoteActivities.getRemoteActivities();
@@ -151,17 +152,17 @@ function handleUpdate() {
       const items = [];
       let arraySpreadResult = HermesBuiltin.arraySpread(found, 0);
       arraySpreadResult = HermesBuiltin.arraySpread(remoteActivities.filter((type) => type.type !== constants.CUSTOM_STATUS), arraySpreadResult);
-      const tmp12Result = importDefault(12);
-      const tmp12ResultResult = importDefault(12)(items.sort(sortActivity));
-      const valueResult = importDefault(12)(items.sort(sortActivity)).uniqBy((type) => "" + type.type + ":" + type.application_id + ":" + type.name).value();
-      let closure_27 = filterPlayingActivities(valueResult);
-      const iter = importDefault(12)(items.sort(sortActivity)).uniqBy((type) => "" + type.type + ":" + type.application_id + ":" + type.name);
+      const tmp12Result = applyDefault;
+      const tmp12ResultResult = applyDefault(items.sort(sortActivity));
+      const valueResult = applyDefault(items.sort(sortActivity)).uniqBy((type) => "" + type.type + ":" + type.application_id + ":" + type.name).value();
+      closure_27 = filterPlayingActivities(valueResult);
+      const iter = applyDefault(items.sort(sortActivity)).uniqBy((type) => "" + type.type + ":" + type.application_id + ":" + type.name);
     }
   }
   found = [];
 }
 function handleConnectionOpen() {
-  let c23 = false;
+  c23 = false;
   const UNKNOWN = StatusTypes.UNKNOWN;
   handleUpdate();
   const result = authStore.setCurrentUserOnConnectionOpen(closure_17, closure_26);
@@ -179,12 +180,13 @@ let closure_24 = Object.freeze([]);
 let closure_25 = Object.freeze([]);
 let closure_26 = [];
 let closure_27 = [];
+const Store = initializeDefault.Store;
 class SelfPresenceStore extends Store {
 }
 const prototype = SelfPresenceStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(gameFromServer, checkIdleAFK, setLibraryApplications, updateActivities, sortActivity, handleUpdate, upsertAccount, handleConnectionClosedOrResumed);
-  const items = [updateActivities];
+  this.waitFor(closure_5, closure_6, closure_7, closure_8, closure_9, closure_11, closure_3, closure_4);
+  const items = [closure_8];
   this.syncWith(items, handleUpdate);
 };
 prototype["getLocalPresence"] = function getLocalPresence() {
@@ -218,26 +220,26 @@ prototype["getPrimaryActivity"] = function getPrimaryActivity() {
   return this.getActivities(flag)[0];
 };
 prototype["getApplicationActivity"] = function getApplicationActivity(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
   return this.findActivity((application_id) => application_id.application_id === closure_0, flag);
 };
-prototype["findActivity"] = function findActivity(handleConnectionClosedOrResumed) {
+prototype["findActivity"] = function findActivity(closure_4) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
   const activities = this.getActivities(flag);
-  return activities.find(handleConnectionClosedOrResumed);
+  return activities.find(closure_4);
 };
 SelfPresenceStore.displayName = "SelfPresenceStore";
-const selfPresenceStore = new SelfPresenceStore(require("dispatcher"), {
+const selfPresenceStore = new SelfPresenceStore(dispatcherDefault, {
   START_SESSION: handleUpdate,
   CONNECTION_OPEN: function handleConnectionOpenTracked() {
-    let c23 = false;
+    c23 = false;
     const UNKNOWN = StatusTypes.UNKNOWN;
     handleUpdate();
     const result = authStore.setCurrentUserOnConnectionOpen(closure_17, closure_26);
@@ -259,8 +261,8 @@ const selfPresenceStore = new SelfPresenceStore(require("dispatcher"), {
   LIBRARY_FETCH_SUCCESS: handleUpdate,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: handleUpdate,
   LOGOUT: function handleLogout() {
-    let c23 = true;
-    let closure_18 = closure_17;
+    c23 = true;
+    closure_18 = closure_17;
     handleUpdate();
   },
   FORCE_INVISIBLE: function handleForceInvisible(invisible) {
@@ -268,7 +270,7 @@ const selfPresenceStore = new SelfPresenceStore(require("dispatcher"), {
     handleUpdate();
   },
   WINDOW_FOCUS: function handleWindowFocus() {
-    let c16 = false;
+    c16 = false;
     handleUpdate();
   },
   APP_STATE_UPDATE: function handleAppStateUpdate(state) {
@@ -281,6 +283,6 @@ const selfPresenceStore = new SelfPresenceStore(require("dispatcher"), {
     return false;
   }
 });
-let result = require("gameFromServer").fileFinishedImporting("stores/SelfPresenceStore.tsx");
+let result = require("set").fileFinishedImporting("stores/SelfPresenceStore.tsx");
 
 export default selfPresenceStore;

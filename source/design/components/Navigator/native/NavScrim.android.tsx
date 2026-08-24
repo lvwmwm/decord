@@ -1,26 +1,26 @@
-// Module ID: 6550
-// Function ID: 6551
+// Module ID: 6581
+// Function ID: 6582
 // Name: NavScrim
-// Dependencies: [19, 17, 21, 4661, 712, 5441, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 5446, 2]
 
-// Module 6550 (NavScrim)
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 6581 (NavScrim)
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5446 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let StyleSheet;
-let obj1;
 ({ View: obj1, StyleSheet } = get_ActivityIndicator);
 let obj = { androidNavScrim: null };
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj.backgroundColor = require("Themes").colors.ANDROID_NAVIGATION_SCRIM_BACKGROUND;
+obj.backgroundColor = ThemesDefault.colors.ANDROID_NAVIGATION_SCRIM_BACKGROUND;
 obj.top = undefined;
 obj[0] = obj;
 let closure_4 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(() => {
-  const insets = importDefault(5441)({ includeCustomKeyboardHeight: false }).insets;
+const memoResult = importAllResult.memo(() => {
+  const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeCustomKeyboardHeight: false }).insets;
   let tmp2 = null;
   if (0 !== insets.bottom) {
     let obj = { style: null, pointerEvents: "none" };
@@ -33,6 +33,6 @@ const memoResult = require("noop").memo(() => {
   }
   return tmp2;
 });
-const result = require("jsxProd").fileFinishedImporting("design/components/Navigator/native/NavScrim.android.tsx");
+const result = require("set").fileFinishedImporting("design/components/Navigator/native/NavScrim.android.tsx");
 
 export const NavScrim = memoResult;

@@ -1,26 +1,28 @@
-// Module ID: 16078
-// Function ID: 16079
-// Dependencies: [19, 17, 1391, 8507, 21, 4661, 712, 1503, 589, 11466, 15937, 2]
+// Module ID: 16176
+// Function ID: 16177
+// Dependencies: [19, 17, 1391, 8546, 21, 4668, 712, 1503, 589, 11515, 16034, 2]
 
-// Module 16078
-import { View } from "get ActivityIndicator";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { SearchTabs } from "MessageEmbedTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 16176
+import ThemesDefault from "Themes" /* 712 */;
+import InitialPinsScreenDefault from "InitialPinsScreen" /* 16034 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import { SearchTabs } from "MessageEmbedTypes" /* 8546 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let obj = { container: null };
-obj = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+obj = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 obj[0] = obj;
 let closure_7 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(() => {
+const memoResult = importAllResult.memo(() => {
   let obj = channelId(1503);
   channelId = obj.useRoute().params.channelId;
-  const items = [ensureGuildLoaded];
+  const items = [closure_4];
   const stateFromStores = channelId(589).useStateFromStores(items, () => {
-    const channel = outer1_4.getChannel(channelId);
+    const channel = closure_1_4.getChannel(channelId);
     let guild_id;
     if (channel != null) {
       guild_id = channel.guild_id;
@@ -28,11 +30,11 @@ const memoResult = require("noop").memo(() => {
     return guild_id;
   });
   const obj2 = channelId(589);
-  const channelDetailsSearchContext = channelId(11466).useChannelDetailsSearchContext(channelId, stateFromStores);
-  obj = { style: callback().container, children: jsx(importDefault(15937), obj) };
+  const channelDetailsSearchContext = channelId(11515).useChannelDetailsSearchContext(channelId, stateFromStores);
+  obj = { style: callback().container, children: jsx(InitialPinsScreenDefault, obj) };
   obj = { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS };
   return <View searchContext={channelDetailsSearchContext} isFocused tab={SearchTabs.PINS} />;
 });
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/PinsScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/PinsScreen.tsx");
 
 export default memoResult;

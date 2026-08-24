@@ -1,23 +1,23 @@
-// Module ID: 5013
-// Function ID: 5014
+// Module ID: 5018
+// Function ID: 5019
 // Name: processMessage
-// Dependencies: [32, 5014, 1391, 4994, 676, 1405, 4803, 5001, 589, 709, 2]
+// Dependencies: [32, 5019, 1391, 4999, 676, 1405, 4808, 5006, 589, 709, 2]
 
-// Module 5013 (processMessage)
-import _slicedToArray from "_slicedToArray";
-import removePendingListFetch from "removePendingListFetch";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import reinjectEphemerals from "reinjectEphemerals";
-import ME from "ME";
-import { Store } from "initialize";
-import set from "ensureGuildLoaded";
+// Module 5018 (processMessage)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import privDefault from "priv" /* 1405 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 5006 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "removePendingListFetch" /* 5019 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "reinjectEphemerals" /* 4999 */;
+import ME from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function processMessage(message) {
-  let channel_id;
-  let id;
   let flag = false;
   if (obj.updateExistingMessageIfCached(message)) {
     flag = true;
@@ -37,14 +37,14 @@ function processMessage(message) {
           obj = { state: null, message: null };
           obj[0] = obj.LOADED;
           ({ channel_id, id } = referenced_message);
-          obj[1] = require(4803) /* createMinimalMessageRecord */.createMessageRecord(referenced_message);
+          obj[1] = createMinimalMessageRecord.createMessageRecord(referenced_message);
           const result = obj.set(channel_id, id, obj);
           flag2 = true;
           if (message.type === constants.THREAD_STARTER_MESSAGE) {
             processMessage(referenced_message);
             flag2 = true;
           }
-          const obj5 = require(4803) /* createMinimalMessageRecord */;
+          const obj5 = createMinimalMessageRecord;
         } else {
           obj = { state: null };
           obj[0] = obj.DELETED;
@@ -57,7 +57,7 @@ function processMessage(message) {
           message = message.getMessage(message_reference.channel_id, message_id);
         }
         if (null != message) {
-          const obj1 = { state: null, message: null };
+          obj1 = { state: null, message: null };
           obj1[0] = obj.LOADED;
           obj1[1] = message;
           const result2 = obj.set(message_reference.channel_id, message_id, obj1);
@@ -101,7 +101,7 @@ function handleLoadThreadsSuccess(firstMessages) {
   }
   return tmp;
 }
-({ MessageTypes: error, MessageTypesWithLazyLoadedReferences: metroImportAll } = ME);
+({ MessageTypes: error, MessageTypesWithLazyLoadedReferences: closure_8 } = ME);
 let obj = { LOADED: 0, [0]: "LOADED", NOT_LOADED: 1, [1]: "NOT_LOADED", DELETED: 2, [2]: "DELETED" };
 obj = { state: obj.NOT_LOADED };
 let closure_10 = Object.freeze(obj);
@@ -129,7 +129,7 @@ prototype["handleCacheDisposed"] = function handleCacheDisposed(arg0, arg1) {
   const _cachedMessageIds = this._cachedMessageIds;
   if (_cachedMessageIds.has(arg0)) {
     const _Set = Set;
-    const set = new Set(self._cachedMessageIds);
+    set = new Set(self._cachedMessageIds);
     self._cachedMessageIds = set;
     const _cachedMessageIds2 = self._cachedMessageIds;
     _cachedMessageIds2.delete(arg0);
@@ -142,7 +142,7 @@ prototype["set"] = function set(arg0, arg1) {
   const _cachedMessageIds = this._cachedMessageIds;
   if (!_cachedMessageIds.has(arg0)) {
     const _Set = Set;
-    const set = new Set(self._cachedMessageIds);
+    set = new Set(self._cachedMessageIds);
     self._cachedMessageIds = set;
     const _cachedMessageIds2 = self._cachedMessageIds;
     _cachedMessageIds2.add(arg0);
@@ -196,15 +196,15 @@ prototype2["set"] = function set(arg0, arg1, arg2) {
     if (typeof ChannelReferencedMessageCache !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    let obj = Object.create(ChannelReferencedMessageCache.prototype);
+    obj = Object.create(ChannelReferencedMessageCache.prototype);
     obj = { max: 100, dispose: null };
     obj[1] = function dispose(arg0, arg1) {
       return obj.handleCacheDisposed(arg0, arg1);
     };
-    const tmp7 = new importDefault(1405)(obj);
+    const tmp7 = new privDefault(obj);
     obj._cachedMessages = tmp7;
     const _Set = Set;
-    const set = new Set();
+    set = new Set();
     obj._cachedMessageIds = set;
     const _channelCaches2 = this._channelCaches;
     const result = _channelCaches2.set(arg0, obj);
@@ -220,12 +220,12 @@ prototype2["updateExistingMessageIfCached"] = function updateExistingMessageIfCa
   if (tmp) {
     let flag = value.has(channel_id.id);
     if (flag) {
-      const obj = { state: null, message: null };
+      obj = { state: null, message: null };
       obj[0] = obj.LOADED;
-      obj[1] = require(4803) /* createMinimalMessageRecord */.createMessageRecord(channel_id);
+      obj[1] = createMinimalMessageRecord.createMessageRecord(channel_id);
       const result = value.set(channel_id.id, obj);
       flag = true;
-      const obj3 = require(4803) /* createMinimalMessageRecord */;
+      const obj3 = createMinimalMessageRecord;
     }
     tmp = flag;
   }
@@ -269,11 +269,12 @@ prototype2["clear"] = function clear() {
 };
 obj = Object.create(ReferencedMessageCache.prototype);
 obj[0] = new Map();
+const Store = initializeDefault.Store;
 class ReferencedMessageStore extends Store {
 }
 const prototype3 = ReferencedMessageStore.prototype;
 prototype3["initialize"] = function initialize() {
-  this.waitFor(reinjectEphemerals, ensureGuildLoaded, removePendingListFetch);
+  this.waitFor(closure_6, closure_5, closure_4);
 };
 prototype3["getMessageByReference"] = function getMessageByReference(messageReference) {
   let value;
@@ -303,7 +304,7 @@ prototype3["getReplyIdsForChannel"] = function getReplyIdsForChannel(memo1) {
   return cachedMessageIdsForChannel;
 };
 ReferencedMessageStore.displayName = "ReferencedMessageStore";
-const referencedMessageStore = new ReferencedMessageStore(require("dispatcher"), {
+const referencedMessageStore = new ReferencedMessageStore(dispatcherDefault, {
   CACHE_LOADED: function handleCacheLoaded(messages) {
     return anyChanged(Object.values(messages.messages), (arg0) => callback(Object.values(arg0), (arg0) => callback(arg0)));
   },
@@ -328,8 +329,6 @@ const referencedMessageStore = new ReferencedMessageStore(require("dispatcher"),
   LOAD_THREADS_SUCCESS: handleLoadThreadsSuccess,
   LOAD_ARCHIVED_THREADS_SUCCESS: handleLoadThreadsSuccess,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: function handleMessageExplicitContentScanTimeout(arg0) {
-    let channelId;
-    let messageId;
     ({ messageId, channelId } = arg0);
     if (obj.has(channelId, messageId)) {
       const value = obj.get(channelId, messageId);
@@ -337,7 +336,7 @@ const referencedMessageStore = new ReferencedMessageStore(require("dispatcher"),
         if (value.state === obj.LOADED) {
           obj = { state: null, message: null };
           obj[0] = tmp3.LOADED;
-          obj[1] = require(5001) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(value.message);
+          obj[1] = redactionSettingToRenderedString.handleExplicitMediaScanTimeoutForMessage(value.message);
           const result = obj.set(channelId, messageId, obj);
         }
       }
@@ -365,8 +364,6 @@ const referencedMessageStore = new ReferencedMessageStore(require("dispatcher"),
     return ready;
   },
   MESSAGE_UPDATE: function handleMessageUpdate(message) {
-    let channel_id;
-    let id;
     message = message.message;
     ({ id, channel_id } = message);
     if (obj.has(channel_id, id)) {
@@ -375,7 +372,7 @@ const referencedMessageStore = new ReferencedMessageStore(require("dispatcher"),
         if (value.state === obj.LOADED) {
           obj = { state: null, message: null };
           obj[0] = tmp3.LOADED;
-          obj[1] = require(4803) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
+          obj[1] = createMinimalMessageRecord.updateMessageRecord(value.message, message);
           const result = obj.set(channel_id, id, obj);
         }
       }
@@ -385,8 +382,6 @@ const referencedMessageStore = new ReferencedMessageStore(require("dispatcher"),
     }
   },
   MESSAGE_DELETE: function handleMessageDelete(arg0) {
-    let channelId;
-    let id;
     ({ id, channelId } = arg0);
     if (obj.has(channelId, id)) {
       obj = { state: null };
@@ -398,10 +393,10 @@ const referencedMessageStore = new ReferencedMessageStore(require("dispatcher"),
   MESSAGE_DELETE_BULK: function handleMessageDeleteBulk(channelId) {
     channelId = channelId.channelId;
     return anyChanged(channelId.ids, (arg0) => {
-      let obj = outer1_13;
-      if (outer1_13.has(channelId, arg0)) {
+      obj = closure_1_13;
+      if (closure_1_13.has(channelId, arg0)) {
         obj = { state: null };
-        obj[0] = outer1_9.DELETED;
+        obj[0] = closure_1_9.DELETED;
         const result = obj.set(channelId, arg0, obj);
       }
       return false;

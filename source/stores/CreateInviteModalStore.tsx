@@ -1,20 +1,21 @@
-// Module ID: 8919
-// Function ID: 8920
+// Module ID: 8956
+// Function ID: 8957
 // Name: updateWithLatestInvite
-// Dependencies: [1391, 1910, 8043, 676, 8920, 8922, 38, 589, 709, 2]
+// Dependencies: [1391, 1910, 8082, 676, 8957, 8959, 38, 589, 709, 2]
 
-// Module 8919 (updateWithLatestInvite)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import map from "map";
-import { FormStates } from "ME";
-import { Store } from "initialize";
+// Module 8956 (updateWithLatestInvite)
+import _modDef38 from "module_38" /* 38 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isGuildMemberDefault from "isGuildMember" /* 8957 */;
+import getDefaultInviteExpiration from "getDefaultInviteExpiration" /* 8959 */;
+import closure_9 from "ensureGuildLoaded" /* 1391 */;
+import closure_10 from "createGuildRecordFromRust" /* 1910 */;
+import closure_11 from "map" /* 8082 */;
+import { FormStates } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function updateWithLatestInvite(channelId, arg1) {
-  let targetApplicationId;
-  let targetType;
-  let targetUserId;
   ({ targetType, targetUserId, targetApplicationId } = arg1);
   channel = channel.getChannel(channelId);
   let guild_id;
@@ -22,7 +23,7 @@ function updateWithLatestInvite(channelId, arg1) {
     guild_id = channel.guild_id;
   }
   guild = guild.getGuild(guild_id);
-  let obj = require(8922) /* getDefaultInviteExpiration */;
+  let obj = getDefaultInviteExpiration;
   let maxAge = obj.getDefaultInviteExpiration({ guild });
   invite = invite.getInvite(channelId, { targetType, targetUserId, targetApplicationId });
   obj = { channelId, maxAge: null, maxUses: null, temporary: null, flags: null, targetType: null, targetUserId: null, targetApplicationId: null, roleIds: null };
@@ -61,17 +62,18 @@ function updateWithLatestInvite(channelId, arg1) {
   }
   obj[8] = mapped;
 }
-require("isGuildMember").INVITE_OPTIONS_UNLIMITED.value;
+isGuildMemberDefault.INVITE_OPTIONS_UNLIMITED.value;
 let CLOSED = FormStates.CLOSED;
 let c15 = false;
+const Store = initializeDefault.Store;
 class CreateInviteModalStore extends Store {
 }
 const prototype = CreateInviteModalStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded, createGuildRecordFromRust, map);
+  this.waitFor(closure_9, closure_10, closure_11);
 };
 prototype["init"] = function init() {
-  this.waitFor(map);
+  this.waitFor(closure_11);
 };
 prototype["isOpen"] = function isOpen() {
   return CLOSED !== FormStates.CLOSED;
@@ -104,10 +106,10 @@ Object.defineProperty(prototype, "onClose", {
   set: undefined
 });
 CreateInviteModalStore.displayName = "CreateInviteModalStore";
-const createInviteModalStore = new CreateInviteModalStore(require("dispatcher"), {
+const createInviteModalStore = new CreateInviteModalStore(dispatcherDefault, {
   CREATE_INVITE_MODAL_INIT: function handleInit(guildId) {
     guildId = guildId.guildId;
-    let c4 = null;
+    c4 = null;
     let targetType = guildId.targetType;
     if (targetType == null) {
       targetType = null;
@@ -126,7 +128,7 @@ const createInviteModalStore = new CreateInviteModalStore(require("dispatcher"),
     const OPEN = FormStates.OPEN;
     onClose = onClose.onClose;
     const guildId = onClose.guildId;
-    let c4 = null;
+    c4 = null;
     let targetType = onClose.targetType;
     if (targetType == null) {
       targetType = null;
@@ -150,28 +152,28 @@ const createInviteModalStore = new CreateInviteModalStore(require("dispatcher"),
     }
   },
   CREATE_INVITE_MODAL_RESET_SETTINGS: function handleResetSettings() {
-    let closure_7 = closure_6;
+    closure_7 = closure_6;
   },
   CREATE_INVITE_MODAL_GENERATE_INVITE: function handleGenerateInvite() {
-    let closure_6 = closure_7;
-    let c15 = true;
+    closure_6 = closure_7;
+    c15 = true;
   },
   CREATE_INVITE_MODAL_GENERATE_INVITE_SUCCESS: function handleGenerateInviteSuccess(channelId) {
-    let c4 = null;
-    let c15 = false;
-    importDefault(38)(null != closure_6, "No invite settings for generated invite");
+    c4 = null;
+    c15 = false;
+    _modDef38(null != closure_6, "No invite settings for generated invite");
     updateWithLatestInvite(channelId.channelId, { targetType: closure_6.targetType, targetUserId: closure_6.targetUserId, targetApplicationId: closure_6.targetApplicationId });
   },
   CREATE_INVITE_MODAL_GENERATE_INVITE_FAILURE: function handleGenerateInviteFailure(message) {
-    let c5 = null;
-    let c15 = false;
+    c5 = null;
+    c15 = false;
     message = message.message;
   },
   CREATE_INVITE_MODAL_CLOSE: function handleModalClose() {
-    const CLOSED = FormStates.CLOSED;
-    let c8;
+    CLOSED = FormStates.CLOSED;
+    c8 = undefined;
   }
 });
-const result = require("map").fileFinishedImporting("stores/CreateInviteModalStore.tsx");
+const result = require("set").fileFinishedImporting("stores/CreateInviteModalStore.tsx");
 
 export default createInviteModalStore;

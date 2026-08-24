@@ -1,9 +1,12 @@
-// Module ID: 15559
-// Function ID: 15560
+// Module ID: 15624
+// Function ID: 15625
 // Name: set
 // Dependencies: [2, 301]
 
-// Module 15559 (set)
-const result = require("set").fileFinishedImporting("modules/core/native/usePressability.tsx");
+// Module 15624 (set)
+import set from "set" /* 2 */;
+import usePressabilityDefault from "usePressability" /* 301 */;
 
-export { default } from "usePressability";
+const result = set.fileFinishedImporting("modules/core/native/usePressability.tsx");
+
+export default usePressabilityDefault;

@@ -1,14 +1,14 @@
-// Module ID: 9960
-// Function ID: 9961
+// Module ID: 9999
+// Function ID: 10000
 // Name: CONTEXT_MENU_LONG_PRESS_DURATION_MS
-// Dependencies: [500, 4343, 2]
+// Dependencies: [500, 4347, 2]
 
-// Module 9960 (CONTEXT_MENU_LONG_PRESS_DURATION_MS)
-import set from "set";
-import { HapticFeedbackTypes } from "HapticFeedbackTypes";
-import set from "set";
+// Module 9999 (CONTEXT_MENU_LONG_PRESS_DURATION_MS)
+import HapticFeedbackTypes2 from "HapticFeedbackTypes" /* 4347 */;
+import set from "set" /* 500 */;
 
 set = set.isIOS();
+const HapticFeedbackTypes = HapticFeedbackTypes2.HapticFeedbackTypes;
 const result = set.fileFinishedImporting("design/components/ContextMenu/native/ContextMenuConstants.native.tsx");
 
 export const CONTEXT_MENU_LONG_PRESS_DURATION_MS = 300;

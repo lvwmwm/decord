@@ -1,20 +1,20 @@
-// Module ID: 11022
-// Function ID: 11023
-// Dependencies: [5, 3975, 6778, 2]
+// Module ID: 11061
+// Function ID: 11062
+// Dependencies: [5, 3978, 6815, 2]
 
-// Module 11022
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 11061
+import closure_2 from "asyncGeneratorStep" /* 5 */;
 
-const result = require("showTooManyUserGuildsAlert").fileFinishedImporting("actions/CommunicationDisabledActionCreators.tsx");
+const result = require("set").fileFinishedImporting("actions/CommunicationDisabledActionCreators.tsx");
 
 export default {
-  setCommunicationDisabledDuration(outer1_0, c1, value, current) {
-    let closure_0 = outer1_0;
-    let closure_1 = c1;
+  setCommunicationDisabledDuration(closure_1_0, c1, value, current) {
+    closure_0 = closure_1_0;
+    closure_1 = c1;
     const callback = value;
-    let closure_3 = current;
-    let closure_4 = arg4;
-    let closure_5 = arg5;
+    closure_3 = current;
+    closure_4 = arg4;
+    closure_5 = arg5;
     return callback(function*() {
       if (v0 === 2) {
         v0 = 3;
@@ -27,7 +27,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -43,8 +43,8 @@ export default {
               return obj;
             } else {
               let toISOStringResult = null;
-              if (null != outer1_2) {
-                let obj1 = v0(3975)();
+              if (null != closure_1_2) {
+                obj1 = v0(3978)();
                 toISOStringResult = obj1.add(tmp21, "s").toISOString();
                 const addResult = obj1.add(tmp21, "s");
               }
@@ -52,14 +52,14 @@ export default {
               obj1[0] = v0;
               obj1[1] = dependencyMap;
               obj1[2] = toISOStringResult;
-              obj1[3] = outer1_2;
-              obj1[4] = outer1_3;
-              obj1[5] = outer1_4;
-              obj1[6] = outer1_5;
+              obj1[3] = closure_1_2;
+              obj1[4] = closure_1_3;
+              obj1[5] = closure_1_4;
+              obj1[6] = closure_1_5;
               dependencyMap = 1;
               v0 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = v0(6778).setCommunicationDisabledUntil(obj1);
+              obj2[0] = v0(6815).setCommunicationDisabledUntil(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -72,7 +72,7 @@ export default {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           v0 = tmp;

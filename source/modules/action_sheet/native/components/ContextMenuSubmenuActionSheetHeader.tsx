@@ -1,31 +1,34 @@
-// Module ID: 10891
-// Function ID: 10892
+// Module ID: 10930
+// Function ID: 10931
 // Name: ContextMenuSubmenuActionSheetHeader
-// Dependencies: [19, 17, 21, 4661, 8829, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 8866, 1236, 2]
 // Exports: default
 
-// Module 10891 (ContextMenuSubmenuActionSheetHeader)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10930 (ContextMenuSubmenuActionSheetHeader)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ActionSheetHeaderPressableText from "ActionSheetHeaderPressableText" /* 8866 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_4 = createCacheKey.createStyles({ headerContainer: { paddingVertical: 12, paddingHorizontal: 16, alignItems: "flex-start" } });
-const result = require("jsxProd").fileFinishedImporting("modules/action_sheet/native/components/ContextMenuSubmenuActionSheetHeader.tsx");
+const result = require("set").fileFinishedImporting("modules/action_sheet/native/components/ContextMenuSubmenuActionSheetHeader.tsx");
 
 export default function ContextMenuSubmenuActionSheetHeader(onBack) {
   let fn = onBack.onBack;
   let obj = { style: callback().headerContainer, children: null };
   obj = { label: null, onPress: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["13/7kX"]);
   if (fn == null) {
     fn = () => {
 
     };
   }
   obj[1] = fn;
-  obj[1] = jsx(require(8829) /* ActionSheetHeaderPressableText */.ActionSheetHeaderPressableText, { label: null, onPress: null });
+  obj[1] = jsx(ActionSheetHeaderPressableText.ActionSheetHeaderPressableText, { label: null, onPress: null });
   return <View label={null} onPress={null} />;
 };

@@ -1,16 +1,16 @@
-// Module ID: 13334
-// Function ID: 13335
+// Module ID: 13392
+// Function ID: 13393
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 13333, 5432, 8143, 1236, 13335, 6312, 2]
+// Dependencies: [19, 21, 13391, 5437, 8182, 1236, 13393, 6343, 2]
 // Exports: default
 
-// Module 13334 (ActivateDeviceModal)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 13392 (ActivateDeviceModal)
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let closure_5 = { ACTIVATE_DEVICE: "activate-device" };
-const result = require("module_13333").fileFinishedImporting("modules/activate_device/native/ActivateDeviceModal.tsx");
+const result = require("set").fileFinishedImporting("modules/activate_device/native/ActivateDeviceModal.tsx");
 
 export default function ActivateDeviceModal(userCode) {
   userCode = userCode.userCode;
@@ -20,24 +20,22 @@ export default function ActivateDeviceModal(userCode) {
       return onClose(table[2]).hideModal();
     }
     return {
-      [outer1_5.ACTIVATE_DEVICE]: {
+      [closure_1_5.ACTIVATE_DEVICE]: {
         fullscreen: true,
         headerTitle() {
           return null;
         },
         headerLeft() {
-          const obj = { source: null, onPress: null, accessibilityLabel: null };
-          obj[0] = onClose(outer1_2[4]);
-          obj[1] = onClose;
-          const intl = callback(outer1_2[5]).intl;
-          obj[2] = intl.string(callback(outer1_2[5]).t.cpT0Cq);
-          return outer1_4(callback(outer1_2[3]).HeaderActionButton, obj);
+          const obj = { source: onClose(closure_1_2[4]), onPress: onClose, accessibilityLabel: null };
+          const intl = callback(closure_1_2[5]).intl;
+          obj[2] = intl.string(callback(closure_1_2[5]).t.cpT0Cq);
+          return closure_1_4(callback(closure_1_2[3]).HeaderActionButton, obj);
         },
         headerRight() {
           return null;
         },
         render() {
-          return outer1_4(callback(outer1_2[6]).ActivateDevice, { onClose, prefilledUserCode: callback });
+          return closure_1_4(callback(closure_1_2[6]).ActivateDevice, { onClose, prefilledUserCode: callback });
         }
       }
     };
@@ -45,5 +43,5 @@ export default function ActivateDeviceModal(userCode) {
   let obj = { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: null };
   let intl = userCode(1236).intl;
   obj[2] = intl.string(userCode(1236).t["13/7kX"]);
-  return jsx(userCode(6312).Navigator, { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: null });
+  return jsx(userCode(6343).Navigator, { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: null });
 };

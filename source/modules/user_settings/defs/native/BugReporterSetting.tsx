@@ -1,36 +1,40 @@
-// Module ID: 14885
-// Function ID: 14886
+// Module ID: 14949
+// Function ID: 14950
 // Name: useBugReporterExperimentSettingPredicate
-// Dependencies: [10127, 5260, 10128, 2007, 10156, 10669, 1236, 14886, 2]
+// Dependencies: [10166, 5265, 10167, 2008, 10195, 10708, 1236, 14950, 2]
 // Exports: useBugReporterExperimentSettingPredicate
 
-// Module 14885 (useBugReporterExperimentSettingPredicate)
-import zustandStore from "zustandStore";
-import createToggle from "createToggle";
+// Module 14949 (useBugReporterExperimentSettingPredicate)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import apexExperimentDefault from "apexExperiment" /* 10195 */;
+import closure_3 from "zustandStore" /* 10166 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 function useBugReporterExperimentSettingPredicate() {
-  return importDefault(10156).useConfig({ location: "native-settings" }).hasBugReporterAccess;
+  return apexExperimentDefault.useConfig({ location: "native-settings" }).hasBugReporterAccess;
 }
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["/tZh0A"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["/tZh0A"]);
   },
   parent: null,
   IconComponent: require("BugIcon").BugIcon,
   onPress: function handleBugReporterSettingPress() {
     if (!field.getField("isReportOpen")) {
       field.setState({ isReportOpen: true });
-      importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(10128, dependencyMap.paths));
-      const obj2 = importDefault(5260);
+      _modDef5265.pushLazy(asyncRequireImpl(10167, dependencyMap.paths));
+      const obj2 = _modDef5265;
     }
   },
   withArrow: true,
   usePredicate: useBugReporterExperimentSettingPredicate
 };
 createToggle = createToggle.createPressable(createToggle);
-const result = require("handleClose").fileFinishedImporting("modules/user_settings/defs/native/BugReporterSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/BugReporterSetting.tsx");
 
 export default createToggle;
 export { useBugReporterExperimentSettingPredicate };

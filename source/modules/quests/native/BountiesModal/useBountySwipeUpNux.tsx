@@ -1,20 +1,22 @@
-// Module ID: 14366
-// Function ID: 14367
+// Module ID: 14434
+// Function ID: 14435
 // Name: useBountySwipeUpNux
-// Dependencies: [32, 10712, 14367, 1377, 7366, 2]
+// Dependencies: [32, 10751, 14435, 1377, 7404, 2]
 // Exports: useBountySwipeUpNux
 
-// Module 14366 (useBountySwipeUpNux)
-import _slicedToArray from "_slicedToArray";
+// Module 14434 (useBountySwipeUpNux)
+import apexExperiment from "apexExperiment" /* 10751 */;
+import FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY from "FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY" /* 14435 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
-const require = arg1;
-const result = require("FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY").fileFinishedImporting("modules/quests/native/BountiesModal/useBountySwipeUpNux.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/quests/native/BountiesModal/useBountySwipeUpNux.tsx");
 
 export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
   let isEligible = location.isEligible;
-  const BountiesVerticalScrollExperiment = require(10712) /* apexExperiment */.BountiesVerticalScrollExperiment;
+  const BountiesVerticalScrollExperiment = apexExperiment.BountiesVerticalScrollExperiment;
   const tmp3 = "none" === BountiesVerticalScrollExperiment.useConfig({ location: location.location }).scrollAffordanceVariant;
-  let obj = require(14367) /* FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY */;
+  let obj = FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY;
   const first = callback(obj.useForceBountiesSwipeUpNux(), 1)[0];
   if (isEligible) {
     if (tmp3) {
@@ -27,7 +29,7 @@ export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
         prop = tmp(1377).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
       }
     }
-    let tmpResult = tmp(7366);
+    let tmpResult = tmp(7404);
     let tmp4Result = tmp4(tmpResult.useSelectedDismissibleContent([]), 2);
     if (first) {
       let tmp11 = isEligible;
@@ -38,7 +40,7 @@ export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
     } else {
       tmp10 = tmp9 === tmp(1377).DismissibleContent.BOUNTIES_SWIPE_UP_NUX;
     }
-    tmpResult = tmp(7366);
+    tmpResult = tmp(7404);
     tmp4Result = tmp4(tmpResult.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 86400000 }), 2);
     obj = { hasSingleUseSwipeUpNux: null, dismissSingleUseSwipeUpNux: null, hasRecurringSwipeUpNux: null, dismissRecurringSwipeUpNux: null };
     obj[0] = tmp10;

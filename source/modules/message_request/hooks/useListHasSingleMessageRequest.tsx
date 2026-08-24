@@ -1,22 +1,22 @@
-// Module ID: 16099
-// Function ID: 16100
+// Module ID: 16197
+// Function ID: 16198
 // Name: useListHasSingleMessageRequest
-// Dependencies: [19, 4799, 4800, 16100, 589, 6804, 16101, 2]
+// Dependencies: [19, 4804, 4805, 16198, 589, 6841, 16199, 2]
 // Exports: useListHasSingleMessageRequest, useListHasSingleSpamMessageRequest
 
-// Module 16099 (useListHasSingleMessageRequest)
-import noop from "noop";
-import processChannel from "processChannel";
-import closure_5 from "processChannel";
+// Module 16197 (useListHasSingleMessageRequest)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "processChannel" /* 4804 */;
+import closure_5 from "processChannel" /* 4805 */;
 
 const require = arg1;
-const result = require("processChannel").fileFinishedImporting("modules/message_request/hooks/useListHasSingleMessageRequest.tsx");
+const result = require("set").fileFinishedImporting("modules/message_request/hooks/useListHasSingleMessageRequest.tsx");
 
 export const useListHasSingleMessageRequest = function useListHasSingleMessageRequest() {
   messageRequestsCount = messageRequestsCount(stateFromStores[3]).useMessageRequestsCount();
   const ref = React.useRef(messageRequestsCount);
   const obj = messageRequestsCount(stateFromStores[3]);
-  const items = [processChannel];
+  const items = [closure_4];
   stateFromStores = messageRequestsCount(stateFromStores[4]).useStateFromStores(items, () => ready.isReady());
   React = React.useRef(stateFromStores);
   const items1 = [stateFromStores, messageRequestsCount];

@@ -5,7 +5,8 @@
 // Exports: applyStyle
 
 // Module 1839 (createViewDescriptorPaper)
-import isJest from "isJest";
+import updateProps from "updateProps" /* 1754 */;
+import isJest from "isJest" /* 1657 */;
 
 function createViewDescriptorPaper(topScreenId) {
   return { tag: topScreenId, name: "RCTView" };
@@ -27,9 +28,9 @@ function applyStyleForTopScreen(screenTransition) {
   const items = [createViewDescriptorPaper(screenTransition.topScreenId)];
   obj[0] = items;
   const topScreenStyleResult = screenTransition.screenTransition.topScreenStyle(arg1, screenTransition.screenDimensions);
-  require(1754) /* updateProps */.updateProps(obj, topScreenStyleResult, undefined);
+  updateProps.updateProps(obj, topScreenStyleResult, undefined);
 }
-let obj = { createViewDescriptor: createViewDescriptorPaper, updateProps: require("updateProps").updateProps };
+let obj = { createViewDescriptor: createViewDescriptorPaper, updateProps: updateProps.updateProps };
 applyStyleForTopScreen.__closure = obj;
 applyStyleForTopScreen.__workletHash = 541570832073;
 applyStyleForTopScreen.__initData = { code: "function applyStyleForTopScreen_Pnpm_styleUpdaterTs3(screenTransitionConfig,event){const{createViewDescriptor,updateProps}=this.__closure;const{screenDimensions:screenDimensions,topScreenId:topScreenId,screenTransition:screenTransition}=screenTransitionConfig;const{topScreenStyle:computeTopScreenStyle}=screenTransition;const topScreenStyle=computeTopScreenStyle(event,screenDimensions);const topScreenDescriptor={value:[createViewDescriptor(topScreenId)]};updateProps(topScreenDescriptor,topScreenStyle,undefined);}" };
@@ -38,9 +39,9 @@ function applyStyleForBelowTopScreen(screenTransition, arg1) {
   const items = [createViewDescriptorPaper(screenTransition.belowTopScreenId)];
   obj[0] = items;
   const belowTopScreenStyleResult = screenTransition.screenTransition.belowTopScreenStyle(arg1, screenTransition.screenDimensions);
-  require(1754) /* updateProps */.updateProps(obj, belowTopScreenStyleResult, undefined);
+  updateProps.updateProps(obj, belowTopScreenStyleResult, undefined);
 }
-obj = { createViewDescriptor: createViewDescriptorPaper, updateProps: require("updateProps").updateProps };
+obj = { createViewDescriptor: createViewDescriptorPaper, updateProps: updateProps.updateProps };
 applyStyleForBelowTopScreen.__closure = obj;
 applyStyleForBelowTopScreen.__workletHash = 1349027100765;
 applyStyleForBelowTopScreen.__initData = { code: "function applyStyleForBelowTopScreen_Pnpm_styleUpdaterTs4(screenTransitionConfig,event){const{createViewDescriptor,updateProps}=this.__closure;const{screenDimensions:screenDimensions,belowTopScreenId:belowTopScreenId,screenTransition:screenTransition}=screenTransitionConfig;const{belowTopScreenStyle:computeBelowTopScreenStyle}=screenTransition;const belowTopScreenStyle=computeBelowTopScreenStyle(event,screenDimensions);const belowTopScreenDescriptor={value:[createViewDescriptor(belowTopScreenId)]};updateProps(belowTopScreenDescriptor,belowTopScreenStyle,undefined);}" };
@@ -54,16 +55,16 @@ function applyStyle(closure_1, value) {
   const tmp2 = createViewDescriptorPaper;
   const tmp3 = require;
   const topScreenStyleResult = closure_1.screenTransition.topScreenStyle(value, closure_1.screenDimensions);
-  require(1754) /* updateProps */.updateProps(obj, topScreenStyleResult, undefined);
+  updateProps.updateProps(obj, topScreenStyleResult, undefined);
   if (typeof applyStyleForBelowTopScreen !== "function") {
     HermesBuiltin.throwTypeError();
   }
   obj = { value: null };
-  const obj2 = require(1754) /* updateProps */;
+  const obj2 = updateProps;
   const items1 = [tmp2(closure_1.belowTopScreenId)];
   obj[0] = items1;
   const belowTopScreenStyleResult = closure_1.screenTransition.belowTopScreenStyle(value, closure_1.screenDimensions);
-  tmp3(1754).updateProps(obj, belowTopScreenStyleResult, undefined);
+  updateProps.updateProps(obj, belowTopScreenStyleResult, undefined);
 }
 applyStyle.__closure = { applyStyleForTopScreen, applyStyleForBelowTopScreen };
 applyStyle.__workletHash = 7852442865245;

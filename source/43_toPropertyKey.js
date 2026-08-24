@@ -4,9 +4,11 @@
 // Dependencies: [44, 45]
 
 // Module 43 (toPropertyKey)
+import toPrimitive from "toPrimitive" /* 44 */;
+
 
 export default function toPropertyKey(arg0) {
-  const tmp = require(44) /* toPrimitive */(arg0, "string");
+  const tmp = toPrimitive(arg0, "string");
   let text = tmp;
   if ("symbol" != obj.default(tmp)) {
     text = `${tmp}`;

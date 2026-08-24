@@ -1,26 +1,22 @@
-// Module ID: 15888
-// Function ID: 15889
-// Dependencies: [19, 17, 1391, 8507, 21, 4661, 712, 589, 4115, 4664, 4667, 15889, 6292, 1297, 2]
+// Module ID: 15985
+// Function ID: 15986
+// Dependencies: [19, 17, 1391, 8546, 21, 4668, 712, 589, 4119, 4671, 4674, 15986, 6323, 1297, 2]
 
-// Module 15888
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { SearchMediaTypes } from "MessageEmbedTypes";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15985
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import { SearchMediaTypes } from "MessageEmbedTypes" /* 8546 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c4;
-let c5;
-let c9;
-let closure_6;
 const require = arg1;
 let c3 = importAllResult;
 ({ View: c4, Pressable: c5, useWindowDimensions: closure_6 } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let obj = { container: null, avatar: null, card: null };
-obj = { borderRadius: require("Themes").radii.xs, overflow: "hidden", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+obj = { borderRadius: ThemesDefault.radii.xs, overflow: "hidden", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 obj[0] = obj;
 obj[1] = { position: "absolute", top: 8, right: 8 };
 obj[2] = { padding: 0 };
@@ -28,8 +24,6 @@ let closure_11 = createCacheKey.createStyles(obj);
 let closure_12 = { HIDDEN: 0, [0]: "HIDDEN", VISIBLE: 1, [1]: "VISIBLE" };
 let closure_13 = { code: "function MediaGridItemTsx1(){const{withTiming,opacity,timingStandard}=this.__closure;return{opacity:withTiming(opacity.get(),timingStandard)};}" };
 const memoResult = importAllResult.memo(function MediaGridItem(media) {
-  let animate;
-  let containerStyle;
   media = media.media;
   const size = media.size;
   const onPress = media.onPress;
@@ -41,9 +35,9 @@ const memoResult = importAllResult.memo(function MediaGridItem(media) {
   const scale = callback().scale;
   let obj = ref;
   ref = ref.useRef(null);
-  let obj1 = media(onPress[7]);
-  const items = [ensureGuildLoaded];
-  stateFromStores = obj1.useStateFromStores(items, () => outer1_7.getChannel(media.channelId));
+  obj1 = media(onPress[7]);
+  const items = [closure_7];
+  stateFromStores = obj1.useStateFromStores(items, () => closure_1_7.getChannel(media.channelId));
   const items1 = [media.author, ];
   let guild_id;
   if (stateFromStores != null) {
@@ -78,7 +72,7 @@ const memoResult = importAllResult.memo(function MediaGridItem(media) {
   const items3 = [sharedValue];
   const animatedStyle = tmp3Result.useAnimatedStyle(fn);
   const effect = obj.useEffect(() => {
-    const result = sharedValue.set(outer1_12.VISIBLE);
+    const result = sharedValue.set(closure_1_12.VISIBLE);
   }, items3);
   const items4 = [size];
   const memo1 = obj.useMemo(() => ({ width: size, height: size }), items4);
@@ -146,6 +140,6 @@ const memoResult = importAllResult.memo(function MediaGridItem(media) {
   obj[1] = closure_10(sharedValue, obj1);
   return closure_9(size(onPress[8]).View, obj);
 });
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/search/native/components/list/rows/MediaGridItem.tsx");
+let result = require("set").fileFinishedImporting("modules/search/native/components/list/rows/MediaGridItem.tsx");
 
 export default memoResult;

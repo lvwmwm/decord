@@ -4,8 +4,11 @@
 // Dependencies: [1924, 1928, 589, 709, 2]
 
 // Module 1923 (setPremiumTypeActual)
-import GuildFeatures from "GuildFeatures";
-import { PersistedStore } from "initialize";
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import validatePremiumType from "validatePremiumType" /* 1928 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 function setPremiumTypeActual(user) {
   user = user.user;
@@ -14,11 +17,12 @@ function setPremiumTypeActual(user) {
       return false;
     }
   }
-  closure_4.premiumTypeActual = require(1928) /* validatePremiumType */.getPremiumTypeFromRawValue(user.premium_type);
+  closure_4.premiumTypeActual = validatePremiumType.getPremiumTypeFromRawValue(user.premium_type);
 }
 const UNSELECTED_CREATED_AT_DATE = GuildFeatures.UNSELECTED_CREATED_AT_DATE;
 const UNSELECTED_PREMIUM_TYPE_OVERRIDE = GuildFeatures.UNSELECTED_PREMIUM_TYPE_OVERRIDE;
 let closure_4 = { premiumTypeOverride: UNSELECTED_PREMIUM_TYPE_OVERRIDE, premiumTypeActual: UNSELECTED_PREMIUM_TYPE_OVERRIDE, createdAtOverride: UNSELECTED_CREATED_AT_DATE };
+const PersistedStore = initializeDefault.PersistedStore;
 class OverridePremiumTypeStore extends PersistedStore {
 }
 const prototype = OverridePremiumTypeStore.prototype;
@@ -81,7 +85,7 @@ const items = [
   }
 ];
 OverridePremiumTypeStore.migrations = items;
-const overridePremiumTypeStore = new OverridePremiumTypeStore(require("dispatcher"), {
+const overridePremiumTypeStore = new OverridePremiumTypeStore(dispatcherDefault, {
   SET_PREMIUM_TYPE_OVERRIDE: function setPremiumTypeOverride(premiumType) {
     closure_4.premiumTypeOverride = premiumType.premiumType;
   },
@@ -91,6 +95,6 @@ const overridePremiumTypeStore = new OverridePremiumTypeStore(require("dispatche
   CURRENT_USER_UPDATE: setPremiumTypeActual,
   CONNECTION_OPEN: setPremiumTypeActual
 });
-const result = require("initialize").fileFinishedImporting("modules/premium/OverridePremiumTypeStore.tsx");
+const result = set.fileFinishedImporting("modules/premium/OverridePremiumTypeStore.tsx");
 
 export default overridePremiumTypeStore;

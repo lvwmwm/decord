@@ -1,11 +1,14 @@
-// Module ID: 6733
-// Function ID: 6734
+// Module ID: 6770
+// Function ID: 6771
 // Name: dedupeEmojisByNameOrId
-// Dependencies: [4034, 2]
+// Dependencies: [4037, 2]
 // Exports: default
 
-// Module 6733 (dedupeEmojisByNameOrId)
-let result = require("set").fileFinishedImporting("modules/emojis/utils/dedupeEmojisByNameOrId.tsx");
+// Module 6770 (dedupeEmojisByNameOrId)
+import set from "set" /* 2 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
+
+let result = set.fileFinishedImporting("modules/emojis/utils/dedupeEmojisByNameOrId.tsx");
 
 export default function dedupeEmojisByNameOrId(arg0) {
   const map = new Map();
@@ -16,7 +19,7 @@ export default function dedupeEmojisByNameOrId(arg0) {
     if (null == nextResult.id) {
       let tmp5 = importDefault;
       let tmp6 = dependencyMap;
-      let obj2 = importDefault(4034);
+      let obj2 = parseRawEmojiObjectDefault;
       let tmp7 = nextResult;
       let result = obj2.convertSurrogateToBase(tmp2.surrogates);
       if (result == null) {

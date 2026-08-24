@@ -1,34 +1,37 @@
-// Module ID: 7524
-// Function ID: 7525
+// Module ID: 7562
+// Function ID: 7563
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 7524 (dispatcher)
-const result = require("set").fileFinishedImporting("actions/DraftActionCreators.tsx");
+// Module 7562 (dispatcher)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("actions/DraftActionCreators.tsx");
 
 export default {
   clearDraft(id, ThreadSettings) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "DRAFT_CLEAR", channelId: id, draftType: ThreadSettings };
     obj.dispatch(obj);
   },
   saveDraft(id, result, ChannelMessage) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "DRAFT_SAVE", channelId: id, draft: result, draftType: ChannelMessage };
     obj.dispatch(obj);
   },
   changeDraft(id, draft, ChannelMessage) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "DRAFT_CHANGE", channelId: id, draft, draftType: ChannelMessage };
     obj.dispatch(obj);
   },
   changeThreadSettings(id, draft) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "THREAD_SETTINGS_DRAFT_CHANGE", channelId: id, draft };
     obj.dispatch(obj);
   },
   changeScheduledMessage(closure_0, draft) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "SCHEDULED_MESSAGE_DRAFT_CHANGE", channelId: closure_0, draft };
     obj.dispatch(obj);
   }

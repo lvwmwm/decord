@@ -1,23 +1,21 @@
-// Module ID: 12676
-// Function ID: 12677
+// Module ID: 12730
+// Function ID: 12731
 // Name: OngoingCallStatusLabel
-// Dependencies: [19, 1218, 4496, 4542, 21, 589, 1236, 12675, 1297, 2]
+// Dependencies: [19, 1218, 4500, 4547, 21, 589, 1236, 12729, 1297, 2]
 // Exports: default
 
-// Module 12676 (OngoingCallStatusLabel)
-import "noop";
-import fetchFingerprint from "fetchFingerprint";
-import callConnect from "callConnect";
-import updateVoiceState from "updateVoiceState";
-import { jsx } from "jsxProd";
+// Module 12730 (OngoingCallStatusLabel)
+import noopAll from "noop" /* 19 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "callConnect" /* 4500 */;
+import closure_4 from "updateVoiceState" /* 4547 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("callConnect").fileFinishedImporting("modules/voice_calls/native/components/OngoingCallStatusLabel.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("modules/voice_calls/native/components/OngoingCallStatusLabel.tsx");
 
 export default function OngoingCallStatusLabel(style) {
-  let channel;
-  let useAllAloneText;
-  let voiceState;
   ({ channel, voiceState, useAllAloneText } = style);
   if (useAllAloneText === undefined) {
     useAllAloneText = true;
@@ -28,15 +26,15 @@ export default function OngoingCallStatusLabel(style) {
   let id;
   id = id.getId();
   let obj = channel(id[5]);
-  const items = [updateVoiceState, callConnect];
+  const items = [closure_4, closure_3];
   const items1 = [id, channel];
   const stateFromStores = obj.useStateFromStores(items, () => {
     if (null == channel) {
       return false;
     } else {
       const _Object = Object;
-      const values = Object.values(outer1_4.getVoiceStatesForChannel(tmp.id));
-      const call = outer1_3.getCall(tmp.id);
+      const values = Object.values(closure_1_4.getVoiceStatesForChannel(tmp.id));
+      const call = closure_1_3.getCall(tmp.id);
       let tmp2 = null != call;
       if (tmp2) {
         tmp2 = call.ringing.length > 0;

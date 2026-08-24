@@ -1,18 +1,19 @@
-// Module ID: 5902
-// Function ID: 5903
+// Module ID: 5933
+// Function ID: 5934
 // Name: HelloWumpusSpotIllustration
-// Dependencies: [21, 5449, 5903, 2]
+// Dependencies: [21, 5454, 5934, 2]
 // Exports: HelloWumpusSpotIllustration
 
-// Module 5902 (HelloWumpusSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 5933 (HelloWumpusSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5934 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HelloWumpusSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HelloWumpusSpotIllustration.native.tsx");
 
 export const HelloWumpusSpotIllustration = function HelloWumpusSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const HelloWumpusSpotIllustration = function HelloWumpusSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5903);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const HelloWumpusSpotIllustration = function HelloWumpusSpotIllustration(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

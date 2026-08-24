@@ -1,14 +1,16 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 10963
+// Function ID: 10964
 // Name: getCurrentUserPresenceActivity
 // Dependencies: [2]
 // Exports: default
 
-// Module 10924 (getCurrentUserPresenceActivity)
-const result = require("set").fileFinishedImporting("modules/activities/utils/getCurrentUserPresenceActivity.tsx");
+// Module 10963 (getCurrentUserPresenceActivity)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/activities/utils/getCurrentUserPresenceActivity.tsx");
 
 export default function getCurrentUserPresenceActivity(getApplicationActivity, getApplicationActivity2) {
-  let closure_0 = arg2;
+  closure_0 = arg2;
   let tmp = null;
   if (null != arg2) {
     let applicationActivity = getApplicationActivity.getApplicationActivity(arg2);

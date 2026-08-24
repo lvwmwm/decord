@@ -4,11 +4,13 @@
 // Dependencies: [36]
 
 // Module 35 (_unsupportedIterableToArray)
+import _arrayLikeToArray from "_arrayLikeToArray" /* 36 */;
+
 
 export default function _unsupportedIterableToArray(str) {
   if (str) {
     if (typeof str === "string") {
-      return require(36) /* _arrayLikeToArray */(str, arg1);
+      return _arrayLikeToArray(str, arg1);
     } else {
       const toString = {}.toString;
       const call = toString.call;
@@ -21,7 +23,7 @@ export default function _unsupportedIterableToArray(str) {
       if ("Map" !== name) {
         if ("Set" !== name) {
           if ("Arguments" === name) {
-            arr = require(36) /* _arrayLikeToArray */(str, arg1);
+            arr = _arrayLikeToArray(str, arg1);
           } else {
             const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
           }

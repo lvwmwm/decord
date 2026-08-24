@@ -4,7 +4,7 @@
 // Dependencies: [817, 1028]
 
 // Module 1080 (httpContextIntegration)
-import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 

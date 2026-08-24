@@ -1,0 +1,24 @@
+// Module ID: 3918
+// Function ID: 3919
+// Name: yearsToQuarters
+// Dependencies: [3476, 3654]
+// Exports: default
+
+// Module 3918 (yearsToQuarters)
+import keys from "keys" /* 3654 */;
+import requiredArgs from "requiredArgs" /* 3476 */;
+
+if (!requiredArgs) {
+  const obj = { default: null };
+  obj[0] = requiredArgs;
+  let tmp3 = obj;
+} else {
+  tmp3 = requiredArgs;
+}
+requiredArgs = tmp3;
+
+export default function yearsToQuarters(arg0) {
+  requiredArgs.default(1, arguments);
+  return Math.floor(arg0 * keys.quartersInYear);
+};
+export default exports.default;

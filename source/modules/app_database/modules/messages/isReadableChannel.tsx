@@ -1,20 +1,20 @@
-// Module ID: 5075
-// Function ID: 5076
+// Module ID: 5080
+// Function ID: 5081
 // Name: isReadableChannel
-// Dependencies: [1395, 1391, 4021, 676, 2]
+// Dependencies: [1395, 1391, 4024, 676, 2]
 // Exports: isReadableChannel, isReadableChannelId
 
-// Module 5075 (isReadableChannel)
-import { isTextChannel } from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import ME from "ME";
+// Module 5080 (isReadableChannel)
+import set from "set" /* 2 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import closure_1 from "ensureGuildLoaded" /* 1391 */;
+import closure_2 from "getUncachedChannelPermissions" /* 4024 */;
+import ME from "ME" /* 676 */;
 
-let BasicPermissions;
-let c3;
+const isTextChannel = createChannelRecord.isTextChannel;
 ({ ChannelTypes: c3, BasicPermissions } = ME);
 let closure_4 = BasicPermissions.VIEW_CHANNEL | BasicPermissions.READ_MESSAGE_HISTORY;
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/app_database/modules/messages/isReadableChannel.tsx");
+const result = set.fileFinishedImporting("modules/app_database/modules/messages/isReadableChannel.tsx");
 
 export const isReadableChannel = function isReadableChannel(basicChannel) {
   let tmp = null != basicChannel;
@@ -23,7 +23,7 @@ export const isReadableChannel = function isReadableChannel(basicChannel) {
     if (!tmp3) {
       let canBasicChannelResult = isTextChannel(basicChannel.type);
       if (canBasicChannelResult) {
-        canBasicChannelResult = getUncachedChannelPermissions.canBasicChannel(closure_4, basicChannel);
+        canBasicChannelResult = closure_2.canBasicChannel(closure_4, basicChannel);
       }
       tmp3 = canBasicChannelResult;
     }
@@ -41,7 +41,7 @@ export const isReadableChannelId = function isReadableChannelId(channelId) {
       if (!tmp6) {
         let canBasicChannelResult = isTextChannel(basicChannel.type);
         if (canBasicChannelResult) {
-          canBasicChannelResult = getUncachedChannelPermissions.canBasicChannel(closure_4, basicChannel);
+          canBasicChannelResult = closure_2.canBasicChannel(closure_4, basicChannel);
         }
         tmp6 = canBasicChannelResult;
       }

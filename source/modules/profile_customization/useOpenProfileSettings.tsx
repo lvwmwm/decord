@@ -1,18 +1,23 @@
-// Module ID: 9536
-// Function ID: 9537
+// Module ID: 9573
+// Function ID: 9574
 // Name: useOpenProfileSettings
-// Dependencies: [19, 1922, 9537, 676, 685, 8370, 9538, 9539, 7360, 2]
+// Dependencies: [19, 1922, 9574, 676, 685, 8409, 9575, 9576, 7398, 2]
 // Exports: default
 
-// Module 9536 (useOpenProfileSettings)
-import "mergeGuildAvatar";
-import zustandStore from "zustandStore";
-import { UserSettingsSections } from "ME";
-import { ProfileCustomizationSubsection as closure_5 } from "MAX_FAVORITES";
-import handleFormOpen from "handleFormOpen";
+// Module 9573 (useOpenProfileSettings)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import ME from "ME" /* 676 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
+import mergeGuildAvatarDefault from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "zustandStore" /* 9574 */;
+import handleFormOpen from "handleFormOpen" /* 8409 */;
 
-require("noop").useCallback;
-const result = require("zustandStore").fileFinishedImporting("modules/profile_customization/useOpenProfileSettings.tsx");
+noop.useCallback;
+mergeGuildAvatarDefault;
+const UserSettingsSections = ME.UserSettingsSections;
+let closure_5 = MAX_FAVORITES.ProfileCustomizationSubsection;
+const result = set.fileFinishedImporting("modules/profile_customization/useOpenProfileSettings.tsx");
 
 export default function useOpenProfileSettings() {
   let obj = arg0;
@@ -28,13 +33,13 @@ export default function useOpenProfileSettings() {
       const guildIdentitySettings = obj.initGuildIdentitySettings(tmp.id);
     }
     if (null != guild) {
-      let USER_PROFILE = outer1_5.GUILD;
+      let USER_PROFILE = closure_1_5.GUILD;
     } else {
-      USER_PROFILE = outer1_5.USER_PROFILE;
+      USER_PROFILE = closure_1_5.USER_PROFILE;
     }
     obj = { subsection: USER_PROFILE, scrollPosition };
-    outer1_3.setState(obj);
-    obj = { screen: outer1_4.PROFILE_CUSTOMIZATION };
+    closure_1_3.setState(obj);
+    obj = { screen: closure_1_4.PROFILE_CUSTOMIZATION };
     guild(scrollPosition[8]).openUserSettings(obj);
   }, items);
 };

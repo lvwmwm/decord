@@ -1,15 +1,17 @@
-// Module ID: 4796
-// Function ID: 4797
+// Module ID: 4801
+// Function ID: 4802
 // Name: getNickname
-// Dependencies: [1391, 1990, 4030, 1236, 4219, 589, 2]
+// Dependencies: [1391, 1991, 4033, 1236, 4223, 589, 2]
 // Exports: getNickname, useName
 
-// Module 4796 (getNickname)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
+// Module 4801 (getNickname)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
 
-const require = arg1;
+require = arg1;
 function getNickname(id, arg1, id) {
   if (null == id) {
     return null;
@@ -31,8 +33,8 @@ function getNickname(id, arg1, id) {
 }
 function getName(id, arg1, id) {
   if (null == id) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    let stringResult = intl.string(require(1236) /* getSystemLocale */.t.sKdZ6U);
+    const intl = getSystemLocale.intl;
+    let stringResult = intl.string(getSystemLocale.t.sKdZ6U);
   } else {
     stringResult = null;
     if (null != id) {
@@ -54,20 +56,20 @@ function getName(id, arg1, id) {
       }
     }
     if (stringResult == null) {
-      stringResult = importDefault(4219).getName(id);
-      const obj2 = importDefault(4219);
+      stringResult = nameFromUserDefault.getName(id);
+      const obj2 = nameFromUserDefault;
     }
   }
   return stringResult;
 }
 function useName(arg0, arg1, arg2) {
   const _require = arg0;
-  let closure_1 = arg1;
-  const dependencyMap = arg2;
-  const items = [trackCommunicationDisabled, ensureGuildLoaded, markAllUserIdListsStale];
-  return _require(589).useStateFromStores(items, () => outer1_6(closure_0, closure_1, closure_2));
+  closure_1 = arg1;
+  dependencyMap = arg2;
+  const items = [closure_4, closure_3, closure_5];
+  return _require(589).useStateFromStores(items, () => closure_1_6(closure_0, closure_1, closure_2));
 }
-const result = require("markAllUserIdListsStale").fileFinishedImporting("utils/NicknameUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/NicknameUtils.tsx");
 
 export default { getNickname, getName, useName };
 export { getNickname };

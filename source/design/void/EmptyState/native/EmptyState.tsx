@@ -1,38 +1,33 @@
-// Module ID: 13490
-// Function ID: 13491
+// Module ID: 13548
+// Function ID: 13549
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4661, 712, 1363, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1363, 4739, 2]
 // Exports: default
 
-// Module 13490 (EmptyState)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13548 (EmptyState)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ View: obj1, Image: c3 } = get_ActivityIndicator);
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, emptyImage: null, emptyTitle: null, emptyBody: null };
-createCacheKey = { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 36, paddingBottom: 80, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey = { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 36, paddingBottom: 80, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flex: 1, maxWidth: 300, maxHeight: 200 };
 createCacheKey[2] = { marginTop: 20, textTransform: "uppercase" };
 createCacheKey[3] = { textAlign: "center", marginTop: 8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("design/void/EmptyState/native/EmptyState.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("design/void/EmptyState/native/EmptyState.tsx");
 
 export default function EmptyState(Illustration) {
-  let body;
-  let bodyStyle;
-  let children;
-  let title;
-  const tmp = createCacheKey();
-  require(1363) /* AccessibilityAnnouncer */;
+  const tmp = callback2();
+  AccessibilityAnnouncer;
   if (null != Illustration.Illustration) {
     let obj = { accessible: false, importantForAccessibility: "no", accessibilityRole: "none", resizeMode: "contain", style: null };
     const items = [tmp.emptyImage, Illustration.imageStyle];
@@ -53,7 +48,7 @@ export default function EmptyState(Illustration) {
     tmp6 = null != Illustration.lightSource && null != Illustration.darkSource;
   }
   ({ body, title } = Illustration);
-  const obj1 = { style: items2, accessible: true, children: null };
+  obj1 = { style: items2, accessible: true, children: null };
   items2 = [tmp.container, Illustration.style];
   const items3 = [tmp8Result, , , ];
   let tmp14 = null;
@@ -63,7 +58,7 @@ export default function EmptyState(Illustration) {
     const items4 = [tmp.emptyTitle, tmp11];
     obj2[3] = items4;
     obj2[4] = title;
-    tmp14 = callback(tmp2(4734).Text, obj2);
+    tmp14 = callback(tmp2(4739).Text, obj2);
   }
   items3[1] = tmp14;
   let tmp16 = null;
@@ -72,7 +67,7 @@ export default function EmptyState(Illustration) {
     const items5 = [tmp.emptyBody, bodyStyle];
     obj3[3] = items5;
     obj3[4] = body;
-    tmp16 = callback(tmp2(4734).Text, obj3);
+    tmp16 = callback(tmp2(4739).Text, obj3);
   }
   items3[2] = tmp16;
   items3[3] = children;

@@ -1,10 +1,10 @@
-// Module ID: 9788
-// Function ID: 9789
+// Module ID: 9827
+// Function ID: 9828
 // Name: set
 // Dependencies: [2]
 
-// Module 9788 (set)
-import set from "set";
+// Module 9827 (set)
+import set from "set" /* 2 */;
 
 const obj = { PLAYSTATION_APPLICATION_IDS: null, IMPLICIT_IDENTIFY_PREMIUM_APPLICATION_IDS: null, ALL: null };
 let set = new Set(["984193235868065795", "1008890872156405890"]);

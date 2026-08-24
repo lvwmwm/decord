@@ -1,10 +1,12 @@
-// Module ID: 4648
-// Function ID: 4649
+// Module ID: 4654
+// Function ID: 4655
 // Name: set
 // Dependencies: [2]
 
-// Module 4648 (set)
-const result = require("set").fileFinishedImporting("utils/CrossPlatformNativeUtils.native.tsx");
+// Module 4654 (set)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("utils/CrossPlatformNativeUtils.native.tsx");
 
 export default {
   clearNavigationHistory() {

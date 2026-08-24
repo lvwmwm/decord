@@ -1,31 +1,27 @@
-// Module ID: 11013
-// Function ID: 11014
-// Dependencies: [19, 1990, 1910, 4021, 1922, 676, 21, 4661, 589, 11014, 11015, 4796, 4342, 7177, 1236, 7355, 5260, 11016, 2007, 11012, 4010, 11033, 11019, 4316, 11035, 9830, 11037, 6950, 6949, 11039, 6286, 2]
+// Module ID: 11052
+// Function ID: 11053
+// Dependencies: [19, 1991, 1910, 4024, 1922, 676, 21, 4668, 589, 11053, 11054, 4801, 4346, 7215, 1236, 7393, 5265, 11055, 2008, 11051, 4013, 11072, 11058, 4320, 11074, 9869, 11076, 6988, 6987, 11078, 6317, 2]
 
-// Module 11013
-import importAllResult from "showModerateUserActionSheet";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { Permissions } from "ME";
-import jsxProd from "ClockWarningIcon";
-import createCacheKey from "createCacheKey";
+// Module 11052
+import importAllResult from "noop" /* 19 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { Permissions } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
 const require = arg1;
 let c3 = importAllResult;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let closure_11 = createCacheKey.createStyles({ container: { padding: 16, gap: 16 }, memberRoles: { justifyContent: "flex-start" } });
 const memoResult = importAllResult.memo((user) => {
-  let canBanUser;
-  let canKickUser;
   user = user.user;
   const guild = user.guild;
   let stateFromStores;
   let hideActionSheet;
-  let c4;
+  c4 = undefined;
   const tmp = callback3();
   let obj = user(stateFromStores[8]);
   let items = [c4];
@@ -38,7 +34,7 @@ const memoResult = importAllResult.memo((user) => {
     return _undefined.getMember(id, user.id);
   }, items1);
   let tmp2Result = tmp2(tmp3[8]);
-  const items2 = [getUncachedChannelPermissions, mergeGuildAvatar, createGuildRecordFromRust];
+  const items2 = [closure_6, closure_7, closure_5];
   const items3 = [user, guild];
   const stateFromStoresObject = tmp2Result.useStateFromStoresObject(items2, () => {
     let canKickMemberResult = null != guild;
@@ -55,17 +51,17 @@ const memoResult = importAllResult.memo((user) => {
     obj[1] = canBanMemberResult;
     let canManageUserResult = null != tmp;
     if (canManageUserResult) {
-      canManageUserResult = outer1_6.canManageUser(outer1_8.MANAGE_NICKNAMES, user, tmp);
+      canManageUserResult = closure_1_6.canManageUser(closure_1_8.MANAGE_NICKNAMES, user, tmp);
     }
     obj[2] = canManageUserResult;
     let canResult = null != tmp;
     if (canResult) {
-      canResult = outer1_6.can(outer1_8.MANAGE_ROLES, tmp);
+      canResult = closure_1_6.can(closure_1_8.MANAGE_ROLES, tmp);
     }
     obj[3] = canResult;
     let result = null != tmp;
     if (result) {
-      const items = [outer1_7, outer1_5, outer1_6];
+      const items = [closure_1_7, closure_1_5, closure_1_6];
       result = user(stateFromStores[10]).canToggleCommunicationDisableOnUser(tmp.id, user.id, items);
       const obj4 = user(stateFromStores[10]);
     }
@@ -109,9 +105,9 @@ const memoResult = importAllResult.memo((user) => {
             userId: user.id,
             guildId: guild.id,
             onClose() {
-              let arr = outer1_1(outer1_2[16]);
+              let arr = closure_1_1(closure_1_2[16]);
               arr = arr.pop();
-              outer1_1(outer1_2[19])({ guild: closure_1, user: closure_0 });
+              closure_1_1(closure_1_2[19])({ guild: closure_1, user: closure_0 });
             },
             onRemove() {
               let arr = callback(table[16]);
@@ -135,7 +131,7 @@ const memoResult = importAllResult.memo((user) => {
           } else {
             IconResult = Icon(t.xpsADY);
           }
-          const obj1 = { label: null, icon: null, onPress: null };
+          obj1 = { label: null, icon: null, onPress: null };
           obj1[0] = IconResult;
           Icon = tmp2(tmp3[13]).ActionSheetRow.Icon;
           const obj2 = { IconComponent: null };
@@ -170,7 +166,7 @@ const memoResult = importAllResult.memo((user) => {
             guildId: guild.id,
             userId: user.id,
             cancelButtonCallback() {
-              return outer1_1(outer1_2[19])({ guild: closure_1, user: closure_0 });
+              return closure_1_1(closure_1_2[19])({ guild: closure_1, user: closure_0 });
             }
           });
         };
@@ -188,7 +184,7 @@ const memoResult = importAllResult.memo((user) => {
             guildId: guild.id,
             userId: user.id,
             cancelButtonCallback() {
-              return outer1_1(outer1_2[19])({ guild: closure_1, user: closure_0 });
+              return closure_1_1(closure_1_2[19])({ guild: closure_1, user: closure_0 });
             }
           });
         };
@@ -217,6 +213,6 @@ const memoResult = importAllResult.memo((user) => {
   }
   return null;
 });
-let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_automod/native/ModerateUserActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_automod/native/ModerateUserActionSheet.tsx");
 
 export default memoResult;

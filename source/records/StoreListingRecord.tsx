@@ -1,13 +1,15 @@
-// Module ID: 13867
-// Function ID: 13868
+// Module ID: 13932
+// Function ID: 13933
 // Name: createFromServer
-// Dependencies: [1931, 1930, 13868, 2]
+// Dependencies: [1931, 1930, 13933, 2]
 
-// Module 13867 (createFromServer)
-import "toJS";
-import createdAt from "createdAt";
+// Module 13932 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
+import transformStoreAssetFromServer from "transformStoreAssetFromServer" /* 13933 */;
+import closure_2 from "createdAt" /* 1930 */;
 
-const require = arg1;
+require = arg1;
+toJSDefault;
 let StoreListingRecord;
 class StoreListingRecord extends tmp2 {
   constructor(arg0) {
@@ -107,7 +109,7 @@ StoreListingRecord["createFromServer"] = function createFromServer(id) {
   let mapped3 = null;
   if (null != id.assets) {
     const assets = id.assets;
-    mapped3 = assets.map(require(13868) /* transformStoreAssetFromServer */.transformStoreAssetFromServer);
+    mapped3 = assets.map(transformStoreAssetFromServer.transformStoreAssetFromServer);
   }
   obj[11] = mapped3;
   let tmp8 = null;
@@ -116,7 +118,7 @@ StoreListingRecord["createFromServer"] = function createFromServer(id) {
     obj[0] = staff_notes.content;
     let tmp9 = null;
     if (null != staff_notes.user) {
-      tmp9 = new createdAt(staff_notes.user);
+      tmp9 = new closure_2(staff_notes.user);
     }
     obj[1] = tmp9;
     tmp8 = obj;
@@ -135,50 +137,50 @@ StoreListingRecord["createFromServer"] = function createFromServer(id) {
   obj[13] = tmp13;
   let result = null;
   if (null != id.thumbnail) {
-    result = require(13868) /* transformStoreAssetFromServer */.transformStoreAssetFromServer(id.thumbnail);
-    const obj4 = require(13868) /* transformStoreAssetFromServer */;
+    result = transformStoreAssetFromServer.transformStoreAssetFromServer(id.thumbnail);
+    const obj4 = transformStoreAssetFromServer;
   }
   obj[14] = result;
   let result1 = null;
   if (null != id.preview_video) {
-    result1 = require(13868) /* transformStoreAssetFromServer */.transformStoreAssetFromServer(id.preview_video);
-    const obj5 = require(13868) /* transformStoreAssetFromServer */;
+    result1 = transformStoreAssetFromServer.transformStoreAssetFromServer(id.preview_video);
+    const obj5 = transformStoreAssetFromServer;
   }
   obj[15] = result1;
   let result2 = null;
   if (null != id.header_background) {
-    result2 = require(13868) /* transformStoreAssetFromServer */.transformStoreAssetFromServer(id.header_background);
-    const obj6 = require(13868) /* transformStoreAssetFromServer */;
+    result2 = transformStoreAssetFromServer.transformStoreAssetFromServer(id.header_background);
+    const obj6 = transformStoreAssetFromServer;
   }
   obj[16] = result2;
   let result3 = null;
   if (null != id.header_logo_dark_theme) {
-    result3 = require(13868) /* transformStoreAssetFromServer */.transformStoreAssetFromServer(id.header_logo_dark_theme);
-    const obj7 = require(13868) /* transformStoreAssetFromServer */;
+    result3 = transformStoreAssetFromServer.transformStoreAssetFromServer(id.header_logo_dark_theme);
+    const obj7 = transformStoreAssetFromServer;
   }
   obj[17] = result3;
   let result4 = null;
   if (null != id.header_logo_light_theme) {
-    result4 = require(13868) /* transformStoreAssetFromServer */.transformStoreAssetFromServer(id.header_logo_light_theme);
-    const obj8 = require(13868) /* transformStoreAssetFromServer */;
+    result4 = transformStoreAssetFromServer.transformStoreAssetFromServer(id.header_logo_light_theme);
+    const obj8 = transformStoreAssetFromServer;
   }
   obj[18] = result4;
   let result5 = null;
   if (null != id.box_art) {
-    result5 = require(13868) /* transformStoreAssetFromServer */.transformStoreAssetFromServer(id.box_art);
-    const obj9 = require(13868) /* transformStoreAssetFromServer */;
+    result5 = transformStoreAssetFromServer.transformStoreAssetFromServer(id.box_art);
+    const obj9 = transformStoreAssetFromServer;
   }
   obj[19] = result5;
   let result6 = null;
   if (null != id.hero_background) {
-    result6 = require(13868) /* transformStoreAssetFromServer */.transformStoreAssetFromServer(id.hero_background);
-    const obj10 = require(13868) /* transformStoreAssetFromServer */;
+    result6 = transformStoreAssetFromServer.transformStoreAssetFromServer(id.hero_background);
+    const obj10 = transformStoreAssetFromServer;
   }
   obj[20] = result6;
   let result7 = null;
   if (null != id.hero_video) {
-    result7 = require(13868) /* transformStoreAssetFromServer */.transformStoreAssetFromServer(id.hero_video);
-    const obj11 = require(13868) /* transformStoreAssetFromServer */;
+    result7 = transformStoreAssetFromServer.transformStoreAssetFromServer(id.hero_video);
+    const obj11 = transformStoreAssetFromServer;
   }
   obj[21] = result7;
   ({ entitlement_branch_id: obj[22], benefits: obj[23], published: obj[24] } = id);
@@ -187,6 +189,6 @@ StoreListingRecord["createFromServer"] = function createFromServer(id) {
 StoreListingRecord.prototype["isSlimDirectoryVersion"] = function isSlimDirectoryVersion() {
   return null == this.description;
 };
-let result = require("transformStoreAssetFromServer").fileFinishedImporting("records/StoreListingRecord.tsx");
+let result = require("set").fileFinishedImporting("records/StoreListingRecord.tsx");
 
 export default StoreListingRecord;

@@ -4,6 +4,8 @@
 // Dependencies: [123, 175]
 
 // Module 174 (polyfillObjectProperty)
+import polyfillObjectProperty from "polyfillObjectProperty" /* 123 */;
+
 let hasPromiseResult;
 if (global != null) {
   const _HermesInternal = global.HermesInternal;
@@ -14,6 +16,6 @@ if (global != null) {
   }
 }
 if (!hasPromiseResult) {
-  const _module = require("polyfillObjectProperty");
+  const _module = polyfillObjectProperty;
   _module.polyfillGlobal("Promise", () => require(175) /* finally */.default);
 }

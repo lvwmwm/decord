@@ -1,17 +1,20 @@
-// Module ID: 11166
-// Function ID: 11167
+// Module ID: 11218
+// Function ID: 11219
 // Name: tryUpdateSubscriptionForHereMention
-// Dependencies: [32, 19, 7249, 7276, 7264, 8462, 12, 2]
+// Dependencies: [32, 19, 7287, 7314, 7302, 8501, 12, 2]
 // Exports: tryUpdateSubscriptionForHereMention, useHereMentionCallback
 
-// Module 11166 (tryUpdateSubscriptionForHereMention)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import getMemberListId from "getMemberListId";
+// Module 11218 (tryUpdateSubscriptionForHereMention)
+import reset from "reset" /* 7302 */;
+import subscribeMembers from "subscribeMembers" /* 7314 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8501 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "getMemberListId" /* 7287 */;
 
-const require = arg1;
+require = arg1;
 let c6 = "@here";
-const result = require("getMemberListId").fileFinishedImporting("modules/channel_text_area/ChatInputContentCallbacks.tsx");
+const result = require("set").fileFinishedImporting("modules/channel_text_area/ChatInputContentCallbacks.tsx");
 
 export const tryUpdateSubscriptionForHereMention = function tryUpdateSubscriptionForHereMention(arr, maxMessageLength, guild_id, id) {
   const groups = props.getProps(guild_id, id).groups;
@@ -33,9 +36,9 @@ export const tryUpdateSubscriptionForHereMention = function tryUpdateSubscriptio
     if (!tmp5) {
       let flag = -1 !== arr.indexOf(c6);
       if (flag) {
-        require(7276) /* subscribeMembers */.subscribeChannel(guild_id, id, require(7264) /* reset */.DEFAULT_RANGES);
+        subscribeMembers.subscribeChannel(guild_id, id, reset.DEFAULT_RANGES);
         flag = true;
-        const obj = require(7276) /* subscribeMembers */;
+        const obj = subscribeMembers;
       }
       tmp7 = flag;
     }
@@ -44,17 +47,17 @@ export const tryUpdateSubscriptionForHereMention = function tryUpdateSubscriptio
   return tmp3;
 };
 export const useHereMentionCallback = function useHereMentionCallback(arg0, arg1, arg2) {
-  let closure_0 = arg0;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
-  let tmp = importDefault(8462)();
+  closure_0 = arg0;
+  importDefault = arg1;
+  dependencyMap = arg2;
+  let tmp = useMessageMaxLengthDefault();
   const callback = tmp;
   let tmp2 = callback(first.useState(false), 2);
   first = tmp2[0];
-  let getMemberListId = tmp2[1];
+  closure_5 = tmp2[1];
   const items = [tmp, arg1, arg2];
   const memo = first.useMemo(() => callback(table[6]).debounce((arr) => {
-    const groups = outer1_5.getProps(closure_1, closure_2).groups;
+    const groups = closure_1_5.getProps(closure_1, closure_2).groups;
     let tmp4 = groups.length > 1;
     if (!tmp4) {
       let tmp5 = 1 === groups.length;
@@ -66,12 +69,12 @@ export const useHereMentionCallback = function useHereMentionCallback(arg0, arg1
     let tmp6 = tmp4;
     if (!tmp6) {
       let tmp9 = !tmp8;
-      if (!(arr.length < 5 || arr.length > _slicedToArray)) {
-        let flag = -1 !== arr.indexOf(outer1_6);
+      if (!(arr.length < 5 || arr.length > closure_3)) {
+        let flag = -1 !== arr.indexOf(closure_1_6);
         if (flag) {
-          outer1_0(outer1_2[3]).subscribeChannel(closure_1, closure_2, outer1_0(outer1_2[4]).DEFAULT_RANGES);
+          closure_1_0(closure_1_2[3]).subscribeChannel(closure_1, closure_2, closure_1_0(closure_1_2[4]).DEFAULT_RANGES);
           flag = true;
-          const obj = outer1_0(outer1_2[3]);
+          const obj = closure_1_0(closure_1_2[3]);
         }
         tmp9 = flag;
       }

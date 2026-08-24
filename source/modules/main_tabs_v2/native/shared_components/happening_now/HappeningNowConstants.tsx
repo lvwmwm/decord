@@ -1,11 +1,14 @@
-// Module ID: 14640
-// Function ID: 14641
+// Module ID: 14708
+// Function ID: 14709
 // Name: HAPPENING_NOW_PANELS_CONTAINER_PADDING
 // Dependencies: [1297, 2]
 
-// Module 14640 (HAPPENING_NOW_PANELS_CONTAINER_PADDING)
-const obj = { padding: require("Button").STATUS_PADDING - 1 };
-const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowConstants.tsx");
+// Module 14708 (HAPPENING_NOW_PANELS_CONTAINER_PADDING)
+import set from "set" /* 2 */;
+import Button from "Button" /* 1297 */;
+
+const obj = { padding: Button.STATUS_PADDING - 1 };
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowConstants.tsx");
 
 export const HAPPENING_NOW_PANELS_CONTAINER_PADDING = 8;
 export const HAPPENING_NOW_CARD_HEIGHT = 88;

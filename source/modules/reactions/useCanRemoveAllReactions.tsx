@@ -1,22 +1,22 @@
-// Module ID: 10462
-// Function ID: 10463
+// Module ID: 10501
+// Function ID: 10502
 // Name: useCanRemoveAllReactions
-// Dependencies: [4021, 676, 7234, 589, 2]
+// Dependencies: [4024, 676, 7272, 589, 2]
 // Exports: default
 
-// Module 10462 (useCanRemoveAllReactions)
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "ME";
+// Module 10501 (useCanRemoveAllReactions)
+import closure_2 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("useCanUnarchiveThread").fileFinishedImporting("modules/reactions/useCanRemoveAllReactions.tsx");
+const result = require("set").fileFinishedImporting("modules/reactions/useCanRemoveAllReactions.tsx");
 
 export default function useCanRemoveAllReactions(channel) {
   const _require = channel;
   isActiveChannelOrUnarchivableThread = _require(isActiveChannelOrUnarchivableThread[2]).useIsActiveChannelOrUnarchivableThread(channel);
   const obj = _require(isActiveChannelOrUnarchivableThread[2]);
-  const items = [getUncachedChannelPermissions];
+  const items = [closure_2];
   const items1 = [channel, isActiveChannelOrUnarchivableThread];
   const obj2 = _require(isActiveChannelOrUnarchivableThread[3]);
-  return null != channel && _require(isActiveChannelOrUnarchivableThread[3]).useStateFromStores(items, () => outer1_2.can(outer1_3.MANAGE_MESSAGES, closure_0) && isActiveChannelOrUnarchivableThread, items1);
+  return null != channel && _require(isActiveChannelOrUnarchivableThread[3]).useStateFromStores(items, () => closure_1_2.can(closure_1_3.MANAGE_MESSAGES, closure_0) && isActiveChannelOrUnarchivableThread, items1);
 };

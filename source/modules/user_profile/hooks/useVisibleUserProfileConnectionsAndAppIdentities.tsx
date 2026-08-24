@@ -1,14 +1,14 @@
-// Module ID: 12311
-// Function ID: 12312
+// Module ID: 12363
+// Function ID: 12364
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [19, 12312, 12313, 7145, 1370, 5097, 2]
+// Dependencies: [19, 12364, 12365, 7183, 1370, 5102, 2]
 // Exports: default
 
-// Module 12311 (useVisibleUserProfileConnectionsAndAppIdentities)
-import noop from "noop";
+// Module 12363 (useVisibleUserProfileConnectionsAndAppIdentities)
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("useUserProfileConnections").fileFinishedImporting("modules/user_profile/hooks/useVisibleUserProfileConnectionsAndAppIdentities.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useVisibleUserProfileConnectionsAndAppIdentities.tsx");
 
 export default function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
   const filteredAppIdentities = importDefault(memo[1])(arg0).filteredAppIdentities;
@@ -35,13 +35,13 @@ export default function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
   return {
     appIdentities: found.useMemo(() => {
       const mapped = filteredAppIdentities.map((identity) => {
-        let closure_0 = identity;
-        return { identity, application: noop.find((id) => id.id === identity.application_id) };
+        closure_0 = identity;
+        return { identity, application: closure_3.find((id) => id.id === identity.application_id) };
       });
       return mapped.filter((application) => null != application.application);
     }, items2),
-    connections: found.useMemo(() => tmp.filter((type) => {
-      const value = outer1_1(outer1_2[5]).get(type.type);
+    connections: found.useMemo(() => closure_1.filter((type) => {
+      const value = closure_1_1(closure_1_2[5]).get(type.type);
       let migrationExperimentEnabled;
       if (value != null) {
         const migrationData = value.migrationData;

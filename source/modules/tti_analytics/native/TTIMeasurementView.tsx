@@ -1,14 +1,14 @@
-// Module ID: 11076
-// Function ID: 11077
+// Module ID: 11115
+// Function ID: 11116
 // Name: TTIMeasurementView
-// Dependencies: [4728, 11077, 2]
+// Dependencies: [4733, 11116, 2]
 
-// Module 11076 (TTIMeasurementView)
-import importDefaultResult from "map";
+// Module 11115 (TTIMeasurementView)
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 11116 */;
+import importDefaultResult from "map" /* 4733 */;
 
-const obj = { componentName: "DCDTTIMeasurementView", componentFoundInstance: null };
-obj[1] = require("__INTERNAL_VIEW_CONFIG");
-const importDefaultResultResult = require("map")(obj);
+const obj = { componentName: "DCDTTIMeasurementView", componentFoundInstance: __INTERNAL_VIEW_CONFIGDefault };
+const importDefaultResultResult = importDefaultResult(obj);
 const result = require("set").fileFinishedImporting("modules/tti_analytics/native/TTIMeasurementView.tsx");
 
 export const TTIMeasurementView = importDefaultResultResult;

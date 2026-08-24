@@ -1,39 +1,35 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10626
+// Function ID: 10627
 // Name: MoreTipsModalScreen
-// Dependencies: [19, 17, 9921, 676, 21, 4661, 712, 10588, 4734, 1236, 10589, 5432, 5260, 8143, 1297, 1629, 647, 10582, 5006, 5011, 6312, 2]
+// Dependencies: [19, 17, 9960, 676, 21, 4668, 712, 10627, 4739, 1236, 10628, 5437, 5265, 8182, 1297, 1629, 647, 10621, 5011, 5016, 6343, 2]
 // Exports: default
 
-// Module 10587 (MoreTipsModalScreen)
-import set from "set";
-import get_ActivityIndicator from "trackViewedEvent";
-import handleConnectionOpen from "handleConnectionOpen";
-import { AnalyticEvents } from "ME";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 10626 (MoreTipsModalScreen)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import Text from "Text" /* 4739 */;
+import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 10627 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10628 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "handleConnectionOpen" /* 9960 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function MoreTipsModalScreen(learnMore) {
-  let actionItems;
-  let channelId;
-  let description;
-  let safetyTips;
-  let senderId;
-  let warningId;
   learnMore = learnMore.learnMore;
   ({ channelId, warningId, senderId, description, safetyTips, actionItems } = learnMore);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { keyboardShouldPersistTaps: "handled", style: tmp.scroll, children: null };
   obj = { style: tmp.contentContainer, children: null };
   obj = { style: tmp.tipsContainer, children: null };
-  const items = [callback(importDefault(10588), { description, safetyTips, showHeader: true }), ];
+  const items = [callback(SafetyTipsContainerDefault, { description, safetyTips, showHeader: true }), ];
   let tmp2Result = null;
   if (null != learnMore) {
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.learnMore;
     obj1[1] = learnMore;
     tmp2Result = tmp2(tmp5, obj1);
@@ -43,46 +39,38 @@ function MoreTipsModalScreen(learnMore) {
   const items1 = [closure_9(closure_4, obj), , ];
   const obj2 = { children: null };
   const obj3 = { variant: "eyebrow", color: "text-default", style: tmp.header, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj3[3] = intl.string(require(1236) /* getSystemLocale */.t.K5FKtc);
-  const items2 = [callback(require(4734) /* Text */.Text, obj3), actionItems];
+  const intl = getSystemLocale.intl;
+  obj3[3] = intl.string(getSystemLocale.t.K5FKtc);
+  const items2 = [callback(Text.Text, obj3), actionItems];
   obj2[0] = items2;
   items1[1] = closure_9(closure_4, obj2);
-  items1[2] = callback(importDefault(10589), { channelId, warningId, senderId });
+  items1[2] = callback(WasThisHelpfulSectionDefault, { channelId, warningId, senderId });
   obj[1] = items1;
   obj[2] = closure_9(closure_4, obj);
   return callback(closure_5, obj);
 }
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { scroll: null, contentContainer: null, tipsContainer: null, learnMore: null, header: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
-let obj1 = { marginHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
-createCacheKey[2] = { gap: require("Themes").space.PX_8 };
+createCacheKey[1] = { marginHorizontal: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_16 };
+let obj1 = { marginHorizontal: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_16 };
+createCacheKey[2] = { gap: ThemesDefault.space.PX_8 };
 createCacheKey[3] = { alignItems: "center" };
-let obj2 = { gap: require("Themes").space.PX_8 };
-createCacheKey[4] = { marginTop: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_4 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { marginTop: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_4 };
-const result = require("handleConnectionOpen").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/MoreTipsModal.tsx");
+let obj2 = { gap: ThemesDefault.space.PX_8 };
+createCacheKey[4] = { marginTop: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_4 };
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { marginTop: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_4 };
+const result = require("set").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/MoreTipsModal.tsx");
 
 export default function MoreTipsModal(channelId) {
-  let c0;
-  let c1;
-  let c2;
-  let c3;
-  let c4;
-  let c5;
-  let c6;
-  let c7;
   channelId = channelId.channelId;
   let _require = channelId;
   const warningId = channelId.warningId;
-  let importDefault = warningId;
+  importDefault = warningId;
   const senderId = channelId.senderId;
-  let dependencyMap = senderId;
+  dependencyMap = senderId;
   let MORE_TIPS = _require(647);
   const items = [c6];
   const stateFromStores = MORE_TIPS.useStateFromStores(items, () => _undefined5.getChannelSafetyWarning(c0, c1));
@@ -113,17 +101,15 @@ export default function MoreTipsModal(channelId) {
     headerRight() {
       const obj = {
         onPress() {
-          return outer1_1(outer1_2[12]).popWithKey(closure_0);
+          return closure_1_1(closure_1_2[12]).popWithKey(closure_0);
         },
-        source: null,
-        iconSize: null,
+        source: _undefined2(_undefined3[13]),
+        iconSize: _undefined(_undefined3[14]).IconSizes.MEDIUM,
         accessibilityLabel: null
       };
-      obj[1] = _undefined2(_undefined3[13]);
-      obj[2] = _undefined(_undefined3[14]).IconSizes.MEDIUM;
       const intl = _undefined(_undefined3[9]).intl;
       obj[3] = intl.string(_undefined(_undefined3[9]).t.cpT0Cq);
-      return outer1_8(_undefined(_undefined3[11]).HeaderActionButton, obj);
+      return closure_1_8(_undefined(_undefined3[11]).HeaderActionButton, obj);
     },
     headerTitle() {
       return null;
@@ -133,8 +119,8 @@ export default function MoreTipsModal(channelId) {
     },
     headerStyle: channelId.headerStyle,
     render() {
-      return outer1_8(outer1_11, { channelId: c1, warningId: c2, senderId: c3, description: c4, safetyTips: c5, actionItems: c6, learnMore: c7 });
+      return closure_1_8(closure_1_11, { channelId: c1, warningId: c2, senderId: c3, description: c4, safetyTips: c5, actionItems: c6, learnMore: c7 });
     }
   };
-  return callback(_require(6312).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: importDefault(1629)().top });
+  return callback(_require(6343).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
 };

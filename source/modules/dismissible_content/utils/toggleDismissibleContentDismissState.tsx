@@ -1,23 +1,25 @@
-// Module ID: 15070
-// Function ID: 15071
+// Module ID: 15134
+// Function ID: 15135
 // Name: useToggleDismissibleContentDismissState
-// Dependencies: [19, 4197, 9987, 1389, 1379, 1374, 11, 589, 4196, 687, 1378, 2]
+// Dependencies: [19, 4201, 10026, 1389, 1379, 1374, 11, 589, 4200, 687, 1378, 2]
 // Exports: default
 
-// Module 15070 (useToggleDismissibleContentDismissState)
-import handleConnectionOpen from "handleConnectionOpen";
+// Module 15134 (useToggleDismissibleContentDismissState)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import closure_4 from "handleConnectionOpen" /* 4201 */;
 
-require("noop").useCallback;
-let result = require("handleDCShownToUser").fileFinishedImporting("modules/dismissible_content/utils/toggleDismissibleContentDismissState.tsx");
+noop.useCallback;
+let result = set.fileFinishedImporting("modules/dismissible_content/utils/toggleDismissibleContentDismissState.tsx");
 
 export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER) {
   const _require = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER;
   let obj = _require(589);
-  const items = [handleConnectionOpen];
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => guildId.getGuildId());
   obj = { cooldownDurationMs: stateFromStores(687).Millis.WEEK, guildId: stateFromStores };
-  let result = _require(4196).useIsDismissibleContentDismissed_UNSAFE(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj);
-  const dependencyMap = result;
+  let result = _require(4200).useIsDismissibleContentDismissed_UNSAFE(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj);
+  dependencyMap = result;
   const items1 = [APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, stateFromStores, result];
   obj = {
     isDismissed: result,

@@ -1,17 +1,18 @@
-// Module ID: 12158
-// Function ID: 12159
+// Module ID: 12210
+// Function ID: 12211
 // Name: UserProfileNote
-// Dependencies: [19, 21, 4661, 8934, 12159, 12161, 12163, 5433, 1236, 4342, 12165, 7185, 4734, 2]
+// Dependencies: [19, 21, 4668, 8971, 12211, 12213, 12215, 5438, 1236, 4346, 12217, 7223, 4739, 2]
 // Exports: default
 
-// Module 12158 (UserProfileNote)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12210 (UserProfileNote)
+import noopAll from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
+noopAll;
 let closure_4 = createCacheKey.createStyles({ title: { justifyContent: "space-between" } });
-const result = require("createCacheKey").fileFinishedImporting("modules/user_profile/native/UserProfileNote.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileNote.tsx");
 
 export default function UserProfileNote(style) {
   const userId = style.userId;
@@ -37,19 +38,24 @@ export default function UserProfileNote(style) {
   } else {
     stringResult = string(t["1ZZtts"]);
   }
-  obj = { accessibilityRole: "button", accessibilityHint: stringResult, accessibilityLabel: null, onPress: null, activeOpacity: 0.8, children: null };
-  obj[2] = note;
-  obj[3] = function onPress() {
-    let obj = onBack(trackUserProfileAction[9]);
-    obj.hideActionSheet();
-    obj = {
-      userId,
-      onBack,
-      onSave() {
-        return callback({ action: "SET_NOTE" });
-      }
-    };
-    onBack(trackUserProfileAction[10])(obj);
+  obj = {
+    accessibilityRole: "button",
+    accessibilityHint: stringResult,
+    accessibilityLabel: note,
+    onPress() {
+      let obj = onBack(trackUserProfileAction[9]);
+      obj.hideActionSheet();
+      obj = {
+        userId,
+        onBack,
+        onSave() {
+          return callback({ action: "SET_NOTE" });
+        }
+      };
+      onBack(trackUserProfileAction[10])(obj);
+    },
+    activeOpacity: 0.8,
+    children: null
   };
   obj = { style: style.style, title: null, titleStyle: null, titleIcon: null, children: null };
   const tmp = callback();
@@ -58,7 +64,7 @@ export default function UserProfileNote(style) {
   const intl2 = tmp2(tmp3[8]).intl;
   obj[1] = intl2.string(userId(trackUserProfileAction[8]).t["mQKv+v"]);
   const items = [tmp.title, ];
-  let obj1 = !tmp6Result;
+  obj1 = !tmp6Result;
   if (!tmp6Result) {
     obj1 = { marginBottom: 0 };
   }

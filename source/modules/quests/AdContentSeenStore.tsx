@@ -1,14 +1,17 @@
-// Module ID: 14437
-// Function ID: 14438
+// Module ID: 14505
+// Function ID: 14506
 // Name: getOrCreateSet
-// Dependencies: [32, 7453, 7469, 7451, 589, 709, 2]
+// Dependencies: [32, 7491, 7507, 7489, 589, 709, 2]
 
-// Module 14437 (getOrCreateSet)
-import _slicedToArray from "_slicedToArray";
-import initializeState from "initializeState";
-import { PersistedStore } from "initialize";
+// Module 14505 (getOrCreateSet)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement" /* 7489 */;
+import AdCreativeType from "AdCreativeType" /* 7507 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "initializeState" /* 7491 */;
 
-const require = arg1;
+require = arg1;
 function getOrCreateSet(QUEST) {
   let value = map.get(QUEST);
   if (null == value) {
@@ -20,10 +23,8 @@ function getOrCreateSet(QUEST) {
   return value;
 }
 function syncWithQuestStore() {
-  let tmp5;
-  let tmp7;
   const quests = lastFetchedQuestHomeHero.quests;
-  const obj = getOrCreateSet(require(7469) /* AdCreativeType */.AdCreativeType.QUEST);
+  const obj = getOrCreateSet(AdCreativeType.AdCreativeType.QUEST);
   let flag = false;
   while (tmp !== undefined) {
     let tmp3 = callback;
@@ -34,7 +35,7 @@ function syncWithQuestStore() {
     if (!hasItem) {
       let tmp9 = require;
       let tmp10 = dependencyMap;
-      let obj2 = require(7451) /* getQuestDeliveryDataForPlacement */;
+      let obj2 = getQuestDeliveryDataForPlacement;
       let tmp11 = tmp7;
       hasItem = obj2.isQuestExpired(tmp7);
     }
@@ -78,7 +79,7 @@ function syncWithQuestStore() {
         if (!isQuestExpiredResult) {
           let tmp28 = require;
           let tmp29 = dependencyMap;
-          let obj3 = require(7451) /* getQuestDeliveryDataForPlacement */;
+          let obj3 = getQuestDeliveryDataForPlacement;
           let tmp30 = value;
           isQuestExpiredResult = obj3.isQuestExpired(tmp26);
         }
@@ -91,7 +92,7 @@ function syncWithQuestStore() {
       }
     }
   }
-  const obj4 = getOrCreateSet(require(7469) /* AdCreativeType */.AdCreativeType.QUEST_HOME_HERO);
+  const obj4 = getOrCreateSet(AdCreativeType.AdCreativeType.QUEST_HOME_HERO);
   if (null != lastFetchedQuestHomeHero.getLastFetchedQuestHomeHero()) {
     if (obj4.size > 0) {
       const questHomeHero = lastFetchedQuestHomeHero.getQuestHomeHero();
@@ -114,13 +115,14 @@ function syncWithQuestStore() {
   return flag;
 }
 let map = new Map();
+const PersistedStore = initializeDefault.PersistedStore;
 class AdContentSeenStore extends PersistedStore {
 }
 const prototype = AdContentSeenStore.prototype;
 prototype["initialize"] = function initialize(seenContentIds) {
   const self = this;
-  this.waitFor(initializeState);
-  const map = new Map();
+  this.waitFor(closure_3);
+  map = new Map();
   if (null != seenContentIds) {
     const _Object = Object;
     const entries = Object.entries(seenContentIds.seenContentIds);
@@ -142,7 +144,7 @@ prototype["initialize"] = function initialize(seenContentIds) {
       continue;
     }
   }
-  const items = [initializeState];
+  const items = [closure_3];
   self.syncWith(items, syncWithQuestStore);
 };
 prototype["getState"] = function getState() {
@@ -169,7 +171,7 @@ prototype["hasSeen"] = function hasSeen(arg0, arg1) {
 };
 AdContentSeenStore.displayName = "AdContentSeenStore";
 AdContentSeenStore.persistKey = "AdContentSeenStore";
-const adContentSeenStore = new AdContentSeenStore(require("dispatcher"), {
+const adContentSeenStore = new AdContentSeenStore(dispatcherDefault, {
   AD_CONTENT_MARK_SEEN: function handleMarkSeen(adCreativeType) {
     const obj = getOrCreateSet(adCreativeType.adCreativeType);
     let flag = false;
@@ -204,6 +206,6 @@ const adContentSeenStore = new AdContentSeenStore(require("dispatcher"), {
     }
   }
 });
-let result = require("AdCreativeType").fileFinishedImporting("modules/quests/AdContentSeenStore.tsx");
+let result = require("set").fileFinishedImporting("modules/quests/AdContentSeenStore.tsx");
 
 export default adContentSeenStore;

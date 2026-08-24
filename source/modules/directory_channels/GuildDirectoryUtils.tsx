@@ -1,16 +1,19 @@
-// Module ID: 11471
-// Function ID: 11472
+// Module ID: 11520
+// Function ID: 11521
 // Name: guildDirectoryEntryFromServer
-// Dependencies: [11472, 38, 12, 2]
+// Dependencies: [11521, 38, 12, 2]
 // Exports: guildDirectoryEntryFromServer, orderByDateAdded, orderByTotalMemberCount, rankByDateAdded, rankGuildEntries
 
-// Module 11471 (guildDirectoryEntryFromServer)
-import { DirectoryEntryTypes } from "DirectoryEntryTypes";
+// Module 11520 (guildDirectoryEntryFromServer)
+import set2 from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+import _modDef38 from "module_38" /* 38 */;
+import DirectoryEntryTypes2 from "DirectoryEntryTypes" /* 11521 */;
 
-const result = require("apply").fileFinishedImporting("modules/directory_channels/GuildDirectoryUtils.tsx");
+const DirectoryEntryTypes = DirectoryEntryTypes2.DirectoryEntryTypes;
+const result = set2.fileFinishedImporting("modules/directory_channels/GuildDirectoryUtils.tsx");
 
 export const guildDirectoryEntryFromServer = function guildDirectoryEntryFromServer(entry) {
-  let guild;
   if (entry.type === DirectoryEntryTypes.GUILD) {
     const obj = { channelId: null, guildId: null, type: null, authorId: null, createdAt: null, description: null, primaryCategoryId: null, name: null, icon: null, splash: null, features: null, approximateMemberCount: null, approximatePresenceCount: null, featurableInDirectory: null };
     ({ directory_channel_id: obj[0], entity_id: obj[1], type: obj[2], author_id: obj[3], created_at: obj[4], description: obj[5], primary_category_id: obj[6], guild } = entry);
@@ -59,25 +62,25 @@ export const guildDirectoryEntryFromServer = function guildDirectoryEntryFromSer
     return obj;
   } else {
     const type = entry.type;
-    importDefault(38)(false, "Directory entries must be connected to a guild!");
+    _modDef38(false, "Directory entries must be connected to a guild!");
   }
 };
 export const MAX_CATEGORY_SERVERS = 5;
 export const orderByTotalMemberCount = function orderByTotalMemberCount(found) {
   const items = [(approximateMemberCount) => approximateMemberCount.approximateMemberCount];
-  return importDefault(12).orderBy(found, items, ["desc"]);
+  return applyDefault.orderBy(found, items, ["desc"]);
 };
 export const orderByDateAdded = function orderByDateAdded(reactions) {
   const items = [(createdAt) => createdAt.createdAt];
-  return importDefault(12).orderBy(reactions, items, ["desc"]);
+  return applyDefault.orderBy(reactions, items, ["desc"]);
 };
 export const rankByDateAdded = function rankByDateAdded(arr) {
   const found = arr.filter((featurableInDirectory) => featurableInDirectory.featurableInDirectory);
   const items = [(createdAt) => createdAt.createdAt];
-  const obj = importDefault(12);
-  return importDefault(12).orderBy(found, items, ["desc"]).slice(0, 5);
+  const obj = applyDefault;
+  return applyDefault.orderBy(found, items, ["desc"]).slice(0, 5);
 };
 export const rankGuildEntries = function rankGuildEntries(arr) {
   const items = [(approximateMemberCount) => approximateMemberCount.approximateMemberCount];
-  return importDefault(12).orderBy(arr, items, ["desc"]);
+  return applyDefault.orderBy(arr, items, ["desc"]);
 };

@@ -1,9 +1,11 @@
-// Module ID: 16819
-// Function ID: 16820
+// Module ID: 16912
+// Function ID: 16913
 // Name: IntegrationExpireBehaviorTypes
 // Dependencies: [2]
 
-// Module 16819 (IntegrationExpireBehaviorTypes)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/IntegrationExpireBehaviorTypes.tsx");
+// Module 16912 (IntegrationExpireBehaviorTypes)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/IntegrationExpireBehaviorTypes.tsx");
 
 export const IntegrationExpireBehaviorTypes = { REMOVE_ROLE: 0, [0]: "REMOVE_ROLE", KICK: 1, [1]: "KICK" };

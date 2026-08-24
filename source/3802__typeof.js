@@ -1,10 +1,11 @@
 // Module ID: 3802
 // Function ID: 3803
 // Name: _typeof
-// Dependencies: [3780, 3778]
+// Dependencies: [3803, 3783, 3781]
 
 // Module 3802 (_typeof)
-import { Parser } from "Parser";
+import Parser2 from "Parser" /* 3781 */;
+import setUTCISODay from "setUTCISODay" /* 3803 */;
 
 let _createSuperInternal = require;
 let closure_1 = dependencyMap;
@@ -12,9 +13,9 @@ function _typeof(arg0) {
   if (typeof Symbol === "function") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "symbol") {
-      function _typeof(arg0) {
+      _typeof = function _typeof(arg0) {
         return typeof arg0;
-      }
+      };
     }
     return _typeof(arg0);
   }
@@ -33,20 +34,20 @@ function _typeof(arg0) {
     str = typeof arg0;
   };
 }
-function _setPrototypeOf(AMPMMidnightParser, Parser) {
-  let _setPrototypeOf = Object.setPrototypeOf;
+function _setPrototypeOf(ISODayParser, Parser) {
+  _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(AMPMMidnightParser, Parser) {
-      AMPMMidnightParser.__proto__ = Parser;
-      return AMPMMidnightParser;
+    _setPrototypeOf = function _setPrototypeOf(ISODayParser, Parser) {
+      ISODayParser.__proto__ = Parser;
+      return ISODayParser;
     };
   }
-  return _setPrototypeOf(AMPMMidnightParser, Parser);
+  return _setPrototypeOf(ISODayParser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
     let _Object = Object;
-    let _getPrototypeOf = Object.getPrototypeOf;
+    _getPrototypeOf = Object.getPrototypeOf;
   } else {
     _getPrototypeOf = function _getPrototypeOf(arg0) {
       let __proto__ = arg0.__proto__;
@@ -59,10 +60,19 @@ function _getPrototypeOf(arg0) {
   }
   return _getPrototypeOf(arg0);
 }
+if (!setUTCISODay) {
+  let obj = { default: null };
+  obj[0] = setUTCISODay;
+  let tmp3 = obj;
+} else {
+  tmp3 = setUTCISODay;
+}
+setUTCISODay = tmp3;
+const Parser = Parser2.Parser;
 _createSuperInternal = undefined;
-class AMPMMidnightParser {
+class ISODayParser {
   constructor() {
-    if (this instanceof c1) {
+    if (this instanceof closure_1) {
       length = arguments.length;
       _Array = Array;
       tmp6 = new.target;
@@ -96,10 +106,10 @@ class AMPMMidnightParser {
         str2 = "priority";
         if ("priority" in applyResult) {
           _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 80, enumerable: true, configurable: true, writable: true });
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 90, enumerable: true, configurable: true, writable: true });
         } else {
-          num3 = 80;
-          applyResult.priority = 80;
+          num3 = 90;
+          applyResult.priority = 90;
         }
         if (tmp13) {
           _ReferenceError = ReferenceError;
@@ -110,7 +120,7 @@ class AMPMMidnightParser {
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
-          items1 = ["a", "B", "H", "k", "t", "T"];
+          items1 = ["y", "Y", "u", "q", "Q", "M", "L", "w", "d", "D", "E", "e", "c", "t", "T"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
@@ -134,7 +144,7 @@ class AMPMMidnightParser {
     }
   }
 }
-closure_1 = AMPMMidnightParser;
+closure_1 = ISODayParser;
 if (typeof Parser !== "function") {
   if (null !== Parser) {
     let _TypeError = TypeError;
@@ -146,12 +156,12 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-let obj = { value: AMPMMidnightParser, writable: true, configurable: true };
-AMPMMidnightParser.prototype = Object.create(prototype, { constructor: obj });
+obj = { value: ISODayParser, writable: true, configurable: true };
+ISODayParser.prototype = Object.create(prototype, { constructor: obj });
 if (Parser) {
-  _setPrototypeOf(AMPMMidnightParser, Parser);
+  _setPrototypeOf(ISODayParser, Parser);
 }
-_createSuperInternal = AMPMMidnightParser;
+_createSuperInternal = ISODayParser;
 let num = 0;
 closure_1 = (function _isNativeReflectConstruct() {
   if (typeof Reflect !== "undefined") {
@@ -211,48 +221,72 @@ _createSuperInternal = function _createSuperInternal() {
 };
 obj = {
   key: "parse",
-  value: function parse(arg0, arg1, dayPeriod) {
-    if ("b" !== arg1) {
-      if ("bb" !== arg1) {
-        if ("bbb" !== arg1) {
-          if ("bbbbb" === arg1) {
-            return dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
+  value: function parse(arg0, arg1, ordinalNumber) {
+    if ("i" !== arg1) {
+      if ("ii" !== arg1) {
+        if ("io" === arg1) {
+          return ordinalNumber.ordinalNumber(arg0, { unit: "day" });
+        } else {
+          function valueCallback(arg0) {
+            let num = 7;
+            if (0 !== arg0) {
+              num = arg0;
+            }
+            return num;
+          }
+          if ("iii" === arg1) {
+            return _createSuperInternal(3783).mapValue(ordinalNumber.day(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.day(arg0, { width: "short", context: "formatting" }) || ordinalNumber.day(arg0, { width: "narrow", context: "formatting" }), valueCallback);
+          } else if ("iiiii" === arg1) {
+            return _createSuperInternal(3783).mapValue(ordinalNumber.day(arg0, { width: "narrow", context: "formatting" }), valueCallback);
+          } else if ("iiiiii" === arg1) {
+            return _createSuperInternal(3783).mapValue(ordinalNumber.day(arg0, { width: "short", context: "formatting" }) || ordinalNumber.day(arg0, { width: "narrow", context: "formatting" }), valueCallback);
           } else {
-            return dayPeriod.dayPeriod(arg0, { width: "wide", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "abbreviated", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
+            return _createSuperInternal(3783).mapValue(ordinalNumber.day(arg0, { width: "wide", context: "formatting" }) || ordinalNumber.day(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.day(arg0, { width: "short", context: "formatting" }) || ordinalNumber.day(arg0, { width: "narrow", context: "formatting" }), valueCallback);
           }
         }
       }
     }
-    return dayPeriod.dayPeriod(arg0, { width: "abbreviated", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
+    return _createSuperInternal(3783).parseNDigits(arg1.length, arg0);
   }
 };
 let items = [
   obj,
   {
+    key: "validate",
+    value: function validate(arg0, arg1) {
+      let tmp = arg1 >= 1;
+      if (tmp) {
+        tmp = arg1 <= 7;
+      }
+      return tmp;
+    }
+  },
+  {
     key: "set",
-    value: function set(setUTCHours) {
-      setUTCHours.setUTCHours(_createSuperInternal(table[0]).dayPeriodEnumToHours(arg2), 0, 0, 0);
-      return setUTCHours;
+    value: function set(arg0, arg1, arg2) {
+      const defaultResult = setUTCISODay.default(arg0, arg2);
+      defaultResult.setUTCHours(0, 0, 0, 0);
+      return defaultResult;
     }
   }
 ];
 if (0 < items.length) {
   do {
-    let tmp5 = items[num];
-    let flag = tmp5.enumerable;
-    let tmp6 = num;
+    let tmp7 = items[num];
+    let flag = tmp7.enumerable;
+    let tmp8 = num;
     if (!flag) {
       flag = false;
     }
-    tmp5.enumerable = flag;
-    tmp5.configurable = true;
-    if ("value" in tmp5) {
-      tmp5.writable = true;
+    tmp7.enumerable = flag;
+    tmp7.configurable = true;
+    if ("value" in tmp7) {
+      tmp7.writable = true;
     }
     let _Object = Object;
-    let definePropertyResult1 = Object.defineProperty(tmp4, tmp5.key, tmp5);
+    let definePropertyResult1 = Object.defineProperty(tmp6, tmp7.key, tmp7);
     num = num + 1;
   } while (num < items.length);
 }
 
-export { AMPMMidnightParser };
+export { ISODayParser };

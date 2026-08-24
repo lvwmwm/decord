@@ -5,7 +5,9 @@
 // Exports: encodeProperties
 
 // Module 662 (encodeProperties)
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/analytics-utils/encodeProperties.tsx");
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/packages/analytics-utils/encodeProperties.tsx");
 
 export const encodeProperties = function encodeProperties(arg0) {
   try {

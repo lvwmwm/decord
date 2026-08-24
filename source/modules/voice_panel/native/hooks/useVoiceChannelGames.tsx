@@ -1,24 +1,24 @@
-// Module ID: 16376
-// Function ID: 16377
+// Module ID: 16473
+// Function ID: 16474
 // Name: useVoiceChannelGames
-// Dependencies: [19, 1218, 4559, 7250, 1922, 589, 9733, 9734, 6901, 2]
+// Dependencies: [19, 1218, 4564, 7288, 1922, 589, 9772, 9773, 6939, 2]
 // Exports: default
 
-// Module 16376 (useVoiceChannelGames)
-import noop from "noop";
-import fetchFingerprint from "fetchFingerprint";
-import sortActivity from "sortActivity";
-import filterPlayingActivities from "filterPlayingActivities";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 16473 (useVoiceChannelGames)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "sortActivity" /* 4564 */;
+import closure_6 from "filterPlayingActivities" /* 7288 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
-let result = require("sortActivity").fileFinishedImporting("modules/voice_panel/native/hooks/useVoiceChannelGames.tsx");
+let result = require("set").fileFinishedImporting("modules/voice_panel/native/hooks/useVoiceChannelGames.tsx");
 
 export default function useVoiceChannelGames(arg0, arg1, arg2) {
   const _require = arg0;
-  let closure_1 = arg1;
-  const dependencyMap = arg2;
-  let items = [stateFromStores, filterPlayingActivities, sortActivity];
+  closure_1 = arg1;
+  dependencyMap = arg2;
+  let items = [stateFromStores, closure_6, closure_5];
   const items1 = [arg0, arg1, arg2];
   const stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => {
     if (closure_2) {
@@ -35,13 +35,13 @@ export default function useVoiceChannelGames(arg0, arg1, arg2) {
         } else {
           let user = tmp13.user;
           if (user.id === id) {
-            let tmp20 = outer1_6;
-            let activities = outer1_6.getActivities();
+            let tmp20 = closure_1_6;
+            let activities = closure_1_6.getActivities();
           } else {
-            let tmp16 = outer1_5;
+            let tmp16 = closure_1_5;
             let tmp17 = user;
             let tmp18 = closure_1;
-            activities = outer1_5.getActivities(tmp15.id, closure_1);
+            activities = closure_1_5.getActivities(tmp15.id, closure_1);
           }
           let tmp21 = activities;
           let tmp22 = activities[Symbol.iterator]();
@@ -53,9 +53,9 @@ export default function useVoiceChannelGames(arg0, arg1, arg2) {
     }
   }, items1);
   const obj = _require(589);
-  const getGamesForAppIds = _require(9734).useGetGamesForAppIds(stateFromStoresArray);
-  let obj2 = _require(9734);
-  const items2 = [mergeGuildAvatar];
+  const getGamesForAppIds = _require(9773).useGetGamesForAppIds(stateFromStoresArray);
+  let obj2 = _require(9773);
+  const items2 = [closure_7];
   stateFromStores = _require(589).useStateFromStores(items2, () => {
     currentUser = currentUser.getCurrentUser();
     let nsfwAllowed;

@@ -1,20 +1,20 @@
-// Module ID: 12566
-// Function ID: 12567
+// Module ID: 12620
+// Function ID: 12621
 // Name: ChannelCallMicButton
-// Dependencies: [19, 4540, 21, 7305, 589, 12567, 12568, 8694, 1236, 12569, 12570, 712, 2]
+// Dependencies: [19, 4545, 21, 7343, 589, 12621, 12622, 8731, 1236, 12623, 12624, 712, 2]
 // Exports: ChannelCallMicButton
 
-// Module 12566 (ChannelCallMicButton)
-import noop from "noop";
-import set from "set";
-import { jsx } from "jsxProd";
+// Module 12620 (ChannelCallMicButton)
+import getMuteStatesDefault from "getMuteStates" /* 7343 */;
+import ActionButtonAll from "ActionButton" /* 8731 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "set" /* 4545 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/ChannelCallMicButton.tsx");
+const result = require("set").fileFinishedImporting("modules/video_calls/native/components/ChannelCallMicButton.tsx");
 
 export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
-  let channel;
-  let isSmallSize;
   let flag = disableTint.disableTint;
   ({ channel, isSmallSize } = disableTint);
   if (flag === undefined) {
@@ -22,18 +22,18 @@ export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
   }
   let mute;
   let obj = mute(589);
-  const items = [set];
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
-  const tmp3 = importDefault(7305)(channel);
-  const muteHandler = mute(12567).createMuteHandler(tmp3, stateFromStores);
+  const tmp3 = getMuteStatesDefault(channel);
+  const muteHandler = mute(12621).createMuteHandler(tmp3, stateFromStores);
   mute = muteHandler.mute;
   const items1 = [mute];
-  const memo = React.useMemo(() => outer1_6(mute(outer1_3[6]).VoicePanelRiveMicButton, { muted: mute }), items1);
+  const memo = React.useMemo(() => closure_1_6(mute(closure_1_3[6]).VoicePanelRiveMicButton, { muted: mute }), items1);
   obj = { appearsDisabled: stateFromStores, accessibilityLabel: null, onPress: null, source: null, isActive: null, isSmallSize: null, lottieComponent: null, tintColor: null };
   const intl = mute(1236).intl;
   obj[1] = intl.string(mute(1236).t.B3zz0G);
   obj[2] = muteHandler.onPress;
-  obj[3] = importDefault(mute ? 12569 : 12570);
+  obj[3] = importDefault(mute ? 12623 : 12624);
   if (!flag) {
     flag = mute;
   }
@@ -45,5 +45,5 @@ export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
     RED_400 = tmp(712).unsafe_rawColors.RED_400;
   }
   obj[7] = RED_400;
-  return jsx(importAll(8694).ToggledActionButton, { appearsDisabled: stateFromStores, accessibilityLabel: null, onPress: null, source: null, isActive: null, isSmallSize: null, lottieComponent: null, tintColor: null });
+  return jsx(ActionButtonAll.ToggledActionButton, { appearsDisabled: stateFromStores, accessibilityLabel: null, onPress: null, source: null, isActive: null, isSmallSize: null, lottieComponent: null, tintColor: null });
 };

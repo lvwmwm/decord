@@ -1,15 +1,15 @@
-// Module ID: 16232
-// Function ID: 16233
+// Module ID: 16329
+// Function ID: 16330
 // Name: useActivityWebViewLockManager
-// Dependencies: [32, 19, 4115, 4668, 2]
+// Dependencies: [32, 19, 4119, 4107, 2]
 // Exports: default, useLockedWebView
 
-// Module 16232 (useActivityWebViewLockManager)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 16329 (useActivityWebViewLockManager)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-let result = require("module_4115").fileFinishedImporting("modules/activities/panel/native/useActivityWebViewLockManager.tsx");
+let result = require("set").fileFinishedImporting("modules/activities/panel/native/useActivityWebViewLockManager.tsx");
 
 export default function useActivityWebViewLockManager() {
   return React.useState(() => {
@@ -31,24 +31,25 @@ export default function useActivityWebViewLockManager() {
     return () => {
       const id = getCanRender.useId();
       let tmp2 = map(getCanRender.useState(() => {
-        let tmp2 = 0 === tmp3.size;
+        let tmp2 = 0 === set.size;
         if (!tmp2) {
-          const iter2 = tmp3.values().next();
+          const iter2 = set.values().next();
           let value;
           if (iter2 != null) {
             value = iter2.value;
           }
           tmp2 = value === tmp;
-          const iter = tmp3.values();
+          const iter = set.values();
         }
         return tmp2;
       }), 2);
+      closure_1 = tmp3;
       const items = [id];
       const insertionEffect = getCanRender.useInsertionEffect(() => {
-        let obj = tmp3;
-        tmp3.add(id);
-        obj = { callback: tmp3, canRender: null };
-        let tmp4 = 0 === tmp3.size;
+        let obj = set;
+        set.add(id);
+        obj = { callback: set, canRender: null };
+        let tmp4 = 0 === set.size;
         if (!tmp4) {
           const iter2 = obj.values().next();
           let value;
@@ -59,10 +60,10 @@ export default function useActivityWebViewLockManager() {
           const iter = obj.values();
         }
         obj[1] = tmp4;
-        const result = outer1_2.set(tmp, obj);
+        const result = closure_1_2.set(tmp, obj);
         return () => {
-          outer1_1.delete(closure_0);
-          outer1_2.delete(closure_0);
+          closure_1_1.delete(closure_0);
+          closure_1_2.delete(closure_0);
         };
       }, items);
       const items1 = [id, tmp2[1]];
@@ -70,11 +71,9 @@ export default function useActivityWebViewLockManager() {
         if (null == closure_0) {
           let resolved = Promise.resolve();
           closure_0 = resolved.then(() => {
-            let tmp6;
-            let tmp8;
             while (tmp2 !== undefined) {
-              let tmp4 = outer1_2;
-              let tmp5 = outer1_2(tmp3, 2);
+              let tmp4 = closure_1_2;
+              let tmp5 = closure_1_2(tmp3, 2);
               [tmp6, tmp8] = tmp5;
               let callback = tmp8.callback;
               let tmp9 = callback;
@@ -94,7 +93,7 @@ export default function useActivityWebViewLockManager() {
               }
               continue;
             }
-            let c0;
+            c0 = undefined;
           });
         }
         return () => {

@@ -1,33 +1,32 @@
-// Module ID: 12552
-// Function ID: 12553
+// Module ID: 12606
+// Function ID: 12607
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 4652, 1218, 4497, 4529, 21, 4661, 589, 38, 9654, 12547, 1236, 6291, 12139, 2]
+// Dependencies: [19, 17, 4658, 1218, 4501, 4534, 21, 4668, 589, 38, 9693, 12601, 1236, 6322, 12191, 2]
 // Exports: default
 
-// Module 12552 (UserSettingsVoiceOutputOptions)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import reset from "reset";
-import fetchFingerprint from "fetchFingerprint";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import { MediaEngineContextTypes } from "DesktopSources";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12606 (UserSettingsVoiceOutputOptions)
+import VolumeSliderDefault from "VolumeSlider" /* 12191 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "reset" /* 4658 */;
+import closure_6 from "fetchFingerprint" /* 1218 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4501 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4534 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
 const require = arg1;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let closure_11 = createCacheKey.createStyles({ slider: { marginTop: 4 } });
-const result = require("reset").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceOutputOptions.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceOutputOptions.tsx");
 
 export default function UserSettingsVoiceOutputOptions() {
   const tmp = callback2();
   let obj = stateFromStores1(589);
-  const items = [_detectH265HardwareDecode];
+  const items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => outputVolume.getOutputVolume());
-  let obj1 = stateFromStores1(589);
-  const items1 = [reset, fetchFingerprint];
+  obj1 = stateFromStores1(589);
+  const items1 = [closure_5, closure_6];
   stateFromStores1 = obj1.useStateFromStores(items1, () => {
     lastActiveStream = lastActiveStream.getLastActiveStream();
     let tmp2 = null;
@@ -40,18 +39,18 @@ export default function UserSettingsVoiceOutputOptions() {
     return tmp2;
   });
   let obj2 = stateFromStores1(589);
-  const items2 = [_detectH265HardwareDecode];
+  const items2 = [closure_7];
   const items3 = [stateFromStores1];
   const stateFromStores2 = obj2.useStateFromStores(items2, () => {
     let num = 0;
     if (null != stateFromStores1) {
-      num = outer1_7.getLocalVolume(tmp.ownerId, outer1_8.STREAM);
+      num = closure_1_7.getLocalVolume(tmp.ownerId, closure_1_8.STREAM);
     }
     return num;
   });
   const callback = React.useCallback((arg0) => {
-    outer1_1(outer1_2[9])(null != stateFromStores1, "Can not set stream volume without active stream");
-    outer1_1(outer1_2[10]).setLocalVolume(stateFromStores1.ownerId, arg0, outer1_8.STREAM);
+    closure_1_1(closure_1_2[9])(null != stateFromStores1, "Can not set stream volume without active stream");
+    closure_1_1(closure_1_2[10]).setLocalVolume(stateFromStores1.ownerId, arg0, closure_1_8.STREAM);
   }, items3);
   obj = { title: null, hasIcons: false, children: null };
   const intl = stateFromStores1(1236).intl;
@@ -59,7 +58,7 @@ export default function UserSettingsVoiceOutputOptions() {
   obj = { label: null, subLabel: null };
   const intl2 = stateFromStores1(1236).intl;
   obj[0] = intl2.string(stateFromStores1(1236).t.xPHVBs);
-  obj1 = { style: tmp.slider, children: callback(importDefault(12139), obj2) };
+  obj1 = { style: tmp.slider, children: callback(VolumeSliderDefault, obj2) };
   obj2 = {
     style: tmp.slider,
     value: stateFromStores,
@@ -68,7 +67,7 @@ export default function UserSettingsVoiceOutputOptions() {
     }
   };
   obj[1] = callback(View, obj1);
-  const items4 = [callback(stateFromStores1(6291).TableRow, obj), ];
+  const items4 = [callback(stateFromStores1(6322).TableRow, obj), ];
   let tmp9Result = null != stateFromStores1;
   if (tmp9Result) {
     const obj3 = { label: null, subLabel: null };
@@ -79,11 +78,11 @@ export default function UserSettingsVoiceOutputOptions() {
     const obj5 = { value: null, onValueChange: null };
     obj5[0] = stateFromStores2;
     obj5[1] = callback;
-    obj4[1] = tmp9(importDefault(12139), obj5);
+    obj4[1] = tmp9(VolumeSliderDefault, obj5);
     obj3[1] = tmp9(View, obj4);
-    tmp9Result = tmp9(tmp2(6291).TableRow, obj3);
+    tmp9Result = tmp9(tmp2(6322).TableRow, obj3);
   }
   items4[1] = tmp9Result;
   obj[2] = items4;
-  return closure_10(stateFromStores1(12547).UserSettingsTableRowGroup, obj);
+  return closure_10(stateFromStores1(12601).UserSettingsTableRowGroup, obj);
 };

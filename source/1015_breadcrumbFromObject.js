@@ -4,7 +4,9 @@
 // Dependencies: [817]
 
 // Module 1015 (breadcrumbFromObject)
-const require = arg1;
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.DEFAULT_BREADCRUMB_LEVEL = "info";
 arg5.breadcrumbFromObject = function breadcrumbFromObject(type) {
@@ -13,8 +15,8 @@ arg5.breadcrumbFromObject = function breadcrumbFromObject(type) {
     obj.type = type.type;
   }
   if (typeof type.level === "string") {
-    obj.level = require(817) /* registerSpanErrorInstrumentation */.severityLevelFromString(type.level);
-    const obj2 = require(817) /* registerSpanErrorInstrumentation */;
+    obj.level = registerSpanErrorInstrumentation.severityLevelFromString(type.level);
+    const obj2 = registerSpanErrorInstrumentation;
   }
   if (typeof type.event_id === "string") {
     obj.event_id = type.event_id;

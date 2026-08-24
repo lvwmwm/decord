@@ -1,19 +1,18 @@
-// Module ID: 7344
-// Function ID: 7345
+// Module ID: 7382
+// Function ID: 7383
 // Name: InputAttachmentContainer
-// Dependencies: [32, 19, 17, 21, 7187, 4734, 1367, 7345, 2]
+// Dependencies: [32, 19, 17, 21, 7225, 4739, 1367, 7383, 2]
 // Exports: estimateAttachmentWidth, renderInputAttachment, useInputAttachments
 
-// Module 7344 (InputAttachmentContainer)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 7382 (InputAttachmentContainer)
+import Text from "Text" /* 4739 */;
+import ICON_SIZE from "ICON_SIZE" /* 7225 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let Platform;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 class InputAttachmentContainer {
   constructor(arg0) {
     ({ content, style } = global);
@@ -60,12 +59,12 @@ class InputAttachmentContainer {
   }
 }
 ({ Platform, Pressable: c5, View: closure_6 } = get_ActivityIndicator);
-const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Input/native/useInputAttachments.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Input/native/useInputAttachments.native.tsx");
 
 export const estimateAttachmentWidth = function estimateAttachmentWidth(arg0, arg1) {
   let num = 0;
   if (null != arg0) {
-    num = require(7187) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
+    num = ICON_SIZE.ICON_SIZE.xs + arg1;
   }
   return num;
 };
@@ -78,19 +77,13 @@ export const renderInputAttachment = function renderInputAttachment(arg0, leadin
       const obj = { variant: "text-md/normal", style: null, children: null };
       obj[1] = text;
       obj[2] = leadingText;
-      tmp2 = jsx(require(4734) /* Text */.Text, { variant: "text-md/normal", style: null, children: null });
+      tmp2 = jsx(Text.Text, { variant: "text-md/normal", style: null, children: null });
     }
   }
   return tmp2;
 };
 export { InputAttachmentContainer };
 export const useInputAttachments = function useInputAttachments(size, leading) {
-  let leadingPressableProps;
-  let leadingText;
-  let tmp22;
-  let tmp23;
-  let trailingIcon;
-  let trailingPressableProps;
   let obj = inputStyles(trailingIcon[7]);
   obj = { size: size.size, hasLeadingIcon: null != size.leadingIcon, isRefreshEnabled: leadingIcon(trailingIcon[6])("useInputAttachments") };
   inputStyles = obj.useInputStyles(obj);
@@ -149,7 +142,7 @@ export const useInputAttachments = function useInputAttachments(size, leading) {
           if (prop == null) {
             prop = leadingPressableProps;
           }
-          const obj1 = { leading: null, trailing: null, inputStyle: null };
+          obj1 = { leading: null, trailing: null, inputStyle: null };
           obj[2] = prop;
           obj[3] = leadingIcon2;
           obj1[0] = <InputAttachmentContainer content={null} setWidth={null} pressableProps={null} style={null} />;

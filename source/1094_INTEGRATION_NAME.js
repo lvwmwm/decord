@@ -5,7 +5,7 @@
 // Exports: isSpotlightInteraction
 
 // Module 1094 (INTEGRATION_NAME)
-import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const SpotlightBrowser = "SpotlightBrowser";
@@ -45,12 +45,12 @@ export const spotlightBrowserIntegration = registerSpanErrorInstrumentation.defi
   if (arg0 === undefined) {
     obj = {};
   }
-  let closure_0 = obj.sidecarUrl || "http://localhost:8969/stream";
+  closure_0 = obj.sidecarUrl || "http://localhost:8969/stream";
   obj = {
     name: SpotlightBrowser,
     setup() {
-      if (callback(outer1_1[0]).DEBUG_BUILD) {
-        const debug = callback(outer1_1[1]).debug;
+      if (callback(closure_1_1[0]).DEBUG_BUILD) {
+        const debug = callback(closure_1_1[1]).debug;
         debug.log("Using Sidecar URL", callback);
       }
     },
@@ -88,8 +88,8 @@ export const spotlightBrowserIntegration = registerSpanErrorInstrumentation.defi
       return tmp3;
     },
     afterAllSetup(on) {
-      const nativeImplementation = callback(outer1_1[2]).getNativeImplementation("fetch");
-      let c2 = 0;
+      const nativeImplementation = callback(closure_1_1[2]).getNativeImplementation("fetch");
+      c2 = 0;
       on.on("beforeEnvelope", (arg0) => {
         if (c2 > 3) {
           let debug = callback(817).debug;
@@ -105,11 +105,11 @@ export const spotlightBrowserIntegration = registerSpanErrorInstrumentation.defi
               tmp = status.status < 400;
             }
             if (tmp) {
-              let c2 = 0;
+              c2 = 0;
             }
           }, (arg0) => {
             closure_2 = closure_2 + 1;
-            const debug = outer1_0(outer1_1[1]).debug;
+            const debug = closure_1_0(closure_1_1[1]).debug;
             debug.error("Sentry SDK can't connect to Sidecar is it running? See: https://spotlightjs.com/sidecar/npx/", arg0);
           });
           const promise = dependencyMap(callback, obj);

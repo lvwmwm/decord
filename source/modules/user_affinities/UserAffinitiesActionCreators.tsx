@@ -1,30 +1,30 @@
-// Module ID: 9637
-// Function ID: 9638
+// Module ID: 9676
+// Function ID: 9677
 // Name: fetchUserAffinitiesV2
-// Dependencies: [5258, 5407, 676, 709, 530, 2]
+// Dependencies: [5263, 5412, 676, 709, 530, 2]
 // Exports: fetchUserAffinitiesV2
 
-// Module 9637 (fetchUserAffinitiesV2)
-import hasConsented from "hasConsented";
-import recomputeAffinities from "recomputeAffinities";
-import ME from "ME";
+// Module 9676 (fetchUserAffinitiesV2)
+import sendRequest from "sendRequest" /* 530 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "hasConsented" /* 5263 */;
+import closure_4 from "recomputeAffinities" /* 5412 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ Endpoints: c5, Consents: closure_6 } = ME);
-const result = require("ME").fileFinishedImporting("modules/user_affinities/UserAffinitiesActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/user_affinities/UserAffinitiesActionCreators.tsx");
 
 export const fetchUserAffinitiesV2 = function fetchUserAffinitiesV2() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
   }
-  if (recomputeAffinities.shouldFetch()) {
-    if (hasConsented.hasConsented(constants.PERSONALIZATION)) {
-      let obj = importDefault(709);
+  if (closure_4.shouldFetch()) {
+    if (closure_3.hasConsented(constants.PERSONALIZATION)) {
+      let obj = dispatcherDefault;
       obj.dispatch({ type: "LOAD_USER_AFFINITIES_V2" });
-      const HTTP = require(530) /* sendRequest */.HTTP;
+      const HTTP = sendRequest.HTTP;
       obj = { url: null, retries: null, oldFormErrors: true, rejectWithError: false };
       obj[0] = USER_AFFINITIES_V2.USER_AFFINITIES_V2;
       let num = 0;

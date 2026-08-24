@@ -1,15 +1,15 @@
-// Module ID: 11143
-// Function ID: 11144
-// Dependencies: [676, 7289, 4363, 4364, 4982, 2]
+// Module ID: 11182
+// Function ID: 11183
+// Dependencies: [676, 7327, 4367, 4368, 4987, 2]
 
-// Module 11143
-import ME from "ME";
-import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
+// Module 11182
+import set from "set" /* 2 */;
+import GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 7327 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let obj1;
 ({ InviteStates: obj1, MessageEmbedTypes: c3 } = ME);
-const result = require("CodedLinkType").fileFinishedImporting("utils/native/MessagesUtils.tsx");
+const GuildTemplateStates = GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD.GuildTemplateStates;
+const result = set.fileFinishedImporting("utils/native/MessagesUtils.tsx");
 
 export default {
   messageAuthorActivitiesChanged(activity, props, props2) {
@@ -23,16 +23,14 @@ export default {
     return tmp;
   },
   codedLinksChanged(codedLinks, addResult, props) {
-    let closure_0 = addResult;
-    let closure_1 = props;
+    closure_0 = addResult;
+    closure_1 = props;
     let tmp = 0 !== codedLinks.codedLinks.length;
     if (tmp) {
       let someResult = addResult.invites !== props.invites || addResult.appDirectoryEmbedApplications !== props.appDirectoryEmbedApplications || addResult.invalidAppDirectoryEmbedApplicationIds !== props.invalidAppDirectoryEmbedApplicationIds || addResult.invalidApplicationIds !== props.invalidApplicationIds || addResult.appDirectoryEmbedApplicationFetchStates !== props.appDirectoryEmbedApplicationFetchStates || addResult.guildTemplates !== props.guildTemplates || addResult.buildOverrides !== props.buildOverrides || addResult.activityParticipants !== props.activityParticipants || addResult.quests !== props.quests || addResult.isFetchingCurrentQuests !== props.isFetchingCurrentQuests || addResult.applicationAssetFetchingIds !== props.applicationAssetFetchingIds || addResult.experimentEmbeds !== props.experimentEmbeds;
       if (someResult) {
         codedLinks = codedLinks.codedLinks;
         someResult = codedLinks.some((arg0) => {
-          let code;
-          let type;
           ({ type, code } = arg0);
           if (addResult(props[2]).CodedLinkType.BUILD_OVERRIDE !== type) {
             if (tmp(tmp2[2]).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
@@ -112,7 +110,7 @@ export default {
                   if (value != null) {
                     state2 = value.state;
                   }
-                  tmp43 = state2 !== outer1_2.RESOLVING;
+                  tmp43 = state2 !== closure_1_2.RESOLVING;
                 }
                 if (!tmp43) {
                   tmp43 = addResult.applicationAssetFetchingIds !== props.applicationAssetFetchingIds;
@@ -137,7 +135,7 @@ export default {
                   if (value2 != null) {
                     state5 = value2.state;
                   }
-                  tmp33 = state5 !== outer1_4.RESOLVING;
+                  tmp33 = state5 !== closure_1_4.RESOLVING;
                 }
                 return tmp33;
               } else {
@@ -178,7 +176,7 @@ export default {
                           if (value4 != null) {
                             state8 = value4.state;
                           }
-                          tmp16 = state8 !== outer1_2.RESOLVING;
+                          tmp16 = state8 !== closure_1_2.RESOLVING;
                         }
                         tmp12 = tmp16;
                       }
@@ -241,8 +239,8 @@ export default {
     return tmp;
   },
   giftCodesChanged(giftCodes, addResult, props) {
-    let closure_0 = addResult;
-    let closure_1 = props;
+    closure_0 = addResult;
+    closure_1 = props;
     let someResult = 0 !== giftCodes.giftCodes.length;
     if (someResult) {
       giftCodes = giftCodes.giftCodes;
@@ -264,8 +262,8 @@ export default {
     return someResult;
   },
   mediaPostPreviewEmbedsChanged(embeds, addResult, props) {
-    let closure_0 = addResult;
-    let closure_1 = props;
+    closure_0 = addResult;
+    closure_1 = props;
     embeds = embeds.embeds;
     const found = embeds.filter((type) => type.type === constants.POST_PREVIEW);
     return 0 !== found.length && found.some((url) => {

@@ -1,27 +1,27 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15431
+// Function ID: 15432
 // Name: useIsGameCommunityServerPreview
-// Dependencies: [4022, 676, 589, 2]
+// Dependencies: [4025, 676, 589, 2]
 // Exports: default, isGameCommunityServerPreview
 
-// Module 15367 (useIsGameCommunityServerPreview)
-import initialize from "initialize";
-import { JoinGuildSources } from "ME";
+// Module 15431 (useIsGameCommunityServerPreview)
+import closure_2 from "initialize" /* 4025 */;
+import { JoinGuildSources } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/lurker_mode/native/useIsGameCommunityServerPreview.tsx");
+const result = require("set").fileFinishedImporting("modules/lurker_mode/native/useIsGameCommunityServerPreview.tsx");
 
 export default function useIsGameCommunityServerPreview(arg0) {
   const _require = arg0;
-  const items = [initialize];
+  const items = [closure_2];
   const items1 = [arg0];
   return _require(589).useStateFromStores(items, () => {
-    const lurkingSourceForGuild = outer1_2.getLurkingSourceForGuild(closure_0);
+    const lurkingSourceForGuild = closure_1_2.getLurkingSourceForGuild(closure_0);
     let type;
     if (lurkingSourceForGuild != null) {
       type = lurkingSourceForGuild.type;
     }
-    return type === outer1_3.GAME_COMMUNITY_UPSELL;
+    return type === closure_1_3.GAME_COMMUNITY_UPSELL;
   }, items1);
 };
 export const isGameCommunityServerPreview = function isGameCommunityServerPreview(id) {

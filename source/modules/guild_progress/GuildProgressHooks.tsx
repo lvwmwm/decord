@@ -1,52 +1,47 @@
-// Module ID: 11641
-// Function ID: 11642
+// Module ID: 11690
+// Function ID: 11691
 // Name: usePermissions
-// Dependencies: [19, 1218, 1391, 1980, 4295, 1910, 11642, 4994, 4021, 676, 589, 8802, 11, 12, 5385, 2]
+// Dependencies: [19, 1218, 1391, 1981, 4299, 1910, 11691, 4999, 4024, 676, 589, 8839, 11, 12, 5390, 2]
 // Exports: useChannelsMessaged, useCompletedStates, useGuildChannelCreated, useGuildMessaged, useGuildPersonalized, useGuildPopulated, usePermissions
 
-// Module 11641 (usePermissions)
-import noop from "noop";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import comparator from "comparator";
-import closure_8 from "comparator";
-import handleInviteData from "handleInviteData";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import handlePopAllLayers from "handlePopAllLayers";
-import reinjectEphemerals from "reinjectEphemerals";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import ME from "ME";
+// Module 11690 (usePermissions)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import comparator from "comparator" /* 1981 */;
+import closure_8 from "comparator" /* 1981 */;
+import closure_9 from "handleInviteData" /* 4299 */;
+import closure_10 from "createGuildRecordFromRust" /* 1910 */;
+import closure_11 from "handlePopAllLayers" /* 11691 */;
+import closure_12 from "reinjectEphemerals" /* 4999 */;
+import closure_13 from "getUncachedChannelPermissions" /* 4024 */;
+import ME from "ME" /* 676 */;
 
-let closure_14;
-let closure_15;
-let closure_6;
-let error;
 const require = arg1;
 ({ GUILD_SELECTABLE_CHANNELS_KEY: closure_6, GUILD_VOCAL_CHANNELS_KEY: error } = comparator);
 ({ Permissions: closure_14, MessageTypes: closure_15 } = ME);
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/guild_progress/GuildProgressHooks.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_progress/GuildProgressHooks.tsx");
 
 export const usePermissions = function usePermissions(channel, guild) {
   const _require = channel;
-  let closure_1 = guild;
-  const items = [getUncachedChannelPermissions];
+  closure_1 = guild;
+  const items = [closure_13];
   const items1 = [guild, channel];
   return _require(589).useStateFromStoresObject(items, () => {
-    const obj = { canInvite: null, canManageGuild: null, canMessage: null, canCreateChannel: null };
-    obj[0] = channel(outer1_2[11]).canViewInviteModal(outer1_13, closure_1, channel);
+    const obj = { canInvite: channel(closure_1_2[11]).canViewInviteModal(closure_1_13, closure_1, channel), canManageGuild: null, canMessage: null, canCreateChannel: null };
     let canResult = null != closure_1;
     if (canResult) {
-      canResult = obj3.can(outer1_14.MANAGE_GUILD, tmp);
+      canResult = obj3.can(closure_1_14.MANAGE_GUILD, tmp);
     }
     obj[1] = canResult;
     let canResult1 = null != tmp2;
     if (canResult1) {
-      canResult1 = obj3.can(outer1_14.SEND_MESSAGES, tmp2);
+      canResult1 = obj3.can(closure_1_14.SEND_MESSAGES, tmp2);
     }
     obj[2] = canResult1;
     let canResult2 = null != tmp;
     if (canResult2) {
-      canResult2 = obj3.can(outer1_14.MANAGE_CHANNELS, tmp);
+      canResult2 = obj3.can(closure_1_14.MANAGE_CHANNELS, tmp);
     }
     obj[3] = canResult2;
     return obj;
@@ -64,32 +59,32 @@ export const useGuildChannelCreated = function useGuildChannelCreated(arg0) {
     function hasNewChannel(channel) {
       let tmp2 = null != closure_0;
       if (tmp2) {
-        const obj = outer1_1(outer1_2[12]);
-        const extractTimestampResult = outer1_1(outer1_2[12]).extractTimestamp(channel.channel.id);
-        tmp2 = extractTimestampResult - outer1_1(outer1_2[12]).extractTimestamp(tmp.id) > 500;
-        const obj2 = outer1_1(outer1_2[12]);
+        const obj = closure_1_1(closure_1_2[12]);
+        const extractTimestampResult = closure_1_1(closure_1_2[12]).extractTimestamp(channel.channel.id);
+        tmp2 = extractTimestampResult - closure_1_1(closure_1_2[12]).extractTimestamp(tmp.id) > 500;
+        const obj2 = closure_1_1(closure_1_2[12]);
       }
       return tmp2;
     }
-    const channels = outer1_8.getChannels(id);
-    return channels[outer1_6].some(hasNewChannel) || channels[outer1_7].some(hasNewChannel);
+    const channels = closure_1_8.getChannels(id);
+    return channels[closure_1_6].some(hasNewChannel) || channels[closure_1_7].some(hasNewChannel);
   }, items1);
 };
 export const useGuildPopulated = function useGuildPopulated(guild) {
   const _require = guild;
-  const items = [ensureGuildLoaded];
-  let closure_1 = _require(stateFromStoresArray[10]).useStateFromStores(items, () => {
+  const items = [closure_5];
+  closure_1 = _require(stateFromStoresArray[10]).useStateFromStores(items, () => {
     let systemChannelId;
     if (guild != null) {
       systemChannelId = guild.systemChannelId;
     }
-    return outer1_5.getChannel(systemChannelId);
+    return closure_1_5.getChannel(systemChannelId);
   });
   const obj = _require(stateFromStoresArray[10]);
-  const items1 = [reinjectEphemerals];
+  const items1 = [closure_12];
   stateFromStoresArray = _require(stateFromStoresArray[10]).useStateFromStoresArray(items1, () => {
     if (null != closure_1) {
-      const messages = outer1_12.getMessages(tmp.id);
+      const messages = closure_1_12.getMessages(tmp.id);
       let toArrayResult = messages.toArray();
     } else {
       toArrayResult = [];
@@ -97,14 +92,14 @@ export const useGuildPopulated = function useGuildPopulated(guild) {
     return toArrayResult;
   });
   const obj2 = _require(stateFromStoresArray[10]);
-  const items2 = [handleInviteData];
+  const items2 = [closure_9];
   const items3 = [guild, stateFromStoresArray];
   return _require(stateFromStoresArray[10]).useStateFromStores(items2, () => {
     let id;
     if (guild != null) {
       id = guild.id;
     }
-    let num = outer1_9.getMemberCount(id);
+    let num = closure_1_9.getMemberCount(id);
     if (num == null) {
       num = 0;
     }
@@ -113,16 +108,16 @@ export const useGuildPopulated = function useGuildPopulated(guild) {
 };
 export const useGuildPersonalized = function useGuildPersonalized(guild) {
   const _require = guild;
-  const items = [handlePopAllLayers];
-  const stateFromStores = _require(589).useStateFromStores(items, () => handlePopAllLayers.hasLayers());
+  const items = [closure_11];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_11.hasLayers());
   const obj = _require(589);
-  const items1 = [createGuildRecordFromRust];
+  const items1 = [closure_10];
   const stateFromStores1 = _require(589).useStateFromStores(items1, () => {
     let id;
     if (guild != null) {
       id = guild.id;
     }
-    return outer1_10.getGuild(id);
+    return closure_1_10.getGuild(id);
   });
   let icon;
   if (stateFromStores1 != null) {
@@ -132,17 +127,17 @@ export const useGuildPersonalized = function useGuildPersonalized(guild) {
 };
 export const useChannelsMessaged = function useChannelsMessaged(items3) {
   const _require = items3;
-  const items = [fetchFingerprint];
-  let closure_1 = _require(589).useStateFromStores(items, () => id.getId());
+  const items = [closure_4];
+  closure_1 = _require(589).useStateFromStores(items, () => id.getId());
   const obj = _require(589);
-  const items1 = [reinjectEphemerals];
+  const items1 = [closure_12];
   return _require(589).useStateFromStores(items1, () => callback(stateFromStoresArray[13]).some(closure_0, (id) => {
-    const messages = outer1_12.getMessages(id.id);
+    const messages = closure_1_12.getMessages(id.id);
     const toArrayResult = messages.toArray();
-    return outer1_1(outer1_2[13]).some(toArrayResult, (author) => {
+    return closure_1_1(closure_1_2[13]).some(toArrayResult, (author) => {
       let tmp = author.author.id === closure_1;
       if (tmp) {
-        tmp = !outer1_1(outer1_2[14])(author);
+        tmp = !closure_1_1(closure_1_2[14])(author);
       }
       return tmp;
     });
@@ -150,15 +145,15 @@ export const useChannelsMessaged = function useChannelsMessaged(items3) {
 };
 export const useGuildMessaged = function useGuildMessaged(arg0) {
   let _require = arg0;
-  const items = [ensureGuildLoaded];
+  const items = [closure_5];
   const stateFromStores = _require(589).useStateFromStores(items, () => {
     let mutableBasicGuildChannelsForGuild = null;
     if (null != closure_0) {
-      mutableBasicGuildChannelsForGuild = outer1_5.getMutableBasicGuildChannelsForGuild(tmp.id);
+      mutableBasicGuildChannelsForGuild = closure_1_5.getMutableBasicGuildChannelsForGuild(tmp.id);
     }
     return mutableBasicGuildChannelsForGuild;
   });
-  let closure_1 = stateFromStores;
+  closure_1 = stateFromStores;
   const items1 = [stateFromStores];
   _require = React.useMemo(() => {
     if (null == callback) {
@@ -171,17 +166,17 @@ export const useGuildMessaged = function useGuildMessaged(arg0) {
   }, items1);
   closure_1 = undefined;
   const obj = _require(589);
-  const items2 = [fetchFingerprint];
+  const items2 = [closure_4];
   closure_1 = _require(589).useStateFromStores(items2, () => id.getId());
   const obj2 = _require(589);
-  const items3 = [reinjectEphemerals];
+  const items3 = [closure_12];
   return _require(589).useStateFromStores(items3, () => callback(stateFromStoresArray[13]).some(closure_0, (id) => {
-    const messages = outer1_12.getMessages(id.id);
+    const messages = closure_1_12.getMessages(id.id);
     const toArrayResult = messages.toArray();
-    return outer1_1(outer1_2[13]).some(toArrayResult, (author) => {
+    return closure_1_1(closure_1_2[13]).some(toArrayResult, (author) => {
       let tmp = author.author.id === closure_1;
       if (tmp) {
-        tmp = !outer1_1(outer1_2[14])(author);
+        tmp = !closure_1_1(closure_1_2[14])(author);
       }
       return tmp;
     });
@@ -190,21 +185,21 @@ export const useGuildMessaged = function useGuildMessaged(arg0) {
 export const useCompletedStates = function useCompletedStates(guild) {
   let obj = { guildPopulated: null, guildMessaged: null, guildPersonalized: null, guildChannelCreated: null };
   let _require = guild;
-  let items = [ensureGuildLoaded];
-  let closure_1 = _require(stateFromStoresArray[10]).useStateFromStores(items, () => {
+  let items = [closure_5];
+  closure_1 = _require(stateFromStoresArray[10]).useStateFromStores(items, () => {
     let systemChannelId;
     if (guild != null) {
       systemChannelId = guild.systemChannelId;
     }
-    return outer1_5.getChannel(systemChannelId);
+    return closure_1_5.getChannel(systemChannelId);
   });
   let obj2 = _require(stateFromStoresArray[10]);
   let tmp = _require;
   let tmp2 = stateFromStoresArray;
-  const items1 = [reinjectEphemerals];
+  const items1 = [closure_12];
   stateFromStoresArray = _require(stateFromStoresArray[10]).useStateFromStoresArray(items1, () => {
     if (null != closure_1) {
-      const messages = outer1_12.getMessages(tmp.id);
+      const messages = closure_1_12.getMessages(tmp.id);
       let toArrayResult = messages.toArray();
     } else {
       toArrayResult = [];
@@ -212,14 +207,14 @@ export const useCompletedStates = function useCompletedStates(guild) {
     return toArrayResult;
   });
   const obj3 = _require(stateFromStoresArray[10]);
-  const items2 = [handleInviteData];
+  const items2 = [closure_9];
   const items3 = [guild, stateFromStoresArray];
   obj[0] = _require(stateFromStoresArray[10]).useStateFromStores(items2, () => {
     let id;
     if (guild != null) {
       id = guild.id;
     }
-    let num = outer1_9.getMemberCount(id);
+    let num = closure_1_9.getMemberCount(id);
     if (num == null) {
       num = 0;
     }
@@ -228,11 +223,11 @@ export const useCompletedStates = function useCompletedStates(guild) {
   _require = guild;
   closure_1 = undefined;
   const obj4 = _require(stateFromStoresArray[10]);
-  const items4 = [ensureGuildLoaded];
+  const items4 = [closure_5];
   const stateFromStores = _require(stateFromStoresArray[10]).useStateFromStores(items4, () => {
     let mutableBasicGuildChannelsForGuild = null;
     if (null != closure_0) {
-      mutableBasicGuildChannelsForGuild = outer1_5.getMutableBasicGuildChannelsForGuild(tmp.id);
+      mutableBasicGuildChannelsForGuild = closure_1_5.getMutableBasicGuildChannelsForGuild(tmp.id);
     }
     return mutableBasicGuildChannelsForGuild;
   });
@@ -249,33 +244,33 @@ export const useCompletedStates = function useCompletedStates(guild) {
   }, items5);
   closure_1 = undefined;
   const obj5 = _require(stateFromStoresArray[10]);
-  const items6 = [fetchFingerprint];
+  const items6 = [closure_4];
   closure_1 = _require(stateFromStoresArray[10]).useStateFromStores(items6, () => id.getId());
   const obj6 = _require(stateFromStoresArray[10]);
-  const items7 = [reinjectEphemerals];
+  const items7 = [closure_12];
   obj[1] = _require(stateFromStoresArray[10]).useStateFromStores(items7, () => callback(stateFromStoresArray[13]).some(closure_0, (id) => {
-    const messages = outer1_12.getMessages(id.id);
+    const messages = closure_1_12.getMessages(id.id);
     const toArrayResult = messages.toArray();
-    return outer1_1(outer1_2[13]).some(toArrayResult, (author) => {
+    return closure_1_1(closure_1_2[13]).some(toArrayResult, (author) => {
       let tmp = author.author.id === closure_1;
       if (tmp) {
-        tmp = !outer1_1(outer1_2[14])(author);
+        tmp = !closure_1_1(closure_1_2[14])(author);
       }
       return tmp;
     });
   }));
   _require = guild;
   const obj7 = _require(stateFromStoresArray[10]);
-  const items8 = [handlePopAllLayers];
-  const stateFromStores1 = _require(stateFromStoresArray[10]).useStateFromStores(items8, () => handlePopAllLayers.hasLayers());
+  const items8 = [closure_11];
+  const stateFromStores1 = _require(stateFromStoresArray[10]).useStateFromStores(items8, () => closure_11.hasLayers());
   const obj8 = _require(stateFromStoresArray[10]);
-  const items9 = [createGuildRecordFromRust];
+  const items9 = [closure_10];
   const stateFromStores2 = _require(stateFromStoresArray[10]).useStateFromStores(items9, () => {
     let id;
     if (guild != null) {
       id = guild.id;
     }
-    return outer1_10.getGuild(id);
+    return closure_1_10.getGuild(id);
   });
   let icon;
   if (stateFromStores2 != null) {
@@ -294,15 +289,15 @@ export const useCompletedStates = function useCompletedStates(guild) {
     function hasNewChannel(channel) {
       let tmp2 = null != closure_0;
       if (tmp2) {
-        const obj = outer1_1(outer1_2[12]);
-        const extractTimestampResult = outer1_1(outer1_2[12]).extractTimestamp(channel.channel.id);
-        tmp2 = extractTimestampResult - outer1_1(outer1_2[12]).extractTimestamp(tmp.id) > 500;
-        const obj2 = outer1_1(outer1_2[12]);
+        const obj = closure_1_1(closure_1_2[12]);
+        const extractTimestampResult = closure_1_1(closure_1_2[12]).extractTimestamp(channel.channel.id);
+        tmp2 = extractTimestampResult - closure_1_1(closure_1_2[12]).extractTimestamp(tmp.id) > 500;
+        const obj2 = closure_1_1(closure_1_2[12]);
       }
       return tmp2;
     }
-    const channels = outer1_8.getChannels(id);
-    return channels[outer1_6].some(hasNewChannel) || channels[outer1_7].some(hasNewChannel);
+    const channels = closure_1_8.getChannels(id);
+    return channels[closure_1_6].some(hasNewChannel) || channels[closure_1_7].some(hasNewChannel);
   }, items11);
   return obj;
 };

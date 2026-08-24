@@ -1,22 +1,22 @@
-// Module ID: 15165
-// Function ID: 15166
+// Module ID: 15229
+// Function ID: 15230
 // Name: StringSelectActionComponent
-// Dependencies: [19, 21, 4805, 8326, 38, 1954, 15166, 4342, 11000, 2007, 2]
+// Dependencies: [19, 21, 4810, 8365, 38, 1954, 15230, 4346, 11039, 2008, 2]
 // Exports: default
 
-// Module 15165 (StringSelectActionComponent)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 15229 (StringSelectActionComponent)
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("flattenComponents").fileFinishedImporting("modules/interaction_components/native/actions/StringSelectActionComponent.tsx");
+const result = require("set").fileFinishedImporting("modules/interaction_components/native/actions/StringSelectActionComponent.tsx");
 
 export default function StringSelectActionComponent(type) {
   const _require = type;
   type = type.type;
   const options = type.options;
   let obj = _require(options[2]);
-  let obj1 = componentStateContext;
+  obj1 = componentStateContext;
   const items = [options];
   const selectPlaceholder = obj.getSelectPlaceholder(type);
   const memo = componentStateContext.useMemo(() => {
@@ -45,12 +45,12 @@ export default function StringSelectActionComponent(type) {
   const items1 = [options, type, state];
   const customId = componentStateContext.modal.customId;
   const memo1 = obj1.useMemo(() => {
-    let type;
+    type = undefined;
     if (state != null) {
       type = tmp.type;
     }
     const mapped = type === type ? state.values : [].map((arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return closure_2.findIndex((value) => value.value === closure_0);
     });
     return mapped.filter((arg0) => -1 !== arg0);
@@ -68,7 +68,7 @@ export default function StringSelectActionComponent(type) {
   if (type === tmp(options[5]).ComponentType.LABEL) {
     tmp14 = first;
   }
-  let closure_7 = tmp14;
+  first = tmp14;
   obj = { model: null, onTap: null };
   obj1 = {};
   const tmp5 = type(options[4]);
@@ -79,7 +79,7 @@ export default function StringSelectActionComponent(type) {
   obj[0] = obj1;
   obj[1] = function onTap() {
     let obj = type(options[7]);
-    obj = { selectionActionComponent: type, labelComponent: closure_7, channelId: componentStateContext.channelId, containerId: customId, onSubmit: executeStateUpdate, allowEmpty: null };
+    obj = { selectionActionComponent: type, labelComponent: first, channelId: componentStateContext.channelId, containerId: customId, onSubmit: executeStateUpdate, allowEmpty: null };
     const combined = "StringSelectComponentActionSheet:" + customId;
     const tmp = type(options[9])(options[8], options.paths);
     obj[5] = type(options[2]).canSelectBeEmpty(type, "modal");

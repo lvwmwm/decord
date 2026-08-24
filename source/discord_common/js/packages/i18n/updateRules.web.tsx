@@ -1,20 +1,22 @@
-// Module ID: 16490
-// Function ID: 16491
+// Module ID: 16585
+// Function ID: 16586
 // Name: updateRules
-// Dependencies: [19, 21, 4092, 2]
+// Dependencies: [19, 21, 4095, 2]
 // Exports: default
 
-// Module 16490 (updateRules)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 16585 (updateRules)
+import noopAll from "noop" /* 19 */;
+import t from "t" /* 4095 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("t").fileFinishedImporting("../discord_common/js/packages/i18n/updateRules.web.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/i18n/updateRules.web.tsx");
 
 export default function updateRules(paragraph) {
-  paragraph.heading = require(4092) /* t */.defaultRules.heading;
-  paragraph.lheading = require(4092) /* t */.defaultRules.lheading;
-  paragraph.list = require(4092) /* t */.defaultRules.list;
+  paragraph.heading = t.defaultRules.heading;
+  paragraph.lheading = t.defaultRules.lheading;
+  paragraph.list = t.defaultRules.list;
   let obj = {};
   let merged = Object.assign(paragraph.paragraph);
   obj.react = function react(content, arg1, key) {

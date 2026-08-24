@@ -1,14 +1,15 @@
-// Module ID: 13115
-// Function ID: 13116
+// Module ID: 13171
+// Function ID: 13172
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 13115 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 13171 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { minCaptureWidth: 130, minCaptureHeight: 130 };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-06-upscale-small-captured-frames", kind: "user", defaultConfig: { minCaptureWidth: 0, minCaptureHeight: 0 }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/media_engine/UpscaleSmallCapturedFramesExperiment.tsx");
+const result = set.fileFinishedImporting("modules/media_engine/UpscaleSmallCapturedFramesExperiment.tsx");
 
 export const UpscaleSmallCapturedFramesExperiment = apexExperiment;

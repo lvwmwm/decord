@@ -1,20 +1,23 @@
-// Module ID: 16203
-// Function ID: 16204
+// Module ID: 16300
+// Function ID: 16301
 // Name: renderChannelBadge
-// Dependencies: [19, 21, 1297, 11463, 4734, 1236, 1898, 2]
+// Dependencies: [19, 21, 1297, 11512, 4739, 1236, 1898, 2]
 // Exports: default
 
-// Module 16203 (renderChannelBadge)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 16300 (renderChannelBadge)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import shortenAndLocalizeNumber from "shortenAndLocalizeNumber" /* 1898 */;
+import Text from "Text" /* 4739 */;
+import NewBadgeDefault from "NewBadge" /* 11512 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Button").fileFinishedImporting("modules/launchpad/native/shared/renderChannelBadge.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/renderChannelBadge.tsx");
 
 export default function renderChannelBadge(newChannel) {
-  let eventsMentionCount;
-  let newPostCount;
-  let postsWithUnreadsCount;
   let flag = newChannel.newChannel;
   if (flag === undefined) {
     flag = false;
@@ -29,29 +32,29 @@ export default function renderChannelBadge(newChannel) {
       let obj = { value: null, isMentionLowImportance: null };
       obj[0] = num;
       obj[1] = tmp;
-      let tmp2 = jsx(require(1297) /* Button */.Badge, { value: null, isMentionLowImportance: null });
+      let tmp2 = jsx(Button.Badge, { value: null, isMentionLowImportance: null });
     }
     return tmp2;
   }
   if (flag) {
-    tmp2 = jsx(importDefault(11463), {});
+    tmp2 = jsx(NewBadgeDefault, {});
   } else {
     if (null != newPostCount) {
       if (newPostCount > 0) {
         obj = { variant: "text-xs/bold", color: "text-brand", children: null };
-        const intl = require(1236) /* getSystemLocale */.intl;
-        const obj1 = { count: null };
-        obj1[0] = require(1898) /* shortenAndLocalizeNumber */.humanizeValue(newPostCount, newChannel.locale);
-        obj[2] = intl.format(require(1236) /* getSystemLocale */.t.GkAbqY, obj1);
-        tmp2 = jsx(require(4734) /* Text */.Text, { variant: "text-xs/bold", color: "text-brand", children: null });
-        const obj5 = require(1898) /* shortenAndLocalizeNumber */;
+        const intl = getSystemLocale.intl;
+        obj1 = { count: null };
+        obj1[0] = shortenAndLocalizeNumber.humanizeValue(newPostCount, newChannel.locale);
+        obj[2] = intl.format(getSystemLocale.t.GkAbqY, obj1);
+        tmp2 = jsx(Text.Text, { variant: "text-xs/bold", color: "text-brand", children: null });
+        const obj5 = shortenAndLocalizeNumber;
       }
     }
     if (null != postsWithUnreadsCount) {
       if (postsWithUnreadsCount > 0) {
         const obj2 = { variant: "text-xs/bold", color: "text-muted", children: null };
         obj2[2] = postsWithUnreadsCount;
-        tmp2 = jsx(require(4734) /* Text */.Text, { variant: "text-xs/bold", color: "text-muted", children: null });
+        tmp2 = jsx(Text.Text, { variant: "text-xs/bold", color: "text-muted", children: null });
       }
     }
     tmp2 = null;
@@ -60,7 +63,7 @@ export default function renderChannelBadge(newChannel) {
       if (eventsMentionCount > 0) {
         obj = { value: null, eventsMentionBadge: true };
         obj[0] = eventsMentionCount;
-        tmp2 = jsx(require(1297) /* Button */.Badge, { value: null, eventsMentionBadge: true });
+        tmp2 = jsx(Button.Badge, { value: null, eventsMentionBadge: true });
       }
     }
   }

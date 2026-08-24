@@ -1,25 +1,22 @@
-// Module ID: 16975
-// Function ID: 16976
+// Module ID: 17068
+// Function ID: 17069
 // Name: FormChannelPicker
-// Dependencies: [19, 1391, 21, 4661, 13358, 589, 4984, 8910, 4342, 16976, 2007, 6832, 6876, 4734, 1236, 1297, 11640, 2]
+// Dependencies: [19, 1391, 21, 4668, 13416, 589, 4989, 8947, 4346, 17069, 2008, 6870, 6914, 4739, 1236, 1297, 11689, 2]
 // Exports: default
 
-// Module 16975 (FormChannelPicker)
-import "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 17068 (FormChannelPicker)
+import noopAll from "noop" /* 19 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ container: { alignItems: "center", flexDirection: "row" }, content: { marginStart: 8, flexGrow: 1 } });
-const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormChannelPicker.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormChannelPicker.tsx");
 
 export default function FormChannelPicker(channelId) {
-  let importDefault;
-  let onChange;
   channelId = channelId.channelId;
   ({ guildId: importDefault, onChange } = channelId);
   let stateFromStores;
@@ -39,7 +36,7 @@ export default function FormChannelPicker(channelId) {
     style: items2,
     accessibilityRole: "link",
     onPress() {
-      let obj = outer1_1(stateFromStores[8]);
+      let obj = closure_1_1(stateFromStores[8]);
       obj = { guildId: closure_1, selectedChannelId: null, onChannelSelected: null };
       let id;
       if (stateFromStores != null) {
@@ -76,10 +73,8 @@ export default function FormChannelPicker(channelId) {
   }
   obj[3] = stringResult;
   items3[1] = callback(channelId(stateFromStores[13]).Text, obj);
-  const obj1 = { size: null, source: null };
-  obj1[0] = channelId(stateFromStores[15]).Icon.Sizes.MEDIUM;
-  obj1[1] = importDefault(stateFromStores[16]);
-  items3[2] = callback(channelId(stateFromStores[15]).Icon, obj1);
+  const tmpResult = importDefault(stateFromStores[7]);
+  items3[2] = callback(channelId(stateFromStores[15]).Icon, { size: channelId(stateFromStores[15]).Icon.Sizes.MEDIUM, source: importDefault(stateFromStores[16]) });
   obj[3] = items3;
-  return tmp8(importDefault(stateFromStores[7]), obj);
+  return tmp8(tmpResult, obj);
 };

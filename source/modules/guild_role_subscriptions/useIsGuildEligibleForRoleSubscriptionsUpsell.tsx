@@ -1,30 +1,33 @@
-// Module ID: 15515
-// Function ID: 15516
+// Module ID: 15580
+// Function ID: 15581
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
-// Dependencies: [1434, 1910, 1922, 676, 589, 7227, 2]
+// Dependencies: [1434, 1910, 1922, 676, 589, 7265, 2]
 // Exports: default
 
-// Module 15515 (useIsGuildEligibleForRoleSubscriptionsUpsell)
-import { isGuildOwner } from "GuildNSFWContentLevel";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { GuildFeatures } from "ME";
+// Module 15580 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_role_subscriptions/useIsGuildEligibleForRoleSubscriptionsUpsell.tsx");
+const isGuildOwner = GuildNSFWContentLevel.isGuildOwner;
+const GuildFeatures = ME.GuildFeatures;
+const result = set.fileFinishedImporting("modules/guild_role_subscriptions/useIsGuildEligibleForRoleSubscriptionsUpsell.tsx");
 
 export default function useIsGuildEligibleForRoleSubscriptionsUpsell(arg0) {
   const _require = arg0;
-  const items = [createGuildRecordFromRust];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_3.getGuild(closure_0));
+  const items = [closure_3];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_3.getGuild(closure_0));
   _require(589);
-  [][0] = mergeGuildAvatar;
+  [][0] = closure_4;
   let tmp6 = null != stateFromStores;
   if (tmp6) {
     tmp6 = isGuildOwner(stateFromStores, tmp5);
   }
   const obj = _require(589);
   const tmp = _require;
-  const isUserInCreatorMonetizationEligibleCountry = _require(7227).useIsUserInCreatorMonetizationEligibleCountry();
+  const isUserInCreatorMonetizationEligibleCountry = _require(7265).useIsUserInCreatorMonetizationEligibleCountry();
   if (tmp6) {
     let flag;
     if (stateFromStores != null) {

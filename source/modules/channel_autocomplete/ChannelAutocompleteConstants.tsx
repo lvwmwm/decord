@@ -1,14 +1,16 @@
-// Module ID: 6810
-// Function ID: 6811
+// Module ID: 6847
+// Function ID: 6848
 // Name: regExp
 // Dependencies: [2]
 // Exports: extractGameMentionIds, formatGameMentionRaw, formatGameMentionToken
 
-// Module 6810 (regExp)
+// Module 6847 (regExp)
+import set from "set" /* 2 */;
+
 let closure_0 = [];
 const tmp2 = /^<@\$(\d+)>/;
 const regExp = new RegExp(tmp2.source.replace(/^\^/, ""), "g");
-const result = require("set").fileFinishedImporting("modules/channel_autocomplete/ChannelAutocompleteConstants.tsx");
+const result = set.fileFinishedImporting("modules/channel_autocomplete/ChannelAutocompleteConstants.tsx");
 
 export const MENTION_SENTINEL = "@";
 export const GAME_MENTION_SENTINEL = "$";

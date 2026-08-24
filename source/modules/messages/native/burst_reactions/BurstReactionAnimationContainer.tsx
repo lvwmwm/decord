@@ -1,84 +1,80 @@
-// Module ID: 16128
-// Function ID: 16129
+// Module ID: 16226
+// Function ID: 16227
 // Name: BurstReactionAnimationContainerInner
-// Dependencies: [32, 19, 17, 1388, 21, 4661, 712, 7531, 4343, 4344, 709, 4115, 4664, 10261, 1377, 1297, 7573, 4734, 1236, 4104, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 4668, 712, 7569, 4347, 4348, 709, 4119, 4671, 10300, 1377, 1297, 7611, 4739, 1236, 4107, 2]
 // Exports: default
 
-// Module 16128 (BurstReactionAnimationContainerInner)
-import _slicedToArray from "_slicedToArray";
-import ManaContext from "ManaContext";
-import get_ActivityIndicator from "Text";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16226 (BurstReactionAnimationContainerInner)
+import ThemesDefault from "Themes" /* 712 */;
+import ManaContext from "ManaContext" /* 4107 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c10;
-let c5;
-let c9;
-let closure_6;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function BurstReactionAnimationContainerInner() {
   function handleComponentFinish() {
     if (false === ref.current) {
       dependencyMap(null);
     }
   }
-  const _require = createCacheKey();
+  const _require = callback2();
   const tmp = first1(React.useState(null), 2);
   const first = tmp[0];
-  const dependencyMap = tmp[1];
+  dependencyMap = tmp[1];
   const tmp3 = first1(React.useState(false), 2);
   first1 = tmp3[0];
   React = tmp3[1];
-  let closure_5 = React.useRef(false);
+  closure_5 = React.useRef(false);
   const effect = React.useEffect(() => {
     function handleEffectReceived(channelId) {
       dependencyMap({ channelId: channelId.channelId, emoji: channelId.emoji, messageId: channelId.messageId });
       callback(true);
       closure_5.current = true;
-      const result = handleEffectReceived(outer1_2[8]).triggerHapticFeedback(outer1_1(outer1_2[9]).IMPACT_HEAVY);
+      const result = handleEffectReceived(closure_1_2[8]).triggerHapticFeedback(closure_1_1(closure_1_2[9]).IMPACT_HEAVY);
     }
     const subscription = first(709).subscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
     return () => {
       first(709).unsubscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
     };
   }, []);
-  let obj = _require(4115);
+  let obj = _require(4119);
   let fn = function y() {
     if (null == first) {
       let obj = { opacity: 0 };
     } else {
       obj = { opacity: null };
-      const tmp11 = callback(4664);
+      const tmp11 = callback(4671);
       const withTiming = tmp11.withTiming;
-      const obj1 = { duration: 300 };
+      obj1 = { duration: 300 };
       if (first1) {
         obj[0] = withTiming(1, obj1);
       } else {
         const fn = function n(arg0) {
           if (arg0) {
-            outer1_0(outer1_2[11]).runOnJS(closure_6)();
-            const obj = outer1_0(outer1_2[11]);
+            closure_1_0(closure_1_2[11]).runOnJS(closure_6)();
+            const obj = closure_1_0(closure_1_2[11]);
           }
         };
         obj = { runOnJS: null, handleComponentFinish: null };
-        obj[0] = callback(4115).runOnJS;
+        obj[0] = callback(4119).runOnJS;
         obj[1] = handleComponentFinish;
         fn.__closure = obj;
         fn.__workletHash = 9326347209552;
-        fn.__initData = outer1_13;
+        fn.__initData = closure_1_13;
         obj[0] = withTiming(0, obj1, "respect-motion-settings", fn);
       }
     }
     return obj;
   };
-  obj = { animationData: first, showAnimation: first1, withTiming: _require(4664).withTiming, runOnJS: _require(4115).runOnJS, handleComponentFinish };
+  obj = { animationData: first, showAnimation: first1, withTiming: _require(4671).withTiming, runOnJS: _require(4119).runOnJS, handleComponentFinish };
   fn.__closure = obj;
   fn.__workletHash = 12044515783370;
   fn.__initData = closure_12;
-  let closure_7 = obj.useAnimatedStyle(fn);
+  closure_7 = obj.useAnimatedStyle(fn);
   let tmp8 = null;
   if (null != first) {
     obj = { contentTypes: null, children: null };
@@ -89,15 +85,17 @@ function BurstReactionAnimationContainerInner() {
       let obj = { style: markAsDismissed.fill, children: null };
       obj = { style: items, children: null };
       items = [markAsDismissed.fill, closure_7];
-      obj = { activeOpacity: null, onPress: null, style: null, children: null };
-      obj[0] = callback(7531).BACKDROP_OPACITY;
-      obj[1] = function onPress() {
-        outer1_4(false);
-        outer1_5.current = false;
-        markAsDismissed(constants.UNKNOWN);
+      obj = {
+        activeOpacity: callback(7569).BACKDROP_OPACITY,
+        onPress() {
+          closure_1_4(false);
+          closure_1_5.current = false;
+          markAsDismissed(constants.UNKNOWN);
+        },
+        style: markAsDismissed.fill,
+        children: null
       };
-      obj[2] = markAsDismissed.fill;
-      const items1 = [outer1_8(handleComponentFinish, { style: markAsDismissed.background }), , ];
+      const items1 = [closure_1_8(handleComponentFinish, { style: markAsDismissed.background }), , ];
       const obj2 = { style: markAsDismissed.fill, children: null };
       let tmpResult = null;
       if (first1) {
@@ -109,10 +107,10 @@ function BurstReactionAnimationContainerInner() {
             closure_5.current = false;
           }
         };
-        tmpResult = tmp(first(7573), obj3);
+        tmpResult = tmp(first(7611), obj3);
       }
       obj2[1] = tmpResult;
-      items1[1] = outer1_8(handleComponentFinish, obj2);
+      items1[1] = closure_1_8(handleComponentFinish, obj2);
       let tmp6Result = markAsDismissed.visibleContent === tmp2(1377).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
       if (tmp6Result) {
         const obj4 = { children: null };
@@ -120,30 +118,30 @@ function BurstReactionAnimationContainerInner() {
         obj5[0] = tmp4.dismissTextContainer;
         const intl = tmp2(1236).intl;
         obj5[2] = intl.string(tmp2(1236).t.QpPMih);
-        const items2 = [tmp(tmp2(4734).Text, obj5), ];
+        const items2 = [tmp(tmp2(4739).Text, obj5), ];
         const obj6 = { style: null };
         obj6[0] = tmp4.dismissTextBackground;
         items2[1] = tmp(tmp8, obj6);
         obj4[0] = items2;
-        tmp6Result = tmp6(outer1_9, obj4);
+        tmp6Result = tmp6(closure_1_9, obj4);
       }
       items1[2] = tmp6Result;
       obj[3] = items1;
-      obj[1] = outer1_10(closure_5, obj);
-      obj[1] = outer1_8(first(4115).View, obj);
-      return outer1_8(callback(1297).OverlayView, obj);
+      obj[1] = closure_1_10(closure_5, obj);
+      obj[1] = closure_1_8(first(4119).View, obj);
+      return closure_1_8(callback(1297).OverlayView, obj);
     };
-    tmp8 = callback(first(10261), obj);
-    let tmp11 = first(10261);
+    tmp8 = callback(first(10300), obj);
+    let tmp11 = first(10300);
   }
   return tmp8;
 }
 ({ TouchableOpacity: c5, View: closure_6, StyleSheet } = get_ActivityIndicator);
-({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { background: null, fill: null, dismissTextContainer: null, dismissTextBackground: null };
 createCacheKey = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-createCacheKey.backgroundColor = require("Themes").colors.BLACK;
+createCacheKey.backgroundColor = ThemesDefault.colors.BLACK;
 createCacheKey.opacity = require("_generateAnimationSource").BACKDROP_OPACITY;
 createCacheKey[0] = createCacheKey;
 let obj1 = {};
@@ -153,16 +151,13 @@ obj1.alignItems = "center";
 obj1.justifyContent = "center";
 createCacheKey[1] = obj1;
 createCacheKey[2] = { position: "absolute", bottom: 48, zIndex: 1 };
-createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: require("Themes").radii.round, position: "absolute", bottom: -600, height: 700, width: 700 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+createCacheKey[3] = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: ThemesDefault.radii.round, position: "absolute", bottom: -600, height: 700, width: 700 };
+let closure_11 = createCacheKey.createStyles(createCacheKey);
 let closure_12 = { code: "function BurstReactionAnimationContainerTsx1(){const{animationData,showAnimation,withTiming,runOnJS,handleComponentFinish}=this.__closure;if(animationData==null){return{opacity:0};}if(!showAnimation){return{opacity:withTiming(0,{duration:300},'respect-motion-settings',function(finished){if(finished)runOnJS(handleComponentFinish)();})};}return{opacity:withTiming(1,{duration:300})};}" };
 let closure_13 = { code: "function BurstReactionAnimationContainerTsx2(finished){const{runOnJS,handleComponentFinish}=this.__closure;if(finished)runOnJS(handleComponentFinish)();}" };
-let obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: require("Themes").radii.round, position: "absolute", bottom: -600, height: 700, width: 700 };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimationContainer.tsx");
+let obj2 = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: ThemesDefault.radii.round, position: "absolute", bottom: -600, height: 700, width: 700 };
+let result = require("set").fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimationContainer.tsx");
 
 export default function BurstReactionAnimationContainer() {
-  const obj = { theme: null, children: null };
-  obj[0] = importDefault(712).themes.DARKER;
-  obj[1] = callback(BurstReactionAnimationContainerInner, {});
-  return callback(require(4104) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(ManaContext.ThemeContextProvider, { theme: ThemesDefault.themes.DARKER, children: callback(BurstReactionAnimationContainerInner, {}) });
 };

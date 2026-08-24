@@ -1,32 +1,36 @@
-// Module ID: 17115
-// Function ID: 17116
-// Dependencies: [17, 4827, 1236, 2]
+// Module ID: 17209
+// Function ID: 17210
+// Dependencies: [17, 4832, 1236, 2]
 
-// Module 17115
-import { NativeModules } from "get ActivityIndicator";
+// Module 17209
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import setDefault from "set" /* 4832 */;
 
+const NativeModules = get_ActivityIndicator.NativeModules;
 let c4 = false;
-const result = require("getSystemLocale").fileFinishedImporting("actions/native/BundleUpdaterActionCreators.tsx");
+const result = set.fileFinishedImporting("actions/native/BundleUpdaterActionCreators.tsx");
 
 export default {
   prepareUpdate(versionRequired) {
     if (versionRequired) {
-      let obj = importDefault(4827);
+      let obj = setDefault;
       obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
-      const intl = require(1236) /* getSystemLocale */.intl;
-      obj[0] = intl.string(require(1236) /* getSystemLocale */.t.GQZdmI);
-      const intl2 = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.Fizu9y);
-      const intl3 = require(1236) /* getSystemLocale */.intl;
-      obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.UefCDS);
-      const intl4 = require(1236) /* getSystemLocale */.intl;
-      obj[3] = intl4.string(require(1236) /* getSystemLocale */.t["1SzcG6"]);
+      const intl = getSystemLocale.intl;
+      obj[0] = intl.string(getSystemLocale.t.GQZdmI);
+      const intl2 = getSystemLocale.intl;
+      obj[1] = intl2.string(getSystemLocale.t.Fizu9y);
+      const intl3 = getSystemLocale.intl;
+      obj[2] = intl3.string(getSystemLocale.t.UefCDS);
+      const intl4 = getSystemLocale.intl;
+      obj[3] = intl4.string(getSystemLocale.t["1SzcG6"]);
       obj[4] = function onConfirm() {
         BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
         return BundleUpdaterManager.reload();
       };
       obj.show(obj);
-      let c4 = true;
+      c4 = true;
     }
   },
   deferUpdate() {

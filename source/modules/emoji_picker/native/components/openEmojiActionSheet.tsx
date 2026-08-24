@@ -1,13 +1,19 @@
-// Module ID: 9399
-// Function ID: 9400
+// Module ID: 9436
+// Function ID: 9437
 // Name: openEmojiActionSheet
-// Dependencies: [1925, 1435, 1892, 4342, 9400, 2007, 2]
+// Dependencies: [1925, 1435, 1892, 4346, 9437, 2008, 2]
 // Exports: openEmojiActionSheet
 
-// Module 9399 (openEmojiActionSheet)
-import { EMOJI_URL_BASE_SIZE } from "set";
+// Module 9436 (openEmojiActionSheet)
+import set from "set" /* 2 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import dismissGlobalKeyboard from "dismissGlobalKeyboard" /* 1892 */;
+import set2 from "set" /* 1925 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
 
-let result = require("dismissGlobalKeyboard").fileFinishedImporting("modules/emoji_picker/native/components/openEmojiActionSheet.tsx");
+const EMOJI_URL_BASE_SIZE = set2.EMOJI_URL_BASE_SIZE;
+let result = set.fileFinishedImporting("modules/emoji_picker/native/components/openEmojiActionSheet.tsx");
 
 export const openEmojiActionSheet = function openEmojiActionSheet(uniqueName) {
   if (null != uniqueName.uniqueName) {
@@ -21,17 +27,17 @@ export const openEmojiActionSheet = function openEmojiActionSheet(uniqueName) {
         const _HermesInternal = HermesInternal;
         obj[1] = ":" + name + ":";
       }
-      const result = require(1892) /* dismissGlobalKeyboard */.dismissGlobalKeyboard();
-      const obj6 = importDefault(4342);
+      const result = dismissGlobalKeyboard.dismissGlobalKeyboard();
+      const obj6 = ACTION_SHEET_HEIGHT_HALFDefault;
       obj = { emojiNode: null };
       obj[0] = obj;
-      obj6.openLazy(require(2007) /* asyncRequireImpl */(9400, dependencyMap.paths), "MessageEmojiActionSheet", obj, "stack");
+      obj6.openLazy(asyncRequireImpl(9437, dependencyMap.paths), "MessageEmojiActionSheet", obj, "stack");
     }
     obj = { id: null, alt: null, src: null };
     obj[0] = uniqueName.id;
     obj[1] = name;
     if (null != uniqueName.id) {
-      let obj1 = importDefault(1435);
+      obj1 = getAvatarURLDefault;
       obj1 = { id: null, animated: null, size: null };
       ({ id: obj3[0], animated: obj3[1] } = uniqueName);
       obj1[2] = EMOJI_URL_BASE_SIZE;

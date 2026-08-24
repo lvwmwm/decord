@@ -4,7 +4,8 @@
 // Dependencies: [737, 609]
 
 // Module 771 (getNative)
-import getNative from "getNative";
+import _mod609 from "module_609" /* 609 */;
+import getNative from "getNative" /* 737 */;
 
 
-export default getNative(require("module_609"), "DataView");
+export default getNative(_mod609, "DataView");

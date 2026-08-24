@@ -1,12 +1,15 @@
-// Module ID: 7457
-// Function ID: 7458
+// Module ID: 7495
+// Function ID: 7496
 // Name: frozen
 // Dependencies: [595, 2]
 
-// Module 7457 (frozen)
+// Module 7495 (frozen)
+import set from "set" /* 2 */;
+import Storage2 from "Storage" /* 595 */;
+
 const frozen = Object.freeze({
   getItem(arg0) {
-    const Storage = require(595) /* Storage */.Storage;
+    const Storage = Storage2.Storage;
     let value = Storage.get(arg0);
     if (value == null) {
       value = null;
@@ -14,14 +17,14 @@ const frozen = Object.freeze({
     return value;
   },
   setItem(arg0, arg1) {
-    const Storage = require(595) /* Storage */.Storage;
+    const Storage = Storage2.Storage;
     return Storage.set(arg0, arg1);
   },
   removeItem(arg0) {
-    const Storage = require(595) /* Storage */.Storage;
+    const Storage = Storage2.Storage;
     return Storage.remove(arg0);
   }
 });
-const result = require("set").fileFinishedImporting("modules/zustand/LocalStorageWrapper.tsx");
+const result = set.fileFinishedImporting("modules/zustand/LocalStorageWrapper.tsx");
 
 export default frozen;

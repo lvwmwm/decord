@@ -1,13 +1,16 @@
-// Module ID: 4023
-// Function ID: 4024
+// Module ID: 4026
+// Function ID: 4027
 // Name: storeThread
-// Dependencies: [1395, 1218, 4024, 12, 589, 709, 2]
+// Dependencies: [1395, 1218, 4027, 12, 589, 709, 2]
 
-// Module 4023 (storeThread)
-import { ALL_CHANNEL_TYPES } from "createChannelRecord";
-import fetchFingerprint from "fetchFingerprint";
-import { Store } from "initialize";
-import set from "reset";
+// Module 4026 (storeThread)
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import resetDefault from "reset" /* 4027 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import set from "set" /* 2 */;
 
 function storeThread(channel) {
   let hasItem = ALL_CHANNEL_TYPES.has(channel.type);
@@ -25,18 +28,17 @@ function storeThread(channel) {
     obj[5] = date;
     dependencyMap[channel.id] = obj;
     const id = channel.id;
-    tmp2.clearTimer(id);
+    navigation.clearTimer(id);
     if (true === dependencyMap[id].muted) {
       const _Set2 = Set;
-      const set = new Set(set2);
+      set = new Set(set2);
       set2 = set;
       set.add(id);
       if (obj2.setTimer(id, tmp10.muteConfig, () => {
-        outer1_4[id].muted = false;
-        const set = new Set(outer1_6);
-        outer1_6 = set;
+        closure_1_4[id].muted = false;
+        set = new Set(set);
         set.delete(id);
-        outer1_8.emitChange();
+        closure_1_8.emitChange();
       })) {
         dependencyMap[id].muted = false;
         const _Set3 = Set;
@@ -49,7 +51,7 @@ function storeThread(channel) {
       set2 = new Set(set2);
       set2.delete(id);
     }
-    obj2 = tmp2;
+    obj2 = navigation;
   }
 }
 function handleThreadListSyncOrSearchFinish(guildId) {
@@ -57,33 +59,30 @@ function handleThreadListSyncOrSearchFinish(guildId) {
   const members = guildId.members;
   if (tmp) {
     const item = members.forEach((id) => {
-      const obj = { threadId: id.id, guildId: id, flags: id.flags, muted: id.muted, muteConfig: id.muteConfig, joinTimestamp: null };
-      obj[5] = new Date(id.joinTimestamp);
-      outer1_4[id.id] = obj;
+      const obj = { threadId: id.id, guildId: id, flags: id.flags, muted: id.muted, muteConfig: id.muteConfig, joinTimestamp: new Date(id.joinTimestamp) };
+      closure_1_4[id.id] = obj;
       id = id.id;
-      outer1_5.clearTimer(id);
-      if (true === outer1_4[id].muted) {
+      closure_1_5.clearTimer(id);
+      if (true === closure_1_4[id].muted) {
         const _Set2 = Set;
-        const set = new Set(outer1_6);
-        outer1_6 = set;
+        set = new Set(set2);
+        set2 = set;
         set.add(id);
-        if (outer1_5.setTimer(id, tmp2.muteConfig, () => {
-          outer1_4[id].muted = false;
-          const set = new Set(outer1_6);
-          outer1_6 = set;
+        if (closure_1_5.setTimer(id, tmp2.muteConfig, () => {
+          closure_1_4[id].muted = false;
+          set = new Set(set);
           set.delete(id);
-          outer1_8.emitChange();
+          closure_1_8.emitChange();
         })) {
-          outer1_4[id].muted = false;
+          closure_1_4[id].muted = false;
           const _Set3 = Set;
-          const set1 = new Set(outer1_6);
-          outer1_6 = set1;
+          const set1 = new Set(set2);
+          set2 = set1;
           set1.delete(id);
         }
       } else {
         const _Set = Set;
-        const set2 = new Set(outer1_6);
-        outer1_6 = set2;
+        set2 = new Set(set2);
         set2.delete(id);
       }
     });
@@ -96,47 +95,46 @@ function handleSearchMessagesSuccess(guildId) {
     let item = data.forEach((members) => {
       members = members.members;
       const item = members.forEach((id) => {
-        const obj = { threadId: id.id, guildId: id, flags: id.flags, muted: id.muted, muteConfig: id.muteConfig, joinTimestamp: null };
-        obj[5] = new Date(id.joinTimestamp);
-        outer1_4[id.id] = obj;
+        const obj = { threadId: id.id, guildId: id, flags: id.flags, muted: id.muted, muteConfig: id.muteConfig, joinTimestamp: new Date(id.joinTimestamp) };
+        closure_1_4[id.id] = obj;
         id = id.id;
-        outer1_5.clearTimer(id);
-        if (true === outer1_4[id].muted) {
+        closure_1_5.clearTimer(id);
+        if (true === closure_1_4[id].muted) {
           const _Set2 = Set;
-          let set = new Set(outer1_6);
-          outer1_6 = set;
+          set = new Set(set2);
+          set2 = set;
           set.add(id);
-          if (outer1_5.setTimer(id, tmp2.muteConfig, () => {
-            outer1_4[id].muted = false;
-            const set = new Set(outer1_6);
-            outer1_6 = set;
+          if (closure_1_5.setTimer(id, tmp2.muteConfig, () => {
+            closure_1_4[id].muted = false;
+            set = new Set(set);
             set.delete(id);
-            outer1_8.emitChange();
+            closure_1_8.emitChange();
           })) {
-            outer1_4[id].muted = false;
+            closure_1_4[id].muted = false;
             const _Set3 = Set;
-            const set1 = new Set(outer1_6);
-            outer1_6 = set1;
+            const set1 = new Set(set2);
+            set2 = set1;
             set1.delete(id);
           }
         } else {
           const _Set = Set;
-          const set2 = new Set(outer1_6);
-          outer1_6 = set2;
+          set2 = new Set(set2);
           set2.delete(id);
         }
       });
     });
   }
 }
+const ALL_CHANNEL_TYPES = createChannelRecord.ALL_CHANNEL_TYPES;
 let closure_4 = {};
-let c5 = new require("reset")();
+let closure_5 = new resetDefault();
 let set = new Set();
+const Store = initializeDefault.Store;
 class JoinedThreadsStoreClass extends Store {
 }
 const prototype = JoinedThreadsStoreClass.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint);
+  this.waitFor(closure_3);
 };
 prototype["hasJoined"] = function hasJoined(id) {
   return id in closure_4;
@@ -172,11 +170,11 @@ prototype["isMuted"] = function isMuted(arg0) {
   return set.has(arg0);
 };
 JoinedThreadsStoreClass.displayName = "JoinedThreadsStore";
-const joinedThreadsStoreClass = new JoinedThreadsStoreClass(require("dispatcher"), {
+const joinedThreadsStoreClass = new JoinedThreadsStoreClass(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
-    tmp2.reset();
-    const set = new Set();
-    let closure_4 = {};
+    navigation.reset();
+    set = new Set();
+    closure_4 = {};
     guilds = guilds.guilds;
     let item = guilds.forEach((threads) => {
       threads = threads.threads;
@@ -186,14 +184,14 @@ const joinedThreadsStoreClass = new JoinedThreadsStoreClass(require("dispatcher"
     });
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(joinedThreads) {
-    const mapped = importDefault(12)(joinedThreads.joinedThreads).map((joinTimestamp) => {
+    const mapped = applyDefault(joinedThreads.joinedThreads).map((joinTimestamp) => {
       const obj = {};
       const merged = Object.assign(joinTimestamp);
       obj.joinTimestamp = new Date(joinTimestamp.joinTimestamp);
       return obj;
     });
-    const arr = importDefault(12)(joinedThreads.joinedThreads);
-    let closure_4 = mapped.keyBy("threadId").value();
+    const arr = applyDefault(joinedThreads.joinedThreads);
+    closure_4 = mapped.keyBy("threadId").value();
   },
   GUILD_CREATE: function handleGuildCreate(guild) {
     guild = guild.guild;
@@ -242,18 +240,17 @@ const joinedThreadsStoreClass = new JoinedThreadsStoreClass(require("dispatcher"
       obj[5] = date;
       dependencyMap[userId.id] = obj;
       const id = userId.id;
-      tmp2.clearTimer(id);
+      navigation.clearTimer(id);
       if (true === dependencyMap[id].muted) {
         const _Set2 = Set;
-        const set = new Set(set2);
+        set = new Set(set2);
         set2 = set;
         set.add(id);
-        if (tmp2.setTimer(id, tmp24.muteConfig, () => {
-          outer1_4[id].muted = false;
-          const set = new Set(outer1_6);
-          outer1_6 = set;
+        if (navigation.setTimer(id, tmp24.muteConfig, () => {
+          closure_1_4[id].muted = false;
+          set = new Set(set);
           set.delete(id);
-          outer1_8.emitChange();
+          closure_1_8.emitChange();
         })) {
           dependencyMap[id].muted = false;
           const _Set3 = Set;
@@ -269,10 +266,6 @@ const joinedThreadsStoreClass = new JoinedThreadsStoreClass(require("dispatcher"
     }
   },
   THREAD_MEMBER_LOCAL_UPDATE: function handleThreadMemberLocalUpdate(arg0) {
-    let guildId;
-    let id;
-    let isJoining;
-    let userId;
     ({ id, guildId } = arg0);
     ({ userId, isJoining } = arg0);
     let tmp3 = store.getId() === userId;
@@ -296,8 +289,8 @@ const joinedThreadsStoreClass = new JoinedThreadsStoreClass(require("dispatcher"
     return tmp3;
   },
   THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(removedMemberIds) {
-    let closure_0 = removedMemberIds;
-    let c1 = false;
+    closure_0 = removedMemberIds;
+    c1 = false;
     removedMemberIds = removedMemberIds.removedMemberIds;
     let hasItem;
     if (removedMemberIds != null) {
@@ -316,8 +309,8 @@ const joinedThreadsStoreClass = new JoinedThreadsStoreClass(require("dispatcher"
     const addedMembers = removedMemberIds.addedMembers;
     if (addedMembers != null) {
       const item = addedMembers.forEach((userId) => {
-        if (userId.userId === outer1_3.getId()) {
-          let obj = {};
+        if (userId.userId === closure_1_3.getId()) {
+          obj = {};
           const merged = Object.assign(obj);
           obj = { threadId: null, guildId: null, flags: null, muted: null, muteConfig: null, joinTimestamp: null };
           ({ id: obj5[0], guildId: obj5[1] } = id);
@@ -329,33 +322,31 @@ const joinedThreadsStoreClass = new JoinedThreadsStoreClass(require("dispatcher"
           obj[id.id] = obj;
           id = id.id;
           let muteConfig = obj[id];
-          outer1_5.clearTimer(id);
+          closure_1_5.clearTimer(id);
           if (true === muteConfig.muted) {
-            const set = new tmp15.Set(outer1_6);
-            outer1_6 = set;
+            set = new tmp15.Set(set2);
+            set2 = set;
             set.add(id);
             muteConfig = muteConfig.muteConfig;
             if (obj6.setTimer(id, muteConfig, () => {
-              outer1_4[id].muted = false;
-              const set = new Set(outer1_6);
-              outer1_6 = set;
+              closure_1_4[id].muted = false;
+              set = new Set(set);
               set.delete(id);
-              outer1_8.emitChange();
+              closure_1_8.emitChange();
             })) {
               obj[id].muted = false;
-              const set1 = new tmp15.Set(outer1_6);
+              const set1 = new tmp15.Set(set2);
               tmp15 = set1;
-              outer1_6 = set1;
+              set2 = set1;
               set1.delete(id);
             }
           } else {
             const _Set = Set;
-            const set2 = new Set(outer1_6);
-            outer1_6 = set2;
+            set2 = new Set(set2);
             set2.delete(id);
           }
-          let c1 = true;
-          obj6 = outer1_5;
+          c1 = true;
+          obj6 = closure_1_5;
         }
       });
     }

@@ -4,13 +4,18 @@
 // Dependencies: [42, 41, 93, 95, 98, 158, 190, 193, 48]
 
 // Module 189 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
+import replacer from "replacer" /* 48 */;
+import _inheritsDefault from "_inherits" /* 98 */;
+import _wrapNativeSuperDefault from "_wrapNativeSuper" /* 158 */;
+import parseErrorStack from "parseErrorStack" /* 190 */;
+import ExceptionsManager from "ExceptionsManager" /* 193 */;
+import closure_3 from "_classCallCheck" /* 41 */;
+import closure_4 from "_possibleConstructorReturn" /* 93 */;
+import closure_5 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
 let SyntheticError = global;
-const require = arg1;
+require = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -22,10 +27,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -85,11 +90,11 @@ function reportException(stack) {
     componentStack = stack.componentStack;
   }
   obj[3] = componentStack;
-  obj[4] = require(190) /* parseErrorStack */.default(stack);
+  obj[4] = parseErrorStack.default(stack);
   obj[5] = sum;
   obj[6] = arg1;
   obj[7] = obj;
-  const defaultResult = require(190) /* parseErrorStack */.default(stack);
+  const defaultResult = parseErrorStack.default(stack);
   const tmp = require;
   tmp10 = null != stack.cause && typeof stack.cause === "object";
   if (arg2) {
@@ -97,7 +102,7 @@ function reportException(stack) {
     console.error(stack);
   }
   if (arg1) {
-    const _default = tmp(193).default;
+    const _default = ExceptionsManager.default;
     if (_default) {
       if (arg1) {
         const RN$hasHandledFatalException = SyntheticError.RN$hasHandledFatalException;
@@ -119,7 +124,7 @@ function reportException(stack) {
 }
 function reactConsoleErrorHandler() {
   const items = [...arguments];
-  let SyntheticError;
+  SyntheticError = undefined;
   const items1 = [...items];
   console._errorOriginal.apply(items1);
   if (false !== console.reportErrorsAsExceptions) {
@@ -129,13 +134,13 @@ function reactConsoleErrorHandler() {
         result = RN$inExceptionHandler();
       }
       if (!result) {
-        let error = items[0];
+        error = items[0];
         let stack;
         if (error != null) {
           stack = error.stack;
         }
         if (!stack) {
-          SyntheticError = require(48) /* replacer */.default;
+          SyntheticError = replacer.default;
           const mapped = items.map((str) => {
             let tmp = str;
             if (typeof str !== "string") {
@@ -161,11 +166,11 @@ class SyntheticError {
   constructor() {
     self = this;
     items = [...arguments];
-    tmp = __esModule(this, SyntheticError);
+    tmp = closure_3(this, SyntheticError);
     items1 = [...items];
-    tmp2 = __esModule;
-    obj = __esModule(SyntheticError);
-    tmp3 = __esModule;
+    tmp2 = closure_5;
+    obj = closure_5(SyntheticError);
+    tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -178,9 +183,8 @@ class SyntheticError {
     return tmp3Result;
   }
 }
-require("_inherits")(SyntheticError, require("_wrapNativeSuper")(Error));
+_inheritsDefault(SyntheticError, _wrapNativeSuperDefault(Error));
 const importDefaultResultResult = importDefaultResult(SyntheticError);
-const metroImportAll = importDefaultResultResult;
 let c9 = false;
 const RN$ErrorExtraDataKey = "RN$ErrorExtraDataKey";
 let c11 = 0;
@@ -196,7 +200,7 @@ export default {
         tmp2 = new closure_8(arg0);
       }
       try {
-        let c13 = true;
+        c13 = true;
         reportException(tmp2, arg1, true);
         c13 = false;
       } catch (tmp9) {
@@ -209,6 +213,7 @@ export default {
     if (!console._errorOriginal) {
       const _console = console;
       const _console2 = console;
+      error = console.error;
       const _console3 = console;
       console._errorOriginal = error.bind(console);
       const _console4 = console;
@@ -217,7 +222,7 @@ export default {
   },
   SyntheticError: importDefaultResultResult,
   unstable_setExceptionDecorator(arg0) {
-    let closure_7 = arg0;
+    closure_7 = arg0;
   }
 };
 export const SyntheticError = importDefaultResultResult;

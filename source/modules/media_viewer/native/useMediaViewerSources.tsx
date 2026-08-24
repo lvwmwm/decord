@@ -1,21 +1,21 @@
-// Module ID: 8993
-// Function ID: 8994
+// Module ID: 9030
+// Function ID: 9031
 // Name: zustandStore
-// Dependencies: [4241, 8994, 2]
+// Dependencies: [4245, 9031, 2]
 // Exports: removeSpoiler, setMediaViewerSources, toggleSpoiler
 
-// Module 8993 (zustandStore)
-const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => {
-  const obj = { sources: [], spoilerIndexes: null };
-  obj[1] = new Set();
+// Module 9030 (zustandStore)
+import set2 from "set" /* 2 */;
+import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4245 */;
+
+const zustandStore = defaultStatesAreEqual.createZustandStore(() => {
+  const obj = { sources: [], spoilerIndexes: new Set() };
   return obj;
 });
-const result = require("set").fileFinishedImporting("modules/media_viewer/native/useMediaViewerSources.tsx");
+const result = set2.fileFinishedImporting("modules/media_viewer/native/useMediaViewerSources.tsx");
 
 export const MediaViewerSourcesStore = zustandStore;
 export const setMediaViewerSources = function setMediaViewerSources(arg0) {
-  let initialIndex;
-  let sources;
   ({ sources, initialIndex } = arg0);
   if (initialIndex === undefined) {
     initialIndex = null;

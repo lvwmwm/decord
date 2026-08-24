@@ -1,19 +1,21 @@
-// Module ID: 16190
-// Function ID: 16191
+// Module ID: 16287
+// Function ID: 16288
 // Name: styles
-// Dependencies: [4661, 712, 2]
+// Dependencies: [4668, 712, 2]
 
-// Module 16190 (styles)
-import createCacheKey from "createCacheKey";
+// Module 16287 (styles)
+import set from "set" /* 2 */;
+import ThemesDefault from "Themes" /* 712 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 let obj = { iconBackground: null, iconBackgroundBrand: null, iconStroke: null };
-obj = { color: require("Themes").colors.BACKGROUND_MOD_STRONG };
+obj = { color: ThemesDefault.colors.BACKGROUND_MOD_STRONG };
 obj[0] = obj;
-obj[1] = { color: require("Themes").colors.BACKGROUND_BRAND };
-const obj1 = { color: require("Themes").colors.BACKGROUND_BRAND };
-obj[2] = { color: require("Themes").colors.BORDER_SUBTLE };
+obj[1] = { color: ThemesDefault.colors.BACKGROUND_BRAND };
+const obj1 = { color: ThemesDefault.colors.BACKGROUND_BRAND };
+obj[2] = { color: ThemesDefault.colors.BORDER_SUBTLE };
 const styles = createCacheKey.createStyles(obj);
-const obj2 = { color: require("Themes").colors.BORDER_SUBTLE };
-const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/useSimpleGuildDefaultColors.tsx");
+const obj2 = { color: ThemesDefault.colors.BORDER_SUBTLE };
+const result = set.fileFinishedImporting("modules/launchpad/native/shared/useSimpleGuildDefaultColors.tsx");
 
 export default styles;

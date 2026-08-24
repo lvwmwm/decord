@@ -1,11 +1,14 @@
-// Module ID: 8965
-// Function ID: 8966
+// Module ID: 9002
+// Function ID: 9003
 // Name: PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO
-// Dependencies: [8951, 2]
+// Dependencies: [8988, 2]
 
-// Module 8965 (PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO)
-const result = require("set").fileFinishedImporting("modules/collectibles/profile_frames/native/ProfileFrameConstants.tsx");
+// Module 9002 (PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO)
+import set from "set" /* 2 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8988 */;
+
+const result = set.fileFinishedImporting("modules/collectibles/profile_frames/native/ProfileFrameConstants.tsx");
 
 export const PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO = 0.625;
 export const PROFILE_FRAME_ASPECT_RATIO = 0.66;
-export const PROFILE_FRAME_Z_INDEX = { [require(8951).ProfileFrameLayerOrder.FRONT]: 3, [require(8951).ProfileFrameLayerOrder.BACK]: 2 };
+export const PROFILE_FRAME_Z_INDEX = { [ProfileFrameLayerOrder.ProfileFrameLayerOrder.FRONT]: 3, [ProfileFrameLayerOrder.ProfileFrameLayerOrder.BACK]: 2 };

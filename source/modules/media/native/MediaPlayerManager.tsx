@@ -1,40 +1,56 @@
-// Module ID: 13901
-// Function ID: 13902
+// Module ID: 13969
+// Function ID: 13970
 // Name: _initialize
-// Dependencies: [17, 1390, 8664, 1391, 4994, 4021, 7383, 676, 8703, 13902, 505, 3, 644, 705, 4720, 4230, 709, 500, 643, 7427, 10023, 2]
+// Dependencies: [17, 1390, 8701, 1391, 4999, 4024, 7421, 676, 8740, 13970, 505, 3, 644, 705, 4726, 4234, 709, 500, 643, 7465, 10062, 2]
 // Exports: isPlaybackComplete
 
-// Module 13901 (_initialize)
-import get_ActivityIndicator from "set";
-import participantFromServer from "participantFromServer";
-import withEqualityFn from "withEqualityFn";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import reinjectEphemerals from "reinjectEphemerals";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import getState from "getState";
-import { AppStates } from "ME";
-import { ActivityPanelModes } from "ActivityPanelModes";
-import MediaPlaybackPanelModes from "MediaPlaybackPanelModes";
-import { Permissions } from "sum";
-import keys from "keys";
-import "initialize";
+// Module 13969 (_initialize)
+import set2 from "set" /* 2 */;
+import timestampDefault from "timestamp" /* 3 */;
+import sum from "sum" /* 505 */;
+import ME from "ME" /* 676 */;
+import batchUpdates from "batchUpdates" /* 705 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+import initializeDefault from "initialize" /* 4726 */;
+import ActivityPanelModes2 from "ActivityPanelModes" /* 8740 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_5 from "participantFromServer" /* 1390 */;
+import closure_6 from "withEqualityFn" /* 8701 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "reinjectEphemerals" /* 4999 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_10 from "getState" /* 7421 */;
+import MediaPlaybackPanelModes from "MediaPlaybackPanelModes" /* 13970 */;
+import keys from "keys" /* 644 */;
 
-let c3;
-let c4;
-let closure_14;
-let map1;
 ({ NativeEventEmitter: c3, NativeModules: c4 } = get_ActivityIndicator);
+const AppStates = ME.AppStates;
+const ActivityPanelModes = ActivityPanelModes2.ActivityPanelModes;
 ({ PLAYBACK_COMPLETION_DETECTION_TOLERANCE: map1, PLAYBACK_PROGRESS_UPDATE_INTERVAL: closure_14 } = MediaPlaybackPanelModes);
-let closure_16 = new require("ensureGuildLoaded")("MediaPlayerManager");
+const Permissions = sum.Permissions;
+let closure_16 = new timestampDefault("MediaPlayerManager");
 let obj = keys.create((arg0) => {
-  let closure_0 = arg0;
-  const obj = { activeMediaPlayerSource: "HermesInternal", mediaSourceMessage: "PX_16", canAccessMedia: "disabled", isPlaying: false, wasPipClosedByUser: null, progress: null, rate: "ct", showPip: "#297071", closePip: 0, displayedMediaItemIdsPerChannel: 50, currentlyDisplayedChannelId: null };
-  obj[8] = function closePip() {
-    callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
+  closure_0 = arg0;
+  obj = {
+    activeMediaPlayerSource: "HermesInternal",
+    mediaSourceMessage: "PX_16",
+    canAccessMedia: "disabled",
+    isPlaying: false,
+    wasPipClosedByUser: null,
+    progress: null,
+    rate: "ct",
+    showPip: "skewY",
+    closePip() {
+      callback(closure_1_2[13]).batchUpdates(() => callback({ showPip: false }));
+    },
+    displayedMediaItemIdsPerChannel: "\u{1F1F9}\u{1F1ED}",
+    currentlyDisplayedChannelId: 6
   };
   obj[9] = {};
   return obj;
 });
+initializeDefault;
 class MediaPlayerManager extends tmp8 {
   constructor() {
     tmp2 = new MediaPlayerManager(tmp, new.target);
@@ -66,28 +82,28 @@ class MediaPlayerManager extends tmp8 {
 const prototype = MediaPlayerManager.prototype;
 prototype["_initialize"] = function _initialize() {
   const self = this;
-  const obj = new closure_3(closure_4.MediaPlayerManager);
+  obj = new closure_3(closure_4.MediaPlayerManager);
   const items = [obj.addListener("MediaPlayerPlaybackSourceChanged", this.handleMediaPlayerPlaybackSourceChanged), obj.addListener("MediaPlayerPlaybackProgressUpdated", this.handleMediaPlayerPlaybackProgressUpdated), obj.addListener("MediaPlayerPlaybackRateChanged", this.handleMediaPlayerPlaybackRateChanged), obj.addListener("MediaPlayerViewWillAppear", this.handleMediaPlayerViewWillAppear), obj.addListener("MediaPlayerViewDidDisappear", this.handleMediaPlayerViewDidDisappear)];
   this.subscriptions = items;
-  let MediaPlayerManager = closure_4.MediaPlayerManager;
+  MediaPlayerManager = closure_4.MediaPlayerManager;
   const result = MediaPlayerManager.subscribeToPlaybackEvents();
-  const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = getRootNavigationRef.getRootNavigationRef();
   if (rootNavigationRef != null) {
     rootNavigationRef.addListener("state", self.updateDisplayState);
   }
-  self.voicePanelStoreUnsubscribe = withEqualityFn.subscribe(self.handleVoicePanelStateUpdated);
-  participantFromServer.addChangeListener(self.handleEmbeddedActivitiesUpdated);
-  ensureGuildLoaded.addChangeListener(self.updateMediaPermissions);
-  getUncachedChannelPermissions.addChangeListener(self.updateMediaPermissions);
-  const obj2 = require(4230) /* getRootNavigationRef */;
+  self.voicePanelStoreUnsubscribe = closure_6.subscribe(self.handleVoicePanelStateUpdated);
+  closure_5.addChangeListener(self.handleEmbeddedActivitiesUpdated);
+  closure_7.addChangeListener(self.updateMediaPermissions);
+  closure_9.addChangeListener(self.updateMediaPermissions);
+  const obj2 = getRootNavigationRef;
   const tmp2 = require;
-  const subscription = importDefault(709).subscribe("LOGOUT", self.userDidClosePip);
-  const obj4 = importDefault(709);
+  const subscription = dispatcherDefault.subscribe("LOGOUT", self.userDidClosePip);
+  const obj4 = dispatcherDefault;
   if (tmp2Result.isIOS()) {
     self.showPipUnsubscribe = obj.subscribe((showPip, showPip2) => {
       if (showPip2.showPip) {
         if (!showPip.showPip) {
-          const MediaPlayerManager = closure_4.MediaPlayerManager;
+          MediaPlayerManager = closure_4.MediaPlayerManager;
           MediaPlayerManager.clearNowPlayingInfo();
         }
       }
@@ -101,12 +117,12 @@ prototype["_initialize"] = function _initialize() {
       }
     });
   }
-  tmp6.verbose("Initialized and subscribed to playback events");
+  closure_16.verbose("Initialized and subscribed to playback events");
 };
 prototype["updateMediaPermissions"] = function updateMediaPermissions() {
   const self = this;
   self(705).batchUpdates(() => {
-    const activeMediaPlayerSource = outer1_17.getState().activeMediaPlayerSource;
+    const activeMediaPlayerSource = closure_1_17.getState().activeMediaPlayerSource;
     let channelId;
     if (activeMediaPlayerSource != null) {
       channelId = activeMediaPlayerSource.channelId;
@@ -114,16 +130,16 @@ prototype["updateMediaPermissions"] = function updateMediaPermissions() {
     if (channelId == null) {
       channelId = null;
     }
-    const channel = outer1_7.getChannel(channelId);
+    const channel = closure_1_7.getChannel(channelId);
     if (null != channel) {
       if (!channel.isPrivate()) {
-        if (!outer1_9.can(outer1_15.VIEW_CHANNEL, channel)) {
+        if (!closure_1_9.can(closure_1_15.VIEW_CHANNEL, channel)) {
           obj.setState({ canAccessMedia: false });
           self.pauseCurrentPlayer();
         }
       }
     }
-    outer1_17.setState({ canAccessMedia: true });
+    closure_1_17.setState({ canAccessMedia: true });
   });
 };
 prototype["_terminate"] = function _terminate() {
@@ -131,7 +147,7 @@ prototype["_terminate"] = function _terminate() {
   const subscriptions = this.subscriptions;
   const item = subscriptions.forEach((remove) => remove.remove());
   this.subscriptions = [];
-  const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = getRootNavigationRef.getRootNavigationRef();
   if (rootNavigationRef != null) {
     rootNavigationRef.removeListener("state", self.updateDisplayState);
   }
@@ -143,32 +159,32 @@ prototype["_terminate"] = function _terminate() {
   if (showPipUnsubscribe != null) {
     showPipUnsubscribe();
   }
-  participantFromServer.removeChangeListener(self.handleEmbeddedActivitiesUpdated);
-  ensureGuildLoaded.removeChangeListener(self.updateMediaPermissions);
-  getUncachedChannelPermissions.removeChangeListener(self.updateMediaPermissions);
-  const obj = require(4230) /* getRootNavigationRef */;
-  importDefault(709).unsubscribe("LOGOUT", self.userDidClosePip);
+  closure_5.removeChangeListener(self.handleEmbeddedActivitiesUpdated);
+  closure_7.removeChangeListener(self.updateMediaPermissions);
+  closure_9.removeChangeListener(self.updateMediaPermissions);
+  obj = getRootNavigationRef;
+  dispatcherDefault.unsubscribe("LOGOUT", self.userDidClosePip);
 };
 prototype["pauseCurrentPlayer"] = function pauseCurrentPlayer(arg0) {
-  const MediaPlayerManager = closure_4.MediaPlayerManager;
+  MediaPlayerManager = closure_4.MediaPlayerManager;
   MediaPlayerManager.pauseCurrentPlayer();
 };
 prototype["playCurrentPlayer"] = function playCurrentPlayer() {
-  const MediaPlayerManager = closure_4.MediaPlayerManager;
+  MediaPlayerManager = closure_4.MediaPlayerManager;
   MediaPlayerManager.playCurrentPlayer();
 };
 prototype["userDidClosePip"] = function userDidClosePip() {
-  require(705) /* batchUpdates */.batchUpdates(() => state.setState({ wasPipClosedByUser: true, showPip: false }));
+  batchUpdates.batchUpdates(() => state.setState({ wasPipClosedByUser: true, showPip: false }));
 };
 prototype["pauseAndClosePip"] = function pauseAndClosePip() {
   const self = this;
   self(705).batchUpdates(() => {
     self.pauseCurrentPlayer();
-    outer1_17.setState({ wasPipClosedByUser: true, showPip: false });
+    closure_1_17.setState({ wasPipClosedByUser: true, showPip: false });
   });
 };
 prototype["handleVoicePanelStateUpdated"] = function handleVoicePanelStateUpdated() {
-  const state = withEqualityFn.getState();
+  const state = closure_6.getState();
   let result = state.isVoicePanelFullscreen();
   if (!result) {
     result = state.voicePanelsPIP.size > 0;
@@ -179,32 +195,27 @@ prototype["handleVoicePanelStateUpdated"] = function handleVoicePanelStateUpdate
   }
 };
 prototype["handleEmbeddedActivitiesUpdated"] = function handleEmbeddedActivitiesUpdated() {
-  if (participantFromServer.getActivityPanelMode() === ActivityPanelModes.PIP) {
+  if (closure_5.getActivityPanelMode() === ActivityPanelModes.PIP) {
     const self = this;
     this.pauseAndClosePip();
   }
 };
 prototype["handleMediaPlayerPlaybackRateChanged"] = function handleMediaPlayerPlaybackRateChanged(arg0) {
-  let importDefault;
-  let require;
   const self = this;
   ({ source: importDefault, rate: require } = arg0);
   require(self[13]).batchUpdates(() => {
-    let activeMediaPlayerSource;
-    let isPlaying;
-    let wasPipClosedByUser;
     if (null == closure_1) {
-      outer1_17.setState({ rate: 0, isPlaying: false });
+      closure_1_17.setState({ rate: 0, isPlaying: false });
     }
     let id;
     if (closure_1 != null) {
       id = tmp.id;
     }
-    outer1_16.verbose("Playback rate changed to " + closure_0 + ": " + id);
-    const state = outer1_17.getState();
+    closure_1_16.verbose("Playback rate changed to " + closure_0 + ": " + id);
+    const state = closure_1_17.getState();
     ({ activeMediaPlayerSource, isPlaying, wasPipClosedByUser } = state);
     if (tmp9(activeMediaPlayerSource, tmp10)) {
-      let obj = { rate: null, isPlaying: null, wasPipClosedByUser: null };
+      obj = { rate: null, isPlaying: null, wasPipClosedByUser: null };
       obj[0] = tmp5;
       obj[1] = 0 !== tmp5;
       let tmp15 = false === isPlaying;
@@ -216,7 +227,7 @@ prototype["handleMediaPlayerPlaybackRateChanged"] = function handleMediaPlayerPl
         tmp16 = wasPipClosedByUser;
       }
       obj[2] = tmp16;
-      outer1_17.setState(obj);
+      closure_1_17.setState(obj);
       self.updateDisplayState();
     } else {
       obj = { source: null };
@@ -228,17 +239,14 @@ prototype["handleMediaPlayerPlaybackRateChanged"] = function handleMediaPlayerPl
       const result1 = self.handleMediaPlayerPlaybackRateChanged(obj);
     }
     tmp10 = closure_1;
-    tmp9 = outer1_1(self[18]);
+    tmp9 = closure_1_1(self[18]);
   });
 };
 prototype["handleMediaPlayerPlaybackProgressUpdated"] = function handleMediaPlayerPlaybackProgressUpdated(arg0) {
-  let dependencyMap;
-  let importDefault;
-  let require;
   ({ source: require, time: importDefault, duration: dependencyMap } = arg0);
-  require(705) /* batchUpdates */.batchUpdates(() => {
-    let obj = outer1_17;
-    const state = outer1_17.getState();
+  batchUpdates.batchUpdates(() => {
+    obj = closure_1_17;
+    const state = closure_1_17.getState();
     if (tmp2(state.activeMediaPlayerSource, closure_0)) {
       const currentlyDisplayedChannelId = state.currentlyDisplayedChannelId;
       if (state.showPip) {
@@ -249,7 +257,7 @@ prototype["handleMediaPlayerPlaybackProgressUpdated"] = function handleMediaPlay
           obj[1] = tmp6;
           let flag;
           if (tmp6 > 0) {
-            flag = tmp6 - closure_1 <= outer1_13;
+            flag = tmp6 - closure_1 <= closure_1_13;
           }
           if (flag == null) {
             flag = false;
@@ -261,7 +269,7 @@ prototype["handleMediaPlayerPlaybackProgressUpdated"] = function handleMediaPlay
         let tmp9 = null != progress && null != tmp7;
         if (tmp9) {
           const _Math = Math;
-          tmp9 = Math.abs(tmp7.time - progress.time) < outer1_14;
+          tmp9 = Math.abs(tmp7.time - progress.time) < closure_1_14;
         }
         if (tmp9) {
           tmp9 = tmp7.time !== tmp7.duration;
@@ -284,13 +292,13 @@ prototype["handleMediaPlayerPlaybackSourceChanged"] = function handleMediaPlayer
   const self = this;
   source = source.source;
   source(705).batchUpdates(() => {
-    let obj = outer1_17;
+    obj = closure_1_17;
     let id;
-    const state = outer1_17.getState();
+    const state = closure_1_17.getState();
     if (source != null) {
       id = tmp3.id;
     }
-    outer1_16.verbose("Playback source changed: " + id);
+    closure_1_16.verbose("Playback source changed: " + id);
     const activeMediaPlayerSource = state.activeMediaPlayerSource;
     if (!tmp6(activeMediaPlayerSource, source)) {
       obj = { activeMediaPlayerSource: null, mediaSourceMessage: null, progress: "disabled", rate: false, isPlaying: false, wasPipClosedByUser: 0 };
@@ -308,9 +316,6 @@ prototype["handleMediaPlayerPlaybackSourceChanged"] = function handleMediaPlayer
   });
 };
 prototype["getOrFetchMediaSourceMessage"] = function getOrFetchMediaSourceMessage(arg0) {
-  let assetUrl;
-  let channelId;
-  let messageId;
   const self = this;
   ({ channelId, messageId, assetUrl } = arg0);
   if (null != messageId) {
@@ -337,16 +342,16 @@ prototype["getOrFetchMediaSourceMessage"] = function getOrFetchMediaSourceMessag
           }
           const toArrayResult = messages.toArray();
         }
-        const obj = { channelId: null, messageId: null };
+        obj = { channelId: null, messageId: null };
         obj[0] = channelId;
         obj[1] = messageId;
-        const message1 = self(7427).fetchMessage(obj);
+        const message1 = self(7465).fetchMessage(obj);
         message1.then((arg0) => {
           if (null != arg0) {
             const result = self.handleMediaSourceMessageUpdated(arg0);
           }
         });
-        const obj2 = self(7427);
+        const obj2 = self(7465);
       }
       obj4 = message;
     }
@@ -355,8 +360,8 @@ prototype["getOrFetchMediaSourceMessage"] = function getOrFetchMediaSourceMessag
 prototype["handleMediaSourceMessageUpdated"] = function handleMediaSourceMessageUpdated(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => {
-    let obj = outer1_17;
-    const activeMediaPlayerSource = outer1_17.getState().activeMediaPlayerSource;
+    obj = closure_1_17;
+    const activeMediaPlayerSource = closure_1_17.getState().activeMediaPlayerSource;
     let messageId;
     if (activeMediaPlayerSource != null) {
       messageId = activeMediaPlayerSource.messageId;
@@ -369,29 +374,25 @@ prototype["handleMediaSourceMessageUpdated"] = function handleMediaSourceMessage
   });
 };
 prototype["handleMediaPlayerViewWillAppear"] = function handleMediaPlayerViewWillAppear(arg0) {
-  let importDefault;
-  let require;
   const self = this;
   ({ mediaItemIds: importDefault, channelId: require } = arg0);
   require(self[13]).batchUpdates(() => {
-    const displayedMediaItemIdsPerChannel = outer1_17.getState().displayedMediaItemIdsPerChannel;
+    const displayedMediaItemIdsPerChannel = closure_1_17.getState().displayedMediaItemIdsPerChannel;
     let items = displayedMediaItemIdsPerChannel[closure_0];
     if (items == null) {
       items = [];
     }
     const items1 = [...closure_1];
     displayedMediaItemIdsPerChannel[closure_0] = new Set(items1);
-    outer1_17.setState({ displayedMediaItemIdsPerChannel });
+    closure_1_17.setState({ displayedMediaItemIdsPerChannel });
     self.updateDisplayState();
   });
 };
 prototype["handleMediaPlayerViewDidDisappear"] = function handleMediaPlayerViewDidDisappear(arg0) {
-  let importDefault;
-  let require;
   const self = this;
   ({ mediaItemIds: importDefault, channelId: require } = arg0);
   require(self[13]).batchUpdates(() => {
-    const displayedMediaItemIdsPerChannel = outer1_17.getState().displayedMediaItemIdsPerChannel;
+    const displayedMediaItemIdsPerChannel = closure_1_17.getState().displayedMediaItemIdsPerChannel;
     let set = displayedMediaItemIdsPerChannel[closure_0];
     if (set == null) {
       const _Set = Set;
@@ -404,17 +405,13 @@ prototype["handleMediaPlayerViewDidDisappear"] = function handleMediaPlayerViewD
     } else {
       displayedMediaItemIdsPerChannel[closure_0] = set1;
     }
-    outer1_17.setState({ displayedMediaItemIdsPerChannel });
+    closure_1_17.setState({ displayedMediaItemIdsPerChannel });
     self.updateDisplayState();
   });
 };
 function updateDisplayState(MediaPlayerManager, arg1, arg2, prototype, MediaPlayerManager2, arg5, require) {
-  require(705) /* batchUpdates */.batchUpdates(() => {
-    let activeMediaPlayerSource;
-    let displayedMediaItemIdsPerChannel;
-    let isPlaying;
-    let progress;
-    let obj = store;
+  batchUpdates.batchUpdates(() => {
+    obj = store;
     const state = store.getState();
     ({ displayedMediaItemIdsPerChannel, activeMediaPlayerSource } = state);
     if (undefined === activeMediaPlayerSource) {
@@ -436,7 +433,7 @@ function updateDisplayState(MediaPlayerManager, arg1, arg2, prototype, MediaPlay
         }
         isPlaying = tmp6;
       }
-      let obj1 = callback(table[20]);
+      obj1 = callback(table[20]);
       const focusedChannelId = obj1.getFocusedChannelId();
       if (null != focusedChannelId) {
         if (state.currentlyDisplayedChannelId !== focusedChannelId) {
@@ -511,8 +508,8 @@ const updateDisplayState2 = updateDisplayState.updateDisplayState;
 updateDisplayState.updateDisplayState = updateDisplayState2.bind(updateDisplayState);
 let updateMediaPermissions = updateDisplayState.updateMediaPermissions;
 updateDisplayState.updateMediaPermissions = updateMediaPermissions.bind(updateDisplayState);
-let tmp6 = new require("ensureGuildLoaded")("MediaPlayerManager");
-let result = require("withEqualityFn").fileFinishedImporting("modules/media/native/MediaPlayerManager.tsx");
+let tmp6 = new timestampDefault("MediaPlayerManager");
+let result = set2.fileFinishedImporting("modules/media/native/MediaPlayerManager.tsx");
 
 export default updateDisplayState;
 export const useMediaPlayerManagerStore = obj;

@@ -4,7 +4,8 @@
 // Dependencies: [41, 42]
 
 // Module 293 (PressabilityPerformanceEventEmitter)
-import PressabilityPerformanceEventEmitter from "_classCallCheck";
+import _createClassDefault from "_createClass" /* 42 */;
+import PressabilityPerformanceEventEmitter from "_classCallCheck" /* 41 */;
 
 class PressabilityPerformanceEventEmitter {
   constructor() {
@@ -36,7 +37,7 @@ const items = [
     key: "emitEvent",
     value: function emitEvent(arg0) {
       if (0 !== this._listeners.length) {
-        let closure_0 = arg0();
+        closure_0 = arg0();
         const _listeners = tmp._listeners;
         const item = _listeners.forEach((arg0) => arg0(closure_0));
       }
@@ -44,4 +45,4 @@ const items = [
   }
 ];
 
-export default new require("_createClass")(PressabilityPerformanceEventEmitter, items)();
+export default new _createClassDefault(PressabilityPerformanceEventEmitter, items)();

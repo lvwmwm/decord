@@ -1,30 +1,37 @@
-// Module ID: 4734
-// Function ID: 4735
+// Module ID: 4739
+// Function ID: 4740
 // Name: Text
-// Dependencies: [109, 19, 17, 505, 21, 4115, 712, 12, 4735, 4736, 4661, 4738, 4739, 4742, 501, 4743, 299, 2]
+// Dependencies: [109, 19, 17, 505, 21, 4119, 712, 12, 4740, 4741, 4668, 4743, 4744, 4747, 501, 4748, 299, 2]
 
-// Module 4734 (Text)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import importAllResult from "noop";
-import get_ActivityIndicator from "set";
-import { Fonts } from "sum";
-import { jsx } from "jsxProd";
-import { TextVariantsFlat } from "TEXT_VARIANT";
-import useManaTextMigrationHighlight from "useManaTextMigrationHighlight";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4115";
+// Module 4739 (Text)
+import applyDefault from "apply" /* 12 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useManaTextMigrationHighlight2 from "useManaTextMigrationHighlight" /* 4741 */;
+import PlainTextExperimentProvider from "PlainTextExperimentProvider" /* 4743 */;
+import useTypographyVariantRemap from "useTypographyVariantRemap" /* 4744 */;
+import set from "set" /* 4747 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 4748 */;
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { Fonts } from "sum" /* 505 */;
+import { jsx } from "jsxProd" /* 21 */;
+import { TextVariantsFlat } from "TEXT_VARIANT" /* 4740 */;
+import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 4741 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "module_4119" /* 4119 */;
 
-const require = arg1;
+require = arg1;
 let closure_3 = ["color", "fontSize", "fontFamily", "fontWeight", "fontStyle", "textAlign", "textAlignVertical", "verticalAlign", "textDecorationLine", "lineHeight", "letterSpacing"];
 let c5 = importAllResult;
 const Text = get_ActivityIndicator.Text;
 let closure_7 = get_ActivityIndicator.unstable_TextAncestorContext;
-let closure_9 = require("module_4115").createAnimatedComponent(Text);
+let closure_9 = importDefaultResult.createAnimatedComponent(Text);
 let items = [{ includeFontPadding: true }];
 let closure_11 = [];
-const keys = Object.keys(require("Themes").colors);
+const keys = Object.keys(ThemesDefault.colors);
 let closure_12 = Object.fromEntries(keys.map((arg0) => {
-  const items = [importDefault(12).kebabCase(arg0), arg0];
+  items = [applyDefault.kebabCase(arg0), arg0];
   return items;
 }));
 let obj = { 400: null, 500: null, 600: null, 700: null, 800: null };
@@ -36,12 +43,10 @@ obj1[800] = Fonts.GINTO_NORD_EXTRA_BOLD;
 const obj2 = { 400: null, 700: null };
 ({ CODE_NORMAL: obj6[400], CODE_BOLD: obj6[700] } = Fonts);
 const mapped = TextVariantsFlat.map((name) => {
-  let fontStack;
-  let weight;
   let tmp = null;
   if ("code" !== name.name) {
-    const items = [name.name, ];
-    let obj = { fontSize: null, lineHeight: null, textTransform: null, fontFamily: null, includeFontPadding: false, letterSpacing: null };
+    items = [name.name, ];
+    obj = { fontSize: null, lineHeight: null, textTransform: null, fontFamily: null, includeFontPadding: false, letterSpacing: null };
     ({ size: obj2[0], lineHeight: obj2[1] } = name);
     let str = "none";
     if (name.uppercase) {
@@ -70,10 +75,10 @@ let result = useManaTextMigrationHighlight.withManaTextMigrationHighlight(fromEn
 let closure_18 = createCacheKey.createStyles((arg0, arg1) => {
   let tmp;
   if ("none" !== arg0) {
-    tmp = importDefault(712).colors[table[arg0]];
+    tmp = ThemesDefault.colors[table[arg0]];
   }
   const text = { color: tmp, fontVariant: null };
-  let items;
+  items = undefined;
   if (arg1) {
     items = ["tabular-nums"];
   }
@@ -81,24 +86,6 @@ let closure_18 = createCacheKey.createStyles((arg0, arg1) => {
   return { text };
 });
 const forwardRefResult = importAllResult.forwardRef((animated) => {
-  let children;
-  let color;
-  let color2;
-  let ellipsizeMode;
-  let fontFamily;
-  let fontSize;
-  let fontStyle;
-  let fontWeight;
-  let includeFontPadding;
-  let letterSpacing;
-  let lineClamp;
-  let lineHeight;
-  let style;
-  let tabularNumbers;
-  let textAlign;
-  let textAlignVertical;
-  let textDecorationLine;
-  let verticalAlign;
   ({ color, style, children, lineClamp, includeFontPadding } = animated);
   if (includeFontPadding === undefined) {
     includeFontPadding = false;
@@ -119,26 +106,26 @@ const forwardRefResult = importAllResult.forwardRef((animated) => {
   if (color == null) {
     color = "text-default";
   }
-  let obj = require(4738) /* PlainTextExperimentProvider */;
+  obj = PlainTextExperimentProvider;
   const plainTextExperimentEnabled = obj.usePlainTextExperimentEnabled();
   const context = importAllResult.useContext(closure_7);
-  let obj1 = require(4739) /* useTypographyVariantRemap */;
+  obj1 = useTypographyVariantRemap;
   const typographyVariantRemap = obj1.useTypographyVariantRemap(animated.variant, false);
   const tmp2 = closure_18;
   const tmp2Result = closure_18(color, tabularNumbers);
-  const items = [dependencyMap[typographyVariantRemap], tmp2Result.text, , ];
-  const manaTextMigrationHighlight = require(4736) /* useManaTextMigrationHighlight */.useManaTextMigrationHighlight(dependencyMap[typographyVariantRemap], style);
+  items = [dependencyMap[typographyVariantRemap], tmp2Result.text, , ];
+  const manaTextMigrationHighlight = useManaTextMigrationHighlight2.useManaTextMigrationHighlight(dependencyMap[typographyVariantRemap], style);
   const arraySpreadResult = HermesBuiltin.arraySpread(includeFontPadding ? items : closure_11, 2);
   items[arraySpreadResult] = style;
   items[arraySpreadResult + 1] = manaTextMigrationHighlight;
-  let tmp4Result = tmp4(4742);
+  let tmp4Result = tmp4(4747);
   obj = { animated: flag, children, enabled: plainTextExperimentEnabled, experimentalUseNativeText: flag2, hasRef: null != arg1, hasTextAncestor: context, isIOS: null, props: null, style: null };
   tmp4Result = tmp4(501);
   obj[6] = tmp4Result.isIOS();
   obj[7] = merged;
   obj[8] = items;
   const plainTextEligibility = tmp4Result.getPlainTextEligibility(obj);
-  const obj3 = require(4736) /* useManaTextMigrationHighlight */;
+  const obj3 = useManaTextMigrationHighlight2;
   const tmp10 = includeFontPadding ? items : closure_11;
   if (tmp4Result1.isPlainTextEligible(plainTextEligibility)) {
     ({ fontWeight, textAlignVertical, verticalAlign } = plainTextEligibility);
@@ -176,7 +163,7 @@ const forwardRefResult = importAllResult.forwardRef((animated) => {
     }
     obj[13] = ellipsizeMode;
     const merged1 = Object.assign(merged);
-    return tmp20(importDefault(4743), obj);
+    return tmp20(__INTERNAL_VIEW_CONFIGDefault, obj);
   } else {
     if (flag2) {
       let NativeText = tmp4(299).NativeText;
@@ -196,10 +183,10 @@ const forwardRefResult = importAllResult.forwardRef((animated) => {
     obj1.children = children;
     return <NativeText style={null} numberOfLines={null} ellipsizeMode={null} allowFontScaling ref={null} />;
   }
-  tmp4Result1 = require(4742) /* set */;
+  tmp4Result1 = set;
 });
 const forwardRefResult1 = importAllResult.forwardRef((variant, ref) => {
-  let obj = require(4739) /* useTypographyVariantRemap */;
+  obj = useTypographyVariantRemap;
   obj = { ref };
   const typographyVariantRemap = obj.useTypographyVariantRemap(variant.variant, true);
   const merged = Object.assign(variant);
@@ -207,7 +194,7 @@ const forwardRefResult1 = importAllResult.forwardRef((variant, ref) => {
   obj.variant = typographyVariantRemap;
   return <closure_19 ref={arg1} />;
 });
-const result1 = require("get ActivityIndicator").fileFinishedImporting("design/components/Text/native/Text.tsx");
+const result1 = require("set").fileFinishedImporting("design/components/Text/native/Text.tsx");
 
 export const TextStyleSheet = result;
 export const Text = forwardRefResult;

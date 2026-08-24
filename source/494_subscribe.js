@@ -5,13 +5,15 @@
 // Exports: default
 
 // Module 494 (subscribe)
-import { useSyncExternalStore } from "noop";
+import noop from "noop" /* 19 */;
+import getColorScheme from "getColorScheme" /* 453 */;
 
+const useSyncExternalStore = noop.useSyncExternalStore;
 function subscribe(onChange) {
   _require = _require(453).addChangeListener(onChange);
   return () => closure_0.remove();
 }
 
 export default function useColorScheme() {
-  return useSyncExternalStore(subscribe, require(453) /* getColorScheme */.getColorScheme);
+  return useSyncExternalStore(subscribe, getColorScheme.getColorScheme);
 };

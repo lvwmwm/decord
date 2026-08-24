@@ -1,53 +1,47 @@
-// Module ID: 14836
-// Function ID: 14837
+// Module ID: 14900
+// Function ID: 14901
 // Name: items
-// Dependencies: [32, 19, 21, 1236, 4661, 712, 7947, 12, 4105, 6291, 14833, 8102, 2]
+// Dependencies: [32, 19, 21, 1236, 4668, 712, 7986, 12, 4108, 6322, 14897, 8141, 2]
 // Exports: default
 
-// Module 14836 (items)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14900 (items)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 const items = [
   () => {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["EgWTY+"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["EgWTY+"]);
   },
   () => {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.umBn5f);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.umBn5f);
   },
   () => {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.dG1wD1);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.dG1wD1);
   },
   () => {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.SesI4S);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.SesI4S);
   },
   () => {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.RnMLvl);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.RnMLvl);
   }
 ];
 createCacheKey = { icon: null };
-createCacheKey = { borderRadius: require("Themes").radii.md };
+createCacheKey = { borderRadius: ThemesDefault.radii.md };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/app_icons/native/AppIconRow/AppIconRow.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/app_icons/native/AppIconRow/AppIconRow.tsx");
 
 export default function AppIconRow(arg0) {
-  let accessibilityRole;
-  let accessibilityState;
-  let currentAppIcon;
-  let hasNitro;
-  let icon;
-  let importDefault;
-  let require;
-  let showEasterEgg;
   ({ icon, onSelect: require, onLongPress: importDefault } = arg0);
   let id;
   ({ hasNitro, currentAppIcon, showEasterEgg } = arg0);
@@ -58,7 +52,7 @@ export default function AppIconRow(arg0) {
   } else {
     name = icon.name;
   }
-  const tmp = createCacheKey();
+  const tmp = callback2();
   const radioA11yNative = require(id[8]).useRadioA11yNative({ selected: tmp7 });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   if (id === require(id[6]).PremiumAppIconIds.BRAND_INVERTED) {
@@ -90,7 +84,7 @@ export default function AppIconRow(arg0) {
       obj[6] = tmp10Result;
       tmp10Result = tmp10(tmp3(tmp4[9]).TableRow, obj, id);
     }
-    const obj1 = { selected: null };
+    obj1 = { selected: null };
     obj1[0] = tmp7;
     tmp10Result = tmp10(tmp3(tmp4[11]).FormRadio, obj1);
   }

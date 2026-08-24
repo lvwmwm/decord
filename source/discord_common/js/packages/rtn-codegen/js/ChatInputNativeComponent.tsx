@@ -1,58 +1,61 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 11213
+// Function ID: 11214
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [26, 106, 65, 114, 2]
 
-// Module 11161 (__INTERNAL_VIEW_CONFIG)
-import weakSet from "weakSet";
-import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+// Module 11213 (__INTERNAL_VIEW_CONFIG)
+import set from "set" /* 2 */;
+import result2 from "result" /* 26 */;
+import renderElement from "renderElement" /* 114 */;
+import weakSet from "weakSet" /* 106 */;
+import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
 let obj = { uiViewClassName: "DCDChatInput", directEventTypes: { topChangeContentSize: { registrationName: "onChangeContentSize" }, topEndBlur: { registrationName: "onEndBlur" }, topBeginFocus: { registrationName: "onBeginFocus" }, topSelectionOrTextChange: { registrationName: "onSelectionOrTextChange" }, topTextFlushed: { registrationName: "onTextFlushed" }, topPasteImage: { registrationName: "onPasteImage" }, topPasteCommand: { registrationName: "onPasteCommand" }, topRequestSend: { registrationName: "onRequestSend" }, topTapAction: { registrationName: "onTapAction" } }, validAttributes: null };
-obj = { textColor: require("result").colorAttribute, editable: true, shouldShowCursor: true, placeholder: true, placeholderColor: require("result").colorAttribute, markAsSpoilerTitle: true, keyboardAppearance: true, selectionColor: require("result").colorAttribute, setNoExtractUI: true, keyboardType: true, maxHeight: true, verticalInset: true };
+obj = { textColor: result2.colorAttribute, editable: true, shouldShowCursor: true, placeholder: true, placeholderColor: result2.colorAttribute, markAsSpoilerTitle: true, keyboardAppearance: true, selectionColor: result2.colorAttribute, setNoExtractUI: true, keyboardType: true, maxHeight: true, verticalInset: true };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onChangeContentSize: true, onEndBlur: true, onBeginFocus: true, onSelectionOrTextChange: true, onTextFlushed: true, onPasteImage: true, onPasteCommand: true, onRequestSend: true, onTapAction: true }));
 obj[2] = obj;
 obj = {
   backspace(arg0) {
-    require(114) /* renderElement */.dispatchCommand(arg0, "backspace", []);
+    renderElement.dispatchCommand(arg0, "backspace", []);
   },
   blur(arg0) {
-    require(114) /* renderElement */.dispatchCommand(arg0, "blur", []);
+    renderElement.dispatchCommand(arg0, "blur", []);
   },
   focus(arg0) {
-    require(114) /* renderElement */.dispatchCommand(arg0, "focus", []);
+    renderElement.dispatchCommand(arg0, "focus", []);
   },
   openCustomKeyboard(arg0) {
-    require(114) /* renderElement */.dispatchCommand(arg0, "openCustomKeyboard", []);
+    renderElement.dispatchCommand(arg0, "openCustomKeyboard", []);
   },
   closeCustomKeyboard(arg0) {
-    require(114) /* renderElement */.dispatchCommand(arg0, "closeCustomKeyboard", []);
+    renderElement.dispatchCommand(arg0, "closeCustomKeyboard", []);
   },
   openSystemKeyboard(arg0) {
-    require(114) /* renderElement */.dispatchCommand(arg0, "openSystemKeyboard", []);
+    renderElement.dispatchCommand(arg0, "openSystemKeyboard", []);
   },
   replaceRange(arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
     const items = [arg1, arg2, arg3, arg4, arg5, arg6];
-    require(114) /* renderElement */.dispatchCommand(arg0, "replaceRange", items);
+    renderElement.dispatchCommand(arg0, "replaceRange", items);
   },
   setSelectedRange(arg0, arg1, arg2) {
     const items = [arg1, arg2];
-    require(114) /* renderElement */.dispatchCommand(arg0, "setSelectedRange", items);
+    renderElement.dispatchCommand(arg0, "setSelectedRange", items);
   },
   setText(arg0, arg1) {
     const items = [arg1];
-    require(114) /* renderElement */.dispatchCommand(arg0, "setText", items);
+    renderElement.dispatchCommand(arg0, "setText", items);
   },
   flushText(arg0, arg1) {
     const items = [arg1];
-    require(114) /* renderElement */.dispatchCommand(arg0, "flushText", items);
+    renderElement.dispatchCommand(arg0, "flushText", items);
   },
   updateTextBlocks(arg0, arg1, arg2) {
     const items = [arg1, arg2];
-    require(114) /* renderElement */.dispatchCommand(arg0, "updateTextBlocks", items);
+    renderElement.dispatchCommand(arg0, "updateTextBlocks", items);
   }
 };
 const value = setRuntimeConfigProvider.get("DCDChatInput", () => obj);
-const result = require("setRuntimeConfigProvider").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ChatInputNativeComponent.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ChatInputNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

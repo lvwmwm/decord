@@ -1,30 +1,32 @@
-// Module ID: 10207
-// Function ID: 10208
-// Dependencies: [19, 17, 676, 21, 4661, 712, 10191, 9383, 1236, 9387, 6952, 1297, 2]
+// Module ID: 10246
+// Function ID: 10247
+// Dependencies: [19, 17, 676, 21, 4668, 712, 10230, 9420, 1236, 9424, 6990, 1297, 2]
 
-// Module 10207
-import importAllResult from "noop";
-import { ScrollView } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10246
+import ThemesDefault from "Themes" /* 712 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10230 */;
+import importAllResult from "noop" /* 19 */;
+import { ScrollView } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let c3 = importAllResult;
 require("ME").GIFPickerResultTypes;
 let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: null, emptyStateImage: null };
-obj = { color: require("Themes").colors.TEXT_SUBTLE };
+obj = { color: ThemesDefault.colors.TEXT_SUBTLE };
 obj[1] = obj;
-createCacheKey = { marginBottom: require("Themes").space.PX_8, marginTop: 0 };
+createCacheKey = { marginBottom: ThemesDefault.space.PX_8, marginTop: 0 };
 obj[2] = createCacheKey;
 let closure_7 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function GIFPickerNoResults(inActionSheet) {
   inActionSheet = inActionSheet.inActionSheet;
   let safeAreaBottomKeyboardAware;
   const tmp = callback();
-  safeAreaBottomKeyboardAware = importDefault(10191)({ hasCategories: false }).safeAreaBottomKeyboardAware;
+  safeAreaBottomKeyboardAware = useExpressionPickerInsetsDefault({ hasCategories: false }).safeAreaBottomKeyboardAware;
   const items = [safeAreaBottomKeyboardAware];
   const memo = importAllResult.useMemo(() => ({ paddingBottom: safeAreaBottomKeyboardAware, flex: 1 }), items);
-  let obj = safeAreaBottomKeyboardAware(9383);
+  let obj = safeAreaBottomKeyboardAware(9420);
   const searchEmptySource = obj.useSearchEmptySource();
   if (inActionSheet.categoryType === GIFPickerResultTypes.FAVORITES) {
     const intl2 = tmp4(1236).intl;
@@ -33,9 +35,9 @@ const memoResult = importAllResult.memo(function GIFPickerNoResults(inActionShee
     const intl = tmp4(1236).intl;
     stringResult = intl.string(tmp4(1236).t["5dX4UM"]);
   }
-  const modalDismissGuardRefreshControl = safeAreaBottomKeyboardAware(9387).useModalDismissGuardRefreshControl();
+  const modalDismissGuardRefreshControl = safeAreaBottomKeyboardAware(9424).useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(6952).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(6990).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -49,6 +51,6 @@ const memoResult = importAllResult.memo(function GIFPickerNoResults(inActionShee
   obj[3] = jsx(safeAreaBottomKeyboardAware(1297).RefreshEmptyState, { source: searchEmptySource, body: stringResult, bodyStyle: tmp.emptyStateBody, containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateImage });
   return <BottomSheetScrollView source={searchEmptySource} body={stringResult} bodyStyle={tmp.emptyStateBody} containerStyle={tmp.emptyStateContainer} imageStyle={tmp.emptyStateImage} />;
 });
-const result = require("ME").fileFinishedImporting("modules/gif_picker/native/GIFPickerNoResults.tsx");
+const result = require("set").fileFinishedImporting("modules/gif_picker/native/GIFPickerNoResults.tsx");
 
 export default memoResult;

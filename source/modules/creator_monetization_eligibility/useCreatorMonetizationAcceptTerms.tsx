@@ -1,41 +1,39 @@
-// Module ID: 16905
-// Function ID: 16906
+// Module ID: 16998
+// Function ID: 16999
 // Name: useCreateCreatorMonetizationAcceptTermsRequest
-// Dependencies: [5, 32, 19, 1434, 1910, 1922, 589, 7227, 16906, 4274, 2]
+// Dependencies: [5, 32, 19, 1434, 1910, 1922, 589, 7265, 16999, 4278, 2]
 // Exports: default
 
-// Module 16905 (useCreateCreatorMonetizationAcceptTermsRequest)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { isGuildOwner } from "GuildNSFWContentLevel";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import closure_9 from "mergeGuildAvatar";
+// Module 16998 (useCreateCreatorMonetizationAcceptTermsRequest)
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "_slicedToArray" /* 32 */;
+import closure_6 from "noop" /* 19 */;
+import { isGuildOwner } from "GuildNSFWContentLevel" /* 1434 */;
+import closure_8 from "createGuildRecordFromRust" /* 1910 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
-const result = require("noop").fileFinishedImporting("modules/creator_monetization_eligibility/useCreatorMonetizationAcceptTerms.tsx");
+const result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/useCreatorMonetizationAcceptTerms.tsx");
 
 export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg1) {
-  let mergeGuildAvatar;
-  let tmp4;
   const _require = arg0;
-  let closure_1 = arg1;
+  closure_1 = arg1;
   let obj = _require(589);
-  const items = [createGuildRecordFromRust];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuild(closure_0));
+  const items = [closure_8];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getGuild(closure_0));
   const tmp2 = isExpeditedOnboardingGuild(React.useState(), 2);
-  let dependencyMap = tmp2[1];
-  [tmp4, mergeGuildAvatar] = isExpeditedOnboardingGuild(React.useState(false), 2);
+  dependencyMap = tmp2[1];
+  [tmp4, closure_4] = isExpeditedOnboardingGuild(React.useState(false), 2);
   let tmp3 = isExpeditedOnboardingGuild(React.useState(false), 2);
-  isExpeditedOnboardingGuild = _require(7227).useIsExpeditedOnboardingGuild(stateFromStores);
+  isExpeditedOnboardingGuild = _require(7265).useIsExpeditedOnboardingGuild(stateFromStores);
   obj = { canSubmitAcceptance: null, error: null, loading: null, submitAcceptTermsRequest: null };
-  let obj2 = _require(7227);
+  let obj2 = _require(7265);
   const items1 = [closure_9];
   const items2 = [stateFromStores];
   obj[0] = _require(589).useStateFromStores(items1, () => {
     let tmp3 = null != stateFromStores;
     if (tmp3) {
-      tmp3 = outer1_7(tmp2, tmp);
+      tmp3 = closure_1_7(tmp2, tmp);
     }
     return tmp3;
   }, items2);
@@ -54,7 +52,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -69,20 +67,20 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp4;
-            let closure_0 = tmp8;
-            if (null != outer1_0) {
+            closure_1 = tmp4;
+            closure_0 = tmp8;
+            if (null != closure_1_0) {
               v0(true);
               dependencyMap(undefined);
               dependencyMap = 2;
-              if (null != outer1_1) {
+              if (null != closure_1_1) {
                 v0 = 4;
                 c5 = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = outer1_2(16906).acceptCreatorMonetizationTerms(tmp56, tmp42);
+                obj1 = { value: null, done: false };
+                obj1[0] = closure_1_2(16999).acceptCreatorMonetizationTerms(tmp56, tmp42);
                 return obj1;
               } else {
-                let obj2 = outer1_2(16906);
+                let obj2 = closure_1_2(16999);
                 v0 = 3;
                 c5 = 1;
                 obj2 = { value: null, done: false };
@@ -96,7 +94,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
           if (2 === tmp8) {
             dependencyMap = 1;
             closure_0 = closure_2;
-            const tmp25 = new outer1_1(4274)(closure_0);
+            const tmp25 = new closure_1_1(4278)(closure_0);
             dependencyMap(tmp25);
           } else {
             if (3 === tmp8) {

@@ -1,25 +1,24 @@
-// Module ID: 8138
-// Function ID: 8139
+// Module ID: 8177
+// Function ID: 8178
 // Name: _showReportModal
-// Dependencies: [5, 8139, 8140, 5260, 8141, 2007, 2]
+// Dependencies: [5, 8178, 8179, 5265, 8180, 2008, 2]
 // Exports: hideReportModal, showReportModal
 
-// Module 8138 (_showReportModal)
-import asyncRequireImpl from "asyncRequireImpl";
+// Module 8177 (_showReportModal)
+import _modDef5265 from "module_5265" /* 5265 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
 function _showReportModal() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     const iter = (function*(arg0, arg1, arg2) {
-      let c2;
-      let isEligibleForFeedback;
       if (c7 === 2) {
         c7 = 3;
         HermesBuiltin.throwTypeError();
@@ -31,7 +30,7 @@ function _showReportModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -46,7 +45,7 @@ function _showReportModal() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_4 = tmp3;
+              closure_4 = tmp3;
               isEligibleForFeedback = tmp7;
               let paths;
               isEligibleForFeedback = undefined;
@@ -65,11 +64,11 @@ function _showReportModal() {
               throw arg1;
             } else if (arg0 === 2) {
               c7 = 3;
-              let obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
-              let c5 = 1;
+              c5 = 1;
               const REPORT_TO_MOD = lib(paths[1]).ReportMenuTypeSets.REPORT_TO_MOD;
               const hasItem = REPORT_TO_MOD.has(lib.name);
               const obj10 = lib(paths[2]);
@@ -136,7 +135,7 @@ function _showReportModal() {
     iter.next();
     return iter;
   });
-  const _showReportModal = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -146,7 +145,7 @@ function _showReportModal() {
   return applyArgumentsResult;
 }
 const IN_APP_REPORT_MODAL_KEY = "IN_APP_REPORT_MODAL_KEY";
-const result = require("getReportMenu").fileFinishedImporting("modules/in_app_reports/showReportModal.native.tsx");
+const result = require("set").fileFinishedImporting("modules/in_app_reports/showReportModal.native.tsx");
 
 export const showReportModal = function showReportModal(arg0, arg1, arg2) {
   const self = this;
@@ -159,5 +158,5 @@ export const showReportModal = function showReportModal(arg0, arg1, arg2) {
   return applyArgumentsResult;
 };
 export const hideReportModal = function hideReportModal() {
-  importDefault(5260).popWithKey(IN_APP_REPORT_MODAL_KEY);
+  _modDef5265.popWithKey(IN_APP_REPORT_MODAL_KEY);
 };

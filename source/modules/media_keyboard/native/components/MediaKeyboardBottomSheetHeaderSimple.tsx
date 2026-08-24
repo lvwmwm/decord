@@ -1,23 +1,23 @@
-// Module ID: 10274
-// Function ID: 10275
-// Dependencies: [19, 17, 1624, 21, 4661, 712, 10275, 2]
+// Module ID: 10313
+// Function ID: 10314
+// Dependencies: [19, 17, 1624, 21, 4668, 712, 10314, 2]
 
-// Module 10274
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 10313
+import ThemesDefault from "Themes" /* 712 */;
+import _modDef10314 from "module_10314" /* 10314 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 let obj = { headerHandleOnlyWrap: null };
-obj = { height: require("DRAG_HANDLE").HEADER_HANDLE_HEIGHT, paddingBottom: require("Themes").space.PX_4 };
+obj = { height: require("DRAG_HANDLE").HEADER_HANDLE_HEIGHT, paddingBottom: ThemesDefault.space.PX_4 };
 obj[0] = obj;
 let closure_4 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(function MediaKeyboardBottomSheetHeaderSimple(arg0) {
-  let animatedIndex;
-  let onPress;
+const memoResult = importAllResult.memo(function MediaKeyboardBottomSheetHeaderSimple(arg0) {
   ({ animatedIndex, onPress } = arg0);
-  return <View style={callback().headerHandleOnlyWrap}>{jsx(importDefault(10275), { animatedIndex, onPress })}</View>;
+  return <View style={callback().headerHandleOnlyWrap}>{jsx(_modDef10314, { animatedIndex, onPress })}</View>;
 });
-const result = require("DRAG_HANDLE").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardBottomSheetHeaderSimple.tsx");
+const result = require("set").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardBottomSheetHeaderSimple.tsx");
 
 export default memoResult;

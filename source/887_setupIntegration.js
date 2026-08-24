@@ -4,7 +4,9 @@
 // Dependencies: [823, 824, 848]
 
 // Module 887 (setupIntegration)
-const require = arg1;
+import getClient from "getClient" /* 848 */;
+
+require = arg1;
 let dependencyMap = arg6;
 function setupIntegration(on, name) {
   const _require = on;
@@ -27,7 +29,7 @@ function setupIntegration(on, name) {
     }
     if (typeof name.preprocessEvent === "function") {
       const preprocessEvent = name.preprocessEvent;
-      const dependencyMap = preprocessEvent.bind(name);
+      dependencyMap = preprocessEvent.bind(name);
       on.on("preprocessEvent", (arg0, arg1) => callback(arg0, arg1, closure_0));
     }
     if (typeof name.processEvent === "function") {
@@ -51,7 +53,7 @@ function setupIntegration(on, name) {
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 let items = [];
 arg5.addIntegration = function addIntegration(name) {
-  const client = require(848) /* getClient */.getClient();
+  const client = getClient.getClient();
   if (client) {
     client.addIntegration(name);
   } else if (tmp(823).DEBUG_BUILD) {
@@ -86,7 +88,7 @@ arg5.getIntegrationsToSetup = function getIntegrationsToSetup(defaultIntegration
     arg0.isDefaultInstance = true;
   });
   if (Array.isArray(integrations)) {
-    const items = [];
+    items = [];
     HermesBuiltin.arraySpread(integrations, HermesBuiltin.arraySpread(arr, 0));
     let arr2 = items;
   } else {
@@ -121,11 +123,11 @@ arg5.getIntegrationsToSetup = function getIntegrationsToSetup(defaultIntegration
 arg5.installedIntegrations = items;
 arg5.setupIntegration = setupIntegration;
 arg5.setupIntegrations = function setupIntegrations(arg0, arr) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const obj = {};
   const item = arr.forEach((arg0) => {
     if (arg0) {
-      outer1_3(closure_0, arg0, obj);
+      closure_1_3(closure_0, arg0, obj);
     }
   });
   return obj;

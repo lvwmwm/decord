@@ -4,14 +4,17 @@
 // Dependencies: [283, 66, 149, 134, 286, 135]
 
 // Module 282 (dispatchNativeEvent)
-const require = arg1;
+import map from "map" /* 66 */;
+import getHandler from "getHandler" /* 283 */;
+
+require = arg1;
 const module = arg2;
 const dependencyMap = arg6;
 arg5.default = function dispatchNativeEvent(self, arg1, timeStamp) {
-  let obj = require(283) /* getHandler */;
+  let obj = getHandler;
   const result = obj.processResponderEvent(arg1, self, timeStamp);
-  let tmp4 = require(66) /* map */.customBubblingEventTypes[arg1];
-  const tmp5 = require(66) /* map */.customDirectEventTypes[arg1];
+  let tmp4 = map.customBubblingEventTypes[arg1];
+  const tmp5 = map.customDirectEventTypes[arg1];
   if (null != tmp4) {
     let tmp6 = null != tmp4;
     if (tmp6) {
@@ -37,5 +40,5 @@ arg5.default = function dispatchNativeEvent(self, arg1, timeStamp) {
     tmp(135).dispatchTrustedEvent(self, tmp9);
     const tmpResult1 = tmp(135);
   }
-  require(283) /* getHandler */.rethrowCaughtError();
+  getHandler.rethrowCaughtError();
 };

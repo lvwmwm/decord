@@ -1,15 +1,18 @@
-// Module ID: 6907
-// Function ID: 6908
+// Module ID: 6945
+// Function ID: 6946
 // Name: getEmoji
-// Dependencies: [6727, 4034, 6908, 1370, 6909, 2]
+// Dependencies: [6764, 4037, 6946, 1370, 6947, 2]
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer
 
-// Module 6907 (getEmoji)
-import { EmojiDisambiguations } from "getEmojiToGroupId";
+// Module 6945 (getEmoji)
+import set from "set" /* 2 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
+import getEmojiToGroupId from "getEmojiToGroupId" /* 6764 */;
+import MAX_TRAITS from "MAX_TRAITS" /* 6946 */;
+import GuildProfileVisibility from "GuildProfileVisibility" /* 6947 */;
 
 function getEmoji(guildId) {
-  let emojiId;
-  let emojiName;
   ({ emojiId, emojiName } = guildId);
   const value = EmojiDisambiguations.get(guildId.guildId);
   let byId = null;
@@ -28,14 +31,13 @@ function getEmoji(guildId) {
   } else {
     byName = null;
     if (byId != emojiName) {
-      byName = importDefault(4034).getByName(emojiName);
-      const obj2 = importDefault(4034);
+      byName = parseRawEmojiObjectDefault.getByName(emojiName);
+      const obj2 = parseRawEmojiObjectDefault;
     }
   }
 }
 function buildGuildProfileTraitsFromServer(arg0, arg1) {
-  let position;
-  const array = new Array(require(6908) /* MAX_TRAITS */.MAX_TRAITS);
+  const array = new Array(MAX_TRAITS.MAX_TRAITS);
   const fillResult = array.fill(closure_5);
   const iter = arg1[Symbol.iterator]();
   const nextResult = iter.next();
@@ -46,7 +48,7 @@ function buildGuildProfileTraitsFromServer(arg0, arg1) {
       let tmp5 = nextResult;
       let tmp6 = require;
       let tmp7 = dependencyMap;
-      tmp4 = tmp3.position >= require(6908) /* MAX_TRAITS */.MAX_TRAITS;
+      tmp4 = tmp3.position >= MAX_TRAITS.MAX_TRAITS;
     }
     if (!tmp4) {
       let tmp8 = nextResult;
@@ -65,9 +67,6 @@ function buildGuildProfileTraitsFromServer(arg0, arg1) {
   return fillResult;
 }
 function buildGuildProfileFromServer(profile) {
-  let brand_color_primary;
-  let features;
-  let traits;
   let reduced = { id: profile.id, name: profile.name, description: null, icon: null, customBanner: null, onlineCount: null, memberCount: null, brandColorPrimary: null, visibility: null, traits: null, gameApplicationIds: null, gameActivity: null, games: null, features: null, tag: null, badge: null, badgeColorPrimary: null, badgeColorSecondary: null, badgeHash: null, premiumSubscriberCount: null, premiumTier: null };
   let str = profile.description;
   if (str == null) {
@@ -100,8 +99,6 @@ function buildGuildProfileFromServer(profile) {
     const _Object = Object;
     const entries = Object.entries(game_activity);
     reduced = entries.reduce((arg0, arg1) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg1;
       arg0[tmp] = { level: tmp2.activity_level, score: tmp2.activity_score };
       return arg0;
@@ -116,8 +113,9 @@ function buildGuildProfileFromServer(profile) {
   ({ tag: obj[14], badge: obj[15], badge_color_primary: obj[16], badge_color_secondary: obj[17], badge_hash: obj[18], premium_subscription_count: obj[19], premium_tier: obj[20] } = profile);
   return reduced;
 }
+const EmojiDisambiguations = getEmojiToGroupId.EmojiDisambiguations;
 let closure_5 = { label: "" };
-const result = require("MAX_TRAITS").fileFinishedImporting("modules/guild_profile/GuildProfileBuilders.tsx");
+const result = set.fileFinishedImporting("modules/guild_profile/GuildProfileBuilders.tsx");
 
 export { buildGuildProfileFromServer };
 export const buildGuildProfileUpdateForServer = function buildGuildProfileUpdateForServer(name) {
@@ -177,7 +175,7 @@ export const buildGuildProfileUpdateForServer = function buildGuildProfileUpdate
       }
       return tmp2;
     });
-    obj.traits = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+    obj.traits = mapped.filter(isDiscordFrontendDevelopment.isNotNullish);
   }
   if (null != name.gameApplicationIds) {
     obj.game_application_ids = name.gameApplicationIds;
@@ -203,9 +201,6 @@ export const buildTopGamesFromServer = function buildTopGamesFromServer(top_game
   }, {});
 };
 export const buildGuildProfileFromInvite = function buildGuildProfileFromInvite(approximate_presence_count) {
-  let description;
-  let guild;
-  let profile;
   ({ guild, profile } = approximate_presence_count);
   let tmp = null;
   if (null != profile) {
@@ -236,7 +231,7 @@ export const buildGuildProfileFromInvite = function buildGuildProfileFromInvite(
         num = 0;
       }
       obj[6] = num;
-      obj[7] = require(6909) /* GuildProfileVisibility */.GuildProfileVisibility.NOT_SPECIFIED;
+      obj[7] = GuildProfileVisibility.GuildProfileVisibility.NOT_SPECIFIED;
       obj[8] = [];
       obj[9] = [];
       obj[10] = {};

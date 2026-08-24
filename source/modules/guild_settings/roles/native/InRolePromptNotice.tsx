@@ -1,70 +1,72 @@
-// Module ID: 16851
-// Function ID: 16852
+// Module ID: 16944
+// Function ID: 16945
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 676, 21, 4661, 712, 1403, 16852, 1297, 8916, 4734, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 1403, 16945, 1297, 8953, 4739, 1236, 2]
 // Exports: default
 
-// Module 16851 (InRolePromptNotice)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { RoleFlags } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16944 (InRolePromptNotice)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import hasFlag from "hasFlag" /* 1403 */;
+import registerAssetDefault from "registerAsset" /* 8953 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { RoleFlags } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { promptRow: null, promptText: null, icon: null };
-createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_4, flexDirection: "row", alignItems: "center" };
+createCacheKey = { paddingHorizontal: ThemesDefault.space.PX_16, paddingBottom: ThemesDefault.space.PX_4, flexDirection: "row", alignItems: "center" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginLeft: require("Themes").space.PX_4 };
+createCacheKey[1] = { marginLeft: ThemesDefault.space.PX_4 };
 createCacheKey[2] = { height: 16, width: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { marginLeft: require("Themes").space.PX_4 };
-const result = require("ME").fileFinishedImporting("modules/guild_settings/roles/native/InRolePromptNotice.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { marginLeft: ThemesDefault.space.PX_4 };
+const result = require("set").fileFinishedImporting("modules/guild_settings/roles/native/InRolePromptNotice.tsx");
 
 export default function InRolePromptNotice(role) {
   role = role.role;
-  let string = createCacheKey();
+  let string = callback();
   let stringResult = dependencyMap;
-  let obj = require(1403) /* hasFlag */;
+  let obj = hasFlag;
   if (!obj.hasFlag(role.flags, RoleFlags.IN_PROMPT)) {
     return null;
   } else {
     obj = { style: null, children: null };
     obj[0] = string.promptRow;
-    const tmpResult = tmp(16852);
+    const tmpResult = tmp(16945);
     let Icon = tmp(1297).Icon;
     if (isRolePowerfulResult) {
       obj = { style: null, source: null, color: null };
       obj[0] = string.icon;
-      obj[1] = importDefault(8916);
-      obj[2] = importDefault(712).unsafe_rawColors.YELLOW_300;
+      obj[1] = registerAssetDefault;
+      obj[2] = ThemesDefault.unsafe_rawColors.YELLOW_300;
       const items = [tmp6(Icon, obj), ];
-      const obj1 = { style: null, variant: "text-sm/medium", children: null };
+      obj1 = { style: null, variant: "text-sm/medium", children: null };
       obj1[0] = string.promptText;
       const intl2 = tmp(1236).intl;
       string = intl2.string;
       stringResult = string(tmp(1236).t.YRbgXz);
       obj1[2] = stringResult;
-      Icon = tmp6(tmp(4734).Text, obj1);
+      Icon = tmp6(tmp(4739).Text, obj1);
       items[1] = Icon;
       obj[1] = items;
       let tmp4Result = tmp4(tmp5, obj);
     } else {
       const obj2 = { style: null, source: null };
       obj2[0] = string.icon;
-      obj2[1] = importDefault(8916);
+      obj2[1] = registerAssetDefault;
       const items1 = [tmp6(Icon, obj2), ];
       const obj3 = { style: null, variant: "text-sm/medium", children: null };
       obj3[0] = string.promptText;
       const intl = tmp(1236).intl;
       obj3[2] = intl.string(tmp(1236).t.mqeO2v);
-      items1[1] = tmp6(tmp(4734).Text, obj3);
+      items1[1] = tmp6(tmp(4739).Text, obj3);
       obj[1] = items1;
       tmp4Result = tmp4(tmp5, obj);
     }
-    isRolePowerfulResult = tmp(16852).isRolePowerful(role);
+    isRolePowerfulResult = tmp(16945).isRolePowerful(role);
   }
 };

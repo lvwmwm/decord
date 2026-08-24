@@ -1,21 +1,22 @@
-// Module ID: 5358
-// Function ID: 5359
+// Module ID: 5363
+// Function ID: 5364
 // Name: _fetchUserEntitlements
-// Dependencies: [5, 676, 709, 530, 4384, 2]
+// Dependencies: [5, 676, 709, 530, 4388, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 5358 (_fetchUserEntitlements)
-import set from "set";
-import { Endpoints } from "ME";
+// Module 5363 (_fetchUserEntitlements)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _fetchUserEntitlements() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
       if (c6 === 2) {
         c6 = 3;
@@ -28,7 +29,7 @@ function _fetchUserEntitlements() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -62,7 +63,7 @@ function _fetchUserEntitlements() {
                 flag3 = true;
               }
               entitlementType = tmp41.entitlementType;
-              let c4;
+              c4 = undefined;
               c5 = 1;
               c6 = 1;
               return { value: "ct", done: true };
@@ -73,7 +74,7 @@ function _fetchUserEntitlements() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -132,7 +133,7 @@ function _fetchUserEntitlements() {
     iter.next();
     return iter;
   });
-  const _fetchUserEntitlements = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -145,17 +146,17 @@ function _fetchGiftableEntitlements() {
   const self = this;
   const tmp = callback(function*() {
     const callback = tmp3;
-    outer1_1(outer1_2[2]).dispatch({ type: "ENTITLEMENTS_GIFTABLE_FETCH" });
-    let c3 = 1;
-    const obj8 = outer1_1(outer1_2[2]);
-    const obj1 = { url: null, rejectWithError: true };
+    closure_1_1(closure_1_2[2]).dispatch({ type: "ENTITLEMENTS_GIFTABLE_FETCH" });
+    c3 = 1;
+    const obj8 = closure_1_1(closure_1_2[2]);
+    obj1 = { url: null, rejectWithError: true };
     obj1[0] = constants.ENTITLEMENTS_GIFTABLE;
-    yield outer1_0(outer1_2[4]).httpGetWithCountryCodeQuery(obj1);
+    yield closure_1_0(closure_1_2[4]).httpGetWithCountryCodeQuery(obj1);
     if (1 === tmp7) {
       c3 = 0;
       let obj3 = callback(709);
       obj3.dispatch({ type: "ENTITLEMENTS_GIFTABLE_FETCH_FAIL" });
-      let c5 = 3;
+      c5 = 3;
     } else if (arg0 === 1) {
       c5 = 3;
       throw arg1;
@@ -170,7 +171,7 @@ function _fetchGiftableEntitlements() {
     c3 = 0;
     return arg1;
   });
-  const _fetchGiftableEntitlements = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -179,7 +180,7 @@ function _fetchGiftableEntitlements() {
   }
   return applyArgumentsResult;
 }
-const result = require("dispatcher").fileFinishedImporting("actions/EntitlementActionCreators.tsx");
+const result = require("set").fileFinishedImporting("actions/EntitlementActionCreators.tsx");
 
 export const fetchUserEntitlementsForApplication = function fetchUserEntitlementsForApplication(closure_18, arg1) {
   const _require = closure_18;
@@ -187,9 +188,9 @@ export const fetchUserEntitlementsForApplication = function fetchUserEntitlement
   if (arg1 === undefined) {
     flag = true;
   }
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj.wait(() => {
-    let obj = outer1_1(outer1_2[2]);
+    let obj = closure_1_1(closure_1_2[2]);
     obj = { type: "ENTITLEMENT_FETCH_APPLICATION_START", applicationId: closure_0 };
     obj.dispatch(obj);
   });
@@ -197,12 +198,12 @@ export const fetchUserEntitlementsForApplication = function fetchUserEntitlement
   obj = { url: Endpoints.ENTITLEMENTS_FOR_APPLICATION(closure_18), oldFormErrors: true, query: { exclude_consumed: flag }, rejectWithError: true };
   const value = HTTP.get(obj);
   return value.then((body) => {
-    let obj = outer1_1(outer1_2[2]);
+    let obj = closure_1_1(closure_1_2[2]);
     obj = { type: "ENTITLEMENT_FETCH_APPLICATION_SUCCESS", applicationId: closure_0, entitlements: body.body };
     obj.dispatch(obj);
     return body.body;
   }).catch(() => {
-    let obj = outer1_1(outer1_2[2]);
+    let obj = closure_1_1(closure_1_2[2]);
     obj = { type: "ENTITLEMENT_FETCH_APPLICATION_FAIL", applicationId: closure_0 };
     obj.dispatch(obj);
   });

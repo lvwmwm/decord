@@ -1,26 +1,30 @@
-// Module ID: 14088
-// Function ID: 14089
+// Module ID: 14156
+// Function ID: 14157
 // Name: PasskeyUpsellPromoModal
-// Dependencies: [19, 14078, 21, 14081, 1236, 11115, 2]
+// Dependencies: [19, 14146, 21, 14149, 1236, 11154, 2]
 // Exports: default
 
-// Module 14088 (PasskeyUpsellPromoModal)
-import "noop";
-import { WebAuthnScreens } from "WebAuthnScreens";
-import { jsx } from "jsxProd";
+// Module 14156 (PasskeyUpsellPromoModal)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Modal from "Modal" /* 11154 */;
+import getScreens from "getScreens" /* 14149 */;
+import { WebAuthnScreens } from "WebAuthnScreens" /* 14146 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/webauthn/native/PasskeyUpsellPromoModal.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/webauthn/native/PasskeyUpsellPromoModal.tsx");
 
 export default function PasskeyUpsellPromoModal(arg0) {
-  let obj = require(14081) /* getScreens */;
+  let obj = getScreens;
   obj = { name: WebAuthnScreens.NAME, params: null };
   obj = {};
   const screens = obj.getScreens({ isModal: true });
   const merged = Object.assign(arg0);
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj.name = intl.string(require(1236) /* getSystemLocale */.t["8H5RmH"]);
+  const intl = getSystemLocale.intl;
+  obj.name = intl.string(getSystemLocale.t["8H5RmH"]);
   obj[1] = obj;
   const initialRouteStack = [obj];
-  return jsx(require(11115) /* Modal */.Modal, { screens, initialRouteStack });
+  return jsx(Modal.Modal, { screens, initialRouteStack });
 };

@@ -1,14 +1,16 @@
-// Module ID: 8379
-// Function ID: 8380
+// Module ID: 8418
+// Function ID: 8419
 // Name: SafetyScannedUploadSurface
-// Dependencies: [8380, 2]
+// Dependencies: [8419, 2]
 // Exports: getSafetyScannedUploadSurfaceForProfileCustomization
 
-// Module 8379 (SafetyScannedUploadSurface)
-import { UploadTypes } from "UploadTypes";
+// Module 8418 (SafetyScannedUploadSurface)
+import set from "set" /* 2 */;
+import UploadTypes2 from "UploadTypes" /* 8419 */;
 
+const UploadTypes = UploadTypes2.UploadTypes;
 const obj = { USER_DEFAULT_PROFILE_AVATAR: "USER_DEFAULT_PROFILE_AVATAR", USER_DEFAULT_PROFILE_BANNER: "USER_DEFAULT_PROFILE_BANNER", USER_GUILD_PROFILE_AVATAR: "USER_GUILD_PROFILE_AVATAR", USER_GUILD_PROFILE_BANNER: "USER_GUILD_PROFILE_BANNER", GUILD_ICON: "GUILD_ICON", GUILD_BANNER: "GUILD_BANNER", GUILD_DISCOVERY_SPLASH: "GUILD_DISCOVERY_SPLASH", GUILD_INVITE_SPLASH: "GUILD_INVITE_SPLASH", EMOJI: "EMOJI", STICKER: "STICKER" };
-const result = require("set").fileFinishedImporting("lib/uploader_inline/safetyScannedUploadSurfaces.tsx");
+const result = set.fileFinishedImporting("lib/uploader_inline/safetyScannedUploadSurfaces.tsx");
 
 export const SafetyScannedUploadSurface = obj;
 export const getSafetyScannedUploadSurfaceForProfileCustomization = function getSafetyScannedUploadSurfaceForProfileCustomization(arg0, arg1) {

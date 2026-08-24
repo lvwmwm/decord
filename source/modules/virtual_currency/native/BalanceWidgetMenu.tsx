@@ -1,42 +1,42 @@
-// Module ID: 15149
-// Function ID: 15150
+// Module ID: 15213
+// Function ID: 15214
 // Name: BalanceWidget
-// Dependencies: [19, 17, 676, 678, 1388, 6716, 21, 1367, 5433, 4734, 1236, 10261, 1377, 698, 10947, 6719, 15150, 9252, 4342, 10411, 2007, 7159, 5300, 10410, 4196, 4760, 4661, 712, 2]
+// Dependencies: [19, 17, 676, 678, 1388, 6753, 21, 1367, 5438, 4739, 1236, 10300, 1377, 698, 10986, 6756, 15214, 9289, 4346, 10450, 2008, 7197, 5305, 10449, 4200, 4765, 4668, 712, 2]
 // Exports: default
 
-// Module 15149 (BalanceWidget)
-import ref from "ref";
-import { View } from "module_9252";
-import { AnalyticEvents } from "ME";
-import { CollectiblesMobileShopScreen as closure_6 } from "items";
-import ContentDismissActionType from "ContentDismissActionType";
-import { RewardFilterTypes } from "QuestsExperimentLocations";
-import jsxProd from "QUICK_SWITCHER";
-import createCacheKey from "createCacheKey";
+// Module 15213 (BalanceWidget)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4200 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import _mod9289 from "module_9289" /* 9289 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10300 */;
+import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 10449 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { CollectiblesMobileShopScreen as closure_6 } from "items" /* 678 */;
+import ContentDismissActionType from "ContentDismissActionType" /* 1388 */;
+import { RewardFilterTypes } from "QuestsExperimentLocations" /* 6753 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let error;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function BalanceWidget(arg0) {
-  let accessibilityLabel;
-  let accessibilityState;
-  let children;
-  let onPress;
-  let style;
   ({ onPress, style, accessibilityLabel, accessibilityState, children } = arg0);
-  const tmp = callback3(importDefault(1367)("BalanceWidgetMenu"));
+  const tmp = callback3(useIsMobileVisualRefreshExperimentEnabledDefault("BalanceWidgetMenu"));
   let obj = { onPress, style: items, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityState, activeOpacity: 0.8, children: null };
   items = [tmp.pressable, style];
   obj = { variant: "text-sm/semibold", color: "text-default", style: tmp.label, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.gGtZpz);
-  const items1 = [callback(require(4734) /* Text */.Text, obj), ];
+  const intl = getSystemLocale.intl;
+  obj[3] = intl.string(getSystemLocale.t.gGtZpz);
+  const items1 = [callback(Text.Text, obj), ];
   obj = { style: tmp.pill, children };
   items1[1] = callback(View, obj);
   obj[7] = items1;
-  return callback2(require(5433) /* PressableBase */.PressableOpacity, obj);
+  return callback2(PressableBase.PressableOpacity, obj);
 }
 class OrbsOnboardingMenuDismissibleContent {
   constructor(arg0) {
@@ -46,16 +46,16 @@ class OrbsOnboardingMenuDismissibleContent {
     items = [];
     items[0] = require("DismissibleContent").DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL;
     obj[0] = items;
-    obj[1] = AnalyticEvents.VIRTUAL_CURRENCY_MOBILE_ONBOARDING;
+    obj[1] = closure_8.VIRTUAL_CURRENCY_MOBILE_ONBOARDING;
     obj[2] = function children(markAsDismissed) {
       markAsDismissed = markAsDismissed.markAsDismissed;
-      if (markAsDismissed.visibleContent === style(outer1_2[12]).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL) {
+      if (markAsDismissed.visibleContent === style(closure_1_2[12]).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL) {
         function handleOnboardingPress() {
-          markAsDismissed(outer1_7.TAKE_ACTION);
-          let obj = outer1_1(outer1_2[13]);
-          obj.track(outer1_5.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
-          obj = { filter: outer1_9.VIRTUAL_CURRENCY, fromContent: markAsDismissed(outer1_2[15]).QuestContent.MOBILE_ORBS_ONBOARDING_DC };
-          markAsDismissed(outer1_2[14]).openQuestHome(obj);
+          markAsDismissed(closure_1_7.TAKE_ACTION);
+          let obj = closure_1_1(closure_1_2[13]);
+          obj.track(closure_1_5.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
+          obj = { filter: closure_1_9.VIRTUAL_CURRENCY, fromContent: markAsDismissed(closure_1_2[15]).QuestContent.MOBILE_ORBS_ONBOARDING_DC };
+          markAsDismissed(closure_1_2[14]).openQuestHome(obj);
         }
         let obj = { onPress: null, style: null, accessibilityLabel: null, children: null };
         obj[0] = handleOnboardingPress;
@@ -64,8 +64,8 @@ class OrbsOnboardingMenuDismissibleContent {
         obj[2] = intl.string(tmp(tmp2[10]).t.Kt2QDh);
         obj = { onPress: null, accessible: false };
         obj[0] = handleOnboardingPress;
-        obj[3] = outer1_10(outer1_1(tmp2[16]), obj);
-        return outer1_10(outer1_12, obj);
+        obj[3] = closure_1_10(closure_1_1(tmp2[16]), obj);
+        return closure_1_10(closure_1_12, obj);
       } else {
         return null;
       }
@@ -75,45 +75,45 @@ class OrbsOnboardingMenuDismissibleContent {
 }
 function BalanceWidgetMenu(style) {
   let str;
-  let obj = str(9252);
+  let obj = str(9289);
   str = obj.useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = React.useCallback(() => {
-    let obj = outer1_1(outer1_2[13]);
-    obj.track(outer1_5.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
-    let obj1 = outer1_1(outer1_2[18]);
+    let obj = closure_1_1(closure_1_2[13]);
+    obj.track(closure_1_5.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
+    obj1 = closure_1_1(closure_1_2[18]);
     obj = { balance: str, primaryButtonConfig: null, secondaryButtonConfig: null, source: null };
     obj = { buttonText: null, onButtonPress: null };
-    const intl = str(outer1_2[10]).intl;
-    obj[0] = intl.string(str(outer1_2[10]).t.WrzJBf);
+    const intl = str(closure_1_2[10]).intl;
+    obj[0] = intl.string(str(closure_1_2[10]).t.WrzJBf);
     obj[1] = function onButtonPress() {
-      let obj = outer1_1(outer1_2[13]);
-      obj = { type: "GO_TO_SHOP", source: outer1_1(outer1_2[21]).YOU_SCREEN, balance: closure_0 };
-      obj.track(outer1_5.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
-      outer1_1(outer1_2[18]).hideActionSheet();
-      const obj3 = outer1_1(outer1_2[18]);
+      let obj = closure_1_1(closure_1_2[13]);
+      obj = { type: "GO_TO_SHOP", source: closure_1_1(closure_1_2[21]).YOU_SCREEN, balance: closure_0 };
+      obj.track(closure_1_5.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
+      closure_1_1(closure_1_2[18]).hideActionSheet();
+      const obj3 = closure_1_1(closure_1_2[18]);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [outer1_1(outer1_2[21]).COLLECTIBLES_SHOP];
+      const items = [closure_1_1(closure_1_2[21]).COLLECTIBLES_SHOP];
       obj[0] = items;
-      obj[1] = outer1_1(outer1_2[21]).COLLECTIBLES_SHOP;
-      obj[2] = outer1_6.ORBS;
-      const result = outer1_0(outer1_2[22]).openCollectiblesShopMobile(obj);
+      obj[1] = closure_1_1(closure_1_2[21]).COLLECTIBLES_SHOP;
+      obj[2] = closure_1_6.ORBS;
+      const result = closure_1_0(closure_1_2[22]).openCollectiblesShopMobile(obj);
     };
     obj[1] = obj;
     obj1 = { buttonText: null, onButtonPress: null };
-    const intl2 = str(outer1_2[10]).intl;
-    obj1[0] = intl2.string(str(outer1_2[10]).t.SymzJC);
+    const intl2 = str(closure_1_2[10]).intl;
+    obj1[0] = intl2.string(str(closure_1_2[10]).t.SymzJC);
     obj1[1] = function onButtonPress() {
-      let obj = outer1_1(outer1_2[13]);
-      obj = { type: "GO_TO_QUEST_HOME", source: outer1_1(outer1_2[21]).YOU_SCREEN, balance: closure_0 };
-      obj.track(outer1_5.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
-      outer1_1(outer1_2[18]).hideActionSheet();
-      const obj3 = outer1_1(outer1_2[18]);
-      obj = { mergeExistingRoutes: true, filter: outer1_9.VIRTUAL_CURRENCY, fromContent: outer1_0(outer1_2[15]).QuestContent.ORBS_BALANCE_MENU };
-      outer1_0(outer1_2[14]).openQuestHome(obj);
+      let obj = closure_1_1(closure_1_2[13]);
+      obj = { type: "GO_TO_QUEST_HOME", source: closure_1_1(closure_1_2[21]).YOU_SCREEN, balance: closure_0 };
+      obj.track(closure_1_5.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
+      closure_1_1(closure_1_2[18]).hideActionSheet();
+      const obj3 = closure_1_1(closure_1_2[18]);
+      obj = { mergeExistingRoutes: true, filter: closure_1_9.VIRTUAL_CURRENCY, fromContent: closure_1_0(closure_1_2[15]).QuestContent.ORBS_BALANCE_MENU };
+      closure_1_0(closure_1_2[14]).openQuestHome(obj);
     };
     obj[2] = obj1;
-    obj[3] = outer1_1(outer1_2[21]).YOU_SCREEN;
+    obj[3] = closure_1_1(closure_1_2[21]).YOU_SCREEN;
     obj1.openLazy(() => callback(paths[20])(paths[19], paths.paths).then((arg0) => arg0.default), "BalanceWidgetMenu", obj);
   }, items);
   obj = { onPress: callback, style: style.style, accessibilityLabel: null, children: null };
@@ -126,13 +126,13 @@ function BalanceWidgetMenu(style) {
     str2 = "";
   }
   obj[2] = intl.formatToPlainString(str(1236).t.zPaLL9, { balance: str2 });
-  obj[3] = closure_10(importDefault(10410), { balance: str, onPress: callback, accessible: false });
+  obj[3] = closure_10(BalanceWidgetPillButtonDefault, { balance: str, onPress: callback, accessible: false });
   return closure_10(BalanceWidget, obj);
 }
-({ ContentDismissActionType: error, DismissibleContentGroupName: metroImportAll } = ContentDismissActionType);
+({ ContentDismissActionType: error, DismissibleContentGroupName: closure_8 } = ContentDismissActionType);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_15 = createCacheKey.createStyles((arg0) => {
-  const pressable = { flex: 1, flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: importDefault(712).space.PX_8 };
+  const pressable = { flex: 1, flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: ThemesDefault.space.PX_8 };
   if (arg0) {
     let obj = { paddingHorizontal: null, paddingVertical: null };
     obj[0] = tmp(712).space.PX_8;
@@ -145,12 +145,12 @@ let closure_15 = createCacheKey.createStyles((arg0) => {
   pressable.borderRadius = arg0 ? radii.md : radii.lg;
   return { pressable, label: { flex: 1 }, pill: { alignItems: "center" }, loadingContainer: { height: 36, justifyContent: "center" } };
 });
-let result = require("ME").fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
+let result = require("set").fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
 
 export default function BalanceWidgetMenuWrapper(style) {
-  let obj = require(9252);
+  let obj = _mod9289;
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
-  require(4196) /* UNSAFE_isDismissibleContentDismissed */;
+  UNSAFE_isDismissibleContentDismissed;
   if (null == balance) {
     obj = { onPress: null, style: null, accessibilityLabel: null, accessibilityState: null, children: null };
     obj[0] = function onPress() {
@@ -162,7 +162,7 @@ export default function BalanceWidgetMenuWrapper(style) {
     obj[3] = { busy: true };
     obj = { style: null, children: null };
     obj[0] = tmp2.loadingContainer;
-    obj[1] = callback(tmp3(4760).Ellipsis, { variant: "primary", size: "sm" });
+    obj[1] = callback(tmp3(4765).Ellipsis, { variant: "primary", size: "sm" });
     obj[4] = callback(View, obj);
     let tmp6Result = callback(BalanceWidget, obj);
   } else {
@@ -170,7 +170,7 @@ export default function BalanceWidgetMenuWrapper(style) {
       if (!tmp5) {
         let tmp7 = OrbsOnboardingMenuDismissibleContent;
       }
-      const obj1 = {};
+      obj1 = {};
       const merged = Object.assign(style);
       tmp6Result = tmp6(tmp7, obj1);
     }

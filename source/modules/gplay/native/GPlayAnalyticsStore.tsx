@@ -1,22 +1,23 @@
-// Module ID: 7618
-// Function ID: 7619
+// Module ID: 7656
+// Function ID: 7657
 // Name: setGPlayAnalytics
 // Dependencies: [644, 705, 2]
 // Exports: deleteGPlayAnalytics, setGPlayAnalytics
 
-// Module 7618 (setGPlayAnalytics)
-import keys from "keys";
+// Module 7656 (setGPlayAnalytics)
+import set from "set" /* 2 */;
+import keys from "keys" /* 644 */;
 
 let closure_2 = Object.freeze({ analyticsByProductId: {} });
 let obj = keys.create(() => closure_2);
-const result = require("set").fileFinishedImporting("modules/gplay/native/GPlayAnalyticsStore.tsx");
+const result = set.fileFinishedImporting("modules/gplay/native/GPlayAnalyticsStore.tsx");
 
 export const setGPlayAnalytics = function setGPlayAnalytics(arg0, arg1) {
   const _require = arg0;
-  const dependencyMap = arg1;
+  dependencyMap = arg1;
   _require(705).batchUpdates(() => {
-    outer1_3.setState((analyticsByProductId) => {
-      let obj = { analyticsByProductId: null };
+    closure_1_3.setState((analyticsByProductId) => {
+      obj = { analyticsByProductId: null };
       obj = {};
       const merged = Object.assign(analyticsByProductId.analyticsByProductId);
       obj[closure_0] = closure_1;
@@ -28,7 +29,7 @@ export const setGPlayAnalytics = function setGPlayAnalytics(arg0, arg1) {
 export const deleteGPlayAnalytics = function deleteGPlayAnalytics(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => {
-    outer1_3.setState((analyticsByProductId) => {
+    closure_1_3.setState((analyticsByProductId) => {
       analyticsByProductId = {};
       const merged = Object.assign(analyticsByProductId.analyticsByProductId);
       delete tmp2[tmp];

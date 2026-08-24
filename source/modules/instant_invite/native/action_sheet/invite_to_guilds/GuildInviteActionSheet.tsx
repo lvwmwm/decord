@@ -1,38 +1,40 @@
-// Module ID: 12333
-// Function ID: 12334
+// Module ID: 12385
+// Function ID: 12386
 // Name: EmptyGuildList
-// Dependencies: [32, 19, 17, 21, 4661, 712, 1297, 1236, 12334, 12335, 12331, 4734, 5441, 9450, 12336, 6949, 6950, 7337, 8920, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 1297, 1236, 12386, 12387, 12383, 4739, 5446, 9487, 12388, 6987, 6988, 7375, 8957, 2]
 // Exports: default
 
-// Module 12333 (EmptyGuildList)
-import _slicedToArray from "_slicedToArray";
-import set from "set";
-import { View } from "SearchField";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12385 (EmptyGuildList)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import isGuildMemberDefault from "isGuildMember" /* 8957 */;
+import registerAssetDefault from "registerAsset" /* 12386 */;
+import registerAssetDefault2 from "registerAsset" /* 12387 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function EmptyGuildList() {
-  const obj = { containerStyle: createCacheKey().emptyStateContainer, title: null, body: null, darkSource: null, lightSource: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["2bfiLk"]);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.V6nAfF);
-  obj[3] = importDefault(12334);
-  obj[4] = importDefault(12335);
-  return callback2(require(1297) /* Button */.ThemedEmptyState, obj);
+  const obj = { containerStyle: callback4().emptyStateContainer, title: null, body: null, darkSource: null, lightSource: null };
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t["2bfiLk"]);
+  const intl2 = getSystemLocale.intl;
+  obj[2] = intl2.string(getSystemLocale.t.V6nAfF);
+  obj[3] = registerAssetDefault;
+  obj[4] = registerAssetDefault2;
+  return callback2(Button.ThemedEmptyState, obj);
 }
 function GuildList(recipientId) {
-  let arr;
-  let arr2;
   recipientId = recipientId.recipientId;
   const source = recipientId.source;
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
-  dependencyMap = createCacheKey();
-  let obj = recipientId(12331);
+  dependencyMap = callback4();
+  let obj = recipientId(12383);
   [arr, arr2] = callback(obj.useServerInviteRows(recipientId, recipientId.query), 2);
   if (0 === arr.length) {
     if (0 === arr2.length) {
@@ -45,11 +47,8 @@ function GuildList(recipientId) {
     callback = tmp5;
     obj = { renderItem: null, contentContainerStyle: null, sections: null, renderSectionHeader: null, stickySectionHeadersEnabled: true, keyExtractor: null, ListEmptyComponent: null };
     obj[0] = function renderItem(arg0) {
-      let end;
-      let item;
-      let start;
       ({ item, start, end } = arg0);
-      return outer1_6(source(sectionTitle[14]), { row: item, recipientId, source, start, end });
+      return closure_1_6(source(sectionTitle[14]), { row: item, recipientId, source, start, end });
     };
     let num = 0;
     if (tmp5) {
@@ -57,19 +56,19 @@ function GuildList(recipientId) {
     }
     obj = { paddingTop: null, paddingBottom: null };
     obj[0] = num;
-    obj[1] = source(5441)().insets.bottom + source(712).space.PX_16;
+    obj[1] = source(5446)().insets.bottom + source(712).space.PX_16;
     obj[1] = obj;
     obj[2] = items;
     obj[3] = function renderSectionHeader(section) {
       section = section.section;
       let tmp = null;
-      if (!c3) {
+      if (!closure_3) {
         let tmp2 = null;
         if (section.data.length > 0) {
           const obj = { style: null, variant: "text-sm/semibold", color: "text-default", children: null };
           obj[0] = sectionTitle.sectionTitle;
           obj[3] = section.title;
-          tmp2 = outer1_6(recipientId(sectionTitle[11]).Text, obj);
+          tmp2 = closure_1_6(recipientId(sectionTitle[11]).Text, obj);
         }
         tmp = tmp2;
       }
@@ -79,9 +78,9 @@ function GuildList(recipientId) {
       return guild.guild.id;
     };
     obj[6] = EmptyGuildList;
-    return closure_6(tmp(9450).UserProfileStackedActionSheetSectionList, obj);
+    return closure_6(tmp(9487).UserProfileStackedActionSheetSectionList, obj);
   }
-  const obj1 = { title: null, data: null };
+  obj1 = { title: null, data: null };
   const intl = tmp(1236).intl;
   obj1[0] = intl.string(recipientId(1236).t["u+Ithu"]);
   obj1[1] = arr;
@@ -94,30 +93,28 @@ function GuildList(recipientId) {
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { content: null, searchbarWrapper: null, sectionTitle: null, emptyStateContainer: null };
-createCacheKey = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { rowGap: 8, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-let obj1 = { rowGap: 8, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-createCacheKey[2] = { paddingBottom: 6, paddingTop: 24, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[1] = { rowGap: 8, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let obj1 = { rowGap: 8, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[2] = { paddingBottom: 6, paddingTop: 24, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createCacheKey[3] = { margin: 24 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { paddingBottom: 6, paddingTop: 24, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/action_sheet/invite_to_guilds/GuildInviteActionSheet.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { paddingBottom: 6, paddingTop: 24, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const result = require("set").fileFinishedImporting("modules/instant_invite/native/action_sheet/invite_to_guilds/GuildInviteActionSheet.tsx");
 
 export default function GuildInviteActionSheet(arg0) {
-  let recipientId;
-  let source;
   let _require;
   ({ recipientId, source } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback4();
   const tmp2 = callback(React.useState(""), 2);
   _require = tmp2[1];
   let obj = { title: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.HvoZQD);
-  obj = { scrollable: true, startExpanded: true, header: callback2(_require(6949).BottomSheetTitleHeader, obj), contentStyles: tmp.content, children: null };
+  obj = { scrollable: true, startExpanded: true, header: callback2(_require(6987).BottomSheetTitleHeader, obj), contentStyles: tmp.content, children: null };
   obj = { style: tmp.searchbarWrapper, children: null };
-  const obj1 = {
+  obj1 = {
     onChange(arg0) {
       callback(arg0);
     },
@@ -125,15 +122,14 @@ export default function GuildInviteActionSheet(arg0) {
   };
   const intl2 = _require(1236).intl;
   obj1[1] = intl2.string(_require(1236).t.uohsSv);
-  const items = [callback2(_require(7337).SearchField, obj1), ];
+  const items = [callback2(_require(7375).SearchField, obj1), ];
   const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: null };
   const intl3 = _require(1236).intl;
-  const obj3 = { xDays: null };
-  obj3[0] = importDefault(8920).INVITE_OPTIONS_7_DAYS.label;
-  obj2[2] = intl3.format(_require(1236).t["4UyUHh"], obj3);
-  items[1] = callback2(_require(4734).Text, obj2);
+  const tmp3 = callback2(_require(6987).BottomSheetTitleHeader, obj);
+  obj2[2] = intl3.format(_require(1236).t["4UyUHh"], { xDays: isGuildMemberDefault.INVITE_OPTIONS_7_DAYS.label });
+  items[1] = callback2(_require(4739).Text, obj2);
   obj[1] = items;
   const items1 = [callback3(View, obj), callback2(GuildList, { query: tmp2[0], recipientId, source })];
   obj[4] = items1;
-  return callback3(_require(6950).BottomSheet, obj);
+  return callback3(_require(6988).BottomSheet, obj);
 };

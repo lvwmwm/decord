@@ -1,27 +1,31 @@
-// Module ID: 14893
-// Function ID: 14894
+// Module ID: 14957
+// Function ID: 14958
 // Name: route
-// Dependencies: [676, 10669, 8005, 14894, 13990, 2]
+// Dependencies: [676, 10708, 8044, 14958, 14058, 2]
 
-// Module 14893 (route)
-import createToggle from "createToggle";
+// Module 14957 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 8044 */;
+import useDesignSystemsSettingPredicate from "useDesignSystemsSettingPredicate" /* 14958 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
     return "Design System";
   },
   parent: null,
-  IconComponent: require("PaintPaletteIcon").PaintPaletteIcon,
-  usePredicate: require("useDesignSystemsSettingPredicate").useDesignSystemsSettingPredicate,
+  IconComponent: PaintPaletteIcon.PaintPaletteIcon,
+  usePredicate: useDesignSystemsSettingPredicate.useDesignSystemsSettingPredicate,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.DESIGN_SYSTEM,
+  route: ME.UserSettingsSections.DESIGN_SYSTEM,
   getComponent() {
-    return require(13990) /* SettingsDesignSystemsScreen */.default;
+    return require(14058) /* SettingsDesignSystemsScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("PaintPaletteIcon").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsSetting.tsx");
 
 export default route;

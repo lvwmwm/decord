@@ -1,10 +1,10 @@
 // Module ID: 3814
 // Function ID: 3815
 // Name: _typeof
-// Dependencies: [3780, 3778]
+// Dependencies: [3783, 3784, 3781]
 
 // Module 3814 (_typeof)
-import { Parser } from "Parser";
+import Parser2 from "Parser" /* 3781 */;
 
 let _createSuperInternal = require;
 let closure_1 = dependencyMap;
@@ -12,9 +12,9 @@ function _typeof(arg0) {
   if (typeof Symbol === "function") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "symbol") {
-      function _typeof(arg0) {
+      _typeof = function _typeof(arg0) {
         return typeof arg0;
-      }
+      };
     }
     return _typeof(arg0);
   }
@@ -33,20 +33,20 @@ function _typeof(arg0) {
     str = typeof arg0;
   };
 }
-function _setPrototypeOf(TimestampMillisecondsParser, Parser) {
-  let _setPrototypeOf = Object.setPrototypeOf;
+function _setPrototypeOf(ISOTimezoneWithZParser, Parser) {
+  _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(TimestampMillisecondsParser, Parser) {
-      TimestampMillisecondsParser.__proto__ = Parser;
-      return TimestampMillisecondsParser;
+    _setPrototypeOf = function _setPrototypeOf(ISOTimezoneWithZParser, Parser) {
+      ISOTimezoneWithZParser.__proto__ = Parser;
+      return ISOTimezoneWithZParser;
     };
   }
-  return _setPrototypeOf(TimestampMillisecondsParser, Parser);
+  return _setPrototypeOf(ISOTimezoneWithZParser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
     let _Object = Object;
-    let _getPrototypeOf = Object.getPrototypeOf;
+    _getPrototypeOf = Object.getPrototypeOf;
   } else {
     _getPrototypeOf = function _getPrototypeOf(arg0) {
       let __proto__ = arg0.__proto__;
@@ -59,10 +59,11 @@ function _getPrototypeOf(arg0) {
   }
   return _getPrototypeOf(arg0);
 }
+const Parser = Parser2.Parser;
 _createSuperInternal = undefined;
-class TimestampMillisecondsParser {
+class ISOTimezoneWithZParser {
   constructor() {
-    if (this instanceof c1) {
+    if (this instanceof closure_1) {
       length = arguments.length;
       _Array = Array;
       tmp6 = new.target;
@@ -87,7 +88,7 @@ class TimestampMillisecondsParser {
       if (tmp13) {
         _ReferenceError2 = ReferenceError;
         tmp20 = new.target;
-        str6 = "this hasn't been initialised - super() hasn't been called";
+        str5 = "this hasn't been initialised - super() hasn't been called";
         tmp21 = new.target;
         referenceError = new ReferenceError("this hasn't been initialised - super() hasn't been called");
         tmp23 = referenceError;
@@ -96,27 +97,29 @@ class TimestampMillisecondsParser {
         str2 = "priority";
         if ("priority" in applyResult) {
           _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 20, enumerable: true, configurable: true, writable: true });
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 10, enumerable: true, configurable: true, writable: true });
         } else {
-          num3 = 20;
-          applyResult.priority = 20;
+          num3 = 10;
+          applyResult.priority = 10;
         }
         if (tmp13) {
           _ReferenceError = ReferenceError;
           tmp16 = new.target;
-          str5 = "this hasn't been initialised - super() hasn't been called";
+          str4 = "this hasn't been initialised - super() hasn't been called";
           tmp17 = new.target;
           referenceError1 = new ReferenceError("this hasn't been initialised - super() hasn't been called");
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
+          items1 = ["t", "T", "x"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
-            definePropertyResult1 = Object.defineProperty(applyResult, "incompatibleTokens", { value: "*", enumerable: true, configurable: true, writable: true });
+            obj = { value: null, enumerable: true, configurable: true, writable: true };
+            obj[0] = items1;
+            definePropertyResult1 = Object.defineProperty(applyResult, "incompatibleTokens", obj);
           } else {
-            str4 = "*";
-            applyResult.incompatibleTokens = "*";
+            applyResult.incompatibleTokens = items1;
           }
           return applyResult;
         }
@@ -132,7 +135,7 @@ class TimestampMillisecondsParser {
     }
   }
 }
-closure_1 = TimestampMillisecondsParser;
+closure_1 = ISOTimezoneWithZParser;
 if (typeof Parser !== "function") {
   if (null !== Parser) {
     let _TypeError = TypeError;
@@ -144,12 +147,12 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-let obj = { value: TimestampMillisecondsParser, writable: true, configurable: true };
-TimestampMillisecondsParser.prototype = Object.create(prototype, { constructor: obj });
+let obj = { value: ISOTimezoneWithZParser, writable: true, configurable: true };
+ISOTimezoneWithZParser.prototype = Object.create(prototype, { constructor: obj });
 if (Parser) {
-  _setPrototypeOf(TimestampMillisecondsParser, Parser);
+  _setPrototypeOf(ISOTimezoneWithZParser, Parser);
 }
-_createSuperInternal = TimestampMillisecondsParser;
+_createSuperInternal = ISOTimezoneWithZParser;
 let num = 0;
 closure_1 = (function _isNativeReflectConstruct() {
   if (typeof Reflect !== "undefined") {
@@ -209,17 +212,31 @@ _createSuperInternal = function _createSuperInternal() {
 };
 obj = {
   key: "parse",
-  value: function parse(arg0) {
-    return _createSuperInternal(table[0]).parseAnyDigitsSigned(arg0);
+  value: function parse(arg0, arg1) {
+    if ("X" === arg1) {
+      return _createSuperInternal(3783).parseTimezonePattern(_createSuperInternal(3784).timezonePatterns.basicOptionalMinutes, arg0);
+    } else if ("XX" === arg1) {
+      return _createSuperInternal(3783).parseTimezonePattern(_createSuperInternal(3784).timezonePatterns.basic, arg0);
+    } else if ("XXXX" === arg1) {
+      return _createSuperInternal(3783).parseTimezonePattern(_createSuperInternal(3784).timezonePatterns.basicOptionalSeconds, arg0);
+    } else if ("XXXXX" === arg1) {
+      return _createSuperInternal(3783).parseTimezonePattern(_createSuperInternal(3784).timezonePatterns.extendedOptionalSeconds, arg0);
+    } else {
+      return _createSuperInternal(3783).parseTimezonePattern(_createSuperInternal(3784).timezonePatterns.extended, arg0);
+    }
   }
 };
 let items = [
   obj,
   {
     key: "set",
-    value: function set(arg0, arg1, arg2) {
-      const items = [new Date(arg2), { timestampIsSet: true }];
-      return items;
+    value: function set(getTime, timestampIsSet) {
+      let date = getTime;
+      if (!timestampIsSet.timestampIsSet) {
+        const _Date = Date;
+        date = new Date(getTime.getTime() - arg2);
+      }
+      return date;
     }
   }
 ];
@@ -242,4 +259,4 @@ if (0 < items.length) {
   } while (num < items.length);
 }
 
-export { TimestampMillisecondsParser };
+export { ISOTimezoneWithZParser };

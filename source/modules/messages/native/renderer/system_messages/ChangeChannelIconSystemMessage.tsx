@@ -1,24 +1,26 @@
-// Module ID: 8206
-// Function ID: 8207
+// Module ID: 8246
+// Function ID: 8247
 // Name: createChangeChannelIconSystemMessage
-// Dependencies: [1391, 8178, 8185, 8187, 8188, 1236, 8191, 2]
+// Dependencies: [1391, 8218, 8225, 8227, 8228, 1236, 8231, 2]
 // Exports: createChangeChannelIconSystemMessage
 
-// Module 8206 (createChangeChannelIconSystemMessage)
-import ensureGuildLoaded from "ensureGuildLoaded";
+// Module 8246 (createChangeChannelIconSystemMessage)
+import resultDefault from "result" /* 8218 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8225 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8227 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8228 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
-const require = arg1;
-const result = require("getMessageAuthorWithProcessedColor").fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelIconSystemMessage.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelIconSystemMessage.tsx");
 
 export const createChangeChannelIconSystemMessage = function createChangeChannelIconSystemMessage(message) {
-  let roleStyle;
-  let theme;
   message = message.message;
   ({ theme, roleStyle } = message);
-  const tmp3 = importDefault(8178)(theme);
-  let obj = require(8185) /* getMessageAuthorWithProcessedColor */;
+  const tmp3 = resultDefault(theme);
+  let obj = getMessageAuthorWithProcessedColor;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const tmp6 = importDefault(8187)({ message, author: messageAuthorWithProcessedColor, roleStyle });
+  const tmp6 = formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle });
   channel = channel.getChannel(message.channel_id);
   let flag;
   if (channel != null) {
@@ -30,7 +32,7 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
   if (flag == null) {
     flag = false;
   }
-  const tmp8 = importDefault(8188)(message);
+  const tmp8 = createCommonMessageDefault(message);
   const intl = tmp4(1236).intl;
   const formatToParts = intl.formatToParts;
   const t = tmp4(1236).t;
@@ -48,7 +50,7 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
     obj[2] = obj;
     let formatToPartsResult = formatToParts(t.hfeYXC, obj);
   } else {
-    const obj1 = { username: null, usernameOnClick: null };
+    obj1 = { username: null, usernameOnClick: null };
     obj1[0] = messageAuthorWithProcessedColor.nick;
     obj1[1] = tmp6;
     formatToPartsResult = formatToParts(t.wypJZ0, obj1);
@@ -65,7 +67,7 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
     const obj4 = { label: null, name: null };
     const intl2 = tmp4(1236).intl;
     obj4[0] = intl2.string(tmp4(1236).t["5Q9+/L"]);
-    obj4[1] = tmp4(8191).MessageAccessibilityAction.EDIT_GDM;
+    obj4[1] = tmp4(8231).MessageAccessibilityAction.EDIT_GDM;
     items[HermesBuiltin.arraySpread(accessibilityActions, 0)] = obj4;
     obj3[0] = items;
     tmp12 = obj3;

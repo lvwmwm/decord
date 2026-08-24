@@ -4,11 +4,13 @@
 // Dependencies: [41, 42, 93, 95, 96, 98, 363, 366]
 
 // Module 371 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _get from "_get";
-import importDefaultResult from "_createClass";
+import _inheritsDefault from "_inherits" /* 98 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 366 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import closure_5 from "_get" /* 96 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
 const AnimatedModulo = importDefault;
 function _isNativeReflectConstruct() {
@@ -22,10 +24,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -33,12 +35,12 @@ function _isNativeReflectConstruct() {
 class AnimatedModulo {
   constructor(arg0, arg1, arg2) {
     self = this;
-    tmp = _isNativeReflectConstruct(this, AnimatedModulo);
+    tmp = closure_2(this, AnimatedModulo);
     items = [];
     items[0] = importDefault;
-    tmp2 = __esModule;
-    obj = __esModule(AnimatedModulo);
-    tmp3 = __esModule;
+    tmp2 = closure_4;
+    obj = closure_4(AnimatedModulo);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -52,7 +54,7 @@ class AnimatedModulo {
     return tmp3Result;
   }
 }
-require("_inherits")(AnimatedModulo, require("_isNativeReflectConstruct"));
+_inheritsDefault(AnimatedModulo, _isNativeReflectConstructDefault);
 let items = [
   {
     key: "__makeNative",

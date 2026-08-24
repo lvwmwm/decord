@@ -1,26 +1,26 @@
-// Module ID: 8132
-// Function ID: 8133
+// Module ID: 8171
+// Function ID: 8172
 // Name: init
-// Dependencies: [5, 8133, 1391, 676, 709, 4230, 7512, 530, 7286, 2]
+// Dependencies: [5, 8172, 1391, 676, 709, 4234, 7550, 530, 7324, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 8132 (init)
-import getRootNavigationRef from "getRootNavigationRef";
-import normalizeChannelPropertyForCompare from "normalizeChannelPropertyForCompare";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import ME from "ME";
+// Module 8171 (init)
+import sendRequest from "sendRequest" /* 530 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "normalizeChannelPropertyForCompare" /* 8172 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import ME from "ME" /* 676 */;
 
-let Layers;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function init(channelId, location, subsection) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "CHANNEL_SETTINGS_INIT", channelId, location, subsection };
   obj.dispatch(obj);
 }
 function open(arg0, arg1, arg2) {
-  let obj = require(4230) /* getRootNavigationRef */;
+  let obj = getRootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
@@ -28,7 +28,7 @@ function open(arg0, arg1, arg2) {
       obj[1] = arg0;
       obj[2] = arg1;
       obj[3] = arg2;
-      importDefault(709).dispatch(obj);
+      dispatcherDefault.dispatch(obj);
       let OVERVIEW = section.getSection();
       if (OVERVIEW == null) {
         OVERVIEW = constants.OVERVIEW;
@@ -37,49 +37,26 @@ function open(arg0, arg1, arg2) {
       obj[0] = arg0;
       obj[1] = OVERVIEW;
       rootNavigationRef.navigate("sidebar", obj);
-      const obj3 = importDefault(709);
+      const obj3 = dispatcherDefault;
     }
   }
 }
 function close() {
-  importDefault(709).dispatch({ type: "CHANNEL_SETTINGS_CLOSE" });
+  dispatcherDefault.dispatch({ type: "CHANNEL_SETTINGS_CLOSE" });
 }
 function setSection(section) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "CHANNEL_SETTINGS_SET_SECTION", section };
   obj.dispatch(obj);
 }
 function selectPermissionOverwrite(overwriteId) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "CHANNEL_SETTINGS_OVERWRITE_SELECT", overwriteId };
   obj.dispatch(obj);
 }
 function updateChannel(arg0) {
-  let autoArchiveDuration;
-  let availableTags;
-  let bitrate;
-  let defaultAutoArchiveDuration;
-  let defaultForumLayout;
-  let defaultReactionEmoji;
-  let defaultSortOrder;
-  let defaultTagSetting;
-  let defaultThreadRateLimitPerUser;
-  let flags;
-  let iconEmoji;
-  let invitable;
-  let locked;
-  let name;
-  let nsfw;
-  let rateLimitPerUser;
-  let rtcRegion;
-  let template;
-  let themeColor;
-  let topic;
-  let type;
-  let userLimit;
-  let videoQualityMode;
   ({ name, type, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, autoArchiveDuration, locked, invitable, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor } = arg0);
-  importDefault(709).dispatch({ type: "CHANNEL_SETTINGS_UPDATE", name, channelType: type, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, autoArchiveDuration, locked, invitable, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor });
+  dispatcherDefault.dispatch({ type: "CHANNEL_SETTINGS_UPDATE", name, channelType: type, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, autoArchiveDuration, locked, invitable, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor });
 }
 function saveChannel(id, arg1) {
   const self = this;
@@ -94,36 +71,11 @@ function saveChannel(id, arg1) {
 function _saveChannel() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     const iter = (function*(arg0, arg1) {
-      let c1;
-      let c10;
-      let c11;
-      let c12;
-      let c13;
-      let c14;
-      let c15;
-      let c16;
-      let c17;
-      let c18;
-      let c19;
-      let c2;
-      let c20;
-      let c21;
-      let c22;
-      let c23;
-      let c24;
-      let c25;
-      let c3;
-      let c4;
-      let c5;
-      let c6;
-      let c7;
-      let c8;
-      let c9;
       if (channel === 2) {
         channel = 3;
         HermesBuiltin.throwTypeError();
@@ -135,7 +87,7 @@ function _saveChannel() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -151,7 +103,7 @@ function _saveChannel() {
               return obj;
             } else {
               c3 = tmp5;
-              let dependencyMap = tmp2;
+              dependencyMap = tmp2;
               c1 = undefined;
               dependencyMap = undefined;
               c3 = undefined;
@@ -189,17 +141,17 @@ function _saveChannel() {
               throw arg1;
             } else if (arg0 === 2) {
               channel = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
               channel2 = channel.getChannel(callback);
-              callback2(outer1_2[4]).dispatch({ type: "CHANNEL_SETTINGS_SUBMIT" });
-              const obj10 = callback2(outer1_2[4]);
+              callback2(closure_1_2[4]).dispatch({ type: "CHANNEL_SETTINGS_SUBMIT" });
+              const obj10 = callback2(closure_1_2[4]);
               c4 = 2;
               channel = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = callback2(outer1_2[6]).unarchiveThreadIfNecessary(callback);
+              obj2[0] = callback2(closure_1_2[6]).unarchiveThreadIfNecessary(callback);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -314,7 +266,7 @@ function _saveChannel() {
     iter.next();
     return iter;
   });
-  const _saveChannel = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -336,9 +288,9 @@ function deleteChannel() {
 function _deleteChannel() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -351,7 +303,7 @@ function _deleteChannel() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -370,10 +322,10 @@ function _deleteChannel() {
               let guildId = tmp2;
               let callback;
               guildId = undefined;
-              callback = outer1_5.getChannel(callback);
-              const HTTP = callback(outer1_2[7]).HTTP;
-              let obj1 = { url: null, oldFormErrors: true, rejectWithError: true };
-              obj1[0] = outer1_6.CHANNEL(callback);
+              callback = closure_1_5.getChannel(callback);
+              const HTTP = callback(closure_1_2[7]).HTTP;
+              obj1 = { url: null, oldFormErrors: true, rejectWithError: true };
+              obj1[0] = closure_1_6.CHANNEL(callback);
               c3 = 1;
               c4 = 1;
               const obj2 = { value: null, done: false };
@@ -408,7 +360,7 @@ function _deleteChannel() {
             }
             callback2();
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           c4 = tmp;
@@ -417,7 +369,7 @@ function _deleteChannel() {
       }
     })();
   });
-  const _deleteChannel = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -427,18 +379,18 @@ function _deleteChannel() {
   return applyArgumentsResult;
 }
 function updateVoiceChannelStatus(arg0, status) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   obj = { url: closure_6.UPDATE_VOICE_CHANNEL_STATUS(arg0), body: obj, rejectWithError: null };
   obj = { status };
-  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+  obj[2] = sendRequest.rejectWithMigratedError();
   return HTTP.put(obj);
 }
-function removeLinkedLobby(outer1_0) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
-  return HTTP.del({ url: closure_6.CHANNEL_LINKED_LOBBY(outer1_0), rejectWithError: true });
+function removeLinkedLobby(closure_1_0) {
+  const HTTP = sendRequest.HTTP;
+  return HTTP.del({ url: closure_6.CHANNEL_LINKED_LOBBY(closure_1_0), rejectWithError: true });
 }
 ({ Endpoints: closure_6, Layers, ChannelSettingsSections: error } = ME);
-let result = require("ensureGuildLoaded").fileFinishedImporting("actions/ChannelSettingsActionCreators.tsx");
+let result = require("set").fileFinishedImporting("actions/ChannelSettingsActionCreators.tsx");
 
 export default { init, open, close, setSection, selectPermissionOverwrite, updateChannel, saveChannel, deleteChannel, updateVoiceChannelStatus, removeLinkedLobby };
 export { init };

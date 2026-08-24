@@ -1,22 +1,24 @@
-// Module ID: 9984
-// Function ID: 9985
+// Module ID: 10023
+// Function ID: 10024
 // Name: useTrackFavoritesGuildUpsellModalOpened
-// Dependencies: [19, 676, 7139, 7159, 698, 2]
+// Dependencies: [19, 676, 7177, 7197, 698, 2]
 // Exports: default
 
-// Module 9984 (useTrackFavoritesGuildUpsellModalOpened)
-import noop from "noop";
-import { AnalyticEvents } from "ME";
+// Module 10023 (useTrackFavoritesGuildUpsellModalOpened)
+import contextDefault from "context" /* 7177 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
+import closure_2 from "noop" /* 19 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const result = require("context").fileFinishedImporting("modules/favorites/analytics/useTrackFavoritesGuildUpsellModalOpened.tsx");
+const result = require("set").fileFinishedImporting("modules/favorites/analytics/useTrackFavoritesGuildUpsellModalOpened.tsx");
 
 export default function useTrackFavoritesGuildUpsellModalOpened(arg0) {
-  const importDefault = arg0;
+  importDefault = arg0;
   const items = [arg0];
   const effect = React.useEffect(() => {
-    let obj = callback(outer1_1[4]);
+    let obj = callback(closure_1_1[4]);
     obj = { source: callback };
-    obj.track(outer1_3.FAVORITES_GUILD_UPSELL_MODAL_OPENED, obj);
+    obj.track(closure_1_3.FAVORITES_GUILD_UPSELL_MODAL_OPENED, obj);
   }, items);
-  return { analyticsLocations: importDefault(7139)(importDefault(7159).FAVORITES_GUILD_UPSELL_MODAL).analyticsLocations };
+  return { analyticsLocations: contextDefault(QUICK_SWITCHERDefault.FAVORITES_GUILD_UPSELL_MODAL).analyticsLocations };
 };

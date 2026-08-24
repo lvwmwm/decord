@@ -1,32 +1,28 @@
-// Module ID: 9850
-// Function ID: 9851
+// Module ID: 9889
+// Function ID: 9890
 // Name: SelfDismissibleAlertBody
-// Dependencies: [19, 17, 4540, 21, 4661, 589, 4734, 2]
+// Dependencies: [19, 17, 4545, 21, 4668, 589, 4739, 2]
 // Exports: SelfDismissibleAlertBody
 
-// Module 9850 (SelfDismissibleAlertBody)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import set from "set";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9889 (SelfDismissibleAlertBody)
+import closure_2 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "set" /* 4545 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ errorCodeText: { marginTop: 16 }, alertBody: { marginTop: 0 }, container: { flex: 1 }, body: { marginTop: 16 } });
 const result = require("set").fileFinishedImporting("modules/game_console/native/GameConsoleAlert.tsx");
 
 export const SelfDismissibleAlertBody = function SelfDismissibleAlertBody(errorCodeMessage) {
-  let body;
-  let dismissCallback;
   ({ body, dismissCallback } = errorCodeMessage);
   errorCodeMessage = errorCodeMessage.errorCodeMessage;
   let stateFromStores;
   const tmp = callback3();
   let obj = dismissCallback(stateFromStores[5]);
-  const items = [set];
+  const items = [closure_4];
   stateFromStores = obj.useStateFromStores(items, () => remoteSessionId.getRemoteSessionId());
   const items1 = [stateFromStores, dismissCallback];
   const effect = React.useEffect(() => {
@@ -44,7 +40,7 @@ export const SelfDismissibleAlertBody = function SelfDismissibleAlertBody(errorC
     obj[2] = items2;
     obj[3] = body;
     const items3 = [callback(tmp2(tmp3[6]).Text, obj), ];
-    const obj1 = { maxFontSizeMultiplier: 1, variant: "text-md/normal", style: null, children: null };
+    obj1 = { maxFontSizeMultiplier: 1, variant: "text-md/normal", style: null, children: null };
     const items4 = [, ];
     ({ body: arr5[0], errorCodeText: arr5[1] } = tmp);
     obj1[2] = items4;

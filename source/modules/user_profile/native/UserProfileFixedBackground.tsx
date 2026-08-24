@@ -1,32 +1,29 @@
-// Module ID: 8978
-// Function ID: 8979
-// Dependencies: [32, 19, 17, 21, 4104, 8979, 8980, 4756, 2]
+// Module ID: 9015
+// Function ID: 9016
+// Dependencies: [32, 19, 17, 21, 4107, 9016, 9017, 4761, 2]
 
-// Module 8978
-import _slicedToArray from "_slicedToArray";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 9015
+import ManaContext from "ManaContext" /* 4107 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import useUserProfileColors from "useUserProfileColors" /* 9016 */;
+import useUserProfileGradientColors from "useUserProfileGradientColors" /* 9017 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ StyleSheet: c4, View: c5 } = get_ActivityIndicator);
-const memoResult = require("noop").memo((style) => {
-  let bannerHeight;
-  let gradientHeight;
-  let primaryColor;
-  let secondaryColor;
-  let theme;
+const memoResult = importAllResult.memo((style) => {
   style = style.style;
   ({ gradientHeight, bannerHeight } = style);
-  let obj = require(4104) /* ManaContext */;
+  let obj = ManaContext;
   const themeContext = obj.useThemeContext();
   ({ primaryColor, secondaryColor, theme } = themeContext);
-  const gradientFallbackBackground = require(8979) /* useUserProfileColors */.useUserProfileColors({ theme, primaryColor, secondaryColor }).gradientFallbackBackground;
-  const obj2 = require(8979) /* useUserProfileColors */;
-  const obj3 = require(8980) /* useUserProfileGradientColors */;
-  const first = callback(require(8980) /* useUserProfileGradientColors */.useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2)[0];
+  const gradientFallbackBackground = useUserProfileColors.useUserProfileColors({ theme, primaryColor, secondaryColor }).gradientFallbackBackground;
+  const obj2 = useUserProfileColors;
+  const obj3 = useUserProfileGradientColors;
+  const first = callback(useUserProfileGradientColors.useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2)[0];
   if (null != primaryColor) {
     if (null != secondaryColor) {
       const _Math = Math;
@@ -39,13 +36,13 @@ const memoResult = require("noop").memo((style) => {
       obj[1] = items1;
       const items2 = [closure_4.absoluteFill, style];
       obj[2] = items2;
-      return jsx(importDefault(4756), { colors: null, locations: null, style: null, pointerEvents: "none" });
+      return jsx(LinearGradientDefault, { colors: null, locations: null, style: null, pointerEvents: "none" });
     }
   }
   style = [closure_4.absoluteFill, { backgroundColor: gradientFallbackBackground }, ];
   style[2] = style;
   return <closure_5 style={style} pointerEvents="none" />;
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileFixedBackground.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileFixedBackground.tsx");
 
 export default memoResult;

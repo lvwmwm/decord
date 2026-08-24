@@ -1,40 +1,43 @@
-// Module ID: 8304
-// Function ID: 8305
+// Module ID: 8344
+// Function ID: 8345
 // Name: cacheBustParam
-// Dependencies: [5, 4771, 676, 1978, 709, 4066, 530, 2]
+// Dependencies: [5, 4776, 676, 1979, 709, 4069, 530, 2]
 
-// Module 8304 (cacheBustParam)
-import explicitContentFromProto from "explicitContentFromProto";
-import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
-import { Endpoints } from "ME";
-import { ChangelogPlatforms } from "CHANGELOG_MODAL_KEY";
+// Module 8344 (cacheBustParam)
+import sendRequest from "sendRequest" /* 530 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "handleUserSettingsProtoStoreChange" /* 4776 */;
+import { Endpoints } from "ME" /* 676 */;
+import { ChangelogPlatforms } from "CHANGELOG_MODAL_KEY" /* 1979 */;
 
-const require = arg1;
+require = arg1;
 function cacheBustParam() {
   return "x=" + Math.floor(new Date().getMinutes() / 5);
 }
-const result = require("ME").fileFinishedImporting("actions/ChangeLogActionCreators.tsx");
+const result = require("set").fileFinishedImporting("actions/ChangeLogActionCreators.tsx");
 
 export default {
   lockChangeLog(key) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "CHANGE_LOG_LOCK", key };
     obj.dispatch(obj);
   },
   unlockChangeLog(key) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "CHANGE_LOG_UNLOCK", key };
     obj.dispatch(obj);
   },
-  markChangelogAsSeen(id, date) {
-    let obj = importDefault(709);
-    obj = { type: "CHANGE_LOG_MARK_SEEN", changelogId: id, changelogDate: date };
+  markChangelogAsSeen(closure_2, date) {
+    let obj = dispatcherDefault;
+    obj = { type: "CHANGE_LOG_MARK_SEEN", changelogId: closure_2, changelogDate: date };
     obj.dispatch(obj);
-    const LastReceivedChangelogId = require(4066) /* explicitContentFromProto */.LastReceivedChangelogId;
-    LastReceivedChangelogId.updateSetting(id);
+    const LastReceivedChangelogId = explicitContentFromProto.LastReceivedChangelogId;
+    LastReceivedChangelogId.updateSetting(closure_2);
   },
   setChangelogOverride(id) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "CHANGE_LOG_SET_OVERRIDE", id };
     obj.dispatch(obj);
     if (null != id) {
@@ -43,15 +46,14 @@ export default {
     }
   },
   sendChangelogMessage(changelog_id) {
-    const HTTP = require(530) /* sendRequest */.HTTP;
+    const HTTP = sendRequest.HTTP;
     obj = { url: Endpoints.CHANGELOG_MESSAGES, body: obj, rejectWithError: true };
     obj = { changelog_id };
     HTTP.post(obj);
   },
   fetchChangelogConfig() {
-    const HTTP = require(530) /* sendRequest */.HTTP;
-    const obj = { url: null, rejectWithError: true };
-    obj[0] = "https://cdn.discordapp.com/changelogs/config_" + ChangelogPlatforms.MOBILE + ".json?" + "x=" + Math.floor(new Date().getMinutes() / 5);
+    const HTTP = sendRequest.HTTP;
+    const obj = { url: "https://cdn.discordapp.com/changelogs/config_" + ChangelogPlatforms.MOBILE + ".json?" + "x=" + Math.floor(new Date().getMinutes() / 5), rejectWithError: true };
     return HTTP.get(obj);
   },
   fetchChangelog(closure_0, closure_1, arg2) {
@@ -65,8 +67,8 @@ export default {
     }
     const self = this;
     return flag2(function*() {
-      let closure_1 = tmp3;
-      if (null != c4.getChangelog(outer1_0, outer1_1)) {
+      closure_1 = tmp3;
+      if (null != c4.getChangelog(closure_1_0, closure_1_1)) {
         return null;
       }
       if (dependencyMap) {
@@ -77,17 +79,17 @@ export default {
       let str = "";
       if (!c3) {
         const _HermesInternal = HermesInternal;
-        str = "?" + outer1_7();
+        str = "?" + closure_1_7();
       }
       dependencyMap = 1;
-      const HTTP = outer1_0(530).HTTP;
-      let obj1 = { url: null, rejectWithError: true };
+      const HTTP = closure_1_0(530).HTTP;
+      obj1 = { url: null, rejectWithError: true };
       const _HermesInternal2 = HermesInternal;
-      obj1[0] = "https://cdn.discordapp.com/changelogs/" + MOBILE + "/" + outer1_0 + "/" + outer1_1 + ".json" + str;
+      obj1[0] = "https://cdn.discordapp.com/changelogs/" + MOBILE + "/" + closure_1_0 + "/" + closure_1_1 + ".json" + str;
       yield HTTP.get(obj1);
       if (1 === tmp7) {
         dependencyMap = 0;
-        let obj5 = outer1_1(709);
+        let obj5 = closure_1_1(709);
         const obj3 = { type: "CHANGE_LOG_FETCH_FAILED", id: null, locale: null };
         obj3[1] = closure_0;
         obj3[2] = closure_1;
@@ -112,7 +114,7 @@ export default {
           return obj5;
         } else {
           closure_0 = arg1;
-          obj1 = outer1_1(709);
+          obj1 = closure_1_1(709);
           const obj6 = { type: "CHANGE_LOG_FETCH_SUCCESS", id: null, changelog: null };
           obj6[1] = closure_0;
           obj6[2] = closure_0.body;

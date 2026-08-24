@@ -1,120 +1,123 @@
-// Module ID: 13033
-// Function ID: 13034
+// Module ID: 13088
+// Function ID: 13089
 // Name: items
-// Dependencies: [19, 17, 4662, 21, 4661, 712, 1236, 13034, 7130, 13035, 13036, 4734, 11733, 2]
+// Dependencies: [19, 17, 4669, 21, 4668, 712, 1236, 13089, 7168, 13090, 13091, 4739, 11782, 2]
 // Exports: default
 
-// Module 13033 (items)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13088 (items)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import playDefault from "play" /* 7168 */;
+import registerAssetDefault from "registerAsset" /* 13089 */;
+import _mod13090 from "module_13090" /* 13090 */;
+import registerAssetDefault2 from "registerAsset" /* 13091 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let closure_6;
-let error;
-let require = arg1;
+require = arg1;
+noopAll;
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { wrapper: { marginTop: 50 }, heading: { marginBottom: 20, textAlign: "center" }, scrollerContent: { alignItems: "stretch", flexDirection: "row", justifyContent: "center", minWidth: "100%", paddingHorizontal: 16, paddingBottom: 16 }, card: null, cardGraphic: null, cardLast: null, cardHeading: null, cardBody: null };
-createCacheKey = { backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT, borderColor: require("Themes").colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: require("Themes").radii.lg, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 16, padding: 24, width: 324 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.CARD_BACKGROUND_DEFAULT, borderColor: ThemesDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: ThemesDefault.radii.lg, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 16, padding: 24, width: 324 };
 createCacheKey[3] = createCacheKey;
-createCacheKey[4] = { borderRadius: require("Themes").radii.xs, height: 128, marginBottom: 16, overflow: "hidden", width: 211 };
+createCacheKey[4] = { borderRadius: ThemesDefault.radii.xs, height: 128, marginBottom: 16, overflow: "hidden", width: 211 };
 createCacheKey[5] = { marginRight: 0 };
 createCacheKey[6] = { marginBottom: 4, textAlign: "center" };
 createCacheKey[7] = { textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_8 = createCacheKey.createStyles(createCacheKey);
 let items = [
   {
     getHeadingCopy() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.y4ft4D);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.y4ft4D);
     },
     getBodyCopy() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.HTvLGu);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.HTvLGu);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(13034) });
+      return callback(closure_3, { style, source: registerAssetDefault });
     }
   },
   {
     getHeadingCopy() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.PbAyub);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.PbAyub);
     },
     getBodyCopy() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.wOYbTv);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.wOYbTv);
     },
     getGraphic(arg0) {
-      const obj = { source: null, autoPlay: null, style: null };
-      obj[0] = require(13035);
-      obj[1] = !useReducedMotion.useReducedMotion;
-      obj[2] = arg0;
-      return callback(importDefault(7130), obj);
+      const obj = { source: _mod13090, autoPlay: !useReducedMotion.useReducedMotion, style: arg0 };
+      return callback(playDefault, obj);
     }
   },
   {
     getHeadingCopy() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t["/bX4Jn"]);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t["/bX4Jn"]);
     },
     getBodyCopy() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.yCjoUC);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.yCjoUC);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(13036) });
+      return callback(closure_3, { style, source: registerAssetDefault2 });
     }
   }
 ];
-const obj1 = { borderRadius: require("Themes").radii.xs, height: 128, marginBottom: 16, overflow: "hidden", width: 211 };
+const obj1 = { borderRadius: ThemesDefault.radii.xs, height: 128, marginBottom: 16, overflow: "hidden", width: 211 };
 const obj2 = {
   getHeadingCopy() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.y4ft4D);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.y4ft4D);
   },
   getBodyCopy() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.HTvLGu);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.HTvLGu);
   },
   getGraphic(style) {
-    return callback(closure_3, { style, source: importDefault(13034) });
+    return callback(closure_3, { style, source: registerAssetDefault });
   }
 };
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx");
 
 export default function GuildBoostingMarketingTopPerksCards() {
-  const tmp = createCacheKey();
-  const require = tmp;
+  const tmp = callback3();
+  const _require = tmp;
   let obj = { style: tmp.wrapper, children: null };
   obj = { style: tmp.heading, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.aGdB3E);
-  let items = [callback(require(4734) /* Text */.Heading, obj), ];
-  obj = { itemCount: items.length, cardWidth: 324, cardMarginRight: 16, contentContainerStyle: tmp.scrollerContent, children: null };
-  obj[4] = items.map((getGraphic) => {
-    const items = [tmp.card, ];
-    let cardLast = arg1 === outer1_9.length - 1;
-    if (cardLast) {
-      cardLast = tmp3.cardLast;
-    }
-    let obj = { style: items, children: null };
-    items[1] = cardLast;
-    const items1 = [getGraphic.getGraphic(tmp.cardGraphic), , ];
-    obj = { style: tmp3.cardHeading, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
-    obj[3] = getGraphic.getHeadingCopy();
-    items1[1] = outer1_6(outer1_7(outer1_2[11]).Heading, obj);
-    obj = { style: tmp3.cardBody, variant: "text-sm/normal", color: "text-default", children: null };
-    obj[3] = getGraphic.getBodyCopy();
-    items1[2] = outer1_6(outer1_7(outer1_2[11]).Text, obj);
-    obj[1] = items1;
-    return outer1_7(outer1_4, obj, arg1);
-  });
-  items[1] = callback(require(11733) /* items */.MarketingCardsScroller, obj);
+  const intl = _require(1236).intl;
+  obj[3] = intl.string(_require(1236).t.aGdB3E);
+  items = [callback(_require(4739).Heading, obj), ];
+  obj = {
+    itemCount: items.length,
+    cardWidth: 324,
+    cardMarginRight: 16,
+    contentContainerStyle: tmp.scrollerContent,
+    children: items.map((getGraphic) => {
+      items = [lib.card, ];
+      let cardLast = arg1 === closure_1_9.length - 1;
+      if (cardLast) {
+        cardLast = tmp3.cardLast;
+      }
+      let obj = { style: items, children: null };
+      items[1] = cardLast;
+      const items1 = [getGraphic.getGraphic(lib.cardGraphic), , ];
+      obj = { style: tmp3.cardHeading, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: getGraphic.getHeadingCopy() };
+      items1[1] = closure_1_6(lib(closure_1_2[11]).Heading, obj);
+      obj = { style: tmp3.cardBody, variant: "text-sm/normal", color: "text-default", children: getGraphic.getBodyCopy() };
+      items1[2] = closure_1_6(lib(closure_1_2[11]).Text, obj);
+      obj[1] = items1;
+      return closure_1_7(closure_1_4, obj, arg1);
+    })
+  };
+  items[1] = callback(_require(11782).MarketingCardsScroller, obj);
   obj[1] = items;
   return callback2(closure_4, obj);
 };

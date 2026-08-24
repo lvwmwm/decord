@@ -1,14 +1,15 @@
-// Module ID: 12645
-// Function ID: 12646
+// Module ID: 12699
+// Function ID: 12700
 // Name: _initialize
-// Dependencies: [4497, 4542, 4720, 709, 8663, 2]
+// Dependencies: [4501, 4547, 4726, 709, 8700, 2]
 
-// Module 12645 (_initialize)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import updateVoiceState from "updateVoiceState";
-import "initialize";
+// Module 12699 (_initialize)
+import initializeDefault from "initialize" /* 4726 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_4 from "updateVoiceState" /* 4547 */;
 
 let require = arg1;
+initializeDefault;
 class VoiceActionSheetManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -17,13 +18,13 @@ class VoiceActionSheetManager extends tmp2 {
     applyArgumentsResult.handleOpenChannelCallModal = function handleOpenChannelCallModal() {
       channel = channel.channel;
       if (null != channel) {
-        outer1_1(outer1_2[3]).wait(() => {
-          const result = channel(outer1_2[4]).dismissVoiceChannelScreens(channel);
-          const obj = channel(outer1_2[4]);
-          channel(outer1_2[4]).openChannelCallModal(channel);
+        closure_1_1(closure_1_2[3]).wait(() => {
+          const result = channel(closure_1_2[4]).dismissVoiceChannelScreens(channel);
+          const obj = channel(closure_1_2[4]);
+          channel(closure_1_2[4]).openChannelCallModal(channel);
         });
         channel.terminate();
-        const obj2 = outer1_1(outer1_2[3]);
+        const obj2 = closure_1_1(closure_1_2[3]);
       }
     };
     return applyArgumentsResult;
@@ -32,14 +33,14 @@ class VoiceActionSheetManager extends tmp2 {
 const prototype = VoiceActionSheetManager.prototype;
 prototype["_initialize"] = function _initialize(channel) {
   this.channel = channel;
-  updateVoiceState.addChangeListener(this.handleOpenChannelCallModal);
-  _detectH265HardwareDecode.addChangeListener(this.handleOpenChannelCallModal);
+  closure_4.addChangeListener(this.handleOpenChannelCallModal);
+  closure_3.addChangeListener(this.handleOpenChannelCallModal);
 };
 prototype["_terminate"] = function _terminate() {
-  updateVoiceState.removeChangeListener(this.handleOpenChannelCallModal);
-  _detectH265HardwareDecode.removeChangeListener(this.handleOpenChannelCallModal);
+  closure_4.removeChangeListener(this.handleOpenChannelCallModal);
+  closure_3.removeChangeListener(this.handleOpenChannelCallModal);
 };
 const voiceActionSheetManager = new VoiceActionSheetManager();
-let result = require("initialize").fileFinishedImporting("modules/voice_calls/native/VoiceActionSheetManager.tsx");
+let result = require("set").fileFinishedImporting("modules/voice_calls/native/VoiceActionSheetManager.tsx");
 
 export default voiceActionSheetManager;

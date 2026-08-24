@@ -1,10 +1,14 @@
-// Module ID: 11579
-// Function ID: 11580
+// Module ID: 11628
+// Function ID: 11629
 // Name: NativeModules
-// Dependencies: [17, 500, 11580, 10134, 11581, 2]
+// Dependencies: [17, 500, 11629, 10173, 11630, 2]
 
-// Module 11579 (NativeModules)
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 11628 (NativeModules)
+import set from "set" /* 2 */;
+import enforcing from "enforcing" /* 10173 */;
+import RNCPushNotificationIOSDefault from "RNCPushNotificationIOS" /* 11629 */;
+import openNotificationSettingsDefault from "openNotificationSettings" /* 11630 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 const PushNotificationAndroid = NativeModules.PushNotificationAndroid;
@@ -12,17 +16,17 @@ let tmp3 = null;
 if (null != PushNotificationAndroid) {
   tmp3 = new tmp3(NativeModules.PushNotificationAndroid);
 }
-let c5 = tmp3;
-let result = require("RNCPushNotificationIOS").fileFinishedImporting("lib/pushnotification/PushNotification.tsx");
+let closure_5 = tmp3;
+let result = set.fileFinishedImporting("lib/pushnotification/PushNotification.tsx");
 
 export default {
   getInitialNotification() {
     if (obj.isAndroid()) {
       let initialNotification = new Promise((arg0) => {
-        let closure_0 = arg0;
+        closure_0 = arg0;
         initialNotification = initialNotification.getInitialNotification();
         initialNotification.then((arg0) => {
-          let closure_0 = arg0;
+          closure_0 = arg0;
           let tmp2 = null;
           if (null != arg0) {
             let obj = { getData: null, getMessage: null, getSound: null, getCategory: null, getAlert: null, getContentAvailable: null, getBadgeCount: null, finish: null };
@@ -38,31 +42,31 @@ export default {
               return obj;
             };
             obj[1] = function getMessage() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[2] = function getSound() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[3] = function getCategory() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[4] = function getAlert() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[5] = function getContentAvailable() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[6] = function getBadgeCount() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[7] = function finish(arg0) {
-              const error = new Error("Not implemented on Android: " + arg0);
+              error = new Error("Not implemented on Android: " + arg0);
               throw error;
             };
             tmp2 = obj;
@@ -71,8 +75,8 @@ export default {
         });
       });
     } else {
-      initialNotification = importDefault(11580).getInitialNotification();
-      const obj2 = importDefault(11580);
+      initialNotification = RNCPushNotificationIOSDefault.getInitialNotification();
+      const obj2 = RNCPushNotificationIOSDefault;
     }
     return initialNotification;
   },
@@ -103,30 +107,30 @@ export default {
   },
   clearPushNotificationLogs() {
     if (obj.isAndroid()) {
-      require(10134) /* enforcing */.default.clearLogs();
-      const _default = require(10134) /* enforcing */.default;
+      enforcing.default.clearLogs();
+      const _default = enforcing.default;
     }
   },
   setApplicationIconBadgeNumber(arg0) {
     if (!obj.isAndroid()) {
-      const result = importDefault(11580).setApplicationIconBadgeNumber(arg0);
-      const obj2 = importDefault(11580);
+      const result = RNCPushNotificationIOSDefault.setApplicationIconBadgeNumber(arg0);
+      const obj2 = RNCPushNotificationIOSDefault;
     }
   },
   clearAllNotifications() {
     if (obj.isAndroid()) {
       const result = PushNotificationAndroid.clearAllNotifications();
     } else {
-      const result1 = importDefault(11580).setApplicationIconBadgeNumber(0);
-      const obj2 = importDefault(11580);
+      const result1 = RNCPushNotificationIOSDefault.setApplicationIconBadgeNumber(0);
+      const obj2 = RNCPushNotificationIOSDefault;
     }
   },
   presentLocalNotification(arg0) {
     if (obj.isAndroid()) {
       const result = PushNotificationAndroid.presentLocalNotification(arg0);
     } else {
-      const result1 = importDefault(11580).presentLocalNotification(arg0);
-      const obj2 = importDefault(11580);
+      const result1 = RNCPushNotificationIOSDefault.presentLocalNotification(arg0);
+      const obj2 = RNCPushNotificationIOSDefault;
     }
   },
   getDeliveredNotifications() {
@@ -141,60 +145,60 @@ export default {
   },
   removeDeliveredNotifications(arg0) {
     if (!obj.isAndroid()) {
-      const result = importDefault(11580).removeDeliveredNotifications(arg0);
-      const obj2 = importDefault(11580);
+      const result = RNCPushNotificationIOSDefault.removeDeliveredNotifications(arg0);
+      const obj2 = RNCPushNotificationIOSDefault;
     }
   },
   scheduleLocalNotification(arg0) {
     if (!obj.isAndroid()) {
-      const result = importDefault(11580).scheduleLocalNotification(arg0);
-      const obj2 = importDefault(11580);
+      const result = RNCPushNotificationIOSDefault.scheduleLocalNotification(arg0);
+      const obj2 = RNCPushNotificationIOSDefault;
     }
   },
   getScheduledLocalNotifications(arg0) {
     if (!obj.isAndroid()) {
-      const scheduledLocalNotifications = importDefault(11580).getScheduledLocalNotifications(arg0);
-      const obj2 = importDefault(11580);
+      const scheduledLocalNotifications = RNCPushNotificationIOSDefault.getScheduledLocalNotifications(arg0);
+      const obj2 = RNCPushNotificationIOSDefault;
     }
   },
   cancelLocalNotifications(arg0) {
     if (!obj.isAndroid()) {
-      const result = importDefault(11580).cancelLocalNotifications(arg0);
-      const obj2 = importDefault(11580);
+      const result = RNCPushNotificationIOSDefault.cancelLocalNotifications(arg0);
+      const obj2 = RNCPushNotificationIOSDefault;
     }
   },
   cancelAllLocalNotifications() {
     if (!obj.isAndroid()) {
-      const result = importDefault(11580).cancelAllLocalNotifications();
-      const obj2 = importDefault(11580);
+      const result = RNCPushNotificationIOSDefault.cancelAllLocalNotifications();
+      const obj2 = RNCPushNotificationIOSDefault;
     }
   },
   checkPermissions(arg0) {
     if (obj.isAndroid()) {
       arg0({});
     } else {
-      importDefault(11580).checkPermissions(arg0);
-      const obj2 = importDefault(11580);
+      RNCPushNotificationIOSDefault.checkPermissions(arg0);
+      const obj2 = RNCPushNotificationIOSDefault;
     }
   },
   requestPermissions(arg0) {
     if (obj.isAndroid()) {
       let permissions = new Promise((arg0) => arg0({}));
     } else {
-      permissions = importDefault(11580).requestPermissions(arg0);
-      const obj2 = importDefault(11580);
+      permissions = RNCPushNotificationIOSDefault.requestPermissions(arg0);
+      const obj2 = RNCPushNotificationIOSDefault;
     }
     return permissions;
   },
   openNotificationSettings() {
-    importDefault(11581)();
+    openNotificationSettingsDefault();
   },
   addNotificationEventListener(localNotification, handleLocalNotification) {
     const _require = handleLocalNotification;
     if (obj.isAndroid()) {
       if ("notification" === localNotification) {
-        tmp3.addListener("notification", (arg0) => {
-          const handleLocalNotification = arg0;
+        closure_5.addListener("notification", (arg0) => {
+          handleLocalNotification = arg0;
           let tmp = null;
           if (null != arg0) {
             const obj = { getData: null, getMessage: null, getSound: null, getCategory: null, getAlert: null, getContentAvailable: null, getBadgeCount: null, finish: null };
@@ -210,31 +214,31 @@ export default {
               return obj;
             };
             obj[1] = function getMessage() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[2] = function getSound() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[3] = function getCategory() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[4] = function getAlert() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[5] = function getContentAvailable() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[6] = function getBadgeCount() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[7] = function finish(arg0) {
-              const error = new Error("Not implemented on Android: " + arg0);
+              error = new Error("Not implemented on Android: " + arg0);
               throw error;
             };
             tmp = obj;
@@ -245,8 +249,8 @@ export default {
         });
       }
       if ("localNotification" === localNotification) {
-        tmp3.addListener("localNotification", (arg0) => {
-          const handleLocalNotification = arg0;
+        closure_5.addListener("localNotification", (arg0) => {
+          handleLocalNotification = arg0;
           let tmp = null;
           if (null != arg0) {
             const obj = { getData: null, getMessage: null, getSound: null, getCategory: null, getAlert: null, getContentAvailable: null, getBadgeCount: null, finish: null };
@@ -262,31 +266,31 @@ export default {
               return obj;
             };
             obj[1] = function getMessage() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[2] = function getSound() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[3] = function getCategory() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[4] = function getAlert() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[5] = function getContentAvailable() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[6] = function getBadgeCount() {
-              const error = new Error("TODO: Implement on Android");
+              error = new Error("TODO: Implement on Android");
               throw error;
             };
             obj[7] = function finish(arg0) {
-              const error = new Error("Not implemented on Android: " + arg0);
+              error = new Error("Not implemented on Android: " + arg0);
               throw error;
             };
             tmp = obj;
@@ -298,20 +302,20 @@ export default {
       }
       const result = PushNotificationAndroid.registerEventListener(localNotification);
     } else {
-      const listener = importDefault(11580).addEventListener(localNotification, handleLocalNotification);
-      const obj2 = importDefault(11580);
+      const listener = RNCPushNotificationIOSDefault.addEventListener(localNotification, handleLocalNotification);
+      const obj2 = RNCPushNotificationIOSDefault;
     }
   },
   addRegisterEventListener(handleToken) {
     const _require = handleToken;
     if (obj.isAndroid()) {
-      tmp3.addListener("register", (token) => {
+      closure_5.addListener("register", (token) => {
         handleToken(token.token);
       });
       const result = PushNotificationAndroid.registerEventListener("register");
     } else {
-      const listener = importDefault(11580).addEventListener("register", handleToken);
-      const obj2 = importDefault(11580);
+      const listener = RNCPushNotificationIOSDefault.addEventListener("register", handleToken);
+      const obj2 = RNCPushNotificationIOSDefault;
     }
   },
   getSoundsEnabled() {

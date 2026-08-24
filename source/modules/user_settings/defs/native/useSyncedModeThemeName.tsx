@@ -1,23 +1,24 @@
-// Module ID: 14650
-// Function ID: 14651
+// Module ID: 14718
+// Function ID: 14719
 // Name: useSyncedModeThemeName
-// Dependencies: [1302, 1348, 1367, 589, 1347, 1236, 2533, 2]
+// Dependencies: [1302, 1348, 1367, 589, 1347, 1236, 2534, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 14650 (useSyncedModeThemeName)
-import handleThemeChange from "handleThemeChange";
-import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "ThemeTypes";
+// Module 14718 (useSyncedModeThemeName)
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import closure_3 from "handleThemeChange" /* 1302 */;
+import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "ThemeTypes" /* 1348 */;
 
 const require = arg1;
-const result = require("useIsMobileVisualRefreshExperimentEnabled").fileFinishedImporting("modules/user_settings/defs/native/useSyncedModeThemeName.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/useSyncedModeThemeName.tsx");
 
 export const useSyncedModeThemeName = function useSyncedModeThemeName(DARK) {
   const _require = DARK;
-  importDefault = importDefault(1367)("useSyncedModeThemeName");
-  const items = [handleThemeChange];
+  importDefault = useIsMobileVisualRefreshExperimentEnabledDefault("useSyncedModeThemeName");
+  const items = [closure_3];
   return _require(589).useStateFromStores(items, () => {
-    const syncedClientTheme = outer1_3.getSyncedClientTheme(DARK);
-    const themeName = DARK(outer1_2[4]).getThemeName(outer1_3.themePreferenceForSystemTheme(DARK), callback);
+    const syncedClientTheme = closure_1_3.getSyncedClientTheme(DARK);
+    const themeName = DARK(closure_1_2[4]).getThemeName(closure_1_3.themePreferenceForSystemTheme(DARK), callback);
     let prop;
     if (syncedClientTheme != null) {
       prop = syncedClientTheme.customUserThemeSettings;
@@ -33,7 +34,7 @@ export const useSyncedModeThemeName = function useSyncedModeThemeName(DARK) {
       stringResult = themeName;
       if (null != prop1) {
         let name;
-        if (outer1_4[syncedClientTheme.backgroundGradientPresetId] != null) {
+        if (closure_1_4[syncedClientTheme.backgroundGradientPresetId] != null) {
           const getName = tmp9.getName;
           if (getName != null) {
             name = getName();

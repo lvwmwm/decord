@@ -1,29 +1,30 @@
-// Module ID: 8688
-// Function ID: 8689
+// Module ID: 8725
+// Function ID: 8726
 // Name: updateSpeaker
-// Dependencies: [4652, 1218, 4497, 4774, 4773, 4544, 4531, 12, 589, 709, 2]
+// Dependencies: [4658, 1218, 4501, 4779, 4778, 4549, 4536, 12, 589, 709, 2]
 
-// Module 8688 (updateSpeaker)
-import reset from "reset";
-import fetchFingerprint from "fetchFingerprint";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import anyoneHasFlagInContext from "anyoneHasFlagInContext";
-import getParticipants from "getParticipants";
-import { ParticipantTypes } from "ParticipantTypes";
-import { Store } from "initialize";
-import importDefaultResult from "apply";
+// Module 8725 (updateSpeaker)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isStreamKey from "isStreamKey" /* 4536 */;
+import closure_4 from "reset" /* 4658 */;
+import closure_5 from "fetchFingerprint" /* 1218 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_7 from "anyoneHasFlagInContext" /* 4779 */;
+import closure_8 from "getParticipants" /* 4778 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4549 */;
+import importDefaultResult from "apply" /* 12 */;
 
-const require = arg1;
+require = arg1;
 function updateSpeaker(arg0) {
-  let userId;
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
   }
   let tmp2 = null;
   if (null != closure_2) {
-    let obj = getParticipants;
-    let selectedParticipantId = getParticipants.getSelectedParticipantId(closure_2);
+    let obj = closure_8;
+    let selectedParticipantId = closure_8.getSelectedParticipantId(closure_2);
     let result = null != selectedParticipantId;
     if (result) {
       result = obj.isParticipantPoppedOut(closure_2, selectedParticipantId);
@@ -65,7 +66,7 @@ function updateSpeaker(arg0) {
     if (null != lastActiveStream) {
       tmp21 = tmp20;
       if (null == tmp20) {
-        const participant1 = obj.getParticipant(closure_2, require(4531) /* isStreamKey */.encodeStreamKey(lastActiveStream));
+        const participant1 = obj.getParticipant(closure_2, isStreamKey.encodeStreamKey(lastActiveStream));
         let id;
         if (participant1 != null) {
           id = participant1.id;
@@ -78,7 +79,7 @@ function updateSpeaker(arg0) {
         if (!result1) {
           tmp21 = id;
         }
-        const obj2 = require(4531) /* isStreamKey */;
+        const obj2 = isStreamKey;
       }
     }
     tmp2 = tmp21;
@@ -97,11 +98,11 @@ function updateSpeaker(arg0) {
           let tmp67 = localVideoDisabled;
           let tmp68 = nextResult;
           if (!localVideoDisabled.isLocalVideoDisabled(tmp34.user.id)) {
-            let tmp35 = getParticipants;
-            let tmp36 = getParticipants;
+            let tmp35 = closure_8;
+            let tmp36 = closure_8;
             let tmp37 = closure_2;
             let tmp38 = nextResult;
-            if (!getParticipants.isParticipantPoppedOut(closure_2, tmp34.id)) {
+            if (!closure_8.isParticipantPoppedOut(closure_2, tmp34.id)) {
               let tmp39 = nextResult;
               let arr = items.push(tmp34.user.id);
               let tmp41 = speakingDuration;
@@ -136,14 +137,14 @@ function updateSpeaker(arg0) {
       }
       tmp2 = userId;
       if (null == userId) {
-        if (null == closure_3) {
+        if (null == userId) {
           const first = items[0];
         }
       }
     }
   }
-  if (closure_3 !== tmp2) {
-    closure_3 = tmp2;
+  if (userId !== tmp2) {
+    userId = tmp2;
     if (flag) {
       videoSpeakerStoreClass.emitChange();
     }
@@ -153,19 +154,20 @@ function handleChannelRTCUpdate() {
   callback();
   return false;
 }
-let closure_11 = require("apply").throttle(updateSpeaker, 300, { trailing: true });
+let closure_11 = importDefaultResult.throttle(updateSpeaker, 300, { trailing: true });
+const Store = initializeDefault.Store;
 class VideoSpeakerStoreClass extends Store {
 }
 const prototype = VideoSpeakerStoreClass.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(getParticipants, fetchFingerprint, anyoneHasFlagInContext, reset, _detectH265HardwareDecode);
-  const items = [getParticipants, reset];
+  this.waitFor(closure_8, closure_5, closure_7, closure_4, closure_6);
+  const items = [closure_8, closure_4];
   this.syncWith(items, handleChannelRTCUpdate);
 };
 prototype["getSpeaker"] = function getSpeaker(arg0) {
   if (closure_2 !== arg0) {
     closure_2 = arg0;
-    let c3 = null;
+    c3 = null;
     updateSpeaker(false);
   }
   let id = c3;
@@ -175,8 +177,8 @@ prototype["getSpeaker"] = function getSpeaker(arg0) {
   return id;
 };
 VideoSpeakerStoreClass.displayName = "VideoSpeakerStore";
-const videoSpeakerStoreClass = new VideoSpeakerStoreClass(require("dispatcher"), { AUDIO_SET_LOCAL_VIDEO_DISABLED: handleChannelRTCUpdate });
+const videoSpeakerStoreClass = new VideoSpeakerStoreClass(dispatcherDefault, { AUDIO_SET_LOCAL_VIDEO_DISABLED: handleChannelRTCUpdate });
 let obj = { AUDIO_SET_LOCAL_VIDEO_DISABLED: handleChannelRTCUpdate };
-let result = require("_detectH265HardwareDecode").fileFinishedImporting("modules/calls/VideoSpeakerStore.tsx");
+let result = require("set").fileFinishedImporting("modules/calls/VideoSpeakerStore.tsx");
 
 export default videoSpeakerStoreClass;

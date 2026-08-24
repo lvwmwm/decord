@@ -4,14 +4,16 @@
 // Dependencies: [131, 141]
 
 // Module 142 (getElementSibling)
-const require = arg1;
+import _isNativeReflectConstruct from "_isNativeReflectConstruct" /* 131 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.getElementSibling = function getElementSibling(parentNode, next) {
   parentNode = parentNode.parentNode;
   if (null == parentNode) {
     return null;
   } else {
-    const childNodes = require(131) /* _isNativeReflectConstruct */.getChildNodes(parentNode);
+    const childNodes = _isNativeReflectConstruct.getChildNodes(parentNode);
     const index = childNodes.indexOf(parentNode);
     let num = -1;
     if (-1 === index) {
@@ -47,7 +49,7 @@ arg5.getElementSibling = function getElementSibling(parentNode, next) {
       }
       return tmp8;
     }
-    const obj = require(131) /* _isNativeReflectConstruct */;
+    const obj = _isNativeReflectConstruct;
     tmp9 = require;
   }
 };

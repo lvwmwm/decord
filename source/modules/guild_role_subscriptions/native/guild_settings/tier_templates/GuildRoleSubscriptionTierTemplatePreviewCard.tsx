@@ -1,36 +1,34 @@
-// Module ID: 17004
-// Function ID: 17005
+// Module ID: 17097
+// Function ID: 17098
 // Name: ContentHeader
-// Dependencies: [19, 17, 676, 21, 4661, 712, 4734, 4342, 17005, 2007, 17009, 1297, 17008, 1236, 7129, 1500, 14573, 17010, 698, 5042, 14579, 17006, 9422, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 4739, 4346, 17098, 2008, 17102, 1297, 17101, 1236, 7167, 1500, 14641, 17103, 698, 5047, 14647, 17099, 9459, 2]
 // Exports: default
 
-// Module 17004 (ContentHeader)
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
-import get_ActivityIndicator from "_getTemplates";
-import ME from "ME";
-import jsxProd from "GuildRoleSubscriptionTierTemplateBasicInfo";
-import createCacheKey from "createCacheKey";
+// Module 17097 (ContentHeader)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import registerAssetDefault from "registerAsset" /* 7167 */;
+import getPrivateChannelIconComponent from "getPrivateChannelIconComponent" /* 17101 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function ContentHeader(arg0) {
-  let count;
-  let title;
   ({ count, title } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { variant: "text-xs/bold", color: "text-muted", style: tmp.contentHeader, children: null };
   obj = { variant: "text-xs/bold", color: "text-default", style: tmp.contentHeader, children: count };
-  const items = [callback(require(4734) /* Text */.Text, obj), " ", title];
+  const items = [callback(Text.Text, obj), " ", title];
   obj[3] = items;
-  return callback2(require(4734) /* Text */.Text, obj);
+  return callback2(Text.Text, obj);
 }
 function Separator() {
-  return callback(closure_6, { style: createCacheKey().separator });
+  return callback(closure_6, { style: callback3().separator });
 }
 function BenefitShowCase(children) {
   const title = children.title;
@@ -38,73 +36,61 @@ function BenefitShowCase(children) {
   if (typeof title === "string") {
     let obj = { variant: "text-md/semibold", color: "text-default", children: null };
     obj[2] = title;
-    tmp3 = callback(require(4734) /* Text */.Text, obj);
+    tmp3 = callback(Text.Text, obj);
   }
   obj = { children: null };
-  const items = [tmp3, callback(require(1297) /* Button */.Spacer, { size: 2 }), callback(require(4734) /* Text */.Text, { variant: "text-sm/medium", color: "interactive-text-default", children: children.description })];
+  const items = [tmp3, callback(Button.Spacer, { size: 2 }), callback(Text.Text, { variant: "text-sm/medium", color: "interactive-text-default", children: children.description })];
   obj[0] = items;
   return closure_10(closure_6, obj);
 }
 function ChannelBenefitShowCase(channel) {
-  let description;
-  let name;
-  let type;
   ({ description, type, name } = channel.channel);
-  let obj = require(17008) /* getPrivateChannelIconComponent */;
+  let obj = getPrivateChannelIconComponent;
   obj = { style: { flexDirection: "row", alignItems: "center" }, children: null };
-  const items = [callback(obj.getPrivateChannelIconComponent(type), { size: "xs" }), callback(require(1297) /* Button */.Spacer, { size: 4 }), callback(require(4734) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", children: name })];
+  const items = [callback(obj.getPrivateChannelIconComponent(type), { size: "xs" }), callback(Button.Spacer, { size: 4 }), callback(Text.Text, { variant: "text-md/semibold", color: "text-default", children: name })];
   obj[1] = items;
   obj = { title: callback2(closure_6, obj), description };
   return callback(BenefitShowCase, obj);
 }
 function ViewEntireTemplateFooter() {
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { style: tmp.viewEntireTemplateFooter, children: null };
   obj = { children: null };
   obj = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.kejaOD);
-  const items = [callback(require(4734) /* Text */.Text, obj), callback(require(1297) /* Button */.Spacer, { size: 3 }), callback(closure_6, { style: tmp.viewEntireTemplateFooterUnderline })];
+  const intl = getSystemLocale.intl;
+  obj[3] = intl.string(getSystemLocale.t.kejaOD);
+  const items = [callback(Text.Text, obj), callback(Button.Spacer, { size: 3 }), callback(closure_6, { style: tmp.viewEntireTemplateFooterUnderline })];
   obj[0] = items;
   const items1 = [callback2(closure_6, obj), ];
-  const obj2 = { children: null };
-  const obj3 = { size: null, source: null, style: null };
-  obj3[0] = require(1297) /* Button */.Icon.Sizes.REFRESH_SMALL_16;
-  obj3[1] = importDefault(7129);
-  const items2 = [{ rotate: "180deg" }];
-  obj3[2] = { transform: items2 };
-  obj2[0] = callback(require(1297) /* Button */.Icon, obj3);
+  const obj2 = { children: callback(Button.Icon, { size: Button.Icon.Sizes.REFRESH_SMALL_16, source: registerAssetDefault, style: { transform: items2 } }) };
+  items2 = [{ rotate: "180deg" }];
   items1[1] = callback(closure_6, obj2);
   obj[1] = items1;
   return callback2(closure_6, obj);
 }
 ({ TouchableOpacity: c5, View: closure_6 } = get_ActivityIndicator);
-({ AnalyticEvents: error, GuildSettingsSections: metroImportAll } = ME);
+({ AnalyticEvents: error, GuildSettingsSections: closure_8 } = ME);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: null, subscriptionPlanTextStyle: null, descriptionPlanTextStyle: null, separator: null, contentContainer: null, contentHeader: null, viewEntireTemplateFooter: null, viewEntireTemplateFooterUnderline: null };
-createCacheKey = { padding: 16, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, width: 319 };
+createCacheKey = { padding: 16, borderRadius: ThemesDefault.radii.md, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL, width: 319 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { color: require("Themes").colors.TEXT_SUBTLE };
-let obj1 = { color: require("Themes").colors.TEXT_SUBTLE };
-createCacheKey[2] = { color: require("Themes").colors.TEXT_MUTED, paddingTop: 8, paddingBottom: 16 };
-let obj2 = { color: require("Themes").colors.TEXT_MUTED, paddingTop: 8, paddingBottom: 16 };
-createCacheKey[3] = { width: "100%", height: 1, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 16 };
-let obj3 = { width: "100%", height: 1, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 16 };
-createCacheKey[4] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: require("Themes").radii.sm, borderTopLeftRadius: require("Themes").radii.sm, padding: 16, paddingBottom: 0 };
+createCacheKey[1] = { color: ThemesDefault.colors.TEXT_SUBTLE };
+let obj1 = { color: ThemesDefault.colors.TEXT_SUBTLE };
+createCacheKey[2] = { color: ThemesDefault.colors.TEXT_MUTED, paddingTop: 8, paddingBottom: 16 };
+let obj2 = { color: ThemesDefault.colors.TEXT_MUTED, paddingTop: 8, paddingBottom: 16 };
+createCacheKey[3] = { width: "100%", height: 1, backgroundColor: ThemesDefault.colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 16 };
+let obj3 = { width: "100%", height: 1, backgroundColor: ThemesDefault.colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 16 };
+createCacheKey[4] = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: ThemesDefault.radii.sm, borderTopLeftRadius: ThemesDefault.radii.sm, padding: 16, paddingBottom: 0 };
 createCacheKey[5] = { textTransform: "uppercase" };
-let obj4 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: require("Themes").radii.sm, borderTopLeftRadius: require("Themes").radii.sm, padding: 16, paddingBottom: 0 };
-createCacheKey[6] = { paddingVertical: 16, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: require("Themes").radii.sm, borderBottomRightRadius: require("Themes").radii.sm, marginLeft: -16, marginRight: -16, marginTop: 16 };
-let obj5 = { paddingVertical: 16, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: require("Themes").radii.sm, borderBottomRightRadius: require("Themes").radii.sm, marginLeft: -16, marginRight: -16, marginTop: 16 };
-createCacheKey[7] = { position: "absolute", left: 0, right: 0, height: 1, bottom: 0, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj6 = { position: "absolute", left: 0, right: 0, height: 1, bottom: 0, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
-let result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplatePreviewCard.tsx");
+let obj4 = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: ThemesDefault.radii.sm, borderTopLeftRadius: ThemesDefault.radii.sm, padding: 16, paddingBottom: 0 };
+createCacheKey[6] = { paddingVertical: 16, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: ThemesDefault.radii.sm, borderBottomRightRadius: ThemesDefault.radii.sm, marginLeft: -16, marginRight: -16, marginTop: 16 };
+let obj5 = { paddingVertical: 16, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: ThemesDefault.radii.sm, borderBottomRightRadius: ThemesDefault.radii.sm, marginLeft: -16, marginRight: -16, marginTop: 16 };
+createCacheKey[7] = { position: "absolute", left: 0, right: 0, height: 1, bottom: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let obj6 = { position: "absolute", left: 0, right: 0, height: 1, bottom: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
+let result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplatePreviewCard.tsx");
 
 export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
-  let additional_perks;
-  let channels;
-  let guildId;
-  let priceTiers;
   template = template.template;
   ({ priceTiers, guildId } = template);
   const groupListingId = template.groupListingId;
@@ -112,12 +98,12 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
   let addNewEditStateFromTemplate;
   let callback;
   let suggestedUnusedPrices;
-  let c7;
+  closure_7 = undefined;
   let callback1;
-  let tmp = createCacheKey();
+  let tmp = callback3();
   let obj = template(navigation[15]);
   navigation = obj.useNavigation();
-  let obj1 = groupListingId(navigation[16]);
+  obj1 = groupListingId(navigation[16]);
   addNewEditStateFromTemplate = obj1.useEditStateIds(groupListingId, template.editGroupId, { includeSoftDeleted: true }).addNewEditStateFromTemplate;
   const first = template.listings[0];
   ({ channels, additional_perks } = first);
@@ -137,7 +123,7 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
     obj = { exit_reason: "template_selected" };
     const obj3 = guildId(navigation[18]);
     const merged = Object.assign(tmp(navigation[19]).collectGuildAnalyticsMetadata(tmp3));
-    obj3.track(_undefined.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED, obj);
+    obj3.track(constants.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED, obj);
     obj = { groupListingId, initialEditStateId: tmp5 };
     const replaced = navigation.replace(callback1.ROLE_SUBSCRIPTIONS_TIER_EDIT, obj);
   }, items);
@@ -147,10 +133,10 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
   if (tmp8) {
     tmp8 = suggestedUnusedPrices.length > 0;
   }
-  c7 = tmp8;
+  closure_7 = tmp8;
   const items1 = [callback, suggestedUnusedPrices, tmp8];
   callback1 = obj2.useCallback((arg0, arg1) => {
-    if (c7) {
+    if (closure_7) {
       let obj = guildId(navigation[7]);
       obj = { selectedTemplate: null, handleCreateFromTemplate: null, newPricesToPick: null };
       obj[0] = arg0;

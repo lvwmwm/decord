@@ -1,43 +1,48 @@
-// Module ID: 14822
-// Function ID: 14823
+// Module ID: 14886
+// Function ID: 14887
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 4066, 14823, 2]
+// Dependencies: [8238, 10708, 1236, 4069, 14887, 2]
 
-// Module 14822 (toggle)
-import createToggle from "createToggle";
+// Module 14886 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import onSummaryReminderNotificationSettingsChanged from "onSummaryReminderNotificationSettingsChanged" /* 14887 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.xEqC6q);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.xEqC6q);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.KmVXll);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.KmVXll);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableSummaryReminderNotifications.useSetting,
-  onValueChange: require("onSummaryReminderNotificationSettingsChanged").onSummaryReminderNotificationSettingsChanged,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableSummaryReminderNotifications.useSetting,
+  onValueChange: onSummaryReminderNotificationSettingsChanged.onSummaryReminderNotificationSettingsChanged,
   usePredicate() {
     return false;
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.xEqC6q);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.xEqC6q);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.KmVXll);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.KmVXll);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableSummaryReminderNotifications.useSetting,
-  onValueChange: require("onSummaryReminderNotificationSettingsChanged").onSummaryReminderNotificationSettingsChanged,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableSummaryReminderNotifications.useSetting,
+  onValueChange: onSummaryReminderNotificationSettingsChanged.onSummaryReminderNotificationSettingsChanged,
   usePredicate() {
     return false;
   }
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/SummaryReminderNotificationSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/SummaryReminderNotificationSetting.tsx");
 
 export default toggle;

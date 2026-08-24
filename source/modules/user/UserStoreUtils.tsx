@@ -5,13 +5,15 @@
 // Exports: getEnv, getPremiumTypeFromRawValue, isStaffEnv, isStaffEnvRawData, validatePremiumType
 
 // Module 1928 (validatePremiumType)
-import { Environments } from "Environments";
-import ME from "ME";
+import set from "set" /* 2 */;
+import _modDef38 from "module_38" /* 38 */;
+import hasFlag from "hasFlag" /* 1403 */;
+import Environments2 from "Environments" /* 1929 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
+const Environments = Environments2.Environments;
 ({ PREMIUM_TYPE_NONE: c4, UserFlags: c5 } = ME);
-const result = require("module_38").fileFinishedImporting("modules/user/UserStoreUtils.tsx");
+const result = set.fileFinishedImporting("modules/user/UserStoreUtils.tsx");
 
 export const validatePremiumType = function validatePremiumType(arg0, arg1, premiumType) {
   let tmp = arg0;
@@ -19,7 +21,7 @@ export const validatePremiumType = function validatePremiumType(arg0, arg1, prem
     tmp = undefined === arg1;
   }
   if (!tmp) {
-    importDefault(38)(premiumType === arg1, "Premium type should not change for non-staff users");
+    _modDef38(premiumType === arg1, "Premium type should not change for non-staff users");
   }
 };
 export const getEnv = function getEnv(arg0) {
@@ -74,8 +76,8 @@ export const isStaffEnvRawData = function isStaffEnvRawData(flags) {
     if (tmp9) {
       let tmp10 = null == flags.flags;
       if (!tmp10) {
-        tmp10 = !require(1403) /* hasFlag */.hasFlag(flags.flags, constants.STAFF);
-        const obj = require(1403) /* hasFlag */;
+        tmp10 = !hasFlag.hasFlag(flags.flags, constants.STAFF);
+        const obj = hasFlag;
       }
       let tmp14 = !tmp10;
       if (tmp10) {

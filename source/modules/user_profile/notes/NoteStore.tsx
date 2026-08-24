@@ -1,16 +1,16 @@
-// Module ID: 12160
-// Function ID: 12161
+// Module ID: 12212
+// Function ID: 12213
 // Name: getNote
 // Dependencies: [1431, 1911, 1914, 2]
 
-// Module 12160 (getNote)
-import isValueEqual from "isValueEqual";
-import { LibdiscoreStore } from "identity";
-import { LibdiscoreBatchStoreRefactorExperiment } from "items";
+// Module 12212 (getNote)
+import set2 from "set" /* 2 */;
+import identity from "identity" /* 1911 */;
+import items from "items" /* 1914 */;
+import isValueEqual from "isValueEqual" /* 1431 */;
 
-let TypeTag;
-let c0;
 ({ TypeTag, constructInPlace: c0 } = isValueEqual);
+const LibdiscoreStore = identity.LibdiscoreStore;
 const Note = "Note";
 class NoteStore extends LibdiscoreStore {
   constructor() {
@@ -28,6 +28,7 @@ prototype["stateWrapper"] = function stateWrapper() {
   return this.database;
 };
 NoteStore.displayName = "NoteStore";
+const LibdiscoreBatchStoreRefactorExperiment = items.LibdiscoreBatchStoreRefactorExperiment;
 const noteStore = new NoteStore({
   LOGOUT(arg0, clear) {
     return clear.clear();
@@ -48,7 +49,7 @@ const noteStore = new NoteStore({
     const result = set.set(userId.userId, callback(Note, { loading: true, note: null }));
   }
 }, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
-let result = require("items").fileFinishedImporting("modules/user_profile/notes/NoteStore.tsx");
+let result = set2.fileFinishedImporting("modules/user_profile/notes/NoteStore.tsx");
 
 export default noteStore;
 export const NoteRecordTypeTag = "Note";

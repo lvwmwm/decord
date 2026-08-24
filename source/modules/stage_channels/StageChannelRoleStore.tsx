@@ -1,18 +1,23 @@
-// Module ID: 4990
-// Function ID: 4991
+// Module ID: 4995
+// Function ID: 4996
 // Name: buildStageChannelUserRoles
-// Dependencies: [1391, 1990, 1983, 1910, 1922, 4542, 4981, 4026, 1399, 12, 589, 4991, 709, 2]
+// Dependencies: [1391, 1991, 1984, 1910, 1922, 4547, 4986, 4029, 1399, 12, 589, 4996, 709, 2]
 
-// Module 4990 (buildStageChannelUserRoles)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import updateVoiceState from "updateVoiceState";
-import { Store } from "initialize";
+// Module 4995 (buildStageChannelUserRoles)
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import applyOverwritesAll from "applyOverwrites" /* 4029 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4986 */;
+import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser" /* 4996 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_7 from "createGuildRecordFromRust" /* 1910 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "updateVoiceState" /* 4547 */;
 
-const require = arg1;
+require = arg1;
 function buildStageChannelUserRoles(id, closure_0, flag) {
   if (flag === undefined) {
     flag = false;
@@ -32,10 +37,10 @@ function buildStageChannelUserRoles(id, closure_0, flag) {
   if (null != guild) {
     if (null != channel) {
       if (channel.isGuildStageVoice()) {
-        let obj = {};
+        obj = {};
         voiceStateForChannel = voiceStateForChannel.getVoiceStateForChannel(closure_0, id);
-        const audienceRequestToSpeakState = require(4981) /* useAudienceRequestToSpeakState */.getAudienceRequestToSpeakState(voiceStateForChannel);
-        obj[obj.SPEAKER] = audienceRequestToSpeakState === require(4981) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
+        const audienceRequestToSpeakState = useAudienceRequestToSpeakState.getAudienceRequestToSpeakState(voiceStateForChannel);
+        obj[obj.SPEAKER] = audienceRequestToSpeakState === useAudienceRequestToSpeakState.RequestToSpeakStates.ON_STAGE;
         let canResult = null;
         if (flag) {
           obj = { permission: null, user: null, context: null, overwrites: null, roles: null };
@@ -44,12 +49,12 @@ function buildStageChannelUserRoles(id, closure_0, flag) {
           obj[2] = guild;
           obj[3] = channel.permissionOverwrites;
           obj[4] = unsafeMutableRoles.getUnsafeMutableRoles(guild.id);
-          canResult = importAll(4026).can(obj);
-          const obj4 = importAll(4026);
+          canResult = applyOverwritesAll.can(obj);
+          const obj4 = applyOverwritesAll;
         }
         obj[obj.MODERATOR] = canResult;
         let tmp4 = obj;
-        const obj3 = require(4981) /* useAudienceRequestToSpeakState */;
+        const obj3 = useAudienceRequestToSpeakState;
         tmp8 = require;
       }
       dependencyMap[closure_0][id] = tmp4;
@@ -70,8 +75,6 @@ function resetStageChannelRolesForGuild(guildId) {
   return found.length > 0;
 }
 function handleGuildMemberUpdate(arg0) {
-  let guildId;
-  let user;
   ({ guildId, user } = arg0);
   let flag = null != user && null != guildId;
   if (flag) {
@@ -121,11 +124,12 @@ function handleGuildCreateOrDelete(arg0) {
 let obj = { SPEAKER: "speaker", MODERATOR: "moderator" };
 let closure_11 = {};
 obj = { [obj.SPEAKER]: false, [obj.MODERATOR]: false };
+const Store = initializeDefault.Store;
 class StageChannelRoleStore extends Store {
 }
 const prototype = StageChannelRoleStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(trackCommunicationDisabled, ensureGuildLoaded, createGuildRecordFromRust, mergeGuildAvatar, updateVoiceState, createGuildRoleRecordFromRust);
+  this.waitFor(closure_5, closure_4, closure_7, closure_8, closure_9, closure_6);
 };
 prototype["isSpeaker"] = function isSpeaker(id, channelId) {
   return this.getPermissionsForUser(id, channelId)[obj.SPEAKER];
@@ -157,7 +161,7 @@ prototype["getPermissionsForUser"] = function getPermissionsForUser(id, closure_
         id = currentUser.id;
       }
       if (id === id) {
-        const obj = require(4991) /* useIsStageSpeakingDisabledForCurrentUser */;
+        obj = useIsStageSpeakingDisabledForCurrentUser;
         if (obj.isStageSpeakingDisabledForCurrentUser()) {
           return obj;
         }
@@ -194,7 +198,7 @@ obj = {
     }
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_11 = {};
+    closure_11 = {};
   },
   GUILD_MEMBER_REMOVE: handleGuildMemberUpdate,
   GUILD_MEMBER_UPDATE: handleGuildMemberUpdate,
@@ -206,12 +210,10 @@ obj = {
   },
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
     voiceStates = voiceStates.voiceStates;
-    const isEmptyResult = importDefault(12).isEmpty(closure_11);
+    const isEmptyResult = applyDefault.isEmpty(closure_11);
     let reduced = !isEmptyResult;
     if (!isEmptyResult) {
       reduced = voiceStates.reduce((arg0, arg1) => {
-        let channelId;
-        let userId;
         ({ userId, channelId } = arg1);
         let flag = false;
         if (null != channelId) {
@@ -237,8 +239,8 @@ obj = {
   GUILD_CREATE: handleGuildCreateOrDelete,
   GUILD_DELETE: handleGuildCreateOrDelete
 };
-const stageChannelRoleStore = new StageChannelRoleStore(require("dispatcher"), obj);
-const result = require("createGuildRoleRecordFromRust").fileFinishedImporting("modules/stage_channels/StageChannelRoleStore.tsx");
+const stageChannelRoleStore = new StageChannelRoleStore(dispatcherDefault, obj);
+const result = require("set").fileFinishedImporting("modules/stage_channels/StageChannelRoleStore.tsx");
 
 export default stageChannelRoleStore;
 export const StagePermissionBuckets = obj;

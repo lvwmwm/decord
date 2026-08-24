@@ -1,10 +1,12 @@
-// Module ID: 11979
-// Function ID: 11980
+// Module ID: 12028
+// Function ID: 12029
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11979 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/premium/gifting/halloween-card-small.png.js");
+// Module 12028 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/premium/gifting/halloween-card-small.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/ccb58f853a6377b4d3c71973f1edb58f8b4258618d1f8ef635b44b0c7fadc0c4.png";
 export const metadata = { fileBytes: 20527 };

@@ -1,26 +1,27 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 13036
+// Function ID: 13037
 // Name: getViewerProductId
-// Dependencies: [19, 7395, 5319, 1924, 7378, 5322, 500, 5316, 4054, 589, 2]
+// Dependencies: [19, 7433, 5324, 1924, 7416, 5327, 500, 5321, 4057, 589, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 12981 (getViewerProductId)
-import noop from "noop";
-import { useNativeCheckoutStore } from "context";
-import updateProduct from "updateProduct";
-import { PremiumTypes } from "GuildFeatures";
+// Module 13036 (getViewerProductId)
+import getPremiumBundledItemsFromProductId from "getPremiumBundledItemsFromProductId" /* 7416 */;
+import closure_2 from "noop" /* 19 */;
+import { useNativeCheckoutStore } from "context" /* 7433 */;
+import closure_4 from "updateProduct" /* 5324 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
-const require = arg1;
+require = arg1;
 function getViewerProductId(subscription) {
   if (null == subscription) {
     return null;
   } else {
     try {
-      const productIdFromSubscription = require(7378) /* getPremiumBundledItemsFromProductId */.getProductIdFromSubscription(subscription, false);
+      const productIdFromSubscription = getPremiumBundledItemsFromProductId.getProductIdFromSubscription(subscription, false);
       try {
-        const productIdFromSubscription1 = tmp3(7378).getProductIdFromSubscription(subscription, true);
-        const tmp8 = tmp3(5322).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
-        const tmp10 = tmp3(5322).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
+        const productIdFromSubscription1 = tmp3(7416).getProductIdFromSubscription(subscription, true);
+        const tmp8 = tmp3(5327).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
+        const tmp10 = tmp3(5327).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
         if (null != tmp8) {
           if (null != tmp10) {
             if (tmp8.numPremiumGuild === tmp10.numPremiumGuild) {
@@ -30,18 +31,18 @@ function getViewerProductId(subscription) {
           }
         }
         tmp11 = productIdFromSubscription;
-        const tmp3Result = tmp3(7378);
+        const tmp3Result = tmp3(7416);
       } catch (err) {
         return tmp2;
       }
-      const obj = require(7378) /* getPremiumBundledItemsFromProductId */;
+      const obj = getPremiumBundledItemsFromProductId;
     } catch (err) {
       return tmp;
     }
   }
 }
 let closure_6 = { priceString: null, failure: null };
-let result = require("updateProduct").fileFinishedImporting("modules/premium/native/hooks/usePremiumTier2DeltaPriceString.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/native/hooks/usePremiumTier2DeltaPriceString.tsx");
 
 export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPriceString(plan, subscription, first, flag3) {
   const tmp = productId((orderRequired) => ({ orderRequired: orderRequired.orderRequired, checkoutContext: orderRequired.getCheckoutContextRecord() }));
@@ -49,15 +50,15 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
   const tmp3 = getViewerProductId(subscription);
   let kind = tmp3;
   let obj = kind(platform[9]);
-  const items = [updateProduct];
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let product = null;
     if (null != kind) {
-      product = outer1_4.getProduct(tmp);
+      product = closure_1_4.getProduct(tmp);
     }
     return product;
   });
-  let obj1 = kind(platform[6]);
+  obj1 = kind(platform[6]);
   let flag = false;
   if (flag3) {
     flag = false;
@@ -201,7 +202,7 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
       if (null != kind) {
         const _Error = Error;
         const _HermesInternal = HermesInternal;
-        const error = new Error("delta_price_integrity_" + tmp);
+        error = new Error("delta_price_integrity_" + tmp);
         let obj = { source: "usePremiumTier2DeltaPriceString", delta_failure_kind: null, delta_platform: null, delta_currency_code: null, delta_product_id: null };
         obj[1] = tmp;
         let str = platform;

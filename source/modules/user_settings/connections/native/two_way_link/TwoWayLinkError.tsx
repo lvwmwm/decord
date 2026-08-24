@@ -1,54 +1,54 @@
-// Module ID: 9794
-// Function ID: 9795
+// Module ID: 9833
+// Function ID: 9834
 // Name: TwoWayLinkError
-// Dependencies: [19, 17, 21, 4661, 9756, 9795, 4734, 6803, 4733, 4745, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 9795, 9834, 4739, 6840, 4738, 4750, 1236, 2]
 // Exports: TwoWayLinkError
 
-// Module 9794 (TwoWayLinkError)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9833 (TwoWayLinkError)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Stack from "Stack" /* 4738 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import styles from "styles" /* 9795 */;
+import registerAssetDefault from "registerAsset" /* 9834 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ image: { width: 254, height: 127, marginBottom: 32 } });
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkError.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkError.tsx");
 
 export const TwoWayLinkError = function TwoWayLinkError(arg0) {
-  let body;
-  let onClose;
-  let onRetry;
-  let title;
   ({ onClose, title, body, onRetry } = arg0);
-  let obj = require(9756) /* styles */;
+  let obj = styles;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container, children: null };
   obj = { style: twoWayLinkStyles.content, children: null };
   const tmp = callback3();
-  const items = [callback(closure_3, { source: importDefault(9795), style: callback3().image }), callback(require(4734) /* Text */.Text, { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title }), callback(require(4734) /* Text */.Text, { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body })];
+  const items = [callback(closure_3, { source: registerAssetDefault, style: callback3().image }), callback(Text.Text, { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title }), callback(Text.Text, { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body })];
   obj[1] = items;
   const items1 = [callback2(closure_4, obj), ];
   const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
   const obj5 = { spacing: 8, direction: "vertical", style: twoWayLinkStyles.footerButton, children: null };
   const obj6 = { size: "lg", variant: "primary", text: null, onPress: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj6[2] = intl.string(require(1236) /* getSystemLocale */.t["5911Lb"]);
+  const intl = getSystemLocale.intl;
+  obj6[2] = intl.string(getSystemLocale.t["5911Lb"]);
   obj6[3] = onRetry;
-  const items2 = [callback(require(4745) /* Button */.Button, obj6), ];
+  const items2 = [callback(Button.Button, obj6), ];
   const obj7 = { size: "lg", variant: "secondary", text: null, onPress: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj7[2] = intl2.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
+  const intl2 = getSystemLocale.intl;
+  obj7[2] = intl2.string(getSystemLocale.t["ETE/oC"]);
   obj7[3] = onClose;
-  items2[1] = callback(require(4745) /* Button */.Button, obj7);
+  items2[1] = callback(Button.Button, obj7);
   obj5[3] = items2;
-  obj4[2] = callback2(require(4733) /* Stack */.Stack, obj5);
-  items1[1] = callback(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  obj4[2] = callback2(Stack.Stack, obj5);
+  items1[1] = callback(SafeAreaPaddingView.SafeAreaPaddingView, obj4);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

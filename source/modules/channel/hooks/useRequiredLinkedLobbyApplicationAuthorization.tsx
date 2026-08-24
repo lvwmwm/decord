@@ -1,16 +1,19 @@
-// Module ID: 11604
-// Function ID: 11605
+// Module ID: 11653
+// Function ID: 11654
 // Name: useRequiredLinkedLobbyApplicationAuthorization
-// Dependencies: [19, 4478, 5289, 589, 7147, 7140, 2]
+// Dependencies: [19, 4482, 5294, 589, 7185, 7178, 2]
 // Exports: default
 
-// Module 11604 (useRequiredLinkedLobbyApplicationAuthorization)
-import { useEffect } from "noop";
-import addApplication from "addApplication";
-import recomputeFromAppTokens from "recomputeFromAppTokens";
-import { FetchState } from "recomputeFromAppTokens";
+// Module 11653 (useRequiredLinkedLobbyApplicationAuthorization)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import recomputeFromAppTokens from "recomputeFromAppTokens" /* 5294 */;
+import closure_4 from "addApplication" /* 4482 */;
+import closure_5 from "recomputeFromAppTokens" /* 5294 */;
 
-const result = require("recomputeFromAppTokens").fileFinishedImporting("modules/channel/hooks/useRequiredLinkedLobbyApplicationAuthorization.tsx");
+const useEffect = noop.useEffect;
+const FetchState = recomputeFromAppTokens.FetchState;
+const result = set.fileFinishedImporting("modules/channel/hooks/useRequiredLinkedLobbyApplicationAuthorization.tsx");
 
 export default function useRequiredLinkedLobbyApplicationAuthorization(require_application_authorization) {
   let prop;
@@ -22,35 +25,35 @@ export default function useRequiredLinkedLobbyApplicationAuthorization(require_a
     application_id = require_application_authorization.application_id;
   }
   let obj = application_id(stateFromStores[3]);
-  let items = [recomputeFromAppTokens];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ authorizationsFetchState: outer1_5.getFetchState(), applicationOAuth2Token: outer1_5.getNewestTokenForApplication(application_id) }));
+  let items = [closure_5];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ authorizationsFetchState: closure_1_5.getFetchState(), applicationOAuth2Token: closure_1_5.getNewestTokenForApplication(application_id) }));
   const authorizationsFetchState = stateFromStoresObject.authorizationsFetchState;
   const applicationOAuth2Token = stateFromStoresObject.applicationOAuth2Token;
-  const items1 = [addApplication];
-  stateFromStores = application_id(stateFromStores[3]).useStateFromStores(items1, () => outer1_4.getApplication(application_id));
+  const items1 = [closure_4];
+  stateFromStores = application_id(stateFromStores[3]).useStateFromStores(items1, () => closure_1_4.getApplication(application_id));
   const obj2 = application_id(stateFromStores[3]);
-  const items2 = [addApplication];
+  const items2 = [closure_4];
   let stateFromStores1 = application_id(stateFromStores[3]).useStateFromStores(items2, () => {
     let parentId;
     if (stateFromStores != null) {
       parentId = stateFromStores.parentId;
     }
-    return outer1_4.getApplication(parentId);
+    return closure_1_4.getApplication(parentId);
   });
   const obj3 = application_id(stateFromStores[3]);
-  const items3 = [recomputeFromAppTokens];
+  const items3 = [closure_5];
   const items4 = [authorizationsFetchState, application_id];
   const stateFromStores2 = application_id(stateFromStores[3]).useStateFromStores(items3, () => {
     let parentId;
     if (stateFromStores != null) {
       parentId = stateFromStores.parentId;
     }
-    return outer1_5.getNewestTokenForApplication(parentId);
+    return closure_1_5.getNewestTokenForApplication(parentId);
   });
   stateFromStores1(() => {
     let tmp = null != application_id;
     if (tmp) {
-      tmp = authorizationsFetchState === outer1_6.NOT_FETCHED;
+      tmp = authorizationsFetchState === closure_1_6.NOT_FETCHED;
     }
     if (tmp) {
       const response = authorizationsFetchState(stateFromStores[4]).fetch();
@@ -64,7 +67,7 @@ export default function useRequiredLinkedLobbyApplicationAuthorization(require_a
       tmp2 = null == stateFromStores;
     }
     if (tmp2) {
-      tmp2 = authorizationsFetchState === outer1_6.FETCHED;
+      tmp2 = authorizationsFetchState === closure_1_6.FETCHED;
     }
     if (tmp2) {
       const items = [application_id];
@@ -79,7 +82,7 @@ export default function useRequiredLinkedLobbyApplicationAuthorization(require_a
       tmp2 = null == stateFromStores1;
     }
     if (tmp2) {
-      tmp2 = authorizationsFetchState === outer1_6.FETCHED;
+      tmp2 = authorizationsFetchState === closure_1_6.FETCHED;
     }
     if (tmp2) {
       const items = [tmp.parentId];

@@ -1,46 +1,45 @@
-// Module ID: 10588
-// Function ID: 10589
+// Module ID: 10627
+// Function ID: 10628
 // Name: SafetyTipsContainer
-// Dependencies: [19, 17, 21, 4661, 712, 4733, 5447, 4734, 1236, 6692, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4738, 5452, 4739, 1236, 6728, 2]
 // Exports: default
 
-// Module 10588 (SafetyTipsContainer)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10627 (SafetyTipsContainer)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { image: { alignSelf: "center", justifySelf: "center" }, tips: null, text: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.lg, overflow: "hidden" };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.lg, overflow: "hidden" };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/self_mod/shared/native/SafetyTipsSection.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/self_mod/shared/native/SafetyTipsSection.tsx");
 
 export default function SafetyTipsContainer(children) {
   const safetyTips = children.safetyTips;
   let showHeader = children.showHeader;
-  const tmp = createCacheKey();
-  let obj = { style: tmp.image, children: null };
-  obj[1] = callback(safetyTips(5447).SafetyBookletSpotIllustration, {});
+  const tmp = callback2();
+  let obj = { style: tmp.image, children: callback(safetyTips(5452).SafetyBookletSpotIllustration, {}) };
   const items = [callback(View, obj), , ];
   if (showHeader) {
     obj = { style: null, variant: "heading-xl/semibold", children: null };
     obj[0] = tmp.text;
     const intl = tmp3(1236).intl;
     obj[2] = intl.string(tmp3(1236).t.eAbVfS);
-    showHeader = tmp5(tmp3(4734).Text, obj);
+    showHeader = tmp5(tmp3(4739).Text, obj);
   }
   obj = { spacing: 16, children: null };
-  const obj1 = { spacing: 8, align: "center", justify: "center", children: null };
-  const items1 = [showHeader, callback(safetyTips(4734).Text, { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: children.description })];
+  obj1 = { spacing: 8, align: "center", justify: "center", children: null };
+  const items1 = [showHeader, callback(safetyTips(4739).Text, { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: children.description })];
   obj1[3] = items1;
-  items[1] = closure_5(safetyTips(4733).Stack, obj1);
-  items[2] = callback(View, { style: tmp.tips, children: safetyTips.map((tip) => outer1_4(outer1_1(outer1_2[9]), { index: arg1 + 1, tip, end: arg1 === safetyTips.length - 1 }, arg1)) });
+  items[1] = closure_5(safetyTips(4738).Stack, obj1);
+  items[2] = callback(View, { style: tmp.tips, children: safetyTips.map((tip) => closure_1_4(closure_1_1(closure_1_2[9]), { index: arg1 + 1, tip, end: arg1 === safetyTips.length - 1 }, arg1)) });
   obj[1] = items;
-  return closure_5(safetyTips(4733).Stack, obj);
+  return closure_5(safetyTips(4738).Stack, obj);
 };

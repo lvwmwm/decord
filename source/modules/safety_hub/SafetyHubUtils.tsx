@@ -1,20 +1,20 @@
-// Module ID: 5437
-// Function ID: 5438
+// Module ID: 5442
+// Function ID: 5443
 // Name: parseMessageEmbedForProps
-// Dependencies: [1218, 5438, 676, 3975, 4811, 1236, 5439, 589, 2]
+// Dependencies: [1218, 5443, 676, 3978, 4816, 1236, 5444, 589, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 5437 (parseMessageEmbedForProps)
-import fetchFingerprint from "fetchFingerprint";
-import SafetyHubView from "SafetyHubView";
-import ME from "ME";
+// Module 5442 (parseMessageEmbedForProps)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import tDefault from "t" /* 3978 */;
+import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4816 */;
+import ContentIdType from "ContentIdType" /* 5444 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import SafetyHubView from "SafetyHubView" /* 5443 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function parseMessageEmbedForProps(fields) {
   if (null != fields.fields) {
     fields = fields.fields;
@@ -52,18 +52,18 @@ function parseMessageEmbedForProps(fields) {
   }
 }
 ({ AppealIngestionSignal: c4, SafetySystemNotificationCtaType: c5, SafetySystemNotificationEmbedKeys: closure_6 } = SafetyHubView);
-({ AbortCodes: error, MessageAttachmentFlags: metroImportAll } = ME);
-const result = require("ME").fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
+({ AbortCodes: error, MessageAttachmentFlags: closure_8 } = ME);
+const result = require("set").fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  return importDefault(3975)().to(importDefault(3975)(timestamp));
+  return tDefault().to(tDefault(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   if (obj.isImageFile(filename.filename)) {
     let num = constants5.IS_SPOILER;
   } else {
     num = 0;
-    const tmpResult = require(4811) /* urlMatchesFileExtension */;
+    const tmpResult = urlMatchesFileExtension;
   }
   return num;
 };
@@ -75,8 +75,8 @@ export const mapCtaToNativeData = function mapCtaToNativeData(arg0, learn_more_l
   if (constants2.LEARN_MORE_LINK === arg0) {
     let str2 = learn_more_link;
     let obj = { text: null, type: null, key: null };
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["8/GdRB"]);
+    const intl2 = getSystemLocale.intl;
+    obj[0] = intl2.string(getSystemLocale.t["8/GdRB"]);
     obj[1] = tmp.LEARN_MORE_LINK;
     if (learn_more_link == null) {
       str2 = "";
@@ -86,8 +86,8 @@ export const mapCtaToNativeData = function mapCtaToNativeData(arg0, learn_more_l
   } else if (tmp.POLICY_VIOLATION_DETAIL === arg0) {
     let str = classification_id;
     obj = { text: null, type: null, key: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.QsqdXC);
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t.QsqdXC);
     obj[1] = tmp.POLICY_VIOLATION_DETAIL;
     if (classification_id == null) {
       str = "";
@@ -97,7 +97,7 @@ export const mapCtaToNativeData = function mapCtaToNativeData(arg0, learn_more_l
   }
 };
 export const isFlaggedContentEmpty = function isFlaggedContentEmpty(first) {
-  let tmp = first.type !== require(5439) /* ContentIdType */.ContentIdType.MESSAGE;
+  let tmp = first.type !== ContentIdType.ContentIdType.MESSAGE;
   if (!tmp) {
     let tmp2 = "" === first.content;
     if (tmp2) {
@@ -109,14 +109,14 @@ export const isFlaggedContentEmpty = function isFlaggedContentEmpty(first) {
 };
 export const getAppealSignalDisplayText = function getAppealSignalDisplayText(signal) {
   const obj = {};
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[constants.DIDNT_VIOLATE_POLICY] = intl.string(require(1236) /* getSystemLocale */.t.mZffAi);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[constants.TOO_STRICT_UNFAIR] = intl2.string(require(1236) /* getSystemLocale */.t.wgZVAn);
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[constants.DONT_AGREE_PENALTY] = intl3.string(require(1236) /* getSystemLocale */.t.eu8G4k);
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj[constants.SOMETHING_ELSE] = intl4.string(require(1236) /* getSystemLocale */.t.XU3s6r);
+  const intl = getSystemLocale.intl;
+  obj[constants.DIDNT_VIOLATE_POLICY] = intl.string(getSystemLocale.t.mZffAi);
+  const intl2 = getSystemLocale.intl;
+  obj[constants.TOO_STRICT_UNFAIR] = intl2.string(getSystemLocale.t.wgZVAn);
+  const intl3 = getSystemLocale.intl;
+  obj[constants.DONT_AGREE_PENALTY] = intl3.string(getSystemLocale.t.eu8G4k);
+  const intl4 = getSystemLocale.intl;
+  obj[constants.SOMETHING_ELSE] = intl4.string(getSystemLocale.t.XU3s6r);
   return obj[signal];
 };
 export const capitalizeText = function capitalizeText(description) {
@@ -141,11 +141,11 @@ export const isGuildClassification = function isGuildClassification(stateFromSto
 };
 export const getRequestReviewErrorFromCode = function getRequestReviewErrorFromCode(code) {
   if (code === constants4.DSA_APPEAL_REQUEST_DEFLECTION) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1236) /* getSystemLocale */.t["0qyXXH"]);
+    const intl2 = getSystemLocale.intl;
+    let stringResult = intl2.string(getSystemLocale.t["0qyXXH"]);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1236) /* getSystemLocale */.t.aPmsx3);
+    const intl = getSystemLocale.intl;
+    stringResult = intl.string(getSystemLocale.t.aPmsx3);
   }
   return stringResult;
 };
@@ -164,8 +164,8 @@ export const getClassificationExpiration = function getClassificationExpiration(
   }
 };
 export const useIsSuspendedUser = function useIsSuspendedUser() {
-  const items = [fetchFingerprint];
-  return null != require(589) /* initialize */.useStateFromStores(items, () => suspendedUserToken.getSuspendedUserToken());
+  const items = [closure_3];
+  return null != initialize.useStateFromStores(items, () => suspendedUserToken.getSuspendedUserToken());
 };
 export const isCurrentUserSuspended = function isCurrentUserSuspended() {
   return null != suspendedUserToken.getSuspendedUserToken();

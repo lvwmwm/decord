@@ -1,21 +1,24 @@
-// Module ID: 14678
-// Function ID: 14679
+// Module ID: 14746
+// Function ID: 14747
 // Name: useRoleColorSettingValue
-// Dependencies: [19, 4662, 8198, 589, 13813, 1236, 10669, 2]
+// Dependencies: [19, 4669, 8238, 589, 13871, 1236, 10708, 2]
 // Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
-// Module 14678 (useRoleColorSettingValue)
-import noop from "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import createToggle from "createToggle";
+// Module 14746 (useRoleColorSettingValue)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import setFontSize from "setFontSize" /* 13871 */;
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 function useRoleColorSettingValue() {
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
-  return require(589) /* initialize */.useStateFromStores(items, () => roleStyle.roleStyle);
+  const items = [closure_3];
+  return initialize.useStateFromStores(items, () => roleStyle.roleStyle);
 }
 function onRoleColorSettingValueChange(roleStyle) {
-  require(13813) /* setFontSize */.setRoleStyle(roleStyle);
+  setFontSize.setRoleStyle(roleStyle);
 }
 function useRoleColorSettingOptions() {
   return React.useMemo(() => {
@@ -36,8 +39,8 @@ function useRoleColorSettingOptions() {
 }
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.uSOPWm);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.uSOPWm);
   },
   parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
   useValue: useRoleColorSettingValue,
@@ -45,7 +48,7 @@ createToggle = {
   useOptions: useRoleColorSettingOptions
 };
 createToggle = createToggle.createRadio(createToggle);
-const result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/RoleColorsSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/RoleColorsSetting.tsx");
 
 export default createToggle;
 export { useRoleColorSettingValue };

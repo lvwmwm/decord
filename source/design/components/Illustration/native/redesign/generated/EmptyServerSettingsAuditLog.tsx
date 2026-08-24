@@ -1,62 +1,65 @@
-// Module ID: 16777
-// Function ID: 16778
+// Module ID: 16870
+// Function ID: 16871
 // Name: getEmptyServerSettingsAuditLogSource
-// Dependencies: [19, 17, 21, 7907, 16778, 16779, 16780, 1363, 2]
+// Dependencies: [19, 17, 21, 7946, 16871, 16872, 16873, 1363, 2]
 // Exports: EmptyServerSettingsAuditLog, getEmptyServerSettingsAuditLogSource, useEmptyServerSettingsAuditLogSource
 
-// Module 16777 (getEmptyServerSettingsAuditLogSource)
-import "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 16870 (getEmptyServerSettingsAuditLogSource)
+import noopAll from "noop" /* 19 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsAuditLog.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsAuditLog.tsx");
 
 export const getEmptyServerSettingsAuditLogSource = function getEmptyServerSettingsAuditLogSource(theme) {
-  let obj = require(7907) /* getIllustrationSource */;
+  let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(16778);
+      return callback(16871);
     },
     darker() {
-      return callback(16779);
+      return callback(16872);
     },
     light() {
-      return callback(16780);
+      return callback(16873);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useEmptyServerSettingsAuditLogSource = function useEmptyServerSettingsAuditLogSource() {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16778);
+      return callback(16871);
     },
     darker() {
-      return callback(16779);
+      return callback(16872);
     },
     light() {
-      return callback(16780);
+      return callback(16873);
     }
   };
-  return require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const EmptyServerSettingsAuditLog = function EmptyServerSettingsAuditLog(arg0) {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16778);
+      return callback(16871);
     },
     darker() {
-      return callback(16779);
+      return callback(16872);
     },
     light() {
-      return callback(16780);
+      return callback(16873);
     }
   };
   obj = {};
-  const illustrationSource = require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

@@ -1,27 +1,31 @@
-// Module ID: 14995
-// Function ID: 14996
+// Module ID: 15059
+// Function ID: 15060
 // Name: route
-// Dependencies: [8198, 676, 10669, 1236, 14996, 2]
+// Dependencies: [8238, 676, 10708, 1236, 15060, 2]
 
-// Module 14995 (route)
-import createToggle from "createToggle";
+// Module 15059 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["5b3FNI"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["5b3FNI"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.DATA_AND_PRIVACY,
+  parent: MobileUserSettings.MobileUserSettings.DATA_AND_PRIVACY,
   unsearchable: true,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.SECURE_FRAMES_VERIFIED_DEVICES,
+  route: ME.UserSettingsSections.SECURE_FRAMES_VERIFIED_DEVICES,
   getComponent() {
-    return require(14996) /* VerificationListItem */.default;
+    return require(15060) /* VerificationListItem */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/SecureFramesVerifiedDevicesSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/SecureFramesVerifiedDevicesSetting.tsx");
 
 export default route;

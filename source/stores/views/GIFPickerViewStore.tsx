@@ -1,11 +1,15 @@
-// Module ID: 10194
-// Function ID: 10195
+// Module ID: 10233
+// Function ID: 10234
 // Name: getFormatFromUrl
 // Dependencies: [676, 1341, 1236, 589, 709, 2]
 
-// Module 10194 (getFormatFromUrl)
-import { GIFType } from "create";
-import { Store } from "initialize";
+// Module 10233 (getFormatFromUrl)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import ME from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import create from "create" /* 1341 */;
 
 function getFormatFromUrl(src) {
   try {
@@ -14,15 +18,16 @@ function getFormatFromUrl(src) {
     const formatted = uRL.pathname.toLowerCase();
     if (!formatted.endsWith(".mp4")) {
       if (!formatted.endsWith(".webm")) {
-        return require(1341) /* create */.GIFType.IMAGE;
+        return create.GIFType.IMAGE;
       }
     }
-    return require(1341) /* create */.GIFType.VIDEO;
+    return create.GIFType.VIDEO;
   } catch (err) {
   }
 }
-require("ME").GIFPickerResultTypes;
+ME.GIFPickerResultTypes;
 const tinywebp = "tinywebp";
+const GIFType = create.GIFType;
 const IMAGE = GIFType.IMAGE;
 let c5 = null;
 let c6 = "";
@@ -31,6 +36,7 @@ let closure_8 = [];
 let closure_9 = [];
 let closure_10 = [];
 let closure_11 = [];
+const Store = initializeDefault.Store;
 class GIFPickerViewStore extends Store {
 }
 const prototype = GIFPickerViewStore.prototype;
@@ -59,16 +65,16 @@ prototype["getTrendingSearchTerms"] = function getTrendingSearchTerms() {
   return closure_11;
 };
 GIFPickerViewStore.displayName = "GIFPickerViewStore";
-const gIFPickerViewStore = new GIFPickerViewStore(require("dispatcher"), {
+const gIFPickerViewStore = new GIFPickerViewStore(dispatcherDefault, {
   GIF_PICKER_INITIALIZE: function handleInitialize(analyticsID) {
     analyticsID = analyticsID.analyticsID;
   },
   GIF_PICKER_QUERY: function handleQuery(query) {
     query = query.query;
     if ("" === query) {
-      let c7 = "";
-      let closure_8 = [];
-      let closure_10 = [];
+      c7 = "";
+      closure_8 = [];
+      closure_10 = [];
     }
   },
   GIF_PICKER_QUERY_SUCCESS: function handleQuerySuccess(query) {
@@ -81,14 +87,14 @@ const gIFPickerViewStore = new GIFPickerViewStore(require("dispatcher"), {
       query = query.query;
     }
     const items = query.items;
-    let closure_8 = items.map((width) => ({ width: width.width, height: width.height, src: width.src, gifSrc: width.gif_src, url: width.url, id: width.id, format: closure_4 }));
+    closure_8 = items.map((width) => ({ width: width.width, height: width.height, src: width.src, gifSrc: width.gif_src, url: width.url, id: width.id, format: closure_4 }));
   },
   GIF_PICKER_QUERY_FAILURE: function handleQueryFailure(query) {
     query = query.query;
     if (null == query) {
       return false;
     } else {
-      let closure_8 = [];
+      closure_8 = [];
     }
   },
   GIF_PICKER_TRENDING_FETCH_SUCCESS: function handleTrendingFetchSuccess(trendingCategories) {
@@ -96,8 +102,8 @@ const gIFPickerViewStore = new GIFPickerViewStore(require("dispatcher"), {
     if (null != trendingCategories.trendingGIFPreview) {
       let obj = { type: null, name: null, src: null, format: null };
       obj[0] = GIFPickerResultTypes.TRENDING_GIFS;
-      const intl = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl.string(require(1236) /* getSystemLocale */.t.H6zNFz);
+      const intl = getSystemLocale.intl;
+      obj[1] = intl.string(getSystemLocale.t.H6zNFz);
       obj[2] = trendingCategories.trendingGIFPreview.src;
       obj[3] = getFormatFromUrl(trendingCategories.trendingGIFPreview.src);
       const items = [obj];
@@ -124,6 +130,6 @@ const gIFPickerViewStore = new GIFPickerViewStore(require("dispatcher"), {
     items = items.items;
   }
 });
-const result = require("getSystemLocale").fileFinishedImporting("stores/views/GIFPickerViewStore.tsx");
+const result = set.fileFinishedImporting("stores/views/GIFPickerViewStore.tsx");
 
 export default gIFPickerViewStore;

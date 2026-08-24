@@ -4,13 +4,13 @@
 // Dependencies: [41, 42, 1323, 1320]
 
 // Module 1322 (ReflectionTypeCheck)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import closure_2 from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
 const ReflectionTypeCheck = require;
 class ReflectionTypeCheck {
   constructor(arg0) {
-    tmp = outer1_2(this, ReflectionTypeCheck);
+    tmp = closure_2(this, ReflectionTypeCheck);
     fields = global.fields;
     if (null === fields) {
       fields = [];
@@ -84,8 +84,8 @@ let items = [
   {
     key: "is",
     value: function is(obj) {
-      let closure_0 = obj;
-      let closure_1 = arg1;
+      closure_0 = obj;
+      closure_1 = arg1;
       let flag = arg2;
       if (arg2 === undefined) {
         flag = false;
@@ -93,7 +93,7 @@ let items = [
       let self = this;
       let keys;
       let data;
-      let c6;
+      let item10014;
       self = this;
       if (arg1 < 0) {
         return true;
@@ -120,7 +120,6 @@ let items = [
                 } else {
                   const oneofs = data.oneofs;
                   for (const item10014 of oneofs) {
-                    c6 = item10014;
                     let tmp18Result = tmp18();
                     if (0 !== tmp18Result) {
                       let tmp4 = tmp18Result;
@@ -164,8 +163,6 @@ let items = [
   {
     key: "field",
     value: function field(keys, opt) {
-      let kind;
-      let repeat;
       ({ repeat, kind } = opt);
       const self = this;
       if ("scalar" === kind) {

@@ -3,9 +3,10 @@
 // Dependencies: [2, 1351, 1356, 1357, 1358, 1359, 1360, 1361, 1362]
 
 // Module 1350
-import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD";
+import set from "set" /* 2 */;
+import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD" /* 1357 */;
 
-const result = require("context").fileFinishedImporting("../discord_common/js/packages/design/shared.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/design/shared.tsx");
 for (const key10018 in require("AccessibilityAnnouncer")) {
   let tmp4 = key10018;
   arg5[key10018] = require("AccessibilityAnnouncer")[key10018];

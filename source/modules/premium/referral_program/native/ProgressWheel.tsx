@@ -1,50 +1,55 @@
-// Module ID: 12888
-// Function ID: 12889
+// Module ID: 12943
+// Function ID: 12944
 // Name: ProgressWheel
-// Dependencies: [17, 21, 4661, 4097, 712, 12880, 5449, 12889, 6571, 12890, 2]
+// Dependencies: [17, 21, 4668, 4100, 712, 12935, 5454, 12944, 6607, 12945, 2]
 // Exports: default
 
-// Module 12888 (ProgressWheel)
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12943 (ProgressWheel)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import preloadDefault from "preload" /* 5454 */;
+import inlineStyles from "inlineStyles" /* 6607 */;
+import MAX_REFERRALS_SENT from "MAX_REFERRALS_SENT" /* 12935 */;
+import metadataDefault from "metadata" /* 12945 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
+const View = get_ActivityIndicator.View;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let c6 = 160;
 let closure_7 = 2 * Math.PI * 77;
 let closure_8 = createCacheKey.createStyles({ progressCircleContainer: { width: 160, height: 160, alignItems: "center", justifyContent: "center", marginTop: 24 }, progressCircleImage: { position: "absolute", width: 93, height: 93, borderRadius: 46.5 }, glowImage: { position: "absolute", width: 180, height: 180 } });
-const result = require("createCacheKey").fileFinishedImporting("modules/premium/referral_program/native/ProgressWheel.tsx");
+const result = set.fileFinishedImporting("modules/premium/referral_program/native/ProgressWheel.tsx");
 
 export default function ProgressWheel(nReferralsSent) {
   nReferralsSent = nReferralsSent.nReferralsSent;
   const tmp = callback2();
-  let obj = require(4097) /* map */;
-  const token = obj.useToken(importDefault(712).colors.BACKGROUND_MOD_STRONG);
-  let obj1 = require(4097) /* map */;
+  let obj = map;
+  const token = obj.useToken(ThemesDefault.colors.BACKGROUND_MOD_STRONG);
+  obj1 = map;
   obj = { style: tmp.progressCircleContainer, children: null };
-  const token1 = obj1.useToken(importDefault(712).colors.BACKGROUND_SURFACE_HIGH);
-  let tmp9 = nReferralsSent === require(12880) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT;
+  const token1 = obj1.useToken(ThemesDefault.colors.BACKGROUND_SURFACE_HIGH);
+  let tmp9 = nReferralsSent === MAX_REFERRALS_SENT.MAX_REFERRALS_SENT;
   if (tmp9) {
     obj = { source: null, style: null };
-    let tmp4Result = tmp4(5449);
-    obj[0] = tmp4(12889);
+    let tmp4Result = tmp4(5454);
+    obj[0] = tmp4(12944);
     obj[1] = tmp.glowImage;
     tmp9 = callback(tmp4Result, obj);
   }
   const items = [tmp9, , ];
   obj1 = { width: c6, height: c6, children: null };
-  tmp4Result = tmp4(6571);
-  const items1 = [callback(require(6571) /* inlineStyles */.Circle, { cx: 80, cy: 80, r: 77, stroke: token, strokeWidth: 6, fill: token1 }), callback(require(6571) /* inlineStyles */.Circle, { cx: 80, cy: 80, r: 77, stroke: "#53ac66", strokeWidth: 6, fill: "transparent", strokeDasharray: closure_7, strokeDashoffset: closure_7 * (1 - 33.3 * nReferralsSent / 100), strokeLinecap: "round", rotation: -90, origin: "80, 80" })];
+  tmp4Result = tmp4(6607);
+  const items1 = [callback(inlineStyles.Circle, { cx: 80, cy: 80, r: 77, stroke: token, strokeWidth: 6, fill: token1 }), callback(inlineStyles.Circle, { cx: 80, cy: 80, r: 77, stroke: "#53ac66", strokeWidth: 6, fill: "transparent", strokeDasharray: closure_7, strokeDashoffset: closure_7 * (1 - 33.3 * nReferralsSent / 100), strokeLinecap: "round", rotation: -90, origin: "80, 80" })];
   obj1[2] = items1;
   items[1] = closure_5(tmp4Result, obj1);
   const obj3 = { source: null, style: null };
-  const obj4 = { uri: null };
-  obj4[0] = importDefault(12890);
+  const obj4 = { uri: metadataDefault };
   obj3[0] = obj4;
   obj3[1] = tmp.progressCircleImage;
-  items[2] = callback(importDefault(5449), obj3);
+  items[2] = callback(preloadDefault, obj3);
   obj[1] = items;
   return closure_5(View, obj);
 };

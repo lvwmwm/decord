@@ -1,11 +1,12 @@
-// Module ID: 5222
-// Function ID: 5223
+// Module ID: 5227
+// Function ID: 5228
 // Name: toString
 // Dependencies: [1931, 2]
 
-// Module 5222 (toString)
-import "toJS";
+// Module 5227 (toString)
+import toJSDefault from "toJS" /* 1931 */;
 
+toJSDefault;
 const result = require("set").fileFinishedImporting("records/ConnectedAccountRecord.tsx");
 class ConnectedAccountRecord extends tmp2 {
   constructor(arg0) {

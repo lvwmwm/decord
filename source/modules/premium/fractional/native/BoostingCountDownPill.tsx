@@ -1,41 +1,41 @@
-// Module ID: 12948
-// Function ID: 12949
+// Module ID: 13003
+// Function ID: 13004
 // Name: handlePress
-// Dependencies: [17, 21, 4661, 712, 4342, 12949, 2007, 1236, 4734, 2]
+// Dependencies: [17, 21, 4668, 712, 4346, 13004, 2008, 1236, 4739, 2]
 // Exports: default
 
-// Module 12948 (handlePress)
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13003 (handlePress)
+import set from "set" /* 2 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import Text from "Text" /* 4739 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
 function handlePress() {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { aboutText: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["07lzz7"]);
-  obj.openLazy(require(2007) /* asyncRequireImpl */(12949, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["07lzz7"]);
+  obj.openLazy(asyncRequireImpl(13004, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { fractionalPremiumBanner: null, fpDurationPill: null, fpDurationText: null, fpUnavailable: null, fpUnavailableTextNoCountdown: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", gap: 12, padding: 12, justifyContent: "center", borderColor: require("Themes").colors.STATUS_WARNING, borderWidth: 1, borderRadius: require("Themes").radii.lg, marginBottom: 12 };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", gap: 12, padding: 12, justifyContent: "center", borderColor: ThemesDefault.colors.STATUS_WARNING, borderWidth: 1, borderRadius: ThemesDefault.radii.lg, marginBottom: 12 };
 obj[0] = obj;
-obj[1] = { flex: 1, paddingVertical: 12, paddingHorizontal: 27, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderRadius: require("Themes").radii.xxl, justifyContent: "center" };
+obj[1] = { flex: 1, paddingVertical: 12, paddingHorizontal: 27, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: ThemesDefault.radii.xxl, justifyContent: "center" };
 obj[2] = { textAlign: "center", color: "#FFEAA0" };
 obj[3] = { flex: 1, justifyContent: "center" };
 obj[4] = { textAlign: "center" };
 let closure_7 = createCacheKey.createStyles(obj);
-let obj1 = { flex: 1, paddingVertical: 12, paddingHorizontal: 27, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderRadius: require("Themes").radii.xxl, justifyContent: "center" };
-const result = require("createCacheKey").fileFinishedImporting("modules/premium/fractional/native/BoostingCountDownPill.tsx");
+let obj1 = { flex: 1, paddingVertical: 12, paddingHorizontal: 27, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: ThemesDefault.radii.xxl, justifyContent: "center" };
+const result = set.fileFinishedImporting("modules/premium/fractional/native/BoostingCountDownPill.tsx");
 
 export default function BoostingCountDownPill(style) {
-  let fpDurationText;
-  let isInReverseTrial;
   ({ fpDurationText, isInReverseTrial } = style);
   const tmp = callback();
   let tmp4;
@@ -49,10 +49,10 @@ export default function BoostingCountDownPill(style) {
   if (!isInReverseTrial) {
     obj = { style: null, children: null };
     obj[0] = tmp.fpDurationPill;
-    const obj1 = { variant: "text-sm/bold", style: null, children: null };
+    obj1 = { variant: "text-sm/bold", style: null, children: null };
     obj1[1] = tmp.fpDurationText;
     obj1[2] = fpDurationText.toUpperCase();
-    obj[1] = tmp2(require(4734) /* Text */.Text, obj1);
+    obj[1] = tmp2(Text.Text, obj1);
     tmp2Result = tmp2(tmp6, obj);
   }
   const items1 = [tmp2Result, ];
@@ -63,8 +63,8 @@ export default function BoostingCountDownPill(style) {
   }
   const obj3 = { variant: "text-md/normal", color: "interactive-text-active", style: prop, children: null };
   const intl = tmp10(1236).intl;
-  obj3[3] = intl.string(require(1236) /* getSystemLocale */.t["5nrJDO"]);
-  obj2[1] = closure_5(require(4734) /* Text */.Text, obj3);
+  obj3[3] = intl.string(getSystemLocale.t["5nrJDO"]);
+  obj2[1] = closure_5(Text.Text, obj3);
   items1[1] = closure_5(closure_4, obj2);
   obj[1] = items1;
   obj[2] = closure_6(closure_4, obj);

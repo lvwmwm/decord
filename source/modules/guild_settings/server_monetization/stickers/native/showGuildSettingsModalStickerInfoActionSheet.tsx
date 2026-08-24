@@ -1,18 +1,20 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 16897
+// Function ID: 16898
 // Name: showGuildSettingsModalStickerInfoActionSheet
-// Dependencies: [4342, 16805, 2007, 2]
+// Dependencies: [4346, 16898, 2008, 2]
 // Exports: showGuildSettingsModalStickerInfoActionSheet
 
-// Module 16804 (showGuildSettingsModalStickerInfoActionSheet)
+// Module 16897 (showGuildSettingsModalStickerInfoActionSheet)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+
 const GuildSettingsModalStickerInfoActionSheet = "GuildSettingsModalStickerInfoActionSheet";
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/showGuildSettingsModalStickerInfoActionSheet.tsx");
+const result = set.fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/showGuildSettingsModalStickerInfoActionSheet.tsx");
 
 export const showGuildSettingsModalStickerInfoActionSheet = function showGuildSettingsModalStickerInfoActionSheet(arg0) {
-  let guildId;
-  let stickerId;
   ({ guildId, stickerId } = arg0);
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = {
     guildId,
     stickerId,
@@ -20,5 +22,5 @@ export const showGuildSettingsModalStickerInfoActionSheet = function showGuildSe
       callback(table[0]).hideActionSheet(closure_3);
     }
   };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(16805, dependencyMap.paths), GuildSettingsModalStickerInfoActionSheet, obj);
+  obj.openLazy(asyncRequireImpl(16898, dependencyMap.paths), GuildSettingsModalStickerInfoActionSheet, obj);
 };

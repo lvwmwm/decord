@@ -1,21 +1,24 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 12390
+// Function ID: 12391
 // Name: useShopThisLookMarketing
-// Dependencies: [32, 8960, 7366, 1377, 2]
+// Dependencies: [32, 8997, 7404, 1377, 2]
 // Exports: useShopThisLookMarketing
 
-// Module 12338 (useShopThisLookMarketing)
-import _slicedToArray from "_slicedToArray";
+// Module 12390 (useShopThisLookMarketing)
+import DismissibleContent from "DismissibleContent" /* 1377 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7404 */;
+import useEquippedCollectibleSkuIds from "useEquippedCollectibleSkuIds" /* 8997 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
-const require = arg1;
-const result = require("useSelectedDismissibleContent").fileFinishedImporting("modules/collectibles/shop_this_look/useShopThisLookMarketing.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/collectibles/shop_this_look/useShopThisLookMarketing.tsx");
 
 export const useShopThisLookMarketing = function useShopThisLookMarketing(id, guildId, isShopThisLookMobileEnabled) {
-  let obj = require(8960) /* useEquippedCollectibleSkuIds */;
-  require(7366) /* useSelectedDismissibleContent */;
+  let obj = useEquippedCollectibleSkuIds;
+  useSelectedDismissibleContent;
   if (isShopThisLookMobileEnabled) {
     if (tmp3) {
-      const items = [require(1377) /* DismissibleContent */.DismissibleContent.SHOP_THIS_LOOK_WEB_MARKETING];
+      const items = [DismissibleContent.DismissibleContent.SHOP_THIS_LOOK_WEB_MARKETING];
     }
     const tmp8 = callback(tmp5([], undefined, true), 2);
     obj = { isVisible: null, markAsDismissed: null };

@@ -1,29 +1,33 @@
-// Module ID: 14768
-// Function ID: 14769
+// Module ID: 14832
+// Function ID: 14833
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 4066, 2]
+// Dependencies: [8238, 10708, 1236, 4069, 2]
 
-// Module 14768 (toggle)
-import createToggle from "createToggle";
+// Module 14832 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.U47N1p);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.U47N1p);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
-  useValue: require("explicitContentFromProto").InlineEmbedMedia.useSetting,
-  onValueChange: require("explicitContentFromProto").InlineEmbedMedia.updateSetting
+  parent: MobileUserSettings.MobileUserSettings.CHAT,
+  useValue: explicitContentFromProto.InlineEmbedMedia.useSetting,
+  onValueChange: explicitContentFromProto.InlineEmbedMedia.updateSetting
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.U47N1p);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.U47N1p);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
-  useValue: require("explicitContentFromProto").InlineEmbedMedia.useSetting,
-  onValueChange: require("explicitContentFromProto").InlineEmbedMedia.updateSetting
+  parent: MobileUserSettings.MobileUserSettings.CHAT,
+  useValue: explicitContentFromProto.InlineEmbedMedia.useSetting,
+  onValueChange: explicitContentFromProto.InlineEmbedMedia.updateSetting
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/DisplayMediaLinksSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/DisplayMediaLinksSetting.tsx");
 
 export default toggle;

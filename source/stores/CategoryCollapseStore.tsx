@@ -1,22 +1,25 @@
-// Module ID: 5270
-// Function ID: 5271
+// Module ID: 5275
+// Function ID: 5276
 // Name: incrementVersion
-// Dependencies: [1340, 1391, 4826, 1980, 676, 1306, 1370, 1913, 589, 709, 2]
+// Dependencies: [1340, 1391, 4831, 1981, 676, 1306, 1370, 1913, 589, 709, 2]
 
-// Module 5270 (incrementVersion)
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import comparator from "comparator";
-import { ChannelTypes } from "ME";
-import { PersistedStore } from "initialize";
+// Module 5275 (incrementVersion)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import create from "create" /* 1306 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
+import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "handleConnectionOpen" /* 4831 */;
+import closure_5 from "comparator" /* 1981 */;
+import { ChannelTypes } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function incrementVersion() {
   closure_8 = closure_8 + 1;
 }
 function syncFavoriteCategoryCollapse() {
-  const favorites = handleConnectionClosedOrResumed.settings.favorites;
+  const favorites = closure_2.settings.favorites;
   let favoriteChannels;
   if (favorites != null) {
     favoriteChannels = favorites.favoriteChannels;
@@ -36,7 +39,7 @@ function syncFavoriteCategoryCollapse() {
         let tmp14 = require;
         let tmp15 = dependencyMap;
         flag4 = flag;
-        if (tmp13.type !== require(1306) /* create */.FavoriteChannelType.CATEGORY) {
+        if (tmp13.type !== create.FavoriteChannelType.CATEGORY) {
           continue;
         } else {
           let tmp6 = dependencyMap;
@@ -67,19 +70,20 @@ function syncFavoriteCategoryCollapse() {
 }
 let closure_7 = {};
 let c8 = 0;
+const PersistedStore = initializeDefault.PersistedStore;
 class CategoryCollapseStore extends PersistedStore {
 }
 const prototype = CategoryCollapseStore.prototype;
 prototype["initialize"] = function initialize(arg0) {
   const self = this;
   let obj = arg0;
-  this.waitFor(ensureGuildLoaded, handleConnectionOpen, comparator, handleConnectionClosedOrResumed);
+  this.waitFor(closure_3, closure_4, closure_5, closure_2);
   this.removeChangeListener(incrementVersion);
   this.addChangeListener(incrementVersion);
   if (arg0 == null) {
     obj = {};
   }
-  const items = [handleConnectionClosedOrResumed];
+  const items = [closure_2];
   self.syncWith(items, syncFavoriteCategoryCollapse);
 };
 prototype["getState"] = function getState() {
@@ -110,10 +114,10 @@ Object.defineProperty(prototype, "version", {
 });
 CategoryCollapseStore.displayName = "CategoryCollapseStore";
 CategoryCollapseStore.persistKey = "collapsedCategories";
-const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
+const categoryCollapseStore = new CategoryCollapseStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen(userGuildSettings) {
     if (!userGuildSettings.userGuildSettings.partial) {
-      let closure_7 = {};
+      closure_7 = {};
     }
     const iter = userGuildSettings.userGuildSettings.entries[Symbol.iterator]();
     const nextResult = iter.next();
@@ -180,7 +184,7 @@ const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
   },
   CATEGORY_COLLAPSE: function handleCategoryCollapse(id) {
     id = id.id;
-    const favorites = handleConnectionClosedOrResumed.settings.favorites;
+    const favorites = closure_2.settings.favorites;
     let favoriteChannels;
     if (favorites != null) {
       favoriteChannels = favorites.favoriteChannels;
@@ -191,7 +195,7 @@ const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
         type = tmp3.type;
       }
     }
-    const tmp4 = type === require(1306) /* create */.FavoriteChannelType.CATEGORY;
+    const tmp4 = type === create.FavoriteChannelType.CATEGORY;
     let tmp5 = !tmp4;
     if (!tmp4) {
       if (!dependencyMap[id]) {
@@ -204,7 +208,7 @@ const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
   },
   CATEGORY_EXPAND: function handleCategoryExpand(id) {
     id = id.id;
-    const favorites = handleConnectionClosedOrResumed.settings.favorites;
+    const favorites = closure_2.settings.favorites;
     let favoriteChannels;
     if (favorites != null) {
       favoriteChannels = favorites.favoriteChannels;
@@ -215,7 +219,7 @@ const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
         type = tmp5.type;
       }
     }
-    const tmp6 = type === require(1306) /* create */.FavoriteChannelType.CATEGORY;
+    const tmp6 = type === create.FavoriteChannelType.CATEGORY;
     let tmp7 = !tmp6;
     if (!tmp6) {
       if (null != dependencyMap[id]) {
@@ -237,7 +241,7 @@ const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
         }
       });
     }
-    obj = require(1913) /* getFavoritesAwareGuildName */;
+    obj = getFavoritesAwareGuildName;
   },
   CATEGORY_EXPAND_ALL: function handleCategoryExpandAll(guildId) {
     guildId = guildId.guildId;
@@ -248,7 +252,7 @@ const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
         delete tmp2[tmp];
       });
     }
-    obj = require(1913) /* getFavoritesAwareGuildName */;
+    obj = getFavoritesAwareGuildName;
   },
   CHANNEL_DELETE: function handleChannelDelete(arg0) {
     if (null != dependencyMap[arg0.channel.id]) {
@@ -257,6 +261,6 @@ const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
     return false;
   }
 });
-const result = require("handleConnectionOpen").fileFinishedImporting("stores/CategoryCollapseStore.tsx");
+const result = require("set").fileFinishedImporting("stores/CategoryCollapseStore.tsx");
 
 export default categoryCollapseStore;

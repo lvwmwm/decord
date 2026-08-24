@@ -1,19 +1,19 @@
-// Module ID: 12130
-// Function ID: 12131
+// Module ID: 12182
+// Function ID: 12183
 // Name: getActivityChannelId
-// Dependencies: [1395, 1391, 4542, 2]
+// Dependencies: [1395, 1391, 4547, 2]
 // Exports: default
 
-// Module 12130 (getActivityChannelId)
-import { isTextChannel } from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import updateVoiceState from "updateVoiceState";
+// Module 12182 (getActivityChannelId)
+import set from "set" /* 2 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import closure_1 from "ensureGuildLoaded" /* 1391 */;
+import closure_2 from "updateVoiceState" /* 4547 */;
 
-const result = require("updateVoiceState").fileFinishedImporting("modules/activities/utils/getActivityChannelId.tsx");
+const isTextChannel = createChannelRecord.isTextChannel;
+const result = set.fileFinishedImporting("modules/activities/utils/getActivityChannelId.tsx");
 
 export default function getActivityChannelId(userId) {
-  let activity;
-  let channelId;
   ({ channelId, activity } = userId);
   channel = channel.getChannel(channelId);
   let session_id;

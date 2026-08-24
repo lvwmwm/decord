@@ -4,13 +4,16 @@
 // Dependencies: [839, 819, 956, 957, 958, 959]
 
 // Module 955 (onVercelAiSpanStart)
-const require = arg1;
+import spanToJSON from "spanToJSON" /* 819 */;
+import _mod956 from "module_956" /* 956 */;
+import convertPromptToMessages from "convertPromptToMessages" /* 957 */;
+import _mod958 from "module_958" /* 958 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function onVercelAiSpanStart(setAttribute) {
-  let data;
-  let description;
-  const obj = require(819) /* spanToJSON */;
-  ({ data, description } = require(819) /* spanToJSON */.spanToJSON(setAttribute));
+  const obj = spanToJSON;
+  ({ data, description } = spanToJSON.spanToJSON(setAttribute));
   if (description) {
     if (data[tmp3(undefined, 956).AI_TOOL_CALL_NAME_ATTRIBUTE]) {
       if (data[tmp3(undefined, 956).AI_TOOL_CALL_ID_ATTRIBUTE]) {
@@ -110,7 +113,7 @@ function vercelAiEventProcessor(type) {
         let tmp9 = processEndedVercelAiSpan(item10015);
         let tmp10 = require;
         let tmp11 = dependencyMap;
-        let obj = require(957) /* convertPromptToMessages */;
+        let obj = convertPromptToMessages;
         let result = obj.accumulateTokensForParent(item10015, map);
         continue;
       }
@@ -121,7 +124,7 @@ function vercelAiEventProcessor(type) {
         if ("gen_ai.invoke_agent" === nextResult.op) {
           let tmp18 = require;
           let tmp19 = dependencyMap;
-          let obj2 = require(957) /* convertPromptToMessages */;
+          let obj2 = convertPromptToMessages;
           let tmp20 = nextResult;
           let result1 = obj2.applyAccumulatedTokens(tmp17, map);
         }
@@ -137,8 +140,8 @@ function vercelAiEventProcessor(type) {
         tmp24 = "gen_ai.invoke_agent" === trace.op;
       }
       if (tmp24) {
-        const result2 = require(957) /* convertPromptToMessages */.applyAccumulatedTokens(trace, map);
-        const obj3 = require(957) /* convertPromptToMessages */;
+        const result2 = convertPromptToMessages.applyAccumulatedTokens(trace, map);
+        const obj3 = convertPromptToMessages;
       }
     }
   }
@@ -147,10 +150,10 @@ function vercelAiEventProcessor(type) {
 function processEndedVercelAiSpan(item10015) {
   const data = item10015.data;
   if ("auto.vercelai.otel" === item10015.origin) {
-    renameAttributeKey(data, require(956).AI_USAGE_COMPLETION_TOKENS_ATTRIBUTE, require(958).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE);
-    renameAttributeKey(data, require(956).AI_USAGE_PROMPT_TOKENS_ATTRIBUTE, require(958).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE);
-    renameAttributeKey(data, require(956).AI_USAGE_CACHED_INPUT_TOKENS_ATTRIBUTE, require(958).GEN_AI_USAGE_INPUT_TOKENS_CACHED_ATTRIBUTE);
-    const tmp34 = data[require(undefined, 958).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE];
+    renameAttributeKey(data, _mod956.AI_USAGE_COMPLETION_TOKENS_ATTRIBUTE, _mod958.GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE);
+    renameAttributeKey(data, _mod956.AI_USAGE_PROMPT_TOKENS_ATTRIBUTE, _mod958.GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE);
+    renameAttributeKey(data, _mod956.AI_USAGE_CACHED_INPUT_TOKENS_ATTRIBUTE, _mod958.GEN_AI_USAGE_INPUT_TOKENS_CACHED_ATTRIBUTE);
+    const tmp34 = data[_mod958.GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE];
     let tmp35 = typeof tmp34 === "number";
     if (typeof tmp34 === "number") {
       tmp35 = typeof data[tmp29(undefined, 958).GEN_AI_USAGE_INPUT_TOKENS_CACHED_ATTRIBUTE] === "number";
@@ -158,7 +161,7 @@ function processEndedVercelAiSpan(item10015) {
     if (tmp35) {
       data[tmp29(958).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] = data[tmp29(undefined, 958).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] + data[tmp29(undefined, 958).GEN_AI_USAGE_INPUT_TOKENS_CACHED_ATTRIBUTE];
     }
-    const tmp = data[require(undefined, 958).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE];
+    const tmp = data[_mod958.GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE];
     let tmp2 = typeof tmp === "number";
     if (typeof tmp === "number") {
       tmp2 = typeof data[tmp29(undefined, 958).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] === "number";
@@ -175,16 +178,16 @@ function processEndedVercelAiSpan(item10015) {
       data[tmp29(956).AI_PROMPT_TOOLS_ATTRIBUTE] = tmp29(957).convertAvailableToolsToJsonString(data[tmp29(undefined, 956).AI_PROMPT_TOOLS_ATTRIBUTE]);
       const tmp29Result = tmp29(957);
     }
-    renameAttributeKey(data, require(956).OPERATION_NAME_ATTRIBUTE, require(958).GEN_AI_OPERATION_NAME_ATTRIBUTE);
-    renameAttributeKey(data, require(956).AI_PROMPT_MESSAGES_ATTRIBUTE, require(958).GEN_AI_REQUEST_MESSAGES_ATTRIBUTE);
-    renameAttributeKey(data, require(956).AI_RESPONSE_TEXT_ATTRIBUTE, "gen_ai.response.text");
-    renameAttributeKey(data, require(956).AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, "gen_ai.response.tool_calls");
-    renameAttributeKey(data, require(956).AI_RESPONSE_OBJECT_ATTRIBUTE, "gen_ai.response.object");
-    renameAttributeKey(data, require(956).AI_PROMPT_TOOLS_ATTRIBUTE, "gen_ai.request.available_tools");
-    renameAttributeKey(data, require(956).AI_TOOL_CALL_ARGS_ATTRIBUTE, "gen_ai.tool.input");
-    renameAttributeKey(data, require(956).AI_TOOL_CALL_RESULT_ATTRIBUTE, "gen_ai.tool.output");
-    renameAttributeKey(data, require(956).AI_SCHEMA_ATTRIBUTE, "gen_ai.request.schema");
-    renameAttributeKey(data, require(956).AI_MODEL_ID_ATTRIBUTE, require(958).GEN_AI_REQUEST_MODEL_ATTRIBUTE);
+    renameAttributeKey(data, _mod956.OPERATION_NAME_ATTRIBUTE, _mod958.GEN_AI_OPERATION_NAME_ATTRIBUTE);
+    renameAttributeKey(data, _mod956.AI_PROMPT_MESSAGES_ATTRIBUTE, _mod958.GEN_AI_REQUEST_MESSAGES_ATTRIBUTE);
+    renameAttributeKey(data, _mod956.AI_RESPONSE_TEXT_ATTRIBUTE, "gen_ai.response.text");
+    renameAttributeKey(data, _mod956.AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, "gen_ai.response.tool_calls");
+    renameAttributeKey(data, _mod956.AI_RESPONSE_OBJECT_ATTRIBUTE, "gen_ai.response.object");
+    renameAttributeKey(data, _mod956.AI_PROMPT_TOOLS_ATTRIBUTE, "gen_ai.request.available_tools");
+    renameAttributeKey(data, _mod956.AI_TOOL_CALL_ARGS_ATTRIBUTE, "gen_ai.tool.input");
+    renameAttributeKey(data, _mod956.AI_TOOL_CALL_RESULT_ATTRIBUTE, "gen_ai.tool.output");
+    renameAttributeKey(data, _mod956.AI_SCHEMA_ATTRIBUTE, "gen_ai.request.schema");
+    renameAttributeKey(data, _mod956.AI_MODEL_ID_ATTRIBUTE, _mod958.GEN_AI_REQUEST_MODEL_ATTRIBUTE);
     (function addProviderMetadataToAttributes(data) {
       const tmp3 = data[callback(undefined, table[2]).AI_RESPONSE_PROVIDER_METADATA_ATTRIBUTE];
       if (tmp3) {

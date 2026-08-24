@@ -1,33 +1,30 @@
-// Module ID: 11377
-// Function ID: 11378
+// Module ID: 11428
+// Function ID: 11429
 // Name: createPollCreationImageForMedia
-// Dependencies: [5, 32, 19, 7576, 7508, 11378, 10883, 11379, 11380, 11381, 1236, 8434, 2]
+// Dependencies: [5, 32, 19, 7614, 7546, 11429, 10922, 11430, 11431, 11432, 1236, 8473, 2]
 // Exports: default
 
-// Module 11377 (createPollCreationImageForMedia)
-import useRequest from "useRequest";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER";
+// Module 11428 (createPollCreationImageForMedia)
+import getPollVoteEventPropertiesDefault from "getPollVoteEventProperties" /* 10922 */;
+import useRequestDefault from "useRequest" /* 11429 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "_slicedToArray" /* 32 */;
+import closure_6 from "noop" /* 19 */;
+import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7614 */;
 
-let c9;
-let error;
-let metroImportAll;
 const require = arg1;
 function createPollCreationImageForMedia(mediaURL, status) {
   const mediaAttachmentState = { status, mediaURL };
-  return { mediaAttachmentState, emoji: "Array", stickerId: "text" };
+  return { mediaAttachmentState, emoji: "Array", stickerId: "applicationId" };
 }
-({ MAX_NUMBER_OF_ANSWERS_PER_POLL: error, MIN_NUMBER_OF_ANSWERS_PER_POLL: metroImportAll, PollDurations: c9 } = POLL_ATTACHMENT_FOLDER);
-let result = require("noop").fileFinishedImporting("modules/polls/useCreatePollFormData.tsx");
+({ MAX_NUMBER_OF_ANSWERS_PER_POLL: error, MIN_NUMBER_OF_ANSWERS_PER_POLL: closure_8, PollDurations: c9 } = POLL_ATTACHMENT_FOLDER);
+let result = require("set").fileFinishedImporting("modules/polls/useCreatePollFormData.tsx");
 
 export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion) {
-  let closure_11;
-  let tmp12;
-  let closure_0 = id;
-  const importDefault = arg1;
-  let closure_2 = arg2;
-  let dependencyMap = initialQuestion;
+  closure_0 = id;
+  importDefault = arg1;
+  closure_2 = arg2;
+  dependencyMap = initialQuestion;
   id = id.id;
   let obj = React;
   const tmp2 = first(React.useState(() => {
@@ -62,7 +59,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
   }
   let tmpResult = tmp(React.useState(str), 2);
   const first1 = tmpResult[0];
-  let closure_8 = tmp4;
+  closure_8 = tmp4;
   tmpResult = tmp(obj.useState(false), 2);
   const first2 = tmpResult[0];
   let initialDuration;
@@ -76,7 +73,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
   const first3 = tmpResult1[0];
   [tmp12, closure_11] = first(obj.useState({}), 2);
   const tmpResult3 = first(obj.useState(false), 2);
-  let closure_12 = tmp14;
+  closure_12 = tmp14;
   const found = first.filter((text) => callback(initialQuestion[4]).isAnswerFilled(text));
   let tmp15 = first1.length > 0;
   const found1 = first.filter((text) => callback(initialQuestion[4]).isIncompleteAnswer(text));
@@ -87,25 +84,22 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
     tmp15 = 0 === found1.length;
   }
   const tmpResult2 = first(obj.useState({}), 2);
-  const tmpResult4 = first(importDefault(11378)(importDefault(10883).createPoll), 2);
+  const tmpResult4 = first(useRequestDefault(getPollVoteEventPropertiesDefault.createPoll), 2);
   const first4 = tmpResult4[0];
   const loading = tmp20.loading;
-  let closure_16 = tmp21;
-  let closure_17 = tmp22;
+  closure_16 = tmp21;
+  closure_17 = tmp22;
   let callback = obj.useCallback((arg0) => {
-    callback4((arg0) => {
+    callback5((arg0) => {
       const merged = Object.assign(arg0);
       delete tmp[tmp2];
       return {};
     });
-    tmp4(arg0);
+    callback4(arg0);
   }, []);
   const callback1 = obj.useCallback((arg0) => {
-    let closure_0;
-    let closure_1;
-    let closure_2;
     ({ text: closure_0, index: closure_1, localCreationAnswerId: closure_2 } = arg0);
-    callback4((arg0) => {
+    callback5((arg0) => {
       const merged = Object.assign(arg0);
       const combined = "answer-" + closure_2;
       delete tmp[tmp2];
@@ -121,8 +115,8 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
     });
   }, []);
   const callback2 = obj.useCallback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
+    closure_0 = arg0;
+    closure_1 = arg1;
     callback3((arg0) => {
       const items = [...arg0];
       const obj = {};
@@ -151,11 +145,11 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
   }, items);
   closure_0 = undefined;
   closure_0 = id((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c5 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c5 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c6 === 2) {
         c6 = 3;
@@ -168,7 +162,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -183,16 +177,16 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
               obj[0] = arg1;
               return obj;
             } else {
-              let useRequest = tmp2;
-              const dependencyMap = tmp3;
+              closure_4 = tmp2;
+              dependencyMap = tmp3;
               const callback = closure_1;
               closure_1 = callback2;
-              outer1_19(callback, closure_1);
-              outer1_18(first3(callback2, callback(11381).PollMediaUploadAttachmentStatus.PREPARING), closure_1);
+              closure_1_19(callback, closure_1);
+              closure_1_18(first3(callback2, callback(11432).PollMediaUploadAttachmentStatus.PREPARING), closure_1);
               table = 1;
               c6 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = callback2(11379).handlePollGifAttachmentAdd(callback, table[closure_1].localCreationAnswerId, callback2);
+              obj1 = { value: null, done: false };
+              obj1[0] = callback2(11430).handlePollGifAttachmentAdd(callback, table[closure_1].localCreationAnswerId, callback2);
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -205,9 +199,9 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
             return obj;
           } else {
             if (null != arg1) {
-              outer1_18(first3(closure_1, callback(11381).PollMediaUploadAttachmentStatus.READY_TO_UPLOAD), callback);
+              closure_1_18(first3(closure_1, callback(11432).PollMediaUploadAttachmentStatus.READY_TO_UPLOAD), callback);
             } else {
-              outer1_18(first3(closure_1, callback(11381).PollMediaUploadAttachmentStatus.ERROR), callback);
+              closure_1_18(first3(closure_1, callback(11432).PollMediaUploadAttachmentStatus.ERROR), callback);
             }
             c6 = 3;
           }
@@ -234,23 +228,23 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
   const callback5 = obj.useCallback((arg0, arg1, arg2) => {
     const objectURL = URL.createObjectURL(arg2);
     callback3(arg0, arg1);
-    let obj = { mediaAttachmentState: null, emoji: "Array", stickerId: "text" };
+    let obj = { mediaAttachmentState: null, emoji: "Array", stickerId: "applicationId" };
     obj = { status: callback(initialQuestion[9]).PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL };
     obj[0] = obj;
     callback2(obj, arg1);
     const result = callback2(initialQuestion[7]).handlePollMediaAttachmentAdd(arg0, first[arg1].localCreationAnswerId, arg2);
-    obj = { mediaAttachmentState: null, emoji: "Array", stickerId: "text" };
+    obj = { mediaAttachmentState: null, emoji: "Array", stickerId: "applicationId" };
     const obj3 = callback2(initialQuestion[7]);
     obj[0] = { status: callback(initialQuestion[9]).PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL };
     callback2(obj, arg1);
   }, items2);
   const callback6 = obj.useCallback((emoji) => {
     callback3(id, arg1);
-    callback2({ emoji, stickerId: "Array", mediaAttachmentState: "text" }, arg1);
+    callback2({ emoji, stickerId: "Array", mediaAttachmentState: "applicationId" }, arg1);
   }, items3);
   const items4 = [first.length < first1];
   const callback7 = obj.useCallback((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     callback3((arg0) => {
       const items = [...arg0];
       const obj = {};
@@ -272,7 +266,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
   }, items4);
   const items6 = [id];
   const callback9 = obj.useCallback((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     if (closure_17) {
       callback3(id, arg0);
       callback3((arg0) => {
@@ -289,11 +283,11 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
     }
   }, items5);
   const effect = obj.useEffect(() => () => {
-    const result = outer1_2(outer1_3[7]).removeAllPollUploadAttachments(useRequest);
+    const result = closure_1_2(closure_1_3[7]).removeAllPollUploadAttachments(closure_4);
   }, items6);
   const items7 = [first, first1];
   const callback10 = obj.useCallback(() => {
-    let c0 = true;
+    c0 = true;
     let obj = {};
     if (0 === first1.trim().length) {
       c0 = false;
@@ -308,7 +302,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
       obj[combined] = intl2.string(callback(initialQuestion[10]).t.fYvzEX);
     }
     const item = arr.forEach((localCreationAnswerId) => {
-      const obj = callback(outer1_3[4]);
+      obj = callback(closure_1_3[4]);
       if (obj.isIncompleteAnswer(localCreationAnswerId)) {
         callback = false;
         const _HermesInternal = HermesInternal;
@@ -317,8 +311,8 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
         obj[combined] = intl.string(tmp(tmp2[10]).t["8Qqkc+"]);
       }
     });
-    callback4(obj);
-    tmp14(!c0);
+    callback5(obj);
+    callback6(!c0);
     return c0;
   }, items7);
   const items8 = [first1, found, first2, first3, first4, id, arg1];
@@ -334,7 +328,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -349,18 +343,18 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
             obj[0] = arg1;
             return obj;
           } else {
-            const obj1 = { channel: null, question: null, answers: null, allowMultiSelect: null, duration: null, layout: null, onClose: null };
+            obj1 = { channel: null, question: null, answers: null, allowMultiSelect: null, duration: null, layout: null, onClose: null };
             obj1[0] = v0;
-            obj1[1] = outer1_7;
-            obj1[2] = outer1_13;
-            obj1[3] = outer1_9;
-            obj1[4] = outer1_10;
-            obj1[5] = v0(outer1_3[11]).PollLayoutTypes.DEFAULT;
+            obj1[1] = closure_1_7;
+            obj1[2] = closure_1_13;
+            obj1[3] = closure_1_9;
+            obj1[4] = closure_1_10;
+            obj1[5] = v0(closure_1_3[11]).PollLayoutTypes.DEFAULT;
             obj1[6] = c1;
             c1 = 1;
             v0 = 1;
             const obj2 = { value: null, done: false };
-            obj2[0] = outer1_14(obj1);
+            obj2[0] = closure_1_14(obj1);
             return obj2;
           }
         } else if (arg0 === 1) {
@@ -373,7 +367,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp5) {
         v0 = tmp;

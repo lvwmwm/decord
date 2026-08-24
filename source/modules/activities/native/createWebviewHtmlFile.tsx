@@ -1,27 +1,22 @@
-// Module ID: 12476
-// Function ID: 12477
+// Module ID: 12530
+// Function ID: 12531
 // Name: _createWebviewHtmlFile
 // Dependencies: [5, 17, 500, 1271, 1208, 2]
 // Exports: createInjectedJavascriptForIOS, default
 
-// Module 12476 (_createWebviewHtmlFile)
-import set from "set";
-import { NativeModules } from "get ActivityIndicator";
+// Module 12530 (_createWebviewHtmlFile)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
 
 const require = arg1;
 function _createWebviewHtmlFile() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
-      let c3;
-      let c4;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -33,7 +28,7 @@ function _createWebviewHtmlFile() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -68,7 +63,7 @@ function _createWebviewHtmlFile() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -80,11 +75,6 @@ function _createWebviewHtmlFile() {
               obj2[3] = c3;
               obj2[4] = DCDFileManager;
               c6 = (function generateWebviewHtml(arg0) {
-                let iFrameSandboxAttributes;
-                let iFrameUri;
-                let insets;
-                let messageForDisallowedNavigationError;
-                let referrerPolicy;
                 ({ iFrameUri, iFrameSandboxAttributes, referrerPolicy, insets, messageForDisallowedNavigationError } = arg0);
                 let str = "";
                 let str2 = "";
@@ -107,7 +97,7 @@ function _createWebviewHtmlFile() {
               })(obj2);
               DCDFileManager = 1;
               if (obj12.isAndroid()) {
-                let obj5 = outer1_1(outer1_2[3]);
+                let obj5 = closure_1_1(closure_1_2[3]);
                 let writeFileResult;
                 if (obj5 != null) {
                   writeFileResult = obj5.writeFile("cache", c5, c6, "utf8");
@@ -125,11 +115,11 @@ function _createWebviewHtmlFile() {
                 obj4[0] = DCDFileManager.writeFile("cache", c5, c6, "utf8");
                 return obj4;
               }
-              obj12 = callback(outer1_2[2]);
+              obj12 = callback(closure_1_2[2]);
             }
           } else if (2 === tmp7) {
             DCDFileManager = 0;
-            let closure_7 = c3;
+            closure_7 = c3;
             obj3 = callback2(table[4]);
             obj3.captureException(closure_7);
             c6 = 3;
@@ -176,7 +166,7 @@ function _createWebviewHtmlFile() {
     iter.next();
     return iter;
   });
-  const _createWebviewHtmlFile = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);

@@ -1,62 +1,65 @@
-// Module ID: 12362
-// Function ID: 12363
+// Module ID: 12414
+// Function ID: 12415
 // Name: getAppCrashSource
-// Dependencies: [19, 17, 21, 7907, 12363, 12364, 12365, 1363, 2]
+// Dependencies: [19, 17, 21, 7946, 12415, 12416, 12417, 1363, 2]
 // Exports: AppCrash, getAppCrashSource, useAppCrashSource
 
-// Module 12362 (getAppCrashSource)
-import "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 12414 (getAppCrashSource)
+import noopAll from "noop" /* 19 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/AppCrash.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Illustration/native/redesign/generated/AppCrash.tsx");
 
 export const getAppCrashSource = function getAppCrashSource(theme) {
-  let obj = require(7907) /* getIllustrationSource */;
+  let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(12363);
+      return callback(12415);
     },
     darker() {
-      return callback(12364);
+      return callback(12416);
     },
     light() {
-      return callback(12365);
+      return callback(12417);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useAppCrashSource = function useAppCrashSource() {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(12363);
+      return callback(12415);
     },
     darker() {
-      return callback(12364);
+      return callback(12416);
     },
     light() {
-      return callback(12365);
+      return callback(12417);
     }
   };
-  return require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const AppCrash = function AppCrash(arg0) {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(12363);
+      return callback(12415);
     },
     darker() {
-      return callback(12364);
+      return callback(12416);
     },
     light() {
-      return callback(12365);
+      return callback(12417);
     }
   };
   obj = {};
-  const illustrationSource = require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

@@ -1,17 +1,16 @@
-// Module ID: 4872
-// Function ID: 4873
+// Module ID: 4877
+// Function ID: 4878
 // Name: getCreateAttachmentURL
-// Dependencies: [4873, 676, 2]
+// Dependencies: [4878, 676, 2]
 
-// Module 4872 (getCreateAttachmentURL)
-import GUILD_PRODUCT_EDIT_MODAL_KEY from "GUILD_PRODUCT_EDIT_MODAL_KEY";
-import { Endpoints } from "ME";
+// Module 4877 (getCreateAttachmentURL)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import GUILD_PRODUCT_EDIT_MODAL_KEY from "GUILD_PRODUCT_EDIT_MODAL_KEY" /* 4878 */;
 
-let c0;
-let closure_1;
-let obj1;
 ({ MAX_ATTACHMENT_UPLOAD_COUNT: c0, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: closure_1, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: obj1 } = GUILD_PRODUCT_EDIT_MODAL_KEY);
-const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductAttachmentUploadTarget.tsx");
+const Endpoints = ME.Endpoints;
+const result = set.fileFinishedImporting("modules/guild_products/GuildProductAttachmentUploadTarget.tsx");
 class GuildProductAttachmentUploadTarget {
 }
 const prototype = GuildProductAttachmentUploadTarget.prototype;

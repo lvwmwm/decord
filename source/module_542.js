@@ -3,7 +3,7 @@
 // Dependencies: [543]
 
 // Module 542
-import module_543 from "module_543";
+import module_543 from "module_543" /* 543 */;
 
 if (module_543) {
   try {

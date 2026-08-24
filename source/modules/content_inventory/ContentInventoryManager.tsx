@@ -1,23 +1,27 @@
-// Module ID: 17031
-// Function ID: 17032
+// Module ID: 17124
+// Function ID: 17125
 // Name: getBackoffJitter
-// Dependencies: [5, 4495, 5221, 4974, 13060, 11123, 9045, 9064, 676, 687, 12, 17032, 709, 13242, 17033, 5038, 2]
+// Dependencies: [5, 4499, 5226, 4979, 13115, 11162, 9082, 9101, 676, 687, 12, 17125, 709, 13297, 17126, 5043, 2]
 
-// Module 17031 (getBackoffJitter)
-import updateImpressionCaches from "updateImpressionCaches";
-import _handleConnectionOpen from "_handleConnectionOpen";
-import closure_5 from "set";
-import checkIdleAFK from "checkIdleAFK";
-import "map";
-import closure_7 from "updateImpressionCaches";
-import map from "map";
-import { ContentInventoryFeedKey } from "ContentInventoryFeedKey";
-import { PlatformTypes } from "ME";
-import apply from "dispatcher";
-import "initialize";
-import set from "set";
+// Module 17124 (getBackoffJitter)
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 5043 */;
+import mapDefault from "map" /* 13115 */;
+import apexExperiment from "apexExperiment" /* 13297 */;
+import ContentInventoryFeature from "ContentInventoryFeature" /* 17126 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_handleConnectionOpen" /* 4499 */;
+import closure_5 from "set" /* 5226 */;
+import closure_6 from "checkIdleAFK" /* 4979 */;
+import closure_7 from "updateImpressionCaches" /* 11162 */;
+import closure_8 from "map" /* 9082 */;
+import { ContentInventoryFeedKey } from "ContentInventoryFeedKey" /* 9101 */;
+import { PlatformTypes } from "ME" /* 676 */;
+import apply from "apply" /* 12 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 function getBackoffJitter() {
   let num = arg0;
   if (arg0 === undefined) {
@@ -26,7 +30,7 @@ function getBackoffJitter() {
   return Math.random() * (num + 1) * closure_11;
 }
 function setFeedState(feedId, state) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId, state };
   obj.dispatch(obj);
 }
@@ -46,7 +50,7 @@ function canFetch(GLOBAL_FEED) {
             return false;
           }
         }
-        if (_handleConnectionOpen.isConnected()) {
+        if (closure_4.isConnected()) {
           const idleSince = store.getIdleSince();
           if (null != idleSince) {
             const _Date = Date;
@@ -60,7 +64,7 @@ function canFetch(GLOBAL_FEED) {
       } else {
         return false;
       }
-      obj = require(13242) /* apexExperiment */;
+      obj = apexExperiment;
     }
     return true;
   }
@@ -71,7 +75,7 @@ function scheduleNextFetch() {
     num = 0;
   }
   if (num <= 0) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId: null, state: null };
     obj[1] = tmp;
     obj[2] = { loading: false };
@@ -91,7 +95,7 @@ function scheduleNextFetch() {
           if (obj9.isEligibleForContentInventoryV1("ContentInventoryManager")) {
             if (!closure_7.hidden) {
               flag = false;
-              if (_handleConnectionOpen.isConnected()) {
+              if (closure_4.isConnected()) {
                 const idleSince = store.getIdleSince();
                 flag = true;
                 if (null != idleSince) {
@@ -106,7 +110,7 @@ function scheduleNextFetch() {
               flag = false;
             }
           }
-          obj9 = require(13242) /* apexExperiment */;
+          obj9 = apexExperiment;
         }
       } else {
         flag = false;
@@ -151,7 +155,7 @@ function scheduleNextFetch() {
         const _Date7 = Date;
         const date2 = new Date(Date.now() + sum);
         obj[1] = date2;
-        const obj1 = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId: null, state: null };
+        obj1 = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId: null, state: null };
         obj1[1] = tmp;
         obj1[2] = obj;
         tmp2(709).dispatch(obj1);
@@ -176,14 +180,11 @@ function fetchInventory(arg0) {
 function _fetchInventory() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let force;
       if (c7 === 2) {
         c7 = 3;
         HermesBuiltin.throwTypeError();
@@ -195,7 +196,7 @@ function _fetchInventory() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -220,8 +221,8 @@ function _fetchInventory() {
                 force = false;
               }
               refresh_token = undefined;
-              let _handleConnectionOpen;
-              let c5;
+              closure_4 = undefined;
+              c5 = undefined;
               c6 = undefined;
               c7 = undefined;
               c6 = 1;
@@ -235,7 +236,7 @@ function _fetchInventory() {
                 throw arg1;
               } else if (arg0 === 2) {
                 c7 = 3;
-                let obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -276,7 +277,7 @@ function _fetchInventory() {
                 c6 = callback2(force[9]).Millis.MINUTE * Math.pow(2, c5);
                 c7 = callback3(c5);
                 const _setTimeout = setTimeout;
-                const result = closure_14.set(callback, setTimeout(() => outer1_23({ feedId: c0, feature: c1, force }), c6 + c7));
+                const result = closure_14.set(callback, setTimeout(() => closure_1_23({ feedId: c0, feature: c1, force }), c6 + c7));
                 const result1 = store.set(callback, c5 + 1);
               } else {
                 obj1 = callback2(force[12]);
@@ -289,16 +290,16 @@ function _fetchInventory() {
               c7 = 3;
               throw arg1;
             } else if (arg0 !== 2) {
-              _handleConnectionOpen = arg1;
+              closure_4 = arg1;
               const obj5 = { type: "CONTENT_INVENTORY_SET_FEED", feedId: null, feed: null };
               obj5[1] = callback;
-              obj5[2] = _handleConnectionOpen;
+              obj5[2] = closure_4;
               callback2(force[12]).dispatch(obj5);
               const result2 = store.set(callback, 0);
               set.delete(callback);
               callback4(callback, { loading: false });
               if (callback === closure_12) {
-                let c17 = null;
+                c17 = null;
                 callback6();
               }
               c5 = 0;
@@ -311,7 +312,7 @@ function _fetchInventory() {
             return obj;
           }
         } catch (tmp66) {
-          _handleConnectionOpen = tmp66;
+          closure_4 = tmp66;
           if (tmp4 === c5) {
             c7 = tmp2;
             throw tmp66;
@@ -324,7 +325,7 @@ function _fetchInventory() {
     iter.next();
     return iter;
   });
-  const _fetchInventory = tmp;
+  closure_24 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -340,7 +341,7 @@ function handlePostConnectionOpen() {
   scheduleNextFetch();
 }
 function handleConnectionClosed() {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId: GLOBAL_FEED, state: { loading: false } };
   obj.dispatch(obj);
   const value = map.get(GLOBAL_FEED);
@@ -352,7 +353,7 @@ function handleConnectionClosed() {
 }
 function handleManualRefresh(feature) {
   const feedId = feature.feedId;
-  importDefault(709).dispatch({ type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId, state: { loading: false } });
+  dispatcherDefault.dispatch({ type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId, state: { loading: false } });
   const value = map.get(feedId);
   if (undefined !== value) {
     const _clearTimeout = clearTimeout;
@@ -376,7 +377,7 @@ function handleInboxStale(refreshAfterMs) {
     }
     const _Date2 = Date;
     const date = new Date(timestamp + refresh_stale_inbox_after_ms);
-    let closure_17 = date.toUTCString();
+    closure_17 = date.toUTCString();
     scheduleNextFetch();
   }
 }
@@ -394,16 +395,18 @@ function handleSpotifyNewTrack(connectionId) {
   }
 }
 function handleFetchGameProfileFeed() {
-  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: require(17033) /* ContentInventoryFeature */.ContentInventoryFeature.GAME_PROFILE });
+  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: ContentInventoryFeature.ContentInventoryFeature.GAME_PROFILE });
 }
-let closure_11 = 2 * require("set").Millis.MINUTE;
+mapDefault;
+let closure_11 = 2 * setDefault.Millis.MINUTE;
 const GLOBAL_FEED = ContentInventoryFeedKey.GLOBAL_FEED;
-let closure_13 = 15 * require("set").Millis.MINUTE;
+let closure_13 = 15 * setDefault.Millis.MINUTE;
 const map = new Map();
 let set = new Set();
 const map1 = new Map();
 let c17 = null;
 let closure_18 = apply.debounce(require("_getMyContentInventory").postTrackToContentInventory, 3000, { trailing: true });
+initializeDefault;
 let prototype = function ContentInventoryManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { POST_CONNECTION_OPEN: handlePostConnectionOpen, CONNECTION_CLOSED: handleConnectionClosed, WINDOW_FOCUS: handleUpdatePollingState, IDLE: handleUpdatePollingState, CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: handleUpdatePollingState, CONTENT_INVENTORY_MANUAL_REFRESH: handleManualRefresh, CONTENT_INVENTORY_INBOX_STALE: handleInboxStale, SPOTIFY_NEW_TRACK: handleSpotifyNewTrack, GAME_PROFILE_OPEN: handleFetchGameProfileFeed };

@@ -1,22 +1,25 @@
-// Module ID: 15043
-// Function ID: 15044
+// Module ID: 15107
+// Function ID: 15108
 // Name: toggle
-// Dependencies: [5296, 8198, 676, 5298, 14181, 10669, 1236, 2]
+// Dependencies: [5301, 8238, 676, 5303, 14249, 10708, 1236, 2]
 
-// Module 15043 (toggle)
-import freshTeenActivityWithMap from "freshTeenActivityWithMap";
-import { Consents } from "ME";
-import createToggle from "createToggle";
+// Module 15107 (toggle)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 5303 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14249 */;
+import closure_3 from "freshTeenActivityWithMap" /* 5301 */;
+import { Consents } from "ME" /* 676 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.XuADY2);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.XuADY2);
   },
   parent: require("MobileUserSettings").MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToImproveDiscordSettingValue() {
-    return require(14181) /* useParentalControlledExplicitContentSettings */.useParentalControlledConsent(Consents.USAGE_STATISTICS).hasConsented;
+    return useParentalControlledExplicitContentSettings.useParentalControlledConsent(Consents.USAGE_STATISTICS).hasConsented;
   },
   onValueChange: function handleUsageStatisticsChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
@@ -32,13 +35,13 @@ createToggle = {
       } else {
         items2 = [Consents.USAGE_STATISTICS];
       }
-      importDefault(5298).updateTeenConsents(selectedTeenId, items1, items2);
-      const obj = importDefault(5298);
+      maybeFetchCollectiblesForInvoicesDefault.updateTeenConsents(selectedTeenId, items1, items2);
+      const obj = maybeFetchCollectiblesForInvoicesDefault;
     }
   },
   unsearchable: true
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToImproveDiscordSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToImproveDiscordSetting.tsx");
 
 export default createToggle;

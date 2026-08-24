@@ -4,7 +4,11 @@
 // Dependencies: [997, 817, 1018, 1020, 1021, 1022, 816]
 
 // Module 1017 (getPromisePolyfill)
-const require = arg1;
+import RN_GLOBAL_OBJ from "RN_GLOBAL_OBJ" /* 816 */;
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+import TurboModuleRegistry from "TurboModuleRegistry" /* 997 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function getPromisePolyfill() {
   return require(1021) /* valuePromise */;
@@ -28,11 +32,11 @@ arg5.requireRejectionTracking = function requireRejectionTracking() {
 arg5.checkPromiseAndWarn = function checkPromiseAndWarn() {
   try {
     const tmp8 = getPromisePolyfill();
-    if (require(997) /* TurboModuleRegistry */.ReactNativeLibraries.Promise !== tmp6) {
+    if (TurboModuleRegistry.ReactNativeLibraries.Promise !== tmp6) {
       const debug = tmp3(817).debug;
       debug.warn("You appear to have multiple versions of the \"promise\" package installed. This may cause unexpected behavior like undefined `Promise.allSettled`. Please install the `promise` package manually using the exact version as the React Native package. See https://docs.sentry.io/platforms/react-native/troubleshooting/ for more details.");
     }
-    if (tmp8 !== require(816) /* RN_GLOBAL_OBJ */.RN_GLOBAL_OBJ.Promise) {
+    if (tmp8 !== RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.Promise) {
       const debug3 = tmp3(817).debug;
       debug3.warn("Unhandled promise rejections will not be caught by Sentry. See https://docs.sentry.io/platforms/react-native/troubleshooting/ for more details.");
     } else {
@@ -40,7 +44,7 @@ arg5.checkPromiseAndWarn = function checkPromiseAndWarn() {
       debug2.log("Unhandled promise rejections will be caught by Sentry.");
     }
   } catch (err) {
-    const debug4 = require(817) /* registerSpanErrorInstrumentation */.debug;
+    const debug4 = registerSpanErrorInstrumentation.debug;
     debug4.warn("Unhandled promise rejections will not be caught by Sentry. See https://docs.sentry.io/platforms/react-native/troubleshooting/ for more details.");
   }
 };

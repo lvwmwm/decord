@@ -3,16 +3,24 @@
 // Dependencies: [574, 1412, 1418, 542, 546, 1420, 1422]
 
 // Module 1417
-let closure_2 = require("callBoundIntrinsic")("Object.prototype.toString");
-let tmp = require("hasToStringTagShams")();
-let c3 = tmp;
+import _mod542 from "module_542" /* 542 */;
+import getProto from "getProto" /* 546 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 574 */;
+import hasToStringTagShams from "hasToStringTagShams" /* 1412 */;
+import availableTypedArrays from "availableTypedArrays" /* 1418 */;
+import forEach from "forEach" /* 1420 */;
+import callBind from "callBind" /* 1422 */;
+
+let closure_2 = callBoundIntrinsic("Object.prototype.toString");
+let tmp = hasToStringTagShams();
+let closure_3 = tmp;
 if (typeof globalThis !== "undefined") {
   const global = globalThis;
 }
-const tmp2 = require("availableTypedArrays")();
-let c5 = tmp2;
-let closure_6 = require("callBoundIntrinsic")("String.prototype.slice");
-const error = require("callBoundIntrinsic")("Array.prototype.indexOf", true) || (function indexOf(arg0, arg1) {
+const tmp2 = availableTypedArrays();
+let closure_5 = tmp2;
+let closure_6 = callBoundIntrinsic("String.prototype.slice");
+let closure_7 = callBoundIntrinsic("Array.prototype.indexOf", true) || (function indexOf(arg0, arg1) {
   let num = 0;
   if (0 < arg0.length) {
     while (arg0[num] !== arg1) {
@@ -24,12 +32,12 @@ const error = require("callBoundIntrinsic")("Array.prototype.indexOf", true) || 
 });
 let closure_8 = Object.create(null);
 if (tmp) {
-  if (require("module_542")) {
-    if (require("getProto")) {
-      require("forEach")(tmp2, (arg0) => {
+  if (_mod542) {
+    if (getProto) {
+      forEach(tmp2, (arg0) => {
         const tmp = new global[arg0]();
         if (Symbol.toStringTag in tmp) {
-          if (require(546) /* getProto */) {
+          if (getProto) {
             const tmp4 = tmp2(546)(tmp);
             const _Symbol = Symbol;
             const tmp5 = tmp2(542)(tmp4, Symbol.toStringTag);
@@ -55,12 +63,12 @@ if (tmp) {
             let tmp14 = null;
             if (_require(542)) {
               _require = obj;
-              let dependencyMap = false;
+              dependencyMap = false;
               _require(1420)(closure_8, (arg0, arg1) => {
                 if (!closure_1) {
                   try {
                     if ("$" + arg0(closure_0) === arg1) {
-                      closure_1 = outer1_6(arg1, 1);
+                      closure_1 = closure_1_6(arg1, 1);
                     }
                   } catch (err) {
                   }
@@ -72,7 +80,7 @@ if (tmp) {
           } else {
             const tmp3 = callback2(callback(obj), 8, -1);
             let tmp6 = tmp3;
-            if (tmp3(closure_5, tmp3) <= -1) {
+            if (callback3(closure_5, tmp3) <= -1) {
               let tmp7 = "Object" === tmp3;
               if (tmp7) {
                 _require = obj;
@@ -81,7 +89,7 @@ if (tmp) {
                   if (!closure_1) {
                     try {
                       arg0(closure_0);
-                      closure_1 = outer1_6(arg1, 1);
+                      closure_1 = closure_1_6(arg1, 1);
                     } catch (err) {
                     }
                   }
@@ -98,10 +106,10 @@ if (tmp) {
     };
   }
 }
-require("forEach")(tmp2, (arg0) => {
+forEach(tmp2, (arg0) => {
   const arr = new global[arg0]();
   if (arr.slice || arr.set) {
     const text = `$${arg0}`;
-    closure_8[`$${arg0}`] = require(1422) /* callBind */(tmp);
+    closure_8[`$${arg0}`] = callBind(tmp);
   }
 });

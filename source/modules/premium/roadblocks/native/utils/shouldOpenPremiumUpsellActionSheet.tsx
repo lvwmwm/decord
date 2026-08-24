@@ -1,28 +1,32 @@
-// Module ID: 8478
-// Function ID: 8479
+// Module ID: 8517
+// Function ID: 8518
 // Name: maybeOpenPremiumUpsellActionSheet
-// Dependencies: [8479, 691, 8482, 2]
+// Dependencies: [8518, 691, 8521, 2]
 // Exports: default
 
-// Module 8478 (maybeOpenPremiumUpsellActionSheet)
-const result = require("EntitlementFeatureNames").fileFinishedImporting("modules/premium/roadblocks/native/utils/shouldOpenPremiumUpsellActionSheet.tsx");
+// Module 8517 (maybeOpenPremiumUpsellActionSheet)
+import set from "set" /* 2 */;
+import keys from "keys" /* 691 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8518 */;
+
+const result = set.fileFinishedImporting("modules/premium/roadblocks/native/utils/shouldOpenPremiumUpsellActionSheet.tsx");
 
 export default function maybeOpenPremiumUpsellActionSheet(initialUpsellKey) {
   initialUpsellKey = initialUpsellKey.initialUpsellKey;
-  if (require(691) /* keys */.UpsellTypes.UPLOAD === initialUpsellKey) {
-    importDefault(8479)(tmp(8482).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE);
+  if (keys.UpsellTypes.UPLOAD === initialUpsellKey) {
+    openPremiumUpsellActionSheetDefault(tmp(8521).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE);
     return true;
   } else if (tmp(691).UpsellTypes.GLOBAL_EMOJI === initialUpsellKey) {
-    importDefault(8479)(tmp(8482).EntitlementFeatureNames.EMOJIS_EVERYWHERE);
+    openPremiumUpsellActionSheetDefault(tmp(8521).EntitlementFeatureNames.EMOJIS_EVERYWHERE);
     return true;
   } else if (tmp(691).UpsellTypes.ANIMATED_EMOJI === initialUpsellKey) {
-    importDefault(8479)(tmp(8482).EntitlementFeatureNames.ANIMATED_EMOJIS);
+    openPremiumUpsellActionSheetDefault(tmp(8521).EntitlementFeatureNames.ANIMATED_EMOJIS);
     return true;
   } else if (tmp(691).UpsellTypes.SOUNDBOARD === initialUpsellKey) {
-    importDefault(8479)(tmp(8482).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE);
+    openPremiumUpsellActionSheetDefault(tmp(8521).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE);
     return true;
   } else if (tmp(691).UpsellTypes.STREAM_HIGH_QUALITY === initialUpsellKey) {
-    importDefault(8479)(tmp(8482).EntitlementFeatureNames.STREAM_HIGH_QUALITY);
+    openPremiumUpsellActionSheetDefault(tmp(8521).EntitlementFeatureNames.STREAM_HIGH_QUALITY);
     return true;
   } else {
     return false;

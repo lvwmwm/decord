@@ -1,19 +1,19 @@
-// Module ID: 12814
-// Function ID: 12815
+// Module ID: 12869
+// Function ID: 12870
 // Name: MuteUserElement
-// Dependencies: [32, 19, 1391, 676, 685, 21, 589, 4796, 10084, 5042, 6553, 12811, 1236, 10001, 2]
+// Dependencies: [32, 19, 1391, 676, 685, 21, 589, 4801, 10123, 5047, 6584, 12866, 1236, 10040, 2]
 // Exports: default
 
-// Module 12814 (MuteUserElement)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { AnalyticEvents } from "ME";
-import { MuteUntilSeconds } from "MAX_FAVORITES";
-import { jsx } from "jsxProd";
+// Module 12869 (MuteUserElement)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { MuteUntilSeconds } from "MAX_FAVORITES" /* 685 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMuteUserElement.tsx");
+let result = require("set").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMuteUserElement.tsx");
 
 export default function MuteUserElement(user) {
   user = user.user;
@@ -55,7 +55,7 @@ export default function MuteUserElement(user) {
     obj[0] = memo;
     obj[0] = intl.formatToPlainString(tmp2(tmp3[12]).t.TRp5wR, obj);
     const intl2 = tmp2(tmp3[12]).intl;
-    const obj1 = { username: null };
+    obj1 = { username: null };
     obj1[0] = memo;
     obj[1] = intl2.formatToPlainString(tmp2(tmp3[12]).t.raALhx, obj1);
     const intl3 = tmp2(tmp3[12]).intl;

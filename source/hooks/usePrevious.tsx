@@ -1,16 +1,15 @@
-// Module ID: 6701
-// Function ID: 6702
+// Module ID: 6738
+// Function ID: 6739
 // Name: usePrevious
 // Dependencies: [19, 2]
 // Exports: default, useCurrentWhen, usePreviousWhen
 
-// Module 6701 (usePrevious)
-import noop from "noop";
+// Module 6738 (usePrevious)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
 
-let c0;
-let closure_1;
 ({ useRef: c0, useEffect: closure_1 } = noop);
-const result = require("set").fileFinishedImporting("hooks/usePrevious.tsx");
+const result = set.fileFinishedImporting("hooks/usePrevious.tsx");
 
 export default function usePrevious(arg0) {
   const callback = arg0;
@@ -26,13 +25,13 @@ export const usePreviousWhen = function usePreviousWhen(value) {
   value = value.value;
   const callback = value;
   const shouldUpdate = value.shouldUpdate;
-  let c2;
+  closure_2 = undefined;
   const tmp = callback(null);
-  c2 = tmp;
+  closure_2 = tmp;
   const items = [value, shouldUpdate];
   shouldUpdate(() => {
     if (shouldUpdate) {
-      c2.current = closure_0;
+      closure_2.current = closure_0;
     }
   }, items);
   return tmp.current;
@@ -40,13 +39,13 @@ export const usePreviousWhen = function usePreviousWhen(value) {
 export const useCurrentWhen = function useCurrentWhen(value) {
   let current = value.value;
   const shouldUpdate = value.shouldUpdate;
-  let c2;
+  closure_2 = undefined;
   const tmp = current(null);
-  c2 = tmp;
+  closure_2 = tmp;
   const items = [current, shouldUpdate];
   shouldUpdate(() => {
     if (shouldUpdate) {
-      c2.current = current;
+      closure_2.current = current;
     }
   }, items);
   if (!shouldUpdate) {

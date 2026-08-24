@@ -1,61 +1,63 @@
-// Module ID: 10660
-// Function ID: 10661
+// Module ID: 10699
+// Function ID: 10700
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4661, 712, 1501, 6803, 10661, 10662, 4734, 1236, 4745, 5260, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1501, 6840, 10700, 10701, 4739, 1236, 4750, 5265, 2]
 // Exports: default
 
-// Module 10660 (GiftCodeRedeemError)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10699 (GiftCodeRedeemError)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Image: c3, View: c4, ScrollView: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { container: null, body: null, header: null, message: null, footer: null };
-createCacheKey = { flex: 1, justifyContent: "space-between", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { flex: 1, justifyContent: "space-between", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28, paddingBottom: 12, paddingHorizontal: 32 };
 createCacheKey[2] = { marginTop: 32, textAlign: "center" };
 createCacheKey[3] = { marginTop: 8, textAlign: "center" };
 createCacheKey[4] = { paddingHorizontal: 24 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemError.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemError.tsx");
 
 export default function GiftCodeRedeemError(children) {
-  const tmp = createCacheKey();
-  let obj = require(1501) /* createStandardNavigationFactories */;
+  const tmp = callback();
+  let obj = createStandardNavigationFactories;
   const theme = obj.useTheme();
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp9Result = tmp9(10661);
+    let tmp9Result = tmp9(10700);
   } else {
-    tmp9Result = tmp9(10662);
+    tmp9Result = tmp9(10701);
   }
   const items = [closure_6(closure_3, { source: tmp9Result }), , ];
-  const obj1 = { variant: "heading-xl/bold", style: tmp.header, children: null };
+  obj1 = { variant: "heading-xl/bold", style: tmp.header, children: null };
   const intl = tmp2(1236).intl;
-  obj1[2] = intl.formatToMarkdownString(require(1236) /* getSystemLocale */.t.JUvC0s, {});
-  items[1] = closure_6(require(4734) /* Text */.Text, obj1);
-  items[2] = closure_6(require(4734) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
+  obj1[2] = intl.formatToMarkdownString(getSystemLocale.t.JUvC0s, {});
+  items[1] = closure_6(Text.Text, obj1);
+  items[2] = closure_6(Text.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
   obj[2] = items;
   const items1 = [closure_7(closure_5, obj), ];
   const obj3 = { style: tmp.footer, children: null };
   const obj4 = { text: null, size: "md", onPress: null };
   const intl2 = tmp2(1236).intl;
-  obj4[0] = intl2.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  obj4[0] = intl2.string(getSystemLocale.t.cpT0Cq);
   obj4[2] = function onPress() {
     return callback(table[12]).pop();
   };
-  obj3[1] = closure_6(require(4745) /* Button */.Button, obj4);
+  obj3[1] = closure_6(Button.Button, obj4);
   items1[1] = closure_6(closure_4, obj3);
   obj[2] = items1;
-  return closure_7(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return closure_7(SafeAreaPaddingView.SafeAreaPaddingView, obj);
 };

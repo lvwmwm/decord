@@ -1,28 +1,25 @@
-// Module ID: 14573
-// Function ID: 14574
+// Module ID: 14641
+// Function ID: 14642
 // Name: getRoleEmojis
-// Dependencies: [5, 32, 19, 6727, 4015, 14574, 14551, 676, 1924, 589, 7127, 4384, 14575, 14576, 688, 4013, 14577, 14558, 14578, 705, 38, 6778, 7221, 12, 9406, 14579, 514, 2]
+// Dependencies: [5, 32, 19, 6764, 4018, 14642, 14619, 676, 1924, 589, 7165, 4388, 14643, 14644, 688, 4016, 14645, 14626, 14646, 705, 38, 6815, 7259, 12, 9443, 14647, 514, 2]
 // Exports: useApplicationId, useChannelAccessFormat, useChannelBenefits, useClearEditStateOnUnmount, useCreateOrUpdateListingFromEditState, useDescription, useEditStateIds, useHasChanges, useHasChangesForEditStateIds, useImage, useIntangibleBenefits, useListingEditState, useName, usePriceTier, useRole, useRoleColor, useRoleIcon, useSubscriptionPlan, useTierEmojiIds, useTrialInterval, useTrialLimit
 
-// Module 14573 (getRoleEmojis)
-import closure_4 from "AllChannelAccessOptions";
-import _slicedToArray from "_slicedToArray";
-import batchUpdates from "batchUpdates";
-import getEmojiToGroupId from "getEmojiToGroupId";
-import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
-import AllChannelAccessOptions from "AllChannelAccessOptions";
-import { GuildRoleSubscriptionBenefitTypes as closure_11 } from "MAX_SUBSCRIPTION_TIERS";
-import ME from "ME";
-import { SubscriptionIntervalTypes } from "GuildFeatures";
-import set from "noop";
+// Module 14641 (getRoleEmojis)
+import useSubscriptionRoleDefault from "useSubscriptionRole" /* 14643 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "_slicedToArray" /* 32 */;
+import closure_6 from "noop" /* 19 */;
+import closure_7 from "getEmojiToGroupId" /* 6764 */;
+import closure_8 from "makeGroupListingIndexSubscriptionListingTag" /* 4018 */;
+import AllChannelAccessOptions from "AllChannelAccessOptions" /* 14642 */;
+import { GuildRoleSubscriptionBenefitTypes as closure_11 } from "MAX_SUBSCRIPTION_TIERS" /* 14619 */;
+import ME from "ME" /* 676 */;
+import { SubscriptionIntervalTypes } from "GuildFeatures" /* 1924 */;
+import set from "set" /* 2 */;
 
-let c10;
-let c9;
-let closure_12;
-let map1;
 const require = arg1;
 function getRoleEmojis(arr) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   if (0 === arr.length) {
     return set;
   } else {
@@ -38,7 +35,7 @@ function getRoleEmojis(arr) {
 function clearEditState(NEW_LISTING_EDIT_STATE_ID) {
   const _require = NEW_LISTING_EDIT_STATE_ID;
   _require(705).batchUpdates(() => {
-    outer1_10.setState((listings) => {
+    closure_1_10.setState((listings) => {
       let obj = { listings: null };
       obj = {};
       const merged = Object.assign(listings.listings);
@@ -51,12 +48,10 @@ function clearEditState(NEW_LISTING_EDIT_STATE_ID) {
 function _updateListingPeripheralsFromEditState() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
       if (id === 2) {
         id = 3;
         HermesBuiltin.throwTypeError();
@@ -68,7 +63,7 @@ function _updateListingPeripheralsFromEditState() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -91,18 +86,18 @@ function _updateListingPeripheralsFromEditState() {
               lib = undefined;
               dependencyMap = undefined;
               id = undefined;
-              let _slicedToArray;
+              closure_5 = undefined;
               let roleColor;
               let roleIcon;
               let trialLimit;
               let trialInterval;
               let tierEmojiIds;
               let subscriptionTrial;
-              let closure_12;
-              let closure_13;
-              let closure_14;
-              let closure_15;
-              let closure_16;
+              closure_12 = undefined;
+              closure_13 = undefined;
+              closure_14 = undefined;
+              closure_15 = undefined;
+              closure_16 = undefined;
               dependencyMap = 1;
               id = 1;
               return { value: "ct", done: true };
@@ -114,7 +109,7 @@ function _updateListingPeripheralsFromEditState() {
                 throw arg1;
               } else if (arg0 === 2) {
                 id = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -122,19 +117,19 @@ function _updateListingPeripheralsFromEditState() {
                 callback2(38)(null != lib, "listing doesnt exist");
                 dependencyMap = lib.role_id;
                 id = lib.id;
-                _slicedToArray = tierEmojiIds.getState().listings[callback2];
-                callback2(38)(null != _slicedToArray, "edit state does not exist");
-                roleColor = _slicedToArray.roleColor;
-                roleIcon = _slicedToArray.roleIcon;
-                trialLimit = _slicedToArray.trialLimit;
-                trialInterval = _slicedToArray.trialInterval;
-                tierEmojiIds = _slicedToArray.tierEmojiIds;
+                closure_5 = tierEmojiIds.getState().listings[callback2];
+                callback2(38)(null != closure_5, "edit state does not exist");
+                roleColor = closure_5.roleColor;
+                roleIcon = closure_5.roleIcon;
+                trialLimit = closure_5.trialLimit;
+                trialInterval = closure_5.trialInterval;
+                tierEmojiIds = closure_5.tierEmojiIds;
                 let tmp8 = undefined === roleColor;
                 if (tmp8) {
                   tmp8 = undefined === roleIcon;
                 }
                 if (!tmp8) {
-                  let obj3 = callback2(6778);
+                  let obj3 = callback2(6815);
                   let obj2 = { color: null, icon: null, unicodeEmoji: null };
                   obj2[0] = roleColor;
                   let icon;
@@ -196,7 +191,7 @@ function _updateListingPeripheralsFromEditState() {
                   closure_15 = closure_13.map((emojiId) => {
                     const customEmojiById = roleIcon.getCustomEmojiById(emojiId);
                     if (null != customEmojiById) {
-                      let obj = _undefined(9406);
+                      let obj = _undefined(9443);
                       obj = { guildId: null, emojiId: null, roles: null };
                       obj[0] = _undefined;
                       obj[1] = customEmojiById.id;
@@ -216,10 +211,10 @@ function _updateListingPeripheralsFromEditState() {
                         obj[0] = _undefined;
                         obj[1] = customEmojiById.id;
                         obj[2] = found;
-                        let updateEmojiResult = _undefined(9406).updateEmoji(obj);
-                        const obj2 = _undefined(9406);
+                        let updateEmojiResult = _undefined(9443).updateEmoji(obj);
+                        const obj2 = _undefined(9443);
                       } else {
-                        obj = _undefined(9406);
+                        obj = _undefined(9443);
                         updateEmojiResult = obj.deleteEmoji(_undefined, customEmojiById.id);
                       }
                       return updateEmojiResult;
@@ -240,7 +235,7 @@ function _updateListingPeripheralsFromEditState() {
                 return obj;
               }
               id = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
             subscriptionTrial = trialLimit.getSubscriptionTrial(id);
             let tmp25 = null != trialLimit;
@@ -261,7 +256,7 @@ function _updateListingPeripheralsFromEditState() {
               dependencyMap = 4;
               id = 1;
               const obj8 = { value: null, done: false };
-              obj8[0] = lib(7221).updateSubscriptionTrial(callback, id, obj7);
+              obj8[0] = lib(7259).updateSubscriptionTrial(callback, id, obj7);
               return obj8;
             }
           }
@@ -274,7 +269,7 @@ function _updateListingPeripheralsFromEditState() {
     iter.next();
     return iter;
   });
-  const _updateListingPeripheralsFromEditState = tmp;
+  closure_20 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -286,14 +281,10 @@ function _updateListingPeripheralsFromEditState() {
 function _createListingFromEditState() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c6 = 0;
-    let c7 = 0;
+    closure_0 = arg0;
+    c6 = 0;
+    c7 = 0;
     const iter = (function*(arg0, id) {
-      let c0;
-      let closure_1;
-      let closure_2;
-      let closure_3;
       if (length === 2) {
         length = 3;
         HermesBuiltin.throwTypeError();
@@ -305,7 +296,7 @@ function _createListingFromEditState() {
           obj[0] = id;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -321,11 +312,11 @@ function _createListingFromEditState() {
               return obj;
             } else {
               let name = tmp4;
-              let closure_4 = 0;
+              closure_4 = 0;
               let callback;
               let callback2;
               let callback3;
-              let dependencyMap;
+              dependencyMap = undefined;
               ({ guildId: c0, editStateId: closure_1, groupListingId: closure_2, onBeforeDispatchNewListing: closure_3 } = callback);
               closure_4 = undefined;
               name = undefined;
@@ -335,7 +326,7 @@ function _createListingFromEditState() {
               let priceTier;
               let image;
               let channelAccessFormat;
-              let closure_12;
+              closure_12 = undefined;
               id = undefined;
               let items;
               let templateTierCreationAnalyticsContext;
@@ -350,7 +341,7 @@ function _createListingFromEditState() {
                 throw id;
               } else if (arg0 === 2) {
                 length = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = id;
                 return obj1;
               } else {
@@ -373,7 +364,7 @@ function _createListingFromEditState() {
                   description = 2;
                   length = 1;
                   let obj2 = { value: null, done: false };
-                  obj2[0] = callback3(7221).createSubscriptionGroupListing(callback, {});
+                  obj2[0] = callback3(7259).createSubscriptionGroupListing(callback, {});
                   return obj2;
                 } else {
                   let tmp9 = null != length;
@@ -381,7 +372,7 @@ function _createListingFromEditState() {
                     tmp9 = length.length > 0;
                   }
                   if (tmp9) {
-                    let obj7 = callback(14579);
+                    let obj7 = callback(14647);
                     description = 3;
                     length = 1;
                     let obj3 = { value: null, done: false };
@@ -423,9 +414,9 @@ function _createListingFromEditState() {
               dependencyMap = [];
             }
             callback2 = HermesBuiltin.arraySpread(dependencyMap, callback2);
-            obj2 = callback(14579);
+            obj2 = callback(14647);
             templateTierCreationAnalyticsContext = obj2.getTemplateTierCreationAnalyticsContext(callback2, callback);
-            obj3 = callback3(7221);
+            obj3 = callback3(7259);
             const obj5 = { guildId: null, groupListingId: null, data: null, analyticsContext: null, onBeforeDispatchNewListing: null };
             obj5[0] = callback;
             obj5[1] = id;
@@ -453,7 +444,7 @@ function _createListingFromEditState() {
     iter.next();
     return iter;
   });
-  const _createListingFromEditState = tmp;
+  closure_21 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -470,29 +461,29 @@ let set = new Set();
 const result = set.fileFinishedImporting("modules/guild_role_subscriptions/edit_state/GuildRoleSubscriptionListingEditStateUtils.tsx");
 
 export const useListingEditState = function useListingEditState(arg0, arg1, arg2) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   let tmp = arg2;
-  let closure_2 = arg2;
+  closure_2 = arg2;
   const tmp2 = callback3((setListing) => setListing.setListing);
-  const dependencyMap = tmp2;
+  closure_3 = tmp2;
   const items = [tmp2, arg0, arg1, arg2];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items);
@@ -510,11 +501,11 @@ export const useListingEditState = function useListingEditState(arg0, arg1, arg2
   return items1;
 };
 export const useClearEditStateOnUnmount = function useClearEditStateOnUnmount(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const items = [arg0];
   const effect = React.useEffect(() => () => {
-    outer1_0(outer1_3[19]).batchUpdates(() => {
-      outer1_10.setState((listings) => {
+    closure_1_0(closure_1_3[19]).batchUpdates(() => {
+      closure_1_10.setState((listings) => {
         let obj = { listings: null };
         obj = {};
         const merged = Object.assign(listings.listings);
@@ -537,13 +528,13 @@ export const useName = function useName(arg0) {
     }
     return str;
   };
-  const items = [makeGroupListingIndexSubscriptionListingTag];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_8.getSubscriptionListing(closure_0));
+  const items = [closure_8];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_8.getSubscriptionListing(closure_0));
   let memo = stateFromStores;
-  const tmp2 = name(7127)(() => first);
-  let dependencyMap = tmp2;
+  const tmp2 = name(7165)(() => first);
+  dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
-  memo = React.useMemo(() => _undefined(c2), items1);
+  memo = React.useMemo(() => callback(c2), items1);
   _require = arg0;
   name = "name";
   dependencyMap = undefined;
@@ -551,21 +542,21 @@ export const useName = function useName(arg0) {
   dependencyMap = tmp4;
   const items2 = [tmp4, arg0, "name", memo];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items2);
@@ -594,13 +585,13 @@ export const usePriceTier = function usePriceTier(editStateId) {
     }
     return price;
   };
-  const items = [makeGroupListingIndexSubscriptionListingTag];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_8.getSubscriptionListing(closure_0));
+  const items = [closure_8];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_8.getSubscriptionListing(closure_0));
   let memo = stateFromStores;
-  const tmp2 = priceTier(7127)(() => first);
-  let dependencyMap = tmp2;
+  const tmp2 = priceTier(7165)(() => first);
+  dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
-  memo = React.useMemo(() => _undefined(c2), items1);
+  memo = React.useMemo(() => callback(c2), items1);
   _require = editStateId;
   priceTier = "priceTier";
   dependencyMap = undefined;
@@ -608,21 +599,21 @@ export const usePriceTier = function usePriceTier(editStateId) {
   dependencyMap = tmp4;
   const items2 = [tmp4, editStateId, "priceTier", memo];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items2);
@@ -651,13 +642,13 @@ export const useDescription = function useDescription(arg0) {
     }
     return str;
   };
-  const items = [makeGroupListingIndexSubscriptionListingTag];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_8.getSubscriptionListing(closure_0));
+  const items = [closure_8];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_8.getSubscriptionListing(closure_0));
   let memo = stateFromStores;
-  const tmp2 = description(7127)(() => first);
-  let dependencyMap = tmp2;
+  const tmp2 = description(7165)(() => first);
+  dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
-  memo = React.useMemo(() => _undefined(c2), items1);
+  memo = React.useMemo(() => callback(c2), items1);
   _require = arg0;
   description = "description";
   dependencyMap = undefined;
@@ -665,21 +656,21 @@ export const useDescription = function useDescription(arg0) {
   dependencyMap = tmp4;
   const items2 = [tmp4, arg0, "description", memo];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items2);
@@ -704,16 +695,16 @@ export const useImage = function useImage(editStateId, arg1) {
       image_asset = image_asset.image_asset;
     }
     if (null != image_asset) {
-      return editStateId(_undefined[11]).getAssetURL(image_asset.application_id, image_asset.image_asset, editStateId);
+      return editStateId(table[11]).getAssetURL(image_asset.application_id, image_asset.image_asset, editStateId);
     }
   };
-  const items = [makeGroupListingIndexSubscriptionListingTag];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_8.getSubscriptionListing(closure_0));
+  const items = [closure_8];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_8.getSubscriptionListing(closure_0));
   let memo = stateFromStores;
-  const tmp2 = image(7127)(() => first);
-  let dependencyMap = tmp2;
+  const tmp2 = image(7165)(() => first);
+  dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
-  memo = React.useMemo(() => _undefined(c2), items1);
+  memo = React.useMemo(() => callback(c2), items1);
   _require = editStateId;
   image = "image";
   dependencyMap = undefined;
@@ -721,21 +712,21 @@ export const useImage = function useImage(editStateId, arg1) {
   dependencyMap = tmp4;
   const items2 = [tmp4, editStateId, "image", memo];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items2);
@@ -754,23 +745,23 @@ export const useImage = function useImage(editStateId, arg1) {
 };
 export const useApplicationId = function useApplicationId(listingId) {
   const _require = listingId;
-  const f95029 = (application_id) => {
+  const f95684 = (application_id) => {
     application_id = undefined;
     if (application_id != null) {
       application_id = application_id.application_id;
     }
     return application_id;
   };
-  const items = [makeGroupListingIndexSubscriptionListingTag];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_8.getSubscriptionListing(closure_0));
-  const tmp2 = f95029(7127)(() => first);
-  const dependencyMap = tmp2;
+  const items = [closure_8];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_8.getSubscriptionListing(closure_0));
+  const tmp2 = f95684(7165)(() => first);
+  dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
-  return React.useMemo(() => _undefined(c2), items1);
+  return React.useMemo(() => callback(c2), items1);
 };
 export const useRoleIcon = function useRoleIcon(arg0, arg1) {
-  const tmp = roleIcon(14575)(arg1, arg0);
-  let closure_0 = tmp;
+  const tmp = roleIcon(14643)(arg1, arg0);
+  closure_0 = tmp;
   const items = [tmp];
   let memo = React.useMemo(() => {
     let icon;
@@ -787,26 +778,26 @@ export const useRoleIcon = function useRoleIcon(arg0, arg1) {
   }, items);
   closure_0 = arg0;
   roleIcon = "roleIcon";
-  let dependencyMap;
+  dependencyMap = undefined;
   const tmp3 = callback3((setListing) => setListing.setListing);
   dependencyMap = tmp3;
   const items1 = [tmp3, arg0, "roleIcon", memo];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items1);
@@ -824,8 +815,8 @@ export const useRoleIcon = function useRoleIcon(arg0, arg1) {
   return items2;
 };
 export const useRole = function useRole(listingId, guildId) {
-  let closure_0 = listingId;
-  const tmp = importDefault(14575)(guildId, listingId);
+  closure_0 = listingId;
+  const tmp = useSubscriptionRoleDefault(guildId, listingId);
   importDefault = tmp;
   const tmp2 = callback3((arg0) => {
     let roleColor;
@@ -834,7 +825,7 @@ export const useRole = function useRole(listingId, guildId) {
     }
     return roleColor;
   });
-  const importAll = tmp2;
+  closure_2 = tmp2;
   const tmp3 = callback3((arg0) => {
     let roleIcon;
     if (arg0.listings[closure_0] != null) {
@@ -842,16 +833,16 @@ export const useRole = function useRole(listingId, guildId) {
     }
     return roleIcon;
   });
-  const dependencyMap = tmp3;
+  dependencyMap = tmp3;
   const items = [tmp, tmp3, tmp2];
   return React.useMemo(() => {
     let DEFAULT_PREVIEW_ROLE = closure_1;
     if (closure_1 == null) {
-      DEFAULT_PREVIEW_ROLE = listingId(tmp3[13]).DEFAULT_PREVIEW_ROLE;
+      DEFAULT_PREVIEW_ROLE = listingId(14644).DEFAULT_PREVIEW_ROLE;
     }
     const obj = {};
     const merged = Object.assign(DEFAULT_PREVIEW_ROLE);
-    if (undefined !== tmp3) {
+    if (undefined !== dependencyMap) {
       let str = tmp4.icon;
       if (str == null) {
         str = "";
@@ -865,15 +856,15 @@ export const useRole = function useRole(listingId, guildId) {
     }
     if (undefined !== closure_2) {
       obj.color = tmp5;
-      obj.colorString = listingId(tmp3[14]).int2hex(tmp5);
-      const obj2 = listingId(tmp3[14]);
+      obj.colorString = listingId(688).int2hex(tmp5);
+      const obj2 = listingId(688);
     }
     return obj;
   }, items);
 };
 export const useRoleColor = function useRoleColor(editStateId, guildId) {
-  const tmp = roleColor(14575)(guildId, editStateId);
-  let closure_0 = tmp;
+  const tmp = roleColor(14643)(guildId, editStateId);
+  closure_0 = tmp;
   const items = [tmp];
   let memo = React.useMemo(() => {
     let color;
@@ -881,32 +872,32 @@ export const useRoleColor = function useRoleColor(editStateId, guildId) {
       color = editStateId.color;
     }
     if (color == null) {
-      color = outer1_13;
+      color = closure_1_13;
     }
     return color;
   }, items);
   closure_0 = editStateId;
   roleColor = "roleColor";
-  let dependencyMap;
+  dependencyMap = undefined;
   const tmp3 = callback3((setListing) => setListing.setListing);
   dependencyMap = tmp3;
   const items1 = [tmp3, editStateId, "roleColor", memo];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items1);
@@ -924,40 +915,40 @@ export const useRoleColor = function useRoleColor(editStateId, guildId) {
   return items2;
 };
 export const useChannelAccessFormat = function useChannelAccessFormat(editStateId, guildId) {
-  const tmp = channelAccessFormat(14575)(guildId, editStateId);
-  let closure_0 = tmp;
+  const tmp = channelAccessFormat(14643)(guildId, editStateId);
+  closure_0 = tmp;
   const items = [tmp];
   let memo = React.useMemo(() => {
     if (null == editStateId) {
-      let SOME_CHANNELS_ACCESS = outer1_9.SOME_CHANNELS_ACCESS;
+      let SOME_CHANNELS_ACCESS = closure_1_9.SOME_CHANNELS_ACCESS;
     } else {
-      SOME_CHANNELS_ACCESS = editStateId(_undefined[15]).hasViewChannelPermission(tmp) ? tmp4.ALL_CHANNELS_ACCESS : tmp4.SOME_CHANNELS_ACCESS;
-      const obj = editStateId(_undefined[15]);
+      SOME_CHANNELS_ACCESS = editStateId(table[15]).hasViewChannelPermission(tmp) ? tmp4.ALL_CHANNELS_ACCESS : tmp4.SOME_CHANNELS_ACCESS;
+      const obj = editStateId(table[15]);
     }
     return SOME_CHANNELS_ACCESS;
   }, items);
   closure_0 = editStateId;
   channelAccessFormat = "channelAccessFormat";
-  let dependencyMap;
+  dependencyMap = undefined;
   const tmp3 = callback3((setListing) => setListing.setListing);
   dependencyMap = tmp3;
   const items1 = [tmp3, editStateId, "channelAccessFormat", memo];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items1);
@@ -981,17 +972,17 @@ export const useChannelBenefits = function useChannelBenefits(listingId) {
       let found = closure_15;
     } else {
       const benefits = role_benefits.role_benefits.benefits;
-      found = benefits.filter(listingId(_undefined[16]).isChannelBenefit);
+      found = benefits.filter(listingId(table[16]).isChannelBenefit);
     }
     return found;
   };
-  const items = [makeGroupListingIndexSubscriptionListingTag];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_8.getSubscriptionListing(closure_0));
+  const items = [closure_8];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_8.getSubscriptionListing(closure_0));
   let memo = stateFromStores;
-  const tmp2 = channelBenefits(7127)(() => first);
-  let dependencyMap = tmp2;
+  const tmp2 = channelBenefits(7165)(() => first);
+  dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
-  memo = React.useMemo(() => _undefined(c2), items1);
+  memo = React.useMemo(() => callback(c2), items1);
   _require = listingId;
   channelBenefits = "channelBenefits";
   dependencyMap = undefined;
@@ -999,21 +990,21 @@ export const useChannelBenefits = function useChannelBenefits(listingId) {
   dependencyMap = tmp4;
   const items2 = [tmp4, listingId, "channelBenefits", memo];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items2);
@@ -1037,17 +1028,17 @@ export const useIntangibleBenefits = function useIntangibleBenefits(listingId) {
       let found = closure_16;
     } else {
       const benefits = role_benefits.role_benefits.benefits;
-      found = benefits.filter(listingId(_undefined[16]).isIntangibleBenefit);
+      found = benefits.filter(listingId(table[16]).isIntangibleBenefit);
     }
     return found;
   };
-  const items = [makeGroupListingIndexSubscriptionListingTag];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_8.getSubscriptionListing(closure_0));
+  const items = [closure_8];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_8.getSubscriptionListing(closure_0));
   let memo = stateFromStores;
-  const tmp2 = intangibleBenefits(7127)(() => first);
-  let dependencyMap = tmp2;
+  const tmp2 = intangibleBenefits(7165)(() => first);
+  dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
-  memo = React.useMemo(() => _undefined(c2), items1);
+  memo = React.useMemo(() => callback(c2), items1);
   _require = listingId;
   intangibleBenefits = "intangibleBenefits";
   dependencyMap = undefined;
@@ -1055,21 +1046,21 @@ export const useIntangibleBenefits = function useIntangibleBenefits(listingId) {
   dependencyMap = tmp4;
   const items2 = [tmp4, listingId, "intangibleBenefits", memo];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items2);
@@ -1088,20 +1079,20 @@ export const useIntangibleBenefits = function useIntangibleBenefits(listingId) {
 };
 export const useTierEmojiIds = function useTierEmojiIds(listingId, guildId) {
   let _require = guildId;
-  const tmp = tierEmojiIds(14575)(guildId, listingId);
+  const tmp = tierEmojiIds(14643)(guildId, listingId);
   tierEmojiIds = tmp;
-  const items = [getEmojiToGroupId];
+  const items = [closure_7];
   const items1 = [guildId];
-  const stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => outer1_7.getGuildEmoji(closure_0), items1);
+  const stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => closure_1_7.getGuildEmoji(closure_0), items1);
   let memo = stateFromStoresArray;
   const items2 = [stateFromStoresArray, tmp];
   memo = React.useMemo(() => {
     if (null == tierEmojiIds) {
-      let set = outer1_17;
+      set = closure_1_17;
     } else {
       const id = tmp.id;
       if (0 === memo.length) {
-        set = outer1_17;
+        set = closure_1_17;
       } else {
         const found = arr.filter((roles) => {
           roles = roles.roles;
@@ -1116,26 +1107,26 @@ export const useTierEmojiIds = function useTierEmojiIds(listingId, guildId) {
   }, items2);
   _require = listingId;
   tierEmojiIds = "tierEmojiIds";
-  let dependencyMap;
+  dependencyMap = undefined;
   const tmp4 = callback3((setListing) => setListing.setListing);
   dependencyMap = tmp4;
   const items3 = [tmp4, listingId, "tierEmojiIds", memo];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items3);
@@ -1153,40 +1144,40 @@ export const useTierEmojiIds = function useTierEmojiIds(listingId, guildId) {
   return items4;
 };
 export const useTrialInterval = function useTrialInterval(editStateId) {
-  const subscriptionTrial = _require(14558).useSubscriptionTrial(editStateId);
+  const subscriptionTrial = _require(14626).useSubscriptionTrial(editStateId);
   let active_trial;
-  const obj = _require(14558);
+  const obj = _require(14626);
   if (subscriptionTrial != null) {
     active_trial = subscriptionTrial.active_trial;
   }
   if (active_trial == null) {
     active_trial = null;
   }
-  let selectedOption = trialInterval(14578)(active_trial).selectedOption;
+  let selectedOption = trialInterval(14646)(active_trial).selectedOption;
   if (selectedOption == null) {
     selectedOption = null;
   }
   _require = editStateId;
   trialInterval = "trialInterval";
   const tmp5 = callback3((setListing) => setListing.setListing);
-  const dependencyMap = tmp5;
+  dependencyMap = tmp5;
   const items = [tmp5, editStateId, "trialInterval", selectedOption];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items);
@@ -1204,7 +1195,7 @@ export const useTrialInterval = function useTrialInterval(editStateId) {
   return items1;
 };
 export const useTrialLimit = function useTrialLimit(editStateId) {
-  const subscriptionTrial = _require(14558).useSubscriptionTrial(editStateId);
+  const subscriptionTrial = _require(14626).useSubscriptionTrial(editStateId);
   let prop;
   if (subscriptionTrial != null) {
     prop = subscriptionTrial.max_num_active_trial_users;
@@ -1215,24 +1206,24 @@ export const useTrialLimit = function useTrialLimit(editStateId) {
   _require = editStateId;
   const trialLimit = "trialLimit";
   const tmp3 = callback3((setListing) => setListing.setListing);
-  const dependencyMap = tmp3;
+  dependencyMap = tmp3;
   const items = [tmp3, editStateId, "trialLimit", prop];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items);
@@ -1250,11 +1241,11 @@ export const useTrialLimit = function useTrialLimit(editStateId) {
   return items1;
 };
 export const useHasChanges = function useHasChanges(first) {
-  let closure_0 = first;
+  closure_0 = first;
   return callback3((arg0) => undefined !== arg0.listings[closure_0]);
 };
 export const useHasChangesForEditStateIds = function useHasChangesForEditStateIds(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return callback3((arg0) => {
     for (const item10006 of closure_0) {
       if (undefined !== arg0.listings[item10006]) {
@@ -1270,19 +1261,19 @@ export const useHasChangesForEditStateIds = function useHasChangesForEditStateId
 export const useSubscriptionPlan = function useSubscriptionPlan(listingId) {
   let _require = listingId;
   let first = (arg0) => {
-    let first;
+    first = undefined;
     if (arg0 != null) {
       first = arg0.subscription_plans[0];
     }
     return first;
   };
-  const items = [makeGroupListingIndexSubscriptionListingTag];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_8.getSubscriptionListing(closure_0));
-  let c2 = stateFromStores;
-  let tmp2 = first(7127)(() => first);
-  let dependencyMap = tmp2;
+  const items = [closure_8];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_8.getSubscriptionListing(closure_0));
+  c2 = stateFromStores;
+  let tmp2 = first(7165)(() => first);
+  dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
-  const memo = React.useMemo(() => _undefined(c2), items1);
+  const memo = React.useMemo(() => callback(c2), items1);
   _require = listingId;
   first = "priceTier";
   c2 = undefined;
@@ -1291,21 +1282,21 @@ export const useSubscriptionPlan = function useSubscriptionPlan(listingId) {
   dependencyMap = tmp4;
   const items2 = [tmp4, listingId, "priceTier", undefined];
   const callback = React.useCallback((arg0) => {
-    let closure_0 = arg0;
-    _undefined(closure_0, (arg0) => {
+    closure_0 = arg0;
+    callback(closure_0, (arg0) => {
       let tmpResult = closure_0;
       if (typeof closure_0 === "function") {
         let tmp4;
         if (arg0 != null) {
-          tmp4 = arg0[outer1_1];
+          tmp4 = arg0[closure_1_1];
         }
         if (tmp4 == null) {
-          tmp4 = outer1_2;
+          tmp4 = closure_1_2;
         }
         tmpResult = tmp(tmp4);
       }
       const obj = {};
-      obj[outer1_1] = tmpResult;
+      obj[closure_1_1] = tmpResult;
       return Object.assign({}, arg0, obj);
     });
   }, items2);
@@ -1342,7 +1333,7 @@ export const useSubscriptionPlan = function useSubscriptionPlan(listingId) {
         currency = tmp2.currency;
       }
       if (currency == null) {
-        currency = outer1_12.USD;
+        currency = closure_1_12.USD;
       }
       obj[1] = currency;
       let interval;
@@ -1350,7 +1341,7 @@ export const useSubscriptionPlan = function useSubscriptionPlan(listingId) {
         interval = tmp2.interval;
       }
       if (interval == null) {
-        interval = outer1_14.MONTH;
+        interval = closure_1_14.MONTH;
       }
       obj[2] = interval;
       let num2;
@@ -1376,25 +1367,18 @@ export const useSubscriptionPlan = function useSubscriptionPlan(listingId) {
 };
 export { clearEditState };
 export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateListingFromEditState() {
-  let closure_0;
-  let tmp2;
   [tmp2, closure_0] = callback2(React.useState(false), 2);
   const tmp3 = callback2(React.useState(), 2);
-  let closure_1 = tmp3[1];
+  closure_1 = tmp3[1];
   closure_0 = undefined;
   closure_0 = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    let id = 0;
+    closure_6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
-      let c3;
-      let c4;
-      if (subscriptionListing === 2) {
-        subscriptionListing = 3;
+      if (c6 === 2) {
+        c6 = 3;
         HermesBuiltin.throwTypeError();
       } else if (tmp7 === 3) {
         if (arg0 === 1) {
@@ -1404,17 +1388,17 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
-          subscriptionListing = 2;
+          c6 = 2;
           if (0 === c5) {
             if (arg0 === 1) {
-              subscriptionListing = 3;
+              c6 = 3;
               throw arg1;
             } else if (arg0 === 2) {
-              subscriptionListing = 3;
+              c6 = 3;
               obj = { value: null, done: true };
               obj[0] = arg1;
               return obj;
@@ -1428,46 +1412,37 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
               c4 = undefined;
               ({ guildId: c0, editStateId: c1, groupListingId: c2, onBeforeDispatchNewListing: c3, onAfterDispatchNewListing: c4 } = c0);
               c5 = undefined;
-              subscriptionListing = undefined;
-              let c7;
+              c6 = undefined;
+              c7 = undefined;
               c5 = 1;
-              subscriptionListing = 1;
+              c6 = 1;
               return { value: "ct", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
-              subscriptionListing = 3;
+              c6 = 3;
               throw arg1;
             } else if (arg0 === 2) {
-              subscriptionListing = 3;
-              const obj1 = { value: null, done: true };
+              c6 = 3;
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
-              c5 = outer1_1;
-              subscriptionListing = outer2_8.getSubscriptionListing(c5);
+              id = closure_1_1;
+              let subscriptionListing = closure_2_8.getSubscriptionListing(id);
               c4 = 2;
               callback(true);
-              outer1_1(undefined);
-              if (null != outer2_6) {
-                callback2(outer2_3[20])(null != outer1_2, "groupListingId is null");
+              closure_1_1(undefined);
+              if (null != closure_2_6) {
+                callback2(closure_2_3[20])(null != closure_1_2, "groupListingId is null");
                 const obj2 = { guildId: null, editStateId: null, groupListingId: null };
                 obj2[0] = callback;
-                obj2[1] = c5;
-                obj2[2] = outer1_2;
+                obj2[1] = id;
+                obj2[2] = closure_1_2;
                 c5 = 4;
-                subscriptionListing = 1;
+                c6 = 1;
                 let obj3 = { value: null, done: false };
                 obj3[0] = (function updateListingFromEditState(editStateId) {
-                  let channelAccessFormat;
-                  let channelBenefits;
-                  let description;
-                  let groupListingId;
-                  let guildId;
-                  let image;
-                  let intangibleBenefits;
-                  let name;
-                  let priceTier;
                   editStateId = editStateId.editStateId;
                   ({ guildId, groupListingId } = editStateId);
                   subscriptionListing = subscriptionListing.getSubscriptionListing(editStateId);
@@ -1527,11 +1502,11 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
               } else {
                 const obj4 = { guildId: null, editStateId: null, groupListingId: null, onBeforeDispatchNewListing: null };
                 obj4[0] = callback;
-                obj4[1] = outer2_5;
-                obj4[2] = outer2_2;
-                obj4[3] = outer2_3;
+                obj4[1] = closure_2_5;
+                obj4[2] = closure_2_2;
+                obj4[3] = closure_2_3;
                 c5 = 5;
-                subscriptionListing = 1;
+                c6 = 1;
                 const obj5 = { value: null, done: false };
                 obj5[0] = (function createListingFromEditState(arg0) {
                   const self = this;
@@ -1552,32 +1527,32 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
             throw c3;
           } else if (3 === tmp8) {
             c4 = 1;
-            const outer1_8 = c3;
-            if ("getAnyErrorMessage" in outer1_8) {
-              outer1_1(outer1_8);
+            closure_8 = c3;
+            if ("getAnyErrorMessage" in closure_8) {
+              closure_1_1(closure_8);
               c4 = 0;
               callback(false);
-              subscriptionListing = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              c6 = 3;
+              return { value: "HermesInternal", done: null };
             } else {
-              throw outer1_8;
+              throw closure_8;
             }
           } else {
             if (4 === tmp8) {
               if (arg0 === 1) {
-                subscriptionListing = 3;
+                c6 = 3;
                 throw arg1;
               } else if (arg0 === 2) {
                 c4 = 0;
                 callback(false);
-                subscriptionListing = 3;
+                c6 = 3;
                 const obj6 = { value: null, done: true };
                 obj6[0] = arg1;
                 return obj6;
               } else {
                 const obj7 = { guildId: null, editStateId: null };
                 obj7[0] = callback;
-                obj7[1] = c5;
+                obj7[1] = id;
                 (function updateListingPeripheralsFromEditState(arg0) {
                   const self = this;
                   const apply = closure_20.apply;
@@ -1589,47 +1564,46 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
                   return applyArgumentsResult;
                 })(obj7);
                 c5 = 6;
-                subscriptionListing = 1;
+                c6 = 1;
               }
             } else if (5 === tmp8) {
               if (arg0 === 1) {
-                subscriptionListing = 3;
+                c6 = 3;
                 throw arg1;
               } else if (arg0 !== 2) {
-                const outer1_7 = arg1;
-                const id = outer1_7.id;
-                c5 = id;
-                (function moveEditState(outer1_1, id) {
-                  const _undefined = outer1_1;
-                  let closure_1 = id;
+                id = arg1;
+                id = id.id;
+                (function moveEditState(closure_1_1, id) {
+                  const _undefined = closure_1_1;
+                  closure_1 = id;
                   _undefined(_undefined4[19]).batchUpdates(() => {
-                    outer1_10.setState(() => { ... });
+                    closure_1_10.setState(() => { ... });
                   });
-                })(outer1_1, id);
+                })(closure_1_1, id);
                 if (c4 != null) {
-                  tmp24(outer1_7);
+                  tmp24(id);
                 }
               }
             } else if (arg0 === 1) {
-              subscriptionListing = 3;
+              c6 = 3;
               throw arg1;
             } else if (arg0 === 2) {
               c4 = 0;
               callback(false);
-              subscriptionListing = 3;
+              c6 = 3;
               obj = { value: null, done: true };
               obj[0] = arg1;
               return obj;
             } else {
-              outer2_19(c5);
+              closure_2_19(c5);
               c4 = 0;
               callback(false);
-              subscriptionListing = 3;
+              c6 = 3;
               return { value: true, done: true };
             }
             c4 = 0;
             callback(false);
-            subscriptionListing = 3;
+            c6 = 3;
             const obj8 = { value: null, done: true };
             obj8[0] = arg1;
             return obj8;
@@ -1637,7 +1611,7 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
         } catch (tmp70) {
           c3 = tmp70;
           if (tmp5 === c4) {
-            subscriptionListing = tmp3;
+            c6 = tmp3;
             throw tmp70;
           } else if (tmp2 === tmp72) {
             c5 = tmp;
@@ -1673,29 +1647,29 @@ export const useEditStateIds = function useEditStateIds(groupListingId, guildId,
     obj = { includeSoftDeleted: false };
   }
   let subscriptionListingsForGroup;
-  let c2;
-  let dependencyMap;
-  let c4;
-  subscriptionListingsForGroup = _require(14558).useSubscriptionListingsForGroup(groupListingId, obj);
+  closure_2 = undefined;
+  dependencyMap = undefined;
+  closure_4 = undefined;
+  subscriptionListingsForGroup = _require(14626).useSubscriptionListingsForGroup(groupListingId, obj);
   const tmp2 = callback3((arg0) => arg0.editStateIdsForGroup[closure_0]);
-  c2 = tmp2;
+  closure_2 = tmp2;
   const tmp3 = callback3((setEditStateIdsForGroup) => setEditStateIdsForGroup.setEditStateIdsForGroup);
   dependencyMap = tmp3;
   const tmp4 = callback3((setListing) => setListing.setListing);
-  c4 = tmp4;
+  closure_4 = tmp4;
   obj = {
     editStateIds: React.useMemo(() => {
       const items = [...subscriptionListingsForGroup.map((id) => id.id)];
-      let items1 = c2;
-      if (c2 == null) {
+      let items1 = closure_2;
+      if (closure_2 == null) {
         items1 = [];
       }
       HermesBuiltin.arraySpread(items1, tmp);
       return items;
     }, items),
     addNewEditStateId: React.useCallback(() => {
-      guildId = guildId(_undefined[26]).v4();
-      _undefined(guildId, (arg0) => {
+      guildId = guildId(514).v4();
+      dependencyMap(guildId, (arg0) => {
         let items = arg0;
         if (arg0 == null) {
           items = [];
@@ -1706,10 +1680,10 @@ export const useEditStateIds = function useEditStateIds(groupListingId, guildId,
       });
     }, items1),
     addNewEditStateFromTemplate: React.useCallback((listings) => {
-      const guildId = listings;
-      const v4Result = guildId(_undefined[26]).v4();
-      const subscriptionListingsForGroup = v4Result;
-      _undefined(guildId, (arg0) => {
+      guildId = listings;
+      const v4Result = guildId(514).v4();
+      subscriptionListingsForGroup = v4Result;
+      dependencyMap(guildId, (arg0) => {
         let items = arg0;
         if (arg0 == null) {
           items = [];
@@ -1720,8 +1694,8 @@ export const useEditStateIds = function useEditStateIds(groupListingId, guildId,
       });
       listings = listings.listings;
       const item = listings.forEach((arg0) => {
-        let closure_0 = arg0;
-        outer1_4(closure_1, () => {
+        closure_0 = arg0;
+        closure_1_4(closure_1, () => {
           obj = { name: closure_0.name, description: closure_0.description, priceTier: closure_0.price_tier, image: closure_0.image, intangibleBenefits: closure_0.additional_perks, channelBenefits: channels.map((id) => ({ ref_id: id.id, ref_type: constants.CHANNEL, description: id.description, name: id.name, emoji_name: id.emoji_name })), roleIcon: obj, roleColor: closure_0.role_color, usedTemplate: closure_0.category };
           channels = closure_0.channels;
           obj = { unicodeEmoji: "Array", icon: 0 };
@@ -1732,8 +1706,8 @@ export const useEditStateIds = function useEditStateIds(groupListingId, guildId,
       return v4Result;
     }, items2),
     removeEditStateId: React.useCallback((arg0) => {
-      let closure_0 = arg0;
-      _undefined(closure_0, (arg0) => {
+      closure_0 = arg0;
+      dependencyMap(closure_0, (arg0) => {
         let items = arg0;
         if (arg0 == null) {
           items = [];

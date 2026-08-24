@@ -1,22 +1,20 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12526
+// Function ID: 12527
 // Name: context
-// Dependencies: [32, 19, 17, 21, 4661, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 2]
 // Exports: WebViewContextProvider
 
-// Module 12472 (context)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import context from "_slicedToArray";
-import createCacheKey from "createCacheKey";
+// Module 12526 (context)
+import closure_0 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import context from "module_0" /* 0 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ placeholderWebView: { width: 2, height: 2, position: "absolute", opacity: 0 } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/activities/native/WebViewContext.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/native/WebViewContext.tsx");
 
 export const WebViewContext = context;
 export const WebViewContextProvider = function WebViewContextProvider(children) {
@@ -29,7 +27,7 @@ export const WebViewContextProvider = function WebViewContextProvider(children) 
     style: callback4().placeholderWebView,
     ref: importAllResult.useCallback((_nativeTag) => {
       if (_nativeTag) {
-        _undefined(_nativeTag._nativeTag);
+        callback(_nativeTag._nativeTag);
       }
     }, items),
     pointerEvents: "none"

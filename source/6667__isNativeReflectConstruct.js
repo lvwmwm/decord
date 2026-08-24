@@ -1,17 +1,17 @@
 // Module ID: 6667
 // Function ID: 6668
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 6668, 6584, 6595]
+// Dependencies: [41, 42, 93, 95, 98, 6623, 6646]
 
 // Module 6667 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
+import _inheritsDefault from "_inherits" /* 98 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 6646 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
-const Symbol = importDefault;
+const FeImage = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -23,21 +23,21 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
-class Symbol {
+class FeImage {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Symbol);
-    tmp2 = __esModule;
-    obj = __esModule(Symbol);
-    tmp3 = __esModule;
+    tmp = closure_2(this, FeImage);
+    tmp2 = closure_4;
+    obj = closure_4(FeImage);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -51,31 +51,19 @@ class Symbol {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Symbol, require("_isNativeReflectConstruct"));
-const items = [
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const props = this.props;
-      let obj = { name: props.id };
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const merged = Object.assign(obj);
-      const merged1 = Object.assign(self(6584)(props));
-      obj.children = props.children;
-      return jsx(self(6668), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
-    }
+_inheritsDefault(FeImage, _isNativeReflectConstructDefault);
+let obj = {
+  key: "render",
+  value: function render() {
+    const result = FeImage(6623).warnUnimplementedFilter();
+    return null;
   }
-];
-const importDefaultResultResult = importDefaultResult(Symbol, items);
-importDefaultResultResult.displayName = "Symbol";
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeImage, items);
+importDefaultResultResult.displayName = "FeImage";
+obj = {};
+const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

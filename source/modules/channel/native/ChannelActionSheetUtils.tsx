@@ -1,16 +1,21 @@
-// Module ID: 9995
-// Function ID: 9996
+// Module ID: 10034
+// Function ID: 10035
 // Name: copyGuildChannelOrThreadLink
-// Dependencies: [4979, 7167, 4093, 2]
+// Dependencies: [4984, 7205, 4096, 2]
 // Exports: copyGuildChannelOrThreadLink
 
-// Module 9995 (copyGuildChannelOrThreadLink)
-const result = require("presentAddedFriendToast").fileFinishedImporting("modules/channel/native/ChannelActionSheetUtils.tsx");
+// Module 10034 (copyGuildChannelOrThreadLink)
+import set from "set" /* 2 */;
+import presentAddedFriendToast from "presentAddedFriendToast" /* 4096 */;
+import allowChannelAccess from "allowChannelAccess" /* 4984 */;
+import _copy from "_copy" /* 7205 */;
+
+const result = set.fileFinishedImporting("modules/channel/native/ChannelActionSheetUtils.tsx");
 
 export const copyGuildChannelOrThreadLink = function copyGuildChannelOrThreadLink(guild_id, id) {
-  const channelPermalink = require(4979) /* allowChannelAccess */.getChannelPermalink(guild_id, id);
-  const obj = require(4979) /* allowChannelAccess */;
-  require(7167) /* _copy */.copy(channelPermalink);
-  const obj2 = require(7167) /* _copy */;
-  require(4093) /* presentAddedFriendToast */.presentLinkCopied();
+  const channelPermalink = allowChannelAccess.getChannelPermalink(guild_id, id);
+  const obj = allowChannelAccess;
+  _copy.copy(channelPermalink);
+  const obj2 = _copy;
+  presentAddedFriendToast.presentLinkCopied();
 };

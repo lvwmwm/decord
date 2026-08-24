@@ -4,10 +4,13 @@
 // Dependencies: [606, 607]
 
 // Module 605 (isFunction)
+import isObject from "isObject" /* 606 */;
+import toStringTag from "toStringTag" /* 607 */;
+
 
 export default function isFunction(arg0) {
-  if (require(606) /* isObject */(arg0)) {
-    const tmp3 = tmp(607)(arg0);
+  if (isObject(arg0)) {
+    const tmp3 = toStringTag(arg0);
     let tmp4 = "[object Function]" == tmp3;
     if (!tmp4) {
       tmp4 = "[object GeneratorFunction]" == tmp3;
@@ -22,5 +25,5 @@ export default function isFunction(arg0) {
   } else {
     return false;
   }
-  tmp = require;
+  const tmp = require;
 };

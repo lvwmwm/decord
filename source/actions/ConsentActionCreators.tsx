@@ -1,15 +1,19 @@
-// Module ID: 14212
-// Function ID: 14213
+// Module ID: 14280
+// Function ID: 14281
 // Name: handleRequestSuccess
 // Dependencies: [676, 709, 1236, 530, 2]
 // Exports: fetchConsents, setConsents
 
-// Module 14212 (handleRequestSuccess)
-import { Endpoints } from "ME";
+// Module 14280 (handleRequestSuccess)
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import ME from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
 
 function handleRequestSuccess(body) {
   if (tmp) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "UPDATE_CONSENTS", consents: null };
     obj = {};
     const merged = Object.assign(body.body);
@@ -21,11 +25,11 @@ function handleRequestSuccess(body) {
 function handleRequestFailure(status) {
   if (status.status >= 500) {
     if (status.status <= 599) {
-      const intl2 = require(1236) /* getSystemLocale */.intl;
-      let message = intl2.string(require(1236) /* getSystemLocale */.t.cvJdtg);
+      const intl2 = getSystemLocale.intl;
+      let message = intl2.string(getSystemLocale.t.cvJdtg);
     }
     const _Error = Error;
-    const error = new Error(message);
+    error = new Error(message);
     throw error;
   }
   if (null != status) {
@@ -35,26 +39,26 @@ function handleRequestFailure(status) {
       }
     }
   }
-  const intl = require(1236) /* getSystemLocale */.intl;
-  message = intl.string(require(1236) /* getSystemLocale */.t.cvJdtg);
+  const intl = getSystemLocale.intl;
+  message = intl.string(getSystemLocale.t.cvJdtg);
 }
-const result = require("getSystemLocale").fileFinishedImporting("actions/ConsentActionCreators.tsx");
+const Endpoints = ME.Endpoints;
+const result = set.fileFinishedImporting("actions/ConsentActionCreators.tsx");
 
 export const fetchConsents = function fetchConsents() {
-  const HTTP = require(530) /* sendRequest */.HTTP;
-  const obj = { url: Endpoints.SETTINGS_CONSENT, oldFormErrors: true, rejectWithError: null };
-  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+  const HTTP = sendRequest.HTTP;
+  const obj = { url: Endpoints.SETTINGS_CONSENT, oldFormErrors: true, rejectWithError: sendRequest.rejectWithMigratedError() };
   const value = HTTP.get(obj);
   return value.then(handleRequestSuccess, (body) => {
-    const error = new Error(body.body.message);
+    error = new Error(body.body.message);
     return Promise.reject(error);
   });
 };
 export const setConsents = function setConsents(items, items2) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   obj = { url: Endpoints.SETTINGS_CONSENT, body: obj, oldFormErrors: true, rejectWithError: null };
   obj = { grant: items, revoke: items2 };
-  obj[3] = require(530) /* sendRequest */.rejectWithMigratedError();
-  const obj3 = require(530) /* sendRequest */;
+  obj[3] = sendRequest.rejectWithMigratedError();
+  const obj3 = sendRequest;
   return HTTP.post(obj).then(handleRequestSuccess, handleRequestFailure);
 };

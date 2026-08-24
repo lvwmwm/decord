@@ -5,19 +5,20 @@
 // Exports: _updatePropsJS
 
 // Module 1664 (_makeShareableClone)
-import _slicedToArray from "_slicedToArray";
+import t from "t" /* 1665 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
-const require = arg1;
+require = arg1;
 global._makeShareableClone = () => {
-  const reanimatedError = new require(1665) /* t */.ReanimatedError("`_makeShareableClone` should never be called from React runtime.");
+  const reanimatedError = new t.ReanimatedError("`_makeShareableClone` should never be called from React runtime.");
   throw reanimatedError;
 };
 global._scheduleHostFunctionOnJS = () => {
-  const reanimatedError = new require(1665) /* t */.ReanimatedError("`_scheduleOnJS` should never be called from React runtime.");
+  const reanimatedError = new t.ReanimatedError("`_scheduleOnJS` should never be called from React runtime.");
   throw reanimatedError;
 };
 global._scheduleOnRuntime = () => {
-  const reanimatedError = new require(1665) /* t */.ReanimatedError("`_scheduleOnRuntime` should never be called from React runtime.");
+  const reanimatedError = new t.ReanimatedError("`_scheduleOnRuntime` should never be called from React runtime.");
   throw reanimatedError;
 };
 function setNativeProps(arg0, arg1, arg2) {
@@ -76,7 +77,7 @@ export const _updatePropsJS = (arg0, getAnimatableRef) => {
       animatableRef.previousStyle = obj;
       const setNativeProps2 = animatableRef.setNativeProps;
       if (setNativeProps2 != null) {
-        const obj1 = { style: null };
+        obj1 = { style: null };
         obj1[0] = obj;
         setNativeProps2(obj1);
       }

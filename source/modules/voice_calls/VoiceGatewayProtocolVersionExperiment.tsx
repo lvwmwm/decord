@@ -1,16 +1,17 @@
-// Module ID: 13082
-// Function ID: 13083
+// Module ID: 13138
+// Function ID: 13139
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: getVoiceGatewayProtocolVersion
 
-// Module 13082 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 13138 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 let obj = { 1: null };
 obj[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-voice-gateway-protocol-version", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/voice_calls/VoiceGatewayProtocolVersionExperiment.tsx");
+const result = set.fileFinishedImporting("modules/voice_calls/VoiceGatewayProtocolVersionExperiment.tsx");
 
 export default apexExperiment;
 export const getVoiceGatewayProtocolVersion = function getVoiceGatewayProtocolVersion(supportsSfuUpdate) {

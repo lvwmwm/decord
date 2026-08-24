@@ -1,20 +1,21 @@
-// Module ID: 10935
-// Function ID: 10936
+// Module ID: 10974
+// Function ID: 10975
 // Name: canStreamWithSettings
-// Dependencies: [4524, 10936, 10937, 2]
+// Dependencies: [4529, 10975, 10976, 2]
 // Exports: default
 
-// Module 10935 (canStreamWithSettings)
-import RESOLUTION_720 from "RESOLUTION_720";
+// Module 10974 (canStreamWithSettings)
+import set from "set" /* 2 */;
+import getGoLiveAutoQualityExperimentConfig from "getGoLiveAutoQualityExperimentConfig" /* 10975 */;
+import canUseStreamSettingDefault from "canUseStreamSetting" /* 10976 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4529 */;
 
-let c3;
-let c4;
 ({ ApplicationStreamSettingRequirements: c3, ApplicationStreamPresets: c4 } = RESOLUTION_720);
-const result = require("canUseStreamSetting").fileFinishedImporting("modules/go_live/utils/canStreamWithSettings.tsx");
+const result = set.fileFinishedImporting("modules/go_live/utils/canStreamWithSettings.tsx");
 
 export default function canStreamWithSettings(arg0, arg1, arg2, arg3, arg4, arg5) {
   if (arg0 === constants.PRESET_AUTO) {
-    return require(10936) /* getGoLiveAutoQualityExperimentConfig */.getGoLiveAutoQualityExperimentConfig({ location: "canStreamWithSettings" }).allowAutoQuality;
+    return getGoLiveAutoQualityExperimentConfig.getGoLiveAutoQualityExperimentConfig({ location: "canStreamWithSettings" }).allowAutoQuality;
   } else {
     const iter = dependencyMap[Symbol.iterator]();
     const nextResult = iter.next();
@@ -31,7 +32,7 @@ export default function canStreamWithSettings(arg0, arg1, arg2, arg3, arg4, arg5
             let tmp11 = arg3;
             let tmp12 = arg4;
             let tmp13 = arg5;
-            if (importDefault(10937)(tmp4, arg3, arg4, arg5)) {
+            if (canUseStreamSettingDefault(tmp4, arg3, arg4, arg5)) {
               let tmp14 = iter;
               iter.return();
               let flag = true;

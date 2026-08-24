@@ -1,16 +1,17 @@
-// Module ID: 14782
-// Function ID: 14783
+// Module ID: 14846
+// Function ID: 14847
 // Name: UserSettingsSwipeRightToLeft
-// Dependencies: [19, 8198, 21, 10669, 13991, 2]
+// Dependencies: [19, 8238, 21, 10708, 14059, 2]
 // Exports: default
 
-// Module 14782 (UserSettingsSwipeRightToLeft)
-import noop from "noop";
-import { MobileUserSettings } from "MobileUserSettings";
-import { jsx } from "jsxProd";
+// Module 14846 (UserSettingsSwipeRightToLeft)
+import _modDef14059 from "module_14059" /* 14059 */;
+import closure_3 from "noop" /* 19 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 8238 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/chat/native/SwipeRightToLeftScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/chat/native/SwipeRightToLeftScreen.tsx");
 
 export default function UserSettingsSwipeRightToLeft() {
   const node = React.useMemo(() => {
@@ -18,5 +19,5 @@ export default function UserSettingsSwipeRightToLeft() {
     const sections = [{ settings: items }];
     return callback(table[3]).createList({ sections });
   }, []);
-  return jsx(importDefault(13991), { node });
+  return jsx(_modDef14059, { node });
 };

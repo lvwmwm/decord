@@ -1,14 +1,21 @@
-// Module ID: 11585
-// Function ID: 11586
+// Module ID: 11634
+// Function ID: 11635
 // Name: initialize
-// Dependencies: [11586, 11587, 707, 11588, 589, 709, 2]
+// Dependencies: [11635, 11636, 707, 11637, 589, 709, 2]
 
-// Module 11585 (initialize)
-import { MAX_ACCOUNTS } from "MAX_ACCOUNTS";
-import { PersistedStore } from "initialize";
+// Module 11634 (initialize)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import setSecondaryTokenAll from "setSecondaryToken" /* 707 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import MAX_ACCOUNTS2 from "MAX_ACCOUNTS" /* 11635 */;
+import isStaffDefault from "isStaff" /* 11636 */;
+import calculatePositionDeltas from "calculatePositionDeltas" /* 11637 */;
 
+const MAX_ACCOUNTS = MAX_ACCOUNTS2.MAX_ACCOUNTS;
 let obj = { INVALID: 0, [0]: "INVALID", VALIDATING: 1, [1]: "VALIDATING", VALID: 2, [2]: "VALID" };
 let closure_8 = [];
+const PersistedStore = initializeDefault.PersistedStore;
 class MultiAccountStore extends PersistedStore {
 }
 const prototype = MultiAccountStore.prototype;
@@ -54,7 +61,7 @@ const items = [
       if (users == null) {
         users = [];
       }
-      let obj = { users: null, canUseMultiAccountMobile: false };
+      obj = { users: null, canUseMultiAccountMobile: false };
       obj[0] = users;
     } else {
       obj = { users: null, canUseMultiAccountMobile: false };
@@ -70,7 +77,7 @@ obj = {
     let id = user.id;
     let tmp = !c5;
     if (!c5) {
-      tmp = importDefault(11587)(user);
+      tmp = isStaffDefault(user);
     }
     if (tmp) {
       c5 = true;
@@ -101,7 +108,7 @@ obj = {
     if (!isSwitchingAccount.isSwitchingAccount) {
       closure_8 = closure_8.filter((id) => id.id !== c4);
     }
-    let c4 = null;
+    c4 = null;
   },
   MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST(userId) {
     userId = userId.userId;
@@ -130,13 +137,11 @@ obj = {
   MULTI_ACCOUNT_REMOVE_ACCOUNT(userId) {
     userId = userId.userId;
     closure_8 = closure_8.filter((id) => id.id !== id);
-    importAll(707).removeToken(userId);
+    setSecondaryTokenAll.removeToken(userId);
   },
   MULTI_ACCOUNT_MOVE_ACCOUNT: function handleMoveAccount(arg0) {
-    let from;
-    let to;
     ({ from, to } = arg0);
-    closure_8 = require(11588) /* calculatePositionDeltas */.moveItemFromTo(closure_8, from, to);
+    closure_8 = calculatePositionDeltas.moveItemFromTo(closure_8, from, to);
   },
   CURRENT_USER_UPDATE: function handleCurrentUserUpdate(user) {
     user = user.user;
@@ -147,13 +152,11 @@ obj = {
     }
   },
   MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN: function handleUpdatePushSyncToken(arg0) {
-    let importDefault;
-    let require;
     ({ userId: require, pushSyncToken: importDefault } = arg0);
     closure_8 = closure_8.map((id) => {
       let tmp = id;
       if (id.id === closure_0) {
-        const obj = {};
+        obj = {};
         const merged = Object.assign(id);
         obj.pushSyncToken = closure_1;
         tmp = obj;
@@ -168,7 +171,7 @@ obj = {
       if (null != pushSyncToken.pushSyncToken) {
         tmp = pushSyncToken;
         if (invalidPushSyncTokens.includes(pushSyncToken.pushSyncToken)) {
-          const obj = {};
+          obj = {};
           const merged = Object.assign(pushSyncToken);
           obj.pushSyncToken = null;
           tmp = obj;
@@ -178,8 +181,8 @@ obj = {
     });
   }
 };
-const multiAccountStore = new MultiAccountStore(require("dispatcher"), obj);
-const result = require("setSecondaryToken").fileFinishedImporting("modules/multi_account/MultiAccountStore.tsx");
+const multiAccountStore = new MultiAccountStore(dispatcherDefault, obj);
+const result = set.fileFinishedImporting("modules/multi_account/MultiAccountStore.tsx");
 
 export default multiAccountStore;
 export const MultiAccountTokenStatus = obj;

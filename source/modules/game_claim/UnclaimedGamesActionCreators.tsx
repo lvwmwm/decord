@@ -1,14 +1,16 @@
-// Module ID: 15453
-// Function ID: 15454
+// Module ID: 15517
+// Function ID: 15518
 // Name: fetchUnclaimedGames
-// Dependencies: [5, 15454, 676, 530, 709, 589, 687, 584, 2]
+// Dependencies: [5, 15518, 676, 530, 709, 589, 687, 584, 2]
 // Exports: useHasUnclaimedGames, useUnclaimedGameIdsForGuild
 
-// Module 15453 (fetchUnclaimedGames)
-import closure_3 from "initialize";
-import importDefaultResult from "getMap";
-import { Endpoints } from "ME";
-import initialize from "initialize";
+// Module 15517 (fetchUnclaimedGames)
+import failsDefault from "fails" /* 584 */;
+import setDefault from "set" /* 687 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import importDefaultResult from "getMap" /* 15518 */;
+import { Endpoints } from "ME" /* 676 */;
+import initialize from "initialize" /* 589 */;
 
 const require = arg1;
 function fetchUnclaimedGames() {
@@ -35,7 +37,7 @@ function _fetchUnclaimedGames() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -53,9 +55,9 @@ function _fetchUnclaimedGames() {
             const callback = tmp2;
             let body = tmp5;
             body = undefined;
-            const HTTP = outer1_0(530).HTTP;
-            const obj1 = { url: null, oldFormErrors: true, rejectWithError: false };
-            obj1[0] = outer1_5.UNCLAIMED_GAMES;
+            const HTTP = closure_1_0(530).HTTP;
+            obj1 = { url: null, oldFormErrors: true, rejectWithError: false };
+            obj1[0] = closure_1_5.UNCLAIMED_GAMES;
             dependencyMap = 1;
             c3 = 1;
             const obj2 = { value: null, done: false };
@@ -77,7 +79,7 @@ function _fetchUnclaimedGames() {
           obj4[1] = body;
           obj.dispatch(obj4);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         c3 = tmp;
@@ -85,7 +87,7 @@ function _fetchUnclaimedGames() {
       }
     }
   });
-  const _fetchUnclaimedGames = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -110,19 +112,19 @@ initialize = {
   load() {
     return fetchUnclaimedGames();
   },
-  staleAfter: require("set").Seconds.DAY,
+  staleAfter: setDefault.Seconds.DAY,
   retryConfig: initialize
 };
 initialize = {
   backoff() {
-    let tmp = importDefault(584);
-    tmp = new tmp(5 * importDefault(687).Millis.MINUTE);
+    let tmp = failsDefault;
+    tmp = new tmp(5 * setDefault.Millis.MINUTE);
     return tmp;
   },
   maxRetries: 10
 };
 const fetchStore = initialize.createFetchStore(importDefaultResult, initialize);
-const result = require("ME").fileFinishedImporting("modules/game_claim/UnclaimedGamesActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/game_claim/UnclaimedGamesActionCreators.tsx");
 
 export default { fetch: fetchUnclaimedGames };
 export { fetchUnclaimedGames };

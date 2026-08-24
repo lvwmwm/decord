@@ -1,55 +1,56 @@
-// Module ID: 8093
-// Function ID: 8094
+// Module ID: 8132
+// Function ID: 8133
 // Name: TextAreaField
-// Dependencies: [19, 17, 21, 4661, 712, 7345, 7339, 4099, 8094, 1236, 7348, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 7383, 7377, 4102, 8133, 1236, 7386, 4739, 2]
 
-// Module 8093 (TextAreaField)
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 8132 (TextAreaField)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getNodeText from "getNodeText" /* 4102 */;
+import Text from "Text" /* 4739 */;
+import useTextFieldState from "useTextFieldState" /* 7377 */;
+import useInputStyles from "useInputStyles" /* 7383 */;
+import useKeyboardBlurring from "useKeyboardBlurring" /* 7386 */;
+import useCharacterLimitAnnouncement from "useCharacterLimitAnnouncement" /* 8133 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let obj = { area: { height: 128, textAlignVertical: "top" }, maxLengthIndicator: null };
-obj = { position: "absolute", bottom: require("Themes").space.PX_4, right: require("Themes").space.PX_16 };
+obj = { position: "absolute", bottom: ThemesDefault.space.PX_4, right: ThemesDefault.space.PX_16 };
 obj[1] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
-const forwardRefResult = require("noop").forwardRef((isDisabled, ref) => {
-  let focusProps;
-  let innerRef;
-  let inputProps;
-  let isFocused;
-  let state;
+const forwardRefResult = importAllResult.forwardRef((isDisabled, ref) => {
   let label = isDisabled;
   let obj = dependencyMap;
-  let obj1 = require(7345) /* useInputStyles */;
+  obj1 = useInputStyles;
   obj = { size: "lg", isRound: false, isDisabled: isDisabled.isDisabled };
   const inputStyles = obj1.useInputStyles(obj);
   const tmp2 = callback2();
   const maxLength = isDisabled.maxLength;
-  let obj3 = require(7339) /* useTextFieldState */;
+  let obj3 = useTextFieldState;
   const textField = obj3.useTextField(isDisabled, ref);
   ({ state, inputProps, innerRef } = textField);
-  let obj4 = require(4099) /* getNodeText */;
+  let obj4 = getNodeText;
   const focus = obj4.useFocus();
   let diff;
   ({ focusProps, isFocused } = focus);
   if (null != maxLength) {
     diff = maxLength - state.value.length;
   }
-  const result = _8Q_k1s(8094);
+  const result = useCharacterLimitAnnouncement;
   obj = { currentLength: state.value.length, maxLength, message: null };
-  const intl = _8Q_k1s(1236).intl;
-  obj[2] = intl.string(_8Q_k1s(1236).t.c2Jqed);
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.c2Jqed);
   const characterLimitAnnouncement = result.useCharacterLimitAnnouncement(obj);
   obj1 = {};
   const merged = Object.assign(label);
   obj1.isFocused = isFocused;
   const obj2 = {};
-  const result1 = _8Q_k1s(4099);
+  const result1 = getNodeText;
   const merged1 = Object.assign(result1.mergeProps(inputProps, focusProps));
   obj2.ref = innerRef;
   const items = [, , ];
@@ -58,11 +59,11 @@ const forwardRefResult = require("noop").forwardRef((isDisabled, ref) => {
   obj2.style = items;
   obj2.placeholderTextColor = inputStyles.placeholderText.color;
   obj2.multiline = true;
-  const items1 = [callback(_8Q_k1s(7348).NativeTextInput, obj2), ];
+  const items1 = [callback(useKeyboardBlurring.NativeTextInput, obj2), ];
   if (null == diff) {
     items1[1] = null;
     obj1.children = items1;
-    return closure_4(_8Q_k1s(7345).InputFieldContainer, obj1);
+    return closure_4(useInputStyles.InputFieldContainer, obj1);
   } else {
     obj3 = { style: null, children: null };
     obj3[0] = tmp2.maxLengthIndicator;
@@ -84,26 +85,26 @@ const forwardRefResult = require("noop").forwardRef((isDisabled, ref) => {
     obj4 = { variant: "text-xs/semibold", color: null, accessibilityLabel: null, children: null };
     obj4[1] = str;
     if (typeof label.label === "string") {
-      const intl2 = _8Q_k1s(1236).intl;
+      const intl2 = getSystemLocale.intl;
       obj = { label: null, remainingCharacters: null };
       label = label.label;
       obj[0] = label;
       obj[1] = diff;
       let formatToPlainStringResult = intl2.formatToPlainString(_8Q_k1s, obj);
     } else {
-      const intl3 = _8Q_k1s(1236).intl;
+      const intl3 = getSystemLocale.intl;
       const obj5 = { remainingCharacters: null };
       obj5[0] = diff;
-      formatToPlainStringResult = intl3.formatToPlainString(_8Q_k1s(1236).t.fR1cof, obj5);
+      formatToPlainStringResult = intl3.formatToPlainString(getSystemLocale.t.fR1cof, obj5);
     }
     obj4[2] = formatToPlainStringResult;
     obj4[3] = diff;
-    obj4 = tmp9(_8Q_k1s(4734).Text, obj4);
+    obj4 = tmp9(Text.Text, obj4);
     obj3[1] = obj4;
     tmp9(View, obj3);
     const tmp13 = View;
   }
 });
-let result = require("jsxProd").fileFinishedImporting("design/components/TextField/native/TextAreaField.native.tsx");
+let result = require("set").fileFinishedImporting("design/components/TextField/native/TextAreaField.native.tsx");
 
 export const TextAreaField = forwardRefResult;

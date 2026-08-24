@@ -1,19 +1,21 @@
-// Module ID: 13294
-// Function ID: 13295
+// Module ID: 13352
+// Function ID: 13353
 // Name: getGeoRestrictedGuilds
 // Dependencies: [589, 709, 2]
 
-// Module 13294 (getGeoRestrictedGuilds)
-import { Store } from "initialize";
+// Module 13352 (getGeoRestrictedGuilds)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let closure_0 = [];
+const Store = initializeDefault.Store;
 class GeoRestrictedGuildStore extends Store {
 }
 GeoRestrictedGuildStore.prototype["getGeoRestrictedGuilds"] = function getGeoRestrictedGuilds() {
   return closure_0;
 };
 GeoRestrictedGuildStore.displayName = "GeoRestrictedGuildStore";
-const geoRestrictedGuildStore = new GeoRestrictedGuildStore(require("dispatcher"), {
+const geoRestrictedGuildStore = new GeoRestrictedGuildStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen(geoRestrictedGuilds) {
     geoRestrictedGuilds = geoRestrictedGuilds.geoRestrictedGuilds;
   },

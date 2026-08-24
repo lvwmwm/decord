@@ -1,52 +1,38 @@
-// Module ID: 14072
-// Function ID: 14073
+// Module ID: 14140
+// Function ID: 14141
 // Name: EditGuildProfileBanner
-// Dependencies: [109, 19, 17, 1990, 5365, 7186, 676, 1924, 21, 4039, 7139, 7159, 14005, 4342, 14006, 2007, 8376, 1236, 8374, 8471, 8982, 14017, 8372, 7349, 5441, 712, 9444, 14067, 589, 8416, 7256, 8983, 8384, 13421, 14073, 8970, 8979, 4734, 4104, 14074, 9285, 9286, 9451, 14031, 4219, 14032, 14037, 14046, 14047, 14051, 14055, 14045, 9325, 9326, 2]
+// Dependencies: [109, 19, 17, 1991, 5370, 7224, 676, 1924, 21, 4042, 7177, 7197, 14073, 4346, 14074, 2008, 8415, 1236, 8413, 8510, 9019, 14085, 8411, 7387, 5446, 712, 9481, 14135, 589, 8455, 7294, 9020, 8423, 13479, 14141, 9007, 9016, 4739, 4107, 14142, 9322, 9323, 9488, 14099, 4223, 14100, 14105, 14114, 14115, 14119, 14123, 14113, 9362, 9363, 2]
 // Exports: default
 
-// Module 14072 (EditGuildProfileBanner)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import usePremiumUpsellConfig from "usePremiumUpsellConfig";
-import get_ActivityIndicator from "getSystemLocale";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createUserWidgetFromServer from "createUserWidgetFromServer";
-import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET";
-import ME from "ME";
-import { PremiumUpsellTypes } from "GuildFeatures";
-import jsxProd from "styles";
+// Module 14140 (EditGuildProfileBanner)
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
+import contextDefault from "context" /* 7177 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
+import ProfilePreviewButtonDefault from "ProfilePreviewButton" /* 14073 */;
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import closure_5 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "createUserWidgetFromServer" /* 5370 */;
+import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import ME from "ME" /* 676 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let AnalyticsPages;
-let AnalyticsSections;
-let closure_14;
-let closure_15;
-let closure_17;
-let closure_18;
-let closure_6;
-let error;
-let map1;
-let unpackModuleId;
 const require = arg1;
 function EditGuildProfileBanner(user) {
-  let dependencyMap;
-  let disabled;
-  let displayProfile;
-  let guildMember;
-  let importDefault;
-  let pendingAvatarSrc;
-  let pendingBanner;
-  let pendingThemeColors;
   user = user.user;
   ({ guildId: importDefault, guildMemberProfile: dependencyMap, pendingBanner } = user);
-  let c4;
+  c4 = undefined;
   let analyticsLocations;
   ({ displayProfile, guildMember, pendingAvatarSrc, pendingThemeColors, disabled } = user);
-  let obj = importDefault(4039);
+  let obj = getPremiumPlanItemDefault;
   let result = obj.canUsePremiumGuildMemberProfile(user);
   c4 = result;
-  analyticsLocations = importDefault(7139)(importDefault(7159).EDIT_BANNER).analyticsLocations;
+  analyticsLocations = contextDefault(QUICK_SWITCHERDefault.EDIT_BANNER).analyticsLocations;
   obj = { value: analyticsLocations, children: null };
   obj = { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, showProfilePreviewButton: false, showEditButton: null, onPressEdit: null, editButtonAccessibilityLabel: null, editDisabled: null };
-  const tmp3 = importDefault(7139);
+  const tmp3 = contextDefault;
   if (result) {
     result = null != guildMember;
   }
@@ -57,33 +43,33 @@ function EditGuildProfileBanner(user) {
       let obj = { user: null, analyticsLocations: null, showRemoveBanner: null, removeText: null, onBannerChange: null };
       obj[0] = user;
       obj[1] = analyticsLocations;
-      const tmp13 = user(outer1_2[15])(outer1_2[14], outer1_2.paths);
+      const tmp13 = user(closure_1_2[15])(closure_1_2[14], closure_1_2.paths);
       let banner;
       if (banner != null) {
         banner = banner.banner;
       }
-      obj[2] = user(outer1_2[16]).showRemoveBanner(pendingBanner, banner);
-      const intl = tmp9(outer1_2[17]).intl;
-      obj[3] = intl.string(user(outer1_2[17]).t.jHlJNS);
+      obj[2] = user(closure_1_2[16]).showRemoveBanner(pendingBanner, banner);
+      const intl = tmp9(closure_1_2[17]).intl;
+      obj[3] = intl.string(user(closure_1_2[17]).t.jHlJNS);
       obj[4] = function onBannerChange(banner) {
-        let obj = outer1_0(outer1_2[18]);
+        let obj = closure_1_0(closure_1_2[18]);
         obj = { guildId: closure_1, banner };
         return obj.setPendingChanges(obj);
       };
       tmpResult.openLazy(tmp13, "Change Banner", obj);
-      const obj7 = user(outer1_2[16]);
+      const obj7 = user(closure_1_2[16]);
       const tmp17 = pendingBanner;
     } else {
       tmpResult = tmp(tmp2[19]);
       obj = { initialUpsellKey: null, analyticsLocation: null, analyticsLocations: null, analyticsProperties: null };
-      obj[0] = outer1_15.PREMIUM_GUILD_PROFILE;
-      const obj1 = { section: null, object: null };
-      obj1[0] = outer1_12.PREMIUM_GUILD_MEMBER_PROFILE;
-      obj1[1] = outer1_11.EDIT_GUILD_PROFILE_BANNER;
+      obj[0] = closure_1_15.PREMIUM_GUILD_PROFILE;
+      obj1 = { section: null, object: null };
+      obj1[0] = closure_1_12.PREMIUM_GUILD_MEMBER_PROFILE;
+      obj1[1] = closure_1_11.EDIT_GUILD_PROFILE_BANNER;
       obj[1] = obj1;
       obj[2] = analyticsLocations;
       const obj2 = { type: null };
-      obj2[0] = outer1_16.PREMIUM_GUILD_IDENTITY_MODAL;
+      obj2[0] = closure_1_16.PREMIUM_GUILD_IDENTITY_MODAL;
       obj[3] = obj2;
       const result = tmpResult.handleShowUpsellAlert(obj);
     }
@@ -91,8 +77,8 @@ function EditGuildProfileBanner(user) {
   let intl = tmp5(1236).intl;
   obj[8] = intl.string(user(1236).t["95hPAe"]);
   obj[9] = disabled;
-  obj[1] = closure_17(importDefault(14005), obj);
-  return closure_17(user(7139).AnalyticsLocationProvider, obj);
+  obj[1] = closure_17(ProfilePreviewButtonDefault, obj);
+  return closure_17(user(7177).AnalyticsLocationProvider, obj);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];
 ({ ScrollView: closure_6, View: error } = get_ActivityIndicator);
@@ -100,32 +86,9 @@ let closure_3 = ["nick", "bio", "guild_tag"];
 ({ DISPLAY_NAME_MAX_LENGTH: map1, PRONOUNS_MAX_LENGTH: closure_14, UpsellTypes: closure_15, AnalyticsPages } = ME);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
 let closure_19 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_CUSTOMIZE_PROFILE };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/GuildProfileEditForm.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/native/GuildProfileEditForm.tsx");
 
 export default function GuildProfileEditForm(currentUser) {
-  let avatarBackground;
-  let bio;
-  let containerBackground;
-  let errors;
-  let gradientFallbackBackground;
-  let gradientSecondaryBackground;
-  let guild_tag;
-  let isDisabled;
-  let nick;
-  let pendingAvatar;
-  let pendingAvatarDecoration;
-  let pendingBanner;
-  let pendingBio;
-  let pendingDisplayNameStyles;
-  let pendingNameplate;
-  let pendingNickname;
-  let pendingProfileEffect;
-  let pendingProfileFrame;
-  let pendingPronouns;
-  let pendingThemeColors;
-  let primaryColor;
-  let secondaryColor;
-  let theme;
   currentUser = currentUser.currentUser;
   let guild;
   let analyticsLocations;
@@ -142,7 +105,7 @@ export default function GuildProfileEditForm(currentUser) {
   obj = { insets, inputs: null, scrollViewRef: null };
   const items = [{ ref: ref1, offset: { type: "toRef", ref: ref2, extraOffset: PX_16 } }, { ref: ref2, offset: { type: "toRef", ref: ref3, extraOffset: PX_16 } }, ];
   obj = { ref: ref3, offset: null };
-  const obj1 = { type: "toValue", value: null };
+  obj1 = { type: "toValue", value: null };
   const tmp7 = guild(analyticsLocations[23])();
   obj1[1] = guild(analyticsLocations[25]).space.PX_64;
   obj[1] = obj1;
@@ -154,16 +117,16 @@ export default function GuildProfileEditForm(currentUser) {
   guild = tmp13.guild;
   ({ errors, isDisabled, pendingNickname, pendingThemeColors, pendingPronouns, pendingBio, pendingAvatar, pendingBanner, pendingAvatarDecoration, pendingProfileEffect, pendingProfileFrame, pendingNameplate, pendingDisplayNameStyles } = tmp13);
   let obj4 = currentUser(analyticsLocations[28]);
-  const items1 = [trackCommunicationDisabled];
+  const items1 = [closure_8];
   const stateFromStores = obj4.useStateFromStores(items1, () => {
     let member = null;
     if (null != guild) {
-      member = outer1_8.getMember(tmp.id, currentUser.id);
+      member = closure_1_8.getMember(tmp.id, currentUser.id);
     }
     return member;
   });
   let obj5 = currentUser(analyticsLocations[28]);
-  const items2 = [createUserWidgetFromServer];
+  const items2 = [closure_9];
   const stateFromStores1 = obj5.useStateFromStores(items2, () => {
     let guildMemberProfile = null;
     if (null != guild) {
@@ -171,7 +134,7 @@ export default function GuildProfileEditForm(currentUser) {
       if (tmp != null) {
         id = tmp.id;
       }
-      guildMemberProfile = outer1_9.getGuildMemberProfile(currentUser.id, id);
+      guildMemberProfile = closure_1_9.getGuildMemberProfile(currentUser.id, id);
     }
     return guildMemberProfile;
   });
@@ -537,8 +500,8 @@ export default function GuildProfileEditForm(currentUser) {
       obj32[2] = function onPress() {
         let obj = { analyticsLocation: null, analyticsLocations: null, premiumFeatureCardOrder: null };
         obj = {};
-        const merged = Object.assign(outer1_19);
-        obj.object = outer1_11.BUTTON_CTA;
+        const merged = Object.assign(closure_1_19);
+        obj.object = closure_1_11.BUTTON_CTA;
         obj[0] = obj;
         obj[1] = analyticsLocations;
         obj[2] = currentUser(analyticsLocations[53]).PremiumFeatureCardOrder.TIER_2_LEADING;

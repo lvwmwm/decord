@@ -5,7 +5,9 @@
 // Exports: addBit, hasBit, isSerializedUint8Array, isUint8Array, removeBit
 
 // Module 1376 (hasBit)
-let result = require("set").fileFinishedImporting("utils/Uint8ArrayUtils.tsx");
+import set from "set" /* 2 */;
+
+let result = set.fileFinishedImporting("utils/Uint8ArrayUtils.tsx");
 
 export const hasBit = function hasBit(dismissedContents, closure_0) {
   let tmp = 0 !== dismissedContents.length;

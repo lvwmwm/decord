@@ -1,27 +1,26 @@
-// Module ID: 12763
-// Function ID: 12764
+// Module ID: 12818
+// Function ID: 12819
 // Name: createFriendInvite
-// Dependencies: [17, 4030, 4371, 8169, 1236, 4219, 1435, 2]
+// Dependencies: [17, 4033, 4375, 8208, 1236, 4223, 1435, 2]
 // Exports: createFriendInvite
 
-// Module 12763 (createFriendInvite)
-import { Image } from "get ActivityIndicator";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import { InviteTypes } from "InviteSendStates";
+// Module 12818 (createFriendInvite)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import InviteSendStates from "InviteSendStates" /* 4375 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8208 */;
+import closure_4 from "markAllUserIdListsStale" /* 4033 */;
 
-const result = require("InviteSendStates").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/FriendInvite.tsx");
+const Image = get_ActivityIndicator.Image;
+const InviteTypes = InviteSendStates.InviteTypes;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/FriendInvite.tsx");
 
 export const createFriendInvite = function createFriendInvite(inviter) {
-  let acceptLabelDisabledBackgroundColor;
-  let acceptLabelDisabledColor;
-  let acceptLabelGreenBackgroundColor;
-  let acceptLabelGreenColor;
-  let baseColors;
-  let colors;
-  ({ colors, baseColors } = importDefault(8169)(arg3));
-  const intl = require(1236) /* getSystemLocale */.intl;
+  ({ colors, baseColors } = getEmbedThemeColorsDefault(arg3));
+  const intl = getSystemLocale.intl;
   const string = intl.string;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (arg1) {
     let str = string(t.eQyu1F);
     let tmp5 = tmp4;
@@ -35,7 +34,7 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   }
   let str3 = "";
   if (null != inviter.inviter) {
-    let tmpResult = tmp(4219);
+    let tmpResult = tmp(4223);
     str3 = tmpResult.getUserTag(inviter.inviter);
   }
   let isFriendResult = null != inviter.inviter;

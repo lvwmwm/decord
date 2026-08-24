@@ -1,11 +1,11 @@
-// Module ID: 12414
-// Function ID: 12415
+// Module ID: 12466
+// Function ID: 12467
 // Name: CustomLinkType
 // Dependencies: [32, 2]
 // Exports: decodeCustomActivityLink
 
-// Module 12414 (CustomLinkType)
-import _slicedToArray from "_slicedToArray";
+// Module 12466 (CustomLinkType)
+import closure_0 from "_slicedToArray" /* 32 */;
 
 let obj = { MANAGED: 0, [0]: "MANAGED", QUICK: 1, [1]: "QUICK" };
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/activities/utils/CustomActivityLinkUtils.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 15577
-// Function ID: 15578
+// Module ID: 15642
+// Function ID: 15643
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 15547, 676, 1388, 21, 4115, 9985, 15572, 1236, 3079, 15578, 9314, 2]
+// Dependencies: [32, 19, 15612, 676, 1388, 21, 4119, 10024, 15637, 1236, 3082, 15643, 9351, 2]
 // Exports: default
 
-// Module 15577 (FavoritesGuildCoachmarkIntro)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import withEqualityFn from "withEqualityFn";
-import { FAVORITES } from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { jsx } from "jsxProd";
+// Module 15642 (FavoritesGuildCoachmarkIntro)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "withEqualityFn" /* 15612 */;
+import { FAVORITES } from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let closure_9 = { code: "function FavoritesGuildCoachmarkIntroTsx1(){const{scrollPosition}=this.__closure;return scrollPosition.get()<=0;}" };
 let closure_10 = { code: "function FavoritesGuildCoachmarkIntroTsx2(atTop,wasAtTop){const{runOnJS,setScrolledToTop}=this.__closure;if(atTop===wasAtTop){return;}runOnJS(setScrolledToTop)(atTop);}" };
-let result = require("withEqualityFn").fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkIntro.tsx");
+let result = require("set").fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkIntro.tsx");
 
 export default function FavoritesGuildCoachmarkIntro(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
@@ -37,7 +37,7 @@ export default function FavoritesGuildCoachmarkIntro(markAsDismissed) {
   fn.__initData = closure_9;
   const fn2 = function p(arg0, arg1) {
     if (arg0 !== arg1) {
-      markAsDismissed(first[6]).runOnJS(c3)(arg0);
+      markAsDismissed(first[6]).runOnJS(closure_3)(arg0);
       const obj = markAsDismissed(first[6]);
     }
   };
@@ -48,13 +48,13 @@ export default function FavoritesGuildCoachmarkIntro(markAsDismissed) {
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
   const items = [markAsDismissed];
   callback = callback.useCallback(() => {
-    markAsDismissed(outer1_7.USER_DISMISS);
+    markAsDismissed(closure_1_7.USER_DISMISS);
   }, items);
   const items1 = [markAsDismissed];
   callback1 = callback.useCallback(() => {
     const result = markAsDismissed(first[7]).setNextFavoritesGuildViewSource("intro_dc");
-    scrollPosition(first[8])(outer1_6);
-    markAsDismissed(outer1_7.TAKE_ACTION);
+    scrollPosition(first[8])(closure_1_6);
+    markAsDismissed(closure_1_7.TAKE_ACTION);
   }, items1);
   const items2 = [first, callback, callback1];
   const memo = callback.useMemo(() => {

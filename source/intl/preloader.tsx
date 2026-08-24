@@ -1,11 +1,11 @@
-// Module ID: 2006
-// Function ID: 2007
+// Module ID: 2007
+// Function ID: 2008
 // Name: _preloadAllIntlMessageFiles
-// Dependencies: [5, 1236, 2007, 2009, 2041, 2073, 2105, 2107, 2109, 2141, 2173, 2205, 2237, 2269, 2271, 2303, 2335, 2367, 2399, 2431, 2433, 2435, 2437, 2469, 2501, 2533, 2565, 2597, 2629, 2661, 2693, 2725, 2757, 2789, 2821, 2853, 2885, 2917, 2949, 2981, 2983, 3015, 3047, 3079, 3111, 3143, 3175, 3207, 3239, 3271, 3303, 3335, 3337, 3369, 3401, 3403, 3435, 2]
+// Dependencies: [5, 1236, 2008, 2010, 2042, 2074, 2106, 2108, 2110, 2142, 2174, 2206, 2238, 2270, 2272, 2304, 2336, 2368, 2400, 2432, 2434, 2436, 2438, 2470, 2502, 2534, 2566, 2598, 2630, 2662, 2694, 2726, 2758, 2790, 2822, 2854, 2886, 2888, 2920, 2952, 2984, 2986, 3018, 3050, 3082, 3114, 3146, 3178, 3210, 3242, 3274, 3306, 3338, 3340, 3372, 3404, 3406, 3438, 2]
 // Exports: preloadAllIntlMessageFiles
 
-// Module 2006 (_preloadAllIntlMessageFiles)
-import messagesProxy from "messagesProxy";
+// Module 2007 (_preloadAllIntlMessageFiles)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
 function _preloadAllIntlMessageFiles() {
@@ -22,7 +22,7 @@ function _preloadAllIntlMessageFiles() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -36,7 +36,7 @@ function _preloadAllIntlMessageFiles() {
           obj[0] = arg1;
           return obj;
         } else {
-          const items = [v0(outer1_1[2])(outer1_1[1], outer1_1.paths), v0(outer1_1[2])(outer1_1[3], outer1_1.paths), v0(outer1_1[2])(outer1_1[4], outer1_1.paths), v0(outer1_1[2])(outer1_1[5], outer1_1.paths), v0(outer1_1[2])(outer1_1[6], outer1_1.paths), v0(outer1_1[2])(outer1_1[7], outer1_1.paths), v0(outer1_1[2])(outer1_1[8], outer1_1.paths), v0(outer1_1[2])(outer1_1[9], outer1_1.paths), v0(outer1_1[2])(outer1_1[10], outer1_1.paths), v0(outer1_1[2])(outer1_1[11], outer1_1.paths), v0(outer1_1[2])(outer1_1[12], outer1_1.paths), v0(outer1_1[2])(outer1_1[13], outer1_1.paths), v0(outer1_1[2])(outer1_1[14], outer1_1.paths), v0(outer1_1[2])(outer1_1[15], outer1_1.paths), v0(outer1_1[2])(outer1_1[16], outer1_1.paths), v0(outer1_1[2])(outer1_1[17], outer1_1.paths), v0(outer1_1[2])(outer1_1[18], outer1_1.paths), v0(outer1_1[2])(outer1_1[19], outer1_1.paths), v0(outer1_1[2])(outer1_1[20], outer1_1.paths), v0(outer1_1[2])(outer1_1[21], outer1_1.paths), v0(outer1_1[2])(outer1_1[22], outer1_1.paths), v0(outer1_1[2])(outer1_1[23], outer1_1.paths), v0(outer1_1[2])(outer1_1[24], outer1_1.paths), v0(outer1_1[2])(outer1_1[25], outer1_1.paths), v0(outer1_1[2])(outer1_1[26], outer1_1.paths), v0(outer1_1[2])(outer1_1[27], outer1_1.paths), v0(outer1_1[2])(outer1_1[28], outer1_1.paths), v0(outer1_1[2])(outer1_1[29], outer1_1.paths), v0(outer1_1[2])(outer1_1[30], outer1_1.paths), v0(outer1_1[2])(outer1_1[31], outer1_1.paths), v0(outer1_1[2])(outer1_1[32], outer1_1.paths), v0(outer1_1[2])(outer1_1[33], outer1_1.paths), v0(outer1_1[2])(outer1_1[34], outer1_1.paths), v0(outer1_1[2])(outer1_1[35], outer1_1.paths), v0(outer1_1[2])(outer1_1[36], outer1_1.paths), v0(outer1_1[2])(outer1_1[37], outer1_1.paths), v0(outer1_1[2])(outer1_1[38], outer1_1.paths), v0(outer1_1[2])(outer1_1[39], outer1_1.paths), v0(outer1_1[2])(outer1_1[40], outer1_1.paths), v0(outer1_1[2])(outer1_1[41], outer1_1.paths), v0(outer1_1[2])(outer1_1[42], outer1_1.paths), v0(outer1_1[2])(outer1_1[43], outer1_1.paths), v0(outer1_1[2])(outer1_1[44], outer1_1.paths), v0(outer1_1[2])(outer1_1[45], outer1_1.paths), v0(outer1_1[2])(outer1_1[46], outer1_1.paths), v0(outer1_1[2])(outer1_1[47], outer1_1.paths), v0(outer1_1[2])(outer1_1[48], outer1_1.paths), v0(outer1_1[2])(outer1_1[49], outer1_1.paths), v0(outer1_1[2])(outer1_1[50], outer1_1.paths), v0(outer1_1[2])(outer1_1[51], outer1_1.paths), v0(outer1_1[2])(outer1_1[52], outer1_1.paths), v0(outer1_1[2])(outer1_1[53], outer1_1.paths), v0(outer1_1[2])(outer1_1[54], outer1_1.paths), v0(outer1_1[2])(outer1_1[55], outer1_1.paths), v0(outer1_1[2])(outer1_1[56], outer1_1.paths)];
+          const items = [v0(closure_1_1[2])(closure_1_1[1], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[3], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[4], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[5], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[6], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[7], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[8], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[9], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[10], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[11], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[12], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[13], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[14], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[15], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[16], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[17], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[18], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[19], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[20], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[21], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[22], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[23], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[24], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[25], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[26], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[27], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[28], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[29], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[30], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[31], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[32], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[33], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[34], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[35], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[36], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[37], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[38], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[39], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[40], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[41], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[42], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[43], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[44], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[45], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[46], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[47], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[48], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[49], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[50], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[51], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[52], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[53], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[54], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[55], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[56], closure_1_1.paths), v0(closure_1_1[2])(closure_1_1[57], closure_1_1.paths)];
           v0 = 3;
           obj = { value: null, done: true };
           obj[0] = Promise.all(items);
@@ -48,7 +48,7 @@ function _preloadAllIntlMessageFiles() {
       }
     }
   });
-  const _preloadAllIntlMessageFiles = tmp;
+  closure_3 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -57,7 +57,7 @@ function _preloadAllIntlMessageFiles() {
   }
   return applyArgumentsResult;
 }
-const result = require("asyncRequireImpl").fileFinishedImporting("intl/preloader.tsx");
+const result = require("set").fileFinishedImporting("intl/preloader.tsx");
 
 export const preloadAllIntlMessageFiles = function preloadAllIntlMessageFiles() {
   const self = this;

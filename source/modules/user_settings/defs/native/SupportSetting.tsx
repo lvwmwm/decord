@@ -1,31 +1,35 @@
-// Module ID: 14844
-// Function ID: 14845
+// Module ID: 14908
+// Function ID: 14909
 // Name: pressable
-// Dependencies: [10669, 1236, 10415, 14845, 2]
+// Dependencies: [10708, 1236, 10454, 14909, 2]
 
-// Module 14844 (pressable)
-import createToggle from "createToggle";
+// Module 14908 (pressable)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 10454 */;
+import _emailSupport from "_emailSupport" /* 14909 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["Yl/Riu"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["Yl/Riu"]);
   },
   parent: null,
-  IconComponent: require("CircleQuestionIcon").CircleQuestionIcon,
-  onPress: require("_emailSupport").emailSupport,
+  IconComponent: CircleQuestionIcon.CircleQuestionIcon,
+  onPress: _emailSupport.emailSupport,
   withArrow: true
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["Yl/Riu"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["Yl/Riu"]);
   },
   parent: null,
-  IconComponent: require("CircleQuestionIcon").CircleQuestionIcon,
-  onPress: require("_emailSupport").emailSupport,
+  IconComponent: CircleQuestionIcon.CircleQuestionIcon,
+  onPress: _emailSupport.emailSupport,
   withArrow: true
 };
-const result = require("CircleQuestionIcon").fileFinishedImporting("modules/user_settings/defs/native/SupportSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/SupportSetting.tsx");
 
 export default pressable;

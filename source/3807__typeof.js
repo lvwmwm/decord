@@ -1,10 +1,10 @@
 // Module ID: 3807
 // Function ID: 3808
 // Name: _typeof
-// Dependencies: [3780, 3781, 3778]
+// Dependencies: [3783, 3784, 3781]
 
 // Module 3807 (_typeof)
-import { Parser } from "Parser";
+import Parser2 from "Parser" /* 3781 */;
 
 let _createSuperInternal = require;
 let closure_1 = dependencyMap;
@@ -12,9 +12,9 @@ function _typeof(arg0) {
   if (typeof Symbol === "function") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "symbol") {
-      function _typeof(arg0) {
+      _typeof = function _typeof(arg0) {
         return typeof arg0;
-      }
+      };
     }
     return _typeof(arg0);
   }
@@ -33,20 +33,20 @@ function _typeof(arg0) {
     str = typeof arg0;
   };
 }
-function _setPrototypeOf(Hour1To24Parser, Parser) {
-  let _setPrototypeOf = Object.setPrototypeOf;
+function _setPrototypeOf(Hour1to12Parser, Parser) {
+  _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(Hour1To24Parser, Parser) {
-      Hour1To24Parser.__proto__ = Parser;
-      return Hour1To24Parser;
+    _setPrototypeOf = function _setPrototypeOf(Hour1to12Parser, Parser) {
+      Hour1to12Parser.__proto__ = Parser;
+      return Hour1to12Parser;
     };
   }
-  return _setPrototypeOf(Hour1To24Parser, Parser);
+  return _setPrototypeOf(Hour1to12Parser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
     let _Object = Object;
-    let _getPrototypeOf = Object.getPrototypeOf;
+    _getPrototypeOf = Object.getPrototypeOf;
   } else {
     _getPrototypeOf = function _getPrototypeOf(arg0) {
       let __proto__ = arg0.__proto__;
@@ -59,10 +59,11 @@ function _getPrototypeOf(arg0) {
   }
   return _getPrototypeOf(arg0);
 }
+const Parser = Parser2.Parser;
 _createSuperInternal = undefined;
-class Hour1To24Parser {
+class Hour1to12Parser {
   constructor() {
-    if (this instanceof c1) {
+    if (this instanceof closure_1) {
       length = arguments.length;
       _Array = Array;
       tmp6 = new.target;
@@ -110,7 +111,7 @@ class Hour1To24Parser {
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
-          items1 = ["a", "b", "h", "H", "K", "t", "T"];
+          items1 = ["H", "K", "k", "t", "T"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
@@ -134,7 +135,7 @@ class Hour1To24Parser {
     }
   }
 }
-closure_1 = Hour1To24Parser;
+closure_1 = Hour1to12Parser;
 if (typeof Parser !== "function") {
   if (null !== Parser) {
     let _TypeError = TypeError;
@@ -146,12 +147,12 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-let obj = { value: Hour1To24Parser, writable: true, configurable: true };
-Hour1To24Parser.prototype = Object.create(prototype, { constructor: obj });
+let obj = { value: Hour1to12Parser, writable: true, configurable: true };
+Hour1to12Parser.prototype = Object.create(prototype, { constructor: obj });
 if (Parser) {
-  _setPrototypeOf(Hour1To24Parser, Parser);
+  _setPrototypeOf(Hour1to12Parser, Parser);
 }
-_createSuperInternal = Hour1To24Parser;
+_createSuperInternal = Hour1to12Parser;
 let num = 0;
 closure_1 = (function _isNativeReflectConstruct() {
   if (typeof Reflect !== "undefined") {
@@ -212,12 +213,12 @@ _createSuperInternal = function _createSuperInternal() {
 obj = {
   key: "parse",
   value: function parse(arg0, arg1, ordinalNumber) {
-    if ("k" === arg1) {
-      return _createSuperInternal(3780).parseNumericPattern(_createSuperInternal(3781).numericPatterns.hour24h, arg0);
-    } else if ("ko" === arg1) {
+    if ("h" === arg1) {
+      return _createSuperInternal(3783).parseNumericPattern(_createSuperInternal(3784).numericPatterns.hour12h, arg0);
+    } else if ("ho" === arg1) {
       return ordinalNumber.ordinalNumber(arg0, { unit: "hour" });
     } else {
-      return _createSuperInternal(3780).parseNDigits(arg1.length, arg0);
+      return _createSuperInternal(3783).parseNDigits(arg1.length, arg0);
     }
   }
 };
@@ -228,20 +229,27 @@ let items = [
     value: function validate(arg0, arg1) {
       let tmp = arg1 >= 1;
       if (tmp) {
-        tmp = arg1 <= 24;
+        tmp = arg1 <= 12;
       }
       return tmp;
     }
   },
   {
     key: "set",
-    value: function set(setUTCHours) {
-      let result = arg2;
-      if (arg2 <= 24) {
-        result = arg2 % 24;
+    value: function set(getUTCHours) {
+      const tmp = getUTCHours.getUTCHours() >= 12;
+      if (tmp) {
+        if (arg2 < 12) {
+          getUTCHours.setUTCHours(arg2 + 12, 0, 0, 0);
+        }
+        return getUTCHours;
       }
-      setUTCHours.setUTCHours(result, 0, 0, 0);
-      return setUTCHours;
+      if (!tmp) {
+        if (12 === arg2) {
+          getUTCHours.setUTCHours(0, 0, 0, 0);
+        }
+      }
+      getUTCHours.setUTCHours(arg2, 0, 0, 0);
     }
   }
 ];
@@ -264,4 +272,4 @@ if (0 < items.length) {
   } while (num < items.length);
 }
 
-export { Hour1To24Parser };
+export { Hour1to12Parser };

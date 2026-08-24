@@ -1,17 +1,18 @@
-// Module ID: 14591
-// Function ID: 14592
+// Module ID: 14659
+// Function ID: 14660
 // Name: componentDidMount
-// Dependencies: [19, 17, 21, 4661, 4104, 5446, 2]
+// Dependencies: [19, 17, 21, 4668, 4107, 5451, 2]
 
-// Module 14591 (componentDidMount)
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import { PureComponent } from "noop";
-import importAllResult from "noop";
+// Module 14659 (componentDidMount)
+import ActivityIndicator from "ActivityIndicator" /* 5451 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let closure_4 = createCacheKey.createLegacyClassComponentStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" } });
+const PureComponent = importAllResult.PureComponent;
 class UntouchableAlert extends PureComponent {
 }
 const prototype = UntouchableAlert.prototype;
@@ -40,12 +41,12 @@ prototype["render"] = function render() {
   if (this.props.loading) {
     const obj = { style: null, children: null };
     obj[0] = tmp.container;
-    obj[1] = jsx(require(5446) /* ActivityIndicator */.ActivityIndicator, {});
+    obj[1] = jsx(ActivityIndicator.ActivityIndicator, {});
     tmp2 = <View style={null}>{null}</View>;
   }
   return tmp2;
 };
 UntouchableAlert.contextType = require("ManaContext").ThemeContext;
-const result = require("jsxProd").fileFinishedImporting("components_native/common/UntouchableAlert.tsx");
+const result = require("set").fileFinishedImporting("components_native/common/UntouchableAlert.tsx");
 
 export default UntouchableAlert;

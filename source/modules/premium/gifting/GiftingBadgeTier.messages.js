@@ -1,20 +1,22 @@
-// Module ID: 2433
-// Function ID: 2434
+// Module ID: 2434
+// Function ID: 2435
 // Name: messagesProxy
-// Dependencies: [1239, 2434, 1274, 2]
+// Dependencies: [1239, 2435, 1274, 2]
 
-// Module 2433 (messagesProxy)
-import module_1274 from "module_1274";
-import module_1274 from "module_1274";
+// Module 2434 (messagesProxy)
+import set from "set" /* 2 */;
+import loadJsonAsset from "loadJsonAsset" /* 1239 */;
+import registerAsset from "registerAsset" /* 2435 */;
+import module_1274 from "module_1274" /* 1274 */;
 
 const loader = module_1274.createLoader({
   () => {
-    const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(2434) /* registerAsset */);
+    const jsonAsset = loadJsonAsset.loadJsonAsset(registerAsset);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");
 const messagesProxy = module_1274.makeMessagesProxy(loader);
-const result = require("module_1274").fileFinishedImporting("modules/premium/gifting/GiftingBadgeTier.messages.js");
+const result = set.fileFinishedImporting("modules/premium/gifting/GiftingBadgeTier.messages.js");
 
 export default messagesProxy;
 export const messagesLoader = loader;

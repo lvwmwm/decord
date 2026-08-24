@@ -1,30 +1,33 @@
-// Module ID: 11969
-// Function ID: 11970
+// Module ID: 12018
+// Function ID: 12019
 // Name: OrbCheckoutAmountTag
-// Dependencies: [17, 21, 4661, 712, 9238, 4734, 1236, 2]
+// Dependencies: [17, 21, 4668, 712, 9275, 4739, 1236, 2]
 // Exports: default
 
-// Module 11969 (OrbCheckoutAmountTag)
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12018 (OrbCheckoutAmountTag)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import OrbsIcon from "OrbsIcon" /* 9275 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
+const View = get_ActivityIndicator.View;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let obj = { orbAmountTag: null, orbsIcon: null };
-obj = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+obj = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
 obj[0] = obj;
 obj[1] = { width: 14, height: 14 };
 let closure_5 = createCacheKey.createStyles(obj);
-const result = require("createCacheKey").fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutAmountTag.tsx");
+const result = set.fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutAmountTag.tsx");
 
 export default function OrbCheckoutAmountTag(orbAmount) {
   orbAmount = orbAmount.orbAmount;
   const tmp = callback2();
   let obj = { style: tmp.orbAmountTag, children: null };
   obj = { size: "custom", color: "icon-strong", style: tmp.orbsIcon };
-  const items = [callback(require(9238) /* OrbsIcon */.OrbsIcon, obj), ];
+  const items = [callback(OrbsIcon.OrbsIcon, obj), ];
   if (null == orbAmount) {
     const intl2 = tmp5(1236).intl;
     let stringResult = intl2.string(tmp5(1236).t.pfChQr);
@@ -34,13 +37,13 @@ export default function OrbCheckoutAmountTag(orbAmount) {
     obj[0] = orbAmount;
     stringResult = intl.formatToPlainString(tmp5(1236).t.W4DfeF, obj);
   }
-  const obj1 = { variant: "text-md/semibold", accessibilityLabel: stringResult, children: null };
+  obj1 = { variant: "text-md/semibold", accessibilityLabel: stringResult, children: null };
   let str = "--";
   if (null != orbAmount) {
     str = orbAmount;
   }
   obj1[2] = str;
-  items[1] = callback(require(4734) /* Text */.Text, obj1);
+  items[1] = callback(Text.Text, obj1);
   obj[1] = items;
   return closure_4(View, obj);
 };

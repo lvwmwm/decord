@@ -1,21 +1,19 @@
-// Module ID: 10173
-// Function ID: 10174
+// Module ID: 10212
+// Function ID: 10213
 // Name: PostComposerInputs
 // Dependencies: [32, 19, 2]
 // Exports: useFocusHandlers
 
-// Module 10173 (PostComposerInputs)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 10212 (PostComposerInputs)
+import closure_0 from "_slicedToArray" /* 32 */;
+import closure_1 from "noop" /* 19 */;
 
 const obj = { TITLE: 0, [0]: "TITLE", CONTENT: 1, [1]: "CONTENT" };
 const result = require("set").fileFinishedImporting("modules/forums/native/composer/hooks/useFocusHandlers.tsx");
 
 export const PostComposerInputs = obj;
 export const useFocusHandlers = function useFocusHandlers(arg0) {
-  let _slicedToArray;
-  let noop;
-  ({ titleInput: _slicedToArray, contentInput: noop } = arg0);
+  ({ titleInput: closure_0, contentInput: closure_1 } = arg0);
   let first;
   const tmp = callback(React.useState(first.TITLE), 2);
   first = tmp[0];

@@ -4,9 +4,9 @@
 // Dependencies: []
 
 // Module 1013 (isHardCrash)
-arg5.isHardCrash = function isHardCrash(outer1_0) {
-  let str = outer1_0;
-  if (typeof outer1_0 !== "string") {
+arg5.isHardCrash = function isHardCrash(closure_1_0) {
+  let str = closure_1_0;
+  if (typeof closure_1_0 !== "string") {
     if ("exception" in str) {
       const exception = str.exception;
       let values;

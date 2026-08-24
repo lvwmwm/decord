@@ -1,17 +1,18 @@
-// Module ID: 12686
-// Function ID: 12687
+// Module ID: 12740
+// Function ID: 12741
 // Name: ConversationsAnalytics
 // Dependencies: [1391, 676, 698, 2]
 
-// Module 12686 (ConversationsAnalytics)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { AnalyticEvents } from "ME";
+// Module 12740 (ConversationsAnalytics)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const result = require("expandEventProperties").fileFinishedImporting("modules/conversations/ConversationsAnalytics.tsx");
+const result = require("set").fileFinishedImporting("modules/conversations/ConversationsAnalytics.tsx");
 
 export const ConversationsAnalytics = {
   trackEntrypointImpression(channelId) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     channelId = channelId.channelId;
     const channel = store.getChannel(channelId);
     obj = { channel_id: channelId, channel_type: null, guild_id: null };
@@ -37,7 +38,7 @@ export const ConversationsAnalytics = {
     obj.track(AnalyticEvents.TOPICAL_NAV_ENTRYPOINT_IMPRESSION, obj);
   },
   trackTopicsUnitImpression(channelId) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     channelId = channelId.channelId;
     const channel = store.getChannel(channelId);
     obj = { channel_id: channelId, channel_type: null, guild_id: null };
@@ -63,7 +64,7 @@ export const ConversationsAnalytics = {
     obj.track(AnalyticEvents.TOPICAL_NAV_TOPICS_UNIT_IMPRESSION, obj);
   },
   trackPreviewImpression(channelId) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     channelId = channelId.channelId;
     const channel = store.getChannel(channelId);
     obj = { channel_id: channelId, channel_type: null, guild_id: null };
@@ -89,7 +90,7 @@ export const ConversationsAnalytics = {
     obj.track(AnalyticEvents.TOPICAL_NAV_PREVIEW_IMPRESSION, obj);
   },
   trackTopicsUnitClicked(channelId) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     channelId = channelId.channelId;
     const channel = store.getChannel(channelId);
     obj = { channel_id: channelId, channel_type: null, guild_id: null };
@@ -115,7 +116,7 @@ export const ConversationsAnalytics = {
     obj.track(AnalyticEvents.TOPICAL_NAV_TOPICS_UNIT_CLICKED, obj);
   },
   trackFocusModeImpression(channelId) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     channelId = channelId.channelId;
     const channel = store.getChannel(channelId);
     obj = { channel_id: channelId, channel_type: null, guild_id: null };
@@ -141,7 +142,7 @@ export const ConversationsAnalytics = {
     obj.track(AnalyticEvents.TOPICAL_NAV_FOCUS_MODE_IMPRESSION, obj);
   },
   trackFocusModeDismissed(channelId) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     channelId = channelId.channelId;
     const channel = store.getChannel(channelId);
     obj = { channel_id: channelId, channel_type: null, guild_id: null };
@@ -167,7 +168,7 @@ export const ConversationsAnalytics = {
     obj.track(AnalyticEvents.TOPICAL_NAV_FOCUS_MODE_DISMISSED, obj);
   },
   trackThumbsClicked(channelId) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     channelId = channelId.channelId;
     const channel = store.getChannel(channelId);
     obj = { channel_id: channelId, channel_type: null, guild_id: null };
@@ -193,7 +194,7 @@ export const ConversationsAnalytics = {
     obj.track(AnalyticEvents.TOPICAL_NAV_THUMBS_CLICKED, obj);
   },
   trackThumbsDownReasonSelected(channelId) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     channelId = channelId.channelId;
     const channel = store.getChannel(channelId);
     obj = { channel_id: channelId, channel_type: null, guild_id: null };

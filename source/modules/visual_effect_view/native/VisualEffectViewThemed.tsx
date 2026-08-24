@@ -1,24 +1,27 @@
-// Module ID: 8986
-// Function ID: 8987
-// Dependencies: [19, 21, 4310, 1363, 4725, 2]
+// Module ID: 9023
+// Function ID: 9024
+// Dependencies: [19, 21, 4314, 1363, 4730, 2]
 
-// Module 8986
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 9023
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import isBlurDisabledDefault from "isBlurDisabled" /* 4730 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-const forwardRefResult = require("noop").forwardRef(function VisualEffectViewThemed(arg0, ref) {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+require = arg1;
+const forwardRefResult = importAllResult.forwardRef(function VisualEffectViewThemed(arg0, ref) {
+  let obj = AccessibilityAnnouncer;
   let str = "dark";
   if (obj.isThemeLight(tmp3)) {
     str = "light";
   }
   obj = { ref, blurTheme: str };
   const tmp = importDefault;
-  tmp3 = importDefault(4310)();
+  tmp3 = useThemeDefault();
   const merged = Object.assign(arg0);
-  return jsx(importDefault(4725), { ref, blurTheme: str });
+  return jsx(isBlurDisabledDefault, { ref, blurTheme: str });
 });
-const result = require("useTheme").fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewThemed.tsx");
+const result = require("set").fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewThemed.tsx");
 
 export default forwardRefResult;

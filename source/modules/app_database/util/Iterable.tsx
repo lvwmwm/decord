@@ -1,10 +1,12 @@
-// Module ID: 5073
-// Function ID: 5074
+// Module ID: 5078
+// Function ID: 5079
 // Name: next
 // Dependencies: [2]
 // Exports: chain
 
-// Module 5073 (next)
+// Module 5078 (next)
+import set from "set" /* 2 */;
+
 class Chained {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -29,7 +31,7 @@ prototype["next"] = function next() {
   }
   return { done: true, value: "a" };
 };
-const result = require("set").fileFinishedImporting("modules/app_database/util/Iterable.tsx");
+const result = set.fileFinishedImporting("modules/app_database/util/Iterable.tsx");
 
 export const chain = function chain() {
   const items = [...arguments];

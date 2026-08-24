@@ -1,10 +1,13 @@
-// Module ID: 4630
-// Function ID: 4631
+// Module ID: 4636
+// Function ID: 4637
 // Name: sumBytes
-// Dependencies: [4631, 2]
+// Dependencies: [4637, 2]
 // Exports: default
 
-// Module 4630 (sumBytes)
+// Module 4636 (sumBytes)
+import set from "set" /* 2 */;
+import formatSinkWantStat from "formatSinkWantStat" /* 4637 */;
+
 function sumBytes(rtpStats) {
   let num;
   if (rtpStats != null) {
@@ -223,9 +226,9 @@ function transformOutboundVideoStats(substreams, id) {
       }
       return arg0 + (sum + num4 + num);
     }, 0);
-    obj[2] = require(4631) /* formatSinkWantStat */.formatSinkWantStat(id, found.ssrc, true);
-    const obj2 = require(4631) /* formatSinkWantStat */;
-    obj[3] = require(4631) /* formatSinkWantStat */.formatSinkWantAsInt(id, found.ssrc);
+    obj[2] = formatSinkWantStat.formatSinkWantStat(id, found.ssrc, true);
+    const obj2 = formatSinkWantStat;
+    obj[3] = formatSinkWantStat.formatSinkWantAsInt(id, found.ssrc);
     obj = { id: null, name: null };
     ({ codecPayloadType: obj4[0], codecName: obj4[1] } = substreams);
     obj[4] = obj;
@@ -434,13 +437,13 @@ function transformInboundVideoStats(height, id, id) {
   let obj = { type: "video", ssrc: height.ssrc, sinkWant: null, sinkWantAsInt: null, sinkWantLocal: null, sinkWantLocalAsInt: null, codec: null, bytesReceived: null, packetsReceived: null, packetsLost: null, fractionLost: null, bitrate: null, jitterBuffer: null, currentDelay: null, targetDelay: null, minPlayoutDelay: null, renderDelay: null, averageDecodeTime: null, totalDecodeTime: null, resolution: null, decoderImplementationName: null, framesDecoded: null, framesDropped: null, framesDecodeErrors: null, framesReceived: null, networkFramesDropped: null, keyFramesDecoded: null, frameRateDecode: null, frameRateNetwork: null, frameRateRender: null, firCount: null, nackCount: null, pliCount: null, qpSum: null, freezeCount: null, pauseCount: null, totalFreezesDuration: null, totalPausesDuration: null, totalFramesDuration: null, sumOfSquaredFramesDurations: null, passthroughCount: null, decryptSuccessCount: null, decryptFailureCount: null, decryptDuration: null, decryptAttempts: null, decryptMissingKeyCount: null, decryptInvalidNonceCount: null, minResolutionWidth: null, minResolutionHeight: null };
   const sum1 = sum + num4 + num;
   const tmp = sumBytes(height.rtpStats);
-  obj[2] = require(4631) /* formatSinkWantStat */.formatSinkWantStat(id, height.ssrc, true);
-  const obj2 = require(4631) /* formatSinkWantStat */;
-  obj[3] = require(4631) /* formatSinkWantStat */.formatSinkWantAsInt(id, height.ssrc);
-  const obj3 = require(4631) /* formatSinkWantStat */;
-  obj[4] = require(4631) /* formatSinkWantStat */.formatSinkWantStat(id, height.ssrc, true);
-  const obj4 = require(4631) /* formatSinkWantStat */;
-  obj[5] = require(4631) /* formatSinkWantStat */.formatSinkWantAsInt(id, height.ssrc);
+  obj[2] = formatSinkWantStat.formatSinkWantStat(id, height.ssrc, true);
+  const obj2 = formatSinkWantStat;
+  obj[3] = formatSinkWantStat.formatSinkWantAsInt(id, height.ssrc);
+  const obj3 = formatSinkWantStat;
+  obj[4] = formatSinkWantStat.formatSinkWantStat(id, height.ssrc, true);
+  const obj4 = formatSinkWantStat;
+  obj[5] = formatSinkWantStat.formatSinkWantAsInt(id, height.ssrc);
   obj[6] = { id: height.codecPayloadType, name: height.codecName };
   obj[7] = tmp;
   obj[8] = sum1;
@@ -476,17 +479,13 @@ function transformInboundVideoStats(height, id, id) {
   return obj;
 }
 let c2 = 1000;
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/transformStats.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/native/transformStats.tsx");
 
 export default function transformStats(mediaEngineConnectionId, str, id) {
-  let audio;
-  let inboundBitrateEstimate;
-  let video;
-  let videos;
   const _require = id;
-  const dependencyMap = arg3;
-  let c2 = null;
-  let closure_3 = null;
+  dependencyMap = arg3;
+  c2 = null;
+  closure_3 = null;
   let parsed = str;
   if (typeof str === "string") {
     const _JSON = JSON;
@@ -503,9 +502,9 @@ export default function transformStats(mediaEngineConnectionId, str, id) {
       closure_3 = num + audio.bytesSent;
       let obj = { type: "audio", ssrc: null, sinkWant: null, sinkWantAsInt: null, codec: null, bytesSent: null, packetsSent: null, packetsLost: null, fractionLost: null, audioLevel: null, bitrate: null, bitrateTarget: null, audioDetected: null, framesCaptured: null, framesRendered: null, noiseCancellerFrames: null, noiseCancellerProcessTime: null, voiceActivityDetectorProcessTime: null, passthroughCount: null, encryptSuccessCount: null, encryptFailureCount: null, encryptDuration: null, encryptAttempts: null, encryptMaxAttempts: null, encryptMissingKeyCount: null, pttQueueLatencyMicrosSamples: null, sampleRateMismatchPercent: null, currentSampleRate: null };
       obj[1] = audio.ssrc;
-      let obj1 = _require(4631);
+      obj1 = _require(4637);
       obj[2] = obj1.formatSinkWantStat(id, audio.ssrc, false);
-      let obj2 = _require(4631);
+      let obj2 = _require(4637);
       obj[3] = obj2.formatSinkWantAsInt(id, audio.ssrc);
       obj = { id: null, name: null };
       ({ codecPayloadType: obj4[0], codecName: obj4[1] } = audio);
@@ -546,10 +545,6 @@ export default function transformStats(mediaEngineConnectionId, str, id) {
   if (null != parsed.inbound) {
     const inbound = parsed.inbound;
     const item1 = inbound.forEach((id) => {
-      let audio;
-      let playout;
-      let video;
-      let videos;
       id = id.id;
       ({ audio, video, videos, playout } = id);
       obj[id] = [];
@@ -557,17 +552,17 @@ export default function transformStats(mediaEngineConnectionId, str, id) {
         if (null != videos) {
           const item = videos.forEach((rtpStats) => {
             let num = closure_2;
-            const tmp = outer2_6(rtpStats, id, playout, playout);
+            const tmp = closure_2_6(rtpStats, id, playout, playout);
             if (closure_2 == null) {
               num = 0;
             }
             closure_2 = num + callback(rtpStats.rtpStats);
-            let arr = outer1_5[id];
+            let arr = closure_1_5[id];
             arr = arr.push(tmp);
           });
         } else if (null != video) {
           let num7 = closure_2;
-          const tmp14 = outer1_6(video, id, playout, playout);
+          const tmp14 = closure_1_6(video, id, playout, playout);
           if (closure_2 == null) {
             num7 = 0;
           }
@@ -585,9 +580,9 @@ export default function transformStats(mediaEngineConnectionId, str, id) {
         arr = tmp[id];
         obj = { type: "audio", ssrc: null, sinkWant: null, sinkWantAsInt: null, codec: null, bytesReceived: null, packetsReceived: null, packetsLost: null, fractionLost: null, fecPacketsReceived: null, fecPacketsDiscarded: null, audioLevel: null, audioDetected: null, currentSampleRate: null, jitter: null, jitterBuffer: null, jitterBufferPreferred: null, decodingCNG: null, decodingMutedOutput: null, decodingNormal: null, decodingPLC: null, decodingPLCCNG: null, nackCount: null, accelerateRate: null, expandRate: null, preemptiveExpandRate: null, speechExpandRate: null, secondaryDecodedRate: null, opSilence: null, opNormal: null, opMerge: null, opExpand: null, opAccelerate: null, opPreemptiveExpand: null, opCNG: null, delayEstimate: null, passthroughCount: null, decryptSuccessCount: null, decryptFailureCount: null, decryptDuration: null, decryptAttempts: null, decryptMissingKeyCount: null, decryptInvalidNonceCount: null };
         obj[1] = audio.ssrc;
-        let obj2 = id(4631);
+        let obj2 = id(4637);
         obj[2] = obj2.formatSinkWantStat(id, audio.ssrc, false);
-        obj[3] = id(4631).formatSinkWantAsInt(id, audio.ssrc);
+        obj[3] = id(4637).formatSinkWantAsInt(id, audio.ssrc);
         obj = { id: null, name: null };
         ({ codecPayloadType: obj4[0], codecName: obj4[1] } = audio);
         obj[4] = obj;
@@ -605,13 +600,13 @@ export default function transformStats(mediaEngineConnectionId, str, id) {
         if (null != playout) {
           ({ audioJitterBuffer: obj6[0], audioJitterBufferSamples: obj6[1], audioJitterDelay: obj6[2], audioJitterDelaySamples: obj6[3], audioJitterTarget: obj6[4], audioJitterTargetSamples: obj6[5], audioPlayoutUnderruns: obj6[6], relativeReceptionDelay: obj6[7], relativePlayoutDelay: obj6[8] } = playout);
           obj2 = items({ audioJitterBuffer: null, audioJitterBufferSamples: null, audioJitterDelay: null, audioJitterDelaySamples: null, audioJitterTarget: null, audioJitterTargetSamples: null, audioPlayoutUnderruns: null, relativeReceptionDelay: null, relativePlayoutDelay: null });
-          const obj1 = { audioJitterBuffer: null, audioJitterBufferSamples: null, audioJitterDelay: null, audioJitterDelaySamples: null, audioJitterTarget: null, audioJitterTargetSamples: null, audioPlayoutUnderruns: null, relativeReceptionDelay: null, relativePlayoutDelay: null };
+          obj1 = { audioJitterBuffer: null, audioJitterBufferSamples: null, audioJitterDelay: null, audioJitterDelaySamples: null, audioJitterTarget: null, audioJitterTargetSamples: null, audioPlayoutUnderruns: null, relativeReceptionDelay: null, relativePlayoutDelay: null };
         } else {
           obj2 = {};
         }
         const merged = Object.assign(obj2);
         obj = arr.push(obj);
-        const obj3 = id(4631);
+        const obj3 = id(4637);
       }
     });
   }

@@ -1,29 +1,29 @@
-// Module ID: 11282
-// Function ID: 11283
+// Module ID: 11333
+// Function ID: 11334
 // Name: CommandRowIcon
-// Dependencies: [5, 32, 19, 21, 11204, 8447, 11165, 5248, 6297, 4745, 1236, 4320, 2]
+// Dependencies: [5, 32, 19, 21, 11255, 8486, 11217, 5253, 6328, 4750, 1236, 4324, 2]
 // Exports: default, useCommandRowSend
 
-// Module 11282 (CommandRowIcon)
-import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 11333 (CommandRowIcon)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("noop").fileFinishedImporting("modules/app_launcher/native/base_components/CommandRowButton.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/base_components/CommandRowButton.tsx");
 
 export default function CommandRowIcon(hasOptions) {
   if (hasOptions.hasOptions) {
-    let tmp3Result = tmp3(tmp4(6297).TableRowArrow, {});
+    let tmp3Result = tmp3(tmp4(6328).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: null, onPress: null, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: null };
     const intl = tmp4(1236).intl;
     obj[1] = intl.string(tmp4(1236).t.TXNS7S);
     obj[2] = tmp2;
-    obj[3] = tmp3(tmp4(4320).SendMessageIcon, { size: "sm" });
+    obj[3] = tmp3(tmp4(4324).SendMessageIcon, { size: "sm" });
     obj[7] = tmp;
-    tmp3Result = tmp3(tmp4(4745).Button, obj);
+    tmp3Result = tmp3(tmp4(4750).Button, obj);
   }
   return tmp3Result;
 };
@@ -33,7 +33,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
   const onExecuteCommand = command.onExecuteCommand;
   const tryExecuteCommand = command.tryExecuteCommand;
   const sectionName = command.sectionName;
-  let closure_5;
+  closure_5 = undefined;
   let commandContext;
   let callback;
   let options = command.options;
@@ -57,7 +57,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -72,19 +72,19 @@ export const useCommandRowSend = function useCommandRowSend(command) {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_0 = tmp3;
-            outer1_5(true);
+            closure_0 = tmp3;
+            closure_1_5(true);
             if (dependencyMap != null) {
               dependencyMap();
             }
-            let c3 = 1;
-            let obj1 = outer1_0(8447);
+            c3 = 1;
+            obj1 = closure_1_0(8486);
             obj1 = { command: null, optionValues: null, context: null, sectionName: null, commandOrigin: null };
-            obj1[0] = outer1_0;
-            obj1[1] = outer1_0(11165).parseOptionValuesForSend(outer1_6.channel, outer1_0, {});
-            obj1[2] = outer1_6;
+            obj1[0] = closure_1_0;
+            obj1[1] = closure_1_0(11217).parseOptionValuesForSend(closure_1_6.channel, closure_1_0, {});
+            obj1[2] = closure_1_6;
             obj1[3] = c4;
-            obj1[4] = outer1_0(5248).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
+            obj1[4] = closure_1_0(5253).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
             dependencyMap = 2;
             c4 = 1;
             const obj2 = { value: null, done: false };
@@ -112,7 +112,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
           c3 = 0;
           callback2(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp27) {
         callback = tmp27;

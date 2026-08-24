@@ -4,13 +4,14 @@
 // Dependencies: [32, 41, 42]
 
 // Module 227 (URLSearchParams)
-import URLSearchParams from "_slicedToArray";
-import _classCallCheck from "_classCallCheck";
+import _createClassDefault from "_createClass" /* 42 */;
+import URLSearchParams from "_slicedToArray" /* 32 */;
+import closure_1 from "_classCallCheck" /* 41 */;
 
 class URLSearchParams {
   constructor(arg0) {
     self = this;
-    tmp = outer1_1(this, self);
+    tmp = closure_1(this, self);
     map = new Map();
     this._searchParams = map;
     if (null !== global) {
@@ -30,8 +31,6 @@ class URLSearchParams {
         _Array = Array;
         if (Array.isArray(global)) {
           item1 = global.forEach((arg0) => {
-            let tmp;
-            let tmp2;
             [tmp, tmp2] = arg0;
             return self.append(tmp, tmp2);
           });
@@ -39,8 +38,6 @@ class URLSearchParams {
           _Object = Object;
           entries = Object.entries(global);
           item2 = entries.forEach((arg0) => {
-            let tmp;
-            let tmp2;
             [tmp, tmp2] = arg0;
             return self.append(tmp, tmp2);
           });
@@ -61,8 +58,6 @@ let items = [
   {
     key: "append",
     value: function append(arg0, arg1) {
-      let _searchParams;
-      let _searchParams2;
       ({ _searchParams, _searchParams: _searchParams2 } = this);
       if (_searchParams.has(arg0)) {
         const value = _searchParams2.get(arg0);
@@ -131,10 +126,10 @@ let items = [
     key: "values",
     value: function values() {
       return (function generateValues(_searchParams) {
-        let closure_0 = _searchParams;
-        let c6 = 0;
-        let c9 = 0;
-        let c8 = 0;
+        closure_0 = _searchParams;
+        c6 = 0;
+        c9 = 0;
+        c8 = 0;
         return (function* generateValues(arg0) {
           if (c9 === 2) {
             c9 = 3;
@@ -147,7 +142,7 @@ let items = [
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             while (true) {
@@ -166,36 +161,36 @@ let items = [
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  let closure_5 = tmp3;
+                  closure_5 = tmp3;
                   let tmp26 = _searchParams;
                   _searchParams = undefined;
-                  let _classCallCheck;
+                  closure_1 = undefined;
                   let values = _searchParams.values();
                   let tmp28 = values;
-                  _classCallCheck = values[Symbol.iterator]();
+                  closure_1 = values[Symbol.iterator]();
                   let tmp12 = values;
-                  let tmp13 = _classCallCheck;
-                  if (_classCallCheck === undefined) {
+                  let tmp13 = closure_1;
+                  if (closure_1 === undefined) {
                     let num5 = 3;
                     c9 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     let tmp15 = closure_5;
-                    let c8 = 1;
+                    c8 = 1;
                     _searchParams = tmp14;
                     let tmp16 = _searchParams;
-                    let closure_4 = _searchParams;
+                    closure_4 = _searchParams;
                     let tmp17 = _searchParams;
                     closure_4 = _searchParams;
-                    let closure_3 = _searchParams[Symbol.iterator]();
+                    closure_3 = _searchParams[Symbol.iterator]();
                   }
                 }
               } else if (1 === tmp3) {
                 let tmp9 = closure_7;
                 let tmp10 = closure_7;
                 c8 = 0;
-                let tmp11 = _classCallCheck;
-                _classCallCheck.return();
+                let tmp11 = closure_1;
+                closure_1.return();
                 throw closure_7;
               } else if (2 === tmp3) {
                 let tmp6 = closure_7;
@@ -213,8 +208,8 @@ let items = [
                 let tmp4 = closure_3;
                 closure_3.return();
                 c8 = 0;
-                let tmp5 = _classCallCheck;
-                _classCallCheck.return();
+                let tmp5 = closure_1;
+                closure_1.return();
                 let num2 = 3;
                 c9 = 3;
                 obj = { value: null, done: true };
@@ -230,12 +225,12 @@ let items = [
               } else {
                 let tmp21 = closure_5;
                 c8 = 2;
-                _classCallCheck = tmp20;
+                closure_1 = tmp20;
                 c6 = 3;
                 let num4 = 1;
                 c9 = 1;
-                let obj1 = { value: null, done: false };
-                obj1[0] = _classCallCheck;
+                obj1 = { value: null, done: false };
+                obj1[0] = closure_1;
                 return obj1;
               }
             }
@@ -248,10 +243,10 @@ let items = [
     key: "entries",
     value: function entries() {
       return (function generateEntries(_searchParams) {
-        let closure_0 = _searchParams;
-        let c9 = 0;
-        let c10 = 0;
-        let c8 = 0;
+        closure_0 = _searchParams;
+        c9 = 0;
+        c10 = 0;
+        c8 = 0;
         return (function* generateEntries(arg0) {
           if (c10 === 2) {
             c10 = 3;
@@ -264,7 +259,7 @@ let items = [
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             while (true) {
@@ -283,36 +278,36 @@ let items = [
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  let closure_6 = tmp;
-                  let closure_5 = tmp2;
+                  closure_6 = tmp;
+                  closure_5 = tmp2;
                   let tmp27 = dependencyMap;
                   dependencyMap = undefined;
-                  let _classCallCheck;
-                  let closure_2;
+                  closure_1 = undefined;
+                  closure_2 = undefined;
                   let lib;
-                  let closure_4;
+                  closure_4 = undefined;
                   closure_2 = dependencyMap;
                   let tmp28 = dependencyMap;
                   closure_2 = dependencyMap;
-                  _classCallCheck = dependencyMap[Symbol.iterator]();
+                  closure_1 = dependencyMap[Symbol.iterator]();
                   let tmp14 = closure_2;
-                  let tmp15 = _classCallCheck;
-                  if (_classCallCheck === undefined) {
+                  let tmp15 = closure_1;
+                  if (closure_1 === undefined) {
                     let num5 = 3;
                     c10 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     let tmp29 = closure_5;
                     let tmp30 = closure_6;
-                    let c8 = 1;
+                    c8 = 1;
                     dependencyMap = tmp16;
                     let tmp31 = dependencyMap;
                     let tmp32 = dependencyMap;
-                    _classCallCheck = dependencyMap(dependencyMap, 2);
-                    let tmp33 = _classCallCheck;
-                    closure_2 = _classCallCheck[0];
-                    let tmp34 = _classCallCheck;
-                    lib = _classCallCheck[1];
+                    closure_1 = dependencyMap(dependencyMap, 2);
+                    let tmp33 = closure_1;
+                    closure_2 = closure_1[0];
+                    let tmp34 = closure_1;
+                    lib = closure_1[1];
                     let tmp35 = lib;
                     closure_4 = lib;
                     let tmp36 = lib;
@@ -324,8 +319,8 @@ let items = [
                 let tmp11 = closure_7;
                 let tmp12 = closure_7;
                 c8 = 0;
-                let tmp13 = _classCallCheck;
-                _classCallCheck.return();
+                let tmp13 = closure_1;
+                closure_1.return();
                 throw closure_7;
               } else if (2 === tmp5) {
                 let tmp8 = closure_7;
@@ -343,8 +338,8 @@ let items = [
                 let tmp6 = lib;
                 lib.return();
                 c8 = 0;
-                let tmp7 = _classCallCheck;
-                _classCallCheck.return();
+                let tmp7 = closure_1;
+                closure_1.return();
                 let num2 = 3;
                 c10 = 3;
                 obj = { value: null, done: true };
@@ -368,7 +363,7 @@ let items = [
                 c9 = 3;
                 let num4 = 1;
                 c10 = 1;
-                let obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = items;
                 return obj1;
               }
@@ -381,8 +376,6 @@ let items = [
   {
     key: "forEach",
     value: function forEach(arg0) {
-      let tmp5;
-      let tmp6;
       while (tmp !== undefined) {
         let tmp3 = URLSearchParams;
         let tmp4 = URLSearchParams(tmp2, 2);
@@ -404,8 +397,6 @@ let items = [
       const _searchParams = this._searchParams;
       const items = [..._searchParams.entries()];
       this._searchParams = new Map(items.sort((arg0, arg1) => {
-        let obj;
-        let tmp;
         [obj] = arg0;
         [tmp] = arg1;
         return obj.localeCompare(tmp);
@@ -418,8 +409,6 @@ let items = [
 obj = {
   key: Symbol.iterator,
   value() {
-    let tmp5;
-    let tmp6;
     const items = [];
     while (tmp !== undefined) {
       let tmp3 = URLSearchParams;
@@ -444,7 +433,6 @@ items[13] = {
   value: function toString() {
     const _searchParams = this._searchParams;
     let mapped = Array.from(_searchParams.entries()).map((arg0) => {
-      let arr;
       [, arr] = arg0;
       const mapped = arr.map((arg0) => {
         const replaced = encodeURIComponent(closure_0).replace(/%20/g, "+");
@@ -457,4 +445,4 @@ items[13] = {
   }
 };
 
-export const URLSearchParams = require("_createClass")(URLSearchParams, items);
+export const URLSearchParams = _createClassDefault(URLSearchParams, items);

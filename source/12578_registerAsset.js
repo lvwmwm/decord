@@ -1,0 +1,10 @@
+// Module ID: 12578
+// Function ID: 12579
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 12578 (registerAsset)
+import registerAsset from "registerAsset" /* 1241 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 89, height: 80, scales: [1, 2], hash: "0ee8111d166277419681845b13003ed7", name: "img_empty_audience", type: "png" });

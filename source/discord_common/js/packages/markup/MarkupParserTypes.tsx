@@ -1,7 +1,9 @@
-// Module ID: 6905
-// Function ID: 6906
+// Module ID: 6943
+// Function ID: 6944
 // Name: set
 // Dependencies: [2]
 
-// Module 6905 (set)
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/markup/MarkupParserTypes.tsx");
+// Module 6943 (set)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/packages/markup/MarkupParserTypes.tsx");

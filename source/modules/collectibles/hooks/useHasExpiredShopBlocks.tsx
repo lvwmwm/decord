@@ -1,23 +1,21 @@
-// Module ID: 14954
-// Function ID: 14955
+// Module ID: 15018
+// Function ID: 15019
 // Name: useHasExpiredShopBlocks
-// Dependencies: [32, 19, 676, 5339, 2]
+// Dependencies: [32, 19, 676, 5344, 2]
 // Exports: useHasExpiredShopBlocks
 
-// Module 14954 (useHasExpiredShopBlocks)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { MAX_TIMEOUT_MS } from "ME";
+// Module 15018 (useHasExpiredShopBlocks)
+import closure_2 from "_slicedToArray" /* 32 */;
+import noop from "noop" /* 19 */;
+import { MAX_TIMEOUT_MS } from "ME" /* 676 */;
 
-let c3;
-let c4;
 const require = arg1;
 ({ useEffect: c3, useState: c4 } = noop);
-const result = require("ME").fileFinishedImporting("modules/collectibles/hooks/useHasExpiredShopBlocks.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useHasExpiredShopBlocks.tsx");
 
 export const useHasExpiredShopBlocks = (arg0, arg1, arg2) => {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   const callback = arg2;
   const tmp = callback(callback3(false), 2);
   const callback2 = tmp[1];
@@ -25,7 +23,7 @@ export const useHasExpiredShopBlocks = (arg0, arg1, arg2) => {
   callback2(() => {
     let timeout = null;
     const item = timeout.forEach((type) => {
-      if (type.type === callback(outer1_1[3]).ShopBlockType.IMMERSIVE_BANNER) {
+      if (type.type === callback(closure_1_1[3]).ShopBlockType.IMMERSIVE_BANNER) {
         let time = null;
         if (null != type.endTime) {
           const endTime2 = type.endTime;
@@ -34,7 +32,7 @@ export const useHasExpiredShopBlocks = (arg0, arg1, arg2) => {
         let time1 = time;
       } else {
         time1 = null;
-        if (type.type === callback(outer1_1[3]).ShopBlockType.COUNTDOWN_TIMER) {
+        if (type.type === callback(closure_1_1[3]).ShopBlockType.COUNTDOWN_TIMER) {
           const endTime = type.endTime;
           time1 = endTime.getTime();
         }
@@ -49,7 +47,7 @@ export const useHasExpiredShopBlocks = (arg0, arg1, arg2) => {
       }
     });
     if (!closure_1) {
-      if (!_slicedToArray) {
+      if (!closure_2) {
         if (null != tmp2) {
           const _Date = Date;
           const diff = tmp2 - Date.now();
@@ -61,7 +59,7 @@ export const useHasExpiredShopBlocks = (arg0, arg1, arg2) => {
             const _Math = Math;
             timeout = setTimeout(() => {
               callback2(true);
-            }, Math.min(outer1_5, diff));
+            }, Math.min(closure_1_5, diff));
             return () => clearTimeout(closure_0);
           }
         }

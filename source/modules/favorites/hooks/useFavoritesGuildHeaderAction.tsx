@@ -1,28 +1,31 @@
-// Module ID: 15412
-// Function ID: 15413
+// Module ID: 15476
+// Function ID: 15477
 // Name: useFavoritesGuildHeaderAction
-// Dependencies: [19, 676, 9979, 1222, 1236, 3079, 2]
+// Dependencies: [19, 676, 10018, 1222, 1236, 3082, 2]
 // Exports: default
 
-// Module 15412 (useFavoritesGuildHeaderAction)
-import noop from "noop";
-import { Routes } from "ME";
+// Module 15476 (useFavoritesGuildHeaderAction)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 3082 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10018 */;
+import closure_3 from "noop" /* 19 */;
+import { Routes } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("useFavoritesAccess").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHeaderAction.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHeaderAction.tsx");
 
 export default function useFavoritesGuildHeaderAction() {
-  let obj = require(9979) /* useFavoritesAccess */;
+  let obj = useFavoritesAccess;
   const hasAccess = obj.useFavoritesAccess().hasAccess;
   obj = { isPreview: !hasAccess, label: null, exitPreview: null };
   const callback = React.useCallback(() => {
     callback(table[3]).transitionTo(constants.ME);
   }, []);
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   if (hasAccess) {
-    let ojM1xJ = importDefault(3079).G9fGlP;
+    let ojM1xJ = messagesProxyDefault.G9fGlP;
   } else {
-    ojM1xJ = require(1236) /* getSystemLocale */.t.ojM1xJ;
+    ojM1xJ = getSystemLocale.t.ojM1xJ;
   }
   obj[1] = intl.string(ojM1xJ);
   obj[2] = callback;

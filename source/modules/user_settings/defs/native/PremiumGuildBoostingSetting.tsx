@@ -1,27 +1,31 @@
-// Module ID: 14348
-// Function ID: 14349
+// Module ID: 14416
+// Function ID: 14417
 // Name: route
-// Dependencies: [676, 10669, 1236, 7979, 12931, 2]
+// Dependencies: [676, 10708, 1236, 8018, 12986, 2]
 
-// Module 14348 (route)
-import createToggle from "createToggle";
+// Module 14416 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import BoostGemIcon from "BoostGemIcon" /* 8018 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["+CbP2v"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["+CbP2v"]);
   },
   parent: null,
-  IconComponent: require("BoostGemIcon").BoostGemIcon,
+  IconComponent: BoostGemIcon.BoostGemIcon,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.GUILD_BOOSTING,
+  route: ME.UserSettingsSections.GUILD_BOOSTING,
   getComponent() {
-    return require(12931) /* componentDidMount */.default;
+    return require(12986) /* componentDidMount */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/PremiumGuildBoostingSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/PremiumGuildBoostingSetting.tsx");
 
 export default route;

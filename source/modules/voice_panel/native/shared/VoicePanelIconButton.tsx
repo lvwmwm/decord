@@ -1,15 +1,15 @@
-// Module ID: 16254
-// Function ID: 16255
-// Dependencies: [19, 21, 8125, 8035, 2]
+// Module ID: 16351
+// Function ID: 16352
+// Dependencies: [19, 21, 8164, 8074, 2]
 
-// Module 16254
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 16351
+import IconButton from "IconButton" /* 8074 */;
+import setDefault from "set" /* 8164 */;
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 const memoResult = importAllResult.memo(importAllResult.forwardRef((overrideVariant, ref) => {
-  let layout;
-  let style;
   let str = overrideVariant.overrideVariant;
   ({ style, layout } = overrideVariant);
   const merged = Object.assign(overrideVariant, Object.create(null));
@@ -22,8 +22,8 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((overrideVari
   }
   obj.variant = str;
   obj.maxFontSizeMultiplier = 2;
-  obj[3] = jsx(require(8035) /* IconButton */.IconButton, {});
-  return jsx(importDefault(8125), {});
+  obj[3] = jsx(IconButton.IconButton, {});
+  return jsx(setDefault, {});
 }));
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelIconButton.tsx");
 

@@ -1,20 +1,21 @@
-// Module ID: 12812
-// Function ID: 12813
+// Module ID: 12867
+// Function ID: 12868
 // Name: parents
-// Dependencies: [32, 19, 21, 5298, 4093, 1236, 6553, 12811, 12047, 2]
+// Dependencies: [32, 19, 21, 5303, 4096, 1236, 6584, 12866, 12099, 2]
 // Exports: default
 
-// Module 12812 (parents)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 12867 (parents)
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12866 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsShareWithParentElement.tsx");
+const result = require("set").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsShareWithParentElement.tsx");
 
 export default function _default(parents) {
   parents = parents.parents;
-  let importDefault;
+  importDefault = undefined;
   const tmp = callback(React.useState(false), 2);
   importDefault = tmp[1];
   [][0] = parents;
@@ -53,11 +54,11 @@ export default function _default(parents) {
     }
     obj[3] = username3;
     obj[1] = intl.formatToPlainString(parents(1236).t.BlAMme, obj);
-    obj[2] = jsx(parents(12047).ShareIcon, {});
+    obj[2] = jsx(parents(12099).ShareIcon, {});
     const intl2 = tmp15(1236).intl;
     obj[3] = intl2.string(parents(1236).t["5l/hlt"]);
     obj[4] = tmp[0];
     obj[5] = tmp2;
-    return jsx(importDefault(12811), { count: null, parent1: null, parent2: null, parent3: null });
+    return jsx(InAppReportsUpsellsTableRowDefault, { count: null, parent1: null, parent2: null, parent3: null });
   }
 };

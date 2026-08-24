@@ -1,46 +1,43 @@
-// Module ID: 14051
-// Function ID: 14052
+// Module ID: 14119
+// Function ID: 14120
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: [32, 19, 17, 7186, 1388, 505, 21, 712, 4661, 9233, 7366, 1377, 8376, 10376, 1949, 4342, 14052, 2007, 1236, 14036, 5446, 9225, 1297, 8397, 2]
+// Dependencies: [32, 19, 17, 7224, 1388, 505, 21, 712, 4668, 9270, 7404, 1377, 8415, 10416, 1949, 4346, 14120, 2008, 1236, 14104, 5451, 9262, 1297, 8436, 2]
 // Exports: default
 
-// Module 14051 (COLLECTIBLES_PREVIEW_SIZE)
-import _slicedToArray from "_slicedToArray";
-import FormControlText from "FormControlText";
-import { View } from "asyncRequireImpl";
-import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { NOOP } from "sum";
-import { jsx } from "filterLayer";
-import createCacheKey from "createCacheKey";
+// Module 14119 (COLLECTIBLES_PREVIEW_SIZE)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { NOOP } from "sum" /* 505 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
-const PX_4 = require("Themes").space.PX_4;
+const PX_4 = ThemesDefault.space.PX_4;
 createCacheKey = { previewContainer: null, noneIcon: null };
-createCacheKey = { height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, paddingVertical: PX_4, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, justifyContent: "center", alignItems: "center", borderRadius: require("Themes").radii.xs, overflow: "hidden" };
+createCacheKey = { height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, paddingVertical: PX_4, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED, justifyContent: "center", alignItems: "center", borderRadius: ThemesDefault.radii.xs, overflow: "hidden" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { tintColor: require("Themes").colors.TEXT_SUBTLE };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { tintColor: require("Themes").colors.TEXT_SUBTLE };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileFrameEditButton.tsx");
+createCacheKey[1] = { tintColor: ThemesDefault.colors.TEXT_SUBTLE };
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { tintColor: ThemesDefault.colors.TEXT_SUBTLE };
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileFrameEditButton.tsx");
 
 export default function UserProfileFrameEditButton(arg0) {
-  let displayProfile;
-  let guildId;
-  let pendingProfileFrame;
-  let user;
   ({ displayProfile, user } = arg0);
   ({ pendingProfileFrame, guildId } = arg0);
-  let dependencyMap;
+  dependencyMap = undefined;
   let userProfileFrame;
-  const tmp = createCacheKey();
-  let obj = user(9233);
+  const tmp = callback();
+  let obj = user(9270);
   const canViewProfileFramesInCollectiblesShop = obj.useCanViewProfileFramesInCollectiblesShop("UserProfileFrameEditButton");
-  let obj1 = user(7366);
+  obj1 = user(7404);
   const items = [user(1377).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE];
   const tmp5 = userProfileFrame(obj1.useSelectedDismissibleContent(items), 2);
   dependencyMap = tmp6;
-  let obj2 = user(8376);
+  let obj2 = user(8415);
   obj = { pendingValue: pendingProfileFrame, userValue: null, guildValue: null, guildId: null };
   let profileFrame;
   if (displayProfile != null) {
@@ -60,7 +57,7 @@ export default function UserProfileFrameEditButton(arg0) {
   obj[2] = profileFrame1;
   obj[3] = guildId;
   const profilePreviewValue = obj2.getProfilePreviewValue(obj);
-  let tmp2Result = tmp2(10376);
+  let tmp2Result = tmp2(10416);
   let skuId;
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
@@ -77,7 +74,7 @@ export default function UserProfileFrameEditButton(arg0) {
   if (type === user(1949).CollectiblesItemType.PROFILE_FRAME) {
     const first1 = product.items[0];
   }
-  tmp2Result = tmp2(8376);
+  tmp2Result = tmp2(8415);
   userProfileFrame = tmp2Result.useUserProfileFrame({ user, guildId });
   if (undefined !== pendingProfileFrame) {
     userProfileFrame = pendingProfileFrame;
@@ -109,7 +106,7 @@ export default function UserProfileFrameEditButton(arg0) {
       const intl5 = tmp2(1236).intl;
       obj1[1] = intl5.string(tmp2(1236).t.MKDeyL);
       obj1[2] = NOOP;
-      obj1[3] = tmp19(tmp2(5446).ActivityIndicator, { animating: true, size: "large" });
+      obj1[3] = tmp19(tmp2(5451).ActivityIndicator, { animating: true, size: "large" });
       obj2 = obj1;
     } else {
       obj2 = { label: null, labelTrailing: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null };
@@ -117,7 +114,7 @@ export default function UserProfileFrameEditButton(arg0) {
       obj2[0] = intl3.string(tmp2(1236).t.GWrZOd);
       const obj3 = { showNewBadge: null };
       obj3[0] = tmp5[0] === tmp2(1377).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE;
-      obj2[1] = tmp19(tmp2(14036).UserProfileEditFormLabelBadges, obj3);
+      obj2[1] = tmp19(tmp2(14104).UserProfileEditFormLabelBadges, obj3);
       obj2[2] = formatToPlainStringResult;
       const obj4 = { text: null };
       obj4[0] = formatToPlainStringResult;
@@ -131,18 +128,18 @@ export default function UserProfileFrameEditButton(arg0) {
         obj6[1] = COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(712).space.PX_8;
         obj6[2] = COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4;
         obj6[3] = guildId(712).colors.BACKGROUND_SURFACE_HIGH;
-        obj5[1] = tmp19(guildId(9225), obj6);
+        obj5[1] = tmp19(guildId(9262), obj6);
         let tmp19Result = tmp19(View, obj5);
-        const tmp24 = guildId(9225);
+        const tmp24 = guildId(9262);
       } else {
         const obj7 = { source: null, style: null };
-        obj7[0] = guildId(8397);
+        obj7[0] = guildId(8436);
         obj7[1] = tmp.noneIcon;
         tmp19Result = tmp19(tmp2(1297).Icon, obj7);
       }
       obj2[5] = tmp19Result;
     }
-    return jsx(tmp2(14036).UserProfileEditFormButton, obj2);
+    return jsx(tmp2(14104).UserProfileEditFormButton, obj2);
   } else {
     return null;
   }

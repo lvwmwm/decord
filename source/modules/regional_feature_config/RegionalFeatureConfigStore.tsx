@@ -1,17 +1,19 @@
-// Module ID: 4073
-// Function ID: 4074
+// Module ID: 4076
+// Function ID: 4077
 // Name: getRegionalFeatureConfig
-// Dependencies: [4074, 4078, 589, 709, 2]
+// Dependencies: [4077, 4081, 589, 709, 2]
 
-// Module 4073 (getRegionalFeatureConfig)
-import DEFAULT_COUNTRY_CODE_NAME from "DEFAULT_COUNTRY_CODE_NAME";
-import { Store } from "initialize";
+// Module 4076 (getRegionalFeatureConfig)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isFeatureTeenByDefault from "isFeatureTeenByDefault" /* 4081 */;
+import DEFAULT_COUNTRY_CODE_NAME from "DEFAULT_COUNTRY_CODE_NAME" /* 4077 */;
 
-let c3;
-let obj1;
 ({ getDefaultCountryCode: obj1, getCountryCodeByAlpha2: c3 } = DEFAULT_COUNTRY_CODE_NAME);
 let c4 = null;
 let c5 = null;
+const Store = initializeDefault.Store;
 class RegionalFeatureConfigStore extends Store {
 }
 const prototype = RegionalFeatureConfigStore.prototype;
@@ -72,7 +74,7 @@ prototype["getUserCountryCode"] = function getUserCountryCode() {
   return c5;
 };
 RegionalFeatureConfigStore.displayName = "RegionalFeatureConfigStore";
-const regionalFeatureConfigStore = new RegionalFeatureConfigStore(require("dispatcher"), {
+const regionalFeatureConfigStore = new RegionalFeatureConfigStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen(countryCode) {
     countryCode = countryCode.countryCode;
     if (null != countryCode) {
@@ -80,14 +82,14 @@ const regionalFeatureConfigStore = new RegionalFeatureConfigStore(require("dispa
       if (tmp2 == null) {
         tmp2 = callback();
       }
-      let c5 = tmp2;
+      closure_5 = tmp2;
     }
     let fromConnectionOpenResult = null;
     if (null != countryCode.regionalFeatureConfig) {
-      const RegionalFeatureConfig = require(4078) /* isFeatureTeenByDefault */.RegionalFeatureConfig;
+      const RegionalFeatureConfig = isFeatureTeenByDefault.RegionalFeatureConfig;
       fromConnectionOpenResult = RegionalFeatureConfig.fromConnectionOpen(countryCode.regionalFeatureConfig);
     }
-    let c4 = fromConnectionOpenResult;
+    c4 = fromConnectionOpenResult;
   },
   SET_LOCATION_METADATA: function handleSetLocationMetadata(countryCode) {
     countryCode = countryCode.countryCode;
@@ -96,11 +98,11 @@ const regionalFeatureConfigStore = new RegionalFeatureConfigStore(require("dispa
       if (tmp2 == null) {
         tmp2 = callback();
       }
-      let c5 = tmp2;
+      closure_5 = tmp2;
     }
     return false;
   }
 });
-const result = require("initialize").fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigStore.tsx");
+const result = set.fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigStore.tsx");
 
 export default regionalFeatureConfigStore;

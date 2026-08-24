@@ -1,55 +1,49 @@
-// Module ID: 13356
-// Function ID: 13357
+// Module ID: 13414
+// Function ID: 13415
 // Name: LockedIcon
-// Dependencies: [19, 676, 21, 4661, 6782, 712, 1297, 13357, 11640, 13358, 8910, 2]
+// Dependencies: [19, 676, 21, 4668, 6819, 712, 1297, 13415, 11689, 13416, 8947, 2]
 // Exports: default
 
-// Module 13356 (LockedIcon)
-import "noop";
-import { Fonts } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
-import importDefaultResult1 from "createTextStyle";
+// Module 13414 (LockedIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import renderDefault from "render" /* 8947 */;
+import registerAssetDefault from "registerAsset" /* 11689 */;
+import registerAssetDefault2 from "registerAsset" /* 13415 */;
+import stylesDefault from "styles" /* 13416 */;
+import { Fonts } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 function LockedIcon() {
-  const obj = { size: null, source: null };
-  obj[0] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
-  obj[1] = importDefault(13357);
-  return callback(require(1297) /* Button */.Icon, obj);
+  return callback(Button.Icon, { size: Button.Icon.Sizes.MEDIUM, source: registerAssetDefault2 });
 }
 function DropdownIcon() {
-  const obj = { style: { transform: items }, size: null, source: null };
-  items = [{ rotate: "90deg" }];
-  obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
-  obj[2] = importDefault(11640);
-  return callback(require(1297) /* Button */.Icon, obj);
+  const items = [{ rotate: "90deg" }];
+  return callback(Button.Icon, { style: { transform: items }, size: Button.Icon.Sizes.MEDIUM, source: registerAssetDefault });
 }
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 createCacheKey = { container: { alignItems: "center", flexDirection: "row" }, content: { marginStart: 8, flexGrow: 1 }, placeholder: null, text: null };
 createCacheKey = {};
-const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_MUTED, 16));
+const merged = Object.assign(importDefaultResult(Fonts.PRIMARY_MEDIUM, ThemesDefault.colors.TEXT_MUTED, 16));
 createCacheKey[2] = createCacheKey;
 const obj1 = {};
-const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_DEFAULT, 16));
+const merged1 = Object.assign(importDefaultResult(Fonts.PRIMARY_MEDIUM, ThemesDefault.colors.TEXT_DEFAULT, 16));
 createCacheKey[3] = obj1;
 createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormDropdown.tsx");
+const importDefaultResult1 = importDefaultResult;
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormDropdown.tsx");
 
 export default function FormDropdown(arg0) {
-  let disabled;
-  let label;
-  let leading;
-  let onPress;
-  let placeholder;
   ({ disabled, label } = arg0);
   ({ leading, onPress, placeholder } = arg0);
   const tmp = createCacheKey();
   const tmp2 = importDefault;
-  const tmp4 = importDefault(13358)();
+  const tmp4 = stylesDefault();
   let obj = { style: items, accessibilityRole: "spinbutton", disabled, onPress: null, children: null };
   items = [tmp.container, tmp4.dropdownInput];
   let tmp9;
@@ -67,9 +61,9 @@ export default function FormDropdown(arg0) {
     label = placeholder;
   }
   obj[1] = label;
-  items1[1] = closure_3(require(1297) /* Button */.LegacyText, obj);
+  items1[1] = closure_3(Button.LegacyText, obj);
   items1[2] = tmp5Result;
   obj[4] = items1;
-  return tmp7(tmp2(8910), obj);
+  return tmp7(renderDefault, obj);
 };
 export const useFormDropdownStyles = createCacheKey;

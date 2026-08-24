@@ -4,7 +4,9 @@
 // Dependencies: [1028]
 
 // Module 1091 (baggageHeaderHasSentryValues)
-const require = arg1;
+import ignoreNextOnError from "ignoreNextOnError" /* 1028 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.baggageHeaderHasSentryValues = function baggageHeaderHasSentryValues(baggage) {
@@ -25,7 +27,7 @@ arg5.createHeadersSafely = function createHeadersSafely(request_headers) {
 arg5.getFullURL = function getFullURL(arg0) {
   try {
     const _URL = URL;
-    const uRL = new URL(arg0, require(1028) /* ignoreNextOnError */.WINDOW.location.origin);
+    const uRL = new URL(arg0, ignoreNextOnError.WINDOW.location.origin);
     return uRL.href;
   } catch (err) {
   }

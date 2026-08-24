@@ -1,10 +1,10 @@
-// Module ID: 8139
-// Function ID: 8140
+// Module ID: 8178
+// Function ID: 8179
 // Name: set
 // Dependencies: [2]
 
-// Module 8139 (set)
-import set from "set";
+// Module 8178 (set)
+import set from "set" /* 2 */;
 
 const obj = { IN_APP: null, REPORT_TO_MOD: null, UNAUTHENTICATED: null, CONSOLE: null };
 let set = new Set(["application", "first_dm", "guild", "guild_directory_entry", "guild_discovery", "guild_scheduled_event", "message", "report_to_mod_message", "stage_channel", "user", "widget"]);

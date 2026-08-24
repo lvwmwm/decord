@@ -1,48 +1,43 @@
-// Module ID: 15821
-// Function ID: 15822
+// Module ID: 15890
+// Function ID: 15891
 // Name: ResourceChannelRow
-// Dependencies: [19, 17, 1391, 1980, 4994, 4021, 676, 21, 4661, 712, 589, 8515, 11185, 15822, 7427, 11452, 1435, 5433, 4734, 6807, 15815, 1222, 1236, 15823, 4745, 2]
+// Dependencies: [19, 17, 1391, 1981, 4999, 4024, 676, 21, 4668, 712, 589, 8554, 11237, 15891, 7465, 11501, 1435, 5438, 4739, 6844, 15884, 1222, 1236, 15892, 4750, 2]
 // Exports: default
 
-// Module 15821 (ResourceChannelRow)
-import getDefaultRules from "get defaultRules";
-import get_ActivityIndicator from "PressableBase";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import comparator from "comparator";
-import reinjectEphemerals from "reinjectEphemerals";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import ME from "ME";
-import jsxProd from "transitionTo";
-import createCacheKey from "createCacheKey";
+// Module 15890 (ResourceChannelRow)
+import ThemesDefault from "Themes" /* 712 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 15884 */;
+import registerAssetDefault from "registerAsset" /* 15892 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "comparator" /* 1981 */;
+import closure_8 from "reinjectEphemerals" /* 4999 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4024 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c4;
-let c5;
-let closure_12;
-let map1;
-let unpackModuleId;
 const require = arg1;
 function ResourceChannelRow(channelId) {
-  let description;
-  let icon;
   channelId = channelId.channelId;
   ({ icon, description } = channelId);
   let stateFromStores;
-  let dependencyMap;
-  const tmp = createCacheKey();
+  dependencyMap = undefined;
+  const tmp = callback3();
   let obj = channelId(589);
-  const items = [ensureGuildLoaded];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(channelId));
-  let obj1 = channelId(589);
-  const items1 = [getUncachedChannelPermissions];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_9.can(outer1_10.VIEW_CHANNEL, stateFromStores));
+  const items = [closure_6];
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getChannel(channelId));
+  obj1 = channelId(589);
+  const items1 = [closure_9];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => closure_1_9.can(closure_1_10.VIEW_CHANNEL, stateFromStores));
   let obj2 = channelId(589);
-  const items2 = [reinjectEphemerals];
-  const stateFromStores2 = obj2.useStateFromStores(items2, () => outer1_8.getMessages(channelId));
+  const items2 = [closure_8];
+  const stateFromStores2 = obj2.useStateFromStores(items2, () => closure_1_8.getMessages(channelId));
   const firstResult = stateFromStores2.first();
-  let obj4 = channelId(8515);
+  let obj4 = channelId(8554);
   const forumPostMediaProperties = obj4.useForumPostMediaProperties(firstResult, false);
-  let obj5 = channelId(8515);
+  let obj5 = channelId(8554);
   let length;
   const firstMediaIsEmbed = obj5.useFirstMediaIsEmbed(firstResult, false);
   if (forumPostMediaProperties != null) {
@@ -52,15 +47,15 @@ function ResourceChannelRow(channelId) {
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  let tmp2Result = tmp2(11185);
+  let tmp2Result = tmp2(11237);
   let flag = tmp2Result.useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(15822)(firstResult);
+  const tmp11 = stateFromStores(15891)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];
   const effect = React.useEffect(() => {
-    if (_undefined) {
-      let obj = stateFromStores(_undefined[14]);
+    if (dependencyMap) {
+      let obj = stateFromStores(7465);
       obj = { channelId: null, after: null, limit: 5 };
       obj[0] = channelId;
       obj[1] = channelId;
@@ -82,7 +77,7 @@ function ResourceChannelRow(channelId) {
       obj1[0] = tmp.textContent;
       obj2 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
       obj2[2] = channelId.title;
-      const items4 = [callback(tmp2(4734).Text, obj2), , ];
+      const items4 = [callback(tmp2(4739).Text, obj2), , ];
       let tmp19Result = tmp16;
       if (null == description || 0 === description.length) {
         tmp19Result = null != tmp11;
@@ -90,11 +85,11 @@ function ResourceChannelRow(channelId) {
       if (tmp19Result) {
         const obj3 = { variant: "text-sm/normal", color: "text-default", style: null, lineClamp: 3, ellipsizeMode: "tail", children: null };
         obj3[2] = tmp.messageContent;
-        tmp10Result = tmp10(6807);
+        tmp10Result = tmp10(6844);
         obj4 = { guildId: null, channelId: null };
         ({ guild_id: obj15[0], id: obj15[1] } = stateFromStores);
         obj3[5] = tmp10Result.parse(tmp11, true, obj4);
-        tmp19Result = tmp19(tmp2(4734).Text, obj3);
+        tmp19Result = tmp19(tmp2(4739).Text, obj3);
       }
       items4[1] = tmp19Result;
       tmp19Result = !tmp16;
@@ -102,10 +97,10 @@ function ResourceChannelRow(channelId) {
         obj5 = { variant: "text-sm/normal", color: "text-default", style: null, lineClamp: 3, ellipsizeMode: "tail", children: null };
         obj5[2] = tmp.messageContent;
         ({ guild_id: obj18[0], id: obj18[1] } = stateFromStores);
-        obj5[5] = tmp10(6807).parse(description, true, { guildId: null, channelId: null });
-        tmp19Result = tmp19(tmp2(4734).Text, obj5);
+        obj5[5] = tmp10(6844).parse(description, true, { guildId: null, channelId: null });
+        tmp19Result = tmp19(tmp2(4739).Text, obj5);
         const obj6 = { guildId: null, channelId: null };
-        const tmp10Result1 = tmp10(6807);
+        const tmp10Result1 = tmp10(6844);
       }
       items4[2] = tmp19Result;
       obj1[1] = items4;
@@ -139,7 +134,7 @@ function ResourceChannelRow(channelId) {
               obj9[0] = stateFromStores;
               obj9[1] = first;
               obj9[2] = firstMediaIsEmbed;
-              tmp2Result = tmp2(8515);
+              tmp2Result = tmp2(8554);
               if (flag == null) {
                 flag = false;
               }
@@ -150,14 +145,14 @@ function ResourceChannelRow(channelId) {
               }
               obj9[4] = id;
               obj9[5] = tmp.thumbnail;
-              tmp19Result2 = tmp19(tmp2(11185).ForumPostMediaThumbnail, obj9);
+              tmp19Result2 = tmp19(tmp2(11237).ForumPostMediaThumbnail, obj9);
             }
           }
         }
       }
       items5[2] = tmp19Result2;
       obj[2] = items5;
-      return closure_13(tmp2(5433).PressableOpacity, obj);
+      return closure_13(tmp2(5438).PressableOpacity, obj);
     }
   }
   return null;
@@ -166,42 +161,42 @@ function ResourceChannelRow(channelId) {
 ({ Permissions: c10, Routes: unpackModuleId } = ME);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 createCacheKey = { container: { paddingHorizontal: 12, display: "flex", flexDirection: "column", alignItems: "center" }, emptyStateContainer: { padding: 20, display: "flex", flexDirection: "column", alignItems: "center" }, channelContainer: null, messageContent: null, textContent: null, thumbnail: null, emptyStateImage: null, icon: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: require("Themes").radii.sm, display: "flex", flexDirection: "row", alignItems: "flex-start" };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: ThemesDefault.radii.sm, display: "flex", flexDirection: "row", alignItems: "flex-start" };
 createCacheKey[2] = createCacheKey;
 createCacheKey[3] = { marginTop: 8 };
 createCacheKey[4] = { flex: 1 };
 createCacheKey[5] = { marginLeft: 8 };
 createCacheKey[6] = { marginTop: 12, marginBottom: 20 };
 createCacheKey[7] = { width: 72, height: 72 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/guild_onboarding_home/native/GuildHomeResources.tsx");
+let closure_14 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/native/GuildHomeResources.tsx");
 
 export default function GuildHomeResources(guildId) {
   guildId = guildId.guildId;
-  const tmp = createCacheKey();
-  const arr = importDefault(15815)(guildId);
+  const tmp = callback3();
+  const arr = useResourceChannelsDefault(guildId);
   if (0 === arr.length) {
     let obj = { style: null, children: null };
     obj[0] = tmp.emptyStateContainer;
     obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
     const intl = guildId(1236).intl;
     obj[2] = intl.string(guildId(1236).t.owvC9U);
-    const items = [callback(guildId(4734).Text, obj), , ];
-    const obj1 = { style: null, source: null };
+    const items = [callback(guildId(4739).Text, obj), , ];
+    obj1 = { style: null, source: null };
     obj1[0] = tmp.emptyStateImage;
-    obj1[1] = importDefault(15823);
+    obj1[1] = registerAssetDefault;
     items[1] = callback(closure_5, obj1);
     const obj2 = { onPress: null, text: null };
     obj2[0] = function onPress() {
-      const defaultChannel = outer1_7.getDefaultChannel(guildId);
+      const defaultChannel = closure_1_7.getDefaultChannel(guildId);
       if (null != defaultChannel) {
-        guildId(outer1_2[21]).transitionTo(outer1_11.CHANNEL(guildId, defaultChannel.id));
-        const obj = guildId(outer1_2[21]);
+        guildId(closure_1_2[21]).transitionTo(closure_1_11.CHANNEL(guildId, defaultChannel.id));
+        const obj = guildId(closure_1_2[21]);
       }
     };
     const intl2 = guildId(1236).intl;
     obj2[1] = intl2.string(guildId(1236).t["3iCBUn"]);
-    items[2] = callback(guildId(4745).Button, obj2);
+    items[2] = callback(guildId(4750).Button, obj2);
     obj[1] = items;
     let tmp6 = callback2(closure_4, obj);
   } else {

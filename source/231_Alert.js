@@ -4,13 +4,13 @@
 // Dependencies: [41, 42, 232]
 
 // Module 231 (Alert)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import _createClassDefault from "_createClass" /* 42 */;
+import closure_2 from "_classCallCheck" /* 41 */;
 
 let Alert = arg1;
 class Alert {
   constructor() {
-    tmp = outer1_2(this, Alert);
+    tmp = closure_2(this, Alert);
     return;
   }
 }
@@ -22,7 +22,7 @@ const items = [
       const _default = Alert(232).default;
       if (_default) {
         let str = Alert;
-        const dependencyMap = _default.getConstants();
+        dependencyMap = _default.getConstants();
         if (!Alert) {
           str = "";
         }
@@ -99,4 +99,4 @@ const items = [
   }
 ];
 
-export default _createClass(Alert, null, items);
+export default _createClassDefault(Alert, null, items);

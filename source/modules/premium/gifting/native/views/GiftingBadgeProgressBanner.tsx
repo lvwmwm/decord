@@ -1,35 +1,36 @@
-// Module ID: 10310
-// Function ID: 10311
+// Module ID: 10349
+// Function ID: 10350
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 4661, 712, 7139, 9177, 503, 10302, 4734, 1236, 2431, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 7177, 9214, 503, 10341, 4739, 1236, 2432, 2]
 // Exports: default
 
-// Module 10310 (GiftingBadgeProgressBanner)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10349 (GiftingBadgeProgressBanner)
+import noopAll from "noop" /* 19 */;
+import encodeProperties from "encodeProperties" /* 503 */;
+import ThemesDefault from "Themes" /* 712 */;
+import messagesProxyDefault from "messagesProxy" /* 2432 */;
+import Text from "Text" /* 4739 */;
+import contextDefault from "context" /* 7177 */;
+import trackImpressionDefault from "trackImpression" /* 9214 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, iconContainer: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_MUTED };
-const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey = { flexDirection: "row", alignItems: "center", padding: ThemesDefault.space.PX_8, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.sm, borderWidth: 1, borderStyle: "solid", borderColor: ThemesDefault.colors.BORDER_MUTED };
+const merged = Object.assign(ThemesDefault.shadows.SHADOW_LOW);
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { alignItems: "center", justifyContent: "center", padding: require("Themes").space.PX_8, marginInlineEnd: require("Themes").space.PX_8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { alignItems: "center", justifyContent: "center", padding: require("Themes").space.PX_8, marginInlineEnd: require("Themes").space.PX_8 };
-const result = require("jsxProd").fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgressBanner.tsx");
+createCacheKey[1] = { alignItems: "center", justifyContent: "center", padding: ThemesDefault.space.PX_8, marginInlineEnd: ThemesDefault.space.PX_8 };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { alignItems: "center", justifyContent: "center", padding: ThemesDefault.space.PX_8, marginInlineEnd: ThemesDefault.space.PX_8 };
+const result = require("set").fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgressBanner.tsx");
 
 export default function GiftingBadgeProgressBanner(arg0) {
-  let analyticsLocation;
-  let giftsToNextTier;
-  let nextTierIcon;
-  let nextTierName;
   ({ giftsToNextTier, nextTierName, nextTierIcon, analyticsLocation } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback();
   if (null != analyticsLocation) {
     const items = [analyticsLocation];
     let items1 = items;
@@ -37,25 +38,25 @@ export default function GiftingBadgeProgressBanner(arg0) {
     items1 = [];
   }
   let obj = { name: null, type: null, properties: null };
-  const tmp4 = importDefault(7139);
-  obj[0] = require(503) /* encodeProperties */.ImpressionNames.GIFTING_BADGE_PROGRESS_BANNER;
-  obj[1] = require(503) /* encodeProperties */.ImpressionTypes.VIEW;
+  const tmp4 = contextDefault;
+  obj[0] = encodeProperties.ImpressionNames.GIFTING_BADGE_PROGRESS_BANNER;
+  obj[1] = encodeProperties.ImpressionTypes.VIEW;
   obj[2] = { gifts_to_next_tier: giftsToNextTier, next_tier: nextTierName, location_stack: tmp4(...items1).analyticsLocations };
-  importDefault(9177)(obj, { trackOnInitialLoad: true });
+  trackImpressionDefault(obj, { trackOnInitialLoad: true });
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.iconContainer, children: null };
   let tmp10Result = null != nextTierIcon;
   if (tmp10Result) {
-    const obj1 = { icon: null, size: 24 };
+    obj1 = { icon: null, size: 24 };
     obj1[0] = nextTierIcon;
-    tmp10Result = tmp10(tmp2(10302), obj1);
+    tmp10Result = tmp10(tmp2(10341), obj1);
   }
   obj[1] = tmp10Result;
   const items2 = [closure_4(View, obj), ];
   const obj2 = { variant: "text-md/semibold", children: null };
   const intl = tmp6(1236).intl;
-  obj2[1] = intl.formatToPlainString(importDefault(2431)["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
-  items2[1] = closure_4(require(4734) /* Text */.Text, obj2);
+  obj2[1] = intl.formatToPlainString(messagesProxyDefault["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
+  items2[1] = closure_4(Text.Text, obj2);
   obj[1] = items2;
   return closure_5(View, obj);
 };

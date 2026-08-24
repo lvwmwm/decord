@@ -1,12 +1,13 @@
-// Module ID: 9678
-// Function ID: 9679
+// Module ID: 9717
+// Function ID: 9718
 // Name: isStableVoiceStateEqual
-// Dependencies: [4497, 4542, 643, 589, 2]
+// Dependencies: [4501, 4547, 643, 589, 2]
 // Exports: useMuteDeafenIconState, useStableVideoState, useStableVoiceParticipant, useVideoIconState
 
-// Module 9678 (isStableVoiceStateEqual)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import updateVoiceState from "updateVoiceState";
+// Module 9717 (isStableVoiceStateEqual)
+import shallowEqualDefault from "shallowEqual" /* 643 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_4 from "updateVoiceState" /* 4547 */;
 
 const require = arg1;
 function isStableVoiceStateEqual(arg0, arg1) {
@@ -14,7 +15,7 @@ function isStableVoiceStateEqual(arg0, arg1) {
   if (!tmp) {
     let tmp3 = null != arg0 && null != arg1;
     if (tmp3) {
-      tmp3 = importDefault(643)(arg0, arg1);
+      tmp3 = shallowEqualDefault(arg0, arg1);
     }
     tmp = tmp3;
   }
@@ -22,22 +23,22 @@ function isStableVoiceStateEqual(arg0, arg1) {
 }
 let obj = { DEAFENED_SERVER: 0, [0]: "DEAFENED_SERVER", DEAFENED: 1, [1]: "DEAFENED", MUTED_SERVER: 2, [2]: "MUTED_SERVER", MUTED_LOCAL: 3, [3]: "MUTED_LOCAL", MUTED: 4, [4]: "MUTED" };
 obj = { VIDEO_DISABLED_LOCAL_AUTO: 0, [0]: "VIDEO_DISABLED_LOCAL_AUTO", VIDEO_DISABLED_LOCAL: 1, [1]: "VIDEO_DISABLED_LOCAL", VIDEO_ACTIVE: 2, [2]: "VIDEO_ACTIVE" };
-const result = require("shallowEqual").fileFinishedImporting("modules/voice_panel/native/utils/VoiceStateIconUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/VoiceStateIconUtils.tsx");
 
 export const MuteDeafenIconState = obj;
 export const VideoIconState = obj;
 export const useStableVoiceParticipant = function useStableVoiceParticipant(arg0, arg1) {
   const _require = arg0;
-  let closure_1 = arg1;
-  const items = [_detectH265HardwareDecode, updateVoiceState];
+  closure_1 = arg1;
+  const items = [closure_3, closure_4];
   const items1 = [arg0, arg1];
   return _require(589).useStateFromStores(items, () => {
     if (null != closure_0) {
-      const voiceState = outer1_4.getVoiceState(closure_1, tmp);
+      const voiceState = closure_1_4.getVoiceState(closure_1, tmp);
       if (null != voiceState) {
-        const obj = { deaf: null, selfDeaf: null, mute: null, isLocalMute: null, selfMute: null };
+        obj = { deaf: null, selfDeaf: null, mute: null, isLocalMute: null, selfMute: null };
         ({ deaf: obj[0], selfDeaf: obj[1], mute: obj[2] } = voiceState);
-        obj[3] = outer1_3.isLocalMute(voiceState.userId);
+        obj[3] = closure_1_3.isLocalMute(voiceState.userId);
         obj[4] = voiceState.selfMute;
         return obj;
       }
@@ -46,17 +47,17 @@ export const useStableVoiceParticipant = function useStableVoiceParticipant(arg0
 };
 export const useMuteDeafenIconState = function useMuteDeafenIconState(id, guildId) {
   const _require = id;
-  let closure_1 = guildId;
-  let obj = _require(589);
-  const items = [_detectH265HardwareDecode, updateVoiceState];
+  closure_1 = guildId;
+  obj = _require(589);
+  const items = [closure_3, closure_4];
   const items1 = [id, guildId];
   const stateFromStores = obj.useStateFromStores(items, () => {
     if (null != closure_0) {
-      const voiceState = outer1_4.getVoiceState(closure_1, tmp);
+      const voiceState = closure_1_4.getVoiceState(closure_1, tmp);
       if (null != voiceState) {
-        const obj = { deaf: null, selfDeaf: null, mute: null, isLocalMute: null, selfMute: null };
+        obj = { deaf: null, selfDeaf: null, mute: null, isLocalMute: null, selfMute: null };
         ({ deaf: obj[0], selfDeaf: obj[1], mute: obj[2] } = voiceState);
-        obj[3] = outer1_3.isLocalMute(voiceState.userId);
+        obj[3] = closure_1_3.isLocalMute(voiceState.userId);
         obj[4] = voiceState.selfMute;
         return obj;
       }
@@ -81,20 +82,20 @@ export const useMuteDeafenIconState = function useMuteDeafenIconState(id, guildI
 };
 export const useStableVideoState = function useStableVideoState(arg0, arg1) {
   const _require = arg0;
-  let closure_1 = arg1;
-  const items = [_detectH265HardwareDecode, updateVoiceState];
+  closure_1 = arg1;
+  const items = [closure_3, closure_4];
   const items1 = [arg1, arg0];
   return _require(589).useStateFromStoresObject(items, () => {
     if (null != closure_0) {
-      const voiceState = outer1_4.getVoiceState(closure_1, tmp);
+      const voiceState = closure_1_4.getVoiceState(closure_1, tmp);
     }
     if (null != closure_0) {
       if (null != voiceState) {
-        let obj = outer1_3;
+        obj = closure_1_3;
         obj = { selfVideo: null, localVideoDisabledState: null };
         obj[0] = voiceState.selfVideo;
         let tmp5 = null;
-        if (outer1_3.isLocalVideoDisabled(voiceState.userId)) {
+        if (closure_1_3.isLocalVideoDisabled(voiceState.userId)) {
           let str = "manual";
           if (obj.isLocalVideoAutoDisabled(voiceState.userId)) {
             str = "auto";
@@ -110,21 +111,21 @@ export const useStableVideoState = function useStableVideoState(arg0, arg1) {
 };
 export const useVideoIconState = function useVideoIconState(id, guildId) {
   const _require = id;
-  let closure_1 = guildId;
-  let obj = _require(589);
-  const items = [_detectH265HardwareDecode, updateVoiceState];
+  closure_1 = guildId;
+  obj = _require(589);
+  const items = [closure_3, closure_4];
   const items1 = [guildId, id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     if (null != closure_0) {
-      const voiceState = outer1_4.getVoiceState(closure_1, tmp);
+      const voiceState = closure_1_4.getVoiceState(closure_1, tmp);
     }
     if (null != closure_0) {
       if (null != voiceState) {
-        let obj = outer1_3;
+        obj = closure_1_3;
         obj = { selfVideo: null, localVideoDisabledState: null };
         obj[0] = voiceState.selfVideo;
         let tmp5 = null;
-        if (outer1_3.isLocalVideoDisabled(voiceState.userId)) {
+        if (closure_1_3.isLocalVideoDisabled(voiceState.userId)) {
           let str = "manual";
           if (obj.isLocalVideoAutoDisabled(voiceState.userId)) {
             str = "auto";

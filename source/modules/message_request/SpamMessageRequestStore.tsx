@@ -1,12 +1,12 @@
-// Module ID: 4800
-// Function ID: 4801
+// Module ID: 4805
+// Function ID: 4806
 // Name: processChannel
 // Dependencies: [1391, 1220, 2]
 
-// Module 4800 (processChannel)
-import prototype from "ensureGuildLoaded";
-import "clearAll";
-import set from "set";
+// Module 4805 (processChannel)
+import clearAllDefault from "clearAll" /* 1220 */;
+import prototype from "ensureGuildLoaded" /* 1391 */;
+import set from "set" /* 2 */;
 
 function processChannel(isSpam) {
   isSpam = isSpam.isSpam;
@@ -45,7 +45,7 @@ function handleConnectionOpen() {
   const item = values.forEach((arg0) => {
     callback(arg0);
   });
-  let c3 = true;
+  c3 = true;
 }
 function handleSpamAcceptOptimistic(channelId) {
   set1.add(channelId.channelId);
@@ -69,13 +69,14 @@ function handleChannelDelete(channel) {
   }
   return flag;
 }
+clearAllDefault;
 let set = new Set();
 const set1 = new Set();
 let c3 = false;
 let SpamMessageRequestStore;
 class SpamMessageRequestStore extends tmp4 {
   constructor() {
-    c0 = undefined;
+    closure_0 = undefined;
     obj = {
       CONNECTION_OPEN: handleConnectionOpen,
       CONNECTION_OPEN_SUPPLEMENTAL: handleConnectionOpen,
@@ -89,7 +90,7 @@ class SpamMessageRequestStore extends tmp4 {
     };
     tmp = new tmp(obj, handleChannelDelete, new.target, tmp);
     // ThrowIfThisInitialized (0x7c)
-    c0 = tmp;
+    closure_0 = tmp;
     return tmp;
   }
 }
@@ -101,7 +102,7 @@ prototype["loadCache"] = function loadCache() {
   const snapshot = this.readSnapshot(SpamMessageRequestStore.LATEST_SNAPSHOT_VERSION);
   if (null != snapshot) {
     const _Set = Set;
-    const set = new Set(snapshot);
+    set = new Set(snapshot);
   }
 };
 prototype["takeSnapshot"] = function takeSnapshot() {

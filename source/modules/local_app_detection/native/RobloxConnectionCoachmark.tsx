@@ -1,45 +1,47 @@
-// Module ID: 16146
-// Function ID: 16147
+// Module ID: 16243
+// Function ID: 16244
 // Name: RobloxIcon
-// Dependencies: [32, 19, 17, 5221, 1922, 13258, 676, 1388, 21, 4661, 712, 4104, 1629, 4342, 6950, 6949, 7176, 4733, 4734, 1236, 4745, 12049, 9779, 7360, 1364, 5097, 1435, 1297, 6571, 589, 13259, 5223, 4196, 1377, 2]
+// Dependencies: [32, 19, 17, 5226, 1922, 13316, 676, 1388, 21, 4668, 712, 4107, 1629, 4346, 6988, 6987, 7214, 4738, 4739, 1236, 4750, 12101, 9818, 7398, 1364, 5102, 1435, 1297, 6607, 589, 13317, 5228, 4200, 1377, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 16146 (RobloxIcon)
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed";
-import getSystemLocale from "getSystemLocale";
-import { View } from "Stack";
-import set from "set";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import initialize from "initialize";
-import ME from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "WindowLaunchIcon";
-import createCacheKey from "createCacheKey";
+// Module 16243 (RobloxIcon)
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import isThemeLight from "isThemeLight" /* 1364 */;
+import getAvatarURL from "getAvatarURL" /* 1435 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5102 */;
+import inlineStyles from "inlineStyles" /* 6607 */;
+import inlineStylesDefault from "inlineStyles" /* 6607 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "set" /* 5226 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_8 from "initialize" /* 13316 */;
+import ME from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_14;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function RobloxIcon(theme) {
-  let obj = require(1364) /* isThemeLight */;
+  let obj = isThemeLight;
   const isThemeDarkResult = obj.isThemeDark(theme.theme);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let str = "white";
-  const value = importDefault(5097).get(constants.ROBLOX);
+  const value = getPlatformUserUrlDefault.get(constants.ROBLOX);
   if (isThemeDarkResult) {
     str = "black";
   }
-  const obj2 = importDefault(5097);
+  const obj2 = getPlatformUserUrlDefault;
   const icon = value.icon;
   obj = { style: items, children: null };
   items = [tmp.robloxIconContainer, { backgroundColor: str }];
-  const source = require(1435) /* getAvatarURL */.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
-  obj = { size: null, source: null, disableColor: true };
-  obj[0] = require(1297) /* Button */.IconSizes.LARGE;
-  obj[1] = source;
-  obj[1] = callback(require(1297) /* Button */.Icon, obj);
+  const source = getAvatarURL.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
+  obj = { size: tmp2(1297).IconSizes.LARGE, source, disableColor: true };
+  obj[1] = callback(Button.Icon, obj);
   return callback(View, obj);
 }
 class UnionIcon {
@@ -51,7 +53,7 @@ class UnionIcon {
     if (obj.isThemeDark(global.theme)) {
       str = "white";
     }
-    id = getSystemLocale.useId();
+    id = closure_4.useId();
     obj = { width: 25, height: 4, viewBox: "0 0 25 4", id, children: null };
     tmp4 = require("inlineStyles");
     items = [, ];
@@ -69,112 +71,103 @@ class UnionIcon {
   }
 }
 function UserIcon() {
-  const tmp = createCacheKey();
-  let obj = require(589) /* initialize */;
-  const items = [mergeGuildAvatar];
+  const tmp = callback3();
+  let obj = initialize;
+  const items = [closure_7];
   obj = { style: tmp.avatarContainer, children: null };
   obj = { style: tmp.avatarInnerBorder };
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const items1 = [callback(View, obj), ];
-  const obj1 = { size: null, user: null, guildId: "Array" };
-  obj1[0] = require(1297) /* Button */.AvatarSizes.NORMAL;
-  obj1[1] = stateFromStores;
-  items1[1] = callback(require(1297) /* Button */.Avatar, obj1);
+  const items1 = [callback(View, obj), callback(Button.Avatar, { size: Button.AvatarSizes.NORMAL, user: stateFromStores, guildId: "Array" })];
   obj[1] = items1;
   return callback2(View, obj);
 }
 ({ AnalyticsLocations: c9, PlatformTypes: c10, UserSettingsSections: unpackModuleId } = ME);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 createCacheKey = { robloxIconContainer: null, content: null, text: null, avatarContainer: null, avatarInnerBorder: null };
-createCacheKey = { width: 40, height: 40, borderRadius: require("Themes").radii.md, alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey = { width: 40, height: 40, borderRadius: ThemesDefault.radii.md, alignItems: "center", justifyContent: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[1] = { paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[2] = { textAlign: "center" };
 createCacheKey[3] = { position: "relative" };
-let obj1 = { paddingHorizontal: require("Themes").space.PX_16 };
-createCacheKey[4] = { zIndex: 1, position: "absolute", borderColor: require("Themes").colors.BORDER_STRONG, borderRadius: require("Themes").radii.round, borderWidth: 1, width: "100%", height: "100%" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { zIndex: 1, position: "absolute", borderColor: require("Themes").colors.BORDER_STRONG, borderRadius: require("Themes").radii.round, borderWidth: 1, width: "100%", height: "100%" };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/local_app_detection/native/RobloxConnectionCoachmark.tsx");
+let obj1 = { paddingHorizontal: ThemesDefault.space.PX_16 };
+createCacheKey[4] = { zIndex: 1, position: "absolute", borderColor: ThemesDefault.colors.BORDER_STRONG, borderRadius: ThemesDefault.radii.round, borderWidth: 1, width: "100%", height: "100%" };
+let closure_15 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { zIndex: 1, position: "absolute", borderColor: ThemesDefault.colors.BORDER_STRONG, borderRadius: ThemesDefault.radii.round, borderWidth: 1, width: "100%", height: "100%" };
+let result = require("set").fileFinishedImporting("modules/local_app_detection/native/RobloxConnectionCoachmark.tsx");
 
 export default function RobloxConnectionActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   function handleCancel() {
-    outer1_1(outer1_2[13]).hideActionSheet();
+    closure_1_1(closure_1_2[13]).hideActionSheet();
     if (markAsDismissed != null) {
-      tmp2(outer1_12.DISMISS);
+      tmp2(closure_1_12.DISMISS);
     }
   }
-  const tmp = createCacheKey();
-  let obj = markAsDismissed(4104);
+  const tmp = callback3();
+  let obj = markAsDismissed(4107);
   const theme = obj.useThemeContext().theme;
   obj = { startExpanded: true, contentStyles: tmp.content, header: null, onDismiss: null, children: null };
-  obj = { title: null, leading: null };
-  obj[1] = callback(markAsDismissed(7176).ActionSheetCloseButton, { onPress: handleCancel });
-  obj[2] = callback(markAsDismissed(6949).BottomSheetTitleHeader, obj);
+  obj = { title: null, leading: callback(markAsDismissed(7214).ActionSheetCloseButton, { onPress: handleCancel }) };
+  obj[2] = callback(markAsDismissed(6987).BottomSheetTitleHeader, obj);
   obj[3] = function onDismiss() {
-    return markAsDismissed(outer1_12.DISMISS);
+    return markAsDismissed(closure_1_12.DISMISS);
   };
-  const obj1 = { spacing: 24, style: { paddingBottom: importDefault(1629)().bottom }, children: null };
+  obj1 = { spacing: 24, style: { paddingBottom: useSafeAreaInsetsDefault().bottom }, children: null };
   const obj2 = { justify: "center", align: "center", direction: "horizontal", children: null };
   const items = [callback(RobloxIcon, { theme }), callback(UnionIcon, { theme }), callback(UserIcon, {})];
   obj2[3] = items;
-  const items1 = [callback2(markAsDismissed(4733).Stack, obj2), , ];
+  const items1 = [callback2(markAsDismissed(4738).Stack, obj2), , ];
   const obj3 = { justify: "center", children: null };
   const obj4 = { variant: "heading-xl/bold", style: tmp.text, children: null };
   const intl = markAsDismissed(1236).intl;
   obj4[2] = intl.string(markAsDismissed(1236).t.t3asUZ);
-  const items2 = [callback(markAsDismissed(4734).Text, obj4), ];
+  const items2 = [callback(markAsDismissed(4739).Text, obj4), ];
   const obj5 = { variant: "text-md/medium", style: tmp.text, children: null };
   const intl2 = markAsDismissed(1236).intl;
   obj5[2] = intl2.string(markAsDismissed(1236).t.no96NU);
-  items2[1] = callback(markAsDismissed(4734).Text, obj5);
+  items2[1] = callback(markAsDismissed(4739).Text, obj5);
   obj3[1] = items2;
-  items1[1] = callback2(markAsDismissed(4733).Stack, obj3);
+  items1[1] = callback2(markAsDismissed(4738).Stack, obj3);
   const obj6 = { children: null };
   const obj7 = { text: null, icon: null, iconPosition: "end", size: "lg", onPress: null };
   const intl3 = markAsDismissed(1236).intl;
   obj7[0] = intl3.string(markAsDismissed(1236).t.ItuabN);
-  const obj8 = { size: "sm", color: null };
-  obj8[1] = importDefault(712).colors.WHITE;
-  obj7[1] = callback(markAsDismissed(12049).WindowLaunchIcon, obj8);
+  obj7[1] = callback(markAsDismissed(12101).WindowLaunchIcon, { size: "sm", color: ThemesDefault.colors.WHITE });
   obj7[4] = function onPress() {
-    let obj = outer1_1(outer1_2[13]);
+    let obj = closure_1_1(closure_1_2[13]);
     obj.hideActionSheet();
     if (markAsDismissed != null) {
-      tmp4(outer1_12.PRIMARY);
+      tmp4(closure_1_12.PRIMARY);
     }
-    obj = { platformType: outer1_10.ROBLOX, location: outer1_9.ROBLOX_CONNECTION_ACTION_SHEET };
-    outer1_1(outer1_2[22])(obj);
-    obj = { screen: outer1_11.CONNECTIONS };
-    markAsDismissed(outer1_2[23]).openUserSettings(obj);
+    obj = { platformType: closure_1_10.ROBLOX, location: closure_1_9.ROBLOX_CONNECTION_ACTION_SHEET };
+    closure_1_1(closure_1_2[22])(obj);
+    obj = { screen: closure_1_11.CONNECTIONS };
+    markAsDismissed(closure_1_2[23]).openUserSettings(obj);
   };
-  const items3 = [callback(markAsDismissed(4745).Button, obj7), ];
+  const items3 = [callback(markAsDismissed(4750).Button, obj7), ];
   const obj9 = { text: null, variant: "secondary", size: "lg", onPress: null };
   const intl4 = markAsDismissed(1236).intl;
   obj9[0] = intl4.string(markAsDismissed(1236).t.DiGJy3);
   obj9[3] = handleCancel;
-  items3[1] = callback(markAsDismissed(4745).Button, obj9);
+  items3[1] = callback(markAsDismissed(4750).Button, obj9);
   obj6[0] = items3;
-  items1[2] = callback2(markAsDismissed(4733).Stack, obj6);
+  items1[2] = callback2(markAsDismissed(4738).Stack, obj6);
   obj1[2] = items1;
-  obj[4] = callback2(markAsDismissed(4733).Stack, obj1);
-  return callback(markAsDismissed(6950).BottomSheet, obj);
+  obj[4] = callback2(markAsDismissed(4738).Stack, obj1);
+  return callback(markAsDismissed(6988).BottomSheet, obj);
 };
 export { UnionIcon };
 export const useShouldShowRobloxConnectionCoachmark = function useShouldShowRobloxConnectionCoachmark() {
-  let fetchingAccounts;
-  let hasRoloxAccount;
-  const items = [initialize];
-  stateFromStores = stateFromStores(589).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(13259).DetectableAppNames.ROBLOX));
+  const items = [closure_8];
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(13317).DetectableAppNames.ROBLOX));
   const tmp2 = hasRoloxAccount(React.useState(false), 2);
   const first = tmp2[0];
-  const dependencyMap = tmp2[1];
+  dependencyMap = tmp2[1];
   let obj = stateFromStores(589);
-  const items1 = [set];
+  const items1 = [closure_6];
   const stateFromStoresObject = stateFromStores(589).useStateFromStoresObject(items1, () => {
-    const obj = { fetchingAccounts: set.isFetching(), hasRoloxAccount: null };
-    const accounts = set.getAccounts();
+    const obj = { fetchingAccounts: closure_6.isFetching(), hasRoloxAccount: null };
+    const accounts = closure_6.getAccounts();
     obj[1] = null != accounts.find((type) => type.type === constants.ROBLOX);
     return obj;
   });
@@ -187,16 +180,16 @@ export const useShouldShowRobloxConnectionCoachmark = function useShouldShowRobl
     }
     if (tmp) {
       dependencyMap(true);
-      const response = first(5223).fetch();
-      const obj = first(5223);
+      const response = first(5228).fetch();
+      const obj = first(5228);
     }
   }, items2);
   const items3 = [hasRoloxAccount];
   const effect1 = React.useEffect(() => {
     if (hasRoloxAccount) {
-      let obj = stateFromStores(4196);
+      let obj = stateFromStores(4200);
       obj = { dismissAction: null };
-      obj[0] = outer1_12.INDIRECT_ACTION;
+      obj[0] = closure_1_12.INDIRECT_ACTION;
       const result = obj.UNSAFE_markDismissibleContentAsDismissed(stateFromStores(1377).DismissibleContent.ROBLOX_CONNECTION_COACHMARK, obj);
     }
   }, items3);

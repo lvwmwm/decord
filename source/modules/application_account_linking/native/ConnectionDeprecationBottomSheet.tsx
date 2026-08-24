@@ -1,78 +1,80 @@
-// Module ID: 16157
-// Function ID: 16158
+// Module ID: 16254
+// Function ID: 16255
 // Name: ConnectionIcon
-// Dependencies: [19, 17, 4478, 5221, 1388, 21, 4661, 712, 4104, 1629, 589, 5097, 7142, 7139, 7159, 16158, 4342, 16160, 2007, 6949, 6950, 4733, 16146, 4734, 1236, 2885, 9238, 4745, 12049, 1364, 1435, 4747, 7149, 7145, 2]
+// Dependencies: [19, 17, 4482, 5226, 1388, 21, 4668, 712, 4107, 1629, 589, 5102, 7180, 7177, 7197, 16255, 4346, 16257, 2008, 6987, 6988, 4738, 16243, 4739, 1236, 2888, 9275, 4750, 12101, 1364, 1435, 4752, 7187, 7183, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 16157 (ConnectionIcon)
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase";
-import { View } from "IncentivizedAccountLinkConfirmationBottomSheet";
-import addApplication from "addApplication";
-import set from "set";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "Stack";
-import createCacheKey from "createCacheKey";
+// Module 16254 (ConnectionIcon)
+import ThemesDefault from "Themes" /* 712 */;
+import isThemeLight from "isThemeLight" /* 1364 */;
+import getAvatarURL from "getAvatarURL" /* 1435 */;
+import IconSizes from "IconSizes" /* 4752 */;
+import IconSizesDefault from "IconSizes" /* 4752 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 7180 */;
+import GameIcon from "GameIcon" /* 7187 */;
+import GameIconDefault from "GameIcon" /* 7187 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "addApplication" /* 4482 */;
+import closure_6 from "set" /* 5226 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function ConnectionIcon(arg0) {
-  let platform;
-  let theme;
   ({ platform, theme } = arg0);
-  const tmp = createCacheKey();
-  let obj = require(1364) /* isThemeLight */;
+  const tmp = callback3();
+  let obj = isThemeLight;
   const isThemeDarkResult = obj.isThemeDark(theme);
   const tmp2 = require;
   const icon = platform.icon;
   obj = { style: tmp.iconContainer, children: null };
-  const source = require(1435) /* getAvatarURL */.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
+  const source = getAvatarURL.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
   obj = { size: null, source: null, disableColor: true, style: null };
-  const obj2 = require(1435) /* getAvatarURL */;
-  obj[0] = tmp2(4747).IconSizes.CUSTOM;
+  const obj2 = getAvatarURL;
+  obj[0] = IconSizes.IconSizes.CUSTOM;
   obj[1] = source;
   obj[3] = tmp.connectionIcon;
-  obj[1] = callback(importDefault(4747), obj);
+  obj[1] = callback(IconSizesDefault, obj);
   return callback(View, obj);
 }
 function ApplicationIcon(application) {
   application = application.application;
-  let obj = { style: createCacheKey().iconContainer, children: null };
+  let obj = { style: callback3().iconContainer, children: null };
   let tmpResult = null;
   if (null != application) {
     obj = { game: null, size: null };
     obj[0] = application;
-    obj[1] = require(7149) /* GameIcon */.GameIconSizes.NORMAL;
-    tmpResult = tmp(importDefault(7149), obj);
-    const tmp6 = importDefault(7149);
+    obj[1] = GameIcon.GameIconSizes.NORMAL;
+    tmpResult = tmp(GameIconDefault, obj);
+    const tmp6 = GameIconDefault;
   }
   obj[1] = tmpResult;
   return closure_8(View, obj);
 }
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { iconContainer: { width: 56, height: 56, alignItems: "center", justifyContent: "center" }, content: null, text: null, connectionIcon: null };
-createCacheKey = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { textAlign: "center" };
 createCacheKey[3] = { height: 48, width: 48 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("addApplication").fileFinishedImporting("modules/application_account_linking/native/ConnectionDeprecationBottomSheet.tsx");
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/application_account_linking/native/ConnectionDeprecationBottomSheet.tsx");
 
 export default function ConnectionDeprecationBottomSheet(arg0) {
-  let markAsDismissed;
-  let require;
   ({ platformTypes: require, markAsDismissed } = arg0);
   let replacedBy;
   let startAuthorization;
   let analyticsLocations;
   let callback;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = require(replacedBy[8]);
   const theme = obj.useThemeContext().theme;
-  let obj1 = require(replacedBy[10]);
-  const items = [set];
+  obj1 = require(replacedBy[10]);
+  const items = [closure_6];
   const stateFromStores = obj1.useStateFromStores(items, () => {
-    const accounts = outer1_6.getAccounts();
+    const accounts = closure_1_6.getAccounts();
     const found = accounts.find((type) => closure_0.includes(type.type));
     let type;
     if (found != null) {
@@ -99,7 +101,7 @@ export default function ConnectionDeprecationBottomSheet(arg0) {
   analyticsLocations = tmp4Result(tmp4(tmp3[14]).ACTION_SHEET).analyticsLocations;
   const items2 = [replacedBy];
   callback = startAuthorization.useCallback(() => {
-    let obj = outer1_0(replacedBy[15]);
+    let obj = closure_1_0(replacedBy[15]);
     obj = {
       applicationId: replacedBy,
       onSuccess() {
@@ -115,7 +117,7 @@ export default function ConnectionDeprecationBottomSheet(arg0) {
       obj[1] = tmp.content;
       obj[2] = callback(tmp2(tmp3[19]).BottomSheetTitleHeader, { title: null });
       obj[3] = function onDismiss() {
-        return markAsDismissed(outer1_7.DISMISS);
+        return markAsDismissed(closure_1_7.DISMISS);
       };
       obj = { spacing: 24, style: null, children: null };
       obj1 = { paddingBottom: null };
@@ -146,9 +148,7 @@ export default function ConnectionDeprecationBottomSheet(arg0) {
       const obj9 = { connectionName: null, orbCount: 200, orbsIconHook: null };
       obj9[0] = value.name;
       obj9[2] = function orbsIconHook() {
-        const obj = { size: "xs", color: null };
-        obj[1] = markAsDismissed(replacedBy[7]).colors.TEXT_STRONG;
-        return callback2(callback(replacedBy[26]).OrbsIcon, obj);
+        return callback2(callback(replacedBy[26]).OrbsIcon, { size: "xs", color: markAsDismissed(replacedBy[7]).colors.TEXT_STRONG });
       };
       obj8[2] = intl2.format(tmp4(tmp3[25]).qV9zT6, obj9);
       items6[1] = callback(tmp2(tmp3[23]).Text, obj8);
@@ -169,7 +169,7 @@ export default function ConnectionDeprecationBottomSheet(arg0) {
       obj13[3] = function onPress() {
         markAsDismissed(replacedBy[16]).hideActionSheet();
         if (markAsDismissed != null) {
-          tmp2(outer1_7.DISMISS);
+          tmp2(closure_1_7.DISMISS);
         }
       };
       items7[1] = callback(tmp2(tmp3[27]).Button, obj13);
@@ -183,15 +183,11 @@ export default function ConnectionDeprecationBottomSheet(arg0) {
   return false;
 };
 export const useShouldShowConnectionDeprecationBottomSheet = function useShouldShowConnectionDeprecationBottomSheet(deprecatedPlatformTypes) {
-  let canStartAuthorization;
-  let fetchingConnections;
-  let hasAlreadyLinked;
-  let matchingPlatform;
   deprecatedPlatformTypes = deprecatedPlatformTypes.deprecatedPlatformTypes;
-  const items = [set];
+  const items = [closure_6];
   const stateFromStoresObject = deprecatedPlatformTypes(589).useStateFromStoresObject(items, () => {
-    const obj = { fetchingConnections: outer1_6.isFetching(), matchingPlatform: null };
-    const accounts = outer1_6.getAccounts();
+    const obj = { fetchingConnections: closure_1_6.isFetching(), matchingPlatform: null };
+    const accounts = closure_1_6.getAccounts();
     const mapped = accounts.map((type) => callback(table[11]).get(type.type));
     obj[1] = mapped.find((migrationData) => {
       migrationData = migrationData.migrationData;
@@ -215,8 +211,8 @@ export const useShouldShowConnectionDeprecationBottomSheet = function useShouldS
       replacedBy = migrationData.replacedBy;
     }
   }
-  const getOrFetchApplication = deprecatedPlatformTypes(7145).useGetOrFetchApplication(replacedBy);
-  const tmp5 = importDefault(7142)(getOrFetchApplication);
+  const getOrFetchApplication = deprecatedPlatformTypes(7183).useGetOrFetchApplication(replacedBy);
+  const tmp5 = useStartAuthorizeDefault(getOrFetchApplication);
   ({ hasAlreadyLinked, canStartAuthorization } = tmp5);
   if (!fetchingConnections) {
     fetchingConnections = !tmp5.fetched;

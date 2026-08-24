@@ -4,14 +4,17 @@
 // Dependencies: [823, 824]
 
 // Module 898 (set)
-const require = arg1;
+import __SENTRY_DEBUG__ from "__SENTRY_DEBUG__" /* 823 */;
+import consoleSandbox from "consoleSandbox" /* 824 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 const set = new Set();
 arg5._INTERNAL_clearAiProviderSkips = function _INTERNAL_clearAiProviderSkips() {
   set.clear();
-  if (require(823) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
-    const debug = require(824) /* consoleSandbox */.debug;
+  if (__SENTRY_DEBUG__.DEBUG_BUILD) {
+    const debug = consoleSandbox.debug;
     debug.log("Cleared AI provider skip registrations");
   }
 };

@@ -1,22 +1,24 @@
-// Module ID: 10862
-// Function ID: 10863
+// Module ID: 10901
+// Function ID: 10902
 // Name: getFollowerStatsForChannel
 // Dependencies: [589, 709, 2]
 
-// Module 10862 (getFollowerStatsForChannel)
-import { Store } from "initialize";
+// Module 10901 (getFollowerStatsForChannel)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let closure_0 = { FAILED: "failed", SUCCEEDED: "succeeded" };
 let closure_1 = {};
+const Store = initializeDefault.Store;
 class ChannelFollowerStatsStore extends Store {
 }
 ChannelFollowerStatsStore.prototype["getFollowerStatsForChannel"] = function getFollowerStatsForChannel(closure_0) {
   return table[closure_0];
 };
 ChannelFollowerStatsStore.displayName = "ChannelFollowerStatsStore";
-const channelFollowerStatsStore = new ChannelFollowerStatsStore(require("dispatcher"), {
+const channelFollowerStatsStore = new ChannelFollowerStatsStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_1 = {};
+    closure_1 = {};
   },
   CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS: function handleFollowerStatsFetchSuccess(stats) {
     stats = stats.stats;

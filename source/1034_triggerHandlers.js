@@ -4,7 +4,9 @@
 // Dependencies: [1035, 817, 1036, 1051, 1054, 1055, 1046]
 
 // Module 1034 (triggerHandlers)
-const require = arg1;
+import __SENTRY_DEBUG__ from "__SENTRY_DEBUG__" /* 1035 */;
+
+require = arg1;
 let dependencyMap = arg6;
 function triggerHandlers(arg0, arg1) {
   let length;
@@ -17,7 +19,7 @@ function triggerHandlers(arg0, arg1) {
       try {
         tmp14(arg1);
       } catch (tmp17) {
-        if (require(1035) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
+        if (__SENTRY_DEBUG__.DEBUG_BUILD) {
           const debug = tmp18(817).debug;
           debug.error(tmp2 + tmp6 + tmp3 + tmp18(817).getFunctionName(tmp7) + tmp4, tmp17);
           const tmp18Result = tmp18(817);
@@ -46,7 +48,7 @@ arg5.addClsInstrumentationHandler = function addClsInstrumentationHandler(arg0, 
     tmp5.cls = true;
     const onCLSResult = obj.onCLS((metric) => {
       callback("cls", { metric });
-      let closure_2 = metric;
+      closure_2 = metric;
     }, { reportAllChanges: true });
   }
   if (closure_2) {
@@ -59,13 +61,13 @@ arg5.addClsInstrumentationHandler = function addClsInstrumentationHandler(arg0, 
     tmp10 = onCLSResult;
   }
   cls = "cls";
-  const dependencyMap = arg0;
+  dependencyMap = arg0;
   closure_2 = tmp10;
   return () => {
     if (closure_2) {
       tmp();
     }
-    if (outer1_6[ttfb]) {
+    if (closure_1_6[ttfb]) {
       const index = arr.indexOf(closure_1);
       if (-1 !== index) {
         arr.splice(index, 1);
@@ -81,7 +83,7 @@ arg5.addInpInstrumentationHandler = function addInpInstrumentationHandler(_onInp
     let obj = inp(1055);
     obj.onINP((metric) => {
       callback("inp", { metric });
-      let closure_5 = metric;
+      closure_5 = metric;
     });
     tmp5.inp = true;
   }
@@ -91,12 +93,12 @@ arg5.addInpInstrumentationHandler = function addInpInstrumentationHandler(_onInp
     _onInp(obj);
   }
   inp = "inp";
-  const dependencyMap = _onInp;
+  dependencyMap = _onInp;
   return () => {
     if (closure_2) {
       tmp();
     }
-    if (outer1_6[ttfb]) {
+    if (closure_1_6[ttfb]) {
       const index = arr.indexOf(closure_1);
       if (-1 !== index) {
         arr.splice(index, 1);
@@ -120,7 +122,7 @@ arg5.addLcpInstrumentationHandler = function addLcpInstrumentationHandler(arg0, 
     tmp5.lcp = true;
     const onLCPResult = obj.onLCP((metric) => {
       callback("lcp", { metric });
-      let closure_3 = metric;
+      closure_3 = metric;
     }, { reportAllChanges: true });
   }
   if (closure_3) {
@@ -133,13 +135,13 @@ arg5.addLcpInstrumentationHandler = function addLcpInstrumentationHandler(arg0, 
     tmp10 = onLCPResult;
   }
   lcp = "lcp";
-  const dependencyMap = arg0;
-  let closure_2 = tmp10;
+  dependencyMap = arg0;
+  closure_2 = tmp10;
   return () => {
     if (closure_2) {
       tmp();
     }
-    if (outer1_6[ttfb]) {
+    if (closure_1_6[ttfb]) {
       const index = arr.indexOf(closure_1);
       if (-1 !== index) {
         arr.splice(index, 1);
@@ -158,18 +160,18 @@ arg5.addPerformanceInstrumentationHandler = function addPerformanceInstrumentati
       obj.durationThreshold = 0;
     }
     _require(1046).observe(event, (entries) => {
-      outer1_8(closure_0, { entries });
+      closure_1_8(closure_0, { entries });
     }, obj);
     tmp4[event] = true;
     const obj2 = _require(1046);
   }
   _require = event;
-  const dependencyMap = handleEntries;
+  dependencyMap = handleEntries;
   return () => {
     if (closure_2) {
       tmp();
     }
-    if (outer1_6[ttfb]) {
+    if (closure_1_6[ttfb]) {
       const index = arr.indexOf(closure_1);
       if (-1 !== index) {
         arr.splice(index, 1);
@@ -185,7 +187,7 @@ arg5.addTtfbInstrumentationHandler = function addTtfbInstrumentationHandler(arg0
     let obj = ttfb(1054);
     obj.onTTFB((metric) => {
       callback("ttfb", { metric });
-      let closure_4 = metric;
+      closure_4 = metric;
     });
     tmp5.ttfb = true;
   }
@@ -195,12 +197,12 @@ arg5.addTtfbInstrumentationHandler = function addTtfbInstrumentationHandler(arg0
     arg0(obj);
   }
   ttfb = "ttfb";
-  const dependencyMap = arg0;
+  dependencyMap = arg0;
   return () => {
     if (closure_2) {
       tmp();
     }
-    if (outer1_6[ttfb]) {
+    if (closure_1_6[ttfb]) {
       const index = arr.indexOf(closure_1);
       if (-1 !== index) {
         arr.splice(index, 1);

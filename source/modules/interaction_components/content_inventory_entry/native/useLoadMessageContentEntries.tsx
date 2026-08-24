@@ -1,27 +1,28 @@
-// Module ID: 10721
-// Function ID: 10722
+// Module ID: 10760
+// Function ID: 10761
 // Name: fetchColors
-// Dependencies: [32, 5, 19, 4478, 4481, 10722, 8418, 7140, 8345, 38, 7247, 1954, 8343, 5026, 2]
+// Dependencies: [32, 5, 19, 4482, 4485, 10761, 8457, 7178, 8384, 38, 7285, 1954, 8382, 5031, 2]
 // Exports: default
 
-// Module 10721 (fetchColors)
-import _slicedToArray from "_slicedToArray";
-import areArraysShallowlyEqual from "areArraysShallowlyEqual";
-import noop from "noop";
-import addApplication from "addApplication";
-import { ImageSizes } from "items3";
+// Module 10760 (fetchColors)
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "noop" /* 19 */;
+import closure_6 from "addApplication" /* 4482 */;
+import { ImageSizes } from "items3" /* 4485 */;
 
-const require = arg1;
+require = arg1;
 function fetchColors(play) {
-  let closure_0 = play;
-  return promiseDeduper1.one(play, () => play(outer1_2[8]).maybeFetchColors(play));
+  closure_0 = play;
+  return promiseDeduper1.one(play, () => play(closure_1_2[8]).maybeFetchColors(play));
 }
 function _fetchApplicationParts() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -34,7 +35,7 @@ function _fetchApplicationParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -58,12 +59,12 @@ function _fetchApplicationParts() {
                 application_id = application_id.extra.application_id;
                 c3 = 1;
                 c4 = 1;
-                const obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = (function fetchApplication(application_id) {
-                  let closure_0 = application_id;
+                  closure_0 = application_id;
                   return closure_9.one(application_id, () => {
                     const items = [closure_0];
-                    return outer1_1(outer1_2[7]).fetchApplications(items);
+                    return closure_1_1(closure_1_2[7]).fetchApplications(items);
                   });
                 })(application_id);
                 return obj1;
@@ -100,7 +101,7 @@ function _fetchApplicationParts() {
             return obj;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp6) {
           c4 = tmp;
           throw tmp6;
@@ -108,7 +109,7 @@ function _fetchApplicationParts() {
       }
     })();
   });
-  const _fetchApplicationParts = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -120,9 +121,9 @@ function _fetchApplicationParts() {
 function _fetchUserParts() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -135,7 +136,7 @@ function _fetchUserParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -152,9 +153,9 @@ function _fetchUserParts() {
             } else {
               c2 = 1;
               c1 = 1;
-              let obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = (function fetchUser(author_id) {
-                let closure_0 = author_id;
+                closure_0 = author_id;
                 return closure_8.one(author_id, callback(function*() {
                   if (v0 === 2) {
                     v0 = 3;
@@ -167,7 +168,7 @@ function _fetchUserParts() {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -182,7 +183,7 @@ function _fetchUserParts() {
                           obj[0] = arg1;
                           return obj;
                         } else {
-                          let obj1 = v0(outer1_2[6]);
+                          obj1 = v0(closure_1_2[6]);
                           c1 = 1;
                           v0 = 1;
                           obj1 = { value: null, done: false };
@@ -199,7 +200,7 @@ function _fetchUserParts() {
                         return obj;
                       } else {
                         v0 = 3;
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } catch (tmp8) {
                       v0 = tmp;
@@ -220,7 +221,7 @@ function _fetchUserParts() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp6) {
           c1 = tmp;
@@ -229,7 +230,7 @@ function _fetchUserParts() {
       }
     })();
   });
-  const _fetchUserParts = tmp;
+  closure_13 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -241,9 +242,9 @@ function _fetchUserParts() {
 function _fetchWatchedContentParts() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -256,7 +257,7 @@ function _fetchWatchedContentParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -272,15 +273,15 @@ function _fetchWatchedContentParts() {
               return obj;
             } else if ("application_id" in lib.extra) {
               if ("media_assets_large_image" in tmp17.extra) {
-                let obj1 = lib(table[10]);
+                obj1 = lib(table[10]);
                 const items = [, ];
-                ({ LARGE: arr[0], LARGE: arr[1] } = outer1_7);
+                ({ LARGE: arr[0], LARGE: arr[1] } = closure_1_7);
                 const assetImage = obj1.getAssetImage(tmp17.extra.application_id, tmp17.extra.media_assets_large_image, items);
                 if (null != assetImage) {
                   table = 1;
                   c1 = 1;
                   obj1 = { value: null, done: false };
-                  obj1[0] = outer1_11(assetImage);
+                  obj1[0] = closure_1_11(assetImage);
                   return obj1;
                 }
               }
@@ -295,7 +296,7 @@ function _fetchWatchedContentParts() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp11) {
           c1 = tmp;
           throw tmp11;
@@ -303,7 +304,7 @@ function _fetchWatchedContentParts() {
       }
     })();
   });
-  const _fetchWatchedContentParts = tmp;
+  closure_14 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -315,9 +316,9 @@ function _fetchWatchedContentParts() {
 function _fetchListenedContentParts() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -330,7 +331,7 @@ function _fetchListenedContentParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -349,8 +350,8 @@ function _fetchListenedContentParts() {
               if (null != image_url) {
                 c2 = 1;
                 c1 = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = outer1_11(image_url);
+                obj1 = { value: null, done: false };
+                obj1[0] = closure_1_11(image_url);
                 return obj1;
               }
             }
@@ -364,7 +365,7 @@ function _fetchListenedContentParts() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp7) {
           c1 = tmp;
           throw tmp7;
@@ -372,7 +373,7 @@ function _fetchListenedContentParts() {
       }
     })();
   });
-  const _fetchListenedContentParts = tmp;
+  closure_15 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -384,9 +385,9 @@ function _fetchListenedContentParts() {
 function _fetchTopArtistContentParts() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (v0 === 2) {
         v0 = 3;
@@ -399,7 +400,7 @@ function _fetchTopArtistContentParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -416,7 +417,7 @@ function _fetchTopArtistContentParts() {
             } else if ("media" in lib.extra) {
               const image_url = lib.extra.media.image_url;
               v0(38)(null != image_url, "missing image url for top artist");
-              let obj1 = lib(8345);
+              obj1 = lib(8384);
               dependencyMap = 1;
               v0 = 1;
               obj1 = { value: null, done: false };
@@ -433,7 +434,7 @@ function _fetchTopArtistContentParts() {
             return obj;
           }
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp10) {
           v0 = tmp;
           throw tmp10;
@@ -441,7 +442,7 @@ function _fetchTopArtistContentParts() {
       }
     })();
   });
-  const _fetchTopArtistContentParts = tmp;
+  closure_16 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -453,10 +454,10 @@ function _fetchTopArtistContentParts() {
 function _loadContentEntryParts() {
   let self = this;
   let tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c10 = 0;
-    let c11 = 0;
-    let c8 = 0;
+    closure_0 = arg0;
+    c10 = 0;
+    c11 = 0;
+    c8 = 0;
     return (function*(arg0) {
       if (c11 === 2) {
         c11 = 3;
@@ -469,7 +470,7 @@ function _loadContentEntryParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -484,7 +485,7 @@ function _loadContentEntryParts() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_7 = tmp5;
+              closure_7 = tmp5;
               let components;
               components = [];
               let lib = function* _loop() {
@@ -499,7 +500,7 @@ function _loadContentEntryParts() {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -513,11 +514,11 @@ function _loadContentEntryParts() {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      if (outer1_2.type === arr(outer1_2[11]).ComponentType.CONTENT_INVENTORY_ENTRY) {
+                      if (closure_1_2.type === arr(closure_1_2[11]).ComponentType.CONTENT_INVENTORY_ENTRY) {
                         function _fetchEntryParts() {
                           const self = this;
-                          const tmp = outer1_4(/* F120921 */ function() { ... });
-                          const _fetchEntryParts = tmp;
+                          const tmp = closure_1_4(/* F121951 */ function() { ... });
+                          closure_1 = tmp;
                           const apply = tmp.apply;
                           if (typeof apply === "unknown") {
                             let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -526,7 +527,7 @@ function _loadContentEntryParts() {
                           }
                           return applyArgumentsResult;
                         }
-                        const contentInventoryEntry = outer1_2.contentInventoryEntry;
+                        const contentInventoryEntry = closure_1_2.contentInventoryEntry;
                         const items = [];
                         arr = items;
                         arr = items.push((function fetchApplicationParts(contentInventoryEntry) {
@@ -591,7 +592,7 @@ function _loadContentEntryParts() {
                         })());
                       }
                       arr = 3;
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp4) {
                     arr = tmp;
@@ -604,16 +605,16 @@ function _loadContentEntryParts() {
               if (lib === undefined) {
                 c10 = 2;
                 c11 = 1;
-                let obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = Promise.all(components);
                 return obj1;
               } else {
-                let c8 = 1;
+                c8 = 1;
                 components = tmp35;
                 const iter4 = lib()[tmp52.iterator]();
                 HermesBuiltin.ensureObject("iterator is not an object");
                 const next = iter4.next;
-                let _slicedToArray;
+                closure_3 = undefined;
                 const tmp57 = lib();
               }
             }
@@ -632,7 +633,7 @@ function _loadContentEntryParts() {
               return obj2;
             } else {
               c11 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             if (3 !== tmp8) {
@@ -664,9 +665,9 @@ function _loadContentEntryParts() {
               c11 = 3;
               throw arg1;
             } else {
-              _slicedToArray = arg1;
+              closure_3 = arg1;
               if (arg0 === 2) {
-                _slicedToArray = arg1;
+                closure_3 = arg1;
                 c8 = 1;
                 const method2 = HermesBuiltin.getMethod("return");
                 if (method2 === undefined) {
@@ -677,7 +678,7 @@ function _loadContentEntryParts() {
                   obj3[0] = arg1;
                   return obj3;
                 } else {
-                  const iter2 = method2(_slicedToArray);
+                  const iter2 = method2(closure_3);
                   HermesBuiltin.ensureObject("iterator.return() did not return an object");
                   if (iter2.done) {
                     c8 = 0;
@@ -719,7 +720,7 @@ function _loadContentEntryParts() {
       }
     })();
   });
-  const _loadContentEntryParts = tmp;
+  closure_17 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -735,8 +736,8 @@ function isMessageRenderable(arg0) {
     let tmp2 = nextResult;
     let tmp3 = require;
     let tmp4 = dependencyMap;
-    if (nextResult.type === require(1954) /* PermissionOverwriteType */.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8343);
+    if (nextResult.type === PermissionOverwriteType.ComponentType.CONTENT_INVENTORY_ENTRY) {
+      let tmp3Result = tmp3(8382);
       let obj = { component: null, message: null };
       obj = { contentInventoryEntry: null };
       let tmp5 = nextResult;
@@ -757,30 +758,30 @@ function isMessageRenderable(arg0) {
 let promiseDeduper = new require("areArraysShallowlyEqual").PromiseDeduper();
 promiseDeduper = new require("areArraysShallowlyEqual").PromiseDeduper();
 const promiseDeduper1 = new require("areArraysShallowlyEqual").PromiseDeduper();
-let result = require("noop").fileFinishedImporting("modules/interaction_components/content_inventory_entry/native/useLoadMessageContentEntries.tsx");
+let result = require("set").fileFinishedImporting("modules/interaction_components/content_inventory_entry/native/useLoadMessageContentEntries.tsx");
 
 export default function useLoadMessageContentEntries(arg0) {
   let _require = arg0;
-  let closure_1 = first1.useRef(new Map());
+  closure_1 = first1.useRef(new Map());
   const map = new Map();
-  const dependencyMap = first1.useRef(new Map());
-  const map1 = new Map();
+  dependencyMap = first1.useRef(new Map());
+  map1 = new Map();
   const tmp4 = first(first1.useState(new Set()), 2);
   first = tmp4[0];
   let callback = tmp4[1];
   let set = new Set();
   const tmp7 = first(first1.useState(new Set()), 2);
   first1 = tmp7[0];
-  let addApplication = tmp7[1];
-  let obj = _require(8345);
+  closure_6 = tmp7[1];
+  let obj = _require(8384);
   _require = undefined;
   const colorStore = obj.useColorStore((palette) => palette.palette);
   _require = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (c7 === 2) {
         c7 = 3;
@@ -793,7 +794,7 @@ export default function useLoadMessageContentEntries(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -808,24 +809,24 @@ export default function useLoadMessageContentEntries(arg0) {
               obj[0] = arg1;
               return obj;
             } else {
-              let _slicedToArray = tmp3;
-              let closure_2 = tmp5;
+              closure_3 = tmp3;
+              closure_2 = tmp5;
               if (0 !== closure_1.components.length) {
                 const current7 = closure_1.current;
                 if (!current7.has(tmp50)) {
                   const current5 = closure_1.current;
                   const result = current5.set(tmp50, "loading");
-                  outer1_4((arg0) => {
+                  closure_1_4((arg0) => {
                     const items = [];
                     items[HermesBuiltin.arraySpread(arg0, 0)] = closure_0;
                     return new Set(items);
                   });
-                  const current6 = outer1_2.current;
+                  const current6 = closure_1_2.current;
                   const result1 = current6.set(tmp50, tmp51);
-                  let c5 = 1;
+                  c5 = 1;
                   v0 = 2;
                   c7 = 1;
-                  const obj1 = { value: null, done: false };
+                  obj1 = { value: null, done: false };
                   obj1[0] = (function loadContentEntryParts(arg0) {
                     const self = this;
                     const apply = closure_17.apply;
@@ -845,9 +846,9 @@ export default function useLoadMessageContentEntries(arg0) {
               c5 = 0;
               const current3 = closure_1.current;
               const result2 = current3.set(closure_0, "error");
-              const current4 = outer1_2.current;
+              const current4 = closure_1_2.current;
               current4.delete(closure_0);
-              outer1_4((arg0) => {
+              closure_1_4((arg0) => {
                 const items = [...arg0];
                 return new Set(items.filter((arg0) => arg0 !== closure_0));
               });
@@ -860,12 +861,12 @@ export default function useLoadMessageContentEntries(arg0) {
               c7 = 3;
               throw arg1;
             } else if (arg0 !== 2) {
-              if (outer2_18(closure_1)) {
+              if (closure_2_18(closure_1)) {
                 const current = closure_1.current;
                 const result3 = current.set(closure_0, "loaded");
-                const current2 = outer1_2.current;
+                const current2 = closure_1_2.current;
                 current2.delete(closure_0);
-                outer1_4((arg0) => {
+                closure_1_4((arg0) => {
                   const items = [...arg0];
                   return new Set(items.filter((arg0) => arg0 !== closure_0));
                 });
@@ -880,7 +881,7 @@ export default function useLoadMessageContentEntries(arg0) {
           }
           c7 = 3;
         } catch (tmp42) {
-          let areArraysShallowlyEqual = tmp42;
+          closure_4 = tmp42;
           if (tmp4 === c5) {
             c7 = tmp2;
             throw tmp42;
@@ -907,7 +908,7 @@ export default function useLoadMessageContentEntries(arg0) {
       const items = [];
       let current = tmp.current;
       let item = current.forEach((arg0, arg1) => {
-        if (outer2_18(arg0)) {
+        if (closure_2_18(arg0)) {
           items.push(arg1);
         }
       });
@@ -929,7 +930,7 @@ export default function useLoadMessageContentEntries(arg0) {
   const items1 = [callback, arg0];
   const effect1 = first1.useEffect(() => {
     const item = closure_0.forEach((id) => {
-      if (outer1_1(outer1_2[13])(id)) {
+      if (closure_1_1(closure_1_2[13])(id)) {
         if (null != id.messageSnapshots[0]) {
           callback(id.id, id.messageSnapshots[0].message);
         }

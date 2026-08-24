@@ -4,7 +4,10 @@
 // Dependencies: [848, 823, 824, 819]
 
 // Module 930 (_INTERNAL_addFeatureFlagToActiveSpan)
-const require = arg1;
+import spanToJSON from "spanToJSON" /* 819 */;
+import getClient from "getClient" /* 848 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 let c2 = "flag.evaluation.";
@@ -16,7 +19,7 @@ arg5._INTERNAL_addFeatureFlagToActiveSpan = function _INTERNAL_addFeatureFlagToA
     num = 10;
   }
   if (typeof value === "boolean") {
-    const activeSpan = require(819) /* spanToJSON */.getActiveSpan();
+    const activeSpan = spanToJSON.getActiveSpan();
     if (activeSpan) {
       const data = tmp6(819).spanToJSON(activeSpan).data;
       const _HermesInternal = HermesInternal;
@@ -33,12 +36,12 @@ arg5._INTERNAL_addFeatureFlagToActiveSpan = function _INTERNAL_addFeatureFlagToA
       }
       const tmp6Result = tmp6(819);
     }
-    const obj2 = require(819) /* spanToJSON */;
+    const obj2 = spanToJSON;
     tmp6 = require;
   }
 };
 arg5._INTERNAL_copyFlagsFromScopeToEvent = function _INTERNAL_copyFlagsFromScopeToEvent(contexts) {
-  let obj = require(848) /* getClient */;
+  let obj = getClient;
   const currentScope = obj.getCurrentScope();
   const flags = currentScope.getScopeData().contexts.flags;
   const arr = flags ? flags.values : [];

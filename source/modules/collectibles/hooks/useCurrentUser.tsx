@@ -1,22 +1,24 @@
-// Module ID: 9176
-// Function ID: 9177
+// Module ID: 9213
+// Function ID: 9214
 // Name: useCurrentUser
 // Dependencies: [1922, 589, 38, 2]
 // Exports: useCurrentUser, useCurrentUserIfAvailable
 
-// Module 9176 (useCurrentUser)
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 9213 (useCurrentUser)
+import _modDef38 from "module_38" /* 38 */;
+import initialize from "initialize" /* 589 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
-const result = require("module_38").fileFinishedImporting("modules/collectibles/hooks/useCurrentUser.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useCurrentUser.tsx");
 
 export const useCurrentUser = function useCurrentUser() {
-  const items = [mergeGuildAvatar];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
-  importDefault(38)(null != stateFromStores, "user has to be signed in before accessing shop");
+  const items = [closure_3];
+  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+  _modDef38(null != stateFromStores, "user has to be signed in before accessing shop");
   return stateFromStores;
 };
 export const useCurrentUserIfAvailable = function useCurrentUserIfAvailable() {
-  const items = [mergeGuildAvatar];
-  return require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const items = [closure_3];
+  return initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
 };

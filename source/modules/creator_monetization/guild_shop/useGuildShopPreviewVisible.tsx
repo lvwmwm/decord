@@ -1,30 +1,28 @@
-// Module ID: 7229
-// Function ID: 7230
+// Module ID: 7267
+// Function ID: 7268
 // Name: useGuildShopPreviewVisible
-// Dependencies: [4021, 676, 4196, 1377, 647, 7224, 2]
+// Dependencies: [4024, 676, 4200, 1377, 647, 7262, 2]
 // Exports: useGuildShopPreviewVisible
 
-// Module 7229 (useGuildShopPreviewVisible)
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import ME from "ME";
+// Module 7267 (useGuildShopPreviewVisible)
+import closure_2 from "getUncachedChannelPermissions" /* 4024 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
 const require = arg1;
 ({ Permissions: c3, GuildFeatures: c4 } = ME);
-let result = require("UNSAFE_isDismissibleContentDismissed").fileFinishedImporting("modules/creator_monetization/guild_shop/useGuildShopPreviewVisible.tsx");
+let result = require("set").fileFinishedImporting("modules/creator_monetization/guild_shop/useGuildShopPreviewVisible.tsx");
 
 export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(features) {
   const _require = features;
-  const result = _require(4196).useIsDismissibleContentDismissed_UNSAFE(_require(1377).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
-  const obj = _require(4196);
+  const result = _require(4200).useIsDismissibleContentDismissed_UNSAFE(_require(1377).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
+  const obj = _require(4200);
   const tmp = _require;
-  const items = [getUncachedChannelPermissions];
+  const items = [closure_2];
   let flag;
   const stateFromStores = _require(647).useStateFromStores(items, () => {
     let canResult = null != closure_0;
     if (canResult) {
-      canResult = outer1_2.can(outer1_3.ADMINISTRATOR, tmp);
+      canResult = closure_1_2.can(closure_1_3.ADMINISTRATOR, tmp);
     }
     return canResult;
   });
@@ -42,9 +40,9 @@ export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(fe
   }
   const items1 = [, , ];
   ({ CREATOR_MONETIZABLE: arr2[0], CREATOR_MONETIZABLE_PROVISIONAL: arr2[1], ROLE_SUBSCRIPTIONS_ENABLED: arr2[2] } = constants);
-  const guildEligibleForGuildProducts = tmp(7224).useGuildEligibleForGuildProducts(id);
+  const guildEligibleForGuildProducts = tmp(7262).useGuildEligibleForGuildProducts(id);
   let tmp9 = null != features;
-  const tmpResult = tmp(7224);
+  const tmpResult = tmp(7262);
   if (tmp9) {
     tmp9 = stateFromStores;
   }

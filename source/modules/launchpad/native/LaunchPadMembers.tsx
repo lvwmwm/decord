@@ -1,21 +1,25 @@
-// Module ID: 16214
-// Function ID: 16215
-// Dependencies: [19, 17, 1391, 1979, 21, 4661, 647, 11364, 15910, 10785, 4734, 1236, 2]
+// Module ID: 16311
+// Function ID: 16312
+// Dependencies: [19, 17, 1391, 1980, 21, 4668, 647, 11415, 16007, 10824, 4739, 1236, 2]
 
-// Module 16214
-import { View } from "get ActivityIndicator";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 16311
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+import _modDef10824 from "module_10824" /* 10824 */;
+import _modDef11415 from "module_11415" /* 11415 */;
+import _modDef16007 from "module_16007" /* 16007 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let closure_7 = createCacheKey.createStyles({ wrapper: { minHeight: 16 }, listStyle: { flex: 0 }, emptyWrapper: { padding: 20 }, emptyText: { textAlign: "center" } });
-const memoResult = require("noop").memo(function LaunchPadMembers() {
+const memoResult = importAllResult.memo(function LaunchPadMembers() {
   const tmp = callback();
-  let obj = require(647) /* defaultAreStatesEqual */;
-  const items = [handleConnectionOpen, ensureGuildLoaded];
+  let obj = defaultAreStatesEqual;
+  const items = [closure_5, closure_4];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
     channel = channel.getChannel(currentlySelectedChannelId);
@@ -31,7 +35,7 @@ const memoResult = require("noop").memo(function LaunchPadMembers() {
             obj = { channelId: null, guildId: null, type: "thread" };
             obj[0] = currentlySelectedChannelId;
             obj[1] = guild_id;
-            let obj1 = obj;
+            obj1 = obj;
           } else {
             obj1 = { channelId: null, guildId: null, type: "guild" };
             obj1[0] = currentlySelectedChannelId;
@@ -41,7 +45,7 @@ const memoResult = require("noop").memo(function LaunchPadMembers() {
         }
       }
     }
-    return { channelId: "call", type: 996432433 };
+    return { channelId: "call", type: "delete" };
   });
   if ("private" === stateFromStoresObject.type) {
     obj = { style: null, children: null };
@@ -49,15 +53,15 @@ const memoResult = require("noop").memo(function LaunchPadMembers() {
     obj = { channelId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 };
     obj[0] = stateFromStoresObject.channelId;
     obj[1] = tmp.listStyle;
-    obj[1] = jsx(importDefault(11364), { channelId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    obj[1] = jsx(_modDef11415, { channelId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
     let tmp8 = <View channelId={null} listStyleOverride={null} disableBottomSafeZone insetEnd={20} />;
   } else if ("thread" === stateFromStoresObject.type) {
-    let obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.wrapper;
     const obj2 = { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 };
     ({ channelId: obj5[0], guildId: obj5[1] } = stateFromStoresObject);
     obj2[2] = tmp.listStyle;
-    obj1[1] = jsx(importDefault(15910), { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    obj1[1] = jsx(_modDef16007, { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
     tmp8 = <View style={null}>{null}</View>;
   } else if ("guild" === stateFromStoresObject.type) {
     const obj3 = { style: null, children: null };
@@ -65,7 +69,7 @@ const memoResult = require("noop").memo(function LaunchPadMembers() {
     const obj4 = { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 };
     ({ channelId: obj3[0], guildId: obj3[1] } = stateFromStoresObject);
     obj4[2] = tmp.listStyle;
-    obj3[1] = jsx(importDefault(10785), { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    obj3[1] = jsx(_modDef10824, { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
     tmp8 = <View style={null}>{null}</View>;
   } else {
     const obj5 = { style: null, children: null };
@@ -74,11 +78,11 @@ const memoResult = require("noop").memo(function LaunchPadMembers() {
     obj6[0] = tmp.emptyText;
     const intl = tmp2(1236).intl;
     obj6[2] = intl.string(tmp2(1236).t["+7wtJq"]);
-    obj5[1] = jsx(tmp2(4734).Text, { style: null, variant: "text-md/semibold", children: null });
+    obj5[1] = jsx(tmp2(4739).Text, { style: null, variant: "text-md/semibold", children: null });
     tmp8 = <View style={null}>{null}</View>;
   }
   return tmp8;
 });
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/launchpad/native/LaunchPadMembers.tsx");
+const result = require("set").fileFinishedImporting("modules/launchpad/native/LaunchPadMembers.tsx");
 
 export default memoResult;

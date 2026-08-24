@@ -1,9 +1,11 @@
-// Module ID: 5263
-// Function ID: 5264
+// Module ID: 5268
+// Function ID: 5269
 // Name: enqueue
 // Dependencies: [2]
 
-// Module 5263 (enqueue)
+// Module 5268 (enqueue)
+import set from "set" /* 2 */;
+
 class ModalDispatchQueue {
   constructor() {
     obj = Object.create(new.target.prototype);
@@ -30,6 +32,6 @@ prototype["flush"] = function flush() {
 };
 let obj = Object.create(ModalDispatchQueue.prototype);
 obj[0] = [];
-const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalDispatchQueue.tsx");
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalDispatchQueue.tsx");
 
 export default obj;

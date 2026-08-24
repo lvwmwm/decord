@@ -1,34 +1,40 @@
-// Module ID: 12946
-// Function ID: 12947
+// Module ID: 13001
+// Function ID: 13002
 // Name: handlePress
-// Dependencies: [17, 4053, 21, 4661, 712, 4342, 12947, 2007, 1236, 2917, 4734, 2]
+// Dependencies: [17, 4056, 21, 4668, 712, 4346, 13002, 2008, 1236, 2920, 4739, 2]
 // Exports: default
 
-// Module 12946 (handlePress)
-import get_ActivityIndicator from "get ActivityIndicator";
-import { getPremiumGroupProductName as closure_5 } from "SubscriptionStatusTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13001 (handlePress)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import messagesProxyDefault from "messagesProxy" /* 2920 */;
+import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4056 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import Text from "Text" /* 4739 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
 function handlePress() {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { aboutText: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj = { premiumGroupProductName: null };
-  obj[0] = callback();
-  obj[0] = intl.formatToPlainString(importDefault(2917)["5xN/C1"], obj);
-  obj.openLazy(require(2007) /* asyncRequireImpl */(12947, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
+  const intl = getSystemLocale.intl;
+  obj = { premiumGroupProductName: callback() };
+  obj[0] = intl.formatToPlainString(messagesProxyDefault["5xN/C1"], obj);
+  obj.openLazy(asyncRequireImpl(13002, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
+let closure_5 = SubscriptionStatusTypes.getPremiumGroupProductName;
+const jsx = jsxProd.jsx;
 let obj = { premiumGroupBanner: null, pgUnavailable: null, pgUnavailableText: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", gap: 12, padding: 12, justifyContent: "center", borderColor: require("Themes").colors.STATUS_WARNING, borderWidth: 1, borderRadius: require("Themes").radii.lg, marginBottom: 12 };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", gap: 12, padding: 12, justifyContent: "center", borderColor: ThemesDefault.colors.STATUS_WARNING, borderWidth: 1, borderRadius: ThemesDefault.radii.lg, marginBottom: 12 };
 obj[0] = obj;
 obj[1] = { flex: 1, justifyContent: "center" };
 obj[2] = { textAlign: "center" };
 let closure_7 = createCacheKey.createStyles(obj);
-const result = require("jsxProd").fileFinishedImporting("modules/premium/premium_group/native/BoostingUnavailablePill.tsx");
+const result = set.fileFinishedImporting("modules/premium/premium_group/native/BoostingUnavailablePill.tsx");
 
 export default function BoostingUnavailablePill(style) {
   const tmp = callback2();
@@ -36,10 +42,10 @@ export default function BoostingUnavailablePill(style) {
   obj = { style: items, children: null };
   items = [tmp.premiumGroupBanner, style.style];
   obj = { style: tmp.pgUnavailable, children: null };
-  const obj1 = { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj1[3] = intl.string(require(1236) /* getSystemLocale */.t["5nrJDO"]);
-  obj[1] = jsx(require(4734) /* Text */.Text, { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null });
+  obj1 = { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null };
+  const intl = getSystemLocale.intl;
+  obj1[3] = intl.string(getSystemLocale.t["5nrJDO"]);
+  obj[1] = jsx(Text.Text, { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null });
   obj[1] = <closure_4 style={tmp.pgUnavailable}>{null}</closure_4>;
   obj[2] = <closure_4 style={tmp.pgUnavailable}>{null}</closure_4>;
   return <closure_3 style={tmp.pgUnavailable}>{null}</closure_3>;

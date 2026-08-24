@@ -1,114 +1,118 @@
-// Module ID: 12176
-// Function ID: 12177
+// Module ID: 12228
+// Function ID: 12229
 // Name: WidgetGameTagIconRole
-// Dependencies: [5377, 1236, 2]
+// Dependencies: [5382, 1236, 2]
 // Exports: buildWidgetGameTagMetadata
 
-// Module 12176 (WidgetGameTagIconRole)
+// Module 12228 (WidgetGameTagIconRole)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import WidgetGameTag from "WidgetGameTag" /* 5382 */;
+
 let obj = { RIBBON: "ribbon", THUMBS_UP: "thumbsUp", THUMBS_DOWN: "thumbsDown", FRIENDS: "friends" };
 obj = {
   getText() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.jbIRBE);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.jbIRBE);
   },
   iconRole: obj.RIBBON
 };
 obj = {
   getText() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.xcFFv6);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.xcFFv6);
   },
   iconRole: obj.RIBBON
 };
 let closure_2 = {
-  [require(5377).WidgetGameTag.BETTER_THAN_YOU]: obj,
-  [require(5377).WidgetGameTag.CASUAL]: obj,
-  [require(5377).WidgetGameTag.INTERMEDIATE]: {
+  [WidgetGameTag.WidgetGameTag.BETTER_THAN_YOU]: obj,
+  [WidgetGameTag.WidgetGameTag.CASUAL]: obj,
+  [WidgetGameTag.WidgetGameTag.INTERMEDIATE]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t["A/mIs/"]);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t["A/mIs/"]);
     },
     iconRole: obj.RIBBON
   },
-  [require(5377).WidgetGameTag.EXPERT]: {
+  [WidgetGameTag.WidgetGameTag.EXPERT]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.RIOFc2);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.RIOFc2);
     },
     iconRole: obj.RIBBON
   },
-  [require(5377).WidgetGameTag.OBSESSED]: {
+  [WidgetGameTag.WidgetGameTag.OBSESSED]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.isPJDu);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.isPJDu);
     },
     iconRole: obj.THUMBS_UP
   },
-  [require(5377).WidgetGameTag.LOVE_IT]: {
+  [WidgetGameTag.WidgetGameTag.LOVE_IT]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t["1rN7BF"]);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t["1rN7BF"]);
     },
     iconRole: obj.THUMBS_UP
   },
-  [require(5377).WidgetGameTag.KIND_OF_LOVE_IT]: {
+  [WidgetGameTag.WidgetGameTag.KIND_OF_LOVE_IT]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.bCBpVg);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.bCBpVg);
     },
     iconRole: obj.THUMBS_UP
   },
-  [require(5377).WidgetGameTag.KIND_OF_HATE_IT]: {
+  [WidgetGameTag.WidgetGameTag.KIND_OF_HATE_IT]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t["/WcmcP"]);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t["/WcmcP"]);
     },
     iconRole: obj.THUMBS_DOWN
   },
-  [require(5377).WidgetGameTag.RAGE_QUITTING]: {
+  [WidgetGameTag.WidgetGameTag.RAGE_QUITTING]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t["NXZ/MZ"]);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t["NXZ/MZ"]);
     },
     iconRole: obj.THUMBS_DOWN
   },
-  [require(5377).WidgetGameTag.OPEN_TO_PLAY]: {
+  [WidgetGameTag.WidgetGameTag.OPEN_TO_PLAY]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.q30PoH);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.q30PoH);
     },
     iconRole: obj.FRIENDS
   },
-  [require(5377).WidgetGameTag.LOOKING_FOR_GROUP]: {
+  [WidgetGameTag.WidgetGameTag.LOOKING_FOR_GROUP]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.DWWAAQ);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.DWWAAQ);
     },
     iconRole: obj.FRIENDS
   },
-  [require(5377).WidgetGameTag.LOOKING_FOR_TIPS]: {
+  [WidgetGameTag.WidgetGameTag.LOOKING_FOR_TIPS]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.KQDVvH);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.KQDVvH);
     },
     iconRole: obj.FRIENDS
   },
-  [require(5377).WidgetGameTag.OPEN_TO_TEACH]: {
+  [WidgetGameTag.WidgetGameTag.OPEN_TO_TEACH]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t["5HhQo+"]);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t["5HhQo+"]);
     },
     iconRole: obj.FRIENDS
   },
-  [require(5377).WidgetGameTag.LOOKING_TO_DISCUSS]: {
+  [WidgetGameTag.WidgetGameTag.LOOKING_TO_DISCUSS]: {
     getText() {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(require(1236) /* getSystemLocale */.t.GipOCq);
+      const intl = getSystemLocale.intl;
+      return intl.string(getSystemLocale.t.GipOCq);
     },
     iconRole: obj.FRIENDS
   }
 };
-const result = require("set").fileFinishedImporting("modules/user_profile/UserProfileGameWidgetTagMetadata.tsx");
+const result = set.fileFinishedImporting("modules/user_profile/UserProfileGameWidgetTagMetadata.tsx");
 
 export const WidgetGameTagIconRole = obj;
 export const buildWidgetGameTagMetadata = function buildWidgetGameTagMetadata(arg0) {

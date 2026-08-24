@@ -1,16 +1,15 @@
-// Module ID: 6818
-// Function ID: 6819
+// Module ID: 6855
+// Function ID: 6856
 // Name: isChannelTypeMentionable
 // Dependencies: [1395, 2]
 // Exports: isChannelTypeMentionable
 
-// Module 6818 (isChannelTypeMentionable)
-import createChannelRecord from "createChannelRecord";
+// Module 6855 (isChannelTypeMentionable)
+import set from "set" /* 2 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
 
-let c0;
-let closure_1;
 ({ isGuildSelectableChannelType: c0, isGuildVocalChannelType: closure_1 } = createChannelRecord);
-const result = require("set").fileFinishedImporting("modules/markup/ChannelUtils.tsx");
+const result = set.fileFinishedImporting("modules/markup/ChannelUtils.tsx");
 
 export const isChannelTypeMentionable = function isChannelTypeMentionable(type) {
   let tmp = callback(type);

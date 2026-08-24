@@ -1,26 +1,26 @@
-// Module ID: 10909
-// Function ID: 10910
+// Module ID: 10948
+// Function ID: 10949
 // Name: BookmarkOutlineIcon
-// Dependencies: [19, 21, 712, 4096, 10910, 2]
+// Dependencies: [19, 21, 712, 4099, 10949, 2]
 // Exports: BookmarkOutlineIcon
 
-// Module 10909 (BookmarkOutlineIcon)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 10948 (BookmarkOutlineIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import BaseIconImage from "BaseIconImage" /* 4099 */;
+import registerAsset from "registerAsset" /* 10949 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/BookmarkOutlineIcon.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Icon/native/redesign/generated/BookmarkOutlineIcon.tsx");
 
 export const BookmarkOutlineIcon = function BookmarkOutlineIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = ThemesDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.create(null));
-  const obj = { source: null, color: null, style: null };
-  obj[0] = require(10910) /* registerAsset */;
-  obj[1] = INTERACTIVE_ICON_DEFAULT;
-  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(BaseIconImage.BaseIconImage, { source: registerAsset, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

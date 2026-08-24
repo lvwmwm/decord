@@ -1,12 +1,12 @@
-// Module ID: 4531
-// Function ID: 4532
+// Module ID: 4536
+// Function ID: 4537
 // Name: isStreamKey
-// Dependencies: [32, 4532, 2]
+// Dependencies: [32, 4537, 2]
 // Exports: decodeStreamKey, encodeStreamKey, isStreamKey
 
-// Module 4531 (isStreamKey)
-import _slicedToArray from "_slicedToArray";
-import { StreamTypes } from "StreamIssueReportReasons";
+// Module 4536 (isStreamKey)
+import closure_0 from "_slicedToArray" /* 32 */;
+import { StreamTypes } from "StreamIssueReportReasons" /* 4537 */;
 
 const result = require("set").fileFinishedImporting("modules/go_live/utils/StreamKeyUtils.tsx");
 
@@ -33,14 +33,11 @@ export const decodeStreamKey = function decodeStreamKey(streamKey) {
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("Unknown stream type " + first);
+    error = new Error("Unknown stream type " + first);
     throw error;
   }
 };
 export const encodeStreamKey = function encodeStreamKey(currentUserActiveStream) {
-  let channelId;
-  let ownerId;
-  let streamType;
   ({ streamType, channelId, ownerId } = currentUserActiveStream);
   if (StreamTypes.GUILD === streamType) {
     const items = [streamType, tmp, channelId, ownerId];
@@ -51,7 +48,7 @@ export const encodeStreamKey = function encodeStreamKey(currentUserActiveStream)
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("Unknown stream type " + streamType);
+    error = new Error("Unknown stream type " + streamType);
     throw error;
   }
 };

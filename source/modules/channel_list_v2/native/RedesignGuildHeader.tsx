@@ -1,37 +1,33 @@
-// Module ID: 15395
-// Function ID: 15396
+// Module ID: 15459
+// Function ID: 15460
 // Name: GuildInfoHeader
-// Dependencies: [19, 17, 4662, 4086, 10055, 676, 21, 8502, 4310, 1363, 4751, 15396, 1913, 15367, 9288, 4097, 712, 4749, 11259, 4661, 4115, 4116, 9091, 15397, 1494, 589, 1501, 4744, 4748, 13367, 1435, 5449, 15439, 2]
+// Dependencies: [19, 17, 4669, 4089, 10094, 676, 21, 8541, 4314, 1363, 4756, 15460, 1913, 15431, 9325, 4100, 712, 4754, 11310, 4668, 4119, 4120, 9128, 15461, 1494, 589, 1501, 4749, 4753, 13425, 1435, 5454, 15503, 2]
 // Exports: useRedesignGuildHeaderHeight
 
-// Module 15395 (GuildInfoHeader)
-import importAllResult from "createCacheKey";
-import get_ActivityIndicator from "MINIMUM_HIT_AREA";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import setContent from "setContent";
-import hairlineWidth from "hairlineWidth";
-import { GuildFeatures } from "ME";
-import jsxProd from "REAWorkaroundView";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
+// Module 15459 (GuildInfoHeader)
+import ThemesDefault from "Themes" /* 712 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
+import getFontScale from "getFontScale" /* 4756 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8541 */;
+import map from "map" /* 9325 */;
+import tDefault from "t" /* 11310 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 15431 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 15460 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_8 from "setContent" /* 4089 */;
+import hairlineWidth from "hairlineWidth" /* 10094 */;
+import { GuildFeatures } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c4;
-let c5;
-let c9;
-let closure_14;
-let closure_6;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function GuildInfoHeader(bannerHeight) {
-  let guild;
-  let scrollPosition;
   ({ guild, scrollPosition } = bannerHeight);
   bannerHeight = bannerHeight.bannerHeight;
-  let obj = scrollPosition(4115);
+  let obj = scrollPosition(4119);
   const fn = function s() {
     let obj = { transform: null };
     obj = { translateY: Math.max(0, scrollPosition.get() - bannerHeight) };
@@ -43,7 +39,7 @@ function GuildInfoHeader(bannerHeight) {
   fn.__workletHash = 6302330113586;
   fn.__initData = closure_18;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj1 = scrollPosition(4115);
+  obj1 = scrollPosition(4119);
   const fn2 = function u() {
     let obj = { transform: null };
     obj = { translateY: Math.min(0, scrollPosition.get() - bannerHeight) };
@@ -61,34 +57,32 @@ function GuildInfoHeader(bannerHeight) {
   items = [animatedStyle, { overflow: "hidden" }];
   const tmp = callback5();
   obj = { style: animatedStyle1, children: null };
-  const tmp5 = bannerHeight(4116);
-  obj[1] = callback(bannerHeight(9091), { absolute: true, tall: true });
-  const items1 = [callback(bannerHeight(4116), obj), ];
-  obj1 = { style: tmp.headerWrapper, children: callback(bannerHeight(15397), obj2) };
+  const tmp5 = bannerHeight(4120);
+  obj[1] = callback(bannerHeight(9128), { absolute: true, tall: true });
+  const items1 = [callback(bannerHeight(4120), obj), ];
+  obj1 = { style: tmp.headerWrapper, children: callback(bannerHeight(15461), obj2) };
   obj2 = { guild, showExtraButtons: !isFavoritesGuildIdResult, canOpenGuildActionSheet: !isFavoritesGuildIdResult, showCoachmarks: !isFavoritesGuildIdResult };
   items1[1] = callback(closure_5, obj1);
   obj[1] = items1;
   return callback2(tmp5, obj);
 }
 function ReanimatedGuildBanner(guild) {
-  let actionSheetOpen;
-  let useReducedMotion;
   guild = guild.guild;
   const scrollPosition = guild.scrollPosition;
   let bannerHeight = guild.bannerHeight;
   const bannerWidth = guild.bannerWidth;
   const onPress = guild.onPress;
-  let c5;
+  closure_5 = undefined;
   bannerHeight = undefined;
   let sharedValue;
   const tmp3 = callback4(scrollPosition(bannerHeight[24])().height);
-  c5 = tmp3;
+  closure_5 = tmp3;
   let obj = guild(bannerHeight[25]);
-  let items = [setContent, sharedValue];
+  let items = [closure_8, sharedValue];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ actionSheetOpen: null != key.getKey(), useReducedMotion: sharedValue.useReducedMotion }));
   ({ useReducedMotion, actionSheetOpen } = stateFromStoresObject);
   let tmp17Result = scrollPosition(bannerHeight[13])(guild.id);
-  let obj1 = guild(bannerHeight[26]);
+  obj1 = guild(bannerHeight[26]);
   const isFocused = obj1.useIsFocused();
   let obj2 = guild(bannerHeight[20]);
   sharedValue = obj2.useSharedValue(0);
@@ -110,9 +104,8 @@ function ReanimatedGuildBanner(guild) {
   let obj3 = guild(bannerHeight[20]);
   const fn = function p() {
     const value = scrollPosition.get();
-    const obj = { opacity: null, transform: null };
-    const items = [0, bannerHeight];
-    obj[0] = guild(bannerHeight[20]).interpolate(value, items, [1, 0], "clamp");
+    const obj = { opacity: guild(bannerHeight[20]).interpolate(value, items, [1, 0], "clamp"), transform: null };
+    items = [0, bannerHeight];
     if (value >= 0) {
       const tmp2Result = guild(bannerHeight[20]);
       const items1 = [0, bannerHeight];
@@ -139,7 +132,7 @@ function ReanimatedGuildBanner(guild) {
     constructor() {
       obj = { opacity: null };
       obj2 = guild(bannerHeight[20]);
-      obj[0] = obj2.interpolate(c7.get(), [0, 1], [0, 0.3]);
+      obj[0] = obj2.interpolate(closure_7.get(), [0, 1], [0, 0.3]);
       return obj;
     }
   }
@@ -203,15 +196,15 @@ let closure_16 = createCacheKey.createStyles((arg0) => {
   obj = { width: "100%", maxHeight: arg0 * closure_10, aspectRatio: closure_9, overflow: "hidden" };
   obj = {};
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
-  obj.backgroundColor = importDefault(712).colors.BLACK;
+  obj.backgroundColor = ThemesDefault.colors.BLACK;
   obj[2] = obj;
   return obj;
 });
 let result = createCacheKey.experimental_createToken((gradient) => {
   if (null != gradient.gradient) {
-    let PANEL_BG = importDefault(712).colors.BACKGROUND_BASE_LOW;
+    let PANEL_BG = ThemesDefault.colors.BACKGROUND_BASE_LOW;
   } else {
-    PANEL_BG = importDefault(712).colors.PANEL_BG;
+    PANEL_BG = ThemesDefault.colors.PANEL_BG;
   }
   return PANEL_BG;
 });
@@ -221,9 +214,6 @@ let closure_19 = { code: "function RedesignGuildHeaderTsx2(){const{scrollPositio
 let closure_21 = { code: "function RedesignGuildHeaderTsx3(){const{scrollPosition,interpolate,maxScrollPosition,bannerHeight}=this.__closure;const scrollPosValue=scrollPosition.get();return{opacity:interpolate(scrollPosValue,[0,maxScrollPosition],[1,0],'clamp'),transform:[{translateY:scrollPosValue>=0?interpolate(-scrollPosValue,[0,bannerHeight],[0,-bannerHeight],'clamp'):scrollPosValue/2},{scale:scrollPosValue>=0?1:(bannerHeight-scrollPosValue)/bannerHeight}]};}" };
 let closure_22 = { code: "function RedesignGuildHeaderTsx4(){const{interpolate,pressed}=this.__closure;return{opacity:interpolate(pressed.get(),[0,1],[0,0.3])};}" };
 const memoResult = importAllResult.memo(function RedesignGuildHeader(bannerWidth) {
-  let bannerHeight;
-  let guild;
-  let scrollPosition;
   ({ guild, scrollPosition, bannerHeight } = bannerWidth);
   let obj = { style: callback3().guildHeaderWrapper, preventClipping: true, children: null };
   const items = [callback(ReanimatedGuildBanner, { guild, scrollPosition, bannerHeight, bannerWidth: bannerWidth.bannerWidth }), ];
@@ -237,36 +227,36 @@ const memoResult = importAllResult.memo(function RedesignGuildHeader(bannerWidth
   obj[2] = items;
   return closure_14(closure_5, obj);
 });
-const result1 = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/channel_list_v2/native/RedesignGuildHeader.tsx");
+const result1 = require("set").fileFinishedImporting("modules/channel_list_v2/native/RedesignGuildHeader.tsx");
 
 export default memoResult;
 export const useRedesignGuildHeaderHeight = function useRedesignGuildHeaderHeight(id) {
-  const tmp3 = importDefault(8502)();
+  const tmp3 = useIsUsingClientThemeDefault();
   let isThemeDarkResult = tmp3;
   if (!tmp3) {
-    isThemeDarkResult = require(1363) /* AccessibilityAnnouncer */.isThemeDark(tmp4);
-    const obj = require(1363) /* AccessibilityAnnouncer */;
+    isThemeDarkResult = AccessibilityAnnouncer.isThemeDark(tmp4);
+    const obj = AccessibilityAnnouncer;
   }
-  const fontScale = require(4751) /* getFontScale */.useFontScale();
-  const obj2 = require(4751) /* getFontScale */;
-  const tmp9 = null != importDefault(15396)(id);
-  const isFavoritesGuildIdResult = require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id.id);
-  const obj3 = require(1913) /* getFavoritesAwareGuildName */;
-  const tmp11 = importDefault(15367)(id.id);
-  const scaleTextLineHeightResult = require(9288) /* map */.scaleTextLineHeight("redesign/heading-18/bold", fontScale);
+  const fontScale = getFontScale.useFontScale();
+  const obj2 = getFontScale;
+  const tmp9 = null != useStickyServerHeaderSubtitleDefault(id);
+  const isFavoritesGuildIdResult = getFavoritesAwareGuildName.isFavoritesGuildId(id.id);
+  const obj3 = getFavoritesAwareGuildName;
+  const tmp11 = useIsGameCommunityServerPreviewDefault(id.id);
+  const scaleTextLineHeightResult = map.scaleTextLineHeight("redesign/heading-18/bold", fontScale);
   let num = 0;
   if (isThemeDarkResult) {
     num = 1;
   }
-  let tmp7Result = tmp7(4097);
+  let tmp7Result = tmp7(4100);
   let num2 = 0;
   const token = tmp7Result.useToken(tmp(712).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   if (!isFavoritesGuildIdResult) {
-    num2 = tmp7(4749).SMALL_BUTTON_HEIGHT + closure_11;
+    num2 = tmp7(4754).SMALL_BUTTON_HEIGHT + closure_11;
   }
   let num3 = 0;
   if (tmp11) {
-    num3 = 8 + tmp7(4749).MEDIUM_BUTTON_HEIGHT + 8;
+    num3 = 8 + tmp7(4754).MEDIUM_BUTTON_HEIGHT + 8;
   }
   let num5 = 16;
   if (isFavoritesGuildIdResult) {
@@ -274,13 +264,13 @@ export const useRedesignGuildHeaderHeight = function useRedesignGuildHeaderHeigh
   }
   let num6 = 0;
   if (tmp9) {
-    tmp7Result = tmp7(9288);
+    tmp7Result = tmp7(9325);
     num6 = tmp7Result.scaleTextLineHeight(token, fontScale);
   }
   let bound = scaleTextLineHeightResult;
   if (isFavoritesGuildIdResult) {
     const _Math = Math;
-    bound = Math.max(scaleTextLineHeightResult, tmp7(4749).SMALL_BUTTON_HEIGHT);
+    bound = Math.max(scaleTextLineHeightResult, tmp7(4754).SMALL_BUTTON_HEIGHT);
   }
-  return importDefault(11259)(16 + bound + num6 + num2 + num3 + num5 + num);
+  return tDefault(16 + bound + num6 + num2 + num3 + num5 + num);
 };

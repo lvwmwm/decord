@@ -1,51 +1,52 @@
-// Module ID: 11832
-// Function ID: 11833
+// Module ID: 11881
+// Function ID: 11882
 // Name: render
-// Dependencies: [19, 17, 21, 4661, 712, 4104, 11833, 1236, 1435, 5449, 1903, 1297, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4107, 11882, 1236, 1435, 5454, 1903, 1297, 2]
 
-// Module 11832 (render)
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 11881 (render)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import preloadDefault from "preload" /* 5454 */;
+import getClass from "getClass" /* 11882 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let obj = { SMALL: "small", MEDIUM: "medium", LARGE: "large" };
 let closure_5 = [16, 16, 14, 14, 12];
 obj = { icon: { justifyContent: "center", alignItems: "center", overflow: "hidden" }, iconSmall: { width: 40, height: 40, borderRadius: 20 }, iconMedium: { width: 80, height: 80, borderRadius: 40 }, iconLarge: null, textContainer: null, acronym: null };
-obj = { width: 128, height: 128, borderRadius: require("Themes").radii.round };
+obj = { width: 128, height: 128, borderRadius: ThemesDefault.radii.round };
 obj[3] = obj;
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
 obj[4] = createCacheKey;
-obj[5] = { color: require("Themes").unsafe_rawColors.WHITE };
+obj[5] = { color: ThemesDefault.unsafe_rawColors.WHITE };
 let closure_6 = createCacheKey.createLegacyClassComponentStyles(obj);
 const PureComponent = importAllResult.PureComponent;
 class GuildInviteIcon extends PureComponent {
 }
 GuildInviteIcon.prototype["render"] = function render() {
-  let guild;
-  let size;
-  let style;
-  let textScale;
   const tmp = callback(this.context);
   const props = this.props;
   ({ style, guild } = props);
   ({ size, textScale } = props);
-  let obj = require(11833) /* getClass */;
+  let obj = getClass;
   const getClassResult = obj.getClass(tmp, "icon", size);
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   obj = { guildName: guild.name };
-  const formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.xm6W9D, obj);
+  const formatToPlainStringResult = intl.formatToPlainString(getSystemLocale.t.xm6W9D, obj);
   if (null != guild.icon) {
     obj = { id: null, icon: null, canAnimate: true, size: 128 };
     ({ id: obj7[0], icon: obj7[1] } = guild);
-    const guildIconSource = importDefault(1435).getGuildIconSource(obj);
-    const obj1 = { accessibilityRole: "image", accessibilityLabel: null, style: null, source: null };
+    const guildIconSource = getAvatarURLDefault.getGuildIconSource(obj);
+    obj1 = { accessibilityRole: "image", accessibilityLabel: null, style: null, source: null };
     obj1[1] = formatToPlainStringResult;
     const items = [tmp.icon, getClassResult, style];
     obj1[2] = items;
     obj1[3] = guildIconSource;
-    return jsx(importDefault(5449), { accessibilityRole: "image", accessibilityLabel: null, style: null, source: null });
+    return jsx(preloadDefault, { accessibilityRole: "image", accessibilityLabel: null, style: null, source: null });
   } else {
     const acronym = tmp2(1903).getAcronym(guild.name);
     let num = table[acronym.length - 1];
@@ -74,7 +75,7 @@ GuildInviteIcon.prototype["render"] = function render() {
 GuildInviteIcon.defaultProps = { size: obj.SMALL, textScale: 1 };
 GuildInviteIcon.Sizes = obj;
 GuildInviteIcon.contextType = require("ManaContext").ThemeContext;
-let obj2 = { color: require("Themes").unsafe_rawColors.WHITE };
-let result = require("jsxProd").fileFinishedImporting("modules/guild/native/GuildInviteIcon.tsx");
+let obj2 = { color: ThemesDefault.unsafe_rawColors.WHITE };
+let result = require("set").fileFinishedImporting("modules/guild/native/GuildInviteIcon.tsx");
 
 export default GuildInviteIcon;

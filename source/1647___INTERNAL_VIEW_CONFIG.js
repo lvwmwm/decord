@@ -4,8 +4,9 @@
 // Dependencies: [106, 65, 114]
 
 // Module 1647 (__INTERNAL_VIEW_CONFIG)
-import weakSet from "weakSet";
-import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+import renderElement from "renderElement" /* 114 */;
+import weakSet from "weakSet" /* 106 */;
+import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
 let obj = { uiViewClassName: "KeyboardControllerView", directEventTypes: { topKeyboardMoveStart: { registrationName: "onKeyboardMoveStart" }, topKeyboardMove: { registrationName: "onKeyboardMove" }, topKeyboardMoveEnd: { registrationName: "onKeyboardMoveEnd" }, topKeyboardMoveInteractive: { registrationName: "onKeyboardMoveInteractive" }, topFocusedInputLayoutChanged: { registrationName: "onFocusedInputLayoutChanged" }, topFocusedInputTextChanged: { registrationName: "onFocusedInputTextChanged" }, topFocusedInputSelectionChanged: { registrationName: "onFocusedInputSelectionChanged" } }, validAttributes: null };
 obj = { enabled: true, statusBarTranslucent: true, navigationBarTranslucent: true, preserveEdgeToEdge: true };
@@ -13,7 +14,7 @@ const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onKeybo
 obj[2] = obj;
 obj = {
   synchronizeFocusedInputLayout(current) {
-    require(114) /* renderElement */.dispatchCommand(current, "synchronizeFocusedInputLayout", []);
+    renderElement.dispatchCommand(current, "synchronizeFocusedInputLayout", []);
   }
 };
 

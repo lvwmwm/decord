@@ -1,16 +1,21 @@
-// Module ID: 7430
-// Function ID: 7431
+// Module ID: 7468
+// Function ID: 7469
 // Name: trackRoundtrip
-// Dependencies: [1391, 4295, 4564, 676, 3, 5052, 698, 7431, 589, 709, 2]
+// Dependencies: [1391, 4299, 4569, 676, 3, 5057, 698, 7469, 589, 709, 2]
 
-// Module 7430 (trackRoundtrip)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleInviteData from "handleInviteData";
-import handleConnectionInfoChange from "handleConnectionInfoChange";
-import { AnalyticEvents } from "ME";
-import { Store } from "initialize";
+// Module 7468 (trackRoundtrip)
+import timestampDefault from "timestamp" /* 3 */;
+import initializeDefault from "initialize" /* 589 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import receiveNetworkInfoformation from "receiveNetworkInfoformation" /* 5057 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7469 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "handleInviteData" /* 4299 */;
+import closure_5 from "handleConnectionInfoChange" /* 4569 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function trackRoundtrip(channelId) {
   basicChannel = basicChannel.getBasicChannel(channelId.channelId);
   if (null != basicChannel) {
@@ -24,10 +29,10 @@ function trackRoundtrip(channelId) {
       if (null != channelId.gatewaySeenTimestamp) {
         diff1 = channelId.gatewaySeenTimestamp - channelId.initialSendTimestamp;
       }
-      let obj = require(5052) /* receiveNetworkInfoformation */;
+      let obj = receiveNetworkInfoformation;
       const signalStrength = obj.getSignalStrength();
       obj = {};
-      const merged = Object.assign(importDefault(7431)());
+      const merged = Object.assign(getDeviceMetadataDefault());
       obj.api_latency_ms = diff;
       obj.gateway_latency_ms = diff1;
       ({ id: obj3.channel_id, type: obj3.channel_type, guild_id: obj3.guild_id } = basicChannel);
@@ -41,15 +46,16 @@ function trackRoundtrip(channelId) {
         tmp17 = obj;
       }
       const merged1 = Object.assign(tmp17);
-      importDefault(698).track(AnalyticEvents.SEND_MESSAGE_ROUNDTRIP, obj);
-      const obj2 = importDefault(698);
+      expandEventPropertiesDefault.track(AnalyticEvents.SEND_MESSAGE_ROUNDTRIP, obj);
+      const obj2 = expandEventPropertiesDefault;
     }
   } else {
     const _HermesInternal = HermesInternal;
-    tmp2.warn("Ignoring a messageData for channel " + channelId.channelId + " because we can't find that channel.");
+    logger.warn("Ignoring a messageData for channel " + channelId.channelId + " because we can't find that channel.");
   }
 }
-const error = new require("ME")("MessageRoundtripTrackerStore");
+let closure_7 = new timestampDefault("MessageRoundtripTrackerStore");
+const Store = initializeDefault.Store;
 class MessageRoundtripTrackerStoreClass extends Store {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -60,13 +66,13 @@ class MessageRoundtripTrackerStoreClass extends Store {
 }
 const prototype = MessageRoundtripTrackerStoreClass.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded, handleInviteData, handleConnectionInfoChange);
+  this.waitFor(closure_3, closure_4, closure_5);
 };
-prototype["recordMessageSendAttempt"] = function recordMessageSendAttempt(outer1_0, closure_1, c3) {
+prototype["recordMessageSendAttempt"] = function recordMessageSendAttempt(closure_1_0, closure_1, arg2) {
   const self = this;
-  let closure_0 = closure_1;
-  let obj = c3;
-  if (c3 === undefined) {
+  closure_0 = closure_1;
+  let obj = arg2;
+  if (arg2 === undefined) {
     obj = {};
   }
   const attachments = obj.attachments;
@@ -85,7 +91,7 @@ prototype["recordMessageSendAttempt"] = function recordMessageSendAttempt(outer1
   if (num2 == null) {
     num2 = 0;
   }
-  obj = { initialSendTimestamp: Date.now(), apiResponseTimestamp: null, gatewaySeenTimestamp: null, channelId: outer1_0, attachmentCount: sum };
+  obj = { initialSendTimestamp: Date.now(), apiResponseTimestamp: null, gatewaySeenTimestamp: null, channelId: closure_1_0, attachmentCount: sum };
   sum = num + num2;
   let pendingMessages = this.pendingMessages;
   const result = pendingMessages.set(closure_1, obj);
@@ -93,16 +99,16 @@ prototype["recordMessageSendAttempt"] = function recordMessageSendAttempt(outer1
     const pendingMessages = self.pendingMessages;
     const value = pendingMessages.get(closure_0);
     if (null != value) {
-      outer1_8(value);
+      closure_1_8(value);
       const pendingMessages2 = self.pendingMessages;
       pendingMessages2.delete(closure_0);
     }
   }, 30000);
 };
-prototype["recordMessageSendApiResponse"] = function recordMessageSendApiResponse(outer1_13) {
+prototype["recordMessageSendApiResponse"] = function recordMessageSendApiResponse(closure_1_13) {
   const self = this;
   const pendingMessages = this.pendingMessages;
-  const value = pendingMessages.get(outer1_13);
+  const value = pendingMessages.get(closure_1_13);
   if (null != value) {
     const obj = {};
     const merged = Object.assign(value);
@@ -111,10 +117,10 @@ prototype["recordMessageSendApiResponse"] = function recordMessageSendApiRespons
     if (tmp6) {
       trackRoundtrip(obj);
       const pendingMessages3 = self.pendingMessages;
-      pendingMessages3.delete(outer1_13);
+      pendingMessages3.delete(closure_1_13);
     } else {
       const pendingMessages2 = self.pendingMessages;
-      const result = pendingMessages2.set(outer1_13, obj);
+      const result = pendingMessages2.set(closure_1_13, obj);
     }
     tmp6 = null != obj.apiResponseTimestamp && null != obj.gatewaySeenTimestamp;
   }
@@ -139,7 +145,7 @@ prototype["recordGatewayResponse"] = function recordGatewayResponse(nonce) {
     tmp6 = null != obj.apiResponseTimestamp && null != obj.gatewaySeenTimestamp;
   }
 };
-const messageRoundtripTrackerStoreClass = new MessageRoundtripTrackerStoreClass(require("dispatcher"), {
+const messageRoundtripTrackerStoreClass = new MessageRoundtripTrackerStoreClass(dispatcherDefault, {
   MESSAGE_CREATE: function handleMessageCreate(optimistic) {
     optimistic = optimistic.optimistic;
     const nonce = optimistic.message.nonce;
@@ -163,7 +169,7 @@ let obj = {
     }
   }
 };
-const tmp2 = new require("ME")("MessageRoundtripTrackerStore");
-let result = require("handleConnectionInfoChange").fileFinishedImporting("modules/messages/MessageRoundtripTrackerStore.tsx");
+const tmp2 = new timestampDefault("MessageRoundtripTrackerStore");
+let result = require("set").fileFinishedImporting("modules/messages/MessageRoundtripTrackerStore.tsx");
 
 export default messageRoundtripTrackerStoreClass;

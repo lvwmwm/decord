@@ -1,21 +1,22 @@
-// Module ID: 15217
-// Function ID: 15218
+// Module ID: 15281
+// Function ID: 15282
 // Name: useMultiAccountUsers
-// Dependencies: [19, 1922, 11585, 589, 709, 11589, 2]
+// Dependencies: [19, 1922, 11634, 589, 709, 11638, 2]
 // Exports: useMultiAccountUsers
 
-// Module 15217 (useMultiAccountUsers)
-import noop from "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import initialize from "initialize";
-import { MultiAccountTokenStatus } from "initialize";
+// Module 15281 (useMultiAccountUsers)
+import initialize from "initialize" /* 589 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "initialize" /* 11634 */;
+import { MultiAccountTokenStatus } from "initialize" /* 11634 */;
 
-const require = arg1;
-let result = require("initialize").fileFinishedImporting("modules/multi_account/useMultiAccount.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("modules/multi_account/useMultiAccount.tsx");
 
 export const useMultiAccountUsers = function useMultiAccountUsers() {
-  let items = [initialize, mergeGuildAvatar];
-  const stateFromStoresObject = require(589) /* initialize */.useStateFromStoresObject(items, () => {
+  let items = [closure_6, closure_5];
+  const stateFromStoresObject = initialize.useStateFromStoresObject(items, () => {
     let obj = users;
     users = users.getUsers();
     currentUser = currentUser.getCurrentUser();

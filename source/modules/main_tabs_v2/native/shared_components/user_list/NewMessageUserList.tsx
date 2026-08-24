@@ -1,24 +1,24 @@
-// Module ID: 11539
-// Function ID: 11540
+// Module ID: 11588
+// Function ID: 11589
 // Name: matchGroupDMRecipients
-// Dependencies: [32, 19, 17, 1391, 4030, 1922, 9081, 21, 4661, 712, 6775, 4219, 4984, 12, 9636, 1236, 4734, 9639, 9641, 11540, 11541, 2]
+// Dependencies: [32, 19, 17, 1391, 4033, 1922, 9118, 21, 4668, 712, 6812, 4223, 4989, 12, 9675, 1236, 4739, 9678, 9680, 11589, 11590, 2]
 // Exports: default, useSearchGDMNames
 
-// Module 11539 (matchGroupDMRecipients)
-import _slicedToArray from "_slicedToArray";
-import NoResults from "NoResults";
-import { View } from "UserFlashListActions";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { UserRowModes } from "UserRowModes";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 11588 (matchGroupDMRecipients)
+import ThemesDefault from "Themes" /* 712 */;
+import computeChannelName from "computeChannelName" /* 4989 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6812 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import { UserRowModes } from "UserRowModes" /* 9118 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let closure_12;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function matchGroupDMRecipients(trimmed1, recipients) {
   const obj = recipients.recipients[Symbol.iterator]();
   while (obj !== undefined) {
@@ -31,13 +31,13 @@ function matchGroupDMRecipients(trimmed1, recipients) {
       let tmp19 = importDefault;
       let tmp20 = dependencyMap;
       let toLocaleLowerCaseResult = username.toLocaleLowerCase();
-      if (importDefault(6775)(trimmed1, toLocaleLowerCaseResult)) {
+      if (fuzzysearchDefault(trimmed1, toLocaleLowerCaseResult)) {
         let tmp16 = obj;
         obj.return();
         let num3 = 1;
         return 1;
       } else {
-        let tmp19Result = tmp19(4219);
+        let tmp19Result = tmp19(4223);
         let tmp5 = user;
         let globalName = tmp19Result.getGlobalName(tmp4);
         let toLocaleLowerCaseResult1;
@@ -46,7 +46,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult1) {
           let tmp8 = toLocaleLowerCaseResult1;
-          if (tmp19(6775)(trimmed1, tmp7)) {
+          if (tmp19(6812)(trimmed1, tmp7)) {
             let tmp15 = obj;
             obj.return();
             let num2 = 1;
@@ -62,7 +62,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult2) {
           let tmp13 = toLocaleLowerCaseResult2;
-          if (tmp19(6775)(trimmed1, tmp12)) {
+          if (tmp19(6812)(trimmed1, tmp12)) {
             let tmp14 = obj;
             obj.return();
             let num = 1;
@@ -79,12 +79,12 @@ function matchGroupDM(id, trimmed1) {
   if ("" === trimmed1) {
     return 0;
   } else {
-    const channelName = require(4984) /* computeChannelName */.computeChannelName(id, mergeGuildAvatar, markAllUserIdListsStale);
+    const channelName = computeChannelName.computeChannelName(id, closure_8, closure_7);
     const toLocaleLowerCaseResult = channelName.toLocaleLowerCase();
     let num = 3;
     if (!toLocaleLowerCaseResult.startsWith(trimmed1)) {
       let num2 = 2;
-      if (!importDefault(6775)(trimmed1, toLocaleLowerCaseResult)) {
+      if (!fuzzysearchDefault(trimmed1, toLocaleLowerCaseResult)) {
         num2 = matchGroupDMRecipients(trimmed1, id);
       }
       num = num2;
@@ -118,29 +118,14 @@ function filterGroupDMs(isGroupDM) {
 ({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
 let closure_13 = [];
 createCacheKey = { searchBarRowContainer: null, noResults: null };
-createCacheKey = { paddingTop: require("Themes").space.PX_8 };
+createCacheKey = { paddingTop: ThemesDefault.space.PX_8 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NewMessageUserList.tsx");
+createCacheKey[1] = { flex: 1, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let closure_14 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flex: 1, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NewMessageUserList.tsx");
 
 export default function NewMessageUserList(selectedUserIds) {
-  let autoFocusSearch;
-  let c3;
-  let c5;
-  let defaultNoResultsFound;
-  let forceSearchResults;
-  let headerSize;
-  let noResultActions;
-  let onForceSearchResults;
-  let onSearchFocus;
-  let overrideResults;
-  let renderHeader;
-  let rowMode;
-  let str;
-  let tagListInputRef;
-  let tmp10;
   selectedUserIds = selectedUserIds.selectedUserIds;
   let flag9 = selectedUserIds;
   const disabledUserIds = selectedUserIds.disabledUserIds;
@@ -199,12 +184,12 @@ export default function NewMessageUserList(selectedUserIds) {
   }
   ({ defaultNoResultsFound, overrideResults } = selectedUserIds);
   c5 = undefined;
-  let c6;
-  let c7;
+  closure_6 = undefined;
+  c7 = undefined;
   let memo;
   ref = undefined;
   ({ forceSearchResults, onForceSearchResults, onSearchFocus } = selectedUserIds);
-  const tmp2 = createCacheKey();
+  const tmp2 = callback2();
   let obj = rowMode;
   [str, c5] = callback(rowMode.useState(""), 2);
   let items = [onQueryChanged];
@@ -216,7 +201,7 @@ export default function NewMessageUserList(selectedUserIds) {
   }, items);
   trimmed = str.trim();
   let tmp8 = selectedUserIds(trimmed[14])({ query: trimmed, withGuildMembers: flag, withAffinitySuggestions: flag2, withFriends: flag3, withGameFriends: flag4, withFriendSuggestions: flag8, withFriendRequests: flag5, withFriendRequestsIncoming: flag6, withFriendRequestsOutgoing: flag7, excludeCurrentUser: true });
-  c6 = tmp8;
+  closure_6 = tmp8;
   callback = undefined;
   let tmp3 = callback(rowMode.useState(""), 2);
   [tmp10, c3] = callback(rowMode.useState([]), 2);
@@ -226,49 +211,45 @@ export default function NewMessageUserList(selectedUserIds) {
       if ("" !== trimmed) {
         closure_0 = obj.toLocaleLowerCase();
         const _Object = Object;
-        const values = Object.values(_undefined3.getMutablePrivateChannels());
-        const found = values.filter(outer1_18);
+        const values = Object.values(closure_6.getMutablePrivateChannels());
+        const found = values.filter(closure_1_18);
         const mapped = found.map((arg0) => {
-          const items = [arg0, outer2_17(arg0, outer1_1, closure_0)];
+          const items = [arg0, closure_2_17(arg0, closure_1_1, closure_0)];
           return items;
         });
         const found1 = mapped.filter((arg0) => {
-          let tmp;
           [, tmp] = arg0;
           return tmp > 0;
         });
         const obj2 = selectedUserIds(trimmed[13]);
         _undefined(selectedUserIds(trimmed[13]).sortBy(found1, (arg0) => {
-          let tmp;
           [, tmp] = arg0;
           return -tmp;
         }).map((arg0) => {
-          let tmp;
           [tmp] = arg0;
           return tmp;
         }));
         const sortByResult = selectedUserIds(trimmed[13]).sortBy(found1, (arg0) => {
-          let tmp;
           [, tmp] = arg0;
           return -tmp;
         });
       } else {
-        _undefined(outer1_13);
+        _undefined(closure_1_13);
       }
       obj = trimmed;
     } else {
-      _undefined(outer1_13);
+      _undefined(closure_1_13);
     }
   }, items1);
   c7 = tmp10;
   const items2 = [tmp10, tmp8];
   memo = rowMode.useMemo(() => {
-    let obj = _undefined3;
-    const mapped = _undefined3.map((title) => {
+    let obj = closure_6;
+    const mapped = closure_6.map((title) => {
       const items = title.items;
       return { title: title.title, items: items.map((data) => ({ type: "UserSearchItem", data })) };
     });
-    if (0 === _undefined4.length) {
+    if (0 === _undefined3.length) {
       return mapped;
     } else {
       obj = { title: null, items: null };
@@ -291,7 +272,7 @@ export default function NewMessageUserList(selectedUserIds) {
       }
       return items1;
     }
-    arr2 = _undefined4;
+    arr2 = _undefined3;
   }, items2);
   const items3 = [memo];
   const memo1 = rowMode.useMemo(() => memo.map((items) => items.items.length), items3);
@@ -301,9 +282,7 @@ export default function NewMessageUserList(selectedUserIds) {
     const props = { title: memo[arg0].title };
     return { type: "section", props };
   }, items4);
-  const callback2 = rowMode.useCallback((arg0, arg1) => {
-    let firstMatch;
-    let user;
+  callback2 = rowMode.useCallback((arg0, arg1) => {
     const type = tmp.type;
     const tmp3 = arg1 === memo[arg0].items.length - 1;
     if ("UserSearchItem" === type) {
@@ -330,15 +309,15 @@ export default function NewMessageUserList(selectedUserIds) {
       }
       obj[4] = flag;
       obj[5] = hasItem;
-      if (_undefined4.isFriend(user.id)) {
+      if (_undefined3.isFriend(user.id)) {
         if (hasItem) {
           let TOGGLE = ref.TOGGLE;
         }
         obj = { type: "user", props: null };
         obj[6] = TOGGLE;
-        const obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
+        obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
         obj1[2] = selectedUserIds(trimmed[11]).getUserTag(user);
-        obj[7] = outer1_10(flag9(trimmed[16]).Text, obj1);
+        obj[7] = closure_1_10(flag9(trimmed[16]).Text, obj1);
         obj[8] = !obj5.isFriend(user.id);
         obj[9] = tmp2;
         obj[10] = tmp3;
@@ -347,7 +326,7 @@ export default function NewMessageUserList(selectedUserIds) {
       }
       TOGGLE = rowMode;
       obj4 = selectedUserIds;
-      obj5 = _undefined4;
+      obj5 = _undefined3;
     } else if ("GroupDMChannelRecord" === type) {
       obj = { type: "gdm", props: null };
       const obj2 = { channel: null, onPress: null, arrow: true, start: null, end: null };
@@ -392,7 +371,7 @@ export default function NewMessageUserList(selectedUserIds) {
       autoFocusSearch = someResult;
     }
     obj = { children: null };
-    let obj1 = { autoFocus: null, hasQuery: null, onChangeText: null, onFocus: null, onForceSearchResults: null, onSelectUser: null, selectedUserIds: null, forceSearchResults: null, tagListInputRef: null };
+    obj1 = { autoFocus: null, hasQuery: null, onChangeText: null, onFocus: null, onForceSearchResults: null, onSelectUser: null, selectedUserIds: null, forceSearchResults: null, tagListInputRef: null };
     obj1[0] = autoFocusSearch;
     obj1[1] = tmp5;
     obj1[2] = callback;
@@ -448,9 +427,9 @@ export default function NewMessageUserList(selectedUserIds) {
 export { matchGroupDM };
 export { filterGroupDMs };
 export const useSearchGDMNames = function useSearchGDMNames(arg0, arg1, arg2) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let closure_2 = arg2;
+  closure_0 = arg0;
+  closure_1 = arg1;
+  closure_2 = arg2;
   const tmp = callback(React.useState([]), 2);
   callback = tmp[1];
   const items = [arg0, arg1, arg2];
@@ -459,38 +438,34 @@ export const useSearchGDMNames = function useSearchGDMNames(arg0, arg1, arg2) {
       if ("" !== trimmed) {
         closure_0 = obj.toLocaleLowerCase();
         const _Object = Object;
-        const values = Object.values(_undefined3.getMutablePrivateChannels());
-        const found = values.filter(outer1_18);
+        const values = Object.values(closure_6.getMutablePrivateChannels());
+        const found = values.filter(closure_1_18);
         const mapped = found.map((arg0) => {
-          const items = [arg0, outer2_17(arg0, outer1_1, closure_0)];
+          const items = [arg0, closure_2_17(arg0, closure_1_1, closure_0)];
           return items;
         });
         const found1 = mapped.filter((arg0) => {
-          let tmp;
           [, tmp] = arg0;
           return tmp > 0;
         });
         const obj2 = selectedUserIds(trimmed[13]);
         _undefined(selectedUserIds(trimmed[13]).sortBy(found1, (arg0) => {
-          let tmp;
           [, tmp] = arg0;
           return -tmp;
         }).map((arg0) => {
-          let tmp;
           [tmp] = arg0;
           return tmp;
         }));
         const sortByResult = selectedUserIds(trimmed[13]).sortBy(found1, (arg0) => {
-          let tmp;
           [, tmp] = arg0;
           return -tmp;
         });
       } else {
-        _undefined(outer1_13);
+        _undefined(closure_1_13);
       }
       obj = trimmed;
     } else {
-      _undefined(outer1_13);
+      _undefined(closure_1_13);
     }
   }, items);
   return tmp[0];

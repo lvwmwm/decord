@@ -1,29 +1,27 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 11848
+// Function ID: 11849
 // Name: ApplicationIconAndName
-// Dependencies: [21, 4661, 712, 1297, 4734, 2]
+// Dependencies: [21, 4668, 712, 1297, 4739, 2]
 // Exports: default
 
-// Module 11799 (ApplicationIconAndName)
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11848 (ApplicationIconAndName)
+import set from "set" /* 2 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles((width) => {
   let obj = { gameIcon: null };
-  obj = { width, height: width, marginTop: -1, marginRight: 4, borderRadius: importDefault(712).radii.xs };
+  obj = { width, height: width, marginTop: -1, marginRight: 4, borderRadius: ThemesDefault.radii.xs };
   obj[0] = obj;
   return obj;
 });
-const result = require("Themes").fileFinishedImporting("modules/user_profile/native/ApplicationIconAndName.tsx");
+const result = set.fileFinishedImporting("modules/user_profile/native/ApplicationIconAndName.tsx");
 
 export default function ApplicationIconAndName(textVariant) {
-  let application;
-  let iconSize;
-  let useComma;
   ({ application, iconSize, useComma } = textVariant);
   if (useComma === undefined) {
     useComma = false;
@@ -34,7 +32,7 @@ export default function ApplicationIconAndName(textVariant) {
     str = "";
   }
   obj[2] = { uri: str };
-  const items = [closure_3(require(1297) /* Button */.Icon, obj, application.id), ];
+  const items = [closure_3(Button.Icon, obj, application.id), ];
   obj = { variant: textVariant.textVariant, children: null };
   let str2 = "";
   if (useComma) {
@@ -42,7 +40,7 @@ export default function ApplicationIconAndName(textVariant) {
   }
   obj = { children: null };
   obj[1] = "" + application.name + str2;
-  items[1] = closure_3(require(4734) /* Text */.Text, obj);
+  items[1] = closure_3(Text.Text, obj);
   obj[0] = items;
   return closure_5(closure_4, obj);
 };

@@ -1,23 +1,24 @@
-// Module ID: 16086
-// Function ID: 16087
+// Module ID: 16184
+// Function ID: 16185
 // Name: ContextMenuCommandAppScreen
-// Dependencies: [19, 21, 4661, 712, 5441, 8633, 16085, 8636, 2]
+// Dependencies: [19, 21, 4668, 712, 5446, 8670, 16183, 8673, 2]
 // Exports: default
 
-// Module 16086 (ContextMenuCommandAppScreen)
-import noop from "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16184 (ContextMenuCommandAppScreen)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_2 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 createCacheKey = { list: null };
-createCacheKey = { marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { marginHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createCacheKey").fileFinishedImporting("modules/application_commands/native/ContextMenuCommandAppScreen.tsx");
+let closure_4 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/application_commands/native/ContextMenuCommandAppScreen.tsx");
 
 export default function ContextMenuCommandAppScreen(route) {
   const params = route.route.params;
-  let section = params.section;
+  const section = params.section;
   const commands = params.commands;
   const onPressCommand = params.onPressCommand;
   let items = [commands.length];
@@ -27,19 +28,19 @@ export default function ContextMenuCommandAppScreen(route) {
     return items;
   }, items);
   const callback = onPressCommand.useCallback((arg0, arg1) => {
-    const section = tmp;
+    closure_0 = tmp;
     const diff = commands.length - 1;
-    return outer1_3(section(commands[6]), {
+    return closure_1_3(section(commands[6]), {
       item: commands[arg1],
       onPress() {
-        return outer1_2(closure_0);
+        return closure_1_2(closure_0);
       },
-      section,
+      section: closure_0,
       start: 0 === arg1,
       end: arg1 === diff
     }, commands[arg1].id);
   }, items1);
   const tmp = section(commands[5])();
-  const tmp4 = createCacheKey();
-  return jsx(section(commands[7]), { style: createCacheKey().list, sections: memo, estimatedListSize: "windowSize", itemSize: tmp, insetEnd: section(commands[4])({ includeKeyboardHeight: true }).insets.bottom, renderItem: callback });
+  const tmp4 = callback();
+  return jsx(section(commands[7]), { style: callback().list, sections: memo, estimatedListSize: "windowSize", itemSize: tmp, insetEnd: section(commands[4])({ includeKeyboardHeight: true }).insets.bottom, renderItem: callback });
 };

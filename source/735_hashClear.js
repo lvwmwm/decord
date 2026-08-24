@@ -4,11 +4,13 @@
 // Dependencies: [736]
 
 // Module 735 (hashClear)
+import getNative from "getNative" /* 736 */;
+
 
 export default function hashClear() {
   let obj = {};
-  if (require(736) /* getNative */) {
-    obj = require(736) /* getNative */(null);
+  if (getNative) {
+    obj = getNative(null);
   } else {
     obj = {};
   }

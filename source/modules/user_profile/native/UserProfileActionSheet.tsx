@@ -1,35 +1,28 @@
-// Module ID: 8943
-// Function ID: 8944
+// Module ID: 8980
+// Function ID: 8981
 // Name: UseAnimatedPosition
-// Dependencies: [32, 19, 17, 1391, 1990, 1922, 8370, 7186, 676, 6951, 21, 4661, 6952, 4115, 1629, 589, 8416, 7139, 7159, 7688, 4066, 8934, 8944, 8945, 8958, 8959, 8960, 8964, 8951, 8969, 8970, 8972, 1494, 6370, 8967, 4310, 4097, 712, 8941, 8973, 8418, 1977, 8417, 698, 4230, 4342, 8929, 1500, 6950, 1297, 8974, 1236, 4104, 8978, 500, 7360, 8981, 12085, 12169, 9210, 7124, 12359, 1306, 2]
+// Dependencies: [32, 19, 17, 1391, 1991, 1922, 8409, 7224, 676, 6989, 21, 4668, 6990, 4119, 1629, 589, 8455, 7177, 7197, 7726, 4069, 8971, 8981, 8982, 8995, 8996, 8997, 9001, 8988, 9006, 9007, 9009, 1494, 6401, 9004, 4314, 4100, 712, 8978, 9010, 8457, 1978, 8456, 698, 4234, 4346, 8966, 1500, 6988, 1297, 9011, 1236, 4107, 9015, 500, 7398, 9018, 12137, 12221, 9247, 7162, 12411, 1306, 2]
 
-// Module 8943 (UseAnimatedPosition)
-import useWindowDimensions from "useWindowDimensions";
-import importAllResult from "useBottomSheetRef";
-import get_ActivityIndicator from "context";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import handleFormOpen from "handleFormOpen";
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET";
-import ME from "ME";
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
-import jsxProd from "UserProfileAnalyticsProvider";
-import createCacheKey from "createCacheKey";
+// Module 8980 (UseAnimatedPosition)
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_10 from "handleFormOpen" /* 8409 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import ME from "ME" /* 676 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_12;
-let closure_14;
-let closure_16;
-let closure_17;
-let closure_6;
-let map1;
 const require = arg1;
 function UseAnimatedPosition(animatedPosition) {
   animatedPosition = animatedPosition.animatedPosition;
   let animatedPosition2;
-  animatedPosition2 = animatedPosition(6952).useBottomSheet().animatedPosition;
-  const obj = animatedPosition(6952);
+  animatedPosition2 = animatedPosition(6990).useBottomSheet().animatedPosition;
+  const obj = animatedPosition(6990);
   const fn = function n() {
     return animatedPosition2.get();
   };
@@ -42,7 +35,7 @@ function UseAnimatedPosition(animatedPosition) {
   fn2.__closure = { animatedPosition };
   fn2.__workletHash = 15360670503044;
   fn2.__initData = closure_20;
-  const animatedReaction = animatedPosition(4115).useAnimatedReaction(fn, fn2);
+  const animatedReaction = animatedPosition(4119).useAnimatedReaction(fn, fn2);
   return null;
 }
 function ActionSheetAlignedView(children) {
@@ -78,18 +71,6 @@ let closure_22 = { code: "function UserProfileActionSheetTsx3(){const{animatedPo
 let closure_24 = { code: "function UserProfileActionSheetTsx4(payload,context){const{defaultHandleOnScroll,scrollPosition,animatedScrollableState,SCROLLABLE_STATE}=this.__closure;var _defaultHandleOnScrol;(_defaultHandleOnScrol=defaultHandleOnScroll)===null||_defaultHandleOnScrol===void 0||_defaultHandleOnScrol(payload,context);scrollPosition.set(animatedScrollableState.get()===SCROLLABLE_STATE.LOCKED?0:payload.contentOffset.y);}" };
 let closure_25 = { code: "function UserProfileActionSheetTsx5(){const{scrollPosition}=this.__closure;const transform=scrollPosition.get()<=0?[{translateY:scrollPosition.get()}]:[];return{transform:transform};}" };
 const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) {
-  let _location;
-  let disableCalls;
-  let disableMessage;
-  let isPreviewingChanges;
-  let isVoiceContext;
-  let messageId;
-  let openedAt;
-  let primaryColor;
-  let roleId;
-  let secondaryColor;
-  let sessionId;
-  let theme;
   userId = userId.userId;
   const channelId = userId.channelId;
   const onClose = userId.onClose;
@@ -112,21 +93,21 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
   let stateFromStores;
   let guild_id;
   let stateFromStores2;
-  let UserProfileThemeTypes;
+  UserProfileThemeTypes = undefined;
   let analyticsLocations;
   let sharedValue2;
   let first;
-  let closure_15;
+  closure_15 = undefined;
   let first1;
-  let closure_17;
+  closure_17 = undefined;
   let pendingAvatarDecoration;
   let pendingProfileEffect;
   let pendingProfileFrame;
   let createUserProfileAnalyticsContext;
-  let c22;
+  closure_22 = undefined;
   let width;
-  let c24;
-  let closure_25;
+  closure_24 = undefined;
+  closure_25 = undefined;
   function handleUserSettingsClose() {
     navigation.goBack();
     const merged = Object.assign(createUserProfileAnalyticsContext);
@@ -136,7 +117,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
   const tmp3 = onClose;
   let obj = userId(onClose[13]);
   sharedValue = obj.useSharedValue(0);
-  let obj1 = userId(onClose[13]);
+  obj1 = userId(onClose[13]);
   sharedValue1 = obj1.useSharedValue(-1);
   top = channelId(onClose[14])().top;
   let obj2 = userId(onClose[15]);
@@ -186,41 +167,41 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
   sharedValue2 = userId(tmp3[13]).useSharedValue(0);
   const items5 = [sharedValue2];
   const memo = prop.useMemo(() => {
-    let closure_0 = sharedValue2;
+    closure_0 = sharedValue2;
     return (arg0, arg1, arg2) => {
-      let obj = callback(outer1_2[12]);
+      let obj = callback(closure_1_2[12]);
       const scrollEventsHandlersDefault = obj.useScrollEventsHandlersDefault(arg0, arg1, arg2);
-      const animatedScrollableState = callback(outer1_2[12]).useBottomSheetInternal().animatedScrollableState;
+      const animatedScrollableState = callback(closure_1_2[12]).useBottomSheetInternal().animatedScrollableState;
       const handleOnScroll = scrollEventsHandlersDefault.handleOnScroll;
-      const obj2 = callback(outer1_2[12]);
+      const obj2 = callback(closure_1_2[12]);
       const fn = function s(contentOffset) {
         if (handleOnScroll != null) {
           tmp(contentOffset, arg1);
         }
         const value = animatedScrollableState.get();
         let num = 0;
-        if (value !== animatedScrollableState(outer2_2[12]).SCROLLABLE_STATE.LOCKED) {
+        if (value !== animatedScrollableState(closure_2_2[12]).SCROLLABLE_STATE.LOCKED) {
           num = contentOffset.contentOffset.y;
         }
         const result = animatedScrollableState.set(num);
       };
-      obj = { defaultHandleOnScroll: handleOnScroll, scrollPosition: animatedScrollableState, animatedScrollableState, SCROLLABLE_STATE: callback(outer1_2[12]).SCROLLABLE_STATE };
+      obj = { defaultHandleOnScroll: handleOnScroll, scrollPosition: animatedScrollableState, animatedScrollableState, SCROLLABLE_STATE: callback(closure_1_2[12]).SCROLLABLE_STATE };
       fn.__closure = obj;
       fn.__workletHash = 13254130622789;
-      fn.__initData = outer1_24;
+      fn.__initData = closure_1_24;
       const items = [handleOnScroll, animatedScrollableState];
       obj = {};
-      const obj3 = callback(outer1_2[13]);
+      const obj3 = callback(closure_1_2[13]);
       const merged = Object.assign(scrollEventsHandlersDefault);
-      obj.handleOnScroll = callback(outer1_2[13]).useWorkletCallback(fn, items);
+      obj.handleOnScroll = callback(closure_1_2[13]).useWorkletCallback(fn, items);
       return obj;
     };
   }, items5);
   const tmp2Result1 = userId(tmp3[13]);
   class V {
     constructor() {
-      obj = c13;
-      if (c13.get() <= 0) {
+      obj = closure_13;
+      if (closure_13.get() <= 0) {
         obj = { translateY: null };
         obj[0] = obj.get();
         items = [];
@@ -269,7 +250,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
       tmp32 = skuId;
     }
     const tmp6Result2Result = tmp6(tmp3[23])(tmp32, "UserProfileActionSheet");
-    c22 = tmp6Result2Result;
+    closure_22 = tmp6Result2Result;
     let tmp35;
     const tmp6Result1 = tmp6(tmp3[23]);
     if (!isScreenLandscape) {
@@ -293,7 +274,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
     const items7 = [tmp6Result2Result, sharedValue, top, sharedValue1, first1];
     const memo1 = obj7.useMemo(() => {
       let tmp2 = null;
-      if (null != c22) {
+      if (null != closure_22) {
         let obj = { animatedPosition: null, safeAreaTop: null, animatedIndex: null, children: null };
         obj[0] = sharedValue;
         obj[1] = top;
@@ -301,7 +282,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         obj = { frame: null, frameOrder: null, profileThemeType: null, containerWidth: null };
         obj[0] = tmp;
         obj[1] = userId(onClose[28]).ProfileFrameLayerOrder.BACK;
-        obj[2] = _undefined.ACTION_SHEET;
+        obj[2] = constants.ACTION_SHEET;
         obj[3] = first1;
         obj[3] = first1(channelId(onClose[27]), obj);
         tmp2 = first1(width, obj);
@@ -335,7 +316,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
       const items8 = [isPreviewingChanges, tmp6Result2Result, width];
       const memo2 = obj7.useMemo(() => {
         if (isPreviewingChanges) {
-          if (null != c22) {
+          if (null != closure_22) {
             const _Math = Math;
             const bound = Math.min(width, closure_15);
             return channelId(onClose[34])(tmp, bound).overflowTop;
@@ -354,7 +335,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
       obj1[4] = tmp6ResultResult;
       obj1[5] = stateFromStores2;
       const tmp55 = tmp6(tmp3[38])(obj1);
-      c24 = tmp55;
+      closure_24 = tmp55;
       const items9 = [stateFromStores, channelId];
       const items10 = [stateFromStores, userId];
       const memo3 = obj7.useMemo(() => {
@@ -396,19 +377,19 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
       const effect2 = obj7.useEffect(() => {
         let tmp = first;
         if (!first) {
-          tmp = null == c11;
+          tmp = null == closure_11;
         }
         if (!tmp) {
           let tmp6 = null == guild_id;
           if (!tmp6) {
-            let prop;
+            prop = undefined;
             if (stateFromStores2 != null) {
               prop = stateFromStores2.fullProfileLoadedTimestamp;
             }
             tmp6 = null != prop;
           }
           if (tmp6) {
-            channelId(onClose[43]).track(analyticsLocations.OPEN_POPOUT, c24);
+            channelId(onClose[43]).track(analyticsLocations.OPEN_POPOUT, closure_24);
             callback(true);
             const obj = channelId(onClose[43]);
           }
@@ -466,7 +447,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
       const items15 = [userId];
       const effect5 = obj7.useEffect(() => {
         function handleNavigationChange() {
-          let key;
+          key = undefined;
           if (rootNavigationRef != null) {
             const currentRoute = rootNavigationRef.getCurrentRoute();
             if (currentRoute != null) {
@@ -731,6 +712,6 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
     }
   }
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileActionSheet.tsx");
 
 export default memoResult;

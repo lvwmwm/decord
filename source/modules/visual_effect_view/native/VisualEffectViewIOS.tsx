@@ -1,17 +1,19 @@
-// Module ID: 4727
-// Function ID: 4728
+// Module ID: 4732
+// Function ID: 4733
 // Name: BLUR_EFFECT_NAMES
-// Dependencies: [4354, 4728, 4729, 2]
+// Dependencies: [4358, 4733, 4734, 2]
 
-// Module 4727 (BLUR_EFFECT_NAMES)
-import DCDDeviceManager from "DCDDeviceManager";
-import importDefaultResult from "map";
+// Module 4732 (BLUR_EFFECT_NAMES)
+import set from "set" /* 2 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 4734 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4358 */;
+import importDefaultResult from "map" /* 4733 */;
 
 const obj = { componentName: "DCDVisualEffectView", componentFoundInstance: null };
 const tmp2 = DCDDeviceManager.getSystemVersionMajor() >= 13;
-obj[1] = require("__INTERNAL_VIEW_CONFIG");
-const importDefaultResultResult = require("map")(obj);
-const result = require("__INTERNAL_VIEW_CONFIG").fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewIOS.tsx");
+obj[1] = __INTERNAL_VIEW_CONFIGDefault;
+const importDefaultResultResult = importDefaultResult(obj);
+const result = set.fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewIOS.tsx");
 
 export default importDefaultResultResult;
 export const BLUR_EFFECT_NAMES = ["UIBlurEffectStyleLight", "UIBlurEffectStyleExtraLight", "UIBlurEffectStyleDark", "UIBlurEffectStyleSystemUltraThinMaterialLight", "UIBlurEffectStyleSystemUltraThinMaterialDark", "UIBlurEffectStyleSystemThinMaterialLight", "UIBlurEffectStyleSystemThinMaterialDark", "UIBlurEffectStyleSystemMaterialLight", "UIBlurEffectStyleSystemMaterialDark", "UIBlurEffectStyleSystemThickMaterialLight", "UIBlurEffectStyleSystemThickMaterialDark", "UIBlurEffectStyleSystemChromeMaterialLight", "UIBlurEffectStyleSystemChromeMaterialDark"];

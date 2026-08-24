@@ -1,27 +1,26 @@
-// Module ID: 15658
-// Function ID: 15659
+// Module ID: 15727
+// Function ID: 15728
 // Name: CoachmarkImg
-// Dependencies: [32, 19, 17, 1388, 21, 1377, 4661, 12732, 8484, 7366, 1236, 9314, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 1377, 4668, 12787, 8523, 7404, 1236, 9351, 2]
 // Exports: default
 
-// Module 15658 (CoachmarkImg)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { Image } from "get ActivityIndicator";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15727 (CoachmarkImg)
+import registerAssetDefault from "registerAsset" /* 12787 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 function CoachmarkImg() {
-  const obj = { source: null, style: null };
-  obj[0] = importDefault(12732);
-  obj[1] = callback2().imageContainer;
-  return <Image source={null} style={null} />;
+  const obj = { source: registerAssetDefault, style: callback2().imageContainer };
+  return <Image source={registerAssetDefault} style={callback2().imageContainer} />;
 }
 let closure_8 = require("DismissibleContent").DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
 let closure_9 = createCacheKey.createStyles({ imageContainer: { width: 100, height: 80 } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/saved_messages/native/useForLaterCoachmark.tsx");
+const result = require("set").fileFinishedImporting("modules/saved_messages/native/useForLaterCoachmark.tsx");
 
 export default function useForLaterCoachmark(targetRef) {
   if (obj.useIsForLaterExperimentOn("forLaterCoachmark")) {
@@ -30,27 +29,27 @@ export default function useForLaterCoachmark(targetRef) {
   } else {
     items1 = [];
   }
-  let tmpResult = tmp(7366);
+  let tmpResult = tmp(7404);
   const tmp4 = callback(tmpResult.useSelectedDismissibleContent(items1, undefined, true), 2);
   const first = tmp4[0];
-  const importDefault = tmp6;
+  closure_1 = tmp6;
   const items2 = [tmp4[1], first];
   const memo = React.useMemo(() => {
     const obj = { title: null, description: null, position: "bottom", visible: null, onDismiss: null, renderImgComponent: null };
-    const intl = first(outer1_2[10]).intl;
-    obj[0] = intl.string(first(outer1_2[10]).t.qPbFK2);
-    const intl2 = first(outer1_2[10]).intl;
-    obj[1] = intl2.string(first(outer1_2[10]).t.URrJq1);
-    obj[3] = first === outer1_8;
+    const intl = first(closure_1_2[10]).intl;
+    obj[0] = intl.string(first(closure_1_2[10]).t.qPbFK2);
+    const intl2 = first(closure_1_2[10]).intl;
+    obj[1] = intl2.string(first(closure_1_2[10]).t.URrJq1);
+    obj[3] = first === closure_1_8;
     obj[4] = function onDismiss() {
-      callback(outer1_6.USER_DISMISS);
+      callback(closure_1_6.USER_DISMISS);
     };
     obj[5] = function renderImgComponent() {
       return callback2(closure_10, {});
     };
     return obj;
   }, items2);
-  tmpResult = tmp(9314);
+  tmpResult = tmp(9351);
   const coachmark = tmpResult.useCoachmark(targetRef, memo);
   return tmp4[1];
 };

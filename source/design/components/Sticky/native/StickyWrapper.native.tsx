@@ -1,23 +1,21 @@
-// Module ID: 10566
-// Function ID: 10567
+// Module ID: 10605
+// Function ID: 10606
 // Name: StickyWrapper
 // Dependencies: [19, 17, 21, 501, 2]
 // Exports: StickyWrapper
 
-// Module 10566 (StickyWrapper)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
+// Module 10605 (StickyWrapper)
+import noopAll from "noop" /* 19 */;
+import PlatformTypes from "PlatformTypes" /* 501 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let StyleSheet;
-let c3;
-let c4;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ StyleSheet, View: obj1 } = get_ActivityIndicator);
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 const styles = StyleSheet.create({ wrapper: { height: "100%", width: "100%" }, header: { zIndex: 1 }, androidHeader: { position: "absolute", top: 0, left: 0, right: 0 } });
-const result = require("jsxProd").fileFinishedImporting("design/components/Sticky/native/StickyWrapper.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Sticky/native/StickyWrapper.native.tsx");
 
 export const StickyWrapper = function StickyWrapper(header) {
   header = header.header;
@@ -35,7 +33,7 @@ export const StickyWrapper = function StickyWrapper(header) {
     obj[0] = items1;
     obj[1] = header;
     tmp5Result = closure_3(tmp2, obj);
-    obj2 = require(501) /* PlatformTypes */;
+    obj2 = PlatformTypes;
     const tmp5 = closure_3;
   }
   const items2 = [tmp5Result, header.children];

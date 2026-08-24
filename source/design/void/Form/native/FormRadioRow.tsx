@@ -1,23 +1,21 @@
-// Module ID: 8099
-// Function ID: 8100
+// Module ID: 8138
+// Function ID: 8139
 // Name: FormRadioRow
-// Dependencies: [19, 21, 6939, 4105, 8100, 6937, 6943, 2]
+// Dependencies: [19, 21, 6977, 4108, 8139, 6975, 6981, 2]
 // Exports: default
 
-// Module 8099 (FormRadioRow)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 8138 (FormRadioRow)
+import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4108 */;
+import _modDef6975 from "module_6975" /* 6975 */;
+import context2 from "context" /* 6977 */;
+import TableRadioRow from "TableRadioRow" /* 8139 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("context").fileFinishedImporting("design/void/Form/native/FormRadioRow.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("design/void/Form/native/FormRadioRow.tsx");
 
 export default function FormRadioRow(arg0) {
-  let align;
-  let leading;
-  let onPress;
-  let selected;
-  let style;
-  let value;
   ({ selected, align } = arg0);
   if (align === undefined) {
     align = "left";
@@ -25,8 +23,8 @@ export default function FormRadioRow(arg0) {
   ({ leading, onPress } = arg0);
   ({ value, style } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  const context = React.useContext(require(6939) /* context */.RedesignCompatContext);
-  let obj = require(4105) /* useCheckboxA11yNative */;
+  const context = React.useContext(context2.RedesignCompatContext);
+  let obj = useCheckboxA11yNative;
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   if (context) {
     obj = { icon: null, value: null, legacyCompat_selected: null, legacyCompat_onPress: null };
@@ -35,7 +33,7 @@ export default function FormRadioRow(arg0) {
     obj[2] = selected;
     obj[3] = onPress;
     const merged1 = Object.assign(merged);
-    let tmp8Result = tmp8(require(8100) /* TableRadioRow */.TableRadioRow, obj);
+    let tmp8Result = tmp8(TableRadioRow.TableRadioRow, obj);
   } else {
     obj = {};
     const merged2 = Object.assign(merged);
@@ -45,20 +43,20 @@ export default function FormRadioRow(arg0) {
     obj.accessibilityState = tmp7;
     tmp8Result = null;
     if ("right" === align) {
-      const obj1 = { selected: null };
+      obj1 = { selected: null };
       obj1[0] = selected;
-      tmp8Result = tmp8(tmp9(6943), obj1);
+      tmp8Result = tmp8(tmp9(6981), obj1);
     }
     obj.trailing = tmp8Result;
     let tmp8Result1 = leading;
     if ("left" === align) {
       const obj2 = { selected: null };
       obj2[0] = selected;
-      tmp8Result1 = tmp8(tmp9(6943), obj2);
+      tmp8Result1 = tmp8(tmp9(6981), obj2);
     }
     obj.leading = tmp8Result1;
-    tmp8Result = tmp8(importDefault(6937), obj);
-    const tmp10 = importDefault(6937);
+    tmp8Result = tmp8(_modDef6975, obj);
+    const tmp10 = _modDef6975;
   }
   return tmp8Result;
 };

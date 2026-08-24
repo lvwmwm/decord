@@ -1,22 +1,23 @@
-// Module ID: 7227
-// Function ID: 7228
+// Module ID: 7265
+// Function ID: 7266
 // Name: set
-// Dependencies: [1922, 4041, 676, 589, 2]
+// Dependencies: [1922, 4044, 676, 589, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsExpeditedOnboardingGuild, useIsRavenOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry, useIsWhitegloveOnboardingGuild
 
-// Module 7227 (set)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
-import { GuildFeatures } from "ME";
-import set from "ME";
+// Module 7265 (set)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "handlePaymentSourceCreateEnd" /* 4044 */;
+import { GuildFeatures } from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 let set = new Set(["US"]);
 const result = set.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityExperimentUtils.tsx");
 
 export const useIsUserInCreatorMonetizationEligibleCountry = function useIsUserInCreatorMonetizationEligibleCountry() {
-  const items = [mergeGuildAvatar, handlePaymentSourceCreateEnd];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
+  const items = [closure_2, closure_3];
+  return initialize.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let country;
     if (currentUser != null) {

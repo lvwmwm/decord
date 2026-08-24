@@ -1,23 +1,17 @@
-// Module ID: 11490
-// Function ID: 11491
+// Module ID: 11539
+// Function ID: 11540
 // Name: GuildTemplatesItem
-// Dependencies: [19, 17, 11472, 11477, 21, 4661, 11491, 1297, 11492, 1500, 1629, 11476, 4734, 1236, 6286, 8576, 2]
+// Dependencies: [19, 17, 11521, 11526, 21, 4668, 11540, 1297, 11541, 1500, 1629, 11525, 4739, 1236, 6317, 8615, 2]
 // Exports: default
 
-// Module 11490 (GuildTemplatesItem)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import DirectoryEntryTypes from "DirectoryEntryTypes";
-import { GuildDirectoryCreate } from "GuildDirectoryCreate";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11539 (GuildTemplatesItem)
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import DirectoryEntryTypes from "DirectoryEntryTypes" /* 11521 */;
+import { GuildDirectoryCreate } from "GuildDirectoryCreate" /* 11526 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c4;
-let c5;
-let c9;
-let closure_6;
-let error;
 const require = arg1;
 class GuildTemplatesItem {
   constructor(arg0) {
@@ -25,10 +19,7 @@ class GuildTemplatesItem {
     onGuildTemplatePress = global.onGuildTemplatePress;
     obj = {
       Icon(qXtNtS) {
-            const obj = { source: null, disableColor: true, style: null };
-            obj[0] = guildTemplate(outer1_2[8]).GUILD_TEMPLATE_ICONS[guildTemplate.id];
-            obj[2] = { width: 48, height: 48 };
-            return outer1_9(guildTemplate(outer1_2[7]).Icon, obj);
+            return closure_1_9(guildTemplate(closure_1_2[7]).Icon, { source: guildTemplate(closure_1_2[8]).GUILD_TEMPLATE_ICONS[guildTemplate.id], disableColor: true, style: { width: 48, height: 48 } });
           },
       message: guildTemplate.label,
       onPress() {
@@ -42,12 +33,12 @@ class GuildTemplatesItem {
 ({ getHubGuildTemplatesMap: closure_6, HubGuildTemplateId: error } = DirectoryEntryTypes);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let closure_11 = createCacheKey.createStyles({ label: { marginTop: 16, marginLeft: 16, marginBottom: 8 }, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center" }, header: { alignItems: "center", justifyContent: "center", padding: 16 }, templateGroup: { marginHorizontal: 16 } });
-const result = require("DirectoryEntryTypes").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryTemplates.tsx");
+const result = require("set").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryTemplates.tsx");
 
 export default function GuildDirectoryTemplates(directoryGuildName) {
   const _require = directoryGuildName;
   const tmp = callback4();
-  const importDefault = React.useRef(directoryGuildName);
+  importDefault = React.useRef(directoryGuildName);
   let obj = _require(navigation[9]);
   navigation = obj.useNavigation();
   const tmp3 = callback();
@@ -56,7 +47,7 @@ export default function GuildDirectoryTemplates(directoryGuildName) {
   });
   const items = [navigation];
   callback = React.useCallback((guildTemplate) => {
-    navigation.push(outer1_8.CREATE, { onHubGuildInfoSet: ref.current.onHubGuildInfoSet, guildTemplate });
+    navigation.push(closure_1_8.CREATE, { onHubGuildInfoSet: ref.current.onHubGuildInfoSet, guildTemplate });
   }, items);
   obj = { children: null };
   obj = { contentContainerStyle: obj1, children: null };

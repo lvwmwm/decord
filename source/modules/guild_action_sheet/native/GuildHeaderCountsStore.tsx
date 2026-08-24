@@ -1,17 +1,19 @@
-// Module ID: 13431
-// Function ID: 13432
+// Module ID: 13489
+// Function ID: 13490
 // Name: initialize
-// Dependencies: [7249, 1391, 4295, 1922, 4542, 589, 709, 2]
+// Dependencies: [7287, 1391, 4299, 1922, 4547, 589, 709, 2]
 
-// Module 13431 (initialize)
-import getMemberListId from "getMemberListId";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleInviteData from "handleInviteData";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import updateVoiceState from "updateVoiceState";
-import { PersistedStore } from "initialize";
+// Module 13489 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "getMemberListId" /* 7287 */;
+import closure_1 from "ensureGuildLoaded" /* 1391 */;
+import closure_2 from "handleInviteData" /* 4299 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "updateVoiceState" /* 4547 */;
 
 let obj = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class GuildHeaderCountsStore extends PersistedStore {
 }
 const prototype = GuildHeaderCountsStore.prototype;
@@ -20,10 +22,11 @@ prototype["initialize"] = function initialize() {
   if (arg0 === undefined) {
     tmp = obj;
   }
-  this.waitFor(handleInviteData, getMemberListId, mergeGuildAvatar, ensureGuildLoaded, updateVoiceState, getMemberListId);
+  this.waitFor(closure_2, closure_0, closure_3, closure_1, closure_4, closure_0);
   if (tmp == null) {
     tmp = obj;
   }
+  closure_6 = tmp;
 };
 prototype["getState"] = function getState() {
   return obj;
@@ -55,26 +58,26 @@ obj = {
   GUILD_HEADER_MEMBER_COUNT: function handleMemberCount(guildId) {
     guildId = guildId.guildId;
     if (null == obj[guildId]) {
-      obj[guildId] = { activeChannelsCount: "Array", onlineCount: "HermesInternal", memberCount: "r" };
+      obj[guildId] = { activeChannelsCount: "getGuild", onlineCount: "call", memberCount: "HTTP" };
     }
     obj[guildId].memberCount = guildId.count;
   },
   GUILD_HEADER_ONLINE_COUNT: function handleOnlineCount(guildId) {
     guildId = guildId.guildId;
     if (null == obj[guildId]) {
-      obj[guildId] = { activeChannelsCount: "Array", onlineCount: "HermesInternal", memberCount: "r" };
+      obj[guildId] = { activeChannelsCount: "getGuild", onlineCount: "call", memberCount: "HTTP" };
     }
     obj[guildId].onlineCount = guildId.count;
   },
   GUILD_HEADER_ACTIVE_CHANNELS_COUNT: function handleActiveChannelsCount(guildId) {
     guildId = guildId.guildId;
     if (null == obj[guildId]) {
-      obj[guildId] = { activeChannelsCount: "Array", onlineCount: "HermesInternal", memberCount: "r" };
+      obj[guildId] = { activeChannelsCount: "getGuild", onlineCount: "call", memberCount: "HTTP" };
     }
     obj[guildId].activeChannelsCount = guildId.count;
   }
 };
-const guildHeaderCountsStore = new GuildHeaderCountsStore(require("dispatcher"), obj);
-const result = require("handleInviteData").fileFinishedImporting("modules/guild_action_sheet/native/GuildHeaderCountsStore.tsx");
+const guildHeaderCountsStore = new GuildHeaderCountsStore(dispatcherDefault, obj);
+const result = require("set").fileFinishedImporting("modules/guild_action_sheet/native/GuildHeaderCountsStore.tsx");
 
 export default guildHeaderCountsStore;

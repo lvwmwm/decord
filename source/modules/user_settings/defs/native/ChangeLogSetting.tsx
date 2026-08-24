@@ -1,27 +1,32 @@
-// Module ID: 14849
-// Function ID: 14850
+// Module ID: 14913
+// Function ID: 14914
 // Name: route
-// Dependencies: [676, 10669, 1236, 4330, 14850, 2]
+// Dependencies: [676, 10708, 1236, 4334, 14914, 2]
 
-// Module 14849 (route)
-import createToggle from "createToggle";
+// Module 14913 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4334 */;
+import ChangeLogScreen from "ChangeLogScreen" /* 14914 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.LRmNAl);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.LRmNAl);
   },
   parent: null,
-  IconComponent: require("CircleInformationIcon").CircleInformationIcon,
+  IconComponent: CircleInformationIcon.CircleInformationIcon,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.CHANGE_LOG,
+  route: ME.UserSettingsSections.CHANGE_LOG,
   getComponent() {
-    return require(14850) /* ChangeLogScreen */.ChangeLogScreen;
+    return ChangeLogScreen.ChangeLogScreen;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/ChangeLogSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ChangeLogSetting.tsx");
 
 export default route;

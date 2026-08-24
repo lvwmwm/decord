@@ -1,13 +1,15 @@
-// Module ID: 10669
-// Function ID: 10670
+// Module ID: 10708
+// Function ID: 10709
 // Name: createToggle
-// Dependencies: [10670, 2]
+// Dependencies: [10709, 2]
 // Exports: createGuildSelector, createList, createPressable, createRadio, createRoute, createSegmentedControl, createSlider, createStatic, createToggle, createVolumeSlider
 
-// Module 10669 (createToggle)
-import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
+// Module 10708 (createToggle)
+import set from "set" /* 2 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 10709 */;
 
-const result = require("set").fileFinishedImporting("modules/settings/native/renderer/SettingBuilders.tsx");
+const NodeType = GUILD_SELECT_ALL_SERVERS_OPTION_ID.NodeType;
+const result = set.fileFinishedImporting("modules/settings/native/renderer/SettingBuilders.tsx");
 
 export const createToggle = function createToggle(createToggle) {
   const merged = Object.assign(createToggle);

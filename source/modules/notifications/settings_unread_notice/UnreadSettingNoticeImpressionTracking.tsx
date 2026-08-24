@@ -1,17 +1,19 @@
-// Module ID: 10631
-// Function ID: 10632
+// Module ID: 10670
+// Function ID: 10671
 // Name: UnreadSettingNoticeImpressionTracking
-// Dependencies: [9177, 503, 2]
+// Dependencies: [9214, 503, 2]
 // Exports: default
 
-// Module 10631 (UnreadSettingNoticeImpressionTracking)
-const result = require("set").fileFinishedImporting("modules/notifications/settings_unread_notice/UnreadSettingNoticeImpressionTracking.tsx");
+// Module 10670 (UnreadSettingNoticeImpressionTracking)
+import set from "set" /* 2 */;
+import encodeProperties from "encodeProperties" /* 503 */;
+import trackImpressionDefault from "trackImpression" /* 9214 */;
+
+const result = set.fileFinishedImporting("modules/notifications/settings_unread_notice/UnreadSettingNoticeImpressionTracking.tsx");
 
 export default function UnreadSettingNoticeImpressionTracking(id) {
-  const obj = { type: null, name: null };
-  obj[0] = require(503) /* encodeProperties */.ImpressionTypes.VIEW;
-  obj[1] = require(503) /* encodeProperties */.ImpressionNames.NOTIFICATION_SETTING_UNREAD_NUDGE;
+  const obj = { type: encodeProperties.ImpressionTypes.VIEW, name: encodeProperties.ImpressionNames.NOTIFICATION_SETTING_UNREAD_NUDGE };
   const items = [id.id];
-  importDefault(9177)(obj, undefined, items);
+  trackImpressionDefault(obj, undefined, items);
   return null;
 };

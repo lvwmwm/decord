@@ -1,15 +1,20 @@
 // Module ID: 6635
 // Function ID: 6636
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 6587]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 6622, 6636, 6631]
 
 // Module 6635 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
+import noopAll from "noop" /* 19 */;
+import _inheritsDefault from "_inherits" /* 98 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 6631 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 6636 */;
+import closure_3 from "_classCallCheck" /* 41 */;
+import closure_4 from "_possibleConstructorReturn" /* 93 */;
+import closure_5 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const FeSpotLight = arg1;
+const Circle = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -21,21 +26,22 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
-class FeSpotLight {
+noopAll;
+class Circle {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeSpotLight);
-    tmp2 = __esModule;
-    obj = __esModule(FeSpotLight);
-    tmp3 = __esModule;
+    tmp = closure_3(this, Circle);
+    tmp2 = closure_5;
+    obj = closure_5(Circle);
+    tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -49,18 +55,36 @@ class FeSpotLight {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeSpotLight, require("noop").Component);
+_inheritsDefault(Circle, _isNativeReflectConstructDefault);
 const items = [
   {
     key: "render",
     value: function render() {
-      const result = FeSpotLight(6587).warnUnimplementedFilter();
-      return null;
+      const self = this;
+      const props = this.props;
+      let obj = {};
+      ({ cx, cy, r } = props);
+      const merged = Object.assign(self(6622).extract(this, props));
+      obj.cx = cx;
+      obj.cy = cy;
+      obj.r = r;
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      };
+      const obj2 = self(6622);
+      const merged1 = Object.assign(obj);
+      return jsx(__INTERNAL_VIEW_CONFIGDefault, {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(FeSpotLight, items);
-importDefaultResultResult.displayName = "FeSpotLight";
-importDefaultResultResult.defaultProps = {};
+const importDefaultResultResult = importDefaultResult(Circle, items);
+importDefaultResultResult.displayName = "Circle";
+importDefaultResultResult.defaultProps = { cx: 0, cy: 0, r: 0 };
 
 export default importDefaultResultResult;

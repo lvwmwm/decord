@@ -1,23 +1,23 @@
-// Module ID: 16580
-// Function ID: 16581
+// Module ID: 16676
+// Function ID: 16677
 // Name: syncLocalState
-// Dependencies: [5, 1218, 4497, 4539, 4541, 4542, 4540, 9763, 4529, 3, 38, 9654, 12571, 5038, 4259, 9845, 1370, 4827, 1236, 16581, 9848, 2]
+// Dependencies: [5, 1218, 4501, 4544, 4546, 4547, 4545, 9802, 4534, 3, 38, 9693, 12625, 5043, 4263, 9884, 1370, 4832, 1236, 16677, 9887, 2]
 
-// Module 16580 (syncLocalState)
-import updateVoiceState from "updateVoiceState";
-import fetchFingerprint from "fetchFingerprint";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createRTCConnection from "createRTCConnection";
-import handleUpdate from "handleUpdate";
-import closure_8 from "updateVoiceState";
-import set from "set";
-import XBOX_URL_BASE from "XBOX_URL_BASE";
-import { MediaEngineContextTypes } from "DesktopSources";
-import "initialize";
+// Module 16676 (syncLocalState)
+import timestampDefault from "timestamp" /* 3 */;
+import start from "start" /* 4263 */;
+import initializeDefault from "initialize" /* 5043 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_6 from "createRTCConnection" /* 4544 */;
+import closure_7 from "handleUpdate" /* 4546 */;
+import closure_8 from "updateVoiceState" /* 4547 */;
+import closure_9 from "set" /* 4545 */;
+import XBOX_URL_BASE from "XBOX_URL_BASE" /* 9802 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4534 */;
 
-let c10;
-let unpackModuleId;
-let require = arg1;
+require = arg1;
 function syncLocalState() {
   const self = this;
   const apply = _syncLocalState.apply;
@@ -31,9 +31,9 @@ function syncLocalState() {
 function _syncLocalState() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -46,7 +46,7 @@ function _syncLocalState() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -63,13 +63,13 @@ function _syncLocalState() {
             } else {
               const table = tmp5;
               const callback = tmp2;
-              const channelId = outer1_6.getChannelId();
-              outer1_1(outer1_2[10])(null == channelId, "Syncing to remote while in voice!");
-              if (closure_0.selfMute !== outer1_5.isSelfMute()) {
+              const channelId = closure_1_6.getChannelId();
+              closure_1_1(closure_1_2[10])(null == channelId, "Syncing to remote while in voice!");
+              if (closure_0.selfMute !== closure_1_5.isSelfMute()) {
                 c3 = 1;
                 c4 = 1;
-                let obj1 = { value: null, done: false };
-                obj1[0] = outer1_1(outer1_2[11]).toggleSelfMute({ syncRemote: false });
+                obj1 = { value: null, done: false };
+                obj1[0] = closure_1_1(closure_1_2[11]).toggleSelfMute({ syncRemote: false });
                 return obj1;
               }
             }
@@ -87,7 +87,7 @@ function _syncLocalState() {
             obj1.toggleSelfDeaf({ syncRemote: false });
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp16) {
           c4 = tmp;
           throw tmp16;
@@ -95,7 +95,7 @@ function _syncLocalState() {
       }
     })();
   });
-  const _syncLocalState = tmp;
+  closure_15 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -105,12 +105,14 @@ function _syncLocalState() {
   return applyArgumentsResult;
 }
 ({ GAME_CONSOLE_SESSIONS: c10, USER_ACTION_REQUIRED_ERROR_CODES: unpackModuleId } = XBOX_URL_BASE);
+let closure_13 = new timestampDefault("GameConsoleManager");
+initializeDefault;
 let prototype = function GameConsoleManager() {
   let applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const require = applyArgumentsResult;
-  const timeout = new require(4259) /* start */.Timeout();
+  require = applyArgumentsResult;
+  const timeout = new start.Timeout();
   applyArgumentsResult.rollbackCommandTimeout = timeout;
-  const timeout1 = new require(4259) /* start */.Timeout();
+  const timeout1 = new start.Timeout();
   applyArgumentsResult.awaitRemoteTimeout = timeout1;
   applyArgumentsResult.actions = {
     WAIT_FOR_REMOTE_SESSION() {
@@ -142,13 +144,13 @@ let prototype = function GameConsoleManager() {
     }
   };
   applyArgumentsResult.maybeConnect = function maybeConnect(mapped) {
-    const applyArgumentsResult = outer1_9.getAwaitingRemoteSessionInfo();
+    applyArgumentsResult = closure_1_9.getAwaitingRemoteSessionInfo();
     const found = mapped.find((clientInfo) => {
-      let hasItem = outer1_10.has(clientInfo.clientInfo.os);
+      let hasItem = closure_1_10.has(clientInfo.clientInfo.os);
       let tmp4 = null == callback;
       if (!tmp4) {
-        tmp4 = callback(outer1_2[12]).coercePlatformTypeToConsoleType(tmp3.type) === clientInfo.clientInfo.os;
-        const obj = callback(outer1_2[12]);
+        tmp4 = callback(closure_1_2[12]).coercePlatformTypeToConsoleType(tmp3.type) === clientInfo.clientInfo.os;
+        const obj = callback(closure_1_2[12]);
       }
       if (hasItem) {
         hasItem = tmp4;
@@ -163,33 +165,33 @@ let prototype = function GameConsoleManager() {
     } else {
       const awaitRemoteTimeout = applyArgumentsResult.awaitRemoteTimeout;
       awaitRemoteTimeout.stop();
-      applyArgumentsResult(outer1_2[15]).connectToRemote(found.sessionId);
-      const voiceStateForSession = outer1_8.getVoiceStateForSession(outer1_4.getId(), found.sessionId);
+      applyArgumentsResult(closure_1_2[15]).connectToRemote(found.sessionId);
+      const voiceStateForSession = closure_1_8.getVoiceStateForSession(closure_1_4.getId(), found.sessionId);
       if (null != voiceStateForSession) {
-        outer1_14(voiceStateForSession);
+        closure_1_14(voiceStateForSession);
       }
     }
   };
   applyArgumentsResult.handleAudioStateToggle = function handleAudioStateToggle(syncRemote) {
     let voiceStateForSession;
     if (syncRemote.syncRemote) {
-      if (tmp === outer1_12.DEFAULT) {
-        const isSelfDeafResult = outer1_5.isSelfDeaf();
-        const isSelfMuteResult = outer1_5.isSelfMute();
-        const id = outer1_4.getId();
-        const remoteSessionId = outer1_9.getRemoteSessionId();
+      if (tmp === closure_1_12.DEFAULT) {
+        const isSelfDeafResult = closure_1_5.isSelfDeaf();
+        const isSelfMuteResult = closure_1_5.isSelfMute();
+        const id = closure_1_4.getId();
+        const remoteSessionId = closure_1_9.getRemoteSessionId();
         if (null != remoteSessionId) {
-          voiceStateForSession = outer1_8.getVoiceStateForSession(id, remoteSessionId);
+          voiceStateForSession = closure_1_8.getVoiceStateForSession(id, remoteSessionId);
           if (null != voiceStateForSession) {
             if (!tmp3) {
-              let obj = applyArgumentsResult(outer1_2[15]);
+              let obj = applyArgumentsResult(closure_1_2[15]);
               obj = { selfDeaf: null, selfMute: null };
               obj[0] = isSelfDeafResult;
               obj[1] = isSelfMuteResult;
               const result = obj.remoteVoiceStateUpdate(remoteSessionId, obj);
               const rollbackCommandTimeout = voiceStateForSession.rollbackCommandTimeout;
               rollbackCommandTimeout.start(3000, () => {
-                outer1_14(voiceStateForSession);
+                closure_1_14(voiceStateForSession);
               });
             }
             tmp3 = voiceStateForSession.selfDeaf === isSelfDeafResult && voiceStateForSession.selfMute === isSelfMuteResult;
@@ -200,7 +202,7 @@ let prototype = function GameConsoleManager() {
   };
   applyArgumentsResult.handleVoiceStateUpdates = function handleVoiceStateUpdates(voiceStates) {
     voiceStates = voiceStates.voiceStates;
-    const remoteSessionId = outer1_9.getRemoteSessionId();
+    const remoteSessionId = closure_1_9.getRemoteSessionId();
     if (null == remoteSessionId) {
       const mapped = voiceStates.map((sessionId) => {
         sessionId = sessionId.sessionId;
@@ -210,52 +212,50 @@ let prototype = function GameConsoleManager() {
         }
         return sessionById;
       });
-      return remoteSessionId.maybeConnect(mapped.filter(applyArgumentsResult(outer1_2[16]).isNotNullish));
+      return remoteSessionId.maybeConnect(mapped.filter(applyArgumentsResult(closure_1_2[16]).isNotNullish));
     } else {
       const found = voiceStates.find((sessionId) => sessionId.sessionId === remoteSessionId);
       if (null != found) {
         const rollbackCommandTimeout = remoteSessionId.rollbackCommandTimeout;
         rollbackCommandTimeout.stop();
-        outer1_14(found);
+        closure_1_14(found);
       }
     }
   };
   applyArgumentsResult.handleSessionsChanged = function handleSessionsChanged() {
-    const remoteSessionId = outer1_9.getRemoteSessionId();
+    const remoteSessionId = closure_1_9.getRemoteSessionId();
     let tmp2 = null != remoteSessionId;
     if (tmp2) {
-      tmp2 = null == outer1_7.getSessionById(remoteSessionId);
+      tmp2 = null == closure_1_7.getSessionById(remoteSessionId);
     }
     if (tmp2) {
-      applyArgumentsResult(outer1_2[15]).disconnectRemote();
-      const obj = applyArgumentsResult(outer1_2[15]);
+      applyArgumentsResult(closure_1_2[15]).disconnectRemote();
+      const obj = applyArgumentsResult(closure_1_2[15]);
     }
     if (null == remoteSessionId) {
       const _Object = Object;
-      applyArgumentsResult.maybeConnect(Object.values(outer1_7.getSessions()));
+      applyArgumentsResult.maybeConnect(Object.values(closure_1_7.getSessions()));
     }
   };
   applyArgumentsResult.handleWaitForRemoteSession = function handleWaitForRemoteSession() {
     const awaitRemoteTimeout = applyArgumentsResult.awaitRemoteTimeout;
     awaitRemoteTimeout.start(60000, () => {
-      let obj = callback(9845);
+      let obj = callback(9884);
       obj.disconnectRemote();
       obj = { title: null, body: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t.wGMxr3);
       const intl2 = callback(1236).intl;
       obj[1] = intl2.string(callback(1236).t.i5k8b5);
-      callback2(4827).show(obj);
+      callback2(4832).show(obj);
     });
   };
   applyArgumentsResult.handleConsoleCommandUpdate = function handleConsoleCommandUpdate(arg0) {
-    let error;
-    let result;
     ({ result, error } = arg0);
     if ("failed" === result) {
       if (null != error) {
-        outer1_13.info("Console command Error result:", result, error);
-        const awaitingRemoteSessionInfo = outer1_9.getAwaitingRemoteSessionInfo();
+        closure_1_13.info("Console command Error result:", result, error);
+        const awaitingRemoteSessionInfo = closure_1_9.getAwaitingRemoteSessionInfo();
         let commandId;
         if (awaitingRemoteSessionInfo != null) {
           commandId = awaitingRemoteSessionInfo.commandId;
@@ -274,7 +274,7 @@ let prototype = function GameConsoleManager() {
             obj[2] = intl2.string(applyArgumentsResult(tmp7[18]).t["UQMV/E"]);
             device = obj;
           }
-          const tmp8Result = outer1_1(outer1_2[19])(device, result, error);
+          const tmp8Result = closure_1_1(closure_1_2[19])(device, result, error);
           if (null != tmp8Result) {
             obj = { title: null, body: null, errorCodeMessage: null, reconnectPlatformType: null };
             ({ title: obj3[0], body: obj3[1], errorCodeMessage: obj3[2] } = tmp8Result);
@@ -286,7 +286,7 @@ let prototype = function GameConsoleManager() {
             result = tmp6(tmp7[20]).showSelfDismissableAlert(obj);
             const tmp6Result = tmp6(tmp7[20]);
           }
-          if (outer1_11.has(error.code)) {
+          if (closure_1_11.has(error.code)) {
             const awaitRemoteTimeout = applyArgumentsResult.awaitRemoteTimeout;
             if (awaitRemoteTimeout.isStarted()) {
               const awaitRemoteTimeout2 = tmp14.awaitRemoteTimeout;
@@ -298,10 +298,10 @@ let prototype = function GameConsoleManager() {
             applyArgumentsResult(tmp7[15]).disconnectRemote();
             const obj4 = applyArgumentsResult(tmp7[15]);
           }
-          tmp6 = outer1_1;
-          const tmp8 = outer1_1(outer1_2[19]);
+          tmp6 = closure_1_1;
+          const tmp8 = closure_1_1(closure_1_2[19]);
         }
-        obj5 = outer1_9;
+        obj5 = closure_1_9;
       }
     }
   };
@@ -314,7 +314,7 @@ let prototype = function GameConsoleManager() {
 class prototype extends tmp4 {
 }
 prototype = new prototype();
-let tmp3 = new require("createRTCConnection")("GameConsoleManager");
-let result = require("_detectH265HardwareDecode").fileFinishedImporting("modules/game_console/GameConsoleManager.tsx");
+let tmp3 = new timestampDefault("GameConsoleManager");
+let result = require("set").fileFinishedImporting("modules/game_console/GameConsoleManager.tsx");
 
 export default prototype;

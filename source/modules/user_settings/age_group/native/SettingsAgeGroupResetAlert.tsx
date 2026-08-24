@@ -1,24 +1,22 @@
-// Module ID: 14131
-// Function ID: 14132
+// Module ID: 14199
+// Function ID: 14200
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1500, 6702, 4657, 4093, 1236, 4660, 2853, 4660, 2]
+// Dependencies: [5, 21, 1500, 6739, 4663, 4096, 1236, 4667, 2854, 4667, 2]
 // Exports: default
 
-// Module 14131 (SettingsAgeGroupResetAlert)
-import presentAddedFriendToast from "presentAddedFriendToast";
-import jsxProd from "jsxProd";
+// Module 14199 (SettingsAgeGroupResetAlert)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let c6 = "settings-age-group-reset";
-const result = require("useNavigation").fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupResetAlert.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupResetAlert.tsx");
 
 export default function SettingsAgeGroupResetAlert() {
   function _handleConfirm(arg0) {
     const self = this;
-    const tmp = outer1_3(function*() {
+    const tmp = closure_1_3(function*() {
       if (c3 === 2) {
         c3 = 3;
         HermesBuiltin.throwTypeError();
@@ -30,7 +28,7 @@ export default function SettingsAgeGroupResetAlert() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -46,20 +44,20 @@ export default function SettingsAgeGroupResetAlert() {
               return obj;
             } else {
               const navigation = tmp3;
-              let dependencyMap = 1;
+              dependencyMap = 1;
               c1 = 2;
               c3 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(6702).resetAgeVerification();
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_0(6739).resetAgeVerification();
               return obj1;
             }
           } else if (1 === tmp7) {
             dependencyMap = 0;
-            let obj2 = outer1_0(4093);
-            const intl = outer1_0(1236).intl;
-            obj2.presentError(intl.string(outer1_0(1236).t.fEptJP));
+            let obj2 = closure_1_0(4096);
+            const intl = closure_1_0(1236).intl;
+            obj2.presentError(intl.string(closure_1_0(1236).t.fEptJP));
             const _Error = Error;
-            const error = new Error("Reset failed");
+            error = new Error("Reset failed");
             throw error;
           } else if (arg0 === 1) {
             c3 = 3;
@@ -71,12 +69,12 @@ export default function SettingsAgeGroupResetAlert() {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = outer1_0(4657);
-            obj.dismissAlert(outer1_6);
+            obj = closure_1_0(4663);
+            obj.dismissAlert(closure_1_6);
             navigation.goBack();
             dependencyMap = 0;
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp29) {
           if (tmp4 === dependencyMap) {
@@ -88,7 +86,7 @@ export default function SettingsAgeGroupResetAlert() {
         }
       }
     });
-    const _handleConfirm = tmp;
+    closure_1 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -101,11 +99,11 @@ export default function SettingsAgeGroupResetAlert() {
   _require = obj.useNavigation();
   obj = { title: null, content: null, actions: null };
   let intl = _require(1236).intl;
-  obj[0] = intl.string(_handleConfirm(2853)["bD//cU"]);
+  obj[0] = intl.string(_handleConfirm(2854)["bD//cU"]);
   const intl2 = _require(1236).intl;
-  obj[1] = intl2.string(_handleConfirm(2853).FbTAmI);
+  obj[1] = intl2.string(_handleConfirm(2854).FbTAmI);
   obj = { children: null };
-  let obj1 = {
+  obj1 = {
     variant: "destructive",
     onPress: function handleConfirm() {
       const self = this;
@@ -120,14 +118,14 @@ export default function SettingsAgeGroupResetAlert() {
     text: null
   };
   const intl3 = _require(1236).intl;
-  obj1[2] = intl3.string(_handleConfirm(2853).V822Mp);
-  const items = [callback(_require(4660).AlertActionButton, obj1, "confirm"), ];
+  obj1[2] = intl3.string(_handleConfirm(2854).V822Mp);
+  const items = [callback(_require(4667).AlertActionButton, obj1, "confirm"), ];
   let obj2 = { variant: "secondary", text: null };
   const intl4 = _require(1236).intl;
   obj2[1] = intl4.string(_require(1236).t["ETE/oC"]);
-  items[1] = callback(_require(4660).AlertActionButton, obj2, "cancel");
+  items[1] = callback(_require(4667).AlertActionButton, obj2, "cancel");
   obj[0] = items;
-  obj[2] = callback2(_require(4660).AlertActions, obj);
-  return callback(_require(4660).AlertModal, obj);
+  obj[2] = callback2(_require(4667).AlertActions, obj);
+  return callback(_require(4667).AlertModal, obj);
 };
 export const SETTINGS_AGE_GROUP_RESET_ALERT_ID = "settings-age-group-reset";

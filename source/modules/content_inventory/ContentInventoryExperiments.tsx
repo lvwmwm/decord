@@ -1,22 +1,23 @@
-// Module ID: 13242
-// Function ID: 13243
+// Module ID: 13297
+// Function ID: 13298
 // Name: apexExperiment
-// Dependencies: [4289, 1472, 4286, 9058, 2]
+// Dependencies: [4293, 1472, 4290, 9095, 2]
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping, useIsHotwheelsClickableGameIconEnabled
 
-// Module 13242 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
-import createExperiment from "createExperiment";
-import ApexExperiment from "ApexExperiment";
+// Module 13297 (apexExperiment)
+import set from "set" /* 2 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4293 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
+import createExperiment from "createExperiment" /* 4290 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-03-content-inventory-memberlist-and-ranker", defaultConfig: { enabled: true, impressionCappingEnabled: true }, variations: { 0: { enabled: false, impressionCappingEnabled: false } } });
-let obj = { kind: "user", id: "2025-09_hotwheels_nvidia_boost", label: "Next iteration of the activity feed ranking model.", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {}, treatments: items };
+let obj = { kind: "user", id: "2025-09_hotwheels_nvidia_boost", label: "Next iteration of the activity feed ranking model.", commonTriggerPoint: ExperimentBuckets.CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {}, treatments: items };
 items = [{ id: 16, label: "ML model V3 - Nvidia small boost", config: {} }, { id: 17, label: "ML model V3 - Nvidia big boost", config: {} }];
 const experiment = createExperiment.createExperiment(obj);
 obj = { 1: null };
 obj[1] = { enabled: true };
 const apexExperiment1 = ApexExperiment.createApexExperiment({ name: "2026-07-hotwheels-clickable-game-icon", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("createExperiment").fileFinishedImporting("modules/content_inventory/ContentInventoryExperiments.tsx");
+const result = set.fileFinishedImporting("modules/content_inventory/ContentInventoryExperiments.tsx");
 
 export const MemberlistRankerExperiment = apexExperiment;
 export const HotwheelsActivityFeedNvidiaExperiment = experiment;

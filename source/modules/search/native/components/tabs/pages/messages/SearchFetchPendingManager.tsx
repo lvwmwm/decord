@@ -1,11 +1,12 @@
-// Module ID: 15917
-// Function ID: 15918
+// Module ID: 16014
+// Function ID: 16015
 // Name: useSearchFetchPendingManager
-// Dependencies: [19, 11509, 7127, 2]
+// Dependencies: [19, 11558, 7165, 2]
 // Exports: useSearchFetchPendingManager
 
-// Module 15917 (useSearchFetchPendingManager)
-import noop from "noop";
+// Module 16014 (useSearchFetchPendingManager)
+import useInitialValueDefault from "useInitialValue" /* 7165 */;
+import closure_2 from "noop" /* 19 */;
 
 let closure_3 = function SearchFetchPendingManager() {
   const obj = Object.create(new.target.prototype);
@@ -27,7 +28,7 @@ let closure_3 = function SearchFetchPendingManager() {
       if (obj2.fetchNextMessages(searchContext, tab)) {
         obj.remove(tab);
       }
-      obj2 = obj(outer1_1[1]);
+      obj2 = obj(closure_1_1[1]);
     }
   };
   obj.reset = function reset() {
@@ -35,11 +36,11 @@ let closure_3 = function SearchFetchPendingManager() {
   };
   return obj;
 }.prototype;
-const result = require("useInitialValue").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchFetchPendingManager.tsx");
+const result = require("set").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchFetchPendingManager.tsx");
 
 export const useSearchFetchPendingManager = function useSearchFetchPendingManager(searchContext) {
-  const importDefault = searchContext;
-  const tmp = importDefault(7127)(() => {
+  importDefault = searchContext;
+  const tmp = useInitialValueDefault(() => {
     if (typeof closure_3 !== "function") {
       HermesBuiltin.throwTypeError();
     }
@@ -62,7 +63,7 @@ export const useSearchFetchPendingManager = function useSearchFetchPendingManage
         if (obj2.fetchNextMessages(searchContext, tab)) {
           obj.remove(tab);
         }
-        obj2 = obj(outer1_1[1]);
+        obj2 = obj(closure_1_1[1]);
       }
     };
     obj.reset = function reset() {
@@ -70,9 +71,9 @@ export const useSearchFetchPendingManager = function useSearchFetchPendingManage
     };
     return obj;
   });
-  const dependencyMap = tmp;
+  dependencyMap = tmp;
   const items = [searchContext, tmp];
-  const effect = React.useEffect(() => searchContext(tmp[1]).subscribeTextInputValue(searchContext, (arg0, arg1) => {
+  const effect = React.useEffect(() => searchContext(table[1]).subscribeTextInputValue(searchContext, (arg0, arg1) => {
     if (arg1 !== arg0) {
       navigation.reset();
     }

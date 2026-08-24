@@ -1,15 +1,15 @@
-// Module ID: 15292
-// Function ID: 15293
+// Module ID: 15356
+// Function ID: 15357
 // Name: useDrawerOpen
-// Dependencies: [32, 19, 1501, 4229, 2]
+// Dependencies: [32, 19, 1501, 4233, 2]
 // Exports: useDrawerOpen
 
-// Module 15292 (useDrawerOpen)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 15356 (useDrawerOpen)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("createStandardNavigationFactories").fileFinishedImporting("modules/home_drawer/native/useDrawerState.tsx");
+const result = require("set").fileFinishedImporting("modules/home_drawer/native/useDrawerState.tsx");
 
 export const useDrawerOpen = function useDrawerOpen(enableHome) {
   let flag = enableHome;
@@ -68,7 +68,7 @@ export const useDrawerOpen = function useDrawerOpen(enableHome) {
           tmp = routes[num];
         }
       }
-      const coerceGuildsRouteResult = handleStateChange(outer1_1[3]).coerceGuildsRoute(tmp);
+      const coerceGuildsRouteResult = handleStateChange(closure_1_1[3]).coerceGuildsRoute(tmp);
       if (null != coerceGuildsRouteResult) {
         const params = coerceGuildsRouteResult.params;
         let drawerOpen;
@@ -81,7 +81,7 @@ export const useDrawerOpen = function useDrawerOpen(enableHome) {
     if (handleStateChange) {
       navigation.addListener("state", handleStateChange);
       return () => {
-        outer1_1.removeListener("state", handleStateChange);
+        closure_1_1.removeListener("state", handleStateChange);
       };
     }
   }, items);

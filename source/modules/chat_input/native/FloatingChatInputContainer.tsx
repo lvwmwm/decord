@@ -1,24 +1,24 @@
-// Module ID: 11150
-// Function ID: 11151
+// Module ID: 11189
+// Function ID: 11190
 // Name: useKeyboardOpenPaddingStyle
-// Dependencies: [32, 19, 21, 4115, 4097, 712, 1643, 4239, 1627, 4664, 4667, 2]
+// Dependencies: [32, 19, 21, 4119, 4100, 712, 1643, 4243, 1627, 4671, 4674, 2]
 // Exports: default
 
-// Module 11150 (useKeyboardOpenPaddingStyle)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { jsx } from "jsxProd";
-import { Easing } from "module_4115";
+// Module 11189 (useKeyboardOpenPaddingStyle)
+import ThemesDefault from "Themes" /* 712 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import { Easing } from "module_4119" /* 4119 */;
 
 const require = arg1;
 function useKeyboardOpenPaddingStyle() {
-  let importDefault;
-  let tmp5;
-  token = token(4097).useToken(importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
-  let obj = token(4097);
+  token = token(4100).useToken(ThemesDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
+  let obj = token(4100);
   const obj2 = React;
   [tmp5, importDefault] = sharedValue(React.useState(() => {
-    const KeyboardController = token(tmp5[6]).KeyboardController;
+    const KeyboardController = token(1643).KeyboardController;
     const stateResult = KeyboardController.state();
     let num;
     if (stateResult != null) {
@@ -30,17 +30,17 @@ function useKeyboardOpenPaddingStyle() {
     return num > 0;
   }), 2);
   const effect = React.useEffect(() => {
-    const KeyboardEvents = token(tmp5[6]).KeyboardEvents;
-    let closure_0 = KeyboardEvents.addListener("keyboardWillShow", () => lib(true));
-    const KeyboardEvents2 = token(tmp5[6]).KeyboardEvents;
-    let closure_1 = KeyboardEvents2.addListener("keyboardWillHide", () => lib(false));
+    const KeyboardEvents = token(1643).KeyboardEvents;
+    closure_0 = KeyboardEvents.addListener("keyboardWillShow", () => lib(true));
+    const KeyboardEvents2 = token(1643).KeyboardEvents;
+    closure_1 = KeyboardEvents2.addListener("keyboardWillHide", () => lib(false));
     return () => {
       closure_0.remove();
       lib.remove();
     };
   }, []);
   const tmp4 = sharedValue(React.useState(() => {
-    const KeyboardController = token(tmp5[6]).KeyboardController;
+    const KeyboardController = token(1643).KeyboardController;
     const stateResult = KeyboardController.state();
     let num;
     if (stateResult != null) {
@@ -51,15 +51,15 @@ function useKeyboardOpenPaddingStyle() {
     }
     return num > 0;
   }), 2);
-  const obj3 = token(4239);
+  const obj3 = token(4243);
   if (!tmp5) {
     tmp5 = true === obj3.useKeyboardContextForType(token(1627).KeyboardTypes.SYSTEM).keyboardWillOpen;
   }
   if (!tmp5) {
     tmp5 = tmp7 !== token(1627).KeyboardTypes.SYSTEM;
   }
-  const dependencyMap = tmp5;
-  let tmpResult = tmp(4115);
+  dependencyMap = tmp5;
+  let tmpResult = tmp(4119);
   let num = 0;
   if (tmp5) {
     num = token;
@@ -67,15 +67,15 @@ function useKeyboardOpenPaddingStyle() {
   sharedValue = tmpResult.useSharedValue(num);
   const items = [tmp5, token, sharedValue];
   const effect1 = obj2.useEffect(() => {
-    let obj = token(tmp5[9]);
+    let obj = token(4671);
     let num = 0;
-    if (tmp5) {
+    if (dependencyMap) {
       num = token;
     }
-    obj = { duration: token(tmp5[10]).timingStandardDuration, easing: outer1_6 };
+    obj = { duration: token(4674).timingStandardDuration, easing: closure_1_6 };
     const result = sharedValue.set(obj.withTiming(num, obj));
   }, items);
-  tmpResult = tmp(4115);
+  tmpResult = tmp(4119);
   const fn = function b() {
     return { paddingBottom: sharedValue.get() };
   };
@@ -86,16 +86,13 @@ function useKeyboardOpenPaddingStyle() {
 }
 let closure_6 = Easing.bezier(0.2, 0, 0, 1);
 let closure_7 = { code: "function FloatingChatInputContainerTsx1(){const{paddingSV}=this.__closure;return{paddingBottom:paddingSV.get()};}" };
-let result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/FloatingChatInputContainer.tsx");
+let result = require("set").fileFinishedImporting("modules/chat_input/native/FloatingChatInputContainer.tsx");
 
 export default function FloatingChatInputContainer(arg0) {
-  let children;
-  let onLayout;
-  let style;
   ({ style, onLayout, children } = arg0);
   style = [, ];
   style[0] = style;
   style[1] = useKeyboardOpenPaddingStyle();
-  return jsx(importDefault(4115).View, { style, onLayout, children });
+  return jsx(_modDef4119.View, { style, onLayout, children });
 };
 export { useKeyboardOpenPaddingStyle };

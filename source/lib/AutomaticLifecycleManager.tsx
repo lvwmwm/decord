@@ -1,10 +1,12 @@
-// Module ID: 5038
-// Function ID: 5039
+// Module ID: 5043
+// Function ID: 5044
 // Name: initialize
 // Dependencies: [709, 2]
 
-// Module 5038 (initialize)
-const result = require("set").fileFinishedImporting("lib/AutomaticLifecycleManager.tsx");
+// Module 5043 (initialize)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("lib/AutomaticLifecycleManager.tsx");
 class AutomaticLifecycleManager {
   constructor() {
     obj = Object.create(new.target.prototype);
@@ -23,8 +25,6 @@ prototype["initialize"] = function initialize() {
     const _Object = Object;
     const entries = Object.entries(self.actions);
     const item = entries.forEach((arg0) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg0;
       let callback = tmp2;
       if (typeof tmp2 !== "function") {
@@ -52,8 +52,6 @@ prototype["terminate"] = function terminate(arg0) {
       const _Object = Object;
       const entries = Object.entries(self.actions);
       const item = entries.forEach((arg0) => {
-        let tmp;
-        let tmp2;
         [tmp, tmp2] = arg0;
         let callback = tmp2;
         if (typeof tmp2 !== "function") {

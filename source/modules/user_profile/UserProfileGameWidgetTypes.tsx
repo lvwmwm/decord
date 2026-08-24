@@ -1,11 +1,16 @@
-// Module ID: 5367
-// Function ID: 5368
+// Module ID: 5372
+// Function ID: 5373
 // Name: items
-// Dependencies: [5366, 5368, 5369, 2]
+// Dependencies: [5371, 5373, 5374, 2]
 // Exports: isGameWidget, isGameWidgetType
 
-// Module 5367 (items)
-const items = [require("WidgetType").WidgetType.CURRENT_GAMES, require("WidgetType").WidgetType.FAVORITE_GAMES, require("WidgetType").WidgetType.WANT_TO_PLAY_GAMES, require("WidgetType").WidgetType.PLAYED_GAMES];
+// Module 5372 (items)
+import set from "set" /* 2 */;
+import WidgetType from "WidgetType" /* 5371 */;
+import GAME_WIDGET_LIMITS_BY_TYPE from "GAME_WIDGET_LIMITS_BY_TYPE" /* 5373 */;
+import findGameWidget from "findGameWidget" /* 5374 */;
+
+const items = [WidgetType.WidgetType.CURRENT_GAMES, WidgetType.WidgetType.FAVORITE_GAMES, WidgetType.WidgetType.WANT_TO_PLAY_GAMES, WidgetType.WidgetType.PLAYED_GAMES];
 let BaseGameWidget;
 class BaseGameWidget {
   constructor(arg0) {
@@ -35,7 +40,7 @@ prototype["isValid"] = function isValid() {
   const self = this;
   let tmp = this.games.length > 0;
   if (tmp) {
-    tmp = self.games.length <= require(5368) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_LIMITS_BY_TYPE[self.type];
+    tmp = self.games.length <= GAME_WIDGET_LIMITS_BY_TYPE.GAME_WIDGET_LIMITS_BY_TYPE[self.type];
   }
   return tmp;
 };
@@ -45,8 +50,8 @@ prototype["isEqual"] = function isEqual(type) {
     const self = this;
     let areWidgetGamesEqualResult = type.type === this.type;
     if (areWidgetGamesEqualResult) {
-      areWidgetGamesEqualResult = require(5369) /* findGameWidget */.areWidgetGamesEqual(self.games, type.games, self.type);
-      const obj = require(5369) /* findGameWidget */;
+      areWidgetGamesEqualResult = findGameWidget.areWidgetGamesEqual(self.games, type.games, self.type);
+      const obj = findGameWidget;
     }
     tmp = areWidgetGamesEqualResult;
   }
@@ -61,7 +66,7 @@ prototype["getProfileAnalyticsOptions"] = function getProfileAnalyticsOptions() 
 prototype["getProfileEditAnalyticsOptions"] = function getProfileEditAnalyticsOptions() {
   return { widgetEdited: this.type };
 };
-const result = require("findGameWidget").fileFinishedImporting("modules/user_profile/UserProfileGameWidgetTypes.tsx");
+const result = set.fileFinishedImporting("modules/user_profile/UserProfileGameWidgetTypes.tsx");
 
 export const GAME_WIDGET_TYPES = items;
 export const isGameWidgetType = function isGameWidgetType(arg0) {

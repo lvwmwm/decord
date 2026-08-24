@@ -1,10 +1,13 @@
-// Module ID: 4269
-// Function ID: 4270
+// Module ID: 4273
+// Function ID: 4274
 // Name: formatSize
 // Dependencies: [1236, 2]
 // Exports: formatKbSize
 
-// Module 4269 (formatSize)
+// Module 4273 (formatSize)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
 function formatSize(result, arg1) {
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -20,9 +23,9 @@ function formatSize(result, arg1) {
   }
   const rounded = Math.ceil(result / num2);
   if (rounded < num) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     const formatToPlainString2 = intl2.formatToPlainString;
-    const t2 = require(1236) /* getSystemLocale */.t;
+    const t2 = getSystemLocale.t;
     if (tmp.useSpace) {
       let obj = { size: null };
       obj[0] = rounded;
@@ -41,11 +44,11 @@ function formatSize(result, arg1) {
     } else {
       result1 = round(result);
     }
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const t = require(1236) /* getSystemLocale */.t;
+    const t = getSystemLocale.t;
     if (tmp.useSpace) {
-      const obj1 = { size: null };
+      obj1 = { size: null };
       obj1[0] = result1;
       let formatToPlainStringResult = formatToPlainString(t.yhEXX7, obj1);
     } else {
@@ -58,7 +61,7 @@ function formatSize(result, arg1) {
 }
 let c2 = 1024;
 let closure_3 = { useKibibytes: false, showDecimalForGB: true, useSpace: true };
-let result = require("set").fileFinishedImporting("utils/FileSizeUtils.tsx");
+let result = set.fileFinishedImporting("utils/FileSizeUtils.tsx");
 
 export const BYTE_IN_KB = 1024;
 export const KB_IN_MB = 1024;
@@ -80,9 +83,9 @@ export const formatKbSize = function formatKbSize(MAX_STICKER_FILE_SIZE, arg1) {
   if (1 <= result / num) {
     let formatToPlainStringResult = formatSize(result, tmp);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const t = require(1236) /* getSystemLocale */.t;
+    const t = getSystemLocale.t;
     if (tmp.useSpace) {
       let obj = { size: null };
       const _Math2 = Math;

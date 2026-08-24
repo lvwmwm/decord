@@ -1,17 +1,15 @@
-// Module ID: 4658
-// Function ID: 4659
+// Module ID: 4664
+// Function ID: 4665
 // Name: setAccessibilityFocusPrevious
-// Dependencies: [17, 500, 2]
+// Dependencies: [4665, 2]
 // Exports: default
 
-// Module 4658 (setAccessibilityFocusPrevious)
-import { NativeModules } from "get ActivityIndicator";
+// Module 4664 (setAccessibilityFocusPrevious)
+import set from "set" /* 2 */;
+import enforcingDefault from "enforcing" /* 4665 */;
 
-const result = require("set").fileFinishedImporting("modules/a11y/native/setAccessibilityFocusPrevious.tsx");
+const result = set.fileFinishedImporting("modules/a11y/native/setAccessibilityFocusPrevious.tsx");
 
 export default function setAccessibilityFocusPrevious() {
-  if (obj.isIOS()) {
-    const DCDAccessibilityManager = NativeModules.DCDAccessibilityManager;
-    DCDAccessibilityManager.restorePreviousFocus();
-  }
+  enforcingDefault.restorePreviousFocus();
 };

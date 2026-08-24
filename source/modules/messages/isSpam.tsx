@@ -1,18 +1,17 @@
-// Module ID: 5231
-// Function ID: 5232
+// Module ID: 5236
+// Function ID: 5237
 // Name: isSpamSupported
-// Dependencies: [1922, 676, 5232, 2]
+// Dependencies: [1922, 676, 5237, 2]
 // Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 5231 (isSpamSupported)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 5236 (isSpamSupported)
+import getDecisionOutcomeFromMessage from "getDecisionOutcomeFromMessage" /* 5237 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 ({ UserFlags: c3, ChannelTypes: c4 } = ME);
-const result = require("getDecisionOutcomeFromMessage").fileFinishedImporting("modules/messages/isSpam.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/isSpam.tsx");
 
 export const isSpamSupported = function isSpamSupported(type) {
   let tmp = undefined !== type;
@@ -42,8 +41,8 @@ export const isSpam = function isSpam(author) {
     flag = false;
   }
   if (flag) {
-    flag = !require(5232) /* getDecisionOutcomeFromMessage */.isAutomodMessageRecord(author);
-    const obj2 = require(5232) /* getDecisionOutcomeFromMessage */;
+    flag = !getDecisionOutcomeFromMessage.isAutomodMessageRecord(author);
+    const obj2 = getDecisionOutcomeFromMessage;
   }
   return flag;
 };

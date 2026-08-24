@@ -1,29 +1,31 @@
-// Module ID: 9884
-// Function ID: 9885
+// Module ID: 9923
+// Function ID: 9924
 // Name: getConsoleIcon
-// Dependencies: [676, 4544, 9839, 9885, 2]
+// Dependencies: [676, 4549, 9878, 9924, 2]
 // Exports: default, getConsoleIconForVoicePlatform
 
-// Module 9884 (getConsoleIcon)
-import { VoicePlatforms } from "ParticipantTypes";
+// Module 9923 (getConsoleIcon)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import ParticipantTypes from "ParticipantTypes" /* 4549 */;
+import registerAssetDefault from "registerAsset" /* 9878 */;
+import registerAssetDefault2 from "registerAsset" /* 9924 */;
 
-let PLAYSTATION;
-let PLAYSTATION_STAGING;
-let XBOX;
-const obj = { [XBOX]: require("registerAsset"), [PLAYSTATION]: require("registerAsset"), [PLAYSTATION_STAGING]: require("registerAsset") };
-({ XBOX, PLAYSTATION, PLAYSTATION_STAGING } = require("ME").PlatformTypes);
-const result = require("registerAsset").fileFinishedImporting("modules/game_console/native/getConsoleIcon.tsx");
+const VoicePlatforms = ParticipantTypes.VoicePlatforms;
+const obj = { [XBOX]: registerAssetDefault, [PLAYSTATION]: registerAssetDefault2, [PLAYSTATION_STAGING]: registerAssetDefault2 };
+({ XBOX, PLAYSTATION, PLAYSTATION_STAGING } = ME.PlatformTypes);
+const result = set.fileFinishedImporting("modules/game_console/native/getConsoleIcon.tsx");
 
 export default function getConsoleIcon(arg0) {
   return obj[arg0];
 };
 export const getConsoleIconForVoicePlatform = function getConsoleIconForVoicePlatform(voicePlatform) {
   if (voicePlatform === VoicePlatforms.XBOX) {
-    let tmp2 = importDefault(9839);
+    let tmp2 = registerAssetDefault;
   } else {
     tmp2 = null;
     if (voicePlatform === tmp.PLAYSTATION) {
-      tmp2 = importDefault(9885);
+      tmp2 = registerAssetDefault2;
     }
   }
   return tmp2;

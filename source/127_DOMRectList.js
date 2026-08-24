@@ -5,17 +5,19 @@
 // Exports: createDOMRectList
 
 // Module 127 (DOMRectList)
-import _classCallCheck from "_classCallCheck";
-import _classPrivateFieldBase from "_classPrivateFieldBase";
-import setPlatformObject from "setPlatformObject";
+import _createClassDefault from "_createClass" /* 42 */;
+import _classPrivateFieldKeyDefault from "_classPrivateFieldKey" /* 91 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_classPrivateFieldBase" /* 90 */;
+import setPlatformObject from "setPlatformObject" /* 126 */;
 
 const DOMRectList = arg1;
-let closure_4 = require("_classPrivateFieldKey")("length");
+let closure_4 = _classPrivateFieldKeyDefault("length");
 class DOMRectList {
   constructor(arg0) {
     self = this;
-    tmp = outer1_2(this, DOMRectList);
-    definePropertyResult = Object.defineProperty(this, length, { writable: true, value: "a" });
+    tmp = closure_2(this, DOMRectList);
+    definePropertyResult = Object.defineProperty(this, closure_4, { writable: true, value: "a" });
     num = 0;
     if (0 < global.length) {
       do {
@@ -27,7 +29,7 @@ class DOMRectList {
         length = global.length;
       } while (num < length);
     }
-    outer1_3(self, length)[length] = global.length;
+    closure_3(self, closure_4)[closure_4] = global.length;
     return;
   }
 }
@@ -60,7 +62,7 @@ obj = {
   }
 };
 items[2] = obj;
-const importDefaultResultResult = require("_createClass")(DOMRectList, items);
+const importDefaultResultResult = _createClassDefault(DOMRectList, items);
 let c5 = importDefaultResultResult;
 setPlatformObject.setPlatformObject(importDefaultResultResult);
 

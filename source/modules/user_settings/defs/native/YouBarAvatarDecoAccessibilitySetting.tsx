@@ -1,30 +1,33 @@
-// Module ID: 14717
-// Function ID: 14718
+// Module ID: 14781
+// Function ID: 14782
 // Name: toggle
-// Dependencies: [4662, 8198, 10669, 1236, 589, 13813, 2]
+// Dependencies: [4669, 8238, 10708, 1236, 589, 13871, 2]
 
-// Module 14717 (toggle)
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import createToggle from "createToggle";
+// Module 14781 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import setFontSize from "setFontSize" /* 13871 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["34XN2f"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["34XN2f"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
   useValue() {
-    const items = [maybeApplyNoTextColorForLightCustomTheme];
-    return require(589) /* initialize */.useStateFromStores(items, () => obj.animateYouBarAvatarDeco);
+    const items = [closure_2];
+    return initialize.useStateFromStores(items, () => obj.animateYouBarAvatarDeco);
   },
   onValueChange(animateAvatarDeco) {
-    let obj = require(13813) /* setFontSize */;
+    let obj = setFontSize;
     obj = { animateAvatarDeco };
     return obj.setYouBarAnimations(obj);
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/YouBarAvatarDecoAccessibilitySetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/YouBarAvatarDecoAccessibilitySetting.tsx");
 
 export default createToggle;

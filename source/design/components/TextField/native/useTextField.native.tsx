@@ -1,19 +1,17 @@
-// Module ID: 7339
-// Function ID: 7340
+// Module ID: 7377
+// Function ID: 7378
 // Name: useTextFieldState
-// Dependencies: [32, 19, 4731, 2]
+// Dependencies: [32, 19, 4736, 2]
 // Exports: useTextField, useTextFieldState
 
-// Module 7339 (useTextFieldState)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 7377 (useTextFieldState)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-let result = require("setAccessibilityFocus").fileFinishedImporting("design/components/TextField/native/useTextField.native.tsx");
+let result = require("set").fileFinishedImporting("design/components/TextField/native/useTextField.native.tsx");
 
 export const useTextFieldState = function useTextFieldState(onClear) {
-  let onChange;
-  let value;
   ({ value, onChange } = onClear);
   onClear = onClear.onClear;
   let obj = callback;
@@ -51,8 +49,6 @@ export const useTextFieldState = function useTextFieldState(onClear) {
   return obj;
 };
 export const useTextField = function useTextField(onClear, ref) {
-  let onChange;
-  let value;
   onChange = onClear;
   let obj = callback1;
   ref = callback1.useRef(null);
@@ -132,19 +128,19 @@ export const useTextField = function useTextField(onClear, ref) {
       return true === isFocusedResult;
     },
     getText() {
-      return _slicedToArray.value;
+      return closure_2.value;
     },
     setText(arg0) {
       if ("" === arg0) {
-        _slicedToArray.clear();
+        closure_2.clear();
       } else {
         const current = closure_1.current;
         if (current != null) {
-          const obj = { text: null };
+          obj = { text: null };
           obj[0] = arg0;
           current.setNativeProps(obj);
         }
-        _slicedToArray.setTextValue(arg0);
+        closure_2.setTextValue(arg0);
       }
     },
     measure(arg0) {
@@ -166,7 +162,7 @@ export const useTextField = function useTextField(onClear, ref) {
       }
     }
   }), items3);
-  const obj1 = { innerRef: ref, state: obj, inputProps: null };
+  obj1 = { innerRef: ref, state: obj, inputProps: null };
   const obj2 = {};
   const merged1 = Object.assign(onClear);
   obj2.onChange = undefined;

@@ -1,19 +1,22 @@
-// Module ID: 16935
-// Function ID: 16936
+// Module ID: 17028
+// Function ID: 17029
 // Name: getCreatorMonetizationAcceptTermsCheckboxText
-// Dependencies: [676, 1236, 1993, 2]
+// Dependencies: [676, 1236, 1994, 2]
 // Exports: getCreatorMonetizationAcceptTermsCheckboxText
 
-// Module 16935 (getCreatorMonetizationAcceptTermsCheckboxText)
-import { HelpdeskArticles } from "ME";
+// Module 17028 (getCreatorMonetizationAcceptTermsCheckboxText)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import combinedDefault from "combined" /* 1994 */;
 
-const result = require("combined").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/CreatorMonetizationAcceptTermCheckboxText.tsx");
+const HelpdeskArticles = ME.HelpdeskArticles;
+const result = set.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/CreatorMonetizationAcceptTermCheckboxText.tsx");
 
 export const getCreatorMonetizationAcceptTermsCheckboxText = function getCreatorMonetizationAcceptTermsCheckboxText() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  const obj = { fullTermsUrl: null, creatorRevenuePolicyUrl: null };
-  obj[0] = importDefault(1993).getArticleURL(HelpdeskArticles.CREATOR_TERMS);
-  const obj2 = importDefault(1993);
-  obj[1] = importDefault(1993).getArticleURL(HelpdeskArticles.CREATOR_POLICY);
-  return intl.format(require(1236) /* getSystemLocale */.t["+ALa7+"], obj);
+  const intl = getSystemLocale.intl;
+  const obj = { fullTermsUrl: combinedDefault.getArticleURL(HelpdeskArticles.CREATOR_TERMS), creatorRevenuePolicyUrl: null };
+  const obj2 = combinedDefault;
+  obj[1] = combinedDefault.getArticleURL(HelpdeskArticles.CREATOR_POLICY);
+  return intl.format(getSystemLocale.t["+ALa7+"], obj);
 };

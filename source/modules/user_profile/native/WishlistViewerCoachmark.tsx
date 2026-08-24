@@ -1,32 +1,31 @@
-// Module ID: 12357
-// Function ID: 12358
+// Module ID: 12409
+// Function ID: 12410
 // Name: CoachmarkImage
-// Dependencies: [19, 17, 1388, 21, 4661, 12358, 1236, 9314, 2]
+// Dependencies: [19, 17, 1388, 21, 4668, 12410, 1236, 9351, 2]
 // Exports: default
 
-// Module 12357 (CoachmarkImage)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12409 (CoachmarkImage)
+import metadataDefault from "metadata" /* 12410 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
 function CoachmarkImage() {
   const tmp = callback();
   let obj = { style: tmp.imageContainer, children: null };
   obj = { source: null, style: null };
-  obj = { uri: importDefault(12358) };
+  obj = { uri: metadataDefault };
   obj[0] = obj;
   obj[1] = tmp.image;
-  obj[1] = <closure_5 uri={importDefault(12358)} />;
-  return <closure_4 uri={importDefault(12358)} />;
+  obj[1] = <closure_5 uri={metadataDefault} />;
+  return <closure_4 uri={metadataDefault} />;
 }
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 let closure_8 = createCacheKey.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" }, image: { width: 160, height: 106 } });
-const result = require("ContentDismissActionType").fileFinishedImporting("modules/user_profile/native/WishlistViewerCoachmark.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/WishlistViewerCoachmark.tsx");
 
 export default function WishlistViewerCoachmark(isVisible) {
   isVisible = isVisible.isVisible;
@@ -46,7 +45,7 @@ export default function WishlistViewerCoachmark(isVisible) {
     obj[1] = intl2.string(isVisible(onViewWishlist[6]).t.Howsng);
     obj[3] = isVisible;
     obj[4] = function onDismiss() {
-      return callback(outer1_6.USER_DISMISS);
+      return callback(closure_1_6.USER_DISMISS);
     };
     obj[5] = function renderImgComponent() {
       return callback2(closure_9, {});

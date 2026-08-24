@@ -1,62 +1,63 @@
-// Module ID: 7357
-// Function ID: 7358
+// Module ID: 7395
+// Function ID: 7396
 // Name: getSanitizedRestrictedGuilds
-// Dependencies: [4826, 1910, 676, 4066, 5042, 7358, 1236, 1231, 2]
+// Dependencies: [4831, 1910, 676, 4069, 5047, 7396, 1236, 1231, 2]
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
 
-// Module 7357 (getSanitizedRestrictedGuilds)
-import handleConnectionOpen from "handleConnectionOpen";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import ME from "ME";
+// Module 7395 (getSanitizedRestrictedGuilds)
+import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 5047 */;
+import getSearchSessionIdDefault from "getSearchSessionId" /* 7396 */;
+import closure_3 from "handleConnectionOpen" /* 4831 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
-({ AnalyticEvents: c5, FriendSourceFlags: closure_6, AllFriendSourceFlags: error, ComponentActions: metroImportAll } = ME);
+require = arg1;
+({ AnalyticEvents: c5, FriendSourceFlags: closure_6, AllFriendSourceFlags: error, ComponentActions: closure_8 } = ME);
 let obj = { UNDECIDED: 0, [0]: "UNDECIDED", OPTIN: 1, [1]: "OPTIN", OPTOUT: 2, [2]: "OPTOUT" };
-const result = require("ME").fileFinishedImporting("utils/UserSettingsUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/UserSettingsUtils.tsx");
 
 export const getSanitizedRestrictedGuilds = function getSanitizedRestrictedGuilds() {
-  const RestrictedGuildIds = require(4066) /* explicitContentFromProto */.RestrictedGuildIds;
+  const RestrictedGuildIds = explicitContentFromProto.RestrictedGuildIds;
   const setting = RestrictedGuildIds.getSetting();
   let found = setting;
-  if (0 === handleConnectionOpen.totalUnavailableGuilds) {
+  if (0 === closure_3.totalUnavailableGuilds) {
     found = setting.filter((arg0) => null != guild.getGuild(arg0));
   }
   return new Set(found);
 };
 export const getSanitizedMessageRequestRestrictedGuilds = function getSanitizedMessageRequestRestrictedGuilds() {
-  const MessageRequestRestrictedGuildIds = require(4066) /* explicitContentFromProto */.MessageRequestRestrictedGuildIds;
+  const MessageRequestRestrictedGuildIds = explicitContentFromProto.MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.getSetting();
   let found = setting;
-  if (0 === handleConnectionOpen.totalUnavailableGuilds) {
+  if (0 === closure_3.totalUnavailableGuilds) {
     found = setting.filter((arg0) => null != guild.getGuild(arg0));
   }
   return new Set(found);
 };
 export const getSanitizedActivityRestrictedGuilds = function getSanitizedActivityRestrictedGuilds() {
-  const ActivityRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+  const ActivityRestrictedGuilds = explicitContentFromProto.ActivityRestrictedGuilds;
   const setting = ActivityRestrictedGuilds.getSetting();
   let found = setting;
-  if (0 === handleConnectionOpen.totalUnavailableGuilds) {
+  if (0 === closure_3.totalUnavailableGuilds) {
     found = setting.filter((arg0) => null != guild.getGuild(arg0));
   }
   return new Set(found);
 };
 export const getSanitizedActivityJoiningRestrictedGuilds = function getSanitizedActivityJoiningRestrictedGuilds() {
-  const ActivityJoiningRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+  const ActivityJoiningRestrictedGuilds = explicitContentFromProto.ActivityJoiningRestrictedGuilds;
   const setting = ActivityJoiningRestrictedGuilds.getSetting();
   let found = setting;
-  if (0 === handleConnectionOpen.totalUnavailableGuilds) {
+  if (0 === closure_3.totalUnavailableGuilds) {
     found = setting.filter((arg0) => null != guild.getGuild(arg0));
   }
   return new Set(found);
 };
 export const computeFlags = function computeFlags(setting) {
   if ((setting & closure_7) === closure_7) {
-    let obj = { all: true, mutualFriends: true, mutualGuilds: true };
+    obj = { all: true, mutualFriends: true, mutualGuilds: true };
   } else {
     obj = { all: false, mutualFriends: null, mutualGuilds: null };
     obj[1] = (setting & constants2.MUTUAL_FRIENDS) === constants2.MUTUAL_FRIENDS;
@@ -65,45 +66,38 @@ export const computeFlags = function computeFlags(setting) {
   return obj;
 };
 export const trackUserSettingsPaneViewed = function trackUserSettingsPaneViewed(arg0) {
-  let applicationId;
-  let destinationPane;
-  let locationStack;
-  let originPane;
-  let source;
-  let subsection;
   ({ destinationPane, originPane, source, subsection, locationStack, applicationId } = arg0);
-  let obj = importDefault(5042);
-  obj = { settings_type: "user", origin_pane: originPane, destination_pane: destinationPane, location_stack: locationStack, source, subsection, application_id: applicationId, search_session_id: null };
-  obj[7] = importDefault(7358).getSearchSessionId();
+  obj = collectGuildAnalyticsMetadataDefault;
+  obj = { settings_type: "user", origin_pane: originPane, destination_pane: destinationPane, location_stack: locationStack, source, subsection, application_id: applicationId, search_session_id: getSearchSessionIdDefault.getSearchSessionId() };
   obj.trackWithMetadata(constants.SETTINGS_PANE_VIEWED, obj);
 };
 export const NonSpamRetrainingOptInOptions = obj;
 export const NonSpamRetrainingOptInOptionsToValue = { [obj.UNDECIDED]: undefined, [obj.OPTIN]: true, [obj.OPTOUT]: false };
 export const generateNonSpamRetrainingOptInSettingOptions = function generateNonSpamRetrainingOptInSettingOptions() {
-  let obj = { name: null, desc: null, value: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["/yLMRQ"]);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["3fzkPq"]);
+  obj = { name: null, desc: null, value: null };
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["/yLMRQ"]);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t["3fzkPq"]);
   obj[2] = obj.OPTIN;
   const items = [obj, , ];
   obj = { name: null, desc: null, value: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["21fP2b"]);
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl4.string(require(1236) /* getSystemLocale */.t.ggJ9jR);
+  const intl3 = getSystemLocale.intl;
+  obj[0] = intl3.string(getSystemLocale.t["21fP2b"]);
+  const intl4 = getSystemLocale.intl;
+  obj[1] = intl4.string(getSystemLocale.t.ggJ9jR);
   obj[2] = obj.OPTOUT;
   items[1] = obj;
   obj = { name: null, desc: null, value: null };
-  const intl5 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl5.string(require(1236) /* getSystemLocale */.t.OWIo8w);
-  const intl6 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl6.string(require(1236) /* getSystemLocale */.t.HqYXpw);
+  const intl5 = getSystemLocale.intl;
+  obj[0] = intl5.string(getSystemLocale.t.OWIo8w);
+  const intl6 = getSystemLocale.intl;
+  obj[1] = intl6.string(getSystemLocale.t.HqYXpw);
   obj[2] = obj.UNDECIDED;
   items[2] = obj;
   return items;
 };
 export const shakeUserSettings = function shakeUserSettings(arg0) {
-  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
+  const ComponentDispatch = ComponentDispatcher.ComponentDispatch;
   ComponentDispatch.dispatch(constants3.SHAKE_SETTINGS_MODAL, arg0);
 };

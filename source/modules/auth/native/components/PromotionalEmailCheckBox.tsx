@@ -1,35 +1,30 @@
-// Module ID: 15251
-// Function ID: 15252
+// Module ID: 15315
+// Function ID: 15316
 // Name: PromotionalEmailCheckBox
-// Dependencies: [19, 17, 5257, 21, 4661, 4105, 1236, 8085, 4734, 2]
+// Dependencies: [19, 17, 5262, 21, 4668, 4108, 1236, 8124, 4739, 2]
 // Exports: default
 
-// Module 15251 (PromotionalEmailCheckBox)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import setPromoEmailConsentState from "setPromoEmailConsentState";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15315 (PromotionalEmailCheckBox)
+import noopAll from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import setPromoEmailConsentState from "setPromoEmailConsentState" /* 5262 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-let error;
-let obj1;
 const require = arg1;
+noopAll;
 ({ View: obj1, Pressable: c3 } = get_ActivityIndicator);
 ({ usePromoEmailConsentStore: c4, setPromoEmailConsentChecked: c5 } = setPromoEmailConsentState);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles({ checkboxRow: { flexDirection: "row", alignItems: "flex-start", gap: 8 }, checkboxLabel: { flex: 1 } });
-const result = require("setPromoEmailConsentState").fileFinishedImporting("modules/auth/native/components/PromotionalEmailCheckBox.tsx");
+const result = require("set").fileFinishedImporting("modules/auth/native/components/PromotionalEmailCheckBox.tsx");
 
 export default function PromotionalEmailCheckBox(style) {
   let _require;
   const tmp = callback4();
   const tmp3 = callback((checked) => checked.checked);
   _require = tmp3;
-  let obj = _require(4105);
+  let obj = _require(4108);
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: tmp3 });
   let tmp9 = null;
   if (tmp2) {
@@ -41,17 +36,17 @@ export default function PromotionalEmailCheckBox(style) {
     obj[1] = intl.string(tmp4(1236).t.ylFCLt);
     obj[2] = tmp8;
     obj[3] = function onPress() {
-      return outer1_5(!c0);
+      return closure_1_5(!closure_0);
     };
     obj[4] = tmp.checkboxRow;
-    const obj1 = { checked: null };
+    obj1 = { checked: null };
     obj1[0] = tmp3;
-    const items = [callback2(tmp4(8085).FormCheckbox, obj1), ];
+    const items = [callback2(tmp4(8124).FormCheckbox, obj1), ];
     const obj2 = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
     obj2[2] = tmp.checkboxLabel;
     const intl2 = tmp4(1236).intl;
     obj2[3] = intl2.string(tmp4(1236).t.ylFCLt);
-    items[1] = callback2(tmp4(4734).Text, obj2);
+    items[1] = callback2(tmp4(4739).Text, obj2);
     obj[5] = items;
     obj[1] = callback3(closure_3, obj);
     tmp9 = callback2(closure_2, obj);

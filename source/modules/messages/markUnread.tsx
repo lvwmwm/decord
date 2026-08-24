@@ -1,26 +1,27 @@
-// Module ID: 10867
-// Function ID: 10868
+// Module ID: 10906
+// Function ID: 10907
 // Name: _markUnread
-// Dependencies: [5, 4023, 1391, 4994, 4772, 1922, 676, 3, 11, 7512, 530, 2]
+// Dependencies: [5, 4026, 1391, 4999, 4777, 1922, 676, 3, 11, 7550, 530, 2]
 // Exports: default
 
-// Module 10867 (_markUnread)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import storeThread from "storeThread";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import reinjectEphemerals from "reinjectEphemerals";
-import { shouldBadgeMessage } from "generateOldThreadCutoff";
-import closure_8 from "mergeGuildAvatar";
-import { Endpoints } from "ME";
+// Module 10906 (_markUnread)
+import timestampDefault from "timestamp" /* 3 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "storeThread" /* 4026 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "reinjectEphemerals" /* 4999 */;
+import { shouldBadgeMessage } from "generateOldThreadCutoff" /* 4777 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _markUnread() {
   const self = this;
   let tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (channel === 2) {
         channel = 3;
@@ -33,7 +34,7 @@ function _markUnread() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -54,14 +55,14 @@ function _markUnread() {
               id = undefined;
               c4 = undefined;
               channel = undefined;
-              currentUser = outer1_8.getCurrentUser();
+              currentUser = closure_1_8.getCurrentUser();
               if (null != currentUser) {
-                const messages = outer1_6.getMessages(tmp41);
+                const messages = closure_1_6.getMessages(tmp41);
                 const found = messages.toArray().filter((id) => callback(currentUser[8]).compare(id.id, callback) < 0);
                 const sorted = found.sort((id, id2) => callback(currentUser[8]).compare(id.id, id2.id));
                 const first = sorted.reverse()[0];
                 if (null == first) {
-                  let obj2 = callback2(outer1_2[8]);
+                  let obj2 = callback2(closure_1_2[8]);
                   id = obj2.atPreviousMillisecond(callback2);
                 } else {
                   id = first.id;
@@ -70,10 +71,10 @@ function _markUnread() {
                 messages.forAll((id) => {
                   let tmp = callback(currentUser[8]).compare(id.id, id) > 0;
                   if (tmp) {
-                    tmp = outer1_7(id, currentUser);
+                    tmp = closure_1_7(id, currentUser);
                   }
                   if (tmp) {
-                    storeThread = storeThread + 1;
+                    closure_4 = closure_4 + 1;
                   }
                 });
                 channel = channel.getChannel(tmp41);
@@ -85,8 +86,8 @@ function _markUnread() {
                   if (channel.isArchivedThread()) {
                     c4 = 1;
                     channel = 1;
-                    const obj1 = { value: null, done: false };
-                    obj1[0] = callback2(outer1_2[9]).unarchiveThread(channel, false);
+                    obj1 = { value: null, done: false };
+                    obj1[0] = callback2(closure_1_2[9]).unarchiveThread(channel, false);
                     return obj1;
                   }
                 }
@@ -104,7 +105,7 @@ function _markUnread() {
                 const toArrayResult = messages.toArray();
               }
               channel = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -140,7 +141,7 @@ function _markUnread() {
       }
     })();
   });
-  const _markUnread = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -149,9 +150,9 @@ function _markUnread() {
   }
   return applyArgumentsResult;
 }
-let c10 = new require("reinjectEphemerals")("markUnread");
-const tmp2 = new require("reinjectEphemerals")("markUnread");
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/messages/markUnread.tsx");
+let closure_10 = new timestampDefault("markUnread");
+const tmp2 = new timestampDefault("markUnread");
+const result = require("set").fileFinishedImporting("modules/messages/markUnread.tsx");
 
 export default function markUnread() {
   const self = this;

@@ -1,62 +1,65 @@
-// Module ID: 7906
-// Function ID: 7907
+// Module ID: 7945
+// Function ID: 7946
 // Name: getWhatYouLoseProfileTier1Source
-// Dependencies: [19, 17, 21, 7907, 7908, 7909, 7910, 1363, 2]
+// Dependencies: [19, 17, 21, 7946, 7947, 7948, 7949, 1363, 2]
 // Exports: WhatYouLoseProfileTier1, getWhatYouLoseProfileTier1Source, useWhatYouLoseProfileTier1Source
 
-// Module 7906 (getWhatYouLoseProfileTier1Source)
-import "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 7945 (getWhatYouLoseProfileTier1Source)
+import noopAll from "noop" /* 19 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WhatYouLoseProfileTier1.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WhatYouLoseProfileTier1.tsx");
 
 export const getWhatYouLoseProfileTier1Source = function getWhatYouLoseProfileTier1Source(theme) {
-  let obj = require(7907) /* getIllustrationSource */;
+  let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(7908);
+      return callback(7947);
     },
     darker() {
-      return callback(7909);
+      return callback(7948);
     },
     light() {
-      return callback(7910);
+      return callback(7949);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useWhatYouLoseProfileTier1Source = function useWhatYouLoseProfileTier1Source() {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(7908);
+      return callback(7947);
     },
     darker() {
-      return callback(7909);
+      return callback(7948);
     },
     light() {
-      return callback(7910);
+      return callback(7949);
     }
   };
-  return require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const WhatYouLoseProfileTier1 = function WhatYouLoseProfileTier1(arg0) {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(7908);
+      return callback(7947);
     },
     darker() {
-      return callback(7909);
+      return callback(7948);
     },
     light() {
-      return callback(7910);
+      return callback(7949);
     }
   };
   obj = {};
-  const illustrationSource = require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

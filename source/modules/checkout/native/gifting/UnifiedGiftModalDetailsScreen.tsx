@@ -1,45 +1,36 @@
-// Module ID: 9596
-// Function ID: 9597
-// Dependencies: [32, 19, 17, 676, 21, 4661, 712, 1500, 9595, 7139, 7127, 514, 698, 9597, 9598, 4734, 1236, 9631, 9632, 9633, 2]
+// Module ID: 9633
+// Function ID: 9634
+// Dependencies: [32, 19, 17, 676, 21, 4668, 712, 1500, 9632, 7177, 7165, 514, 698, 9634, 9635, 4739, 1236, 9670, 9671, 9672, 2]
 
-// Module 9596
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "GiftCustomMessage";
-import get_ActivityIndicator from "LockedRecipientField";
-import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9633
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let c9;
-let closure_6;
-let metroImportAll;
 const require = arg1;
 let c4 = importAllResult;
 ({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let obj = { container: null, scrollView: null, sectionHeader: null };
-obj = { flex: 1, paddingTop: require("Themes").space.PX_12, alignItems: "stretch" };
+obj = { flex: 1, paddingTop: ThemesDefault.space.PX_12, alignItems: "stretch" };
 obj[0] = obj;
-createCacheKey = { paddingBottom: require("Themes").space.PX_24 };
+createCacheKey = { paddingBottom: ThemesDefault.space.PX_24 };
 obj[1] = createCacheKey;
-obj[2] = { marginTop: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, textTransform: "capitalize" };
+obj[2] = { marginTop: ThemesDefault.space.PX_24, marginBottom: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_16, textTransform: "capitalize" };
 let closure_10 = createCacheKey.createStyles(obj);
-let obj2 = { marginTop: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, textTransform: "capitalize" };
+let obj2 = { marginTop: ThemesDefault.space.PX_24, marginBottom: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_16, textTransform: "capitalize" };
 const memoResult = importAllResult.memo((skuId) => {
-  let c5;
-  let lockedRecipient;
-  let renderProductDetails;
-  let renderPurchaseSection;
-  let setRecipientUser;
-  let tmp6;
   skuId = skuId.skuId;
   const applicationId = skuId.applicationId;
   const recipientUser = skuId.recipientUser;
   const validateRecipient = skuId.validateRecipient;
   let navigation;
   c5 = undefined;
-  let closure_6;
+  closure_6 = undefined;
   let analyticsLocations;
   let callback;
   let memo;
@@ -62,7 +53,7 @@ const memoResult = importAllResult.memo((skuId) => {
   const tmp10 = applicationId(recipientUser[10])(() => skuId(recipientUser[11]).v4());
   callback = tmp10;
   const items1 = [analyticsLocations, skuId, applicationId, tmp10];
-  memo = navigation.useMemo(() => ({ is_gift: true, location_stack: analyticsLocations, payment_type: "sku", sku_id: skuId, application_id: applicationId, load_id: c8 }), items1);
+  memo = navigation.useMemo(() => ({ is_gift: true, location_stack: analyticsLocations, payment_type: "sku", sku_id: skuId, application_id: applicationId, load_id: closure_8 }), items1);
   const items2 = [recipientUser, skuId, validateRecipient];
   const effect = navigation.useEffect(() => {
     _undefined(true);
@@ -88,7 +79,7 @@ const memoResult = importAllResult.memo((skuId) => {
     obj.initial_step = "gift_customization";
     applicationId(recipientUser[12]).track(analyticsLocations.PAYMENT_FLOW_LOADED, obj);
   }, items3);
-  let obj1 = skuId(recipientUser[13]);
+  obj1 = skuId(recipientUser[13]);
   const tmp14 = validateRecipient(navigation.useState(obj1.useGiftStyles()[0]), 2);
   first = tmp14[0];
   ref = navigation.useRef(null);
@@ -161,6 +152,6 @@ const memoResult = importAllResult.memo((skuId) => {
   }
   tmp26Result = tmp26(tmp9(tmp3[18]), { selectedUser: recipientUser, onPress: callback, setSelectedUser: setRecipientUser });
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalDetailsScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalDetailsScreen.tsx");
 
 export default memoResult;

@@ -1,24 +1,30 @@
-// Module ID: 14036
-// Function ID: 14037
+// Module ID: 14104
+// Function ID: 14105
 // Name: FormControlText
-// Dependencies: [32, 19, 17, 21, 4661, 712, 4734, 7988, 1297, 1236, 8072, 5433, 6297, 500, 7179, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 4739, 8027, 1297, 1236, 8111, 5438, 6328, 500, 7217, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
-// Module 14036 (FormControlText)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14104 (FormControlText)
+import set from "set" /* 500 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import TableRowArrow from "TableRowArrow" /* 6328 */;
+import FormSwitch from "FormSwitch" /* 7217 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8027 */;
+import Input from "Input" /* 8111 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-let require = arg1;
+require = arg1;
 function FormControlText(children) {
-  const tmp = createCacheKey();
-  return callback2(require(4734) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", style: createCacheKey().formControlText, children: children.text });
+  const tmp = callback3();
+  return callback2(Text.Text, { variant: "text-sm/medium", color: "text-default", style: callback3().formControlText, children: children.text });
 }
 function FormControlSubtext(text) {
   text = text.text;
@@ -27,22 +33,22 @@ function FormControlSubtext(text) {
     const obj = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
     obj[2] = tmp.formControlText;
     obj[3] = text;
-    tmp2 = callback2(require(4734) /* Text */.Text, obj);
+    tmp2 = callback2(Text.Text, obj);
   }
   return tmp2;
 }
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { button: null, buttonTextContainer: null, formControlText: null, labelTrailing: null, newBadge: null };
-createCacheKey = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: require("Themes").colors.BORDER_STRONG, borderWidth: 1, borderRadius: require("Themes").radii.md };
+createCacheKey = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: ThemesDefault.colors.BORDER_STRONG, borderWidth: 1, borderRadius: ThemesDefault.radii.md };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexGrow: 1, flexShrink: 1, flexDirection: "column" };
 createCacheKey[2] = { marginRight: "auto", flexShrink: 1 };
-createCacheKey[3] = { flexDirection: "row", alignItems: "center", marginLeft: require("Themes").space.PX_4, gap: require("Themes").space.PX_4 };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center", marginLeft: ThemesDefault.space.PX_4, gap: ThemesDefault.space.PX_4 };
 createCacheKey[4] = { paddingTop: 0 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { flexDirection: "row", alignItems: "center", marginLeft: require("Themes").space.PX_4, gap: require("Themes").space.PX_4 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flexDirection: "row", alignItems: "center", marginLeft: ThemesDefault.space.PX_4, gap: ThemesDefault.space.PX_4 };
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");
 
 export const UserProfileEditFormLabelBadges = function UserProfileEditFormLabelBadges(showPremiumIcon) {
   let flag = showPremiumIcon.showPremiumIcon;
@@ -53,22 +59,22 @@ export const UserProfileEditFormLabelBadges = function UserProfileEditFormLabelB
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const tmp = createCacheKey();
+  const tmp = callback3();
   if (flag) {
     let obj = { style: null, "aria-hidden": true, children: null };
     obj[0] = tmp.labelTrailing;
     let tmp5 = null;
     if (flag) {
-      tmp5 = callback2(require(7988) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs" });
+      tmp5 = callback2(NitroWheelIcon.NitroWheelIcon, { size: "xs" });
     }
     const items = [tmp5, ];
     let tmp9 = null;
     if (flag2) {
       obj = { text: null, style: null };
-      const intl = require(1236) /* getSystemLocale */.intl;
-      obj[0] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
+      const intl = getSystemLocale.intl;
+      obj[0] = intl.string(getSystemLocale.t.y2b7CA);
       obj[1] = tmp.newBadge;
-      tmp9 = callback2(require(1297) /* Button */.TextBadge, obj);
+      tmp9 = callback2(Button.TextBadge, obj);
     }
     items[1] = tmp9;
     obj[2] = items;
@@ -81,16 +87,6 @@ export const UserProfileEditFormLabelBadges = function UserProfileEditFormLabelB
   return tmp3Result;
 };
 export const UserProfileEditFormButton = function UserProfileEditFormButton(loading) {
-  let accessibilityValue;
-  let buttonSubtext;
-  let buttonText;
-  let content;
-  let disabled;
-  let label;
-  let labelTrailing;
-  let leading;
-  let onPress;
-  let trailing;
   ({ label, buttonText, content, disabled } = loading);
   ({ labelTrailing, buttonSubtext, onPress, leading, trailing, accessibilityValue } = loading);
   if (disabled === undefined) {
@@ -104,11 +100,11 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { label, labelTrailing, children: null };
   obj = { onPress, style: tmp.button, accessibilityRole: "button", accessibilityLabel: label, accessibilityValue, accessibilityHint: null, accessibilityState: null, disabled: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[5] = intl.string(require(1236) /* getSystemLocale */.t["4lAcxv"]);
+  const intl = getSystemLocale.intl;
+  obj[5] = intl.string(getSystemLocale.t["4lAcxv"]);
   obj[6] = { disabled, busy: flag };
   obj[7] = disabled;
   const items = [leading, , , ];
@@ -117,7 +113,7 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
     obj[0] = tmp.buttonTextContainer;
     let tmp2Result = null != buttonText;
     if (tmp2Result) {
-      const obj1 = { text: null };
+      obj1 = { text: null };
       obj1[0] = buttonText;
       tmp2Result = tmp2(FormControlText, obj1);
     }
@@ -133,30 +129,23 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   items[2] = trailing;
   tmp2Result = !flag2;
   if (!flag2) {
-    tmp2Result = tmp2(require(6297) /* TableRowArrow */.TableRowArrow, {});
+    tmp2Result = tmp2(TableRowArrow.TableRowArrow, {});
   }
   items[3] = tmp2Result;
   obj[8] = items;
-  obj[2] = closure_7(require(5433) /* PressableBase */.PressableHighlight, obj);
-  return closure_6(require(8072) /* Input */.Input, obj);
+  obj[2] = closure_7(PressableBase.PressableHighlight, obj);
+  return closure_6(Input.Input, obj);
 };
 export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0) {
-  let accessibilityHint;
-  let accessibilityLabel;
-  let dependencyMap;
-  let disabled;
-  let label;
-  let subLabel;
-  let value;
   ({ subLabel, value } = arg0);
-  const require = value;
+  require = value;
   ({ onValueChange: dependencyMap, accessibilityLabel, disabled } = arg0);
   ({ label, accessibilityHint } = arg0);
   if (disabled === undefined) {
     disabled = false;
   }
   let callback;
-  let obj = require(500) /* set */;
+  let obj = set;
   const isAndroidResult = obj.isAndroid();
   const tmp5 = callback(React.useState(value), 2);
   callback = tmp5[1];
@@ -165,7 +154,7 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
     callback(closure_0);
   }, items);
   if (isAndroidResult) {
-    let PressableHighlight = tmp2(5433).PressableHighlight;
+    let PressableHighlight = tmp2(5438).PressableHighlight;
   } else {
     PressableHighlight = closure_4;
   }
@@ -191,7 +180,7 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
         }
       });
     },
-    style: createCacheKey().button,
+    style: callback3().button,
     accessibilityRole: "switch",
     accessibilityLabel: null,
     accessibilityHint: null,
@@ -206,8 +195,8 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
   obj[5] = accessibilityHint;
   obj[6] = { disabled, checked: tmp5[0] };
   obj[7] = disabled;
-  const items1 = [closure_6(FormControlText, { text: subLabel }), closure_6(require(7179) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
+  const items1 = [closure_6(FormControlText, { text: subLabel }), closure_6(FormSwitch.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   obj[8] = items1;
   obj[1] = closure_7(PressableHighlight, obj);
-  return closure_6(require(8072) /* Input */.Input, obj);
+  return closure_6(Input.Input, obj);
 };

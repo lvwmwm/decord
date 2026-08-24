@@ -1,18 +1,20 @@
-// Module ID: 16620
-// Function ID: 16621
+// Module ID: 16716
+// Function ID: 16717
 // Name: _initialize
-// Dependencies: [5053, 676, 3, 5038, 16621, 668, 5066, 2]
+// Dependencies: [5058, 676, 3, 5043, 16717, 668, 5071, 2]
 
-// Module 16620 (_initialize)
-import result from "result";
-import ME from "ME";
-import "initialize";
+// Module 16716 (_initialize)
+import timestampDefault from "timestamp" /* 3 */;
+import clientLaunchId from "clientLaunchId" /* 668 */;
+import initializeDefault from "initialize" /* 5043 */;
+import NativeJankSessionModuleDefault from "NativeJankSessionModule" /* 16717 */;
+import closure_3 from "result" /* 5058 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
-let require = arg1;
+require = arg1;
 ({ AnalyticEvents: c4, AppStates: c5 } = ME);
-let closure_6 = new require("initialize")("JankSessionManager");
+let closure_6 = new timestampDefault("JankSessionManager");
+initializeDefault;
 class JankSessionManager extends tmp4 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -33,9 +35,9 @@ class JankSessionManager extends tmp4 {
 }
 const prototype = JankSessionManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  const obj = importDefault(16621);
+  const obj = NativeJankSessionModuleDefault;
   if (obj != null) {
-    obj.hydrateLaunchId(require(668) /* clientLaunchId */.clientLaunchId);
+    obj.hydrateLaunchId(clientLaunchId.clientLaunchId);
   }
 };
 prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
@@ -47,15 +49,15 @@ prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
 prototype["deliverPendingSessions"] = function deliverPendingSessions() {
   const self = this;
   if (!this._isDelivering) {
-    let obj = self(16621);
+    let obj = self(16717);
     if (null != obj) {
       tmp._isDelivering = true;
       const pendingReports = obj.getPendingReports();
       const nextPromise = pendingReports.then((arr) => {
-        let closure_0 = arr;
+        closure_0 = arr;
         if (0 !== arr.length) {
-          const result = outer1_3.submitEventsImmediately(arr.map((arg0) => {
-            let obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
+          const result = closure_1_3.submitEventsImmediately(arr.map((arg0) => {
+            obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
             obj = {};
             const merged = Object.assign(arr(table[6]).getDeviceMetadata());
             obj.schema_version = 1;
@@ -69,10 +71,10 @@ prototype["deliverPendingSessions"] = function deliverPendingSessions() {
         }
       });
       pendingReports.then((arr) => {
-        let closure_0 = arr;
+        closure_0 = arr;
         if (0 !== arr.length) {
-          const result = outer1_3.submitEventsImmediately(arr.map((arg0) => {
-            let obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
+          const result = closure_1_3.submitEventsImmediately(arr.map((arg0) => {
+            obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
             obj = {};
             const merged = Object.assign(arr(table[6]).getDeviceMetadata());
             obj.schema_version = 1;
@@ -90,10 +92,10 @@ prototype["deliverPendingSessions"] = function deliverPendingSessions() {
         self._isDelivering = false;
       });
       const catchPromise = pendingReports.then((arr) => {
-        let closure_0 = arr;
+        closure_0 = arr;
         if (0 !== arr.length) {
-          const result = outer1_3.submitEventsImmediately(arr.map((arg0) => {
-            let obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
+          const result = closure_1_3.submitEventsImmediately(arr.map((arg0) => {
+            obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
             obj = {};
             const merged = Object.assign(arr(table[6]).getDeviceMetadata());
             obj.schema_version = 1;
@@ -112,7 +114,7 @@ prototype["deliverPendingSessions"] = function deliverPendingSessions() {
   }
 };
 const jankSessionManager = new JankSessionManager();
-const tmp3 = new require("initialize")("JankSessionManager");
-let result = require("timestamp").fileFinishedImporting("modules/jank_stats/native/JankSessionManager.android.tsx");
+const tmp3 = new timestampDefault("JankSessionManager");
+let result = require("set").fileFinishedImporting("modules/jank_stats/native/JankSessionManager.android.tsx");
 
 export default jankSessionManager;

@@ -1,56 +1,56 @@
-// Module ID: 15287
-// Function ID: 15288
+// Module ID: 15351
+// Function ID: 15352
 // Name: PX_16
-// Dependencies: [19, 17, 676, 21, 712, 1367, 9288, 4749, 4661, 4115, 4744, 15288, 4230, 11509, 6315, 8035, 9975, 1236, 4734, 7352, 7351, 15293, 4745, 4313, 4312, 2]
+// Dependencies: [19, 17, 676, 21, 712, 1367, 9325, 4754, 4668, 4119, 4749, 15352, 4234, 11558, 6346, 8074, 10014, 1236, 4739, 7390, 7389, 15357, 4750, 4317, 4316, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 15287 (PX_16)
-import importAllResult from "registerAsset";
-import get_ActivityIndicator from "getSystemLocale";
-import { SearchTypes } from "ME";
-import jsxProd from "MessageRequestAnimation";
-import createCacheKey from "createCacheKey";
+// Module 15351 (PX_16)
+import ThemesDefault from "Themes" /* 712 */;
+import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4754 */;
+import map from "map" /* 9325 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { SearchTypes } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c4;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
-const PX_16 = require("Themes").space.PX_16;
-const PX_8 = require("Themes").space.PX_8;
+const PX_16 = ThemesDefault.space.PX_16;
+const PX_8 = ThemesDefault.space.PX_8;
 let obj = { headerPanel: null, headerPanelTitle: null, headerPanelButtons: null, headerBorder: null };
-obj = { position: "relative", padding: PX_16, paddingBottom: require("Themes").modules.mobile.MESSAGES_HEADER_PADDING_BOTTOM };
+obj = { position: "relative", padding: PX_16, paddingBottom: ThemesDefault.modules.mobile.MESSAGES_HEADER_PADDING_BOTTOM };
 obj[0] = obj;
-createCacheKey = { paddingBottom: PX_8, flexDirection: "row", gap: require("Themes").space.PX_8, justifyContent: "space-between" };
+createCacheKey = { paddingBottom: PX_8, flexDirection: "row", gap: ThemesDefault.space.PX_8, justifyContent: "space-between" };
 obj[1] = createCacheKey;
-obj[2] = { height: require("MINIMUM_HIT_AREA").SMALL_BUTTON_HEIGHT, gap: require("Themes").modules.mobile.MESSAGES_HEADER_BUTTON_GAP, flexDirection: require("Themes").modules.mobile.MESSAGES_HEADER_BUTTON_LAYOUT, alignItems: "center" };
+obj[2] = { height: require("MINIMUM_HIT_AREA").SMALL_BUTTON_HEIGHT, gap: ThemesDefault.modules.mobile.MESSAGES_HEADER_BUTTON_GAP, flexDirection: ThemesDefault.modules.mobile.MESSAGES_HEADER_BUTTON_LAYOUT, alignItems: "center" };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3.backgroundColor = require("Themes").colors.BORDER_SUBTLE;
+obj3.backgroundColor = ThemesDefault.colors.BORDER_SUBTLE;
 obj3.top = undefined;
 obj3.height = 1;
 obj[3] = obj3;
 let closure_10 = createCacheKey.createStyles(obj);
 let closure_11 = { code: "function MessagesHeaderTsx1(){const{withSpring,scrollPosition}=this.__closure;return{opacity:withSpring(scrollPosition.get()>0?1:0)};}" };
-let obj2 = { height: require("MINIMUM_HIT_AREA").SMALL_BUTTON_HEIGHT, gap: require("Themes").modules.mobile.MESSAGES_HEADER_BUTTON_GAP, flexDirection: require("Themes").modules.mobile.MESSAGES_HEADER_BUTTON_LAYOUT, alignItems: "center" };
+let obj2 = { height: require("MINIMUM_HIT_AREA").SMALL_BUTTON_HEIGHT, gap: ThemesDefault.modules.mobile.MESSAGES_HEADER_BUTTON_GAP, flexDirection: ThemesDefault.modules.mobile.MESSAGES_HEADER_BUTTON_LAYOUT, alignItems: "center" };
 const memoResult = importAllResult.memo(function MessagesHeader(height) {
   height = height.height;
   const scrollPosition = height.scrollPosition;
-  let dependencyMap;
+  dependencyMap = undefined;
   const tmp = callback2();
   dependencyMap = tmp;
   const tmp4 = scrollPosition(1367)("MessagesHeader");
   let items = [tmp, height];
   const memo = importAllResult.useMemo(() => {
-    const items = [_undefined.headerPanel, { height }];
+    const items = [headerPanel.headerPanel, { height }];
     return items;
   }, items);
-  let obj = height(4115);
+  let obj = height(4119);
   const fn = function c() {
-    let obj = height(_undefined[10]);
+    let obj = height(headerPanel[10]);
     let num = 0;
     if (scrollPosition.get() > 0) {
       num = 1;
@@ -58,21 +58,21 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
     obj = { opacity: obj.withSpring(num) };
     return obj;
   };
-  obj = { withSpring: height(4744).withSpring, scrollPosition };
+  obj = { withSpring: height(4749).withSpring, scrollPosition };
   fn.__closure = obj;
   fn.__workletHash = 17233409273245;
   fn.__initData = closure_11;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj2 = height(15288);
+  let obj2 = height(15352);
   const isHomeDrawerEnabled = obj2.useIsHomeDrawerEnabled();
   const callback = importAllResult.useCallback(() => {
-    const rootNavigationRef = height(_undefined[12]).getRootNavigationRef();
+    const rootNavigationRef = height(headerPanel[12]).getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.navigate("message-requests");
     }
   }, []);
   const callback1 = importAllResult.useCallback(() => {
-    let obj = height(_undefined[12]);
+    let obj = height(headerPanel[12]);
     const rootNavigationRef = obj.getRootNavigationRef();
     if (rootNavigationRef != null) {
       obj = { screen: "add-friends", params: null };
@@ -81,17 +81,17 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
     }
   }, []);
   callback2 = importAllResult.useCallback(() => {
-    let obj = height(_undefined[12]);
+    let obj = height(headerPanel[12]);
     const rootNavigationRef = obj.getRootNavigationRef();
     if (null != rootNavigationRef) {
       obj = { type: null };
       obj[0] = constants.DMS;
-      const result = scrollPosition(_undefined[13]).navigateToSearchWithPrefetch(rootNavigationRef, obj);
-      const obj2 = scrollPosition(_undefined[13]);
+      const result = scrollPosition(headerPanel[13]).navigateToSearchWithPrefetch(rootNavigationRef, obj);
+      const obj2 = scrollPosition(headerPanel[13]);
     }
   }, []);
   const callback3 = importAllResult.useCallback(() => {
-    let obj = height(_undefined[12]);
+    let obj = height(headerPanel[12]);
     const rootNavigationRef = obj.getRootNavigationRef();
     if (rootNavigationRef != null) {
       const current = rootNavigationRef.current;
@@ -103,15 +103,14 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
     }
   }, []);
   obj = { variant: "primary", icon: null, size: "sm", accessibilityLabel: null, onPress: null };
-  const obj1 = { size: "sm", color: null };
-  obj1[1] = scrollPosition(712).colors.WHITE;
-  obj[1] = callback(height(9975).PlusLargeIcon, obj1);
+  const tmp13 = scrollPosition(6346)("bespoke");
+  obj[1] = callback(height(10014).PlusLargeIcon, { size: "sm", color: scrollPosition(712).colors.WHITE });
   const intl = height(1236).intl;
   obj[3] = intl.string(height(1236).t.jD1qzM);
   obj[4] = callback3;
   obj2 = { style: memo, children: null };
   const obj3 = { style: tmp.headerPanelTitle, children: null };
-  const tmp13 = scrollPosition(6315)("bespoke");
+  obj1 = { size: "sm", color: scrollPosition(712).colors.WHITE };
   let str = "redesign/heading-18/bold";
   if (tmp4) {
     str = "heading-lg/semibold";
@@ -126,44 +125,44 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
     stringResult = string(t.OIgYlQ);
   }
   obj4[4] = stringResult;
-  obj3[1] = callback(height(4734).Text, obj4);
+  obj3[1] = callback(height(4739).Text, obj4);
   const items1 = [callback(closure_4, obj3), , , ];
   const obj5 = { style: tmp.headerPanelButtons, children: null };
   const obj6 = { onPress: callback2, variant: "secondary", size: "sm", icon: null, accessibilityLabel: null };
   if (tmp4) {
-    let tmp14Result = tmp2(7352);
+    let tmp14Result = tmp2(7390);
   } else {
-    tmp14Result = tmp14(tmp6(7351).MagnifyingGlassIcon, { size: "sm" });
+    tmp14Result = tmp14(tmp6(7389).MagnifyingGlassIcon, { size: "sm" });
   }
   obj6[3] = tmp14Result;
   const intl3 = tmp6(1236).intl;
   obj6[4] = intl3.string(height(1236).t["5h0QOP"]);
-  const items2 = [callback(height(8035).IconButton, obj6), callback(scrollPosition(15293), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
+  const items2 = [callback(height(8074).IconButton, obj6), callback(scrollPosition(15357), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
   if (tmp4) {
-    let tmp2Result = tmp2(4313);
+    let tmp2Result = tmp2(4317);
   } else {
-    tmp2Result = tmp14(tmp6(4312).UserPlusIcon, { size: "sm" });
+    tmp2Result = tmp14(tmp6(4316).UserPlusIcon, { size: "sm" });
   }
   const obj7 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: tmp2Result, onPress: callback1, maxFontSizeMultiplier: 1, text: null };
   const intl4 = tmp6(1236).intl;
   obj7[7] = intl4.string(height(1236).t.zIJnA6);
-  items2[2] = callback(height(4745).Button, obj7);
-  items2[3] = callback(height(8035).IconButton, obj);
+  items2[2] = callback(height(4750).Button, obj7);
+  items2[3] = callback(height(8074).IconButton, obj);
   obj5[1] = items2;
   items1[1] = closure_7(closure_4, obj5);
   const items3 = [tmp.headerBorder, animatedStyle];
-  items1[2] = callback(scrollPosition(4115).View, { style: items3 });
+  items1[2] = callback(scrollPosition(4119).View, { style: items3 });
   items1[3] = tmp13;
   obj2[1] = items1;
   return closure_7(closure_4, obj2);
 });
-let result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesHeader.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesHeader.tsx");
 
 export default memoResult;
 export const getMessagesHeaderHeight = function getMessagesHeaderHeight(fontScale, closure_2) {
   const bound = Math.min(fontScale, 1.75);
-  const refreshToken = require(1367) /* useIsMobileVisualRefreshExperimentEnabled */.resolveRefreshToken(importDefault(712).modules.mobile.MESSAGES_HEADER_PADDING_BOTTOM, closure_2);
-  const obj = require(1367) /* useIsMobileVisualRefreshExperimentEnabled */;
-  const sum = require(9288) /* map */.scaleTextLineHeight("redesign/heading-18/bold", bound) + PX_8;
-  return sum + require(4749) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT + PX_16 + refreshToken;
+  const refreshToken = useIsMobileVisualRefreshExperimentEnabled.resolveRefreshToken(ThemesDefault.modules.mobile.MESSAGES_HEADER_PADDING_BOTTOM, closure_2);
+  const obj = useIsMobileVisualRefreshExperimentEnabled;
+  const sum = map.scaleTextLineHeight("redesign/heading-18/bold", bound) + PX_8;
+  return sum + MINIMUM_HIT_AREA.SMALL_BUTTON_HEIGHT + PX_16 + refreshToken;
 };

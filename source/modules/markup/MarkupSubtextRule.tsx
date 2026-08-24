@@ -1,12 +1,16 @@
-// Module ID: 6830
-// Function ID: 6831
-// Dependencies: [4092, 2]
+// Module ID: 6868
+// Function ID: 6869
+// Dependencies: [4095, 2]
 
-// Module 6830
+// Module 6868
+import set from "set" /* 2 */;
+import t from "t" /* 4095 */;
+import tDefault from "t" /* 4095 */;
+
 const re2 = /\n$/;
 const re3 = /^ *-# +((?!-#)[^\n]+)(?:\n|$)/;
 let obj = {
-  order: require("t").defaultRules.heading.order,
+  order: tDefault.defaultRules.heading.order,
   requiredFirstCharacters: ["-"],
   match(arg0, allowSubtext, str) {
     let tmp = null;
@@ -17,8 +21,8 @@ let obj = {
         }
         tmp = tmp4;
       }
-      tmp4 = require(4092) /* t */.anyScopeRegex(closure_3)(arg0, allowSubtext, str);
-      const obj = require(4092) /* t */;
+      tmp4 = t.anyScopeRegex(closure_3)(arg0, allowSubtext, str);
+      const obj = t;
     }
     return tmp;
   },
@@ -28,10 +32,10 @@ let obj = {
     const trimmed = arg0[1].trim();
     const merged = Object.assign(arg2);
     obj.allowSubtext = false;
-    obj[0] = require(4092) /* t */.parseInline(arg1, trimmed, obj);
+    obj[0] = t.parseInline(arg1, trimmed, obj);
     return obj;
   }
 };
-const result = require("set").fileFinishedImporting("modules/markup/MarkupSubtextRule.tsx");
+const result = set.fileFinishedImporting("modules/markup/MarkupSubtextRule.tsx");
 
 export default obj;

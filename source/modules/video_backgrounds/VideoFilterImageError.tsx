@@ -1,16 +1,19 @@
-// Module ID: 9663
-// Function ID: 9664
+// Module ID: 9702
+// Function ID: 9703
 // Name: prototype
 // Dependencies: [530, 1236, 2]
 
-// Module 9663 (prototype)
-import { V8APIError } from "sendRequest";
+// Module 9702 (prototype)
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
 
 let closure_2 = { ASSET_SIZE: "BINARY_TYPE_MAX_SIZE" };
 let closure_3 = { ASSET: "asset" };
+const V8APIError = sendRequest.V8APIError;
 const prototype = function VideoFilterImageError(arg0, arg1) {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  tmp3 = new tmp3(arg0, arg1, intl.string(require(1236) /* getSystemLocale */.t.Mt8yDB), new.target, tmp3, tmp2, intl, require, new.target, tmp);
+  const intl = getSystemLocale.intl;
+  tmp3 = new tmp3(arg0, arg1, intl.string(getSystemLocale.t.Mt8yDB), new.target, tmp3, tmp2, intl, require, new.target, tmp);
   // ThrowIfThisInitialized (0x7c)
   const fieldErrors = tmp3.getFieldErrors(constants2.ASSET);
   let tmp7 = null != fieldErrors;
@@ -30,6 +33,6 @@ const prototype = function VideoFilterImageError(arg0, arg1) {
 }.prototype;
 class prototype extends V8APIError {
 }
-const result = require("set").fileFinishedImporting("modules/video_backgrounds/VideoFilterImageError.tsx");
+const result = set.fileFinishedImporting("modules/video_backgrounds/VideoFilterImageError.tsx");
 
 export default prototype;

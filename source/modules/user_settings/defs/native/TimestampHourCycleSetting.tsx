@@ -1,22 +1,24 @@
-// Module ID: 14780
-// Function ID: 14781
+// Module ID: 14844
+// Function ID: 14845
 // Name: radio
-// Dependencies: [19, 8198, 4066, 1236, 1306, 10669, 4080, 2]
+// Dependencies: [19, 8238, 4069, 1236, 1306, 10708, 4083, 2]
 
-// Module 14780 (radio)
-import noop from "noop";
-import createToggle from "createToggle";
+// Module 14844 (radio)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import closure_2 from "noop" /* 19 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.dyamEI);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.dyamEI);
   },
   parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   useValue: require("explicitContentFromProto").TimestampHourCycle.useSetting,
   onValueChange: function onTimestampHourCycleChange(arg0) {
-    const TimestampHourCycle = require(4066) /* explicitContentFromProto */.TimestampHourCycle;
+    const TimestampHourCycle = explicitContentFromProto.TimestampHourCycle;
     TimestampHourCycle.updateSetting(Number(arg0));
   },
   useOptions: function useDMsMessagePreviewsOptions() {
@@ -42,6 +44,6 @@ createToggle = {
   usePredicate: require("__DiscordCreateDateFormatter").supportsSystemDateFormatter
 };
 createToggle = createToggle.createRadio(createToggle);
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/TimestampHourCycleSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/TimestampHourCycleSetting.tsx");
 
 export default createToggle;

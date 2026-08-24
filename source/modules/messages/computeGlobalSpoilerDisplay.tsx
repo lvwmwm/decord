@@ -1,18 +1,16 @@
-// Module ID: 10717
-// Function ID: 10718
+// Module ID: 10756
+// Function ID: 10757
 // Name: computeGlobalSpoilerDisplay
-// Dependencies: [4021, 676, 647, 4066, 2]
+// Dependencies: [4024, 676, 647, 4069, 2]
 // Exports: default, useShouldDisplaySpoilerObscurity
 
-// Module 10717 (computeGlobalSpoilerDisplay)
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import ME from "ME";
+// Module 10756 (computeGlobalSpoilerDisplay)
+import closure_2 from "getUncachedChannelPermissions" /* 4024 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
 const require = arg1;
 ({ Permissions: c3, SpoilerRenderSetting: c4 } = ME);
-const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/messages/computeGlobalSpoilerDisplay.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/computeGlobalSpoilerDisplay.tsx");
 
 export default function computeGlobalSpoilerDisplay(arg0, arg1) {
   if (constants.ALWAYS === arg0) {
@@ -26,9 +24,9 @@ export default function computeGlobalSpoilerDisplay(arg0, arg1) {
 };
 export const useShouldDisplaySpoilerObscurity = function useShouldDisplaySpoilerObscurity(channel) {
   const _require = channel;
-  const items = [getUncachedChannelPermissions];
-  const stateFromStores = _require(647).useStateFromStores(items, () => outer1_2.can(outer1_3.MANAGE_MESSAGES, closure_0));
-  const RenderSpoilers = _require(4066).RenderSpoilers;
+  const items = [closure_2];
+  const stateFromStores = _require(647).useStateFromStores(items, () => closure_1_2.can(closure_1_3.MANAGE_MESSAGES, closure_0));
+  const RenderSpoilers = _require(4069).RenderSpoilers;
   const setting = RenderSpoilers.useSetting();
   let flag = true;
   if (constants.ALWAYS !== setting) {

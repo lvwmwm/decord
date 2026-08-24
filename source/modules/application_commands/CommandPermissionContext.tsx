@@ -1,29 +1,30 @@
-// Module ID: 8453
-// Function ID: 8454
+// Module ID: 8492
+// Function ID: 8493
 // Name: computePermissions
-// Dependencies: [19, 1982, 1395, 1434, 1218, 1391, 1990, 1910, 4021, 1922, 676, 8454, 589, 506, 1954, 2]
+// Dependencies: [19, 1983, 1395, 1434, 1218, 1391, 1991, 1910, 4024, 1922, 676, 8493, 589, 506, 1954, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 8453 (computePermissions)
-import noop from "noop";
-import initialize from "initialize";
-import { ChannelRecordBase } from "createChannelRecord";
-import { isGuildNSFW } from "GuildNSFWContentLevel";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 8492 (computePermissions)
+import fromStringAll from "fromString" /* 506 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import resolveNsfwTogglesWithDefaults from "resolveNsfwTogglesWithDefaults" /* 8493 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "initialize" /* 1983 */;
+import { ChannelRecordBase } from "createChannelRecord" /* 1395 */;
+import { isGuildNSFW } from "GuildNSFWContentLevel" /* 1434 */;
+import closure_7 from "fetchFingerprint" /* 1218 */;
+import closure_8 from "ensureGuildLoaded" /* 1391 */;
+import closure_9 from "trackCommunicationDisabled" /* 1991 */;
+import closure_10 from "createGuildRecordFromRust" /* 1910 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_12 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let closure_14;
-let map1;
-const require = arg1;
+require = arg1;
 function computePermissions(isPrivate) {
   if (!(isPrivate instanceof ChannelRecordBase)) {
     if (null != isPrivate) {
-      const permissions = getUncachedChannelPermissions.computePermissions(isPrivate);
+      const permissions = closure_11.computePermissions(isPrivate);
       let SEND_MESSAGES_IN_THREADS = constants2;
       let flag = true;
       let flag2 = true;
@@ -57,12 +58,11 @@ function computePermissions(isPrivate) {
       return obj;
     }
   }
-  obj = { computedPermissions: null, hasBaseAccessPermissions: true, hasSendMessagesPermission: true };
-  obj[0] = importAll(506).deserialize(0);
+  obj = { computedPermissions: fromStringAll.deserialize(0), hasBaseAccessPermissions: true, hasSendMessagesPermission: true };
   return obj;
 }
 ({ ChannelTypes: map1, Permissions: closure_14 } = ME);
-const result = require("createChannelRecord").fileFinishedImporting("modules/application_commands/CommandPermissionContext.tsx");
+const result = require("set").fileFinishedImporting("modules/application_commands/CommandPermissionContext.tsx");
 
 export const buildPermissionContext = function buildPermissionContext(channel, items) {
   let obj = channel;
@@ -74,7 +74,7 @@ export const buildPermissionContext = function buildPermissionContext(channel, i
     }
   }
   if (null == obj) {
-    let viewNsfwCommandsOrDefault = require(8454) /* resolveNsfwTogglesWithDefaults */.getViewNsfwCommandsOrDefault();
+    let viewNsfwCommandsOrDefault = resolveNsfwTogglesWithDefaults.getViewNsfwCommandsOrDefault();
     id = id.getId();
     currentUser = currentUser.getCurrentUser();
     let flag;
@@ -98,7 +98,7 @@ export const buildPermissionContext = function buildPermissionContext(channel, i
       items = [];
     }
     let isThreadResult = channel instanceof tmp;
-    const obj2 = require(8454) /* resolveNsfwTogglesWithDefaults */;
+    const obj2 = resolveNsfwTogglesWithDefaults;
     if (isThreadResult) {
       isThreadResult = channel.isThread();
     }
@@ -129,14 +129,14 @@ export const buildPermissionContext = function buildPermissionContext(channel, i
 };
 export const usePermissionContext = function usePermissionContext(channel, items) {
   const _require = channel;
-  let closure_1 = items;
+  closure_1 = items;
   items = [channel];
   const memo = React.useMemo(() => {
     let tmp = closure_0;
     if (closure_0 instanceof stateFromStoresArray) {
       tmp = obj;
       if (obj.isThread()) {
-        let channel = outer1_8.getChannel(obj.parent_id);
+        channel = closure_1_8.getChannel(obj.parent_id);
         if (channel == null) {
           channel = obj;
         }
@@ -149,10 +149,10 @@ export const usePermissionContext = function usePermissionContext(channel, items
     React = undefined;
     let viewNsfwCommandsOrDefault = _require(memo[11]).useViewNsfwCommandsOrDefault();
     const obj3 = _require(memo[11]);
-    const items1 = [fetchFingerprint];
-    const stateFromStores = _require(memo[12]).useStateFromStores(items1, () => tmp17.getId());
+    const items1 = [viewNsfwCommandsOrDefault];
+    const stateFromStores = _require(memo[12]).useStateFromStores(items1, () => viewNsfwCommandsOrDefault.getId());
     const obj4 = _require(memo[12]);
-    const items2 = [mergeGuildAvatar];
+    const items2 = [closure_12];
     const stateFromStores1 = _require(memo[12]).useStateFromStores(items2, () => {
       currentUser = currentUser.getCurrentUser();
       let flag;
@@ -165,10 +165,10 @@ export const usePermissionContext = function usePermissionContext(channel, items
       return flag;
     });
     const obj5 = _require(memo[12]);
-    const items3 = [trackCommunicationDisabled];
+    const items3 = [closure_9];
     const stateFromStoresArray = _require(memo[12]).useStateFromStoresArray(items3, () => {
       if (null != c3) {
-        const member = outer1_9.getMember(tmp, stateFromStores);
+        const member = closure_1_9.getMember(tmp, stateFromStores);
         let roles;
         if (member != null) {
           roles = member.roles;
@@ -176,7 +176,7 @@ export const usePermissionContext = function usePermissionContext(channel, items
         if (roles == null) {
           roles = [];
         }
-        let items = roles;
+        items = roles;
       } else {
         items = [];
       }
@@ -186,7 +186,7 @@ export const usePermissionContext = function usePermissionContext(channel, items
     const items4 = [stateFromStores];
     const stateFromStores2 = _require(memo[12]).useStateFromStores(items4, () => stateFromStores.isViewingRoles(c3));
     _require(memo[12]);
-    const items5 = [createGuildRecordFromRust];
+    const items5 = [closure_10];
     const items6 = [undefined];
     let tmp17 = stateFromStores1;
     if (tmp17) {
@@ -200,7 +200,7 @@ export const usePermissionContext = function usePermissionContext(channel, items
       }
       tmp17 = tmp19;
     }
-    fetchFingerprint = tmp17;
+    viewNsfwCommandsOrDefault = tmp17;
     const items7 = [items, memo, stateFromStores2, stateFromStoresArray, stateFromStores, tmp17, channel];
     return React.useMemo(() => {
       let obj = closure_0;
@@ -208,8 +208,8 @@ export const usePermissionContext = function usePermissionContext(channel, items
       if (isThreadResult) {
         isThreadResult = obj.isThread();
       }
-      const tmpResult = outer1_15(memo, isThreadResult);
-      obj = { context: tmp2, userId: stateFromStores, roleIds: stateFromStoresArray, commandTypes: closure_1, isImpersonating: stateFromStores2, computedPermissions: tmpResult.computedPermissions, hasBaseAccessPermissions: tmpResult.hasBaseAccessPermissions, hasSendMessagesPermission: tmpResult.hasSendMessagesPermission, allowNsfw: fetchFingerprint };
+      const tmpResult = closure_1_15(memo, isThreadResult);
+      obj = { context: tmp2, userId: stateFromStores, roleIds: stateFromStoresArray, commandTypes: closure_1, isImpersonating: stateFromStores2, computedPermissions: tmpResult.computedPermissions, hasBaseAccessPermissions: tmpResult.hasBaseAccessPermissions, hasSendMessagesPermission: tmpResult.hasSendMessagesPermission, allowNsfw: viewNsfwCommandsOrDefault };
       return obj;
     }, items7);
   }
@@ -226,17 +226,17 @@ export const computeCommandContextType = function computeCommandContextType(chan
         type = channel.type;
       }
       if (type !== constants.DM) {
-        const PRIVATE_CHANNEL = require(1954) /* PermissionOverwriteType */.InteractionContextType.PRIVATE_CHANNEL;
+        const PRIVATE_CHANNEL = PermissionOverwriteType.InteractionContextType.PRIVATE_CHANNEL;
       } else {
         let recipientId;
         if (channel != null) {
           recipientId = channel.getRecipientId();
         }
       }
-      const BOT_DM = require(1954) /* PermissionOverwriteType */.InteractionContextType.BOT_DM;
+      const BOT_DM = PermissionOverwriteType.InteractionContextType.BOT_DM;
     }
   }
-  return require(1954) /* PermissionOverwriteType */.InteractionContextType.GUILD;
+  return PermissionOverwriteType.InteractionContextType.GUILD;
 };
 export const getContextGuildId = function getContextGuildId(context) {
   return context instanceof ChannelRecordBase ? context.guild_id : context.id;

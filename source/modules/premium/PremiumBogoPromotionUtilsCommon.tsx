@@ -1,28 +1,32 @@
-// Module ID: 12898
-// Function ID: 12899
+// Module ID: 12953
+// Function ID: 12954
 // Name: isUserEligibleBasedOnCurrentOrPreviousSubs
-// Dependencies: [5, 1922, 4045, 7421, 5357, 7628, 1924, 676, 3975, 4039, 500, 4383, 7388, 12899, 12900, 647, 7418, 7625, 12901, 12902, 4466, 7928, 2]
+// Dependencies: [5, 1922, 4048, 7459, 5362, 7666, 1924, 676, 3978, 4042, 500, 4387, 7426, 12954, 12955, 647, 7456, 7663, 12956, 12957, 4470, 7967, 2]
 // Exports: maybeFetchActiveBogoPromotion, useIsEligibleForBogoPromotion
 
-// Module 12898 (isUserEligibleBasedOnCurrentOrPreviousSubs)
-import createEmptyPromotionsByType from "createEmptyPromotionsByType";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import reset from "reset";
-import emitChanges from "emitChanges";
-import addEntitlement from "addEntitlement";
-import closure_8 from "createEmptyPromotionsByType";
-import GuildFeatures from "GuildFeatures";
-import ME from "ME";
+// Module 12953 (isUserEligibleBasedOnCurrentOrPreviousSubs)
+import set from "set" /* 500 */;
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+import tDefault from "t" /* 3978 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
+import isTablet from "isTablet" /* 4387 */;
+import useBlockedPaymentsConfig from "useBlockedPaymentsConfig" /* 7426 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7456 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7663 */;
+import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 12954 */;
+import apexExperiment from "apexExperiment" /* 12955 */;
+import useScheduledForcedUpdateDefault from "useScheduledForcedUpdate" /* 12956 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "reset" /* 4048 */;
+import closure_6 from "emitChanges" /* 7459 */;
+import closure_7 from "addEntitlement" /* 5362 */;
+import closure_8 from "createEmptyPromotionsByType" /* 7666 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import ME from "ME" /* 676 */;
 
-let c10;
-let c9;
-let closure_12;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function isUserEligibleBasedOnCurrentOrPreviousSubs(experimentEnabled) {
-  let mostRecentSubscription;
-  let premiumSubscription;
-  let previousPremiumSubscription;
   ({ premiumSubscription, mostRecentSubscription, previousPremiumSubscription } = experimentEnabled);
   if (experimentEnabled.experimentEnabled) {
     if (null != mostRecentSubscription) {
@@ -30,11 +34,11 @@ function isUserEligibleBasedOnCurrentOrPreviousSubs(experimentEnabled) {
         const endedAt = mostRecentSubscription.endedAt;
         if (null != endedAt) {
           if (mostRecentSubscription.hasPremiumAtLeast(closure_10.TIER_2)) {
-            const obj = importDefault(3975)();
+            const obj = tDefault();
             if (subtractResult.isBefore(endedAt)) {
               return false;
             }
-            subtractResult = importDefault(3975)().subtract(10, "days");
+            subtractResult = tDefault().subtract(10, "days");
           }
         }
       }
@@ -44,11 +48,11 @@ function isUserEligibleBasedOnCurrentOrPreviousSubs(experimentEnabled) {
         const endedAt2 = previousPremiumSubscription.endedAt;
         if (null != endedAt2) {
           if (previousPremiumSubscription.hasPremiumAtLeast(closure_10.TIER_2)) {
-            const obj3 = importDefault(3975)();
+            const obj3 = tDefault();
             if (subtractResult1.isBefore(endedAt2)) {
               return false;
             }
-            subtractResult1 = importDefault(3975)().subtract(10, "days");
+            subtractResult1 = tDefault().subtract(10, "days");
           }
         }
       }
@@ -61,18 +65,18 @@ function isUserEligibleBasedOnCurrentOrPreviousSubs(experimentEnabled) {
       }
       let isPremiumExactlyResult = hasActiveTrial;
       if (isPremiumExactlyResult) {
-        isPremiumExactlyResult = importDefault(4039).isPremiumExactly(currentUser, tmp22.TIER_0);
-        const obj5 = importDefault(4039);
+        isPremiumExactlyResult = getPremiumPlanItemDefault.isPremiumExactly(currentUser, tmp22.TIER_0);
+        const obj5 = getPremiumPlanItemDefault;
       }
       const hasPremiumAtLeastResult = premiumSubscription.hasPremiumAtLeast(closure_10.TIER_2);
       tmp22 = closure_10;
-      let isAndroidResult = require(500) /* set */.isAndroid();
+      let isAndroidResult = set.isAndroid();
       if (isAndroidResult) {
         isAndroidResult = premiumSubscription.paymentGateway !== constants.GOOGLE;
       }
       return false;
     }
-    const isMobile = require(4383) /* isTablet */.isMobile;
+    const isMobile = isTablet.isMobile;
     let tmp20 = !isMobile;
     if (isMobile) {
       tmp20 = !fractionalPremiumActive.isFractionalPremiumActive();
@@ -95,9 +99,9 @@ function isEligibleForBOGOPromotion() {
 function _isEligibleForBOGOPromotion() {
   const self = this;
   const tmp = callback(() => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*() {
       if (authStore === 2) {
         authStore = 3;
@@ -110,7 +114,7 @@ function _isEligibleForBOGOPromotion() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -125,7 +129,7 @@ function _isEligibleForBOGOPromotion() {
               obj[0] = arg1;
               return obj;
             } else {
-              let dependencyMap = tmp5;
+              dependencyMap = tmp5;
               let currentUser2 = tmp2;
               let flag;
               if (flag === undefined) {
@@ -136,7 +140,7 @@ function _isEligibleForBOGOPromotion() {
               isPaymentsBlocked = undefined;
               authStore = undefined;
               let store;
-              let c6;
+              c6 = undefined;
               let mostRecentPremiumTypeSubscription;
               isPaymentsBlocked = 1;
               authStore = 1;
@@ -149,7 +153,7 @@ function _isEligibleForBOGOPromotion() {
                 throw arg1;
               } else if (arg0 === 2) {
                 authStore = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -159,13 +163,13 @@ function _isEligibleForBOGOPromotion() {
                   isClaimedResult = currentUser2.isClaimed();
                 }
                 dependencyMap = !isClaimedResult;
-                let obj2 = flag(7388);
+                let obj2 = flag(7426);
                 isPaymentsBlocked = obj2.getIsPaymentsBlocked();
-                let obj3 = flag(12900);
+                let obj3 = flag(12955);
                 authStore = obj3.getBogoPromotionGateEnabled("bogo eligibility async check");
-                let obj4 = flag(12902);
+                let obj4 = flag(12957);
                 store = obj4.getBogoMarketingMaterialsEnabled("bogo marketing eligibility async check");
-                const isMobile = flag(4383).isMobile;
+                const isMobile = flag(4387).isMobile;
                 let isAndroidResult = !isMobile;
                 if (isMobile) {
                   let obj5 = flag(500);
@@ -195,7 +199,7 @@ function _isEligibleForBOGOPromotion() {
                             isPaymentsBlocked = 2;
                             authStore = 1;
                             obj2 = { value: null, done: false };
-                            obj2[0] = flag(4466).fetchMostRecentSubscription();
+                            obj2[0] = flag(4470).fetchMostRecentSubscription();
                             return obj2;
                           }
                         }
@@ -241,7 +245,7 @@ function _isEligibleForBOGOPromotion() {
               isPaymentsBlocked = 3;
               authStore = 1;
               const obj6 = { value: null, done: false };
-              obj6[0] = flag(4466).fetchSubscriptions();
+              obj6[0] = flag(4470).fetchSubscriptions();
               return obj6;
             }
           }
@@ -254,7 +258,7 @@ function _isEligibleForBOGOPromotion() {
     iter.next();
     return iter;
   });
-  const _isEligibleForBOGOPromotion = tmp;
+  closure_15 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -277,7 +281,7 @@ function _maybeFetchActiveBogoPromotion() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -292,13 +296,13 @@ function _maybeFetchActiveBogoPromotion() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp5;
+            closure_1 = tmp5;
             let bogoPromotion = tmp2;
             bogoPromotion = undefined;
             table = 1;
             c3 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_14(false);
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_14(false);
             return obj1;
           }
         } else {
@@ -319,7 +323,7 @@ function _maybeFetchActiveBogoPromotion() {
                 const _Date2 = Date;
                 if (valueOfResult >= Date.now()) {
                   c3 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
                 valueOfResult = date.valueOf();
               }
@@ -340,7 +344,7 @@ function _maybeFetchActiveBogoPromotion() {
             return obj;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp22) {
         c3 = tmp;
@@ -348,7 +352,7 @@ function _maybeFetchActiveBogoPromotion() {
       }
     }
   });
-  const _maybeFetchActiveBogoPromotion = tmp;
+  closure_16 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -359,38 +363,35 @@ function _maybeFetchActiveBogoPromotion() {
 }
 ({ PurchasedFlags: c9, PremiumTypes: c10 } = GuildFeatures);
 ({ PaymentGateways: unpackModuleId, SubscriptionStatusTypes: closure_12 } = ME);
-let result = require("reset").fileFinishedImporting("modules/premium/PremiumBogoPromotionUtilsCommon.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/PremiumBogoPromotionUtilsCommon.tsx");
 
 export { isUserEligibleBasedOnCurrentOrPreviousSubs };
 export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromotion() {
-  let mostRecentSubscription;
-  let premiumSubscription;
-  let previousPremiumSubscription;
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
   }
-  const isPaymentsBlocked = require(7388) /* useBlockedPaymentsConfig */.useIsPaymentsBlocked();
-  const obj = require(7388) /* useBlockedPaymentsConfig */;
-  const promotion = require(12899) /* useEligibleActiveOutboundPromotions */.useBogoPromotion().promotion;
-  const obj2 = require(12899) /* useEligibleActiveOutboundPromotions */;
-  const bogoPromotionGateEnabled = require(12900) /* apexExperiment */.useBogoPromotionGateEnabled("bogo eligibility hook");
-  const obj3 = require(12900) /* apexExperiment */;
-  const items = [reset];
-  const stateFromStoresObject = require(647) /* defaultAreStatesEqual */.useStateFromStoresObject(items, () => ({ mostRecentSubscription: store.getMostRecentPremiumTypeSubscription(), premiumSubscription: store.getPremiumTypeSubscription(), previousPremiumSubscription: store.getPreviousPremiumTypeSubscription() }));
+  const isPaymentsBlocked = useBlockedPaymentsConfig.useIsPaymentsBlocked();
+  const obj = useBlockedPaymentsConfig;
+  const promotion = useEligibleActiveOutboundPromotions.useBogoPromotion().promotion;
+  const obj2 = useEligibleActiveOutboundPromotions;
+  const bogoPromotionGateEnabled = apexExperiment.useBogoPromotionGateEnabled("bogo eligibility hook");
+  const obj3 = apexExperiment;
+  const items = [closure_5];
+  const stateFromStoresObject = defaultAreStatesEqual.useStateFromStoresObject(items, () => ({ mostRecentSubscription: store.getMostRecentPremiumTypeSubscription(), premiumSubscription: store.getPremiumTypeSubscription(), previousPremiumSubscription: store.getPreviousPremiumTypeSubscription() }));
   ({ mostRecentSubscription, premiumSubscription, previousPremiumSubscription } = stateFromStoresObject);
-  const obj4 = require(647) /* defaultAreStatesEqual */;
-  const premiumTrialOffer = require(7418) /* usePremiumTrialOffer */.usePremiumTrialOffer();
-  const obj5 = require(7418) /* usePremiumTrialOffer */;
+  const obj4 = defaultAreStatesEqual;
+  const premiumTrialOffer = usePremiumTrialOffer.usePremiumTrialOffer();
+  const obj5 = usePremiumTrialOffer;
   let num;
-  const premiumDiscountOffer = require(7625) /* usePremiumDiscountOffer */.usePremiumDiscountOffer();
+  const premiumDiscountOffer = usePremiumDiscountOffer.usePremiumDiscountOffer();
   if (promotion != null) {
     num = promotion.endDate;
   }
   if (num == null) {
     num = 0;
   }
-  const obj6 = require(7625) /* usePremiumDiscountOffer */;
+  const obj6 = usePremiumDiscountOffer;
   const valueOfResult = new Date(num).valueOf();
   const timestamp = Date.now();
   let num2 = -1;
@@ -398,15 +399,15 @@ export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromot
   if (timestamp <= valueOfResult) {
     num2 = valueOfResult - timestamp;
   }
-  importDefault(12901)({ delay: num2 });
-  const isMobile = tmp(4383).isMobile;
+  useScheduledForcedUpdateDefault({ delay: num2 });
+  const isMobile = tmp(4387).isMobile;
   let isAndroidResult = !isMobile;
   if (isMobile) {
     let tmpResult = tmp(500);
     isAndroidResult = tmpResult.isAndroid();
   }
-  const tmp11 = importDefault(12901);
-  tmpResult = tmp(12902);
+  const tmp11 = useScheduledForcedUpdateDefault;
+  tmpResult = tmp(12957);
   let bogoMarketingMaterialsEnabled = tmpResult.useBogoMarketingMaterialsEnabled("bogo marketing eligibility hook");
   let tmp16 = !tmp10;
   if (timestamp <= valueOfResult) {

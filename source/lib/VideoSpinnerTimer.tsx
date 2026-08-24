@@ -1,19 +1,22 @@
-// Module ID: 12448
-// Function ID: 12449
+// Module ID: 12500
+// Function ID: 12501
 // Name: map
-// Dependencies: [1218, 1391, 4564, 4539, 4542, 676, 3, 4548, 698, 2]
+// Dependencies: [1218, 1391, 4569, 4544, 4547, 676, 3, 4553, 698, 2]
 
-// Module 12448 (map)
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionInfoChange from "handleConnectionInfoChange";
-import createRTCConnection from "createRTCConnection";
-import updateVoiceState from "updateVoiceState";
-import { AnalyticEvents } from "ME";
+// Module 12500 (map)
+import timestampDefault from "timestamp" /* 3 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import sleep from "sleep" /* 4553 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "handleConnectionInfoChange" /* 4569 */;
+import closure_6 from "createRTCConnection" /* 4544 */;
+import closure_7 from "updateVoiceState" /* 4547 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 const map = new Map();
-let result = require("handleConnectionInfoChange").fileFinishedImporting("lib/VideoSpinnerTimer.tsx");
+let result = require("set").fileFinishedImporting("lib/VideoSpinnerTimer.tsx");
 class VideoSpinnerTimer {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -25,8 +28,8 @@ class VideoSpinnerTimer {
 const prototype = VideoSpinnerTimer.prototype;
 prototype["onSpinnerStarted"] = function onSpinnerStarted() {
   if (null == this.spinnerVisibleStart) {
-    tmp.spinnerVisibleStart = require(4548) /* sleep */.now();
-    const obj = require(4548) /* sleep */;
+    tmp.spinnerVisibleStart = sleep.now();
+    const obj = sleep;
   }
 };
 prototype["trackSpinnerDuration"] = function trackSpinnerDuration(videoSpinnerContext, userId, arg2) {
@@ -38,7 +41,7 @@ prototype["trackSpinnerDuration"] = function trackSpinnerDuration(videoSpinnerCo
     }
     const sum = num + 1;
     const result = map.set(arg2, sum);
-    let obj = require(4548) /* sleep */;
+    let obj = sleep;
     const diff = obj.now() - self.spinnerVisibleStart;
     self.spinnerVisibleStart = null;
     if (diff < 0) {
@@ -81,8 +84,8 @@ prototype["trackSpinnerDuration"] = function trackSpinnerDuration(videoSpinnerCo
       obj[9] = store.getType();
       obj[10] = store.getEffectiveConnectionSpeed();
       obj[11] = store.getServiceProvider();
-      importDefault(698).track(AnalyticEvents.VIDEO_SPINNER_SHOWN_V2, obj);
-      const obj2 = importDefault(698);
+      expandEventPropertiesDefault.track(AnalyticEvents.VIDEO_SPINNER_SHOWN_V2, obj);
+      const obj2 = expandEventPropertiesDefault;
     }
     const obj4 = map;
   }

@@ -1,15 +1,19 @@
-// Module ID: 5299
-// Function ID: 5300
+// Module ID: 5304
+// Function ID: 5305
 // Name: getSettings
 // Dependencies: [1342, 1306, 589, 709, 2]
 
-// Module 5299 (getSettings)
-import { Store } from "initialize";
+// Module 5304 (getSettings)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import create from "create" /* 1306 */;
+import b64ToProto from "b64ToProto" /* 1342 */;
 
-const require = arg1;
+require = arg1;
 let c2 = false;
 let closure_3 = {};
 let closure_4 = {};
+const Store = initializeDefault.Store;
 class FamilyCenterControlledSettingsStore extends Store {
 }
 const prototype = FamilyCenterControlledSettingsStore.prototype;
@@ -44,39 +48,36 @@ Object.defineProperty(prototype, "isLoading", {
   set: undefined
 });
 FamilyCenterControlledSettingsStore.displayName = "FamilyCenterControlledSettingsStore";
-const familyCenterControlledSettingsStore = new FamilyCenterControlledSettingsStore(require("dispatcher"), {
+const familyCenterControlledSettingsStore = new FamilyCenterControlledSettingsStore(dispatcherDefault, {
   FAMILY_CENTER_TEEN_SETTINGS_FETCH_START: function handleTeenSettingsFetchStart() {
-    let c2 = true;
+    c2 = true;
   },
   FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS_FETCH_SUCCESS: function handleTeenSettingsAndConsentsFetchSuccess(arg0) {
-    let consents;
-    let settings;
-    let userId;
     ({ userId, settings, consents } = arg0);
     if (null != settings) {
-      closure_3[userId] = require(1342) /* b64ToProto */.b64ToPreloadedUserSettingsProto(settings);
-      const obj = require(1342) /* b64ToProto */;
+      closure_3[userId] = b64ToProto.b64ToPreloadedUserSettingsProto(settings);
+      const obj = b64ToProto;
     }
     if (null != consents) {
       closure_4[userId] = consents;
     }
-    let c2 = false;
+    c2 = false;
   },
   FAMILY_CENTER_TEEN_CONSENTS_UPDATE_SUCCESS: function handleTeenConsentsUpdateSuccess(userId) {
     closure_4[userId.userId] = userId.consents;
   },
   FAMILY_CENTER_TEEN_UPDATE_SETTINGS_SUCCESS: function handleTeenUpdateSettingsSuccess(userId) {
     userId = userId.userId;
-    const result = require(1342) /* b64ToProto */.b64ToPreloadedUserSettingsProto(userId.settings);
-    const obj = require(1342) /* b64ToProto */;
-    dependencyMap[userId] = require(1342) /* b64ToProto */.mergeTopLevelFields(require(1306) /* create */.PreloadedUserSettings, dependencyMap[userId], result);
+    const result = b64ToProto.b64ToPreloadedUserSettingsProto(userId.settings);
+    const obj = b64ToProto;
+    dependencyMap[userId] = b64ToProto.mergeTopLevelFields(create.PreloadedUserSettings, dependencyMap[userId], result);
   },
   LOGOUT: function handleLogout() {
-    let closure_3 = {};
-    let closure_4 = {};
-    let c2 = false;
+    closure_3 = {};
+    closure_4 = {};
+    c2 = false;
   }
 });
-let result = require("initialize").fileFinishedImporting("modules/parent_tools/FamilyCenterControlledSettingsStore.tsx");
+let result = require("set").fileFinishedImporting("modules/parent_tools/FamilyCenterControlledSettingsStore.tsx");
 
 export default familyCenterControlledSettingsStore;

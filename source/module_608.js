@@ -3,5 +3,7 @@
 // Dependencies: [609]
 
 // Module 608
+import _mod609 from "module_609" /* 609 */;
 
-export { Symbol as default } from "module_609";
+
+export default _mod609.Symbol;

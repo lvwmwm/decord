@@ -1,26 +1,28 @@
-// Module ID: 10033
-// Function ID: 10034
+// Module ID: 10072
+// Function ID: 10073
 // Name: getFirstGuildIncidentId
-// Dependencies: [1340, 1910, 4021, 4197, 1922, 10014, 8235, 676, 647, 11, 8234, 506, 4026, 10034, 2]
+// Dependencies: [1340, 1910, 4024, 4201, 1922, 10053, 8275, 676, 647, 11, 8274, 506, 4029, 10073, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 10033 (getFirstGuildIncidentId)
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import handleConnectionOpen from "handleConnectionOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import computeAlertSettings from "computeAlertSettings";
-import { IncidentAlertModeratorPermissions as closure_10 } from "GUILD_REPORT_RAID_MOBILE_KEY";
-import ME from "ME";
+// Module 10072 (getFirstGuildIncidentId)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import fromStringAll from "fromString" /* 506 */;
+import applyOverwritesAll from "applyOverwrites" /* 4029 */;
+import DATE_CONFIG from "DATE_CONFIG" /* 8274 */;
+import closure_4 from "handleConnectionClosedOrResumed" /* 1340 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_7 from "handleConnectionOpen" /* 4201 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "computeAlertSettings" /* 10053 */;
+import { IncidentAlertModeratorPermissions as closure_10 } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8275 */;
+import ME from "ME" /* 676 */;
 
-let closure_12;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function getFirstGuildIncidentId(guildId) {
   currentUser = currentUser.getCurrentUser();
   const incidentsByGuild = store3.getIncidentsByGuild();
-  let obj = importDefault(11);
+  let obj = DISCORD_EPOCHDefault;
   const keys = obj.keys(incidentsByGuild);
   const mapped = keys.map((arg0) => guild.getGuild(arg0));
   const iter = mapped[Symbol.iterator]();
@@ -35,17 +37,17 @@ function getFirstGuildIncidentId(guildId) {
         let tmp19 = require;
         let tmp20 = dependencyMap;
         let tmp21 = dependencyMap;
-        let obj7 = require(8234) /* DATE_CONFIG */;
+        let obj7 = DATE_CONFIG;
         let tmp22 = tmp17;
         if (obj7.hasDetectedActivity(tmp18)) {
           let tmp8 = tmp20;
-          let tmp19Result = tmp19(8234);
+          let tmp19Result = tmp19(8274);
           let tmp9 = tmp17;
           if (!tmp19Result.isUnderLockdown(tmp18)) {
             let tmp11 = importAll;
             let tmp12 = tmp20;
-            let obj4 = importAll(506);
-            let obj5 = importAll(4026);
+            let obj4 = fromStringAll;
+            let obj5 = applyOverwritesAll;
             obj = { user: null, context: null, checkElevated: false };
             obj[0] = currentUser;
             let tmp13 = nextResult;
@@ -61,7 +63,7 @@ function getFirstGuildIncidentId(guildId) {
           }
         } else {
           let tmp6 = tmp20;
-          tmp19Result = tmp19(8234);
+          tmp19Result = tmp19(8274);
           let tmp7 = tmp17;
         }
       }
@@ -71,18 +73,18 @@ function getFirstGuildIncidentId(guildId) {
   return null;
 }
 ({ EMPTY_STRING_SNOWFLAKE_ID: unpackModuleId, GuildFeatures: closure_12 } = ME);
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidHooks.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidHooks.tsx");
 
 export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
   let obj = stateFromStores1(647);
-  const items = [mergeGuildAvatar];
+  const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const items1 = [computeAlertSettings];
+  const items1 = [closure_9];
   stateFromStores1 = stateFromStores1(647).useStateFromStores(items1, () => incidentsByGuild.getIncidentsByGuild());
   const obj2 = stateFromStores1(647);
-  const items2 = [createGuildRecordFromRust];
+  const items2 = [closure_5];
   const stateFromStoresArray = stateFromStores1(647).useStateFromStoresArray(items2, () => {
-    const keys = outer1_1(outer1_3[9]).keys(stateFromStores1);
+    const keys = closure_1_1(closure_1_3[9]).keys(stateFromStores1);
     return keys.map((arg0) => guild.getGuild(arg0));
   });
   const iter = stateFromStoresArray[Symbol.iterator]();
@@ -98,13 +100,13 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
         let tmp20 = dependencyMap;
         let tmp17 = stateFromStores1;
         let tmp18 = stateFromStores1;
-        let obj8 = stateFromStores1(8234);
+        let obj8 = stateFromStores1(8274);
         let tmp21 = tmp15;
         if (obj8.hasDetectedActivity(tmp16)) {
           let tmp9 = importAll;
           let tmp10 = tmp19;
-          let obj5 = importAll(506);
-          let obj6 = importAll(4026);
+          let obj5 = fromStringAll;
+          let obj6 = applyOverwritesAll;
           obj = { user: null, context: null, checkElevated: false };
           obj[0] = stateFromStores;
           let tmp11 = nextResult;
@@ -118,7 +120,7 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
         } else {
           let tmp6 = tmp17;
           let tmp7 = tmp19;
-          let tmp18Result = tmp18(8234);
+          let tmp18Result = tmp18(8274);
           let tmp8 = tmp15;
         }
       }
@@ -130,34 +132,34 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
 export const useGuildIncidentsState = function useGuildIncidentsState(id) {
   const _require = id;
   let obj = _require(647);
-  const items = [createGuildRecordFromRust, getUncachedChannelPermissions];
+  const items = [closure_5, closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const guild = outer1_5.getGuild(closure_0);
+    const guild = closure_1_5.getGuild(closure_0);
     if (null == guild) {
       return false;
     } else {
-      const guildPermissions = outer1_6.getGuildPermissions(guild);
+      const guildPermissions = closure_1_6.getGuildPermissions(guild);
       let hasAnyResult = null != guildPermissions;
       if (hasAnyResult) {
-        hasAnyResult = outer1_2(outer1_3[11]).hasAny(guildPermissions, outer1_10);
-        const obj = outer1_2(outer1_3[11]);
+        hasAnyResult = closure_1_2(closure_1_3[11]).hasAny(guildPermissions, closure_1_10);
+        const obj = closure_1_2(closure_1_3[11]);
       }
       return hasAnyResult;
     }
   });
-  const items1 = [computeAlertSettings];
+  const items1 = [closure_9];
   const stateFromStores1 = _require(647).useStateFromStores(items1, () => {
     let guildIncident = null;
     if (null != closure_0) {
-      guildIncident = outer1_9.getGuildIncident(tmp);
+      guildIncident = closure_1_9.getGuildIncident(tmp);
     }
     return guildIncident;
   });
   obj = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: null };
   let isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = _require(8234).isUnderLockdown(stateFromStores1);
-    const tmpResult = _require(8234);
+    isUnderLockdownResult = _require(8274).isUnderLockdown(stateFromStores1);
+    const tmpResult = _require(8274);
   }
   obj[2] = isUnderLockdownResult;
   return obj;
@@ -191,8 +193,8 @@ export const shouldShowRaidInAppNotification = function shouldShowRaidInAppNotif
   }
   let isUnderLockdownResult = null != guildIncident;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = require(8234) /* DATE_CONFIG */.isUnderLockdown(guildIncident);
-    const obj2 = require(8234) /* DATE_CONFIG */;
+    isUnderLockdownResult = DATE_CONFIG.isUnderLockdown(guildIncident);
+    const obj2 = DATE_CONFIG;
   }
   const show = null != guildId && !isUnderLockdownResult && !(null != tmp2 && tmp2.disableRaidAlertNag);
   return { show, guildId };
@@ -249,9 +251,9 @@ export const useDisabledActions = function useDisabledActions(id) {
     id = closure_11;
   }
   let obj = id(647);
-  const items = [computeAlertSettings];
+  const items = [closure_9];
   const items1 = [id];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getGuildIncident(id), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_9.getGuildIncident(id), items1);
   if (null == id) {
     obj = { dmsDisabled: false, invitesDisabled: false };
   } else {
@@ -295,9 +297,9 @@ export const useDisabledActions = function useDisabledActions(id) {
 };
 export const useShowAntiRaidInGuildNotifSettings = function useShowAntiRaidInGuildNotifSettings(arg0) {
   const _require = arg0;
-  const items = [getUncachedChannelPermissions, createGuildRecordFromRust];
+  const items = [closure_6, closure_5];
   return _require(647).useStateFromStores(items, () => {
-    const guild = outer1_5.getGuild(callback);
-    return callback(outer1_3[13]).canReportRaid(guild, outer1_6);
+    const guild = closure_1_5.getGuild(callback);
+    return callback(closure_1_3[13]).canReportRaid(guild, closure_1_6);
   });
 };

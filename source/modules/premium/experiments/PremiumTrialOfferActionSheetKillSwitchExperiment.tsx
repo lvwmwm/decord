@@ -1,14 +1,15 @@
-// Module ID: 16168
-// Function ID: 16169
+// Module ID: 16265
+// Function ID: 16266
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 16168 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 16265 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2025-09-premium-trial-offer-action-sheet-ks", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/premium/experiments/PremiumTrialOfferActionSheetKillSwitchExperiment.tsx");
+const result = set.fileFinishedImporting("modules/premium/experiments/PremiumTrialOfferActionSheetKillSwitchExperiment.tsx");
 
 export const PremiumTrialOfferActionSheetKillSwitchExperiment = apexExperiment;

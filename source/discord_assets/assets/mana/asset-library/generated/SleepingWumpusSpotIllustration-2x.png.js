@@ -1,10 +1,12 @@
-// Module ID: 6161
-// Function ID: 6162
+// Module ID: 6192
+// Function ID: 6193
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6161 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SleepingWumpusSpotIllustration-2x.png.js");
+// Module 6192 (metadata)
+import set from "set" /* 2 */;
 
-export default "https://cdn.discordapp.com/assets/content/d1aee2967e0074326a0412f01f7699bdb836e972c617f3ae616d984116dec923.png";
-export const metadata = { fileBytes: 50275 };
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SleepingWumpusSpotIllustration-2x.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/988739d8750b961a28f619f63c768a41157c70cc9ce08b40f54e41b158130d59.png";
+export const metadata = { fileBytes: 50274 };

@@ -1,20 +1,23 @@
-// Module ID: 10798
-// Function ID: 10799
+// Module ID: 10837
+// Function ID: 10838
 // Name: getChannelDetailsButtons
-// Dependencies: [9922, 692, 2]
+// Dependencies: [9961, 692, 2]
 // Exports: getChannelDetailsButtons, navigateToChannelDetailsScreen
 
-// Module 10798 (getChannelDetailsButtons)
-import { ChannelDetailsButtonTypes } from "ChannelDetailsNavigatorScreens";
+// Module 10837 (getChannelDetailsButtons)
+import set from "set" /* 2 */;
+import set2 from "set" /* 692 */;
+import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 9961 */;
 
-const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsUtils.tsx");
+const ChannelDetailsButtonTypes = ChannelDetailsNavigatorScreens.ChannelDetailsButtonTypes;
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsUtils.tsx");
 
 export const getChannelDetailsButtons = function getChannelDetailsButtons(channel, stateFromStores) {
   let flag = stateFromStores;
   if (stateFromStores === undefined) {
     flag = false;
   }
-  if (channel.type === require(692) /* set */.ChannelTypes.GUILD_DIRECTORY) {
+  if (channel.type === set2.ChannelTypes.GUILD_DIRECTORY) {
     let items = [];
   } else {
     items = [, , ];

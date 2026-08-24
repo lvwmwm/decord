@@ -4,7 +4,7 @@
 // Dependencies: [2]
 
 // Module 691 (keys)
-import set from "set";
+import set from "set" /* 2 */;
 
 let set = new Set(["token", "fingerprint"]);
 const frozen = Object.freeze({ START: { x: 0, y: 0 }, END: { x: 1, y: 0 } });

@@ -1,19 +1,21 @@
-// Module ID: 13080
-// Function ID: 13081
+// Module ID: 13136
+// Function ID: 13137
 // Name: setUserID
-// Dependencies: [4572, 3, 4259, 2]
+// Dependencies: [4577, 3, 4263, 2]
 
-// Module 13080 (setUserID)
-import "on";
+// Module 13136 (setUserID)
+import timestampDefault from "timestamp" /* 3 */;
+import onDefault from "on" /* 4577 */;
 
 const require = arg1;
 let obj = { RequestedSSRCsUpdate: "requested-ssrcs-update", RequestedStreamsUpdate: "requested-streams-update" };
+onDefault;
 class GoLiveQualityManager extends tmp2 {
   constructor() {
-    c0 = undefined;
+    closure_0 = undefined;
     tmp6 = new GoLiveQualityManager(tmp5, tmp4, tmp3, new.target, new.target, tmp2, undefined, tmp);
     // ThrowIfThisInitialized (0x7c)
-    c0 = tmp6;
+    closure_0 = tmp6;
     tmp6.streamId = null;
     tmp6.resolutionWidth = 0;
     tmp6.resolutionHeight = 0;
@@ -21,7 +23,7 @@ class GoLiveQualityManager extends tmp2 {
     tmp6.audioSSRC = 0;
     tmp6.incomingVideoEnabled = true;
     tmp6.delayedUpdate = function delayedUpdate() {
-      const delayedCall = _undefined.delayedCall;
+      delayedCall = delayedCall.delayedCall;
       delayedCall.delay();
     };
     tmp7 = new require("timestamp")("GoLiveQualityManager");
@@ -69,7 +71,7 @@ prototype["update"] = function update() {
 prototype["requestStream"] = function requestStream() {
   const self = this;
   if (null != this.videoStream) {
-    const obj = {};
+    obj = {};
     obj[self.videoStream.ssrc] = 100;
     const items = [self.videoStream.ssrc];
     self.request(obj, items);
@@ -78,7 +80,7 @@ prototype["requestStream"] = function requestStream() {
 prototype["stopStream"] = function stopStream() {
   const self = this;
   if (null != this.videoStream) {
-    const obj = {};
+    obj = {};
     obj[self.videoStream.ssrc] = 0;
     self.request(obj, []);
   }
@@ -87,7 +89,7 @@ prototype["request"] = function request(arg0, arr) {
   let self = this;
   self = this;
   if (undefined !== this.userId) {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const item = arr.forEach((arg0) => {
       if (null == pixelCounts.pixelCounts) {
         tmp.pixelCounts = {};
@@ -123,7 +125,7 @@ prototype["setStreamId"] = function setStreamId(streamId) {
     self.delayedUpdate();
   }
 };
-const result = require("start").fileFinishedImporting("modules/go_live/GoLiveQualityManager.tsx");
+const result = require("set").fileFinishedImporting("modules/go_live/GoLiveQualityManager.tsx");
 
 export default GoLiveQualityManager;
 export const GoLiveQualityManagerEvent = obj;

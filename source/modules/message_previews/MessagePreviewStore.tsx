@@ -1,20 +1,23 @@
-// Module ID: 13265
-// Function ID: 13266
+// Module ID: 13323
+// Function ID: 13324
 // Name: initialize
-// Dependencies: [32, 1391, 4994, 3, 589, 709, 13266, 5000, 2]
+// Dependencies: [32, 1391, 4999, 3, 589, 709, 13324, 5005, 2]
 
-// Module 13265 (initialize)
-import _slicedToArray from "_slicedToArray";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import reinjectEphemerals from "reinjectEphemerals";
-import { Store } from "initialize";
+// Module 13323 (initialize)
+import timestampDefault from "timestamp" /* 3 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "reinjectEphemerals" /* 4999 */;
 
 let object = arg1;
 let c6 = -Infinity;
-const error = new require("timestamp")("MessagePreviewStore");
+let closure_7 = new timestampDefault("MessagePreviewStore");
+const Store = initializeDefault.Store;
 class MessagePreviewStore extends Store {
   constructor() {
-    c0 = undefined;
+    closure_0 = undefined;
     obj = {
       CONNECTION_OPEN(arg0) {
             return obj.handleConnectionOpen(arg0);
@@ -55,7 +58,7 @@ class MessagePreviewStore extends Store {
     };
     tmp2 = new tmp2(require("dispatcher"), obj, new.target, tmp2, tmp, new.target, undefined);
     // ThrowIfThisInitialized (0x7c)
-    c0 = tmp2;
+    closure_0 = tmp2;
     map = new Map();
     tmp2.guilds = map;
     tmp2.generation = 0;
@@ -64,7 +67,7 @@ class MessagePreviewStore extends Store {
 }
 const prototype = MessagePreviewStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded, reinjectEphemerals);
+  this.waitFor(closure_4, closure_5);
 };
 prototype["isLatest"] = function isLatest(arg0, arg1) {
   let tmp = arg0;
@@ -82,9 +85,9 @@ prototype["isLatest"] = function isLatest(arg0, arg1) {
   }
   return flag;
 };
-prototype["isLocalFetchNeeded"] = function isLocalFetchNeeded(outer1_0) {
+prototype["isLocalFetchNeeded"] = function isLocalFetchNeeded(closure_1_0) {
   const guilds = this.guilds;
-  const value = guilds.get(outer1_0);
+  const value = guilds.get(closure_1_0);
   let flag;
   if (value != null) {
     flag = value.localNeeded;
@@ -111,7 +114,7 @@ prototype["data"] = function data(guildId, items, arg2) {
   const guilds = this.guilds;
   if (!guilds.has(guildId)) {
     const guilds2 = self.guilds;
-    const previewData = new object(13266).PreviewData();
+    const previewData = new object(13324).PreviewData();
     const result = guilds2.set(guildId, previewData);
   }
   const guilds3 = self.guilds;
@@ -225,7 +228,7 @@ prototype["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(chan
     return false;
   } else {
     const self = this;
-    const result = object(5000).requireSortedDescending(channelId.messages);
+    const result = object(5005).requireSortedDescending(channelId.messages);
     if (!channelId.isAfter) {
       if (!channelId.isBefore) {
         if (!channelId.hasMoreAfter) {
@@ -238,7 +241,7 @@ prototype["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(chan
         }
       }
     }
-    const obj3 = object(5000);
+    const obj3 = object(5005);
     let first1 = channelId.messages[0];
     if (first1 == null) {
       first1 = null;
@@ -251,8 +254,8 @@ prototype["handleLocalMessagesLoaded"] = function handleLocalMessagesLoaded(chan
   const basicChannel = store.getBasicChannel(channelId.channelId);
   if (null != basicChannel) {
     const self = this;
-    const result = object(5000).requireSortedDescending(channelId.messages);
-    const obj = object(5000);
+    const result = object(5005).requireSortedDescending(channelId.messages);
+    const obj = object(5005);
     let first = channelId.messages[0];
     if (first == null) {
       first = null;
@@ -262,12 +265,11 @@ prototype["handleLocalMessagesLoaded"] = function handleLocalMessagesLoaded(chan
   }
 };
 prototype["handleMessagePreviewsLoaded"] = function handleMessagePreviewsLoaded(guildId) {
-  let tmp3;
   const self = this;
-  tmp3.verbose("adding remote previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
+  closure_7.verbose("adding remote previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
   const dataResult = this.data(guildId.guildId);
   for (const item10024 of tmp2) {
-    tmp3 = item10024;
+    let tmp3 = item10024;
     if (!dataResult.isLatest(item10024.channel_id, self.generation)) {
       let tmp4 = item10024;
       let putResult = dataResult.put(tmp3.channel_id, tmp3, self.generation);
@@ -276,9 +278,7 @@ prototype["handleMessagePreviewsLoaded"] = function handleMessagePreviewsLoaded(
   }
 };
 prototype["handleMessagePreviewsLocallyLoaded"] = function handleMessagePreviewsLocallyLoaded(guildId) {
-  let tmp6;
-  let tmp8;
-  tmp3.verbose("adding local previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
+  closure_7.verbose("adding local previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
   const dataResult = this.data(guildId.guildId);
   while (tmp2 !== undefined) {
     let tmp4 = callback;
@@ -301,7 +301,7 @@ function handleLogout() {
 }
 prototype["handleLogout"] = handleLogout;
 object = undefined;
-object = new Object(require("dispatcher"), {
+object = new Object(dispatcherDefault, {
   CONNECTION_OPEN(arg0) {
     return obj.handleConnectionOpen(arg0);
   },
@@ -378,10 +378,10 @@ let obj = {
     return obj.handleThreadListSync(arg0);
   }
 };
-let tmp3 = new require("timestamp")("MessagePreviewStore");
+let tmp3 = new timestampDefault("MessagePreviewStore");
 object.guilds = new Map();
 object.generation = 0;
 const map = new Map();
-let result = require("reinjectEphemerals").fileFinishedImporting("modules/message_previews/MessagePreviewStore.tsx");
+let result = require("set").fileFinishedImporting("modules/message_previews/MessagePreviewStore.tsx");
 
 export default object;

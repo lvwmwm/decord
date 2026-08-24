@@ -5,7 +5,8 @@
 // Exports: normalizeUrlToBase
 
 // Module 865 (normalize)
-import _slicedToArray from "_slicedToArray";
+import addNonEnumerableProperty from "addNonEnumerableProperty" /* 822 */;
+import closure_3 from "_slicedToArray" /* 32 */;
 
 function normalize(arg0) {
   let num = arg1;
@@ -54,7 +55,7 @@ function visit(arg0, __v_isVNode) {
       return items;
     })();
   }
-  _slicedToArray(tmp2, 2);
+  callback(tmp2, 2);
   if (null != __v_isVNode) {
     let items = ["boolean", "string"];
     if (!items.includes(typeof __v_isVNode)) {
@@ -172,7 +173,7 @@ function visit(arg0, __v_isVNode) {
             }
             const _Array = Array;
             const tmp12 = Array.isArray(__v_isVNode) ? [] : {};
-            const convertToPlainObjectResult = require(822) /* addNonEnumerableProperty */.convertToPlainObject(__v_isVNode);
+            const convertToPlainObjectResult = addNonEnumerableProperty.convertToPlainObject(__v_isVNode);
             let num6 = 0;
             const keys = Object.keys();
             if (keys !== undefined) {

@@ -1,0 +1,41 @@
+// Module ID: 3913
+// Function ID: 3914
+// Name: subSeconds
+// Dependencies: [3479, 3642, 3476]
+// Exports: default
+
+// Module 3913 (subSeconds)
+import toInteger from "toInteger" /* 3479 */;
+import addSeconds from "addSeconds" /* 3642 */;
+import requiredArgs from "requiredArgs" /* 3476 */;
+
+if (!toInteger) {
+  let obj = { default: null };
+  obj[0] = toInteger;
+  let tmp3 = obj;
+} else {
+  tmp3 = toInteger;
+}
+toInteger = tmp3;
+if (!addSeconds) {
+  obj = { default: null };
+  obj[0] = addSeconds;
+  let tmp5 = obj;
+} else {
+  tmp5 = addSeconds;
+}
+addSeconds = tmp5;
+if (!requiredArgs) {
+  obj = { default: null };
+  obj[0] = requiredArgs;
+  let tmp7 = obj;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
+
+export default function subSeconds(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  return addSeconds.default(arg0, -toInteger.default(arg1));
+};
+export default exports.default;

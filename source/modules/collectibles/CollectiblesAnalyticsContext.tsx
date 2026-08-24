@@ -1,12 +1,12 @@
-// Module ID: 9175
-// Function ID: 9176
+// Module ID: 9212
+// Function ID: 9213
 // Name: context
 // Dependencies: [19, 21, 2]
 // Exports: CollectiblesAnalyticsProvider, useCollectiblesAnalyticsContext
 
-// Module 9175 (context)
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 9212 (context)
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 let c0 = importAllResult;
 let context = importAllResult.createContext(null);
@@ -18,7 +18,7 @@ export const useCollectiblesAnalyticsContext = function useCollectiblesAnalytics
 };
 export const CollectiblesAnalyticsProvider = function CollectiblesAnalyticsProvider(children) {
   const newValue = children.newValue;
-  let context;
+  context = undefined;
   context = newValue.useContext(context);
   const items = [context, newValue];
   return context(context.Provider, {

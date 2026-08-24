@@ -1,12 +1,14 @@
-// Module ID: 13768
-// Function ID: 13769
+// Module ID: 13826
+// Function ID: 13827
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 13768 (enforcing)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 13826 (enforcing)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeSystraceModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeSystraceModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeSystraceModule.tsx");
 
 export default enforcing;

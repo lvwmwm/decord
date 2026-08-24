@@ -4,9 +4,11 @@
 // Dependencies: [4, 594, 2]
 
 // Module 593 (logger)
-import set from "set";
+import log from "log" /* 4 */;
+import addAll from "add" /* 594 */;
+import set from "set" /* 2 */;
 
-const logger = new require("log").Logger("Flux");
+const logger = new log.Logger("Flux");
 function batchEmitChanges(arg0) {
   return arg0();
 }
@@ -26,12 +28,12 @@ prototype["destroy"] = function destroy() {
   changedStores.clear();
   const reactChangedStores = this.reactChangedStores;
   reactChangedStores.clear();
-  function batchEmitChanges(arg0) {
+  batchEmitChanges = function batchEmitChanges(arg0) {
     return arg0();
-  }
+  };
 };
 prototype["injectBatchEmitChanges"] = function injectBatchEmitChanges(batchUpdates) {
-  let closure_3 = batchUpdates;
+  closure_3 = batchUpdates;
 };
 prototype["pause"] = function pause() {
   let self = this;
@@ -112,7 +114,7 @@ prototype["emit"] = function emit() {
             let tmp33 = set1;
             let emitNonReactOnceResult = self.emitNonReactOnce(set, tmp11);
           }
-          outer1_2.error("LastFewActions", self(outer1_1[1]).serialize());
+          closure_1_2.error("LastFewActions", self(closure_1_1[1]).serialize());
           const _Error2 = Error;
           throw Error("change emit loop detected, aborting");
         }
@@ -124,7 +126,7 @@ prototype["emit"] = function emit() {
             tmp2 = self;
             let emitReactOnceResult = self.emitReactOnce();
           }
-          outer1_2.error("LastFewActions", self(outer1_1[1]).serialize());
+          closure_1_2.error("LastFewActions", self(closure_1_1[1]).serialize());
           const _Error = Error;
           throw Error("react change emit loop detected, aborting");
         }
@@ -162,8 +164,8 @@ prototype["markChanged"] = function markChanged(_changeCallbacks) {
 };
 prototype["emitNonReactOnce"] = function emitNonReactOnce(arg0, arg1) {
   const self = this;
-  const dependencyMap = arg0;
-  const importAll = arg1;
+  dependencyMap = arg0;
+  importAll = arg1;
   const timestamp = Date.now();
   let changedStores = this.changedStores;
   this.changedStores = new Set();
@@ -176,8 +178,6 @@ prototype["emitNonReactOnce"] = function emitNonReactOnce(arg0, arg1) {
   const item1 = changedStores.forEach((_syncWiths) => {
     _syncWiths = _syncWiths._syncWiths;
     const item = _syncWiths.forEach((arg0) => {
-      let func;
-      let store;
       ({ func, store } = arg0);
       if (!set2.has(func)) {
         set2.add(func);
@@ -195,8 +195,8 @@ prototype["emitNonReactOnce"] = function emitNonReactOnce(arg0, arg1) {
   if (timestamp1 - timestamp > 100) {
     const _HermesInternal = HermesInternal;
     const combined = "Slow batch emitChanges took " + timestamp1 - timestamp + "ms recentActions:";
-    self.verbose(combined, importAll(594).serialize());
-    const obj = importAll(594);
+    self.verbose(combined, addAll.serialize());
+    const obj = addAll;
   }
 };
 prototype["emitReactOnce"] = function emitReactOnce() {

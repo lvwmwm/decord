@@ -1,72 +1,71 @@
-// Module ID: 11356
-// Function ID: 11357
+// Module ID: 11407
+// Function ID: 11408
 // Name: MentionableIcon
-// Dependencies: [32, 19, 4662, 1983, 1922, 505, 21, 4661, 712, 589, 11357, 9923, 11358, 1297, 11359, 11360, 11354, 4342, 11358, 2007, 2]
+// Dependencies: [32, 19, 4669, 1984, 1922, 505, 21, 4668, 712, 589, 11408, 9962, 11409, 1297, 11410, 11411, 11405, 4346, 11409, 2008, 2]
 // Exports: default
 
-// Module 11356 (MentionableIcon)
-import _slicedToArray from "_slicedToArray";
-import asyncRequireImpl from "asyncRequireImpl";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { StatusTypes } from "sum";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11407 (MentionableIcon)
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import UserCircleIcon from "UserCircleIcon" /* 9962 */;
+import stylesDefault from "styles" /* 11408 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { StatusTypes } from "sum" /* 505 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 function MentionableIcon(mentionable) {
   mentionable = mentionable.mentionable;
-  let obj = require(589) /* initialize */;
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  let obj = initialize;
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   obj = { icon: null, wrapperStyle: null };
-  const tmp = createCacheKey();
-  obj[0] = jsx(require(9923) /* UserCircleIcon */.UserCircleIcon, { size: "sm", color: "interactive-text-default" });
+  const tmp = callback2();
+  obj[0] = jsx(UserCircleIcon.UserCircleIcon, { size: "sm", color: "interactive-text-default" });
   obj[1] = tmp.iconWrapper;
-  const tmp7 = jsx(importDefault(11357), { icon: null, wrapperStyle: null });
+  const tmp7 = jsx(stylesDefault, { icon: null, wrapperStyle: null });
   if (null == mentionable) {
     return tmp7;
   } else {
     const type = mentionable.type;
-    if (tmp2(11358).MentionableItemTypes.USER === type) {
+    if (tmp2(11409).MentionableItemTypes.USER === type) {
       obj = { user: null, guildId: null, animate: null, size: null };
       obj[0] = mentionable.result.user;
       obj[1] = mentionable.guildId;
       obj[2] = !stateFromStores;
       obj[3] = tmp2(1297).AvatarSizes.REFRESH_MEDIUM_32;
       return tmp5(tmp2(1297).Avatar, obj);
-    } else if (tmp2(11358).MentionableItemTypes.ROLE === type) {
-      const obj1 = { role: null };
+    } else if (tmp2(11409).MentionableItemTypes.ROLE === type) {
+      obj1 = { role: null };
       obj1[0] = mentionable.result;
-      return tmp5(tmp2(11359).RoleIcon, obj1);
+      return tmp5(tmp2(11410).RoleIcon, obj1);
     } else {
-      const GLOBAL = tmp2(11358).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp2(11409).MentionableItemTypes.GLOBAL;
       return tmp7;
     }
   }
-  const tmp6 = importDefault(11357);
+  const tmp6 = stylesDefault;
 }
 createCacheKey = { iconWrapper: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/app_launcher/native/options/mentionable/AppLauncherMentionableOption.tsx");
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/options/mentionable/AppLauncherMentionableOption.tsx");
 
 export default function AppLauncherMentionableOption(option) {
-  let autoFocus;
-  let channel;
-  let _slicedToArray;
-  let hasError;
-  let style;
   option = option.option;
   const initialValue = option.initialValue;
   const onMentionablePress = option.onMentionablePress;
-  ({ onActionSheetDismiss: _slicedToArray, channel } = option);
+  ({ onActionSheetDismiss: closure_3, channel } = option);
   const onPress = option.onPress;
   let guild_id;
   let first;
-  let closure_8;
+  closure_8 = undefined;
   guild_id = channel.guild_id;
   ({ style, autoFocus, hasError } = option);
   let tmp = callback(channel.useState(() => {
@@ -91,7 +90,7 @@ export default function AppLauncherMentionableOption(option) {
           return obj;
         }
       } else if ("textMention" === tmp.type) {
-        const obj1 = { type: null, result: null };
+        obj1 = { type: null, result: null };
         obj1[0] = option(onMentionablePress[12]).MentionableItemTypes.GLOBAL;
         ({ text: obj5[0], text: obj5[1] } = tmp);
         obj1[1] = { text: null, test: null, description: "" };
@@ -122,7 +121,7 @@ export default function AppLauncherMentionableOption(option) {
         const obj = { guildId: null, user: null };
         obj[0] = guild_id;
         obj[1] = tmp.result.user;
-        return outer1_9(initialValue(tmp6[15]), obj);
+        return closure_1_9(initialValue(tmp6[15]), obj);
       } else if (tmp5(tmp6[12]).MentionableItemTypes.ROLE === type) {
         return tmp.result.name;
       } else if (tmp5(tmp6[12]).MentionableItemTypes.GLOBAL === type) {
@@ -150,7 +149,7 @@ export default function AppLauncherMentionableOption(option) {
         callback2(mentionable);
         callback({ mentionable });
       },
-      onActionSheetDismiss: _slicedToArray
+      onActionSheetDismiss: closure_3
     };
     obj.openLazy(option(onMentionablePress[19])(onMentionablePress[18], onMentionablePress.paths), option(onMentionablePress[12]).APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY, obj);
   };

@@ -1,11 +1,13 @@
-// Module ID: 7569
-// Function ID: 7570
+// Module ID: 7607
+// Function ID: 7608
 // Name: replaceAnimationColors
-// Dependencies: [4223, 12, 2]
+// Dependencies: [4227, 12, 2]
 // Exports: replaceAnimationColors
 
-// Module 7569 (replaceAnimationColors)
-import apply from "apply";
+// Module 7607 (replaceAnimationColors)
+import set from "set" /* 2 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
+import apply from "apply" /* 12 */;
 
 const memoizeResult = apply.memoize((str) => {
   let length;
@@ -22,13 +24,13 @@ const memoizeResult = apply.memoize((str) => {
   }
   return Math.abs(num3);
 });
-const result = require("set").fileFinishedImporting("modules/messages/BurstReactionEffectUtils.tsx");
+const result = set.fileFinishedImporting("modules/messages/BurstReactionEffectUtils.tsx");
 
 export const replaceAnimationColors = function replaceAnimationColors(c5, arg1) {
   const items = [, , ];
   ({ r: arr[0], g: arr[1], b: arr[2] } = arg1);
-  const complimentaryPaletteForColor = require(4223) /* hexToRgba */.getComplimentaryPaletteForColor(items, 2);
-  const obj = require(4223) /* hexToRgba */;
+  const complimentaryPaletteForColor = hexToRgba.getComplimentaryPaletteForColor(items, 2);
+  const obj = hexToRgba;
   return c5.replace(/(\[1,0,0,)/g, "[" + complimentaryPaletteForColor[0][0] / 255 + "," + complimentaryPaletteForColor[0][1] / 255 + "," + complimentaryPaletteForColor[0][2] / 255 + ",").replace(/\[0,0,1,/g, "[" + complimentaryPaletteForColor[1][0] / 255 + "," + complimentaryPaletteForColor[1][1] / 255 + "," + complimentaryPaletteForColor[1][2] / 255 + ",");
 };
 export const getBurstAnimationHash = memoizeResult;

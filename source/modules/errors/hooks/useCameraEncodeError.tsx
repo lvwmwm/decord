@@ -1,22 +1,22 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 16450
+// Function ID: 16451
 // Name: useCameraEncodeError
-// Dependencies: [1218, 12440, 589, 9668, 2]
+// Dependencies: [1218, 12492, 589, 9707, 2]
 // Exports: default
 
-// Module 16353 (useCameraEncodeError)
-import fetchFingerprint from "fetchFingerprint";
-import isAVErrorContextOfType from "isAVErrorContextOfType";
+// Module 16450 (useCameraEncodeError)
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "isAVErrorContextOfType" /* 12492 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/errors/hooks/useCameraEncodeError.tsx");
+const result = require("set").fileFinishedImporting("modules/errors/hooks/useCameraEncodeError.tsx");
 
 export default function useCameraEncodeError(arg0) {
   const _require = arg0;
-  const items = [isAVErrorContextOfType, fetchFingerprint];
+  const items = [closure_3, closure_2];
   return _require(589).useStateFromStores(items, () => {
-    if (outer1_2.getId() === callback) {
-      const first = outer1_3.getActiveErrorsOfType(callback(outer1_1[3]).AVError.CAMERA_SEND_LOW_FPS)[0];
+    if (closure_1_2.getId() === callback) {
+      const first = closure_1_3.getActiveErrorsOfType(callback(closure_1_1[3]).AVError.CAMERA_SEND_LOW_FPS)[0];
       let type;
       if (first != null) {
         type = first.type;

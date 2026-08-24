@@ -1,14 +1,19 @@
-// Module ID: 12797
-// Function ID: 12798
+// Module ID: 12852
+// Function ID: 12853
 // Name: createSafetySystemNotificationEmbed
-// Dependencies: [17, 676, 3975, 8079, 6839, 5437, 8171, 1236, 2]
+// Dependencies: [17, 676, 3978, 8118, 6877, 5442, 8210, 1236, 2]
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 12797 (createSafetySystemNotificationEmbed)
-import { Image } from "get ActivityIndicator";
-import { MessageEmbedTypes } from "ME";
+// Module 12852 (createSafetySystemNotificationEmbed)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import tDefault from "t" /* 3978 */;
+import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 5442 */;
 
-const result = require("t").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/SafetySystemNotificationEmbed.tsx");
+const Image = get_ActivityIndicator.Image;
+const MessageEmbedTypes = ME.MessageEmbedTypes;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/SafetySystemNotificationEmbed.tsx");
 
 export const createSafetySystemNotificationEmbed = function createSafetySystemNotificationEmbed(message) {
   if (null != message) {
@@ -25,7 +30,7 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
           type = first1.type;
         }
         if (type === MessageEmbedTypes.SAFETY_SYSTEM_NOTIFICATION) {
-          let obj = require(5437) /* parseMessageEmbedForProps */;
+          let obj = parseMessageEmbedForProps;
           const parseMessageForPropsResult = obj.parseMessageForProps(message);
           if (null != parseMessageForPropsResult) {
             let tmp9;
@@ -33,12 +38,12 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             if (null != parseMessageForPropsResult.ctas) {
               let mapCtaToNativeDataResult;
               if (null != parseMessageForPropsResult.ctas[0]) {
-                let tmp6Result = tmp6(5437);
+                let tmp6Result = tmp6(5442);
                 mapCtaToNativeDataResult = tmp6Result.mapCtaToNativeData(parseMessageForPropsResult.ctas[0], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
               }
               let mapCtaToNativeDataResult1;
               if (null != parseMessageForPropsResult.ctas[1]) {
-                tmp6Result = tmp6(5437);
+                tmp6Result = tmp6(5442);
                 mapCtaToNativeDataResult1 = tmp6Result.mapCtaToNativeData(parseMessageForPropsResult.ctas[1], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
               }
               tmp9 = mapCtaToNativeDataResult1;
@@ -50,16 +55,16 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             }
             obj = { titleText: null, titleIcon: null, subtitleText: null, descriptionText: null, primaryCtaText: null, primaryCtaType: null, primaryCtaKey: null, secondaryCtaText: null, secondaryCtaType: null, secondaryCtaKey: null, footerTheme: null };
             obj[0] = str;
-            obj[1] = tmp6(8171).getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 8079 : 6839)));
+            obj[1] = tmp6(8210).getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 8118 : 6877)));
             const intl = tmp6(1236).intl;
             let num = parseMessageForPropsResult.timestamp;
             if (num == null) {
               num = 0;
             }
             obj = { daysAgo: null };
-            const tmp6Result1 = tmp6(8171);
-            const obj7 = importDefault(3975)();
-            obj[0] = obj7.diff(importDefault(3975).unix(num), "days");
+            const tmp6Result1 = tmp6(8210);
+            const obj7 = tDefault();
+            obj[0] = obj7.diff(tDefault.unix(num), "days");
             obj[2] = intl.formatToPlainString(tmp6(1236).t.eevFb6, obj);
             let str4 = parseMessageForPropsResult.body;
             if (str4 == null) {

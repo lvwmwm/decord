@@ -1,26 +1,30 @@
-// Module ID: 11239
-// Function ID: 11240
+// Module ID: 11290
+// Function ID: 11291
 // Name: AppsBaner
-// Dependencies: [19, 17, 21, 4661, 11240, 11237, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 11291, 11288, 1236, 2]
 // Exports: default
 
-// Module 11239 (AppsBaner)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11290 (AppsBaner)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import BannerBaseDefault from "BannerBase" /* 11288 */;
+import SvgComponentDefault from "SvgComponent" /* 11291 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_5 = createCacheKey.createStyles({ rocketIconContainer: { position: "absolute", top: -20 }, rocketIcon: { width: 90, height: 90 } });
-const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppsBanner.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppsBanner.tsx");
 
 export default function AppsBaner() {
   const tmp = callback();
-  obj = { style: tmp.rocketIconContainer, children: jsx(importDefault(11240), obj) };
+  obj = { style: tmp.rocketIconContainer, children: jsx(SvgComponentDefault, obj) };
   obj = { style: tmp.rocketIcon };
   obj = { image: <View style={tmp.rocketIcon} />, text: null };
   const tmp2 = <View image={<View style={tmp.rocketIcon} />} text={null} />;
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.sjRwMJ);
-  return jsx(importDefault(11237), { image: <View style={tmp.rocketIcon} />, text: null });
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t.sjRwMJ);
+  return jsx(BannerBaseDefault, { image: <View style={tmp.rocketIcon} />, text: null });
 };

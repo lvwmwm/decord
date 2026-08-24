@@ -4,18 +4,19 @@
 // Dependencies: [17, 1480]
 
 // Module 1479 (get ActivityIndicator)
-import { NativeEventEmitter } from "get ActivityIndicator";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const NativeEventEmitter = get_ActivityIndicator.NativeEventEmitter;
 if (require("get ActivityIndicator")) {
   let c3 = null;
   const _Object = Object;
   const obj = {};
   Object.defineProperty(obj, "eventEmitter", {
     get: () => {
-        let tmp = c3;
-        if (!c3) {
+        let tmp = closure_3;
+        if (!closure_3) {
           const tmp7 = new NativeEventEmitter(importDefault(1480));
-          c3 = tmp7;
+          closure_3 = tmp7;
           tmp = tmp7;
         }
         return tmp;

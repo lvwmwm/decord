@@ -1,14 +1,15 @@
-// Module ID: 15312
-// Function ID: 15313
+// Module ID: 15376
+// Function ID: 15377
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 15312 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 15376 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null, 2: { list: "flash", recycleItems: false }, 3: { list: "legend", recycleItems: false } };
 obj[3] = { list: "legend", recycleItems: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-06-messages-list-impl", defaultConfig: { list: "fastest", recycleItems: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesListImplExperiment.tsx");
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesListImplExperiment.tsx");
 
 export default apexExperiment;

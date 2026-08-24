@@ -1,16 +1,19 @@
-// Module ID: 16557
-// Function ID: 16558
+// Module ID: 16652
+// Function ID: 16653
 // Name: trackEvent
 // Dependencies: [676, 698, 2]
 // Exports: trackEvent
 
-// Module 16557 (trackEvent)
-import { AnalyticEvents } from "ME";
+// Module 16652 (trackEvent)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 
-const result = require("set").fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellUtils.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellUtils.tsx");
 
 export const trackEvent = function trackEvent(MODAL_DISABLED_DMS, guildId) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { action: MODAL_DISABLED_DMS, guild_id: guildId };
   obj.track(AnalyticEvents.DM_SETTINGS_UPSELL_ACTION, obj);
 };

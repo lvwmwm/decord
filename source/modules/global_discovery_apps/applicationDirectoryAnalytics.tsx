@@ -1,18 +1,19 @@
-// Module ID: 7445
-// Function ID: 7446
+// Module ID: 7483
+// Function ID: 7484
 // Name: trackAppDirectoryProfileEmbed
-// Dependencies: [1979, 4197, 676, 698, 2]
+// Dependencies: [1980, 4201, 676, 698, 2]
 // Exports: trackAppDirectoryProfileEmbed
 
-// Module 7445 (trackAppDirectoryProfileEmbed)
-import handleConnectionOpen from "handleConnectionOpen";
-import closure_3 from "handleConnectionOpen";
-import { AnalyticEvents } from "ME";
+// Module 7483 (trackAppDirectoryProfileEmbed)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import closure_2 from "handleConnectionOpen" /* 1980 */;
+import closure_3 from "handleConnectionOpen" /* 4201 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const result = require("ME").fileFinishedImporting("modules/global_discovery_apps/applicationDirectoryAnalytics.tsx");
+const result = require("set").fileFinishedImporting("modules/global_discovery_apps/applicationDirectoryAnalytics.tsx");
 
 export const trackAppDirectoryProfileEmbed = function trackAppDirectoryProfileEmbed(applicationId, storefront) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { application_id: applicationId, device_platform: "mobile_native", guild_id: guildId.getGuildId(), channel_id: channelId.getChannelId(), section: storefront };
   obj.track(AnalyticEvents.APP_DIRECTORY_PROFILE_EMBED_SENT, obj);
 };

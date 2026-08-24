@@ -1,27 +1,27 @@
-// Module ID: 12662
-// Function ID: 12663
+// Module ID: 12716
+// Function ID: 12717
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4021, 676, 21, 4661, 12535, 589, 1236, 1892, 4975, 4745, 2]
+// Dependencies: [19, 17, 4024, 676, 21, 4668, 12589, 589, 1236, 1892, 4980, 4750, 2]
 // Exports: default
 
-// Module 12662 (JoinVoiceChannelButton)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12716 (JoinVoiceChannelButton)
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_9 = createCacheKey.createStyles({ container: { flexDirection: "row" } });
-let result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/voice_calls/native/action_sheet/JoinVoiceChannelButton.tsx");
+let result = require("set").fileFinishedImporting("modules/voice_calls/native/action_sheet/JoinVoiceChannelButton.tsx");
 
 export default function JoinVoiceChannelButton(channel) {
   channel = channel.channel;
   const tmp = callback();
   let obj = channel(589);
-  const items = [getUncachedChannelPermissions];
-  const stateFromStores = obj.useStateFromStores(items, () => !outer1_6.can(outer1_7.CONNECT, channel));
+  const items = [closure_6];
+  const stateFromStores = obj.useStateFromStores(items, () => !closure_1_6.can(closure_1_7.CONNECT, channel));
   const intl = channel(1236).intl;
   let stringResult = intl.string(channel(1236).t.eIi3Om);
   if (tmp3) {
@@ -40,10 +40,10 @@ export default function JoinVoiceChannelButton(channel) {
   obj = { style: items2, children: null };
   items2 = [tmp.container, channel.style];
   callback = React.useCallback(() => {
-    const result = outer1_2(outer1_3[9]).dismissGlobalKeyboard();
-    const obj = outer1_2(outer1_3[9]);
-    const voiceChannel = outer1_1(outer1_3[10]).selectVoiceChannel(channel.id);
+    const result = closure_1_2(closure_1_3[9]).dismissGlobalKeyboard();
+    const obj = closure_1_2(closure_1_3[9]);
+    const voiceChannel = closure_1_1(closure_1_3[10]).selectVoiceChannel(channel.id);
   }, items1);
-  obj[1] = jsx(channel(4745).Button, { disabled: flag, text: stringResult, onPress: callback });
+  obj[1] = jsx(channel(4750).Button, { disabled: flag, text: stringResult, onPress: callback });
   return <View style={items2}>{null}</View>;
 };

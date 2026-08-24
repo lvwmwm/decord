@@ -1,25 +1,27 @@
-// Module ID: 17113
-// Function ID: 17114
+// Module ID: 17207
+// Function ID: 17208
 // Name: externalFingerprint
-// Dependencies: [1218, 4376, 709, 2]
+// Dependencies: [1218, 4380, 709, 2]
 // Exports: default
 
-// Module 17113 (externalFingerprint)
-import fetchFingerprint from "fetchFingerprint";
+// Module 17207 (externalFingerprint)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import keysSorter from "keysSorter" /* 4380 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
 
-const require = arg1;
-const result = require("dispatcher").fileFinishedImporting("modules/auth/externalFingerprint.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/auth/externalFingerprint.tsx");
 
 export default function externalFingerprint(arg0) {
   if (!authenticated.isAuthenticated()) {
-    let obj = require(4376) /* keysSorter */;
-    const fingerprint = obj.parse(require(4376) /* keysSorter */.extract(arg0)).fingerprint;
+    let obj = keysSorter;
+    const fingerprint = obj.parse(keysSorter.extract(arg0)).fingerprint;
     if (null != fingerprint) {
       obj = { type: "FINGERPRINT", fingerprint: null };
       obj[1] = fingerprint;
-      importDefault(709).dispatch(obj);
-      const obj3 = importDefault(709);
+      dispatcherDefault.dispatch(obj);
+      const obj3 = dispatcherDefault;
     }
-    const obj2 = require(4376) /* keysSorter */;
+    const obj2 = keysSorter;
   }
 };

@@ -1,36 +1,39 @@
-// Module ID: 14604
-// Function ID: 14605
+// Module ID: 14672
+// Function ID: 14673
 // Name: toggle
-// Dependencies: [4497, 8198, 4529, 589, 10669, 1236, 9654, 2]
+// Dependencies: [4501, 8238, 4534, 589, 10708, 1236, 9693, 2]
 
-// Module 14604 (toggle)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import { Features } from "DesktopSources";
-import createToggle from "createToggle";
+// Module 14672 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9693 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import { Features } from "DesktopSources" /* 4534 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["/jwMtn"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["/jwMtn"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   usePredicate() {
-    return _detectH265HardwareDecode.supports(Features.SIDECHAIN_COMPRESSION);
+    return closure_3.supports(Features.SIDECHAIN_COMPRESSION);
   },
   useValue: function useSidechainCompressionSettingValue() {
-    const items = [_detectH265HardwareDecode];
-    return require(589) /* initialize */.useStateFromStores(items, () => sidechainCompression.getSidechainCompression());
+    const items = [closure_3];
+    return initialize.useStateFromStores(items, () => sidechainCompression.getSidechainCompression());
   },
   onValueChange(arg0) {
-    return importDefault(9654).setSidechainCompression(arg0);
+    return trackDeviceChangedDefault.setSidechainCompression(arg0);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.zlA23F);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.zlA23F);
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("DesktopSources").fileFinishedImporting("modules/user_settings/defs/native/SidechainCompressionSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/SidechainCompressionSetting.tsx");
 
 export default createToggle;

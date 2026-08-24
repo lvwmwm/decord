@@ -4,7 +4,9 @@
 // Dependencies: [525, 516, 517]
 
 // Module 524 (v4)
-const require = arg1;
+import unsafeStringify from "unsafeStringify" /* 517 */;
+
+require = arg1;
 const module = arg2;
 const dependencyMap = arg6;
 arg5.default = function v4(arg0, arg1, arg2) {
@@ -38,6 +40,6 @@ arg5.default = function v4(arg0, arg1, arg2) {
     } while (num4 < 16);
     return arg1;
   } else {
-    return require(517) /* unsafeStringify */.unsafeStringify(random);
+    return unsafeStringify.unsafeStringify(random);
   }
 };

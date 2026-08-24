@@ -4,12 +4,20 @@
 // Dependencies: [1687, 1795, 1796, 1819, 1794, 1753, 1688]
 
 // Module 1686 (FlatList)
+import ReanimatedFlatList from "ReanimatedFlatList" /* 1687 */;
+import createAnimatedComponent from "createAnimatedComponent" /* 1688 */;
+import configureProps from "configureProps" /* 1753 */;
+import AnimatedView from "AnimatedView" /* 1794 */;
+import AnimatedImage from "AnimatedImage" /* 1795 */;
+import AnimatedScrollView from "AnimatedScrollView" /* 1796 */;
+import AnimatedText from "AnimatedText" /* 1819 */;
 
-export const FlatList = require("ReanimatedFlatList").ReanimatedFlatList;
-export const Image = require("AnimatedImage").AnimatedImage;
-export const ScrollView = require("AnimatedScrollView").AnimatedScrollView;
-export const Text = require("AnimatedText").AnimatedText;
-export const View = require("AnimatedView").AnimatedView;
-export const addWhitelistedNativeProps = require("configureProps").addWhitelistedNativeProps;
-export const addWhitelistedUIProps = require("configureProps").addWhitelistedUIProps;
-export const createAnimatedComponent = require("createAnimatedComponent").createAnimatedComponent;
+
+export const FlatList = ReanimatedFlatList.ReanimatedFlatList;
+export const Image = AnimatedImage.AnimatedImage;
+export const ScrollView = AnimatedScrollView.AnimatedScrollView;
+export const Text = AnimatedText.AnimatedText;
+export const View = AnimatedView.AnimatedView;
+export const addWhitelistedNativeProps = configureProps.addWhitelistedNativeProps;
+export const addWhitelistedUIProps = configureProps.addWhitelistedUIProps;
+export const createAnimatedComponent = createAnimatedComponent.createAnimatedComponent;

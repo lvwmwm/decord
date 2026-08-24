@@ -4,5 +4,7 @@
 // Dependencies: [92]
 
 // Module 238 (_isNativeReflectConstruct)
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 92 */;
 
-export { default } from "_isNativeReflectConstruct";
+
+export default _isNativeReflectConstructDefault;

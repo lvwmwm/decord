@@ -4,16 +4,15 @@
 // Dependencies: [109, 41, 42, 93, 95, 98, 19, 21, 397, 292, 273, 364, 148]
 
 // Module 429 (_isNativeReflectConstruct)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
-import importDefaultResult1 from "_inherits";
-import jsxProd from "jsxProd";
+import noopAll from "noop" /* 19 */;
+import closure_3 from "_objectWithoutProperties" /* 109 */;
+import closure_4 from "_classCallCheck" /* 41 */;
+import closure_5 from "_possibleConstructorReturn" /* 93 */;
+import closure_6 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import importDefaultResult1 from "_inherits" /* 98 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let error;
-let metroImportAll;
 const TouchableOpacity = importDefault;
 function _isNativeReflectConstruct() {
   try {
@@ -26,25 +25,25 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
 let closure_2 = ["onBlur", "onFocus"];
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 class TouchableOpacity {
   constructor() {
     self = this;
     items = [...arguments];
-    tmp = _isNativeReflectConstruct(this, TouchableOpacity);
+    tmp = closure_4(this, TouchableOpacity);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(TouchableOpacity);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_6;
+    obj = closure_6(TouchableOpacity);
+    tmp3 = closure_5;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -63,7 +62,7 @@ class TouchableOpacity {
     return tmp3Result;
   }
 }
-importDefaultResult1(TouchableOpacity, require("noop").Component);
+importDefaultResult1(TouchableOpacity, noopAll.Component);
 let items = [
   {
     key: "_createPressabilityConfig",
@@ -90,7 +89,7 @@ let items = [
       obj[5] = self.props.delayPressOut;
       obj[7] = self.props.pressRetentionOffset;
       obj[8] = function onBlur(arg0) {
-        if (self(outer1_1[10]).isTV) {
+        if (self(closure_1_1[10]).isTV) {
           self._opacityInactive(250);
         }
         if (null != self.props.onBlur) {
@@ -99,7 +98,7 @@ let items = [
         }
       };
       obj[9] = function onFocus(arg0) {
-        if (self(outer1_1[10]).isTV) {
+        if (self(closure_1_1[10]).isTV) {
           self._opacityActive(150);
         }
         if (null != self.props.onFocus) {
@@ -134,8 +133,7 @@ let items = [
     key: "_setOpacityTo",
     value: function _setOpacityTo(toValue, duration) {
       let obj = TouchableOpacity(397);
-      obj = { toValue, duration, easing: null, useNativeDriver: true };
-      obj[2] = TouchableOpacity(364).inOut(TouchableOpacity(364).quad);
+      obj = { toValue, duration, easing: TouchableOpacity(364).inOut(TouchableOpacity(364).quad), useNativeDriver: true };
       const obj3 = TouchableOpacity(364);
       obj.timing(this.state.anim, obj).start();
     }
@@ -174,8 +172,6 @@ let items = [
   {
     key: "render",
     value: function render() {
-      let onBlur;
-      let onFocus;
       const self = this;
       const pressability = this.state.pressability;
       const eventHandlers = pressability.getEventHandlers();
@@ -289,7 +285,7 @@ let items = [
       if (accessibilityLabel == null) {
         accessibilityLabel = self.props.accessibilityLabel;
       }
-      const obj1 = { accessible: false !== self.props.accessible, accessibilityLabel, accessibilityHint: self.props.accessibilityHint, accessibilityLanguage: self.props.accessibilityLanguage, accessibilityRole: self.props.accessibilityRole, accessibilityState: tmp8, accessibilityActions: self.props.accessibilityActions, onAccessibilityAction: self.props.onAccessibilityAction, accessibilityValue: obj, importantForAccessibility: null, accessibilityViewIsModal: null, accessibilityLiveRegion: null, accessibilityElementsHidden: null, style: null, nativeID: null, testID: null, onLayout: null, nextFocusDown: null, nextFocusForward: null, nextFocusLeft: null, nextFocusRight: null, nextFocusUp: null, hasTVPreferredFocus: null, hitSlop: null, focusable: null, ref: null };
+      obj1 = { accessible: false !== self.props.accessible, accessibilityLabel, accessibilityHint: self.props.accessibilityHint, accessibilityLanguage: self.props.accessibilityLanguage, accessibilityRole: self.props.accessibilityRole, accessibilityState: tmp8, accessibilityActions: self.props.accessibilityActions, onAccessibilityAction: self.props.onAccessibilityAction, accessibilityValue: obj, importantForAccessibility: null, accessibilityViewIsModal: null, accessibilityLiveRegion: null, accessibilityElementsHidden: null, style: null, nativeID: null, testID: null, onLayout: null, nextFocusDown: null, nextFocusForward: null, nextFocusLeft: null, nextFocusRight: null, nextFocusUp: null, hasTVPreferredFocus: null, hitSlop: null, focusable: null, ref: null };
       let str2 = "no-hide-descendants";
       if (true !== self.props["aria-hidden"]) {
         str2 = self.props.importantForAccessibility;
@@ -379,7 +375,7 @@ class Touchable {
     obj = {};
     merged = Object.assign(Object.assign(global, Object.create(null)));
     obj.hostRef = global.ref;
-    return jsx(_createPressabilityConfig, obj);
+    return jsx(closure_10, obj);
   }
 }
 Touchable.displayName = "TouchableOpacity";

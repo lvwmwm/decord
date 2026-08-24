@@ -1,15 +1,14 @@
-// Module ID: 12288
-// Function ID: 12289
+// Module ID: 12340
+// Function ID: 12341
 // Name: updateApplicationConfigs
 // Dependencies: [32, 589, 709, 2]
 
-// Module 12288 (updateApplicationConfigs)
-import _slicedToArray from "_slicedToArray";
-import { Store } from "initialize";
+// Module 12340 (updateApplicationConfigs)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "_slicedToArray" /* 32 */;
 
 function updateApplicationConfigs(configs) {
-  let _slicedToArray;
-  let obj;
   if (0 !== Object.keys(configs).length) {
     const _Object3 = Object;
     function _loop() {
@@ -29,7 +28,7 @@ function updateApplicationConfigs(configs) {
     while (tmp17 !== undefined) {
       let tmp4 = callback;
       let tmp5 = callback(tmp2, 2);
-      [_slicedToArray, obj] = tmp5;
+      [closure_0, obj] = tmp5;
       let _loopResult = _loop();
       continue;
     }
@@ -47,12 +46,12 @@ function updateApplicationConfigs(configs) {
   }
 }
 function handleLogout() {
-  let closure_3 = {};
-  let closure_4 = {};
-  let NOT_FETCHED = obj.NOT_FETCHED;
-  let closure_6 = [];
+  closure_3 = {};
+  closure_4 = {};
   NOT_FETCHED = obj.NOT_FETCHED;
-  let closure_8 = [];
+  closure_6 = [];
+  NOT_FETCHED = obj.NOT_FETCHED;
+  closure_8 = [];
 }
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", SUCCESS: "SUCCESS", FAILURE: "FAILURE" };
 let closure_2 = [];
@@ -62,6 +61,7 @@ let NOT_FETCHED = obj.NOT_FETCHED;
 let closure_6 = [];
 NOT_FETCHED = obj.NOT_FETCHED;
 let closure_8 = [];
+const Store = initializeDefault.Store;
 class ApplicationWidgetConfigStoreClass extends Store {
 }
 const prototype = ApplicationWidgetConfigStoreClass.prototype;
@@ -80,7 +80,7 @@ prototype["getConfigs"] = function getConfigs(arg0) {
   return tmp;
 };
 prototype["getFetchState"] = function getFetchState(arg0) {
-  let NOT_FETCHED = table[arg0];
+  NOT_FETCHED = table[arg0];
   if (NOT_FETCHED == null) {
     NOT_FETCHED = obj.NOT_FETCHED;
   }
@@ -110,7 +110,7 @@ obj = {
   },
   APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS: function handleFeaturedFetchSuccess(configs) {
     const SUCCESS = obj.SUCCESS;
-    let closure_6 = Object.keys(configs.configs);
+    closure_6 = Object.keys(configs.configs);
     updateApplicationConfigs(configs.configs);
   },
   APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_FAILURE: function handleFeaturedFetchFailure() {
@@ -121,14 +121,14 @@ obj = {
   },
   APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_SUCCESS: function handleDeveloperFetchSuccess(configs) {
     const SUCCESS = obj.SUCCESS;
-    let closure_8 = Object.keys(configs.configs);
+    closure_8 = Object.keys(configs.configs);
     updateApplicationConfigs(configs.configs);
   },
   APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_FAILURE: function handleDeveloperFetchFailure() {
     const FAILURE = obj.FAILURE;
   },
   APPLICATION_WIDGET_CONFIG_FETCH_START: function handleFetchStart(applicationId) {
-    const obj = {};
+    obj = {};
     const merged = Object.assign(obj);
     obj[applicationId.applicationId] = obj.FETCHING;
   },
@@ -136,13 +136,13 @@ obj = {
     updateApplicationConfigs({ [configs.applicationId]: configs.configs });
   },
   APPLICATION_WIDGET_CONFIG_FETCH_FAILURE: function handleFetchFailure(applicationId) {
-    const obj = {};
+    obj = {};
     const merged = Object.assign(obj);
     obj[applicationId.applicationId] = obj.FAILURE;
   }
 };
-const applicationWidgetConfigStoreClass = new ApplicationWidgetConfigStoreClass(require("dispatcher"), obj);
-const result = require("dispatcher").fileFinishedImporting("modules/application_widget/ApplicationWidgetConfigStore.tsx");
+const applicationWidgetConfigStoreClass = new ApplicationWidgetConfigStoreClass(dispatcherDefault, obj);
+const result = require("set").fileFinishedImporting("modules/application_widget/ApplicationWidgetConfigStore.tsx");
 
 export default applicationWidgetConfigStoreClass;
 export const FetchState = obj;

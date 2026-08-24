@@ -1,29 +1,31 @@
-// Module ID: 15212
-// Function ID: 15213
+// Module ID: 15276
+// Function ID: 15277
 // Name: useRegistrationUIStore
 // Dependencies: [644, 705, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 15212 (useRegistrationUIStore)
-import keys from "keys";
+// Module 15276 (useRegistrationUIStore)
+import set from "set" /* 2 */;
+import batchUpdates from "batchUpdates" /* 705 */;
+import keys from "keys" /* 644 */;
 
-let obj = keys.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "accessibilityRole" }));
-const result = require("set").fileFinishedImporting("modules/auth/native/RegistrationUIStore.tsx");
+let obj = keys.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "accessibilityLabel" }));
+const result = set.fileFinishedImporting("modules/auth/native/RegistrationUIStore.tsx");
 
 export const useRegistrationUIStore = obj;
 export const setRegistrationErrors = function setRegistrationErrors(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => {
-    outer1_2.setState({ errors: closure_0 });
+    closure_1_2.setState({ errors: closure_0 });
   });
 };
 export const clearRegistrationErrorMessage = function clearRegistrationErrorMessage() {
-  let obj = {};
+  obj = {};
   const merged = Object.assign(obj.getState().errors);
   delete tmp2[tmp];
   obj(705).batchUpdates(() => {
     obj = { errors: obj };
-    outer1_2.setState(obj);
+    closure_1_2.setState(obj);
   });
 };
 export const updateRegistrationOptions = function updateRegistrationOptions(arg0) {
@@ -31,23 +33,23 @@ export const updateRegistrationOptions = function updateRegistrationOptions(arg0
   const registrationOptions = obj.getState().registrationOptions;
   obj = _require(registrationOptions[1]);
   obj.batchUpdates(() => {
-    let obj = { registrationOptions: null };
+    obj = { registrationOptions: null };
     obj = {};
     const merged = Object.assign(registrationOptions);
     const merged1 = Object.assign(closure_0);
     obj[0] = obj;
-    outer1_2.setState(obj);
+    closure_1_2.setState(obj);
   });
 };
 export const resetRegistration = function resetRegistration() {
-  require(705) /* batchUpdates */.batchUpdates(() => {
+  batchUpdates.batchUpdates(() => {
     state.setState({ errors: {}, registrationOptions: {}, submitting: false });
   });
 };
 export const setSubmitting = function setSubmitting(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => {
-    outer1_2.setState({ errors: {}, submitting: closure_0 });
+    closure_1_2.setState({ errors: {}, submitting: closure_0 });
   });
 };
 export const doesRegistrationHaveIdentityType = function doesRegistrationHaveIdentityType() {

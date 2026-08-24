@@ -1,43 +1,41 @@
-// Module ID: 15151
-// Function ID: 15152
+// Module ID: 15215
+// Function ID: 15216
 // Name: OrbCheckoutMenu
-// Dependencies: [32, 19, 21, 4661, 5260, 11985, 2007, 4094, 6292, 4734, 8071, 4745, 2]
+// Dependencies: [32, 19, 21, 4668, 5265, 12034, 2008, 4097, 6323, 4739, 8110, 4750, 2]
 // Exports: default
 
-// Module 15151 (OrbCheckoutMenu)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15215 (OrbCheckoutMenu)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ textInput: { marginBottom: 16 }, title: { marginBottom: 8 } });
-const result = require("jsxProd").fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutMenu.tsx");
+const result = require("set").fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutMenu.tsx");
 
 export default function OrbCheckoutMenu() {
   const tmp = callback4();
   const tmp2 = callback(React.useState("1409898407849365565"), 2);
   const first = tmp2[0];
-  let closure_1 = tmp2[1];
+  closure_1 = tmp2[1];
   const items = [first];
   callback = React.useCallback(() => {
     if (null != first) {
-      let obj = callback(outer1_2[4]);
+      let obj = callback(closure_1_2[4]);
       obj = { skuId: null, analyticsLocations: null, onCheckoutSuccess: null };
       obj[0] = tmp;
       obj[1] = [];
       obj[2] = function onCheckoutSuccess() {
         callback(table[7]).open({ key: "ORB_CHECKOUT_SUCCESS", content: "Successfully redeemed item with Orbs" });
       };
-      obj.pushLazy(first(outer1_2[6])(outer1_2[5], outer1_2.paths), obj);
+      obj.pushLazy(first(closure_1_2[6])(closure_1_2[5], closure_1_2.paths), obj);
     }
   }, items);
   let obj = { children: null };
   obj = { style: tmp.title, variant: "text-md/bold", children: "Redeem SKU for Orbs" };
-  const items1 = [callback2(first(4734).Text, obj), , , ];
+  const items1 = [callback2(first(4739).Text, obj), , , ];
   obj = {
     containerStyle: tmp.textInput,
     label: "SKU ID",
@@ -47,9 +45,9 @@ export default function OrbCheckoutMenu() {
     },
     isClearable: true
   };
-  items1[1] = callback2(first(8071).TextInput, obj);
-  items1[2] = callback2(first(4734).Text, { style: tmp.title, variant: "text-md/bold", children: "Checkout will open with the orb price of the product, if it exists" });
-  items1[3] = callback2(first(4745).Button, { text: "Open Orbs Checkout", variant: "primary", onPress: callback, disabled: null == first });
+  items1[1] = callback2(first(8110).TextInput, obj);
+  items1[2] = callback2(first(4739).Text, { style: tmp.title, variant: "text-md/bold", children: "Checkout will open with the orb price of the product, if it exists" });
+  items1[3] = callback2(first(4750).Button, { text: "Open Orbs Checkout", variant: "primary", onPress: callback, disabled: null == first });
   obj[0] = items1;
-  return callback3(first(6292).Card, obj);
+  return callback3(first(6323).Card, obj);
 };

@@ -1,21 +1,21 @@
-// Module ID: 10573
-// Function ID: 10574
+// Module ID: 10612
+// Function ID: 10613
 // Name: useChannelSafetyWarning
-// Dependencies: [9921, 589, 2]
+// Dependencies: [9960, 589, 2]
 // Exports: useChannelSafetyWarning
 
-// Module 10573 (useChannelSafetyWarning)
-import handleConnectionOpen from "handleConnectionOpen";
+// Module 10612 (useChannelSafetyWarning)
+import closure_2 from "handleConnectionOpen" /* 9960 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/hooks/useChannelSafetyWarning.tsx");
 
 export const useChannelSafetyWarning = function useChannelSafetyWarning(channelId, LIKELY_ATO) {
   const _require = channelId;
-  const dependencyMap = LIKELY_ATO;
-  const items = [handleConnectionOpen];
+  dependencyMap = LIKELY_ATO;
+  const items = [closure_2];
   const items1 = [channelId];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_2.getChannelSafetyWarnings(closure_0), items1);
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_2.getChannelSafetyWarnings(closure_0), items1);
   const found = stateFromStores.filter((type) => type.type === closure_1);
   return found.find((dismiss_timestamp) => {
     let tmp = null == dismiss_timestamp.dismiss_timestamp;

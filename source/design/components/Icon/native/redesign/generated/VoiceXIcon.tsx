@@ -1,26 +1,26 @@
-// Module ID: 12140
-// Function ID: 12141
+// Module ID: 12192
+// Function ID: 12193
 // Name: VoiceXIcon
-// Dependencies: [19, 21, 712, 4096, 12141, 2]
+// Dependencies: [19, 21, 712, 4099, 12193, 2]
 // Exports: VoiceXIcon
 
-// Module 12140 (VoiceXIcon)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 12192 (VoiceXIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import BaseIconImage from "BaseIconImage" /* 4099 */;
+import registerAsset from "registerAsset" /* 12193 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/VoiceXIcon.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Icon/native/redesign/generated/VoiceXIcon.tsx");
 
 export const VoiceXIcon = function VoiceXIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = ThemesDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.create(null));
-  const obj = { source: null, color: null, style: null };
-  obj[0] = require(12141) /* registerAsset */;
-  obj[1] = INTERACTIVE_ICON_DEFAULT;
-  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(BaseIconImage.BaseIconImage, { source: registerAsset, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

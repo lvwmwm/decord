@@ -1,31 +1,31 @@
-// Module ID: 10166
-// Function ID: 10167
+// Module ID: 10205
+// Function ID: 10206
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 10046, 1391, 4825, 4824, 7239, 21, 4661, 712, 1892, 4656, 1236, 7524, 8466, 7139, 589, 10167, 10165, 1498, 1627, 11, 7514, 6318, 10168, 2]
+// Dependencies: [19, 17, 10085, 1391, 4830, 4829, 7277, 21, 4668, 712, 1892, 4662, 1236, 7562, 8505, 7177, 589, 10206, 10204, 1498, 1627, 11, 7552, 6349, 10207, 2]
 // Exports: default
 
-// Module 10166 (ForumComposerModal)
-import "computeEntryState";
-import { View } from "useGetThreadDraftSettings";
-import initialize from "initialize";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleChanged from "handleChanged";
-import { DraftType } from "handleChanged";
-import map from "map";
-import handleLoadThreadsSuccess from "handleLoadThreadsSuccess";
-import { jsx } from "DISCORD_EPOCH";
-import createCacheKey from "createCacheKey";
+// Module 10205 (ForumComposerModal)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "initialize" /* 10085 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "handleChanged" /* 4830 */;
+import { DraftType } from "handleChanged" /* 4830 */;
+import closure_9 from "map" /* 4829 */;
+import closure_10 from "handleLoadThreadsSuccess" /* 7277 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
+noopAll;
 createCacheKey = { container: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("initialize").fileFinishedImporting("modules/forums/native/composer/ForumComposerModal.tsx");
+let closure_12 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/forums/native/composer/ForumComposerModal.tsx");
 
 export default function ForumComposerModal(parentChannelId) {
-  let importAll;
-  let isEdit;
   parentChannelId = parentChannelId.parentChannelId;
   const threadId = parentChannelId.threadId;
   ({ messageId: importAll, isEdit } = parentChannelId);
@@ -38,19 +38,19 @@ export default function ForumComposerModal(parentChannelId) {
       if (arg0) {
         let tmp52Result = tmp52(tmp53[18]);
         let result = tmp52Result.closeCreateForumPostModal();
-        threadId(isEdit[13]).clearDraft(parentChannelId, outer1_8.ThreadSettings);
+        threadId(isEdit[13]).clearDraft(parentChannelId, closure_1_8.ThreadSettings);
         const obj13 = threadId(isEdit[13]);
-        threadId(isEdit[13]).clearDraft(parentChannelId, outer1_8.ChannelMessage);
+        threadId(isEdit[13]).clearDraft(parentChannelId, closure_1_8.ChannelMessage);
         const obj14 = threadId(isEdit[13]);
-        threadId(isEdit[14]).clearAll(parentChannelId, outer1_8.ChannelMessage);
+        threadId(isEdit[14]).clearAll(parentChannelId, closure_1_8.ChannelMessage);
         const obj15 = threadId(isEdit[14]);
       } else {
         tmp52Result = tmp52(tmp53[19]);
         let obj = { type: null };
         obj[0] = parentChannelId(isEdit[20]).KeyboardTypes.SYSTEM;
         tmp52Result.setKeyboardType(obj);
-        const draft = outer1_7.getDraft(parentChannelId, outer1_8.ChannelMessage);
-        let threadSettings = outer1_7.getThreadSettings(parentChannelId);
+        const draft = closure_1_7.getDraft(parentChannelId, closure_1_8.ChannelMessage);
+        let threadSettings = closure_1_7.getThreadSettings(parentChannelId);
         if (threadSettings == null) {
           threadSettings = obj3.getThreadDraftWithParentMessageId(threadId(isEdit[21]).castChannelIdAsMessageId(tmp4));
           const obj4 = threadId(isEdit[21]);
@@ -58,11 +58,11 @@ export default function ForumComposerModal(parentChannelId) {
         if (isEdit) {
           let result1 = parentChannelId(isEdit[18]).closeCreateForumPostModal();
           const obj8 = parentChannelId(isEdit[18]);
-          threadId(isEdit[13]).clearDraft(tmp4, outer1_8.ThreadSettings);
+          threadId(isEdit[13]).clearDraft(tmp4, closure_1_8.ThreadSettings);
           const obj9 = threadId(isEdit[13]);
-          threadId(isEdit[13]).clearDraft(tmp4, outer1_8.ChannelMessage);
+          threadId(isEdit[13]).clearDraft(tmp4, closure_1_8.ChannelMessage);
           const obj10 = threadId(isEdit[13]);
-          threadId(isEdit[14]).clearAll(tmp4, outer1_8.ChannelMessage);
+          threadId(isEdit[14]).clearAll(tmp4, closure_1_8.ChannelMessage);
           const obj11 = threadId(isEdit[14]);
         } else {
           if (draft.length <= 0) {
@@ -76,8 +76,8 @@ export default function ForumComposerModal(parentChannelId) {
               }
             }
           }
-          const result2 = outer1_2(isEdit[10]).dismissGlobalKeyboard();
-          const obj5 = outer1_2(isEdit[10]);
+          const result2 = closure_1_2(isEdit[10]).dismissGlobalKeyboard();
+          const obj5 = closure_1_2(isEdit[10]);
           obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, hideActionSheet: true, isDismissable: true };
           const intl = parentChannelId(isEdit[12]).intl;
           obj[0] = intl.string(parentChannelId(isEdit[12]).t.Fz1512);
@@ -88,46 +88,46 @@ export default function ForumComposerModal(parentChannelId) {
           const intl4 = parentChannelId(isEdit[12]).intl;
           obj[3] = intl4.string(parentChannelId(isEdit[12]).t["3NnH6V"]);
           obj[4] = function onConfirm() {
-            let obj = outer1_0(outer1_3[22]);
+            let obj = closure_1_0(closure_1_3[22]);
             obj = { guildId: closure_4.guild_id, channelId: closure_4.id };
             const result = obj.maybeTrackForumNewPostDraftCreated(obj);
-            const result1 = outer1_0(outer1_3[18]).closeCreateForumPostModal();
+            const result1 = closure_1_0(closure_1_3[18]).closeCreateForumPostModal();
           };
           obj[5] = function onCancel() {
-            const result = outer1_0(outer1_3[18]).closeCreateForumPostModal();
-            const obj = outer1_0(outer1_3[18]);
-            outer1_1(outer1_3[13]).clearDraft(closure_0, outer1_8.ThreadSettings);
-            const obj2 = outer1_1(outer1_3[13]);
-            outer1_1(outer1_3[13]).clearDraft(closure_0, outer1_8.ChannelMessage);
-            const obj3 = outer1_1(outer1_3[13]);
-            outer1_1(outer1_3[14]).clearAll(closure_0, outer1_8.ChannelMessage);
+            const result = closure_1_0(closure_1_3[18]).closeCreateForumPostModal();
+            const obj = closure_1_0(closure_1_3[18]);
+            closure_1_1(closure_1_3[13]).clearDraft(closure_0, closure_1_8.ThreadSettings);
+            const obj2 = closure_1_1(closure_1_3[13]);
+            closure_1_1(closure_1_3[13]).clearDraft(closure_0, closure_1_8.ChannelMessage);
+            const obj3 = closure_1_1(closure_1_3[13]);
+            closure_1_1(closure_1_3[14]).clearAll(closure_0, closure_1_8.ChannelMessage);
           };
           threadId(isEdit[11]).show(obj);
           const obj6 = threadId(isEdit[11]);
         }
-        obj3 = outer1_7;
+        obj3 = closure_1_7;
       }
     }
   }
   let obj = parentChannelId(isEdit[16]);
-  const items = [ensureGuildLoaded];
+  const items = [closure_6];
   const items1 = [parentChannelId];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(parentChannelId), items1);
-  const tmp = createCacheKey();
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getChannel(parentChannelId), items1);
+  const tmp = callback();
   const tmp2 = threadId;
   const tmp4 = parentChannelId;
-  const items2 = [ensureGuildLoaded];
+  const items2 = [closure_6];
   const items3 = [threadId];
-  const stateFromStores1 = parentChannelId(isEdit[16]).useStateFromStores(items2, () => outer1_6.getChannel(threadId), items3);
+  const stateFromStores1 = parentChannelId(isEdit[16]).useStateFromStores(items2, () => closure_1_6.getChannel(threadId), items3);
   const tmp6 = threadId(isEdit[17])(parentChannelId);
   let obj3 = parentChannelId(isEdit[16]);
-  const items4 = [handleLoadThreadsSuccess];
+  const items4 = [closure_10];
   const stateFromStores2 = parentChannelId(isEdit[16]).useStateFromStores(items4, () => {
     let firstMessage = null;
     if (null != threadId) {
       firstMessage = null;
       if (null != closure_2) {
-        firstMessage = outer1_10.getMessage(tmp).firstMessage;
+        firstMessage = closure_1_10.getMessage(tmp).firstMessage;
       }
     }
     return firstMessage;
@@ -155,7 +155,7 @@ export default function ForumComposerModal(parentChannelId) {
             str = "no-hide-descendants";
           }
           obj[1] = str;
-          const obj1 = { parentChannel: null, thread: null, message: null, threadSettingsDraft: null, onClose: null, isEdit: null };
+          obj1 = { parentChannel: null, thread: null, message: null, threadSettingsDraft: null, onClose: null, isEdit: null };
           obj1[0] = stateFromStores;
           obj1[1] = stateFromStores1;
           obj1[2] = stateFromStores2;

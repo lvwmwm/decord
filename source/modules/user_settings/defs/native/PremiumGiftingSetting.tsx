@@ -1,23 +1,27 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14417
+// Function ID: 14418
 // Name: route
-// Dependencies: [19, 676, 21, 7388, 7729, 12899, 1297, 10669, 1236, 9589, 4052, 12985, 2]
+// Dependencies: [19, 676, 21, 7426, 7767, 12954, 1297, 10708, 1236, 9626, 4055, 13040, 2]
 
-// Module 14349 (route)
-import noop from "noop";
-import { jsx } from "jsxProd";
-import createToggle from "createToggle";
+// Module 14417 (route)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import isPremiumGiftingSupported from "isPremiumGiftingSupported" /* 4055 */;
+import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 12954 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["jcSP+g"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["jcSP+g"]);
   },
   parent: null,
   IconComponent: require("GiftIcon").GiftIcon,
   usePredicate() {
-    return require(4052) /* isPremiumGiftingSupported */.isPremiumGiftingSupported();
+    return isPremiumGiftingSupported.isPremiumGiftingSupported();
   },
   usePreNavigationAction: function useCanNavigateToPaymentSetting() {
     return React.useCallback(() => {
@@ -31,10 +35,10 @@ createToggle = {
     }, []);
   },
   useTrailing: function usePremiumGiftingSettingTrailing() {
-    let obj = require(12899) /* useEligibleActiveOutboundPromotions */;
+    let obj = useEligibleActiveOutboundPromotions;
     const unseenOutboundPromotions = obj.useUnseenOutboundPromotions();
     obj = { value: unseenOutboundPromotions.length };
-    return jsx(require(1297) /* Button */.Badge, { value: unseenOutboundPromotions.length });
+    return jsx(Button.Badge, { value: unseenOutboundPromotions.length });
   },
   unsearchable: true,
   screen: createToggle
@@ -42,10 +46,10 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM_GIFTING,
   getComponent() {
-    return require(12985) /* GiftingSectionTitle */.default;
+    return require(13040) /* GiftingSectionTitle */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/defs/native/PremiumGiftingSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/PremiumGiftingSetting.tsx");
 
 export default createToggle;

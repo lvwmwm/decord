@@ -1,22 +1,25 @@
-// Module ID: 11191
-// Function ID: 11192
+// Module ID: 11243
+// Function ID: 11244
 // Name: ForumPostNewTag
-// Dependencies: [19, 21, 4661, 712, 1297, 2]
+// Dependencies: [19, 21, 4668, 712, 1297, 2]
 // Exports: default
 
-// Module 11191 (ForumPostNewTag)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11243 (ForumPostNewTag)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { container: null };
-createCacheKey = { paddingVertical: 1, backgroundColor: require("Themes").colors.BADGE_BACKGROUND_BRAND };
+createCacheKey = { paddingVertical: 1, backgroundColor: ThemesDefault.colors.BADGE_BACKGROUND_BRAND };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createCacheKey").fileFinishedImporting("modules/forums/native/posts/ForumPostNewTag.tsx");
+let closure_3 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/forums/native/posts/ForumPostNewTag.tsx");
 
 export default function ForumPostNewTag(containerStyle) {
-  containerStyle = [containerStyle.containerStyle, createCacheKey().container];
-  return jsx(require(1297) /* Button */.NewTag, { containerStyle, variant: "text-xs/bold", color: "badge-text-brand" });
+  containerStyle = [containerStyle.containerStyle, callback().container];
+  return jsx(Button.NewTag, { containerStyle, variant: "text-xs/bold", color: "badge-text-brand" });
 };

@@ -1,30 +1,26 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17186
+// Function ID: 17187
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 4661, 5440, 5445, 4733, 4734, 11114, 17091, 11964, 2]
+// Dependencies: [19, 21, 4668, 5445, 5450, 4738, 4739, 11153, 17184, 12013, 2]
 // Exports: default
 
-// Module 17093 (SafetyFlowTaskScreen)
-import "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 17186 (SafetyFlowTaskScreen)
+import noopAll from "noop" /* 19 */;
+import Stack from "Stack" /* 4738 */;
+import Text from "Text" /* 4739 */;
+import ModalScreen from "ModalScreen" /* 5445 */;
+import ModalContent from "ModalContent" /* 5450 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 17184 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_5 = createCacheKey.createStyles({ header: { textAlign: "center" } });
-const result = require("createCacheKey").fileFinishedImporting("modules/safety_flows/native/SafetyFlowTaskScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/safety_flows/native/SafetyFlowTaskScreen.tsx");
 
 export default function SafetyFlowTaskScreen(action) {
-  let ImageComponent;
-  let children;
-  let footer;
-  let onAction;
-  let submitting;
-  let subtitle;
-  let subtitleColor;
-  let withLogout;
   ({ ImageComponent, subtitle, subtitleColor } = action);
   if (subtitleColor === undefined) {
     subtitleColor = "text-strong";
@@ -44,38 +40,38 @@ export default function SafetyFlowTaskScreen(action) {
   }
   const items = [tmp6, , ];
   let obj = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.header, children: action.title };
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  items[1] = callback(Text.Text, obj);
   let tmp7Result = null != subtitle;
   if (tmp7Result) {
     obj = { variant: "text-md/medium", color: null, style: null, children: null };
     obj[1] = subtitleColor;
     obj[2] = tmp2.header;
     obj[3] = subtitle;
-    tmp7Result = tmp7(tmp4(4734).Text, obj);
+    tmp7Result = tmp7(tmp4(4739).Text, obj);
   }
   obj = { children: null };
   items[2] = tmp7Result;
-  const items1 = [closure_4(require(4733) /* Stack */.Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
+  const items1 = [closure_4(Stack.Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
   obj[0] = items1;
-  children = [closure_4(require(5445) /* ModalContent */.ModalContent, obj), ];
+  children = [closure_4(ModalContent.ModalContent, obj), ];
   if (undefined === footer) {
     if (withLogout) {
-      withLogout = tmp7(importDefault(17091), {});
+      withLogout = tmp7(LogOutDisclaimerDefault, {});
     }
     const items3 = [withLogout, ];
     tmp7Result = null != action;
     if (tmp7Result) {
-      const obj1 = { variant: "primary", text: null, onPress: null, loading: null };
+      obj1 = { variant: "primary", text: null, onPress: null, loading: null };
       obj1[1] = action;
       obj1[2] = onAction;
       obj1[3] = submitting;
-      tmp7Result = tmp7(tmp4(11964).ModalActionButton, obj1);
+      tmp7Result = tmp7(tmp4(12013).ModalActionButton, obj1);
     }
     const obj2 = { children: null };
     items3[1] = tmp7Result;
     obj2[0] = items3;
-    footer = tmp3(tmp4(11114).ModalFooter, obj2);
+    footer = tmp3(tmp4(11153).ModalFooter, obj2);
   }
   children[1] = footer;
-  return closure_4(require(5440) /* ModalScreen */.ModalScreen, { children });
+  return closure_4(ModalScreen.ModalScreen, { children });
 };

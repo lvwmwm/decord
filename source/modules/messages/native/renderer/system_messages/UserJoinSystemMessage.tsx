@@ -1,24 +1,27 @@
-// Module ID: 8208
-// Function ID: 8209
+// Module ID: 8248
+// Function ID: 8249
 // Name: createUserJoinSystemMessage
-// Dependencies: [1391, 1910, 676, 8185, 8209, 8216, 8217, 8220, 1236, 8187, 8188, 2]
+// Dependencies: [1391, 1910, 676, 8225, 8249, 8256, 8257, 8260, 1236, 8227, 8228, 2]
 // Exports: createUserJoinSystemMessage
 
-// Module 8208 (createUserJoinSystemMessage)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { SystemChannelFlags } from "ME";
+// Module 8248 (createUserJoinSystemMessage)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8225 */;
+import getSystemMessageUserJoinMobileDefault from "getSystemMessageUserJoinMobile" /* 8249 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import { SystemChannelFlags } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/messages/native/renderer/system_messages/UserJoinSystemMessage.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/UserJoinSystemMessage.tsx");
 
 export const createUserJoinSystemMessage = function createUserJoinSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(8185) /* getMessageAuthorWithProcessedColor */;
+  let obj = getMessageAuthorWithProcessedColor;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   channel = channel.getChannel(message.getChannelId());
   let guildId;
-  const systemMessageUserJoinMobile = importDefault(8209).getSystemMessageUserJoinMobile(message.id);
+  const systemMessageUserJoinMobile = getSystemMessageUserJoinMobileDefault.getSystemMessageUserJoinMobile(message.id);
   if (channel != null) {
     guildId = channel.getGuildId();
   }
@@ -30,21 +33,21 @@ export const createUserJoinSystemMessage = function createUserJoinSystemMessage(
       if (tmp10) {
         tmp10 = !(guild.systemChannelFlags & SystemChannelFlags.SUPPRESS_JOIN_NOTIFICATION_REPLIES);
       }
-      let tmpResult = tmp(8216);
+      let tmpResult = tmp(8256);
       if (tmpResult.computeIsStickerReplyEnabled(guildId, channel, message, tmp10)) {
-        tmpResult = tmp(8217);
-        transformStickerResult = tmpResult.transformSticker(tmp(8220).pickWelcomeSticker(message.id));
-        const tmpResult1 = tmp(8220);
+        tmpResult = tmp(8257);
+        transformStickerResult = tmpResult.transformSticker(tmp(8260).pickWelcomeSticker(message.id));
+        const tmpResult1 = tmp(8260);
       }
     }
   }
   obj = { content: null, sticker: null, stickerLabel: null };
   const intl = tmp(1236).intl;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp4(8187)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp4(8227)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
   obj[0] = intl.formatToParts(systemMessageUserJoinMobile, obj);
   obj[1] = transformStickerResult;
   const intl2 = tmp(1236).intl;
-  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t["7Tj6HT"]);
-  const merged = Object.assign(tmp4(8188)(roleStyle));
+  obj[2] = intl2.string(getSystemLocale.t["7Tj6HT"]);
+  const merged = Object.assign(tmp4(8228)(roleStyle));
   return obj;
 };

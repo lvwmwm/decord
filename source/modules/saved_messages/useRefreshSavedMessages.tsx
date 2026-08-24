@@ -1,11 +1,11 @@
-// Module ID: 12722
-// Function ID: 12723
+// Module ID: 12777
+// Function ID: 12778
 // Name: useRefreshSavedMessages
-// Dependencies: [19, 10874, 2]
+// Dependencies: [19, 10913, 2]
 // Exports: default
 
-// Module 12722 (useRefreshSavedMessages)
-import noop from "noop";
+// Module 12777 (useRefreshSavedMessages)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/saved_messages/useRefreshSavedMessages.tsx");

@@ -1,22 +1,23 @@
-// Module ID: 16836
-// Function ID: 16837
+// Module ID: 16929
+// Function ID: 16930
 // Name: _toPropertyKey
-// Dependencies: [109, 32, 19, 17, 16830, 21, 4661, 712, 4105, 9965, 8085, 5441, 4362, 1297, 1351, 1236, 8029, 8862, 6777, 16835, 11, 8867, 7275, 6950, 6949, 4745, 8874, 4342, 4734, 2]
+// Dependencies: [109, 32, 19, 17, 16923, 21, 4668, 712, 4108, 10004, 8124, 5446, 4366, 1297, 1351, 1236, 8068, 8899, 6814, 16928, 11, 8904, 7313, 6988, 6987, 4750, 8911, 4346, 4739, 2]
 // Exports: default
 
-// Module 16836 (_toPropertyKey)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import _slicedToArray from "_slicedToArray";
-import ADD_MEMBER_QUERY_LIMIT from "ADD_MEMBER_QUERY_LIMIT";
-import { View } from "module_8862";
-import { MAX_BULK_ROLE_MEMBERS_ADD } from "title";
-import jsxProd from "getNoResultsAltSource";
-import createCacheKey from "createCacheKey";
+// Module 16929 (_toPropertyKey)
+import ThemesDefault from "Themes" /* 712 */;
+import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4108 */;
+import FormCheckbox from "FormCheckbox" /* 8124 */;
+import memoResult1Default from "memoResult1" /* 10004 */;
+import closure_3 from "_objectWithoutProperties" /* 109 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { MAX_BULK_ROLE_MEMBERS_ADD } from "title" /* 16923 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -49,42 +50,30 @@ function _toPropertyKey(obj) {
   return text;
 }
 function MemberRow(arg0) {
-  let accessibilityRole;
-  let accessibilityState;
-  let checked;
-  let disabled;
-  let end;
-  let guildId;
-  let onPress;
-  let start;
-  let userId;
   ({ disabled, checked } = arg0);
   ({ start, end, guildId, userId, onPress } = arg0);
-  let obj = require(4105) /* useCheckboxA11yNative */;
+  let obj = useCheckboxA11yNative;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked, disabled });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-  obj = { start, end, guildId, userId, onPress, disabled, trailing: null, accessibilityRole: null, accessibilityState: null };
-  obj[6] = callback2(require(8085) /* FormCheckbox */.FormCheckbox, { checked });
-  obj[7] = accessibilityRole;
-  obj[8] = accessibilityState;
-  return callback2(importDefault(9965), obj);
+  obj = { start, end, guildId, userId, onPress, disabled, trailing: callback2(FormCheckbox.FormCheckbox, { checked }), accessibilityRole, accessibilityState };
+  return callback2(memoResult1Default, obj);
 }
 class AddMembersBody {
   constructor(arg0) {
     ({ guild, role, members } = global);
     pendingAdditions = global.pendingAdditions;
     ({ setPendingAdditions, inActionSheet, maxCount } = global);
-    c6 = undefined;
-    c7 = undefined;
-    useState = undefined;
-    c9 = undefined;
+    closure_6 = undefined;
+    closure_7 = undefined;
+    closure_8 = undefined;
+    closure_9 = undefined;
     length = undefined;
-    tmp = jsxs();
-    c6 = tmp;
+    tmp = closure_12();
+    closure_6 = tmp;
     tmp2 = setPendingAdditions(maxCount.useState(""), 2);
     first = tmp2[0];
-    c7 = first;
-    useState = tmp2[1];
+    closure_7 = first;
+    closure_8 = tmp2[1];
     tmp4 = role;
     obj = members;
     obj = { isKeyboardAwareOnAndroid: !inActionSheet };
@@ -92,28 +81,28 @@ class AddMembersBody {
     items[0] = members;
     items[1] = first;
     memo = maxCount.useMemo(() => members.filter((name) => {
-      const regExp = new RegExp(outer1_1(outer1_2[12]).escape(closure_7), "i");
+      const regExp = new RegExp(closure_1_1(closure_1_2[12]).escape(closure_7), "i");
       let isMatch = regExp.test(name.name);
       if (!isMatch) {
         const _RegExp = RegExp;
-        const regExp1 = new RegExp(outer1_1(outer1_2[12]).escape(closure_7), "i");
+        const regExp1 = new RegExp(closure_1_1(closure_1_2[12]).escape(closure_7), "i");
         isMatch = regExp1.test(name.userTag);
-        const tmpResult = outer1_1(outer1_2[12]);
+        const tmpResult = closure_1_1(closure_1_2[12]);
       }
       return isMatch;
     }), items);
-    c9 = memo;
+    closure_9 = memo;
     length = memo.length;
     items1 = [, ];
     items1[0] = length;
     items1[1] = first;
     effect = maxCount.useEffect(() => {
       if ("" !== first) {
-        const AccessibilityAnnouncer = outer1_0(members[14]).AccessibilityAnnouncer;
-        const intl = outer1_0(members[15]).intl;
+        const AccessibilityAnnouncer = closure_1_0(members[14]).AccessibilityAnnouncer;
+        const intl = closure_1_0(members[15]).intl;
         const obj = { count: null };
         obj[0] = length;
-        AccessibilityAnnouncer.announce(intl.formatToPlainString(outer1_0(members[15]).t.ZGVL3g, obj), "polite");
+        AccessibilityAnnouncer.announce(intl.formatToPlainString(closure_1_0(members[15]).t.ZGVL3g, obj), "polite");
       }
     }, items1);
     tmp6 = guild;
@@ -125,12 +114,12 @@ class AddMembersBody {
       FlashList = tmp7.FlashList;
       ErpIY3 = tmp6;
     }
-    tmp10 = useState;
+    tmp10 = closure_8;
     obj1 = { style: tmp.inputContainer, children: null };
     tmp8 = length;
-    tmp9 = c9;
+    tmp9 = closure_9;
     obj2 = { placeholder: null, tags: null, onChangeText: null, onRemove: null, autoFocus: null, inActionSheet: null };
-    tmp4Result = require("module_8862");
+    tmp4Result = require("module_8899");
     intl = require("getSystemLocale").intl;
     obj2[0] = intl.string(require("getSystemLocale").t.vMiCaQ);
     values = Object.values(pendingAdditions);
@@ -143,21 +132,21 @@ class AddMembersBody {
     obj2[2] = function onChangeText(str) {
       const formatted = str.trim().toLowerCase();
       str = str.trim();
-      members = outer1_1(members[18]).requestMembers(id.id, formatted, outer1_0(members[19]).ADD_MEMBER_QUERY_LIMIT);
+      members = closure_1_1(members[18]).requestMembers(id.id, formatted, closure_1_0(members[19]).ADD_MEMBER_QUERY_LIMIT);
       callback2(formatted);
     };
     obj2[3] = function onRemove(arg0) {
-      let closure_0 = outer1_1(members[20]).keys(pendingAdditions)[arg0];
+      closure_0 = closure_1_1(members[20]).keys(pendingAdditions)[arg0];
       callback((arg0) => {
         const items = [closure_0];
-        return outer1_3(arg0, items.map(outer1_11));
+        return closure_1_3(arg0, items.map(closure_1_11));
       });
     };
     obj2[4] = global.autoFocusSearch;
     obj2[5] = inActionSheet;
-    obj1[1] = useState(tmp4Result, obj2);
+    obj1[1] = closure_8(tmp4Result, obj2);
     items2 = [, ];
-    items2[0] = useState(c6, obj1);
+    items2[0] = closure_8(closure_6, obj1);
     if (0 === memo.length) {
       obj3 = { Illustration: null, bodyStyle: null, body: null };
       obj3[0] = require("getNoResultsAltSource").NoResultsAlt;
@@ -190,7 +179,7 @@ class AddMembersBody {
         const index = item.index;
         let roles = item.roles;
         let hasItem = roles.includes(id2.id);
-        let tmp5 = null != ADD_MEMBER_QUERY_LIMIT;
+        let tmp5 = null != closure_5;
         if (tmp5) {
           const _Object = Object;
           tmp5 = Object.keys(tmp2).length >= tmp4;
@@ -206,8 +195,8 @@ class AddMembersBody {
           userId: item.id,
           onPress() {
             const roles = item.roles;
-            if (!roles.includes(outer1_1.id)) {
-              outer1_4((arg0) => {
+            if (!roles.includes(closure_1_1.id)) {
+              closure_1_4((arg0) => {
                 let obj = {};
                 const merged = Object.assign(arg0);
                 if (id.id in obj) {
@@ -218,9 +207,9 @@ class AddMembersBody {
                   obj[0] = tmp4.name;
                   obj = { source: null, avatarStyle: null, style: null };
                   obj[0] = tmp4.avatarSource;
-                  ({ tagAvatar: obj3[1], tagAvatar: obj3[2] } = outer1_6);
-                  obj[1] = outer2_8(item(outer2_2[13]).Avatar, obj);
-                  const obj1 = { display: null, row: null };
+                  ({ tagAvatar: obj3[1], tagAvatar: obj3[2] } = closure_1_6);
+                  obj[1] = closure_2_8(item(closure_2_2[13]).Avatar, obj);
+                  obj1 = { display: null, row: null };
                   obj1[0] = obj;
                   obj1[1] = tmp4;
                   obj[tmp4.id] = obj1;
@@ -240,7 +229,7 @@ class AddMembersBody {
         }
         obj[5] = hasItem;
         obj[6] = tmp7;
-        return closure_8(outer1_13, obj);
+        return closure_8(closure_1_13, obj);
       };
       obj5[2] = memo;
       obj5[3] = pendingAdditions;
@@ -252,26 +241,26 @@ class AddMembersBody {
     return;
   }
 }
-({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: null, inputContainer: null, tagAvatar: null, emptyStateText: null, addMembersDescription: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, flex: 1 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_12 };
-let obj1 = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_12 };
-createCacheKey[2] = { width: 16, height: 16, borderRadius: require("Themes").radii.sm };
-let obj2 = { width: 16, height: 16, borderRadius: require("Themes").radii.sm };
-createCacheKey[3] = { color: require("Themes").colors.TEXT_DEFAULT };
-let obj3 = { color: require("Themes").colors.TEXT_DEFAULT };
-createCacheKey[4] = { marginHorizontal: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj4 = { marginHorizontal: require("Themes").space.PX_16 };
-const result = require("noop").fileFinishedImporting("modules/guild_settings/roles/native/action_sheet/AddMembersActionSheet.tsx");
+createCacheKey[1] = { paddingHorizontal: ThemesDefault.space.PX_16, paddingTop: ThemesDefault.space.PX_12 };
+let obj1 = { paddingHorizontal: ThemesDefault.space.PX_16, paddingTop: ThemesDefault.space.PX_12 };
+createCacheKey[2] = { width: 16, height: 16, borderRadius: ThemesDefault.radii.sm };
+let obj2 = { width: 16, height: 16, borderRadius: ThemesDefault.radii.sm };
+createCacheKey[3] = { color: ThemesDefault.colors.TEXT_DEFAULT };
+let obj3 = { color: ThemesDefault.colors.TEXT_DEFAULT };
+createCacheKey[4] = { marginHorizontal: ThemesDefault.space.PX_16 };
+let closure_12 = createCacheKey.createStyles(createCacheKey);
+let obj4 = { marginHorizontal: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/guild_settings/roles/native/action_sheet/AddMembersActionSheet.tsx");
 
 export default function AddMembersActionSheet(guild) {
   guild = guild.guild;
   const role = guild.role;
   let first;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   const tmp2 = callback(React.useState({}), 2);
   first = tmp2[0];
   const items = [role.id];
@@ -281,7 +270,7 @@ export default function AddMembersActionSheet(guild) {
   }, items);
   let obj = guild(first[19]);
   const guildMembers = obj.useGuildMembers(guild.id, callback);
-  let obj1 = guild(first[22]);
+  obj1 = guild(first[22]);
   obj = { [guild.id]: Object.keys(first) };
   const subscribeGuildMembers = obj1.useSubscribeGuildMembers(obj, "AddMembersActionSheet");
   let tmp9 = 0 === Object.keys(first).length;

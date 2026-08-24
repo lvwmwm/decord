@@ -1,15 +1,15 @@
-// Module ID: 9102
-// Function ID: 9103
+// Module ID: 9139
+// Function ID: 9140
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 9098, 501, 4340, 9096, 9101, 2]
+// Dependencies: [19, 9135, 501, 4344, 9133, 9138, 2]
 // Exports: default
 
-// Module 9102 (useInAppBrowserReturn)
-import noop from "noop";
-import getSimilarGames from "getSimilarGames";
+// Module 9139 (useInAppBrowserReturn)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "getSimilarGames" /* 9135 */;
 
 const require = arg1;
-let result = require("PlatformTypes").fileFinishedImporting("modules/game_profile/native/hooks/useInAppBrowserReturn.tsx");
+let result = require("set").fileFinishedImporting("modules/game_profile/native/hooks/useInAppBrowserReturn.tsx");
 
 export default function useInAppBrowserReturn(gameId) {
   gameId = gameId.gameId;
@@ -19,11 +19,11 @@ export default function useInAppBrowserReturn(gameId) {
     if (null != c0) {
       if (obj.isIOS()) {
         c0 = false;
-        let closure_1 = tmp(tmp2[3]).subscribeToIsInAppBrowserOpen((arg0, arg1) => {
+        closure_1 = tmp(tmp2[3]).subscribeToIsInAppBrowserOpen((arg0, arg1) => {
           if (!arg1) {
             if (arg0) {
-              let c0 = true;
-              let obj = scrollOffsetRef(outer2_2[4]);
+              c0 = true;
+              let obj = scrollOffsetRef(closure_2_2[4]);
               obj = { gameId: null, initialScrollOffset: null };
               obj[0] = c0;
               obj[1] = ref.current;
@@ -34,14 +34,14 @@ export default function useInAppBrowserReturn(gameId) {
             if (!arg0) {
               ref();
               c0 = false;
-              const pendingReturn = outer2_4.getPendingReturn();
+              const pendingReturn = closure_2_4.getPendingReturn();
               if (null != pendingReturn) {
                 obj = { gameId: null, source: null, initialScrollOffset: null };
                 obj[0] = pendingReturn.gameId;
-                obj[1] = gameId(outer2_2[5]).GameProfileSources.InAppBrowserReturn;
+                obj[1] = gameId(closure_2_2[5]).GameProfileSources.InAppBrowserReturn;
                 obj[2] = pendingReturn.initialScrollOffset;
-                scrollOffsetRef(outer2_2[4]).returnToGameProfile(obj);
-                const obj3 = scrollOffsetRef(outer2_2[4]);
+                scrollOffsetRef(closure_2_2[4]).returnToGameProfile(obj);
+                const obj3 = scrollOffsetRef(closure_2_2[4]);
               }
             }
           }
@@ -52,9 +52,9 @@ export default function useInAppBrowserReturn(gameId) {
           }
         };
       }
-      obj = gameId(outer1_2[2]);
+      obj = gameId(closure_1_2[2]);
       tmp = gameId;
-      tmp2 = outer1_2;
+      tmp2 = closure_1_2;
     }
   }, items);
 };

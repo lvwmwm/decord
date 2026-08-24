@@ -1,50 +1,45 @@
-// Module ID: 10383
-// Function ID: 10384
+// Module ID: 10422
+// Function ID: 10423
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 7628, 1388, 21, 4661, 712, 1629, 9625, 38, 10384, 10306, 8389, 589, 9629, 10382, 1379, 1377, 10385, 10386, 10387, 10388, 2]
+// Dependencies: [19, 17, 7666, 1388, 21, 4668, 712, 1629, 9662, 38, 10423, 10345, 8428, 589, 9668, 9666, 1379, 1377, 10424, 10425, 10426, 10427, 2]
 // Exports: default
 
-// Module 10383 (PremiumGiftSuccess)
-import PremiumGiftDMSuccessBody from "PremiumGiftDMSuccessBody";
-import { View } from "DismissibleContent";
-import createEmptyPromotionsByType from "createEmptyPromotionsByType";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "PremiumGiftingPromotionSuccessActions";
-import createCacheKey from "createCacheKey";
+// Module 10422 (PremiumGiftSuccess)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "createEmptyPromotionsByType" /* 7666 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let error;
-let metroImportAll;
-let require = arg1;
-({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+const require = arg1;
+({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles((arg0) => {
   let obj = { bodyContainer: null, actionContainer: null };
-  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, paddingHorizontal: importDefault(712).space.PX_16, flex: 1, alignContent: "center", justifyContent: "center", flexGrow: 1 };
+  obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: ThemesDefault.space.PX_16, flex: 1, alignContent: "center", justifyContent: "center", flexGrow: 1 };
   obj[0] = obj;
-  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, paddingTop: importDefault(712).space.PX_16, paddingBottom: arg0 + importDefault(712).space.PX_16, paddingHorizontal: importDefault(712).space.PX_16, gap: importDefault(712).space.PX_8 };
-  const merged = Object.assign(importDefault(712).shadows.SHADOW_TOP_LOW);
+  obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, paddingTop: ThemesDefault.space.PX_16, paddingBottom: arg0 + ThemesDefault.space.PX_16, paddingHorizontal: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8 };
+  const merged = Object.assign(ThemesDefault.shadows.SHADOW_TOP_LOW);
   obj[1] = obj;
   return obj;
 });
-let result = require("createEmptyPromotionsByType").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftSuccess.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftSuccess.tsx");
 
 export default function PremiumGiftSuccess() {
-  let giftCodeRecord;
-  let recipientUser;
-  let selectedGiftingPromotionReward;
   const tmp3 = callback3(importDefault(stateFromStores[7])().bottom);
-  let obj = require(stateFromStores[8]);
+  let obj = _require(stateFromStores[8]);
   const nativeGiftContext = obj.useNativeGiftContext();
   ({ recipientUser, giftCodeRecord, selectedGiftingPromotionReward } = nativeGiftContext);
   importDefault(stateFromStores[9])(null != giftCodeRecord, "Gift code record cannot be null on success screen");
   const tmp7 = importDefault(stateFromStores[10])();
-  require = tmp7;
+  _require = tmp7;
   const tmp8 = importDefault(stateFromStores[11])();
   importDefault = tmp8;
-  let obj1 = require(stateFromStores[12]);
+  obj1 = _require(stateFromStores[12]);
   const getOrFetchPurchase = obj1.useGetOrFetchPurchase(selectedGiftingPromotionReward, false);
-  let obj2 = require(stateFromStores[13]);
-  const items = [createEmptyPromotionsByType];
+  let obj2 = _require(stateFromStores[13]);
+  const items = [closure_5];
   stateFromStores = obj2.useStateFromStores(items, () => {
     giftPromotion = giftPromotion.getGiftPromotion();
     let id;
@@ -57,15 +52,15 @@ export default function PremiumGiftSuccess() {
   const config = obj3.useConfig({ location: "PremiumGiftSuccess" });
   const items1 = [tmp8, tmp7, stateFromStores];
   const effect = React.useEffect(() => {
-    let tmp = null != tmp7 && null != tmp7.reminderNotice && closure_1;
+    let tmp = null != lib && null != lib.reminderNotice && closure_1;
     if (tmp) {
       tmp = null != stateFromStores;
     }
     if (tmp) {
-      let obj = tmp7(stateFromStores[16]);
+      let obj = lib(stateFromStores[16]);
       obj = { dismissAction: null };
-      obj[0] = outer1_6.INDIRECT_ACTION;
-      const result = obj.markSnowflakeBoundDismissibleContentAsDismissed(tmp7(stateFromStores[17]).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores, obj);
+      obj[0] = closure_1_6.INDIRECT_ACTION;
+      const result = obj.markSnowflakeBoundDismissibleContentAsDismissed(lib(stateFromStores[17]).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores, obj);
     }
   }, items1);
   if (null == recipientUser) {
@@ -79,7 +74,7 @@ export default function PremiumGiftSuccess() {
   }
   if (tmp8) {
     if (config.enabled) {
-      if (selectedGiftingPromotionReward === require(stateFromStores[15]).GiftingPromotionRewardSKUIds.SUMMER_2026_GOGO_FAKE_SKU_ID) {
+      if (selectedGiftingPromotionReward === _require(stateFromStores[15]).GiftingPromotionRewardSKUIds.SUMMER_2026_GOGO_FAKE_SKU_ID) {
         let code;
         if (null == recipientUser) {
           code = giftCodeRecord.code;

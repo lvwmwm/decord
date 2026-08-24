@@ -1,36 +1,24 @@
-// Module ID: 8409
-// Function ID: 8410
-// Dependencies: [19, 17, 4662, 1990, 4559, 676, 21, 4661, 712, 1297, 589, 8410, 8376, 8411, 8412, 5433, 2]
+// Module ID: 8448
+// Function ID: 8449
+// Dependencies: [19, 17, 4669, 1991, 4564, 676, 21, 4668, 712, 1297, 589, 8449, 8415, 8450, 8451, 5438, 2]
 
-// Module 8409
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import sortActivity from "sortActivity";
-import { ActivityTypes } from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 8448
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "sortActivity" /* 4564 */;
+import { ActivityTypes } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let obj = { avatarStatusStyle: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj[0] = obj;
 let closure_9 = createCacheKey.createStyles(obj);
-const forwardRefResult = require("noop").forwardRef((animate) => {
-  let activities;
-  let disableStatus;
-  let guildId;
-  let isMobileOnline;
-  let isVROnline;
-  let onPress;
-  let pendingAvatarDecoration;
-  let pendingAvatarSrc;
-  let size;
-  let status;
-  let statusStyle;
-  let style;
-  let user;
+const forwardRefResult = importAllResult.forwardRef((animate) => {
   ({ user, guildId } = animate);
   ({ pendingAvatarSrc, style, onPress, size } = animate);
   ({ disableStatus, pendingAvatarDecoration, statusStyle } = animate);
@@ -46,26 +34,26 @@ const forwardRefResult = require("noop").forwardRef((animate) => {
   id = user.id;
   let obj = guildId;
   let avatarSource = dependencyMap;
-  let obj1 = guildId(589);
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  obj1 = guildId(589);
+  const items = [closure_4];
   const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let obj2 = guildId(589);
-  const items1 = [sortActivity];
+  const items1 = [closure_6];
   const items2 = [id];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => ({ isMobileOnline: outer1_6.isMobileOnline(id), isVROnline: outer1_6.isVROnline(id), status: outer1_6.getStatus(id), activities: outer1_6.getActivities(id), customStatusActivity: outer1_6.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) }), items2);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => ({ isMobileOnline: closure_1_6.isMobileOnline(id), isVROnline: closure_1_6.isVROnline(id), status: closure_1_6.getStatus(id), activities: closure_1_6.getActivities(id), customStatusActivity: closure_1_6.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) }), items2);
   ({ isMobileOnline, isVROnline, status, activities } = stateFromStoresObject);
   let obj3 = guildId(589);
-  const items3 = [trackCommunicationDisabled];
+  const items3 = [closure_5];
   const stateFromStores1 = obj3.useStateFromStores(items3, () => {
     let member = null;
     if (null != guildId) {
-      member = outer1_5.getMember(tmp, id);
+      member = closure_1_5.getMember(tmp, id);
     }
     return member;
   });
   const tmp4 = callback();
   const tmp9 = id;
-  let obj4 = guildId(8376);
+  let obj4 = guildId(8415);
   obj = { pendingValue: pendingAvatarDecoration, userValue: null, guildValue: null, guildId: null };
   let avatarDecoration;
   if (user != null) {
@@ -80,19 +68,19 @@ const forwardRefResult = require("noop").forwardRef((animate) => {
   obj[3] = guildId;
   obj = { isMobileOnline, isVROnline, size, status: null, statusStyle: null, streaming: null, animate: null, avatarDecoration: null };
   let tmp14 = null;
-  const tmp10 = id(8410);
+  const tmp10 = id(8449);
   if (!disableStatus) {
     tmp14 = status;
   }
   obj[3] = tmp14;
   const items4 = [tmp4.avatarStatusStyle, statusStyle];
   obj[4] = items4;
-  obj[5] = tmp9(8411)(activities);
+  obj[5] = tmp9(8450)(activities);
   if (flag) {
     flag = !stateFromStores;
   }
   obj[6] = flag;
-  obj[7] = id(8410)(obj4.getProfilePreviewValue(obj));
+  obj[7] = id(8449)(obj4.getProfilePreviewValue(obj));
   if (null != onPress) {
     obj1 = { ref: null, onPress: null, onLongPress: null, style: null, activeOpacity: 0.8, accessibilityRole: "imagebutton" };
     obj1[0] = arg1;
@@ -102,7 +90,7 @@ const forwardRefResult = require("noop").forwardRef((animate) => {
     const merged1 = Object.assign(merged);
     if (undefined !== pendingAvatarSrc) {
       obj2 = { source: null };
-      obj = obj(8412);
+      obj = obj(8451);
       avatarSource = obj.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
       obj2[0] = avatarSource;
       obj = Object.assign(obj);
@@ -114,7 +102,7 @@ const forwardRefResult = require("noop").forwardRef((animate) => {
       const merged2 = Object.assign(obj);
     }
     obj1.children = jsx(obj(1297).Avatar, obj3);
-    jsx(obj(5433).PressableOpacity, { ref: null, onPress: null, onLongPress: null, style: null, activeOpacity: 0.8, accessibilityRole: "imagebutton" });
+    jsx(obj(5438).PressableOpacity, { ref: null, onPress: null, onLongPress: null, style: null, activeOpacity: 0.8, accessibilityRole: "imagebutton" });
   } else {
     obj4 = { ref: null, style: null, accessibilityRole: "image", accessible: true };
     obj4[0] = arg1;
@@ -122,7 +110,7 @@ const forwardRefResult = require("noop").forwardRef((animate) => {
     const merged3 = Object.assign(merged);
     if (undefined !== pendingAvatarSrc) {
       const obj5 = { source: null };
-      const objResult = obj(8412);
+      const objResult = obj(8451);
       obj5[0] = objResult.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
       const merged4 = Object.assign(obj);
       let obj6 = obj5;
@@ -136,6 +124,6 @@ const forwardRefResult = require("noop").forwardRef((animate) => {
     return <View ref={null} style={null} accessibilityRole="image" accessible />;
   }
 });
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/profile_customization/native/HeaderAvatar.tsx");
+const result = require("set").fileFinishedImporting("modules/profile_customization/native/HeaderAvatar.tsx");
 
 export default forwardRefResult;

@@ -1,12 +1,14 @@
-// Module ID: 5009
-// Function ID: 5010
+// Module ID: 5014
+// Function ID: 5015
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 5009 (enforcing)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 5014 (enforcing)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeMetricMonitorModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeMetricMonitorModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeMetricMonitorModule.tsx");
 
 export default enforcing;

@@ -1,72 +1,61 @@
-// Module ID: 13315
-// Function ID: 13316
+// Module ID: 13373
+// Function ID: 13374
 // Name: ErrorMessage
-// Dependencies: [32, 19, 17, 676, 21, 4661, 712, 1236, 4734, 7338, 13316, 9740, 9736, 4093, 698, 1351, 8092, 4745, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4668, 712, 1236, 4739, 7376, 13374, 9779, 9775, 4096, 698, 1351, 8131, 4750, 2]
 
-// Module 13315 (ErrorMessage)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import get_ActivityIndicator from "Button";
-import ME from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13373 (ErrorMessage)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import TextField from "TextField" /* 7376 */;
+import apexExperimentDefault from "apexExperiment" /* 13374 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function ErrorMessage(children) {
   const style = [, ];
   ({ inputAccessoryText: arr[0], errorStateText: arr[1] } = callback2());
-  return callback(require(4734) /* Text */.Text, { variant: "text-xs/medium", color: "text-feedback-critical", style, children: children.errorMessage });
+  return callback(Text.Text, { variant: "text-xs/medium", color: "text-feedback-critical", style, children: children.errorMessage });
 }
 let c4 = importAllResult;
 ({ View: c5, Keyboard: closure_6 } = get_ActivityIndicator);
-({ PLACEHOLDER_TAG: error, AnalyticEvents: metroImportAll } = ME);
+({ PLACEHOLDER_TAG: error, AnalyticEvents: closure_8 } = ME);
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
 let obj = { container: null, textInputContainer: null, placeholderText: null, inputAccessoryText: null, redesignInputAccessoryText: null, inputHeaderText: null, redesignGrow: null, errorStateText: null, friendMessageContainer: null, messageLabel: null, messageFooterText: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, alignItems: "center", justifyContent: "center", paddingHorizontal: 16 };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, alignItems: "center", justifyContent: "center", paddingHorizontal: 16 };
 obj[0] = obj;
 obj[1] = { alignSelf: "stretch" };
-createCacheKey = { color: require("Themes").colors.TEXT_MUTED };
+createCacheKey = { color: ThemesDefault.colors.TEXT_MUTED };
 obj[2] = createCacheKey;
-obj[3] = { fontSize: 12, lineHeight: 16, marginVertical: 8, color: require("Themes").colors.TEXT_SUBTLE };
-let obj2 = { fontSize: 12, lineHeight: 16, marginVertical: 8, color: require("Themes").colors.TEXT_SUBTLE };
-obj[4] = { marginBottom: require("Themes").space.PX_8 };
+obj[3] = { fontSize: 12, lineHeight: 16, marginVertical: 8, color: ThemesDefault.colors.TEXT_SUBTLE };
+let obj2 = { fontSize: 12, lineHeight: 16, marginVertical: 8, color: ThemesDefault.colors.TEXT_SUBTLE };
+obj[4] = { marginBottom: ThemesDefault.space.PX_8 };
 obj[5] = { marginTop: 0 };
-let obj3 = { marginBottom: require("Themes").space.PX_8 };
-obj[6] = { flexGrow: 2, minHeight: require("Themes").space.PX_24 };
-let obj4 = { flexGrow: 2, minHeight: require("Themes").space.PX_24 };
-obj[7] = { color: require("Themes").unsafe_rawColors.RED_400, marginVertical: 4 };
-let obj5 = { color: require("Themes").unsafe_rawColors.RED_400, marginVertical: 4 };
-obj[8] = { alignSelf: "stretch", marginTop: require("Themes").space.PX_16 };
-let obj6 = { alignSelf: "stretch", marginTop: require("Themes").space.PX_16 };
-obj[9] = { marginBottom: require("Themes").space.PX_4 };
-let obj7 = { marginBottom: require("Themes").space.PX_4 };
-obj[10] = { marginTop: require("Themes").space.PX_4 };
+let obj3 = { marginBottom: ThemesDefault.space.PX_8 };
+obj[6] = { flexGrow: 2, minHeight: ThemesDefault.space.PX_24 };
+let obj4 = { flexGrow: 2, minHeight: ThemesDefault.space.PX_24 };
+obj[7] = { color: ThemesDefault.unsafe_rawColors.RED_400, marginVertical: 4 };
+let obj5 = { color: ThemesDefault.unsafe_rawColors.RED_400, marginVertical: 4 };
+obj[8] = { alignSelf: "stretch", marginTop: ThemesDefault.space.PX_16 };
+let obj6 = { alignSelf: "stretch", marginTop: ThemesDefault.space.PX_16 };
+obj[9] = { marginBottom: ThemesDefault.space.PX_4 };
+let obj7 = { marginBottom: ThemesDefault.space.PX_4 };
+obj[10] = { marginTop: ThemesDefault.space.PX_4 };
 let closure_12 = createCacheKey.createStyles(obj);
 let closure_13 = { SUCCESS: 0, [0]: "SUCCESS", ERROR: 1, [1]: "ERROR", LOADING: 2, [2]: "LOADING", NONE: 3, [3]: "NONE" };
 let closure_14 = { DISCORD_TAG: "DISCORD_TAG", MESSAGE: "MESSAGE" };
 let closure_16 = importAllResult.forwardRef((headerTextStyle, ref) => {
-  let autoFocus;
-  let headerText;
-  let onChangeText;
-  let onFocus;
-  let onKeyPress;
-  let onSelectionChange;
-  let onSubmitEditing;
-  let textState;
-  let validationState;
   ({ validationState, headerText } = headerTextStyle);
   ({ textState, onChangeText, onSelectionChange, onKeyPress, onSubmitEditing, onFocus, autoFocus } = headerTextStyle);
   if (headerText === undefined) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    headerText = intl.string(require(1236) /* getSystemLocale */.t.YegTF2).toUpperCase();
-    const str = intl.string(require(1236) /* getSystemLocale */.t.YegTF2);
+    const intl = getSystemLocale.intl;
+    headerText = intl.string(getSystemLocale.t.YegTF2).toUpperCase();
+    const str = intl.string(getSystemLocale.t.YegTF2);
   }
   const tmp3 = callback2();
   let message;
@@ -79,17 +68,17 @@ let closure_16 = importAllResult.forwardRef((headerTextStyle, ref) => {
   const items = [, , ];
   ({ redesignInputAccessoryText: arr[0], inputHeaderText: arr[1] } = tmp3);
   items[2] = headerTextStyle.headerTextStyle;
-  const items1 = [callback(require(4734) /* Text */.Text, { style: items, variant: "text-sm/semibold", color: "text-muted", children: headerText }), , ];
+  const items1 = [callback(Text.Text, { style: items, variant: "text-sm/semibold", color: "text-muted", children: headerText }), , ];
   obj = { ref, value: textState.validatedText, accessibilityLabel: null, accessibilityHint: null, placeholder: null, placeholderTextColor: null, onChange: null, onSelectionChange: null, onKeyPress: null, onSubmitEditing: null, autoCapitalize: "none", returnKeyType: "send", keyboardType: "twitter", autoCorrect: false, blurOnSubmit: true, maxLength: 37, autoFocus: null, onFocus: null, status: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.qRaqel);
+  const intl2 = getSystemLocale.intl;
+  obj[2] = intl2.string(getSystemLocale.t.qRaqel);
   let a11yMessage;
   if (validationState.status === constants.ERROR) {
     a11yMessage = validationState.a11yMessage;
   }
   obj[3] = a11yMessage;
   const intl3 = tmp10(1236).intl;
-  obj[4] = intl3.string(require(1236) /* getSystemLocale */.t.qRaqel);
+  obj[4] = intl3.string(getSystemLocale.t.qRaqel);
   obj[5] = tmp3.placeholderText.color;
   obj[6] = onChangeText;
   obj[7] = onSelectionChange;
@@ -102,7 +91,7 @@ let closure_16 = importAllResult.forwardRef((headerTextStyle, ref) => {
     str2 = "error";
   }
   obj[18] = str2;
-  items1[1] = callback(require(7338) /* TextField */.TextField, obj);
+  items1[1] = callback(TextField.TextField, obj);
   let tmp9Result = null;
   if (null != message) {
     obj = { errorMessage: null };
@@ -113,31 +102,25 @@ let closure_16 = importAllResult.forwardRef((headerTextStyle, ref) => {
   obj[1] = items1;
   return closure_10(closure_5, obj);
 });
-let obj8 = { marginTop: require("Themes").space.PX_4 };
+let obj8 = { marginTop: ThemesDefault.space.PX_4 };
 const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
-  let autoFocusInput;
-  let headerText;
-  let headerTextStyle;
-  let onFocus;
-  let sourcePage;
-  let style;
   ({ headerTextStyle, sourcePage } = arg0);
-  let importDefault;
-  let dependencyMap;
+  importDefault = undefined;
+  dependencyMap = undefined;
   let first;
-  let importAllResult;
+  importAllResult = undefined;
   let first1;
-  let closure_6;
+  closure_6 = undefined;
   let first2;
-  let closure_8;
+  closure_8 = undefined;
   function handleSubmitEditing() {
     const trimmed = first.validatedText.trim();
     let substr = trimmed;
     const trimmed1 = first2.trim();
     if (trimmed.length <= 0) {
       let obj = { status: null, field: null, message: null };
-      obj[0] = outer1_13.ERROR;
-      obj[1] = outer1_14.DISCORD_TAG;
+      obj[0] = closure_1_13.ERROR;
+      obj[1] = closure_1_14.DISCORD_TAG;
       let intl = sourcePage(1236).intl;
       obj[2] = intl.string(sourcePage(1236).t.mxnceg);
       callback(obj);
@@ -152,40 +135,40 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
         substr = trimmed.substring(1);
         tmp2 = substr;
       }
-      obj = sourcePage(9740);
+      obj = sourcePage(9779);
       const validateDiscordTagResult = obj.validateDiscordTag(tmp2);
       if (null != validateDiscordTagResult) {
         obj = { status: null, field: null, message: null };
-        obj[0] = outer1_13.ERROR;
-        obj[1] = outer1_14.DISCORD_TAG;
+        obj[0] = closure_1_13.ERROR;
+        obj[1] = closure_1_14.DISCORD_TAG;
         obj[2] = validateDiscordTagResult;
         callback(obj);
       } else {
-        const obj1 = { status: null };
-        obj1[0] = outer1_13.LOADING;
+        obj1 = { status: null };
+        obj1[0] = closure_1_13.LOADING;
         callback(obj1);
         const obj2 = { discordTag: null, context: null, errorUxConfig: null, note: null };
         obj2[0] = tmp2;
         obj2[1] = { location: "Search - Add Friend Search" };
-        obj2[2] = sourcePage(9736).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED;
+        obj2[2] = sourcePage(9775).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED;
         let tmp9;
         if (trimmed1.length > 0) {
           tmp9 = trimmed1;
         }
         obj2[3] = tmp9;
-        const obj5 = ref(9736);
-        ref(9736).sendRequest(obj2).then(() => {
+        const obj5 = ref(9775);
+        ref(9775).sendRequest(obj2).then(() => {
           let obj = { validatedText: "", hint: null };
           const intl = sourcePage(1236).intl;
           obj[1] = intl.string(sourcePage(1236).t["6p7Mhh"]);
-          outer1_4(obj);
-          outer1_8("");
-          obj = { status: outer2_13.SUCCESS, message: null };
+          closure_1_4(obj);
+          closure_1_8("");
+          obj = { status: closure_2_13.SUCCESS, message: null };
           const intl2 = sourcePage(1236).intl;
           obj = { discordTag: substr };
           obj[1] = intl2.format(sourcePage(1236).t.Rtl1Ep, obj);
-          outer1_6(obj);
-          const result = sourcePage(4093).presentAddedFriendToast();
+          closure_1_6(obj);
+          const result = sourcePage(4096).presentAddedFriendToast();
           closure_6.dismiss();
         }, (body) => {
           let note;
@@ -197,16 +180,16 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
           }
           if (null != note) {
             let obj = { status: null, field: null, message: null, a11yMessage: null };
-            obj[0] = outer2_13.ERROR;
-            obj[1] = outer2_14.MESSAGE;
+            obj[0] = closure_2_13.ERROR;
+            obj[1] = closure_2_14.MESSAGE;
             const intl = sourcePage(1236).intl;
             obj[2] = intl.string(sourcePage(1236).t.ckHwck);
             const intl2 = sourcePage(1236).intl;
             obj[3] = intl2.string(sourcePage(1236).t.ckHwck);
           } else {
             obj = { status: null, field: null, message: null, a11yMessage: null };
-            obj[0] = outer2_13.ERROR;
-            obj[1] = outer2_14.DISCORD_TAG;
+            obj[0] = closure_2_13.ERROR;
+            obj[1] = closure_2_14.DISCORD_TAG;
             let num;
             if (body != null) {
               const body2 = body.body;
@@ -217,8 +200,8 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
             if (num == null) {
               num = -1;
             }
-            obj[2] = sourcePage(9740).humanizeAbortCode(num, substr);
-            obj = sourcePage(9740);
+            obj[2] = sourcePage(9779).humanizeAbortCode(num, substr);
+            obj = sourcePage(9779);
             let num2;
             if (body != null) {
               const body3 = body.body;
@@ -230,12 +213,12 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
               num2 = -1;
             }
             obj[3] = obj.humanizeAbortCodeForA11y(num2, substr);
-            const obj4 = sourcePage(9740);
+            const obj4 = sourcePage(9779);
             const tmp3 = substr;
           }
-          outer1_6(obj);
+          closure_1_6(obj);
         });
-        const sendRequestResult = ref(9736).sendRequest(obj2);
+        const sendRequestResult = ref(9775).sendRequest(obj2);
       }
     }
   }
@@ -258,7 +241,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const tmp7 = first(importAllResult.useState(""), 2);
   first2 = tmp7[0];
   closure_8 = tmp7[1];
-  let obj1 = importDefault(13316);
+  obj1 = apexExperimentDefault;
   const enabled = obj1.useConfig({ location: "AddFriendbyId" }).enabled;
   const items = [first1];
   const items1 = [first1];
@@ -282,26 +265,26 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
       obj[1] = str2;
     }
     closure_4(obj);
-    let tmp9 = first1.status === outer1_13.ERROR;
+    let tmp9 = first1.status === closure_1_13.ERROR;
     if (tmp9) {
-      tmp9 = first1.field === outer1_14.DISCORD_TAG;
+      tmp9 = first1.field === closure_1_14.DISCORD_TAG;
     }
     if (tmp9) {
       obj = { status: null };
-      obj[0] = outer1_13.NONE;
+      obj[0] = closure_1_13.NONE;
       callback(obj);
     }
   }, items);
   const items2 = [sourcePage];
   const callback1 = importAllResult.useCallback((str) => {
     lib(str.replace(/\n/g, ""));
-    let tmp3 = first1.status === outer1_13.ERROR;
+    let tmp3 = first1.status === closure_1_13.ERROR;
     if (tmp3) {
-      tmp3 = first1.field === outer1_14.MESSAGE;
+      tmp3 = first1.field === closure_1_14.MESSAGE;
     }
     if (tmp3) {
       const obj = { status: null };
-      obj[0] = outer1_13.NONE;
+      obj[0] = closure_1_13.NONE;
       callback(obj);
     }
   }, items1);
@@ -312,7 +295,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   }, items2);
   const items3 = [first1];
   const effect1 = importAllResult.useEffect(() => {
-    let tmp2 = first1.status === outer1_13.ERROR;
+    let tmp2 = first1.status === closure_1_13.ERROR;
     if (tmp2) {
       tmp2 = null != tmp.a11yMessage;
     }
@@ -358,7 +341,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     obj3[2] = str.trim().length <= 0;
     obj3[3] = handleSubmitEditing;
     obj3[4] = first1.status === tmp4.LOADING;
-    items6[2] = tmp17(sourcePage(4745).Button, obj3);
+    items6[2] = tmp17(sourcePage(4750).Button, obj3);
     obj1[0] = items6;
     return tmp14(closure_11, obj1);
   } else {
@@ -371,7 +354,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     obj5[0] = items7;
     let intl = sourcePage(1236).intl;
     obj5[3] = intl.string(sourcePage(1236).t.Yi6Mpu);
-    const items8 = [tmp17(sourcePage(4734).Text, obj5), , ];
+    const items8 = [tmp17(sourcePage(4739).Text, obj5), , ];
     const obj6 = { returnKeyType: "done", submitBehavior: "submit", value: null, maxLength: 120, onSubmitEditing: null, onChange: null, status: null };
     obj6[2] = first2;
     obj6[4] = handleSubmitEditing;
@@ -383,13 +366,13 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
       }
     }
     obj6[6] = str2;
-    items8[1] = tmp17(sourcePage(8092).TextArea, obj6);
+    items8[1] = tmp17(sourcePage(8131).TextArea, obj6);
     if (first1.status !== tmp4.ERROR) {
       const obj7 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
       obj7[0] = tmp.messageFooterText;
       let intl2 = tmp18(1236).intl;
       obj7[3] = intl2.string(tmp18(1236).t.UtfQNw);
-      let tmp17Result = tmp17(tmp18(4734).Text, obj7);
+      let tmp17Result = tmp17(tmp18(4739).Text, obj7);
       items8[2] = tmp17Result;
       obj4[1] = items8;
       tmp14(tmp16, obj4);
@@ -400,6 +383,6 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     const tmp19 = constants2;
   }
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/AddFriendById.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/AddFriendById.tsx");
 
 export default forwardRefResult;

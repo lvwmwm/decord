@@ -5,17 +5,19 @@
 // Exports: useNavigation
 
 // Module 1543 (useNavigation)
-import noop from "noop";
+import NavigationContainerRefContext from "NavigationContainerRefContext" /* 1531 */;
+import NavigationContext from "NavigationContext" /* 1544 */;
+import closure_2 from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 
 export const useNavigation = function useNavigation() {
-  const context = React.useContext(require(1531) /* NavigationContainerRefContext */.NavigationContainerRefContext);
-  let context1 = React.useContext(require(1544) /* NavigationContext */.NavigationContext);
+  const context = React.useContext(NavigationContainerRefContext.NavigationContainerRefContext);
+  let context1 = React.useContext(NavigationContext.NavigationContext);
   if (undefined === context1) {
     if (undefined === context) {
       const _Error = Error;
-      const error = new Error("Couldn't find a navigation object. Is your component inside NavigationContainer?");
+      error = new Error("Couldn't find a navigation object. Is your component inside NavigationContainer?");
       throw error;
     }
   }

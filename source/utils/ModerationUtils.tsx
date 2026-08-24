@@ -1,35 +1,36 @@
-// Module ID: 14194
-// Function ID: 14195
+// Module ID: 14262
+// Function ID: 14263
 // Name: mapColorToHighlightColor
-// Dependencies: [676, 4068, 711, 14195, 1236, 1306, 2]
+// Dependencies: [676, 4071, 711, 14263, 1236, 1306, 2]
 // Exports: generateContentFilterHighlightedOptions, generateContentFilterOptions, generateDmSpamOptions, generateExplicitImageOptions, generateVerificationLevelOptions, mapOptionToHighlightedRowOptions
 
-// Module 14194 (mapColorToHighlightColor)
-import ME from "ME";
-import { ExplicitContentFilterTypes as closure_5 } from "items";
+// Module 14262 (mapColorToHighlightColor)
+import set from "set" /* 2 */;
+import unsafe_getRawColor from "unsafe_getRawColor" /* 711 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import create from "create" /* 1306 */;
+import items2 from "items" /* 4071 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
-let obj1;
 function mapColorToHighlightColor(arg0) {
   if (obj.unsafe_getRawColor("PRIMARY_400") === arg0) {
-    return tmp(14195).HighlightColors.ACCENT;
+    return tmp(14263).HighlightColors.ACCENT;
   } else {
     let tmpResult = tmp(711);
     if (tmpResult.unsafe_getRawColor("GREEN_360") === arg0) {
-      return tmp(14195).HighlightColors.GREEN;
+      return tmp(14263).HighlightColors.GREEN;
     } else {
       tmpResult = tmp(711);
       if (tmpResult.unsafe_getRawColor("YELLOW_360") === arg0) {
-        return tmp(14195).HighlightColors.YELLOW;
+        return tmp(14263).HighlightColors.YELLOW;
       } else {
         if (tmpResult1.unsafe_getRawColor("ORANGE_345") === arg0) {
-          return tmp(14195).HighlightColors.ORANGE;
+          return tmp(14263).HighlightColors.ORANGE;
         } else {
           if (tmpResult2.unsafe_getRawColor("RED_400") === arg0) {
-            return tmp(14195).HighlightColors.RED;
+            return tmp(14263).HighlightColors.RED;
           } else {
-            return tmp(14195).HighlightColors.NONE;
+            return tmp(14263).HighlightColors.NONE;
           }
           tmpResult2 = tmp(711);
         }
@@ -37,10 +38,11 @@ function mapColorToHighlightColor(arg0) {
       }
     }
   }
-  obj = require(711) /* unsafe_getRawColor */;
+  obj = unsafe_getRawColor;
 }
 ({ VerificationLevels: obj1, VerificationCriteria: c3, GuildExplicitContentFilterTypes: c4 } = ME);
-const result = require("unsafe_getRawColor").fileFinishedImporting("utils/ModerationUtils.tsx");
+let closure_5 = items2.ExplicitContentFilterTypes;
+const result = set.fileFinishedImporting("utils/ModerationUtils.tsx");
 
 export { mapColorToHighlightColor };
 export const mapOptionToHighlightedRowOptions = function mapOptionToHighlightedRowOptions(arr) {
@@ -56,11 +58,11 @@ export const generateVerificationLevelOptions = function generateVerificationLev
     flag2 = false;
   }
   let obj = { name: null, desc: null, value: null, disabled: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.PEzffq);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.PEzffq);
+  const intl2 = getSystemLocale.intl;
   const string = intl2.string;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (flag) {
     let stringResult = string(t.j9WtHx);
   } else {
@@ -72,9 +74,9 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   const items = [obj, , , , ];
   obj = { name: null, desc: null, value: null, color: null };
   const intl3 = tmp(1236).intl;
-  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.SsCK8I);
+  obj[0] = intl3.string(getSystemLocale.t.SsCK8I);
   const intl4 = tmp(1236).intl;
-  obj[1] = intl4.string(require(1236) /* getSystemLocale */.t["8GCOX6"]);
+  obj[1] = intl4.string(getSystemLocale.t["8GCOX6"]);
   obj[2] = constants.LOW;
   let unsafe_getRawColorResult;
   if (!flag2) {
@@ -85,9 +87,9 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   items[1] = obj;
   obj = { name: null, desc: null, value: null, color: null };
   const intl5 = tmp(1236).intl;
-  obj[0] = intl5.string(require(1236) /* getSystemLocale */.t.WwNoR4);
+  obj[0] = intl5.string(getSystemLocale.t.WwNoR4);
   const intl6 = tmp(1236).intl;
-  obj[1] = intl6.formatToPlainString(require(1236) /* getSystemLocale */.t.VS14ga, { min: constants2.ACCOUNT_AGE });
+  obj[1] = intl6.formatToPlainString(getSystemLocale.t.VS14ga, { min: constants2.ACCOUNT_AGE });
   obj[2] = constants.MEDIUM;
   let unsafe_getRawColorResult1;
   if (!flag2) {
@@ -98,9 +100,9 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   items[2] = obj;
   const obj2 = { name: null, desc: null, value: null, color: null };
   const intl7 = tmp(1236).intl;
-  obj2[0] = intl7.string(require(1236) /* getSystemLocale */.t.I2jMUF);
+  obj2[0] = intl7.string(getSystemLocale.t.I2jMUF);
   const intl8 = tmp(1236).intl;
-  obj2[1] = intl8.formatToPlainString(require(1236) /* getSystemLocale */.t["r+b3I4"], { min: constants2.MEMBER_AGE });
+  obj2[1] = intl8.formatToPlainString(getSystemLocale.t["r+b3I4"], { min: constants2.MEMBER_AGE });
   obj2[2] = constants.HIGH;
   let unsafe_getRawColorResult2;
   if (!flag2) {
@@ -111,9 +113,9 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   items[3] = obj2;
   const obj4 = { name: null, desc: null, value: null, color: null };
   const intl9 = tmp(1236).intl;
-  obj4[0] = intl9.string(require(1236) /* getSystemLocale */.t.cJY8w9);
+  obj4[0] = intl9.string(getSystemLocale.t.cJY8w9);
   const intl10 = tmp(1236).intl;
-  obj4[1] = intl10.string(require(1236) /* getSystemLocale */.t.PWaKme);
+  obj4[1] = intl10.string(getSystemLocale.t.PWaKme);
   obj4[2] = constants.VERY_HIGH;
   let unsafe_getRawColorResult3;
   if (!flag2) {
@@ -130,19 +132,19 @@ export const generateContentFilterHighlightedOptions = function generateContentF
     flag = false;
   }
   let obj = { name: null, desc: null, value: null, color: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.iHuPE6);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["Z+yUWF"]);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.iHuPE6);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t["Z+yUWF"]);
   obj[2] = constants3.ALL_MEMBERS;
-  obj[3] = require(711) /* unsafe_getRawColor */.unsafe_getRawColor("RED_400");
+  obj[3] = unsafe_getRawColor.unsafe_getRawColor("RED_400");
   const items = [obj, , ];
   obj = { name: null, desc: null, value: null, disabled: null, color: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.ynfFaI);
-  const intl4 = require(1236) /* getSystemLocale */.intl;
+  const intl3 = getSystemLocale.intl;
+  obj[0] = intl3.string(getSystemLocale.t.ynfFaI);
+  const intl4 = getSystemLocale.intl;
   const string = intl4.string;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (flag) {
     let stringResult = string(t.j9WtHx);
   } else {
@@ -156,7 +158,7 @@ export const generateContentFilterHighlightedOptions = function generateContentF
   items[1] = obj;
   obj = { name: null, desc: null, value: null, disabled: null, color: null };
   const intl5 = tmp(1236).intl;
-  obj[0] = intl5.string(require(1236) /* getSystemLocale */.t.VbSyAx);
+  obj[0] = intl5.string(getSystemLocale.t.VbSyAx);
   const intl6 = tmp(1236).intl;
   const string2 = intl6.string;
   const t2 = tmp(1236).t;
@@ -179,18 +181,18 @@ export const generateContentFilterOptions = function generateContentFilterOption
     flag = false;
   }
   let obj = { name: null, desc: null, value: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.iHuPE6);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["Z+yUWF"]);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.iHuPE6);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t["Z+yUWF"]);
   obj[2] = constants3.ALL_MEMBERS;
   const items = [obj, , ];
   obj = { name: null, desc: null, value: null, disabled: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.ynfFaI);
-  const intl4 = require(1236) /* getSystemLocale */.intl;
+  const intl3 = getSystemLocale.intl;
+  obj[0] = intl3.string(getSystemLocale.t.ynfFaI);
+  const intl4 = getSystemLocale.intl;
   const string = intl4.string;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (flag) {
     let stringResult = string(t.j9WtHx);
   } else {
@@ -202,7 +204,7 @@ export const generateContentFilterOptions = function generateContentFilterOption
   items[1] = obj;
   obj = { name: null, desc: null, value: null, disabled: null };
   const intl5 = tmp(1236).intl;
-  obj[0] = intl5.string(require(1236) /* getSystemLocale */.t.VbSyAx);
+  obj[0] = intl5.string(getSystemLocale.t.VbSyAx);
   const intl6 = tmp(1236).intl;
   const string2 = intl6.string;
   const t2 = tmp(1236).t;
@@ -219,54 +221,54 @@ export const generateContentFilterOptions = function generateContentFilterOption
 };
 export const generateDmSpamOptions = function generateDmSpamOptions() {
   let obj = { name: null, desc: null, value: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["4IaoCI"]);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.TgipjE);
-  obj[2] = require(1306) /* create */.DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["4IaoCI"]);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t.TgipjE);
+  obj[2] = create.DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
   const items = [obj, , ];
   obj = { name: null, desc: null, value: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["6NnX6F"]);
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl4.string(require(1236) /* getSystemLocale */.t["+dw1qu"]);
-  obj[2] = require(1306) /* create */.DmSpamFilterV2.NON_FRIENDS;
+  const intl3 = getSystemLocale.intl;
+  obj[0] = intl3.string(getSystemLocale.t["6NnX6F"]);
+  const intl4 = getSystemLocale.intl;
+  obj[1] = intl4.string(getSystemLocale.t["+dw1qu"]);
+  obj[2] = create.DmSpamFilterV2.NON_FRIENDS;
   items[1] = obj;
   obj = { name: null, desc: null, value: null };
-  const intl5 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl5.string(require(1236) /* getSystemLocale */.t["1tiAFz"]);
-  const intl6 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl6.string(require(1236) /* getSystemLocale */.t.LKTyeA);
-  obj[2] = require(1306) /* create */.DmSpamFilterV2.DISABLED;
+  const intl5 = getSystemLocale.intl;
+  obj[0] = intl5.string(getSystemLocale.t["1tiAFz"]);
+  const intl6 = getSystemLocale.intl;
+  obj[1] = intl6.string(getSystemLocale.t.LKTyeA);
+  obj[2] = create.DmSpamFilterV2.DISABLED;
   items[2] = obj;
   return items;
 };
 export const generateExplicitImageOptions = function generateExplicitImageOptions() {
   let obj = { name: null, desc: null, value: null, color: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.PhNlhz);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["Fw+Lvp"]);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.PhNlhz);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t["Fw+Lvp"]);
   obj[2] = constants4.FRIENDS_AND_NON_FRIENDS;
-  obj[3] = require(711) /* unsafe_getRawColor */.unsafe_getRawColor("GREEN_360");
+  obj[3] = unsafe_getRawColor.unsafe_getRawColor("GREEN_360");
   const items = [obj, , ];
   obj = { name: null, desc: null, value: null, color: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["8ioJ4S"]);
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl4.string(require(1236) /* getSystemLocale */.t.z4l4Cr);
+  const intl3 = getSystemLocale.intl;
+  obj[0] = intl3.string(getSystemLocale.t["8ioJ4S"]);
+  const intl4 = getSystemLocale.intl;
+  obj[1] = intl4.string(getSystemLocale.t.z4l4Cr);
   obj[2] = constants4.NON_FRIENDS;
-  const obj2 = require(711) /* unsafe_getRawColor */;
-  obj[3] = require(711) /* unsafe_getRawColor */.unsafe_getRawColor("YELLOW_360");
+  const obj2 = unsafe_getRawColor;
+  obj[3] = unsafe_getRawColor.unsafe_getRawColor("YELLOW_360");
   items[1] = obj;
   obj = { name: null, desc: null, value: null, color: null };
-  const intl5 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl5.string(require(1236) /* getSystemLocale */.t.FLfuhL);
-  const intl6 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl6.string(require(1236) /* getSystemLocale */.t.MoZlaD);
+  const intl5 = getSystemLocale.intl;
+  obj[0] = intl5.string(getSystemLocale.t.FLfuhL);
+  const intl6 = getSystemLocale.intl;
+  obj[1] = intl6.string(getSystemLocale.t.MoZlaD);
   obj[2] = constants4.DISABLED;
-  const obj4 = require(711) /* unsafe_getRawColor */;
-  obj[3] = require(711) /* unsafe_getRawColor */.unsafe_getRawColor("RED_400");
+  const obj4 = unsafe_getRawColor;
+  obj[3] = unsafe_getRawColor.unsafe_getRawColor("RED_400");
   items[2] = obj;
   return items;
 };

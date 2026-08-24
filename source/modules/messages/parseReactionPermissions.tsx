@@ -1,21 +1,15 @@
-// Module ID: 10518
-// Function ID: 10519
+// Module ID: 10557
+// Function ID: 10558
 // Name: parseReactionPermissions
 // Dependencies: [2]
 // Exports: default
 
-// Module 10518 (parseReactionPermissions)
-const result = require("set").fileFinishedImporting("modules/messages/parseReactionPermissions.tsx");
+// Module 10557 (parseReactionPermissions)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/messages/parseReactionPermissions.tsx");
 
 export default function parseReactionPermissions(arg0) {
-  let canAddNewReactions;
-  let canChat;
-  let channel;
-  let communicationDisabled;
-  let isActiveChannelOrUnarchivableThread;
-  let isAutomodQuarantined;
-  let isLurking;
-  let renderReactions;
   ({ channel, canChat, isLurking, isActiveChannelOrUnarchivableThread, renderReactions, canAddNewReactions, communicationDisabled, isAutomodQuarantined } = arg0);
   const isPrivateResult = channel.isPrivate();
   const isMediaThreadResult = channel.isMediaThread();

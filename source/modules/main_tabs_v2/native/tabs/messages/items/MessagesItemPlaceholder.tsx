@@ -1,17 +1,16 @@
-// Module ID: 15305
-// Function ID: 15306
-// Dependencies: [19, 21, 8928, 2]
+// Module ID: 15369
+// Function ID: 15370
+// Dependencies: [19, 21, 8965, 2]
 
-// Module 15305
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 15369
+import _modDef8965 from "module_8965" /* 8965 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const memoResult = require("noop").memo(function MessagesItemPlaceholder(arg0) {
-  let height;
-  let row;
+const memoResult = importAllResult.memo(function MessagesItemPlaceholder(arg0) {
   ({ row, height } = arg0);
-  return jsx(importDefault(8928), { row, height });
+  return jsx(_modDef8965, { row, height });
 });
-const result = require("module_8928").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemPlaceholder.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemPlaceholder.tsx");
 
 export default memoResult;

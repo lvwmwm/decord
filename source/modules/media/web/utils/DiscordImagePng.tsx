@@ -1,10 +1,11 @@
-// Module ID: 4907
-// Function ID: 4908
+// Module ID: 4912
+// Function ID: 4913
 // Name: create
-// Dependencies: [5, 1952, 4908, 2]
+// Dependencies: [5, 1952, 4913, 2]
 
-// Module 4907 (create)
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 4912 (create)
+import decodeImageDefault from "decodeImage" /* 1952 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
 let DiscordImagePng;
@@ -19,7 +20,7 @@ class DiscordImagePng {
 const prototype = DiscordImagePng.prototype;
 DiscordImagePng["create"] = function create(originalBuffer) {
   try {
-    return new DiscordImagePng(importDefault(1952).decode(originalBuffer), originalBuffer);
+    return new DiscordImagePng(decodeImageDefault.decode(originalBuffer), originalBuffer);
   } catch (err) {
   }
 };
@@ -30,7 +31,7 @@ prototype["hasTransparency"] = function hasTransparency() {
       return false;
     }
   }
-  const uint8Array = new Uint8Array(importDefault(1952).toRGBA8(self.img)[0]);
+  const uint8Array = new Uint8Array(decodeImageDefault.toRGBA8(self.img)[0]);
   let num2 = 3;
   if (3 < uint8Array.length) {
     while (uint8Array[num2] >= 255) {
@@ -64,7 +65,7 @@ prototype["hasSrgbIccProfile"] = function hasSrgbIccProfile() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -84,19 +85,19 @@ prototype["hasSrgbIccProfile"] = function hasSrgbIccProfile() {
             return obj;
           } else {
             let dependencyMap2 = tmp3;
-            let closure_0;
-            let dependencyMap;
+            closure_0 = undefined;
+            dependencyMap = undefined;
             dependencyMap2 = undefined;
             c3 = undefined;
-            let tmp22 = outer1_0;
-            let tmp23 = outer1_2;
-            let obj3 = outer1_0(outer1_2[2]);
-            let tmp24 = outer1_0;
+            let tmp22 = closure_1_0;
+            let tmp23 = closure_1_2;
+            let obj3 = closure_1_0(closure_1_2[2]);
+            let tmp24 = closure_1_0;
             c3 = 1;
             let num7 = 1;
             c6 = 1;
-            let obj1 = { value: null, done: false };
-            obj1[0] = obj3.load(outer1_0.originalBuffer, { async: true, expanded: true, includeUnknown: true });
+            obj1 = { value: null, done: false };
+            obj1[0] = obj3.load(closure_1_0.originalBuffer, { async: true, expanded: true, includeUnknown: true });
             return obj1;
           }
         } else if (1 === tmp3) {
@@ -134,7 +135,7 @@ prototype["hasSrgbIccProfile"] = function hasSrgbIccProfile() {
               let tmp8 = closure_0;
               while (closure_0 !== undefined) {
                 let tmp38 = dependencyMap2;
-                let c5 = 1;
+                c5 = 1;
                 c3 = tmp9;
                 let tmp39 = c3;
                 if ("ICC Description" === c3) {
@@ -190,6 +191,6 @@ prototype["hasSrgbIccProfile"] = function hasSrgbIccProfile() {
 prototype["getBuffer"] = function getBuffer() {
   return this.originalBuffer;
 };
-const result = require("load").fileFinishedImporting("modules/media/web/utils/DiscordImagePng.tsx");
+const result = require("set").fileFinishedImporting("modules/media/web/utils/DiscordImagePng.tsx");
 
 export { DiscordImagePng };

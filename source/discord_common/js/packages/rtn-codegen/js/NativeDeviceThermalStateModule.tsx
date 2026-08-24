@@ -1,12 +1,14 @@
-// Module ID: 8721
-// Function ID: 8722
+// Module ID: 8758
+// Function ID: 8759
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 8721 (enforcing)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 8758 (enforcing)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeDeviceThermalStateModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeDeviceThermalStateModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeDeviceThermalStateModule.tsx");
 
 export default enforcing;

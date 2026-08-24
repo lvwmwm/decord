@@ -1,30 +1,29 @@
-// Module ID: 14273
-// Function ID: 14274
+// Module ID: 14341
+// Function ID: 14342
 // Name: FamilyCenterEmpty
-// Dependencies: [19, 17, 21, 4661, 14274, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 14342, 4739, 2]
 // Exports: default
 
-// Module 14273 (FamilyCenterEmpty)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14341 (FamilyCenterEmpty)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import registerAssetDefault from "registerAsset" /* 14342 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ View: c3, Image: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ art: { marginBottom: 10, width: 243 }, empty: { display: "flex", alignItems: "center" } });
-const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterEmpty.tsx");
+const result = require("set").fileFinishedImporting("modules/parent_tools/native/FamilyCenterEmpty.tsx");
 
 export default function FamilyCenterEmpty(children) {
   const tmp = callback3();
   let obj = { style: tmp.empty, children: null };
-  obj = { source: importDefault(14274), style: tmp.art, resizeMethod: "scale" };
-  const items = [callback(closure_4, obj), callback(require(4734) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted", children: children.text })];
+  obj = { source: registerAssetDefault, style: tmp.art, resizeMethod: "scale" };
+  const items = [callback(closure_4, obj), callback(Text.Text, { variant: "text-sm/medium", color: "text-muted", children: children.text })];
   obj[1] = items;
   return callback2(closure_3, obj);
 };

@@ -1,14 +1,15 @@
-// Module ID: 17107
-// Function ID: 17108
+// Module ID: 17201
+// Function ID: 17202
 // Name: isLikelyControl
-// Dependencies: [4288, 1212, 4197, 1208, 5038, 2]
+// Dependencies: [4292, 1212, 4201, 1208, 5043, 2]
 
-// Module 17107 (isLikelyControl)
-import getHash from "getHash";
-import initialize from "initialize";
-import handleConnectionOpen from "handleConnectionOpen";
-import "initialize";
-import set from "handleConnectionOpen";
+// Module 17201 (isLikelyControl)
+import _modDef1208 from "module_1208" /* 1208 */;
+import initializeDefault from "initialize" /* 5043 */;
+import closure_2 from "getHash" /* 4292 */;
+import closure_3 from "initialize" /* 1212 */;
+import closure_4 from "handleConnectionOpen" /* 4201 */;
+import set from "set" /* 2 */;
 
 function isLikelyControl(defaultConfig, variantId2) {
   if (null == defaultConfig) {
@@ -32,7 +33,7 @@ function flushFlags(items, set) {
     let tmp4 = importDefault;
     let tmp5 = dependencyMap;
     let tmp3 = nextResult;
-    let obj = importDefault(1208);
+    let obj = _modDef1208;
     let addFeatureFlagResult = obj.addFeatureFlag(nextResult, true);
     if (set != null) {
       let tmp7 = nextResult;
@@ -214,11 +215,12 @@ function syncAllExperimentFlags() {
   flushFlags(items6, set);
 }
 let set = new Set();
+initializeDefault;
 let prototype = function SentryExperimentFeatureFlagManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const result = new Map().set(getHash, syncAllExperimentFlags);
-  const result1 = result.set(initialize, syncAllExperimentFlags);
-  applyArgumentsResult.stores = result1.set(handleConnectionOpen, syncAllExperimentFlags);
+  const result = new Map().set(closure_2, syncAllExperimentFlags);
+  const result1 = result.set(closure_3, syncAllExperimentFlags);
+  applyArgumentsResult.stores = result1.set(closure_4, syncAllExperimentFlags);
   return applyArgumentsResult;
 }.prototype;
 class prototype extends tmp3 {

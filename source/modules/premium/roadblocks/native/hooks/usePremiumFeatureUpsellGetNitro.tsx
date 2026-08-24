@@ -1,37 +1,38 @@
-// Module ID: 9395
-// Function ID: 9396
+// Module ID: 9432
+// Function ID: 9433
 // Name: usePremiumFeatureUpsellGetNitro
-// Dependencies: [32, 19, 4045, 7421, 1924, 676, 7139, 7393, 4466, 7876, 4093, 1236, 4237, 2]
+// Dependencies: [32, 19, 4048, 7459, 1924, 676, 7177, 7431, 4470, 7915, 4096, 1236, 4241, 2]
 // Exports: default
 
-// Module 9395 (usePremiumFeatureUpsellGetNitro)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import reset from "reset";
-import emitChanges from "emitChanges";
-import { PremiumTypes } from "GuildFeatures";
-import { AnalyticsObjectTypes } from "ME";
+// Module 9432 (usePremiumFeatureUpsellGetNitro)
+import contextDefault from "context" /* 7177 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import closure_6 from "reset" /* 4048 */;
+import closure_7 from "emitChanges" /* 7459 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { AnalyticsObjectTypes } from "ME" /* 676 */;
 
 const require = arg1;
-let result = require("reset").fileFinishedImporting("modules/premium/roadblocks/native/hooks/usePremiumFeatureUpsellGetNitro.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/roadblocks/native/hooks/usePremiumFeatureUpsellGetNitro.tsx");
 
 export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) {
-  let closure_0 = arg0;
-  const importDefault = arg1;
-  let closure_2 = arg2;
-  const dependencyMap = arg3;
+  closure_0 = arg0;
+  importDefault = arg1;
+  closure_2 = arg2;
+  dependencyMap = arg3;
   let items = arg4;
   if (arg4 === undefined) {
     items = [];
   }
   let callback;
   let analyticsLocations;
-  let reset;
+  closure_6 = undefined;
   let onPress;
   const loading = callback(analyticsLocations.useState(false), 2);
   callback = loading[1];
-  analyticsLocations = importDefault(7139)(items).analyticsLocations;
-  reset = analyticsLocations.useRef(0);
+  analyticsLocations = contextDefault(items).analyticsLocations;
+  closure_6 = analyticsLocations.useRef(0);
   const items1 = [arg2, analyticsLocations, arg1, arg0, arg3];
   onPress = analyticsLocations.useCallback(() => {
     const premiumTypeSubscription = ref.getPremiumTypeSubscription(false);
@@ -49,11 +50,11 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
           obj = { analyticsLocation: null, analyticsLocations: null, premiumType: null };
           obj = { page: null, objectType: null };
           obj[0] = closure_2;
-          obj[1] = outer1_9.BUY;
+          obj[1] = closure_1_9.BUY;
           obj[0] = obj;
           obj[1] = analyticsLocations;
-          obj[2] = callback ? outer1_8.TIER_0 : outer1_8.TIER_2;
-          callback2(7393)(obj, dependencyMap);
+          obj[2] = callback ? closure_1_8.TIER_0 : closure_1_8.TIER_2;
+          callback2(7431)(obj, dependencyMap);
         }
       }
     }
@@ -63,15 +64,15 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
         if (result) {
           let resolved = Promise.resolve();
         } else {
-          resolved = callback(4466).fetchSubscriptions();
-          const obj2 = callback(4466);
+          resolved = callback(4470).fetchSubscriptions();
+          const obj2 = callback(4470);
         }
         const items = [resolved, ];
         if (isFetchingOfferResult) {
           let resolved1 = Promise.resolve();
         } else {
-          resolved1 = callback(7876).fetchUserOffer("usePremiumFeatureUpsellGetNitro");
-          const obj3 = callback(7876);
+          resolved1 = callback(7915).fetchUserOffer("usePremiumFeatureUpsellGetNitro");
+          const obj3 = callback(7915);
         }
         items[1] = resolved1;
         const allPromises = Promise.all(items);
@@ -84,20 +85,20 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
           callback4();
         }).catch(() => {
           const intl = callback(1236).intl;
-          callback2(4093).presentFailedToast(intl.string(callback(1236).t.R0RpRX));
+          callback2(4096).presentFailedToast(intl.string(callback(1236).t.R0RpRX));
         }).finally(() => callback3(false));
         const catchPromise = Promise.all(items).then(() => {
           ref.current = ref.current + 1;
           callback4();
         }).catch(() => {
           const intl = callback(1236).intl;
-          callback2(4093).presentFailedToast(intl.string(callback(1236).t.R0RpRX));
+          callback2(4096).presentFailedToast(intl.string(callback(1236).t.R0RpRX));
         });
       }
     }
     callback2();
     tmp5 = onPress.hasFetchedOffer() && !obj.hasAnyUnexpiredOffer();
-    const bestActiveInput = callback(4237).getBestActiveInput();
+    const bestActiveInput = callback(4241).getBestActiveInput();
     if (bestActiveInput != null) {
       bestActiveInput.closeCustomKeyboard();
     }

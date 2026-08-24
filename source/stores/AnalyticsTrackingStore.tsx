@@ -1,21 +1,25 @@
-// Module ID: 5053
-// Function ID: 5054
+// Module ID: 5058
+// Function ID: 5059
 // Name: result
-// Dependencies: [1218, 676, 503, 709, 5054, 698, 696, 5064, 2]
+// Dependencies: [1218, 676, 503, 709, 5059, 698, 696, 5069, 2]
 
-// Module 5053 (result)
-import importDefaultResult from "fetchFingerprint";
-import encodeProperties from "encodeProperties";
+// Module 5058 (result)
+import encodeProperties2 from "encodeProperties" /* 503 */;
+import expandEventProperties from "expandEventProperties" /* 698 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import trackHeartbeat from "trackHeartbeat" /* 5059 */;
+import importDefaultResult from "fetchFingerprint" /* 1218 */;
+import encodeProperties from "encodeProperties" /* 503 */;
 
-const require = arg1;
+require = arg1;
 encodeProperties = {
-  dispatcher: require("dispatcher"),
+  dispatcher: dispatcherDefault,
   actionHandler: encodeProperties,
   TRACKING_URL: require("ME").Endpoints.TRACK,
   waitFor: items,
   getFingerprint: importDefaultResult.getFingerprint,
   getSessionId() {
-    const session = require(5054) /* trackHeartbeat */.getSession();
+    const session = trackHeartbeat.getSession();
     return session.then((uuid) => {
       let sessionId;
       if (uuid != null) {
@@ -25,36 +29,36 @@ encodeProperties = {
     });
   },
   getLaunchSignature() {
-    return require(698) /* expandEventProperties */.launchSignature;
+    return expandEventProperties.launchSignature;
   },
   scheduleWhenIdle: require("setOriginWindow").requestSafeIdleCallback,
   sendUnloadRequest: require("sendUnloadRequest").sendUnloadRequest
 };
 encodeProperties = {
   CONNECTION_OPEN(arg0) {
-    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleConnectionOpen(arg0);
+    return encodeProperties2.AnalyticsActionHandlers.handleConnectionOpen(arg0);
   },
   OVERLAY_INITIALIZE(arg0) {
-    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleConnectionOpen(arg0);
+    return encodeProperties2.AnalyticsActionHandlers.handleConnectionOpen(arg0);
   },
   CURRENT_USER_UPDATE(arg0) {
-    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleConnectionOpen(arg0);
+    return encodeProperties2.AnalyticsActionHandlers.handleConnectionOpen(arg0);
   },
   CONNECTION_CLOSED() {
-    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleConnectionClosed();
+    return encodeProperties2.AnalyticsActionHandlers.handleConnectionClosed();
   },
   FINGERPRINT() {
-    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleFingerprint();
+    return encodeProperties2.AnalyticsActionHandlers.handleFingerprint();
   },
   TRACK(arg0) {
-    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleTrack(arg0);
+    return encodeProperties2.AnalyticsActionHandlers.handleTrack(arg0);
   },
   SET_ANALYTICS_TOKEN(arg0) {
-    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleSetAnalyticsToken(arg0);
+    return encodeProperties2.AnalyticsActionHandlers.handleSetAnalyticsToken(arg0);
   }
 };
 items = [importDefaultResult];
 encodeProperties = encodeProperties.analyticsTrackingStoreMaker(encodeProperties);
-const result1 = require("encodeProperties").fileFinishedImporting("stores/AnalyticsTrackingStore.tsx");
+const result1 = require("set").fileFinishedImporting("stores/AnalyticsTrackingStore.tsx");
 
 export default encodeProperties;

@@ -1,12 +1,14 @@
-// Module ID: 10733
-// Function ID: 10734
+// Module ID: 10772
+// Function ID: 10773
 // Name: start
-// Dependencies: [676, 5057, 2]
+// Dependencies: [676, 5062, 2]
 
-// Module 10733 (start)
-import { AnalyticEvents } from "ME";
-import set from "set";
+// Module 10772 (start)
+import ME from "ME" /* 676 */;
+import isClickstreamEnabled from "isClickstreamEnabled" /* 5062 */;
+import set from "set" /* 2 */;
 
+const AnalyticEvents = ME.AnalyticEvents;
 let ChannelLatestMessageLoadingStatsManager;
 class ChannelLatestMessageLoadingStatsManager {
   constructor(arg0) {
@@ -34,7 +36,7 @@ prototype["finish"] = function finish(channelId) {
         const seenChannelIds = tmp10.seenChannelIds;
         seenChannelIds.add(channelId.channelId);
       }
-      let obj = require(5057) /* isClickstreamEnabled */;
+      let obj = isClickstreamEnabled;
       obj = { load_duration_ms: null, were_messages_cached: null, is_first_load: null };
       obj[0] = diff;
       obj[1] = channelId.areMessagesCached;

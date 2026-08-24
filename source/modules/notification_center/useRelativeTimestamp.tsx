@@ -1,15 +1,15 @@
-// Module ID: 15301
-// Function ID: 15302
+// Module ID: 15365
+// Function ID: 15366
 // Name: useRelativeTimestamp
-// Dependencies: [32, 19, 4967, 687, 2]
+// Dependencies: [32, 19, 4972, 687, 2]
 // Exports: useRelativeTimestamp
 
-// Module 15301 (useRelativeTimestamp)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 15365 (useRelativeTimestamp)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("getRelativeTimestamp").fileFinishedImporting("modules/notification_center/useRelativeTimestamp.tsx");
+const result = require("set").fileFinishedImporting("modules/notification_center/useRelativeTimestamp.tsx");
 
 export const useRelativeTimestamp = function useRelativeTimestamp(timestamp) {
   timestamp = timestamp.timestamp;
@@ -17,12 +17,12 @@ export const useRelativeTimestamp = function useRelativeTimestamp(timestamp) {
   if (flag === undefined) {
     flag = true;
   }
-  let closure_2;
-  const tmp = callback(React.useState(() => timestamp(4967).getRelativeTimestamp(timestamp, flag)), 2);
+  closure_2 = undefined;
+  const tmp = callback(React.useState(() => timestamp(4972).getRelativeTimestamp(timestamp, flag)), 2);
   closure_2 = tmp[1];
   const items = [timestamp, flag];
   const effect = React.useEffect(() => {
-    dependencyMap(timestamp(4967).getRelativeTimestamp(interval, flag));
+    dependencyMap(timestamp(4972).getRelativeTimestamp(interval, flag));
     const diff = Date.now() - interval;
     if (diff <= flag(687).Millis.DAY) {
       if (diff >= tmp4(687).Millis.HOUR) {
@@ -32,11 +32,11 @@ export const useRelativeTimestamp = function useRelativeTimestamp(timestamp) {
       }
       const _setInterval = setInterval;
       interval = setInterval(() => {
-        callback2(callback(outer1_2[2]).getRelativeTimestamp(callback, closure_1));
+        callback2(callback(closure_1_2[2]).getRelativeTimestamp(callback, closure_1));
       }, MINUTE, MINUTE - diff % MINUTE);
       return () => clearInterval(closure_0);
     }
-    const obj = timestamp(4967);
+    const obj = timestamp(4972);
   }, items);
   return tmp[0];
 };

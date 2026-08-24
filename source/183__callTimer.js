@@ -4,7 +4,11 @@
 // Dependencies: [184, 38, 185, 39]
 
 // Module 183 (_callTimer)
-let require = arg1;
+import _mod38 from "module_38" /* 38 */;
+import toError from "toError" /* 184 */;
+import TimingDefault from "Timing" /* 185 */;
+
+require = arg1;
 function _callTimer(arg0, arg1) {
   const _global = arg1;
   if (arg0 > c12) {
@@ -26,10 +30,10 @@ function _callTimer(arg0, arg1) {
                   let _performance = _global.performance;
                   tmp23(_performance.now());
                 } else if ("requestIdleCallback" === tmp21) {
-                  const obj = { timeRemaining: null, didTimeout: null };
+                  obj = { timeRemaining: null, didTimeout: null };
                   obj[0] = function timeRemaining() {
                     _performance = _performance.performance;
-                    return Math.max(0, outer1_4 - (_performance.now() - _performance));
+                    return Math.max(0, closure_1_4 - (_performance.now() - _performance));
                   };
                   obj[1] = arg2;
                   tmp23(obj);
@@ -42,8 +46,8 @@ function _callTimer(arg0, arg1) {
           }
           tmp23();
         } catch (tmp15) {
-          arr4.push(require(184) /* toError */.default(tmp15));
-          const obj2 = require(184) /* toError */;
+          arr4.push(toError.default(tmp15));
+          const obj2 = toError;
         }
       }
     }
@@ -69,9 +73,9 @@ let closure_13 = [];
 let c14 = false;
 let obj = {
   setTimeout(arg0, arg1) {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const _require = [...arguments].slice();
-    let closure_12 = tmp + 1;
+    closure_12 = tmp + 1;
     let length = arr.pop();
     if (undefined === length) {
       length = closure_7.length;
@@ -84,15 +88,15 @@ let obj = {
       num = 0;
     }
     const timestamp = Date.now();
-    _require(38)(importDefault(185), "NativeTiming is available");
+    _require(38)(TimingDefault, "NativeTiming is available");
     const tmp4 = _require(38);
-    const timer = importDefault(185).createTimer(tmp, num, timestamp, false);
+    const timer = TimingDefault.createTimer(tmp, num, timestamp, false);
     return +closure_12;
   },
   setInterval(arg0, arg1) {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const _require = [...arguments].slice();
-    let closure_12 = tmp + 1;
+    closure_12 = tmp + 1;
     let length = arr.pop();
     if (undefined === length) {
       length = closure_7.length;
@@ -105,15 +109,15 @@ let obj = {
       num = 0;
     }
     const timestamp = Date.now();
-    _require(38)(importDefault(185), "NativeTiming is available");
+    _require(38)(TimingDefault, "NativeTiming is available");
     const tmp4 = _require(38);
-    const timer = importDefault(185).createTimer(tmp, num, timestamp, true);
+    const timer = TimingDefault.createTimer(tmp, num, timestamp, true);
     return +closure_12;
   },
   queueReactNativeMicrotask(arg0) {
-    let closure_0 = arg0;
-    let closure_1 = [...arguments].slice();
-    let closure_12 = tmp + 1;
+    closure_0 = arg0;
+    closure_1 = [...arguments].slice();
+    closure_12 = tmp + 1;
     let length = arr.pop();
     if (undefined === length) {
       length = closure_7.length;
@@ -124,7 +128,7 @@ let obj = {
     return +closure_12;
   },
   requestAnimationFrame(scrollAnimation, items) {
-    let closure_12 = tmp + 1;
+    closure_12 = tmp + 1;
     let length = arr.pop();
     if (undefined === length) {
       length = closure_7.length;
@@ -133,33 +137,33 @@ let obj = {
     closure_5[length] = scrollAnimation;
     closure_6[length] = "requestAnimationFrame";
     const timestamp = Date.now();
-    require(38)(importDefault(185), "NativeTiming is available");
-    const tmp4 = require(38);
-    const timer = importDefault(185).createTimer(tmp, 1, timestamp, false);
+    _mod38(TimingDefault, "NativeTiming is available");
+    const tmp4 = _mod38;
+    const timer = TimingDefault.createTimer(tmp, 1, timestamp, false);
     return +closure_12;
   },
   requestIdleCallback(arg0, timeout) {
     let fn = arg0;
-    let closure_0 = arg0;
+    closure_0 = arg0;
     if (0 === arr3.length) {
-      require(38)(importDefault(185), "NativeTiming is available");
-      let obj = importDefault(185);
+      _require(38)(TimingDefault, "NativeTiming is available");
+      obj = TimingDefault;
       obj.setSendIdleEvents(true);
-      const tmp3 = require(38);
+      const tmp3 = _require(38);
     }
     if (timeout) {
       timeout = timeout.timeout;
     }
     if (null != timeout) {
       fn = (arg0) => {
-        if (outer1_11[closure_1]) {
-          outer1_17.clearTimeout(tmp3);
+        if (closure_1_11[closure_1]) {
+          closure_1_17.clearTimeout(tmp3);
           delete tmp2[tmp];
         }
         return lib(arg0);
       };
     }
-    let closure_12 = tmp7 + 1;
+    closure_12 = tmp7 + 1;
     let length = arr.pop();
     if (undefined === length) {
       length = closure_7.length;
@@ -167,21 +171,21 @@ let obj = {
     closure_7[length] = +closure_12;
     closure_5[length] = fn;
     closure_6[length] = "requestIdleCallback";
-    require = tmp7;
+    _require = tmp7;
     if (null != timeout) {
       closure_11[tmp7] = obj.setTimeout(() => {
-        const index = outer1_10.indexOf(tmp7);
+        const index = closure_1_10.indexOf(callback);
         if (index > -1) {
-          outer1_10.splice(index, 1);
+          closure_1_10.splice(index, 1);
           const _performance = lib.performance;
-          outer1_15(tmp7, _performance.now(), true);
+          closure_1_15(callback, _performance.now(), true);
         }
         delete tmp[tmp2];
-        if (0 === outer1_10.length) {
-          tmp7(outer1_3[1])(outer1_2(outer1_3[2]), "NativeTiming is available");
-          const tmp12 = tmp7(outer1_3[1]);
-          outer1_2(outer1_3[2]).setSendIdleEvents(false);
-          const obj = outer1_2(outer1_3[2]);
+        if (0 === closure_1_10.length) {
+          callback(closure_1_3[1])(closure_1_2(closure_1_3[2]), "NativeTiming is available");
+          const tmp12 = callback(closure_1_3[1]);
+          closure_1_2(closure_1_3[2]).setSendIdleEvents(false);
+          obj = closure_1_2(closure_1_3[2]);
         }
       }, timeout);
     }
@@ -200,10 +204,10 @@ let obj = {
           tmp3 = "requestIdleCallback" !== tmp25;
         }
         if (tmp3) {
-          require(38)(importDefault(185), "NativeTiming is available");
-          const obj = importDefault(185);
+          _mod38(TimingDefault, "NativeTiming is available");
+          obj = TimingDefault;
           obj.deleteTimer(closure_4);
-          const tmp6 = require(38);
+          const tmp6 = _mod38;
         }
       }
       tmp22 = closure_7;
@@ -217,10 +221,10 @@ let obj = {
       delete tmp[tmp2];
     }
     if (0 === arr3.length) {
-      require(38)(importDefault(185), "NativeTiming is available");
-      const tmp18 = require(38);
-      importDefault(185).setSendIdleEvents(false);
-      const obj2 = importDefault(185);
+      _mod38(TimingDefault, "NativeTiming is available");
+      const tmp18 = _mod38;
+      TimingDefault.setSendIdleEvents(false);
+      const obj2 = TimingDefault;
     }
   },
   clearTimeout(arg0) {
@@ -236,10 +240,10 @@ let obj = {
           tmp = "requestIdleCallback" !== tmp11;
         }
         if (tmp) {
-          require(38)(importDefault(185), "NativeTiming is available");
-          const tmp4 = require(38);
-          importDefault(185).deleteTimer(arg0);
-          const obj = importDefault(185);
+          _mod38(TimingDefault, "NativeTiming is available");
+          const tmp4 = _mod38;
+          TimingDefault.deleteTimer(arg0);
+          obj = TimingDefault;
         }
       }
       tmp8 = closure_7;
@@ -258,10 +262,10 @@ let obj = {
           tmp = "requestIdleCallback" !== tmp11;
         }
         if (tmp) {
-          require(38)(importDefault(185), "NativeTiming is available");
-          const tmp4 = require(38);
-          importDefault(185).deleteTimer(closure_0);
-          const obj = importDefault(185);
+          _mod38(TimingDefault, "NativeTiming is available");
+          const tmp4 = _mod38;
+          TimingDefault.deleteTimer(closure_0);
+          obj = TimingDefault;
         }
       }
       tmp8 = closure_7;
@@ -280,10 +284,10 @@ let obj = {
           tmp = "requestIdleCallback" !== tmp14;
         }
         if (tmp) {
-          require(38)(importDefault(185), "NativeTiming is available");
-          const tmp4 = require(38);
-          importDefault(185).deleteTimer(arg0);
-          const obj = importDefault(185);
+          _mod38(TimingDefault, "NativeTiming is available");
+          const tmp4 = _mod38;
+          TimingDefault.deleteTimer(arg0);
+          obj = TimingDefault;
         }
       }
       tmp11 = closure_7;
@@ -306,10 +310,10 @@ let obj = {
           tmp = "requestIdleCallback" !== tmp11;
         }
         if (tmp) {
-          require(38)(importDefault(185), "NativeTiming is available");
-          const tmp4 = require(38);
-          importDefault(185).deleteTimer(closure_0);
-          const obj = importDefault(185);
+          _mod38(TimingDefault, "NativeTiming is available");
+          const tmp4 = _mod38;
+          TimingDefault.deleteTimer(closure_0);
+          obj = TimingDefault;
         }
       }
       tmp8 = closure_7;
@@ -317,7 +321,7 @@ let obj = {
   },
   callTimers(arg0) {
     let length;
-    require(38)(0 !== arg0.length, "Cannot call `callTimers` with an empty list of IDs.");
+    _mod38(0 !== arg0.length, "Cannot call `callTimers` with an empty list of IDs.");
     arr4.length = 0;
     let num = 0;
     if (0 < arg0.length) {
@@ -366,13 +370,13 @@ let obj = {
         }
       }
       if (0 === arr3.length) {
-        require(38)(importDefault(185), "NativeTiming is available");
-        const tmp6 = require(38);
-        importDefault(185).setSendIdleEvents(false);
-        const obj = importDefault(185);
+        _mod38(TimingDefault, "NativeTiming is available");
+        const tmp6 = _mod38;
+        TimingDefault.setSendIdleEvents(false);
+        obj = TimingDefault;
       }
       const item = arr4.forEach((arg0) => {
-        let closure_0 = arg0;
+        closure_0 = arg0;
         return timeout.setTimeout(() => {
           throw closure_0;
         }, 0);
@@ -418,7 +422,7 @@ let obj = {
       } while (flag2);
     }
     const item = arr4.forEach((arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return timeout.setTimeout(() => {
         throw closure_0;
       }, 0);
@@ -433,7 +437,7 @@ let obj = {
   }
 };
 let tmp2 = obj;
-if (!require("Timing")) {
+if (!TimingDefault) {
   let _console = console;
   console.warn("Timing native module is not available, can't set timers.");
   obj = { callReactNativeMicrotasks: null, queueReactNativeMicrotask: null };

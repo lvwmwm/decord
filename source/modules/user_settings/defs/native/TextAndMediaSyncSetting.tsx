@@ -1,26 +1,29 @@
-// Module ID: 14779
-// Function ID: 14780
+// Module ID: 14843
+// Function ID: 14844
 // Name: toggle
-// Dependencies: [1303, 8198, 589, 10669, 1236, 9365, 2]
+// Dependencies: [1303, 8238, 589, 10708, 1236, 9402, 2]
 
-// Module 14779 (toggle)
-import initialize from "initialize";
-import createToggle from "createToggle";
+// Module 14843 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 9402 */;
+import closure_2 from "initialize" /* 1303 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["3340dY"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["3340dY"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.CHAT,
   useValue: function useTextAndMediaSyncSettingValue() {
-    const items = [initialize];
-    return require(589) /* initialize */.useStateFromStores(items, () => initialize.shouldSync("text"));
+    const items = [closure_2];
+    return initialize.useStateFromStores(items, () => closure_2.shouldSync("text"));
   },
-  onValueChange: require("saveGuildFolders").setShouldSyncTextSettings
+  onValueChange: saveGuildFoldersDefault.setShouldSyncTextSettings
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/TextAndMediaSyncSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/TextAndMediaSyncSetting.tsx");
 
 export default createToggle;

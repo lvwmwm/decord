@@ -4,10 +4,12 @@
 // Dependencies: [758]
 
 // Module 757 (getMapData)
+import isKeyable from "isKeyable" /* 758 */;
+
 
 export default function getMapData(__data__, str) {
   __data__ = __data__.__data__;
-  if (require(758) /* isKeyable */(str)) {
+  if (isKeyable(str)) {
     str = "hash";
     if (typeof str === "string") {
       str = "string";

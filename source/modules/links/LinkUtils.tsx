@@ -1,18 +1,19 @@
-// Module ID: 4488
-// Function ID: 4489
+// Module ID: 4492
+// Function ID: 4493
 // Name: ME
-// Dependencies: [1391, 1910, 4021, 676, 1398, 4362, 2]
+// Dependencies: [1391, 1910, 4024, 676, 1398, 4366, 2]
 // Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath
 
-// Module 4488 (ME)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import ME from "ME";
+// Module 4492 (ME)
+import setDefault from "set" /* 4366 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import ME from "ME" /* 676 */;
 
 ME = ME.ME;
 const Permissions = ME.Permissions;
-const mapped = Array.from(require("set").StaticChannelRoutes).map((arg0) => importDefault(4362).escape(arg0));
+const mapped = Array.from(require("set").StaticChannelRoutes).map((arg0) => setDefault.escape(arg0));
 const joined = mapped.join("|");
 const regExp = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)?(\\d+|" + joined + ")?");
 const regExp1 = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)(\\d+|" + joined + ")(?:/)(\\d+)");
@@ -23,7 +24,7 @@ const regExp5 = new RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?");
 const regExp6 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|" + ME + ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?");
 const regExp7 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 const arr = Array.from(require("set").StaticChannelRoutes);
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/links/LinkUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/links/LinkUtils.tsx");
 
 export const CHANNEL_OR_MESSAGES_URL_RE = regExp6;
 export const MEDIA_POST_URL_RE = regExp7;
@@ -88,13 +89,11 @@ export const tryParseEventDetailsPath = function tryParseEventDetailsPath(pathna
 export const canViewChannel = function canViewChannel(channel) {
   let canResult = channel.isPrivate();
   if (!canResult) {
-    canResult = getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel);
+    canResult = closure_4.can(Permissions.VIEW_CHANNEL, channel);
   }
   return canResult;
 };
 export const isAccessibleChannelPath = function isAccessibleChannelPath(arg0) {
-  let channelId;
-  let guildId;
   ({ guildId, channelId } = arg0);
   if (null == guild.getGuild(guildId)) {
     if (guildId !== ME) {
@@ -109,7 +108,7 @@ export const isAccessibleChannelPath = function isAccessibleChannelPath(arg0) {
     if (tmp3) {
       let canResult = channel.isPrivate();
       if (!canResult) {
-        canResult = getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel);
+        canResult = closure_4.can(Permissions.VIEW_CHANNEL, channel);
       }
       tmp3 = canResult;
     }

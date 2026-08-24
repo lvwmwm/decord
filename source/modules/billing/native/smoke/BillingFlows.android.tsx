@@ -1,12 +1,15 @@
-// Module ID: 15153
-// Function ID: 15154
+// Module ID: 15217
+// Function ID: 15218
 // Dependencies: [17, 21, 2]
 
-// Module 15153
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 15217
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-const result = require("set").fileFinishedImporting("modules/billing/native/smoke/BillingFlows.android.tsx");
+const View = get_ActivityIndicator.View;
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("modules/billing/native/smoke/BillingFlows.android.tsx");
 
 export default {
   RunAllFlows() {

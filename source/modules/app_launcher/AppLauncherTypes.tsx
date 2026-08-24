@@ -1,10 +1,12 @@
-// Module ID: 9566
-// Function ID: 9567
+// Module ID: 9603
+// Function ID: 9604
 // Name: AppLauncherEntrypoint
 // Dependencies: [2]
 
-// Module 9566 (AppLauncherEntrypoint)
-const result = require("set").fileFinishedImporting("modules/app_launcher/AppLauncherTypes.tsx");
+// Module 9603 (AppLauncherEntrypoint)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/app_launcher/AppLauncherTypes.tsx");
 
 export const AppLauncherEntrypoint = { NONE: "NONE", TEXT: "TEXT", VOICE: "VOICE" };
 export const AppLauncherSectionName = { SEARCH: "search", RECENT: "recent", INSTALLED: "installed", ACTIVITIES: "activities", RECENT_APPS: "recent_apps", RECENT_COMMANDS: "recent_commands", NEW_TO_APPS: "new_to_apps", APPS_IN_THIS_SERVER: "apps_in_this_server" };

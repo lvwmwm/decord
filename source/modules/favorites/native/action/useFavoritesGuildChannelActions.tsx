@@ -1,38 +1,36 @@
-// Module ID: 10515
-// Function ID: 10516
+// Module ID: 10554
+// Function ID: 10555
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [1218, 1990, 1394, 9979, 1913, 589, 9990, 2]
+// Dependencies: [1218, 1991, 1394, 10018, 1913, 589, 10029, 2]
 // Exports: default
 
-// Module 10515 (useFavoritesGuildChannelActions)
-import fetchFingerprint from "fetchFingerprint";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import initializeFromUserSettings from "initializeFromUserSettings";
+// Module 10554 (useFavoritesGuildChannelActions)
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "trackCommunicationDisabled" /* 1991 */;
+import closure_4 from "initializeFromUserSettings" /* 1394 */;
 
 const require = arg1;
-const result = require("initializeFromUserSettings").fileFinishedImporting("modules/favorites/native/action/useFavoritesGuildChannelActions.tsx");
+const result = require("set").fileFinishedImporting("modules/favorites/native/action/useFavoritesGuildChannelActions.tsx");
 
 export default function useFavoritesGuildChannelActions(channelId, FavoritesGuildActionSheet) {
-  let hasAccess;
-  let isExperimentEnabled;
   const _require = channelId;
-  let obj = _require(9979);
+  let obj = _require(10018);
   const favoritesAccess = obj.useFavoritesAccess(FavoritesGuildActionSheet);
   ({ hasAccess, isExperimentEnabled } = favoritesAccess);
   let isFavoritableChannelResult = _require(1913).isFavoritableChannel(channelId);
   const obj2 = _require(1913);
   const tmp = _require;
-  const items = [initializeFromUserSettings];
-  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_4.isFavorite(channelId.id));
+  const items = [closure_4];
+  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_4.isFavorite(channelId.id));
   const obj3 = _require(589);
-  const isFavoritesGuildSelected = _require(9979).useIsFavoritesGuildSelected();
-  const obj4 = _require(9979);
-  const items1 = [trackCommunicationDisabled, fetchFingerprint];
+  const isFavoritesGuildSelected = _require(10018).useIsFavoritesGuildSelected();
+  const obj4 = _require(10018);
+  const items1 = [closure_3, closure_2];
   if (isFavoritableChannelResult) {
     isFavoritableChannelResult = obj5.useStateFromStores(items1, () => {
       let isMemberResult = null == channelId.guild_id;
       if (!isMemberResult) {
-        isMemberResult = outer1_3.isMember(tmp.guild_id, outer1_2.getId());
+        isMemberResult = closure_1_3.isMember(tmp.guild_id, closure_1_2.getId());
       }
       return isMemberResult;
     });
@@ -48,7 +46,7 @@ export default function useFavoritesGuildChannelActions(channelId, FavoritesGuil
   if (tmp7) {
     tmp7 = !isFavoritesGuildSelected;
   }
-  const favoritesBetaTagDismissibleContent = tmp(9990).useFavoritesBetaTagDismissibleContent(tmp7);
+  const favoritesBetaTagDismissibleContent = tmp(10029).useFavoritesBetaTagDismissibleContent(tmp7);
   obj = { isExperimentEnabled, hasFavoritesAccess: hasAccess, canFavoriteChannel: isFavoritableChannelResult, isChannelInFavorites: stateFromStores, isFavoritesGuild: isFavoritesGuildSelected, channelId: channelId.id, shouldShowBetaTag: favoritesBetaTagDismissibleContent.shouldShowBetaTag, dismissBetaTag: favoritesBetaTagDismissibleContent.dismissBetaTag };
   return obj;
 };

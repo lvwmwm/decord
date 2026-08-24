@@ -1,16 +1,18 @@
-// Module ID: 9695
-// Function ID: 9696
+// Module ID: 9734
+// Function ID: 9735
 // Name: generateDisplayableCode
 // Dependencies: [2]
 // Exports: generateDisplayableCode
 
-// Module 9695 (generateDisplayableCode)
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/libdave/package/src/DisplayableCode.ts");
+// Module 9734 (generateDisplayableCode)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/packages/libdave/package/src/DisplayableCode.ts");
 
 export const generateDisplayableCode = function generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize) {
   if (toByteArrayResult.byteLength < desiredLength) {
     const _Error4 = Error;
-    const error = new Error("data.byteLength must be greater than or equal to desiredLength");
+    error = new Error("data.byteLength must be greater than or equal to desiredLength");
     throw error;
   } else if (desiredLength % chunkSize != 0) {
     const _Error3 = Error;

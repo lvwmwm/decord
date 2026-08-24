@@ -5,12 +5,11 @@
 // Exports: EntryExitTransition
 
 // Module 1748 (addTransformToKeepPosition)
-import _slicedToArray from "_slicedToArray";
+import TransitionType from "TransitionType" /* 1710 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
-const require = arg1;
+require = arg1;
 function addTransformToKeepPosition(style, style2, props, arg3) {
-  let tmp6;
-  let tmp7;
   const entries = Object.entries(style2);
   while (tmp2 !== undefined) {
     let tmp4 = callback;
@@ -46,13 +45,13 @@ function addTransformToKeepPosition(style, style2, props, arg3) {
 
 export const EntryExitTransition = function EntryExitTransition(name, translateX) {
   let obj = { translateX: null, translateY: null, scale: null };
-  const structuredCloneResult = structuredClone(require(1710) /* TransitionType */.AnimationsData[translateX.exiting]);
+  const structuredCloneResult = structuredClone(TransitionType.AnimationsData[translateX.exiting]);
   obj[0] = "" + translateX.translateX + "px";
   obj[1] = "" + translateX.translateY + "px";
   obj[2] = "" + translateX.scaleX + "," + translateX.scaleY;
   obj = { name, style: {}, duration: 300 };
   addTransformToKeepPosition(obj.style, structuredCloneResult.style, obj, true);
-  addTransformToKeepPosition(obj.style, structuredClone(require(1710) /* TransitionType */.AnimationsData[translateX.entering]).style, { translateX: "0px", translateY: "0px", scale: "1,1" }, false);
+  addTransformToKeepPosition(obj.style, structuredClone(TransitionType.AnimationsData[translateX.entering]).style, { translateX: "0px", translateY: "0px", scale: "1,1" }, false);
   (function hideComponentBetweenAnimations(style) {
     const map = new Map();
     if (undefined === style[0].opacity) {

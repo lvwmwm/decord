@@ -1,36 +1,36 @@
-// Module ID: 9306
-// Function ID: 9307
+// Module ID: 9343
+// Function ID: 9344
 // Name: useTopAndNewlyAddedEmojis
-// Dependencies: [6727, 1925, 647, 2]
+// Dependencies: [6764, 1925, 647, 2]
 // Exports: default, getTopAndNewlyAddedEmojis
 
-// Module 9306 (useTopAndNewlyAddedEmojis)
-import getEmojiToGroupId from "getEmojiToGroupId";
-import { EmojiIntention } from "set";
+// Module 9343 (useTopAndNewlyAddedEmojis)
+import closure_2 from "getEmojiToGroupId" /* 6764 */;
+import { EmojiIntention } from "set" /* 1925 */;
 
 const require = arg1;
 let closure_4 = [];
-const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/emoji_picker/hooks/useTopAndNewlyAddedEmojis.tsx");
+const result = require("set").fileFinishedImporting("modules/emoji_picker/hooks/useTopAndNewlyAddedEmojis.tsx");
 
 export default function useTopAndNewlyAddedEmojis(arg0, arg1) {
   const _require = arg0;
-  const dependencyMap = arg1;
-  const items = [getEmojiToGroupId];
+  dependencyMap = arg1;
+  const items = [closure_2];
   const items1 = [arg0, arg1];
   return _require(647).useStateFromStoresObject(items, () => {
-    let obj = outer1_2;
-    if (outer1_2 !== undefined) {
-      if (tmp2 !== outer1_3.REACTION) {
+    let obj = closure_1_2;
+    if (closure_1_2 !== undefined) {
+      if (tmp2 !== closure_1_3.REACTION) {
         let topEmoji = obj.getTopEmoji(tmp);
       } else {
-        topEmoji = outer1_4;
+        topEmoji = closure_1_4;
       }
       obj = { topEmojis: null, newlyAddedEmojis: null };
       obj[0] = topEmoji;
-      if (tmp2 !== outer1_3.REACTION) {
+      if (tmp2 !== closure_1_3.REACTION) {
         let newlyAddedEmoji = obj.getNewlyAddedEmoji(tmp);
       } else {
-        newlyAddedEmoji = outer1_4;
+        newlyAddedEmoji = closure_1_4;
       }
       obj[1] = newlyAddedEmoji;
       return obj;
@@ -38,11 +38,9 @@ export default function useTopAndNewlyAddedEmojis(arg0, arg1) {
   }, items1);
 };
 export const getTopAndNewlyAddedEmojis = function getTopAndNewlyAddedEmojis(emojiStoreInstance) {
-  let guildId;
-  let pickerIntention;
   emojiStoreInstance = emojiStoreInstance.emojiStoreInstance;
   if (emojiStoreInstance === undefined) {
-    emojiStoreInstance = getEmojiToGroupId;
+    emojiStoreInstance = closure_2;
   }
   ({ guildId, pickerIntention } = emojiStoreInstance);
   if (pickerIntention !== EmojiIntention.REACTION) {

@@ -1,15 +1,15 @@
-// Module ID: 12312
-// Function ID: 12313
+// Module ID: 12364
+// Function ID: 12365
 // Name: useConnectionFilteredAppIdentities
-// Dependencies: [19, 4483, 12286, 2]
+// Dependencies: [19, 4487, 12338, 2]
 // Exports: default
 
-// Module 12312 (useConnectionFilteredAppIdentities)
-import noop from "noop";
-import { APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS as closure_3 } from "items";
+// Module 12364 (useConnectionFilteredAppIdentities)
+import closure_2 from "noop" /* 19 */;
+import { APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS as closure_3 } from "items" /* 4487 */;
 
 const require = arg1;
-const result = require("fetchStore").fileFinishedImporting("modules/user_application_identity/hooks/useConnectionFilteredAppIdentities.tsx");
+const result = require("set").fileFinishedImporting("modules/user_application_identity/hooks/useConnectionFilteredAppIdentities.tsx");
 
 export default function useConnectionFilteredAppIdentities(arg0) {
   let obj = arg1;
@@ -30,8 +30,8 @@ export default function useConnectionFilteredAppIdentities(arg0) {
         items = [];
       }
       return items.filter((profile) => {
-        let closure_0 = profile;
-        let someResult = outer1_3.some((applicationId) => {
+        closure_0 = profile;
+        let someResult = closure_1_3.some((applicationId) => {
           let migrationExperimentEnabled = applicationId.applicationId === profile.application_id;
           if (migrationExperimentEnabled) {
             migrationExperimentEnabled = applicationId.getMigrationExperimentEnabled("useConnectionFilteredAppIdentities");

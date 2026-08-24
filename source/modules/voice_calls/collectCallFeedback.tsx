@@ -1,20 +1,22 @@
-// Module ID: 13059
-// Function ID: 13060
+// Module ID: 13114
+// Function ID: 13115
 // Name: collectCallFeedback
-// Dependencies: [9660, 1391, 4497, 4539, 1979, 1922, 9648, 5042, 9664, 9661, 709, 2]
+// Dependencies: [9699, 1391, 4501, 4544, 1980, 1922, 9687, 5047, 9703, 9700, 709, 2]
 // Exports: default
 
-// Module 13059 (collectCallFeedback)
-import handleSyncedStoresUpdate from "handleSyncedStoresUpdate";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createRTCConnection from "createRTCConnection";
-import handleConnectionOpen from "handleConnectionOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import handleAudioRouteChanged from "handleAudioRouteChanged";
+// Module 13114 (collectCallFeedback)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 5047 */;
+import closure_3 from "handleSyncedStoresUpdate" /* 9699 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_6 from "createRTCConnection" /* 4544 */;
+import closure_7 from "handleConnectionOpen" /* 1980 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "handleAudioRouteChanged" /* 9687 */;
 
-const require = arg1;
-const result = require("_detectH265HardwareDecode").fileFinishedImporting("modules/voice_calls/collectCallFeedback.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/voice_calls/collectCallFeedback.tsx");
 
 export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
   voiceChannelId = voiceChannelId.getVoiceChannelId();
@@ -22,7 +24,7 @@ export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
   if (null == arg1) {
     if (null != voiceChannelId) {
       if (null != channel) {
-        let obj1 = rTCConnection;
+        obj1 = rTCConnection;
         rTCConnection = rTCConnection.getRTCConnection();
         let voiceDurationStats;
         if (rTCConnection != null) {
@@ -35,7 +37,7 @@ export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
         obj[4] = obj1.getDuration();
         obj[5] = obj1.getMediaSessionId();
         const guildId = obj1.getGuildId();
-        const merged = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.getVoiceStateMetadata(guildId, obj1.getChannelId(), videoEnabled));
+        const merged = Object.assign(collectGuildAnalyticsMetadata.getVoiceStateMetadata(guildId, obj1.getChannelId(), videoEnabled));
         let duration_muted_ms;
         if (voiceDurationStats != null) {
           duration_muted_ms = voiceDurationStats.duration_muted_ms;
@@ -49,7 +51,7 @@ export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
         if (obj.hasUsedBackgroundInCall) {
           obj = {};
           const merged1 = Object.assign(obj);
-          let tmp5Result = tmp5(9664);
+          let tmp5Result = tmp5(9703);
           const lastUsedVideoBackgroundOption = tmp5Result.getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
           const videoDevices = store.getVideoDevices();
           const tmp22 = videoDevices[store.getVideoDeviceId(store)];
@@ -60,23 +62,23 @@ export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
           obj1 = { video_device_name: null, video_hardware_scaling_enabled: null, video_effect_type: null, video_effect_detail: null };
           obj1[0] = name;
           obj1[1] = store.getHardwareEncoding();
-          tmp5Result = tmp5(9661);
+          tmp5Result = tmp5(9700);
           obj1[2] = tmp5Result.getEffectAnalyticsType(lastUsedVideoBackgroundOption);
-          obj1[3] = tmp5(9661).getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption);
+          obj1[3] = tmp5(9700).getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption);
           const merged2 = Object.assign(obj1);
           const obj10 = store;
-          const tmp5Result1 = tmp5(9661);
+          const tmp5Result1 = tmp5(9700);
           const obj2 = { type: "VIDEO_BACKGROUND_SHOW_FEEDBACK", analyticsData: null };
           obj2[1] = obj;
-          importDefault(709).dispatch(obj2);
-          const obj14 = importDefault(709);
+          dispatcherDefault.dispatch(obj2);
+          const obj14 = dispatcherDefault;
         } else {
           const obj3 = { type: "VOICE_CHANNEL_SHOW_FEEDBACK", analyticsData: null };
           obj3[1] = obj;
-          importDefault(709).dispatch(obj3);
-          const obj6 = importDefault(709);
+          dispatcherDefault.dispatch(obj3);
+          const obj6 = dispatcherDefault;
         }
-        const obj5 = require(5042) /* collectGuildAnalyticsMetadata */;
+        const obj5 = collectGuildAnalyticsMetadata;
       }
     }
   }

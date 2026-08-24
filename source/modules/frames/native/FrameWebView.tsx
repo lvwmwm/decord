@@ -1,15 +1,15 @@
-// Module ID: 16265
-// Function ID: 16266
+// Module ID: 15937
+// Function ID: 15938
 // Name: FrameWebView
-// Dependencies: [19, 21, 12471, 8766, 8705, 2]
+// Dependencies: [19, 21, 12525, 8803, 8742, 2]
 // Exports: default
 
-// Module 16265 (FrameWebView)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 15937 (FrameWebView)
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("getSafeArea").fileFinishedImporting("modules/frames/native/FrameWebView.tsx");
+const result = require("set").fileFinishedImporting("modules/frames/native/FrameWebView.tsx");
 
 export default function FrameWebView(applicationId) {
   const frameId = applicationId.frameId;

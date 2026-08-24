@@ -1,59 +1,54 @@
-// Module ID: 10615
-// Function ID: 10616
+// Module ID: 10654
+// Function ID: 10655
 // Name: VibingWumpusScreen
-// Dependencies: [32, 19, 17, 4662, 10569, 10616, 676, 21, 4661, 712, 647, 9996, 698, 10617, 7130, 10618, 4734, 1236, 4745, 5260, 9003, 9005, 6312, 2]
+// Dependencies: [32, 19, 17, 4669, 10608, 10655, 676, 21, 4668, 712, 647, 10035, 698, 10656, 7168, 10657, 4739, 1236, 4750, 5265, 9040, 9042, 6343, 2]
 // Exports: default
 
-// Module 10615 (VibingWumpusScreen)
-import _slicedToArray from "_slicedToArray";
-import module_5260 from "module_5260";
-import get_ActivityIndicator from "getSystemLocale";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { VIBING_WUMPUS_MODAL_KEY } from "LOCATION_CONTEXT_MOBILE";
-import VibingWumpusAction from "VibingWumpusAction";
-import { AnalyticEvents } from "ME";
-import jsxProd from "PauseIcon";
-import createCacheKey from "createCacheKey";
+// Module 10654 (VibingWumpusScreen)
+import ThemesDefault from "Themes" /* 712 */;
+import NavigationStack from "NavigationStack" /* 6343 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { VIBING_WUMPUS_MODAL_KEY } from "LOCATION_CONTEXT_MOBILE" /* 10608 */;
+import VibingWumpusAction from "VibingWumpusAction" /* 10655 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_12;
-let closure_14;
-let closure_6;
-let map1;
-const require = arg1;
+require = arg1;
 class VibingWumpusScreen {
   constructor() {
-    tmp = Fragment();
-    tmp2 = _slicedToArray(module_5260.useState(false), 2);
+    tmp = closure_15();
+    tmp2 = closure_3(closure_4.useState(false), 2);
     first = tmp2[0];
-    useState = first;
+    closure_0 = first;
     closure_1 = tmp2[1];
-    ref = module_5260.useRef(null);
+    ref = closure_4.useRef(null);
     closure_2 = ref;
-    tmp5 = useState;
+    tmp5 = closure_0;
     tmp6 = closure_2;
     obj = require("defaultAreStatesEqual");
     items = [];
-    items[0] = View;
+    items[0] = closure_7;
     stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-    _slicedToArray = stateFromStores;
-    effect = module_5260.useEffect(() => {
+    closure_3 = stateFromStores;
+    effect = closure_4.useEffect(() => {
       let date = new Date();
       let obj = date(ref[11]);
       let result = obj.playVibingWumpusMusic();
       obj = { source: constants2.INAPPROPRIATE_CONVERSATION };
       callback(ref[12]).track(constants3.VIBING_WUMPUS_VIEWED, obj);
       return () => {
-        let obj = outer1_1(outer1_2[12]);
+        let obj = closure_1_1(closure_1_2[12]);
         obj = { duration_open_ms: null, source: null };
-        const date = new Date();
+        date = new Date();
         const time = date.getTime();
         obj[0] = time - date.getTime();
-        obj[1] = outer1_10.INAPPROPRIATE_CONVERSATION;
-        obj.track(outer1_11.VIBING_WUMPUS_CLOSED, obj);
-        const result = date(outer1_2[11]).stopVibingWumpusMusic();
+        obj[1] = closure_1_10.INAPPROPRIATE_CONVERSATION;
+        obj.track(closure_1_11.VIBING_WUMPUS_CLOSED, obj);
+        const result = date(closure_1_2[11]).stopVibingWumpusMusic();
       };
     }, []);
     tmp9 = jsxs;
@@ -67,7 +62,7 @@ class VibingWumpusScreen {
     obj1 = { style: tmp.container, children: null };
     obj2 = { source: null, ref: null, autoPlay: null, loop: true, style: null, progress: null };
     tmp14 = require("play");
-    obj2[0] = require("module_10618");
+    obj2[0] = require("module_10657");
     obj2[1] = ref;
     obj2[2] = !stateFromStores;
     obj2[4] = tmp.wumpus;
@@ -120,14 +115,14 @@ class VibingWumpusScreen {
             if (first) {
               const result = obj.playVibingWumpusMusic();
               obj = { action: null };
-              obj[0] = outer1_9.PLAY;
-              callback(ref[12]).track(outer1_11.VIBING_WUMPUS_ACTION, obj);
+              obj[0] = closure_1_9.PLAY;
+              callback(ref[12]).track(closure_1_11.VIBING_WUMPUS_ACTION, obj);
               const obj4 = callback(ref[12]);
             } else {
               const result1 = obj.pauseVibingWumpusMusic();
               obj = { action: null };
-              obj[0] = outer1_9.PAUSE;
-              callback(ref[12]).track(outer1_11.VIBING_WUMPUS_ACTION, obj);
+              obj[0] = closure_1_9.PAUSE;
+              callback(ref[12]).track(closure_1_11.VIBING_WUMPUS_ACTION, obj);
               const obj2 = callback(ref[12]);
             }
             let tmp14 = stateFromStores;
@@ -173,18 +168,18 @@ class VibingWumpusScreen {
 ({ VibingWumpusAction: c9, VibingWumpusSource: c10 } = VibingWumpusAction);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 createCacheKey = { container: null, warningText: null, ctaContainer: null, takeoverHeader: null, takeoverDescription: null, wumpus: null, rings: null };
-createCacheKey = { display: "flex", alignItems: "center", justifyContent: "center", padding: require("Themes").space.PX_32, gap: require("Themes").space.PX_16, height: "100%" };
+createCacheKey = { display: "flex", alignItems: "center", justifyContent: "center", padding: ThemesDefault.space.PX_32, gap: ThemesDefault.space.PX_16, height: "100%" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginBottom: require("Themes").space.PX_16, gap: require("Themes").space.PX_4 };
-let obj1 = { marginBottom: require("Themes").space.PX_16, gap: require("Themes").space.PX_4 };
-createCacheKey[2] = { display: "flex", alignItems: "center", alignSelf: "stretch", gap: require("Themes").space.PX_16 };
+createCacheKey[1] = { marginBottom: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_4 };
+let obj1 = { marginBottom: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_4 };
+createCacheKey[2] = { display: "flex", alignItems: "center", alignSelf: "stretch", gap: ThemesDefault.space.PX_16 };
 createCacheKey[3] = { textAlign: "center" };
 createCacheKey[4] = { textAlign: "center" };
 createCacheKey[5] = { height: 187 };
 createCacheKey[6] = { position: "absolute", width: "100%", height: 440, top: 120 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { display: "flex", alignItems: "center", alignSelf: "stretch", gap: require("Themes").space.PX_16 };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/VibingWumpusModal.tsx");
+let closure_15 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { display: "flex", alignItems: "center", alignSelf: "stretch", gap: ThemesDefault.space.PX_16 };
+let result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/VibingWumpusModal.tsx");
 
 export default function VibingWumpusModal() {
   const VIBING_WUMPUS = {
@@ -195,6 +190,6 @@ export default function VibingWumpusModal() {
       return callback(closure_16, {});
     }
   };
-  return callback(require(6312) /* NavigationStack */.Navigator, { screens: { VIBING_WUMPUS }, initialRouteName: "VIBING_WUMPUS" });
+  return callback(NavigationStack.Navigator, { screens: { VIBING_WUMPUS }, initialRouteName: "VIBING_WUMPUS" });
 };
 export { VibingWumpusScreen };

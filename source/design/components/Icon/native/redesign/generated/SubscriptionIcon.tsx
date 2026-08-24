@@ -1,26 +1,26 @@
-// Module ID: 14344
-// Function ID: 14345
+// Module ID: 14412
+// Function ID: 14413
 // Name: SubscriptionIcon
-// Dependencies: [19, 21, 712, 4096, 14345, 2]
+// Dependencies: [19, 21, 712, 4099, 14413, 2]
 // Exports: SubscriptionIcon
 
-// Module 14344 (SubscriptionIcon)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 14412 (SubscriptionIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import BaseIconImage from "BaseIconImage" /* 4099 */;
+import registerAsset from "registerAsset" /* 14413 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/SubscriptionIcon.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Icon/native/redesign/generated/SubscriptionIcon.tsx");
 
 export const SubscriptionIcon = function SubscriptionIcon(color) {
   let ICON_STRONG = color.color;
   if (ICON_STRONG === undefined) {
-    ICON_STRONG = importDefault(712).colors.ICON_STRONG;
+    ICON_STRONG = ThemesDefault.colors.ICON_STRONG;
   }
   const merged = Object.assign(color, Object.create(null));
-  const obj = { source: null, color: null, style: null };
-  obj[0] = require(14345) /* registerAsset */;
-  obj[1] = ICON_STRONG;
-  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(BaseIconImage.BaseIconImage, { source: registerAsset, color: ICON_STRONG, style: color.style });
 };

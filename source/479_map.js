@@ -4,18 +4,19 @@
 // Dependencies: [41, 42, 209, 38, 480]
 
 // Module 479 (map)
-import _classCallCheck from "_classCallCheck";
-import importDefaultResult from "_createClass";
+import NativeEventEmitterDefault from "NativeEventEmitter" /* 209 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
 const PushNotificationIOS = importDefault;
-let c3 = new require("NativeEventEmitter")(null);
+let closure_3 = new NativeEventEmitterDefault(null);
 const map = new Map();
 class PushNotificationIOS {
   constructor(arg0) {
     self = this;
     self = this;
     closure_0 = global;
-    tmp = outer1_2(this, closure_0);
+    tmp = closure_2(this, closure_0);
     this._data = {};
     this._remoteNotificationCompleteCallbackCalled = false;
     this._isRemote = global.remote;
@@ -188,7 +189,7 @@ const items1 = [
   {
     key: "addEventListener",
     value: function addEventListener(arg0, arg1) {
-      let closure_0 = arg1;
+      closure_0 = arg1;
       let tmp3 = tmp2;
       if ("notification" !== arg0) {
         tmp3 = "register" === arg0;
@@ -201,10 +202,10 @@ const items1 = [
       }
       PushNotificationIOS(38)(tmp3, "PushNotificationIOS only supports `notification`, `register`, `registrationError`, and `localNotification` events");
       if ("notification" === arg0) {
-        let addListenerResult = tmp3.addListener("remoteNotificationReceived", (remote) => {
+        let addListenerResult = closure_3.addListener("remoteNotificationReceived", (remote) => {
           const obj = Object.create(lib.prototype);
           lib = remote;
-          outer1_2(obj, lib);
+          closure_1_2(obj, lib);
           obj._data = {};
           obj._remoteNotificationCompleteCallbackCalled = false;
           obj._isRemote = remote.remote;
@@ -227,10 +228,10 @@ const items1 = [
           lib(obj);
         });
       } else if ("localNotification" === arg0) {
-        addListenerResult = tmp3.addListener("localNotificationReceived", (remote) => {
+        addListenerResult = closure_3.addListener("localNotificationReceived", (remote) => {
           const obj = Object.create(lib.prototype);
           lib = remote;
-          outer1_2(obj, lib);
+          closure_1_2(obj, lib);
           obj._data = {};
           obj._remoteNotificationCompleteCallbackCalled = false;
           obj._isRemote = remote.remote;
@@ -253,11 +254,11 @@ const items1 = [
           lib(obj);
         });
       } else if ("register" === arg0) {
-        addListenerResult = tmp3.addListener("remoteNotificationsRegistered", (deviceToken) => {
+        addListenerResult = closure_3.addListener("remoteNotificationsRegistered", (deviceToken) => {
           lib(deviceToken.deviceToken);
         });
       } else if ("registrationError" === arg0) {
-        addListenerResult = tmp3.addListener("remoteNotificationRegistrationError", (arg0) => {
+        addListenerResult = closure_3.addListener("remoteNotificationRegistrationError", (arg0) => {
           lib(arg0);
         });
       }
@@ -327,7 +328,7 @@ const items1 = [
         if (remote) {
           const obj = Object.create(ctor.prototype);
           ctor = remote;
-          outer1_2(obj, ctor);
+          closure_1_2(obj, ctor);
           obj._data = {};
           obj._remoteNotificationCompleteCallbackCalled = false;
           obj._isRemote = remote.remote;

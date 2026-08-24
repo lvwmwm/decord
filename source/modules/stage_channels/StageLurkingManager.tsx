@@ -1,24 +1,24 @@
-// Module ID: 12824
-// Function ID: 12825
+// Module ID: 12879
+// Function ID: 12880
 // Name: _initialize
-// Dependencies: [1391, 4197, 4720, 709, 7284, 1370, 2]
+// Dependencies: [1391, 4201, 4726, 709, 7322, 1370, 2]
 
-// Module 12824 (_initialize)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import "initialize";
+// Module 12879 (_initialize)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 4726 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "handleConnectionOpen" /* 4201 */;
 
 let require = arg1;
+initializeDefault;
 class StageLurkingManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
     closure_0 = applyArgumentsResult;
     applyArgumentsResult.handleVoiceChannelSelect = function handleVoiceChannelSelect(arg0) {
-      let channelId;
-      let guildId;
       ({ channelId, guildId } = arg0);
       if (null != channelId) {
-        const channel = outer1_3.getChannel(channelId);
+        const channel = closure_1_3.getChannel(channelId);
       }
       applyArgumentsResult.terminate();
       let tmp3 = null;
@@ -33,7 +33,7 @@ class StageLurkingManager extends tmp2 {
     applyArgumentsResult.handleDisconnectFromStageChannel = function handleDisconnectFromStageChannel(arg0) {
       guildId = guildId.getGuildId();
       const items = [guildId, arg0];
-      applyArgumentsResult(7284).stopLurkingAll(items.filter(applyArgumentsResult(1370).isNotNullish));
+      applyArgumentsResult(7322).stopLurkingAll(items.filter(applyArgumentsResult(1370).isNotNullish));
     };
     applyArgumentsResult.handleLogout = function handleLogout() {
       applyArgumentsResult.terminate();
@@ -44,16 +44,16 @@ class StageLurkingManager extends tmp2 {
 }
 const prototype = StageLurkingManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  const subscription = importDefault(709).subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
-  const obj = importDefault(709);
-  const subscription1 = importDefault(709).subscribe("LOGOUT", this.handleLogout);
+  const subscription = dispatcherDefault.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
+  const obj = dispatcherDefault;
+  const subscription1 = dispatcherDefault.subscribe("LOGOUT", this.handleLogout);
 };
 prototype["_terminate"] = function _terminate() {
-  importDefault(709).unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
-  const obj = importDefault(709);
-  importDefault(709).unsubscribe("LOGOUT", this.handleLogout);
+  dispatcherDefault.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
+  const obj = dispatcherDefault;
+  dispatcherDefault.unsubscribe("LOGOUT", this.handleLogout);
 };
 const stageLurkingManager = new StageLurkingManager();
-let result = require("initialize").fileFinishedImporting("modules/stage_channels/StageLurkingManager.tsx");
+let result = require("set").fileFinishedImporting("modules/stage_channels/StageLurkingManager.tsx");
 
 export default stageLurkingManager;

@@ -1,15 +1,16 @@
-// Module ID: 8772
-// Function ID: 8773
+// Module ID: 8809
+// Function ID: 8810
 // Name: canInstallApplication
-// Dependencies: [8448, 5246, 8770, 2]
+// Dependencies: [8487, 5251, 8807, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 8772 (canInstallApplication)
-import getIndexKey from "getIndexKey";
-import { BuiltInSectionId } from "TRUE_OPTION_NAME";
+// Module 8809 (canInstallApplication)
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8807 */;
+import closure_2 from "getIndexKey" /* 8487 */;
+import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 5251 */;
 
-const require = arg1;
-let result = require("ApplicationIntegrationType").fileFinishedImporting("modules/applications/utils/ApplicationInstallUtils.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("modules/applications/utils/ApplicationInstallUtils.tsx");
 
 export const canInstallApplication = function canInstallApplication(application) {
   const integrationTypesConfig = application.integrationTypesConfig;
@@ -69,25 +70,22 @@ export const isAppUserInstallable = function isAppUserInstallable(integrationTyp
     tmp = null != integrationTypesConfig;
   }
   if (tmp) {
-    tmp = require(8770) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL in integrationTypesConfig;
+    tmp = ApplicationIntegrationType.ApplicationIntegrationType.USER_INSTALL in integrationTypesConfig;
   }
   return tmp;
 };
 export const shouldInstallApplicationOnDemand = function shouldInstallApplicationOnDemand(arg0) {
-  let applicationId;
-  let channel;
-  let commandIntegrationTypes;
   ({ applicationId, channel, commandIntegrationTypes } = arg0);
   let tmp = null != commandIntegrationTypes;
   if (tmp) {
-    tmp = !commandIntegrationTypes.includes(require(8770) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
+    tmp = !commandIntegrationTypes.includes(ApplicationIntegrationType.ApplicationIntegrationType.USER_INSTALL);
   }
   let tmp4 = !tmp;
   if (!tmp) {
     let tmp6 = applicationId !== BuiltInSectionId.BUILT_IN;
     if (tmp6) {
-      let obj = getIndexKey;
-      const result = getIndexKey.hasUserStateApplication(applicationId);
+      let obj = closure_2;
+      const result = closure_2.hasUserStateApplication(applicationId);
       let tmp8 = !result;
       if (!result) {
         let tmp9 = null == channel;

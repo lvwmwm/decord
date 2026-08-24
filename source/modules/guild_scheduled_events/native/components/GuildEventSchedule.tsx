@@ -1,35 +1,30 @@
-// Module ID: 8809
-// Function ID: 8810
+// Module ID: 8846
+// Function ID: 8847
 // Name: GuildEventSchedule
-// Dependencies: [19, 21, 3975, 8785, 8810, 1236, 2]
+// Dependencies: [19, 21, 3978, 8822, 8847, 1236, 2]
 // Exports: default
 
-// Module 8809 (GuildEventSchedule)
-import noop from "noop";
-import jsxProd from "jsxProd";
+// Module 8846 (GuildEventSchedule)
+import closure_3 from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
-let closure_6;
 const require = arg1;
 ({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
-const result = require("t").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventSchedule.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventSchedule.tsx");
 
 export default function GuildEventSchedule(schedule) {
-  let guildEvent;
-  let recurrenceId;
   schedule = schedule.schedule;
   const onChange = schedule.onChange;
   ({ guildEvent, recurrenceId } = schedule);
-  let obj = onChange(3975)();
-  const addResult = obj.add(schedule(8785).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
+  let obj = onChange(3978)();
+  const addResult = obj.add(schedule(8822).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   const items = [schedule.startDate];
-  const memo = React.useMemo(() => onChange(outer1_2[2])(schedule.startDate).add(15, "minutes"), items);
-  const tmp2 = onChange(3975)();
-  const addResult1 = onChange(3975)().add(schedule(8785).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
+  const memo = React.useMemo(() => onChange(closure_1_2[2])(schedule.startDate).add(15, "minutes"), items);
+  const tmp2 = onChange(3978)();
+  const addResult1 = onChange(3978)().add(schedule(8822).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   if (null != recurrenceId) {
-    addResult.add(tmp3(8785).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
-    addResult1.add(tmp3(8785).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult.add(tmp3(8822).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult1.add(tmp3(8822).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
   }
   obj = {
     date: schedule.startDate,
@@ -48,7 +43,7 @@ export default function GuildEventSchedule(schedule) {
   obj[4] = intl.string(schedule(1236).t.kKOIwJ);
   const intl2 = tmp3(1236).intl;
   obj[5] = intl2.string(schedule(1236).t["6dGmCD"]);
-  const children = [callback(schedule(8810).GuildEventDatetime, obj), ];
+  const children = [callback(schedule(8847).GuildEventDatetime, obj), ];
   let tmp9Result = null != guildEvent.scheduled_end_time;
   if (tmp9Result) {
     obj = { date: null, onChange: null, minimumDate: null, maximumDate: null, dateLabel: null, timeLabel: null };
@@ -65,7 +60,7 @@ export default function GuildEventSchedule(schedule) {
     obj[4] = intl3.string(tmp3(1236).t.CTLgZJ);
     const intl4 = tmp3(1236).intl;
     obj[5] = intl4.string(tmp3(1236).t.j2RuXF);
-    tmp9Result = callback(tmp3(8810).GuildEventDatetime, obj);
+    tmp9Result = callback(tmp3(8847).GuildEventDatetime, obj);
   }
   children[1] = tmp9Result;
   return closure_6(closure_5, { children });

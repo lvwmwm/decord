@@ -4,10 +4,13 @@
 // Dependencies: [19, 21, 23, 108, 254]
 
 // Module 18 (ActivityIndicator)
-import "noop";
-import { jsx } from "jsxProd";
-import { default as ProgressBarAndroid } from "ProgressBarAndroid";
+import noopAll from "noop" /* 19 */;
+import ViewDefault from "View" /* 108 */;
+import get_hairlineWidthDefault from "get hairlineWidth" /* 254 */;
+import { jsx } from "jsxProd" /* 21 */;
+import { default as ProgressBarAndroid } from "ProgressBarAndroid" /* 23 */;
 
+noopAll;
 class ActivityIndicator {
   constructor(arg0) {
     flag = global.animating;
@@ -56,11 +59,11 @@ class ActivityIndicator {
     merged2 = Object.assign(obj);
     obj2.styleAttr = "Normal";
     obj2.indeterminate = true;
-    obj1[2] = jsx(jsx, obj2);
+    obj1[2] = jsx(ProgressBarAndroid, obj2);
     return jsx(tmp6, obj1);
   }
 }
 ActivityIndicator.displayName = "ActivityIndicator";
-let closure_4 = require("get hairlineWidth").create({ container: { alignItems: "center", justifyContent: "center" }, sizeSmall: { width: 20, height: 20 }, sizeLarge: { width: 36, height: 36 } });
+let closure_4 = get_hairlineWidthDefault.create({ container: { alignItems: "center", justifyContent: "center" }, sizeSmall: { width: 20, height: 20 }, sizeLarge: { width: 36, height: 36 } });
 
 export default ActivityIndicator;

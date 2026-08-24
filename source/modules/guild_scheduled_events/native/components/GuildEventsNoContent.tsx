@@ -1,56 +1,52 @@
-// Module ID: 8895
-// Function ID: 8896
+// Module ID: 8932
+// Function ID: 8933
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 4021, 676, 505, 21, 4661, 6782, 712, 589, 8068, 8896, 8897, 4734, 1236, 8874, 2]
+// Dependencies: [19, 17, 4024, 676, 505, 21, 4668, 6819, 712, 589, 8107, 8933, 8934, 4739, 1236, 8911, 2]
 // Exports: default
 
-// Module 8895 (GuildEventsNoContent)
-import "noop";
-import { View } from "get ActivityIndicator";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { GuildSettingsSections } from "ME";
-import sum from "sum";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
+// Module 8932 (GuildEventsNoContent)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import { GuildSettingsSections } from "ME" /* 676 */;
+import sum from "sum" /* 505 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let Fonts;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
+noopAll;
 ({ Permissions: closure_6, Fonts } = sum);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginBottom: 88, padding: 16 }, title: null, subtitle: null };
 createCacheKey = {};
-const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_EXTRABOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 24, { marginBottom: 8 }));
+const merged = Object.assign(importDefaultResult(Fonts.DISPLAY_EXTRABOLD, ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24, { marginBottom: 8 }));
 createCacheKey.textAlign = "center";
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { paddingBottom: 2, textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventsNoContent.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventsNoContent.tsx");
 
 export default function GuildEventsNoContent(guild) {
   guild = guild.guild;
   const onClose = guild.onClose;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = guild(589);
-  const items = [getUncachedChannelPermissions];
+  const items = [closure_4];
   const items1 = [guild];
-  let stateFromStores = obj.useStateFromStores(items, () => outer1_4.can(outer1_6.MANAGE_ROLES, guild), items1);
+  let stateFromStores = obj.useStateFromStores(items, () => closure_1_4.can(closure_1_6.MANAGE_ROLES, guild), items1);
   obj = { style: tmp.container, children: null };
-  obj = { icon: null, IconComponent: null };
-  obj[0] = onClose(8896);
-  obj[1] = guild(8897).CalendarIcon;
-  const items2 = [callback(onClose(8068), obj), , , ];
-  const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  obj = { icon: onClose(8933), IconComponent: guild(8934).CalendarIcon };
+  const items2 = [callback(onClose(8107), obj), , , ];
+  obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = guild(1236).intl;
   obj1[4] = intl.string(guild(1236).t["WgZ+3D"]);
-  items2[1] = callback(guild(4734).Text, obj1);
+  items2[1] = callback(guild(4739).Text, obj1);
   const obj2 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = guild(1236).intl;
   obj2[3] = intl2.string(guild(1236).t["v/S/PG"]);
-  items2[2] = callback(guild(4734).Text, obj2);
+  items2[2] = callback(guild(4739).Text, obj2);
   if (stateFromStores) {
     const obj3 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
     obj3[0] = tmp.subtitle;
@@ -58,10 +54,10 @@ export default function GuildEventsNoContent(guild) {
     const obj4 = { onClick: null };
     obj4[0] = function onClick() {
       onClose();
-      onClose(outer1_2[15]).open(guild.id, outer1_5.ROLES);
+      onClose(closure_1_2[15]).open(guild.id, closure_1_5.ROLES);
     };
     obj3[3] = intl3.format(tmp2(1236).t["K+DH2o"], obj4);
-    stateFromStores = callback(tmp2(4734).Text, obj3);
+    stateFromStores = callback(tmp2(4739).Text, obj3);
   }
   items2[3] = stateFromStores;
   obj[1] = items2;

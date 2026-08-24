@@ -1,13 +1,17 @@
-// Module ID: 7639
-// Function ID: 7640
+// Module ID: 7677
+// Function ID: 7678
 // Name: create
-// Dependencies: [32, 1307, 7635, 1377, 7634, 7633, 2]
+// Dependencies: [32, 1307, 7673, 1377, 7672, 7671, 2]
 
-// Module 7639 (create)
-import _slicedToArray from "_slicedToArray";
-import { MessageType } from "module_1307";
+// Module 7677 (create)
+import _mod1307 from "module_1307" /* 1307 */;
+import create from "create" /* 7671 */;
+import create2 from "create" /* 7672 */;
+import create3 from "create" /* 7673 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import { MessageType } from "module_1307" /* 1307 */;
 
-const require = arg1;
+require = arg1;
 class MobileBottomSheet$Type extends MessageType {
   constructor() {
     items = [, , , , , , , , ];
@@ -20,7 +24,7 @@ class MobileBottomSheet$Type extends MessageType {
       name: "button",
       kind: "message",
       T() {
-            return callback(7635).CTAButton;
+            return callback(7673).CTAButton;
           }
     };
     items[5] = {
@@ -37,7 +41,7 @@ class MobileBottomSheet$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(7634).HelpArticle;
+            return callback(7672).HelpArticle;
           }
     };
     obj = { no: 8, name: "header_localized", kind: "message", T: null };
@@ -53,7 +57,7 @@ class MobileBottomSheet$Type extends MessageType {
       name: "body_localized",
       kind: "message",
       T() {
-            return callback(7633).LocalizedString;
+            return callback(7671).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.MobileBottomSheet", items, T);
@@ -66,16 +70,14 @@ prototype["create"] = function create(arr) {
   let obj = { assetUrl: "", header: "", body: "", helpArticleId: "", dismissibleContent: 0 };
   const _Object = Object;
   obj = { enumerable: false, value: this };
-  _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
+  _Object.defineProperty(obj, _mod1307.MESSAGE_TYPE, obj);
   if (undefined !== arr) {
-    const result = require(1307).reflectionMergePartial(this, obj, arr);
-    const tmpResult = require(1307);
+    const result = _mod1307.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1307;
   }
   return obj;
 };
 prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
-  let tmp5;
-  let tmp6;
   const self = this;
   let obj = arg3;
   if (arg3 == null) {
@@ -98,7 +100,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (5 === tmp5) {
         let tmp37 = require;
         let tmp38 = dependencyMap;
-        let CTAButton = require(7635) /* create */.CTAButton;
+        let CTAButton = create3.CTAButton;
         let tmp39 = CTAButton;
         let tmp40 = pos;
         let tmp41 = readUnknownField;
@@ -108,7 +110,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (7 === tmp5) {
         let tmp32 = require;
         let tmp33 = dependencyMap;
-        let HelpArticle = require(7634) /* create */.HelpArticle;
+        let HelpArticle = create2.HelpArticle;
         let tmp34 = HelpArticle;
         let tmp35 = pos;
         let tmp36 = readUnknownField;
@@ -116,7 +118,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (8 === tmp5) {
         let tmp27 = require;
         let tmp28 = dependencyMap;
-        let LocalizedString2 = require(7633) /* create */.LocalizedString;
+        let LocalizedString2 = create.LocalizedString;
         let tmp29 = LocalizedString2;
         let tmp30 = pos;
         let tmp31 = readUnknownField;
@@ -124,7 +126,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (9 === tmp5) {
         let tmp22 = require;
         let tmp23 = dependencyMap;
-        let LocalizedString = require(7633) /* create */.LocalizedString;
+        let LocalizedString = create.LocalizedString;
         let tmp24 = LocalizedString;
         let tmp25 = pos;
         let tmp26 = readUnknownField;
@@ -142,7 +144,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
           let tmp17 = tmp6;
           let tmp18 = new.target;
           let tmp19 = new.target;
-          let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+          error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
           let tmp21 = error;
           throw error;
         } else {
@@ -151,7 +153,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
             if (true === onRead) {
               let tmp8 = require;
               let tmp9 = dependencyMap;
-              onRead = require(1307).UnknownFieldHandler.onRead;
+              onRead = _mod1307.UnknownFieldHandler.onRead;
             }
             let tmp10 = obj;
             let tmp11 = tmp5;
@@ -167,53 +169,53 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
 };
 prototype["internalBinaryWrite"] = function internalBinaryWrite(assetUrl, tag, writeUnknownFields) {
   if ("" !== assetUrl.assetUrl) {
-    tag.tag(1, require(1307).WireType.LengthDelimited).string(assetUrl.assetUrl);
-    const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
+    tag.tag(1, _mod1307.WireType.LengthDelimited).string(assetUrl.assetUrl);
+    const tagResult = tag.tag(1, _mod1307.WireType.LengthDelimited);
   }
   if ("" !== assetUrl.header) {
-    tag.tag(2, require(1307).WireType.LengthDelimited).string(assetUrl.header);
-    const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
+    tag.tag(2, _mod1307.WireType.LengthDelimited).string(assetUrl.header);
+    const tagResult1 = tag.tag(2, _mod1307.WireType.LengthDelimited);
   }
   if ("" !== assetUrl.body) {
-    tag.tag(3, require(1307).WireType.LengthDelimited).string(assetUrl.body);
-    const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
+    tag.tag(3, _mod1307.WireType.LengthDelimited).string(assetUrl.body);
+    const tagResult2 = tag.tag(3, _mod1307.WireType.LengthDelimited);
   }
   if ("" !== assetUrl.helpArticleId) {
-    tag.tag(4, require(1307).WireType.LengthDelimited).string(assetUrl.helpArticleId);
-    const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
+    tag.tag(4, _mod1307.WireType.LengthDelimited).string(assetUrl.helpArticleId);
+    const tagResult3 = tag.tag(4, _mod1307.WireType.LengthDelimited);
   }
   if (assetUrl.button) {
-    const CTAButton = require(7635) /* create */.CTAButton;
-    const tagResult4 = tag.tag(5, require(1307).WireType.LengthDelimited);
-    const joined = CTAButton.internalBinaryWrite(assetUrl.button, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = CTAButton.internalBinaryWrite(assetUrl.button, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const CTAButton = create3.CTAButton;
+    const tagResult4 = tag.tag(5, _mod1307.WireType.LengthDelimited);
+    const joined = CTAButton.internalBinaryWrite(assetUrl.button, tag.tag(5, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = CTAButton.internalBinaryWrite(assetUrl.button, tag.tag(5, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (0 !== assetUrl.dismissibleContent) {
-    tag.tag(6, require(1307).WireType.Varint).int32(assetUrl.dismissibleContent);
-    const tagResult5 = tag.tag(6, require(1307).WireType.Varint);
+    tag.tag(6, _mod1307.WireType.Varint).int32(assetUrl.dismissibleContent);
+    const tagResult5 = tag.tag(6, _mod1307.WireType.Varint);
   }
   if (assetUrl.helpArticle) {
-    const HelpArticle = require(7634) /* create */.HelpArticle;
-    const tagResult6 = tag.tag(7, require(1307).WireType.LengthDelimited);
-    const joined1 = HelpArticle.internalBinaryWrite(assetUrl.helpArticle, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = HelpArticle.internalBinaryWrite(assetUrl.helpArticle, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const HelpArticle = create2.HelpArticle;
+    const tagResult6 = tag.tag(7, _mod1307.WireType.LengthDelimited);
+    const joined1 = HelpArticle.internalBinaryWrite(assetUrl.helpArticle, tag.tag(7, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = HelpArticle.internalBinaryWrite(assetUrl.helpArticle, tag.tag(7, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (assetUrl.headerLocalized) {
-    const LocalizedString = require(7633) /* create */.LocalizedString;
-    const tagResult7 = tag.tag(8, require(1307).WireType.LengthDelimited);
-    const joined2 = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult2 = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const LocalizedString = create.LocalizedString;
+    const tagResult7 = tag.tag(8, _mod1307.WireType.LengthDelimited);
+    const joined2 = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(8, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult2 = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(8, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (assetUrl.bodyLocalized) {
-    const LocalizedString2 = require(7633) /* create */.LocalizedString;
-    const tagResult8 = tag.tag(9, require(1307).WireType.LengthDelimited);
-    const joined3 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult3 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const LocalizedString2 = create.LocalizedString;
+    const tagResult8 = tag.tag(9, _mod1307.WireType.LengthDelimited);
+    const joined3 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(9, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult3 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(9, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = require(1307).UnknownFieldHandler.onWrite;
+      onWrite = _mod1307.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, assetUrl, tag);
@@ -230,7 +232,7 @@ let items = [
     name: "button",
     kind: "message",
     T() {
-      return callback(7635).CTAButton;
+      return callback(7673).CTAButton;
     }
   },
   {
@@ -247,7 +249,7 @@ let items = [
     name: "help_article",
     kind: "message",
     T() {
-      return callback(7634).HelpArticle;
+      return callback(7672).HelpArticle;
     }
   },
 ,
@@ -266,11 +268,11 @@ items[8] = {
   name: "body_localized",
   kind: "message",
   T() {
-    return callback(7633).LocalizedString;
+    return callback(7671).LocalizedString;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.MobileBottomSheet", items, tmp, T, MobileBottomSheet$Type, prototype, items);
 // ThrowIfThisInitialized (0x7c)
-let result = require("create").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/mobile_bottom_sheet.tsx");
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/mobile_bottom_sheet.tsx");
 
 export const MobileBottomSheet = prototype;

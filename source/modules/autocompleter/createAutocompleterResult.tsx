@@ -1,19 +1,17 @@
-// Module ID: 7602
-// Function ID: 7603
+// Module ID: 7640
+// Function ID: 7641
 // Name: HeaderRecord
-// Dependencies: [6773, 2]
+// Dependencies: [6810, 2]
 // Exports: createHeaderResult
 
-// Module 7602 (HeaderRecord)
-import HeaderRecord from "HeaderRecord";
+// Module 7640 (HeaderRecord)
+import set from "set" /* 2 */;
+import HeaderRecord from "HeaderRecord" /* 6810 */;
 
-let c0;
-let closure_1;
 ({ HeaderRecord: c0, AutocompleterResultTypes: closure_1 } = HeaderRecord);
-const result = require("set").fileFinishedImporting("modules/autocompleter/createAutocompleterResult.tsx");
+const result = set.fileFinishedImporting("modules/autocompleter/createAutocompleterResult.tsx");
 
 export const createHeaderResult = function createHeaderResult(intl) {
-  const obj = { type: constants.HEADER, record: null, score: 0 };
-  obj[1] = new closure_0(intl);
+  const obj = { type: constants.HEADER, record: new closure_0(intl), score: 0 };
   return obj;
 };

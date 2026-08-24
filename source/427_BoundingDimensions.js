@@ -4,6 +4,8 @@
 // Dependencies: [426]
 
 // Module 427 (BoundingDimensions)
+import oneArgumentPoolerDefault from "oneArgumentPooler" /* 426 */;
+
 class BoundingDimensions {
   constructor(arg0, arg1) {
     return;
@@ -15,6 +17,6 @@ class BoundingDimensions {
     return BoundingDimensions.getPooled(global.offsetWidth, global.offsetHeight);
   }
 }
-require("oneArgumentPooler").addPoolingTo(BoundingDimensions, require("oneArgumentPooler").twoArgumentPooler);
+oneArgumentPoolerDefault.addPoolingTo(BoundingDimensions, oneArgumentPoolerDefault.twoArgumentPooler);
 
 export default BoundingDimensions;

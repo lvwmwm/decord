@@ -5,14 +5,16 @@
 // Exports: shouldEnableNativeNagger
 
 // Module 1185 (shouldEnableNativeNagger)
-import { Platform } from "get ActivityIndicator";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import isHermesEnabled from "isHermesEnabled" /* 1002 */;
 
+const Platform = get_ActivityIndicator.Platform;
 
 export const shouldEnableNativeNagger = function shouldEnableNativeNagger(enableNativeNagger) {
   let tmp = enableNativeNagger;
   if (typeof enableNativeNagger !== "boolean") {
-    tmp = !require(1002) /* isHermesEnabled */.isExpoGo();
-    const obj = require(1002) /* isHermesEnabled */;
+    tmp = !isHermesEnabled.isExpoGo();
+    const obj = isHermesEnabled;
   }
   return tmp;
 };

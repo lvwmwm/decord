@@ -1,19 +1,20 @@
-// Module ID: 7432
-// Function ID: 7433
+// Module ID: 7470
+// Function ID: 7471
 // Name: initialize
-// Dependencies: [7433, 12, 589, 709, 2]
+// Dependencies: [7471, 12, 589, 709, 2]
 
-// Module 7432 (initialize)
-import ConfettiLocation from "ConfettiLocation";
-import apply from "apply";
-import { DeviceSettingsStore } from "initialize";
+// Module 7470 (initialize)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import ConfettiLocation from "ConfettiLocation" /* 7471 */;
+import apply from "apply" /* 12 */;
 
-let ConfettiLocation;
-let ShakeLocation;
 ({ ShakeLocation, ConfettiLocation } = ConfettiLocation);
 let c0 = false;
 let obj = { settingsVisible: false, enabled: false, combosEnabled: true, combosRequiredCount: 5, comboSoundsEnabled: true, screenshakeEnabled: true, screenshakeEnabledLocations: { [ShakeLocation.CHAT_INPUT]: true, [ShakeLocation.VOICE_USER]: false, [ShakeLocation.MENTION]: false }, shakeIntensity: 1, confettiEnabled: true, confettiEnabledLocations: { [ConfettiLocation.CHAT_INPUT]: true, [ConfettiLocation.REACTION]: true, [ConfettiLocation.MEMBER_USER]: true, [ConfettiLocation.CALL_TILE]: true }, confettiSize: 16, confettiCount: 5, warningSeen: false };
 let closure_1 = apply.cloneDeep(obj);
+const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class PoggermodeSettingsStore extends DeviceSettingsStore {
 }
 const prototype = PoggermodeSettingsStore.prototype;
@@ -32,8 +33,6 @@ Object.defineProperty(prototype, "settingsVisible", {
   set: undefined
 });
 prototype["isEnabled"] = function isEnabled() {
-  let confettiLocation;
-  let shakeLocation;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -123,11 +122,11 @@ obj = {
     const merged1 = Object.assign(settings.settings);
   },
   POGGERMODE_TEMPORARILY_DISABLED: function handlePoggermodeTemporarilyDisabled() {
-    let c0 = true;
+    c0 = true;
   }
 };
-const poggermodeSettingsStore = new PoggermodeSettingsStore(require("dispatcher"), obj);
-const result = require("initialize").fileFinishedImporting("modules/poggermode/PoggermodeSettingsStore.tsx");
+const poggermodeSettingsStore = new PoggermodeSettingsStore(dispatcherDefault, obj);
+const result = set.fileFinishedImporting("modules/poggermode/PoggermodeSettingsStore.tsx");
 
 export default poggermodeSettingsStore;
 export const initialState = obj;

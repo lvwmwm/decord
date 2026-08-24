@@ -1,18 +1,19 @@
-// Module ID: 15187
-// Function ID: 15188
+// Module ID: 15251
+// Function ID: 15252
 // Name: BenchmarkResultsList
-// Dependencies: [19, 21, 6286, 6291, 15183, 2]
+// Dependencies: [19, 21, 6317, 6322, 15247, 2]
 // Exports: default
 
-// Module 15187 (BenchmarkResultsList)
-import "noop";
-import jsxProd from "jsxProd";
+// Module 15251 (BenchmarkResultsList)
+import noopAll from "noop" /* 19 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import TableRowInner from "TableRowInner" /* 6322 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: obj1, jsxs: c3 } = jsxProd);
-const result = require("TableRowGroupTitle").fileFinishedImporting("modules/devtools/native/components/screens/performance/BenchmarkResultsList.tsx");
+const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/performance/BenchmarkResultsList.tsx");
 
 export default function BenchmarkResultsList(results) {
   results = results.results;
@@ -21,15 +22,12 @@ export default function BenchmarkResultsList(results) {
     let obj = { title: "Results (newest first)", hasIcons: false, children: null };
     const items = [
       results.map((kind) => {
-          let dropped;
-          let elapsedMs;
-          let frames;
           if ("mount" === kind.kind) {
             let obj = { label: null, subLabel: null };
             ({ label: obj[0], elapsedMs } = kind);
             const _HermesInternal = HermesInternal;
             obj[1] = "" + elapsedMs.toFixed(1) + " ms total";
-            let tmp5 = callback2(callback(6291).TableRow, obj, kind.id);
+            let tmp5 = callback2(callback(6322).TableRow, obj, kind.id);
           } else {
             obj = { label: null, subLabel: null };
             const meanMs = kind.meanMs;
@@ -38,10 +36,10 @@ export default function BenchmarkResultsList(results) {
             const _HermesInternal2 = HermesInternal;
             obj[0] = "Scroll \u00B7 mean " + toFixedResult + " ms \u00B7 worst " + worstMs.toFixed(1) + " ms";
             ({ dropped, frames } = kind);
-            const FRAME_BUDGET_MS = callback(15183).FRAME_BUDGET_MS;
+            const FRAME_BUDGET_MS = callback(15247).FRAME_BUDGET_MS;
             const _HermesInternal3 = HermesInternal;
             obj[1] = "" + dropped + "/" + frames + " frames over " + FRAME_BUDGET_MS.toFixed(1) + " ms";
-            tmp5 = callback2(callback(6291).TableRow, obj, kind.id);
+            tmp5 = callback2(callback(6322).TableRow, obj, kind.id);
           }
           return tmp5;
         }),
@@ -49,9 +47,9 @@ export default function BenchmarkResultsList(results) {
     ];
     obj = { label: "Clear results", variant: "danger", arrow: true, onPress: null };
     obj[3] = tmp;
-    items[1] = callback(require(6291) /* TableRowInner */.TableRow, obj);
+    items[1] = callback(TableRowInner.TableRow, obj);
     obj[2] = items;
-    tmp2 = callback2(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
+    tmp2 = callback2(TableRowGroupTitle.TableRowGroup, obj);
   }
   return tmp2;
 };

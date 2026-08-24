@@ -1,14 +1,14 @@
-// Module ID: 8591
-// Function ID: 8592
+// Module ID: 8630
+// Function ID: 8631
 // Name: useLoginReset
-// Dependencies: [19, 1218, 5256, 2]
+// Dependencies: [19, 1218, 5261, 2]
 // Exports: default
 
-// Module 8591 (useLoginReset)
-import noop from "noop";
-import fetchFingerprint from "fetchFingerprint";
+// Module 8630 (useLoginReset)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
 
-const result = require("handleLogout").fileFinishedImporting("modules/auth/native/useLoginReset.tsx");
+const result = require("set").fileFinishedImporting("modules/auth/native/useLoginReset.tsx");
 
 export default function useLoginReset() {
   const effect = React.useEffect(() => () => {

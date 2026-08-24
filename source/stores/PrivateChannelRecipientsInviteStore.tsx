@@ -1,26 +1,28 @@
-// Module ID: 13303
-// Function ID: 13304
+// Module ID: 13361
+// Function ID: 13362
 // Name: performQuery
-// Dependencies: [4288, 5407, 1395, 1391, 5258, 6772, 1990, 1910, 4030, 1922, 676, 1903, 4219, 7597, 589, 709, 2]
+// Dependencies: [4292, 5412, 1395, 1391, 5263, 6809, 1991, 1910, 4033, 1922, 676, 1903, 4223, 7635, 589, 709, 2]
 
-// Module 13303 (performQuery)
-import getHash from "getHash";
-import recomputeAffinities from "recomputeAffinities";
-import { PrivateChannelRecord } from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import hasConsented from "hasConsented";
-import handleChannelSelect from "handleChannelSelect";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { Store } from "initialize";
-import set from "createChannelRecord";
+// Module 13361 (performQuery)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isNullOrEmpty from "isNullOrEmpty" /* 1903 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import getTransformedUserDefault from "getTransformedUser" /* 7635 */;
+import closure_4 from "getHash" /* 4292 */;
+import closure_5 from "recomputeAffinities" /* 5412 */;
+import { PrivateChannelRecord } from "createChannelRecord" /* 1395 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "hasConsented" /* 5263 */;
+import closure_9 from "handleChannelSelect" /* 6809 */;
+import closure_10 from "trackCommunicationDisabled" /* 1991 */;
+import closure_11 from "createGuildRecordFromRust" /* 1910 */;
+import closure_12 from "markAllUserIdListsStale" /* 4033 */;
+import closure_13 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-let Consents;
-let closure_14;
-const require = arg1;
+require = arg1;
 function performQuery() {
   if (c15) {
     channel = channel.getChannel(c22);
@@ -28,10 +30,10 @@ function performQuery() {
       if (null != closure_3) {
         closure_3.clearQuery();
       }
-      let closure_0 = channel;
+      closure_0 = channel;
       let arr = authStore;
       const currentUser = authStore.getCurrentUser();
-      let obj1 = currentUser;
+      obj1 = currentUser;
       const items = [];
       HermesBuiltin.arraySpread(store.getFriendIDs(), 0);
       let isStaffResult;
@@ -52,7 +54,7 @@ function performQuery() {
         const _Set = Set;
         const items1 = [];
         HermesBuiltin.arraySpread(mapped, HermesBuiltin.arraySpread(items, 0));
-        const set = new Set(items1);
+        set = new Set(items1);
         arr = Array.from(set);
       }
       let isGroupDMResult;
@@ -67,7 +69,7 @@ function performQuery() {
         });
       }
       const reduced = found1.reduce((arr) => {
-        const user = outer1_13.getUser(arg1);
+        const user = closure_1_13.getUser(arg1);
         if (null != user) {
           if (!user.isProvisional) {
             if (user.bot) {
@@ -81,14 +83,14 @@ function performQuery() {
             }
             const obj = { user: null, comparator: null };
             obj[0] = user;
-            obj[1] = obj1(outer1_2[12]).getName(user);
+            obj[1] = obj1(closure_1_2[12]).getName(user);
             arr.push(obj);
             return arr;
           }
         }
         return arr;
       }, []);
-      let closure_18 = reduced.sort(sortUserList);
+      closure_18 = reduced.sort(sortUserList);
       if (c20 !== false) {
         c20 = false;
       }
@@ -120,14 +122,14 @@ function performQuery() {
         closure_0 = HermesBuiltin.apply(items2, Math);
         obj1 = {};
         const item = found2.forEach((id) => {
-          const scoreWithoutFetchingLatest = outer1_9.getScoreWithoutFetchingLatest(id.id);
+          const scoreWithoutFetchingLatest = closure_1_9.getScoreWithoutFetchingLatest(id.id);
           const recipientId = id.getRecipientId();
           let num = 0;
-          if (outer1_12.isFriend(recipientId)) {
+          if (closure_1_12.isFriend(recipientId)) {
             num = 0.2;
           }
           let num2 = 0;
-          if (null != outer1_7.getDMFromUserId(recipientId)) {
+          if (null != closure_1_7.getDMFromUserId(recipientId)) {
             num2 = 0.1;
           }
           obj1[recipientId] = 1 + scoreWithoutFetchingLatest / closure_0 + num + num2;
@@ -144,24 +146,22 @@ function performQuery() {
 function updateHasFriends() {
   if (c15) {
     const tmp3 = store.getFriendCount() > 0;
-    let c19 = tmp3;
-    return tmp3 !== c19;
+    closure_19 = tmp3;
+    return tmp3 !== closure_19;
   } else {
     return false;
   }
 }
 function sortUserList(user, user2) {
-  const obj = require(1903) /* isNullOrEmpty */;
-  const name = importDefault(4219).getName(user.user);
-  const obj2 = importDefault(4219);
+  const obj = isNullOrEmpty;
+  const name = nameFromUserDefault.getName(user.user);
+  const obj2 = nameFromUserDefault;
   const stripDiacriticsResult = obj.stripDiacritics(name.toLocaleLowerCase());
-  const obj5 = require(1903) /* isNullOrEmpty */;
-  const name1 = importDefault(4219).getName(user2.user);
+  const obj5 = isNullOrEmpty;
+  const name1 = nameFromUserDefault.getName(user2.user);
   return stripDiacriticsResult.localeCompare(obj5.stripDiacritics(name1.toLocaleLowerCase()));
 }
 function parseUserResults(results) {
-  let comparator;
-  let id;
   results = results.results;
   if (c15) {
     if ("" !== c16) {
@@ -211,16 +211,16 @@ function handleModalActionSheetOpen(key) {
   if (key.key !== closure_14) {
     return false;
   } else {
-    let c15 = true;
-    let closure_19 = store.getFriendCount() > 0;
+    c15 = true;
+    closure_19 = store.getFriendCount() > 0;
     if (null != userSearchContext) {
       userSearchContext.destroy();
       userSearchContext = null;
     }
-    userSearchContext = importDefault(7597).getUserSearchContext(parseUserResults, 1000);
-    let c22 = null;
-    let c16 = "";
-    let c17 = 0;
+    userSearchContext = getTransformedUserDefault.getUserSearchContext(parseUserResults, 1000);
+    c22 = null;
+    c16 = "";
+    c17 = 0;
     performQuery();
   }
 }
@@ -232,14 +232,14 @@ function handleActionSheetDismiss(key) {
       c3.destroy();
       c3 = null;
     }
-    let c16 = "";
-    let c17 = 0;
-    let closure_18 = [];
+    c16 = "";
+    c17 = 0;
+    closure_18 = [];
     const _Set = Set;
-    const set = new Set();
-    let c15 = false;
-    let c22 = null;
-    let c20 = false;
+    set = new Set();
+    c15 = false;
+    c22 = null;
+    c20 = false;
   }
 }
 function performQueryOnAffinityChange() {
@@ -254,16 +254,17 @@ let c19 = false;
 let c20 = false;
 let set = new Set();
 let c22 = null;
+const Store = initializeDefault.Store;
 class PrivateChannelRecipientsInviteStoreClass extends Store {
 }
 const prototype = PrivateChannelRecipientsInviteStoreClass.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded, hasConsented, getHash, handleChannelSelect, trackCommunicationDisabled, createGuildRecordFromRust, markAllUserIdListsStale, recomputeAffinities, mergeGuildAvatar);
-  const items = [mergeGuildAvatar, ensureGuildLoaded];
+  this.waitFor(closure_7, closure_8, closure_4, closure_9, closure_10, closure_11, closure_12, closure_5, closure_13);
+  const items = [closure_13, closure_7];
   this.syncWith(items, performQuery);
-  const items1 = [recomputeAffinities];
+  const items1 = [closure_5];
   this.syncWith(items1, performQueryOnAffinityChange);
-  const items2 = [markAllUserIdListsStale];
+  const items2 = [closure_12];
   this.syncWith(items2, updateHasFriends);
 };
 prototype["getResults"] = function getResults() {
@@ -282,15 +283,15 @@ prototype["getState"] = function getState() {
   return { query: c16, selectedRow: c17, selectedUsers: set, results: closure_18, hasFriends: c19, isLoading: c20 };
 };
 PrivateChannelRecipientsInviteStoreClass.displayName = "PrivateChannelRecipientsInviteStore";
-const privateChannelRecipientsInviteStoreClass = new PrivateChannelRecipientsInviteStoreClass(require("dispatcher"), {
+const privateChannelRecipientsInviteStoreClass = new PrivateChannelRecipientsInviteStoreClass(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let c16 = "";
-    let c17 = 0;
-    let closure_18 = [];
-    const set = new Set();
-    let c15 = false;
-    let c22 = null;
-    let c20 = false;
+    c16 = "";
+    c17 = 0;
+    closure_18 = [];
+    set = new Set();
+    c15 = false;
+    c22 = null;
+    c20 = false;
   },
   GUILD_MEMBERS_CHUNK_BATCH: function handleGuildMembersChunkBatch() {
     return false;
@@ -302,29 +303,29 @@ const privateChannelRecipientsInviteStoreClass = new PrivateChannelRecipientsInv
     if (null != guildId.guildId) {
       return false;
     } else {
-      let c16 = "";
-      let c17 = 0;
-      let closure_18 = [];
+      c16 = "";
+      c17 = 0;
+      closure_18 = [];
       const _Set = Set;
-      const set = new Set();
-      let c20 = false;
-      let c22 = tmp;
+      set = new Set();
+      c20 = false;
+      c22 = tmp;
       return performQuery();
     }
   },
   MODAL_PUSH: handleModalActionSheetOpen,
   SHOW_ACTION_SHEET: handleModalActionSheetOpen,
   PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function handleInviteOpen(channelId) {
-    let c15 = true;
-    let closure_19 = store.getFriendCount() > 0;
+    c15 = true;
+    closure_19 = store.getFriendCount() > 0;
     if (null != userSearchContext) {
       userSearchContext.destroy();
       userSearchContext = null;
     }
-    userSearchContext = importDefault(7597).getUserSearchContext(parseUserResults, 1000);
+    userSearchContext = getTransformedUserDefault.getUserSearchContext(parseUserResults, 1000);
     channelId = channelId.channelId;
-    let c16 = "";
-    let c17 = 0;
+    c16 = "";
+    c17 = 0;
     performQuery();
   },
   MODAL_POP: handleActionSheetDismiss,
@@ -334,19 +335,17 @@ const privateChannelRecipientsInviteStoreClass = new PrivateChannelRecipientsInv
       c3.destroy();
       c3 = null;
     }
-    let c16 = "";
-    let c17 = 0;
-    let closure_18 = [];
-    const set = new Set();
-    let c15 = false;
-    let c22 = null;
-    let c20 = false;
+    c16 = "";
+    c17 = 0;
+    closure_18 = [];
+    set = new Set();
+    c15 = false;
+    c22 = null;
+    c20 = false;
   },
   PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function handleQuery(arg0) {
-    let c16;
-    let c22;
     ({ channelId: c22, query: c16 } = arg0);
-    let c17 = 0;
+    c17 = 0;
     performQuery();
   },
   PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function handleSelect(row) {

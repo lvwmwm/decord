@@ -1,45 +1,39 @@
-// Module ID: 14635
-// Function ID: 14636
+// Module ID: 14703
+// Function ID: 14704
 // Name: ChannelListPreview
-// Dependencies: [19, 17, 21, 4661, 712, 14636, 14637, 14638, 4115, 1236, 14644, 8029, 14647, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 14704, 14705, 14706, 4119, 1236, 14712, 8068, 14715, 2]
 // Exports: default
 
-// Module 14635 (ChannelListPreview)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14703 (ChannelListPreview)
+import ThemesDefault from "Themes" /* 712 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import SettingsAppearanceChannelListPreviewNitroUpsellComponentDefault from "SettingsAppearanceChannelListPreviewNitroUpsellComponent" /* 14715 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c4;
-let c5;
-let closure_6;
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { channelPreviewGradient: null, channelPreviewCardContainer: null };
 createCacheKey = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-createCacheKey.borderRadius = require("Themes").radii.xl;
+createCacheKey.borderRadius = ThemesDefault.radii.xl;
 createCacheKey.overflow = "hidden";
 createCacheKey[0] = createCacheKey;
-let obj1 = { flex: 1, marginTop: require("Themes").space.PX_8, borderRadius: require("Themes").radii.xl, width: "100%", borderWidth: 1 };
-let merged1 = Object.assign(require("Themes").shadows.SHADOW_HIGH);
+let obj1 = { flex: 1, marginTop: ThemesDefault.space.PX_8, borderRadius: ThemesDefault.radii.xl, width: "100%", borderWidth: 1 };
+let merged1 = Object.assign(ThemesDefault.shadows.SHADOW_HIGH);
 obj1.shadowColor = "#000000";
 createCacheKey[1] = obj1;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelList.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelList.tsx");
 
 export default function ChannelListPreview(useGradientBackground) {
-  let animatedStyles;
-  let data;
-  let isNitroLocked;
-  let themeIndex;
-  let themes;
   ({ themes, themeIndex, animatedStyles } = useGradientBackground);
   useGradientBackground = useGradientBackground.useGradientBackground;
   ({ data, isNitroLocked } = useGradientBackground);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   const items = [animatedStyles];
   const callback = React.useCallback((item) => {
     item = item.item;
@@ -48,17 +42,17 @@ export default function ChannelListPreview(useGradientBackground) {
       let obj = {};
       const merged = Object.assign(item);
       obj.animatedStyles = animatedStyles;
-      return outer1_5(outer1_1(outer1_2[5]), obj);
+      return closure_1_5(closure_1_1(closure_1_2[5]), obj);
     } else if ("messages-header" === kind) {
       obj = {};
       const merged1 = Object.assign(item);
       obj.animatedStyles = animatedStyles;
-      return outer1_5(outer1_1(outer1_2[6]), obj);
+      return closure_1_5(closure_1_1(closure_1_2[6]), obj);
     } else if ("activity-cards" === kind) {
       obj = {};
       const merged2 = Object.assign(item);
       obj.animatedStyles = animatedStyles;
-      return outer1_5(outer1_1(outer1_2[7]), obj);
+      return closure_1_5(closure_1_1(closure_1_2[7]), obj);
     } else {
       return null;
     }
@@ -80,22 +74,23 @@ export default function ChannelListPreview(useGradientBackground) {
     obj[0] = themes;
     obj[1] = themeIndex;
     obj[3] = tmp4(712).colors.BACKGROUND_BASE_LOW;
-    obj[1] = callback(tmp4(14644), obj);
+    obj[1] = callback(tmp4(14712), obj);
     tmp7 = callback(closure_4, obj);
-    const tmp4Result = tmp4(14644);
+    const tmp4Result = tmp4(14712);
   }
   const items2 = [tmp7, , ];
-  const obj1 = { contentContainerStyle: null, data: null, renderItem: null, keyExtractor: null, showsVerticalScrollIndicator: false, importantForAccessibility: "no-hide-descendants" };
-  const obj2 = { paddingVertical: null };
-  obj2[0] = importDefault(712).space.PX_16;
-  obj1[0] = obj2;
-  obj1[1] = data;
-  obj1[2] = callback;
-  obj1[3] = function keyExtractor(id) {
-    return id.id;
+  obj1 = {
+    contentContainerStyle: { paddingVertical: ThemesDefault.space.PX_16 },
+    data,
+    renderItem: callback,
+    keyExtractor(id) {
+      return id.id;
+    },
+    showsVerticalScrollIndicator: false,
+    importantForAccessibility: "no-hide-descendants"
   };
-  items2[1] = callback(animatedStyles(8029).FlashList, obj1);
-  items2[2] = callback(importDefault(14647), { visible: isNitroLocked, theme: themes[themeIndex] });
+  items2[1] = callback(animatedStyles(8068).FlashList, obj1);
+  items2[2] = callback(SettingsAppearanceChannelListPreviewNitroUpsellComponentDefault, { visible: isNitroLocked, theme: themes[themeIndex] });
   obj[4] = items2;
-  return closure_6(importDefault(4115).View, obj);
+  return closure_6(_modDef4119.View, obj);
 };

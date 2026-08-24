@@ -1,30 +1,31 @@
-// Module ID: 7272
-// Function ID: 7273
+// Module ID: 7310
+// Function ID: 7311
 // Name: getCreationDefaultFormatter
-// Dependencies: [1391, 1910, 4772, 7273, 1398, 1236, 1400, 2]
+// Dependencies: [1391, 1910, 4777, 7311, 1398, 1236, 1400, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStates, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 7272 (getCreationDefaultFormatter)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET";
-import { ChannelFlags } from "set";
+// Module 7310 (getCreationDefaultFormatter)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import set from "set" /* 1400 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "generateOldThreadCutoff" /* 4777 */;
+import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET" /* 7311 */;
+import { ChannelFlags } from "set" /* 1398 */;
 
-const require = arg1;
+require = arg1;
 function getCreationDefaultFormatter() {
-  const obj = { minutes: require(1236) /* getSystemLocale */.t.nFt9ck, hours: require(1236) /* getSystemLocale */.t.jzCewe, days: require(1236) /* getSystemLocale */.t.U4I0sw, month: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t["nBNJ/L"]);
+  const obj = { minutes: getSystemLocale.t.nFt9ck, hours: getSystemLocale.t.jzCewe, days: getSystemLocale.t.U4I0sw, month: null };
+  const intl = getSystemLocale.intl;
+  obj[3] = intl.string(getSystemLocale.t["nBNJ/L"]);
   return obj;
 }
-const result = require("generateOldThreadCutoff").fileFinishedImporting("modules/forums/ForumUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/forums/ForumUtils.tsx");
 
 export const getForumPostReadStates = function getForumPostReadStates(isArchivedThread, guild, items) {
-  let obj;
   let tmp = items;
   if (items === undefined) {
-    items = [generateOldThreadCutoff];
+    items = [closure_4];
     tmp = items;
   }
   [obj] = tmp;
@@ -43,13 +44,9 @@ export const getForumPostReadStates = function getForumPostReadStates(isArchived
   return obj;
 };
 export const getForumPostReadStatesById = function getForumPostReadStatesById(arg0) {
-  let obj;
-  let obj2;
-  let obj4;
-  let tmp5;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [ensureGuildLoaded, createGuildRecordFromRust, generateOldThreadCutoff];
+    const items = [closure_2, closure_3, closure_4];
     tmp = items;
   }
   [obj, obj2, tmp5] = tmp;
@@ -82,13 +79,12 @@ export const getForumPostReadStatesById = function getForumPostReadStatesById(ar
 };
 export const getForumTimestampFormatter = function getForumTimestampFormatter(closure_1, DURATION_AGO) {
   if (DURATION_AGO === ForumTimestampFormats.POSTED_DURATION_AGO) {
-    if (closure_1 === require(1400) /* set */.ThreadSortOrder.CREATION_DATE) {
+    if (closure_1 === set.ThreadSortOrder.CREATION_DATE) {
       return getCreationDefaultFormatter;
     }
   }
 };
 export const canDisplayPostUnreadMessageCount = function canDisplayPostUnreadMessageCount(id, items) {
-  let obj;
   [obj] = items;
   let hasTrackedUnreadResult = obj.hasTrackedUnread(id);
   const hasOpenedThreadResult = obj.hasOpenedThread(id);

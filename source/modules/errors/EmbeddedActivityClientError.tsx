@@ -1,10 +1,12 @@
-// Module ID: 8726
-// Function ID: 8727
+// Module ID: 8763
+// Function ID: 8764
 // Name: prototype
 // Dependencies: [2]
 
-// Module 8726 (prototype)
-const result = require("set").fileFinishedImporting("modules/errors/EmbeddedActivityClientError.tsx");
+// Module 8763 (prototype)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/errors/EmbeddedActivityClientError.tsx");
 const prototype = function EmbeddedActivityClientError(reason, detailCode) {
   const obj = Object.create(new.target.prototype);
   obj.reason = reason;

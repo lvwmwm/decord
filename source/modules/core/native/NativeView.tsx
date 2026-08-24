@@ -1,9 +1,12 @@
-// Module ID: 7190
-// Function ID: 7191
+// Module ID: 7228
+// Function ID: 7229
 // Name: set
 // Dependencies: [2, 112]
 
-// Module 7190 (set)
-const result = require("set").fileFinishedImporting("modules/core/native/NativeView.tsx");
+// Module 7228 (set)
+import set from "set" /* 2 */;
+import CommandsDefault from "Commands" /* 112 */;
 
-export { default } from "Commands";
+const result = set.fileFinishedImporting("modules/core/native/NativeView.tsx");
+
+export default CommandsDefault;

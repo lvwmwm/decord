@@ -1,29 +1,29 @@
-// Module ID: 13291
-// Function ID: 13292
+// Module ID: 13349
+// Function ID: 13350
 // Name: reset
 // Dependencies: [589, 709, 2]
 
-// Module 13291 (reset)
-import { Store } from "initialize";
+// Module 13349 (reset)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 function reset() {
-  let closure_0 = {};
-  let c1 = null;
+  closure_0 = {};
+  c1 = null;
 }
 let closure_0 = {};
 let c1 = null;
+const Store = initializeDefault.Store;
 class EmailSettingsStore extends Store {
 }
 EmailSettingsStore.prototype["getEmailSettings"] = function getEmailSettings() {
   return { categories: closure_0, initialized: c1 };
 };
 EmailSettingsStore.displayName = "EmailSettingsStore";
-const emailSettingsStore = new EmailSettingsStore(require("dispatcher"), {
+const emailSettingsStore = new EmailSettingsStore(dispatcherDefault, {
   CONNECTION_OPEN: reset,
   LOGOUT: reset,
   EMAIL_SETTINGS_FETCH_SUCCESS: function handleFetchSuccess(settings) {
-    let c1;
-    let closure_0;
     ({ categories: closure_0, initialized: c1 } = settings.settings);
   },
   EMAIL_SETTINGS_UPDATE_SUCCESS: function handleUpdateSuccess(settings) {

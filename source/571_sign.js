@@ -4,10 +4,12 @@
 // Dependencies: [572]
 
 // Module 571 (sign)
+import isNaN from "isNaN" /* 572 */;
+
 
 export default function sign(arg0) {
   let tmp = arg0;
-  if (!require(572) /* isNaN */(arg0)) {
+  if (!isNaN(arg0)) {
     tmp = arg0;
     if (0 !== arg0) {
       let num2 = 1;

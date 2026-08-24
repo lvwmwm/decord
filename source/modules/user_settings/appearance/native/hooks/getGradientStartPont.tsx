@@ -1,10 +1,12 @@
-// Module ID: 14646
-// Function ID: 14647
+// Module ID: 14714
+// Function ID: 14715
 // Name: getHorizontalOrVerticalStartPoint
 // Dependencies: [2]
 // Exports: default
 
-// Module 14646 (getHorizontalOrVerticalStartPoint)
+// Module 14714 (getHorizontalOrVerticalStartPoint)
+import set from "set" /* 2 */;
+
 function getHorizontalOrVerticalStartPoint(arg0, arg1, arg2) {
   if (0 === arg0) {
     const items = [-arg1 / 2, 0];
@@ -96,6 +98,6 @@ const fn = function t(arg0, arg1, arg2) {
 fn.__closure = { getHorizontalOrVerticalStartPoint, getStartCornerToIntersect };
 fn.__workletHash = 11244204401624;
 fn.__initData = { code: "function getGradientStartPoint_getGradientStartPontTsx3(angle,width,height){const{getHorizontalOrVerticalStartPoint,getStartCornerToIntersect}=this.__closure;angle=angle%360;if(angle<0){angle+=360;}if(angle%90===0){return getHorizontalOrVerticalStartPoint(angle,width,height);}const slope=Math.tan(angle*Math.PI/180);const perpendicularSlope=-1/slope;const startCorner=getStartCornerToIntersect(angle,width,height);const b=startCorner[1]-perpendicularSlope*startCorner[0];const startX=b/(slope-perpendicularSlope);const startY=slope*startX;return[startX,startY];}" };
-let result = require("set").fileFinishedImporting("modules/user_settings/appearance/native/hooks/getGradientStartPont.tsx");
+let result = set.fileFinishedImporting("modules/user_settings/appearance/native/hooks/getGradientStartPont.tsx");
 
 export default fn;

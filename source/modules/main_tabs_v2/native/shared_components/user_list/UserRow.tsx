@@ -1,42 +1,33 @@
-// Module ID: 9645
-// Function ID: 9646
+// Module ID: 9684
+// Function ID: 9685
 // Name: UserRowSubLabel
-// Dependencies: [19, 17, 4662, 4478, 5410, 1391, 4559, 4030, 9081, 676, 21, 4661, 712, 4770, 38, 9646, 9887, 4093, 9888, 9736, 5411, 589, 1297, 4734, 4219, 9893, 7139, 4797, 1236, 9911, 4328, 4326, 4745, 1904, 8508, 6867, 8929, 2007, 8961, 9912, 7979, 6814, 8186, 4815, 9455, 9452, 9462, 9914, 9509, 8558, 9573, 6291, 2]
+// Dependencies: [19, 17, 4669, 4482, 5415, 1391, 4564, 4033, 9118, 676, 21, 4668, 712, 4775, 38, 9685, 9926, 4096, 9927, 9775, 5416, 589, 1297, 4739, 4223, 9932, 7177, 4802, 1236, 9950, 4332, 4330, 4750, 1904, 8547, 6905, 8966, 2008, 8998, 9951, 8018, 6851, 8226, 4820, 9492, 9489, 9499, 9953, 9546, 8597, 9610, 6322, 2]
 
-// Module 9645 (UserRowSubLabel)
-import importAllResult from "handleRelationshipAddError";
-import { View } from "presentAddedFriendToast";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import addApplication from "addApplication";
-import initialize from "initialize";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import sortActivity from "sortActivity";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import { UserRowModes } from "UserRowModes";
-import ME from "ME";
-import jsxProd from "initialize";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
+// Module 9684 (UserRowSubLabel)
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import ActivityStatusDefault from "ActivityStatus" /* 9932 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_6 from "addApplication" /* 4482 */;
+import closure_7 from "initialize" /* 5415 */;
+import closure_8 from "ensureGuildLoaded" /* 1391 */;
+import closure_9 from "sortActivity" /* 4564 */;
+import closure_10 from "markAllUserIdListsStale" /* 4033 */;
+import { UserRowModes } from "UserRowModes" /* 9118 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_12;
-let closure_14;
-let closure_15;
-let closure_16;
-let map1;
-const require = arg1;
+require = arg1;
 function UserRowSubLabel(arg0) {
-  let animate;
-  let guildId;
-  let isGameRelationship;
-  let require;
-  let type;
-  let user;
   ({ user, type, applicationId: require } = arg0);
   ({ animate, isGameRelationship, guildId } = arg0);
   let gameIcon = callback2();
-  let obj = require(589) /* initialize */;
-  const items = [addApplication];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getApplication(closure_0));
+  let obj = initialize;
+  const items = [closure_6];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getApplication(closure_0));
   if (type !== constants.PENDING_INCOMING) {
     if (type !== tmp3.SUGGESTION) {
       if (type !== tmp3.PENDING_OUTGOING) {
@@ -45,18 +36,18 @@ function UserRowSubLabel(arg0) {
         obj[1] = guildId;
         obj[2] = gameIcon.activityText;
         obj[3] = animate;
-        return callback(importDefault(9893), obj);
+        return callback(ActivityStatusDefault, obj);
       }
     }
   }
   if (!isGameRelationship) {
     obj = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
-    obj[3] = tmp(4219).getUserTag(user);
-    callback(tmp(4734).Text, obj);
-    const tmpResult = tmp(4219);
+    obj[3] = tmp(4223).getUserTag(user);
+    callback(tmp(4739).Text, obj);
+    const tmpResult = tmp(4223);
   }
   if (null == stateFromStores) {
-    const obj1 = { style: null };
+    obj1 = { style: null };
     gameIcon = gameIcon.gameIcon;
     obj1[0] = gameIcon;
     callback(View, obj1);
@@ -75,7 +66,7 @@ function UserRowSubLabel(arg0) {
     const items1 = [callback(tmp(1297).Icon, obj3, stateFromStores.id), ];
     const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: null };
     obj5[3] = stateFromStores.name;
-    items1[1] = callback(tmp(4734).Text, obj5);
+    items1[1] = callback(tmp(4739).Text, obj5);
     obj2[1] = items1;
     closure_15(View, obj2);
     const tmp11 = closure_15;
@@ -88,21 +79,14 @@ let c3 = importAllResult;
 let closure_17 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let closure_18 = createCacheKey.createStyles({ avatar: { flexShrink: 0, flexGrow: 0 }, actions: { flexDirection: "row" }, action: { marginLeft: 12, alignSelf: "center" }, buttonWrapper: { marginLeft: 8 }, labelContainer: { flexDirection: "row", alignItems: "center" }, roleDot: { marginRight: 4, paddingTop: 0 }, usernameLabelContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, usernameLabel: { display: "flex", flexShrink: 1 } });
 let obj = { activityText: null, gameContainer: null, gameIcon: null };
-obj = { color: require("Themes").colors.TEXT_SUBTLE };
+obj = { color: ThemesDefault.colors.TEXT_SUBTLE };
 obj[0] = obj;
-createCacheKey = { flexDirection: "row", gap: 4, cornerRadius: require("Themes").radii.xs };
+createCacheKey = { flexDirection: "row", gap: 4, cornerRadius: ThemesDefault.radii.xs };
 obj[1] = createCacheKey;
 obj[2] = { width: 14, height: 14 };
 let closure_19 = createCacheKey.createStyles(obj);
 const Friends_v2 = "Friends_v2";
 const memoResult = importAllResult.memo(function UserRow(type) {
-  let accessibilityActions;
-  let applicationId;
-  let onAccessibilityAction;
-  let premiumSince;
-  let roleColors;
-  let stateFromStores;
-  let usernameColor;
   type = type.type;
   const user = type.user;
   let NONE = type.mode;
@@ -148,7 +132,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
     flag7 = false;
   }
   const merged = Object.assign(type, Object.create(null));
-  let c17;
+  closure_17 = undefined;
   let analyticsLocations;
   let useReducedMotion;
   let roleStyle;
@@ -157,17 +141,17 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   let status;
   let stateFromStores1;
   let avatarDecoration;
-  let closure_26;
+  closure_26 = undefined;
   let actions;
   let tmp3 = analyticsLocations();
-  c17 = tmp3;
+  closure_17 = tmp3;
   analyticsLocations = user(NONE[26])().analyticsLocations;
   let obj = type(NONE[21]);
   let items = [onPress];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ useReducedMotion: onPress.useReducedMotion, roleStyle: onPress.roleStyle }));
   useReducedMotion = stateFromStoresObject.useReducedMotion;
   roleStyle = stateFromStoresObject.roleStyle;
-  let obj1 = type(NONE[21]);
+  obj1 = type(NONE[21]);
   let items1 = [usernameColor];
   const stateFromStoresObject1 = obj1.useStateFromStoresObject(items1, () => ({ isMobileOnline: usernameColor.isMobileOnline(user.id), isVROnline: usernameColor.isVROnline(user.id), status: usernameColor.getStatus(user.id) }));
   isMobileOnline = stateFromStoresObject1.isMobileOnline;
@@ -207,20 +191,20 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const memo = flag2.useMemo(() => {
     const items = [];
     if (NONE !== guildId.ACTIONS) {
-      let obj = { accessibilityActions: null, actions: "a" };
+      let obj = { accessibilityActions: null, actions: "r" };
       obj[0] = items;
       return obj;
     } else {
       if (trailing.PENDING_INCOMING === type) {
         obj = { name: null, label: null };
-        obj[0] = _undefined.DECLINE;
+        obj[0] = closure_17.DECLINE;
         const intl6 = type(NONE[28]).intl;
-        const obj1 = { name: null };
+        obj1 = { name: null };
         let obj15 = user(NONE[24]);
         obj1[0] = obj15.getName(user);
         obj[1] = intl6.formatToPlainString(type(NONE[28]).t["C9Xe6+"], obj1);
         let obj2 = { name: null, label: null };
-        obj2[0] = _undefined.ACCEPT;
+        obj2[0] = closure_17.ACCEPT;
         const intl7 = type(NONE[28]).intl;
         let obj3 = { name: null };
         let obj18 = user(NONE[24]);
@@ -228,9 +212,9 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         obj2[1] = intl7.formatToPlainString(type(NONE[28]).t["6p0yBo"], obj3);
         items.push(obj, obj2);
         let obj4 = { style: null, children: null };
-        obj4[0] = _undefined.actions;
+        obj4[0] = closure_17.actions;
         let obj5 = { styles: null, IconComponent: null, type: "neutral", onPress: null, accessibilityLabel: null };
-        obj5[0] = _undefined.action;
+        obj5[0] = closure_17.action;
         obj5[1] = type(NONE[30]).XLargeIcon;
         obj5[3] = function onPress() {
           const current = closure_26.current;
@@ -238,17 +222,17 @@ const memoResult = importAllResult.memo(function UserRow(type) {
             let obj = { userId: null, applicationId: null };
             obj[0] = current.id;
             obj[1] = tmp;
-            const result = outer1_1(outer1_2[18]).cancelGameFriendRequest(obj);
-            const obj4 = outer1_1(outer1_2[18]);
-            const result1 = outer1_0(outer1_2[17]).presentGameFriendRequestIgnoredToast();
-            const obj6 = outer1_0(outer1_2[17]);
+            const result = closure_1_1(closure_1_2[18]).cancelGameFriendRequest(obj);
+            const obj4 = closure_1_1(closure_1_2[18]);
+            const result1 = closure_1_0(closure_1_2[17]).presentGameFriendRequestIgnoredToast();
+            const obj6 = closure_1_0(closure_1_2[17]);
           } else {
-            obj = outer1_1(outer1_2[19]);
+            obj = closure_1_1(closure_1_2[19]);
             obj = { location: null };
-            obj[0] = outer1_20;
+            obj[0] = closure_1_20;
             obj.cancelFriendRequest(current.id, obj);
-            const result2 = outer1_0(outer1_2[17]).presentFriendRequestIgnoredToast();
-            const obj3 = outer1_0(outer1_2[17]);
+            const result2 = closure_1_0(closure_1_2[17]).presentFriendRequestIgnoredToast();
+            const obj3 = closure_1_0(closure_1_2[17]);
           }
         };
         const intl8 = type(NONE[28]).intl;
@@ -258,23 +242,23 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         obj5[4] = intl8.formatToPlainString(type(NONE[28]).t["C9Xe6+"], obj6);
         const items1 = [label(user(NONE[29]), obj5), ];
         const obj7 = { styles: null, IconComponent: null, type: "positive", onPress: null, accessibilityLabel: null };
-        obj7[0] = _undefined.action;
+        obj7[0] = closure_17.action;
         const tmp29 = user(NONE[29]);
         obj7[1] = type(NONE[31]).CheckmarkLargeIcon;
         obj7[3] = function onPress() {
-          let closure_0 = closure_15;
-          let obj = outer1_1(outer1_2[16]);
+          closure_0 = closure_15;
+          let obj = closure_1_1(closure_1_2[16]);
           obj = {
             userId: closure_26.current.id,
             applicationId: closure_15,
-            location: outer1_20,
+            location: closure_1_20,
             onConfirm() {
               if (null != callback) {
-                const result = callback(outer1_2[17]).presentGameFriendRequestAcceptedToast();
-                const obj2 = callback(outer1_2[17]);
+                const result = callback(closure_1_2[17]).presentGameFriendRequestAcceptedToast();
+                const obj2 = callback(closure_1_2[17]);
               } else {
-                const result1 = callback(outer1_2[17]).presentFriendRequestAcceptedToast();
-                const obj = callback(outer1_2[17]);
+                const result1 = callback(closure_1_2[17]).presentFriendRequestAcceptedToast();
+                const obj = callback(closure_1_2[17]);
               }
             }
           };
@@ -291,7 +275,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         const tmp30 = user(NONE[29]);
       } else if (tmp32.PENDING_OUTGOING === tmp31) {
         const obj9 = { name: null, label: null };
-        obj9[0] = _undefined.CANCEL;
+        obj9[0] = closure_17.CANCEL;
         const intl4 = type(NONE[28]).intl;
         const obj10 = { name: null };
         obj8 = user(NONE[24]);
@@ -299,9 +283,9 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         obj9[1] = intl4.formatToPlainString(type(NONE[28]).t.JFJ8Cg, obj10);
         items.push(obj9);
         const obj11 = { style: null, children: null };
-        obj11[0] = _undefined.actions;
+        obj11[0] = closure_17.actions;
         let obj12 = { styles: null, IconComponent: null, type: "neutral", onPress: null, accessibilityLabel: null };
-        obj12[0] = _undefined.action;
+        obj12[0] = closure_17.action;
         obj12[1] = type(NONE[30]).XLargeIcon;
         obj12[3] = function onPress() {
           const current = closure_26.current;
@@ -309,17 +293,17 @@ const memoResult = importAllResult.memo(function UserRow(type) {
             let obj = { userId: null, applicationId: null };
             obj[0] = current.id;
             obj[1] = tmp;
-            const result = outer1_1(outer1_2[18]).cancelGameFriendRequest(obj);
-            const obj4 = outer1_1(outer1_2[18]);
-            const result1 = outer1_0(outer1_2[17]).presentGameFriendRequestIgnoredToast();
-            const obj6 = outer1_0(outer1_2[17]);
+            const result = closure_1_1(closure_1_2[18]).cancelGameFriendRequest(obj);
+            const obj4 = closure_1_1(closure_1_2[18]);
+            const result1 = closure_1_0(closure_1_2[17]).presentGameFriendRequestIgnoredToast();
+            const obj6 = closure_1_0(closure_1_2[17]);
           } else {
-            obj = outer1_1(outer1_2[19]);
+            obj = closure_1_1(closure_1_2[19]);
             obj = { location: null };
-            obj[0] = outer1_20;
+            obj[0] = closure_1_20;
             obj.cancelFriendRequest(current.id, obj);
-            const result2 = outer1_0(outer1_2[17]).presentFriendRequestIgnoredToast();
-            const obj3 = outer1_0(outer1_2[17]);
+            const result2 = closure_1_0(closure_1_2[17]).presentFriendRequestIgnoredToast();
+            const obj3 = closure_1_0(closure_1_2[17]);
           }
         };
         const intl5 = type(NONE[28]).intl;
@@ -332,28 +316,28 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         const tmp18 = user(NONE[29]);
       } else if (tmp32.SUGGESTION === tmp31) {
         obj = { name: null, label: null };
-        obj[0] = _undefined.ACCEPT_SUGGESTION;
+        obj[0] = closure_17.ACCEPT_SUGGESTION;
         const intl = type(NONE[28]).intl;
         obj[1] = intl.string(type(NONE[28]).t["ed99+i"]);
         const obj14 = { name: null, label: null };
-        obj14[0] = _undefined.IGNORE_SUGGESTION;
+        obj14[0] = closure_17.IGNORE_SUGGESTION;
         const intl2 = type(NONE[28]).intl;
         obj14[1] = intl2.string(type(NONE[28]).t["Tw3a/R"]);
         items.push(obj, obj14);
         obj15 = { style: null, children: null };
-        obj15[0] = _undefined.actions;
+        obj15[0] = closure_17.actions;
         const obj16 = { style: null, children: null };
-        obj16[0] = _undefined.buttonWrapper;
+        obj16[0] = closure_17.buttonWrapper;
         const obj17 = { variant: "secondary", size: "sm", text: null, onPress: null };
         obj5 = type(NONE[33]);
         const intl3 = type(NONE[28]).intl;
         obj17[2] = obj5.truncateText(intl3.string(type(NONE[28]).t.OYkgVk), 8);
         obj17[3] = function onPress() {
-          let obj = outer1_1(outer1_2[19]);
+          let obj = closure_1_1(closure_1_2[19]);
           obj = { userId: closure_26.current.id, context: obj, type: "HermesInternal", fromFriendSuggestion: null };
-          obj = { location: outer1_20 };
+          obj = { location: closure_1_20 };
           obj.addRelationship(obj);
-          const result = outer1_0(outer1_2[17]).presentAddedFriendToast();
+          const result = closure_1_0(closure_1_2[17]).presentAddedFriendToast();
         };
         obj16[1] = label(type(NONE[32]).Button, obj17);
         obj15[1] = label(flag3, obj16);
@@ -361,13 +345,13 @@ const memoResult = importAllResult.memo(function UserRow(type) {
       } else {
         const FRIEND = tmp32.FRIEND;
         obj18 = { name: null, label: null };
-        obj18[0] = _undefined.CALL;
+        obj18[0] = closure_17.CALL;
         const intl10 = type(NONE[28]).intl;
         const obj19 = { name: null };
         obj19[0] = user(NONE[24]).getName(user);
         obj18[1] = intl10.formatToPlainString(type(NONE[28]).t.Q75ddl, obj19);
         const obj20 = { name: null, label: null };
-        obj20[0] = _undefined.MESSAGE;
+        obj20[0] = closure_17.MESSAGE;
         const intl11 = type(NONE[28]).intl;
         const obj21 = { name: null };
         const obj31 = user(NONE[24]);
@@ -375,29 +359,29 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         obj20[1] = intl11.formatToPlainString(type(NONE[28]).t.zFfSFQ, obj21);
         items.push(obj18, obj20);
         obj22 = { style: null, children: null };
-        obj22[0] = _undefined.actions;
+        obj22[0] = closure_17.actions;
         const obj23 = { styles: null, IconComponent: null, type: "neutral", onPress: null, accessibilityLabel: null };
-        obj23[0] = _undefined.action;
+        obj23[0] = closure_17.action;
         const obj34 = user(NONE[24]);
         obj23[1] = type(NONE[34]).PhoneCallIcon;
         obj23[3] = function onPress() {
           const current = closure_26.current;
-          let obj = outer1_1(outer1_2[13]);
-          outer1_1(outer1_2[13]).ensurePrivateChannel(current.id).then((arg0) => {
-            const channel = outer1_8.getChannel(arg0);
+          let obj = closure_1_1(closure_1_2[13]);
+          closure_1_1(closure_1_2[13]).ensurePrivateChannel(current.id).then((arg0) => {
+            const channel = closure_1_8.getChannel(arg0);
             if (null != channel) {
-              outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
-              const obj4 = outer1_1(outer1_2[15])(channel, false);
-              if (!obj4.inCall) {
-                obj4.onPress();
+              closure_1_1(closure_1_2[14])(channel.isPrivate(), "must be a DM");
+              const obj2 = closure_1_1(closure_1_2[15])(channel, false);
+              if (!obj2.inCall) {
+                obj2.onPress();
               }
-              const tmp4 = outer1_1;
-              const tmp5 = outer1_2;
-              const tmp6 = outer1_1(outer1_2[14]);
+              const tmp = closure_1_1;
+              const tmp2 = closure_1_2;
+              const tmp3 = closure_1_1(closure_1_2[14]);
               const obj = { recipientIds: null };
               obj[0] = current.id;
-              outer1_1(outer1_2[13]).openPrivateChannel(obj);
-              const tmp4Result = outer1_1(outer1_2[13]);
+              closure_1_1(closure_1_2[13]).openPrivateChannel(obj);
+              const tmpResult = closure_1_1(closure_1_2[13]);
             }
           });
         };
@@ -408,12 +392,12 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         obj23[4] = intl12.formatToPlainString(type(NONE[28]).t.Q75ddl, obj24);
         const items2 = [label(tmp43, obj23), ];
         obj25 = { styles: null, IconComponent: null, type: "neutral", onPress: null, accessibilityLabel: null };
-        obj25[0] = _undefined.action;
+        obj25[0] = closure_17.action;
         const obj38 = user(NONE[24]);
         obj25[1] = type(NONE[35]).ChatIcon;
         obj25[3] = function onPress() {
           let tmpResult;
-          if (initialize != null) {
+          if (closure_7 != null) {
             tmpResult = tmp(closure_26.current);
           }
           return tmpResult;
@@ -439,24 +423,24 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const items8 = [onLongPress, user, analyticsLocations];
   const callback1 = flag2.useCallback((nativeEvent) => {
     const actionName = nativeEvent.nativeEvent.actionName;
-    if (_undefined.CALL === actionName) {
-      let closure_0 = user;
+    if (closure_17.CALL === actionName) {
+      closure_0 = user;
       const obj14 = user(NONE[13]);
       user(NONE[13]).ensurePrivateChannel(user.id).then((arg0) => {
-        const channel = outer1_8.getChannel(arg0);
+        const channel = closure_1_8.getChannel(arg0);
         if (null != channel) {
-          outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
-          const obj4 = outer1_1(outer1_2[15])(channel, false);
-          if (!obj4.inCall) {
-            obj4.onPress();
+          closure_1_1(closure_1_2[14])(channel.isPrivate(), "must be a DM");
+          const obj2 = closure_1_1(closure_1_2[15])(channel, false);
+          if (!obj2.inCall) {
+            obj2.onPress();
           }
-          const tmp4 = outer1_1;
-          const tmp5 = outer1_2;
-          const tmp6 = outer1_1(outer1_2[14]);
+          const tmp = closure_1_1;
+          const tmp2 = closure_1_2;
+          const tmp3 = closure_1_1(closure_1_2[14]);
           const obj = { recipientIds: null };
           obj[0] = current.id;
-          outer1_1(outer1_2[13]).openPrivateChannel(obj);
-          const tmp4Result = outer1_1(outer1_2[13]);
+          closure_1_1(closure_1_2[13]).openPrivateChannel(obj);
+          const tmpResult = closure_1_1(closure_1_2[13]);
         }
       });
     } else if (tmp.MESSAGE === actionName) {
@@ -473,11 +457,11 @@ const memoResult = importAllResult.memo(function UserRow(type) {
       obj[2] = roleStyle;
       obj[3] = function onConfirm() {
         if (null != callback) {
-          const result = callback(outer1_2[17]).presentGameFriendRequestAcceptedToast();
-          const obj2 = callback(outer1_2[17]);
+          const result = callback(closure_1_2[17]).presentGameFriendRequestAcceptedToast();
+          const obj2 = callback(closure_1_2[17]);
         } else {
-          const result1 = callback(outer1_2[17]).presentFriendRequestAcceptedToast();
-          const obj = callback(outer1_2[17]);
+          const result1 = callback(closure_1_2[17]).presentFriendRequestAcceptedToast();
+          const obj = callback(closure_1_2[17]);
         }
       };
       const result = user(NONE[16]).maybeConfirmFriendRequestAccept(obj);
@@ -485,7 +469,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
       if (tmp.DECLINE !== actionName) {
         if (tmp.CANCEL !== actionName) {
           if (tmp.ACCEPT_SUGGESTION === actionName) {
-            let obj1 = user(NONE[19]);
+            obj1 = user(NONE[19]);
             obj = { userId: null, context: null, type: "HermesInternal", fromFriendSuggestion: null };
             obj[0] = user.id;
             obj1 = { location: null };
@@ -543,7 +527,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const items11 = [label, type, , , ];
   let name;
   const memo2 = flag2.useMemo(() => {
-    const obj = { style: _undefined.avatar, user, guildId, status: null, isMobileOnline: null, isVROnline: null, size: null, avatarDecoration: null, autoStatusCutout: true };
+    const obj = { style: closure_17.avatar, user, guildId, status: null, isMobileOnline: null, isVROnline: null, size: null, avatarDecoration: null, autoStatusCutout: true };
     let tmp4 = null;
     if (subLabel.OFFLINE !== status) {
       tmp4 = status;
@@ -649,129 +633,132 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   tmp6Result = tmp6(tmp5[44]);
   const displayNameStylesFont = tmp6Result.useDisplayNameStylesFont({ displayNameStyles: tmp26 });
   const humanizeStatusResult = type(NONE[24]).humanizeStatus(status, { isMobile: isMobileOnline, isVR: isVROnline });
-  let combined;
+  let formatToPlainStringResult;
   if (typeof memo3 === "string") {
     if (null != humanizeStatusResult) {
-      const _HermesInternal = HermesInternal;
-      combined = "" + memo3 + ", " + humanizeStatusResult;
+      let intl = tmp6(tmp5[28]).intl;
+      obj = { label: null, status: null };
+      obj[0] = memo3;
+      obj[1] = humanizeStatusResult;
+      formatToPlainStringResult = intl.formatToPlainString(tmp6(tmp5[28]).t["/6mw10"], obj);
     }
   }
-  obj = { lineClamp: 1, variant: "text-md/semibold" };
-  obj1 = { style: tmp3.usernameLabelContainer, children: null };
+  obj1 = { lineClamp: 1, variant: "text-md/semibold" };
+  obj2 = { style: tmp3.usernameLabelContainer, children: null };
   if (flag6) {
     if (null != tmp26) {
       if (null == guildId) {
-        obj2 = { userId: null, userName: null, style: null, defaultColor: "mobile-text-heading-primary", accessibilityLabel: null };
-        obj2[0] = user.id;
-        obj2[1] = memo3;
+        obj3 = { userId: null, userName: null, style: null, defaultColor: "mobile-text-heading-primary", accessibilityLabel: null };
+        obj3[0] = user.id;
+        obj3[1] = memo3;
         const items15 = [tmp3.usernameLabel, memo1];
-        obj2[2] = items15;
-        obj2[4] = combined;
+        obj3[2] = items15;
+        obj3[4] = formatToPlainStringResult;
         let tmp4Result = tmp4(tmp5[45]);
-        const merged1 = Object.assign(obj);
-        let tmp33Result1 = label(tmp4Result, obj2);
-        let tmp33 = label;
+        const merged1 = Object.assign(obj1);
+        let tmp32Result1 = label(tmp4Result, obj3);
+        let tmp32 = label;
       }
-      const items16 = [tmp33Result1, memo4, ];
+      const items16 = [tmp32Result1, memo4, ];
       if (user.bot) {
-        obj3 = { verified: null, type: null };
+        obj4 = { verified: null, type: null };
         tmp4Result = tmp4(tmp5[46]);
-        obj3[0] = user.isVerifiedBot();
-        obj3[1] = tmp6(tmp5[47]).getBotTagTypeFromUser(user);
-        let tmp33Result = tmp33(tmp4Result, obj3);
+        obj4[0] = user.isVerifiedBot();
+        obj4[1] = tmp6(tmp5[47]).getBotTagTypeFromUser(user);
+        let tmp32Result = tmp32(tmp4Result, obj4);
         const tmp6Result2 = tmp6(tmp5[47]);
       } else {
-        obj4 = { userId: null };
-        obj4[0] = user.id;
-        tmp33Result = tmp33(tmp4(tmp5[48]), obj4);
+        obj5 = { userId: null };
+        obj5[0] = user.id;
+        tmp32Result = tmp32(tmp4(tmp5[48]), obj5);
       }
-      items16[2] = tmp33Result;
-      obj1[1] = items16;
-      let tmp31Result = tmp31(tmp32, obj1);
-      let tmp45 = "dot" !== roleStyle;
-      if (!tmp45) {
-        tmp45 = null == usernameColor && null == roleColors;
-        const tmp46 = null == usernameColor && null == roleColors;
+      items16[2] = tmp32Result;
+      obj2[1] = items16;
+      let tmp30Result = tmp30(tmp31, obj2);
+      let tmp44 = "dot" !== roleStyle;
+      if (!tmp44) {
+        tmp44 = null == usernameColor && null == roleColors;
+        const tmp45 = null == usernameColor && null == roleColors;
       }
-      if (!tmp45) {
-        obj5 = { style: null, children: null };
-        obj5[0] = tmp3.labelContainer;
+      if (!tmp44) {
+        obj6 = { style: null, children: null };
+        obj6[0] = tmp3.labelContainer;
         if (usernameColor == null) {
           usernameColor = null;
         }
-        obj6 = { color: null, colors: null, containerStyles: null };
-        obj6[0] = usernameColor;
+        let obj7 = { color: null, colors: null, containerStyles: null };
+        obj7[0] = usernameColor;
         if (roleColors == null) {
           roleColors = null;
         }
-        obj6[1] = roleColors;
-        obj6[2] = tmp3.roleDot;
-        const items17 = [tmp33(tmp6(tmp5[22]).RoleDot, obj6), tmp31Result];
-        obj5[1] = items17;
-        tmp31Result = tmp31(tmp32, obj5);
+        obj7[1] = roleColors;
+        obj7[2] = tmp3.roleDot;
+        const items17 = [tmp32(tmp6(tmp5[22]).RoleDot, obj7), tmp30Result];
+        obj6[1] = items17;
+        tmp30Result = tmp30(tmp31, obj6);
       }
-      let obj7 = {};
+      let obj8 = {};
       const merged2 = Object.assign(merged);
-      obj7.disabled = flag2;
-      obj7.icon = memo2;
-      obj7.onPress = callback;
-      obj7.onLongPress = callback2;
+      obj8.disabled = flag2;
+      obj8.icon = memo2;
+      obj8.onPress = callback;
+      obj8.onLongPress = callback2;
       if (accessibilityActions == null) {
         accessibilityActions = memo.accessibilityActions;
       }
-      obj7.accessibilityActions = accessibilityActions;
+      obj8.accessibilityActions = accessibilityActions;
       if (onAccessibilityAction == null) {
         onAccessibilityAction = callback1;
       }
-      obj7.onAccessibilityAction = onAccessibilityAction;
-      obj7.label = tmp31Result;
-      obj7.subLabel = memo5;
-      obj7.height = "100%";
+      obj8.onAccessibilityAction = onAccessibilityAction;
+      obj8.label = tmp30Result;
+      obj8.subLabel = memo5;
+      obj8.height = "100%";
       if (NONE === guildId.TOGGLE) {
-        let obj8 = {};
-        const merged3 = Object.assign(obj7);
-        obj8.checked = flag;
-        tmp33Result = tmp33(tmp6(tmp5[49]).TableCheckboxRow, obj8);
+        let obj9 = {};
+        const merged3 = Object.assign(obj8);
+        obj9.checked = flag;
+        tmp32Result = tmp32(tmp6(tmp5[49]).TableCheckboxRow, obj9);
       } else {
         if (null != nameplate) {
           if (flag5) {
-            let obj9 = {};
-            const merged4 = Object.assign(obj7);
-            obj9.trailing = memo6;
-            obj9.nameplate = nameplate;
-            tmp33Result = tmp33(tmp6(tmp5[50]).UserNameplateRow, obj9);
+            let obj10 = {};
+            const merged4 = Object.assign(obj8);
+            obj10.trailing = memo6;
+            obj10.nameplate = nameplate;
+            tmp32Result = tmp32(tmp6(tmp5[50]).UserNameplateRow, obj10);
           }
         }
-        let obj10 = {};
-        const merged5 = Object.assign(obj7);
-        obj10.trailing = memo6;
-        tmp33Result = tmp33(tmp6(tmp5[51]).TableRow, obj10);
+        let obj11 = {};
+        const merged5 = Object.assign(obj8);
+        obj11.trailing = memo6;
+        tmp32Result = tmp32(tmp6(tmp5[51]).TableRow, obj11);
       }
-      return tmp33Result;
+      return tmp32Result;
     }
   }
-  tmp33 = label;
-  let tmp34;
+  tmp32 = label;
+  let tmp33;
   if (tmp25) {
-    tmp34 = processColorStringsArray;
+    tmp33 = processColorStringsArray;
   }
-  let obj11 = { gradientColors: tmp34, color: "mobile-text-heading-primary", style: null, accessibilityLabel: null };
+  let obj12 = { gradientColors: tmp33, color: "mobile-text-heading-primary", style: null, accessibilityLabel: null };
   const items18 = [tmp3.usernameLabel, memo1, ];
   if (flag7) {
     flag7 = null != displayNameStylesFont;
   }
   if (flag7) {
-    let obj12 = { fontFamily: null };
-    obj12[0] = displayNameStylesFont;
-    flag7 = obj12;
+    let obj13 = { fontFamily: null };
+    obj13[0] = displayNameStylesFont;
+    flag7 = obj13;
   }
   items18[2] = flag7;
-  obj11[2] = items18;
-  obj11[3] = combined;
-  const merged6 = Object.assign(obj);
-  obj11.children = memo3;
-  tmp33Result1 = tmp33(tmp6(tmp5[23]).Text, obj11);
+  obj12[2] = items18;
+  obj12[3] = formatToPlainStringResult;
+  const merged6 = Object.assign(obj1);
+  obj12.children = memo3;
+  tmp32Result1 = tmp32(tmp6(tmp5[23]).Text, obj12);
 });
-let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UserRow.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UserRow.tsx");
 
 export default memoResult;

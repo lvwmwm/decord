@@ -1,22 +1,22 @@
-// Module ID: 11718
-// Function ID: 11719
+// Module ID: 11767
+// Function ID: 11768
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 1910, 589, 8375, 1236, 2367, 11719, 11720, 1370, 2]
+// Dependencies: [19, 1910, 589, 8414, 1236, 2368, 11768, 11769, 1370, 2]
 // Exports: default
 
-// Module 11718 (usePowerupGroupConfig)
-import noop from "noop";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
+// Module 11767 (usePowerupGroupConfig)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/premium/powerups/native/hooks/usePowerupGroupConfig.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/powerups/native/hooks/usePowerupGroupConfig.tsx");
 
 export default function usePowerupGroupConfig(arg0, arg1) {
   const _require = arg0;
-  let closure_1 = arg1;
-  const items = [createGuildRecordFromRust];
+  closure_1 = arg1;
+  const items = [closure_4];
   stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => {
-    const guild = outer1_4.getGuild(callback);
+    const guild = closure_1_4.getGuild(callback);
     let guildSupportsTagsResult = null != guild;
     if (guildSupportsTagsResult) {
       guildSupportsTagsResult = callback(stateFromStores[3]).guildSupportsTags(guild);
@@ -27,7 +27,7 @@ export default function usePowerupGroupConfig(arg0, arg1) {
   const items1 = [arg1, stateFromStores];
   return React.useMemo(() => {
     if ("guildTagsBadgePacks" === lib.group) {
-      let obj = { title: null, description: null, image: null, disabledReason: null, badge: "HermesInternal", forceStaticImages: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl" };
+      let obj = { title: null, description: null, image: null, disabledReason: null, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
       const intl = callback(stateFromStores[4]).intl;
       obj[0] = intl.string(lib(stateFromStores[5]).KC9HRW);
       const intl2 = callback(stateFromStores[4]).intl;

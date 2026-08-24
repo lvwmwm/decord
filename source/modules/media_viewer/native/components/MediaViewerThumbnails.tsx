@@ -1,32 +1,26 @@
-// Module ID: 12057
-// Function ID: 12058
+// Module ID: 12109
+// Function ID: 12110
 // Name: ObscuredView
-// Dependencies: [32, 19, 17, 9012, 21, 12058, 4097, 712, 4115, 4725, 500, 4661, 5449, 8994, 4116, 8124, 2]
+// Dependencies: [32, 19, 17, 9049, 21, 12110, 4100, 712, 4119, 4730, 500, 4668, 5454, 9031, 4120, 8163, 2]
 // Exports: default
 
-// Module 12057 (ObscuredView)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import THUMBNAIL_MARGIN from "THUMBNAIL_MARGIN";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12109 (ObscuredView)
+import set from "set" /* 500 */;
+import map from "map" /* 4100 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12110 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import THUMBNAIL_MARGIN from "THUMBNAIL_MARGIN" /* 9049 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let THUMBNAIL_HEIGHT;
-let THUMBNAIL_MARGIN;
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function ObscuredView(source) {
-  let tmp4;
-  let tmp5;
   source = source.source;
-  let obj = require(12058) /* useMediaItemSpoilerState */;
+  let obj = useMediaItemSpoilerState;
   [tmp4, tmp5] = callback(obj.useMediaItemSpoilerState(source.index), 2);
-  require(4097) /* map */;
+  map;
   let tmp10Result = null;
   if (tmp4) {
     if (source.spoiler) {
@@ -34,7 +28,7 @@ function ObscuredView(source) {
       const items = [absoluteFill.absoluteFill, tmp5];
       obj[0] = items;
       const tmp11 = absoluteFill;
-      const tmp7Result = tmp7(4725);
+      const tmp7Result = tmp7(4730);
       let str = "light";
       if (tmpResult.isAndroid()) {
         str = "dark";
@@ -44,8 +38,8 @@ function ObscuredView(source) {
       obj[1] = tmp11.absoluteFill;
       obj[2] = tmp8;
       obj[1] = closure_8(tmp7Result, obj);
-      tmp10Result = tmp10(tmp7(4115).View, obj);
-      tmpResult = require(500) /* set */;
+      tmp10Result = tmp10(tmp7(4119).View, obj);
+      tmpResult = set;
     } else {
       tmp10Result = null;
     }
@@ -55,14 +49,9 @@ function ObscuredView(source) {
 let c4 = importAllResult;
 ({ Pressable: c5, StyleSheet: closure_6 } = get_ActivityIndicator);
 ({ THUMBNAIL_WIDTH_MARGIN: error, THUMBNAIL_MARGIN, THUMBNAIL_HEIGHT } = THUMBNAIL_MARGIN);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let closure_11 = createCacheKey.createStyles({ containerPortrait: { height: 60 }, thumbnailButtonPortrait: { overflow: "hidden", marginHorizontal: THUMBNAIL_MARGIN, borderRadius: 2 }, thumbnailImagePortrait: { height: THUMBNAIL_HEIGHT, width: "100%" } });
 let closure_12 = importAllResult.memo((onSelect) => {
-  let index;
-  let numSources;
-  let selectedIndex;
-  let source;
-  let useThumbnailStyle;
   ({ source, index } = onSelect);
   onSelect = onSelect.onSelect;
   ({ numSources, selectedIndex, useThumbnailStyle } = onSelect);
@@ -76,33 +65,22 @@ let closure_12 = importAllResult.memo((onSelect) => {
   const callback = importAllResult.useCallback(() => onSelect(index), items);
   let obj = { style: items1, children: null };
   items1 = [tmp.thumbnailButtonPortrait, thumbnailStyle];
-  obj = { needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, accessibilityRole: "imagebutton", accessibilityLabel: null, accessibilityHint: "Double tap to focus", accessibilityState: null, onPress: null, children: null };
-  obj[3] = "Thumbnail preview, " + index + 1 + " of " + numSources;
-  obj[5] = { selected: selectedIndex === index };
-  obj[6] = callback;
+  obj = { needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, accessibilityRole: "imagebutton", accessibilityLabel: "Thumbnail preview, " + index + 1 + " of " + numSources, accessibilityHint: "Double tap to focus", accessibilityState: { selected: selectedIndex === index }, onPress: callback, children: null };
   obj = { style: tmp.thumbnailImagePortrait, source: null, enableAnimation: false };
   let thumbnail = first.thumbnail;
   if (thumbnail == null) {
     thumbnail = first;
   }
   obj[1] = thumbnail;
-  const items2 = [closure_8(onSelect(5449), obj), closure_8(ObscuredView, { source: first, index })];
+  const items2 = [closure_8(onSelect(5454), obj), closure_8(ObscuredView, { source: first, index })];
   obj[7] = items2;
   obj[1] = closure_9(closure_5, obj);
-  return closure_8(onSelect(4115).View, obj);
+  return closure_8(onSelect(4119).View, obj);
 });
 let closure_13 = { code: "function MediaViewerThumbnailsTsx1(){const{scrollEnabled}=this.__closure;return{scrollEnabled:scrollEnabled.get()};}" };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/media_viewer/native/components/MediaViewerThumbnails.tsx");
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/components/MediaViewerThumbnails.tsx");
 
 export default function MediaViewerThumbnails(syncer) {
-  let footerBufferSize;
-  let headerBufferSize;
-  let itemSize;
-  let onEndReached;
-  let onEndReachedThreshold;
-  let onScroll;
-  let ref;
-  let screenWidth;
   syncer = syncer.syncer;
   let sources;
   let index;
@@ -152,7 +130,7 @@ export default function MediaViewerThumbnails(syncer) {
   first = thumbnailScrollPositions(obj.useSelectedMediaSource(syncer), 1)[0];
   const items1 = [sources, first, onSelect, useThumbnailStyle];
   const items2 = [sources.length];
-  const callback = headerBufferStyle.useCallback((arg0, index) => useThumbnailStyle(outer1_12, { index, source: sources[index], numSources: sources.length, selectedIndex: first, onSelect, useThumbnailStyle }), items1);
+  const callback = headerBufferStyle.useCallback((arg0, index) => useThumbnailStyle(closure_1_12, { index, source: sources[index], numSources: sources.length, selectedIndex: first, onSelect, useThumbnailStyle }), items1);
   const memo1 = headerBufferStyle.useMemo(() => {
     const items = [sources.length];
     return items;

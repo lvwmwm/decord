@@ -1,19 +1,21 @@
-// Module ID: 7388
-// Function ID: 7389
+// Module ID: 7426
+// Function ID: 7427
 // Name: useBlockedPaymentsConfig
-// Dependencies: [4286, 1472, 7389, 2]
+// Dependencies: [4290, 1472, 7427, 2]
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
-// Module 7388 (useBlockedPaymentsConfig)
-import createExperiment from "createExperiment";
-import ApexExperiment from "ApexExperiment";
+// Module 7426 (useBlockedPaymentsConfig)
+import set from "set" /* 2 */;
+import useGeoForUserDefault from "useGeoForUser" /* 7427 */;
+import createExperiment from "createExperiment" /* 4290 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const items = [{ id: 1, label: "Payments Blocked", config: { paymentsBlocked: true } }];
 let closure_2 = createExperiment.createExperiment({ kind: "user", id: "2022-03_block_russian_purchases", label: "Block purchases based on country", defaultConfig: { paymentsBlocked: false }, treatments: items });
 const obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_3 = ApexExperiment.createApexExperiment({ name: "2026-03-block-purchases", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("useGeoForUser").fileFinishedImporting("modules/billing/experiments/BlockedPaymentsCountryExperiment.tsx");
+const result = set.fileFinishedImporting("modules/billing/experiments/BlockedPaymentsCountryExperiment.tsx");
 
 export const useBlockedPaymentsConfig = function useBlockedPaymentsConfig() {
   let enabled = closure_2.useExperiment({ location: "c519a9_1" }, { autoTrackExposure: false }).paymentsBlocked;
@@ -21,7 +23,7 @@ export const useBlockedPaymentsConfig = function useBlockedPaymentsConfig() {
     enabled = closure_3.useConfig({ location: "c519a9_1" }).enabled;
   }
   if (!enabled) {
-    enabled = "RU" === importDefault(7389)().defaultBillingCountryCode;
+    enabled = "RU" === useGeoForUserDefault().defaultBillingCountryCode;
   }
   return enabled;
 };

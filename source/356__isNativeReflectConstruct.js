@@ -5,11 +5,13 @@
 // Exports: flushValue
 
 // Module 356 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _get from "_get";
-import importDefaultResult from "_createClass";
+import _inheritsDefault from "_inherits" /* 98 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 366 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import closure_5 from "_get" /* 96 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
 let AnimatedValue = importDefault;
 function _isNativeReflectConstruct() {
@@ -23,10 +25,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -34,12 +36,12 @@ function _isNativeReflectConstruct() {
 class AnimatedValue {
   constructor(arg0, arg1) {
     self = this;
-    tmp = _isNativeReflectConstruct(this, AnimatedValue);
+    tmp = closure_2(this, AnimatedValue);
     items = [];
     items[0] = arg1;
-    tmp2 = __esModule;
-    obj = __esModule(AnimatedValue);
-    tmp3 = __esModule;
+    tmp2 = closure_4;
+    obj = closure_4(AnimatedValue);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -77,7 +79,7 @@ class AnimatedValue {
     }
   }
 }
-require("_inherits")(AnimatedValue, require("_isNativeReflectConstruct"));
+_inheritsDefault(AnimatedValue, _isNativeReflectConstructDefault);
 let items = [
   {
     key: "__detach",
@@ -188,7 +190,7 @@ let items = [
       self = this;
       if (null == this._updateSubscription) {
         const __getNativeTagResult = self.__getNativeTag();
-        const dependencyMap = __getNativeTagResult;
+        dependencyMap = __getNativeTagResult;
         let API = AnimatedValue(357).API;
         let result = API.startListeningToAnimatedNodeValue(__getNativeTagResult);
         const nativeEventEmitter = AnimatedValue(357).nativeEventEmitter;
@@ -325,7 +327,7 @@ let items = [
     value: function animate(_animation) {
       let self = this;
       self = this;
-      let closure_0 = arg1;
+      closure_0 = arg1;
       if (this._animation) {
         _animation = self._animation;
         _animation.stop();
@@ -368,7 +370,7 @@ let items = [
     value: function _updateValue(_value, arg1) {
       if (undefined === _value) {
         const _Error = Error;
-        const error = new Error("AnimatedValue: Attempting to set value to undefined");
+        error = new Error("AnimatedValue: Attempting to set value to undefined");
         throw error;
       } else {
         const self = this;

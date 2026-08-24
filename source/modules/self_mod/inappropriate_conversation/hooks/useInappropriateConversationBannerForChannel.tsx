@@ -1,22 +1,28 @@
-// Module ID: 10575
-// Function ID: 10576
+// Module ID: 10614
+// Function ID: 10615
 // Name: useInappropriateConversationBannerForChannel
-// Dependencies: [9921, 10576, 10577, 10574, 10573, 2]
+// Dependencies: [9960, 10615, 10616, 10613, 10612, 2]
 // Exports: useInappropriateConversationBannerForChannel
 
-// Module 10575 (useInappropriateConversationBannerForChannel)
-import { SafetyWarningTypes } from "handleConnectionOpen";
+// Module 10614 (useInappropriateConversationBannerForChannel)
+import set from "set" /* 2 */;
+import handleConnectionOpen from "handleConnectionOpen" /* 9960 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10612 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10613 */;
+import InappropriateConversationExperiment from "InappropriateConversationExperiment" /* 10615 */;
+import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10616 */;
 
-const result = require("useSafetyAlertsSettingOrDefault").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationBannerForChannel.tsx");
+const SafetyWarningTypes = handleConnectionOpen.SafetyWarningTypes;
+const result = set.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationBannerForChannel.tsx");
 
 export const useInappropriateConversationBannerForChannel = function useInappropriateConversationBannerForChannel(channelId, LOCATION_CONTEXT_MOBILE) {
-  let obj = require(10576) /* InappropriateConversationExperiment */;
+  let obj = InappropriateConversationExperiment;
   obj = { location: LOCATION_CONTEXT_MOBILE };
   const isEligibleForInappropriateConversationWarning = obj.useIsEligibleForInappropriateConversationWarning(obj);
-  const safetyAlertsSettingOrDefault = require(10577) /* useSafetyAlertsSettingOrDefault */.useSafetyAlertsSettingOrDefault();
-  const obj3 = require(10577) /* useSafetyAlertsSettingOrDefault */;
-  const inappropriateConversationWarningsForChannel = require(10574) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
-  require(10573) /* useChannelSafetyWarning */;
+  const safetyAlertsSettingOrDefault = useSafetyAlertsSettingOrDefault.useSafetyAlertsSettingOrDefault();
+  const obj3 = useSafetyAlertsSettingOrDefault;
+  const inappropriateConversationWarningsForChannel = useInappropriateConversationWarningsForChannel.useInappropriateConversationWarningsForChannel(channelId);
+  useChannelSafetyWarning;
   if (isEligibleForInappropriateConversationWarning) {
     if (safetyAlertsSettingOrDefault) {
       if (0 !== inappropriateConversationWarningsForChannel.length) {

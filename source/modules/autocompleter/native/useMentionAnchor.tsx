@@ -1,27 +1,23 @@
-// Module ID: 11563
-// Function ID: 11564
+// Module ID: 11612
+// Function ID: 11613
 // Name: useMentionAnchor
-// Dependencies: [32, 19, 10176, 2]
+// Dependencies: [32, 19, 10215, 2]
 // Exports: default
 
-// Module 11563 (useMentionAnchor)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 11612 (useMentionAnchor)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
 let closure_4 = { kind: "idle" };
-const result = require("AutocompleteFormDivider").fileFinishedImporting("modules/autocompleter/native/useMentionAnchor.tsx");
+const result = require("set").fileFinishedImporting("modules/autocompleter/native/useMentionAnchor.tsx");
 
 export default function useMentionAnchor(c22) {
-  let anchor;
-  let anchor2;
-  let seenText;
-  let tmp3;
   const _require = arg2;
   let obj = React;
   let tmp = closure_4;
   [anchor, tmp3] = callback(React.useState(closure_4), 2);
-  const dependencyMap = tmp3;
+  dependencyMap = tmp3;
   anchor = null;
   if ("idle" !== anchor.kind) {
     anchor = anchor.anchor;
@@ -39,7 +35,7 @@ export default function useMentionAnchor(c22) {
       startsWithResult = arg1 >= anchor + arg3.length;
     }
     if (startsWithResult) {
-      let obj1 = _require(10176);
+      obj1 = _require(10215);
       startsWithResult = obj1.isUnbrokenRun(c22, anchor + arg3.length, arg1);
     }
     tmp5 = startsWithResult;
@@ -68,8 +64,8 @@ export default function useMentionAnchor(c22) {
             startsWithResult1 = arg1 >= lastIndexOfResult + arg3.length;
           }
           if (startsWithResult1) {
-            startsWithResult1 = tmp25(10176).isUnbrokenRun(c22, lastIndexOfResult + arg3.length, arg1);
-            const tmp25Result = tmp25(10176);
+            startsWithResult1 = tmp25(10215).isUnbrokenRun(c22, lastIndexOfResult + arg3.length, arg1);
+            const tmp25Result = tmp25(10215);
           }
           tmp18 = null;
           if (startsWithResult1) {
@@ -77,7 +73,7 @@ export default function useMentionAnchor(c22) {
           }
         }
         tmp16 = tmp18;
-        obj9 = _require(10176);
+        obj9 = _require(10215);
         tmp25 = _require;
       }
       if (null != tmp16) {

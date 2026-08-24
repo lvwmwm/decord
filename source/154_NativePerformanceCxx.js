@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 154 (NativePerformanceCxx)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("NativePerformanceCxx");
+
+export default getAll.get("NativePerformanceCxx");

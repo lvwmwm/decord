@@ -1,36 +1,41 @@
-// Module ID: 11288
-// Function ID: 11289
+// Module ID: 11339
+// Function ID: 11340
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4661, 712, 11224, 9566, 11289, 4734, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 11275, 9603, 11340, 4739, 1236, 2]
 // Exports: default
 
-// Module 11288 (EmptyState)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11339 (EmptyState)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9603 */;
+import handleApplicationSelected from "handleApplicationSelected" /* 11275 */;
+import SvgComponentDefault from "SvgComponent" /* 11340 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, textContainer: null };
-createCacheKey = { padding: 16, gap: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.lg, alignItems: "center", justifyContent: "center" };
+createCacheKey = { padding: 16, gap: 16, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: ThemesDefault.radii.lg, alignItems: "center", justifyContent: "center" };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/screens/home/EmptyState.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/home/EmptyState.tsx");
 
 export default function EmptyState() {
-  const tmp = createCacheKey();
-  let obj = require(11224) /* handleApplicationSelected */;
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(9566) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_EMPTY);
+  const tmp = callback3();
+  let obj = handleApplicationSelected;
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(AppLauncherEntrypoint.AppLauncherEmptyStateType.HOME_EMPTY);
   obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(11289), {}), ];
+  const items = [callback(SvgComponentDefault, {}), ];
   obj = { style: tmp.textContainer, variant: "text-md/semibold", color: "text-default", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t["V7+xhH"]);
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  const intl = getSystemLocale.intl;
+  obj[3] = intl.string(getSystemLocale.t["V7+xhH"]);
+  items[1] = callback(Text.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 };

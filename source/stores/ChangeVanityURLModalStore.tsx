@@ -1,15 +1,19 @@
-// Module ID: 16864
-// Function ID: 16865
+// Module ID: 16957
+// Function ID: 16958
 // Name: FormStates
 // Dependencies: [676, 589, 709, 2]
 
-// Module 16864 (FormStates)
-import { FormStates } from "ME";
-import { Store } from "initialize";
+// Module 16957 (FormStates)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import ME from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
+const FormStates = ME.FormStates;
 let closure_3 = {};
 let CLOSED = FormStates.CLOSED;
 let c5 = null;
+const Store = initializeDefault.Store;
 class ChangeVanityURLModalStore extends Store {
 }
 const prototype = ChangeVanityURLModalStore.prototype;
@@ -20,13 +24,11 @@ prototype["getProps"] = function getProps() {
   return { submitting: CLOSED === FormStates.SUBMITTING, errorDetails: c5, errors: closure_3, guildId: closure_0, code: closure_1 };
 };
 ChangeVanityURLModalStore.displayName = "ChangeVanityURLModalStore";
-const changeVanityURLModalStore = new ChangeVanityURLModalStore(require("dispatcher"), {
+const changeVanityURLModalStore = new ChangeVanityURLModalStore(dispatcherDefault, {
   CHANGE_VANITY_URL_MODAL_OPEN: function handleOpen(arg0) {
-    let closure_0;
-    let closure_1;
     const OPEN = FormStates.OPEN;
     ({ guildId: closure_0, code: closure_1 } = arg0);
-    let c5 = null;
+    c5 = null;
   },
   CHANGE_VANITY_URL_MODAL_SUBMIT: function handleSubmit() {
     const SUBMITTING = FormStates.SUBMITTING;
@@ -36,12 +38,12 @@ const changeVanityURLModalStore = new ChangeVanityURLModalStore(require("dispatc
     error = error.error;
   },
   CHANGE_VANITY_URL_MODAL_CLOSE: function handleClose() {
-    const CLOSED = FormStates.CLOSED;
-    let c0 = null;
-    let c1 = null;
-    let c5 = null;
+    CLOSED = FormStates.CLOSED;
+    c0 = null;
+    c1 = null;
+    c5 = null;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("stores/ChangeVanityURLModalStore.tsx");
+const result = set.fileFinishedImporting("stores/ChangeVanityURLModalStore.tsx");
 
 export default changeVanityURLModalStore;

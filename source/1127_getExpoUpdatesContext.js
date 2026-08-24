@@ -4,10 +4,12 @@
 // Dependencies: [1002, 1001, 817, 1003]
 
 // Module 1127 (getExpoUpdatesContext)
-const require = arg1;
+import getExpoConstants from "getExpoConstants" /* 1003 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function getExpoUpdatesContext() {
-  let obj = require(1003) /* getExpoConstants */;
+  let obj = getExpoConstants;
   const expoUpdates = obj.getExpoUpdates();
   if (expoUpdates) {
     obj = { is_enabled: null, is_embedded_launch: null, is_emergency_launch: null, is_using_embedded_assets: null };
@@ -78,7 +80,7 @@ arg5.expoContextIntegration = () => {
   function getExpoUpdatesContextCached() {
     let tmp = closure_0;
     if (!closure_0) {
-      const tmp3 = outer1_3();
+      const tmp3 = closure_1_3();
       closure_0 = tmp3;
       tmp = tmp3;
     }
@@ -87,7 +89,7 @@ arg5.expoContextIntegration = () => {
   return {
     name: "ExpoContext",
     setup(on) {
-      let closure_0 = on;
+      closure_0 = on;
       on.on("afterInit", () => {
         if (options.getOptions().enableNative) {
           (function setExpoUpdatesNativeContext() {
@@ -95,7 +97,7 @@ arg5.expoContextIntegration = () => {
               if (!tmp4Result.isExpoGo()) {
                 try {
                   const NATIVE = tmp4(tmp5[1]).NATIVE;
-                  NATIVE.setContext(outer1_2, tmp7);
+                  NATIVE.setContext(closure_1_2, tmp7);
                 } catch (tmp10) {
                   const debug = tmp3(tmp2[2]).debug;
                   debug.error("Error setting Expo updates context:", tmp10);
@@ -108,7 +110,7 @@ arg5.expoContextIntegration = () => {
       });
     },
     processEvent(contexts) {
-      let obj = outer1_0(getExpoUpdatesContextCached[0]);
+      let obj = closure_1_0(getExpoUpdatesContextCached[0]);
       if (obj.isExpo()) {
         let tmpResult = tmp(tmp2[0]);
         if (tmpResult.isExpoGo()) {
@@ -150,12 +152,12 @@ arg5.expoContextIntegration = () => {
         contexts.contexts = contexts.contexts || {};
         let tmp13 = closure_0;
         if (!closure_0) {
-          const tmp15 = outer1_3();
+          const tmp15 = closure_1_3();
           closure_0 = tmp15;
           tmp13 = tmp15;
         }
-        contexts.contexts[outer1_2] = Object.assign({}, tmp13);
-        const tmp11 = outer1_2;
+        contexts.contexts[closure_1_2] = Object.assign({}, tmp13);
+        const tmp11 = closure_1_2;
       }
       return contexts;
     }

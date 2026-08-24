@@ -1,22 +1,23 @@
 // Module ID: 15
 // Function ID: 16
 // Name: createFastConnectSocket
-// Dependencies: [16, 17, 499, 3, 500, 502, 503, 675, 13224, 5395, 13206, 13195, 13191, 10, 9, 2]
+// Dependencies: [16, 17, 499, 3, 500, 502, 503, 675, 13279, 5400, 13261, 13250, 13246, 10, 9, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
 // Module 15 (createFastConnectSocket)
-import module_16 from "module_16";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { VERSION_TO_FORCE_RESYNCING_ALL_DATA as closure_6 } from "HELLO_KEY";
+import set from "set" /* 2 */;
+import timestampDefault from "timestamp" /* 3 */;
+import serializeDefault from "serialize" /* 9 */;
+import HELLO_KEY from "HELLO_KEY" /* 499 */;
+import module_16 from "module_16" /* 16 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-let AppState;
-let c4;
 function createFastConnectSocket() {
   if (null != window.WebSocket) {
-    let obj = _require(500);
+    obj = _require(500);
     if (obj.isAndroid()) {
-      let supportsZstd = obj(13206).getConstants().supportsZstd;
-      const obj2 = obj(13206);
+      let supportsZstd = obj(13261).getConstants().supportsZstd;
+      const obj2 = obj(13261);
     } else {
       supportsZstd = closure_4.DCDCompressionManager.supportsZstd;
     }
@@ -26,7 +27,7 @@ function createFastConnectSocket() {
     }
     const _window = window;
     let GATEWAY_ENDPOINT = window.GLOBAL_ENV.GATEWAY_ALT_ENDPOINT;
-    if (!obj(13195)()) {
+    if (!obj(13250)()) {
       const _window2 = window;
       GATEWAY_ENDPOINT = window.GLOBAL_ENV.GATEWAY_ENDPOINT;
     }
@@ -36,7 +37,7 @@ function createFastConnectSocket() {
     obj.log(`[FAST CONNECT] ${tmp10}`);
     const _Date = Date;
     _require = Date.now();
-    const tmp12 = obj(13191)(combined);
+    const tmp12 = obj(13246)(combined);
     const _parseFloat = parseFloat;
     const parsed = parseFloat(tmp12._socketId);
     const _isNaN = isNaN;
@@ -46,14 +47,14 @@ function createFastConnectSocket() {
       const isAndroidResult = tmp3(500).isAndroid();
       if (supportsZstd) {
         if (isAndroidResult) {
-          let tmp7Result = tmp7(13206);
+          let tmp7Result = tmp7(13261);
           const result = tmp7Result.enableZstdStreamSupport(parsed);
         } else {
           const DCDCompressionManager2 = closure_4.DCDCompressionManager;
           const result1 = DCDCompressionManager2.enableZstdStreamSupport(parsed, 0);
         }
       } else if (isAndroidResult) {
-        tmp7Result = tmp7(13206);
+        tmp7Result = tmp7(13261);
         const result2 = tmp7Result.enableZlibStreamSupport(parsed);
       } else {
         const DCDCompressionManager = closure_4.DCDCompressionManager;
@@ -63,9 +64,9 @@ function createFastConnectSocket() {
       obj[1] = combined;
       obj[3] = [];
       tmp12.onopen = () => {
-        obj = obj(outer1_3[13]);
+        obj = obj(closure_1_3[13]);
         obj.mark("\u{1F310}", "Fastconnect socket opened");
-        outer1_7.log("connected and identified in " + Date.now() - closure_0 + "ms didIdentify:" + obj.identify);
+        closure_1_7.log("connected and identified in " + Date.now() - closure_0 + "ms didIdentify:" + obj.identify);
         obj.open = true;
       };
       const fn = () => {
@@ -76,7 +77,7 @@ function createFastConnectSocket() {
       tmp12.onerror = fn;
       tmp12.onclose = fn;
       tmp12.onmessage = (arg0) => {
-        obj = obj(outer1_3[13]);
+        obj = obj(closure_1_3[13]);
         obj.mark("\u{1F310}", "Fastconnect socket message");
         const messages = obj.messages;
         messages.push(arg0);
@@ -97,11 +98,12 @@ function createFastConnectSocket() {
   }
 }
 ({ NativeModules: c4, AppState } = get_ActivityIndicator);
-let obj = new require("timestamp")("FAST CONNECT");
+let closure_6 = HELLO_KEY.VERSION_TO_FORCE_RESYNCING_ALL_DATA;
+let obj = new timestampDefault("FAST CONNECT");
 obj.info("initial app state (import time)", AppState.currentState);
 let c8 = null;
 const fastConnectSocket = createFastConnectSocket();
-let result = require("HELLO_KEY").fileFinishedImporting("modules/gateway/native/fast_connect.tsx");
+let result = set.fileFinishedImporting("modules/gateway/native/fast_connect.tsx");
 
 export { createFastConnectSocket };
 export const closeFastConnectSocket = function closeFastConnectSocket() {
@@ -110,7 +112,7 @@ export const closeFastConnectSocket = function closeFastConnectSocket() {
     ws.close();
     const _window2 = window;
     window._ws = null;
-    let c8 = null;
+    c8 = null;
   }
 };
 export function getLastFastConnectIdentifyUserId() {
@@ -118,13 +120,13 @@ export function getLastFastConnectIdentifyUserId() {
 }
 export const identifyWebSocket = function identifyWebSocket() {
   if (null != window._ws) {
-    const beginFastConnect = importDefault(9).beginFastConnect;
+    const beginFastConnect = serializeDefault.beginFastConnect;
     beginFastConnect.measure(() => {
       let client_state = callback2;
       let prepareIdentifyResult = table;
       const loadFastConnectNativeModule = callback2(table[14]).loadFastConnectNativeModule;
       const measureResult = loadFastConnectNativeModule.measure(() => {
-        const obj = callback(table[4]);
+        obj = callback(table[4]);
         if (obj.isAndroid()) {
           let token = callback2(table[5]).getConstants().token;
           if (token == null) {
@@ -155,7 +157,7 @@ export const identifyWebSocket = function identifyWebSocket() {
           if (userId == null) {
             tmp7 = null;
           }
-          let closure_8 = tmp7;
+          c8 = tmp7;
           let tmp8 = userId;
           if (userId == null) {
             tmp8 = null;
@@ -177,7 +179,7 @@ export const identifyWebSocket = function identifyWebSocket() {
           }
           client_state = { token: null, properties: null, capabilities: null, client_state: null };
           client_state[0] = measureResult;
-          let obj = {};
+          obj = {};
           isCacheEnabledResultResult = isCacheEnabledResult(prepareIdentifyResult[4]);
           const tmp10 = currentState;
           const merged = Object.assign(callback3(prepareIdentifyResult[6]).getSuperProperties());
@@ -186,7 +188,7 @@ export const identifyWebSocket = function identifyWebSocket() {
           const obj9 = callback3(prepareIdentifyResult[6]);
           obj.gateway_connect_reasons = callback3(prepareIdentifyResult[7]).describeConnectionReasons();
           if (null != analyticsInstallation) {
-            const obj1 = { installation_id: null };
+            obj1 = { installation_id: null };
             obj1[0] = analyticsInstallation;
             obj2 = obj1;
           } else {

@@ -1,10 +1,12 @@
-// Module ID: 16555
-// Function ID: 16556
+// Module ID: 16650
+// Function ID: 16651
 // Name: DM_SETTINGS_UPSELL_LAST_SHOWN_KEY
 // Dependencies: [2]
 
-// Module 16555 (DM_SETTINGS_UPSELL_LAST_SHOWN_KEY)
-const result = require("set").fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellConstants.tsx");
+// Module 16650 (DM_SETTINGS_UPSELL_LAST_SHOWN_KEY)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellConstants.tsx");
 
 export const DM_SETTINGS_UPSELL_LAST_SHOWN_KEY = "dmSettingsUpsellLastShown";
 export const DM_SETTINGS_UPSELL_LAST_SHOWN_MAX_TIME_MS = 604800000;

@@ -1,25 +1,25 @@
-// Module ID: 6814
-// Function ID: 6815
+// Module ID: 6851
+// Function ID: 6852
 // Name: useHasEnhancedRoleColors
 // Dependencies: [1910, 676, 589, 2]
 // Exports: default, getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole, useHasEnhancedRoleColorsForRole
 
-// Module 6814 (useHasEnhancedRoleColors)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GuildFeatures } from "ME";
+// Module 6851 (useHasEnhancedRoleColors)
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/premium/powerups/hooks/useHasEnhancedRoleColors.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useHasEnhancedRoleColors.tsx");
 
 export default function useHasEnhancedRoleColors(arg0) {
   const _require = arg0;
-  const items = [createGuildRecordFromRust];
+  const items = [closure_2];
   return _require(589).useStateFromStores(items, () => {
-    const guild = outer1_2.getGuild(closure_0);
+    const guild = closure_1_2.getGuild(closure_0);
     let hasItem = null != guild;
     if (hasItem) {
       const features = guild.features;
-      hasItem = features.has(outer1_3.ENHANCED_ROLE_COLORS);
+      hasItem = features.has(closure_1_3.ENHANCED_ROLE_COLORS);
     }
     return hasItem;
   });
@@ -39,13 +39,13 @@ export const getHasEnhancedRoleColors = function getHasEnhancedRoleColors(guildI
 };
 export const useHasEnhancedRoleColorsForRole = function useHasEnhancedRoleColorsForRole(guildId, role) {
   const _require = guildId;
-  const items = [createGuildRecordFromRust];
+  const items = [closure_2];
   return _require(589).useStateFromStores(items, () => {
-    const guild = outer1_2.getGuild(closure_0);
+    const guild = closure_1_2.getGuild(closure_0);
     let hasItem = null != guild;
     if (hasItem) {
       const features = guild.features;
-      hasItem = features.has(outer1_3.ENHANCED_ROLE_COLORS);
+      hasItem = features.has(closure_1_3.ENHANCED_ROLE_COLORS);
     }
     return hasItem;
   });

@@ -1,17 +1,17 @@
-// Module ID: 8674
-// Function ID: 8675
+// Module ID: 8711
+// Function ID: 8712
 // Name: useSelectedParticipant
-// Dependencies: [4773, 589, 2]
+// Dependencies: [4778, 589, 2]
 // Exports: default
 
-// Module 8674 (useSelectedParticipant)
-import getParticipants from "getParticipants";
+// Module 8711 (useSelectedParticipant)
+import closure_2 from "getParticipants" /* 4778 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_calls/useSelectedParticipant.tsx");
 
 export default function useSelectedParticipant(arg0) {
   const _require = arg0;
-  const items = [getParticipants];
-  return _require(589).useStateFromStores(items, () => outer1_2.getSelectedParticipant(id.id));
+  const items = [closure_2];
+  return _require(589).useStateFromStores(items, () => closure_1_2.getSelectedParticipant(id.id));
 };

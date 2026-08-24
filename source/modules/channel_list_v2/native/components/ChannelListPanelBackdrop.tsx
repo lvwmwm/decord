@@ -1,47 +1,44 @@
-// Module ID: 15502
-// Function ID: 15503
+// Module ID: 15567
+// Function ID: 15568
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 676, 21, 4661, 712, 15288, 1629, 14443, 15503, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 15352, 1629, 14511, 15568, 2]
 // Exports: default
 
-// Module 15502 (ChannelListPanelBackdrop)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { DM_WIDTH } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15567 (ChannelListPanelBackdrop)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { DM_WIDTH } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c4;
-let closure_6;
-let error;
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { container: { flex: 1, position: "relative", overflow: "hidden" }, panelTint: null, listWrapper: null };
 createCacheKey = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-createCacheKey.backgroundColor = require("Themes").colors.PANEL_BG;
+createCacheKey.backgroundColor = ThemesDefault.colors.PANEL_BG;
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { flex: 1 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("ME").fileFinishedImporting("modules/channel_list_v2/native/components/ChannelListPanelBackdrop.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/channel_list_v2/native/components/ChannelListPanelBackdrop.tsx");
 
 export default function ChannelListPanelBackdrop(children) {
   const style = children.style;
   const contentInset = children.contentInset;
-  let dependencyMap;
+  dependencyMap = undefined;
   let mobileQuestDockHeight;
-  const tmp = createCacheKey();
+  const tmp = callback();
   dependencyMap = tmp;
-  let obj = style(15288);
+  let obj = style(15352);
   const isHomeDrawerEnabled = obj.useIsHomeDrawerEnabled();
-  let obj1 = style(14443);
+  obj1 = style(14511);
   mobileQuestDockHeight = obj1.useMobileQuestDockHeight();
   let items = [tmp, contentInset, mobileQuestDockHeight, style];
   obj = {
     style: mobileQuestDockHeight.useMemo(() => {
-      const items = [_undefined.container, , ];
+      const items = [container.container, , ];
       const rect = contentInset;
       let num;
       if (contentInset != null) {

@@ -1,29 +1,35 @@
-// Module ID: 15955
-// Function ID: 15956
+// Module ID: 16052
+// Function ID: 16053
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 4661, 712, 9979, 11959, 4342, 9983, 2007, 9982, 5447, 4733, 4734, 1236, 3079, 4745, 11932, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 10018, 12008, 4346, 10022, 2008, 10021, 5452, 4738, 4739, 1236, 3082, 4750, 11981, 2]
 // Exports: default
 
-// Module 15955 (FavoritesEmptyState)
-import noop from "noop";
-import { View } from "PlusMediumIcon";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16052 (FavoritesEmptyState)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 3082 */;
+import Stack from "Stack" /* 4738 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5452 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10018 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: null, text: null };
-createCacheKey = { flex: 1, alignItems: "center", justifyContent: "center", gap: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_48 };
+createCacheKey = { flex: 1, alignItems: "center", justifyContent: "center", gap: ThemesDefault.space.PX_16, paddingHorizontal: ThemesDefault.space.PX_48 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/favorites/native/FavoritesEmptyState.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/favorites/native/FavoritesEmptyState.tsx");
 
 export default function FavoritesEmptyState() {
-  const tmp = createCacheKey();
-  let obj = require(9979) /* useFavoritesAccess */;
+  const tmp = callback3();
+  let obj = useFavoritesAccess;
   const callback = React.useCallback(() => {
     callback2(paths[6])({ source: "favorites_empty_state" });
   }, []);
@@ -32,33 +38,32 @@ export default function FavoritesEmptyState() {
     const obj = callback2(paths[7]);
     obj.openLazy(callback(paths[9])(paths[8], paths.paths), callback(paths[10]).FAVORITES_UPSELL_SHEET_KEY, { source: "favorites_empty_sidebar" });
   }, []);
-  const items = [callback(require(5447) /* AccountAgeTier10LargeBadge */.FavoritesSpotIllustration, { width: 192, height: 108 }), , ];
-  obj = { spacing: null, align: "center", children: null };
-  obj[0] = importDefault(712).space.PX_8;
-  const obj1 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj1[3] = intl.string(importDefault(3079)["wh+Rz1"]);
-  const items1 = [callback(require(4734) /* Text */.Heading, obj1), ];
+  const items = [callback(AccountAgeTier10LargeBadge.FavoritesSpotIllustration, { width: 192, height: 108 }), , ];
+  obj = { spacing: ThemesDefault.space.PX_8, align: "center", children: null };
+  obj1 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
+  const intl = getSystemLocale.intl;
+  obj1[3] = intl.string(messagesProxyDefault["wh+Rz1"]);
+  const items1 = [callback(Text.Heading, obj1), ];
   const obj2 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj2[3] = intl2.string(importDefault(3079)["+SuGKb"]);
-  items1[1] = callback(require(4734) /* Text */.Text, obj2);
+  const intl2 = getSystemLocale.intl;
+  obj2[3] = intl2.string(messagesProxyDefault["+SuGKb"]);
+  items1[1] = callback(Text.Text, obj2);
   obj[2] = items1;
-  items[1] = callback2(require(4733) /* Stack */.Stack, obj);
+  items[1] = callback2(Stack.Stack, obj);
   if (obj.useFavoritesAccess("favorites_empty_state").hasAccess) {
     const obj3 = { variant: "primary", text: null, icon: null, onPress: null };
     const intl4 = tmp2(1236).intl;
-    obj3[1] = intl4.string(tmp9(3079)["6kk0gM"]);
-    obj3[2] = tmp8(tmp2(11932).PlusMediumIcon, {});
+    obj3[1] = intl4.string(tmp9(3082)["6kk0gM"]);
+    obj3[2] = tmp8(tmp2(11981).PlusMediumIcon, {});
     obj3[3] = callback;
     let obj4 = obj3;
   } else {
     obj4 = { variant: "primary", text: null, onPress: null };
     const intl3 = tmp2(1236).intl;
-    obj4[1] = intl3.string(tmp9(3079).yYVbdv);
+    obj4[1] = intl3.string(tmp9(3082).yYVbdv);
     obj4[2] = callback1;
   }
-  items[2] = callback(require(4745) /* Button */.Button, obj4);
+  items[2] = callback(Button.Button, obj4);
   obj[1] = items;
   return callback2(View, obj);
 };

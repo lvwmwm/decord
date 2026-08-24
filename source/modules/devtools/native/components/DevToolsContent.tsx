@@ -1,35 +1,35 @@
-// Module ID: 13947
-// Function ID: 13948
+// Module ID: 14015
+// Function ID: 14016
 // Name: DevToolsContentSortButtons
-// Dependencies: [32, 19, 17, 10638, 4288, 1212, 21, 4661, 712, 589, 10968, 13948, 4734, 5433, 4343, 14409, 15190, 1500, 1629, 6286, 6291, 4094, 13946, 2]
+// Dependencies: [32, 19, 17, 10677, 4292, 1212, 21, 4668, 712, 589, 11007, 14016, 4739, 5438, 4347, 14477, 15254, 1500, 1629, 6317, 6322, 4097, 14014, 2]
 
-// Module 13947 (DevToolsContentSortButtons)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "TableRowGroupTitle";
-import get_ActivityIndicator from "useNavigation";
-import getCurrentBuildOverride from "getCurrentBuildOverride";
-import getHash from "getHash";
-import initialize from "initialize";
-import jsxProd from "dispatcher";
-import createCacheKey from "createCacheKey";
+// Module 14015 (DevToolsContentSortButtons)
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import getSortedDevToolsScreensDefault from "getSortedDevToolsScreens" /* 14016 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 14477 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 15254 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "getCurrentBuildOverride" /* 10677 */;
+import closure_8 from "getHash" /* 4292 */;
+import closure_9 from "initialize" /* 1212 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let closure_6;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function DevToolsContentSortButtons(arg0) {
-  let end;
-  let require;
-  let start;
   ({ screenKey: require, start, end } = arg0);
   const tmp = callback4();
   let obj = { style: tmp.sortingIcons, children: null };
   obj = {
     onPress() {
-      const result = outer1_0(outer1_2[14]).triggerHapticFeedback(outer1_0(outer1_2[14]).HapticFeedbackTypes.IMPACT_MEDIUM);
-      const obj = outer1_0(outer1_2[14]);
-      outer1_0(outer1_2[11]).updateSortOrder(closure_0, "up");
+      const result = closure_1_0(closure_1_2[14]).triggerHapticFeedback(closure_1_0(closure_1_2[14]).HapticFeedbackTypes.IMPACT_MEDIUM);
+      const obj = closure_1_0(closure_1_2[14]);
+      closure_1_0(closure_1_2[11]).updateSortOrder(closure_0, "up");
     },
     disabled: start,
     style: null,
@@ -43,13 +43,13 @@ function DevToolsContentSortButtons(arg0) {
   }
   items[1] = start;
   obj[2] = items;
-  obj[5] = closure_10(require(14409) /* ArrowSmallUpIcon */.ArrowSmallUpIcon, {});
-  const items1 = [closure_10(require(5433) /* PressableBase */.PressableOpacity, obj), ];
+  obj[5] = closure_10(ArrowSmallUpIcon.ArrowSmallUpIcon, {});
+  const items1 = [closure_10(PressableBase.PressableOpacity, obj), ];
   obj = {
     onPress() {
-      const result = outer1_0(outer1_2[14]).triggerHapticFeedback(outer1_0(outer1_2[14]).HapticFeedbackTypes.IMPACT_MEDIUM);
-      const obj = outer1_0(outer1_2[14]);
-      outer1_0(outer1_2[11]).updateSortOrder(closure_0, "down");
+      const result = closure_1_0(closure_1_2[14]).triggerHapticFeedback(closure_1_0(closure_1_2[14]).HapticFeedbackTypes.IMPACT_MEDIUM);
+      const obj = closure_1_0(closure_1_2[14]);
+      closure_1_0(closure_1_2[11]).updateSortOrder(closure_0, "down");
     },
     disabled: end,
     style: null,
@@ -63,8 +63,8 @@ function DevToolsContentSortButtons(arg0) {
   }
   items2[1] = end;
   obj[2] = items2;
-  obj[5] = closure_10(require(15190) /* ArrowSmallDownIcon */.ArrowSmallDownIcon, {});
-  items1[1] = closure_10(require(5433) /* PressableBase */.PressableOpacity, obj);
+  obj[5] = closure_10(ArrowSmallDownIcon.ArrowSmallDownIcon, {});
+  items1[1] = closure_10(PressableBase.PressableOpacity, obj);
   obj[1] = items1;
   return closure_11(closure_5, obj);
 }
@@ -72,31 +72,25 @@ let c4 = importAllResult;
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let obj = { devToolsContainer: null, sortingIcons: null, button: null, disabledButton: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, padding: require("Themes").space.PX_16 };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, padding: ThemesDefault.space.PX_16 };
 obj[0] = obj;
-createCacheKey = { flexDirection: "row", gap: require("Themes").space.PX_8 };
+createCacheKey = { flexDirection: "row", gap: ThemesDefault.space.PX_8 };
 obj[1] = createCacheKey;
-obj[2] = { backgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, width: require("Themes").space.PX_32, height: require("Themes").space.PX_32, borderRadius: require("Themes").radii.round, justifyContent: "center", alignItems: "center" };
+obj[2] = { backgroundColor: ThemesDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, width: ThemesDefault.space.PX_32, height: ThemesDefault.space.PX_32, borderRadius: ThemesDefault.radii.round, justifyContent: "center", alignItems: "center" };
 obj[3] = { opacity: 0.5 };
 let closure_12 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {
-  let label;
-  let value;
   ({ label, value } = arg0);
   const obj = { variant: "text-xs/medium", color: "text-subtle", children: null };
-  const items = [label, callback2(require(4734) /* Text */.Text, { variant: "text-xs/semibold", children: value })];
+  const items = [label, callback2(Text.Text, { variant: "text-xs/semibold", children: value })];
   obj[2] = items;
-  return callback3(require(4734) /* Text */.Text, obj);
+  return callback3(Text.Text, obj);
 });
-const obj2 = { backgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, width: require("Themes").space.PX_32, height: require("Themes").space.PX_32, borderRadius: require("Themes").radii.round, justifyContent: "center", alignItems: "center" };
+const obj2 = { backgroundColor: ThemesDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, width: ThemesDefault.space.PX_32, height: ThemesDefault.space.PX_32, borderRadius: ThemesDefault.radii.round, justifyContent: "center", alignItems: "center" };
 const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
-  let c2;
-  let c3;
-  let embedded;
-  let title;
   let _require;
-  let importDefault;
-  let dependencyMap;
+  importDefault = undefined;
+  dependencyMap = undefined;
   let callback;
   let arr5;
   ({ title, embedded } = arg0);
@@ -106,8 +100,8 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
   importDefault = undefined;
   const tmp = callback4();
   const tmp3 = importDefault;
-  let obj1 = _require(589);
-  const items = [getCurrentBuildOverride];
+  obj1 = _require(589);
+  const items = [closure_7];
   _require = obj1.useStateFromStores(items, () => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let id;
@@ -119,22 +113,21 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
     }
     return id;
   });
-  let tmp4 = importDefault(1629)();
-  const items1 = [getHash];
+  let tmp4 = useSafeAreaInsetsDefault();
+  const items1 = [closure_8];
   const stateFromStores = _require(589).useStateFromStores(items1, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
   const obj3 = _require(589);
-  const items2 = [initialize];
+  const items2 = [closure_9];
   importDefault = stateFromStores + _require(589).useStateFromStores(items2, () => Object.keys(clientOverrides.getClientOverrides()).length);
   const obj4 = _require(589);
-  importDefault = importDefault(13948)().map((arg0) => {
-    let tmp;
+  importDefault = getSortedDevToolsScreensDefault().map((arg0) => {
     [tmp] = arg0;
     if ("buildOverride" === tmp) {
       let tmp7;
       if (null != closure_0) {
         let obj = { label: "Build override: ", value: null };
         obj[1] = tmp5;
-        tmp7 = outer1_10(outer1_13, obj);
+        tmp7 = closure_1_10(closure_1_13, obj, tmp);
       }
       return tmp7;
     } else if ("experiments" === tmp) {
@@ -142,75 +135,75 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
       if (closure_1 > 0) {
         obj = { label: "Experiments overridden: ", value: null };
         obj[1] = closure_1.toString();
-        tmp2 = outer1_10(outer1_13, obj);
+        tmp2 = closure_1_10(closure_1_13, obj, tmp);
       }
       return tmp2;
     }
   });
-  const arr4 = importDefault(13948)();
+  const arr4 = getSortedDevToolsScreensDefault();
   [c2, c3] = callback(arr5.useState(false), 2);
-  arr5 = importDefault(13948)();
-  obj = { title, hasIcons: true, children: null };
-  obj[2] = arr5.map((arg0, arg1) => {
-    let tmp;
-    [tmp, ] = arg0;
-    let obj = { label: tmp2, subLabel: table[arg1], icon: null, arrow: null, trailing: null, onLongPress: null, onPress: null };
-    obj[2] = outer1_10(callback(_undefined[20]).TableRow.Icon, { IconComponent: tmp3 });
-    obj[3] = !_undefined;
-    let tmp4Result;
-    if (_undefined) {
-      obj = { screenKey: null, start: null, end: null };
-      obj[0] = tmp;
-      obj[1] = 0 === arg1;
-      obj[2] = arg1 === arr5.length - 1;
-      tmp4Result = tmp4(outer1_14, obj);
-    }
-    obj[4] = tmp4Result;
-    obj[5] = function onLongPress() {
-      let obj = outer1_1(outer1_2[21]);
-      let str = "sorting-enabled";
-      if (closure_2) {
-        str = "sorting-disabled";
+  arr5 = getSortedDevToolsScreensDefault();
+  obj = {
+    title,
+    hasIcons: true,
+    children: arr5.map((arg0, arg1) => {
+      [tmp, ] = arg0;
+      let obj = { label: tmp2, subLabel: table[arg1], icon: closure_1_10(callback(_undefined[20]).TableRow.Icon, { IconComponent: tmp3 }), arrow: !_undefined, trailing: null, onLongPress: null, onPress: null };
+      let tmp4Result;
+      if (_undefined) {
+        obj = { screenKey: null, start: null, end: null };
+        obj[0] = tmp;
+        obj[1] = 0 === arg1;
+        obj[2] = arg1 === arr5.length - 1;
+        tmp4Result = tmp4(closure_1_14, obj);
       }
-      obj = { key: str, content: null };
-      let str2 = "Sorting enabled";
-      if (closure_2) {
-        str2 = "Sorting disabled";
-      }
-      obj[1] = str2;
-      obj.open(obj);
-      const result = outer1_0(outer1_2[14]).triggerHapticFeedback(outer1_0(tmp[14]).HapticFeedbackTypes.IMPACT_MEDIUM);
-      callback2((arg0) => !arg0);
-    };
-    obj[6] = function onPress() {
-      if (!outer1_2) {
-        let arr = outer1_0;
-        if (null != outer1_0.push) {
-          arr = arr.push(callback);
-        } else {
-          let obj = callback(table[22]);
-          obj = { screenKey: null };
-          obj[0] = callback;
-          obj.navigateToDevTools(obj);
+      obj[4] = tmp4Result;
+      obj[5] = function onLongPress() {
+        let obj = closure_1_1(closure_1_2[21]);
+        let str = "sorting-enabled";
+        if (closure_2) {
+          str = "sorting-disabled";
         }
-      }
-    };
-    return outer1_10(callback(_undefined[20]).TableRow, obj, tmp);
-  });
-  const tmp8 = callback2(_require(6286).TableRowGroup, obj);
+        obj = { key: str, content: null };
+        let str2 = "Sorting enabled";
+        if (closure_2) {
+          str2 = "Sorting disabled";
+        }
+        obj[1] = str2;
+        obj.open(obj);
+        const result = closure_1_0(closure_1_2[14]).triggerHapticFeedback(closure_1_0(tmp[14]).HapticFeedbackTypes.IMPACT_MEDIUM);
+        callback2((arg0) => !arg0);
+      };
+      obj[6] = function onPress() {
+        if (!closure_1_2) {
+          let arr = closure_1_0;
+          if (null != closure_1_0.push) {
+            arr = arr.push(callback);
+          } else {
+            let obj = callback(table[22]);
+            obj = { screenKey: null };
+            obj[0] = callback;
+            obj.navigateToDevTools(obj);
+          }
+        }
+      };
+      return closure_1_10(callback(_undefined[20]).TableRow, obj, tmp);
+    })
+  };
+  const tmp8 = callback2(_require(6317).TableRowGroup, obj);
   let tmp7Result = tmp8;
   if (!embedded) {
     obj = { style: null, contentContainerStyle: null, children: null };
     obj[0] = tmp.devToolsContainer;
     obj1 = { paddingBottom: null };
-    obj1[0] = tmp4.bottom + tmp3(712).space.PX_16;
+    obj1[0] = tmp4.bottom + ThemesDefault.space.PX_16;
     obj[1] = obj1;
     obj[2] = tmp8;
     tmp7Result = callback2(closure_6, obj);
   }
   return tmp7Result;
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/DevToolsContent.tsx");
+let result = require("set").fileFinishedImporting("modules/devtools/native/components/DevToolsContent.tsx");
 
 export default memoResult1;
 export const DevToolsContentSubLabel = memoResult;

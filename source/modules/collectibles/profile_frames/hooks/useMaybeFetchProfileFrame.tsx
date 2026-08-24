@@ -1,26 +1,28 @@
-// Module ID: 8945
-// Function ID: 8946
+// Module ID: 8982
+// Function ID: 8983
 // Name: useMaybeFetchProfileFrame
-// Dependencies: [19, 8946, 8956, 8957, 5300, 2]
+// Dependencies: [19, 8983, 8993, 8994, 5305, 2]
 // Exports: default
 
-// Module 8945 (useMaybeFetchProfileFrame)
-import noop from "noop";
+// Module 8982 (useMaybeFetchProfileFrame)
+import useFramePreviewOverrideFrameDefault from "useFramePreviewOverrideFrame" /* 8983 */;
+import useProfileFrameDefault from "useProfileFrame" /* 8994 */;
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-let result = require("apexExperiment").fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeFetchProfileFrame.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeFetchProfileFrame.tsx");
 
 export default function useMaybeFetchProfileFrame(arg0, location) {
   const _require = arg0;
-  let tmp = importDefault(8946)();
-  const isProfileFramesEnabled = _require(8956).useIsProfileFramesEnabled(location);
-  const tmp3 = importDefault(8957)(arg0);
+  let tmp = useFramePreviewOverrideFrameDefault();
+  const isProfileFramesEnabled = _require(8993).useIsProfileFramesEnabled(location);
+  const tmp3 = useProfileFrameDefault(arg0);
   importDefault = tmp4;
   const items = [null == tmp && isProfileFramesEnabled && null != arg0 && null == tmp3, arg0];
   const effect = React.useEffect(() => {
     if (closure_1) {
-      const result = callback(outer1_2[4]).maybeFetchCollectiblesProduct(callback);
-      const obj = callback(outer1_2[4]);
+      const result = callback(closure_1_2[4]).maybeFetchCollectiblesProduct(callback);
+      const obj = callback(closure_1_2[4]);
     }
   }, items);
   if (tmp == null) {

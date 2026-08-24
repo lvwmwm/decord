@@ -1,23 +1,26 @@
-// Module ID: 10643
-// Function ID: 10644
+// Module ID: 10682
+// Function ID: 10683
 // Dependencies: [683, 709, 2]
 
-// Module 10643
-import { CONFERENCE_MODE_ENABLED } from "CONFERENCE_MODE_ENABLED";
+// Module 10682
+import set from "set" /* 2 */;
+import CONFERENCE_MODE_ENABLED2 from "CONFERENCE_MODE_ENABLED" /* 683 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
-const result = require("set").fileFinishedImporting("modules/coded_links/web/CodedLinkActionCreators.tsx");
+const CONFERENCE_MODE_ENABLED = CONFERENCE_MODE_ENABLED2.CONFERENCE_MODE_ENABLED;
+const result = set.fileFinishedImporting("modules/coded_links/web/CodedLinkActionCreators.tsx");
 
 export default {
   openNativeAppModal(arg0, arg1) {
 
   },
   nativeModalOpened(code) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "NATIVE_APP_MODAL_OPENED", code };
     obj.dispatch(obj);
   },
   nativeModalOpenFailed(code) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "NATIVE_APP_MODAL_OPEN_FAILED", code };
     obj.dispatch(obj);
   }

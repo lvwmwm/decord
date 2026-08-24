@@ -1,52 +1,49 @@
-// Module ID: 10011
-// Function ID: 10012
+// Module ID: 10050
+// Function ID: 10051
 // Name: NotificationsContainer
-// Dependencies: [19, 17, 4022, 1391, 1979, 676, 1388, 21, 4661, 4232, 10012, 589, 10526, 6701, 4196, 1377, 10527, 10528, 10544, 2]
+// Dependencies: [19, 17, 4025, 1391, 1980, 676, 1388, 21, 4668, 4236, 10051, 589, 10565, 6738, 4200, 1377, 10566, 10567, 10583, 2]
 // Exports: ChannelContainer
 
-// Module 10011 (NotificationsContainer)
-import set from "set";
-import { View } from "AnnouncementChannelLurkerBar";
-import initialize from "initialize";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import { ChannelTypes } from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10050 (NotificationsContainer)
+import initialize from "initialize" /* 589 */;
+import useChatLayoutDefault from "useChatLayout" /* 4236 */;
+import NotificationsDefault from "Notifications" /* 10051 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "initialize" /* 4025 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "handleConnectionOpen" /* 1980 */;
+import { ChannelTypes } from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function NotificationsContainer() {
   let tmp4 = null;
-  if (importDefault(4232)().isChatBesideChannelList) {
+  if (useChatLayoutDefault().isChatBesideChannelList) {
     const obj = { style: null, children: null };
     obj[0] = tmp.container;
-    obj[1] = callback(importDefault(10012), {});
+    obj[1] = callback(NotificationsDefault, {});
     tmp4 = callback(View, obj);
   }
   return tmp4;
 }
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_12 = createCacheKey.createStyles({ container: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8 } });
-let result = require("initialize").fileFinishedImporting("components_native/ChannelContainer.tsx");
+let result = require("set").fileFinishedImporting("components_native/ChannelContainer.tsx");
 
 export const ChannelContainer = function ChannelContainer(children) {
-  let channel;
-  let channelId;
-  let isStageChannel;
-  let require;
   ({ guildId: require, channelId } = children);
-  let dependencyMap;
+  dependencyMap = undefined;
   let React;
-  let c4;
-  let obj = require(589) /* initialize */;
-  const items = [handleConnectionOpen, ensureGuildLoaded];
+  closure_4 = undefined;
+  let obj = initialize;
+  const items = [closure_7, closure_6];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const voiceChannelId = outer1_7.getVoiceChannelId();
-    const obj = { channel: outer1_6.getChannel(channelId), voiceChannelId, isStageChannel: null };
-    const channel = outer1_6.getChannel(voiceChannelId);
+    const voiceChannelId = closure_1_7.getVoiceChannelId();
+    const obj = { channel: closure_1_6.getChannel(channelId), voiceChannelId, isStageChannel: null };
+    const channel = closure_1_6.getChannel(voiceChannelId);
     let isGuildStageVoiceResult;
     if (channel != null) {
       isGuildStageVoiceResult = channel.isGuildStageVoice();
@@ -57,15 +54,15 @@ export const ChannelContainer = function ChannelContainer(children) {
   ({ channel, isStageChannel } = stateFromStoresObject);
   let tmp5 = !isStageChannel;
   if (isStageChannel) {
-    tmp5 = channelId(10526)(stateFromStoresObject.voiceChannelId);
+    tmp5 = channelId(10565)(stateFromStoresObject.voiceChannelId);
   }
   let tmpResult = tmp(589);
-  const items1 = [initialize];
+  const items1 = [closure_5];
   let isPrivateResult = null != channel;
   const stateFromStores = tmpResult.useStateFromStores(items1, () => {
     let isLurkingResult = null != closure_0;
     if (isLurkingResult) {
-      isLurkingResult = outer1_5.isLurking(tmp);
+      isLurkingResult = closure_1_5.isLurking(tmp);
     }
     return isLurkingResult;
   });
@@ -73,15 +70,15 @@ export const ChannelContainer = function ChannelContainer(children) {
     isPrivateResult = channel.isPrivate();
   }
   dependencyMap = isPrivateResult;
-  const tmp8 = channelId(6701)(isPrivateResult);
+  const tmp8 = channelId(6738)(isPrivateResult);
   React = tmp8;
-  const tmp9 = channelId(6701)(channelId);
-  c4 = tmp9;
+  const tmp9 = channelId(6738)(channelId);
+  closure_4 = tmp9;
   const items2 = [channelId, tmp9, isPrivateResult, tmp8];
   const effect = React.useEffect(() => {
-    let tmp = c3;
-    let tmp2 = c3;
-    if (c3) {
+    let tmp = closure_3;
+    let tmp2 = closure_3;
+    if (closure_3) {
       tmp2 = !_undefined;
     }
     if (!tmp2) {
@@ -89,18 +86,18 @@ export const ChannelContainer = function ChannelContainer(children) {
         tmp = _undefined;
       }
       if (tmp) {
-        tmp = channelId !== c4;
+        tmp = channelId !== closure_4;
       }
       tmp2 = tmp;
     }
     if (tmp2) {
-      let obj = outer1_0(_undefined[14]);
+      let obj = closure_1_0(_undefined[14]);
       obj = { dismissAction: null };
-      obj[0] = outer1_9.AUTO;
-      const result = obj.UNSAFE_markDismissibleContentAsDismissed(outer1_0(_undefined[15]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP, obj);
+      obj[0] = closure_1_9.AUTO;
+      const result = obj.UNSAFE_markDismissibleContentAsDismissed(closure_1_0(_undefined[15]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP, obj);
     }
   }, items2);
-  tmpResult = tmp(10527);
+  tmpResult = tmp(10566);
   const channelStyles = tmpResult.useChannelStyles();
   obj = { style: channelStyles.scene, children: null };
   obj = { style: channelStyles.flex, children: null };
@@ -112,20 +109,20 @@ export const ChannelContainer = function ChannelContainer(children) {
   if (type === ChannelTypes.GUILD_ANNOUNCEMENT) {
     tmp15 = null;
     if (stateFromStores) {
-      const obj1 = { channel: null };
+      obj1 = { channel: null };
       obj1[0] = channel;
-      tmp15 = callback(tmp4(10528), obj1);
+      tmp15 = callback(tmp4(10567), obj1);
     }
   }
   const items3 = [tmp15, children.children, ];
   if (tmp5) {
     const obj2 = { style: null };
     obj2[0] = channelStyles.callPTTButton;
-    tmp5 = callback(tmp4(10544), obj2);
+    tmp5 = callback(tmp4(10583), obj2);
   }
   items3[2] = tmp5;
   obj[1] = items3;
-  const items4 = [closure_11(c4, obj), callback(NotificationsContainer, {})];
+  const items4 = [closure_11(closure_4, obj), callback(NotificationsContainer, {})];
   obj[1] = items4;
-  return closure_11(c4, obj);
+  return closure_11(closure_4, obj);
 };

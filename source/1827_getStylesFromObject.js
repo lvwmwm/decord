@@ -5,7 +5,8 @@
 // Exports: advanceAnimationByFrame, advanceAnimationByTime, getAnimatedStyle, setUpTests, withReanimatedTimer
 
 // Module 1827 (getStylesFromObject)
-import isJest from "isJest";
+import t from "t" /* 1665 */;
+import isJest from "isJest" /* 1657 */;
 
 let obj = { fps: 60 };
 function getStylesFromObject(jestInlineStyle) {
@@ -16,8 +17,6 @@ function getStylesFromObject(jestInlineStyle) {
     const _Object2 = Object;
     const entries = Object.entries(jestInlineStyle);
     fromEntriesResult = Object.fromEntries(entries.map((arg0) => {
-      let iter;
-      let tmp;
       [tmp, iter] = arg0;
       const items = [tmp, ];
       let value = iter;
@@ -32,10 +31,10 @@ function getStylesFromObject(jestInlineStyle) {
 }
 function getCurrentStyle(props) {
   const style = props.props.style;
-  let obj = {};
+  obj = {};
   if (Array.isArray(style)) {
     const item = style.forEach((arg0) => {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(obj);
       const merged1 = Object.assign(arg0);
     });
@@ -131,9 +130,9 @@ function compareAndFormatDifferences(arg0, arg1) {
   if (arg2 === undefined) {
     flag = false;
   }
-  let closure_0;
-  let closure_1;
-  let closure_2;
+  closure_0 = undefined;
+  closure_1 = undefined;
+  closure_2 = undefined;
   const items = [];
   let flag2 = true;
   let flag3 = true;
@@ -333,7 +332,7 @@ function compareAndFormatDifferences(arg0, arg1) {
       if (flag4) {
         continue;
       } else {
-        let obj = { property: null, current: null, expect: null };
+        obj = { property: null, current: null, expect: null };
         obj[0] = tmp4;
         obj[1] = arg0[tmp4];
         obj[2] = arg1[tmp4];
@@ -388,7 +387,7 @@ function compareAndFormatDifferences(arg0, arg1) {
       return "- '" + expect.property + "' should be " + json + ", but is " + JSON.stringify(expect.current);
     });
     closure_2 = mapped.join("\n");
-    const obj1 = { message: null, pass: false };
+    obj1 = { message: null, pass: false };
     obj1[0] = function message() {
       return "Expected: " + closure_1 + "\nReceived: " + closure_0 + "\n\nDifferences:\n" + closure_2;
     };
@@ -398,7 +397,7 @@ function compareAndFormatDifferences(arg0, arg1) {
 let closure_8 = Math.round(1000 / obj.fps);
 if (!isJest.isJest()) {
   require = () => {
-    const reanimatedError = new require(1665) /* t */.ReanimatedError("`setUpTests` is available only in Jest environment.");
+    const reanimatedError = new t.ReanimatedError("`setUpTests` is available only in Jest environment.");
     throw reanimatedError;
   };
 }
@@ -425,7 +424,7 @@ export const advanceAnimationByFrame = (arg0) => {
   globalThis.jest.runOnlyPendingTimers();
 };
 export const setUpTests = () => {
-  let obj = arg0;
+  obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
@@ -441,13 +440,13 @@ export const setUpTests = () => {
   obj = {};
   let merged = Object.assign(obj);
   const merged1 = Object.assign(obj);
-  let closure_8 = Math.round(1000 / obj.fps);
+  closure_8 = Math.round(1000 / obj.fps);
   obj = {
     toHaveAnimatedProps(props) {
       if (props.props.jestAnimatedProps) {
         const _Object = Object;
         if (0 === Object.keys(props.props.jestAnimatedProps.value).length) {
-          let obj = { message: null, pass: false };
+          obj = { message: null, pass: false };
           obj[0] = function message() {
             return "Component doesn't have props.";
           };
@@ -472,7 +471,7 @@ export const setUpTests = () => {
   _default.extend(obj);
   _default.extend({
     toHaveAnimatedStyle(props) {
-      let obj = arg2;
+      obj = arg2;
       if (arg2 === undefined) {
         obj = {};
       }

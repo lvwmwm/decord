@@ -1,16 +1,17 @@
-// Module ID: 7130
-// Function ID: 7131
+// Module ID: 7168
+// Function ID: 7169
 // Name: play
-// Dependencies: [109, 19, 17, 21, 7131, 2]
+// Dependencies: [109, 19, 17, 21, 7169, 2]
 
-// Module 7130 (play)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import { PureComponent } from "noop";
-import importAllResult from "noop";
+// Module 7168 (play)
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 7169 */;
+import closure_3 from "_objectWithoutProperties" /* 109 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
 let closure_2 = ["source", "style", "collapsable"];
+const PureComponent = importAllResult.PureComponent;
 class LottieAnimationView extends PureComponent {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -48,8 +49,6 @@ prototype["resume"] = function resume() {
   }
 };
 prototype["render"] = function render() {
-  let source;
-  let style;
   const props = this.props;
   ({ source, style } = props);
   let json;
@@ -71,10 +70,10 @@ prototype["render"] = function render() {
   items1 = [tmp4, style];
   const tmp = callback(props, closure_2);
   const merged = Object.assign(tmp);
-  obj[2] = jsx(importDefault(7131), { ref: this.setRef, source, style: items1 });
+  obj[2] = jsx(_isNativeReflectConstructDefault, { ref: this.setRef, source, style: items1 });
   return <View ref={this.setRef} source={source} style={items1} />;
 };
 LottieAnimationView.defaultProps = { autoPlay: true, loop: true, collapsable: false };
-const result = require("get ActivityIndicator").fileFinishedImporting("components_native/common/LottieAnimationView.tsx");
+const result = require("set").fileFinishedImporting("components_native/common/LottieAnimationView.tsx");
 
 export default LottieAnimationView;

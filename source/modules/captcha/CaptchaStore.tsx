@@ -1,16 +1,19 @@
-// Module ID: 10479
-// Function ID: 10480
+// Module ID: 10518
+// Function ID: 10519
 // Name: useCaptchaStore
-// Dependencies: [32, 644, 705, 5006, 5011, 2]
+// Dependencies: [32, 644, 705, 5011, 5016, 2]
 // Exports: flushCaptchaServeVolume, incrementCaptchaServeVolume, isCaptchaStoreVolumeEmpty
 
-// Module 10479 (useCaptchaStore)
-import _slicedToArray from "_slicedToArray";
-import keys from "keys";
+// Module 10518 (useCaptchaStore)
+import batchUpdates from "batchUpdates" /* 705 */;
+import setDefault from "set" /* 5011 */;
+import set from "set" /* 5016 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import keys from "keys" /* 644 */;
 
-const require = arg1;
+require = arg1;
 keys = keys.create(() => ({ captchaServeVolume: {} }));
-const result = require("batchUpdates").fileFinishedImporting("modules/captcha/CaptchaStore.tsx");
+const result = require("set").fileFinishedImporting("modules/captcha/CaptchaStore.tsx");
 
 export const useCaptchaStore = keys;
 export const isCaptchaStoreVolumeEmpty = function isCaptchaStoreVolumeEmpty() {
@@ -19,7 +22,7 @@ export const isCaptchaStoreVolumeEmpty = function isCaptchaStoreVolumeEmpty() {
 export const incrementCaptchaServeVolume = function incrementCaptchaServeVolume(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => {
-    outer1_4.setState((arg0) => {
+    closure_1_4.setState((arg0) => {
       let sum = arg0;
       if (null == closure_0) {
         return sum;
@@ -43,8 +46,6 @@ export const incrementCaptchaServeVolume = function incrementCaptchaServeVolume(
   });
 };
 export const flushCaptchaServeVolume = function flushCaptchaServeVolume() {
-  let tmp6;
-  let tmp7;
   const entries = Object.entries(keys.getState().captchaServeVolume);
   while (tmp2 !== undefined) {
     let tmp4 = callback;
@@ -52,10 +53,10 @@ export const flushCaptchaServeVolume = function flushCaptchaServeVolume() {
     let tmp8 = importDefault;
     let tmp9 = dependencyMap;
     [tmp6, tmp7] = tmp5;
-    let obj = importDefault(5006);
+    let obj = setDefault;
     obj = { name: null, tags: null };
     let tmp10 = require;
-    obj[0] = require(5011) /* set */.MetricEvents.CAPTCHA_SERVE_VOLUME_DISTRIBUTION;
+    obj[0] = set.MetricEvents.CAPTCHA_SERVE_VOLUME_DISTRIBUTION;
     let _HermesInternal = HermesInternal;
     let items = ["user_flow:" + tmp6];
     obj[1] = items;
@@ -63,5 +64,5 @@ export const flushCaptchaServeVolume = function flushCaptchaServeVolume() {
     continue;
   }
   tmp2 = entries[Symbol.iterator]();
-  require(705) /* batchUpdates */.batchUpdates(() => state.setState({ captchaServeVolume: {} }));
+  batchUpdates.batchUpdates(() => state.setState({ captchaServeVolume: {} }));
 };

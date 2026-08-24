@@ -1,10 +1,12 @@
-// Module ID: 4510
-// Function ID: 4511
+// Module ID: 4515
+// Function ID: 4516
 // Name: keys
-// Dependencies: [1989, 2]
+// Dependencies: [1990, 2]
 
-// Module 4510 (keys)
-let result = require("set").fileFinishedImporting("lib/CachedEntriesMap.tsx");
+// Module 4515 (keys)
+import set from "set" /* 2 */;
+
+let result = set.fileFinishedImporting("lib/CachedEntriesMap.tsx");
 class CachedEntriesMap {
   constructor() {
     obj = Object.create(new.target.prototype);

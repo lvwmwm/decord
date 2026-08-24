@@ -1,10 +1,12 @@
-// Module ID: 7207
-// Function ID: 7208
+// Module ID: 7245
+// Function ID: 7246
 // Name: StorefrontPromotionRewardType
 // Dependencies: [2]
 
-// Module 7207 (StorefrontPromotionRewardType)
-const result = require("set").fileFinishedImporting("modules/storefront/StorefrontTypes.tsx");
+// Module 7245 (StorefrontPromotionRewardType)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/storefront/StorefrontTypes.tsx");
 
 export const StorefrontPromotionRewardType = { DISCOUNT: 1, [1]: "DISCOUNT", FIXED_PRICE: 2, [2]: "FIXED_PRICE", ACTION: 3, [3]: "ACTION" };
 export const StorefrontPromotionRewardEligibilityStatus = { EARNED: 1, [1]: "EARNED", IN_PROGRESS: 2, [2]: "IN_PROGRESS", NOT_ELIGIBLE: 3, [3]: "NOT_ELIGIBLE", CONSUMED: 4, [4]: "CONSUMED" };

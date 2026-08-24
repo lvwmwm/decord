@@ -1,27 +1,29 @@
-// Module ID: 5269
-// Function ID: 5270
+// Module ID: 5274
+// Function ID: 5275
 // Name: getThreadAutoArchiveTimeOnce
-// Dependencies: [4772, 687, 11, 2]
+// Dependencies: [4777, 687, 11, 2]
 // Exports: default, getThreadLastActivityTime
 
-// Module 5269 (getThreadAutoArchiveTimeOnce)
-import generateOldThreadCutoff from "generateOldThreadCutoff";
+// Module 5274 (getThreadAutoArchiveTimeOnce)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import setDefault from "set" /* 687 */;
+import closure_2 from "generateOldThreadCutoff" /* 4777 */;
 
-let result = require("DISCORD_EPOCH").fileFinishedImporting("modules/threads/getThreadAutoArchiveTimeOnce.tsx");
+let result = require("set").fileFinishedImporting("modules/threads/getThreadAutoArchiveTimeOnce.tsx");
 
 export default function getThreadAutoArchiveTimeOnce(threadMetadata) {
   if (null == threadMetadata.threadMetadata) {
     return 0;
   } else {
     let num3 = 0;
-    const result = threadMetadata.threadMetadata.autoArchiveDuration * importDefault(687).Millis.MINUTE;
+    const result = threadMetadata.threadMetadata.autoArchiveDuration * setDefault.Millis.MINUTE;
     if (null != threadMetadata.threadMetadata) {
-      let id = generateOldThreadCutoff.lastMessageId(threadMetadata.id);
+      let id = closure_2.lastMessageId(threadMetadata.id);
       if (id == null) {
         id = threadMetadata.id;
       }
       let num = 0;
-      const tmp12Result = importDefault(11);
+      const tmp12Result = DISCORD_EPOCHDefault;
       if (null != threadMetadata.lastNonMessageActivityTimestamp) {
         const _Date = Date;
         const date = new Date(threadMetadata.lastNonMessageActivityTimestamp);
@@ -34,8 +36,8 @@ export default function getThreadAutoArchiveTimeOnce(threadMetadata) {
         num2 = date1.getTime();
       }
       const _Math = Math;
-      num3 = Math.max(importDefault(11).extractTimestamp(id), num, num2);
-      const extractTimestampResult = importDefault(11).extractTimestamp(id);
+      num3 = Math.max(DISCORD_EPOCHDefault.extractTimestamp(id), num, num2);
+      const extractTimestampResult = DISCORD_EPOCHDefault.extractTimestamp(id);
     }
     return num3 + result;
   }
@@ -44,12 +46,12 @@ export const getThreadLastActivityTime = function getThreadLastActivityTime(thre
   if (null == threadMetadata.threadMetadata) {
     return 0;
   } else {
-    let id = generateOldThreadCutoff.lastMessageId(threadMetadata.id);
+    let id = closure_2.lastMessageId(threadMetadata.id);
     if (id == null) {
       id = threadMetadata.id;
     }
     let num = 0;
-    const obj = importDefault(11);
+    const obj = DISCORD_EPOCHDefault;
     if (null != threadMetadata.lastNonMessageActivityTimestamp) {
       const _Date = Date;
       const date = new Date(threadMetadata.lastNonMessageActivityTimestamp);
@@ -62,6 +64,6 @@ export const getThreadLastActivityTime = function getThreadLastActivityTime(thre
       num2 = date1.getTime();
     }
     const _Math = Math;
-    return Math.max(importDefault(11).extractTimestamp(id), num, num2);
+    return Math.max(DISCORD_EPOCHDefault.extractTimestamp(id), num, num2);
   }
 };

@@ -5,7 +5,9 @@
 // Exports: parseServerPremiumState
 
 // Module 1937 (parseServerPremiumState)
-const result = require("set").fileFinishedImporting("modules/premium/premium_state/PremiumStateUtils.tsx");
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/premium/premium_state/PremiumStateUtils.tsx");
 
 export const parseServerPremiumState = function parseServerPremiumState(premium_state) {
   let tmp = null;

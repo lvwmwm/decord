@@ -1,24 +1,27 @@
-// Module ID: 16198
-// Function ID: 16199
+// Module ID: 16295
+// Function ID: 16296
 // Name: renderChannelWrapper
-// Dependencies: [19, 17, 21, 16196, 16199, 2]
+// Dependencies: [19, 17, 21, 16293, 16296, 2]
 // Exports: default
 
-// Module 16198 (renderChannelWrapper)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 16295 (renderChannelWrapper)
+import noopAll from "noop" /* 19 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16293 */;
+import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 16296 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let closure_4 = require("getLayoutStyle")();
-const result = require("jsxProd").fileFinishedImporting("modules/launchpad/native/shared/renderChannelWrapper.tsx");
+noopAll;
+let closure_4 = getLayoutStyleDefault();
+const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/renderChannelWrapper.tsx");
 
 export default function renderChannelWrapper(arg0, fontScale) {
   let obj = { style: null, children: null };
   const items = [{ flex: 1, flexDirection: "row", alignItems: "center", position: "relative" }, , ];
-  obj = { minHeight: importDefault(16199)(fontScale.fontScale) - 2 * closure_4.layout.margin.marginVertical };
+  obj = { minHeight: getScaledChannelRowHeightDefault(fontScale.fontScale) - 2 * closure_4.layout.margin.marginVertical };
   items[1] = obj;
   items[2] = closure_4.container.padding;
   obj[0] = items;
   obj[1] = arg0;
-  return <View minHeight={importDefault(16199)(arg1.fontScale) - 2 * closure_4.layout.margin.marginVertical} />;
+  return <View minHeight={getScaledChannelRowHeightDefault(arg1.fontScale) - 2 * closure_4.layout.margin.marginVertical} />;
 };

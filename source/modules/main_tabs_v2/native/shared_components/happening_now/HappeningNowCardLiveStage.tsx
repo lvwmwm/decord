@@ -1,29 +1,28 @@
-// Module ID: 15333
-// Function ID: 15334
+// Module ID: 15397
+// Function ID: 15398
 // Name: HappeningNowLiveStageContent
-// Dependencies: [19, 17, 14640, 676, 21, 4661, 712, 698, 8734, 2007, 15334, 15335, 15336, 14641, 6892, 1297, 15345, 4984, 1236, 4796, 2]
+// Dependencies: [19, 17, 14708, 676, 21, 4668, 712, 698, 8771, 2008, 15398, 15399, 15400, 14709, 6930, 1297, 15409, 4989, 1236, 4801, 2]
 
-// Module 15333 (HappeningNowLiveStageContent)
-import importAllResult from "getNickname";
-import { View } from "computeChannelName";
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
-import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15397 (HappeningNowLiveStageContent)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getNicknameDefault from "getNickname" /* 4801 */;
+import HAPPENING_NOW_CARD_MARGIN_RIGHT from "HAPPENING_NOW_CARD_MARGIN_RIGHT" /* 14709 */;
+import useLiveStageData from "useLiveStageData" /* 15398 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14708 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let HAPPENING_NOW_CONTENT_HEIGHT;
-let HAPPENING_NOW_STAGE_PREVIEW_HEIGHT;
-let HAPPENING_NOW_STAGE_PREVIEW_WIDTH;
-let c5;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 class HappeningNowLiveStageContent {
   constructor(arg0) {
     ({ stage, streamingUser, guildId } = global);
     tmp2 = closure_0;
     tmp3 = closure_2;
-    tmp = jsxs();
+    tmp = closure_9();
     obj = require("useLiveStageData");
     liveStageData = obj.useLiveStageData(stage);
     ({ speakers, friends } = liveStageData);
@@ -41,11 +40,11 @@ class HappeningNowLiveStageContent {
         obj = { users: null, action: null, guildId: null };
         obj[0] = speakers;
         if (null != streamingUser) {
-          tmp17 = memo;
-          ON_STAGE2 = memo.SHARING;
+          tmp17 = closure_11;
+          ON_STAGE2 = closure_11.SHARING;
         } else {
-          tmp16 = memo;
-          ON_STAGE2 = memo.ON_STAGE;
+          tmp16 = closure_11;
+          ON_STAGE2 = closure_11.ON_STAGE;
         }
         obj[1] = ON_STAGE2;
         obj[2] = guildId;
@@ -58,11 +57,11 @@ class HappeningNowLiveStageContent {
       tmp11 = null;
       tmp10 = getUsersSubtitle;
       if (null != streamingUser) {
-        tmp13 = memo;
-        LISTENING = memo.WATCHING;
+        tmp13 = closure_11;
+        LISTENING = closure_11.WATCHING;
       } else {
-        tmp12 = memo;
-        LISTENING = memo.LISTENING;
+        tmp12 = closure_11;
+        LISTENING = closure_11.LISTENING;
       }
       obj1[1] = LISTENING;
       obj1[2] = guildId;
@@ -81,11 +80,11 @@ class HappeningNowLiveStageContent {
         obj2 = { users: null, action: null, guildId: null };
         obj2[0] = tmp7;
         if (null != streamingUser) {
-          tmp9 = memo;
-          ON_STAGE = memo.SHARING;
+          tmp9 = closure_11;
+          ON_STAGE = closure_11.SHARING;
         } else {
-          tmp8 = memo;
-          ON_STAGE = memo.ON_STAGE;
+          tmp8 = closure_11;
+          ON_STAGE = closure_11.ON_STAGE;
         }
         obj2[1] = ON_STAGE;
         obj2[2] = guildId;
@@ -102,139 +101,126 @@ class HappeningNowLiveStageContent {
   }
 }
 function getUsersSubtitle(arg0) {
-  let action;
-  let guildId;
-  let tmp4;
-  let tmp5;
-  let users;
   ({ users, action, guildId } = arg0);
   if (0 === users.length) {
     return "";
   } else if (1 === length) {
     const first = users[0];
     if (constants.LISTENING === action) {
-      const intl9 = require(1236) /* getSystemLocale */.intl;
+      const intl9 = getSystemLocale.intl;
       let obj = { name: null };
-      obj[0] = importDefault(4796).getName(guildId, null, first);
-      let str3 = intl9.formatToPlainString(require(1236) /* getSystemLocale */.t.lJXKtO, obj);
-      const obj14 = importDefault(4796);
+      obj[0] = getNicknameDefault.getName(guildId, null, first);
+      let str3 = intl9.formatToPlainString(getSystemLocale.t.lJXKtO, obj);
+      const obj14 = getNicknameDefault;
     } else if (tmp16.WATCHING === action) {
-      const intl8 = require(1236) /* getSystemLocale */.intl;
+      const intl8 = getSystemLocale.intl;
       obj = { name: null };
-      obj[0] = importDefault(4796).getName(guildId, null, first);
-      str3 = intl8.formatToPlainString(require(1236) /* getSystemLocale */.t.iWY9wg, obj);
-      const obj12 = importDefault(4796);
+      obj[0] = getNicknameDefault.getName(guildId, null, first);
+      str3 = intl8.formatToPlainString(getSystemLocale.t.iWY9wg, obj);
+      const obj12 = getNicknameDefault;
     } else if (tmp16.ON_STAGE === action) {
-      const intl7 = require(1236) /* getSystemLocale */.intl;
-      const obj1 = { name: null };
-      let obj9 = importDefault(4796);
+      const intl7 = getSystemLocale.intl;
+      obj1 = { name: null };
+      let obj9 = getNicknameDefault;
       obj1[0] = obj9.getName(guildId, null, first);
-      str3 = intl7.formatToPlainString(require(1236) /* getSystemLocale */.t["5uJ3+u"], obj1);
+      str3 = intl7.formatToPlainString(getSystemLocale.t["5uJ3+u"], obj1);
     } else {
       str3 = "";
       if (tmp16.SHARING === action) {
-        const intl12 = require(1236) /* getSystemLocale */.intl;
+        const intl12 = getSystemLocale.intl;
         const obj2 = { name: null };
-        obj2[0] = importDefault(4796).getName(guildId, null, first);
-        str3 = intl12.formatToPlainString(require(1236) /* getSystemLocale */.t["5oa7dX"], obj2);
-        const obj19 = importDefault(4796);
+        obj2[0] = getNicknameDefault.getName(guildId, null, first);
+        str3 = intl12.formatToPlainString(getSystemLocale.t["5oa7dX"], obj2);
+        const obj19 = getNicknameDefault;
       }
     }
     return str3;
   } else if (2 === length) {
     [tmp4, tmp5] = users;
-    let obj3 = importDefault(4796);
+    let obj3 = getNicknameDefault;
     const name = obj3.getName(guildId, null, tmp4);
-    let obj4 = importDefault(4796);
+    let obj4 = getNicknameDefault;
     const name1 = obj4.getName(guildId, null, tmp5);
     if (constants.LISTENING === action) {
-      const intl6 = require(1236) /* getSystemLocale */.intl;
+      const intl6 = getSystemLocale.intl;
       obj3 = { name1: null, name2: null };
       obj3[0] = name;
       obj3[1] = name1;
-      let str2 = intl6.formatToPlainString(require(1236) /* getSystemLocale */.t.GFMcxs, obj3);
+      let str2 = intl6.formatToPlainString(getSystemLocale.t.GFMcxs, obj3);
     } else if (tmp11.WATCHING === action) {
-      const intl5 = require(1236) /* getSystemLocale */.intl;
+      const intl5 = getSystemLocale.intl;
       obj4 = { name1: null, name2: null };
       obj4[0] = name;
       obj4[1] = name1;
-      str2 = intl5.formatToPlainString(require(1236) /* getSystemLocale */.t.afUnti, obj4);
+      str2 = intl5.formatToPlainString(getSystemLocale.t.afUnti, obj4);
     } else if (tmp11.ON_STAGE === action) {
-      const intl4 = require(1236) /* getSystemLocale */.intl;
+      const intl4 = getSystemLocale.intl;
       const obj5 = { name1: null, name2: null };
       obj5[0] = name;
       obj5[1] = name1;
-      str2 = intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.SrTuJ6, obj5);
+      str2 = intl4.formatToPlainString(getSystemLocale.t.SrTuJ6, obj5);
     } else {
       str2 = "";
       if (tmp11.SHARING === action) {
-        const intl11 = require(1236) /* getSystemLocale */.intl;
+        const intl11 = getSystemLocale.intl;
         const obj6 = { name1: null, name2: null };
         obj6[0] = name;
         obj6[1] = name1;
-        str2 = intl11.formatToPlainString(require(1236) /* getSystemLocale */.t.uRjRHT, obj6);
+        str2 = intl11.formatToPlainString(getSystemLocale.t.uRjRHT, obj6);
       }
     }
     return str2;
   } else {
     let str = "";
     if (0 !== users.length) {
-      const name2 = importDefault(4796).getName(guildId, null, users[0]);
+      const name2 = getNicknameDefault.getName(guildId, null, users[0]);
       const diff = users.length - 1;
       if (constants.LISTENING === action) {
-        const intl3 = require(1236) /* getSystemLocale */.intl;
+        const intl3 = getSystemLocale.intl;
         const obj7 = { name: null, count: null };
         obj7[0] = name2;
         obj7[1] = diff;
-        str = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.CsvyMc, obj7);
+        str = intl3.formatToPlainString(getSystemLocale.t.CsvyMc, obj7);
       } else if (tmp34.WATCHING === action) {
-        const intl2 = require(1236) /* getSystemLocale */.intl;
+        const intl2 = getSystemLocale.intl;
         const obj8 = { name: null, count: null };
         obj8[0] = name2;
         obj8[1] = diff;
-        str = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.Iwxee0, obj8);
+        str = intl2.formatToPlainString(getSystemLocale.t.Iwxee0, obj8);
       } else if (tmp34.ON_STAGE === action) {
-        const intl = require(1236) /* getSystemLocale */.intl;
+        const intl = getSystemLocale.intl;
         obj = { name: null, count: null };
         obj[0] = name2;
         obj[1] = diff;
-        str = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.zRm3ZX, obj);
+        str = intl.formatToPlainString(getSystemLocale.t.zRm3ZX, obj);
       } else {
         str = "";
         if (tmp34.SHARING === action) {
-          const intl10 = require(1236) /* getSystemLocale */.intl;
+          const intl10 = getSystemLocale.intl;
           obj9 = { name: null, count: null };
           obj9[0] = name2;
           obj9[1] = diff;
-          str = intl10.formatToPlainString(require(1236) /* getSystemLocale */.t["m+NEcC"], obj9);
+          str = intl10.formatToPlainString(getSystemLocale.t["m+NEcC"], obj9);
         }
       }
-      const obj15 = importDefault(4796);
+      const obj15 = getNicknameDefault;
     }
     return str;
   }
 }
 let c3 = importAllResult;
 ({ HappeningNowCardTrackingType: c5, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, HAPPENING_NOW_STAGE_PREVIEW_WIDTH } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let obj = { content: { flexShrink: 1, gap: 2 }, stagePreviewContainer: { marginRight: 12, flexDirection: "column", justifyContent: "space-between", height: "100%", width: HAPPENING_NOW_STAGE_PREVIEW_WIDTH }, stagePreviewBackground: null, stagePreviewBackgroundNoAudience: null, avatarStackContainer: null };
-obj = { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_800, borderRadius: require("Themes").radii.sm, alignItems: "center", paddingTop: 6 };
+obj = { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, backgroundColor: ThemesDefault.unsafe_rawColors.PRIMARY_800, borderRadius: ThemesDefault.radii.sm, alignItems: "center", paddingTop: 6 };
 obj[2] = obj;
-createCacheKey = { height: HAPPENING_NOW_CONTENT_HEIGHT, backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_800, borderRadius: require("Themes").radii.sm, justifyContent: "center", alignItems: "center" };
+createCacheKey = { height: HAPPENING_NOW_CONTENT_HEIGHT, backgroundColor: ThemesDefault.unsafe_rawColors.PRIMARY_800, borderRadius: ThemesDefault.radii.sm, justifyContent: "center", alignItems: "center" };
 obj[3] = createCacheKey;
-obj[4] = { backgroundColor: require("Themes").colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: require("Themes").radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
+obj[4] = { backgroundColor: ThemesDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: ThemesDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
 let closure_9 = createCacheKey.createStyles(obj);
 let closure_11 = { LISTENING: 0, [0]: "LISTENING", WATCHING: 1, [1]: "WATCHING", ON_STAGE: 2, [2]: "ON_STAGE", SHARING: 3, [3]: "SHARING" };
-let obj2 = { backgroundColor: require("Themes").colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: require("Themes").radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
+let obj2 = { backgroundColor: ThemesDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: ThemesDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
 const memoResult = importAllResult.memo((arg0) => {
-  let audienceCount;
-  let audiencePrefixedFriends;
-  let fullwidth;
-  let index;
-  let panelVariant;
-  let renderingContext;
-  let speakers;
-  let stage;
   ({ stage, index } = arg0);
   ({ fullwidth, renderingContext, panelVariant } = arg0);
   if (panelVariant === undefined) {
@@ -248,8 +234,8 @@ const memoResult = importAllResult.memo((arg0) => {
   const items = [channel_id, guild_id, index];
   const callback = importAllResult.useCallback(() => {
     let obj = channel_id(guild_id[7]);
-    obj = { order: index, guild_id, type: outer1_5.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id };
-    obj.track(outer1_6.ACTIVITY_CARD_CLICKED, obj);
+    obj = { order: index, guild_id, type: closure_1_5.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id };
+    obj.track(closure_1_6.ACTIVITY_CARD_CLICKED, obj);
     index(guild_id[9])(guild_id[8], guild_id.paths).then((arg0) => {
       arg0.default(closure_1, true);
     });
@@ -257,7 +243,7 @@ const memoResult = importAllResult.memo((arg0) => {
   let obj = index(guild_id[10]);
   const liveStageData = obj.useLiveStageData(stage);
   ({ speakers, audienceCount, audiencePrefixedFriends } = liveStageData);
-  let obj1 = index(guild_id[11]);
+  obj1 = index(guild_id[11]);
   const stream = obj1.useCallActivityData(channel_id).stream;
   if (null != stream) {
     obj = { index: null, userId: null, guildId: null, stream: null, fullwidth: null, renderingContext: null, panelVariant: null };
@@ -330,7 +316,7 @@ const memoResult = importAllResult.memo((arg0) => {
   }
   return tmp16Result;
 });
-const result = require("HAPPENING_NOW_PANELS_CONTAINER_PADDING").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardLiveStage.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardLiveStage.tsx");
 
 export default memoResult;
 export { HappeningNowLiveStageContent };

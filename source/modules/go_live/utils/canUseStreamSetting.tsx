@@ -1,13 +1,17 @@
-// Module ID: 10937
-// Function ID: 10938
+// Module ID: 10976
+// Function ID: 10977
 // Name: canUseStreamSetting
-// Dependencies: [1924, 4039, 4266, 2]
+// Dependencies: [1924, 4042, 4270, 2]
 // Exports: default
 
-// Module 10937 (canUseStreamSetting)
-import { StreamQualities } from "GuildFeatures";
+// Module 10976 (canUseStreamSetting)
+import set from "set" /* 2 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
+import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4270 */;
 
-let result = require("getGuildTierFromGuild").fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");
+const StreamQualities = GuildFeatures.StreamQualities;
+let result = set.fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");
 
 export default function canUseStreamSetting(quality, user) {
   if (null != quality) {
@@ -15,11 +19,11 @@ export default function canUseStreamSetting(quality, user) {
     if (null != quality.quality) {
       quality = quality.quality;
       if (StreamQualities.HIGH_STREAMING_QUALITY === quality) {
-        flag = importDefault(4039).canStreamQuality(importDefault(4039).StreamQuality.HIGH, user);
-        const obj2 = importDefault(4039);
+        flag = getPremiumPlanItemDefault.canStreamQuality(getPremiumPlanItemDefault.StreamQuality.HIGH, user);
+        const obj2 = getPremiumPlanItemDefault;
       } else if (tmp2.MID_STREAMING_QUALITY === quality) {
-        flag = importDefault(4039).canStreamQuality(importDefault(4039).StreamQuality.MID, user);
-        const obj = importDefault(4039);
+        flag = getPremiumPlanItemDefault.canStreamQuality(getPremiumPlanItemDefault.StreamQuality.MID, user);
+        const obj = getPremiumPlanItemDefault;
       } else {
         const quality2 = quality.quality;
         flag = false;
@@ -29,8 +33,8 @@ export default function canUseStreamSetting(quality, user) {
     if (null != quality.guildPremiumTier) {
       let result = flag;
       if (!flag) {
-        result = require(4266) /* getGuildTierFromGuild */.isGuildBoostedAtLeast(arg2, quality.guildPremiumTier);
-        const obj3 = require(4266) /* getGuildTierFromGuild */;
+        result = getGuildTierFromGuild.isGuildBoostedAtLeast(arg2, quality.guildPremiumTier);
+        const obj3 = getGuildTierFromGuild;
       }
       tmp7 = result;
     }

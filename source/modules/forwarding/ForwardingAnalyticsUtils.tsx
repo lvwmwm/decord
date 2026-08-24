@@ -1,63 +1,52 @@
-// Module ID: 9077
-// Function ID: 9078
+// Module ID: 9114
+// Function ID: 9115
 // Name: trackForwardStart
-// Dependencies: [19, 1391, 676, 698, 5042, 12, 2]
+// Dependencies: [19, 1391, 676, 698, 5047, 12, 2]
 // Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart, useTrackForwardAddRecipientOnce, useTrackForwardEditContextMessageOnce, useTrackForwardEditSearchOnce
 
-// Module 9077 (trackForwardStart)
-import noop from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { AnalyticEvents } from "ME";
+// Module 9114 (trackForwardStart)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 5047 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/forwarding/ForwardingAnalyticsUtils.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/forwarding/ForwardingAnalyticsUtils.tsx");
 
 export const trackForwardStart = function trackForwardStart(channel_id, id, source) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { channel_id, message_id: id, source };
   obj.track(AnalyticEvents.FORWARD_MESSAGE_STARTED, obj);
 };
 export const trackForwardCancel = function trackForwardCancel(arg0) {
-  let channelId;
-  let messageId;
-  let numDestinationChanges;
-  let numQueryChanges;
   ({ channelId, messageId, numDestinationChanges, numQueryChanges } = arg0);
-  importDefault(698).track(AnalyticEvents.FORWARD_MESSAGE_CANCELLED, { channel_id: channelId, message_id: messageId, num_destination_changes: numDestinationChanges, num_query_changes: numQueryChanges });
+  expandEventPropertiesDefault.track(AnalyticEvents.FORWARD_MESSAGE_CANCELLED, { channel_id: channelId, message_id: messageId, num_destination_changes: numDestinationChanges, num_query_changes: numQueryChanges });
 };
 export const trackForwardSent = function trackForwardSent(arg0) {
-  let anyDestinationHasSlowmode;
-  let channelId;
-  let hasContextMessage;
-  let hasError;
-  let messageId;
-  let numDestinationChanges;
-  let numDestinations;
-  let numQueryChanges;
-  let source;
   ({ channelId, messageId } = arg0);
   ({ hasError, hasContextMessage, numDestinations, numDestinationChanges, numQueryChanges, anyDestinationHasSlowmode, source } = arg0);
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj.track(AnalyticEvents.FORWARD_MESSAGE_SENT, { channel_id: channelId, message_id: messageId, has_error: hasError, has_context_message: hasContextMessage, num_destinations: numDestinations, num_destination_changes: numDestinationChanges, num_query_changes: numQueryChanges, any_destination_has_slowmode: anyDestinationHasSlowmode });
   if ("message-shortcut" === source) {
     channel = channel.getChannel(channelId);
     obj = { action: "forward", original_message_id: null };
     obj[1] = messageId;
     const tmp13 = require;
-    const tmpResult = importDefault(698);
+    const tmpResult = expandEventPropertiesDefault;
     let guild_id;
     if (channel != null) {
       guild_id = channel.guild_id;
     }
-    const merged = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guild_id));
-    const obj5 = require(5042) /* collectGuildAnalyticsMetadata */;
-    const merged1 = Object.assign(tmp13(5042).collectChannelAnalyticsMetadata(channel));
+    const merged = Object.assign(collectGuildAnalyticsMetadata.collectGuildAnalyticsMetadata(guild_id));
+    const obj5 = collectGuildAnalyticsMetadata;
+    const merged1 = Object.assign(tmp13(5047).collectChannelAnalyticsMetadata(channel));
     tmpResult.track(AnalyticEvents.MESSAGE_SHORTCUT_ACTION_SENT, obj);
-    const tmp13Result = tmp13(5042);
+    const tmp13Result = tmp13(5047);
   }
 };
 export const trackForwardCopyLink = function trackForwardCopyLink(channel_id, id) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { channel_id, message_id: id };
   obj.track(AnalyticEvents.FORWARD_COPY_LINK, obj);
 };

@@ -1,28 +1,30 @@
-// Module ID: 4241
-// Function ID: 4242
+// Module ID: 4245
+// Function ID: 4246
 // Name: defaultStatesAreEqual
-// Dependencies: [700, 4242, 705, 2]
+// Dependencies: [700, 4246, 705, 2]
 // Exports: createZustandStore
 
-// Module 4241 (defaultStatesAreEqual)
+// Module 4245 (defaultStatesAreEqual)
+import set from "set" /* 2 */;
+
 function defaultStatesAreEqual(arg0, arg1) {
   return arg0 === arg1;
 }
-const result = require("batchUpdates").fileFinishedImporting("lib/ZustandStore.tsx");
+const result = set.fileFinishedImporting("lib/ZustandStore.tsx");
 
 export const createZustandStore = function createZustandStore(arg0) {
   const _require = arg0;
   let obj = _require(700);
-  const dependencyMap = obj.createWithEqualityFn(_require(4242).subscribeWithSelector((arg0, arg1, arg2) => {
+  dependencyMap = obj.createWithEqualityFn(_require(4246).subscribeWithSelector((arg0, arg1, arg2) => {
     let callback = arg0;
     return callback((arg0) => {
       const callback = arg0;
-      return callback(outer1_1[2]).batchUpdates(() => callback(callback));
+      return callback(closure_1_1[2]).batchUpdates(() => callback(callback));
     }, arg1, arg2);
   }));
   function setState(arg0) {
     const callback = arg0;
-    callback(store[2]).batchUpdates(() => outer1_1.setState(initialState));
+    callback(store[2]).batchUpdates(() => closure_1_1.setState(initialState));
   }
   obj = {
     useState(arg0) {
@@ -41,7 +43,7 @@ export const createZustandStore = function createZustandStore(arg0) {
       return tmp2;
     },
     useField(blocklist) {
-      let closure_0 = blocklist;
+      closure_0 = blocklist;
       let tmp = arg1;
       if (arg1 === undefined) {
         tmp = setState;
@@ -63,7 +65,7 @@ export const createZustandStore = function createZustandStore(arg0) {
       if (typeof setState !== "function") {
         HermesBuiltin.throwTypeError();
       }
-      callback(store[2]).batchUpdates(() => outer1_1.setState(initialState));
+      callback(store[2]).batchUpdates(() => closure_1_1.setState(initialState));
     }
   };
   return obj;

@@ -1,25 +1,25 @@
-// Module ID: 7217
-// Function ID: 7218
+// Module ID: 7255
+// Function ID: 7256
 // Name: useIsCreatorMonetizationEnabledGuild
 // Dependencies: [1910, 676, 589, 2]
 // Exports: default, isCreatorMonetizationEnabledGuild
 
-// Module 7217 (useIsCreatorMonetizationEnabledGuild)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GuildFeatures } from "ME";
+// Module 7255 (useIsCreatorMonetizationEnabledGuild)
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/creator_monetization_eligibility/useIsCreatorMonetizationEnabledGuild.tsx");
+const result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/useIsCreatorMonetizationEnabledGuild.tsx");
 
 export default function useIsCreatorMonetizationEnabledGuild(arg0) {
   const _require = arg0;
-  const items = [createGuildRecordFromRust];
+  const items = [closure_2];
   return _require(589).useStateFromStores(items, () => {
-    const guild = outer1_2.getGuild(closure_0);
+    const guild = closure_1_2.getGuild(closure_0);
     let tmp2 = null != guild;
     if (tmp2) {
       const features = guild.features;
-      const hasItem = features.has(outer1_3.CREATOR_MONETIZABLE_DISABLED);
+      const hasItem = features.has(closure_1_3.CREATOR_MONETIZABLE_DISABLED);
       let tmp5 = !hasItem;
       if (!hasItem) {
         const features2 = guild.features;

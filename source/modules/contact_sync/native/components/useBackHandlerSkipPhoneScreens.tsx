@@ -1,25 +1,29 @@
-// Module ID: 11868
-// Function ID: 11869
+// Module ID: 11917
+// Function ID: 11918
 // Name: useBackHandlerSkipPhoneScreens
-// Dependencies: [17, 11851, 6318, 2]
+// Dependencies: [17, 11900, 6349, 2]
 // Exports: default, useBackHandlerMinimizeApp
 
-// Module 11868 (useBackHandlerSkipPhoneScreens)
-import { NativeModules } from "get ActivityIndicator";
-import { ContactSyncScenes } from "ContactSyncLandingPage";
+// Module 11917 (useBackHandlerSkipPhoneScreens)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6349 */;
+import ContactSyncLandingPage from "ContactSyncLandingPage" /* 11900 */;
 
-const result = require("useNavigatorBackPressHandler").fileFinishedImporting("modules/contact_sync/native/components/useBackHandlerSkipPhoneScreens.tsx");
+const NativeModules = get_ActivityIndicator.NativeModules;
+const ContactSyncScenes = ContactSyncLandingPage.ContactSyncScenes;
+const result = set.fileFinishedImporting("modules/contact_sync/native/components/useBackHandlerSkipPhoneScreens.tsx");
 
 export default function useBackHandlerSkipPhoneScreens(arg0, arg1) {
   const _require = arg0;
-  const dependencyMap = arg1;
-  _require(6318).useNavigatorBackPressHandler(() => {
+  dependencyMap = arg1;
+  _require(6349).useNavigatorBackPressHandler(() => {
     if (null != closure_1) {
       tmp();
     } else {
       let arr = state;
       const items = [, , ];
-      ({ ADD_PHONE: arr2[0], VERIFY_PHONE: arr2[1], VERIFY_PASSWORD: arr2[2] } = outer1_3);
+      ({ ADD_PHONE: arr2[0], VERIFY_PHONE: arr2[1], VERIFY_PASSWORD: arr2[2] } = closure_1_3);
       const routes = state.getState().routes;
       if (routes.length <= 2) {
         arr = arr.pop();
@@ -31,7 +35,7 @@ export default function useBackHandlerSkipPhoneScreens(arg0, arg1) {
   });
 };
 export const useBackHandlerMinimizeApp = function useBackHandlerMinimizeApp() {
-  require(6318) /* useNavigatorBackPressHandler */.useNavigatorBackPressHandler(() => {
+  useNavigatorBackPressHandler.useNavigatorBackPressHandler(() => {
     MinimizeApp = MinimizeApp.MinimizeApp;
     MinimizeApp.minimizeApp();
     return true;

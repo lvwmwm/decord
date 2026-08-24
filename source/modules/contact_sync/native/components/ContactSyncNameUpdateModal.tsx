@@ -1,22 +1,25 @@
-// Module ID: 14202
-// Function ID: 14203
+// Module ID: 14270
+// Function ID: 14271
 // Name: onClose
-// Dependencies: [5, 32, 19, 17, 11851, 21, 5260, 4661, 712, 6370, 11853, 11857, 4094, 1236, 8555, 11870, 6314, 6312, 2]
+// Dependencies: [5, 32, 19, 17, 11900, 21, 5265, 4668, 712, 6401, 11902, 11906, 4097, 1236, 8594, 11919, 6345, 6343, 2]
 // Exports: default
 
-// Module 14202 (onClose)
-import jsxProd from "jsxProd";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "NavigationStack";
-import { ContactSyncScenes } from "ContactSyncLandingPage";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import HeaderBackImage from "HeaderBackImage";
+// Module 14270 (onClose)
+import ThemesDefault from "Themes" /* 712 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import NavigationStack from "NavigationStack" /* 6343 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { ContactSyncScenes } from "ContactSyncLandingPage" /* 11900 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import HeaderBackImage from "HeaderBackImage" /* 6345 */;
 
-const require = arg1;
+require = arg1;
 function onClose() {
-  let arr = importDefault(5260);
+  let arr = _modDef5265;
   arr = arr.pop();
 }
 function ContactSyncNameInputScreen() {
@@ -32,39 +35,39 @@ function ContactSyncNameInputScreen() {
   }
   function _onNext() {
     const self = this;
-    const tmp = outer1_3((arg0) => {
-      let closure_0 = arg0;
-      let c2 = 0;
-      let c4 = 0;
-      let c3 = 0;
+    const tmp = closure_1_3((arg0) => {
+      closure_0 = arg0;
+      c2 = 0;
+      c4 = 0;
+      c3 = 0;
       return (function*(arg0) {
-        let closure_1 = tmp3;
+        closure_1 = tmp3;
         callback(true);
-        let c3 = 1;
-        yield outer1_1(11857).updateName(callback);
+        c3 = 1;
+        yield closure_1_1(11906).updateName(callback);
         if (1 === tmp7) {
           c3 = 0;
-          const obj1 = outer1_1(4094);
+          obj1 = closure_1_1(4097);
           const obj2 = { key: "ERROR_GENERIC_TITLE", content: null, icon: null };
           const intl = callback(1236).intl;
           obj2[1] = intl.string(callback(1236).t.R0RpRX);
-          obj2[2] = outer1_1(8555);
+          obj2[2] = closure_1_1(8594);
           obj1.open(obj2);
           callback(false);
-          let c4 = 3;
+          c4 = 3;
         } else if (arg0 === 1) {
           c4 = 3;
           throw arg1;
         } else if (arg0 !== 2) {
           callback(false);
-          outer1_9();
+          closure_1_9();
           c3 = 0;
         }
         c3 = 0;
         return arg1;
       })();
     });
-    const _onNext = tmp;
+    closure_2 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -77,7 +80,7 @@ function ContactSyncNameInputScreen() {
   const contactSyncAccount = obj.useContactSyncAccount();
   const tmp3 = callback(React.useState(false), 2);
   _require = tmp3[1];
-  obj = { style: createCacheKey().container, children: null };
+  obj = { style: callback2().container, children: null };
   obj = {
     onNext,
     onRemoveName(arg0) {
@@ -87,7 +90,7 @@ function ContactSyncNameInputScreen() {
     initialName: null
   };
   let str;
-  let tmp = createCacheKey();
+  let tmp = callback2();
   const tmp5 = View;
   if (contactSyncAccount != null) {
     str = contactSyncAccount.name;
@@ -109,9 +112,9 @@ function ContactSyncNameInputScreen() {
   }} loading={tmp3[0]} initialName={null} />;
 }
 createCacheKey = { container: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32 };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_10 = createCacheKey.createStyles(createCacheKey);
 let obj1 = {};
 let obj2 = {
   render() {
@@ -124,8 +127,8 @@ let obj2 = {
 };
 obj2[3] = HeaderBackImage.getHeaderCloseButton(onClose);
 obj1[ContactSyncScenes.NAME_INPUT] = obj2;
-const result = require("noop").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameUpdateModal.tsx");
+const result = require("set").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameUpdateModal.tsx");
 
 export default function ContactSyncNameUpdateModal() {
-  return jsx(require(6312) /* NavigationStack */.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj1 });
+  return jsx(NavigationStack.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj1 });
 };

@@ -1,9 +1,12 @@
-// Module ID: 7172
-// Function ID: 7173
+// Module ID: 7210
+// Function ID: 7211
 // Name: showSimpleActionSheet
-// Dependencies: [2, 7173]
+// Dependencies: [2, 7211]
 
-// Module 7172 (showSimpleActionSheet)
-const result = require("set").fileFinishedImporting("modules/action_sheet/native/showSimpleActionSheet.tsx");
+// Module 7210 (showSimpleActionSheet)
+import set from "set" /* 2 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 7211 */;
 
-export const showSimpleActionSheet = require("showSimpleActionSheet").showSimpleActionSheet;
+const result = set.fileFinishedImporting("modules/action_sheet/native/showSimpleActionSheet.tsx");
+
+export const showSimpleActionSheet = showSimpleActionSheet.showSimpleActionSheet;

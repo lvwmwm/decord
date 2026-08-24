@@ -1,37 +1,34 @@
-// Module ID: 13457
-// Function ID: 13458
+// Module ID: 13515
+// Function ID: 13516
 // Name: IconPill
-// Dependencies: [19, 17, 505, 21, 4661, 712, 4747, 8115, 2]
+// Dependencies: [19, 17, 505, 21, 4668, 712, 4752, 8154, 2]
 // Exports: default
 
-// Module 13457 (IconPill)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13515 (IconPill)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import IconSizesDefault from "IconSizes" /* 4752 */;
+import _modDef8154 from "module_8154" /* 8154 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 createCacheKey = { pillContainer: null, pillIcon: null, pillText: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.md, height: 20, paddingHorizontal: 8 };
+createCacheKey = { flexDirection: "row", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.md, height: 20, paddingHorizontal: 8 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { tintColor: require("Themes").colors.TEXT_SUBTLE, marginRight: 4 };
-const obj1 = { tintColor: require("Themes").colors.TEXT_SUBTLE, marginRight: 4 };
-createCacheKey[2] = { fontFamily: require("sum").Fonts.PRIMARY_NORMAL, color: require("Themes").colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj2 = { fontFamily: require("sum").Fonts.PRIMARY_NORMAL, color: require("Themes").colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18 };
-const result = require("sum").fileFinishedImporting("design/void/IconPill/native/IconPill.tsx");
+createCacheKey[1] = { tintColor: ThemesDefault.colors.TEXT_SUBTLE, marginRight: 4 };
+const obj1 = { tintColor: ThemesDefault.colors.TEXT_SUBTLE, marginRight: 4 };
+createCacheKey[2] = { fontFamily: require("sum").Fonts.PRIMARY_NORMAL, color: ThemesDefault.colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18 };
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const obj2 = { fontFamily: require("sum").Fonts.PRIMARY_NORMAL, color: ThemesDefault.colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18 };
+const result = require("set").fileFinishedImporting("design/void/IconPill/native/IconPill.tsx");
 
 export default function IconPill(IconComponent) {
-  let accessibilityLabel;
-  let source;
-  let style;
-  let text;
-  let textStyle;
   IconComponent = IconComponent.IconComponent;
   ({ text, source, style, textStyle, accessibilityLabel } = IconComponent);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { style: items, children: null };
   items = [tmp.pillContainer, style];
   if (null != IconComponent) {
@@ -42,15 +39,15 @@ export default function IconPill(IconComponent) {
   } else {
     obj = { source: null, size: null, style: null };
     obj[0] = source;
-    obj[1] = importDefault(4747).Sizes.EXTRA_SMALL;
+    obj[1] = IconSizesDefault.Sizes.EXTRA_SMALL;
     obj[2] = tmp.pillIcon;
     tmp8 = callback;
-    tmp9 = callback(importDefault(4747), obj);
-    const tmp7 = importDefault(4747);
+    tmp9 = callback(IconSizesDefault, obj);
+    const tmp7 = IconSizesDefault;
   }
   const items1 = [tmp9, ];
   const items2 = [tmp.pillText, textStyle];
-  items1[1] = tmp8(importDefault(8115), { style: items2, numberOfLines: 1, accessibilityLabel, children: text });
+  items1[1] = tmp8(_modDef8154, { style: items2, numberOfLines: 1, accessibilityLabel, children: text });
   obj[1] = items1;
   return closure_4(View, obj);
 };

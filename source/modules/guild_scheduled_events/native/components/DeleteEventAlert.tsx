@@ -1,27 +1,25 @@
-// Module ID: 8915
-// Function ID: 8916
+// Module ID: 8952
+// Function ID: 8953
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 4370, 21, 4661, 589, 8783, 4342, 4660, 1236, 4734, 2]
+// Dependencies: [5, 19, 4374, 21, 4668, 589, 8820, 4346, 4667, 1236, 4739, 2]
 // Exports: default
 
-// Module 8915 (DeleteEventAlert)
-import initialize from "initialize";
-import "noop";
-import scheduledEventSort from "scheduledEventSort";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8952 (DeleteEventAlert)
+import noopAll from "noop" /* 19 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "scheduledEventSort" /* 4374 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
+noopAll;
 let closure_6 = createCacheKey.createStyles({ contentText: { textAlign: "center" } });
-const result = require("scheduledEventSort").fileFinishedImporting("modules/guild_scheduled_events/native/components/DeleteEventAlert.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/native/components/DeleteEventAlert.tsx");
 
 export default function DeleteEventAlert(eventException) {
-  let importDefault;
-  let recurrenceId;
-  let require;
   ({ eventId: require, guildId: importDefault, recurrenceId } = eventException);
   eventException = eventException.eventException;
-  let c4;
+  closure_4 = undefined;
   function _handleConfirmClick() {
     const self = this;
     const tmp = eventException(function*() {
@@ -36,7 +34,7 @@ export default function DeleteEventAlert(eventException) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -51,19 +49,19 @@ export default function DeleteEventAlert(eventException) {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_0 = tmp4;
-              const obj8 = v0(8783);
-              if (outer1_4) {
+              closure_0 = tmp4;
+              const obj8 = v0(8820);
+              if (closure_1_4) {
                 v0 = 2;
                 dependencyMap = 1;
-                let obj1 = { value: null, done: false };
-                obj1[0] = obj8.deleteRecurrence(v0, outer1_0, dependencyMap, outer1_3);
+                obj1 = { value: null, done: false };
+                obj1[0] = obj8.deleteRecurrence(v0, closure_1_0, dependencyMap, closure_1_3);
                 return obj1;
               } else {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = obj8.deleteGuildEvent(outer1_0, v0);
+                obj2[0] = obj8.deleteGuildEvent(closure_1_0, v0);
                 return obj2;
               }
             }
@@ -87,10 +85,10 @@ export default function DeleteEventAlert(eventException) {
               obj[0] = arg1;
               return obj;
             }
-            obj1 = v0(4342);
+            obj1 = v0(4346);
             obj1.hideActionSheet();
             dependencyMap = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           dependencyMap = tmp;
@@ -98,7 +96,7 @@ export default function DeleteEventAlert(eventException) {
         }
       }
     });
-    const _handleConfirmClick = tmp;
+    closure_5 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -108,13 +106,13 @@ export default function DeleteEventAlert(eventException) {
     return applyArgumentsResult;
   }
   let obj = require(recurrenceId[5]);
-  const items = [c4];
-  const stateFromStores = obj.useStateFromStores(items, () => _undefined.getGuildScheduledEvent(closure_0));
+  const items = [closure_4];
+  const stateFromStores = obj.useStateFromStores(items, () => guildScheduledEvent.getGuildScheduledEvent(closure_0));
   let recurrence_rule;
   if (stateFromStores != null) {
     recurrence_rule = stateFromStores.recurrence_rule;
   }
-  c4 = tmp7;
+  closure_4 = tmp7;
   const intl = tmp2(tmp3[9]).intl;
   const string = intl.string;
   const t = tmp2(tmp3[9]).t;
@@ -140,7 +138,7 @@ export default function DeleteEventAlert(eventException) {
     }
   }
   obj[2] = tmp8Result;
-  let obj1 = {
+  obj1 = {
     variant: "destructive",
     onPress: function handleConfirmClick() {
       const self = this;

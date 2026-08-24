@@ -1,38 +1,31 @@
-// Module ID: 10225
-// Function ID: 10226
-// Dependencies: [32, 19, 10187, 676, 6951, 21, 4661, 1494, 1629, 12, 698, 6950, 10226, 10230, 7124, 6952, 10231, 5433, 10119, 2]
+// Module ID: 10264
+// Function ID: 10265
+// Dependencies: [32, 19, 10226, 676, 6989, 21, 4668, 1494, 1629, 12, 698, 6988, 10265, 10269, 7162, 6990, 10270, 5438, 10158, 2]
 
-// Module 10225
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "set";
-import PADDING_HORIZONTAL from "PADDING_HORIZONTAL";
-import { AnalyticEvents } from "ME";
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10264
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import PADDING_HORIZONTAL from "PADDING_HORIZONTAL" /* 10226 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_6;
-let unpackModuleId;
 const require = arg1;
 let c4 = importAllResult;
 ({ MIN_MARGIN: c5, STICKER_SIZE: closure_6 } = PADDING_HORIZONTAL);
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
-let closure_12 = createCacheKey.createStyles({ focusedStickerPreviewContainer: { position: "absolute", left: 0, top: 0, height: "100%", width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.85)" }, header: { marginHorizontal: 16, marginVertical: 8, backgroundColor: "transparent", height: "disabled" }, stickers: { paddingHorizontal: 16, marginBottom: 16 }, popoutContainer: { position: "absolute", bottom: 50 } });
+let closure_12 = createCacheKey.createStyles({ focusedStickerPreviewContainer: { position: "absolute", left: 0, top: 0, height: "100%", width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.85)" }, header: { marginHorizontal: 16, marginVertical: 8, backgroundColor: "transparent", height: "create" }, stickers: { paddingHorizontal: 16, marginBottom: 16 }, popoutContainer: { position: "absolute", bottom: 50 } });
 const memoResult = importAllResult.memo(function StickerPackDetailActionSheet(stickerPack) {
-  let c3;
-  let tmp5;
   stickerPack = stickerPack.stickerPack;
   const analyticsPopoutType = stickerPack.analyticsPopoutType;
   const onClose = stickerPack.onClose;
   let callback;
   let first;
-  let closure_5;
-  let closure_6;
+  closure_5 = undefined;
+  closure_6 = undefined;
   let rounded;
-  let closure_8;
+  closure_8 = undefined;
   function onPressSticker(arg0) {
     _undefined(arg0);
   }
@@ -83,7 +76,7 @@ const memoResult = importAllResult.memo(function StickerPackDetailActionSheet(st
     tmp17 = toggleDisplayingPackDetails;
   }
   obj = { scrollable: true, startExpanded: true, handleDisabled: true, header: null, children: null };
-  const obj1 = { children: null };
+  obj1 = { children: null };
   obj[2] = tmp17;
   const items2 = [onPressSticker(analyticsPopoutType(onClose[12]), obj), onPressSticker(stickerPack(onClose[14]).ActionSheetHeaderBar, { variant: "floating" })];
   obj1[0] = items2;
@@ -116,6 +109,6 @@ const memoResult = importAllResult.memo(function StickerPackDetailActionSheet(st
   children[2] = first;
   return closure_11(closure_10, { children });
 });
-const result = require("PADDING_HORIZONTAL").fileFinishedImporting("modules/stickers/native/StickerPackDetailActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/stickers/native/StickerPackDetailActionSheet.tsx");
 
 export default memoResult;

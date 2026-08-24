@@ -1,22 +1,28 @@
-// Module ID: 4545
-// Function ID: 4546
+// Module ID: 4550
+// Function ID: 4551
 // Name: getVoiceStatesForGuild
-// Dependencies: [32, 1394, 1930, 1218, 1391, 1990, 1922, 4542, 676, 4219, 4017, 11, 1306, 12, 589, 1913, 709, 2]
+// Dependencies: [32, 1394, 1930, 1218, 1391, 1991, 1922, 4547, 676, 4223, 4020, 11, 1306, 12, 589, 1913, 709, 2]
 // Exports: getComparator, makeMemberAndComparator
 
-// Module 4545 (getVoiceStatesForGuild)
-import _slicedToArray from "_slicedToArray";
-import initializeFromUserSettings from "initializeFromUserSettings";
-import createdAt from "createdAt";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import updateVoiceState from "updateVoiceState";
-import { ME } from "ME";
-import { Store } from "initialize";
+// Module 4550 (getVoiceStatesForGuild)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
+import version2 from "version" /* 4020 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "initializeFromUserSettings" /* 1394 */;
+import closure_5 from "createdAt" /* 1930 */;
+import closure_6 from "fetchFingerprint" /* 1218 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_10 from "updateVoiceState" /* 4547 */;
+import { ME } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function getVoiceStatesForGuild(guildId) {
   let tmp = dependencyMap[guildId];
   if (null == tmp) {
@@ -27,7 +33,7 @@ function getVoiceStatesForGuild(guildId) {
     const _Set = Set;
     const set = new Set();
     obj[0] = set;
-    const secondaryIndexMap = new require(4017) /* version */.SecondaryIndexMap((voiceState) => {
+    const secondaryIndexMap = new version2.SecondaryIndexMap((voiceState) => {
       const channelId = voiceState.voiceState.channelId;
       if (null != channelId) {
         const items = [channelId];
@@ -52,7 +58,7 @@ function makeSortedVoiceState(voiceState, guildId, arr) {
     let obj = { id: null, username: "...", discriminator: null };
     obj[0] = arr;
     obj[2] = arr.slice(-5, -1);
-    tmp3 = new createdAt(obj);
+    tmp3 = new closure_5(obj);
   }
   const member = store.getMember(guildId, tmp3.id);
   let nick;
@@ -60,8 +66,8 @@ function makeSortedVoiceState(voiceState, guildId, arr) {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = importDefault(4219).getName(tmp3);
-    const obj2 = importDefault(4219);
+    nick = nameFromUserDefault.getName(tmp3);
+    const obj2 = nameFromUserDefault;
   }
   let str = "\u0001";
   if (voiceState.selfStream) {
@@ -88,10 +94,10 @@ function makeSortedVoiceState(voiceState, guildId, arr) {
   return obj;
 }
 function handleUpdateUsers() {
-  return importDefault(12).reduce(closure_13, (arg0, updateUsers) => updateUsers.updateUsers() || arg0, false);
+  return applyDefault.reduce(closure_13, (arg0, updateUsers) => updateUsers.updateUsers() || arg0, false);
 }
 function handleFavoritesChange() {
-  let c14 = null;
+  c14 = null;
   return null != c14;
 }
 function handleFavoriteChannelAppeared() {
@@ -155,7 +161,7 @@ prototype["updateVoiceState"] = function updateVoiceState(id) {
             nick = member.nick;
           }
           if (nick == null) {
-            let obj = importDefault(4219);
+            let obj = nameFromUserDefault;
             nick = obj.getName(user);
           }
           const _voiceStates2 = self._voiceStates;
@@ -222,7 +228,7 @@ prototype["updateMember"] = function updateMember(arg0) {
           nick2 = member.nick;
         }
         if (nick2 == null) {
-          let obj = importDefault(4219);
+          let obj = nameFromUserDefault;
           nick2 = obj.getName(user);
         }
         let str = "\u0001";
@@ -255,13 +261,13 @@ prototype["updateUsers"] = function updateUsers() {
     let _voiceStates = this._voiceStates;
     const values = _voiceStates.values();
     reduced = values.reduce((arg0, user) => {
-      user = outer1_9.getUser(user.user.id);
+      user = closure_1_9.getUser(user.user.id);
       let flag = arg0;
       if (null != user) {
         flag = arg0;
         if (user.user !== user) {
           const _voiceStates = self._voiceStates;
-          const result = _voiceStates.set(user.id, outer1_16(user.voiceState, self.guildId, user.id, user));
+          const result = _voiceStates.set(user.id, closure_1_16(user.voiceState, self.guildId, user.id, user));
           flag = true;
         }
       }
@@ -307,32 +313,33 @@ prototype["processPending"] = function processPending() {
     const item = _pending.forEach((arg0) => self.updateVoiceState(arg0));
   }
 };
+const Store = initializeDefault.Store;
 class SortedVoiceStateStore extends Store {
 }
 const prototype2 = SortedVoiceStateStore.prototype;
 prototype2["initialize"] = function initialize() {
-  let closure_13 = {};
-  let c14 = null;
+  closure_13 = {};
+  c14 = null;
   const allVoiceStates = store2.getAllVoiceStates();
-  const keys = importDefault(11).keys(allVoiceStates);
+  const keys = DISCORD_EPOCHDefault.keys(allVoiceStates);
   const item = keys.forEach((arg0) => {
-    const allVoiceStates = arg0;
+    allVoiceStates = arg0;
     const keys = Object.keys(allVoiceStates[arg0]);
     const item = keys.forEach((arg0) => {
       let tmp = callback;
       if (callback == null) {
-        tmp = outer1_11;
+        tmp = closure_1_11;
       }
-      let obj = outer1_13[tmp];
+      let obj = closure_1_13[tmp];
       if (null == obj) {
-        if (typeof outer1_17 !== "function") {
+        if (typeof closure_1_17 !== "function") {
           HermesBuiltin.throwTypeError();
         }
-        obj = Object.create(outer1_17.prototype);
+        obj = Object.create(closure_1_17.prototype);
         const _Set = Set;
         const set = new Set();
         obj[0] = set;
-        const secondaryIndexMap = new callback(outer1_2[10]).SecondaryIndexMap((voiceState) => {
+        const secondaryIndexMap = new callback(closure_1_2[10]).SecondaryIndexMap((voiceState) => {
           const channelId = voiceState.voiceState.channelId;
           if (null != channelId) {
             const items = [channelId];
@@ -344,22 +351,22 @@ prototype2["initialize"] = function initialize() {
         }, (comparator) => comparator.comparator);
         obj[1] = secondaryIndexMap;
         obj.guildId = tmp;
-        outer1_13[tmp] = obj;
-        const tmp16 = outer1_17;
+        closure_1_13[tmp] = obj;
+        const tmp16 = closure_1_17;
       }
       obj.updateVoiceState(arg0);
     });
   });
-  this.waitFor(fetchFingerprint, ensureGuildLoaded, initializeFromUserSettings, trackCommunicationDisabled, mergeGuildAvatar, store2);
-  const items = [mergeGuildAvatar];
+  this.waitFor(closure_6, closure_7, closure_4, closure_8, closure_9, store2);
+  const items = [closure_9];
   this.syncWith(items, handleUpdateUsers);
-  const items1 = [initializeFromUserSettings];
+  const items1 = [closure_4];
   this.syncWith(items1, handleFavoritesChange);
-  const items2 = [ensureGuildLoaded];
+  const items2 = [closure_7];
   this.syncWith(items2, handleFavoriteChannelAppeared);
 };
 prototype2["getVoiceStates"] = function getVoiceStates(guildId) {
-  let obj = require(1913) /* getFavoritesAwareGuildName */;
+  let obj = getFavoritesAwareGuildName;
   if (obj.isFavoritesGuildId(guildId)) {
     let voiceStates = (function getFavoritesVoiceStates() {
       if (null != result) {
@@ -459,7 +466,7 @@ prototype2["getVoiceStates"] = function getVoiceStates(guildId) {
       const _Set = Set;
       const set = new Set();
       obj[0] = set;
-      const secondaryIndexMap = new require(4017) /* version */.SecondaryIndexMap((voiceState) => {
+      const secondaryIndexMap = new version2.SecondaryIndexMap((voiceState) => {
         const channelId = voiceState.voiceState.channelId;
         if (null != channelId) {
           const items = [channelId];
@@ -496,7 +503,7 @@ prototype2["getVoiceStatesForChannel"] = function getVoiceStatesForChannel(getGu
     const _Set = Set;
     const set = new Set();
     obj[0] = set;
-    const secondaryIndexMap = new require(4017) /* version */.SecondaryIndexMap((voiceState) => {
+    const secondaryIndexMap = new version2.SecondaryIndexMap((voiceState) => {
       const channelId = voiceState.voiceState.channelId;
       if (null != channelId) {
         const items = [channelId];
@@ -527,7 +534,7 @@ prototype2["getVoiceStatesForChannelAlt"] = function getVoiceStatesForChannelAlt
     const _Set = Set;
     const set = new Set();
     obj[0] = set;
-    const secondaryIndexMap = new require(4017) /* version */.SecondaryIndexMap((voiceState) => {
+    const secondaryIndexMap = new version2.SecondaryIndexMap((voiceState) => {
       const channelId = voiceState.voiceState.channelId;
       if (null != channelId) {
         const items = [channelId];
@@ -561,7 +568,7 @@ prototype2["countVoiceStatesForChannel"] = function countVoiceStatesForChannel(a
       const _Set = Set;
       const set = new Set();
       obj[0] = set;
-      const secondaryIndexMap = new require(4017) /* version */.SecondaryIndexMap((voiceState) => {
+      const secondaryIndexMap = new version2.SecondaryIndexMap((voiceState) => {
         const channelId = voiceState.voiceState.channelId;
         if (null != channelId) {
           const items = [channelId];
@@ -595,7 +602,7 @@ prototype2["getVoiceStateVersion"] = function getVoiceStateVersion(arg0) {
     const _Set = Set;
     const set = new Set();
     obj[0] = set;
-    const secondaryIndexMap = new require(4017) /* version */.SecondaryIndexMap((voiceState) => {
+    const secondaryIndexMap = new version2.SecondaryIndexMap((voiceState) => {
       const channelId = voiceState.voiceState.channelId;
       if (null != channelId) {
         const items = [channelId];
@@ -613,34 +620,34 @@ prototype2["getVoiceStateVersion"] = function getVoiceStateVersion(arg0) {
   return obj.getVersion();
 };
 SortedVoiceStateStore.displayName = "SortedVoiceStateStore";
-const sortedVoiceStateStore = new SortedVoiceStateStore(require("dispatcher"), {
+const sortedVoiceStateStore = new SortedVoiceStateStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_13 = {};
-    let c14 = null;
+    closure_13 = {};
+    c14 = null;
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize() {
-    let closure_13 = {};
-    let c14 = null;
+    closure_13 = {};
+    c14 = null;
     let allVoiceStates = store2.getAllVoiceStates();
-    let keys = importDefault(11).keys(allVoiceStates);
+    let keys = DISCORD_EPOCHDefault.keys(allVoiceStates);
     let item = keys.forEach((arg0) => {
-      const allVoiceStates = arg0;
+      allVoiceStates = arg0;
       const keys = Object.keys(allVoiceStates[arg0]);
       const item = keys.forEach((arg0) => {
         let tmp = callback;
         if (callback == null) {
-          tmp = outer1_11;
+          tmp = closure_1_11;
         }
-        let obj = outer1_13[tmp];
+        let obj = closure_1_13[tmp];
         if (null == obj) {
-          if (typeof outer1_17 !== "function") {
+          if (typeof closure_1_17 !== "function") {
             HermesBuiltin.throwTypeError();
           }
-          obj = Object.create(outer1_17.prototype);
+          obj = Object.create(closure_1_17.prototype);
           const _Set = Set;
           const set = new Set();
           obj[0] = set;
-          const secondaryIndexMap = new callback(outer1_2[10]).SecondaryIndexMap((voiceState) => {
+          const secondaryIndexMap = new callback(closure_1_2[10]).SecondaryIndexMap((voiceState) => {
             const channelId = voiceState.voiceState.channelId;
             if (null != channelId) {
               const items = [channelId];
@@ -652,8 +659,8 @@ const sortedVoiceStateStore = new SortedVoiceStateStore(require("dispatcher"), {
           }, (comparator) => comparator.comparator);
           obj[1] = secondaryIndexMap;
           obj.guildId = tmp;
-          outer1_13[tmp] = obj;
-          const tmp16 = outer1_17;
+          closure_1_13[tmp] = obj;
+          const tmp16 = closure_1_17;
         }
         obj.updateVoiceState(arg0);
       });
@@ -676,7 +683,7 @@ const sortedVoiceStateStore = new SortedVoiceStateStore(require("dispatcher"), {
         const _Set = Set;
         const set = new Set();
         obj[0] = set;
-        const secondaryIndexMap = new require(4017) /* version */.SecondaryIndexMap((voiceState) => {
+        const secondaryIndexMap = new version2.SecondaryIndexMap((voiceState) => {
           const channelId = voiceState.voiceState.channelId;
           if (null != channelId) {
             const items = [channelId];
@@ -740,7 +747,7 @@ const sortedVoiceStateStore = new SortedVoiceStateStore(require("dispatcher"), {
       const _Set = Set;
       const set = new Set();
       obj[0] = set;
-      const secondaryIndexMap = new require(4017) /* version */.SecondaryIndexMap((voiceState) => {
+      const secondaryIndexMap = new version2.SecondaryIndexMap((voiceState) => {
         const channelId = voiceState.voiceState.channelId;
         if (null != channelId) {
           const items = [channelId];
@@ -806,7 +813,7 @@ const sortedVoiceStateStore = new SortedVoiceStateStore(require("dispatcher"), {
     return flag;
   }
 });
-let result = require("createdAt").fileFinishedImporting("stores/views/SortedVoiceStateStore.tsx");
+let result = require("set").fileFinishedImporting("stores/views/SortedVoiceStateStore.tsx");
 
 export default sortedVoiceStateStore;
 export const NO_VOICE_STATES = frozen;
@@ -817,8 +824,8 @@ export const makeMemberAndComparator = function makeMemberAndComparator(selfStre
     nick = member.nick;
   }
   if (nick == null) {
-    nick = importDefault(4219).getName(arg2);
-    const obj2 = importDefault(4219);
+    nick = nameFromUserDefault.getName(arg2);
+    const obj2 = nameFromUserDefault;
   }
   let str = "\u0001";
   if (selfStream.selfStream) {

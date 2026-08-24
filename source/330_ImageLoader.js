@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 330 (ImageLoader)
+import getAll from "get" /* 30 */;
 
-export default require("get").getEnforcing("ImageLoader");
+
+export default getAll.getEnforcing("ImageLoader");

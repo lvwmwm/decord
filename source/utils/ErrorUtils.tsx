@@ -1,10 +1,13 @@
-// Module ID: 7731
-// Function ID: 7732
+// Module ID: 7769
+// Function ID: 7770
 // Name: getUnderlyingIOSExceptionRecursively
-// Dependencies: [7732, 2]
+// Dependencies: [7770, 2]
 // Exports: getUnderlyingIOSError, serializeError
 
-// Module 7731 (getUnderlyingIOSExceptionRecursively)
+// Module 7769 (getUnderlyingIOSExceptionRecursively)
+import set from "set" /* 2 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 7770 */;
+
 function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
   if (null != NSUnderlyingError.userInfo.NSUnderlyingError) {
     const tmp2 = getUnderlyingIOSExceptionRecursively(NSUnderlyingError.userInfo.NSUnderlyingError);
@@ -14,11 +17,11 @@ function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
   }
   return NSUnderlyingError.userInfo.NSLocalizedDescription;
 }
-const result = require("set").fileFinishedImporting("utils/ErrorUtils.tsx");
+const result = set.fileFinishedImporting("utils/ErrorUtils.tsx");
 
-export const getUnderlyingIOSError = function getUnderlyingIOSError(c11) {
+export const getUnderlyingIOSError = function getUnderlyingIOSError(closure_8) {
   try {
-    let tmp3 = getUnderlyingIOSExceptionRecursively(c11);
+    let tmp3 = getUnderlyingIOSExceptionRecursively(closure_8);
     if (tmp3 == null) {
       tmp3 = null;
     }
@@ -28,7 +31,7 @@ export const getUnderlyingIOSError = function getUnderlyingIOSError(c11) {
   }
 };
 export const serializeError = function serializeError(arg0) {
-  let error = arg0;
+  error = arg0;
   if (!Boolean(arg0)) {
     const _Error = Error;
     error = new Error("unknown error");
@@ -39,5 +42,5 @@ export const serializeError = function serializeError(arg0) {
     const _String = String;
     error1 = new Error(String(error));
   }
-  return JSON.stringify(require(7732) /* BAGGAGE_HEADER_NAME */.normalizeToSize(error1));
+  return JSON.stringify(BAGGAGE_HEADER_NAME.normalizeToSize(error1));
 };

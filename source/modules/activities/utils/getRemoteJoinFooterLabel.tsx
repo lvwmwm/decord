@@ -1,29 +1,32 @@
-// Module ID: 12781
-// Function ID: 12782
+// Module ID: 12836
+// Function ID: 12837
 // Name: getRemoteJoinFooterLabel
 // Dependencies: [676, 1236, 2]
 // Exports: getRemoteJoinFooterLabel
 
-// Module 12781 (getRemoteJoinFooterLabel)
-import { ActivityGamePlatforms } from "ME";
+// Module 12836 (getRemoteJoinFooterLabel)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/utils/getRemoteJoinFooterLabel.tsx");
+const ActivityGamePlatforms = ME.ActivityGamePlatforms;
+const result = set.fileFinishedImporting("modules/activities/utils/getRemoteJoinFooterLabel.tsx");
 
 export const getRemoteJoinFooterLabel = function getRemoteJoinFooterLabel(remoteJoinPlatform) {
   if (ActivityGamePlatforms.DESKTOP === remoteJoinPlatform) {
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    return intl5.string(require(1236) /* getSystemLocale */.t.aqN8U9);
+    const intl5 = getSystemLocale.intl;
+    return intl5.string(getSystemLocale.t.aqN8U9);
   } else if (tmp.IOS === remoteJoinPlatform) {
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    return intl4.string(require(1236) /* getSystemLocale */.t.CyQ5ia);
+    const intl4 = getSystemLocale.intl;
+    return intl4.string(getSystemLocale.t.CyQ5ia);
   } else if (tmp.ANDROID === remoteJoinPlatform) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(require(1236) /* getSystemLocale */.t.fMs6uW);
+    const intl3 = getSystemLocale.intl;
+    return intl3.string(getSystemLocale.t.fMs6uW);
   } else if (tmp.XBOX === remoteJoinPlatform) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(require(1236) /* getSystemLocale */.t.o0hjdt);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(getSystemLocale.t.o0hjdt);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["R/1GpG"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["R/1GpG"]);
   }
 };

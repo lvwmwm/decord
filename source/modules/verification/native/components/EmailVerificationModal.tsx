@@ -1,31 +1,32 @@
-// Module ID: 8562
-// Function ID: 8563
+// Module ID: 8601
+// Function ID: 8602
 // Name: closeModal
-// Dependencies: [32, 19, 1922, 8563, 676, 21, 8561, 503, 6314, 8564, 8567, 8568, 8570, 8573, 8618, 8623, 8625, 589, 7127, 6312, 1236, 2]
+// Dependencies: [32, 19, 1922, 8602, 676, 21, 8600, 503, 6345, 8603, 8606, 8607, 8609, 8612, 8655, 8660, 8662, 589, 7165, 6343, 1236, 2]
 // Exports: default
 
-// Module 8562 (closeModal)
-import _slicedToArray from "_slicedToArray";
-import NavigationStack from "NavigationStack";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { resetChangeEmailStore } from "ChangeEmailFields";
-import { VerificationModalScenes } from "ME";
-import { jsx } from "set";
+// Module 8601 (closeModal)
+import _modDef8600 from "module_8600" /* 8600 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import { resetChangeEmailStore } from "ChangeEmailFields" /* 8602 */;
+import { VerificationModalScenes } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 function closeModal() {
   resetChangeEmailStore();
-  importDefault(8561).close();
+  _modDef8600.close();
 }
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/verification/native/components/EmailVerificationModal.tsx");
+const result = require("set").fileFinishedImporting("modules/verification/native/components/EmailVerificationModal.tsx");
 
 export default function EmailVerificationModal(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  let importDefault;
+  importDefault = undefined;
   let first;
   let callback;
   let obj = isChangeEmail(first[17]);
-  const items = [mergeGuildAvatar];
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let flag;
   if (stateFromStores != null) {

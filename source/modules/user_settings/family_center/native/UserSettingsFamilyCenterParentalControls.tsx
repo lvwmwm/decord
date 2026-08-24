@@ -1,40 +1,35 @@
-// Module ID: 14286
-// Function ID: 14287
+// Module ID: 14354
+// Function ID: 14355
 // Name: FamilyCenterParentalControlsSettings
-// Dependencies: [32, 19, 17, 676, 5297, 21, 4661, 712, 1500, 7139, 7159, 7385, 5364, 14250, 14268, 1236, 2335, 8492, 14287, 14288, 8799, 5298, 6803, 14289, 10096, 11785, 2]
+// Dependencies: [32, 19, 17, 676, 5302, 21, 4668, 712, 1500, 7177, 7197, 7423, 5369, 14318, 14336, 1236, 2336, 8531, 14355, 14356, 8836, 5303, 6840, 14357, 10135, 11834, 2]
 // Exports: default
 
-// Module 14286 (FamilyCenterParentalControlsSettings)
-import _slicedToArray from "_slicedToArray";
-import FamilyCenterParentalControlsDataAndPrivacy from "FamilyCenterParentalControlsDataAndPrivacy";
-import get_ActivityIndicator from "GenericHeaderTitle";
-import { UserSettingsSections } from "ME";
-import { FamilyCenterSubPages } from "items";
-import jsxProd from "maybeFetchCollectiblesForInvoices";
-import createCacheKey from "createCacheKey";
+// Module 14354 (FamilyCenterParentalControlsSettings)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { UserSettingsSections } from "ME" /* 676 */;
+import { FamilyCenterSubPages } from "items" /* 5302 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_6;
 const require = arg1;
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: { display: "flex", flex: 1 }, segmentedControlContainer: null, content: null };
-createCacheKey = { paddingTop: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { paddingTop: ThemesDefault.space.PX_16, paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { paddingBottom: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { paddingBottom: require("Themes").space.PX_16 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/family_center/native/UserSettingsFamilyCenterParentalControls.tsx");
+createCacheKey[2] = { paddingBottom: ThemesDefault.space.PX_16 };
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingBottom: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/user_settings/family_center/native/UserSettingsFamilyCenterParentalControls.tsx");
 
 export default function FamilyCenterParentalControlsSettings() {
-  let importDefault;
-  let tmp8;
-  let tmp = createCacheKey();
+  let tmp = callback4();
   let obj = stackNavigation(selectedSubPage[8]);
   stackNavigation = obj.useStackNavigation();
-  let obj1 = isFamilyCenterV3Enabled;
+  obj1 = isFamilyCenterV3Enabled;
   const tmp6 = importDefault(selectedSubPage[9]);
   [tmp8, importDefault] = callback(isFamilyCenterV3Enabled.useState(0), 2);
   let obj2 = stackNavigation(selectedSubPage[11]);
@@ -62,15 +57,15 @@ export default function FamilyCenterParentalControlsSettings() {
     id = selectedTeenUser.id;
   }
   const tmp17 = importDefault(selectedSubPage[14])();
-  let closure_6 = tmp17;
+  closure_6 = tmp17;
   callback = obj1.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let closure_7 = obj1.useRef(false);
+  closure_7 = obj1.useRef(false);
   const items = [true === autoOpenCreate, id, stackNavigation];
   const effect = obj1.useEffect(() => {
-    let tmp = _slicedToArray;
-    if (_slicedToArray) {
+    let tmp = closure_3;
+    if (closure_3) {
       tmp = null != id;
     }
     if (tmp) {
@@ -91,18 +86,18 @@ export default function FamilyCenterParentalControlsSettings() {
         if (null != id) {
           let obj = { title: null, headerRight: null };
           let intl = stackNavigation(selectedSubPage[15]).intl;
-          obj[0] = intl.string(outer1_1(selectedSubPage[16])["1Op+NP"]);
+          obj[0] = intl.string(closure_1_1(selectedSubPage[16])["1Op+NP"]);
           let fn;
           if (!closure_6) {
             fn = (arg0) => {
               const obj = {};
               const merged = Object.assign(arg0);
               obj.onPress = function onPress() {
-                return navigation.navigate(outer1_7.FAMILY_CENTER_SCHEDULE_DOWNTIME, { teenId: closure_5 });
+                return navigation.navigate(closure_1_7.FAMILY_CENTER_SCHEDULE_DOWNTIME, { teenId: closure_5 });
               };
-              const intl = outer1_0(outer1_2[15]).intl;
-              obj.label = intl.string(outer1_0(outer1_2[15]).t.OYkgVk);
-              return outer1_9(outer1_0(outer1_2[17]).HeaderTextButton, obj);
+              const intl = closure_1_0(closure_1_2[15]).intl;
+              obj.label = intl.string(closure_1_0(closure_1_2[15]).t.OYkgVk);
+              return closure_1_9(closure_1_0(closure_1_2[17]).HeaderTextButton, obj);
             };
           }
           obj[1] = fn;
@@ -110,7 +105,7 @@ export default function FamilyCenterParentalControlsSettings() {
         }
       }
     }
-    stackNavigation.setOptions({ title: "r", headerRight: "accessibilityRole" });
+    stackNavigation.setOptions({ title: "Array", headerRight: "ct" });
   }, items1);
   if (isFamilyCenterV3Enabled) {
     isFamilyCenterV3Enabled = selectedSubPage === items2.SCREEN_TIME_CONTROLS;
@@ -131,7 +126,7 @@ export default function FamilyCenterParentalControlsSettings() {
   obj1 = {
     items: items2,
     onPageChange(arg0) {
-      const tab = outer1_1(selectedSubPage[21]).selectTab(items2[arg0].id);
+      const tab = closure_1_1(selectedSubPage[21]).selectTab(items2[arg0].id);
     },
     pageWidth: tmp8,
     defaultIndex: Math.max(items2.findIndex((id) => id.id === selectedSubPage), 0)

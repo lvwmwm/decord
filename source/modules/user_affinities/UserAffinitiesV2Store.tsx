@@ -1,17 +1,18 @@
-// Module ID: 5407
-// Function ID: 5408
+// Module ID: 5412
+// Function ID: 5413
 // Name: recomputeAffinities
-// Dependencies: [4030, 5408, 589, 709, 2]
+// Dependencies: [4033, 5413, 589, 709, 2]
 
-// Module 5407 (recomputeAffinities)
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import { USER_AFFINITY_TTL } from "result";
-import { PersistedStore } from "initialize";
+// Module 5412 (recomputeAffinities)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "markAllUserIdListsStale" /* 4033 */;
+import { USER_AFFINITY_TTL } from "result" /* 5413 */;
 
 function recomputeAffinities() {
   const userAffinities = obj.userAffinities;
   const found = userAffinities.filter((otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId));
-  const map = new Map(found.map((otherUserId) => {
+  map = new Map(found.map((otherUserId) => {
     const items = [otherUserId.otherUserId, otherUserId];
     return items;
   }));
@@ -21,24 +22,25 @@ let c3 = false;
 const frozen = Object.freeze({ userAffinities: [], lastFetched: 0 });
 let obj = {};
 let merged = Object.assign(frozen);
+const PersistedStore = initializeDefault.PersistedStore;
 class UserAffinitiesV2Store extends PersistedStore {
 }
 const prototype = UserAffinitiesV2Store.prototype;
 prototype["initialize"] = function initialize(userAffinities) {
   const self = this;
-  this.waitFor(markAllUserIdListsStale);
+  this.waitFor(closure_0);
   if (null != userAffinities) {
     obj.userAffinities = userAffinities.userAffinities;
     obj.lastFetched = userAffinities.lastFetched;
     const _Map = Map;
     userAffinities = obj.userAffinities;
     const found = userAffinities.filter((otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId));
-    const map = new Map(found.map((otherUserId) => {
+    map = new Map(found.map((otherUserId) => {
       const items = [otherUserId.otherUserId, otherUserId];
       return items;
     }));
   }
-  const items = [markAllUserIdListsStale];
+  const items = [closure_0];
   self.syncWith(items, recomputeAffinities);
 };
 prototype["shouldFetch"] = function shouldFetch() {
@@ -115,30 +117,30 @@ UserAffinitiesV2Store.displayName = "UserAffinitiesV2Store";
 UserAffinitiesV2Store.persistKey = "UserAffinitiesStoreV2";
 obj = {
   LOAD_USER_AFFINITIES_V2: function handleLoadUserAffinities() {
-    let c3 = true;
+    c3 = true;
   },
   LOAD_USER_AFFINITIES_V2_SUCCESS: function handleLoadUserAffinitiesSuccess(affineUsers) {
     obj.lastFetched = Date.now();
-    let c3 = false;
+    c3 = false;
     obj.userAffinities = affineUsers.affineUsers;
     const userAffinities = obj.userAffinities;
     const found = userAffinities.filter((otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId));
-    const map = new Map(found.map((otherUserId) => {
+    map = new Map(found.map((otherUserId) => {
       const items = [otherUserId.otherUserId, otherUserId];
       return items;
     }));
   },
   LOAD_USER_AFFINITIES_V2_FAILURE: function handleLoadUserAffinitiesFailure() {
-    let c3 = false;
+    c3 = false;
   },
   LOGOUT: function handleLogout() {
-    const obj = {};
+    obj = {};
     const merged = Object.assign(frozen);
-    const map = new Map();
-    let c3 = false;
+    map = new Map();
+    c3 = false;
   }
 };
-const userAffinitiesV2Store = new UserAffinitiesV2Store(require("dispatcher"), obj);
-const result = require("initialize").fileFinishedImporting("modules/user_affinities/UserAffinitiesV2Store.tsx");
+const userAffinitiesV2Store = new UserAffinitiesV2Store(dispatcherDefault, obj);
+const result = require("set").fileFinishedImporting("modules/user_affinities/UserAffinitiesV2Store.tsx");
 
 export default userAffinitiesV2Store;

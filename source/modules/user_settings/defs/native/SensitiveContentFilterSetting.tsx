@@ -1,42 +1,47 @@
-// Module ID: 14170
-// Function ID: 14171
+// Module ID: 14238
+// Function ID: 14239
 // Name: route
-// Dependencies: [8198, 676, 10669, 1236, 6877, 14171, 2]
+// Dependencies: [8238, 676, 10708, 1236, 6915, 14239, 2]
 
-// Module 14170 (route)
-import createToggle from "createToggle";
+// Module 14238 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 6915 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["Hj/But"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["Hj/But"]);
   },
-  IconComponent: require("ImageWarningIcon").ImageWarningIcon,
-  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  IconComponent: ImageWarningIcon.ImageWarningIcon,
+  parent: MobileUserSettings.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   screen: obj,
   useSearchTerms() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1236) /* getSystemLocale */.t.uEz8JF), , , , , ];
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    items[1] = intl2.string(require(1236) /* getSystemLocale */.t["N/oRI+"]);
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    items[2] = intl3.string(require(1236) /* getSystemLocale */.t.QVdYsK);
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    items[3] = intl4.string(require(1236) /* getSystemLocale */.t["aWD+tu"]);
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    items[4] = intl5.string(require(1236) /* getSystemLocale */.t["5mnTa7"]);
-    const intl6 = require(1236) /* getSystemLocale */.intl;
-    items[5] = intl6.string(require(1236) /* getSystemLocale */.t["K0OWP+"]);
+    const intl = getSystemLocale.intl;
+    const items = [intl.string(getSystemLocale.t.uEz8JF), , , , , ];
+    const intl2 = getSystemLocale.intl;
+    items[1] = intl2.string(getSystemLocale.t["N/oRI+"]);
+    const intl3 = getSystemLocale.intl;
+    items[2] = intl3.string(getSystemLocale.t.QVdYsK);
+    const intl4 = getSystemLocale.intl;
+    items[3] = intl4.string(getSystemLocale.t["aWD+tu"]);
+    const intl5 = getSystemLocale.intl;
+    items[4] = intl5.string(getSystemLocale.t["5mnTa7"]);
+    const intl6 = getSystemLocale.intl;
+    items[5] = intl6.string(getSystemLocale.t["K0OWP+"]);
     return items;
   }
 };
 obj = {
-  route: require("ME").UserSettingsSections.SENSITIVE_MEDIA_FILTERS,
+  route: ME.UserSettingsSections.SENSITIVE_MEDIA_FILTERS,
   getComponent() {
-    return require(14171) /* UserSettingsSensitiveContentFilters */.default;
+    return require(14239) /* UserSettingsSensitiveContentFilters */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/SensitiveContentFilterSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/SensitiveContentFilterSetting.tsx");
 
 export default route;

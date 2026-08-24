@@ -1,23 +1,23 @@
-// Module ID: 10366
-// Function ID: 10367
+// Module ID: 10406
+// Function ID: 10407
 // Name: useSocialLayerStorefrontMobileAccountLinkingDisabled
-// Dependencies: [7202, 589, 2]
+// Dependencies: [7240, 589, 2]
 // Exports: useSocialLayerStorefrontMobileAccountLinkingDisabled
 
-// Module 10366 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
-import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
+// Module 10406 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
+import closure_2 from "handleUserSettingsStoreUpdate" /* 7240 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/native/hooks/useSocialLayerStorefrontMobileAccountLinkingDisabled.tsx");
 
 export const useSocialLayerStorefrontMobileAccountLinkingDisabled = function useSocialLayerStorefrontMobileAccountLinkingDisabled(applicationId) {
   const _require = applicationId;
-  const items = [handleUserSettingsStoreUpdate];
+  const items = [closure_2];
   const items1 = [applicationId];
   return _require(589).useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
-      const configForApplicationId = outer1_2.getConfigForApplicationId(tmp);
+      const configForApplicationId = closure_1_2.getConfigForApplicationId(tmp);
       let prop;
       if (configForApplicationId != null) {
         prop = configForApplicationId.disableMobileAccountLinking;

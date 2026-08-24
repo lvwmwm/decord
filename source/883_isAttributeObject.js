@@ -5,7 +5,7 @@
 // Exports: serializeAttributes
 
 // Module 883 (isAttributeObject)
-import _slicedToArray from "_slicedToArray";
+import closure_0 from "_slicedToArray" /* 32 */;
 
 function isAttributeObject(obj) {
   let hasItem = typeof obj === "object";
@@ -24,11 +24,9 @@ function isAttributeObject(obj) {
   return hasItem;
 }
 function attributeValueToTypedAttributeValue(arg0, flag) {
-  let unit;
-  let value;
   let tmp = arg0;
   if (!isAttributeObject(arg0)) {
-    let obj = { value: null, unit: "a" };
+    let obj = { value: null, unit: "r" };
     obj[0] = arg0;
     tmp = obj;
   }
@@ -80,7 +78,7 @@ function attributeValueToTypedAttributeValue(arg0, flag) {
         if (str4 == null) {
           str4 = "";
         }
-        const obj1 = { value: null, type: "string" };
+        obj1 = { value: null, type: "string" };
         obj1[0] = str4;
         const merged2 = Object.assign(obj2);
         return obj1;
@@ -105,8 +103,8 @@ export const serializeAttributes = function serializeAttributes(attributes, flag
   }
   const entries = Object.entries(obj);
   while (tmp2 !== undefined) {
-    let tmp4 = _slicedToArray;
-    let tmp5 = _slicedToArray(tmp3, 2);
+    let tmp4 = callback;
+    let tmp5 = callback(tmp3, 2);
     let first = tmp5[0];
     let tmp7 = attributeValueToTypedAttributeValue;
     let tmp8 = attributeValueToTypedAttributeValue(tmp5[1], flag);

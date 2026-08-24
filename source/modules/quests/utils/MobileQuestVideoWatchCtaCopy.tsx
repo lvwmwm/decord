@@ -1,14 +1,18 @@
-// Module ID: 10705
-// Function ID: 10706
+// Module ID: 10744
+// Function ID: 10745
 // Name: formatWatchRemainingDurationShort
-// Dependencies: [6716, 7476, 1236, 10706, 2]
+// Dependencies: [6753, 7514, 1236, 10745, 2]
 // Exports: getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
-// Module 10705 (formatWatchRemainingDurationShort)
-import { QuestsExperimentLocations } from "QuestsExperimentLocations";
+// Module 10744 (formatWatchRemainingDurationShort)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import QuestsExperimentLocations2 from "QuestsExperimentLocations" /* 6753 */;
+import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7514 */;
+import apexExperimentDefault from "apexExperiment" /* 10745 */;
 
 function formatWatchRemainingDurationShort(questTaskDetails, truncate) {
-  let obj = require(7476) /* getApplicationIdsByTaskTypes */;
+  let obj = getApplicationIdsByTaskTypes;
   const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
   let num = 60;
   truncate = 60 * remainingTaskTime.minutes + remainingTaskTime.seconds;
@@ -36,31 +40,30 @@ function formatWatchRemainingDurationShort(questTaskDetails, truncate) {
     return intl.formatToPlainString(tmp5 ? t["spl/XS"] : t.rUfeQx, obj);
   }
 }
-const result = require("getSystemLocale").fileFinishedImporting("modules/quests/utils/MobileQuestVideoWatchCtaCopy.tsx");
+const QuestsExperimentLocations = QuestsExperimentLocations2.QuestsExperimentLocations;
+const result = set.fileFinishedImporting("modules/quests/utils/MobileQuestVideoWatchCtaCopy.tsx");
 
 export { formatWatchRemainingDurationShort };
 export const getVideoQuestWatchCtaText = function getVideoQuestWatchCtaText(questTaskDetails) {
   if (questTaskDetails.percentComplete > 0) {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     let obj = { durationShort: null };
     obj[0] = formatWatchRemainingDurationShort(questTaskDetails);
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["pF/deA"], obj);
+    return intl.formatToPlainString(getSystemLocale.t["pF/deA"], obj);
   } else {
-    let obj1 = importDefault(10706);
+    obj1 = apexExperimentDefault;
     obj = { location: null };
     obj[0] = QuestsExperimentLocations.QUESTS_CARD;
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     obj = { durationShort: null };
     obj1 = { truncate: null };
     obj1[0] = obj1.getConfig(obj).truncateMoreThanSeconds;
     obj[0] = formatWatchRemainingDurationShort(questTaskDetails, obj1);
-    return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.CHrvqg, obj);
+    return intl2.formatToPlainString(getSystemLocale.t.CHrvqg, obj);
   }
 };
 export const getVideoQuestWatchCtaAccessibilityLabel = function getVideoQuestWatchCtaAccessibilityLabel(questTaskDetails) {
-  let minutes;
-  let seconds;
-  let obj = require(7476) /* getApplicationIdsByTaskTypes */;
+  let obj = getApplicationIdsByTaskTypes;
   const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
   ({ minutes, seconds } = remainingTaskTime);
   if (minutes > 0) {
@@ -79,7 +82,7 @@ export const getVideoQuestWatchCtaAccessibilityLabel = function getVideoQuestWat
       obj[0] = formatToPlainStringResult;
       let formatToPlainStringResult1 = formatToPlainString(t["ch+yrN"], obj);
     } else {
-      const obj1 = { remainTime: null };
+      obj1 = { remainTime: null };
       obj1[0] = formatToPlainStringResult;
       formatToPlainStringResult1 = formatToPlainString(t.Bwc5Dg, obj1);
     }

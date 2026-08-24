@@ -1,47 +1,54 @@
-// Module ID: 14129
-// Function ID: 14130
+// Module ID: 14197
+// Function ID: 14198
 // Name: pressable
-// Dependencies: [8198, 5428, 5254, 10669, 1236, 2853, 4992, 2]
+// Dependencies: [8238, 5433, 5259, 10708, 1236, 2854, 4997, 2]
 
-// Module 14129 (pressable)
-import createToggle from "createToggle";
+// Module 14197 (pressable)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2854 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4997 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 5259 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 5433 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2853).SH6Tcv);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.SH6Tcv);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2853).rJiO86);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.rJiO86);
   },
   onPress: function onAgeGroupConfirmPress() {
-    let obj = importDefault(5428);
-    obj = { entryPoint: require(5254) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+    let obj = openIncodeAgeVerificationModalDefault;
+    obj = { entryPoint: AgeVerificationModalEntryPoint.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   },
   withArrow: true,
-  usePredicate: require("useAgeVerificationRunner").useShowAssignedAgeGroupSettings
+  usePredicate: useAgeVerificationRunner.useShowAssignedAgeGroupSettings
 });
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2853).SH6Tcv);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.SH6Tcv);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2853).rJiO86);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.rJiO86);
   },
   onPress: function onAgeGroupConfirmPress() {
-    let obj = importDefault(5428);
-    obj = { entryPoint: require(5254) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+    let obj = openIncodeAgeVerificationModalDefault;
+    obj = { entryPoint: AgeVerificationModalEntryPoint.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   },
   withArrow: true,
-  usePredicate: require("useAgeVerificationRunner").useShowAssignedAgeGroupSettings
+  usePredicate: useAgeVerificationRunner.useShowAssignedAgeGroupSettings
 };
-let result = require("AgeVerificationModalEntryPoint").fileFinishedImporting("modules/user_settings/defs/native/AgeGroupConfirmSetting.tsx");
+let result = set.fileFinishedImporting("modules/user_settings/defs/native/AgeGroupConfirmSetting.tsx");
 
 export default pressable;

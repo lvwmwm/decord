@@ -1,18 +1,20 @@
-// Module ID: 9072
-// Function ID: 9073
+// Module ID: 9109
+// Function ID: 9110
 // Name: showSharePreparingModal
-// Dependencies: [9070, 5260, 9073, 2007, 2]
+// Dependencies: [9107, 5265, 9110, 2008, 2]
 // Exports: showSharePreparingModal
 
-// Module 9072 (showSharePreparingModal)
-import { SHARE_PREPARING_MODAL_KEY } from "SHARE_PREPARING_MODAL_KEY";
+// Module 9109 (showSharePreparingModal)
+import set from "set" /* 2 */;
+import SHARE_PREPARING_MODAL_KEY2 from "SHARE_PREPARING_MODAL_KEY" /* 9107 */;
 
-const result = require("SharePreparingModal").fileFinishedImporting("modules/share/native/showSharePreparingModal.tsx");
+const SHARE_PREPARING_MODAL_KEY = SHARE_PREPARING_MODAL_KEY2.SHARE_PREPARING_MODAL_KEY;
+const result = set.fileFinishedImporting("modules/share/native/showSharePreparingModal.tsx");
 
 export const showSharePreparingModal = function showSharePreparingModal(onCancel) {
   onCancel = onCancel.onCancel;
   let timeout;
-  let c1 = false;
+  c1 = false;
   timeout = setTimeout(() => {
     let obj = callback(paths[1]);
     obj = {
@@ -21,16 +23,16 @@ export const showSharePreparingModal = function showSharePreparingModal(onCancel
           c1 = true;
           const _clearTimeout = clearTimeout;
           clearTimeout(closure_2);
-          outer1_1(outer1_2[1]).popWithKey(outer1_3);
+          closure_1_1(closure_1_2[1]).popWithKey(closure_1_3);
           callback();
-          const obj = outer1_1(outer1_2[1]);
+          const obj = closure_1_1(closure_1_2[1]);
         }
       }
     };
-    obj.pushLazy(onCancel(paths[3])(paths[2], paths.paths), obj, outer1_3, { animation: "fade", presentation: "transparentModal" }).then(() => {
+    obj.pushLazy(onCancel(paths[3])(paths[2], paths.paths), obj, closure_1_3, { animation: "fade", presentation: "transparentModal" }).then(() => {
       if (closure_1) {
-        outer1_1(outer1_2[1]).popWithKey(outer1_3);
-        const obj = outer1_1(outer1_2[1]);
+        closure_1_1(closure_1_2[1]).popWithKey(closure_1_3);
+        const obj = closure_1_1(closure_1_2[1]);
       }
     });
   }, 1000);
@@ -39,7 +41,7 @@ export const showSharePreparingModal = function showSharePreparingModal(onCancel
       callback = true;
       const _clearTimeout = clearTimeout;
       clearTimeout(paths);
-      callback(paths[1]).popWithKey(outer1_3);
+      callback(paths[1]).popWithKey(closure_1_3);
       const obj = callback(paths[1]);
     }
   };

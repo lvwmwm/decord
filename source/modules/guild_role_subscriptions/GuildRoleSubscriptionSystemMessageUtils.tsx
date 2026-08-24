@@ -1,21 +1,20 @@
-// Module ID: 8211
-// Function ID: 8212
+// Module ID: 8251
+// Function ID: 8252
 // Name: identityHook
-// Dependencies: [1910, 1922, 8212, 676, 11, 1236, 7217, 5042, 2]
+// Dependencies: [1910, 1922, 8252, 676, 11, 1236, 7255, 5047, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 8211 (identityHook)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import getJoinButtonLabels from "getJoinButtonLabels";
-import ME from "ME";
+// Module 8251 (identityHook)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 5047 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7255 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import getJoinButtonLabels from "getJoinButtonLabels" /* 8252 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function identityHook(arg0) {
   return arg0;
 }
@@ -44,7 +43,7 @@ function getRoleSubscriptionPurchaseSystemMessageContent(usernameOnClickHandler)
   if (flag == null) {
     flag = false;
   }
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (!tmp2) {
     let obj = { content: null, formatParams: null };
     obj[0] = flag ? t.mPTTdv : t.mYjFFx;
@@ -68,8 +67,8 @@ function getRoleSubscriptionPurchaseSystemMessageContent(usernameOnClickHandler)
   }
 }
 ({ getJoinButtonLabels: c5, getRenewButtonLabels: closure_6, STICKERS: error } = getJoinButtonLabels);
-({ AnalyticEvents: metroImportAll, NOOP: c9 } = ME);
-const result = require("getJoinButtonLabels").fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionSystemMessageUtils.tsx");
+({ AnalyticEvents: closure_8, NOOP: c9 } = ME);
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionSystemMessageUtils.tsx");
 
 export const pickRoleSubscriptionPurchaseSticker = function pickRoleSubscriptionPurchaseSticker(id) {
   const currentUser = authStore.getCurrentUser();
@@ -79,10 +78,10 @@ export const pickRoleSubscriptionPurchaseSticker = function pickRoleSubscription
   }
   let num = 0;
   if (null != id) {
-    num = importDefault(11).extractTimestamp(id);
-    const obj = importDefault(11);
+    num = DISCORD_EPOCHDefault.extractTimestamp(id);
+    const obj = DISCORD_EPOCHDefault;
   }
-  const obj2 = importDefault(11);
+  const obj2 = DISCORD_EPOCHDefault;
   return length[(num + obj2.extractTimestamp(obj2, id)) % length.length];
 };
 export const getRoleSubscriptionPurchaseStickerCTA = function getRoleSubscriptionPurchaseStickerCTA(id, arg1) {
@@ -91,21 +90,17 @@ export const getRoleSubscriptionPurchaseStickerCTA = function getRoleSubscriptio
   } else {
     arr = callback();
   }
-  const obj = importDefault(11);
+  const obj = DISCORD_EPOCHDefault;
   return arr[obj.extractTimestamp(obj, id) % arr.length];
 };
 export const getRoleSubscriptionPurchaseSystemMessageFormattedContent = function getRoleSubscriptionPurchaseSystemMessageFormattedContent(username) {
-  let content;
-  let formatParams;
   ({ content, formatParams } = getRoleSubscriptionPurchaseSystemMessageContent({ username: username.username, usernameOnClickHandler: username.usernameOnClickHandler, roleSubscriptionOnClickHandler: username.roleSubscriptionOnClickHandler, guildId: username.guildId, roleSubscriptionData: username.roleSubscriptionData }));
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   return intl.format(content, formatParams);
 };
 export const getRoleSubscriptionPurchaseSystemMessageAstFormattedContent = function getRoleSubscriptionPurchaseSystemMessageAstFormattedContent(username) {
-  let content;
-  let formatParams;
   ({ content, formatParams } = getRoleSubscriptionPurchaseSystemMessageContent({ username: username.username, usernameOnClickHandler: username.usernameOnClickHandler, roleSubscriptionOnClickHandler: username.roleSubscriptionOnClickHandler, guildId: username.guildId, roleSubscriptionData: username.roleSubscriptionData }));
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   return intl.formatToParts(content, formatParams);
 };
 export const getRoleSubscriptionPurchaseSystemMessageContentMobile = function getRoleSubscriptionPurchaseSystemMessageContentMobile(usernameOnClickHandler) {
@@ -133,7 +128,7 @@ export const getRoleSubscriptionPurchaseSystemMessageContentMobile = function ge
   if (flag == null) {
     flag = false;
   }
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (tmp2) {
     if (flag) {
       _N9bxq = t.OQ0OUy;
@@ -170,10 +165,10 @@ export const getRoleSubscriptionPurchaseSystemMessageContentMobile = function ge
   }
 };
 export const isEligibleForRoleSubscriptionPurchaseSystemMessageSettings = function isEligibleForRoleSubscriptionPurchaseSystemMessageSettings(guild) {
-  return require(7217) /* useIsCreatorMonetizationEnabledGuild */.isCreatorMonetizationEnabledGuild(guild);
+  return useIsCreatorMonetizationEnabledGuild.isCreatorMonetizationEnabledGuild(guild);
 };
 export const trackRoleSubscriptionPurchaseMessageTierClick = function trackRoleSubscriptionPurchaseMessageTierClick(guild_id) {
-  let obj = importDefault(5042);
+  let obj = collectGuildAnalyticsMetadataDefault;
   obj = { guild_id, user_id: null, channel_id: null, message_id: null, role_subscription_listing_id: null };
   const currentUser = authStore.getCurrentUser();
   let id;

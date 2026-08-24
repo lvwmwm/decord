@@ -1,14 +1,15 @@
-// Module ID: 6770
-// Function ID: 6771
+// Module ID: 6807
+// Function ID: 6808
 // Name: parseServerGuildSticker
-// Dependencies: [32, 1432, 1911, 1910, 4964, 4034, 1914, 2]
+// Dependencies: [32, 1432, 1911, 1910, 4969, 4037, 1914, 2]
 
-// Module 6770 (parseServerGuildSticker)
-import _slicedToArray from "_slicedToArray";
-import { TypeTag } from "TypeTag";
-import { LibdiscoreStore } from "identity";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { LibdiscoreBatchStoreRefactorExperiment } from "items";
+// Module 6807 (parseServerGuildSticker)
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import { TypeTag } from "TypeTag" /* 1432 */;
+import { LibdiscoreStore } from "identity" /* 1911 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import { LibdiscoreBatchStoreRefactorExperiment } from "items" /* 1914 */;
 
 const require = arg1;
 function parseServerGuildSticker(item10023) {
@@ -29,13 +30,13 @@ function parseServerGuildStickers(stickers) {
 }
 function deriveStickerMetadata(arg0, tags) {
   const items = [];
-  let obj = { type: items(4964).StickerMetadataTypes.STICKER_NAME, value: null };
+  let obj = { type: items(4969).StickerMetadataTypes.STICKER_NAME, value: null };
   const trimmed = tags.name.trim();
   obj[1] = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != tags.tags) {
     obj = { type: null, value: null };
-    obj[0] = tmp(4964).StickerMetadataTypes.TAG;
+    obj[0] = tmp(4969).StickerMetadataTypes.TAG;
     const trimmed1 = str.trim();
     obj[1] = trimmed1.toLocaleLowerCase();
     items.push(obj);
@@ -49,21 +50,21 @@ function deriveStickerMetadata(arg0, tags) {
       }
       if (tmp5) {
         obj = { type: null, value: null };
-        obj[0] = tmp(4964).StickerMetadataTypes.GUILD_NAME;
+        obj[0] = tmp(4969).StickerMetadataTypes.GUILD_NAME;
         obj[1] = toLocaleLowerCaseResult;
         items.push(obj);
       }
       const str3 = guild.name;
     }
-    const byName = importDefault(4034).getByName(str);
+    const byName = parseRawEmojiObjectDefault.getByName(str);
     if (null != byName) {
-      const obj1 = { type: null, value: null };
-      obj1[0] = tmp(4964).StickerMetadataTypes.CORRELATED_EMOJI;
+      obj1 = { type: null, value: null };
+      obj1[0] = tmp(4969).StickerMetadataTypes.CORRELATED_EMOJI;
       obj1[1] = byName.surrogates;
       items.push(obj1);
-      byName.forEachDiversity((surrogates) => items.push({ type: items(outer1_2[4]).StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));
+      byName.forEachDiversity((surrogates) => items.push({ type: items(closure_1_2[4]).StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));
     }
-    const obj5 = importDefault(4034);
+    const obj5 = parseRawEmojiObjectDefault;
   }
   return items;
 }
@@ -154,8 +155,6 @@ const guildStickersStore = new GuildStickersStore({
     return clear.clear();
   },
   CONNECTION_OPEN(arg0, getPartitionKeys) {
-    let guilds;
-    let unavailableGuilds;
     ({ guilds, unavailableGuilds } = arg0);
     const set = new Set(guilds.map((id) => id.id));
     for (const item10017 of unavailableGuilds) {
@@ -245,6 +244,6 @@ const guildStickersStore = new GuildStickersStore({
     setPartition.setPartition(guildId.guildId, parseServerGuildStickers(guildId.stickers));
   }
 }, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
-let result = require("identity").fileFinishedImporting("modules/stickers/GuildStickersStore.tsx");
+let result = require("set").fileFinishedImporting("modules/stickers/GuildStickersStore.tsx");
 
 export default guildStickersStore;

@@ -1,10 +1,13 @@
-// Module ID: 10992
-// Function ID: 10993
+// Module ID: 11031
+// Function ID: 11032
 // Name: matchesDeep
-// Dependencies: [4622, 2]
+// Dependencies: [4628, 2]
 // Exports: getBestMatches, getEntries, getExperimentDateFromId, sortEntries
 
-// Module 10992 (matchesDeep)
+// Module 11031 (matchesDeep)
+import set from "set" /* 2 */;
+import flattenDefault from "flatten" /* 4628 */;
+
 function matchesDeep(item10014, item10021) {
   if (Array.isArray(item10014)) {
     const obj2 = item10014[Symbol.iterator]();
@@ -43,7 +46,7 @@ function matchesDeep(item10014, item10021) {
   return false;
 }
 const re2 = /^(\d{4}-\d{1,2})/;
-const result = require("set").fileFinishedImporting("modules/user_settings/dev_tools/UserSettingsExperimentsUtils.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/dev_tools/UserSettingsExperimentsUtils.tsx");
 
 export const getExperimentDateFromId = function getExperimentDateFromId(arg0) {
   const match = regex.exec(arg0);
@@ -55,15 +58,13 @@ export const getExperimentDateFromId = function getExperimentDateFromId(arg0) {
 };
 export const getEntries = function getEntries(arg0) {
   return Array.from(Object.entries(arg0)).map((arg0) => {
-    let tmp;
-    let tmp2;
     [tmp, tmp2] = arg0;
     return { id, experiment };
   });
 };
 export { matchesDeep };
 export const sortEntries = function sortEntries(entries, memo1) {
-  let closure_0 = memo1;
+  closure_0 = memo1;
   const substr = entries.slice();
   return substr.sort((id, id2) => {
     id = undefined;
@@ -92,12 +93,12 @@ export const sortEntries = function sortEntries(entries, memo1) {
         return 1;
       }
     }
-    const match = outer1_2.exec(id.id);
+    const match = closure_1_2.exec(id.id);
     let tmp7 = null;
     if (null != match) {
       tmp7 = match[1];
     }
-    const match1 = outer1_2.exec(id2.id);
+    const match1 = closure_1_2.exec(id2.id);
     let tmp9 = null;
     if (null != match1) {
       tmp9 = match1[1];
@@ -152,6 +153,6 @@ export const getBestMatches = function getBestMatches(arg0, str) {
       continue;
     }
     const found1 = items.filter((arg0) => undefined !== arg0);
-    return importDefault(4622)(found1.reverse());
+    return flattenDefault(found1.reverse());
   }
 };

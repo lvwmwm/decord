@@ -1,17 +1,18 @@
-// Module ID: 10801
-// Function ID: 10802
+// Module ID: 10840
+// Function ID: 10841
 // Name: handleAcceptEventInstantInvite
-// Dependencies: [4370, 9346, 4369, 8042, 8804, 2]
+// Dependencies: [4374, 9383, 4373, 8081, 8841, 2]
 // Exports: default
 
-// Module 10801 (handleAcceptEventInstantInvite)
-import scheduledEventSort from "scheduledEventSort";
+// Module 10840 (handleAcceptEventInstantInvite)
+import generateAcceptInviteOptionsDefault from "generateAcceptInviteOptions" /* 8081 */;
+import closure_3 from "scheduledEventSort" /* 4374 */;
 
 const require = arg1;
-let result = require("InviteTypes").fileFinishedImporting("modules/guild_scheduled_events/native/handleAcceptEventInstantInvite.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_scheduled_events/native/handleAcceptEventInstantInvite.tsx");
 
 export default function handleAcceptEventInstantInvite(code) {
-  let obj = guildScheduledEvent(9346);
+  let obj = guildScheduledEvent(9383);
   if (!obj.handleNSFWGuildInvite(code)) {
     if (tmpResult.isGuildScheduledEventInviteEmbed(code)) {
       if (null != code.code) {
@@ -26,13 +27,13 @@ export default function handleAcceptEventInstantInvite(code) {
           obj[0] = code.code;
           obj[1] = { location: "Guild Scheduled Event Invite Button Embed" };
           obj[2] = function callback() {
-            const result = guildScheduledEvent(outer1_2[4]).transitionToEventDetailsFromInvite(guildScheduledEvent);
+            const result = guildScheduledEvent(closure_1_2[4]).transitionToEventDetailsFromInvite(guildScheduledEvent);
           };
-          importDefault(8042).acceptInvite(obj);
-          const obj3 = importDefault(8042);
+          generateAcceptInviteOptionsDefault.acceptInvite(obj);
+          const obj3 = generateAcceptInviteOptionsDefault;
         }
       }
     }
-    tmpResult = guildScheduledEvent(4369);
+    tmpResult = guildScheduledEvent(4373);
   }
 };

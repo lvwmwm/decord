@@ -1,11 +1,11 @@
-// Module ID: 14950
-// Function ID: 14951
+// Module ID: 15014
+// Function ID: 15015
 // Name: useShopOrientationLock
-// Dependencies: [19, 10964, 2]
+// Dependencies: [19, 11003, 2]
 // Exports: useShopOrientationLock
 
-// Module 14950 (useShopOrientationLock)
-import noop from "noop";
+// Module 15014 (useShopOrientationLock)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/collectibles/native/useShopOrientationLock.tsx");

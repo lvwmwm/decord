@@ -1,13 +1,14 @@
-// Module ID: 5379
-// Function ID: 5380
+// Module ID: 5384
+// Function ID: 5385
 // Name: requestGames
-// Dependencies: [5, 4505, 676, 530, 709, 4259, 12, 2]
+// Dependencies: [5, 4509, 676, 530, 709, 4263, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 5379 (requestGames)
-import importDefaultResult from "start";
-import handleLoadMessages from "handleLoadMessages";
-import { Endpoints } from "ME";
+// Module 5384 (requestGames)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import importDefaultResult from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "handleLoadMessages" /* 4509 */;
+import { Endpoints } from "ME" /* 676 */;
 
 let closure_0 = arg1;
 function requestGames() {
@@ -23,15 +24,15 @@ function requestGames() {
 function _requestGames() {
   const self = this;
   const tmp = importDefaultResult((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
+    c3 = 0;
     return (function*(arg0, body) {
-      const dependencyMap = tmp3;
-      let c3 = 1;
-      const HTTP = callback(outer1_2[3]).HTTP;
-      const obj1 = { url: null, query: null, rejectWithError: true };
+      dependencyMap = tmp3;
+      c3 = 1;
+      const HTTP = callback(closure_1_2[3]).HTTP;
+      obj1 = { url: null, query: null, rejectWithError: true };
       obj1[0] = constants.GAMES;
       const obj2 = { game_ids: null };
       obj2[0] = callback;
@@ -60,7 +61,7 @@ function _requestGames() {
       return body;
     })();
   });
-  const _requestGames = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -72,9 +73,9 @@ function _requestGames() {
 function _fetchGamesWithSupplementalData() {
   const self = this;
   const tmp = importDefaultResult((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -87,7 +88,7 @@ function _fetchGamesWithSupplementalData() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -104,8 +105,8 @@ function _fetchGamesWithSupplementalData() {
             } else if (0 !== length.length) {
               c2 = 1;
               c1 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_8.queue(tmp5);
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_8.queue(tmp5);
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -118,7 +119,7 @@ function _fetchGamesWithSupplementalData() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp7) {
           c1 = tmp;
           throw tmp7;
@@ -126,7 +127,7 @@ function _fetchGamesWithSupplementalData() {
       }
     })();
   });
-  const _fetchGamesWithSupplementalData = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -138,9 +139,9 @@ function _fetchGamesWithSupplementalData() {
 let c3 = importDefaultResult;
 closure_0 = undefined;
 closure_0 = importDefaultResult((arg0) => {
-  let closure_0 = arg0;
-  let c2 = 0;
-  let c1 = 0;
+  closure_0 = arg0;
+  c2 = 0;
+  c1 = 0;
   return (function*(arg0) {
     if (v0 === 2) {
       v0 = 3;
@@ -153,7 +154,7 @@ closure_0 = importDefaultResult((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -168,11 +169,11 @@ closure_0 = importDefaultResult((arg0) => {
             obj[0] = arg1;
             return obj;
           } else {
-            let obj1 = v0(table[6]);
+            obj1 = v0(table[6]);
             table = 1;
             v0 = 1;
             obj1 = { value: null, done: false };
-            obj1[0] = Promise.all(obj1.chunk(closure_0, 20).map(outer1_6));
+            obj1[0] = Promise.all(obj1.chunk(closure_0, 20).map(closure_1_6));
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -185,7 +186,7 @@ closure_0 = importDefaultResult((arg0) => {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         v0 = tmp;
@@ -205,20 +206,20 @@ const batchInvocationManager = new require("start").BatchInvocationManager(funct
   return applyArgumentsResult;
 }, {
   predicate(closure_0) {
-    return !handleLoadMessages.hasNoData(closure_0);
+    return !closure_4.hasNoData(closure_0);
   },
   onQueued(gameIds) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "GAME_FETCH", gameIds };
     return obj.dispatch(obj);
   },
   onCancelled(gameIds) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "GAME_FETCH_CANCELLED", gameIds };
     return obj.dispatch(obj);
   }
 });
-const result = require("ME").fileFinishedImporting("modules/games/GameActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/games/GameActionCreators.tsx");
 
 export const fetchGamesWithSupplementalData = function fetchGamesWithSupplementalData(items) {
   const self = this;

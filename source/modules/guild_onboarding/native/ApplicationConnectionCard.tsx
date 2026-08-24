@@ -1,22 +1,19 @@
-// Module ID: 7138
-// Function ID: 7139
+// Module ID: 7176
+// Function ID: 7177
 // Name: ApplicationConnectionCard
-// Dependencies: [19, 4478, 676, 21, 589, 7139, 7140, 1236, 7142, 7149, 698, 5042, 7154, 2]
+// Dependencies: [19, 4482, 676, 21, 589, 7177, 7178, 1236, 7180, 7187, 698, 5047, 7192, 2]
 // Exports: default
 
-// Module 7138 (ApplicationConnectionCard)
-import noop from "noop";
-import addApplication from "addApplication";
-import { AnalyticEvents } from "ME";
-import { jsx } from "jsxProd";
+// Module 7176 (ApplicationConnectionCard)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "addApplication" /* 4482 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("ME").fileFinishedImporting("modules/guild_onboarding/native/ApplicationConnectionCard.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_onboarding/native/ApplicationConnectionCard.tsx");
 
 export default function ApplicationConnectionCard(connection) {
-  let canStartAuthorization;
-  let fetched;
-  let hasAlreadyLinked;
   connection = connection.connection;
   const guildId = connection.guildId;
   const _location = connection.location;
@@ -65,8 +62,7 @@ export default function ApplicationConnectionCard(connection) {
   const tmp7 = guildId(_location[8])(stateFromStores);
   startAuthorization = tmp7.startAuthorization;
   ({ hasAlreadyLinked, canStartAuthorization, fetched } = tmp7);
-  obj = { game: stateFromStores, size: null };
-  obj[1] = connection(_location[9]).GameIconSizes.SMALL;
+  obj = { game: stateFromStores, size: connection(_location[9]).GameIconSizes.SMALL };
   const items3 = [startAuthorization, guildId, connection.application_id, _location, analyticsLocations];
   const obj2 = stateFromStores;
   const tmp4Result = guildId(_location[9]);
@@ -82,6 +78,6 @@ export default function ApplicationConnectionCard(connection) {
     obj = { analyticsLocations };
     startAuthorization(obj);
   }, items3);
-  obj = { displayName: name, description: connection.description, icon: jsx(guildId(_location[9]), { game: stateFromStores, size: null }), isLoading: !fetched, isConnected: hasAlreadyLinked, canConnect: canStartAuthorization, onConnect: callback };
-  return jsx(guildId(_location[12]), { displayName: name, description: connection.description, icon: jsx(guildId(_location[9]), { game: stateFromStores, size: null }), isLoading: !fetched, isConnected: hasAlreadyLinked, canConnect: canStartAuthorization, onConnect: callback });
+  obj = { displayName: name, description: connection.description, icon: jsx(guildId(_location[9]), { game: stateFromStores, size: connection(_location[9]).GameIconSizes.SMALL }), isLoading: !fetched, isConnected: hasAlreadyLinked, canConnect: canStartAuthorization, onConnect: callback };
+  return jsx(guildId(_location[12]), { displayName: name, description: connection.description, icon: jsx(guildId(_location[9]), { game: stateFromStores, size: connection(_location[9]).GameIconSizes.SMALL }), isLoading: !fetched, isConnected: hasAlreadyLinked, canConnect: canStartAuthorization, onConnect: callback });
 };

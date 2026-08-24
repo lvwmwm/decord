@@ -1,27 +1,32 @@
-// Module ID: 14196
-// Function ID: 14197
+// Module ID: 14264
+// Function ID: 14265
 // Name: useDerivedDmSpamFilterSettingValue
-// Dependencies: [1922, 4068, 4066, 589, 4072, 4079, 1306, 2]
+// Dependencies: [1922, 4071, 4069, 589, 4075, 4082, 1306, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 14196 (useDerivedDmSpamFilterSettingValue)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { ExplicitContentFilterToDmSpamFilterV2 as closure_3 } from "items";
+// Module 14264 (useDerivedDmSpamFilterSettingValue)
+import initialize from "initialize" /* 589 */;
+import create from "create" /* 1306 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 4075 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4082 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import { ExplicitContentFilterToDmSpamFilterV2 as closure_3 } from "items" /* 4071 */;
 
-const require = arg1;
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/content_and_social/useDerivedDMSpamFilterSetting.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/useDerivedDMSpamFilterSetting.tsx");
 
 export const useDerivedDmSpamFilterSettingValue = function useDerivedDmSpamFilterSettingValue() {
   let DmSpamFilterV2 = dependencyMap;
-  const DmSpamFilterV22 = require(4066) /* explicitContentFromProto */.DmSpamFilterV2;
+  const DmSpamFilterV22 = explicitContentFromProto.DmSpamFilterV2;
   const setting = DmSpamFilterV22.useSetting();
-  const ExplicitContentFilter = require(4066) /* explicitContentFromProto */.ExplicitContentFilter;
+  const ExplicitContentFilter = explicitContentFromProto.ExplicitContentFilter;
   const setting1 = ExplicitContentFilter.useSetting();
-  const items = [mergeGuildAvatar];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = require(589) /* initialize */;
-  const isSettingTeenByDefault = require(4072) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(4079) /* SettingsDefaultFeature */.SettingsDefaultFeature.SPAM_FILTERS);
-  if (setting !== require(1306) /* create */.DmSpamFilterV2.DEFAULT_UNSET) {
+  const items = [closure_2];
+  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj = initialize;
+  const isSettingTeenByDefault = isFeatureAgeGated.useIsSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.SPAM_FILTERS);
+  if (setting !== create.DmSpamFilterV2.DEFAULT_UNSET) {
     return setting;
   } else {
     let nsfwAllowed;

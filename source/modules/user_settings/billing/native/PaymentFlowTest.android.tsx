@@ -1,27 +1,28 @@
-// Module ID: 15146
-// Function ID: 15147
+// Module ID: 15210
+// Function ID: 15211
 // Name: TestView
-// Dependencies: [32, 19, 17, 1922, 21, 4661, 712, 647, 4733, 4734, 6292, 8071, 4745, 4342, 15147, 2007, 5441, 9585, 2]
+// Dependencies: [32, 19, 17, 1922, 21, 4668, 712, 647, 4738, 4739, 6323, 8110, 4750, 4346, 15211, 2008, 5446, 9622, 2]
 
-// Module 15146 (TestView)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import { ScrollView } from "NativePaymentContextProvider";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15210 (TestView)
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5446 */;
+import NativePaymentContextProvider from "NativePaymentContextProvider" /* 9622 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { ScrollView } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function TestView() {
   const tmp = callback2();
   let obj = importAllResult;
   const tmp3 = first2(importAllResult.useState("1341506443580276736"), 2);
   const first = tmp3[0];
-  let closure_1 = tmp3[1];
-  let obj1 = first(first1[7]);
-  const items = [mergeGuildAvatar];
+  closure_1 = tmp3[1];
+  obj1 = first(first1[7]);
+  const items = [closure_6];
   const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
   let id;
   if (stateFromStores != null) {
@@ -79,24 +80,23 @@ function TestView() {
   return closure_8(first(first1[8]).Stack, obj);
 }
 let c4 = importAllResult;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let obj = { wrap: null, container: null, textInput: null, title: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 obj[0] = obj;
-createCacheKey = { padding: require("Themes").space.PX_16 };
+createCacheKey = { padding: ThemesDefault.space.PX_16 };
 obj[1] = createCacheKey;
 obj[2] = { marginBottom: 16 };
 obj[3] = { marginBottom: 8 };
 let closure_9 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function PaymentFlowTest() {
-  const insets = importDefault(5441)({ includeKeyboardHeight: true }).insets;
+  const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;
   let obj = { skuIDs: [], activeSubscription: null, children: null };
-  obj = { style: callback2().wrap, contentContainerStyle: obj, children: null };
+  obj = { style: callback2().wrap, contentContainerStyle: obj, children: callback(TestView, {}) };
   obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right };
-  obj[2] = callback(TestView, {});
   obj[2] = callback(ScrollView, obj);
-  return callback(require(9585) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
+  return callback(NativePaymentContextProvider.NativePaymentContextProvider, obj);
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/billing/native/PaymentFlowTest.android.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/billing/native/PaymentFlowTest.android.tsx");
 
 export default memoResult;

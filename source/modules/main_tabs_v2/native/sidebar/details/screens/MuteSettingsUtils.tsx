@@ -1,40 +1,43 @@
-// Module ID: 10084
-// Function ID: 10085
+// Module ID: 10123
+// Function ID: 10124
 // Name: getMuteSettingLabel
-// Dependencies: [4023, 1391, 1910, 4030, 5043, 1922, 676, 685, 1236, 4984, 7512, 6798, 6795, 10085, 2]
+// Dependencies: [4026, 1391, 1910, 4033, 5048, 1922, 676, 685, 1236, 4989, 7550, 6835, 6832, 10124, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 10084 (getMuteSettingLabel)
-import storeThread from "storeThread";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { MuteUntilSeconds } from "MAX_FAVORITES";
+// Module 10123 (getMuteSettingLabel)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import computeChannelName from "computeChannelName" /* 4989 */;
+import UserNotificationSettings from "UserNotificationSettings" /* 6832 */;
+import _modDef6835 from "module_6835" /* 6835 */;
+import getMuteSettingsAll from "getMuteSettings" /* 10124 */;
+import closure_4 from "storeThread" /* 4026 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import { MuteUntilSeconds } from "MAX_FAVORITES" /* 685 */;
 
-let c10;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 ({ ChannelTypes: c10, UserNotificationSettings: unpackModuleId } = ME);
-let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MuteSettingsUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MuteSettingsUtils.tsx");
 
 export const getMuteSettingLabel = function getMuteSettingLabel(channel, guild) {
   if (null != channel) {
     if (channel.isPrivate()) {
-      const intl5 = require(1236) /* getSystemLocale */.intl;
-      let stringResult = intl5.string(require(1236) /* getSystemLocale */.t["Z/uD9+"]);
+      const intl5 = getSystemLocale.intl;
+      let stringResult = intl5.string(getSystemLocale.t["Z/uD9+"]);
     } else if (channel.type === constants.GUILD_CATEGORY) {
-      const intl4 = require(1236) /* getSystemLocale */.intl;
-      stringResult = intl4.string(require(1236) /* getSystemLocale */.t.Z33kYz);
+      const intl4 = getSystemLocale.intl;
+      stringResult = intl4.string(getSystemLocale.t.Z33kYz);
     } else if (channel.isForumPost()) {
-      const intl3 = require(1236) /* getSystemLocale */.intl;
-      stringResult = intl3.string(require(1236) /* getSystemLocale */.t.lbN8mz);
+      const intl3 = getSystemLocale.intl;
+      stringResult = intl3.string(getSystemLocale.t.lbN8mz);
     } else {
-      const intl2 = require(1236) /* getSystemLocale */.intl;
+      const intl2 = getSystemLocale.intl;
       const string = intl2.string;
-      const t = require(1236) /* getSystemLocale */.t;
+      const t = getSystemLocale.t;
       if (isThreadResult) {
         stringResult = string(t["wR+Fuo"]);
       } else {
@@ -45,16 +48,16 @@ export const getMuteSettingLabel = function getMuteSettingLabel(channel, guild) 
   } else {
     let stringResult1;
     if (null != guild) {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      stringResult1 = intl.string(require(1236) /* getSystemLocale */.t.mvxGko);
+      const intl = getSystemLocale.intl;
+      stringResult1 = intl.string(getSystemLocale.t.mvxGko);
     }
     return stringResult1;
   }
 };
 export const getMuteSettingSublabel = function getMuteSettingSublabel(channel, guild) {
   if (null != channel) {
-    const obj = require(4984) /* computeChannelName */;
-    let name = obj.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true);
+    const obj = computeChannelName;
+    let name = obj.computeChannelName(channel, closure_9, closure_7, true);
   } else if (null != guild) {
     name = guild.name;
   }
@@ -64,37 +67,33 @@ export const handleUnmutePress = function handleUnmutePress(channelId, guildId) 
   const channel = store.getChannel(channelId);
   if (null != channel) {
     if (channel.isThread()) {
-      let tmp7Result = tmp7(7512);
+      let tmp7Result = tmp7(7550);
       const result = tmp7Result.setNotificationSettings(channel, { muted: false });
     } else {
-      tmp7Result = tmp7(6798);
-      const result1 = tmp7Result.updateChannelOverrideSettings(guildId, channel.id, { muted: false, mute_config: null }, require(6795) /* UserNotificationSettings */.NotificationLabels.Unmuted);
+      tmp7Result = tmp7(6835);
+      const result1 = tmp7Result.updateChannelOverrideSettings(guildId, channel.id, { muted: false, mute_config: null }, UserNotificationSettings.NotificationLabels.Unmuted);
     }
   }
 };
 export const handleMuteSettingPress = function handleMuteSettingPress(arg0) {
-  let channelId;
-  let guildId;
-  let muteDurationSeconds;
-  let onOptionPress;
   ({ guildId, onOptionPress } = arg0);
   ({ channelId, muteDurationSeconds } = arg0);
-  const muteSettings = importAll(10085).getMuteSettings(muteDurationSeconds);
+  const muteSettings = getMuteSettingsAll.getMuteSettings(muteDurationSeconds);
   const channel = store.getChannel(channelId);
   guild = guild.getGuild(guildId);
   if (null != onOptionPress) {
     onOptionPress(muteSettings);
   } else if (null != channel) {
     if (channel.isThread()) {
-      let tmp4Result = tmp4(7512);
+      let tmp4Result = tmp4(7550);
       const result = tmp4Result.setNotificationSettings(channel, muteSettings);
     } else {
-      tmp4Result = tmp4(6798);
-      const result1 = tmp4Result.updateChannelOverrideSettings(guildId, channel.id, muteSettings, require(6795) /* UserNotificationSettings */.NotificationLabels.Muted);
+      tmp4Result = tmp4(6835);
+      const result1 = tmp4Result.updateChannelOverrideSettings(guildId, channel.id, muteSettings, UserNotificationSettings.NotificationLabels.Muted);
     }
   } else if (null != guild) {
-    const result2 = importDefault(6798).updateGuildNotificationSettings(guild.id, muteSettings, require(6795) /* UserNotificationSettings */.NotificationLabels.Muted);
-    const obj5 = importDefault(6798);
+    const result2 = _modDef6835.updateGuildNotificationSettings(guild.id, muteSettings, UserNotificationSettings.NotificationLabels.Muted);
+    const obj5 = _modDef6835;
   }
 };
 export const getMuteSettings = function getMuteSettings(arg0) {
@@ -110,8 +109,8 @@ export const getMuteSettings = function getMuteSettings(arg0) {
   } else {
     const guildId = id.getGuildId();
     if (id.isThread()) {
-      let muteConfig = storeThread.getMuteConfig(id.id);
-      let isMutedResult = storeThread.isMuted(id.id);
+      let muteConfig = closure_4.getMuteConfig(id.id);
+      let isMutedResult = closure_4.isMuted(id.id);
     } else {
       muteConfig = store2.getChannelMuteConfig(guildId, id.id);
       isMutedResult = store2.isChannelMuted(guildId, id.id);
@@ -124,47 +123,47 @@ export const getMuteSettings = function getMuteSettings(arg0) {
 };
 export const getMessageNotificationsText = function getMessageNotificationsText(messageNotifications) {
   if (constants2.ALL_MESSAGES === messageNotifications) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(require(1236) /* getSystemLocale */.t.DZi15z);
+    const intl3 = getSystemLocale.intl;
+    return intl3.string(getSystemLocale.t.DZi15z);
   } else if (tmp.ONLY_MENTIONS === messageNotifications) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(require(1236) /* getSystemLocale */.t.xGICju);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(getSystemLocale.t.xGICju);
   } else if (tmp.NO_MESSAGES === messageNotifications) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.CtVGyQ);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.CtVGyQ);
   } else {
     return null;
   }
 };
 export const getMuteOptions = function getMuteOptions() {
   let obj = { label: null, duration: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["8ot6gv"]);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["8ot6gv"]);
   obj[1] = MuteUntilSeconds.MINUTES_15;
   const items = [obj, , , , , ];
   obj = { label: null, duration: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.UMWBZr);
+  const intl2 = getSystemLocale.intl;
+  obj[0] = intl2.string(getSystemLocale.t.UMWBZr);
   obj[1] = MuteUntilSeconds.HOURS_1;
   items[1] = obj;
   obj = { label: null, duration: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.QmYWtu);
+  const intl3 = getSystemLocale.intl;
+  obj[0] = intl3.string(getSystemLocale.t.QmYWtu);
   obj[1] = MuteUntilSeconds.HOURS_3;
   items[2] = obj;
-  const obj1 = { label: null, duration: null };
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj1[0] = intl4.string(require(1236) /* getSystemLocale */.t.EpAXPC);
+  obj1 = { label: null, duration: null };
+  const intl4 = getSystemLocale.intl;
+  obj1[0] = intl4.string(getSystemLocale.t.EpAXPC);
   obj1[1] = MuteUntilSeconds.HOURS_8;
   items[3] = obj1;
   const obj2 = { label: null, duration: null };
-  const intl5 = require(1236) /* getSystemLocale */.intl;
-  obj2[0] = intl5.string(require(1236) /* getSystemLocale */.t["755t4q"]);
+  const intl5 = getSystemLocale.intl;
+  obj2[0] = intl5.string(getSystemLocale.t["755t4q"]);
   obj2[1] = MuteUntilSeconds.HOURS_24;
   items[4] = obj2;
   const obj3 = { label: null, duration: null };
-  const intl6 = require(1236) /* getSystemLocale */.intl;
-  obj3[0] = intl6.string(require(1236) /* getSystemLocale */.t.r3LawO);
+  const intl6 = getSystemLocale.intl;
+  obj3[0] = intl6.string(getSystemLocale.t.r3LawO);
   obj3[1] = MuteUntilSeconds.ALWAYS;
   items[5] = obj3;
   return items;

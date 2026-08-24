@@ -1,11 +1,13 @@
-// Module ID: 17148
-// Function ID: 17149
+// Module ID: 17242
+// Function ID: 17243
 // Dependencies: [676, 595, 2]
 
-// Module 17148
-import { TOKEN_KEY } from "ME";
+// Module 17242
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/headless_tasks/HeadlessTaskUtils.tsx");
+const TOKEN_KEY = ME.TOKEN_KEY;
+const result = set.fileFinishedImporting("modules/headless_tasks/HeadlessTaskUtils.tsx");
 
 export default {
   awaitStorage(arg0) {

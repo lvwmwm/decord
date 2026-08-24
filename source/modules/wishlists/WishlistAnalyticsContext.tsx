@@ -1,12 +1,12 @@
-// Module ID: 12326
-// Function ID: 12327
+// Module ID: 12378
+// Function ID: 12379
 // Name: context
 // Dependencies: [19, 21, 2]
 // Exports: WishlistAnalyticsProvider, useWishlistAnalyticsContext
 
-// Module 12326 (context)
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 12378 (context)
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 let c0 = importAllResult;
 const context = importAllResult.createContext(null);

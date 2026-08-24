@@ -1,18 +1,19 @@
-// Module ID: 5520
-// Function ID: 5521
+// Module ID: 5525
+// Function ID: 5526
 // Name: AvatarLokyExample
-// Dependencies: [21, 5449, 5521, 2]
+// Dependencies: [21, 5454, 5526, 2]
 // Exports: AvatarLokyExample
 
-// Module 5520 (AvatarLokyExample)
-import { jsx } from "jsxProd";
+// Module 5525 (AvatarLokyExample)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5526 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarLokyExample.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarLokyExample.native.tsx");
 
 export const AvatarLokyExample = function AvatarLokyExample(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const AvatarLokyExample = function AvatarLokyExample(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5521);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AvatarLokyExample = function AvatarLokyExample(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

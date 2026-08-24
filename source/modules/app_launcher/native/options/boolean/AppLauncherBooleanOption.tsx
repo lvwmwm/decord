@@ -1,28 +1,25 @@
-// Module ID: 11355
-// Function ID: 11356
+// Module ID: 11406
+// Function ID: 11407
 // Name: AppLauncherBooleanOption
-// Dependencies: [32, 19, 21, 4661, 712, 8083, 2]
+// Dependencies: [32, 19, 21, 4668, 712, 8122, 2]
 // Exports: default
 
-// Module 11355 (AppLauncherBooleanOption)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11406 (AppLauncherBooleanOption)
+import ThemesDefault from "Themes" /* 712 */;
+import Form from "Form" /* 8122 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 createCacheKey = { container: null };
-createCacheKey = { flexDirection: "row", width: "100%", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.lg, alignItems: "center" };
+createCacheKey = { flexDirection: "row", width: "100%", backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.lg, alignItems: "center" };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/options/boolean/AppLauncherBooleanOption.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/options/boolean/AppLauncherBooleanOption.tsx");
 
 export default function AppLauncherBooleanOption(arg0) {
-  let dependencyMap;
-  let hasError;
-  let option;
-  let require;
-  let style;
   ({ initialValue: require, onPress: dependencyMap } = arg0);
   let first;
   let React;
@@ -39,8 +36,8 @@ export default function AppLauncherBooleanOption(arg0) {
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  const items = [createCacheKey().container, style];
-  return jsx(require(8083) /* Form */.FormCheckboxRow, {
+  const items = [callback().container, style];
+  return jsx(Form.FormCheckboxRow, {
     start: true,
     end: true,
     style: items,

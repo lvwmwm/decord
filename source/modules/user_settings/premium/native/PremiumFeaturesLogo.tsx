@@ -1,29 +1,33 @@
-// Module ID: 9330
-// Function ID: 9331
+// Module ID: 9367
+// Function ID: 9368
 // Name: PremiumFeaturesLogo
-// Dependencies: [19, 1924, 21, 9331, 7408, 5449, 4039, 2]
+// Dependencies: [19, 1924, 21, 9368, 7446, 5454, 4042, 2]
 // Exports: default
 
-// Module 9330 (PremiumFeaturesLogo)
-import "noop";
-import { PremiumTypes } from "GuildFeatures";
-import { jsx } from "jsxProd";
+// Module 9367 (PremiumFeaturesLogo)
+import noopAll from "noop" /* 19 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
+import registerAssetDefault from "registerAsset" /* 7446 */;
+import registerAssetDefault2 from "registerAsset" /* 9368 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesLogo.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesLogo.tsx");
 
 export default function PremiumFeaturesLogo(premiumType) {
   premiumType = premiumType.premiumType;
   if (premiumType === PremiumTypes.TIER_0) {
-    let tmp3 = importDefault(9331);
+    let tmp3 = registerAssetDefault2;
     let tmp = importDefault;
   } else {
     tmp = importDefault;
-    tmp3 = importDefault(7408);
+    tmp3 = registerAssetDefault;
   }
   const obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, resizeMode: "contain", source: null };
-  const tmpResult = tmp(5449);
-  obj[1] = require(4039) /* getPremiumPlanItem */.getPremiumTypeDisplayName(premiumType);
+  const tmpResult = tmp(5454);
+  obj[1] = getPremiumPlanItem.getPremiumTypeDisplayName(premiumType);
   obj[3] = premiumType.style;
   obj[5] = tmp3;
   return <tmpResult accessible accessibilityLabel={null} accessibilityRole="header" style={null} resizeMode="contain" source={null} />;

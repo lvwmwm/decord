@@ -1,17 +1,19 @@
-// Module ID: 9953
-// Function ID: 9954
+// Module ID: 9992
+// Function ID: 9993
 // Name: get more
-// Dependencies: [17, 9954, 9955, 9956, 9957, 2]
+// Dependencies: [17, 9993, 9994, 9995, 9996, 2]
 
-// Module 9953 (get more)
-import { Platform } from "get ActivityIndicator";
+// Module 9992 (get more)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const Platform = get_ActivityIndicator.Platform;
 const obj = {};
-Object.defineProperty(obj, "more", { get: () => require(9954) /* registerAsset */, set: undefined });
-Object.defineProperty(obj, "share", { get: () => require(9955) /* registerAsset */, set: undefined });
-Object.defineProperty(obj, "revoke", { get: () => require(9956) /* registerAsset */, set: undefined });
-Object.defineProperty(obj, "copy", { get: () => require(9957) /* registerAsset */, set: undefined });
+Object.defineProperty(obj, "more", { get: () => require(9993) /* registerAsset */, set: undefined });
+Object.defineProperty(obj, "share", { get: () => require(9994) /* registerAsset */, set: undefined });
+Object.defineProperty(obj, "revoke", { get: () => require(9995) /* registerAsset */, set: undefined });
+Object.defineProperty(obj, "copy", { get: () => require(9996) /* registerAsset */, set: undefined });
 const frozen = Object.freeze(obj);
-const result = require("registerAsset").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteIcons.tsx");
+const result = set.fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteIcons.tsx");
 
 export default frozen;

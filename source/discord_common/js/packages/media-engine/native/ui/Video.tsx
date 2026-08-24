@@ -1,9 +1,12 @@
-// Module ID: 4573
-// Function ID: 4574
+// Module ID: 4578
+// Function ID: 4579
 // Name: Video
-// Dependencies: [4574, 2]
+// Dependencies: [4579, 2]
 
-// Module 4573 (Video)
+// Module 4578 (Video)
+import set from "set" /* 2 */;
+import loggerDefault from "logger" /* 4579 */;
+
 class Video {
   constructor(arg0) {
     return require("logger")(global, Video.onContainerResized);
@@ -12,6 +15,6 @@ class Video {
 Video.onContainerResized = () => {
 
 };
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/Video.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/Video.tsx");
 
 export default Video;

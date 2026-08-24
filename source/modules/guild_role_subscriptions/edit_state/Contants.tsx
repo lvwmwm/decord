@@ -1,13 +1,15 @@
-// Module ID: 14576
-// Function ID: 14577
+// Module ID: 14644
+// Function ID: 14645
 // Name: result
-// Dependencies: [676, 1985, 2]
+// Dependencies: [676, 1986, 2]
 
-// Module 14576 (result)
-import fromServerArray from "fromServerArray";
+// Module 14644 (result)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import fromServerArray from "fromServerArray" /* 1986 */;
 
-const result = fromServerArray.constructGuildRoleInPlace({ id: "0", guildId: "0", name: "", mentionable: false, managed: false, position: 0, hoist: false, permissions: require("ME").Permissions.SEND_MESSAGES, color: 0, colors: { primary_color: 0, secondary_color: null, tertiary_color: null }, colorString: "0", colorStrings: { primaryColor: "0", secondaryColor: null, tertiaryColor: null }, icon: null, unicodeEmoji: null, flags: 0, description: null, tags: {}, version: 0 });
-const obj = { id: "0", guildId: "0", name: "", mentionable: false, managed: false, position: 0, hoist: false, permissions: require("ME").Permissions.SEND_MESSAGES, color: 0, colors: { primary_color: 0, secondary_color: null, tertiary_color: null }, colorString: "0", colorStrings: { primaryColor: "0", secondaryColor: null, tertiaryColor: null }, icon: null, unicodeEmoji: null, flags: 0, description: null, tags: {}, version: 0 };
-const result1 = require("set").fileFinishedImporting("modules/guild_role_subscriptions/edit_state/Contants.tsx");
+const result = fromServerArray.constructGuildRoleInPlace({ id: "0", guildId: "0", name: "", mentionable: false, managed: false, position: 0, hoist: false, permissions: ME.Permissions.SEND_MESSAGES, color: 0, colors: { primary_color: 0, secondary_color: null, tertiary_color: null }, colorString: "0", colorStrings: { primaryColor: "0", secondaryColor: null, tertiaryColor: null }, icon: null, unicodeEmoji: null, flags: 0, description: null, tags: {}, version: 0 });
+const obj = { id: "0", guildId: "0", name: "", mentionable: false, managed: false, position: 0, hoist: false, permissions: ME.Permissions.SEND_MESSAGES, color: 0, colors: { primary_color: 0, secondary_color: null, tertiary_color: null }, colorString: "0", colorStrings: { primaryColor: "0", secondaryColor: null, tertiaryColor: null }, icon: null, unicodeEmoji: null, flags: 0, description: null, tags: {}, version: 0 };
+const result1 = set.fileFinishedImporting("modules/guild_role_subscriptions/edit_state/Contants.tsx");
 
 export const DEFAULT_PREVIEW_ROLE = result;

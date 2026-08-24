@@ -4,9 +4,11 @@
 // Dependencies: [599, 722, 729, 762]
 
 // Module 728 (castPath)
+import _mod599 from "module_599" /* 599 */;
+
 
 export default function castPath(arg0, arg1) {
-  if (require(599)(arg0)) {
+  if (_mod599(arg0)) {
     return arg0;
   } else if (tmp(722)(arg0, arg1)) {
     const items = [arg0];

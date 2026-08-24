@@ -1,10 +1,10 @@
-// Module ID: 16760
-// Function ID: 16761
+// Module ID: 16853
+// Function ID: 16854
 // Name: set
 // Dependencies: [2]
 
-// Module 16760 (set)
-import set from "set";
+// Module 16853 (set)
+import set from "set" /* 2 */;
 
 const obj = { ALL: null };
 let set = new Set(["conversation", "forum_post", "message", "message_bundle"]);

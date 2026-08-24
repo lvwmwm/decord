@@ -1,17 +1,20 @@
-// Module ID: 13271
-// Function ID: 13272
+// Module ID: 13329
+// Function ID: 13330
 // Name: resetStates
-// Dependencies: [589, 6778, 709, 2]
+// Dependencies: [589, 6815, 709, 2]
 
-// Module 13271 (resetStates)
-import { Store } from "initialize";
+// Module 13329 (resetStates)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 6815 */;
 
 function resetStates() {
-  let closure_3 = {};
+  closure_3 = {};
 }
 let closure_2 = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED" };
 let closure_3 = {};
 let c4 = 0;
+const Store = initializeDefault.Store;
 class GuildFriendshipStore extends Store {
 }
 const prototype = GuildFriendshipStore.prototype;
@@ -37,11 +40,11 @@ prototype["fetchFriendMembersIfNotFetched"] = function fetchFriendMembersIfNotFe
     const obj = { fetchState: null, foundMembers: 0, notFoundMembers: 0 };
     obj[0] = tmp4.FETCHING;
     dependencyMap[id1] = obj;
-    const membersById = importDefault(6778).requestMembersById(id1, items, false);
-    const obj2 = importDefault(6778);
+    const membersById = showTooManyUserGuildsAlertDefault.requestMembersById(id1, items, false);
+    const obj2 = showTooManyUserGuildsAlertDefault;
   }
 };
-const guildFriendshipStore = new GuildFriendshipStore(require("dispatcher"), {
+const guildFriendshipStore = new GuildFriendshipStore(dispatcherDefault, {
   CONNECTION_OPEN: resetStates,
   LOGOUT: resetStates,
   RELATIONSHIP_ADD: resetStates,
@@ -73,6 +76,6 @@ const guildFriendshipStore = new GuildFriendshipStore(require("dispatcher"), {
     }
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/relationships/GuildFriendshipStore.tsx");
+const result = require("set").fileFinishedImporting("modules/relationships/GuildFriendshipStore.tsx");
 
 export default guildFriendshipStore;

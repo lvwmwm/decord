@@ -4,14 +4,16 @@
 // Dependencies: [109, 19, 17, 21, 1688, 1793, 1797]
 
 // Module 1796 (AnimatedScrollView)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import "noop";
-import { jsx } from "jsxProd";
-import createAnimatedComponent from "createAnimatedComponent";
-import isReactRendering from "isReactRendering";
+import noopDefault from "noop" /* 19 */;
+import useAnimatedGestureHandler from "useAnimatedGestureHandler" /* 1797 */;
+import closure_3 from "_objectWithoutProperties" /* 109 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createAnimatedComponent from "createAnimatedComponent" /* 1688 */;
+import isReactRendering from "isReactRendering" /* 1793 */;
 
-const require = arg1;
+require = arg1;
 let closure_2 = ["scrollViewOffset"];
+noopDefault;
 let closure_5 = createAnimatedComponent.createAnimatedComponent(require("get ActivityIndicator").ScrollView);
 
 export const AnimatedScrollView = isReactRendering.componentWithRef((scrollViewOffset) => {
@@ -19,12 +21,12 @@ export const AnimatedScrollView = isReactRendering.componentWithRef((scrollViewO
   scrollViewOffset = scrollViewOffset.scrollViewOffset;
   const tmp2 = callback(scrollViewOffset, closure_2);
   if (null === arg1) {
-    let obj = require(1797) /* useAnimatedGestureHandler */;
+    let obj = useAnimatedGestureHandler;
     animatedRef = obj.useAnimatedRef();
   }
   if (scrollViewOffset) {
-    scrollViewOffset = require(1797) /* useAnimatedGestureHandler */.useScrollViewOffset(animatedRef, scrollViewOffset);
-    const obj2 = require(1797) /* useAnimatedGestureHandler */;
+    scrollViewOffset = useAnimatedGestureHandler.useScrollViewOffset(animatedRef, scrollViewOffset);
+    const obj2 = useAnimatedGestureHandler;
   }
   if (!("scrollEventThrottle" in tmp2)) {
     tmp2.scrollEventThrottle = 1;

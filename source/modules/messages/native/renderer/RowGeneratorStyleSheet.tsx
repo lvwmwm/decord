@@ -1,20 +1,22 @@
-// Module ID: 8161
-// Function ID: 8162
+// Module ID: 8200
+// Function ID: 8201
 // Name: processColorOrThrow
 // Dependencies: [17, 2]
 // Exports: processColorOrThrow
 
-// Module 8161 (processColorOrThrow)
-import { processColor } from "get ActivityIndicator";
+// Module 8200 (processColorOrThrow)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-const result = require("set").fileFinishedImporting("modules/messages/native/renderer/RowGeneratorStyleSheet.tsx");
+const processColor = get_ActivityIndicator.processColor;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/RowGeneratorStyleSheet.tsx");
 
 export const processColorOrThrow = function processColorOrThrow(arg0) {
   const tmp = processColor(arg0);
   if (null == tmp) {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("Unable to parse color: \"" + arg0 + "\"");
+    error = new Error("Unable to parse color: \"" + arg0 + "\"");
     throw error;
   } else {
     return tmp;

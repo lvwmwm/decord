@@ -1,16 +1,14 @@
-// Module ID: 14538
-// Function ID: 14539
-// Dependencies: [19, 17, 6716, 14447, 21, 4661, 14448, 4115, 4744, 8125, 2]
+// Module ID: 14606
+// Function ID: 14607
+// Dependencies: [19, 17, 6753, 14515, 21, 4668, 14516, 4119, 4749, 8164, 2]
 
-// Module 14538
-import importAllResult from "noop";
-import { QuestDockMode } from "QuestsExperimentLocations";
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14606
+import importAllResult from "noop" /* 19 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 6753 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14515 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 let c3 = importAllResult;
 ({ QUEST_DOCK_MODE_CHANGE_PHYSICS: c5, QUEST_DOCK_EXPANDED_HEIGHT: closure_6 } = QUEST_DOCK_COLLAPSED_HEIGHT);
@@ -33,20 +31,20 @@ const memoResult = importAllResult.memo(function QuestDockContentExpanded(childr
   const fn = function s() {
     let tmp;
     if ("content" !== expandedHeight) {
-      tmp = outer1_6;
+      tmp = closure_1_6;
     }
     let obj = { height: tmp, width: windowDimensions.get().width, opacity: null, transform: null };
     let num = 0;
-    if (activeQuestDockMode.get() === outer1_4.EXPANDED) {
+    if (activeQuestDockMode.get() === closure_1_4.EXPANDED) {
       num = 1;
     }
-    obj[2] = expandedHeight(questDockWrapperSpecs[8]).withSpring(num, outer1_5);
+    obj[2] = expandedHeight(questDockWrapperSpecs[8]).withSpring(num, closure_1_5);
     obj = { translateX: null };
     const obj2 = windowDimensions;
     const obj3 = expandedHeight(questDockWrapperSpecs[8]);
     const tmp2 = expandedHeight;
     const tmp3 = questDockWrapperSpecs;
-    obj[0] = expandedHeight(questDockWrapperSpecs[8]).withSpring((questDockWrapperSpecs.get().width - obj2.get().width) / 2, outer1_5);
+    obj[0] = expandedHeight(questDockWrapperSpecs[8]).withSpring((questDockWrapperSpecs.get().width - obj2.get().width) / 2, closure_1_5);
     const items = [obj];
     obj[3] = items;
     return obj;
@@ -59,6 +57,6 @@ const memoResult = importAllResult.memo(function QuestDockContentExpanded(childr
   const style = [callback().wrapper, animatedStyle];
   return jsx(activeQuestDockMode(questDockWrapperSpecs[9]), { style, children: children.children });
 });
-const result = require("QuestsExperimentLocations").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentExpanded.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentExpanded.tsx");
 
 export default memoResult;

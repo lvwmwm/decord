@@ -1,31 +1,31 @@
-// Module ID: 9553
-// Function ID: 9554
+// Module ID: 9590
+// Function ID: 9591
 // Name: useFriendsSinceDate
-// Dependencies: [1994, 4030, 676, 647, 5224, 2]
+// Dependencies: [1995, 4033, 676, 647, 5229, 2]
 // Exports: useFriendsSinceDate
 
-// Module 9553 (useFriendsSinceDate)
-import _getSystemLocale from "_getSystemLocale";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import { RelationshipTypes } from "ME";
+// Module 9590 (useFriendsSinceDate)
+import closure_2 from "_getSystemLocale" /* 1995 */;
+import closure_3 from "markAllUserIdListsStale" /* 4033 */;
+import { RelationshipTypes } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/user_profile/hooks/useFriendsSinceDate.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useFriendsSinceDate.tsx");
 
 export const useFriendsSinceDate = function useFriendsSinceDate(userId) {
   const _require = userId;
-  const items = [_getSystemLocale];
+  const items = [closure_2];
   const stateFromStores = _require(647).useStateFromStores(items, () => locale.locale);
   const obj = _require(647);
-  const items1 = [markAllUserIdListsStale];
+  const items1 = [closure_3];
   const items2 = [userId];
   const stateFromStores1 = _require(647).useStateFromStores(items1, () => {
     let since = null;
-    if (outer1_3.getRelationshipType(closure_0) === outer1_4.FRIEND) {
-      since = outer1_3.getSince(closure_0);
+    if (closure_1_3.getRelationshipType(closure_0) === closure_1_4.FRIEND) {
+      since = closure_1_3.getSince(closure_0);
     }
     return since;
   }, items2);
   const obj2 = _require(647);
-  return _require(5224).getCreatedAtDate(stateFromStores1, stateFromStores);
+  return _require(5229).getCreatedAtDate(stateFromStores1, stateFromStores);
 };

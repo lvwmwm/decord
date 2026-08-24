@@ -1,10 +1,12 @@
-// Module ID: 4178
-// Function ID: 4179
+// Module ID: 4182
+// Function ID: 4183
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4178 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/CheckpointKnickKnacks.riv.js");
+// Module 4182 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/CheckpointKnickKnacks.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/7d45a8f4d82d4658fbc0bb0d4e6d4a262ee3873bd3a8632fba10dd1420e5c4b7.riv";
 export const metadata = { fileBytes: 45973 };

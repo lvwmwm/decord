@@ -5,15 +5,16 @@
 // Exports: useRoute
 
 // Module 1540 (useRoute)
-import noop from "noop";
+import context2 from "context" /* 1541 */;
+import closure_2 from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 
 export const useRoute = function useRoute() {
-  const context = React.useContext(require(1541) /* context */.NavigationRouteContext);
+  const context = React.useContext(context2.NavigationRouteContext);
   if (undefined === context) {
     const _Error = Error;
-    const error = new Error("Couldn't find a route object. Is your component inside a screen in a navigator?");
+    error = new Error("Couldn't find a route object. Is your component inside a screen in a navigator?");
     throw error;
   } else {
     return context;

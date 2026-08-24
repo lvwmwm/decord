@@ -4,11 +4,13 @@
 // Dependencies: [817]
 
 // Module 1014 (convertToNormalizedObject)
-const require = arg1;
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+
+require = arg1;
 const dependencyMap = arg6;
 const value = "value";
 arg5.convertToNormalizedObject = function convertToNormalizedObject(data) {
-  let obj = require(817) /* registerSpanErrorInstrumentation */;
+  let obj = registerSpanErrorInstrumentation;
   const normalizeResult = obj.normalize(data);
   if (null !== normalizeResult) {
     if (typeof normalizeResult === "object") {

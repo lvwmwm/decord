@@ -1,45 +1,43 @@
-// Module ID: 14507
-// Function ID: 14508
+// Module ID: 14575
+// Function ID: 14576
 // Name: VideoQuestTranscriptActionSheet
-// Dependencies: [19, 17, 7455, 21, 4661, 712, 1629, 10486, 10477, 7175, 6949, 1236, 6952, 4733, 4734, 2]
+// Dependencies: [19, 17, 7493, 21, 4668, 712, 1629, 10525, 10516, 7213, 6987, 1236, 6990, 4738, 4739, 2]
 // Exports: default
 
-// Module 14507 (VideoQuestTranscriptActionSheet)
-import noop from "noop";
-import { ActivityIndicator } from "get ActivityIndicator";
-import _toPropertyKey from "_toPropertyKey";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14575 (VideoQuestTranscriptActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import closure_3 from "noop" /* 19 */;
+import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
+import _toPropertyKey from "_toPropertyKey" /* 7493 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 ({ FetchStatus: c5, useVideoQuestUIStore: closure_6 } = _toPropertyKey);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { content: null, loadingSpinner: null };
-createCacheKey = { paddingBottom: require("Themes").space.PX_8 };
+createCacheKey = { paddingBottom: ThemesDefault.space.PX_8 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { height: 100 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("_toPropertyKey").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestTranscriptActionSheet.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestTranscriptActionSheet.tsx");
 
 export default function VideoQuestTranscriptActionSheet(quest) {
   quest = quest.quest;
-  let importDefault;
-  const tmp = createCacheKey();
+  importDefault = undefined;
+  const tmp = callback3();
   const tmp2 = callback((transcript) => transcript.transcript);
   importDefault = tmp2;
   let items = [quest, tmp2];
   const effect = React.useEffect(() => {
-    const questAsset = quest(outer1_2[7]).getQuestAsset(quest, quest(outer1_2[7]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, true);
-    let tmp6 = null == c1 || tmp5.questId !== tmp3.id;
+    const questAsset = quest(closure_1_2[7]).getQuestAsset(quest, quest(closure_1_2[7]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, true);
+    let tmp6 = null == closure_1 || tmp5.questId !== tmp3.id;
     if (!tmp6) {
-      tmp6 = tmp5.fetchStatus === outer1_5.NONE;
+      tmp6 = tmp5.fetchStatus === closure_1_5.NONE;
     }
     if (!tmp6) {
-      let tmp9 = tmp5.fetchStatus === outer1_5.SUCCESS;
+      let tmp9 = tmp5.fetchStatus === closure_1_5.SUCCESS;
       if (tmp9) {
         let url;
         if (questAsset != null) {
@@ -50,8 +48,8 @@ export default function VideoQuestTranscriptActionSheet(quest) {
       tmp6 = tmp9;
     }
     if (tmp6) {
-      const videoTranscript = quest(outer1_2[8]).fetchVideoTranscript(tmp3, true);
-      const tmpResult = quest(outer1_2[8]);
+      const videoTranscript = quest(closure_1_2[8]).fetchVideoTranscript(tmp3, true);
+      const tmpResult = quest(closure_1_2[8]);
     }
   }, items);
   let text;
@@ -61,7 +59,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   const items1 = [text];
   const memo = React.useMemo(() => {
     let text;
-    if (c1 != null) {
+    if (closure_1 != null) {
       text = tmp.text;
     }
     if (null == text) {
@@ -78,9 +76,9 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   obj = { title: null };
   const intl = quest(1236).intl;
   obj[0] = intl.string(quest(1236).t["1YS80z"]);
-  obj[1] = callback2(quest(6949).BottomSheetTitleHeader, obj);
-  obj = { contentContainerStyle: { paddingBottom: importDefault(1629)().bottom }, children: null };
-  const obj1 = { spacing: 16, style: tmp.content, children: null };
+  obj[1] = callback2(quest(6987).BottomSheetTitleHeader, obj);
+  obj = { contentContainerStyle: { paddingBottom: useSafeAreaInsetsDefault().bottom }, children: null };
+  obj1 = { spacing: 16, style: tmp.content, children: null };
   let fetchStatus;
   if (tmp2 != null) {
     fetchStatus = tmp2.fetchStatus;
@@ -93,7 +91,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   }
   const items2 = [tmp7Result, memo.length > 0 && memo.map((children) => callback(quest(table[14]).Text, { variant: "heading-md/normal", color: "text-muted", children }, arg1))];
   obj1[2] = items2;
-  obj[1] = closure_8(quest(4733).Stack, obj1);
-  obj[2] = callback2(quest(6952).BottomSheetScrollView, obj);
-  return callback2(quest(7175).ActionSheet, obj);
+  obj[1] = closure_8(quest(4738).Stack, obj1);
+  obj[2] = callback2(quest(6990).BottomSheetScrollView, obj);
+  return callback2(quest(7213).ActionSheet, obj);
 };

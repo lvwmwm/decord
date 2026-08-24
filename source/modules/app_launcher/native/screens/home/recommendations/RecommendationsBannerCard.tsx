@@ -1,57 +1,50 @@
-// Module ID: 11268
-// Function ID: 11269
+// Module ID: 11319
+// Function ID: 11320
 // Name: RecommendationsBannerCard
-// Dependencies: [19, 17, 676, 21, 4661, 712, 8447, 8417, 1435, 11258, 5433, 11269, 1954, 11262, 4734, 1236, 11229, 6297, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 8486, 8456, 1435, 11309, 5438, 11320, 1954, 11313, 4739, 1236, 11280, 6328, 2]
 // Exports: default
 
-// Module 11268 (RecommendationsBannerCard)
-import noop from "noop";
-import { View } from "TableRowArrow";
-import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11319 (RecommendationsBannerCard)
+import ThemesDefault from "Themes" /* 712 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { container: null, banner: null, appDetailsContainer: null, appDetails: null, appIconContainer: null, notifsContainer: null, badge: null, promotedLabelWrapper: null };
-createCacheKey = { borderRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, width: "100%", overflow: "hidden" };
+createCacheKey = { borderRadius: ThemesDefault.radii.lg, backgroundColor: ThemesDefault.colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, width: "100%", overflow: "hidden" };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { width: "100%", height: 106, overflow: "hidden" };
-createCacheKey[2] = { padding: require("Themes").space.PX_16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-let obj1 = { padding: require("Themes").space.PX_16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-createCacheKey[3] = { marginLeft: require("Themes").space.PX_16, flexDirection: "column", flexGrow: 1, flexShrink: 1 };
+createCacheKey[2] = { padding: ThemesDefault.space.PX_16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+let obj1 = { padding: ThemesDefault.space.PX_16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+createCacheKey[3] = { marginLeft: ThemesDefault.space.PX_16, flexDirection: "column", flexGrow: 1, flexShrink: 1 };
 createCacheKey[4] = { flexShrink: 0 };
-let obj2 = { marginLeft: require("Themes").space.PX_16, flexDirection: "column", flexGrow: 1, flexShrink: 1 };
-createCacheKey[5] = { position: "absolute", display: "flex", gap: require("Themes").space.PX_4, right: require("Themes").space.PX_8, top: require("Themes").space.PX_8, alignItems: "flex-end" };
+let obj2 = { marginLeft: ThemesDefault.space.PX_16, flexDirection: "column", flexGrow: 1, flexShrink: 1 };
+createCacheKey[5] = { position: "absolute", display: "flex", gap: ThemesDefault.space.PX_4, right: ThemesDefault.space.PX_8, top: ThemesDefault.space.PX_8, alignItems: "flex-end" };
 createCacheKey[6] = {};
-let obj3 = { position: "absolute", display: "flex", gap: require("Themes").space.PX_4, right: require("Themes").space.PX_8, top: require("Themes").space.PX_8, alignItems: "flex-end" };
-createCacheKey[7] = { paddingVertical: require("Themes").space.PX_4, paddingHorizontal: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj4 = { paddingVertical: require("Themes").space.PX_4, paddingHorizontal: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg };
-const result = require("ME").fileFinishedImporting("modules/app_launcher/native/screens/home/recommendations/RecommendationsBannerCard.tsx");
+let obj3 = { position: "absolute", display: "flex", gap: ThemesDefault.space.PX_4, right: ThemesDefault.space.PX_8, top: ThemesDefault.space.PX_8, alignItems: "flex-end" };
+createCacheKey[7] = { paddingVertical: ThemesDefault.space.PX_4, paddingHorizontal: ThemesDefault.space.PX_8, backgroundColor: ThemesDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderRadius: ThemesDefault.radii.lg };
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+let obj4 = { paddingVertical: ThemesDefault.space.PX_4, paddingHorizontal: ThemesDefault.space.PX_8, backgroundColor: ThemesDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderRadius: ThemesDefault.radii.lg };
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/home/recommendations/RecommendationsBannerCard.tsx");
 
 export default function RecommendationsBannerCard(application) {
-  let icon;
-  let isFirst;
-  let isLandscape;
-  let isLast;
-  let onPress;
-  let showsPromoted;
-  let style;
   application = application.application;
   ({ onPress, isFirst, isLast, showsPromoted } = application);
   ({ style, isLandscape } = application);
   if (showsPromoted === undefined) {
     showsPromoted = false;
   }
-  const tmp = createCacheKey();
+  const tmp = callback2();
   if (!showsPromoted) {
-    let obj = application(8447);
+    let obj = application(8486);
     showsPromoted = obj.isPromotedApplication(application);
   }
-  let obj1 = application(8447);
+  obj1 = application(8486);
   const shelfBadgeTypeIfActive = obj1.getShelfBadgeTypeIfActive(application);
   let bot = application.bot;
   let id;
@@ -66,11 +59,11 @@ export default function RecommendationsBannerCard(application) {
       id = bot.id;
     }
     if (id == null) {
-      id = outer1_5;
+      id = closure_1_5;
     }
-    outer1_1(outer1_2[7])(id);
+    closure_1_1(closure_1_2[7])(id);
   }, items);
-  let obj2 = importDefault(1435);
+  let obj2 = getAvatarURLDefault;
   obj = { id: application.id, icon: application.icon, bot: application.bot, botIconFirst: true };
   const applicationIconSource = obj2.getApplicationIconSource(obj);
   if (isLandscape) {
@@ -80,7 +73,7 @@ export default function RecommendationsBannerCard(application) {
     obj[2] = onPress;
     obj[3] = isFirst;
     obj[4] = isLast;
-    let tmp12Result = callback(tmp4(11258).BaseAppRow, obj);
+    let tmp12Result = callback(tmp4(11309).BaseAppRow, obj);
   } else {
     const items1 = [tmp.container, , ];
     let num = 8;
@@ -103,8 +96,8 @@ export default function RecommendationsBannerCard(application) {
     obj3[0] = tmp.banner;
     const obj4 = { applicationBot: null, applicationEmbedded: null, applicationId: null, applicationIcon: null, overrideImageUrl: null };
     obj4[0] = application.bot;
-    const tmp10Result = tmp10(11269);
-    obj4[1] = tmp4(8447).isEmbeddedApp(application);
+    const tmp10Result = tmp10(11320);
+    obj4[1] = tmp4(8486).isEmbeddedApp(application);
     ({ id: obj8[2], icon } = application);
     obj4[3] = icon;
     obj4[4] = application.overrideImageUrl;
@@ -115,14 +108,14 @@ export default function RecommendationsBannerCard(application) {
       const obj6 = { labelType: null, replacementStyles: null };
       obj6[0] = shelfBadgeTypeIfActive;
       obj6[1] = tmp.badge;
-      const items3 = [tmp14(tmp10(11262), obj6), ];
+      const items3 = [tmp14(tmp10(11313), obj6), ];
       if (showsPromoted) {
         const obj7 = { style: null, children: null };
         obj7[0] = tmp.promotedLabelWrapper;
         const obj8 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary", children: null };
         const intl = tmp4(1236).intl;
         obj8[2] = intl.string(tmp4(1236).t["/eVltv"]);
-        obj7[1] = tmp14(tmp4(4734).Text, obj8);
+        obj7[1] = tmp14(tmp4(4739).Text, obj8);
         showsPromoted = tmp14(tmp13, obj7);
       }
       items3[1] = showsPromoted;
@@ -141,25 +134,25 @@ export default function RecommendationsBannerCard(application) {
       const obj10 = { iconSource: null, iconSize: 36, wrapperStyle: null };
       obj10[0] = applicationIconSource;
       obj10[2] = tmp.appIconContainer;
-      tmp14Result = tmp14(tmp10(11229), obj10);
+      tmp14Result = tmp14(tmp10(11280), obj10);
     }
     const items5 = [tmp14Result, , ];
     const obj11 = { style: null, children: null };
     obj11[0] = tmp.appDetails;
     const obj12 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
     obj12[3] = application.name;
-    const items6 = [callback(tmp4(4734).Text, obj12), ];
+    const items6 = [callback(tmp4(4739).Text, obj12), ];
     const obj13 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: null };
     obj13[3] = application.description;
-    items6[1] = callback(tmp4(4734).Text, obj13);
+    items6[1] = callback(tmp4(4739).Text, obj13);
     obj11[1] = items6;
     items5[1] = closure_7(View, obj11);
-    items5[2] = callback(tmp4(6297).TableRowArrow, {});
+    items5[2] = callback(tmp4(6328).TableRowArrow, {});
     obj9[1] = items5;
     items4[1] = closure_7(View, obj9);
     obj2[2] = items4;
-    tmp12Result = tmp12(tmp4(5433).PressableOpacity, obj2);
-    const tmp4Result = tmp4(8447);
+    tmp12Result = tmp12(tmp4(5438).PressableOpacity, obj2);
+    const tmp4Result = tmp4(8486);
   }
   return tmp12Result;
 };

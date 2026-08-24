@@ -1,22 +1,23 @@
-// Module ID: 9231
-// Function ID: 9232
+// Module ID: 9268
+// Function ID: 9269
 // Name: useSelectedVariantIndex
-// Dependencies: [700, 4006, 9173, 5312, 2]
+// Dependencies: [700, 4009, 9210, 5317, 2]
 // Exports: setSelectedVariantIndex, useSelectedVariantIndex
 
-// Module 9231 (useSelectedVariantIndex)
-import identity from "identity";
+// Module 9268 (useSelectedVariantIndex)
+import set from "set" /* 2 */;
+import isIterable from "isIterable" /* 4009 */;
+import identity from "identity" /* 700 */;
 
 let closure_2 = identity.createWithEqualityFn(() => {
-  const obj = { selectionStates: null };
-  obj[0] = new Map();
+  const obj = { selectionStates: new Map() };
   return obj;
-}, require("isIterable").shallow);
-const result = require("useDefaultVariantIndex").fileFinishedImporting("modules/collectibles/CollectiblesShopVariantsUIStore.tsx");
+}, isIterable.shallow);
+const result = set.fileFinishedImporting("modules/collectibles/CollectiblesShopVariantsUIStore.tsx");
 
 export const useSelectedVariantIndex = function useSelectedVariantIndex(product) {
   const _require = product;
-  let defaultVariantIndex = _require(9173).useDefaultVariantIndex(product);
+  let defaultVariantIndex = _require(9210).useDefaultVariantIndex(product);
   let tmp2 = state((selectionStates) => {
     let tmp2 = null;
     if (null != product) {
@@ -30,7 +31,7 @@ export const useSelectedVariantIndex = function useSelectedVariantIndex(product)
         }
         tmp2 = selectedVariantIndex;
       }
-      obj = product(outer1_1[3]);
+      obj = product(closure_1_1[3]);
     }
     return tmp2;
   });
@@ -41,8 +42,8 @@ export const useSelectedVariantIndex = function useSelectedVariantIndex(product)
   return defaultVariantIndex;
 };
 export const setSelectedVariantIndex = function setSelectedVariantIndex(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   state.setState((selectionStates) => {
     selectionStates = selectionStates.selectionStates;
     const value = selectionStates.get(storeListingId.storeListingId);

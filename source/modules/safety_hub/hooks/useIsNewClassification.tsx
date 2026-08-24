@@ -1,14 +1,17 @@
-// Module ID: 14113
-// Function ID: 14114
+// Module ID: 14181
+// Function ID: 14182
 // Name: useIsNewClassification
 // Dependencies: [11, 2]
 // Exports: useIsNewClassification
 
-// Module 14113 (useIsNewClassification)
-const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useIsNewClassification.tsx");
+// Module 14181 (useIsNewClassification)
+import set from "set" /* 2 */;
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+
+const result = set.fileFinishedImporting("modules/safety_hub/hooks/useIsNewClassification.tsx");
 
 export const useIsNewClassification = function useIsNewClassification(classification) {
-  const obj = importDefault(11);
-  const extractTimestampResult = importDefault(11).extractTimestamp(classification.id);
+  const obj = DISCORD_EPOCHDefault;
+  const extractTimestampResult = DISCORD_EPOCHDefault.extractTimestamp(classification.id);
   return Math.abs(extractTimestampResult - new Date().getTime()) < 86400000;
 };

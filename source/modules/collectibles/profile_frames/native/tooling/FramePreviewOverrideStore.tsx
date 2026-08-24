@@ -1,24 +1,23 @@
-// Module ID: 8947
-// Function ID: 8948
+// Module ID: 8984
+// Function ID: 8985
 // Name: measure
-// Dependencies: [5, 17, 8948, 3, 8949, 1271, 8950, 8954, 644, 2]
+// Dependencies: [5, 17, 8985, 3, 8986, 1271, 8987, 8991, 644, 2]
 
-// Module 8947 (measure)
-import enforcing from "enforcing";
-import { Image } from "get ActivityIndicator";
-import OVERRIDE_DIR from "OVERRIDE_DIR";
-import keys from "keys";
+// Module 8984 (measure)
+import timestampDefault from "timestamp" /* 3 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import OVERRIDE_DIR from "OVERRIDE_DIR" /* 8985 */;
+import keys from "keys" /* 644 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 function measure(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return new Promise((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    const size = outer1_4.getSize(closure_0, (width, height) => callback({ width, height }), (arg0) => {
-      let error = arg0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    const size = closure_1_4.getSize(closure_0, (width, height) => callback({ width, height }), (arg0) => {
+      error = arg0;
       if (!(arg0 instanceof Error)) {
         const _Error = Error;
         const _String = String;
@@ -31,9 +30,9 @@ function measure(arg0) {
 function _readManifest() {
   const self = this;
   const tmp = callback(function*() {
-    let closure_0 = tmp2;
+    closure_0 = tmp2;
     const _HermesInternal = HermesInternal;
-    closure_0 = yield outer1_0(table[4]).readFile("documents", "" + outer1_6 + "/" + outer1_5, "utf8");
+    closure_0 = yield closure_1_0(table[4]).readFile("documents", "" + closure_1_6 + "/" + closure_1_5, "utf8");
     let parsed = null;
     if (null != closure_0) {
       const _JSON = JSON;
@@ -41,7 +40,7 @@ function _readManifest() {
     }
     return parsed;
   });
-  const _readManifest = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -53,10 +52,10 @@ function _readManifest() {
 function _buildOverride() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0) {
       if (c8 === 2) {
         c8 = 3;
@@ -69,7 +68,7 @@ function _buildOverride() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -88,35 +87,35 @@ function _buildOverride() {
               return obj;
             } else {
               let arr = sorted;
-              let enforcing = tmp2;
-              let closure_1;
+              closure_3 = tmp2;
+              closure_1 = undefined;
               let layers;
-              enforcing = undefined;
+              closure_3 = undefined;
               arr = undefined;
-              let c5;
+              c5 = undefined;
               let folder;
               filename = undefined;
               c8 = undefined;
               let parsed;
               let errorType;
               let str2;
-              let closure_12;
-              let closure_13;
-              let closure_14;
+              closure_12 = undefined;
+              closure_13 = undefined;
+              closure_14 = undefined;
               let obj6;
               let styles;
-              let closure_17;
+              closure_17 = undefined;
               let _Array = Array;
               let tmp76 = lib;
               if (Array.isArray(lib.layers)) {
-                let tmp22 = outer1_1;
-                let tmp23 = outer1_2;
-                let obj2 = outer1_1(outer1_2[5]);
+                let tmp22 = closure_1_1;
+                let tmp23 = closure_1_2;
+                let obj2 = closure_1_1(closure_1_2[5]);
                 let tmp24 = c6;
                 let _HermesInternal = HermesInternal;
                 closure_1 = "file://" + obj2.getConstants().DocumentsDirPath + "/" + c6;
                 layers = [];
-                enforcing = {};
+                closure_3 = {};
                 arr = [];
                 layers = tmp76.layers;
                 let tmp25 = layers;
@@ -126,7 +125,7 @@ function _buildOverride() {
                 let tmp18 = new.target;
                 let tmp19 = new.target;
                 let str = "Malformed manifest (no layers). Re-push the frame.";
-                let error = new Error("Malformed manifest (no layers). Re-push the frame.");
+                error = new Error("Malformed manifest (no layers). Re-push the frame.");
                 let tmp21 = error;
                 throw error;
               }
@@ -148,11 +147,11 @@ function _buildOverride() {
             closure_1.return();
             let num3 = 3;
             c8 = 3;
-            let obj1 = { value: null, done: true };
+            obj1 = { value: null, done: true };
             obj1[0] = arg1;
             return obj1;
           } else {
-            let tmp66 = enforcing;
+            let tmp66 = closure_3;
             styles = arg1;
             let tmp67 = layers;
             obj2 = { layer: null, order: null, index: null };
@@ -168,15 +167,15 @@ function _buildOverride() {
             obj3[0] = closure_14;
             let tmp75 = styles;
             let num2 = 0;
-            let tmp72 = enforcing;
+            let tmp72 = closure_3;
             let tmp73 = closure_13;
             if (styles.width > 0) {
-              let tmp6 = enforcing;
+              let tmp6 = closure_3;
               let tmp7 = styles;
               let tmp8 = styles;
               num2 = styles.height / styles.width;
             }
-            let tmp9 = enforcing;
+            let tmp9 = closure_3;
             obj3[1] = num2;
             tmp72[tmp73] = obj3;
             let tmp10 = arr;
@@ -191,7 +190,7 @@ function _buildOverride() {
           let tmp26 = layers;
           let tmp27 = closure_1;
           if (closure_1 === undefined) {
-            let tmp44 = enforcing;
+            let tmp44 = closure_3;
             let tmp45 = layers;
             if (0 === layers.length) {
               let _Error3 = Error;
@@ -202,7 +201,7 @@ function _buildOverride() {
               let tmp59 = error1;
               throw error1;
             } else {
-              sorted = enforcing;
+              sorted = closure_3;
               sorted = arr;
               sorted = layers;
               sorted = lib;
@@ -219,18 +218,18 @@ function _buildOverride() {
               sorted = lib;
               let combined = null;
               if (null != lib.preview) {
-                let tmp46 = enforcing;
+                let tmp46 = closure_3;
                 let tmp47 = closure_1;
                 let tmp48 = lib;
                 let _HermesInternal3 = HermesInternal;
                 combined = "" + closure_1 + "/" + lib.preview;
               }
-              let tmp50 = enforcing;
+              let tmp50 = closure_3;
               obj4[1] = combined;
               let tmp51 = layers;
               obj4[2] = layers.map((layer) => layer.layer);
-              let tmp52 = enforcing;
-              obj4[3] = enforcing;
+              let tmp52 = closure_3;
+              obj4[3] = closure_3;
               let tmp53 = closure_17;
               let tmp54 = obj4;
               let merged = Object.assign(closure_17);
@@ -241,7 +240,7 @@ function _buildOverride() {
               return obj5;
             }
           } else {
-            let tmp77 = enforcing;
+            let tmp77 = closure_3;
             let tmp78 = arr;
             folder = 1;
             c5 = tmp28;
@@ -260,18 +259,18 @@ function _buildOverride() {
             errorType = c8.errorType;
             let tmp86 = parsed;
             if (null == parsed) {
-              let tmp29 = enforcing;
+              let tmp29 = closure_3;
               let tmp30 = errorType;
               str2 = "invalid";
               if (null != errorType) {
-                let tmp31 = enforcing;
+                let tmp31 = closure_3;
                 let tmp32 = arr;
                 let tmp33 = lib;
                 let tmp34 = layers;
                 let tmp35 = errorType;
                 str2 = lib(layers[6]).PARSE_ERROR_LABELS[errorType];
               }
-              let tmp36 = enforcing;
+              let tmp36 = closure_3;
               let _Error2 = Error;
               let tmp37 = folder;
               let tmp38 = filename;
@@ -286,7 +285,7 @@ function _buildOverride() {
               let tmp43 = error2;
               throw error2;
             } else {
-              let tmp87 = enforcing;
+              let tmp87 = closure_3;
               let tmp88 = arr;
               let tmp89 = lib;
               let tmp90 = layers;
@@ -329,7 +328,7 @@ function _buildOverride() {
       }
     })();
   });
-  const _buildOverride = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -339,14 +338,14 @@ function _buildOverride() {
   return applyArgumentsResult;
 }
 ({ MANIFEST_NAME: c5, OVERRIDE_DIR: closure_6 } = OVERRIDE_DIR);
-let error = new require("timestamp")("FramePreviewOverrideStore");
+let closure_7 = new timestampDefault("FramePreviewOverrideStore");
 let c8 = 0;
 keys = keys.create((arg0) => {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   let obj = { override: null, status: "idle", error: null, loadFromDevice: null, clear: null };
-  let closure_1 = callback(function*() {
-    if (message === 2) {
-      message = 3;
+  closure_1 = callback(function*() {
+    if (c5 === 2) {
+      c5 = 3;
       HermesBuiltin.throwTypeError();
     } else if (tmp7 === 3) {
       if (arg0 === 1) {
@@ -356,37 +355,36 @@ keys = keys.create((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
-        message = 2;
+        c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
-            message = 3;
+            c5 = 3;
             throw arg1;
           } else if (arg0 === 2) {
-            message = 3;
+            c5 = 3;
             obj = { value: null, done: true };
             obj[0] = arg1;
             return obj;
           } else {
             let isStale = tmp3;
             let callback = tmp5;
-            let closure_2;
-            let c3;
+            closure_2 = undefined;
+            c3 = undefined;
             c4 = undefined;
             isStale = function isStale() {
-              return closure_0 !== outer1_8;
+              return closure_0 !== closure_1_8;
             };
-            const sum = outer1_8 + 1;
-            outer1_8 = sum;
+            sum = sum + 1;
             callback = sum;
-            outer1_0({ status: "loading", error: null });
+            closure_1_0({ status: "loading", error: null });
             c3 = 1;
             c4 = 2;
-            message = 1;
-            const obj1 = { value: null, done: false };
+            c5 = 1;
+            obj1 = { value: null, done: false };
             obj1[0] = (function readManifest() {
               const self = this;
               const apply = closure_10.apply;
@@ -401,10 +399,10 @@ keys = keys.create((arg0) => {
           }
         } else if (1 === tmp8) {
           c3 = 0;
-          message = closure_2;
-          if (outer1_1()) {
-            message = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+          let message = closure_2;
+          if (closure_1_1()) {
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
           } else {
             const _Error = Error;
             if (message instanceof Error) {
@@ -414,18 +412,18 @@ keys = keys.create((arg0) => {
               message = String(message);
             }
             c4 = message;
-            outer1_7.error("Failed to load frame override", message);
+            closure_1_7.error("Failed to load frame override", c5);
             const obj2 = { status: "error", error: null };
             obj2[1] = c4;
-            outer1_0(obj2);
+            closure_1_0(obj2);
           }
         } else if (2 === tmp8) {
           if (arg0 === 1) {
-            message = 3;
+            c5 = 3;
             throw arg1;
           } else if (arg0 === 2) {
             c3 = 0;
-            message = 3;
+            c5 = 3;
             const obj3 = { value: null, done: true };
             obj3[0] = arg1;
             return obj3;
@@ -433,18 +431,18 @@ keys = keys.create((arg0) => {
             closure_2 = arg1;
             if (isStale()) {
               c3 = 0;
-              message = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              c5 = 3;
+              return { value: "HermesInternal", done: null };
             } else if (null == closure_2) {
-              outer1_0({ status: "error", error: "No frame on device. Ask Cap to push one (or run pushFrameOverride.mjs)." });
+              closure_1_0({ status: "error", error: "No frame on device. Ask Cap to push one (or run pushFrameOverride.mjs)." });
               c3 = 0;
-              message = 3;
+              c5 = 3;
               const obj4 = { value: null, done: true };
               obj4[0] = undefined;
               return obj4;
             } else {
               c4 = 3;
-              message = 1;
+              c5 = 1;
               const obj5 = { value: null, done: false };
               obj5[0] = (function buildOverride(closure_2) {
                 const self = this;
@@ -460,11 +458,11 @@ keys = keys.create((arg0) => {
             }
           }
         } else if (arg0 === 1) {
-          message = 3;
+          c5 = 3;
           throw arg1;
         } else if (arg0 === 2) {
           c3 = 0;
-          message = 3;
+          c5 = 3;
           const obj6 = { value: null, done: true };
           obj6[0] = arg1;
           return obj6;
@@ -475,16 +473,16 @@ keys = keys.create((arg0) => {
             obj[0] = c3;
             callback(obj);
             c3 = 0;
-            message = 3;
+            c5 = 3;
           }
           c3 = 0;
-          message = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          c5 = 3;
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp44) {
         closure_2 = tmp44;
         if (tmp4 === c3) {
-          message = tmp2;
+          c5 = tmp2;
           throw tmp44;
         } else {
           c4 = tmp;
@@ -503,12 +501,12 @@ keys = keys.create((arg0) => {
     return applyArgumentsResult;
   };
   obj[4] = function clear() {
-    outer1_8 = outer1_8 + 1;
+    closure_8 = closure_8 + 1;
     callback({ override: null, status: "idle", error: null });
   };
   return obj;
 });
-const tmp3 = new require("timestamp")("FramePreviewOverrideStore");
-const result = require("OVERRIDE_DIR").fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FramePreviewOverrideStore.tsx");
+const tmp3 = new timestampDefault("FramePreviewOverrideStore");
+const result = require("set").fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FramePreviewOverrideStore.tsx");
 
 export const useFramePreviewOverrideStore = keys;

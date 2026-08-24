@@ -1,30 +1,27 @@
-// Module ID: 16867
-// Function ID: 16868
+// Module ID: 16960
+// Function ID: 16961
 // Name: InvitesDisabledRow
-// Dependencies: [32, 19, 17, 10014, 8044, 1391, 1910, 8875, 676, 21, 4661, 1236, 1993, 8558, 4734, 6296, 8555, 11545, 589, 12, 8236, 8234, 4342, 11008, 2007, 4094, 9948, 6549, 1297, 16868, 6550, 2]
+// Dependencies: [32, 19, 17, 10053, 8083, 1391, 1910, 8912, 676, 21, 4668, 1236, 1994, 8597, 4739, 6327, 8594, 11594, 589, 12, 8276, 8274, 4346, 11047, 2008, 4097, 9987, 6580, 1297, 16961, 6581, 2]
 // Exports: default
 
-// Module 16867 (InvitesDisabledRow)
-import _slicedToArray from "_slicedToArray";
-import apply from "apply";
-import get_ActivityIndicator from "useInvitesDisabledPermission";
-import computeAlertSettings from "computeAlertSettings";
-import importDefaultResult from "createFromServer";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import handleFormInit from "handleFormInit";
-import ME from "ME";
-import jsxProd from "DATE_CONFIG";
-import createCacheKey from "createCacheKey";
+// Module 16960 (InvitesDisabledRow)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import combinedDefault from "combined" /* 1994 */;
+import registerAssetDefault from "registerAsset" /* 8594 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 8597 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "computeAlertSettings" /* 10053 */;
+import importDefaultResult from "createFromServer" /* 8083 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "createGuildRecordFromRust" /* 1910 */;
+import closure_9 from "handleFormInit" /* 8912 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let Platform;
-let c10;
-let c5;
-let closure_12;
-let closure_14;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 class InvitesDisabledRow {
   constructor(arg0) {
     invitesDisabled = global.invitesDisabled;
@@ -44,8 +41,7 @@ class InvitesDisabledRow {
       stringResult1 = intl2.format(require("getSystemLocale").t.IFBHag, obj);
     }
     tmp7 = jsx;
-    obj = { label: stringResult, subLabel: null, icon: null, checked: null, onPress: null, start: true, end: true };
-    obj[1] = jsx(require("Text").Text, { variant: "text-xs/medium", children: stringResult1 });
+    obj = { label: stringResult, subLabel: jsx(require("Text").Text, { variant: "text-xs/medium", children: stringResult1 }), icon: null, checked: null, onPress: null, start: true, end: true };
     tmp7Result = null;
     if (invitesDisabled) {
       obj1 = { source: null };
@@ -70,15 +66,15 @@ function GuildSettingsModalInstantInvites(invites) {
   let stateFromStores;
   let hasItem;
   let first;
-  let ensureGuildLoaded;
-  let createGuildRecordFromRust;
+  closure_7 = undefined;
+  closure_8 = undefined;
   let memo;
   let stateFromStoresArray;
   let callback1;
   const tmp = callback3();
   let obj = invites(flag[17]);
   invitesDisabledPermission = obj.useInvitesDisabledPermission(guild);
-  let obj1 = invites(flag[18]);
+  obj1 = invites(flag[18]);
   let items = [first];
   stateFromStores = obj1.useStateFromStores(items, () => first.getGuildIncident(guild.id));
   const features = guild.features;
@@ -101,9 +97,9 @@ function GuildSettingsModalInstantInvites(invites) {
   }
   const tmp19 = invitesDisabledPermission(stateFromStores.useState(false), 2);
   first = tmp19[0];
-  ensureGuildLoaded = tmp19[1];
+  closure_7 = tmp19[1];
   const tmp21 = invitesDisabledPermission(stateFromStores.useState(21), 2);
-  createGuildRecordFromRust = tmp21[1];
+  closure_8 = tmp21[1];
   const items1 = [invites, invitesDisabledPermission, flag];
   memo = stateFromStores.useMemo(() => {
     const sortByResult = guild(flag[19]).sortBy(invites, (channel) => {
@@ -130,11 +126,11 @@ function GuildSettingsModalInstantInvites(invites) {
       return str;
     });
     if (invitesDisabledPermission) {
-      sortByResult.unshift(outer1_17);
+      sortByResult.unshift(closure_1_17);
     }
     return sortByResult;
   }, items1);
-  const items2 = [ensureGuildLoaded];
+  const items2 = [closure_7];
   stateFromStoresArray = invites(flag[18]).useStateFromStoresArray(items2, () => sortedLinkedChannelsForGuild.getSortedLinkedChannelsForGuild(guild.id));
   const items3 = [memo, stateFromStoresArray];
   const memo1 = stateFromStores.useMemo(() => {
@@ -214,15 +210,15 @@ let closure_15 = createCacheKey.createStyles({ list: { paddingTop: 8 }, content:
 const pause_invites = "pause_invites";
 importDefaultResult = new importDefaultResult({ code: "pause_invites" });
 let closure_18 = {};
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalInstantInvites.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalInstantInvites.tsx");
 
 export default function ConnectedGuildSettingsModalInstantInvites(guildId) {
   guildId = guildId.guildId;
   let obj = guildId(589);
-  const items = [createGuildRecordFromRust];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuild(guildId));
+  const items = [closure_8];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getGuild(guildId));
   guildId(589);
-  [][0] = handleFormInit;
+  [][0] = closure_9;
   let tmp6 = null;
   if (null != stateFromStores) {
     obj = { children: null };
@@ -230,7 +226,7 @@ export default function ConnectedGuildSettingsModalInstantInvites(guildId) {
     obj[0] = stateFromStores;
     obj[1] = tmp5;
     obj[2] = guildId.contentContainerStyle;
-    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(6550).NavScrim, {})];
+    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(6581).NavScrim, {})];
     obj[0] = items1;
     tmp6 = callback2(closure_13, obj);
   }

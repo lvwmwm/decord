@@ -1,18 +1,17 @@
-// Module ID: 8268
-// Function ID: 8269
+// Module ID: 8308
+// Function ID: 8309
 // Name: getPremiumGroupInviteEmbedText
-// Dependencies: [1922, 4053, 4219, 1236, 2917, 2, 8269]
+// Dependencies: [1922, 4056, 4223, 1236, 2920, 2, 8309]
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 8268 (getPremiumGroupInviteEmbedText)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import SubscriptionStatusTypes from "SubscriptionStatusTypes";
+// Module 8308 (getPremiumGroupInviteEmbedText)
+import messagesProxyDefault from "messagesProxy" /* 2920 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4056 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ getPremiumGroupProductName: c4, HELP_CENTER_LINK: c5 } = SubscriptionStatusTypes);
-const result = require("nameFromUser").fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.native.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.native.tsx");
 for (const key10025 in require("getPriceString")) {
   let tmp4 = key10025;
   arg5[key10025] = require("getPriceString")[key10025];
@@ -20,8 +19,6 @@ for (const key10025 in require("getPriceString")) {
 }
 
 export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbedText(isSender) {
-  let channel;
-  let sender;
   ({ sender, channel } = isSender);
   const tmp = callback();
   if (isSender.isSender) {
@@ -35,7 +32,7 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
       user = user.getUser(found);
       let nameFromUserResult = null;
       if (null != user) {
-        let obj4 = sender(4219);
+        let obj4 = sender(4223);
         nameFromUserResult = obj4.nameFromUser(user);
       }
       tmp8 = nameFromUserResult;
@@ -47,20 +44,20 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
       obj = { receiverName: null, premiumGroupProductName: null };
       obj[0] = tmp8;
       obj[1] = tmp;
-      obj[0] = intl4.format(importDefault(2917).MkcFjx, obj);
+      obj[0] = intl4.format(messagesProxyDefault.MkcFjx, obj);
       const intl5 = sender(1236).intl;
-      const obj1 = { premiumGroupProductName: null };
+      obj1 = { premiumGroupProductName: null };
       obj1[0] = tmp;
-      obj[1] = intl5.formatToPlainString(importDefault(2917)["5uwv8J"], obj1);
+      obj[1] = intl5.formatToPlainString(messagesProxyDefault["5uwv8J"], obj1);
       const intl6 = sender(1236).intl;
       const obj2 = { receiverName: null };
       obj2[0] = tmp8;
-      obj[2] = intl6.formatToPlainString(importDefault(2917)["AmE0B/"], obj2);
+      obj[2] = intl6.formatToPlainString(messagesProxyDefault["AmE0B/"], obj2);
       tmp15 = obj;
     }
     return tmp15;
   } else {
-    obj = sender(4219);
+    obj = sender(4223);
     const nameFromUserResult1 = obj.nameFromUser(sender);
     const obj3 = { message: null, header: null, body: null };
     const intl = sender(1236).intl;
@@ -68,14 +65,14 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
     obj4[0] = nameFromUserResult1;
     obj4[1] = tmp;
     obj4[2] = closure_5;
-    obj3[0] = intl.format(importDefault(2917)["51Kv/4"], obj4);
+    obj3[0] = intl.format(messagesProxyDefault["51Kv/4"], obj4);
     const intl2 = sender(1236).intl;
-    obj3[1] = intl2.string(importDefault(2917).ssge1y);
+    obj3[1] = intl2.string(messagesProxyDefault.ssge1y);
     const intl3 = sender(1236).intl;
     const obj5 = { senderName: null, premiumGroupProductName: null };
     obj5[0] = nameFromUserResult1;
     obj5[1] = tmp;
-    obj3[2] = intl3.formatToPlainString(importDefault(2917).tej76V, obj5);
+    obj3[2] = intl3.formatToPlainString(messagesProxyDefault.tej76V, obj5);
     return obj3;
   }
 };

@@ -1,18 +1,19 @@
-// Module ID: 6268
-// Function ID: 6269
+// Module ID: 6299
+// Function ID: 6300
 // Name: WhiteboardAbstractUI
-// Dependencies: [21, 5449, 6269, 2]
+// Dependencies: [21, 5454, 6300, 2]
 // Exports: WhiteboardAbstractUI
 
-// Module 6268 (WhiteboardAbstractUI)
-import { jsx } from "jsxProd";
+// Module 6299 (WhiteboardAbstractUI)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6300 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WhiteboardAbstractUI.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WhiteboardAbstractUI.native.tsx");
 
 export const WhiteboardAbstractUI = function WhiteboardAbstractUI(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const WhiteboardAbstractUI = function WhiteboardAbstractUI(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6269);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const WhiteboardAbstractUI = function WhiteboardAbstractUI(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

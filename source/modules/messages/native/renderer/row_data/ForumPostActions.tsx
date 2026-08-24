@@ -1,101 +1,99 @@
-// Module ID: 8173
-// Function ID: 8174
+// Module ID: 8212
+// Function ID: 8213
 // Name: createDefaultReaction
-// Dependencies: [676, 8171, 4327, 8174, 1208, 4319, 1236, 1993, 8175, 8176, 8177, 1435, 4032, 4038, 2]
+// Dependencies: [676, 8210, 4331, 8213, 1208, 4323, 1236, 1994, 8214, 8215, 1435, 8216, 4035, 4041, 2]
 // Exports: createDefaultReaction, createForumPostActions
 
-// Module 8173 (createDefaultReaction)
-import { HelpdeskArticles } from "ME";
+// Module 8212 (createDefaultReaction)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import frozen from "frozen" /* 8210 */;
 
-let result = require("registerAsset").fileFinishedImporting("modules/messages/native/renderer/row_data/ForumPostActions.tsx");
+const HelpdeskArticles = ME.HelpdeskArticles;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/row_data/ForumPostActions.tsx");
 
 export const createDefaultReaction = function createDefaultReaction(arg0) {
-  let customGuildEmoji;
-  let defaultReactionEmoji;
-  let emojiId;
-  let emojiName;
   ({ defaultReactionEmoji, customGuildEmoji } = arg0);
-  let obj = require(8177) /* apexExperiment */;
-  const result = obj.shouldSkipAccessibilityLabels();
-  let tmp4;
+  let emojiId;
+  let str2;
+  let str;
+  let tmp;
   if (null != defaultReactionEmoji) {
-    ({ emojiId, emojiName } = defaultReactionEmoji);
+    emojiId = defaultReactionEmoji.emojiId;
+    const emojiName = defaultReactionEmoji.emojiName;
     if (null != emojiId) {
       if (null != customGuildEmoji) {
-        let str2 = customGuildEmoji.name;
+        str2 = customGuildEmoji.name;
         if (str2 == null) {
           str2 = "";
         }
-        obj = { id: null, name: "a", animated: -1795161802, src: 2030044001, displayName: 1426063874 };
+        let obj = { id: null, name: "a", animated: "a", src: "isArray", displayName: "color" };
         obj[0] = emojiId;
         obj[2] = customGuildEmoji.animated;
         obj = { id: null, animated: null, size: 48 };
         obj[0] = emojiId;
         obj[1] = customGuildEmoji.animated;
-        obj[3] = importDefault(1435).getEmojiURL(obj);
-        let accessibleEmojiDisplayName = str2;
-        if (!result) {
-          let tmpResult = tmp(4032);
-          const obj1 = { id: null, name: null, animated: null };
-          obj1[0] = emojiId;
-          obj1[1] = str2;
-          obj1[2] = customGuildEmoji.animated;
-          accessibleEmojiDisplayName = tmpResult.getAccessibleEmojiDisplayName(false, 0, obj1);
-        }
-        obj[4] = accessibleEmojiDisplayName;
-        tmp4 = obj;
-        const obj7 = importDefault(1435);
+        obj[3] = emojiId(str2[10]).getEmojiURL(obj);
+        const obj6 = emojiId(str2[10]);
+        obj1 = { expensive: null, cheap: null };
+        obj1[0] = function expensive() {
+          let obj = customGuildEmoji(str2[12]);
+          obj = { id: emojiId, name: str2, animated: customGuildEmoji.animated };
+          return obj.getAccessibleEmojiDisplayName(false, 0, obj);
+        };
+        obj1[1] = str2;
+        obj[4] = customGuildEmoji(str2[11]).getAccessibilityLabelOrCheapFallbackUnsafe(obj1);
+        tmp = obj;
+        const obj8 = customGuildEmoji(str2[11]);
       }
     }
     if (null != emojiName) {
-      let str = emojiName;
+      str = emojiName;
       if (emojiName == null) {
         str = "";
       }
-      let obj2 = { id: "Array", name: false, animated: null, src: null, displayName: 0 };
-      obj2[1] = emojiName;
-      obj2 = importDefault(4038);
-      obj2[3] = obj2.getURL(emojiName);
-      let accessibleEmojiDisplayName1 = str;
-      if (!result) {
-        tmpResult = tmp(4032);
-        const obj3 = { id: "Array", name: false, animated: null };
-        obj3[1] = str;
-        accessibleEmojiDisplayName1 = tmpResult.getAccessibleEmojiDisplayName(false, 0, obj3);
-      }
-      obj2[4] = accessibleEmojiDisplayName1;
-      tmp4 = obj2;
+      obj = { id: "Array", name: false, animated: null, src: null, displayName: 0 };
+      obj[1] = emojiName;
+      obj1 = emojiId(str2[13]);
+      obj[3] = obj1.getURL(emojiName);
+      let obj2 = customGuildEmoji(str2[11]);
+      obj2 = { expensive: null, cheap: null };
+      obj2[0] = function expensive() {
+        let obj = customGuildEmoji(str2[12]);
+        obj = { id: "Array", name: false, animated: null };
+        obj[1] = str;
+        return obj.getAccessibleEmojiDisplayName(false, 0, obj);
+      };
+      obj2[1] = str;
+      obj[4] = obj2.getAccessibilityLabelOrCheapFallbackUnsafe(obj2);
+      tmp = obj;
     }
   }
-  let tmp9;
-  if (null != tmp4) {
-    const obj4 = { emoji: null, me: false, count: 0 };
-    obj4[0] = tmp4;
-    tmp9 = obj4;
+  let tmp8;
+  if (null != tmp) {
+    const obj3 = { emoji: null, me: false, count: 0 };
+    obj3[0] = tmp;
+    tmp8 = obj3;
   }
-  return tmp9;
+  return tmp8;
 };
 export const createForumPostActions = function createForumPostActions(arg0) {
-  let defaultReaction;
-  let hasReactions;
-  let isFollowing;
-  let showMediaPostSharePrompt;
   ({ isFollowing, defaultReaction } = arg0);
   ({ hasReactions, showMediaPostSharePrompt } = arg0);
-  const getAssetUriForEmbed = require(8171) /* frozen */.getAssetUriForEmbed;
+  const getAssetUriForEmbed = frozen.getAssetUriForEmbed;
   if (isFollowing) {
-    let assetUriForEmbed = getAssetUriForEmbed(tmp4(4327));
+    let assetUriForEmbed = getAssetUriForEmbed(tmp4(4331));
     let tmp6 = tmp4;
     let tmp8 = tmp;
   } else {
-    assetUriForEmbed = getAssetUriForEmbed(tmp4(8174));
+    assetUriForEmbed = getAssetUriForEmbed(tmp4(8213));
     tmp6 = tmp4;
     tmp8 = tmp;
   }
   if (null != assetUriForEmbed) {
-    let tmp8Result = tmp8(8171);
+    let tmp8Result = tmp8(8210);
     let stringResult;
-    const assetUriForEmbed1 = tmp8Result.getAssetUriForEmbed(tmp6(4319));
+    const assetUriForEmbed1 = tmp8Result.getAssetUriForEmbed(tmp6(4323));
     if (!hasReactions) {
       let emoji;
       if (defaultReaction != null) {
@@ -113,18 +111,18 @@ export const createForumPostActions = function createForumPostActions(arg0) {
       obj[0] = intl2.string(tmp8(1236).t["5uAO7d"]);
       const intl3 = tmp8(1236).intl;
       obj = { helpArticleUrl: null };
-      const obj1 = { url: null };
-      let tmp6Result = tmp6(1993);
+      obj1 = { url: null };
+      let tmp6Result = tmp6(1994);
       obj1[0] = tmp6Result.getCreatorSupportArticleURL(HelpdeskArticles.MEDIA_CHANNEL);
       obj[0] = obj1;
       obj[1] = intl3.formatToParts(tmp8(1236).t.YtCu5p, obj);
       const intl4 = tmp8(1236).intl;
       obj[2] = intl4.string(tmp8(1236).t.C5UQC9);
-      tmp8Result = tmp8(8171);
-      obj[3] = tmp8Result.getAssetUriForEmbed(tmp6(8175));
-      obj[4] = tmp8(8171).getAssetUriForEmbed(tmp6(8176));
+      tmp8Result = tmp8(8210);
+      obj[3] = tmp8Result.getAssetUriForEmbed(tmp6(8214));
+      obj[4] = tmp8(8210).getAssetUriForEmbed(tmp6(8215));
       tmp14 = obj;
-      const tmp8Result1 = tmp8(8171);
+      const tmp8Result1 = tmp8(8210);
     }
     const obj2 = { numDisplayedReactions: 3, isFollowing: null, followIcon: null, followLabel: null, shareIcon: null, shareLabel: null, defaultReaction: null, addReactLabel: null, sharePrompt: null };
     obj2[1] = isFollowing;
@@ -148,6 +146,6 @@ export const createForumPostActions = function createForumPostActions(arg0) {
   } else {
     tmp6Result = tmp6(1208);
     const _HermesInternal = HermesInternal;
-    tmp6Result.captureMessage("Forum follow is null. isFollowing: " + isFollowing + " icon: " + tmp6(isFollowing ? 4327 : 8174));
+    tmp6Result.captureMessage("Forum follow is null. isFollowing: " + isFollowing + " icon: " + tmp6(isFollowing ? 4331 : 8213));
   }
 };

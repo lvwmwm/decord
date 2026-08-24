@@ -4,10 +4,12 @@
 // Dependencies: [1024]
 
 // Module 1175 (supabaseIntegration)
-const require = arg1;
+import feedbackAsyncIntegration from "feedbackAsyncIntegration" /* 1024 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.supabaseIntegration = function supabaseIntegration(supabaseClient) {
-  let obj = require(1024) /* feedbackAsyncIntegration */;
+  let obj = feedbackAsyncIntegration;
   obj = { supabaseClient: supabaseClient.supabaseClient };
   return obj.supabaseIntegration(obj);
 };

@@ -6,7 +6,7 @@
 // Module 1486 (str2)
 
 export default (arg0, arg1, arg2, arg3) => {
-  let c0 = arg0;
+  c0 = arg0;
   let str = arg1;
   str = arg1;
   let str2 = arg2;
@@ -24,7 +24,7 @@ export default (arg0, arg1, arg2, arg3) => {
     const _Object = Object;
     const keys = Object.keys(tmp);
     let mapped = keys.map((arg0) => {
-      let str = arg0;
+      str = arg0;
       if ("string" !== typeof arg0) {
         if ("boolean" === tmp) {
           let str5 = "false";
@@ -47,7 +47,7 @@ export default (arg0, arg1, arg2, arg3) => {
       const _undefined = sum;
       if (Array.isArray(_undefined[arg0])) {
         const mapped = tmp3[arg0].map((arg0) => {
-          let str = arg0;
+          str = arg0;
           if ("string" !== typeof arg0) {
             if ("boolean" === tmp2) {
               let str5 = "false";

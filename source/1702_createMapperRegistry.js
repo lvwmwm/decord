@@ -5,7 +5,9 @@
 // Exports: startMapper, stopMapper
 
 // Module 1702 (createMapperRegistry)
-import isJest from "isJest";
+import runWorkletOnJS from "runWorkletOnJS" /* 1661 */;
+import isSharedValue from "isSharedValue" /* 1703 */;
+import isJest from "isJest" /* 1657 */;
 
 isJest = isJest.isJest();
 function createMapperRegistry() {
@@ -33,7 +35,7 @@ function createMapperRegistry() {
       }
       items.push(arg0);
     }
-    const map = new Map();
+    map = new Map();
     const item = map.forEach((outputs) => {
       if (outputs.outputs) {
         outputs = outputs.outputs;
@@ -44,7 +46,7 @@ function createMapperRegistry() {
           let arr = value;
           if (undefined === value) {
             let tmp7 = item10009;
-            let items = [arg0];
+            items = [arg0];
             let result = obj.set(tmp3, items);
           } else {
             let tmp5 = value;
@@ -54,7 +56,7 @@ function createMapperRegistry() {
         }
       }
     });
-    let items = new Set();
+    items = new Set();
     items = [];
     const item1 = map.forEach((arg0) => {
       if (!items.has(arg0)) {
@@ -63,7 +65,7 @@ function createMapperRegistry() {
     });
   }
   function mapperRun() {
-    let c2 = false;
+    c2 = false;
     if (!c3) {
       try {
         c3 = true;
@@ -136,32 +138,32 @@ function createMapperRegistry() {
     return items;
   }
   const map = new Map();
-  let closure_1 = [];
-  let c2 = false;
-  let c3 = false;
+  closure_1 = [];
+  c2 = false;
+  c3 = false;
   return {
     start(id, worklet, iter) {
       const obj = { id, dirty: true, worklet, inputs: null, outputs: null };
-      const items = [];
+      items = [];
       extractInputs(iter, items);
       obj[3] = items;
       obj[4] = arg3;
       const result = obj.set(obj.id, obj);
-      let closure_1 = [];
+      closure_1 = [];
       for (const item10018 of tmp3) {
         let addListenerResult = item10018.addListener(obj.id, () => {
           obj.dirty = true;
-          if (outer1_3) {
-            outer1_5();
-          } else if (!outer1_2) {
-            if (outer1_3) {
+          if (closure_1_3) {
+            closure_1_5();
+          } else if (!c2) {
+            if (closure_1_3) {
               const _requestAnimationFrame = requestAnimationFrame;
-              const animationFrame = requestAnimationFrame(outer1_5);
+              const animationFrame = requestAnimationFrame(closure_1_5);
             } else {
               const _queueMicrotask = queueMicrotask;
-              queueMicrotask(outer1_5);
+              queueMicrotask(closure_1_5);
             }
-            outer1_2 = true;
+            c2 = true;
           }
         });
         continue;
@@ -172,7 +174,7 @@ function createMapperRegistry() {
       const value = map.get(arg0);
       if (value) {
         map.delete(value.id);
-        let closure_1 = [];
+        closure_1 = [];
         const inputs = value.inputs;
         for (const item10013 of inputs) {
           let removeListenerResult = item10013.removeListener(value.id);
@@ -182,7 +184,7 @@ function createMapperRegistry() {
     }
   };
 }
-createMapperRegistry.__closure = { IS_JEST: isJest, isSharedValue: require("isSharedValue").isSharedValue };
+createMapperRegistry.__closure = { IS_JEST: isJest, isSharedValue: isSharedValue.isSharedValue };
 createMapperRegistry.__workletHash = 4849129099287;
 createMapperRegistry.__initData = { code: "function createMapperRegistry_Pnpm_mappersTs1(){const{IS_JEST,isSharedValue}=this.__closure;const mappers=new Map();let sortedMappers=[];let runRequested=false;let processingMappers=false;function updateMappersOrder(){const pre=new Map();mappers.forEach(function(mapper){if(mapper.outputs){for(const output of mapper.outputs){const preMappers=pre.get(output);if(preMappers===undefined){pre.set(output,[mapper]);}else{preMappers.push(mapper);}}}});const visited=new Set();const newOrder=[];function dfs(mapper){visited.add(mapper);for(const input of mapper.inputs){const preMappers=pre.get(input);if(preMappers){for(const preMapper of preMappers){if(!visited.has(preMapper)){dfs(preMapper);}}}}newOrder.push(mapper);}mappers.forEach(function(mapper){if(!visited.has(mapper)){dfs(mapper);}});sortedMappers=newOrder;}function mapperRun(){runRequested=false;if(processingMappers){return;}try{processingMappers=true;if(mappers.size!==sortedMappers.length){updateMappersOrder();}for(const mapper of sortedMappers){if(mapper.dirty){mapper.dirty=false;mapper.worklet();}}}finally{processingMappers=false;}}function maybeRequestUpdates(){if(IS_JEST){mapperRun();}else if(!runRequested){if(processingMappers){requestAnimationFrame(mapperRun);}else{queueMicrotask(mapperRun);}runRequested=true;}}function extractInputs(inputs,resultArray){if(Array.isArray(inputs)){for(const input of inputs){input&&extractInputs(input,resultArray);}}else if(isSharedValue(inputs)){resultArray.push(inputs);}else if(Object.getPrototypeOf(inputs)===Object.prototype){for(const element of Object.values(inputs)){element&&extractInputs(element,resultArray);}}return resultArray;}return{start:function(mapperID,worklet,inputs,outputs){const mapper={id:mapperID,dirty:true,worklet:worklet,inputs:extractInputs(inputs,[]),outputs:outputs};mappers.set(mapper.id,mapper);sortedMappers=[];for(const sv of mapper.inputs){sv.addListener(mapper.id,function(){mapper.dirty=true;maybeRequestUpdates();});}maybeRequestUpdates();},stop:function(mapperID){const mapper=mappers.get(mapperID);if(mapper){mappers.delete(mapper.id);sortedMappers=[];for(const sv of mapper.inputs){sv.removeListener(mapper.id);}}}};}" };
 let c5 = 9999;
@@ -190,7 +192,7 @@ let closure_6 = { code: "function pnpm_mappersTs2(){const{createMapperRegistry,m
 let closure_7 = { code: "function pnpm_mappersTs3(){const{mapperID}=this.__closure;const mapperRegistry=global.__mapperRegistry;mapperRegistry===null||mapperRegistry===void 0||mapperRegistry.stop(mapperID);}" };
 
 export const startMapper = function startMapper(fn, arr2, items) {
-  let closure_0 = fn;
+  closure_0 = fn;
   items = arr2;
   if (arr2 === undefined) {
     items = [];
@@ -201,12 +203,12 @@ export const startMapper = function startMapper(fn, arr2, items) {
   }
   const sum = c5 + 1;
   c5 = sum;
-  const isJest = sum;
+  isJest = sum;
   let obj = items(items1[2]);
   fn = function f() {
     __mapperRegistry = __mapperRegistry.__mapperRegistry;
     if (undefined === __mapperRegistry) {
-      if (typeof outer1_4 !== "function") {
+      if (typeof closure_1_4 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       function updateMappersOrder() {
@@ -233,7 +235,7 @@ export const startMapper = function startMapper(fn, arr2, items) {
           }
           items.push(arg0);
         }
-        const map = new Map();
+        map = new Map();
         const item = map.forEach((outputs) => {
           if (outputs.outputs) {
             outputs = outputs.outputs;
@@ -244,7 +246,7 @@ export const startMapper = function startMapper(fn, arr2, items) {
               let arr = value;
               if (undefined === value) {
                 let tmp7 = item10009;
-                let items = [arg0];
+                items = [arg0];
                 let result = obj.set(tmp3, items);
               } else {
                 let tmp5 = value;
@@ -254,7 +256,7 @@ export const startMapper = function startMapper(fn, arr2, items) {
             }
           }
         });
-        let items = new Set();
+        items = new Set();
         items = [];
         const item1 = map.forEach((arg0) => {
           if (!items.has(arg0)) {
@@ -263,7 +265,7 @@ export const startMapper = function startMapper(fn, arr2, items) {
         });
       }
       function mapperRun() {
-        let c2 = false;
+        c2 = false;
         if (!c3) {
           try {
             c3 = true;
@@ -337,32 +339,32 @@ export const startMapper = function startMapper(fn, arr2, items) {
       }
       const _Map = Map;
       let map = new Map();
-      let closure_1 = [];
-      let c2 = false;
-      let c3 = false;
+      closure_1 = [];
+      c2 = false;
+      c3 = false;
       let obj = { start: null, stop: null };
       obj[0] = function start(id, worklet, iter) {
         const obj = { id, dirty: true, worklet, inputs: null, outputs: null };
-        const items = [];
+        items = [];
         extractInputs(iter, items);
         obj[3] = items;
         obj[4] = arg3;
         const result = obj.set(obj.id, obj);
-        let closure_1 = [];
+        closure_1 = [];
         for (const item10018 of tmp3) {
           let addListenerResult = item10018.addListener(obj.id, () => {
             obj.dirty = true;
-            if (outer1_3) {
-              outer1_5();
-            } else if (!outer1_2) {
-              if (outer1_3) {
+            if (closure_1_3) {
+              closure_1_5();
+            } else if (!c2) {
+              if (closure_1_3) {
                 const _requestAnimationFrame = requestAnimationFrame;
-                const animationFrame = requestAnimationFrame(outer1_5);
+                const animationFrame = requestAnimationFrame(closure_1_5);
               } else {
                 const _queueMicrotask = queueMicrotask;
-                queueMicrotask(outer1_5);
+                queueMicrotask(closure_1_5);
               }
-              outer1_2 = true;
+              c2 = true;
             }
           });
           continue;
@@ -373,7 +375,7 @@ export const startMapper = function startMapper(fn, arr2, items) {
         const value = map.get(arg0);
         if (value) {
           map.delete(value.id);
-          let closure_1 = [];
+          closure_1 = [];
           const inputs = value.inputs;
           for (const item10013 of inputs) {
             let removeListenerResult = item10013.removeListener(value.id);
@@ -394,7 +396,7 @@ export const startMapper = function startMapper(fn, arr2, items) {
   return sum;
 };
 export const stopMapper = function stopMapper(_inlinePropsMapperId) {
-  let closure_0 = _inlinePropsMapperId;
+  closure_0 = _inlinePropsMapperId;
   const fn = function t() {
     __mapperRegistry = __mapperRegistry.__mapperRegistry;
     if (__mapperRegistry != null) {
@@ -404,5 +406,5 @@ export const stopMapper = function stopMapper(_inlinePropsMapperId) {
   fn.__closure = { mapperID: _inlinePropsMapperId };
   fn.__workletHash = 1696829263429;
   fn.__initData = closure_7;
-  require(1661) /* runWorkletOnJS */.runOnUI(fn)();
+  runWorkletOnJS.runOnUI(fn)();
 };

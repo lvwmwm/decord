@@ -1,22 +1,23 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12774
+// Function ID: 12775
 // Name: SafetyToolsButton
-// Dependencies: [32, 19, 17, 21, 4661, 712, 10607, 10609, 1236, 10582, 4761, 10583, 10604, 9270, 12700, 9835, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 10646, 10648, 1236, 10621, 4766, 10622, 10643, 9307, 12752, 9874, 2]
 // Exports: SafetyToolsButton
 
-// Module 12719 (SafetyToolsButton)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12774 (SafetyToolsButton)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 createCacheKey = { safetyToolsButton: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/SafetyToolsButton.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/SafetyToolsButton.tsx");
 
 export const SafetyToolsButton = function SafetyToolsButton(channelId) {
   channelId = channelId.channelId;
@@ -26,20 +27,20 @@ export const SafetyToolsButton = function SafetyToolsButton(channelId) {
   let safetyToolsButtonTooltipForChannel;
   let shouldShowInitialSafetyToolsButtonTooltip;
   let first;
-  let createCacheKey;
   let callback;
+  callback = undefined;
   let first1;
-  let closure_10;
+  closure_10 = undefined;
   let memo;
   let callback1;
   let callback2;
   let obj = channelId(warningId[6]);
   safetyToolsButtonTooltipForChannel = obj.useSafetyToolsButtonTooltipForChannel(channelId);
-  let tmp = createCacheKey();
+  let tmp = callback();
   shouldShowInitialSafetyToolsButtonTooltip = channelId(warningId[7]).useShouldShowInitialSafetyToolsButtonTooltip(channelId);
   let tmp4 = warningType(safetyToolsButtonTooltipForChannel.useState(false), 2);
   first = tmp4[0];
-  createCacheKey = tmp4[1];
+  callback = tmp4[1];
   let items = [shouldShowInitialSafetyToolsButtonTooltip, safetyToolsButtonTooltipForChannel];
   callback = safetyToolsButtonTooltipForChannel.useCallback(() => {
     if (shouldShowInitialSafetyToolsButtonTooltip) {

@@ -1,16 +1,17 @@
-// Module ID: 5003
-// Function ID: 5004
+// Module ID: 5008
+// Function ID: 5009
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: isSensitiveContentSelfHarmEnabled, useIsSensitiveContentSelfHarmEnabled
 
-// Module 5003 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 5008 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2025-09-sensitive-content-self-harm", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/SensitiveContentSelfHarmExperiment.tsx");
+const result = set.fileFinishedImporting("modules/explicit_media_redaction/SensitiveContentSelfHarmExperiment.tsx");
 
 export const SensitiveContentSelfHarmExperiment = apexExperiment;
 export const useIsSensitiveContentSelfHarmEnabled = function useIsSensitiveContentSelfHarmEnabled(location) {

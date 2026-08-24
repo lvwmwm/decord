@@ -1,33 +1,30 @@
-// Module ID: 11196
-// Function ID: 11197
+// Module ID: 11200
+// Function ID: 11201
 // Name: useTypingText
-// Dependencies: [32, 1922, 589, 4796, 1236, 2]
+// Dependencies: [32, 1922, 589, 4801, 1236, 2]
 // Exports: default
 
-// Module 11196 (useTypingText)
-import _slicedToArray from "_slicedToArray";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 11200 (useTypingText)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/chat/useTypingText.tsx");
+const result = require("set").fileFinishedImporting("modules/chat/useTypingText.tsx");
 
 export default function useTypingText(channelId) {
-  let tmp2;
-  let tmp3;
-  let tmp4;
   channelId = channelId.channelId;
   const guildId = channelId.guildId;
   const typingUserIds = channelId.typingUserIds;
   let lJ9sZX = channelId;
   let obj = typingUserIds;
-  let items = [mergeGuildAvatar];
+  let items = [closure_4];
   const items1 = [channelId, guildId, typingUserIds];
   const obj2 = channelId(typingUserIds[2]);
   [tmp2, tmp3, tmp4] = callback(channelId(typingUserIds[2]).useStateFromStoresArray(items, () => {
     const items = [];
     while (tmp2 !== undefined) {
-      let tmp4 = outer1_4;
-      let user = outer1_4.getUser(tmp3);
+      let tmp4 = closure_1_4;
+      let user = closure_1_4.getUser(tmp3);
       if (null != user) {
         let tmp7 = guildId;
         let tmp8 = typingUserIds;

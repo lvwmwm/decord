@@ -1,25 +1,26 @@
-// Module ID: 17119
-// Function ID: 17120
+// Module ID: 17213
+// Function ID: 17214
 // Name: i18nManager
-// Dependencies: [17, 500, 17120, 1274, 1236, 2]
+// Dependencies: [17, 500, 17214, 1274, 1236, 2]
 // Exports: default
 
-// Module 17119 (i18nManager)
-import set from "set";
-import set from "enforcing";
+// Module 17213 (i18nManager)
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import enforcingDefault from "enforcing" /* 17214 */;
+import set from "set" /* 500 */;
 
 if (set.isAndroid()) {
-  let i18nManager = require("enforcing");
+  let i18nManager = enforcingDefault;
 } else {
-  i18nManager = require("get ActivityIndicator").NativeModules.i18nManager;
+  i18nManager = get_ActivityIndicator.NativeModules.i18nManager;
 }
 let result = set.fileFinishedImporting("i18n/native/i18nMessagesProvider.tsx");
 
 export default function newIntlMessagesProvider() {
   return new Promise((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     closure_2.keysRequest((arr) => {
-      outer1_2.valuesResult(arr.map((code) => {
+      closure_1_2.valuesResult(arr.map((code) => {
         const result = callback(1274).runtimeHashMessageKey(code);
         const tmp4 = callback(1236).t[result];
         let str = "";

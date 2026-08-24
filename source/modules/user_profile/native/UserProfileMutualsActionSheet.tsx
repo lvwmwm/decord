@@ -1,62 +1,54 @@
-// Module ID: 11777
-// Function ID: 11778
+// Module ID: 11826
+// Function ID: 11827
 // Name: MutualFriendRow
-// Dependencies: [32, 19, 17, 4559, 8931, 21, 4661, 712, 4797, 589, 6291, 1297, 4796, 9893, 7188, 4734, 11771, 8799, 11778, 11779, 9450, 11772, 11773, 1236, 11783, 11785, 2]
+// Dependencies: [32, 19, 17, 4564, 8968, 21, 4668, 712, 4802, 589, 6322, 1297, 4801, 9932, 7226, 4739, 11820, 8836, 11827, 11828, 9487, 11821, 11822, 1236, 11832, 11834, 2]
 // Exports: default
 
-// Module 11777 (MutualFriendRow)
-import _slicedToArray from "_slicedToArray";
-import getNoMutualFriendsSource from "getNoMutualFriendsSource";
-import get_ActivityIndicator from "useSegmentedControlState";
-import sortActivity from "sortActivity";
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
-import jsxProd from "getMutualGuildsLabel";
-import createCacheKey from "createCacheKey";
+// Module 11826 (MutualFriendRow)
+import ThemesDefault from "Themes" /* 712 */;
+import getNicknameDefault from "getNickname" /* 4801 */;
+import TableRowInner from "TableRowInner" /* 6322 */;
+import GuildIconSizes from "GuildIconSizes" /* 7226 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 7226 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 9487 */;
+import ActivityStatusDefault from "ActivityStatus" /* 9932 */;
+import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 11820 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "sortActivity" /* 4564 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8968 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_6;
-const require = arg1;
+require = arg1;
 function MutualFriendRow(mutualFriend) {
-  let end;
-  let isMobileOnline;
-  let isVROnline;
-  let onPress;
-  let start;
-  let status;
   const user = mutualFriend.mutualFriend.user;
   const guildId = mutualFriend.guildId;
   ({ onPress, start, end } = mutualFriend);
-  let obj = user(4797);
+  let obj = user(4802);
   const avatarDecoration = obj.useAvatarDecoration(user);
-  let obj1 = user(589);
-  const items = [sortActivity];
-  const stateFromStoresObject = obj1.useStateFromStoresObject(items, () => ({ status: outer1_7.getStatus(user.id), isMobileOnline: outer1_7.isMobileOnline(user.id), isVROnline: outer1_7.isVROnline(user.id) }));
+  obj1 = user(589);
+  const items = [closure_7];
+  const stateFromStoresObject = obj1.useStateFromStoresObject(items, () => ({ status: closure_1_7.getStatus(user.id), isMobileOnline: closure_1_7.isMobileOnline(user.id), isVROnline: closure_1_7.isVROnline(user.id) }));
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   obj = { onPress, icon: null, label: null, subLabel: null, start: null, end: null };
-  obj = { user, size: null, avatarDecoration: null, status: null, guildId: null, isMobileOnline: null, isVROnline: null, autoStatusCutout: true };
-  obj[1] = user(1297).AvatarSizes.REFRESH_MEDIUM_32;
-  obj[2] = avatarDecoration;
-  obj[3] = status;
-  obj[4] = guildId;
-  obj[5] = isMobileOnline;
-  obj[6] = isVROnline;
+  obj = { user, size: user(1297).AvatarSizes.REFRESH_MEDIUM_32, avatarDecoration, status, guildId, isMobileOnline, isVROnline, autoStatusCutout: true };
   obj[1] = callback2(user(1297).Avatar, obj);
-  const tmp = createCacheKey();
-  obj[2] = importDefault(4796).getName(guildId, undefined, user);
+  const tmp = callback4();
+  obj[2] = getNicknameDefault.getName(guildId, undefined, user);
   obj1 = { userId: user.id, guildId, textStyle: tmp.activityStatusText };
-  obj[3] = callback2(importDefault(9893), obj1);
+  obj[3] = callback2(ActivityStatusDefault, obj1);
   obj[4] = start;
   obj[5] = end;
-  return callback2(user(6291).TableRow, obj, user.id);
+  return callback2(user(6322).TableRow, obj, user.id);
 }
 class MutualGuildRow {
   constructor(arg0) {
     ({ guild, nick } = global.mutualGuild);
     user = global.user;
     ({ onPress, start, end } = global);
-    tmp = jsxs();
+    tmp = closure_11();
     hasAvatarForGuildResult = user.hasAvatarForGuild(guild.id);
     tmp3 = jsx;
     tmp4 = closure_0;
@@ -104,33 +96,28 @@ class MutualGuildRow {
 ({ View: c5, ActivityIndicator: closure_6 } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: null, loadingState: null, emptyState: null, activityStatusText: null, mutualGuildSubLabel: null };
-createCacheKey = { flex: 1, gap: 20, paddingTop: require("Themes").space.PX_8 };
+createCacheKey = { flex: 1, gap: 20, paddingTop: ThemesDefault.space.PX_8 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { paddingTop: require("Themes").space.PX_8, alignItems: "center" };
+createCacheKey[1] = { paddingTop: ThemesDefault.space.PX_8, alignItems: "center" };
 createCacheKey[2] = { alignItems: "center" };
-let obj1 = { paddingTop: require("Themes").space.PX_8, alignItems: "center" };
-createCacheKey[3] = { color: require("Themes").colors.TEXT_SUBTLE };
-let obj2 = { color: require("Themes").colors.TEXT_SUBTLE };
-createCacheKey[4] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileMutualsActionSheet.tsx");
+let obj1 = { paddingTop: ThemesDefault.space.PX_8, alignItems: "center" };
+createCacheKey[3] = { color: ThemesDefault.colors.TEXT_SUBTLE };
+let obj2 = { color: ThemesDefault.colors.TEXT_SUBTLE };
+createCacheKey[4] = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileMutualsActionSheet.tsx");
 
 export default function UserProfileMutualsActionSheet(user) {
-  let _slicedToArray;
-  let dependencyMap;
-  let importDefault;
-  let mutualFriends;
-  let mutualGuilds;
   user = user.user;
-  ({ guildId: importDefault, onPressMutualFriend: dependencyMap, onPressMutualGuild: _slicedToArray } = user);
+  ({ guildId: importDefault, onPressMutualFriend: dependencyMap, onPressMutualGuild: closure_3 } = user);
   let React;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = React;
   const tmp2 = callback(React.useState(0), 2);
   React = tmp2[1];
-  ({ mutualFriends, mutualGuilds } = importDefault(11771)(user));
-  let obj1 = user(8799);
+  ({ mutualFriends, mutualGuilds } = useUserProfileMutualsDefault(user));
+  obj1 = user(8836);
   obj = { pageWidth: tmp2[0], defaultIndex: null, items: null };
   let num = 0;
   if (user.section === UserProfileSections.MUTUAL_GUILDS) {
@@ -138,7 +125,7 @@ export default function UserProfileMutualsActionSheet(user) {
   }
   obj[1] = num;
   let length;
-  let tmp3Result = tmp3(11778);
+  let tmp3Result = tmp3(11827);
   if (mutualFriends != null) {
     length = mutualFriends.length;
   }
@@ -152,7 +139,7 @@ export default function UserProfileMutualsActionSheet(user) {
   } else if (0 === mutualFriends.length) {
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.emptyState;
-    obj2[1] = callback2(tmp6(11779).NoMutualFriends, {});
+    obj2[1] = callback2(tmp6(11828).NoMutualFriends, {});
     tmp10 = callback2(closure_5, obj2);
     tmp9 = callback2;
   } else {
@@ -164,22 +151,22 @@ export default function UserProfileMutualsActionSheet(user) {
     };
     obj3[2] = function renderItem(item) {
       item = item.item;
-      return outer1_9(outer1_12, {
+      return closure_1_9(closure_1_12, {
         mutualFriend: item,
         guildId: closure_1,
         onPress() {
-          return outer1_2(item.user.id);
+          return closure_1_2(item.user.id);
         },
         start: item.start,
         end: item.end
       });
     };
-    tmp10 = callback2(tmp6(9450).UserProfileStackedActionSheetList, obj3);
+    tmp10 = callback2(tmp6(9487).UserProfileStackedActionSheetList, obj3);
   }
   obj[2] = tmp10;
   const items = [obj, ];
   let length1;
-  tmp3Result = tmp3(11772);
+  tmp3Result = tmp3(11821);
   if (mutualGuilds != null) {
     length1 = mutualGuilds.length;
   }
@@ -192,7 +179,7 @@ export default function UserProfileMutualsActionSheet(user) {
   } else if (0 === mutualGuilds.length) {
     const obj6 = { style: null, children: null };
     obj6[0] = tmp.emptyState;
-    obj6[1] = tmp9(tmp6(11773).NoMutualServers, {});
+    obj6[1] = tmp9(tmp6(11822).NoMutualServers, {});
     tmp9Result = tmp9(closure_5, obj6);
   } else {
     const obj7 = { data: null, keyExtractor: null, renderItem: null };
@@ -202,17 +189,17 @@ export default function UserProfileMutualsActionSheet(user) {
     };
     obj7[2] = function renderItem(item) {
       item = item.item;
-      return outer1_9(outer1_13, {
+      return closure_1_9(closure_1_13, {
         user: item,
         mutualGuild: item,
         onPress() {
-          return outer1_3(item.guild.id);
+          return closure_1_3(item.guild.id);
         },
         start: item.start,
         end: item.end
       });
     };
-    tmp9Result = tmp9(tmp6(9450).UserProfileStackedActionSheetList, obj7);
+    tmp9Result = tmp9(tmp6(9487).UserProfileStackedActionSheetList, obj7);
   }
   obj4[2] = tmp9Result;
   items[1] = obj4;
@@ -222,12 +209,12 @@ export default function UserProfileMutualsActionSheet(user) {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
   const obj8 = { scrollable: true, title: null, children: null };
-  const tmp5 = importDefault(11771)(user);
+  const tmp5 = useUserProfileMutualsDefault(user);
   const intl = tmp6(1236).intl;
   obj8[1] = intl.string(user(1236).t["l2/aLi"]);
   const obj9 = { style: tmp.container, onLayout: callback, children: null };
-  const tmp3Result1 = importDefault(9450);
-  const items1 = [tmp9(closure_5, { children: tmp9(user(11783).Tabs, { state: segmentedControlState }) }), tmp9(user(11785).SegmentedControlPages, { state: segmentedControlState })];
+  const tmp3Result1 = UserProfileStackedActionSheetDefault;
+  const items1 = [tmp9(closure_5, { children: tmp9(user(11832).Tabs, { state: segmentedControlState }) }), tmp9(user(11834).SegmentedControlPages, { state: segmentedControlState })];
   obj9[2] = items1;
   obj8[2] = callback3(closure_5, obj9);
   return tmp9(tmp3Result1, obj8);

@@ -1,24 +1,25 @@
-// Module ID: 16200
-// Function ID: 16201
-// Dependencies: [19, 17, 10055, 5044, 21, 4661, 16196, 4751, 8498, 2]
+// Module ID: 16297
+// Function ID: 16298
+// Dependencies: [19, 17, 10094, 5049, 21, 4668, 16293, 4756, 8537, 2]
 
-// Module 16200
-import { View } from "get ActivityIndicator";
-import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
-import { UnreadSetting } from "ReadStateTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 16297
+import getFontScale from "getFontScale" /* 4756 */;
+import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 8537 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 8537 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16293 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10094 */;
+import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let closure_7 = createCacheKey.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" } });
-const memoResult = require("noop").memo(function UnreadBadge(arg0) {
-  let muted;
-  let resolvedUnreadSetting;
-  let unread;
+const memoResult = importAllResult.memo(function UnreadBadge(arg0) {
   ({ unread, resolvedUnreadSetting, muted } = arg0);
-  const tmp4 = importDefault(16196)();
-  require(4751) /* getFontScale */;
+  const tmp4 = getLayoutStyleDefault();
+  getFontScale;
   let tmp9Result = null;
   if (unread) {
     let obj = { style: null, children: null };
@@ -30,23 +31,23 @@ const memoResult = require("noop").memo(function UnreadBadge(arg0) {
     obj[0] = items;
     obj = { classic: true, size: null, badgeStyle: null };
     const _Math = Math;
-    obj[1] = require(8498) /* DEFAULT_BADGE_SIZE */.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1);
+    obj[1] = DEFAULT_BADGE_SIZE.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1);
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       let num2 = MUTED_OPACITY_CONTENT;
     } else {
       num2 = 1;
     }
-    const obj1 = { opacity: null };
+    obj1 = { opacity: null };
     obj1[0] = num2;
     const items1 = [obj1];
     obj[2] = items1;
-    obj[1] = jsx(importDefault(8498), { classic: true, size: null, badgeStyle: null });
+    obj[1] = jsx(DEFAULT_BADGE_SIZEDefault, { classic: true, size: null, badgeStyle: null });
     tmp9Result = tmp9(View, obj);
     const tmp10 = View;
-    const tmp2Result = importDefault(8498);
+    const tmp2Result = DEFAULT_BADGE_SIZEDefault;
   }
   return tmp9Result;
 });
-const result = require("hairlineWidth").fileFinishedImporting("modules/launchpad/native/shared/UnreadBadge.tsx");
+const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/UnreadBadge.tsx");
 
 export default memoResult;

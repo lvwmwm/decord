@@ -1,29 +1,33 @@
-// Module ID: 14725
-// Function ID: 14726
+// Module ID: 14789
+// Function ID: 14790
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 4066, 2]
+// Dependencies: [8238, 10708, 1236, 4069, 2]
 
-// Module 14725 (toggle)
-import createToggle from "createToggle";
+// Module 14789 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["9ptHSs"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["9ptHSs"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
-  useValue: require("explicitContentFromProto").GifAutoPlay.useSetting,
-  onValueChange: require("explicitContentFromProto").GifAutoPlay.updateSetting
+  parent: MobileUserSettings.MobileUserSettings.ACCESSIBILITY,
+  useValue: explicitContentFromProto.GifAutoPlay.useSetting,
+  onValueChange: explicitContentFromProto.GifAutoPlay.updateSetting
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["9ptHSs"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["9ptHSs"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
-  useValue: require("explicitContentFromProto").GifAutoPlay.useSetting,
-  onValueChange: require("explicitContentFromProto").GifAutoPlay.updateSetting
+  parent: MobileUserSettings.MobileUserSettings.ACCESSIBILITY,
+  useValue: explicitContentFromProto.GifAutoPlay.useSetting,
+  onValueChange: explicitContentFromProto.GifAutoPlay.updateSetting
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/AutoplayGifSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/AutoplayGifSetting.tsx");
 
 export default toggle;

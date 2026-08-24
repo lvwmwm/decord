@@ -1,20 +1,15 @@
-// Module ID: 8187
-// Function ID: 8188
+// Module ID: 8227
+// Function ID: 8228
 // Name: formatUsernameOnClick
-// Dependencies: [8186, 2]
+// Dependencies: [8226, 2]
 // Exports: default
 
-// Module 8187 (formatUsernameOnClick)
-const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/formatUsernameOnClick.tsx");
+// Module 8227 (formatUsernameOnClick)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/formatUsernameOnClick.tsx");
 
 export default function formatUsernameOnClick(arg0) {
-  let author;
-  let colorStrings;
-  let guildId;
-  let message;
-  let messageChannelId;
-  let roleStyle;
-  let userId;
   ({ userId, message, author, roleStyle, messageChannelId } = arg0);
   const colorString = author.colorString;
   ({ colorStrings, guildId } = author);

@@ -1,13 +1,13 @@
-// Module ID: 5007
-// Function ID: 5008
+// Module ID: 5012
+// Function ID: 5013
 // Name: isStable
 // Dependencies: [1626, 500, 2]
 
-// Module 5007 (isStable)
-import set from "set";
-import set from "set";
+// Module 5012 (isStable)
+import getConstantsAll from "getConstants" /* 1626 */;
+import set from "set" /* 500 */;
 
-const ReleaseChannel = require("getConstants").getConstants().ReleaseChannel;
+const ReleaseChannel = getConstantsAll.getConstants().ReleaseChannel;
 set = set.isAndroid();
 if (set) {
   set = -1 === ReleaseChannel.indexOf("canary");

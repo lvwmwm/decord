@@ -5,11 +5,11 @@
 // Exports: isReducedMotionEnabledInSystem
 
 // Module 1695 (isReducedMotionEnabledInSystem)
-import isJest from "isJest";
-import addCompilerSafeGetAndSet from "addCompilerSafeGetAndSet";
+import isJest from "isJest" /* 1657 */;
+import addCompilerSafeGetAndSet from "addCompilerSafeGetAndSet" /* 1691 */;
 
 if (isJest.isWeb()) {
-  const _module1 = require("isJest");
+  const _module1 = isJest;
   let matches = _module1.isWindowAvailable();
   if (matches) {
     let _window = window;
@@ -22,13 +22,13 @@ if (isJest.isWeb()) {
 const obj = { jsValue: prop, uiValue: null, setEnabled: null };
 function isReducedMotionEnabledInSystem() {
   if (obj.isWeb()) {
-    let matches = require(1657) /* isJest */.isWindowAvailable();
+    let matches = isJest.isWindowAvailable();
     if (matches) {
       const _window = window;
       matches = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     }
     let prop = matches;
-    const tmpResult = require(1657) /* isJest */;
+    const tmpResult = isJest;
   } else {
     prop = global._REANIMATED_IS_REDUCED_MOTION;
   }

@@ -1,30 +1,35 @@
-// Module ID: 14783
-// Function ID: 14784
+// Module ID: 14847
+// Function ID: 14848
 // Name: route
-// Dependencies: [676, 10669, 1236, 14784, 9826, 14785, 2]
+// Dependencies: [676, 10708, 1236, 14848, 9865, 14849, 2]
 
-// Module 14783 (route)
-import createToggle from "createToggle";
+// Module 14847 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9865 */;
+import useWebBrowserSettingOptions from "useWebBrowserSettingOptions" /* 14848 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["C+DkPu"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["C+DkPu"]);
   },
   usePredicate() {
-    return require(14784) /* useWebBrowserSettingOptions */.useWebBrowserSettingOptions().length > 1;
+    return useWebBrowserSettingOptions.useWebBrowserSettingOptions().length > 1;
   },
   parent: null,
-  IconComponent: require("GlobeEarthIcon").GlobeEarthIcon,
+  IconComponent: GlobeEarthIcon.GlobeEarthIcon,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.BROWSER,
+  route: ME.UserSettingsSections.BROWSER,
   getComponent() {
-    return require(14785).default;
+    return require(14849).default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/WebBrowserSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/WebBrowserSetting.tsx");
 
 export default route;

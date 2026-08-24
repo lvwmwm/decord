@@ -1,10 +1,32 @@
-// Module ID: 17131
-// Function ID: 17132
+// Module ID: 17225
+// Function ID: 17226
 // Name: NATIVE_REQUIRED_ASSETS_MISC
-// Dependencies: [1439, 1440, 1441, 1442, 1443, 1457, 1458, 1459, 1460, 1461, 1462, 1463, 1464, 17132, 17133, 17134, 17135, 17136, 17137, 17138, 2]
+// Dependencies: [1439, 1440, 1441, 1442, 1443, 1457, 1458, 1459, 1460, 1461, 1462, 1463, 1464, 17226, 17227, 17228, 17229, 17230, 17231, 17232, 2]
 
-// Module 17131 (NATIVE_REQUIRED_ASSETS_MISC)
-const obj = { DefaultAvatar0: require("registerAsset"), DefaultAvatar1: require("registerAsset"), DefaultAvatar2: require("registerAsset"), DefaultAvatar3: require("registerAsset"), DefaultAvatar4: require("registerAsset"), DefaultGroup0: require("registerAsset"), DefaultGroup1: require("registerAsset"), DefaultGroup2: require("registerAsset"), DefaultGroup3: require("registerAsset"), DefaultGroup4: require("registerAsset"), DefaultGroup5: require("registerAsset"), DefaultGroup6: require("registerAsset"), DefaultGroup7: require("registerAsset"), PoopDark: require("registerAsset"), PoopLight: require("registerAsset"), RoleSubscriptionBadge: require("registerAsset"), RoleSubscriptionLanyard: require("registerAsset"), RoleSubscriptionPurchaseCard: require("registerAsset"), SummaryIndicatorEnd: require("registerAsset"), SummaryIndicatorStart: require("registerAsset") };
-const result = require("registerAsset").fileFinishedImporting("modules/react_asset/native/native_required_assets_misc.tsx");
+// Module 17225 (NATIVE_REQUIRED_ASSETS_MISC)
+import set from "set" /* 2 */;
+import registerAssetDefault from "registerAsset" /* 1439 */;
+import registerAssetDefault2 from "registerAsset" /* 1440 */;
+import registerAssetDefault3 from "registerAsset" /* 1441 */;
+import registerAssetDefault4 from "registerAsset" /* 1442 */;
+import registerAssetDefault5 from "registerAsset" /* 1443 */;
+import registerAssetDefault6 from "registerAsset" /* 1457 */;
+import registerAssetDefault7 from "registerAsset" /* 1458 */;
+import registerAssetDefault8 from "registerAsset" /* 1459 */;
+import registerAssetDefault9 from "registerAsset" /* 1460 */;
+import registerAssetDefault10 from "registerAsset" /* 1461 */;
+import registerAssetDefault11 from "registerAsset" /* 1462 */;
+import registerAssetDefault12 from "registerAsset" /* 1463 */;
+import registerAssetDefault13 from "registerAsset" /* 1464 */;
+import registerAssetDefault14 from "registerAsset" /* 17226 */;
+import registerAssetDefault15 from "registerAsset" /* 17227 */;
+import registerAssetDefault16 from "registerAsset" /* 17228 */;
+import registerAssetDefault17 from "registerAsset" /* 17229 */;
+import registerAssetDefault18 from "registerAsset" /* 17230 */;
+import registerAssetDefault19 from "registerAsset" /* 17231 */;
+import registerAssetDefault20 from "registerAsset" /* 17232 */;
+
+const obj = { DefaultAvatar0: registerAssetDefault, DefaultAvatar1: registerAssetDefault2, DefaultAvatar2: registerAssetDefault3, DefaultAvatar3: registerAssetDefault4, DefaultAvatar4: registerAssetDefault5, DefaultGroup0: registerAssetDefault6, DefaultGroup1: registerAssetDefault7, DefaultGroup2: registerAssetDefault8, DefaultGroup3: registerAssetDefault9, DefaultGroup4: registerAssetDefault10, DefaultGroup5: registerAssetDefault11, DefaultGroup6: registerAssetDefault12, DefaultGroup7: registerAssetDefault13, PoopDark: registerAssetDefault14, PoopLight: registerAssetDefault15, RoleSubscriptionBadge: registerAssetDefault16, RoleSubscriptionLanyard: registerAssetDefault17, RoleSubscriptionPurchaseCard: registerAssetDefault18, SummaryIndicatorEnd: registerAssetDefault19, SummaryIndicatorStart: registerAssetDefault20 };
+const result = set.fileFinishedImporting("modules/react_asset/native/native_required_assets_misc.tsx");
 
 export const NATIVE_REQUIRED_ASSETS_MISC = obj;

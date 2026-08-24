@@ -1,30 +1,32 @@
-// Module ID: 12467
-// Function ID: 12468
+// Module ID: 12519
+// Function ID: 12520
 // Name: getIsTabletActivitySurface
-// Dependencies: [4354, 1625, 709, 2]
+// Dependencies: [4358, 1625, 709, 2]
 // Exports: getDefaultOrientationLockState, getIsTabletActivitySurface, setOrientationLockState
 
-// Module 12467 (getIsTabletActivitySurface)
-import DCDDeviceManager from "DCDDeviceManager";
-import isMetaQuest from "isMetaQuest";
+// Module 12519 (getIsTabletActivitySurface)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4358 */;
+import isMetaQuest from "isMetaQuest" /* 1625 */;
 
-DCDDeviceManager = DCDDeviceManager.isIpadOS();
-isMetaQuest = isMetaQuest.isMetaQuest();
-const result = require("dispatcher").fileFinishedImporting("modules/activities/native/getDefaultOrientationLockState.tsx");
+let closure_2 = DCDDeviceManager.isIpadOS();
+let closure_3 = isMetaQuest.isMetaQuest();
+const result = set.fileFinishedImporting("modules/activities/native/getDefaultOrientationLockState.tsx");
 
 export function getIsTabletActivitySurface() {
-  let tmp = DCDDeviceManager;
-  if (!DCDDeviceManager) {
-    tmp = isMetaQuest;
+  let tmp = closure_2;
+  if (!closure_2) {
+    tmp = closure_3;
   }
   return tmp;
 }
 export const setOrientationLockState = function setOrientationLockState(embeddedActivityConfig) {
   if (arg1 == null) {
     if (null != embeddedActivityConfig) {
-      let tmp2 = DCDDeviceManager;
-      if (!DCDDeviceManager) {
-        tmp2 = isMetaQuest;
+      let tmp2 = closure_2;
+      if (!closure_2) {
+        tmp2 = closure_3;
       }
       embeddedActivityConfig = embeddedActivityConfig.embeddedActivityConfig;
       if (tmp2) {
@@ -39,7 +41,7 @@ export const setOrientationLockState = function setOrientationLockState(embedded
     }
   }
   if (null != arg1) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId: null, lockState: null };
     obj[1] = embeddedActivityConfig.id;
     obj[2] = tmp;
@@ -48,9 +50,9 @@ export const setOrientationLockState = function setOrientationLockState(embedded
 };
 export const getDefaultOrientationLockState = function getDefaultOrientationLockState(application) {
   if (null != application) {
-    let tmp = DCDDeviceManager;
-    if (!DCDDeviceManager) {
-      tmp = isMetaQuest;
+    let tmp = closure_2;
+    if (!closure_2) {
+      tmp = closure_3;
     }
     const embeddedActivityConfig = application.embeddedActivityConfig;
     if (tmp) {

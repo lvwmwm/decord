@@ -5,13 +5,14 @@
 // Exports: disabledUntil, isRateLimited, updateRateLimits
 
 // Module 879 (parseRetryAfterHeader)
-import _slicedToArray from "_slicedToArray";
+import safeDateNow from "safeDateNow" /* 831 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
 function parseRetryAfterHeader(arg0) {
   let safeDateNowResult = arg1;
   if (arg1 === undefined) {
-    safeDateNowResult = require(831) /* safeDateNow */.safeDateNow();
-    const obj = require(831) /* safeDateNow */;
+    safeDateNowResult = safeDateNow.safeDateNow();
+    const obj = safeDateNow;
   }
   const parsed = parseInt("" + arg0, 10);
   if (isNaN(parsed)) {
@@ -37,8 +38,8 @@ export const disabledUntil = function disabledUntil(all) {
 export const isRateLimited = function isRateLimited(all) {
   let safeDateNowResult = arg2;
   if (arg2 === undefined) {
-    safeDateNowResult = require(831) /* safeDateNow */.safeDateNow();
-    const obj = require(831) /* safeDateNow */;
+    safeDateNowResult = safeDateNow.safeDateNow();
+    const obj = safeDateNow;
   }
   return (all[arg1] || all.all || 0) > safeDateNowResult;
 };
@@ -47,7 +48,7 @@ export const updateRateLimits = function updateRateLimits(arg0, headers) {
   headers = headers.headers;
   let safeDateNowResult = arg2;
   if (arg2 === undefined) {
-    let obj = require(831) /* safeDateNow */;
+    let obj = safeDateNow;
     safeDateNowResult = obj.safeDateNow();
   }
   obj = {};
@@ -64,8 +65,8 @@ export const updateRateLimits = function updateRateLimits(arg0, headers) {
     const iter = parts[Symbol.iterator]();
     const str = prop.trim();
     while (iter !== undefined) {
-      let tmp12 = _slicedToArray;
-      let tmp13 = _slicedToArray(str7.split(":", 5), 5);
+      let tmp12 = callback;
+      let tmp13 = callback(str7.split(":", 5), 5);
       let str8 = tmp13[1];
       let str9 = tmp13[4];
       let _parseInt = parseInt;

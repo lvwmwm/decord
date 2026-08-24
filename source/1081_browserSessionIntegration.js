@@ -4,7 +4,7 @@
 // Dependencies: [817, 1028, 1072, 1033]
 
 // Module 1081 (browserSessionIntegration)
-import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 

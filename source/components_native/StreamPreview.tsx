@@ -1,23 +1,22 @@
-// Module ID: 12616
-// Function ID: 12617
+// Module ID: 12670
+// Function ID: 12671
 // Name: render
-// Dependencies: [19, 17, 1302, 21, 4661, 712, 4104, 1363, 12617, 12618, 1236, 5433, 12138, 589, 2]
+// Dependencies: [19, 17, 1302, 21, 4668, 712, 4107, 1363, 12671, 12672, 1236, 5438, 12190, 589, 2]
 // Exports: default
 
-// Module 12616 (render)
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import handleThemeChange from "handleThemeChange";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
+// Module 12670 (render)
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12190 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_5 from "handleThemeChange" /* 1302 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c3;
-let c4;
-let closure_6;
-let error;
-let require = arg1;
+require = arg1;
 ({ Image: c3, View: c4, StyleSheet } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { wrapper: null, text: null, fallbackImage: null };
@@ -28,20 +27,20 @@ createCacheKey.justifyContent = "center";
 createCacheKey.paddingLeft = 20;
 createCacheKey.paddingRight = 20;
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { textAlign: "center", fontSize: 14, lineHeight: 18, marginTop: 16, color: require("Themes").colors.TEXT_MUTED };
+createCacheKey[1] = { textAlign: "center", fontSize: 14, lineHeight: 18, marginTop: 16, color: ThemesDefault.colors.TEXT_MUTED };
 createCacheKey[2] = { width: "100%" };
-createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+let closure_8 = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
 const PureComponent = importAllResult.PureComponent;
 class DefaultFallback extends PureComponent {
 }
 DefaultFallback.prototype["render"] = function render() {
-  const tmp = createCacheKey(this.context);
+  const tmp = callback3(this.context);
   let obj = { style: tmp.wrapper, children: null };
   obj = { resizeMode: "contain", style: tmp.fallbackImage, source: null };
   if (obj3.isThemeDark(this.props.theme)) {
-    let tmp6Result = tmp6(12617);
+    let tmp6Result = tmp6(12671);
   } else {
-    tmp6Result = tmp6(12618);
+    tmp6Result = tmp6(12672);
   }
   obj[2] = tmp6Result;
   obj[1] = closure_6(closure_3, obj);
@@ -49,10 +48,10 @@ DefaultFallback.prototype["render"] = function render() {
 };
 DefaultFallback.contextType = require("ManaContext").ThemeContext;
 const obj2 = { touchable: null, imageContainer: null, image: null };
-const obj3 = { flex: 1, width: "100%", height: "View", aspectRatio: true, backgroundColor: true };
-obj3[4] = require("Themes").colors.BACKGROUND_BASE_LOWEST;
+const obj3 = { flex: 1, width: "100%", height: "x", aspectRatio: true, backgroundColor: true };
+obj3[4] = ThemesDefault.colors.BACKGROUND_BASE_LOWEST;
 obj2[0] = obj3;
-createCacheKey = { flex: 1, backgroundColor: require("Themes").unsafe_rawColors.BLACK };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.unsafe_rawColors.BLACK };
 obj2[1] = createCacheKey;
 obj2[2] = { flex: 1 };
 let closure_10 = createCacheKey.createLegacyClassComponentStyles(obj2);
@@ -75,11 +74,7 @@ class StreamPreview extends PureComponent2 {
   }
 }
 StreamPreview.prototype["render"] = function render() {
-  let isFetching;
-  let renderFallback;
-  let theme;
-  let url;
-  const tmp = callback3(this.context);
+  const tmp = callback4(this.context);
   ({ url, isFetching, renderFallback, theme } = this.props);
   if (null != url) {
     if (!isFetching) {
@@ -105,13 +100,13 @@ StreamPreview.prototype["render"] = function render() {
       obj[3] = items;
       obj[4] = tmp6;
       obj[5] = tmp5;
-      const obj1 = { style: null, children: null };
+      obj1 = { style: null, children: null };
       obj1[0] = tmp.imageContainer;
       const items1 = [tmp8, tmp12];
       obj1[1] = items1;
       const items2 = [callback2(closure_4, obj1), tmp4];
       obj[6] = items2;
-      return callback2(require(5433) /* PressableBase */.PressableOpacity, obj);
+      return callback2(PressableBase.PressableOpacity, obj);
     }
   }
   let renderFallbackResult1;
@@ -124,9 +119,9 @@ StreamPreview.contextType = require("ManaContext").ThemeContext;
 StreamPreview.defaultProps = {
   renderFallback: function defaultRenderFallback(arg0, theme) {
     const obj = { theme, caption: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const string = intl.string;
-    const t = require(1236) /* getSystemLocale */.t;
+    const t = getSystemLocale.t;
     if (arg0) {
       let stringResult = string(t.NQ7H8V);
     } else {
@@ -136,19 +131,14 @@ StreamPreview.defaultProps = {
     return closure_6(DefaultFallback, obj);
   }
 };
-let obj1 = { textAlign: "center", fontSize: 14, lineHeight: 18, marginTop: 16, color: require("Themes").colors.TEXT_MUTED };
-const result = require("handleThemeChange").fileFinishedImporting("components_native/StreamPreview.tsx");
+let obj1 = { textAlign: "center", fontSize: 14, lineHeight: 18, marginTop: 16, color: ThemesDefault.colors.TEXT_MUTED };
+const result = require("set").fileFinishedImporting("components_native/StreamPreview.tsx");
 
 export default function ConnectedStreamPreview(stream) {
-  let channelId;
-  let guildId;
-  let isLoading;
-  let ownerId;
-  let previewUrl;
   ({ guildId, channelId, ownerId } = stream.stream);
-  ({ previewUrl, isLoading } = importDefault(12138)(guildId, channelId, ownerId));
-  let obj = require(589) /* initialize */;
-  const items = [handleThemeChange];
+  ({ previewUrl, isLoading } = useFetchStreamPreviewDefault(guildId, channelId, ownerId));
+  let obj = initialize;
+  const items = [closure_5];
   obj = {};
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const merged = Object.assign(stream);

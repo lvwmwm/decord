@@ -1,140 +1,127 @@
-// Module ID: 14226
-// Function ID: 14227
+// Module ID: 14294
+// Function ID: 14295
 // Name: FamilyCenterLoading
-// Dependencies: [32, 19, 17, 5296, 1922, 676, 1221, 1388, 5297, 21, 4733, 4661, 712, 7139, 7159, 7621, 14227, 14228, 7623, 647, 8799, 1236, 2335, 14229, 14269, 5298, 698, 5006, 5011, 4761, 4196, 1377, 5255, 10096, 11785, 2]
+// Dependencies: [32, 19, 17, 5301, 1922, 676, 1221, 1388, 5302, 21, 4738, 4668, 712, 7177, 7197, 7659, 14295, 14296, 7661, 647, 8836, 1236, 2336, 14297, 14337, 5303, 698, 5011, 5016, 4766, 4200, 1377, 5260, 10135, 11834, 2]
 // Exports: default
 
-// Module 14226 (FamilyCenterLoading)
-import openAgeGateModal from "openAgeGateModal";
-import defaultAreStatesEqual from "defaultAreStatesEqual";
-import get_ActivityIndicator from "useSelectedMyFamilyTab";
-import freshTeenActivityWithMap from "freshTeenActivityWithMap";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { AnalyticEvents } from "ME";
-import { AgeGateSource } from "result";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import items from "items";
-import jsxProd from "getSystemLocale";
-import createCacheKey from "createCacheKey";
+// Module 14294 (FamilyCenterLoading)
+import ThemesDefault from "Themes" /* 712 */;
+import Stack from "Stack" /* 4738 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "freshTeenActivityWithMap" /* 5301 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { AgeGateSource } from "result" /* 1221 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import items from "items" /* 5302 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let FamilyCenterSubPages;
-let c5;
-let closure_12;
-let closure_15;
-let closure_16;
-let closure_6;
-let map1;
-const require = arg1;
+require = arg1;
 function FamilyCenterLoading() {
-  const obj = { justify: "center", align: "center", style: createCacheKey().loadingContainer, children: null };
-  obj[3] = callback2(closure_6, {});
-  return callback2(require(4733) /* Stack */.Stack, obj);
+  const tmp = callback3();
+  return callback2(Stack.Stack, { justify: "center", align: "center", style: callback3().loadingContainer, children: callback2(closure_6, {}) });
 }
 function FamilyCenter() {
-  let openAgeGateModal;
-  let tmp12;
-  const tmp = createCacheKey();
-  let obj = familyCenterInitialized(7621);
+  const tmp = callback3();
+  let obj = familyCenterInitialized(7659);
   const acceptedRequestsCount = obj.useAcceptedRequestsCount();
-  const tmp6 = isLoading(14227)();
-  const selectedTab = isLoading(14228)().selectedTab;
-  let obj1 = familyCenterInitialized(7623);
+  const tmp6 = isLoading(14295)();
+  const selectedTab = isLoading(14296)().selectedTab;
+  obj1 = familyCenterInitialized(7661);
   const selectedTeenId = obj1.useSelectedTeenId();
   let obj2 = familyCenterInitialized(647);
-  const items = [freshTeenActivityWithMap];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => ({ familyCenterInitialized: freshTeenActivityWithMap.getIsInitialized(), isLoading: freshTeenActivityWithMap.isLoading() }));
+  items = [closure_7];
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => ({ familyCenterInitialized: closure_7.getIsInitialized(), isLoading: closure_7.isLoading() }));
   familyCenterInitialized = stateFromStoresObject.familyCenterInitialized;
   isLoading = stateFromStoresObject.isLoading;
-  const dependencyMap = tmp10;
+  dependencyMap = tmp10;
   currentUser = currentUser.getCurrentUser();
-  const tmp3 = isLoading(7139);
-  [tmp12, openAgeGateModal] = callback(obj2.useState(0), 2);
+  const tmp3 = isLoading(7177);
+  [tmp12, closure_3] = callback(obj2.useState(0), 2);
   callback = obj2.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj3 = familyCenterInitialized(8799);
+  let obj3 = familyCenterInitialized(8836);
   obj = { items: null, onPageChange: null, pageWidth: null, defaultIndex: null };
   obj = { label: null, id: null, page: null };
   const intl = familyCenterInitialized(1236).intl;
-  obj[0] = intl.string(isLoading(2335).bdBmqy);
+  obj[0] = intl.string(isLoading(2336).bdBmqy);
   obj[1] = FamilyCenterSubPages.ACTIVITY;
-  obj[2] = callback2(isLoading(14229), {});
+  obj[2] = callback2(isLoading(14297), {});
   const items1 = [obj, ];
   obj1 = { label: null, id: null, page: null };
   const intl2 = familyCenterInitialized(1236).intl;
-  obj1[0] = intl2.string(isLoading(2335)["gVWG+6"]);
+  obj1[0] = intl2.string(isLoading(2336)["gVWG+6"]);
   obj1[1] = FamilyCenterSubPages.REQUESTS;
-  obj1[2] = callback2(isLoading(14269), {});
+  obj1[2] = callback2(isLoading(14337), {});
   items1[1] = obj1;
   obj[0] = items1;
   obj[1] = function onPageChange(arg0) {
-    return isLoading(tmp10[25]).selectTab(table[arg0]);
+    return isLoading(5303).selectTab(table[arg0]);
   };
   obj[2] = tmp12;
   obj[3] = items.indexOf(selectedTab);
   const segmentedControlState = obj3.useSegmentedControlState(obj);
   obj2 = { ageGroup: tmp6, numOfAcceptedRequests: acceptedRequestsCount, selectedTab, selectedTeenId };
-  let closure_5 = obj2.useRef(obj2);
+  closure_5 = obj2.useRef(obj2);
   const effect = obj2.useEffect(() => {
     closure_5.current = obj2;
   });
   const items2 = [familyCenterInitialized, null != tmp6];
   const effect1 = obj2.useEffect(() => {
-    let ageGroup;
-    let numOfAcceptedRequests;
-    let selectedTab;
-    let selectedTeenId;
     if (familyCenterInitialized) {
-      if (tmp10) {
+      if (dependencyMap) {
         ({ ageGroup, numOfAcceptedRequests, selectedTab, selectedTeenId } = ref.current);
-        let obj = isLoading(tmp10[26]);
+        let obj = isLoading(698);
         obj = { is_considered_adult: null, num_of_accepted_links: null, selected_teen_id: null, initial_page: null, source: null };
         obj[0] = "adult" === ageGroup;
         obj[1] = numOfAcceptedRequests;
         obj[2] = selectedTeenId;
-        obj[3] = outer1_13[selectedTab];
-        obj[4] = outer1_12.SETTINGS;
-        obj.track(outer1_9.FAMILY_CENTER_VIEWED, obj);
+        obj[3] = closure_1_13[selectedTab];
+        obj[4] = closure_1_12.SETTINGS;
+        obj.track(closure_1_9.FAMILY_CENTER_VIEWED, obj);
         obj = { name: null };
-        obj[0] = familyCenterInitialized(tmp10[28]).MetricEvents.FAMILY_CENTER_VIEW;
-        isLoading(tmp10[27]).increment(obj);
-        const obj3 = isLoading(tmp10[27]);
+        obj[0] = familyCenterInitialized(5016).MetricEvents.FAMILY_CENTER_VIEW;
+        isLoading(5011).increment(obj);
+        const obj3 = isLoading(5011);
       }
     }
   }, items2);
-  isLoading(4761)(() => {
-    let obj = familyCenterInitialized(tmp10[30]);
-    obj = { dismissAction: outer1_11.AUTO, forceTrack: true };
-    const result = obj.UNSAFE_markDismissibleContentAsDismissed(familyCenterInitialized(tmp10[31]).DismissibleContent.FAMILY_CENTER_NEW_BADGE, obj);
+  isLoading(4766)(() => {
+    let obj = familyCenterInitialized(4200);
+    obj = { dismissAction: closure_1_11.AUTO, forceTrack: true };
+    const result = obj.UNSAFE_markDismissibleContentAsDismissed(familyCenterInitialized(1377).DismissibleContent.FAMILY_CENTER_NEW_BADGE, obj);
     let canRefetchResult = !isLoading;
     if (!isLoading) {
-      canRefetchResult = outer1_7.canRefetch();
+      canRefetchResult = closure_1_7.canRefetch();
     }
     if (canRefetchResult) {
-      isLoading(tmp10[25]).initialPageLoad();
-      const obj3 = isLoading(tmp10[25]);
+      isLoading(5303).initialPageLoad();
+      const obj3 = isLoading(5303);
     }
   });
   if (familyCenterInitialized) {
     if (null != currentUser) {
       if (!tmp10) {
-        tmp4(5255).openAgeGateModal(AgeGateSource.FAMILY_CENTER);
+        tmp4(5260).openAgeGateModal(AgeGateSource.FAMILY_CENTER);
         return null;
       }
     }
   }
-  obj3 = { value: tmp3(isLoading(7159).FAMILY_CENTER).analyticsLocations, children: null };
+  obj3 = { value: tmp3(isLoading(7197).FAMILY_CENTER).analyticsLocations, children: null };
   let obj4 = { style: tmp.container, onLayout: callback, children: null };
-  const obj5 = { style: tmp.segmentedControlContainer, children: null };
-  obj5[1] = callback2(familyCenterInitialized(10096).SegmentedControl, { state: segmentedControlState });
-  const items3 = [callback2(closure_5, obj5), ];
+  const tmp11 = callback(obj2.useState(0), 2);
+  const items3 = [callback2(closure_5, { style: tmp.segmentedControlContainer, children: callback2(familyCenterInitialized(10135).SegmentedControl, { state: segmentedControlState }) }), ];
   let obj6 = { style: tmp.container, children: null };
   if (isLoading) {
     let tmp14Result = tmp14(FamilyCenterLoading, {});
   } else {
     const obj7 = { state: null };
     obj7[0] = segmentedControlState;
-    tmp14Result = tmp14(tmp4(11785).SegmentedControlPages, obj7);
+    tmp14Result = tmp14(tmp4(11834).SegmentedControlPages, obj7);
   }
   obj6[1] = tmp14Result;
   obj6 = tmp14(tmp23, obj6);
@@ -142,7 +129,7 @@ function FamilyCenter() {
   obj4[2] = items3;
   obj4 = closure_16(tmp23, obj4);
   obj3[1] = obj4;
-  tmp14Result = tmp14(tmp4(7139).AnalyticsLocationProvider, obj3);
+  tmp14Result = tmp14(tmp4(7177).AnalyticsLocationProvider, obj3);
 }
 ({ View: c5, ActivityIndicator: closure_6 } = get_ActivityIndicator);
 ({ FamilyCenterPageLocationAnalyticsIds: closure_12, FamilyCenterSubPageAnalyticsIds: map1, FamilyCenterSubPages } = items);
@@ -150,11 +137,11 @@ function FamilyCenter() {
 items = [, ];
 ({ ACTIVITY: arr[0], REQUESTS: arr[1] } = FamilyCenterSubPages);
 createCacheKey = { container: { display: "flex", flex: 1 }, segmentedControlContainer: null, loadingContainer: null };
-createCacheKey = { paddingTop: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { paddingTop: ThemesDefault.space.PX_16, paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { minHeight: "100%" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/family_center/native/UserSettingsFamilyCenter.tsx");
+let closure_19 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/user_settings/family_center/native/UserSettingsFamilyCenter.tsx");
 
 export default function FamilyCenterContainer() {
   return callback2(FamilyCenter, {});

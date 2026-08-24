@@ -1,26 +1,28 @@
-// Module ID: 14722
-// Function ID: 14723
+// Module ID: 14786
+// Function ID: 14787
 // Name: toggle
-// Dependencies: [4662, 8198, 589, 10669, 1236, 13813, 2]
+// Dependencies: [4669, 8238, 589, 10708, 1236, 13871, 2]
 
-// Module 14722 (toggle)
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import createToggle from "createToggle";
+// Module 14786 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["sSY+mD"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["sSY+mD"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
   useValue: function useProfileColorsSettingValue() {
-    const items = [maybeApplyNoTextColorForLightCustomTheme];
-    return require(589) /* initialize */.useStateFromStores(items, () => obj.syncProfileThemeWithUserTheme);
+    const items = [closure_2];
+    return initialize.useStateFromStores(items, () => obj.syncProfileThemeWithUserTheme);
   },
   onValueChange: require("setFontSize").toggleSyncProfileThemeWithUserTheme
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/SyncProfileColorsSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/SyncProfileColorsSetting.tsx");
 
 export default createToggle;

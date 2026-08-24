@@ -1,26 +1,23 @@
-// Module ID: 7211
-// Function ID: 7212
+// Module ID: 7249
+// Function ID: 7250
 // Name: _safeTransitionTo
-// Dependencies: [5, 1910, 676, 4488, 7212, 1222, 7213, 4656, 1236, 7238, 2435, 7278, 2]
+// Dependencies: [5, 1910, 676, 4492, 7250, 1222, 7251, 4662, 1236, 7276, 2436, 7316, 2]
 // Exports: default
 
-// Module 7211 (_safeTransitionTo)
-import transitionTo from "transitionTo";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { Routes } from "ME";
+// Module 7249 (_safeTransitionTo)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import { Routes } from "ME" /* 676 */;
 
 const require = arg1;
 function _safeTransitionTo() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c5 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c5 = 0;
+    c6 = 0;
     return (function*(arg0, arg1) {
-      let diceCount;
-      let diceSides;
-      let guildId;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -32,7 +29,7 @@ function _safeTransitionTo() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -49,33 +46,33 @@ function _safeTransitionTo() {
             } else {
               let channelId = 0;
               let guild = tmp2;
-              let closure_2;
+              closure_2 = undefined;
               guild = undefined;
               channelId = undefined;
-              const tryParseDiceRollLinkResult = callback(outer1_2[3]).tryParseDiceRollLink(callback);
+              const tryParseDiceRollLinkResult = callback(closure_1_2[3]).tryParseDiceRollLink(callback);
               if (null != tryParseDiceRollLinkResult) {
                 channelId = tryParseDiceRollLinkResult.channelId;
                 ({ guildId, diceCount, diceSides } = tryParseDiceRollLinkResult);
-                callback(outer1_2[4]).startDiceRoll(channelId, diceCount, diceSides);
-                const obj13 = callback(outer1_2[4]);
-                callback(outer1_2[5]).transitionTo(c5.CHANNEL(guildId, channelId), tmp83);
+                callback(closure_1_2[4]).startDiceRoll(channelId, diceCount, diceSides);
+                const obj13 = callback(closure_1_2[4]);
+                callback(closure_1_2[5]).transitionTo(c5.CHANNEL(guildId, channelId), tmp83);
                 c6 = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = undefined;
                 return obj1;
               } else {
-                const tryParseChannelPathResult = callback(outer1_2[3]).tryParseChannelPath(tmp82);
+                const tryParseChannelPathResult = callback(closure_1_2[3]).tryParseChannelPath(tmp82);
                 closure_2 = tryParseChannelPathResult;
                 if (null != tryParseChannelPathResult) {
                   c5 = 1;
                   c6 = 1;
                   let obj2 = { value: null, done: false };
-                  obj2[0] = callback2(outer1_2[6])(tryParseChannelPathResult);
+                  obj2[0] = callback2(closure_1_2[6])(tryParseChannelPathResult);
                   return obj2;
                 }
-                const obj19 = callback(outer1_2[3]);
+                const obj19 = callback(closure_1_2[3]);
               }
-              const obj18 = callback(outer1_2[3]);
+              const obj18 = callback(closure_1_2[3]);
               tmp82 = callback;
               tmp83 = callback2;
             }
@@ -154,7 +151,7 @@ function _safeTransitionTo() {
       }
     })();
   });
-  const _safeTransitionTo = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -163,7 +160,7 @@ function _safeTransitionTo() {
   }
   return applyArgumentsResult;
 }
-const result = require("ME").fileFinishedImporting("modules/links/safeTransitionTo.native.tsx");
+const result = require("set").fileFinishedImporting("modules/links/safeTransitionTo.native.tsx");
 
 export default function safeTransitionTo() {
   const self = this;

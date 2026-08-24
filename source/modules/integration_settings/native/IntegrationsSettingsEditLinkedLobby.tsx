@@ -1,29 +1,27 @@
-// Module ID: 16068
-// Function ID: 16069
+// Module ID: 16166
+// Function ID: 16167
 // Name: EditLinkedLobby
-// Dependencies: [19, 17, 1922, 21, 4661, 712, 4097, 1500, 7139, 7159, 7145, 4984, 589, 9950, 8929, 1236, 4734, 8083, 4733, 1297, 1435, 6286, 6291, 2]
+// Dependencies: [19, 17, 1922, 21, 4668, 712, 4100, 1500, 7177, 7197, 7183, 4989, 589, 9989, 8966, 1236, 4739, 8122, 4738, 1297, 1435, 6317, 6322, 2]
 // Exports: default
 
-// Module 16068 (EditLinkedLobby)
-import Button from "Button";
-import { View } from "Form";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import jsxProd from "TableRowGroupTitle";
-import createCacheKey from "createCacheKey";
+// Module 16166 (EditLinkedLobby)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: closure_6, Fragment: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { screenContainer: null, header: null, divider: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { alignItems: "center", marginTop: 8, marginBottom: 32, gap: 12 };
-createCacheKey[2] = { height: 1, width: 48, backgroundColor: require("Themes").colors.BORDER_STRONG };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { height: 1, width: 48, backgroundColor: require("Themes").colors.BORDER_STRONG };
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/integration_settings/native/IntegrationsSettingsEditLinkedLobby.tsx");
+createCacheKey[2] = { height: 1, width: 48, backgroundColor: ThemesDefault.colors.BORDER_STRONG };
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { height: 1, width: 48, backgroundColor: ThemesDefault.colors.BORDER_STRONG };
+const result = require("set").fileFinishedImporting("modules/integration_settings/native/IntegrationsSettingsEditLinkedLobby.tsx");
 
 export default function EditLinkedLobby(channel) {
   channel = channel.channel;
@@ -35,8 +33,8 @@ export default function EditLinkedLobby(channel) {
   let callback1;
   let obj = channel(navigation[6]);
   const token = obj.useToken(numScreensToPop(navigation[5]).modules.mobile.TABLE_ROW_PADDING);
-  const tmp5 = createCacheKey();
-  let obj1 = channel(navigation[7]);
+  const tmp5 = callback();
+  obj1 = channel(navigation[7]);
   navigation = obj1.useNavigation();
   analyticsLocations = numScreensToPop(navigation[8])(numScreensToPop(navigation[9]).EDIT_CHANNEL_SYNCING).analyticsLocations;
   let obj2 = channel(navigation[10]);
@@ -64,7 +62,7 @@ export default function EditLinkedLobby(channel) {
   });
   let obj4 = analyticsLocations;
   const items1 = [navigation, numScreensToPop];
-  const callback = analyticsLocations.useCallback(() => {
+  callback = analyticsLocations.useCallback(() => {
     navigation.pop(numScreensToPop);
   }, items1);
   let str;
@@ -98,7 +96,7 @@ export default function EditLinkedLobby(channel) {
         let obj = { username: null, usernameHook: null, linkedAtDate: null };
         obj[0] = tmp17.username;
         obj[1] = function usernameHook(children) {
-          return outer1_6(outer1_0(outer1_2[16]).Text, { onPress: closure_6, variant: "text-sm/semibold", color: "text-strong", children }, arg1);
+          return closure_1_6(closure_1_0(closure_1_2[16]).Text, { onPress: closure_6, variant: "text-sm/semibold", color: "text-strong", children }, arg1);
         };
         obj[2] = date;
         let formatResult = intl2.format(channel(navigation[15]).t.uV2AkA, obj);

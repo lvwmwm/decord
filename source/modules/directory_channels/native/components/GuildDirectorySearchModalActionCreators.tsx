@@ -1,16 +1,20 @@
-// Module ID: 11467
-// Function ID: 11468
-// Dependencies: [5260, 11468, 2007, 2]
+// Module ID: 11516
+// Function ID: 11517
+// Dependencies: [5265, 11517, 2008, 2]
 
-// Module 11467
+// Module 11516
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+
 const GUILD_DIRECTORY_SEARCH_MODAL_KEY = "GUILD_DIRECTORY_SEARCH_MODAL_KEY";
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectorySearchModalActionCreators.tsx");
+const result = set.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectorySearchModalActionCreators.tsx");
 
 export default {
   open(channel) {
-    importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(11468, dependencyMap.paths), { channel: channel.channel }, GUILD_DIRECTORY_SEARCH_MODAL_KEY);
+    _modDef5265.pushLazy(asyncRequireImpl(11517, dependencyMap.paths), { channel: channel.channel }, GUILD_DIRECTORY_SEARCH_MODAL_KEY);
   },
   close() {
-    importDefault(5260).popWithKey(GUILD_DIRECTORY_SEARCH_MODAL_KEY);
+    _modDef5265.popWithKey(GUILD_DIRECTORY_SEARCH_MODAL_KEY);
   }
 };

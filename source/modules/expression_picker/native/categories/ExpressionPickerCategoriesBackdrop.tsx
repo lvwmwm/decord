@@ -1,29 +1,30 @@
-// Module ID: 9439
-// Function ID: 9440
-// Dependencies: [19, 17, 676, 21, 4661, 712, 500, 8986, 2]
+// Module ID: 9476
+// Function ID: 9477
+// Dependencies: [19, 17, 676, 21, 4668, 712, 500, 9023, 2]
 
-// Module 9439
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 9476
+import set from "set" /* 500 */;
+import ThemesDefault from "Themes" /* 712 */;
+import _modDef9023 from "module_9023" /* 9023 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let StyleSheet;
-let c3;
-const require = arg1;
+require = arg1;
 ({ StyleSheet, View: c3 } = get_ActivityIndicator);
 let obj = { backdrop: null, backdropAndroid: null };
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj.borderTopWidth = StyleSheet.hairlineWidth;
-obj.borderTopColor = require("Themes").colors.BACKGROUND_BASE_LOWEST;
+obj.borderTopColor = ThemesDefault.colors.BACKGROUND_BASE_LOWEST;
 obj[0] = obj;
-createCacheKey = { backgroundColor: require("Themes").colors.PROFILE_GRADIENT_NOTE_BACKGROUND, height: require("ME").EXPRESSION_FOOTER_HEIGHT, bottom: "Array" };
+createCacheKey = { backgroundColor: ThemesDefault.colors.PROFILE_GRADIENT_NOTE_BACKGROUND, height: require("ME").EXPRESSION_FOOTER_HEIGHT, bottom: "Array" };
 obj[1] = createCacheKey;
 let closure_5 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(function EmojiPickerCategoriesBackdrop() {
+const memoResult = importAllResult.memo(function EmojiPickerCategoriesBackdrop() {
   const tmp = callback();
-  let obj = require(500) /* set */;
+  let obj = set;
   if (obj.isAndroid()) {
     obj = { style: null };
     const items = [, ];
@@ -33,13 +34,13 @@ const memoResult = require("noop").memo(function EmojiPickerCategoriesBackdrop()
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.backdrop;
-    const obj1 = { style: null };
+    obj1 = { style: null };
     obj1[0] = tmp.backdrop;
-    obj[1] = tmp3(importDefault(8986), obj1);
+    obj[1] = tmp3(_modDef9023, obj1);
     tmp3Result = tmp3(tmp4, obj);
   }
   return tmp3Result;
 });
-const result = require("ME").fileFinishedImporting("modules/expression_picker/native/categories/ExpressionPickerCategoriesBackdrop.tsx");
+const result = require("set").fileFinishedImporting("modules/expression_picker/native/categories/ExpressionPickerCategoriesBackdrop.tsx");
 
 export default memoResult;

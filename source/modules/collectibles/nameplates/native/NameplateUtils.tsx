@@ -1,19 +1,22 @@
-// Module ID: 9222
-// Function ID: 9223
+// Module ID: 9259
+// Function ID: 9260
 // Name: getNameplateAssets
 // Dependencies: [1901, 2]
 // Exports: getNameplateAssets
 
-// Module 9222 (getNameplateAssets)
-const result = require("set").fileFinishedImporting("modules/collectibles/nameplates/native/NameplateUtils.tsx");
+// Module 9259 (getNameplateAssets)
+import set from "set" /* 2 */;
+import parseSkuIdFromServerData from "parseSkuIdFromServerData" /* 1901 */;
+
+const result = set.fileFinishedImporting("modules/collectibles/nameplates/native/NameplateUtils.tsx");
 
 export const getNameplateAssets = function getNameplateAssets(nameplate) {
   const skuId = nameplate.skuId;
   let obj = { staticImageUrl: null, animatedImageUrl: null };
-  obj = { skuId, assetFormat: require(1901) /* parseSkuIdFromServerData */.CollectiblesItemAssetFormat.STATIC };
-  obj[0] = require(1901) /* parseSkuIdFromServerData */.getCollectiblesItemAssetUrl(obj);
-  const obj2 = require(1901) /* parseSkuIdFromServerData */;
-  obj = { skuId, assetFormat: require(1901) /* parseSkuIdFromServerData */.CollectiblesItemAssetFormat.ANIMATED };
-  obj[1] = require(1901) /* parseSkuIdFromServerData */.getCollectiblesItemAssetUrl(obj);
+  obj = { skuId, assetFormat: parseSkuIdFromServerData.CollectiblesItemAssetFormat.STATIC };
+  obj[0] = parseSkuIdFromServerData.getCollectiblesItemAssetUrl(obj);
+  const obj2 = parseSkuIdFromServerData;
+  obj = { skuId, assetFormat: parseSkuIdFromServerData.CollectiblesItemAssetFormat.ANIMATED };
+  obj[1] = parseSkuIdFromServerData.getCollectiblesItemAssetUrl(obj);
   return obj;
 };

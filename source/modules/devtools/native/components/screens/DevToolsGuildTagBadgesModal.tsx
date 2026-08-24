@@ -1,18 +1,17 @@
-// Module ID: 15157
-// Function ID: 15158
-// Dependencies: [19, 21, 9931, 6312, 8492, 9941, 15158, 2]
+// Module ID: 15221
+// Function ID: 15222
+// Dependencies: [19, 21, 9970, 6343, 8531, 9980, 15222, 2]
 
-// Module 15157
-import { jsx } from "jsxProd";
-import createNativeStackNavigator from "createNativeStackNavigator";
-import importAllResult from "noop";
+// Module 15221
+import itemsDefault from "items" /* 15222 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 9970 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
-createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
-const memoResult = require("noop").memo(function DevToolsGuildTagBadgesModal() {
-  let Navigator;
-  let Screen;
-  let obj = _require(6312);
+let closure_4 = createNativeStackNavigator.createNativeStackNavigator();
+const memoResult = importAllResult.memo(function DevToolsGuildTagBadgesModal() {
+  let obj = _require(6343);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {
@@ -22,12 +21,11 @@ const memoResult = require("noop").memo(function DevToolsGuildTagBadgesModal() {
           const merged1 = Object.assign(merged);
           return callback2(callback(table[4]).GenericHeaderTitle, { title: children.children });
         },
-        headerLeft: null,
+        headerLeft: callback(closure_1_2[4]).getRenderModalCloseImage(navigation.navigation),
         headerTitleAlign: "center"
       };
-      obj[1] = callback(outer1_2[4]).getRenderModalCloseImage(navigation.navigation);
       let merged = Object.assign(callback);
-      let merged1 = Object.assign(outer1_1(outer1_2[5])());
+      let merged1 = Object.assign(closure_1_1(closure_1_2[5])());
       return obj;
     },
     children: null
@@ -37,16 +35,16 @@ const memoResult = require("noop").memo(function DevToolsGuildTagBadgesModal() {
     options() {
       return { title: "Guild Tag Badges" };
     },
-    component: importDefault(15158)
+    component: itemsDefault
   };
-  ({ Navigator, Screen } = createNativeStackNavigator);
+  ({ Navigator, Screen } = closure_4);
   obj[1] = <Screen name="DevToolsGuildTagBadges" options={function options() {
     return { title: "Guild Tag Badges" };
-  }} component={importDefault(15158)} />;
+  }} component={itemsDefault} />;
   return <Navigator name="DevToolsGuildTagBadges" options={function options() {
     return { title: "Guild Tag Badges" };
-  }} component={importDefault(15158)} />;
+  }} component={itemsDefault} />;
 });
-const result = require("createNativeStackNavigator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesModal.tsx");
+const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesModal.tsx");
 
 export default memoResult;

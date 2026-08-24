@@ -1,18 +1,22 @@
-// Module ID: 9797
-// Function ID: 9798
-// Dependencies: [5260, 9798, 2007, 2]
+// Module ID: 9836
+// Function ID: 9837
+// Dependencies: [5265, 9837, 2008, 2]
 
-// Module 9797
+// Module 9836
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+
 let c3 = "USER_SETTINGS_CONNECTIONS_CRUNCHYROLL_LINK_MODAL_KEY";
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkModalActionCreators.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkModalActionCreators.tsx");
 
 export default {
   showModal(locationStack) {
-    let obj = importDefault(5260);
+    let obj = _modDef5265;
     obj = { locationStack };
-    obj.pushLazy(require(2007) /* asyncRequireImpl */(9798, dependencyMap.paths), obj, c3);
+    obj.pushLazy(asyncRequireImpl(9837, dependencyMap.paths), obj, c3);
   },
   hideModal() {
-    importDefault(5260).popWithKey(c3);
+    _modDef5265.popWithKey(c3);
   }
 };

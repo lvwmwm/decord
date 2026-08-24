@@ -1,28 +1,32 @@
-// Module ID: 13909
-// Function ID: 13910
+// Module ID: 13977
+// Function ID: 13978
 // Name: _initialize
-// Dependencies: [9057, 687, 4720, 709, 9058, 2]
+// Dependencies: [9094, 687, 4726, 709, 9095, 2]
 
-// Module 13909 (_initialize)
-import "initialize";
+// Module 13977 (_initialize)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 4726 */;
+import _modDef9094 from "module_9094" /* 9094 */;
+import apexExperiment from "apexExperiment" /* 9095 */;
 
-const require = arg1;
+require = arg1;
 let c3 = null;
+initializeDefault;
 class ICYMIManager extends tmp2 {
 }
 const prototype = ICYMIManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  const subscription = importDefault(709).subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  const subscription = dispatcherDefault.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
 };
 prototype["_terminate"] = function _terminate() {
-  importDefault(709).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  dispatcherDefault.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
 };
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
-  let obj = require(9058) /* apexExperiment */;
+  let obj = apexExperiment;
   if (obj.getICYMIEnabled("ICYMIManager")) {
     obj = { isInitialLoad: null };
     obj[0] = true;
-    const dehydrated = importDefault(9057).fetchDehydrated(obj);
+    const dehydrated = _modDef9094.fetchDehydrated(obj);
     if (null != timeout) {
       const _clearTimeout = clearTimeout;
       clearTimeout(timeout);
@@ -57,14 +61,14 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
         }, 15 * callback(table[1]).Millis.MINUTE);
       }, 15 * callback(table[1]).Millis.MINUTE);
     }, 15 * tmp2(687).Millis.MINUTE);
-    let tmp2Result = tmp2(9057);
+    let tmp2Result = tmp2(9094);
     const guildChannelScores = tmp2Result.getGuildChannelScores();
-    tmp2Result = tmp2(9057);
+    tmp2Result = tmp2(9094);
     const recommendedGuilds = tmp2Result.getRecommendedGuilds();
-    const obj2 = importDefault(9057);
+    const obj2 = _modDef9094;
   }
 };
 const iCYMIManager = new ICYMIManager();
-const result = require("initialize").fileFinishedImporting("modules/icymi/ICYMIManager.tsx");
+const result = require("set").fileFinishedImporting("modules/icymi/ICYMIManager.tsx");
 
 export default iCYMIManager;

@@ -1,14 +1,18 @@
-// Module ID: 5246
-// Function ID: 5247
+// Module ID: 5251
+// Function ID: 5252
 // Name: TRUE_OPTION_NAME
 // Dependencies: [1236, 1954, 2]
 // Exports: getValidationErrorText
 
-// Module 5246 (TRUE_OPTION_NAME)
+// Module 5251 (TRUE_OPTION_NAME)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+
 const items = [{ name: "True", displayName: "True", value: "true" }, { name: "False", displayName: "False", value: "false" }];
 const frozen = Object.freeze([]);
 const frozen1 = Object.freeze([]);
-const result = require("set").fileFinishedImporting("modules/application_commands/ApplicationCommandConstants.tsx");
+const result = set.fileFinishedImporting("modules/application_commands/ApplicationCommandConstants.tsx");
 
 export const TRUE_OPTION_NAME = "True";
 export const FALSE_OPTION_NAME = "False";
@@ -29,11 +33,11 @@ export const EMPTY_COMMANDS_SECTION = frozen1;
 export const APPLICATION_USER_INSTALL_BETA_USER_LIMIT = 200;
 export const getValidationErrorText = function getValidationErrorText(option) {
   if (null != option.choices) {
-    const intl9 = require(1236) /* getSystemLocale */.intl;
-    return intl9.string(require(1236) /* getSystemLocale */.t.xi5aah);
+    const intl9 = getSystemLocale.intl;
+    return intl9.string(getSystemLocale.t.xi5aah);
   } else {
     const type = option.type;
-    if (require(1954) /* PermissionOverwriteType */.ApplicationCommandOptionType.BOOLEAN === type) {
+    if (PermissionOverwriteType.ApplicationCommandOptionType.BOOLEAN === type) {
       const intl8 = tmp3(1236).intl;
       return intl8.string(tmp3(1236).t.ATIx6O);
     } else if (tmp3(1954).ApplicationCommandOptionType.CHANNEL === type) {

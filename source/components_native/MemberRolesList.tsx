@@ -1,26 +1,27 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11078
+// Function ID: 11079
 // Name: MemberRolesList
-// Dependencies: [19, 17, 1983, 21, 4661, 589, 9971, 2]
+// Dependencies: [19, 17, 1984, 21, 4668, 589, 10010, 2]
 // Exports: default
 
-// Module 11039 (MemberRolesList)
-import "noop";
-import { View } from "get ActivityIndicator";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11078 (MemberRolesList)
+import noopAll from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
+noopAll;
 let closure_6 = createCacheKey.createStyles({ wrapper: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center" } });
-const result = require("createGuildRoleRecordFromRust").fileFinishedImporting("components_native/MemberRolesList.tsx");
+const result = require("set").fileFinishedImporting("components_native/MemberRolesList.tsx");
 
 export default function MemberRolesList(userRoles) {
   userRoles = userRoles.userRoles;
   const guild = userRoles.guild;
   let obj = userRoles(589);
-  const items = [createGuildRoleRecordFromRust];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getSortedRoles(guild.id));
+  const items = [closure_4];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getSortedRoles(guild.id));
   const tmp4 = <View />;
   let tmp2Result = tmp4;
   if (null != userRoles) {
@@ -55,7 +56,7 @@ export default function MemberRolesList(userRoles) {
       obj = { style: null, children: null };
       const items1 = [tmp.wrapper, userRoles.style];
       obj[0] = items1;
-      obj[1] = sorted.map((id) => outer1_5(guild(outer1_2[6]), { role: id, guildId: guild.id }, id.id));
+      obj[1] = sorted.map((id) => closure_1_5(guild(closure_1_2[6]), { role: id, guildId: guild.id }, id.id));
       tmp2Result = <View style={null}>{null}</View>;
     }
   }

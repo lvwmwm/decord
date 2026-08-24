@@ -1,12 +1,12 @@
-// Module ID: 11944
-// Function ID: 11945
-// Dependencies: [19, 4230, 4229, 8518, 2]
+// Module ID: 11993
+// Function ID: 11994
+// Dependencies: [19, 4234, 4233, 8557, 2]
 
-// Module 11944
-import noop from "noop";
+// Module 11993
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-let result = require("coerceMainRoute").fileFinishedImporting("modules/forums/ForumPlatformHooks.native.tsx");
+let result = require("set").fileFinishedImporting("modules/forums/ForumPlatformHooks.native.tsx");
 
 export default {
   useForumChannelSeenManager(guildId) {
@@ -40,7 +40,7 @@ export default {
         if (rootNavigationRef.isReady()) {
           rootNavigationRef.addListener("state", callback);
           return () => {
-            rootNavigationRef.removeListener("state", outer1_3);
+            rootNavigationRef.removeListener("state", closure_1_3);
           };
         }
       }

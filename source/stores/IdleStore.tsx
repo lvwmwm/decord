@@ -1,16 +1,22 @@
-// Module ID: 4974
-// Function ID: 4975
+// Module ID: 4979
+// Function ID: 4980
 // Name: checkIdleAFK
-// Dependencies: [1218, 676, 4529, 500, 4066, 687, 709, 4004, 4975, 636, 589, 2]
+// Dependencies: [1218, 676, 4534, 500, 4069, 687, 709, 4007, 4980, 636, 589, 2]
 
-// Module 4974 (checkIdleAFK)
-import fetchFingerprint from "fetchFingerprint";
-import ME from "ME";
-import { SpeakingFlags } from "DesktopSources";
+// Module 4979 (checkIdleAFK)
+import set from "set" /* 500 */;
+import initializeDefault from "initialize" /* 589 */;
+import debounceDefault from "debounce" /* 636 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import setDefault2 from "set" /* 4007 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import _modDef4980 from "module_4980" /* 4980 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import ME from "ME" /* 676 */;
+import { SpeakingFlags } from "DesktopSources" /* 4534 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function checkIdleAFK() {
   if (Date.now() - closure_8 <= closure_5) {
     let tmp2 = c11;
@@ -18,24 +24,24 @@ function checkIdleAFK() {
       tmp2 = c12;
     }
     if (!tmp2) {
-      let obj = require(500) /* set */;
+      let obj = set;
       tmp2 = obj.isAndroid() && c13;
       const tmp5 = obj.isAndroid() && c13;
     }
     if (!tmp2) {
       if (c9) {
-        importDefault(709).dispatch({ type: "IDLE", idle: false });
-        const obj2 = importDefault(709);
+        dispatcherDefault.dispatch({ type: "IDLE", idle: false });
+        const obj2 = dispatcherDefault;
       }
     }
-    const AfkTimeout = require(4066) /* explicitContentFromProto */.AfkTimeout;
+    const AfkTimeout = explicitContentFromProto.AfkTimeout;
     const setting = AfkTimeout.getSetting();
     if (0 !== setting) {
       if (null == closure_3) {
         const _Date = Date;
         const _Math = Math;
         const diff = Date.now() - closure_8;
-        if (diff <= Math.min(setting * importDefault(687).Millis.SECOND, tmp)) {
+        if (diff <= Math.min(setting * setDefault.Millis.SECOND, tmp)) {
           let tmp17 = c11;
           if (!c11) {
             tmp17 = c12;
@@ -56,16 +62,16 @@ function checkIdleAFK() {
       }
     }
     if (!c10) {
-      importDefault(709).dispatch({ type: "AFK", afk: true });
-      const obj7 = importDefault(709);
+      dispatcherDefault.dispatch({ type: "AFK", afk: true });
+      const obj7 = dispatcherDefault;
     }
     tmp14 = require;
   }
   if (!c9) {
     obj = { type: "IDLE", idle: true, idleSince: null };
     obj[2] = closure_8;
-    importDefault(709).dispatch(obj);
-    const obj3 = importDefault(709);
+    dispatcherDefault.dispatch(obj);
+    const obj3 = dispatcherDefault;
   }
 }
 ({ IDLE_DURATION: c5, AppStates: closure_6 } = ME);
@@ -76,14 +82,14 @@ let c11 = false;
 let c12 = false;
 let c13 = false;
 if (require("set").isPlatformEmbedded) {
-  const importDefaultResult = require("set");
+  const importDefaultResult = setDefault2;
   let powerMonitor;
   if (importDefaultResult != null) {
     powerMonitor = importDefaultResult.powerMonitor;
   }
   if (null != powerMonitor) {
     function checkNativeIdle() {
-      const tmp3 = importDefault(4004);
+      const tmp3 = setDefault2;
       let getSystemIdleTimeMs;
       if (tmp3 != null) {
         const powerMonitor = tmp3.powerMonitor;
@@ -92,7 +98,7 @@ if (require("set").isPlatformEmbedded) {
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = tmp(4004).powerMonitor;
+        const powerMonitor2 = tmp(4007).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(function handleIdleTime(arg0) {
@@ -128,28 +134,28 @@ if (require("set").isPlatformEmbedded) {
       }
     }
     checkNativeIdle();
-    powerMonitor = require("set").powerMonitor;
+    powerMonitor = setDefault2.powerMonitor;
     powerMonitor.on("resume", () => {
-      let c11 = false;
+      c11 = false;
       checkIdleAFK();
     });
-    let powerMonitor2 = require("set").powerMonitor;
+    let powerMonitor2 = setDefault2.powerMonitor;
     powerMonitor2.on("suspend", () => {
-      let c11 = true;
-      let closure_3 = Date.now();
+      c11 = true;
+      closure_3 = Date.now();
       checkIdleAFK();
-      importDefault(4975).disconnect();
+      _modDef4980.disconnect();
     });
-    const powerMonitor3 = require("set").powerMonitor;
+    const powerMonitor3 = setDefault2.powerMonitor;
     class IdleStore extends r10079 {
     }
     powerMonitor3.on("lock-screen", () => {
-      let c12 = true;
-      let closure_3 = Date.now();
+      c12 = true;
+      closure_3 = Date.now();
       checkIdleAFK();
     });
     obj.on("unlock-screen", () => {
-      let c12 = false;
+      c12 = false;
       checkIdleAFK();
     });
   }
@@ -167,7 +173,7 @@ if (require("set").isPlatformEmbedded) {
       bypassIdleUpdate = timestamp.bypassIdleUpdate;
     }
     if (!bypassIdleUpdate) {
-      let c3 = null;
+      c3 = null;
       if (!tmp) {
         const _Date = Date;
         timestamp = Date.now();
@@ -176,7 +182,7 @@ if (require("set").isPlatformEmbedded) {
     }
     return false;
   }
-  require("debounce")(() => {
+  debounceDefault(() => {
     const obj = {};
     let timestamp = obj.timestamp;
     let tmp = "OVERLAY_SET_NOT_IDLE" === obj.type;
@@ -191,7 +197,7 @@ if (require("set").isPlatformEmbedded) {
       bypassIdleUpdate = obj.bypassIdleUpdate;
     }
     if (!bypassIdleUpdate) {
-      let c3 = null;
+      c3 = null;
       if (!tmp) {
         const _Date = Date;
         timestamp = Date.now();
@@ -199,12 +205,12 @@ if (require("set").isPlatformEmbedded) {
       checkIdleAFK();
     }
   }, 500);
-  const Store = require("initialize").Store;
+  const Store = initializeDefault.Store;
   class IdleStore extends r10079 {
   }
   const prototype = IdleStore.prototype;
   prototype["initialize"] = function initialize() {
-    this.waitFor(fetchFingerprint);
+    this.waitFor(closure_4);
   };
   prototype["isIdle"] = function isIdle() {
     return c9;
@@ -253,7 +259,7 @@ if (require("set").isPlatformEmbedded) {
         bypassIdleUpdate = obj.bypassIdleUpdate;
       }
       if (!bypassIdleUpdate) {
-        let c3 = null;
+        c3 = null;
         if (!tmp4) {
           const _Date = Date;
           timestamp = Date.now();
@@ -264,9 +270,9 @@ if (require("set").isPlatformEmbedded) {
     return false;
   };
   obj[3] = function handleAppStateUpdate(state) {
-    let closure_13 = state.state === constants.BACKGROUND;
-    let c3 = null;
-    let closure_8 = Date.now();
+    closure_13 = state.state === constants.BACKGROUND;
+    c3 = null;
+    closure_8 = Date.now();
     checkIdleAFK();
     return false;
   };
@@ -276,8 +282,8 @@ if (require("set").isPlatformEmbedded) {
   obj[7] = handleGenericAction;
   obj[8] = handleGenericAction;
   obj[9] = handleGenericAction;
-  const idleStore = new IdleStore(require("dispatcher"), obj);
-  const result = require("DesktopSources").fileFinishedImporting("stores/IdleStore.tsx");
+  const idleStore = new IdleStore(dispatcherDefault, obj);
+  const result = require("set").fileFinishedImporting("stores/IdleStore.tsx");
   exports.default = idleStore;
 }
-let timerId = setInterval(checkIdleAFK, 30 * require("set").Millis.SECOND);
+let timerId = setInterval(checkIdleAFK, 30 * setDefault.Millis.SECOND);

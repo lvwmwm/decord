@@ -1,18 +1,19 @@
-// Module ID: 5916
-// Function ID: 5917
+// Module ID: 5947
+// Function ID: 5948
 // Name: LanternSpotIllustration
-// Dependencies: [21, 5449, 5917, 2]
+// Dependencies: [21, 5454, 5948, 2]
 // Exports: LanternSpotIllustration
 
-// Module 5916 (LanternSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 5947 (LanternSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5948 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/LanternSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/LanternSpotIllustration.native.tsx");
 
 export const LanternSpotIllustration = function LanternSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const LanternSpotIllustration = function LanternSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5917);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const LanternSpotIllustration = function LanternSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

@@ -1,29 +1,24 @@
-// Module ID: 16997
-// Function ID: 16998
+// Module ID: 17090
+// Function ID: 17091
 // Name: ActionableNotice
-// Dependencies: [19, 17, 21, 4661, 4734, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 4739, 4750, 2]
 // Exports: default
 
-// Module 16997 (ActionableNotice)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 17090 (ActionableNotice)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_5 = createCacheKey.createStyles({ container: { flexDirection: "row", paddingVertical: 12, alignItems: "center" }, message: { marginEnd: 27, flex: 3 }, actionButton: { flexGrow: 0, alignSelf: "center" } });
-const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/ActionableNotice.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/ActionableNotice.tsx");
 
 export default function ActionableNotice(arg0) {
-  let ctaMessage;
-  let disabled;
-  let message;
-  let onClick;
-  let style;
-  let submitting;
   ({ submitting, disabled } = arg0);
   ({ style, message, ctaMessage, onClick } = arg0);
   if (disabled === undefined) {
@@ -33,15 +28,15 @@ export default function ActionableNotice(arg0) {
   let obj = { style: items, children: null };
   items = [style, tmp.container];
   obj = { style: tmp.message, variant: "text-sm/medium", color: "text-default", children: message };
-  const items1 = [callback(require(4734) /* Text */.Text, obj), ];
+  const items1 = [callback(Text.Text, obj), ];
   obj = { style: tmp.actionButton, children: null };
-  const obj1 = { size: "sm", onPress: onClick, disabled: null, text: null };
+  obj1 = { size: "sm", onPress: onClick, disabled: null, text: null };
   if (!submitting) {
     submitting = disabled;
   }
   obj1[2] = submitting;
   obj1[3] = ctaMessage;
-  obj[1] = callback(require(4745) /* Button */.Button, obj1);
+  obj[1] = callback(Button.Button, obj1);
   items1[1] = callback(View, obj);
   obj[1] = items1;
   return closure_4(View, obj);

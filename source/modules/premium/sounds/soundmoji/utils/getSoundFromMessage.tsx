@@ -1,23 +1,23 @@
-// Module ID: 6823
-// Function ID: 6824
+// Module ID: 6861
+// Function ID: 6862
 // Name: getSoundFromSounds
-// Dependencies: [4994, 4781, 6824, 694, 2]
+// Dependencies: [4999, 4786, 6862, 694, 2]
 // Exports: default
 
-// Module 6823 (getSoundFromSounds)
-import reinjectEphemerals from "reinjectEphemerals";
-import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
+// Module 6861 (getSoundFromSounds)
+import closure_2 from "reinjectEphemerals" /* 4999 */;
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4786 */;
 
 const require = arg1;
 function getSoundFromSounds(arr) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   let found;
   if (arr != null) {
     found = arr.find((sound_id) => String(sound_id.sound_id) === String(closure_0));
   }
   return found;
 }
-const result = require("SoundButtonOverlay").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/getSoundFromMessage.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/getSoundFromMessage.tsx");
 
 export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
   let _require = arg2;
@@ -30,7 +30,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
     if (guild_id2 == null) {
       guild_id2 = DEFAULT_SOUND_GUILD_ID;
     }
-    return _require(6824).soundboardSoundFromAPI(found, guild_id2);
+    return _require(6862).soundboardSoundFromAPI(found, guild_id2);
   } else {
     message = message.getMessage(arg0, arg1);
     if (null != message) {
@@ -84,7 +84,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
         if (guild_id == null) {
           guild_id = DEFAULT_SOUND_GUILD_ID;
         }
-        return tmp3(6824).soundboardSoundFromAPI(found1, guild_id);
+        return tmp3(6862).soundboardSoundFromAPI(found1, guild_id);
       }
       tmp3 = _require;
     }

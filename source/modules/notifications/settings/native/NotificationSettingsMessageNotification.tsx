@@ -1,22 +1,22 @@
-// Module ID: 10099
-// Function ID: 10100
+// Module ID: 10138
+// Function ID: 10139
 // Name: NotificationSettingsMessageNotification
-// Dependencies: [19, 17, 21, 4661, 712, 10100, 4734, 1236, 5433, 10101, 10098, 4342, 10103, 2007, 10090, 10105, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 10139, 4739, 1236, 5438, 10140, 10137, 4346, 10142, 2008, 10129, 10144, 2]
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 10099 (NotificationSettingsMessageNotification)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10138 (NotificationSettingsMessageNotification)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 10140 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
 class NotificationSettingsMessageNotification {
   constructor(arg0) {
     closure_0 = global;
-    tmp = jsxs();
+    tmp = closure_6();
     tmp2 = closure_0;
     tmp3 = closure_2;
     obj = require("getPushNotificationSelectOptions");
@@ -71,37 +71,44 @@ class NotificationSettingsMessageNotification {
     return tmp5(tmp6, obj);
   }
 }
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { card: null, cta: null, label: null, header: null, headerTitle: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, borderRadius: 20, borderWidth: 1, padding: 14 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: 20, borderWidth: 1, padding: 14 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { textAlign: "center", marginTop: 4 };
 createCacheKey[2] = { textAlign: "center", marginTop: 8 };
 createCacheKey[3] = { marginBottom: 8 };
 createCacheKey[4] = { marginBottom: 4 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMessageNotification.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMessageNotification.tsx");
 
 export default NotificationSettingsMessageNotification;
 export const NotificationSettingsGuildMessageNotification = function NotificationSettingsGuildMessageNotification(style) {
   const _require = style;
-  let obj = { context: "guild", style: style.style, setting: null, onCustomize: null };
-  obj[2] = _require(10098).useGuildPresetSettings(style.guildId).notification;
-  obj[3] = function onCustomize() {
-    let obj = outer1_1(outer1_2[11]);
-    obj = { guildId: style.guildId };
-    obj.openLazy(style(outer1_2[13])(outer1_2[12], outer1_2.paths), "MessageNotificationGuildActionSheet", obj);
+  let obj = {
+    context: "guild",
+    style: style.style,
+    setting: _require(10137).useGuildPresetSettings(style.guildId).notification,
+    onCustomize() {
+      let obj = closure_1_1(closure_1_2[11]);
+      obj = { guildId: style.guildId };
+      obj.openLazy(style(closure_1_2[13])(closure_1_2[12], closure_1_2.paths), "MessageNotificationGuildActionSheet", obj);
+    }
   };
   return callback(NotificationSettingsMessageNotification, obj);
 };
 export const NotificationSettingsChannelMessageNotification = function NotificationSettingsChannelMessageNotification(style) {
   const _require = style;
-  let obj = { context: "channel", style: style.style, setting: null, onCustomize: null };
-  obj[2] = _require(10090).useChannelPresetSettings(style.channel).notification;
-  obj[3] = function onCustomize() {
-    let obj = outer1_1(outer1_2[11]);
-    obj = { channel: style.channel };
-    obj.openLazy(style(outer1_2[13])(outer1_2[15], outer1_2.paths), "MessageNotificationChannelActionSheet", obj);
+  let obj = {
+    context: "channel",
+    style: style.style,
+    setting: _require(10129).useChannelPresetSettings(style.channel).notification,
+    onCustomize() {
+      let obj = closure_1_1(closure_1_2[11]);
+      obj = { channel: style.channel };
+      obj.openLazy(style(closure_1_2[13])(closure_1_2[15], closure_1_2.paths), "MessageNotificationChannelActionSheet", obj);
+    }
   };
   return callback(NotificationSettingsMessageNotification, obj);
 };

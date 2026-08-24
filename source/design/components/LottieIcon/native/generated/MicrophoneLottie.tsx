@@ -1,24 +1,21 @@
-// Module ID: 13507
-// Function ID: 13508
+// Module ID: 13565
+// Function ID: 13566
 // Name: items
-// Dependencies: [19, 21, 10404, 13508, 2]
+// Dependencies: [19, 21, 10443, 13566, 2]
 
-// Module 13507 (items)
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 13565 (items)
+import LottieIcon from "LottieIcon" /* 10443 */;
+import registerAsset from "registerAsset" /* 13566 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let closure_3 = ["I"];
 const items = [{ name: "mute", start: 0, duration: 70 }, { name: "unmute", start: 100, duration: 70 }];
-const forwardRefResult = require("noop").forwardRef((arg0, arg1) => {
-  const obj = { dotLottie: null, ref: null, layers: null, markers: null };
-  obj[0] = require(13508) /* registerAsset */;
-  obj[1] = arg1;
-  obj[2] = closure_3;
-  obj[3] = items;
+const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(require(10404) /* LottieIcon */.LottieIcon, { dotLottie: null, ref: null, layers: null, markers: null });
+  return jsx(LottieIcon.LottieIcon, { dotLottie: registerAsset, ref, layers: closure_3, markers: items });
 });
-const result = require("LottieIcon").fileFinishedImporting("design/components/LottieIcon/native/generated/MicrophoneLottie.tsx");
+const result = require("set").fileFinishedImporting("design/components/LottieIcon/native/generated/MicrophoneLottie.tsx");
 
 export const MicrophoneLottie = forwardRefResult;

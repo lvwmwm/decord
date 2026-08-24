@@ -1,10 +1,12 @@
-// Module ID: 4644
-// Function ID: 4645
+// Module ID: 4650
+// Function ID: 4651
 // Name: ROBLOX_PROTOCOL_URL
 // Dependencies: [2]
 // Exports: ROBLOX_DEFERRED_WEB_URL
 
-// Module 4644 (ROBLOX_PROTOCOL_URL)
+// Module 4650 (ROBLOX_PROTOCOL_URL)
+import set from "set" /* 2 */;
+
 class ROBLOX_PROTOCOL_URL {
   constructor(arg0) {
     return "roblox://placeId=" + global;
@@ -15,7 +17,7 @@ class ROBLOX_WEB_URL {
     return "https://www.roblox.com/games/start?placeId=" + global;
   }
 }
-const result = require("set").fileFinishedImporting("modules/roblox_subgame_detection/RobloxSubgameTypes.tsx");
+const result = set.fileFinishedImporting("modules/roblox_subgame_detection/RobloxSubgameTypes.tsx");
 
 export const ROBLOX_APPLICATION_ID = "363445589247131668";
 export const ROBLOX_GAME_ID = "363445589247131668";

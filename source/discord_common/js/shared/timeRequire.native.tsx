@@ -1,11 +1,14 @@
-// Module ID: 5086
-// Function ID: 5087
+// Module ID: 5091
+// Function ID: 5092
 // Name: timeRequire
 // Dependencies: [10, 2]
 // Exports: default
 
-// Module 5086 (timeRequire)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/timeRequire.native.tsx");
+// Module 5091 (timeRequire)
+import set from "set" /* 2 */;
+import isTracingDefault from "isTracing" /* 10 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/timeRequire.native.tsx");
 
 export default function timeRequire(arg0, arg1) {
   const timestamp = Date.now();
@@ -16,12 +19,12 @@ export default function timeRequire(arg0, arg1) {
       const _Object = Object;
       const keys = Object.keys(modules);
       const _HermesInternal = HermesInternal;
-      importDefault(10).mark("\u{1F3C3}", "Require " + arg0 + " (" + keys.filter((arg0) => modules[arg0].isInitialized).length + " modules)", diff);
-      const obj = importDefault(10);
+      isTracingDefault.mark("\u{1F3C3}", "Require " + arg0 + " (" + keys.filter((arg0) => modules[arg0].isInitialized).length + " modules)", diff);
+      const obj = isTracingDefault;
     } else {
       const _HermesInternal2 = HermesInternal;
-      importDefault(10).mark("\u{1F3C3}", "Require " + arg0, diff);
-      const obj3 = importDefault(10);
+      isTracingDefault.mark("\u{1F3C3}", "Require " + arg0, diff);
+      const obj3 = isTracingDefault;
     }
     obj2 = modules;
   }

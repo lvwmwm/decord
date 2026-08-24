@@ -1,19 +1,15 @@
-// Module ID: 15976
-// Function ID: 15977
-// Dependencies: [19, 1391, 21, 5389, 1627, 11207, 9566, 15977, 15983, 2]
+// Module ID: 16073
+// Function ID: 16074
+// Dependencies: [19, 1391, 21, 5394, 1627, 11258, 9603, 16074, 16080, 2]
 
-// Module 15976
-import importAllResult from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { jsx } from "jsxProd";
+// Module 16073
+import importAllResult from "noop" /* 19 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let c3 = importAllResult;
 const memoResult = importAllResult.memo(function PortalKeyboardRendererComponent(item) {
-  let chatInputRef;
-  let cleanUp;
-  let state;
-  let type;
   item = item.item;
   const channelId = item.channelId;
   ({ chatInputRef, type } = item);
@@ -71,6 +67,6 @@ const memoResult = importAllResult.memo(function PortalKeyboardRendererComponent
   }
   return null;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/keyboard/native/PortalKeyboardRendererComponent.tsx");
+const result = require("set").fileFinishedImporting("modules/keyboard/native/PortalKeyboardRendererComponent.tsx");
 
 export default memoResult;

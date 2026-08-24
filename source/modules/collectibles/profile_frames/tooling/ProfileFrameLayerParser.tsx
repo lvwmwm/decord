@@ -1,14 +1,15 @@
-// Module ID: 8950
-// Function ID: 8951
+// Module ID: 8987
+// Function ID: 8988
 // Name: set
-// Dependencies: [853, 8951, 8952, 8953, 2]
+// Dependencies: [853, 8988, 8989, 8990, 2]
 // Exports: compareLayerFiles, isPreviewFilename, parseLayerFilename
 
-// Module 8950 (set)
-import _toArray from "_toArray";
-import set from "ProfileFrameLayerType";
+// Module 8987 (set)
+import ProfileFrameLayerType from "ProfileFrameLayerType" /* 8989 */;
+import closure_2 from "_toArray" /* 853 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 const preview = "preview";
 const responsive = "responsive";
 let obj = { foreground: require("ProfileFrameLayerOrder").ProfileFrameLayerOrder.FRONT, background: require("ProfileFrameLayerOrder").ProfileFrameLayerOrder.BACK };
@@ -24,7 +25,7 @@ const items3 = [...set1];
 obj[obj.INVALID_ANCHOR] = "invalid anchor (expected: " + items3.join(", ") + ")";
 obj[obj.INVALID_RESPONSIVE] = "invalid suffix (expected '" + "responsive" + "')";
 obj[obj.BORDER_HAS_ANCHOR] = "border layers must omit the anchor";
-let closure_8 = { [arg1(8951).ProfileFrameLayerOrder.FRONT]: 0, [arg1(8951).ProfileFrameLayerOrder.BACK]: 1 };
+let closure_8 = { [arg1(8988).ProfileFrameLayerOrder.FRONT]: 0, [arg1(8988).ProfileFrameLayerOrder.BACK]: 1 };
 const result = set.fileFinishedImporting("modules/collectibles/profile_frames/tooling/ProfileFrameLayerParser.tsx");
 
 export const PREVIEW_FILENAME = "preview";
@@ -33,8 +34,6 @@ export const FOLDER_ORDER_MAP = obj;
 export const ParseErrorKind = obj;
 export const PARSE_ERROR_LABELS = obj;
 export const parseLayerFilename = function parseLayerFilename(c7) {
-  let tmp19;
-  let tmp20;
   const parts = c7.replace(/\.\w+$/, "").split("_");
   if (parts.length >= 2) {
     if (parts.length <= 4) {
@@ -43,10 +42,10 @@ export const parseLayerFilename = function parseLayerFilename(c7) {
       const substr = arr2.slice(2);
       if (obj14.test(tmp19)) {
         if (set.has(tmp20)) {
-          if (tmp20 === require(8952) /* ProfileFrameLayerType */.ProfileFrameLayerType.BORDER) {
+          if (tmp20 === ProfileFrameLayerType.ProfileFrameLayerType.BORDER) {
             if (substr.length > 0) {
               if (set1.has(substr[0])) {
-                let obj = { parsed: null, errorType: null };
+                obj = { parsed: null, errorType: null };
                 obj[1] = obj.BORDER_HAS_ANCHOR;
                 return obj;
               }
@@ -58,7 +57,7 @@ export const parseLayerFilename = function parseLayerFilename(c7) {
             } else {
               if (1 === substr.length) {
                 if (substr[0] !== responsive) {
-                  const obj1 = { parsed: null, errorType: null };
+                  obj1 = { parsed: null, errorType: null };
                   obj1[1] = obj.INVALID_RESPONSIVE;
                   return obj1;
                 }
@@ -68,7 +67,7 @@ export const parseLayerFilename = function parseLayerFilename(c7) {
               const _Number2 = Number;
               obj3[0] = Number(tmp19);
               obj3[1] = tmp20;
-              obj3[2] = tmp4(8953).ProfileFrameLayerAnchor.CENTER;
+              obj3[2] = tmp4(8990).ProfileFrameLayerAnchor.CENTER;
               obj3[3] = 1 === substr.length;
               obj2[0] = obj3;
               return obj2;
@@ -95,7 +94,7 @@ export const parseLayerFilename = function parseLayerFilename(c7) {
                   obj7[0] = Number(tmp19);
                   obj7[1] = tmp20;
                   obj7[2] = first;
-                  obj7[3] = 2 === substr.length || tmp20 === tmp4(8952).ProfileFrameLayerType.RAIL;
+                  obj7[3] = 2 === substr.length || tmp20 === tmp4(8989).ProfileFrameLayerType.RAIL;
                   obj6[0] = obj7;
                   return obj6;
                 }

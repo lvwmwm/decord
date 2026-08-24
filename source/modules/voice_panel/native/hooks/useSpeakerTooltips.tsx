@@ -1,24 +1,22 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16435
+// Function ID: 16436
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 16337, 11438, 1388, 21, 16341, 16280, 8667, 11439, 4115, 7366, 16314, 1236, 1377, 16343, 9314, 2]
+// Dependencies: [32, 19, 16432, 11487, 1388, 21, 16436, 16374, 8704, 11488, 4119, 7404, 16408, 1236, 1377, 16438, 9351, 2]
 // Exports: default
 
-// Module 16340 (useSpeakerTooltips)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import useConsoleVoiceUpsellStore from "useConsoleVoiceUpsellStore";
-import { VoicePanelControlsModes } from "VoicePanelControlsModes";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { jsx } from "jsxProd";
+// Module 16435 (useSpeakerTooltips)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import useConsoleVoiceUpsellStore from "useConsoleVoiceUpsellStore" /* 16432 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11487 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 ({ setVoiceUpsellDismissed: c5, useConsoleVoiceUpsellStore: closure_6 } = useConsoleVoiceUpsellStore);
 let closure_10 = { code: "function useSpeakerTooltipsTsx1(){const{controlsSpecs}=this.__closure;return controlsSpecs.get().mode;}" };
 let closure_11 = { code: "function useSpeakerTooltipsTsx2(currentControlsMode,previous){const{runOnJS,setIsShowingControls,VoicePanelControlsModes}=this.__closure;if(currentControlsMode===previous)return;runOnJS(setIsShowingControls)(currentControlsMode===VoicePanelControlsModes.FLOATING_DEFAULT);}" };
-const result = require("useConsoleVoiceUpsellStore").fileFinishedImporting("modules/voice_panel/native/hooks/useSpeakerTooltips.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/hooks/useSpeakerTooltips.tsx");
 
 export default function useSpeakerTooltips(targetRef, memo) {
   let first = memo;
@@ -33,7 +31,7 @@ export default function useSpeakerTooltips(targetRef, memo) {
   const isVoicePanelFullscreen = obj.useIsVoicePanelFullscreen();
   controlsSpecs = controlsSpecs.useContext(first(callback1[9])).controlsSpecs;
   const tmp9 = callback(controlsSpecs.useState(true), 2);
-  let closure_5 = tmp10;
+  closure_5 = tmp10;
   const fn = function v() {
     return controlsSpecs.get().mode;
   };
@@ -42,11 +40,11 @@ export default function useSpeakerTooltips(targetRef, memo) {
   fn.__initData = closure_10;
   const fn2 = function b(arg0, arg1) {
     if (arg0 !== arg1) {
-      memo2(callback1[10]).runOnJS(closure_5)(arg0 === tmp15.FLOATING_DEFAULT);
+      memo2(callback1[10]).runOnJS(closure_5)(arg0 === constants.FLOATING_DEFAULT);
       const obj = memo2(callback1[10]);
     }
   };
-  obj = { runOnJS: memo2(callback1[10]).runOnJS, setIsShowingControls: tmp10, VoicePanelControlsModes };
+  obj = { runOnJS: memo2(callback1[10]).runOnJS, setIsShowingControls: tmp10, VoicePanelControlsModes: closure_7 };
   fn2.__closure = obj;
   fn2.__workletHash = 5084069556209;
   fn2.__initData = closure_11;
@@ -59,13 +57,13 @@ export default function useSpeakerTooltips(targetRef, memo) {
   }
   memo2 = first;
   const items = [first, tmp5];
-  memo = obj2.useMemo(() => memo2 ? _slicedToArray : [], items);
+  memo = obj2.useMemo(() => memo2 ? closure_3 : [], items);
   let tmp6Result = tmp6(tmp3[11]);
   const tmp8Result = callback(tmp6Result.useSelectedDismissibleContent(memo), 2);
   first1 = tmp8Result[0];
-  VoicePanelControlsModes = tmp15;
+  closure_7 = tmp15;
   const tmp16 = first(callback1[12])();
-  const ContentDismissActionType = tmp16;
+  closure_8 = tmp16;
   const items1 = [first, tmp8Result[1], first1];
   const memo1 = obj2.useMemo(() => {
     const obj = { position: "bottom", title: null, description: null, visible: null, renderImgComponent: null, withBlurBackground: true, onDismiss: null };
@@ -82,7 +80,7 @@ export default function useSpeakerTooltips(targetRef, memo) {
       return callback3(callback(table[15]), {});
     };
     obj[6] = function onDismiss() {
-      return callback2(outer1_8.UNKNOWN);
+      return callback2(closure_1_8.UNKNOWN);
     };
     return obj;
   }, items1);
@@ -134,7 +132,7 @@ export default function useSpeakerTooltips(targetRef, memo) {
   const items3 = [memo1.visible || memo2.visible, tmp16];
   const effect = obj2.useEffect(() => {
     if (closure_10) {
-      obj.lock(tmp15.FLOATING_DEFAULT);
+      obj.lock(constants.FLOATING_DEFAULT);
     } else {
       obj.unlock();
     }

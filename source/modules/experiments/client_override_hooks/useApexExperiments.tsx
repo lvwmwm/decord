@@ -1,50 +1,44 @@
-// Module ID: 10682
-// Function ID: 10683
+// Module ID: 10721
+// Function ID: 10722
 // Name: makeClientVariant
-// Dependencies: [32, 19, 1212, 4367, 4296, 1473, 10683, 589, 2]
+// Dependencies: [32, 19, 1212, 4371, 4300, 1473, 10722, 589, 2]
 // Exports: getApexExperiments, useApexExperiments
 
-// Module 10682 (makeClientVariant)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import initialize from "initialize";
+// Module 10721 (makeClientVariant)
+import create from "create" /* 4371 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import noop from "noop" /* 19 */;
+import closure_5 from "initialize" /* 1212 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 function makeClientVariant(id) {
-  return { id, label: "Variant " + id, shortLabel: "Variant " + id, type: require(4367) /* create */.Variation_Type.UNSPECIFIED };
+  return { id, label: "Variant " + id, shortLabel: "Variant " + id, type: create.Variation_Type.UNSPECIFIED };
 }
 function mergeApexExperiments(experimentsMetadata, registeredExperiments) {
-  let _slicedToArray;
-  let closure_3;
-  let tmp12;
-  let tmp14;
   const _require = registeredExperiments;
   let obj = {};
   function _loop() {
     variants = variants.variants;
     const mapped = variants.map((id) => ({ id: id.id, label: "Variant " + id.id + ": " + id.label, shortLabel: "Variant " + id.id, type: id.type }));
     const set = new Set(mapped.map((id) => id.id));
-    if (null != set[_slicedToArray]) {
+    if (null != set[closure_2]) {
       const _Object = Object;
       const keys = Object.keys(tmp4.variations);
       const mapped1 = keys.map((arg0) => Number(arg0));
       const found = mapped1.filter((arg0) => !set.has(arg0));
-      let mapped2 = found.map(outer1_6);
+      let mapped2 = found.map(closure_1_6);
     } else {
       mapped2 = [];
     }
-    obj = { system: callback(obj[4]).ExperimentSystem.APEX, kind: callback(obj[5]).UnitTypeToKind[variants.unitType], name: variants.name, title: variants.title, variants: null };
-    const items = [...mapped2];
-    obj[4] = items.sort((id, id2) => id.id - id2.id);
-    obj[_slicedToArray] = obj;
+    obj = { system: callback(obj[4]).ExperimentSystem.APEX, kind: callback(obj[5]).UnitTypeToKind[variants.unitType], name: variants.name, title: variants.title, variants: items.sort((id, id2) => id.id - id2.id) };
+    items = [...mapped2];
+    obj[closure_2] = obj;
   }
   const entries = Object.entries(experimentsMetadata);
   while (tmp2 !== undefined) {
     let tmp4 = callback;
     let tmp5 = callback(tmp3, 2);
-    [_slicedToArray, closure_3] = tmp5;
+    [closure_2, closure_3] = tmp5;
     let _loopResult = _loop();
     continue;
   }
@@ -76,8 +70,6 @@ function mergeApexExperiments(experimentsMetadata, registeredExperiments) {
   return obj;
 }
 function getApexExperimentOverridesInfo(clientOverrides) {
-  let tmp6;
-  let tmp7;
   let obj = {};
   const entries = Object.entries(clientOverrides);
   while (tmp2 !== undefined) {
@@ -94,7 +86,7 @@ function getApexExperimentOverridesInfo(clientOverrides) {
   return obj;
 }
 ({ useEffect: c3, useMemo: c4 } = noop);
-const result = require("initialize").fileFinishedImporting("modules/experiments/client_override_hooks/useApexExperiments.tsx");
+const result = require("set").fileFinishedImporting("modules/experiments/client_override_hooks/useApexExperiments.tsx");
 
 export { mergeApexExperiments };
 export { getApexExperimentOverridesInfo };
@@ -110,16 +102,16 @@ export const useApexExperiments = function useApexExperiments() {
     const apexExperimentsMetadata = stateFromStores(stateFromStores1[6]).fetchApexExperimentsMetadata(stateFromStores(stateFromStores1[3]).Experiment_Surface.APP);
   }, []);
   let obj = stateFromStores(stateFromStores1[7]);
-  const items = [initialize];
+  const items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => store.getExperimentsMetadata());
-  const items1 = [initialize];
+  const items1 = [closure_5];
   stateFromStores1 = stateFromStores(stateFromStores1[7]).useStateFromStores(items1, () => store.getRegisteredExperiments());
   const items2 = [stateFromStores, stateFromStores1];
   const obj2 = stateFromStores(stateFromStores1[7]);
-  const tmp4 = callback3(() => outer1_7(stateFromStores, stateFromStores1), items2);
-  const items3 = [initialize];
+  const tmp4 = callback3(() => closure_1_7(stateFromStores, stateFromStores1), items2);
+  const items3 = [closure_5];
   const stateFromStores2 = stateFromStores(stateFromStores1[7]).useStateFromStores(items3, () => store.getClientOverrides());
-  obj = { experiments: tmp4, overridesInfo: callback3(() => outer1_8(stateFromStores2), items4) };
+  obj = { experiments: tmp4, overridesInfo: callback3(() => closure_1_8(stateFromStores2), items4) };
   items4 = [stateFromStores2];
   return obj;
 };

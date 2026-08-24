@@ -1,23 +1,22 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12855
+// Function ID: 12856
 // Name: generateSeparatorRowData
-// Dependencies: [8158, 4661, 712, 1367, 1370, 2]
+// Dependencies: [8197, 4668, 712, 1367, 1370, 2]
 // Exports: generateSeparatorRowData
 
-// Module 12800 (generateSeparatorRowData)
-import Changeset from "Changeset";
-import createCacheKey from "createCacheKey";
+// Module 12855 (generateSeparatorRowData)
+import set from "set" /* 2 */;
+import ThemesDefault from "Themes" /* 712 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import Changeset from "Changeset" /* 8197 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let obj1;
 ({ RowType: obj1, SeparatorType: c3 } = Changeset);
-let closure_4 = createCacheKey.createNativeStyleProperties({ dayColor: require("Themes").colors.TEXT_MUTED, unreadTextColor: require("Themes").colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: require("Themes").colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: require("Themes").colors.TEXT_BRAND });
-let obj = { dayColor: require("Themes").colors.TEXT_MUTED, unreadTextColor: require("Themes").colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: require("Themes").colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: require("Themes").colors.TEXT_BRAND };
-const result = require("Themes").fileFinishedImporting("modules/messages/native/renderer/rows/Separator.tsx");
+let closure_4 = createCacheKey.createNativeStyleProperties({ dayColor: ThemesDefault.colors.TEXT_MUTED, unreadTextColor: ThemesDefault.colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: ThemesDefault.colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: ThemesDefault.colors.TEXT_BRAND });
+let obj = { dayColor: ThemesDefault.colors.TEXT_MUTED, unreadTextColor: ThemesDefault.colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: ThemesDefault.colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: ThemesDefault.colors.TEXT_BRAND };
+const result = set.fileFinishedImporting("modules/messages/native/renderer/rows/Separator.tsx");
 
 export const generateSeparatorRowData = function generateSeparatorRowData(text, theme) {
-  let changeType;
-  let rowType;
   ({ rowType, changeType } = text);
   const tmp = callback(theme);
   if (constants2.DAY === rowType) {
@@ -43,7 +42,7 @@ export const generateSeparatorRowData = function generateSeparatorRowData(text, 
     return obj;
   } else if (tmp2.SUMMARY === rowType) {
     const summary = text.summary;
-    const obj1 = { type: null, id: null, color: null, text: null, summary: null, isBeforeContent: null, changeType: null };
+    obj1 = { type: null, id: null, color: null, text: null, summary: null, isBeforeContent: null, changeType: null };
     obj1[0] = constants.SEPARATOR;
     obj1[1] = rowType;
     obj1[2] = tmp.summaryColor;
@@ -53,7 +52,7 @@ export const generateSeparatorRowData = function generateSeparatorRowData(text, 
     obj1[6] = changeType;
     return obj1;
   } else {
-    obj = require(1370) /* isDiscordFrontendDevelopment */;
+    obj = isDiscordFrontendDevelopment;
     obj.assertNever(rowType);
   }
 };

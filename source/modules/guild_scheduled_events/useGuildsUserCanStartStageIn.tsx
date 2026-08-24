@@ -1,16 +1,16 @@
-// Module ID: 8823
-// Function ID: 8824
+// Module ID: 8860
+// Function ID: 8861
 // Name: useChannelsUserCanStartStageIn
-// Dependencies: [1980, 4021, 1399, 589, 2]
+// Dependencies: [1981, 4024, 1399, 589, 2]
 // Exports: useChannelsUserCanStartStageIn
 
-// Module 8823 (useChannelsUserCanStartStageIn)
-import comparator from "comparator";
-import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+// Module 8860 (useChannelsUserCanStartStageIn)
+import closure_2 from "comparator" /* 1981 */;
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
 
 const require = arg1;
-const result = require("Permissions").fileFinishedImporting("modules/guild_scheduled_events/useGuildsUserCanStartStageIn.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useGuildsUserCanStartStageIn.tsx");
 
 export const useChannelsUserCanStartStageIn = function useChannelsUserCanStartStageIn(guild) {
   let id;
@@ -20,13 +20,13 @@ export const useChannelsUserCanStartStageIn = function useChannelsUserCanStartSt
   if (id == null) {
     id = null;
   }
-  const items = [comparator, getUncachedChannelPermissions];
+  const items = [closure_2, closure_4];
   const items1 = [id];
-  return id(589).useStateFromStoresArray(items, () => outer1_2.getChannels(id)[outer1_3].reduce((arr, channel) => {
+  return id(589).useStateFromStoresArray(items, () => closure_1_2.getChannels(id)[closure_1_3].reduce((arr, channel) => {
     channel = channel.channel;
     if (channel.isGuildStageVoice()) {
       const channel2 = channel.channel;
-      if (getUncachedChannelPermissions !== undefined) {
+      if (closure_4 !== undefined) {
         let canResult = channel2.isGuildStageVoice();
         if (canResult) {
           canResult = obj.can(callback(table[2]).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel2);
@@ -35,7 +35,7 @@ export const useChannelsUserCanStartStageIn = function useChannelsUserCanStartSt
           arr.push(channel);
         }
       }
-      obj = getUncachedChannelPermissions;
+      obj = closure_4;
     }
     return arr;
   }, []), items1);

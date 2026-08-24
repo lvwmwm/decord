@@ -1,30 +1,37 @@
-// Module ID: 16430
-// Function ID: 16431
+// Module ID: 16525
+// Function ID: 16526
 // Name: ReportProblem
-// Dependencies: [19, 4559, 676, 21, 4661, 712, 4761, 7487, 698, 16431, 4342, 4093, 16432, 7177, 7175, 6949, 1236, 6952, 2]
+// Dependencies: [19, 4564, 676, 21, 4668, 712, 4766, 7525, 698, 16526, 4346, 4096, 16527, 7215, 7213, 6987, 1236, 6990, 2]
 // Exports: default
 
-// Module 16430 (ReportProblem)
-import "noop";
-import sortActivity from "sortActivity";
-import { AnalyticEvents } from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16525 (ReportProblem)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4766 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
+import BottomSheetModal from "BottomSheetModal" /* 6990 */;
+import ActionSheet from "ActionSheet" /* 7213 */;
+import ActionSheetRowIcon from "ActionSheetRowIcon" /* 7215 */;
+import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 16527 */;
+import closure_3 from "sortActivity" /* 4564 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { container: null };
-createCacheKey = { padding: 16, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey = { padding: 16, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("ME").fileFinishedImporting("components_native/calls/stream/StreamReportProblemActionSheet.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("components_native/calls/stream/StreamReportProblemActionSheet.tsx");
 
 export default function ReportProblem(arg0) {
-  let importDefault;
-  let require;
   ({ stream: require, analyticsData: importDefault } = arg0);
-  importDefault(4761)(() => {
-    let obj = outer1_0(outer1_2[7]);
-    const streamerApplication = obj.getStreamerApplication(ownerId, outer1_3);
+  useMountLayoutEffectDefault(() => {
+    let obj = closure_1_0(closure_1_2[7]);
+    const streamerApplication = obj.getStreamerApplication(ownerId, closure_1_3);
     obj = { type: "Stream Issue Sheet", other_user_id: ownerId.ownerId, application_id: null, application_name: null, game_id: null };
     let id = null;
     if (null != streamerApplication) {
@@ -41,34 +48,33 @@ export default function ReportProblem(arg0) {
       id1 = streamerApplication.id;
     }
     obj[4] = id1;
-    outer1_1(outer1_2[8]).track(outer1_4.OPEN_POPOUT, obj);
+    closure_1_1(closure_1_2[8]).track(closure_1_4.OPEN_POPOUT, obj);
   });
-  let tmp = createCacheKey();
-  const mapped = importDefault(16432)({ isStreamer: false, isEndStream: false }).map((label) => {
+  let tmp = callback();
+  const mapped = getStreamIssueReportOptionsDefault({ isStreamer: false, isEndStream: false }).map((label) => {
     const value = label.value;
-    return outer1_5(outer1_0(outer1_2[13]).ActionSheetRow, {
+    return closure_1_5(closure_1_0(closure_1_2[13]).ActionSheetRow, {
       label: label.label,
       arrow: true,
       onPress() {
         const obj = { problem: closure_0, stream: value, feedback: "", streamApplication: null, analyticsData: null, location: "Stream" };
-        const tmp = outer2_1(outer2_2[9]);
-        obj[3] = outer2_0(outer2_2[7]).getStreamerApplication(value, outer2_3);
-        obj[4] = outer1_1;
+        const tmp = closure_2_1(closure_2_2[9]);
+        obj[3] = closure_2_0(closure_2_2[7]).getStreamerApplication(value, closure_2_3);
+        obj[4] = closure_1_1;
         tmp(obj);
-        const obj2 = outer2_0(outer2_2[7]);
-        outer2_1(outer2_2[10]).hideActionSheet();
-        const obj3 = outer2_1(outer2_2[10]);
-        outer2_0(outer2_2[11]).presentFeedbackSent();
+        const obj2 = closure_2_0(closure_2_2[7]);
+        closure_2_1(closure_2_2[10]).hideActionSheet();
+        const obj3 = closure_2_1(closure_2_2[10]);
+        closure_2_0(closure_2_2[11]).presentFeedbackSent();
       }
     }, arg1);
   });
   let obj = { scrollable: true, header: null, children: null };
   obj = { title: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.XuqqwI);
-  obj[1] = jsx(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null });
-  obj = { style: tmp.container, children: null };
-  obj[1] = jsx(require(7177) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped });
-  obj[2] = jsx(require(6952) /* BottomSheetModal */.BottomSheetScrollView, { style: tmp.container, children: null });
-  return jsx(require(7175) /* ActionSheet */.ActionSheet, { style: tmp.container, children: null });
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.XuqqwI);
+  obj[1] = jsx(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, { title: null });
+  obj = { style: tmp.container, children: jsx(ActionSheetRowIcon.ActionSheetRow.Group, { hasIcons: false, children: mapped }) };
+  obj[2] = jsx(BottomSheetModal.BottomSheetScrollView, { style: tmp.container, children: jsx(ActionSheetRowIcon.ActionSheetRow.Group, { hasIcons: false, children: mapped }) });
+  return jsx(ActionSheet.ActionSheet, { style: tmp.container, children: jsx(ActionSheetRowIcon.ActionSheetRow.Group, { hasIcons: false, children: mapped }) });
 };

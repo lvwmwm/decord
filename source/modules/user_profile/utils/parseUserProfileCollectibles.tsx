@@ -1,11 +1,14 @@
-// Module ID: 5382
-// Function ID: 5383
+// Module ID: 5387
+// Function ID: 5388
 // Name: parseUserProfileCollectibles
 // Dependencies: [1949, 2]
 // Exports: default
 
-// Module 5382 (parseUserProfileCollectibles)
-const result = require("set").fileFinishedImporting("modules/user_profile/utils/parseUserProfileCollectibles.tsx");
+// Module 5387 (parseUserProfileCollectibles)
+import set from "set" /* 2 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+
+const result = set.fileFinishedImporting("modules/user_profile/utils/parseUserProfileCollectibles.tsx");
 
 export default function parseUserProfileCollectibles(collectibles) {
   let tmp;
@@ -15,7 +18,7 @@ export default function parseUserProfileCollectibles(collectibles) {
     collectibles = collectibles.collectibles;
   }
   if (null == collectibles) {
-    return { collectibles: "Array", profileEffect: "HermesInternal", profileFrame: "r" };
+    return { collectibles: "getGuild", profileEffect: "call", profileFrame: "HTTP" };
   } else {
     const items = [];
     collectibles = collectibles.collectibles;
@@ -38,7 +41,7 @@ export default function parseUserProfileCollectibles(collectibles) {
       let tmp13 = nextResult;
       let tmp14 = require;
       let tmp15 = dependencyMap;
-      if (tmp7.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT) {
+      if (tmp7.type === CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT) {
         obj = { skuId: null, expiresAt: null };
         let tmp20 = nextResult;
         obj[0] = tmp7.sku_id;
@@ -76,7 +79,7 @@ export default function parseUserProfileCollectibles(collectibles) {
       }
       continue;
     }
-    const obj1 = { collectibles: null, profileEffect: null, profileFrame: null };
+    obj1 = { collectibles: null, profileEffect: null, profileFrame: null };
     obj1[0] = items;
     obj1[1] = tmp;
     obj1[2] = tmp2;

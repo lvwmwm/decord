@@ -1,43 +1,48 @@
-// Module ID: 14817
-// Function ID: 14818
+// Module ID: 14881
+// Function ID: 14882
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 4066, 14818, 2]
+// Dependencies: [8238, 10708, 1236, 4069, 14882, 2]
 
-// Module 14817 (toggle)
-import createToggle from "createToggle";
+// Module 14881 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import onServerTrendingNotificationSettingsChanged from "onServerTrendingNotificationSettingsChanged" /* 14882 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.Q3VWjI);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.Q3VWjI);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.Wc1RcU);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.Wc1RcU);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableServerTrendingNotifications.useSetting,
-  onValueChange: require("onServerTrendingNotificationSettingsChanged").onServerTrendingNotificationSettingsChanged,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableServerTrendingNotifications.useSetting,
+  onValueChange: onServerTrendingNotificationSettingsChanged.onServerTrendingNotificationSettingsChanged,
   usePredicate() {
     return false;
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.Q3VWjI);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.Q3VWjI);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.Wc1RcU);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.Wc1RcU);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableServerTrendingNotifications.useSetting,
-  onValueChange: require("onServerTrendingNotificationSettingsChanged").onServerTrendingNotificationSettingsChanged,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableServerTrendingNotifications.useSetting,
+  onValueChange: onServerTrendingNotificationSettingsChanged.onServerTrendingNotificationSettingsChanged,
   usePredicate() {
     return false;
   }
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/ServerTrendingNotificationSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ServerTrendingNotificationSetting.tsx");
 
 export default toggle;

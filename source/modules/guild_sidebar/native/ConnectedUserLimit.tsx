@@ -1,20 +1,21 @@
-// Module ID: 15381
-// Function ID: 15382
+// Module ID: 15445
+// Function ID: 15446
 // Name: ConnectedUserLimit
-// Dependencies: [19, 21, 9653, 15382, 2]
+// Dependencies: [19, 21, 9692, 15446, 2]
 // Exports: ConnectedUserLimit
 
-// Module 15381 (ConnectedUserLimit)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15445 (ConnectedUserLimit)
+import noopAll from "noop" /* 19 */;
+import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9692 */;
+import _modDef15446 from "module_15446" /* 15446 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const result = require("useChannelVideoLimit").fileFinishedImporting("modules/guild_sidebar/native/ConnectedUserLimit.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("modules/guild_sidebar/native/ConnectedUserLimit.tsx");
 
 export const ConnectedUserLimit = function ConnectedUserLimit(users) {
-  let channel;
-  let video;
   ({ channel, video } = users);
-  const limit = importDefault(9653)(channel).limit;
+  const limit = useChannelVideoLimitDefault(channel).limit;
   let num = -1;
   if (channel.userLimit > 0) {
     num = channel.userLimit;
@@ -34,5 +35,5 @@ export const ConnectedUserLimit = function ConnectedUserLimit(users) {
     videoLimit = num < 0 || limit < num;
     const tmp4 = num < 0 || limit < num;
   }
-  return jsx(importDefault(15382), { users: users.userCount, total, videoLimit });
+  return jsx(_modDef15446, { users: users.userCount, total, videoLimit });
 };

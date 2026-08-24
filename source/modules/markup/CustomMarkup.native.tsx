@@ -1,36 +1,45 @@
-// Module ID: 4764
-// Function ID: 4765
+// Module ID: 4769
+// Function ID: 4770
 // Name: createRules
-// Dependencies: [4765, 4766, 6808, 6807, 4092, 6809, 2]
+// Dependencies: [4770, 4771, 6845, 6844, 4095, 6846, 2]
 // Exports: createWidgetMessageRules, getNotifCenterV2MessagePreviewParser, getParser, getParserWithoutLinks, getWidgetMessageRules
 
-// Module 4764 (createRules)
+// Module 4769 (createRules)
+import set from "set" /* 2 */;
+import tDefault from "t" /* 4095 */;
+import AST_KEY from "AST_KEY" /* 4770 */;
+import MarkupText from "MarkupText" /* 4771 */;
+import MarkupTextDefault from "MarkupText" /* 4771 */;
+import get_defaultRulesDefault from "get defaultRules" /* 6844 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 6845 */;
+import parseLinkDefault from "parseLink" /* 6846 */;
+
 function createRules(arg0) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
-  const tmp = importDefault(4766)(arg0, obj);
-  const items = [importDefault(6807).defaultRules, tmp, ];
+  const tmp = MarkupTextDefault(arg0, obj);
+  items = [get_defaultRulesDefault.defaultRules, tmp, ];
   obj = {};
   obj = {};
-  const merged = Object.assign(importDefault(4092).defaultRules.link);
-  obj.react = tmp[require(undefined, 4765) /* AST_KEY */.AST_KEY.LINK].react;
-  obj[require(4765) /* AST_KEY */.AST_KEY.LINK] = obj;
-  const obj1 = {};
-  const merged1 = Object.assign(importDefault(4092).defaultRules.url);
-  obj1.react = tmp[require(undefined, 4765) /* AST_KEY */.AST_KEY.URL].react;
-  obj[require(4765) /* AST_KEY */.AST_KEY.URL] = obj1;
+  const merged = Object.assign(tDefault.defaultRules.link);
+  obj.react = tmp[AST_KEY.AST_KEY.LINK].react;
+  obj[AST_KEY.AST_KEY.LINK] = obj;
+  obj1 = {};
+  const merged1 = Object.assign(tDefault.defaultRules.url);
+  obj1.react = tmp[AST_KEY.AST_KEY.URL].react;
+  obj[AST_KEY.AST_KEY.URL] = obj1;
   const obj2 = {};
-  const merged2 = Object.assign(importDefault(4092).defaultRules.autolink);
-  obj2.react = tmp[require(undefined, 4765) /* AST_KEY */.AST_KEY.AUTOLINK].react;
-  obj[require(4765) /* AST_KEY */.AST_KEY.AUTOLINK] = obj2;
+  const merged2 = Object.assign(tDefault.defaultRules.autolink);
+  obj2.react = tmp[AST_KEY.AST_KEY.AUTOLINK].react;
+  obj[AST_KEY.AST_KEY.AUTOLINK] = obj2;
   const obj3 = {};
-  const merged3 = Object.assign(importDefault(4092).defaultRules.blockQuote);
-  obj3.react = tmp[require(undefined, 4765) /* AST_KEY */.AST_KEY.BLOCK_QUOTE].react;
-  obj[require(4765) /* AST_KEY */.AST_KEY.BLOCK_QUOTE] = obj3;
+  const merged3 = Object.assign(tDefault.defaultRules.blockQuote);
+  obj3.react = tmp[AST_KEY.AST_KEY.BLOCK_QUOTE].react;
+  obj[AST_KEY.AST_KEY.BLOCK_QUOTE] = obj3;
   items[2] = obj;
-  return importDefault(6808)(items);
+  return combineMarkupRulesDefault(items);
 }
 function createRulesWithoutLinks(arg0, arg1) {
   let obj = arg1;
@@ -46,26 +55,26 @@ function createRulesWithoutLinks(arg0, arg1) {
   return obj;
 }
 function createNotifCenterV2MessagePreviewRules(closure_28, closure_28, roleStyle) {
-  const tmp = importDefault(4766)(closure_28, closure_28, roleStyle);
-  const items = [importDefault(6807).notifCenterV2MessagePreviewRules, ];
+  const tmp = MarkupTextDefault(closure_28, closure_28, roleStyle);
+  items = [get_defaultRulesDefault.notifCenterV2MessagePreviewRules, ];
   let obj = {};
   obj = {};
-  const merged = Object.assign(importDefault(6809).RULES[require(undefined, 4765) /* AST_KEY */.AST_KEY.MENTION]);
-  obj.react = tmp[require(undefined, 4765) /* AST_KEY */.AST_KEY.MENTION].react;
-  obj[require(4765) /* AST_KEY */.AST_KEY.MENTION] = obj;
+  const merged = Object.assign(parseLinkDefault.RULES[AST_KEY.AST_KEY.MENTION]);
+  obj.react = tmp[AST_KEY.AST_KEY.MENTION].react;
+  obj[AST_KEY.AST_KEY.MENTION] = obj;
   obj = {};
-  const merged1 = Object.assign(importDefault(6809).RULES[require(undefined, 4765) /* AST_KEY */.AST_KEY.CHANNEL_MENTION]);
-  obj.react = tmp[require(undefined, 4765) /* AST_KEY */.AST_KEY.CHANNEL_MENTION].react;
-  obj[require(4765) /* AST_KEY */.AST_KEY.CHANNEL_MENTION] = obj;
-  const obj1 = {};
-  const merged2 = Object.assign(importDefault(6809).RULES[require(undefined, 4765) /* AST_KEY */.AST_KEY.ITALICS]);
-  obj1.react = tmp[require(undefined, 4765) /* AST_KEY */.AST_KEY.ITALICS].react;
-  obj[require(4765) /* AST_KEY */.AST_KEY.ITALICS] = obj1;
+  const merged1 = Object.assign(parseLinkDefault.RULES[AST_KEY.AST_KEY.CHANNEL_MENTION]);
+  obj.react = tmp[AST_KEY.AST_KEY.CHANNEL_MENTION].react;
+  obj[AST_KEY.AST_KEY.CHANNEL_MENTION] = obj;
+  obj1 = {};
+  const merged2 = Object.assign(parseLinkDefault.RULES[AST_KEY.AST_KEY.ITALICS]);
+  obj1.react = tmp[AST_KEY.AST_KEY.ITALICS].react;
+  obj[AST_KEY.AST_KEY.ITALICS] = obj1;
   items[1] = obj;
-  return importDefault(6808)(items);
+  return combineMarkupRulesDefault(items);
 }
-let items = [require("AST_KEY").AST_KEY.URL, require("AST_KEY").AST_KEY.AUTOLINK, require("AST_KEY").AST_KEY.LINK, "mailto", "tel"];
-const result = require("combineMarkupRules").fileFinishedImporting("modules/markup/CustomMarkup.native.tsx");
+let items = [AST_KEY.AST_KEY.URL, AST_KEY.AST_KEY.AUTOLINK, AST_KEY.AST_KEY.LINK, "mailto", "tel"];
+const result = set.fileFinishedImporting("modules/markup/CustomMarkup.native.tsx");
 
 export { createRules };
 export const getParser = function getParser(arg0) {
@@ -77,19 +86,19 @@ export const getParser = function getParser(arg0) {
   if (arg1 === undefined) {
     obj = {};
   }
-  return importDefault(6807).reactParserFor(createRules(obj, obj));
+  return get_defaultRulesDefault.reactParserFor(createRules(obj, obj));
 };
 export { createRulesWithoutLinks };
-export const getParserWithoutLinks = function getParserWithoutLinks(cacheKey) {
-  let obj = cacheKey;
-  if (cacheKey === undefined) {
+export const getParserWithoutLinks = function getParserWithoutLinks(arg0) {
+  let obj = arg0;
+  if (arg0 === undefined) {
     obj = {};
   }
   obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
-  return importDefault(6807).reactParserFor(createRulesWithoutLinks(obj, obj));
+  return get_defaultRulesDefault.reactParserFor(createRulesWithoutLinks(obj, obj));
 };
 export { createNotifCenterV2MessagePreviewRules };
 export const getNotifCenterV2MessagePreviewParser = function getNotifCenterV2MessagePreviewParser(arg0, closure_28, roleStyle) {
@@ -101,34 +110,34 @@ export const getNotifCenterV2MessagePreviewParser = function getNotifCenterV2Mes
   if (closure_28 === undefined) {
     obj = {};
   }
-  return importDefault(6807).reactParserFor(createNotifCenterV2MessagePreviewRules(obj, obj, roleStyle));
+  return get_defaultRulesDefault.reactParserFor(createNotifCenterV2MessagePreviewRules(obj, obj, roleStyle));
 };
 export const createWidgetMessageRules = function createWidgetMessageRules() {
-  const items = [importDefault(6807).lockscreenWidgetMessageRules, ];
+  items = [get_defaultRulesDefault.lockscreenWidgetMessageRules, ];
   let obj = {};
   obj = {};
-  const merged = Object.assign(importDefault(6809).RULES[require(undefined, 4765) /* AST_KEY */.AST_KEY.MENTION]);
-  obj.react = require(4766) /* MarkupText */.plainMentionRenderer;
-  obj[require(4765) /* AST_KEY */.AST_KEY.MENTION] = obj;
+  const merged = Object.assign(parseLinkDefault.RULES[AST_KEY.AST_KEY.MENTION]);
+  obj.react = MarkupText.plainMentionRenderer;
+  obj[AST_KEY.AST_KEY.MENTION] = obj;
   obj = {};
-  const merged1 = Object.assign(importDefault(6809).RULES.spoiler);
-  obj.react = require(4766) /* MarkupText */.plainSpoilerRenderer;
-  obj[require(4765) /* AST_KEY */.AST_KEY.SPOILER] = obj;
+  const merged1 = Object.assign(parseLinkDefault.RULES.spoiler);
+  obj.react = MarkupText.plainSpoilerRenderer;
+  obj[AST_KEY.AST_KEY.SPOILER] = obj;
   items[1] = obj;
-  return importDefault(6808)(items);
+  return combineMarkupRulesDefault(items);
 };
 export const getWidgetMessageRules = function getWidgetMessageRules() {
-  let obj = importDefault(6807);
-  const items = [importDefault(6807).lockscreenWidgetMessageRules, ];
+  let obj = get_defaultRulesDefault;
+  items = [get_defaultRulesDefault.lockscreenWidgetMessageRules, ];
   obj = {};
   obj = {};
-  const merged = Object.assign(importDefault(6809).RULES[require(undefined, 4765) /* AST_KEY */.AST_KEY.MENTION]);
-  obj.react = require(4766) /* MarkupText */.plainMentionRenderer;
-  obj[require(4765) /* AST_KEY */.AST_KEY.MENTION] = obj;
-  const obj1 = {};
-  const merged1 = Object.assign(importDefault(6809).RULES.spoiler);
-  obj1.react = require(4766) /* MarkupText */.plainSpoilerRenderer;
-  obj[require(4765) /* AST_KEY */.AST_KEY.SPOILER] = obj1;
+  const merged = Object.assign(parseLinkDefault.RULES[AST_KEY.AST_KEY.MENTION]);
+  obj.react = MarkupText.plainMentionRenderer;
+  obj[AST_KEY.AST_KEY.MENTION] = obj;
+  obj1 = {};
+  const merged1 = Object.assign(parseLinkDefault.RULES.spoiler);
+  obj1.react = MarkupText.plainSpoilerRenderer;
+  obj[AST_KEY.AST_KEY.SPOILER] = obj1;
   items[1] = obj;
-  return obj.reactParserFor(importDefault(6808)(items));
+  return obj.reactParserFor(combineMarkupRulesDefault(items));
 };

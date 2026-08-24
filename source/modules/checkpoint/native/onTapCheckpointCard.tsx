@@ -1,26 +1,28 @@
-// Module ID: 11125
-// Function ID: 11126
+// Module ID: 11164
+// Function ID: 11165
 // Name: onTapCheckpointCard
-// Dependencies: [1391, 676, 698, 5042, 2]
+// Dependencies: [1391, 676, 698, 5047, 2]
 // Exports: onTapCheckpointCard
 
-// Module 11125 (onTapCheckpointCard)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { AnalyticEvents } from "ME";
+// Module 11164 (onTapCheckpointCard)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 5047 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("expandEventProperties").fileFinishedImporting("modules/checkpoint/native/onTapCheckpointCard.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/checkpoint/native/onTapCheckpointCard.tsx");
 
 export const onTapCheckpointCard = function onTapCheckpointCard(message) {
   channel = channel.getChannel(message.message.channel_id);
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { other_user_id: message.authorId };
-  const merged = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(channel));
-  const obj3 = require(5042) /* collectGuildAnalyticsMetadata */;
+  const merged = Object.assign(collectGuildAnalyticsMetadata.collectChannelAnalyticsMetadata(channel));
+  const obj3 = collectGuildAnalyticsMetadata;
   let guild_id;
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  const merged1 = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guild_id));
+  const merged1 = Object.assign(collectGuildAnalyticsMetadata.collectGuildAnalyticsMetadata(guild_id));
   obj.track(AnalyticEvents.CHECKPOINT_CARD_CLICKED, obj);
 };

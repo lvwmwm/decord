@@ -1,26 +1,21 @@
-// Module ID: 6925
-// Function ID: 6926
+// Module ID: 6963
+// Function ID: 6964
 // Name: usePromptHelpText
-// Dependencies: [1391, 1983, 4021, 4030, 1922, 676, 1236, 589, 4984, 2]
+// Dependencies: [1391, 1984, 4024, 4033, 1922, 676, 1236, 589, 4989, 2]
 // Exports: default, useCustomizeCommunityPromptHelpText
 
-// Module 6925 (usePromptHelpText)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { Permissions } from "ME";
+// Module 6963 (usePromptHelpText)
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_onboarding/usePromptHelpText.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_onboarding/usePromptHelpText.tsx");
 
 export default function usePromptHelpText(arg0) {
-  let _prompt;
-  let dependencyMap;
-  let guild;
-  let itemHook;
-  let selectedRoleIds;
   ({ guild, prompt: _prompt, selectedRoleIds } = arg0);
   ({ selectedChannelIds: dependencyMap, itemHook } = arg0);
   let id;
@@ -29,28 +24,28 @@ export default function usePromptHelpText(arg0) {
     id = guild.id;
   }
   let obj = selectedRoleIds(589);
-  const items = [createGuildRoleRecordFromRust];
+  const items = [closure_3];
   const items1 = [id, selectedRoleIds];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     if (null != id) {
-      let manyRoles = outer1_3.getManyRoles(tmp, selectedRoleIds);
+      let manyRoles = closure_1_3.getManyRoles(tmp, selectedRoleIds);
     } else {
       manyRoles = [];
     }
     return manyRoles;
   }, items1);
-  let obj1 = selectedRoleIds(589);
-  const items2 = [id, mergeGuildAvatar, markAllUserIdListsStale, getUncachedChannelPermissions];
+  obj1 = selectedRoleIds(589);
+  const items2 = [id, closure_6, closure_5, closure_4];
   const stateFromStoresArray1 = obj1.useStateFromStoresArray(items2, () => {
     const mapped = Array.from(closure_1).map((arg0) => channel.getChannel(arg0));
     const found = mapped.filter((arg0) => {
       let canResult = null != arg0;
       if (canResult) {
-        canResult = getUncachedChannelPermissions.can(constants.VIEW_CHANNEL, arg0);
+        canResult = closure_4.can(constants.VIEW_CHANNEL, arg0);
       }
       return canResult;
     });
-    return found.map((channel) => callback(table[8]).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true));
+    return found.map((channel) => callback(table[8]).computeChannelName(channel, closure_6, closure_5, true));
   });
   let mapped = stateFromStoresArray.map((name) => "@" + name.name);
   let singleSelect;
@@ -116,11 +111,6 @@ export default function usePromptHelpText(arg0) {
   }
 };
 export const useCustomizeCommunityPromptHelpText = function useCustomizeCommunityPromptHelpText(arg0) {
-  let _prompt;
-  let dependencyMap;
-  let guild;
-  let itemHook;
-  let selectedRoleIds;
   ({ guild, prompt: _prompt, selectedRoleIds } = arg0);
   ({ selectedChannelIds: dependencyMap, itemHook } = arg0);
   let id;
@@ -129,28 +119,28 @@ export const useCustomizeCommunityPromptHelpText = function useCustomizeCommunit
     id = guild.id;
   }
   let obj = selectedRoleIds(589);
-  const items = [createGuildRoleRecordFromRust];
+  const items = [closure_3];
   const items1 = [id, selectedRoleIds];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     if (null != id) {
-      let manyRoles = outer1_3.getManyRoles(tmp, selectedRoleIds);
+      let manyRoles = closure_1_3.getManyRoles(tmp, selectedRoleIds);
     } else {
       manyRoles = [];
     }
     return manyRoles;
   }, items1);
-  let obj1 = selectedRoleIds(589);
-  const items2 = [id, mergeGuildAvatar, markAllUserIdListsStale, getUncachedChannelPermissions];
+  obj1 = selectedRoleIds(589);
+  const items2 = [id, closure_6, closure_5, closure_4];
   const stateFromStoresArray1 = obj1.useStateFromStoresArray(items2, () => {
     const mapped = Array.from(closure_1).map((arg0) => channel.getChannel(arg0));
     const found = mapped.filter((arg0) => {
       let canResult = null != arg0;
       if (canResult) {
-        canResult = getUncachedChannelPermissions.can(constants.VIEW_CHANNEL, arg0);
+        canResult = closure_4.can(constants.VIEW_CHANNEL, arg0);
       }
       return canResult;
     });
-    return found.map((channel) => callback(table[8]).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true));
+    return found.map((channel) => callback(table[8]).computeChannelName(channel, closure_6, closure_5, true));
   });
   let mapped = stateFromStoresArray.map((name) => "@" + name.name);
   let singleSelect;

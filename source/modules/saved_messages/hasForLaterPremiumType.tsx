@@ -1,21 +1,23 @@
-// Module ID: 8485
-// Function ID: 8486
+// Module ID: 8524
+// Function ID: 8525
 // Name: hasForLaterPremiumType
 // Dependencies: [1922, 1924, 1945, 589, 2]
 // Exports: default, useHasForLaterPremiumType
 
-// Module 8485 (hasForLaterPremiumType)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { PremiumTypes } from "GuildFeatures";
+// Module 8524 (hasForLaterPremiumType)
+import initialize from "initialize" /* 589 */;
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
-const require = arg1;
-const result = require("isPremiumAtLeast").fileFinishedImporting("modules/saved_messages/hasForLaterPremiumType.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/saved_messages/hasForLaterPremiumType.tsx");
 
 export default function hasForLaterPremiumType() {
   currentUser = currentUser.getCurrentUser();
-  return require(1945) /* isPremiumAtLeast */.isPremium(currentUser, PremiumTypes.TIER_2);
+  return isPremiumAtLeast.isPremium(currentUser, PremiumTypes.TIER_2);
 };
 export const useHasForLaterPremiumType = function useHasForLaterPremiumType() {
-  const items = [mergeGuildAvatar];
-  return require(589) /* initialize */.useStateFromStores(items, () => callback(table[2]).isPremium(currentUser.getCurrentUser(), TIER_2.TIER_2));
+  const items = [closure_2];
+  return initialize.useStateFromStores(items, () => callback(table[2]).isPremium(currentUser.getCurrentUser(), TIER_2.TIER_2));
 };

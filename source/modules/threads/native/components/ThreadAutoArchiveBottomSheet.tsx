@@ -1,23 +1,19 @@
-// Module ID: 16034
-// Function ID: 16035
+// Module ID: 16132
+// Function ID: 16133
 // Name: AutoArchiveDurationOptions
-// Dependencies: [19, 1398, 21, 8465, 8101, 1236, 8100, 2]
+// Dependencies: [19, 1398, 21, 8504, 8140, 1236, 8139, 2]
 
-// Module 16034 (AutoArchiveDurationOptions)
-import { ChannelFlags } from "set";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 16132 (AutoArchiveDurationOptions)
+import { ChannelFlags } from "set" /* 1398 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
-const memoResult = require("noop").memo((channel) => {
-  let description;
-  let onSelectDuration;
-  let selected;
-  let title;
+const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
   let _require;
   ({ title, description, selected, onSelectDuration } = channel);
-  let obj = _require(8465);
+  let obj = _require(8504);
   const autoArchiveOptions = obj.getAutoArchiveOptions();
   let hasFlagResult = null != channel && channel.isForumPost();
   if (hasFlagResult) {
@@ -28,9 +24,9 @@ const memoResult = require("noop").memo((channel) => {
   const intl = tmp(1236).intl;
   obj[3] = intl.string(_require(1236).t.H4mGfI);
   obj[4] = onSelectDuration;
-  obj[6] = autoArchiveOptions.map((value) => outer1_3(_undefined(outer1_1[6]).TableRadioRow, { value: value.value, disabled: _undefined, label: value.label }, value.value));
-  return jsx(_require(8101).TableRadioGroup, { value: selected, title, description, accessibilityLabel: null, onChange: null, hasIcons: false, children: null });
+  obj[6] = autoArchiveOptions.map((value) => closure_1_3(_undefined(closure_1_1[6]).TableRadioRow, { value: value.value, disabled: _undefined, label: value.label }, value.value));
+  return jsx(_require(8140).TableRadioGroup, { value: selected, title, description, accessibilityLabel: null, onChange: null, hasIcons: false, children: null });
 });
-const result = require("jsxProd").fileFinishedImporting("modules/threads/native/components/ThreadAutoArchiveBottomSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/threads/native/components/ThreadAutoArchiveBottomSheet.tsx");
 
 export const AutoArchiveDurationOptions = memoResult;

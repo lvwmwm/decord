@@ -1,29 +1,30 @@
-// Module ID: 16969
-// Function ID: 16970
+// Module ID: 17062
+// Function ID: 17063
 // Name: FormTrialActiveUserLimitPicker
-// Dependencies: [19, 21, 16970, 13356, 1236, 4342, 8821, 2007, 2]
+// Dependencies: [19, 21, 17063, 13414, 1236, 4346, 8858, 2008, 2]
 // Exports: default
 
-// Module 16969 (FormTrialActiveUserLimitPicker)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 17062 (FormTrialActiveUserLimitPicker)
+import noopAll from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
+noopAll;
 let c4 = "GuildRoleSubscriptionTrialActiveUserLimitSelect";
-const result = require("useTrialActiveUserLimitOptions").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormTrialActiveUserLimitPicker.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormTrialActiveUserLimitPicker.tsx");
 
 export default function FormTrialActiveUserLimitPicker(activeTrialUserlimit) {
   const str = activeTrialUserlimit.activeTrialUserlimit;
   const onChange = activeTrialUserlimit.onChange;
-  let dependencyMap;
-  dependencyMap = onChange(16970)();
+  dependencyMap = undefined;
+  dependencyMap = onChange(17063)();
   if (null == str) {
     let intl = str(1236).intl;
     let stringResult = intl.string(str(1236).t.zHfL6o);
   } else {
     stringResult = str.toString();
   }
-  return jsx(onChange(13356), {
+  return jsx(onChange(13414), {
     label: stringResult,
     onPress() {
       let obj = onChange(paths[5]);
@@ -33,10 +34,10 @@ export default function FormTrialActiveUserLimitPicker(activeTrialUserlimit) {
       obj[1] = paths;
       obj[2] = function onItemSelect(arg0) {
         callback(arg0);
-        outer1_1(outer1_2[5]).hideActionSheet(outer1_4);
+        closure_1_1(closure_1_2[5]).hideActionSheet(closure_1_4);
       };
       obj[3] = str;
-      obj.openLazy(str(paths[7])(paths[6], paths.paths), outer1_4, obj);
+      obj.openLazy(str(paths[7])(paths[6], paths.paths), closure_1_4, obj);
     },
     disabled: activeTrialUserlimit.disabled
   });

@@ -4,8 +4,10 @@
 // Dependencies: [817]
 
 // Module 1154 (fillTyped)
-const require = arg1;
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.fillTyped = function fillTyped(AppRegistry, runApplication, arg2) {
-  require(817) /* registerSpanErrorInstrumentation */.fill(AppRegistry, runApplication, arg2);
+  registerSpanErrorInstrumentation.fill(AppRegistry, runApplication, arg2);
 };

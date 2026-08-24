@@ -1,54 +1,50 @@
-// Module ID: 14566
-// Function ID: 14567
+// Module ID: 14634
+// Function ID: 14635
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 676, 21, 4661, 712, 6782, 4734, 5433, 1297, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 6819, 4739, 5438, 1297, 2]
 // Exports: default
 
-// Module 14566 (LabeledDataBlock)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
+// Module 14634 (LabeledDataBlock)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 createCacheKey = { container: null, title: null, data: null, titleSection: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, borderRadius: require("Themes").radii.sm, flexBasis: "auto", flexGrow: 1, padding: 16 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: ThemesDefault.radii.sm, flexBasis: "auto", flexGrow: 1, padding: 16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { marginRight: 4 };
-const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.PRIMARY_MEDIUM, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+const merged = Object.assign(importDefaultResult(require("ME").Fonts.PRIMARY_MEDIUM, ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 createCacheKey[2] = {};
 createCacheKey[3] = { flexDirection: "row", alignItems: "center", marginBottom: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_5 = createCacheKey.createStyles(createCacheKey);
 let obj1 = {};
-const result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/native/components/LabeledDataBlock.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/LabeledDataBlock.tsx");
 
 export default function LabeledDataBlock(arg0) {
-  let children;
-  let icon;
-  let onPressIcon;
-  let style;
-  let title;
   ({ children, icon } = arg0);
   ({ title, style, onPressIcon } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { style: items, children: null };
   items = [tmp.container, style];
   obj = { style: tmp.titleSection, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-sm/medium", color: "interactive-text-default", children: title };
-  const items1 = [callback(require(4734) /* Text */.Text, obj), ];
+  const items1 = [callback(Text.Text, obj), ];
   let tmp4Result = null != icon;
   if (tmp4Result) {
-    const obj1 = { accessibilityRole: "button", onPress: null, children: null };
+    obj1 = { accessibilityRole: "button", onPress: null, children: null };
     obj1[1] = onPressIcon;
     const obj2 = { size: null, source: null };
     obj2[0] = tmp5(1297).Icon.Sizes.SMALL;
     obj2[1] = icon;
     obj1[2] = tmp4(tmp5(1297).Icon, obj2);
-    tmp4Result = tmp4(tmp5(5433).PressableOpacity, obj1);
+    tmp4Result = tmp4(tmp5(5438).PressableOpacity, obj1);
   }
   items1[1] = tmp4Result;
   obj[1] = items1;

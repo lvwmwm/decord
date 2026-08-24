@@ -1,31 +1,34 @@
-// Module ID: 11643
-// Function ID: 11644
+// Module ID: 11692
+// Function ID: 11693
 // Name: useIOSCompletionStates
-// Dependencies: [1980, 1910, 4021, 11644, 11637, 676, 4342, 11645, 2007, 11646, 589, 11641, 11757, 1236, 11, 2]
+// Dependencies: [1981, 1910, 4024, 11693, 11686, 676, 4346, 11694, 2008, 11695, 589, 11690, 11806, 1236, 11, 2]
 // Exports: createGuildProgress, hideActionSheet, openActionSheet, useGuildProgressStep, useIsEligibleForGuildProgress
 
-// Module 11643 (useIOSCompletionStates)
-import comparator from "comparator";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import completeStep from "completeStep";
-import { Steps } from "Steps";
-import ME from "ME";
+// Module 11692 (useIOSCompletionStates)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import dispatcherDefault from "dispatcher" /* 11695 */;
+import closure_3 from "comparator" /* 1981 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_6 from "completeStep" /* 11693 */;
+import { Steps } from "Steps" /* 11686 */;
+import ME from "ME" /* 676 */;
 
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function useIOSCompletionStates(guild) {
   const _require = guild;
   let obj = _require(589);
-  const items = [getUncachedChannelPermissions];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.can(outer1_9.ADMINISTRATOR, closure_0));
-  const guildPersonalized = _require(11641).useGuildPersonalized(guild);
-  const obj2 = _require(11641);
-  const guildPopulated = _require(11641).useGuildPopulated(guild);
-  const obj3 = _require(11641);
-  const items1 = [comparator];
-  const stateFromStores1 = _require(589).useStateFromStores(items1, () => outer1_3.getDefaultChannel(guild.id));
+  const items = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.can(closure_1_9.ADMINISTRATOR, closure_0));
+  const guildPersonalized = _require(11690).useGuildPersonalized(guild);
+  const obj2 = _require(11690);
+  const guildPopulated = _require(11690).useGuildPopulated(guild);
+  const obj3 = _require(11690);
+  const items1 = [closure_3];
+  const stateFromStores1 = _require(589).useStateFromStores(items1, () => closure_1_3.getDefaultChannel(guild.id));
   const obj4 = _require(589);
   if (null != stateFromStores1) {
     const items2 = [stateFromStores1];
@@ -33,16 +36,16 @@ function useIOSCompletionStates(guild) {
   } else {
     items3 = [];
   }
-  const channelsMessaged = _require(11641).useChannelsMessaged(items3);
+  const channelsMessaged = _require(11690).useChannelsMessaged(items3);
   let tmpResult = tmp(589);
-  const items4 = [completeStep];
+  const items4 = [closure_6];
   let stateFromStores2 = channelsMessaged;
   if (!channelsMessaged) {
     stateFromStores2 = tmpResult.useStateFromStores(items4, () => {
-      const progress = outer1_6.getProgress(guild.id);
+      const progress = closure_1_6.getProgress(guild.id);
       let flag;
       if (progress != null) {
-        flag = progress.has(outer1_7.MESSAGE);
+        flag = progress.has(closure_1_7.MESSAGE);
       }
       if (flag == null) {
         flag = false;
@@ -51,9 +54,9 @@ function useIOSCompletionStates(guild) {
     });
   }
   tmpResult = tmp(589);
-  const items5 = [createGuildRecordFromRust];
+  const items5 = [closure_4];
   const stateFromStores3 = tmpResult.useStateFromStores(items5, () => {
-    guild = outer1_4.getGuild(guild.id);
+    guild = closure_1_4.getGuild(guild.id);
     let num;
     if (guild != null) {
       num = guild.premiumSubscriberCount;
@@ -63,12 +66,12 @@ function useIOSCompletionStates(guild) {
     }
     return num > 0;
   });
-  const obj5 = _require(11641);
-  const tmp8 = completeStep;
+  const obj5 = _require(11690);
+  const tmp8 = closure_6;
   const items6 = [tmp8];
-  const stateFromStores4 = _require(589).useStateFromStores(items6, () => outer1_6.getProgress(guild.id));
+  const stateFromStores4 = _require(589).useStateFromStores(items6, () => closure_1_6.getProgress(guild.id));
   if (stateFromStores) {
-    const ServerSetupBoostCtaExperiment = tmp(11757).ServerSetupBoostCtaExperiment;
+    const ServerSetupBoostCtaExperiment = tmp(11806).ServerSetupBoostCtaExperiment;
     const enabled = ServerSetupBoostCtaExperiment.getConfig({ location: "GuildProgress" }).enabled;
     const items7 = [guildPopulated, guildPersonalized, stateFromStores2];
     if (enabled) {
@@ -105,78 +108,73 @@ function useIOSCompletionStates(guild) {
   }
   const tmpResult1 = _require(589);
 }
-({ WELCOME_OLD_GUILD_AGE_THRESHOLD: metroImportAll, Permissions: c9 } = ME);
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_progress/native/GuildProgressUtils.tsx");
+({ WELCOME_OLD_GUILD_AGE_THRESHOLD: closure_8, Permissions: c9 } = ME);
+const result = require("set").fileFinishedImporting("modules/guild_progress/native/GuildProgressUtils.tsx");
 
 export const MIN_PROGRESS_PERCENT = 3;
 export const PROGRESS_BACKGROUND_COLOR = "rgba(78, 93, 148, 0.3)";
 export const openActionSheet = function openActionSheet(guild) {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { guild };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(11645, dependencyMap.paths), "guild-progress-" + guild.id, obj);
+  obj.openLazy(asyncRequireImpl(11694, dependencyMap.paths), "guild-progress-" + guild.id, obj);
 };
 export const hideActionSheet = function hideActionSheet(arg0) {
-  importDefault(4342).hideActionSheet("guild-progress-" + arg0);
+  ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet("guild-progress-" + arg0);
 };
 export const createGuildProgress = function createGuildProgress(closure_0) {
   if (null != guild.getGuild(closure_0)) {
-    const progress = importDefault(11646).createProgress(closure_0);
-    const obj = importDefault(11646);
+    const progress = dispatcherDefault.createProgress(closure_0);
+    const obj = dispatcherDefault;
   }
 };
 export { useIOSCompletionStates };
 export const useGuildProgressStep = function useGuildProgressStep(guild) {
-  let completed;
-  let guildBoosted;
-  let guildMessaged;
-  let guildPersonalized;
-  let showBoostStep;
   const tmp = useIOSCompletionStates(guild);
   const totalSteps = tmp.totalSteps;
   let stringResult = null;
   ({ guildPersonalized, guildMessaged, guildBoosted, showBoostStep, completed } = tmp);
   if (!tmp.guildPopulated) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1236) /* getSystemLocale */.t.q9n0Ta);
+    const intl = getSystemLocale.intl;
+    stringResult = intl.string(getSystemLocale.t.q9n0Ta);
   }
   const items = [stringResult, , ];
   let stringResult1 = null;
   if (!guildPersonalized) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    stringResult1 = intl2.string(require(1236) /* getSystemLocale */.t.DWB2YZ);
+    const intl2 = getSystemLocale.intl;
+    stringResult1 = intl2.string(getSystemLocale.t.DWB2YZ);
   }
   items[1] = stringResult1;
   let stringResult2 = null;
   if (!guildMessaged) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    stringResult2 = intl3.string(require(1236) /* getSystemLocale */.t.dNktpr);
+    const intl3 = getSystemLocale.intl;
+    stringResult2 = intl3.string(getSystemLocale.t.dNktpr);
   }
   items[2] = stringResult2;
   if (showBoostStep) {
     let stringResult3 = null;
     if (!guildBoosted) {
-      const intl4 = require(1236) /* getSystemLocale */.intl;
-      stringResult3 = intl4.string(require(1236) /* getSystemLocale */.t["6Qbqxw"]);
+      const intl4 = getSystemLocale.intl;
+      stringResult3 = intl4.string(getSystemLocale.t["6Qbqxw"]);
     }
     items.push(stringResult3);
   }
   const length = items.filter((arg0) => null == arg0).length;
   let found = items.find((arg0) => null != arg0);
   if (found == null) {
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    found = intl5.string(require(1236) /* getSystemLocale */.t["+Gyklt"]);
+    const intl5 = getSystemLocale.intl;
+    found = intl5.string(getSystemLocale.t["+Gyklt"]);
   }
   let obj = { percentComplete: Math.max(3, 100 * length / totalSteps), subtitle: null, completed: null };
   if (length < totalSteps) {
-    const intl7 = require(1236) /* getSystemLocale */.intl;
+    const intl7 = getSystemLocale.intl;
     obj = { currStep: null, total: null, step: null };
     obj[0] = length + 1;
     obj[1] = totalSteps;
     obj[2] = found;
-    let formatToPlainStringResult = intl7.formatToPlainString(require(1236) /* getSystemLocale */.t.zhHW5c, obj);
+    let formatToPlainStringResult = intl7.formatToPlainString(getSystemLocale.t.zhHW5c, obj);
   } else {
-    const intl6 = require(1236) /* getSystemLocale */.intl;
-    formatToPlainStringResult = intl6.string(require(1236) /* getSystemLocale */.t["+Gyklt"]);
+    const intl6 = getSystemLocale.intl;
+    formatToPlainStringResult = intl6.string(getSystemLocale.t["+Gyklt"]);
   }
   obj[1] = formatToPlainStringResult;
   obj[2] = completed;
@@ -184,10 +182,10 @@ export const useGuildProgressStep = function useGuildProgressStep(guild) {
 };
 export const useIsEligibleForGuildProgress = function useIsEligibleForGuildProgress(guild) {
   const _require = guild;
-  const items = [getUncachedChannelPermissions];
-  let stateFromStores = _require(589).useStateFromStores(items, () => outer1_5.can(outer1_9.ADMINISTRATOR, closure_0));
+  const items = [closure_5];
+  let stateFromStores = _require(589).useStateFromStores(items, () => closure_1_5.can(closure_1_9.ADMINISTRATOR, closure_0));
   const obj = _require(589);
-  const obj2 = importDefault(11);
+  const obj2 = DISCORD_EPOCHDefault;
   if (stateFromStores) {
     stateFromStores = extractTimestampResult >= Date.now() - closure_8;
   }

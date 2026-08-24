@@ -1,35 +1,29 @@
-// Module ID: 10390
-// Function ID: 10391
+// Module ID: 10429
+// Function ID: 10430
 // Name: CancelButton
-// Dependencies: [32, 853, 19, 17, 4662, 676, 21, 4661, 712, 1949, 10389, 6319, 6368, 1236, 4115, 4744, 4664, 4343, 5311, 10391, 4097, 4756, 9176, 10393, 589, 10394, 10395, 9253, 8671, 9268, 9205, 6803, 10399, 9206, 9218, 9283, 9570, 10418, 4734, 5313, 4745, 2]
+// Dependencies: [32, 853, 19, 17, 4669, 676, 21, 4668, 712, 1949, 10428, 6350, 6399, 1236, 4119, 4749, 4671, 4347, 5316, 10430, 4100, 4761, 9213, 10432, 589, 10433, 10434, 9290, 8708, 9305, 9242, 6840, 10438, 9243, 9255, 9320, 9607, 10457, 4739, 5318, 4750, 2]
 // Exports: default
 
-// Module 10390 (CancelButton)
-import BalanceWidgetPill from "BalanceWidgetPill";
-import _toArray from "_toArray";
-import importDefaultResult1 from "importDefaultResult1";
-import get_ActivityIndicator from "HapticFeedbackTypes";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import ME from "ME";
-import jsxProd from "LinearGradient";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
+// Module 10429 (CancelButton)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+import tinycolorDefault from "tinycolor" /* 5316 */;
+import Background from "Background" /* 6350 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "_toArray" /* 853 */;
+import closure_5 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let closure_12;
-let closure_14;
-let closure_6;
-let error;
-let map1;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function CancelButton(arg0) {
-  let onCancel;
-  let require;
   ({ tintColor: require, onCancel } = arg0);
-  let dependencyMap;
-  dependencyMap = createCacheKey();
+  dependencyMap = undefined;
+  dependencyMap = callback2();
   const items = [onCancel];
   const callback = React.useCallback(() => {
     if (onCancel != null) {
@@ -41,19 +35,19 @@ function CancelButton(arg0) {
     onPress: callback,
     backImage() {
       const style = [closeButtonIcon.closeButtonIcon, { tintColor: closure_0 }];
-      return outer1_12(outer1_0(closeButtonIcon[12]).XSmallIcon, { size: "lg", style });
+      return closure_1_12(closure_1_0(closeButtonIcon[12]).XSmallIcon, { size: "lg", style });
     },
     accessibilityLabel: null,
     displayMode: "minimal"
   };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
-  return callback(require(6319) /* Background */.HeaderBackButton, obj);
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.cpT0Cq);
+  return callback(Background.HeaderBackButton, obj);
 }
 function ProductPurchaseGradientBackground(product) {
   product = product.product;
   let backgroundColors;
-  let importDefault;
+  importDefault = undefined;
   let token;
   let token1;
   backgroundColors = importDefault(token[19])(product.styles).backgroundColors;
@@ -64,17 +58,17 @@ function ProductPurchaseGradientBackground(product) {
   importDefault = tmp5;
   let obj = backgroundColors(tmp3[20]);
   token = obj.useToken(tmp2(tmp3[8]).colors.BACKGROUND_BASE_LOW);
-  const tmp = callback2(product.type);
+  const tmp = callback3(product.type);
   token1 = backgroundColors(token[20]).useToken(tmp2(tmp3[8]).colors.BACKGROUND_SURFACE_HIGH);
   let items = [backgroundColors, token, token1, null != tertiary];
   const memo = React.useMemo(() => {
     if (null == backgroundColors) {
-      const items = [token, token, token1, outer1_22, outer1_22];
+      const items = [token, token, token1, closure_1_22, closure_1_22];
       let items2 = items;
     } else {
       const primary2 = tmp.primary;
       const toHexStringResult = primary2.toHexString();
-      if (c1) {
+      if (closure_1) {
         const items1 = [toHexStringResult, , ];
         const secondary2 = tmp.secondary;
         items1[1] = secondary2.toHexString();
@@ -87,8 +81,8 @@ function ProductPurchaseGradientBackground(product) {
         items2[1] = primary.toHexString();
         const secondary = tmp.secondary;
         items2[2] = secondary.toHexString();
-        items2[3] = outer1_22;
-        items2[4] = outer1_22;
+        items2[3] = closure_1_22;
+        items2[4] = closure_1_22;
       }
     }
     return items2;
@@ -96,41 +90,41 @@ function ProductPurchaseGradientBackground(product) {
   obj = { style: tmp.backdrop, start: constants.START, end: constants.END, locations: null != tertiary ? [0, 0.6, 0.85] : [0, 0.05, 0.6, 0.95, 1], colors: memo };
   return callback(importDefault(token[21]), obj);
 }
-({ Image: closure_6, ScrollView: error, View: metroImportAll } = get_ActivityIndicator);
+({ Image: closure_6, ScrollView: error, View: closure_8 } = get_ActivityIndicator);
 ({ Orientation: c10, VerticalGradient: unpackModuleId } = ME);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 createCacheKey = { closeButtonIcon: null };
-createCacheKey = { tintColor: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey = { tintColor: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_15 = createCacheKey.createStyles(createCacheKey);
 let closure_16 = createCacheKey.createStyles((arg0) => {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
   let obj = { root: null, header: null, headerLeading: null, imageBackground: null, backdrop: null, main: null, curtain: null, body: null, preview: null, previewBundle: null, messages: null, title: null, footer: null, cta: null };
-  obj = { flex: 1, backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW };
+  obj = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
   obj[0] = obj;
-  obj = { flexDirection: "row", alignItems: "center", paddingHorizontal: importDefault(712).space.PX_16 };
+  obj = { flexDirection: "row", alignItems: "center", paddingHorizontal: ThemesDefault.space.PX_16 };
   obj[1] = obj;
   obj[2] = { flex: 1, flexDirection: "row", alignItems: "center" };
   obj[3] = { resizeMode: "cover", position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
   obj[4] = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
   obj[5] = { flex: 1 };
-  obj[6] = { position: "absolute", backgroundColor: importDefault(712).colors.BLACK, top: 0, bottom: 0, left: 0, right: 0 };
+  obj[6] = { position: "absolute", backgroundColor: ThemesDefault.colors.BLACK, top: 0, bottom: 0, left: 0, right: 0 };
   obj[7] = { flexGrow: 1, flexDirection: "column", justifyContent: "center" };
   let num = 0;
-  if (arg0 === require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+  if (arg0 === CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION) {
     num = 1;
   }
   const obj2 = { flexDirection: "row", justifyContent: "center", alignItems: "center", flex: num, marginTop: null, marginHorizontal: null };
   let str = 0;
-  if (arg0 === require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+  if (arg0 === CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION) {
     str = "20%";
   }
   obj2[4] = str;
   let PX_32;
-  if (arg0 === require(1949) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
+  if (arg0 === CollectiblesItemType.CollectiblesItemType.NAMEPLATE) {
     PX_32 = tmp(712).space.PX_32;
   }
   obj2[5] = PX_32;
@@ -173,24 +167,11 @@ let closure_18 = { code: "function ProductPurchaseSuccessModalTsx1(){const{inter
 let closure_19 = { code: "function ProductPurchaseSuccessModalTsx2(){const{interpolate,springInput}=this.__closure;return{opacity:interpolate(springInput.get(),[0,1],[0,1]),transform:[{scale:interpolate(springInput.get(),[0,1],[0.75,1])}]};}" };
 let closure_20 = { code: "function ProductPurchaseSuccessModalTsx3(){const{interpolate,linearInput}=this.__closure;return{opacity:interpolate(linearInput.get(),[0,1],[0.5,0])};}" };
 let closure_21 = [80, 79, 78, 75, 72, 50, 45, 35, 70];
-let closure_22 = require("tinycolor")("black").toHexString();
-let obj5 = require("tinycolor")("black");
-let result = require("noop").fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessModal.tsx");
+let closure_22 = tinycolorDefault("black").toHexString();
+let obj5 = tinycolorDefault("black");
+let result = require("set").fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessModal.tsx");
 
 export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
-  let avatarDecorationSize;
-  let avatarSize;
-  let canUseNow;
-  let handleEditProfile;
-  let handleUseNow;
-  let onCancel;
-  let onSuccess;
-  let product;
-  let renderMessages;
-  let sharedValue;
-  let showOrbBalancePill;
-  let tmp25;
-  let useCategoryImage;
   ({ product, useCategoryImage } = orbBalancePriorToPurchase);
   if (useCategoryImage === undefined) {
     useCategoryImage = false;
@@ -204,22 +185,22 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     prop = null;
   }
   let stateFromStores;
-  let callback;
+  importDefault = undefined;
   sharedValue = undefined;
   let obj = stateFromStores(sharedValue[22]);
   const currentUser = obj.useCurrentUser();
-  const backgroundColors = callback(sharedValue[19])(product.styles).backgroundColors;
+  const backgroundColors = importDefault(sharedValue[19])(product.styles).backgroundColors;
   let tertiary;
   if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
   }
-  const tmp6 = callback2(product.type, null != tertiary);
+  const tmp6 = callback3(product.type, null != tertiary);
   let tmp2Result = tmp2(tmp3[20]);
   let obj3 = React;
   const token = tmp2Result.useToken(tmp4(tmp3[8]).colors.INTERACTIVE_TEXT_ACTIVE);
   stateFromStores = React.useRef(closure_21);
-  callback = React.useCallback(() => {
-    const arr = outer1_4(stateFromStores.current);
+  const callback = React.useCallback(() => {
+    const arr = closure_1_4(stateFromStores.current);
     const first = arr[0];
     const substr = arr.slice(1);
     if (null != first) {
@@ -229,11 +210,11 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       }
       if (null != first) {
         const _setTimeout = setTimeout;
-        const timerId = setTimeout(callback, first);
+        const timerId = setTimeout(closure_1, first);
       }
       stateFromStores.current = substr;
     }
-    if (substr.length >= outer1_21.length / 2) {
+    if (substr.length >= closure_1_21.length / 2) {
       const result1 = stateFromStores(sharedValue[17]).triggerHapticFeedback(stateFromStores(sharedValue[17]).HapticFeedbackTypes.IMPACT_LIGHT);
       const obj2 = stateFromStores(sharedValue[17]);
     } else {
@@ -241,6 +222,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       const obj = stateFromStores(sharedValue[17]);
     }
   }, []);
+  importDefault = callback;
   let items = [callback];
   const effect = React.useEffect(() => {
     callback();
@@ -251,13 +233,13 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   tmp2Result = tmp2(tmp3[23]);
   const avatarDecorationPreviewSizes = tmp2Result.useAvatarDecorationPreviewSizes();
   ({ avatarSize, avatarDecorationSize } = avatarDecorationPreviewSizes);
-  let items1 = [maybeApplyNoTextColorForLightCustomTheme];
+  let items1 = [closure_9];
   stateFromStores = stateFromStores(sharedValue[24]).useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
   let tmp12 = product.type === tmp2(tmp3[9]).CollectiblesItemType.PROFILE_EFFECT;
   if (!tmp12) {
     tmp12 = product.type === tmp2(tmp3[9]).CollectiblesItemType.PROFILE_FRAME;
   }
-  callback = tmp12;
+  importDefault = tmp12;
   const tmp2Result1 = stateFromStores(sharedValue[24]);
   sharedValue = stateFromStores(sharedValue[14]).useSharedValue(0);
   const tmp2Result2 = stateFromStores(sharedValue[14]);
@@ -281,12 +263,11 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   }, items2);
   const tmp2Result3 = stateFromStores(sharedValue[14]);
   const fn = function l() {
-    let obj = { opacity: null, transform: null };
-    obj[0] = stateFromStores(sharedValue[14]).interpolate(sharedValue.get(), [0, 1], [0.1, 1]);
+    let obj = { opacity: stateFromStores(sharedValue[14]).interpolate(sharedValue.get(), [0, 1], [0.1, 1]), transform: null };
     const obj2 = stateFromStores(sharedValue[14]);
     let num = 0;
     const value = sharedValue.get();
-    if (callback) {
+    if (closure_1) {
       num = 0.6;
     }
     obj = { scale: stateFromStores(sharedValue[14]).interpolate(value, [0, 1], items) };
@@ -302,8 +283,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   const animatedStyle = stateFromStores(sharedValue[14]).useAnimatedStyle(fn);
   const tmp2Result4 = stateFromStores(sharedValue[14]);
   const fn2 = function n() {
-    let obj = { opacity: null, transform: null };
-    obj[0] = stateFromStores(sharedValue[14]).interpolate(sharedValue.get(), [0, 1], [0, 1]);
+    let obj = { opacity: stateFromStores(sharedValue[14]).interpolate(sharedValue.get(), [0, 1], [0, 1]), transform: null };
     obj = { scale: null };
     const obj2 = stateFromStores(sharedValue[14]);
     obj[0] = stateFromStores(sharedValue[14]).interpolate(sharedValue.get(), [0, 1], [0.75, 1]);
@@ -318,8 +298,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   const animatedStyle1 = stateFromStores(sharedValue[14]).useAnimatedStyle(fn2);
   const tmp2Result5 = stateFromStores(sharedValue[14]);
   const fn3 = function s() {
-    const obj = { opacity: null };
-    obj[0] = stateFromStores(sharedValue[14]).interpolate(sharedValue1.get(), [0, 1], [0.5, 0]);
+    const obj = { opacity: stateFromStores(sharedValue[14]).interpolate(sharedValue1.get(), [0, 1], [0.5, 0]) };
     return obj;
   };
   const tmp2Result6 = stateFromStores(sharedValue[14]);
@@ -327,7 +306,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   fn3.__workletHash = 6018737312;
   fn3.__initData = closure_20;
   const animatedStyle2 = tmp2Result6.useAnimatedStyle(fn3);
-  const obj1 = { interpolate: stateFromStores(sharedValue[14]).interpolate, linearInput: sharedValue1 };
+  obj1 = { interpolate: stateFromStores(sharedValue[14]).interpolate, linearInput: sharedValue1 };
   const category = stateFromStores(sharedValue[25]).useFetchCollectiblesProductCategory(product.skuId).category;
   if (category != null) {
     const mobileBgUrl = category.mobileBgUrl;

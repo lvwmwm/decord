@@ -1,10 +1,19 @@
-// Module ID: 11492
-// Function ID: 11493
+// Module ID: 11541
+// Function ID: 11542
 // Name: GUILD_TEMPLATE_ICONS
-// Dependencies: [11493, 11494, 11495, 11496, 11497, 11498, 11499, 2]
+// Dependencies: [11542, 11543, 11544, 11545, 11546, 11547, 11548, 2]
 
-// Module 11492 (GUILD_TEMPLATE_ICONS)
-const obj = { CREATE: require("registerAsset"), HUB_SCHOOL_CLUB: require("registerAsset"), HUB_STUDY: require("registerAsset"), HUB_CLASS: require("registerAsset"), HUB_SOCIAL: require("registerAsset"), HUB_MAJOR: require("registerAsset"), HUB_DORM: require("registerAsset") };
-const result = require("registerAsset").fileFinishedImporting("modules/directory_channels/native/GuildDirectoryTemplatesIcons.tsx");
+// Module 11541 (GUILD_TEMPLATE_ICONS)
+import set from "set" /* 2 */;
+import registerAssetDefault from "registerAsset" /* 11542 */;
+import registerAssetDefault2 from "registerAsset" /* 11543 */;
+import registerAssetDefault3 from "registerAsset" /* 11544 */;
+import registerAssetDefault4 from "registerAsset" /* 11545 */;
+import registerAssetDefault5 from "registerAsset" /* 11546 */;
+import registerAssetDefault6 from "registerAsset" /* 11547 */;
+import registerAssetDefault7 from "registerAsset" /* 11548 */;
+
+const obj = { CREATE: registerAssetDefault, HUB_SCHOOL_CLUB: registerAssetDefault2, HUB_STUDY: registerAssetDefault3, HUB_CLASS: registerAssetDefault4, HUB_SOCIAL: registerAssetDefault5, HUB_MAJOR: registerAssetDefault6, HUB_DORM: registerAssetDefault7 };
+const result = set.fileFinishedImporting("modules/directory_channels/native/GuildDirectoryTemplatesIcons.tsx");
 
 export const GUILD_TEMPLATE_ICONS = obj;

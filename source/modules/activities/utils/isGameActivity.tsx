@@ -1,13 +1,15 @@
-// Module ID: 9902
-// Function ID: 9903
+// Module ID: 9941
+// Function ID: 9942
 // Name: isGameActivity
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 9902 (isGameActivity)
-import { ActivityTypes } from "ME";
+// Module 9941 (isGameActivity)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/utils/isGameActivity.tsx");
+const ActivityTypes = ME.ActivityTypes;
+const result = set.fileFinishedImporting("modules/activities/utils/isGameActivity.tsx");
 
 export default function isGameActivity(type) {
   let tmp = null != type;

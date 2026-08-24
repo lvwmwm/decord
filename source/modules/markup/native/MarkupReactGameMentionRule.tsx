@@ -1,34 +1,34 @@
-// Module ID: 13071
-// Function ID: 13072
+// Module ID: 13127
+// Function ID: 13128
 // Name: MarkupGameMention
-// Dependencies: [19, 21, 4661, 712, 6898, 1236, 4507, 4766, 6683, 5449, 9096, 9101, 4734, 2]
+// Dependencies: [19, 21, 4668, 712, 6936, 1236, 4511, 4771, 6719, 5454, 9133, 9138, 4739, 2]
 // Exports: default
 
-// Module 13071 (MarkupGameMention)
-import "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13127 (MarkupGameMention)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
 const require = arg1;
+noopAll;
 ({ jsxs: c3, jsx: c4 } = jsxProd);
 createCacheKey = { icon: null, chip: null, chipText: null };
-createCacheKey = { width: 16, height: 16, borderRadius: require("Themes").radii.xs, marginRight: 2 };
+createCacheKey = { width: 16, height: 16, borderRadius: ThemesDefault.radii.xs, marginRight: 2 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { backgroundColor: require("Themes").colors.BORDER_SUBTLE, borderRadius: require("Themes").radii.xs, paddingHorizontal: 2 };
-let obj1 = { backgroundColor: require("Themes").colors.BORDER_SUBTLE, borderRadius: require("Themes").radii.xs, paddingHorizontal: 2 };
-createCacheKey[2] = { color: require("Themes").unsafe_rawColors.BRAND_500 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { color: require("Themes").unsafe_rawColors.BRAND_500 };
-const result = require("createCacheKey").fileFinishedImporting("modules/markup/native/MarkupReactGameMentionRule.tsx");
+createCacheKey[1] = { backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, borderRadius: ThemesDefault.radii.xs, paddingHorizontal: 2 };
+let obj1 = { backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, borderRadius: ThemesDefault.radii.xs, paddingHorizontal: 2 };
+createCacheKey[2] = { color: ThemesDefault.unsafe_rawColors.BRAND_500 };
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { color: ThemesDefault.unsafe_rawColors.BRAND_500 };
+const result = require("set").fileFinishedImporting("modules/markup/native/MarkupReactGameMentionRule.tsx");
 
 export default function MarkupGameMention(state) {
   state = state.state;
   let gameId;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   gameId = state.node.gameId;
-  let obj = state(6898);
+  let obj = state(6936);
   const gameMentionData = obj.useGameMentionData(gameId);
   const intl = state(1236).intl;
   const stringResult = intl.string(state(1236).t["11pdXZ"]);
@@ -43,7 +43,7 @@ export default function MarkupGameMention(state) {
   if (gameMentionData != null) {
     gameIcon = gameMentionData.gameIcon;
   }
-  const tmp8Result = gameId(4507)(gameId, gameIcon, { size: 32 });
+  const tmp8Result = gameId(4511)(gameId, gameIcon, { size: 32 });
   if (null == gameMentionData) {
     let textColor;
     if (state != null) {
@@ -53,7 +53,7 @@ export default function MarkupGameMention(state) {
     obj[0] = textColor;
     const items = ["@", stringResult];
     obj[1] = items;
-    return closure_3(tmp2(4766).MarkupText, obj, state.key);
+    return closure_3(tmp2(4771).MarkupText, obj, state.key);
   } else {
     obj = { size: "sm", style: null };
     obj[1] = tmp.icon;
@@ -61,14 +61,14 @@ export default function MarkupGameMention(state) {
     if (tmp11) {
       tmp11 = "" !== tmp8Result;
     }
-    let tmp17Result = callback(tmp2(6683).UnknownGameIcon, obj);
+    let tmp17Result = callback(tmp2(6719).UnknownGameIcon, obj);
     if (tmp11) {
-      const obj1 = { style: null, source: null };
+      obj1 = { style: null, source: null };
       obj1[0] = tmp.icon;
       const obj2 = { uri: null };
       obj2[0] = tmp8Result;
       obj1[1] = obj2;
-      tmp17Result = tmp17(tmp7(5449), obj1);
+      tmp17Result = tmp17(tmp7(5454), obj1);
     }
     let str2 = "button";
     if (state.noStyleAndInteraction) {
@@ -85,8 +85,8 @@ export default function MarkupGameMention(state) {
     let fn;
     if (!state.noStyleAndInteraction) {
       fn = () => {
-        let obj = gameId(outer1_2[10]);
-        obj = { gameId, gameProfileModalChecks: obj, source: state(outer1_2[11]).GameProfileSources.GameMention, sourceUserId: state.authorId };
+        let obj = gameId(closure_1_2[10]);
+        obj = { gameId, gameProfileModalChecks: obj, source: state(closure_1_2[11]).GameProfileSources.GameMention, sourceUserId: state.authorId };
         obj = { shouldOpenGameProfile: true, gameId };
         obj.openGameProfileModal(obj);
       };
@@ -96,10 +96,10 @@ export default function MarkupGameMention(state) {
     const obj4 = { variant: "text-sm/medium", style: null, children: null };
     obj4[1] = tmp.chipText;
     obj4[2] = gameName;
-    items1[1] = callback(tmp2(4734).Text, obj4);
+    items1[1] = callback(tmp2(4739).Text, obj4);
     obj3[4] = items1;
-    return closure_3(tmp2(4766).MarkupText, obj3, state.key);
+    return closure_3(tmp2(4771).MarkupText, obj3, state.key);
   }
   tmp7 = gameId;
-  const tmp8 = gameId(4507);
+  const tmp8 = gameId(4511);
 };

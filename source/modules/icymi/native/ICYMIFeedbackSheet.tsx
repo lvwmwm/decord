@@ -1,58 +1,60 @@
-// Module ID: 15731
-// Function ID: 15732
+// Module ID: 15800
+// Function ID: 15801
 // Name: ICYMIFeedbackSheet
-// Dependencies: [19, 21, 10832, 1236, 9065, 9057, 2]
+// Dependencies: [19, 21, 10871, 1236, 9102, 9094, 2]
 // Exports: default
 
-// Module 15731 (ICYMIFeedbackSheet)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15800 (ICYMIFeedbackSheet)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import DEFAULT_UX_VARIATION from "DEFAULT_UX_VARIATION" /* 9102 */;
+import closeActionSheetDefault from "closeActionSheet" /* 10871 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-let result = require("closeActionSheet").fileFinishedImporting("modules/icymi/native/ICYMIFeedbackSheet.tsx");
+require = arg1;
+noopAll;
+let result = require("set").fileFinishedImporting("modules/icymi/native/ICYMIFeedbackSheet.tsx");
 
 export default function ICYMIFeedbackSheet() {
   let obj = { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, otherKey: "other", trackOpen: null, feedbackReasons: null, trackReport: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["ppfH9+"]);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl2.string(require(1236) /* getSystemLocale */.t["ePk/Cf"]);
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[4] = intl3.string(require(1236) /* getSystemLocale */.t.sBOuOf);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["ppfH9+"]);
+  const intl2 = getSystemLocale.intl;
+  obj[3] = intl2.string(getSystemLocale.t["ePk/Cf"]);
+  const intl3 = getSystemLocale.intl;
+  obj[4] = intl3.string(getSystemLocale.t.sBOuOf);
   obj = { label: null, value: "irrelevant_content" };
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl4.string(require(1236) /* getSystemLocale */.t.F6TmZA);
+  const intl4 = getSystemLocale.intl;
+  obj[0] = intl4.string(getSystemLocale.t.F6TmZA);
   let items = [obj, , , , ];
   obj = { label: null, value: "not_enough_content" };
-  const intl5 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl5.string(require(1236) /* getSystemLocale */.t.voWAzi);
+  const intl5 = getSystemLocale.intl;
+  obj[0] = intl5.string(getSystemLocale.t.voWAzi);
   items[1] = obj;
-  const obj1 = { label: null, value: "too_much_content" };
-  const intl6 = require(1236) /* getSystemLocale */.intl;
-  obj1[0] = intl6.string(require(1236) /* getSystemLocale */.t.Ay8iwx);
+  obj1 = { label: null, value: "too_much_content" };
+  const intl6 = getSystemLocale.intl;
+  obj1[0] = intl6.string(getSystemLocale.t.Ay8iwx);
   items[2] = obj1;
   const obj2 = { label: null, value: "laggy" };
-  const intl7 = require(1236) /* getSystemLocale */.intl;
-  obj2[0] = intl7.string(require(1236) /* getSystemLocale */.t["Yu+52W"]);
+  const intl7 = getSystemLocale.intl;
+  obj2[0] = intl7.string(getSystemLocale.t["Yu+52W"]);
   items[3] = obj2;
   items[4] = { label: "Other", value: "other" };
   obj[5] = items;
-  obj[7] = require(9065) /* DEFAULT_UX_VARIATION */.ICYMIAnalytics.trackFeedFeedbackPromptViewed;
+  obj[7] = DEFAULT_UX_VARIATION.ICYMIAnalytics.trackFeedFeedbackPromptViewed;
   obj[8] = ["other"];
   obj[9] = function trackReport(reason) {
-    let obj = callback2(9057);
+    let obj = callback2(9094);
     obj.giveFeedback();
-    const ICYMIAnalytics = callback(9065).ICYMIAnalytics;
+    const ICYMIAnalytics = callback(9102).ICYMIAnalytics;
     let tmp2;
     if (null != reason.reason) {
       const items = [reason.reason.value];
       tmp2 = items;
     }
-    obj = { reason_descriptions: tmp2, rating: null, user_feedback: null };
-    const rating = reason.rating;
-    obj[1] = rating;
-    obj[2] = reason.feedback;
+    obj = { reason_descriptions: tmp2, rating, user_feedback: reason.feedback };
+    rating = reason.rating;
     const result = ICYMIAnalytics.trackFeedFeedbackSubmitted(obj);
   };
-  return jsx(importDefault(10832), { label: null, value: "not_enough_content" });
+  return jsx(closeActionSheetDefault, { label: null, value: "not_enough_content" });
 };

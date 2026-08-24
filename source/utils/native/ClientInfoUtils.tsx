@@ -5,15 +5,19 @@
 // Exports: getBuildNumberLabel, getConstants
 
 // Module 1626 (getConstants)
-import { NativeModules } from "get ActivityIndicator";
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import set2 from "set" /* 500 */;
+import enforcingDefault from "enforcing" /* 672 */;
 
-const result = require("enforcing").fileFinishedImporting("utils/native/ClientInfoUtils.tsx");
+const NativeModules = get_ActivityIndicator.NativeModules;
+const result = set.fileFinishedImporting("utils/native/ClientInfoUtils.tsx");
 
 export const getConstants = function getConstants() {
   if (obj.isAndroid()) {
-    if (null === importDefault(672)) {
+    if (null === enforcingDefault) {
       const _Error = Error;
-      const error = new Error("Turbo module RTNClientInfoManager is undefined for Android");
+      error = new Error("Turbo module RTNClientInfoManager is undefined for Android");
       throw error;
     } else {
       return tmp3(672).getConstants();
@@ -23,14 +27,14 @@ export const getConstants = function getConstants() {
     const InfoDictionaryManager = NativeModules.InfoDictionaryManager;
     return InfoDictionaryManager.getConstants();
   }
-  obj = require(500) /* set */;
+  obj = set2;
 };
 export const getBuildNumberLabel = function getBuildNumberLabel() {
   const items = ["0", "123456", "1234567890"];
-  let str = "6244";
-  if (items.includes("6244")) {
+  let str = "6266";
+  if (items.includes("6266")) {
     const _HermesInternal = HermesInternal;
-    str = "dev (" + "6244" + ")";
+    str = "dev (" + "6266" + ")";
   }
   return str;
 };

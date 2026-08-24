@@ -6,10 +6,10 @@
 // Module 20 (noop)
 class Component {
   constructor(arg0, arg1, arg2) {
-    obj = { props: arg0, context: arg1, refs: Object };
+    obj = { props: arg0, context: arg1, refs: closure_10 };
     tmp = arg2;
     if (!arg2) {
-      tmp = iterator;
+      tmp = closure_8;
     }
     obj.updater = tmp;
     return;
@@ -43,10 +43,10 @@ class ComponentDummy {
 }
 class PureComponent {
   constructor(arg0, arg1, arg2) {
-    obj = { props: arg0, context: arg1, refs: Object };
+    obj = { props: arg0, context: arg1, refs: closure_10 };
     tmp = arg2;
     if (!arg2) {
-      tmp = iterator;
+      tmp = closure_8;
     }
     obj.updater = tmp;
     return;
@@ -73,7 +73,7 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
           if ("object" === tmp4) {
             const $$typeof = tmp2.$$typeof;
             flag = true;
-            if (closure_0 !== $$typeof) {
+            if (c0 !== $$typeof) {
               flag = true;
               if (closure_1 !== $$typeof) {
                 flag = false;
@@ -99,7 +99,7 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
           tmp50 = null !== element;
         }
         if (tmp50) {
-          tmp50 = element.$$typeof === closure_0;
+          tmp50 = element.$$typeof === c0;
         }
         let tmp51 = element;
         if (tmp50) {
@@ -114,8 +114,8 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
           }
           const _HermesInternal = HermesInternal;
           const props = element.props;
-          const obj = { $$typeof: null, type: null, key: null, ref: null, props: null };
-          obj[0] = closure_0;
+          obj = { $$typeof: null, type: null, key: null, ref: null, props: null };
+          obj[0] = c0;
           obj[1] = element.type;
           obj[2] = arg2 + str18 + arg3;
           let tmp56 = null;
@@ -135,8 +135,8 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
           const text1 = `.${tmp45}`;
         }
         const text2 = `${tmp2.key}`;
-        closure_0 = { "=": "=0", ":": "=2" };
-        let text3 = `$${`${tmp2.key}`.replace(/[=:]/g, (arg0) => tmp2[arg0])}`;
+        c0 = { "=": "=0", ":": "=2" };
+        let text3 = `$${`${tmp2.key}`.replace(/[=:]/g, (arg0) => _null[arg0])}`;
       }
       text3 = 0.toString(36);
     }
@@ -158,14 +158,14 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
             if (null !== tmp35) {
               if (null != tmp35.key) {
                 let text4 = `${tmp35.key}`;
-                closure_0 = { "=": "=0", ":": "=2" };
-                let text5 = `$${`${tmp35.key}`.replace(/[=:]/g, (arg0) => tmp2[arg0])}`;
+                c0 = { "=": "=0", ":": "=2" };
+                let text5 = `$${`${tmp35.key}`.replace(/[=:]/g, (arg0) => _null[arg0])}`;
                 let num14 = 0;
                 let tmp40 = tmp35;
                 let tmp41 = items;
                 let tmp42 = arg2;
                 let tmp43 = arg4;
-                num13 = num13 + tmp34(tmp35, items, arg2, str5 + `$${`${tmp35.key}`.replace(/[=:]/g, (arg0) => tmp2[arg0])}`, arg4);
+                num13 = num13 + tmp34(tmp35, items, arg2, str5 + `$${`${tmp35.key}`.replace(/[=:]/g, (arg0) => _null[arg0])}`, arg4);
                 num12 = num12 + 1;
                 num7 = num13;
                 if (num12 >= tmp2.length) {
@@ -212,15 +212,15 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
               if (null !== value) {
                 if (null != value.key) {
                   let text6 = `${value2.key}`;
-                  closure_0 = { "=": "=0", ":": "=2" };
-                  let text7 = `$${`${value2.key}`.replace(/[=:]/g, (arg0) => tmp2[arg0])}`;
+                  c0 = { "=": "=0", ":": "=2" };
+                  let text7 = `$${`${value2.key}`.replace(/[=:]/g, (arg0) => _null[arg0])}`;
                   num5 = num5 + 1;
                   let num8 = 0;
                   let tmp30 = value;
                   let tmp31 = items;
                   let tmp32 = arg2;
                   let tmp33 = arg4;
-                  num6 = num6 + tmp25(value, items, arg2, str5 + `$${`${value2.key}`.replace(/[=:]/g, (arg0) => tmp2[arg0])}`, arg4);
+                  num6 = num6 + tmp25(value, items, arg2, str5 + `$${`${value2.key}`.replace(/[=:]/g, (arg0) => _null[arg0])}`, arg4);
                   let iter3 = iter.next();
                   iter2 = iter3;
                   num7 = num6;
@@ -237,7 +237,7 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
         num7 = 0;
         if (typeof element === "object") {
           if (typeof tmp2.then === "function") {
-            closure_0 = tmp2;
+            c0 = tmp2;
             const status = tmp2.status;
             if ("fulfilled" === status) {
               value = tmp2.value;
@@ -249,12 +249,12 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
               } else {
                 tmp2.status = "pending";
                 tmp2.then((value) => {
-                  if ("pending" === tmp2.status) {
+                  if ("pending" === _null.status) {
                     tmp.status = "fulfilled";
                     tmp.value = value;
                   }
                 }, (reason) => {
-                  if ("pending" === tmp2.status) {
+                  if ("pending" === _null.status) {
                     tmp.status = "rejected";
                     tmp.reason = reason;
                   }
@@ -287,7 +287,7 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
   }
 }
 function lazyInitializer(_status) {
-  let closure_0 = _status;
+  closure_0 = _status;
   if (-1 === _status._status) {
     const _resultResult = _status._result();
     _resultResult.then((_result) => {
@@ -390,65 +390,65 @@ let closure_18 = typeof reportError === "function" ? reportError : ((obj) => {
 arg5.Activity = Symbol.for("react.activity");
 arg5.Children = {
   map: function mapChildren(element) {
-    let closure_0 = arg1;
-    let closure_1 = arg2;
+    closure_0 = arg1;
+    closure_1 = arg2;
     if (null == element) {
       return element;
     } else {
       const items = [];
-      let c2 = 0;
+      c2 = 0;
       mapIntoArray(element, items, "", "", (arg0) => {
-        const call = f66216.call;
-        let closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f66216(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
+        const call = f66772.call;
+        closure_2 = tmp3 + 1;
+        return typeof call === "unknown" ? f66772(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
       });
       return items;
     }
   },
   forEach(element) {
-    const f66214 = function() {
+    const f66770 = function() {
       const self = this;
-      const apply = f66214.apply;
+      const apply = f66770.apply;
       if (typeof apply === "unknown") {
         HermesBuiltin.applyArguments(self);
       } else {
         apply(self, arguments);
       }
     };
-    let closure_1 = arg2;
+    closure_1 = arg2;
     if (null != element) {
-      let c2 = 0;
+      c2 = 0;
       mapIntoArray(element, [], "", "", (arg0) => {
-        const call = f66216.call;
-        let closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f66216(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
+        const call = f66772.call;
+        closure_2 = tmp3 + 1;
+        return typeof call === "unknown" ? f66772(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
       });
     }
   },
   count(element) {
-    const f66215 = () => {
+    const f66771 = () => {
       closure_0 = closure_0 + 1;
     };
     if (null != element) {
-      let c2 = 0;
+      c2 = 0;
       mapIntoArray(element, [], "", "", (arg0) => {
-        const call = f66216.call;
-        let closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f66216(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
+        const call = f66772.call;
+        closure_2 = tmp3 + 1;
+        return typeof call === "unknown" ? f66772(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
       });
     }
-    return f66215;
+    return f66771;
   },
   toArray(element) {
-    const f66216 = (arg0) => arg0;
+    const f66772 = (arg0) => arg0;
     let items1 = element;
     if (null != element) {
       const items = [];
-      let c2 = 0;
+      c2 = 0;
       mapIntoArray(element, items, "", "", (arg0) => {
-        const call = f66216.call;
-        let closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f66216(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
+        const call = f66772.call;
+        closure_2 = tmp3 + 1;
+        return typeof call === "unknown" ? f66772(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
       });
       items1 = items;
     }
@@ -497,7 +497,7 @@ obj2[0] = function c(arg0) {
 };
 arg5.__COMPILER_RUNTIME = obj2;
 arg5.cache = (arg0) => {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return () => {
     const apply = closure_0.apply;
     if (typeof apply === "unknown") {
@@ -569,7 +569,7 @@ arg5.cloneElement = (props, key, children) => {
       }
       tmp18.children = ArrayResult;
     }
-    const obj = { $$typeof: null, type: null, key: null, ref: null, props: null };
+    obj = { $$typeof: null, type: null, key: null, ref: null, props: null };
     obj[0] = closure_0;
     obj[1] = props.type;
     obj[2] = tmp3;
@@ -583,14 +583,14 @@ arg5.cloneElement = (props, key, children) => {
   }
 };
 arg5.createContext = (_currentValue) => {
-  let obj = { $$typeof: closure_3, _currentValue, _currentValue2: _currentValue, _threadCount: 0, Provider: null, Consumer: null };
+  obj = { $$typeof: closure_3, _currentValue, _currentValue2: _currentValue, _threadCount: 0, Provider: null, Consumer: null };
   obj.Provider = obj;
   obj = { $$typeof: closure_2, _context: obj };
   obj.Consumer = obj;
   return obj;
 };
 arg5.createElement = (defaultProps, key, children) => {
-  let obj = {};
+  obj = {};
   let tmp2 = null;
   if (null != key) {
     let text = null;
@@ -667,7 +667,7 @@ arg5.lazy = (_result) => {
   return obj;
 };
 arg5.memo = (type) => {
-  const obj = { $$typeof: closure_5, type, compare: null };
+  obj = { $$typeof: closure_5, type, compare: null };
   let tmp = null;
   if (undefined !== arg1) {
     tmp = arg1;

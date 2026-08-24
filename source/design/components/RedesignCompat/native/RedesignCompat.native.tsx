@@ -1,14 +1,14 @@
-// Module ID: 6939
-// Function ID: 6940
+// Module ID: 6977
+// Function ID: 6978
 // Name: context
 // Dependencies: [19, 21, 2]
 // Exports: RedesignCompat
 
-// Module 6939 (context)
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 6977 (context)
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const context = require("noop").createContext(false);
+const context = importAllResult.createContext(false);
 const result = require("set").fileFinishedImporting("design/components/RedesignCompat/native/RedesignCompat.native.tsx");
 
 export const RedesignCompatContext = context;

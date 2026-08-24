@@ -5,16 +5,17 @@
 // Exports: default
 
 // Module 252 (children)
-import "noop";
-import { jsx } from "jsxProd";
+import noopAll from "noop" /* 19 */;
+import ViewDefault from "View" /* 108 */;
+import RootTagContext from "RootTagContext" /* 253 */;
+import get_hairlineWidthDefault from "get hairlineWidth" /* 254 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-let closure_4 = require("get hairlineWidth").create({ root: { flex: 1 } });
+require = arg1;
+noopAll;
+let closure_4 = get_hairlineWidthDefault.create({ root: { flex: 1 } });
 
 export default function _default(rootTag) {
-  let WrapperComponent;
-  let children;
-  let rootViewStyle;
   ({ children, WrapperComponent, rootViewStyle } = rootTag);
   let tmp2 = children;
   if (null != WrapperComponent) {
@@ -23,12 +24,11 @@ export default function _default(rootTag) {
     obj[1] = children;
     tmp2 = <WrapperComponent initialProps={null}>{null}</WrapperComponent>;
   }
-  obj = { value: null, children: null };
-  obj[0] = require(253) /* RootTagContext */.createRootTag(rootTag.rootTag);
-  const obj3 = require(253) /* RootTagContext */;
+  obj = { value: RootTagContext.createRootTag(rootTag.rootTag), children: null };
+  const obj3 = RootTagContext;
   if (!rootViewStyle) {
     rootViewStyle = root.root;
   }
-  obj[1] = jsx(importDefault(108), { style: rootViewStyle, pointerEvents: "box-none", children: tmp2 });
-  return jsx(require(253) /* RootTagContext */.RootTagContext.Provider, { value: null, children: null });
+  obj[1] = jsx(ViewDefault, { style: rootViewStyle, pointerEvents: "box-none", children: tmp2 });
+  return jsx(RootTagContext.RootTagContext.Provider, { value: RootTagContext.createRootTag(rootTag.rootTag), children: null });
 };

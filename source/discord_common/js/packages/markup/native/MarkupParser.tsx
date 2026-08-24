@@ -1,12 +1,14 @@
-// Module ID: 6903
-// Function ID: 6904
+// Module ID: 6941
+// Function ID: 6942
 // Name: saferParse
-// Dependencies: [6904, 4092, 2]
+// Dependencies: [6942, 4095, 2]
 
-// Module 6903 (saferParse)
+// Module 6941 (saferParse)
+import set from "set" /* 2 */;
+import tDefault from "t" /* 4095 */;
+import collectAst from "collectAst" /* 6942 */;
+
 function saferParse(arg0, arg1, inline) {
-  let ast;
-  let hasBailedAst;
   let text = arg1;
   let tmp6 = arg3;
   if (arg3 === undefined) {
@@ -19,10 +21,10 @@ function saferParse(arg0, arg1, inline) {
   `;
     }
     const tmp8 = arg0(text, inline);
-    const flattenAstResult = require(6904) /* collectAst */.flattenAst(inline, tmp8);
-    const obj = require(6904) /* collectAst */;
-    const obj2 = require(6904) /* collectAst */;
-    ({ hasBailedAst, ast } = require(6904) /* collectAst */.constrainAst(flattenAstResult));
+    const flattenAstResult = collectAst.flattenAst(inline, tmp8);
+    const obj = collectAst;
+    const obj2 = collectAst;
+    ({ hasBailedAst, ast } = collectAst.constrainAst(flattenAstResult));
     if (tmp6) {
       ast = tmp6(ast, inline.inline, hasBailedAst);
     }
@@ -36,11 +38,11 @@ function saferParse(arg0, arg1, inline) {
     hasBailedAst = false;
   }
 }
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/markup/native/MarkupParser.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/markup/native/MarkupParser.tsx");
 
 export default {
   astParserFor(importDefaultResultResult) {
-    let closure_0 = importDefault(4092).parserFor(importDefaultResultResult);
+    closure_0 = tDefault.parserFor(importDefaultResultResult);
     return (arg0, inline) => {
       let str = arg0;
       if (arg0 === undefined) {
@@ -56,14 +58,14 @@ export default {
       }
       obj = { inline };
       const merged = Object.assign(obj);
-      return outer1_3(closure_0, str, obj, tmp, !inline);
+      return closure_1_3(closure_0, str, obj, tmp, !inline);
     };
   },
   reactParserFor(importDefaultResultResult) {
-    let closure_0 = importDefault(4092).parserFor(importDefaultResultResult);
-    let obj = importDefault(4092);
-    const obj2 = importDefault(4092);
-    importDefault = obj2.reactFor(importDefault(4092).ruleOutput(importDefaultResultResult, "react"));
+    closure_0 = tDefault.parserFor(importDefaultResultResult);
+    let obj = tDefault;
+    const obj2 = tDefault;
+    importDefault = obj2.reactFor(tDefault.ruleOutput(importDefaultResultResult, "react"));
     return () => {
       let str = arg0;
       if (arg0 === undefined) {
@@ -95,13 +97,13 @@ export default {
               hasItem = message.includes("Cannot convert undefined");
             }
             if (hasItem) {
-              const markupParserNodeTypeError = new outer1_0(outer1_2[0]).MarkupParserNodeTypeError(tmp);
+              const markupParserNodeTypeError = new closure_1_0(closure_1_2[0]).MarkupParserNodeTypeError(tmp);
               throw markupParserNodeTypeError;
             } else {
               throw tmp4;
             }
           }
-        })(outer1_3(closure_0, str, obj, tmp, !flag), obj);
+        })(closure_1_3(closure_0, str, obj, tmp, !flag), obj);
       } else {
         return null;
       }

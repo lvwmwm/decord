@@ -1,26 +1,19 @@
-// Module ID: 13543
-// Function ID: 13544
+// Module ID: 13601
+// Function ID: 13602
 // Name: Badge
-// Dependencies: [19, 17, 1994, 676, 1299, 21, 4661, 712, 500, 1363, 589, 4734, 1898, 8115, 2]
+// Dependencies: [19, 17, 1995, 676, 1299, 21, 4668, 712, 500, 1363, 589, 4739, 1898, 8154, 2]
 // Exports: MaskedBadge
 
-// Module 13543 (Badge)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import _getSystemLocale from "_getSystemLocale";
-import PX_16 from "PX_16";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import set from "set";
-import { space } from "Themes";
-import set from "set";
-import set from "set";
-import set from "_getSystemLocale";
+// Module 13601 (Badge)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "_getSystemLocale" /* 1995 */;
+import PX_16 from "PX_16" /* 1299 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import set from "set" /* 500 */;
 
-let BADGE_PADDING;
-let BADGE_SIZE;
-let closure_6;
-let error;
 let require = arg1;
 class Badge {
   constructor(arg0) {
@@ -59,9 +52,9 @@ class Badge {
       flag4 = false;
     }
     c4 = flag4;
-    c5 = undefined;
-    items2 = jsx();
-    c5 = items2;
+    closure_5 = undefined;
+    items2 = closure_11();
+    closure_5 = items2;
     tmp = closure_0;
     tmp2 = c2;
     obj = require("AccessibilityAnnouncer");
@@ -79,7 +72,7 @@ class Badge {
     }
     tmpResult = require("initialize");
     items = [];
-    items[0] = c5;
+    items[0] = closure_5;
     stateFromStores = tmpResult.useStateFromStores(items, () => items2.locale);
     items1 = [, , , , , ];
     items1[0] = items2;
@@ -129,7 +122,7 @@ class Badge {
         items4[0] = items2.badgeText;
         items4[1] = textStyle;
         obj3[0] = items4;
-        tmp11 = require("module_8115");
+        tmp11 = require("module_8154");
         tmpResult2 = require("shortenAndLocalizeNumber");
         tmp12 = globalThis;
         _Math = Math;
@@ -147,9 +140,10 @@ class Badge {
 const BADGE_SIZE_UNREAD = PX_16.BADGE_SIZE_UNREAD;
 createCacheKey = { badgeMask: createCacheKey, badge: null, badgeText: null, experimentalBadgeText: null, noCount: null, unread: null, mention: null, lowImportanceMention: null, eventsMentionBadge: null };
 createCacheKey = { position: "absolute", bottom: -BADGE_PADDING, right: -BADGE_PADDING, padding: BADGE_PADDING, zIndex: 1 };
-createCacheKey[1] = { paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: require("Themes").space.PX_8, justifyContent: "center", alignItems: "center", overflow: "hidden" };
-let obj2 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: require("Themes").colors.WHITE, fontSize: 12, lineHeight: null, fontFamily: null, textAlign: "center", textAlignVertical: null };
+createCacheKey[1] = { paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: ThemesDefault.space.PX_8, justifyContent: "center", alignItems: "center", overflow: "hidden" };
+let obj2 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: ThemesDefault.colors.WHITE, fontSize: 12, lineHeight: null, fontFamily: null, textAlign: "center", textAlignVertical: null };
 set = set.isAndroid();
+const space = ThemesDefault.space;
 obj2[3] = set ? space.PX_12 : space.PX_16;
 obj2[4] = require("ME").Fonts.PRIMARY_BOLD;
 let str;
@@ -158,10 +152,10 @@ if (set.isAndroid()) {
 }
 obj2[6] = str;
 createCacheKey[2] = obj2;
-const obj3 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: require("Themes").colors.WHITE };
+const obj3 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: ThemesDefault.colors.WHITE };
 if (set.isAndroid()) {
   const obj4 = { lineHeight: null, textAlignVertical: "center" };
-  obj4[0] = require("Themes").space.PX_12;
+  obj4[0] = ThemesDefault.space.PX_12;
   set = obj4;
 } else {
   set = {};
@@ -169,41 +163,32 @@ if (set.isAndroid()) {
 set = Object.assign(set);
 obj3.textAlign = "center";
 createCacheKey[3] = obj3;
-set = { width: 5, height: 5, borderRadius: 2.5, backgroundColor: require("Themes").colors.WHITE };
+set = { width: 5, height: 5, borderRadius: 2.5, backgroundColor: ThemesDefault.colors.WHITE };
 createCacheKey[4] = set;
-let obj1 = { paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: require("Themes").space.PX_8, justifyContent: "center", alignItems: "center", overflow: "hidden" };
-createCacheKey[5] = { backgroundColor: require("Themes").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
-set = { backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_NOTIFICATION };
+let obj1 = { paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: ThemesDefault.space.PX_8, justifyContent: "center", alignItems: "center", overflow: "hidden" };
+createCacheKey[5] = { backgroundColor: ThemesDefault.colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
+set = { backgroundColor: ThemesDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION };
 createCacheKey[6] = set;
-const obj7 = { backgroundColor: require("Themes").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
-createCacheKey[7] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
-const obj9 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
-createCacheKey[8] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj7 = { backgroundColor: ThemesDefault.colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
+createCacheKey[7] = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG };
+const obj9 = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG };
+createCacheKey[8] = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG };
+let closure_11 = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("design/void/Badge/native/Badge.tsx");
 
 export default Badge;
 export const MaskedBadge = function MaskedBadge(maskStyle) {
-  let accessibilityElementsHidden;
-  let accessibilityLabel;
-  let dotStyle;
-  let hideCount;
-  let importantForAccessibility;
-  let maxValue;
-  let onLayout;
-  let style;
-  let textStyle;
   maskStyle = maskStyle.maskStyle;
   const value = maskStyle.value;
-  const importDefault = value;
+  importDefault = value;
   let flag = maskStyle.unreadIndicator;
   ({ style, dotStyle, textStyle, maxValue, accessibilityLabel, accessibilityElementsHidden, importantForAccessibility, onLayout, hideCount } = maskStyle);
   if (flag === undefined) {
     flag = false;
   }
-  let c3;
-  const tmp = createCacheKey();
-  c3 = tmp;
+  closure_3 = undefined;
+  const tmp = callback();
+  closure_3 = tmp;
   let items = [tmp, maskStyle, flag, value];
   if (value > 0) {
     let obj = { pointerEvents: "none", style: null, onLayout: null, children: null };

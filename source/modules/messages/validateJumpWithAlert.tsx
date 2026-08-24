@@ -1,46 +1,49 @@
-// Module ID: 12724
-// Function ID: 12725
+// Module ID: 12779
+// Function ID: 12780
 // Name: validateJumpWithAlert
-// Dependencies: [1391, 4021, 4030, 676, 4827, 1236, 5231, 2]
+// Dependencies: [1391, 4024, 4033, 676, 4832, 1236, 5236, 2]
 // Exports: default
 
-// Module 12724 (validateJumpWithAlert)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import { Permissions } from "ME";
+// Module 12779 (validateJumpWithAlert)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import setDefault from "set" /* 4832 */;
+import isSpamSupported from "isSpamSupported" /* 5236 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import { Permissions } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/messages/validateJumpWithAlert.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/messages/validateJumpWithAlert.tsx");
 
 export default function validateJumpWithAlert(author) {
   let obj = blockedForMessage;
   if (blockedForMessage.isBlockedForMessage(author)) {
     obj = { title: null, body: null, confirmText: null };
-    const intl11 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl11.string(require(1236) /* getSystemLocale */.t["j7eA/g"]);
-    const intl12 = require(1236) /* getSystemLocale */.intl;
+    const intl11 = getSystemLocale.intl;
+    obj[0] = intl11.string(getSystemLocale.t["j7eA/g"]);
+    const intl12 = getSystemLocale.intl;
     obj = { name: null };
     obj[0] = author.author.username;
-    obj[1] = intl12.formatToPlainString(require(1236) /* getSystemLocale */.t.dTNNgr, obj);
-    const intl13 = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl13.string(require(1236) /* getSystemLocale */.t.BddRzS);
-    importDefault(4827).show(obj);
+    obj[1] = intl12.formatToPlainString(getSystemLocale.t.dTNNgr, obj);
+    const intl13 = getSystemLocale.intl;
+    obj[2] = intl13.string(getSystemLocale.t.BddRzS);
+    setDefault.show(obj);
     return false;
   } else if (obj.isIgnoredForMessage(author)) {
-    let obj1 = { title: null, body: null, confirmText: null };
-    const intl8 = require(1236) /* getSystemLocale */.intl;
-    obj1[0] = intl8.string(require(1236) /* getSystemLocale */.t.XyWoKV);
-    const intl9 = require(1236) /* getSystemLocale */.intl;
+    obj1 = { title: null, body: null, confirmText: null };
+    const intl8 = getSystemLocale.intl;
+    obj1[0] = intl8.string(getSystemLocale.t.XyWoKV);
+    const intl9 = getSystemLocale.intl;
     const obj2 = { name: null };
     obj2[0] = author.author.username;
-    obj1[1] = intl9.formatToPlainString(require(1236) /* getSystemLocale */.t["8t8doK"], obj2);
-    const intl10 = require(1236) /* getSystemLocale */.intl;
-    obj1[2] = intl10.string(require(1236) /* getSystemLocale */.t.BddRzS);
-    importDefault(4827).show(obj1);
+    obj1[1] = intl9.formatToPlainString(getSystemLocale.t["8t8doK"], obj2);
+    const intl10 = getSystemLocale.intl;
+    obj1[2] = intl10.string(getSystemLocale.t.BddRzS);
+    setDefault.show(obj1);
     return false;
   } else {
-    obj1 = require(5231) /* isSpamSupported */;
+    obj1 = isSpamSupported;
     if (obj1.isSpam(author)) {
       channel = channel.getChannel(author.channel_id);
       let isPrivateResult;
@@ -48,8 +51,8 @@ export default function validateJumpWithAlert(author) {
         isPrivateResult = channel.isPrivate();
       }
       if (!isPrivateResult) {
-        if (!getUncachedChannelPermissions.can(Permissions.MODERATE_MEMBERS, channel)) {
-          let obj3 = importDefault(4827);
+        if (!closure_4.can(Permissions.MODERATE_MEMBERS, channel)) {
+          let obj3 = setDefault;
           obj3 = { title: null, body: null, confirmText: null };
           const intl = tmp(1236).intl;
           obj3[0] = intl.string(tmp(1236).t["6vJKFk"]);
@@ -63,7 +66,7 @@ export default function validateJumpWithAlert(author) {
         }
         return false;
       }
-      let obj6 = importDefault(4827);
+      let obj6 = setDefault;
       const obj5 = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
       const intl4 = tmp(1236).intl;
       obj5[0] = intl4.string(tmp(1236).t["cZcG+P"]);

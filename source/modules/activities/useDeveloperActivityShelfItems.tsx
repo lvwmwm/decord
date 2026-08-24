@@ -1,24 +1,24 @@
-// Module ID: 11215
-// Function ID: 11216
+// Module ID: 11266
+// Function ID: 11267
 // Name: useDeveloperActivityShelfItems
-// Dependencies: [19, 7872, 4481, 589, 2]
+// Dependencies: [19, 7911, 4485, 589, 2]
 // Exports: useDeveloperActivityShelfItems
 
-// Module 11215 (useDeveloperActivityShelfItems)
-import noop from "noop";
-import initialize from "initialize";
-import { DEFAULT_EMBEDDED_ACTIVITY_CONFIG as closure_4 } from "items3";
+// Module 11266 (useDeveloperActivityShelfItems)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "initialize" /* 7911 */;
+import { DEFAULT_EMBEDDED_ACTIVITY_CONFIG as closure_4 } from "items3" /* 4485 */;
 
 const require = arg1;
-const result = require("items3").fileFinishedImporting("modules/activities/useDeveloperActivityShelfItems.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/useDeveloperActivityShelfItems.tsx");
 
 export const useDeveloperActivityShelfItems = function useDeveloperActivityShelfItems() {
-  const items = [initialize];
+  const items = [closure_3];
   const stateFromStoresObject = isEnabled(lastUsedObject[3]).useStateFromStoresObject(items, () => ({ isEnabled: store.getIsEnabled(), lastUsedObject: store.getLastUsedObject() }), []);
   isEnabled = stateFromStoresObject.isEnabled;
   lastUsedObject = stateFromStoresObject.lastUsedObject;
   let obj = isEnabled(lastUsedObject[3]);
-  const items1 = [initialize];
+  const items1 = [closure_3];
   const stateFromStoresArray = isEnabled(lastUsedObject[3]).useStateFromStoresArray(items1, () => store.getDeveloperShelfItems(), []);
   const items2 = [stateFromStoresArray, isEnabled, lastUsedObject];
   return stateFromStoresArray.useMemo(() => {

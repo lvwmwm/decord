@@ -1,17 +1,18 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7277
+// Function ID: 7278
 // Name: handleLoadThreadsSuccess
-// Dependencies: [7240, 1922, 11, 4803, 589, 709, 2]
+// Dependencies: [7278, 1922, 11, 4808, 589, 709, 2]
 
-// Module 7239 (handleLoadThreadsSuccess)
-import handleConnectionOpenOrResumed from "handleConnectionOpenOrResumed";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { Store } from "initialize";
+// Module 7277 (handleLoadThreadsSuccess)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+import closure_3 from "handleConnectionOpenOrResumed" /* 7278 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
+require = arg1;
 function handleLoadThreadsSuccess(arg0) {
-  let firstMessages;
-  let threads;
   ({ threads, firstMessages } = arg0);
   if (null == firstMessages) {
     return false;
@@ -33,15 +34,12 @@ function handleLoadThreadsSuccess(arg0) {
 function storeFirstMessage(channel_id, nextResult) {
   let messageRecord = null;
   if (null != nextResult) {
-    messageRecord = require(4803) /* createMinimalMessageRecord */.createMessageRecord(nextResult);
-    const obj = require(4803) /* createMinimalMessageRecord */;
+    messageRecord = createMinimalMessageRecord.createMessageRecord(nextResult);
+    const obj = createMinimalMessageRecord;
   }
   closure_5[channel_id] = { loaded: true, firstMessage: messageRecord };
 }
 function handleReaction(colors) {
-  let channelId;
-  let emoji;
-  let reactionType;
   ({ channelId, emoji, reactionType } = colors);
   if (null != dependencyMap[channelId]) {
     if (null != tmp5.firstMessage) {
@@ -74,11 +72,12 @@ function handleReaction(colors) {
   return false;
 }
 let closure_5 = {};
+const Store = initializeDefault.Store;
 class ForumPostMessagesStore extends Store {
 }
 const prototype = ForumPostMessagesStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(handleConnectionOpenOrResumed, mergeGuildAvatar);
+  this.waitFor(closure_3, closure_4);
 };
 prototype["isLoading"] = function isLoading(arg0) {
   let loaded;
@@ -94,22 +93,22 @@ prototype["getMessage"] = function getMessage(arg0) {
   return dependencyMap[arg0];
 };
 ForumPostMessagesStore.displayName = "ForumPostMessagesStore";
-const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"), {
+const forumPostMessagesStore = new ForumPostMessagesStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_5 = {};
+    closure_5 = {};
   },
   MESSAGE_CREATE: function handleMessageCreate(isPushNotification) {
     isPushNotification = isPushNotification.isPushNotification;
     let tmp = !isPushNotification;
     if (!isPushNotification) {
-      let obj = importDefault(11);
+      let obj = DISCORD_EPOCHDefault;
       const tmp4 = isPushNotification.message.id === obj.castChannelIdAsMessageId(isPushNotification.message.channel_id);
       if (tmp4) {
         const message = isPushNotification.message;
         let messageRecord = null;
         if (null != message) {
-          messageRecord = require(4803) /* createMinimalMessageRecord */.createMessageRecord(message);
-          const obj2 = require(4803) /* createMinimalMessageRecord */;
+          messageRecord = createMinimalMessageRecord.createMessageRecord(message);
+          const obj2 = createMinimalMessageRecord;
         }
         obj = { loaded: true, firstMessage: null };
         obj[1] = messageRecord;
@@ -123,18 +122,18 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
     if (message.message.id !== message.message.channel_id) {
       return false;
     } else {
-      const obj4 = importDefault(11);
+      const obj4 = DISCORD_EPOCHDefault;
       const tmp12 = dependencyMap[obj4.castMessageIdAsChannelId(obj4, message.message.id)];
       let tmp8 = null != tmp12;
       if (tmp8) {
         if (null != tmp12.firstMessage) {
           const obj = {};
-          const result = importDefault(11).castMessageIdAsChannelId(message.message.id);
+          const result = DISCORD_EPOCHDefault.castMessageIdAsChannelId(message.message.id);
           const merged = Object.assign(tmp12);
-          const tmp10Result = importDefault(11);
-          obj.firstMessage = require(4803) /* createMinimalMessageRecord */.updateMessageRecord(tmp12.firstMessage, message.message);
+          const tmp10Result = DISCORD_EPOCHDefault;
+          obj.firstMessage = createMinimalMessageRecord.updateMessageRecord(tmp12.firstMessage, message.message);
           dependencyMap[result] = obj;
-          const obj3 = require(4803) /* createMinimalMessageRecord */;
+          const obj3 = createMinimalMessageRecord;
         }
         tmp8 = tmp;
       }
@@ -147,7 +146,7 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
     } else {
       closure_5[id.channelId] = { loaded: true, firstMessage: null };
     }
-    obj = importDefault(11);
+    obj = DISCORD_EPOCHDefault;
   },
   THREAD_CREATE: function handleThreadCreate(channel) {
     let tmp = null == dependencyMap[channel.channel.id];
@@ -181,8 +180,6 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
     return tmp2;
   },
   MESSAGE_REACTION_REMOVE_EMOJI: function handleRemoveEmojiReactions(channelId) {
-    let emoji;
-    let messageId;
     channelId = channelId.channelId;
     let tmp2 = null != tmp;
     ({ messageId, emoji } = channelId);
@@ -232,7 +229,7 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
       if (null != first_message) {
         let tmp = require;
         let tmp2 = dependencyMap;
-        let obj = require(4803) /* createMinimalMessageRecord */;
+        let obj = createMinimalMessageRecord;
         messageRecord = obj.createMessageRecord(first_message);
       }
       let tmp4 = closure_5;
@@ -245,22 +242,20 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
   LOAD_THREADS_SUCCESS: handleLoadThreadsSuccess,
   LOAD_ARCHIVED_THREADS_SUCCESS: handleLoadThreadsSuccess,
   LOAD_MESSAGES_SUCCESS: function handleLoadMessagesSuccess(arg0) {
-    let channelId;
-    let messages;
     ({ channelId, messages } = arg0);
     let tmp2 = null != tmp;
     if (tmp2) {
-      let obj = importDefault(11);
+      let obj = DISCORD_EPOCHDefault;
       tmp2 = tmp.id === obj.castChannelIdAsMessageId(channelId);
     }
     if (tmp2) {
       obj = { loaded: true, firstMessage: null };
-      obj[1] = require(4803) /* createMinimalMessageRecord */.createMessageRecord(tmp);
+      obj[1] = createMinimalMessageRecord.createMessageRecord(tmp);
       closure_5[channelId] = obj;
-      const obj3 = require(4803) /* createMinimalMessageRecord */;
+      const obj3 = createMinimalMessageRecord;
     }
   }
 });
-let result = require("DISCORD_EPOCH").fileFinishedImporting("modules/forums/ForumPostMessagesStore.tsx");
+let result = require("set").fileFinishedImporting("modules/forums/ForumPostMessagesStore.tsx");
 
 export default forumPostMessagesStore;

@@ -4,13 +4,15 @@
 // Dependencies: [52, 53]
 
 // Module 51 (normalizeColor)
-const require = arg1;
+import PlatformColor from "PlatformColor" /* 52 */;
+
+require = arg1;
 const module = arg2;
 const dependencyMap = arg6;
 arg5.default = function normalizeColor(obj) {
   if (typeof obj === "object") {
     if (null != obj) {
-      const normalizeColorObjectResult = require(52) /* PlatformColor */.normalizeColorObject(obj);
+      const normalizeColorObjectResult = PlatformColor.normalizeColorObject(obj);
       if (null != normalizeColorObjectResult) {
         return normalizeColorObjectResult;
       }

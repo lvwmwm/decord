@@ -1,14 +1,14 @@
-// Module ID: 8737
-// Function ID: 8738
+// Module ID: 8774
+// Function ID: 8775
 // Name: getOrFetchApplicationForLaunch
-// Dependencies: [5, 1391, 1390, 676, 8735, 8738, 709, 4273, 4011, 8739, 8712, 8740, 7873, 8742, 2]
+// Dependencies: [5, 1391, 1390, 676, 8772, 8775, 709, 4277, 4014, 8776, 8749, 8777, 7912, 8779, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 8737 (getOrFetchApplicationForLaunch)
-import EmbeddedActivityLocationKind from "EmbeddedActivityLocationKind";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import participantFromServer from "participantFromServer";
-import { ApplicationFlags } from "ME";
+// Module 8774 (getOrFetchApplicationForLaunch)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "participantFromServer" /* 1390 */;
+import { ApplicationFlags } from "ME" /* 676 */;
 
 const require = arg1;
 function getOrFetchApplicationForLaunch() {
@@ -24,14 +24,11 @@ function getOrFetchApplicationForLaunch() {
 function _getOrFetchApplicationForLaunch() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
       if (c8 === 2) {
         c8 = 3;
         HermesBuiltin.throwTypeError();
@@ -43,7 +40,7 @@ function _getOrFetchApplicationForLaunch() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -58,11 +55,11 @@ function _getOrFetchApplicationForLaunch() {
               obj[0] = arg1;
               return obj;
             } else {
-              let ensureGuildLoaded = tmp3;
+              closure_4 = tmp3;
               let PRIVATE_CHANNEL = tmp7;
               let callback;
               let callback2;
-              let dependencyMap;
+              dependencyMap = undefined;
               ({ applicationId: c0, channelId: c1, guildId: c2 } = callback);
               PRIVATE_CHANNEL = undefined;
               c7 = 1;
@@ -75,24 +72,24 @@ function _getOrFetchApplicationForLaunch() {
               throw arg1;
             } else if (arg0 === 2) {
               c8 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
-              let c6 = 1;
+              c6 = 1;
               c7 = 3;
               c8 = 1;
               let obj2 = { value: null, done: false };
-              obj2[0] = callback2(8735)(callback, callback2);
+              obj2[0] = callback2(8772)(callback, callback2);
               return obj2;
             }
           } else if (2 === tmp7) {
             c6 = 0;
-            ensureGuildLoaded = participantFromServer;
+            closure_4 = closure_5;
             if (null != dependencyMap) {
-              PRIVATE_CHANNEL = callback(8738).EmbeddedActivityLocationKind.GUILD_CHANNEL;
+              PRIVATE_CHANNEL = callback(8775).EmbeddedActivityLocationKind.GUILD_CHANNEL;
             } else {
-              PRIVATE_CHANNEL = callback(8738).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
+              PRIVATE_CHANNEL = callback(8775).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
             }
             obj2 = callback2(709);
             const obj3 = { type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL", nonce: "", applicationId: null, channelId: null, guildId: null, error: null, locationKind: null };
@@ -105,12 +102,12 @@ function _getOrFetchApplicationForLaunch() {
               dependencyMap = null;
             }
             obj3[4] = dependencyMap;
-            const aPIError = new callback(4273).APIError(ensureGuildLoaded);
+            const aPIError = new callback(4277).APIError(closure_4);
             obj3[5] = aPIError;
             obj3[6] = PRIVATE_CHANNEL;
             obj2.dispatch(obj3);
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c8 = 3;
             throw arg1;
@@ -128,7 +125,7 @@ function _getOrFetchApplicationForLaunch() {
             return obj;
           }
         } catch (tmp46) {
-          participantFromServer = tmp46;
+          closure_5 = tmp46;
           if (tmp4 === c6) {
             c8 = tmp2;
             throw tmp46;
@@ -141,7 +138,7 @@ function _getOrFetchApplicationForLaunch() {
     iter.next();
     return iter;
   });
-  const _getOrFetchApplicationForLaunch = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -153,13 +150,10 @@ function _getOrFetchApplicationForLaunch() {
 function _confirmActivityChange() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
       if (c3 === 2) {
         c3 = 3;
         HermesBuiltin.throwTypeError();
@@ -171,7 +165,7 @@ function _confirmActivityChange() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -202,26 +196,26 @@ function _confirmActivityChange() {
                 throw arg1;
               } else if (arg0 === 2) {
                 c3 = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else if (null != c0) {
                 const promise = new Promise((arg0) => {
                   const _undefined = arg0;
-                  const selfEmbeddedActivities = outer1_5.getSelfEmbeddedActivities();
+                  const selfEmbeddedActivities = closure_1_5.getSelfEmbeddedActivities();
                   const value = selfEmbeddedActivities.get(_undefined.id);
                   const _undefined2 = value;
                   let _location;
                   if (value != null) {
                     _location = value.location;
                   }
-                  const channel = outer1_4.getChannel(_undefined(4011).getEmbeddedActivityLocationChannelId(_location));
+                  const channel = closure_1_4.getChannel(_undefined(4014).getEmbeddedActivityLocationChannelId(_location));
                   if (null != value) {
                     if (null != channel) {
                       if (dependencyMap != null) {
                         dependencyMap();
                       }
-                      _undefined2(8739)(tmp, channel, () => {
+                      _undefined2(8776)(tmp, channel, () => {
                         let obj = value(table[10])();
                         obj = { location: value.location, applicationId: lib.id, shouldClosePopout: value };
                         obj.leaveActivity(obj);
@@ -261,7 +255,7 @@ function _confirmActivityChange() {
     iter.next();
     return iter;
   });
-  const _confirmActivityChange = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -273,15 +267,10 @@ function _confirmActivityChange() {
 function _confirmActivityAgeGate() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c2;
-      let c3;
-      let c4;
-      let closure_1;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -293,7 +282,7 @@ function _confirmActivityAgeGate() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -328,7 +317,7 @@ function _confirmActivityAgeGate() {
                 throw arg1;
               } else if (arg0 === 2) {
                 c6 = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -399,7 +388,7 @@ function _confirmActivityAgeGate() {
               if (requires_age_gate != null) {
                 if (requires_age_gate) {
                   const promise = new Promise((arg0) => {
-                    let closure_0 = arg0;
+                    closure_0 = arg0;
                     if (c4 != null) {
                       tmp();
                     }
@@ -436,7 +425,7 @@ function _confirmActivityAgeGate() {
     iter.next();
     return iter;
   });
-  const _confirmActivityAgeGate = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -448,14 +437,10 @@ function _confirmActivityAgeGate() {
 function _confirmExternalAppLaunch() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c2;
-      let c3;
-      let closure_1;
       if (constants === 2) {
         constants = 3;
         HermesBuiltin.throwTypeError();
@@ -467,7 +452,7 @@ function _confirmExternalAppLaunch() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -501,7 +486,7 @@ function _confirmExternalAppLaunch() {
                 throw arg1;
               } else if (arg0 === 2) {
                 constants = 3;
-                let obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -556,13 +541,13 @@ function _confirmExternalAppLaunch() {
                 let result = c5.hasActivityEverBeenLaunched(closure_1);
                 if (!result) {
                   result = new Promise((arg0) => {
-                    let closure_0 = arg0;
+                    closure_0 = arg0;
                     if (c3 != null) {
                       tmp();
                     }
                     let obj = _undefined(_undefined2[13]);
                     obj = {
-                      application: ensureGuildLoaded,
+                      application: closure_4,
                       onConfirm() {
                         return callback(true);
                       },
@@ -591,7 +576,7 @@ function _confirmExternalAppLaunch() {
     iter.next();
     return iter;
   });
-  const _confirmExternalAppLaunch = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -603,13 +588,13 @@ function _confirmExternalAppLaunch() {
 function _confirmActivityLaunchChecks() {
   let self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     return (function*(arg0) {
-      let c1 = tmp2;
+      c1 = tmp2;
       ({ currentEmbeddedApplication: obj7[0], shouldClosePopoutOnLeaveCurrentEmbeddedApplication: obj7[1], onConfirmActivityLaunchChecksAlertOpen: obj7[2] } = closure_0);
-      const outer1_1 = yield (function confirmActivityChange(arg0) {
+      closure_1 = yield (function confirmActivityChange(arg0) {
         const self = this;
         const apply = closure_9.apply;
         if (typeof apply === "unknown") {
@@ -619,10 +604,10 @@ function _confirmActivityLaunchChecks() {
         }
         return applyArgumentsResult;
       })({ currentEmbeddedApplication: null, shouldClosePopoutOnLeaveCurrentEmbeddedApplication: null, onConfirmActivityLaunchChecksAlertOpen: null });
-      if (!outer1_1) {
+      if (!closure_1) {
         return false;
       }
-      let c2 = yield (function confirmActivityAgeGate(closure_0) {
+      c2 = yield (function confirmActivityAgeGate(closure_0) {
         const self = this;
         const apply = closure_10.apply;
         if (typeof apply === "unknown") {
@@ -635,7 +620,7 @@ function _confirmActivityLaunchChecks() {
       if (!c2) {
         return false;
       }
-      let c3 = yield (function confirmExternalAppLaunch(closure_0) {
+      c3 = yield (function confirmExternalAppLaunch(closure_0) {
         const self = this;
         const apply = closure_11.apply;
         if (typeof apply === "unknown") {
@@ -648,7 +633,7 @@ function _confirmActivityLaunchChecks() {
       return c3;
     })();
   });
-  const _confirmActivityLaunchChecks = tmp;
+  closure_12 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -657,7 +642,7 @@ function _confirmActivityLaunchChecks() {
   }
   return applyArgumentsResult;
 }
-let result = require("participantFromServer").fileFinishedImporting("modules/activities/utils/confirmActivityLaunchChecks.tsx");
+let result = require("set").fileFinishedImporting("modules/activities/utils/confirmActivityLaunchChecks.tsx");
 
 export const confirmActivityLaunchChecks = function confirmActivityLaunchChecks(arg0) {
   const self = this;

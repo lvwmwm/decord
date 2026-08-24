@@ -1,17 +1,22 @@
-// Module ID: 7597
-// Function ID: 7598
+// Module ID: 7635
+// Function ID: 7636
 // Name: getTransformedUser
-// Dependencies: [1395, 1930, 1391, 1990, 4030, 1922, 676, 4219, 1403, 514, 5038, 7598, 1370, 1208, 12, 11, 2]
+// Dependencies: [1395, 1930, 1391, 1991, 4033, 1922, 676, 4223, 1403, 514, 5043, 7636, 1370, 1208, 12, 11, 2]
 
-// Module 7597 (getTransformedUser)
-import { isPrivate } from "createChannelRecord";
-import createdAt from "createdAt";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { UserFlags } from "ME";
-import "initialize";
+// Module 7635 (getTransformedUser)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import _modDef1208 from "module_1208" /* 1208 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import hasFlagAll from "hasFlag" /* 1403 */;
+import initializeDefault from "initialize" /* 5043 */;
+import UserSearchWorkerManager from "UserSearchWorkerManager" /* 7636 */;
+import closure_5 from "createdAt" /* 1930 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "trackCommunicationDisabled" /* 1991 */;
+import closure_8 from "markAllUserIdListsStale" /* 4033 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
 
 function getTransformedUser(author) {
   if (null != author) {
@@ -32,7 +37,7 @@ function getTransformedUser(author) {
       if (author.bot) {
         obj.isBot = true;
       }
-      if (author instanceof createdAt) {
+      if (author instanceof closure_5) {
         let isProvisional = author.isProvisional;
       } else {
         isProvisional = "flags" in author;
@@ -41,8 +46,8 @@ function getTransformedUser(author) {
           if (num == null) {
             num = 0;
           }
-          isProvisional = importAll(1403).hasFlag(num, UserFlags.PROVISIONAL_ACCOUNT);
-          const obj3 = importAll(1403);
+          isProvisional = hasFlagAll.hasFlag(num, UserFlags.PROVISIONAL_ACCOUNT);
+          const obj3 = hasFlagAll;
         }
       }
       obj.isProvisional = isProvisional;
@@ -50,7 +55,7 @@ function getTransformedUser(author) {
         obj.isFriend = true;
         obj.friendNickname = obj5.getNickname(author.id);
       }
-      if (author instanceof createdAt) {
+      if (author instanceof closure_5) {
         let isStaffResult = author.isStaff();
       } else {
         isStaffResult = "flags" in author;
@@ -59,8 +64,8 @@ function getTransformedUser(author) {
           if (num2 == null) {
             num2 = 0;
           }
-          isStaffResult = importAll(1403).hasFlag(num2, UserFlags.STAFF);
-          const obj4 = importAll(1403);
+          isStaffResult = hasFlagAll.hasFlag(num2, UserFlags.STAFF);
+          const obj4 = hasFlagAll;
         }
       }
       obj.isStaff = isStaffResult;
@@ -82,7 +87,7 @@ function setNick(nicknames) {
   }
 }
 function getDMUpdates(type) {
-  let closure_0 = type;
+  closure_0 = type;
   const items = [];
   if (null != type) {
     if (isPrivate(type.type)) {
@@ -91,7 +96,7 @@ function getDMUpdates(type) {
         recipients = [];
       }
       const item = recipients.forEach((arg0) => {
-        const tmp = outer1_12(outer1_9.getUser(arg0));
+        const tmp = closure_1_12(closure_1_9.getUser(arg0));
         if (null != channel) {
           if (null != tmp) {
             tmp.nicknames[tmp2] = null;
@@ -105,10 +110,10 @@ function getDMUpdates(type) {
   return items;
 }
 function updateMembersList(arr) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   const items = [];
   const item = arr.forEach((user) => {
-    const tmp = outer1_12(user.user);
+    const tmp = closure_1_12(user.user);
     if (null != tmp) {
       const nick = user.nick;
       if (null != tmp) {
@@ -127,8 +132,6 @@ function updateMembersList(arr) {
   return items;
 }
 function getUsersFromMessage(arg0) {
-  let message;
-  let nicknameContextId;
   ({ message, nicknameContextId } = arg0);
   nicknameContextId = undefined;
   let items;
@@ -149,7 +152,7 @@ function getUsersFromMessage(arg0) {
     const mentions = message.mentions;
     if (mentions != null) {
       const item = mentions.forEach((arg0) => {
-        const tmp = outer1_12(arg0);
+        const tmp = closure_1_12(arg0);
         if (null != tmp) {
           items.push(tmp);
           if (null != nicknameContextId) {
@@ -177,6 +180,8 @@ function getUsersFromMessage(arg0) {
     }
   }
 }
+const isPrivate = createChannelRecord.isPrivate;
+const UserFlags = ME.UserFlags;
 let closure_11 = { UPDATE_USERS: "UPDATE_USERS", USER_RESULTS: "USER_RESULTS", QUERY_SET: "QUERY_SET", QUERY_CLEAR: "QUERY_CLEAR", REQUEST_DEBUG_STATE: "REQUEST_DEBUG_STATE", DEBUG_STATE: "DEBUG_STATE" };
 class UserSearchContext {
   constructor(arg0, arg1) {
@@ -190,7 +195,7 @@ class UserSearchContext {
       data = data.data;
       let tmp = null != data;
       if (tmp) {
-        tmp = data.type === outer1_11.USER_RESULTS;
+        tmp = data.type === closure_1_11.USER_RESULTS;
       }
       if (tmp) {
         tmp = data.uuid === obj._uuid;
@@ -258,8 +263,6 @@ prototype["clearQuery"] = function clearQuery() {
   }
 };
 prototype["setQuery"] = function setQuery(closure_0) {
-  let boosterFallback;
-  let boosters;
   ({ boosters, boosterFallback } = closure_0);
   const obj = { query: closure_0.query, filters: closure_0.filters, blacklist: closure_0.blacklist, boosters: null, boosterFallback: null, limit: null };
   if (boosters == null) {
@@ -301,6 +304,7 @@ prototype["_setNextQuery"] = function _setNextQuery() {
     }
   }
 };
+initializeDefault;
 class UserSearchManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -390,18 +394,18 @@ class UserSearchManager extends tmp2 {
     };
     applyArgumentsResult._handleConnectionOpen = function _handleConnectionOpen() {
       const timerId = setTimeout(() => {
-        let obj = outer1_9;
-        const currentUser = outer1_9.getCurrentUser();
+        let obj = closure_1_9;
+        const currentUser = closure_1_9.getCurrentUser();
         if (null != currentUser) {
-          const tmp11 = outer1_12(currentUser);
+          const tmp11 = closure_1_12(currentUser);
           obj = {};
           obj[tmp11.id] = tmp11;
           const _Object2 = Object;
           const values = Object.values(obj.getUsers());
           const item = values.forEach((id) => {
-            obj[id.id] = outer1_12(id);
+            obj[id.id] = closure_1_12(id);
           });
-          const mutableAllGuildsAndMembers = outer1_7.getMutableAllGuildsAndMembers();
+          const mutableAllGuildsAndMembers = closure_1_7.getMutableAllGuildsAndMembers();
           for (const key10004 in mutableAllGuildsAndMembers) {
             let tmp17 = key10004;
             let keys = Object.keys();
@@ -418,9 +422,9 @@ class UserSearchManager extends tmp2 {
                   nick = tmp21.nick;
                 }
                 if (nick == null) {
-                  let tmp5 = outer1_1;
-                  let tmp6 = outer1_3;
-                  let obj2 = outer1_1(outer1_3[7]);
+                  let tmp5 = closure_1_1;
+                  let tmp6 = closure_1_3;
+                  let obj2 = closure_1_1(closure_1_3[7]);
                   nick = obj2.getGlobalName(tmp20);
                 }
                 if (null == tmp20) {
@@ -454,13 +458,11 @@ class UserSearchManager extends tmp2 {
     applyArgumentsResult._handleConnectionOpenSupplemental = function _handleConnectionOpenSupplemental(guilds) {
       guilds = guilds.guilds;
       const timerId = setTimeout(() => {
-        outer2_1(outer2_3[14]).flatMap(guilds, (arg0) => {
-          let closure_0;
-          let members;
+        closure_2_1(closure_2_3[14]).flatMap(guilds, (arg0) => {
           ({ members, id: closure_0 } = arg0);
           const items = [];
           const item = members.forEach((user) => {
-            const tmp = outer1_12(user.user);
+            const tmp = closure_1_12(user.user);
             if (null != tmp) {
               const nick = user.nick;
               if (null != tmp) {
@@ -478,11 +480,11 @@ class UserSearchManager extends tmp2 {
           });
           return items;
         });
-        const obj = outer2_1(outer2_3[14]);
-        const obj2 = outer2_1(outer2_3[14]);
+        const obj = closure_2_1(closure_2_3[14]);
+        const obj2 = closure_2_1(closure_2_3[14]);
         let items = [
-          ...outer2_1(outer2_3[14]).flatMap(guilds, (activity_instances) => {
-            let closure_0 = activity_instances;
+          ...closure_2_1(closure_2_3[14]).flatMap(guilds, (activity_instances) => {
+            closure_0 = activity_instances;
             const items = [];
             activity_instances = activity_instances.activity_instances;
             if (activity_instances != null) {
@@ -491,7 +493,7 @@ class UserSearchManager extends tmp2 {
                 const item = participants.forEach((member) => {
                   member = member.member;
                   if (null != member) {
-                    const tmp2 = outer1_12(member.user);
+                    const tmp2 = closure_1_12(member.user);
                     if (null != tmp2) {
                       const nick = member.nick;
                       if (null != tmp2) {
@@ -517,27 +519,25 @@ class UserSearchManager extends tmp2 {
       }, 3000);
     };
     applyArgumentsResult._handleOverlayInitialize = function _handleOverlayInitialize(arg0) {
-      let guildMembers;
-      let users;
       ({ users, guildMembers } = arg0);
       const map = new Map();
       const iter = users[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
-        let tmp2 = outer1_12;
-        let result = map.set(nextResult.id, outer1_12(nextResult));
+        let tmp2 = closure_1_12;
+        let result = map.set(nextResult.id, closure_1_12(nextResult));
         continue;
       }
-      const keys = outer1_1(outer1_3[15]).keys(guildMembers);
+      const keys = closure_1_1(closure_1_3[15]).keys(guildMembers);
       const iter2 = keys[Symbol.iterator]();
       const nextResult1 = iter2.next();
       while (iter2 !== undefined) {
         let tmp7 = guildMembers[nextResult1];
         let tmp8 = tmp7;
         if (null != tmp7) {
-          let tmp27 = outer1_1;
-          let tmp28 = outer1_3;
-          let obj3 = outer1_1(outer1_3[15]);
+          let tmp27 = closure_1_1;
+          let tmp28 = closure_1_3;
+          let obj3 = closure_1_1(closure_1_3[15]);
           let tmp29 = tmp7;
           let keys1 = obj3.keys(tmp8);
           let tmp31 = keys1;
@@ -558,11 +558,11 @@ class UserSearchManager extends tmp2 {
               tmp15 = null != tmp14.nick;
             }
             if (tmp15) {
-              let tmp18 = outer1_13;
+              let tmp18 = closure_1_13;
               let tmp19 = value;
               let tmp20 = nextResult1;
               let tmp21 = tmp14;
-              let tmp22 = outer1_13(tmp12, tmp6, tmp14.nick);
+              let tmp22 = closure_1_13(tmp12, tmp6, tmp14.nick);
               let tmp23 = item10043;
               let result1 = map.set(tmp10, tmp12);
             }
@@ -575,7 +575,7 @@ class UserSearchManager extends tmp2 {
       map.clear();
     };
     applyArgumentsResult._handleCurrentUserUpdate = function _handleCurrentUserUpdate(user) {
-      const tmp = outer1_12(user.user);
+      const tmp = closure_1_12(user.user);
       if (null != tmp) {
         const items = [tmp];
         applyArgumentsResult.updateUsers(items, "current_user_update");
@@ -587,7 +587,7 @@ class UserSearchManager extends tmp2 {
       const id = guild.id;
       const items = [];
       const item = members.forEach((user) => {
-        const tmp = outer1_12(user.user);
+        const tmp = closure_1_12(user.user);
         if (null != tmp) {
           const nick = user.nick;
           if (null != tmp) {
@@ -611,11 +611,11 @@ class UserSearchManager extends tmp2 {
       const nextResult = iter.next();
       while (iter !== undefined) {
         let push = items.push;
-        let tmp2 = outer1_15;
+        let tmp2 = closure_1_15;
         let items1 = [];
         let tmp3 = items1;
         let num = 0;
-        let arraySpreadResult = HermesBuiltin.arraySpread(outer1_15(nextResult.members, nextResult.guildId), 0);
+        let arraySpreadResult = HermesBuiltin.arraySpread(closure_1_15(nextResult.members, nextResult.guildId), 0);
         let tmp5 = push;
         let tmp6 = items1;
         let tmp7 = items;
@@ -626,7 +626,7 @@ class UserSearchManager extends tmp2 {
     };
     applyArgumentsResult._handleGuildMemberUpdate = function _handleGuildMemberUpdate(nick) {
       nick = nick.nick;
-      const tmp = outer1_12(nick.user);
+      const tmp = closure_1_12(nick.user);
       if (null != tmp) {
         if (null != tmp) {
           let tmp2 = null;
@@ -643,12 +643,10 @@ class UserSearchManager extends tmp2 {
       }
     };
     applyArgumentsResult._handlePassiveUpdateV2 = function _handlePassiveUpdateV2(arg0) {
-      let closure_0;
-      let members;
       ({ members, guildId: closure_0 } = arg0);
       const items = [];
       const item = members.forEach((user) => {
-        const tmp = outer1_12(user.user);
+        const tmp = closure_1_12(user.user);
         if (null != tmp) {
           const nick = user.nick;
           if (null != tmp) {
@@ -667,29 +665,29 @@ class UserSearchManager extends tmp2 {
       applyArgumentsResult.updateUsers(items, "passive_update_v2");
     };
     applyArgumentsResult._handleRelationshipAdd = function _handleRelationshipAdd(relationship) {
-      const items = [outer1_12(relationship.relationship.user)];
+      const items = [closure_1_12(relationship.relationship.user)];
       applyArgumentsResult.updateUsers(items, "relationship_add");
     };
     applyArgumentsResult._handleRelationshipUpdate = function _handleRelationshipUpdate(relationship) {
-      const items = [outer1_12(outer1_9.getUser(relationship.relationship.id))];
+      const items = [closure_1_12(closure_1_9.getUser(relationship.relationship.id))];
       applyArgumentsResult.updateUsers(items, "relationship_update");
     };
     applyArgumentsResult._handleRelationshipRemove = function _handleRelationshipRemove(relationship) {
-      const items = [outer1_12(outer1_9.getUser(relationship.relationship.id))];
+      const items = [closure_1_12(closure_1_9.getUser(relationship.relationship.id))];
       applyArgumentsResult.updateUsers(items, "relationship_remove");
     };
     applyArgumentsResult._handleDMCreate = function _handleDMCreate(channel) {
       const id = channel.channel.id;
-      channel = outer1_6.getChannel(id);
+      channel = closure_1_6.getChannel(id);
       const items = [];
       if (null != channel) {
-        if (outer1_4(channel.type)) {
+        if (closure_1_4(channel.type)) {
           let recipients = channel.recipients;
           if (undefined === recipients) {
             recipients = [];
           }
           const item = recipients.forEach((arg0) => {
-            const tmp = outer1_12(outer1_9.getUser(arg0));
+            const tmp = closure_1_12(closure_1_9.getUser(arg0));
             if (null != channel) {
               if (null != tmp) {
                 tmp.nicknames[tmp2] = null;
@@ -700,7 +698,7 @@ class UserSearchManager extends tmp2 {
         }
       }
       if (0 !== items.length) {
-        const tmp6 = outer1_12(outer1_9.getCurrentUser());
+        const tmp6 = closure_1_12(closure_1_9.getCurrentUser());
         if (null != tmp6) {
           tmp6.nicknames[id] = null;
         }
@@ -712,18 +710,18 @@ class UserSearchManager extends tmp2 {
       const iter = arg0.channels[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
-        let tmp3 = outer1_14;
-        let tmp4 = outer1_6;
+        let tmp3 = closure_1_14;
+        let tmp4 = closure_1_6;
         let tmp2 = nextResult;
-        let arr = outer1_14(outer1_6.getChannel(nextResult.id));
+        let arr = closure_1_14(closure_1_6.getChannel(nextResult.id));
         let arr2 = arr;
         if (0 !== arr.length) {
-          let tmp5 = outer1_12;
-          let tmp6 = outer1_9;
-          let tmp7 = outer1_12(outer1_9.getCurrentUser());
-          let tmp8 = outer1_13;
+          let tmp5 = closure_1_12;
+          let tmp6 = closure_1_9;
+          let tmp7 = closure_1_12(closure_1_9.getCurrentUser());
+          let tmp8 = closure_1_13;
           let tmp9 = nextResult;
-          let tmp10 = outer1_13(tmp7, tmp2.id);
+          let tmp10 = closure_1_13(tmp7, tmp2.id);
           let tmp11 = arr;
           arr = arr2.push(tmp7);
           let tmp13 = applyArgumentsResult;
@@ -734,7 +732,7 @@ class UserSearchManager extends tmp2 {
     };
     applyArgumentsResult._handleRecipientChanges = function _handleRecipientChanges(isMember) {
       if (isMember.isMember) {
-        const tmp4 = outer1_12(tmp2);
+        const tmp4 = closure_1_12(tmp2);
         if (null != tmp4) {
           tmp4.nicknames[tmp] = null;
         }
@@ -743,14 +741,12 @@ class UserSearchManager extends tmp2 {
       }
     };
     applyArgumentsResult._handleThreadListSync = function _handleThreadListSync(arg0) {
-      let closure_0;
-      let mostRecentMessages;
       ({ guildId: closure_0, mostRecentMessages } = arg0);
       let items;
       if (null != mostRecentMessages) {
         items = [];
         let item = mostRecentMessages.forEach((message) => {
-          const item = outer1_16({ message, nicknameContextId: closure_0 }).forEach((arg0) => arr.push(arg0));
+          const item = closure_1_16({ message, nicknameContextId: closure_0 }).forEach((arg0) => arr.push(arg0));
         });
         applyArgumentsResult.updateUsers(items, "thread_list_sync");
       }
@@ -760,29 +756,26 @@ class UserSearchManager extends tmp2 {
       let items = [];
       const values = Object.values(guildId.threads);
       let item = values.forEach((arg0) => {
-        let first_message;
-        let most_recent_message;
-        let owner;
         ({ first_message, most_recent_message, owner } = arg0);
         if (null != first_message) {
           let obj = { message: null, nicknameContextId: null };
           obj[0] = first_message;
           obj[1] = closure_0;
-          const item = outer1_16(obj).forEach((arg0) => items1.push(arg0));
-          const arr = outer1_16(obj);
+          const item = closure_1_16(obj).forEach((arg0) => items1.push(arg0));
+          const arr = closure_1_16(obj);
         }
         if (null != most_recent_message) {
           obj = { message: null, nicknameContextId: null };
           obj[0] = most_recent_message;
           obj[1] = closure_0;
-          const item1 = outer1_16(obj).forEach((arg0) => items1.push(arg0));
-          const arr2 = outer1_16(obj);
+          const item1 = closure_1_16(obj).forEach((arg0) => items1.push(arg0));
+          const arr2 = closure_1_16(obj);
         }
         if (null != owner) {
-          const items = [owner];
+          items = [owner];
           const items1 = [];
           const item2 = items.forEach((user) => {
-            const tmp = outer1_12(user.user);
+            const tmp = closure_1_12(user.user);
             if (null != tmp) {
               const nick = user.nick;
               if (null != tmp) {
@@ -811,7 +804,7 @@ class UserSearchManager extends tmp2 {
       pins = pins.pins;
       const items = [];
       let item = pins.forEach((message) => {
-        const item = outer1_16({ message: message.message }).forEach((arg0) => arr.push(arg0));
+        const item = closure_1_16({ message: message.message }).forEach((arg0) => arr.push(arg0));
       });
       items.updateUsers(items, "load_pinned_messages_success");
     };
@@ -822,34 +815,31 @@ class UserSearchManager extends tmp2 {
         messages = messages.messages;
         let item = messages.forEach((arr) => {
           let item = arr.forEach((message) => {
-            const item = outer1_16({ message }).forEach((arg0) => arr.push(arg0));
+            const item = closure_1_16({ message }).forEach((arg0) => arr.push(arg0));
           });
         });
       });
       items.updateUsers(items, "search_messages_success");
     };
     applyArgumentsResult._handleLoadThreadsSuccess = function _handleLoadThreadsSuccess(guildId) {
-      let firstMessages;
-      let mostRecentMessages;
-      let owners;
       guildId = guildId.guildId;
       ({ firstMessages, mostRecentMessages, owners } = guildId);
       const items = [];
       let items1 = items;
       if (firstMessages != null) {
         let item = firstMessages.forEach((message) => {
-          const item = outer1_16({ message, nicknameContextId: guildId }).forEach((arg0) => arr.push(arg0));
+          const item = closure_1_16({ message, nicknameContextId: guildId }).forEach((arg0) => arr.push(arg0));
         });
       }
       if (mostRecentMessages != null) {
         const item1 = mostRecentMessages.forEach((message) => {
-          const item = outer1_16({ message, nicknameContextId: guildId }).forEach((arg0) => arr.push(arg0));
+          const item = closure_1_16({ message, nicknameContextId: guildId }).forEach((arg0) => arr.push(arg0));
         });
       }
       if (null != owners) {
         items1 = [];
         const item2 = owners.forEach((user) => {
-          const tmp = outer1_12(user.user);
+          const tmp = closure_1_12(user.user);
           if (null != tmp) {
             const nick = user.nick;
             if (null != tmp) {
@@ -870,16 +860,14 @@ class UserSearchManager extends tmp2 {
       guildId.updateUsers(items, "load_threads_success");
     };
     applyArgumentsResult._handleMessageCreateOrUpdate = function _handleMessageCreateOrUpdate(message) {
-      applyArgumentsResult.updateUsers(outer1_16({ message: message.message }), "message_create_or_update");
+      applyArgumentsResult.updateUsers(closure_1_16({ message: message.message }), "message_create_or_update");
     };
     applyArgumentsResult._handleGuildScheduledEventUsersFetchSuccess = function _handleGuildScheduledEventUsersFetchSuccess(arg0) {
-      let closure_0;
-      let guildScheduledEventUsers;
       ({ guildId: closure_0, guildScheduledEventUsers } = arg0);
       const items = [];
       const item = guildScheduledEventUsers.forEach((member) => {
         member = member.member;
-        const tmp = outer1_12(member.user);
+        const tmp = closure_1_12(member.user);
         if (null != tmp) {
           if (member != null) {
             const nick = member.nick;
@@ -922,12 +910,12 @@ prototype2["rebootWebworker"] = function rebootWebworker() {
     _worker.terminate();
     self._worker = null;
   }
-  self._worker = require(7598) /* UserSearchWorkerManager */;
+  self._worker = UserSearchWorkerManager;
 };
 prototype2["updateUsers"] = function updateUsers(arr) {
   const _worker = this._worker;
   if (null != _worker) {
-    const found = arr.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+    const found = arr.filter(isDiscordFrontendDevelopment.isNotNullish);
     for (const item10007 of found) {
       let tmp2 = item10007;
       let id;
@@ -937,7 +925,7 @@ prototype2["updateUsers"] = function updateUsers(arr) {
       if (null == id) {
         let tmp20 = importDefault;
         let tmp21 = dependencyMap;
-        let obj3 = importDefault(1208);
+        let obj3 = _modDef1208;
         let obj = { action: null, userFields: null };
         obj[0] = arg1;
         obj = { userIsNull: null, idIsNull: true, usernameIsNull: null, isBot: null, isFriend: null, isProvisional: null, globalNameIsNull: null, usersArrayLength: null };
@@ -980,7 +968,7 @@ prototype2["updateUsers"] = function updateUsers(arr) {
       }
       continue;
     }
-    const obj1 = { type: null, payload: null };
+    obj1 = { type: null, payload: null };
     obj1[0] = constants.UPDATE_USERS;
     obj1[1] = found;
     _worker.postMessage(obj1);
@@ -995,7 +983,7 @@ prototype2["getUserSearchContext"] = function getUserSearchContext(handleUserSea
   const _worker = this._worker;
   if (null == _worker) {
     const _Error = Error;
-    const error = new Error("SearchContextManager: No webworker initialized");
+    error = new Error("SearchContextManager: No webworker initialized");
     throw error;
   } else {
     if (typeof UserSearchContext !== "function") {
@@ -1009,7 +997,7 @@ prototype2["getUserSearchContext"] = function getUserSearchContext(handleUserSea
       data = data.data;
       let tmp = null != data;
       if (tmp) {
-        tmp = data.type === outer1_11.USER_RESULTS;
+        tmp = data.type === closure_1_11.USER_RESULTS;
       }
       if (tmp) {
         tmp = data.uuid === obj._uuid;
@@ -1039,7 +1027,7 @@ prototype2["requestDebugState"] = function requestDebugState() {
   return Promise.resolve(null);
 };
 const userSearchManager = new UserSearchManager();
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/autocompleter/UserSearchManager.tsx");
+let result = set.fileFinishedImporting("modules/autocompleter/UserSearchManager.tsx");
 
 export default userSearchManager;
 export { UserSearchContext };

@@ -1,31 +1,19 @@
-// Module ID: 11006
-// Function ID: 11007
+// Module ID: 11045
+// Function ID: 11046
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: [19, 1391, 1910, 21, 8334, 11003, 11001, 8336, 1297, 8886, 2]
+// Dependencies: [19, 1391, 1910, 21, 8373, 11042, 11040, 8375, 1297, 8923, 2]
 // Exports: default
 
-// Module 11006 (ChannelSelectComponentActionSheet)
-import noop from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { jsx } from "jsxProd";
+// Module 11045 (ChannelSelectComponentActionSheet)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/interaction_components/native/components/ChannelSelectComponentActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/interaction_components/native/components/ChannelSelectComponentActionSheet.tsx");
 
 export default function ChannelSelectComponentActionSheet(guildId) {
-  let allowEmpty;
-  let c3;
-  let channelId;
-  let containerId;
-  let isSelected;
-  let labelComponent;
-  let onPressOptionItem;
-  let onSubmit;
-  let options;
-  let selectedOptions;
-  let selectionActionComponent;
-  let setQuery;
   ({ selectionActionComponent, channelId } = guildId);
   guildId = guildId.guildId;
   let channelTypes;
@@ -40,18 +28,18 @@ export default function ChannelSelectComponentActionSheet(guildId) {
   return jsx(guildId(channelTypes[6]), {
     onPressOptionItem,
     renderIcon(value) {
-      const channel = outer1_4.getChannel(value.value);
+      const channel = closure_1_4.getChannel(value.value);
       if (null == channel) {
         return null;
       } else {
-        const guild = outer1_5.getGuild(guildId);
+        const guild = closure_1_5.getGuild(guildId);
         let obj = channelId(channelTypes[7]);
         const channelIconData = obj.getChannelIconData(channel, guild);
         let tmp8 = null != channelIconData;
         if (tmp8) {
           obj = { source: null };
           obj[0] = channelIconData;
-          tmp8 = outer1_6(channelId(channelTypes[8]).Icon, obj);
+          tmp8 = closure_1_6(channelId(channelTypes[8]).Icon, obj);
         }
         return tmp8;
       }

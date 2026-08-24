@@ -1,31 +1,30 @@
-// Module ID: 15489
-// Function ID: 15490
+// Module ID: 15554
+// Function ID: 15555
 // Name: ChannelBadge
-// Dependencies: [19, 17, 1994, 21, 4661, 647, 15490, 11463, 4734, 1898, 2]
+// Dependencies: [19, 17, 1995, 21, 4668, 647, 15555, 11512, 4739, 1898, 2]
 // Exports: default
 
-// Module 15489 (ChannelBadge)
-import "noop";
-import { View } from "get ActivityIndicator";
-import _getSystemLocale from "_getSystemLocale";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15554 (ChannelBadge)
+import noopAll from "noop" /* 19 */;
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+import NewBadgeDefault from "NewBadge" /* 11512 */;
+import MentionsBadgeDefault from "MentionsBadge" /* 15555 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_6 = createCacheKey.createStyles(() => ({ channelInfoContainer: { paddingStart: 4 } }));
-const result = require("_getSystemLocale").fileFinishedImporting("modules/guild_sidebar/native/ChannelBadge.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_sidebar/native/ChannelBadge.tsx");
 
 export default function ChannelBadge(arg0) {
-  let isMentionLowImportance;
-  let isNewChannel;
-  let mentionCount;
-  let muted;
-  let postsWithUnreadsCount;
   ({ mentionCount, postsWithUnreadsCount, muted } = arg0);
   ({ isMentionLowImportance, isNewChannel } = arg0);
   const tmp = callback();
-  let obj = require(647) /* defaultAreStatesEqual */;
-  const items = [_getSystemLocale];
+  let obj = defaultAreStatesEqual;
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   if (null != mentionCount) {
     if (mentionCount > 0) {
@@ -34,15 +33,15 @@ export default function ChannelBadge(arg0) {
       obj = { mentionsCount: null, isMentionLowImportance: null };
       obj[0] = mentionCount;
       obj[1] = isMentionLowImportance;
-      obj[1] = jsx(importDefault(15490), { mentionsCount: null, isMentionLowImportance: null });
+      obj[1] = jsx(MentionsBadgeDefault, { mentionsCount: null, isMentionLowImportance: null });
       let tmp5 = <View mentionsCount={null} isMentionLowImportance={null} />;
     }
     return tmp5;
   }
   if (isNewChannel) {
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.channelInfoContainer;
-    obj1[1] = jsx(importDefault(11463), {});
+    obj1[1] = jsx(NewBadgeDefault, {});
     tmp5 = <View style={null}>{null}</View>;
   } else {
     tmp5 = null;
@@ -57,7 +56,7 @@ export default function ChannelBadge(arg0) {
             obj2[0] = tmp.channelInfoContainer;
             const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: null };
             obj3[2] = tmp2(1898).humanizeValue(postsWithUnreadsCount, stateFromStores);
-            obj2[1] = jsx(tmp2(4734).Text, { variant: "text-xs/semibold", color: "text-muted", children: null });
+            obj2[1] = jsx(tmp2(4739).Text, { variant: "text-xs/semibold", color: "text-muted", children: null });
             tmp5 = <View style={null}>{null}</View>;
             const tmp2Result = tmp2(1898);
           }

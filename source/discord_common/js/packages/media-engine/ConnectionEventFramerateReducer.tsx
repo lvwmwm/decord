@@ -1,23 +1,23 @@
-// Module ID: 4583
-// Function ID: 4584
+// Module ID: 4589
+// Function ID: 4590
 // Name: logger
-// Dependencies: [4529, 4, 4569, 2]
+// Dependencies: [4534, 4, 4574, 2]
 
-// Module 4583 (logger)
-import DesktopSources from "DesktopSources";
+// Module 4589 (logger)
+import set from "set" /* 2 */;
+import log from "log" /* 4 */;
+import DesktopSources from "DesktopSources" /* 4534 */;
 
-let c3;
-let obj1;
 ({ SpeakingFlags: obj1, VIDEO_QUALITY_FRAMRATE_NOT_SPEAKING_TIMEOUT: c3 } = DesktopSources);
-const logger = new require("log").Logger("ConnectionEventFramerateReducer");
-let result = require("BaseConnectionEvent").fileFinishedImporting("../discord_common/js/packages/media-engine/ConnectionEventFramerateReducer.tsx");
+const logger = new log.Logger("ConnectionEventFramerateReducer");
+let result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/ConnectionEventFramerateReducer.tsx");
 class ConnectionEventFramerateReducer {
   constructor(arg0, arg1) {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     obj.handleSpeaking = function handleSpeaking(arg0, arg1) {
       if (arg0 === obj.connection.userId) {
-        obj.userSpeakingChange(arg1 === outer1_2.NONE);
+        obj.userSpeakingChange(arg1 === closure_1_2.NONE);
       }
     };
     obj.handleSelfMute = function handleSelfMute(isMuted) {
@@ -52,7 +52,7 @@ prototype["userSpeakingChange"] = function userSpeakingChange(arg0) {
       self.framerateReductionTimeout = setTimeout(() => {
         if (!self.connection.destroyed) {
           const _HermesInternal = HermesInternal;
-          outer1_4.info("BaseConnection.userSpeakingChange: Reduced framerate after " + outer1_3 + " ms.");
+          closure_1_4.info("BaseConnection.userSpeakingChange: Reduced framerate after " + closure_1_3 + " ms.");
           obj.framerateReductionTimeout = undefined;
           obj.sinkWants.isMuted = true;
           const result = obj.updateRemoteWantsFramerate();

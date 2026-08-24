@@ -4,12 +4,12 @@
 // Dependencies: [32, 41, 42, 93, 95, 98, 1724]
 
 // Module 1778 (_isNativeReflectConstruct)
-import RotateOutUpRight from "_slicedToArray";
-import _classCallCheck from "_classCallCheck";
-import importDefaultResult from "_createClass";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult1 from "_inherits";
+import RotateOutUpRight from "_slicedToArray" /* 32 */;
+import closure_1 from "_classCallCheck" /* 41 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import closure_2 from "_possibleConstructorReturn" /* 93 */;
+import closure_3 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult1 from "_inherits" /* 98 */;
 
 function _isNativeReflectConstruct() {
   try {
@@ -22,10 +22,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -35,12 +35,12 @@ class RotateInDownLeft {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_1(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_3;
+    obj = closure_3(closure_0);
+    tmp3 = closure_2;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -49,22 +49,22 @@ class RotateInDownLeft {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
-      const tmp2 = _undefined(delayFunction.getAnimationAndConfig(), 2);
+      const tmp2 = callback(delayFunction.getAnimationAndConfig(), 2);
       const first = tmp2[0];
-      let _possibleConstructorReturn = tmp4;
+      closure_2 = tmp4;
       const delay = delayFunction.getDelay();
       const callbackV = delayFunction.callbackV;
       const initialValues = delayFunction.initialValues;
       const fn = function n(targetWidth) {
         let obj = { animations: null, initialValues: null, callback: null };
-        obj = { opacity: delayFunction(delay, first(1, _possibleConstructorReturn)), transform: null };
-        obj = { rotate: delayFunction(delay, first("0deg", _possibleConstructorReturn)) };
-        const items = [obj, { translateX: delayFunction(delay, first(0, _possibleConstructorReturn)) }, ];
-        const obj1 = { translateX: delayFunction(delay, first(0, _possibleConstructorReturn)) };
-        items[2] = { translateY: delayFunction(delay, first(0, _possibleConstructorReturn)) };
+        obj = { opacity: delayFunction(delay, first(1, closure_2)), transform: null };
+        obj = { rotate: delayFunction(delay, first("0deg", closure_2)) };
+        const items = [obj, { translateX: delayFunction(delay, first(0, closure_2)) }, ];
+        obj1 = { translateX: delayFunction(delay, first(0, closure_2)) };
+        items[2] = { translateY: delayFunction(delay, first(0, closure_2)) };
         obj[1] = items;
         obj[0] = obj;
         const items1 = [{ rotate: "-90deg" }, { translateX: targetWidth.targetWidth / 2 - targetWidth.targetHeight / 2 }, { translateY: -targetWidth.targetWidth / 2 - targetWidth.targetHeight / 2 }];
@@ -75,7 +75,7 @@ class RotateInDownLeft {
       };
       fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], initialValues, callback: callbackV };
       fn.__workletHash = 1900668823867;
-      fn.__initData = outer1_5;
+      fn.__initData = closure_1_5;
       return fn;
     };
     return tmp3Result;
@@ -97,12 +97,12 @@ class RotateInDownRight {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_1(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_3;
+    obj = closure_3(closure_0);
+    tmp3 = closure_2;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -111,22 +111,22 @@ class RotateInDownRight {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
-      const tmp2 = _undefined(delayFunction.getAnimationAndConfig(), 2);
+      const tmp2 = callback(delayFunction.getAnimationAndConfig(), 2);
       const first = tmp2[0];
-      let _possibleConstructorReturn = tmp4;
+      closure_2 = tmp4;
       const delay = delayFunction.getDelay();
       const callbackV = delayFunction.callbackV;
       const initialValues = delayFunction.initialValues;
       const fn = function n(targetWidth) {
         let obj = { animations: null, initialValues: null, callback: null };
-        obj = { opacity: delayFunction(delay, first(1, _possibleConstructorReturn)), transform: null };
-        obj = { rotate: delayFunction(delay, first("0deg", _possibleConstructorReturn)) };
-        const items = [obj, { translateX: delayFunction(delay, first(0, _possibleConstructorReturn)) }, ];
-        const obj1 = { translateX: delayFunction(delay, first(0, _possibleConstructorReturn)) };
-        items[2] = { translateY: delayFunction(delay, first(0, _possibleConstructorReturn)) };
+        obj = { opacity: delayFunction(delay, first(1, closure_2)), transform: null };
+        obj = { rotate: delayFunction(delay, first("0deg", closure_2)) };
+        const items = [obj, { translateX: delayFunction(delay, first(0, closure_2)) }, ];
+        obj1 = { translateX: delayFunction(delay, first(0, closure_2)) };
+        items[2] = { translateY: delayFunction(delay, first(0, closure_2)) };
         obj[1] = items;
         obj[0] = obj;
         const items1 = [{ rotate: "90deg" }, { translateX: -targetWidth.targetWidth / 2 - targetWidth.targetHeight / 2 }, { translateY: -targetWidth.targetWidth / 2 - targetWidth.targetHeight / 2 }];
@@ -137,7 +137,7 @@ class RotateInDownRight {
       };
       fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], initialValues, callback: callbackV };
       fn.__workletHash = 1066189129817;
-      fn.__initData = outer1_6;
+      fn.__initData = closure_1_6;
       return fn;
     };
     return tmp3Result;
@@ -159,12 +159,12 @@ class RotateInUpLeft {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_1(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_3;
+    obj = closure_3(closure_0);
+    tmp3 = closure_2;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -173,22 +173,22 @@ class RotateInUpLeft {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
-      const tmp2 = _undefined(delayFunction.getAnimationAndConfig(), 2);
+      const tmp2 = callback(delayFunction.getAnimationAndConfig(), 2);
       const first = tmp2[0];
-      let _possibleConstructorReturn = tmp4;
+      closure_2 = tmp4;
       const delay = delayFunction.getDelay();
       const callbackV = delayFunction.callbackV;
       const initialValues = delayFunction.initialValues;
       const fn = function n(targetWidth) {
         let obj = { animations: null, initialValues: null, callback: null };
-        obj = { opacity: delayFunction(delay, first(1, _possibleConstructorReturn)), transform: null };
-        obj = { rotate: delayFunction(delay, first("0deg", _possibleConstructorReturn)) };
-        const items = [obj, { translateX: delayFunction(delay, first(0, _possibleConstructorReturn)) }, ];
-        const obj1 = { translateX: delayFunction(delay, first(0, _possibleConstructorReturn)) };
-        items[2] = { translateY: delayFunction(delay, first(0, _possibleConstructorReturn)) };
+        obj = { opacity: delayFunction(delay, first(1, closure_2)), transform: null };
+        obj = { rotate: delayFunction(delay, first("0deg", closure_2)) };
+        const items = [obj, { translateX: delayFunction(delay, first(0, closure_2)) }, ];
+        obj1 = { translateX: delayFunction(delay, first(0, closure_2)) };
+        items[2] = { translateY: delayFunction(delay, first(0, closure_2)) };
         obj[1] = items;
         obj[0] = obj;
         const items1 = [{ rotate: "90deg" }, { translateX: targetWidth.targetWidth / 2 - targetWidth.targetHeight / 2 }, { translateY: targetWidth.targetWidth / 2 - targetWidth.targetHeight / 2 }];
@@ -199,7 +199,7 @@ class RotateInUpLeft {
       };
       fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], initialValues, callback: callbackV };
       fn.__workletHash = 11999620665656;
-      fn.__initData = outer1_7;
+      fn.__initData = closure_1_7;
       return fn;
     };
     return tmp3Result;
@@ -221,12 +221,12 @@ class RotateInUpRight {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_1(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_3;
+    obj = closure_3(closure_0);
+    tmp3 = closure_2;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -235,22 +235,22 @@ class RotateInUpRight {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
-      const tmp2 = _undefined(delayFunction.getAnimationAndConfig(), 2);
+      const tmp2 = callback(delayFunction.getAnimationAndConfig(), 2);
       const first = tmp2[0];
-      let _possibleConstructorReturn = tmp4;
+      closure_2 = tmp4;
       const delay = delayFunction.getDelay();
       const callbackV = delayFunction.callbackV;
       const initialValues = delayFunction.initialValues;
       const fn = function n(targetWidth) {
         let obj = { animations: null, initialValues: null, callback: null };
-        obj = { opacity: delayFunction(delay, first(1, _possibleConstructorReturn)), transform: null };
-        obj = { rotate: delayFunction(delay, first("0deg", _possibleConstructorReturn)) };
-        const items = [obj, { translateX: delayFunction(delay, first(0, _possibleConstructorReturn)) }, ];
-        const obj1 = { translateX: delayFunction(delay, first(0, _possibleConstructorReturn)) };
-        items[2] = { translateY: delayFunction(delay, first(0, _possibleConstructorReturn)) };
+        obj = { opacity: delayFunction(delay, first(1, closure_2)), transform: null };
+        obj = { rotate: delayFunction(delay, first("0deg", closure_2)) };
+        const items = [obj, { translateX: delayFunction(delay, first(0, closure_2)) }, ];
+        obj1 = { translateX: delayFunction(delay, first(0, closure_2)) };
+        items[2] = { translateY: delayFunction(delay, first(0, closure_2)) };
         obj[1] = items;
         obj[0] = obj;
         const items1 = [{ rotate: "-90deg" }, { translateX: -targetWidth.targetWidth / 2 - targetWidth.targetHeight / 2 }, { translateY: targetWidth.targetWidth / 2 - targetWidth.targetHeight / 2 }];
@@ -261,7 +261,7 @@ class RotateInUpRight {
       };
       fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], initialValues, callback: callbackV };
       fn.__workletHash = 15143335307550;
-      fn.__initData = outer1_8;
+      fn.__initData = closure_1_8;
       return fn;
     };
     return tmp3Result;
@@ -284,12 +284,12 @@ class RotateOutDownLeft {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_1(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_3;
+    obj = closure_3(closure_0);
+    tmp3 = closure_2;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -298,22 +298,22 @@ class RotateOutDownLeft {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
-      const tmp2 = _undefined(delayFunction.getAnimationAndConfig(), 2);
+      const tmp2 = callback(delayFunction.getAnimationAndConfig(), 2);
       const first = tmp2[0];
-      let _possibleConstructorReturn = tmp4;
+      closure_2 = tmp4;
       const delay = delayFunction.getDelay();
       const callbackV = delayFunction.callbackV;
       const initialValues = delayFunction.initialValues;
       const fn = function n(currentWidth) {
         let obj = { animations: null, initialValues: null, callback: null };
-        obj = { opacity: delayFunction(delay, first(0, _possibleConstructorReturn)), transform: null };
-        obj = { rotate: delayFunction(delay, first("90deg", _possibleConstructorReturn)) };
-        const items = [obj, { translateX: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) }, ];
-        const obj1 = { translateX: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) };
-        items[2] = { translateY: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) };
+        obj = { opacity: delayFunction(delay, first(0, closure_2)), transform: null };
+        obj = { rotate: delayFunction(delay, first("90deg", closure_2)) };
+        const items = [obj, { translateX: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) }, ];
+        obj1 = { translateX: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) };
+        items[2] = { translateY: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) };
         obj[1] = items;
         obj[0] = obj;
         const items1 = [{ rotate: "0deg" }, { translateX: 0 }, { translateY: 0 }];
@@ -324,7 +324,7 @@ class RotateOutDownLeft {
       };
       fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], initialValues, callback: callbackV };
       fn.__workletHash = 11712932777694;
-      fn.__initData = outer1_9;
+      fn.__initData = closure_1_9;
       return fn;
     };
     return tmp3Result;
@@ -347,12 +347,12 @@ class RotateOutDownRight {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_1(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_3;
+    obj = closure_3(closure_0);
+    tmp3 = closure_2;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -361,22 +361,22 @@ class RotateOutDownRight {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
-      const tmp2 = _undefined(delayFunction.getAnimationAndConfig(), 2);
+      const tmp2 = callback(delayFunction.getAnimationAndConfig(), 2);
       const first = tmp2[0];
-      let _possibleConstructorReturn = tmp4;
+      closure_2 = tmp4;
       const delay = delayFunction.getDelay();
       const callbackV = delayFunction.callbackV;
       const initialValues = delayFunction.initialValues;
       const fn = function n(currentWidth) {
         let obj = { animations: null, initialValues: null, callback: null };
-        obj = { opacity: delayFunction(delay, first(0, _possibleConstructorReturn)), transform: null };
-        obj = { rotate: delayFunction(delay, first("-90deg", _possibleConstructorReturn)) };
-        const items = [obj, { translateX: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) }, ];
-        const obj1 = { translateX: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) };
-        items[2] = { translateY: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) };
+        obj = { opacity: delayFunction(delay, first(0, closure_2)), transform: null };
+        obj = { rotate: delayFunction(delay, first("-90deg", closure_2)) };
+        const items = [obj, { translateX: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) }, ];
+        obj1 = { translateX: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) };
+        items[2] = { translateY: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) };
         obj[1] = items;
         obj[0] = obj;
         const items1 = [{ rotate: "0deg" }, { translateX: 0 }, { translateY: 0 }];
@@ -387,7 +387,7 @@ class RotateOutDownRight {
       };
       fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], initialValues, callback: callbackV };
       fn.__workletHash = 16449003298460;
-      fn.__initData = outer1_10;
+      fn.__initData = closure_1_10;
       return fn;
     };
     return tmp3Result;
@@ -410,12 +410,12 @@ class RotateOutUpLeft {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_1(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_3;
+    obj = closure_3(closure_0);
+    tmp3 = closure_2;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -424,22 +424,22 @@ class RotateOutUpLeft {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
-      const tmp2 = _undefined(delayFunction.getAnimationAndConfig(), 2);
+      const tmp2 = callback(delayFunction.getAnimationAndConfig(), 2);
       const first = tmp2[0];
-      let _possibleConstructorReturn = tmp4;
+      closure_2 = tmp4;
       const delay = delayFunction.getDelay();
       const callbackV = delayFunction.callbackV;
       const initialValues = delayFunction.initialValues;
       const fn = function n(currentWidth) {
         let obj = { animations: null, initialValues: null, callback: null };
-        obj = { opacity: delayFunction(delay, first(0, _possibleConstructorReturn)), transform: null };
-        obj = { rotate: delayFunction(delay, first("-90deg", _possibleConstructorReturn)) };
-        const items = [obj, { translateX: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) }, ];
-        const obj1 = { translateX: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) };
-        items[2] = { translateY: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) };
+        obj = { opacity: delayFunction(delay, first(0, closure_2)), transform: null };
+        obj = { rotate: delayFunction(delay, first("-90deg", closure_2)) };
+        const items = [obj, { translateX: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) }, ];
+        obj1 = { translateX: delayFunction(delay, first(currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) };
+        items[2] = { translateY: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) };
         obj[1] = items;
         obj[0] = obj;
         const items1 = [{ rotate: "0deg" }, { translateX: 0 }, { translateY: 0 }];
@@ -450,7 +450,7 @@ class RotateOutUpLeft {
       };
       fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], initialValues, callback: callbackV };
       fn.__workletHash = 16777964503997;
-      fn.__initData = outer1_11;
+      fn.__initData = closure_1_11;
       return fn;
     };
     return tmp3Result;
@@ -473,12 +473,12 @@ class RotateOutUpRight {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_1(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_3;
+    obj = closure_3(closure_0);
+    tmp3 = closure_2;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -487,22 +487,22 @@ class RotateOutUpRight {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
-      const tmp2 = _undefined(delayFunction.getAnimationAndConfig(), 2);
+      const tmp2 = callback(delayFunction.getAnimationAndConfig(), 2);
       const first = tmp2[0];
-      let _possibleConstructorReturn = tmp4;
+      closure_2 = tmp4;
       const delay = delayFunction.getDelay();
       const callbackV = delayFunction.callbackV;
       const initialValues = delayFunction.initialValues;
       const fn = function n(currentWidth) {
         let obj = { animations: null, initialValues: null, callback: null };
-        obj = { opacity: delayFunction(delay, first(0, _possibleConstructorReturn)), transform: null };
-        obj = { rotate: delayFunction(delay, first("90deg", _possibleConstructorReturn)) };
-        const items = [obj, { translateX: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) }, ];
-        const obj1 = { translateX: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) };
-        items[2] = { translateY: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, _possibleConstructorReturn)) };
+        obj = { opacity: delayFunction(delay, first(0, closure_2)), transform: null };
+        obj = { rotate: delayFunction(delay, first("90deg", closure_2)) };
+        const items = [obj, { translateX: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) }, ];
+        obj1 = { translateX: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) };
+        items[2] = { translateY: delayFunction(delay, first(-currentWidth.currentWidth / 2 - currentWidth.currentHeight / 2, closure_2)) };
         obj[1] = items;
         obj[0] = obj;
         const items1 = [{ rotate: "0deg" }, { translateX: 0 }, { translateY: 0 }];
@@ -513,7 +513,7 @@ class RotateOutUpRight {
       };
       fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], initialValues, callback: callbackV };
       fn.__workletHash = 14312403608563;
-      fn.__initData = outer1_12;
+      fn.__initData = closure_1_12;
       return fn;
     };
     return tmp3Result;

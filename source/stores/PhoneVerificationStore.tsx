@@ -1,24 +1,26 @@
-// Module ID: 16730
-// Function ID: 16731
+// Module ID: 16823
+// Function ID: 16824
 // Name: getCountrySelectorOpened
 // Dependencies: [589, 709, 2]
 
-// Module 16730 (getCountrySelectorOpened)
-import { Store } from "initialize";
+// Module 16823 (getCountrySelectorOpened)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0 = false;
+const Store = initializeDefault.Store;
 class PhoneVerificationStore extends Store {
 }
 PhoneVerificationStore.prototype["getCountrySelectorOpened"] = function getCountrySelectorOpened() {
   return c0;
 };
 PhoneVerificationStore.displayName = "PhoneVerificationStore";
-const phoneVerificationStore = new PhoneVerificationStore(require("dispatcher"), {
+const phoneVerificationStore = new PhoneVerificationStore(dispatcherDefault, {
   VERIFICATION_OPEN_COUNTRY_SELECTOR: function handleOpenCountry() {
-    let c0 = true;
+    c0 = true;
   },
   VERIFICATION_CLOSE_COUNTRY_SELECTOR: function handleCloseCountrySelector() {
-    let c0 = false;
+    c0 = false;
   }
 });
 const result = require("set").fileFinishedImporting("stores/PhoneVerificationStore.tsx");

@@ -4,15 +4,17 @@
 // Dependencies: [17, 190, 998, 999, 175, 123]
 
 // Module 997 (TurboModuleRegistry)
-import get_ActivityIndicator from "get ActivityIndicator";
+import polyfillObjectProperty from "polyfillObjectProperty" /* 123 */;
+import _mod175 from "finally" /* 175 */;
+import parseErrorStack from "parseErrorStack" /* 190 */;
+import _symbolicateStackTrace from "_symbolicateStackTrace" /* 998 */;
+import getDevServer from "getDevServer" /* 999 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-let AppRegistry;
-let Platform;
-let TurboModuleRegistry;
-obj = { Devtools: obj, Promise: require("finally"), Utilities: obj, ReactNativeVersion: null, TurboModuleRegistry: null, AppRegistry: null, ReactNative: null };
+obj = { Devtools: obj, Promise: _mod175, Utilities: obj, ReactNativeVersion: null, TurboModuleRegistry: null, AppRegistry: null, ReactNative: null };
 obj = {
   parseErrorStack(arg0) {
-    const obj = require(190) /* parseErrorStack */;
+    const obj = parseErrorStack;
     if (obj.default) {
       if (typeof obj.default === "function") {
         let defaultResult = obj.default(arg0);
@@ -22,7 +24,7 @@ obj = {
     defaultResult = obj(arg0);
   },
   symbolicateStackTrace(arg0, arg1) {
-    const obj = require(998) /* _symbolicateStackTrace */;
+    const obj = _symbolicateStackTrace;
     if (obj.default) {
       if (typeof obj.default === "function") {
         let defaultResult = obj.default(arg0, arg1);
@@ -32,7 +34,7 @@ obj = {
     defaultResult = obj(arg0, arg1);
   },
   getDevServer() {
-    const obj = require(999) /* getDevServer */;
+    const obj = getDevServer;
     if (obj.default) {
       if (typeof obj.default === "function") {
         let defaultResult = obj.default();
@@ -45,7 +47,7 @@ obj = {
 ({ AppRegistry, Platform, TurboModuleRegistry } = get_ActivityIndicator);
 obj = {
   polyfillGlobal(arg0, arg1) {
-    require(123) /* polyfillObjectProperty */.polyfillGlobal(arg0, arg1);
+    polyfillObjectProperty.polyfillGlobal(arg0, arg1);
   }
 };
 const constants = Platform.constants;
@@ -60,7 +62,7 @@ obj[4] = TurboModuleRegistry;
 obj[5] = AppRegistry;
 obj[6] = {
   requireNativeComponent(APNGStickerView, importDefaultResultResult, arg2) {
-    return require(17) /* get ActivityIndicator */.requireNativeComponent(APNGStickerView);
+    return get_ActivityIndicator.requireNativeComponent(APNGStickerView);
   }
 };
 

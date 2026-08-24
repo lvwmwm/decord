@@ -1,46 +1,44 @@
-// Module ID: 15173
-// Function ID: 15174
+// Module ID: 15237
+// Function ID: 15238
 // Name: ShopSkipCategoriesFilter
-// Dependencies: [19, 17, 5301, 21, 4661, 712, 589, 4733, 4734, 5300, 2]
+// Dependencies: [19, 17, 5306, 21, 4668, 712, 589, 4738, 4739, 5305, 2]
 // Exports: ShopSkipCategoriesFilter
 
-// Module 15173 (ShopSkipCategoriesFilter)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import updateCategoriesAndProducts from "updateCategoriesAndProducts";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15237 (ShopSkipCategoriesFilter)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_4 from "updateCategoriesAndProducts" /* 5306 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c5;
-let closure_6;
-let obj1;
 const require = arg1;
+noopAll;
 ({ View: obj1, Pressable: c3 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: null, label: null, stepperContainer: null, stepperButton: null, stepperButtonDisabled: null, valueText: null };
-createCacheKey = { paddingVertical: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { paddingVertical: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginBottom: require("Themes").space.PX_8 };
-obj1 = { marginBottom: require("Themes").space.PX_8 };
-createCacheKey[2] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
-let obj2 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
-createCacheKey[3] = { width: 32, height: 32, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, justifyContent: "center", alignItems: "center" };
+createCacheKey[1] = { marginBottom: ThemesDefault.space.PX_8 };
+obj1 = { marginBottom: ThemesDefault.space.PX_8 };
+createCacheKey[2] = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_12 };
+let obj2 = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_12 };
+createCacheKey[3] = { width: 32, height: 32, borderRadius: ThemesDefault.radii.xs, backgroundColor: ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, justifyContent: "center", alignItems: "center" };
 createCacheKey[4] = { opacity: 0.5 };
 createCacheKey[5] = { minWidth: 40, textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { width: 32, height: 32, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, justifyContent: "center", alignItems: "center" };
-const result = require("updateCategoriesAndProducts").fileFinishedImporting("modules/collectibles/native/tooling/ShopSkipCategoriesFilter.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { width: 32, height: 32, borderRadius: ThemesDefault.radii.xs, backgroundColor: ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, justifyContent: "center", alignItems: "center" };
+const result = require("set").fileFinishedImporting("modules/collectibles/native/tooling/ShopSkipCategoriesFilter.tsx");
 
 export const ShopSkipCategoriesFilter = function ShopSkipCategoriesFilter() {
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = stateFromStores(589);
-  const items = [updateCategoriesAndProducts];
+  const items = [closure_4];
   stateFromStores = obj.useStateFromStores(items, () => skipNumCategories.skipNumCategories);
   obj = { style: tmp.container, children: null };
   obj = { variant: "text-md/normal", style: tmp.label, children: "Hide first # of categories" };
-  const items1 = [callback(stateFromStores(4734).Text, obj), ];
-  const obj1 = { style: tmp.stepperContainer, children: null };
+  const items1 = [callback(stateFromStores(4739).Text, obj), ];
+  obj1 = { style: tmp.stepperContainer, children: null };
   const items2 = [tmp.stepperButton, ];
   let stepperButtonDisabled = tmp5;
   if (stateFromStores <= 0) {
@@ -52,14 +50,14 @@ export const ShopSkipCategoriesFilter = function ShopSkipCategoriesFilter() {
       style: items2,
       onPress() {
         if (stateFromStores > 0) {
-          stateFromStores(outer1_1[9]).setSkipNumCategories(tmp - 1);
-          const obj = stateFromStores(outer1_1[9]);
+          stateFromStores(closure_1_1[9]).setSkipNumCategories(tmp - 1);
+          const obj = stateFromStores(closure_1_1[9]);
         }
       },
       disabled: stateFromStores <= 0,
-      children: callback(stateFromStores(4734).Text, { variant: "text-lg/semibold", children: "\u2212" })
+      children: callback(stateFromStores(4739).Text, { variant: "text-lg/semibold", children: "\u2212" })
     }),
-    callback(stateFromStores(4734).Text, { variant: "text-md/semibold", style: tmp.valueText, children: stateFromStores }),
+    callback(stateFromStores(4739).Text, { variant: "text-md/semibold", style: tmp.valueText, children: stateFromStores }),
 
   ];
   const items4 = [tmp.stepperButton, ];
@@ -72,12 +70,12 @@ export const ShopSkipCategoriesFilter = function ShopSkipCategoriesFilter() {
     style: items2,
     onPress() {
       if (stateFromStores > 0) {
-        stateFromStores(outer1_1[9]).setSkipNumCategories(tmp - 1);
-        const obj = stateFromStores(outer1_1[9]);
+        stateFromStores(closure_1_1[9]).setSkipNumCategories(tmp - 1);
+        const obj = stateFromStores(closure_1_1[9]);
       }
     },
     disabled: stateFromStores <= 0,
-    children: callback(stateFromStores(4734).Text, { variant: "text-lg/semibold", children: "\u2212" })
+    children: callback(stateFromStores(4739).Text, { variant: "text-lg/semibold", children: "\u2212" })
   };
   const obj3 = { variant: "text-md/semibold", style: tmp.valueText, children: stateFromStores };
   items4[1] = stepperButtonDisabled2;
@@ -85,16 +83,16 @@ export const ShopSkipCategoriesFilter = function ShopSkipCategoriesFilter() {
     style: items4,
     onPress() {
       if (stateFromStores < 100) {
-        stateFromStores(outer1_1[9]).setSkipNumCategories(tmp + 1);
-        const obj = stateFromStores(outer1_1[9]);
+        stateFromStores(closure_1_1[9]).setSkipNumCategories(tmp + 1);
+        const obj = stateFromStores(closure_1_1[9]);
       }
     },
     disabled: stateFromStores >= 100,
-    children: callback(stateFromStores(4734).Text, { variant: "text-lg/semibold", children: "+" })
+    children: callback(stateFromStores(4739).Text, { variant: "text-lg/semibold", children: "+" })
   });
   obj1[1] = items3;
   items1[1] = closure_6(closure_2, obj1);
   obj4[1] = items1;
-  obj[1] = closure_6(stateFromStores(4733).Stack, obj4);
+  obj[1] = closure_6(stateFromStores(4738).Stack, obj4);
   return callback(closure_2, obj);
 };

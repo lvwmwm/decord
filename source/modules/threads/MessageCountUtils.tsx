@@ -1,20 +1,21 @@
-// Module ID: 8170
-// Function ID: 8171
+// Module ID: 8209
+// Function ID: 8210
 // Name: _formatMessageCountLabel
 // Dependencies: [1235, 11, 1236, 2]
 // Exports: formatMessageCountLabel, formatMobileMessageCountLabel, getMessageCountText, shouldUseOldMaxMessageCount
 
-// Module 8170 (_formatMessageCountLabel)
-import AbortCodes from "AbortCodes";
+// Module 8209 (_formatMessageCountLabel)
+import set from "set" /* 2 */;
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import AbortCodes from "AbortCodes" /* 1235 */;
 
-let c3;
-let c4;
 function _formatMessageCountLabel(count, iTS3Xe, id) {
   let str = "0";
   if (null != count) {
     str = "0";
     if (count >= 0) {
-      importDefault(11);
+      DISCORD_EPOCHDefault;
       if (null == id) {
         let str3 = "50+";
         str = str3;
@@ -28,10 +29,10 @@ function _formatMessageCountLabel(count, iTS3Xe, id) {
     }
   }
   if ("0" === str) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1236) /* getSystemLocale */.t.eXHkhl);
+    const intl2 = getSystemLocale.intl;
+    let stringResult = intl2.string(getSystemLocale.t.eXHkhl);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const obj = { count: null };
     obj[0] = str;
     stringResult = intl.formatToPlainString(iTS3Xe, obj);
@@ -39,15 +40,15 @@ function _formatMessageCountLabel(count, iTS3Xe, id) {
   return stringResult;
 }
 ({ MAX_THREAD_MESSAGE_COUNT: c3, MAX_THREAD_MESSAGE_COUNT_OLD: c4 } = AbortCodes);
-const result = require("getSystemLocale").fileFinishedImporting("modules/threads/MessageCountUtils.tsx");
+const result = set.fileFinishedImporting("modules/threads/MessageCountUtils.tsx");
 
 export const shouldUseOldMaxMessageCount = function shouldUseOldMaxMessageCount(arg0) {
-  return importDefault(11).compare("992549565104128000", arg0) > -1;
+  return DISCORD_EPOCHDefault.compare("992549565104128000", arg0) > -1;
 };
 export const getMessageCountText = function getMessageCountText(stateFromStores, id) {
   if (null != stateFromStores) {
     if (stateFromStores >= 0) {
-      importDefault(11);
+      DISCORD_EPOCHDefault;
       if (null == id) {
         let str = "50+";
         return str;
@@ -63,8 +64,8 @@ export const getMessageCountText = function getMessageCountText(stateFromStores,
   return "0";
 };
 export const formatMobileMessageCountLabel = function formatMobileMessageCountLabel(count, id) {
-  return _formatMessageCountLabel(count, require(1236) /* getSystemLocale */.t.iTS3Xe, id);
+  return _formatMessageCountLabel(count, getSystemLocale.t.iTS3Xe, id);
 };
 export const formatMessageCountLabel = function formatMessageCountLabel(count, id) {
-  return _formatMessageCountLabel(count, require(1236) /* getSystemLocale */.t.rfAXDV, id);
+  return _formatMessageCountLabel(count, getSystemLocale.t.rfAXDV, id);
 };

@@ -4,6 +4,10 @@
 // Dependencies: [1960, 1962, 2]
 
 // Module 1959 (prefix)
+import set from "set" /* 2 */;
+import fromDatabaseTransaction from "fromDatabaseTransaction" /* 1960 */;
+import TableId from "TableId" /* 1962 */;
+
 let Dao;
 class Dao {
   constructor(arg0, arg1, arg2) {
@@ -35,7 +39,7 @@ prototype["withoutLogging"] = function withoutLogging() {
   const obj = Object.create(Dao.prototype);
   obj.originalPrefix = originalPrefix;
   const items = [originalPrefix];
-  const table = new require(1960) /* fromDatabaseTransaction */.Table(items, this.table.tableId, this.table.database, false);
+  const table = new fromDatabaseTransaction.Table(items, this.table.tableId, this.table.database, false);
   obj.table = table;
   return obj;
 };
@@ -74,7 +78,7 @@ prototype["getParentId"] = function getParentId(arg0) {
 prototype["put"] = function put(arg0, data) {
   let Replace = arg2;
   if (arg2 === undefined) {
-    Replace = require(1962) /* TableId */.ConflictOptions.Replace;
+    Replace = TableId.ConflictOptions.Replace;
   }
   const table = this.table;
   const items = [arg0];
@@ -93,13 +97,13 @@ prototype["delete"] = function delete(arg0) {
   return deleteResult;
 };
 prototype["transaction"] = function transaction(arg0, arg1) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const table = this.table;
   return table.transaction((transaction) => {
-    if (typeof outer1_2 !== "function") {
+    if (typeof closure_1_2 !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    const obj = Object.create(outer1_2.prototype);
+    const obj = Object.create(closure_1_2.prototype);
     obj.transaction = transaction;
     return closure_0(obj);
   }, arg1);
@@ -131,7 +135,7 @@ class DaoTransaction {
 }
 const prototype2 = DaoTransaction.prototype;
 DaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTransaction(prefix, tableId, transaction) {
-  const tableTransaction = new require(1960) /* fromDatabaseTransaction */.TableTransaction(prefix, tableId, transaction);
+  const tableTransaction = new fromDatabaseTransaction.TableTransaction(prefix, tableId, transaction);
   if (typeof DaoTransaction !== "function") {
     HermesBuiltin.throwTypeError();
   }
@@ -142,7 +146,7 @@ DaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTransaction(pre
 prototype2["put"] = function put(arg0, data) {
   let Replace = arg2;
   if (arg2 === undefined) {
-    Replace = require(1962) /* TableId */.ConflictOptions.Replace;
+    Replace = TableId.ConflictOptions.Replace;
   }
   const transaction = this.transaction;
   const items = [arg0];
@@ -160,7 +164,7 @@ prototype2["delete"] = function delete(arg0) {
   }
   return deleteResult;
 };
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Dao.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Dao.tsx");
 
 export { Dao };
 export { DaoTransaction };

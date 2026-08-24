@@ -1,50 +1,51 @@
-// Module ID: 12694
-// Function ID: 12695
+// Module ID: 12748
+// Function ID: 12749
 // Name: modifyRow
-// Dependencies: [19, 17, 4662, 1990, 21, 8157, 8340, 4661, 712, 589, 4796, 8186, 4066, 4063, 1297, 4734, 10066, 2]
+// Dependencies: [19, 17, 4669, 1991, 21, 8196, 8379, 4668, 712, 589, 4801, 8226, 4069, 4066, 1297, 4739, 10105, 2]
 // Exports: default
 
-// Module 12694 (modifyRow)
-import noop from "noop";
-import { View } from "set";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12748 (modifyRow)
+import ThemesDefault from "Themes" /* 712 */;
+import setOptionsDefault from "setOptions" /* 8196 */;
+import MediaGalleryItemType from "MediaGalleryItemType" /* 8379 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_6 from "trackCommunicationDisabled" /* 1991 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function modifyRow(arg0) {
-  arg0.contextType = require(8340) /* MediaGalleryItemType */.MessageContextType.SEARCH;
+  arg0.contextType = MediaGalleryItemType.MessageContextType.SEARCH;
   arg0.renderContentOnly = true;
 }
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
-let obj = new require("setOptions")();
+({ jsx: error, jsxs: closure_8 } = jsxProd);
+let obj = new setOptionsDefault();
 obj.setOptions({ renderReplies: false, renderReactions: false });
 obj = { container: null, header: null, authorRow: null, headerTimestamp: null };
-obj = { gap: require("Themes").space.PX_4 };
+obj = { gap: ThemesDefault.space.PX_4 };
 obj[0] = obj;
-createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8 };
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_8 };
 obj[1] = createCacheKey;
-obj[2] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+obj[2] = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
 obj[3] = { flex: 1 };
 let closure_11 = createCacheKey.createStyles(obj);
-let obj2 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/conversations/components/native/ConversationPreviewMessage.tsx");
+let obj2 = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
+const result = require("set").fileFinishedImporting("modules/conversations/components/native/ConversationPreviewMessage.tsx");
 
 export default function ConversationPreviewMessage(message) {
   message = message.message;
   const guildId = message.guildId;
   let setting;
   const tmp = callback2();
-  let obj = message(setting[9]);
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  obj = message(setting[9]);
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => roleStyle.roleStyle);
-  let obj1 = message(setting[9]);
-  const items1 = [trackCommunicationDisabled];
+  obj1 = message(setting[9]);
+  const items1 = [closure_6];
   const items2 = [guildId, message.author.id];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_6.getMember(guildId, message.author.id), items2);
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => closure_1_6.getMember(guildId, message.author.id), items2);
   message(setting[10]);
   if ("username" === stateFromStores) {
     let colorString;

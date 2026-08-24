@@ -1,17 +1,19 @@
-// Module ID: 15879
-// Function ID: 15880
+// Module ID: 15976
+// Function ID: 15977
 // Name: GuildVoiceChannelSubtitle
-// Dependencies: [19, 17, 1396, 8507, 21, 10056, 4219, 1236, 4661, 589, 15880, 6708, 6703, 15881, 15883, 11458, 2]
+// Dependencies: [19, 17, 1396, 8546, 21, 10095, 4223, 1236, 4668, 589, 15977, 6745, 6740, 15978, 15980, 11507, 2]
 
-// Module 15879 (GuildVoiceChannelSubtitle)
-import importAllResult from "noop";
-import { View } from "get ActivityIndicator";
-import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
-import { CHANNEL_LIST_SEARCH_LAYOUT as closure_6 } from "MessageEmbedTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15976 (GuildVoiceChannelSubtitle)
+import useStageParticipants from "useStageParticipants" /* 6745 */;
+import _modDef15978 from "module_15978" /* 15978 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
+import { CHANNEL_LIST_SEARCH_LAYOUT as closure_6 } from "MessageEmbedTypes" /* 8546 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 function GuildVoiceChannelSubtitle(channel) {
   channel = channel.channel;
   const voiceStates = channel.voiceStates;
@@ -21,10 +23,10 @@ function GuildVoiceChannelSubtitle(channel) {
   id = channel.id;
   guild_id = channel.guild_id;
   let obj = channel(id[9]);
-  const items = [handleStageInstanceCreateOrUpdate];
+  const items = [closure_5];
   const items1 = [channel.id];
   stateFromStores = obj.useStateFromStores(items, () => {
-    const stageInstanceByChannel = outer1_5.getStageInstanceByChannel(channel.id);
+    const stageInstanceByChannel = closure_1_5.getStageInstanceByChannel(channel.id);
     let topic;
     if (stageInstanceByChannel != null) {
       topic = stageInstanceByChannel.topic;
@@ -39,14 +41,14 @@ function GuildVoiceChannelSubtitle(channel) {
       if (null != stateFromStores) {
         let obj = { subtitle: null, muted: false, layout: null, channelId: null, guildId: null };
         obj[0] = tmp;
-        obj[2] = outer1_6;
+        obj[2] = closure_1_6;
         obj[3] = id;
         obj[4] = guild_id;
         return channel(id[10]).renderChannelSubtitle(obj);
       } else {
         obj = voiceStates;
         let formatToPlainStringResult = null;
-        if (!obj11.isLayoutCompact(outer1_6)) {
+        if (!obj11.isLayoutCompact(closure_1_6)) {
           formatToPlainStringResult = null;
           if (0 !== obj.length) {
             if (1 === length) {
@@ -91,7 +93,7 @@ function GuildVoiceChannelSubtitle(channel) {
                 }
                 nick1 = obj.getName(user1);
               }
-              const obj1 = { a: null, b: null, n: null };
+              obj1 = { a: null, b: null, n: null };
               obj1[0] = nick1;
               let nick2;
               if (obj[1] != tmp2) {
@@ -160,14 +162,14 @@ function GuildVoiceChannelSubtitle(channel) {
     if (null != stateFromStores) {
       let obj = { subtitle: null, muted: false, layout: null, channelId: null, guildId: null };
       obj[0] = tmp;
-      obj[2] = outer1_6;
+      obj[2] = closure_1_6;
       obj[3] = id;
       obj[4] = guild_id;
       return channel(id[10]).renderChannelSubtitle(obj);
     } else {
       obj = voiceStates;
       let formatToPlainStringResult = null;
-      if (!obj11.isLayoutCompact(outer1_6)) {
+      if (!obj11.isLayoutCompact(closure_1_6)) {
         formatToPlainStringResult = null;
         if (0 !== obj.length) {
           if (1 === length) {
@@ -212,7 +214,7 @@ function GuildVoiceChannelSubtitle(channel) {
               }
               nick1 = obj.getName(user1);
             }
-            const obj1 = { a: null, b: null, n: null };
+            obj1 = { a: null, b: null, n: null };
             obj1[0] = nick1;
             let nick2;
             if (obj[1] != tmp2) {
@@ -277,11 +279,9 @@ function GuildVoiceChannelSubtitle(channel) {
   }, items2)}</stateFromStores>;
 }
 function GuildVoiceChannelExtras(arg0) {
-  let channel;
-  let users;
   ({ channel, users } = arg0);
   const tmp = callback();
-  require(6708) /* useStageParticipants */;
+  useStageParticipants;
   let obj = { style: tmp.subtitle, children: null };
   let tmp5Result = 0 !== users.length;
   if (tmp5Result) {
@@ -292,7 +292,7 @@ function GuildVoiceChannelExtras(arg0) {
     obj[2] = channel.guild_id;
     obj[3] = closure_6;
     obj[4] = tmp4;
-    obj[1] = tmp5(importDefault(15881), obj);
+    obj[1] = tmp5(_modDef15978, obj);
     tmp5Result = tmp5(tmp6, obj);
   }
   obj[1] = tmp5Result;
@@ -301,9 +301,6 @@ function GuildVoiceChannelExtras(arg0) {
 let c3 = importAllResult;
 let closure_8 = createCacheKey.createStyles({ users: { marginTop: 4 }, subtitle: { marginEnd: 16 }, trailing: { paddingVertical: 4, alignItems: "center", alignSelf: "center" } });
 const memoResult = importAllResult.memo(function GuildVoiceChannelRow(channel) {
-  let onPress;
-  let trailing;
-  let voiceStates;
   channel = channel.channel;
   ({ voiceStates, trailing, onPress } = channel);
   if (channel.isGuildStageVoice()) {
@@ -323,13 +320,13 @@ const memoResult = importAllResult.memo(function GuildVoiceChannelRow(channel) {
     obj = { channel: null, voiceStates: null };
     obj[0] = channel;
     obj[1] = voiceStates;
-    obj[1] = tmp4(channel(11458).VocalChannelJoinButton, obj);
+    obj[1] = tmp4(channel(11507).VocalChannelJoinButton, obj);
     trailing = tmp4(View, obj);
   }
   obj[4] = trailing;
   obj[5] = <GuildVoiceChannelExtras channel={channel} voiceStates={voiceStates} users={mapped} />;
-  return jsx(onPress(15883), { onPress: callback, voiceStates, channel, subtitle: null, trailing: null, extras: null });
+  return jsx(onPress(15980), { onPress: callback, voiceStates, channel, subtitle: null, trailing: null, extras: null });
 });
-const result = require("handleStageInstanceCreateOrUpdate").fileFinishedImporting("modules/search/native/components/list/rows/GuildVoiceOrStageChannelRow.tsx");
+const result = require("set").fileFinishedImporting("modules/search/native/components/list/rows/GuildVoiceOrStageChannelRow.tsx");
 
 export default memoResult;

@@ -5,18 +5,14 @@
 // Exports: default
 
 // Module 388 (addListenersToPropsValue)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+import javaScriptFlagGetterAll from "javaScriptFlagGetter" /* 27 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 356 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import noop from "noop" /* 19 */;
 
-let c10;
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 function addListenersToPropsValue(addListener, arr) {
-  if (addListener instanceof importDefault(356)) {
+  if (addListener instanceof _isNativeReflectConstructDefault) {
     const obj = { propValue: null, listenerId: null };
     obj[0] = addListener;
     obj[1] = addListener.addListener(() => {
@@ -47,33 +43,33 @@ function addListenersToPropsValue(addListener, arr) {
     }
   }
 }
-({ useCallback: c5, useContext: closure_6, useEffect: error, useInsertionEffect: metroImportAll, useReducer: c9, useRef: c10 } = noop);
+({ useCallback: c5, useContext: closure_6, useEffect: error, useInsertionEffect: closure_8, useReducer: c9, useRef: c10 } = noop);
 
 export default function createAnimatedPropsHook(arg0) {
   const _require = arg0;
-  let closure_1 = _require(389).createAnimatedPropsMemoHook(arg0);
+  closure_1 = _require(389).createAnimatedPropsMemoHook(arg0);
   let obj = _require(389);
-  importAll = importAll(27).shouldUseSetNativePropsInFabric();
+  importAll = javaScriptFlagGetterAll.shouldUseSetNativePropsInFabric();
   return function useAnimatedProps(fn, items) {
     let obj = fn;
-    let callback2 = outer1_4(outer1_9((arg0) => arg0 + 1, 0), 2)[1];
-    let closure_2 = outer1_10(null);
-    let closure_3 = outer1_10(null);
-    let _slicedToArray = outer1_6(callback(outer1_3[4]).RootTagContext);
-    obj = callback2(() => new callback(outer2_3[5])(obj, () => {
+    let callback2 = closure_1_4(closure_1_9((arg0) => arg0 + 1, 0), 2)[1];
+    closure_2 = closure_1_10(null);
+    closure_3 = closure_1_10(null);
+    closure_4 = closure_1_6(callback(closure_1_3[4]).RootTagContext);
+    obj = callback2(() => new callback(closure_2_3[5])(obj, () => {
       const current = ref.current;
       let currentResult;
       if (current != null) {
         currentResult = current();
       }
       return currentResult;
-    }, obj, _slicedToArray), fn);
-    outer1_7(() => {
-      if (!callback(outer2_3[6]).shouldSignalBatch) {
+    }, obj, closure_4), fn);
+    closure_1_7(() => {
+      if (!callback(closure_2_3[6]).shouldSignalBatch) {
         const API = tmp(tmp2[6]).API;
         API.flushQueue();
       }
-      let closure_0 = null;
+      closure_0 = null;
       if (obj.__isNative) {
         const nativeEventEmitter = tmp(tmp2[6]).nativeEventEmitter;
         closure_0 = nativeEventEmitter.addListener("onUserDrivenAnimationEnded", (arg0) => {
@@ -87,9 +83,9 @@ export default function createAnimatedPropsHook(arg0) {
       };
     });
     callback2 = undefined;
-    callback2 = outer1_10(false);
+    callback2 = closure_1_10(false);
     items = [obj];
-    outer1_8(() => {
+    closure_1_8(() => {
       closure_1.current = true;
       obj.__attach();
       return () => {
@@ -104,12 +100,11 @@ export default function createAnimatedPropsHook(arg0) {
     }, items);
     const items1 = [obj];
     obj = {};
-    const tmp3 = outer1_5((arg0) => {
-      let obj;
-      let closure_0 = arg0;
+    const tmp3 = closure_1_5((arg0) => {
+      closure_0 = arg0;
       obj.setNativeView(arg0);
       items.current = () => {
-        let isPublicInstanceResult = callback(outer3_3[9]).isPublicInstance(callback);
+        let isPublicInstanceResult = callback(closure_3_3[9]).isPublicInstance(callback);
         if (!isPublicInstanceResult) {
           let tmpResult = tmp(tmp2[9]);
           let nativeScrollRef;
@@ -138,12 +133,12 @@ export default function createAnimatedPropsHook(arg0) {
           }
           isPublicInstanceResult = tmpResult.isPublicInstance(nativeScrollRef2);
         }
-        if (outer1_5.__isNative) {
+        if (closure_1_5.__isNative) {
           if (isPublicInstanceResult) {
             isPublicInstanceResult = !obj6.cxxNativeAnimatedEnabled();
           }
           if (isPublicInstanceResult) {
-            tmp2();
+            callback2();
           }
           obj6 = items(tmp2[3]);
         } else {
@@ -166,14 +161,14 @@ export default function createAnimatedPropsHook(arg0) {
                     callback();
                   }, 48);
                 } else {
-                  return tmp2();
+                  return callback2();
                 }
               } else {
                 return obj.setNativeProps(obj5.__getAnimatedValue());
               }
             }
           }
-          return tmp2();
+          return callback2();
         }
       };
       const tmp2 = (function getEventTarget(obj) {
@@ -190,25 +185,25 @@ export default function createAnimatedPropsHook(arg0) {
         }
         return scrollableNode;
       })(arg0);
-      let closure_1 = tmp2;
+      closure_1 = tmp2;
       items = [];
       const result = obj.__getNativeAnimatedEventTuples();
-      let closure_3 = result;
+      closure_3 = result;
       while (tmp4 !== undefined) {
-        let tmp6 = outer2_4;
-        let tmp7 = outer2_4(tmp5, 2);
+        let tmp6 = closure_2_4;
+        let tmp7 = closure_2_4(tmp5, 2);
         obj = tmp7[1];
         let __attachResult = obj.__attach(tmp2, tmp7[0]);
-        let tmp9 = outer2_11;
-        let tmp10 = outer2_11(obj, items);
+        let tmp9 = closure_2_11;
+        let tmp10 = closure_2_11(obj, items);
         continue;
       }
       return () => {
         items.current = null;
         while (tmp2 !== undefined) {
-          let tmp4 = outer3_4;
-          let tmp5 = outer3_4(tmp3, 2);
-          let obj = tmp5[1];
+          let tmp4 = closure_3_4;
+          let tmp5 = closure_3_4(tmp3, 2);
+          obj = tmp5[1];
           let tmp6 = closure_1;
           let __detachResult = obj.__detach(closure_1, tmp5[0]);
           continue;
@@ -224,12 +219,11 @@ export default function createAnimatedPropsHook(arg0) {
     obj.collapsable = false;
     const items2 = [
       obj,
-      callback2(outer1_3[7])(outer1_5((arg0) => {
-        let obj;
-        let closure_0 = arg0;
+      callback2(closure_1_3[7])(closure_1_5((arg0) => {
+        closure_0 = arg0;
         obj.setNativeView(arg0);
         items.current = () => {
-          let isPublicInstanceResult = callback(outer3_3[9]).isPublicInstance(callback);
+          let isPublicInstanceResult = callback(closure_3_3[9]).isPublicInstance(callback);
           if (!isPublicInstanceResult) {
             let tmpResult = tmp(tmp2[9]);
             let nativeScrollRef;
@@ -258,12 +252,12 @@ export default function createAnimatedPropsHook(arg0) {
             }
             isPublicInstanceResult = tmpResult.isPublicInstance(nativeScrollRef2);
           }
-          if (outer1_5.__isNative) {
+          if (closure_1_5.__isNative) {
             if (isPublicInstanceResult) {
               isPublicInstanceResult = !obj6.cxxNativeAnimatedEnabled();
             }
             if (isPublicInstanceResult) {
-              tmp2();
+              callback2();
             }
             obj6 = items(tmp2[3]);
           } else {
@@ -286,14 +280,14 @@ export default function createAnimatedPropsHook(arg0) {
                       callback();
                     }, 48);
                   } else {
-                    return tmp2();
+                    return callback2();
                   }
                 } else {
                   return obj.setNativeProps(obj5.__getAnimatedValue());
                 }
               }
             }
-            return tmp2();
+            return callback2();
           }
         };
         const tmp2 = (function getEventTarget(obj) {
@@ -310,25 +304,25 @@ export default function createAnimatedPropsHook(arg0) {
           }
           return scrollableNode;
         })(arg0);
-        let closure_1 = tmp2;
+        closure_1 = tmp2;
         items = [];
         const result = obj.__getNativeAnimatedEventTuples();
-        let closure_3 = result;
+        closure_3 = result;
         while (tmp4 !== undefined) {
-          let tmp6 = outer2_4;
-          let tmp7 = outer2_4(tmp5, 2);
+          let tmp6 = closure_2_4;
+          let tmp7 = closure_2_4(tmp5, 2);
           obj = tmp7[1];
           let __attachResult = obj.__attach(tmp2, tmp7[0]);
-          let tmp9 = outer2_11;
-          let tmp10 = outer2_11(obj, items);
+          let tmp9 = closure_2_11;
+          let tmp10 = closure_2_11(obj, items);
           continue;
         }
         return () => {
           items.current = null;
           while (tmp2 !== undefined) {
-            let tmp4 = outer3_4;
-            let tmp5 = outer3_4(tmp3, 2);
-            let obj = tmp5[1];
+            let tmp4 = closure_3_4;
+            let tmp5 = closure_3_4(tmp3, 2);
+            obj = tmp5[1];
             let tmp6 = closure_1;
             let __detachResult = obj.__detach(closure_1, tmp5[0]);
             continue;

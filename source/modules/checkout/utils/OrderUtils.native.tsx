@@ -1,24 +1,22 @@
-// Module ID: 7704
-// Function ID: 7705
+// Module ID: 7742
+// Function ID: 7743
 // Name: _discardDraftOrder
-// Dependencies: [5, 4357, 7400, 2]
+// Dependencies: [5, 4361, 7438, 2]
 // Exports: discardDraftOrder
 
-// Module 7704 (_discardDraftOrder)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import { OrderStatus } from "CustomCheckoutFlow";
+// Module 7742 (_discardDraftOrder)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { OrderStatus } from "CustomCheckoutFlow" /* 4361 */;
 
 const require = arg1;
 function _discardDraftOrder() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -30,7 +28,7 @@ function _discardDraftOrder() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -45,7 +43,7 @@ function _discardDraftOrder() {
               obj[0] = arg1;
               return obj;
             } else {
-              let asyncGeneratorStep = tmp3;
+              closure_2 = tmp3;
               let user = tmp5;
               let callback;
               user = undefined;
@@ -61,7 +59,7 @@ function _discardDraftOrder() {
                 throw arg1;
               } else if (arg0 === 2) {
                 c6 = 3;
-                let obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else if (!callback) {
@@ -71,7 +69,7 @@ function _discardDraftOrder() {
                 }
                 if (null != id) {
                   if (user.status === constants.DRAFT) {
-                    let c4 = 1;
+                    c4 = 1;
                     obj1 = callback(user[2]);
                     c5 = 3;
                     c6 = 1;
@@ -112,7 +110,7 @@ function _discardDraftOrder() {
     iter.next();
     return iter;
   });
-  const _discardDraftOrder = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -121,7 +119,7 @@ function _discardDraftOrder() {
   }
   return applyArgumentsResult;
 }
-const result = require("getOrders").fileFinishedImporting("modules/checkout/utils/OrderUtils.native.tsx");
+const result = require("set").fileFinishedImporting("modules/checkout/utils/OrderUtils.native.tsx");
 
 export const discardDraftOrder = function discardDraftOrder(arg0) {
   const self = this;

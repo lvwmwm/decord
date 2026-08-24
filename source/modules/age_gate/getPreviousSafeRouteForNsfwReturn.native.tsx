@@ -1,21 +1,21 @@
-// Module ID: 7290
-// Function ID: 7291
+// Module ID: 7328
+// Function ID: 7329
 // Name: getPreviousSafeRouteForNsfwReturn
-// Dependencies: [7291, 1391, 1980, 676, 5252, 5267, 2]
+// Dependencies: [7329, 1391, 1981, 676, 5257, 5272, 2]
 // Exports: default
 
-// Module 7290 (getPreviousSafeRouteForNsfwReturn)
-import getIdFromHistoryItem from "getIdFromHistoryItem";
-import closure_5 from "getIdFromHistoryItem";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import comparator from "comparator";
-import { ME } from "ME";
+// Module 7328 (getPreviousSafeRouteForNsfwReturn)
+import set from "set" /* 2 */;
+import ME2 from "ME" /* 676 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 5257 */;
+import getIdFromHistoryItem from "getIdFromHistoryItem" /* 7329 */;
+import closure_5 from "getIdFromHistoryItem" /* 7329 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "comparator" /* 1981 */;
 
-let c3;
-let c4;
-let obj1;
 ({ CHANNEL_PREFIX: obj1, GUILD_PREFIX: c3, getIdFromHistoryItem: c4 } = getIdFromHistoryItem);
-const result = require("comparator").fileFinishedImporting("modules/age_gate/getPreviousSafeRouteForNsfwReturn.native.tsx");
+const ME = ME2.ME;
+const result = set.fileFinishedImporting("modules/age_gate/getPreviousSafeRouteForNsfwReturn.native.tsx");
 
 export default function getPreviousSafeRouteForNsfwReturn() {
   let defaultChannel;
@@ -35,9 +35,9 @@ export default function getPreviousSafeRouteForNsfwReturn() {
         if (null != channel) {
           let tmp11 = require;
           let tmp12 = dependencyMap;
-          let obj4 = require(5252) /* shouldShowAgeGateForVoiceChannel */;
+          let obj4 = shouldShowAgeGateForVoiceChannel;
           if (!obj4.isChannelContentGated(channel)) {
-            let tmp11Result = tmp11(5267);
+            let tmp11Result = tmp11(5272);
             if (!tmp11Result.isChannelSpoilerGated(channel)) {
               let guild_id = channel.guild_id;
               if (guild_id == null) {
@@ -58,9 +58,9 @@ export default function getPreviousSafeRouteForNsfwReturn() {
           if (null != defaultChannel) {
             let tmp13 = require;
             let tmp14 = dependencyMap;
-            let obj7 = require(5252) /* shouldShowAgeGateForVoiceChannel */;
+            let obj7 = shouldShowAgeGateForVoiceChannel;
             if (!obj7.isChannelContentGated(defaultChannel)) {
-              let tmp13Result = tmp13(5267);
+              let tmp13Result = tmp13(5272);
               if (!tmp13Result.isChannelSpoilerGated(defaultChannel)) {
                 break;
               }

@@ -1,17 +1,16 @@
 // Module ID: 6655
 // Function ID: 6656
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 6586, 6656, 6595]
+// Dependencies: [41, 42, 93, 95, 98, 19, 6623]
 
 // Module 6655 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
+import _inheritsDefault from "_inherits" /* 98 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
-const Path = arg1;
+const FeDistantLight = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -23,21 +22,21 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
-class Path {
+class FeDistantLight {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Path);
-    tmp2 = __esModule;
-    obj = __esModule(Path);
-    tmp3 = __esModule;
+    tmp = closure_2(this, FeDistantLight);
+    tmp2 = closure_4;
+    obj = closure_4(FeDistantLight);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -51,32 +50,18 @@ class Path {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Path, require("_isNativeReflectConstruct"));
+_inheritsDefault(FeDistantLight, require("noop").Component);
 const items = [
   {
     key: "render",
     value: function render() {
-      const self = this;
-      const props = this.props;
-      let obj = {};
-      const merged = Object.assign(self(6586).extract(this, props));
-      obj.d = props.d;
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const obj2 = self(6586);
-      const merged1 = Object.assign(obj);
-      return jsx(importDefault(6656), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
+      const result = FeDistantLight(6623).warnUnimplementedFilter();
+      return null;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Path, items);
-importDefaultResultResult.displayName = "Path";
+const importDefaultResultResult = importDefaultResult(FeDistantLight, items);
+importDefaultResultResult.displayName = "FeDistantLight";
+importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

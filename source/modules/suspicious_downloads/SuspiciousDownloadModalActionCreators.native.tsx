@@ -1,14 +1,18 @@
-// Module ID: 12416
-// Function ID: 12417
-// Dependencies: [4342, 12417, 2007, 2]
+// Module ID: 12468
+// Function ID: 12469
+// Dependencies: [4346, 12469, 2008, 2]
 
-// Module 12416
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadModalActionCreators.native.tsx");
+// Module 12468
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+
+const result = set.fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadModalActionCreators.native.tsx");
 
 export default {
   show(href) {
-    let obj = importDefault(4342);
+    let obj = ACTION_SHEET_HEIGHT_HALFDefault;
     obj = { href };
-    obj.openLazy(require(2007) /* asyncRequireImpl */(12417, dependencyMap.paths), "suspicious-download", obj);
+    obj.openLazy(asyncRequireImpl(12469, dependencyMap.paths), "suspicious-download", obj);
   }
 };

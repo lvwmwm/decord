@@ -1,49 +1,41 @@
-// Module ID: 9549
-// Function ID: 9550
+// Module ID: 9586
+// Function ID: 9587
 // Name: LinkButton
-// Dependencies: [19, 17, 676, 1978, 21, 4661, 4090, 698, 4734, 9550, 500, 1977, 1236, 2]
+// Dependencies: [19, 17, 676, 1979, 21, 4668, 4093, 698, 4739, 9587, 500, 1978, 1236, 2]
 // Exports: default
 
-// Module 9549 (LinkButton)
-import noop from "noop";
-import { Pressable } from "get ActivityIndicator";
-import { AnalyticEvents } from "ME";
-import { CHANGELOG_URL } from "CHANGELOG_MODAL_KEY";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9586 (LinkButton)
+import Text from "Text" /* 4739 */;
+import closure_3 from "noop" /* 19 */;
+import { Pressable } from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { CHANGELOG_URL } from "CHANGELOG_MODAL_KEY" /* 1979 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function LinkButton(arg0) {
-  let lineClamp;
-  let text;
   ({ lineClamp, text } = arg0);
   const tmp = callback3();
   obj = {
     onPress() {
-      let obj = callback(4090);
+      let obj = callback(4093);
       obj.openURL(closure_6);
       obj = { cta_type: "profile_bio", target: closure_6 };
       callback(698).track(constants.CHANGE_LOG_CTA_CLICKED, obj);
     },
     style: tmp.link,
-    children: callback(require(4734) /* Text */.Text, obj)
+    children: callback(Text.Text, obj)
   };
   obj = { variant: "text-md/normal", color: "text-link", lineClamp, style: tmp.link, children: items };
   items = ["\n", text];
   return callback2(Pressable, obj);
 }
-({ jsxs: error, jsx: metroImportAll, Fragment: c9 } = jsxProd);
+({ jsxs: error, jsx: closure_8, Fragment: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles({ text: { alignSelf: "stretch", textAlignVertical: "top", width: "100%", flexGrow: 1, paddingTop: 2, lineHeight: 24 }, span: { alignSelf: "stretch", textAlignVertical: "bottom", width: "100%", flexGrow: 1, display: "flex", paddingBottom: 2 }, link: { alignSelf: "stretch", textAlignVertical: "bottom", width: "100%", flexGrow: 1, bottom: -4, position: "relative" } });
-const result = require("ME").fileFinishedImporting("modules/profile_customization/native/BioText.tsx");
+const result = require("set").fileFinishedImporting("modules/profile_customization/native/BioText.tsx");
 
 export default function BioText(lineClamp) {
-  let bio;
-  let placeholder;
-  let textVariant;
-  let userId;
   ({ placeholder, bio } = lineClamp);
   lineClamp = lineClamp.lineClamp;
   ({ userId, textVariant } = lineClamp);
@@ -86,14 +78,14 @@ export default function BioText(lineClamp) {
     if (tmp3) {
       str2 = "text-muted";
     }
-    const obj1 = { children: null };
+    obj1 = { children: null };
     obj[1] = str2;
     obj[2] = lineClamp;
     obj[3] = tmp.span;
     const intl2 = tmp12(tmp6[12]).intl;
     const obj2 = { blogHook: null };
     obj2[0] = function blogHook(text) {
-      return outer1_8(outer1_11, { lineClamp, text }, arg1);
+      return closure_1_8(closure_1_11, { lineClamp, text }, arg1);
     };
     obj[4] = intl2.format(bio(tmp6[12]).t.RCYeBL, obj2);
     items2[1] = closure_8(bio(tmp6[8]).Text, obj, "changelog-cta");

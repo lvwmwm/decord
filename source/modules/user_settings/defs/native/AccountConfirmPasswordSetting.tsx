@@ -1,27 +1,32 @@
-// Module ID: 14136
-// Function ID: 14137
+// Module ID: 14204
+// Function ID: 14205
 // Name: route
-// Dependencies: [8198, 676, 10669, 1236, 8623, 2]
+// Dependencies: [8238, 676, 10708, 1236, 8660, 2]
 
-// Module 14136 (route)
-import createToggle from "createToggle";
+// Module 14204 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import UserSettingsConfirmPasswordWrapped from "UserSettingsConfirmPasswordWrapped" /* 8660 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["7qKDrE"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["7qKDrE"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT,
   unsearchable: true,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.ACCOUNT_CONFIRM_PASSWORD,
+  route: ME.UserSettingsSections.ACCOUNT_CONFIRM_PASSWORD,
   getComponent() {
-    return require(8623) /* UserSettingsConfirmPasswordWrapped */.UserSettingsConfirmPasswordWrapped;
+    return UserSettingsConfirmPasswordWrapped.UserSettingsConfirmPasswordWrapped;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/AccountConfirmPasswordSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/AccountConfirmPasswordSetting.tsx");
 
 export default route;

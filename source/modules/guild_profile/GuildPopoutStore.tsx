@@ -1,20 +1,23 @@
-// Module ID: 13428
-// Function ID: 13429
+// Module ID: 13486
+// Function ID: 13487
 // Name: initialize
-// Dependencies: [1218, 7301, 589, 709, 2]
+// Dependencies: [1218, 7339, 589, 709, 2]
 
-// Module 13428 (initialize)
-import fetchFingerprint from "fetchFingerprint";
-import { Store } from "initialize";
+// Module 13486 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import _startLurking from "_startLurking" /* 7339 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
 
-const require = arg1;
+require = arg1;
 let closure_3 = { UNSET: "unset", FETCHING: "fetching", FAILED: "failed", SUCCEEDED: "succeeded" };
 let closure_4 = { guilds: {} };
+const Store = initializeDefault.Store;
 class GuildPopoutStore extends Store {
 }
 const prototype = GuildPopoutStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint);
+  this.waitFor(closure_2);
 };
 prototype["isFetchingGuild"] = function isFetchingGuild(arg0) {
   let tmp2 = null != tmp;
@@ -38,7 +41,7 @@ prototype["hasFetchFailed"] = function hasFetchFailed(arg0) {
   return tmp2;
 };
 GuildPopoutStore.displayName = "GuildPopoutStore";
-const guildPopoutStore = new GuildPopoutStore(require("dispatcher"), {
+const guildPopoutStore = new GuildPopoutStore(dispatcherDefault, {
   GUILD_POPOUT_FETCH_START: function handleFetchStart(guildId) {
     guildId = guildId.guildId;
     const obj = {};
@@ -48,7 +51,7 @@ const guildPopoutStore = new GuildPopoutStore(require("dispatcher"), {
   },
   GUILD_POPOUT_FETCH_SUCCESS: function handleFetchSuccess(guildId) {
     guildId = guildId.guildId;
-    let obj = require(7301) /* _startLurking */;
+    let obj = _startLurking;
     obj = {};
     const discoverableGuild = obj.makeDiscoverableGuild(guildId.guild);
     const merged = Object.assign(closure_4.guilds[guildId]);
@@ -64,6 +67,6 @@ const guildPopoutStore = new GuildPopoutStore(require("dispatcher"), {
     closure_4.guilds[guildId] = obj;
   }
 });
-const result = require("initialize").fileFinishedImporting("modules/guild_profile/GuildPopoutStore.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_profile/GuildPopoutStore.tsx");
 
 export default guildPopoutStore;

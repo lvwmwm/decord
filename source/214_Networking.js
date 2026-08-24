@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 214 (Networking)
+import getAll from "get" /* 30 */;
 
-export default require("get").getEnforcing("Networking");
+
+export default getAll.getEnforcing("Networking");

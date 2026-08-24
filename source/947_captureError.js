@@ -4,12 +4,14 @@
 // Dependencies: [848, 819, 840, 869]
 
 // Module 947 (captureError)
-const require = arg1;
+import getClient from "getClient" /* 848 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.captureError = function captureError(error, prompt_execution, arg2) {
   try {
-    let obj = require(848) /* getClient */;
+    let obj = getClient;
     if (obj.getClient()) {
       let tmpResult = tmp(819);
       const activeSpan = tmpResult.getActiveSpan();
@@ -28,7 +30,7 @@ arg5.captureError = function captureError(error, prompt_execution, arg2) {
         str = "handler_execution";
       }
       obj = { mechanism: null };
-      const obj1 = { type: "auto.ai.mcp_server", handled: false, data: null };
+      obj1 = { type: "auto.ai.mcp_server", handled: false, data: null };
       const obj2 = { error_type: null };
       obj2[0] = str;
       const merged = Object.assign(arg2);

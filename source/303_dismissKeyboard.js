@@ -4,9 +4,11 @@
 // Dependencies: [144]
 
 // Module 303 (dismissKeyboard)
-const require = arg1;
+import set from "set" /* 144 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.default = function dismissKeyboard() {
-  const _default = require(144) /* set */.default;
-  _default.blurTextInput(require(144) /* set */.default.currentlyFocusedInput());
+  const _default = set.default;
+  _default.blurTextInput(set.default.currentlyFocusedInput());
 };

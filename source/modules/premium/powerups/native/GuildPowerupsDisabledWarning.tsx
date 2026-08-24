@@ -1,32 +1,34 @@
-// Module ID: 11714
-// Function ID: 11715
+// Module ID: 11763
+// Function ID: 11764
 // Name: GuildPowerupsDisabledWarning
-// Dependencies: [17, 21, 4661, 712, 8078, 4734, 2]
+// Dependencies: [17, 21, 4668, 712, 8117, 4739, 2]
 // Exports: default
 
-// Module 11714 (GuildPowerupsDisabledWarning)
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11763 (GuildPowerupsDisabledWarning)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import WarningIcon from "WarningIcon" /* 8117 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
+const View = get_ActivityIndicator.View;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { container: null, text: null };
-obj = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, borderColor: require("Themes").colors.STATUS_WARNING_BACKGROUND, borderWidth: 1, borderRadius: require("Themes").radii.lg, padding: require("Themes").space.PX_12, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING };
+obj = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_8, borderColor: ThemesDefault.colors.STATUS_WARNING_BACKGROUND, borderWidth: 1, borderRadius: ThemesDefault.radii.lg, padding: ThemesDefault.space.PX_12, backgroundColor: ThemesDefault.colors.BACKGROUND_FEEDBACK_WARNING };
 obj[0] = obj;
 obj[1] = { flex: 1 };
 let closure_6 = createCacheKey.createStyles(obj);
-const result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsDisabledWarning.tsx");
+const result = set.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsDisabledWarning.tsx");
 
 export default function GuildPowerupsDisabledWarning(children) {
   const tmp = callback3();
   let obj = { style: tmp.container, children: null };
-  obj = { color: null, size: "md" };
-  obj[0] = importDefault(712).colors.TEXT_FEEDBACK_WARNING;
-  const items = [callback(require(8078) /* WarningIcon */.WarningIcon, obj), ];
+  obj = { color: ThemesDefault.colors.TEXT_FEEDBACK_WARNING, size: "md" };
+  const items = [callback(WarningIcon.WarningIcon, obj), ];
   obj = { style: tmp.text, variant: "text-md/semibold", color: "text-feedback-warning", children: children.text };
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  items[1] = callback(Text.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 };

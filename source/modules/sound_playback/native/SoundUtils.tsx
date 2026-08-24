@@ -1,22 +1,23 @@
-// Module ID: 10044
-// Function ID: 10045
+// Module ID: 10083
+// Function ID: 10084
 // Name: _createSound
 // Dependencies: [17, 1625, 500, 2]
 // Exports: MobileAudioSound
 
-// Module 10044 (_createSound)
-import { NativeModules } from "get ActivityIndicator";
-import isMetaQuest from "isMetaQuest";
-import isMetaQuest from "isMetaQuest";
+// Module 10083 (_createSound)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import isMetaQuest from "isMetaQuest" /* 1625 */;
 
+const NativeModules = get_ActivityIndicator.NativeModules;
 let c3 = 0;
 class RNSound {
   constructor(arg0, arg1, arg2, arg3) {
     obj = Object.create(new.target.prototype);
     obj._volume = importDefault;
     obj._loaded = false;
-    tmp = +c3;
-    c3 = tmp + 1;
+    tmp = +closure_3;
+    closure_3 = tmp + 1;
     obj._key = tmp;
     obj._duration = -1;
     obj._numberOfChannels = -1;
@@ -30,7 +31,7 @@ class RNSound {
 const prototype = RNSound.prototype;
 prototype["_createSound"] = function _createSound(name, usage, fn) {
   const self = this;
-  let closure_0 = fn;
+  closure_0 = fn;
   const DCDSoundManager = NativeModules.DCDSoundManager;
   DCDSoundManager.prepare(name, usage, this._key, (arg0, arg1) => {
     if (arg1) {
@@ -113,9 +114,9 @@ obj = { call_calling: obj.VOICE, call_ringing: null, call_ringing_halloween: nul
 obj[1] = isMetaQuest.isMetaQuest() ? obj.MEDIA : obj.RING_TONE;
 obj[2] = isMetaQuest.isMetaQuest() ? obj.MEDIA : obj.RING_TONE;
 ({ VOICE: obj2[3], VOICE: obj2[4], VOICE: obj2[5], VOICE: obj2[6], NOTIFICATION: obj2[7], NOTIFICATION: obj2[8], NOTIFICATION: obj2[9], NOTIFICATION: obj2[10], NOTIFICATION: obj2[11], NOTIFICATION: obj2[12], VOICE: obj2[13], VOICE: obj2[14], VOICE: obj2[15], VOICE: obj2[16], VOICE: obj2[17], VOICE: obj2[18], VOICE: obj2[19], VOICE: obj2[20], VOICE: obj2[21], VOICE: obj2[22], VOICE: obj2[23], VOICE: obj2[24], VOICE: obj2[25], VOICE: obj2[26], VOICE: obj2[27], MEDIA: obj2[28], NOTIFICATION_NO_VIBRATION: obj2[29], NOTIFICATION_NO_VIBRATION: obj2[30], NOTIFICATION_NO_VIBRATION: obj2[31], NOTIFICATION_NO_VIBRATION: obj2[32] } = obj);
-const result = require("set").fileFinishedImporting("modules/sound_playback/native/SoundUtils.tsx");
+const result = set.fileFinishedImporting("modules/sound_playback/native/SoundUtils.tsx");
 let fn = (name, arg1, _volume, outputChannel) => {
-  const obj = Object.create(new.target.prototype);
+  obj = Object.create(new.target.prototype);
   obj.name = name;
   obj.usage = obj[arg1];
   obj._volume = _volume;
@@ -132,7 +133,7 @@ Object.defineProperty(prototype2, "volume", {
 Object.defineProperty(prototype2, "volume", {
   get: undefined,
   set: function volume(_volume) {
-    let closure_0 = _volume;
+    closure_0 = _volume;
     this._volume = _volume;
     this.ensureSound().then((arg0) => {
       arg0.volume = closure_0;
@@ -154,7 +155,7 @@ prototype2["playWithListener"] = function playWithListener() {
   const self = this;
   return new Promise((arg0, arg1) => {
     const _self = arg0;
-    let closure_1 = arg1;
+    closure_1 = arg1;
     const ensureSoundResult = _self.ensureSound();
     _self.ensureSound().then((duration) => {
       let tmp = null != duration.duration;
@@ -203,13 +204,10 @@ prototype2["ensureSound"] = function ensureSound() {
   let soundPromise = this.soundPromise;
   if (soundPromise == null) {
     soundPromise = new Promise((arg0, arg1) => {
-      let _volume;
-      let name;
-      let usage;
-      let closure_0 = arg0;
-      let closure_1 = arg1;
+      closure_0 = arg0;
+      closure_1 = arg1;
       ({ name, usage, _volume } = closure_0);
-      if (typeof outer1_4 !== "function") {
+      if (typeof closure_1_4 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       const fn = (arg0) => {
@@ -220,11 +218,11 @@ prototype2["ensureSound"] = function ensureSound() {
         }
         callback(obj);
       };
-      const obj = Object.create(outer1_4.prototype);
+      obj = Object.create(closure_1_4.prototype);
       obj._volume = _volume;
       obj._loaded = false;
-      const outer1_3 = tmp2 + 1;
-      obj._key = +outer1_3;
+      closure_3 = tmp2 + 1;
+      obj._key = +closure_3;
       obj._duration = -1;
       obj._numberOfChannels = -1;
       obj._volume = 1;

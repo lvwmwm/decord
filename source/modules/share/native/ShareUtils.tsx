@@ -1,25 +1,24 @@
-// Module ID: 13362
-// Function ID: 13363
+// Module ID: 13420
+// Function ID: 13421
 // Name: _sendShareMessage
-// Dependencies: [5, 4825, 4663, 4094, 10455, 8466, 7524, 4829, 4828, 7436, 8451, 7427, 2]
+// Dependencies: [5, 4830, 4670, 4097, 10494, 8505, 7562, 4834, 4833, 7474, 8490, 7465, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 13362 (_sendShareMessage)
-import dispatcher from "dispatcher";
-import { DraftType } from "handleChanged";
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+// Module 13420 (_sendShareMessage)
+import dispatcherDefault from "dispatcher" /* 4097 */;
+import registerAssetDefault from "registerAsset" /* 10494 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { DraftType } from "handleChanged" /* 4830 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4670 */;
 
 const require = arg1;
 function _sendShareMessage() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
       if (constants === 2) {
         constants = 3;
         HermesBuiltin.throwTypeError();
@@ -31,7 +30,7 @@ function _sendShareMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -47,7 +46,7 @@ function _sendShareMessage() {
               return obj;
             } else {
               let id = tmp4;
-              let dependencyMap = 0;
+              dependencyMap = 0;
               let lib;
               let lib2;
               dependencyMap = undefined;
@@ -66,7 +65,7 @@ function _sendShareMessage() {
               throw arg1;
             } else if (arg0 === 2) {
               constants = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -79,13 +78,13 @@ function _sendShareMessage() {
               if (dependencyMap == null) {
                 lib2 = "";
               }
-              constants = lib2(7436).parse(lib2, lib2);
+              constants = lib2(7474).parse(lib2, lib2);
               if (c4.length > 0) {
-                let obj2 = lib2(8466);
+                let obj2 = lib2(8505);
                 obj2.clearAll(id, c4.ChannelMessage);
               }
-              future = new lib(8451).Future();
-              let obj3 = lib2(7427);
+              future = new lib(8490).Future();
+              let obj3 = lib2(7465);
               obj2 = { location: null, doNotNotifyOnError: true, attachmentsToUpload: null, onAttachmentUploadError: null };
               obj2[0] = constants.SHARE_MODAL;
               obj2[2] = c4;
@@ -126,7 +125,7 @@ function _sendShareMessage() {
     iter.next();
     return iter;
   });
-  const _sendShareMessage = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -135,11 +134,11 @@ function _sendShareMessage() {
   }
   return applyArgumentsResult;
 }
-const result = require("MESSAGE_GROUP_SPACING").fileFinishedImporting("modules/share/native/ShareUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/share/native/ShareUtils.tsx");
 
 export const showInformationToast = function showInformationToast(intl3) {
-  let obj = importDefault(4094);
-  obj = { key: "INFORMATION_TOAST-" + intl3, content: intl3, icon: importDefault(10455) };
+  let obj = dispatcherDefault;
+  obj = { key: "INFORMATION_TOAST-" + intl3, content: intl3, icon: registerAssetDefault };
   obj.open(obj);
 };
 export const sendShareMessage = function sendShareMessage(arg0) {

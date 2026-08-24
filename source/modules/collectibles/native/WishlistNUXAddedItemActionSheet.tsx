@@ -1,39 +1,38 @@
-// Module ID: 9180
-// Function ID: 9181
+// Module ID: 9217
+// Function ID: 9218
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1922, 8931, 21, 4661, 712, 589, 1949, 4342, 8929, 7159, 9181, 6950, 9182, 4734, 1236, 6687, 4745, 2]
+// Dependencies: [32, 19, 17, 1922, 8968, 21, 4668, 712, 589, 1949, 4346, 8966, 7197, 9218, 6988, 9219, 4739, 1236, 6723, 4750, 2]
 // Exports: default
 
-// Module 9180 (WishlistNUXAddedItemActionSheet)
-import _slicedToArray from "_slicedToArray";
-import Button from "Button";
-import { View } from "getSystemLocale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9217 (WishlistNUXAddedItemActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8968 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
 let require = arg1;
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { container: null, textContainer: null, subtitle: null };
-createCacheKey = { alignItems: "center", padding: require("Themes").space.PX_16, gap: require("Themes").space.PX_24 };
+createCacheKey = { alignItems: "center", padding: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_24 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { alignItems: "center", paddingHorizontal: require("Themes").space.PX_8, gap: require("Themes").space.PX_8 };
+createCacheKey[1] = { alignItems: "center", paddingHorizontal: ThemesDefault.space.PX_8, gap: ThemesDefault.space.PX_8 };
 createCacheKey[2] = { textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { alignItems: "center", paddingHorizontal: require("Themes").space.PX_8, gap: require("Themes").space.PX_8 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/WishlistNUXAddedItemActionSheet.tsx");
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { alignItems: "center", paddingHorizontal: ThemesDefault.space.PX_8, gap: ThemesDefault.space.PX_8 };
+const result = require("set").fileFinishedImporting("modules/collectibles/native/WishlistNUXAddedItemActionSheet.tsx");
 
 export default function WishlistNUXAddedItemActionSheet(product) {
   product = product.product;
-  const require = product;
+  require = product;
   let stateFromStores;
   let memo;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = require(memo[8]);
-  let items = [mergeGuildAvatar];
+  let items = [closure_6];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser(), []);
   const items1 = [product];
   memo = React.useMemo(() => {
@@ -42,7 +41,7 @@ export default function WishlistNUXAddedItemActionSheet(product) {
       ({ items: obj2[1], previewAssets: obj2[2] } = tmp);
       return obj;
     } else {
-      const first = outer1_3(tmp.items, 1)[0];
+      const first = closure_1_3(tmp.items, 1)[0];
       let tmp5;
       if (null != first) {
         obj = { type: "single", item: null };
@@ -65,7 +64,7 @@ export default function WishlistNUXAddedItemActionSheet(product) {
       obj[0] = tmp4.id;
       const items = [tmp(tmp2[12]).COLLECTIBLES_SHOP];
       obj[1] = items;
-      obj[2] = outer1_7.WISHLIST;
+      obj[2] = closure_1_7.WISHLIST;
       tmp(tmp2[11])(obj);
       const tmpResult = tmp(tmp2[11]);
     }
@@ -75,14 +74,14 @@ export default function WishlistNUXAddedItemActionSheet(product) {
     if (null != memo) {
       const obj = { collectiblesItemData: null };
       obj[0] = tmp;
-      tmp2 = outer1_8(product(memo[13]).CollectiblesPreview, obj);
+      tmp2 = closure_1_8(product(memo[13]).CollectiblesPreview, obj);
     }
     return tmp2;
   }, items3);
   obj = { children: null };
   obj = { style: tmp.container, children: null };
   const items4 = [callback(stateFromStores(memo[15]), { renderPreview: callback2 }), , ];
-  const obj1 = { style: tmp.textContainer, children: null };
+  obj1 = { style: tmp.textContainer, children: null };
   const obj2 = { variant: "heading-lg/extrabold", color: "text-strong", accessibilityRole: "header", children: null };
   const intl = require(memo[17]).intl;
   obj2[3] = intl.string(require(memo[17]).t["3T2jbf"]);

@@ -1,23 +1,28 @@
-// Module ID: 15709
-// Function ID: 15710
+// Module ID: 15778
+// Function ID: 15779
 // Name: context
 // Dependencies: [19, 21, 1494, 712, 2]
 // Exports: ICYMIContextProvider, useICYMIContextConstructor
 
-// Module 15709 (context)
-import { jsx } from "jsxProd";
+// Module 15778 (context)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 
-const context = require("noop").createContext({ width: 0, margin: 0, inset: 0 });
-const result = require("useWindowDimensions").fileFinishedImporting("modules/icymi/native/ICYMIContext.tsx");
+const jsx = jsxProd.jsx;
+const context = noop.createContext({ width: 0, margin: 0, inset: 0 });
+const result = set.fileFinishedImporting("modules/icymi/native/ICYMIContext.tsx");
 
 export const ICYMIContext = context;
 export const useICYMIContextConstructor = function useICYMIContextConstructor() {
-  const bound = Math.min(importDefault(1494)().width, 480);
-  const PX_16 = importDefault(712).space.PX_16;
+  const bound = Math.min(useWindowDimensionsDefault().width, 480);
+  const PX_16 = ThemesDefault.space.PX_16;
   return { width: bound, margin: PX_16, inset: PX_16 + 38 };
 };
 export const ICYMIContextProvider = function ICYMIContextProvider(children) {
-  const bound = Math.min(importDefault(1494)().width, 480);
-  const PX_16 = importDefault(712).space.PX_16;
+  const bound = Math.min(useWindowDimensionsDefault().width, 480);
+  const PX_16 = ThemesDefault.space.PX_16;
   return <context.Provider value={{ width: bound, margin: PX_16, inset: PX_16 + 38 }}>{arg0.children}</context.Provider>;
 };

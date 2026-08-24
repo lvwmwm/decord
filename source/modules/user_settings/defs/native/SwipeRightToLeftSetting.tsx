@@ -1,21 +1,27 @@
-// Module ID: 14781
-// Function ID: 14782
+// Module ID: 14845
+// Function ID: 14846
 // Name: route
-// Dependencies: [8198, 676, 4066, 1306, 1236, 10669, 14782, 2]
+// Dependencies: [8238, 676, 4069, 1306, 1236, 10708, 14846, 2]
 
-// Module 14781 (route)
-import createToggle from "createToggle";
+// Module 14845 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import create from "create" /* 1306 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["D/Dkcd"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["D/Dkcd"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CHAT,
+  parent: MobileUserSettings.MobileUserSettings.CHAT,
   useTrailing: function useSwipeRightToLeftSettingTrailing() {
-    const SwipeRightToLeftModeSetting = require(4066) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+    const SwipeRightToLeftModeSetting = explicitContentFromProto.SwipeRightToLeftModeSetting;
     const setting = SwipeRightToLeftModeSetting.useSetting();
-    if (setting === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY) {
+    if (setting === create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY) {
       const intl2 = tmp(1236).intl;
       let stringResult = intl2.string(tmp(1236).t["3tYNDS"]);
     } else {
@@ -30,12 +36,12 @@ obj = {
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.SWIPE_RIGHT_TO_LEFT,
+  route: ME.UserSettingsSections.SWIPE_RIGHT_TO_LEFT,
   getComponent() {
-    return require(14782) /* UserSettingsSwipeRightToLeft */.default;
+    return require(14846) /* UserSettingsSwipeRightToLeft */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/SwipeRightToLeftSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/SwipeRightToLeftSetting.tsx");
 
 export default route;

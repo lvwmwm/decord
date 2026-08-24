@@ -1,27 +1,29 @@
-// Module ID: 14829
-// Function ID: 14830
+// Module ID: 14893
+// Function ID: 14894
 // Name: useHighlightNotifications
-// Dependencies: [1910, 8198, 676, 589, 10669, 1236, 14830, 2]
+// Dependencies: [1910, 8238, 676, 589, 10708, 1236, 14894, 2]
 // Exports: useHighlightNotifications
 
-// Module 14829 (useHighlightNotifications)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import createToggle from "createToggle";
+// Module 14893 (useHighlightNotifications)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 function useHighlightNotifications() {
-  const items = [createGuildRecordFromRust];
-  return require(589) /* initialize */.useStateFromStores(items, () => guildCount.getGuildCount() > 0);
+  const items = [closure_2];
+  return initialize.useStateFromStores(items, () => guildCount.getGuildCount() > 0);
 }
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.o8Bypv);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.o8Bypv);
   },
   parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["Vw/Xn8"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["Vw/Xn8"]);
   },
   usePredicate: useHighlightNotifications,
   screen: createToggle
@@ -29,11 +31,11 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.HIGHLIGHT_NOTIFICATIONS,
   getComponent() {
-    return require(14830) /* Row */.default;
+    return require(14894) /* Row */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/HighlightNotificationsSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/HighlightNotificationsSetting.tsx");
 
 export default createToggle;
 export { useHighlightNotifications };

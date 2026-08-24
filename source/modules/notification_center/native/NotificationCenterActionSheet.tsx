@@ -1,61 +1,59 @@
-// Module ID: 15663
-// Function ID: 15664
+// Module ID: 15732
+// Function ID: 15733
 // Name: NotificationCenterActionSheet
-// Dependencies: [19, 5384, 676, 21, 589, 15664, 8484, 4342, 8479, 8482, 7159, 8488, 7360, 7175, 6949, 1236, 7177, 6885, 11594, 10003, 15665, 10876, 8489, 4338, 7355, 2]
+// Dependencies: [19, 5389, 676, 21, 589, 15733, 8523, 4346, 8518, 8521, 7197, 8527, 7398, 7213, 6987, 1236, 7215, 6923, 11643, 10042, 15734, 10915, 8528, 4342, 7393, 2]
 // Exports: default
 
-// Module 15663 (NotificationCenterActionSheet)
-import BellIcon from "BellIcon";
-import findOrCreateMessageRecord from "findOrCreateMessageRecord";
-import { UserSettingsSections } from "ME";
-import jsxProd from "BookmarkIcon";
+// Module 15732 (NotificationCenterActionSheet)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "findOrCreateMessageRecord" /* 5389 */;
+import { UserSettingsSections } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let closure_6;
-let error;
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
-const result = require("ME").fileFinishedImporting("modules/notification_center/native/NotificationCenterActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/notification_center/native/NotificationCenterActionSheet.tsx");
 
 export default function NotificationCenterActionSheet() {
   let obj = roleFilter(589);
-  let items = [findOrCreateMessageRecord];
+  let items = [closure_4];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ everyoneFilter: lib.everyoneFilter, roleFilter: lib.roleFilter }));
   roleFilter = stateFromStoresObject.roleFilter;
   const everyoneFilter = stateFromStoresObject.everyoneFilter;
   const items1 = [everyoneFilter, roleFilter];
-  const dependencyMap = hasForLaterAccess.useCallback((arg0) => {
-    let obj = everyoneFilter(15664);
+  dependencyMap = hasForLaterAccess.useCallback((arg0) => {
+    let obj = everyoneFilter(15733);
     obj = { roleFilter, everyoneFilter };
     const merged = Object.assign(arg0);
     obj.setGuildFilter(obj);
   }, items1);
-  let obj1 = roleFilter(8484);
+  obj1 = roleFilter(8523);
   const isForLaterExperimentOn = obj1.useIsForLaterExperimentOn("NotificationCenterActionSheet");
-  let obj2 = roleFilter(8484);
+  let obj2 = roleFilter(8523);
   hasForLaterAccess = obj2.useHasForLaterAccess("NotificationCenterActionSheet");
   const items2 = [hasForLaterAccess];
-  findOrCreateMessageRecord = hasForLaterAccess.useCallback((BOOKMARK) => {
-    everyoneFilter(4342).hideActionSheet();
+  closure_4 = hasForLaterAccess.useCallback((BOOKMARK) => {
+    everyoneFilter(4346).hideActionSheet();
     if (hasForLaterAccess) {
-      roleFilter(8488).showForLaterModal(BOOKMARK);
-      const obj2 = roleFilter(8488);
+      roleFilter(8527).showForLaterModal(BOOKMARK);
+      const obj2 = roleFilter(8527);
     } else {
-      const items = [tmp(7159).FOR_LATER_ROADBLOCK];
-      tmp(8479)(roleFilter(8482).EntitlementFeatureNames.SAVED_MESSAGES, undefined, items);
-      const tmpResult = tmp(8479);
+      const items = [tmp(7197).FOR_LATER_ROADBLOCK];
+      tmp(8518)(roleFilter(8521).EntitlementFeatureNames.SAVED_MESSAGES, undefined, items);
+      const tmpResult = tmp(8518);
     }
   }, items2);
   const callback = hasForLaterAccess.useCallback(() => {
-    let obj = everyoneFilter(4342);
+    let obj = everyoneFilter(4346);
     obj.hideActionSheet();
     obj = { screen: constants.NOTIFICATIONS };
-    roleFilter(7360).openUserSettings(obj);
+    roleFilter(7398).openUserSettings(obj);
   }, []);
   obj = { showGradient: true, header: null, children: null };
   obj = { title: null };
   const intl = roleFilter(1236).intl;
   obj[0] = intl.string(roleFilter(1236).t.HcoRu0);
-  obj[1] = callback(roleFilter(6949).BottomSheetTitleHeader, obj);
+  obj[1] = callback(roleFilter(6987).BottomSheetTitleHeader, obj);
   obj1 = { hasIcons: true, children: null };
   obj2 = {
     onValueChange() {
@@ -67,11 +65,8 @@ export default function NotificationCenterActionSheet() {
   };
   const intl2 = roleFilter(1236).intl;
   obj2[2] = intl2.string(roleFilter(1236).t.asInft);
-  const obj3 = { IconComponent: null, source: null };
-  obj3[0] = roleFilter(6885).AtIcon;
-  obj3[1] = everyoneFilter(11594);
-  obj2[3] = callback(roleFilter(7177).ActionSheetRow.Icon, obj3);
-  const items3 = [callback(roleFilter(7177).ActionSheetSwitchRow, obj2), ];
+  obj2[3] = callback(roleFilter(7215).ActionSheetRow.Icon, { IconComponent: roleFilter(6923).AtIcon, source: everyoneFilter(11643) });
+  const items3 = [callback(roleFilter(7215).ActionSheetSwitchRow, obj2), ];
   const obj4 = {
     onValueChange() {
       return dependencyMap({ everyoneFilter: !everyoneFilter });
@@ -85,52 +80,49 @@ export default function NotificationCenterActionSheet() {
   obj4[2] = intl3.string(roleFilter(1236).t.S9GLtt);
   const intl4 = roleFilter(1236).intl;
   obj4[3] = intl4.string(roleFilter(1236).t.jYgZa4);
-  const obj5 = { IconComponent: null, source: null };
-  obj5[0] = roleFilter(10003).BellIcon;
-  obj5[1] = everyoneFilter(15665);
-  obj4[4] = callback(roleFilter(7177).ActionSheetRow.Icon, obj5);
-  items3[1] = callback(roleFilter(7177).ActionSheetSwitchRow, obj4);
+  const obj3 = { IconComponent: roleFilter(6923).AtIcon, source: everyoneFilter(11643) };
+  obj4[4] = callback(roleFilter(7215).ActionSheetRow.Icon, { IconComponent: roleFilter(10042).BellIcon, source: everyoneFilter(15734) });
+  items3[1] = callback(roleFilter(7215).ActionSheetSwitchRow, obj4);
   obj1[1] = items3;
-  const items4 = [callback2(roleFilter(7177).ActionSheetRow.Group, obj1), ];
+  const items4 = [callback2(roleFilter(7215).ActionSheetRow.Group, obj1), ];
   let tmp8Result = null;
   if (isForLaterExperimentOn) {
     const obj6 = { icon: null, label: null, onPress: null, arrow: true };
     const obj7 = { IconComponent: null };
-    obj7[0] = tmp(10876).BookmarkIcon;
-    obj6[0] = tmp8(tmp(7177).ActionSheetRow.Icon, obj7);
+    obj7[0] = tmp(10915).BookmarkIcon;
+    obj6[0] = tmp8(tmp(7215).ActionSheetRow.Icon, obj7);
     const intl5 = tmp(1236).intl;
     obj6[1] = intl5.string(tmp(1236).t["2pAkDA"]);
     obj6[2] = function onPress() {
-      return lib(roleFilter(8489).SavedMessageSortTypes.BOOKMARK);
+      return lib(roleFilter(8528).SavedMessageSortTypes.BOOKMARK);
     };
-    tmp8Result = tmp8(tmp(7177).ActionSheetRow, obj6, "bookmarks");
+    tmp8Result = tmp8(tmp(7215).ActionSheetRow, obj6, "bookmarks");
   }
   const items5 = [tmp8Result, , ];
   tmp8Result = null;
   if (isForLaterExperimentOn) {
     const obj8 = { icon: null, label: null, onPress: null, arrow: true };
     const obj9 = { IconComponent: null };
-    obj9[0] = tmp(4338).ClockIcon;
-    obj8[0] = tmp8(tmp(7177).ActionSheetRow.Icon, obj9);
+    obj9[0] = tmp(4342).ClockIcon;
+    obj8[0] = tmp8(tmp(7215).ActionSheetRow.Icon, obj9);
     const intl6 = tmp(1236).intl;
     obj8[1] = intl6.string(tmp(1236).t.aUXxzT);
     obj8[2] = function onPress() {
-      return lib(roleFilter(8489).SavedMessageSortTypes.REMINDER);
+      return lib(roleFilter(8528).SavedMessageSortTypes.REMINDER);
     };
-    tmp8Result = tmp8(tmp(7177).ActionSheetRow, obj8, "reminders");
+    tmp8Result = tmp8(tmp(7215).ActionSheetRow, obj8, "reminders");
   }
   const obj10 = { hasIcons: true, children: null };
   items5[1] = tmp8Result;
   const obj11 = { icon: null, label: null, onPress: null, arrow: true };
-  const obj12 = { IconComponent: null };
-  obj12[0] = roleFilter(7355).SettingsIcon;
-  obj11[0] = callback(roleFilter(7177).ActionSheetRow.Icon, obj12);
+  const obj5 = { IconComponent: roleFilter(10042).BellIcon, source: everyoneFilter(15734) };
+  obj11[0] = callback(roleFilter(7215).ActionSheetRow.Icon, { IconComponent: roleFilter(7393).SettingsIcon });
   const intl7 = tmp(1236).intl;
   obj11[1] = intl7.string(roleFilter(1236).t.h850Ss);
   obj11[2] = callback;
-  items5[2] = callback(roleFilter(7177).ActionSheetRow, obj11, "settings");
+  items5[2] = callback(roleFilter(7215).ActionSheetRow, obj11, "settings");
   obj10[1] = items5;
-  items4[1] = callback2(roleFilter(7177).ActionSheetRow.Group, obj10);
+  items4[1] = callback2(roleFilter(7215).ActionSheetRow.Group, obj10);
   obj[2] = items4;
-  return callback2(roleFilter(7175).ActionSheet, obj);
+  return callback2(roleFilter(7213).ActionSheet, obj);
 };

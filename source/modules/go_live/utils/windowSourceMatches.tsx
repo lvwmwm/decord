@@ -1,11 +1,11 @@
-// Module ID: 4653
-// Function ID: 4654
+// Module ID: 4659
+// Function ID: 4660
 // Name: windowSourceMatches
 // Dependencies: [32, 2]
 // Exports: default
 
-// Module 4653 (windowSourceMatches)
-import _slicedToArray from "_slicedToArray";
+// Module 4659 (windowSourceMatches)
+import closure_0 from "_slicedToArray" /* 32 */;
 
 const result = require("set").fileFinishedImporting("modules/go_live/utils/windowSourceMatches.tsx");
 

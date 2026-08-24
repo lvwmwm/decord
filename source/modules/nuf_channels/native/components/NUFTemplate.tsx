@@ -1,46 +1,41 @@
-// Module ID: 12657
-// Function ID: 12658
+// Module ID: 12711
+// Function ID: 12712
 // Name: NUFActionSheetTemplate
-// Dependencies: [19, 17, 21, 4661, 712, 4734, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4739, 4750, 2]
 // Exports: default
 
-// Module 12657 (NUFActionSheetTemplate)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12711 (NUFActionSheetTemplate)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ View: obj1, Image: c3 } = get_ActivityIndicator);
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, title: null, description: null, image: null };
-createCacheKey = { padding: 16, alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { padding: 16, alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { textAlign: "center", marginBottom: 8 };
 createCacheKey[2] = { textAlign: "center", lineHeight: 18, marginBottom: 24 };
 createCacheKey[3] = { marginBottom: 24 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/nuf_channels/native/components/NUFTemplate.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/nuf_channels/native/components/NUFTemplate.tsx");
 
 export default function NUFActionSheetTemplate(arg0) {
-  let CTALabel;
-  let description;
-  let imageSrc;
-  let onCTAPress;
-  let title;
   ({ title, description, imageSrc, onCTAPress, CTALabel } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
-  const items = [callback(require(4734) /* Text */.Text, obj), , , ];
+  const items = [callback(Text.Text, obj), , , ];
   obj = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: description };
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  items[1] = callback(Text.Text, obj);
   items[2] = callback(closure_3, { source: imageSrc, style: tmp.image });
-  items[3] = callback(require(4745) /* Button */.Button, { text: CTALabel, size: "md", onPress: onCTAPress, grow: true });
+  items[3] = callback(Button.Button, { text: CTALabel, size: "md", onPress: onCTAPress, grow: true });
   obj[1] = items;
   return callback2(closure_2, obj);
 };

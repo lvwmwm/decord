@@ -1,26 +1,27 @@
-// Module ID: 8769
-// Function ID: 8770
+// Module ID: 8806
+// Function ID: 8807
 // Name: _getPrimaryAppCommand
-// Dependencies: [5, 19, 1391, 8448, 1954, 8456, 8452, 8770, 2]
+// Dependencies: [5, 19, 1391, 8487, 1954, 8495, 8491, 8807, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM, useGetPrimaryAppCommand, useIsPrimaryAppCommandUsableInAppDM, useQueryForPrimaryAppCommand
 
-// Module 8769 (_getPrimaryAppCommand)
-import ScoreMethod from "ScoreMethod";
-import noop from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getIndexKey from "getIndexKey";
-import closure_7 from "getIndexKey";
+// Module 8806 (_getPrimaryAppCommand)
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import ScoreMethod from "ScoreMethod" /* 8495 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8807 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import getIndexKey from "getIndexKey" /* 8487 */;
+import closure_7 from "getIndexKey" /* 8487 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function _getPrimaryAppCommand() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (v0 === 2) {
         v0 = 3;
@@ -33,7 +34,7 @@ function _getPrimaryAppCommand() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -48,19 +49,19 @@ function _getPrimaryAppCommand() {
               obj[0] = arg1;
               return obj;
             } else {
-              let noop = tmp5;
-              let ScoreMethod = tmp2;
-              let closure_0 = channel;
+              closure_3 = tmp5;
+              closure_2 = tmp2;
+              closure_0 = channel;
               channel = undefined;
-              ScoreMethod = undefined;
+              closure_2 = undefined;
               channel = channel.getChannel(closure_0);
-              ScoreMethod = undefined;
+              closure_2 = undefined;
               let tmp13 = null != channel;
               if (tmp13) {
-                const obj1 = { channel: null, type: "channel" };
+                obj1 = { channel: null, type: "channel" };
                 obj1[0] = channel;
-                const tmp12 = outer1_11(obj1, tmp33);
-                ScoreMethod = tmp12;
+                const tmp12 = closure_1_11(obj1, tmp33);
+                closure_2 = tmp12;
                 tmp13 = null == tmp12;
               }
               if (tmp13) {
@@ -84,16 +85,16 @@ function _getPrimaryAppCommand() {
           } else {
             obj = { channel: null, type: "channel" };
             obj[0] = channel;
-            ScoreMethod = callback(obj, closure_0);
+            closure_2 = callback(obj, closure_0);
           }
-          if (null != ScoreMethod) {
+          if (null != closure_2) {
             v0 = 3;
             const obj5 = { value: null, done: true };
-            obj5[0] = ScoreMethod;
+            obj5[0] = closure_2;
             return obj5;
           } else {
             const _Error = Error;
-            const error = new Error(closure_8);
+            error = new Error(closure_8);
             throw error;
           }
         } catch (tmp26) {
@@ -103,7 +104,7 @@ function _getPrimaryAppCommand() {
       }
     })();
   });
-  const _getPrimaryAppCommand = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -114,15 +115,15 @@ function _getPrimaryAppCommand() {
 }
 function queryForPrimaryAppCommand(closure_0, id) {
   let obj = { commandTypes: null };
-  const items = [require(1954) /* PermissionOverwriteType */.ApplicationCommandType.PRIMARY_ENTRY_POINT];
+  items = [PermissionOverwriteType.ApplicationCommandType.PRIMARY_ENTRY_POINT];
   obj[0] = items;
-  obj = { placeholderCount: 1, scoreMethod: require(8456) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true };
+  obj = { placeholderCount: 1, scoreMethod: ScoreMethod.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true };
   return closure_7.query(closure_0, obj, obj).commands[0];
 }
 ({ getOrFetchApplicationCommandIndexForTarget: c5, useQueryState: closure_6 } = getIndexKey);
 let c8 = "no primary app command for application";
 let items = [require("PermissionOverwriteType").ApplicationCommandType.PRIMARY_ENTRY_POINT];
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/application_commands/getPrimaryAppCommand.tsx");
+const result = require("set").fileFinishedImporting("modules/application_commands/getPrimaryAppCommand.tsx");
 
 export default function getPrimaryAppCommand() {
   const self = this;
@@ -143,11 +144,11 @@ export const useGetPrimaryAppCommand = function useGetPrimaryAppCommand(context,
   const tmp = callback2(context, obj, obj);
   loading = tmp.loading;
   const first = tmp.commands[0];
-  let ScoreMethod = tmp3;
+  closure_2 = tmp3;
   items = [id, null != first, loading];
   const effect = React.useEffect(() => {
-    let tmp = c2;
-    if (!c2) {
+    let tmp = closure_2;
+    if (!closure_2) {
       tmp = loading;
     }
     if (!tmp) {
@@ -161,26 +162,24 @@ export const useGetPrimaryAppCommand = function useGetPrimaryAppCommand(context,
 };
 export const useQueryForPrimaryAppCommand = function useQueryForPrimaryAppCommand(arg0, applicationId) {
   let obj = { commandTypes: items };
-  obj = { placeholderCount: 1, scoreMethod: require(8456) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
+  obj = { placeholderCount: 1, scoreMethod: ScoreMethod.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
   return callback2(arg0, obj, obj);
 };
 export const useIsPrimaryAppCommandUsableInAppDM = function useIsPrimaryAppCommandUsableInAppDM(applicationId) {
-  let botUserId;
-  let context;
   applicationId = applicationId.applicationId;
   let loading;
-  let c2;
+  closure_2 = undefined;
   let obj = { commandTypes: items };
   obj = { placeholderCount: 1, scoreMethod: applicationId(loading[5]).ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
   ({ context, botUserId } = applicationId);
   const tmp3 = callback2(context, obj, obj);
   loading = tmp3.loading;
   const first = tmp3.commands[0];
-  c2 = tmp5;
+  closure_2 = tmp5;
   items = [applicationId, null != first, loading];
   const effect = React.useEffect(() => {
-    let tmp = c2;
-    if (!c2) {
+    let tmp = closure_2;
+    if (!closure_2) {
       tmp = loading;
     }
     if (!tmp) {
@@ -224,12 +223,12 @@ export const isPrimaryAppCommandUsableInAppDM = function isPrimaryAppCommandUsab
     let hasItem = null != integration_types.integration_types;
     if (hasItem) {
       integration_types = integration_types.integration_types;
-      hasItem = integration_types.includes(require(8770) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
+      hasItem = integration_types.includes(ApplicationIntegrationType.ApplicationIntegrationType.USER_INSTALL);
     }
     let hasItem1 = null != integration_types.contexts;
     if (hasItem1) {
       const contexts = integration_types.contexts;
-      hasItem1 = contexts.includes(require(1954) /* PermissionOverwriteType */.InteractionContextType.BOT_DM);
+      hasItem1 = contexts.includes(PermissionOverwriteType.InteractionContextType.BOT_DM);
     }
     if (hasItem) {
       hasItem = hasItem1;

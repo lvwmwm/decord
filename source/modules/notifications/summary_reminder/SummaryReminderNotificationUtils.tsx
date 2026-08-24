@@ -1,19 +1,24 @@
-// Module ID: 14823
-// Function ID: 14824
+// Module ID: 14887
+// Function ID: 14888
 // Name: onSummaryReminderNotificationSettingsChanged
-// Dependencies: [4033, 676, 4066, 698, 2]
+// Dependencies: [4036, 676, 4069, 698, 2]
 // Exports: onSummaryReminderNotificationSettingsChanged
 
-// Module 14823 (onSummaryReminderNotificationSettingsChanged)
-import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
-import { AnalyticEvents } from "ME";
+// Module 14887 (onSummaryReminderNotificationSettingsChanged)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4036 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
 
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/notifications/summary_reminder/SummaryReminderNotificationUtils.tsx");
+let closure_3 = AccountNotificationFlags.NotificationSettingsUpdateType;
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/notifications/summary_reminder/SummaryReminderNotificationUtils.tsx");
 
 export const onSummaryReminderNotificationSettingsChanged = function onSummaryReminderNotificationSettingsChanged(summary_reminder_notifications) {
-  const EnableSummaryReminderNotifications = require(4066) /* explicitContentFromProto */.EnableSummaryReminderNotifications;
+  const EnableSummaryReminderNotifications = explicitContentFromProto.EnableSummaryReminderNotifications;
   EnableSummaryReminderNotifications.updateSetting(summary_reminder_notifications);
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { update_type: constants.ACCOUNT, summary_reminder_notifications };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj);
 };

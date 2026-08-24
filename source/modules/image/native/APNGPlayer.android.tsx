@@ -1,12 +1,12 @@
-// Module ID: 9217
-// Function ID: 9218
+// Module ID: 9254
+// Function ID: 9255
 // Name: useAPNGPlayerControls
-// Dependencies: [19, 21, 8406, 2]
+// Dependencies: [19, 21, 8445, 2]
 // Exports: useAPNGPlayerControls
 
-// Module 9217 (useAPNGPlayerControls)
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 9254 (useAPNGPlayerControls)
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -24,39 +24,39 @@ const forwardRefResult = importAllResult.forwardRef((onLoad, ref) => {
   const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({
     play() {
       if (null != closure_1.current) {
-        const Commands = outer1_0(outer1_2[2]).Commands;
+        const Commands = closure_1_0(closure_1_2[2]).Commands;
         Commands.play(tmp.current);
       }
     },
     pause() {
       if (null != closure_1.current) {
-        const Commands = outer1_0(outer1_2[2]).Commands;
+        const Commands = closure_1_0(closure_1_2[2]).Commands;
         Commands.pause(tmp.current);
       }
     },
     stop() {
       if (null != closure_1.current) {
-        const Commands = outer1_0(outer1_2[2]).Commands;
+        const Commands = closure_1_0(closure_1_2[2]).Commands;
         Commands.seek(tmp.current, 0);
-        const Commands2 = outer1_0(outer1_2[2]).Commands;
+        const Commands2 = closure_1_0(closure_1_2[2]).Commands;
         Commands2.pause(tmp.current);
       }
     },
     seek(arg0) {
       if (null != closure_1.current) {
-        const Commands = outer1_0(outer1_2[2]).Commands;
+        const Commands = closure_1_0(closure_1_2[2]).Commands;
         Commands.seek(tmp.current, arg0);
       }
     }
   }));
   const merged1 = Object.assign(merged);
-  return jsx(ref(8406), { ref, onLoad: callback });
+  return jsx(ref(8445), { ref, onLoad: callback });
 });
-const result = require("__INTERNAL_VIEW_CONFIG").fileFinishedImporting("modules/image/native/APNGPlayer.android.tsx");
+const result = require("set").fileFinishedImporting("modules/image/native/APNGPlayer.android.tsx");
 
 export const useAPNGPlayerControls = function useAPNGPlayerControls(ref) {
-  let closure_0 = ref;
-  let closure_1 = importAllResult.useRef(false);
+  closure_0 = ref;
+  closure_1 = importAllResult.useRef(false);
   const items = [ref];
   return importAllResult.useMemo(() => ({
     play() {

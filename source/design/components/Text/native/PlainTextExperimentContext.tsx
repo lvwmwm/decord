@@ -1,12 +1,12 @@
-// Module ID: 4738
-// Function ID: 4739
+// Module ID: 4743
+// Function ID: 4744
 // Name: PlainTextExperimentProvider
 // Dependencies: [19, 21, 2]
 // Exports: PlainTextExperimentProvider, usePlainTextExperimentEnabled
 
-// Module 4738 (PlainTextExperimentProvider)
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 4743 (PlainTextExperimentProvider)
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 let c0 = importAllResult;
 const context = importAllResult.createContext(false);

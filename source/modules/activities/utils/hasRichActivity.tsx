@@ -1,13 +1,15 @@
-// Module ID: 4560
-// Function ID: 4561
+// Module ID: 4565
+// Function ID: 4566
 // Name: hasRichActivity
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 4560 (hasRichActivity)
-import { ActivityTypes } from "ME";
+// Module 4565 (hasRichActivity)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/utils/hasRichActivity.tsx");
+const ActivityTypes = ME.ActivityTypes;
+const result = set.fileFinishedImporting("modules/activities/utils/hasRichActivity.tsx");
 
 export default function hasRichActivity(type) {
   let tmp = null != type;

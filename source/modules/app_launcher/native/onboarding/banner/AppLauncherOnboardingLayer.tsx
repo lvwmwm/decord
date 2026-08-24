@@ -1,21 +1,21 @@
-// Module ID: 11220
-// Function ID: 11221
-// Dependencies: [19, 17, 8682, 21, 4661, 712, 11221, 2]
+// Module ID: 11271
+// Function ID: 11272
+// Dependencies: [19, 17, 8719, 21, 4668, 712, 11272, 2]
 
-// Module 11220
-import { View } from "get ActivityIndicator";
-import { useBestActiveChatInputContainerHeight as closure_3 } from "updateChatInputContainerHeight";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 11271
+import ThemesDefault from "Themes" /* 712 */;
+import AppLauncherOnboardingBannerDefault from "AppLauncherOnboardingBanner" /* 11272 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { useBestActiveChatInputContainerHeight as closure_3 } from "updateChatInputContainerHeight" /* 8719 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 let obj = { container: null };
-obj = { opacity: 1, width: "100%", position: "absolute", left: 0, top: 0, backgroundColor: require("Themes").colors.BACKGROUND_SCRIM };
+obj = { opacity: 1, width: "100%", position: "absolute", left: 0, top: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_SCRIM };
 obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo((visibleContent) => {
-  let bottomOffset;
-  let context;
+const memoResult = importAllResult.memo((visibleContent) => {
   visibleContent = visibleContent.visibleContent;
   ({ context, bottomOffset } = visibleContent);
   let tmp3 = null;
@@ -29,11 +29,11 @@ const memoResult = require("noop").memo((visibleContent) => {
     obj = { context: null, visibleContent: null };
     obj[0] = context;
     obj[1] = visibleContent;
-    obj[1] = jsx(importDefault(11221), { context: null, visibleContent: null });
+    obj[1] = jsx(AppLauncherOnboardingBannerDefault, { context: null, visibleContent: null });
     tmp3 = <View context={null} visibleContent={null} />;
   }
   return tmp3;
 });
-const result = require("updateChatInputContainerHeight").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingLayer.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingLayer.tsx");
 
 export default memoResult;

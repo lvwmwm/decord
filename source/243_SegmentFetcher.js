@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 243 (SegmentFetcher)
+import getAll from "get" /* 30 */;
 
-export default require("get").getEnforcing("SegmentFetcher");
+
+export default getAll.getEnforcing("SegmentFetcher");

@@ -1,11 +1,11 @@
-// Module ID: 16970
-// Function ID: 16971
+// Module ID: 17063
+// Function ID: 17064
 // Name: useTrialActiveUserLimitOptions
 // Dependencies: [19, 1236, 2]
 // Exports: default
 
-// Module 16970 (useTrialActiveUserLimitOptions)
-import noop from "noop";
+// Module 17063 (useTrialActiveUserLimitOptions)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/useTrialActiveUserLimitOptions.tsx");

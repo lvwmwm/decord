@@ -1,19 +1,21 @@
-// Module ID: 4197
-// Function ID: 4198
+// Module ID: 4201
+// Function ID: 4202
 // Name: handleConnectionOpen
-// Dependencies: [4198, 1218, 4201, 1910, 676, 1222, 589, 4202, 4215, 709, 2]
+// Dependencies: [4202, 1218, 4205, 1910, 676, 1222, 589, 4206, 4219, 709, 2]
 
-// Module 4197 (handleConnectionOpen)
-import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
-import fetchFingerprint from "fetchFingerprint";
-import initialize from "initialize";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import ME from "ME";
-import { PersistedStore } from "initialize";
+// Module 4201 (handleConnectionOpen)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import transitionTo from "transitionTo" /* 1222 */;
+import matchPath from "matchPath" /* 4206 */;
+import RouteParam2 from "RouteParam" /* 4219 */;
+import closure_2 from "handleGatewayJoinRequestUpdate" /* 4202 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "initialize" /* 4205 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import ME from "ME" /* 676 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function handleConnectionOpen() {
   let tmp = null != c8;
   if (tmp) {
@@ -44,12 +46,13 @@ function handleConnectionOpen() {
 let c8 = null;
 let c9 = null;
 let closure_10 = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class SelectedGuildStore extends PersistedStore {
 }
 const prototype = SelectedGuildStore.prototype;
 prototype["initialize"] = function initialize(selectedGuildTimestampMillis) {
   this.mustEmitChanges((type) => "CONNECTION_OPEN" !== type.type);
-  this.waitFor(fetchFingerprint, initialize, createGuildRecordFromRust, handleGatewayJoinRequestUpdate);
+  this.waitFor(closure_3, closure_4, closure_5, closure_2);
   let prop;
   if (selectedGuildTimestampMillis != null) {
     prop = selectedGuildTimestampMillis.selectedGuildTimestampMillis;
@@ -64,6 +67,7 @@ prototype["initialize"] = function initialize(selectedGuildTimestampMillis) {
   if (selectedGuildId == null) {
     selectedGuildId = null;
   }
+  let guildId = selectedGuildId;
   let lastSelectedGuildId;
   if (selectedGuildTimestampMillis != null) {
     lastSelectedGuildId = selectedGuildTimestampMillis.lastSelectedGuildId;
@@ -72,10 +76,10 @@ prototype["initialize"] = function initialize(selectedGuildTimestampMillis) {
     lastSelectedGuildId = null;
   }
   const obj = { path: null };
-  const RouteParam = require(4215) /* RouteParam */.RouteParam;
+  const RouteParam = RouteParam2.RouteParam;
   obj[0] = closure_7.CHANNEL(RouteParam.guildId());
-  const matchPathResult = require(4202) /* matchPath */.matchPath(initialize.lastNonVoiceRoute, obj);
-  let guildId;
+  const matchPathResult = matchPath.matchPath(closure_4.lastNonVoiceRoute, obj);
+  guildId = undefined;
   if (matchPathResult != null) {
     const params = matchPathResult.params;
     if (params != null) {
@@ -91,10 +95,10 @@ prototype["initialize"] = function initialize(selectedGuildTimestampMillis) {
   }
   let tmp9 = null != tmp8;
   if (tmp9) {
-    tmp9 = tmp8 !== selectedGuildId;
+    tmp9 = tmp8 !== guildId;
   }
   if (tmp9) {
-    selectedGuildId = tmp8;
+    guildId = tmp8;
   }
 };
 prototype["getState"] = function getState() {
@@ -115,11 +119,11 @@ prototype["getLastSelectedTimestamp"] = function getLastSelectedTimestamp(arg0) 
 };
 SelectedGuildStore.displayName = "SelectedGuildStore";
 SelectedGuildStore.persistKey = "SelectedGuildStore";
-const selectedGuildStore = new SelectedGuildStore(require("dispatcher"), {
+const selectedGuildStore = new SelectedGuildStore(dispatcherDefault, {
   CONNECTION_OPEN: handleConnectionOpen,
   OVERLAY_INITIALIZE: function handleOverlayInitialize(selectedGuildId) {
     selectedGuildId = selectedGuildId.selectedGuildId;
-    let c9;
+    c9 = undefined;
     handleConnectionOpen();
   },
   CHANNEL_SELECT: function handleChannelSelect(guildId) {
@@ -150,9 +154,9 @@ const selectedGuildStore = new SelectedGuildStore(require("dispatcher"), {
         c9 = null;
         flag = true;
       }
-      if (c8 === guildId) {
+      if (closure_8 === guildId) {
         tmp3 = (function pickFallbackGuildId(guildId) {
-          let closure_0 = guildId;
+          closure_0 = guildId;
           if (null != c9) {
             if (null != store.getGuild(c9)) {
               return c9;
@@ -198,16 +202,16 @@ const selectedGuildStore = new SelectedGuildStore(require("dispatcher"), {
           }
         })(guildId);
         if (null == tmp3) {
-          c8 = null;
-          require(1222) /* transitionTo */.replaceWith(closure_7.ME);
+          closure_8 = null;
+          transitionTo.replaceWith(closure_7.ME);
           flag = true;
-          const obj = require(1222) /* transitionTo */;
+          const obj = transitionTo;
         }
       }
-      c8 = tmp3;
-      require(1222) /* transitionTo */.replaceWith(closure_7.CHANNEL(tmp3));
+      closure_8 = tmp3;
+      transitionTo.replaceWith(closure_7.CHANNEL(tmp3));
       flag = true;
-      const obj2 = require(1222) /* transitionTo */;
+      const obj2 = transitionTo;
     }
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
@@ -222,9 +226,9 @@ const selectedGuildStore = new SelectedGuildStore(require("dispatcher"), {
         c9 = null;
         flag = true;
       }
-      if (c8 === id) {
+      if (closure_8 === id) {
         let tmp8 = (function pickFallbackGuildId(guildId) {
-          let closure_0 = guildId;
+          closure_0 = guildId;
           if (null != c9) {
             if (null != store.getGuild(c9)) {
               return c9;
@@ -270,24 +274,24 @@ const selectedGuildStore = new SelectedGuildStore(require("dispatcher"), {
           }
         })(id);
         if (null == tmp8) {
-          c8 = null;
-          require(1222) /* transitionTo */.replaceWith(closure_7.ME);
+          closure_8 = null;
+          transitionTo.replaceWith(closure_7.ME);
           flag = true;
-          const obj = require(1222) /* transitionTo */;
+          const obj = transitionTo;
         }
       }
-      c8 = tmp8;
-      require(1222) /* transitionTo */.replaceWith(closure_7.CHANNEL(tmp8));
+      closure_8 = tmp8;
+      transitionTo.replaceWith(closure_7.CHANNEL(tmp8));
       flag = true;
-      const obj2 = require(1222) /* transitionTo */;
+      const obj2 = transitionTo;
     }
   },
   LOGOUT: function handleLogout() {
-    let c8 = null;
-    let c9 = null;
+    c8 = null;
+    c9 = null;
   }
 });
-const result = require("initialize").fileFinishedImporting("stores/SelectedGuildStore.tsx");
+const result = require("set").fileFinishedImporting("stores/SelectedGuildStore.tsx");
 
 export default selectedGuildStore;
 export const SELECTED_GUILD_TIMESTAMP_NOW = -1;

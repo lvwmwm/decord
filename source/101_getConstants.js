@@ -4,7 +4,9 @@
 // Dependencies: [30]
 
 // Module 101 (getConstants)
-const enforcing = require("get").getEnforcing("DeviceInfo");
+import getAll from "get" /* 30 */;
+
+const enforcing = getAll.getEnforcing("DeviceInfo");
 let c1 = null;
 
 export default {

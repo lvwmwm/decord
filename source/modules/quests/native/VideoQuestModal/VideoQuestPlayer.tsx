@@ -1,35 +1,29 @@
-// Module ID: 14488
-// Function ID: 14489
+// Module ID: 14556
+// Function ID: 14557
 // Name: hasVideoEnded
-// Dependencies: [32, 19, 17, 7383, 7455, 6716, 676, 21, 712, 9019, 4661, 689, 14478, 10684, 10486, 4006, 4115, 4744, 4748, 4664, 4667, 14486, 7476, 14489, 1626, 500, 1231, 10704, 10477, 589, 1208, 1629, 1236, 14497, 5433, 14381, 14383, 14385, 14386, 10123, 9003, 9005, 14387, 14388, 2]
+// Dependencies: [32, 19, 17, 7421, 7493, 6753, 676, 21, 712, 9056, 4668, 689, 14546, 10723, 10525, 4009, 4119, 4749, 4753, 4671, 4674, 14554, 7514, 14557, 1626, 500, 1231, 10743, 10516, 589, 1208, 1629, 1236, 14565, 5438, 14449, 14451, 14453, 14454, 10162, 9040, 9042, 14455, 14456, 2]
 
-// Module 14488 (hasVideoEnded)
-import getSystemLocale from "getSystemLocale";
-import importAllResult from "CONFIG_NEVER_ANIMATE_TIMING";
-import get_ActivityIndicator from "CONFIG_NEVER_ANIMATE";
-import getState from "getState";
-import _toPropertyKey from "_toPropertyKey";
-import { QuestsExperimentLocations } from "QuestsExperimentLocations";
-import ME from "ME";
-import jsxProd from "useVideoQuestPlayerAnalytics";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "n";
+// Module 14556 (hasVideoEnded)
+import ThemesDefault from "Themes" /* 712 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 9056 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_8 from "getState" /* 7421 */;
+import closure_9 from "_toPropertyKey" /* 7493 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 6753 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "n" /* 689 */;
 
-let StyleSheet;
-let c5;
-let closure_12;
-let closure_14;
-let closure_6;
-let error;
-let map1;
-let unpackModuleId;
 const require = arg1;
 let c4 = importAllResult;
 ({ View: c5, StyleSheet, Pressable: closure_6, ActivityIndicator: error } = get_ActivityIndicator);
 ({ AppStates: unpackModuleId, ComponentActions: closure_12 } = ME);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-let obj = { left: require("Themes").space.PX_16, right: require("Themes").space.PX_16, top: require("Themes").space.PX_16, bottom: require("Themes").space.PX_16 };
+let obj = { left: ThemesDefault.space.PX_16, right: ThemesDefault.space.PX_16, top: ThemesDefault.space.PX_16, bottom: ThemesDefault.space.PX_16 };
+let closure_16 = importAllResult.memo(_isNativeReflectConstructDefault);
 function hasVideoEnded(arg0, arg1) {
   return arg0 >= arg1 - 1;
 }
@@ -58,7 +52,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj[0] = {};
 createCacheKey = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-createCacheKey.backgroundColor = require("Themes").colors.BACKGROUND_BASE_LOWEST;
+createCacheKey.backgroundColor = ThemesDefault.colors.BACKGROUND_BASE_LOWEST;
 createCacheKey.justifyContent = "center";
 createCacheKey.alignItems = "center";
 obj[1] = createCacheKey;
@@ -73,60 +67,41 @@ obj[5] = { position: "relative", height: "100%", width: "100%" };
 let obj4 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 let obj1 = {};
-const importDefaultResultResult = require("n")(require("Themes").unsafe_rawColors.BLACK);
-obj4.backgroundColor = require("n")(require("Themes").unsafe_rawColors.BLACK).alpha(0.5).hex();
+const importDefaultResultResult = importDefaultResult(ThemesDefault.unsafe_rawColors.BLACK);
+obj4.backgroundColor = importDefaultResult(ThemesDefault.unsafe_rawColors.BLACK).alpha(0.5).hex();
 obj4.justifyContent = "center";
 obj4.alignItems = "center";
 obj4.flexDirection = "column";
 obj[6] = obj4;
-const alphaResult = require("n")(require("Themes").unsafe_rawColors.BLACK).alpha(0.5);
-obj[7] = { flexDirection: "row", justifyContent: "flex-end", padding: require("Themes").space.PX_8, position: "absolute", left: 0, right: 0 };
-let obj5 = { flexDirection: "row", justifyContent: "flex-end", padding: require("Themes").space.PX_8, position: "absolute", left: 0, right: 0 };
-obj[8] = { justifyContent: "center", alignItems: "center", flexGrow: 1, flexDirection: "row", gap: require("Themes").space.PX_24, pointerEvents: "box-none" };
+const alphaResult = importDefaultResult(ThemesDefault.unsafe_rawColors.BLACK).alpha(0.5);
+obj[7] = { flexDirection: "row", justifyContent: "flex-end", padding: ThemesDefault.space.PX_8, position: "absolute", left: 0, right: 0 };
+let obj5 = { flexDirection: "row", justifyContent: "flex-end", padding: ThemesDefault.space.PX_8, position: "absolute", left: 0, right: 0 };
+obj[8] = { justifyContent: "center", alignItems: "center", flexGrow: 1, flexDirection: "row", gap: ThemesDefault.space.PX_24, pointerEvents: "box-none" };
 obj[9] = { top: 0 };
 obj[10] = { bottom: 0 };
-let obj6 = { justifyContent: "center", alignItems: "center", flexGrow: 1, flexDirection: "row", gap: require("Themes").space.PX_24, pointerEvents: "box-none" };
-obj[11] = { position: "absolute", bottom: 0, right: 0, left: 0, justifyContent: "flex-end", height: require("Themes").space.PX_16, overflow: "hidden" };
-let obj7 = { position: "absolute", bottom: 0, right: 0, left: 0, justifyContent: "flex-end", height: require("Themes").space.PX_16, overflow: "hidden" };
-obj[12] = { height: 1, backgroundColor: require("Themes").colors.WHITE, shadowOffset: { width: 0, height: 0 }, shadowRadius: 6, shadowOpacity: 1, elevation: 5, shadowColor: "#FFFFFF" };
-let obj8 = { height: 1, backgroundColor: require("Themes").colors.WHITE, shadowOffset: { width: 0, height: 0 }, shadowRadius: 6, shadowOpacity: 1, elevation: 5, shadowColor: "#FFFFFF" };
-obj[13] = { color: require("Themes").colors.TEXT_DEFAULT };
-let obj9 = { color: require("Themes").colors.TEXT_DEFAULT };
-obj[14] = { color: require("Themes").colors.TEXT_SUBTLE };
-let obj10 = { color: require("Themes").colors.TEXT_SUBTLE };
-obj[15] = { padding: require("Themes").space.PX_8 };
+let obj6 = { justifyContent: "center", alignItems: "center", flexGrow: 1, flexDirection: "row", gap: ThemesDefault.space.PX_24, pointerEvents: "box-none" };
+obj[11] = { position: "absolute", bottom: 0, right: 0, left: 0, justifyContent: "flex-end", height: ThemesDefault.space.PX_16, overflow: "hidden" };
+let obj7 = { position: "absolute", bottom: 0, right: 0, left: 0, justifyContent: "flex-end", height: ThemesDefault.space.PX_16, overflow: "hidden" };
+obj[12] = { height: 1, backgroundColor: ThemesDefault.colors.WHITE, shadowOffset: { width: 0, height: 0 }, shadowRadius: 6, shadowOpacity: 1, elevation: 5, shadowColor: "#FFFFFF" };
+let obj8 = { height: 1, backgroundColor: ThemesDefault.colors.WHITE, shadowOffset: { width: 0, height: 0 }, shadowRadius: 6, shadowOpacity: 1, elevation: 5, shadowColor: "#FFFFFF" };
+obj[13] = { color: ThemesDefault.colors.TEXT_DEFAULT };
+let obj9 = { color: ThemesDefault.colors.TEXT_DEFAULT };
+obj[14] = { color: ThemesDefault.colors.TEXT_SUBTLE };
+let obj10 = { color: ThemesDefault.colors.TEXT_SUBTLE };
+obj[15] = { padding: ThemesDefault.space.PX_8 };
 let closure_19 = createCacheKey.createStyles(obj);
 let obj12 = { PAUSED: "paused", PLAYING: "playing", ENDED: "ended", LOADING: "loading", ERRORED: "errored" };
 let closure_21 = { code: "function shouldShowControls_VideoQuestPlayerTsx3(){const{hasLoaded,showControls,playerState,PlayerState,isVideoEnded,externallyPaused}=this.__closure;return hasLoaded&&(showControls.get()||playerState===PlayerState.PAUSED||playerState===PlayerState.ENDED||playerState===PlayerState.ERRORED||isVideoEnded||externallyPaused);}" };
 let closure_22 = { code: "function VideoQuestPlayerTsx4(){const{shouldShowControls,withSpring,SUBTLE_SPRING}=this.__closure;const show=shouldShowControls();return{opacity:withSpring(show?1:0,SUBTLE_SPRING),pointerEvents:show?'auto':'none'};}" };
 let closure_23 = { code: "function VideoQuestPlayerTsx5(){const{withTiming,progress,timingFast}=this.__closure;return{width:withTiming(progress.get()*100+\"%\",timingFast,'animate-always')};}" };
-let obj11 = { padding: require("Themes").space.PX_8 };
+let obj11 = { padding: ThemesDefault.space.PX_8 };
 const memoResult = importAllResult.memo((onLoad) => {
-  let c45;
-  let contentInsets;
-  let duration;
-  let duration2;
-  let externallyPaused;
-  let handleBufferAnalytics;
-  let handleEndAnalytics;
-  let handleOpenTranscript;
-  let handleToggleCaptions;
-  let hasCaptionAsset;
-  let isFullscreen;
-  let maxTimestampSec;
-  let orientation;
-  let sourceQuestContent;
-  let style;
-  let timestampSec;
-  let timestampSec2;
-  let tmp39;
-  let tmp72;
   onLoad = onLoad.onLoad;
   handleBufferAnalytics = onLoad;
   const onEnd = onLoad.onEnd;
   let ref1 = onEnd;
   const onToggleFullscreen = onLoad.onToggleFullscreen;
-  let dependencyMap = onToggleFullscreen;
+  dependencyMap = onToggleFullscreen;
   orientation = onLoad.orientation;
   ({ contentInsets, isFullscreen, externallyPaused } = onLoad);
   let flag = onLoad.captionsEnabled;
@@ -145,28 +120,28 @@ const memoResult = importAllResult.memo((onLoad) => {
   let ref;
   let quest;
   let questTaskDetails;
-  let c8;
+  closure_8 = undefined;
   let memo;
   let memo1;
   let first;
-  let closure_12;
+  closure_12 = undefined;
   let targetSeconds;
-  let c14;
-  let obj;
+  closure_14 = undefined;
+  obj = undefined;
   let first1;
-  let closure_17;
-  let closure_18;
+  closure_17 = undefined;
+  closure_18 = undefined;
   let first2;
-  let obj12;
-  let closure_21;
-  let closure_22;
-  let closure_23;
-  let closure_24;
-  let c25;
+  obj12 = undefined;
+  closure_21 = undefined;
+  closure_22 = undefined;
+  closure_23 = undefined;
+  closure_24 = undefined;
+  closure_25 = undefined;
   let sharedValue;
   let shouldShowControls;
   let sharedValue1;
-  let closure_29;
+  closure_29 = undefined;
   handleEndAnalytics = undefined;
   let handleErrorAnalytics;
   let handleLoadAnalytics;
@@ -187,17 +162,17 @@ const memoResult = importAllResult.memo((onLoad) => {
   let callback4;
   let callback6;
   let callback7;
-  let c50;
+  closure_50 = undefined;
   let ref2;
   let ref3;
   let callback18;
   let tmp = first2();
   obj = externallyPaused;
   ref = externallyPaused.useRef(null);
-  let obj1 = handleBufferAnalytics(14478);
+  obj1 = handleBufferAnalytics(14546);
   const videoQuestModalContext = obj1.useVideoQuestModalContext();
   quest = videoQuestModalContext.quest;
-  let obj2 = handleBufferAnalytics(10684);
+  let obj2 = handleBufferAnalytics(10723);
   questTaskDetails = obj2.useQuestTaskDetails(quest);
   const userStatus = quest.userStatus;
   let completedAt;
@@ -205,7 +180,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     completedAt = userStatus.completedAt;
   }
   let tmp8 = null != completedAt;
-  c8 = tmp8;
+  closure_8 = tmp8;
   let items = [quest];
   memo = obj.useMemo(() => handleBufferAnalytics(ref[14]).getQuestAsset(quest, handleBufferAnalytics(ref[14]).QuestAssetType.VIDEO_PLAYER_VIDEO, undefined, true), items);
   let items1 = [quest];
@@ -215,27 +190,27 @@ const memoResult = importAllResult.memo((onLoad) => {
     url = memo1.url;
   }
   if (null != url) {
-    let VIDEO_PLAYER_VIDEO = tmp3(10486).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS;
+    let VIDEO_PLAYER_VIDEO = tmp3(10525).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS;
   } else {
-    VIDEO_PLAYER_VIDEO = tmp3(10486).QuestAssetType.VIDEO_PLAYER_VIDEO;
+    VIDEO_PLAYER_VIDEO = tmp3(10525).QuestAssetType.VIDEO_PLAYER_VIDEO;
   }
   const tmp13 = orientation(obj.useState(questTaskDetails.targetSeconds), 2);
   first = tmp13[0];
   closure_12 = tmp13[1];
   targetSeconds = questTaskDetails.targetSeconds;
   const tmp15 = memo((setVideoProgress) => setVideoProgress.setVideoProgress);
-  c14 = tmp15;
+  closure_14 = tmp15;
   const tmp16 = memo((arg0) => {
     let tmp = arg0.videoProgress[quest.id];
     if (tmp == null) {
-      const obj = { timestampSec: null, duration: null, maxTimestampSec: null };
+      obj = { timestampSec: null, duration: null, maxTimestampSec: null };
       obj[0] = questTaskDetails.progressSeconds;
       obj[1] = first;
       obj[2] = questTaskDetails.progressSeconds;
       tmp = obj;
     }
     return tmp;
-  }, handleBufferAnalytics(4006).shallow);
+  }, handleBufferAnalytics(4009).shallow);
   obj = tmp16;
   const tmp18 = orientation(obj.useState(obj12.LOADING), 2);
   first1 = tmp18[0];
@@ -259,8 +234,8 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
     tmp22 = timestampSec >= duration - 1;
   }
-  c25 = tmp22;
-  let tmp3Result = tmp3(4115);
+  closure_25 = tmp22;
+  let tmp3Result = tmp3(4119);
   sharedValue = tmp3Result.useSharedValue(false);
   shouldShowControls = function shouldShowControls() {
     let tmp = first2;
@@ -276,7 +251,7 @@ const memoResult = importAllResult.memo((onLoad) => {
         value = first1 === lib2.ERRORED;
       }
       if (!value) {
-        value = c25;
+        value = closure_25;
       }
       if (!value) {
         value = externallyPaused;
@@ -288,34 +263,34 @@ const memoResult = importAllResult.memo((onLoad) => {
   shouldShowControls.__closure = { hasLoaded: first2, showControls: sharedValue, playerState: first1, PlayerState: obj12, isVideoEnded: tmp22, externallyPaused };
   shouldShowControls.__workletHash = 11602236169344;
   shouldShowControls.__initData = closure_21;
-  tmp3Result = tmp3(4115);
+  tmp3Result = tmp3(4119);
   class G {
     constructor() {
       if (typeof shouldShowControls !== "function") {
         str2 = "Trying to call a non-function";
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }
-      tmp = useState;
-      if (useState) {
-        tmp2 = c26;
-        value = c26.get();
+      tmp = closure_19;
+      if (closure_19) {
+        tmp2 = closure_26;
+        value = closure_26.get();
         if (!value) {
-          tmp4 = c16;
-          tmp5 = useState;
-          value = c16 === useState.PAUSED;
+          tmp4 = closure_16;
+          tmp5 = closure_20;
+          value = closure_16 === closure_20.PAUSED;
         }
         if (!value) {
-          tmp6 = c16;
-          tmp7 = useState;
-          value = c16 === useState.ENDED;
+          tmp6 = closure_16;
+          tmp7 = closure_20;
+          value = closure_16 === closure_20.ENDED;
         }
         if (!value) {
-          tmp8 = c16;
-          tmp9 = useState;
-          value = c16 === useState.ERRORED;
+          tmp8 = closure_16;
+          tmp9 = closure_20;
+          value = closure_16 === closure_20.ERRORED;
         }
         if (!value) {
-          value = c25;
+          value = closure_25;
         }
         if (!value) {
           value = externallyPaused;
@@ -323,8 +298,8 @@ const memoResult = importAllResult.memo((onLoad) => {
         tmp = value;
       }
       tmp10 = handleBufferAnalytics;
-      tmp11 = useRef;
-      obj = handleBufferAnalytics(useRef[17]);
+      tmp11 = closure_2;
+      obj = handleBufferAnalytics(closure_2[17]);
       num = 0;
       if (tmp) {
         num = 1;
@@ -338,7 +313,7 @@ const memoResult = importAllResult.memo((onLoad) => {
       return obj;
     }
   }
-  obj = { shouldShowControls, withSpring: tmp3(4744).withSpring, SUBTLE_SPRING: tmp3(4748).SUBTLE_SPRING };
+  obj = { shouldShowControls, withSpring: tmp3(4749).withSpring, SUBTLE_SPRING: tmp3(4753).SUBTLE_SPRING };
   G.__closure = obj;
   G.__workletHash = 6174625876255;
   G.__initData = closure_22;
@@ -347,31 +322,31 @@ const memoResult = importAllResult.memo((onLoad) => {
     first2 = sharedValue.get() || first1 === tmp17.PAUSED || first1 === tmp17.ENDED || first1 === tmp17.ERRORED || tmp22 || externallyPaused;
     const tmp25 = sharedValue.get() || first1 === tmp17.PAUSED || first1 === tmp17.ENDED || first1 === tmp17.ERRORED || tmp22 || externallyPaused;
   }
-  sharedValue1 = handleBufferAnalytics(4115).useSharedValue(0);
-  const tmp3Result1 = handleBufferAnalytics(4115);
+  sharedValue1 = handleBufferAnalytics(4119).useSharedValue(0);
+  const tmp3Result1 = handleBufferAnalytics(4119);
   class U {
     constructor() {
       obj = { width: null };
-      obj2 = handleBufferAnalytics(useRef[19]);
-      result = 100 * c28.get();
-      obj[0] = obj2.withTiming(`${tmp}%`, handleBufferAnalytics(useRef[20]).timingFast, "animate-always");
+      obj2 = handleBufferAnalytics(closure_2[19]);
+      result = 100 * closure_28.get();
+      obj[0] = obj2.withTiming(`${tmp}%`, handleBufferAnalytics(closure_2[20]).timingFast, "animate-always");
       return obj;
     }
   }
-  obj = { withTiming: tmp3(4664).withTiming, progress: sharedValue1, timingFast: tmp3(4667).timingFast };
+  obj = { withTiming: tmp3(4671).withTiming, progress: sharedValue1, timingFast: tmp3(4674).timingFast };
   U.__closure = obj;
   U.__workletHash = 4647711667921;
   U.__initData = closure_23;
-  const animatedStyle1 = handleBufferAnalytics(4115).useAnimatedStyle(U);
+  const animatedStyle1 = handleBufferAnalytics(4119).useAnimatedStyle(U);
   closure_29 = obj.useRef(-1);
   const items2 = [sharedValue];
   const callback = obj.useCallback((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     return () => {
       const items = [...arguments];
-      clearTimeout(outer1_29.current);
-      let result = outer1_26.set(true);
-      outer1_29.current = setTimeout(() => {
+      clearTimeout(closure_1_29.current);
+      let result = closure_1_26.set(true);
+      closure_1_29.current = setTimeout(() => {
         const result = closure_26.set(false);
       }, 2000);
       if (null != closure_0) {
@@ -383,7 +358,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     };
   }, items2);
   obj1 = { duration: first, isQuestCompleted: tmp8, playerState: first1, questId: quest.id, videoSessionId: videoQuestModalContext.videoSessionId, videoAssetId: VIDEO_PLAYER_VIDEO, sourceQuestContent };
-  const tmp30 = ref1(14486)(obj1);
+  const tmp30 = ref1(14554)(obj1);
   ({ handleBufferAnalytics, handleEndAnalytics } = tmp30);
   handleErrorAnalytics = tmp30.handleErrorAnalytics;
   handleLoadAnalytics = tmp30.handleLoadAnalytics;
@@ -407,8 +382,8 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
     url1 = url2;
   }
-  const tmp3Result2 = handleBufferAnalytics(4115);
-  const defaultWatchVideoTask = handleBufferAnalytics(7476).getDefaultWatchVideoTask(quest.config);
+  const tmp3Result2 = handleBufferAnalytics(4119);
+  const defaultWatchVideoTask = handleBufferAnalytics(7514).getDefaultWatchVideoTask(quest.config);
   videoTitle = undefined;
   if (defaultWatchVideoTask != null) {
     videoTitle = defaultWatchVideoTask.messages.videoTitle;
@@ -426,7 +401,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     if (null != ref.current) {
       if (null != url1) {
         if (0 !== arr.length) {
-          let obj = handleBufferAnalytics(ref[23]);
+          obj = handleBufferAnalytics(ref[23]);
           obj = { location: null };
           obj[0] = memo1.VIDEO_MODAL_MOBILE;
           if (obj.getVideoQoEMetricsConfig(obj).externalAnalyticsEnabled) {
@@ -434,7 +409,7 @@ const memoResult = importAllResult.memo((onLoad) => {
             obj = { videoRef: null, feature: "quests", appVersion: null, releaseChannel: null, contentMetadata: null };
             obj[0] = tmp.current;
             ({ Version: obj4[2], ReleaseChannel: obj4[3] } = constants);
-            const obj1 = { contentId: null, videoStreamType: null, contentType: "quests", durationMs: null, title: null, questId: null, gameName: null };
+            obj1 = { contentId: null, videoStreamType: null, contentType: "quests", durationMs: null, title: null, questId: null, gameName: null };
             obj1[0] = arr;
             obj1[1] = str;
             obj1[3] = 1000 * targetSeconds;
@@ -470,14 +445,14 @@ const memoResult = importAllResult.memo((onLoad) => {
     if (current != null) {
       current.onReadyForDisplay();
     }
-    _undefined4(true);
+    _undefined(true);
   }, items4);
   callback2 = obj.useCallback((arg0) => {
     let seek = ref;
     if (null != ref.current) {
       const _Math = Math;
       const _Math2 = Math;
-      const bound = Math.max(0, Math.min(arg0, _undefined3.maxTimestampSec));
+      const bound = Math.max(0, Math.min(arg0, closure_15.maxTimestampSec));
       if (obj.isAndroid()) {
         ref5.current = (ref5.current + 1) % 100;
         const current2 = seek.current;
@@ -494,10 +469,6 @@ const memoResult = importAllResult.memo((onLoad) => {
   const items6 = [tmp8, tmp16.timestampSec, handleLoadAnalytics, onLoad, callback2];
   const items7 = [first1, handlePausePlaybackAnalytics, handleResumePlaybackAnalytics, tmp22, callback2];
   const callback3 = obj.useCallback((arg0) => {
-    let duration;
-    let naturalSize;
-    let trackId;
-    let videoTracks;
     ({ duration, videoTracks, trackId, naturalSize } = arg0);
     lib(duration);
     lib2(true);
@@ -529,9 +500,9 @@ const memoResult = importAllResult.memo((onLoad) => {
       }
     }
     if (null != ref.current) {
-      const timestampSec = _undefined3.timestampSec;
-      let tmp11 = !c8;
-      if (!c8) {
+      const timestampSec = closure_15.timestampSec;
+      let tmp11 = !closure_8;
+      if (!closure_8) {
         tmp11 = timestampSec > 5;
       }
       if (tmp11) {
@@ -540,14 +511,14 @@ const memoResult = importAllResult.memo((onLoad) => {
       if (tmp11) {
         callback2(timestampSec - 1);
       }
-      callback(lib2.PLAYING);
+      callback2(lib2.PLAYING);
       if (handleBufferAnalytics != null) {
         handleBufferAnalytics(arg0);
       }
     }
   }, items6);
   callback4 = obj.useCallback(() => {
-    let obj = arg0;
+    obj = arg0;
     if (arg0 === undefined) {
       obj = {};
     }
@@ -559,7 +530,7 @@ const memoResult = importAllResult.memo((onLoad) => {
       if (tmp !== tmp2.PAUSED) {
         if (tmp !== tmp2.LOADING) {
           if (tmp === tmp2.PLAYING) {
-            callback(tmp2.PAUSED);
+            callback2(tmp2.PAUSED);
             handlePausePlaybackAnalytics();
             const current3 = ref1.current;
             if (current3 != null) {
@@ -568,7 +539,7 @@ const memoResult = importAllResult.memo((onLoad) => {
           }
         }
       }
-      callback(tmp2.PLAYING);
+      callback2(tmp2.PLAYING);
       handleResumePlaybackAnalytics();
       const current = ref1.current;
       if (current != null) {
@@ -576,7 +547,7 @@ const memoResult = importAllResult.memo((onLoad) => {
       }
     }
     callback2(0);
-    callback(lib2.PLAYING);
+    callback2(lib2.PLAYING);
     handleResumePlaybackAnalytics();
     const current2 = ref1.current;
     if (current2 != null) {
@@ -590,7 +561,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     closure_18.current = false;
     if (first1 === lib2.PLAYING) {
       tmp.current = true;
-      callback(tmp2.PAUSED);
+      callback2(tmp2.PAUSED);
       handlePausePlaybackAnalytics();
       const current = ref1.current;
       if (current != null) {
@@ -603,7 +574,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     if (ref2.current) {
       tmp.current = false;
       if (first1 !== lib2.ERRORED) {
-        callback(tmp3.PLAYING);
+        callback2(tmp3.PLAYING);
         handleResumePlaybackAnalytics();
         const current = ref1.current;
         if (current != null) {
@@ -619,17 +590,17 @@ const memoResult = importAllResult.memo((onLoad) => {
     let ComponentDispatch2 = handleBufferAnalytics(ref[26]).ComponentDispatch;
     const subscription1 = ComponentDispatch2.subscribe(lib.QUEST_APP_STORE_OVERLAY_FINISHED, callback7);
     return () => {
-      const ComponentDispatch = outer1_0(outer1_2[26]).ComponentDispatch;
-      ComponentDispatch.unsubscribe(outer1_12.QUEST_GAME_LINK_OPENED, closure_48);
-      const ComponentDispatch2 = outer1_0(outer1_2[26]).ComponentDispatch;
-      ComponentDispatch2.unsubscribe(outer1_12.QUEST_APP_STORE_OVERLAY_FINISHED, closure_49);
+      const ComponentDispatch = closure_1_0(closure_1_2[26]).ComponentDispatch;
+      ComponentDispatch.unsubscribe(closure_1_12.QUEST_GAME_LINK_OPENED, closure_48);
+      const ComponentDispatch2 = closure_1_0(closure_1_2[26]).ComponentDispatch;
+      ComponentDispatch2.unsubscribe(closure_1_12.QUEST_APP_STORE_OVERLAY_FINISHED, closure_49);
     };
   }, items11);
   const items12 = [onToggleFullscreen, orientation];
   const items13 = [sharedValue, callback4];
   const callback8 = obj.useCallback(() => {
     if (closure_2 != null) {
-      const obj = { orientation: null };
+      obj = { orientation: null };
       obj[0] = orientation;
       tmp(obj);
     }
@@ -653,7 +624,7 @@ const memoResult = importAllResult.memo((onLoad) => {
       closure_23.current = null;
       if (first > 0) {
         const result = sharedValue1.set(currentTime.currentTime / tmp15);
-        _undefined2(quest.id, currentTime.currentTime, tmp15);
+        callback(quest.id, currentTime.currentTime, tmp15);
       }
       handleSeekAnalytics(arr, currentTime.currentTime);
       current = ref1.current;
@@ -684,11 +655,11 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
     tmp51 = !tmp55;
   }
-  c50 = tmp51;
+  closure_50 = tmp51;
   const items15 = [callback2, first, sharedValue1, tmp51];
   const items16 = [callback2, first, sharedValue1, first1];
   const callback11 = obj.useCallback(() => {
-    if (!c50) {
+    if (!closure_50) {
       let current = ref4.current;
       if (current == null) {
         current = sharedValue1.get() * first;
@@ -698,7 +669,7 @@ const memoResult = importAllResult.memo((onLoad) => {
       callback2(current + 10);
     }
   }, items15);
-  const tmp3Result3 = handleBufferAnalytics(7476);
+  const tmp3Result3 = handleBufferAnalytics(7514);
   const callbackResult = callback(obj.useCallback(() => {
     let current = ref4.current;
     if (current == null) {
@@ -708,7 +679,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     current.push(current);
     callback2(current - 10);
     if (first1 === lib2.ENDED) {
-      callback(tmp5.PLAYING);
+      callback2(tmp5.PLAYING);
     }
   }, items16));
   ref2 = obj.useRef(0);
@@ -727,14 +698,14 @@ const memoResult = importAllResult.memo((onLoad) => {
       const _Math = Math;
       const sum = seekableDuration.currentTime + 6;
       tmp.current = sum + 2 * Math.random();
-      const obj = handleBufferAnalytics(ref[27]);
+      obj = handleBufferAnalytics(ref[27]);
     }
     if (seekableDuration.currentTime >= ref3.current) {
       const result = handleBufferAnalytics(ref[28]).updateOptimisticProgress(quest.id, questTaskDetails.taskType, seekableDuration.currentTime);
       tmp10.current = seekableDuration.currentTime + 1;
       const obj2 = handleBufferAnalytics(ref[28]);
     }
-    _undefined2(quest.id, seekableDuration.currentTime, seekableDuration.seekableDuration);
+    callback(quest.id, seekableDuration.currentTime, seekableDuration.seekableDuration);
     const result1 = sharedValue1.set(num);
     const current = ref1.current;
     if (current != null) {
@@ -745,7 +716,7 @@ const memoResult = importAllResult.memo((onLoad) => {
   const callback13 = obj.useCallback(() => {
     handleBufferAnalytics(ref[27]).sendVideoProgress(quest, first);
     handleEndAnalytics();
-    callback(lib2.ENDED);
+    callback2(lib2.ENDED);
     const current = ref1.current;
     if (current != null) {
       current.onProgress(first);
@@ -760,7 +731,7 @@ const memoResult = importAllResult.memo((onLoad) => {
   }, items18);
   const items20 = [handleErrorAnalytics];
   const callback14 = obj.useCallback(() => {
-    callback(lib2.LOADING);
+    callback2(lib2.LOADING);
     handleLoadStartAnalytics();
     const current = ref1.current;
     if (current != null) {
@@ -772,7 +743,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
   }, items19);
   const callback15 = obj.useCallback((arg0) => {
-    callback(lib2.ERRORED);
+    callback2(lib2.ERRORED);
     handleErrorAnalytics(arg0);
     const current = ref1.current;
     if (current != null) {
@@ -798,8 +769,6 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
   }, []);
   const callback17 = obj.useCallback((nativeEvent) => {
-    let height;
-    let width;
     let layout;
     if (nativeEvent != null) {
       nativeEvent = nativeEvent.nativeEvent;
@@ -819,8 +788,8 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
   }, []);
   const callbackResult1 = callback(callback11);
-  const items21 = [c8];
-  const tmp67 = handleBufferAnalytics(589).useStateFromStores(items21, () => _undefined.getState()) === first.ACTIVE;
+  const items21 = [closure_8];
+  const tmp67 = handleBufferAnalytics(589).useStateFromStores(items21, () => state.getState()) === first.ACTIVE;
   const items22 = [memo1, memo];
   const memo2 = obj.useMemo(() => {
     let tmp2 = null;
@@ -832,7 +801,7 @@ const memoResult = importAllResult.memo((onLoad) => {
       if (url == null) {
         url = tmp.url;
       }
-      const obj = { uri: null };
+      obj = { uri: null };
       obj[0] = url;
       tmp2 = obj;
     }
@@ -846,14 +815,14 @@ const memoResult = importAllResult.memo((onLoad) => {
           if (current != null) {
             const setNativeProps = current.setNativeProps;
             if (setNativeProps != null) {
-              const obj = { paused: true, src: null };
+              obj = { paused: true, src: null };
               obj[1] = { uri: null };
               setNativeProps(obj);
             }
           }
         } catch (tmp4) {
-          outer1_1(outer1_2[30]).captureException(tmp4);
-          const obj2 = outer1_1(outer1_2[30]);
+          closure_1_1(closure_1_2[30]).captureException(tmp4);
+          const obj2 = closure_1_1(closure_1_2[30]);
         }
       };
     }
@@ -894,7 +863,7 @@ const memoResult = importAllResult.memo((onLoad) => {
       }
     } else {
       if (first1 !== lib2.LOADING) {
-        const obj = handleBufferAnalytics(ref[25]);
+        obj = handleBufferAnalytics(ref[25]);
       }
       callback18(true);
     }
@@ -997,7 +966,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
     obj7[3] = num6;
     obj6[3] = obj7;
-    items29[1] = targetSeconds(tmp3(14497).VideoQuestCaptions, obj6);
+    items29[1] = targetSeconds(tmp3(14565).VideoQuestCaptions, obj6);
     if (!tmp72) {
       items29[2] = tmp72;
       tmp80Result = !tmp39;
@@ -1029,8 +998,8 @@ const memoResult = importAllResult.memo((onLoad) => {
             obj11[3] = tmp.controlButton;
             obj12 = { color: null };
             obj12[0] = tmp.iconDisabled.color;
-            obj11[4] = tmp80(tmp3(14383).TranscriptOutlineIcon, obj12);
-            flag2 = tmp80(tmp3(5433).PressableOpacity, obj11);
+            obj11[4] = tmp80(tmp3(14451).TranscriptOutlineIcon, obj12);
+            flag2 = tmp80(tmp3(5438).PressableOpacity, obj11);
           }
           items32[1] = flag2;
           obj10[1] = items32;
@@ -1048,8 +1017,8 @@ const memoResult = importAllResult.memo((onLoad) => {
           }
           const obj14 = { color: null };
           obj14[0] = color;
-          obj13[4] = tmp80(tmp3(14381).ClosedCaptionsOutlineIcon, obj14);
-          tmp80(tmp3(5433).PressableOpacity, obj13);
+          obj13[4] = tmp80(tmp3(14449).ClosedCaptionsOutlineIcon, obj14);
+          tmp80(tmp3(5438).PressableOpacity, obj13);
         }
       }
       const items33 = [tmp82Result, , ];
@@ -1062,8 +1031,8 @@ const memoResult = importAllResult.memo((onLoad) => {
       obj16[3] = callbackResult;
       const obj17 = { color: null, width: 16, height: 16 };
       obj17[0] = tmp.icon.color;
-      obj16[4] = tmp80(tmp3(14386).SkipBackwardIcon, obj17);
-      const items34 = [tmp80(tmp3(14385).VideoQuestPlayerControlButton, obj16), , ];
+      obj16[4] = tmp80(tmp3(14454).SkipBackwardIcon, obj17);
+      const items34 = [tmp80(tmp3(14453).VideoQuestPlayerControlButton, obj16), , ];
       if (!tmp22) {
         if (first1 !== tmp17.ERRORED) {
           const t2 = tmp3(1236).t;
@@ -1075,14 +1044,14 @@ const memoResult = importAllResult.memo((onLoad) => {
         if (!tmp22) {
           if (first1 !== tmp17.ERRORED) {
             if (tmp70) {
-              let PauseIcon = tmp3(9003).PlayIcon;
+              let PauseIcon = tmp3(9040).PlayIcon;
             } else {
-              PauseIcon = tmp3(9005).PauseIcon;
+              PauseIcon = tmp3(9042).PauseIcon;
             }
             let tmp80Result2 = tmp80(PauseIcon, { size: "lg" });
           }
           obj18[3] = tmp80Result2;
-          items34[1] = tmp80(tmp3(14385).VideoQuestPlayerControlButton, obj18);
+          items34[1] = tmp80(tmp3(14453).VideoQuestPlayerControlButton, obj18);
           const obj19 = { disabled: null, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
           obj19[0] = tmp51;
           const intl5 = tmp3(1236).intl;
@@ -1090,8 +1059,8 @@ const memoResult = importAllResult.memo((onLoad) => {
           obj19[3] = callbackResult1;
           const obj20 = { color: null, width: 16, height: 16 };
           obj20[0] = tmp.icon.color;
-          obj19[4] = tmp80(tmp3(14387).SkipForwardIcon, obj20);
-          items34[2] = tmp80(tmp3(14385).VideoQuestPlayerControlButton, obj19);
+          obj19[4] = tmp80(tmp3(14455).SkipForwardIcon, obj20);
+          items34[2] = tmp80(tmp3(14453).VideoQuestPlayerControlButton, obj19);
           obj15[1] = items34;
           items33[1] = tmp82(tmp81, obj15);
           let tmp80Result3 = tmp80Result4;
@@ -1106,20 +1075,20 @@ const memoResult = importAllResult.memo((onLoad) => {
             obj22[1] = intl6.string(tmp3(1236).t.vKZT5t);
             obj22[2] = callback8;
             obj22[3] = tmp.controlButton;
-            obj22[4] = tmp80(tmp3(14388).FullscreenEnterIcon, {});
-            obj21[1] = tmp80(tmp3(5433).PressableOpacity, obj22);
+            obj22[4] = tmp80(tmp3(14456).FullscreenEnterIcon, {});
+            obj21[1] = tmp80(tmp3(5438).PressableOpacity, obj22);
             tmp80Result3 = tmp80(tmp81, obj21);
           }
           items33[2] = tmp80Result3;
           obj9[2] = items33;
-          items29[4] = tmp82(tmp29(4115).View, obj9);
+          items29[4] = tmp82(tmp29(4119).View, obj9);
           if (tmp80Result4) {
             const obj23 = { style: null, children: null };
             obj23[0] = tmp.progressContainer;
             const obj24 = { style: null };
             const items36 = [tmp.progress, animatedStyle1];
             obj24[0] = items36;
-            obj23[1] = tmp80(tmp29(4115).View, obj24);
+            obj23[1] = tmp80(tmp29(4119).View, obj24);
             tmp80Result4 = tmp80(tmp81, obj23);
           }
           items29[5] = tmp80Result4;
@@ -1127,7 +1096,7 @@ const memoResult = importAllResult.memo((onLoad) => {
           obj3[2] = tmp82(tmp83, obj4);
           return tmp80(tmp81, obj3);
         }
-        tmp80Result2 = tmp80(tmp3(10123).RetryIcon, { size: "lg" });
+        tmp80Result2 = tmp80(tmp3(10162).RetryIcon, { size: "lg" });
       }
       K0e7M9 = tmp3(1236).t.K0e7M9;
     } else {
@@ -1164,7 +1133,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     tmp83 = quest;
   }
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayer.tsx");
+let result = require("set").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayer.tsx");
 
 export const PlayerState = obj12;
 export const VideoQuestPlayer = memoResult;

@@ -1,65 +1,67 @@
-// Module ID: 10645
-// Function ID: 10646
+// Module ID: 10684
+// Function ID: 10685
 // Name: GiftCodeRedeemModal
-// Dependencies: [19, 10641, 1922, 21, 6314, 5260, 10646, 10659, 10660, 589, 10647, 6312, 2]
+// Dependencies: [19, 10680, 1922, 21, 6345, 5265, 10685, 10698, 10699, 589, 10686, 6343, 2]
 // Exports: default
 
-// Module 10645 (GiftCodeRedeemModal)
-import "noop";
-import updateGiftCode from "updateGiftCode";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { jsx } from "jsxProd";
-import HeaderBackImage from "HeaderBackImage";
+// Module 10684 (GiftCodeRedeemModal)
+import noopAll from "noop" /* 19 */;
+import useGiftCodeErrorMessageDefault from "useGiftCodeErrorMessage" /* 10686 */;
+import closure_3 from "updateGiftCode" /* 10680 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import { jsx } from "jsxProd" /* 21 */;
+import HeaderBackImage from "HeaderBackImage" /* 6345 */;
 
 const require = arg1;
+noopAll;
 let obj = { START: "giftcode-start", SUCCESS: "giftcode-success", ERROR: "giftcode-error" };
-HeaderBackImage = HeaderBackImage.getHeaderNoTitle();
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemModal.tsx");
+const headerNoTitle = HeaderBackImage.getHeaderNoTitle();
+const result = require("set").fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemModal.tsx");
 
 export default function GiftCodeRedeemModal(code) {
   code = code.code;
   let stateFromStores1 = code;
   let merged = Object.assign(code, Object.create(null));
-  let obj = stateFromStores1(589);
-  const items = [updateGiftCode];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.get(stateFromStores1));
-  let obj1 = stateFromStores1(589);
-  const items1 = [mergeGuildAvatar];
+  obj = stateFromStores1(589);
+  const items = [closure_3];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_3.get(stateFromStores1));
+  obj1 = stateFromStores1(589);
+  const items1 = [closure_4];
   stateFromStores1 = obj1.useStateFromStores(items1, () => currentUser.getCurrentUser());
-  const tmp6 = importDefault(10647)(code, stateFromStores1);
+  const tmp6 = useGiftCodeErrorMessageDefault(code, stateFromStores1);
   if (null == stateFromStores1) {
     return null;
   } else {
     obj = {};
     let items2 = obj;
     obj = { headerTitle: null, headerLeft: null, render: null };
-    obj[0] = HeaderBackImage;
-    let tmp2Result = tmp2(6314);
-    obj[1] = tmp2Result.getHeaderCloseButton(() => callback(5260).pop());
+    obj[0] = closure_7;
+    let tmp2Result = tmp2(6345);
+    obj[1] = tmp2Result.getHeaderCloseButton(() => callback(5265).pop());
     obj[2] = function render(arg0) {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(arg0);
       obj.user = stateFromStores1;
-      return outer1_5(outer1_1(outer1_2[6]), obj);
+      return closure_1_5(closure_1_1(closure_1_2[6]), obj);
     };
     obj[obj.START] = obj;
     obj1 = { headerTitle: null, headerLeft: null, render: null };
-    obj1[0] = HeaderBackImage;
-    tmp2Result = tmp2(6314);
-    obj1[1] = tmp2Result.getHeaderCloseButton(() => callback(5260).pop());
+    obj1[0] = closure_7;
+    tmp2Result = tmp2(6345);
+    obj1[1] = tmp2Result.getHeaderCloseButton(() => callback(5265).pop());
     obj1[2] = function render(arg0) {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(arg0);
       obj.user = stateFromStores1;
-      return outer1_5(outer1_1(outer1_2[7]), obj);
+      return closure_1_5(closure_1_1(closure_1_2[7]), obj);
     };
     obj[obj.SUCCESS] = obj1;
     const obj2 = { headerTitle: null, headerLeft: null, render: null };
-    obj2[0] = HeaderBackImage;
-    obj2[1] = tmp2(6314).getHeaderCloseButton(() => callback(5260).pop());
+    obj2[0] = closure_7;
+    obj2[1] = tmp2(6345).getHeaderCloseButton(() => callback(5265).pop());
     obj2[2] = function render(arg0) {
       const merged = Object.assign(arg0);
-      return callback2(callback(10660), {});
+      return callback2(callback(10699), {});
     };
     obj[obj.ERROR] = obj2;
     if (null == stateFromStores) {
@@ -86,10 +88,10 @@ export default function GiftCodeRedeemModal(code) {
         items3 = [obj6];
       }
       obj3[1] = items3;
-      jsx(tmp2(6312).Navigator, { screens: null, initialRouteStack: null });
+      jsx(tmp2(6343).Navigator, { screens: null, initialRouteStack: null });
       const tmp7 = jsx;
     }
-    const tmp2Result1 = tmp2(6314);
+    const tmp2Result1 = tmp2(6345);
   }
 };
 export const GiftCodeModalScreens = obj;

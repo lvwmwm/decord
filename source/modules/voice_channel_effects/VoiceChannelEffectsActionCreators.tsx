@@ -1,22 +1,20 @@
-// Module ID: 7306
-// Function ID: 7307
+// Module ID: 7344
+// Function ID: 7345
 // Name: VoiceChannelEffectSentLocation
-// Dependencies: [6727, 1979, 7307, 7308, 676, 4781, 12, 7309, 530, 7332, 7159, 6824, 2]
+// Dependencies: [6764, 1980, 7345, 7346, 676, 4786, 12, 7347, 530, 7370, 7197, 6862, 2]
 // Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEffect
 
-// Module 7306 (VoiceChannelEffectSentLocation)
-import getEmojiToGroupId from "getEmojiToGroupId";
-import handleConnectionOpen from "handleConnectionOpen";
-import initialize from "initialize";
-import { VoiceChannelEffectAnimationType as closure_6 } from "VoiceChannelEffectAnimationType";
-import ME from "ME";
-import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
+// Module 7344 (VoiceChannelEffectSentLocation)
+import closure_3 from "getEmojiToGroupId" /* 6764 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "initialize" /* 7345 */;
+import { VoiceChannelEffectAnimationType as closure_6 } from "VoiceChannelEffectAnimationType" /* 7346 */;
+import ME from "ME" /* 676 */;
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4786 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ Endpoints: error, NOOP_NULL: metroImportAll } = ME);
-const result = require("initialize").fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsActionCreators.tsx");
+({ Endpoints: error, NOOP_NULL: closure_8 } = ME);
+const result = require("set").fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsActionCreators.tsx");
 
 export const VoiceChannelEffectSentLocation = { EMOJI_PICKER: "emoji_picker", EFFECT_BAR: "effect_bar" };
 export const sendVoiceChannelCustomCallSoundEffect = function sendVoiceChannelCustomCallSoundEffect(id, c4, arg2) {
@@ -29,20 +27,20 @@ export const sendVoiceChannelCustomCallSoundEffect = function sendVoiceChannelCu
   }
   obj = { animation_type: BASIC, animation_id: null };
   const throttleResult = obj.throttle(() => {
-    if (outer1_4.getVoiceChannelId() !== abortController) {
+    if (closure_1_4.getVoiceChannelId() !== abortController) {
       abortController.abort();
     }
   }, 1000);
-  obj[1] = abortController(7309).sampleAnimationId(BASIC, abortController(7309).CUSTOM_CALL_SOUND_ANIMATION_RANGE);
+  obj[1] = abortController(7347).sampleAnimationId(BASIC, abortController(7347).CUSTOM_CALL_SOUND_ANIMATION_RANGE);
   const HTTP = tmp2(530).HTTP;
   obj = { url: closure_7.CUSTOM_CALL_SOUNDS(id), body: obj, signal: abortController.signal, onRequestProgress: throttleResult, rejectWithError: true };
-  const tmp2Result = abortController(7309);
+  const tmp2Result = abortController(7347);
   HTTP.post(obj).then(closure_8, () => {
 
   });
   const postResult = HTTP.post(obj);
-  const items = [abortController(7159).CHANNEL_CALL];
-  abortController(7332)(items, arg2, c4, abortController(6824).AnalyticsSoundType.ENTRY);
+  const items = [abortController(7197).CHANNEL_CALL];
+  abortController(7370)(items, arg2, c4, abortController(6862).AnalyticsSoundType.ENTRY);
 };
 export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundboardEffect(channelId, emojiId, arg2, arg3, arg4) {
   let customEmojiById = null;
@@ -72,14 +70,14 @@ export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundbo
     body: obj,
     signal: abortController.signal,
     onRequestProgress: obj.throttle(() => {
-      if (outer1_4.getVoiceChannelId() !== abortController) {
+      if (closure_1_4.getVoiceChannelId() !== abortController) {
         abortController.abort();
       }
     }, 1000),
     rejectWithError: true
   };
   const throttleResult = obj.throttle(() => {
-    if (outer1_4.getVoiceChannelId() !== abortController) {
+    if (closure_1_4.getVoiceChannelId() !== abortController) {
       abortController.abort();
     }
   }, 1000);
@@ -90,5 +88,5 @@ export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundbo
   if (arg3 == null) {
     items = [];
   }
-  abortController(7332)(items, arg2, emojiId, abortController(6824).AnalyticsSoundType.DEFAULT, arg4);
+  abortController(7370)(items, arg2, emojiId, abortController(6862).AnalyticsSoundType.DEFAULT, arg4);
 };

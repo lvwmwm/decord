@@ -1,31 +1,33 @@
-// Module ID: 15067
-// Function ID: 15068
+// Module ID: 15131
+// Function ID: 15132
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 13993, 21, 4661, 712, 1892, 7359, 7337, 2]
+// Dependencies: [19, 17, 14061, 21, 4668, 712, 1892, 7397, 7375, 2]
 // Exports: default
 
-// Module 15067 (SettingSearchBar)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import zustandStore from "zustandStore";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15131 (SettingSearchBar)
+import ThemesDefault from "Themes" /* 712 */;
+import SearchField from "SearchField" /* 7375 */;
+import closure_2 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "zustandStore" /* 14061 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 createCacheKey = { container: null };
-createCacheKey = { marginTop: require("Themes").modules.mobile.SETTINGS_PADDING_TOP };
+createCacheKey = { marginTop: ThemesDefault.modules.mobile.SETTINGS_PADDING_TOP };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("zustandStore").fileFinishedImporting("modules/settings/native/search/SettingSearchBar.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/settings/native/search/SettingSearchBar.tsx");
 
 export default function SettingSearchBar() {
-  const tmp = createCacheKey();
-  const callback = React.useCallback(() => {
+  const tmp = callback();
+  callback = React.useCallback(() => {
     store.setState({ isActive: false, query: "", isFocused: false });
     const result = callback(1892).dismissGlobalKeyboard();
   }, []);
   const callback1 = React.useCallback(() => {
-    const result = callback(7359).trackSettingSearchInputFocused();
+    const result = callback(7397).trackSettingSearchInputFocused();
     store.setState({ isActive: true, isFocused: true });
   }, []);
   const callback2 = React.useCallback(() => {
@@ -35,9 +37,7 @@ export default function SettingSearchBar() {
   const callback3 = React.useCallback((query) => {
     store.setState({ query });
   }, []);
-  obj = { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: null, onChange: null };
-  obj[5] = field.getField("query");
-  obj[6] = callback3;
-  obj[1] = jsx(require(7337) /* SearchField */.SearchField, { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: null, onChange: null });
-  return <View ref={React.useRef(null)} size="md" onFocus={callback1} onBlur={callback2} onClear={callback} defaultValue={null} onChange={null} />;
+  obj = { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: field.getField("query"), onChange: callback3 };
+  obj[1] = jsx(SearchField.SearchField, { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: field.getField("query"), onChange: callback3 });
+  return <View ref={React.useRef(null)} size="md" onFocus={callback1} onBlur={callback2} onClear={callback} defaultValue={field.getField("query")} onChange={callback3} />;
 };

@@ -1,31 +1,38 @@
-// Module ID: 14826
-// Function ID: 14827
+// Module ID: 14890
+// Function ID: 14891
 // Name: toggle
-// Dependencies: [8198, 5364, 14268, 7621, 10669, 1236, 4066, 2]
+// Dependencies: [8238, 5369, 14336, 7659, 10708, 1236, 4069, 2]
 
-// Module 14826 (toggle)
-import createToggle from "createToggle";
+// Module 14890 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import apexExperiment from "apexExperiment" /* 5369 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 7659 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 14336 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.dxlHN2);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.dxlHN2);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["/071J7"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["/071J7"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableScreenDowntimeScheduleNotifications.useSetting,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableScreenDowntimeScheduleNotifications.useSetting,
   onValueChange(arg0) {
-    const EnableScreenDowntimeScheduleNotifications = require(4066) /* explicitContentFromProto */.EnableScreenDowntimeScheduleNotifications;
+    const EnableScreenDowntimeScheduleNotifications = explicitContentFromProto.EnableScreenDowntimeScheduleNotifications;
     return EnableScreenDowntimeScheduleNotifications.updateSetting(arg0);
   },
   usePredicate() {
-    let isFamilyCenterV3Enabled = require(5364) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
-    const obj = require(5364) /* apexExperiment */;
-    const tmp2 = importDefault(14268)();
-    const hasActiveParentLinks = require(7621) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
+    let isFamilyCenterV3Enabled = apexExperiment.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
+    const obj = apexExperiment;
+    const tmp2 = useUserIsTeenAgeGroupDefault();
+    const hasActiveParentLinks = useUserIdsForLinkStatus.useHasActiveParentLinks();
     if (isFamilyCenterV3Enabled) {
       isFamilyCenterV3Enabled = tmp2;
     }
@@ -37,24 +44,24 @@ const toggle = createToggle.createToggle({
 });
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.dxlHN2);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.dxlHN2);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["/071J7"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["/071J7"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableScreenDowntimeScheduleNotifications.useSetting,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableScreenDowntimeScheduleNotifications.useSetting,
   onValueChange(arg0) {
-    const EnableScreenDowntimeScheduleNotifications = require(4066) /* explicitContentFromProto */.EnableScreenDowntimeScheduleNotifications;
+    const EnableScreenDowntimeScheduleNotifications = explicitContentFromProto.EnableScreenDowntimeScheduleNotifications;
     return EnableScreenDowntimeScheduleNotifications.updateSetting(arg0);
   },
   usePredicate() {
-    let isFamilyCenterV3Enabled = require(5364) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
-    const obj = require(5364) /* apexExperiment */;
-    const tmp2 = importDefault(14268)();
-    const hasActiveParentLinks = require(7621) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
+    let isFamilyCenterV3Enabled = apexExperiment.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
+    const obj = apexExperiment;
+    const tmp2 = useUserIsTeenAgeGroupDefault();
+    const hasActiveParentLinks = useUserIdsForLinkStatus.useHasActiveParentLinks();
     if (isFamilyCenterV3Enabled) {
       isFamilyCenterV3Enabled = tmp2;
     }
@@ -64,6 +71,6 @@ let obj = {
     return isFamilyCenterV3Enabled;
   }
 };
-const result = require("useUserIsTeenAgeGroup").fileFinishedImporting("modules/user_settings/defs/native/ScreenDowntimeScheduleSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ScreenDowntimeScheduleSetting.tsx");
 
 export default toggle;

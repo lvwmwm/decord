@@ -1,72 +1,78 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 14859
+// Function ID: 14860
 // Name: onChange
-// Dependencies: [8198, 4032, 4066, 1236, 1306, 10669, 2]
+// Dependencies: [8238, 4035, 4069, 1236, 1306, 10708, 2]
 // Exports: onChange
 
-// Module 14795 (onChange)
-import createToggle from "createToggle";
+// Module 14859 (onChange)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import create from "create" /* 1306 */;
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4035 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 function onChange(arg0) {
-  const obj = require(4032) /* MAX_REACTIONS */;
-  const ReactionNotifications = require(4066) /* explicitContentFromProto */.ReactionNotifications;
+  const obj = MAX_REACTIONS;
+  const ReactionNotifications = explicitContentFromProto.ReactionNotifications;
   const result = obj.updateReactionNotificationsSetting(Number(arg0), ReactionNotifications.getSetting());
 }
 const radio = createToggle.createRadio({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.Rq0NFs);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.Rq0NFs);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").ReactionNotifications.useSetting,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.ReactionNotifications.useSetting,
   onValueChange: onChange,
   useOptions() {
     let obj = { label: null, value: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t["9x/RtT"]);
-    obj[1] = require(1306) /* create */.ReactionNotificationType.NOTIFICATIONS_ENABLED;
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t["9x/RtT"]);
+    obj[1] = create.ReactionNotificationType.NOTIFICATIONS_ENABLED;
     const items = [obj, , ];
     obj = { label: null, value: null };
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.fJAbQd);
-    obj[1] = require(1306) /* create */.ReactionNotificationType.ONLY_DMS;
+    const intl2 = getSystemLocale.intl;
+    obj[0] = intl2.string(getSystemLocale.t.fJAbQd);
+    obj[1] = create.ReactionNotificationType.ONLY_DMS;
     items[1] = obj;
     obj = { label: null, value: null };
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["xu+UDU"]);
-    obj[1] = require(1306) /* create */.ReactionNotificationType.NOTIFICATIONS_DISABLED;
+    const intl3 = getSystemLocale.intl;
+    obj[0] = intl3.string(getSystemLocale.t["xu+UDU"]);
+    obj[1] = create.ReactionNotificationType.NOTIFICATIONS_DISABLED;
     items[2] = obj;
     return items;
   }
 });
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.Rq0NFs);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.Rq0NFs);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").ReactionNotifications.useSetting,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.ReactionNotifications.useSetting,
   onValueChange: onChange,
   useOptions() {
     let obj = { label: null, value: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t["9x/RtT"]);
-    obj[1] = require(1306) /* create */.ReactionNotificationType.NOTIFICATIONS_ENABLED;
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t["9x/RtT"]);
+    obj[1] = create.ReactionNotificationType.NOTIFICATIONS_ENABLED;
     const items = [obj, , ];
     obj = { label: null, value: null };
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.fJAbQd);
-    obj[1] = require(1306) /* create */.ReactionNotificationType.ONLY_DMS;
+    const intl2 = getSystemLocale.intl;
+    obj[0] = intl2.string(getSystemLocale.t.fJAbQd);
+    obj[1] = create.ReactionNotificationType.ONLY_DMS;
     items[1] = obj;
     obj = { label: null, value: null };
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["xu+UDU"]);
-    obj[1] = require(1306) /* create */.ReactionNotificationType.NOTIFICATIONS_DISABLED;
+    const intl3 = getSystemLocale.intl;
+    obj[0] = intl3.string(getSystemLocale.t["xu+UDU"]);
+    obj[1] = create.ReactionNotificationType.NOTIFICATIONS_DISABLED;
     items[2] = obj;
     return items;
   }
 };
-let result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/ReactionNotificationsSettings.tsx");
+let result = set.fileFinishedImporting("modules/user_settings/defs/native/ReactionNotificationsSettings.tsx");
 
 export default radio;
 export { onChange };

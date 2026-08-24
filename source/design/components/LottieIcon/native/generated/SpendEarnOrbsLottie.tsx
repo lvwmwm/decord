@@ -1,24 +1,21 @@
-// Module ID: 10406
-// Function ID: 10407
+// Module ID: 10445
+// Function ID: 10446
 // Name: items
-// Dependencies: [19, 21, 10404, 10407, 2]
+// Dependencies: [19, 21, 10443, 10446, 2]
 
-// Module 10406 (items)
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 10445 (items)
+import LottieIcon from "LottieIcon" /* 10443 */;
+import registerAsset from "registerAsset" /* 10446 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let closure_3 = ["Orbs-Spend_DarkTheme", "Orbs-Earn_DarkTheme"];
 const items = [{ name: "earn", start: 0, duration: 180 }, { name: "spend", start: 240, duration: 180 }];
-const forwardRefResult = require("noop").forwardRef((arg0, arg1) => {
-  const obj = { dotLottie: null, ref: null, layers: null, markers: null };
-  obj[0] = require(10407) /* registerAsset */;
-  obj[1] = arg1;
-  obj[2] = closure_3;
-  obj[3] = items;
+const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(require(10404) /* LottieIcon */.LottieIcon, { dotLottie: null, ref: null, layers: null, markers: null });
+  return jsx(LottieIcon.LottieIcon, { dotLottie: registerAsset, ref, layers: closure_3, markers: items });
 });
-const result = require("LottieIcon").fileFinishedImporting("design/components/LottieIcon/native/generated/SpendEarnOrbsLottie.tsx");
+const result = require("set").fileFinishedImporting("design/components/LottieIcon/native/generated/SpendEarnOrbsLottie.tsx");
 
 export const SpendEarnOrbsLottie = forwardRefResult;

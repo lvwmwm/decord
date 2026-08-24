@@ -1,28 +1,30 @@
-// Module ID: 14864
-// Function ID: 14865
-// Dependencies: [1626, 1236, 14865, 10669, 9551, 4066, 2]
+// Module ID: 14928
+// Function ID: 14929
+// Dependencies: [1626, 1236, 14929, 10708, 9588, 4069, 2]
 
-// Module 14864
-import createToggle from "createToggle";
-import importAllResult from "getConstants";
+// Module 14928
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getClientInfo from "getClientInfo" /* 14929 */;
+import createToggle from "createToggle" /* 10708 */;
+import importAllResult from "getConstants" /* 1626 */;
 
-const require = arg1;
-const constants = require("getConstants").getConstants();
+require = arg1;
+const constants = importAllResult.getConstants();
 let obj = {
   useTitle: function useAppVersionSettingTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.H66MEk);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.H66MEk);
   },
   parent: null,
   IconComponent: require("ClydeIcon").ClydeIcon,
   useTrailing: function useAppVersionSettingTrailing() {
-    const clientInfoString = require(14865) /* getClientInfo */.getClientInfoString(closure_3.ReleaseChannel);
-    const obj = require(14865) /* getClientInfo */;
-    const obj2 = require(14865) /* getClientInfo */;
-    const clientInfoString1 = obj2.getClientInfoString(importAll(1626).getBuildNumberLabel());
+    const clientInfoString = getClientInfo.getClientInfoString(closure_3.ReleaseChannel);
+    const obj = getClientInfo;
+    const obj2 = getClientInfo;
+    const clientInfoString1 = obj2.getClientInfoString(importAllResult.getBuildNumberLabel());
     const hasItem = clientInfoString1.includes("dev");
-    const obj3 = importAll(1626);
-    const clientInfoString2 = require(14865) /* getClientInfo */.getClientInfoString(closure_3.Version);
+    const obj3 = importAllResult;
+    const clientInfoString2 = getClientInfo.getClientInfoString(closure_3.Version);
     if (hasItem) {
       let combined = concat(clientInfoString2, " (", clientInfoString, ")");
     } else {
@@ -34,19 +36,19 @@ let obj = {
 };
 const createStaticResult = createToggle.createStatic({
   useTitle: function useAppVersionSettingTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.H66MEk);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.H66MEk);
   },
   parent: null,
   IconComponent: require("ClydeIcon").ClydeIcon,
   useTrailing: function useAppVersionSettingTrailing() {
-    const clientInfoString = require(14865) /* getClientInfo */.getClientInfoString(closure_3.ReleaseChannel);
-    const obj = require(14865) /* getClientInfo */;
-    const obj2 = require(14865) /* getClientInfo */;
-    const clientInfoString1 = obj2.getClientInfoString(importAll(1626).getBuildNumberLabel());
+    const clientInfoString = getClientInfo.getClientInfoString(closure_3.ReleaseChannel);
+    const obj = getClientInfo;
+    const obj2 = getClientInfo;
+    const clientInfoString1 = obj2.getClientInfoString(importAllResult.getBuildNumberLabel());
     const hasItem = clientInfoString1.includes("dev");
-    const obj3 = importAll(1626);
-    const clientInfoString2 = require(14865) /* getClientInfo */.getClientInfoString(closure_3.Version);
+    const obj3 = importAllResult;
+    const clientInfoString2 = getClientInfo.getClientInfoString(closure_3.Version);
     if (hasItem) {
       let combined = concat(clientInfoString2, " (", clientInfoString, ")");
     } else {
@@ -56,6 +58,6 @@ const createStaticResult = createToggle.createStatic({
   },
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting
 });
-const result = require("getClientInfo").fileFinishedImporting("modules/user_settings/defs/native/AppVersionSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AppVersionSetting.tsx");
 
 export default createStaticResult;

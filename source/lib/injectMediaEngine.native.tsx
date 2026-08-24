@@ -1,9 +1,10 @@
-// Module ID: 4498
-// Function ID: 4499
-// Dependencies: [4499, 4500, 2]
+// Module ID: 4502
+// Function ID: 4503
+// Dependencies: [4503, 4504, 2]
 
-// Module 4498
-import inject from "inject";
+// Module 4502
+import set from "set" /* 2 */;
+import inject from "inject" /* 4503 */;
 
 inject.inject({
   supported() {
@@ -17,10 +18,10 @@ inject.inject({
 
   },
   getVoiceEngine() {
-    return require(4500) /* logger */.default;
+    return require(4504) /* logger */.default;
   },
   getOpenH264LibraryPath() {
 
   }
 });
-const result = require("set").fileFinishedImporting("lib/injectMediaEngine.native.tsx");
+const result = set.fileFinishedImporting("lib/injectMediaEngine.native.tsx");

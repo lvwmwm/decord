@@ -1,10 +1,12 @@
-// Module ID: 4720
-// Function ID: 4721
+// Module ID: 4726
+// Function ID: 4727
 // Name: initialize
 // Dependencies: [2]
 
-// Module 4720 (initialize)
-const result = require("set").fileFinishedImporting("lib/LifecycleManager.tsx");
+// Module 4726 (initialize)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("lib/LifecycleManager.tsx");
 class LifecycleManager {
 }
 const prototype = LifecycleManager.prototype;

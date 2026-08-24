@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 186 (Timing)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("Timing");
+
+export default getAll.get("Timing");

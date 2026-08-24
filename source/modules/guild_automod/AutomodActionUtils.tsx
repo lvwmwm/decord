@@ -1,13 +1,15 @@
-// Module ID: 16765
-// Function ID: 16766
+// Module ID: 16858
+// Function ID: 16859
 // Name: getRuleDefaultActionsFromConfig
-// Dependencies: [11042, 2]
+// Dependencies: [11081, 2]
 // Exports: getDefaultActions, getRuleDefaultActionsFromConfig, isActionBlockMessage, isActionFlagToChannel, isActionQuarantineUser, isActionUserCommunicationDisabled
 
-// Module 16765 (getRuleDefaultActionsFromConfig)
-import { AutomodActionType } from "AutomodEventType";
+// Module 16858 (getRuleDefaultActionsFromConfig)
+import set from "set" /* 2 */;
+import AutomodEventType from "AutomodEventType" /* 11081 */;
 
-const result = require("set").fileFinishedImporting("modules/guild_automod/AutomodActionUtils.tsx");
+let AutomodActionType = AutomodEventType.AutomodActionType;
+const result = set.fileFinishedImporting("modules/guild_automod/AutomodActionUtils.tsx");
 
 export const getRuleDefaultActionsFromConfig = function getRuleDefaultActionsFromConfig(defaultActionTypes) {
   let obj = { type: AutomodActionType.BLOCK_MESSAGE, metadata: { customMessage: "r" } };

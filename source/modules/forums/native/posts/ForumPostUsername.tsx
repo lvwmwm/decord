@@ -1,56 +1,47 @@
-// Module ID: 11181
-// Function ID: 11182
+// Module ID: 11233
+// Function ID: 11234
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 4662, 11177, 21, 4661, 8513, 1401, 10718, 11182, 589, 8186, 1297, 4734, 2]
+// Dependencies: [19, 17, 4669, 11229, 21, 4668, 8552, 1401, 10757, 11234, 589, 8226, 1297, 4739, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 11181 (ForumPostUsername)
-import "noop";
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { useForumChannelStore } from "set";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11233 (ForumPostUsername)
+import noopAll from "noop" /* 19 */;
+import set from "set" /* 1401 */;
+import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 8552 */;
+import useChatWidthDefault from "useChatWidth" /* 10757 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { useForumChannelStore } from "set" /* 11229 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function ForumPostUsername(arg0) {
-  let authorColor;
-  let authorColors;
-  let authorId;
-  let authorName;
-  let containerStyle;
-  let hasUnreads;
-  let roleDotStyle;
-  let suffix;
-  let textStyle;
-  let thread;
   ({ thread, authorId, authorName, authorColor, authorColors } = arg0);
   ({ containerStyle, roleDotStyle, textStyle, suffix, hasUnreads } = arg0);
   const tmp = callback2();
   let num = 158;
-  if (useForumChannelStore(thread.parent_id).layoutType === require(1401) /* set */.ForumLayout.GRID) {
+  if (useForumChannelStore(thread.parent_id).layoutType === set.ForumLayout.GRID) {
     num = 72;
   }
-  const diff = importDefault(10718)() - tmp2(11182).GRID_HORIZONTAL_PADDING - num;
+  const diff = useChatWidthDefault() - tmp2(11234).GRID_HORIZONTAL_PADDING - num;
   let tmp2Result = tmp2(589);
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const items = [closure_4];
   const stateFromStores = tmp2Result.useStateFromStores(items, () => roleStyle.roleStyle);
   if ("username" === stateFromStores) {
     if (null != authorColor) {
       let obj = { color: null };
       obj[0] = authorColor;
     }
-    tmp2Result = tmp2(8186);
+    tmp2Result = tmp2(8226);
     const processColorStringsArray = tmp2Result.useProcessColorStringsArray(authorColors);
-    const tmp2Result1 = tmp2(8186);
+    const tmp2Result1 = tmp2(8226);
     const useIsRoleStyleAndRoleColorsEligibleForERC = tmp2Result1.useIsRoleStyleAndRoleColorsEligibleForERC;
     const guild_id = thread.guild_id;
     let tmp19Result = null;
     if (null != authorName) {
       obj = { style: null, accessibilityRole: "button", children: null };
-      const obj1 = { maxWidth: null };
+      obj1 = { maxWidth: null };
       obj1[0] = diff;
       const merged = Object.assign(tmp.authorContainer);
       const items1 = [obj1, tmp9, containerStyle];
@@ -77,28 +68,22 @@ function ForumPostUsername(arg0) {
       obj4[4] = items4;
       const items5 = [authorName, suffix];
       obj4[5] = items5;
-      items3[1] = closure_7(tmp2(4734).Text, obj4);
+      items3[1] = closure_7(tmp2(4739).Text, obj4);
       obj[2] = items3;
       tmp19Result = tmp19(tmp20, obj);
     }
     return tmp19Result;
   }
 }
+noopAll;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles({ authorContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center", marginEnd: 8 }, roleDotContainer: { alignItems: "center", justifyContent: "center", marginEnd: 2, marginBottom: 4 }, authorName: { overflow: "hidden", flexWrap: "nowrap" } });
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/forums/native/posts/ForumPostUsername.tsx");
+const result = require("set").fileFinishedImporting("modules/forums/native/posts/ForumPostUsername.tsx");
 
 export const ForumPostAuthor = function ForumPostAuthor(thread) {
-  let author;
-  let containerStyle;
-  let hasUnreads;
-  let roleDotStyle;
-  let suffix;
-  let textStyle;
-  let user;
   thread = thread.thread;
   ({ hasUnreads, suffix, containerStyle, roleDotStyle, textStyle } = thread);
-  let obj = require(8513) /* useLoadForumUnreadCounts */;
+  let obj = useLoadForumUnreadCounts;
   const forumPostAuthor = obj.useForumPostAuthor(thread);
   ({ user, author } = forumPostAuthor);
   let nick;
@@ -142,18 +127,9 @@ export const ForumPostAuthor = function ForumPostAuthor(thread) {
   return tmp5Result;
 };
 export const ForumPostMessageAuthor = function ForumPostMessageAuthor(thread) {
-  let authorColor;
-  let authorColors;
-  let authorName;
-  let containerStyle;
-  let hasUnreads;
-  let message;
-  let roleDotStyle;
-  let suffix;
-  let textStyle;
   thread = thread.thread;
   ({ message, hasUnreads, suffix, containerStyle, roleDotStyle, textStyle } = thread);
-  let obj = require(8513) /* useLoadForumUnreadCounts */;
+  let obj = useLoadForumUnreadCounts;
   const forumPostMessageAuthor = obj.useForumPostMessageAuthor(message, thread);
   const user = forumPostMessageAuthor.user;
   obj = { thread, authorId: null, authorName: null, authorColor: null, authorColors: null, suffix: null, containerStyle: null, roleDotStyle: null, textStyle: null, hasUnreads: null };

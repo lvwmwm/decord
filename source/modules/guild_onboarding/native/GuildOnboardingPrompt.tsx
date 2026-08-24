@@ -1,80 +1,71 @@
-// Module ID: 6805
-// Function ID: 6806
+// Module ID: 6842
+// Function ID: 6843
 // Name: PromptHeader
-// Dependencies: [32, 19, 17, 6727, 6801, 1910, 6788, 6785, 1925, 21, 4661, 6370, 712, 1500, 589, 1629, 4097, 689, 6803, 6806, 4734, 1236, 4745, 6906, 4756, 691, 5285, 6925, 6926, 6930, 1435, 4342, 6935, 2007, 5433, 7129, 2]
+// Dependencies: [32, 19, 17, 6764, 6838, 1910, 6825, 6822, 1925, 21, 4668, 6401, 712, 1500, 589, 1629, 4100, 689, 6840, 6843, 4739, 1236, 4750, 6944, 4761, 691, 5290, 6963, 6964, 6968, 1435, 4346, 6973, 2008, 5438, 7167, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 6805 (PromptHeader)
-import DropdownOptionRow from "DropdownOptionRow";
-import TermsFieldListItem from "TermsFieldListItem";
-import get_ActivityIndicator from "n";
-import getEmojiToGroupId from "getEmojiToGroupId";
-import get from "get";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import handleUpdate from "handleUpdate";
-import { GuildOnboardingModalStates as closure_13 } from "GUILD_ONBOARDING_MODAL_KEY";
-import { EMOJI_URL_BASE_SIZE } from "set";
-import jsxProd from "getSystemLocale";
-import createCacheKey from "createCacheKey";
+// Module 6842 (PromptHeader)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import Text2 from "Text" /* 4739 */;
+import EmojiDefault from "Emoji" /* 6968 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_9 from "getEmojiToGroupId" /* 6764 */;
+import closure_10 from "get" /* 6838 */;
+import closure_11 from "createGuildRecordFromRust" /* 1910 */;
+import closure_12 from "handleUpdate" /* 6825 */;
+import { GuildOnboardingModalStates as closure_13 } from "GUILD_ONBOARDING_MODAL_KEY" /* 6822 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function PromptHeader(currentPrompt) {
-  let currentPromptIndex;
-  let numberOfPrompts;
   currentPrompt = currentPrompt.currentPrompt;
   ({ numberOfPrompts, currentPromptIndex } = currentPrompt);
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = { style: tmp.promptHeader, children: null };
   obj = { style: tmp.countText, variant: "text-sm/medium", color: "text-muted", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   obj = { currentQuestion: currentPromptIndex + 1, questionCount: numberOfPrompts };
-  obj[3] = intl.format(require(1236) /* getSystemLocale */.t.isV0NW, obj);
-  const items = [callback2(require(4734) /* Text */.Text, obj), ];
+  obj[3] = intl.format(getSystemLocale.t.isV0NW, obj);
+  const items = [callback2(Text2.Text, obj), ];
   let required;
   if (currentPrompt != null) {
     required = currentPrompt.required;
   }
   let tmp2Result = null;
   if (required) {
-    const obj1 = { children: null };
+    obj1 = { children: null };
     const obj2 = { style: null };
     obj2[0] = tmp.requiredSeparator;
     const items1 = [tmp5(tmp4, obj2), ];
     const obj3 = { variant: "text-sm/medium", color: "text-brand", children: null };
     const intl2 = tmp6(1236).intl;
     obj3[2] = intl2.string(tmp6(1236).t.Ur8Vrt);
-    items1[1] = tmp5(tmp6(4734).Text, obj3);
+    items1[1] = tmp5(tmp6(4739).Text, obj3);
     obj1[0] = items1;
     tmp2Result = tmp2(tmp3, obj1);
   }
   const obj4 = { children: null };
   items[1] = tmp2Result;
   obj[1] = items;
-  const items2 = [closure_16(closure_6, obj), callback2(require(4734) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: currentPrompt.title })];
+  const items2 = [closure_16(closure_6, obj), callback2(Text2.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: currentPrompt.title })];
   obj4[0] = items2;
   return closure_16(closure_17, obj4);
 }
 function PromptFooter(onPress) {
-  let currentPrompt;
-  let helpText;
-  let helpTextAdditional;
-  let require;
-  let selectedOptionIds;
   ({ guildId: require, currentPrompt, selectedOptionIds } = onPress);
   const lastPrompt = onPress.lastPrompt;
   let found;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = require(found[14]);
-  const items = [createGuildRecordFromRust];
+  const items = [closure_11];
   let tmp5 = 0 === selectedOptionIds.length;
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_11.getGuild(closure_0));
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_11.getGuild(closure_0));
   if (tmp5) {
     let required;
     if (currentPrompt != null) {
@@ -112,8 +103,8 @@ function PromptFooter(onPress) {
   const items2 = [found];
   const memo = React.useMemo(() => {
     if (null != found) {
-      let selectedRoleIds = outer1_0(found[26]).getSelectedRoleIds(tmp);
-      const obj = outer1_0(found[26]);
+      let selectedRoleIds = closure_1_0(found[26]).getSelectedRoleIds(tmp);
+      const obj = closure_1_0(found[26]);
     } else {
       const _Set = Set;
       selectedRoleIds = new Set();
@@ -122,8 +113,8 @@ function PromptFooter(onPress) {
   }, items1);
   const memo1 = React.useMemo(() => {
     if (null != found) {
-      let selectedChannelIds = outer1_0(found[26]).getSelectedChannelIds(tmp);
-      const obj = outer1_0(found[26]);
+      let selectedChannelIds = closure_1_0(found[26]).getSelectedChannelIds(tmp);
+      const obj = closure_1_0(found[26]);
     } else {
       const _Set = Set;
       selectedChannelIds = new Set();
@@ -141,7 +132,7 @@ function PromptFooter(onPress) {
   const obj6 = selectedOptionIds(found[17])(token);
   items3[1] = selectedOptionIds(found[17])(token).alpha(1).hex();
   obj = { style: tmp.footer, children: null };
-  const obj1 = { style: items4, start: null, end: null, colors: null, pointerEvents: "none" };
+  obj1 = { style: items4, start: null, end: null, colors: null, pointerEvents: "none" };
   items4 = [tmp.scrollContainerGradient];
   const alphaResult1 = selectedOptionIds(found[17])(token).alpha(1);
   obj1[1] = require(found[25]).VerticalGradient.START;
@@ -182,13 +173,13 @@ function PromptFooter(onPress) {
   return closure_16(closure_6, obj);
 }
 function formattedNameHighlight(children) {
-  return callback2(require(4734) /* Text */.Text, { variant: "text-xs/medium", color: "mobile-text-heading-primary", children }, arg1);
+  return callback2(Text2.Text, { variant: "text-xs/medium", color: "mobile-text-heading-primary", children }, arg1);
 }
 function DropdownOption(option) {
   option = option.option;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = option(589);
-  const items = [getEmojiToGroupId];
+  const items = [closure_9];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const emoji = option.emoji;
     let id;
@@ -202,20 +193,20 @@ function DropdownOption(option) {
       if (emoji2 != null) {
         id1 = emoji2.id;
       }
-      usableCustomEmojiById = outer1_9.getUsableCustomEmojiById(id1);
+      usableCustomEmojiById = closure_1_9.getUsableCustomEmojiById(id1);
     }
     return usableCustomEmojiById;
   });
   obj = { style: tmp.dropdownPill, children: null };
   obj = { style: tmp.emojiContainer, children: null };
-  const obj1 = { textEmojiStyle: tmp.optionTextEmoji, fastImageStyle: tmp.optionImageEmoji, src: null, name: null };
+  obj1 = { textEmojiStyle: tmp.optionTextEmoji, fastImageStyle: tmp.optionImageEmoji, src: null, name: null };
   let emojiURL;
   if (null != stateFromStores) {
     const obj2 = { id: null, animated: null, size: null };
     ({ id: obj6[0], animated: obj6[1] } = stateFromStores);
     obj2[2] = EMOJI_URL_BASE_SIZE;
-    emojiURL = importDefault(1435).getEmojiURL(obj2);
-    const tmp8Result = importDefault(1435);
+    emojiURL = getAvatarURLDefault.getEmojiURL(obj2);
+    const tmp8Result = getAvatarURLDefault;
   }
   obj1[2] = emojiURL;
   let emoji = option.emoji;
@@ -227,62 +218,60 @@ function DropdownOption(option) {
     str = "";
   }
   obj1[3] = str;
-  obj[1] = closure_15(importDefault(6930), obj1);
-  const items1 = [closure_15(closure_6, obj), closure_15(option(4734).Text, { variant: "text-md/semibold", children: option.title })];
+  obj[1] = closure_15(EmojiDefault, obj1);
+  const items1 = [closure_15(closure_6, obj), closure_15(option(4739).Text, { variant: "text-md/semibold", children: option.title })];
   obj[1] = items1;
   return closure_16(closure_6, obj);
 }
-({ Image: c5, View: closure_6, ScrollView: error, FlatList: metroImportAll } = get_ActivityIndicator);
+({ Image: c5, View: closure_6, ScrollView: error, FlatList: closure_8 } = get_ActivityIndicator);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = jsxProd);
 createCacheKey = { flex: { flex: 1 }, container: null, scrollContainer: null, scrollContainerGradient: null, promptHeader: null, requiredSeparator: null, countText: null, title: null, helpText: null, footer: null, footerText: null, footerContent: null, optionTextEmoji: null, optionImageEmoji: null, emojiContainer: null, dropdownContainer: null, emptyDropdownText: null, dropdownPill: null, dropdownIconContainer: null, dropdownIcon: null };
-createCacheKey = { display: "flex", flex: 1, flexGrow: 1, marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey = { display: "flex", flex: 1, flexGrow: 1, marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { display: "flex", flexGrow: 1, justifyContent: "center", paddingHorizontal: 16, paddingTop: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[2] = { display: "flex", flexGrow: 1, justifyContent: "center", paddingHorizontal: 16, paddingTop: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 createCacheKey[3] = { position: "absolute", height: 48, width: "100%", left: 0, top: -48 };
 createCacheKey[4] = { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: 8 };
-let obj1 = { display: "flex", flexGrow: 1, justifyContent: "center", paddingHorizontal: 16, paddingTop: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
-createCacheKey[5] = { flexShrink: 0, marginHorizontal: 8, color: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BORDER_SUBTLE, width: 4, height: 4, borderRadius: require("Themes").radii.xs };
+let obj1 = { display: "flex", flexGrow: 1, justifyContent: "center", paddingHorizontal: 16, paddingTop: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
+createCacheKey[5] = { flexShrink: 0, marginHorizontal: 8, color: ThemesDefault.colors.BORDER_SUBTLE, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, width: 4, height: 4, borderRadius: ThemesDefault.radii.xs };
 createCacheKey[6] = {};
 createCacheKey[7] = { marginBottom: 32 };
 createCacheKey[8] = { marginTop: 8, marginBottom: 8, textAlign: "center" };
-let obj2 = { flexShrink: 0, marginHorizontal: 8, color: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BORDER_SUBTLE, width: 4, height: 4, borderRadius: require("Themes").radii.xs };
-createCacheKey[9] = { display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", bottom: 0, paddingBottom: 8, position: "absolute", width: "100%", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+let obj2 = { flexShrink: 0, marginHorizontal: 8, color: ThemesDefault.colors.BORDER_SUBTLE, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, width: 4, height: 4, borderRadius: ThemesDefault.radii.xs };
+createCacheKey[9] = { display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", bottom: 0, paddingBottom: 8, position: "absolute", width: "100%", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 createCacheKey[10] = { paddingHorizontal: 16, paddingBottom: 8, paddingTop: 8 };
 createCacheKey[11] = { width: "100%", paddingHorizontal: 16 };
 createCacheKey[12] = { fontSize: 18, lineHeight: 22, marginRight: 6 };
 createCacheKey[13] = { height: 22, width: 22, marginRight: 6 };
 createCacheKey[14] = { display: "flex", alignItems: "center" };
-let obj3 = { display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", bottom: 0, paddingBottom: 8, position: "absolute", width: "100%", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
-createCacheKey[15] = { borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, padding: 8, paddingRight: 32, minHeight: 48, display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", position: "relative" };
+let obj3 = { display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", bottom: 0, paddingBottom: 8, position: "absolute", width: "100%", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
+createCacheKey[15] = { borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, padding: 8, paddingRight: 32, minHeight: 48, display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", position: "relative" };
 createCacheKey[16] = { marginTop: 16 };
-let obj4 = { borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, padding: 8, paddingRight: 32, minHeight: 48, display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", position: "relative" };
-createCacheKey[17] = { borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, padding: 6, marginRight: 8, marginTop: 8, display: "flex", flexDirection: "row", alignItems: "center" };
+let obj4 = { borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, padding: 8, paddingRight: 32, minHeight: 48, display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", position: "relative" };
+createCacheKey[17] = { borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, padding: 6, marginRight: 8, marginTop: 8, display: "flex", flexDirection: "row", alignItems: "center" };
 createCacheKey[18] = { position: "absolute", right: 4, top: 8 };
 createCacheKey[19] = { height: 32, width: 32 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj5 = { borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, padding: 6, marginRight: 8, marginTop: 8, display: "flex", flexDirection: "row", alignItems: "center" };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingPrompt.tsx");
+let closure_18 = createCacheKey.createStyles(createCacheKey);
+let obj5 = { borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, padding: 6, marginRight: 8, marginTop: 8, display: "flex", flexDirection: "row", alignItems: "center" };
+let result = require("set").fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingPrompt.tsx");
 
 export const RulesPrompt = function RulesPrompt(guildId) {
-  let c5;
-  let tmp6;
   guildId = guildId.guildId;
-  let importDefault;
+  importDefault = undefined;
   let stateFromStores;
   let callback;
   let React;
   c5 = undefined;
-  let START = createCacheKey();
+  let START = callback4();
   let END = stateFromStores;
   let obj = guildId(stateFromStores[13]);
   importDefault = obj.useNavigation();
-  let obj1 = guildId(stateFromStores[14]);
-  let items = [get];
-  stateFromStores = obj1.useStateFromStores(items, () => outer1_10.getRulesPrompt(guildId));
+  obj1 = guildId(stateFromStores[14]);
+  let items = [closure_10];
+  stateFromStores = obj1.useStateFromStores(items, () => closure_1_10.getRulesPrompt(guildId));
   let obj2 = guildId(stateFromStores[14]);
-  const items1 = [createGuildRecordFromRust];
+  const items1 = [closure_11];
   callback = obj2.useStateFromStores(items1, () => {
-    const guild = outer1_11.getGuild(guildId);
+    const guild = closure_1_11.getGuild(guildId);
     let rulesChannelId;
     if (guild != null) {
       rulesChannelId = guild.rulesChannelId;
@@ -293,8 +282,8 @@ export const RulesPrompt = function RulesPrompt(guildId) {
   const bottom = importDefault(stateFromStores[15])().bottom;
   const sum = 64 + bottom;
   let obj3 = guildId(stateFromStores[14]);
-  const items2 = [get];
-  React = obj3.useStateFromStores(items2, () => outer1_10.get(guildId));
+  const items2 = [closure_10];
+  React = obj3.useStateFromStores(items2, () => closure_1_10.get(guildId));
   [tmp6, c5] = callback(React.useState(false), 2);
   let obj4 = guildId(stateFromStores[16]);
   const token = obj4.useToken(importDefault(stateFromStores[12]).colors.BACKGROUND_BASE_LOWER);
@@ -323,7 +312,7 @@ export const RulesPrompt = function RulesPrompt(guildId) {
     obj1[0] = items5;
     obj1[1] = [0];
     obj1[2] = function renderItem() {
-      return outer1_15(arr(stateFromStores[19]), { rules: stateFromStores.values, rulesChannelId: DropdownOptionRow });
+      return closure_1_15(arr(stateFromStores[19]), { rules: stateFromStores.values, rulesChannelId: closure_3 });
     };
     obj1[3] = function onEndReached() {
       return _undefined(true);
@@ -359,19 +348,19 @@ export const RulesPrompt = function RulesPrompt(guildId) {
     obj6[5] = function onPress() {
       let tmp2 = null != stateFromStores;
       if (tmp2) {
-        tmp2 = null != TermsFieldListItem;
+        tmp2 = null != closure_4;
       }
       if (tmp2) {
         let obj = arr(stateFromStores[23]);
         obj = {};
-        const merged = Object.assign(TermsFieldListItem);
+        const merged = Object.assign(closure_4);
         obj = {};
         const merged1 = Object.assign(tmp);
         obj.response = true;
         const items = [obj];
         obj.formFields = items;
         const result = obj.submitVerificationForm(guildId, obj);
-        arr = arr.push(outer1_13.COMPLETED);
+        arr = arr.push(closure_1_13.COMPLETED);
       }
     };
     Text = tmp11(tmp(END[22]).Button, obj6);
@@ -401,21 +390,17 @@ export const RulesPrompt = function RulesPrompt(guildId) {
   }
 };
 export const MultipleChoicePrompt = function MultipleChoicePrompt(guildId) {
-  let currentPromptIndex;
-  let handleOnPress;
-  let lastPrompt;
-  let numberOfPrompts;
   guildId = guildId.guildId;
   const currentPrompt = guildId.currentPrompt;
   const selectOption = guildId.selectOption;
   let stateFromStoresArray;
   ({ lastPrompt, currentPromptIndex, numberOfPrompts, handleOnPress } = guildId);
   let obj = guildId(selectOption[14]);
-  const items = [handleUpdate];
+  const items = [closure_12];
   const items1 = [guildId, currentPrompt];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     if (null != currentPrompt) {
-      let onboardingResponsesForPrompt = outer1_12.getOnboardingResponsesForPrompt(guildId, tmp.id);
+      let onboardingResponsesForPrompt = closure_1_12.getOnboardingResponsesForPrompt(guildId, tmp.id);
     } else {
       onboardingResponsesForPrompt = [];
     }
@@ -423,15 +408,15 @@ export const MultipleChoicePrompt = function MultipleChoicePrompt(guildId) {
   }, items1);
   obj = { children: null };
   obj = { contentContainerStyle: items2, children: null };
-  items2 = [createCacheKey().scrollContainer, ];
-  const tmp = createCacheKey();
+  items2 = [callback4().scrollContainer, ];
+  const tmp = callback4();
   items2[1] = { paddingBottom: 64 + currentPrompt(selectOption[15])().bottom + 48 + 48, position: "relative" };
   const items3 = [callback2(PromptHeader, { currentPrompt, numberOfPrompts, currentPromptIndex }), ];
-  const obj1 = { paddingBottom: 64 + currentPrompt(selectOption[15])().bottom + 48 + 48, position: "relative" };
+  obj1 = { paddingBottom: 64 + currentPrompt(selectOption[15])().bottom + 48 + 48, position: "relative" };
   const options = currentPrompt.options;
   items3[1] = callback2(closure_6, {
     children: options.map((id) => {
-      let closure_0 = id;
+      closure_0 = id;
       const obj = {
         option: id,
         guildId: closure_0,
@@ -440,7 +425,7 @@ export const MultipleChoicePrompt = function MultipleChoicePrompt(guildId) {
           if (arg0 == null) {
             flag = false;
           }
-          return outer1_2(outer1_1.id, id.id, flag);
+          return closure_1_2(closure_1_1.id, id.id, flag);
         },
         selected: null
       };
@@ -449,7 +434,7 @@ export const MultipleChoicePrompt = function MultipleChoicePrompt(guildId) {
         flag = false;
       }
       obj[3] = flag;
-      return outer1_15(currentPrompt(selectOption[28]), obj, id.id);
+      return closure_1_15(currentPrompt(selectOption[28]), obj, id.id);
     })
   });
   obj[1] = items3;
@@ -458,22 +443,18 @@ export const MultipleChoicePrompt = function MultipleChoicePrompt(guildId) {
   return callback3(closure_17, obj);
 };
 export const DropdownPrompt = function DropdownPrompt(guildId) {
-  let currentPromptIndex;
-  let handleOnPress;
-  let lastPrompt;
-  let numberOfPrompts;
   guildId = guildId.guildId;
   const currentPrompt = guildId.currentPrompt;
   const selectOption = guildId.selectOption;
   let stateFromStoresArray;
   ({ lastPrompt, currentPromptIndex, numberOfPrompts, handleOnPress } = guildId);
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = guildId(selectOption[14]);
-  const items = [handleUpdate];
+  const items = [closure_12];
   const items1 = [guildId, currentPrompt];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     if (null != currentPrompt) {
-      let onboardingResponsesForPrompt = outer1_12.getOnboardingResponsesForPrompt(guildId, tmp.id);
+      let onboardingResponsesForPrompt = closure_1_12.getOnboardingResponsesForPrompt(guildId, tmp.id);
     } else {
       onboardingResponsesForPrompt = [];
     }
@@ -507,7 +488,7 @@ export const DropdownPrompt = function DropdownPrompt(guildId) {
     obj.openLazy(guildId(selectOption[33])(selectOption[32], selectOption.paths), "DropdownOptions", obj);
   }, items2);
   const items4 = [callback2(PromptHeader, { currentPrompt, numberOfPrompts, currentPromptIndex }), ];
-  const obj1 = { style: tmp.dropdownContainer, onPress: callback, children: null };
+  obj1 = { style: tmp.dropdownContainer, onPress: callback, children: null };
   let tmp11Result = 0 === found.length;
   if (tmp11Result) {
     const obj2 = { style: null, variant: "text-sm/normal", color: "text-muted", children: "No answers selected." };
@@ -517,8 +498,7 @@ export const DropdownPrompt = function DropdownPrompt(guildId) {
   const obj3 = { children: null };
   const obj4 = { children: null };
   const items5 = [tmp11Result, found.map((id) => callback(closure_22, { option: id }, id.id)), ];
-  const obj5 = { style: tmp.dropdownIconContainer, children: null };
-  obj5[1] = callback2(closure_5, { style: tmp.dropdownIcon, source: currentPrompt(selectOption[35]) });
+  const obj5 = { style: tmp.dropdownIconContainer, children: callback2(closure_5, { style: tmp.dropdownIcon, source: currentPrompt(selectOption[35]) }) };
   items5[2] = callback2(closure_6, obj5);
   obj1[2] = items5;
   obj4[0] = closure_16(guildId(selectOption[34]).PressableHighlight, obj1);

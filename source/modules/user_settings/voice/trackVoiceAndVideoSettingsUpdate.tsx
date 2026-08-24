@@ -1,16 +1,19 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9697
+// Function ID: 9698
 // Name: trackVoiceAndVideoDebuggingSettingsUpdated
 // Dependencies: [676, 698, 2]
 // Exports: default
 
-// Module 9658 (trackVoiceAndVideoDebuggingSettingsUpdated)
-import { AnalyticEvents } from "ME";
+// Module 9697 (trackVoiceAndVideoDebuggingSettingsUpdated)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 
-const result = require("set").fileFinishedImporting("modules/user_settings/voice/trackVoiceAndVideoSettingsUpdate.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/user_settings/voice/trackVoiceAndVideoSettingsUpdate.tsx");
 
 export default function trackVoiceAndVideoDebuggingSettingsUpdated(arg0, arg1, arg2, location_stack) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   let StringResult;
   if (null != arg2) {
     const _String = String;

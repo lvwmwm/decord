@@ -1,23 +1,22 @@
-// Module ID: 15517
-// Function ID: 15518
-// Dependencies: [19, 17, 4021, 676, 21, 4661, 4734, 712, 647, 8874, 8849, 14452, 8086, 1297, 15518, 1236, 15519, 4746, 2]
+// Module ID: 15582
+// Function ID: 15583
+// Dependencies: [19, 17, 4024, 676, 21, 4668, 4739, 712, 647, 8911, 8886, 14520, 8125, 1297, 15583, 1236, 15584, 4751, 2]
 
-// Module 15517
-import importAllResult from "noop";
-import get_ActivityIndicator from "CollapsingText";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15582
+import ThemesDefault from "Themes" /* 712 */;
+import registerAssetDefault from "registerAsset" /* 15583 */;
+import registerAssetDefault2 from "registerAsset" /* 15584 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let c9;
-let metroImportAll;
 const require = arg1;
 let c3 = importAllResult;
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let obj = { wrapper: { flex: 1, paddingTop: 12 }, content: { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 48 }, headerText: null, text: null, buttonWrapper: null, buttonPill: null, personalizeButtonWrapper: null };
 obj = {};
 const merged = Object.assign(require("Text").TextStyleSheet["heading-md/bold"]);
@@ -27,29 +26,27 @@ obj.marginBottom = 8;
 obj[2] = obj;
 obj[3] = { textAlign: "center" };
 obj[4] = { marginTop: 24 };
-createCacheKey = { borderRadius: require("Themes").radii.xl, height: 44, paddingHorizontal: 20 };
+createCacheKey = { borderRadius: ThemesDefault.radii.xl, height: 44, paddingHorizontal: 20 };
 obj[5] = createCacheKey;
 obj[6] = { marginHorizontal: 12, marginBottom: 12 };
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
-  let canCreateChannel;
-  let canCustomizeGuild;
   guild = guild.guild;
   const tmp = callback2();
   let obj = guild(647);
-  const items = [getUncachedChannelPermissions];
+  const items = [closure_6];
   const items1 = [guild];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ canCustomizeGuild: outer1_6.can(outer1_7.MANAGE_GUILD, guild), canCreateChannel: outer1_6.can(outer1_7.MANAGE_CHANNELS, guild) }), items1);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ canCustomizeGuild: closure_1_6.can(closure_1_7.MANAGE_GUILD, guild), canCreateChannel: closure_1_6.can(closure_1_7.MANAGE_CHANNELS, guild) }), items1);
   ({ canCustomizeGuild, canCreateChannel } = stateFromStoresObject);
   const items2 = [guild.id];
   const items3 = [guild.id];
   const callback = importAllResult.useCallback(() => {
-    outer1_1(outer1_2[9]).open(guild.id);
+    closure_1_1(closure_1_2[9]).open(guild.id);
   }, items2);
   const callback1 = importAllResult.useCallback(() => {
-    outer1_1(outer1_2[10]).open(null, guild.id, null, null);
+    closure_1_1(closure_1_2[10]).open(null, guild.id, null, null);
   }, items3);
-  let obj1 = guild(14452);
+  obj1 = guild(14520);
   obj = { style: null, children: null };
   const items4 = [tmp.wrapper, ];
   obj = { paddingBottom: obj1.useYouBarTotalHeight(16) };
@@ -60,27 +57,27 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     obj1[0] = tmp.personalizeButtonWrapper;
     const obj2 = { icon: null, label: null, onPress: null };
     const obj3 = { source: null, disableColor: true };
-    obj3[0] = importDefault(15518);
+    obj3[0] = registerAssetDefault;
     obj2[0] = callback(tmp2(1297).Icon, obj3);
     const intl = tmp2(1236).intl;
     obj2[1] = intl.string(tmp2(1236).t["Yhi9/N"]);
     obj2[2] = callback;
-    obj1[1] = callback(tmp2(8086).RowButton, obj2);
+    obj1[1] = callback(tmp2(8125).RowButton, obj2);
     canCustomizeGuild = callback(tmp8, obj1);
   }
   const items5 = [canCustomizeGuild, ];
   const obj4 = { style: tmp.content, children: null };
-  const items6 = [callback(closure_5, { source: importDefault(15519) }), , , ];
+  const items6 = [callback(closure_5, { source: registerAssetDefault2 }), , , ];
   const obj6 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items7, children: null };
   items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);
   const intl2 = tmp2(1236).intl;
   obj6[3] = intl2.string(guild(1236).t.o4s29v);
-  items6[1] = callback(guild(4734).Text, obj6);
+  items6[1] = callback(guild(4739).Text, obj6);
   const obj7 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: null };
   const intl3 = tmp2(1236).intl;
   obj7[3] = intl3.string(guild(1236).t.iypvFu);
-  items6[2] = callback(guild(4734).Text, obj7);
+  items6[2] = callback(guild(4739).Text, obj7);
   if (canCreateChannel) {
     const obj8 = { style: null, children: null };
     obj8[0] = tmp.buttonWrapper;
@@ -89,7 +86,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     const intl4 = tmp2(1236).intl;
     obj9[3] = intl4.string(tmp2(1236).t["63PyJQ"]);
     obj9[4] = callback1;
-    obj8[1] = tmp11(tmp2(4746).BaseTextButton, obj9);
+    obj8[1] = tmp11(tmp2(4751).BaseTextButton, obj9);
     canCreateChannel = tmp11(tmp8, obj8);
   }
   items6[3] = canCreateChannel;
@@ -98,6 +95,6 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   obj[1] = items5;
   return closure_9(closure_4, obj);
 });
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/empty_states/ChannelsEmpty.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/empty_states/ChannelsEmpty.tsx");
 
 export default memoResult;

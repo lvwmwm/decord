@@ -1,20 +1,20 @@
-// Module ID: 15523
-// Function ID: 15524
+// Module ID: 15588
+// Function ID: 15589
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 7383, 676, 589, 4340, 6701, 4094, 1236, 2949, 2]
+// Dependencies: [19, 7421, 676, 589, 4344, 6738, 4097, 1236, 2952, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 15523 (useDefaultAuthorizationNotifiers)
-import noop from "noop";
-import getState from "getState";
-import { AppStates } from "ME";
+// Module 15588 (useDefaultAuthorizationNotifiers)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "getState" /* 7421 */;
+import { AppStates } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/application_account_linking/native/useDefaultAuthorizationNotifiers.tsx");
+const result = require("set").fileFinishedImporting("modules/application_account_linking/native/useDefaultAuthorizationNotifiers.tsx");
 
 export const useDefaultAuthorizationNotifiers = function useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyLinked, value) {
   const _require = startAuthorization;
-  let closure_1 = hasAlreadyLinked;
+  closure_1 = hasAlreadyLinked;
   let obj = value;
   if (value === undefined) {
     obj = {};
@@ -36,7 +36,7 @@ export const useDefaultAuthorizationNotifiers = function useDefaultAuthorization
   const items1 = [startAuthorization];
   const isInAppBrowserOpen = _require(flag[4]).useIsInAppBrowserOpen();
   const callback = React.useCallback((arg0) => {
-    noop.current = true;
+    closure_3.current = true;
     return startAuthorization(arg0);
   }, items1);
   if (stateFromStores) {

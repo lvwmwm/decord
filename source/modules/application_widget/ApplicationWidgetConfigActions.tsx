@@ -1,16 +1,17 @@
-// Module ID: 12289
-// Function ID: 12290
+// Module ID: 12341
+// Function ID: 12342
 // Name: getApplicationsFromConfigs
-// Dependencies: [5, 12288, 676, 10722, 584, 687, 709, 530, 1208, 2]
+// Dependencies: [5, 12340, 676, 10761, 584, 687, 709, 530, 1208, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 12289 (getApplicationsFromConfigs)
-import set from "set";
-import updateApplicationConfigs from "updateApplicationConfigs";
-import { FetchState } from "updateApplicationConfigs";
-import { Endpoints } from "ME";
-import importDefaultResult from "fails";
-import importDefaultResult1 from "dispatcher";
+// Module 12341 (getApplicationsFromConfigs)
+import setDefault from "set" /* 687 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "updateApplicationConfigs" /* 12340 */;
+import { FetchState } from "updateApplicationConfigs" /* 12340 */;
+import { Endpoints } from "ME" /* 676 */;
+import importDefaultResult from "fails" /* 584 */;
+import importDefaultResult1 from "dispatcher" /* 709 */;
 
 const require = arg1;
 function getApplicationsFromConfigs(arg0) {
@@ -51,7 +52,7 @@ function _fetchFeaturedWidgetConfigsFromApi() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -67,13 +68,13 @@ function _fetchFeaturedWidgetConfigsFromApi() {
             return obj;
           } else {
             let callback = tmp3;
-            let closure_0 = tmp7;
+            closure_0 = tmp7;
             closure_0 = undefined;
-            outer1_1(outer1_2[6]).dispatch({ type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_START" });
-            let c3 = 1;
-            const HTTP = outer1_0(outer1_2[7]).HTTP;
-            let obj1 = { url: null, rejectWithError: true };
-            obj1[0] = outer1_6.WIDGET_CONFIGS_FEATURED;
+            closure_1_1(closure_1_2[6]).dispatch({ type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_START" });
+            c3 = 1;
+            const HTTP = closure_1_0(closure_1_2[7]).HTTP;
+            obj1 = { url: null, rejectWithError: true };
+            obj1[0] = closure_1_6.WIDGET_CONFIGS_FEATURED;
             c4 = 2;
             c5 = 1;
             let obj2 = { value: null, done: false };
@@ -93,8 +94,8 @@ function _fetchFeaturedWidgetConfigsFromApi() {
             });
           }
           obj2 = callback(1208);
-          obj2.captureException(outer1_1);
-          throw outer1_1;
+          obj2.captureException(closure_1_1);
+          throw closure_1_1;
         } else if (arg0 === 1) {
           c5 = 3;
           throw arg1;
@@ -113,7 +114,7 @@ function _fetchFeaturedWidgetConfigsFromApi() {
           closure_9.succeed();
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp27) {
         dependencyMap = tmp27;
@@ -126,7 +127,7 @@ function _fetchFeaturedWidgetConfigsFromApi() {
       }
     }
   });
-  const _fetchFeaturedWidgetConfigsFromApi = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -159,7 +160,7 @@ function _fetchDeveloperWidgetConfigsFromApi() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -175,13 +176,13 @@ function _fetchDeveloperWidgetConfigsFromApi() {
             return obj;
           } else {
             let callback = tmp3;
-            let closure_0 = tmp7;
+            closure_0 = tmp7;
             closure_0 = undefined;
-            outer1_1(outer1_2[6]).dispatch({ type: "APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_START" });
-            let c3 = 1;
-            const HTTP = outer1_0(outer1_2[7]).HTTP;
-            const obj1 = { url: null, rejectWithError: true };
-            obj1[0] = outer1_6.WIDGET_CONFIGS_DEVELOPER;
+            closure_1_1(closure_1_2[6]).dispatch({ type: "APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_START" });
+            c3 = 1;
+            const HTTP = closure_1_0(closure_1_2[7]).HTTP;
+            obj1 = { url: null, rejectWithError: true };
+            obj1[0] = closure_1_6.WIDGET_CONFIGS_DEVELOPER;
             c4 = 2;
             c5 = 1;
             const obj2 = { value: null, done: false };
@@ -214,7 +215,7 @@ function _fetchDeveloperWidgetConfigsFromApi() {
           obj.dispatch(obj4);
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp27) {
         dependencyMap = tmp27;
@@ -227,7 +228,7 @@ function _fetchDeveloperWidgetConfigsFromApi() {
       }
     }
   });
-  const _fetchDeveloperWidgetConfigsFromApi = tmp;
+  closure_13 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -239,10 +240,10 @@ function _fetchDeveloperWidgetConfigsFromApi() {
 function _fetchWidgetConfigsFromApi() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0, body) {
       if (c6 === 2) {
         c6 = 3;
@@ -255,7 +256,7 @@ function _fetchWidgetConfigsFromApi() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -270,14 +271,14 @@ function _fetchWidgetConfigsFromApi() {
               obj[0] = body;
               return obj;
             } else {
-              let dependencyMap = tmp3;
+              dependencyMap = tmp3;
               body = tmp7;
               body = undefined;
-              const obj1 = { type: "APPLICATION_WIDGET_CONFIG_FETCH_START", applicationId: null };
+              obj1 = { type: "APPLICATION_WIDGET_CONFIG_FETCH_START", applicationId: null };
               obj1[1] = callback;
-              outer1_1(outer1_2[6]).dispatch(obj1);
-              let c4 = 1;
-              const HTTP = callback(outer1_2[7]).HTTP;
+              closure_1_1(closure_1_2[6]).dispatch(obj1);
+              c4 = 1;
+              const HTTP = callback(closure_1_2[7]).HTTP;
               const obj2 = { url: null, rejectWithError: true };
               obj2[0] = c6.APPLICATION_WIDGET_CONFIGS(callback);
               c5 = 2;
@@ -288,7 +289,7 @@ function _fetchWidgetConfigsFromApi() {
             }
           } else if (1 === tmp7) {
             c4 = 0;
-            dependencyMap = set;
+            dependencyMap = closure_3;
             obj3 = body(709);
             const obj4 = { type: "APPLICATION_WIDGET_CONFIG_FETCH_FAILURE", applicationId: null };
             obj4[1] = callback;
@@ -315,10 +316,10 @@ function _fetchWidgetConfigsFromApi() {
             obj.dispatch(obj6);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp30) {
-          set = tmp30;
+          closure_3 = tmp30;
           if (tmp4 === c4) {
             c6 = tmp2;
             throw tmp30;
@@ -329,7 +330,7 @@ function _fetchWidgetConfigsFromApi() {
       }
     })();
   });
-  const _fetchWidgetConfigsFromApi = tmp;
+  closure_15 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -339,12 +340,12 @@ function _fetchWidgetConfigsFromApi() {
   return applyArgumentsResult;
 }
 let promiseDeduper = new require("areArraysShallowlyEqual").PromiseDeduper();
-importDefaultResult = new importDefaultResult(require("set").Millis.SECOND, require("set").Millis.MINUTE, true);
+importDefaultResult = new importDefaultResult(setDefault.Millis.SECOND, setDefault.Millis.MINUTE, true);
 let c9 = importDefaultResult;
-const subscription = require("dispatcher").subscribe("LOGOUT", () => importDefaultResult.succeed());
+const subscription = importDefaultResult1.subscribe("LOGOUT", () => importDefaultResult.succeed());
 promiseDeduper = new require("areArraysShallowlyEqual").PromiseDeduper();
 const promiseDeduper1 = new require("areArraysShallowlyEqual").PromiseDeduper();
-let result = require("ME").fileFinishedImporting("modules/application_widget/ApplicationWidgetConfigActions.tsx");
+let result = require("set").fileFinishedImporting("modules/application_widget/ApplicationWidgetConfigActions.tsx");
 
 export const fetchFeaturedWidgetConfigs = function fetchFeaturedWidgetConfigs() {
   let obj = arg0;
@@ -380,7 +381,7 @@ export const fetchDeveloperWidgetConfigs = function fetchDeveloperWidgetConfigs(
   resolved = promiseDeduper.one(undefined, fetchDeveloperWidgetConfigsFromApi, { force: flag });
 };
 export const fetchWidgetConfigs = function fetchWidgetConfigs(item10012) {
-  let closure_0 = item10012;
+  closure_0 = item10012;
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};

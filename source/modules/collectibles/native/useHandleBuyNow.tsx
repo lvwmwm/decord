@@ -1,21 +1,20 @@
-// Module ID: 11992
-// Function ID: 11993
+// Module ID: 12041
+// Function ID: 12042
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 676, 3, 11971, 5300, 4342, 10389, 1625, 7279, 4054, 4094, 1236, 2]
+// Dependencies: [5, 32, 19, 676, 3, 12020, 5305, 4346, 10428, 1625, 7317, 4057, 4097, 1236, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 11992 (useHandleBuyNow)
-import useMobileCollectiblesPurchaseSKU from "useMobileCollectiblesPurchaseSKU";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { Routes } from "ME";
+// Module 12041 (useHandleBuyNow)
+import timestampDefault from "timestamp" /* 3 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { Routes } from "ME" /* 676 */;
 
 let require = arg1;
 function useHandleBuyNow(product) {
-  let analyticsLocations;
-  let orderId;
   product = product.product;
-  const require = product;
+  require = product;
   const onBuy = product.onBuy;
   let first;
   let callback;
@@ -34,7 +33,7 @@ function useHandleBuyNow(product) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -49,11 +48,11 @@ function useHandleBuyNow(product) {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_0 = tmp4;
+              closure_0 = tmp4;
               v0 = 1;
               dependencyMap = 1;
-              let obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(5300).fetchCollectiblesPurchases();
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_0(5305).fetchCollectiblesPurchases();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -66,14 +65,14 @@ function useHandleBuyNow(product) {
             return obj2;
           } else {
             callback(false);
-            obj = v0(4342);
+            obj = v0(4346);
             obj.hideActionSheet();
-            obj1 = v0(10389);
+            obj1 = v0(10428);
             const obj3 = { product: null, useCategoryImage: true };
             obj3[0] = closure_0;
             obj1.open(obj3);
             dependencyMap = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           dependencyMap = tmp;
@@ -81,7 +80,7 @@ function useHandleBuyNow(product) {
         }
       }
     });
-    const _onPurchaseComplete = tmp;
+    closure_5 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -130,7 +129,7 @@ function useHandleBuyNow(product) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -145,20 +144,20 @@ function useHandleBuyNow(product) {
               obj[0] = arg1;
               return obj;
             } else {
-              const callback = tmp4;
-              let closure_0 = tmp8;
+              let callback = tmp4;
+              let lib = tmp8;
               if (obj17.isMetaQuest()) {
                 let v0 = 1;
                 const _HermesInternal3 = HermesInternal;
-                const combined = "" + outer1_6.COLLECTIBLES_SHOP + "#itemSkuId=" + outer1_0.skuId;
+                const combined = "" + closure_1_6.COLLECTIBLES_SHOP + "#itemSkuId=" + lib.skuId;
                 v02 = 3;
                 c5 = 1;
-                let obj1 = { value: null, done: false };
-                obj1[0] = outer1_1(outer1_2[10]).redirectWithHandoffToken(combined, { forceExternalBrowser: true });
+                obj1 = { value: null, done: false };
+                obj1[0] = callback(closure_1_2[10]).redirectWithHandoffToken(combined, { forceExternalBrowser: true });
                 return obj1;
               } else {
                 v0 = 2;
-                if (outer1_2) {
+                if (closure_1_2) {
                   v0 = 0;
                 } else {
                   v0(true);
@@ -169,46 +168,46 @@ function useHandleBuyNow(product) {
                   return obj2;
                 }
               }
-              obj17 = outer1_0(outer1_2[9]);
+              obj17 = lib(closure_1_2[9]);
             }
           } else {
             if (1 === tmp8) {
               v0 = 0;
-              outer1_0 = closure_2;
+              lib = closure_2;
               const _JSON2 = JSON;
               const _HermesInternal2 = HermesInternal;
-              outer1_7.error("Error performing web handoff: " + JSON.stringify(outer1_0));
-              let obj6 = outer1_0(outer1_2[11]);
+              closure_1_7.error("Error performing web handoff: " + JSON.stringify(lib));
+              let obj6 = lib(closure_1_2[11]);
               let obj3 = { tags: null };
               const obj4 = { source: "useHandleBuyNow", skuId: null };
-              obj4[1] = closure_0.skuId;
+              obj4[1] = lib.skuId;
               obj3[0] = obj4;
-              const result = obj6.captureBillingException(outer1_0, obj3);
+              const result = obj6.captureBillingException(lib, obj3);
               const obj5 = { key: "SHOP_ITEM_HANDOFF_ERROR", content: null };
-              const intl = outer1_0(outer1_2[13]).intl;
-              obj5[1] = intl.string(outer1_0(outer1_2[13]).t["rTU7/z"]);
-              outer1_1(outer1_2[12]).open(obj5);
-              const obj10 = outer1_1(outer1_2[12]);
+              const intl = lib(closure_1_2[13]).intl;
+              obj5[1] = intl.string(lib(closure_1_2[13]).t["rTU7/z"]);
+              callback(closure_1_2[12]).open(obj5);
+              const obj10 = callback(closure_1_2[12]);
             } else {
               if (2 === tmp8) {
                 v0 = 0;
-                outer1_1 = closure_2;
+                callback = closure_2;
                 v0(false);
                 const _JSON = JSON;
                 const _HermesInternal = HermesInternal;
-                outer1_7.error("Error running purchase: " + JSON.stringify(outer1_1));
-                obj3 = outer1_0(outer1_2[11]);
+                closure_1_7.error("Error running purchase: " + JSON.stringify(callback));
+                obj3 = lib(closure_1_2[11]);
                 obj6 = { tags: null };
                 const obj7 = { source: "useHandleBuyNow", skuId: null };
-                obj7[1] = closure_0.skuId;
+                obj7[1] = lib.skuId;
                 obj6[0] = obj7;
-                const result1 = obj3.captureBillingException(outer1_1, obj6);
+                const result1 = obj3.captureBillingException(callback, obj6);
               } else if (3 === tmp8) {
                 if (arg0 === 1) {
                   c5 = 3;
                   throw arg1;
                 } else if (arg0 !== 2) {
-                  obj1 = outer1_1(outer1_2[7]);
+                  obj1 = callback(closure_1_2[7]);
                   obj1.hideActionSheet();
                   v0 = 0;
                 }
@@ -251,9 +250,9 @@ function useHandleBuyNow(product) {
   items = [tmp3, first, onBuy, product.skuId];
   return obj;
 }
-const error = new require("ME")("useHandleBuyNow");
-const tmp2 = new require("ME")("useHandleBuyNow");
-let result = require("noop").fileFinishedImporting("modules/collectibles/native/useHandleBuyNow.tsx");
+let closure_7 = new timestampDefault("useHandleBuyNow");
+const tmp2 = new timestampDefault("useHandleBuyNow");
+let result = require("set").fileFinishedImporting("modules/collectibles/native/useHandleBuyNow.tsx");
 
 export default useHandleBuyNow;
 export { useHandleBuyNow };

@@ -1,13 +1,14 @@
-// Module ID: 4478
-// Function ID: 4479
+// Module ID: 4482
+// Function ID: 4483
 // Name: addApplication
-// Dependencies: [32, 4479, 589, 709, 2]
+// Dependencies: [32, 4483, 589, 709, 2]
 
-// Module 4478 (addApplication)
-import _slicedToArray from "_slicedToArray";
-import createExecutable from "createExecutable";
-import { PersistedStore } from "initialize";
-import set from "initialize";
+// Module 4482 (addApplication)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "_slicedToArray" /* 32 */;
+import closure_1 from "createExecutable" /* 4483 */;
+import set from "set" /* 2 */;
 
 function addApplication(fromServer) {
   const value = map.get(fromServer.id);
@@ -33,9 +34,9 @@ function addApplication(fromServer) {
         continue;
       } else {
         let tmp14 = nextResult;
-        let obj3 = createExecutable;
+        let obj3 = closure_1;
         let tmp13 = addApplication;
-        if (tmp12.application instanceof createExecutable) {
+        if (tmp12.application instanceof closure_1) {
           let tmp16 = nextResult;
           let application = tmp12.application;
         } else {
@@ -62,8 +63,6 @@ function handleWishlistAction(wishlistData) {
   return false;
 }
 function handleAppWithBot(arg0) {
-  let applicationId;
-  let userId;
   ({ userId, applicationId } = arg0);
   let num = closure_9.botUserIdToAppUsage;
   if (null == closure_9.botUserIdToAppUsage[userId]) {
@@ -90,8 +89,8 @@ function handleApplicationWidgetConfigFetchSuccess(applications) {
   } else {
     for (const item10008 of applications) {
       let tmp3 = addApplication;
-      let tmp4 = createExecutable;
-      let tmp5 = addApplication(createExecutable.createFromServer(item10008));
+      let tmp4 = closure_1;
+      let tmp5 = addApplication(closure_1.createFromServer(item10008));
       continue;
     }
     return true;
@@ -109,9 +108,9 @@ function handleEntitlementsFetched(arg0) {
     }
     if (null != application) {
       let tmp3 = addApplication;
-      let tmp4 = createExecutable;
+      let tmp4 = closure_1;
       let tmp5 = sku;
-      let tmp6 = addApplication(createExecutable.createFromServer(tmp.application));
+      let tmp6 = addApplication(closure_1.createFromServer(tmp.application));
       flag = true;
     }
     continue;
@@ -126,12 +125,11 @@ const map3 = new Map();
 const map4 = new Map();
 let set = new Set();
 let closure_9 = { botUserIdToAppUsage: {} };
+const PersistedStore = initializeDefault.PersistedStore;
 class ApplicationStore extends PersistedStore {
 }
 const prototype = ApplicationStore.prototype;
 prototype["initialize"] = function initialize(botUserIdToAppUsage) {
-  let applicationId;
-  let lastUsedMs;
   if (null != botUserIdToAppUsage) {
     if (typeof botUserIdToAppUsage.botUserIdToAppUsage === "object") {
       for (const key10002 in arg0.botUserIdToAppUsage) {
@@ -168,8 +166,8 @@ prototype["getState"] = function getState() {
 prototype["_getAllApplications"] = function _getAllApplications() {
   return Array.from(map.values());
 };
-prototype["getGuildApplication"] = function getGuildApplication(_slicedToArray, createExecutable) {
-  if (null != _slicedToArray) {
+prototype["getGuildApplication"] = function getGuildApplication(closure_0, closure_1) {
+  if (null != closure_0) {
     const values = map.values();
     for (const item10011 of values) {
       if (item10011.guildId === arg0) {
@@ -236,7 +234,7 @@ prototype["getAppIdForBotUserId"] = function getAppIdForBotUserId(id) {
 };
 ApplicationStore.displayName = "ApplicationStore";
 ApplicationStore.persistKey = "ApplicationStore";
-const applicationStore = new ApplicationStore(require("dispatcher"), {
+const applicationStore = new ApplicationStore(dispatcherDefault, {
   LOGOUT: function handleLogout() {
     map.clear();
     map1.clear();
@@ -250,11 +248,11 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp2 = addApplication;
-      let tmp3 = createExecutable;
+      let tmp3 = closure_1;
       let tmp4 = new.target;
       let tmp5 = new.target;
       let tmp6 = nextResult;
-      let tmp7 = new createExecutable(nextResult);
+      let tmp7 = new closure_1(nextResult);
       let tmp8 = tmp7;
       let tmp9 = addApplication(tmp7);
       continue;
@@ -271,7 +269,7 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
     if (true === application.isHydrated) {
       set.add(application.id);
     }
-    addApplication(createExecutable.createFromServer(application));
+    addApplication(closure_1.createFromServer(application));
   },
   APPLICATION_FETCH_FAIL: function handleApplicationFetchFail(applicationId) {
     applicationId = applicationId.applicationId;
@@ -303,9 +301,9 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
         let addResult = set.add(tmp3.id);
       }
       let tmp7 = addApplication;
-      let tmp8 = createExecutable;
+      let tmp8 = closure_1;
       let tmp9 = nextResult;
-      let tmp10 = addApplication(createExecutable.createFromServer(tmp3));
+      let tmp10 = addApplication(closure_1.createFromServer(tmp3));
       continue;
     }
   },
@@ -321,7 +319,7 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
     return flag;
   },
   APPLICATION_UPDATE: function handleUpdateApplication(application) {
-    addApplication(createExecutable.createFromServer(application.application));
+    addApplication(closure_1.createFromServer(application.application));
   },
   APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: handleEntitlementsFetched,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: handleEntitlementsFetched,
@@ -333,14 +331,14 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
     while (iter !== undefined) {
       let arr = items.push(nextResult.id);
       let tmp3 = addApplication;
-      let tmp4 = createExecutable;
-      let tmp5 = addApplication(createExecutable.createFromServer(nextResult));
+      let tmp4 = closure_1;
+      let tmp5 = addApplication(closure_1.createFromServer(nextResult));
       continue;
     }
     const result = map1.set(guildId.guildId, items);
   },
   BILLING_PAYMENTS_FETCH_SUCCESS: function handleFetchPayments(arg0) {
-    const set = new Set();
+    set = new Set();
     const iter = arg0.payments[Symbol.iterator]();
     while (iter !== undefined) {
       let sku = iter.next().sku;
@@ -356,9 +354,9 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
       }
       if (!hasItem) {
         let tmp5 = addApplication;
-        let tmp6 = createExecutable;
+        let tmp6 = closure_1;
         let tmp7 = application;
-        let tmp8 = addApplication(createExecutable.createFromServer(tmp2));
+        let tmp8 = addApplication(closure_1.createFromServer(tmp2));
       }
       continue;
     }
@@ -374,7 +372,7 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
     if (null == application) {
       return false;
     } else {
-      addApplication(createExecutable.createFromServer(payment.sku.application));
+      addApplication(closure_1.createFromServer(payment.sku.application));
     }
   },
   INVITE_RESOLVE_SUCCESS: function handleResolveInvite(invite) {
@@ -382,7 +380,7 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
     if (null == invite.target_application) {
       return false;
     } else {
-      addApplication(createExecutable.createFromServer(invite.target_application));
+      addApplication(closure_1.createFromServer(invite.target_application));
     }
   },
   GIFT_CODE_RESOLVE_SUCCESS: function handleGiftCodeResolveSuccess(giftCode) {
@@ -395,14 +393,14 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
     if (null == application) {
       return false;
     } else {
-      addApplication(createExecutable.createFromServer(giftCode.store_listing.sku.application));
+      addApplication(closure_1.createFromServer(giftCode.store_listing.sku.application));
     }
   },
   LIBRARY_FETCH_SUCCESS: function handleLibraryApplicationsFetch(arg0) {
     while (tmp !== undefined) {
       let tmp3 = addApplication;
-      let tmp4 = createExecutable;
-      let tmp5 = addApplication(createExecutable.createFromServer(tmp2.application));
+      let tmp4 = closure_1;
+      let tmp5 = addApplication(closure_1.createFromServer(tmp2.application));
       continue;
     }
   },
@@ -411,7 +409,7 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
     if (null == storeListing.sku.application) {
       return false;
     } else {
-      addApplication(createExecutable.createFromServer(storeListing.sku.application));
+      addApplication(closure_1.createFromServer(storeListing.sku.application));
     }
   },
   LOAD_MESSAGES_SUCCESS: function handleLoadMessages(messages) {
@@ -421,15 +419,13 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
       if (attachments != null) {
         const item = attachments.forEach((application) => {
           if (null != application.application) {
-            callback(createExecutable.createFromServer(application.application));
+            callback(closure_1.createFromServer(application.application));
           }
         });
       }
     });
   },
   USER_PROFILE_FETCH_SUCCESS: function handleProfileFetchSuccess(userProfile) {
-    let application;
-    let user;
     ({ user, application } = userProfile.userProfile);
     let bot = user.bot;
     if (bot) {
@@ -460,9 +456,9 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
       let tmp3 = nextResult;
       if (null != nextResult) {
         let tmp4 = addApplication;
-        let tmp5 = createExecutable;
+        let tmp5 = closure_1;
         let tmp6 = nextResult;
-        let tmp7 = addApplication(createExecutable.createFromServer(tmp3.application));
+        let tmp7 = addApplication(closure_1.createFromServer(tmp3.application));
         let bot = tmp3.application.bot;
         if (null != bot) {
           let tmp9 = handleAppWithBot;
@@ -481,12 +477,12 @@ const applicationStore = new ApplicationStore(require("dispatcher"), {
     items = items.items;
     const item = items.forEach((application) => {
       if (null != application.application) {
-        callback(createExecutable.createFromServer(application.application));
+        callback(closure_1.createFromServer(application.application));
       }
     });
   },
   OAUTH2_TOKEN_CREATE: function handleOAuth2TokenCreate(application) {
-    addApplication(createExecutable.createFromServer(application.application));
+    addApplication(closure_1.createFromServer(application.application));
   },
   WISHLIST_FETCH_SUCCESS: handleWishlistAction,
   WISHLIST_ADD_SKU_SUCCESS: handleWishlistAction,

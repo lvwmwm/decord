@@ -1,20 +1,22 @@
-// Module ID: 13280
-// Function ID: 13281
+// Module ID: 13338
+// Function ID: 13339
 // Name: reset
 // Dependencies: [589, 709, 2]
 
-// Module 13280 (reset)
-import { Store } from "initialize";
-import set from "set";
+// Module 13338 (reset)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import set from "set" /* 2 */;
 
 function reset() {
-  let c0 = false;
-  let closure_1 = {};
-  const set = new Set();
+  c0 = false;
+  closure_1 = {};
+  set = new Set();
 }
 let c0 = false;
 let closure_1 = {};
 let set = new Set();
+const Store = initializeDefault.Store;
 class ScheduledMessageStore extends Store {
 }
 const prototype = ScheduledMessageStore.prototype;
@@ -31,7 +33,7 @@ Object.defineProperty(prototype, "loading", {
   set: undefined
 });
 ScheduledMessageStore.displayName = "scheduledMessageStore";
-const scheduledMessageStore = new ScheduledMessageStore(require("dispatcher"), {
+const scheduledMessageStore = new ScheduledMessageStore(dispatcherDefault, {
   SCHEDULED_MESSAGES_CREATE_SUCCESS: function handleScheduledMessageCreateSuccess(scheduledMessageSend) {
     scheduledMessageSend = scheduledMessageSend.scheduledMessageSend;
     const obj = {};
@@ -81,23 +83,23 @@ const scheduledMessageStore = new ScheduledMessageStore(require("dispatcher"), {
     if (arg0 == null) {
       HermesBuiltin.throwTypeError();
     } else {
-      let c0 = true;
+      c0 = true;
     }
   },
   FETCH_SCHEDULED_MESSAGES_SUCCESS: function handleFetchScheduledMessagesSuccess(arg0) {
-    let closure_1 = {};
+    closure_1 = {};
     for (const item10007 of tmp) {
       let tmp2 = closure_1;
       closure_1[item10007.scheduledMessageId] = item10007;
       continue;
     }
-    let c0 = false;
+    c0 = false;
   },
   FETCH_SCHEDULED_MESSAGES_FAILURE: function handleFetchScheduledMessagesFailure(arg0) {
     if (arg0 == null) {
       HermesBuiltin.throwTypeError();
     } else {
-      let c0 = false;
+      c0 = false;
     }
   },
   LOGOUT: reset,

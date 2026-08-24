@@ -1,92 +1,96 @@
-// Module ID: 15701
-// Function ID: 15702
+// Module ID: 15770
+// Function ID: 15771
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 676, 11872, 21, 4661, 10056, 712, 500, 1500, 698, 1297, 4751, 15696, 5433, 15697, 13541, 4734, 1236, 6299, 2]
+// Dependencies: [19, 17, 676, 11921, 21, 4668, 10095, 712, 500, 1500, 698, 1297, 4756, 15765, 5438, 15766, 13599, 4739, 1236, 6330, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 15701 (ForYouShowAllRow)
-import registerAsset from "registerAsset";
-import { View } from "Text";
-import { AnalyticEvents } from "ME";
-import { Sections } from "SuggestedFriendSource";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15770 (ForYouShowAllRow)
+import set from "set" /* 500 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import getFontScale from "getFontScale" /* 4756 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import registerAssetDefault from "registerAsset" /* 6330 */;
+import getLayoutStyles from "getLayoutStyles" /* 10095 */;
+import AvatarDuoPile from "AvatarDuoPile" /* 13599 */;
+import renderChannelPressableWrapper from "renderChannelPressableWrapper" /* 15765 */;
+import renderChannelWrapper from "renderChannelWrapper" /* 15766 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { Sections } from "SuggestedFriendSource" /* 11921 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function ForYouShowAllRow(panelVariant) {
-  let children;
-  let count;
-  let onPress;
   panelVariant = panelVariant.panelVariant;
   ({ children, count, onPress } = panelVariant);
   if (panelVariant === undefined) {
     panelVariant = false;
   }
-  let obj = require(10056) /* getLayoutStyles */;
+  let obj = getLayoutStyles;
   const layout = obj.useMessagesTabLayout(panelVariant);
   const tmp4 = callback2(layout);
-  let obj1 = require(10056) /* getLayoutStyles */;
+  obj1 = getLayoutStyles;
   const layoutStyles = obj1.getLayoutStyles(layout);
-  let obj2 = require(4751) /* getFontScale */;
+  let obj2 = getFontScale;
   const fontScale = obj2.useFontScale();
-  let obj3 = require(15696) /* renderChannelPressableWrapper */;
+  let obj3 = renderChannelPressableWrapper;
   obj = { accessibilityRole: "button", underlayColor: tmp4.rowActive.backgroundColor, onPress, style: items, children: null };
   items = [tmp4.pressable, { borderRadius: layoutStyles.container.borderRadius }];
-  let obj5 = require(15697) /* renderChannelWrapper */;
+  let obj5 = renderChannelWrapper;
   obj = { style: tmp4.avatar, children: null };
-  const obj8 = require(10056) /* getLayoutStyles */;
+  const obj8 = getLayoutStyles;
   const tmp8 = closure_9;
   const tmp9 = closure_8;
-  const AvatarSizes = require(1297) /* Button */.AvatarSizes;
+  const AvatarSizes = Button.AvatarSizes;
   obj1 = { children: null };
-  obj2 = { size: require(10056) /* getLayoutStyles */.isLayoutCompact(layout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL, "aria-label": "", children };
-  obj[1] = closure_7(require(13541) /* AvatarDuoPile */.AvatarDuoPile, obj2);
+  obj2 = { size: getLayoutStyles.isLayoutCompact(layout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL, "aria-label": "", children };
+  obj[1] = closure_7(AvatarDuoPile.AvatarDuoPile, obj2);
   const items1 = [closure_7(View, obj), , ];
   obj3 = { style: tmp4.textContainer, children: null };
   const obj4 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: null };
   const intl = tmp(1236).intl;
-  obj4[4] = intl.format(require(1236) /* getSystemLocale */.t.NrzztX, { count });
-  obj3[1] = closure_7(require(4734) /* Text */.Text, obj4);
+  obj4[4] = intl.format(getSystemLocale.t.NrzztX, { count });
+  obj3[1] = closure_7(Text.Text, obj4);
   items1[1] = closure_7(View, obj3);
-  obj5 = { style: tmp4.icon, color: tmp4.iconColor.color, source: null, size: null };
-  obj5[2] = importDefault(6299);
-  obj5[3] = require(1297) /* Button */.IconSizes.CUSTOM;
-  items1[2] = closure_7(require(1297) /* Button */.Icon, obj5);
+  obj5 = { style: tmp4.icon, color: tmp4.iconColor.color, source: registerAssetDefault, size: tmp(1297).IconSizes.CUSTOM };
+  items1[2] = closure_7(Button.Icon, obj5);
   obj1[0] = items1;
   obj[4] = obj5.renderChannelWrapper(tmp8(tmp9, obj1), { layout, fontScale, panelVariant });
-  return obj3.renderChannelPressableWrapper(closure_7(require(5433) /* PressableBase */.PressableHighlight, obj), { layout, panelVariant });
+  return obj3.renderChannelPressableWrapper(closure_7(PressableBase.PressableHighlight, obj), { layout, panelVariant });
 }
-({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles((layout) => {
-  let obj = require(10056) /* getLayoutStyles */;
+  let obj = getLayoutStyles;
   const layoutStyles = obj.getLayoutStyles(layout);
-  let obj1 = require(10056) /* getLayoutStyles */;
+  obj1 = getLayoutStyles;
   const sizeStyle = obj1.makeSizeStyle(layoutStyles.icon.wrapper.size);
   obj = { rowActive: null, pressable: null, textContainer: null, nameText: null, avatar: null, icon: null, iconColor: null };
-  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED };
+  obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
   obj[0] = obj;
   obj[1] = { flex: 1 };
-  obj1 = { flexDirection: "column", flexGrow: 2, flexShrink: 2, alignSelf: "center", overflow: "hidden", marginTop: -2, marginRight: importDefault(712).space.PX_8 };
+  obj1 = { flexDirection: "column", flexGrow: 2, flexShrink: 2, alignSelf: "center", overflow: "hidden", marginTop: -2, marginRight: ThemesDefault.space.PX_8 };
   obj[2] = obj1;
   let num = 0;
   if (obj6.isAndroid()) {
     num = 2;
   }
   obj[3] = { flexShrink: 1, marginBottom: num };
-  const obj2 = { position: "relative", borderRadius: importDefault(712).radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
+  const obj2 = { position: "relative", borderRadius: ThemesDefault.radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
   const merged = Object.assign(sizeStyle);
   obj2.marginRight = layoutStyles.icon.margin.marginRight + 4;
   obj[4] = obj2;
-  obj6 = require(500) /* set */;
-  obj[5] = { width: 8, height: 32, paddingRight: importDefault(712).space.PX_24 };
-  const obj3 = { width: 8, height: 32, paddingRight: importDefault(712).space.PX_24 };
-  obj[6] = { color: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj6 = set;
+  obj[5] = { width: 8, height: 32, paddingRight: ThemesDefault.space.PX_24 };
+  const obj3 = { width: 8, height: 32, paddingRight: ThemesDefault.space.PX_24 };
+  obj[6] = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
   return obj;
 });
-const result = require("ME").fileFinishedImporting("modules/notification_center/native/ForYouShowAllRow.tsx");
+const result = require("set").fileFinishedImporting("modules/notification_center/native/ForYouShowAllRow.tsx");
 
 export const ForYouSuggestedFriendShowAllRow = function ForYouSuggestedFriendShowAllRow(suggestedFriends) {
   suggestedFriends = suggestedFriends.suggestedFriends;
@@ -103,20 +107,20 @@ export const ForYouSuggestedFriendShowAllRow = function ForYouSuggestedFriendSho
   const items1 = [messagesTabLayout, suggestedFriends];
   const callback = React.useCallback(() => {
     let obj = navigation(messagesTabLayout[10]);
-    obj = { section_id: outer1_6.FRIEND_SUGGESTIONS, truncated_count: 2, expanded_count: suggestedFriends.length, location: "NotificationsTab" };
-    obj.track(outer1_5.FRIEND_FINDER_SECTION_EXPANDED, obj);
+    obj = { section_id: closure_1_6.FRIEND_SUGGESTIONS, truncated_count: 2, expanded_count: suggestedFriends.length, location: "NotificationsTab" };
+    obj.track(closure_1_5.FRIEND_FINDER_SECTION_EXPANDED, obj);
     navigation.navigate("friends", { screen: "suggested-friends", params: { presentation: "card" } });
   }, items);
   obj = {
     children: React.useMemo(() => {
       const substr = suggestedFriends.slice(2, 4);
       return substr.map((user) => {
-        const obj = { user: user.user, guildId: "Array", size: null };
-        const obj2 = outer1_0(outer1_2[6]);
-        const tmp = outer1_7;
-        const AvatarSizes = outer1_0(outer1_2[11]).AvatarSizes;
-        obj[2] = outer1_0(outer1_2[6]).isLayoutCompact(closure_2) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL;
-        return tmp(outer1_0(outer1_2[11]).Avatar, obj, user.user.id);
+        const obj = { user: user.user, guildId: "Array", size: -1 };
+        const obj2 = closure_1_0(closure_1_2[6]);
+        const tmp = closure_1_7;
+        const AvatarSizes = closure_1_0(closure_1_2[11]).AvatarSizes;
+        obj[2] = closure_1_0(closure_1_2[6]).isLayoutCompact(closure_2) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL;
+        return tmp(closure_1_0(closure_1_2[11]).Avatar, obj, user.user.id);
       });
     }, items1),
     count: suggestedFriends.length,

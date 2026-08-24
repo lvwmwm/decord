@@ -1,30 +1,30 @@
-// Module ID: 11744
-// Function ID: 11745
+// Module ID: 11793
+// Function ID: 11794
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 4282, 589, 11728, 1236, 2367, 2]
+// Dependencies: [19, 4286, 589, 11777, 1236, 2368, 2]
 // Exports: default
 
-// Module 11744 (useGameServerPowerupStatus)
-import noop from "noop";
-import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
+// Module 11793 (useGameServerPowerupStatus)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "handleGameServerInstanceCreated" /* 4286 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/game_server/hooks/useGameServerPowerupStatus.tsx");
+const result = require("set").fileFinishedImporting("modules/game_server/hooks/useGameServerPowerupStatus.tsx");
 
 export default function useGameServerPowerupStatus(arg0) {
   const _require = arg0;
-  const items = [handleGameServerInstanceCreated];
+  const items = [closure_4];
   const items1 = [arg0];
   const stateFromStores = _require(589).useStateFromStores(items, () => {
-    const stateForGuild = outer1_4.getStateForGuild(closure_0);
+    const stateForGuild = closure_1_4.getStateForGuild(closure_0);
     let entitlements;
     if (stateForGuild != null) {
       entitlements = stateForGuild.entitlements;
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(11728)(arg0);
-  const dependencyMap = tmp2;
+  const tmp2 = stateFromStores(11777)(arg0);
+  dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return React.useMemo(() => {
     let obj = stateFromStores;
@@ -32,13 +32,13 @@ export default function useGameServerPowerupStatus(arg0) {
       obj = {};
     }
     if (0 !== Object.values(obj).length) {
-      if (tmp2.length > 0) {
+      if (length.length > 0) {
         obj = { type: "expiring", expiringAt: null };
         obj[1] = tmp[0].ends_at;
       } else {
         obj = { type: "active", statusText: null };
-        const intl = callback(tmp2[4]).intl;
-        obj[1] = intl.string(stateFromStores(callback[5]).FFLkmx);
+        const intl = callback(length[4]).intl;
+        obj[1] = intl.string(stateFromStores(length[5]).FFLkmx);
       }
       return obj;
     }

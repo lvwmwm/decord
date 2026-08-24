@@ -1,20 +1,21 @@
-// Module ID: 8252
-// Function ID: 8253
+// Module ID: 8292
+// Function ID: 8293
 // Name: getTagProperties
-// Dependencies: [17, 4663, 8253, 1236, 8255, 8257, 2]
+// Dependencies: [17, 4670, 8293, 1236, 8295, 8297, 2]
 // Exports: default
 
-// Module 8252 (getTagProperties)
-import { Image } from "get ActivityIndicator";
-import { MessageTagTypes } from "MESSAGE_GROUP_SPACING";
+// Module 8292 (getTagProperties)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4670 */;
+import isPublicSystemMessage from "isPublicSystemMessage" /* 8293 */;
+import isCrosspostDefault from "isCrosspost" /* 8295 */;
 
-const result = require("isPublicSystemMessage").fileFinishedImporting("modules/messages/native/renderer/getTagProperties.tsx");
+const Image = get_ActivityIndicator.Image;
+const MessageTagTypes = MESSAGE_GROUP_SPACING.MessageTagTypes;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/getTagProperties.tsx");
 
 export default function getTagProperties(arg0) {
-  let channel;
-  let colors;
-  let isSystemDM;
-  let message;
   ({ message, isSystemDM } = arg0);
   if (isSystemDM === undefined) {
     isSystemDM = false;
@@ -22,10 +23,10 @@ export default function getTagProperties(arg0) {
   ({ channel, colors } = arg0);
   const author = message.author;
   const isVerifiedBotResult = author.isVerifiedBot();
-  let obj = require(8253) /* isPublicSystemMessage */;
+  let obj = isPublicSystemMessage;
   if (!obj.isPublicSystemMessage(message)) {
     if (!isSystemDM) {
-      if (importDefault(8255)(message)) {
+      if (isCrosspostDefault(message)) {
         const intl2 = tmp2(1236).intl;
         let stringResult = intl2.string(tmp2(1236).t.PuJGuM);
         let SYSTEM_DM_TAG_SYSTEM_TYPE = MessageTagTypes.BOT_TAG_SERVER_TYPE;
@@ -37,7 +38,7 @@ export default function getTagProperties(arg0) {
           const intl = tmp2(1236).intl;
           let uri;
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(tmp4(8257)).uri;
+            uri = Image.resolveAssetSource(tmp4(8297)).uri;
           }
           flag = isVerifiedBotResult;
           stringResult = intl.string(tmp2(1236).t["9RNkeF"]);
@@ -65,7 +66,7 @@ export default function getTagProperties(arg0) {
         const intl6 = tmp2(1236).intl;
         stringResult2 = intl6.string(tmp2(1236).t.fyE8sH);
       }
-      obj = { tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: "Boolean", tagBackgroundColor: "alignItems", tagType: "<string:1052311553>", tagIconUrl: "<string:3488022530>", opTagText: "<string:2316959745>", opTagTextColor: "<string:1312358401>", opTagBackgroundColor: "<string:3487956993>" };
+      obj = { tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: "Boolean", tagBackgroundColor: "alignItems", tagType: null, tagIconUrl: null, opTagText: null, opTagTextColor: 6248303609525655000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, opTagBackgroundColor: 3756079787745847000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
       obj[0] = stringResult;
       obj[1] = null;
       obj[2] = flag;
@@ -87,12 +88,12 @@ export default function getTagProperties(arg0) {
           } else {
             stringResult3 = string(t.qwJHjo);
           }
-          tmp14 = importDefault(8255)(message);
+          tmp14 = isCrosspostDefault(message);
         }
       }
       const intl5 = tmp2(1236).intl;
       stringResult3 = intl5.string(tmp2(1236).t["7s687k"]);
-      tmp2Result = tmp2(8253);
+      tmp2Result = tmp2(8293);
     }
   }
   const intl3 = tmp2(1236).intl;

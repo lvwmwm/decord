@@ -4,7 +4,7 @@
 // Dependencies: [1241]
 
 // Module 3400 (registerAsset)
-import registerAsset from "registerAsset";
+import registerAsset from "registerAsset" /* 1241 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/private_channels/clean_up_inactive_gdms", scales: [1], hash: "78ec722bd03a658266c730b055967dd0", name: "CleanUpInactiveGDMs.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcml2YXRlX2NoYW5uZWxzL2NsZWFuX3VwX2luYWN0aXZlX2dkbXM=", scales: [1], hash: "ced48ab2ba5fcd79e4e2650815e6ef27", name: "vi.messages.ced48ab2ba5fcd79e4e2650815e6ef27.compiled.messages", type: "jsona" });

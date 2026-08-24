@@ -1,21 +1,20 @@
-// Module ID: 14152
-// Function ID: 14153
+// Module ID: 14220
+// Function ID: 14221
 // Name: route
-// Dependencies: [19, 8198, 676, 14101, 1236, 1297, 14153, 10669, 14102, 14100, 2]
+// Dependencies: [19, 8238, 676, 14169, 1236, 1297, 14221, 10708, 14170, 14168, 2]
 
-// Module 14152 (route)
-import noop from "noop";
-import ME from "ME";
-import createToggle from "createToggle";
+// Module 14220 (route)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_3 from "noop" /* 19 */;
+import ME from "ME" /* 676 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let UserSettingsSections;
-let c4;
-const require = arg1;
+require = arg1;
 ({ NOOP_NULL: c4, UserSettingsSections } = ME);
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.xZEzbu);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.xZEzbu);
   },
   parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   usePredicate: require("useIs2FAEnabled").useIs2FAEnabled,
@@ -24,7 +23,7 @@ createToggle = {
       const callback = arg0;
       let obj = {
         onSubmit(password) {
-          const result = outer1_1(outer1_2[3]).sendMFABackupCodesVerificationKeyEmail(password);
+          const result = closure_1_1(closure_1_2[3]).sendMFABackupCodesVerificationKeyEmail(password);
           return result.then(() => {
             const obj = {
               onSubmit(verificationKey) {
@@ -40,17 +39,17 @@ createToggle = {
               confirmColor: null,
               useKeyboardAwareWrapper: true
             };
-            const intl = outer1_0(outer1_2[4]).intl;
-            obj[1] = intl.string(outer1_0(outer1_2[4]).t["mGppp/"]);
-            const intl2 = outer1_0(outer1_2[4]).intl;
-            obj[2] = intl2.string(outer1_0(outer1_2[4]).t["37S9yU"]);
-            const intl3 = outer1_0(outer1_2[4]).intl;
-            obj[3] = intl3.string(outer1_0(outer1_2[4]).t.TjGb4Q);
+            const intl = closure_1_0(closure_1_2[4]).intl;
+            obj[1] = intl.string(closure_1_0(closure_1_2[4]).t["mGppp/"]);
+            const intl2 = closure_1_0(closure_1_2[4]).intl;
+            obj[2] = intl2.string(closure_1_0(closure_1_2[4]).t["37S9yU"]);
+            const intl3 = closure_1_0(closure_1_2[4]).intl;
+            obj[3] = intl3.string(closure_1_0(closure_1_2[4]).t.TjGb4Q);
             obj[5] = closure_0;
-            const intl4 = outer1_0(outer1_2[4]).intl;
-            obj[7] = intl4.string(outer1_0(outer1_2[4]).t.geKm7t);
-            obj[8] = outer1_0(outer1_2[5]).ButtonColors.BRAND;
-            outer1_1(outer1_2[6])(obj);
+            const intl4 = closure_1_0(closure_1_2[4]).intl;
+            obj[7] = intl4.string(closure_1_0(closure_1_2[4]).t.geKm7t);
+            obj[8] = closure_1_0(closure_1_2[5]).ButtonColors.BRAND;
+            closure_1_1(closure_1_2[6])(obj);
           });
         },
         onSuccess: closure_4,
@@ -68,7 +67,7 @@ createToggle = {
       let intl3 = callback(1236).intl;
       obj[5] = intl3.string(callback(1236).t.PDTjLN);
       obj[6] = callback(1297).ButtonColors.BRAND;
-      callback2(14153)(obj);
+      callback2(14221)(obj);
       return false;
     }, []);
   },
@@ -77,10 +76,10 @@ createToggle = {
 createToggle = {
   route: UserSettingsSections.ACCOUNT_CONFIRM_VIEW_BACKUP_CODES,
   getComponent() {
-    return require(14100) /* CodeRow */.default;
+    return require(14168) /* CodeRow */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-let result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/AccountViewBackupCodesSetting.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AccountViewBackupCodesSetting.tsx");
 
 export default createToggle;

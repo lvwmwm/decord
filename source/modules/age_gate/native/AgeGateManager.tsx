@@ -1,24 +1,23 @@
-// Module ID: 16517
-// Function ID: 16518
+// Module ID: 16612
+// Function ID: 16613
 // Name: handlePostConnectionOpen
-// Dependencies: [5, 1391, 1979, 4197, 1221, 676, 5038, 5252, 5260, 16518, 2007, 691, 2]
+// Dependencies: [5, 1391, 1980, 4201, 1221, 676, 5043, 5257, 5265, 16613, 2008, 691, 2]
 
-// Module 16517 (handlePostConnectionOpen)
-import closure_3 from "ME";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import closure_6 from "handleConnectionOpen";
-import result from "result";
-import ME from "ME";
-import "initialize";
+// Module 16612 (handlePostConnectionOpen)
+import initializeDefault from "initialize" /* 5043 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 5257 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
+import closure_6 from "handleConnectionOpen" /* 4201 */;
+import result from "result" /* 1221 */;
+import ME from "ME" /* 676 */;
 
-let c10;
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
-({ EXISTING_USER_AGE_GATE_MODAL_KEY: error, AgeGateSource: metroImportAll } = result);
+require = arg1;
+({ EXISTING_USER_AGE_GATE_MODAL_KEY: error, AgeGateSource: closure_8 } = result);
 ({ ChannelTypes: c9, GuildNSFWContentLevel: c10 } = ME);
+initializeDefault;
 class AgeGateManager extends tmp4 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -30,11 +29,9 @@ const prototype = AgeGateManager.prototype;
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
   const guildId = store.getGuildId();
   channelId = channelId.getChannelId();
-  require(5252) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guildId, channelId);
+  shouldShowAgeGateForVoiceChannel.maybeShowAgeGate(guildId, channelId);
 };
 prototype["handleChannelSelect"] = function handleChannelSelect(arg0) {
-  let channelId;
-  let guildId;
   ({ guildId, channelId } = arg0);
   channel = channel.getChannel(channelId);
   let tmp2 = null != guildId;
@@ -46,27 +43,27 @@ prototype["handleChannelSelect"] = function handleChannelSelect(arg0) {
     tmp2 = type !== constants.GUILD_VOICE;
   }
   if (tmp2) {
-    require(5252) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guildId, channelId);
-    const obj = require(5252) /* shouldShowAgeGateForVoiceChannel */;
+    shouldShowAgeGateForVoiceChannel.maybeShowAgeGate(guildId, channelId);
+    const obj = shouldShowAgeGateForVoiceChannel;
   }
 };
 prototype["handleAgeGateModalOpen"] = function handleAgeGateModalOpen(source) {
   source = source.source;
-  importDefault(5260).pushLazy(callback(function*() {
-    let closure_1 = tmp5;
-    let closure_0 = tmp2;
-    yield outer1_0(paths[10])(paths[9], paths.paths);
+  _modDef5265.pushLazy(callback(function*() {
+    closure_1 = tmp5;
+    closure_0 = tmp2;
+    yield closure_1_0(paths[10])(paths[9], paths.paths);
     closure_0 = arg1.default;
-    if (closure_0 === outer1_8.AUTH) {
+    if (closure_0 === closure_1_8.AUTH) {
       const obj = { animation: null };
-      obj[0] = outer1_0(paths[11]).ModalAnimation.SLIDE_IN_OUT;
-      outer1_0.modalConfig = obj;
+      obj[0] = closure_1_0(paths[11]).ModalAnimation.SLIDE_IN_OUT;
+      closure_1_0.modalConfig = obj;
     }
-    return outer1_0;
+    return closure_1_0;
   }), { source }, closure_7);
 };
 prototype["handleAgeGateModalClose"] = function handleAgeGateModalClose() {
-  importDefault(5260).popWithKey(closure_7);
+  _modDef5265.popWithKey(closure_7);
 };
 prototype["handleGuildUpdate"] = function handleGuildUpdate(guild) {
   guild = guild.guild;
@@ -76,11 +73,11 @@ prototype["handleGuildUpdate"] = function handleGuildUpdate(guild) {
     tmp2 = guild.owner_configured_content_level === constants2.AGE_RESTRICTED;
   }
   if (tmp2) {
-    require(5252) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guild.id, null);
-    const obj = require(5252) /* shouldShowAgeGateForVoiceChannel */;
+    shouldShowAgeGateForVoiceChannel.maybeShowAgeGate(guild.id, null);
+    const obj = shouldShowAgeGateForVoiceChannel;
   }
 };
 const ageGateManager = new AgeGateManager();
-result = require("handleConnectionOpen").fileFinishedImporting("modules/age_gate/native/AgeGateManager.tsx");
+result = require("set").fileFinishedImporting("modules/age_gate/native/AgeGateManager.tsx");
 
 export default ageGateManager;

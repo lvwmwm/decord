@@ -1,72 +1,72 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 17079
+// Function ID: 17080
 // Name: PriceTier
-// Dependencies: [32, 19, 17, 21, 4661, 712, 4734, 5316, 1236, 14577, 14573, 5449, 16987, 16981, 16960, 14584, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 4739, 5321, 1236, 14645, 14641, 5454, 17080, 17074, 17053, 14652, 2]
 // Exports: GuildRoleSubscriptionListingPreview
 
-// Module 16986 (PriceTier)
-import _slicedToArray from "_slicedToArray";
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 17079 (PriceTier)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 5321 */;
+import preloadDefault from "preload" /* 5454 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 14641 */;
+import getBenefitKey from "getBenefitKey" /* 14645 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 14652 */;
+import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 17080 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function PriceTier(arg0) {
-  let currency;
-  let price;
   ({ price, currency } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  const tmp2 = createCacheKey();
+  const tmp2 = callback4();
   let obj = { style: tmp2.priceGroup, children: null };
-  obj = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  obj[2] = require(5316) /* formatSingleCurrencyPrice */.formatPrice(price, currency);
-  const items = [callback2(require(4734) /* Text */.Text, obj), ];
+  obj = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: formatSingleCurrencyPrice.formatPrice(price, currency) };
+  const items = [callback2(Text.Text, obj), ];
   obj = { style: tmp2.priceInterval, variant: "eyebrow", color: "text-default", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  const obj1 = { period: null };
-  const obj3 = require(5316) /* formatSingleCurrencyPrice */;
-  obj1[0] = require(14577) /* getBenefitKey */.formatPlanInterval(merged);
-  obj[3] = intl.format(require(1236) /* getSystemLocale */.t.isLGyX, obj1);
-  items[1] = callback2(require(4734) /* Text */.Text, obj);
+  const intl = getSystemLocale.intl;
+  obj1 = { period: null };
+  const obj3 = formatSingleCurrencyPrice;
+  obj1[0] = getBenefitKey.formatPlanInterval(merged);
+  obj[3] = intl.format(getSystemLocale.t.isLGyX, obj1);
+  items[1] = callback2(Text.Text, obj);
   obj[1] = items;
   return callback3(View, obj);
 }
 function Header(onPress) {
   const listingId = onPress.listingId;
-  const tmp = createCacheKey();
-  let obj = importAll(14573);
-  let obj1 = importAll(14573);
-  let str = callback(importAll(14573).useImage(listingId), 1)[0];
-  const obj3 = importAll(14573);
+  const tmp = callback4();
+  let obj = getRoleEmojisAll;
+  obj1 = getRoleEmojisAll;
+  let str = callback(getRoleEmojisAll.useImage(listingId), 1)[0];
+  const obj3 = getRoleEmojisAll;
   obj = { style: tmp.header, children: null };
-  const items = [callback2(require(4734) /* Text */.Text, { variant: "heading-md/semibold", color: "interactive-text-active", children: callback(obj1.useName(listingId), 1)[0] }), , , , ];
+  const items = [callback2(Text.Text, { variant: "heading-md/semibold", color: "interactive-text-active", children: callback(obj1.useName(listingId), 1)[0] }), , , , ];
   obj = { style: tmp.image, source: null };
-  const obj4 = importAll(14573);
+  obj4 = getRoleEmojisAll;
   const tmp3 = closure_7;
   const tmp4 = View;
   if (str == null) {
     str = "";
   }
   obj[1] = { uri: str };
-  items[1] = callback2(importDefault(5449), obj);
+  items[1] = callback2(preloadDefault, obj);
   obj1 = {};
   const merged = Object.assign(callback(obj.useSubscriptionPlan(listingId), 1)[0]);
   items[2] = callback2(PriceTier, obj1);
-  items[3] = callback2(require(16987) /* GuildPremiumRoleSubscribeButton */.GuildPremiumRoleSubscribeButton, { onPress: onPress.onSubscribePress });
-  items[4] = callback2(require(4734) /* Text */.Text, { variant: "text-sm/medium", children: callback(obj4.useDescription(listingId), 1)[0] });
+  items[3] = callback2(GuildPremiumRoleSubscribeButton.GuildPremiumRoleSubscribeButton, { onPress: onPress.onSubscribePress });
+  items[4] = callback2(Text.Text, { variant: "text-sm/medium", children: callback(obj4.useDescription(listingId), 1)[0] });
   obj[1] = items;
   return tmp3(tmp4, obj);
 }
 function Content(arg0) {
-  let children;
-  let noBackground;
-  let style;
   ({ children, noBackground, style } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback4();
   style = [tmp.content, , ];
   let contentWithBackground = true !== noBackground;
   if (contentWithBackground) {
@@ -80,13 +80,11 @@ function SectionLabel(children) {
   const merged = Object.assign(children, Object.create(null));
   let obj = {};
   const merged1 = Object.assign(merged);
-  obj = { style: createCacheKey().sectionLabel, variant: "eyebrow", color: "text-default", children: children.label };
-  obj.children = callback2(require(4734) /* Text */.Text, obj);
+  obj = { style: callback4().sectionLabel, variant: "eyebrow", color: "text-default", children: children.label };
+  obj.children = callback2(Text.Text, obj);
   return callback2(Content, obj);
 }
 function LabeledSection(arg0) {
-  let children;
-  let label;
   ({ label, children } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   let obj = { children: null };
@@ -103,7 +101,7 @@ function LabeledSection(arg0) {
 }
 function Separator() {
   let obj = { children: null };
-  obj = { style: createCacheKey().separator };
+  obj = { style: callback4().separator };
   obj[0] = callback2(View, obj);
   return callback2(Content, obj);
 }
@@ -111,13 +109,13 @@ class BenefitsSection {
   constructor(arg0) {
     ({ guildId, label, benefits, look } = global);
     if (look === undefined) {
-      tmp = Fragment;
-      look = Fragment.FLAT;
+      tmp = closure_16;
+      look = closure_16.FLAT;
     }
     listingId = global.listingId;
-    c2 = undefined;
-    tmp2 = Fragment();
-    c2 = tmp2;
+    closure_2 = undefined;
+    tmp2 = closure_9();
+    closure_2 = tmp2;
     if (0 === benefits.length) {
       tmp9 = null;
       return null;
@@ -134,22 +132,21 @@ class BenefitsSection {
       mapped = benefits.map((benefit) => {
         let benefitSpacing = arg1 > 0;
         if (benefitSpacing) {
-          benefitSpacing = _undefined.benefitSpacing;
+          benefitSpacing = benefitSpacing.benefitSpacing;
         }
         let obj = { style: benefitSpacing, children: null };
-        obj = { guildId: closure_0, benefit, isInteractive: null };
-        obj[2] = listingId !== outer1_0(outer1_3[14]).NEW_LISTING_EDIT_STATE_ID;
-        obj[1] = outer1_6(outer1_0(outer1_3[13]).GuildRoleSubscriptionBenefitPreview, obj);
-        return outer1_6(outer1_5, obj, outer1_0(outer1_3[9]).getBenefitKey(benefit));
+        obj = { guildId: closure_0, benefit, isInteractive: listingId !== closure_1_0(closure_1_3[14]).NEW_LISTING_EDIT_STATE_ID };
+        obj[1] = closure_1_6(closure_1_0(closure_1_3[13]).GuildRoleSubscriptionBenefitPreview, obj);
+        return closure_1_6(closure_1_5, obj, closure_1_0(closure_1_3[9]).getBenefitKey(benefit));
       });
       tmp4 = jsx;
       obj = { noBackground: null, label: null, children: null };
-      tmp6 = Fragment;
-      obj[0] = look === Fragment.ROUNDED;
+      tmp6 = closure_16;
+      obj[0] = look === closure_16.ROUNDED;
       obj[1] = formatToPlainStringResult;
       tmp4Result = mapped;
       tmp5 = LabeledSection;
-      if (look !== Fragment.FLAT) {
+      if (look !== closure_16.FLAT) {
         tmp8 = View;
         obj1 = { style: null, children: null };
         obj1[0] = tmp2.roundedBenefitsContainer;
@@ -161,48 +158,47 @@ class BenefitsSection {
     }
   }
 }
-({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
+noopAll;
+({ jsx: closure_6, jsxs: error, Fragment: closure_8 } = jsxProd);
 createCacheKey = { container: { padding: 16 }, header: null, image: null, priceGroup: null, priceInterval: null, content: null, contentWithBackground: null, separator: null, sectionLabel: null, benefitSpacing: null, roundedBenefitsContainer: null, footer: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderTopStartRadius: 8, borderTopEndRadius: 8, display: "flex", flexDirection: "column", alignItems: "center", padding: 16 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderTopStartRadius: 8, borderTopEndRadius: 8, display: "flex", flexDirection: "column", alignItems: "center", padding: 16 };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { width: 80, height: 80, borderRadius: 40, marginTop: 16 };
 createCacheKey[3] = { marginTop: 16, alignItems: "center" };
 createCacheKey[4] = { marginTop: 4 };
 createCacheKey[5] = { paddingHorizontal: 16 };
-createCacheKey[6] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
-let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
-createCacheKey[7] = { width: "100%", height: 1, marginTop: 16, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[6] = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
+let obj1 = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[7] = { width: "100%", height: 1, marginTop: 16, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 createCacheKey[8] = { paddingVertical: 16 };
 createCacheKey[9] = { marginTop: 16 };
-let obj2 = { width: "100%", height: 1, marginTop: 16, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-createCacheKey[10] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.lg, padding: 16 };
+let obj2 = { width: "100%", height: 1, marginTop: 16, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+createCacheKey[10] = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.lg, padding: 16 };
 createCacheKey[11] = { borderBottomStartRadius: 8, borderBottomEndRadius: 8, height: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_9 = createCacheKey.createStyles(createCacheKey);
 let obj4 = { FLAT: 0, [0]: "FLAT", ROUNDED: 1, [1]: "ROUNDED" };
 BenefitsSection.Looks = obj4;
-let obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.lg, padding: 16 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionListingPreview.tsx");
+let obj3 = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.lg, padding: 16 };
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionListingPreview.tsx");
 
 export { BenefitsSection };
 export const GuildRoleSubscriptionListingPreview = function GuildRoleSubscriptionListingPreview(arg0) {
-  let guildId;
-  let listingId;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   ({ guildId, listingId } = arg0);
-  let obj = importAll(14573);
+  let obj = getRoleEmojisAll;
   const first = callback(obj.useChannelBenefits(listingId), 1)[0];
-  let obj1 = importAll(14573);
+  obj1 = getRoleEmojisAll;
   const first1 = callback(obj1.useIntangibleBenefits(listingId), 1)[0];
-  let obj2 = importAll(14573);
+  let obj2 = getRoleEmojisAll;
   obj = { style: tmp.container, children: null };
   obj = {};
   const role = obj2.useRole(listingId, guildId);
   const merged = Object.assign(arg0);
   const items = [callback2(Header, obj), , , , ];
   obj1 = { label: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj1[0] = intl.string(require(1236) /* getSystemLocale */.t.FJZmYx);
-  obj1[1] = callback2(require(14584) /* GuildRoleSubscriptionMemberPreview */.GuildRoleSubscriptionMemberPreview, { role });
+  const intl = getSystemLocale.intl;
+  obj1[0] = intl.string(getSystemLocale.t.FJZmYx);
+  obj1[1] = callback2(GuildRoleSubscriptionMemberPreview.GuildRoleSubscriptionMemberPreview, { role });
   items[1] = callback2(LabeledSection, obj1);
   let tmp4Result = first.length > 0;
   if (tmp4Result) {
@@ -220,7 +216,7 @@ export const GuildRoleSubscriptionListingPreview = function GuildRoleSubscriptio
   items[2] = tmp4Result;
   tmp4Result = first1.length > 0;
   if (tmp4Result) {
-    const obj4 = { children: null };
+    obj4 = { children: null };
     const items2 = [tmp6(Separator, {}), ];
     const obj5 = { guildId: null, benefits: null, label: null, listingId: null };
     obj5[0] = guildId;

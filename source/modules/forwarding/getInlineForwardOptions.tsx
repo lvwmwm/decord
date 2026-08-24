@@ -1,17 +1,17 @@
-// Module ID: 11118
-// Function ID: 11119
+// Module ID: 11157
+// Function ID: 11158
 // Name: getInlineForwardOptions
-// Dependencies: [676, 4811, 2]
+// Dependencies: [676, 4816, 2]
 // Exports: getInlineForwardOptions
 
-// Module 11118 (getInlineForwardOptions)
-import { MessageReferenceTypes } from "ME";
+// Module 11157 (getInlineForwardOptions)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/forwarding/getInlineForwardOptions.tsx");
+const MessageReferenceTypes = ME.MessageReferenceTypes;
+const result = set.fileFinishedImporting("modules/forwarding/getInlineForwardOptions.tsx");
 
 export const getInlineForwardOptions = function getInlineForwardOptions(message, nativeSyntheticEventData) {
-  let embedIndex;
-  let targetKind;
   ({ targetKind, embedIndex } = nativeSyntheticEventData);
   if ("media" === targetKind) {
     const messageReference = message.messageReference;

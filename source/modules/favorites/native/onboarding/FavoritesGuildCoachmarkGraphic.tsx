@@ -1,30 +1,33 @@
-// Module ID: 15578
-// Function ID: 15579
+// Module ID: 15643
+// Function ID: 15644
 // Name: FavoritesGuildCoachmarkGraphic
-// Dependencies: [17, 21, 4661, 712, 5447, 1297, 2]
+// Dependencies: [17, 21, 4668, 712, 5452, 1297, 2]
 // Exports: default
 
-// Module 15578 (FavoritesGuildCoachmarkGraphic)
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15643 (FavoritesGuildCoachmarkGraphic)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5452 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
+const View = get_ActivityIndicator.View;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let obj = { container: null, betaTag: null };
-obj = { alignItems: "center", justifyContent: "center", gap: require("Themes").space.PX_12 };
+obj = { alignItems: "center", justifyContent: "center", gap: ThemesDefault.space.PX_12 };
 obj[0] = obj;
 obj[1] = { marginLeft: 0 };
 let closure_5 = createCacheKey.createStyles(obj);
-const result = require("createCacheKey").fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkGraphic.tsx");
+const result = set.fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkGraphic.tsx");
 
 export default function FavoritesGuildCoachmarkGraphic() {
   const tmp = callback3();
   let obj = { style: tmp.container, children: null };
-  const items = [callback(require(5447) /* AccountAgeTier10LargeBadge */.FavoritesSpotIllustration, { width: 160, height: 90 }), ];
+  const items = [callback(AccountAgeTier10LargeBadge.FavoritesSpotIllustration, { width: 160, height: 90 }), ];
   obj = { style: tmp.betaTag };
-  items[1] = callback(require(1297) /* Button */.BetaTag, obj);
+  items[1] = callback(Button.BetaTag, obj);
   obj[1] = items;
   return callback2(View, obj);
 };

@@ -1,19 +1,20 @@
-// Module ID: 14062
-// Function ID: 14063
+// Module ID: 14130
+// Function ID: 14131
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [1990, 1910, 589, 8375, 2]
+// Dependencies: [1991, 1910, 589, 8414, 2]
 // Exports: useUserAvailableGuildsWithTags
 
-// Module 14062 (useUserAvailableGuildsWithTags)
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
+// Module 14130 (useUserAvailableGuildsWithTags)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/guild_tag/useUserAvailableGuildsWithTags.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/guild_tag/useUserAvailableGuildsWithTags.tsx");
 
 export const useUserAvailableGuildsWithTags = function useUserAvailableGuildsWithTags() {
-  const items = [createGuildRecordFromRust, trackCommunicationDisabled];
-  return require(589) /* initialize */.useStateFromStoresArray(items, () => {
+  const items = [closure_3, closure_2];
+  return initialize.useStateFromStoresArray(items, () => {
     guildsArray = guildsArray.getGuildsArray();
     return guildsArray.filter((id) => {
       selfMember = selfMember.getSelfMember(id.id);

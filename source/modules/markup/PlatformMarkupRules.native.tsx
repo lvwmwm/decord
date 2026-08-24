@@ -1,12 +1,22 @@
-// Module ID: 6831
-// Function ID: 6832
+// Module ID: 6869
+// Function ID: 6870
 // Name: match
-// Dependencies: [17, 6832, 4034, 4092, 6815, 1435, 6816, 6898, 4507, 1236, 6819, 2]
+// Dependencies: [17, 6870, 4037, 4095, 6852, 1435, 6853, 6936, 4511, 1236, 6856, 2]
 // Exports: decorateWithIcon
 
-// Module 6831 (match)
-import { Image } from "get ActivityIndicator";
+// Module 6869 (match)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
+import tDefault from "t" /* 4095 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4511 */;
+import textRegexpDefault from "textRegexp" /* 6852 */;
+import getChannelDefault from "getChannel" /* 6853 */;
+import regExpDefault from "regExp" /* 6856 */;
+import getGameMentionData from "getGameMentionData" /* 6936 */;
 
+const Image = get_ActivityIndicator.Image;
 const re4 = /^[\u200B-\u200D\uFEFF\u180E\u061C]/;
 obj = { escape: obj, invisibleUnicode: null, text: null, emoji: null, customEmoji: null, channelMention: null, gameMention: null, channelOrMessageUrl: null, mediaPostLink: null, attachmentLink: null, silentPrefix: null };
 obj = {
@@ -25,14 +35,14 @@ obj = {
           const json = JSON.stringify(match[0]);
           tmp3 = null;
         }
-        obj = importDefault(4034);
+        obj = parseRawEmojiObjectDefault;
       }
       return tmp3;
     }
   }
 };
 obj = {};
-let merged = Object.assign(require("t").defaultRules.escape);
+let merged = Object.assign(tDefault.defaultRules.escape);
 obj.requiredFirstCharacters = undefined;
 obj.match = function match(arg0) {
   return regex.exec(arg0);
@@ -48,14 +58,14 @@ obj[2] = {
       obj[0] = arg0[0];
       return obj;
     } else {
-      obj = importDefault(4034);
+      obj = parseRawEmojiObjectDefault;
       const result = obj.maybeTranslateSurrogatesToInlineEmoji(arg0[0]);
       if (null == result) {
         obj = { content: null };
         obj[0] = arg0[0];
         let tmp9 = obj;
       } else {
-        const obj1 = {};
+        obj1 = {};
         const merged = Object.assign(nested);
         obj1.nested = true;
         tmp9 = arg1(result, obj1);
@@ -66,30 +76,27 @@ obj[2] = {
 };
 obj[3] = {
   parse(content) {
-    let obj = importDefault(4034);
+    let obj = parseRawEmojiObjectDefault;
     obj = { type: "emoji", content: content[0], surrogate: obj.convertNameToSurrogate(content[1]) };
     return obj;
   }
 };
 obj[4] = {
-  order: require("textRegexp").order,
+  order: textRegexpDefault.order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
     return /^<(a)?:(\w+):(\d+)>/.exec(arg0);
   },
   parse(arg0, arg1, disableAnimatedEmoji) {
-    let tmp;
-    let tmp2;
-    let tmp3;
     [, tmp, tmp2, tmp3] = arg0;
     let flag = disableAnimatedEmoji.disableAnimatedEmoji;
     if (flag === undefined) {
       flag = false;
     }
-    let obj = importDefault(1435);
+    let obj = getAvatarURLDefault;
     obj = { id: tmp3, animated: "a" === tmp, size: 48 };
     let emojiURL = obj.getEmojiURL(obj);
-    const emojiURL1 = importDefault(1435).getEmojiURL({ id: tmp3, animated: false, size: 48 });
+    const emojiURL1 = getAvatarURLDefault.getEmojiURL({ id: tmp3, animated: false, size: 48 });
     obj = { id: tmp3, alt: tmp2, src: null, frozenSrc: null };
     if (flag) {
       emojiURL = emojiURL1;
@@ -101,7 +108,7 @@ obj[4] = {
 };
 obj[5] = {
   parse(arg0, arg1, arg2) {
-    const channelMention = importDefault(6816).channelMention;
+    const channelMention = getChannelDefault.channelMention;
     const parsed = channelMention.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -170,13 +177,13 @@ obj[5] = {
 };
 obj[6] = {
   parse(closure_0, arg1, channelId) {
-    let obj = require(6898) /* getGameMentionData */;
+    let obj = getGameMentionData;
     const gameMentionData = obj.getGameMentionData(tmp);
     let gameIcon;
     if (gameMentionData != null) {
       gameIcon = gameMentionData.gameIcon;
     }
-    obj = { type: "gameMention", gameId: tmp, channelId: channelId.channelId, icon: importDefault(4507)(tmp, gameIcon, { size: 32 }), displayName: null };
+    obj = { type: "gameMention", gameId: tmp, channelId: channelId.channelId, icon: getGameMediaRefURLDefault(tmp, gameIcon, { size: 32 }), displayName: null };
     let gameName;
     if (gameMentionData != null) {
       gameName = gameMentionData.gameName;
@@ -191,7 +198,7 @@ obj[6] = {
 };
 obj[7] = {
   parse(arg0, arg1, arg2) {
-    const channelOrMessageUrl = importDefault(6816).channelOrMessageUrl;
+    const channelOrMessageUrl = getChannelDefault.channelOrMessageUrl;
     const parsed = channelOrMessageUrl.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -260,7 +267,7 @@ obj[7] = {
 };
 obj[8] = {
   parse(arg0, arg1, arg2) {
-    const mediaPostLink = importDefault(6816).mediaPostLink;
+    const mediaPostLink = getChannelDefault.mediaPostLink;
     const parsed = mediaPostLink.parse(arg0, arg1, arg2);
     let obj = {};
     let merged = Object.assign(parsed);
@@ -329,29 +336,26 @@ obj[8] = {
 };
 obj[9] = {
   parse(arg0, arg1, arg2) {
-    const attachmentLink = importDefault(6819).attachmentLink;
+    const attachmentLink = regExpDefault.attachmentLink;
     return attachmentLink.parse(arg0, arg1, arg2);
   }
 };
 let obj1 = {
-  order: require("textRegexp").order,
+  order: textRegexpDefault.order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
     return /^<(a)?:(\w+):(\d+)>/.exec(arg0);
   },
   parse(arg0, arg1, disableAnimatedEmoji) {
-    let tmp;
-    let tmp2;
-    let tmp3;
     [, tmp, tmp2, tmp3] = arg0;
     let flag = disableAnimatedEmoji.disableAnimatedEmoji;
     if (flag === undefined) {
       flag = false;
     }
-    let obj = importDefault(1435);
+    let obj = getAvatarURLDefault;
     obj = { id: tmp3, animated: "a" === tmp, size: 48 };
     let emojiURL = obj.getEmojiURL(obj);
-    const emojiURL1 = importDefault(1435).getEmojiURL({ id: tmp3, animated: false, size: 48 });
+    const emojiURL1 = getAvatarURLDefault.getEmojiURL({ id: tmp3, animated: false, size: 48 });
     obj = { id: tmp3, alt: tmp2, src: null, frozenSrc: null };
     if (flag) {
       emojiURL = emojiURL1;
@@ -362,7 +366,7 @@ let obj1 = {
   }
 };
 obj[10] = {
-  order: require("textRegexp").order,
+  order: textRegexpDefault.order,
   requiredFirstCharacters: ["@"],
   match(arg0) {
     return /^(@silent(?![^\s]))/.exec(arg0);
@@ -372,7 +376,7 @@ obj[10] = {
   }
 };
 let obj2 = {
-  order: require("textRegexp").order,
+  order: textRegexpDefault.order,
   requiredFirstCharacters: ["@"],
   match(arg0) {
     return /^(@silent(?![^\s]))/.exec(arg0);
@@ -381,7 +385,7 @@ let obj2 = {
     return { type: "text", content: content[0] };
   }
 };
-let result = require("parseRawEmojiObject").fileFinishedImporting("modules/markup/PlatformMarkupRules.native.tsx");
+let result = set.fileFinishedImporting("modules/markup/PlatformMarkupRules.native.tsx");
 
 export default obj;
 export const decorateWithIcon = function decorateWithIcon(str) {

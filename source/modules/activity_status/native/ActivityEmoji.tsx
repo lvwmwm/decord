@@ -1,22 +1,20 @@
-// Module ID: 9541
-// Function ID: 9542
+// Module ID: 9578
+// Function ID: 9579
 // Name: ActivityEmoji
-// Dependencies: [19, 21, 4661, 4066, 1435, 7939, 6930, 2]
+// Dependencies: [19, 21, 4668, 4069, 1435, 7978, 6968, 2]
 // Exports: default
 
-// Module 9541 (ActivityEmoji)
-import noop from "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9578 (ActivityEmoji)
+import EmojiDefault from "Emoji" /* 6968 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_5 = createCacheKey.createStyles({ emoji: { flexShrink: 0, width: "100%", height: "100%" }, text: { textAlign: "center", fontFamily: "System" } });
-const result = require("createCacheKey").fileFinishedImporting("modules/activity_status/native/ActivityEmoji.tsx");
+const result = require("set").fileFinishedImporting("modules/activity_status/native/ActivityEmoji.tsx");
 
 export default function ActivityEmoji(emoji) {
-  let size;
-  let style;
-  let withPlaceholder;
   emoji = emoji.emoji;
   ({ size, style, withPlaceholder } = emoji);
   if (withPlaceholder === undefined) {
@@ -26,11 +24,11 @@ export default function ActivityEmoji(emoji) {
   if (flag === undefined) {
     flag = true;
   }
-  let importDefault;
+  importDefault = undefined;
   const tmp = callback();
   let ReactionIcon = emoji;
   let obj = dependencyMap;
-  const AnimateEmoji = emoji(4066).AnimateEmoji;
+  const AnimateEmoji = emoji(4069).AnimateEmoji;
   let animated;
   const setting = AnimateEmoji.useSetting();
   if (emoji != null) {
@@ -55,7 +53,7 @@ export default function ActivityEmoji(emoji) {
       id = tmp.id;
     }
     if (null != id) {
-      let obj = _undefined(outer1_2[4]);
+      let obj = _undefined(closure_1_2[4]);
       obj = { id: null, size: 48, animated: null };
       obj[0] = tmp.id;
       obj[2] = _undefined;
@@ -68,7 +66,7 @@ export default function ActivityEmoji(emoji) {
     }
   }
   if (null == emoji) {
-    ReactionIcon = ReactionIcon(7939).ReactionIcon;
+    ReactionIcon = ReactionIcon(7978).ReactionIcon;
     obj = { style: null, size: "sm" };
     obj[0] = style;
     <ReactionIcon style={null} size="sm" />;
@@ -84,11 +82,11 @@ export default function ActivityEmoji(emoji) {
     obj[2] = items1;
     const items2 = [, , ];
     ({ emoji: arr3[0], text: arr3[1] } = tmp);
-    const obj1 = { fontSize: null };
+    obj1 = { fontSize: null };
     obj1[0] = size;
     items2[2] = obj1;
     obj[3] = items2;
     obj[4] = tmp.emoji;
-    jsx(importDefault(6930), { width: null, height: null });
+    jsx(EmojiDefault, { width: null, height: null });
   }
 };

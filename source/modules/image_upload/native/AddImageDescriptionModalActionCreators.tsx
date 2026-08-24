@@ -1,18 +1,23 @@
-// Module ID: 10441
-// Function ID: 10442
-// Dependencies: [4342, 5260, 10442, 2007, 2]
+// Module ID: 10480
+// Function ID: 10481
+// Dependencies: [4346, 5265, 10481, 2008, 2]
 
-// Module 10441
+// Module 10480
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+
 const ADD_IMAGE_DESCRIPTION_MODAL_KEY = "ADD_IMAGE_DESCRIPTION_MODAL_KEY";
-const result = require("AddDescription").fileFinishedImporting("modules/image_upload/native/AddImageDescriptionModalActionCreators.tsx");
+const result = set.fileFinishedImporting("modules/image_upload/native/AddImageDescriptionModalActionCreators.tsx");
 
 export default {
   open(closure_0) {
-    importDefault(4342).hideActionSheet();
-    const obj = importDefault(4342);
-    importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(10442, dependencyMap.paths), closure_0, ADD_IMAGE_DESCRIPTION_MODAL_KEY);
+    ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet();
+    const obj = ACTION_SHEET_HEIGHT_HALFDefault;
+    _modDef5265.pushLazy(asyncRequireImpl(10481, dependencyMap.paths), closure_0, ADD_IMAGE_DESCRIPTION_MODAL_KEY);
   },
   close() {
-    importDefault(5260).popWithKey(ADD_IMAGE_DESCRIPTION_MODAL_KEY);
+    _modDef5265.popWithKey(ADD_IMAGE_DESCRIPTION_MODAL_KEY);
   }
 };

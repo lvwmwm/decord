@@ -1,10 +1,12 @@
-// Module ID: 5719
-// Function ID: 5720
+// Module ID: 5750
+// Function ID: 5751
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 5719 (vanityUrl)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDepthTier1LargeBadge-2x.png.js");
+// Module 5750 (vanityUrl)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDepthTier1LargeBadge-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/547e51db09a5822fe140188a0770210ca44355950d654d7289b6ee043902a050.png";
 export const vanityUrl = "https://cdn.discordapp.com/assets/mana/asset-library/generated/GameDepthTier1LargeBadge-2x.png";

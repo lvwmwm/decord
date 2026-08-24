@@ -1,12 +1,12 @@
-// Module ID: 9103
-// Function ID: 9104
+// Module ID: 9140
+// Function ID: 9141
 // Name: set
-// Dependencies: [19, 9104, 9105, 9107, 9106, 2]
+// Dependencies: [19, 9141, 9142, 9144, 9143, 2]
 // Exports: useGameProfileStoreWebsites
 
-// Module 9103 (set)
-import noop from "noop";
-import set from "buildSteamStoreUrl";
+// Module 9140 (set)
+import closure_3 from "noop" /* 19 */;
+import set from "set" /* 2 */;
 
 const require = arg1;
 let set = new Set(["1402418703554842694", "356877880938070016"]);
@@ -33,7 +33,7 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
   if (data != null) {
     steamReleaseStatus = data.steamReleaseStatus;
   }
-  const items = [steamWebsiteUrl, websites, id1, steamReleaseStatus, tmp4];
+  items = [steamWebsiteUrl, websites, id1, steamReleaseStatus, tmp4];
   return websites.useMemo(() => {
     let arr = websites;
     if (null != websites) {
@@ -41,9 +41,9 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
         let found;
         if (arr != null) {
           found = arr.filter((category) => {
-            let tmp3 = category.category === outer1_0(outer1_2[1]).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES;
+            let tmp3 = category.category === closure_1_0(closure_1_2[1]).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES;
             if (tmp3) {
-              tmp3 = !outer1_4.has(closure_2);
+              tmp3 = !closure_1_4.has(closure_2);
             }
             let tmp6 = !tmp3;
             if (!tmp3) {
@@ -52,7 +52,7 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
                 hasItem = closure_4 !== tmp(tmp2[4]).SteamReleaseStatus.RETIRED_ABANDONED;
               }
               if (hasItem) {
-                hasItem = outer1_5.includes(category.category);
+                hasItem = closure_1_5.includes(category.category);
               }
               tmp6 = hasItem;
             }
@@ -67,7 +67,7 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
           someResult = steamReleaseStatus === steamWebsiteUrl(id1[4]).SteamReleaseStatus.RETIRED_ABANDONED;
         }
         if (!someResult) {
-          someResult = found.some((category) => category.category === callback(9104).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          someResult = found.some((category) => category.category === callback(9141).ThirdPartyGameApplicationWebsiteCategory.STEAM);
         }
         if (!someResult) {
           let obj = { category: null, url: null };
@@ -77,9 +77,9 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
         }
         const sorted = found.sort((category, category2) => {
           let num = -1;
-          if (category.category !== callback(9104).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
+          if (category.category !== callback(9141).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
             let num2 = 0;
-            if (category2.category === callback(9104).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
+            if (category2.category === callback(9141).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
               num2 = 1;
             }
             num = num2;

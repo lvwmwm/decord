@@ -1,16 +1,19 @@
-// Module ID: 14105
-// Function ID: 14106
+// Module ID: 14173
+// Function ID: 14174
 // Name: trackSafetySettingsNoticeAnalytics
 // Dependencies: [676, 698, 2]
 // Exports: trackSafetySettingsNoticeAnalytics
 
-// Module 14105 (trackSafetySettingsNoticeAnalytics)
-import { AnalyticEvents } from "ME";
+// Module 14173 (trackSafetySettingsNoticeAnalytics)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 
-const result = require("set").fileFinishedImporting("modules/safety_common/SafetySettingsUtils.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/safety_common/SafetySettingsUtils.tsx");
 
 export const trackSafetySettingsNoticeAnalytics = function trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, LEARN_MORE) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { notice_type: AGE_CONFIRMATION_NOTICE, action: LEARN_MORE };
   obj.track(AnalyticEvents.SAFETY_SETTINGS_NOTICE_ACTION, obj);
 };

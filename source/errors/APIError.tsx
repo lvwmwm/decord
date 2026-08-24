@@ -1,25 +1,29 @@
-// Module ID: 4274
-// Function ID: 4275
+// Module ID: 4278
+// Function ID: 4279
 // Name: prototype
 // Dependencies: [676, 530, 1236, 2]
 
-// Module 4274 (prototype)
-import { Links } from "ME";
-import { V8APIError } from "sendRequest";
+// Module 4278 (prototype)
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
 
+const Links = ME.Links;
+const V8APIError = sendRequest.V8APIError;
 const prototype = function APIErrorWithDefaultMessage(arg0, arg1) {
   if (null != arg1) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     let obj = { statusPageURL: null, details: null };
     obj[0] = Links.STATUS;
     const _HermesInternal = HermesInternal;
     obj[1] = "" + arg1;
-    intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.aKRa0Q, obj);
+    intl2.formatToPlainString(getSystemLocale.t.aKRa0Q, obj);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     obj = { statusPageURL: null };
     obj[0] = Links.STATUS;
-    intl.formatToPlainString(require(1236) /* getSystemLocale */.t.aTVNes, obj);
+    intl.formatToPlainString(getSystemLocale.t.aTVNes, obj);
   }
   tmp = new tmp();
   // ThrowIfThisInitialized (0x7c)
@@ -27,6 +31,6 @@ const prototype = function APIErrorWithDefaultMessage(arg0, arg1) {
 }.prototype;
 class prototype extends V8APIError {
 }
-const result = require("getSystemLocale").fileFinishedImporting("errors/APIError.tsx");
+const result = set.fileFinishedImporting("errors/APIError.tsx");
 
 export default prototype;

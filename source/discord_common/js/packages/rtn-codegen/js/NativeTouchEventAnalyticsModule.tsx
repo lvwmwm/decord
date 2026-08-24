@@ -1,12 +1,14 @@
-// Module ID: 13914
-// Function ID: 13915
+// Module ID: 13982
+// Function ID: 13983
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 13914 (enforcing)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 13982 (enforcing)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeTouchEventAnalyticsModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeTouchEventAnalyticsModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeTouchEventAnalyticsModule.tsx");
 
 export default enforcing;

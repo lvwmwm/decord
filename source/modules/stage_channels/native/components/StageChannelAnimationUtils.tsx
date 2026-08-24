@@ -1,23 +1,25 @@
-// Module ID: 12600
-// Function ID: 12601
+// Module ID: 12654
+// Function ID: 12655
 // Name: useStageActionBarAnimation
-// Dependencies: [4115, 12494, 12492, 1629, 4664, 2]
+// Dependencies: [4119, 12548, 12546, 1629, 4671, 2]
 // Exports: useStageActionBarAnimation
 
-// Module 12600 (useStageActionBarAnimation)
-import { Easing } from "module_4115";
+// Module 12654 (useStageActionBarAnimation)
+import set from "set" /* 2 */;
+import _mod4119 from "module_4119" /* 4119 */;
 
 let obj = { duration: 250, easing: null };
+const Easing = _mod4119.Easing;
 obj[1] = Easing.bezier(0.66, 0, 0.2, 1);
 let closure_4 = { code: "function StageChannelAnimationUtilsTsx1(){const{isInvited,actionBarHeight,ACTION_BAR_SAFE_AREA_PADDING,safeAreaTop,controlPadding}=this.__closure;return isInvited?actionBarHeight+ACTION_BAR_SAFE_AREA_PADDING+safeAreaTop:controlPadding;}" };
 let closure_5 = { code: "function StageChannelAnimationUtilsTsx2(){const{withTiming,paddingTop,TIMING_CONFIG}=this.__closure;return{paddingTop:withTiming(paddingTop.get(),TIMING_CONFIG)};}" };
-const result = require("CALL_ACTION_BAR_HEIGHT").fileFinishedImporting("modules/stage_channels/native/components/StageChannelAnimationUtils.tsx");
+const result = set.fileFinishedImporting("modules/stage_channels/native/components/StageChannelAnimationUtils.tsx");
 
 export const useStageActionBarAnimation = function useStageActionBarAnimation(channelId, controlPadding) {
   const _require = controlPadding;
   const tmp = importDefault(getActionBarHeight[1])();
   importDefault = tmp;
-  let obj = _require(getActionBarHeight[2]);
+  obj = _require(getActionBarHeight[2]);
   getActionBarHeight = obj.useGetActionBarHeight(channelId);
   const top = importDefault(getActionBarHeight[3])().top;
   class A {
@@ -39,8 +41,7 @@ export const useStageActionBarAnimation = function useStageActionBarAnimation(ch
   derivedValue = _require(getActionBarHeight[0]).useDerivedValue(A);
   const obj2 = _require(getActionBarHeight[0]);
   const fn = function c() {
-    const obj = { paddingTop: null };
-    obj[0] = controlPadding(getActionBarHeight[4]).withTiming(derivedValue.get(), top);
+    obj = { paddingTop: controlPadding(getActionBarHeight[4]).withTiming(derivedValue.get(), top) };
     return obj;
   };
   obj = { withTiming: _require(getActionBarHeight[4]).withTiming, paddingTop: derivedValue, TIMING_CONFIG: top };

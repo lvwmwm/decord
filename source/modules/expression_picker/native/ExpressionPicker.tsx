@@ -1,27 +1,23 @@
-// Module ID: 10189
-// Function ID: 10190
-// Dependencies: [19, 17, 1338, 676, 1925, 21, 4661, 712, 10190, 9304, 8799, 1498, 1627, 5042, 9344, 10191, 4721, 10096, 10192, 10193, 10216, 2]
+// Module ID: 10228
+// Function ID: 10229
+// Dependencies: [19, 17, 1338, 676, 1925, 21, 4668, 712, 10229, 9341, 8836, 1498, 1627, 5047, 9381, 10230, 4727, 10135, 10231, 10232, 10255, 2]
 
-// Module 10189
-import importAllResult from "module_10193";
-import { View } from "SegmentedControl";
-import ExpressionPickerViewType from "ExpressionPickerViewType";
-import { AnalyticEvents } from "ME";
-import { EmojiIntention } from "set";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 10228
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1338 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { EmojiIntention } from "set" /* 1925 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let PADDING_HORIZONTAL;
-let c10;
-let c5;
-let c9;
-let closure_6;
 const require = arg1;
 let c3 = importAllResult;
 ({ ExpressionPickerViewType: c5, ExpressionPickerOrder: closure_6, PADDING_HORIZONTAL } = ExpressionPickerViewType);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let obj = { expressionPickerContainer: null, expressionPickerContent: null, segmentedControl: null, segmentedControlUnpadded: null };
-obj = { flex: 1, overflow: "hidden", backgroundColor: require("Themes").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, position: "relative", paddingHorizontal: PADDING_HORIZONTAL };
+obj = { flex: 1, overflow: "hidden", backgroundColor: ThemesDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, position: "relative", paddingHorizontal: PADDING_HORIZONTAL };
 obj[0] = obj;
 obj[1] = { flex: 1 };
 createCacheKey = { paddingTop: 2 * PADDING_HORIZONTAL, paddingHorizontal: 0 };
@@ -29,18 +25,6 @@ obj[2] = createCacheKey;
 obj[3] = { paddingHorizontal: 0 };
 let closure_11 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function ExpressionPicker(expressionType) {
-  let bottomSheetIndex;
-  let bottomSheetRef;
-  let channel;
-  let height;
-  let inPortalKeyboard;
-  let initialGifQuery;
-  let onBackspace;
-  let onPressEmoji;
-  let onPressGIF;
-  let onPressSticker;
-  let stickerFormats;
-  let visibleTabs;
   ({ bottomSheetRef, bottomSheetIndex, channel } = expressionType);
   let flag = expressionType.hideGifFavorites;
   if (flag === undefined) {
@@ -51,7 +35,7 @@ const memoResult = importAllResult.memo(function ExpressionPicker(expressionType
     visibleTabs = closure_6;
   }
   ({ height, inPortalKeyboard } = expressionType);
-  let importDefault;
+  importDefault = undefined;
   let expressionPickerViewType;
   let memo;
   ({ initialGifQuery, stickerFormats } = expressionType);
@@ -81,18 +65,18 @@ const memoResult = importAllResult.memo(function ExpressionPicker(expressionType
     if (ref.current) {
       let obj = { tab: null, badged: false };
       obj[0] = expressionPickerViewType;
-      ref(expressionPickerViewType[13]).trackWithMetadata(outer1_7.EXPRESSION_PICKER_TAB_CLICKED, obj);
+      ref(expressionPickerViewType[13]).trackWithMetadata(closure_1_7.EXPRESSION_PICKER_TAB_CLICKED, obj);
       const obj4 = ref(expressionPickerViewType[13]);
-    } else if (expressionPickerViewType === outer1_5.EMOJI) {
+    } else if (expressionPickerViewType === closure_1_5.EMOJI) {
       obj = { intention: null };
-      obj[0] = outer1_8.CHAT;
+      obj[0] = closure_1_8.CHAT;
       ref(expressionPickerViewType[14])(obj);
       tmp.current = true;
     } else {
       obj = ref(expressionPickerViewType[13]);
-      const obj1 = { tab: null, badged: false };
+      obj1 = { tab: null, badged: false };
       obj1[0] = tmp2;
-      obj.trackWithMetadata(outer1_7.EXPRESSION_PICKER_OPENED, obj1);
+      obj.trackWithMetadata(closure_1_7.EXPRESSION_PICKER_OPENED, obj1);
       tmp.current = true;
     }
   }, items2);
@@ -105,7 +89,7 @@ const memoResult = importAllResult.memo(function ExpressionPicker(expressionType
   if (tmp7Result.useIsScreenReaderEnabled()) {
     obj = { marginBottom: null };
     obj[0] = tmp10Result.safeAreaBottomKeyboardAware;
-    let obj1 = obj;
+    obj1 = obj;
   } else {
     obj1 = {};
   }
@@ -158,6 +142,6 @@ const memoResult = importAllResult.memo(function ExpressionPicker(expressionType
   obj3[1] = items4;
   return tmp14(View, obj3);
 });
-let result = require("ExpressionPickerViewType").fileFinishedImporting("modules/expression_picker/native/ExpressionPicker.tsx");
+let result = require("set").fileFinishedImporting("modules/expression_picker/native/ExpressionPicker.tsx");
 
 export default memoResult;

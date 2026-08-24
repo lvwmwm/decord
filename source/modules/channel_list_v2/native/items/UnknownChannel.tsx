@@ -1,26 +1,32 @@
-// Module ID: 15500
-// Function ID: 15501
+// Module ID: 15565
+// Function ID: 15566
 // Name: handlePress
-// Dependencies: [19, 10055, 5044, 21, 4661, 712, 4094, 1236, 10455, 4984, 9919, 15378, 2]
+// Dependencies: [19, 10094, 5049, 21, 4668, 712, 4097, 1236, 10494, 4989, 9958, 15442, 2]
 
-// Module 15500 (handlePress)
-import importAllResult from "noop";
-import { UnreadSetting } from "ReadStateTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15565 (handlePress)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import dispatcherDefault from "dispatcher" /* 4097 */;
+import computeChannelNameDefault from "computeChannelName" /* 4989 */;
+import registerAssetDefault from "registerAsset" /* 10494 */;
+import getChannelModeDefault from "getChannelMode" /* 15442 */;
+import importAllResult from "noop" /* 19 */;
+import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 function handlePress() {
-  let obj = importDefault(4094);
+  let obj = dispatcherDefault;
   obj = { key: "UNKNOWN_CHANNEL_UPDATE_DISCORD", content: null, icon: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["/ZjyYE"]);
-  obj[2] = importDefault(10455);
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t["/ZjyYE"]);
+  obj[2] = registerAssetDefault;
   obj.open(obj);
 }
 let c3 = importAllResult;
 let obj = { container: null };
-obj = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("Themes").radii.md };
+obj = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: ThemesDefault.radii.md };
 obj[0] = obj;
 let closure_6 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((channel) => {
@@ -29,18 +35,18 @@ const memoResult = importAllResult.memo((channel) => {
   const items = [channel.id];
   const tmp = callback();
   callback = importAllResult.useCallback(() => {
-    const result = channel(outer1_2[10]).openChannelLongPressActionSheet(channel.id);
+    const result = channel(closure_1_2[10]).openChannelLongPressActionSheet(channel.id);
   }, items);
   const obj = { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null };
-  const tmp2 = importDefault(4984)(channel);
+  const tmp2 = computeChannelNameDefault(channel);
   const intl = channel(1236).intl;
   obj[4] = intl.formatToPlainString(channel(1236).t.yjQ9P8, { channelName: tmp2 });
   obj[5] = { selected };
   obj[6] = channel;
   obj[7] = selected;
   obj[8] = UnreadSetting.ONLY_MENTIONS;
-  return jsx(importDefault(15378), { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
+  return jsx(getChannelModeDefault, { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
 });
-let result = require("ReadStateTypes").fileFinishedImporting("modules/channel_list_v2/native/items/UnknownChannel.tsx");
+let result = require("set").fileFinishedImporting("modules/channel_list_v2/native/items/UnknownChannel.tsx");
 
 export default memoResult;

@@ -1,22 +1,21 @@
-// Module ID: 7699
-// Function ID: 7700
+// Module ID: 7737
+// Function ID: 7738
 // Name: useTimeout
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 7699 (useTimeout)
-import noop from "noop";
+// Module 7737 (useTimeout)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
 
-let c0;
-let closure_1;
 ({ useEffect: c0, useRef: closure_1 } = noop);
-const result = require("set").fileFinishedImporting("hooks/useTimeout.tsx");
+const result = set.fileFinishedImporting("hooks/useTimeout.tsx");
 
 export default function useTimeout(arg0, arg1) {
   const callback = arg0;
   const callback2 = arg1;
   const tmp = callback2(arg0);
-  let closure_2 = tmp;
+  closure_2 = tmp;
   const items = [arg0];
   callback(() => {
     closure_2.current = closure_0;

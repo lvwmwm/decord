@@ -4,9 +4,11 @@
 // Dependencies: [722, 802, 725, 803]
 
 // Module 801 (property)
+import isKey from "isKey" /* 722 */;
+
 
 export default function property(arg0) {
-  if (require(722) /* isKey */(arg0)) {
+  if (isKey(arg0)) {
     let tmpResultResult = tmp(802)(tmp(725)(arg0));
     const tmpResult = tmp(802);
   } else {

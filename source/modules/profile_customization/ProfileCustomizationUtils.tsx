@@ -1,23 +1,26 @@
-// Module ID: 8376
-// Function ID: 8377
+// Module ID: 8415
+// Function ID: 8416
 // Name: useAvatarsWithGuilds
-// Dependencies: [19, 8370, 5365, 1990, 589, 1363, 1236, 2]
+// Dependencies: [19, 8409, 5370, 1991, 589, 1363, 1236, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner, useAvatarDecorationSettings, useAvatarsWithGuilds, useGuildMemberAndUserPendingNameplate, useGuildMemberOrUserPendingDisplayNameStyles, useProfileEffectSettings, useProfileFrameSettings, useUserAvatarDecoration, useUserProfileEffect, useUserProfileFrame
 
-// Module 8376 (useAvatarsWithGuilds)
-import noop from "noop";
-import handleFormOpen from "handleFormOpen";
-import createUserWidgetFromServer from "createUserWidgetFromServer";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
+// Module 8415 (useAvatarsWithGuilds)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import AccessibilityAnnouncer4 from "AccessibilityAnnouncer" /* 1363 */;
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "handleFormOpen" /* 8409 */;
+import closure_4 from "createUserWidgetFromServer" /* 5370 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
 
-const require = arg1;
-const result = require("createUserWidgetFromServer").fileFinishedImporting("modules/profile_customization/ProfileCustomizationUtils.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/profile_customization/ProfileCustomizationUtils.tsx");
 
 export const useAvatarsWithGuilds = function useAvatarsWithGuilds(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const items = [arg0];
   return React.useMemo(() => {
-    const mutableAllGuildsAndMembers = outer1_5.getMutableAllGuildsAndMembers();
+    const mutableAllGuildsAndMembers = closure_1_5.getMutableAllGuildsAndMembers();
     const obj = {};
     for (const key10008 in mutableAllGuildsAndMembers) {
       let tmp4 = key10008;
@@ -44,21 +47,19 @@ export const useAvatarsWithGuilds = function useAvatarsWithGuilds(arg0) {
   }, items);
 };
 export const useGuildMemberAndUserPendingNameplate = function useGuildMemberAndUserPendingNameplate(user, guildId) {
-  let pendingErrors;
-  let pendingNameplate;
   const _require = user;
-  const dependencyMap = guildId;
+  dependencyMap = guildId;
   let obj = _require(589);
-  const items = [trackCommunicationDisabled];
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
     if (undefined !== closure_1) {
-      member = outer1_5.getMember(tmp, user.id);
+      member = closure_1_5.getMember(tmp, user.id);
     }
     return member;
   });
-  const items1 = [handleFormOpen];
-  const stateFromStoresObject = _require(589).useStateFromStoresObject(items1, () => ({ pendingNameplate: outer1_3.getPendingChanges(closure_1).pendingNameplate, pendingErrors: outer1_3.getErrors(closure_1).nameplate }));
+  const items1 = [closure_3];
+  const stateFromStoresObject = _require(589).useStateFromStoresObject(items1, () => ({ pendingNameplate: closure_1_3.getPendingChanges(closure_1).pendingNameplate, pendingErrors: closure_1_3.getErrors(closure_1).nameplate }));
   obj = { userNameplate: user.nameplate, guildNameplate: null, pendingNameplate: null, pendingErrors: null };
   let nameplate;
   ({ pendingNameplate, pendingErrors } = stateFromStoresObject);
@@ -74,25 +75,22 @@ export const useGuildMemberAndUserPendingNameplate = function useGuildMemberAndU
   return obj;
 };
 export const useGuildMemberOrUserPendingDisplayNameStyles = function useGuildMemberOrUserPendingDisplayNameStyles(stateFromStores, guildId) {
-  let pendingDisplayNameStyles;
-  let pendingErrors;
-  let tryItOutDisplayNameStyles;
   const _require = stateFromStores;
-  const dependencyMap = guildId;
+  dependencyMap = guildId;
   let obj = _require(589);
-  const items = [trackCommunicationDisabled];
+  const items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
     if (undefined !== closure_1) {
       member = null;
       if (null != closure_0) {
-        member = outer1_5.getMember(tmp, tmp3.id);
+        member = closure_1_5.getMember(tmp, tmp3.id);
       }
     }
     return member;
   });
-  const items1 = [handleFormOpen];
-  const stateFromStoresObject = _require(589).useStateFromStoresObject(items1, () => ({ pendingDisplayNameStyles: outer1_3.getPendingChanges(closure_1).pendingDisplayNameStyles, tryItOutDisplayNameStyles: outer1_3.getTryItOutChanges().tryItOutDisplayNameStyles, pendingErrors: outer1_3.getErrors(closure_1).displayNameStyles }));
+  const items1 = [closure_3];
+  const stateFromStoresObject = _require(589).useStateFromStoresObject(items1, () => ({ pendingDisplayNameStyles: closure_1_3.getPendingChanges(closure_1).pendingDisplayNameStyles, tryItOutDisplayNameStyles: closure_1_3.getTryItOutChanges().tryItOutDisplayNameStyles, pendingErrors: closure_1_3.getErrors(closure_1).displayNameStyles }));
   let displayNameStyles;
   ({ pendingDisplayNameStyles, tryItOutDisplayNameStyles, pendingErrors } = stateFromStoresObject);
   if (stateFromStores != null) {
@@ -112,11 +110,11 @@ export const useGuildMemberOrUserPendingDisplayNameStyles = function useGuildMem
 export const useUserAvatarDecoration = function useUserAvatarDecoration(user) {
   user = user.user;
   const guildId = user.guildId;
-  const items = [trackCommunicationDisabled];
+  const items = [closure_5];
   const stateFromStores = user(guildId[4]).useStateFromStores(items, () => {
     let member = null;
     if (null != guildId) {
-      member = outer1_5.getMember(tmp, user.id);
+      member = closure_1_5.getMember(tmp, user.id);
     }
     return member;
   });
@@ -131,19 +129,17 @@ export const useUserAvatarDecoration = function useUserAvatarDecoration(user) {
   return avatarDecoration;
 };
 export const useUserProfileEffect = function useUserProfileEffect(arg0) {
-  let dependencyMap;
-  let require;
   ({ user: require, guildId: dependencyMap } = arg0);
-  const items = [createUserWidgetFromServer];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
+  const items = [closure_4];
+  return initialize.useStateFromStores(items, () => {
     if (null == closure_1) {
-      const userProfile = outer1_4.getUserProfile(user.id);
+      const userProfile = closure_1_4.getUserProfile(user.id);
       let profileEffect;
       if (userProfile != null) {
         profileEffect = userProfile.profileEffect;
       }
     } else {
-      const guildMemberProfile = outer1_4.getGuildMemberProfile(user.id, tmp);
+      const guildMemberProfile = closure_1_4.getGuildMemberProfile(user.id, tmp);
       if (guildMemberProfile != null) {
         profileEffect = guildMemberProfile.profileEffect;
       }
@@ -152,19 +148,17 @@ export const useUserProfileEffect = function useUserProfileEffect(arg0) {
   });
 };
 export const useUserProfileFrame = function useUserProfileFrame(arg0) {
-  let dependencyMap;
-  let require;
   ({ user: require, guildId: dependencyMap } = arg0);
-  const items = [createUserWidgetFromServer];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
+  const items = [closure_4];
+  return initialize.useStateFromStores(items, () => {
     if (null == closure_1) {
-      const userProfile = outer1_4.getUserProfile(user.id);
+      const userProfile = closure_1_4.getUserProfile(user.id);
       let profileFrame;
       if (userProfile != null) {
         profileFrame = userProfile.profileFrame;
       }
     } else {
-      const guildMemberProfile = outer1_4.getGuildMemberProfile(user.id, tmp);
+      const guildMemberProfile = closure_1_4.getGuildMemberProfile(user.id, tmp);
       if (guildMemberProfile != null) {
         profileFrame = guildMemberProfile.profileFrame;
       }
@@ -174,24 +168,20 @@ export const useUserProfileFrame = function useUserProfileFrame(arg0) {
 };
 export const useAvatarDecorationSettings = function useAvatarDecorationSettings(arg0) {
   const _require = arg0;
-  const items = [handleFormOpen];
-  return _require(589).useStateFromStoresObject(items, () => ({ pendingAvatarDecoration: outer1_3.getPendingChanges(closure_0).pendingAvatarDecoration, errors: outer1_3.getErrors(closure_0).avatarDecoration }));
+  const items = [closure_3];
+  return _require(589).useStateFromStoresObject(items, () => ({ pendingAvatarDecoration: closure_1_3.getPendingChanges(closure_0).pendingAvatarDecoration, errors: closure_1_3.getErrors(closure_0).avatarDecoration }));
 };
 export const useProfileEffectSettings = function useProfileEffectSettings(arg0) {
   const _require = arg0;
-  const items = [handleFormOpen];
-  return _require(589).useStateFromStoresObject(items, () => ({ pendingProfileEffect: outer1_3.getPendingChanges(closure_0).pendingProfileEffect, errors: outer1_3.getErrors(closure_0).profileEffect }));
+  const items = [closure_3];
+  return _require(589).useStateFromStoresObject(items, () => ({ pendingProfileEffect: closure_1_3.getPendingChanges(closure_0).pendingProfileEffect, errors: closure_1_3.getErrors(closure_0).profileEffect }));
 };
 export const useProfileFrameSettings = function useProfileFrameSettings(arg0) {
   const _require = arg0;
-  const items = [handleFormOpen];
-  return _require(589).useStateFromStoresObject(items, () => ({ pendingProfileFrame: outer1_3.getPendingChanges(closure_0).pendingProfileFrame, errors: outer1_3.getErrors(closure_0).profileFrame }));
+  const items = [closure_3];
+  return _require(589).useStateFromStoresObject(items, () => ({ pendingProfileFrame: closure_1_3.getPendingChanges(closure_0).pendingProfileFrame, errors: closure_1_3.getErrors(closure_0).profileFrame }));
 };
 export const getProfilePreviewValue = function getProfilePreviewValue(arg0) {
-  let guildId;
-  let guildValue;
-  let pendingValue;
-  let userValue;
   ({ userValue, guildValue, pendingValue, guildId } = arg0);
   if ("" !== pendingValue) {
     if (null !== pendingValue) {
@@ -218,10 +208,6 @@ export const getProfilePreviewValue = function getProfilePreviewValue(arg0) {
   pendingValue = tmp3;
 };
 export const resolveCollectiblesOverride = function resolveCollectiblesOverride(arg0) {
-  let guildId;
-  let guildValue;
-  let pendingValue;
-  let userValue;
   ({ pendingValue, userValue, guildValue, guildId } = arg0);
   if (undefined !== pendingValue) {
     if ("" !== pendingValue) {
@@ -270,16 +256,16 @@ export const showRemoveBanner = function showRemoveBanner(arg0, banner) {
 };
 export const announcePendingAvatarChange = function announcePendingAvatarChange(set) {
   if ("set" === set) {
-    const AccessibilityAnnouncer3 = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    AccessibilityAnnouncer3.announce(intl3.string(require(1236) /* getSystemLocale */.t.dyU5c5));
+    const AccessibilityAnnouncer3 = AccessibilityAnnouncer4.AccessibilityAnnouncer;
+    const intl3 = getSystemLocale.intl;
+    AccessibilityAnnouncer3.announce(intl3.string(getSystemLocale.t.dyU5c5));
   } else if ("remove" === set) {
-    const AccessibilityAnnouncer2 = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    AccessibilityAnnouncer2.announce(intl2.string(require(1236) /* getSystemLocale */.t["f1+oNk"]));
+    const AccessibilityAnnouncer2 = AccessibilityAnnouncer4.AccessibilityAnnouncer;
+    const intl2 = getSystemLocale.intl;
+    AccessibilityAnnouncer2.announce(intl2.string(getSystemLocale.t["f1+oNk"]));
   } else {
-    const AccessibilityAnnouncer = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    AccessibilityAnnouncer.announce(intl.string(require(1236) /* getSystemLocale */.t["/b5nqj"]));
+    const AccessibilityAnnouncer = AccessibilityAnnouncer4.AccessibilityAnnouncer;
+    const intl = getSystemLocale.intl;
+    AccessibilityAnnouncer.announce(intl.string(getSystemLocale.t["/b5nqj"]));
   }
 };

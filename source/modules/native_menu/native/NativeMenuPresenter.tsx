@@ -1,30 +1,31 @@
-// Module ID: 16129
-// Function ID: 16130
+// Module ID: 16227
+// Function ID: 16228
 // Name: MenuContainer
-// Dependencies: [19, 10046, 589, 10284, 4732, 2]
+// Dependencies: [19, 10085, 589, 10323, 4737, 2]
 // Exports: default
 
-// Module 16129 (MenuContainer)
-import noop from "noop";
-import initialize from "initialize";
+// Module 16227 (MenuContainer)
+import useBackPressHandlerDefault from "useBackPressHandler" /* 4737 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "initialize" /* 10085 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/native_menu/native/NativeMenuPresenter.tsx");
+const result = require("set").fileFinishedImporting("modules/native_menu/native/NativeMenuPresenter.tsx");
 
 export default function MenuContainer() {
-  const items = [initialize];
+  const items = [closure_4];
   const stateFromStoresObject = key(589).useStateFromStoresObject(items, () => ({ key: store.getKey(), menu: store.getMenu() }), []);
   key = stateFromStoresObject.key;
   const menu = stateFromStoresObject.menu;
   const items1 = [key];
   const callback = React.useCallback(() => {
     if (null != key) {
-      outer1_1(outer1_2[3]).hideNativeMenu(tmp);
-      const obj = outer1_1(outer1_2[3]);
+      closure_1_1(closure_1_2[3]).hideNativeMenu(tmp);
+      const obj = closure_1_1(closure_1_2[3]);
     }
     return null != key;
   }, items1);
-  importDefault(4732)(callback);
+  useBackPressHandlerDefault(callback);
   let tmp4 = null;
   if (null != key) {
     tmp4 = null;

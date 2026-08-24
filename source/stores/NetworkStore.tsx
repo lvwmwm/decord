@@ -1,15 +1,18 @@
-// Module ID: 4564
-// Function ID: 4565
+// Module ID: 4569
+// Function ID: 4570
 // Name: handleConnectionInfoChange
 // Dependencies: [676, 589, 1474, 709, 2]
 
-// Module 4564 (handleConnectionInfoChange)
-import ME from "ME";
-import { Store } from "initialize";
+// Module 4569 (handleConnectionInfoChange)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import awaitOnlineDefault from "awaitOnline" /* 1474 */;
+import ME from "ME" /* 676 */;
 
 function handleConnectionInfoChange(type) {
   if (null != type.type) {
-    let UNKNOWN = type.type;
+    UNKNOWN = type.type;
   } else {
     UNKNOWN = NetworkConnectionTypes.UNKNOWN;
   }
@@ -25,14 +28,15 @@ const NetworkConnectionSpeeds = ME.NetworkConnectionSpeeds;
 let UNKNOWN = NetworkConnectionTypes.UNKNOWN;
 UNKNOWN = NetworkConnectionSpeeds.UNKNOWN;
 let c6 = null;
+const Store = initializeDefault.Store;
 class NetworkStoreClass extends Store {
 }
 const prototype = NetworkStoreClass.prototype;
 prototype["initialize"] = function initialize() {
-  const networkInformation = importDefault(1474).getNetworkInformation();
+  const networkInformation = awaitOnlineDefault.getNetworkInformation();
   networkInformation.then(handleConnectionInfoChange);
-  const obj = importDefault(1474);
-  importDefault(1474).addChangeCallback(handleConnectionInfoChange);
+  const obj = awaitOnlineDefault;
+  awaitOnlineDefault.addChangeCallback(handleConnectionInfoChange);
 };
 prototype["getType"] = function getType() {
   return UNKNOWN;
@@ -44,7 +48,7 @@ prototype["getServiceProvider"] = function getServiceProvider() {
   return c6;
 };
 NetworkStoreClass.displayName = "NetworkStore";
-const networkStoreClass = new NetworkStoreClass(require("dispatcher"), {});
-const result = require("awaitOnline").fileFinishedImporting("stores/NetworkStore.tsx");
+const networkStoreClass = new NetworkStoreClass(dispatcherDefault, {});
+const result = set.fileFinishedImporting("stores/NetworkStore.tsx");
 
 export default networkStoreClass;

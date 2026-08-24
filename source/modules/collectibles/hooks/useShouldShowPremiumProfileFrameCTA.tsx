@@ -1,17 +1,22 @@
-// Module ID: 11994
-// Function ID: 11995
+// Module ID: 12043
+// Function ID: 12044
 // Name: useShouldShowPremiumProfileFrameCTA
-// Dependencies: [11995, 9233, 1949, 2]
+// Dependencies: [12044, 9270, 1949, 2]
 // Exports: default
 
-// Module 11994 (useShouldShowPremiumProfileFrameCTA)
-const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/hooks/useShouldShowPremiumProfileFrameCTA.tsx");
+// Module 12043 (useShouldShowPremiumProfileFrameCTA)
+import set from "set" /* 2 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+import useCanPurchaseFramesDefault from "useCanPurchaseFrames" /* 9270 */;
+import useShouldShowPremiumProfileFrameEADefault from "useShouldShowPremiumProfileFrameEA" /* 12044 */;
+
+const result = set.fileFinishedImporting("modules/collectibles/hooks/useShouldShowPremiumProfileFrameCTA.tsx");
 
 export default function useShouldShowPremiumProfileFrameCTA(location) {
   const _location = location.location;
-  let tmp2 = importDefault(11995)(_location) && !importDefault(9233)(_location);
+  let tmp2 = useShouldShowPremiumProfileFrameEADefault(_location) && !useCanPurchaseFramesDefault(_location);
   if (tmp2) {
-    tmp2 = location.product.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME;
+    tmp2 = location.product.type === CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME;
   }
   return tmp2;
 };

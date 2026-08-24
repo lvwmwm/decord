@@ -1,31 +1,28 @@
-// Module ID: 8927
-// Function ID: 8928
+// Module ID: 8964
+// Function ID: 8965
 // Name: Loading
-// Dependencies: [32, 19, 17, 1396, 8919, 1910, 4021, 4371, 676, 21, 4661, 712, 8928, 1629, 7139, 7159, 7145, 589, 4360, 7506, 8918, 4342, 8929, 11505, 1306, 12360, 6950, 6949, 1236, 1297, 12362, 12366, 12368, 7337, 11501, 11892, 12399, 2]
+// Dependencies: [32, 19, 17, 1396, 8956, 1910, 4024, 4375, 676, 21, 4668, 712, 8965, 1629, 7177, 7197, 7183, 589, 4364, 7544, 8955, 4346, 8966, 11554, 1306, 12412, 6988, 6987, 1236, 1297, 12414, 12418, 12420, 7375, 11550, 11941, 12451, 2]
 // Exports: default
 
-// Module 8927 (Loading)
-import module_12368 from "module_12368";
-import getInviteURL from "getInviteURL";
-import get_ActivityIndicator from "initialize";
-import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
-import updateWithLatestInvite from "updateWithLatestInvite";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { InviteTargetTypes } from "InviteSendStates";
-import { Permissions } from "ME";
-import jsxProd from "ACTION_SHEET_HEIGHT_HALF";
-import createCacheKey from "createCacheKey";
+// Module 8964 (Loading)
+import ThemesDefault from "Themes" /* 712 */;
+import _modDef8965 from "module_8965" /* 8965 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
+import closure_8 from "updateWithLatestInvite" /* 8956 */;
+import closure_9 from "createGuildRecordFromRust" /* 1910 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4024 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 4375 */;
+import { Permissions } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_14;
-let closure_15;
-let closure_6;
-let map1;
 const require = arg1;
 function Loading() {
   let tmp2;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   const items = [];
   let num = 0;
   do {
@@ -34,7 +31,7 @@ function Loading() {
     let tmp4 = dependencyMap;
     let obj = { row: null };
     obj[0] = num;
-    let arr = items.push(callback2(importDefault(8928), obj, num));
+    let arr = items.push(callback2(_modDef8965, obj, num));
     num = num + 1;
   } while (num < 10);
   obj = { children: null };
@@ -46,33 +43,28 @@ function Loading() {
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
 createCacheKey = { placeholderHeader: null, placeholderLabel: null, errorEmptyState: null, searchAndShareContainer: null, inviteAgeText: null, shareApps: null };
-createCacheKey = { height: 16, width: "80%", margin: 16, marginBottom: 8, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey = { height: 16, width: "80%", margin: 16, marginBottom: 8, borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { height: 16, width: "40%", margin: 16, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey[1] = { height: 16, width: "40%", margin: 16, borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
 createCacheKey[2] = { backgroundColor: "transparent" };
-let obj1 = { height: 16, width: "40%", margin: 16, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
-createCacheKey[3] = { borderTopWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, marginTop: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_12, flexDirection: "column", gap: require("Themes").space.PX_12 };
-let obj2 = { borderTopWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, marginTop: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_12, flexDirection: "column", gap: require("Themes").space.PX_12 };
-createCacheKey[4] = { paddingBottom: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_4 };
+let obj1 = { height: 16, width: "40%", margin: 16, borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
+createCacheKey[3] = { borderTopWidth: 1, borderColor: ThemesDefault.colors.BORDER_SUBTLE, marginTop: ThemesDefault.space.PX_8, paddingVertical: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_12, flexDirection: "column", gap: ThemesDefault.space.PX_12 };
+let obj2 = { borderTopWidth: 1, borderColor: ThemesDefault.colors.BORDER_SUBTLE, marginTop: ThemesDefault.space.PX_8, paddingVertical: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_12, flexDirection: "column", gap: ThemesDefault.space.PX_12 };
+createCacheKey[4] = { paddingBottom: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_4 };
 createCacheKey[5] = { paddingVertical: 0 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { paddingBottom: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_4 };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteActionSheet.tsx");
+let closure_16 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { paddingBottom: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_4 };
+let result = require("set").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteActionSheet.tsx");
 
 export default function InstantInviteActionSheet(channel) {
-  let module_12368;
-  let code;
-  let isFetchingRows;
-  let rows;
-  let targetApplicationId;
   channel = channel.channel;
   const source = channel.source;
   const vanityURLCode = channel.vanityURLCode;
-  ({ guildScheduledEventId: module_12368, targetApplicationId, code } = channel);
+  ({ guildScheduledEventId: closure_3, targetApplicationId, code } = channel);
   let analyticsLocations;
   let stateFromStores;
   let str;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   analyticsLocations = source(vanityURLCode[14])(source(vanityURLCode[15]).INSTANT_INVITE_MODAL).analyticsLocations;
   const tmp4 = source(vanityURLCode[14]);
   if (null != targetApplicationId) {
@@ -83,13 +75,13 @@ export default function InstantInviteActionSheet(channel) {
   }
   let name = callback(source(vanityURLCode[16])(items1), 1)[0];
   let obj = channel(tmp3[17]);
-  const items2 = [getUncachedChannelPermissions, updateWithLatestInvite, str];
+  const items2 = [closure_10, closure_8, str];
   stateFromStores = obj.useStateFromStores(items2, () => {
     if (null != code) {
       return code;
     } else {
       if (channel.isGuildStageVoice()) {
-        if (!outer1_10.can(outer1_12.CREATE_INSTANT_INVITE, tmp16)) {
+        if (!closure_1_10.can(closure_1_12.CREATE_INSTANT_INVITE, tmp16)) {
           const stageInstanceByChannel = str.getStageInstanceByChannel(tmp16.id);
           let invite_code;
           if (stageInstanceByChannel != null) {
@@ -102,7 +94,7 @@ export default function InstantInviteActionSheet(channel) {
       }
       if (null != vanityURLCode) {
         let inviteKeyFromExtraData = tmp6;
-        if (null != module_12368) {
+        if (null != closure_3) {
           let obj = { baseCode: null, guildScheduledEventId: null };
           obj[0] = tmp6;
           obj[1] = tmp12;
@@ -111,9 +103,9 @@ export default function InstantInviteActionSheet(channel) {
         }
         return inviteKeyFromExtraData;
       } else {
-        code = outer1_8.getInvite();
+        code = closure_1_8.getInvite();
         if (null != code) {
-          if (null != module_12368) {
+          if (null != closure_3) {
             obj = channel(vanityURLCode[18]);
             obj = { baseCode: null, guildScheduledEventId: null };
             code = code.code;
@@ -127,8 +119,8 @@ export default function InstantInviteActionSheet(channel) {
       }
     }
   });
-  let obj1 = channel(tmp3[17]);
-  const items3 = [updateWithLatestInvite];
+  obj1 = channel(tmp3[17]);
+  const items3 = [closure_8];
   const stateFromStores1 = obj1.useStateFromStores(items3, () => error.getError());
   let tmp10 = null;
   if (null != stateFromStores) {
@@ -174,7 +166,7 @@ export default function InstantInviteActionSheet(channel) {
   const items8 = [stateFromStores, channel, str, source];
   const callback3 = code.useCallback(() => channel(vanityURLCode[20]).handleCopy(stateFromStores, channel, source), items7);
   const items9 = [channel];
-  const callback4 = code.useCallback(() => channel(vanityURLCode[20]).handleOpenShareSheet(stateFromStores, channel, str, source), items8);
+  callback4 = code.useCallback(() => channel(vanityURLCode[20]).handleOpenShareSheet(stateFromStores, channel, str, source), items8);
   const callback5 = code.useCallback(() => channel(vanityURLCode[20]).handlePressSettings(channel), items9);
   const tmp5 = source(vanityURLCode[16]);
   const tmp6 = callback;

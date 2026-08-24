@@ -1,16 +1,18 @@
-// Module ID: 10420
-// Function ID: 10421
+// Module ID: 10459
+// Function ID: 10460
 // Name: getTierForProgress
-// Dependencies: [8936, 2]
+// Dependencies: [8973, 2]
 // Exports: getNextTierForProgress, getRemainingGiftsToNextTier, getTierForProgress
 
-// Module 10420 (getTierForProgress)
-import { getSingleRequirementThreshold as closure_0 } from "initialize";
+// Module 10459 (getTierForProgress)
+import set from "set" /* 2 */;
+import initialize from "initialize" /* 8973 */;
 
-const result = require("set").fileFinishedImporting("modules/premium/gifting/GiftingBadgeConstants.tsx");
+let closure_0 = initialize.getSingleRequirementThreshold;
+const result = set.fileFinishedImporting("modules/premium/gifting/GiftingBadgeConstants.tsx");
 
 export const getTierForProgress = function getTierForProgress(arr) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   return arr.reduce((arg0, arg1) => {
     let tmp = arg0;
     const tmp3 = callback(arg1);
@@ -25,7 +27,7 @@ export const getTierForProgress = function getTierForProgress(arr) {
   }, null);
 };
 export const getNextTierForProgress = function getNextTierForProgress(arr) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   return arr.reduce((arg0, arg1) => {
     let tmp = arg0;
     const tmp3 = callback(arg1);

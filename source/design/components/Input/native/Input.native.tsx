@@ -1,50 +1,45 @@
-// Module ID: 8072
-// Function ID: 8073
+// Module ID: 8111
+// Function ID: 8112
 // Name: Input
-// Dependencies: [19, 17, 21, 4661, 712, 1236, 4734, 8073, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1236, 4739, 8112, 2]
 // Exports: Input
 
-// Module 8072 (Input)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8111 (Input)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import ErrorText from "ErrorText" /* 8112 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 createCacheKey = { inputRow: null, labelWrapper: null, label: null, description: null, error: null };
-createCacheKey = { flexDirection: "row", gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_4, marginBottom: require("Themes").space.PX_4 };
+createCacheKey = { flexDirection: "row", gap: ThemesDefault.space.PX_8, marginTop: ThemesDefault.space.PX_4, marginBottom: ThemesDefault.space.PX_4 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginBottom: require("Themes").space.PX_4, flexDirection: "row", alignItems: "center" };
-let obj1 = { marginBottom: require("Themes").space.PX_4, flexDirection: "row", alignItems: "center" };
-createCacheKey[2] = { marginBottom: require("Themes").space.PX_4 };
-let obj2 = { marginBottom: require("Themes").space.PX_4 };
-createCacheKey[3] = { marginTop: require("Themes").space.PX_4 };
-let obj3 = { marginTop: require("Themes").space.PX_4 };
-createCacheKey[4] = { marginTop: require("Themes").space.PX_4, width: "auto" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj4 = { marginTop: require("Themes").space.PX_4, width: "auto" };
-const result = require("jsxProd").fileFinishedImporting("design/components/Input/native/Input.native.tsx");
+createCacheKey[1] = { marginBottom: ThemesDefault.space.PX_4, flexDirection: "row", alignItems: "center" };
+let obj1 = { marginBottom: ThemesDefault.space.PX_4, flexDirection: "row", alignItems: "center" };
+createCacheKey[2] = { marginBottom: ThemesDefault.space.PX_4 };
+let obj2 = { marginBottom: ThemesDefault.space.PX_4 };
+createCacheKey[3] = { marginTop: ThemesDefault.space.PX_4 };
+let obj3 = { marginTop: ThemesDefault.space.PX_4 };
+createCacheKey[4] = { marginTop: ThemesDefault.space.PX_4, width: "auto" };
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+let obj4 = { marginTop: ThemesDefault.space.PX_4, width: "auto" };
+const result = require("set").fileFinishedImporting("design/components/Input/native/Input.native.tsx");
 
 export const Input = function Input(arg0) {
-  let children;
-  let containerStyle;
-  let description;
-  let errorMessage;
-  let label;
-  let labelId;
-  let labelTrailing;
-  let required;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   ({ label, labelTrailing, labelId, description, errorMessage, required } = arg0);
   ({ children, containerStyle } = arg0);
   if (typeof label === "string") {
     if (true === required) {
-      const intl = require(1236) /* getSystemLocale */.intl;
+      const intl = getSystemLocale.intl;
       const _HermesInternal = HermesInternal;
-      const combined = "" + label + " (" + intl.string(require(1236) /* getSystemLocale */.t.EkokLy) + ")";
+      const combined = "" + label + " (" + intl.string(getSystemLocale.t.EkokLy) + ")";
     }
   }
   let obj = { style: containerStyle, children: null };
@@ -59,15 +54,15 @@ export const Input = function Input(arg0) {
       obj = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
       obj[2] = tmp.description;
       obj[3] = description;
-      tmp15Result = tmp15(require(4734) /* Text */.Text, obj);
+      tmp15Result = tmp15(Text.Text, obj);
     }
     items[2] = tmp15Result;
     tmp15Result = null;
     if (null != errorMessage) {
-      const obj1 = { style: null, children: null };
+      obj1 = { style: null, children: null };
       obj1[0] = tmp.error;
       obj1[1] = errorMessage;
-      tmp15Result = tmp15(require(8073) /* ErrorText */.ErrorText, obj1);
+      tmp15Result = tmp15(ErrorText.ErrorText, obj1);
     }
     items[3] = tmp15Result;
     obj[1] = items;
@@ -78,7 +73,7 @@ export const Input = function Input(arg0) {
     const obj3 = { variant: "text-sm/semibold", color: "text-subtle", nativeID: null, children: null };
     obj3[2] = labelId;
     obj3[3] = label;
-    const items1 = [callback(require(4734) /* Text */.Text, obj3), labelTrailing];
+    const items1 = [callback(Text.Text, obj3), labelTrailing];
     obj2[1] = items1;
     let tmp7Result = tmp7(tmp8, obj2);
   } else {
@@ -91,11 +86,11 @@ export const Input = function Input(arg0) {
     if (required) {
       const obj5 = { variant: "text-sm/bold", color: "text-feedback-critical", "aria-hidden": true, children: null };
       obj5[3] = [" ", "*"];
-      tmp7Result = tmp7(tmp22(4734).Text, obj5);
+      tmp7Result = tmp7(tmp22(4739).Text, obj5);
     }
     items2[1] = tmp7Result;
     obj4[5] = items2;
-    tmp7Result = tmp7(require(4734) /* Text */.Text, obj4);
+    tmp7Result = tmp7(Text.Text, obj4);
     tmp22 = require;
   }
 };

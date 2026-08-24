@@ -1,26 +1,26 @@
-// Module ID: 6567
-// Function ID: 6568
+// Module ID: 6600
+// Function ID: 6601
 // Name: _fetchAgeVerificationMethodsV
 // Dependencies: [5, 676, 530, 2]
 // Exports: fetchAgeVerificationMethodsV2
 
-// Module 6567 (_fetchAgeVerificationMethodsV)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import { Endpoints } from "ME";
+// Module 6600 (_fetchAgeVerificationMethodsV)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _fetchAgeVerificationMethodsV() {
   const self = this;
   const tmp = callback(function*() {
-    let closure_1 = tmp4;
-    const HTTP = outer1_0(outer1_1[2]).HTTP;
-    const obj1 = { url: null, rejectWithError: true };
+    closure_1 = tmp4;
+    const HTTP = closure_1_0(closure_1_1[2]).HTTP;
+    obj1 = { url: null, rejectWithError: true };
     obj1[0] = obj.AGE_VERIFICATION_METHODS_V2;
     yield HTTP.get(obj1);
     let body = arg1.body;
     const methods = body.methods;
     obj[0] = methods.map((method) => {
-      let obj = { method: method.method, vendor: method.vendor, title: method.title, description: method.description, providedBy: null, icon: null };
+      let obj = { method: method.method, vendor: method.vendor, title: method.title, description: method.description, providedBy: null, icon: null, externalWindow: null };
       let provided_by = method.provided_by;
       if (provided_by == null) {
         provided_by = null;
@@ -46,6 +46,11 @@ function _fetchAgeVerificationMethodsV() {
         tmp3 = obj;
       }
       obj[5] = tmp3;
+      let external_window = method.external_window;
+      if (external_window == null) {
+        external_window = null;
+      }
+      obj[6] = external_window;
       return obj;
     });
     const footer_message = body.footer_message;
@@ -56,7 +61,7 @@ function _fetchAgeVerificationMethodsV() {
     obj[1] = body;
     return obj;
   });
-  const _fetchAgeVerificationMethodsV = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -65,7 +70,7 @@ function _fetchAgeVerificationMethodsV() {
   }
   return applyArgumentsResult;
 }
-const result = require("sendRequest").fileFinishedImporting("modules/age_assurance/AgeVerificationMethodsV2.tsx");
+const result = require("set").fileFinishedImporting("modules/age_assurance/AgeVerificationMethodsV2.tsx");
 
 export const fetchAgeVerificationMethodsV2 = function fetchAgeVerificationMethodsV2() {
   const self = this;

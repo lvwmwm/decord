@@ -1,11 +1,13 @@
-// Module ID: 4283
-// Function ID: 4284
+// Module ID: 4287
+// Function ID: 4288
 // Name: getPowerupEntitlementPrice
 // Dependencies: [2]
 // Exports: default
 
-// Module 4283 (getPowerupEntitlementPrice)
-const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/getPowerupEntitlementPrice.tsx");
+// Module 4287 (getPowerupEntitlementPrice)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/premium/powerups/utils/getPowerupEntitlementPrice.tsx");
 
 export default function getPowerupEntitlementPrice(tenant_metadata) {
   let guild_monetization;

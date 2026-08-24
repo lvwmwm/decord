@@ -1,10 +1,10 @@
-// Module ID: 8459
-// Function ID: 8460
+// Module ID: 8498
+// Function ID: 8499
 // Name: ROLL_DURATION_MS
 // Dependencies: [2]
 
-// Module 8459 (ROLL_DURATION_MS)
-import set from "set";
+// Module 8498 (ROLL_DURATION_MS)
+import set from "set" /* 2 */;
 
 const items = [4, 6, 8, 10, 12, 20];
 let set = new Set(items);

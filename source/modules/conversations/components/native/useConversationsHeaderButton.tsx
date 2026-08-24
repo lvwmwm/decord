@@ -1,21 +1,18 @@
-// Module ID: 12681
-// Function ID: 12682
+// Module ID: 12735
+// Function ID: 12736
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 5014, 5016, 12682, 692, 12683, 12684, 589, 12161, 12686, 12687, 1236, 2]
+// Dependencies: [5, 19, 5019, 5021, 12736, 692, 12737, 12738, 589, 12213, 12740, 12741, 1236, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 12681 (useConversationsHeaderButton)
-import set from "set";
-import noop from "noop";
-import removePendingListFetch from "removePendingListFetch";
-import CONVERSATION_COLORS from "CONVERSATION_COLORS";
+// Module 12735 (useConversationsHeaderButton)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "removePendingListFetch" /* 5019 */;
+import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 5021 */;
 
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 ({ CONVERSATION_HAS_MORE_EXPIRATION_MS: c5, MOBILE_FETCH_LIMIT: closure_6, MOBILE_PREVIEW_MESSAGE_COUNT: error } = CONVERSATION_COLORS);
-let result = require("removePendingListFetch").fileFinishedImporting("modules/conversations/components/native/useConversationsHeaderButton.tsx");
+let result = require("set").fileFinishedImporting("modules/conversations/components/native/useConversationsHeaderButton.tsx");
 
 export const useConversationsHeaderButton = function useConversationsHeaderButton(channel) {
   let _require = channel;
@@ -50,7 +47,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -65,12 +62,12 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
             obj[0] = arg1;
             return obj;
           } else {
-            const callback = tmp3;
+            callback = tmp3;
             if (c1) {
               let ref = 1;
-              let obj1 = callback(fetchPage[7]);
+              obj1 = callback(fetchPage[7]);
               obj1 = { channelId: null, guildId: null, direction: "before", anchor: null, limit: null, isJump: true, throwOnError: true, hydrateMessages: null };
-              ({ id: obj3[0], guild_id: obj3[1] } = outer1_0);
+              ({ id: obj3[0], guild_id: obj3[1] } = closure_1_0);
               obj1[4] = isTopicalNavEnabled;
               const obj2 = { limit: null };
               obj2[0] = closure_7;
@@ -171,7 +168,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
   if (isTopicalNavEnabled) {
     isTopicalNavEnabled = stateFromStores1 > 0;
   }
-  let closure_7 = obj3.useRef(null);
+  closure_7 = obj3.useRef(null);
   const items8 = [isTopicalNavEnabled, stateFromStores1, channel.id];
   const effect2 = obj3.useEffect(() => {
     let tmp = isTopicalNavEnabled;
@@ -194,11 +191,11 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
       obj[2] = function onPress() {
         const current = ref.current;
         current.cancel();
-        const ConversationsAnalytics = outer1_0(outer1_1[10]).ConversationsAnalytics;
+        const ConversationsAnalytics = closure_1_0(closure_1_1[10]).ConversationsAnalytics;
         let obj = { channelId: user.id, conversationIds: [], isFocusMode: false };
         const result = ConversationsAnalytics.trackTopicsUnitImpression(obj);
         obj = { channelId: user.id, guildId: user.guild_id };
-        const result1 = outer1_0(outer1_1[11]).openConversationNavigator(obj);
+        const result1 = closure_1_0(closure_1_1[11]).openConversationNavigator(obj);
       };
       const intl = lib(fetchPage[12]).intl;
       obj[3] = intl.string(lib(fetchPage[12]).t.u54FxB);

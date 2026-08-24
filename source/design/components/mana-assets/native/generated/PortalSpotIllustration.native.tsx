@@ -1,18 +1,19 @@
-// Module ID: 6054
-// Function ID: 6055
+// Module ID: 6085
+// Function ID: 6086
 // Name: PortalSpotIllustration
-// Dependencies: [21, 5449, 6055, 2]
+// Dependencies: [21, 5454, 6086, 2]
 // Exports: PortalSpotIllustration
 
-// Module 6054 (PortalSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 6085 (PortalSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6086 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PortalSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PortalSpotIllustration.native.tsx");
 
 export const PortalSpotIllustration = function PortalSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const PortalSpotIllustration = function PortalSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6055);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const PortalSpotIllustration = function PortalSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

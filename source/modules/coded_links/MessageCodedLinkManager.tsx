@@ -1,25 +1,25 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16723
+// Function ID: 16724
 // Name: resolveMessageCodedLinks
-// Dependencies: [5, 7429, 4359, 4358, 4363, 16628, 8042, 7287, 11247, 5038, 16635, 2]
+// Dependencies: [5, 7467, 4363, 4362, 4367, 16724, 8081, 7325, 11298, 5043, 16731, 2]
 
-// Module 16627 (resolveMessageCodedLinks)
-import queueMessageLinkFetch from "queueMessageLinkFetch";
-import handleGuildTemplateResolveSuccess from "handleGuildTemplateResolveSuccess";
-import updateInvite from "updateInvite";
-import "initialize";
+// Module 16723 (resolveMessageCodedLinks)
+import trimTrailingPunctuationDefault from "trimTrailingPunctuation" /* 4362 */;
+import initializeDefault from "initialize" /* 5043 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 16731 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "handleGuildTemplateResolveSuccess" /* 7467 */;
+import closure_5 from "updateInvite" /* 4363 */;
 
 const require = arg1;
 function resolveMessageCodedLinks(content) {
-  const arr = importDefault(4358)(content.content);
+  const arr = trimTrailingPunctuationDefault(content.content);
   let tmp = null != arr;
   if (tmp) {
     tmp = 0 !== arr.length;
   }
   if (tmp) {
     const item = arr.forEach((arg0) => {
-      let code;
-      let type;
       ({ type, code } = arg0);
       if (code(table[4]).CodedLinkType.INVITE === type) {
         let tmpResult = tmp(tmp2[5]);
@@ -35,7 +35,7 @@ function resolveMessageCodedLinks(content) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -50,8 +50,8 @@ function resolveMessageCodedLinks(content) {
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  if (null == outer1_5.getInvite(c0)) {
-                    let obj1 = v0(outer1_2[6]);
+                  if (null == closure_1_5.getInvite(c0)) {
+                    obj1 = v0(closure_1_2[6]);
                     v0 = 1;
                     c0 = 1;
                     obj1 = { value: null, done: false };
@@ -70,7 +70,7 @@ function resolveMessageCodedLinks(content) {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } catch (tmp10) {
               c0 = tmp;
               throw tmp10;
@@ -91,7 +91,7 @@ function resolveMessageCodedLinks(content) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -106,8 +106,8 @@ function resolveMessageCodedLinks(content) {
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  if (null == outer1_4.getGuildTemplate(c0)) {
-                    let obj1 = v0(outer1_2[7]);
+                  if (null == closure_1_4.getGuildTemplate(c0)) {
+                    obj1 = v0(closure_1_2[7]);
                     v0 = 1;
                     c0 = 1;
                     obj1 = { value: null, done: false };
@@ -126,7 +126,7 @@ function resolveMessageCodedLinks(content) {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } catch (tmp10) {
               c0 = tmp;
               throw tmp10;
@@ -182,6 +182,7 @@ function resolveMessageCodedLinks(content) {
     });
   }
 }
+initializeDefault;
 class MessageCodedLinkManager extends tmp6 {
   constructor() {
     tmp3 = new MessageCodedLinkManager(tmp2, tmp, new.target);
@@ -192,7 +193,7 @@ class MessageCodedLinkManager extends tmp6 {
 }
 tmp = new tmp(tmp4, tmp3, tmp2, Object, defineProperty, MessageCodedLinkManager, importDefault);
 // ThrowIfThisInitialized (0x7c)
-require("setupLoadFromMessageManagerHandlers")(tmp, resolveMessageCodedLinks);
-let result = require("updateInvite").fileFinishedImporting("modules/coded_links/MessageCodedLinkManager.tsx");
+setupLoadFromMessageManagerHandlersDefault(tmp, resolveMessageCodedLinks);
+let result = require("set").fileFinishedImporting("modules/coded_links/MessageCodedLinkManager.tsx");
 
 export default tmp;

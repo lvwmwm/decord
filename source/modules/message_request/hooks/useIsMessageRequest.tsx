@@ -1,31 +1,31 @@
-// Module ID: 10572
-// Function ID: 10573
+// Module ID: 10611
+// Function ID: 10612
 // Name: useIsMessageRequest
-// Dependencies: [4799, 4800, 589, 2]
+// Dependencies: [4804, 4805, 589, 2]
 // Exports: useIsEitherTypeOfMessageRequest, useIsMessageRequest
 
-// Module 10572 (useIsMessageRequest)
-import processChannel from "processChannel";
-import closure_3 from "processChannel";
+// Module 10611 (useIsMessageRequest)
+import closure_2 from "processChannel" /* 4804 */;
+import closure_3 from "processChannel" /* 4805 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/message_request/hooks/useIsMessageRequest.tsx");
+const result = require("set").fileFinishedImporting("modules/message_request/hooks/useIsMessageRequest.tsx");
 
 export const useIsMessageRequest = function useIsMessageRequest(id) {
   const _require = id;
-  const items = [processChannel];
+  const items = [closure_2];
   const items1 = [id];
-  return _require(589).useStateFromStores(items, () => outer1_2.isMessageRequest(closure_0), items1);
+  return _require(589).useStateFromStores(items, () => closure_1_2.isMessageRequest(closure_0), items1);
 };
 export const useIsEitherTypeOfMessageRequest = function useIsEitherTypeOfMessageRequest(arg0) {
   const _require = arg0;
-  const items = [processChannel, closure_3];
+  const items = [closure_2, closure_3];
   return _require(589).useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
-      let isMessageRequestResult = outer1_2.isMessageRequest(tmp);
+      let isMessageRequestResult = closure_1_2.isMessageRequest(tmp);
       if (!isMessageRequestResult) {
-        isMessageRequestResult = outer1_3.isSpam(tmp);
+        isMessageRequestResult = closure_1_3.isSpam(tmp);
       }
       tmp2 = isMessageRequestResult;
     }

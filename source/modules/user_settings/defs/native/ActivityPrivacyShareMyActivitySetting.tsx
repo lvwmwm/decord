@@ -1,37 +1,42 @@
-// Module ID: 15047
-// Function ID: 15048
+// Module ID: 15111
+// Function ID: 15112
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 2469, 4066, 2]
+// Dependencies: [8238, 10708, 1236, 2470, 4069, 2]
 
-// Module 15047 (toggle)
-import createToggle from "createToggle";
+// Module 15111 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2470 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2469).WhdCGP);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.WhdCGP);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2469).UQ9RHJ);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.UQ9RHJ);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: require("explicitContentFromProto").ShowCurrentGame.useSetting,
-  onValueChange: require("explicitContentFromProto").ShowCurrentGame.updateSetting
+  parent: MobileUserSettings.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: explicitContentFromProto.ShowCurrentGame.useSetting,
+  onValueChange: explicitContentFromProto.ShowCurrentGame.updateSetting
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2469).WhdCGP);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.WhdCGP);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2469).UQ9RHJ);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.UQ9RHJ);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: require("explicitContentFromProto").ShowCurrentGame.useSetting,
-  onValueChange: require("explicitContentFromProto").ShowCurrentGame.updateSetting
+  parent: MobileUserSettings.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: explicitContentFromProto.ShowCurrentGame.useSetting,
+  onValueChange: explicitContentFromProto.ShowCurrentGame.updateSetting
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/ActivityPrivacyShareMyActivitySetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ActivityPrivacyShareMyActivitySetting.tsx");
 
 export default toggle;

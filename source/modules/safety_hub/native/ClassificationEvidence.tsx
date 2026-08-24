@@ -1,47 +1,50 @@
-// Module ID: 11069
-// Function ID: 11070
+// Module ID: 11108
+// Function ID: 11109
 // Name: ClassificationEvidence
-// Dependencies: [19, 17, 21, 4661, 1297, 712, 4734, 1236, 11070, 2]
+// Dependencies: [19, 17, 21, 4668, 1297, 712, 4739, 1236, 11109, 2]
 // Exports: default
 
-// Module 11069 (ClassificationEvidence)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import Button from "Button";
+// Module 11108 (ClassificationEvidence)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import ClassificationEvidenceDefault from "ClassificationEvidence" /* 11109 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import Button from "Button" /* 1297 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { cardShadow: null, flaggedContent: null, sectionContainer: null };
 createCacheKey[0] = Button.generateBoxShadowStyle(require("Button").FOUR_DP_ELEVATION_SHADOW_PARAMS);
-createCacheKey = { borderWidth: 1, borderRadius: require("Themes").radii.sm, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, backgroundColor: require("Themes").colors.CHANNELTEXTAREA_BACKGROUND, padding: 20 };
+createCacheKey = { borderWidth: 1, borderRadius: ThemesDefault.radii.sm, borderColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, backgroundColor: ThemesDefault.colors.CHANNELTEXTAREA_BACKGROUND, padding: 20 };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { display: "flex", gap: require("Themes").space.PX_8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { display: "flex", gap: require("Themes").space.PX_8 };
-const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/native/ClassificationEvidence.tsx");
+createCacheKey[2] = { display: "flex", gap: ThemesDefault.space.PX_8 };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { display: "flex", gap: ThemesDefault.space.PX_8 };
+const result = require("set").fileFinishedImporting("modules/safety_hub/native/ClassificationEvidence.tsx");
 
 export default function ClassificationEvidence(flaggedContent) {
   flaggedContent = flaggedContent.flaggedContent;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let tmp2 = null;
   if (0 !== flaggedContent.length) {
     let obj = { style: null, children: null };
     obj[0] = tmp.sectionContainer;
     obj = { variant: "eyebrow", color: "text-default", children: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl.string(require(1236) /* getSystemLocale */.t.s64CMg);
-    const items = [callback(require(4734) /* Text */.Text, obj), ];
+    const intl = getSystemLocale.intl;
+    obj[2] = intl.string(getSystemLocale.t.s64CMg);
+    const items = [callback(Text.Text, obj), ];
     obj = { style: null, children: null };
     const items1 = [, ];
     ({ flaggedContent: arr3[0], cardShadow: arr3[1] } = tmp);
     obj[0] = items1;
-    const obj1 = { flaggedContent: null };
+    obj1 = { flaggedContent: null };
     obj1[0] = flaggedContent;
-    obj[1] = callback(importDefault(11070), obj1);
+    obj[1] = callback(ClassificationEvidenceDefault, obj1);
     items[1] = callback(View, obj);
     obj[1] = items;
     tmp2 = callback2(View, obj);

@@ -1,11 +1,11 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 9754
+// Function ID: 9755
 // Name: useReadableSecureFramesFingerprint
-// Dependencies: [19, 206, 9693, 2]
+// Dependencies: [19, 206, 9732, 2]
 // Exports: useReadableSecureFramesFingerprint
 
-// Module 9715 (useReadableSecureFramesFingerprint)
-import noop from "noop";
+// Module 9754 (useReadableSecureFramesFingerprint)
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useReadableSecureFramesFingerprint.tsx");
@@ -45,7 +45,7 @@ export const useReadableSecureFramesFingerprint = function useReadableSecureFram
     if ("" !== fingerprintBase64) {
       if (null == memo) {
         const _Error = Error;
-        const error = new Error("[useReadableSecureFramesCode] Failed to parse base 64 code.");
+        error = new Error("[useReadableSecureFramesCode] Failed to parse base 64 code.");
         throw error;
       }
     }

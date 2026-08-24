@@ -1,30 +1,31 @@
-// Module ID: 13336
-// Function ID: 13337
+// Module ID: 13394
+// Function ID: 13395
 // Name: useActivateDeviceStepTracking
-// Dependencies: [19, 676, 6701, 13337, 698, 2]
+// Dependencies: [19, 676, 6738, 13395, 698, 2]
 // Exports: useActivateDeviceStepTracking
 
-// Module 13336 (useActivateDeviceStepTracking)
-import noop from "noop";
-import { AnalyticEvents } from "ME";
+// Module 13394 (useActivateDeviceStepTracking)
+import usePreviousDefault from "usePrevious" /* 6738 */;
+import closure_3 from "noop" /* 19 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;
-let result = require("usePrevious").fileFinishedImporting("modules/activate_device/useActivateDeviceStepTracking.tsx");
+let result = require("set").fileFinishedImporting("modules/activate_device/useActivateDeviceStepTracking.tsx");
 
 export const useActivateDeviceStepTracking = function useActivateDeviceStepTracking(first) {
-  let closure_0 = first;
-  const tmp = importDefault(6701)(first);
+  closure_0 = first;
+  const tmp = usePreviousDefault(first);
   importDefault = tmp;
   const items = [tmp, first];
   const effect = React.useEffect(() => {
-    if (callback !== callback) {
+    if (callback !== callback2) {
       let tmp3 = "user-code-input" !== tmp.type;
       if (tmp3) {
         tmp3 = "handoff" !== tmp.type;
       }
       let result = null;
       if (tmp3) {
-        let obj = callback(outer1_2[3]);
+        let obj = callback(closure_1_2[3]);
         result = obj.clientIdToActivateDevicePlatform(tmp.userCodeData.clientId);
       }
       let type;
@@ -35,8 +36,8 @@ export const useActivateDeviceStepTracking = function useActivateDeviceStepTrack
       obj[0] = type;
       obj[1] = tmp.type;
       obj[2] = result;
-      tmp(outer1_2[4]).track(outer1_4.DEVICE_LINK_STEP, obj);
-      const obj2 = tmp(outer1_2[4]);
+      callback2(closure_1_2[4]).track(closure_1_4.DEVICE_LINK_STEP, obj);
+      const obj2 = callback2(closure_1_2[4]);
     }
   }, items);
 };

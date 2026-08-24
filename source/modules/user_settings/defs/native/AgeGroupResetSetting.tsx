@@ -1,44 +1,52 @@
-// Module ID: 14130
-// Function ID: 14131
+// Module ID: 14198
+// Function ID: 14199
 // Name: pressable
-// Dependencies: [8198, 21, 10669, 1236, 2853, 14131, 4657, 4992, 2]
+// Dependencies: [8238, 21, 10708, 1236, 2854, 14199, 4663, 4997, 2]
 
-// Module 14130 (pressable)
-import { jsx } from "jsxProd";
-import createToggle from "createToggle";
+// Module 14198 (pressable)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2854 */;
+import useAlertStore from "useAlertStore" /* 4663 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4997 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import SettingsAgeGroupResetAlert from "SettingsAgeGroupResetAlert" /* 14199 */;
+import createToggle from "createToggle" /* 10708 */;
 
+const jsx = jsxProd.jsx;
 const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2853)["bD//cU"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault["bD//cU"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2853).Gn0SAj);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.Gn0SAj);
   },
   onPress() {
-    require(4657) /* useAlertStore */.openAlert(require(14131) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(14131) /* SettingsAgeGroupResetAlert */.default, {}));
+    useAlertStore.openAlert(SettingsAgeGroupResetAlert.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(SettingsAgeGroupResetAlert.default, {}));
   },
   withArrow: true,
-  usePredicate: require("useAgeVerificationRunner").useShowAssignedAgeGroupSettings
+  usePredicate: useAgeVerificationRunner.useShowAssignedAgeGroupSettings
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2853)["bD//cU"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault["bD//cU"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2853).Gn0SAj);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.Gn0SAj);
   },
   onPress() {
-    require(4657) /* useAlertStore */.openAlert(require(14131) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(14131) /* SettingsAgeGroupResetAlert */.default, {}));
+    useAlertStore.openAlert(SettingsAgeGroupResetAlert.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(SettingsAgeGroupResetAlert.default, {}));
   },
   withArrow: true,
-  usePredicate: require("useAgeVerificationRunner").useShowAssignedAgeGroupSettings
+  usePredicate: useAgeVerificationRunner.useShowAssignedAgeGroupSettings
 };
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/AgeGroupResetSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/AgeGroupResetSetting.tsx");
 
 export default pressable;

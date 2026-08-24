@@ -1,56 +1,55 @@
-// Module ID: 17020
-// Function ID: 17021
+// Module ID: 17113
+// Function ID: 17114
 // Name: InviteSelectActionSheet
-// Dependencies: [19, 21, 4661, 712, 6950, 6949, 8101, 4342, 8100, 2]
+// Dependencies: [19, 21, 4668, 712, 6988, 6987, 8140, 4346, 8139, 2]
 // Exports: default
 
-// Module 17020 (InviteSelectActionSheet)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 17113 (InviteSelectActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
+import Background from "Background" /* 6988 */;
+import context from "context" /* 8140 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { content: null };
-createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16 };
+createCacheKey = { paddingHorizontal: ThemesDefault.space.PX_16, paddingBottom: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createCacheKey").fileFinishedImporting("modules/guild_invite/native/action_sheet/InviteSelectActionSheet.tsx");
+let closure_4 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_invite/native/action_sheet/InviteSelectActionSheet.tsx");
 
 export default function InviteSelectActionSheet(arg0) {
-  let options;
-  let require;
-  let title;
-  let value;
   ({ options, onChange: require } = arg0);
   ({ title, value } = arg0);
-  let obj = { contentStyles: createCacheKey().content, header: null, children: null };
-  obj[1] = jsx(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title });
+  let obj = { contentStyles: callback().content, header: jsx(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, { title }), children: null };
   obj = {
     value,
     onChange(arg0) {
       callback(arg0);
-      outer1_1(outer1_2[7]).hideActionSheet();
+      closure_1_1(closure_1_2[7]).hideActionSheet();
     },
     hasIcons: false,
-    children: null
+    children: options.map((value) => callback2(callback(table[8]).TableRadioRow, { value: value.value, label: value.label, accessibilityHint: value.descriptiveLabel }, "" + value.value))
   };
-  obj[3] = options.map((value) => callback2(callback(table[8]).TableRadioRow, { value: value.value, label: value.label, accessibilityHint: value.descriptiveLabel }, "" + value.value));
-  obj[2] = jsx(require(8101) /* context */.TableRadioGroup, {
+  obj[2] = jsx(context.TableRadioGroup, {
     value,
     onChange(arg0) {
       callback(arg0);
-      outer1_1(outer1_2[7]).hideActionSheet();
+      closure_1_1(closure_1_2[7]).hideActionSheet();
     },
     hasIcons: false,
-    children: null
+    children: options.map((value) => callback2(callback(table[8]).TableRadioRow, { value: value.value, label: value.label, accessibilityHint: value.descriptiveLabel }, "" + value.value))
   });
-  return jsx(require(6950) /* Background */.BottomSheet, {
+  return jsx(Background.BottomSheet, {
     value,
     onChange(arg0) {
       callback(arg0);
-      outer1_1(outer1_2[7]).hideActionSheet();
+      closure_1_1(closure_1_2[7]).hideActionSheet();
     },
     hasIcons: false,
-    children: null
+    children: options.map((value) => callback2(callback(table[8]).TableRadioRow, { value: value.value, label: value.label, accessibilityHint: value.descriptiveLabel }, "" + value.value))
   });
 };

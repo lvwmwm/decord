@@ -1,19 +1,17 @@
-// Module ID: 16038
-// Function ID: 16039
-// Dependencies: [19, 17, 21, 4661, 9948, 2]
+// Module ID: 16136
+// Function ID: 16137
+// Dependencies: [19, 17, 21, 4668, 9987, 2]
 
-// Module 16038
-import importAllResult from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16136
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let c3 = importAllResult;
 let closure_6 = createCacheKey.createStyles({ container: { position: "absolute", opacity: 0 } });
 const memoResult = importAllResult.memo(function InstantInviteSelfMeasurer(type) {
-  let item;
-  let onMeasured;
   ({ item, onMeasured } = type);
   let str = type.type;
   if (str === undefined) {
@@ -36,11 +34,11 @@ const memoResult = importAllResult.memo(function InstantInviteSelfMeasurer(type)
   if ("invite" === item.type) {
     obj = { invite: null };
     obj[0] = item.data;
-    let tmp2Result = tmp2(str(9948), obj);
+    let tmp2Result = tmp2(str(9987), obj);
   } else {
     obj = { channel: null };
     obj[0] = item.data;
-    tmp2Result = tmp2(onMeasured(9948).LinkedChannelInvite, obj);
+    tmp2Result = tmp2(onMeasured(9987).LinkedChannelInvite, obj);
   }
   obj[6] = tmp2Result;
   return <View style={items1} onLayout={importAllResult.useCallback((nativeEvent) => {
@@ -48,6 +46,6 @@ const memoResult = importAllResult.memo(function InstantInviteSelfMeasurer(type)
     onMeasured("height" === str ? layout.height : layout.width);
   }, items)} pointerEvents="none" importantForAccessibility="no-hide-descendants" accessibilityElementsHidden accessible={false}>{null}</View>;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteSelfMeasurer.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteSelfMeasurer.tsx");
 
 export default memoResult;

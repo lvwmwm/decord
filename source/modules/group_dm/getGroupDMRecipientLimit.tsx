@@ -1,15 +1,13 @@
-// Module ID: 15974
-// Function ID: 15975
+// Module ID: 16071
+// Function ID: 16072
 // Name: getGroupDMRecipientLimit
 // Dependencies: [1922, 676, 2]
 // Exports: default
 
-// Module 15974 (getGroupDMRecipientLimit)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 16071 (getGroupDMRecipientLimit)
+import closure_0 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let closure_1;
-let obj1;
 ({ MAX_GROUP_DM_PARTICIPANTS: closure_1, MAX_GROUP_DM_STAFF_PARTICIPANTS: obj1 } = ME);
 const result = require("set").fileFinishedImporting("modules/group_dm/getGroupDMRecipientLimit.tsx");
 

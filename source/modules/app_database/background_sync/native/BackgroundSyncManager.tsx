@@ -1,14 +1,16 @@
-// Module ID: 16533
-// Function ID: 16534
+// Module ID: 16628
+// Function ID: 16629
 // Name: handleMessageCreate
-// Dependencies: [1218, 1922, 5038, 16534, 2]
+// Dependencies: [1218, 1922, 5043, 16629, 2]
 
-// Module 16533 (handleMessageCreate)
-import fetchFingerprint from "fetchFingerprint";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import "initialize";
+// Module 16628 (handleMessageCreate)
+import initializeDefault from "initialize" /* 5043 */;
+import _backgroundSync from "_backgroundSync" /* 16629 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
+require = arg1;
+initializeDefault;
 class BackgroundSyncManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -36,15 +38,15 @@ prototype["handleMessageCreate"] = function handleMessageCreate(message) {
       tmp2 = "run bg sync" === message.content;
     }
     if (tmp2) {
-      require(16534) /* _backgroundSync */.backgroundSync({ force: true });
-      const obj2 = require(16534) /* _backgroundSync */;
+      _backgroundSync.backgroundSync({ force: true });
+      const obj2 = _backgroundSync;
     }
   }
 };
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
-  require(16534) /* _backgroundSync */.backgroundSync({ force: false, messagesOnly: true, checkLastMessageId: true });
+  _backgroundSync.backgroundSync({ force: false, messagesOnly: true, checkLastMessageId: true });
 };
 const backgroundSyncManager = new BackgroundSyncManager();
-const result = require("initialize").fileFinishedImporting("modules/app_database/background_sync/native/BackgroundSyncManager.tsx");
+const result = require("set").fileFinishedImporting("modules/app_database/background_sync/native/BackgroundSyncManager.tsx");
 
 export default backgroundSyncManager;

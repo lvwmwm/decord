@@ -1,13 +1,15 @@
-// Module ID: 8600
-// Function ID: 8601
+// Module ID: 8637
+// Function ID: 8638
 // Name: PhoneOrEmailSelectorForceMode
 // Dependencies: [2]
 // Exports: getPhoneOrEmail, shouldShowCountryCodeSelector
 
-// Module 8600 (PhoneOrEmailSelectorForceMode)
+// Module 8637 (PhoneOrEmailSelectorForceMode)
+import set from "set" /* 2 */;
+
 let obj = { PHONE: "phone", EMAIL: "email" };
 const re1 = /^[-() \d]+$/;
-const result = require("set").fileFinishedImporting("modules/phone/PhoneOrEmailUtils.tsx");
+const result = set.fileFinishedImporting("modules/phone/PhoneOrEmailUtils.tsx");
 
 export const PhoneOrEmailSelectorForceMode = obj;
 export const shouldShowCountryCodeSelector = function shouldShowCountryCodeSelector(forceMode, value) {
@@ -26,6 +28,6 @@ export const shouldShowCountryCodeSelector = function shouldShowCountryCodeSelec
   return tmp2;
 };
 export const getPhoneOrEmail = function getPhoneOrEmail(arg0) {
-  const obj = /^\+\d/;
+  obj = /^\+\d/;
   return obj.test(arg0) ? obj.PHONE : obj.EMAIL;
 };

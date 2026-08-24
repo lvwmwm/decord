@@ -1,13 +1,18 @@
-// Module ID: 10875
-// Function ID: 10876
+// Module ID: 10914
+// Function ID: 10915
 // Name: openForLaterLimitUpsell
-// Dependencies: [8479, 8482, 8483, 2]
+// Dependencies: [8518, 8521, 8522, 2]
 // Exports: default
 
-// Module 10875 (openForLaterLimitUpsell)
-const result = require("PremiumUpsellSubfeatureNames").fileFinishedImporting("modules/saved_messages/native/openForLaterLimitUpsell.tsx");
+// Module 10914 (openForLaterLimitUpsell)
+import set from "set" /* 2 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8518 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8521 */;
+import PremiumUpsellSubfeatureNames2 from "PremiumUpsellSubfeatureNames" /* 8522 */;
+
+const result = set.fileFinishedImporting("modules/saved_messages/native/openForLaterLimitUpsell.tsx");
 
 export default function openForLaterLimitUpsell(arg0, arg1) {
-  const PremiumUpsellSubfeatureNames = require(8483) /* PremiumUpsellSubfeatureNames */.PremiumUpsellSubfeatureNames;
-  importDefault(8479)(require(8482) /* EntitlementFeatureNames */.EntitlementFeatureNames.SAVED_MESSAGES, arg0 ? PremiumUpsellSubfeatureNames.SAVED_MESSAGES_REMINDER_LIMIT : PremiumUpsellSubfeatureNames.SAVED_MESSAGES_BOOKMARK_LIMIT, arg1);
+  const PremiumUpsellSubfeatureNames = PremiumUpsellSubfeatureNames2.PremiumUpsellSubfeatureNames;
+  openPremiumUpsellActionSheetDefault(EntitlementFeatureNames.EntitlementFeatureNames.SAVED_MESSAGES, arg0 ? PremiumUpsellSubfeatureNames.SAVED_MESSAGES_REMINDER_LIMIT : PremiumUpsellSubfeatureNames.SAVED_MESSAGES_BOOKMARK_LIMIT, arg1);
 };

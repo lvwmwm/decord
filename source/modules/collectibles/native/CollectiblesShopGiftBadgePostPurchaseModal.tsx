@@ -1,60 +1,64 @@
-// Module ID: 11984
-// Function ID: 11985
+// Module ID: 12033
+// Function ID: 12034
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 4661, 712, 1629, 5260, 5300, 7159, 5440, 1236, 6368, 4734, 2431, 10419, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1629, 5265, 5305, 7197, 5445, 1236, 6399, 4739, 2432, 10458, 2]
 // Exports: default
 
-// Module 11984 (CollectiblesShopGiftBadgePostPurchaseModal)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12033 (CollectiblesShopGiftBadgePostPurchaseModal)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import messagesProxyDefault from "messagesProxy" /* 2432 */;
+import Text from "Text" /* 4739 */;
+import ModalScreen from "ModalScreen" /* 5445 */;
+import XSmallIcon from "XSmallIcon" /* 6399 */;
+import PostPurchaseFooterDefault from "PostPurchaseFooter" /* 10458 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles((paddingTop) => {
   obj = { header: obj, closeButton: null, closeIcon: null };
   obj = { position: "absolute", top: 0, left: 0, right: 0, height: paddingTop + 56, paddingTop, zIndex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center" };
-  obj = { position: "absolute", left: 0, top: paddingTop, bottom: 0, paddingHorizontal: importDefault(712).space.PX_16, justifyContent: "center" };
+  obj = { position: "absolute", left: 0, top: paddingTop, bottom: 0, paddingHorizontal: ThemesDefault.space.PX_16, justifyContent: "center" };
   obj[1] = obj;
-  obj[2] = { tintColor: importDefault(712).colors.MOBILE_TEXT_HEADING_PRIMARY };
+  obj[2] = { tintColor: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
   return obj;
 });
-let result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesShopGiftBadgePostPurchaseModal.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesShopGiftBadgePostPurchaseModal.tsx");
 
 export default function CollectiblesShopGiftBadgePostPurchaseModal(currentProgress) {
-  const tmp = callback3(importDefault(1629)().top);
+  const tmp = callback3(useSafeAreaInsetsDefault().top);
   const callback = React.useCallback(() => {
-    let arr = callback2(5260);
+    let arr = callback2(5265);
     arr = arr.pop();
   }, []);
   const callback1 = React.useCallback(() => {
-    let obj = callback(5300);
+    let obj = callback(5305);
     obj = { analyticsLocations: null, analyticsSource: null };
-    const items = [callback2(7159).GIFTING_BADGE_POST_PURCHASE];
+    const items = [callback2(7197).GIFTING_BADGE_POST_PURCHASE];
     obj[0] = items;
-    obj[1] = callback2(7159).GIFTING_BADGE_POST_PURCHASE;
+    obj[1] = callback2(7197).GIFTING_BADGE_POST_PURCHASE;
     const result = obj.openCollectiblesShopMobile(obj);
   }, []);
   let obj = { children: null };
   obj = { style: tmp.header, children: null };
   obj = { onPress: callback, accessibilityRole: "button", accessibilityLabel: null, style: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.cpT0Cq);
   obj[3] = tmp.closeButton;
-  obj[4] = callback(require(6368) /* XSmallIcon */.XSmallIcon, { size: "md", style: tmp.closeIcon });
+  obj[4] = callback(XSmallIcon.XSmallIcon, { size: "md", style: tmp.closeIcon });
   let items = [callback(closure_4, obj), ];
   const obj2 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj2[5] = intl2.string(importDefault(2431).roVAey);
-  items[1] = callback(require(4734) /* Text */.Text, obj2);
+  const intl2 = getSystemLocale.intl;
+  obj2[5] = intl2.string(messagesProxyDefault.roVAey);
+  items[1] = callback(Text.Text, obj2);
   obj[1] = items;
-  const items1 = [callback2(closure_5, obj), callback(importDefault(10419), { currentProgress: currentProgress.giftBadgeProgress, onSendGift: callback1 })];
+  const items1 = [callback2(closure_5, obj), callback(PostPurchaseFooterDefault, { currentProgress: currentProgress.giftBadgeProgress, onSendGift: callback1 })];
   obj[0] = items1;
-  return callback2(require(5440) /* ModalScreen */.ModalScreen, obj);
+  return callback2(ModalScreen.ModalScreen, obj);
 };

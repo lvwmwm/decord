@@ -4,7 +4,7 @@
 // Dependencies: [1657, 1698]
 
 // Module 1768 (updateLayoutAnimations)
-import isJest from "isJest";
+import isJest from "isJest" /* 1657 */;
 
 let closure_0 = require;
 let closure_1 = dependencyMap;
@@ -39,7 +39,7 @@ if (isJest.shouldBeUseWeb()) {
     arr2.length = 0;
   };
   fn = function t(viewTag, type) {
-    const obj = { viewTag, type, config: null, sharedTransitionTag: null };
+    obj = { viewTag, type, config: null, sharedTransitionTag: null };
     let shareableCloneRecursive;
     if (arg2) {
       shareableCloneRecursive = arr(arr2[1]).makeShareableCloneRecursive(arg2);

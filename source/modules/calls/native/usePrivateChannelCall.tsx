@@ -1,30 +1,30 @@
-// Module ID: 12355
-// Function ID: 12356
+// Module ID: 12407
+// Function ID: 12408
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 1391, 589, 1236, 9646, 4770, 2]
+// Dependencies: [5, 19, 1391, 589, 1236, 9685, 4775, 2]
 // Exports: default
 
-// Module 12355 (usePrivateChannelCall)
-import getPrivateChannelCall from "getPrivateChannelCall";
-import noop from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
+// Module 12407 (usePrivateChannelCall)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/calls/native/usePrivateChannelCall.tsx");
+const result = require("set").fileFinishedImporting("modules/calls/native/usePrivateChannelCall.tsx");
 
 export default function usePrivateChannelCall(arg0, arg1, arg2) {
   const _require = arg0;
-  let closure_1 = arg1;
-  let dependencyMap = arg2;
+  closure_1 = arg1;
+  dependencyMap = arg2;
   let obj = _require(589);
-  const items = [ensureGuildLoaded];
+  const items = [closure_5];
   const items1 = [arg1, arg0];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const channel = outer1_5.getChannel(outer1_5.getDMFromUserId(callback));
+    const channel = closure_1_5.getChannel(closure_1_5.getDMFromUserId(callback));
     if (null != channel) {
       if (channel.isPrivate()) {
         let obj = { text: null, accessibilityHint: null, inCall: null };
-        ({ text: obj2[0], accessibilityHint: obj2[1], inCall: obj2[2] } = callback2(9646)(channel, callback2));
+        ({ text: obj2[0], accessibilityHint: obj2[1], inCall: obj2[2] } = callback2(9685)(channel, callback2));
         return obj;
       }
     }
@@ -66,7 +66,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -81,19 +81,19 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_1 = tmp3;
+              closure_1 = tmp3;
               let channel = tmp2;
               channel = undefined;
               closure_1 = undefined;
-              channel = outer1_5.getChannel(outer1_5.getDMFromUserId(outer1_0));
+              channel = closure_1_5.getChannel(closure_1_5.getDMFromUserId(closure_1_0));
               if (null == channel) {
                 dependencyMap = 1;
                 c3 = 1;
-                let obj1 = { value: null, done: false };
-                obj1[0] = outer1_1(4770).ensurePrivateChannel(tmp33);
+                obj1 = { value: null, done: false };
+                obj1[0] = closure_1_1(4775).ensurePrivateChannel(tmp33);
                 return obj1;
               }
-              tmp33 = outer1_0;
+              tmp33 = closure_1_0;
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -105,7 +105,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
             return obj;
           } else {
             closure_1 = arg1;
-            channel = outer1_5.getChannel(closure_1);
+            channel = closure_1_5.getChannel(closure_1);
           }
           obj1 = channel;
           let isPrivateResult;
@@ -113,14 +113,14 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
             isPrivateResult = obj1.isPrivate();
           }
           if (isPrivateResult) {
-            outer1_1(9646)(channel, closure_1).onPress();
-            const obj3 = outer1_1(9646)(channel, closure_1);
+            closure_1_1(9685)(channel, closure_1).onPress();
+            const obj3 = closure_1_1(9685)(channel, closure_1);
           }
           if (dependencyMap != null) {
             dependencyMap();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp25) {
           c3 = tmp;
           throw tmp25;

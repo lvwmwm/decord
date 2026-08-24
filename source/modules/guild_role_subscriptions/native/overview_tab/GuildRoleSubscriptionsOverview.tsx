@@ -1,19 +1,25 @@
-// Module ID: 15789
-// Function ID: 15790
+// Module ID: 15858
+// Function ID: 15859
 // Name: serverNameHook
-// Dependencies: [19, 4495, 4201, 1910, 21, 4734, 15790, 1236, 7935, 14559, 15791, 647, 7217, 6766, 4656, 1222, 2]
+// Dependencies: [19, 4499, 4205, 1910, 21, 4739, 15859, 1236, 7974, 14627, 15860, 647, 7255, 6803, 4662, 1222, 2]
 // Exports: default
 
-// Module 15789 (serverNameHook)
-import noop from "noop";
-import _handleConnectionOpen from "_handleConnectionOpen";
-import initialize from "initialize";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { jsx } from "jsxProd";
+// Module 15858 (serverNameHook)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import notSupportedDefault from "notSupported" /* 7974 */;
+import useGroupListingsFetchContext from "useGroupListingsFetchContext" /* 14627 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 15859 */;
+import SeparatorDefault from "Separator" /* 15860 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "_handleConnectionOpen" /* 4499 */;
+import closure_5 from "initialize" /* 4205 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function serverNameHook(children) {
-  return jsx(require(4734) /* Text */.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
+  return jsx(Text.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
 }
 class RoleSubscriptionsUnavailableNotice {
   constructor(arg0) {
@@ -28,20 +34,17 @@ class RoleSubscriptionsUnavailableNotice {
   }
 }
 function PurchasePage(arg0) {
-  let gatedChannelId;
-  let guildId;
   ({ guildId, gatedChannelId } = arg0);
-  let obj = importDefault(7935);
+  let obj = notSupportedDefault;
   const storeFront = obj.useNativeIAPPayments().storeFront;
   let country;
   if (storeFront != null) {
     country = storeFront.country;
   }
-  obj = { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: null };
-  obj[4] = jsx(importDefault(15791), { guildId, gatedChannelId });
-  return jsx(require(14559) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: null });
+  obj = { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(SeparatorDefault, { guildId, gatedChannelId }) };
+  return jsx(useGroupListingsFetchContext.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(SeparatorDefault, { guildId, gatedChannelId }) });
 }
-const result = require("initialize").fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsOverview.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsOverview.tsx");
 
 export default function GuildRoleSubscriptionsOverview(guildId) {
   guildId = guildId.guildId;
@@ -49,10 +52,10 @@ export default function GuildRoleSubscriptionsOverview(guildId) {
   let stateFromStores1;
   let React;
   let obj = guildId(stateFromStores1[11]);
-  const items = [createGuildRecordFromRust];
+  const items = [closure_6];
   const items1 = [guildId];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_6.getGuild(guildId), items1);
-  const items2 = [_handleConnectionOpen];
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getGuild(guildId), items1);
+  const items2 = [closure_4];
   stateFromStores1 = guildId(stateFromStores1[11]).useStateFromStores(items2, () => connected.isConnected());
   const tmp3 = stateFromStores(stateFromStores1[12])(guildId);
   React = tmp3;
@@ -62,8 +65,8 @@ export default function GuildRoleSubscriptionsOverview(guildId) {
   const effect = React.useEffect(() => {
     let tmp = !stateFromStores1;
     if (stateFromStores1) {
-      tmp = null != stateFromStores && c3;
-      const tmp4 = null != stateFromStores && c3;
+      tmp = null != stateFromStores && closure_3;
+      const tmp4 = null != stateFromStores && closure_3;
     }
     if (!tmp) {
       let obj = stateFromStores(stateFromStores1[14]);
@@ -75,7 +78,7 @@ export default function GuildRoleSubscriptionsOverview(guildId) {
       const intl3 = guildId(stateFromStores1[7]).intl;
       obj[2] = intl3.string(guildId(stateFromStores1[7]).t.BddRzS);
       obj.show(obj);
-      guildId(stateFromStores1[15]).replaceWith(outer1_5.defaultRoute);
+      guildId(stateFromStores1[15]).replaceWith(closure_1_5.defaultRoute);
       const obj3 = guildId(stateFromStores1[15]);
     }
   }, items3);

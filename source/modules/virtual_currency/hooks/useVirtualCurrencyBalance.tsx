@@ -1,26 +1,27 @@
-// Module ID: 11988
-// Function ID: 11989
+// Module ID: 12037
+// Function ID: 12038
 // Name: useVirtualCurrencyBalance
-// Dependencies: [9254, 589, 2]
+// Dependencies: [9291, 589, 2]
 // Exports: getVirtualCurrencyBalance, useHasEnoughVirtualCurrency, useVirtualCurrencyBalance
 
-// Module 11988 (useVirtualCurrencyBalance)
-import redeemError from "redeemError";
+// Module 12037 (useVirtualCurrencyBalance)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "redeemError" /* 9291 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/virtual_currency/hooks/useVirtualCurrencyBalance.tsx");
 
 export const useVirtualCurrencyBalance = function useVirtualCurrencyBalance() {
-  const items = [redeemError];
-  return require(589) /* initialize */.useStateFromStores(items, () => balance.balance);
+  const items = [closure_2];
+  return initialize.useStateFromStores(items, () => balance.balance);
 };
 export const useHasEnoughVirtualCurrency = function useHasEnoughVirtualCurrency(arg0) {
   const _require = arg0;
-  const items = [redeemError];
+  const items = [closure_2];
   return _require(589).useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
-      let num = outer1_2.balance;
+      let num = closure_1_2.balance;
       if (num == null) {
         num = 0;
       }

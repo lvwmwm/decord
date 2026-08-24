@@ -1,27 +1,27 @@
-// Module ID: 12298
-// Function ID: 12299
+// Module ID: 12350
+// Function ID: 12351
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: [19, 4030, 1922, 589, 12172, 2]
+// Dependencies: [19, 4033, 1922, 589, 12224, 2]
 // Exports: useUserProfileGameFriendApplicationIds
 
-// Module 12298 (useUserProfileGameFriendApplicationIds)
-import noop from "noop";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 12350 (useUserProfileGameFriendApplicationIds)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "markAllUserIdListsStale" /* 4033 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
 let closure_5 = [];
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/game_relationships/hooks/useUserProfileGameFriendApplicationIds.tsx");
+const result = require("set").fileFinishedImporting("modules/game_relationships/hooks/useUserProfileGameFriendApplicationIds.tsx");
 
 export const useUserProfileGameFriendApplicationIds = function useUserProfileGameFriendApplicationIds(userId) {
   userId = userId.userId;
   let stateFromStores;
   let gameFriendsForUser;
-  const items = [markAllUserIdListsStale, mergeGuildAvatar];
+  const items = [closure_3, closure_4];
   stateFromStores = userId(stateFromStores[3]).useStateFromStores(items, () => {
-    let isFriendResult = outer1_3.isFriend(userId);
+    let isFriendResult = closure_1_3.isFriend(userId);
     if (!isFriendResult) {
-      const user = outer1_4.getUser(userId);
+      const user = closure_1_4.getUser(userId);
       let isProvisional;
       if (user != null) {
         isProvisional = user.isProvisional;
@@ -35,7 +35,7 @@ export const useUserProfileGameFriendApplicationIds = function useUserProfileGam
   const items1 = [gameFriendsForUser, stateFromStores];
   return gameFriendsForUser.useMemo(() => {
     if (stateFromStores) {
-      let mapped = outer1_5;
+      let mapped = closure_1_5;
     } else {
       mapped = gameFriendsForUser.map((applicationId) => applicationId.applicationId);
     }

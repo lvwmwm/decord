@@ -1,16 +1,19 @@
-// Module ID: 12193
-// Function ID: 12194
+// Module ID: 12245
+// Function ID: 12246
 // Name: resolveFieldValue
-// Dependencies: [12194, 12195, 2]
+// Dependencies: [12246, 12247, 2]
 // Exports: bindResolveFieldValue
 
-// Module 12193 (resolveFieldValue)
+// Module 12245 (resolveFieldValue)
+import set from "set" /* 2 */;
+import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 12246 */;
+
 function resolveFieldValue(image, items, applicationAssets) {
   const _require = image;
   applicationAssets = applicationAssets.applicationAssets;
   if (null == image) {
     return null;
-  } else if (image.value_type === _require(12195).ApplicationWidgetFieldValueType.DATA) {
+  } else if (image.value_type === _require(12247).ApplicationWidgetFieldValueType.DATA) {
     let iter = tmp[image.value];
     const presentation_type = image.presentation_type;
     if (null != iter) {
@@ -21,7 +24,7 @@ function resolveFieldValue(image, items, applicationAssets) {
       if (hasItem) {
         if (items.includes(iter.type)) {
           if ("playtime_hours" === image.value) {
-            let obj = { type: null, value: null, presentationType: null };
+            obj = { type: null, value: null, presentationType: null };
             obj[0] = iter.type;
             const _Math = Math;
             iter = iter.value;
@@ -42,21 +45,21 @@ function resolveFieldValue(image, items, applicationAssets) {
       }
     }
     return tmp10;
-  } else if (image.value_type === tmp19(12195).ApplicationWidgetFieldValueType.CUSTOM_STRING) {
+  } else if (image.value_type === tmp19(12247).ApplicationWidgetFieldValueType.CUSTOM_STRING) {
     let tmp6 = null;
-    if (image.presentation_type === tmp19(12194).ApplicationWidgetFieldPresentationType.TEXT) {
+    if (image.presentation_type === tmp19(12246).ApplicationWidgetFieldPresentationType.TEXT) {
       tmp6 = null;
       if (items.includes(obj.STRING)) {
-        const obj1 = { type: null, value: null, presentationType: null };
+        obj1 = { type: null, value: null, presentationType: null };
         obj1[0] = tmp7.STRING;
         obj1[1] = image.value;
-        obj1[2] = tmp19(12194).ApplicationWidgetFieldPresentationType.TEXT;
+        obj1[2] = tmp19(12246).ApplicationWidgetFieldPresentationType.TEXT;
         tmp6 = obj1;
       }
       tmp7 = obj;
     }
     return tmp6;
-  } else if (image.value_type === tmp19(12195).ApplicationWidgetFieldValueType.APPLICATION_ASSET) {
+  } else if (image.value_type === tmp19(12247).ApplicationWidgetFieldValueType.APPLICATION_ASSET) {
     if (items.includes(obj.MEDIA)) {
       const found = applicationAssets.find((key) => key.key === image.value);
       let tmp5 = null;
@@ -68,7 +71,7 @@ function resolveFieldValue(image, items, applicationAssets) {
         obj2[1] = found.metadata.width;
         obj2[2] = found.metadata.height;
         obj[1] = obj2;
-        obj[2] = tmp19(12194).ApplicationWidgetFieldPresentationType.IMAGE;
+        obj[2] = tmp19(12246).ApplicationWidgetFieldPresentationType.IMAGE;
         tmp5 = obj;
       }
       return tmp5;
@@ -85,11 +88,11 @@ const items = [obj.STRING];
 const items1 = [obj.NUMBER];
 const items2 = [obj.MEDIA];
 const items3 = [obj.NUMBER];
-let closure_3 = { [require(12194).ApplicationWidgetFieldPresentationType.TEXT]: items, [require(12194).ApplicationWidgetFieldPresentationType.NUMBER]: items1, [require(12194).ApplicationWidgetFieldPresentationType.IMAGE]: items2, [require(12194).ApplicationWidgetFieldPresentationType.DURATION]: items3 };
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedValues.tsx");
+let closure_3 = { [ApplicationWidgetFieldPresentationType.ApplicationWidgetFieldPresentationType.TEXT]: items, [ApplicationWidgetFieldPresentationType.ApplicationWidgetFieldPresentationType.NUMBER]: items1, [ApplicationWidgetFieldPresentationType.ApplicationWidgetFieldPresentationType.IMAGE]: items2, [ApplicationWidgetFieldPresentationType.ApplicationWidgetFieldPresentationType.DURATION]: items3 };
+const result = set.fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedValues.tsx");
 
 export const ResolvedValueType = obj;
 export function bindResolveFieldValue(resolutionContext) {
-  let closure_0 = resolutionContext;
-  return (arg0, arg1) => outer1_4(arg0, arg1, closure_0);
+  closure_0 = resolutionContext;
+  return (arg0, arg1) => closure_1_4(arg0, arg1, closure_0);
 }

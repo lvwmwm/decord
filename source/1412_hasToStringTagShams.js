@@ -4,9 +4,11 @@
 // Dependencies: [545]
 
 // Module 1412 (hasToStringTagShams)
+import hasSymbols from "hasSymbols" /* 545 */;
+
 
 export default function hasToStringTagShams() {
-  let toStringTag = require(545) /* hasSymbols */();
+  let toStringTag = hasSymbols();
   if (toStringTag) {
     const _Symbol = Symbol;
     toStringTag = Symbol.toStringTag;

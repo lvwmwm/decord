@@ -1,10 +1,11 @@
-// Module ID: 5352
-// Function ID: 5353
+// Module ID: 5357
+// Function ID: 5358
 // Name: map
 // Dependencies: [589, 709, 2]
 
-// Module 5352 (map)
-import { Store } from "initialize";
+// Module 5357 (map)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let closure_0 = [];
 const map = new Map();
@@ -16,6 +17,7 @@ const map5 = new Map();
 const map6 = new Map();
 let c8;
 let c9;
+const Store = initializeDefault.Store;
 class CollectiblesShopHomesStore extends Store {
 }
 const prototype = CollectiblesShopHomesStore.prototype;
@@ -51,7 +53,7 @@ prototype["getShopLayoutUrlOverride"] = function getShopLayoutUrlOverride() {
   return c9;
 };
 CollectiblesShopHomesStore.displayName = "CollectiblesShopHomesStore";
-const collectiblesShopHomesStore = new CollectiblesShopHomesStore(require("dispatcher"), {
+const collectiblesShopHomesStore = new CollectiblesShopHomesStore(dispatcherDefault, {
   COLLECTIBLES_SHOP_HOME_FETCH: function handleFetchShopHome(tab) {
     const result = map4.set(tab.tab, true);
     const result1 = map3.set(tab.tab, undefined);
@@ -89,8 +91,8 @@ const collectiblesShopHomesStore = new CollectiblesShopHomesStore(require("dispa
     map.clear();
     map1.clear();
     map5.clear();
-    let c8;
-    let c9;
+    c8 = undefined;
+    c9 = undefined;
   }
 });
 let result = require("set").fileFinishedImporting("modules/collectibles/CollectiblesShopHomeStore.tsx");

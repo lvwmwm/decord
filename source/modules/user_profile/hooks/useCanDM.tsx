@@ -1,47 +1,47 @@
-// Module ID: 12337
-// Function ID: 12338
+// Module ID: 12389
+// Function ID: 12390
 // Name: useCanDM
-// Dependencies: [5406, 4022, 1218, 1990, 4030, 4066, 589, 2]
+// Dependencies: [5411, 4025, 1218, 1991, 4033, 4069, 589, 2]
 // Exports: canDm, default
 
-// Module 12337 (useCanDM)
-import recountRelationshipTypes from "recountRelationshipTypes";
-import initialize from "initialize";
-import fetchFingerprint from "fetchFingerprint";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
+// Module 12389 (useCanDM)
+import closure_2 from "recountRelationshipTypes" /* 5411 */;
+import closure_3 from "initialize" /* 4025 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "markAllUserIdListsStale" /* 4033 */;
 
 const require = arg1;
-const result = require("fetchFingerprint").fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
 
 export default function useCanDM(arg0, arg1) {
   const _require = arg0;
-  const dependencyMap = arg1;
-  const items = [fetchFingerprint];
-  let recountRelationshipTypes = _require(589).useStateFromStores(items, () => id.getId() === closure_0);
+  dependencyMap = arg1;
+  const items = [closure_4];
+  closure_2 = _require(589).useStateFromStores(items, () => id.getId() === closure_0);
   const obj = _require(589);
-  const items1 = [initialize];
-  initialize = _require(589).useStateFromStores(items1, () => {
+  const items1 = [closure_3];
+  closure_3 = _require(589).useStateFromStores(items1, () => {
     let isLurkingResult = null != closure_1;
     if (isLurkingResult) {
       isLurkingResult = lurking.isLurking(tmp);
     }
     return isLurkingResult;
   });
-  const RestrictedGuildIds = _require(4066).RestrictedGuildIds;
-  fetchFingerprint = RestrictedGuildIds.useSetting();
+  const RestrictedGuildIds = _require(4069).RestrictedGuildIds;
+  closure_4 = RestrictedGuildIds.useSetting();
   const obj2 = _require(589);
-  const items2 = [markAllUserIdListsStale, trackCommunicationDisabled, recountRelationshipTypes];
+  const items2 = [closure_6, closure_5, closure_2];
   return _require(589).useStateFromStores(items2, () => {
     let tmp = !gameFriendsForUser;
     if (!gameFriendsForUser) {
-      tmp = !initialize;
+      tmp = !closure_3;
     }
     if (tmp) {
-      let isFriendResult = outer1_6.isFriend(callback);
+      let isFriendResult = closure_1_6.isFriend(callback);
       if (!isFriendResult) {
-        isFriendResult = null != outer1_5.memberOf(tmp4).find((arg0) => !fetchFingerprint.includes(arg0));
-        const memberOfResult = outer1_5.memberOf(tmp4);
+        isFriendResult = null != closure_1_5.memberOf(tmp4).find((arg0) => !closure_4.includes(arg0));
+        const memberOfResult = closure_1_5.memberOf(tmp4);
       }
       tmp = isFriendResult;
       tmp4 = callback;
@@ -63,7 +63,7 @@ export const canDm = function canDm(userId, guildId) {
   if (isLurkingResult) {
     isLurkingResult = lurking.isLurking(guildId);
   }
-  const RestrictedGuildIds = _require(4066).RestrictedGuildIds;
+  const RestrictedGuildIds = _require(4069).RestrictedGuildIds;
   _require = RestrictedGuildIds.getSetting();
   let isFriendResult = friend.isFriend(userId);
   let tmp8 = !tmp4;
@@ -72,15 +72,15 @@ export const canDm = function canDm(userId, guildId) {
   }
   if (tmp8) {
     if (!isFriendResult) {
-      isFriendResult = null != trackCommunicationDisabled.memberOf(userId).find((arg0) => !closure_0.includes(arg0));
-      const memberOfResult = trackCommunicationDisabled.memberOf(userId);
+      isFriendResult = null != closure_5.memberOf(userId).find((arg0) => !closure_0.includes(arg0));
+      const memberOfResult = closure_5.memberOf(userId);
     }
     tmp8 = isFriendResult;
   }
   if (!tmp8) {
     let setting = gameFriendsForUser.getGameFriendsForUser(userId).length > 0;
     if (setting) {
-      const AllowGameFriendDmsInDiscord = _require(4066).AllowGameFriendDmsInDiscord;
+      const AllowGameFriendDmsInDiscord = _require(4069).AllowGameFriendDmsInDiscord;
       setting = AllowGameFriendDmsInDiscord.getSetting();
     }
     tmp8 = setting;

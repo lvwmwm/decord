@@ -1,13 +1,16 @@
-// Module ID: 5346
-// Function ID: 5347
+// Module ID: 5351
+// Function ID: 5352
 // Name: fromServer
-// Dependencies: [5339, 2]
+// Dependencies: [5344, 2]
 
-// Module 5346 (fromServer)
+// Module 5351 (fromServer)
+import set from "set" /* 2 */;
+import ShopBlockType from "ShopBlockType" /* 5344 */;
+
 let prototype;
 prototype = function ImmersiveBannerBlockRecord(end_time) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(5339) /* ShopBlockType */.ShopBlockType.IMMERSIVE_BANNER;
+  obj.type = ShopBlockType.ShopBlockType.IMMERSIVE_BANNER;
   ({ title: tmp.title, body: tmp.body, help_center_url: tmp.helpCenterUrl, text_color: tmp.textColor } = end_time);
   let date;
   if (null != end_time.end_time) {
@@ -23,7 +26,7 @@ prototype["fromServer"] = function fromServer(end_time) {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(5339) /* ShopBlockType */.ShopBlockType.IMMERSIVE_BANNER;
+  obj.type = ShopBlockType.ShopBlockType.IMMERSIVE_BANNER;
   ({ title: tmp2.title, body: tmp2.body, help_center_url: tmp2.helpCenterUrl, text_color: tmp2.textColor } = end_time);
   let date;
   if (null != end_time.end_time) {
@@ -34,6 +37,6 @@ prototype["fromServer"] = function fromServer(end_time) {
   ({ banner_url: tmp2.bannerUrl, banner_animated_url: tmp2.bannerAnimatedUrl } = end_time);
   return obj;
 };
-const result = require("set").fileFinishedImporting("modules/collectibles/records/ImmersiveBannerBlockRecord.tsx");
+const result = set.fileFinishedImporting("modules/collectibles/records/ImmersiveBannerBlockRecord.tsx");
 
 export const ImmersiveBannerBlockRecord = prototype;

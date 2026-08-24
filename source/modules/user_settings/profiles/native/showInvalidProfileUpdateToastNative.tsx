@@ -1,19 +1,24 @@
-// Module ID: 14019
-// Function ID: 14020
+// Module ID: 14087
+// Function ID: 14088
 // Name: showGenericProfileUpdateFailureToast
-// Dependencies: [4094, 8143, 712, 2]
+// Dependencies: [4097, 8182, 712, 2]
 // Exports: showGenericGuildProfileUpdateFailureToast, showGenericProfileUpdateFailureToast
 
-// Module 14019 (showGenericProfileUpdateFailureToast)
-const result = require("Themes").fileFinishedImporting("modules/user_settings/profiles/native/showInvalidProfileUpdateToastNative.tsx");
+// Module 14087 (showGenericProfileUpdateFailureToast)
+import set from "set" /* 2 */;
+import ThemesDefault from "Themes" /* 712 */;
+import dispatcherDefault from "dispatcher" /* 4097 */;
+import registerAssetDefault from "registerAsset" /* 8182 */;
+
+const result = set.fileFinishedImporting("modules/user_settings/profiles/native/showInvalidProfileUpdateToastNative.tsx");
 
 export const showGenericProfileUpdateFailureToast = function showGenericProfileUpdateFailureToast(avatar) {
-  let obj = importDefault(4094);
-  obj = { key: "USER_SETTINGS_UPDATE_FAILURE", content: avatar, icon: importDefault(8143), iconColor: importDefault(712).colors.ICON_FEEDBACK_CRITICAL, recolorLegacyIcon: true };
+  let obj = dispatcherDefault;
+  obj = { key: "USER_SETTINGS_UPDATE_FAILURE", content: avatar, icon: registerAssetDefault, iconColor: ThemesDefault.colors.ICON_FEEDBACK_CRITICAL, recolorLegacyIcon: true };
   obj.open(obj);
 };
 export const showGenericGuildProfileUpdateFailureToast = function showGenericGuildProfileUpdateFailureToast(avatar) {
-  let obj = importDefault(4094);
-  obj = { key: "USER_SETTINGS_UPDATE_FAILURE", content: avatar, icon: importDefault(8143), iconColor: importDefault(712).colors.ICON_FEEDBACK_CRITICAL, recolorLegacyIcon: true };
+  let obj = dispatcherDefault;
+  obj = { key: "USER_SETTINGS_UPDATE_FAILURE", content: avatar, icon: registerAssetDefault, iconColor: ThemesDefault.colors.ICON_FEEDBACK_CRITICAL, recolorLegacyIcon: true };
   obj.open(obj);
 };

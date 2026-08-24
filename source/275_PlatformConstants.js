@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 275 (PlatformConstants)
+import getAll from "get" /* 30 */;
 
-export default require("get").getEnforcing("PlatformConstants");
+
+export default getAll.getEnforcing("PlatformConstants");

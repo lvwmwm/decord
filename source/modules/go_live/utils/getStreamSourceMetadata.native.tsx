@@ -1,11 +1,13 @@
-// Module ID: 4650
-// Function ID: 4651
+// Module ID: 4656
+// Function ID: 4657
 // Name: getStreamSourceMetadata
 // Dependencies: [2]
 // Exports: default
 
-// Module 4650 (getStreamSourceMetadata)
-const result = require("set").fileFinishedImporting("modules/go_live/utils/getStreamSourceMetadata.native.tsx");
+// Module 4656 (getStreamSourceMetadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/go_live/utils/getStreamSourceMetadata.native.tsx");
 
 export default function getStreamSourceMetadata() {
   return {};

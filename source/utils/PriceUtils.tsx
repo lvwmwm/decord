@@ -1,16 +1,20 @@
-// Module ID: 5316
-// Function ID: 5317
+// Module ID: 5321
+// Function ID: 5322
 // Name: formatSingleCurrencyPrice
-// Dependencies: [1994, 4041, 1924, 505, 500, 5317, 5319, 5321, 1236, 4039, 2]
+// Dependencies: [1995, 4044, 1924, 505, 500, 5322, 5324, 5326, 1236, 4042, 2]
 // Exports: formatDualPriceForBG, formatPercent, formatSubscriptionPlanRate, maybeShortenPrice, shortenAndFormatPrice
 
-// Module 5316 (formatSingleCurrencyPrice)
-import _getSystemLocale from "_getSystemLocale";
-import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
-import { SubscriptionIntervalTypes } from "GuildFeatures";
-import { CurrencyCodes } from "sum";
+// Module 5321 (formatSingleCurrencyPrice)
+import set from "set" /* 500 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
+import CurrencyCodes2 from "CurrencyCodes" /* 5322 */;
+import closure_2 from "_getSystemLocale" /* 1995 */;
+import closure_3 from "handlePaymentSourceCreateEnd" /* 4044 */;
+import { SubscriptionIntervalTypes } from "GuildFeatures" /* 1924 */;
+import { CurrencyCodes } from "sum" /* 505 */;
 
-const require = arg1;
+require = arg1;
 function formatSingleCurrencyPrice(result, BGN, localeOverride) {
   let obj = localeOverride;
   if (localeOverride == null) {
@@ -23,22 +27,22 @@ function formatSingleCurrencyPrice(result, BGN, localeOverride) {
     localeOverride = localeOverride.localeOverride;
   }
   if (localeOverride == null) {
-    localeOverride = _getSystemLocale.locale;
+    localeOverride = closure_2.locale;
   }
   let isWindowsResult = "en-US" === localeOverride;
   let hasItem = isWindowsResult;
   if (isWindowsResult) {
-    hasItem = closure_6.includes(_getSystemLocale.systemLocale);
+    hasItem = closure_6.includes(closure_2.systemLocale);
   }
   if (hasItem) {
     obj.currencyDisplay = "code";
   }
   if (isWindowsResult) {
-    isWindowsResult = require(500) /* set */.isWindows();
-    const obj3 = require(500) /* set */;
+    isWindowsResult = set.isWindows();
+    const obj3 = set;
   }
   if (isWindowsResult) {
-    isWindowsResult = "en-GB" === _getSystemLocale.systemLocale;
+    isWindowsResult = "en-GB" === closure_2.systemLocale;
   }
   if (isWindowsResult) {
     obj.currencyDisplay = "code";
@@ -46,24 +50,24 @@ function formatSingleCurrencyPrice(result, BGN, localeOverride) {
   if (tmp11) {
     obj.minimumFractionDigits = 0;
   }
-  return require(5317) /* CurrencyCodes */.formatPrice(result, BGN, localeOverride, obj);
+  return CurrencyCodes2.formatPrice(result, BGN, localeOverride, obj);
 }
 function formatPrice(amount, currency, localeOverride, localeOverride) {
   const timestamp = Date.now();
   let flag = false;
   if (timestamp < date.getTime()) {
-    const platformName = require(500) /* set */.getPlatformName();
+    const platformName = set.getPlatformName();
     if ("android" === platformName) {
-      let ipCountryCode = tmp2(5319).default.getUserCountry();
-      const _default2 = tmp2(5319).default;
+      let ipCountryCode = tmp2(5324).default.getUserCountry();
+      const _default2 = tmp2(5324).default;
     } else if ("ios" === platformName) {
-      const storeFront = tmp2(5321).default.getStoreFront();
+      const storeFront = tmp2(5326).default.getStoreFront();
       let country;
       if (storeFront != null) {
         country = storeFront.country;
       }
       ipCountryCode = country;
-      const _default = tmp2(5321).default;
+      const _default = tmp2(5326).default;
     } else {
       ipCountryCode = ipCountryCode.ipCountryCode;
     }
@@ -76,7 +80,7 @@ function formatPrice(amount, currency, localeOverride, localeOverride) {
       tmp9 = formatted === CurrencyCodes.EUR;
     }
     flag = tmp9;
-    const obj2 = require(500) /* set */;
+    const obj2 = set;
   }
   if (flag) {
     const tmp13Result = tmp13(amount, CurrencyCodes.EUR, localeOverride);
@@ -89,36 +93,36 @@ function formatPrice(amount, currency, localeOverride, localeOverride) {
 }
 function formatRate(priceString, interval, intervalCount) {
   if (interval === SubscriptionIntervalTypes.YEAR) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
+    const intl3 = getSystemLocale.intl;
     let obj = { price: null };
     obj[0] = priceString;
-    return intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["rS8FA+"], obj);
+    return intl3.formatToPlainString(getSystemLocale.t["rS8FA+"], obj);
   } else {
     if (interval === tmp.MONTH) {
       if (1 === intervalCount) {
-        const intl2 = require(1236) /* getSystemLocale */.intl;
+        const intl2 = getSystemLocale.intl;
         obj = { price: null };
         obj[0] = priceString;
-        return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.AbOLNu, obj);
+        return intl2.formatToPlainString(getSystemLocale.t.AbOLNu, obj);
       }
     }
     if (interval === tmp.MONTH) {
       if (intervalCount > 1) {
-        const intl = require(1236) /* getSystemLocale */.intl;
+        const intl = getSystemLocale.intl;
         obj = { price: null, intervalCount: null };
         obj[0] = priceString;
         obj[1] = intervalCount;
-        return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["Qc+9ww"], obj);
+        return intl.formatToPlainString(getSystemLocale.t["Qc+9ww"], obj);
       }
     }
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("Unsupported interval type: " + interval + ", and interval count: " + intervalCount);
+    error = new Error("Unsupported interval type: " + interval + ", and interval count: " + intervalCount);
     throw error;
   }
 }
 let closure_6 = Object.freeze(["en-CA", "en-AU", "en-NZ"]);
-const result = require("GuildFeatures").fileFinishedImporting("utils/PriceUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/PriceUtils.tsx");
 
 export { formatSingleCurrencyPrice };
 export const formatDualPriceForBG = function formatDualPriceForBG(result, localeOverride) {
@@ -130,7 +134,7 @@ export const formatPercent = function formatPercent(arg0, arg1) {
   return Intl.NumberFormat(arg0, { style: "percent", minimumFractionDigits: 0 }).format(arg1);
 };
 export const formatSubscriptionPlanRate = function formatSubscriptionPlanRate(interval_count) {
-  const price = require(4039) /* getPremiumPlanItem */.getPrice(interval_count.id);
+  const price = getPremiumPlanItem.getPrice(interval_count.id);
   return formatRate(formatPrice(price.amount, price.currency), interval_count.interval, "interval_count" in interval_count ? interval_count.interval_count : interval_count.intervalCount);
 };
 export const maybeShortenPrice = function maybeShortenPrice(str) {

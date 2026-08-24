@@ -1,14 +1,17 @@
-// Module ID: 4987
-// Function ID: 4988
+// Module ID: 4992
+// Function ID: 4993
 // Name: canJoinVoiceChannel
 // Dependencies: [1395, 676, 2]
 // Exports: default
 
-// Module 4987 (canJoinVoiceChannel)
-import { isPrivate } from "createChannelRecord";
-import { BasicPermissions } from "ME";
+// Module 4992 (canJoinVoiceChannel)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
 
-const result = require("set").fileFinishedImporting("modules/channel/canJoinVoiceChannel.tsx");
+const isPrivate = createChannelRecord.isPrivate;
+const BasicPermissions = ME.BasicPermissions;
+const result = set.fileFinishedImporting("modules/channel/canJoinVoiceChannel.tsx");
 
 export default function canJoinVoiceChannel(type, canBasicChannel) {
   let canBasicChannelResult = isPrivate(type.type);

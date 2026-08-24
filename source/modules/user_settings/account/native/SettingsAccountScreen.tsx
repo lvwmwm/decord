@@ -1,57 +1,61 @@
-// Module ID: 14076
-// Function ID: 14077
+// Module ID: 14144
+// Function ID: 14145
 // Name: PasswordlessUpsell
-// Dependencies: [32, 19, 17, 14077, 8198, 11059, 676, 14078, 21, 4661, 712, 1500, 6292, 5449, 14079, 4734, 1236, 4745, 5260, 14080, 2007, 589, 14102, 8588, 5264, 6286, 10669, 14103, 13991, 14106, 7385, 8799, 698, 10096, 11785, 2]
+// Dependencies: [32, 19, 17, 14145, 8238, 11098, 676, 14146, 21, 4668, 712, 1500, 6323, 5454, 14147, 4739, 1236, 4750, 5265, 14148, 2008, 589, 14170, 8627, 5269, 6317, 10708, 14171, 14059, 14174, 7423, 8836, 698, 10135, 11834, 2]
 
-// Module 14076 (PasswordlessUpsell)
-import expandEventProperties from "expandEventProperties";
-import importAllResult from "UserSettingsWebAuthn";
-import { View } from "Button";
-import hasFetchedCredentials from "hasFetchedCredentials";
-import { MobileUserSettings } from "MobileUserSettings";
-import { AccountSettingsTabs } from "AccountSettingsTabs";
-import { AnalyticEvents } from "ME";
-import { WebAuthnScreens } from "WebAuthnScreens";
-import jsxProd from "initialize";
-import createCacheKey from "createCacheKey";
+// Module 14144 (PasswordlessUpsell)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import preloadDefault from "preload" /* 5454 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7423 */;
+import useSegmentedControlState from "useSegmentedControlState" /* 8836 */;
+import SegmentedControl from "SegmentedControl" /* 10135 */;
+import SegmentedControlPage from "SegmentedControlPage" /* 11834 */;
+import _modDef14059 from "module_14059" /* 14059 */;
+import AutomatedUnderageAppealStatus from "AutomatedUnderageAppealStatus" /* 14174 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "hasFetchedCredentials" /* 14145 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 8238 */;
+import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11098 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { WebAuthnScreens } from "WebAuthnScreens" /* 14146 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_12;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function PasswordlessUpsell() {
   const tmp = callback4();
   let obj = _require(1500);
   _require = obj.useNavigation();
   obj = { style: tmp.upsellPasswordless, children: null };
   obj = { border: "none", shadow: "none", children: null };
-  const obj1 = { style: { flexDirection: "row", gap: 8 }, children: null };
+  obj1 = { style: { flexDirection: "row", gap: 8 }, children: null };
   const obj2 = { style: { width: 70, height: 70 }, children: null };
-  const obj3 = { source: null, resizeMode: "contain", style: null };
-  obj3[0] = _require(14079);
-  obj3[2] = tmp.upsellImagePasswordless;
-  obj2[1] = callback2(importDefault(5449), obj3);
+  const obj3 = { source: _require(14147), resizeMode: "contain", style: tmp.upsellImagePasswordless };
+  obj2[1] = callback2(preloadDefault, obj3);
   const items = [callback2(View, obj2), ];
   const obj4 = { style: { flex: 1 }, children: null };
   const obj5 = { style: { flexShrink: 1, width: "90%", gap: 8 }, children: null };
   const obj6 = { variant: "heading-lg/medium", color: "mobile-text-heading-primary", children: null };
   const intl = _require(1236).intl;
   obj6[2] = intl.string(_require(1236).t["+Svv46"]);
-  const items1 = [callback2(_require(4734).Heading, obj6), , ];
+  const items1 = [callback2(_require(4739).Heading, obj6), , ];
   const obj7 = { variant: "text-md/normal", color: "text-muted", children: null };
   const intl2 = _require(1236).intl;
   obj7[2] = intl2.string(_require(1236).t.S0g2K9);
-  items1[1] = callback2(_require(4734).Text, obj7);
+  items1[1] = callback2(_require(4739).Text, obj7);
   const obj8 = { style: { flexDirection: "row" }, children: null };
   const obj9 = { text: null, onPress: null, size: "sm" };
   const intl3 = _require(1236).intl;
   obj9[0] = intl3.string(_require(1236).t.piGf5c);
   obj9[1] = function onPress() {
-    let obj = outer1_1(outer1_2[18]);
-    obj = { navigation: callback, initialRouteName: outer1_10.REGISTER, showNav: true };
-    obj.pushLazy(callback(outer1_2[20])(outer1_2[19], outer1_2.paths), obj);
+    let obj = closure_1_1(closure_1_2[18]);
+    obj = { navigation: callback, initialRouteName: closure_1_10.REGISTER, showNav: true };
+    obj.pushLazy(callback(closure_1_2[20])(closure_1_2[19], closure_1_2.paths), obj);
   };
-  const items2 = [callback2(_require(4745).Button, obj9), callback2(View, {})];
+  const items2 = [callback2(_require(4750).Button, obj9), callback2(View, {})];
   obj8[1] = items2;
   items1[2] = callback3(View, obj8);
   obj5[1] = items1;
@@ -59,18 +63,18 @@ function PasswordlessUpsell() {
   items[1] = callback2(View, obj4);
   obj1[1] = items;
   obj[2] = callback3(View, obj1);
-  obj[1] = callback2(_require(6292).Card, obj);
+  obj[1] = callback2(_require(6323).Card, obj);
   return callback2(View, obj);
 }
 function AccountTwoFALabel() {
   let obj = first(isUserVerified[21]);
-  let items = [hasFetchedCredentials];
+  let items = [closure_6];
   const tmp3 = callback(obj.useStateFromStoresObject(items, () => {
-    const items = [hasFetchedCredentials.hasCredentials, hasFetchedCredentials.hasFetchedCredentials()];
+    const items = [closure_6.hasCredentials, closure_6.hasFetchedCredentials()];
     return items;
   }), 2);
   first = tmp3[0];
-  const importDefault = tmp5;
+  closure_1 = tmp5;
   isUserVerified = first(isUserVerified[22]).useIsUserVerified();
   const items1 = [tmp3[1], first, isUserVerified];
   const memo = importAllResult.useMemo(() => {
@@ -102,7 +106,7 @@ function AccountTwoFALabel() {
 }
 function AccountSecurityPage() {
   const node = importAllResult.useMemo(() => {
-    let obj = callback(10669);
+    let obj = callback(10708);
     obj = { sections: null, ListHeaderComponent: null };
     obj = { label: null, settings: null };
     const intl = callback(1236).intl;
@@ -122,35 +126,33 @@ function AccountSecurityPage() {
     obj2[1] = items3;
     items1[2] = obj2;
     obj[0] = items1.filter(Boolean);
-    obj[1] = callback2(14103);
+    obj[1] = callback2(14171);
     return obj.createList(obj);
   }, []);
-  return callback2(importDefault(13991), { node });
+  return callback2(_modDef14059, { node });
 }
 function AccountStandingPage() {
-  return callback2(require(14106) /* AutomatedUnderageAppealStatus */.default, { visible: true });
+  return callback2(AutomatedUnderageAppealStatus.default, { visible: true });
 }
 let c4 = importAllResult;
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = jsxProd);
 let obj = { upsellPasswordless: null, upsellImagePasswordless: null, controlContainer: null, pageContainer: null, standingPage: null };
-obj = { marginBottom: 16, borderColor: require("Themes").colors.REDESIGN_INPUT_CONTROL_SELECTED, borderWidth: 1, borderRadius: require("Themes").radii.lg };
+obj = { marginBottom: 16, borderColor: ThemesDefault.colors.REDESIGN_INPUT_CONTROL_SELECTED, borderWidth: 1, borderRadius: ThemesDefault.radii.lg };
 obj[0] = obj;
 obj[1] = { height: "100%", width: "100%" };
-createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16 };
+createCacheKey = { paddingHorizontal: ThemesDefault.space.PX_16, paddingTop: ThemesDefault.space.PX_16 };
 obj[2] = createCacheKey;
 obj[3] = { flex: 1 };
-obj[4] = { paddingTop: require("Themes").space.PX_24 };
+obj[4] = { paddingTop: ThemesDefault.space.PX_24 };
 let closure_14 = createCacheKey.createStyles(obj);
-let obj2 = { paddingTop: require("Themes").space.PX_24 };
+let obj2 = { paddingTop: ThemesDefault.space.PX_24 };
 const memoResult = importAllResult.memo(() => {
-  let require;
-  let tmp3;
   const tmp = callback4();
   [tmp3, require] = callback(importAllResult.useState(0), 2);
   callback = importAllResult.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj = require(7385) /* useSettingNavigationRoute */;
+  let obj = useSettingNavigationRoute;
   const params = obj.useSettingNavigationRoute().params;
   let initialTab;
   if (params != null) {
@@ -160,15 +162,15 @@ const memoResult = importAllResult.memo(() => {
   obj = { items: null, pageWidth: null, defaultIndex: null, onSetActiveIndex: null };
   obj = { label: null, id: null, page: null };
   const intl = tmp5(1236).intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.Am9YHi);
+  obj[0] = intl.string(getSystemLocale.t.Am9YHi);
   obj[1] = AccountSettingsTabs.SECURITY;
   obj[2] = callback2(AccountSecurityPage, {});
   const items = [obj, ];
-  const obj1 = { label: null, id: null, page: null };
+  obj1 = { label: null, id: null, page: null };
   const intl2 = tmp5(1236).intl;
-  obj1[0] = intl2.string(require(1236) /* getSystemLocale */.t["00Sfl/"]);
+  obj1[0] = intl2.string(getSystemLocale.t["00Sfl/"]);
   obj1[1] = AccountSettingsTabs.STANDING;
-  const tmp5Result = require(8799) /* useSegmentedControlState */;
+  const tmp5Result = useSegmentedControlState;
   obj1[2] = callback2(View, { style: tmp.standingPage, children: callback2(AccountStandingPage, {}) });
   items[1] = obj1;
   obj[0] = items;
@@ -189,12 +191,12 @@ const memoResult = importAllResult.memo(() => {
   const segmentedControlState = tmp5Result.useSegmentedControlState(obj);
   const obj3 = { children: null };
   const obj2 = { style: tmp.standingPage, children: callback2(AccountStandingPage, {}) };
-  const items1 = [callback2(View, { style: tmp.controlContainer, onLayout: callback, children: callback2(require(10096) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) }), ];
-  const obj4 = { style: tmp.controlContainer, onLayout: callback, children: callback2(require(10096) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) };
-  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(require(11785) /* SegmentedControlPage */.SegmentedControlPages, { state: segmentedControlState }) });
+  const items1 = [callback2(View, { style: tmp.controlContainer, onLayout: callback, children: callback2(SegmentedControl.SegmentedControl, { state: segmentedControlState }) }), ];
+  const obj4 = { style: tmp.controlContainer, onLayout: callback, children: callback2(SegmentedControl.SegmentedControl, { state: segmentedControlState }) };
+  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(SegmentedControlPage.SegmentedControlPages, { state: segmentedControlState }) });
   obj3[0] = items1;
   return callback3(closure_13, obj3);
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountScreen.tsx");
 
 export default memoResult;

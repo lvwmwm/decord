@@ -1,13 +1,16 @@
-// Module ID: 4719
-// Function ID: 4720
+// Module ID: 4725
+// Function ID: 4726
 // Name: _updateAccessibilityFocusLock
-// Dependencies: [17, 3, 4720, 4721, 500, 4722, 2]
+// Dependencies: [3, 4726, 4727, 4665, 2]
 
-// Module 4719 (_updateAccessibilityFocusLock)
-import { NativeModules } from "get ActivityIndicator";
-import "initialize";
+// Module 4725 (_updateAccessibilityFocusLock)
+import timestampDefault from "timestamp" /* 3 */;
+import initializeDefault from "initialize" /* 4726 */;
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4727 */;
 
-let c4 = new require("SCREEN_READER_ENABLED_GETTER")("AccessibilityFocusLockManager");
+require = arg1;
+let closure_3 = new timestampDefault("AccessibilityFocusLockManager");
+initializeDefault;
 class AccessibilityFocusLockManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -29,46 +32,33 @@ prototype["_updateAccessibilityFocusLock"] = function _updateAccessibilityFocusL
   }
   const self = this;
   let tmp;
-  let importDefault;
+  let item10014;
   clearTimeout(this._focusLockEnabledDelayTimeoutId);
-  importDefault = undefined;
+  item10014 = undefined;
   const _focusLockedNativeIDGroups = this._focusLockedNativeIDGroups;
   const values = _focusLockedNativeIDGroups.values();
   for (const item10014 of values) {
     tmp = item10014;
-    importDefault = item10014;
     continue;
   }
   if (null != tmp) {
     if (self._screenReaderEnabled) {
       const _setTimeout = setTimeout;
       self._focusLockEnabledDelayTimeoutId = setTimeout(() => {
-        if (obj.isAndroid()) {
-          _undefined(outer1_2[5]).enableFocusLock(_undefined, flag);
-          const obj2 = _undefined(outer1_2[5]);
-        } else {
-          const DCDAccessibilityManager = outer1_3.DCDAccessibilityManager;
-          DCDAccessibilityManager.enableFocusLock(_undefined, flag);
-        }
+        item10014(closure_1_2[3]).enableFocusLock(item10014, flag);
       }, self._focusLockEnabledDelayTimeout);
       self._focusLockEnabled = true;
     }
   }
   if (self._focusLockEnabled) {
-    if (obj.isAndroid()) {
-      importDefault(4722).disableFocusLock();
-      let obj2 = importDefault(4722);
-    } else {
-      let DCDAccessibilityManager = NativeModules.DCDAccessibilityManager;
-      DCDAccessibilityManager.disableFocusLock();
-    }
+    item10014(4665).disableFocusLock();
     self._focusLockEnabled = false;
-    obj = flag(500);
+    const obj = item10014(4665);
   }
 };
 prototype["_initialize"] = function _initialize() {
   const self = this;
-  this._screenReaderEnabledListener = self(4721).addScreenReaderEnabledListener((_screenReaderEnabled) => {
+  this._screenReaderEnabledListener = self(4727).addScreenReaderEnabledListener((_screenReaderEnabled) => {
     self._screenReaderEnabled = _screenReaderEnabled;
     const result = self._updateAccessibilityFocusLock();
   });
@@ -85,7 +75,7 @@ prototype["_terminate"] = function _terminate() {
 };
 prototype["enableAccessibilityFocusLock"] = function enableAccessibilityFocusLock(items) {
   if (0 === items.length) {
-    tmp2.error("No target view nativeIDs to add.");
+    logger.error("No target view nativeIDs to add.");
   }
   const self = this;
   const _focusLockedNativeIDGroups = this._focusLockedNativeIDGroups;
@@ -98,10 +88,10 @@ prototype["enableAccessibilityFocusLock"] = function enableAccessibilityFocusLoc
     for (const item10024 of nextResult) {
       let tmp7 = item10024;
       if (arg0.includes(item10024)) {
-        let tmp8 = tmp2;
+        let tmp8 = logger;
         let tmp9 = item10024;
         let _HermesInternal = HermesInternal;
-        let errorResult1 = tmp2.error("Duplicate target view nativeID " + tmp7 + " already accessibility focus locked.");
+        let errorResult1 = logger.error("Duplicate target view nativeID " + tmp7 + " already accessibility focus locked.");
       }
       continue;
     }
@@ -113,20 +103,20 @@ prototype["enableAccessibilityFocusLock"] = function enableAccessibilityFocusLoc
 };
 prototype["disableAccessibilityFocusLock"] = function disableAccessibilityFocusLock(items1) {
   if (0 === items1.length) {
-    tmp2.error("No target view nativeIDs to remove.");
+    logger.error("No target view nativeIDs to remove.");
   }
   const self = this;
   const _focusLockedNativeIDGroups = this._focusLockedNativeIDGroups;
   if (!_focusLockedNativeIDGroups.has(items1[0])) {
     const _HermesInternal = HermesInternal;
-    tmp2.error("No target view nativeID " + items1[0] + " accessibility focus locked.");
+    logger.error("No target view nativeID " + items1[0] + " accessibility focus locked.");
   }
   const _focusLockedNativeIDGroups2 = self._focusLockedNativeIDGroups;
   _focusLockedNativeIDGroups2.delete(items1[0]);
   const result = self._updateAccessibilityFocusLock();
 };
 const accessibilityFocusLockManager = new AccessibilityFocusLockManager();
-const tmp2 = new require("SCREEN_READER_ENABLED_GETTER")("AccessibilityFocusLockManager");
-let result = require("initialize").fileFinishedImporting("modules/a11y/native/AccessibilityFocusLockManager.tsx");
+const tmp2 = new timestampDefault("AccessibilityFocusLockManager");
+let result = require("set").fileFinishedImporting("modules/a11y/native/AccessibilityFocusLockManager.tsx");
 
 export default accessibilityFocusLockManager;

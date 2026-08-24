@@ -1,17 +1,18 @@
-// Module ID: 13548
-// Function ID: 13549
+// Module ID: 13606
+// Function ID: 13607
 // Name: IntlLink
-// Dependencies: [19, 21, 4661, 712, 1356, 4090, 4092, 1297, 2]
+// Dependencies: [19, 21, 4668, 712, 1356, 4093, 4095, 1297, 2]
 // Exports: IntlLink
 
-// Module 13548 (IntlLink)
-import noop from "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13606 (IntlLink)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_5 = createCacheKey.createStyles((arg0) => {
-  const link = { color: importDefault(712).colors.TEXT_LINK, textDecorationLine: null };
+  const link = { color: ThemesDefault.colors.TEXT_LINK, textDecorationLine: null };
   let str = "none";
   if (arg0) {
     str = "underline";
@@ -19,14 +20,14 @@ let closure_5 = createCacheKey.createStyles((arg0) => {
   link[1] = str;
   return { link };
 });
-const result = require("createCacheKey").fileFinishedImporting("intl/native/migration.tsx");
+const result = require("set").fileFinishedImporting("intl/native/migration.tsx");
 
 export const IntlLink = function IntlLink(children) {
   const target = children.target;
   if (typeof target === "string") {
     let fn = () => {
-      const obj = outer1_1(outer1_2[5]);
-      return obj.openURL(outer1_1(outer1_2[6]).sanitizeUrl(target));
+      const obj = closure_1_1(closure_1_2[5]);
+      return obj.openURL(closure_1_1(closure_1_2[6]).sanitizeUrl(target));
     };
   } else {
     fn = target;

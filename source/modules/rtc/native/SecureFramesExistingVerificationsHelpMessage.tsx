@@ -1,23 +1,24 @@
-// Module ID: 9719
-// Function ID: 9720
+// Module ID: 9758
+// Function ID: 9759
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 4661, 9720, 1297, 1236, 2]
+// Dependencies: [17, 21, 4668, 9759, 1297, 1236, 2]
 // Exports: default
 
-// Module 9719 (SecureFramesExistingVerificationsHelpMessage)
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9758 (SecureFramesExistingVerificationsHelpMessage)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 9759 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+const View = get_ActivityIndicator.View;
+const jsx = jsxProd.jsx;
 let closure_4 = createCacheKey.createStyles({ container: { width: "100%" } });
-const result = require("createCacheKey").fileFinishedImporting("modules/rtc/native/SecureFramesExistingVerificationsHelpMessage.tsx");
+const result = set.fileFinishedImporting("modules/rtc/native/SecureFramesExistingVerificationsHelpMessage.tsx");
 
 export default function SecureFramesExistingVerificationsHelpMessage(arg0) {
-  let style;
-  let userId;
-  let userKey;
   ({ style, userId, userKey } = arg0);
-  let obj = require(9720) /* useSecureFramesUserVerifiedKeysCount */;
+  let obj = useSecureFramesUserVerifiedKeysCount;
   const secureFramesUserVerifiedKeysCount = obj.useSecureFramesUserVerifiedKeysCount({ userId, keyToOmit: userKey });
   let tmp5 = null;
   if (0 !== secureFramesUserVerifiedKeysCount) {
@@ -27,7 +28,7 @@ export default function SecureFramesExistingVerificationsHelpMessage(arg0) {
     obj = { messageType: null, children: null };
     obj[0] = tmp2(1297).HelpMessageTypes.INFO;
     const intl = tmp2(1236).intl;
-    const obj1 = { count: null };
+    obj1 = { count: null };
     obj1[0] = secureFramesUserVerifiedKeysCount;
     obj[1] = intl.format(tmp2(1236).t.uZDkz0, obj1);
     obj[1] = jsx(tmp2(1297).HelpMessage, { messageType: null, children: null });

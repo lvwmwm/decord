@@ -1,10 +1,12 @@
-// Module ID: 11148
-// Function ID: 11149
+// Module ID: 11187
+// Function ID: 11188
 // Name: VoiceMessageAnimationState
 // Dependencies: [2]
 
-// Module 11148 (VoiceMessageAnimationState)
-const result = require("set").fileFinishedImporting("modules/voice_messages/VoiceMessageConstants.tsx");
+// Module 11187 (VoiceMessageAnimationState)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/voice_messages/VoiceMessageConstants.tsx");
 
 export const VoiceMessageAnimationState = { SENDING: 0, [0]: "SENDING", CANCELLING: 1, [1]: "CANCELLING", LOCKING: 2, [2]: "LOCKING", LOCKED: 3, [3]: "LOCKED" };
 export const VOICE_RECORDING_MIN_DB = -100;

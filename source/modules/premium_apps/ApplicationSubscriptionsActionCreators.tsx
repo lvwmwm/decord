@@ -1,15 +1,14 @@
-// Module ID: 13863
-// Function ID: 13864
+// Module ID: 13928
+// Function ID: 13929
 // Name: transformSubscriptionListingToSku
-// Dependencies: [5, 676, 709, 8736, 7223, 2]
+// Dependencies: [5, 676, 709, 8773, 7261, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 13863 (transformSubscriptionListingToSku)
-import set from "set";
-import ME from "ME";
+// Module 13928 (transformSubscriptionListingToSku)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
 function transformSubscriptionListingToSku(id) {
   return { id: id.id, type: constants2.SUBSCRIPTION, application_id: id.application_id, product_line: constants.APPLICATION, name: id.name, summary: "", description: id.description, flags: id.sku_flags, manifests: [], available_regions: [], legal_notice: "", deleted: id.soft_deleted, price_tier: 0, show_age_gate: false, restricted: false };
 }
@@ -25,18 +24,18 @@ function transformSubscriptionListingToStoreListing(id) {
   return obj;
 }
 function dispatchCompat(arr) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "SKUS_FETCH_SUCCESS", skus: arr.map(transformSubscriptionListingToSku) };
   obj.dispatch(obj);
   obj = { type: "STORE_LISTINGS_FETCH_SUCCESS", storeListings: arr.map(transformSubscriptionListingToStoreListing) };
-  importDefault(709).dispatch(obj);
+  dispatcherDefault.dispatch(obj);
   const iter = arr[Symbol.iterator]();
-  const obj3 = importDefault(709);
+  const obj3 = dispatcherDefault;
   while (iter !== undefined) {
     let tmp4 = importDefault;
     let tmp5 = dependencyMap;
-    let obj5 = importDefault(709);
-    let obj1 = { type: "SUBSCRIPTION_PLANS_FETCH_SUCCESS", skuId: null, subscriptionPlans: null };
+    let obj5 = dispatcherDefault;
+    obj1 = { type: "SUBSCRIPTION_PLANS_FETCH_SUCCESS", skuId: null, subscriptionPlans: null };
     ({ id: obj6[1], subscription_plans: obj6[2] } = nextResult);
     let dispatchResult2 = obj5.dispatch(obj1);
     continue;
@@ -45,20 +44,20 @@ function dispatchCompat(arr) {
 function _fetchAllSubscriptionListingsDataForApplication() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, arg1) {
-      let closure_4 = tmp3;
-      const obj1 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS", applicationId: null, groupListingId: null };
+      closure_4 = tmp3;
+      obj1 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS", applicationId: null, groupListingId: null };
       obj1[1] = callback;
       obj1[2] = lib;
-      callback(outer1_2[2]).dispatch(obj1);
-      let c6 = 1;
-      const obj10 = callback(outer1_2[2]);
-      yield lib(outer1_2[3]).getApplicationSubscriptionGroupListingsForApplication(callback, lib);
+      callback(closure_1_2[2]).dispatch(obj1);
+      c6 = 1;
+      const obj10 = callback(closure_1_2[2]);
+      yield lib(closure_1_2[3]).getApplicationSubscriptionGroupListingsForApplication(callback, lib);
       c6 = 0;
       const obj2 = callback(709);
       const obj3 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE", applicationId: null };
@@ -70,7 +69,7 @@ function _fetchAllSubscriptionListingsDataForApplication() {
       obj5[2] = lib;
       callback(709).dispatch(obj5);
       const subscription_listings = lib.subscription_listings;
-      let dependencyMap = subscription_listings;
+      dependencyMap = subscription_listings;
       if (subscription_listings == null) {
         dependencyMap = [];
       }
@@ -79,7 +78,7 @@ function _fetchAllSubscriptionListingsDataForApplication() {
       return lib;
     })();
   });
-  const _fetchAllSubscriptionListingsDataForApplication = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -91,30 +90,30 @@ function _fetchAllSubscriptionListingsDataForApplication() {
 function _fetchEntitlementsForGuild() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0) {
-      const dependencyMap = tmp3;
-      const obj1 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS", guildId: null };
+      dependencyMap = tmp3;
+      obj1 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS", guildId: null };
       obj1[1] = callback;
-      callback(outer1_2[2]).dispatch(obj1);
-      let c4 = 1;
-      const obj9 = callback(outer1_2[2]);
-      yield outer1_1(outer1_2[3]).getEntitlementsForGuild(callback);
+      callback(closure_1_2[2]).dispatch(obj1);
+      c4 = 1;
+      const obj9 = callback(closure_1_2[2]);
+      yield closure_1_1(closure_1_2[3]).getEntitlementsForGuild(callback);
       if (1 === tmp7) {
         c4 = 0;
         let obj3 = callback(709);
         obj3 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_FAILURE", guildId: null };
         obj3[1] = callback;
         obj3.dispatch(obj3);
-        let c6 = 3;
+        c6 = 3;
       } else if (arg0 === 1) {
         c6 = 3;
         throw arg1;
       } else if (arg0 !== 2) {
-        let closure_1 = arg1;
+        closure_1 = arg1;
         const obj = callback(709);
         const obj4 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS", guildId: null, entitlements: null };
         obj4[1] = callback;
@@ -126,7 +125,7 @@ function _fetchEntitlementsForGuild() {
       return arg1;
     })();
   });
-  const _fetchEntitlementsForGuild = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -148,11 +147,11 @@ function fetchSubscriptionListingForPlan() {
 function _fetchSubscriptionListingForPlan() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     const iter = (function*(arg0) {
       if (v0 === 2) {
         v0 = 3;
@@ -165,7 +164,7 @@ function _fetchSubscriptionListingForPlan() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -181,13 +180,13 @@ function _fetchSubscriptionListingForPlan() {
               return obj;
             } else {
               let status = tmp3;
-              let set = tmp7;
+              closure_3 = tmp7;
               let num13;
               if (num13 === undefined) {
                 num13 = 0;
               }
               obj = undefined;
-              set = undefined;
+              closure_3 = undefined;
               c7 = 1;
               v0 = 1;
               return { value: "ct", done: true };
@@ -198,14 +197,14 @@ function _fetchSubscriptionListingForPlan() {
               throw arg1;
             } else if (arg0 === 2) {
               v0 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
               const obj2 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN", planId: null };
               obj2[1] = callback;
               callback(obj[2]).dispatch(obj2);
-              let c6 = 1;
+              c6 = 1;
               const obj12 = callback(obj[2]);
               c7 = 3;
               v0 = 1;
@@ -250,11 +249,11 @@ function _fetchSubscriptionListingForPlan() {
               if (subscription_listings == null) {
                 obj = [];
               }
-              set = obj;
+              closure_3 = obj;
               c7 = 4;
               v0 = 1;
               const obj7 = { value: null, done: false };
-              obj7[0] = Promise.all(set.map((id) => {
+              obj7[0] = Promise.all(closure_3.map((id) => {
                 if (id.subscription_plans[0].id === closure_0) {
                   const obj = num13(table[4]);
                   return obj.fetchSubscriptionPlansForSKU(id.id, undefined, undefined, true);
@@ -274,7 +273,7 @@ function _fetchSubscriptionListingForPlan() {
                 obj8[0] = arg1;
                 return obj8;
               } else {
-                v0(set);
+                v0(closure_3);
                 c6 = 0;
               }
             } else if (arg0 === 1) {
@@ -287,7 +286,7 @@ function _fetchSubscriptionListingForPlan() {
               return obj;
             }
             v0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp33) {
           closure_5 = tmp33;
@@ -303,7 +302,7 @@ function _fetchSubscriptionListingForPlan() {
     iter.next();
     return iter;
   });
-  const _fetchSubscriptionListingForPlan = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -313,7 +312,7 @@ function _fetchSubscriptionListingForPlan() {
   return applyArgumentsResult;
 }
 ({ SKUProductLines: c4, SKUTypes: c5 } = ME);
-const result = require("dispatcher").fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionsActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionsActionCreators.tsx");
 
 export const fetchAllSubscriptionListingsDataForApplication = function fetchAllSubscriptionListingsDataForApplication(closure_0, id) {
   const self = this;
@@ -336,7 +335,7 @@ export const fetchEntitlementsForGuild = function fetchEntitlementsForGuild() {
   return applyArgumentsResult;
 };
 export const dismissApplicationSubscriptionExpirationNotice = function dismissApplicationSubscriptionExpirationNotice(guildId) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED", guildId };
   obj.dispatch(obj);
 };

@@ -1,12 +1,14 @@
-// Module ID: 13227
-// Function ID: 13228
+// Module ID: 13282
+// Function ID: 13283
 // Name: getInitialState
-// Dependencies: [7250, 13228, 13229, 2]
+// Dependencies: [7288, 13283, 13284, 2]
 
-// Module 13227 (getInitialState)
-import filterPlayingActivities from "filterPlayingActivities";
-import "shouldCommit";
+// Module 13282 (getInitialState)
+import shouldCommitDefault from "shouldCommit" /* 13283 */;
+import rateLimitDefault from "rateLimit" /* 13284 */;
+import closure_2 from "filterPlayingActivities" /* 7288 */;
 
+shouldCommitDefault;
 class LocalPresenceStateManager extends tmp2 {
   constructor(arg0) {
     tmp3 = new LocalPresenceStateManager(false, tmp2, tmp, new.target, new.target);
@@ -43,6 +45,6 @@ prototype["handleAccountSwitch"] = function handleAccountSwitch() {
   this.reset();
   this.emitPresenceUpdate(this.getState());
 };
-const result = require("rateLimit").fileFinishedImporting("modules/gateway/LocalPresenceStateManager.tsx");
+const result = require("set").fileFinishedImporting("modules/gateway/LocalPresenceStateManager.tsx");
 
 export default LocalPresenceStateManager;

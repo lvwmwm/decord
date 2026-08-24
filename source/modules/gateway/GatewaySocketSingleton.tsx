@@ -1,38 +1,46 @@
-// Module ID: 13187
-// Function ID: 13188
+// Module ID: 13242
+// Function ID: 13243
 // Name: handleIdentify
-// Dependencies: [1218, 3, 13188, 13227, 13230, 10501, 698, 675, 500, 4004, 1474, 709, 2]
+// Dependencies: [1218, 3, 13243, 13282, 13285, 10540, 698, 675, 500, 4007, 1474, 709, 2]
 
-// Module 13187 (handleIdentify)
-import fetchFingerprint from "fetchFingerprint";
-import set from "set";
-import importDefaultResult from "awaitOnline";
-import set from "noop";
+// Module 13242 (handleIdentify)
+import timestampDefault from "timestamp" /* 3 */;
+import setRequestedByAll from "setRequestedBy" /* 675 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import setDefault from "set" /* 4007 */;
+import _modDef10540 from "module_10540" /* 10540 */;
+import noopDefault from "noop" /* 13243 */;
+import getInitialStateDefault from "getInitialState" /* 13282 */;
+import guildIdDefault from "guildId" /* 13285 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import set from "set" /* 500 */;
+import importDefaultResult from "awaitOnline" /* 1474 */;
 
-let c4 = new require("getInitialState")("ConnectionStore");
-let obj = new require("noop")();
-const tmp3 = new require("getInitialState")(obj);
+let closure_4 = new timestampDefault("ConnectionStore");
+let obj = new noopDefault();
+const tmp3 = new getInitialStateDefault(obj);
 let closure_6 = tmp3;
-const tmp2 = new require("getInitialState")("ConnectionStore");
+const tmp2 = new timestampDefault("ConnectionStore");
 obj.handleIdentify = () => {
-  let obj = token;
+  obj = token;
   token = token.getToken();
   obj = { hasToken: null != token };
-  tmp2.verbose("handleIdentify called", obj);
+  closure_4.verbose("handleIdentify called", obj);
   if (null == token) {
     return null;
   } else {
-    const state = importDefault(10501).getState();
+    const state = _modDef10540.getState();
     const installationForTracking = obj.getInstallationForTracking();
     obj = { token: null, properties: null, presence: null };
     obj[0] = token;
-    const obj1 = {};
-    const obj5 = importDefault(10501);
-    const merged = Object.assign(importDefault(698).getSuperProperties());
+    obj1 = {};
+    const obj5 = _modDef10540;
+    const merged = Object.assign(expandEventPropertiesDefault.getSuperProperties());
     obj1.client_app_state = state;
     obj1.is_fast_connect = false;
-    const obj8 = importDefault(698);
-    obj1.gateway_connect_reasons = importAll(675).describeConnectionReasons();
+    const obj8 = expandEventPropertiesDefault;
+    obj1.gateway_connect_reasons = setRequestedByAll.describeConnectionReasons();
     if (null != installationForTracking) {
       const obj2 = { installation_id: null };
       obj2[0] = installationForTracking;
@@ -42,34 +50,30 @@ obj.handleIdentify = () => {
     }
     const merged1 = Object.assign(obj3);
     obj[1] = obj1;
-    obj[2] = obj1.getInitialState();
+    obj[2] = initialState.getInitialState();
     return obj;
   }
 };
 if (set.isDesktop()) {
-  const powerMonitor = require("set").powerMonitor;
+  const powerMonitor = setDefault.powerMonitor;
   powerMonitor.on("resume", () => {
     obj.expeditedHeartbeat(5000, "power monitor resumed");
   });
 }
-const tmp4 = new require("guildId")(obj);
-require("awaitOnline").addOfflineCallback(() => {
+const tmp4 = new guildIdDefault(obj);
+importDefaultResult.addOfflineCallback(() => {
   obj.networkStateChange(15000, "network detected offline.", false);
 });
-require("awaitOnline").addOnlineCallback(() => {
+importDefaultResult.addOnlineCallback(() => {
   obj.networkStateChange(5000, "network detected online.");
 });
 obj.on("disconnect", (arg0) => {
-  let code;
-  let reason;
   ({ code, reason } = arg0);
-  importDefault(709).dispatch({ type: "CONNECTION_CLOSED", code, reason });
+  dispatcherDefault.dispatch({ type: "CONNECTION_CLOSED", code, reason });
 });
 obj.on("close", (arg0) => {
-  let code;
-  let reason;
   ({ code, reason } = arg0);
-  importDefault(709).dispatch({ type: "CONNECTION_INTERRUPTED", code, reason });
+  dispatcherDefault.dispatch({ type: "CONNECTION_INTERRUPTED", code, reason });
 });
 const result = set.fileFinishedImporting("modules/gateway/GatewaySocketSingleton.tsx");
 

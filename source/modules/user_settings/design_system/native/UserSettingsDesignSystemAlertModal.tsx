@@ -1,19 +1,20 @@
-// Module ID: 14913
-// Function ID: 14914
+// Module ID: 14977
+// Function ID: 14978
 // Name: DemoModal
-// Dependencies: [5, 19, 17, 21, 4660, 4657, 4661, 4745, 2]
+// Dependencies: [5, 19, 17, 21, 4667, 4663, 4668, 4750, 2]
 // Exports: default
 
-// Module 14913 (DemoModal)
-import useAlertStore from "useAlertStore";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14977 (DemoModal)
+import useAlertStore from "useAlertStore" /* 4663 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import Button from "Button" /* 4750 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function DemoModal() {
   callback = React.useCallback(callback(function*() {
     if (c0 === 2) {
@@ -27,7 +28,7 @@ function DemoModal() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -45,7 +46,7 @@ function DemoModal() {
             const promise = new Promise((arg0) => setTimeout(arg0, 2000));
             c1 = 1;
             c0 = 1;
-            const obj1 = { value: null, done: false };
+            obj1 = { value: null, done: false };
             obj1[0] = promise;
             return obj1;
           }
@@ -59,7 +60,7 @@ function DemoModal() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c0 = tmp;
@@ -68,20 +69,20 @@ function DemoModal() {
     }
   }), []);
   let obj = { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null };
-  const items = [jsx(require(4660) /* getAlertModalItemKey */.AlertActionButton, { variant: "destructive", onPress: callback, text: "Clear" }, "clear"), jsx(require(4660) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary", onPress: callback, text: "Cancel" }, "cancel")];
+  const items = [jsx(getAlertModalItemKey.AlertActionButton, { variant: "destructive", onPress: callback, text: "Clear" }, "clear"), jsx(getAlertModalItemKey.AlertActionButton, { variant: "secondary", onPress: callback, text: "Cancel" }, "cancel")];
   obj[2] = items;
-  return jsx(require(4660) /* getAlertModalItemKey */.AlertModal, { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null });
+  return jsx(getAlertModalItemKey.AlertModal, { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null });
 }
 function openDemoModal() {
-  require(4657) /* useAlertStore */.openAlert("demo-1", <DemoModal />);
+  useAlertStore.openAlert("demo-1", <DemoModal />);
 }
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
 let closure_9 = createCacheKey.createStyles({ container: { padding: 16, flex: 1, alignItems: "center" } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemAlertModal.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemAlertModal.tsx");
 
 export default function UserSettingsDesignSystemAlertModal() {
   let obj = { children: null };
-  obj = { style: callback2().container, children: jsx(require(4745) /* Button */.Button, { children: null }) };
+  obj = { style: callback2().container, children: jsx(Button.Button, { children: null }) };
   obj = { onPress: openDemoModal, text: "Show Alert" };
   obj[0] = <closure_4 onPress={openDemoModal} text="Show Alert" />;
   return <closure_5 onPress={openDemoModal} text="Show Alert" />;

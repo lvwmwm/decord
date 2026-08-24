@@ -1,28 +1,36 @@
-// Module ID: 7262
-// Function ID: 7263
+// Module ID: 7300
+// Function ID: 7301
 // Name: _enqueue
-// Dependencies: [676, 1913, 7263, 7264, 7265, 4259, 12, 2]
+// Dependencies: [676, 1913, 7301, 7302, 7303, 4263, 12, 2]
 
-// Module 7262 (_enqueue)
-import { ME } from "ME";
+// Module 7300 (_enqueue)
+import set5 from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+import ME2 from "ME" /* 676 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
+import resetDefault from "reset" /* 7301 */;
+import reset from "reset" /* 7302 */;
+import resetDefault2 from "reset" /* 7302 */;
+import resetDefault3 from "reset" /* 7303 */;
 
-const result = require("reset").fileFinishedImporting("lib/guild/GuildSubscriptions.tsx");
+const ME = ME2.ME;
+const result = set5.fileFinishedImporting("lib/guild/GuildSubscriptions.tsx");
 class GuildSubscriptions {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     tmp2 = new require("reset")((guildId, members) => {
-      const obj = { members };
+      obj = { members };
       return obj._enqueue(guildId, obj);
     });
     obj._members = tmp2;
     tmp3 = new require("reset")((guildId, channels) => {
-      const obj = { channels };
+      obj = { channels };
       return obj._enqueue(guildId, obj);
     });
     obj._channels = tmp3;
     tmp4 = new require("reset")((guildId, thread_member_lists) => {
-      const obj = { thread_member_lists };
+      obj = { thread_member_lists };
       return obj._enqueue(guildId, obj);
     });
     obj._threadMemberLists = tmp4;
@@ -71,13 +79,6 @@ prototype["reset"] = function reset() {
   _activities.clear();
 };
 prototype["get"] = function get(arg0) {
-  let _activities;
-  let _channels;
-  let _memberUpdates;
-  let _members;
-  let _threadMemberLists;
-  let _threads;
-  let _typing;
   ({ _typing, _threads, _activities, _members, _memberUpdates, _channels, _threadMemberLists } = this);
   return { typing: _typing.has(arg0), threads: _threads.has(arg0), activities: _activities.has(arg0), members: _members.get(arg0), member_updates: _memberUpdates.has(arg0), channels: _channels.get(arg0), thread_member_lists: _threadMemberLists.get(arg0) };
 };
@@ -139,7 +140,7 @@ prototype["clearWithoutFlushing"] = function clearWithoutFlushing(id, c0) {
 };
 prototype["flush"] = function flush() {
   const self = this;
-  const item = importDefault(12).forEach(this._pending, (arg0, arg1) => {
+  const item = applyDefault.forEach(this._pending, (arg0, arg1) => {
     const _subscribed = self._subscribed;
     _subscribed.add(arg1);
   });
@@ -158,8 +159,8 @@ prototype["subscribeUser"] = function subscribeUser(closure_0, userId) {
     tmp = "undefined" !== closure_0;
   }
   if (tmp) {
-    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(closure_0);
-    const obj = require(1913) /* getFavoritesAwareGuildName */;
+    tmp = !getFavoritesAwareGuildName.isFavoritesGuildId(closure_0);
+    const obj = getFavoritesAwareGuildName;
   }
   if (tmp) {
     const self = this;
@@ -179,8 +180,8 @@ prototype["unsubscribeUser"] = function unsubscribeUser(closure_0, userId) {
     tmp = "undefined" !== closure_0;
   }
   if (tmp) {
-    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(closure_0);
-    const obj = require(1913) /* getFavoritesAwareGuildName */;
+    tmp = !getFavoritesAwareGuildName.isFavoritesGuildId(closure_0);
+    const obj = getFavoritesAwareGuildName;
   }
   if (tmp) {
     const self = this;
@@ -200,8 +201,8 @@ prototype["subscribeChannel"] = function subscribeChannel(guildId) {
     tmp = "undefined" !== guildId;
   }
   if (tmp) {
-    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-    const obj = require(1913) /* getFavoritesAwareGuildName */;
+    tmp = !getFavoritesAwareGuildName.isFavoritesGuildId(guildId);
+    const obj = getFavoritesAwareGuildName;
   }
   let subscription = tmp;
   if (subscription) {
@@ -223,8 +224,8 @@ prototype["subscribeToMemberUpdates"] = function subscribeToMemberUpdates(guildI
     tmp = "undefined" !== guildId;
   }
   if (tmp) {
-    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-    const obj = require(1913) /* getFavoritesAwareGuildName */;
+    tmp = !getFavoritesAwareGuildName.isFavoritesGuildId(guildId);
+    const obj = getFavoritesAwareGuildName;
   }
   if (tmp) {
     const self = this;
@@ -247,8 +248,8 @@ prototype["unsubscribeFromMemberUpdates"] = function unsubscribeFromMemberUpdate
     tmp = "undefined" !== guildId;
   }
   if (tmp) {
-    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-    const obj = require(1913) /* getFavoritesAwareGuildName */;
+    tmp = !getFavoritesAwareGuildName.isFavoritesGuildId(guildId);
+    const obj = getFavoritesAwareGuildName;
   }
   if (tmp) {
     const self = this;
@@ -269,8 +270,8 @@ prototype["subscribeThreadMemberList"] = function subscribeThreadMemberList(guil
     tmp = "undefined" !== guildId;
   }
   if (tmp) {
-    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-    const obj = require(1913) /* getFavoritesAwareGuildName */;
+    tmp = !getFavoritesAwareGuildName.isFavoritesGuildId(guildId);
+    const obj = getFavoritesAwareGuildName;
   }
   let subscription = tmp;
   if (subscription) {
@@ -292,8 +293,8 @@ prototype["unsubscribeThreadMemberList"] = function unsubscribeThreadMemberList(
     tmp = "undefined" !== guild_id;
   }
   if (tmp) {
-    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guild_id);
-    const obj = require(1913) /* getFavoritesAwareGuildName */;
+    tmp = !getFavoritesAwareGuildName.isFavoritesGuildId(guild_id);
+    const obj = getFavoritesAwareGuildName;
   }
   let unsubscribeResult = tmp;
   if (unsubscribeResult) {
@@ -320,8 +321,8 @@ prototype["_subscribeToFeature"] = function _subscribeToFeature(guildId, _activi
     tmp = "undefined" !== guildId;
   }
   if (tmp) {
-    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-    const obj = require(1913) /* getFavoritesAwareGuildName */;
+    tmp = !getFavoritesAwareGuildName.isFavoritesGuildId(guildId);
+    const obj = getFavoritesAwareGuildName;
   }
   if (tmp) {
     if (!_activities.has(guildId)) {
@@ -333,5 +334,5 @@ prototype["_subscribeToFeature"] = function _subscribeToFeature(guildId, _activi
 };
 
 export default GuildSubscriptions;
-export const MINIMUM_RANGE = require("reset").MINIMUM_RANGE;
-export const DEFAULT_RANGES = require("reset").DEFAULT_RANGES;
+export const MINIMUM_RANGE = reset.MINIMUM_RANGE;
+export const DEFAULT_RANGES = reset.DEFAULT_RANGES;

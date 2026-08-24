@@ -1,26 +1,20 @@
-// Module ID: 15229
-// Function ID: 15230
+// Module ID: 15293
+// Function ID: 15294
 // Name: RegisterPhoneOrEmailInput
-// Dependencies: [19, 8581, 15212, 21, 1500, 15230, 589, 8600, 691, 1236, 8599, 2]
+// Dependencies: [19, 8620, 15276, 21, 1500, 15294, 589, 8637, 691, 1236, 8636, 2]
 // Exports: RegisterPhoneOrEmailInput
 
-// Module 15229 (RegisterPhoneOrEmailInput)
-import noop from "noop";
-import handleSetLocationMetadata from "handleSetLocationMetadata";
-import useRegistrationUIStore from "useRegistrationUIStore";
-import { jsx } from "jsxProd";
+// Module 15293 (RegisterPhoneOrEmailInput)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "handleSetLocationMetadata" /* 8620 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15276 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 ({ setRegistrationErrors: c5, useRegistrationUIStore: closure_6 } = useRegistrationUIStore);
-const result = require("useRegistrationUIStore").fileFinishedImporting("modules/auth/native/components/RegisterPhoneOrEmailInput.tsx");
+const result = require("set").fileFinishedImporting("modules/auth/native/components/RegisterPhoneOrEmailInput.tsx");
 
 export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(loginPhone) {
-  let autoFocus;
-  let inputError;
-  let onSubmit;
-  let submitBehavior;
   loginPhone = loginPhone.loginPhone;
   const loginEmail = loginPhone.loginEmail;
   const setLoginPhone = loginPhone.setLoginPhone;
@@ -29,9 +23,9 @@ export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(logi
   ({ inputError, autoFocus } = loginPhone);
   let navigation;
   let ref;
-  let c7;
+  closure_7 = undefined;
   let callback;
-  let closure_9;
+  closure_9 = undefined;
   ({ onSubmit, submitBehavior } = loginPhone);
   let obj = loginPhone(setLoginPhone[4]);
   navigation = obj.useNavigation();
@@ -47,10 +41,10 @@ export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(logi
   const items = [inputMode];
   const stateFromStores = loginPhone(setLoginPhone[6]).useStateFromStores(items, () => inputMode.getCountryCode());
   const tmp9 = ref((errors) => errors.errors);
-  c7 = tmp9;
+  closure_7 = tmp9;
   const items1 = [tmp9];
   callback = obj2.useCallback((arg0) => {
-    if (null != _undefined[arg0]) {
+    if (null != table[arg0]) {
       const obj = {};
       const merged = Object.assign(tmp3);
       delete tmp2[tmp];
@@ -104,7 +98,7 @@ export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(logi
     stringResult1 = intl3.string(tmp(tmp2[9]).t.a17rBk);
   }
   obj = { ref, alpha2: stateFromStores.alpha2, countryCode: stateFromStores.code, onChange: callback1, onSubmitEditing: onSubmit, placeholder: stringResult, returnKeyType: "next", autoCapitalize: "none", accessibilityHint: stringResult1, label: stringResult, errorMessage: inputError, onPressCountrySelector: callback2, forceMode: inputMode, submitBehavior, autoComplete: null, keyboardType: null, isClearable: true, status: null };
-  const tmp16 = c7;
+  const tmp16 = closure_7;
   const tmpResult = loginPhone(setLoginPhone[6]);
   let str = "email";
   if (inputMode === loginPhone(setLoginPhone[7]).PhoneOrEmailSelectorForceMode.PHONE) {

@@ -1,11 +1,14 @@
-// Module ID: 10026
-// Function ID: 10027
+// Module ID: 10065
+// Function ID: 10066
 // Name: getStatusExpiryParts
 // Dependencies: [1236, 2]
 // Exports: getStatusExpiryParts
 
-// Module 10026 (getStatusExpiryParts)
-const result = require("set").fileFinishedImporting("modules/multi_account/StatusUtils.tsx");
+// Module 10065 (getStatusExpiryParts)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
+const result = set.fileFinishedImporting("modules/multi_account/StatusUtils.tsx");
 
 export const getStatusExpiryParts = function getStatusExpiryParts(arg0) {
   const date = new Date(Number(arg0));
@@ -32,14 +35,14 @@ export const getStatusExpiryParts = function getStatusExpiryParts(arg0) {
     tmp7 = date.getDate() === date3.getDate();
     const date4 = date.getDate();
   }
-  const data = require(1236) /* getSystemLocale */.intl.data;
+  const data = getSystemLocale.intl.data;
   const formatTimeResult = data.formatTime(date, { format: "short" });
   if (tmp2) {
     let obj = { kind: "today", dateString: null, timeString: null };
     const data4 = tmp10(1236).intl.data;
     obj[1] = data4.formatRelativeTime(0, "day", { numeric: "auto" });
     obj[2] = formatTimeResult;
-    let obj1 = obj;
+    obj1 = obj;
   } else if (tmp7) {
     obj = { kind: "tomorrow", dateString: null, timeString: null };
     const data3 = tmp10(1236).intl.data;

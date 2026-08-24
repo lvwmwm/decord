@@ -1,18 +1,23 @@
-// Module ID: 16692
-// Function ID: 16693
+// Module ID: 16788
+// Function ID: 16789
 // Name: showPendingNotification
-// Dependencies: [676, 14825, 1435, 1236, 16693, 4770, 2]
+// Dependencies: [676, 14889, 1435, 1236, 16789, 4775, 2]
 // Exports: showAcceptedNotification, showPendingNotification
 
-// Module 16692 (showPendingNotification)
-import { FriendsSections } from "ME";
+// Module 16788 (showPendingNotification)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import _modDef14889 from "module_14889" /* 14889 */;
 
-const result = require("getAvatarURL").fileFinishedImporting("utils/RelationshipUtils.tsx");
+const FriendsSections = ME.FriendsSections;
+const result = set.fileFinishedImporting("utils/RelationshipUtils.tsx");
 
 export const showPendingNotification = function showPendingNotification(user) {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  let obj = importDefault(14825);
-  const stringResult = intl.string(require(1236) /* getSystemLocale */.t["t3+Af3"]);
+  const intl = getSystemLocale.intl;
+  let obj = _modDef14889;
+  const stringResult = intl.string(getSystemLocale.t["t3+Af3"]);
   obj = {
     omitViewTracking: true,
     omitClickTracking: true,
@@ -22,23 +27,23 @@ export const showPendingNotification = function showPendingNotification(user) {
     },
     isUserAvatar: true
   };
-  obj.showNotification(importDefault(1435).getUserAvatarURL(user), user.username, stringResult, {}, obj);
+  obj.showNotification(getAvatarURLDefault.getUserAvatarURL(user), user.username, stringResult, {}, obj);
 };
 export const showAcceptedNotification = function showAcceptedNotification(user) {
   const _require = user;
   const intl = _require(1236).intl;
-  let obj = importDefault(14825);
+  let obj = _modDef14889;
   const stringResult = intl.string(_require(1236).t.MYr3Ka);
   obj = {
     omitViewTracking: true,
     omitClickTracking: true,
     tag: user.id,
     onClick: () => {
-      let obj = outer1_1(outer1_2[5]);
+      let obj = closure_1_1(closure_1_2[5]);
       obj = { recipientIds: user.id };
       obj.openPrivateChannel(obj);
     },
     isUserAvatar: true
   };
-  obj.showNotification(importDefault(1435).getUserAvatarURL(user), user.username, stringResult, {}, obj);
+  obj.showNotification(getAvatarURLDefault.getUserAvatarURL(user), user.username, stringResult, {}, obj);
 };

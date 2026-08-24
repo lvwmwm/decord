@@ -1,44 +1,44 @@
-// Module ID: 12120
-// Function ID: 12121
+// Module ID: 12172
+// Function ID: 12173
 // Name: useActivityTimer
-// Dependencies: [32, 19, 687, 8348, 4259, 2]
+// Dependencies: [32, 19, 687, 8387, 4263, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 12120 (useActivityTimer)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 12172 (useActivityTimer)
+import setDefault from "set" /* 687 */;
+import calculateTimestampDurations from "calculateTimestampDurations" /* 8387 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import noop from "noop" /* 19 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ useEffect: c4, useState: c5 } = noop);
 let result = require("set").fileFinishedImporting("modules/user_profile/hooks/useActivityTimer.tsx");
 
 export default function useActivityTimer(start) {
   start = start.start;
   let first;
-  let importDefault;
-  const interval = new first(4259).Interval();
+  importDefault = undefined;
+  const interval = new first(4263).Interval();
   first = callback(callback3(interval), 1)[0];
   const tmp3 = callback(callback3(() => Date.now()), 2);
   importDefault = tmp3[1];
   const items = [first];
   callback2(() => {
-    first.start(callback(outer1_2[2]).Millis.HALF_SECOND, () => callback(Date.now()));
+    first.start(callback(closure_1_2[2]).Millis.HALF_SECOND, () => callback(Date.now()));
     return () => closure_0.stop();
   }, items);
   const diff = start.end - start;
-  const result = diff / importDefault(687).Millis.SECOND;
+  const result = diff / setDefault.Millis.SECOND;
   const diff1 = tmp3[0] - start;
-  const bound = Math.max(Math.min(diff1 / importDefault(687).Millis.SECOND, result), 0);
+  const bound = Math.max(Math.min(diff1 / setDefault.Millis.SECOND, result), 0);
   return { elapsed: bound, duration: result, percentage: Math.max(Math.min(bound / result, 1), 0) };
 };
 export const formatTime = function formatTime(arg0) {
   const rounded = Math.floor(arg0);
-  const result = rounded % importDefault(687).Seconds.MINUTE;
-  const rounded1 = Math.floor(arg0 / importDefault(687).Seconds.MINUTE);
-  const result1 = rounded1 % importDefault(687).Seconds.MINUTE;
-  const rounded2 = Math.floor(arg0 / importDefault(687).Seconds.HOUR);
+  const result = rounded % setDefault.Seconds.MINUTE;
+  const rounded1 = Math.floor(arg0 / setDefault.Seconds.MINUTE);
+  const result1 = rounded1 % setDefault.Seconds.MINUTE;
+  const rounded2 = Math.floor(arg0 / setDefault.Seconds.HOUR);
   if (0 === rounded2) {
     const _String4 = String;
     const _String5 = String;
@@ -63,9 +63,9 @@ export const formatTime = function formatTime(arg0) {
 };
 export const formatTimeForA11yLabel = function formatTimeForA11yLabel(arg0) {
   const rounded = Math.floor(arg0);
-  const seconds = rounded % importDefault(687).Seconds.MINUTE;
-  const rounded1 = Math.floor(arg0 / importDefault(687).Seconds.MINUTE);
-  const minutes = rounded1 % importDefault(687).Seconds.MINUTE;
-  const hours = Math.floor(arg0 / importDefault(687).Seconds.HOUR);
-  return require(8348) /* calculateTimestampDurations */.formatTimestampToA11yLabel({ hours, minutes, seconds });
+  const seconds = rounded % setDefault.Seconds.MINUTE;
+  const rounded1 = Math.floor(arg0 / setDefault.Seconds.MINUTE);
+  const minutes = rounded1 % setDefault.Seconds.MINUTE;
+  const hours = Math.floor(arg0 / setDefault.Seconds.HOUR);
+  return calculateTimestampDurations.formatTimestampToA11yLabel({ hours, minutes, seconds });
 };

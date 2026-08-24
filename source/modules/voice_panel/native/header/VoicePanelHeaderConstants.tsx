@@ -1,10 +1,12 @@
-// Module ID: 9673
-// Function ID: 9674
+// Module ID: 9712
+// Function ID: 9713
 // Name: VOICE_PANEL_SETTINGS_KEY
 // Dependencies: [2]
 
-// Module 9673 (VOICE_PANEL_SETTINGS_KEY)
-const result = require("set").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderConstants.tsx");
+// Module 9712 (VOICE_PANEL_SETTINGS_KEY)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderConstants.tsx");
 
 export const VOICE_PANEL_SETTINGS_KEY = "voice-panel-settings-action-sheet";
 export const VOICE_PANEL_AUDIO_OUTPUT_ACTION_SHEET_KEY = "VoicePanelAudioOutputActionSheet";

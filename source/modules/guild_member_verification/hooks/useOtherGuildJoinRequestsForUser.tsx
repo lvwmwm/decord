@@ -1,24 +1,24 @@
-// Module ID: 15838
-// Function ID: 15839
+// Module ID: 15907
+// Function ID: 15908
 // Name: useOtherGuildJoinRequestsForUser
-// Dependencies: [19, 7428, 589, 8537, 2]
+// Dependencies: [19, 7466, 589, 8576, 2]
 // Exports: useOtherGuildJoinRequestsForUser
 
-// Module 15838 (useOtherGuildJoinRequestsForUser)
-import noop from "noop";
-import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
+// Module 15907 (useOtherGuildJoinRequestsForUser)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "updateSubmittedGuildJoinRequestTotal" /* 7466 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/guild_member_verification/hooks/useOtherGuildJoinRequestsForUser.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/useOtherGuildJoinRequestsForUser.tsx");
 
 export const useOtherGuildJoinRequestsForUser = function useOtherGuildJoinRequestsForUser(guildId) {
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const selectedJoinRequestId = guildId.selectedJoinRequestId;
   let stateFromStores;
-  let items = [updateSubmittedGuildJoinRequestTotal];
+  let items = [closure_4];
   const items1 = [guildId, userId];
-  stateFromStores = guildId(selectedJoinRequestId[2]).useStateFromStores(items, () => outer1_4.getRequestsForUser(guildId, userId), items1);
+  stateFromStores = guildId(selectedJoinRequestId[2]).useStateFromStores(items, () => closure_1_4.getRequestsForUser(guildId, userId), items1);
   const items2 = [guildId, userId, stateFromStores];
   const effect = stateFromStores.useEffect(() => {
     if (null == stateFromStores) {

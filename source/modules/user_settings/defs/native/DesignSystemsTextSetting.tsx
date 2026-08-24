@@ -1,25 +1,28 @@
-// Module ID: 14895
-// Function ID: 14896
+// Module ID: 14959
+// Function ID: 14960
 // Name: route
-// Dependencies: [8198, 676, 10669, 14896, 2]
+// Dependencies: [8238, 676, 10708, 14960, 2]
 
-// Module 14895 (route)
-import createToggle from "createToggle";
+// Module 14959 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
     return "Text";
   },
-  parent: require("MobileUserSettings").MobileUserSettings.DESIGN_SYSTEMS,
+  parent: MobileUserSettings.MobileUserSettings.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_TEXT,
+  route: ME.UserSettingsSections.DESIGN_SYSTEM_TEXT,
   getComponent() {
-    return require(14896) /* UserSettingsDesignSystemText */.default;
+    return require(14960) /* UserSettingsDesignSystemText */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsTextSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsTextSetting.tsx");
 
 export default route;

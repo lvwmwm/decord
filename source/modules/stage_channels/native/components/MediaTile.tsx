@@ -1,42 +1,43 @@
-// Module ID: 12613
-// Function ID: 12614
-// Dependencies: [19, 17, 4773, 4544, 21, 4661, 712, 12604, 1494, 8944, 589, 12614, 1297, 2]
+// Module ID: 12667
+// Function ID: 12668
+// Dependencies: [19, 17, 4778, 4549, 21, 4668, 712, 12658, 1494, 8981, 589, 12668, 1297, 2]
 
-// Module 12613
-import { View } from "get ActivityIndicator";
-import getParticipants from "getParticipants";
-import { ParticipantTypes } from "ParticipantTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 12667
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "getParticipants" /* 4778 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4549 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let obj = { container: { flex: 1, marginHorizontal: 4, marginVertical: 4 }, media: null };
-obj = { flex: 1, borderRadius: require("Themes").radii.sm };
+obj = { flex: 1, borderRadius: ThemesDefault.radii.sm };
 obj[1] = obj;
 let closure_7 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo((channel) => {
+const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
   const participant = channel.participant;
   const size = channel.size;
   const tmp = callback();
-  let obj = channel(12604);
+  let obj = channel(12658);
   const speakerTileStyles = obj.useSpeakerTileStyles();
-  const isScreenLandscape = channel(8944).useIsScreenLandscape();
-  const obj2 = channel(8944);
+  const isScreenLandscape = channel(8981).useIsScreenLandscape();
+  const obj2 = channel(8981);
   const tmp5 = participant;
-  const items = [getParticipants];
+  const items = [closure_4];
   const items1 = [channel.id, participant.id];
-  const stateFromStores = channel(589).useStateFromStores(items, () => outer1_4.getParticipant(channel.id, participant.id), items1);
+  const stateFromStores = channel(589).useStateFromStores(items, () => closure_1_4.getParticipant(channel.id, participant.id), items1);
   let tmp8 = null;
   if (null != stateFromStores) {
     tmp8 = null;
     if (stateFromStores.type !== ParticipantTypes.ACTIVITY) {
       obj = { style: null, children: null };
       const items2 = [tmp.container, , ];
-      let tmp2Result = tmp2(12604);
+      let tmp2Result = tmp2(12658);
       items2[1] = tmp2Result.getSizeStyle(size, speakerTileStyles);
-      tmp2Result = tmp2(12604);
+      tmp2Result = tmp2(12658);
       items2[2] = tmp2Result.getTileWidthStyle(size, participant(1494)().width, isScreenLandscape);
       obj[0] = items2;
       obj = { hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: null, avatarSize: null, channel: null, shrinkStreamEmptyState: false, contentStyle: null };
@@ -44,13 +45,13 @@ const memoResult = require("noop").memo((channel) => {
       obj[5] = tmp2(1297).AvatarSizes.XLARGE;
       obj[6] = channel;
       obj[8] = tmp.media;
-      obj[1] = jsx(tmp5(12614), { hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: null, avatarSize: null, channel: null, shrinkStreamEmptyState: false, contentStyle: null });
+      obj[1] = jsx(tmp5(12668), { hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: null, avatarSize: null, channel: null, shrinkStreamEmptyState: false, contentStyle: null });
       tmp8 = <View hasBottomSafeArea={false} hasLeftSafeArea={false} hasRightSafeArea={false} hasTopSafeArea={false} participant={null} avatarSize={null} channel={null} shrinkStreamEmptyState={false} contentStyle={null} />;
-      const tmp5Result = tmp5(12614);
+      const tmp5Result = tmp5(12668);
     }
   }
   return tmp8;
 });
-const result = require("getParticipants").fileFinishedImporting("modules/stage_channels/native/components/MediaTile.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/components/MediaTile.tsx");
 
 export default memoResult;

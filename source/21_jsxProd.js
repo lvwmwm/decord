@@ -4,5 +4,7 @@
 // Dependencies: [22]
 
 // Module 21 (jsxProd)
+import jsxProd from "jsxProd" /* 22 */;
 
-export { default } from "jsxProd";
+
+export default jsxProd;

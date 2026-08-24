@@ -4,12 +4,18 @@
 // Dependencies: [1424, 540, 541, 542, 1425]
 
 // Module 1423 (setFunctionLength)
-let closure_2 = require("hasPropertyDescriptors")();
-let closure_3 = require("getEvalledConstructor")("%Math.floor%");
+import getEvalledConstructor from "getEvalledConstructor" /* 540 */;
+import _mod541 from "module_541" /* 541 */;
+import _mod542 from "module_542" /* 542 */;
+import hasPropertyDescriptors from "hasPropertyDescriptors" /* 1424 */;
+import defineDataProperty from "defineDataProperty" /* 1425 */;
+
+let closure_2 = hasPropertyDescriptors();
+let closure_3 = getEvalledConstructor("%Math.floor%");
 
 export default function setFunctionLength(fn, num) {
   if (typeof fn !== "function") {
-    const tmp25 = new require(541)("`fn` is not a function");
+    const tmp25 = new _mod541("`fn` is not a function");
     throw tmp25;
   } else {
     if (typeof num === "number") {
@@ -21,7 +27,7 @@ export default function setFunctionLength(fn, num) {
             if ("length" in fn) {
               flag = true;
               flag2 = true;
-              if (require(542)) {
+              if (_mod542) {
                 const tmp4 = tmp2(542)(fn, "length");
                 let tmp5 = tmp4;
                 if (tmp4) {
@@ -51,7 +57,7 @@ export default function setFunctionLength(fn, num) {
               flag2 = !tmp;
             }
             if (flag2) {
-              const tmp10 = require(1425) /* defineDataProperty */;
+              const tmp10 = defineDataProperty;
               if (closure_2) {
                 tmp10(fn, "length", num, true, true);
               } else {
@@ -63,7 +69,7 @@ export default function setFunctionLength(fn, num) {
         }
       }
     }
-    const tmp19 = new require(541)("`length` must be a positive 32-bit integer");
+    const tmp19 = new _mod541("`length` must be a positive 32-bit integer");
     throw tmp19;
   }
 };

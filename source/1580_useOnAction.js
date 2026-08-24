@@ -5,7 +5,7 @@
 // Exports: useOnAction
 
 // Module 1580 (useOnAction)
-import noop from "noop";
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 
@@ -24,7 +24,7 @@ export const useOnAction = function useOnAction(router) {
   let onDispatchAction;
   let flushUpdates;
   let context1;
-  let closure_14;
+  closure_14 = undefined;
   let callback;
   const context = setState.useContext(router(getState[1]).NavigationBuilderContext);
   onAction = context.onAction;

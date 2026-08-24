@@ -6,11 +6,6 @@
 // Module 527 (sha1)
 arg5.default = function sha1(str) {
   let length;
-  let tmp20;
-  let tmp21;
-  let tmp22;
-  let tmp23;
-  let tmp24;
   if (typeof str === "string") {
     const _unescape = unescape;
     const _encodeURIComponent = encodeURIComponent;

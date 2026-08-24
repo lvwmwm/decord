@@ -1,15 +1,19 @@
-// Module ID: 10690
-// Function ID: 10691
+// Module ID: 10729
+// Function ID: 10730
 // Name: handleAppStateUpdate
-// Dependencies: [676, 5038, 500, 691, 2]
+// Dependencies: [676, 5043, 500, 691, 2]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 10690 (handleAppStateUpdate)
-import { AnalyticEvents } from "ME";
-import "initialize";
+// Module 10729 (handleAppStateUpdate)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+import ME from "ME" /* 676 */;
+import initializeDefault from "initialize" /* 5043 */;
 
+const AnalyticEvents = ME.AnalyticEvents;
 let c3 = null;
 let c4 = null;
+initializeDefault;
 class AppStoreOverlayTelemetryManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -24,7 +28,7 @@ class AppStoreOverlayTelemetryManager extends tmp2 {
 }
 AppStoreOverlayTelemetryManager.prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
   state = state.state;
-  const isAndroidResult = require(500) /* set */.isAndroid();
+  const isAndroidResult = set2.isAndroid();
   if (isAndroidResult) {
     return !isAndroidResult;
   } else {
@@ -35,7 +39,7 @@ AppStoreOverlayTelemetryManager.prototype["handleAppStateUpdate"] = function han
         if (state === tmp(691).AppStates.BACKGROUND) {
           _null.trackOverlayEvent(AnalyticEvents.QUEST_APP_STORE_OVERLAY_BACKGROUNDED);
           const _Date = Date;
-          let c4 = Date.now();
+          c4 = Date.now();
           flag = false;
         }
       }
@@ -47,13 +51,13 @@ AppStoreOverlayTelemetryManager.prototype["handleAppStateUpdate"] = function han
   }
 };
 const appStoreOverlayTelemetryManager = new AppStoreOverlayTelemetryManager();
-const result = require("set").fileFinishedImporting("modules/quests/native/AppStoreOverlayTelemetryManager.tsx");
+const result = set.fileFinishedImporting("modules/quests/native/AppStoreOverlayTelemetryManager.tsx");
 
 export default appStoreOverlayTelemetryManager;
 export function setAppStoreOverlayOpen(arg0) {
-  let closure_3 = arg0;
+  closure_3 = arg0;
 }
 export function clearAppStoreOverlayOpen() {
-  let c3 = null;
-  let c4 = null;
+  c3 = null;
+  c4 = null;
 }

@@ -1,25 +1,28 @@
-// Module ID: 14928
-// Function ID: 14929
+// Module ID: 14992
+// Function ID: 14993
 // Name: route
-// Dependencies: [8198, 676, 10669, 14929, 2]
+// Dependencies: [8238, 676, 10708, 14993, 2]
 
-// Module 14928 (route)
-import createToggle from "createToggle";
+// Module 14992 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
     return "Tooltip";
   },
-  parent: require("MobileUserSettings").MobileUserSettings.DESIGN_SYSTEMS,
+  parent: MobileUserSettings.MobileUserSettings.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_TOOLTIP,
+  route: ME.UserSettingsSections.DESIGN_SYSTEM_TOOLTIP,
   getComponent() {
-    return require(14929) /* Content */.default;
+    return require(14993) /* Content */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsTooltipSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsTooltipSetting.tsx");
 
 export default route;

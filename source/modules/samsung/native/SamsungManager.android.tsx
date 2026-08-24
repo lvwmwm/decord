@@ -1,12 +1,14 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 9806
+// Function ID: 9807
 // Name: get ActivityIndicator
 // Dependencies: [17, 2]
 
-// Module 9767 (get ActivityIndicator)
-import { NativeModules } from "get ActivityIndicator";
+// Module 9806 (get ActivityIndicator)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-const result = require("set").fileFinishedImporting("modules/samsung/native/SamsungManager.android.tsx");
+const NativeModules = get_ActivityIndicator.NativeModules;
+const result = set.fileFinishedImporting("modules/samsung/native/SamsungManager.android.tsx");
 
 export default {
   checkIfOAuthRequest(closure_0) {

@@ -1,35 +1,37 @@
-// Module ID: 14833
-// Function ID: 14834
+// Module ID: 14897
+// Function ID: 14898
 // Name: AppIcon
-// Dependencies: [19, 17, 7946, 21, 4661, 712, 4310, 1363, 2]
+// Dependencies: [19, 17, 7985, 21, 4668, 712, 4314, 1363, 2]
 // Exports: default
 
-// Module 14833 (AppIcon)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { getIconById } from "items";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14897 (AppIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { getIconById } from "items" /* 7985 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
 createCacheKey = { container: null, image: null };
-createCacheKey = { overflow: "hidden", borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey = { overflow: "hidden", borderColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { resizeMode: "contain", height: "100%", width: "100%" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("items").fileFinishedImporting("modules/app_icons/native/AppIcon.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/app_icons/native/AppIcon.tsx");
 
 export default function AppIcon(size) {
   let num = size.size;
   if (num === undefined) {
     num = 56;
   }
-  const tmp = createCacheKey();
-  const tmp2 = importDefault(4310)();
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  const tmp = callback();
+  const tmp2 = useThemeDefault();
+  let obj = AccessibilityAnnouncer;
   let num2 = 1;
   if (obj.isThemeDark(tmp2)) {
     num2 = 0;

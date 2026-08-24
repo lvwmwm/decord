@@ -1,48 +1,52 @@
-// Module ID: 10456
-// Function ID: 10457
+// Module ID: 10495
+// Function ID: 10496
 // Name: handleOutOfSuperReactions
-// Dependencies: [1391, 4994, 4197, 1922, 676, 1925, 21, 4032, 4343, 4344, 7511, 4039, 4342, 9317, 2007, 4237, 9298, 7510, 5042, 10457, 10469, 10470, 10471, 7939, 7985, 4827, 1236, 4734, 2]
+// Dependencies: [1391, 4999, 4201, 1922, 676, 1925, 21, 4035, 4347, 4348, 7549, 4042, 4346, 9354, 2008, 4241, 9335, 7548, 5047, 10496, 10508, 10509, 10510, 7978, 8024, 4832, 1236, 4739, 2]
 // Exports: handleAddNewReactions, handleOutOfSuperReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
-// Module 10456 (handleOutOfSuperReactions)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import reinjectEphemerals from "reinjectEphemerals";
-import handleConnectionOpen from "handleConnectionOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { EmojiIntention } from "set";
-import { jsx } from "registerAsset";
+// Module 10495 (handleOutOfSuperReactions)
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import setDefault from "set" /* 4832 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 5047 */;
+import registerAssetDefault from "registerAsset" /* 10509 */;
+import registerAssetDefault2 from "registerAsset" /* 10510 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "reinjectEphemerals" /* 4999 */;
+import closure_5 from "handleConnectionOpen" /* 4201 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import { EmojiIntention } from "set" /* 1925 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
-({ AnalyticEvents: error, AnalyticsPages: metroImportAll, AnalyticsSections: c9 } = ME);
+require = arg1;
+({ AnalyticEvents: error, AnalyticsPages: closure_8, AnalyticsSections: c9 } = ME);
 let obj = {};
-obj[require("ReactionTypes").ReactionTypes.NORMAL] = require("registerAsset");
-obj[require("ReactionTypes").ReactionTypes.BURST] = require("registerAsset");
+obj[require("ReactionTypes").ReactionTypes.NORMAL] = registerAssetDefault;
+obj[require("ReactionTypes").ReactionTypes.BURST] = registerAssetDefault2;
 obj = {};
 obj[require("ReactionTypes").ReactionTypes.NORMAL] = require("ReactionIcon").ReactionIcon;
 obj[require("ReactionTypes").ReactionTypes.BURST] = require("SuperReactionIcon").SuperReactionIcon;
-let result = require("handleConnectionOpen").fileFinishedImporting("modules/reactions/native/ReactionUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/reactions/native/ReactionUtils.tsx");
 
 export const handleOutOfSuperReactions = function handleOutOfSuperReactions(arg0) {
   const currentUser = authStore.getCurrentUser();
   if (null != currentUser) {
-    let obj = require(4039) /* getPremiumPlanItem */;
+    let obj = getPremiumPlanItem;
     let openLazyResult;
     if (!obj.isPremium(currentUser)) {
       obj = { onDismiss: null };
       obj[0] = arg0;
-      openLazyResult = importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(9317, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
-      const obj2 = importDefault(4342);
+      openLazyResult = ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(9354, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
+      const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
     }
     return openLazyResult;
   }
 };
 export const handleAddNewReactions = function handleAddNewReactions(channel, id, MESSAGE, burst) {
   const _require = channel;
-  const importDefault = id;
+  importDefault = id;
   if (MESSAGE === undefined) {
     MESSAGE = _require(MESSAGE[10]).ReactionLocations.MESSAGE;
   }
@@ -76,7 +80,7 @@ export const handleAddNewReactions = function handleAddNewReactions(channel, id,
     _require(ReactionTypes[16]);
     tmp10Result = { onPressEmoji: null, channel: null, pickerIntention: null, reactionType: null, analyticsObject: null, messageId: null };
     tmp10Result[0] = function onPressEmoji(byName, burst) {
-      const id = channel.id;
+      id = channel.id;
       const obj = { burst };
       if (null != byName) {
         const toReactionEmojiResult = channel(MESSAGE[7]).toReactionEmoji(byName);
@@ -103,9 +107,6 @@ export const handleAddNewReactions = function handleAddNewReactions(channel, id,
   }
 };
 export const handleViewReactions = function handleViewReactions(isPoll) {
-  let _location;
-  let channelId;
-  let messageId;
   ({ messageId, channelId, location: _location } = isPoll);
   if (_location === undefined) {
     _location = {};
@@ -147,42 +148,42 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
     obj[1] = FORUM_CHANNEL_POST;
     const merged1 = Object.assign(_location);
     obj[4] = obj;
-    importDefault(5042).trackWithMetadata(constants.REACTION_ACTION_SHEET_OPENED, obj);
-    const obj3 = importDefault(5042);
-    const obj1 = { messageId: null, channelId: null, emoji: null };
+    collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.REACTION_ACTION_SHEET_OPENED, obj);
+    const obj3 = collectGuildAnalyticsMetadataDefault;
+    obj1 = { messageId: null, channelId: null, emoji: null };
     obj1[0] = messageId;
     obj1[1] = channelId;
     obj1[2] = isPoll.emoji;
-    const obj6 = importDefault(4342);
+    const obj6 = ACTION_SHEET_HEIGHT_HALFDefault;
     const merged2 = Object.assign(merged);
-    obj6.openLazy(require(2007) /* asyncRequireImpl */(10457, dependencyMap.paths), "MessageReactions", obj1);
+    obj6.openLazy(asyncRequireImpl(10496, dependencyMap.paths), "MessageReactions", obj1);
   }
   FORUM_CHANNEL_POST = constants2.FORUM_CHANNEL_POST;
 };
 export const handleViewPreviewReactions = function handleViewPreviewReactions(id2, id, emoji) {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { messageId: id2, channelId: id, emoji };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(10469, dependencyMap.paths), "MessagePreviewReactions", obj);
+  obj.openLazy(asyncRequireImpl(10508, dependencyMap.paths), "MessagePreviewReactions", obj);
 };
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj;
 export const handleRemoveAllReactions = function handleRemoveAllReactions(arg0, arg1) {
   const _require = arg0;
-  const importDefault = arg1;
-  let obj = importDefault(4827);
+  importDefault = arg1;
+  let obj = setDefault;
   obj = { title: null, children: null, cancelText: null, confirmText: null, onConfirm: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.ZbtGBm);
   obj = { variant: "text-md/normal", children: null };
   const intl2 = _require(1236).intl;
   obj[1] = intl2.string(_require(1236).t.VpjOCo);
-  obj[1] = jsx(_require(4734).Text, { variant: "text-md/normal", children: null });
+  obj[1] = jsx(_require(4739).Text, { variant: "text-md/normal", children: null });
   const intl3 = _require(1236).intl;
   obj[2] = intl3.string(_require(1236).t["ETE/oC"]);
   const intl4 = _require(1236).intl;
   obj[3] = intl4.string(_require(1236).t.oyYWHE);
   obj[4] = function onConfirm() {
-    return callback(outer1_2[10]).removeAllReactions(callback, closure_1);
+    return callback(closure_1_2[10]).removeAllReactions(callback, closure_1);
   };
   obj.show(obj);
 };

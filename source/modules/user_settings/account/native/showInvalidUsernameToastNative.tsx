@@ -1,17 +1,22 @@
-// Module ID: 8622
-// Function ID: 8623
+// Module ID: 8659
+// Function ID: 8660
 // Name: showInvalidUsernameToast
-// Dependencies: [4094, 1236, 8143, 2]
+// Dependencies: [4097, 1236, 8182, 2]
 // Exports: showInvalidUsernameToast
 
-// Module 8622 (showInvalidUsernameToast)
-const result = require("registerAsset").fileFinishedImporting("modules/user_settings/account/native/showInvalidUsernameToastNative.tsx");
+// Module 8659 (showInvalidUsernameToast)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import dispatcherDefault from "dispatcher" /* 4097 */;
+import registerAssetDefault from "registerAsset" /* 8182 */;
+
+const result = set.fileFinishedImporting("modules/user_settings/account/native/showInvalidUsernameToastNative.tsx");
 
 export const showInvalidUsernameToast = function showInvalidUsernameToast() {
-  let obj = importDefault(4094);
+  let obj = dispatcherDefault;
   obj = { key: "USER_SETTINGS_UPDATE_FAILURE", content: null, icon: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["TGg/2k"]);
-  obj[2] = importDefault(8143);
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t["TGg/2k"]);
+  obj[2] = registerAssetDefault;
   obj.open(obj);
 };

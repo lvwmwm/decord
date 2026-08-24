@@ -1,17 +1,21 @@
-// Module ID: 5000
-// Function ID: 5001
+// Module ID: 5005
+// Function ID: 5006
 // Name: requireSortedDescending
 // Dependencies: [38, 11, 2]
 // Exports: requireSortedDescending
 
-// Module 5000 (requireSortedDescending)
-const result = require("set").fileFinishedImporting("modules/app_database/modules/messages/requireSortedDescending.tsx");
+// Module 5005 (requireSortedDescending)
+import set from "set" /* 2 */;
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import _modDef38 from "module_38" /* 38 */;
+
+const result = set.fileFinishedImporting("modules/app_database/modules/messages/requireSortedDescending.tsx");
 
 export const requireSortedDescending = function requireSortedDescending(messages) {
   let tmp4 = messages.length <= 2;
   if (!tmp4) {
-    tmp4 = importDefault(11).compare(messages[0].id, messages[messages.length - 1].id) >= 0;
-    const tmpResult = importDefault(11);
+    tmp4 = DISCORD_EPOCHDefault.compare(messages[0].id, messages[messages.length - 1].id) >= 0;
+    const tmpResult = DISCORD_EPOCHDefault;
   }
-  importDefault(38)(tmp4, "messages must be sorted in descending order.");
+  _modDef38(tmp4, "messages must be sorted in descending order.");
 };

@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 260 (HeadlessJsTaskSupport)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("HeadlessJsTaskSupport");
+
+export default getAll.get("HeadlessJsTaskSupport");

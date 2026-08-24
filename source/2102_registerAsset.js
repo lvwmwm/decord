@@ -4,7 +4,7 @@
 // Dependencies: [1241]
 
 // Module 2102 (registerAsset)
-import registerAsset from "registerAsset";
+import registerAsset from "registerAsset" /* 1241 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", scales: [1], hash: "d37545a1512fc518523815b0f78727f1", name: "zh-CN.messages.d37545a1512fc518523815b0f78727f1.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", scales: [1], hash: "e35feeec328ce34b3ae18c40fc55842d", name: "vi.messages.e35feeec328ce34b3ae18c40fc55842d.compiled.messages", type: "jsona" });

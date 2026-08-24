@@ -1,11 +1,11 @@
-// Module ID: 7350
-// Function ID: 7351
+// Module ID: 7388
+// Function ID: 7389
 // Name: useBottomSheetKeyboardHandling
-// Dependencies: [19, 6952, 2]
+// Dependencies: [19, 6990, 2]
 // Exports: default
 
-// Module 7350 (useBottomSheetKeyboardHandling)
-import noop from "noop";
+// Module 7388 (useBottomSheetKeyboardHandling)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("design/components/Sheet/native/useBottomSheetKeyboardHandling.tsx");
@@ -24,14 +24,14 @@ export default function useBottomSheetKeyboardHandling(onFocus) {
     } else {
       obj = { onFocus: null, onBlur: null };
       obj[0] = function onFocus(arg0) {
-        const shouldHandleKeyboardEvents = noop.shouldHandleKeyboardEvents;
+        const shouldHandleKeyboardEvents = closure_2.shouldHandleKeyboardEvents;
         const result = shouldHandleKeyboardEvents.set(true);
         if (closure_0 != null) {
           tmp2(arg0);
         }
       };
       obj[1] = function onBlur(arg0) {
-        const shouldHandleKeyboardEvents = noop.shouldHandleKeyboardEvents;
+        const shouldHandleKeyboardEvents = closure_2.shouldHandleKeyboardEvents;
         const result = shouldHandleKeyboardEvents.set(false);
         if (closure_1 != null) {
           tmp2(arg0);

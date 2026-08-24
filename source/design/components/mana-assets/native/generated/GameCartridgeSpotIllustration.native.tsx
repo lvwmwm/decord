@@ -1,18 +1,19 @@
-// Module ID: 5710
-// Function ID: 5711
+// Module ID: 5741
+// Function ID: 5742
 // Name: GameCartridgeSpotIllustration
-// Dependencies: [21, 5449, 5711, 2]
+// Dependencies: [21, 5454, 5742, 2]
 // Exports: GameCartridgeSpotIllustration
 
-// Module 5710 (GameCartridgeSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 5741 (GameCartridgeSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5742 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GameCartridgeSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GameCartridgeSpotIllustration.native.tsx");
 
 export const GameCartridgeSpotIllustration = function GameCartridgeSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const GameCartridgeSpotIllustration = function GameCartridgeSpotIllustrat
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5711);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GameCartridgeSpotIllustration = function GameCartridgeSpotIllustrat
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

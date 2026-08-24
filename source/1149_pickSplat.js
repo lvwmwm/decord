@@ -5,7 +5,9 @@
 // Exports: clearNavigationContext, getActiveRootSpan, getNavigationContext, initializeRouterUtils, resolveRouteNameAndSource, setNavigationContext, transactionNameHasWildcard
 
 // Module 1149 (pickSplat)
-import _slicedToArray from "_slicedToArray";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+import __SENTRY_DEBUG__ from "__SENTRY_DEBUG__" /* 1142 */;
+import closure_3 from "_slicedToArray" /* 32 */;
 
 function pickSplat(params) {
   return params.params["*"] || "";
@@ -137,14 +139,14 @@ function prefixWithSlash(combined) {
   return combined;
 }
 function rebuildRoutePathFromAllRoutes(arg0, _location) {
-  let closure_0 = arg0;
-  let closure_1 = _location;
+  closure_0 = arg0;
+  closure_1 = _location;
   const arr = callback(arg0, _location);
   if (arr) {
     if (0 !== arr.length) {
       for (const item10012 of arr) {
         let tmp3 = (function _loop(item10012) {
-          let closure_0 = item10012;
+          closure_0 = item10012;
           if (item10012.route.path) {
             if ("*" !== item10012.route.path) {
               let str2 = arr;
@@ -183,7 +185,7 @@ function rebuildRoutePathFromAllRoutes(arg0, _location) {
                 }
                 let obj = { v: null };
                 obj[0] = substr;
-                let obj1 = obj;
+                obj1 = obj;
               } else {
                 if (!str2) {
                   str2 = "";
@@ -194,7 +196,7 @@ function rebuildRoutePathFromAllRoutes(arg0, _location) {
                 }
                 obj = { pathname: null };
                 obj[0] = arr2;
-                const tmp11 = outer1_15(closure_0.filter((arg0) => arg0 !== item10012.route), obj);
+                const tmp11 = closure_1_15(closure_0.filter((arg0) => arg0 !== item10012.route), obj);
                 let combined = tmp11;
                 if ("/" !== tmp11[0]) {
                   const _HermesInternal2 = HermesInternal;
@@ -407,7 +409,7 @@ export const clearNavigationContext = function clearNavigationContext(c1) {
   }
 };
 export const getActiveRootSpan = function getActiveRootSpan() {
-  const activeSpan = require(817) /* registerSpanErrorInstrumentation */.getActiveSpan();
+  const activeSpan = registerSpanErrorInstrumentation.getActiveSpan();
   let rootSpan;
   if (activeSpan) {
     let tmpResult = tmp(817);
@@ -421,7 +423,7 @@ export const getActiveRootSpan = function getActiveRootSpan() {
     }
     return tmp5;
   }
-  const obj = require(817) /* registerSpanErrorInstrumentation */;
+  const obj = registerSpanErrorInstrumentation;
 };
 export const getNavigationContext = function getNavigationContext() {
   let tmp2 = null;
@@ -440,7 +442,7 @@ export function initializeRouterUtils(arg0, flag) {
   if (flag === undefined) {
     flag = false;
   }
-  let closure_2 = arg0;
+  closure_2 = arg0;
 }
 export { locationIsInsideDescendantRoute };
 export { pathEndsWithWildcard };
@@ -448,8 +450,6 @@ export { pathIsWildcardAndHasChildren };
 export { prefixWithSlash };
 export { rebuildRoutePathFromAllRoutes };
 export const resolveRouteNameAndSource = function resolveRouteNameAndSource(_location, arg1, arg2, items, basename) {
-  let str2;
-  let tmp2;
   let str = basename;
   if (basename === undefined) {
     str = "";
@@ -468,8 +468,8 @@ export const resolveRouteNameAndSource = function resolveRouteNameAndSource(_loc
     pathname = combined;
   }
   if (!tmp) {
-    [tmp2, str2] = _slicedToArray(getNormalizedName(arg1, _location, items, str), 2);
-    const tmp13 = _slicedToArray(getNormalizedName(arg1, _location, items, str), 2);
+    [tmp2, str2] = callback2(getNormalizedName(arg1, _location, items, str), 2);
+    const tmp13 = callback2(getNormalizedName(arg1, _location, items, str), 2);
   }
   if (!pathname) {
     pathname = _location.pathname;
@@ -478,10 +478,10 @@ export const resolveRouteNameAndSource = function resolveRouteNameAndSource(_loc
   return items;
 };
 export { routeIsDescendant };
-export const setNavigationContext = function setNavigationContext(outer1_1, outer1_2) {
+export const setNavigationContext = function setNavigationContext(closure_1_1, closure_1_2) {
   let arr = closure_5;
   if (closure_5.length >= 10) {
-    if (require(1142) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
+    if (__SENTRY_DEBUG__.DEBUG_BUILD) {
       const debug = tmp(817).debug;
       debug.warn("[React Router] Navigation context stack overflow - removing oldest context");
     }
@@ -489,7 +489,7 @@ export const setNavigationContext = function setNavigationContext(outer1_1, oute
     tmp = require;
   }
   let obj = {};
-  obj = { token: obj, targetPath: outer1_1, span: outer1_2 };
+  obj = { token: obj, targetPath: closure_1_1, span: closure_1_2 };
   arr = arr.push(obj);
   return obj;
 };

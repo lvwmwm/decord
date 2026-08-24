@@ -1,31 +1,33 @@
-// Module ID: 11179
-// Function ID: 11180
+// Module ID: 11231
+// Function ID: 11232
 // Name: ForumPostPinIcon
-// Dependencies: [19, 17, 21, 4661, 712, 1297, 11180, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1297, 11232, 2]
 // Exports: default
 
-// Module 11179 (ForumPostPinIcon)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11231 (ForumPostPinIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import registerAssetDefault from "registerAsset" /* 11232 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { pin: null, pinIcon: null };
-createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.round, width: 23, height: 23, marginEnd: 4, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.round, width: 23, height: 23, marginEnd: 4, backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { height: 14, width: 14, tintColor: require("Themes").colors.WHITE };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { height: 14, width: 14, tintColor: require("Themes").colors.WHITE };
-const result = require("jsxProd").fileFinishedImporting("modules/forums/native/posts/ForumPostPinIcon.tsx");
+createCacheKey[1] = { height: 14, width: 14, tintColor: ThemesDefault.colors.WHITE };
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const obj1 = { height: 14, width: 14, tintColor: ThemesDefault.colors.WHITE };
+const result = require("set").fileFinishedImporting("modules/forums/native/posts/ForumPostPinIcon.tsx");
 
 export default function ForumPostPinIcon(containerStyle) {
-  const tmp = createCacheKey();
+  const tmp = callback();
   let obj = { style: items, children: null };
   items = [tmp.pin, containerStyle.containerStyle];
-  obj = { source: null, style: null };
-  obj[0] = importDefault(11180);
-  obj[1] = tmp.pinIcon;
-  obj[1] = jsx(require(1297) /* Button */.Icon, { source: null, style: null });
-  return <View source={null} style={null} />;
+  obj = { source: registerAssetDefault, style: tmp.pinIcon };
+  obj[1] = jsx(Button.Icon, { source: registerAssetDefault, style: tmp.pinIcon });
+  return <View source={registerAssetDefault} style={tmp.pinIcon} />;
 };

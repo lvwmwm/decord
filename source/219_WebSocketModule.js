@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 219 (WebSocketModule)
+import getAll from "get" /* 30 */;
 
-export default require("get").getEnforcing("WebSocketModule");
+
+export default getAll.getEnforcing("WebSocketModule");

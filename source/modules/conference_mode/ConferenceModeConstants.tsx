@@ -4,7 +4,9 @@
 // Dependencies: [2]
 
 // Module 683 (CONFERENCE_MODE_ENABLED)
-const result = require("set").fileFinishedImporting("modules/conference_mode/ConferenceModeConstants.tsx");
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/conference_mode/ConferenceModeConstants.tsx");
 
 export const CONFERENCE_MODE_ENABLED = false;
 export const DEFAULT_INVITE_CODE = null;

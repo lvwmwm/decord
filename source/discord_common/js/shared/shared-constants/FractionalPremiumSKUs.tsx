@@ -4,7 +4,7 @@
 // Dependencies: [2]
 
 // Module 679 (set)
-import set from "set";
+import set from "set" /* 2 */;
 
 const obj = { ALL: null, ACTIVE_FRACTIONAL_PREMIUM_SKUS: null };
 let set = new Set(["1271583180566036480", "1298745361602449479", "1333912750274904064"]);

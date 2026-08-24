@@ -1,10 +1,14 @@
-// Module ID: 12190
-// Function ID: 12191
+// Module ID: 12242
+// Function ID: 12243
 // Name: resolvedValuesFromUserApplicationIdentityProfile
-// Dependencies: [2, 12191, 12192, 12193, 12196, 12274, 12275]
+// Dependencies: [2, 12243, 12244, 12245, 12248, 12326, 12327]
 
-// Module 12190 (resolvedValuesFromUserApplicationIdentityProfile)
-const result = require("resolveTextComponentValues").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/index.tsx");
+// Module 12242 (resolvedValuesFromUserApplicationIdentityProfile)
+import set from "set" /* 2 */;
+import isVisualUnfurledMedia from "isVisualUnfurledMedia" /* 12327 */;
+import isVisualUnfurledMediaDefault from "isVisualUnfurledMedia" /* 12327 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/index.tsx");
 for (const key10018 in require("toAsciiDigits")) {
   let tmp3 = key10018;
   arg5[key10018] = require("toAsciiDigits")[key10018];
@@ -31,5 +35,5 @@ for (const key10034 in require("set")) {
   continue;
 }
 
-export const resolvedValuesFromUserApplicationIdentityProfile = require("isVisualUnfurledMedia");
-export const UnfurledMediaLoadingState = require("isVisualUnfurledMedia").UnfurledMediaLoadingState;
+export const resolvedValuesFromUserApplicationIdentityProfile = isVisualUnfurledMediaDefault;
+export const UnfurledMediaLoadingState = isVisualUnfurledMedia.UnfurledMediaLoadingState;

@@ -1,12 +1,15 @@
-// Module ID: 8670
-// Function ID: 8671
+// Module ID: 8707
+// Function ID: 8708
 // Name: BOX_MODE_ACTIONSHEET_WIDTH
 // Dependencies: [676, 2]
 
-// Module 8670 (BOX_MODE_ACTIONSHEET_WIDTH)
+// Module 8707 (BOX_MODE_ACTIONSHEET_WIDTH)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+
 const items = [, , , ];
-({ TOP_LEFT: arr[0], TOP_RIGHT: arr[1], BOTTOM_LEFT: arr[2], BOTTOM_RIGHT: arr[3] } = require("ME").PictureInPicturePositions);
-const result = require("set").fileFinishedImporting("modules/video_calls/native/ChannelCallConstants.tsx");
+({ TOP_LEFT: arr[0], TOP_RIGHT: arr[1], BOTTOM_LEFT: arr[2], BOTTOM_RIGHT: arr[3] } = ME.PictureInPicturePositions);
+const result = set.fileFinishedImporting("modules/video_calls/native/ChannelCallConstants.tsx");
 
 export const BOX_MODE_ACTIONSHEET_WIDTH = 360;
 export const BOX_MODE_ACTIONSHEET_HEIGHT = 720;

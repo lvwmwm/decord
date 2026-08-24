@@ -1,52 +1,48 @@
-// Module ID: 10372
-// Function ID: 10373
+// Module ID: 10412
+// Function ID: 10413
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 4661, 712, 1236, 10367, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1236, 10407, 4739, 2]
 // Exports: default
 
-// Module 10372 (WishlistViewMoreCard)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10412 (WishlistViewMoreCard)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import WishlistItemCardDefault from "WishlistItemCard" /* 10407 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Pressable: c3, StyleSheet: c4, View: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles(() => {
   let obj = { moreOverlay: null };
   obj = {};
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
-  obj.borderRadius = importDefault(712).radii.lg;
-  obj.backgroundColor = importDefault(712).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
+  obj.borderRadius = ThemesDefault.radii.lg;
+  obj.backgroundColor = ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
   obj.justifyContent = "center";
   obj.alignItems = "center";
   obj[0] = obj;
   return obj;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/wishlists/native/WishlistViewMoreCard.tsx");
+const result = require("set").fileFinishedImporting("modules/wishlists/native/WishlistViewMoreCard.tsx");
 
 export default function WishlistViewMoreCard(recipientName) {
-  let onPress;
-  let overflowCount;
-  let size;
-  let sku;
   recipientName = recipientName.recipientName;
   ({ sku, size, overflowCount, onPress } = recipientName);
   let obj = { onPress, accessibilityLabel: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["8uYD+I"], { username: recipientName });
-  const items = [callback(importDefault(10367), { accessibilityHidden: true, sku, size, recipientName }), ];
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.formatToPlainString(getSystemLocale.t["8uYD+I"], { username: recipientName });
+  const items = [callback(WishlistItemCardDefault, { accessibilityHidden: true, sku, size, recipientName }), ];
   obj = { style: callback3().moreOverlay, children: null };
   obj = { variant: "text-md/semibold", color: "text-overlay-light", children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl2.format(require(1236) /* getSystemLocale */.t.F6iMs4, { count: overflowCount });
-  obj[1] = callback(require(4734) /* Text */.Text, obj);
+  const intl2 = getSystemLocale.intl;
+  obj[2] = intl2.format(getSystemLocale.t.F6iMs4, { count: overflowCount });
+  obj[1] = callback(Text.Text, obj);
   items[1] = callback(closure_5, obj);
   obj[2] = items;
   return callback2(closure_3, obj);

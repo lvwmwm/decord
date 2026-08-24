@@ -1,15 +1,18 @@
-// Module ID: 5370
-// Function ID: 5371
+// Module ID: 5375
+// Function ID: 5376
 // Name: initialize
-// Dependencies: [32, 1922, 5365, 589, 1370, 12, 709, 2]
+// Dependencies: [32, 1922, 5370, 589, 1370, 12, 709, 2]
 
-// Module 5370 (initialize)
-import _slicedToArray from "_slicedToArray";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import createUserWidgetFromServer from "createUserWidgetFromServer";
-import { Store } from "initialize";
+// Module 5375 (initialize)
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "createUserWidgetFromServer" /* 5370 */;
 
-const require = arg1;
+require = arg1;
 let c6 = null;
 let c7 = null;
 let c8 = false;
@@ -17,11 +20,12 @@ let closure_9 = { suggestedGamesIds: [], suggestedWishlistGamesIds: [] };
 let c10 = false;
 let c11 = false;
 let c12 = false;
+const Store = initializeDefault.Store;
 class WidgetStore extends Store {
 }
 const prototype = WidgetStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(mergeGuildAvatar);
+  this.waitFor(closure_4);
 };
 prototype["getPendingWidgets"] = function getPendingWidgets() {
   return c6;
@@ -31,7 +35,7 @@ prototype["getSaveablePendingWidgets"] = function getSaveablePendingWidgets() {
   if (null != _null) {
     const mapped = _null.map((isUpdatable) => {
       let tmp = isUpdatable;
-      let closure_0 = isUpdatable;
+      closure_0 = isUpdatable;
       if (!isUpdatable.isUpdatable()) {
         let found;
         if (closure_7 != null) {
@@ -45,7 +49,7 @@ prototype["getSaveablePendingWidgets"] = function getSaveablePendingWidgets() {
       }
       return tmp;
     });
-    let found = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+    let found = mapped.filter(isDiscordFrontendDevelopment.isNotNullish);
     found1 = found.filter((isDiscardable) => !isDiscardable.isDiscardable());
   }
   return found1;
@@ -55,8 +59,8 @@ prototype["hasPendingChanges"] = function hasPendingChanges() {
   if (tmp) {
     let tmp3 = null === c7;
     if (!tmp3) {
-      tmp3 = !importDefault(12).isEqual(c6, c7);
-      const obj = importDefault(12);
+      tmp3 = !applyDefault.isEqual(c6, c7);
+      const obj = applyDefault;
     }
     tmp = tmp3;
   }
@@ -72,7 +76,7 @@ prototype["getWidgetUpdates"] = function getWidgetUpdates() {
         return items;
       }));
       const _Map2 = Map;
-      const map1 = new Map(changedWidgets.map((id) => {
+      map1 = new Map(changedWidgets.map((id) => {
         const items = [id.id, id];
         return items;
       }));
@@ -202,7 +206,7 @@ Object.defineProperty(prototype, "suggestedGameIds", {
   },
   set: undefined
 });
-const widgetStore = new WidgetStore(require("dispatcher"), {
+const widgetStore = new WidgetStore(dispatcherDefault, {
   WIDGET_PENDING_SET: function handleSetPendingWidgets(widgets) {
     widgets = widgets.widgets;
     if (null === widgets) {
@@ -220,35 +224,35 @@ const widgetStore = new WidgetStore(require("dispatcher"), {
     }
   },
   WIDGET_PENDING_SAVE_START: function handleSavePendingWidgetsStart() {
-    let c8 = true;
+    c8 = true;
   },
   WIDGET_PENDING_SAVE_SUCCESS: function handleSavePendingWidgetsSuccess() {
-    let c8 = false;
+    c8 = false;
     if (null !== c6) {
-      let c7 = null;
+      c7 = null;
       c6 = null;
     }
   },
   WIDGET_PENDING_SAVE_FAILURE: function handleSavePendingWidgetsFailure() {
-    let c8 = false;
+    c8 = false;
   },
   WIDGET_SUGGESTED_FETCH_SUCCESS: function handleSetSuggestedGameIds(arg0) {
     ({ suggestedGamesIds: closure_9.suggestedGamesIds, suggestedWishlistGamesIds: closure_9.suggestedWishlistGamesIds } = arg0);
-    let c11 = false;
-    let c10 = false;
+    c11 = false;
+    c10 = false;
   },
   WIDGET_SUGGESTED_FETCH_FAILURE: function handleSetSuggestedFetchFailure() {
-    let c10 = true;
-    let c11 = false;
+    c10 = true;
+    c11 = false;
   },
   WIDGET_SUGGESTED_FETCH_START: function handleSetSuggestedFetchStart() {
-    let c11 = true;
-    let c10 = false;
-    let c12 = true;
+    c11 = true;
+    c10 = false;
+    c12 = true;
   },
   WIDGET_PENDING_CLEAR: function handleClearPendingWidgets() {
-    let c6 = null;
-    let c7 = null;
+    c6 = null;
+    c7 = null;
   },
   WIDGET_SUGGESTED_REMOVE_GAME: function handleRemoveApplicationIdFromSuggestedGames(applicationId) {
     applicationId = applicationId.applicationId;
@@ -258,6 +262,6 @@ const widgetStore = new WidgetStore(require("dispatcher"), {
     closure_9.suggestedWishlistGamesIds = prop.filter((arg0) => arg0 !== applicationId);
   }
 });
-const result = require("createUserWidgetFromServer").fileFinishedImporting("modules/user_profile/WidgetStore.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/WidgetStore.tsx");
 
 export default widgetStore;

@@ -1,81 +1,77 @@
-// Module ID: 9676
-// Function ID: 9677
+// Module ID: 9715
+// Function ID: 9716
 // Name: VoiceBadges
-// Dependencies: [19, 4559, 21, 4661, 712, 7190, 6286, 9677, 1297, 7139, 9678, 9689, 9730, 4815, 9455, 8929, 589, 7487, 9731, 9732, 9734, 4734, 1236, 6291, 4745, 9735, 9744, 4219, 9509, 9745, 2]
+// Dependencies: [19, 4564, 21, 4668, 712, 7228, 6317, 9716, 1297, 7177, 9717, 9728, 9769, 4820, 9492, 8966, 589, 7525, 9770, 9771, 9773, 4739, 1236, 6322, 4750, 9774, 9783, 4223, 9546, 9784, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 9676 (VoiceBadges)
-import usePlayingGameActivities from "usePlayingGameActivities";
-import sortActivity from "sortActivity";
-import jsxProd from "Text";
-import createCacheKey from "createCacheKey";
+// Module 9715 (VoiceBadges)
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import setDefault from "set" /* 7228 */;
+import VideoDisabledSvgIcon from "VideoDisabledSvgIcon" /* 9716 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "sortActivity" /* 4564 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function VoiceBadges(arg0) {
-  let muteDeafenIconState;
-  let videoIconState;
   ({ muteDeafenIconState, videoIconState } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { style: tmp.voiceBadgesContainer, children: null };
   let tmp6 = null;
   if (null != muteDeafenIconState) {
     obj = { style: null, children: null };
     obj[0] = tmp.iconWrapper;
-    let tmp3Result = tmp3(7190);
+    let tmp3Result = tmp3(7228);
     obj = { state: null, size: null, style: null };
     obj[0] = muteDeafenIconState;
-    obj[1] = require(1297) /* Button */.IconSizes.SMALL;
+    obj[1] = Button.IconSizes.SMALL;
     obj[2] = tmp.icon;
-    obj[1] = callback(require(9677) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj);
+    obj[1] = callback(VideoDisabledSvgIcon.MuteDeafenIcon, obj);
     tmp6 = callback(tmp3Result, obj);
   }
   const items = [tmp6, ];
   let tmp10 = null;
   if (null != videoIconState) {
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.iconWrapper;
-    tmp3Result = tmp3(7190);
+    tmp3Result = tmp3(7228);
     const obj2 = { state: null, size: null, style: null };
     obj2[0] = videoIconState;
-    obj2[1] = require(1297) /* Button */.IconSizes.SMALL;
+    obj2[1] = Button.IconSizes.SMALL;
     obj2[2] = tmp.icon;
-    obj1[1] = callback(require(9677) /* VideoDisabledSvgIcon */.VideoIcon, obj2);
+    obj1[1] = callback(VideoDisabledSvgIcon.VideoIcon, obj2);
     tmp10 = callback(tmp3Result, obj1);
   }
   items[1] = tmp10;
   obj[1] = items;
-  return closure_6(importDefault(7190), obj);
+  return closure_6(setDefault, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" }, iconWrapper: null, icon: null, notConnectedAvatar: null, memberRow: null, trailingContainer: null };
-createCacheKey = { marginLeft: 8, padding: 6, backgroundColor: require("Themes").colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: require("Themes").radii.round };
+createCacheKey = { marginLeft: 8, padding: 6, backgroundColor: ThemesDefault.colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: ThemesDefault.radii.round };
 createCacheKey[2] = createCacheKey;
-createCacheKey[3] = { width: 16, height: 16, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[3] = { width: 16, height: 16, tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 createCacheKey[4] = { opacity: 0.5 };
 createCacheKey[5] = { flexDirection: "row", alignItems: "center", gap: 4 };
 createCacheKey[6] = { flexDirection: "row", alignItems: "center", gap: 8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { width: 16, height: 16, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/shared/FormComponents.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { width: 16, height: 16, tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/shared/FormComponents.tsx");
 
 export const VoicePanelFormSection = function VoicePanelFormSection(style) {
   const merged = Object.assign(style, Object.create(null));
   let obj = { style: items, children: null };
-  items = [createCacheKey().container, style.style];
-  const tmp2 = createCacheKey();
+  items = [callback2().container, style.style];
+  const tmp2 = callback2();
   obj = {};
   const merged1 = Object.assign(merged);
-  obj[1] = callback(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
-  return callback(importDefault(7190), obj);
+  obj[1] = callback(TableRowGroupTitle.TableRowGroup, obj);
+  return callback(setDefault, obj);
 };
 export const MemberRowItem = function MemberRowItem(user) {
-  let guildId;
-  let nick;
-  let notConnected;
-  let showRing;
-  let showSecureFramesUI;
   user = user.user;
   const channelId = user.channelId;
   let flag = user.selfStream;
@@ -97,11 +93,11 @@ export const MemberRowItem = function MemberRowItem(user) {
   let analyticsLocations;
   let id;
   let stateFromStores;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   analyticsLocations = channelId(flag[9])().analyticsLocations;
   let obj = user(flag[10]);
   const muteDeafenIconState = obj.useMuteDeafenIconState(user.id, guildId);
-  let obj1 = user(flag[10]);
+  obj1 = user(flag[10]);
   const videoIconState = obj1.useVideoIconState(user.id, guildId);
   id = user.id;
   let obj2 = user(flag[11]);
@@ -157,8 +153,7 @@ export const MemberRowItem = function MemberRowItem(user) {
     tmp18 = canRing;
   }
   obj = { onPress: callback, icon: null, subLabel: null, trailing: null, label: null };
-  obj1 = { user, guildId, size: null, style: null };
-  obj1[2] = user(flag[8]).AvatarSizes.REFRESH_MEDIUM_32;
+  obj1 = { user, guildId, size: tmp4(tmp3[8]).AvatarSizes.REFRESH_MEDIUM_32, style: null };
   let notConnectedAvatar;
   if (notConnected) {
     notConnectedAvatar = tmp.notConnectedAvatar;

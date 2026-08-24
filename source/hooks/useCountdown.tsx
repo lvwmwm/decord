@@ -1,12 +1,15 @@
-// Module ID: 7410
-// Function ID: 7411
+// Module ID: 7448
+// Function ID: 7449
 // Name: useCountdown
-// Dependencies: [19, 4063, 7411, 7416, 2]
+// Dependencies: [19, 4066, 7449, 7454, 2]
 // Exports: default
 
-// Module 7410 (useCountdown)
-require("noop").useCallback;
-const result = require("useForceUpdate").fileFinishedImporting("hooks/useCountdown.tsx");
+// Module 7448 (useCountdown)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+
+noop.useCallback;
+const result = set.fileFinishedImporting("hooks/useCountdown.tsx");
 
 export default function useCountdown(closure_0) {
   const _require = closure_0;
@@ -14,7 +17,7 @@ export default function useCountdown(closure_0) {
   if (arg1 === undefined) {
     num = 1000;
   }
-  const importDefault = arg2;
+  importDefault = arg2;
   let flag = arg3;
   if (arg3 === undefined) {
     flag = false;

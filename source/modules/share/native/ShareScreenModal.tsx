@@ -1,35 +1,37 @@
-// Module ID: 13359
-// Function ID: 13360
+// Module ID: 13417
+// Function ID: 13418
 // Name: onClose
-// Dependencies: [5, 32, 19, 1391, 13311, 21, 3, 5260, 9068, 589, 4770, 692, 13360, 2]
+// Dependencies: [5, 32, 19, 1391, 13369, 21, 3, 5265, 9105, 589, 4775, 692, 13418, 2]
 // Exports: default
 
-// Module 13359 (onClose)
-import jsxProd from "jsxProd";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY";
-import { jsx } from "jsxProd";
+// Module 13417 (onClose)
+import timestampDefault from "timestamp" /* 3 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13369 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 let require = arg1;
 function onClose() {
-  importDefault(5260).popWithKey(SHARE_SCREEN_MODAL_KEY);
+  _modDef5265.popWithKey(SHARE_SCREEN_MODAL_KEY);
 }
-let c9 = new require("ensureGuildLoaded")("ShareScreenModal");
-const tmp2 = new require("ensureGuildLoaded")("ShareScreenModal");
-const result = require("noop").fileFinishedImporting("modules/share/native/ShareScreenModal.tsx");
+let closure_9 = new timestampDefault("ShareScreenModal");
+const tmp2 = new timestampDefault("ShareScreenModal");
+const result = require("set").fileFinishedImporting("modules/share/native/ShareScreenModal.tsx");
 
 export default function ShareScreenModal(text) {
   text = text.text;
-  const require = text;
+  require = text;
   const channelId = text.channelId;
   const shareId = text.shareId;
   const attachmentManifest = text.attachmentManifest;
   let first;
   let React;
   let stateFromStores;
-  let closure_7;
+  closure_7 = undefined;
   let first1;
   let obj = React;
   let tmp = first(React.useState(null), 2);
@@ -51,7 +53,7 @@ export default function ShareScreenModal(text) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -66,13 +68,13 @@ export default function ShareScreenModal(text) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_1 = tmp3;
-                let closure_0 = tmp7;
+                closure_1 = tmp3;
+                closure_0 = tmp7;
                 closure_0 = undefined;
-                if (undefined !== outer1_2) {
+                if (undefined !== closure_1_2) {
                   if (undefined !== c3) {
                     c3 = 1;
-                    let obj1 = outer2_1(outer2_2[8]);
+                    obj1 = closure_2_1(closure_2_2[8]);
                     c4 = 2;
                     v0 = 1;
                     obj1 = { value: null, done: false };
@@ -85,7 +87,7 @@ export default function ShareScreenModal(text) {
               if (1 === tmp7) {
                 c3 = 0;
                 closure_1 = closure_2;
-                outer2_9.error("Error fetching attachments:", closure_1);
+                closure_2_9.error("Error fetching attachments:", closure_1);
               } else if (arg0 === 1) {
                 v0 = 3;
                 throw arg1;
@@ -112,7 +114,7 @@ export default function ShareScreenModal(text) {
           }
         }
       });
-      const _fetchAttachments = tmp;
+      closure_0 = tmp;
       const apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -152,7 +154,7 @@ export default function ShareScreenModal(text) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -167,13 +169,13 @@ export default function ShareScreenModal(text) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_1 = tmp3;
-                let closure_0 = tmp7;
+                closure_1 = tmp3;
+                closure_0 = tmp7;
                 closure_0 = undefined;
-                if (null != outer1_1) {
-                  if (null == outer1_6) {
-                    let c3 = 1;
-                    let obj1 = outer2_1(outer2_2[10]);
+                if (null != closure_1_1) {
+                  if (null == closure_1_6) {
+                    c3 = 1;
+                    obj1 = closure_2_1(closure_2_2[10]);
                     c4 = 2;
                     c5 = 1;
                     obj1 = { value: null, done: false };
@@ -186,13 +188,13 @@ export default function ShareScreenModal(text) {
               if (1 === tmp7) {
                 c3 = 0;
                 closure_1 = closure_2;
-                outer2_9.error("Error fetching channel:", closure_1);
+                closure_2_9.error("Error fetching channel:", closure_1);
               } else if (arg0 === 1) {
                 c5 = 3;
                 throw arg1;
               } else if (arg0 !== 2) {
                 closure_0 = arg1;
-                outer1_7(closure_0);
+                closure_1_7(closure_0);
                 c3 = 0;
               }
               c3 = 0;
@@ -213,7 +215,7 @@ export default function ShareScreenModal(text) {
           }
         }
       });
-      const _fetchChannel = tmp;
+      closure_0 = tmp;
       const apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);

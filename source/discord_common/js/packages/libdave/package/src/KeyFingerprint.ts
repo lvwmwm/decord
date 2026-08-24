@@ -1,19 +1,19 @@
-// Module ID: 9696
-// Function ID: 9697
+// Module ID: 9735
+// Function ID: 9736
 // Name: _generateKeyFingerprint
 // Dependencies: [5, 2]
 // Exports: generateKeyFingerprint
 
-// Module 9696 (_generateKeyFingerprint)
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 9735 (_generateKeyFingerprint)
+import closure_0 from "asyncGeneratorStep" /* 5 */;
 
 function _generateKeyFingerprint() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let asyncGeneratorStep = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c3 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c3 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c3 === 2) {
         c3 = 3;
@@ -26,7 +26,7 @@ function _generateKeyFingerprint() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -39,9 +39,9 @@ function _generateKeyFingerprint() {
             obj = { value: null, done: true };
             obj[0] = arg1;
             return obj;
-          } else if (0 !== asyncGeneratorStep) {
+          } else if (0 !== closure_0) {
             const _Error4 = Error;
-            const error = new Error("unsupported fingerprint format version");
+            error = new Error("unsupported fingerprint format version");
             throw error;
           } else if (0 === tmp30.byteLength) {
             const _Error3 = Error;
@@ -83,7 +83,7 @@ function _generateKeyFingerprint() {
       }
     })();
   });
-  const _generateKeyFingerprint = tmp;
+  closure_1 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -94,7 +94,7 @@ function _generateKeyFingerprint() {
 }
 let result = require("set").fileFinishedImporting("../discord_common/js/packages/libdave/package/src/KeyFingerprint.ts");
 
-export const generateKeyFingerprint = function generateKeyFingerprint(asyncGeneratorStep, closure_3, closure_2) {
+export const generateKeyFingerprint = function generateKeyFingerprint(closure_0, closure_3, closure_2) {
   const self = this;
   const apply = _generateKeyFingerprint.apply;
   if (typeof apply === "unknown") {

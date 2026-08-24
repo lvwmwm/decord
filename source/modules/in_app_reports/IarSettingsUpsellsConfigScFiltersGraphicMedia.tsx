@@ -1,56 +1,56 @@
-// Module ID: 8151
-// Function ID: 8152
+// Module ID: 8190
+// Function ID: 8191
 // Name: items
-// Dependencies: [5025, 1306, 1236, 8137, 2]
+// Dependencies: [5030, 1306, 1236, 8176, 2]
 
-// Module 8151 (items)
+// Module 8190 (items)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import create from "create" /* 1306 */;
+import resolveGoreSettingWithDefaults from "resolveGoreSettingWithDefaults" /* 5030 */;
+import ReportNames from "ReportNames" /* 8176 */;
+
 let obj = {
   getTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.RVX1zT);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.RVX1zT);
   },
   getDisabledTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.SYkEBi);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.SYkEBi);
   },
   getDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.aqlmp8);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.aqlmp8);
   },
   eligibleReportSubtypes: null,
   onApply: null,
   predicate: null
 };
-const items = [require("ReportNames").ReportSubType.SUB_GORE, require("ReportNames").ReportSubType.SUB_GLORIFYING_VIOLENCE];
+const items = [ReportNames.ReportSubType.SUB_GORE, ReportNames.ReportSubType.SUB_GLORIFYING_VIOLENCE];
 obj[3] = items;
 obj[4] = function onApply() {
-  let goreContentFriendDm;
-  let goreContentGuilds;
-  let goreContentNonFriendDm;
-  let obj = require(5025) /* resolveGoreSettingWithDefaults */;
-  const goreContentSettingOrDefault = require(5025) /* resolveGoreSettingWithDefaults */.getGoreContentSettingOrDefault();
+  let obj = resolveGoreSettingWithDefaults;
+  const goreContentSettingOrDefault = resolveGoreSettingWithDefaults.getGoreContentSettingOrDefault();
   obj = {};
   ({ goreContentGuilds, goreContentFriendDm, goreContentNonFriendDm } = goreContentSettingOrDefault);
-  if (goreContentGuilds === require(1306) /* create */.ExplicitContentRedaction.SHOW) {
+  if (goreContentGuilds === create.ExplicitContentRedaction.SHOW) {
     obj.goreContentGuilds = tmp(1306).ExplicitContentRedaction.BLUR;
   }
-  if (goreContentFriendDm === require(1306) /* create */.ExplicitContentRedaction.SHOW) {
+  if (goreContentFriendDm === create.ExplicitContentRedaction.SHOW) {
     obj.goreContentFriendDm = tmp(1306).ExplicitContentRedaction.BLUR;
   }
-  if (goreContentNonFriendDm === require(1306) /* create */.ExplicitContentRedaction.SHOW) {
+  if (goreContentNonFriendDm === create.ExplicitContentRedaction.SHOW) {
     obj.goreContentNonFriendDm = tmp(1306).ExplicitContentRedaction.BLUR;
   }
   return obj.updateGoreContentSetting(obj);
 };
 obj[5] = function predicate() {
-  let goreContentFriendDm;
-  let goreContentGuilds;
-  let goreContentNonFriendDm;
-  const goreContentSettingOrDefault = require(5025) /* resolveGoreSettingWithDefaults */.getGoreContentSettingOrDefault();
+  const goreContentSettingOrDefault = resolveGoreSettingWithDefaults.getGoreContentSettingOrDefault();
   ({ goreContentGuilds, goreContentFriendDm, goreContentNonFriendDm } = goreContentSettingOrDefault);
-  const obj = require(5025) /* resolveGoreSettingWithDefaults */;
-  return goreContentGuilds === require(1306) /* create */.ExplicitContentRedaction.SHOW || goreContentFriendDm === require(1306) /* create */.ExplicitContentRedaction.SHOW || goreContentNonFriendDm === require(1306) /* create */.ExplicitContentRedaction.SHOW;
+  const obj = resolveGoreSettingWithDefaults;
+  return goreContentGuilds === create.ExplicitContentRedaction.SHOW || goreContentFriendDm === create.ExplicitContentRedaction.SHOW || goreContentNonFriendDm === create.ExplicitContentRedaction.SHOW;
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigScFiltersGraphicMedia.tsx");
+const result = set.fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigScFiltersGraphicMedia.tsx");
 
 export default obj;

@@ -1,10 +1,13 @@
-// Module ID: 5380
-// Function ID: 5381
+// Module ID: 5385
+// Function ID: 5386
 // Name: toSubmission
-// Dependencies: [5366, 2]
+// Dependencies: [5371, 2]
 // Exports: isApplicationWidgetWithId
 
-// Module 5380 (toSubmission)
+// Module 5385 (toSubmission)
+import set from "set" /* 2 */;
+import WidgetType from "WidgetType" /* 5371 */;
+
 let ApplicationWidget;
 class ApplicationWidget {
   constructor(arg0) {
@@ -48,7 +51,7 @@ prototype["getProfileAnalyticsOptions"] = function getProfileAnalyticsOptions() 
 prototype["getProfileEditAnalyticsOptions"] = function getProfileEditAnalyticsOptions() {
   return { widgetEdited: this.type, applicationId: this.applicationId };
 };
-const result = require("set").fileFinishedImporting("modules/user_profile/UserProfileApplicationWidgetTypes.tsx");
+const result = set.fileFinishedImporting("modules/user_profile/UserProfileApplicationWidgetTypes.tsx");
 
 export { ApplicationWidget };
 export const isApplicationWidgetWithId = function isApplicationWidgetWithId(applicationId) {

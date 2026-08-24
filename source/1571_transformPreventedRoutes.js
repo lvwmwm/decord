@@ -5,9 +5,9 @@
 // Exports: PreventRemoveProvider
 
 // Module 1571 (transformPreventedRoutes)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { jsx } from "jsxProd";
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 function transformPreventedRoutes(arr) {
@@ -23,15 +23,15 @@ function transformPreventedRoutes(arr) {
 export const PreventRemoveProvider = function PreventRemoveProvider(children) {
   let first;
   let first1;
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
   let React;
   let context;
   let setPreventRemove;
   let notifyPreventRemove;
-  let c8;
-  let c9;
-  let c10;
+  closure_8 = undefined;
+  closure_9 = undefined;
+  closure_10 = undefined;
   first = callback(React.useState(() => first(1509).nanoid()), 1)[0];
   const tmp2 = callback(React.useState(() => new Map()), 2);
   first1 = tmp2[0];
@@ -49,9 +49,9 @@ export const PreventRemoveProvider = function PreventRemoveProvider(children) {
     notifyPreventRemove = context1.notifyPreventRemove;
   }
   const tmp11 = first1(1522)((arg0, arg1, arg2) => {
-    let closure_0 = arg1;
+    closure_0 = arg1;
     if (arg2) {
-      if (null != noop) {
+      if (null != closure_4) {
         let everyResult;
         if (obj != null) {
           const routes = obj.getState().routes;
@@ -60,7 +60,7 @@ export const PreventRemoveProvider = function PreventRemoveProvider(children) {
       }
       const _Error = Error;
       const _HermesInternal = HermesInternal;
-      const error = new Error("Couldn't find a route with the key " + arg1 + ". Is your component inside NavigationContent?");
+      error = new Error("Couldn't find a route with the key " + arg1 + ". Is your component inside NavigationContent?");
       throw error;
     }
     const current = ref.current;
@@ -70,11 +70,11 @@ export const PreventRemoveProvider = function PreventRemoveProvider(children) {
       current.delete(arg0);
     }
   });
-  c8 = tmp11;
+  closure_8 = tmp11;
   const tmp12 = first1(1522)(() => {
     dependencyMap((size) => {
       let map = size;
-      let closure_0 = size;
+      closure_0 = size;
       const current = ref.current;
       if (size.size !== current.size) {
         const _Map = Map;
@@ -86,9 +86,9 @@ export const PreventRemoveProvider = function PreventRemoveProvider(children) {
       return map;
     });
   });
-  c9 = tmp12;
+  closure_9 = tmp12;
   const effect = obj.useEffect(() => {
-    _undefined();
+    callback();
     if (notifyPreventRemove != null) {
       notifyPreventRemove();
     }
@@ -98,7 +98,7 @@ export const PreventRemoveProvider = function PreventRemoveProvider(children) {
       }
     };
   });
-  c10 = tmp14;
+  closure_10 = tmp14;
   let items = [first, first1.size > 0, , ];
   let key;
   if (context != null) {
@@ -113,7 +113,7 @@ export const PreventRemoveProvider = function PreventRemoveProvider(children) {
     }
     if (undefined !== key) {
       if (undefined !== setPreventRemove) {
-        tmp3(first, tmp.key, c10);
+        tmp3(first, tmp.key, closure_10);
         return () => {
           callback(closure_0, key.key, false);
         };
@@ -121,6 +121,6 @@ export const PreventRemoveProvider = function PreventRemoveProvider(children) {
     }
   }, items);
   const items1 = [tmp11, tmp12, first1];
-  const value = obj.useMemo(() => ({ setPreventRemove: c8, notifyPreventRemove: c9, preventedRoutes: setPreventRemove(first1) }), items1);
+  const value = obj.useMemo(() => ({ setPreventRemove: closure_8, notifyPreventRemove: closure_9, preventedRoutes: setPreventRemove(first1) }), items1);
   return context(first(1570).PreventRemoveContext.Provider, { value, children: children.children });
 };

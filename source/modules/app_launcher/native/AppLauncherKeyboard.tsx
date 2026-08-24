@@ -1,35 +1,33 @@
-// Module ID: 11207
-// Function ID: 11208
+// Module ID: 11258
+// Function ID: 11259
 // Name: setAppLauncherA11yFocusReturnRef
-// Dependencies: [19, 17, 676, 1388, 11208, 21, 4661, 712, 9567, 9565, 11209, 4721, 11210, 4115, 11219, 4668, 6952, 11220, 500, 5042, 1625, 1498, 1627, 4731, 11255, 9566, 11257, 2]
+// Dependencies: [19, 17, 676, 1388, 11259, 21, 4668, 712, 9604, 9602, 11260, 4727, 11261, 4119, 11270, 4107, 6990, 11271, 500, 5047, 1625, 1498, 1627, 4736, 11306, 9603, 11308, 2]
 // Exports: setAppLauncherA11yFocusReturnRef
 
-// Module 11207 (setAppLauncherA11yFocusReturnRef)
-import importAllResult from "collectGuildAnalyticsMetadata";
-import { View } from "module_11220";
-import { AnalyticEvents } from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { KEYBOARD_ANIMATION_CONFIG } from "KEYBOARD_ANIMATION_DURATION";
-import jsxProd from "computeEntryState";
-import createCacheKey from "createCacheKey";
+// Module 11258 (setAppLauncherA11yFocusReturnRef)
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { KEYBOARD_ANIMATION_CONFIG } from "KEYBOARD_ANIMATION_DURATION" /* 11259 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let metroImportAll;
 const require = arg1;
 let c3 = importAllResult;
-({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
 let obj = { onboardingRoundingView: null, onboardingHeader: null, onboardingNavigatorContent: null };
-obj = { borderTopLeftRadius: require("Themes").radii.sm, borderTopRightRadius: require("Themes").radii.sm };
+obj = { borderTopLeftRadius: ThemesDefault.radii.sm, borderTopRightRadius: ThemesDefault.radii.sm };
 obj[0] = obj;
-createCacheKey = { borderWidth: 2, borderBottomWidth: 0, borderColor: require("Themes").colors.BACKGROUND_BRAND, borderBottomColor: "transparent", borderTopLeftRadius: require("Themes").radii.sm, borderTopRightRadius: require("Themes").radii.sm };
+createCacheKey = { borderWidth: 2, borderBottomWidth: 0, borderColor: ThemesDefault.colors.BACKGROUND_BRAND, borderBottomColor: "transparent", borderTopLeftRadius: ThemesDefault.radii.sm, borderTopRightRadius: ThemesDefault.radii.sm };
 obj[1] = createCacheKey;
-obj[2] = { borderWidth: 2, borderColor: require("Themes").colors.BACKGROUND_BRAND, borderTopLeftRadius: require("Themes").radii.sm, borderTopRightRadius: require("Themes").radii.sm };
+obj[2] = { borderWidth: 2, borderColor: ThemesDefault.colors.BACKGROUND_BRAND, borderTopLeftRadius: ThemesDefault.radii.sm, borderTopRightRadius: ThemesDefault.radii.sm };
 let closure_11 = createCacheKey.createStyles(obj);
 let c12 = null;
 let closure_13 = { code: "function AppLauncherKeyboardTsx1(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };
 let closure_14 = { code: "function AppLauncherKeyboardTsx2(i,prev){const{runOnJS,handleOnboardingParamChange,showOnboarding}=this.__closure;if(i===prev)return;runOnJS(handleOnboardingParamChange)(i,showOnboarding);}" };
-let obj2 = { borderWidth: 2, borderColor: require("Themes").colors.BACKGROUND_BRAND, borderTopLeftRadius: require("Themes").radii.sm, borderTopRightRadius: require("Themes").radii.sm };
+let obj2 = { borderWidth: 2, borderColor: ThemesDefault.colors.BACKGROUND_BRAND, borderTopLeftRadius: ThemesDefault.radii.sm, borderTopRightRadius: ThemesDefault.radii.sm };
 const memoResult = importAllResult.memo(function AppLauncherKeyboard(context) {
   context = context.context;
   const chatInputRef = context.chatInputRef;
@@ -39,12 +37,12 @@ const memoResult = importAllResult.memo(function AppLauncherKeyboard(context) {
   let ref;
   let ref1;
   let minimum;
-  let closure_7;
-  let closure_8;
+  closure_7 = undefined;
+  closure_8 = undefined;
   let isScreenReaderEnabled;
   let visibleContent;
   let onboardingNavigatorContent;
-  let sharedValue;
+  c12 = undefined;
   let ref2;
   let callback1;
   let obj = context(onClose[8]);
@@ -56,13 +54,14 @@ const memoResult = importAllResult.memo(function AppLauncherKeyboard(context) {
   minimum = tmp8.minimum;
   closure_7 = transitionState.useRef(Date.now());
   closure_8 = transitionState.useRef(false);
-  let obj1 = context(onClose[11]);
+  obj1 = context(onClose[11]);
   isScreenReaderEnabled = obj1.useIsScreenReaderEnabled();
   obj = { channelId: context.channel.id };
   visibleContent = chatInputRef(onClose[12])(obj).visibleContent;
   onboardingNavigatorContent = null != visibleContent;
   let obj3 = context(onClose[13]);
-  sharedValue = obj3.useSharedValue(-1);
+  const sharedValue = obj3.useSharedValue(-1);
+  c12 = sharedValue;
   const sharedValue1 = context(onClose[13]).useSharedValue(0);
   ref2 = transitionState.useRef(null);
   const items = [ref2];
@@ -85,7 +84,7 @@ const memoResult = importAllResult.memo(function AppLauncherKeyboard(context) {
   }, []);
   const items1 = [onboardingNavigatorContent, sharedValue, callback1];
   const effect = transitionState.useEffect(() => {
-    callback1(sharedValue.get(), onboardingNavigatorContent);
+    callback1(_null.get(), onboardingNavigatorContent);
   }, items1);
   const obj5 = context(onClose[13]);
   const tmp7 = chatInputRef;
@@ -188,14 +187,14 @@ const memoResult = importAllResult.memo(function AppLauncherKeyboard(context) {
       obj[0] = context(onClose[22]).KeyboardTypes.SYSTEM;
       context(onClose[21]).setKeyboardType(obj);
       current = undefined;
-      if (sharedValue != null) {
-        current = sharedValue.current;
+      if (_null != null) {
+        current = _null.current;
       }
       if (null != current) {
-        const obj1 = { ref: null };
-        obj1[0] = sharedValue;
+        obj1 = { ref: null };
+        obj1[0] = _null;
         const result = context(onClose[23]).setAccessibilityFocus(obj1);
-        sharedValue = null;
+        _null = null;
         const obj6 = context(onClose[23]);
       }
       const obj4 = context(onClose[21]);
@@ -247,9 +246,9 @@ const memoResult = importAllResult.memo(function AppLauncherKeyboard(context) {
   obj1[17] = closure_8(tmp24, obj2);
   return closure_8(tmp22, obj1);
 });
-let result = require("ME").fileFinishedImporting("modules/app_launcher/native/AppLauncherKeyboard.tsx");
+let result = require("set").fileFinishedImporting("modules/app_launcher/native/AppLauncherKeyboard.tsx");
 
 export default memoResult;
 export function setAppLauncherA11yFocusReturnRef(current2) {
-  let closure_12 = current2;
+  closure_12 = current2;
 }

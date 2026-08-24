@@ -1,34 +1,34 @@
-// Module ID: 11568
-// Function ID: 11569
+// Module ID: 11617
+// Function ID: 11618
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 1990, 21, 4661, 712, 589, 11392, 1236, 5449, 4734, 2]
+// Dependencies: [19, 17, 1991, 21, 4668, 712, 589, 11443, 1236, 5454, 4739, 2]
 // Exports: default
 
-// Module 11568 (ApplicationSectionHeader)
-import "noop";
-import { View } from "get ActivityIndicator";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11617 (ApplicationSectionHeader)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { applicationHeaderWrapper: null, applicationIcon: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", height: 32, backgroundColor: require("Themes").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingHorizontal: 16 };
+createCacheKey = { flexDirection: "row", alignItems: "center", height: 32, backgroundColor: ThemesDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingHorizontal: 16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { width: 16, height: 16, borderRadius: require("Themes").radii.sm, marginRight: 8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { width: 16, height: 16, borderRadius: require("Themes").radii.sm, marginRight: 8 };
-const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/application_commands/native/ApplicationSectionHeader.tsx");
+createCacheKey[1] = { width: 16, height: 16, borderRadius: ThemesDefault.radii.sm, marginRight: 8 };
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const obj1 = { width: 16, height: 16, borderRadius: ThemesDefault.radii.sm, marginRight: 8 };
+const result = require("set").fileFinishedImporting("modules/application_commands/native/ApplicationSectionHeader.tsx");
 
 export default function ApplicationSectionHeader(section) {
   section = section.section;
   const guildId = section.guildId;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = section(589);
-  const items = [trackCommunicationDisabled];
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => {
     if (null != guildId) {
       let botId;
@@ -36,11 +36,11 @@ export default function ApplicationSectionHeader(section) {
         botId = tmp2.botId;
       }
       if (null != botId) {
-        return outer1_4.getMember(tmp, tmp2.botId);
+        return closure_1_4.getMember(tmp, tmp2.botId);
       }
     }
   });
-  const applicationCommandsIconSource = section(11392).getApplicationCommandsIconSource(section, stateFromStores);
+  const applicationCommandsIconSource = section(11443).getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {
     nick = stateFromStores.nick;
@@ -58,9 +58,9 @@ export default function ApplicationSectionHeader(section) {
     obj = { style: null, source: null };
     obj[0] = tmp.applicationIcon;
     obj[1] = applicationCommandsIconSource;
-    tmp9 = callback(guildId(5449), obj);
+    tmp9 = callback(guildId(5454), obj);
   }
-  const items1 = [tmp9, callback(section(4734).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
+  const items1 = [tmp9, callback(section(4739).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
   obj[2] = items1;
   return closure_6(View, obj);
 };

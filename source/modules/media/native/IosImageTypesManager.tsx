@@ -1,17 +1,20 @@
-// Module ID: 4861
-// Function ID: 4862
+// Module ID: 4866
+// Function ID: 4867
 // Name: _initialize
-// Dependencies: [32, 17, 3, 4720, 2]
+// Dependencies: [32, 17, 3, 4726, 2]
 
-// Module 4861 (_initialize)
-import _slicedToArray from "_slicedToArray";
-import { NativeModules } from "get ActivityIndicator";
-import "initialize";
+// Module 4866 (_initialize)
+import timestampDefault from "timestamp" /* 3 */;
+import initializeDefault from "initialize" /* 4726 */;
+import closure_0 from "_slicedToArray" /* 32 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
 
+let closure_2 = new timestampDefault("IosImageTypesManager");
 let c3 = null;
 let c4 = null;
 let c5 = null;
 let c6 = null;
+initializeDefault;
 class IosImageTypesManager extends tmp3 {
 }
 const prototype = IosImageTypesManager.prototype;
@@ -22,7 +25,6 @@ prototype["_terminate"] = function _terminate() {
 
 };
 prototype["initializeSupportedImageTypes"] = function initializeSupportedImageTypes() {
-  let tmp20;
   if (null === closure_3) {
     try {
       const MediaManager = NativeModules.MediaManager;
@@ -76,7 +78,7 @@ prototype["initializeSupportedImageTypes"] = function initializeSupportedImageTy
       obj2 = set;
       obj3 = set1;
     } catch (tmp36) {
-      tmp2.warn("Failed to get iOS supported image types:", tmp36);
+      logger.warn("Failed to get iOS supported image types:", tmp36);
       closure_3 = {};
       const _Set4 = Set;
       set3 = new Set();
@@ -128,7 +130,7 @@ prototype["isExtensionAnimated"] = function isExtensionAnimated(formatted) {
   return hasItem;
 };
 const iosImageTypesManager = new IosImageTypesManager();
-let tmp2 = new require("initialize")("IosImageTypesManager");
-let result = require("timestamp").fileFinishedImporting("modules/media/native/IosImageTypesManager.tsx");
+let tmp2 = new timestampDefault("IosImageTypesManager");
+let result = require("set").fileFinishedImporting("modules/media/native/IosImageTypesManager.tsx");
 
 export default iosImageTypesManager;

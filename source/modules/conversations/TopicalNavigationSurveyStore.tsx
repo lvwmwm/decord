@@ -1,12 +1,14 @@
-// Module ID: 12685
-// Function ID: 12686
+// Module ID: 12739
+// Function ID: 12740
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 12685 (initialize)
-import { DeviceSettingsStore } from "initialize";
+// Module 12739 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0 = 0;
+const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class TopicalNavigationSurveyStore extends DeviceSettingsStore {
 }
 const prototype = TopicalNavigationSurveyStore.prototype;
@@ -30,7 +32,7 @@ prototype["getUserAgnosticState"] = function getUserAgnosticState() {
 };
 TopicalNavigationSurveyStore.displayName = "TopicalNavigationSurveyStore";
 TopicalNavigationSurveyStore.persistKey = "TopicalNavigationSurveyStore";
-const topicalNavigationSurveyStore = new TopicalNavigationSurveyStore(require("dispatcher"), {
+const topicalNavigationSurveyStore = new TopicalNavigationSurveyStore(dispatcherDefault, {
   TOPICAL_NAVIGATION_ENTRYPOINT_IMPRESSION: function handleTopicalNavigationEntrypointImpression() {
     closure_0 = closure_0 + 1;
   }

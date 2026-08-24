@@ -1,30 +1,26 @@
-// Module ID: 11794
-// Function ID: 11795
+// Module ID: 11843
+// Function ID: 11844
 // Name: UserProfileConfirmRemoveGameFriend
-// Dependencies: [19, 21, 8935, 9887, 4660, 1236, 4660, 2]
+// Dependencies: [19, 21, 8972, 9926, 4667, 1236, 4667, 2]
 // Exports: default
 
-// Module 11794 (UserProfileConfirmRemoveGameFriend)
-import noop from "noop";
-import jsxProd from "jsxProd";
+// Module 11843 (UserProfileConfirmRemoveGameFriend)
+import closure_3 from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
-let result = require("getProfileProperties").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmRemoveGameFriend.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmRemoveGameFriend.tsx");
 
 export default function UserProfileConfirmRemoveGameFriend(gameName) {
-  let userDisplayName;
-  let userId;
   ({ userDisplayName, userId } = gameName);
   const applicationId = gameName.applicationId;
   const items = [applicationId, userId];
   const callback = React.useCallback(() => {
-    let obj = userId(outer1_2[2]);
+    let obj = userId(closure_1_2[2]);
     const result = obj.trackUserProfileAction({ action: "REMOVE_GAME_FRIEND" });
     obj = { userId, applicationId, location: "UserProfileConfirmRemoveGameFriend" };
-    applicationId(outer1_2[3]).removeFriend(obj);
+    applicationId(closure_1_2[3]).removeFriend(obj);
   }, items);
   let obj = { title: null, content: null, actions: null };
   const intl = userId(1236).intl;
@@ -36,12 +32,12 @@ export default function UserProfileConfirmRemoveGameFriend(gameName) {
   const intl3 = userId(1236).intl;
   obj[1] = intl3.string(userId(1236).t.RLcE6x);
   obj[2] = callback;
-  const items1 = [callback(userId(4660).AlertActionButton, obj, "confirm-remove"), ];
-  const obj1 = { variant: "secondary", text: null };
+  const items1 = [callback(userId(4667).AlertActionButton, obj, "confirm-remove"), ];
+  obj1 = { variant: "secondary", text: null };
   const intl4 = userId(1236).intl;
   obj1[1] = intl4.string(userId(1236).t["eN6+rI"]);
-  items1[1] = callback(userId(4660).AlertActionButton, obj1, "nevermind");
+  items1[1] = callback(userId(4667).AlertActionButton, obj1, "nevermind");
   obj[0] = items1;
-  obj[2] = callback2(userId(4660).AlertActions, obj);
-  return callback(userId(4660).AlertModal, obj);
+  obj[2] = callback2(userId(4667).AlertActions, obj);
+  return callback(userId(4667).AlertModal, obj);
 };

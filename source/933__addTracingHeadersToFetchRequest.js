@@ -4,14 +4,15 @@
 // Dependencies: [855, 819, 866, 856, 848, 904, 827, 840, 835, 900, 839]
 
 // Module 933 (_addTracingHeadersToFetchRequest)
-const require = arg1;
+import getClient from "getClient" /* 848 */;
+import hasSpansEnabled from "hasSpansEnabled" /* 855 */;
+import getTraceData from "getTraceData" /* 904 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTraceparent) {
-  let baggage;
-  let tmp5;
-  let traceparent;
   let tmp = propagateTraceparent;
-  let obj = require(904) /* getTraceData */;
+  let obj = getTraceData;
   obj = { span, propagateTraceparent };
   const traceData = obj.getTraceData(obj);
   ({ sentry-trace: tmp5, baggage, traceparent } = traceData);
@@ -178,7 +179,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
         }
       }
     } else {
-      const obj1 = {};
+      obj1 = {};
       const merged1 = Object.assign(traceData);
       return obj1;
     }
@@ -206,11 +207,9 @@ arg5._callOnRequestSpanEnd = function _callOnRequestSpanEnd(arg0, response, obj)
   }
 };
 arg5.instrumentFetchRequest = function instrumentFetchRequest(fetchData, arg1, arg2, arg3, obj) {
-  let method;
-  let url;
   if (fetchData.fetchData) {
     ({ method, url } = fetchData.fetchData);
-    obj = require(855) /* hasSpansEnabled */;
+    obj = hasSpansEnabled;
     let hasSpansEnabledResult = obj.hasSpansEnabled();
     if (hasSpansEnabledResult) {
       hasSpansEnabledResult = arg1(url);
@@ -268,7 +267,7 @@ arg5.instrumentFetchRequest = function instrumentFetchRequest(fetchData, arg1, a
     }
     let tmp9 = obj;
     if (typeof obj !== "object") {
-      const obj1 = { spanOrigin: null };
+      obj1 = { spanOrigin: null };
       obj1[0] = obj;
       tmp9 = obj1;
     }
@@ -357,7 +356,7 @@ arg5.instrumentFetchRequest = function instrumentFetchRequest(fetchData, arg1, a
       const tmp27 = _addTracingHeadersToFetchRequest;
       tmp3Result8 = tmp3(855);
     }
-    const client = require(848) /* getClient */.getClient();
+    const client = getClient.getClient();
     if (client) {
       ({ args: obj19[0], response: obj19[1], startTimestamp: obj19[2], endTimestamp: obj19[3] } = fetchData);
       client.emit("beforeOutgoingRequestSpan", sentryNonRecordingSpan, { input: null, response: null, startTimestamp: null, endTimestamp: null });

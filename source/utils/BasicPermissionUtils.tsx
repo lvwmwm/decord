@@ -1,10 +1,13 @@
-// Module ID: 4029
-// Function ID: 4030
+// Module ID: 4032
+// Function ID: 4033
 // Name: has
 // Dependencies: [506, 2]
 
-// Module 4029 (has)
-const result = require("set").fileFinishedImporting("utils/BasicPermissionUtils.tsx");
+// Module 4032 (has)
+import set from "set" /* 2 */;
+import fromStringAll from "fromString" /* 506 */;
+
+const result = set.fileFinishedImporting("utils/BasicPermissionUtils.tsx");
 const prototype = function BasicPermissionUtils() {
   return Object.create(new.target.prototype);
 }.prototype;
@@ -12,13 +15,13 @@ prototype["has"] = function has(arg0, arg1) {
   return (arg0 & arg1) === arg1;
 };
 prototype["asBasicFlag"] = function asBasicFlag(permissions) {
-  return importAll(506).asUintN(24, permissions);
+  return fromStringAll.asUintN(24, permissions);
 };
 prototype["asBigFlag"] = function asBigFlag(VIEW_CHANNEL) {
   const self = this;
   if (!Object.hasOwn(this.cache, VIEW_CHANNEL)) {
-    self.cache[VIEW_CHANNEL] = importAll(506).deserialize(VIEW_CHANNEL);
-    const obj = importAll(506);
+    self.cache[VIEW_CHANNEL] = fromStringAll.deserialize(VIEW_CHANNEL);
+    const obj = fromStringAll;
   }
   return self.cache[VIEW_CHANNEL];
 };

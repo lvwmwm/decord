@@ -1,13 +1,16 @@
-// Module ID: 9054
-// Function ID: 9055
+// Module ID: 9091
+// Function ID: 9092
 // Name: initialize
-// Dependencies: [589, 7589, 709, 2]
+// Dependencies: [589, 7627, 709, 2]
 
-// Module 9054 (initialize)
-import { DeviceSettingsStore } from "initialize";
+// Module 9091 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7627 */;
 
-const require = arg1;
+require = arg1;
 let closure_2 = {};
+const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class ICYMIFiltersStore extends DeviceSettingsStore {
 }
 const prototype = ICYMIFiltersStore.prototype;
@@ -23,7 +26,7 @@ prototype["filterStaffContent"] = function filterStaffContent() {
 prototype["getDoubleTapBehavior"] = function getDoubleTapBehavior() {
   let DEFAULT = closure_2.doubleTapBehavior;
   if (DEFAULT == null) {
-    DEFAULT = require(7589) /* MessageEmbedTypes */.GravityICYMIDoubleTapBehavior.DEFAULT;
+    DEFAULT = MessageEmbedTypes.GravityICYMIDoubleTapBehavior.DEFAULT;
   }
   return DEFAULT;
 };
@@ -35,11 +38,11 @@ prototype["getUserAgnosticState"] = function getUserAgnosticState() {
 };
 ICYMIFiltersStore.displayName = "ICYMIFiltersStore";
 ICYMIFiltersStore.persistKey = "ICYMIFiltersStore";
-const iCYMIFiltersStore = new ICYMIFiltersStore(require("dispatcher"), {
+const iCYMIFiltersStore = new ICYMIFiltersStore(dispatcherDefault, {
   SET_ICYMI_FILTERS: function handleFilters(filters) {
     filters = filters.filters;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/icymi/ICYMIFiltersStore.tsx");
+const result = require("set").fileFinishedImporting("modules/icymi/ICYMIFiltersStore.tsx");
 
 export default iCYMIFiltersStore;

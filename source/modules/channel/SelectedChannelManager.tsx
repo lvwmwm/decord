@@ -1,22 +1,23 @@
-// Module ID: 16700
-// Function ID: 16701
+// Module ID: 16796
+// Function ID: 16797
 // Name: handleGuildCreate
-// Dependencies: [4497, 1979, 4197, 676, 5038, 7302, 4975, 1222, 709, 2]
+// Dependencies: [4501, 1980, 4201, 676, 5043, 7340, 4980, 1222, 709, 2]
 
-// Module 16700 (handleGuildCreate)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import handleConnectionOpen from "handleConnectionOpen";
-import { findFirstVoiceChannelId } from "handleConnectionOpen";
-import closure_6 from "handleConnectionOpen";
-import ME from "ME";
-import "initialize";
+// Module 16796 (handleGuildCreate)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import transitionTo from "transitionTo" /* 1222 */;
+import _modDef4980 from "module_4980" /* 4980 */;
+import initializeDefault from "initialize" /* 5043 */;
+import transitionToGuild from "transitionToGuild" /* 7340 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
+import { findFirstVoiceChannelId } from "handleConnectionOpen" /* 1980 */;
+import closure_6 from "handleConnectionOpen" /* 4201 */;
+import ME from "ME" /* 676 */;
 
-let c10;
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
-({ ChannelTypes: error, Routes: metroImportAll, ME: c9, NULL_STRING_GUILD_ID: c10 } = ME);
+require = arg1;
+({ ChannelTypes: error, Routes: closure_8, ME: c9, NULL_STRING_GUILD_ID: c10 } = ME);
+initializeDefault;
 class SelectedChannelManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -30,8 +31,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   const channelId = store.getChannelId(closure_9);
   const voiceChannelId = store.getVoiceChannelId();
   if (guild.id === channelId) {
-    require(7302) /* transitionToGuild */.transitionToGuild(guild.id);
-    const obj = require(7302) /* transitionToGuild */;
+    transitionToGuild.transitionToGuild(guild.id);
+    const obj = transitionToGuild;
   }
   let tmp6 = guild.id === voiceChannelId;
   if (tmp6) {
@@ -41,8 +42,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
     tmp6 = null == voiceChannelId;
   }
   if (tmp6) {
-    const voiceChannel = importDefault(4975).selectVoiceChannel(findFirstVoiceChannelId(guild.id));
-    const obj2 = importDefault(4975);
+    const voiceChannel = _modDef4980.selectVoiceChannel(findFirstVoiceChannelId(guild.id));
+    const obj2 = _modDef4980;
   }
 };
 prototype["handleChannelCreate"] = function handleChannelCreate(channel) {
@@ -51,22 +52,22 @@ prototype["handleChannelCreate"] = function handleChannelCreate(channel) {
     const originChannelId = channel.originChannelId;
     const channelId = store.getChannelId(closure_10);
     if (tmp) {
-      require(1222) /* transitionTo */.transitionTo(closure_8.CHANNEL(closure_9, channel.id));
-      const obj = require(1222) /* transitionTo */;
+      transitionTo.transitionTo(closure_8.CHANNEL(closure_9, channel.id));
+      const obj = transitionTo;
     }
     const obj3 = store;
     tmp = null == guildId.getGuildId() && null != originChannelId && originChannelId === channelId;
     if (tmp7) {
-      const voiceChannel = importDefault(4975).selectVoiceChannel(channel.id, videoEnabled.isVideoEnabled());
-      const obj2 = importDefault(4975);
+      const voiceChannel = _modDef4980.selectVoiceChannel(channel.id, videoEnabled.isVideoEnabled());
+      const obj2 = _modDef4980;
     }
     tmp7 = null != originChannelId && originChannelId === store.getVoiceChannelId();
   }
 };
 prototype["handleLogout"] = function handleLogout() {
-  importDefault(709).dispatch({ type: "VOICE_CHANNEL_SELECT", channelId: null, guildId: null, video: false, currentVoiceChannelId: null, joinVoiceId: null });
+  dispatcherDefault.dispatch({ type: "VOICE_CHANNEL_SELECT", channelId: null, guildId: null, video: false, currentVoiceChannelId: null, joinVoiceId: null });
 };
 const selectedChannelManager = new SelectedChannelManager();
-const result = require("handleConnectionOpen").fileFinishedImporting("modules/channel/SelectedChannelManager.tsx");
+const result = require("set").fileFinishedImporting("modules/channel/SelectedChannelManager.tsx");
 
 export default selectedChannelManager;

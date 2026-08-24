@@ -1,11 +1,12 @@
-// Module ID: 7398
-// Function ID: 7399
+// Module ID: 7436
+// Function ID: 7437
 // Name: createFromServer
 // Dependencies: [1931, 2]
 
-// Module 7398 (createFromServer)
-import "toJS";
+// Module 7436 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
 
+toJSDefault;
 let prototype;
 prototype = function SubscriptionFacetRecord(subscriptionId) {
   const tmp = new prototype(new.target, new.target);
@@ -35,8 +36,6 @@ prototype = function SubscriptionFacetRecord(subscriptionId) {
 class prototype extends tmp2 {
 }
 prototype["createFromServer"] = function createFromServer(subscription_id) {
-  let renewal_line_items;
-  let subscription_trial_id;
   let tmp = null;
   if (null != subscription_id) {
     subscription_id = subscription_id.subscription_id;

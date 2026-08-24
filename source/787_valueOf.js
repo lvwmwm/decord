@@ -4,9 +4,11 @@
 // Dependencies: [608, 788, 752, 789, 790, 781]
 
 // Module 787 (valueOf)
+import _mod608 from "module_608" /* 608 */;
+
 let prototype;
-if (require("module_608")) {
-  prototype = require("module_608").prototype;
+if (_mod608) {
+  prototype = _mod608.prototype;
 }
 let valueOf;
 if (prototype) {
@@ -14,8 +16,6 @@ if (prototype) {
 }
 
 export default function equalByTag(arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
-  let call;
-  let call2;
   if (!valueOf) {
     return false;
   } else {

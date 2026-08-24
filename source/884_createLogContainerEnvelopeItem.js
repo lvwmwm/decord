@@ -4,7 +4,10 @@
 // Dependencies: [837, 864]
 
 // Module 884 (createLogContainerEnvelopeItem)
-const require = arg1;
+import dsnFromString from "dsnFromString" /* 837 */;
+import forEachEnvelopeItem from "forEachEnvelopeItem" /* 864 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.createLogContainerEnvelopeItem = function createLogContainerEnvelopeItem(item_count) {
@@ -28,11 +31,11 @@ arg5.createLogEnvelope = function createLogEnvelope(items, _metadata, tunnel, ds
     tmp2 = dsn;
   }
   if (tmp2) {
-    obj.dsn = require(837) /* dsnFromString */.dsnToString(dsn);
-    const obj3 = require(837) /* dsnFromString */;
+    obj.dsn = dsnFromString.dsnToString(dsn);
+    const obj3 = dsnFromString;
   }
   obj = { type: "log", item_count: items.length, content_type: "application/vnd.sentry.items.log+json" };
   items = [obj, { items }];
   const items1 = [items];
-  return require(864) /* forEachEnvelopeItem */.createEnvelope(obj, items1);
+  return forEachEnvelopeItem.createEnvelope(obj, items1);
 };

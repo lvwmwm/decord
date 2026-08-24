@@ -4,6 +4,12 @@
 // Dependencies: [735, 743, 744, 745, 746]
 
 // Module 734 (Hash)
+import hashClear from "hashClear" /* 735 */;
+import hashDelete from "hashDelete" /* 743 */;
+import hashGet from "hashGet" /* 744 */;
+import hashHas from "hashHas" /* 745 */;
+import hashSet from "hashSet" /* 746 */;
+
 class Hash {
   constructor(arg0) {
     num = 0;
@@ -19,10 +25,10 @@ class Hash {
     return;
   }
 }
-Hash.prototype.clear = require("hashClear");
-Hash.prototype.delete = require("hashDelete");
-Hash.prototype.get = require("hashGet");
-Hash.prototype.has = require("hashHas");
-Hash.prototype.set = require("hashSet");
+Hash.prototype.clear = hashClear;
+Hash.prototype.delete = hashDelete;
+Hash.prototype.get = hashGet;
+Hash.prototype.has = hashHas;
+Hash.prototype.set = hashSet;
 
 export default Hash;

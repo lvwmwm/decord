@@ -1,19 +1,19 @@
-// Module ID: 16102
-// Function ID: 16103
+// Module ID: 16200
+// Function ID: 16201
 // Name: MessageRequestEmpty
-// Dependencies: [19, 21, 1297, 16103, 2]
+// Dependencies: [19, 21, 1297, 16201, 2]
 // Exports: default
 
-// Module 16102 (MessageRequestEmpty)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 16200 (MessageRequestEmpty)
+import noopAll from "noop" /* 19 */;
+import Button from "Button" /* 1297 */;
+import getPendingSource from "getPendingSource" /* 16201 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Button").fileFinishedImporting("modules/message_request/native/MessageRequestEmpty.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/message_request/native/MessageRequestEmpty.tsx");
 
-export default function MessageRequestEmpty(bodyText) {
-  const obj = { Illustration: null, body: null };
-  obj[0] = require(16103) /* getPendingSource */.Pending;
-  obj[1] = bodyText.bodyText;
-  return jsx(require(1297) /* Button */.EmptyState, { Illustration: null, body: null });
+export default function MessageRequestEmpty(body) {
+  return jsx(Button.EmptyState, { Illustration: getPendingSource.Pending, body: body.bodyText });
 };

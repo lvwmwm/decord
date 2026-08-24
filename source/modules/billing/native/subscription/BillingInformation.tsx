@@ -1,15 +1,15 @@
-// Module ID: 7921
-// Function ID: 7922
+// Module ID: 7960
+// Function ID: 7961
 // Name: getBillingInformationStringNative
-// Dependencies: [5, 676, 4039, 501, 1236, 7705, 2]
+// Dependencies: [5, 676, 4042, 501, 1236, 7743, 2]
 // Exports: getBillingInformationStringNative
 
-// Module 7921 (getBillingInformationStringNative)
-import serializePurchaseResponse from "serializePurchaseResponse";
-import { SubscriptionStatusTypes } from "ME";
+// Module 7960 (getBillingInformationStringNative)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { SubscriptionStatusTypes } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("getPremiumPlanItem").fileFinishedImporting("modules/billing/native/subscription/BillingInformation.tsx");
+const result = require("set").fileFinishedImporting("modules/billing/native/subscription/BillingInformation.tsx");
 
 export const getBillingInformationStringNative = function getBillingInformationStringNative(subscription, first, first1, flag, fractionalPremiumInfo) {
   let tmp = first1;
@@ -20,7 +20,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
     flag = false;
   }
   let _require;
-  let obj = _require(4039);
+  let obj = _require(4042);
   let billingInformationString = obj.getBillingInformationString(subscription, first, tmp, flag, fractionalPremiumInfo);
   let tmp5 = _require(501).isIOS() && subscription.isPurchasedViaApple;
   if (tmp5) {
@@ -42,7 +42,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
               obj[0] = arg1;
               return obj;
             } else {
-              let obj1 = v0(table[5]);
+              obj1 = v0(table[5]);
               table = 1;
               v0 = 1;
               obj1 = { value: null, done: false };
@@ -74,7 +74,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           v0 = tmp;

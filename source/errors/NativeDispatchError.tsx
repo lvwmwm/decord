@@ -1,12 +1,14 @@
-// Module ID: 4276
-// Function ID: 4277
+// Module ID: 4280
+// Function ID: 4281
 // Name: displayMessage
-// Dependencies: [4277, 1236, 4269, 2]
+// Dependencies: [4281, 1236, 4273, 2]
 
-// Module 4276 (displayMessage)
-import { DispatchErrorCodes } from "RPC_SCOPE_CONFIG";
+// Module 4280 (displayMessage)
+import set from "set" /* 2 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4281 */;
 
-const result = require("formatSize").fileFinishedImporting("errors/NativeDispatchError.tsx");
+const DispatchErrorCodes = RPC_SCOPE_CONFIG.DispatchErrorCodes;
+const result = set.fileFinishedImporting("errors/NativeDispatchError.tsx");
 class NativeDispatchError {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -33,8 +35,6 @@ class NativeDispatchError {
 }
 Object.defineProperty(NativeDispatchError.prototype, "displayMessage", {
   get: function displayMessage() {
-    let available;
-    let required;
     const self = this;
     if (null == this.code) {
       const intl14 = require(1236) /* getSystemLocale */.intl;
@@ -44,12 +44,12 @@ Object.defineProperty(NativeDispatchError.prototype, "displayMessage", {
       const code = self.code;
       if (DispatchErrorCodes.DISK_LOW === code) {
         ({ available, required } = self.context);
-        const obj5 = require(4269) /* formatSize */;
-        const formatSizeResult = require(4269) /* formatSize */.formatSize(available, { useKibibytes: true });
-        const obj6 = require(4269) /* formatSize */;
+        const obj5 = require(4273) /* formatSize */;
+        const formatSizeResult = require(4273) /* formatSize */.formatSize(available, { useKibibytes: true });
+        const obj6 = require(4273) /* formatSize */;
         const intl13 = require(1236) /* getSystemLocale */.intl;
         let obj = { required: null, available: null };
-        obj[0] = require(4269) /* formatSize */.formatSize(required, { useKibibytes: true });
+        obj[0] = require(4273) /* formatSize */.formatSize(required, { useKibibytes: true });
         obj[1] = formatSizeResult;
         return intl13.formatToPlainString(require(1236) /* getSystemLocale */.t["2DR5dl"], obj);
       } else if (tmp32.POST_INSTALL_FAILED === code) {
@@ -77,7 +77,7 @@ Object.defineProperty(NativeDispatchError.prototype, "displayMessage", {
           if (tmp32.DISK_PERMISSION_DENIED !== code) {
             if (tmp32.INVALID_DRIVE === code) {
               const intl5 = require(1236) /* getSystemLocale */.intl;
-              const obj1 = { path: null };
+              obj1 = { path: null };
               obj1[0] = path;
               return intl5.formatToPlainString(require(1236) /* getSystemLocale */.t["08L2TG"], obj1);
             } else if (tmp32.APPLICATION_LOCK_FAILED === code) {

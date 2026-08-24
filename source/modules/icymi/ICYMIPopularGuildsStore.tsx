@@ -1,21 +1,23 @@
-// Module ID: 15739
-// Function ID: 15740
+// Module ID: 15808
+// Function ID: 15809
 // Name: initialize
-// Dependencies: [1910, 1430, 7301, 589, 709, 2]
+// Dependencies: [1910, 1430, 7339, 589, 709, 2]
 
-// Module 15739 (initialize)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { Store } from "initialize";
+// Module 15808 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
 
 const require = arg1;
 let closure_3 = [];
 let closure_4 = [];
 let c5 = 0;
+const Store = initializeDefault.Store;
 class ICYMIPopularGuildsStore extends Store {
 }
 const prototype = ICYMIPopularGuildsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(createGuildRecordFromRust);
+  this.waitFor(closure_2);
 };
 prototype["getOnboardingCategoryIds"] = function getOnboardingCategoryIds() {
   return closure_3;
@@ -27,10 +29,8 @@ prototype["getCurrentOnboardingGuildOffset"] = function getCurrentOnboardingGuil
   return c5;
 };
 ICYMIPopularGuildsStore.displayName = "ICYMIPopularGuildsStore";
-const iCYMIPopularGuildsStore = new ICYMIPopularGuildsStore(require("dispatcher"), {
+const iCYMIPopularGuildsStore = new ICYMIPopularGuildsStore(dispatcherDefault, {
   LOAD_ICYMI_POPULAR_GUILDS: function loadOnboardingPopularGuilds(categoryIds) {
-    let guilds;
-    let offset;
     ({ guilds, offset } = categoryIds);
     let set;
     let set1;
@@ -56,11 +56,11 @@ const iCYMIPopularGuildsStore = new ICYMIPopularGuildsStore(require("dispatcher"
     items = [...found];
   },
   LOGOUT: function handleLogout() {
-    let closure_3 = [];
-    let closure_4 = [];
-    let c5 = 0;
+    closure_3 = [];
+    closure_4 = [];
+    c5 = 0;
   }
 });
-const result = require("_startLurking").fileFinishedImporting("modules/icymi/ICYMIPopularGuildsStore.tsx");
+const result = require("set").fileFinishedImporting("modules/icymi/ICYMIPopularGuildsStore.tsx");
 
 export default iCYMIPopularGuildsStore;

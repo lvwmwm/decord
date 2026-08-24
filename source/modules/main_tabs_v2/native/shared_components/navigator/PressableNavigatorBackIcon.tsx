@@ -1,35 +1,32 @@
-// Module ID: 8494
-// Function ID: 8495
+// Module ID: 8533
+// Function ID: 8534
 // Name: PressableNavigatorBackIcon
-// Dependencies: [19, 17, 1391, 5383, 1979, 21, 4661, 1297, 712, 1367, 589, 4194, 8495, 5433, 1236, 8496, 8497, 2]
+// Dependencies: [19, 17, 1391, 5388, 1980, 21, 4668, 1297, 712, 1367, 589, 4198, 8534, 5438, 1236, 8535, 8536, 2]
 
-// Module 8494 (PressableNavigatorBackIcon)
-import importAllResult from "noop";
-import get_ActivityIndicator from "set";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
-import handleConnectionOpen from "handleConnectionOpen";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8533 (PressableNavigatorBackIcon)
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "updateGuildUnreadSentinel" /* 5388 */;
+import closure_8 from "handleConnectionOpen" /* 1980 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c4;
-let c5;
-let c9;
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let closure_11 = createCacheKey.createStyles((arg0) => {
   let obj = { maskWrapper: null, maskStroke: null, actionButtonPressable: null, actionButtonIcon: null };
-  obj = { position: "absolute", minWidth: require(1297) /* Button */.BADGE_SIZE, height: require(1297) /* Button */.BADGE_SIZE, top: 10, left: 8, flexShrink: 0, flexGrow: 1, zIndex: 100 };
+  obj = { position: "absolute", minWidth: Button.BADGE_SIZE, height: Button.BADGE_SIZE, top: 10, left: 8, flexShrink: 0, flexGrow: 1, zIndex: 100 };
   obj[0] = obj;
-  obj = { backgroundColor: importDefault(712).colors.PANEL_BG };
+  obj = { backgroundColor: ThemesDefault.colors.PANEL_BG };
   obj[1] = obj;
-  const obj1 = { padding: 8, zIndex: 100, width: 40, height: null, borderRadius: 20 };
-  obj1[3] = 40;
+  obj1 = { padding: 8, zIndex: 100, width: 40, height: 40, borderRadius: 20 };
   obj[2] = obj1;
-  const colors = importDefault(712).colors;
+  const colors = ThemesDefault.colors;
   obj[3] = { tintColor: arg0 ? colors.ICON_SUBTLE : colors.INTERACTIVE_TEXT_DEFAULT };
   return obj;
 });
@@ -40,7 +37,7 @@ const forwardRefResult = importAllResult.forwardRef((navigation, ref) => {
   let stateFromStores;
   const tmp4 = callback(onPress(stateFromStores[9])("PressableNavigatorBackIcon"));
   let obj = navigation(stateFromStores[10]);
-  const items = [updateGuildUnreadSentinel, handleConnectionOpen, ensureGuildLoaded];
+  const items = [closure_7, closure_8, closure_6];
   stateFromStores = obj.useStateFromStores(items, () => {
     totalMentionCount = totalMentionCount.getTotalMentionCount();
     currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
@@ -59,7 +56,7 @@ const forwardRefResult = importAllResult.forwardRef((navigation, ref) => {
     }
     obj = totalMentionCount;
   });
-  let obj1 = importAllResult;
+  obj1 = importAllResult;
   const items1 = [stateFromStores];
   const memo = importAllResult.useMemo(() => {
     if (stateFromStores >= 10) {
@@ -124,6 +121,6 @@ const forwardRefResult = importAllResult.forwardRef((navigation, ref) => {
   obj5[0] = closure_9(navigation(stateFromStores[13]).PressableOpacity, obj);
   return closure_9(onPress(stateFromStores[12]), obj5);
 });
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorBackIcon.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorBackIcon.tsx");
 
 export const PressableNavigatorBackIcon = forwardRefResult;

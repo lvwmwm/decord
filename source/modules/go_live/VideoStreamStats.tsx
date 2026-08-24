@@ -1,14 +1,15 @@
-// Module ID: 4567
-// Function ID: 4568
+// Module ID: 4572
+// Function ID: 4573
 // Name: start
-// Dependencies: [4562, 676, 4259, 4548, 2]
+// Dependencies: [4567, 676, 4263, 4553, 2]
 
-// Module 4567 (start)
-import ApplicationStreamPresets from "ApplicationStreamPresets";
-import { StreamLayouts } from "ME";
+// Module 4572 (start)
+import sleep from "sleep" /* 4553 */;
+import closure_2 from "ApplicationStreamPresets" /* 4567 */;
+import { StreamLayouts } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("start").fileFinishedImporting("modules/go_live/VideoStreamStats.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/go_live/VideoStreamStats.tsx");
 class VideoStreamStats {
   constructor(arg0, arg1) {
     obj = Object.create(new.target.prototype);
@@ -27,7 +28,7 @@ class VideoStreamStats {
       _layoutBuckets[_lastLayout] = _layoutBuckets[_lastLayout] + arg1;
     };
     obj._sampleStats = function _sampleStats() {
-      const state = outer1_2.getState();
+      const state = closure_1_2.getState();
       obj._streamSettingsChanged = state.resolution !== obj._targetResolution || tmp2 !== obj._targetFPS;
     };
     obj._isSender = arg1;
@@ -44,12 +45,12 @@ prototype["start"] = function start() {
   ({ resolution: this._targetResolution, fps: this._targetFPS } = state);
   const _statInterval = this._statInterval;
   _statInterval.start(1000, this._sampleStats);
-  this._lastLayoutChanged = require(4548) /* sleep */.now();
+  this._lastLayoutChanged = sleep.now();
 };
 prototype["stop"] = function stop() {
   const _statInterval = this._statInterval;
   _statInterval.stop();
-  this._streamEnd = require(4548) /* sleep */.now();
+  this._streamEnd = sleep.now();
   this._incrementLayout(this._lastLayout, (this._streamEnd - this._lastLayoutChanged) / 1000);
 };
 prototype["autoQualityChange"] = function autoQualityChange() {
@@ -59,12 +60,12 @@ prototype["layoutChange"] = function layoutChange(_lastLayout) {
   const self = this;
   if (_lastLayout !== this._lastLayout) {
     if (null == self._streamEnd) {
-      const nowResult = require(4548) /* sleep */.now();
+      const nowResult = sleep.now();
       self._incrementLayout(self._lastLayout, (nowResult - self._lastLayoutChanged) / 1000);
       self._layoutChanges = self._layoutChanges + 1;
       self._lastLayout = _lastLayout;
       self._lastLayoutChanged = nowResult;
-      const obj = require(4548) /* sleep */;
+      const obj = sleep;
     }
   }
 };

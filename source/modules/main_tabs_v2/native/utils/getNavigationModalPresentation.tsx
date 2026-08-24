@@ -1,23 +1,24 @@
-// Module ID: 9941
-// Function ID: 9942
+// Module ID: 9980
+// Function ID: 9981
 // Name: getNavigationModalPresentation
-// Dependencies: [500, 7925, 4354, 8671, 2]
+// Dependencies: [500, 7964, 4358, 8708, 2]
 // Exports: default
 
-// Module 9941 (getNavigationModalPresentation)
-import set from "set";
-import set from "set";
-import set from "DCDDeviceManager";
+// Module 9980 (getNavigationModalPresentation)
+import DCDDeviceManager from "DCDDeviceManager" /* 4358 */;
+import useIsWindowLarge from "useIsWindowLarge" /* 7964 */;
+import handleOrientationChange from "handleOrientationChange" /* 8708 */;
+import set from "set" /* 500 */;
 
 if (set.isAndroid()) {
-  const _module1 = require("useIsWindowLarge");
+  const _module1 = useIsWindowLarge;
   let str2 = "modal";
   if (_module1.getIsWindowLarge()) {
     str2 = "fullScreenModal";
   }
   let str = str2;
 } else {
-  const _module2 = require("DCDDeviceManager");
+  const _module2 = DCDDeviceManager;
   str = "modal";
   if (_module2.isIpadOS()) {
     str = "fullScreenModal";
@@ -47,20 +48,20 @@ export default function getNavigationModalPresentation() {
   obj = { presentation, orientation: null };
   let tmp4;
   if (lockOrientation) {
-    const orientationLock = require(8671) /* handleOrientationChange */.getOrientationLock();
+    const orientationLock = handleOrientationChange.getOrientationLock();
     let str2 = "landscape";
     let str4 = "landscape";
     if ("LANDSCAPE" !== orientationLock) {
       if (null != orientationLock) {
         str2 = "portrait";
       } else {
-        const orientation = tmp5(8671).getOrientation();
-        const tmp5Result = tmp5(8671);
+        const orientation = tmp5(8708).getOrientation();
+        const tmp5Result = tmp5(8708);
       }
       str4 = str2;
     }
     tmp4 = str4;
-    const obj2 = require(8671) /* handleOrientationChange */;
+    const obj2 = handleOrientationChange;
   }
   obj[1] = tmp4;
   return obj;

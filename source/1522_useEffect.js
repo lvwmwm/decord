@@ -4,7 +4,7 @@
 // Dependencies: [19]
 
 // Module 1522 (useEffect)
-import noop from "noop";
+import noop from "noop" /* 19 */;
 
 if (typeof document !== "undefined") {
   let useEffect = noop.useLayoutEffect;
@@ -17,8 +17,8 @@ if (typeof document !== "undefined") {
 }
 
 export default function useLatestCallback(stateFromStores) {
-  const noop = stateFromStores;
-  const useEffect = noop.useRef(stateFromStores);
+  noop = stateFromStores;
+  useEffect = noop.useRef(stateFromStores);
   useEffect(() => {
     closure_1.current = closure_0;
   });

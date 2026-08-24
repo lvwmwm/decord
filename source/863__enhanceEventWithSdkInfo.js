@@ -4,7 +4,9 @@
 // Dependencies: [864, 837, 857, 859, 819]
 
 // Module 863 (_enhanceEventWithSdkInfo)
-const require = arg1;
+import forEachEnvelopeItem from "forEachEnvelopeItem" /* 864 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function _enhanceEventWithSdkInfo(sdk, name) {
   if (name) {
@@ -65,7 +67,7 @@ function _enhanceEventWithSdkInfo(sdk, name) {
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5._enhanceEventWithSdkInfo = _enhanceEventWithSdkInfo;
 arg5.createEventEnvelope = function createEventEnvelope(type, arg1, sdk) {
-  const sdkMetadataForEnvelopeHeader = require(864) /* forEachEnvelopeItem */.getSdkMetadataForEnvelopeHeader(sdk);
+  const sdkMetadataForEnvelopeHeader = forEachEnvelopeItem.getSdkMetadataForEnvelopeHeader(sdk);
   let str = "event";
   if (type.type) {
     str = "event";
@@ -87,10 +89,9 @@ arg5.createEventEnvelope = function createEventEnvelope(type, arg1, sdk) {
   return tmp3Result.createEnvelope(eventEnvelopeHeaders, items1);
 };
 arg5.createSessionEnvelope = function createSessionEnvelope(toJSON) {
-  let obj = require(864) /* forEachEnvelopeItem */;
+  let obj = forEachEnvelopeItem;
   const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
-  obj = { sent_at: null };
-  obj[0] = new Date().toISOString();
+  obj = { sent_at: new Date().toISOString() };
   let tmp4 = sdkMetadataForEnvelopeHeader;
   if (sdkMetadataForEnvelopeHeader) {
     obj = { sdk: null };
@@ -100,7 +101,7 @@ arg5.createSessionEnvelope = function createSessionEnvelope(toJSON) {
   const merged = Object.assign(tmp4);
   let tmp6 = arg3 && arg1;
   if (tmp6) {
-    const obj1 = { dsn: null };
+    obj1 = { dsn: null };
     let tmpResult = tmp(837);
     obj1[0] = tmpResult.dsnToString(arg1);
     tmp6 = obj1;
@@ -127,8 +128,7 @@ arg5.createSpanEnvelope = function createSpanEnvelope(arr, getDsn) {
   if (getDsn != null) {
     tunnel = getDsn.getOptions().tunnel;
   }
-  obj = { sent_at: null };
-  obj[0] = new Date().toISOString();
+  obj = { sent_at: new Date().toISOString() };
   let tmp8 = (function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
     return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
   })(dynamicSamplingContextFromSpan);
@@ -140,7 +140,7 @@ arg5.createSpanEnvelope = function createSpanEnvelope(arr, getDsn) {
   const merged = Object.assign(tmp8);
   let tmp10 = tunnel && dsn;
   if (tmp10) {
-    const obj1 = { dsn: null };
+    obj1 = { dsn: null };
     obj1[0] = tmp2(tmp4[1]).dsnToString(dsn);
     tmp10 = obj1;
     const tmp2Result = tmp2(tmp4[1]);

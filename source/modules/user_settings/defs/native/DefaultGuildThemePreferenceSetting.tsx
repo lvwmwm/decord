@@ -1,22 +1,25 @@
-// Module ID: 14656
-// Function ID: 14657
+// Module ID: 14724
+// Function ID: 14725
 // Name: radio
-// Dependencies: [19, 8198, 4066, 1236, 1306, 10669, 4303, 2]
+// Dependencies: [19, 8238, 4069, 1236, 1306, 10708, 4307, 2]
 
-// Module 14656 (radio)
-import noop from "noop";
-import createToggle from "createToggle";
+// Module 14724 (radio)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import apexExperiment from "apexExperiment" /* 4307 */;
+import closure_2 from "noop" /* 19 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.Q7mm4g);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.Q7mm4g);
   },
   parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   useValue: require("explicitContentFromProto").DefaultGuildThemePreference.useSetting,
   onValueChange: function onDefaultGuildThemePreferenceChange(arg0) {
-    const DefaultGuildThemePreference = require(4066) /* explicitContentFromProto */.DefaultGuildThemePreference;
+    const DefaultGuildThemePreference = explicitContentFromProto.DefaultGuildThemePreference;
     DefaultGuildThemePreference.updateSetting(Number(arg0));
   },
   useOptions: function useDefaultGuildThemePreferenceOptions() {
@@ -35,10 +38,10 @@ createToggle = {
     }, []);
   },
   usePredicate() {
-    return require(4303) /* apexExperiment */.useServerThemeUserEnabled("DefaultGuildThemePreferenceSetting");
+    return apexExperiment.useServerThemeUserEnabled("DefaultGuildThemePreferenceSetting");
   }
 };
 createToggle = createToggle.createRadio(createToggle);
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/DefaultGuildThemePreferenceSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/DefaultGuildThemePreferenceSetting.tsx");
 
 export default createToggle;

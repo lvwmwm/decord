@@ -1,15 +1,19 @@
-// Module ID: 5024
-// Function ID: 5025
+// Module ID: 5029
+// Function ID: 5030
 // Name: getShouldObscureForSetting
 // Dependencies: [1306, 12, 2]
 // Exports: areSettingsEqual, getShouldObscureForSetting
 
-// Module 5024 (getShouldObscureForSetting)
-const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaRedactionSettingUtils.tsx");
+// Module 5029 (getShouldObscureForSetting)
+import set from "set" /* 2 */;
+import apply from "apply" /* 12 */;
+import create from "create" /* 1306 */;
+
+const result = set.fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaRedactionSettingUtils.tsx");
 
 export const getShouldObscureForSetting = function getShouldObscureForSetting(tmp10Result) {
-  return tmp10Result === require(1306) /* create */.ExplicitContentRedaction.BLUR || tmp10Result === require(1306) /* create */.ExplicitContentRedaction.BLOCK;
+  return tmp10Result === create.ExplicitContentRedaction.BLUR || tmp10Result === create.ExplicitContentRedaction.BLOCK;
 };
 export const areSettingsEqual = function areSettingsEqual(arg0, arg1) {
-  return require(12) /* apply */.isEqual(arg0, arg1);
+  return apply.isEqual(arg0, arg1);
 };

@@ -1,15 +1,17 @@
-// Module ID: 11811
-// Function ID: 11812
+// Module ID: 11860
+// Function ID: 11861
 // Name: PX_24
 // Dependencies: [712, 1297, 2]
 // Exports: default
 
-// Module 11811 (PX_24)
-const PX_24 = require("Themes").space.PX_24;
+// Module 11860 (PX_24)
+import ThemesDefault from "Themes" /* 712 */;
+
+const PX_24 = ThemesDefault.space.PX_24;
 const tmp2 = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL];
 let closure_1 = tmp2;
-const PX_16 = require("Themes").space.PX_16;
-const PX_12 = require("Themes").space.PX_12;
+const PX_16 = ThemesDefault.space.PX_16;
+const PX_12 = ThemesDefault.space.PX_12;
 const result = require("set").fileFinishedImporting("modules/chat/native/placeholder/getChatPlaceholderRowHeight.tsx");
 
 export default function getChatPlaceholderRowHeight(arg0) {

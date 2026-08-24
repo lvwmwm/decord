@@ -1,28 +1,28 @@
-// Module ID: 6728
-// Function ID: 6729
+// Module ID: 6765
+// Function ID: 6766
 // Name: computeRolesForGuild
-// Dependencies: [1434, 1984, 1990, 1983, 1910, 1922, 676, 4012, 589, 709, 2]
+// Dependencies: [1434, 1985, 1991, 1984, 1910, 1922, 676, 4015, 589, 709, 2]
 
-// Module 6728 (computeRolesForGuild)
-import { isGuildOwner } from "GuildNSFWContentLevel";
-import { hasPermission } from "GuildRoleRecordTypeTag";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { Store } from "initialize";
-import set from "trackCommunicationDisabled";
+// Module 6765 (computeRolesForGuild)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1985 */;
+import isSubscriptionRole from "isSubscriptionRole" /* 4015 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-let c9;
-let metroImportAll;
 function computeRolesForGuild(guildId) {
   const currentUser = authStore.getCurrentUser();
   const guild = store.getGuild(guildId);
   if (null != guild) {
     if (null != currentUser) {
       const _Set = Set;
-      const set = new Set();
+      set = new Set();
       const _Set2 = Set;
       const set1 = new Set();
       const _Set3 = Set;
@@ -46,11 +46,11 @@ function computeRolesForGuild(guildId) {
           let tmp15 = nextResult;
           let tmp16 = require;
           let tmp17 = dependencyMap;
-          let obj2 = require(4012) /* isSubscriptionRole */;
+          let obj2 = isSubscriptionRole;
           if (obj2.isSubscriptionRole(nextResult)) {
             let tmp18 = nextResult;
             let addResult = set.add(tmp15.id);
-            let tmp16Result = tmp16(4012);
+            let tmp16Result = tmp16(4015);
             if (tmp16Result.isSubscriptionRoleAvailableForPurchase(tmp15)) {
               let tmp20 = nextResult;
               let addResult1 = set1.add(tmp15.id);
@@ -88,7 +88,7 @@ function deleteEverything() {
   map2.clear();
   map1.clear();
   map3.clear();
-  let c15 = null;
+  c15 = null;
 }
 function handleGuildUpdate(guild) {
   const id = guild.guild.id;
@@ -104,7 +104,7 @@ function handleGuildUpdate(guild) {
       if (hasItem) {
         if (!set1.has(id)) {
           const _Set = Set;
-          const set = new Set(set1);
+          set = new Set(set1);
           set.add(id);
           set1 = set;
           return true;
@@ -130,24 +130,27 @@ function handleRoleUpdate(guildId) {
   }
   return hasItem;
 }
-({ Permissions: metroImportAll, GuildFeatures: c9 } = ME);
+const isGuildOwner = GuildNSFWContentLevel.isGuildOwner;
+const hasPermission = GuildRoleRecordTypeTag.hasPermission;
+({ Permissions: closure_8, GuildFeatures: c9 } = ME);
 let set = new Set();
 const map = new Map();
 const map1 = new Map();
 const map2 = new Map();
 const map3 = new Map();
 let c15 = null;
+const Store = initializeDefault.Store;
 class SubscriptionRoleStore extends Store {
 }
 const prototype = SubscriptionRoleStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(createGuildRecordFromRust, createGuildRoleRecordFromRust, mergeGuildAvatar, trackCommunicationDisabled);
+  this.waitFor(closure_6, closure_5, closure_7, closure_4);
 };
 prototype["getGuildIdsWithPurchasableRoles"] = function getGuildIdsWithPurchasableRoles() {
   if (null == c15) {
     let tmp = (function computeGuildsWithPurchasableRoles() {
       guildsArray = guildsArray.getGuildsArray();
-      const set = new Set();
+      set = new Set();
       for (const item10014 of guildsArray) {
         let features = item10014.features;
         let tmp3 = constants;
@@ -203,7 +206,7 @@ prototype["getUserIsAdmin"] = function getUserIsAdmin(guildId) {
   return flag;
 };
 SubscriptionRoleStore.displayName = "SubscriptionRoleStore";
-const subscriptionRoleStore = new SubscriptionRoleStore(require("dispatcher"), {
+const subscriptionRoleStore = new SubscriptionRoleStore(dispatcherDefault, {
   CONNECTION_OPEN: deleteEverything,
   LOGOUT: deleteEverything,
   GUILD_CREATE: handleGuildUpdate,

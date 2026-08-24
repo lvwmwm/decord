@@ -1,16 +1,15 @@
-// Module ID: 5017
-// Function ID: 5018
+// Module ID: 5022
+// Function ID: 5023
 // Name: mapConversation
 // Dependencies: [12, 2]
 // Exports: mapConversation
 
-// Module 5017 (mapConversation)
-const result = require("set").fileFinishedImporting("modules/conversations/ConversationsUtils.tsx");
+// Module 5022 (mapConversation)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/conversations/ConversationsUtils.tsx");
 
 export const mapConversation = function mapConversation(summary_map) {
-  let brief_summary;
-  let flagged_message_details;
-  let keywords;
   summary_map = summary_map.summary_map;
   let found;
   if (summary_map != null) {

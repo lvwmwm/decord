@@ -1,19 +1,20 @@
-// Module ID: 14332
-// Function ID: 14333
+// Module ID: 14400
+// Function ID: 14401
 // Name: _updateClipsAllowVoiceRecording
-// Dependencies: [5, 8198, 4066, 709, 10669, 1236, 2]
+// Dependencies: [5, 8238, 4069, 709, 10708, 1236, 2]
 
-// Module 14332 (_updateClipsAllowVoiceRecording)
-import getSystemLocale from "getSystemLocale";
-import createToggle from "createToggle";
+// Module 14400 (_updateClipsAllowVoiceRecording)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 function _updateClipsAllowVoiceRecording() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     return (function*(arg0) {
       if (c3 === 2) {
         c3 = 3;
@@ -26,7 +27,7 @@ function _updateClipsAllowVoiceRecording() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -42,10 +43,10 @@ function _updateClipsAllowVoiceRecording() {
               return obj;
             } else {
               const callback2 = tmp4;
-              const ClipsAllowVoiceRecording = callback(4066).ClipsAllowVoiceRecording;
+              const ClipsAllowVoiceRecording = callback(4069).ClipsAllowVoiceRecording;
               dependencyMap = 1;
               c3 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = ClipsAllowVoiceRecording.updateSetting(callback);
               return obj1;
             }
@@ -61,7 +62,7 @@ function _updateClipsAllowVoiceRecording() {
             obj = callback2(709);
             obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;
@@ -70,7 +71,7 @@ function _updateClipsAllowVoiceRecording() {
       }
     })();
   });
-  const _updateClipsAllowVoiceRecording = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -81,12 +82,12 @@ function _updateClipsAllowVoiceRecording() {
 }
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.AGDDkH);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.AGDDkH);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["wW9/zQ"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["wW9/zQ"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.CLIPS,
   useValue: require("explicitContentFromProto").ClipsAllowVoiceRecording.useSetting,
@@ -102,6 +103,6 @@ createToggle = {
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/ClipsOptOutOfVoiceRecordingSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/ClipsOptOutOfVoiceRecordingSetting.tsx");
 
 export default createToggle;

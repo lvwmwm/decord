@@ -1,10 +1,12 @@
-// Module ID: 6731
-// Function ID: 6732
+// Module ID: 6768
+// Function ID: 6769
 // Name: EmojiCategoryTypes
 // Dependencies: [2]
 
-// Module 6731 (EmojiCategoryTypes)
-const result = require("set").fileFinishedImporting("modules/emoji_picker/EmojiPickerConstants.tsx");
+// Module 6768 (EmojiCategoryTypes)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/emoji_picker/EmojiPickerConstants.tsx");
 
 export const EmojiCategoryTypes = { GUILD: "GUILD", UNICODE: "UNICODE", RECENT: "RECENT", CUSTOM: "CUSTOM", SEARCH_RESULTS: "SEARCH_RESULTS", FAVORITES: "FAVORITES", TOP_GUILD_EMOJI: "TOP_GUILD_EMOJI", PREMIUM_UPSELL: "PREMIUM_UPSELL", SOUNDMOJI: "SOUNDMOJI" };
 export const GRID_NAVIGATOR_ID = "emoji-picker-grid";

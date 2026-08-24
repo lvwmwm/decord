@@ -1,12 +1,14 @@
-// Module ID: 11259
-// Function ID: 11260
+// Module ID: 11310
+// Function ID: 11311
 // Name: t
 // Dependencies: [17, 2]
 // Exports: default
 
-// Module 11259 (t)
-import { PixelRatio } from "get ActivityIndicator";
+// Module 11310 (t)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const PixelRatio = get_ActivityIndicator.PixelRatio;
 const value = PixelRatio.get();
 let c0 = value;
 const fn = function t(arg0) {
@@ -15,6 +17,6 @@ const fn = function t(arg0) {
 fn.__closure = { PIXEL_DENSITY: value };
 fn.__workletHash = 8009828326153;
 fn.__initData = { code: "function roundToNearestPixel_roundToNearestPixelTsx1(position){const{PIXEL_DENSITY}=this.__closure;return Math.round(position*PIXEL_DENSITY)/PIXEL_DENSITY;}" };
-const result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/roundToNearestPixel.tsx");
+const result = set.fileFinishedImporting("modules/voice_panel/native/utils/roundToNearestPixel.tsx");
 
 export default fn;

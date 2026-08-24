@@ -4,5 +4,7 @@
 // Dependencies: [89]
 
 // Module 280 (EventEmitter)
+import EventEmitterDefault from "EventEmitter" /* 89 */;
 
-export default new require("EventEmitter")();
+
+export default new EventEmitterDefault();

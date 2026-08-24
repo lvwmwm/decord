@@ -1,21 +1,20 @@
-// Module ID: 9559
-// Function ID: 9560
-// Dependencies: [19, 676, 21, 4661, 712, 4734, 4237, 9560, 698, 5042, 4342, 9568, 5245, 5248, 2]
+// Module ID: 9596
+// Function ID: 9597
+// Dependencies: [19, 676, 21, 4668, 712, 4739, 4241, 9597, 698, 5047, 4346, 9605, 5250, 5253, 2]
 
-// Module 9559
-import { AnalyticEvents } from "ME";
-import { jsxs } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 9596
+import ThemesDefault from "Themes" /* 712 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { jsxs } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let obj = { commandClickable: null };
-obj = { color: require("Themes").colors.MENTION_FOREGROUND, backgroundColor: require("Themes").colors.MENTION_BACKGROUND, marginEnd: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_12 };
+obj = { color: ThemesDefault.colors.MENTION_FOREGROUND, backgroundColor: ThemesDefault.colors.MENTION_BACKGROUND, marginEnd: ThemesDefault.space.PX_12, marginBottom: ThemesDefault.space.PX_12 };
 obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(function UserProfileAboutMeCardCommand(channel) {
-  let command;
-  let require;
+const memoResult = importAllResult.memo(function UserProfileAboutMeCardCommand(channel) {
   ({ application: require, command } = channel);
   channel = channel.channel;
   const tmp = callback();
@@ -23,7 +22,7 @@ const memoResult = require("noop").memo(function UserProfileAboutMeCardCommand(c
   return jsxs(require(channel[5]).Text, {
     variant: "text-md/bold",
     onPress() {
-      let obj = outer1_0(channel[6]);
+      let obj = closure_1_0(channel[6]);
       const bestActiveInput = obj.getBestActiveInput();
       obj = { channelId: channel.id, currentText: null, commandId: null, commandName: null, onOpenCustomKeyboard: null, onSetCommand: null };
       let str;
@@ -48,12 +47,12 @@ const memoResult = require("noop").memo(function UserProfileAboutMeCardCommand(c
         if (bestActiveInput != null) {
           id = tmp3.id;
         }
-        obj = { application_id: id, command_id: outer1_1.id, guild_id: outer1_2.getGuildId() };
-        const merged = Object.assign(outer2_0(channel[9]).collectChannelAnalyticsMetadata(outer1_2));
-        obj.track(outer2_3.POPULAR_APPLICATION_COMMAND_CLICKED, obj);
-        const obj3 = outer2_0(channel[9]);
-        const tmp5 = outer1_1;
-        const tmp6 = outer1_2;
+        obj = { application_id: id, command_id: closure_1_1.id, guild_id: closure_1_2.getGuildId() };
+        const merged = Object.assign(closure_2_0(channel[9]).collectChannelAnalyticsMetadata(closure_1_2));
+        obj.track(closure_2_3.POPULAR_APPLICATION_COMMAND_CLICKED, obj);
+        const obj3 = closure_2_0(channel[9]);
+        const tmp5 = closure_1_1;
+        const tmp6 = closure_1_2;
         command(channel[10]).hideActionSheet();
         command(channel[11])();
         if (bestActiveInput != null) {
@@ -76,15 +75,15 @@ const memoResult = require("noop").memo(function UserProfileAboutMeCardCommand(c
           }
         }
       };
-      const result = outer1_0(channel[7]).handleTapCommandMention(obj);
+      const result = closure_1_0(channel[7]).handleTapCommandMention(obj);
     },
     onLongPress() {
-      return outer1_0(channel[7]).handleLongPressCommandMention(command.displayName, command.id);
+      return closure_1_0(channel[7]).handleLongPressCommandMention(command.displayName, command.id);
     },
     style: callback().commandClickable,
     children: items
   });
 });
-let result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCardCommand.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCardCommand.tsx");
 
 export default memoResult;

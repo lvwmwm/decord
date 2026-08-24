@@ -4,5 +4,7 @@
 // Dependencies: [65]
 
 // Module 345 (LayoutConformance)
+import setRuntimeConfigProviderAll from "setRuntimeConfigProvider" /* 65 */;
 
-export default require("setRuntimeConfigProvider").get("LayoutConformance", () => ({ uiViewClassName: "LayoutConformance", validAttributes: { mode: true } }));
+
+export default setRuntimeConfigProviderAll.get("LayoutConformance", () => ({ uiViewClassName: "LayoutConformance", validAttributes: { mode: true } }));

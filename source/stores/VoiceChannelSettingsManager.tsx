@@ -1,16 +1,17 @@
-// Module ID: 16724
-// Function ID: 16725
+// Module ID: 16817
+// Function ID: 16818
 // Name: updateVoiceSettings
-// Dependencies: [1218, 4537, 1391, 1979, 13103, 676, 709, 5038, 2]
+// Dependencies: [1218, 4542, 1391, 1980, 13159, 676, 709, 5043, 2]
 
-// Module 16724 (updateVoiceSettings)
-import fetchFingerprint from "fetchFingerprint";
-import bitrate from "bitrate";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import mode from "mode";
-import { VideoQualityMode } from "ME";
-import "initialize";
+// Module 16817 (updateVoiceSettings)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 5043 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "bitrate" /* 4542 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
+import closure_6 from "mode" /* 13159 */;
+import { VideoQualityMode } from "ME" /* 676 */;
 
 function updateVoiceSettings() {
   let obj = store2;
@@ -20,8 +21,8 @@ function updateVoiceSettings() {
     if (tmp5) {
       obj = { type: "SET_CHANNEL_BITRATE", bitrate: null };
       obj[1] = channel.bitrate;
-      importDefault(709).dispatch(obj);
-      const obj2 = importDefault(709);
+      dispatcherDefault.dispatch(obj);
+      const obj2 = dispatcherDefault;
     }
     tmp5 = null != channel && tmp2 !== channel.bitrate;
   }
@@ -36,8 +37,8 @@ function updateVoiceSettings() {
       if (tmp10 !== AUTO) {
         obj = { type: "SET_CHANNEL_VIDEO_QUALITY_MODE", mode: null };
         obj[1] = AUTO;
-        importDefault(709).dispatch(obj);
-        const obj4 = importDefault(709);
+        dispatcherDefault.dispatch(obj);
+        const obj4 = dispatcherDefault;
       }
     }
   }
@@ -60,6 +61,7 @@ function handleVoiceStateUpdates(voiceStates) {
     }
   });
 }
+initializeDefault;
 let prototype = function VoiceChannelSettingsManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { CHANNEL_UPDATES: handleChannelUpdates, VOICE_STATE_UPDATES: handleVoiceStateUpdates };
@@ -68,6 +70,6 @@ let prototype = function VoiceChannelSettingsManager() {
 class prototype extends tmp2 {
 }
 prototype = new prototype();
-const result = require("ensureGuildLoaded").fileFinishedImporting("stores/VoiceChannelSettingsManager.tsx");
+const result = require("set").fileFinishedImporting("stores/VoiceChannelSettingsManager.tsx");
 
 export default prototype;

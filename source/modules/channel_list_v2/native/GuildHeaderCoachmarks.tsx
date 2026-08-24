@@ -1,34 +1,30 @@
-// Module ID: 15417
-// Function ID: 15418
+// Module ID: 15481
+// Function ID: 15482
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4021, 676, 1388, 21, 589, 15418, 15419, 15421, 11682, 15428, 11673, 11674, 1377, 7366, 11670, 15429, 15430, 15432, 2]
+// Dependencies: [32, 19, 4024, 676, 1388, 21, 589, 15482, 15483, 15485, 11731, 15492, 11722, 11723, 1377, 7404, 11719, 15493, 15494, 15496, 2]
 // Exports: default
 
-// Module 15417 (GuildHeaderCoachmarks)
-import _slicedToArray from "_slicedToArray";
-import GuildPowerupsBoostToUnlockCoachmark from "GuildPowerupsBoostToUnlockCoachmark";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "ME";
-import { DismissibleContentGroupName as closure_7 } from "ContentDismissActionType";
-import { jsx } from "jsxProd";
+// Module 15481 (GuildHeaderCoachmarks)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "ME" /* 676 */;
+import { DismissibleContentGroupName as closure_7 } from "ContentDismissActionType" /* 1388 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/channel_list_v2/native/GuildHeaderCoachmarks.tsx");
+const result = require("set").fileFinishedImporting("modules/channel_list_v2/native/GuildHeaderCoachmarks.tsx");
 
 export default function GuildHeaderCoachmarks(arg0) {
-  let guild;
-  let targetRef;
-  let tmp16;
-  let tmp17;
   ({ targetRef, guild } = arg0);
   let stateFromStores;
   let mobileBoostProgressBarEnabled;
   let callback;
   let obj = guild(mobileBoostProgressBarEnabled[6]);
-  let items = [getUncachedChannelPermissions];
+  let items = [closure_5];
   const items1 = [guild];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_5.can(outer1_6.MANAGE_GUILD, guild), items1);
-  let obj1 = guild(mobileBoostProgressBarEnabled[7]);
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_5.can(closure_1_6.MANAGE_GUILD, guild), items1);
+  obj1 = guild(mobileBoostProgressBarEnabled[7]);
   mobileBoostProgressBarEnabled = obj1.useMobileBoostProgressBarEnabled("GuildHeaderCoachmarks");
   const tmp6 = stateFromStores(mobileBoostProgressBarEnabled[8])(guild.id);
   callback = tmp6;
@@ -49,7 +45,7 @@ export default function GuildHeaderCoachmarks(arg0) {
     if (tmp) {
       items.push(guild(mobileBoostProgressBarEnabled[14]).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK);
     }
-    if (c3) {
+    if (closure_3) {
       items.push(guild(mobileBoostProgressBarEnabled[14]).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK);
     }
     return items;

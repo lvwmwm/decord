@@ -1,11 +1,15 @@
-// Module ID: 17123
-// Function ID: 17124
+// Module ID: 17217
+// Function ID: 17218
 // Name: NATIVE_REQUIRED_ASSETS
-// Dependencies: [17124, 17131, 2]
+// Dependencies: [17218, 17225, 2]
 
-// Module 17123 (NATIVE_REQUIRED_ASSETS)
-const merged = Object.assign(require("NATIVE_REQUIRED_ASSETS_ICONS").NATIVE_REQUIRED_ASSETS_ICONS);
-const merged1 = Object.assign(require("NATIVE_REQUIRED_ASSETS_MISC").NATIVE_REQUIRED_ASSETS_MISC);
-const result = require("set").fileFinishedImporting("modules/react_asset/native/native_required_assets.tsx");
+// Module 17217 (NATIVE_REQUIRED_ASSETS)
+import set from "set" /* 2 */;
+import NATIVE_REQUIRED_ASSETS_ICONS from "NATIVE_REQUIRED_ASSETS_ICONS" /* 17218 */;
+import NATIVE_REQUIRED_ASSETS_MISC from "NATIVE_REQUIRED_ASSETS_MISC" /* 17225 */;
+
+const merged = Object.assign(NATIVE_REQUIRED_ASSETS_ICONS.NATIVE_REQUIRED_ASSETS_ICONS);
+const merged1 = Object.assign(NATIVE_REQUIRED_ASSETS_MISC.NATIVE_REQUIRED_ASSETS_MISC);
+const result = set.fileFinishedImporting("modules/react_asset/native/native_required_assets.tsx");
 
 export const NATIVE_REQUIRED_ASSETS = {};

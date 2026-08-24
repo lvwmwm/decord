@@ -1,21 +1,17 @@
-// Module ID: 8620
-// Function ID: 8621
+// Module ID: 8657
+// Function ID: 8658
 // Name: saveProfileAndAccountRequest
-// Dependencies: [5, 676, 5259, 709, 530, 5256, 1222, 595, 8382, 8379, 8621, 7877, 2]
+// Dependencies: [5, 676, 5264, 709, 530, 5261, 1222, 595, 8421, 8418, 8658, 7916, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 8620 (saveProfileAndAccountRequest)
-import handleLogout from "handleLogout";
-import ME from "ME";
-import str2 from "str2";
+// Module 8657 (saveProfileAndAccountRequest)
+import sendRequest from "sendRequest" /* 530 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import ME from "ME" /* 676 */;
+import str2 from "str2" /* 5264 */;
 
-let c4;
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function saveProfileAndAccountRequest(arg0, arg1) {
   const self = this;
   const apply = _saveProfileAndAccountRequest.apply;
@@ -29,10 +25,10 @@ function saveProfileAndAccountRequest(arg0, arg1) {
 function _saveProfileAndAccountRequest() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     const iter = (function*(arg0) {
       if (c5 === 2) {
         c5 = 3;
@@ -45,7 +41,7 @@ function _saveProfileAndAccountRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -62,7 +58,7 @@ function _saveProfileAndAccountRequest() {
             } else {
               let body = tmp7;
               body = tmp2;
-              let obj1;
+              obj1 = undefined;
               if (obj1 === undefined) {
                 obj1 = {};
               }
@@ -151,7 +147,7 @@ function _saveProfileAndAccountRequest() {
     iter.next();
     return iter;
   });
-  const _saveProfileAndAccountRequest = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -161,44 +157,30 @@ function _saveProfileAndAccountRequest() {
   return applyArgumentsResult;
 }
 ({ Endpoints: c4, Routes: c5, DEVICE_TOKEN: closure_6, DEVICE_VOIP_TOKEN: error } = ME);
-({ DEVICE_PUSH_VOIP_PROVIDER: metroImportAll, getDevicePushProvider: c9 } = require("str2"));
-let result = require("str2").fileFinishedImporting("actions/UserSettingsAccountActionCreators.tsx");
+({ DEVICE_PUSH_VOIP_PROVIDER: closure_8, getDevicePushProvider: c9 } = require("str2"));
+let result = require("set").fileFinishedImporting("actions/UserSettingsAccountActionCreators.tsx");
 
 export const accountDetailsInit = function accountDetailsInit() {
-  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_INIT" });
+  dispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_INIT" });
 };
 export const accountDetailsClose = function accountDetailsClose() {
-  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_CLOSE" });
+  dispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_CLOSE" });
 };
 export const disableAccount = function disableAccount(password, arg1) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   obj = { url: arg1 ? closure_4.DELETE_ACCOUNT : closure_4.DISABLE_ACCOUNT, body: obj, oldFormErrors: true, rejectWithError: null };
   obj = { password };
-  obj[3] = require(530) /* sendRequest */.rejectWithMigratedError();
-  const obj3 = require(530) /* sendRequest */;
+  obj[3] = sendRequest.rejectWithMigratedError();
+  const obj3 = sendRequest;
   const tmp2 = arg1 ? closure_4.DELETE_ACCOUNT : closure_4.DISABLE_ACCOUNT;
   return HTTP.post(obj).then(() => {
-    callback2(5256).logoutInternal();
-    const obj = callback2(5256);
+    callback2(5261).logoutInternal();
+    const obj = callback2(5261);
     callback(1222).transitionTo(constants.DEFAULT_LOGGED_OUT);
   });
 };
 export { saveProfileAndAccountRequest };
 export const saveProfileAndAccountChanges = function saveProfileAndAccountChanges(c0) {
-  let avatarDecoration;
-  let avatarDescription;
-  let avatarOriginalMd5;
-  let discriminator;
-  let displayNameStyles;
-  let email;
-  let emailToken;
-  let globalName;
-  let legacyUsername;
-  let nameplate;
-  let newPassword;
-  let password;
-  let primaryGuildId;
-  let username;
   const avatar = c0.avatar;
   const avatarId = c0.avatarId;
   ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles } = c0);
@@ -253,21 +235,20 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     obj.push_voip_provider = tmp13;
     obj.push_voip_token = value;
   }
-  obj = { headers: null };
-  obj[0] = avatarId(8382).buildHeadersForMd5({ [avatar(8379).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 });
+  obj = { headers: avatarId(8421).buildHeadersForMd5({ [avatar(8418).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
   const tmp = avatarId;
   tmp11 = null != tmp10 && null != value;
   tmp13 = closure_8;
-  let tmpResult = avatarId(8382);
+  let tmpResult = avatarId(8421);
   return saveProfileAndAccountRequest(obj, obj).then((arg0) => {
-    avatarId(outer1_2[3]).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" });
+    avatarId(closure_1_2[3]).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" });
     let tmp4 = null == avatar;
     if (tmp4) {
       tmp4 = null == avatarId;
     }
     if (!tmp4) {
-      avatarId(outer1_2[3]).dispatch({ type: "RECENT_AVATARS_UPDATE" });
-      const tmpResult = avatarId(outer1_2[3]);
+      avatarId(closure_1_2[3]).dispatch({ type: "RECENT_AVATARS_UPDATE" });
+      const tmpResult = avatarId(closure_1_2[3]);
     }
     return arg0;
   }, (body) => {
@@ -278,46 +259,45 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   });
 };
 export const getHarvestStatus = function getHarvestStatus() {
-  const HTTP = require(530) /* sendRequest */.HTTP;
-  const obj = { url: constants.USER_HARVEST, oldFormErrors: true, rejectWithError: null };
-  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+  const HTTP = sendRequest.HTTP;
+  const obj = { url: constants.USER_HARVEST, oldFormErrors: true, rejectWithError: sendRequest.rejectWithMigratedError() };
   return HTTP.get(obj);
 };
 export const requestHarvest = function requestHarvest(backends) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   obj = { url: constants.USER_HARVEST, body: obj, oldFormErrors: true, rejectWithError: null };
   obj = { backends };
-  obj[3] = require(530) /* sendRequest */.rejectWithMigratedError();
+  obj[3] = sendRequest.rejectWithMigratedError();
   return HTTP.post(obj);
 };
 export const clearErrors = function clearErrors() {
-  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_CLEAR_ERRORS" });
+  dispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_CLEAR_ERRORS" });
 };
 export const resetPendingAccountChanges = function resetPendingAccountChanges() {
-  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES" });
+  dispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES" });
 };
 export const resetAllPending = function resetAllPending() {
-  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES" });
+  dispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES" });
 };
 export const resetAllTryItOut = function resetAllTryItOut() {
-  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_TRY_IT_OUT_CHANGES" });
+  dispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_TRY_IT_OUT_CHANGES" });
 };
 export const resetAndCloseUserProfileForm = function resetAndCloseUserProfileForm() {
-  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_AND_CLOSE_FORM" });
+  dispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_AND_CLOSE_FORM" });
 };
 export const resetPendingLegacyUsernameDisabled = function resetPendingLegacyUsernameDisabled() {
-  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_LEGACY_USERNAME_DISABLED" });
+  dispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_LEGACY_USERNAME_DISABLED" });
 };
 export const resetPendingPrimaryGuildChanges = function resetPendingPrimaryGuildChanges() {
-  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES" });
+  dispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES" });
 };
 export const updateAccount = function updateAccount(settings) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "USER_SETTINGS_MODAL_UPDATE_ACCOUNT", settings };
   obj.dispatch(obj);
 };
 export const resetAccount = function resetAccount() {
-  importDefault(709).dispatch({ type: "USER_SETTINGS_MODAL_RESET" });
+  dispatcherDefault.dispatch({ type: "USER_SETTINGS_MODAL_RESET" });
 };
 export const saveAccountChanges = function saveAccountChanges(closure_0, close) {
   let obj = avatar(newPassword[3]);
@@ -353,8 +333,7 @@ export const saveAccountChanges = function saveAccountChanges(closure_0, close) 
     obj.push_voip_token = value;
   }
   const HTTP = tmp4(tmp[4]).HTTP;
-  obj = { url: constants.ME, oldFormErrors: true, body: obj, rejectWithError: null };
-  obj[3] = password(newPassword[4]).rejectWithMigratedError();
+  obj = { url: constants.ME, oldFormErrors: true, body: obj, rejectWithError: password(newPassword[4]).rejectWithMigratedError() };
   const tmp4Result = password(newPassword[4]);
   tmp7 = null != tmp6 && null != value;
   tmp9 = closure_8;
@@ -374,7 +353,7 @@ export const saveAccountChanges = function saveAccountChanges(closure_0, close) 
     }
     if (null != newPassword) {
       let tmp3Result = tmp3(tmp4[3]);
-      const obj1 = { type: "USER_PASSWORD_UPDATE", user: null, newPassword: null };
+      obj1 = { type: "USER_PASSWORD_UPDATE", user: null, newPassword: null };
       obj1[1] = body;
       obj1[2] = tmp9;
       tmp3Result.dispatch(obj1);

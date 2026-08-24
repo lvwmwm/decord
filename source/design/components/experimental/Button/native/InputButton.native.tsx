@@ -1,31 +1,28 @@
-// Module ID: 8815
-// Function ID: 8816
+// Module ID: 8852
+// Function ID: 8853
 // Name: InputButton
-// Dependencies: [109, 19, 17, 21, 4661, 712, 4749, 7345, 4746, 2]
+// Dependencies: [109, 19, 17, 21, 4668, 712, 4754, 7383, 4751, 2]
 
-// Module 8815 (InputButton)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import { Text } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 8852 (InputButton)
+import ThemesDefault from "Themes" /* 712 */;
+import CollapsingText from "CollapsingText" /* 4751 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4754 */;
+import useInputStyles from "useInputStyles" /* 7383 */;
+import closure_3 from "_objectWithoutProperties" /* 109 */;
+import { Text } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let closure_2 = ["size", "isRound", "text", "value", "icon", "iconPosition", "accessibilityLabel", "accessibilityValue", "maxFontSizeMultiplier"];
 let obj = { buttonText: { flexGrow: 1, flexShrink: 1, width: "100%" }, buttonTextPlaceholder: null, buttonTextValue: null };
-obj = { color: require("Themes").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+obj = { color: ThemesDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj[1] = obj;
-createCacheKey = { color: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_TEXT };
+createCacheKey = { color: ThemesDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT };
 obj[2] = createCacheKey;
 let closure_6 = createCacheKey.createStyles(obj);
-const forwardRefResult = require("noop").forwardRef((size, ref) => {
-  let accessibilityLabel;
-  let accessibilityValue;
-  let icon;
-  let iconPosition;
-  let maxFontSizeMultiplier;
-  let text;
-  let value;
+const forwardRefResult = importAllResult.forwardRef((size, ref) => {
   size = size.size;
   let str = "lg";
   if (undefined !== size) {
@@ -39,10 +36,10 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
   }
   ({ accessibilityLabel, accessibilityValue, maxFontSizeMultiplier } = size);
   if (undefined === maxFontSizeMultiplier) {
-    maxFontSizeMultiplier = require(4749) /* MINIMUM_HIT_AREA */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    maxFontSizeMultiplier = MINIMUM_HIT_AREA.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const tmp4 = callback(size, closure_2);
-  let obj = require(7345) /* useInputStyles */;
+  let obj = useInputStyles;
   const inputStyles = obj.useInputStyles({ size: str, isRound: undefined !== isRound && isRound, hasLeadingIcon: tmp7 });
   const tmp9 = callback2();
   if (null != icon) {
@@ -89,9 +86,9 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
     }
     obj4[3] = value;
     obj2.textElement = <Text style={null} numberOfLines={1} maxFontSizeMultiplier={null}>{null}</Text>;
-    return jsx(require(4746) /* CollapsingText */.BaseTextButton, {});
+    return jsx(CollapsingText.BaseTextButton, {});
   }
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("design/components/experimental/Button/native/InputButton.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/experimental/Button/native/InputButton.native.tsx");
 
 export const InputButton = forwardRefResult;

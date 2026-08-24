@@ -4,8 +4,8 @@
 // Dependencies: [41, 42]
 
 // Module 1277 (dataFormatterCache)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import FormatterCache from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
 class FormatterCache {
   constructor() {
@@ -25,7 +25,6 @@ class FormatterCache {
     return;
   }
 }
-_classCallCheck = FormatterCache;
 const items = [
   {
     key: "getDateTimeFormatter",

@@ -1,31 +1,31 @@
-// Module ID: 6052
-// Function ID: 6053
+// Module ID: 6083
+// Function ID: 6084
 // Name: PlaneIllocon
-// Dependencies: [21, 5449, 6053, 2]
+// Dependencies: [21, 5454, 6084, 2]
 // Exports: PlaneIllocon
 
-// Module 6052 (PlaneIllocon)
-import { jsx } from "jsxProd";
+// Module 6083 (PlaneIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6084 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PlaneIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PlaneIllocon.native.tsx");
 
 export const PlaneIllocon = function PlaneIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6053);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

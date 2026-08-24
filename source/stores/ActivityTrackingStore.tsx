@@ -1,21 +1,26 @@
-// Module ID: 13292
-// Function ID: 13293
+// Module ID: 13350
+// Function ID: 13351
 // Name: stopActivity
-// Dependencies: [4504, 1340, 1218, 4509, 4512, 4539, 1979, 676, 687, 595, 4520, 10673, 4259, 4642, 589, 709, 2]
+// Dependencies: [4508, 1340, 1218, 4514, 4517, 4544, 1980, 676, 687, 595, 4525, 10712, 4263, 4648, 589, 709, 2]
 
-// Module 13292 (stopActivity)
-import initialize from "initialize";
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import fetchFingerprint from "fetchFingerprint";
-import gameFromServer from "gameFromServer";
-import setLibraryApplications from "setLibraryApplications";
-import createRTCConnection from "createRTCConnection";
-import handleConnectionOpen from "handleConnectionOpen";
-import { Distributors } from "ME";
-import { Storage } from "Storage";
-import { Store } from "initialize";
+// Module 13350 (stopActivity)
+import initializeDefault from "initialize" /* 589 */;
+import Storage2 from "Storage" /* 595 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import removeExecutablePathPrefix from "removeExecutablePathPrefix" /* 4648 */;
+import _modDef10712 from "module_10712" /* 10712 */;
+import closure_3 from "initialize" /* 4508 */;
+import closure_4 from "handleConnectionClosedOrResumed" /* 1340 */;
+import closure_5 from "fetchFingerprint" /* 1218 */;
+import closure_6 from "gameFromServer" /* 4514 */;
+import closure_7 from "setLibraryApplications" /* 4517 */;
+import closure_8 from "createRTCConnection" /* 4544 */;
+import closure_9 from "handleConnectionOpen" /* 1980 */;
+import { Distributors } from "ME" /* 676 */;
+import { Storage } from "Storage" /* 595 */;
 
-const require = arg1;
+require = arg1;
 function stopActivity(applicationId, flag) {
   if (flag === undefined) {
     flag = true;
@@ -29,7 +34,7 @@ function stopActivity(applicationId, flag) {
     delete tmp3[tmp2];
   }
   delete tmp3[tmp];
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage2.Storage;
   const result = Storage.set(ActivityTrackingStore, obj);
 }
 function updateActivity(applicationId) {
@@ -46,8 +51,8 @@ function updateActivity(applicationId) {
   if (num > closure_12 + closure_13) {
     num = 0;
   }
-  let obj = _require(4520);
-  const result = obj.shouldShareApplicationActivity(applicationId.applicationId, setLibraryApplications);
+  obj = _require(4525);
+  const result = obj.shouldShareApplicationActivity(applicationId.applicationId, closure_7);
   voiceChannelId = voiceChannelId.getVoiceChannelId();
   sessionId = sessionId.getSessionId();
   mediaSessionId = mediaSessionId.getMediaSessionId();
@@ -66,13 +71,13 @@ function updateActivity(applicationId) {
   obj[7] = voiceChannelId;
   obj[8] = sessionId;
   obj[9] = mediaSessionId;
-  importDefault(10673).updateActivity(obj);
+  _modDef10712.updateActivity(obj);
   applicationId.updatedAt = timestamp;
   if (null == dependencyMap[applicationId.applicationId]) {
-    const interval = new tmp3(4259).Interval();
+    const interval = new tmp3(4263).Interval();
     tmp11[applicationId.applicationId] = interval;
     interval.start(closure_12, () => {
-      outer1_18(closure_0);
+      closure_1_18(closure_0);
     });
   }
   if (!flag) {
@@ -82,7 +87,6 @@ function updateActivity(applicationId) {
   }
 }
 function handleRunningGamesChange(flag) {
-  let obj;
   if (flag === undefined) {
     flag = true;
   }
@@ -92,8 +96,8 @@ function handleRunningGamesChange(flag) {
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp3 = nextResult;
-    let tmp4 = gameFromServer;
-    let findGameResult = gameFromServer.findGame(nextResult);
+    let tmp4 = closure_6;
+    let findGameResult = closure_6.findGame(nextResult);
     let tmp6 = findGameResult;
     if (null != findGameResult) {
       let tmp19 = findGameResult;
@@ -110,7 +114,7 @@ function handleRunningGamesChange(flag) {
         obj[2] = tmp3.distributor;
         let tmp10 = require;
         let tmp11 = dependencyMap;
-        let obj3 = require(4642) /* removeExecutablePathPrefix */;
+        let obj3 = removeExecutablePathPrefix;
         let str = tmp3.exePath;
         if (str == null) {
           str = "";
@@ -141,23 +145,24 @@ function handleLogout() {
     let tmp6 = stopActivity(obj[tmp3]);
     continue;
   }
-  let c16 = false;
+  c16 = false;
 }
 const ActivityTrackingStore = "ActivityTrackingStore";
-let closure_12 = 30 * require("set").Millis.MINUTE;
-let closure_13 = 5 * require("set").Millis.MINUTE;
+let closure_12 = 30 * setDefault.Millis.MINUTE;
+let closure_13 = 5 * setDefault.Millis.MINUTE;
 let obj = Storage.get("ActivityTrackingStore");
 if (obj == null) {
   obj = {};
 }
 let closure_15 = {};
 let c16 = false;
+const Store = initializeDefault.Store;
 class ActivityTrackingStore extends Store {
 }
 const prototype = ActivityTrackingStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, gameFromServer, setLibraryApplications, createRTCConnection, initialize, handleConnectionOpen, handleConnectionClosedOrResumed);
-  const items = [handleConnectionClosedOrResumed];
+  this.waitFor(closure_5, closure_6, closure_7, closure_8, closure_3, closure_9, closure_4);
+  const items = [closure_4];
   this.syncWith(items, handleRunningGamesChange);
 };
 prototype["getActivities"] = function getActivities() {
@@ -196,7 +201,7 @@ obj = {
       return false;
     } else {
       tmp3.token = tmp;
-      const Storage = require(595) /* Storage */.Storage;
+      const Storage = Storage2.Storage;
       const result = Storage.set(ActivityTrackingStore, tmp2);
     }
   },
@@ -206,12 +211,12 @@ obj = {
     } else {
       tmp2.token = null;
       tmp2.updatedAt = null;
-      const Storage = require(595) /* Storage */.Storage;
+      const Storage = Storage2.Storage;
       const result = Storage.set(ActivityTrackingStore, tmp);
     }
   }
 };
-const activityTrackingStore = new ActivityTrackingStore(require("dispatcher"), obj);
-let result = require("fetchFingerprint").fileFinishedImporting("stores/ActivityTrackingStore.tsx");
+const activityTrackingStore = new ActivityTrackingStore(dispatcherDefault, obj);
+let result = require("set").fileFinishedImporting("stores/ActivityTrackingStore.tsx");
 
 export default activityTrackingStore;

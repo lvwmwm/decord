@@ -1,14 +1,14 @@
-// Module ID: 11214
-// Function ID: 11215
+// Module ID: 11265
+// Function ID: 11266
 // Name: useActivityShelfItemsSorting
-// Dependencies: [19, 1374, 8718, 500, 1954, 2]
+// Dependencies: [19, 1374, 8755, 500, 1954, 2]
 // Exports: default
 
-// Module 11214 (useActivityShelfItemsSorting)
-import noop from "noop";
+// Module 11265 (useActivityShelfItemsSorting)
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("getPlatform").fileFinishedImporting("modules/activities/useActivityShelfItemsSorting.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/useActivityShelfItemsSorting.tsx");
 
 export default function useActivityShelfItemsSorting(arg0) {
   const _require = arg0;
@@ -21,8 +21,8 @@ export default function useActivityShelfItemsSorting(arg0) {
     const item = items2.forEach((application) => items2.push(application.application.id));
     const items1 = [...items];
     const sorted = items1.sort((arg0, arg1) => {
-      const items2 = arg0;
-      let closure_1 = arg1;
+      items2 = arg0;
+      closure_1 = arg1;
       let num = 1;
       if (findIndexResult < items2.findIndex((arg0) => arg0 === closure_1)) {
         num = -1;
@@ -30,7 +30,7 @@ export default function useActivityShelfItemsSorting(arg0) {
       return num;
     });
     items2 = undefined;
-    let c1;
+    c1 = undefined;
     items2 = [...items2];
     c1 = 0;
     const item1 = items1.forEach((arg0) => {
@@ -50,17 +50,16 @@ export default function useActivityShelfItemsSorting(arg0) {
       return items;
     });
     const found = mapped.filter((arg0) => {
-      let tmp;
       [tmp] = arg0;
       const embeddedActivityConfig = tmp.application.embeddedActivityConfig;
       let label_type;
       if (embeddedActivityConfig != null) {
         const obj = items2(500);
-        const tmp7 = embeddedActivityConfig.client_platform_config[v0(8718)(undefined, obj.getOS(obj))];
+        const tmp7 = embeddedActivityConfig.client_platform_config[v0(8755)(undefined, obj.getOS(obj))];
         if (tmp7 != null) {
           label_type = tmp7.label_type;
         }
-        const tmp5 = v0(8718);
+        const tmp5 = v0(8755);
       }
       let tmp8 = null != label_type;
       if (tmp8) {
@@ -71,8 +70,6 @@ export default function useActivityShelfItemsSorting(arg0) {
       return tmp8;
     });
     const item2 = found.forEach((arg0) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg0;
       let diff = tmp2;
       if (null != tmp.application.embeddedActivityConfig) {

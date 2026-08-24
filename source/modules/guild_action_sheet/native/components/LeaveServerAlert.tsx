@@ -1,17 +1,17 @@
-// Module ID: 13422
-// Function ID: 13423
+// Module ID: 13480
+// Function ID: 13481
 // Name: LeaveServerAlert
-// Dependencies: [676, 21, 4660, 1236, 4660, 8874, 2]
+// Dependencies: [676, 21, 4667, 1236, 4667, 8911, 2]
 // Exports: default
 
-// Module 13422 (LeaveServerAlert)
-import { GuildFeatures } from "ME";
-import jsxProd from "jsxProd";
+// Module 13480 (LeaveServerAlert)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
+const GuildFeatures = ME.GuildFeatures;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
-const result = require("getAlertModalItemKey").fileFinishedImporting("modules/guild_action_sheet/native/components/LeaveServerAlert.tsx");
+const result = set.fileFinishedImporting("modules/guild_action_sheet/native/components/LeaveServerAlert.tsx");
 
 export default function LeaveServerAlert(guild) {
   guild = guild.guild;
@@ -30,21 +30,21 @@ export default function LeaveServerAlert(guild) {
   obj = { name: guild.name };
   obj[1] = intl2.formatToPlainString(guild(1236).t.TB1og8, obj);
   obj = { children: null };
-  const obj1 = {
+  obj1 = {
     variant: "destructive",
     onPress() {
-      return outer1_1(outer1_2[5]).leaveGuild(guild.id);
+      return closure_1_1(closure_1_2[5]).leaveGuild(guild.id);
     },
     text: null
   };
   const intl3 = tmp2(1236).intl;
   obj1[2] = intl3.string(guild(1236).t.p89ACt);
-  const items = [closure_4(guild(4660).AlertActionButton, obj1, "confirm"), ];
+  const items = [closure_4(guild(4667).AlertActionButton, obj1, "confirm"), ];
   const obj2 = { variant: "secondary", text: null };
   const intl4 = tmp2(1236).intl;
   obj2[1] = intl4.string(guild(1236).t.gm1Vej);
-  items[1] = closure_4(guild(4660).AlertActionButton, obj2, "cancel");
+  items[1] = closure_4(guild(4667).AlertActionButton, obj2, "cancel");
   obj[0] = items;
-  obj[2] = callback(guild(4660).AlertActions, obj);
-  return closure_4(guild(4660).AlertModal, obj);
+  obj[2] = callback(guild(4667).AlertActions, obj);
+  return closure_4(guild(4667).AlertModal, obj);
 };

@@ -1,25 +1,28 @@
-// Module ID: 14529
-// Function ID: 14530
+// Module ID: 14597
+// Function ID: 14598
 // Name: updateBackgroundGradientPreset
 // Dependencies: [709, 2]
 // Exports: resetBackgroundGradientPreset, resetPreviewClientTheme, updateBackgroundGradientPreset, updateMobilePendingThemeIndex
 
-// Module 14529 (updateBackgroundGradientPreset)
-const result = require("set").fileFinishedImporting("modules/client_themes/ClientThemesBackgroundActionCreators.tsx");
+// Module 14597 (updateBackgroundGradientPreset)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/client_themes/ClientThemesBackgroundActionCreators.tsx");
 
 export const updateBackgroundGradientPreset = function updateBackgroundGradientPreset(id) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "UPDATE_BACKGROUND_GRADIENT_PRESET", presetId: id };
   obj.dispatch(obj);
 };
 export const updateMobilePendingThemeIndex = function updateMobilePendingThemeIndex(mobileThemesIndex) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "UPDATE_MOBILE_PENDING_THEME_INDEX", mobileThemesIndex };
   obj.dispatch(obj);
 };
 export const resetBackgroundGradientPreset = function resetBackgroundGradientPreset() {
-  importDefault(709).dispatch({ type: "UPDATE_BACKGROUND_GRADIENT_PRESET", presetId: null });
+  dispatcherDefault.dispatch({ type: "UPDATE_BACKGROUND_GRADIENT_PRESET", presetId: null });
 };
 export const resetPreviewClientTheme = function resetPreviewClientTheme() {
-  importDefault(709).dispatch({ type: "RESET_PREVIEW_CLIENT_THEME" });
+  dispatcherDefault.dispatch({ type: "RESET_PREVIEW_CLIENT_THEME" });
 };

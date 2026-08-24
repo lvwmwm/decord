@@ -1,13 +1,16 @@
-// Module ID: 10552
-// Function ID: 10553
+// Module ID: 10591
+// Function ID: 10592
 // Name: result
 // Dependencies: [687, 1236, 2]
 // Exports: getSummaryFeedbackReasons
 
-// Module 10552 (result)
-const require = arg1;
+// Module 10591 (result)
+import setDefault from "set" /* 687 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
+require = arg1;
 let obj = { DUPLICATED: "DUPLICATED", TOO_GENERIC: "TOO_GENERIC", TOO_MANY: "TOO_MANY", INACCURATE: "INACCURATE", NOT_USEFUL: "NOT_USEFUL", OTHER: "OTHER" };
-const result = 5 * require("set").Millis.SECOND;
+const result = 5 * setDefault.Millis.SECOND;
 const result1 = require("set").fileFinishedImporting("modules/summaries/SummaryConstants.tsx");
 
 export const SUMMARY_POLL_INTERVAL = result;
@@ -16,28 +19,28 @@ export const SummariesTopicClickedSource = { SIDEBAR: "sidebar", PILL_DROPDOWN: 
 export const SummaryFeedbackReasons = obj;
 export const getSummaryFeedbackReasons = function getSummaryFeedbackReasons() {
   obj = { value: obj.DUPLICATED, label: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.wwXl5h);
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t.wwXl5h);
   const items = [obj, , , , , ];
   obj = { value: obj.TOO_GENERIC, label: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["t+6knu"]);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t["t+6knu"]);
   items[1] = obj;
   obj = { value: obj.TOO_MANY, label: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.xnKDnv);
+  const intl3 = getSystemLocale.intl;
+  obj[1] = intl3.string(getSystemLocale.t.xnKDnv);
   items[2] = obj;
-  const obj1 = { value: obj.INACCURATE, label: null };
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t.JW5VFj);
+  obj1 = { value: obj.INACCURATE, label: null };
+  const intl4 = getSystemLocale.intl;
+  obj1[1] = intl4.string(getSystemLocale.t.JW5VFj);
   items[3] = obj1;
   const obj2 = { value: obj.NOT_USEFUL, label: null };
-  const intl5 = require(1236) /* getSystemLocale */.intl;
-  obj2[1] = intl5.string(require(1236) /* getSystemLocale */.t.ZtCNiY);
+  const intl5 = getSystemLocale.intl;
+  obj2[1] = intl5.string(getSystemLocale.t.ZtCNiY);
   items[4] = obj2;
   const obj3 = { value: obj.OTHER, label: null };
-  const intl6 = require(1236) /* getSystemLocale */.intl;
-  obj3[1] = intl6.string(require(1236) /* getSystemLocale */.t.BufsKk);
+  const intl6 = getSystemLocale.intl;
+  obj3[1] = intl6.string(getSystemLocale.t.BufsKk);
   items[5] = obj3;
   return items;
 };

@@ -1,22 +1,23 @@
-// Module ID: 13230
-// Function ID: 13231
+// Module ID: 13285
+// Function ID: 13286
 // Name: guildId
-// Dependencies: [4504, 4652, 1391, 4497, 4565, 676, 13228, 4066, 1403, 4526, 2]
+// Dependencies: [4508, 4658, 1391, 4501, 4570, 676, 13283, 4069, 1403, 4531, 2]
 
-// Module 13230 (guildId)
-import initialize from "initialize";
-import reset from "reset";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import closure_6 from "initialize";
-import ME from "ME";
-import "shouldCommit";
+// Module 13285 (guildId)
+import hasFlag from "hasFlag" /* 1403 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import isClipsEnabled from "isClipsEnabled" /* 4531 */;
+import shouldCommitDefault from "shouldCommit" /* 13283 */;
+import closure_2 from "initialize" /* 4508 */;
+import closure_3 from "reset" /* 4658 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_6 from "initialize" /* 4570 */;
+import ME from "ME" /* 676 */;
 
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
-({ ApplicationStreamStates: error, ChannelTypes: metroImportAll, VoiceFlags: c9 } = ME);
+require = arg1;
+({ ApplicationStreamStates: error, ChannelTypes: closure_8, VoiceFlags: c9 } = ME);
+shouldCommitDefault;
 class LocalVoiceStateManager extends tmp3 {
   constructor(arg0) {
     tmp = new LocalVoiceStateManager(new.target);
@@ -39,12 +40,12 @@ Object.defineProperty(prototype, "channelId", {
   set: undefined
 });
 prototype["computeVoiceFlags"] = function computeVoiceFlags() {
-  const ClipsAllowVoiceRecording = require(4066) /* explicitContentFromProto */.ClipsAllowVoiceRecording;
+  const ClipsAllowVoiceRecording = explicitContentFromProto.ClipsAllowVoiceRecording;
   const setting = ClipsAllowVoiceRecording.getSetting();
-  const obj = require(1403) /* hasFlag */;
+  const obj = hasFlag;
   const tmp4 = constants3;
-  const setFlagResult = require(1403) /* hasFlag */.setFlag(0, constants3.ALLOW_VOICE_RECORDING, setting);
-  let isClipsEnabledResult = require(4526) /* isClipsEnabled */.isClipsEnabled();
+  const setFlagResult = hasFlag.setFlag(0, constants3.ALLOW_VOICE_RECORDING, setting);
+  let isClipsEnabledResult = isClipsEnabled.isClipsEnabled();
   if (isClipsEnabledResult) {
     currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
     let state;
@@ -63,7 +64,7 @@ prototype["computeVoiceFlags"] = function computeVoiceFlags() {
     isClipsEnabledResult = tmp11;
     obj3 = currentUserActiveStream;
   }
-  let tmpResult = tmp(4526);
+  let tmpResult = tmp(4531);
   let result = tmpResult.isDecoupledClipsEnabled();
   if (result) {
     visibleGame = visibleGame.getVisibleGame();
@@ -80,24 +81,16 @@ prototype["computeVoiceFlags"] = function computeVoiceFlags() {
   return tmpResult.setFlag(setFlagResult, tmp4.CLIPS_ENABLED, isClipsEnabledResult);
 };
 prototype["getInitialState"] = function getInitialState() {
-  return { guildId: null, channelId: null, selfMute: _detectH265HardwareDecode.isSelfMute(), selfDeaf: _detectH265HardwareDecode.isSelfDeaf(), selfVideo: _detectH265HardwareDecode.isVideoEnabled(), preferredRegion: null, preferredRegions: null, videoStreamParameters: null, flags: 0 };
+  return { guildId: null, channelId: null, selfMute: closure_5.isSelfMute(), selfDeaf: closure_5.isSelfDeaf(), selfVideo: closure_5.isVideoEnabled(), preferredRegion: null, preferredRegions: null, videoStreamParameters: null, flags: 0 };
 };
 prototype["getNextState"] = function getNextState(guildId) {
-  return { guildId: guildId.guildId, channelId: guildId.channelId, selfMute: _detectH265HardwareDecode.isSelfMute(), selfDeaf: _detectH265HardwareDecode.isSelfDeaf(), selfVideo: _detectH265HardwareDecode.isVideoEnabled(), preferredRegion: store.getPreferredRegion(), preferredRegions: store.getPreferredRegions(), videoStreamParameters: _detectH265HardwareDecode.getVideoStreamParameters(), flags: this.computeVoiceFlags() };
+  return { guildId: guildId.guildId, channelId: guildId.channelId, selfMute: closure_5.isSelfMute(), selfDeaf: closure_5.isSelfDeaf(), selfVideo: closure_5.isVideoEnabled(), preferredRegion: store.getPreferredRegion(), preferredRegions: store.getPreferredRegions(), videoStreamParameters: closure_5.getVideoStreamParameters(), flags: this.computeVoiceFlags() };
 };
 prototype["shouldCommit"] = function shouldCommit() {
   const socket = this.socket;
   return socket.isSessionEstablished();
 };
 prototype["didCommit"] = function didCommit(state) {
-  let channelId;
-  let flags;
-  let guildId;
-  let preferredRegion;
-  let preferredRegions;
-  let selfDeaf;
-  let selfMute;
-  let selfVideo;
   ({ guildId, channelId, selfMute, selfDeaf, selfVideo, preferredRegion, preferredRegions, flags } = state);
   if (flags === undefined) {
     flags = 0;
@@ -127,6 +120,6 @@ prototype["didCommit"] = function didCommit(state) {
   const socket = self.socket;
   socket.voiceStateUpdate({ guildId, channelId, selfMute, selfDeaf, selfVideo, preferredRegion, preferredRegions, flags });
 };
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/gateway/LocalVoiceStateManager.tsx");
+let result = require("set").fileFinishedImporting("modules/gateway/LocalVoiceStateManager.tsx");
 
 export default LocalVoiceStateManager;

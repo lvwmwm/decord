@@ -1,36 +1,32 @@
-// Module ID: 8144
-// Function ID: 8145
+// Module ID: 8183
+// Function ID: 8184
 // Name: HeaderView
-// Dependencies: [32, 19, 17, 4737, 1391, 4021, 8145, 8142, 676, 505, 21, 4661, 712, 7127, 4764, 4734, 4223, 4330, 589, 5433, 8146, 1500, 4721, 4731, 8139, 8137, 5042, 1351, 8148, 8152, 7621, 6803, 8153, 8154, 8155, 8156, 12802, 12803, 12804, 12805, 12806, 12807, 12808, 12809, 12810, 12812, 12813, 12814, 12815, 12816, 12817, 12818, 12819, 12822, 2]
+// Dependencies: [32, 19, 17, 4742, 1391, 4024, 8184, 8181, 676, 505, 21, 4668, 712, 7165, 4769, 4739, 4227, 4334, 589, 5438, 8185, 1500, 4727, 4736, 8178, 8176, 5047, 1351, 8187, 8191, 7659, 6840, 8192, 8193, 8194, 8195, 12857, 12858, 12859, 12860, 12861, 12862, 12863, 12864, 12865, 12867, 12868, 12869, 12870, 12871, 12872, 12873, 12874, 12877, 2]
 // Exports: default
 
-// Module 8144 (HeaderView)
-import ShieldElement from "ShieldElement";
-import PressableBase from "PressableBase";
-import get_ActivityIndicator from "CircleInformationIcon";
-import getUserAgnosticState from "getUserAgnosticState";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { REMEDIATION_ELEMENT_TYPES } from "REMEDIATION_ELEMENT_TYPES";
-import { IN_APP_REPORTS_NODE } from "IN_APP_REPORTS_NODE";
-import ME from "ME";
-import { Permissions } from "sum";
-import jsxProd from "useNavigation";
-import createCacheKey from "createCacheKey";
+// Module 8183 (HeaderView)
+import ThemesDefault from "Themes" /* 712 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4334 */;
+import Text from "Text" /* 4739 */;
+import ArrowDefault from "Arrow" /* 8185 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_8 from "getUserAgnosticState" /* 4742 */;
+import closure_9 from "ensureGuildLoaded" /* 1391 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4024 */;
+import { REMEDIATION_ELEMENT_TYPES } from "REMEDIATION_ELEMENT_TYPES" /* 8184 */;
+import { IN_APP_REPORTS_NODE } from "IN_APP_REPORTS_NODE" /* 8181 */;
+import ME from "ME" /* 676 */;
+import { Permissions } from "sum" /* 505 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_14;
-let closure_16;
-let closure_17;
-let closure_6;
-let error;
-let map1;
-const require = arg1;
+require = arg1;
 function HeaderView(node) {
-  let description;
-  let header;
-  let subheader;
   ({ header, subheader, description } = node.node);
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = { style: tmp.headerContainer, children: null };
   let tmp6 = null != header;
   if (tmp6) {
@@ -41,7 +37,7 @@ function HeaderView(node) {
     obj[0] = node.headerRef;
     obj[1] = tmp.header;
     obj[5] = header;
-    tmp6 = callback2(require(4734) /* Text */.Text, obj);
+    tmp6 = callback2(Text.Text, obj);
   }
   const items = [tmp6, , ];
   let tmp9 = null;
@@ -51,7 +47,7 @@ function HeaderView(node) {
       obj = { style: null, variant: "text-md/medium", color: "text-default", children: null };
       obj[0] = tmp.subheader;
       obj[3] = tmp3(subheader);
-      tmp9 = callback2(require(4734) /* Text */.Text, obj);
+      tmp9 = callback2(Text.Text, obj);
     }
   }
   items[1] = tmp9;
@@ -59,10 +55,10 @@ function HeaderView(node) {
   if (null != description) {
     tmp12 = null;
     if (description.length > 0) {
-      const obj1 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
+      obj1 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
       obj1[0] = tmp.description;
       obj1[3] = description;
-      tmp12 = callback2(require(4734) /* Text */.Text, obj1);
+      tmp12 = callback2(Text.Text, obj1);
     }
   }
   items[2] = tmp12;
@@ -71,45 +67,45 @@ function HeaderView(node) {
 }
 function InfoView(node) {
   const info = node.node.info;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let tmp4 = null;
   if (null != info) {
     let obj = { style: null, children: null };
     const items = [tmp.infoBox, ];
     obj = { backgroundColor: null };
-    obj[0] = require(4223) /* hexToRgba */.hexWithOpacity(tmp.infoBox.backgroundColor, 0.1);
+    let obj2 = hexToRgba;
+    obj[0] = obj2.hexWithOpacity(tmp.infoBox.backgroundColor, 0.1);
     items[1] = obj;
     obj[0] = items;
     obj = { size: "md", color: null };
     obj[1] = tmp.infoBox.backgroundColor;
-    const items1 = [callback2(require(4330) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
-    const obj1 = { style: null, variant: "text-sm/normal", color: "interactive-text-active", children: null };
+    const items1 = [callback2(CircleInformationIcon.CircleInformationIcon, obj), ];
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.infoBoxText;
-    obj1[3] = tmp3(info);
-    items1[1] = callback2(require(4734) /* Text */.Text, obj1);
+    obj2 = { variant: "text-sm/normal", color: "interactive-text-active", includeFontPadding: true, children: null };
+    obj2[3] = tmp3(info);
+    obj1[1] = callback2(Text.Text, obj2);
+    items1[1] = callback2(closure_6, obj1);
     obj[1] = items1;
     tmp4 = callback3(closure_6, obj);
-    const obj3 = require(4223) /* hexToRgba */;
   }
   return tmp4;
 }
 function ChildItem(child) {
-  let tmp3;
-  let tmp4;
   child = child.child;
-  const importDefault = Object.assign(child, Object.create(null));
-  const tmp = createCacheKey();
+  importDefault = Object.assign(child, Object.create(null));
+  const tmp = callback4();
   [tmp3, tmp4] = callback(child, 2);
   let obj = child(589);
-  const items = [getUserAgnosticState];
-  let stateFromStores = obj.useStateFromStores(items, () => getUserAgnosticState.get("iar_show_report_sub_type_labels"));
+  const items = [closure_8];
+  let stateFromStores = obj.useStateFromStores(items, () => closure_8.get("iar_show_report_sub_type_labels"));
   if (child.nodeMap[tmp4] != null) {
     const report_type = tmp8.report_type;
   }
   obj = { style: tmp.childButton, accessibilityRole: "button", onPress: callback(React.useState(() => () => closure_1.onPress(closure_0)), 1)[0], children: null };
   obj = { style: tmp.childContainer, children: null };
-  const obj1 = { style: tmp.childContent, children: null };
-  const items1 = [callback2(child(4734).Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 }), ];
+  obj1 = { style: tmp.childContent, children: null };
+  const items1 = [callback2(child(4739).Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 }), ];
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
@@ -117,18 +113,16 @@ function ChildItem(child) {
     const obj3 = { style: null, variant: "text-xs/normal", color: "text-muted", children: null };
     obj3[0] = tmp.debugText;
     obj3[3] = report_type;
-    stateFromStores = tmp9(tmp5(4734).Text, obj3);
+    stateFromStores = tmp9(tmp5(4739).Text, obj3);
   }
   items1[1] = stateFromStores;
   obj1[1] = items1;
-  const items2 = [closure_17(closure_6, obj1), callback2(importDefault(8146), {})];
+  const items2 = [closure_17(closure_6, obj1), callback2(ArrowDefault, {})];
   obj[1] = items2;
   obj[3] = closure_17(closure_6, obj);
-  return callback2(child(5433).PressableHighlight, obj);
+  return callback2(child(5438).PressableHighlight, obj);
 }
 function ChildrenView(node) {
-  let importDefault;
-  let require;
   const children = node.node.children;
   ({ onSelectChild: require, nodeMap: importDefault } = node);
   let tmp2 = null;
@@ -138,8 +132,8 @@ function ChildrenView(node) {
       const obj = { style: null, children: null };
       obj[0] = tmp.childrenContainer;
       obj[1] = children.map((child) => {
-        const tmp = outer1_4(child, 2);
-        return outer1_16(outer1_21, { child, nodeMap: closure_1, onPress: closure_0 }, "" + tmp[0] + "+" + tmp[1]);
+        const tmp = closure_1_4(child, 2);
+        return closure_1_16(closure_1_21, { child, nodeMap: closure_1, onPress: closure_0 }, "" + tmp[0] + "+" + tmp[1]);
       });
       tmp2 = callback2(closure_6, obj);
     }
@@ -153,7 +147,7 @@ function NullComponent() {
 ({ AnalyticEvents: map1, ChannelTypes: closure_14 } = ME);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
 createCacheKey = { container: null, scrollView: null, childrenContainer: null, headerContainer: null, header: null, subheader: null, description: null, infoBox: null, infoBoxText: null, childButton: null, childContainer: null, childContent: null, childButtonText: null, debugText: null };
-createCacheKey = { flex: 1, alignSelf: "stretch", justifyContent: "flex-start", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, marginTop: 30 };
+createCacheKey = { flex: 1, alignSelf: "stretch", justifyContent: "flex-start", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, marginTop: 30 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flex: 1, alignSelf: "stretch", marginTop: 24 };
 createCacheKey[2] = { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 };
@@ -161,31 +155,25 @@ createCacheKey[3] = { alignSelf: "stretch", marginBottom: 24, paddingHorizontal:
 createCacheKey[4] = { marginBottom: 8, textAlign: "center" };
 createCacheKey[5] = { lineHeight: 20, marginBottom: 8, textAlign: "center" };
 createCacheKey[6] = { lineHeight: 16, marginBottom: 8, textAlign: "center" };
-createCacheKey[7] = { alignSelf: "stretch", backgroundColor: require("Themes").unsafe_rawColors.BLUE_345, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };
-createCacheKey[8] = { flex: 1, lineHeight: 18, marginStart: 8, marginTop: 3 };
-let obj1 = { alignSelf: "stretch", backgroundColor: require("Themes").unsafe_rawColors.BLUE_345, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };
-createCacheKey[9] = { marginBottom: 8, borderRadius: require("Themes").radii.xs };
-let obj2 = { marginBottom: 8, borderRadius: require("Themes").radii.xs };
-createCacheKey[10] = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: require("Themes").radii.xs };
+createCacheKey[7] = { alignSelf: "stretch", alignItems: "center", backgroundColor: ThemesDefault.unsafe_rawColors.BLUE_345, borderRadius: ThemesDefault.radii.xs, borderColor: ThemesDefault.unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };
+createCacheKey[8] = { flex: 1, marginStart: 8 };
+let obj1 = { alignSelf: "stretch", alignItems: "center", backgroundColor: ThemesDefault.unsafe_rawColors.BLUE_345, borderRadius: ThemesDefault.radii.xs, borderColor: ThemesDefault.unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };
+createCacheKey[9] = { marginBottom: 8, borderRadius: ThemesDefault.radii.xs };
+let obj2 = { marginBottom: 8, borderRadius: ThemesDefault.radii.xs };
+createCacheKey[10] = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: ThemesDefault.radii.xs };
 createCacheKey[11] = { flex: 1 };
 createCacheKey[12] = { lineHeight: 20 };
 createCacheKey[13] = { marginTop: 4, lineHeight: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: require("Themes").radii.xs };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/in_app_reports/native/components/NodeView.tsx");
+let closure_18 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: ThemesDefault.radii.xs };
+let result = require("set").fileFinishedImporting("modules/in_app_reports/native/components/NodeView.tsx");
 
 export default function NodeView(node) {
-  let closure_13;
-  let history;
-  let onNavigate;
-  let reportId;
-  let reportSubType;
-  let tmp14;
   let external_link = node;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = external_link(ref[21]);
   let navigation = obj.useNavigation();
-  let obj1 = external_link(ref[22]);
+  obj1 = external_link(ref[22]);
   const isScreenReaderEnabled = obj1.useIsScreenReaderEnabled();
   ref = node.useRef(null);
   let callback = node.useRef(false);
@@ -195,13 +183,13 @@ export default function NodeView(node) {
       function focusHeader() {
         if (!ref.current) {
           tmp.current = true;
-          let obj = callback(outer1_3[23]);
+          let obj = callback(closure_1_3[23]);
           obj = { ref: null, delay: 300 };
           obj[0] = closure_3;
           const result = obj.setAccessibilityFocus(obj);
         }
       }
-      let closure_0 = navigation.addListener("transitionEnd", (data) => {
+      closure_0 = navigation.addListener("transitionEnd", (data) => {
         data = data.data;
         let closing;
         if (data != null) {
@@ -210,7 +198,7 @@ export default function NodeView(node) {
         if (true !== closing) {
           if (!ref.current) {
             ref.current = true;
-            let obj = callback(outer1_3[23]);
+            let obj = callback(closure_1_3[23]);
             obj = { ref: null, delay: 300 };
             obj[0] = closure_3;
             const result = obj.setAccessibilityFocus(obj);
@@ -243,26 +231,26 @@ export default function NodeView(node) {
   external_link = undefined;
   let elements = node.elements;
   external_link = "checkbox";
-  const found = elements.find((type) => type.type === external_link);
+  const found = elements.find((type) => type.type === skip);
   external_link = undefined;
   const elements1 = node.elements;
   external_link = "text_line_resource";
-  const found1 = elements1.find((type) => type.type === external_link);
+  const found1 = elements1.find((type) => type.type === skip);
   external_link = undefined;
   const elements2 = node.elements;
   external_link = "text";
-  const found2 = elements2.find((type) => type.type === external_link);
+  const found2 = elements2.find((type) => type.type === skip);
   const REPORT_TO_MOD = external_link(ref[24]).ReportMenuTypeSets.REPORT_TO_MOD;
   const hasItem = REPORT_TO_MOD.has(reportType.name);
   [tmp14, closure_13] = callback(node.useState(false), 2);
   const tmp15 = callback(node.useState(false), 2);
   const first = tmp15[0];
-  let closure_15 = tmp15[1];
+  closure_15 = tmp15[1];
   const tmp17 = callback(node.useState(() => ({})), 2);
   const first1 = tmp17[0];
-  let closure_17 = tmp17[1];
+  closure_17 = tmp17[1];
   const tmp19 = callback(node.useState(false), 2);
-  createCacheKey = tmp19[1];
+  callback4 = tmp19[1];
   const items2 = [node, found, first1];
   callback = node.useCallback((destination) => {
     let obj = { nodeRef: node.id, destination, multiSelect: null };
@@ -282,10 +270,10 @@ export default function NodeView(node) {
       const data = found.data;
       if (null != data) {
         function _loop(arg0, arg1) {
-          let closure_0 = arg0;
-          let closure_1 = arg1;
+          closure_0 = arg0;
+          closure_1 = arg1;
           if (true === closure_0) {
-            outer1_17((arg0) => {
+            closure_1_17((arg0) => {
               const obj = {};
               const merged = Object.assign(arg0);
               obj[closure_0] = closure_1;
@@ -298,7 +286,7 @@ export default function NodeView(node) {
           let tmp6 = callback;
           let tmp7 = callback(tmp4, 4);
           let tmp8 = tmp7[2];
-          let closure_0 = tmp7[3];
+          closure_0 = tmp7[3];
           let _loopResult = _loop(tmp7[0], tmp7[1]);
           continue;
         }
@@ -335,7 +323,7 @@ export default function NodeView(node) {
     } else {
       const elements = tmp2.elements;
       const skip = "skip";
-      if (null != elements.find((type) => type.type === external_link)) {
+      if (null != elements.find((type) => type.type === skip)) {
         const button = tmp2.button;
         let type;
         if (button != null) {
@@ -354,7 +342,7 @@ export default function NodeView(node) {
         obj[2] = tmp2.report_type;
         obj[3] = node.id;
         obj[4] = tmp2.id;
-        obj.trackWithMetadata(outer1_13.IAR_NAVIGATE, obj);
+        obj.trackWithMetadata(closure_1_13.IAR_NAVIGATE, obj);
       }
       obj = { node: null, history: null };
       obj[0] = tmp2;
@@ -389,7 +377,7 @@ export default function NodeView(node) {
     }
     if (tmp3) {
       const obj = { headerLeft: null };
-      obj[0] = outer1_23;
+      obj[0] = closure_1_23;
       navigation.setOptions(obj);
     }
   }, items7);
@@ -412,7 +400,7 @@ export default function NodeView(node) {
   external_link = undefined;
   const elements3 = node.elements;
   external_link = "ignore_users";
-  let tmp28 = null != elements3.find((type) => type.type === external_link);
+  let tmp28 = null != elements3.find((type) => type.type === skip);
   if (tmp28) {
     let tmp29 = "message" === reportType.name;
     if (!tmp29) {
@@ -436,7 +424,7 @@ export default function NodeView(node) {
   if (userIsTeen) {
     const elements4 = node.elements;
     external_link = "share_with_parents";
-    userIsTeen = null != elements4.find((type) => type.type === external_link);
+    userIsTeen = null != elements4.find((type) => type.type === skip);
   }
   obj = { style: tmp.container, bottom: true, top: true, children: null };
   obj = { style: tmp.scrollView, children: null };
@@ -446,7 +434,7 @@ export default function NodeView(node) {
   external_link = "success";
   const tmp13 = callback(node.useState(false), 2);
   const tmp32 = history;
-  obj1[0] = elements5.find((type) => type.type === external_link);
+  obj1[0] = elements5.find((type) => type.type === skip);
   const items8 = [first1(navigation(ref[32]), obj1), first1(callback, { node, headerRef: ref }), first1(callback1, { node }), , , , , , , , , , , , , , , ];
   let tmp33Result = null;
   if (null != found1) {
@@ -465,7 +453,7 @@ export default function NodeView(node) {
   const elements6 = node.elements;
   external_link = "message_preview";
   let tmp33Result1 = null;
-  if (null != elements6.find((type) => type.type === external_link)) {
+  if (null != elements6.find((type) => type.type === skip)) {
     if ("message" !== reportType.name) {
       if ("first_dm" !== reportType.name) {
         tmp33Result1 = null;
@@ -479,7 +467,7 @@ export default function NodeView(node) {
   const elements7 = node.elements;
   external_link = "user_preview";
   let tmp33Result2 = null;
-  if (null != elements7.find((type) => type.type === external_link)) {
+  if (null != elements7.find((type) => type.type === skip)) {
     tmp33Result2 = null;
     if ("user" === reportType.name) {
       const obj5 = { user: null };
@@ -491,7 +479,7 @@ export default function NodeView(node) {
   const elements8 = node.elements;
   external_link = "widget_preview";
   let tmp33Result3 = null;
-  if (null != elements8.find((type) => type.type === external_link)) {
+  if (null != elements8.find((type) => type.type === skip)) {
     tmp33Result3 = null;
     if ("widget" === reportType.name) {
       ({ widget: obj13[0], user_id: obj13[1] } = reportType);
@@ -503,7 +491,7 @@ export default function NodeView(node) {
   const elements9 = node.elements;
   external_link = "channel_preview";
   let tmp33Result4 = null;
-  if (null != elements9.find((type) => type.type === external_link)) {
+  if (null != elements9.find((type) => type.type === skip)) {
     tmp33Result4 = null;
     if ("stage_channel" === reportType.name) {
       const obj7 = { stageInstance: null };
@@ -515,7 +503,7 @@ export default function NodeView(node) {
   const elements10 = node.elements;
   external_link = "guild_preview";
   let tmp33Result5 = null;
-  if (null != elements10.find((type) => type.type === external_link)) {
+  if (null != elements10.find((type) => type.type === skip)) {
     tmp33Result5 = null;
     if ("guild" === reportType.name) {
       const obj8 = { guild: null };
@@ -527,7 +515,7 @@ export default function NodeView(node) {
   const elements11 = node.elements;
   external_link = "guild_scheduled_event_preview";
   let tmp33Result6 = null;
-  if (null != elements11.find((type) => type.type === external_link)) {
+  if (null != elements11.find((type) => type.type === skip)) {
     tmp33Result6 = null;
     if ("guild_scheduled_event" === reportType.name) {
       const obj9 = { event: null };
@@ -539,7 +527,7 @@ export default function NodeView(node) {
   const elements12 = node.elements;
   external_link = "guild_discovery_preview";
   let tmp33Result7 = null;
-  if (null != elements12.find((type) => type.type === external_link)) {
+  if (null != elements12.find((type) => type.type === skip)) {
     tmp33Result7 = null;
     if ("guild_discovery" === reportType.name) {
       const obj10 = { guild: null };
@@ -553,7 +541,7 @@ export default function NodeView(node) {
   const elements13 = node.elements;
   external_link = "breadcrumbs";
   let tmp34Result = tmp34(tmp3[42]);
-  obj11[0] = elements13.find((type) => type.type === external_link);
+  obj11[0] = elements13.find((type) => type.type === skip);
   obj11[1] = reportType.name;
   obj11[2] = history;
   items8[12] = first1(tmp34Result, obj11);
@@ -570,7 +558,7 @@ export default function NodeView(node) {
       items9[1] = userIsTeen;
       const elements14 = node.elements;
       external_link = "block_users";
-      let tmp51 = null != elements14.find((type) => type.type === external_link);
+      let tmp51 = null != elements14.find((type) => type.type === skip);
       if (tmp51) {
         let tmp52 = "message" === reportType.name;
         if (!tmp52) {
@@ -590,7 +578,7 @@ export default function NodeView(node) {
         if (!tmp28) {
           const elements15 = node.elements;
           external_link = "mute_users";
-          tmp55 = null != elements15.find((type) => type.type === external_link);
+          tmp55 = null != elements15.find((type) => type.type === skip);
         }
         if (tmp55) {
           let tmp56 = "message" === reportType.name;
@@ -609,7 +597,7 @@ export default function NodeView(node) {
           items9[3] = tmp55;
           const elements16 = node.elements;
           external_link = "delete_message";
-          let callback2Result = null != elements16.find((type) => type.type === external_link);
+          let callback2Result = null != elements16.find((type) => type.type === skip);
           if (callback2Result) {
             let tmp60 = "message" === reportType.name;
             if (!tmp60) {
@@ -629,7 +617,7 @@ export default function NodeView(node) {
           items9[4] = callback2Result;
           const elements17 = node.elements;
           external_link = "leave_guild";
-          let tmp33Result8 = null != elements17.find((type) => type.type === external_link);
+          let tmp33Result8 = null != elements17.find((type) => type.type === skip);
           if (tmp33Result8) {
             tmp33Result8 = "guild" === reportType.name;
           }
@@ -687,7 +675,7 @@ export default function NodeView(node) {
   items8[13] = someResult;
   const elements18 = node.elements;
   external_link = "settings_upsells";
-  let tmp33Result12 = null != elements18.find((type) => type.type === external_link);
+  let tmp33Result12 = null != elements18.find((type) => type.type === skip);
   if (tmp33Result12) {
     let tmp63 = "message" === reportType.name;
     if (!tmp63) {
@@ -727,7 +715,7 @@ export default function NodeView(node) {
   const elements19 = node.elements;
   external_link = "external_link";
   let tmp33Result13 = null;
-  if (null != elements19.find((type) => type.type === external_link)) {
+  if (null != elements19.find((type) => type.type === skip)) {
     const obj21 = { elements: null };
     external_link = undefined;
     const elements20 = node.elements;
@@ -782,44 +770,44 @@ export default function NodeView(node) {
           items1[1] = items1.successNodeId;
           const promise = onSubmit(callback(items1));
           const nextPromise = onSubmit(callback(items1)).then(() => {
-            outer1_18(false);
+            closure_1_18(false);
             let header;
-            if (outer1_8[items1.successNodeId] != null) {
+            if (closure_1_8[items1.successNodeId] != null) {
               header = tmp2.header;
             }
             if (null != header) {
               const AccessibilityAnnouncer = external_link(ref[27]).AccessibilityAnnouncer;
               AccessibilityAnnouncer.announce(tmp2.header);
             }
-            outer1_20(items1);
+            closure_1_20(items1);
           });
           onSubmit(callback(items1)).then(() => {
-            outer1_18(false);
+            closure_1_18(false);
             let header;
-            if (outer1_8[items1.successNodeId] != null) {
+            if (closure_1_8[items1.successNodeId] != null) {
               header = tmp2.header;
             }
             if (null != header) {
               const AccessibilityAnnouncer = external_link(ref[27]).AccessibilityAnnouncer;
               AccessibilityAnnouncer.announce(tmp2.header);
             }
-            outer1_20(items1);
+            closure_1_20(items1);
           }).catch(() => {
             callback2(true);
           }).finally(() => {
             callback(false);
           });
           const catchPromise = onSubmit(callback(items1)).then(() => {
-            outer1_18(false);
+            closure_1_18(false);
             let header;
-            if (outer1_8[items1.successNodeId] != null) {
+            if (closure_1_8[items1.successNodeId] != null) {
               header = tmp2.header;
             }
             if (null != header) {
               const AccessibilityAnnouncer = external_link(ref[27]).AccessibilityAnnouncer;
               AccessibilityAnnouncer.announce(tmp2.header);
             }
-            outer1_20(items1);
+            closure_1_20(items1);
           }).catch(() => {
             callback2(true);
           });

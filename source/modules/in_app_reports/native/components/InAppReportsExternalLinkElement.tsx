@@ -1,16 +1,17 @@
-// Module ID: 12819
-// Function ID: 12820
+// Module ID: 12874
+// Function ID: 12875
 // Name: ExternalLinkItem
-// Dependencies: [17, 21, 4661, 4734, 1236, 8086, 6296, 12820, 4090, 2]
+// Dependencies: [17, 21, 4668, 4739, 1236, 8125, 6327, 12875, 4093, 2]
 // Exports: default
 
-// Module 12819 (ExternalLinkItem)
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12874 (ExternalLinkItem)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 function ExternalLinkItem(data) {
   data = data.data;
   const url = data.url;
@@ -20,18 +21,19 @@ function ExternalLinkItem(data) {
     obj[0] = tmp;
     obj[1] = tmp2;
     obj = { IconComponent: null };
-    obj[0] = url(12820).LinkExternalMediumIcon;
-    obj[2] = callback(url(6296).TableRowIcon, obj);
+    obj[0] = url(12875).LinkExternalMediumIcon;
+    obj[2] = callback(url(6327).TableRowIcon, obj);
     obj[3] = function onPress() {
-      outer1_1(outer1_2[8]).openURL(url);
+      closure_1_1(closure_1_2[8]).openURL(url);
     };
-    tmp3 = callback(url(8086).RowButton, obj);
+    tmp3 = callback(url(8125).RowButton, obj);
   }
   return tmp3;
 }
+const View = get_ActivityIndicator.View;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ linksContainer: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 }, headerText: { marginBottom: 8 } });
-const result = require("createCacheKey").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsExternalLinkElement.tsx");
+const result = set.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsExternalLinkElement.tsx");
 
 export default function ExternalLinksElement(elements) {
   elements = elements.elements;
@@ -46,10 +48,10 @@ export default function ExternalLinksElement(elements) {
         if (!someResult) {
           obj = { style: null, variant: "heading-deprecated-12/extrabold", color: "text-default", accessibilityRole: "header", children: null };
           obj[0] = tmp.headerText;
-          const intl = require(1236) /* getSystemLocale */.intl;
-          obj[4] = intl.string(require(1236) /* getSystemLocale */.t.hvVgAZ).toUpperCase();
-          tmp5 = callback(require(4734) /* Text */.Text, obj);
-          const str = intl.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
+          const intl = getSystemLocale.intl;
+          obj[4] = intl.string(getSystemLocale.t.hvVgAZ).toUpperCase();
+          tmp5 = callback(Text.Text, obj);
+          const str = intl.string(getSystemLocale.t.hvVgAZ);
         }
         const items = [tmp5, elements.map((data) => callback(closure_7, { data: data.data }, "external-link-" + arg1))];
         obj[1] = items;

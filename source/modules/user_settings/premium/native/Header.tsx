@@ -1,44 +1,47 @@
-// Module ID: 12903
-// Function ID: 12904
+// Module ID: 12958
+// Function ID: 12959
 // Name: Header
-// Dependencies: [19, 17, 21, 4661, 4310, 5449, 1236, 1363, 8034, 12904, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 4314, 5454, 1236, 1363, 8073, 12959, 4739, 2]
 // Exports: default
 
-// Module 12903 (Header)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12958 (Header)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import Text from "Text" /* 4739 */;
+import preloadDefault from "preload" /* 5454 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ container: { flexDirection: "column", alignItems: "center" }, headerText: { marginTop: 16, marginBottom: 24 } });
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/premium/native/Header.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/Header.tsx");
 
 export default function Header(style) {
   const tmp = callback();
   let obj = { style: items, children: null };
   items = [tmp.container, style.style];
   obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", source: null };
-  const tmp4 = importDefault(4310)();
+  const tmp4 = useThemeDefault();
   const tmp5 = closure_5;
   const tmp6 = View;
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.lpNrPu);
-  const tmp8 = importDefault(5449);
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t.lpNrPu);
+  const tmp8 = preloadDefault;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(8034);
+    let tmp2Result = tmp2(8073);
   } else {
-    tmp2Result = tmp2(12904);
+    tmp2Result = tmp2(12959);
   }
   obj[3] = tmp2Result;
   const items1 = [closure_4(tmp8, obj), ];
   obj = { style: tmp.headerText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp9(1236).intl;
-  obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.SD5MJW);
-  items1[1] = closure_4(require(4734) /* Text */.Text, obj);
+  obj[3] = intl2.string(getSystemLocale.t.SD5MJW);
+  items1[1] = closure_4(Text.Text, obj);
   obj[1] = items1;
   return tmp5(tmp6, obj);
 };

@@ -1,31 +1,31 @@
-// Module ID: 6276
-// Function ID: 6277
+// Module ID: 6307
+// Function ID: 6308
 // Name: WordBalloonIllocon
-// Dependencies: [21, 5449, 6277, 2]
+// Dependencies: [21, 5454, 6308, 2]
 // Exports: WordBalloonIllocon
 
-// Module 6276 (WordBalloonIllocon)
-import { jsx } from "jsxProd";
+// Module 6307 (WordBalloonIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6308 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WordBalloonIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WordBalloonIllocon.native.tsx");
 
 export const WordBalloonIllocon = function WordBalloonIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6277);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

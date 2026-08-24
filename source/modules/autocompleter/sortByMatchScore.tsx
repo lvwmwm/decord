@@ -1,11 +1,13 @@
-// Module ID: 6776
-// Function ID: 6777
+// Module ID: 6813
+// Function ID: 6814
 // Name: sortByMatchScore
 // Dependencies: [2]
 // Exports: default
 
-// Module 6776 (sortByMatchScore)
-const result = require("set").fileFinishedImporting("modules/autocompleter/sortByMatchScore.tsx");
+// Module 6813 (sortByMatchScore)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/autocompleter/sortByMatchScore.tsx");
 
 export default function sortByMatchScore(score, score2) {
   if (score.score === score2.score) {

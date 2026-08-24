@@ -1,28 +1,27 @@
-// Module ID: 8518
-// Function ID: 8519
+// Module ID: 8557
+// Function ID: 8558
 // Name: prototype
-// Dependencies: [8519, 8517, 7514, 7516, 2]
+// Dependencies: [8558, 8556, 7552, 7554, 2]
 // Exports: getForumPostSeenManagerId, markForumPostItemAsSeen, markForumPostItemAsUnseen
 
-// Module 8518 (prototype)
-import { AnalyticsFeedItemSeenManager } from "maybeMarkSeen";
+// Module 8557 (prototype)
+import set from "set" /* 2 */;
+import markAnalyticsFeedItemSeen from "markAnalyticsFeedItemSeen" /* 8556 */;
+import maybeMarkSeen from "maybeMarkSeen" /* 8558 */;
 
+const AnalyticsFeedItemSeenManager = maybeMarkSeen.AnalyticsFeedItemSeenManager;
 const prototype = function ForumChannelSeenManager(channelId) {
   channelId = channelId.channelId;
   let obj = { windowId: channelId.windowId, isPaused: channelId.isPaused, id: null };
-  const FORUM_CHANNEL = require(8519) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL;
+  const FORUM_CHANNEL = _require(8558).AnalyticsFeedTypes.FORUM_CHANNEL;
   obj[2] = concat(FORUM_CHANNEL, "_", channelId);
   tmp = new tmp(obj, tmp3, tmp2, FORUM_CHANNEL, concat, "_", new.target);
   // ThrowIfThisInitialized (0x7c)
-  require = tmp;
+  _require = tmp;
   tmp.createFlushSeenItemsFunction = function createFlushSeenItemsFunction(IMMEDIATE) {
     obj = { guildId: obj.guildId, channelId: obj.channelId, sessionId: obj.sessionId, trackedFeedItems: obj.trackedFeedItems, isForcedFlush: null != IMMEDIATE };
     return () => {
       (function flushSeenItems(trackedFeedItems) {
-        let channelId;
-        let guildId;
-        let isForcedFlush;
-        let sessionId;
         trackedFeedItems = trackedFeedItems.trackedFeedItems;
         const items = [];
         const items1 = [];
@@ -31,7 +30,7 @@ const prototype = function ForumChannelSeenManager(channelId) {
         const iter = keys[Symbol.iterator]();
         const nextResult = iter.next();
         while (iter !== undefined) {
-          let obj = trackedFeedItems[nextResult];
+          obj = trackedFeedItems[nextResult];
           let tmp3 = nextResult;
           let seenTimeDestructive = obj.computeSeenTimeDestructive(isForcedFlush);
           if (seenTimeDestructive > 0) {
@@ -57,20 +56,20 @@ const prototype = function ForumChannelSeenManager(channelId) {
   };
   tmp.guildId = channelId.guildId;
   tmp.channelId = channelId;
-  tmp.sessionId = require(7516) /* collectForumAnalyticsMetadata */.getForumChannelSessionId(channelId);
+  tmp.sessionId = _require(7554).getForumChannelSessionId(channelId);
   return tmp;
 }.prototype;
 class prototype extends AnalyticsFeedItemSeenManager {
 }
-let result = require("trackForumChannelSeenBatch").fileFinishedImporting("modules/forums/tracking/ForumChannelSeenManager.tsx");
+let result = set.fileFinishedImporting("modules/forums/tracking/ForumChannelSeenManager.tsx");
 
 export default prototype;
 export const getForumPostSeenManagerId = function getForumPostSeenManagerId(arg0) {
-  return "" + require(8519) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + arg0;
+  return "" + maybeMarkSeen.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + arg0;
 };
 export const markForumPostItemAsSeen = function markForumPostItemAsSeen(parent_id, item, timestampMillis) {
-  const result = require(8517) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemSeen("" + require(8519) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id, item, timestampMillis);
+  const result = markAnalyticsFeedItemSeen.markAnalyticsFeedItemSeen("" + maybeMarkSeen.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id, item, timestampMillis);
 };
 export const markForumPostItemAsUnseen = function markForumPostItemAsUnseen(parent_id, item, timestampMillis) {
-  const result = require(8517) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemUnseen("" + require(8519) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id, item, timestampMillis);
+  const result = markAnalyticsFeedItemSeen.markAnalyticsFeedItemUnseen("" + maybeMarkSeen.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id, item, timestampMillis);
 };

@@ -1,31 +1,31 @@
-// Module ID: 5566
-// Function ID: 5567
+// Module ID: 5573
+// Function ID: 5574
 // Name: BunnyIllocon
-// Dependencies: [21, 5449, 5567, 2]
+// Dependencies: [21, 5454, 5574, 2]
 // Exports: BunnyIllocon
 
-// Module 5566 (BunnyIllocon)
-import { jsx } from "jsxProd";
+// Module 5573 (BunnyIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5574 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BunnyIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BunnyIllocon.native.tsx");
 
 export const BunnyIllocon = function BunnyIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5567);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

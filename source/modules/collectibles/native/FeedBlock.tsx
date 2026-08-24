@@ -1,67 +1,60 @@
-// Module ID: 14971
-// Function ID: 14972
+// Module ID: 15035
+// Function ID: 15036
 // Name: feedBlock
-// Dependencies: [19, 17, 4662, 1302, 5258, 678, 676, 21, 4661, 712, 589, 1363, 14426, 14972, 14428, 5300, 7159, 7139, 1236, 4734, 5433, 4342, 14973, 2007, 4330, 4745, 14966, 14974, 500, 8406, 14975, 5449, 14976, 14977, 2]
+// Dependencies: [19, 17, 4669, 1302, 5263, 678, 676, 21, 4668, 712, 589, 1363, 14494, 15036, 14496, 5305, 7197, 7177, 1236, 4739, 5438, 4346, 15037, 2008, 4334, 4750, 15030, 15038, 500, 8445, 15039, 5454, 15040, 15041, 2]
 // Exports: default
 
-// Module 14971 (feedBlock)
-import Text from "Text";
-import get_ActivityIndicator from "context";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import handleThemeChange from "handleThemeChange";
-import hasConsented from "hasConsented";
-import { CollectiblesMobileShopScreen as closure_9 } from "items";
-import { Consents } from "ME";
-import jsxProd from "ACTION_SHEET_HEIGHT_HALF";
-import createCacheKey from "createCacheKey";
+// Module 15035 (feedBlock)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_7 from "handleThemeChange" /* 1302 */;
+import closure_8 from "hasConsented" /* 5263 */;
+import { CollectiblesMobileShopScreen as closure_9 } from "items" /* 678 */;
+import { Consents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_12;
-let unpackModuleId;
 const require = arg1;
 ({ Image: c4, View: c5 } = get_ActivityIndicator);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
 createCacheKey = { feedContainer: null, feedHeader: null, feedTitle: null, feedFooter: null, feedFooterImage: null, feedFooterOrbImage: null };
-createCacheKey = { display: "flex", flexDirection: "column", height: "100%", gap: require("Themes").space.PX_16 };
+createCacheKey = { display: "flex", flexDirection: "column", height: "100%", gap: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 };
-let obj1 = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 };
-createCacheKey[2] = { display: "flex", flexDirection: "row", alignItems: "center", flexShrink: 1, gap: require("Themes").space.PX_8 };
-let obj2 = { display: "flex", flexDirection: "row", alignItems: "center", flexShrink: 1, gap: require("Themes").space.PX_8 };
-createCacheKey[3] = { display: "flex", gap: require("Themes").space.PX_16, flexDirection: "column", justifyContent: "center", alignItems: "center" };
+createCacheKey[1] = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16 };
+let obj1 = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16 };
+createCacheKey[2] = { display: "flex", flexDirection: "row", alignItems: "center", flexShrink: 1, gap: ThemesDefault.space.PX_8 };
+let obj2 = { display: "flex", flexDirection: "row", alignItems: "center", flexShrink: 1, gap: ThemesDefault.space.PX_8 };
+createCacheKey[3] = { display: "flex", gap: ThemesDefault.space.PX_16, flexDirection: "column", justifyContent: "center", alignItems: "center" };
 createCacheKey[4] = { width: "100%", resizeMode: "cover" };
 createCacheKey[5] = { width: "100%", alignSelf: "center", resizeMode: "contain", height: 130 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { display: "flex", gap: require("Themes").space.PX_16, flexDirection: "column", justifyContent: "center", alignItems: "center" };
-let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/collectibles/native/FeedBlock.tsx");
+let closure_13 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { display: "flex", gap: ThemesDefault.space.PX_16, flexDirection: "column", justifyContent: "center", alignItems: "center" };
+let result = require("set").fileFinishedImporting("modules/collectibles/native/FeedBlock.tsx");
 
 export default function _default(feedBlock) {
-  let disableBundleStaticBackground;
-  let feedProducts;
-  let isPersonalized;
-  let preferVCPrice;
   feedBlock = feedBlock.feedBlock;
   const screen = feedBlock.screen;
   let stateFromStores1;
-  let dependencyMap;
+  dependencyMap = undefined;
   ({ preferVCPrice, disableBundleStaticBackground } = feedBlock);
-  let feedFooterOrbImage = createCacheKey();
+  let feedFooterOrbImage = callback2();
   let tmp5Result = dependencyMap;
   let obj = feedBlock(589);
-  let items = [handleThemeChange];
-  const stateFromStores = obj.useStateFromStores(items, () => feedBlock(_undefined[11]).isThemeDark(theme.theme));
-  let obj1 = feedBlock(589);
-  let items1 = [hasConsented];
-  stateFromStores1 = obj1.useStateFromStores(items1, () => hasConsented.hasConsented(constants2.PERSONALIZATION));
-  let tmp6 = stateFromStores1(14426)();
+  let items = [closure_7];
+  const stateFromStores = obj.useStateFromStores(items, () => feedBlock(paths[11]).isThemeDark(theme.theme));
+  obj1 = feedBlock(589);
+  let items1 = [closure_8];
+  stateFromStores1 = obj1.useStateFromStores(items1, () => closure_8.hasConsented(constants2.PERSONALIZATION));
+  let tmp6 = stateFromStores1(14494)();
   dependencyMap = tmp6;
   const items2 = [feedBlock.sortedSkuIds, tmp6, stateFromStores1];
   const memo = React.useMemo(() => {
     const sortedSkuIds = feedBlock.sortedSkuIds;
     let items;
     if (sortedSkuIds != null) {
-      items = sortedSkuIds[feedBlock(undefined, _undefined[13]).ShopHomeSortType.RECOMMENDED];
+      items = sortedSkuIds[feedBlock(undefined, paths[13]).ShopHomeSortType.RECOMMENDED];
     }
     if (items == null) {
       items = [];
@@ -69,7 +62,7 @@ export default function _default(feedBlock) {
     const sortedSkuIds2 = feedBlock.sortedSkuIds;
     let items1;
     if (sortedSkuIds2 != null) {
-      items1 = sortedSkuIds2[feedBlock(undefined, _undefined[13]).ShopHomeSortType.POPULAR];
+      items1 = sortedSkuIds2[feedBlock(undefined, paths[13]).ShopHomeSortType.POPULAR];
     }
     if (items1 == null) {
       items1 = [];
@@ -81,13 +74,13 @@ export default function _default(feedBlock) {
     if (tmp6) {
       items1 = items;
     }
-    return { feedProducts: _undefined(items1), isPersonalized: tmp6 };
+    return { feedProducts: paths(items1), isPersonalized: tmp6 };
   }, items2);
   ({ isPersonalized, feedProducts } = memo);
-  let obj2 = feedBlock(14428);
+  let obj2 = feedBlock(14496);
   const filteredAndSortedProducts = obj2.useFilteredAndSortedProducts({ products: feedProducts, maxProducts: 36, screen });
   let obj3 = feedBlock(589);
-  const items3 = [maybeApplyNoTextColorForLightCustomTheme];
+  const items3 = [closure_6];
   const stateFromStores2 = obj3.useStateFromStores(items3, () => useReducedMotion.useReducedMotion);
   const intl = feedBlock(1236).intl;
   const string = intl.string;
@@ -97,27 +90,27 @@ export default function _default(feedBlock) {
   } else {
     stringResult = string(t.ivaAA7);
   }
-  obj = { value: stateFromStores1(7139)(stateFromStores1(7159).COLLECTIBLES_SHOP_POPULAR_PICKS).analyticsLocations, children: null };
+  obj = { value: stateFromStores1(7177)(stateFromStores1(7197).COLLECTIBLES_SHOP_POPULAR_PICKS).analyticsLocations, children: null };
   obj = { style: feedFooterOrbImage.feedContainer, children: null };
   obj1 = { style: feedFooterOrbImage.feedHeader, children: null };
   obj2 = { style: feedFooterOrbImage.feedTitle, children: null };
-  const items4 = [callback(feedBlock(4734).Heading, { variant: "heading-lg/semibold", children: stringResult }), ];
+  const items4 = [callback(feedBlock(4739).Heading, { variant: "heading-lg/semibold", children: stringResult }), ];
   if (isPersonalized) {
     obj3 = { onPress: null, hitSlop: 14, "aria-label": null, children: null };
     obj3[0] = function onPress() {
-      return stateFromStores1(_undefined[21]).openLazy(feedBlock(_undefined[23])(_undefined[22], _undefined.paths), "PersonalizationDisclaimerActionSheet", {});
+      return stateFromStores1(paths[21]).openLazy(feedBlock(paths[23])(paths[22], paths.paths), "PersonalizationDisclaimerActionSheet", {});
     };
     const intl2 = tmp(1236).intl;
     obj3[2] = intl2.string(tmp(1236).t.hvVgAZ);
-    obj3[3] = tmp12(tmp(4330).CircleInformationIcon, { size: "xs" });
-    isPersonalized = tmp12(tmp(5433).PressableOpacity, obj3);
+    obj3[3] = tmp12(tmp(4334).CircleInformationIcon, { size: "xs" });
+    isPersonalized = tmp12(tmp(5438).PressableOpacity, obj3);
   }
   function goToShopAll() {
-    let obj = feedBlock(_undefined[15]);
+    let obj = feedBlock(paths[15]);
     obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-    const items = [stateFromStores1(_undefined[16]).COLLECTIBLES_MOBILE_SHOP_ALL_BUTTON];
+    const items = [stateFromStores1(paths[16]).COLLECTIBLES_MOBILE_SHOP_ALL_BUTTON];
     obj[0] = items;
-    obj[1] = stateFromStores1(_undefined[16]).COLLECTIBLES_MOBILE_SHOP_ALL_BUTTON;
+    obj[1] = stateFromStores1(paths[16]).COLLECTIBLES_MOBILE_SHOP_ALL_BUTTON;
     obj[2] = constants.SHOP_ALL;
     const result = obj.openCollectiblesShopMobile(obj);
   }
@@ -130,25 +123,25 @@ export default function _default(feedBlock) {
     obj4[0] = goToShopAll;
     const intl3 = tmp(1236).intl;
     obj4[1] = intl3.string(tmp(1236).t.xFcotU);
-    tmp12Result = tmp12(tmp(4745).Button, obj4);
+    tmp12Result = tmp12(tmp(4750).Button, obj4);
   }
   items5[1] = tmp12Result;
   obj1[1] = items5;
-  const items6 = [closure_12(closure_5, obj1), callback(stateFromStores1(14966), { products: filteredAndSortedProducts, loadingCardsNum: 36, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground }), ];
+  const items6 = [closure_12(closure_5, obj1), callback(stateFromStores1(15030), { products: filteredAndSortedProducts, loadingCardsNum: 36, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground }), ];
   const obj5 = { style: feedFooterOrbImage.feedFooter, children: null };
   const obj6 = { variant: "heading-lg/bold", accessibilityRole: "header", children: null };
   const intl4 = tmp(1236).intl;
   obj6[2] = intl4.string(feedBlock(1236).t.Yr70c4);
-  const items7 = [callback(feedBlock(4734).Text, obj6), , ];
+  const items7 = [callback(feedBlock(4739).Text, obj6), , ];
   const obj7 = { onPress: goToShopAll, text: null, variant: "primary", size: "md" };
   const intl5 = tmp(1236).intl;
   obj7[1] = intl5.string(feedBlock(1236).t.AfrvRD);
-  items7[1] = callback(feedBlock(4745).Button, obj7);
+  items7[1] = callback(feedBlock(4750).Button, obj7);
   if (screen === constants.ORBS) {
     if (stateFromStores2) {
       const obj8 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
       const obj9 = { uri: null };
-      tmp5Result = tmp5(14974);
+      tmp5Result = tmp5(15038);
       obj9[0] = tmp5Result;
       obj8[0] = obj9;
       feedFooterOrbImage = feedFooterOrbImage.feedFooterOrbImage;
@@ -157,29 +150,29 @@ export default function _default(feedBlock) {
     } else {
       if (tmpResult.isAndroid()) {
         const obj10 = { url: null, autoplay: true, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-        tmp5Result = tmp5(8406);
-        obj10[0] = tmp5(14975);
+        tmp5Result = tmp5(8445);
+        obj10[0] = tmp5(15039);
         obj10[2] = feedFooterOrbImage.feedFooterOrbImage;
         tmp12Result = tmp12(tmp5Result, obj10);
       } else {
         const obj11 = { source: null, enableAnimation: true, resizeMode: "contain", style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
         const obj12 = { uri: null };
-        obj12[0] = tmp5(14975);
+        obj12[0] = tmp5(15039);
         obj11[0] = obj12;
         obj11[3] = feedFooterOrbImage.feedFooterOrbImage;
-        tmp12Result = tmp12(tmp5(5449), obj11);
-        const tmp5Result1 = tmp5(5449);
+        tmp12Result = tmp12(tmp5(5454), obj11);
+        const tmp5Result1 = tmp5(5454);
       }
       tmpResult = tmp(500);
     }
   } else {
     const obj13 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     if (stateFromStores) {
-      obj13[0] = tmp(14976);
+      obj13[0] = tmp(15040);
       obj13[1] = feedFooterOrbImage.feedFooterImage;
       let tmp18 = obj13;
     } else {
-      obj13[0] = tmp(14977);
+      obj13[0] = tmp(15041);
       obj13[1] = feedFooterOrbImage.feedFooterImage;
       tmp18 = obj13;
     }
@@ -188,6 +181,6 @@ export default function _default(feedBlock) {
     items6[2] = tmp13(tmp14, obj5);
     obj[1] = items6;
     obj[1] = tmp13(tmp14, obj);
-    return tmp12(tmp(7139).AnalyticsLocationProvider, obj);
+    return tmp12(tmp(7177).AnalyticsLocationProvider, obj);
   }
 };

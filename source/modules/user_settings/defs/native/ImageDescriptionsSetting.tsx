@@ -1,33 +1,36 @@
-// Module ID: 14770
-// Function ID: 14771
+// Module ID: 14834
+// Function ID: 14835
 // Name: onImageDescriptionSettingValueChange
-// Dependencies: [1304, 8198, 4066, 14771, 10669, 1236, 2]
+// Dependencies: [1304, 8238, 4069, 14835, 10708, 1236, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 14770 (onImageDescriptionSettingValueChange)
-import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
-import createToggle from "createToggle";
+// Module 14834 (onImageDescriptionSettingValueChange)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import UserSettingsText from "UserSettingsText" /* 14835 */;
+import closure_2 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {
-  let obj = require(14771) /* UserSettingsText */;
-  obj = { videoUploadQuality: CHANNEL_SIDEBAR_WIDTH.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: CHANNEL_SIDEBAR_WIDTH.lowQualityImageMode, dataSavingMode: CHANNEL_SIDEBAR_WIDTH.dataSavingMode };
+  let obj = UserSettingsText;
+  obj = { videoUploadQuality: closure_2.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: closure_2.lowQualityImageMode, dataSavingMode: closure_2.dataSavingMode };
   obj.setImageDescriptions(obj);
 }
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["w8j+yW"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["w8j+yW"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.CHAT,
   useValue: function useImageDescriptionSettingValue() {
-    const ViewImageDescriptions = require(4066) /* explicitContentFromProto */.ViewImageDescriptions;
+    const ViewImageDescriptions = explicitContentFromProto.ViewImageDescriptions;
     return ViewImageDescriptions.useSetting();
   },
   onValueChange: onImageDescriptionSettingValueChange
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/ImageDescriptionsSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/ImageDescriptionsSetting.tsx");
 
 export default createToggle;
 export { onImageDescriptionSettingValueChange };

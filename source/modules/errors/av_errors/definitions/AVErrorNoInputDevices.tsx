@@ -1,15 +1,17 @@
-// Module ID: 17056
-// Function ID: 17057
+// Module ID: 17149
+// Function ID: 17150
 // Name: AVErrorNoInputDevicesDefinition
-// Dependencies: [1391, 4497, 4539, 9668, 17055, 2]
+// Dependencies: [1391, 4501, 4544, 9707, 17148, 2]
 
-// Module 17056 (AVErrorNoInputDevicesDefinition)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createRTCConnection from "createRTCConnection";
+// Module 17149 (AVErrorNoInputDevicesDefinition)
+import mapped from "mapped" /* 9707 */;
+import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17148 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_4 from "createRTCConnection" /* 4544 */;
 
-const require = arg1;
-const result = require("createRTCConnection").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoInputDevices.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoInputDevices.tsx");
 
 export const AVErrorNoInputDevicesDefinition = {
   getActiveErrors(voiceState) {
@@ -31,8 +33,8 @@ export const AVErrorNoInputDevicesDefinition = {
         if (null != mediaSessionId.getMediaSessionId()) {
           if (!isGuildStageVoiceResult) {
             const obj = { type: null };
-            obj[0] = require(9668) /* mapped */.AVError.NO_INPUT_DEVICES;
-            const merged = Object.assign(require(17055) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
+            obj[0] = mapped.AVError.NO_INPUT_DEVICES;
+            const merged = Object.assign(getVoiceChannelErrorContext.getVoiceChannelErrorContext());
             const items = [obj];
             return items;
           }

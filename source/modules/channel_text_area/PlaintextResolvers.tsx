@@ -1,26 +1,29 @@
-// Module ID: 10259
-// Function ID: 10260
+// Module ID: 10298
+// Function ID: 10299
 // Name: resolvePlaintextInlineVoid
-// Dependencies: [32, 6727, 5251, 1391, 1980, 1990, 1983, 1910, 4021, 4030, 1922, 676, 1925, 7439, 4984, 11, 6714, 4034, 4038, 2]
+// Dependencies: [32, 6764, 5256, 1391, 1981, 1991, 1984, 1910, 4024, 4033, 1922, 676, 1925, 7477, 4989, 11, 6751, 4037, 4041, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 10259 (resolvePlaintextInlineVoid)
-import _slicedToArray from "_slicedToArray";
-import getEmojiToGroupId from "getEmojiToGroupId";
-import rebuild from "rebuild";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import comparator from "comparator";
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_8 } from "comparator";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { Permissions } from "ME";
-import { EmojiIntention } from "set";
+// Module 10298 (resolvePlaintextInlineVoid)
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
+import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4041 */;
+import createEmptyState from "createEmptyState" /* 7477 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "getEmojiToGroupId" /* 6764 */;
+import closure_5 from "rebuild" /* 5256 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "comparator" /* 1981 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_8 } from "comparator" /* 1981 */;
+import closure_9 from "trackCommunicationDisabled" /* 1991 */;
+import closure_10 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_11 from "createGuildRecordFromRust" /* 1910 */;
+import closure_12 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_13 from "markAllUserIdListsStale" /* 4033 */;
+import closure_14 from "mergeGuildAvatar" /* 1922 */;
+import { Permissions } from "ME" /* 676 */;
+import { EmojiIntention } from "set" /* 1925 */;
 
-const require = arg1;
+require = arg1;
 function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
   let obj = intention;
   if (intention == null) {
@@ -33,7 +36,7 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
     return (function resolveUserOrRole(arr, throwTypeErrorResult, id, arg3, arg4) {
       let tmp = callback3(arr.slice(1).split("#", 2), 2);
       const first = tmp[0];
-      let closure_1 = tmp3;
+      closure_1 = tmp3;
       let guild = null;
       if (null != throwTypeErrorResult) {
         guild = guild.getGuild(throwTypeErrorResult);
@@ -115,7 +118,7 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
       return null;
     })(text, throwTypeErrorResult, id, tmp, tmp2);
   } else if (":" === first) {
-    const EMOJI_NAME_RE = importDefault(4034).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = parseRawEmojiObjectDefault.EMOJI_NAME_RE;
     const match = EMOJI_NAME_RE.exec(text);
     let tmp7 = null;
     if (null != match) {
@@ -137,7 +140,7 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
           obj = { emojiId: null, name: null, animated: null, jumboable: false };
           obj[0] = obj2.id;
           if (!("require_colons" in obj2)) {
-            const obj1 = { type: "customEmoji", emoji: null, children: null };
+            obj1 = { type: "customEmoji", emoji: null, children: null };
             obj[1] = obj2.name;
             obj[2] = true === obj2.animated;
             obj1[1] = obj;
@@ -149,7 +152,7 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
           const _HermesInternal = HermesInternal;
           const combined = ":" + obj2.name + ":";
         }
-        tmp4Result = importDefault(4038);
+        tmp4Result = getEmojiUnavailableReasonDefault;
       }
     }
     return tmp7;
@@ -166,8 +169,8 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
             num[Symbol.iterator]();
             const obj2 = callback2(11);
           }
-          callback(4984).unescapeChannelName(arr.slice(2, arr.length - num));
-          const obj = callback(4984);
+          callback(4989).unescapeChannelName(arr.slice(2, arr.length - num));
+          const obj = callback(4989);
         }
         const substr = arr.slice(1);
       }
@@ -200,15 +203,15 @@ function matchesUser(arg0, arg1, username, requireExact) {
   }
   return tmp;
 }
-const result = require("rebuild").fileFinishedImporting("modules/channel_text_area/PlaintextResolvers.tsx");
+const result = require("set").fileFinishedImporting("modules/channel_text_area/PlaintextResolvers.tsx");
 
 export { resolvePlaintextInlineVoid };
 export const resolveApplicationCommandOption = function resolveApplicationCommandOption(text, throwTypeErrorResult, id, intention) {
   const tmp = resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention);
   let voidToOptionValueResult = null;
   if (null != tmp) {
-    voidToOptionValueResult = require(7439) /* createEmptyState */.voidToOptionValue(tmp);
-    const obj = require(7439) /* createEmptyState */;
+    voidToOptionValueResult = createEmptyState.voidToOptionValue(tmp);
+    const obj = createEmptyState;
   }
   return voidToOptionValueResult;
 };

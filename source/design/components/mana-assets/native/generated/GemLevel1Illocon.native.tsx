@@ -1,31 +1,31 @@
-// Module ID: 5810
-// Function ID: 5811
+// Module ID: 5841
+// Function ID: 5842
 // Name: GemLevel1Illocon
-// Dependencies: [21, 5449, 5811, 2]
+// Dependencies: [21, 5454, 5842, 2]
 // Exports: GemLevel1Illocon
 
-// Module 5810 (GemLevel1Illocon)
-import { jsx } from "jsxProd";
+// Module 5841 (GemLevel1Illocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5842 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel1Illocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel1Illocon.native.tsx");
 
 export const GemLevel1Illocon = function GemLevel1Illocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5811);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

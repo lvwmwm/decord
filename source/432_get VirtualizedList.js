@@ -4,5 +4,7 @@
 // Dependencies: [312]
 
 // Module 432 (get VirtualizedList)
+import get_VirtualizedListDefault from "get VirtualizedList" /* 312 */;
 
-export { VirtualizedSectionList as default } from "get VirtualizedList";
+
+export default get_VirtualizedListDefault.VirtualizedSectionList;

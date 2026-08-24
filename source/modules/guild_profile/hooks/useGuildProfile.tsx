@@ -1,30 +1,30 @@
-// Module ID: 8855
-// Function ID: 8856
+// Module ID: 8892
+// Function ID: 8893
 // Name: useGuildProfile
-// Dependencies: [5, 19, 8854, 589, 8856, 2]
+// Dependencies: [5, 19, 8891, 589, 8893, 2]
 // Exports: useGuildProfile
 
-// Module 8855 (useGuildProfile)
-import set from "set";
-import noop from "noop";
-import handleUpdateStart from "handleUpdateStart";
+// Module 8892 (useGuildProfile)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "handleUpdateStart" /* 8891 */;
 
 const require = arg1;
-const result = require("handleUpdateStart").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfile.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfile.tsx");
 
 export const useGuildProfile = function useGuildProfile(guildId) {
   const _require = guildId;
   let obj = _require(589);
-  const items = [handleUpdateStart];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getProfile(closure_0));
-  const items1 = [handleUpdateStart];
+  const items = [closure_4];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getProfile(closure_0));
+  const items1 = [closure_4];
   obj = { guildProfile: stateFromStores, fetchGuildProfile: null, fetchStatus: null };
-  const stateFromStores1 = _require(589).useStateFromStores(items1, () => outer1_4.getFetchStatus(closure_0));
+  const stateFromStores1 = _require(589).useStateFromStores(items1, () => closure_1_4.getFetchStatus(closure_0));
   const items2 = [guildId];
   obj[1] = React.useCallback(callback(() => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*() {
       if (c4 === 2) {
         c4 = 3;
@@ -37,7 +37,7 @@ export const useGuildProfile = function useGuildProfile(guildId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -52,8 +52,8 @@ export const useGuildProfile = function useGuildProfile(guildId) {
               obj[0] = arg1;
               return obj;
             } else {
-              let set = tmp5;
-              let closure_1 = tmp2;
+              closure_2 = tmp5;
+              closure_1 = tmp2;
               let flag;
               if (flag === undefined) {
                 flag = false;
@@ -68,11 +68,11 @@ export const useGuildProfile = function useGuildProfile(guildId) {
               throw arg1;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj2 = callback(outer1_1[4]);
+              let obj2 = callback(closure_1_1[4]);
               c3 = 2;
               c4 = 1;
               obj2 = { value: null, done: false };

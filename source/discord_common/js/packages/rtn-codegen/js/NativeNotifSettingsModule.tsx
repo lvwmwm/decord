@@ -1,12 +1,14 @@
-// Module ID: 13825
-// Function ID: 13826
+// Module ID: 13883
+// Function ID: 13884
 // Name: NativeNotifSettingsModule
 // Dependencies: [17, 2]
 
-// Module 13825 (NativeNotifSettingsModule)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 13883 (NativeNotifSettingsModule)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const value = TurboModuleRegistry.get("NativeNotifSettingsModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeNotifSettingsModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeNotifSettingsModule.tsx");
 
 export default value;

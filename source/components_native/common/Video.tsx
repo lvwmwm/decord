@@ -1,21 +1,19 @@
-// Module ID: 9018
-// Function ID: 9019
+// Module ID: 9055
+// Function ID: 9056
 // Name: VideoComponent
-// Dependencies: [32, 19, 17, 21, 4661, 712, 9019, 4104, 8992, 6548, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 9056, 4107, 9029, 6579, 1236, 2]
 // Exports: createVideoControls
 
-// Module 9018 (VideoComponent)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9055 (VideoComponent)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-let require = arg1;
+require = arg1;
 class VideoComponent {
   constructor(arg0) {
     flag = global.paused;
@@ -48,14 +46,14 @@ class VideoComponent {
     if (flag4 === undefined) {
       flag4 = true;
     }
-    active = undefined;
-    tmp = _slicedToArray(closure_3.useState("active" === AppState.currentState), 2);
-    active = tmp[1];
+    closure_1 = undefined;
+    tmp = closure_2(closure_3.useState("active" === AppState.currentState), 2);
+    closure_1 = tmp[1];
     items = [];
     items[0] = pauseWhileAppInactive;
     effect = closure_3.useEffect(() => {
       if (closure_0) {
-        closure_0 = outer1_7.addEventListener("change", (arg0) => {
+        closure_0 = closure_1_7.addEventListener("change", (arg0) => {
           callback("active" === arg0);
         });
         return () => {
@@ -95,10 +93,10 @@ class VideoComponent {
 let c3 = importAllResult;
 ({ TouchableWithoutFeedback: c4, View: c5, Image: closure_6, AppState: error } = get_ActivityIndicator);
 createCacheKey = { container: null, video: null };
-createCacheKey = { flex: 1, shadowColor: require("Themes").unsafe_rawColors.BLACK, shadowOpacity: 0.5, shadowOffset: { height: 1, width: 0 }, shadowRadius: 16, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey = { flex: 1, shadowColor: ThemesDefault.unsafe_rawColors.BLACK, shadowOpacity: 0.5, shadowOffset: { height: 1, width: 0 }, shadowRadius: 16, backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
-createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+createCacheKey[1] = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
+let closure_9 = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
 const PureComponent = importAllResult.PureComponent;
 class Video extends PureComponent {
   constructor() {
@@ -118,10 +116,6 @@ class Video extends PureComponent {
       return tmp;
     };
     applyArgumentsResult.handleOpenFullScreen = function handleOpenFullScreen() {
-      let height;
-      let onPress;
-      let src;
-      let width;
       const props = applyArgumentsResult.props;
       ({ src, onPress } = props);
       ({ width, height } = props);
@@ -130,7 +124,7 @@ class Video extends PureComponent {
       }
       const current = applyArgumentsResult.ref.current;
       if (null != current) {
-        let obj = applyArgumentsResult(outer1_1[8]);
+        let obj = applyArgumentsResult(closure_1_1[8]);
         obj = { initialSources: null, originViewOrOriginLayout: null };
         obj = {};
         const merged = Object.assign(src);
@@ -148,7 +142,7 @@ class Video extends PureComponent {
 const prototype = Video.prototype;
 prototype["componentDidMount"] = function componentDidMount() {
   const self = this;
-  this._renderTask = self(6548).runAfterInteractions(() => {
+  this._renderTask = self(6579).runAfterInteractions(() => {
     self.setState({ postponeRender: false });
   });
 };
@@ -159,8 +153,6 @@ prototype["componentWillUnmount"] = function componentWillUnmount() {
   }
 };
 prototype["renderVideo"] = function renderVideo() {
-  let resizeMode;
-  let src;
   ({ src, resizeMode } = this.props);
   if ("videoURI" in src) {
     if ("" !== src.videoURI) {
@@ -215,7 +207,7 @@ prototype["render"] = function render() {
   const props = this.props;
   let accessibilityLabel = props.accessibilityLabel;
   let obj = { ref: this.ref, style: null, accessible: null, accessibilityLabel: null, children: null };
-  const items = [createCacheKey(this.context).container, { width: props.width, height: props.height }, props.style];
+  const items = [callback2(this.context).container, { width: props.width, height: props.height }, props.style];
   obj[1] = items;
   obj[2] = null != accessibilityLabel;
   obj[3] = accessibilityLabel;
@@ -225,8 +217,8 @@ prototype["render"] = function render() {
       let tmp3Result = tmp3(tmp4, obj);
       if (tmp) {
         if (accessibilityLabel == null) {
-          const intl = require(1236) /* getSystemLocale */.intl;
-          accessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.OIDkcp);
+          const intl = getSystemLocale.intl;
+          accessibilityLabel = intl.string(getSystemLocale.t.OIDkcp);
         }
         obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
         obj[1] = accessibilityLabel;
@@ -245,17 +237,17 @@ prototype["render"] = function render() {
   }
 };
 Video.contextType = require("ManaContext").ThemeContext;
-const obj1 = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
-const result = require("get ActivityIndicator").fileFinishedImporting("components_native/common/Video.tsx");
+const obj1 = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
+const result = require("set").fileFinishedImporting("components_native/common/Video.tsx");
 
 export default Video;
 export const createVideoControls = function createVideoControls(NOOP) {
-  let closure_0 = NOOP;
+  closure_0 = NOOP;
   const ref = importAllResult.createRef();
-  let c5 = 0;
-  let c6 = 0;
-  let c7 = 0;
-  let c8 = false;
+  c5 = 0;
+  c6 = 0;
+  c7 = 0;
+  c8 = false;
   obj = {
     seek(arg0) {
       const current = ref.current;
@@ -270,20 +262,20 @@ export const createVideoControls = function createVideoControls(NOOP) {
       NOOP(arg0);
       if (closure_8 !== arg0) {
         closure_8 = arg0;
-        if (_slicedToArray != null) {
+        if (closure_2 != null) {
           tmp2(closure_8);
         }
       }
     },
     useSubscribe(arg0, arg1, arg2) {
-      let closure_1 = arg0;
-      let _slicedToArray = arg1;
-      let closure_3 = arg2;
-      const layoutEffect = outer1_3.useLayoutEffect(() => {
+      closure_1 = arg0;
+      closure_2 = arg1;
+      closure_3 = arg2;
+      const layoutEffect = closure_1_3.useLayoutEffect(() => {
         if (closure_1 != null) {
           tmp(closure_5, closure_6);
         }
-        if (_slicedToArray != null) {
+        if (closure_2 != null) {
           tmp5(closure_8);
         }
         if (closure_3 != null) {
@@ -296,16 +288,14 @@ export const createVideoControls = function createVideoControls(NOOP) {
   obj = {
     ref,
     onPlaybackRateChange(nativeEvent) {
-      if (c8 !== 0 === nativeEvent.playbackRate) {
-        c8 = tmp;
-        if (_slicedToArray != null) {
-          tmp2(c8);
+      if (closure_8 !== 0 === nativeEvent.playbackRate) {
+        closure_8 = tmp;
+        if (closure_2 != null) {
+          tmp2(closure_8);
         }
       }
     },
     onProgress(arg0) {
-      let c5;
-      let c6;
       ({ currentTime: c5, seekableDuration: c6 } = arg0);
       if (closure_1 != null) {
         tmp(c5, c6);

@@ -1,23 +1,25 @@
-// Module ID: 14727
-// Function ID: 14728
+// Module ID: 14791
+// Function ID: 14792
 // Name: radio
-// Dependencies: [19, 8198, 4069, 4066, 1236, 10669, 2]
+// Dependencies: [19, 8238, 4072, 4069, 1236, 10708, 2]
 
-// Module 14727 (radio)
-import noop from "noop";
-import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID";
-import createToggle from "createToggle";
+// Module 14791 (radio)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import closure_2 from "noop" /* 19 */;
+import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID" /* 4072 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.R5nQkS);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.R5nQkS);
   },
   parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
   useValue: require("explicitContentFromProto").AnimateStickers.useSetting,
   onValueChange: function onAnimateStickerSettingValueChange(arg0) {
-    const AnimateStickers = require(4066) /* explicitContentFromProto */.AnimateStickers;
+    const AnimateStickers = explicitContentFromProto.AnimateStickers;
     AnimateStickers.updateSetting(Number(arg0));
   },
   useOptions: function useAnimateStickerSettingOptions() {
@@ -42,6 +44,6 @@ createToggle = {
   }
 };
 createToggle = createToggle.createRadio(createToggle);
-const result = require("STICKER_PICKER_TAB_PANEL_ID").fileFinishedImporting("modules/user_settings/defs/native/AnimateStickersSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AnimateStickersSetting.tsx");
 
 export default createToggle;

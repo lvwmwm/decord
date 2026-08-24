@@ -1,38 +1,32 @@
-// Module ID: 14947
-// Function ID: 14948
+// Module ID: 15011
+// Function ID: 15012
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: [19, 17, 1922, 676, 1924, 21, 4661, 712, 7139, 7159, 589, 8390, 8369, 8417, 5313, 14684, 14685, 8377, 1933, 698, 14002, 2]
+// Dependencies: [19, 17, 1922, 676, 1924, 21, 4668, 712, 7177, 7197, 589, 8429, 8408, 8456, 5318, 14752, 14753, 8416, 1933, 698, 14070, 2]
 // Exports: default
 
-// Module 14947 (ProfileCustomizationTryItOutSettingScreen)
-import expandEventProperties from "expandEventProperties";
-import get_ActivityIndicator from "_saveProfileChanges";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { PremiumUpsellTypes } from "GuildFeatures";
-import { jsx } from "set";
-import createCacheKey from "createCacheKey";
+// Module 15011 (ProfileCustomizationTryItOutSettingScreen)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c4;
-let c5;
-let error;
-let metroImportAll;
 const require = arg1;
 ({ View: c4, ActivityIndicator: c5, StyleSheet } = get_ActivityIndicator);
-({ AnalyticEvents: error, AnalyticsPages: metroImportAll } = ME);
+({ AnalyticEvents: error, AnalyticsPages: closure_8 } = ME);
 createCacheKey = { container: null, activityIndicator: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { height: "100%", alignItems: "center", justifyContent: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreen.tsx");
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreen.tsx");
 
 export default function ProfileCustomizationTryItOutSettingScreen() {
-  let analyticsLocations;
-  let sourceAnalyticsLocations;
-  let tmp = createCacheKey();
+  let tmp = callback();
   const tmp2 = stateFromStores;
   const tmp4 = stateFromStores(categories[8]);
   ({ analyticsLocations, sourceAnalyticsLocations } = stateFromStores(categories[8])(stateFromStores(categories[9]).USER_SETTINGS_TRY_OUT_PREMIUM));
@@ -61,7 +55,7 @@ export default function ProfileCustomizationTryItOutSettingScreen() {
       const obj = sourceAnalyticsLocations(categories[14]);
     }
   }, items2);
-  let obj1 = sourceAnalyticsLocations(categories[15]);
+  obj1 = sourceAnalyticsLocations(categories[15]);
   const visibleFontOrder = obj1.useVisibleFontOrder();
   let obj2 = sourceAnalyticsLocations(categories[16]);
   visibleEffectOrder = obj2.useVisibleEffectOrder();
@@ -73,9 +67,9 @@ export default function ProfileCustomizationTryItOutSettingScreen() {
   const items4 = [sourceAnalyticsLocations];
   const effect3 = pendingAvatarDecoration.useEffect(() => {
     let obj = stateFromStores(categories[19]);
-    obj = { type: outer1_9.PREMIUM_PROFILE_TRY_IT_OUT, location: obj, location_stack: sourceAnalyticsLocations };
-    obj = { page: outer1_8.USER_SETTINGS };
-    obj.track(outer1_7.PREMIUM_UPSELL_VIEWED, obj);
+    obj = { type: closure_1_9.PREMIUM_PROFILE_TRY_IT_OUT, location: obj, location_stack: sourceAnalyticsLocations };
+    obj = { page: closure_1_8.USER_SETTINGS };
+    obj.track(closure_1_7.PREMIUM_UPSELL_VIEWED, obj);
   }, items4);
   if (null == stateFromStores) {
     return null;

@@ -1,19 +1,19 @@
-// Module ID: 16001
-// Function ID: 16002
+// Module ID: 16098
+// Function ID: 16099
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 4030, 1922, 9081, 676, 21, 7139, 7159, 589, 15999, 8929, 9641, 2]
+// Dependencies: [19, 4033, 1922, 9118, 676, 21, 7177, 7197, 589, 16096, 8966, 9680, 2]
 // Exports: default
 
-// Module 16001 (IgnoredUserRequestsScreen)
-import noop from "noop";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { UserRowModes } from "UserRowModes";
-import { RelationshipTypes } from "ME";
-import { jsx } from "jsxProd";
+// Module 16098 (IgnoredUserRequestsScreen)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "markAllUserIdListsStale" /* 4033 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import { UserRowModes } from "UserRowModes" /* 9118 */;
+import { RelationshipTypes } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/IgnoredUserRequestsScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/IgnoredUserRequestsScreen.tsx");
 
 export default function IgnoredUserRequestsScreen(navigation) {
   navigation = navigation.navigation;
@@ -23,12 +23,12 @@ export default function IgnoredUserRequestsScreen(navigation) {
   let callback;
   analyticsLocations = stateFromStoresArray(stateFromStores[6])(stateFromStoresArray(stateFromStores[7]).FRIEND_REQUESTS).analyticsLocations;
   let obj = analyticsLocations(stateFromStores[8]);
-  const items = [markAllUserIdListsStale];
+  const items = [closure_4];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => analyticsLocations(stateFromStores[9]).getPendingRelationshipIds(mutableRelationships.getMutableRelationships()).ignoredUserIds);
   const tmp = stateFromStores;
   const tmp2 = stateFromStoresArray(stateFromStores[6]);
   const tmp3 = analyticsLocations;
-  const items1 = [mergeGuildAvatar];
+  const items1 = [closure_5];
   const items2 = [stateFromStoresArray];
   stateFromStores = analyticsLocations(stateFromStores[8]).useStateFromStores(items1, () => {
     const mapped = stateFromStoresArray.map((arg0) => user.getUser(arg0));

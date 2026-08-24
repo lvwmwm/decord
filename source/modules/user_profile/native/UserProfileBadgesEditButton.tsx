@@ -1,46 +1,41 @@
-// Module ID: 14039
-// Function ID: 14040
+// Module ID: 14107
+// Function ID: 14108
 // Name: UserProfileBadgesEditButton
-// Dependencies: [19, 17, 8931, 21, 4661, 712, 14024, 7139, 4342, 14040, 2007, 14044, 1236, 14036, 4734, 14041, 2]
+// Dependencies: [19, 17, 8968, 21, 4668, 712, 14092, 7177, 4346, 14108, 2008, 14112, 1236, 14104, 4739, 14109, 2]
 // Exports: default
 
-// Module 14039 (UserProfileBadgesEditButton)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { getBadgeAssetFromCDN } from "USER_PROFILE_TOOLTIP_DELAY";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14107 (UserProfileBadgesEditButton)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { getBadgeAssetFromCDN } from "USER_PROFILE_TOOLTIP_DELAY" /* 8968 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let error;
-let metroImportAll;
 const require = arg1;
 ({ Image: c4, View: c5 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { content: null, badge: null, hideBadgesLink: null, overflowCount: null };
-createCacheKey = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { width: 32, height: 32 };
 createCacheKey[2] = { marginLeft: "auto" };
 createCacheKey[3] = { marginLeft: 2 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("USER_PROFILE_TOOLTIP_DELAY").fileFinishedImporting("modules/user_profile/native/UserProfileBadgesEditButton.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileBadgesEditButton.tsx");
 
 export default function UserProfileBadgesEditButton(arg0) {
-  let badges;
-  let catalogBadges;
   ({ badges, catalogBadges } = arg0);
   let _require;
   let analyticsLocations;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   _require = tmp;
-  let obj = _require(14024);
+  let obj = _require(14092);
   const isBadgeManagementEnabled = obj.useIsBadgeManagementEnabled({ location: "UserProfileBadgesEditButton" });
-  analyticsLocations = analyticsLocations(7139)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7177)().analyticsLocations;
   [][0] = analyticsLocations;
   const callback = React.useCallback(() => {
-    analyticsLocations(paths[8]).openLazy(_undefined(paths[10])(paths[9], paths.paths), "Hide Badges", {});
+    analyticsLocations(paths[8]).openLazy(lib(paths[10])(paths[9], paths.paths), "Hide Badges", {});
   }, []);
   if (isBadgeManagementEnabled) {
     let length;
@@ -74,25 +69,25 @@ export default function UserProfileBadgesEditButton(arg0) {
     obj = { label: null, labelTrailing: null, content: null, accessibilityValue: null, onPress: null };
     const intl2 = tmp2(1236).intl;
     obj[0] = intl2.string(tmp2(1236).t.l6w3Vj);
-    const obj1 = { role: "button", variant: "text-sm/semibold", color: "text-link", style: null, onPress: null, children: null };
+    obj1 = { role: "button", variant: "text-sm/semibold", color: "text-link", style: null, onPress: null, children: null };
     obj1[3] = tmp.hideBadgesLink;
     obj1[4] = callback;
     const intl3 = tmp2(1236).intl;
     obj1[5] = intl3.string(tmp2(1236).t.XMDvpN);
-    obj[1] = callback(tmp2(4734).Text, obj1);
+    obj[1] = callback(tmp2(4739).Text, obj1);
     const obj2 = { style: null, "aria-hidden": true, children: null };
     obj2[0] = tmp.content;
     if (null != substr1) {
-      let mapped1 = substr1.map((badge) => outer1_7(analyticsLocations(outer1_2[15]), { badge, size: 32, style: _undefined.badge }, badge.badge_id));
+      let mapped1 = substr1.map((badge) => closure_1_7(analyticsLocations(closure_1_2[15]), { badge, size: 32, style: lib.badge }, badge.badge_id));
     } else {
       mapped1 = substr.map((iconSrc) => {
-        const obj = { style: _undefined.badge, source: null };
+        const obj = { style: lib.badge, source: null };
         iconSrc = iconSrc.iconSrc;
         if (iconSrc == null) {
-          iconSrc = outer1_6(iconSrc.icon);
+          iconSrc = closure_1_6(iconSrc.icon);
         }
         obj[1] = { uri: iconSrc };
-        return outer1_7(outer1_4, obj, iconSrc.id);
+        return closure_1_7(closure_1_4, obj, iconSrc.id);
       });
     }
     const items = [mapped1, ];
@@ -102,7 +97,7 @@ export default function UserProfileBadgesEditButton(arg0) {
       obj3[2] = tmp.overflowCount;
       const _HermesInternal = HermesInternal;
       obj3[3] = "+" + diff;
-      tmp13Result = tmp13(tmp2(4734).Text, obj3);
+      tmp13Result = tmp13(tmp2(4739).Text, obj3);
     }
     items[1] = tmp13Result;
     obj2[2] = items;
@@ -115,7 +110,7 @@ export default function UserProfileBadgesEditButton(arg0) {
     }
     obj[3] = tmp18;
     obj[4] = tmp6;
-    return callback(tmp2(14036).UserProfileEditFormButton, obj);
+    return callback(tmp2(14104).UserProfileEditFormButton, obj);
   } else {
     return null;
   }

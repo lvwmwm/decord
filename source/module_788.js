@@ -3,5 +3,7 @@
 // Dependencies: [609]
 
 // Module 788
+import _mod609 from "module_609" /* 609 */;
 
-export { Uint8Array as default } from "module_609";
+
+export default _mod609.Uint8Array;

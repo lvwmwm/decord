@@ -1,15 +1,13 @@
-// Module ID: 12682
-// Function ID: 12683
+// Module ID: 12736
+// Function ID: 12737
 // Name: apexExperiment
 // Dependencies: [1910, 676, 1472, 589, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled, useIsConversationDebugUXEnabled, useIsTopicalNavEnabled
 
-// Module 12682 (apexExperiment)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GuildFeatures } from "ME";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
+// Module 12736 (apexExperiment)
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import { GuildFeatures } from "ME" /* 676 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const require = arg1;
 ApexExperiment = { 1: null, 2: { enabled: false } };
@@ -21,7 +19,7 @@ const apexExperiment1 = ApexExperiment.createApexExperiment({ kind: "guild", nam
 const obj1 = { 1: null };
 obj1[1] = { enabled: true };
 const apexExperiment2 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-04-topical-navigation-staff-control", defaultConfig: { enabled: false }, variations: obj1 });
-const result = require("ApexExperiment").fileFinishedImporting("modules/conversations/ConversationExperiments.tsx");
+const result = require("set").fileFinishedImporting("modules/conversations/ConversationExperiments.tsx");
 
 export const ConversationHighlightingExperiment = apexExperiment;
 export const TopicalNavGuildExperiment = apexExperiment1;
@@ -103,14 +101,14 @@ export const isTopicalNavEnabled = function isTopicalNavEnabled(c1, fetch_channe
 export const useIsConversationDebugUXEnabled = function useIsConversationDebugUXEnabled(arg0, location) {
   const CONVERSATIONS_EXTRACTION_PROCESSING = GuildFeatures.CONVERSATIONS_EXTRACTION_PROCESSING;
   const _require = arg0;
-  const items = [createGuildRecordFromRust];
+  const items = [closure_2];
   const items1 = [arg0, CONVERSATIONS_EXTRACTION_PROCESSING];
   const obj = { location };
   const obj2 = _require(CONVERSATIONS_EXTRACTION_PROCESSING[3]);
   return _require(CONVERSATIONS_EXTRACTION_PROCESSING[3]).useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
-      const guild = outer1_2.getGuild(tmp);
+      const guild = closure_1_2.getGuild(tmp);
       let flag;
       if (guild != null) {
         const features = guild.features;
@@ -129,7 +127,7 @@ export const useIsTopicalNavEnabled = function useIsTopicalNavEnabled(guild_id, 
   const CONVERSATIONS_EXTRACTION_PROCESSING = GuildFeatures.CONVERSATIONS_EXTRACTION_PROCESSING;
   let _require = guild_id;
   let SUMMARIES_ENABLED_GA = CONVERSATIONS_EXTRACTION_PROCESSING;
-  const items = [createGuildRecordFromRust];
+  const items = [closure_2];
   const items1 = [guild_id, CONVERSATIONS_EXTRACTION_PROCESSING];
   const obj2 = _require(SUMMARIES_ENABLED_GA[3]);
   obj = { location: channel_header };
@@ -142,12 +140,12 @@ export const useIsTopicalNavEnabled = function useIsTopicalNavEnabled(guild_id, 
   _require = guild_id;
   SUMMARIES_ENABLED_GA = CONVERSATIONS_EXTRACTION_PROCESSING2;
   let tmp2Result = tmp2(tmp3[3]);
-  const items2 = [createGuildRecordFromRust];
+  const items2 = [closure_2];
   const items3 = [guild_id, CONVERSATIONS_EXTRACTION_PROCESSING2];
   let enabled = tmp2Result.useStateFromStores(items2, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
-      const guild = outer1_2.getGuild(tmp);
+      const guild = closure_1_2.getGuild(tmp);
       let flag;
       if (guild != null) {
         const features = guild.features;
@@ -163,7 +161,7 @@ export const useIsTopicalNavEnabled = function useIsTopicalNavEnabled(guild_id, 
   SUMMARIES_ENABLED_GA = tmp.SUMMARIES_ENABLED_GA;
   _require = guild_id;
   tmp2Result = tmp2(tmp3[3]);
-  [][0] = createGuildRecordFromRust;
+  [][0] = closure_2;
   const items4 = [guild_id, SUMMARIES_ENABLED_GA];
   let tmp9 = null != guild_id;
   if (tmp9) {

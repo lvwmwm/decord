@@ -1,19 +1,19 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 16038
+// Function ID: 16039
 // Name: useAutoSearchGuildChannelTab
-// Dependencies: [19, 11524, 11511, 11534, 12, 11509, 2]
+// Dependencies: [19, 11573, 11560, 11583, 12, 11558, 2]
 // Exports: useAutoSearchGuildChannelTab
 
-// Module 15941 (useAutoSearchGuildChannelTab)
-import noop from "noop";
-import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_4 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME";
+// Module 16038 (useAutoSearchGuildChannelTab)
+import closure_3 from "noop" /* 19 */;
+import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_4 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 11573 */;
 
 const require = arg1;
-let result = require("SearchTokenTypes").fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
+let result = require("set").fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
 
 export const useAutoSearchGuildChannelTab = function useAutoSearchGuildChannelTab(searchContext, arg1) {
-  let closure_0 = searchContext;
-  let closure_1 = arg1;
+  closure_0 = searchContext;
+  closure_1 = arg1;
   const items = [searchContext];
   const callback = React.useCallback((arg0) => {
     let obj = searchContext(callback[2]);
@@ -37,12 +37,12 @@ export const useAutoSearchGuildChannelTab = function useAutoSearchGuildChannelTa
   const effect1 = React.useEffect(() => {
     if (!callback) {
       const obj = searchContext(callback[4]);
-      const debounceResult = searchContext(callback[4]).debounce(callback, outer1_4);
+      const debounceResult = searchContext(callback[4]).debounce(callback, closure_1_4);
       return callback(callback[5]).subscribeTextInputValue(searchContext, debounceResult, true);
     }
   }, items2);
   const items3 = [searchContext];
   const effect2 = React.useEffect(() => () => {
-    const result = outer1_1(outer1_2[3]).cleanupGuildChannelTab(closure_0);
+    const result = closure_1_1(closure_1_2[3]).cleanupGuildChannelTab(closure_0);
   }, items3);
 };

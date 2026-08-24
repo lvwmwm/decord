@@ -1,24 +1,21 @@
-// Module ID: 9316
-// Function ID: 9317
+// Module ID: 9353
+// Function ID: 9354
 // Name: Coachmark
-// Dependencies: [109, 32, 19, 17, 21, 4115, 4661, 712, 9273, 4750, 8019, 1367, 4731, 4734, 4745, 1236, 6368, 8811, 8018, 500, 4104, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4119, 4668, 712, 9310, 4755, 8058, 1367, 4736, 4739, 4750, 1236, 6399, 8848, 8057, 500, 4107, 2]
 // Exports: CoachmarkContainer
 
-// Module 9316 (Coachmark)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import _slicedToArray from "_slicedToArray";
-import set from "set";
-import get_ActivityIndicator from "TwinButtons";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4115";
+// Module 9353 (Coachmark)
+import ThemesDefault from "Themes" /* 712 */;
+import ManaContext from "ManaContext" /* 4107 */;
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import closure_5 from "_slicedToArray" /* 32 */;
+import closure_6 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "module_4119" /* 4119 */;
 
-let Pressable;
-let c10;
-let closure_12;
-let error;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 class Coachmark {
   constructor(arg0) {
     ({ targetMeasurements, surfaceMeasurements, offsetY } = global);
@@ -31,43 +28,43 @@ class Coachmark {
     imgSource = global.imgSource;
     ({ position, onDismiss, buttonLabel, buttonVariant, buttonIcon, onButtonPress, gradientColor, experimental_withBlurBackground, renderImgComponent } = global);
     ({ buttonShiny, enterExitAnimatedStyles } = global);
-    tmp = createAnimatedComponent();
-    Cursor = tmp;
-    ref = set.useRef(null);
-    Cursor = ref;
-    tmp3 = Cursor(set.useState(null), 2);
-    [tmp4, Cursor] = tmp3;
+    tmp = closure_14();
+    closure_3 = tmp;
+    ref = closure_6.useRef(null);
+    closure_4 = ref;
+    tmp3 = closure_5(closure_6.useState(null), 2);
+    [tmp4, closure_5] = tmp3;
     tmp5 = imgSource;
     tmp6 = renderImgComponent;
     tmp7 = require("useTooltipPosition")(tmp4, surfaceMeasurements, targetMeasurements, position, -8 + num);
     adjustmentX = tmp7.adjustmentX;
     tmp8 = graphic;
     ({ tooltipX, tooltipY } = tmp7);
-    obj = require("module_4115");
-    sharedValue = require("_objectWithoutProperties");
-    set = sharedValue;
+    obj = require("module_4119");
+    sharedValue = require("module_0");
+    closure_6 = sharedValue;
     items = [];
     items[0] = sharedValue;
     items1 = [];
     items1[0] = sharedValue;
-    callback = set.useCallback(() => {
+    callback = closure_6.useCallback(() => {
       const result = sharedValue.set(1);
     }, items);
-    callback1 = set.useCallback(() => {
+    callback1 = closure_6.useCallback(() => {
       const result = sharedValue.set(0);
     }, items1);
     obj2 = require("styleProperties");
     buttonPressAnimationProps = obj2.useButtonPressAnimationProps(sharedValue);
-    tmp13 = Cursor(buttonPressAnimationProps, Cursor);
+    tmp13 = closure_4(buttonPressAnimationProps, closure_3);
     items2 = [, , , ];
     items2[0] = graphic;
     items2[1] = imgSource;
     items2[2] = renderImgComponent;
     items2[3] = tmp;
-    memo = set.useMemo(() => {
+    memo = closure_6.useMemo(() => {
       if (null != graphic) {
         let obj = { style: null, children: null };
-        const items = [tmp.bottomMargin];
+        const items = [closure_3.bottomMargin];
         obj[0] = items;
         obj = {};
         const merged = Object.assign(tmp);
@@ -75,11 +72,11 @@ class Coachmark {
         if (str == null) {
           str = "1/1";
         }
-        const obj1 = { height: null, width: "auto" };
-        obj1[0] = outer1_15[str];
+        obj1 = { height: null, width: "auto" };
+        obj1[0] = closure_1_15[str];
         obj.style = obj1;
-        obj[1] = outer1_10(graphic(renderImgComponent[10]).Graphic, obj);
-        return outer1_10(outer1_7, obj);
+        obj[1] = closure_1_10(graphic(renderImgComponent[10]).Graphic, obj);
+        return closure_1_10(closure_1_7, obj);
       } else {
         let tmp2 = null;
         if (null != renderImgComponent) {
@@ -88,15 +85,15 @@ class Coachmark {
         if (null != imgSource) {
           obj = { source: null, style: null };
           obj[0] = tmp3;
-          obj[1] = tmp.image;
-          tmp2 = outer1_10(outer1_9, obj);
+          obj[1] = closure_3.image;
+          tmp2 = closure_1_10(closure_1_9, obj);
         }
         let tmp7 = null;
         if (null != tmp2) {
           const obj2 = { style: null, children: null };
-          obj2[0] = tmp.bottomMargin;
+          obj2[0] = closure_3.bottomMargin;
           obj2[1] = tmp2;
-          tmp7 = outer1_10(outer1_7, obj2);
+          tmp7 = closure_1_10(closure_1_7, obj2);
         }
         return tmp7;
       }
@@ -271,7 +268,7 @@ class Coachmark {
     items11 = [, , ];
     items11[0] = tmp20Result2;
     obj17 = {};
-    tmp31 = createAnimatedComponent;
+    tmp31 = closure_13;
     merged = Object.assign(tmp13);
     obj17.onAccessibilityEscape = onDismiss;
     obj17.accessible = false;
@@ -304,8 +301,6 @@ class Coachmark {
   }
 }
 function Cursor(arg0) {
-  let adjustmentX;
-  let position;
   ({ position, adjustmentX } = arg0);
   const tmp = callback4();
   let str = "column";
@@ -325,43 +320,43 @@ let closure_3 = ["style"];
 ({ View: error, Pressable } = get_ActivityIndicator);
 const Image = get_ActivityIndicator.Image;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = jsxProd);
-let closure_13 = require("module_4115").createAnimatedComponent(Pressable);
+let closure_13 = importDefaultResult.createAnimatedComponent(Pressable);
 let obj = { container: { position: "absolute", alignItems: "center" }, shadow: null, body: null, textGap: null, textOnlyPadding: null, bodyBgColor: null, gradient: null, bodyContainer: null, center: null, buttonSpacing: null, text: null, cursorContainer: null, cursorHead: null, cursorSpine: null, image: null, bottomMargin: null, closeButton: null };
 obj = {};
-let merged = Object.assign(require("Themes").shadows.SHADOW_BUTTON_OVERLAY);
+let merged = Object.assign(ThemesDefault.shadows.SHADOW_BUTTON_OVERLAY);
 obj[1] = obj;
-createCacheKey = { width: require("Themes").modules.mobile.COACHMARK_BODY_WIDTH, borderRadius: require("Themes").radii.lg, overflow: "hidden", zIndex: 1 };
+createCacheKey = { width: ThemesDefault.modules.mobile.COACHMARK_BODY_WIDTH, borderRadius: ThemesDefault.radii.lg, overflow: "hidden", zIndex: 1 };
 obj[2] = createCacheKey;
 obj[3] = { gap: 4 };
-obj[4] = { paddingHorizontal: require("Themes").space.PX_24 };
-let obj2 = { paddingHorizontal: require("Themes").space.PX_24 };
-obj[5] = { borderWidth: 1, borderColor: require("Themes").colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: require("Themes").colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg };
-let obj3 = { borderWidth: 1, borderColor: require("Themes").colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: require("Themes").colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg };
-obj[6] = { borderRadius: require("Themes").radii.lg, overflow: "hidden" };
-let obj4 = { borderRadius: require("Themes").radii.lg, overflow: "hidden" };
-obj[7] = { padding: require("Themes").space.PX_16, alignItems: "center", justifyContent: "center" };
+obj[4] = { paddingHorizontal: ThemesDefault.space.PX_24 };
+let obj2 = { paddingHorizontal: ThemesDefault.space.PX_24 };
+obj[5] = { borderWidth: 1, borderColor: ThemesDefault.colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: ThemesDefault.colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: ThemesDefault.radii.lg };
+let obj3 = { borderWidth: 1, borderColor: ThemesDefault.colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: ThemesDefault.colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: ThemesDefault.radii.lg };
+obj[6] = { borderRadius: ThemesDefault.radii.lg, overflow: "hidden" };
+let obj4 = { borderRadius: ThemesDefault.radii.lg, overflow: "hidden" };
+obj[7] = { padding: ThemesDefault.space.PX_16, alignItems: "center", justifyContent: "center" };
 obj[8] = { alignItems: "center", justifyContent: "center" };
-let obj5 = { padding: require("Themes").space.PX_16, alignItems: "center", justifyContent: "center" };
-obj[9] = { height: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
+let obj5 = { padding: ThemesDefault.space.PX_16, alignItems: "center", justifyContent: "center" };
+obj[9] = { height: ThemesDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
 obj[10] = { maxWidth: 200, textAlign: "center" };
 obj[11] = { alignItems: "center", zIndex: 0 };
-let obj6 = { height: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
-obj[12] = { height: 8, width: 8, borderRadius: require("Themes").radii.xs, borderWidth: 2, backgroundColor: "transparent", borderColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
-let obj7 = { height: 8, width: 8, borderRadius: require("Themes").radii.xs, borderWidth: 2, backgroundColor: "transparent", borderColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
-obj[13] = { width: 2, height: 16, backgroundColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+let obj6 = { height: ThemesDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
+obj[12] = { height: 8, width: 8, borderRadius: ThemesDefault.radii.xs, borderWidth: 2, backgroundColor: "transparent", borderColor: ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE };
+let obj7 = { height: 8, width: 8, borderRadius: ThemesDefault.radii.xs, borderWidth: 2, backgroundColor: "transparent", borderColor: ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE };
+obj[13] = { width: 2, height: 16, backgroundColor: ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj[14] = { height: 40, width: 40 };
-let obj8 = { width: 2, height: 16, backgroundColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
-obj[15] = { marginBottom: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
-let obj9 = { marginBottom: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
-obj[16] = { position: "absolute", top: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING, right: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
+let obj8 = { width: 2, height: 16, backgroundColor: ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE };
+obj[15] = { marginBottom: ThemesDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
+let obj9 = { marginBottom: ThemesDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
+obj[16] = { position: "absolute", top: ThemesDefault.modules.mobile.COACHMARK_BUTTON_SPACING, right: ThemesDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
 let closure_14 = createCacheKey.createStyles(obj);
 let closure_15 = { "21/9": 90, "16/9": 90, "6/4": 60, "2/1": 40, "1/1": 40 };
-let obj10 = { position: "absolute", top: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING, right: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
-let result = require("noop").fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");
+let obj10 = { position: "absolute", top: ThemesDefault.modules.mobile.COACHMARK_BUTTON_SPACING, right: ThemesDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
+let result = require("set").fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");
 
 export { Coachmark };
 export const CoachmarkContainer = function CoachmarkContainer(experimental_withBlurBackground) {
-  let obj = require(4104) /* ManaContext */;
+  let obj = ManaContext;
   let str = "dark";
   if (!experimental_withBlurBackground.experimental_withBlurBackground) {
     str = obj.useThemeContext().theme;
@@ -370,5 +365,5 @@ export const CoachmarkContainer = function CoachmarkContainer(experimental_withB
   obj = {};
   const merged = Object.assign(experimental_withBlurBackground);
   obj[1] = callback2(Coachmark, obj);
-  return callback2(require(4104) /* ManaContext */.ThemeContextProvider, obj);
+  return callback2(ManaContext.ThemeContextProvider, obj);
 };

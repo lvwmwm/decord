@@ -1,15 +1,16 @@
-// Module ID: 16725
-// Function ID: 16726
+// Module ID: 16818
+// Function ID: 16819
 // Name: prototype
-// Dependencies: [5038, 4093, 2]
+// Dependencies: [5043, 4096, 2]
 
-// Module 16725 (prototype)
-import "initialize";
+// Module 16818 (prototype)
+import initializeDefault from "initialize" /* 5043 */;
 
 let require = arg1;
+initializeDefault;
 let prototype = function VoiceProcessingErrorManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const require = applyArgumentsResult;
+  require = applyArgumentsResult;
   applyArgumentsResult.actions = {
     MEDIA_ENGINE_NOISE_CANCELLATION_ERROR() {
       return applyArgumentsResult.handleNoiseCancellationError();
@@ -19,10 +20,10 @@ let prototype = function VoiceProcessingErrorManager() {
     }
   };
   applyArgumentsResult.handleNoiseCancellationError = function handleNoiseCancellationError() {
-    const result = applyArgumentsResult(4093).presentNoiseCancellationError();
+    const result = applyArgumentsResult(4096).presentNoiseCancellationError();
   };
   applyArgumentsResult.handleVoiceActivityDetectionError = function handleVoiceActivityDetectionError() {
-    const result = applyArgumentsResult(4093).presentVoiceActivityDetectionError();
+    const result = applyArgumentsResult(4096).presentVoiceActivityDetectionError();
   };
   return applyArgumentsResult;
 }.prototype;

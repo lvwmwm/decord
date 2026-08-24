@@ -4,7 +4,8 @@
 // Dependencies: [41, 42]
 
 // Module 482 (ReactNativeVersion)
-import ReactNativeVersion from "_classCallCheck";
+import _createClassDefault from "_createClass" /* 42 */;
+import ReactNativeVersion from "_classCallCheck" /* 41 */;
 
 class ReactNativeVersion {
   constructor() {
@@ -15,9 +16,6 @@ class ReactNativeVersion {
 let obj = {
   key: "getVersionString",
   value: function getVersionString() {
-    let major;
-    let minor;
-    let patch;
     ({ major, minor, patch } = this);
     let str = "";
     if (null != this.prerelease) {
@@ -28,7 +26,7 @@ let obj = {
   }
 };
 const items = [obj];
-const tmp2 = require("_createClass")(ReactNativeVersion, null, items);
+const tmp2 = _createClassDefault(ReactNativeVersion, null, items);
 tmp2.major = 0;
 tmp2.minor = 86;
 tmp2.patch = 0;

@@ -1,42 +1,45 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13484
+// Function ID: 13485
 // Name: GuildActionSheetDirectory
-// Dependencies: [19, 17, 21, 4661, 712, 1629, 6950, 6952, 13427, 13370, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1629, 6988, 6990, 13485, 13428, 2]
 // Exports: default
 
-// Module 13426 (GuildActionSheetDirectory)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13484 (GuildActionSheetDirectory)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import Background from "Background" /* 6988 */;
+import BottomSheetModal from "BottomSheetModal" /* 6990 */;
+import HideMutedChannelsOption from "HideMutedChannelsOption" /* 13428 */;
+import CommunityPillDefault from "CommunityPill" /* 13485 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, actions: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { paddingHorizontal: 16, gap: 24 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetDirectory.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetDirectory.tsx");
 
 export default function GuildActionSheetDirectory(arg0) {
-  let expanded;
-  let guild;
   ({ guild, expanded } = arg0);
   if (expanded === undefined) {
     expanded = false;
   }
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { scrollable: true, startExpanded: expanded, children: null };
-  obj = { scrollsToTop: false, style: tmp.container, contentContainerStyle: { paddingBottom: importDefault(1629)().bottom }, children: null };
-  const items = [callback(importDefault(13427), { guild }), ];
+  obj = { scrollsToTop: false, style: tmp.container, contentContainerStyle: { paddingBottom: useSafeAreaInsetsDefault().bottom }, children: null };
+  const items = [callback(CommunityPillDefault, { guild }), ];
   obj = { style: tmp.actions, children: null };
-  const items1 = [callback(require(13370) /* HideMutedChannelsOption */.GuildActionSheetDirectoryActions, { guild }), callback(require(13370) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild })];
+  const items1 = [callback(HideMutedChannelsOption.GuildActionSheetDirectoryActions, { guild }), callback(HideMutedChannelsOption.GuildDeveloperOptionAction, { guild })];
   obj[1] = items1;
   items[1] = callback2(View, obj);
   obj[3] = items;
-  obj[2] = callback2(require(6952) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  return callback(require(6950) /* Background */.BottomSheet, obj);
+  obj[2] = callback2(BottomSheetModal.BottomSheetScrollView, obj);
+  return callback(Background.BottomSheet, obj);
 };

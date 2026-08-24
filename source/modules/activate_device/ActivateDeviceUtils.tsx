@@ -1,20 +1,23 @@
-// Module ID: 13337
-// Function ID: 13338
+// Module ID: 13395
+// Function ID: 13396
 // Name: clientIdToActivateDevicePlatform
-// Dependencies: [676, 9788, 2]
+// Dependencies: [676, 9827, 2]
 // Exports: clientIdToActivateDevicePlatform
 
-// Module 13337 (clientIdToActivateDevicePlatform)
-import { PlatformTypes } from "ME";
+// Module 13395 (clientIdToActivateDevicePlatform)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import set2 from "set" /* 9827 */;
 
-const result = require("set").fileFinishedImporting("modules/activate_device/ActivateDeviceUtils.tsx");
+const PlatformTypes = ME.PlatformTypes;
+const result = set.fileFinishedImporting("modules/activate_device/ActivateDeviceUtils.tsx");
 
 export const clientIdToActivateDevicePlatform = function clientIdToActivateDevicePlatform(clientId) {
-  if (clientId === require(9788) /* set */.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID) {
+  if (clientId === set2.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID) {
     let PLAYSTATION = PlatformTypes.PLAYSTATION;
   } else {
     PLAYSTATION = null;
-    if (clientId === require(9788) /* set */.ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID) {
+    if (clientId === set2.ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID) {
       PLAYSTATION = PlatformTypes.PLAYSTATION_STAGING;
     }
   }

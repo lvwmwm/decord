@@ -4,5 +4,7 @@
 // Dependencies: [312]
 
 // Module 431 (get VirtualizedList)
+import get_VirtualizedListDefault from "get VirtualizedList" /* 312 */;
 
-export { VirtualizedList as default } from "get VirtualizedList";
+
+export default get_VirtualizedListDefault.VirtualizedList;

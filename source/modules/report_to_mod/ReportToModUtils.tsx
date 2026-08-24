@@ -1,19 +1,26 @@
-// Module ID: 7238
-// Function ID: 7239
+// Module ID: 7276
+// Function ID: 7277
 // Name: canReportMessageToMods
-// Dependencies: [7239, 1391, 1910, 4994, 1922, 7266, 7267, 5292, 5291, 7231, 506, 4026, 5005, 5019, 5020, 7268, 2]
+// Dependencies: [7277, 1391, 1910, 4999, 1922, 7304, 7305, 5297, 5296, 7269, 506, 4029, 5010, 5024, 5025, 7306, 2]
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannel, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportOrPostChannel, isModeratorReportOrPostChannelId, isModeratorReportPostChannel, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
-// Module 7238 (canReportMessageToMods)
-import handleLoadThreadsSuccess from "handleLoadThreadsSuccess";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import reinjectEphemerals from "reinjectEphemerals";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { ReportToModPermissions } from "ReportToModPermissions";
+// Module 7276 (canReportMessageToMods)
+import fromStringAll from "fromString" /* 506 */;
+import applyOverwritesAll from "applyOverwrites" /* 4029 */;
+import isCurrentUserTeen from "isCurrentUserTeen" /* 5010 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 5296 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 5297 */;
+import getContextForPermission from "getContextForPermission" /* 7269 */;
+import canReportUser from "canReportUser" /* 7305 */;
+import closure_4 from "handleLoadThreadsSuccess" /* 7277 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_7 from "reinjectEphemerals" /* 4999 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import { ReportToModPermissions } from "ReportToModPermissions" /* 7304 */;
 
-const require = arg1;
-let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/report_to_mod/ReportToModUtils.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("modules/report_to_mod/ReportToModUtils.tsx");
 
 export const canReportMessageToMods = function canReportMessageToMods(message) {
   if (obj.canReportUser(message.author)) {
@@ -25,21 +32,21 @@ export const canReportMessageToMods = function canReportMessageToMods(message) {
       if (null == guild) {
         return false;
       } else {
-        return importDefault(5292)(guild) && null != importDefault(5291)(guild);
+        return getGuildModeratorReportingEnabledDefault(guild) && null != getGuildModeratorReportChannelIdDefault(guild);
       }
     }
   } else {
     return false;
   }
-  obj = require(7267) /* canReportUser */;
+  obj = canReportUser;
 };
 export const canAccessReportsChannel = function canAccessReportsChannel(arg0) {
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [createGuildRecordFromRust, mergeGuildAvatar];
+    const items = [closure_6, closure_8];
     tmp = items;
   }
-  let obj = require(7231) /* getContextForPermission */;
+  let obj = getContextForPermission;
   const contextForPermission = obj.getContextForPermission(arg0, tmp);
   if (null == contextForPermission) {
     return false;
@@ -47,19 +54,19 @@ export const canAccessReportsChannel = function canAccessReportsChannel(arg0) {
     const guild = contextForPermission.guild;
     let tmp7 = null == guild;
     if (!tmp7) {
-      tmp7 = !importDefault(5292)(guild);
+      tmp7 = !getGuildModeratorReportingEnabledDefault(guild);
     }
     if (!tmp7) {
-      tmp7 = null == importDefault(5291)(guild);
+      tmp7 = null == getGuildModeratorReportChannelIdDefault(guild);
     }
     let hasAnyResult = !tmp7;
     if (!tmp7) {
-      const obj2 = importAll(506);
+      const obj2 = fromStringAll;
       obj = { user: null, context: null, checkElevated: false };
       obj[0] = contextForPermission.user;
       obj[1] = guild;
-      hasAnyResult = obj2.hasAny(importAll(4026).computePermissions(obj), ReportToModPermissions);
-      const obj3 = importAll(4026);
+      hasAnyResult = obj2.hasAny(applyOverwritesAll.computePermissions(obj), ReportToModPermissions);
+      const obj3 = applyOverwritesAll;
     }
     return hasAnyResult;
   }
@@ -68,7 +75,7 @@ export const getReportToModChannelId = function getReportToModChannelId(arg0) {
   const guild = store2.getGuild(arg0);
   let tmp2 = null;
   if (null != guild) {
-    tmp2 = importDefault(5291)(guild);
+    tmp2 = getGuildModeratorReportChannelIdDefault(guild);
   }
   return tmp2;
 };
@@ -148,8 +155,6 @@ export const isModeratorReportOrPostChannel = function isModeratorReportOrPostCh
   return tmp;
 };
 export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransitionToReportForCurrentUser(arg0) {
-  let firstMessage;
-  let loaded;
   if (null == arg0) {
     return true;
   } else {
@@ -180,8 +185,8 @@ export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransit
           tmp9 = null == firstMessage;
         }
         if (!tmp9) {
-          tmp9 = !tmp10(5019).messageHasObscurableMediaForBitmask(firstMessage, tmp10(5020).ContentHarmTypeBitMask.EXPLICIT);
-          const tmp10Result = tmp10(5019);
+          tmp9 = !tmp10(5024).messageHasObscurableMediaForBitmask(firstMessage, tmp10(5025).ContentHarmTypeBitMask.EXPLICIT);
+          const tmp10Result = tmp10(5024);
         }
         return tmp9;
       } else {
@@ -190,7 +195,7 @@ export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransit
     } else {
       return true;
     }
-    obj3 = require(5005) /* isCurrentUserTeen */;
+    obj3 = isCurrentUserTeen;
   }
 };
 export const isModeratorReportThreadStarterMessage = function isModeratorReportThreadStarterMessage(isFirstMessageInForumPost, isModeratorReportChannel) {

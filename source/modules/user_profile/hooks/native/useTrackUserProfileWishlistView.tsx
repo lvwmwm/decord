@@ -1,17 +1,16 @@
-// Module ID: 12319
-// Function ID: 12320
+// Module ID: 12371
+// Function ID: 12372
 // Name: useTrackUserProfileWishlistView
-// Dependencies: [19, 9186, 589, 2]
+// Dependencies: [19, 9223, 589, 2]
 // Exports: default
 
-// Module 12319 (useTrackUserProfileWishlistView)
-import noop from "noop";
-import get from "get";
+// Module 12371 (useTrackUserProfileWishlistView)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import closure_4 from "get" /* 9223 */;
 
-let c3;
-let obj1;
 ({ useEffect: obj1, useRef: c3 } = noop);
-const result = require("initialize").fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileWishlistView.tsx");
+const result = set.fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileWishlistView.tsx");
 
 export default function useTrackUserProfileWishlistView(wishlistId) {
   wishlistId = wishlistId.wishlistId;
@@ -22,7 +21,7 @@ export default function useTrackUserProfileWishlistView(wishlistId) {
     flag = true;
   }
   let stateFromStores;
-  let closure_5;
+  closure_5 = undefined;
   const items = [stateFromStores];
   stateFromStores = wishlistId(onAction[2]).useStateFromStores(items, () => stateFromStores.isFetching(wishlistId));
   closure_5 = flag(false);

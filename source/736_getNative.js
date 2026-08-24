@@ -4,7 +4,7 @@
 // Dependencies: [737]
 
 // Module 736 (getNative)
-import getNative from "getNative";
+import getNative from "getNative" /* 737 */;
 
 
 export default getNative(Object, "create");

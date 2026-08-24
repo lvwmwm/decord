@@ -1,30 +1,31 @@
-// Module ID: 8901
-// Function ID: 8902
+// Module ID: 8938
+// Function ID: 8939
 // Name: useGuildEventRecurrences
-// Dependencies: [32, 19, 4370, 589, 8902, 8785, 12, 11, 687, 8796, 2]
+// Dependencies: [32, 19, 4374, 589, 8939, 8822, 12, 11, 687, 8833, 2]
 // Exports: default
 
-// Module 8901 (useGuildEventRecurrences)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import scheduledEventSort from "scheduledEventSort";
+// Module 8938 (useGuildEventRecurrences)
+import usePrevValueDefault from "usePrevValue" /* 8939 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "scheduledEventSort" /* 4374 */;
 
 const require = arg1;
-const result = require("scheduledEventSort").fileFinishedImporting("modules/guild_scheduled_events/useGuildEventRecurrences.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useGuildEventRecurrences.tsx");
 
 export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
   const _require = arg0;
-  const importDefault = arg1;
-  const dependencyMap = byWeekday;
+  importDefault = arg1;
+  dependencyMap = byWeekday;
   let obj = _require(589);
   let items = [first];
   const stateFromStores = obj.useStateFromStores(items, () => first.getGuildScheduledEvent(closure_0));
-  const tmp4 = importDefault(8902)(byWeekday);
-  let noop = tmp4;
+  const tmp4 = usePrevValueDefault(byWeekday);
+  closure_4 = tmp4;
   if (null != byWeekday) {
     if (null != stateFromStores) {
-      let tmpResult = tmp(8785);
-      tmpResult = tmp(8785);
+      let tmpResult = tmp(8822);
+      tmpResult = tmp(8822);
       let _Date = Date;
       let rRule = tmpResult.getRRule(byWeekday);
       let date = new Date(stateFromStores.scheduled_start_time);
@@ -32,10 +33,10 @@ export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
     }
     const tmp14 = stateFromStores(tmp5([]), 2);
     first = tmp14[0];
-    let closure_6 = tmp14[1];
+    closure_6 = tmp14[1];
     const items1 = [byWeekday, first.length, stateFromStores, tmp4];
     const effect = obj2.useEffect(() => {
-      if (null != noop) {
+      if (null != closure_4) {
         if (null != byWeekday) {
           if (null != stateFromStores) {
             if (!obj3.isEqual(tmp, tmp12)) {

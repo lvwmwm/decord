@@ -1,72 +1,74 @@
-// Module ID: 10834
-// Function ID: 10835
+// Module ID: 10873
+// Function ID: 10874
 // Name: onClose
-// Dependencies: [19, 17, 676, 21, 4661, 6782, 712, 4342, 6950, 6949, 7176, 10835, 4734, 1236, 1993, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 6819, 712, 4346, 6988, 6987, 7214, 10874, 4739, 1236, 1994, 2]
 // Exports: default
 
-// Module 10834 (onClose)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import ME from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
+// Module 10873 (onClose)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import combinedDefault from "combined" /* 1994 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import Text from "Text" /* 4739 */;
+import Background from "Background" /* 6988 */;
+import registerAssetDefault from "registerAsset" /* 10874 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let Fonts;
-let c3;
-let c4;
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function onClose() {
-  importDefault(4342).hideActionSheet();
+  ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet();
 }
+noopAll;
 ({ View: c3, Image: c4 } = get_ActivityIndicator);
 ({ HelpdeskArticles: c5, Fonts } = ME);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { title: null, subtitle: null, view: null, rating: null };
 createCacheKey = {};
-const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_EXTRABOLD, require("Themes").colors.INTERACTIVE_TEXT_ACTIVE, 16));
+const merged = Object.assign(importDefaultResult(Fonts.DISPLAY_EXTRABOLD, ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE, 16));
 createCacheKey.marginTop = 8;
 createCacheKey.marginBottom = 8;
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE, textAlign: "center", width: 343 };
+createCacheKey[1] = { color: ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE, textAlign: "center", width: 343 };
 createCacheKey[2] = { paddingTop: 50, paddingBottom: 100, alignItems: "center" };
 createCacheKey[3] = { width: 116, height: 93 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE, textAlign: "center", width: 343 };
-const result = require("ME").fileFinishedImporting("modules/notifications/native/NotificationSurveyResponseActionSheet.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { color: ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE, textAlign: "center", width: 343 };
+const result = require("set").fileFinishedImporting("modules/notifications/native/NotificationSurveyResponseActionSheet.tsx");
 
 export default function NotificationSurveyResponseActionSheet(header) {
   header = header.header;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let tmp5 = null != header;
   if (tmp5) {
     let obj = { title: null, trailing: null };
     obj[0] = header;
     obj = { onPress: null };
     obj[0] = onClose;
-    obj[1] = callback(tmp3(7176).ActionSheetCloseButton, obj);
-    tmp5 = callback(tmp3(6949).BottomSheetTitleHeader, obj);
+    obj[1] = callback(tmp3(7214).ActionSheetCloseButton, obj);
+    tmp5 = callback(tmp3(6987).BottomSheetTitleHeader, obj);
   }
   obj = { children: null };
   const items = [tmp5, ];
-  const obj1 = { style: tmp.view, children: null };
-  const items1 = [callback(closure_4, { style: tmp.rating, source: importDefault(10835) }), , ];
+  obj1 = { style: tmp.view, children: null };
+  const items1 = [callback(closure_4, { style: tmp.rating, source: registerAssetDefault }), , ];
   const obj3 = { style: tmp.title, variant: "heading-md/bold", children: null };
   const intl = tmp3(1236).intl;
-  obj3[2] = intl.string(require(1236) /* getSystemLocale */.t["d9+vQ8"]);
-  items1[1] = callback(require(4734) /* Text */.Text, obj3);
+  obj3[2] = intl.string(getSystemLocale.t["d9+vQ8"]);
+  items1[1] = callback(Text.Text, obj3);
   const obj4 = { style: tmp.subtitle, variant: "text-md/normal", children: null };
   const intl2 = tmp3(1236).intl;
   const obj5 = { helpUrl: null };
-  const obj2 = { style: tmp.rating, source: importDefault(10835) };
-  obj5[0] = importDefault(1993).getArticleURL(constants.HIGHLIGHTS_NOTIFICATIONS);
-  obj4[2] = intl2.format(require(1236) /* getSystemLocale */.t.WxD5QY, obj5);
-  items1[2] = callback(require(4734) /* Text */.Text, obj4);
+  const obj2 = { style: tmp.rating, source: registerAssetDefault };
+  obj5[0] = combinedDefault.getArticleURL(constants.HIGHLIGHTS_NOTIFICATIONS);
+  obj4[2] = intl2.format(getSystemLocale.t.WxD5QY, obj5);
+  items1[2] = callback(Text.Text, obj4);
   obj1[1] = items1;
   items[1] = closure_7(closure_3, obj1);
   obj[0] = items;
-  return closure_7(require(6950) /* Background */.BottomSheet, obj);
+  return closure_7(Background.BottomSheet, obj);
 };

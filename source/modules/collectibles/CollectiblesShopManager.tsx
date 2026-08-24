@@ -1,14 +1,17 @@
-// Module ID: 12000
-// Function ID: 12001
+// Module ID: 12049
+// Function ID: 12050
 // Name: chunk
-// Dependencies: [11999, 8963, 8962, 12001, 709, 2]
+// Dependencies: [12048, 9000, 8999, 12050, 709, 2]
 
-// Module 12000 (chunk)
-import getFetchState from "getFetchState";
-import closure_3 from "getFetchState";
-import set from "_maybeFetchProductsWithSkus";
+// Module 12049 (chunk)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import _maybeFetchProductsWithSkus from "_maybeFetchProductsWithSkus" /* 8999 */;
+import _maybeFetchCollectionsWithProducts from "_maybeFetchCollectionsWithProducts" /* 12050 */;
+import closure_2 from "getFetchState" /* 12048 */;
+import closure_3 from "getFetchState" /* 9000 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 function chunk(arr) {
   let length;
   let sum;
@@ -25,13 +28,13 @@ function chunk(arr) {
   return items;
 }
 function flushProducts() {
-  let c6 = null;
+  c6 = null;
   const items = [...set];
   set.clear();
   for (const item10016 of tmp2) {
     let tmp3 = require;
     let tmp4 = dependencyMap;
-    let obj = require(8962) /* _maybeFetchProductsWithSkus */;
+    let obj = _maybeFetchProductsWithSkus;
     obj = { skuIds: null };
     obj[0] = item10016;
     let result = obj.maybeFetchProductsBySkuIds(obj);
@@ -39,13 +42,13 @@ function flushProducts() {
   }
 }
 function flushCollections() {
-  let c7 = null;
+  c7 = null;
   const items = [...set1];
   set1.clear();
   for (const item10016 of tmp2) {
     let tmp3 = require;
     let tmp4 = dependencyMap;
-    let obj = require(12001) /* _maybeFetchCollectionsWithProducts */;
+    let obj = _maybeFetchCollectionsWithProducts;
     obj = { collectionIds: null };
     obj[0] = item10016;
     let result = obj.maybeFetchCollectionsWithProducts(obj);
@@ -126,7 +129,7 @@ let obj = {
     }
   }
 };
-const subscription = require("dispatcher").subscribe("LOGOUT", obj.reset);
+const subscription = dispatcherDefault.subscribe("LOGOUT", obj.reset);
 let result = set.fileFinishedImporting("modules/collectibles/CollectiblesShopManager.tsx");
 
 export const CollectiblesShopManager = obj;

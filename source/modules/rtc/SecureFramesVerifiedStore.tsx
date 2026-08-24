@@ -1,18 +1,21 @@
-// Module ID: 9690
-// Function ID: 9691
+// Module ID: 9729
+// Function ID: 9730
 // Name: computeCallVerification
-// Dependencies: [1218, 4539, 4558, 9691, 9692, 676, 9708, 4531, 4569, 589, 709, 2]
+// Dependencies: [1218, 4544, 4563, 9730, 9731, 676, 9747, 4536, 4574, 589, 709, 2]
 
-// Module 9690 (computeCallVerification)
-import fetchFingerprint from "fetchFingerprint";
-import createRTCConnection from "createRTCConnection";
-import initialize from "initialize";
-import map from "map";
-import closure_6 from "initialize";
-import { RTCConnectionStates } from "ME";
-import { Store } from "initialize";
+// Module 9729 (computeCallVerification)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4574 */;
+import getCurrentUserSigningKey from "getCurrentUserSigningKey" /* 9747 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "createRTCConnection" /* 4544 */;
+import closure_4 from "initialize" /* 4563 */;
+import closure_5 from "map" /* 9730 */;
+import closure_6 from "initialize" /* 9731 */;
+import { RTCConnectionStates } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function computeCallVerification() {
   let userIds = authStore.getUserIds();
   if (userIds == null) {
@@ -31,9 +34,8 @@ function computeCallVerification() {
         break;
       }
       let tmp10 = flag;
-      let tmp11 = c10;
-      let c10 = flag;
-      return flag !== c10;
+      let tmp11 = flag;
+      return flag !== flag;
     }
     continue;
   }
@@ -58,7 +60,7 @@ function handleUserUpdate(userId) {
       }
       flag = isKeyVerifiedResult !== map.get(userId);
       const result = map.set(userId, isKeyVerifiedResult);
-      obj = require(9708) /* getCurrentUserSigningKey */;
+      obj = getCurrentUserSigningKey;
     }
     const allActiveStreamKeys = store2.getAllActiveStreamKeys();
     const reduced = allActiveStreamKeys.reduce((arg0, streamKey) => {
@@ -80,11 +82,12 @@ const map = new Map();
 const map1 = new Map();
 let c10 = false;
 let c11 = null;
+const Store = initializeDefault.Store;
 class SecureFramesVerifiedStore extends Store {
 }
 const prototype = SecureFramesVerifiedStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, createRTCConnection, initialize, map, closure_6);
+  this.waitFor(closure_2, closure_3, closure_4, closure_5, closure_6);
 };
 prototype["isCallVerified"] = function isCallVerified() {
   return c10;
@@ -96,11 +99,11 @@ prototype["isUserVerified"] = function isUserVerified(arg0) {
   return map.get(arg0);
 };
 SecureFramesVerifiedStore.displayName = "SecureFramesVerifiedStore";
-const secureFramesVerifiedStore = new SecureFramesVerifiedStore(require("dispatcher"), {
+const secureFramesVerifiedStore = new SecureFramesVerifiedStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleReset() {
     map.clear();
     map1.clear();
-    let c10 = false;
+    c10 = false;
   },
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(channelId) {
     channelId = channelId.channelId;
@@ -109,27 +112,25 @@ const secureFramesVerifiedStore = new SecureFramesVerifiedStore(require("dispatc
     } else {
       map.clear();
       map1.clear();
-      let c10 = false;
+      c10 = false;
     }
   },
   RTC_CONNECTION_STATE: function handleRtcConnectionState(state) {
-    let context;
-    let streamKey;
     ({ streamKey, context } = state);
     if (state.state !== RTCConnectionStates.DISCONNECTED) {
       return false;
     } else {
-      if (require(4569) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM === context) {
+      if (BaseConnectionEvent.MediaEngineContextTypes.STREAM === context) {
         let tmp6 = null != streamKey;
         if (tmp6) {
           map1.delete(streamKey);
           tmp6 = computeCallVerification();
         }
         return tmp6;
-      } else if (tmp10(4569).MediaEngineContextTypes.DEFAULT === context) {
+      } else if (tmp10(4574).MediaEngineContextTypes.DEFAULT === context) {
         map.clear();
         map1.clear();
-        let c10 = false;
+        c10 = false;
       }
       tmp10 = require;
     }
@@ -143,8 +144,8 @@ const secureFramesVerifiedStore = new SecureFramesVerifiedStore(require("dispatc
       if (closure_0 !== arg1) {
         const obj = { userId: null };
         obj[0] = arg1;
-        tmp = outer1_13(obj) || arg0;
-        const tmp3 = outer1_13(obj) || arg0;
+        tmp = closure_1_13(obj) || arg0;
+        const tmp3 = closure_1_13(obj) || arg0;
       }
       return tmp;
     }, false);
@@ -169,6 +170,6 @@ const secureFramesVerifiedStore = new SecureFramesVerifiedStore(require("dispatc
   SECURE_FRAMES_VERIFIED_KEY_DELETE: handleUserUpdate,
   SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: handleUserUpdate
 });
-let result = require("initialize").fileFinishedImporting("modules/rtc/SecureFramesVerifiedStore.tsx");
+let result = require("set").fileFinishedImporting("modules/rtc/SecureFramesVerifiedStore.tsx");
 
 export default secureFramesVerifiedStore;

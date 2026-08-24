@@ -1,27 +1,25 @@
-// Module ID: 13920
-// Function ID: 13921
+// Module ID: 13988
+// Function ID: 13989
 // Name: DiscordGestureHandlerRootView
-// Dependencies: [19, 17, 21, 13921, 6377, 2]
+// Dependencies: [19, 17, 21, 13989, 6408, 2]
 // Exports: default
 
-// Module 13920 (DiscordGestureHandlerRootView)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 13988 (DiscordGestureHandlerRootView)
+import noopAll from "noop" /* 19 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6408 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 13989 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let StyleSheet;
-let TurboModuleRegistry;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ StyleSheet, TurboModuleRegistry } = get_ActivityIndicator);
 const enforcing = TurboModuleRegistry.getEnforcing("RNGestureHandlerModule");
 const styles = StyleSheet.create({ flex: { flex: 1 } });
-const result = require("jsxProd").fileFinishedImporting("modules/gesture_handler/native/DiscordGestureHandlerRootView.android.tsx");
+const result = require("set").fileFinishedImporting("modules/gesture_handler/native/DiscordGestureHandlerRootView.android.tsx");
 
 export default function DiscordGestureHandlerRootView(arg0) {
-  let children;
-  let style;
   ({ children, style } = arg0);
-  const obj = { style: styles.flex, children: null };
-  obj[1] = jsx(require(6377) /* LegacyBaseButton */.GestureHandlerRootView, { style, children });
-  return jsx(importDefault(13921), { style: styles.flex, children: null });
+  const obj = { style: styles.flex, children: jsx(LegacyBaseButton.GestureHandlerRootView, { style, children }) };
+  return jsx(__INTERNAL_VIEW_CONFIGDefault, { style: styles.flex, children: jsx(LegacyBaseButton.GestureHandlerRootView, { style, children }) });
 };

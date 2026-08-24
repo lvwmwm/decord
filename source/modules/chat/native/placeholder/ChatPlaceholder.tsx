@@ -1,25 +1,26 @@
-// Module ID: 11809
-// Function ID: 11810
-// Dependencies: [19, 17, 8682, 21, 4661, 712, 1629, 5441, 1494, 11810, 11811, 11812, 4115, 2]
+// Module ID: 11858
+// Function ID: 11859
+// Dependencies: [19, 17, 8719, 21, 4668, 712, 1629, 5446, 1494, 11859, 11860, 11861, 4119, 2]
 
-// Module 11809
-import importAllResult from "noop";
-import { useChatInputContainerHeight as closure_3 } from "updateChatInputContainerHeight";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11858
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { useChatInputContainerHeight as closure_3 } from "updateChatInputContainerHeight" /* 8719 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 let obj = { placeholder: null };
 obj = {};
 const merged = Object.assign(require("get ActivityIndicator").StyleSheet.absoluteFillObject);
-obj.paddingBottom = require("Themes").space.PX_24;
+obj.paddingBottom = ThemesDefault.space.PX_24;
 obj.flexDirection = "column-reverse";
 obj.overflow = "hidden";
 obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function ChatPlaceholder(screenIndex) {
-  let importDefault;
+  importDefault = undefined;
   let height;
-  let importAllResult;
+  importAllResult = undefined;
   let callback;
   callback = undefined;
   let tmp2 = callback(screenIndex.screenIndex);
@@ -75,6 +76,6 @@ const memoResult = importAllResult.memo(function ChatPlaceholder(screenIndex) {
   const style = [tmp.placeholder, memo, importDefault(height[9])({ visible: true, animated: true })];
   return callback(importDefault(height[12]).View, { style, pointerEvents: "none", children });
 });
-const result = require("updateChatInputContainerHeight").fileFinishedImporting("modules/chat/native/placeholder/ChatPlaceholder.tsx");
+const result = require("set").fileFinishedImporting("modules/chat/native/placeholder/ChatPlaceholder.tsx");
 
 export default memoResult;

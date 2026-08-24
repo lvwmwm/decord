@@ -1,14 +1,13 @@
-// Module ID: 9058
-// Function ID: 9059
+// Module ID: 9095
+// Function ID: 9096
 // Name: apexExperiment
-// Dependencies: [9059, 1472, 9061, 2]
+// Dependencies: [9096, 1472, 9098, 2]
 // Exports: getICYMIEnabled, useICYMIEnabled
 
-// Module 9058 (apexExperiment)
-import getUserAgnosticState from "getUserAgnosticState";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
+// Module 9095 (apexExperiment)
+import useLabFeatureDefault from "useLabFeature" /* 9098 */;
+import closure_2 from "getUserAgnosticState" /* 9096 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const hide_icymi_tab = "hide_icymi_tab";
 ApexExperiment = { 1: null };
@@ -20,12 +19,12 @@ const apexExperiment1 = ApexExperiment.createApexExperiment({ name: "2026-03-icy
 const obj1 = { 1: null };
 obj1[1] = { icymiDesktopEnabled: true };
 const apexExperiment2 = ApexExperiment.createApexExperiment({ name: "2026-03-icymi-desktop", kind: "user", defaultConfig: { icymiDesktopEnabled: false }, variations: obj1 });
-const result = require("useLabFeature").fileFinishedImporting("modules/icymi/ICYMIExperiment.tsx");
+const result = require("set").fileFinishedImporting("modules/icymi/ICYMIExperiment.tsx");
 
 export const ICYMI_LAB_FEATURE = "hide_icymi_tab";
 export const ICYMIStaffOnlyExperiment = apexExperiment;
 export const useICYMIEnabled = function useICYMIEnabled(TabsNavigator) {
-  const tmp = importDefault(9061)(hide_icymi_tab);
+  const tmp = useLabFeatureDefault(hide_icymi_tab);
   let obj = { location: TabsNavigator };
   obj = { location: TabsNavigator };
   const config = apexExperiment2.useConfig(obj);
@@ -36,7 +35,7 @@ export const useICYMIEnabled = function useICYMIEnabled(TabsNavigator) {
   return enabled;
 };
 export const getICYMIEnabled = function getICYMIEnabled(ICYMIManager) {
-  const value = getUserAgnosticState.get(hide_icymi_tab);
+  const value = closure_2.get(hide_icymi_tab);
   let enabled = !value;
   if (!value) {
     enabled = apexExperiment.getConfig(obj).enabled;

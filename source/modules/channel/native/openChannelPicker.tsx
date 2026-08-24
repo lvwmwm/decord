@@ -1,21 +1,20 @@
-// Module ID: 10533
-// Function ID: 10534
+// Module ID: 10572
+// Function ID: 10573
 // Name: openChannelPicker
-// Dependencies: [1980, 1910, 4342, 10534, 2007, 1236, 2]
+// Dependencies: [1981, 1910, 4346, 10573, 2008, 1236, 2]
 // Exports: default
 
-// Module 10533 (openChannelPicker)
-import comparator from "comparator";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
+// Module 10572 (openChannelPicker)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import closure_3 from "comparator" /* 1981 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
 
-const require = arg1;
-const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/channel/native/openChannelPicker.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/channel/native/openChannelPicker.tsx");
 
 export default function openChannelPicker(onClose) {
-  let channelType;
-  let filterFn;
-  let guildId;
-  let selectedChannel;
   ({ guildId, filterFn } = onClose);
   ({ selectedChannel, channelType } = onClose);
   if (filterFn === undefined) {
@@ -29,11 +28,11 @@ export default function openChannelPicker(onClose) {
   if (items == null) {
     items = [];
   }
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { header: null, guild: null, channels: null, selectedChannel: null };
   obj = { title: null, onClose: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.r2ptsz);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.r2ptsz);
   obj[1] = onClose.onClose;
   obj[0] = obj;
   obj[1] = guild;
@@ -41,5 +40,5 @@ export default function openChannelPicker(onClose) {
   obj[2] = found.map((channel) => channel.channel);
   obj[3] = selectedChannel;
   const merged1 = Object.assign(merged);
-  obj.openLazy(require(2007) /* asyncRequireImpl */(10534, dependencyMap.paths), "ChannelPicker", obj);
+  obj.openLazy(asyncRequireImpl(10573, dependencyMap.paths), "ChannelPicker", obj);
 };

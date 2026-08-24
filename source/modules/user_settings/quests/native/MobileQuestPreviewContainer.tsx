@@ -1,24 +1,26 @@
-// Module ID: 14524
-// Function ID: 14525
+// Module ID: 14592
+// Function ID: 14593
 // Name: MobileQuestPreviewContainer
-// Dependencies: [17, 21, 4661, 712, 4734, 2]
+// Dependencies: [17, 21, 4668, 712, 4739, 2]
 // Exports: default
 
-// Module 14524 (MobileQuestPreviewContainer)
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14592 (MobileQuestPreviewContainer)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
+const View = get_ActivityIndicator.View;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let obj = { container: null, title: null };
-obj = { marginTop: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 };
+obj = { marginTop: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16 };
 obj[0] = obj;
-obj[1] = { marginBottom: require("Themes").space.PX_16 };
+obj[1] = { marginBottom: ThemesDefault.space.PX_16 };
 let closure_5 = createCacheKey.createStyles(obj);
-const obj1 = { marginBottom: require("Themes").space.PX_16 };
-const result = require("createCacheKey").fileFinishedImporting("modules/user_settings/quests/native/MobileQuestPreviewContainer.tsx");
+const obj1 = { marginBottom: ThemesDefault.space.PX_16 };
+const result = set.fileFinishedImporting("modules/user_settings/quests/native/MobileQuestPreviewContainer.tsx");
 
 export default function MobileQuestPreviewContainer(title) {
   title = title.title;
@@ -29,7 +31,7 @@ export default function MobileQuestPreviewContainer(title) {
     obj = { variant: "text-lg/semibold", color: "text-default", style: null, children: null };
     obj[2] = tmp.title;
     obj[3] = title;
-    tmp4 = callback(require(4734) /* Text */.Text, obj);
+    tmp4 = callback(Text.Text, obj);
   }
   const items = [tmp4, title.children];
   obj[1] = items;

@@ -1,10 +1,12 @@
-// Module ID: 9140
-// Function ID: 9141
+// Module ID: 9177
+// Function ID: 9178
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9140 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/game-profile/opencritic-mighty.png.js");
+// Module 9177 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/game-profile/opencritic-mighty.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/35c42952234dc88292af091e1f0a5eb2189dbe0e40253245f51637c4ff587173.png";
 export const metadata = { fileBytes: 12162 };

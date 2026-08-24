@@ -1,11 +1,12 @@
-// Module ID: 4271
-// Function ID: 4272
+// Module ID: 4275
+// Function ID: 4276
 // Name: createFromServer
 // Dependencies: [1931, 2]
 
-// Module 4271 (createFromServer)
-import "toJS";
+// Module 4275 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
 
+toJSDefault;
 let prototype;
 prototype = function AppliedGuildBoostRecord(endsAt) {
   const tmp = new prototype(new.target, endsAt, new.target);
@@ -21,8 +22,6 @@ prototype = function AppliedGuildBoostRecord(endsAt) {
 class prototype extends tmp2 {
 }
 prototype["createFromServer"] = function createFromServer(user) {
-  let guild_id;
-  let id;
   ({ id, guild_id } = user);
   if (null != user.user) {
     let user_id = user.user.id;

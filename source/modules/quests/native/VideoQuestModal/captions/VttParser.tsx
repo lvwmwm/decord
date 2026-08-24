@@ -1,10 +1,12 @@
-// Module ID: 14499
-// Function ID: 14500
+// Module ID: 14567
+// Function ID: 14568
 // Name: prototype
 // Dependencies: [2]
 // Exports: parseVtt
 
-// Module 14499 (prototype)
+// Module 14567 (prototype)
+import set from "set" /* 2 */;
+
 const prototype = function VttParserError(arg0, error) {
   tmp = new tmp(arg0, new.target);
   // ThrowIfThisInitialized (0x7c)
@@ -15,7 +17,7 @@ const prototype = function VttParserError(arg0, error) {
 class prototype extends Error {
 }
 const re1 = /([0-9]+)?:?([0-9]{2}):([0-9]{2}\.[0-9]{2,3})/;
-let result = require("set").fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VttParser.tsx");
+let result = set.fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VttParser.tsx");
 
 export const VttParserError = prototype;
 export const parseVtt = function parseVtt(text) {
@@ -208,7 +210,7 @@ export const parseVtt = function parseVtt(text) {
                 if ("" === str21.trim()) {
                   return false;
                 } else {
-                  const obj = { identifier: null, start: null, end: null, text: null, styles: null };
+                  obj = { identifier: null, start: null, end: null, text: null, styles: null };
                   obj[0] = str10;
                   obj[1] = num;
                   obj[2] = num3;
@@ -266,7 +268,7 @@ export const parseVtt = function parseVtt(text) {
       }
       tmp22 = tmp25;
     }
-    const obj1 = { valid: null, strict: null, cues: null, errors: null };
+    obj1 = { valid: null, strict: null, cues: null, errors: null };
     obj1[0] = 0 === items.length;
     obj1[1] = tmp5;
     obj1[2] = found;

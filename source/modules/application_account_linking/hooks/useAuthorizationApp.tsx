@@ -1,17 +1,17 @@
-// Module ID: 7144
-// Function ID: 7145
+// Module ID: 7182
+// Function ID: 7183
 // Name: getAuthorizationApp
-// Dependencies: [19, 4478, 4479, 4482, 1954, 7145, 2]
+// Dependencies: [19, 4482, 4483, 4486, 1954, 7183, 2]
 // Exports: getAuthorizationApp, useAuthorizationApp
 
-// Module 7144 (getAuthorizationApp)
-import noop from "noop";
-import addApplication from "addApplication";
-import createExecutable from "createExecutable";
-import { ApplicationTypes } from "ApplicationTypes";
+// Module 7182 (getAuthorizationApp)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "addApplication" /* 4482 */;
+import closure_4 from "createExecutable" /* 4483 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 4486 */;
 
 const require = arg1;
-const result = require("createExecutable").fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
+const result = require("set").fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
 
 export const getAuthorizationApp = function getAuthorizationApp(type) {
   if (null == type) {
@@ -45,7 +45,7 @@ export const useAuthorizationApp = function useAuthorizationApp(getOfficialAppli
   const _require = getOfficialApplicationId;
   let officialApplicationId;
   if (null != getOfficialApplicationId) {
-    if (!(getOfficialApplicationId instanceof createExecutable)) {
+    if (!(getOfficialApplicationId instanceof closure_4)) {
       officialApplicationId = getOfficialApplicationId.getOfficialApplicationId();
     }
   }
@@ -55,11 +55,11 @@ export const useAuthorizationApp = function useAuthorizationApp(getOfficialAppli
     let application = closure_0;
     if (null == closure_0) {
       return null;
-    } else if (application instanceof outer1_4) {
+    } else if (application instanceof closure_1_4) {
       let tmp4 = null;
       if (null != application) {
         tmp4 = application;
-        if (application.type === outer1_5.GAME) {
+        if (application.type === closure_1_5.GAME) {
           const linkedGames = application.linkedGames;
           let found;
           if (linkedGames != null) {
@@ -74,7 +74,7 @@ export const useAuthorizationApp = function useAuthorizationApp(getOfficialAppli
             if (found != null) {
               id = found.id;
             }
-            application = outer1_3.getApplication(id);
+            application = closure_1_3.getApplication(id);
           }
           if (application == null) {
             application = null;

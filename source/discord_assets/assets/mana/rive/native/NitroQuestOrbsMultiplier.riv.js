@@ -1,10 +1,12 @@
-// Module ID: 4186
-// Function ID: 4187
+// Module ID: 4190
+// Function ID: 4191
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4186 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/NitroQuestOrbsMultiplier.riv.js");
+// Module 4190 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/NitroQuestOrbsMultiplier.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/a5e059af7c16750f382df02ee50c55be2ee90575e42ff1790aa2067c7c890a16.riv";
 export const metadata = { fileBytes: 78980 };

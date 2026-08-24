@@ -1,17 +1,18 @@
-// Module ID: 13485
-// Function ID: 13486
+// Module ID: 13543
+// Function ID: 13544
 // Name: Spacer
 // Dependencies: [19, 17, 21, 12, 2]
 // Exports: default
 
-// Module 13485 (Spacer)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import apply from "apply";
+// Module 13543 (Spacer)
+import noopAll from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import apply from "apply" /* 12 */;
 
+noopAll;
 let closure_2 = apply.memoize((width) => ({ width, height: width }));
-const result = require("jsxProd").fileFinishedImporting("design/void/Spacer/native/Spacer.tsx");
+const result = require("set").fileFinishedImporting("design/void/Spacer/native/Spacer.tsx");
 
 export default function Spacer(pointerEvents) {
   return <View style={callback(arg0.size)} pointerEvents={arg0.pointerEvents} />;

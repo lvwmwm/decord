@@ -1,17 +1,18 @@
-// Module ID: 7261
-// Function ID: 7262
+// Module ID: 7299
+// Function ID: 7300
 // Name: isListeningOnSpotify
-// Dependencies: [676, 7242, 5097, 2]
+// Dependencies: [676, 7280, 5102, 2]
 // Exports: default
 
-// Module 7261 (isListeningOnSpotify)
-import ME from "ME";
-import { isSpotifyParty } from "WEB_OPEN";
+// Module 7299 (isListeningOnSpotify)
+import set from "set" /* 2 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5102 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 7280 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let obj1;
 ({ ActivityTypes: obj1, PlatformTypes: c3 } = ME);
-const result = require("getPlatformUserUrl").fileFinishedImporting("modules/activities/utils/isListeningOnSpotify.tsx");
+const isSpotifyParty = SPOTIFY_APP_PROTOCOL.isSpotifyParty;
+const result = set.fileFinishedImporting("modules/activities/utils/isListeningOnSpotify.tsx");
 
 export default function isListeningOnSpotify(type) {
   let tmp = null != type;
@@ -19,8 +20,8 @@ export default function isListeningOnSpotify(type) {
     tmp = type.type === constants.LISTENING;
   }
   if (tmp) {
-    tmp = type.name === importDefault(5097).get(constants2.SPOTIFY).name;
-    const obj = importDefault(5097);
+    tmp = type.name === getPlatformUserUrlDefault.get(constants2.SPOTIFY).name;
+    const obj = getPlatformUserUrlDefault;
   }
   if (tmp) {
     tmp = null != type.party;

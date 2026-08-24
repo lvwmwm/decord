@@ -1,26 +1,25 @@
-// Module ID: 8632
-// Function ID: 8633
+// Module ID: 8669
+// Function ID: 8670
 // Name: CountryCallingCodeSelect
-// Dependencies: [32, 19, 17, 4074, 21, 4661, 712, 8582, 4075, 8633, 6775, 6291, 4734, 7337, 8634, 8635, 1236, 8636, 2]
+// Dependencies: [32, 19, 17, 4077, 21, 4668, 712, 8621, 4078, 8670, 6812, 6322, 4739, 7375, 8671, 8672, 1236, 8673, 2]
 // Exports: default
 
-// Module 8632 (CountryCallingCodeSelect)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "module_8636";
-import { getI18NCountryName } from "DEFAULT_COUNTRY_CODE_NAME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8669 (CountryCallingCodeSelect)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { getI18NCountryName } from "DEFAULT_COUNTRY_CODE_NAME" /* 4077 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles((arg0) => {
-  let obj = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, paddingHorizontal: null, paddingTop: null, paddingBottom: null, flex: 1 };
-  const space = importDefault(712).space;
+  let obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: null, paddingTop: null, paddingBottom: null, flex: 1 };
+  const space = ThemesDefault.space;
   obj[1] = arg0 ? space.PX_24 : space.PX_12;
-  obj[2] = importDefault(712).space.PX_16;
+  obj[2] = ThemesDefault.space.PX_16;
   const space2 = tmp(712).space;
   obj = { container: obj, searchFieldContainer: null };
   obj[3] = arg0 ? space2.PX_24 : space2.PX_16;
@@ -28,7 +27,7 @@ let closure_9 = createCacheKey.createStyles((arg0) => {
   obj[1] = obj;
   return obj;
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/phone/native/CountryCallingCodeSelect.tsx");
+const result = require("set").fileFinishedImporting("modules/phone/native/CountryCallingCodeSelect.tsx");
 
 export default function CountryCallingCodeSelect(onCountrySelected) {
   onCountrySelected = onCountrySelected.onCountrySelected;
@@ -40,22 +39,20 @@ export default function CountryCallingCodeSelect(onCountrySelected) {
   const tmp4 = memo(rows.useState(""), 2);
   first = tmp4[0];
   memo = rows.useMemo(() => onClose(first[8]).flatMap((alpha2) => {
-    let closure_1;
-    let phoneCountryCodes;
     alpha2 = alpha2.alpha2;
     ({ phoneCountryCodes, name: closure_1 } = alpha2);
-    let closure_2 = arg1;
-    let _slicedToArray;
-    _slicedToArray = callback(alpha2);
+    closure_2 = arg1;
+    closure_3 = undefined;
+    closure_3 = callback(alpha2);
     return phoneCountryCodes.map((code) => {
-      obj = { translatedName: _slicedToArray, key: "" + closure_2 + "-" + code, country: obj };
+      obj = { translatedName: closure_3, key: "" + closure_2 + "-" + code, country: obj };
       obj = { code, alpha2, name: closure_1 };
       return obj;
     });
   }), []);
   const items = [memo, first];
   const memo1 = rows.useMemo(() => {
-    const rows = [];
+    rows = [];
     const iter = memo[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
@@ -103,14 +100,14 @@ export default function CountryCallingCodeSelect(onCountrySelected) {
     const country = tmp.country;
     let obj = { start: 0 === arg1, end: arg1 === rows.length - 1, label: tmp.translatedName, trailing: null, onPress: null };
     obj = { variant: "text-md/semibold", children: country.code };
-    obj[3] = outer1_7(onCountrySelected(first[12]).Text, obj);
+    obj[3] = closure_1_7(onCountrySelected(first[12]).Text, obj);
     obj[4] = function onPress() {
       country(country);
-      if (outer1_1 != null) {
-        outer1_1();
+      if (closure_1_1 != null) {
+        closure_1_1();
       }
     };
-    return outer1_7(onCountrySelected(first[11]).TableRow, obj);
+    return closure_1_7(onCountrySelected(first[11]).TableRow, obj);
   }, items1);
   obj[1] = callback(onCountrySelected(first[13]).SearchField, { size: "md", onChange: tmp4[1] });
   const items2 = [callback(View, obj), ];

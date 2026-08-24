@@ -1,20 +1,21 @@
-// Module ID: 14469
-// Function ID: 14470
+// Module ID: 14537
+// Function ID: 14538
 // Name: getDeliveredQuest
-// Dependencies: [19, 21, 7469, 2]
+// Dependencies: [19, 21, 7507, 2]
 // Exports: QuestDockQuestProvider, getDeliveredQuest, useQuestCreative
 
-// Module 14469 (getDeliveredQuest)
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 14537 (getDeliveredQuest)
+import AdCreativeType from "AdCreativeType" /* 7507 */;
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 let context = importAllResult.createContext(null);
-const result = require("AdCreativeType").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockCreativeContext.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockCreativeContext.tsx");
 
 export const getDeliveredQuest = function getDeliveredQuest(type) {
   let quest = null;
-  if (type.type === require(7469) /* AdCreativeType */.AdCreativeType.QUEST) {
+  if (type.type === AdCreativeType.AdCreativeType.QUEST) {
     quest = type.quest;
   }
   return quest;
@@ -26,7 +27,7 @@ export const useQuestCreative = function useQuestCreative() {
   const context = importAllResult.useContext(closure_4);
   if (null == context) {
     const _Error = Error;
-    const error = new Error("useQuestCreative requires a QuestDockQuestProvider ancestor");
+    error = new Error("useQuestCreative requires a QuestDockQuestProvider ancestor");
     throw error;
   } else {
     return context;

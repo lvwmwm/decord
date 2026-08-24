@@ -1,20 +1,26 @@
-// Module ID: 13915
-// Function ID: 13916
+// Module ID: 13983
+// Function ID: 13984
 // Name: _getKeyForFileId
-// Dependencies: [5, 32, 4031, 1218, 1391, 4994, 676, 13916, 3, 687, 595, 3975, 4063, 7500, 7427, 709, 10912, 10866, 2007, 4720, 4996, 9084, 2]
+// Dependencies: [5, 32, 4034, 1218, 1391, 4999, 676, 13984, 3, 687, 595, 3978, 4066, 7538, 7465, 709, 10951, 10905, 2008, 4726, 5001, 9121, 2]
 
-// Module 13915 (_getKeyForFileId)
-import reinjectEphemerals from "reinjectEphemerals";
-import _slicedToArray from "_slicedToArray";
-import hasFlag from "hasFlag";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import closure_8 from "reinjectEphemerals";
-import { MessageStates } from "ME";
-import createLock from "createLock";
-import "initialize";
+// Module 13983 (_getKeyForFileId)
+import timestampDefault from "timestamp" /* 3 */;
+import Storage3 from "Storage" /* 595 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import tDefault from "t" /* 3978 */;
+import resetCache from "resetCache" /* 4066 */;
+import initializeDefault from "initialize" /* 4726 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "hasFlag" /* 4034 */;
+import closure_6 from "fetchFingerprint" /* 1218 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "reinjectEphemerals" /* 4999 */;
+import { MessageStates } from "ME" /* 676 */;
+import createLock from "createLock" /* 13984 */;
 
-let require = arg1;
+require = arg1;
 function _getKeyForFileId(arg0) {
   const entries = Object.entries(_getMessages());
   const obj = entries[Symbol.iterator]();
@@ -34,36 +40,32 @@ function _getKeyForFileId(arg0) {
   }
 }
 function removeCachedMessage(arg0) {
-  let closure_0 = arg0;
-  return createLock(() => outer1_17(c0, null));
+  closure_0 = arg0;
+  return callback3(() => closure_1_17(c0, null));
 }
 function getAllCachedMessages() {
-  return createLock(_getMessages);
+  return callback3(_getMessages);
 }
 function messageTimestampIsInInterval(arg0, arg1) {
   if (null != arg0) {
-    const tmp4 = importDefault(3975)();
-    const tmp5 = importDefault(3975)(arg0);
-    return require(4063) /* resetCache */.isWithinInterval(tmp4, tmp5, arg1);
+    const tmp4 = tDefault();
+    const tmp5 = tDefault(arg0);
+    return resetCache.isWithinInterval(tmp4, tmp5, arg1);
   } else {
     return false;
   }
 }
 function createFailedMessage(channel_id) {
-  let content;
-  let file;
-  let state;
-  let tts;
   channel_id = channel_id.channel_id;
   ({ content, tts, state } = channel_id);
   let obj = { channelId: channel_id, content, tts, state: MessageStates.SEND_FAILED };
-  const tmp3 = file(7500)(obj);
-  const require = tmp3;
+  const tmp3 = file(7538)(obj);
+  closure_0 = tmp3;
   ({ timestamp: tmp3.timestamp, file } = channel_id);
   obj = { isHydratingExpiredPendingMessage: state === MessageStates.SENDING };
-  file(7427).receiveMessage(channel_id, tmp3, true, obj);
+  file(7465).receiveMessage(channel_id, tmp3, true, obj);
   if (null != file) {
-    file(709).wait(() => file(outer1_2[16]).restoreFailedUpload(tmp3.id, file));
+    file(709).wait(() => file(closure_1_2[16]).restoreFailedUpload(id.id, file));
     const tmpResult = file(709);
   }
 }
@@ -80,16 +82,14 @@ function resumeSendingMessage() {
 function _resumeSendingMessage() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0) {
-      let c1;
-      let file;
-      let reinjectEphemerals = tmp5;
+      closure_3 = tmp5;
       let channel = tmp2;
       ({ file, sendMessageOptions: c1 } = lib);
-      channel = outer1_7.getChannel(lib.channel_id);
+      channel = closure_1_7.getChannel(lib.channel_id);
       if (null == channel) {
         return false;
       }
@@ -100,16 +100,16 @@ function _resumeSendingMessage() {
       if (items == null) {
         c1 = undefined;
       }
-      reinjectEphemerals = c1;
-      yield lib(outer1_2[18])(outer1_2[17], outer1_2.paths);
+      closure_3 = c1;
+      yield lib(closure_1_2[18])(closure_1_2[17], closure_1_2.paths);
       const obj = {};
       const merged = Object.assign(lib);
       const tmp16 = new c5(obj);
-      arg1.default(channel, tmp16, reinjectEphemerals, c1);
+      arg1.default(channel, tmp16, closure_3, c1);
       return true;
     })();
   });
-  const _resumeSendingMessage = tmp;
+  closure_24 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -121,9 +121,9 @@ function _resumeSendingMessage() {
 function _rehydrateFailedMessages() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c8 = 0;
-    let c9 = 0;
+    closure_0 = arg0;
+    c8 = 0;
+    c9 = 0;
     return (function*(arg0) {
       if (constants === 2) {
         constants = 3;
@@ -136,7 +136,7 @@ function _rehydrateFailedMessages() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -152,17 +152,17 @@ function _rehydrateFailedMessages() {
               obj[0] = arg1;
               return obj;
             } else {
-              let ensureGuildLoaded = tmp2;
-              let fetchFingerprint = tmp3;
-              keys = undefined;
-              let closure_2;
-              let reinjectEphemerals;
+              closure_7 = tmp2;
+              closure_6 = tmp3;
+              dependencyMap = undefined;
+              closure_2 = undefined;
+              closure_3 = undefined;
               let timestamp;
               let state;
               message = 1;
               constants = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_20();
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_20();
               return obj1;
             }
           } else {
@@ -176,23 +176,25 @@ function _rehydrateFailedMessages() {
                 obj2[0] = arg1;
                 return obj2;
               } else {
-                keys = arg1;
+                dependencyMap = arg1;
                 const _Object = Object;
                 const _HermesInternal4 = HermesInternal;
-                closure_11.verbose("rehydrateFailedMessages with " + Object.keys(keys).length + " messagess");
-                closure_2 = keys;
+                closure_11.verbose("rehydrateFailedMessages with " + Object.keys(dependencyMap).length + " messagess");
+                closure_2 = dependencyMap;
                 keys = Object.keys();
                 if (keys === undefined) {
                   timestamp = tmp68;
-                  reinjectEphemerals = tmp67;
+                  closure_3 = tmp67;
                   closure_2 = tmp64;
+                  dependencyMap = keys;
                 } else {
                   timestamp = tmp68;
-                  reinjectEphemerals = tmp67;
+                  closure_3 = tmp67;
                   closure_2 = tmp66;
+                  dependencyMap = keys;
                 }
                 constants = 3;
-                tmp66 = keys;
+                tmp66 = dependencyMap;
               }
             } else if (arg0 === 1) {
               constants = 3;
@@ -203,91 +205,91 @@ function _rehydrateFailedMessages() {
               obj[0] = arg1;
               return obj;
             }
-            while (keys[reinjectEphemerals] !== undefined) {
+            while (dependencyMap[closure_3] !== undefined) {
               let tmp73 = tmp12;
               state = tmp12;
               let tmp74 = tmp10;
               timestamp = tmp10;
               let tmp75 = tmp9;
-              reinjectEphemerals = tmp9;
+              closure_3 = tmp9;
               let tmp76 = tmp8;
               closure_2 = tmp8;
               let tmp77 = tmp7;
-              keys = tmp7;
-              let tmp78 = fetchFingerprint;
+              dependencyMap = tmp7;
+              let tmp78 = closure_6;
               closure_2 = tmp12;
-              let tmp79 = keys;
+              let tmp79 = dependencyMap;
               let tmp80 = closure_2;
-              reinjectEphemerals = keys[closure_2];
-              let tmp81 = reinjectEphemerals;
+              closure_3 = dependencyMap[closure_2];
+              let tmp81 = closure_3;
               let tmp82 = closure_0;
-              if (reinjectEphemerals.channel_id !== closure_0) {
+              if (closure_3.channel_id !== closure_0) {
                 continue;
               } else {
-                let tmp13 = fetchFingerprint;
-                let tmp14 = ensureGuildLoaded;
+                let tmp13 = closure_6;
+                let tmp14 = closure_7;
                 let tmp15 = callback;
                 let tmp16 = closure_2;
                 let tmp17 = callback(closure_2);
                 let tmp18 = message;
                 let tmp19 = closure_0;
-                let tmp20 = reinjectEphemerals;
+                let tmp20 = closure_3;
                 let tmp21 = null;
-                if (null != message.getMessage(closure_0, reinjectEphemerals.id)) {
+                if (null != message.getMessage(closure_0, closure_3.id)) {
                   continue;
                 } else {
-                  let tmp83 = fetchFingerprint;
-                  let tmp84 = ensureGuildLoaded;
-                  let tmp85 = reinjectEphemerals;
-                  timestamp = reinjectEphemerals.timestamp;
-                  let tmp86 = reinjectEphemerals;
-                  state = reinjectEphemerals.state;
+                  let tmp83 = closure_6;
+                  let tmp84 = closure_7;
+                  let tmp85 = closure_3;
+                  timestamp = closure_3.timestamp;
+                  let tmp86 = closure_3;
+                  state = closure_3.state;
                   let tmp87 = callback2;
                   let tmp88 = timestamp;
                   let tmp89 = closure_14;
-                  let tmp90 = fetchFingerprint;
-                  let tmp91 = ensureGuildLoaded;
+                  let tmp90 = closure_6;
+                  let tmp91 = closure_7;
                   if (callback2(timestamp, closure_14)) {
                     let tmp26 = state;
                     let tmp27 = constants;
                     if (state === constants.SENDING) {
-                      let tmp28 = fetchFingerprint;
-                      let tmp29 = ensureGuildLoaded;
+                      let tmp28 = closure_6;
+                      let tmp29 = closure_7;
                       let tmp30 = callback2;
                       let tmp31 = timestamp;
                       let tmp32 = closure_13;
                       if (callback2(timestamp, closure_13)) {
-                        let tmp42 = fetchFingerprint;
-                        let tmp43 = ensureGuildLoaded;
+                        let tmp42 = closure_6;
+                        let tmp43 = closure_7;
                         let tmp44 = closure_11;
                         let tmp45 = globalThis;
                         let _JSON2 = JSON;
-                        let tmp46 = reinjectEphemerals;
+                        let tmp46 = closure_3;
                         let _HermesInternal3 = HermesInternal;
                         let str3 = "sending message with data ";
-                        let verboseResult1 = closure_11.verbose("sending message with data " + JSON.stringify(reinjectEphemerals));
+                        let verboseResult1 = closure_11.verbose("sending message with data " + JSON.stringify(closure_3));
                         let tmp48 = callback4;
-                        let tmp49 = reinjectEphemerals;
+                        let tmp49 = closure_3;
                         message = 2;
                         let num4 = 1;
                         constants = 1;
                         let obj3 = { value: null, done: false };
-                        obj3[0] = callback4(reinjectEphemerals);
+                        obj3[0] = callback4(closure_3);
                         return obj3;
                       }
                     }
-                    let tmp33 = fetchFingerprint;
-                    let tmp34 = ensureGuildLoaded;
+                    let tmp33 = closure_6;
+                    let tmp34 = closure_7;
                     let tmp35 = closure_11;
                     let tmp36 = globalThis;
                     let _JSON = JSON;
-                    let tmp37 = reinjectEphemerals;
+                    let tmp37 = closure_3;
                     let _HermesInternal2 = HermesInternal;
                     let str2 = "failed message with data ";
-                    let infoResult = closure_11.info("failed message with data " + JSON.stringify(reinjectEphemerals));
+                    let infoResult = closure_11.info("failed message with data " + JSON.stringify(closure_3));
                     let tmp39 = callback3;
-                    let tmp40 = reinjectEphemerals;
-                    let tmp41 = callback3(reinjectEphemerals);
+                    let tmp40 = closure_3;
+                    let tmp41 = callback3(closure_3);
                     continue;
                   } else {
                     let tmp22 = closure_11;
@@ -306,9 +308,9 @@ function _rehydrateFailedMessages() {
             }
             state = tmp12;
             timestamp = tmp10;
-            reinjectEphemerals = tmp9;
+            closure_3 = tmp9;
             closure_2 = tmp8;
-            keys = tmp7;
+            dependencyMap = tmp7;
           }
         } catch (tmp52) {
           constants = tmp;
@@ -317,7 +319,7 @@ function _rehydrateFailedMessages() {
       }
     })();
   });
-  const _rehydrateFailedMessages = tmp;
+  closure_25 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -326,13 +328,13 @@ function _rehydrateFailedMessages() {
   }
   return applyArgumentsResult;
 }
-createLock = createLock.createLock();
-const unpackModuleId = new require("fetchFingerprint")("LocalMessageCacheManager");
+let closure_10 = createLock.createLock();
+let closure_11 = new timestampDefault("LocalMessageCacheManager");
 const LocalMessageCacheManagerMessageCacheKey = "LocalMessageCacheManagerMessageCacheKey";
-let closure_13 = 5 * require("set").Millis.MINUTE;
-let closure_14 = 14 * require("set").Millis.DAY;
-function _getMessages(outer1_2) {
-  const Storage = require(595) /* Storage */.Storage;
+let closure_13 = 5 * setDefault.Millis.MINUTE;
+let closure_14 = 14 * setDefault.Millis.DAY;
+function _getMessages(closure_1_2) {
+  const Storage = Storage3.Storage;
   let obj = Storage.get(LocalMessageCacheManagerMessageCacheKey);
   if (null == obj) {
     obj = {};
@@ -343,7 +345,7 @@ function _getMessage(arg0) {
 
 }
 function _writeMessage(arg0, id) {
-  let obj = tmp2;
+  let obj = closure_11;
   id = undefined;
   if (id != null) {
     id = id.id;
@@ -352,11 +354,11 @@ function _writeMessage(arg0, id) {
   if (id != null) {
     channel_id = id.channel_id;
   }
-  tmp2.verbose("_writeMessage", id, channel_id);
+  closure_11.verbose("_writeMessage", id, channel_id);
   if (typeof _getMessages !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage3.Storage;
   obj = Storage.get(LocalMessageCacheManagerMessageCacheKey);
   if (null == obj) {
     obj = {};
@@ -374,15 +376,16 @@ function _writeMessage(arg0, id) {
   } else {
     delete tmp[tmp2];
   }
-  const Storage2 = require(595) /* Storage */.Storage;
+  const Storage2 = Storage3.Storage;
   const result = Storage2.set(LocalMessageCacheManagerMessageCacheKey, obj);
   return obj;
 }
+initializeDefault;
 // CreatePrivateName (0x9e)
 class LocalMessageCacheManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f111178 = applyArgumentsResult;
+    closure_0 = applyArgumentsResult;
     // PrivateIsIn (0x32)
     if (tmp) {
       str = "Cannot initialize private field twice.";
@@ -391,8 +394,8 @@ class LocalMessageCacheManager extends tmp3 {
     } else {
       tmp5 = tmp4;
       // AddOwnPrivateBySym (0x64)
-      tmp6 = _rehydrateFailedMessages;
-      applyArgumentsResult.handlePostConnectionOpen = _rehydrateFailedMessages(function*() {
+      tmp6 = closure_3;
+      applyArgumentsResult.handlePostConnectionOpen = closure_3(function*() {
         if (c10 === 2) {
           c10 = 3;
           HermesBuiltin.throwTypeError();
@@ -404,7 +407,7 @@ class LocalMessageCacheManager extends tmp3 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -419,16 +422,16 @@ class LocalMessageCacheManager extends tmp3 {
                 obj[0] = arg1;
                 return obj;
               } else {
-                let fetchFingerprint = tmp8;
-                let closure_0;
+                closure_6 = tmp8;
+                closure_0 = undefined;
                 let values;
-                let closure_2;
+                closure_2 = undefined;
                 let iter3;
                 let next;
                 c9 = 1;
                 c10 = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = outer1_20();
+                obj1 = { value: null, done: false };
+                obj1[0] = closure_1_20();
                 return obj1;
               }
             } else {
@@ -444,8 +447,8 @@ class LocalMessageCacheManager extends tmp3 {
                 } else {
                   closure_0 = arg1;
                   values = function _loop(arg0) {
-                    let closure_0 = arg0;
-                    let c1 = 0;
+                    closure_0 = arg0;
+                    c1 = 0;
                     return (function* _loop(arg0) {
                       if (c1 === 2) {
                         c1 = 3;
@@ -458,7 +461,7 @@ class LocalMessageCacheManager extends tmp3 {
                           obj[0] = arg1;
                           return obj;
                         } else {
-                          return { value: "HermesInternal", done: "HermesInternal" };
+                          return { value: "HermesInternal", done: null };
                         }
                       } else {
                         try {
@@ -472,16 +475,16 @@ class LocalMessageCacheManager extends tmp3 {
                             obj[0] = arg1;
                             return obj;
                           } else {
-                            if (outer1_4 === outer1_9.SENDING) {
+                            if (closure_1_4 === closure_1_9.SENDING) {
                               const _setTimeout = setTimeout;
                               const timerId = setTimeout(() => {
-                                let obj = v3(outer1_2[21]);
+                                let obj = v3(closure_1_2[21]);
                                 obj = { channelId: closure_0 };
                                 const messages = obj.fetchMessages(obj);
                               }, 0);
                             }
                             c1 = 3;
-                            return { value: "HermesInternal", done: "HermesInternal" };
+                            return { value: "HermesInternal", done: null };
                           }
                         } catch (tmp9) {
                           c1 = tmp;
@@ -495,9 +498,9 @@ class LocalMessageCacheManager extends tmp3 {
                   closure_0 = values[Symbol.iterator]();
                   if (closure_0 === undefined) {
                     c10 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   } else {
-                    let c7 = 1;
+                    c7 = 1;
                     closure_2 = tmp35;
                     iter3 = closure_2.channel_id;
                     next = closure_2.state;
@@ -614,7 +617,7 @@ class LocalMessageCacheManager extends tmp3 {
             }
           })(id);
           if (null != tmp) {
-            outer1_17(tmp, null);
+            closure_1_17(tmp, null);
           }
         });
       };
@@ -625,35 +628,22 @@ class LocalMessageCacheManager extends tmp3 {
         });
       };
       applyArgumentsResult.handleMessageCreate = function handleMessageCreate(message) {
-        let c0;
-        let c1;
-        let c10;
-        let c11;
-        let c2;
-        let c3;
-        let c4;
-        let c5;
-        let c6;
-        let c7;
-        let c8;
-        let c9;
-        let message2;
         message = message.message;
         const author = message.author;
         let id;
         if (author != null) {
           id = author.id;
         }
-        if (id === outer1_6.getId()) {
+        if (id === closure_1_6.getId()) {
           id = message.nonce;
           if (id == null) {
             id = message.id;
           }
           const state = message.state;
-          if (state !== outer1_9.SENDING) {
+          if (state !== closure_1_9.SENDING) {
             if (message.state !== tmp2.SEND_FAILED) {
               c0 = id;
-              outer1_10(() => outer1_17(c0, null));
+              closure_1_10(() => closure_1_17(c0, null));
             }
           }
           // GetOwnPrivateBySym (0x65)
@@ -676,15 +666,15 @@ class LocalMessageCacheManager extends tmp3 {
           c10 = undefined;
           c11 = undefined;
           ({ content: c3, id: c4, channel_id: c5, tts: c6, nonce: c7, timestamp: c8, type: c9, flags: c10, state: c11 } = message2);
-          outer1_10(() => {
-            if (typeof outer1_16 !== "function") {
+          closure_1_10(() => {
+            if (typeof closure_1_16 !== "function") {
               HermesBuiltin.throwTypeError();
             }
-            if (typeof outer1_15 !== "function") {
+            if (typeof closure_1_15 !== "function") {
               HermesBuiltin.throwTypeError();
             }
-            const Storage = outer1_0(outer1_2[10]).Storage;
-            let obj = Storage.get(outer1_12);
+            const Storage = closure_1_0(closure_1_2[10]).Storage;
+            let obj = Storage.get(closure_1_12);
             if (null == obj) {
               obj = {};
             }
@@ -713,7 +703,7 @@ class LocalMessageCacheManager extends tmp3 {
               tmp6 = file;
             }
             obj[9] = tmp6;
-            let obj1 = closure_2;
+            obj1 = closure_2;
             if (null != closure_2) {
               if (obj1 == null) {
                 obj1 = {};
@@ -725,7 +715,7 @@ class LocalMessageCacheManager extends tmp3 {
               sendMessageOptions = tmp2.sendMessageOptions;
             }
             obj[10] = sendMessageOptions;
-            outer1_17(closure_0, obj);
+            closure_1_17(closure_0, obj);
           });
         }
       };
@@ -746,12 +736,12 @@ class LocalMessageCacheManager extends tmp3 {
           continue;
         }
       };
-      f111178 = undefined;
+      closure_0 = undefined;
       closure_1 = applyArgumentsResult;
-      f111178 = _rehydrateFailedMessages((arg0) => {
-        let closure_0 = arg0;
-        let c2 = 0;
-        let c1 = 0;
+      closure_0 = closure_3((arg0) => {
+        closure_0 = arg0;
+        c2 = 0;
+        c1 = 0;
         return (function*(arg0) {
           if (set === 2) {
             set = 3;
@@ -764,7 +754,7 @@ class LocalMessageCacheManager extends tmp3 {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -779,7 +769,7 @@ class LocalMessageCacheManager extends tmp3 {
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  let obj1 = set;
+                  obj1 = set;
                   // GetOwnPrivateBySym (0x65)
                   if (!set.has(closure_0)) {
                     obj1.add(tmp5);
@@ -790,7 +780,7 @@ class LocalMessageCacheManager extends tmp3 {
                       const self = this;
                       const apply = closure_25.apply;
                       if (typeof apply === "unknown") {
-                        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+                        applyArgumentsResult = HermesBuiltin.applyArguments(self);
                       } else {
                         applyArgumentsResult = apply(self, arguments);
                       }
@@ -809,7 +799,7 @@ class LocalMessageCacheManager extends tmp3 {
                 return obj;
               }
               set = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } catch (tmp8) {
               set = tmp;
               throw tmp8;
@@ -821,26 +811,13 @@ class LocalMessageCacheManager extends tmp3 {
         const self = this;
         const apply = closure_0.apply;
         if (typeof apply === "unknown") {
-          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+          applyArgumentsResult = HermesBuiltin.applyArguments(self);
         } else {
           applyArgumentsResult = apply(self, arguments);
         }
         return applyArgumentsResult;
       };
       applyArgumentsResult.handleFileUploadStart = function handleFileUploadStart(message) {
-        let c10;
-        let c11;
-        let c3;
-        let c4;
-        let c5;
-        let c6;
-        let c7;
-        let c8;
-        let c9;
-        let closure_0;
-        let closure_1;
-        let closure_2;
-        let message2;
         message = message.message;
         if (null != message) {
           let id = message.nonce;
@@ -863,14 +840,14 @@ class LocalMessageCacheManager extends tmp3 {
           c11 = undefined;
           ({ content: c3, id: c4, channel_id: c5, tts: c6, nonce: c7, timestamp: c8, type: c9, flags: c10, state: c11 } = message2);
           callback(() => {
-            if (typeof outer1_16 !== "function") {
+            if (typeof closure_1_16 !== "function") {
               HermesBuiltin.throwTypeError();
             }
-            if (typeof outer1_15 !== "function") {
+            if (typeof closure_1_15 !== "function") {
               HermesBuiltin.throwTypeError();
             }
-            const Storage = outer1_0(outer1_2[10]).Storage;
-            let obj = Storage.get(outer1_12);
+            const Storage = closure_1_0(closure_1_2[10]).Storage;
+            let obj = Storage.get(closure_1_12);
             if (null == obj) {
               obj = {};
             }
@@ -899,7 +876,7 @@ class LocalMessageCacheManager extends tmp3 {
               tmp6 = file;
             }
             obj[9] = tmp6;
-            let obj1 = closure_2;
+            obj1 = closure_2;
             if (null != closure_2) {
               if (obj1 == null) {
                 obj1 = {};
@@ -911,35 +888,35 @@ class LocalMessageCacheManager extends tmp3 {
               sendMessageOptions = tmp2.sendMessageOptions;
             }
             obj[10] = sendMessageOptions;
-            outer1_17(closure_0, obj);
+            closure_1_17(closure_0, obj);
           });
         }
       };
       applyArgumentsResult.handleUploadProgress = function handleUploadProgress(file) {
         file = file.file;
         callback(() => {
-          const tmp2 = outer1_18(file.id);
+          const tmp2 = closure_1_18(id.id);
           if (null != tmp2) {
             let obj = { file: null };
-            obj[0] = file;
-            file = tmp2;
-            outer1_10(() => {
-              if (typeof outer1_16 !== "function") {
+            obj[0] = id;
+            id = tmp2;
+            closure_1_10(() => {
+              if (typeof closure_1_16 !== "function") {
                 HermesBuiltin.throwTypeError();
               }
-              if (typeof outer1_15 !== "function") {
+              if (typeof closure_1_15 !== "function") {
                 HermesBuiltin.throwTypeError();
               }
-              const Storage = tmp2(outer1_2[10]).Storage;
-              let obj = Storage.get(outer1_12);
+              const Storage = callback(closure_1_2[10]).Storage;
+              obj = Storage.get(closure_1_12);
               if (null == obj) {
                 obj = {};
               }
-              if (null != obj[tmp2]) {
+              if (null != obj[callback]) {
                 obj = {};
                 const merged = Object.assign(tmp2);
                 const merged1 = Object.assign(obj);
-                outer1_17(tmp, obj);
+                closure_1_17(tmp, obj);
               }
             });
           }
@@ -949,9 +926,9 @@ class LocalMessageCacheManager extends tmp3 {
         if (aborted.aborted) {
           const file = aborted.file;
           callback(() => {
-            const tmp = outer1_18(file.id);
+            const tmp = closure_1_18(file.id);
             if (null != tmp) {
-              outer1_17(tmp, null);
+              closure_1_17(tmp, null);
             }
           });
         }
@@ -960,22 +937,22 @@ class LocalMessageCacheManager extends tmp3 {
         const obj = { file: file.file };
         const messageId = file.messageId;
         callback(() => {
-          if (typeof outer1_16 !== "function") {
+          if (typeof closure_1_16 !== "function") {
             HermesBuiltin.throwTypeError();
           }
-          if (typeof outer1_15 !== "function") {
+          if (typeof closure_1_15 !== "function") {
             HermesBuiltin.throwTypeError();
           }
-          const Storage = tmp2(outer1_2[10]).Storage;
-          let obj = Storage.get(outer1_12);
+          const Storage = callback(closure_1_2[10]).Storage;
+          obj = Storage.get(closure_1_12);
           if (null == obj) {
             obj = {};
           }
-          if (null != obj[tmp2]) {
+          if (null != obj[callback]) {
             obj = {};
             const merged = Object.assign(tmp2);
             const merged1 = Object.assign(obj);
-            outer1_17(tmp, obj);
+            closure_1_17(tmp, obj);
           }
         });
       };
@@ -983,22 +960,22 @@ class LocalMessageCacheManager extends tmp3 {
         const obj = { state: constants.SEND_FAILED };
         messageId = messageId.messageId;
         callback(() => {
-          if (typeof outer1_16 !== "function") {
+          if (typeof closure_1_16 !== "function") {
             HermesBuiltin.throwTypeError();
           }
-          if (typeof outer1_15 !== "function") {
+          if (typeof closure_1_15 !== "function") {
             HermesBuiltin.throwTypeError();
           }
-          const Storage = tmp2(outer1_2[10]).Storage;
-          let obj = Storage.get(outer1_12);
+          const Storage = callback(closure_1_2[10]).Storage;
+          obj = Storage.get(closure_1_12);
           if (null == obj) {
             obj = {};
           }
-          if (null != obj[tmp2]) {
+          if (null != obj[callback]) {
             obj = {};
             const merged = Object.assign(tmp2);
             const merged1 = Object.assign(obj);
-            outer1_17(tmp, obj);
+            closure_1_17(tmp, obj);
           }
         });
       };
@@ -1008,48 +985,48 @@ class LocalMessageCacheManager extends tmp3 {
 }
 const prototype = LocalMessageCacheManager.prototype;
 prototype["_terminate"] = function _terminate() {
-  importDefault(709).unsubscribe("LOGOUT", this.handleLogout);
-  const obj = importDefault(709);
-  importDefault(709).unsubscribe("MESSAGE_CREATE", this.handleMessageCreate);
-  const obj2 = importDefault(709);
-  importDefault(709).unsubscribe("MESSAGE_SEND_FAILED", this.handleTextMessageFailed);
-  const obj3 = importDefault(709);
-  importDefault(709).unsubscribe("UPLOAD_START", this.handleFileUploadStart);
-  const obj4 = importDefault(709);
-  importDefault(709).unsubscribe("MESSAGE_DELETE", this.handleMessageDelete);
-  const obj5 = importDefault(709);
-  importDefault(709).unsubscribe("UPLOAD_RESTORE_FAILED_UPLOAD", this.handleRestoreFailedUpload);
-  const obj6 = importDefault(709);
-  importDefault(709).unsubscribe("UPLOAD_COMPLETE", this.handleUploadComplete);
-  const obj7 = importDefault(709);
-  importDefault(709).unsubscribe("UPLOAD_PROGRESS", this.handleUploadProgress);
-  const obj8 = importDefault(709);
-  importDefault(709).unsubscribe("LOAD_MESSAGES_SUCCESS", this.handleLoadMessagesSuccess);
-  const obj9 = importDefault(709);
-  importDefault(709).unsubscribe("CACHE_LOADED", this.handleCacheLoaded);
-  const obj10 = importDefault(709);
-  importDefault(709).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  dispatcherDefault.unsubscribe("LOGOUT", this.handleLogout);
+  const obj = dispatcherDefault;
+  dispatcherDefault.unsubscribe("MESSAGE_CREATE", this.handleMessageCreate);
+  const obj2 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("MESSAGE_SEND_FAILED", this.handleTextMessageFailed);
+  const obj3 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("UPLOAD_START", this.handleFileUploadStart);
+  const obj4 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("MESSAGE_DELETE", this.handleMessageDelete);
+  const obj5 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("UPLOAD_RESTORE_FAILED_UPLOAD", this.handleRestoreFailedUpload);
+  const obj6 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("UPLOAD_COMPLETE", this.handleUploadComplete);
+  const obj7 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("UPLOAD_PROGRESS", this.handleUploadProgress);
+  const obj8 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("LOAD_MESSAGES_SUCCESS", this.handleLoadMessagesSuccess);
+  const obj9 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("CACHE_LOADED", this.handleCacheLoaded);
+  const obj10 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
 };
 prototype["_initialize"] = function _initialize() {
   const self = this;
-  tmp2.verbose("cache manager initialize");
-  let subscription = importDefault(709).subscribe("LOGOUT", this.handleLogout);
-  let obj = importDefault(709);
-  let subscription1 = importDefault(709).subscribe("MESSAGE_CREATE", this.handleMessageCreate);
-  let obj2 = importDefault(709);
-  const subscription2 = importDefault(709).subscribe("MESSAGE_SEND_FAILED", this.handleTextMessageFailed);
-  let obj3 = importDefault(709);
-  const subscription3 = importDefault(709).subscribe("UPLOAD_START", this.handleFileUploadStart);
-  const obj4 = importDefault(709);
-  const subscription4 = importDefault(709).subscribe("MESSAGE_DELETE", this.handleMessageDelete);
-  const obj5 = importDefault(709);
-  const subscription5 = importDefault(709).subscribe("UPLOAD_RESTORE_FAILED_UPLOAD", this.handleRestoreFailedUpload);
-  const obj6 = importDefault(709);
-  const subscription6 = importDefault(709).subscribe("UPLOAD_COMPLETE", this.handleUploadComplete);
-  const obj7 = importDefault(709);
-  const subscription7 = importDefault(709).subscribe("UPLOAD_PROGRESS", this.handleUploadProgress);
-  const obj8 = importDefault(709);
-  const subscription8 = importDefault(709).subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  closure_11.verbose("cache manager initialize");
+  let subscription = dispatcherDefault.subscribe("LOGOUT", this.handleLogout);
+  let obj = dispatcherDefault;
+  let subscription1 = dispatcherDefault.subscribe("MESSAGE_CREATE", this.handleMessageCreate);
+  let obj2 = dispatcherDefault;
+  const subscription2 = dispatcherDefault.subscribe("MESSAGE_SEND_FAILED", this.handleTextMessageFailed);
+  let obj3 = dispatcherDefault;
+  const subscription3 = dispatcherDefault.subscribe("UPLOAD_START", this.handleFileUploadStart);
+  const obj4 = dispatcherDefault;
+  const subscription4 = dispatcherDefault.subscribe("MESSAGE_DELETE", this.handleMessageDelete);
+  const obj5 = dispatcherDefault;
+  const subscription5 = dispatcherDefault.subscribe("UPLOAD_RESTORE_FAILED_UPLOAD", this.handleRestoreFailedUpload);
+  const obj6 = dispatcherDefault;
+  const subscription6 = dispatcherDefault.subscribe("UPLOAD_COMPLETE", this.handleUploadComplete);
+  const obj7 = dispatcherDefault;
+  const subscription7 = dispatcherDefault.subscribe("UPLOAD_PROGRESS", this.handleUploadProgress);
+  const obj8 = dispatcherDefault;
+  const subscription8 = dispatcherDefault.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
   callback(function*() {
     if (c8 === 2) {
       c8 = 3;
@@ -1062,7 +1039,7 @@ prototype["_initialize"] = function _initialize() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -1082,19 +1059,19 @@ prototype["_initialize"] = function _initialize() {
             return obj;
           } else {
             let ready = tmp;
-            let reinjectEphemerals = tmp4;
-            let closure_0;
+            closure_3 = tmp4;
+            closure_0 = undefined;
             let values;
             let channel_id;
-            reinjectEphemerals = undefined;
+            closure_3 = undefined;
             ready = undefined;
             let cached;
-            let tmp37 = outer1_20;
+            let tmp37 = closure_1_20;
             c7 = 1;
             let num7 = 1;
             c8 = 1;
-            let obj1 = { value: null, done: false };
-            obj1[0] = outer1_20();
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_20();
             return obj1;
           }
         } else {
@@ -1110,14 +1087,14 @@ prototype["_initialize"] = function _initialize() {
               obj2[0] = arg1;
               return obj2;
             } else {
-              let tmp45 = reinjectEphemerals;
+              let tmp45 = closure_3;
               let tmp46 = ready;
               closure_0 = arg1;
-              let tmp47 = outer1_11;
+              let tmp47 = closure_1_11;
               let _Object = Object;
               let tmp48 = closure_0;
               let _HermesInternal2 = HermesInternal;
-              let verboseResult = outer1_11.verbose("initialized with " + Object.keys(closure_0).length + " messages in local cache");
+              let verboseResult = closure_1_11.verbose("initialized with " + Object.keys(closure_0).length + " messages in local cache");
               let _Object2 = Object;
               let tmp50 = closure_0;
               values = Object.values(closure_0);
@@ -1127,44 +1104,44 @@ prototype["_initialize"] = function _initialize() {
               let tmp9 = closure_0;
               if (closure_0 === undefined) {
                 let tmp28 = ready;
-                let tmp29 = outer1_1;
-                let tmp30 = outer1_2;
-                obj2 = outer1_1(outer1_2[15]);
+                let tmp29 = closure_1_1;
+                let tmp30 = closure_1_2;
+                obj2 = closure_1_1(closure_1_2[15]);
                 let tmp31 = closure_0;
                 let subscription = obj2.subscribe("LOAD_MESSAGES_SUCCESS", closure_0.handleLoadMessagesSuccess);
-                let tmp33 = outer1_1;
-                let tmp34 = outer1_2;
-                let obj3 = outer1_1(outer1_2[15]);
+                let tmp33 = closure_1_1;
+                let tmp34 = closure_1_2;
+                let obj3 = closure_1_1(closure_1_2[15]);
                 let tmp35 = closure_0;
                 let subscription1 = obj3.subscribe("CACHE_LOADED", closure_0.handleCacheLoaded);
                 let num4 = 3;
                 c8 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
-                let tmp53 = reinjectEphemerals;
+                let tmp53 = closure_3;
                 let tmp54 = ready;
-                let c6 = 1;
+                c6 = 1;
                 values = tmp10;
                 let tmp55 = values;
                 channel_id = values.channel_id;
-                let tmp56 = outer1_1;
-                let tmp57 = outer1_2;
-                let obj9 = outer1_1(outer1_2[20]);
+                let tmp56 = closure_1_1;
+                let tmp57 = closure_1_2;
+                let obj9 = closure_1_1(closure_1_2[20]);
                 let tmp58 = channel_id;
                 let value = obj9.get(channel_id);
                 channel_id = value;
                 if (value == null) {
                   channel_id = { ready: false, cached: false };
                 }
-                let tmp11 = reinjectEphemerals;
+                let tmp11 = closure_3;
                 let tmp12 = ready;
                 let tmp13 = channel_id;
-                reinjectEphemerals = channel_id;
-                let tmp14 = reinjectEphemerals;
-                ready = reinjectEphemerals.ready;
-                let tmp15 = reinjectEphemerals;
-                cached = reinjectEphemerals.cached;
-                let tmp16 = outer1_11;
+                closure_3 = channel_id;
+                let tmp14 = closure_3;
+                ready = closure_3.ready;
+                let tmp15 = closure_3;
+                cached = closure_3.cached;
+                let tmp16 = closure_1_11;
                 let tmp17 = channel_id;
                 let tmp18 = ready;
                 let tmp19 = cached;
@@ -1173,20 +1150,20 @@ prototype["_initialize"] = function _initialize() {
                 let str2 = " {ready: ";
                 let str3 = ", cached: ";
                 let str4 = "}";
-                let verboseResult1 = outer1_11.verbose("rehydrating cached messages " + channel_id + " {ready: " + ready + ", cached: " + cached + "}");
+                let verboseResult1 = closure_1_11.verbose("rehydrating cached messages " + channel_id + " {ready: " + ready + ", cached: " + cached + "}");
                 let tmp21 = ready;
                 if (ready) {
-                  let tmp22 = reinjectEphemerals;
+                  let tmp22 = closure_3;
                   let tmp23 = ready;
-                  let tmp24 = outer1_11;
-                  let verboseResult2 = outer1_11.verbose("manually invoking handleChannelLoaded");
-                  let tmp26 = outer1_0;
+                  let tmp24 = closure_1_11;
+                  let verboseResult2 = closure_1_11.verbose("manually invoking handleChannelLoaded");
+                  let tmp26 = closure_1_0;
                   let tmp27 = channel_id;
                   c7 = 3;
                   let num3 = 1;
                   c8 = 1;
                   obj3 = { value: null, done: false };
-                  obj3[0] = outer1_0.handleChannelLoaded(channel_id);
+                  obj3[0] = closure_1_0.handleChannelLoaded(channel_id);
                   return obj3;
                 }
               }
@@ -1219,7 +1196,7 @@ prototype["_initialize"] = function _initialize() {
   })();
 };
 const localMessageCacheManager = new LocalMessageCacheManager();
-let tmp2 = new require("fetchFingerprint")("LocalMessageCacheManager");
-let result = require("hasFlag").fileFinishedImporting("modules/local_message_caching/LocalMessageCacheManager.native.tsx");
+let tmp2 = new timestampDefault("LocalMessageCacheManager");
+let result = require("set").fileFinishedImporting("modules/local_message_caching/LocalMessageCacheManager.native.tsx");
 
 export default localMessageCacheManager;

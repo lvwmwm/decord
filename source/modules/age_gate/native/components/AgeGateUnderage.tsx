@@ -1,39 +1,35 @@
-// Module ID: 15252
-// Function ID: 15253
+// Module ID: 15316
+// Function ID: 15317
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 676, 21, 4661, 712, 8582, 1500, 6314, 6318, 1236, 8612, 8615, 5447, 8611, 4734, 1993, 4745, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 8621, 1500, 6345, 6349, 1236, 8649, 8652, 5452, 8648, 4739, 1994, 4750, 2]
 // Exports: default
 
-// Module 15252 (AgeGateUnderage)
-import noop from "noop";
-import { View } from "Button";
-import { HelpdeskArticles } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15316 (AgeGateUnderage)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { HelpdeskArticles } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: closure_6, Fragment: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles((arg0) => {
   let num = 0;
   if (arg0) {
     num = 80;
   }
   let obj = { container: null, header: null, body: null, buttonWrapper: null };
-  obj = { alignItems: "center", justifyContent: "center", flex: 1, padding: 16, paddingTop: 0, paddingBottom: num, backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW };
+  obj = { alignItems: "center", justifyContent: "center", flex: 1, padding: 16, paddingTop: 0, paddingBottom: num, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
   obj[0] = obj;
   obj[1] = { marginTop: 16 };
   obj[2] = { marginTop: 8, lineHeight: 20, textAlign: "center" };
   obj[3] = { width: "100%", marginTop: 24 };
   return obj;
 });
-const result = require("ME").fileFinishedImporting("modules/age_gate/native/components/AgeGateUnderage.tsx");
+const result = require("set").fileFinishedImporting("modules/age_gate/native/components/AgeGateUnderage.tsx");
 
 export default function AgeGateUnderage(onClose) {
-  let existingUser;
-  let underageMessage;
   onClose = onClose.onClose;
   ({ underageMessage, existingUser } = onClose);
   if (existingUser === undefined) {
@@ -63,7 +59,7 @@ export default function AgeGateUnderage(onClose) {
     obj = { headerLeft: fn, gestureEnabled: !flag2 };
     navigation.setOptions(obj);
   }, items);
-  let obj1 = onClose(flag2[9]);
+  obj1 = onClose(flag2[9]);
   obj1.useNavigatorBackPressHandler(() => {
     onClose();
     return true;

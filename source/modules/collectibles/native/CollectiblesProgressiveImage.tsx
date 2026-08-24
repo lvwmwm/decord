@@ -1,43 +1,41 @@
-// Module ID: 14988
-// Function ID: 14989
+// Module ID: 15052
+// Function ID: 15053
 // Name: CollectiblesProgressiveImage
-// Dependencies: [19, 17, 21, 4115, 4664, 2]
+// Dependencies: [19, 17, 21, 4119, 4671, 2]
 // Exports: CollectiblesProgressiveImage
 
-// Module 14988 (CollectiblesProgressiveImage)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 15052 (CollectiblesProgressiveImage)
+import noopAll from "noop" /* 19 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
 const require = arg1;
+noopAll;
 ({ View: c3, StyleSheet: c4 } = get_ActivityIndicator);
-let result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesProgressiveImage.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesProgressiveImage.tsx");
 
 export const CollectiblesProgressiveImage = function CollectiblesProgressiveImage(arg0) {
-  let source;
-  let style;
   ({ source, style } = arg0);
   let sharedValue;
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = sharedValue(4115);
+  let obj = sharedValue(4119);
   sharedValue = obj.useSharedValue(0);
   obj = { style, children: null };
   obj = {};
   const merged1 = Object.assign(merged);
   obj.source = source;
-  const obj1 = {};
+  obj1 = {};
   const merged2 = Object.assign(absoluteFillObject.absoluteFillObject);
   obj1.opacity = sharedValue;
   obj.style = obj1;
   obj.onLoad = function onLoad() {
-    let obj = sharedValue(outer1_2[4]);
+    let obj = sharedValue(closure_1_2[4]);
     obj = { duration: 500, easing: null };
-    const Easing = sharedValue(outer1_2[3]).Easing;
-    obj[1] = Easing.inOut(sharedValue(outer1_2[3]).Easing.ease);
+    const Easing = sharedValue(closure_1_2[3]).Easing;
+    obj[1] = Easing.inOut(sharedValue(closure_1_2[3]).Easing.ease);
     const result = sharedValue.set(obj.withTiming(1, obj));
   };
-  obj[1] = jsx(importDefault(4115).Image, {});
+  obj[1] = jsx(_modDef4119.Image, {});
   return <closure_3 />;
 };

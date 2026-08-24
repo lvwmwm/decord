@@ -1,18 +1,19 @@
-// Module ID: 4521
-// Function ID: 4522
+// Module ID: 4526
+// Function ID: 4527
 // Name: addSku
-// Dependencies: [4515, 1994, 589, 709, 2]
+// Dependencies: [4520, 1995, 589, 709, 2]
 
-// Module 4521 (addSku)
-import createFromServer from "createFromServer";
-import _getSystemLocale from "_getSystemLocale";
-import { Store } from "initialize";
-import set from "initialize";
+// Module 4526 (addSku)
+import initializeAll from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_1 from "createFromServer" /* 4520 */;
+import closure_2 from "_getSystemLocale" /* 1995 */;
+import set from "set" /* 2 */;
 
 function addSku(sku) {
-  let closure_0 = sku;
+  closure_0 = sku;
   let value = map1.get(sku.id);
-  const fromServer = createFromServer.createFromServer(sku);
+  const fromServer = closure_1.createFromServer(sku);
   if (null != value) {
     if (tmp3) {
       fromServer.price = value.price;
@@ -42,7 +43,7 @@ function addSku(sku) {
   const bundled_sku_ids = sku.bundled_sku_ids;
   if (bundled_sku_ids != null) {
     const item = bundled_sku_ids.forEach((arg0) => {
-      const result = outer1_3.set(arg0, sku.id);
+      const result = closure_1_3.set(arg0, sku.id);
     });
   }
   if (!map2.has(sku.application_id)) {
@@ -84,22 +85,22 @@ function handleEntitlementsFetch(arg0) {
   }
 }
 function handleUserSettingsStoreUpdate() {
-  if (locale === _getSystemLocale.locale) {
+  if (locale === closure_2.locale) {
     return false;
   } else {
     locale = tmp.locale;
     const _Map = Map;
-    const map = new Map();
+    map = new Map();
     const _Set = Set;
-    const set = new Set();
+    set = new Set();
     const _Set2 = Set;
-    const set1 = new Set();
+    set1 = new Set();
     const _Map2 = Map;
-    const map1 = new Map();
+    map1 = new Map();
     const _Map3 = Map;
-    const map2 = new Map();
+    map2 = new Map();
     const _Map4 = Map;
-    const map3 = new Map();
+    map3 = new Map();
   }
 }
 let map = new Map();
@@ -108,14 +109,15 @@ let set1 = new Set();
 let map1 = new Map();
 let map2 = new Map();
 let map3 = new Map();
+const Store = initializeAll.Store;
 class SKUStore extends Store {
 }
 const prototype = SKUStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(_getSystemLocale);
-  const items = [_getSystemLocale];
+  this.waitFor(closure_2);
+  const items = [closure_2];
   this.syncWith(items, handleUserSettingsStoreUpdate);
-  const locale = _getSystemLocale.locale;
+  const locale = closure_2.locale;
 };
 prototype["get"] = function get(arg0) {
   return map1.get(arg0);
@@ -152,7 +154,7 @@ prototype["didFetchingSkuFail"] = function didFetchingSkuFail(skuId) {
   return set1.has(skuId);
 };
 SKUStore.displayName = "SKUStore";
-const sKUStore = new SKUStore(require("dispatcher"), {
+const sKUStore = new SKUStore(dispatcherDefault, {
   STORE_LISTINGS_FETCH_START: function handleStoreListingsFetchStart(skuId) {
     set.add(skuId.skuId);
   },
@@ -204,8 +206,6 @@ const sKUStore = new SKUStore(require("dispatcher"), {
     set1.add(skuId);
   },
   SKUS_FETCH_SUCCESS: function handleSkusFetchSuccess(arg0) {
-    let guildId;
-    let skus;
     ({ guildId, skus } = arg0);
     while (tmp !== undefined) {
       let tmp3 = skuFetchSuccess;
@@ -214,18 +214,18 @@ const sKUStore = new SKUStore(require("dispatcher"), {
     }
     if (null != guildId) {
       const _Set = Set;
-      const set = new Set(skus.map((id) => id.id));
+      set = new Set(skus.map((id) => id.id));
       const result = map3.set(guildId, set);
     }
   },
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: handleEntitlementsFetch,
   APPLICATION_STORE_CLEAR_DATA: function handleClearData() {
-    const map = new Map();
-    const set = new Set();
-    const set1 = new Set();
-    const map1 = new Map();
-    const map2 = new Map();
-    const map3 = new Map();
+    map = new Map();
+    set = new Set();
+    set1 = new Set();
+    map1 = new Map();
+    map2 = new Map();
+    map3 = new Map();
   },
   APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: handleEntitlementsFetch,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: handleEntitlementsFetch

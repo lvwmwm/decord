@@ -1,26 +1,21 @@
-// Module ID: 10782
-// Function ID: 10783
+// Module ID: 10821
+// Function ID: 10822
 // Name: _handleContentLinking
-// Dependencies: [5, 4493, 676, 5260, 7211, 1222, 10550, 2]
+// Dependencies: [5, 4497, 676, 5265, 7249, 1222, 10589, 2]
 // Exports: default
 
-// Module 10782 (_handleContentLinking)
-import transitionTo from "transitionTo";
-import { Routes } from "ME";
+// Module 10821 (_handleContentLinking)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { Routes } from "ME" /* 676 */;
 
 const require = arg1;
 function _handleContentLinking() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
-      let c3;
-      let c4;
       if (c4 === 2) {
         c4 = 3;
         HermesBuiltin.throwTypeError();
@@ -32,7 +27,7 @@ function _handleContentLinking() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -57,9 +52,9 @@ function _handleContentLinking() {
               ({ guildId: c0, channelId: c1, navigationSettings: c2, messageId: c3, summaryId: c4 } = callback);
               let safe;
               let navigationReplace;
-              let c7;
+              closure_7 = undefined;
               let waitForConnection;
-              let c9;
+              closure_9 = undefined;
               let skipMessageFetch;
               c3 = 1;
               c4 = 1;
@@ -72,7 +67,7 @@ function _handleContentLinking() {
                 throw arg1;
               } else if (arg0 === 2) {
                 c4 = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -83,27 +78,27 @@ function _handleContentLinking() {
                 if (!tmp7) {
                   tmp7 = navigationReplace;
                 }
-                c7 = tmp7;
+                closure_7 = tmp7;
                 waitForConnection = c2.waitForConnection;
                 let tmp11 = undefined === waitForConnection;
                 if (!tmp11) {
                   tmp11 = waitForConnection;
                 }
-                c9 = tmp11;
+                closure_9 = tmp11;
                 skipMessageFetch = c2.skipMessageFetch;
-                if (c9) {
+                if (closure_9) {
                   if (navigationReplace != null) {
                     navigationReplace();
                   }
                   const promise = new Promise((arg0, arg1) => {
-                    let closure_0 = arg0;
-                    let closure_1 = arg1;
-                    function o() {
-                      const error = new Error("superseded");
+                    closure_0 = arg0;
+                    closure_1 = arg1;
+                    c6 = function o() {
+                      error = new Error("superseded");
                       return callback2(error);
-                    }
+                    };
                     v1(() => {
-                      const o = null;
+                      c6 = null;
                       callback();
                     });
                   });
@@ -144,11 +139,11 @@ function _handleContentLinking() {
                 obj4.setSelectedSummary(callback2, c4);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
             if (safe) {
               obj4 = { navigationReplace: null, openChannel: true, skipMessageFetch: null };
-              obj4[0] = c7;
+              obj4[0] = closure_7;
               obj4[2] = skipMessageFetch;
               c3 = 3;
               c4 = 1;
@@ -158,7 +153,7 @@ function _handleContentLinking() {
             } else {
               obj2 = callback(c2[5]);
               const obj6 = { navigationReplace: null, openChannel: true, skipMessageFetch: null };
-              obj6[0] = c7;
+              obj6[0] = closure_7;
               obj6[2] = skipMessageFetch;
               obj2.transitionTo(safe.CHANNEL(callback, callback2, c3), obj6);
             }
@@ -172,7 +167,7 @@ function _handleContentLinking() {
     iter.next();
     return iter;
   });
-  const _handleContentLinking = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -183,7 +178,7 @@ function _handleContentLinking() {
 }
 require("processCallbacks").addPostConnectionCallback;
 let c6 = null;
-const result = require("ME").fileFinishedImporting("modules/links/native/handleContentLinking.tsx");
+const result = require("set").fileFinishedImporting("modules/links/native/handleContentLinking.tsx");
 
 export default function handleContentLinking() {
   const self = this;

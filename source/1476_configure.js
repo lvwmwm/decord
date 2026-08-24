@@ -5,47 +5,46 @@
 // Exports: addEventListener, configure, fetch, refresh, useNetInfo, useNetInfoInstance
 
 // Module 1476 (configure)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { Platform } from "get ActivityIndicator";
-import module_1477 from "module_1477";
+import StateDefault from "State" /* 1478 */;
+import _modAll1483 from "module_1483" /* 1483 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import noop from "noop" /* 19 */;
+import { Platform } from "get ActivityIndicator" /* 17 */;
+import closure_7 from "module_1477" /* 1477 */;
 
-let c4;
-let c5;
-let closure_6;
 function configure(arg0) {
   const obj = {};
-  const merged = Object.assign(importDefault(1477));
+  const merged = Object.assign(closure_7);
   const merged1 = Object.assign(arg0);
-  if (c8) {
-    c8.tearDown();
+  if (closure_8) {
+    closure_8.tearDown();
     if (typeof createState !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    const tmp10 = new importDefault(1478)(obj);
-    c8 = tmp10;
+    const tmp10 = new StateDefault(obj);
+    closure_8 = tmp10;
   }
 }
 function fetch(arg0) {
-  let obj = c8;
-  if (!c8) {
+  let obj = closure_8;
+  if (!closure_8) {
     if (typeof createState !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    const tmp7 = new importDefault(1478)(module_1477);
-    c8 = tmp7;
+    const tmp7 = new StateDefault(closure_7);
+    closure_8 = tmp7;
     obj = tmp7;
   }
   return obj.latest(arg0);
 }
 function refresh() {
-  let obj = c8;
-  if (!c8) {
+  let obj = closure_8;
+  if (!closure_8) {
     if (typeof createState !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    const tmp7 = new importDefault(1478)(module_1477);
-    c8 = tmp7;
+    const tmp7 = new StateDefault(closure_7);
+    closure_8 = tmp7;
     obj = tmp7;
   }
   if (c10) {
@@ -56,14 +55,14 @@ function refresh() {
     c10 = true;
     const _fetchCurrentStateResult = obj._fetchCurrentState();
     cleanupPromise = obj._fetchCurrentState().then((arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       const item = arr.forEach((arg0) => arg0(closure_0));
       return arg0;
     }).finally(() => {
-      let c10 = false;
+      c10 = false;
     });
     const nextPromise = obj._fetchCurrentState().then((arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       const item = arr.forEach((arg0) => arg0(closure_0));
       return arg0;
     });
@@ -71,64 +70,64 @@ function refresh() {
   return cleanupPromise;
 }
 function addEventListener(arg0) {
-  const importDefault = arg0;
-  let obj = c8;
-  if (!c8) {
+  importDefault = arg0;
+  let obj = closure_8;
+  if (!closure_8) {
     if (typeof createState !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    const tmp7 = new importDefault(1478)(module_1477);
-    c8 = tmp7;
+    const tmp7 = new StateDefault(closure_7);
+    closure_8 = tmp7;
     obj = tmp7;
   }
   obj.add(arg0);
   return () => {
-    if (outer1_8) {
-      outer1_8.remove(f70320);
+    if (closure_1_8) {
+      closure_1_8.remove(f70876);
     }
   };
 }
 function useNetInfo(arg0) {
   if (arg0) {
     let obj = {};
-    const merged = Object.assign(importDefault(1477));
+    const merged = Object.assign(closure_7);
     const merged1 = Object.assign(arg0);
-    if (c8) {
+    if (closure_8) {
       obj2.tearDown();
       if (typeof createState !== "function") {
         HermesBuiltin.throwTypeError();
       }
       const tmp13 = new tmp(1478)(obj);
-      c8 = tmp13;
+      closure_8 = tmp13;
     }
-    obj2 = c8;
+    obj2 = closure_8;
     tmp = importDefault;
   }
-  obj = { type: importAll(1483).NetInfoStateType.unknown, isConnected: null, isInternetReachable: null, details: null };
+  obj = { type: _modAll1483.NetInfoStateType.unknown, isConnected: null, isInternetReachable: null, details: null };
   const tmp15 = callback(callback2(obj), 2);
   importDefault = tmp15[1];
   callback3(() => {
-    let obj = closure_8;
+    obj = closure_8;
     if (!closure_8) {
-      if (typeof outer1_9 !== "function") {
+      if (typeof closure_1_9 !== "function") {
         HermesBuiltin.throwTypeError();
       }
-      const tmp8 = new callback(outer1_2[4])(obj);
+      const tmp8 = new callback(closure_1_2[4])(obj);
       closure_8 = tmp8;
       obj = tmp8;
     }
-    obj.add(f70320);
-    f70320 = () => {
-      if (outer1_8) {
-        outer1_8.remove(f70320);
+    obj.add(f70876);
+    f70876 = () => {
+      if (closure_1_8) {
+        closure_1_8.remove(f70876);
       }
     };
     return () => {
-      if (typeof f70320 !== "function") {
+      if (typeof f70876 !== "function") {
         HermesBuiltin.throwTypeError();
       }
-      if (outer1_8) {
-        outer1_8.remove(f70320);
+      if (closure_1_8) {
+        closure_1_8.remove(f70876);
       }
     };
   }, []);
@@ -139,7 +138,7 @@ function useNetInfoInstance() {
   if (arg0 === undefined) {
     flag = false;
   }
-  const importAll = arg1;
+  importAll = arg1;
   let first;
   let callback;
   let callback2;
@@ -166,12 +165,12 @@ function useNetInfoInstance() {
     refresh: callback4(() => {
       let tmp = first;
       if (first) {
-        tmp = !outer1_10;
+        tmp = !c10;
       }
       if (tmp) {
-        outer1_10 = true;
+        c10 = true;
         first._fetchCurrentState().finally(() => {
-          let c10 = false;
+          c10 = false;
         });
         const _fetchCurrentStateResult = first._fetchCurrentState();
       }

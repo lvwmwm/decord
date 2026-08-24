@@ -1,17 +1,17 @@
-// Module ID: 4219
-// Function ID: 4220
+// Module ID: 4223
+// Function ID: 4224
 // Name: nameFromUser
-// Dependencies: [4220, 1922, 676, 589, 1236, 2]
+// Dependencies: [4224, 1922, 676, 589, 1236, 2]
 // Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
 
-// Module 4219 (nameFromUser)
-import initialize from "initialize";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 4223 (nameFromUser)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "initialize" /* 4224 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function nameFromUser(primary1) {
   const global_name = primary1.global_name;
   let tmp = null != global_name;
@@ -41,7 +41,7 @@ function nameFromUser(primary1) {
 }
 function getName(username) {
   if (null != username) {
-    let hidePersonalInformation = initialize.hidePersonalInformation;
+    let hidePersonalInformation = closure_2.hidePersonalInformation;
     const obj = nameFromUser(username);
     if (hidePersonalInformation) {
       username = username.username;
@@ -64,8 +64,8 @@ function getName(username) {
   }
 }
 function useName(username) {
-  const items = [initialize];
-  let stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => obj.hidePersonalInformation);
+  const items = [closure_2];
+  let stateFromStores = initialize.useStateFromStores(items, () => obj.hidePersonalInformation);
   if (null != username) {
     const obj2 = nameFromUser(username);
     if (stateFromStores) {
@@ -87,7 +87,7 @@ function useName(username) {
     }
     return combined;
   }
-  const obj = require(589) /* initialize */;
+  const obj = initialize;
 }
 function getGlobalName(user) {
   if (null != user) {
@@ -125,7 +125,7 @@ function getFormattedName(inviter, arg1) {
       const merged1 = Object.assign(undefined);
       let hidePersonalInformation = "auto" !== obj.identifiable;
       if (!hidePersonalInformation) {
-        hidePersonalInformation = initialize.hidePersonalInformation;
+        hidePersonalInformation = closure_2.hidePersonalInformation;
       }
       let username = presentUserTag(inviter, obj, hidePersonalInformation);
       const tmp9 = presentUserTag;
@@ -173,9 +173,9 @@ function humanizeStatus(DND, arg1) {
   const isMobile = obj.isMobile;
   const isVR = obj.isVR;
   if (constants.ONLINE === DND) {
-    const intl6 = require(1236) /* getSystemLocale */.intl;
+    const intl6 = getSystemLocale.intl;
     const string = intl6.string;
-    const t = require(1236) /* getSystemLocale */.t;
+    const t = getSystemLocale.t;
     if (tmp2) {
       let stringResult = string(t.SWnU0R);
     } else if (tmp) {
@@ -185,20 +185,20 @@ function humanizeStatus(DND, arg1) {
     }
     return stringResult;
   } else if (tmp3.OFFLINE === DND) {
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    return intl5.string(require(1236) /* getSystemLocale */.t.Vv0abJ);
+    const intl5 = getSystemLocale.intl;
+    return intl5.string(getSystemLocale.t.Vv0abJ);
   } else if (tmp3.IDLE === DND) {
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    return intl4.string(require(1236) /* getSystemLocale */.t.qWbtVU);
+    const intl4 = getSystemLocale.intl;
+    return intl4.string(getSystemLocale.t.qWbtVU);
   } else if (tmp3.DND === DND) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(require(1236) /* getSystemLocale */.t.jaNpQH);
+    const intl3 = getSystemLocale.intl;
+    return intl3.string(getSystemLocale.t.jaNpQH);
   } else if (tmp3.INVISIBLE === DND) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(require(1236) /* getSystemLocale */.t.bg24HO);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(getSystemLocale.t.bg24HO);
   } else if (tmp3.STREAMING === DND) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.XKYej5);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.XKYej5);
   } else {
     const UNKNOWN = tmp3.UNKNOWN;
     return null;
@@ -208,8 +208,8 @@ function humanizeStatus(DND, arg1) {
 }
 function presentUserTag(username, identifiable, arg2) {
   if (null == username) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.sKdZ6U);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.sKdZ6U);
   } else {
     username = username.username;
     let tmp = null != username;
@@ -260,26 +260,26 @@ function getUserTag(user, arg1) {
   const merged1 = Object.assign(arg1);
   let hidePersonalInformation = "auto" !== obj.identifiable;
   if (!hidePersonalInformation) {
-    hidePersonalInformation = initialize.hidePersonalInformation;
+    hidePersonalInformation = closure_2.hidePersonalInformation;
   }
   return presentUserTag(user, obj, hidePersonalInformation);
 }
 function useUserTag(user) {
   const merged = Object.assign(closure_8);
   const merged1 = Object.assign(arg1);
-  const items = [initialize];
-  return presentUserTag(user, {}, require(589) /* initialize */.useStateFromStores(items, () => obj.hidePersonalInformation));
+  const items = [closure_2];
+  return presentUserTag(user, {}, initialize.useStateFromStores(items, () => obj.hidePersonalInformation));
 }
 function useDirectMessageRecipient(arg0) {
   const _require = arg0;
-  const items = [mergeGuildAvatar];
+  const items = [closure_3];
   return _require(589).useStateFromStores(items, () => {
     if (null != closure_0) {
       let user = null;
       if (obj.isPrivate()) {
         user = null;
         if (obj.isDM()) {
-          user = outer1_3.getUser(obj.getRecipientId());
+          user = closure_1_3.getUser(obj.getRecipientId());
         }
       }
       return user;
@@ -294,7 +294,7 @@ function getUserIsStaff() {
 let c6 = 86400000;
 let c7 = "???";
 let closure_8 = { mode: "full", decoration: "never", identifiable: "auto" };
-const result = require("ME").fileFinishedImporting("utils/UserUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/UserUtils.tsx");
 
 export default {
   getName,
@@ -321,8 +321,6 @@ export { getGlobalName };
 export { getFormattedName };
 export { humanizeStatus };
 export const accountAgeInRange = function accountAgeInRange(createdAt) {
-  let maxDaysOld;
-  let minDaysOld;
   ({ maxDaysOld, minDaysOld } = arg1);
   if (minDaysOld === undefined) {
     minDaysOld = 0;

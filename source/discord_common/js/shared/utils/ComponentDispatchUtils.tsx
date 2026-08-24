@@ -4,7 +4,10 @@
 // Dependencies: [652, 2]
 
 // Module 1233 (safeDispatch)
-let result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/ComponentDispatchUtils.tsx");
+import set from "set" /* 2 */;
+import EventEmitter from "EventEmitter" /* 652 */;
+
+let result = set.fileFinishedImporting("../discord_common/js/shared/utils/ComponentDispatchUtils.tsx");
 class ComponentDispatcher {
   constructor() {
     obj = global;
@@ -111,7 +114,7 @@ prototype["hasSubscribers"] = function hasSubscribers(MODAL_CLOSE) {
 };
 prototype["_checkSavedDispatches"] = function _checkSavedDispatches(arg0) {
   const self = this;
-  let closure_0 = arg0;
+  closure_0 = arg0;
   if (null != this._savedDispatches[arg0]) {
     const item = arr.forEach((arg0) => {
       self.dispatch(closure_0, arg0);

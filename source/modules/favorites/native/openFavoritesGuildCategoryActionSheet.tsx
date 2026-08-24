@@ -1,20 +1,23 @@
-// Module ID: 15371
-// Function ID: 15372
+// Module ID: 15435
+// Function ID: 15436
 // Name: openFavoritesGuildCategoryActionSheet
-// Dependencies: [4342, 15372, 2007, 2]
+// Dependencies: [4346, 15436, 2008, 2]
 // Exports: default
 
-// Module 15371 (openFavoritesGuildCategoryActionSheet)
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/favorites/native/openFavoritesGuildCategoryActionSheet.tsx");
+// Module 15435 (openFavoritesGuildCategoryActionSheet)
+import set from "set" /* 2 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+
+const result = set.fileFinishedImporting("modules/favorites/native/openFavoritesGuildCategoryActionSheet.tsx");
 
 export default function openFavoritesGuildCategoryActionSheet(categoryId) {
   const combined = "FavoritesGuildCategoryLongPress-" + categoryId;
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = {
     categoryId,
     onClose() {
-      outer1_1(outer1_2[0]).hideActionSheet(combined);
+      closure_1_1(closure_1_2[0]).hideActionSheet(combined);
     }
   };
-  obj.openLazy(combined(2007)(15372, dependencyMap.paths), combined, obj);
+  obj.openLazy(combined(2008)(15436, dependencyMap.paths), combined, obj);
 };

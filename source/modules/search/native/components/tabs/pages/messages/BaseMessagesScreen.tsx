@@ -1,25 +1,21 @@
-// Module ID: 15916
-// Function ID: 15917
+// Module ID: 16013
+// Function ID: 16014
 // Name: BaseMessagesScreen
-// Dependencies: [19, 4971, 11510, 8506, 21, 11531, 589, 11511, 15907, 15917, 11509, 15918, 15919, 15862, 15874, 2]
+// Dependencies: [19, 4976, 11559, 8545, 21, 11580, 589, 11560, 16004, 16014, 11558, 16015, 16016, 15959, 15971, 2]
 // Exports: default, trackMessageItemPress
 
-// Module 15916 (BaseMessagesScreen)
-import noop from "noop";
-import handleReaction from "handleReaction";
-import prototype from "prototype";
-import { SearchResultContentEntityTypes as closure_6 } from "SearchEntrypointAnalyticsLocations";
-import { jsx } from "jsxProd";
+// Module 16013 (BaseMessagesScreen)
+import _modDef11580 from "module_11580" /* 11580 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "handleReaction" /* 4976 */;
+import closure_5 from "prototype" /* 11559 */;
+import { SearchResultContentEntityTypes as closure_6 } from "SearchEntrypointAnalyticsLocations" /* 8545 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("prototype").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/BaseMessagesScreen.tsx");
+let result = require("set").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/BaseMessagesScreen.tsx");
 
 export default function BaseMessagesScreen(data) {
-  let ItemSeparatorComponent;
-  let contentContainerStyle;
-  let errorText;
-  let isErrorFullscreen;
-  let numColumns;
   data = data.data;
   const searchContext = data.searchContext;
   const tab = data.tab;
@@ -46,7 +42,7 @@ export default function BaseMessagesScreen(data) {
   });
   isHistoricalIndexing = stateFromStoresObject.isHistoricalIndexing;
   documentsIndexed = stateFromStoresObject.documentsIndexed;
-  let obj1 = data(tab[8]);
+  obj1 = data(tab[8]);
   obj = { searchContext, tab, hasListItems: data.length > 0 };
   const messageSearchErrorScreen = obj1.useMessageSearchErrorScreen(obj);
   hasError = messageSearchErrorScreen.hasError;
@@ -119,13 +115,10 @@ export default function BaseMessagesScreen(data) {
   return tmp11;
 };
 export const trackMessageItemPress = function trackMessageItemPress(messageId) {
-  let channelId;
-  let index;
-  let searchContext;
   messageId = messageId.messageId;
   ({ searchContext, channelId, index } = messageId);
   message = message.getMessage(messageId);
-  let obj = importDefault(11531);
+  let obj = _modDef11580;
   obj = { searchContext, channelId, messageId, userId: null, index: null, entityType: null };
   let id;
   if (message != null) {

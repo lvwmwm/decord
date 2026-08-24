@@ -1,23 +1,25 @@
-// Module ID: 14157
-// Function ID: 14158
+// Module ID: 14225
+// Function ID: 14226
 // Name: route
-// Dependencies: [4030, 8198, 676, 589, 1236, 10669, 10598, 14158, 2]
+// Dependencies: [4033, 8238, 676, 589, 1236, 10708, 10637, 14226, 2]
 
-// Module 14157 (route)
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import createToggle from "createToggle";
+// Module 14225 (route)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "markAllUserIdListsStale" /* 4033 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.PFOUKW);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.PFOUKW);
   },
   useDescription: function useAccountBlockedUsersSettingDescription() {
-    const items = [markAllUserIdListsStale];
-    const numberOfBlockedUsers = require(589) /* initialize */.useStateFromStores(items, () => "" + blockedIDs.getBlockedIDs().length);
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.format(require(1236) /* getSystemLocale */.t["r91W/h"], { numberOfBlockedUsers });
+    const items = [closure_2];
+    const numberOfBlockedUsers = initialize.useStateFromStores(items, () => "" + blockedIDs.getBlockedIDs().length);
+    const intl = getSystemLocale.intl;
+    return intl.format(getSystemLocale.t["r91W/h"], { numberOfBlockedUsers });
   },
   IconComponent: require("DenyIcon").DenyIcon,
   parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
@@ -26,11 +28,11 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.BLOCKED_USERS_V2,
   getComponent() {
-    return require(14158) /* BlockedUsersList */.default;
+    return require(14226) /* BlockedUsersList */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/AccountBlockedUsersSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AccountBlockedUsersSetting.tsx");
 
 export default createToggle;
 export const AccountBlockedUsersSettingV2 = createToggle;

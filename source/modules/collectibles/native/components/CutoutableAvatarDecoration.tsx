@@ -1,23 +1,19 @@
-// Module ID: 8401
-// Function ID: 8402
+// Module ID: 8440
+// Function ID: 8441
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 17, 4662, 21, 647, 1435, 500, 8402, 8406, 5449, 2]
+// Dependencies: [19, 17, 4669, 21, 647, 1435, 500, 8441, 8445, 5454, 2]
 // Exports: default
 
-// Module 8401 (CutoutableAvatarDecoration)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { jsx } from "jsxProd";
+// Module 8440 (CutoutableAvatarDecoration)
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/collectibles/native/components/CutoutableAvatarDecoration.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/native/components/CutoutableAvatarDecoration.tsx");
 
 export default function CutoutableAvatarDecoration(size) {
-  let avatarDecorationUrl;
-  let sizeStyle;
-  let source;
-  let style;
   size = size.size;
   const avatarDecoration = size.avatarDecoration;
   const decorationStyle = size.decorationStyle;
@@ -26,7 +22,7 @@ export default function CutoutableAvatarDecoration(size) {
   let stateFromStores;
   let tmp2 = decorationStyle;
   let obj = size(decorationStyle[4]);
-  let items = [maybeApplyNoTextColorForLightCustomTheme];
+  let items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const items1 = [animate, size, avatarDecoration, decorationStyle, stateFromStores];
   const memo = animate.useMemo(() => {
@@ -69,7 +65,7 @@ export default function CutoutableAvatarDecoration(size) {
           let tmp9 = jsx(avatarDecoration(tmp2[7]), { source: null, style: null });
           const tmp12 = avatarDecoration(tmp2[7]);
         } else {
-          const obj1 = { source: null, style: null };
+          obj1 = { source: null, style: null };
           obj1[0] = source;
           obj1[1] = style;
           tmp9 = jsx(avatarDecoration(tmp2[9]), { source: null, style: null });

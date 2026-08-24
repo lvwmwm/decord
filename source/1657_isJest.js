@@ -5,9 +5,11 @@
 // Exports: isAndroid, isChromeDebugger, isFabric, isIOS, isJest, isMacOS, isReact19, isWeb, isWindowAvailable, shouldBeUseWeb
 
 // Module 1657 (isJest)
-import { version } from "noop";
-import { Platform } from "get ActivityIndicator";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import noop from "noop" /* 19 */;
 
+const version = noop.version;
+const Platform = get_ActivityIndicator.Platform;
 
 export const isJest = function isJest() {
   return process.env.JEST_WORKER_ID;

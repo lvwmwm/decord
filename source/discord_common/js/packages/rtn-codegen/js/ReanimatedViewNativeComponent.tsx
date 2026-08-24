@@ -1,14 +1,15 @@
-// Module ID: 4117
-// Function ID: 4118
+// Module ID: 4121
+// Function ID: 4122
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 4117 (__INTERNAL_VIEW_CONFIG)
-import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+// Module 4121 (__INTERNAL_VIEW_CONFIG)
+import set from "set" /* 2 */;
+import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
 const obj = { uiViewClassName: "ReanimatedView", validAttributes: { hasEnteringAnimation: true } };
 const value = setRuntimeConfigProvider.get("ReanimatedView", () => obj);
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ReanimatedViewNativeComponent.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ReanimatedViewNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

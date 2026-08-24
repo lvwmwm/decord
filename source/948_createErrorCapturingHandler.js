@@ -4,11 +4,13 @@
 // Dependencies: [822, 823, 824, 947]
 
 // Module 948 (createErrorCapturingHandler)
-const require = arg1;
+import captureError from "captureError" /* 947 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function createErrorCapturingHandler(apply) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
+  closure_0 = arg1;
+  closure_1 = arg2;
   try {
     const self = this;
     const applyResult = apply.apply(this, arg3);
@@ -17,7 +19,7 @@ function createErrorCapturingHandler(apply) {
         if (typeof promise.then === "function") {
           const resolved = Promise.resolve(applyResult);
           let catchPromise = resolved.catch((arg0) => {
-            outer1_3(arg0, closure_0, closure_1);
+            closure_1_3(arg0, closure_0, closure_1);
             throw arg0;
           });
         }
@@ -45,26 +47,26 @@ function captureHandlerError(name, arg1, tool_name) {
               if (!message2.includes("timed out")) {
                 const message3 = name.message;
                 if (!message3.includes("timeout")) {
-                  require(947) /* captureError */.captureError(name, "tool_execution", obj);
-                  const obj3 = require(947) /* captureError */;
+                  captureError.captureError(name, "tool_execution", obj);
+                  const obj3 = captureError;
                 }
               }
             }
-            require(947) /* captureError */.captureError(name, "timeout", obj);
-            const obj4 = require(947) /* captureError */;
+            captureError.captureError(name, "timeout", obj);
+            const obj4 = captureError;
           }
         }
       }
-      require(947) /* captureError */.captureError(name, "validation", obj);
-      const obj5 = require(947) /* captureError */;
+      captureError.captureError(name, "validation", obj);
+      const obj5 = captureError;
     } else if ("resource" === arg1) {
       obj.resource_uri = tool_name;
-      require(947) /* captureError */.captureError(name, "resource_execution", obj);
-      const obj2 = require(947) /* captureError */;
+      captureError.captureError(name, "resource_execution", obj);
+      const obj2 = captureError;
     } else if ("prompt" === arg1) {
       obj.prompt_name = tool_name;
-      require(947) /* captureError */.captureError(name, "prompt_execution", obj);
-      const obj6 = require(947) /* captureError */;
+      captureError.captureError(name, "prompt_execution", obj);
+      const obj6 = captureError;
     }
   } catch (err) {
   }
@@ -73,7 +75,7 @@ Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
   let prompt = "tool";
   prompt(822).fill(arg0, "tool", (arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
@@ -84,8 +86,8 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
         return HermesBuiltin.apply(items, closure_0);
       } else {
         closure_0 = tmp;
-        let closure_1 = closure_0;
-        let closure_2 = arg0;
+        closure_1 = closure_0;
+        closure_2 = arg0;
         const call2 = closure_0.call;
         const items1 = [self, arg0, ];
         items1[HermesBuiltin.arraySpread(substr.slice(0, -1), 2)] = function() {
@@ -100,11 +102,11 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
             }
             return callResult;
           } catch (tmp13) {
-            if (tmp(table[1]).DEBUG_BUILD) {
-              const debug = tmp(table[2]).debug;
+            if (callback(table[1]).DEBUG_BUILD) {
+              const debug = callback(table[2]).debug;
               debug.warn("MCP handler wrapping failed:", tmp13);
             }
-            return tmp.apply(tmp2, tmp);
+            return callback.apply(tmp2, tmp);
           }
         };
         return HermesBuiltin.apply(items1, closure_0);
@@ -114,7 +116,7 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
   prompt = "resource";
   const obj = prompt(822);
   prompt(822).fill(arg0, "resource", (arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
@@ -125,8 +127,8 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
         return HermesBuiltin.apply(items, closure_0);
       } else {
         closure_0 = tmp;
-        let closure_1 = closure_0;
-        let closure_2 = arg0;
+        closure_1 = closure_0;
+        closure_2 = arg0;
         const call2 = closure_0.call;
         const items1 = [self, arg0, ];
         items1[HermesBuiltin.arraySpread(substr.slice(0, -1), 2)] = function() {
@@ -141,11 +143,11 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
             }
             return callResult;
           } catch (tmp13) {
-            if (tmp(table[1]).DEBUG_BUILD) {
-              const debug = tmp(table[2]).debug;
+            if (callback(table[1]).DEBUG_BUILD) {
+              const debug = callback(table[2]).debug;
               debug.warn("MCP handler wrapping failed:", tmp13);
             }
-            return tmp.apply(tmp2, tmp);
+            return callback.apply(tmp2, tmp);
           }
         };
         return HermesBuiltin.apply(items1, closure_0);
@@ -155,7 +157,7 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
   prompt = "prompt";
   const obj2 = prompt(822);
   prompt(822).fill(arg0, "prompt", (arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
@@ -166,8 +168,8 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
         return HermesBuiltin.apply(items, closure_0);
       } else {
         closure_0 = tmp;
-        let closure_1 = closure_0;
-        let closure_2 = arg0;
+        closure_1 = closure_0;
+        closure_2 = arg0;
         const call2 = closure_0.call;
         const items1 = [self, arg0, ];
         items1[HermesBuiltin.arraySpread(substr.slice(0, -1), 2)] = function() {
@@ -182,11 +184,11 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
             }
             return callResult;
           } catch (tmp13) {
-            if (tmp(table[1]).DEBUG_BUILD) {
-              const debug = tmp(table[2]).debug;
+            if (callback(table[1]).DEBUG_BUILD) {
+              const debug = callback(table[2]).debug;
               debug.warn("MCP handler wrapping failed:", tmp13);
             }
-            return tmp.apply(tmp2, tmp);
+            return callback.apply(tmp2, tmp);
           }
         };
         return HermesBuiltin.apply(items1, closure_0);
@@ -197,7 +199,7 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
 arg5.wrapPromptHandlers = function wrapPromptHandlers(arg0) {
   const prompt = "prompt";
   prompt(822).fill(arg0, "prompt", (arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
@@ -208,8 +210,8 @@ arg5.wrapPromptHandlers = function wrapPromptHandlers(arg0) {
         return HermesBuiltin.apply(items, closure_0);
       } else {
         closure_0 = tmp;
-        let closure_1 = closure_0;
-        let closure_2 = arg0;
+        closure_1 = closure_0;
+        closure_2 = arg0;
         const call2 = closure_0.call;
         const items1 = [self, arg0, ];
         items1[HermesBuiltin.arraySpread(substr.slice(0, -1), 2)] = function() {
@@ -224,11 +226,11 @@ arg5.wrapPromptHandlers = function wrapPromptHandlers(arg0) {
             }
             return callResult;
           } catch (tmp13) {
-            if (tmp(table[1]).DEBUG_BUILD) {
-              const debug = tmp(table[2]).debug;
+            if (callback(table[1]).DEBUG_BUILD) {
+              const debug = callback(table[2]).debug;
               debug.warn("MCP handler wrapping failed:", tmp13);
             }
-            return tmp.apply(tmp2, tmp);
+            return callback.apply(tmp2, tmp);
           }
         };
         return HermesBuiltin.apply(items1, closure_0);
@@ -239,7 +241,7 @@ arg5.wrapPromptHandlers = function wrapPromptHandlers(arg0) {
 arg5.wrapResourceHandlers = function wrapResourceHandlers(arg0) {
   const resource = "resource";
   resource(822).fill(arg0, "resource", (arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
@@ -250,8 +252,8 @@ arg5.wrapResourceHandlers = function wrapResourceHandlers(arg0) {
         return HermesBuiltin.apply(items, closure_0);
       } else {
         closure_0 = tmp;
-        let closure_1 = closure_0;
-        let closure_2 = arg0;
+        closure_1 = closure_0;
+        closure_2 = arg0;
         const call2 = closure_0.call;
         const items1 = [self, arg0, ];
         items1[HermesBuiltin.arraySpread(substr.slice(0, -1), 2)] = function() {
@@ -266,11 +268,11 @@ arg5.wrapResourceHandlers = function wrapResourceHandlers(arg0) {
             }
             return callResult;
           } catch (tmp13) {
-            if (tmp(table[1]).DEBUG_BUILD) {
-              const debug = tmp(table[2]).debug;
+            if (callback(table[1]).DEBUG_BUILD) {
+              const debug = callback(table[2]).debug;
               debug.warn("MCP handler wrapping failed:", tmp13);
             }
-            return tmp.apply(tmp2, tmp);
+            return callback.apply(tmp2, tmp);
           }
         };
         return HermesBuiltin.apply(items1, closure_0);
@@ -281,7 +283,7 @@ arg5.wrapResourceHandlers = function wrapResourceHandlers(arg0) {
 arg5.wrapToolHandlers = function wrapToolHandlers(arg0) {
   const tool = "tool";
   tool(822).fill(arg0, "tool", (arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
@@ -292,8 +294,8 @@ arg5.wrapToolHandlers = function wrapToolHandlers(arg0) {
         return HermesBuiltin.apply(items, closure_0);
       } else {
         closure_0 = tmp;
-        let closure_1 = closure_0;
-        let closure_2 = arg0;
+        closure_1 = closure_0;
+        closure_2 = arg0;
         const call2 = closure_0.call;
         const items1 = [self, arg0, ];
         items1[HermesBuiltin.arraySpread(substr.slice(0, -1), 2)] = function() {
@@ -308,11 +310,11 @@ arg5.wrapToolHandlers = function wrapToolHandlers(arg0) {
             }
             return callResult;
           } catch (tmp13) {
-            if (tmp(table[1]).DEBUG_BUILD) {
-              const debug = tmp(table[2]).debug;
+            if (callback(table[1]).DEBUG_BUILD) {
+              const debug = callback(table[2]).debug;
               debug.warn("MCP handler wrapping failed:", tmp13);
             }
-            return tmp.apply(tmp2, tmp);
+            return callback.apply(tmp2, tmp);
           }
         };
         return HermesBuiltin.apply(items1, closure_0);

@@ -1,20 +1,20 @@
-// Module ID: 7687
-// Function ID: 7688
+// Module ID: 7725
+// Function ID: 7726
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 5319, 505, 589, 5322, 5316, 2]
+// Dependencies: [19, 5324, 505, 589, 5327, 5321, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 7687 (useDiscountedPremiumProductInfo)
-import noop from "noop";
-import updateProduct from "updateProduct";
-import { CurrencyCodes } from "sum";
+// Module 7725 (useDiscountedPremiumProductInfo)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "updateProduct" /* 5324 */;
+import { CurrencyCodes } from "sum" /* 505 */;
 
 const require = arg1;
-let result = require("sum").fileFinishedImporting("modules/premium/native/hooks/useDiscountedPremiumProductInfo.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/native/hooks/useDiscountedPremiumProductInfo.tsx");
 
 export const useDiscountedPremiumProductInfo = function useDiscountedPremiumProductInfo(premiumDiscountOffer, items3) {
   const _require = premiumDiscountOffer;
-  const dependencyMap = items3;
+  dependencyMap = items3;
   const items = [premiumDiscountOffer, items3];
   memo = memo.useMemo(() => {
     if (null == planIds) {
@@ -56,7 +56,7 @@ export const useDiscountedPremiumProductInfo = function useDiscountedPremiumProd
           if (null == tmp2) {
             return null;
           } else {
-            if (str2.toUpperCase() in outer1_4) {
+            if (str2.toUpperCase() in closure_1_4) {
               let USD = tmp5.currencyCode.toLowerCase();
               const str = tmp5.currencyCode;
             } else {

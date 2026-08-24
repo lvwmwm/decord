@@ -1,22 +1,19 @@
-// Module ID: 7155
-// Function ID: 7156
+// Module ID: 7193
+// Function ID: 7194
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 676, 21, 4310, 5097, 1236, 7156, 7157, 698, 5042, 1435, 1363, 1297, 4318, 7154, 2]
+// Dependencies: [5, 19, 676, 21, 4314, 5102, 1236, 7194, 7195, 698, 5047, 1435, 1363, 1297, 4322, 7192, 2]
 // Exports: default
 
-// Module 7155 (ProviderConnectionCard)
-import getPlatformUserUrl from "getPlatformUserUrl";
-import noop from "noop";
-import { AnalyticEvents } from "ME";
-import { jsx } from "jsxProd";
+// Module 7193 (ProviderConnectionCard)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/guild_onboarding/native/ProviderConnectionCard.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_onboarding/native/ProviderConnectionCard.tsx");
 
 export default function ProviderConnectionCard(connection) {
-  let canConnect;
-  let hasConnection;
-  let loading;
   connection = connection.connection;
   const guildId = connection.guildId;
   const _location = connection.location;
@@ -59,7 +56,7 @@ export default function ProviderConnectionCard(connection) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -74,22 +71,22 @@ export default function ProviderConnectionCard(connection) {
               obj[0] = arg1;
               return obj;
             } else {
-              const obj1 = {};
+              obj1 = {};
               const obj5 = v0(698);
-              const merged = Object.assign(outer1_0(5042).collectGuildAnalyticsMetadata(v0));
+              const merged = Object.assign(closure_1_0(5047).collectGuildAnalyticsMetadata(v0));
               obj1.connection_type = "provider";
-              const provider_id = outer1_0.provider_id;
-              let c0 = provider_id;
+              const provider_id = closure_1_0.provider_id;
+              c0 = provider_id;
               if (provider_id == null) {
                 c0 = undefined;
               }
               obj1.provider_id = c0;
               obj1.location = dependencyMap;
-              obj5.track(outer1_5.GUILD_ONBOARDING_CONNECTION_CLICKED, obj1);
+              obj5.track(closure_1_5.GUILD_ONBOARDING_CONNECTION_CLICKED, obj1);
               dependencyMap = 1;
               v0 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = outer1_4("Guild Onboarding");
+              obj2[0] = closure_1_4("Guild Onboarding");
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -102,7 +99,7 @@ export default function ProviderConnectionCard(connection) {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           v0 = tmp;
@@ -123,15 +120,15 @@ export default function ProviderConnectionCard(connection) {
           obj = { source: null, style: null, disableColor: true };
           obj[0] = source;
           obj[1] = { width: 32, height: 32 };
-          return outer1_6(connection(_location[13]).Icon, obj);
+          return closure_1_6(connection(_location[13]).Icon, obj);
         } else {
           icon = value.icon;
-          connection(_location[12]).isThemeDark(c3) ? icon.darkPNG : icon.lightPNG;
+          connection(_location[12]).isThemeDark(closure_3) ? icon.darkPNG : icon.lightPNG;
           const obj3 = connection(_location[12]);
         }
         obj2 = connection(_location[11]);
       } else {
-        return outer1_6(connection(_location[14]).LinkIcon, { size: "lg", color: "text-subtle" });
+        return closure_1_6(connection(_location[14]).LinkIcon, { size: "lg", color: "text-subtle" });
       }
     }, items1);
     let obj = { displayName: null, description: null, icon: null, isLoading: null, isConnected: null, canConnect: null, onConnect: null };

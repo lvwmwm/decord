@@ -1,17 +1,17 @@
-// Module ID: 10368
-// Function ID: 10369
+// Module ID: 10408
+// Function ID: 10409
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [19, 5305, 10369, 21, 589, 9178, 9181, 9182, 2]
+// Dependencies: [19, 5310, 10409, 21, 589, 9215, 9218, 9219, 2]
 // Exports: default
 
-// Module 10368 (CollectiblesWishlistItemCard)
-import noop from "noop";
-import { transformSKUToCollectiblesItem as closure_4 } from "createCollectiblesItemsFromServerResponse";
-import initialize from "initialize";
-import { jsx } from "jsxProd";
+// Module 10408 (CollectiblesWishlistItemCard)
+import closure_3 from "noop" /* 19 */;
+import { transformSKUToCollectiblesItem as closure_4 } from "createCollectiblesItemsFromServerResponse" /* 5310 */;
+import closure_5 from "initialize" /* 10409 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/wishlists/native/CollectiblesWishlistItemCard.tsx");
+const result = require("set").fileFinishedImporting("modules/wishlists/native/CollectiblesWishlistItemCard.tsx");
 
 export default function CollectiblesWishlistItemCard(sku) {
   sku = sku.sku;
@@ -24,18 +24,18 @@ export default function CollectiblesWishlistItemCard(sku) {
   const merged = Object.assign(sku, Object.create(null));
   let memo;
   let obj = sku(size[4]);
-  const items = [initialize];
+  const items = [closure_5];
   const items1 = [sku.id, wishlistOwnerId];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let hasSentGiftResult = null != wishlistOwnerId;
     if (hasSentGiftResult) {
-      hasSentGiftResult = outer1_5.hasSentGift(sku.id, tmp);
+      hasSentGiftResult = closure_1_5.hasSentGift(sku.id, tmp);
     }
     return hasSentGiftResult;
   }, items1);
   const items2 = [sku];
   const productNameAndTypeFromSku = sku(size[5]).getProductNameAndTypeFromSku(sku);
-  memo = memo.useMemo(() => outer1_4(sku), items2);
+  memo = memo.useMemo(() => closure_1_4(sku), items2);
   const items3 = [memo, size];
   const callback = memo.useCallback(() => {
     let tmp2 = null;
@@ -43,7 +43,7 @@ export default function CollectiblesWishlistItemCard(sku) {
       const obj = { collectiblesItemData: null, size: null };
       obj[0] = tmp;
       obj[1] = size;
-      tmp2 = outer1_6(sku(size[6]).CollectiblesPreview, obj);
+      tmp2 = closure_1_6(sku(size[6]).CollectiblesPreview, obj);
     }
     return tmp2;
   }, items3);

@@ -1,48 +1,47 @@
-// Module ID: 11557
-// Function ID: 11558
+// Module ID: 11606
+// Function ID: 11607
 // Name: DiceRollBar
-// Dependencies: [19, 17, 4662, 11146, 21, 4661, 712, 589, 4115, 4664, 1297, 11558, 9235, 4734, 2]
+// Dependencies: [19, 17, 4669, 11185, 21, 4668, 712, 589, 4119, 4671, 1297, 11607, 9272, 4739, 2]
 // Exports: default
 
-// Module 11557 (DiceRollBar)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { useDiceRollState } from "INITIAL_STATE";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11606 (DiceRollBar)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { useDiceRollState } from "INITIAL_STATE" /* 11185 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { animatedContainer: { overflow: "hidden" }, container: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 8, gap: 12, borderTopWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 8, gap: 12, borderTopWidth: 1, borderColor: ThemesDefault.colors.BORDER_SUBTLE, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_9 = createCacheKey.createStyles(createCacheKey);
 let closure_10 = { code: "function DiceRollBarTsx1(){const{useReducedMotion,height,opacity,withTiming,ANIMATION_DURATION_MS,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:height.get(),opacity:opacity.get()};}return{height:withTiming(height.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING}),opacity:withTiming(opacity.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING})};}" };
 let closure_11 = { code: "function DiceRollBarTsx2(){const{rotation}=this.__closure;return{transform:[{rotate:rotation.get()+\"deg\"}]};}" };
-let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/dice_roll/native/DiceRollBar.tsx");
+let result = require("set").fileFinishedImporting("modules/dice_roll/native/DiceRollBar.tsx");
 
 export default function DiceRollBar(channelId) {
   let stateFromStores;
   let sharedValue;
   let sharedValue1;
   let sharedValue2;
-  let c4;
+  closure_4 = undefined;
   let flag;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const tmp2 = useDiceRollState(channelId.channelId);
   let obj = stateFromStores(sharedValue1[7]);
   let items = [flag];
   stateFromStores = obj.useStateFromStores(items, () => flag.useReducedMotion);
-  let obj1 = stateFromStores(sharedValue1[8]);
+  obj1 = stateFromStores(sharedValue1[8]);
   sharedValue = obj1.useSharedValue(0);
   let obj2 = stateFromStores(sharedValue1[8]);
   sharedValue1 = obj2.useSharedValue(0);
   let obj3 = stateFromStores(sharedValue1[8]);
   sharedValue2 = obj3.useSharedValue(0);
-  c4 = tmp9;
+  closure_4 = tmp9;
   flag = undefined;
   if (tmp2 != null) {
     flag = tmp2.rolling;
@@ -53,12 +52,12 @@ export default function DiceRollBar(channelId) {
   const items1 = [null != tmp2 && !tmp2.dismissing, sharedValue, sharedValue1];
   const effect = sharedValue2.useEffect(() => {
     let num = 0;
-    if (c4) {
+    if (closure_4) {
       num = 56;
     }
     const result = sharedValue.set(num);
     let num2 = 0;
-    if (c4) {
+    if (closure_4) {
       num2 = 1;
     }
     const result1 = sharedValue1.set(num2);
@@ -131,7 +130,7 @@ export default function DiceRollBar(channelId) {
     obj3[2] = barText;
     items4[1] = callback(tmp3(tmp4[13]).Text, obj3);
     obj1[1] = items4;
-    obj[1] = callback2(c4, obj1);
+    obj[1] = callback2(closure_4, obj1);
     return callback(sharedValue(tmp4[8]).View, obj);
   }
 };

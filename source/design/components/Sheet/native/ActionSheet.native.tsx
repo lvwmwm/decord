@@ -1,25 +1,27 @@
-// Module ID: 7175
-// Function ID: 7176
+// Module ID: 7213
+// Function ID: 7214
 // Name: ActionSheet
-// Dependencies: [19, 21, 4661, 712, 6950, 2]
+// Dependencies: [19, 21, 4668, 712, 6988, 2]
 
-// Module 7175 (ActionSheet)
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 7213 (ActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import Background from "Background" /* 6988 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let obj = { content: null, body: null };
-obj = { paddingHorizontal: require("Themes").space.PX_16 };
+obj = { paddingHorizontal: ThemesDefault.space.PX_16 };
 obj[0] = obj;
 obj[1] = { gap: 24 };
 let closure_3 = createCacheKey.createStyles(obj);
-const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
+const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const obj = { ref };
   const merged = Object.assign(arg0);
   ({ content: obj.contentStyles, body: obj.bodyStyles } = callback());
-  return jsx(require(6950) /* Background */.BottomSheet, { ref });
+  return jsx(Background.BottomSheet, { ref });
 });
-const result = require("createCacheKey").fileFinishedImporting("design/components/Sheet/native/ActionSheet.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Sheet/native/ActionSheet.native.tsx");
 
 export const ActionSheet = forwardRefResult;

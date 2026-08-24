@@ -1,21 +1,16 @@
-// Module ID: 11516
-// Function ID: 11517
+// Module ID: 11565
+// Function ID: 11566
 // Name: getValidOrderedFilterTokens
-// Dependencies: [4220, 676, 11511, 2]
+// Dependencies: [4224, 676, 11560, 2]
 // Exports: getValidFilterTokens, isFromUserFilterSupported, isInChannelFilterSupported, isMentionsUserFilterSupported
 
-// Module 11516 (getValidOrderedFilterTokens)
-import initialize from "initialize";
-import ME from "ME";
+// Module 11565 (getValidOrderedFilterTokens)
+import SearchTokenTypes from "SearchTokenTypes" /* 11560 */;
+import closure_2 from "initialize" /* 4224 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 function getValidOrderedFilterTokens(closure_0, items) {
-  let tmp;
-  let tmp13;
-  let tmp2;
-  let tmp5;
   [tmp] = items;
   items = [tmp];
   [tmp2] = items;
@@ -25,7 +20,7 @@ function getValidOrderedFilterTokens(closure_0, items) {
   }
   const items2 = [tmp];
   [tmp5] = items2;
-  let result = require(11511) /* SearchTokenTypes */.isGuildLikeSearchContext(closure_0);
+  let result = SearchTokenTypes.isGuildLikeSearchContext(closure_0);
   if (!result) {
     result = closure_0.type === constants2.DMS && !tmp5.hidePersonalInformation;
     const tmp8 = closure_0.type === constants2.DMS && !tmp5.hidePersonalInformation;
@@ -46,37 +41,34 @@ function getValidOrderedFilterTokens(closure_0, items) {
   return items1;
 }
 ({ SearchTokenTypes: c3, SearchTypes: c4 } = ME);
-let result = require("SearchTokenTypes").fileFinishedImporting("modules/search/tokens/SearchTokenStreamerModeUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/search/tokens/SearchTokenStreamerModeUtils.tsx");
 
 export const isFromUserFilterSupported = function isFromUserFilterSupported() {
-  let tmp3;
   let tmp = arg0;
   if (arg0 === undefined) {
-    const items = [initialize];
+    const items = [closure_2];
     tmp = items;
   }
   [tmp3] = tmp;
   return !tmp3.hidePersonalInformation;
 };
 export const isMentionsUserFilterSupported = function isMentionsUserFilterSupported() {
-  let tmp3;
   let tmp = arg0;
   if (arg0 === undefined) {
-    const items = [initialize];
+    const items = [closure_2];
     tmp = items;
   }
   [tmp3] = tmp;
   return !tmp3.hidePersonalInformation;
 };
 export const isInChannelFilterSupported = function isInChannelFilterSupported(selectedSearchContext) {
-  let tmp3;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [initialize];
+    const items = [closure_2];
     tmp = items;
   }
   [tmp3] = tmp;
-  let result = require(11511) /* SearchTokenTypes */.isGuildLikeSearchContext(selectedSearchContext);
+  let result = SearchTokenTypes.isGuildLikeSearchContext(selectedSearchContext);
   if (!result) {
     result = selectedSearchContext.type === constants2.DMS && !tmp3.hidePersonalInformation;
     const tmp6 = selectedSearchContext.type === constants2.DMS && !tmp3.hidePersonalInformation;

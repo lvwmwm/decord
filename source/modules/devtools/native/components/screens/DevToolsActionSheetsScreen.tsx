@@ -1,74 +1,82 @@
-// Module ID: 15174
-// Function ID: 15175
+// Module ID: 15238
+// Function ID: 15239
 // Name: ActionSheetSelector
-// Dependencies: [32, 19, 17, 21, 4661, 712, 12418, 12416, 5260, 15175, 2007, 4342, 6950, 6949, 6286, 6291, 8078, 4326, 4733, 6292, 4734, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 12470, 12468, 5265, 15239, 2008, 4346, 6988, 6987, 6317, 6322, 8117, 4330, 4738, 6323, 4739, 2]
 // Exports: default
 
-// Module 15174 (ActionSheetSelector)
-import _slicedToArray from "_slicedToArray";
-import PressableCard from "PressableCard";
-import get_ActivityIndicator from "CheckmarkLargeIcon";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 15238 (ActionSheetSelector)
+import ThemesDefault from "Themes" /* 712 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
+import Background from "Background" /* 6988 */;
+import _modDef12468 from "module_12468" /* 12468 */;
+import _modDef12470 from "module_12470" /* 12470 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function ActionSheetSelector(arg0) {
-  let onSelect;
-  let require;
   ({ selectedType: require, onSelect } = arg0);
-  let dependencyMap;
-  const items = [onSelect];
+  dependencyMap = undefined;
+  items = [onSelect];
   dependencyMap = React.useCallback((type) => {
-    onSelect(4342).hideActionSheet("action-sheet-selector");
+    onSelect(4346).hideActionSheet("action-sheet-selector");
     onSelect(type.type);
     type.show();
   }, items);
   let obj = { header: null, children: null };
-  obj = { title: "Select Action Sheet", subtitle: null };
-  obj[1] = "" + items.length + " options";
-  obj[0] = callback2(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
-  obj = { style: null, children: null };
-  obj[0] = { paddingHorizontal: onSelect(712).space.PX_12 };
-  const obj2 = { hasIcons: true, children: null };
-  obj2[1] = items.map((type) => {
-    let closure_0 = type;
-    const obj = { icon: null, label: null, subLabel: null, onPress: null, trailing: null, start: null, end: null };
-    obj[0] = outer1_7(outer1_0(8078).WarningIcon, { size: "md" });
-    ({ label: obj[1], description: obj[2] } = type);
-    obj[3] = function onPress() {
-      return outer1_2(closure_0);
-    };
-    let tmpResult;
-    if (closure_0 === type.type) {
-      tmpResult = tmp(outer1_0(4326).CheckmarkLargeIcon, { size: "md", color: "text-feedback-positive" });
-    }
-    obj[4] = tmpResult;
-    obj[5] = 0 === arg1;
-    obj[6] = arg1 === outer1_10.length - 1;
-    return outer1_7(outer1_0(6291).TableRow, obj, type.type);
+  obj = { title: "Select Action Sheet", subtitle: "" + items.length + " options" };
+  obj[0] = callback2(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, obj);
+  obj = { style: { paddingHorizontal: onSelect(712).space.PX_12 }, children: null };
+  obj1 = { paddingHorizontal: onSelect(712).space.PX_12 };
+  obj[1] = callback2(TableRowGroupTitle.TableRowGroup, {
+    hasIcons: true,
+    children: items.map((type) => {
+      closure_0 = type;
+      const obj = {
+        icon: closure_1_7(closure_1_0(8117).WarningIcon, { size: "md" }),
+        label: null,
+        subLabel: null,
+        onPress() {
+          return closure_1_2(closure_0);
+        },
+        trailing: null,
+        start: null,
+        end: null
+      };
+      ({ label: obj[1], description: obj[2] } = type);
+      let tmpResult;
+      if (closure_0 === type.type) {
+        tmpResult = tmp(closure_1_0(4330).CheckmarkLargeIcon, { size: "md", color: "text-feedback-positive" });
+      }
+      obj[4] = tmpResult;
+      obj[5] = 0 === arg1;
+      obj[6] = arg1 === closure_1_10.length - 1;
+      return closure_1_7(closure_1_0(6322).TableRow, obj, type.type);
+    })
   });
-  obj[1] = callback2(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj2);
   obj[1] = callback2(closure_5, obj);
-  return callback2(require(6950) /* Background */.BottomSheet, obj);
+  return callback2(Background.BottomSheet, obj);
 }
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { wrap: null, contentContainer: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1, paddingHorizontal: require("Themes").space.PX_12 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, flex: 1, paddingHorizontal: ThemesDefault.space.PX_12 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { paddingVertical: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+createCacheKey[1] = { paddingVertical: ThemesDefault.space.PX_16 };
+let closure_9 = createCacheKey.createStyles(createCacheKey);
 let items = [
   {
     type: "blocked-domain",
     label: "Blocked Domain",
     description: "Shows a warning for potentially malicious domains",
     show() {
-      return importDefault(12418).show("https://example-phishing-site.com/malicious-page");
+      return _modDef12470.show("https://example-phishing-site.com/malicious-page");
     }
   },
   {
@@ -76,7 +84,7 @@ let items = [
     label: "Suspicious Download",
     description: "Warns users about potentially dangerous file downloads",
     show() {
-      return importDefault(12416).show("https://suspicious-file.com/dangerous-file.exe");
+      return _modDef12468.show("https://suspicious-file.com/dangerous-file.exe");
     }
   },
   {
@@ -84,43 +92,40 @@ let items = [
     label: "Inappropriate Conversation",
     description: "Shows safety warning for inappropriate conversations",
     show() {
-      return importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(15175, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
+      return _modDef5265.pushLazy(asyncRequireImpl(15239, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
     }
   }
 ];
-let obj1 = { paddingVertical: require("Themes").space.PX_16 };
-let obj2 = {
+let obj1 = { paddingVertical: ThemesDefault.space.PX_16 };
+const obj2 = {
   type: "blocked-domain",
   label: "Blocked Domain",
   description: "Shows a warning for potentially malicious domains",
   show() {
-    return importDefault(12418).show("https://example-phishing-site.com/malicious-page");
+    return _modDef12470.show("https://example-phishing-site.com/malicious-page");
   }
 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsActionSheetsScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsActionSheetsScreen.tsx");
 
 export default function DevToolsActionSheetsScreen() {
-  const tmp = createCacheKey();
+  const tmp = callback4();
   const tmp2 = callback(React.useState("blocked-domain"), 2);
   const first = tmp2[0];
-  let closure_1 = tmp2[1];
+  closure_1 = tmp2[1];
   const found = items.find((type) => type.type === first);
   items = [first];
   let obj = { style: tmp.wrap, contentContainerStyle: tmp.contentContainer, children: null };
   callback = React.useCallback(() => {
-    let obj = callback(outer1_2[11]);
-    obj = { default: outer1_11 };
+    let obj = callback(closure_1_2[11]);
+    obj = { default: closure_1_11 };
     obj = { selectedType: first, onSelect: callback };
     obj.openLazy(Promise.resolve(obj), "action-sheet-selector", obj);
   }, items);
   obj = { spacing: 16, children: null };
   obj = { children: null };
-  const items1 = [callback2(first(4734).Text, { variant: "heading-lg/medium", children: "Action Sheets" }), ];
-  const obj1 = { description: "Tap an option to launch the action sheet immediately", hasIcons: false, children: null };
-  obj1[2] = callback2(first(6291).TableRow, { label: found.label, subLabel: found.description, arrow: true, onPress: callback });
-  items1[1] = callback2(first(6286).TableRowGroup, obj1);
+  const items1 = [callback2(first(4739).Text, { variant: "heading-lg/medium", children: "Action Sheets" }), callback2(first(6317).TableRowGroup, { description: "Tap an option to launch the action sheet immediately", hasIcons: false, children: callback2(first(6322).TableRow, obj2) })];
   obj[0] = items1;
-  obj[1] = callback3(first(6292).Card, obj);
-  obj[2] = callback2(first(4733).Stack, obj);
+  obj[1] = callback3(first(6323).Card, obj);
+  obj[2] = callback2(first(4738).Stack, obj);
   return callback2(closure_6, obj);
 };

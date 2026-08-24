@@ -1,19 +1,18 @@
-// Module ID: 14794
-// Function ID: 14795
+// Module ID: 14858
+// Function ID: 14859
 // Name: _handleEnableSystemNotification
-// Dependencies: [5, 17, 8198, 676, 4839, 11582, 11590, 698, 11579, 10669, 1236, 2]
+// Dependencies: [5, 17, 8238, 676, 4844, 11631, 11639, 698, 11628, 10708, 1236, 2]
 
-// Module 14794 (_handleEnableSystemNotification)
-import closure_3 from "EventActionType";
-import { NativeModules } from "get ActivityIndicator";
-import { AnalyticEvents } from "ME";
-import { NotificationAuthorizationStatus as closure_6 } from "NativePermissionStatus";
-import EventActionType from "EventActionType";
-import createToggle from "createToggle";
+// Module 14858 (_handleEnableSystemNotification)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { NotificationAuthorizationStatus as closure_6 } from "NativePermissionStatus" /* 4844 */;
+import EventActionType from "EventActionType" /* 11631 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function _handleEnableSystemNotification() {
   const self = this;
   const tmp = callback(function*() {
@@ -28,7 +27,7 @@ function _handleEnableSystemNotification() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -44,12 +43,12 @@ function _handleEnableSystemNotification() {
             return obj;
           } else {
             const callback = tmp2;
-            let closure_0 = tmp3;
+            closure_0 = tmp3;
             closure_0 = undefined;
-            const NativePermissionManager = outer1_4.NativePermissionManager;
+            const NativePermissionManager = closure_1_4.NativePermissionManager;
             dependencyMap = 1;
             c3 = 1;
-            const obj1 = { value: null, done: false };
+            obj1 = { value: null, done: false };
             obj1[0] = NativePermissionManager.getNotificationAuthorizationStatus();
             return obj1;
           }
@@ -64,7 +63,7 @@ function _handleEnableSystemNotification() {
         } else {
           closure_0 = arg1;
           if (closure_0 === constants2.UNDETERMINED) {
-            let obj3 = callback(11590);
+            let obj3 = callback(11639);
             const permission = obj3.requestPermission((permission_granted) => {
               let obj = tmp2(table[7]);
               obj = { action_type: constants2.ALLOW_TO_REQUEST, action_location: constants3.NOTIFICATION_SETTING, permission_granted };
@@ -83,7 +82,7 @@ function _handleEnableSystemNotification() {
             obj3 = { setting_type: "os", current_status: null };
             obj3[1] = num3;
             obj.track(constants.NOTIFICATION_SETTINGS_CLICKED, obj3);
-            obj2 = callback(11579);
+            obj2 = callback(11628);
             let result = obj2.openNotificationSettings();
           }
           c3 = 3;
@@ -94,7 +93,7 @@ function _handleEnableSystemNotification() {
       }
     }
   });
-  const _handleEnableSystemNotification = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -103,11 +102,11 @@ function _handleEnableSystemNotification() {
   }
   return applyArgumentsResult;
 }
-({ EventActionType: error, EventActionLocation: metroImportAll } = EventActionType);
+({ EventActionType: error, EventActionLocation: closure_8 } = EventActionType);
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.nl2Dqx);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.nl2Dqx);
   },
   parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
   onPress: function handleEnableSystemNotification() {
@@ -123,6 +122,6 @@ createToggle = {
   withArrow: true
 };
 createToggle = createToggle.createPressable(createToggle);
-let result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/SystemNotificationsSetting.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/SystemNotificationsSetting.tsx");
 
 export default createToggle;

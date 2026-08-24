@@ -1,11 +1,11 @@
-// Module ID: 6732
-// Function ID: 6733
+// Module ID: 6769
+// Function ID: 6770
 // Name: isRoleSubscriptionEmoji
-// Dependencies: [6728, 2]
+// Dependencies: [6765, 2]
 // Exports: isPurchasableRoleSubscriptionEmoji, isRoleSubscriptionEmoji, isUnusableRoleSubscriptionEmoji
 
-// Module 6732 (isRoleSubscriptionEmoji)
-import computeRolesForGuild from "computeRolesForGuild";
+// Module 6769 (isRoleSubscriptionEmoji)
+import closure_0 from "computeRolesForGuild" /* 6765 */;
 
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/RoleSubscriptionEmojiUtils.tsx");
 

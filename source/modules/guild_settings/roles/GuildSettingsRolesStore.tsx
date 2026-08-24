@@ -1,26 +1,26 @@
-// Module ID: 16831
-// Function ID: 16832
+// Module ID: 16924
+// Function ID: 16925
 // Name: handleSetSection
-// Dependencies: [1431, 16832, 1984, 1983, 8875, 16826, 676, 16833, 11588, 6814, 1370, 506, 4026, 688, 1986, 12, 589, 709, 2]
+// Dependencies: [1431, 16925, 1985, 1984, 8912, 16919, 676, 16926, 11637, 6851, 1370, 506, 4029, 688, 1987, 12, 589, 709, 2]
 
-// Module 16831 (handleSetSection)
-import { set } from "isValueEqual";
-import map from "map";
-import { isRoleEqual } from "GuildRoleRecordTypeTag";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import handleFormInit from "handleFormInit";
-import { GuildSettingsRoleEditSections } from "MAX_SUBCATEGORIES";
-import ME from "ME";
-import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS";
-import { Store } from "initialize";
-import set from "GuildRoleRecordTypeTag";
+// Module 16924 (handleSetSection)
+import applyDefault from "apply" /* 12 */;
+import fromStringAll from "fromString" /* 506 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import isValueEqual from "isValueEqual" /* 1431 */;
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1985 */;
+import applyOverwritesAll from "applyOverwrites" /* 4029 */;
+import calculatePositionDeltasDefault from "calculatePositionDeltas" /* 11637 */;
+import MAX_SUBCATEGORIES from "MAX_SUBCATEGORIES" /* 16919 */;
+import closure_8 from "map" /* 16925 */;
+import closure_10 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_11 from "handleFormInit" /* 8912 */;
+import ME from "ME" /* 676 */;
+import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS" /* 16926 */;
+import set from "set" /* 2 */;
 
-let FormStates;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_18;
-let map1;
 function handleSetSection(arg0) {
   if (null == closure_4) {
     if (tmp === constants.ROLES) {
@@ -35,9 +35,9 @@ function handleInit() {
     flag = true;
   }
   const guild = store2.getProps().guild;
-  let c23 = false;
-  let c24 = false;
-  let c6;
+  c23 = false;
+  c24 = false;
+  c6 = undefined;
   set.clear();
   map2.clear();
   const OPEN = FormStates.OPEN;
@@ -54,16 +54,16 @@ function handleInit() {
     id = guild.id;
   }
   const item = items2.forEach((colors) => {
-    let GRADIENT = outer1_19.SOLID;
-    let obj = id(length[9]);
+    let GRADIENT = closure_1_19.SOLID;
+    obj = id(length[9]);
     if (!tmp2) {
       obj = {};
       obj = { primary_color: null, secondary_color: null, tertiary_color: null };
-      obj[0] = outer1_15;
+      obj[0] = closure_1_15;
       obj[tmp.SOLID] = obj;
-      ({ primary_color: obj4[0], secondary_color: obj4[1] } = outer1_17);
+      ({ primary_color: obj4[0], secondary_color: obj4[1] } = closure_1_17);
       obj[tmp.GRADIENT] = { primary_color: null, secondary_color: null, tertiary_color: null };
-      ({ primary_color: obj5[0], secondary_color: obj5[1], tertiary_color: obj5[2] } = outer1_18);
+      ({ primary_color: obj5[0], secondary_color: obj5[1], tertiary_color: obj5[2] } = closure_1_18);
       obj[tmp.HOLOGRAPHIC] = { primary_color: null, secondary_color: null, tertiary_color: null };
       if (null != colors.colors) {
         let primary_color = colors.colors.primary_color;
@@ -87,14 +87,14 @@ function handleInit() {
       const obj4 = { currentStyle: null, styleColors: null };
       obj4[0] = GRADIENT;
       obj4[1] = obj;
-      const result = outer1_31.set(colors.id, obj4);
+      const result = closure_1_31.set(colors.id, obj4);
     } else if (null != colors.colors.tertiary_color) {
       GRADIENT = tmp.HOLOGRAPHIC;
     } else if (null != colors.colors.secondary_color) {
       GRADIENT = tmp.GRADIENT;
     }
   });
-  let c27 = false;
+  c27 = false;
   if (flag) {
     map1.clear();
     const item1 = map.forEach((arg0, arg1) => {
@@ -106,7 +106,7 @@ function handleInit() {
 function syncGuildChanges(guildId) {
   guildId = guildId.guildId;
   guildId = undefined;
-  let map;
+  map = undefined;
   const guild = store2.getProps().guild;
   if (null != guild) {
     if (guildId === guild.id) {
@@ -115,12 +115,12 @@ function syncGuildChanges(guildId) {
         HermesBuiltin.arraySpread(store.getSortedRoles(guild.id), 0);
         guildId = items;
         const item = set.forEach((arg0) => {
-          const guildId = arg0;
+          guildId = arg0;
           const found = items1.find((id) => id.id === closure_0);
-          let c1 = -1;
+          c1 = -1;
           if (null != guildId.find((id) => {
             if (id.id === closure_0) {
-              let closure_1 = arg1;
+              closure_1 = arg1;
               return true;
             }
           })) {
@@ -128,31 +128,31 @@ function syncGuildChanges(guildId) {
               guildId[c1] = found;
             }
           }
-          outer1_21.delete(arg0);
-          if (0 === outer1_21.size) {
-            const outer1_23 = false;
+          closure_1_21.delete(arg0);
+          if (0 === closure_1_21.size) {
+            c23 = false;
           }
         });
         const _Map = Map;
         map = new Map();
         const item1 = set.forEach((arg0) => {
-          const value = outer1_31.get(arg0);
+          const value = closure_1_31.get(arg0);
           if (null != value) {
             const result = map.set(arg0, value);
           }
         });
         map2.clear();
         const item2 = items.forEach((colors) => {
-          let GRADIENT = outer1_19.SOLID;
-          let obj = id(length[9]);
+          let GRADIENT = closure_1_19.SOLID;
+          obj = id(length[9]);
           if (!tmp2) {
             obj = {};
             obj = { primary_color: null, secondary_color: null, tertiary_color: null };
-            obj[0] = outer1_15;
+            obj[0] = closure_1_15;
             obj[tmp.SOLID] = obj;
-            ({ primary_color: obj4[0], secondary_color: obj4[1] } = outer1_17);
+            ({ primary_color: obj4[0], secondary_color: obj4[1] } = closure_1_17);
             obj[tmp.GRADIENT] = { primary_color: null, secondary_color: null, tertiary_color: null };
-            ({ primary_color: obj5[0], secondary_color: obj5[1], tertiary_color: obj5[2] } = outer1_18);
+            ({ primary_color: obj5[0], secondary_color: obj5[1], tertiary_color: obj5[2] } = closure_1_18);
             obj[tmp.HOLOGRAPHIC] = { primary_color: null, secondary_color: null, tertiary_color: null };
             if (null != colors.colors) {
               let primary_color = colors.colors.primary_color;
@@ -176,7 +176,7 @@ function syncGuildChanges(guildId) {
             const obj4 = { currentStyle: null, styleColors: null };
             obj4[0] = GRADIENT;
             obj4[1] = obj;
-            const result = outer1_31.set(colors.id, obj4);
+            const result = closure_1_31.set(colors.id, obj4);
           } else if (null != colors.colors.tertiary_color) {
             GRADIENT = tmp.HOLOGRAPHIC;
           } else if (null != colors.colors.secondary_color) {
@@ -186,7 +186,7 @@ function syncGuildChanges(guildId) {
         const item3 = map.forEach((arg0, arg1) => {
           const result = closure_31.set(arg1, arg0);
         });
-        let c24 = false;
+        c24 = false;
         const items1 = [];
         HermesBuiltin.arraySpread(items, 0);
       }
@@ -194,6 +194,9 @@ function syncGuildChanges(guildId) {
   }
   return false;
 }
+let set = isValueEqual.set;
+const isRoleEqual = GuildRoleRecordTypeTag.isRoleEqual;
+const GuildSettingsRoleEditSections = MAX_SUBCATEGORIES.GuildSettingsRoleEditSections;
 ({ GuildSettingsSections: map1, FormStates } = ME);
 ({ DEFAULT_ROLE_COLOR: closure_15, GuildFeatures: closure_16 } = ME);
 ({ DEFAULT_GRADIENT_ROLE_COLORS: closure_17, HOLOGRAPHIC_ROLE_COLORS: closure_18 } = HOLOGRAPHIC_ROLE_COLORS);
@@ -210,12 +213,12 @@ let set1 = new Set();
 let map = new Map();
 map1 = new Map();
 const map2 = new Map();
-let closure_33 = require("applyOverwrites").debounce(() => {
-  let c0 = false;
-  if (c24) {
+let closure_33 = applyDefault.debounce(() => {
+  c0 = false;
+  if (closure_24) {
     if (null != user) {
       if (null != closure_25) {
-        let obj = importDefault(11588);
+        obj = calculatePositionDeltasDefault;
         obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: false };
         obj[0] = store.getSortedRoles(user.id);
         obj[1] = closure_25;
@@ -227,7 +230,7 @@ let closure_33 = require("applyOverwrites").debounce(() => {
         };
         let result = obj.calculatePositionDeltas(obj);
       }
-      c24 = tmp9;
+      closure_24 = tmp9;
       if (result.length <= 0) {
         c0 = true;
       }
@@ -236,37 +239,38 @@ let closure_33 = require("applyOverwrites").debounce(() => {
   }
   const items = [...set];
   const item = items.forEach((arg0) => {
-    let c0 = arg0;
     c0 = arg0;
-    const found = outer1_25.find((id) => id.id === closure_0);
-    if (outer1_9(found, outer1_26.find((id) => id.id === id))) {
-      outer1_21.delete(arg0);
-      if (0 === outer1_21.size) {
-        const outer1_23 = false;
+    c0 = arg0;
+    const found = closure_1_25.find((id) => id.id === closure_0);
+    if (closure_1_9(found, closure_1_26.find((id) => id.id === c0))) {
+      closure_1_21.delete(arg0);
+      if (0 === closure_1_21.size) {
+        c23 = false;
       }
       c0 = true;
     }
   });
   const items1 = [...set1];
   const item1 = items1.forEach((arg0) => {
-    const value = outer1_30.get(arg0);
-    if (obj.isEqual(value, outer1_29.get(arg0))) {
-      outer1_28.delete(arg0);
-      if (0 === outer1_28.size) {
-        const outer1_27 = false;
+    const value = closure_1_30.get(arg0);
+    if (obj.isEqual(value, closure_1_29.get(arg0))) {
+      closure_1_28.delete(arg0);
+      if (0 === closure_1_28.size) {
+        c27 = false;
       }
-      let c0 = true;
+      c0 = true;
     }
   });
   if (c0) {
     guildSettingsRolesStore.emitChange();
   }
 }, 500);
+const Store = initializeDefault.Store;
 class GuildSettingsRolesStore extends Store {
 }
 const prototype = GuildSettingsRolesStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(handleFormInit, map, createGuildRoleRecordFromRust);
+  this.waitFor(closure_11, closure_8, closure_10);
 };
 prototype["hasChanges"] = function hasChanges() {
   let tmp = c23;
@@ -286,15 +290,15 @@ prototype["hasSectionChanges"] = function hasSectionChanges(id, effectiveSection
     if (null != dependencyMap[effectiveSection]) {
       tmp = null;
       if (0 !== arr.length) {
-        let closure_0 = id;
+        closure_0 = id;
         const found = closure_25.find((id) => id.id === closure_0);
         closure_0 = id;
-        const found1 = closure_26.find((id) => id.id === id);
+        const found1 = closure_26.find((id) => id.id === c0);
         let tmp6 = null;
         if (null != found) {
           tmp6 = null;
           if (null != found1) {
-            const obj = { fields: null, role: null, original: null };
+            obj = { fields: null, role: null, original: null };
             obj[0] = arr;
             obj[1] = found;
             obj[2] = found1;
@@ -306,10 +310,10 @@ prototype["hasSectionChanges"] = function hasSectionChanges(id, effectiveSection
     }
     let tmp7 = null != tmp;
     if (tmp7) {
-      const obj2 = importDefault(12);
-      const pickResult = importDefault(12).pick(tmp.role, tmp.fields);
-      tmp7 = !isRoleEqual(pickResult, importDefault(12).pick(tmp.original, tmp.fields));
-      const obj3 = importDefault(12);
+      const obj2 = applyDefault;
+      const pickResult = applyDefault.pick(tmp.role, tmp.fields);
+      tmp7 = !isRoleEqual(pickResult, applyDefault.pick(tmp.original, tmp.fields));
+      const obj3 = applyDefault;
     }
     return tmp7;
   }
@@ -368,7 +372,7 @@ Object.defineProperty(prototype, "formState", {
 prototype["getSortDeltas"] = function getSortDeltas() {
   if (null != user) {
     if (null != closure_25) {
-      let obj = importDefault(11588);
+      obj = calculatePositionDeltasDefault;
       obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: false };
       obj[0] = store.getSortedRoles(user.id);
       obj[1] = closure_25;
@@ -387,7 +391,7 @@ prototype["showNotice"] = function showNotice() {
   return this.hasChanges();
 };
 prototype["getRole"] = function getRole(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return closure_25.find((id) => id.id === closure_0);
 };
 prototype["getPermissionSearchQuery"] = function getPermissionSearchQuery() {
@@ -411,29 +415,27 @@ obj = {
       }
     }
     const mapped = roles.map((arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return closure_25.find((id) => id.id === closure_0);
     });
-    closure_25 = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
-    let c24 = true;
+    closure_25 = mapped.filter(isDiscordFrontendDevelopment.isNotNullish);
+    c24 = true;
     callback();
   },
   GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS: function handleUpdatePermissions(allow) {
-    let flag;
-    let require;
     ({ flag, id: require } = allow);
     const found = items.find((id) => id.id === closure_0);
     if (null == found) {
       return false;
     } else {
       const permissions = found.permissions;
-      const obj3 = importAll(506);
+      const obj3 = fromStringAll;
       if (allow.allow) {
         let addResult = obj3.add(permissions, flag);
       } else {
         addResult = obj3.remove(permissions, flag);
       }
-      let obj = { permissions: null };
+      obj = { permissions: null };
       obj[0] = addResult;
       const index = items.indexOf(found);
       if (index >= 0) {
@@ -443,7 +445,7 @@ obj = {
         items = [];
         HermesBuiltin.arraySpread(items, 0);
         items[index] = obj;
-        let c23 = true;
+        c23 = true;
         set.add(obj.id);
         callback();
       }
@@ -455,7 +457,7 @@ obj = {
     const found = items.find((id) => id.id === closure_0);
     let tmp2 = null != found;
     if (tmp2) {
-      let obj = { permissions: null };
+      obj = { permissions: null };
       obj[0] = id.permissions;
       const index = items.indexOf(found);
       if (index >= 0) {
@@ -465,7 +467,7 @@ obj = {
         items = [];
         HermesBuiltin.arraySpread(items, 0);
         items[index] = obj;
-        let c23 = true;
+        c23 = true;
         set.add(obj.id);
         callback();
       }
@@ -478,8 +480,8 @@ obj = {
     const found = items.find((id) => id.id === closure_0);
     let tmp2 = null != found;
     if (tmp2) {
-      let obj = { permissions: null };
-      obj[0] = importAll(4026).NONE;
+      obj = { permissions: null };
+      obj[0] = applyOverwritesAll.NONE;
       const index = items.indexOf(found);
       if (index >= 0) {
         obj = {};
@@ -488,7 +490,7 @@ obj = {
         items = [];
         HermesBuiltin.arraySpread(items, 0);
         items[index] = obj;
-        let c23 = true;
+        c23 = true;
         set.add(obj.id);
         callback();
       }
@@ -501,7 +503,7 @@ obj = {
     const found = items.find((id) => id.id === closure_0);
     let tmp2 = null != found;
     if (tmp2) {
-      let obj = { name: null };
+      obj = { name: null };
       obj[0] = id.name;
       const index = items.indexOf(found);
       if (index >= 0) {
@@ -511,7 +513,7 @@ obj = {
         items = [];
         HermesBuiltin.arraySpread(items, 0);
         items[index] = obj;
-        let c23 = true;
+        c23 = true;
         set.add(obj.id);
         callback();
       }
@@ -524,7 +526,7 @@ obj = {
     const found = items.find((id) => id.id === closure_0);
     let tmp2 = null != found;
     if (tmp2) {
-      let obj = { description: null };
+      obj = { description: null };
       obj[0] = id.description;
       const index = items.indexOf(found);
       if (index >= 0) {
@@ -534,7 +536,7 @@ obj = {
         items = [];
         HermesBuiltin.arraySpread(items, 0);
         items[index] = obj;
-        let c23 = true;
+        c23 = true;
         set.add(obj.id);
         callback();
       }
@@ -543,12 +545,10 @@ obj = {
     return tmp2;
   },
   GUILD_SETTINGS_ROLES_UPDATE_COLOR: function handleUpdateColor(arg0) {
-    let color;
-    let id;
     ({ id, color } = arg0);
     let int2hexResult = null;
     if (0 !== color) {
-      let obj = id(688);
+      obj = id(688);
       int2hexResult = obj.int2hex(color);
     }
     const found = items.find((id) => id.id === closure_0);
@@ -565,7 +565,7 @@ obj = {
         obj = {};
         const merged = Object.assign(value);
         const result = map2.set(id, obj);
-        const obj1 = { color: null, colorString: null, colors: null, colorStrings: null };
+        obj1 = { color: null, colorString: null, colors: null, colorStrings: null };
         obj1[0] = color;
         obj1[1] = int2hexResult;
         const obj2 = { primary_color: null, secondary_color: null, tertiary_color: null };
@@ -586,7 +586,7 @@ obj = {
           items = [];
           HermesBuiltin.arraySpread(items, 0);
           items[index] = obj4;
-          let c23 = true;
+          c23 = true;
           set.add(obj4.id);
           callback();
         }
@@ -596,21 +596,18 @@ obj = {
     }
   },
   GUILD_SETTINGS_ROLES_UPDATE_COLORS: function handleUpdateColors(arg0) {
-    let colors;
-    let currentStyle;
-    let id;
     ({ id, colors, currentStyle } = arg0);
     const found = items.find((id) => id.id === closure_0);
     if (null == found) {
       return false;
     } else {
-      const result = id(1986).extractColorStringsFromServerColors(colors);
+      const result = id(1987).extractColorStringsFromServerColors(colors);
       const value = map2.get(id);
       let tmp21 = null != value;
       if (tmp21) {
         value.styleColors[currentStyle] = colors;
         value.currentStyle = currentStyle;
-        let obj = {};
+        obj = {};
         const merged = Object.assign(value);
         const result1 = map2.set(id, obj);
         obj = { color: null, colors: null, colorString: null, colorStrings: null };
@@ -626,7 +623,7 @@ obj = {
           items = [];
           HermesBuiltin.arraySpread(items, 0);
           items[index] = obj;
-          let c23 = true;
+          c23 = true;
           set.add(obj.id);
           callback();
         }
@@ -636,14 +633,12 @@ obj = {
     }
   },
   GUILD_SETTINGS_ROLES_UPDATE_SETTINGS: function handleUpdateSettings(id) {
-    let hoist;
-    let mentionable;
     id = id.id;
     ({ hoist, mentionable } = id);
     const found = items.find((id) => id.id === closure_0);
     let tmp2 = null != found;
     if (tmp2) {
-      let obj = { hoist: null, mentionable: null };
+      obj = { hoist: null, mentionable: null };
       obj[0] = hoist;
       obj[1] = mentionable;
       const index = items.indexOf(found);
@@ -654,7 +649,7 @@ obj = {
         items = [];
         HermesBuiltin.arraySpread(items, 0);
         items[index] = obj;
-        let c23 = true;
+        c23 = true;
         set.add(obj.id);
         callback();
       }
@@ -663,14 +658,12 @@ obj = {
     return tmp2;
   },
   GUILD_SETTINGS_ROLES_UPDATE_ROLE_ICON: function handleUpdateRoleIcon(id) {
-    let icon;
-    let unicodeEmoji;
     id = id.id;
     ({ icon, unicodeEmoji } = id);
     const found = items.find((id) => id.id === closure_0);
     let tmp2 = null != found;
     if (tmp2) {
-      let obj = { icon: null, unicodeEmoji: null };
+      obj = { icon: null, unicodeEmoji: null };
       obj[0] = icon;
       obj[1] = unicodeEmoji;
       const index = items.indexOf(found);
@@ -681,7 +674,7 @@ obj = {
         items = [];
         HermesBuiltin.arraySpread(items, 0);
         items[index] = obj;
-        let c23 = true;
+        c23 = true;
         set.add(obj.id);
         callback();
       }
@@ -690,21 +683,18 @@ obj = {
     return tmp2;
   },
   GUILD_SETTINGS_ROLES_DISCARD_SECTION_CHANGES: function handleDiscardSectionChanges(id) {
-    let fields;
-    let original;
-    let role;
     id = id.id;
     let tmp = null;
     if (null != dependencyMap[id.section]) {
       tmp = null;
       if (0 !== arr.length) {
         const found = items.find((id) => id.id === closure_0);
-        const found1 = closure_26.find((id) => id.id === id);
+        const found1 = closure_26.find((id) => id.id === c0);
         let tmp6 = null;
         if (null != found) {
           tmp6 = null;
           if (null != found1) {
-            let obj = { fields: null, role: null, original: null };
+            obj = { fields: null, role: null, original: null };
             obj[0] = arr;
             obj[1] = found;
             obj[2] = found1;
@@ -718,7 +708,7 @@ obj = {
       return false;
     } else {
       ({ fields, role, original } = tmp);
-      const pickResult = importDefault(12).pick(original, fields);
+      const pickResult = applyDefault.pick(original, fields);
       const index = items.indexOf(role);
       if (index >= 0) {
         obj = {};
@@ -727,7 +717,7 @@ obj = {
         items = [];
         HermesBuiltin.arraySpread(items, 0);
         items[index] = obj;
-        let c23 = true;
+        c23 = true;
         set.add(obj.id);
         callback();
       }
@@ -742,16 +732,16 @@ obj = {
         }
         const items1 = [original];
         const item = items1.forEach((colors) => {
-          let GRADIENT = outer1_19.SOLID;
-          let obj = id(length[9]);
+          let GRADIENT = closure_1_19.SOLID;
+          obj = id(length[9]);
           if (!tmp2) {
             obj = {};
             obj = { primary_color: null, secondary_color: null, tertiary_color: null };
-            obj[0] = outer1_15;
+            obj[0] = closure_1_15;
             obj[tmp.SOLID] = obj;
-            ({ primary_color: obj4[0], secondary_color: obj4[1] } = outer1_17);
+            ({ primary_color: obj4[0], secondary_color: obj4[1] } = closure_1_17);
             obj[tmp.GRADIENT] = { primary_color: null, secondary_color: null, tertiary_color: null };
-            ({ primary_color: obj5[0], secondary_color: obj5[1], tertiary_color: obj5[2] } = outer1_18);
+            ({ primary_color: obj5[0], secondary_color: obj5[1], tertiary_color: obj5[2] } = closure_1_18);
             obj[tmp.HOLOGRAPHIC] = { primary_color: null, secondary_color: null, tertiary_color: null };
             if (null != colors.colors) {
               let primary_color = colors.colors.primary_color;
@@ -775,7 +765,7 @@ obj = {
             const obj4 = { currentStyle: null, styleColors: null };
             obj4[0] = GRADIENT;
             obj4[1] = obj;
-            const result = outer1_31.set(colors.id, obj4);
+            const result = closure_1_31.set(colors.id, obj4);
           } else if (null != colors.colors.tertiary_color) {
             GRADIENT = tmp.HOLOGRAPHIC;
           } else if (null != colors.colors.secondary_color) {
@@ -797,18 +787,18 @@ obj = {
     }
     set1.delete(id);
     if (0 === set1.size) {
-      let c27 = false;
+      c27 = false;
     }
   },
   GUILD_SETTINGS_ROLES_COMMIT_SECTION_CHANGES: function handleCommitSectionChanges(id) {
     id = id.id;
-    let obj;
+    obj = undefined;
     let tmp = null;
     if (null != dependencyMap[id.section]) {
       tmp = null;
       if (0 !== arr.length) {
         const found = closure_25.find((id) => id.id === closure_0);
-        const found1 = closure_26.find((id) => id.id === id);
+        const found1 = closure_26.find((id) => id.id === c0);
         let tmp6 = null;
         if (null != found) {
           tmp6 = null;
@@ -840,14 +830,12 @@ obj = {
       if (isRoleEqual(role, obj)) {
         set.delete(id);
         if (0 === set.size) {
-          let c23 = false;
+          c23 = false;
         }
       }
     }
   },
   GUILD_SETTINGS_ROLE_SELECT: function handleInsertRole(arg0) {
-    let closure_5;
-    let role;
     ({ role, searchQuery: closure_5 } = arg0);
     if (null != role) {
       const id = role.id;
@@ -859,13 +847,13 @@ obj = {
       } else {
         const index = items1.indexOf(role);
         if (index >= 0) {
-          const obj = {};
+          obj = {};
           const merged = Object.assign(role);
           const merged1 = Object.assign(role);
           items1 = [];
           HermesBuiltin.arraySpread(items1, 0);
           items1[index] = obj;
-          let c23 = true;
+          c23 = true;
           set.add(obj.id);
           callback();
         }
@@ -873,17 +861,15 @@ obj = {
     }
   },
   GUILD_SETTINGS_ROLES_DUPLICATE_SUCCESS: function handleDuplicateSuccess(arg0) {
-    let role;
-    let roles;
     ({ role, roles } = arg0);
-    const map = new Map(closure_25.map((id) => {
+    map = new Map(closure_25.map((id) => {
       const items = [id.id, id];
       return items;
     }));
     let result = map.set(role.id, role);
     let id = map;
     let found1;
-    let set1;
+    set1 = undefined;
     let length;
     const mapped = roles.map((arg0) => id.get(arg0));
     const found = mapped.filter(id(length[10]).isNotNullish);
@@ -896,12 +882,12 @@ obj = {
     });
     length = found.length;
     closure_25 = found.map((arg0, arg1) => {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(arg0);
       obj.position = length - 1 - arg1;
       return obj;
     });
-    const map1 = new Map(closure_26.map((id) => {
+    map1 = new Map(closure_26.map((id) => {
       const items = [id.id, id];
       return items;
     }));
@@ -920,7 +906,7 @@ obj = {
     });
     length = found1.length;
     closure_26 = found1.map((arg0, arg1) => {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(arg0);
       obj.position = length - 1 - arg1;
       return obj;
@@ -931,16 +917,16 @@ obj = {
     }
     let items = [role];
     const item2 = items.forEach((colors) => {
-      let GRADIENT = outer1_19.SOLID;
-      let obj = id(length[9]);
+      let GRADIENT = closure_1_19.SOLID;
+      obj = id(length[9]);
       if (!tmp2) {
         obj = {};
         obj = { primary_color: null, secondary_color: null, tertiary_color: null };
-        obj[0] = outer1_15;
+        obj[0] = closure_1_15;
         obj[tmp.SOLID] = obj;
-        ({ primary_color: obj4[0], secondary_color: obj4[1] } = outer1_17);
+        ({ primary_color: obj4[0], secondary_color: obj4[1] } = closure_1_17);
         obj[tmp.GRADIENT] = { primary_color: null, secondary_color: null, tertiary_color: null };
-        ({ primary_color: obj5[0], secondary_color: obj5[1], tertiary_color: obj5[2] } = outer1_18);
+        ({ primary_color: obj5[0], secondary_color: obj5[1], tertiary_color: obj5[2] } = closure_1_18);
         obj[tmp.HOLOGRAPHIC] = { primary_color: null, secondary_color: null, tertiary_color: null };
         if (null != colors.colors) {
           let primary_color = colors.colors.primary_color;
@@ -964,7 +950,7 @@ obj = {
         const obj4 = { currentStyle: null, styleColors: null };
         obj4[0] = GRADIENT;
         obj4[1] = obj;
-        const result = outer1_31.set(colors.id, obj4);
+        const result = closure_1_31.set(colors.id, obj4);
       } else if (null != colors.colors.tertiary_color) {
         GRADIENT = tmp.HOLOGRAPHIC;
       } else if (null != colors.colors.secondary_color) {
@@ -973,8 +959,6 @@ obj = {
     });
   },
   GUILD_SETTINGS_ROLES_ROLE_STYLE_UPDATE: function handleRoleStyleUpdate(arg0) {
-    let currentStyle;
-    let id;
     ({ id, currentStyle } = arg0);
     const found = items.find((id) => id.id === closure_0);
     if (null == found) {
@@ -984,11 +968,11 @@ obj = {
       if (null == value) {
         return false;
       } else {
-        let obj = { currentStyle: null, styleColors: null };
+        obj = { currentStyle: null, styleColors: null };
         obj[0] = currentStyle;
         obj[1] = value.styleColors;
         const result = obj3.set(id, obj);
-        const result1 = id(1986).extractColorStringsFromServerColors(tmp19);
+        const result1 = id(1987).extractColorStringsFromServerColors(tmp19);
         const primary_color = tmp19.primary_color;
         obj = { color: null, colors: null, colorString: null, colorStrings: null };
         obj[0] = primary_color;
@@ -1003,7 +987,7 @@ obj = {
           items = [];
           HermesBuiltin.arraySpread(items, 0);
           items[index] = obj;
-          let c23 = true;
+          c23 = true;
           set.add(obj.id);
           callback();
         }
@@ -1013,8 +997,6 @@ obj = {
     }
   },
   GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS: function handleFetchRoleConnectionConfigurations(arg0) {
-    let require;
-    let roleConnectionConfigurations;
     ({ roleConnectionConfigurations, roleId: require } = arg0);
     const found = closure_25.find((id) => id.id === closure_0);
     if (null == found) {
@@ -1028,12 +1010,12 @@ obj = {
         const result1 = obj.set(found.id, roleConnectionConfigurations);
         set1.delete(found.id);
         if (0 === set1.size) {
-          let c27 = false;
+          c27 = false;
         }
         callback();
       }
       obj = map;
-      obj2 = importDefault(12);
+      obj2 = applyDefault;
     }
   },
   GUILD_SETTINGS_ROLES_UPDATE_ROLE_CONNECTION_CONFIGURATIONS: function handleUpdateRoleConnectionConfigurations(roleId) {
@@ -1042,24 +1024,24 @@ obj = {
     if (null == found) {
       return false;
     } else {
-      let c27 = true;
+      c27 = true;
       set1.add(found.id);
       const result = map1.set(found.id, roleId.roleConnectionConfigurations);
       callback();
     }
   },
   GUILD_SETTINGS_CLOSE: function handleClose() {
-    let c4 = null;
+    c4 = null;
     const items = [];
     map.clear();
     set.clear();
     map2.clear();
     map1.clear();
     set = new Set();
-    let c23 = false;
-    let c24 = false;
-    let c27 = false;
-    const CLOSED = FormStates.CLOSED;
+    c23 = false;
+    c24 = false;
+    c27 = false;
+    CLOSED = FormStates.CLOSED;
   },
   GUILD_ROLE_CREATE: syncGuildChanges,
   GUILD_ROLE_UPDATE: syncGuildChanges,
@@ -1069,7 +1051,7 @@ obj = {
       map1.delete(roleId.roleId);
       set1.delete(roleId.roleId);
       if (0 === set1.size) {
-        let c27 = false;
+        c27 = false;
       }
     }
     return syncGuildChanges(roleId);
@@ -1090,7 +1072,7 @@ obj = {
         const _Set = Set;
         const items = [];
         items[HermesBuiltin.arraySpread(user.features, 0)] = constants2.PIN_PERMISSION_MIGRATION_COMPLETE;
-        const set = new Set(items);
+        set = new Set(items);
         user = set(user, "features", set);
       }
     }
@@ -1102,14 +1084,14 @@ obj = {
         const _Set = Set;
         const items = [];
         items[HermesBuiltin.arraySpread(user.features, 0)] = constants2.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE;
-        const set = new Set(items);
+        set = new Set(items);
         user = set(user, "features", set);
       }
     }
     return false;
   }
 };
-const guildSettingsRolesStore = new GuildSettingsRolesStore(require("dispatcher"), obj);
+const guildSettingsRolesStore = new GuildSettingsRolesStore(dispatcherDefault, obj);
 let result = set.fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRolesStore.tsx");
 
 export default guildSettingsRolesStore;

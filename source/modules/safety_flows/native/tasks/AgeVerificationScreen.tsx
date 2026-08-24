@@ -1,29 +1,27 @@
-// Module ID: 17097
-// Function ID: 17098
+// Module ID: 17190
+// Function ID: 17191
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1922, 676, 21, 4661, 514, 17090, 589, 6697, 17084, 1954, 5254, 17093, 5447, 1236, 2597, 2853, 5428, 1993, 13540, 5256, 4734, 6699, 2]
+// Dependencies: [19, 17, 1922, 676, 21, 4668, 514, 17183, 589, 6733, 17177, 1954, 5259, 17186, 5452, 1236, 2598, 2854, 5433, 1994, 13598, 5261, 4739, 6735, 2]
 // Exports: default
 
-// Module 17097 (AgeVerificationScreen)
-import combined from "combined";
-import { Pressable } from "messagesProxy";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { HelpdeskArticles } from "ME";
-import { jsx } from "handleLogout";
-import createCacheKey from "createCacheKey";
+// Module 17190 (AgeVerificationScreen)
+import closure_3 from "noop" /* 19 */;
+import { Pressable } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import { HelpdeskArticles } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_8 = createCacheKey.createStyles({ helpLink: { textAlign: "center" } });
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/safety_flows/native/tasks/AgeVerificationScreen.tsx");
+let result = require("set").fileFinishedImporting("modules/safety_flows/native/tasks/AgeVerificationScreen.tsx");
 
 export default function AgeVerificationScreen() {
-  let ageVerificationMethods;
-  let loading;
   const memo = React.useMemo(() => memo(stateFromStores[6]).v4(), []);
   let obj = memo(stateFromStores[7]);
   const onTaskComplete = obj.useOnTaskComplete();
-  let obj1 = memo(stateFromStores[8]);
-  const items = [mergeGuildAvatar];
+  obj1 = memo(stateFromStores[8]);
+  const items = [closure_5];
   stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
   obj = {
     onClose() {

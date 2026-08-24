@@ -1,19 +1,19 @@
-// Module ID: 7296
-// Function ID: 7297
+// Module ID: 7334
+// Function ID: 7335
 // Name: useGuildOnboardingAvailable
-// Dependencies: [1982, 676, 589, 2]
+// Dependencies: [1983, 676, 589, 2]
 // Exports: default, isGuildOnboardingAvailable
 
-// Module 7296 (useGuildOnboardingAvailable)
-import initialize from "initialize";
-import { GuildFeatures } from "ME";
+// Module 7334 (useGuildOnboardingAvailable)
+import closure_2 from "initialize" /* 1983 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/guild_onboarding/useGuildOnboardingAvailable.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_onboarding/useGuildOnboardingAvailable.tsx");
 
 export default function useGuildOnboardingAvailable(features) {
   const _require = features;
-  const items = [initialize];
+  const items = [closure_2];
   let stateFromStores = _require(589).useStateFromStores(items, () => {
     let id;
     if (closure_0 != null) {
@@ -22,7 +22,7 @@ export default function useGuildOnboardingAvailable(features) {
     if (null == id) {
       return false;
     } else {
-      return outer1_2.isFullServerPreview(tmp.id) && outer1_2.isOnboardingEnabled(tmp.id);
+      return closure_1_2.isFullServerPreview(tmp.id) && closure_1_2.isOnboardingEnabled(tmp.id);
     }
   });
   if (!stateFromStores) {
@@ -39,7 +39,7 @@ export const isGuildOnboardingAvailable = function isGuildOnboardingAvailable(gu
   if (null == guild) {
     return false;
   } else {
-    let hasItem = initialize.isFullServerPreview(guild.id) && initialize.isOnboardingEnabled(guild.id);
+    let hasItem = closure_2.isFullServerPreview(guild.id) && closure_2.isOnboardingEnabled(guild.id);
     if (!hasItem) {
       const features = guild.features;
       hasItem = features.has(GuildFeatures.GUILD_ONBOARDING_HAS_PROMPTS);

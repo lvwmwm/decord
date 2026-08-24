@@ -1,37 +1,35 @@
-// Module ID: 11154
-// Function ID: 11155
+// Module ID: 11206
+// Function ID: 11207
 // Name: mutable
-// Dependencies: [1496, 4115, 5444, 1895, 4239, 10561, 2]
+// Dependencies: [1496, 4119, 5449, 1895, 4243, 10600, 2]
 // Exports: default, getKeyboardStateWorklet
 
-// Module 11154 (mutable)
-import module_4115 from "module_4115";
-import useCustomKeyboardHeight from "useCustomKeyboardHeight";
-import useSystemKeyboardHeight from "useSystemKeyboardHeight";
-import useKeyboardType from "useKeyboardType";
-import importDefaultResult from "subscribeToKeyboardUIStore";
+// Module 11206 (mutable)
+import uDefault from "u" /* 10600 */;
+import module_4119 from "module_4119" /* 4119 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5449 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1895 */;
+import useKeyboardType from "useKeyboardType" /* 4243 */;
+import importDefaultResult from "subscribeToKeyboardUIStore" /* 1496 */;
 
-module_4115 = { customKeyboardHeight: null, keyboardHeight: null, keyboardType: null };
-module_4115[0] = useCustomKeyboardHeight.getCustomKeyboardHeight();
-module_4115[1] = useSystemKeyboardHeight.getSystemKeyboardHeight();
-module_4115[2] = useKeyboardType.getKeyboardType();
-module_4115 = module_4115.makeMutable(module_4115);
-require("subscribeToKeyboardUIStore")((arg0) => {
-  let customKeyboardHeight;
-  let keyboardHeight;
-  let keyboardType;
+module_4119 = { customKeyboardHeight: null, keyboardHeight: null, keyboardType: null };
+module_4119[0] = useCustomKeyboardHeight.getCustomKeyboardHeight();
+module_4119[1] = useSystemKeyboardHeight.getSystemKeyboardHeight();
+module_4119[2] = useKeyboardType.getKeyboardType();
+module_4119 = module_4119.makeMutable(module_4119);
+importDefaultResult((arg0) => {
   ({ customKeyboardHeight, keyboardHeight, keyboardType } = arg0);
-  importDefault(10561)(module_4115, { customKeyboardHeight, keyboardHeight, keyboardType });
+  uDefault(module_4119, { customKeyboardHeight, keyboardHeight, keyboardType });
 });
 function getKeyboardStateWorklet() {
-  return module_4115.get();
+  return module_4119.get();
 }
-getKeyboardStateWorklet.__closure = { keyboardStateSharedValue: module_4115 };
+getKeyboardStateWorklet.__closure = { keyboardStateSharedValue: module_4119 };
 getKeyboardStateWorklet.__workletHash = 1081829024717;
 getKeyboardStateWorklet.__initData = { code: "function getKeyboardStateWorklet_useKeyboardStateSharedValueNativeTsx1(){const{keyboardStateSharedValue}=this.__closure;return keyboardStateSharedValue.get();}" };
-const result = require("useCustomKeyboardHeight").fileFinishedImporting("modules/keyboard/native/useKeyboardStateSharedValue.native.tsx");
+const result = require("set").fileFinishedImporting("modules/keyboard/native/useKeyboardStateSharedValue.native.tsx");
 
 export default function useKeyboardStateSharedValue() {
-  return module_4115;
+  return module_4119;
 };
 export { getKeyboardStateWorklet };

@@ -1,43 +1,47 @@
-// Module ID: 8371
-// Function ID: 8372
+// Module ID: 8410
+// Function ID: 8411
 // Name: ANALYTICS_NAME
 // Dependencies: [676, 687, 1236, 1430, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 8371 (ANALYTICS_NAME)
-import { NOTIFICATIONS_INBOX } from "ME";
+// Module 8410 (ANALYTICS_NAME)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import setDefault from "set" /* 687 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
 
+const NOTIFICATIONS_INBOX = ME.NOTIFICATIONS_INBOX;
 let obj = { UNREAD: "UNREAD", TODAY: "TODAY", YESTERDAY: "YESTERDAY", OLDER: "OLDER" };
 obj = { ALL: "all", MENTIONS: "mentions", BOOKMARKS: "bookmarks" };
 obj = {};
-obj[obj.UNREAD] = require("getSystemLocale").t.sRUdB8;
-obj[obj.TODAY] = require("getSystemLocale").t.F4jZQs;
-obj[obj.YESTERDAY] = require("getSystemLocale").t.gnv4pE;
-obj[obj.OLDER] = require("getSystemLocale").t.exrPZv;
-const result = require("getSystemLocale").fileFinishedImporting("modules/notifications_inbox/NotificationsInboxConstants.tsx");
+obj[obj.UNREAD] = getSystemLocale.t.sRUdB8;
+obj[obj.TODAY] = getSystemLocale.t.F4jZQs;
+obj[obj.YESTERDAY] = getSystemLocale.t.gnv4pE;
+obj[obj.OLDER] = getSystemLocale.t.exrPZv;
+const result = set.fileFinishedImporting("modules/notifications_inbox/NotificationsInboxConstants.tsx");
 
 export const ANALYTICS_NAME = "Notifications Inbox";
 export const NOTIFICATIONS_INBOX_RAW_GUILD_ID = "notifications_inbox_guild_id";
 export const GUILD_HEADER_HEIGHT = 88;
-export const INBOX_MESSAGE_AGE_THRESHOLD = require("set").Millis.WEEK;
+export const INBOX_MESSAGE_AGE_THRESHOLD = setDefault.Millis.WEEK;
 export const MAX_MESSAGES_PER_CHANNEL = 50;
 export const MAX_UNREAD_MESSAGES_PER_CHANNEL = 10;
 export const NOTIFICATIONS_INBOX_FEATURE = "notifications-inbox";
 export const getNotificationsInboxGuild = function getNotificationsInboxGuild(arg0) {
   if (arg0 === obj.BOOKMARKS) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    let stringResult = intl3.string(require(1236) /* getSystemLocale */.t["2pAkDA"]);
+    const intl3 = getSystemLocale.intl;
+    let stringResult = intl3.string(getSystemLocale.t["2pAkDA"]);
     let tmp2 = require;
   } else if (arg0 === tmp.MENTIONS) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    stringResult = intl2.string(require(1236) /* getSystemLocale */.t.jbV6MM);
+    const intl2 = getSystemLocale.intl;
+    stringResult = intl2.string(getSystemLocale.t.jbV6MM);
     tmp2 = require;
   } else {
     tmp2 = require;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1236) /* getSystemLocale */.t.HcoRu0);
+    const intl = getSystemLocale.intl;
+    stringResult = intl.string(getSystemLocale.t.HcoRu0);
   }
-  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: "icons" };
+  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: "Wumpus" };
   obj[4] = [];
   return tmp2(1430).fromGuildBasic(obj);
 };
@@ -47,13 +51,13 @@ export const InboxReadState = { READ: "READ", UNREAD: "UNREAD" };
 export const InboxMessageType = { ALL_MESSAGES_CHANNEL: "ALL_MESSAGES_CHANNEL", MENTION: "MENTION", BOOKMARK: "BOOKMARK" };
 export const MESSAGE_CATEGORY_DISPLAY_MAP = obj;
 export const getFilterMap = function getFilterMap() {
-  const obj = {};
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[obj.ALL] = intl.string(require(1236) /* getSystemLocale */.t.iWyjNt);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[obj.MENTIONS] = intl2.string(require(1236) /* getSystemLocale */.t.jbV6MM);
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[obj.BOOKMARKS] = intl3.string(require(1236) /* getSystemLocale */.t["+rlGYW"]);
+  obj = {};
+  const intl = getSystemLocale.intl;
+  obj[obj.ALL] = intl.string(getSystemLocale.t.iWyjNt);
+  const intl2 = getSystemLocale.intl;
+  obj[obj.MENTIONS] = intl2.string(getSystemLocale.t.jbV6MM);
+  const intl3 = getSystemLocale.intl;
+  obj[obj.BOOKMARKS] = intl3.string(getSystemLocale.t["+rlGYW"]);
   return obj;
 };
 export const ChannelLoadState = { UNLOADED: "unloaded", LOADED: "loaded", LOADED_UNREAD: "loadedUnread" };

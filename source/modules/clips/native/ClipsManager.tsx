@@ -1,20 +1,25 @@
-// Module ID: 17023
-// Function ID: 17024
+// Module ID: 17116
+// Function ID: 17117
 // Name: showClipsToast
-// Dependencies: [4523, 17024, 4094, 1236, 2]
+// Dependencies: [4528, 17117, 4097, 1236, 2]
 
-// Module 17023 (showClipsToast)
-import { CLIPS_TOAST_DURATION } from "result";
-import "handleRTCConnectionState";
+// Module 17116 (showClipsToast)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import dispatcherDefault from "dispatcher" /* 4097 */;
+import result2 from "result" /* 4528 */;
+import handleRTCConnectionStateDefault from "handleRTCConnectionState" /* 17117 */;
 
+const CLIPS_TOAST_DURATION = result2.CLIPS_TOAST_DURATION;
+handleRTCConnectionStateDefault;
 class ClipsManager extends tmp2 {
 }
 const prototype = ClipsManager.prototype;
 prototype["showClipsToast"] = function showClipsToast() {
-  let obj = importDefault(4094);
+  let obj = dispatcherDefault;
   obj = { key: "CLIPS_IN_CALL_WARNING", content: null, toastDurationMs: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["d+41qJ"]);
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t["d+41qJ"]);
   obj[2] = CLIPS_TOAST_DURATION;
   obj.open(obj);
 };
@@ -34,6 +39,6 @@ prototype["handleStreamEnded"] = function handleStreamEnded(arg0) {
 
 };
 const clipsManager = new ClipsManager();
-const result = require("dispatcher").fileFinishedImporting("modules/clips/native/ClipsManager.tsx");
+const result = set.fileFinishedImporting("modules/clips/native/ClipsManager.tsx");
 
 export default clipsManager;

@@ -1,15 +1,17 @@
-// Module ID: 14168
-// Function ID: 14169
+// Module ID: 14236
+// Function ID: 14237
 // Name: handleDisableAccount
-// Dependencies: [1910, 1922, 1236, 8620, 14153, 4827, 2]
+// Dependencies: [1910, 1922, 1236, 8657, 14221, 4832, 2]
 // Exports: default
 
-// Module 14168 (handleDisableAccount)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 14236 (handleDisableAccount)
+import setDefault from "set" /* 4832 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 14221 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/account/native/handleDisableAccount.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/account/native/handleDisableAccount.tsx");
 
 export default function handleDisableAccount() {
   let flag = arg0;
@@ -32,14 +34,14 @@ export default function handleDisableAccount() {
     let obj = { title: null, body: null };
     obj[0] = stringResult;
     obj[1] = stringResult1;
-    importDefault(4827).show(obj);
-    const obj3 = importDefault(4827);
+    setDefault.show(obj);
+    const obj3 = setDefault;
   } else {
     const formatted = string(t["CIGa+7"]).toUpperCase();
     obj = { onSubmit: null, title: null, placeholder: null, closeOnSuccess: true };
     if (flag) {
       obj[0] = function onSubmit(password) {
-        return currentUser(8620).disableAccount(password, true);
+        return currentUser(8657).disableAccount(password, true);
       };
       const intl3 = tmp4(1236).intl;
       obj[1] = intl3.string(tmp4(1236).t["8lQ2rR"]).toUpperCase();
@@ -48,7 +50,7 @@ export default function handleDisableAccount() {
       const str3 = intl3.string(tmp4(1236).t["8lQ2rR"]);
     } else {
       obj[0] = function onSubmit(password) {
-        return currentUser(8620).disableAccount(password, false);
+        return currentUser(8657).disableAccount(password, false);
       };
       const intl2 = tmp4(1236).intl;
       obj[1] = intl2.string(tmp4(1236).t.jf5GGb).toUpperCase();
@@ -56,7 +58,7 @@ export default function handleDisableAccount() {
       tmp8 = obj;
       const str2 = intl2.string(tmp4(1236).t.jf5GGb);
     }
-    importDefault(14153)(tmp8);
+    showUserSettingsInputAlertDefault(tmp8);
     const str = string(t["CIGa+7"]);
   }
 };

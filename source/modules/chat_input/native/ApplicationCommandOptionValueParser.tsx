@@ -1,37 +1,40 @@
-// Module ID: 11165
-// Function ID: 11166
+// Module ID: 11217
+// Function ID: 11218
 // Name: getUsers
-// Dependencies: [19, 5251, 1395, 1980, 1990, 1983, 4030, 1922, 6810, 12, 1370, 4984, 6714, 1954, 7436, 2]
+// Dependencies: [19, 5256, 1395, 1981, 1991, 1984, 4033, 1922, 6847, 12, 1370, 4989, 6751, 1954, 7474, 2]
 // Exports: getRoles, parseOptionValuesForSend, useApplicationCommandOptionValueParser
 
-// Module 11165 (getUsers)
-import noop from "noop";
-import rebuild from "rebuild";
-import { isGuildSelectableChannelType as closure_5 } from "createChannelRecord";
-import comparator from "comparator";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import regExp from "regExp";
+// Module 11217 (getUsers)
+import applyDefault from "apply" /* 12 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import rebuild from "rebuild" /* 7474 */;
+import rebuildDefault from "rebuild" /* 7474 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "rebuild" /* 5256 */;
+import { isGuildSelectableChannelType as closure_5 } from "createChannelRecord" /* 1395 */;
+import closure_6 from "comparator" /* 1981 */;
+import closure_7 from "trackCommunicationDisabled" /* 1991 */;
+import closure_8 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_9 from "markAllUserIdListsStale" /* 4033 */;
+import closure_10 from "mergeGuildAvatar" /* 1922 */;
+import regExp from "regExp" /* 6847 */;
 
-let closure_12;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function getUsers(getGuildId) {
   const guildId = getGuildId.getGuildId();
   if (getGuildId.isPrivate()) {
-    let mapped = importDefault(12)(getGuildId.recipients).map((userId) => ({ userId }));
-    const arr3 = importDefault(12)(getGuildId.recipients);
+    let mapped = applyDefault(getGuildId.recipients).map((userId) => ({ userId }));
+    const arr3 = applyDefault(getGuildId.recipients);
   } else if (null != guildId) {
-    const tmp7 = importDefault(12);
-    mapped = importDefault(12)(members.getMembers(guildId)).map((userId) => ({ userId: userId.userId }));
-    const tmp7Result = importDefault(12)(members.getMembers(guildId));
+    const tmp7 = applyDefault;
+    mapped = applyDefault(members.getMembers(guildId)).map((userId) => ({ userId: userId.userId }));
+    const tmp7Result = applyDefault(members.getMembers(guildId));
   } else {
-    mapped = importDefault(12)([]);
+    mapped = applyDefault([]);
   }
   const mapped1 = mapped.map((userId) => user.getUser(userId.userId));
-  const found = mapped1.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+  const found = mapped1.filter(isDiscordFrontendDevelopment.isNotNullish);
   return found.map((id) => ({ id: id.id, text: id.tag }));
 }
 function getChannels(getGuildId, arr) {
@@ -44,15 +47,14 @@ function getChannels(getGuildId, arr) {
     }
     tmp2 = null == arr || arr.includes(getGuildId.type);
     return guildId(12)(items).map((id) => {
-      const obj = { id: id.id, text: null };
-      obj[1] = arr(4984).computeChannelName(id, mergeGuildAvatar, markAllUserIdListsStale);
+      const obj = { id: id.id, text: arr(4989).computeChannelName(id, closure_10, closure_9) };
       return obj;
     });
   } else {
-    const dependencyMap = textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId);
+    dependencyMap = textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId);
     const tmp9 = guildId(12);
-    const tmp9Result = guildId(12)(_require(6714).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
-    const combined = guildId(12)(_require(6714).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).flatMap((arg0) => outer1_6.getChannels(guildId)[arg0].map((channel) => channel.channel)).concat(rebuild.computeAllActiveJoinedThreads(guildId));
+    const tmp9Result = guildId(12)(_require(6751).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
+    const combined = guildId(12)(_require(6751).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).flatMap((arg0) => closure_1_6.getChannels(guildId)[arg0].map((channel) => channel.channel)).concat(closure_4.computeAllActiveJoinedThreads(guildId));
     const found = combined.filter((type) => {
       let hasItem = null == closure_0;
       if (!hasItem) {
@@ -62,19 +64,19 @@ function getChannels(getGuildId, arr) {
     });
     return found.map((id) => {
       const obj = { id: id.id, text: null };
-      if (outer1_5(id.type)) {
+      if (closure_1_5(id.type)) {
         let name;
         if (dependencyMap[id.id] != null) {
           name = tmp7.name;
         }
         if (name == null) {
-          name = arr(4984).computeChannelName(id, outer1_10, outer1_9);
-          const obj3 = arr(4984);
+          name = arr(4989).computeChannelName(id, closure_1_10, closure_1_9);
+          const obj3 = arr(4989);
         }
         let channelName = name;
       } else {
-        channelName = arr(4984).computeChannelName(id, outer1_10, outer1_9);
-        const obj2 = arr(4984);
+        channelName = arr(4989).computeChannelName(id, closure_1_10, closure_1_9);
+        const obj2 = arr(4989);
       }
       obj[1] = channelName;
       return obj;
@@ -91,25 +93,25 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
   obj.parse = function parse(text, type) {
     const str = text.trim();
     let arr6 = str;
-    let arr = outer1_15(arr6.channel);
-    let closure_1 = arr;
+    let arr = closure_1_15(arr6.channel);
+    closure_1 = arr;
     const guild_id = arr6.channel.guild_id;
     if (null != guild_id) {
-      let sortedRoles = outer1_8.getSortedRoles(guild_id);
+      let sortedRoles = closure_1_8.getSortedRoles(guild_id);
     } else {
       sortedRoles = [];
     }
-    let closure_2 = outer1_1(outer1_2[9])(sortedRoles).map((id) => ({ id: id.id, text: id.name }));
-    let noop = arr.map((text) => {
-      const obj = {};
+    closure_2 = closure_1_1(closure_1_2[9])(sortedRoles).map((id) => ({ id: id.id, text: id.name }));
+    closure_3 = arr.map((text) => {
+      obj = {};
       const merged = Object.assign(text);
       obj.text = text.text.split("#")[0];
       return obj;
     });
     function matchUser() {
-      const arr = outer1_11;
-      let obj = closure_1;
-      if (typeof outer1_14 !== "function") {
+      const arr = closure_1_11;
+      obj = closure_1;
+      if (typeof closure_1_14 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       let firstResult = null;
@@ -132,7 +134,7 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
         obj[1] = firstResult.id;
         let tmp6 = obj;
       } else {
-        if (typeof outer1_14 !== "function") {
+        if (typeof closure_1_14 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let firstResult1 = null;
@@ -155,19 +157,19 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
           obj[1] = firstResult1.id;
           tmp6 = obj;
         }
-        obj6 = noop;
+        obj6 = closure_3;
       }
       return tmp6;
     }
-    if (type.type === obj(outer1_2[13]).ApplicationCommandOptionType.USER) {
+    if (type.type === obj(closure_1_2[13]).ApplicationCommandOptionType.USER) {
       const matchUserResult = matchUser();
       if (null != matchUserResult) {
         return matchUserResult;
       } else {
-        outer1_13.lastIndex = 0;
-        const match = outer1_13.exec(str);
+        closure_1_13.lastIndex = 0;
+        const match = closure_1_13.exec(str);
         if (null != match) {
-          const findByTagResult = outer1_10.findByTag(match[2], match[3]);
+          const findByTagResult = closure_1_10.findByTag(match[2], match[3]);
           if (null != findByTagResult) {
             obj = { type: "userMention", userId: null };
             obj[1] = findByTagResult.id;
@@ -177,14 +179,14 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
       }
     }
     function matchRole() {
-      const arr = outer1_11;
-      let obj = closure_2;
-      if (typeof outer1_14 !== "function") {
+      const arr = closure_1_11;
+      obj = closure_2;
+      if (typeof closure_1_14 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       let firstResult = null;
       if (arr[0] === arr) {
-        let closure_1 = str.substr(arr.length);
+        closure_1 = str.substr(arr.length);
         const found = obj.sortBy((text) => -text.text.length).filter((text) => {
           const formatted = closure_1.toLowerCase();
           return formatted === text.text.toLowerCase();
@@ -205,15 +207,15 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
       }
       return obj;
     }
-    if (type.type === obj(outer1_2[13]).ApplicationCommandOptionType.ROLE) {
+    if (type.type === obj(closure_1_2[13]).ApplicationCommandOptionType.ROLE) {
       const matchRoleResult = matchRole();
       if (null != matchRoleResult) {
         return matchRoleResult;
       }
     }
-    if (type.type === obj(outer1_2[13]).ApplicationCommandOptionType.CHANNEL) {
-      arr6 = outer1_12;
-      if (typeof outer1_14 !== "function") {
+    if (type.type === obj(closure_1_2[13]).ApplicationCommandOptionType.CHANNEL) {
+      arr6 = closure_1_12;
+      if (typeof closure_1_14 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       let firstResult = null;
@@ -234,9 +236,9 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
           return obj;
         }
       }
-      obj6 = outer1_16(arr6.channel, type.channelTypes);
+      obj6 = closure_1_16(arr6.channel, type.channelTypes);
     }
-    if (type.type === obj(outer1_2[13]).ApplicationCommandOptionType.MENTIONABLE) {
+    if (type.type === obj(closure_1_2[13]).ApplicationCommandOptionType.MENTIONABLE) {
       const matchRoleResult1 = matchRole();
       if (null != matchRoleResult1) {
         return matchRoleResult1;
@@ -245,12 +247,12 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
         if (null != matchUserResult1) {
           return matchUserResult1;
         } else {
-          outer1_13.lastIndex = 0;
-          const match1 = outer1_13.exec(str);
+          closure_1_13.lastIndex = 0;
+          const match1 = closure_1_13.exec(str);
           if (null != match1) {
-            const findByTagResult1 = outer1_10.findByTag(match1[2], match1[3]);
+            const findByTagResult1 = closure_1_10.findByTag(match1[2], match1[3]);
             if (null != findByTagResult1) {
-              const obj1 = { type: "userMention", userId: null };
+              obj1 = { type: "userMention", userId: null };
               obj1[1] = findByTagResult1.id;
               return obj1;
             }
@@ -263,7 +265,7 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
   obj.channel = channel;
   return obj;
 }.prototype;
-const result = require("createChannelRecord").fileFinishedImporting("modules/chat_input/native/ApplicationCommandOptionValueParser.tsx");
+const result = require("set").fileFinishedImporting("modules/chat_input/native/ApplicationCommandOptionValueParser.tsx");
 
 export { getUsers };
 export const getRoles = function getRoles(guild_id) {
@@ -273,7 +275,7 @@ export const getRoles = function getRoles(guild_id) {
   } else {
     sortedRoles = [];
   }
-  return importDefault(12)(sortedRoles).map((id) => ({ id: id.id, text: id.name }));
+  return applyDefault(sortedRoles).map((id) => ({ id: id.id, text: id.name }));
 };
 export { getChannels };
 export const ApplicationCommandOptionValueParser = prototype;
@@ -283,7 +285,7 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
   } else {
     let obj = {};
     const options = activeCommand.options;
-    const parserState = require(7436) /* rebuild */.createParserState(channel);
+    const parserState = rebuild.createParserState(channel);
     const iter = options[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
@@ -297,7 +299,7 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
           let tmp23 = require;
           let tmp24 = dependencyMap;
           let tmp25 = dependencyMap;
-          if (tmp4.type === require(1954) /* PermissionOverwriteType */.ApplicationCommandOptionType.STRING) {
+          if (tmp4.type === PermissionOverwriteType.ApplicationCommandOptionType.STRING) {
             let tmp7 = nextResult;
             if (null == tmp4.choices) {
               let tmp8 = nextResult;
@@ -306,7 +308,7 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
                 obj = { type: "text", text: null };
                 let tmp10 = importDefault;
                 let tmp11 = tmp24;
-                let obj2 = importDefault(7436);
+                let obj2 = rebuildDefault;
                 let tmp12 = tmp5;
                 obj[1] = obj2.parse(channel, tmp6[0].text, parserState).content;
                 let items = [obj];
@@ -328,32 +330,32 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
   channel = channel.channel;
   const items = [channel];
   return React.useMemo(() => {
-    if (typeof outer1_17 !== "function") {
+    if (typeof closure_1_17 !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    let obj = Object.create(outer1_17.prototype);
+    let obj = Object.create(closure_1_17.prototype);
     obj.parse = function parse(text, type) {
       const str = text.trim();
       let arr6 = str;
-      let arr = outer1_15(arr6.channel);
-      let closure_1 = arr;
+      let arr = closure_1_15(arr6.channel);
+      closure_1 = arr;
       const guild_id = arr6.channel.guild_id;
       if (null != guild_id) {
-        let sortedRoles = outer1_8.getSortedRoles(guild_id);
+        let sortedRoles = closure_1_8.getSortedRoles(guild_id);
       } else {
         sortedRoles = [];
       }
-      let closure_2 = outer1_1(outer1_2[9])(sortedRoles).map((id) => ({ id: id.id, text: id.name }));
-      let noop = arr.map((text) => {
-        const obj = {};
+      closure_2 = closure_1_1(closure_1_2[9])(sortedRoles).map((id) => ({ id: id.id, text: id.name }));
+      closure_3 = arr.map((text) => {
+        obj = {};
         const merged = Object.assign(text);
         obj.text = text.text.split("#")[0];
         return obj;
       });
       function matchUser() {
-        const arr = outer1_11;
-        let obj = closure_1;
-        if (typeof outer1_14 !== "function") {
+        const arr = closure_1_11;
+        obj = closure_1;
+        if (typeof closure_1_14 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let firstResult = null;
@@ -376,7 +378,7 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
           obj[1] = firstResult.id;
           let tmp6 = obj;
         } else {
-          if (typeof outer1_14 !== "function") {
+          if (typeof closure_1_14 !== "function") {
             HermesBuiltin.throwTypeError();
           }
           let firstResult1 = null;
@@ -399,19 +401,19 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
             obj[1] = firstResult1.id;
             tmp6 = obj;
           }
-          obj6 = noop;
+          obj6 = closure_3;
         }
         return tmp6;
       }
-      if (type.type === obj(outer1_2[13]).ApplicationCommandOptionType.USER) {
+      if (type.type === obj(closure_1_2[13]).ApplicationCommandOptionType.USER) {
         const matchUserResult = matchUser();
         if (null != matchUserResult) {
           return matchUserResult;
         } else {
-          outer1_13.lastIndex = 0;
-          const match = outer1_13.exec(str);
+          closure_1_13.lastIndex = 0;
+          const match = closure_1_13.exec(str);
           if (null != match) {
-            const findByTagResult = outer1_10.findByTag(match[2], match[3]);
+            const findByTagResult = closure_1_10.findByTag(match[2], match[3]);
             if (null != findByTagResult) {
               obj = { type: "userMention", userId: null };
               obj[1] = findByTagResult.id;
@@ -421,14 +423,14 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
         }
       }
       function matchRole() {
-        const arr = outer1_11;
-        let obj = closure_2;
-        if (typeof outer1_14 !== "function") {
+        const arr = closure_1_11;
+        obj = closure_2;
+        if (typeof closure_1_14 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let firstResult = null;
         if (arr[0] === arr) {
-          let closure_1 = str.substr(arr.length);
+          closure_1 = str.substr(arr.length);
           const found = obj.sortBy((text) => -text.text.length).filter((text) => {
             const formatted = closure_1.toLowerCase();
             return formatted === text.text.toLowerCase();
@@ -449,15 +451,15 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
         }
         return obj;
       }
-      if (type.type === obj(outer1_2[13]).ApplicationCommandOptionType.ROLE) {
+      if (type.type === obj(closure_1_2[13]).ApplicationCommandOptionType.ROLE) {
         const matchRoleResult = matchRole();
         if (null != matchRoleResult) {
           return matchRoleResult;
         }
       }
-      if (type.type === obj(outer1_2[13]).ApplicationCommandOptionType.CHANNEL) {
-        arr6 = outer1_12;
-        if (typeof outer1_14 !== "function") {
+      if (type.type === obj(closure_1_2[13]).ApplicationCommandOptionType.CHANNEL) {
+        arr6 = closure_1_12;
+        if (typeof closure_1_14 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let firstResult = null;
@@ -478,9 +480,9 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
             return obj;
           }
         }
-        obj6 = outer1_16(arr6.channel, type.channelTypes);
+        obj6 = closure_1_16(arr6.channel, type.channelTypes);
       }
-      if (type.type === obj(outer1_2[13]).ApplicationCommandOptionType.MENTIONABLE) {
+      if (type.type === obj(closure_1_2[13]).ApplicationCommandOptionType.MENTIONABLE) {
         const matchRoleResult1 = matchRole();
         if (null != matchRoleResult1) {
           return matchRoleResult1;
@@ -489,12 +491,12 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
           if (null != matchUserResult1) {
             return matchUserResult1;
           } else {
-            outer1_13.lastIndex = 0;
-            const match1 = outer1_13.exec(str);
+            closure_1_13.lastIndex = 0;
+            const match1 = closure_1_13.exec(str);
             if (null != match1) {
-              const findByTagResult1 = outer1_10.findByTag(match1[2], match1[3]);
+              const findByTagResult1 = closure_1_10.findByTag(match1[2], match1[3]);
               if (null != findByTagResult1) {
-                const obj1 = { type: "userMention", userId: null };
+                obj1 = { type: "userMention", userId: null };
                 obj1[1] = findByTagResult1.id;
                 return obj1;
               }

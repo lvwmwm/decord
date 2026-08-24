@@ -1,12 +1,12 @@
-// Module ID: 14845
-// Function ID: 14846
+// Module ID: 14909
+// Function ID: 14910
 // Name: _emailSupport
-// Dependencies: [5, 1994, 1626, 4354, 4090, 1993, 2]
+// Dependencies: [5, 1995, 1626, 4358, 4093, 1994, 2]
 // Exports: emailSupport
 
-// Module 14845 (_emailSupport)
-import combined from "combined";
-import _getSystemLocale from "_getSystemLocale";
+// Module 14909 (_emailSupport)
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "_getSystemLocale" /* 1995 */;
 
 const require = arg1;
 function _emailSupport() {
@@ -23,7 +23,7 @@ function _emailSupport() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -38,10 +38,10 @@ function _emailSupport() {
             obj[0] = arg1;
             return obj;
           } else {
-            const tmp10 = outer1_1(4090);
-            let closure_1 = tmp10;
+            const tmp10 = closure_1_1(4093);
+            closure_1 = tmp10;
             const openURL = tmp10.openURL;
-            let obj1 = outer1_1(1993);
+            obj1 = closure_1_1(1994);
             c2 = 1;
             dependencyMap = 1;
             obj1 = { value: null, done: false };
@@ -70,7 +70,7 @@ function _emailSupport() {
         } else {
           openURL(arg1);
           dependencyMap = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         dependencyMap = tmp;
@@ -78,7 +78,7 @@ function _emailSupport() {
       }
     }
   });
-  const _emailSupport = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -87,7 +87,7 @@ function _emailSupport() {
   }
   return applyArgumentsResult;
 }
-const result = require("getConstants").fileFinishedImporting("utils/native/SupportUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/native/SupportUtils.tsx");
 
 export const emailSupport = function emailSupport() {
   const self = this;

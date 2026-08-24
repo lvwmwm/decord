@@ -3,31 +3,35 @@
 // Dependencies: [3, 501, 2]
 
 // Module 1891
-const require = arg1;
+import timestampDefault from "timestamp" /* 3 */;
+import PlatformTypes from "PlatformTypes" /* 501 */;
+
+require = arg1;
+let closure_2 = new timestampDefault("KeyboardStateDebugging");
 let obj = {
   channelSafeAreaBottomLayoutHeightChanged(arg0) {
-    let obj = require(501) /* PlatformTypes */;
+    let obj = PlatformTypes;
     if (!obj.isIOS()) {
       obj = { layoutHeight: null };
       obj[0] = arg0;
-      tmp2.info("ChannelSafeAreaBottom layout height changed.", obj);
+      logger.info("ChannelSafeAreaBottom layout height changed.", obj);
     }
   },
   channelSafeAreaBottomLayoutHeightMismatch(arg0, arg1) {
-    let obj = require(501) /* PlatformTypes */;
+    let obj = PlatformTypes;
     if (!obj.isIOS()) {
       obj = { layoutHeight: null, reportedKeyboardHeight: null };
       obj[0] = arg0;
       obj[1] = arg1;
-      arg1.warn("ChannelSafeAreaBottom layout height mismatch.", obj);
+      logger.warn("ChannelSafeAreaBottom layout height mismatch.", obj);
     }
   },
   keyboardControllerKeyboardWillShow(height) {
-    let obj = require(501) /* PlatformTypes */;
+    let obj = PlatformTypes;
     if (!obj.isIOS()) {
       obj = { height: null };
       obj[0] = height;
-      tmp2.info("KeyboardController keyboardWillShow.", obj);
+      logger.info("KeyboardController keyboardWillShow.", obj);
     }
   },
   keyboardControllerKeyboardDidShow(height) {
@@ -35,12 +39,12 @@ let obj = {
     if (arg1 === undefined) {
       flag = false;
     }
-    let obj = require(501) /* PlatformTypes */;
+    let obj = PlatformTypes;
     if (!obj.isIOS()) {
       obj = { height: null, rootProvider: null };
       obj[0] = height;
       obj[1] = flag;
-      tmp2.info("KeyboardController keyboardDidShow.", obj);
+      logger.info("KeyboardController keyboardDidShow.", obj);
     }
   },
   keyboardControllerWorkletEvent(arg0, arg1) {
@@ -48,18 +52,18 @@ let obj = {
     if (arg2 === undefined) {
       flag = false;
     }
-    let obj = require(501) /* PlatformTypes */;
+    let obj = PlatformTypes;
     if (!obj.isIOS()) {
       const _HermesInternal = HermesInternal;
       obj = { height: null, rootProvider: null };
       obj[0] = arg1;
       obj[1] = flag;
-      arg1.info("KeyboardController worklet " + arg0 + ".", obj);
+      logger.info("KeyboardController worklet " + arg0 + ".", obj);
     }
   },
   keyboardControllerKeyboardWillHide() {
     if (!obj.isIOS()) {
-      tmp2.info("KeyboardController keyboardWillHide.");
+      logger.info("KeyboardController keyboardWillHide.");
     }
   },
   keyboardControllerKeyboardDidHide() {
@@ -67,37 +71,37 @@ let obj = {
     if (arg0 === undefined) {
       flag = false;
     }
-    let obj = require(501) /* PlatformTypes */;
+    let obj = PlatformTypes;
     if (!obj.isIOS()) {
       obj = { rootProvider: null };
       obj[0] = flag;
-      tmp2.info("KeyboardController keyboardDidHide.", obj);
+      logger.info("KeyboardController keyboardDidHide.", obj);
     }
   },
   reactNativeKeyboardDidShow(height, KeyboardUIStore) {
-    let obj = require(501) /* PlatformTypes */;
+    let obj = PlatformTypes;
     if (!obj.isIOS()) {
       obj = { height: null, location: null };
       obj[0] = height;
       obj[1] = KeyboardUIStore;
-      KeyboardUIStore.info("ReactNativeKeyboard didShow.", obj);
+      logger.info("ReactNativeKeyboard didShow.", obj);
     }
   },
   reactNativeKeyboardDidHide(KeyboardUIStore) {
-    let obj = require(501) /* PlatformTypes */;
+    let obj = PlatformTypes;
     if (!obj.isIOS()) {
       obj = { location: null };
       obj[0] = KeyboardUIStore;
-      tmp2.info("ReactNativeKeyboard didHide.", obj);
+      logger.info("ReactNativeKeyboard didHide.", obj);
     }
   },
   markPotentialBadState() {
     if (!obj.isIOS()) {
-      tmp2.warn("Marking potential bad state from user, check logs above.");
+      logger.warn("Marking potential bad state from user, check logs above.");
     }
   }
 };
-const tmp2 = new require("timestamp")("KeyboardStateDebugging");
+const tmp2 = new timestampDefault("KeyboardStateDebugging");
 const result = require("set").fileFinishedImporting("modules/keyboard/KeyboardStateDebugging.tsx");
 
 export default obj;

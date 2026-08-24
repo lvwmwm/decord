@@ -1,18 +1,18 @@
-// Module ID: 15743
-// Function ID: 15744
+// Module ID: 15812
+// Function ID: 15813
 // Name: useICYMIReloadHandler
-// Dependencies: [5, 19, 9065, 9057, 2]
+// Dependencies: [5, 19, 9102, 9094, 2]
 // Exports: useICYMIReloadHandler
 
-// Module 15743 (useICYMIReloadHandler)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import noop from "noop";
+// Module 15812 (useICYMIReloadHandler)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("DEFAULT_UX_VARIATION").fileFinishedImporting("modules/icymi/useICYMIReloadHandler.tsx");
+const result = require("set").fileFinishedImporting("modules/icymi/useICYMIReloadHandler.tsx");
 
 export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
-  let closure_0 = showDot;
+  closure_0 = showDot;
   const items = [showDot];
   return React.useCallback(callback(function*() {
     if (dependencyMap === 2) {
@@ -26,7 +26,7 @@ export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -41,19 +41,19 @@ export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_0 = tmp2;
-            const ICYMIAnalytics = outer1_0(9065).ICYMIAnalytics;
+            closure_0 = tmp2;
+            const ICYMIAnalytics = closure_1_0(9102).ICYMIAnalytics;
             let str = "NoDotShown";
-            if (outer1_0) {
+            if (closure_1_0) {
               str = "DotShown";
             }
-            const obj1 = { variant: null, homeSessionId: "gravity_refresh" };
+            obj1 = { variant: null, homeSessionId: "gravity_refresh" };
             obj1[0] = str;
             ICYMIAnalytics.trackFeedShown(obj1);
             v0 = 1;
             dependencyMap = 1;
             let obj2 = { value: null, done: false };
-            obj2[0] = v0(9057).fetchDehydrated({ isReloading: true });
+            obj2[0] = v0(9094).fetchDehydrated({ isReloading: true });
             return obj2;
           }
         } else if (1 === tmp5) {
@@ -66,7 +66,7 @@ export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
             obj3[0] = arg1;
             return obj3;
           } else {
-            let obj5 = v0(9057);
+            let obj5 = v0(9094);
             v0 = 2;
             dependencyMap = 1;
             const obj4 = { value: null, done: false };
@@ -83,7 +83,7 @@ export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
             obj5[0] = arg1;
             return obj5;
           } else {
-            obj2 = v0(9057);
+            obj2 = v0(9094);
             v0 = 3;
             dependencyMap = 1;
             const obj6 = { value: null, done: false };
@@ -99,10 +99,10 @@ export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
           obj7[0] = arg1;
           return obj7;
         } else {
-          obj = v0(9057);
+          obj = v0(9094);
           const recommendedGuilds = obj.getRecommendedGuilds();
           dependencyMap = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         dependencyMap = tmp;

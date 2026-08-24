@@ -4,5 +4,7 @@
 // Dependencies: [1226]
 
 // Module 1225 (resolvePathname)
+import resolvePathname from "resolvePathname" /* 1226 */;
 
-export { default } from "resolvePathname";
+
+export default resolvePathname;

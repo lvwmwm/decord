@@ -1,10 +1,10 @@
-// Module ID: 6721
-// Function ID: 6722
+// Module ID: 6758
+// Function ID: 6759
 // Name: set
 // Dependencies: [2]
 
-// Module 6721 (set)
-import set from "set";
+// Module 6758 (set)
+import set from "set" /* 2 */;
 
 const obj = { DISMISSIBLE: null, TARGETED: null, DESKTOP_DELIVERY: null, MOBILE_DELIVERY: null };
 let set = new Set([0, 1, 4, 5, 10, 13]);

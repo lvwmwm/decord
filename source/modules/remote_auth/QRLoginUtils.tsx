@@ -1,12 +1,15 @@
-// Module ID: 4487
-// Function ID: 4488
+// Module ID: 4491
+// Function ID: 4492
 // Name: findRemoteAuthFingerprint
 // Dependencies: [1487, 2]
 // Exports: findRemoteAuthFingerprint
 
-// Module 4487 (findRemoteAuthFingerprint)
+// Module 4491 (findRemoteAuthFingerprint)
+import set from "set" /* 2 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
+
 const re2 = /^\/ra\/([\w-]+)$/;
-const result = require("set").fileFinishedImporting("modules/remote_auth/QRLoginUtils.tsx");
+const result = set.fileFinishedImporting("modules/remote_auth/QRLoginUtils.tsx");
 
 export const findRemoteAuthFingerprint = function findRemoteAuthFingerprint(host, pathname) {
   if (null != host) {
@@ -19,7 +22,7 @@ export const findRemoteAuthFingerprint = function findRemoteAuthFingerprint(host
         }
         return tmp6;
       }
-      obj = importDefault(1487);
+      obj = isDiscordProxiedAssetUrlDefault;
     }
   }
   return null;

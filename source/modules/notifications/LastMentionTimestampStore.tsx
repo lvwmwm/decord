@@ -1,14 +1,15 @@
-// Module ID: 6796
-// Function ID: 6797
+// Module ID: 6833
+// Function ID: 6834
 // Name: initialize
-// Dependencies: [1990, 5043, 1922, 709, 589, 2]
+// Dependencies: [1991, 5048, 1922, 709, 589, 2]
 // Exports: trackMessageNotificationTimestamps
 
-// Module 6796 (initialize)
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { Store } from "initialize";
+// Module 6833 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 let c5 = null;
 let c6 = null;
@@ -18,11 +19,12 @@ let closure_9 = {};
 let closure_10 = {};
 let closure_11 = {};
 let closure_12 = {};
+const Store = initializeDefault.Store;
 class LastMentionTimestampStore extends Store {
 }
 const prototype = LastMentionTimestampStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(trackCommunicationDisabled, updateUserGuildSettingsInternal, mergeGuildAvatar);
+  this.waitFor(closure_2, closure_3, closure_4);
 };
 prototype["getGlobalStats"] = function getGlobalStats() {
   let rounded = null;
@@ -130,7 +132,7 @@ prototype["getStats"] = function getStats(arg0) {
   obj[7] = tmp28;
   return obj;
 };
-const lastMentionTimestampStore = new LastMentionTimestampStore(require("dispatcher"), {
+const lastMentionTimestampStore = new LastMentionTimestampStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
     let tmp4 = null != c5;
     if (tmp4) {
@@ -234,9 +236,6 @@ const lastMentionTimestampStore = new LastMentionTimestampStore(require("dispatc
     }
   },
   MESSAGE_NOTIFICATION_SHOWN: function handleMessageNotificationShown(guildId) {
-    let everyoneMentioned;
-    let mentioned;
-    let roleMentioned;
     guildId = guildId.guildId;
     ({ mentioned, roleMentioned, everyoneMentioned } = guildId);
     const timestamp = Date.now();
@@ -260,7 +259,7 @@ const lastMentionTimestampStore = new LastMentionTimestampStore(require("dispatc
     }
   }
 });
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/notifications/LastMentionTimestampStore.tsx");
+let result = require("set").fileFinishedImporting("modules/notifications/LastMentionTimestampStore.tsx");
 
 export default lastMentionTimestampStore;
 export const trackMessageNotificationTimestamps = function trackMessageNotificationTimestamps(mentions, guildId) {
@@ -269,9 +268,9 @@ export const trackMessageNotificationTimestamps = function trackMessageNotificat
   if (currentUser != null) {
     id = currentUser.id;
   }
-  const result = updateUserGuildSettingsInternal.isSuppressEveryoneEnabled(guildId);
+  const result = closure_3.isSuppressEveryoneEnabled(guildId);
   let someResult = null != mentions.mentions;
-  const result1 = updateUserGuildSettingsInternal.isSuppressRolesEnabled(guildId);
+  const result1 = closure_3.isSuppressRolesEnabled(guildId);
   if (someResult) {
     mentions = mentions.mentions;
     someResult = mentions.some((id) => id.id === id);

@@ -1,11 +1,14 @@
-// Module ID: 9579
-// Function ID: 9580
+// Module ID: 9616
+// Function ID: 9617
 // Name: getBundleDescription
 // Dependencies: [19, 1236, 1949, 2]
 // Exports: useProductDescription
 
-// Module 9579 (getBundleDescription)
-import { useMemo } from "noop";
+// Module 9616 (getBundleDescription)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
 
 function getBundleDescription(bundledProducts) {
   let flag = arg1;
@@ -13,7 +16,7 @@ function getBundleDescription(bundledProducts) {
     flag = false;
   }
   if (flag) {
-    const intl5 = require(1236) /* getSystemLocale */.intl;
+    const intl5 = getSystemLocale.intl;
     bundledProducts = bundledProducts.bundledProducts;
     let length;
     if (bundledProducts != null) {
@@ -21,7 +24,7 @@ function getBundleDescription(bundledProducts) {
     }
     let obj = { num: null };
     obj[0] = length;
-    return intl5.formatToPlainString(require(1236) /* getSystemLocale */.t["/0Yndu"], obj);
+    return intl5.formatToPlainString(getSystemLocale.t["/0Yndu"], obj);
   } else {
     let bundledProducts1 = bundledProducts.bundledProducts;
     if (bundledProducts1 == null) {
@@ -36,7 +39,7 @@ function getBundleDescription(bundledProducts) {
       let tmp6 = require;
       let tmp7 = dependencyMap;
       let tmp8 = dependencyMap;
-      if (require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+      if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
         let tmp13 = tmp5;
         let tmp14 = tmp7;
         let intl2 = tmp6(1236).intl;
@@ -62,7 +65,7 @@ function getBundleDescription(bundledProducts) {
             let tmp37 = tmp5;
             let tmp38 = tmp7;
             let intl6 = tmp6(1236).intl;
-            let obj1 = { itemName: null };
+            obj1 = { itemName: null };
             let tmp39 = item10012;
             obj1[0] = tmp4.name;
             let arr1 = items.push(intl6.formatToPlainString(tmp6(1236).t["2keXky"], obj1));
@@ -75,23 +78,24 @@ function getBundleDescription(bundledProducts) {
     const join = items.join;
     if (flag2) {
       const replaced = join(", ").replace(/, ([^,]*)$/, " & $1");
-      const intl4 = require(1236) /* getSystemLocale */.intl;
+      const intl4 = getSystemLocale.intl;
       const obj2 = { joinedItems: null };
       obj2[0] = replaced;
-      return intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.Ofrqj6, obj2);
+      return intl4.formatToPlainString(getSystemLocale.t.Ofrqj6, obj2);
     } else {
       const joined = join(" & ");
-      const intl3 = require(1236) /* getSystemLocale */.intl;
+      const intl3 = getSystemLocale.intl;
       const obj3 = { joinedItems: null };
       obj3[0] = joined;
-      return intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.Ofrqj6, obj3);
+      return intl3.formatToPlainString(getSystemLocale.t.Ofrqj6, obj3);
     }
   }
 }
-const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/hooks/useProductDescription.tsx");
+const useMemo = noop.useMemo;
+const result = set.fileFinishedImporting("modules/collectibles/hooks/useProductDescription.tsx");
 
 export const useProductDescription = function useProductDescription(product) {
-  let closure_0 = product;
+  closure_0 = product;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -104,7 +108,7 @@ export const useProductDescription = function useProductDescription(product) {
           if (tmp.type === product(flag[2]).CollectiblesItemType.BUNDLE) {
             const summary = tmp.summary;
             if (summary.includes("{joinedItems}")) {
-              return tmp.summary.replace("{joinedItems}", outer1_3(tmp, flag));
+              return tmp.summary.replace("{joinedItems}", closure_1_3(tmp, flag));
             }
           }
           return tmp.summary;
@@ -128,7 +132,7 @@ export const useProductDescription = function useProductDescription(product) {
       const intl = product(flag[1]).intl;
       return intl.string(product(flag[1]).t.fWzWPp);
     } else if (product(flag[2]).CollectiblesItemType.BUNDLE === type) {
-      return outer1_3(tmp, flag);
+      return closure_1_3(tmp, flag);
     } else {
       return "";
     }

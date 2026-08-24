@@ -1,42 +1,40 @@
-// Module ID: 6547
-// Function ID: 6548
+// Module ID: 6578
+// Function ID: 6579
 // Name: PostponeRender
-// Dependencies: [32, 19, 17, 21, 4661, 712, 4761, 6548, 6549, 6551, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 4766, 6579, 6580, 6582, 2]
 // Exports: PostponeRender
 
-// Module 6547 (PostponeRender)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 6578 (PostponeRender)
+import ThemesDefault from "Themes" /* 712 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4766 */;
+import _modDef6582 from "module_6582" /* 6582 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c5;
 const require = arg1;
 ({ View: c5, StyleSheet } = get_ActivityIndicator);
 createCacheKey = { view: null };
 createCacheKey = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-createCacheKey.backgroundColor = require("Themes").colors.BACKGROUND_BASE_LOWER;
+createCacheKey.backgroundColor = ThemesDefault.colors.BACKGROUND_BASE_LOWER;
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Navigator/native/PostponeRender.native.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("design/components/Navigator/native/PostponeRender.native.tsx");
 
 export const PostponeRender = function PostponeRender(children) {
-  let ignoreKeyboard;
-  let postpone;
-  let viewStyle;
   children = children.children;
   let first;
-  let importDefault;
-  let dependencyMap;
+  importDefault = undefined;
+  dependencyMap = undefined;
   ({ postpone, ignoreKeyboard, viewStyle } = children);
   const tmp2 = callback(React.useState(postpone), 2);
   first = tmp2[0];
   importDefault = tmp2[1];
   dependencyMap = React.useRef(undefined);
-  importDefault(4761)(() => {
+  useMountLayoutEffectDefault(() => {
     if (first) {
       table.current = first(table[7]).runAfterInteractions(() => {
         callback(false);
@@ -50,13 +48,13 @@ export const PostponeRender = function PostponeRender(children) {
     }
   });
   if (first) {
-    children = jsx(first(6549).SceneLoadingIndicator, {});
+    children = jsx(first(6580).SceneLoadingIndicator, {});
   }
   if (ignoreKeyboard) {
     let tmp4Result = closure_5;
   } else {
-    tmp4Result = importDefault(6551);
+    tmp4Result = _modDef6582;
   }
-  const style = [createCacheKey().view, viewStyle];
+  const style = [callback2().view, viewStyle];
   return <tmp4Result style={style}>{children}</tmp4Result>;
 };

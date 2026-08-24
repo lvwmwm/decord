@@ -1,53 +1,56 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 15532
+// Function ID: 15533
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 1398, 21, 4661, 712, 7175, 6949, 1297, 11954, 1236, 8083, 15362, 9995, 2]
+// Dependencies: [19, 17, 1398, 21, 4668, 712, 7213, 6987, 1297, 12003, 1236, 8122, 15426, 10034, 2]
 // Exports: default
 
-// Module 15468 (GuildRoleSubscriptionsChannelLongPressActionSheet)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { StaticChannelRoute } from "set";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15532 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
+import ActionSheet from "ActionSheet" /* 7213 */;
+import Form from "Form" /* 8122 */;
+import registerAssetDefault from "registerAsset" /* 12003 */;
+import registerAssetDefault2 from "registerAsset" /* 15426 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { StaticChannelRoute } from "set" /* 1398 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { headerIcon: null };
-createCacheKey = { marginRight: 16, tintColor: require("Themes").colors.CHANNEL_ICON, width: 20, height: 20 };
+createCacheKey = { marginRight: 16, tintColor: ThemesDefault.colors.CHANNEL_ICON, width: 20, height: 20 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_7 = createCacheKey.createStyles(createCacheKey);
 let result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_sidebar/GuildRoleSubscriptionsChannelLongPressActionSheet.tsx");
 
 export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) {
-  let importDefault;
-  let require;
   ({ guildId: require, onClose: importDefault } = arg0);
   let obj = { children: null };
   obj = { leading: null, title: null };
-  obj = { style: createCacheKey().headerIcon, children: null };
-  const obj1 = { disableColor: true, source: null };
-  obj1[1] = importDefault(11954);
-  obj[1] = callback(require(1297) /* Button */.Icon, obj1);
+  obj = { style: callback3().headerIcon, children: null };
+  const tmp = callback3();
+  obj[1] = callback(Button.Icon, { disableColor: true, source: registerAssetDefault });
   obj[0] = callback(View, obj);
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["KzCF/6"]);
-  const items = [callback(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t["KzCF/6"]);
+  const items = [callback(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, obj), ];
   const obj2 = { leading: null, label: null, onPress: null };
-  const obj3 = { source: null };
-  obj3[0] = importDefault(15362);
-  obj2[0] = callback(require(1297) /* Button */.Icon, obj3);
+  obj1 = { disableColor: true, source: registerAssetDefault };
+  obj2[0] = callback(Button.Icon, { source: registerAssetDefault2 });
   const obj4 = { text: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj4[0] = intl2.string(require(1236) /* getSystemLocale */.t.WqhZss);
-  obj2[1] = callback(require(8083) /* Form */.FormLabel, obj4);
+  const intl2 = getSystemLocale.intl;
+  obj4[0] = intl2.string(getSystemLocale.t.WqhZss);
+  obj2[1] = callback(Form.FormLabel, obj4);
   obj2[2] = function onPress() {
     callback();
-    const result = outer1_0(outer1_2[13]).copyGuildChannelOrThreadLink(closure_0, outer1_4.ROLE_SUBSCRIPTIONS);
+    const result = closure_1_0(closure_1_2[13]).copyGuildChannelOrThreadLink(closure_0, closure_1_4.ROLE_SUBSCRIPTIONS);
   };
-  items[1] = callback(require(8083) /* Form */.FormRow, obj2);
+  items[1] = callback(Form.FormRow, obj2);
   obj[0] = items;
-  return callback2(require(7175) /* ActionSheet */.ActionSheet, obj);
+  return callback2(ActionSheet.ActionSheet, obj);
 };

@@ -1,58 +1,57 @@
-// Module ID: 9753
-// Function ID: 9754
+// Module ID: 9792
+// Function ID: 9793
 // Name: XboxLinkLanding
-// Dependencies: [19, 9752, 676, 21, 4661, 1236, 6896, 7982, 6884, 9430, 1500, 1993, 9754, 9755, 2]
+// Dependencies: [19, 9791, 676, 21, 4668, 1236, 6934, 8021, 6922, 9467, 1500, 1994, 9793, 9794, 2]
 // Exports: default
 
-// Module 9753 (XboxLinkLanding)
-import noop from "noop";
-import { XboxLinkModalScenes } from "XboxLinkModalScenes";
-import ME from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9792 (XboxLinkLanding)
+import combinedDefault from "combined" /* 1994 */;
+import closure_3 from "noop" /* 19 */;
+import { XboxLinkModalScenes } from "XboxLinkModalScenes" /* 9791 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 ({ HelpdeskArticles: c5, PlatformTypes: closure_6 } = ME);
 let closure_8 = createCacheKey.createStyles({ image: { width: 230, height: 160 } });
-const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkLanding.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkLanding.tsx");
 
 export default function XboxLinkLanding() {
   let obj = navigation(1500);
   navigation = obj.useNavigation();
   const tmp = callback();
-  const articleURL = importDefault(1993).getArticleURL(constants.XBOX_CONNECTION);
+  const articleURL = combinedDefault.getArticleURL(constants.XBOX_CONNECTION);
   let intl = navigation(1236).intl;
-  const obj2 = importDefault(1993);
+  const obj2 = combinedDefault;
   let items = [navigation];
   const memo = React.useMemo(() => {
     let obj = { label: null, icon: null };
     const intl = navigation(1236).intl;
     obj[0] = intl.string(navigation(1236).t.ihQXsb);
-    obj[1] = navigation(6896).VoiceNormalIcon;
+    obj[1] = navigation(6934).VoiceNormalIcon;
     const items = [obj, , , ];
     obj = { label: null, icon: null };
     const intl2 = navigation(1236).intl;
     obj[0] = intl2.string(navigation(1236).t.Xt1n4P);
-    obj[1] = navigation(7982).ScreenStreamIcon;
+    obj[1] = navigation(8021).ScreenStreamIcon;
     items[1] = obj;
     obj = { label: null, icon: null };
     const intl3 = navigation(1236).intl;
     obj[0] = intl3.string(navigation(1236).t.xqVY3p);
-    obj[1] = navigation(6884).GroupIcon;
+    obj[1] = navigation(6922).GroupIcon;
     items[2] = obj;
-    const obj1 = { label: null, icon: null };
+    obj1 = { label: null, icon: null };
     const intl4 = navigation(1236).intl;
     obj1[0] = intl4.string(navigation(1236).t.iQsKVW);
-    obj1[1] = navigation(9430).GameControllerIcon;
+    obj1[1] = navigation(9467).GameControllerIcon;
     items[3] = obj1;
     return items;
   }, []);
   callback = React.useCallback(() => {
-    navigation.push(outer1_4.PRE_CONNECT);
+    navigation.push(closure_1_4.PRE_CONNECT);
   }, items);
-  const memo1 = React.useMemo(() => ({ uri: callback(9754) }), []);
+  const memo1 = React.useMemo(() => ({ uri: callback(9793) }), []);
   obj = { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null };
   let intl2 = navigation(1236).intl;
   obj[3] = intl2.string(navigation(1236).t.m8aahn);
@@ -61,5 +60,5 @@ export default function XboxLinkLanding() {
   obj[5] = intl.format(navigation(1236).t.CIc3IN, { helpdeskArticleUrl: articleURL });
   obj[6] = callback;
   obj[7] = memo;
-  return jsx(navigation(9755).TwoWayLinkLanding, { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
+  return jsx(navigation(9794).TwoWayLinkLanding, { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
 };

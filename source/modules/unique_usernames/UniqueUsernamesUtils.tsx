@@ -1,74 +1,77 @@
-// Module ID: 14121
-// Function ID: 14122
+// Module ID: 14189
+// Function ID: 14190
 // Name: formatUsernameLiveCheckValidation
-// Dependencies: [4486, 14116, 1236, 2]
+// Dependencies: [4490, 14184, 1236, 2]
 // Exports: formatUsernameLiveCheckValidation
 
-// Module 14121 (formatUsernameLiveCheckValidation)
-const result = require("getSystemLocale").fileFinishedImporting("modules/unique_usernames/UniqueUsernamesUtils.tsx");
+// Module 14189 (formatUsernameLiveCheckValidation)
+import set from "set" /* 2 */;
+import t from "t" /* 4490 */;
+
+const result = set.fileFinishedImporting("modules/unique_usernames/UniqueUsernamesUtils.tsx");
 
 export const formatUsernameLiveCheckValidation = function formatUsernameLiveCheckValidation(arg0) {
-  const match = require(4486) /* t */.match(arg0);
-  const str = require(4486) /* t */;
+  const match = t.match(arg0);
+  const str = t;
   let obj = { error: null };
-  const P = require(4486) /* t */.P;
-  obj[0] = P.not(require(4486) /* t */.P.nullish);
+  const P = t.P;
+  obj[0] = P.not(t.P.nullish);
   const withResult = match.with({ rateLimited: true }, () => {
-    const obj = { type: callback(14116).NameValidationState.RATE_LIMIT, message: null };
+    const obj = { type: callback(14184).NameValidationState.RATE_LIMIT, message: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.T15lqn);
     return obj;
   });
   const withResult1 = match.with({ rateLimited: true }, () => {
-    const obj = { type: callback(14116).NameValidationState.RATE_LIMIT, message: null };
+    const obj = { type: callback(14184).NameValidationState.RATE_LIMIT, message: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.T15lqn);
     return obj;
-  }).with(obj, (error) => ({ type: callback(14116).NameValidationState.ERROR, message: error.error }));
+  }).with(obj, (error) => ({ type: callback(14184).NameValidationState.ERROR, message: error.error }));
   const withResult2 = match.with({ rateLimited: true }, () => {
-    const obj = { type: callback(14116).NameValidationState.RATE_LIMIT, message: null };
+    const obj = { type: callback(14184).NameValidationState.RATE_LIMIT, message: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.T15lqn);
     return obj;
-  }).with(obj, (error) => ({ type: callback(14116).NameValidationState.ERROR, message: error.error })).with({ taken: false }, () => {
-    const obj = { type: callback(14116).NameValidationState.AVAILABLE, message: null };
+  }).with(obj, (error) => ({ type: callback(14184).NameValidationState.ERROR, message: error.error })).with({ taken: false }, () => {
+    const obj = { type: callback(14184).NameValidationState.AVAILABLE, message: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.PgfBSx);
     return obj;
   });
-  obj = { error: require(4486) /* t */.P.nullish };
+  obj = { error: t.P.nullish };
   const withResult3 = match.with({ rateLimited: true }, () => {
-    const obj = { type: callback(14116).NameValidationState.RATE_LIMIT, message: null };
+    const obj = { type: callback(14184).NameValidationState.RATE_LIMIT, message: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.T15lqn);
     return obj;
-  }).with(obj, (error) => ({ type: callback(14116).NameValidationState.ERROR, message: error.error })).with({ taken: false }, () => {
-    const obj = { type: callback(14116).NameValidationState.AVAILABLE, message: null };
+  }).with(obj, (error) => ({ type: callback(14184).NameValidationState.ERROR, message: error.error })).with({ taken: false }, () => {
+    const obj = { type: callback(14184).NameValidationState.AVAILABLE, message: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.PgfBSx);
     return obj;
   }).with({ taken: true }, () => {
-    const obj = { type: callback(14116).NameValidationState.ERROR, message: null };
+    const obj = { type: callback(14184).NameValidationState.ERROR, message: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.mCrAUb);
     return obj;
   });
   return match.with({ rateLimited: true }, () => {
-    const obj = { type: callback(14116).NameValidationState.RATE_LIMIT, message: null };
+    const obj = { type: callback(14184).NameValidationState.RATE_LIMIT, message: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.T15lqn);
     return obj;
-  }).with(obj, (error) => ({ type: callback(14116).NameValidationState.ERROR, message: error.error })).with({ taken: false }, () => {
-    const obj = { type: callback(14116).NameValidationState.AVAILABLE, message: null };
+  }).with(obj, (error) => ({ type: callback(14184).NameValidationState.ERROR, message: error.error })).with({ taken: false }, () => {
+    const obj = { type: callback(14184).NameValidationState.AVAILABLE, message: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.PgfBSx);
     return obj;
   }).with({ taken: true }, () => {
-    const obj = { type: callback(14116).NameValidationState.ERROR, message: null };
+    const obj = { type: callback(14184).NameValidationState.ERROR, message: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.mCrAUb);
     return obj;
-  }).with(obj, () => ({ type: callback(14116).NameValidationState.INTERNAL_ERROR, message: "" })).otherwise(() => {
+  }).with(obj, () => ({ type: callback(14184).NameValidationState.INTERNAL_ERROR, message: "" })).otherwise(() => {
 
   });
 };

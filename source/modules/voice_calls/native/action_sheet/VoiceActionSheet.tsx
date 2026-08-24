@@ -1,20 +1,19 @@
-// Module ID: 12644
-// Function ID: 12645
+// Module ID: 12698
+// Function ID: 12699
 // Name: VoiceActionSheet
-// Dependencies: [19, 17, 4545, 21, 4661, 7139, 7159, 589, 4229, 8663, 12645, 12646, 7175, 12656, 12659, 12660, 4725, 12663, 2]
+// Dependencies: [19, 17, 4550, 21, 4668, 7177, 7197, 589, 4233, 8700, 12699, 12700, 7213, 12710, 12713, 12714, 4730, 12717, 2]
 // Exports: default
 
-// Module 12644 (VoiceActionSheet)
-import noop from "noop";
-import get_ActivityIndicator from "ItemSeparator";
-import getVoiceStatesForGuild from "getVoiceStatesForGuild";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12698 (VoiceActionSheet)
+import contextDefault from "context" /* 7177 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
+import _initializeDefault from "_initialize" /* 12700 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_5 from "getVoiceStatesForGuild" /* 4550 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c4;
-let closure_6;
-let error;
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -23,45 +22,45 @@ createCacheKey = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 createCacheKey.overflow = "hidden";
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("getVoiceStatesForGuild").fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceActionSheet.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceActionSheet.tsx");
 
 export default function VoiceActionSheet(channel) {
   channel = channel.channel;
-  let tmp = createCacheKey();
+  let tmp = callback3();
   let obj = channel(589);
-  const items = [getVoiceStatesForGuild];
+  const items = [closure_5];
   const items1 = [channel];
-  const stateFromStores = obj.useStateFromStores(items, () => 0 === outer1_5.countVoiceStatesForChannel(channel.id));
+  const stateFromStores = obj.useStateFromStores(items, () => 0 === closure_1_5.countVoiceStatesForChannel(channel.id));
   const effect = React.useEffect(() => {
-    const obj = channel(outer1_2[8]);
-    const tmp = outer1_2;
+    const obj = channel(closure_1_2[8]);
+    const tmp = closure_1_2;
     if (!obj.isModalOpen(obj2.getVoiceChannelKey(channel.id))) {
-      outer1_1(tmp[10]).initialize(channel);
-      const obj3 = outer1_1(tmp[10]);
+      closure_1_1(tmp[10]).initialize(channel);
+      const obj3 = closure_1_1(tmp[10]);
     }
     return () => {
       callback(table[10]).terminate();
     };
   }, items1);
-  let obj1 = importDefault(12646);
+  obj1 = _initializeDefault;
   if (obj1.requiresVoiceChannelsOnboard()) {
     obj = { children: null };
     obj = { channel: null };
     obj[0] = channel;
-    obj[0] = callback(tmp2(12656), obj);
-    let children = callback(tmp5(7175).ActionSheet, obj);
+    obj[0] = callback(tmp2(12710), obj);
+    let children = callback(tmp5(7213).ActionSheet, obj);
     let tmp8 = callback;
   } else if (stateFromStores) {
     obj1 = { children: null };
     const obj2 = { channel: null };
     obj2[0] = channel;
-    const items2 = [callback(tmp2(12659), obj2), ];
+    const items2 = [callback(tmp2(12713), obj2), ];
     let obj3 = { channel: null };
     obj3[0] = channel;
-    items2[1] = callback(tmp2(12660), obj3);
+    items2[1] = callback(tmp2(12714), obj3);
     obj1[0] = items2;
-    children = callback2(tmp5(7175).ActionSheet, obj1);
+    children = callback2(tmp5(7213).ActionSheet, obj1);
     tmp8 = callback;
   } else {
     tmp8 = callback;
@@ -70,13 +69,13 @@ export default function VoiceActionSheet(channel) {
     obj5[0] = tmp.container;
     const obj6 = { blurTheme: "dark", style: null };
     obj6[1] = tmp.visualEffectView;
-    const items3 = [callback(tmp2(4725), obj6), ];
+    const items3 = [callback(tmp2(4730), obj6), ];
     const obj7 = { channel: null };
     obj7[0] = channel;
-    items3[1] = callback(tmp2(12663), obj7);
+    items3[1] = callback(tmp2(12717), obj7);
     obj5[1] = items3;
     obj4[2] = callback2(closure_4, obj5);
-    children = callback(tmp5(7175).ActionSheet, obj4);
+    children = callback(tmp5(7213).ActionSheet, obj4);
   }
-  return tmp8(channel(7139).AnalyticsLocationProvider, { value: importDefault(7139)(importDefault(7159).VOICE_ACTION_SHEET).analyticsLocations, children });
+  return tmp8(channel(7177).AnalyticsLocationProvider, { value: contextDefault(QUICK_SWITCHERDefault.VOICE_ACTION_SHEET).analyticsLocations, children });
 };

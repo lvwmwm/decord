@@ -1,66 +1,63 @@
-// Module ID: 9375
-// Function ID: 9376
+// Module ID: 9412
+// Function ID: 9413
 // Name: NSFWRow
-// Dependencies: [19, 17, 9301, 21, 4661, 712, 1297, 8366, 4734, 1236, 9373, 2]
+// Dependencies: [19, 17, 9338, 21, 4668, 712, 1297, 8405, 4739, 1236, 9410, 2]
 
-// Module 9375 (NSFWRow)
-import importAllResult from "noop";
-import { View } from "get ActivityIndicator";
-import IMAGE_SIZE from "IMAGE_SIZE";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9412 (NSFWRow)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import registerAssetDefault from "registerAsset" /* 8405 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9410 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import IMAGE_SIZE from "IMAGE_SIZE" /* 9338 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let LABEL_BOTTOM_PADDING;
-let LABEL_TOP_PADDING;
-let NSFW_ROW_HEIGHT;
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ LABEL_BOTTOM_PADDING, LABEL_TOP_PADDING, NSFW_ROW_HEIGHT } = IMAGE_SIZE);
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { section: null, nsfwContainer: null, nsfwText: null };
-obj = { justifyContent: "center", overflow: "hidden", backgroundColor: require("Themes").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, paddingTop: LABEL_TOP_PADDING, paddingBottom: LABEL_BOTTOM_PADDING };
+obj = { justifyContent: "center", overflow: "hidden", backgroundColor: ThemesDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, paddingTop: LABEL_TOP_PADDING, paddingBottom: LABEL_BOTTOM_PADDING };
 obj[0] = obj;
-createCacheKey = { flexDirection: "row", height: NSFW_ROW_HEIGHT, alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.sm, marginLeft: 12, marginRight: 12, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
+createCacheKey = { flexDirection: "row", height: NSFW_ROW_HEIGHT, alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.sm, marginLeft: 12, marginRight: 12, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL };
 obj[1] = createCacheKey;
 obj[2] = { marginLeft: 4, textAlign: "center" };
 let closure_6 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
   const tmp = callback3();
   let obj = { style: tmp.nsfwContainer, children: null };
-  obj = { source: null, size: null };
-  obj[0] = importDefault(8366);
-  obj[1] = require(1297) /* Button */.Icon.Sizes.SMALL;
-  const items = [callback(require(1297) /* Button */.Icon, obj), ];
+  obj = { source: registerAssetDefault, size: Button.Icon.Sizes.SMALL };
+  const items = [callback(Button.Icon, obj), ];
   obj = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.SLzV5z);
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  const intl = getSystemLocale.intl;
+  obj[3] = intl.string(getSystemLocale.t.SLzV5z);
+  items[1] = callback(Text.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 });
 const memoResult1 = importAllResult.memo((useTier0UpsellContent) => {
-  let isSectionNitroLocked;
-  let label;
   ({ label, isSectionNitroLocked } = useTier0UpsellContent);
   let obj = { style: callback3().section, children: null };
   if (isSectionNitroLocked) {
     obj = { useTier0UpsellContent: null };
     obj[0] = useTier0UpsellContent.useTier0UpsellContent;
-    isSectionNitroLocked = callback(require(9373) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, obj);
+    isSectionNitroLocked = callback(PremiumUpsellGradientBackground.PremiumUpsellGradientBackground, obj);
   }
   const items = [isSectionNitroLocked, ];
   let tmp6 = null;
   if ("" !== label) {
     obj = { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: null };
     obj[3] = label;
-    tmp6 = callback(require(4734) /* Text */.Text, obj);
+    tmp6 = callback(Text.Text, obj);
   }
   items[1] = tmp6;
   obj[1] = items;
   return closure_5(View, obj);
 });
-const result = require("IMAGE_SIZE").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponents.tsx");
+const result = require("set").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponents.tsx");
 
 export const NSFWRow = memoResult;
 export const Section = memoResult1;

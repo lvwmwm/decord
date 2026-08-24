@@ -1,14 +1,15 @@
-// Module ID: 7725
-// Function ID: 7726
+// Module ID: 7763
+// Function ID: 7764
 // Name: productSK2ToIAPProduct
-// Dependencies: [5, 17, 4074, 5317, 7706, 2]
+// Dependencies: [5, 17, 4077, 5322, 7744, 2]
 
-// Module 7725 (productSK2ToIAPProduct)
-import closure_2 from "set";
-import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME";
-import set from "DEFAULT_COUNTRY_CODE_NAME";
+// Module 7763 (productSK2ToIAPProduct)
+import CurrencyCodes from "CurrencyCodes" /* 5322 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME" /* 4077 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 function productSK2ToIAPProduct(subscription) {
   let items = [];
   if (null != subscription.subscription.promotionalOffers) {
@@ -31,7 +32,7 @@ function productSK2ToIAPProduct(subscription) {
   if (null == subscription.subscription.introductoryOffer) {
     const _Number = Number;
     const price = subscription.price;
-    const NumberResult = Number(price.toFixed(require(5317) /* CurrencyCodes */.CurrencyExponents[subscription.currency.toLowerCase(subscription.currency)]));
+    const NumberResult = Number(price.toFixed(CurrencyCodes.CurrencyExponents[subscription.currency.toLowerCase(subscription.currency)]));
     let obj = { identifier: null, price: null, currencySymbol: null, currencyCode: null, priceString: null, countryCode: "", downloadable: false, description: null, title: null, discounts: null };
     const _String = String;
     obj[0] = String(subscription.id);
@@ -80,26 +81,26 @@ class StorekitIAPQueueClass {
 const prototype = StorekitIAPQueueClass.prototype;
 prototype["fetchSubscriptions"] = function fetchSubscriptions(arg0) {
   const self = this;
-  let closure_0 = arg0;
+  closure_0 = arg0;
   this.processQueue();
   return new Promise((arg0, arg1) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const _self = arg1;
     const _queue = _self._queue;
-    _queue.push(outer1_2(function*() {
+    _queue.push(closure_1_2(function*() {
       const callback2 = tmp3;
-      let c3 = 1;
-      yield outer2_4.getItems(outer1_0);
+      c3 = 1;
+      yield closure_2_4.getItems(closure_1_0);
       if (1 === tmp7) {
         c3 = 0;
         callback2(closure_2);
-        let c5 = 3;
+        c5 = 3;
       } else if (arg0 === 1) {
         c5 = 3;
         throw arg1;
       } else if (arg0 !== 2) {
         const found = arg1.filter((subscription) => null != subscription.subscription);
-        const callback = found.map(outer2_5);
+        const callback = found.map(closure_2_5);
         callback(callback);
         c3 = 0;
       }
@@ -110,18 +111,18 @@ prototype["fetchSubscriptions"] = function fetchSubscriptions(arg0) {
 };
 prototype["fetchProducts"] = function fetchProducts(arg0) {
   const self = this;
-  let closure_0 = arg0;
+  closure_0 = arg0;
   this.processQueue();
   return new Promise((arg0, arg1) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const _self = arg1;
     const _queue = _self._queue;
-    _queue.push(outer1_2(function*() {
-      const dependencyMap = tmp3;
-      let c3 = 1;
-      let obj1 = callback(7706);
+    _queue.push(closure_1_2(function*() {
+      dependencyMap = tmp3;
+      c3 = 1;
+      obj1 = callback(7744);
       obj1 = { skus: null };
-      obj1[0] = outer1_0;
+      obj1[0] = closure_1_0;
       const products = obj1.getProducts(obj1);
       yield products.then((arr) => {
         const found = arr.filter((type) => "iap" === type.type);
@@ -130,7 +131,7 @@ prototype["fetchProducts"] = function fetchProducts(arg0) {
       if (1 === tmp7) {
         c3 = 0;
         dependencyMap(closure_2);
-        let c5 = 3;
+        c5 = 3;
       } else if (arg0 === 1) {
         c5 = 3;
         throw arg1;
@@ -158,7 +159,7 @@ prototype["processQueue"] = function processQueue() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -173,15 +174,15 @@ prototype["processQueue"] = function processQueue() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp3;
+            closure_1 = tmp3;
             let lib = tmp7;
             lib = undefined;
-            if (outer1_0._processingQueue) {
+            if (closure_1_0._processingQueue) {
               c5 = 3;
             } else {
-              outer1_0._processingQueue = true;
-              let c3 = 1;
-              if (outer1_0._queue.length <= 0) {
+              closure_1_0._processingQueue = true;
+              c3 = 1;
+              if (closure_1_0._queue.length <= 0) {
                 c3 = 0;
                 lib._processingQueue = false;
               }
@@ -206,7 +207,7 @@ prototype["processQueue"] = function processQueue() {
         lib = _queue.shift();
         c4 = 2;
         c5 = 1;
-        const obj1 = { value: null, done: false };
+        obj1 = { value: null, done: false };
         obj1[0] = lib();
         return obj1;
       } catch (tmp24) {

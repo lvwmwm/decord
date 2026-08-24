@@ -1,26 +1,25 @@
-// Module ID: 4971
-// Function ID: 4972
+// Module ID: 4976
+// Function ID: 4977
 // Name: handleReaction
-// Dependencies: [1218, 1391, 4030, 676, 4273, 4803, 4032, 589, 709, 2]
+// Dependencies: [1218, 1391, 4033, 676, 4277, 4808, 4035, 589, 709, 2]
 
-// Module 4971 (handleReaction)
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import { ChannelTypes } from "ME";
-import { Store } from "initialize";
+// Module 4976 (handleReaction)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4035 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4277 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "markAllUserIdListsStale" /* 4033 */;
+import { ChannelTypes } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function handleReaction(optimistic) {
-  let channelId;
-  let emoji;
-  let messageId;
-  let type;
-  let userId;
   let colors = optimistic;
   ({ messageId, emoji } = optimistic);
   ({ type, userId, channelId } = optimistic);
-  let obj = require(4032) /* MAX_REACTIONS */;
+  let obj = MAX_REACTIONS;
   if (obj.shouldApplyReaction(optimistic)) {
     const id = store.getId();
     basicChannel = basicChannel.getBasicChannel(channelId);
@@ -79,7 +78,7 @@ prototype["handleSearchFailure"] = function handleSearchFailure(arg0) {
   this.isIndexing = false;
   this.isInitialFetchComplete = true;
   this.isHistoricalIndexing = false;
-  const aPIError = new require(4273) /* V6OrEarlierAPIError */.APIError(arg0);
+  const aPIError = new V6OrEarlierAPIError.APIError(arg0);
   this.error = aPIError;
   this.analyticsId = null;
   this.documentsIndexed = 0;
@@ -106,7 +105,7 @@ prototype["handleSearchSuccess"] = function handleSearchSuccess(analyticsId, arr
     const messageIds = self.messageIds;
     let hasItem = messageIds.has(id.id);
     if (!hasItem) {
-      hasItem = outer1_4.isBlockedOrIgnoredForMessage(id);
+      hasItem = closure_1_4.isBlockedOrIgnoredForMessage(id);
     }
     if (!hasItem) {
       const messageIds2 = self.messageIds;
@@ -122,11 +121,12 @@ prototype["handleSearchSuccess"] = function handleSearchSuccess(analyticsId, arr
 let map = new Map();
 let map1 = new Map();
 let map2 = new Map();
+const Store = initializeDefault.Store;
 class SearchMessageStore extends Store {
 }
 const prototype2 = SearchMessageStore.prototype;
 prototype2["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, ensureGuildLoaded, markAllUserIdListsStale);
+  this.waitFor(closure_2, closure_3, closure_4);
 };
 prototype2["getMessage"] = function getMessage(arg0) {
   return map1.get(arg0);
@@ -285,7 +285,7 @@ prototype2["hasSearchState"] = function hasSearchState(c23) {
   return map.has(c23);
 };
 SearchMessageStore.displayName = "SearchMessageStore";
-const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
+const searchMessageStore = new SearchMessageStore(dispatcherDefault, {
   SEARCH_MESSAGES_START: function handleSearchMessagesStart(ids) {
     ids = ids.ids;
     const item = ids.forEach((arg0) => {
@@ -324,7 +324,6 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
       let result = store.set(id, value);
       const messages = id.messages;
       const item = value.handleSearchSuccess(id, messages.map((arg0) => {
-        let tmp;
         [tmp] = arg0;
         return callback(table[5]).createMessageRecord(tmp);
       })).forEach((id) => {
@@ -357,22 +356,22 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
     });
   },
   SEARCH_MESSAGES_FAILURE: function handleSearchMessagesFailure(ids) {
-    let closure_0 = ids;
+    closure_0 = ids;
     ids = ids.ids;
     const item = ids.forEach((arg0) => {
-      let value = outer1_7.get(arg0);
+      let value = closure_1_7.get(arg0);
       if (value == null) {
-        if (typeof outer1_6 !== "function") {
+        if (typeof closure_1_6 !== "function") {
           HermesBuiltin.throwTypeError();
         }
-        const obj = Object.create(outer1_6.prototype);
+        const obj = Object.create(closure_1_6.prototype);
         const _Set = Set;
         const set = new Set();
         obj[8] = set;
         value = obj;
-        const tmp = outer1_6;
+        const tmp = closure_1_6;
       }
-      const result = outer1_7.set(arg0, value);
+      const result = closure_1_7.set(arg0, value);
       value.handleSearchFailure(ids.error);
     });
   },
@@ -398,9 +397,9 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
     }
   },
   SEARCH_MESSAGES_CLEAR_ALL: function handleSearchMessagesClearAll() {
-    const map = new Map();
-    const map1 = new Map();
-    const map2 = new Map();
+    map = new Map();
+    map1 = new Map();
+    map2 = new Map();
   },
   MESSAGE_UPDATE: function handleMessageUpdate(message) {
     const id = message.message.id;
@@ -411,7 +410,7 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
       if (null == value) {
         return false;
       } else {
-        const result = map1.set(id, require(4803) /* createMinimalMessageRecord */.updateMessageRecord(value, message.message));
+        const result = map1.set(id, createMinimalMessageRecord.updateMessageRecord(value, message.message));
       }
     }
   },
@@ -449,11 +448,11 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
     return flag;
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
-    const map = new Map();
-    const map1 = new Map();
-    const map2 = new Map();
+    map = new Map();
+    map1 = new Map();
+    map2 = new Map();
   }
 });
-let result = require("markAllUserIdListsStale").fileFinishedImporting("modules/search/SearchMessageStore.tsx");
+let result = require("set").fileFinishedImporting("modules/search/SearchMessageStore.tsx");
 
 export default searchMessageStore;

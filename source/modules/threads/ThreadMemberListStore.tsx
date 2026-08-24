@@ -1,22 +1,25 @@
-// Module ID: 7595
-// Function ID: 7596
+// Module ID: 7633
+// Function ID: 7634
 // Name: handleUserUpdate
-// Dependencies: [32, 1391, 1990, 7240, 4559, 7250, 1922, 676, 12, 11, 4026, 4219, 1370, 589, 709, 2]
+// Dependencies: [32, 1391, 1991, 7278, 4564, 7288, 1922, 676, 12, 11, 4029, 4223, 1370, 589, 709, 2]
 
-// Module 7595 (handleUserUpdate)
-import _slicedToArray from "_slicedToArray";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import handleConnectionOpenOrResumed from "handleConnectionOpenOrResumed";
-import sortActivity from "sortActivity";
-import filterPlayingActivities from "filterPlayingActivities";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { Store } from "initialize";
+// Module 7633 (handleUserUpdate)
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import applyOverwritesAll from "applyOverwrites" /* 4029 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "trackCommunicationDisabled" /* 1991 */;
+import closure_7 from "handleConnectionOpenOrResumed" /* 7278 */;
+import closure_8 from "sortActivity" /* 4564 */;
+import closure_9 from "filterPlayingActivities" /* 7288 */;
+import closure_10 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let closure_12;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function handleUserUpdate(user) {
   const id = user.user.id;
   let flag = false;
@@ -94,7 +97,7 @@ prototype["rebuild"] = function rebuild(items) {
   const channel = store.getChannel(self.parentId);
   const tmp7 = self(12);
   const mapped = self(12)(Array.from(self.allUserIds)).map((userId) => {
-    const tmp = outer1_4(self.calculateNewState(userId, closure_0), 3);
+    const tmp = closure_1_4(self.calculateNewState(userId, closure_0), 3);
     return { userId, sectionId: tmp[0], displayName: tmp[1], canViewChannel: tmp[2] };
   });
   const sorted = mapped.sort((userId, userId2) => self(table[9]).compare(userId.userId, userId2.userId));
@@ -125,9 +128,6 @@ prototype["updateMultipleUserIds"] = function updateMultipleUserIds(mapped, guil
   }
 };
 prototype["updateUserId"] = function updateUserId(id) {
-  let tmp6;
-  let tmp7;
-  let tmp8;
   const self = this;
   const allUserIds = this.allUserIds;
   if (allUserIds.has(id)) {
@@ -230,7 +230,7 @@ prototype["findUserIdSortedPosition"] = function findUserIdSortedPosition(sum, a
 };
 prototype["removeUserIdFromSection"] = function removeUserIdFromSection(id, key10011) {
   const self = this;
-  let closure_0 = id;
+  closure_0 = id;
   let tmp4 = null != key10011;
   if (tmp4) {
     let flag = id in tmp3.usersById;
@@ -280,7 +280,7 @@ prototype["calculateNewState"] = function calculateNewState(userId, channel) {
   }
   let canResult = null != user && null != channel;
   if (canResult) {
-    let obj = importAll(4026);
+    let obj = applyOverwritesAll;
     obj = { permission: null, user: null, context: null };
     obj[0] = constants2.VIEW_CHANNEL;
     obj[1] = user;
@@ -306,8 +306,8 @@ prototype["calculateNewState"] = function calculateNewState(userId, channel) {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = importDefault(4219).getName(user);
-    const obj3 = importDefault(4219);
+    nick = nameFromUserDefault.getName(user);
+    const obj3 = nameFromUserDefault;
   }
   const items = [str, , ];
   let formatted;
@@ -318,12 +318,13 @@ prototype["calculateNewState"] = function calculateNewState(userId, channel) {
   items[2] = canResult;
   return items;
 };
+const Store = initializeDefault.Store;
 class ThreadMemberListStore extends Store {
 }
 const prototype2 = ThreadMemberListStore.prototype;
 prototype2["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded, trackCommunicationDisabled, handleConnectionOpenOrResumed, sortActivity, filterPlayingActivities, mergeGuildAvatar);
-  const items = [handleConnectionOpenOrResumed];
+  this.waitFor(closure_5, closure_6, closure_7, closure_8, closure_9, closure_10);
+  const items = [closure_7];
   this.syncWith(items, () => {
     subscribedThreadIds = subscribedThreadIds.getSubscribedThreadIds();
     let flag = false;
@@ -346,7 +347,7 @@ prototype2["initialize"] = function initialize() {
     }
     return flag2;
   });
-  const items1 = [filterPlayingActivities];
+  const items1 = [closure_9];
   this.syncWith(items1, () => {
     currentUser = currentUser.getCurrentUser();
     let id;
@@ -411,20 +412,20 @@ prototype2["canUserViewChannel"] = function canUserViewChannel(arg0, arg1, arg2)
   }
 };
 ThreadMemberListStore.displayName = "ThreadMemberListStore";
-const threadMemberListStore = new ThreadMemberListStore(require("dispatcher"), {
+const threadMemberListStore = new ThreadMemberListStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_13 = {};
+    closure_13 = {};
   },
   THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(id) {
-    let closure_0 = id;
+    closure_0 = id;
     if (id.id in closure_13) {
       const addedMembers = id.addedMembers;
       if (addedMembers != null) {
-        const item = addedMembers.forEach((userId) => outer1_13[user.id].addUserId(userId.userId));
+        const item = addedMembers.forEach((userId) => closure_1_13[user.id].addUserId(userId.userId));
       }
       const removedMemberIds = id.removedMemberIds;
       if (removedMemberIds != null) {
-        const item1 = removedMemberIds.forEach((id) => outer1_13[user.id].removeUserId(id));
+        const item1 = removedMemberIds.forEach((id) => closure_1_13[user.id].removeUserId(id));
       }
     } else {
       return false;
@@ -479,8 +480,6 @@ const threadMemberListStore = new ThreadMemberListStore(require("dispatcher"), {
     return flag2;
   },
   THREAD_MEMBER_LIST_UPDATE: function handleThreadMemberListUpdate(guildId) {
-    let members;
-    let threadId;
     ({ threadId, members } = guildId);
     const channel = store.getChannel(threadId);
     let parent_id;
@@ -541,7 +540,7 @@ const threadMemberListStore = new ThreadMemberListStore(require("dispatcher"), {
   GUILD_MEMBER_UPDATE: handleUserUpdate,
   GUILD_MEMBER_REMOVE: handleUserUpdate,
   PRESENCES_REPLACE: function handlePresenceReplace(presences) {
-    const mapped = importDefault(12)(presences.presences).map((user) => {
+    const mapped = applyDefault(presences.presences).map((user) => {
       user = user.user;
       let id;
       if (user != null) {
@@ -549,8 +548,8 @@ const threadMemberListStore = new ThreadMemberListStore(require("dispatcher"), {
       }
       return id;
     });
-    const found = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
-    const arr = importDefault(12)(presences.presences);
+    const found = mapped.filter(isDiscordFrontendDevelopment.isNotNullish);
+    const arr = applyDefault(presences.presences);
     let flag = false;
     let flag2 = false;
     const iter = found.uniq();
@@ -573,8 +572,6 @@ const threadMemberListStore = new ThreadMemberListStore(require("dispatcher"), {
     return flag2;
   },
   GUILD_MEMBERS_CHUNK_BATCH: function handleGuildMembersChunkBatch(arg0) {
-    let guildId;
-    let members;
     let flag = false;
     for (const item10009 of tmp) {
       ({ guildId, members } = item10009);
@@ -633,6 +630,6 @@ const threadMemberListStore = new ThreadMemberListStore(require("dispatcher"), {
     }, false);
   }
 });
-const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/threads/ThreadMemberListStore.tsx");
+const result = require("set").fileFinishedImporting("modules/threads/ThreadMemberListStore.tsx");
 
 export default threadMemberListStore;

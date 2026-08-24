@@ -1,23 +1,25 @@
-// Module ID: 8430
-// Function ID: 8431
+// Module ID: 8469
+// Function ID: 8470
 // Name: useMessagePollInteractions
 // Dependencies: [700, 705, 643, 11, 2]
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState, useChannelPollInteractions, useMessagePollInteractions
 
-// Module 8430 (useMessagePollInteractions)
-import identity from "identity";
+// Module 8469 (useMessagePollInteractions)
+import set from "set" /* 2 */;
+import shallowEqualDefault from "shallowEqual" /* 643 */;
+import identity from "identity" /* 700 */;
 
 let closure_3 = {};
 let closure_4 = identity.createWithEqualityFn((arg0) => {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return {
     pollsByChannelId: {},
     pollsByMessageId: {},
     updatePollState(arg0, arg1, arg2) {
       const callback = arg0;
-      let closure_1 = arg1;
-      let closure_2 = arg2;
-      callback(outer1_2[1]).batchUpdates(() => {
+      closure_1 = arg1;
+      closure_2 = arg2;
+      callback(closure_1_2[1]).batchUpdates(() => {
         callback((pollsByChannelId) => {
           let tmp4;
           if (pollsByChannelId.pollsByChannelId[closure_0] != null) {
@@ -32,7 +34,7 @@ let closure_4 = identity.createWithEqualityFn((arg0) => {
           obj[closure_1] = tmpResult;
           obj[closure_0] = obj;
           obj[0] = obj;
-          const obj1 = {};
+          obj1 = {};
           const merged2 = Object.assign(pollsByChannelId.pollsByMessageId);
           obj1[closure_1] = tmpResult;
           obj[1] = obj1;
@@ -42,12 +44,12 @@ let closure_4 = identity.createWithEqualityFn((arg0) => {
     }
   };
 });
-const result = require("shallowEqual").fileFinishedImporting("modules/polls/PollsInteractionStore.tsx");
+const result = set.fileFinishedImporting("modules/polls/PollsInteractionStore.tsx");
 
 export const useMessagePollInteractions = function useMessagePollInteractions(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return store((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const obj = {};
     const item = closure_0.forEach((arg0) => {
       if (null != pollsByMessageId.pollsByMessageId[arg0]) {
@@ -55,31 +57,29 @@ export const useMessagePollInteractions = function useMessagePollInteractions(ar
       }
     });
     return obj;
-  }, importDefault(643));
+  }, shallowEqualDefault);
 };
 export const useChannelPollInteractions = function useChannelPollInteractions(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return store((arg0) => {
     let tmp = arg0.pollsByChannelId[closure_0];
     if (tmp == null) {
-      tmp = outer1_3;
+      tmp = closure_1_3;
     }
     return tmp;
-  }, importDefault(643));
+  }, shallowEqualDefault);
 };
 export const clearChannelPollState = function clearChannelPollState(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => {
-    outer1_4.setState((arg0) => {
-      let pollsByChannelId;
-      let pollsByMessageId;
+    closure_1_4.setState((arg0) => {
       ({ pollsByChannelId, pollsByMessageId } = arg0);
       pollsByMessageId = undefined;
       let tmp3 = pollsByChannelId[pollsByMessageId];
       if (tmp3 == null) {
-        tmp3 = outer1_3;
+        tmp3 = closure_1_3;
       }
-      pollsByMessageId = outer1_1(outer1_2[3]);
+      pollsByMessageId = closure_1_1(closure_1_2[3]);
       const keys = pollsByMessageId.keys(tmp3);
       pollsByMessageId = {};
       const merged = Object.assign(pollsByMessageId);
@@ -94,11 +94,9 @@ export const clearChannelPollState = function clearChannelPollState(arg0) {
 };
 export const clearPollState = function clearPollState(arg0, arg1) {
   const _require = arg0;
-  let closure_1 = arg1;
+  closure_1 = arg1;
   _require(705).batchUpdates(() => {
-    outer1_4.setState((arg0) => {
-      let pollsByChannelId;
-      let pollsByMessageId;
+    closure_1_4.setState((arg0) => {
       ({ pollsByChannelId, pollsByMessageId } = arg0);
       let obj = pollsByChannelId[closure_0];
       if (obj == null) {
@@ -110,7 +108,7 @@ export const clearPollState = function clearPollState(arg0, arg1) {
       obj = {};
       const merged1 = Object.assign(pollsByMessageId);
       delete tmp2[tmp];
-      const obj1 = { pollsByChannelId: null, pollsByMessageId: null };
+      obj1 = { pollsByChannelId: null, pollsByMessageId: null };
       const obj2 = {};
       const merged2 = Object.assign(pollsByChannelId);
       obj2[closure_0] = obj;

@@ -1,15 +1,16 @@
-// Module ID: 8762
-// Function ID: 8763
+// Module ID: 8799
+// Function ID: 8800
 // Name: checkRpcVersion
-// Dependencies: [676, 12, 8752, 2]
+// Dependencies: [676, 12, 8789, 2]
 
-// Module 8762 (checkRpcVersion)
-import ME from "ME";
+// Module 8799 (checkRpcVersion)
+import set from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+import prototypeDefault from "prototype" /* 8789 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let obj1;
 ({ RPC_VERSION: obj1, RPCCloseCodes: c3 } = ME);
-const result = require("prototype").fileFinishedImporting("modules/rpc/transports/BaseSocket.tsx");
+const result = set.fileFinishedImporting("modules/rpc/transports/BaseSocket.tsx");
 class BaseSocket {
   constructor(arg0, arg1, arg2) {
     obj = Object.create(new.target.prototype);
@@ -31,7 +32,7 @@ class BaseSocket {
 }
 const prototype = BaseSocket.prototype;
 prototype["checkRpcVersion"] = function checkRpcVersion(version) {
-  let tmp2 = importDefault(8752);
+  let tmp2 = prototypeDefault;
   tmp2 = new tmp2({ closeCode: constants.INVALID_VERSION }, "Invalid Version: " + version);
   throw tmp2;
 };

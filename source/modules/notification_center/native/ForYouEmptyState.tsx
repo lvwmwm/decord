@@ -1,38 +1,40 @@
-// Module ID: 15704
-// Function ID: 15705
+// Module ID: 15773
+// Function ID: 15774
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 4661, 5447, 4734, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 5452, 4739, 1236, 2]
 // Exports: ForYouEmptyState
 
-// Module 15704 (ForYouEmptyState)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15773 (ForYouEmptyState)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5452 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_5 = createCacheKey.createStyles({ image: { marginBottom: 16 }, container: { paddingHorizontal: 48, alignItems: "center", justifyContent: "center" }, headerText: { fontSize: 18, marginTop: 16, marginBottom: 8 }, text: { textAlign: "center" } });
-const result = require("jsxProd").fileFinishedImporting("modules/notification_center/native/ForYouEmptyState.tsx");
+const result = require("set").fileFinishedImporting("modules/notification_center/native/ForYouEmptyState.tsx");
 
 export const ForYouEmptyState = function ForYouEmptyState(height) {
   const tmp = callback3();
   let obj = { style: items, children: null };
   items = [tmp.container, { height: height.height }];
-  obj = { style: tmp.image, children: callback(require(5447) /* AccountAgeTier10LargeBadge */.MailboxSpotIllustration, { scale: 0.75 }) };
+  obj = { style: tmp.image, children: callback(AccountAgeTier10LargeBadge.MailboxSpotIllustration, { scale: 0.75 }) };
   const items1 = [callback(View, obj), , ];
   obj = { accessibilityRole: "header", color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items2, children: null };
   items2 = [, ];
   ({ text: arr3[0], headerText: arr3[1] } = tmp);
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[4] = intl.string(require(1236) /* getSystemLocale */.t.MwjTvn);
-  items1[1] = callback(require(4734) /* Text */.Text, obj);
-  const obj1 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.AKBgPy);
-  items1[2] = callback(require(4734) /* Text */.Text, obj1);
+  const intl = getSystemLocale.intl;
+  obj[4] = intl.string(getSystemLocale.t.MwjTvn);
+  items1[1] = callback(Text.Text, obj);
+  obj1 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: null };
+  const intl2 = getSystemLocale.intl;
+  obj1[3] = intl2.string(getSystemLocale.t.AKBgPy);
+  items1[2] = callback(Text.Text, obj1);
   obj[1] = items1;
   return callback2(View, obj);
 };

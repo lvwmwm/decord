@@ -1,38 +1,34 @@
-// Module ID: 11892
-// Function ID: 11893
+// Module ID: 11941
+// Function ID: 11942
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 8919, 21, 4661, 8307, 589, 4734, 8920, 5433, 8918, 1236, 2]
+// Dependencies: [19, 17, 8956, 21, 4668, 8347, 589, 4739, 8957, 5438, 8955, 1236, 2]
 // Exports: default
 
-// Module 11892 (InstantInviteAgeText)
-import "noop";
-import { View } from "get ActivityIndicator";
-import updateWithLatestInvite from "updateWithLatestInvite";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11941 (InstantInviteAgeText)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import apexExperiment from "apexExperiment" /* 8347 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_3 from "updateWithLatestInvite" /* 8956 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsxs: c4, jsx: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ inviteAgeContainer: { flexDirection: "row", alignItems: "center", flexWrap: "wrap" } });
-const result = require("updateWithLatestInvite").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteAgeText.tsx");
+const result = require("set").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteAgeText.tsx");
 
 export default function InstantInviteAgeText(style) {
-  let View;
-  let canEditInvite;
-  let updateWithLatestInvite;
-  let dependencyMap;
-  let require;
   ({ channel: require, callbackActionSheet: dependencyMap, canEditInvite } = style);
   if (canEditInvite === undefined) {
     canEditInvite = true;
   }
-  ({ onEdit: View, source: updateWithLatestInvite } = style);
-  let obj = require(8307) /* apexExperiment */;
+  ({ onEdit: View, source: closure_3 } = style);
+  let obj = apexExperiment;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("InstantInviteAgeText");
-  let obj1 = require(589) /* initialize */;
-  const items = [updateWithLatestInvite];
+  obj1 = initialize;
+  const items = [closure_3];
   const stateFromStores = obj1.useStateFromStores(items, () => inviteSettings.getInviteSettings());
   let tmp7Result = null;
   if (null != stateFromStores) {
@@ -46,13 +42,13 @@ export default function InstantInviteAgeText(style) {
     }
     obj = { variant: null, children: null };
     obj[0] = str2;
-    const items2 = [tmp2(8920).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
+    const items2 = [tmp2(8957).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
     obj[1] = items2;
-    const items3 = [closure_4(tmp2(4734).Text, obj), ];
+    const items3 = [closure_4(tmp2(4739).Text, obj), ];
     if (canEditInvite) {
       obj1 = { onPress: null, accessibilityRole: "link", accessibilityLabel: null, hitSlop: null, children: null };
       obj1[0] = function onPress() {
-        outer1_0(outer1_1[10]).handlePressSettings(closure_0, closure_1, updateWithLatestInvite);
+        closure_1_0(closure_1_1[10]).handlePressSettings(closure_0, closure_1, closure_3);
         if (callback != null) {
           callback();
         }
@@ -67,13 +63,13 @@ export default function InstantInviteAgeText(style) {
       obj2[0] = str;
       const intl2 = tmp2(1236).intl;
       obj2[2] = intl2.string(tmp2(1236).t["VNe8P/"]);
-      obj1[4] = closure_5(tmp2(4734).Text, obj2);
-      canEditInvite = tmp9(tmp2(5433).PressableOpacity, obj1);
+      obj1[4] = closure_5(tmp2(4739).Text, obj2);
+      canEditInvite = tmp9(tmp2(5438).PressableOpacity, obj1);
     }
     items3[1] = canEditInvite;
     obj[1] = items3;
     tmp7Result = tmp7(View, obj);
-    const tmp2Result = tmp2(8920);
+    const tmp2Result = tmp2(8957);
     const tmp8 = View;
   }
   return tmp7Result;

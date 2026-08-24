@@ -1,14 +1,16 @@
-// Module ID: 8734
-// Function ID: 8735
+// Module ID: 8771
+// Function ID: 8772
 // Name: openChannelCallModalForChannelId
-// Dependencies: [1391, 8057, 8663, 2]
+// Dependencies: [1391, 8096, 8700, 2]
 // Exports: default
 
-// Module 8734 (openChannelCallModalForChannelId)
-import ensureGuildLoaded from "ensureGuildLoaded";
+// Module 8771 (openChannelCallModalForChannelId)
+import connectToStage from "connectToStage" /* 8096 */;
+import openChannelCallModal from "openChannelCallModal" /* 8700 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
 
-const require = arg1;
-const result = require("openChannelCallModal").fileFinishedImporting("utils/native/openChannelCallModalForChannelId.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("utils/native/openChannelCallModalForChannelId.tsx");
 
 export default function openChannelCallModalForChannelId(arg0, arg1) {
   channel = channel.getChannel(arg0);
@@ -18,12 +20,12 @@ export default function openChannelCallModalForChannelId(arg0, arg1) {
       isGuildStageVoiceResult = channel.isGuildStageVoice();
     }
     if (isGuildStageVoiceResult) {
-      isGuildStageVoiceResult = false === require(8057) /* connectToStage */.connectToStage(channel);
-      const obj2 = require(8057) /* connectToStage */;
+      isGuildStageVoiceResult = false === connectToStage.connectToStage(channel);
+      const obj2 = connectToStage;
     }
     if (!isGuildStageVoiceResult) {
-      require(8663) /* openChannelCallModal */.openChannelCallModal(channel);
-      const obj3 = require(8663) /* openChannelCallModal */;
+      openChannelCallModal.openChannelCallModal(channel);
+      const obj3 = openChannelCallModal;
     }
   }
 };

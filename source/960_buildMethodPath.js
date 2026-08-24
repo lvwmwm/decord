@@ -4,7 +4,10 @@
 // Dependencies: [958, 961]
 
 // Module 960 (buildMethodPath)
-const require = arg1;
+import _mod958 from "module_958" /* 958 */;
+import truncateTextByBytes from "truncateTextByBytes" /* 961 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.buildMethodPath = function buildMethodPath(arg0, arg1) {
@@ -59,12 +62,12 @@ arg5.getSpanOperation = function getSpanOperation(arr) {
 };
 arg5.getTruncatedJsonString = function getTruncatedJsonString(arr) {
   if (typeof arr === "string") {
-    return require(961) /* truncateTextByBytes */.truncateGenAiStringInput(arr);
+    return truncateTextByBytes.truncateGenAiStringInput(arr);
   } else {
     const _Array = Array;
     if (Array.isArray(arr)) {
       const _JSON2 = JSON;
-      return JSON.stringify(require(961) /* truncateTextByBytes */.truncateGenAiMessages(arr));
+      return JSON.stringify(truncateTextByBytes.truncateGenAiMessages(arr));
     } else {
       const _JSON = JSON;
       return JSON.stringify(arr);
@@ -75,13 +78,13 @@ arg5.setTokenUsageAttributes = function setTokenUsageAttributes(setAttributes) {
   let num = arg1;
   if (undefined !== arg1) {
     let obj = {};
-    obj[require(958).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] = num;
+    obj[_mod958.GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] = num;
     setAttributes.setAttributes(obj);
   }
   let num2 = arg2;
   if (undefined !== arg2) {
     obj = {};
-    obj[require(958).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE] = num2;
+    obj[_mod958.GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE] = num2;
     setAttributes.setAttributes(obj);
   }
   let num3 = arg3;

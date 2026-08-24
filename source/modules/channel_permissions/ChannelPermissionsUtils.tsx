@@ -1,23 +1,27 @@
-// Module ID: 8850
-// Function ID: 8851
+// Module ID: 8887
+// Function ID: 8888
 // Name: getRoleRowData
-// Dependencies: [1395, 1434, 1984, 1990, 1922, 8064, 676, 1987, 1236, 506, 11, 4219, 1370, 4026, 8851, 1954, 4979, 2]
+// Dependencies: [1395, 1434, 1985, 1991, 1922, 8103, 676, 1988, 1236, 506, 11, 4223, 1370, 4029, 8888, 1954, 4984, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 8850 (getRoleRowData)
-import { isGuildVocalChannelType } from "createChannelRecord";
-import { isGuildOwner } from "GuildNSFWContentLevel";
-import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { RowType } from "RowType";
-import ME from "ME";
+// Module 8887 (getRoleRowData)
+import set from "set" /* 2 */;
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import fromStringAll from "fromString" /* 506 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import compareGuildRoles from "compareGuildRoles" /* 1988 */;
+import applyOverwritesAll from "applyOverwrites" /* 4029 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import RowType2 from "RowType" /* 8103 */;
+import _updatePermission from "_updatePermission" /* 8888 */;
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1985 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let closure_12;
-let closure_6;
-let error;
-let map1;
-let unpackModuleId;
 function getRoleRowData(colorString) {
   let flag = arg1;
   if (arg1 === undefined) {
@@ -48,8 +52,8 @@ function sortRoles(guildId, id) {
   if (num2 !== num) {
     let diff = num2 - num;
   } else {
-    diff = require(1987) /* compareGuildRoles */.compareGuildRoles(guildId, id);
-    const obj = require(1987) /* compareGuildRoles */;
+    diff = compareGuildRoles.compareGuildRoles(guildId, id);
+    const obj = compareGuildRoles;
   }
   return diff;
 }
@@ -58,11 +62,11 @@ function getMemberRowData(id, id2) {
   const obj = { rowType: tmp3, name: null, username: null, id: null, avatarURL: null, bot: null, verifiedBot: null, disabled: null, key: null };
   nick = nick.getNick(id2.id, id.id);
   if (nick == null) {
-    nick = importDefault(4219).getName(id);
-    const obj2 = importDefault(4219);
+    nick = nameFromUserDefault.getName(id);
+    const obj2 = nameFromUserDefault;
   }
   obj[1] = nick;
-  obj[2] = importDefault(4219).getUserTag(id);
+  obj[2] = nameFromUserDefault.getUserTag(id);
   obj[3] = id.id;
   obj[4] = id.getAvatarURL(id2.id, 24);
   obj[5] = id.bot;
@@ -82,27 +86,30 @@ function sortMembers(rowType, rowType2) {
   }
   return diff;
 }
+const isGuildVocalChannelType = createChannelRecord.isGuildVocalChannelType;
+const isGuildOwner = GuildNSFWContentLevel.isGuildOwner;
 ({ hasPermission: closure_6, isEveryoneRole: error } = GuildRoleRecordTypeTag);
+const RowType = RowType2.RowType;
 ({ Permissions: unpackModuleId, ChannelTypes: closure_12, DEFAULT_ROLE_COLOR_HEX: map1 } = ME);
-const result = require("GuildRoleRecordTypeTag").fileFinishedImporting("modules/channel_permissions/ChannelPermissionsUtils.tsx");
+const result = set.fileFinishedImporting("modules/channel_permissions/ChannelPermissionsUtils.tsx");
 
 export { getRoleRowData };
 export { sortRoles };
 export const getNoRolesRow = function getNoRolesRow() {
   let stringResult = arg0;
   if (arg0 === undefined) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1236) /* getSystemLocale */.t["gnsna/"]);
+    const intl = getSystemLocale.intl;
+    stringResult = intl.string(getSystemLocale.t["gnsna/"]);
   }
   const items = [{ rowType: RowType.EMPTY_STATE, colorString: closure_13, name: stringResult, disabled: true, id: "EMPTY_STATE" }];
   return items;
 };
 export const isEveryoneRoleId = function isEveryoneRoleId(channelId, id) {
-  return importDefault(11).castGuildIdAsEveryoneGuildRoleId(channelId) === id;
+  return DISCORD_EPOCHDefault.castGuildIdAsEveryoneGuildRoleId(channelId) === id;
 };
 export const getRolesRows = function getRolesRows(guild, stateFromStores, channel, permission, filterByQuery) {
-  let closure_0 = channel;
-  let closure_1 = permission;
+  closure_0 = channel;
+  closure_1 = permission;
   let fn = filterByQuery;
   if (filterByQuery === undefined) {
     fn = function a() {
@@ -110,11 +117,11 @@ export const getRolesRows = function getRolesRows(guild, stateFromStores, channe
     };
   }
   const found = stateFromStores.filter((name) => {
-    const tmp = outer1_6(name, outer1_11.ADMINISTRATOR);
+    const tmp = closure_1_6(name, closure_1_11.ADMINISTRATOR);
     let tmp2 = !tmp;
     if (tmp) {
       if (tmp2) {
-        tmp2 = !outer1_7(name);
+        tmp2 = !closure_1_7(name);
       }
       if (tmp2) {
         tmp2 = fn(name.name);
@@ -122,14 +129,14 @@ export const getRolesRows = function getRolesRows(guild, stateFromStores, channe
       return tmp2;
     } else {
       const id = name.id;
-      let id2 = outer1_9.getCurrentUser();
+      let id2 = closure_1_9.getCurrentUser();
       let flag = false;
       if (null != id2) {
         if (null != tmp3) {
           let tmp8 = null == tmp7;
           if (!tmp8) {
-            tmp8 = !fn(outer1_3[9]).has(tmp7.allow, tmp4);
-            const obj = fn(outer1_3[9]);
+            tmp8 = !fn(closure_1_3[9]).has(tmp7.allow, tmp4);
+            const obj = fn(closure_1_3[9]);
           }
           flag = tmp8;
         }
@@ -143,8 +150,8 @@ export const getRolesRows = function getRolesRows(guild, stateFromStores, channe
   return sorted.map((arg0) => callback(arg0));
 };
 export const getRolesRowsWithPermissionDisabled = function getRolesRowsWithPermissionDisabled(guild, stateFromStores, channel, permission, filterByQuery) {
-  let closure_0 = channel;
-  let closure_1 = permission;
+  closure_0 = channel;
+  closure_1 = permission;
   let fn = filterByQuery;
   if (filterByQuery === undefined) {
     fn = function u() {
@@ -152,11 +159,11 @@ export const getRolesRowsWithPermissionDisabled = function getRolesRowsWithPermi
     };
   }
   const found = stateFromStores.filter((name) => {
-    const tmp = outer1_6(name, outer1_11.ADMINISTRATOR);
+    const tmp = closure_1_6(name, closure_1_11.ADMINISTRATOR);
     let tmp2 = !tmp;
     if (tmp) {
       if (tmp2) {
-        tmp2 = !outer1_7(name);
+        tmp2 = !closure_1_7(name);
       }
       if (tmp2) {
         tmp2 = fn(name.name);
@@ -164,14 +171,14 @@ export const getRolesRowsWithPermissionDisabled = function getRolesRowsWithPermi
       return tmp2;
     } else {
       const id = name.id;
-      let id2 = outer1_9.getCurrentUser();
+      let id2 = closure_1_9.getCurrentUser();
       let flag = false;
       if (null != id2) {
         if (null != tmp3) {
           let tmp8 = null == tmp7;
           if (!tmp8) {
-            tmp8 = !fn(outer1_3[9]).has(tmp7.allow, tmp4);
-            const obj = fn(outer1_3[9]);
+            tmp8 = !fn(closure_1_3[9]).has(tmp7.allow, tmp4);
+            const obj = fn(closure_1_3[9]);
           }
           flag = tmp8;
         }
@@ -182,17 +189,17 @@ export const getRolesRowsWithPermissionDisabled = function getRolesRowsWithPermi
     }
   });
   const sorted = found.sort(sortRoles);
-  return sorted.map((arg0) => outer1_14(arg0, outer1_6(arg0, closure_1)));
+  return sorted.map((arg0) => closure_1_14(arg0, closure_1_6(arg0, closure_1)));
 };
 export const getExistingRoles = function getExistingRoles(guild, sortedRoles, channel, accessPermissions) {
-  let closure_0 = channel;
-  let closure_1 = accessPermissions;
-  let closure_2 = arg4;
+  closure_0 = channel;
+  closure_1 = accessPermissions;
+  closure_2 = arg4;
   return sortedRoles.filter((id) => {
-    let tmp = outer1_6(id, outer1_11.ADMINISTRATOR);
+    let tmp = closure_1_6(id, closure_1_11.ADMINISTRATOR);
     if (!tmp) {
       id = id.id;
-      const currentUser = outer1_9.getCurrentUser();
+      const currentUser = closure_1_9.getCurrentUser();
       let flag = false;
       if (null != currentUser) {
         if (null == tmp2) {
@@ -208,15 +215,15 @@ export const getExistingRoles = function getExistingRoles(guild, sortedRoles, ch
           }
           let tmp10 = null == tmp8;
           if (!tmp10) {
-            tmp10 = !callback(outer1_3[9]).has(tmp8.allow, tmp3);
-            const obj = callback(outer1_3[9]);
+            tmp10 = !callback(closure_1_3[9]).has(tmp8.allow, tmp3);
+            const obj = callback(closure_1_3[9]);
           }
           flag = tmp10;
         }
       }
       let tmp13 = !flag;
       if (!flag) {
-        tmp13 = !outer1_7(id);
+        tmp13 = !closure_1_7(id);
       }
       tmp = tmp13;
       tmp3 = closure_1;
@@ -225,14 +232,14 @@ export const getExistingRoles = function getExistingRoles(guild, sortedRoles, ch
   });
 };
 export const getAllExistingRolesWithPermission = function getAllExistingRolesWithPermission(arg0, arr) {
-  let closure_0 = arg2;
-  let closure_1 = arg3;
-  let closure_2 = arg4;
+  closure_0 = arg2;
+  closure_1 = arg3;
+  closure_2 = arg4;
   return arr.filter((id) => {
-    let hasItem = outer1_6(id, outer1_11.ADMINISTRATOR);
+    let hasItem = closure_1_6(id, closure_1_11.ADMINISTRATOR);
     if (!hasItem) {
       id = id.id;
-      const currentUser = outer1_9.getCurrentUser();
+      const currentUser = closure_1_9.getCurrentUser();
       let flag = false;
       if (null != currentUser) {
         if (null == tmp2) {
@@ -248,40 +255,40 @@ export const getAllExistingRolesWithPermission = function getAllExistingRolesWit
           }
           let tmp10 = null == tmp8;
           if (!tmp10) {
-            tmp10 = !callback(outer1_3[9]).has(tmp8.allow, tmp3);
-            const obj = callback(outer1_3[9]);
+            tmp10 = !callback(closure_1_3[9]).has(tmp8.allow, tmp3);
+            const obj = callback(closure_1_3[9]);
           }
           flag = tmp10;
         }
       }
       let tmp13 = !flag;
       if (!flag) {
-        tmp13 = !outer1_7(id);
+        tmp13 = !closure_1_7(id);
       }
       hasItem = tmp13;
       tmp3 = closure_1;
     }
     if (!hasItem) {
-      const obj2 = callback(outer1_3[9]);
+      const obj2 = callback(closure_1_3[9]);
       let allow;
       if (permissionOverwrites.permissionOverwrites[id.id] != null) {
         allow = tmp18.allow;
       }
-      hasItem = obj2.has(callback(outer1_3[9]).combine(id.permissions, allow), closure_1);
-      const obj3 = callback(outer1_3[9]);
+      hasItem = obj2.has(callback(closure_1_3[9]).combine(id.permissions, allow), closure_1);
+      const obj3 = callback(closure_1_3[9]);
     }
     return hasItem;
   });
 };
 export const getExistingRolesRows = function getExistingRolesRows(guild, sortedGuildRoles, channel, accessPermissions) {
   const _require = channel;
-  let closure_1 = accessPermissions;
-  let closure_2 = arg4;
+  closure_1 = accessPermissions;
+  closure_2 = arg4;
   const found = sortedGuildRoles.filter((id) => {
-    let tmp = outer1_6(id, outer1_11.ADMINISTRATOR);
+    let tmp = closure_1_6(id, closure_1_11.ADMINISTRATOR);
     if (!tmp) {
       id = id.id;
-      const currentUser = outer1_9.getCurrentUser();
+      const currentUser = closure_1_9.getCurrentUser();
       let flag = false;
       if (null != currentUser) {
         if (null == tmp2) {
@@ -297,15 +304,15 @@ export const getExistingRolesRows = function getExistingRolesRows(guild, sortedG
           }
           let tmp10 = null == tmp8;
           if (!tmp10) {
-            tmp10 = !callback(outer1_3[9]).has(tmp8.allow, tmp3);
-            const obj = callback(outer1_3[9]);
+            tmp10 = !callback(closure_1_3[9]).has(tmp8.allow, tmp3);
+            const obj = callback(closure_1_3[9]);
           }
           flag = tmp10;
         }
       }
       let tmp13 = !flag;
       if (!flag) {
-        tmp13 = !outer1_7(id);
+        tmp13 = !closure_1_7(id);
       }
       tmp = tmp13;
       tmp3 = closure_1;
@@ -333,13 +340,13 @@ export const getExistingRolesRows = function getExistingRolesRows(guild, sortedG
 export const getExistingRolesRowWithPermissionDisabled = function getExistingRolesRowWithPermissionDisabled(guild, sortedGuildRoles, channel, MODERATE_STAGE_CHANNEL_PERMISSIONS) {
   let _require = MODERATE_STAGE_CHANNEL_PERMISSIONS;
   _require = channel;
-  let closure_1 = MODERATE_STAGE_CHANNEL_PERMISSIONS;
-  let closure_2 = arg4;
+  closure_1 = MODERATE_STAGE_CHANNEL_PERMISSIONS;
+  closure_2 = arg4;
   const found = sortedGuildRoles.filter((id) => {
-    let hasItem = outer1_6(id, outer1_11.ADMINISTRATOR);
+    let hasItem = closure_1_6(id, closure_1_11.ADMINISTRATOR);
     if (!hasItem) {
       id = id.id;
-      const currentUser = outer1_9.getCurrentUser();
+      const currentUser = closure_1_9.getCurrentUser();
       let flag = false;
       if (null != currentUser) {
         if (null == tmp2) {
@@ -355,32 +362,32 @@ export const getExistingRolesRowWithPermissionDisabled = function getExistingRol
           }
           let tmp10 = null == tmp8;
           if (!tmp10) {
-            tmp10 = !callback(outer1_3[9]).has(tmp8.allow, tmp3);
-            const obj = callback(outer1_3[9]);
+            tmp10 = !callback(closure_1_3[9]).has(tmp8.allow, tmp3);
+            const obj = callback(closure_1_3[9]);
           }
           flag = tmp10;
         }
       }
       let tmp13 = !flag;
       if (!flag) {
-        tmp13 = !outer1_7(id);
+        tmp13 = !closure_1_7(id);
       }
       hasItem = tmp13;
       tmp3 = closure_1;
     }
     if (!hasItem) {
-      const obj2 = callback(outer1_3[9]);
+      const obj2 = callback(closure_1_3[9]);
       let allow;
       if (permissionOverwrites.permissionOverwrites[id.id] != null) {
         allow = tmp18.allow;
       }
-      hasItem = obj2.has(callback(outer1_3[9]).combine(id.permissions, allow), closure_1);
-      const obj3 = callback(outer1_3[9]);
+      hasItem = obj2.has(callback(closure_1_3[9]).combine(id.permissions, allow), closure_1);
+      const obj3 = callback(closure_1_3[9]);
     }
     return hasItem;
   });
   const sorted = found.sort(sortRoles);
-  let mapped = sorted.map((arg0) => outer1_14(arg0, outer1_6(arg0, closure_0)));
+  let mapped = sorted.map((arg0) => closure_1_14(arg0, closure_1_6(arg0, closure_0)));
   if (0 === mapped.length) {
     const intl2 = _require(1236).intl;
     let stringResult = intl2.string(_require(1236).t.nZfHsf);
@@ -399,8 +406,8 @@ export const getExistingRolesRowWithPermissionDisabled = function getExistingRol
 };
 export const getMembersRows = function getMembersRows(stateFromStoresArray, channel, guild, permission, filterByQuery) {
   const _require = channel;
-  let closure_1 = guild;
-  let closure_2 = permission;
+  closure_1 = guild;
+  closure_2 = permission;
   let fn = filterByQuery;
   if (filterByQuery === undefined) {
     fn = function a() {
@@ -410,11 +417,11 @@ export const getMembersRows = function getMembersRows(stateFromStoresArray, chan
   const mapped = stateFromStoresArray.map(currentUser.getUser);
   const found = mapped.filter(_require(1370).isNotNullish);
   const found1 = found.filter((id) => {
-    const tmp2 = outer1_5(guild, id);
+    const tmp2 = closure_1_5(guild, id);
     let tmp3 = !tmp2;
     if (tmp2) {
       if (tmp3) {
-        let nick = outer1_8.getNick(guild.id, id.id);
+        let nick = closure_1_8.getNick(guild.id, id.id);
         if (nick == null) {
           nick = guild(fn[11]).getName(id);
           const obj2 = guild(fn[11]);
@@ -425,7 +432,7 @@ export const getMembersRows = function getMembersRows(stateFromStoresArray, chan
       return tmp3;
     } else {
       id = id.id;
-      let id2 = outer1_9.getCurrentUser();
+      let id2 = closure_1_9.getCurrentUser();
       let flag = false;
       if (null != id2) {
         if (null != tmp4) {
@@ -442,19 +449,19 @@ export const getMembersRows = function getMembersRows(stateFromStoresArray, chan
       tmp5 = permission;
     }
   });
-  const mapped1 = found1.map((arg0) => outer1_16(arg0, closure_1));
+  const mapped1 = found1.map((arg0) => closure_1_16(arg0, closure_1));
   return mapped1.sort(sortMembers);
 };
 export const getExistingMembers = function getExistingMembers(memberIds, channel, guild, accessPermissions) {
   const _require = channel;
-  let closure_1 = guild;
-  let closure_2 = accessPermissions;
-  const dependencyMap = arg4;
+  closure_1 = guild;
+  closure_2 = accessPermissions;
+  dependencyMap = arg4;
   const mapped = memberIds.map(currentUser.getUser);
   const found = mapped.filter(_require(1370).isNotNullish);
   return found.filter((id) => {
     id = id.id;
-    const currentUser = outer1_9.getCurrentUser();
+    const currentUser = closure_1_9.getCurrentUser();
     let flag = false;
     if (null != currentUser) {
       if (null == tmp) {
@@ -478,7 +485,7 @@ export const getExistingMembers = function getExistingMembers(memberIds, channel
     }
     let tmp10 = !flag;
     if (flag) {
-      tmp10 = outer1_5(closure_1, id);
+      tmp10 = closure_1_5(closure_1, id);
     }
     return tmp10;
   });
@@ -486,14 +493,14 @@ export const getExistingMembers = function getExistingMembers(memberIds, channel
 export const getExistingMembersRows = function getExistingMembersRows(memberIds, channel, guild, accessPermissions) {
   let _require = guild;
   _require = channel;
-  let closure_1 = guild;
-  let closure_2 = accessPermissions;
-  const dependencyMap = arg4;
+  closure_1 = guild;
+  closure_2 = accessPermissions;
+  dependencyMap = arg4;
   const mapped = memberIds.map(currentUser.getUser);
   const found = mapped.filter(_require(1370).isNotNullish);
   const found1 = found.filter((id) => {
     id = id.id;
-    const currentUser = outer1_9.getCurrentUser();
+    const currentUser = closure_1_9.getCurrentUser();
     let flag = false;
     if (null != currentUser) {
       if (null == tmp) {
@@ -517,114 +524,112 @@ export const getExistingMembersRows = function getExistingMembersRows(memberIds,
     }
     let tmp10 = !flag;
     if (flag) {
-      tmp10 = outer1_5(closure_1, id);
+      tmp10 = closure_1_5(closure_1, id);
     }
     return tmp10;
   });
-  const mapped1 = found1.map((arg0) => outer1_16(arg0, closure_0));
+  const mapped1 = found1.map((arg0) => closure_1_16(arg0, closure_0));
   return mapped1.sort(sortMembers);
 };
 export const getRowTypeLabel = function getRowTypeLabel(rowType) {
   if (RowType.ROLE === rowType) {
-    const intl6 = require(1236) /* getSystemLocale */.intl;
-    return intl6.string(require(1236) /* getSystemLocale */.t.ZxoFOG);
+    const intl6 = getSystemLocale.intl;
+    return intl6.string(getSystemLocale.t.ZxoFOG);
   } else if (tmp.OWNER === rowType) {
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    return intl5.string(require(1236) /* getSystemLocale */.t.NWhYJg);
+    const intl5 = getSystemLocale.intl;
+    return intl5.string(getSystemLocale.t.NWhYJg);
   } else if (tmp.ADMINISTRATOR === rowType) {
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    return intl4.string(require(1236) /* getSystemLocale */.t["dwlcc+"]);
+    const intl4 = getSystemLocale.intl;
+    return intl4.string(getSystemLocale.t["dwlcc+"]);
   } else if (tmp.MEMBER === rowType) {
     let stringResult = null;
     if (arg1) {
-      const intl3 = require(1236) /* getSystemLocale */.intl;
-      stringResult = intl3.string(require(1236) /* getSystemLocale */.t.UAJxZi);
+      const intl3 = getSystemLocale.intl;
+      stringResult = intl3.string(getSystemLocale.t.UAJxZi);
     }
     return stringResult;
   } else if (tmp.USER === rowType) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(require(1236) /* getSystemLocale */.t.KD6OJJ);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(getSystemLocale.t.KD6OJJ);
   } else if (tmp.GUILD === rowType) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["5qyruI"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["5qyruI"]);
   } else if (tmp.EMPTY_STATE === rowType) {
     return null;
   }
 };
 export const getRemoveTooltipHint = function getRemoveTooltipHint(arg0) {
   if (RowType.ROLE === arg0) {
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    return intl4.string(require(1236) /* getSystemLocale */.t["Gzc/a8"]);
+    const intl4 = getSystemLocale.intl;
+    return intl4.string(getSystemLocale.t["Gzc/a8"]);
   } else if (tmp.OWNER === arg0) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(require(1236) /* getSystemLocale */.t.icuNBM);
+    const intl3 = getSystemLocale.intl;
+    return intl3.string(getSystemLocale.t.icuNBM);
   } else if (tmp.ADMINISTRATOR === arg0) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(require(1236) /* getSystemLocale */.t.eTmN5a);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(getSystemLocale.t.eTmN5a);
   } else if (tmp.MEMBER === arg0) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["Gzc/a8"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["Gzc/a8"]);
   } else {
     const EMPTY_STATE = tmp.EMPTY_STATE;
     return null;
   }
 };
-export const flipEveryonePermission = function flipEveryonePermission(outer1_0, accessPermissions, result) {
-  let everyoneOverwrite = outer1_0.permissionOverwrites[outer1_0.guild_id];
+export const flipEveryonePermission = function flipEveryonePermission(closure_1_0, accessPermissions, result) {
+  let everyoneOverwrite = closure_1_0.permissionOverwrites[closure_1_0.guild_id];
   if (null == everyoneOverwrite) {
-    let obj = importAll(4026);
-    everyoneOverwrite = obj.makeEveryoneOverwrite(outer1_0.guild_id);
+    let obj = applyOverwritesAll;
+    everyoneOverwrite = obj.makeEveryoneOverwrite(closure_1_0.guild_id);
   }
   obj = {};
   const merged = Object.assign(everyoneOverwrite);
-  obj.deny = importAll(506).remove(obj.deny, accessPermissions);
-  const obj3 = importAll(506);
+  obj.deny = fromStringAll.remove(obj.deny, accessPermissions);
+  const obj3 = fromStringAll;
   const tmp5 = importAll;
-  obj.allow = importAll(506).remove(obj.allow, accessPermissions);
+  obj.allow = fromStringAll.remove(obj.allow, accessPermissions);
   if (!result) {
-    obj.deny = tmp5(506).add(obj.deny, accessPermissions);
-    const tmp5Result = tmp5(506);
+    obj.deny = fromStringAll.add(obj.deny, accessPermissions);
+    const tmp5Result = fromStringAll;
   }
   return obj;
 };
 export const toggleChannelEveryonePermission = function toggleChannelEveryonePermission(guild_id) {
   let everyoneOverwrite = guild_id.permissionOverwrites[guild_id.guild_id];
   if (null == everyoneOverwrite) {
-    let obj = importAll(4026);
+    let obj = applyOverwritesAll;
     everyoneOverwrite = obj.makeEveryoneOverwrite(guild_id.guild_id);
   }
   obj = {};
   const merged = Object.assign(everyoneOverwrite);
-  obj.deny = importAll(506).remove(obj.deny, arg1);
-  const obj3 = importAll(506);
+  obj.deny = fromStringAll.remove(obj.deny, arg1);
+  const obj3 = fromStringAll;
   const tmp5 = importAll;
-  obj.allow = importAll(506).remove(obj.allow, arg1);
+  obj.allow = fromStringAll.remove(obj.allow, arg1);
   if (!arg2) {
-    obj.deny = tmp5(506).add(obj.deny, arg1);
-    const tmp5Result = tmp5(506);
+    obj.deny = fromStringAll.add(obj.deny, arg1);
+    const tmp5Result = fromStringAll;
   }
-  const obj4 = importAll(506);
-  require(8851) /* _updatePermission */.updatePermission(guild_id, obj.id, obj.allow, obj.deny);
+  const obj4 = fromStringAll;
+  _updatePermission.updatePermission(guild_id, obj.id, obj.allow, obj.deny);
 };
-export const grantUserChannelAccess = function grantUserChannelAccess(outer1_0, accessPermissions) {
-  let allow;
-  let deny;
+export const grantUserChannelAccess = function grantUserChannelAccess(closure_1_0, accessPermissions) {
   currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
-    if (null == outer1_0.permissionOverwrites[currentUser.id]) {
+    if (null == closure_1_0.permissionOverwrites[currentUser.id]) {
       let obj = { id: null, type: null, allow: null, deny: null };
       obj[0] = currentUser.id;
-      obj[1] = require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.MEMBER;
-      obj[2] = importAll(506).add(importAll(4026).NONE, accessPermissions);
-      obj[3] = importAll(4026).NONE;
-      const obj4 = importAll(506);
+      obj[1] = PermissionOverwriteType.PermissionOverwriteType.MEMBER;
+      obj[2] = fromStringAll.add(applyOverwritesAll.NONE, accessPermissions);
+      obj[3] = applyOverwritesAll.NONE;
+      const obj4 = fromStringAll;
       const items = [obj];
-      return require(8851) /* _updatePermission */.savePermissionUpdates(outer1_0.id, items, true);
+      return _updatePermission.savePermissionUpdates(closure_1_0.id, items, true);
     } else {
       ({ allow, deny } = tmp4);
-      obj = importAll(506);
-      const obj2 = require(8851) /* _updatePermission */;
-      return obj2.updatePermission(outer1_0, tmp4.id, obj.add(allow, accessPermissions), deny);
+      obj = fromStringAll;
+      const obj2 = _updatePermission;
+      return obj2.updatePermission(closure_1_0, tmp4.id, obj.add(allow, accessPermissions), deny);
     }
   }
 };
@@ -642,8 +647,8 @@ export const isPrivateGuildChannel = function isPrivateGuildChannel(channel) {
     }
     let hasItem = null != tmp2;
     if (hasItem) {
-      hasItem = importAll(506).has(tmp2.deny, channel.accessPermissions);
-      const obj = importAll(506);
+      hasItem = fromStringAll.has(tmp2.deny, channel.accessPermissions);
+      const obj = fromStringAll;
     }
     return hasItem;
   }
@@ -654,8 +659,8 @@ export const isPrivateTextChannel = function isPrivateTextChannel(type) {
     hasItem = type.type === constants2.GUILD_TEXT;
   }
   if (hasItem) {
-    hasItem = importAll(506).has(tmp.deny, constants.VIEW_CHANNEL);
-    const obj = importAll(506);
+    hasItem = fromStringAll.has(tmp.deny, constants.VIEW_CHANNEL);
+    const obj = fromStringAll;
   }
   return hasItem;
 };
@@ -685,21 +690,21 @@ export const getPrivateChannelHintText = function getPrivateChannelHintText(firs
   if (constants2.GUILD_TEXT !== first1) {
     if (tmp.GUILD_ANNOUNCEMENT !== first1) {
       if (tmp.GUILD_VOICE === first1) {
-        const intl2 = require(1236) /* getSystemLocale */.intl;
-        return intl2.format(require(1236) /* getSystemLocale */.t.iZAMty, {});
+        const intl2 = getSystemLocale.intl;
+        return intl2.format(getSystemLocale.t.iZAMty, {});
       } else if (tmp.GUILD_CATEGORY === first1) {
-        const intl = require(1236) /* getSystemLocale */.intl;
-        return intl.format(require(1236) /* getSystemLocale */.t.PhnARV, {});
+        const intl = getSystemLocale.intl;
+        return intl.format(getSystemLocale.t.PhnARV, {});
       } else {
         return null;
       }
     }
   }
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  return intl3.format(require(1236) /* getSystemLocale */.t.ZDtA0T, {});
+  const intl3 = getSystemLocale.intl;
+  return intl3.format(getSystemLocale.t.ZDtA0T, {});
 };
 export const extractPermissionOverwrites = function extractPermissionOverwrites(arg0, arg1) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   const items = [];
   const values = Object.values(arg0);
   const item = values.forEach((row) => {
@@ -709,12 +714,12 @@ export const extractPermissionOverwrites = function extractPermissionOverwrites(
       tmp = "" !== row.id;
     }
     if (tmp) {
-      if (row.rowType === outer1_10.ROLE) {
-        items.push(callback(outer1_3[16]).permissionOverwriteForRole(row.id, callback));
-        const obj2 = callback(outer1_3[16]);
+      if (row.rowType === closure_1_10.ROLE) {
+        items.push(callback(closure_1_3[16]).permissionOverwriteForRole(row.id, callback));
+        const obj2 = callback(closure_1_3[16]);
       } else if (row.rowType === tmp2.MEMBER) {
-        items.push(callback(outer1_3[16]).permissionOverwriteForUser(row.id, callback));
-        const obj = callback(outer1_3[16]);
+        items.push(callback(closure_1_3[16]).permissionOverwriteForUser(row.id, callback));
+        const obj = callback(closure_1_3[16]);
       }
     }
   });

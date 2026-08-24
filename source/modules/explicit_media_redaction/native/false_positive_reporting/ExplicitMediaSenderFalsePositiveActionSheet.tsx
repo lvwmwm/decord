@@ -1,22 +1,22 @@
-// Module ID: 11100
-// Function ID: 11101
+// Module ID: 11139
+// Function ID: 11140
 // Name: ExplicitMediaObscuredFalsePositiveActionSheet
-// Dependencies: [19, 5002, 5004, 21, 647, 10870, 10871, 11099, 5027, 4342, 5001, 2]
+// Dependencies: [19, 5007, 5009, 21, 647, 10909, 10910, 11138, 5032, 4346, 5006, 2]
 // Exports: default
 
-// Module 11100 (ExplicitMediaObscuredFalsePositiveActionSheet)
-import noop from "noop";
-import getFpMessageInfo from "getFpMessageInfo";
-import { EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_5 } from "USER_SETTING_ACTION_SHEET_KEY";
-import { jsx } from "jsxProd";
+// Module 11139 (ExplicitMediaObscuredFalsePositiveActionSheet)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "getFpMessageInfo" /* 5007 */;
+import { EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_5 } from "USER_SETTING_ACTION_SHEET_KEY" /* 5009 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("USER_SETTING_ACTION_SHEET_KEY").fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaSenderFalsePositiveActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaSenderFalsePositiveActionSheet.tsx");
 
 export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId) {
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
-  let dependencyMap;
+  dependencyMap = undefined;
   let React;
   let reportFalsePositive;
   let obj = channelId(647);
@@ -28,28 +28,27 @@ export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId)
   React = attachments1.map((filename) => filename.filename);
   obj = {
     onSuccess() {
-      channelId(10871).handleSuccess(outer1_5);
-      const obj = channelId(10871);
-      const result = messageId(11099).disableFalsePositiveButton(channelId, messageId);
+      channelId(10910).handleSuccess(closure_1_5);
+      const obj = channelId(10910);
+      const result = messageId(11138).disableFalsePositiveButton(channelId, messageId);
     },
     onError() {
-      return channelId(10871).handleError();
+      return channelId(10910).handleError();
     },
     report() {
-      return channelId(5027).reportFailedSendFalsePositive(channelId, messageId, dependencyMap, noop);
+      return channelId(5032).reportFailedSendFalsePositive(channelId, messageId, dependencyMap, closure_3);
     }
   };
-  const explicitMediaActions = channelId(10870).useExplicitMediaActions(obj);
+  const explicitMediaActions = channelId(10909).useExplicitMediaActions(obj);
   reportFalsePositive = explicitMediaActions.reportFalsePositive;
   if (stateFromStores.attachments.length <= 0) {
-    messageId(4342).hideActionSheet();
-    const obj4 = messageId(4342);
+    messageId(4346).hideActionSheet();
+    const obj4 = messageId(4346);
   }
   const items1 = [reportFalsePositive];
   const callback = React.useCallback(() => {
     reportFalsePositive();
   }, items1);
-  obj = { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: null };
-  obj[4] = channelId(5001).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW;
-  return jsx(channelId(10871).ExplicitMediaFalsePositiveActionSheet, { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: null });
+  obj = { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: tmp(5006).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW };
+  return jsx(channelId(10910).ExplicitMediaFalsePositiveActionSheet, { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: tmp(5006).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW });
 };

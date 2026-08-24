@@ -1,44 +1,47 @@
-// Module ID: 15607
-// Function ID: 15608
+// Module ID: 15673
+// Function ID: 15674
 // Name: GuildsBarHomeDrawerSeparator
-// Dependencies: [19, 21, 4661, 712, 15288, 4115, 4744, 8125, 4097, 7190, 2]
+// Dependencies: [19, 21, 4668, 712, 15352, 4119, 4749, 8164, 4100, 7228, 2]
 
-// Module 15607 (GuildsBarHomeDrawerSeparator)
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 15673 (GuildsBarHomeDrawerSeparator)
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import setDefault from "set" /* 7228 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 function GuildsBarHomeDrawerSeparator(guildItemSize) {
   guildItemSize = guildItemSize.guildItemSize;
   let panelX;
-  let obj = guildItemSize(15288);
+  let obj = guildItemSize(15352);
   panelX = obj.useHomeDrawerState().panelX;
   const tmp = callback(guildItemSize);
   const fn = function n() {
     const obj = { maxWidth: null };
     const bound = Math.max(guildItemSize, panelX.get() + guildItemSize);
-    obj[0] = guildItemSize(outer1_2[6]).withSpring(bound, guildItemSize(outer1_2[4]).HOME_DRAWER_FLING_PHYSICS);
+    obj[0] = guildItemSize(closure_1_2[6]).withSpring(bound, guildItemSize(closure_1_2[4]).HOME_DRAWER_FLING_PHYSICS);
     return obj;
   };
-  obj = { withSpring: guildItemSize(4744).withSpring, guildItemSize, panelX, HOME_DRAWER_FLING_PHYSICS: guildItemSize(15288).HOME_DRAWER_FLING_PHYSICS };
+  obj = { withSpring: guildItemSize(4749).withSpring, guildItemSize, panelX, HOME_DRAWER_FLING_PHYSICS: guildItemSize(15352).HOME_DRAWER_FLING_PHYSICS };
   fn.__closure = obj;
   fn.__workletHash = 1425261651828;
   fn.__initData = closure_5;
-  const animatedStyle = guildItemSize(4115).useAnimatedStyle(fn);
+  const animatedStyle = guildItemSize(4119).useAnimatedStyle(fn);
   const style = [tmp.separator, animatedStyle];
-  return jsx(panelX(8125), { style });
+  return jsx(panelX(8164), { style });
 }
 let closure_4 = createCacheKey.createStyles((maxWidth) => {
   let obj = { separator: null };
-  obj = { height: 1, maxWidth, marginTop: importDefault(712).modules.mobile.GUILD_BAR_ITEM_MARGIN, marginBottom: importDefault(712).modules.mobile.GUILD_BAR_ITEM_MARGIN, marginLeft: 12, marginRight: 12, backgroundColor: importDefault(712).colors.BORDER_SUBTLE };
+  obj = { height: 1, maxWidth, marginTop: ThemesDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, marginBottom: ThemesDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, marginLeft: 12, marginRight: 12, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
   obj[0] = obj;
   return obj;
 });
 let closure_5 = { code: "function GuildsBarSeparatorTsx1(){const{withSpring,guildItemSize,panelX,HOME_DRAWER_FLING_PHYSICS}=this.__closure;return{maxWidth:withSpring(Math.max(guildItemSize,panelX.get()+guildItemSize),HOME_DRAWER_FLING_PHYSICS)};}" };
-const memoResult = require("noop").memo(function GuildsBarSeparator() {
-  let obj = require(4097) /* map */;
-  const token = obj.useToken(importDefault(712).modules.mobile.GUILD_BAR_ITEM_SIZE);
+const memoResult = importAllResult.memo(function GuildsBarSeparator() {
+  let obj = map;
+  const token = obj.useToken(ThemesDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
   const tmp2 = importDefault;
   const tmp4 = callback(token);
   if (obj2.useIsHomeDrawerEnabled()) {
@@ -48,10 +51,10 @@ const memoResult = require("noop").memo(function GuildsBarSeparator() {
   } else {
     obj = { style: null };
     obj[0] = tmp4.separator;
-    tmp5Result = tmp5(tmp2(7190), obj);
+    tmp5Result = tmp5(setDefault, obj);
   }
   return tmp5Result;
 });
-const result = require("createCacheKey").fileFinishedImporting("modules/guilds_bar/native/GuildsBarSeparator.tsx");
+const result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBarSeparator.tsx");
 
 export default memoResult;

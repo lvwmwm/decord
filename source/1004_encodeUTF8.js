@@ -4,13 +4,16 @@
 // Dependencies: [1005, 1006]
 
 // Module 1004 (encodeUTF8)
-const require = arg1;
+import getSentryCarrier from "getSentryCarrier" /* 1005 */;
+import globalEncodeFactory from "globalEncodeFactory" /* 1006 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.encodeUTF8 = function encodeUTF8(json) {
-  const sentryCarrier = require(1005) /* getSentryCarrier */.getSentryCarrier();
+  const sentryCarrier = getSentryCarrier.getSentryCarrier();
   if (!sentryCarrier.encodePolyfill) {
-    const encodePolyfill = require(1006) /* globalEncodeFactory */.useEncodePolyfill();
-    const tmpResult = require(1006) /* globalEncodeFactory */;
+    const encodePolyfill = globalEncodeFactory.useEncodePolyfill();
+    const tmpResult = globalEncodeFactory;
   }
   return sentryCarrier.encodePolyfill(json);
 };

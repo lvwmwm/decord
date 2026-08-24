@@ -1,18 +1,20 @@
-// Module ID: 5309
-// Function ID: 5310
+// Module ID: 5314
+// Function ID: 5315
 // Name: fromServer
 // Dependencies: [1948, 1949, 2]
 // Exports: isUnknownCollectiblesItemRecord
 
-// Module 5309 (fromServer)
-import "fromServer";
+// Module 5314 (fromServer)
+import fromServerDefault from "fromServer" /* 1948 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
 
-const require = arg1;
+require = arg1;
+fromServerDefault;
 let prototype;
 prototype = function UnknownCollectiblesItemRecord(arg0) {
   tmp = new tmp(arg0, new.target, tmp, new.target);
   // ThrowIfThisInitialized (0x7c)
-  tmp.type = require(1949) /* CollectiblesItemType */.CollectiblesItemType.NONE;
+  tmp.type = CollectiblesItemType.CollectiblesItemType.NONE;
   return tmp;
 }.prototype;
 class prototype extends tmp2 {
@@ -22,13 +24,13 @@ prototype["fromServer"] = function fromServer(arg0) {
   let tmp2 = prototype;
   const fromServerResult = super.fromServer(arg0);
   const merged = Object.assign(fromServerResult);
-  obj.type = require(1949) /* CollectiblesItemType */.CollectiblesItemType.NONE;
+  obj.type = CollectiblesItemType.CollectiblesItemType.NONE;
   if (typeof prototype !== "function") {
     HermesBuiltin.throwTypeError();
   }
   tmp2 = new tmp2(obj, fromServerResult, this, prototype, obj);
   // ThrowIfThisInitialized (0x7c)
-  tmp2.type = require(1949) /* CollectiblesItemType */.CollectiblesItemType.NONE;
+  tmp2.type = CollectiblesItemType.CollectiblesItemType.NONE;
   return tmp2;
 };
 const result = require("set").fileFinishedImporting("modules/collectibles/records/UnknownCollectiblesItemRecord.tsx");

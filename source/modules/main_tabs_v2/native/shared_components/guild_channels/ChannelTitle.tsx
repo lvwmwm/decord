@@ -1,31 +1,30 @@
-// Module ID: 15885
-// Function ID: 15886
-// Dependencies: [19, 5044, 21, 4661, 712, 10056, 4734, 2]
+// Module ID: 15982
+// Function ID: 15983
+// Dependencies: [19, 5049, 21, 4668, 712, 10095, 4739, 2]
 
-// Module 15885
-import importAllResult from "noop";
-import { UnreadSetting } from "ReadStateTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15982
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
-let closure_5 = createCacheKey.createStyleProperties({ muted: require("Themes").colors.TEXT_MUTED, normal: require("Themes").colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: require("Themes").colors.REDESIGN_CHANNEL_NAME_TEXT });
-let obj = { muted: require("Themes").colors.TEXT_MUTED, normal: require("Themes").colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: require("Themes").colors.REDESIGN_CHANNEL_NAME_TEXT };
+let closure_5 = createCacheKey.createStyleProperties({ muted: ThemesDefault.colors.TEXT_MUTED, normal: ThemesDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: ThemesDefault.colors.REDESIGN_CHANNEL_NAME_TEXT });
+let obj = { muted: ThemesDefault.colors.TEXT_MUTED, normal: ThemesDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: ThemesDefault.colors.REDESIGN_CHANNEL_NAME_TEXT };
 const memoResult = importAllResult.memo(function ChannelTitle(unread) {
-  let muted;
-  let title;
   ({ title, muted } = unread);
   unread = unread.unread;
   const resolvedUnreadSetting = unread.resolvedUnreadSetting;
   const connected = unread.connected;
-  let c4;
+  closure_4 = undefined;
   let obj = muted(unread[5]);
   const layoutStyles = obj.getLayoutStyles(unread.layout);
   let tmp2 = callback();
-  c4 = tmp2;
+  closure_4 = tmp2;
   const items = [unread, tmp2, connected, muted, resolvedUnreadSetting];
   const memo = resolvedUnreadSetting.useMemo(() => {
-    let color = _undefined.normal;
+    let color = normal.normal;
     if (muted) {
       color = tmp.muted;
     } else {
@@ -47,8 +46,8 @@ const memoResult = importAllResult.memo(function ChannelTitle(unread) {
     title = "";
   }
   obj[4] = title;
-  return c4(muted(unread[6]).Text, obj);
+  return closure_4(muted(unread[6]).Text, obj);
 });
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelTitle.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelTitle.tsx");
 
 export default memoResult;

@@ -1,38 +1,25 @@
-// Module ID: 12424
-// Function ID: 12425
+// Module ID: 12476
+// Function ID: 12477
 // Name: MaskedLinkModal
-// Dependencies: [17, 21, 4661, 712, 12421, 4660, 1236, 4660, 4733, 8083, 4734, 2]
+// Dependencies: [17, 21, 4668, 712, 12473, 4667, 1236, 4667, 4738, 8122, 4739, 2]
 // Exports: default
 
-// Module 12424 (MaskedLinkModal)
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12476 (MaskedLinkModal)
+import set from "set" /* 2 */;
+import ThemesDefault from "Themes" /* 712 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let obj1;
 ({ View: obj1, ScrollView: c3 } = get_ActivityIndicator);
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { linkCalloutContainer: { maxHeight: 250 }, emphasis: null };
-obj = { borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+obj = { borderRadius: ThemesDefault.radii.sm, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj[1] = obj;
 let closure_6 = createCacheKey.createStyles(obj);
-const result = require("createCacheKey").fileFinishedImporting("modules/masked_link/components/native/MaskedLinkModal.tsx");
+const result = set.fileFinishedImporting("modules/masked_link/components/native/MaskedLinkModal.tsx");
 
 export default function MaskedLinkModal(isProtocol) {
-  let authorityPrefix;
-  let handleCancel;
-  let handleConfirm;
-  let hostname;
-  let onCancel;
-  let onConfirm;
-  let protocol;
-  let shouldTrustUrl;
-  let theRestOfTheUrl;
-  let trustUrl;
-  let url;
   isProtocol = isProtocol.isProtocol;
   shouldTrustUrl = undefined;
   let setShouldTrustUrl;
@@ -62,7 +49,7 @@ export default function MaskedLinkModal(isProtocol) {
   } else {
     stringResult = string(t.NcJfJG);
   }
-  const obj1 = { children: null };
+  obj1 = { children: null };
   obj[2] = stringResult;
   const items = [closure_4(shouldTrustUrl(setShouldTrustUrl[5]).AlertActionButton, obj, "confirm"), ];
   const obj2 = { onPress: handleCancel, variant: "secondary", text: null };

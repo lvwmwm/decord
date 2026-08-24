@@ -1,21 +1,24 @@
-// Module ID: 13002
-// Function ID: 13003
+// Module ID: 13057
+// Function ID: 13058
 // Name: render
-// Dependencies: [19, 1922, 21, 4661, 712, 4104, 1297, 1236, 589, 2]
+// Dependencies: [19, 1922, 21, 4668, 712, 4107, 1297, 1236, 589, 2]
 
-// Module 13002 (render)
-import importDefaultResult from "mergeGuildAvatar";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import { PureComponent } from "noop";
-import importAllResult from "noop";
-import importDefaultResult1 from "initialize";
+// Module 13057 (render)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import importDefaultResult from "mergeGuildAvatar" /* 1922 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
+import importDefaultResult1 from "initialize" /* 589 */;
 
-const require = arg1;
+require = arg1;
 createCacheKey = { warning: null };
-createCacheKey = { color: require("Themes").unsafe_rawColors.RED_400, fontSize: 12, marginTop: 10 };
+createCacheKey = { color: ThemesDefault.unsafe_rawColors.RED_400, fontSize: 12, marginTop: 10 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+let closure_4 = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+const PureComponent = importAllResult.PureComponent;
 class PremiumUnverifiedWarning extends PureComponent {
 }
 PremiumUnverifiedWarning.prototype["render"] = function render() {
@@ -24,15 +27,15 @@ PremiumUnverifiedWarning.prototype["render"] = function render() {
     const obj = { style: null, children: null };
     const items = [tmp.warning, tmp2];
     obj[0] = items;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl.string(require(1236) /* getSystemLocale */.t["0LgOKH"]);
-    tmp3 = jsx(require(1297) /* Button */.LegacyText, { style: null, children: null });
+    const intl = getSystemLocale.intl;
+    obj[1] = intl.string(getSystemLocale.t["0LgOKH"]);
+    tmp3 = jsx(Button.LegacyText, { style: null, children: null });
   }
   return tmp3;
 };
 PremiumUnverifiedWarning.contextType = require("ManaContext").ThemeContext;
 let items = [importDefaultResult];
-const tmp4 = require("initialize").connectStores(items, () => {
+const tmp4 = importDefaultResult1.connectStores(items, () => {
   const currentUser = importDefaultResult.getCurrentUser();
   let verified;
   if (currentUser != null) {
@@ -43,6 +46,6 @@ const tmp4 = require("initialize").connectStores(items, () => {
   }
   return { verified };
 })(PremiumUnverifiedWarning);
-const result = require("jsxProd").fileFinishedImporting("components_native/premium/PremiumUnverifiedWarning.tsx");
+const result = require("set").fileFinishedImporting("components_native/premium/PremiumUnverifiedWarning.tsx");
 
 export default tmp4;

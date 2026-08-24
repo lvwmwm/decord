@@ -1,26 +1,29 @@
-// Module ID: 16258
-// Function ID: 16259
-// Dependencies: [19, 8708, 8709, 21, 589, 16259, 16261, 2]
+// Module ID: 16355
+// Function ID: 16356
+// Dependencies: [19, 8745, 8746, 21, 589, 16356, 16358, 2]
 
-// Module 16258
-import map from "map";
-import { isLaunched } from "FrameLayoutModes";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 16355
+import initialize from "initialize" /* 589 */;
+import FramePanelControllerDefault from "FramePanelController" /* 16356 */;
+import renderActivityOrPIPDefault from "renderActivityOrPIP" /* 16358 */;
+import closure_3 from "map" /* 8745 */;
+import { isLaunched } from "FrameLayoutModes" /* 8746 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-const memoResult = require("noop").memo(function FramePanelContainer() {
-  let obj = require(589) /* initialize */;
-  const items = [map];
+require = arg1;
+const memoResult = importAllResult.memo(function FramePanelContainer() {
+  let obj = initialize;
+  const items = [closure_3];
   let tmp2 = null;
   if (obj.useStateFromStores(items, () => callback(mainFrame.getMainFrame()))) {
     obj = { children: null };
-    obj[0] = jsx(importDefault(16261), {});
-    tmp2 = jsx(importDefault(16259), { children: null });
-    const tmp5 = importDefault(16259);
+    obj[0] = jsx(renderActivityOrPIPDefault, {});
+    tmp2 = jsx(FramePanelControllerDefault, { children: null });
+    const tmp5 = FramePanelControllerDefault;
   }
   return tmp2;
 });
-const result = require("FrameLayoutModes").fileFinishedImporting("modules/frames/panel/native/FramePanelContainer.tsx");
+const result = require("set").fileFinishedImporting("modules/frames/panel/native/FramePanelContainer.tsx");
 
 export default memoResult;

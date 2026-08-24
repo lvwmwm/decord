@@ -1,14 +1,18 @@
-// Module ID: 10640
-// Function ID: 10641
+// Module ID: 10679
+// Function ID: 10680
 // Name: initialize
-// Dependencies: [5259, 589, 709, 2]
+// Dependencies: [5264, 589, 709, 2]
 
-// Module 10640 (initialize)
-import { NotificationTypes } from "str2";
-import { PersistedStore } from "initialize";
+// Module 10679 (initialize)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import str2 from "str2" /* 5264 */;
 
+const NotificationTypes = str2.NotificationTypes;
 let c1 = null;
 let closure_2 = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class PushFeedbackStore extends PersistedStore {
 }
 const prototype = PushFeedbackStore.prototype;
@@ -49,13 +53,8 @@ prototype["getPushFeedback"] = function getPushFeedback(channel_id, id) {
 };
 PushFeedbackStore.displayName = "PushFeedbackStore";
 PushFeedbackStore.persistKey = "PushFeedbackPersistedStore";
-const pushFeedbackStore = new PushFeedbackStore(require("dispatcher"), {
+const pushFeedbackStore = new PushFeedbackStore(dispatcherDefault, {
   PUSH_FEEDBACK_RECEIVED_NOTIFICATION: function handleReceivedNotification(arg0) {
-    let channelId;
-    let eligibleAt;
-    let messageId;
-    let notificationType;
-    let viewCount;
     ({ notificationType, messageId, channelId } = arg0);
     if (NotificationTypes.TOP_MESSAGE_PUSH === notificationType) {
       let flag = true;
@@ -88,7 +87,7 @@ const pushFeedbackStore = new PushFeedbackStore(require("dispatcher"), {
           obj[1] = channelId;
           obj[2] = notificationType;
           obj[3] = null;
-          let c1 = obj;
+          c1 = obj;
           table[notificationType] = obj;
         } else {
           c1 = null;
@@ -102,7 +101,7 @@ const pushFeedbackStore = new PushFeedbackStore(require("dispatcher"), {
     }
   },
   PUSH_FEEDBACK_CLEANUP: function handleCleanup() {
-    let c1 = null;
+    c1 = null;
   },
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
     channelId = channelId.channelId;
@@ -116,6 +115,6 @@ const pushFeedbackStore = new PushFeedbackStore(require("dispatcher"), {
     return false;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/push_feedback/PushFeedbackStore.tsx");
+const result = set.fileFinishedImporting("modules/push_feedback/PushFeedbackStore.tsx");
 
 export default pushFeedbackStore;

@@ -1,11 +1,12 @@
-// Module ID: 4480
-// Function ID: 4481
+// Module ID: 4484
+// Function ID: 4485
 // Name: createFromServer
 // Dependencies: [1931, 2]
 
-// Module 4480 (createFromServer)
-import "toJS";
+// Module 4484 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
 
+toJSDefault;
 let prototype;
 prototype = function CompanyRecord(arg0) {
   const tmp = new prototype(new.target, new.target);

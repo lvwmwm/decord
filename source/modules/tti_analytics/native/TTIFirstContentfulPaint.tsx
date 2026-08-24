@@ -1,31 +1,31 @@
-// Module ID: 11075
-// Function ID: 11076
+// Module ID: 11114
+// Function ID: 11115
 // Name: TTIFirstContentfulPaint
-// Dependencies: [19, 21, 4230, 9, 5415, 11076, 2]
+// Dependencies: [19, 21, 4234, 9, 5420, 11115, 2]
 // Exports: TTIFirstContentfulPaint
 
-// Module 11075 (TTIFirstContentfulPaint)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 11114 (TTIFirstContentfulPaint)
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("getRootNavigationRef").fileFinishedImporting("modules/tti_analytics/native/TTIFirstContentfulPaint.tsx");
+const result = require("set").fileFinishedImporting("modules/tti_analytics/native/TTIFirstContentfulPaint.tsx");
 
 export const TTIFirstContentfulPaint = function TTIFirstContentfulPaint(checkFocusedScreen) {
   checkFocusedScreen = checkFocusedScreen.checkFocusedScreen;
   const items = [checkFocusedScreen];
   const onMeasurement = React.useCallback((nativeEvent) => {
     if (null != checkFocusedScreen) {
-      const rootNavigationRef = checkFocusedScreen(outer1_2[2]).getRootNavigationRef();
+      const rootNavigationRef = checkFocusedScreen(closure_1_2[2]).getRootNavigationRef();
       let currentRoute;
       if (rootNavigationRef != null) {
         currentRoute = rootNavigationRef.getCurrentRoute();
       }
-      const obj = checkFocusedScreen(outer1_2[2]);
+      const obj = checkFocusedScreen(closure_1_2[2]);
     }
-    const firstContentfulPaint = outer1_1(outer1_2[3]).firstContentfulPaint;
+    const firstContentfulPaint = closure_1_1(closure_1_2[3]).firstContentfulPaint;
     firstContentfulPaint.record(nativeEvent.nativeEvent.timestamp);
-    checkFocusedScreen(outer1_2[4]).notifyAboutTTI();
+    checkFocusedScreen(closure_1_2[4]).notifyAboutTTI();
   }, items);
-  return jsx(checkFocusedScreen(11076).TTIMeasurementView, { onMeasurement });
+  return jsx(checkFocusedScreen(11115).TTIMeasurementView, { onMeasurement });
 };

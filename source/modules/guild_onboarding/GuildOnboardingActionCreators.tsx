@@ -1,25 +1,26 @@
-// Module ID: 6791
-// Function ID: 6792
+// Module ID: 6828
+// Function ID: 6829
 // Name: _updateOnboardingResponses
-// Dependencies: [5, 32, 1982, 1391, 1990, 1922, 6788, 676, 4009, 5044, 530, 709, 1208, 6792, 12, 5285, 1370, 6793, 698, 5042, 5277, 11, 1403, 6794, 6799, 2]
+// Dependencies: [5, 32, 1983, 1391, 1991, 1922, 6825, 676, 4012, 5049, 530, 709, 1208, 6829, 12, 5290, 1370, 6830, 698, 5047, 5282, 11, 1403, 6831, 6836, 2]
 
-// Module 6791 (_updateOnboardingResponses)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import _slicedToArray from "_slicedToArray";
-import initialize from "initialize";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import closure_8 from "mergeGuildAvatar";
-import handleUpdate from "handleUpdate";
-import ME from "ME";
-import { GuildMemberFlags } from "GuildMemberFlags";
-import { ReadStateTypes } from "ReadStateTypes";
-import importDefaultResult from "module_1208";
+// Module 6828 (_updateOnboardingResponses)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import updateImpersonating from "updateImpersonating" /* 6829 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "initialize" /* 1983 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "trackCommunicationDisabled" /* 1991 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "handleUpdate" /* 6825 */;
+import ME from "ME" /* 676 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4012 */;
+import { ReadStateTypes } from "ReadStateTypes" /* 5049 */;
+import importDefaultResult from "apply" /* 12 */;
 
-let c10;
-let closure_12;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function _updateOnboardingResponses(guildId, arg1) {
   const _require = guildId;
   let flag = arg1;
@@ -29,11 +30,11 @@ function _updateOnboardingResponses(guildId, arg1) {
   let onboardingResponses;
   let obj;
   obj = undefined;
-  if (!initialize.isFullServerPreview(guildId)) {
-    obj = handleUpdate;
+  if (!closure_5.isFullServerPreview(guildId)) {
+    obj = closure_9;
     if (flag) {
       let onboardingPromptsForOnboarding = obj.getOnboardingPromptsForOnboarding(guildId);
-      let obj1 = obj;
+      obj1 = obj;
     } else {
       onboardingPromptsForOnboarding = obj.getOnboardingPrompts(guildId);
       obj1 = obj;
@@ -51,7 +52,7 @@ function _updateOnboardingResponses(guildId, arg1) {
       const options = id.options;
       const item = options.forEach((id) => {
         const timestamp = Date.now();
-        mergeGuildAvatar[id.id] = timestamp;
+        closure_3[id.id] = timestamp;
         return timestamp;
       });
     });
@@ -112,7 +113,7 @@ function _updateOnboardingResponses(guildId, arg1) {
       }).catch((cause) => {
         obj = callback(obj[12]);
         obj = { cause };
-        const error = new Error("Failed to update onboarding responses for guild " + closure_0 + ": " + cause.statusCode, obj);
+        error = new Error("Failed to update onboarding responses for guild " + closure_0 + ": " + cause.statusCode, obj);
         obj.captureException(error);
       });
       const nextPromise1 = HTTP.put(obj3).then((body) => {
@@ -136,13 +137,13 @@ let obj = {
     let dispatch = store2.getOnboardingPrompt(id);
     if (null != dispatch) {
       if (dispatch.singleSelect) {
-        let obj = importDefault(12);
-        let withoutResult = obj.without(importDefault(12).map(dispatch.options, "id"), id2);
-        const arr2 = importDefault(12);
+        let obj = importDefaultResult;
+        let withoutResult = obj.without(importDefaultResult.map(dispatch.options, "id"), id2);
+        const arr2 = importDefaultResult;
       } else {
         withoutResult = [];
       }
-      dispatch = importDefault(709).dispatch;
+      dispatch = dispatcherDefault.dispatch;
       obj = { type: "GUILD_ONBOARDING_SELECT_OPTION", guildId: null, promptId: null, optionId: null, selected: null, removedOptionIds: null };
       obj[1] = guildId;
       obj[2] = id;
@@ -150,185 +151,205 @@ let obj = {
       obj[4] = arg3;
       obj[5] = withoutResult;
       dispatch(obj);
-      const tmp7 = importDefault(709);
+      const tmp7 = dispatcherDefault;
     }
   },
-  updateOnboardingResponses: null,
-  updateRolesLocal: null,
-  completeOnboarding: null,
-  onboardExistingMember: null,
-  finishOnboarding: null,
-  setUserOnboardingStep: null,
-  resetOnboarding: null
-};
-obj[1] = require("module_1208").debounce(_updateOnboardingResponses, 1000);
-obj[2] = function updateRolesLocal(guildId, items2, differenceResult1) {
-  const selfMember = store.getSelfMember(guildId);
-  let roles;
-  if (selfMember != null) {
-    roles = selfMember.roles;
-  }
-  if (roles == null) {
-    roles = [];
-  }
-  if (initialize.isViewingRoles(guildId)) {
-    const obj5 = require(6792) /* updateImpersonating */;
-    const obj6 = importDefault(12);
-    const result = obj5.updateImpersonatedRoles(guildId, obj6.difference(importDefault(12).union(roles, items2), differenceResult1));
-    const obj7 = importDefault(12);
-  } else {
-    if (tmp2) {
-      let obj = importDefault(709);
-      obj = { type: "GUILD_MEMBER_UPDATE_LOCAL", guildId: null, roles: null, addedRoleIds: null, removedRoleIds: null };
-      obj[1] = guildId;
-      const obj3 = importDefault(12);
-      obj[2] = obj3.difference(importDefault(12).union(roles, items2), differenceResult1);
-      obj[3] = items2;
-      obj[4] = differenceResult1;
-      obj.dispatch(obj);
-      const obj4 = importDefault(12);
+  updateOnboardingResponses: importDefaultResult.debounce(_updateOnboardingResponses, 1000),
+  updateRolesLocal(guildId, items2, differenceResult1) {
+    const selfMember = store.getSelfMember(guildId);
+    let roles;
+    if (selfMember != null) {
+      roles = selfMember.roles;
     }
-    tmp2 = items2.length > 0 || differenceResult1.length > 0;
-  }
-};
-obj[3] = function completeOnboarding(guildId, prompts) {
-  let arr3;
-  let arr4;
-  let tmp = null;
-  if (prompts.length > 0) {
-    tmp = prompts[prompts.length - 1];
-  }
-  let obj = store2;
-  const selectedOptions = store2.getSelectedOptions(guildId);
-  let obj1 = items1(5285);
-  const selectedRoleIds = obj1.getSelectedRoleIds(selectedOptions);
-  const selectedChannelIds = items1(5285).getSelectedChannelIds(selectedOptions);
-  if (store2.getEnabled(guildId)) {
-    let defaultChannelIds = obj.getDefaultChannelIds(guildId);
-  } else {
-    defaultChannelIds = [];
-  }
-  let tmp2Result = tmp2(5285);
-  const obj3 = items1(5285);
-  [arr3, arr4] = callback2(tmp2Result.getChannelCoverageForOnboarding(guildId, prompts, defaultChannelIds), 2);
-  const items = [...defaultChannelIds];
-  const mapped = items.map((arg0) => channel.getChannel(arg0));
-  const found = mapped.filter(tmp2(1370).isNotNullish);
-  tmp2Result = tmp2(6793);
-  const tmp6 = callback2(tmp2Result.getChannelCoverageForOnboarding(guildId, prompts, defaultChannelIds), 2);
-  if (null == tmp) {
-    items1 = [];
-  } else {
-    const options = tmp.options;
-    items1 = options.map((id) => id.id);
-  }
-  const connections = obj.getConnections(guildId);
-  const set = new Set(items);
-  const providerConnectionState = items1(5285).getProviderConnectionState(connections);
-  const tmp2Result1 = items1(5285);
-  const applicationConnectionState = items1(5285).getApplicationConnectionState(connections);
-  const tmp12 = importDefault;
-  const tmp2Result2 = items1(5285);
-  obj = {};
-  const obj8 = importDefault(698);
-  const merged = Object.assign(items1(5042).collectGuildAnalyticsMetadata(guildId));
-  obj.step = prompts.length - 1;
-  let num2 = 0;
-  if (null != tmp) {
-    num2 = selectedOptions.filter((id) => items1.includes(id.id)).length;
-  }
-  obj.options_selected = num2;
-  obj.skipped = items1.length > 0;
-  obj.back = false;
-  obj.in_onboarding = true;
-  obj.is_final_step = true;
-  obj.roles_granted = selectedRoleIds.size;
-  obj.channels_granted = tmp2Result.getFlattenedChannels(guildId, set, found, true).length;
-  obj.guild_onboarding_covered_channel_ids = arr3.map((id) => id.id);
-  obj.guild_onboarding_uncovered_channel_ids = arr4.map((id) => id.id);
-  ({ connected: obj9.provider_connections_connected, notConnected: obj9.provider_connections_not_connected } = providerConnectionState);
-  ({ connected: obj9.application_connections_connected, notConnected: obj9.application_connections_not_connected } = applicationConnectionState);
-  obj8.track(constants.GUILD_ONBOARDING_STEP_COMPLETED, obj);
-  const tmp2Result3 = items1(5042);
-  const tmp2Result4 = items1(5277);
-  tmp2Result4.ackGuildFeature(guildId, ReadStateTypes.GUILD_ONBOARDING_QUESTION, tmp12(11).fromTimestamp(Date.now()));
-  _updateOnboardingResponses(guildId, true);
-  if (initialize.isFullServerPreview(guildId)) {
-    const result = tmp2(6792).updateImpersonatedChannels(guildId, items, []);
-    const tmp2Result5 = tmp2(6792);
-    const result1 = tmp2(6792).updateImpersonatedData(guildId, { optInEnabled: true });
-    const tmp2Result6 = tmp2(6792);
-    const _Array = Array;
-    const result2 = tmp2(6792).updateImpersonatedRoles(guildId, Array.from(selectedRoleIds));
-    currentUser = currentUser.getCurrentUser();
-    if (null != currentUser) {
-      const member = store.getMember(guildId, currentUser.id);
-      let num3;
-      if (member != null) {
-        num3 = member.flags;
-      }
-      if (num3 == null) {
-        num3 = 0;
-      }
-      obj = { memberOptions: null };
-      obj1 = { flags: null };
-      const tmp2Result8 = tmp2(6792);
-      obj1[0] = tmp2(1403).setFlag(num3, GuildMemberFlags.COMPLETED_ONBOARDING, true);
-      obj[0] = obj1;
-      const result3 = tmp2Result8.updateImpersonatedData(guildId, obj);
-      const tmp2Result9 = tmp2(1403);
+    if (roles == null) {
+      roles = [];
     }
-    const tmp2Result7 = tmp2(6792);
-  }
-};
-obj[4] = function onboardExistingMember(id, set) {
-  set = new Set(set);
-  let obj = store2;
-  if (store2.getEnabled(id)) {
-    let defaultChannelIds = obj.getDefaultChannelIds(id);
-  } else {
-    defaultChannelIds = [];
-  }
-  const item = defaultChannelIds.forEach((arg0) => set.add(arg0));
-  if (set.size > 0) {
-    const obj2 = set(6794);
-    const _Array = Array;
-    obj = { page: null };
-    obj[0] = constants2.GUILD_ONBOARDING;
-    obj2.bulkOptInChannels(id, Array.from(set), true, obj);
-  }
-};
-obj[5] = function finishOnboarding(guildId) {
-  let obj = importDefault(709);
-  obj = { type: "GUILD_ONBOARDING_COMPLETE", guildId };
-  obj.dispatch(obj);
-};
-obj[6] = function setUserOnboardingStep(guildId, step) {
-  let obj = importDefault(709);
-  obj = { type: "GUILD_ONBOARDING_SET_STEP", guildId, step };
-  obj.dispatch(obj);
-};
-obj[7] = function resetOnboarding(arg0) {
-  let closure_0 = arg0;
-  return callback(function*() {
-    if (c1 === 2) {
-      c1 = 3;
-      HermesBuiltin.throwTypeError();
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw arg1;
-      } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
-        obj[0] = arg1;
-        return obj;
-      } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
-      }
+    if (closure_5.isViewingRoles(guildId)) {
+      const obj5 = updateImpersonating;
+      const obj6 = importDefaultResult;
+      const result = obj5.updateImpersonatedRoles(guildId, obj6.difference(importDefaultResult.union(roles, items2), differenceResult1));
+      const obj7 = importDefaultResult;
     } else {
-      try {
-        c1 = 2;
-        if (0 === dependencyMap) {
-          if (arg0 === 1) {
+      if (tmp2) {
+        let obj = dispatcherDefault;
+        obj = { type: "GUILD_MEMBER_UPDATE_LOCAL", guildId: null, roles: null, addedRoleIds: null, removedRoleIds: null };
+        obj[1] = guildId;
+        const obj3 = importDefaultResult;
+        obj[2] = obj3.difference(importDefaultResult.union(roles, items2), differenceResult1);
+        obj[3] = items2;
+        obj[4] = differenceResult1;
+        obj.dispatch(obj);
+        const obj4 = importDefaultResult;
+      }
+      tmp2 = items2.length > 0 || differenceResult1.length > 0;
+    }
+  },
+  completeOnboarding(guildId, prompts) {
+    let tmp = null;
+    if (prompts.length > 0) {
+      tmp = prompts[prompts.length - 1];
+    }
+    let obj = store2;
+    const selectedOptions = store2.getSelectedOptions(guildId);
+    obj1 = items1(5290);
+    const selectedRoleIds = obj1.getSelectedRoleIds(selectedOptions);
+    const selectedChannelIds = items1(5290).getSelectedChannelIds(selectedOptions);
+    if (store2.getEnabled(guildId)) {
+      let defaultChannelIds = obj.getDefaultChannelIds(guildId);
+    } else {
+      defaultChannelIds = [];
+    }
+    let tmp2Result = tmp2(5290);
+    const obj3 = items1(5290);
+    [arr3, arr4] = callback2(tmp2Result.getChannelCoverageForOnboarding(guildId, prompts, defaultChannelIds), 2);
+    const items = [...defaultChannelIds];
+    const mapped = items.map((arg0) => channel.getChannel(arg0));
+    const found = mapped.filter(tmp2(1370).isNotNullish);
+    tmp2Result = tmp2(6830);
+    const tmp6 = callback2(tmp2Result.getChannelCoverageForOnboarding(guildId, prompts, defaultChannelIds), 2);
+    if (null == tmp) {
+      items1 = [];
+    } else {
+      const options = tmp.options;
+      items1 = options.map((id) => id.id);
+    }
+    const connections = obj.getConnections(guildId);
+    const set = new Set(items);
+    const providerConnectionState = items1(5290).getProviderConnectionState(connections);
+    const tmp2Result1 = items1(5290);
+    const applicationConnectionState = items1(5290).getApplicationConnectionState(connections);
+    const tmp12 = importDefault;
+    const tmp2Result2 = items1(5290);
+    obj = {};
+    const obj8 = expandEventPropertiesDefault;
+    const merged = Object.assign(items1(5047).collectGuildAnalyticsMetadata(guildId));
+    obj.step = prompts.length - 1;
+    let num2 = 0;
+    if (null != tmp) {
+      num2 = selectedOptions.filter((id) => items1.includes(id.id)).length;
+    }
+    obj.options_selected = num2;
+    obj.skipped = items1.length > 0;
+    obj.back = false;
+    obj.in_onboarding = true;
+    obj.is_final_step = true;
+    obj.roles_granted = selectedRoleIds.size;
+    obj.channels_granted = tmp2Result.getFlattenedChannels(guildId, set, found, true).length;
+    obj.guild_onboarding_covered_channel_ids = arr3.map((id) => id.id);
+    obj.guild_onboarding_uncovered_channel_ids = arr4.map((id) => id.id);
+    ({ connected: obj9.provider_connections_connected, notConnected: obj9.provider_connections_not_connected } = providerConnectionState);
+    ({ connected: obj9.application_connections_connected, notConnected: obj9.application_connections_not_connected } = applicationConnectionState);
+    obj8.track(constants.GUILD_ONBOARDING_STEP_COMPLETED, obj);
+    const tmp2Result3 = items1(5047);
+    const tmp2Result4 = items1(5282);
+    tmp2Result4.ackGuildFeature(guildId, ReadStateTypes.GUILD_ONBOARDING_QUESTION, DISCORD_EPOCHDefault.fromTimestamp(Date.now()));
+    _updateOnboardingResponses(guildId, true);
+    if (closure_5.isFullServerPreview(guildId)) {
+      const result = tmp2(6829).updateImpersonatedChannels(guildId, items, []);
+      const tmp2Result5 = tmp2(6829);
+      const result1 = tmp2(6829).updateImpersonatedData(guildId, { optInEnabled: true });
+      const tmp2Result6 = tmp2(6829);
+      const _Array = Array;
+      const result2 = tmp2(6829).updateImpersonatedRoles(guildId, Array.from(selectedRoleIds));
+      currentUser = currentUser.getCurrentUser();
+      if (null != currentUser) {
+        const member = store.getMember(guildId, currentUser.id);
+        let num3;
+        if (member != null) {
+          num3 = member.flags;
+        }
+        if (num3 == null) {
+          num3 = 0;
+        }
+        obj = { memberOptions: null };
+        obj1 = { flags: null };
+        const tmp2Result8 = tmp2(6829);
+        obj1[0] = tmp2(1403).setFlag(num3, GuildMemberFlags.COMPLETED_ONBOARDING, true);
+        obj[0] = obj1;
+        const result3 = tmp2Result8.updateImpersonatedData(guildId, obj);
+        const tmp2Result9 = tmp2(1403);
+      }
+      const tmp2Result7 = tmp2(6829);
+    }
+  },
+  onboardExistingMember(id, set) {
+    set = new Set(set);
+    let obj = store2;
+    if (store2.getEnabled(id)) {
+      let defaultChannelIds = obj.getDefaultChannelIds(id);
+    } else {
+      defaultChannelIds = [];
+    }
+    const item = defaultChannelIds.forEach((arg0) => set.add(arg0));
+    if (set.size > 0) {
+      const obj2 = set(6831);
+      const _Array = Array;
+      obj = { page: null };
+      obj[0] = constants2.GUILD_ONBOARDING;
+      obj2.bulkOptInChannels(id, Array.from(set), true, obj);
+    }
+  },
+  finishOnboarding(guildId) {
+    let obj = dispatcherDefault;
+    obj = { type: "GUILD_ONBOARDING_COMPLETE", guildId };
+    obj.dispatch(obj);
+  },
+  setUserOnboardingStep(guildId, step) {
+    let obj = dispatcherDefault;
+    obj = { type: "GUILD_ONBOARDING_SET_STEP", guildId, step };
+    obj.dispatch(obj);
+  },
+  resetOnboarding(arg0) {
+    closure_0 = arg0;
+    return callback(function*() {
+      if (c1 === 2) {
+        c1 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c1 = 2;
+          if (0 === dependencyMap) {
+            if (arg0 === 1) {
+              c1 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c1 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const currentUser = closure_1_8.getCurrentUser();
+              if (null != currentUser) {
+                const member = closure_1_7.getMember(closure_1_0, currentUser.id);
+                let flags;
+                if (member != null) {
+                  flags = member.flags;
+                }
+                c0 = flags;
+                if (flags == null) {
+                  c0 = 0;
+                }
+                obj1 = closure_1_0(6836);
+                obj1 = { flags: null };
+                obj1[0] = closure_1_0(1403).setFlag(c0, closure_1_13.COMPLETED_ONBOARDING, false);
+                dependencyMap = 1;
+                c1 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = obj1.updateGuildSelfMember(closure_1_0, obj1);
+                return obj2;
+              }
+            }
+          } else if (arg0 === 1) {
             c1 = 3;
             throw arg1;
           } else if (arg0 === 2) {
@@ -336,46 +357,17 @@ obj[7] = function resetOnboarding(arg0) {
             obj = { value: null, done: true };
             obj[0] = arg1;
             return obj;
-          } else {
-            const currentUser = outer1_8.getCurrentUser();
-            if (null != currentUser) {
-              const member = outer1_7.getMember(outer1_0, currentUser.id);
-              let flags;
-              if (member != null) {
-                flags = member.flags;
-              }
-              let c0 = flags;
-              if (flags == null) {
-                c0 = 0;
-              }
-              let obj1 = outer1_0(6799);
-              obj1 = { flags: null };
-              obj1[0] = outer1_0(1403).setFlag(c0, outer1_13.COMPLETED_ONBOARDING, false);
-              dependencyMap = 1;
-              c1 = 1;
-              const obj2 = { value: null, done: false };
-              obj2[0] = obj1.updateGuildSelfMember(outer1_0, obj1);
-              return obj2;
-            }
           }
-        } else if (arg0 === 1) {
           c1 = 3;
-          throw arg1;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp13) {
+          c1 = tmp;
+          throw tmp13;
         }
-        c1 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
-      } catch (tmp13) {
-        c1 = tmp;
-        throw tmp13;
       }
-    }
-  })();
+    })();
+  }
 };
-let result = require("initialize").fileFinishedImporting("modules/guild_onboarding/GuildOnboardingActionCreators.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_onboarding/GuildOnboardingActionCreators.tsx");
 
 export default obj;

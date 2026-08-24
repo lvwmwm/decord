@@ -1,11 +1,12 @@
-// Module ID: 15144
-// Function ID: 15145
+// Module ID: 15208
+// Function ID: 15209
 // Name: toggle
-// Dependencies: [4737, 709, 2]
+// Dependencies: [4742, 709, 2]
 // Exports: clearAll, toggle
 
-// Module 15144 (toggle)
-import getUserAgnosticState from "getUserAgnosticState";
+// Module 15208 (toggle)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "getUserAgnosticState" /* 4742 */;
 
 const result = require("set").fileFinishedImporting("modules/devtools/dev_settings/DevSettingsActions.tsx");
 
@@ -14,12 +15,12 @@ export const toggle = function toggle(toggle, flag) {
   if (typeof flag !== "boolean") {
     tmp = !store.get(toggle);
   }
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "DEV_TOOLS_DEV_SETTING_SET", toggle, value: tmp };
   obj.dispatch(obj);
 };
 export const clearAll = function clearAll() {
-  for (const key10005 in getUserAgnosticState.enabled()) {
+  for (const key10005 in closure_2.enabled()) {
     let tmp4 = key10005;
     let flag = false;
     if (typeof false !== "boolean") {
@@ -28,7 +29,7 @@ export const clearAll = function clearAll() {
     }
     let tmp = importDefault;
     let tmp2 = dependencyMap;
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "DEV_TOOLS_DEV_SETTING_SET", toggle: null, value: null };
     obj[1] = key10005;
     obj[2] = flag;

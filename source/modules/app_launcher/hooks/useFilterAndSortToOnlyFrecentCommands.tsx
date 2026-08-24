@@ -1,15 +1,15 @@
-// Module ID: 11326
-// Function ID: 11327
+// Module ID: 11377
+// Function ID: 11378
 // Name: useFilterAndSortToOnlyFrecentCommands
-// Dependencies: [19, 8450, 11204, 8457, 2]
+// Dependencies: [19, 8489, 11255, 8496, 2]
 // Exports: default
 
-// Module 11326 (useFilterAndSortToOnlyFrecentCommands)
-import noop from "noop";
-import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
+// Module 11377 (useFilterAndSortToOnlyFrecentCommands)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "handleUserSettingsProtoStoreChange" /* 8489 */;
 
 const require = arg1;
-const result = require("getCommandContext").fileFinishedImporting("modules/app_launcher/hooks/useFilterAndSortToOnlyFrecentCommands.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/hooks/useFilterAndSortToOnlyFrecentCommands.tsx");
 
 export default function useFilterAndSortToOnlyFrecentCommands(commands) {
   commands = commands.commands;
@@ -33,8 +33,8 @@ export default function useFilterAndSortToOnlyFrecentCommands(commands) {
     const mapped = topCommands.map((arg0) => table[arg0]);
     const found = mapped.filter((arg0) => null != arg0);
     const sorted = found.sort((arg0, arg1) => {
-      const scoreWithoutLoadingLatest = outer1_3.getScoreWithoutLoadingLatest(noop, arg0);
-      return outer1_3.getScoreWithoutLoadingLatest(noop, arg1) - scoreWithoutLoadingLatest;
+      const scoreWithoutLoadingLatest = closure_1_3.getScoreWithoutLoadingLatest(closure_2, arg0);
+      return closure_1_3.getScoreWithoutLoadingLatest(closure_2, arg1) - scoreWithoutLoadingLatest;
     });
     return sorted.slice(0, length);
   }, items1);

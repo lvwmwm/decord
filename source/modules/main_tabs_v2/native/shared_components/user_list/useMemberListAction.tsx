@@ -1,29 +1,28 @@
-// Module ID: 10786
-// Function ID: 10787
+// Module ID: 10825
+// Function ID: 10826
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 1391, 4021, 4030, 1922, 9642, 676, 21, 4661, 1367, 647, 8850, 8633, 4229, 10787, 10788, 1236, 9992, 9991, 4196, 1377, 10790, 10795, 7355, 10796, 1892, 8918, 8086, 6291, 2]
+// Dependencies: [32, 19, 17, 1391, 4024, 4033, 1922, 9681, 676, 21, 4668, 1367, 647, 8887, 8670, 4233, 10826, 10827, 1236, 10031, 10030, 4200, 1377, 10829, 10834, 7393, 10835, 1892, 8955, 8125, 6322, 2]
 // Exports: default
 
-// Module 10786 (useMemberListAction)
-import _slicedToArray from "_slicedToArray";
-import registerAsset from "registerAsset";
-import { View } from "ChatPlusIcon";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { jsx } from "UNSAFE_isDismissibleContentDismissed";
-import createCacheKey from "createCacheKey";
+// Module 10825 (useMemberListAction)
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 8670 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_8 from "markAllUserIdListsStale" /* 4033 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let closure_12;
-let unpackModuleId;
 const require = arg1;
 ({ Permissions: c10, AnalyticsSections: unpackModuleId, InstantInviteSources: closure_12 } = ME);
-let closure_14 = { listActionRenderer: "r", listActionHeight: "accessibilityRole" };
+let closure_14 = { listActionRenderer: "Array", listActionHeight: "ct" };
 let closure_15 = createCacheKey.createStyles({ wrapper: { paddingTop: require("PX_24").USERS_LIST_PADDING_BETWEEN_SECTIONS } });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 
 export default function useMemberListAction(channel) {
   channel = channel.channel;
@@ -31,24 +30,24 @@ export default function useMemberListAction(channel) {
   if (flag === undefined) {
     flag = false;
   }
-  let importDefault;
-  let dependencyMap;
+  importDefault = undefined;
+  dependencyMap = undefined;
   let stateFromStores;
   let React;
-  let c5;
+  c5 = undefined;
   let flag2;
   let flag3;
   let id;
-  let c9;
+  closure_9 = undefined;
   let first;
-  let closure_11;
+  closure_11 = undefined;
   let callback;
   let callback1;
   let tmp = callback();
   importDefault = tmp;
-  const tmp4 = importDefault(1367)("useMemberListAction");
+  const tmp4 = useIsMobileVisualRefreshExperimentEnabledDefault("useMemberListAction");
   dependencyMap = tmp4;
-  const items = [c9];
+  const items = [closure_9];
   stateFromStores = channel(647).useStateFromStores(items, () => {
     let isDMResult;
     if (channel != null) {
@@ -56,7 +55,7 @@ export default function useMemberListAction(channel) {
     }
     let tmp2 = null;
     if (isDMResult) {
-      const user = _undefined3.getUser(obj.getRecipientId());
+      user = user.getUser(obj.getRecipientId());
       let username;
       if (user != null) {
         username = user.username;
@@ -67,8 +66,8 @@ export default function useMemberListAction(channel) {
   });
   let canResult = flag3.can(first.MANAGE_ROLES, channel);
   if (canResult) {
-    canResult = channel(8850).isPrivateGuildChannel(channel);
-    const tmp5Result = channel(8850);
+    canResult = channel(8887).isPrivateGuildChannel(channel);
+    const tmp5Result = channel(8887);
   }
   React = canResult;
   let tmp9 = null != channel && !flag;
@@ -100,14 +99,14 @@ export default function useMemberListAction(channel) {
   if (channel != null) {
     id = channel.id;
   }
-  const tmp15 = importDefault(8633)();
-  c9 = tmp15;
+  const tmp15 = useScaledRowHeightDefault();
+  closure_9 = tmp15;
   const tmp16 = stateFromStores(React.useState(undefined), 2);
   first = tmp16[0];
   closure_11 = tmp16[1];
   callback = React.useCallback((nativeEvent) => {
     const height = nativeEvent.nativeEvent.layout.height;
-    lib((arg0) => {
+    lib2((arg0) => {
       let tmp = arg0;
       if (arg0 == null) {
         tmp = height;
@@ -118,31 +117,26 @@ export default function useMemberListAction(channel) {
   const items1 = [id];
   callback1 = React.useCallback(() => {
     if (null != id) {
-      channel(_undefined2[15]).navigateToNewGroupDM(tmp, lib.MEMBER_LIST);
-      const obj = channel(_undefined2[15]);
+      channel(4233).navigateToNewGroupDM(tmp, lib2.MEMBER_LIST);
+      const obj = channel(4233);
     }
   }, items1);
   const items2 = [canResult, id, callback1, flag2, flag3, tmp4, first, callback, stateFromStores, tmp15, tmp9, tmp];
   return React.useMemo(() => {
-    let IconComponent;
-    let handlePress;
-    let iconSource;
-    let label;
-    let sublabel;
     if (null != id) {
       if (c5) {
         if (flag2) {
           let obj = { iconSource: null, IconComponent: null, label: null, sublabel: null, handlePress: null };
-          obj[0] = _undefined(_undefined2[16]);
-          obj[1] = channel(_undefined2[17]).ChatPlusIcon;
-          const intl4 = channel(_undefined2[18]).intl;
-          obj[2] = intl4.string(channel(_undefined2[18]).t["3hF1W4"]);
+          obj[0] = lib(10826);
+          obj[1] = channel(10827).ChatPlusIcon;
+          const intl4 = channel(1236).intl;
+          obj[2] = intl4.string(channel(1236).t["3hF1W4"]);
           let formatToPlainStringResult;
           if (null != stateFromStores) {
-            const intl5 = channel(_undefined2[18]).intl;
+            const intl5 = channel(1236).intl;
             obj = { recipient: null };
             obj[0] = tmp35;
-            formatToPlainStringResult = intl5.formatToPlainString(channel(_undefined2[18]).t["Sh/xNN"], obj);
+            formatToPlainStringResult = intl5.formatToPlainString(channel(1236).t["Sh/xNN"], obj);
           }
           obj[3] = formatToPlainStringResult;
           obj[4] = callback1;
@@ -150,91 +144,91 @@ export default function useMemberListAction(channel) {
         } else {
           obj = { iconSource: null, IconComponent: null, label: null, handlePress: null };
           if (flag3) {
-            obj[0] = _undefined(_undefined2[19]);
-            obj[1] = channel(_undefined2[20]).GroupPlusIcon;
-            const intl3 = channel(_undefined2[18]).intl;
-            obj[2] = intl3.string(channel(_undefined2[18]).t["LR+Ptf"]);
+            obj[0] = lib(10031);
+            obj[1] = channel(10030).GroupPlusIcon;
+            const intl3 = channel(1236).intl;
+            obj[2] = intl3.string(channel(1236).t["LR+Ptf"]);
             obj[3] = function handlePress() {
-              if (null != outer1_6.getChannel(markAllUserIdListsStale)) {
-                let obj = callback(outer1_2[21]);
-                if (obj.UNSAFE_isDismissibleContentDismissed(callback(outer1_2[22]).DismissibleContent.GDM_INVITE_REMINDER)) {
+              if (null != closure_1_6.getChannel(closure_8)) {
+                let obj = callback(closure_1_2[21]);
+                if (obj.UNSAFE_isDismissibleContentDismissed(callback(closure_1_2[22]).DismissibleContent.GDM_INVITE_REMINDER)) {
                   callback3();
                 } else {
                   obj = { onClick: null };
                   obj[0] = callback3;
                   callback2(tmp2[23])(obj);
                 }
-                tmp2 = outer1_2;
+                tmp2 = closure_1_2;
               }
             };
             tmp12 = obj;
           } else if (c4) {
-            obj[0] = tmp4(tmp5[24]);
-            obj[1] = channel(_undefined2[25]).SettingsIcon;
-            const intl2 = channel(_undefined2[18]).intl;
-            obj[2] = intl2.string(channel(_undefined2[18]).t.z9Mqln);
+            obj[0] = tmp4(10834);
+            obj[1] = channel(7393).SettingsIcon;
+            const intl2 = channel(1236).intl;
+            obj[2] = intl2.string(channel(1236).t.z9Mqln);
             obj[3] = function handlePress() {
-              const channel = outer1_6.getChannel(markAllUserIdListsStale);
+              channel = closure_1_6.getChannel(closure_8);
               if (null != channel) {
-                const result = callback(outer1_2[26]).openChannelMembersActionSheet(channel.id, channel.guild_id);
-                const obj = callback(outer1_2[26]);
+                const result = callback(closure_1_2[26]).openChannelMembersActionSheet(channel.id, channel.guild_id);
+                const obj = callback(closure_1_2[26]);
               }
             };
             tmp12 = obj;
           } else {
-            obj[0] = tmp4(tmp5[19]);
-            obj[1] = channel(_undefined2[20]).GroupPlusIcon;
-            const intl = channel(_undefined2[18]).intl;
-            obj[2] = intl.string(channel(_undefined2[18]).t["Ab/6S0"]);
+            obj[0] = tmp4(10031);
+            obj[1] = channel(10030).GroupPlusIcon;
+            const intl = channel(1236).intl;
+            obj[2] = intl.string(channel(1236).t["Ab/6S0"]);
             obj[3] = function handlePress() {
-              const channel = outer1_6.getChannel(markAllUserIdListsStale);
+              channel = closure_1_6.getChannel(closure_8);
               if (null != channel) {
-                let obj = callback(outer1_2[27]);
+                let obj = callback(closure_1_2[27]);
                 const result = obj.dismissGlobalKeyboard();
                 obj = { source: null };
-                obj[0] = outer1_12.CHAT_SIDEBAR;
-                const result1 = callback(outer1_2[28]).showInstantInviteActionSheet(channel, obj);
-                const obj2 = callback(outer1_2[28]);
+                obj[0] = closure_1_12.CHAT_SIDEBAR;
+                const result1 = callback(closure_1_2[28]).showInstantInviteActionSheet(channel, obj);
+                const obj2 = callback(closure_1_2[28]);
               }
             };
             tmp12 = obj;
           }
         }
         ({ label, iconSource, IconComponent, handlePress, sublabel } = tmp12);
-        const obj1 = { style: null, onLayout: null, children: null };
-        obj1[0] = _undefined.wrapper;
+        obj1 = { style: null, onLayout: null, children: null };
+        obj1[0] = lib.wrapper;
         obj1[1] = callback;
-        if (_undefined2) {
+        if (dependencyMap) {
           let obj2 = { icon: null, onPress: null, label: null, subLabel: null, arrow: true };
           const obj3 = { source: null, IconComponent: null };
           obj3[0] = iconSource;
           obj3[1] = IconComponent;
-          obj2[0] = tmp42(channel(_undefined2[29]).RowButton.Icon, obj3);
+          obj2[0] = tmp42(channel(8125).RowButton.Icon, obj3);
           obj2[1] = handlePress;
           obj2[2] = label;
           obj2[3] = sublabel;
-          let tmp42Result = tmp42(tmp47(tmp48[29]).RowButton, obj2);
+          let tmp42Result = tmp42(tmp47(8125).RowButton, obj2);
         } else {
           const obj4 = { icon: null, onPress: null, label: null, subLabel: null, start: true, end: true, arrow: true };
           const obj5 = { source: null, IconComponent: null };
           obj5[0] = iconSource;
           obj5[1] = IconComponent;
-          obj4[0] = tmp42(channel(_undefined2[29]).RowButton.Icon, obj5);
+          obj4[0] = tmp42(channel(8125).RowButton.Icon, obj5);
           obj4[1] = handlePress;
           obj4[2] = label;
           obj4[3] = sublabel;
-          tmp42Result = tmp42(tmp47(tmp48[30]).TableRow, obj4);
+          tmp42Result = tmp42(tmp47(6322).TableRow, obj4);
         }
         obj1[2] = tmp42Result;
-        let closure_0 = tmp42(c5, obj1);
-        _undefined = c9 + _undefined.wrapper.paddingTop;
+        closure_0 = tmp42(c5, obj1);
+        lib = closure_9 + lib.wrapper.paddingTop;
         const obj6 = { listActionRenderer: null, listActionHeight: null };
         obj6[0] = function listActionRenderer() {
           return closure_0;
         };
         obj6[1] = function listActionHeight() {
-          let tmp = outer1_10;
-          if (outer1_10 == null) {
+          let tmp = closure_1_10;
+          if (closure_1_10 == null) {
             tmp = closure_1;
           }
           return tmp;
@@ -242,6 +236,6 @@ export default function useMemberListAction(channel) {
         return obj6;
       }
     }
-    return outer1_14;
+    return closure_1_14;
   }, items2);
 };

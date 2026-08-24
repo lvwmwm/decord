@@ -4,19 +4,23 @@
 // Dependencies: [541, 542, 564, 562]
 
 // Module 1425 (defineDataProperty)
+import _mod541 from "module_541" /* 541 */;
+import _mod542 from "module_542" /* 542 */;
+import flag from "flag" /* 564 */;
+
 
 export default function defineDataProperty(obj, str) {
   if (obj) {
     if (typeof str !== "string") {
       if (typeof str !== "symbol") {
-        const tmp44 = new require(541)("`property` must be a string or a symbol`");
+        const tmp44 = new _mod541("`property` must be a string or a symbol`");
         throw tmp44;
       }
     }
     if (arguments.length > 3) {
       if (typeof arguments[3] !== "boolean") {
         if (null !== arguments[3]) {
-          const tmp38 = new require(541)("`nonEnumerable`, if provided, must be a boolean or null");
+          const tmp38 = new _mod541("`nonEnumerable`, if provided, must be a boolean or null");
           throw tmp38;
         }
       }
@@ -24,7 +28,7 @@ export default function defineDataProperty(obj, str) {
     if (arguments.length > 4) {
       if (typeof arguments[4] !== "boolean") {
         if (null !== arguments[4]) {
-          const tmp32 = new require(541)("`nonWritable`, if provided, must be a boolean or null");
+          const tmp32 = new _mod541("`nonWritable`, if provided, must be a boolean or null");
           throw tmp32;
         }
       }
@@ -32,14 +36,14 @@ export default function defineDataProperty(obj, str) {
     if (arguments.length > 5) {
       if (typeof arguments[5] !== "boolean") {
         if (null !== arguments[5]) {
-          const tmp26 = new require(541)("`nonConfigurable`, if provided, must be a boolean or null");
+          const tmp26 = new _mod541("`nonConfigurable`, if provided, must be a boolean or null");
           throw tmp26;
         }
       }
     }
     if (arguments.length > 6) {
       if (typeof arguments[6] !== "boolean") {
-        const tmp20 = new require(541)("`loose`, if provided, must be a boolean");
+        const tmp20 = new _mod541("`loose`, if provided, must be a boolean");
         throw tmp20;
       }
     }
@@ -55,8 +59,8 @@ export default function defineDataProperty(obj, str) {
     if (arguments.length > 5) {
       tmp5 = arguments[5];
     }
-    const tmp9 = require(542) && require(542)(obj, str);
-    if (require(564) /* flag */) {
+    const tmp9 = _mod542 && _mod542(obj, str);
+    if (flag) {
       if (null === tmp5) {
         if (tmp9) {
           let configurable = tmp9.configurable;
@@ -87,5 +91,5 @@ export default function defineDataProperty(obj, str) {
     }
     tmp6 = arguments.length > 6 && arguments[6];
   }
-  throw new require(541)("`obj` must be an object or a function`");
+  throw new _mod541("`obj` must be an object or a function`");
 };

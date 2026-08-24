@@ -1,16 +1,19 @@
-// Module ID: 4504
-// Function ID: 4505
+// Module ID: 4508
+// Function ID: 4509
 // Name: initialize
-// Dependencies: [4505, 4509, 4512, 4522, 589, 709, 2]
+// Dependencies: [4509, 4514, 4517, 4527, 589, 709, 2]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
-// Module 4504 (initialize)
-import handleLoadMessages from "handleLoadMessages";
-import gameFromServer from "gameFromServer";
-import setLibraryApplications from "setLibraryApplications";
-import { Store } from "initialize";
+// Module 4508 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import DevToolsFocusedPidsTrackMode from "DevToolsFocusedPidsTrackMode" /* 4527 */;
+import closure_2 from "handleLoadMessages" /* 4509 */;
+import closure_3 from "gameFromServer" /* 4514 */;
+import closure_4 from "setLibraryApplications" /* 4517 */;
 
-const require = arg1;
+require = arg1;
+const Store = initializeDefault.Store;
 class RunningGameStore extends Store {
 }
 const prototype = RunningGameStore.prototype;
@@ -123,8 +126,8 @@ prototype["isSystemServiceInitialized"] = function isSystemServiceInitialized() 
   return false;
 };
 RunningGameStore.displayName = "RunningGameStore";
-const runningGameStore = new RunningGameStore(require("dispatcher"), {});
-const result = require("setLibraryApplications").fileFinishedImporting("modules/game_detection/RunningGameStore.native.tsx");
+const runningGameStore = new RunningGameStore(dispatcherDefault, {});
+const result = require("set").fileFinishedImporting("modules/game_detection/RunningGameStore.native.tsx");
 
 export default runningGameStore;
 export function gameKey() {
@@ -132,9 +135,9 @@ export function gameKey() {
 }
 export const getRawOverlayGameStatus = function getRawOverlayGameStatus() {
   if (arg1 === undefined) {
-    const items = [gameFromServer, setLibraryApplications, handleLoadMessages];
+    const items = [closure_3, closure_4, closure_2];
   }
-  return { source: require(4522) /* DevToolsFocusedPidsTrackMode */.OverlayGameStatusSource.UNKNOWN, enabledOOP: false, enabledLegacy: false, overlayMethod: require(4522) /* DevToolsFocusedPidsTrackMode */.OverlayMethod.Disabled, reason: "Dummy implementation" };
+  return { source: DevToolsFocusedPidsTrackMode.OverlayGameStatusSource.UNKNOWN, enabledOOP: false, enabledLegacy: false, overlayMethod: DevToolsFocusedPidsTrackMode.OverlayMethod.Disabled, reason: "Dummy implementation" };
 };
 export function isDetectionEnabled() {
   return false;

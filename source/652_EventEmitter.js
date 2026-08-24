@@ -76,7 +76,7 @@ function _addListener(_events, type, fn, arg3) {
             const _Error = Error;
             const _String = String;
             const text = `Possible EventEmitter memory leak detected. ${arr2.length}`;
-            const error = new Error(`Possible EventEmitter memory leak detected. ${arr2.length}` + " " + String(type) + " listeners added. Use emitter.setMaxListeners() to increase limit");
+            error = new Error(`Possible EventEmitter memory leak detected. ${arr2.length}` + " " + String(type) + " listeners added. Use emitter.setMaxListeners() to increase limit");
             error.name = "MaxListenersExceededWarning";
             error.emitter = _events;
             error.type = type;
@@ -364,7 +364,7 @@ if (null) {
         } else {
           self = this;
           tmp6 = global;
-          obj = { fired: false, wrapFn: "a", target: "M56.1027 131.209H25.3914C24.4127 131.209 23.6196 132.011 23.6196 133C23.6196 133.989 24.4127 134.791 25.3914 134.791H56.1027C57.0811 134.791 57.8745 133.989 57.8745 133C57.8745 132.011 57.0811 131.209 56.1027 131.209Z", type: "white", listener: 1862271830 };
+          obj = { fired: false, wrapFn: "a", target: "comunicaci\u00F3n", type: "cuaderno de notas", listener: "cartera" };
           obj[2] = this;
           obj[3] = global;
           obj[4] = require;
@@ -389,7 +389,7 @@ if (null) {
         } else {
           self = this;
           tmp6 = global;
-          obj = { fired: false, wrapFn: "a", target: "M56.1027 131.209H25.3914C24.4127 131.209 23.6196 132.011 23.6196 133C23.6196 133.989 24.4127 134.791 25.3914 134.791H56.1027C57.0811 134.791 57.8745 133.989 57.8745 133C57.8745 132.011 57.0811 131.209 56.1027 131.209Z", type: "white", listener: 1862271830 };
+          obj = { fired: false, wrapFn: "a", target: "comunicaci\u00F3n", type: "cuaderno de notas", listener: "cartera" };
           obj[2] = this;
           obj[3] = global;
           obj[4] = require;
@@ -608,15 +608,18 @@ if (null) {
         return items;
       }
     }
-    let c0 = tmp2;
+    const ownKeys = tmp2;
     const _Number = Number;
+    let closure_2 = Number.isNaN || (function NumberIsNaN(arg0) {
+      return arg0 != arg0;
+    });
     module.exports = EventEmitter;
     module.exports.once = function once(arg0, arg1) {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
+      closure_0 = arg0;
+      closure_1 = arg1;
       return new Promise((arg0, arg1) => {
         let obj = arg0;
-        let error = arg1;
+        error = arg1;
         function errorListener(arg0) {
           obj.removeListener(error, obj);
           error(arg0);
@@ -704,8 +707,8 @@ if (null) {
     obj[2] = function set(num) {
       if (typeof num === "number") {
         if (num >= 0) {
-          if (!tmp3(num)) {
-            let closure_4 = num;
+          if (!callback(num)) {
+            closure_4 = num;
           }
         }
       }

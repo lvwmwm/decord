@@ -4,12 +4,15 @@
 // Dependencies: [1318, 1328]
 
 // Module 1330 (reflectionCreate)
-const require = arg1;
+import _mod1318 from "module_1318" /* 1318 */;
+import reflectionScalarDefault from "reflectionScalarDefault" /* 1328 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.reflectionCreate = function reflectionCreate(value) {
   let obj = {};
   obj = { enumerable: false, value };
-  Object.defineProperty(obj, require(1318).MESSAGE_TYPE, obj);
+  Object.defineProperty(obj, _mod1318.MESSAGE_TYPE, obj);
   const iter = value.fields[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
@@ -30,7 +33,7 @@ arg5.reflectionCreate = function reflectionCreate(value) {
           let tmp9 = localName;
           let tmp10 = require;
           let tmp11 = dependencyMap;
-          let obj3 = require(1328) /* reflectionScalarDefault */;
+          let obj3 = reflectionScalarDefault;
           let tmp12 = nextResult;
           obj[localName] = obj3.reflectionScalarDefault(tmp3.T, tmp3.L);
         } else if ("enum" === kind) {

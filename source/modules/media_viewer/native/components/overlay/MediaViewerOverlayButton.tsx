@@ -1,16 +1,17 @@
-// Module ID: 9075
-// Function ID: 9076
-// Dependencies: [19, 21, 8035, 2]
+// Module ID: 9112
+// Function ID: 9113
+// Dependencies: [19, 21, 8074, 2]
 
-// Module 9075
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 9112
+import IconButton from "IconButton" /* 8074 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
+require = arg1;
+const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(require(8035) /* IconButton */.IconButton, { ref, size: "md", variant: "secondary-overlay" });
+  return jsx(IconButton.IconButton, { ref, size: "md", variant: "secondary-overlay" });
 });
-const result = require("IconButton").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaViewerOverlayButton.tsx");
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaViewerOverlayButton.tsx");
 
 export default forwardRefResult;

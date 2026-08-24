@@ -1,25 +1,25 @@
-// Module ID: 11333
-// Function ID: 11334
+// Module ID: 11384
+// Function ID: 11385
 // Name: validateOptionContent
-// Dependencies: [5246, 5248, 10256, 1236, 11334, 2]
+// Dependencies: [5251, 5253, 10295, 1236, 11385, 2]
 // Exports: getValidationResults
 
-// Module 11333 (validateOptionContent)
-import { getValidationErrorText } from "TRUE_OPTION_NAME";
+// Module 11384 (validateOptionContent)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 5251 */;
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 5253 */;
+import getString from "getString" /* 10295 */;
+import validateNumericOptionRangeDefault from "validateNumericOptionRange" /* 11385 */;
 
 function validateOptionContent(allowEmptyValues) {
-  let channelId;
-  let commandOrigin;
-  let content;
-  let guildId;
-  let option;
   ({ option, content, guildId, channelId, commandOrigin } = allowEmptyValues);
   if (commandOrigin === undefined) {
-    commandOrigin = require(5248) /* ApplicationCommandSectionType */.CommandOrigin.CHAT;
+    commandOrigin = ApplicationCommandSectionType.CommandOrigin.CHAT;
   }
   let str = "";
   if (null != content) {
-    let obj = require(10256) /* getString */;
+    let obj = getString;
     obj = { content: null };
     obj[0] = content;
     str = obj.getString(obj, "content").trim();
@@ -29,9 +29,9 @@ function validateOptionContent(allowEmptyValues) {
   if (null == content) {
     if (required) {
       obj = { success: false, error: null };
-      const intl2 = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.JZJQL2);
-      let obj1 = obj;
+      const intl2 = getSystemLocale.intl;
+      obj[1] = intl2.string(getSystemLocale.t.JZJQL2);
+      obj1 = obj;
     } else {
       obj1 = { success: true };
     }
@@ -42,8 +42,8 @@ function validateOptionContent(allowEmptyValues) {
     } else {
       const obj3 = { success: false, error: null };
       if (required) {
-        const intl = require(1236) /* getSystemLocale */.intl;
-        obj3[1] = intl.string(require(1236) /* getSystemLocale */.t.JZJQL2);
+        const intl = getSystemLocale.intl;
+        obj3[1] = intl.string(getSystemLocale.t.JZJQL2);
         obj2 = obj3;
       } else {
         obj3[1] = getValidationErrorText(option);
@@ -59,7 +59,7 @@ function validateOptionContent(allowEmptyValues) {
     } else {
       first = content[0];
     }
-    const tmp8 = importDefault(11334);
+    const tmp8 = validateNumericOptionRangeDefault;
     const tmp15 = tmp8[option.type](first, option, channelId, guildId, commandOrigin);
     if (!tmp16) {
       tmp15.error = getValidationErrorText(option);
@@ -67,7 +67,8 @@ function validateOptionContent(allowEmptyValues) {
     return tmp15;
   }
 }
-const result = require("getString").fileFinishedImporting("modules/application_commands/ApplicationCommandValidationUtils.tsx");
+const getValidationErrorText = TRUE_OPTION_NAME.getValidationErrorText;
+const result = set.fileFinishedImporting("modules/application_commands/ApplicationCommandValidationUtils.tsx");
 
 export const getValidationResults = function getValidationResults(activeCommand, optionValues, guild_id, id, arg4) {
   let obj = {};

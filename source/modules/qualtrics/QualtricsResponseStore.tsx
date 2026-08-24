@@ -1,21 +1,22 @@
-// Module ID: 9876
-// Function ID: 9877
+// Module ID: 9915
+// Function ID: 9916
 // Name: useQualtricsResponseStore
 // Dependencies: [644, 2]
 
-// Module 9876 (useQualtricsResponseStore)
-import keys from "keys";
+// Module 9915 (useQualtricsResponseStore)
+import set2 from "set" /* 2 */;
+import keys from "keys" /* 644 */;
 
 let obj = keys.create((arg0, arg1) => {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   return {
     responses: {},
     displayedQuestions: {},
     setResponse(arg0, arg1, arg2) {
       const callback = arg0;
-      let closure_1 = arg1;
-      let closure_2 = arg2;
+      closure_1 = arg1;
+      closure_2 = arg2;
       callback((responses) => {
         let obj = { responses: null };
         obj = {};
@@ -49,7 +50,7 @@ let obj = keys.create((arg0, arg1) => {
     },
     trackDisplayedQuestions(arg0, arg1) {
       const callback = arg0;
-      let closure_1 = arg1;
+      closure_1 = arg1;
       callback((displayedQuestions) => {
         let set = displayedQuestions.displayedQuestions[set1];
         if (set == null) {
@@ -78,6 +79,6 @@ let obj = keys.create((arg0, arg1) => {
     }
   };
 });
-const result = require("set").fileFinishedImporting("modules/qualtrics/QualtricsResponseStore.tsx");
+const result = set2.fileFinishedImporting("modules/qualtrics/QualtricsResponseStore.tsx");
 
 export const useQualtricsResponseStore = obj;

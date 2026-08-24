@@ -5,8 +5,10 @@
 // Exports: add, clear, last, serialize
 
 // Module 594 (add)
+import set from "set" /* 2 */;
+
 let closure_0 = [];
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/flux/LastFewActions.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/flux/LastFewActions.tsx");
 
 export const add = function add(arg0) {
   let length;
@@ -21,7 +23,7 @@ export const add = function add(arg0) {
   }
 };
 export function clear() {
-  let closure_0 = [];
+  closure_0 = [];
   return closure_0;
 }
 export const serialize = function serialize() {

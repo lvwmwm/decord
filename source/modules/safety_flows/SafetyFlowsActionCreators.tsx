@@ -1,31 +1,31 @@
-// Module ID: 17086
-// Function ID: 17087
+// Module ID: 17179
+// Function ID: 17180
 // Name: _getCurrentTask
-// Dependencies: [5, 676, 5227, 503, 4274, 2]
+// Dependencies: [5, 676, 5232, 503, 4278, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 17086 (_getCurrentTask)
-import set from "set";
-import { Endpoints } from "ME";
+// Module 17179 (_getCurrentTask)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _getCurrentTask() {
   const self = this;
   const tmp = callback(function*() {
-    let closure_0 = tmp4;
-    const obj1 = { url: null, trackedActionData: null, rejectWithError: true };
-    obj1[0] = outer1_4.SAFETY_FLOWS_TASK;
+    closure_0 = tmp4;
+    obj1 = { url: null, trackedActionData: null, rejectWithError: true };
+    obj1[0] = closure_1_4.SAFETY_FLOWS_TASK;
     const obj2 = { event: null };
-    obj2[0] = outer1_0(503).NetworkActionNames.USER_VERIFY;
+    obj2[0] = closure_1_0(503).NetworkActionNames.USER_VERIFY;
     obj1[1] = obj2;
-    closure_0 = yield v0(5227).get(obj1);
+    closure_0 = yield v0(5232).get(obj1);
     let body = null;
     if (204 !== closure_0.status) {
       body = closure_0.body;
     }
     return body;
   });
-  const _getCurrentTask = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -37,21 +37,21 @@ function _getCurrentTask() {
 function _completeTask() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0, body) {
-      const obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: true };
-      obj1[0] = outer1_4.SAFETY_FLOWS_TASK;
+      obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: true };
+      obj1[0] = closure_1_4.SAFETY_FLOWS_TASK;
       obj1[1] = callback;
       const obj2 = { event: null };
       obj2[0] = callback(503).NetworkActionNames.USER_VERIFY;
       obj1[2] = obj2;
-      yield v0(5227).post(obj1);
+      yield v0(5232).post(obj1);
       return body.body;
     })();
   });
-  const _completeTask = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -63,10 +63,10 @@ function _completeTask() {
 function _resendVerificationCode() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c6 === 2) {
         c6 = 3;
@@ -79,7 +79,7 @@ function _resendVerificationCode() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -97,14 +97,14 @@ function _resendVerificationCode() {
               const table = tmp3;
               const callback2 = tmp7;
               let constants = 1;
-              let obj5 = outer1_1(outer1_2[2]);
-              const obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: true };
+              let obj5 = closure_1_1(closure_1_2[2]);
+              obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: true };
               obj1[0] = constants.SAFETY_FLOWS_RESEND_VERIFICATION_CODE;
               const obj2 = { flow_id: null };
               obj2[0] = callback;
               obj1[1] = obj2;
               const obj3 = { event: null };
-              obj3[0] = callback(outer1_2[3]).NetworkActionNames.USER_VERIFY;
+              obj3[0] = callback(closure_1_2[3]).NetworkActionNames.USER_VERIFY;
               obj1[2] = obj3;
               c5 = 2;
               c6 = 1;
@@ -114,7 +114,7 @@ function _resendVerificationCode() {
             }
           } else if (1 === tmp7) {
             constants = 0;
-            callback = set;
+            callback = closure_3;
             const tmp17 = new callback2(table[4])(callback);
             throw tmp17;
           } else if (arg0 === 1) {
@@ -134,7 +134,7 @@ function _resendVerificationCode() {
             return obj;
           }
         } catch (tmp19) {
-          set = tmp19;
+          closure_3 = tmp19;
           if (tmp4 === constants) {
             c6 = tmp2;
             throw tmp19;
@@ -145,7 +145,7 @@ function _resendVerificationCode() {
       }
     })();
   });
-  const _resendVerificationCode = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -154,7 +154,7 @@ function _resendVerificationCode() {
   }
   return applyArgumentsResult;
 }
-const result = require("module_5227").fileFinishedImporting("modules/safety_flows/SafetyFlowsActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/safety_flows/SafetyFlowsActionCreators.tsx");
 
 export const getCurrentTask = function getCurrentTask() {
   const self = this;
@@ -176,7 +176,7 @@ export const completeTask = function completeTask(arg0) {
   }
   return applyArgumentsResult;
 };
-export const resendVerificationCode = function resendVerificationCode(outer1_0) {
+export const resendVerificationCode = function resendVerificationCode(closure_1_0) {
   const self = this;
   const apply = _resendVerificationCode.apply;
   if (typeof apply === "unknown") {

@@ -1,39 +1,25 @@
-// Module ID: 11849
-// Function ID: 11850
+// Module ID: 11898
+// Function ID: 11899
 // Name: handleNameInputScreenOrSuggestions
-// Dependencies: [5, 5221, 1922, 11850, 11852, 11851, 676, 4839, 11853, 11855, 698, 11857, 1236, 4656, 4094, 8764, 8629, 4273, 5260, 11858, 2007, 8918, 691, 11877, 2]
+// Dependencies: [5, 5226, 1922, 11899, 11901, 11900, 676, 4844, 11902, 11904, 698, 11906, 1236, 4662, 4097, 8801, 8666, 4277, 5265, 11907, 2008, 8955, 691, 11926, 2]
 // Exports: bulkAddFriendSuggestions, goBackToLanding, handlePhoneVerificationComplete, openContactSyncModal, openContactSyncModalDeeplink, openContactSyncModalOnboarding, refreshContactSyncPermissionStatus, startContactSync, submitPhone, upsellDismissed, verifyPhone, verifyPhoneWithPassword
 
-// Module 11849 (handleNameInputScreenOrSuggestions)
-import closure_3 from "ContactSyncLandingPage";
-import set from "set";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ContactSyncModes from "ContactSyncModes";
-import setStoredContacts from "setStoredContacts";
-import ContactSyncLandingPage from "ContactSyncLandingPage";
-import ME from "ME";
-import NativePermissionStatus from "NativePermissionStatus";
+// Module 11898 (handleNameInputScreenOrSuggestions)
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import showInstantInviteActionSheet from "showInstantInviteActionSheet" /* 8955 */;
+import _uploadContacts from "_uploadContacts" /* 11902 */;
+import Steps from "Steps" /* 11904 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "set" /* 5226 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import ContactSyncModes from "ContactSyncModes" /* 11899 */;
+import setStoredContacts from "setStoredContacts" /* 11901 */;
+import ContactSyncLandingPage from "ContactSyncLandingPage" /* 11900 */;
+import ME from "ME" /* 676 */;
+import NativePermissionStatus from "NativePermissionStatus" /* 4844 */;
 
-let c10;
-let c9;
-let closure_12;
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_18;
-let closure_19;
-let closure_20;
-let closure_21;
-let closure_22;
-let closure_23;
-let closure_24;
-let closure_6;
-let error;
-let map1;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function handleNameInputScreenOrSuggestions() {
   const self = this;
   const apply = _handleNameInputScreenOrSuggestions.apply;
@@ -47,11 +33,11 @@ function handleNameInputScreenOrSuggestions() {
 function _handleNameInputScreenOrSuggestions() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, arg1) {
       if (v02 === 2) {
         v02 = 3;
@@ -64,7 +50,7 @@ function _handleNameInputScreenOrSuggestions() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -79,32 +65,32 @@ function _handleNameInputScreenOrSuggestions() {
               obj[0] = arg1;
               return obj;
             } else {
-              let set = tmp3;
+              closure_4 = tmp3;
               let name = tmp5;
               trackResult1 = callback;
               trackResult1 = navigation;
-              let dependencyMap;
+              dependencyMap = undefined;
               name = undefined;
-              set = undefined;
-              let mergeGuildAvatar;
+              closure_4 = undefined;
+              closure_5 = undefined;
               let v0;
               trackResult1 = undefined;
               v02 = undefined;
               let length;
               let SUGGESTIONS;
               let SUGGESTIONS_RESULTS;
-              let closure_12;
-              trackResult1 = outer1_4;
-              trackResult1 = outer1_22;
-              dependencyMap = outer1_4.getLocalAccount(outer1_22.CONTACTS);
-              trackResult1 = outer1_12;
-              name = outer1_12.getState().name;
+              closure_12 = undefined;
+              trackResult1 = closure_1_4;
+              trackResult1 = closure_1_22;
+              dependencyMap = closure_1_4.getLocalAccount(closure_1_22.CONTACTS);
+              trackResult1 = closure_1_12;
+              name = closure_1_12.getState().name;
               trackResult1 = callback;
-              trackResult1 = outer1_2;
+              trackResult1 = closure_1_2;
               trackResult1 = 1;
               v02 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = callback(outer1_2[8]).checkContactPermissions();
+              obj1 = { value: null, done: false };
+              obj1[0] = callback(closure_1_2[8]).checkContactPermissions();
               return obj1;
             }
           } else if (1 === tmp8) {
@@ -118,35 +104,35 @@ function _handleNameInputScreenOrSuggestions() {
               return obj2;
             } else {
               trackResult1 = name;
-              trackResult1 = set;
-              set = arg1;
-              trackResult1 = set;
-              trackResult1 = trackResult1(set);
-              trackResult1 = set;
+              trackResult1 = closure_4;
+              closure_4 = arg1;
+              trackResult1 = closure_4;
+              trackResult1 = trackResult1(closure_4);
+              trackResult1 = closure_4;
               trackResult1 = constants;
-              if (set === constants.NOT_DETERMINED) {
-                callback(11855).trackFlowStep(callback(11855).Steps.PERMISSION_REQUESTED, false, false);
-                const obj16 = callback(11855);
+              if (closure_4 === constants.NOT_DETERMINED) {
+                callback(11904).trackFlowStep(callback(11904).Steps.PERMISSION_REQUESTED, false, false);
+                const obj16 = callback(11904);
               }
               v0 = 1;
               trackResult1 = 3;
               v02 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback(11853).getContacts(callback);
+              obj3[0] = callback(11902).getContacts(callback);
               return obj3;
             }
           } else {
             if (2 === tmp8) {
               v0 = 0;
-              let closure_13 = mergeGuildAvatar;
+              closure_13 = closure_5;
               let obj12 = navigation(698);
               const obj4 = { type: null, action: null };
               obj4[0] = constants5.CONTACTS;
               obj4[1] = constants4.DENIED;
               obj12.track(constants3.PERMISSIONS_ACKED, obj4);
-              if (closure_13 === callback(11853).ContactSyncPermissionDenied) {
-                const obj15 = callback(11855);
-                obj15.trackFlowStep(callback(11855).Steps.LANDING, true, false, { mobile_contacts_permission: "denied" });
+              if (closure_13 === callback(11902).ContactSyncPermissionDenied) {
+                const obj15 = callback(11904);
+                obj15.trackFlowStep(callback(11904).Steps.LANDING, true, false, { mobile_contacts_permission: "denied" });
                 trackResult1(constants.UNAUTHORIZED);
               } else {
                 const intl = callback(1236).intl;
@@ -167,14 +153,14 @@ function _handleNameInputScreenOrSuggestions() {
                   return obj5;
                 } else {
                   trackResult1 = name;
-                  trackResult1 = set;
-                  mergeGuildAvatar = arg1;
-                  trackResult1 = mergeGuildAvatar;
-                  v0 = mergeGuildAvatar.names;
-                  trackResult1 = mergeGuildAvatar;
-                  trackResult1 = mergeGuildAvatar.ownName;
-                  trackResult1 = mergeGuildAvatar;
-                  v02 = mergeGuildAvatar.payload;
+                  trackResult1 = closure_4;
+                  closure_5 = arg1;
+                  trackResult1 = closure_5;
+                  v0 = closure_5.names;
+                  trackResult1 = closure_5;
+                  trackResult1 = closure_5.ownName;
+                  trackResult1 = closure_5;
+                  v02 = closure_5.payload;
                   trackResult1 = callback3;
                   trackResult1 = v0;
                   trackResult1 = callback3(v0);
@@ -189,8 +175,8 @@ function _handleNameInputScreenOrSuggestions() {
                   trackResult1 = navigation(698).track(constants3.PERMISSIONS_ACKED, obj6);
                   trackResult1 = name;
                   if (null == name) {
-                    obj5 = callback(11855);
-                    obj5.trackFlowStep(callback(11855).Steps.NAME_INPUT, false, false);
+                    obj5 = callback(11904);
+                    obj5.trackFlowStep(callback(11904).Steps.NAME_INPUT, false, false);
                     SUGGESTIONS_RESULTS(trackResult1, true);
                     navigation.navigate(constants2.NAME_INPUT);
                   }
@@ -225,7 +211,7 @@ function _handleNameInputScreenOrSuggestions() {
                     length = closure_12.friend_suggestions.length;
                     trackResult1 = callback;
                     trackResult1 = dependencyMap;
-                    const obj23 = callback(11855);
+                    const obj23 = callback(11904);
                     trackResult1 = SUGGESTIONS_RESULTS;
                     const obj9 = { num_contacts_found: null };
                     trackResult1 = length;
@@ -248,8 +234,8 @@ function _handleNameInputScreenOrSuggestions() {
                   return obj;
                 }
                 SUGGESTIONS = constants2.SUGGESTIONS;
-                SUGGESTIONS_RESULTS = callback(11855).Steps.SUGGESTIONS_RESULTS;
-                obj2 = callback(11853);
+                SUGGESTIONS_RESULTS = callback(11904).Steps.SUGGESTIONS_RESULTS;
+                obj2 = callback(11902);
                 trackResult1 = 5;
                 v02 = 1;
                 const obj10 = { value: null, done: false };
@@ -258,8 +244,8 @@ function _handleNameInputScreenOrSuggestions() {
               }
               v0 = 0;
             }
-            obj6 = callback(11853);
-            obj7 = navigation(11857);
+            obj6 = callback(11902);
+            obj7 = navigation(11906);
             if (isContactSyncEnabledResult) {
               trackResult1 = 4;
               v02 = 1;
@@ -282,7 +268,7 @@ function _handleNameInputScreenOrSuggestions() {
             isContactSyncEnabledResult = obj6.isContactSyncEnabled(dependencyMap);
           }
         } catch (tmp86) {
-          mergeGuildAvatar = tmp86;
+          closure_5 = tmp86;
           if (tmp4 === v0) {
             v02 = tmp2;
             throw tmp86;
@@ -291,7 +277,7 @@ function _handleNameInputScreenOrSuggestions() {
       }
     })();
   });
-  const _handleNameInputScreenOrSuggestions = tmp;
+  closure_26 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -303,10 +289,10 @@ function _handleNameInputScreenOrSuggestions() {
 function _handlePhoneVerificationComplete() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c3 = 0;
-    let c2 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c3 = 0;
+    c2 = 0;
     return (function*(arg0, arg1) {
       if (c2 === 2) {
         c2 = 3;
@@ -319,7 +305,7 @@ function _handlePhoneVerificationComplete() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -336,8 +322,8 @@ function _handlePhoneVerificationComplete() {
             } else {
               c3 = 1;
               c2 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_25(closure_0, closure_1);
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_25(closure_0, closure_1);
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -350,7 +336,7 @@ function _handlePhoneVerificationComplete() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c2 = tmp;
@@ -359,7 +345,7 @@ function _handlePhoneVerificationComplete() {
       }
     })();
   });
-  const _handlePhoneVerificationComplete = tmp;
+  closure_27 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -371,9 +357,9 @@ function _handlePhoneVerificationComplete() {
 function _startContactSync() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -386,7 +372,7 @@ function _startContactSync() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -401,25 +387,25 @@ function _startContactSync() {
               obj[0] = arg1;
               return obj;
             } else {
-              const currentUser = outer1_5.getCurrentUser();
+              const currentUser = closure_1_5.getCurrentUser();
               let phone;
               if (currentUser != null) {
                 phone = currentUser.phone;
               }
               if (null == phone) {
-                let obj2 = callback(11855);
-                obj2.trackFlowStep(callback(11855).Steps.ADD_PHONE_NUMBER, false, false);
-                outer1_9(null);
-                obj7.navigate(outer1_19.ADD_PHONE);
+                let obj2 = callback(11904);
+                obj2.trackFlowStep(callback(11904).Steps.ADD_PHONE_NUMBER, false, false);
+                closure_1_9(null);
+                obj7.navigate(closure_1_19.ADD_PHONE);
                 c1 = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = undefined;
                 return obj1;
               } else {
                 dependencyMap = 1;
                 c1 = 1;
                 obj2 = { value: null, done: false };
-                obj2[0] = outer1_25(phone, obj7);
+                obj2[0] = closure_1_25(phone, obj7);
                 return obj2;
               }
             }
@@ -433,7 +419,7 @@ function _startContactSync() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c1 = tmp;
@@ -442,7 +428,7 @@ function _startContactSync() {
       }
     })();
   });
-  const _startContactSync = tmp;
+  closure_28 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -454,11 +440,11 @@ function _startContactSync() {
 function _bulkAddFriendSuggestions() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0, failed_requests) {
       if (c6 === 2) {
         c6 = 3;
@@ -471,7 +457,7 @@ function _bulkAddFriendSuggestions() {
           obj[0] = failed_requests;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -486,26 +472,26 @@ function _bulkAddFriendSuggestions() {
               obj[0] = failed_requests;
               return obj;
             } else {
-              let closure_3 = tmp3;
+              closure_3 = tmp3;
               let suggestions = tmp56;
               suggestions = undefined;
               closure_3 = undefined;
-              const state = outer1_12.getState();
+              const state = closure_1_12.getState();
               suggestions = state.suggestions;
               const bulkAddToken = state.bulkAddToken;
               if (null != bulkAddToken) {
-                let c4 = 1;
-                let obj8 = lib(outer1_2[8]);
+                c4 = 1;
+                let obj8 = lib(closure_1_2[8]);
                 c5 = 2;
                 c6 = 1;
-                const obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = obj8.bulkAddFriends(tmp74, bulkAddToken);
                 return obj1;
               } else {
                 const obj2 = { skip: false, friendsFound: null, friendsAdded: 0, back: false, onComplete: null };
                 obj2[1] = suggestions.length;
                 obj2[4] = tmp75;
-                outer1_31(obj2);
+                closure_1_31(obj2);
               }
               tmp74 = lib;
               tmp75 = callback;
@@ -522,7 +508,7 @@ function _bulkAddFriendSuggestions() {
               const intl6 = lib(suggestions[12]).intl;
               obj3[2] = intl6.string(lib(suggestions[12]).t.BddRzS);
               obj3[3] = function onConfirm() {
-                outer1_31({ skip: false, friendsFound: suggestions.length, friendsAdded: closure_0.length, back: false, onComplete: closure_1 });
+                closure_1_31({ skip: false, friendsFound: suggestions.length, friendsAdded: closure_0.length, back: false, onComplete: closure_1 });
               };
               obj5.show(obj3);
             } else if (arg0 === 1) {
@@ -531,7 +517,7 @@ function _bulkAddFriendSuggestions() {
             } else if (arg0 !== 2) {
               if (failed_requests.failed_requests.length > 0) {
                 const mapped = lib.map((arg0) => {
-                  let closure_0 = arg0;
+                  closure_0 = arg0;
                   return suggestions.find((suggested_user) => suggested_user.suggested_user.id === closure_0);
                 });
                 const _Boolean = Boolean;
@@ -547,7 +533,7 @@ function _bulkAddFriendSuggestions() {
                 const intl3 = lib(suggestions[12]).intl;
                 obj4[2] = intl3.string(lib(suggestions[12]).t.BddRzS);
                 obj4[3] = function onConfirm() {
-                  outer1_31({ skip: false, friendsFound: suggestions.length, friendsAdded: closure_0.length, back: false, onComplete: closure_1 });
+                  closure_1_31({ skip: false, friendsFound: suggestions.length, friendsAdded: closure_0.length, back: false, onComplete: closure_1 });
                 };
                 obj.show(obj4);
               } else {
@@ -584,7 +570,7 @@ function _bulkAddFriendSuggestions() {
       }
     })();
   });
-  const _bulkAddFriendSuggestions = tmp;
+  closure_29 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -596,10 +582,10 @@ function _bulkAddFriendSuggestions() {
 function _verifyPhone() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0) {
       if (c7 === 2) {
         c7 = 3;
@@ -612,7 +598,7 @@ function _verifyPhone() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -627,24 +613,24 @@ function _verifyPhone() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_3 = tmp3;
-              const dependencyMap = tmp7;
-              let c5 = 1;
-              let obj3 = outer1_1(outer1_2[16]);
+              closure_3 = tmp3;
+              dependencyMap = tmp7;
+              c5 = 1;
+              let obj3 = closure_1_1(closure_1_2[16]);
               c6 = 2;
               c7 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = obj3.addPhoneWithoutPassword(lib);
               return obj1;
             }
           } else if (1 === tmp7) {
             c5 = 0;
-            lib = set;
+            lib = closure_4;
             if (301 !== lib.status) {
               if (404 !== lib.status) {
-                const aPIError = new lib(4273).APIError(lib);
+                const aPIError = new lib(4277).APIError(lib);
                 const anyErrorMessage = aPIError.getAnyErrorMessage();
-                let closure_1 = anyErrorMessage;
+                closure_1 = anyErrorMessage;
                 if (anyErrorMessage == null) {
                   const intl = lib(1236).intl;
                   closure_1 = intl.string(lib(1236).t.cCVXOe);
@@ -670,7 +656,7 @@ function _verifyPhone() {
             return obj;
           }
         } catch (tmp21) {
-          set = tmp21;
+          closure_4 = tmp21;
           if (tmp4 === c5) {
             c7 = tmp2;
             throw tmp21;
@@ -681,7 +667,7 @@ function _verifyPhone() {
       }
     })();
   });
-  const _verifyPhone = tmp;
+  closure_30 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -691,9 +677,6 @@ function _verifyPhone() {
   return applyArgumentsResult;
 }
 function closeContactSyncModal(skip) {
-  let back;
-  let friendsAdded;
-  let friendsFound;
   let flag = skip.skip;
   if (flag === undefined) {
     flag = true;
@@ -711,16 +694,16 @@ function closeContactSyncModal(skip) {
     let obj = { num_contacts_found: null, num_contacts_added: null };
     obj[0] = friendsFound;
     obj[1] = friendsAdded;
-    flag2(11855).trackFlowEnd(flag, obj);
+    flag2(11904).trackFlowEnd(flag, obj);
     if (tmp16) {
       onComplete(flag);
     } else {
       const _setTimeout2 = setTimeout;
       const timerId = setTimeout(() => {
-        back(_undefined[18]).popWithKey(closure_20);
+        back(5265).popWithKey(closure_20);
       }, 0);
     }
-    const obj3 = flag2(11855);
+    const obj3 = flag2(11904);
   } else {
     flag2 = flag;
     if (flag === undefined) {
@@ -729,55 +712,55 @@ function closeContactSyncModal(skip) {
     if (back === undefined) {
       back = false;
     }
-    let dependencyMap;
+    dependencyMap = undefined;
     const tmp2 = callback5();
     dependencyMap = tmp2;
     if (!back) {
-      obj = flag2(11855);
+      obj = flag2(11904);
       obj = { num_contacts_found: null, num_contacts_added: null };
       obj[0] = friendsFound;
       obj[1] = friendsAdded;
       obj.trackFlowEnd(flag2, obj);
     }
     if (tmp2) {
-      let updateAnimation = back(5260).updateAnimation;
+      let updateAnimation = back(5265).updateAnimation;
       let ModalAnimation = flag2(691).ModalAnimation;
       if (back) {
         updateAnimation(tmp9, ModalAnimation.SLIDE_IN_OUT_REVERSE);
       } else {
         updateAnimation(tmp9, ModalAnimation.SLIDE_IN_OUT);
       }
-      const tmp8 = back(5260);
+      const tmp8 = back(5265);
     }
     const _setTimeout = setTimeout;
     const timerId1 = setTimeout(() => {
-      let obj = back(_undefined[18]);
-      obj.popWithKey(outer1_20);
-      if (_undefined) {
-        const updateAnimation = back(tmp2[18]).updateAnimation;
-        const ModalAnimation = flag2(tmp2[22]).ModalAnimation;
+      let obj = back(5265);
+      obj.popWithKey(closure_1_20);
+      if (dependencyMap) {
+        const updateAnimation = back(5265).updateAnimation;
+        const ModalAnimation = flag2(691).ModalAnimation;
         if (back) {
           updateAnimation(tmp3, ModalAnimation.SLIDE_IN_OUT_REVERSE);
-          let tmp7Result = tmp7(tmp2[23]);
+          let tmp7Result = tmp7(11926);
           const result = tmp7Result.previousOnboardingStep();
         } else {
           updateAnimation(tmp3, ModalAnimation.SLIDE_IN_OUT);
-          tmp7Result = tmp7(tmp2[23]);
+          tmp7Result = tmp7(11926);
           obj = { skip: null };
           obj[0] = flag2;
           tmp7Result.nextOnboardingStep(obj);
         }
-        const tmpResult = back(tmp2[18]);
+        const tmpResult = back(5265);
       }
     }, 0);
   }
 }
-({ setError: closure_6, setPermissionState: error, setSuggestions: metroImportAll, setPhone: c9, setPhoneToken: c10, setName: unpackModuleId, useContactSyncModalStore: closure_12, ContactSyncModes: map1, initialize: closure_14, getIsOnboarding: closure_15 } = ContactSyncModes);
+({ setError: closure_6, setPermissionState: error, setSuggestions: closure_8, setPhone: c9, setPhoneToken: c10, setName: unpackModuleId, useContactSyncModalStore: closure_12, ContactSyncModes: map1, initialize: closure_14, getIsOnboarding: closure_15 } = ContactSyncModes);
 ({ deleteStoredContacts: closure_16, setStoredContacts: closure_17 } = setStoredContacts);
 ({ ContactPermissions: closure_18, ContactSyncScenes: closure_19, CONTACT_SYNC_MODAL_KEY: closure_20 } = ContactSyncLandingPage);
 ({ AnalyticEvents: closure_21, PlatformTypes: closure_22 } = ME);
 ({ NativePermissionStates: closure_23, NativePermissionTypes: closure_24 } = NativePermissionStatus);
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/contact_sync/native/ContactSyncModalActionCreators.tsx");
+let result = require("set").fileFinishedImporting("modules/contact_sync/native/ContactSyncModalActionCreators.tsx");
 
 export const handlePhoneVerificationComplete = function handlePhoneVerificationComplete(arg0, navigation) {
   const self = this;
@@ -810,12 +793,12 @@ export const bulkAddFriendSuggestions = function bulkAddFriendSuggestions(arg0, 
   return applyArgumentsResult;
 };
 export const goBackToLanding = function goBackToLanding(closure_1) {
-  require(11855) /* Steps */.trackFlowStep(require(11855) /* Steps */.Steps.LANDING, false, true);
+  Steps.trackFlowStep(Steps.Steps.LANDING, false, true);
   closure_1.pop(closure_1.getState().routes.length - 1);
 };
 export const submitPhone = function submitPhone(arg0, closure_0) {
   callback2(arg0);
-  require(11855) /* Steps */.trackFlowStep(require(11855) /* Steps */.Steps.VERIFY_PHONE_NUMBER, false, false);
+  Steps.trackFlowStep(Steps.Steps.VERIFY_PHONE_NUMBER, false, false);
   closure_0.navigate(constants2.VERIFY_PHONE);
 };
 export const verifyPhone = function verifyPhone() {
@@ -829,15 +812,15 @@ export const verifyPhone = function verifyPhone() {
   return applyArgumentsResult;
 };
 export const verifyPhoneWithPassword = function verifyPhoneWithPassword(arg0, navigation) {
-  require(11855) /* Steps */.trackFlowStep(require(11855) /* Steps */.Steps.PASSWORD_CONFIRM, false, false);
+  Steps.trackFlowStep(Steps.Steps.PASSWORD_CONFIRM, false, false);
   callback3(arg0);
   navigation.navigate(constants2.VERIFY_PASSWORD);
 };
 export const upsellDismissed = function upsellDismissed() {
-  require(11855) /* Steps */.trackFlowEnd(true);
+  Steps.trackFlowEnd(true);
 };
 export const openContactSyncModal = function openContactSyncModal(initialRoutes, FRIENDS_ADD_FRIENDS_MODAL) {
-  let obj = require(11853) /* _uploadContacts */;
+  let obj = _uploadContacts;
   const result = obj.checkContactPermissions();
   result.then((arg0) => {
     callback(arg0);
@@ -848,13 +831,13 @@ export const openContactSyncModal = function openContactSyncModal(initialRoutes,
   if (FRIENDS_ADD_FRIENDS_MODAL) {
     obj = { location: null };
     obj[0] = FRIENDS_ADD_FRIENDS_MODAL;
-    tmp(11855).trackFlowStart(obj);
-    const tmpResult = tmp(11855);
+    tmp(11904).trackFlowStart(obj);
+    const tmpResult = tmp(11904);
   }
   obj = { initialRoutes: initialRoutes.initialRoutes, openSettingsSheet: initialRoutes.openSettings, customLandingPage: initialRoutes.customLandingPage };
-  const obj4 = importDefault(5260);
+  const obj4 = _modDef5265;
   const tmp2 = dependencyMap;
-  importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(11858, dependencyMap.paths), obj, closure_20).then(arg2);
+  _modDef5265.pushLazy(asyncRequireImpl(11907, dependencyMap.paths), obj, closure_20).then(arg2);
 };
 export const openContactSyncModalOnboarding = function openContactSyncModalOnboarding() {
   let flag = arg0;
@@ -864,14 +847,14 @@ export const openContactSyncModalOnboarding = function openContactSyncModalOnboa
   if (!flag) {
     let obj = { location: null };
     obj = { page: null };
-    obj[0] = require(11855) /* Steps */.CONTACT_SYNC_ONBOARDING_LOCATION;
+    obj[0] = Steps.CONTACT_SYNC_ONBOARDING_LOCATION;
     obj[0] = obj;
-    require(11855) /* Steps */.trackFlowStart(obj);
-    const obj2 = require(11855) /* Steps */;
-    importDefault(5260).pushLazy(callback(function*() {
-      let closure_1 = tmp5;
+    Steps.trackFlowStart(obj);
+    const obj2 = Steps;
+    _modDef5265.pushLazy(callback(function*() {
+      closure_1 = tmp5;
       let callback = tmp2;
-      yield outer1_0(paths[20])(paths[19], paths.paths);
+      yield closure_1_0(paths[20])(paths[19], paths.paths);
       callback = arg1.default;
       const obj = { animation: null };
       obj[0] = callback(paths[22]).ModalAnimation.SLIDE_IN_OUT;
@@ -879,30 +862,30 @@ export const openContactSyncModalOnboarding = function openContactSyncModalOnboa
       return callback;
     }), {}, closure_20);
   } else {
-    obj = require(8918) /* showInstantInviteActionSheet */;
+    obj = showInstantInviteActionSheet;
     closure_14(obj.hasDeferredInvite() ? closure_13.ONBOARDING_INVITE : closure_13.ONBOARDING);
     const tmp = closure_14;
   }
 };
 export const openContactSyncModalDeeplink = function openContactSyncModalDeeplink() {
   let obj = {};
-  const result = require(11853) /* _uploadContacts */.checkContactPermissions();
+  const result = _uploadContacts.checkContactPermissions();
   result.then((arg0) => {
     callback(arg0);
   });
   if (null == obj.initialRoutes) {
     callback4(constants.NORMAL);
   }
-  const obj2 = require(11853) /* _uploadContacts */;
+  const obj2 = _uploadContacts;
   const tmp2 = dependencyMap;
-  require(11855) /* Steps */.trackFlowStart({ location: { page: "Deep Link" } });
-  const tmpResult = require(11855) /* Steps */;
+  Steps.trackFlowStart({ location: { page: "Deep Link" } });
+  const tmpResult = Steps;
   obj = { initialRoutes: obj.initialRoutes, openSettingsSheet: obj.openSettings, customLandingPage: obj.customLandingPage };
-  const obj4 = importDefault(5260);
-  importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(11858, tmp2.paths), obj, closure_20).then(undefined);
+  const obj4 = _modDef5265;
+  _modDef5265.pushLazy(asyncRequireImpl(11907, tmp2.paths), obj, closure_20).then(undefined);
 };
 export const refreshContactSyncPermissionStatus = function refreshContactSyncPermissionStatus() {
-  const result = require(11853) /* _uploadContacts */.checkContactPermissions();
+  const result = _uploadContacts.checkContactPermissions();
   result.then((arg0) => {
     callback(arg0);
   });

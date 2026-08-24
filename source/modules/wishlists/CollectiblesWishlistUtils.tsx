@@ -1,15 +1,17 @@
-// Module ID: 9178
-// Function ID: 9179
+// Module ID: 9215
+// Function ID: 9216
 // Name: getProductNameAndTypeFromSku
-// Dependencies: [1949, 1236, 5313, 2]
+// Dependencies: [1949, 1236, 5318, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 9178 (getProductNameAndTypeFromSku)
-let result = require("getItemRecordsFromPurchases").fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
+// Module 9215 (getProductNameAndTypeFromSku)
+import set from "set" /* 2 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 5318 */;
+
+let result = set.fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
 
 export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSku(sku) {
-  let name;
-  let tenantMetadata;
   ({ name, tenantMetadata } = sku);
   let type;
   if (tenantMetadata != null) {
@@ -18,7 +20,7 @@ export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSk
       type = collectibles.type;
     }
   }
-  if (require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+  if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl2 = tmp2(1236).intl;
     let obj = { product: null };
     obj[0] = name;
@@ -40,10 +42,10 @@ export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSk
   return formatToPlainStringResult;
 };
 export const isWishlistableCollectiblesProduct = function isWishlistableCollectiblesProduct(selectedProduct) {
-  const result = require(5313) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(selectedProduct);
+  const result = getItemRecordsFromPurchases.isPremiumCollectiblesProduct(selectedProduct);
   let tmp4 = !result;
   if (!result) {
-    tmp4 = selectedProduct.type !== require(1949) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU;
+    tmp4 = selectedProduct.type !== CollectiblesItemType.CollectiblesItemType.EXTERNAL_SKU;
   }
   return tmp4;
 };

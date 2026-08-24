@@ -1,18 +1,18 @@
-// Module ID: 12530
-// Function ID: 12531
+// Module ID: 12584
+// Function ID: 12585
 // Name: useCanRaiseHand
-// Dependencies: [4021, 505, 589, 2]
+// Dependencies: [4024, 505, 589, 2]
 // Exports: useCanRaiseHand
 
-// Module 12530 (useCanRaiseHand)
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "sum";
+// Module 12584 (useCanRaiseHand)
+import closure_2 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/stage_channels/useCanRaiseHand.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/useCanRaiseHand.tsx");
 
 export const useCanRaiseHand = function useCanRaiseHand(channel) {
   const _require = channel;
-  const items = [getUncachedChannelPermissions];
-  return _require(589).useStateFromStores(items, () => outer1_2.can(outer1_3.REQUEST_TO_SPEAK, closure_0));
+  const items = [closure_2];
+  return _require(589).useStateFromStores(items, () => closure_1_2.can(closure_1_3.REQUEST_TO_SPEAK, closure_0));
 };

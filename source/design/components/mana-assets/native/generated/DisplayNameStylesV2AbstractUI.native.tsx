@@ -1,18 +1,19 @@
-// Module ID: 5664
-// Function ID: 5665
+// Module ID: 5671
+// Function ID: 5672
 // Name: DisplayNameStylesV2AbstractUI
-// Dependencies: [21, 5449, 5665, 2]
+// Dependencies: [21, 5454, 5672, 2]
 // Exports: DisplayNameStylesV2AbstractUI
 
-// Module 5664 (DisplayNameStylesV2AbstractUI)
-import { jsx } from "jsxProd";
+// Module 5671 (DisplayNameStylesV2AbstractUI)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5672 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameStylesV2AbstractUI.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameStylesV2AbstractUI.native.tsx");
 
 export const DisplayNameStylesV2AbstractUI = function DisplayNameStylesV2AbstractUI(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const DisplayNameStylesV2AbstractUI = function DisplayNameStylesV2Abstrac
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5665);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const DisplayNameStylesV2AbstractUI = function DisplayNameStylesV2Abstrac
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

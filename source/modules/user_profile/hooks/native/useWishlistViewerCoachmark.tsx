@@ -1,19 +1,17 @@
-// Module ID: 12302
-// Function ID: 12303
+// Module ID: 12354
+// Function ID: 12355
 // Name: useWishlistViewerCoachmark
-// Dependencies: [32, 19, 1377, 7366, 2]
+// Dependencies: [32, 19, 1377, 7404, 2]
 // Exports: useWishlistViewerCoachmark
 
-// Module 12302 (useWishlistViewerCoachmark)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 12354 (useWishlistViewerCoachmark)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("DismissibleContent").fileFinishedImporting("modules/user_profile/hooks/native/useWishlistViewerCoachmark.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useWishlistViewerCoachmark.tsx");
 
 export const useWishlistViewerCoachmark = function useWishlistViewerCoachmark(isCurrentUser) {
-  let tmp3;
-  let tmp4;
   isCurrentUser = isCurrentUser.isCurrentUser;
   const shouldShowWishlistTab = isCurrentUser.shouldShowWishlistTab;
   let items = [isCurrentUser, shouldShowWishlistTab];

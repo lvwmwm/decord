@@ -1,20 +1,22 @@
-// Module ID: 13550
-// Function ID: 13551
+// Module ID: 13608
+// Function ID: 13609
 // Name: messagesProxy
-// Dependencies: [1239, 13551, 1274, 2]
+// Dependencies: [1239, 13609, 1274, 2]
 
-// Module 13550 (messagesProxy)
-import module_1274 from "module_1274";
-import module_1274 from "module_1274";
+// Module 13608 (messagesProxy)
+import set from "set" /* 2 */;
+import loadJsonAsset from "loadJsonAsset" /* 1239 */;
+import registerAsset from "registerAsset" /* 13609 */;
+import module_1274 from "module_1274" /* 1274 */;
 
 const loader = module_1274.createLoader({
   () => {
-    const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(13551) /* registerAsset */);
+    const jsonAsset = loadJsonAsset.loadJsonAsset(registerAsset);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");
 const messagesProxy = module_1274.makeMessagesProxy(loader);
-const result = require("module_1274").fileFinishedImporting("intl/messages/untranslated.messages.js");
+const result = set.fileFinishedImporting("intl/messages/untranslated.messages.js");
 
 export default messagesProxy;
 export const messagesLoader = loader;

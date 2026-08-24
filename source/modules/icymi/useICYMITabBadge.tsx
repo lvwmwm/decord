@@ -1,21 +1,21 @@
-// Module ID: 15647
-// Function ID: 15648
+// Module ID: 15716
+// Function ID: 15717
 // Name: useICYMITabBadge
-// Dependencies: [9044, 589, 2]
+// Dependencies: [9081, 589, 2]
 // Exports: default, icymiTabBadgeShown
 
-// Module 15647 (useICYMITabBadge)
-import filterStaffGuild from "filterStaffGuild";
+// Module 15716 (useICYMITabBadge)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "filterStaffGuild" /* 9081 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/icymi/useICYMITabBadge.tsx");
 
 export default function useICYMITabBadge() {
-  const obj = { value: 0, showDot: null };
-  const items = [filterStaffGuild];
-  obj[1] = require(589) /* initialize */.useStateFromStores(items, () => filterStaffGuild.hasNewContent(), []);
+  const obj = { value: 0, showDot: initialize.useStateFromStores(items, () => closure_2.hasNewContent(), []) };
+  items = [closure_2];
   return obj;
 };
 export const icymiTabBadgeShown = function icymiTabBadgeShown() {
-  return filterStaffGuild.hasNewContent();
+  return closure_2.hasNewContent();
 };

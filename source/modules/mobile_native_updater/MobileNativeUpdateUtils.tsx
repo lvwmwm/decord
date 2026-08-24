@@ -1,14 +1,17 @@
-// Module ID: 13366
-// Function ID: 13367
+// Module ID: 13424
+// Function ID: 13425
 // Name: _checkForNewerBuild
-// Dependencies: [5, 4356, 3, 530, 4090, 500, 691, 2]
+// Dependencies: [5, 4360, 3, 530, 4093, 500, 691, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 13366 (_checkForNewerBuild)
-import set from "set";
-import { UPDATE_CONFIG } from "UPDATE_CHECK_INTERVAL";
+// Module 13424 (_checkForNewerBuild)
+import timestampDefault from "timestamp" /* 3 */;
+import keys from "keys" /* 691 */;
+import _mod4093 from "module_4093" /* 4093 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { UPDATE_CONFIG } from "UPDATE_CHECK_INTERVAL" /* 4360 */;
 
-const require = arg1;
+require = arg1;
 function _checkForNewerBuild() {
   const self = this;
   const tmp = callback(function*() {
@@ -23,7 +26,7 @@ function _checkForNewerBuild() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -39,7 +42,7 @@ function _checkForNewerBuild() {
             return obj;
           } else {
             let obj3 = tmp2;
-            let closure_0 = tmp5;
+            closure_0 = tmp5;
             closure_0 = undefined;
             obj3 = undefined;
             if (null === c3) {
@@ -47,9 +50,9 @@ function _checkForNewerBuild() {
               return { value: null, done: true };
             } else {
               const _HermesInternal2 = HermesInternal;
-              outer1_4.info("Checking " + c3.url + " for updates");
-              const HTTP = outer1_0(outer1_1[3]).HTTP;
-              const obj1 = { url: null, headers: null, rejectWithError: false };
+              closure_1_4.info("Checking " + c3.url + " for updates");
+              const HTTP = closure_1_0(closure_1_1[3]).HTTP;
+              obj1 = { url: null, headers: null, rejectWithError: false };
               obj1[0] = c3.url.toString();
               obj1[1] = { Accept: "application/json" };
               c2 = 1;
@@ -90,7 +93,7 @@ function _checkForNewerBuild() {
       }
     }
   });
-  const _checkForNewerBuild = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -109,11 +112,11 @@ function openBuildInstallerUrl(install) {
     }
     if (uRL.origin !== origin) {
       const _HermesInternal = HermesInternal;
-      tmp2.error("Attempted to follow invalid install URL " + str);
+      logger.error("Attempted to follow invalid install URL " + str);
     } else {
-      const openURLExternally = require(4090).default.openURLExternally;
+      const openURLExternally = _mod4093.default.openURLExternally;
       if (obj.isIOS()) {
-        openURLExternally(str.toString(), require(691) /* keys */.WebBrowserType.SAFARI);
+        openURLExternally(str.toString(), keys.WebBrowserType.SAFARI);
       } else {
         openURLExternally(str.toString());
       }
@@ -121,9 +124,9 @@ function openBuildInstallerUrl(install) {
   } catch (err) {
   }
 }
-let c4 = new require("sendRequest")("MobileNativeUpdateUtils");
-const tmp2 = new require("sendRequest")("MobileNativeUpdateUtils");
-const result = require("timestamp").fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateUtils.tsx");
+let closure_4 = new timestampDefault("MobileNativeUpdateUtils");
+const tmp2 = new timestampDefault("MobileNativeUpdateUtils");
+const result = require("set").fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateUtils.tsx");
 
 export const checkForNewerBuild = function checkForNewerBuild() {
   const self = this;

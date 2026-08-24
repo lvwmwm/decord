@@ -1,18 +1,18 @@
-// Module ID: 15973
-// Function ID: 15974
+// Module ID: 16070
+// Function ID: 16071
 // Name: useOnMessageSend
 // Dependencies: [19, 676, 709, 2]
 // Exports: default
 
-// Module 15973 (useOnMessageSend)
-import noop from "noop";
-import { MessageStates } from "ME";
+// Module 16070 (useOnMessageSend)
+import closure_2 from "noop" /* 19 */;
+import { MessageStates } from "ME" /* 676 */;
 
-const result = require("dispatcher").fileFinishedImporting("modules/messages/useOnMessageSend.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/useOnMessageSend.tsx");
 
 export default function useOnMessageSend(arg0) {
-  let closure_0 = arg0;
-  const dependencyMap = tmp;
+  closure_0 = arg0;
+  closure_1 = tmp;
   const items = [arg0, arg1];
   const effect = React.useEffect(() => {
     function handleMessage(channelId) {
@@ -27,7 +27,7 @@ export default function useOnMessageSend(arg0) {
     function handleMessageCreate(optimistic) {
       optimistic = optimistic.optimistic;
       if (!optimistic) {
-        optimistic = optimistic.message.state === outer1_3.SENDING;
+        optimistic = optimistic.message.state === closure_1_3.SENDING;
       }
       if (optimistic) {
         if (!tmp3) {
@@ -36,11 +36,11 @@ export default function useOnMessageSend(arg0) {
         tmp3 = undefined !== handleMessageCreate && optimistic.channelId !== tmp2;
       }
     }
-    const subscription = callback(tmp[2]).subscribe("MESSAGE_CREATE", handleMessageCreate);
-    let obj = callback(tmp[2]);
-    const subscription1 = callback(tmp[2]).subscribe("UPLOAD_START", handleMessage);
-    let obj2 = callback(tmp[2]);
-    const subscription2 = callback(tmp[2]).subscribe("CALL_CREATE", handleMessage);
+    const subscription = callback(709).subscribe("MESSAGE_CREATE", handleMessageCreate);
+    let obj = callback(709);
+    const subscription1 = callback(709).subscribe("UPLOAD_START", handleMessage);
+    let obj2 = callback(709);
+    const subscription2 = callback(709).subscribe("CALL_CREATE", handleMessage);
     return () => {
       handleMessage(handleMessageCreate[2]).unsubscribe("MESSAGE_CREATE", handleMessageCreate);
       const obj = handleMessage(handleMessageCreate[2]);

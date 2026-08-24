@@ -1,19 +1,22 @@
-// Module ID: 11717
-// Function ID: 11718
+// Module ID: 11766
+// Function ID: 11767
 // Name: useGuildPowerupColorConfig
 // Dependencies: [712, 2]
 // Exports: default
 
-// Module 11717 (useGuildPowerupColorConfig)
-const result = require("set").fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupColorConfig.tsx");
+// Module 11766 (useGuildPowerupColorConfig)
+import set from "set" /* 2 */;
+import ThemesDefault from "Themes" /* 712 */;
+
+const result = set.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupColorConfig.tsx");
 
 export default function useGuildPowerupColorConfig(arg0) {
   if (arg0) {
     let obj = { textColor: "text-default", iconColor: null };
-    obj[1] = importDefault(712).colors.TEXT_DEFAULT;
+    obj[1] = ThemesDefault.colors.TEXT_DEFAULT;
   } else {
     obj = { textColor: "text-muted", iconColor: null };
-    obj[1] = importDefault(712).colors.TEXT_MUTED;
+    obj[1] = ThemesDefault.colors.TEXT_MUTED;
   }
   return obj;
 };

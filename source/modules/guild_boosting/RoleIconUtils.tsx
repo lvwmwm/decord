@@ -1,33 +1,31 @@
-// Module ID: 7164
-// Function ID: 7165
+// Module ID: 7202
+// Function ID: 7203
 // Name: getRoleIconData
-// Dependencies: [676, 500, 4034, 1469, 1435, 2]
+// Dependencies: [676, 500, 4037, 1469, 1435, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 7164 (getRoleIconData)
-import ME from "ME";
-import set from "set";
-import set from "parseRawEmojiObject";
+// Module 7202 (getRoleIconData)
+import getAvatarURL from "getAvatarURL" /* 1435 */;
+import handleImageLoad from "handleImageLoad" /* 1469 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
+import ME from "ME" /* 676 */;
+import set from "set" /* 500 */;
 
-let c3;
-let c4;
 ({ Endpoints: c3, GuildFeatures: c4 } = ME);
 let closure_5 = "" + location.protocol + "//" + window.GLOBAL_ENV.CDN_HOST + "/role-icons";
 let closure_6 = "" + location.protocol + window.GLOBAL_ENV.API_ENDPOINT;
-set = set.isAndroid();
+let closure_7 = set.isAndroid();
 const result = set.fileFinishedImporting("modules/guild_boosting/RoleIconUtils.tsx");
 
 export const getRoleIconData = function getRoleIconData(role, arg1) {
-  let icon;
-  let id;
   if (null == role) {
     return null;
   } else {
     let byName;
     if (null != role.unicodeEmoji) {
-      let obj = importDefault(4034);
-      byName = obj.getByName(importDefault(4034).convertSurrogateToName(role.unicodeEmoji, false));
-      const obj2 = importDefault(4034);
+      let obj = parseRawEmojiObjectDefault;
+      byName = obj.getByName(parseRawEmojiObjectDefault.convertSurrogateToName(role.unicodeEmoji, false));
+      const obj2 = parseRawEmojiObjectDefault;
     }
     ({ id, icon } = role);
     let tmp4;
@@ -35,7 +33,7 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
       tmp4 = icon;
       if (!icon.startsWith("data:")) {
         let str2 = "png";
-        if (require(1435) /* getAvatarURL */.SUPPORTS_WEBP) {
+        if (getAvatarURL.SUPPORTS_WEBP) {
           str2 = "webp";
         }
         let str3 = "quality=lossless";
@@ -45,7 +43,7 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
           tmp5(1469);
           let str7 = "";
           const text = `size=${tmp9(arg1 * obj3.getDevicePixelRatio())}`;
-          if (!set) {
+          if (!closure_7) {
             str7 = "&quality=lossless";
           }
           str3 = str7;
@@ -69,8 +67,8 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
   }
 };
 export const replaceRoleIconSourceSize = function replaceRoleIconSourceSize(str) {
-  const obj = require(1469) /* handleImageLoad */;
-  return str.replace(/size=[0-9]+/g, "size=" + obj.getBestMediaProxySize(arg1 * require(1469) /* handleImageLoad */.getDevicePixelRatio()));
+  const obj = handleImageLoad;
+  return str.replace(/size=[0-9]+/g, "size=" + obj.getBestMediaProxySize(arg1 * handleImageLoad.getDevicePixelRatio()));
 };
 export const isRoleIconAssetUrl = function isRoleIconAssetUrl(str) {
   let startsWithResult = str.startsWith(closure_5);

@@ -1,23 +1,22 @@
-// Module ID: 8452
-// Function ID: 8453
+// Module ID: 8491
+// Function ID: 8492
 // Name: _fetchApplicationCommandIndex
 // Dependencies: [5, 676, 709, 530, 687, 698, 1370, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 8452 (_fetchApplicationCommandIndex)
-import expandEventProperties from "expandEventProperties";
-import ME from "ME";
+// Module 8491 (_fetchApplicationCommandIndex)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
 const require = arg1;
 function _fetchApplicationCommandIndex() {
   let self = this;
   let tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c3 = 0;
-    let c2 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c3 = 0;
+    c2 = 0;
     return (function*(arg0, arg1) {
       if (c2 === 2) {
         c2 = 3;
@@ -30,7 +29,7 @@ function _fetchApplicationCommandIndex() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -58,12 +57,12 @@ function _fetchApplicationCommandIndex() {
               function _retry() {
                 const self = this;
                 const tmp = v1((arg0) => {
-                  let closure_0 = arg0;
-                  let c2 = 0;
-                  let c3 = 0;
-                  return (/* F120658 */ function*() { ... })();
+                  closure_0 = arg0;
+                  c2 = 0;
+                  c3 = 0;
+                  return (/* F121685 */ function*() { ... })();
                 });
-                const _retry = tmp;
+                closure_7 = tmp;
                 const apply = tmp.apply;
                 if (typeof apply === "unknown") {
                   let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -98,20 +97,20 @@ function _fetchApplicationCommandIndex() {
               }
               const _performance = performance;
               c3 = performance.now();
-              let c4 = 0;
-              let closure_5 = [];
+              c4 = 0;
+              closure_5 = [];
               type = type.type;
               if ("channel" === type) {
-                c2 = outer1_5.APPLICATION_COMMAND_INDEX_CHANNEL(tmp16.channelId);
+                c2 = closure_1_5.APPLICATION_COMMAND_INDEX_CHANNEL(tmp16.channelId);
               } else {
                 if ("guild" === type) {
-                  c2 = outer1_5.APPLICATION_COMMAND_INDEX_GUILD(tmp16.guildId);
+                  c2 = closure_1_5.APPLICATION_COMMAND_INDEX_GUILD(tmp16.guildId);
                 } else if ("user" !== type) {
                   if ("application" === type) {
-                    c2 = outer1_5.APPLICATION_COMMAND_INDEX_APPLICATION(tmp16.applicationId);
+                    c2 = closure_1_5.APPLICATION_COMMAND_INDEX_APPLICATION(tmp16.applicationId);
                   }
                 }
-                c2 = outer1_5.APPLICATION_COMMAND_INDEX_USER;
+                c2 = closure_1_5.APPLICATION_COMMAND_INDEX_USER;
               }
               function fetch() {
                 const HTTP = lib(530).HTTP;
@@ -120,7 +119,7 @@ function _fetchApplicationCommandIndex() {
                   retries: 3 - c4 - 1,
                   signal: lib2.signal,
                   onRequestCreated() {
-                    let closure_4 = tmp + 1;
+                    closure_4 = tmp + 1;
                     return +closure_4;
                   },
                   rejectWithError: false
@@ -131,7 +130,7 @@ function _fetchApplicationCommandIndex() {
                     let dispatchResult = callback(5000);
                   } else {
                     callback2({ error: false });
-                    let obj = outer1_1(outer1_2[2]);
+                    let obj = closure_1_1(closure_1_2[2]);
                     obj = { type: "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS", target: null, index: null };
                     obj[1] = closure_0;
                     obj[2] = status.body;
@@ -144,7 +143,7 @@ function _fetchApplicationCommandIndex() {
                     callback2({ error: true });
                   } else if (429 === status.status) {
                     arr = arr.push(429);
-                    let dispatchResult = callback(status.body.retry_after * outer1_1(outer1_2[4]).Millis.SECOND);
+                    let dispatchResult = callback(status.body.retry_after * closure_1_1(closure_1_2[4]).Millis.SECOND);
                   } else {
                     let num2 = status.status;
                     if (num2 == null) {
@@ -152,7 +151,7 @@ function _fetchApplicationCommandIndex() {
                     }
                     arr.push(num2);
                     callback2({ error: true });
-                    let obj = outer1_1(outer1_2[2]);
+                    let obj = closure_1_1(closure_1_2[2]);
                     obj = { type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE", target: null };
                     obj[1] = closure_0;
                     dispatchResult = obj.dispatch(obj);
@@ -174,7 +173,7 @@ function _fetchApplicationCommandIndex() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c2 = tmp;
@@ -183,7 +182,7 @@ function _fetchApplicationCommandIndex() {
       }
     })();
   });
-  const _fetchApplicationCommandIndex = tmp;
+  closure_6 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -193,7 +192,7 @@ function _fetchApplicationCommandIndex() {
   return applyArgumentsResult;
 }
 ({ AnalyticEvents: c4, Endpoints: c5 } = ME);
-const result = require("dispatcher").fileFinishedImporting("modules/application_commands/ApplicationCommandIndexActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/application_commands/ApplicationCommandIndexActionCreators.tsx");
 
 export const fetchApplicationCommandIndex = function fetchApplicationCommandIndex(closure_0, abortController) {
   const self = this;
@@ -206,7 +205,7 @@ export const fetchApplicationCommandIndex = function fetchApplicationCommandInde
   return applyArgumentsResult;
 };
 export const requestApplicationCommandIndex = function requestApplicationCommandIndex(target) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "APPLICATION_COMMAND_INDEX_FETCH_REQUEST", target };
   obj.dispatch(obj);
 };

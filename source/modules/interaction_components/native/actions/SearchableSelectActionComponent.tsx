@@ -1,24 +1,22 @@
-// Module ID: 15168
-// Function ID: 15169
+// Module ID: 15232
+// Function ID: 15233
 // Name: SearchableSelectActionComponent
-// Dependencies: [19, 1391, 21, 4805, 8326, 38, 8334, 1954, 15166, 8336, 4342, 11006, 2007, 11002, 2]
+// Dependencies: [19, 1391, 21, 4810, 8365, 38, 8373, 1954, 15230, 8375, 4346, 11045, 2008, 11041, 2]
 // Exports: default
 
-// Module 15168 (SearchableSelectActionComponent)
-import noop from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { jsx } from "jsxProd";
+// Module 15232 (SearchableSelectActionComponent)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/interaction_components/native/actions/SearchableSelectActionComponent.tsx");
+const result = require("set").fileFinishedImporting("modules/interaction_components/native/actions/SearchableSelectActionComponent.tsx");
 
 export default function SearchableSelectActionComponent(defaultValues) {
-  let executeStateUpdate;
-  let visualState;
   const _require = defaultValues;
   let obj = _require(customId[3]);
   const selectPlaceholder = obj.getSelectPlaceholder(defaultValues);
-  let obj1 = _require(customId[4]);
+  obj1 = _require(customId[4]);
   const componentStateContext = obj1.useComponentStateContext();
   let modal;
   if (componentStateContext != null) {
@@ -112,7 +110,7 @@ export default function SearchableSelectActionComponent(defaultValues) {
         if (defaultValues.type === defaultValues(customId[7]).ComponentType.CHANNEL_SELECT) {
           const _HermesInternal2 = HermesInternal;
           const obj3 = guild_id(tmp3[10]);
-          let obj = { selectionActionComponent: null };
+          obj = { selectionActionComponent: null };
           obj[0] = tmp;
           const combined = "ChannelSelectComponentActionSheet:" + customId;
           const merged = Object.assign(obj);

@@ -1,18 +1,21 @@
-// Module ID: 5324
-// Function ID: 5325
+// Module ID: 5329
+// Function ID: 5330
 // Name: map
 // Dependencies: [12, 589, 709, 2]
 
-// Module 5324 (map)
-import { Store } from "initialize";
+// Module 5329 (map)
+import apply from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
-const require = arg1;
+require = arg1;
 let map = new Map();
 let c4 = false;
 let c5;
 let c6;
 let c7;
 let c8 = false;
+const Store = initializeDefault.Store;
 class CollectiblesPurchaseStore extends Store {
 }
 const prototype = CollectiblesPurchaseStore.prototype;
@@ -29,7 +32,7 @@ Object.defineProperty(prototype, "isClaiming", {
   set: undefined
 });
 Object.defineProperty(prototype, "purchases", {
-  get: function purchases(hasPreviouslyFetched, arg1) {
+  get: function purchases() {
     return map;
   },
   set: undefined
@@ -64,10 +67,10 @@ prototype["getPurchases"] = function getPurchases(arr) {
   return mapped.filter((arg0) => null != arg0);
 };
 CollectiblesPurchaseStore.displayName = "CollectiblesPurchaseStore";
-const collectiblesPurchaseStore = new CollectiblesPurchaseStore(require("dispatcher"), {
+const collectiblesPurchaseStore = new CollectiblesPurchaseStore(dispatcherDefault, {
   COLLECTIBLES_PURCHASES_FETCH: function handlePurchasesFetch() {
-    let c4 = true;
-    let c6;
+    c4 = true;
+    c6 = undefined;
   },
   COLLECTIBLES_PURCHASES_FETCH_SUCCESS: function handlePurchasesFetchSuccess(purchases) {
     if (0 !== purchases.purchases.length) {
@@ -81,21 +84,21 @@ const collectiblesPurchaseStore = new CollectiblesPurchaseStore(require("dispatc
           return items;
         }));
       }
-      obj = require(12) /* apply */;
+      obj = apply;
     }
-    let c8 = true;
-    let c4 = false;
-    let c6;
+    c8 = true;
+    c4 = false;
+    c6 = undefined;
   },
   COLLECTIBLES_PURCHASES_FETCH_FAILURE: function handlePurchasesFetchFailure(error) {
-    let closure_3 = map;
-    let c4 = false;
+    closure_3 = map;
+    c4 = false;
     error = error.error;
-    let c8 = true;
+    c8 = true;
   },
   COLLECTIBLES_CLAIM: function handleClaim(skuId) {
     skuId = skuId.skuId;
-    let c7;
+    c7 = undefined;
   },
   COLLECTIBLES_CLAIM_SUCCESS: function handleClaimSuccess(purchases) {
     if (null != purchases.purchases) {
@@ -110,26 +113,24 @@ const collectiblesPurchaseStore = new CollectiblesPurchaseStore(require("dispatc
             return items;
           }));
         }
-        obj = require(12) /* apply */;
+        obj = apply;
       }
-      let c5;
-      let c7;
+      c5 = undefined;
+      c7 = undefined;
     }
   },
   COLLECTIBLES_CLAIM_FAILURE: function handleClaimFailure(arg0) {
-    let c5;
-    let c7;
     ({ skuId: c5, error: c7 } = arg0);
   },
   LOGOUT: function handleLogout() {
-    let closure_3 = map;
-    let c4 = false;
-    let c5;
-    let c6;
-    let c7;
-    let c8 = false;
+    closure_3 = map;
+    c4 = false;
+    c5 = undefined;
+    c6 = undefined;
+    c7 = undefined;
+    c8 = false;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/collectibles/CollectiblesPurchaseStore.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/CollectiblesPurchaseStore.tsx");
 
 export default collectiblesPurchaseStore;

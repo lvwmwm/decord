@@ -1,17 +1,17 @@
-// Module ID: 15393
-// Function ID: 15394
+// Module ID: 15457
+// Function ID: 15458
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 1979, 4545, 21, 589, 4979, 15392, 2]
+// Dependencies: [19, 1980, 4550, 21, 589, 4984, 15456, 2]
 // Exports: default
 
-// Module 15393 (RedesignVoiceUserSummary)
-import noop from "noop";
-import handleConnectionOpen from "handleConnectionOpen";
-import getVoiceStatesForGuild from "getVoiceStatesForGuild";
-import { jsx } from "jsxProd";
+// Module 15457 (RedesignVoiceUserSummary)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "getVoiceStatesForGuild" /* 4550 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("getVoiceStatesForGuild").fileFinishedImporting("modules/channel_list_v2/native/items/RedesignVoiceUserSummary.tsx");
+const result = require("set").fileFinishedImporting("modules/channel_list_v2/native/items/RedesignVoiceUserSummary.tsx");
 
 export default function RedesignVoiceUserSummary(channels) {
   channels = channels.channels;
@@ -19,15 +19,15 @@ export default function RedesignVoiceUserSummary(channels) {
   let stateFromStores;
   let stateFromStores1;
   let obj = channels(stateFromStores[4]);
-  const items = [getVoiceStatesForGuild];
+  const items = [closure_5];
   const items1 = [guildId];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_5.getVoiceStates(guildId), items1);
-  const items2 = [handleConnectionOpen];
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getVoiceStates(guildId), items1);
+  const items2 = [closure_4];
   stateFromStores1 = channels(stateFromStores[4]).useStateFromStores(items2, () => voiceChannelId.getVoiceChannelId());
   const items3 = [channels, stateFromStores1, stateFromStores];
   const stageIcon = stateFromStores1.useMemo(() => channels(stateFromStores[5]).isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores), items3);
   const obj2 = channels(stateFromStores[4]);
-  obj = { channels, selectedChannelId: "r", selectedVoiceChannelId: "ct", voiceStates: null };
+  obj = { channels, selectedChannelId: "r", selectedVoiceChannelId: false, voiceStates: false };
   obj[2] = stateFromStores1;
   obj[3] = stateFromStores;
   const summarizedVoiceUsers = channels(stateFromStores[5]).computeSummarizedVoiceUsers(obj);

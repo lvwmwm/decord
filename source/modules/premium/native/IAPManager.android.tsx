@@ -1,11 +1,12 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 16695
+// Function ID: 16696
 // Name: prototype
-// Dependencies: [5038, 2]
+// Dependencies: [5043, 2]
 
-// Module 16599 (prototype)
-import "initialize";
+// Module 16695 (prototype)
+import initializeDefault from "initialize" /* 5043 */;
 
+initializeDefault;
 let prototype = function IAPManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = {

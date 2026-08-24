@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 458 (AppState)
+import getAll from "get" /* 30 */;
 
-export default require("get").getEnforcing("AppState");
+
+export default getAll.getEnforcing("AppState");

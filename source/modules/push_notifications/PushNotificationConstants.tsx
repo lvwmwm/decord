@@ -1,12 +1,14 @@
-// Module ID: 5259
-// Function ID: 5260
+// Module ID: 5264
+// Function ID: 5265
 // Name: str2
 // Dependencies: [1626, 1625, 500, 2]
 // Exports: getDevicePushProvider
 
-// Module 5259 (str2)
-import getConstants from "getConstants";
-import isMetaQuest from "isMetaQuest";
+// Module 5264 (str2)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+import getConstants from "getConstants" /* 1626 */;
+import isMetaQuest from "isMetaQuest" /* 1625 */;
 
 getConstants = getConstants.getConstants();
 let str;
@@ -36,7 +38,7 @@ if (!startsWithResult) {
   }
   str4 = str5;
 }
-const result = require("set").fileFinishedImporting("modules/push_notifications/PushNotificationConstants.tsx");
+const result = set.fileFinishedImporting("modules/push_notifications/PushNotificationConstants.tsx");
 
 export const BUNDLE_ID = str;
 export const IS_QUEST_RELEASE = isMetaQuest;
@@ -52,7 +54,7 @@ export const getDevicePushProvider = function getDevicePushProvider() {
     if (!obj.isAndroid()) {
       str = str2;
     }
-    obj = require(500) /* set */;
+    obj = set2;
   }
   return str;
 };

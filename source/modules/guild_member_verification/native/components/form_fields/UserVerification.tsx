@@ -1,55 +1,54 @@
-// Module ID: 8559
-// Function ID: 8560
+// Module ID: 8598
+// Function ID: 8599
 // Name: UserVerification
-// Dependencies: [19, 21, 4661, 4200, 8560, 4734, 1236, 2]
+// Dependencies: [19, 21, 4668, 4204, 8599, 4739, 1236, 2]
 // Exports: default
 
-// Module 8559 (UserVerification)
-import "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8598 (UserVerification)
+import noopAll from "noop" /* 19 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4204 */;
+import Text from "Text" /* 4739 */;
+import BaseIdentityVerificationFieldDefault from "BaseIdentityVerificationField" /* 8599 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ emailPhoneNote: { marginTop: 8, marginBottom: 12 } });
-const result = require("createCacheKey").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/UserVerification.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/UserVerification.tsx");
 
 export default function UserVerification(arg0) {
-  let field;
-  let verification;
   ({ verification, field } = arg0);
   if (null == field.platform) {
     return null;
   } else {
     const platform = field.platform;
-    let tmp5 = platform === require(4200) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.PHONE;
+    let tmp5 = platform === MAX_RESULTS_PER_PAGE.UserVerificationFieldPlatforms.PHONE;
     if (tmp5) {
       let obj = { passesVerification: null, platform: null };
-      obj[0] = verification[tmp12(undefined, 4200).UserVerificationFieldPlatforms.PHONE];
-      obj[1] = tmp12(4200).UserVerificationFieldPlatforms.PHONE;
-      tmp5 = callback(importDefault(8560), obj);
-      const tmp4 = importDefault(8560);
+      obj[0] = verification[tmp12(undefined, 4204).UserVerificationFieldPlatforms.PHONE];
+      obj[1] = tmp12(4204).UserVerificationFieldPlatforms.PHONE;
+      tmp5 = callback(BaseIdentityVerificationFieldDefault, obj);
+      const tmp4 = BaseIdentityVerificationFieldDefault;
     }
     const items = [tmp5, , ];
     obj = { passesVerification: null, platform: null };
-    obj[0] = verification[require(undefined, 4200) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL];
-    obj[1] = require(4200) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL;
-    items[1] = callback(importDefault(8560), obj);
+    obj[0] = verification[MAX_RESULTS_PER_PAGE.UserVerificationFieldPlatforms.EMAIL];
+    obj[1] = MAX_RESULTS_PER_PAGE.UserVerificationFieldPlatforms.EMAIL;
+    items[1] = callback(BaseIdentityVerificationFieldDefault, obj);
     obj = { style: null, variant: "heading-deprecated-12/medium", color: "text-default", children: null };
     obj[0] = tmp.emailPhoneNote;
-    if (platform === require(4200) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.PHONE) {
+    if (platform === MAX_RESULTS_PER_PAGE.UserVerificationFieldPlatforms.PHONE) {
       const intl2 = tmp12(1236).intl;
       let stringResult = intl2.string(tmp12(1236).t["jMh+TY"]);
     } else {
       const intl = tmp12(1236).intl;
       stringResult = intl.string(tmp12(1236).t.Vgv9ip);
     }
-    const obj1 = { children: null };
+    obj1 = { children: null };
     obj[3] = stringResult;
-    items[2] = callback(require(4734) /* Text */.Text, obj);
+    items[2] = callback(Text.Text, obj);
     obj1[0] = items;
     return closure_5(closure_4, obj1);
   }

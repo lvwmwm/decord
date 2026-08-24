@@ -1,32 +1,38 @@
-// Module ID: 14126
-// Function ID: 14127
+// Module ID: 14194
+// Function ID: 14195
 // Name: route
-// Dependencies: [8198, 676, 10669, 1236, 2853, 4992, 14127, 2]
+// Dependencies: [8238, 676, 10708, 1236, 2854, 4997, 14195, 2]
 
-// Module 14126 (route)
-import createToggle from "createToggle";
+// Module 14194 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2854 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4997 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.piqs0o);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.piqs0o);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT,
   useTrailing() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return "" + intl.string(require(1236) /* getSystemLocale */.t.XxRj7f) + " \u2022 " + intl2.string(importDefault(2853).FTawSP);
+    const intl = getSystemLocale.intl;
+    const intl2 = getSystemLocale.intl;
+    return "" + intl.string(getSystemLocale.t.XxRj7f) + " \u2022 " + intl2.string(messagesProxyDefault.FTawSP);
   },
-  usePredicate: require("useAgeVerificationRunner").useShowAssignedAgeGroupSettings,
+  usePredicate: useAgeVerificationRunner.useShowAssignedAgeGroupSettings,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.AGE_GROUP,
+  route: ME.UserSettingsSections.AGE_GROUP,
   getComponent() {
-    return require(14127) /* SettingsAgeGroupHeader */.default;
+    return require(14195) /* SettingsAgeGroupHeader */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupAssignedAdultSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupAssignedAdultSetting.tsx");
 
 export default route;

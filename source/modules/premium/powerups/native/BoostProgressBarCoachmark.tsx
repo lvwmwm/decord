@@ -1,53 +1,53 @@
-// Module ID: 15429
-// Function ID: 15430
+// Module ID: 15493
+// Function ID: 15494
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 1388, 21, 4661, 8874, 1236, 2367, 4104, 9314, 2]
+// Dependencies: [19, 17, 1388, 21, 4668, 8911, 1236, 2368, 4107, 9351, 2]
 // Exports: default
 
-// Module 15429 (BoostProgressBarCoachmark)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15493 (BoostProgressBarCoachmark)
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_7 = createCacheKey.createStyles({ riveContainer: { width: 120, height: 80, alignSelf: "center" } });
-const result = require("ContentDismissActionType").fileFinishedImporting("modules/premium/powerups/native/BoostProgressBarCoachmark.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/powerups/native/BoostProgressBarCoachmark.tsx");
 
 export default function BoostProgressBarCoachmark(guild) {
   guild = guild.guild;
   const markAsDismissed = guild.markAsDismissed;
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
   let callback1;
   const tmp = callback();
   dependencyMap = tmp;
   const items = [markAsDismissed];
   callback = callback.useCallback(() => {
-    markAsDismissed(outer1_5.USER_DISMISS);
+    markAsDismissed(closure_1_5.USER_DISMISS);
   }, items);
   const items1 = [guild.id, markAsDismissed];
   callback1 = callback.useCallback(() => {
-    markAsDismissed(outer1_5.TAKE_ACTION);
-    markAsDismissed(_undefined[5]).saveGuild(guild.id, { premiumProgressBarEnabled: true });
+    markAsDismissed(closure_1_5.TAKE_ACTION);
+    markAsDismissed(8911).saveGuild(guild.id, { premiumProgressBarEnabled: true });
   }, items1);
   const items2 = [callback, callback1, tmp.riveContainer];
   const memo = callback.useMemo(() => {
     const obj = { title: null, description: null, visible: true, position: "bottom", offsetY: 8, onDismiss: null, renderImgComponent: null, buttonLabel: null, buttonVariant: "primary", onButtonPress: null };
-    const intl = guild(_undefined[6]).intl;
-    obj[0] = intl.string(markAsDismissed(_undefined[7]).uwV2dH);
-    const intl2 = guild(_undefined[6]).intl;
-    obj[1] = intl2.string(markAsDismissed(_undefined[7]).MIwlcR);
+    const intl = guild(1236).intl;
+    obj[0] = intl.string(markAsDismissed(2368).uwV2dH);
+    const intl2 = guild(1236).intl;
+    obj[1] = intl2.string(markAsDismissed(2368).MIwlcR);
     obj[5] = callback;
     obj[6] = function renderImgComponent() {
-      return outer1_6(outer1_4, { style: riveContainer.riveContainer, children: outer1_6(outer1_0(outer1_2[8]).BoostThisServerRive, { stateMachine: "State Machine 1" }) });
+      return closure_1_6(closure_1_4, { style: riveContainer.riveContainer, children: closure_1_6(closure_1_0(closure_1_2[8]).BoostThisServerRive, { stateMachine: "State Machine 1" }) });
     };
-    const intl3 = guild(_undefined[6]).intl;
-    obj[7] = intl3.string(guild(_undefined[6]).t["0CJWP2"]);
+    const intl3 = guild(1236).intl;
+    obj[7] = intl3.string(guild(1236).t["0CJWP2"]);
     obj[9] = callback1;
     return obj;
   }, items2);
-  const coachmark = guild(9314).useCoachmark(guild.targetRef, memo);
+  const coachmark = guild(9351).useCoachmark(guild.targetRef, memo);
   return null;
 };

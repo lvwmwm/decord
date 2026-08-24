@@ -5,7 +5,8 @@
 // Exports: isPremium, isPremiumAtLeast, isPremiumAtMost, isPremiumExactly
 
 // Module 1945 (isPremiumAtLeast)
-import { PremiumTypeOrder } from "GuildFeatures";
+import set from "set" /* 2 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 function isPremiumAtLeast(premiumType, TIER_2) {
   let tmp = null == TIER_2;
@@ -41,7 +42,8 @@ function isPremiumExactly(currentUser, TIER_2) {
   }
   return tmp;
 }
-const result = require("set").fileFinishedImporting("utils/PremiumTypeUtils.tsx");
+const PremiumTypeOrder = GuildFeatures.PremiumTypeOrder;
+const result = set.fileFinishedImporting("utils/PremiumTypeUtils.tsx");
 
 export default { isPremiumAtLeast, isPremium, isPremiumExactly };
 export { isPremiumAtLeast };

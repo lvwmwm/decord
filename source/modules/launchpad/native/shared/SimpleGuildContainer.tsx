@@ -1,30 +1,26 @@
-// Module ID: 16191
-// Function ID: 16192
+// Module ID: 16288
+// Function ID: 16289
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 4661, 8497, 15596, 712, 16190, 4097, 16192, 4115, 4744, 2]
+// Dependencies: [19, 17, 21, 4668, 8536, 15662, 712, 16287, 4100, 16289, 4119, 4749, 2]
 // Exports: SimpleGuildContainer, SimpleGuildContainerAnimated
 
-// Module 16191 (SimpleGuildContainer)
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16288 (SimpleGuildContainer)
+import MaskedBadgeDefault from "MaskedBadge" /* 8536 */;
+import getMediaIcon from "getMediaIcon" /* 15662 */;
+import getMediaIconDefault from "getMediaIcon" /* 15662 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);
-({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: closure_6, Fragment: error, jsxs: closure_8 } = jsxProd);
 let c9 = 48;
 let closure_10 = { mass: 0.2, damping: 40, stiffness: 300, overshootClamping: true, restSpeedThreshold: 1 };
 let closure_11 = createCacheKey.createStyles({ badgeWrapper: { position: "absolute", right: -4, bottom: 0 } });
 let closure_12 = importAllResult.memo((backgroundColor) => {
-  let badge;
-  let unread;
   ({ badge, unread } = backgroundColor);
   if (badge > 0) {
     let obj = { style: null, children: null };
@@ -33,7 +29,7 @@ let closure_12 = importAllResult.memo((backgroundColor) => {
     obj[0] = badge;
     obj[1] = unread;
     obj[2] = backgroundColor.backgroundColor;
-    obj[1] = callback(importDefault(8497), obj);
+    obj[1] = callback(MaskedBadgeDefault, obj);
     let tmp2 = callback(closure_5, obj);
   } else {
     tmp2 = null;
@@ -41,9 +37,6 @@ let closure_12 = importAllResult.memo((backgroundColor) => {
   return tmp2;
 });
 let closure_13 = importAllResult.memo((arg0) => {
-  let activityIndicatorState;
-  let backgroundColor;
-  let guildId;
   ({ guildId, activityIndicatorState, backgroundColor } = arg0);
   let source;
   if (activityIndicatorState != null) {
@@ -55,16 +48,16 @@ let closure_13 = importAllResult.memo((arg0) => {
     obj[0] = backgroundColor;
     obj[0] = obj;
     ({ source: obj3[1], IconComponent: obj3[2], isCurrentUserConnected: obj3[3] } = activityIndicatorState);
-    let tmp2 = callback(require(15596) /* getMediaIcon */.GuildsBarActivityIndicatorBase, obj);
+    let tmp2 = callback(getMediaIcon.GuildsBarActivityIndicatorBase, obj);
   } else {
     tmp2 = null;
     if (null != guildId) {
       obj = { guildId: null, style: null };
       obj[0] = guildId;
-      const obj1 = { backgroundColor: null };
+      obj1 = { backgroundColor: null };
       obj1[0] = backgroundColor;
       obj[1] = obj1;
-      tmp2 = callback(importDefault(15596), obj);
+      tmp2 = callback(getMediaIconDefault, obj);
     }
   }
   return tmp2;
@@ -74,16 +67,9 @@ let closure_15 = { code: "function SimpleGuildContainerTsx2(){const{selected}=th
 let closure_16 = { code: "function SimpleGuildContainerTsx3(){const{withSpring,toRadius,springConfig,GUILD_SIZE,iconBackground}=this.__closure;return{borderRadius:withSpring(toRadius.get(),springConfig),width:GUILD_SIZE,height:GUILD_SIZE,overflow:'hidden',backgroundColor:iconBackground.color};}" };
 let closure_17 = { code: "function SimpleGuildContainerTsx4(){const{withSpring,toRadius,springConfig,interpolate,toStrokeWidth,borderColor,GUILD_SIZE}=this.__closure;return{borderRadius:withSpring(toRadius.get()+2,springConfig),borderWidth:withSpring(interpolate(toStrokeWidth.get(),[0,1],[0,2]),springConfig),borderColor:borderColor,position:'absolute',top:-2,left:-2,width:GUILD_SIZE+4,height:GUILD_SIZE+4};}" };
 let closure_18 = { code: "function SimpleGuildContainerTsx5(){const{withSpring,toRadius,springConfig,interpolate,toStrokeWidth,backgroundColor,GUILD_SIZE}=this.__closure;return{borderRadius:withSpring(toRadius.get(),springConfig),borderWidth:withSpring(interpolate(toStrokeWidth.get(),[0,1],[0,3]),springConfig),borderColor:backgroundColor,position:'absolute',top:0,left:0,width:GUILD_SIZE,height:GUILD_SIZE};}" };
-const result = require("jsxProd").fileFinishedImporting("modules/launchpad/native/shared/SimpleGuildContainer.tsx");
+const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/SimpleGuildContainer.tsx");
 
 export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
-  let accessibilityLabel;
-  let children;
-  let guildIconRef;
-  let guildId;
-  let onAccessibilityAction;
-  let onLayout;
-  let style;
   selected = selected.selected;
   let num = selected.size;
   ({ guildIconRef, guildId, style, children } = selected);
@@ -117,7 +103,7 @@ export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
   iconStroke = tmp3.iconStroke;
   let obj = selected(borderRadius[8]);
   token = obj.useToken(num(borderRadius[6]).colors.BACKGROUND_BRAND);
-  let obj1 = badge;
+  obj1 = badge;
   let items = [selected, flag2, , , , , , , ];
   let source;
   if (activityIndicatorState != null) {
@@ -167,7 +153,7 @@ export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
     } else {
       obj = { children: null };
       obj = { style: null };
-      const obj1 = { borderRadius: null, borderWidth: 2, borderColor: null, position: "absolute", top: -2, left: -2, width: null, height: null };
+      obj1 = { borderRadius: null, borderWidth: 2, borderColor: null, position: "absolute", top: -2, left: -2, width: null, height: null };
       obj1[0] = borderRadius + 2;
       obj1[2] = token;
       obj1[6] = 2 + 4;
@@ -220,24 +206,6 @@ export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
   return iconStroke(backgroundColor, obj);
 };
 export const SimpleGuildContainerAnimated = function SimpleGuildContainerAnimated(arg0) {
-  let accessibilityLabel;
-  let activityIndicatorState;
-  let backgroundColor;
-  let badge;
-  let borderRadius;
-  let children;
-  let folder;
-  let guildIconRef;
-  let guildId;
-  let onAccessibilityAction;
-  let onLayout;
-  let onLongPress;
-  let onPress;
-  let selected;
-  let size;
-  let style;
-  let unread;
-  let usingCutout;
   ({ style, selected } = arg0);
   ({ size, borderRadius, backgroundColor } = arg0);
   ({ folder, usingCutout, onPress } = arg0);
@@ -263,7 +231,7 @@ export const SimpleGuildContainerAnimated = function SimpleGuildContainerAnimate
   V.__workletHash = 5259600477627;
   V.__initData = closure_14;
   derivedValue = obj.useDerivedValue(V);
-  let obj1 = selected(tmp2[10]);
+  obj1 = selected(tmp2[10]);
   const fn = function z() {
     let num = 0;
     if (selected) {
@@ -280,9 +248,9 @@ export const SimpleGuildContainerAnimated = function SimpleGuildContainerAnimate
     constructor() {
       obj = { borderRadius: null, width: null, height: null, overflow: "hidden", backgroundColor: null };
       obj2 = selected(iconBackground[11]);
-      obj[0] = obj2.withSpring(c4.get(), outer1_10);
-      obj[1] = outer1_9;
-      obj[2] = outer1_9;
+      obj[0] = obj2.withSpring(closure_4.get(), closure_1_10);
+      obj[1] = closure_1_9;
+      obj[2] = closure_1_9;
       obj[4] = iconBackground.color;
       return obj;
     }
@@ -295,11 +263,10 @@ export const SimpleGuildContainerAnimated = function SimpleGuildContainerAnimate
   BRAND_500 = tmp(tmp2[6]).unsafe_rawColors.BRAND_500;
   let obj4 = selected(tmp2[10]);
   const fn2 = function j() {
-    const obj = { borderRadius: null, borderWidth: null, borderColor: null, position: "absolute", top: -2, left: -2, width: 52, height: 52 };
-    obj[0] = selected(iconBackground[11]).withSpring(derivedValue.get() + 2, outer1_10);
+    const obj = { borderRadius: selected(iconBackground[11]).withSpring(derivedValue.get() + 2, closure_1_10), borderWidth: null, borderColor: null, position: "absolute", top: -2, left: -2, width: 52, height: 52 };
     const obj2 = selected(iconBackground[11]);
     const obj3 = selected(iconBackground[11]);
-    obj[1] = obj3.withSpring(selected(iconBackground[10]).interpolate(derivedValue1.get(), [0, 1], [0, 2]), outer1_10);
+    obj[1] = obj3.withSpring(selected(iconBackground[10]).interpolate(derivedValue1.get(), [0, 1], [0, 2]), closure_1_10);
     obj[2] = BRAND_500;
     return obj;
   };
@@ -312,13 +279,13 @@ export const SimpleGuildContainerAnimated = function SimpleGuildContainerAnimate
     constructor() {
       obj = { borderRadius: null, borderWidth: null, borderColor: null, position: "absolute", top: 0, left: 0, width: null, height: null };
       obj2 = selected(iconBackground[11]);
-      obj[0] = obj2.withSpring(c4.get(), outer1_10);
+      obj[0] = obj2.withSpring(closure_4.get(), closure_1_10);
       obj3 = selected(iconBackground[11]);
       obj4 = selected(iconBackground[10]);
-      obj[1] = obj3.withSpring(obj4.interpolate(c5.get(), [0, 1], [0, 3]), outer1_10);
+      obj[1] = obj3.withSpring(obj4.interpolate(closure_5.get(), [0, 1], [0, 3]), closure_1_10);
       obj[2] = backgroundColor;
-      obj[6] = outer1_9;
-      obj[7] = outer1_9;
+      obj[6] = closure_1_9;
+      obj[7] = closure_1_9;
       return obj;
     }
   }

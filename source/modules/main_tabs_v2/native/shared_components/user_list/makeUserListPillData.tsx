@@ -1,21 +1,23 @@
-// Module ID: 9638
-// Function ID: 9639
+// Module ID: 9677
+// Function ID: 9678
 // Name: makeUserListPillData
-// Dependencies: [19, 21, 4219, 1297, 2]
+// Dependencies: [19, 21, 4223, 1297, 2]
 // Exports: default
 
-// Module 9638 (makeUserListPillData)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 9677 (makeUserListPillData)
+import noopAll from "noop" /* 19 */;
+import Button from "Button" /* 1297 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("nameFromUser").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/makeUserListPillData.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/makeUserListPillData.tsx");
 
 export default function makeUserListPillData(id) {
-  let obj = { id: id.id, text: null, icon: null };
-  obj[1] = importDefault(4219).getName(id);
-  obj = { user: id, guildId: "Array", size: null };
-  obj[2] = require(1297) /* Button */.AvatarSizes.XXSMALL;
-  obj[2] = jsx(require(1297) /* Button */.Avatar, { user: id, guildId: "Array", size: null });
+  let obj = { id: id.id, text: nameFromUserDefault.getName(id), icon: null };
+  obj = { user: id, guildId: "Array", size: -1 };
+  obj[2] = Button.AvatarSizes.XXSMALL;
+  obj[2] = jsx(Button.Avatar, { user: id, guildId: "Array", size: -1 });
   return obj;
 };

@@ -4,7 +4,9 @@
 // Dependencies: [1043, 1039, 1042, 1045]
 
 // Module 1044 (initMetric)
-const require = arg1;
+import getNavigationEntry from "getNavigationEntry" /* 1043 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.initMetric = (name) => {
@@ -12,7 +14,7 @@ arg5.initMetric = (name) => {
   if (arg1 === undefined) {
     num = -1;
   }
-  let obj = require(1043) /* getNavigationEntry */;
+  let obj = getNavigationEntry;
   const navigationEntry = obj.getNavigationEntry();
   let str = "navigate";
   let str2 = "navigate";

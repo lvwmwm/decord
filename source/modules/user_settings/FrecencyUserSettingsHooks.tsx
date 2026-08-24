@@ -1,15 +1,15 @@
-// Module ID: 10200
-// Function ID: 10201
+// Module ID: 10239
+// Function ID: 10240
 // Name: useFrecencySettings
 // Dependencies: [19, 1340, 1374, 589, 2]
 // Exports: useFrecencySettings
 
-// Module 10200 (useFrecencySettings)
-import noop from "noop";
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+// Module 10239 (useFrecencySettings)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
 
 const require = arg1;
-const result = require("updateUserGuildSettings").fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");
 
 export const useFrecencySettings = function useFrecencySettings(flag2) {
   let flag = flag2;
@@ -19,10 +19,10 @@ export const useFrecencySettings = function useFrecencySettings(flag2) {
   const items = [flag];
   const effect = React.useEffect(() => {
     if (flag) {
-      const FrecencyUserSettingsActionCreators = flag(outer1_1[2]).FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators = flag(closure_1_1[2]).FrecencyUserSettingsActionCreators;
       const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     }
   }, items);
-  const items1 = [handleConnectionClosedOrResumed];
+  const items1 = [closure_3];
   return flag(589).useStateFromStores(items1, () => obj.frecencyWithoutFetchingLatest);
 };

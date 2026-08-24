@@ -1,20 +1,21 @@
-// Module ID: 15033
-// Function ID: 15034
+// Module ID: 15097
+// Function ID: 15098
 // Name: UserSettingsSensitiveContentFilters
-// Dependencies: [19, 8198, 21, 1236, 10669, 13991, 2]
+// Dependencies: [19, 8238, 21, 1236, 10708, 14059, 2]
 // Exports: default
 
-// Module 15033 (UserSettingsSensitiveContentFilters)
-import noop from "noop";
-import { MobileUserSettings } from "MobileUserSettings";
-import { jsx } from "jsxProd";
+// Module 15097 (UserSettingsSensitiveContentFilters)
+import _modDef14059 from "module_14059" /* 14059 */;
+import closure_3 from "noop" /* 19 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 8238 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/family_center/native/ParentalControlsSensitiveContentFiltersScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/family_center/native/ParentalControlsSensitiveContentFiltersScreen.tsx");
 
 export default function UserSettingsSensitiveContentFilters() {
   const node = React.useMemo(() => {
-    let obj = callback(10669);
+    let obj = callback(10708);
     obj = { sections: null };
     obj = { label: null, settings: null, subLabel: null };
     const intl = callback(1236).intl;
@@ -25,7 +26,7 @@ export default function UserSettingsSensitiveContentFilters() {
     const intl2 = callback(1236).intl;
     obj[2] = intl2.string(callback(1236).t.Wnojv1);
     const items1 = [obj, ];
-    const obj1 = { label: null, settings: null, subLabel: null };
+    obj1 = { label: null, settings: null, subLabel: null };
     const intl3 = callback(1236).intl;
     obj1[0] = intl3.string(callback(1236).t["16/3Bi"]);
     const items2 = [, ];
@@ -37,5 +38,5 @@ export default function UserSettingsSensitiveContentFilters() {
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return jsx(importDefault(13991), { node });
+  return jsx(_modDef14059, { node });
 };

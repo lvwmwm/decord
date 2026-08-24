@@ -1,20 +1,22 @@
-// Module ID: 16687
-// Function ID: 16688
+// Module ID: 16783
+// Function ID: 16784
 // Name: _terminate
-// Dependencies: [5, 1994, 1922, 4045, 7628, 1924, 676, 505, 5038, 7928, 4039, 12898, 2]
+// Dependencies: [5, 1995, 1922, 4048, 7666, 1924, 676, 505, 5043, 7967, 4042, 12953, 2]
 
-// Module 16687 (_terminate)
-import GuildFeatures from "GuildFeatures";
-import _getSystemLocale from "_getSystemLocale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import reset from "reset";
-import createEmptyPromotionsByType from "createEmptyPromotionsByType";
-import { PremiumTypes } from "GuildFeatures";
-import { EntitlementTypes } from "ME";
-import { SubscriptionTypes } from "sum";
-import "initialize";
+// Module 16783 (_terminate)
+import initializeDefault from "initialize" /* 5043 */;
+import fetchActivePromotions from "fetchActivePromotions" /* 7967 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "reset" /* 4048 */;
+import closure_7 from "createEmptyPromotionsByType" /* 7666 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { EntitlementTypes } from "ME" /* 676 */;
+import { SubscriptionTypes } from "sum" /* 505 */;
 
-const require = arg1;
+require = arg1;
+initializeDefault;
 class PromotionsManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -23,14 +25,14 @@ class PromotionsManager extends tmp2 {
     applyArgumentsResult.actions = obj;
     map = new Map();
     onLocaleChanged = applyArgumentsResult.onLocaleChanged;
-    result = map.set(_getSystemLocale, onLocaleChanged.bind(applyArgumentsResult));
+    result = map.set(closure_4, onLocaleChanged.bind(applyArgumentsResult));
     onSubscriptionStateChanged = applyArgumentsResult.onSubscriptionStateChanged;
-    result1 = result.set(reset, onSubscriptionStateChanged.bind(applyArgumentsResult));
+    result1 = result.set(closure_6, onSubscriptionStateChanged.bind(applyArgumentsResult));
     onPromotionsFetchSettled = applyArgumentsResult.onPromotionsFetchSettled;
-    applyArgumentsResult.stores = result1.set(createEmptyPromotionsByType, onPromotionsFetchSettled.bind(applyArgumentsResult));
+    applyArgumentsResult.stores = result1.set(closure_7, onPromotionsFetchSettled.bind(applyArgumentsResult));
     applyArgumentsResult.lastSubscriptionStateSignature = null;
     applyArgumentsResult.hasPendingSubscriptionRefetch = false;
-    applyArgumentsResult.maybeFetchBogoPromotion = GuildFeatures(function*() {
+    applyArgumentsResult.maybeFetchBogoPromotion = closure_3(function*() {
       if (v0 === 2) {
         v0 = 3;
         HermesBuiltin.throwTypeError();
@@ -42,7 +44,7 @@ class PromotionsManager extends tmp2 {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -57,17 +59,17 @@ class PromotionsManager extends tmp2 {
               obj[0] = arg1;
               return obj;
             } else {
-              const currentUser = outer1_5.getCurrentUser();
-              if (!obj6.isPremiumExactly(currentUser, outer1_8.TIER_2)) {
-                let obj1 = v0(tmp15[11]);
+              const currentUser = closure_1_5.getCurrentUser();
+              if (!obj6.isPremiumExactly(currentUser, closure_1_8.TIER_2)) {
+                obj1 = v0(tmp15[11]);
                 v02 = 1;
                 v0 = 1;
                 obj1 = { value: null, done: false };
                 obj1[0] = obj1.maybeFetchActiveBogoPromotion();
                 return obj1;
               }
-              obj6 = v02(outer1_2[10]);
-              tmp15 = outer1_2;
+              obj6 = v02(closure_1_2[10]);
+              tmp15 = closure_1_2;
             }
           } else if (arg0 === 1) {
             v0 = 3;
@@ -79,7 +81,7 @@ class PromotionsManager extends tmp2 {
             return obj;
           }
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp6) {
           v0 = tmp;
           throw tmp6;
@@ -95,13 +97,13 @@ prototype["_terminate"] = function _terminate() {
   this.lastSubscriptionStateSignature = null;
 };
 prototype["onLocaleChanged"] = function onLocaleChanged() {
-  let tmp = null != createEmptyPromotionsByType.lastFetchedActivePromotions;
+  let tmp = null != closure_7.lastFetchedActivePromotions;
   if (tmp) {
-    tmp = createEmptyPromotionsByType.lastFetchedActivePromotionsLocale !== locale.locale;
+    tmp = closure_7.lastFetchedActivePromotionsLocale !== locale.locale;
   }
   if (tmp) {
-    const result = require(7928) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-    const obj = require(7928) /* fetchActivePromotions */;
+    const result = fetchActivePromotions.maybeFetchActivePromotions(false);
+    const obj = fetchActivePromotions;
   }
 };
 prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
@@ -118,7 +120,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -133,7 +135,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
             obj[0] = arg1;
             return obj;
           } else {
-            let obj1 = v0(outer1_2[9]);
+            obj1 = v0(closure_1_2[9]);
             const result = obj1.maybeFetchActivePromotions();
             c1 = 1;
             v0 = 1;
@@ -151,7 +153,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         v0 = tmp;
@@ -180,38 +182,38 @@ prototype["onSubscriptionStateChanged"] = function onSubscriptionStateChanged() 
   if (str !== this.lastSubscriptionStateSignature) {
     self.lastSubscriptionStateSignature = str;
     if (!tmp3) {
-      if (createEmptyPromotionsByType.isFetchingActivePromotions) {
+      if (closure_7.isFetchingActivePromotions) {
         self.hasPendingSubscriptionRefetch = true;
       } else {
-        const result = require(7928) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-        const obj3 = require(7928) /* fetchActivePromotions */;
+        const result = fetchActivePromotions.maybeFetchActivePromotions(false);
+        const obj3 = fetchActivePromotions;
       }
     }
   }
 };
 prototype["onPromotionsFetchSettled"] = function onPromotionsFetchSettled() {
   if (this.hasPendingSubscriptionRefetch) {
-    if (!createEmptyPromotionsByType.isFetchingActivePromotions) {
+    if (!closure_7.isFetchingActivePromotions) {
       tmp.hasPendingSubscriptionRefetch = false;
-      const result = require(7928) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-      const obj = require(7928) /* fetchActivePromotions */;
+      const result = fetchActivePromotions.maybeFetchActivePromotions(false);
+      const obj = fetchActivePromotions;
     }
   }
 };
 prototype["onMobilePurchaseSuccess"] = function onMobilePurchaseSuccess() {
-  const result = require(7928) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+  const result = fetchActivePromotions.maybeFetchActivePromotions(false);
 };
 prototype["onOfferUpdated"] = function onOfferUpdated() {
-  const result = require(7928) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+  const result = fetchActivePromotions.maybeFetchActivePromotions(false);
 };
 prototype["onVCRedeemed"] = function onVCRedeemed(entitlements) {
   entitlements = entitlements.entitlements;
   if (entitlements.some((type) => type.type === constants.FRACTIONAL_REDEMPTION)) {
-    const result = require(7928) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-    const obj = require(7928) /* fetchActivePromotions */;
+    const result = fetchActivePromotions.maybeFetchActivePromotions(false);
+    const obj = fetchActivePromotions;
   }
 };
 const promotionsManager = new PromotionsManager();
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/premium/promotions/PromotionsManager.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/promotions/PromotionsManager.tsx");
 
 export default promotionsManager;

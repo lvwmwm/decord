@@ -1,56 +1,50 @@
-// Module ID: 16094
-// Function ID: 16095
-// Dependencies: [19, 17, 4030, 676, 21, 4661, 6782, 712, 11763, 589, 698, 1236, 8315, 4823, 1297, 2]
+// Module ID: 16192
+// Function ID: 16193
+// Dependencies: [19, 17, 4033, 676, 21, 4668, 6819, 712, 11812, 589, 698, 1236, 8355, 4828, 1297, 2]
 
-// Module 16094
-import importAllResult from "noop";
-import { View } from "get ActivityIndicator";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import ME from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
-import importDefaultResult1 from "createTextStyle";
+// Module 16192
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let Fonts;
-let closure_6;
-let error;
 const require = arg1;
 let c3 = importAllResult;
 ({ Fonts, AnalyticEvents: closure_6, MessageFlags: error } = ME);
 let obj = { systemContent: null, messageContent: null };
 obj = { fontStyle: "italic" };
-const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_DEFAULT, 12));
+const merged = Object.assign(importDefaultResult(Fonts.PRIMARY_MEDIUM, ThemesDefault.colors.TEXT_DEFAULT, 12));
 obj.lineHeight = 16;
 obj[0] = obj;
 createCacheKey = {};
-const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_DEFAULT, 12));
+const merged1 = Object.assign(importDefaultResult(Fonts.PRIMARY_MEDIUM, ThemesDefault.colors.TEXT_DEFAULT, 12));
 createCacheKey.lineHeight = 16;
 obj[1] = createCacheKey;
 let closure_9 = createCacheKey.createStyles(obj);
+const importDefaultResult1 = importDefaultResult;
 const memoResult = importAllResult.memo(function MessageRequestPreview(channel) {
-  let error;
-  let isBlocked;
-  let isIgnored;
-  let loaded;
   channel = channel.channel;
   let message;
   const tmp = callback();
-  let obj = channel(11763);
+  let obj = channel(11812);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
-  const items = [markAllUserIdListsStale];
+  const items = [closure_5];
   const items1 = [message];
   const stateFromStoresObject = channel(589).useStateFromStoresObject(items, () => {
     let isBlockedForMessageResult = null != message;
     if (isBlockedForMessageResult) {
-      isBlockedForMessageResult = outer1_5.isBlockedForMessage(tmp);
+      isBlockedForMessageResult = closure_1_5.isBlockedForMessage(tmp);
     }
     const obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
     let isIgnoredForMessageResult = null != tmp;
     if (isIgnoredForMessageResult) {
-      isIgnoredForMessageResult = outer1_5.isIgnoredForMessage(tmp);
+      isIgnoredForMessageResult = closure_1_5.isIgnoredForMessage(tmp);
     }
     obj[1] = isIgnoredForMessageResult;
     return obj;
@@ -59,11 +53,11 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   ({ isBlocked, isIgnored } = stateFromStoresObject);
   const effect = importAllResult.useEffect(() => {
     if (null != message) {
-      let obj = message(outer1_2[10]);
+      let obj = message(closure_1_2[10]);
       obj = { is_spam: null, channel_id: null, other_user_id: null };
       ({ isSpam: obj2[0], id: obj2[1] } = channel);
       obj[2] = tmp.author.id;
-      obj.track(outer1_6.MESSAGE_REQUEST_PREVIEW_VIEWED, obj);
+      obj.track(closure_1_6.MESSAGE_REQUEST_PREVIEW_VIEWED, obj);
     }
   }, items2);
   if (error) {
@@ -94,7 +88,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(8315)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(8355)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -131,7 +125,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
         }
         stringResult = stringResult1;
         flag = false;
-        tmp2Result = tmp2(4823);
+        tmp2Result = tmp2(4828);
       } else {
         const intl = tmp2(1236).intl;
         stringResult = intl.string(tmp2(1236).t["0KfDxM"]);
@@ -142,6 +136,6 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   obj = { style: channel.style, children: jsx(tmp2(1297).LegacyText, { style: tmp14, numberOfLines: 3, ellipsizeMode: "tail", children: stringResult }) };
   return <View style={arg0.style}>{jsx(tmp2(1297).LegacyText, { style: tmp14, numberOfLines: 3, ellipsizeMode: "tail", children: stringResult })}</View>;
 });
-const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/message_request/native/MessageRequestPreview.tsx");
+const result = require("set").fileFinishedImporting("modules/message_request/native/MessageRequestPreview.tsx");
 
 export default memoResult;

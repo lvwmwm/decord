@@ -1,15 +1,17 @@
-// Module ID: 11642
-// Function ID: 11643
+// Module ID: 11691
+// Function ID: 11692
 // Name: handlePopAllLayers
 // Dependencies: [589, 709, 2]
 
-// Module 11642 (handlePopAllLayers)
-import { Store } from "initialize";
+// Module 11691 (handlePopAllLayers)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 function handlePopAllLayers() {
-  let closure_0 = [];
+  closure_0 = [];
 }
 let closure_0 = [];
+const Store = initializeDefault.Store;
 class LayerStore extends Store {
 }
 const prototype = LayerStore.prototype;
@@ -20,7 +22,7 @@ prototype["getLayers"] = function getLayers() {
   return closure_0;
 };
 LayerStore.displayName = "LayerStore";
-const layerStore = new LayerStore(require("dispatcher"), {
+const layerStore = new LayerStore(dispatcherDefault, {
   LAYER_PUSH: function handleAddLayer(component) {
     component = component.component;
     if (items.indexOf(component) >= 0) {

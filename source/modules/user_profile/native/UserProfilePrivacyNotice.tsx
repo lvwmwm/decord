@@ -1,41 +1,38 @@
-// Module ID: 12305
-// Function ID: 12306
+// Module ID: 12357
+// Function ID: 12358
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 676, 1388, 21, 4661, 712, 1306, 1236, 12306, 8152, 4066, 1377, 7366, 4734, 7360, 4330, 5433, 6368, 2]
+// Dependencies: [32, 19, 17, 676, 1388, 21, 4668, 712, 1306, 1236, 12358, 8191, 4069, 1377, 7404, 4739, 7398, 4334, 5438, 6399, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 12305 (UserProfilePrivacyNotice)
-import _slicedToArray from "_slicedToArray";
-import XSmallIcon from "XSmallIcon";
-import { View } from "CircleInformationIcon";
-import { UserSettingsSections } from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12357 (UserProfilePrivacyNotice)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { UserSettingsSections } from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: null, icon: null, text: null, closeButton: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_INFO, borderWidth: 1, borderColor: require("Themes").colors.ICON_FEEDBACK_INFO, borderRadius: require("Themes").radii.sm, padding: require("Themes").space.PX_12, flexDirection: "row", alignItems: "flex-start", gap: require("Themes").space.PX_8 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_FEEDBACK_INFO, borderWidth: 1, borderColor: ThemesDefault.colors.ICON_FEEDBACK_INFO, borderRadius: ThemesDefault.radii.sm, padding: ThemesDefault.space.PX_12, flexDirection: "row", alignItems: "flex-start", gap: ThemesDefault.space.PX_8 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexShrink: 0, marginTop: 2 };
 createCacheKey[2] = { flex: 1 };
 createCacheKey[3] = { flexShrink: 0 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfilePrivacyNotice.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfilePrivacyNotice.tsx");
 
 export default function UserProfilePrivacyNotice() {
-  let isInPrivateProfilesExperiment;
-  let tmp9;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   isInPrivateProfilesExperiment = undefined;
   let userIsTeen;
   let setting;
   let obj = isInPrivateProfilesExperiment(userIsTeen[10]);
   isInPrivateProfilesExperiment = obj.useIsInPrivateProfilesExperiment("UserProfilePrivacyNotice");
-  let obj1 = isInPrivateProfilesExperiment(userIsTeen[11]);
+  obj1 = isInPrivateProfilesExperiment(userIsTeen[11]);
   userIsTeen = obj1.useUserIsTeen();
   const ProfileVisibility = isInPrivateProfilesExperiment(userIsTeen[12]).ProfileVisibility;
   setting = ProfileVisibility.useSetting();
@@ -92,7 +89,7 @@ export default function UserProfilePrivacyNotice() {
     const intl2 = tmp2(tmp3[9]).intl;
     obj3[1] = intl2.string(tmp2(tmp3[9]).t.WAI6xu);
     obj3[2] = function onPress() {
-      return isInPrivateProfilesExperiment(outer1_6.USER_DISMISS);
+      return isInPrivateProfilesExperiment(closure_1_6.USER_DISMISS);
     };
     obj3[3] = tmp.closeButton;
     obj3[4] = callback(tmp2(tmp3[19]).XSmallIcon, { size: "xs", color: "icon-feedback-info" });

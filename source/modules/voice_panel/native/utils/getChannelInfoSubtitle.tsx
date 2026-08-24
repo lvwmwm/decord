@@ -1,11 +1,15 @@
-// Module ID: 16330
-// Function ID: 16331
+// Module ID: 16425
+// Function ID: 16426
 // Name: getChannelInfoSubtitle
-// Dependencies: [4796, 1236, 2]
+// Dependencies: [4801, 1236, 2]
 // Exports: default
 
-// Module 16330 (getChannelInfoSubtitle)
-const result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/getChannelInfoSubtitle.tsx");
+// Module 16425 (getChannelInfoSubtitle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getNicknameDefault from "getNickname" /* 4801 */;
+
+const result = set.fileFinishedImporting("modules/voice_panel/native/utils/getChannelInfoSubtitle.tsx");
 
 export default function getChannelInfoSubtitle(arg0, arg1, arg2) {
   let num = arg3;
@@ -15,21 +19,21 @@ export default function getChannelInfoSubtitle(arg0, arg1, arg2) {
   if (0 === arg2.length) {
     return null;
   } else if (1 === length) {
-    return importDefault(4796).getName(arg0, arg1, arg2[0]);
+    return getNicknameDefault.getName(arg0, arg1, arg2[0]);
   } else if (2 === length) {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     let obj = { user1: null, user2: null };
-    obj[0] = importDefault(4796).getName(arg0, arg1, arg2[0]);
-    const obj2 = importDefault(4796);
-    obj[1] = importDefault(4796).getName(arg0, arg1, arg2[1]);
-    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["lRD/ru"], obj);
+    obj[0] = getNicknameDefault.getName(arg0, arg1, arg2[0]);
+    const obj2 = getNicknameDefault;
+    obj[1] = getNicknameDefault.getName(arg0, arg1, arg2[1]);
+    return intl.formatToPlainString(getSystemLocale.t["lRD/ru"], obj);
   } else {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     obj = { user1: null, user2: null, numPeople: null };
-    obj[0] = importDefault(4796).getName(arg0, arg1, arg2[0]);
-    const obj6 = importDefault(4796);
-    obj[1] = importDefault(4796).getName(arg0, arg1, arg2[1]);
+    obj[0] = getNicknameDefault.getName(arg0, arg1, arg2[0]);
+    const obj6 = getNicknameDefault;
+    obj[1] = getNicknameDefault.getName(arg0, arg1, arg2[1]);
     obj[2] = arg2.length - 2 + num;
-    return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.RFCI3S, obj);
+    return intl2.formatToPlainString(getSystemLocale.t.RFCI3S, obj);
   }
 };

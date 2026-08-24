@@ -1,16 +1,18 @@
-// Module ID: 9626
-// Function ID: 9627
+// Module ID: 9663
+// Function ID: 9664
 // Name: frozen
-// Dependencies: [1931, 7426, 7629, 4040, 1924, 3975, 1403, 2]
+// Dependencies: [1931, 7464, 7667, 4043, 1924, 3978, 1403, 2]
 
-// Module 9626 (frozen)
-import "toJS";
-import createFromServer from "createFromServer";
-import closure_4 from "createFromServer";
-import closure_5 from "createFromServer";
-import { PremiumSubscriptionSKUToPremiumType as closure_6 } from "GuildFeatures";
+// Module 9663 (frozen)
+import toJSDefault from "toJS" /* 1931 */;
+import tDefault from "t" /* 3978 */;
+import closure_3 from "createFromServer" /* 7464 */;
+import closure_4 from "createFromServer" /* 7667 */;
+import closure_5 from "createFromServer" /* 4043 */;
+import { PremiumSubscriptionSKUToPremiumType as closure_6 } from "GuildFeatures" /* 1924 */;
 
 const require = arg1;
+toJSDefault;
 const frozen = Object.freeze({ PAYMENT_SOURCE_REQUIRED: 1, EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED: 2, NOT_SELF_REDEEMABLE: 4 });
 let GiftCodeRecord;
 class GiftCodeRecord extends tmp2 {
@@ -23,11 +25,6 @@ class GiftCodeRecord extends tmp2 {
 }
 const prototype = GiftCodeRecord.prototype;
 GiftCodeRecord["createFromServer"] = function createFromServer(user) {
-  let application_id;
-  let code;
-  let max_uses;
-  let sku_id;
-  let uses;
   let id = null;
   if (null != user.user) {
     id = user.user.id;
@@ -39,7 +36,7 @@ GiftCodeRecord["createFromServer"] = function createFromServer(user) {
   }
   let tmp4 = null;
   if (null != user.expires_at) {
-    tmp4 = importDefault(3975)(user.expires_at);
+    tmp4 = tDefault(user.expires_at);
   }
   const redeemed = user.redeemed;
   if (null != user.subscription_plan) {
@@ -61,8 +58,8 @@ GiftCodeRecord["createFromServer"] = function createFromServer(user) {
   }
   let fromServer1 = null;
   if (null != user.subscription_trial) {
-    fromServer1 = createFromServer.createFromServer(user.subscription_trial);
-    const tmp11 = createFromServer;
+    fromServer1 = closure_3.createFromServer(user.subscription_trial);
+    const tmp11 = closure_3;
   }
   const promotion = user.promotion;
   let fromServer2 = null;
@@ -98,8 +95,8 @@ prototype["isExpired"] = function isExpired() {
   const expiresAt = this.expiresAt;
   let isAfterResult = null != expiresAt;
   if (isAfterResult) {
-    isAfterResult = importDefault(3975)().isAfter(expiresAt);
-    const obj = importDefault(3975)();
+    isAfterResult = tDefault().isAfter(expiresAt);
+    const obj = tDefault();
   }
   return isAfterResult;
 };
@@ -162,7 +159,7 @@ Object.defineProperty(prototype, "analyticsData", {
 prototype["toString"] = function toString() {
   return this.code;
 };
-const result = require("createFromServer").fileFinishedImporting("records/GiftCodeRecord.tsx");
+const result = require("set").fileFinishedImporting("records/GiftCodeRecord.tsx");
 
 export default GiftCodeRecord;
 export const GiftCodeFlags = frozen;

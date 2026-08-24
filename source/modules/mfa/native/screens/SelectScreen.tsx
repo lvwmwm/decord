@@ -1,59 +1,60 @@
-// Module ID: 15122
-// Function ID: 15123
+// Module ID: 15186
+// Function ID: 15187
 // Name: SelectScreen
-// Dependencies: [19, 17, 15119, 21, 4661, 6370, 8086, 8582, 1500, 6803, 4734, 1236, 2]
+// Dependencies: [19, 17, 15183, 21, 4668, 6401, 8125, 8621, 1500, 6840, 4739, 1236, 2]
 // Exports: default
 
-// Module 15122 (SelectScreen)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { SELECT_NAMES } from "get webauthn";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15186 (SelectScreen)
+import noopAll from "noop" /* 19 */;
+import NAV_BAR_HEIGHT2 from "NAV_BAR_HEIGHT" /* 6401 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 8621 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { SELECT_NAMES } from "get webauthn" /* 15183 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles((arg0) => {
   const obj = { container: { marginLeft: 16, marginRight: 16 }, selectContainer: null };
-  const NAV_BAR_HEIGHT = require(6370) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT;
+  const NAV_BAR_HEIGHT = NAV_BAR_HEIGHT2.NAV_BAR_HEIGHT;
   if (arg0) {
     let diff = NAV_BAR_HEIGHT;
   } else {
-    diff = NAV_BAR_HEIGHT - require(6370) /* NAV_BAR_HEIGHT */.STATUS_BAR_HEIGHT;
+    diff = NAV_BAR_HEIGHT - NAV_BAR_HEIGHT2.STATUS_BAR_HEIGHT;
   }
   obj[1] = { marginTop: diff, marginLeft: 16, marginRight: 16, display: "flex", alignItems: "center" };
   return obj;
 });
-const result = require("get webauthn").fileFinishedImporting("modules/mfa/native/screens/SelectScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/mfa/native/screens/SelectScreen.tsx");
 
 export default function SelectScreen(mfaChallenge) {
   const _require = mfaChallenge;
-  const tmp = importDefault(8582)();
+  const tmp = useWideAuthViewDefault();
   const tmp2 = callback3(tmp);
   let obj = _require(1500);
   importDefault = obj.useNavigation();
   obj = { top: !tmp, style: tmp2.container, children: null };
   obj = { style: tmp2.selectContainer, children: null };
-  const obj1 = { variant: "heading-xl/extrabold", children: null };
+  obj1 = { variant: "heading-xl/extrabold", children: null };
   const intl = _require(1236).intl;
   obj1[1] = intl.string(_require(1236).t.S9b9bX);
-  const items = [callback(_require(4734).Text, obj1), ];
+  const items = [callback(_require(4739).Text, obj1), ];
   const obj2 = { variant: "text-sm/medium", children: null };
   const intl2 = _require(1236).intl;
   obj2[1] = intl2.string(_require(1236).t.Jz1lXO);
-  items[1] = callback(_require(4734).Text, obj2);
+  items[1] = callback(_require(4739).Text, obj2);
   obj[1] = items;
   const items1 = [callback2(View, obj), ];
   const methods = mfaChallenge.mfaChallenge.methods;
   items1[1] = callback(View, {
     style: { marginTop: 16, gap: 8 },
     children: methods.map((type) => {
-      let closure_1 = type;
-      let closure_2 = closure_1;
-      return outer1_5(mfaChallenge(outer1_2[6]).RowButton, {
-        label: outer1_4[type.type],
+      closure_1 = type;
+      closure_2 = closure_1;
+      return closure_1_5(mfaChallenge(closure_1_2[6]).RowButton, {
+        label: closure_1_4[type.type],
         onPress() {
 
         }
@@ -61,5 +62,5 @@ export default function SelectScreen(mfaChallenge) {
     })
   });
   obj[2] = items1;
-  return callback2(_require(6803).SafeAreaPaddingView, obj);
+  return callback2(_require(6840).SafeAreaPaddingView, obj);
 };

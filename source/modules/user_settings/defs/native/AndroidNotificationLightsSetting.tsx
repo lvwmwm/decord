@@ -1,21 +1,24 @@
-// Module ID: 14800
-// Function ID: 14801
+// Module ID: 14864
+// Function ID: 14865
 // Name: toggle
-// Dependencies: [14788, 8198, 500, 14790, 10669, 1236, 2]
+// Dependencies: [14852, 8238, 500, 14854, 10708, 1236, 2]
 
-// Module 14800 (toggle)
-import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore";
-import createToggle from "createToggle";
+// Module 14864 (toggle)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import hasAndroidNotificationChannels from "hasAndroidNotificationChannels" /* 14854 */;
+import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore" /* 14852 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let obj1;
-let setAndroidNotificationLightsEnabled;
 ({ useAndroidNotificationLightsEnabled: obj1, setAndroidNotificationLightsEnabled } = _initializeAndroidNotificationSettingsStore);
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.E3xHUp);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.E3xHUp);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
   useValue: function useAndroidNotificationLightsSettingValue() {
     let flag = callback();
     if (flag == null) {
@@ -27,11 +30,11 @@ const toggle = createToggle.createToggle({
   usePredicate: function useHasAndroidNotificationLightsSetting() {
     const tmp = callback();
     const tmp2 = require;
-    const isIOSResult = require(500) /* set */.isIOS();
+    const isIOSResult = set2.isIOS();
     let tmp5 = !isIOSResult;
     if (!isIOSResult) {
-      tmp5 = !tmp2(14790).hasAndroidNotificationChannels();
-      const tmp2Result = tmp2(14790);
+      tmp5 = !hasAndroidNotificationChannels.hasAndroidNotificationChannels();
+      const tmp2Result = hasAndroidNotificationChannels;
     }
     if (tmp5) {
       tmp5 = null != tmp;
@@ -41,10 +44,10 @@ const toggle = createToggle.createToggle({
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.E3xHUp);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.E3xHUp);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
   useValue: function useAndroidNotificationLightsSettingValue() {
     let flag = callback();
     if (flag == null) {
@@ -56,11 +59,11 @@ const obj = {
   usePredicate: function useHasAndroidNotificationLightsSetting() {
     const tmp = callback();
     const tmp2 = require;
-    const isIOSResult = require(500) /* set */.isIOS();
+    const isIOSResult = set2.isIOS();
     let tmp5 = !isIOSResult;
     if (!isIOSResult) {
-      tmp5 = !tmp2(14790).hasAndroidNotificationChannels();
-      const tmp2Result = tmp2(14790);
+      tmp5 = !hasAndroidNotificationChannels.hasAndroidNotificationChannels();
+      const tmp2Result = hasAndroidNotificationChannels;
     }
     if (tmp5) {
       tmp5 = null != tmp;
@@ -68,6 +71,6 @@ const obj = {
     return tmp5;
   }
 };
-const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AndroidNotificationLightsSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/AndroidNotificationLightsSetting.tsx");
 
 export default toggle;

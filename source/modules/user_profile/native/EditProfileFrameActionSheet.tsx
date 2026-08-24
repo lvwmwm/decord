@@ -1,35 +1,29 @@
-// Module ID: 14052
-// Function ID: 14053
+// Module ID: 14120
+// Function ID: 14121
 // Name: EditProfileFrameInner
-// Dependencies: [32, 19, 17, 5324, 5308, 676, 21, 4661, 712, 8416, 7688, 7139, 7159, 698, 8374, 6950, 4734, 1236, 8386, 8389, 589, 14053, 8376, 8417, 14054, 8407, 8408, 8387, 9570, 4756, 2]
+// Dependencies: [32, 19, 17, 5329, 5313, 676, 21, 4668, 712, 8455, 7726, 7177, 7197, 698, 8413, 6988, 4739, 1236, 8425, 8428, 589, 14121, 8415, 8456, 14122, 8446, 8447, 8426, 9607, 4761, 2]
 // Exports: default
 
-// Module 14052 (EditProfileFrameInner)
-import _slicedToArray from "_slicedToArray";
-import useFetchPurchases from "useFetchPurchases";
-import get_ActivityIndicator from "getSystemLocale";
-import map from "map";
-import { isProfileFrameRecord } from "fromServer";
-import { AnalyticEvents } from "ME";
-import jsxProd from "useProfileFrameSections";
-import createCacheKey from "createCacheKey";
+// Module 14120 (EditProfileFrameInner)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "map" /* 5329 */;
+import { isProfileFrameRecord } from "fromServer" /* 5313 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c10;
-let c5;
-let c9;
-let unpackModuleId;
 const require = arg1;
 function EditProfileFrameInner(user) {
-  let selectedProfileFrame;
-  let setSelectedProfileFrame;
   user = user.user;
   ({ selectedProfileFrame, setSelectedProfileFrame } = user);
   const guildId = user.guildId;
   let obj = user(guildId[19]);
   const getOrFetchCollectiblesCategoriesAndPurchases = obj.useGetOrFetchCollectiblesCategoriesAndPurchases();
-  let obj1 = user(guildId[20]);
-  const items = [map];
+  obj1 = user(guildId[20]);
+  const items = [closure_6];
   const stateFromStores = obj1.useStateFromStores(items, () => isFetching.isFetching);
   const tmp7 = setSelectedProfileFrame(guildId[9])(user.id, guildId);
   let obj2 = user(guildId[22]);
@@ -62,11 +56,8 @@ function EditProfileFrameInner(user) {
   const items2 = [setSelectedProfileFrame, guildId];
   let skuId;
   const callback = React.useCallback((arg0) => {
-    let items;
-    let selectedSkuId;
-    let size;
     ({ items, size, selectedSkuId } = arg0);
-    return outer1_9(user(guildId[24]).EditProfileFrameRow, { items, size, selectedSkuId, setSelectedProfileFrame, guildId });
+    return closure_1_9(user(guildId[24]).EditProfileFrameRow, { items, size, selectedSkuId, setSelectedProfileFrame, guildId });
   }, items2);
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
@@ -102,14 +93,11 @@ function EditProfileFrameInner(user) {
   return tmp13(tmp14, obj2);
 }
 function ProfileFrameSectionPreview(arg0) {
-  let guildId;
-  let previewSkuId;
-  let user;
-  let c0;
+  c0 = undefined;
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
-  const tmp = createCacheKey();
-  const tmp2 = purchase(8387)(previewSkuId);
+  const tmp = callback3();
+  const tmp2 = purchase(8426)(previewSkuId);
   const product = tmp2.product;
   c0 = product;
   purchase = tmp2.purchase;
@@ -128,45 +116,42 @@ function ProfileFrameSectionPreview(arg0) {
       first = first1;
     }
     let tmp3 = null;
-    if (outer1_7(first)) {
+    if (closure_1_7(first)) {
       tmp3 = first;
     }
     return tmp3;
   }, items);
-  const items1 = [callback(purchase(9570), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  const items1 = [callback(purchase(9607), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   obj = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj[3] = items2;
-  items1[1] = callback(purchase(4756), obj);
+  items1[1] = callback(purchase(4761), obj);
   obj[1] = items1;
   return callback2(closure_5, obj);
 }
 ({ View: c5, StyleSheet } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
 createCacheKey = { container: null, bounceOffset: null, title: null, previewContainer: null, previewGradient: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { position: "absolute", top: -250, height: 250, right: 0, left: 0 };
-createCacheKey[2] = { alignSelf: "center", color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };
+createCacheKey[2] = { alignSelf: "center", color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };
 createCacheKey[3] = { overflow: "hidden", height: 300, alignItems: "center" };
 let obj2 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj2.bottom = -1;
-obj2.color = require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND;
+obj2.color = ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND;
 createCacheKey[4] = obj2;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { alignSelf: "center", color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/EditProfileFrameActionSheet.tsx");
+let closure_12 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { alignSelf: "center", color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };
+let result = require("set").fileFinishedImporting("modules/user_profile/native/EditProfileFrameActionSheet.tsx");
 
 export default function EditProfileFrameActionSheet(arg0) {
-  let currentProfileFrame;
-  let guildId;
-  let user;
   ({ user, currentProfileFrame, guildId } = arg0);
-  let importDefault;
+  importDefault = undefined;
   let first;
   let memo;
-  let tmp = createCacheKey();
+  let tmp = callback3();
   let str = user.id;
   if (str == null) {
     str = "";
@@ -180,8 +165,8 @@ export default function EditProfileFrameActionSheet(arg0) {
   const analyticsLocations = tmp2Result(tmp2(tmp3[12]).EDIT_PROFILE_FRAME_SHEET).analyticsLocations;
   const items = [guildId, tmp4Result];
   memo = React.useMemo(() => {
-    const obj = { type: _undefined(first[12]).EDIT_PROFILE_FRAME_SHEET, guild_id: guildId, profile_has_nitro_customization: null };
-    let tmp = null != _undefined;
+    const obj = { type: callback(first[12]).EDIT_PROFILE_FRAME_SHEET, guild_id: guildId, profile_has_nitro_customization: null };
+    let tmp = null != callback;
     if (tmp) {
       let result;
       if (obj2 != null) {
@@ -195,11 +180,11 @@ export default function EditProfileFrameActionSheet(arg0) {
   const items1 = [memo];
   const items2 = [first, guildId];
   const callback = React.useCallback(() => {
-    let obj = _undefined(first[13]);
+    let obj = callback(first[13]);
     obj = {};
     const merged = Object.assign(memo);
     obj.is_fullscreen = true;
-    obj.track(outer1_8.OPEN_POPOUT, obj);
+    obj.track(closure_1_8.OPEN_POPOUT, obj);
   }, items1);
   const callback1 = React.useCallback(() => {
     let obj = guildId(first[14]);
@@ -213,7 +198,7 @@ export default function EditProfileFrameActionSheet(arg0) {
   }, items2);
   obj = { value: analyticsLocations, children: null };
   obj = { scrollable: true, ref: obj.useBottomSheetRef().bottomSheetRef, onExpand: callback, startExpanded: true, children: null };
-  const obj1 = { style: tmp.container, children: null };
+  obj1 = { style: tmp.container, children: null };
   const items3 = [callback(closure_5, { style: tmp.bounceOffset }), , ];
   const obj3 = { variant: "redesign/heading-18/bold", style: tmp.title, children: null };
   const intl = guildId(tmp3[17]).intl;

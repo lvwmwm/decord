@@ -1,14 +1,17 @@
-// Module ID: 12571
-// Function ID: 12572
+// Module ID: 12625
+// Function ID: 12626
 // Name: coercePlatformTypeToConsoleType
-// Dependencies: [9763, 676, 2]
+// Dependencies: [9802, 676, 2]
 // Exports: coerceConsoleTypeToPlatformType, coercePlatformTypeToConsoleType
 
-// Module 12571 (coercePlatformTypeToConsoleType)
-import { GameConsoleTypes } from "XBOX_URL_BASE";
-import { PlatformTypes } from "ME";
+// Module 12625 (coercePlatformTypeToConsoleType)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import XBOX_URL_BASE from "XBOX_URL_BASE" /* 9802 */;
 
-const result = require("set").fileFinishedImporting("modules/game_console/coercePlatformTypeToConsoleType.tsx");
+const GameConsoleTypes = XBOX_URL_BASE.GameConsoleTypes;
+const PlatformTypes = ME.PlatformTypes;
+const result = set.fileFinishedImporting("modules/game_console/coercePlatformTypeToConsoleType.tsx");
 
 export const coercePlatformTypeToConsoleType = function coercePlatformTypeToConsoleType(type) {
   if (PlatformTypes.XBOX === type) {
@@ -22,18 +25,18 @@ export const coercePlatformTypeToConsoleType = function coercePlatformTypeToCons
     return GameConsoleTypes.PLAYSTATION;
   }
 };
-export const coerceConsoleTypeToPlatformType = function coerceConsoleTypeToPlatformType(arg0, c3) {
+export const coerceConsoleTypeToPlatformType = function coerceConsoleTypeToPlatformType(arg0, closure_3) {
   if (GameConsoleTypes.XBOX === arg0) {
     return PlatformTypes.XBOX;
   } else if (tmp.PLAYSTATION === arg0) {
-    if (!c3.some((type) => type.type === constants.PLAYSTATION && type.twoWayLink)) {
+    if (!closure_3.some((type) => type.type === constants.PLAYSTATION && type.twoWayLink)) {
       if (someResult) {
         let PLAYSTATION = PlatformTypes.PLAYSTATION_STAGING;
       }
       return PLAYSTATION;
     }
     PLAYSTATION = PlatformTypes.PLAYSTATION;
-    someResult = c3.some((type) => type.type === constants.PLAYSTATION_STAGING && type.twoWayLink);
+    someResult = closure_3.some((type) => type.type === constants.PLAYSTATION_STAGING && type.twoWayLink);
   } else {
     return null;
   }

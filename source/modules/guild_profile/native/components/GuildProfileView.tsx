@@ -1,40 +1,47 @@
-// Module ID: 9513
-// Function ID: 9514
+// Module ID: 9550
+// Function ID: 9551
 // Name: GuildProfileBackground
-// Dependencies: [19, 17, 1910, 676, 21, 1364, 4104, 4661, 712, 589, 1430, 1494, 1435, 9514, 4310, 4097, 9515, 4756, 9516, 4734, 9518, 9531, 2]
+// Dependencies: [19, 17, 1910, 676, 21, 1364, 4107, 4668, 712, 589, 1430, 1494, 1435, 9551, 4314, 4100, 9552, 4761, 9553, 4739, 9555, 9568, 2]
 // Exports: default, getBackgroundForProfile
 
-// Module 9513 (GuildProfileBackground)
-import Text from "Text";
-import get_ActivityIndicator from "LinearGradient";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GuildFeatures } from "ME";
-import jsxProd from "TraitEmoji";
-import createCacheKey from "createCacheKey";
+// Module 9550 (GuildProfileBackground)
+import ThemesDefault from "Themes" /* 712 */;
+import isThemeLight from "isThemeLight" /* 1364 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import map from "map" /* 4100 */;
+import ManaContext from "ManaContext" /* 4107 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import useProfilePrimaryColor from "useProfilePrimaryColor" /* 9552 */;
+import stylesDefault from "styles" /* 9553 */;
+import ClickableGameIconDefault from "ClickableGameIcon" /* 9555 */;
+import TraitEmojiDefault from "TraitEmoji" /* 9568 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import { GuildFeatures } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function GuildProfileBackground(guildProfile) {
   guildProfile = guildProfile.guildProfile;
   let obj = guildProfile(589);
-  const items = [createGuildRecordFromRust];
+  const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    let guild = outer1_6.getGuild(guildProfile.id);
+    let guild = closure_1_6.getGuild(guildProfile.id);
     if (guild == null) {
-      guild = guildProfile(outer1_2[10]).fromGuildProfile(guildProfile);
-      const obj = guildProfile(outer1_2[10]);
+      guild = guildProfile(closure_1_2[10]).fromGuildProfile(guildProfile);
+      const obj = guildProfile(closure_1_2[10]);
     }
     const features = guild.features;
-    return features.has(outer1_7.DISCOVERABLE);
+    return features.has(closure_1_7.DISCOVERABLE);
   });
   if (stateFromStores) {
     if (null != guildProfile.customBanner) {
       obj = { id: null, splash: null, size: null };
       ({ id: obj3[0], customBanner: obj3[1] } = guildProfile);
-      obj[2] = tmp3(9514)() * importDefault(1494)().width;
+      obj[2] = tmp3(9551)() * useWindowDimensionsDefault().width;
       obj = { style: null, source: null };
       obj[0] = tmp4.imageBanner;
       obj[1] = tmp3(1435).getGuildDiscoverySplashSource(obj);
@@ -45,17 +52,17 @@ function GuildProfileBackground(guildProfile) {
 }
 function GuildProfileGradient(guildProfile) {
   const tmp = createCacheKey();
-  let obj = require(4097) /* map */;
-  const token = obj.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWEST);
-  const tmp2 = importDefault(4310)();
-  const profilePrimaryColor = require(9515) /* useProfilePrimaryColor */.useProfilePrimaryColor(guildProfile.guildProfile, token);
+  let obj = map;
+  const token = obj.useToken(ThemesDefault.colors.BACKGROUND_BASE_LOWEST);
+  const tmp2 = useThemeDefault();
+  const profilePrimaryColor = useProfilePrimaryColor.useProfilePrimaryColor(guildProfile.guildProfile, token);
   obj = { style: tmp.colorBanner, start: frozen.START, end: frozen.END, colors: null };
   const items = [profilePrimaryColor, ];
-  const obj2 = require(9515) /* useProfilePrimaryColor */;
+  const obj2 = useProfilePrimaryColor;
   const tmp5 = closure_8;
-  const tmp6 = importDefault(4756);
-  const obj4 = require(1364) /* isThemeLight */;
-  const obj5 = require(4104) /* ManaContext */;
+  const tmp6 = LinearGradientDefault;
+  const obj4 = isThemeLight;
+  const obj5 = ManaContext;
   if (isThemeDarkResult) {
     let brightenColorResult = obj5.brightenColor(profilePrimaryColor, 0.8);
   } else {
@@ -66,9 +73,9 @@ function GuildProfileGradient(guildProfile) {
   return tmp5(tmp6, obj);
 }
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { container: null, colorBanner: null, imageBanner: null, body: null, error: null, buttonContainer: null, header: null, avatarBackground: null, restrictedAcronym: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { height: 140, width: "100%" };
 createCacheKey[2] = { height: 140, width: "100%", objectFit: "cover" };
@@ -76,12 +83,12 @@ createCacheKey[3] = { marginTop: 12, paddingHorizontal: 16, gap: 16 };
 createCacheKey[4] = { display: "flex", flexDirection: "row", alignItems: "center", gap: 8 };
 createCacheKey[5] = { marginTop: 160 };
 createCacheKey[6] = { paddingHorizontal: 16, marginTop: -32, display: "flex", flexDirection: "column", gap: 0 };
-createCacheKey[7] = { width: 86, height: 86, borderRadius: 28.666666666666668, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" };
+createCacheKey[7] = { width: 86, height: 86, borderRadius: 28.666666666666668, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" };
 createCacheKey[8] = { fontSize: 24 };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
 const frozen = Object.freeze({ START: { x: 0, y: 1 }, END: { x: 1.5, y: 0 } });
-const obj1 = { width: 86, height: 86, borderRadius: 28.666666666666668, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" };
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileView.tsx");
+const obj1 = { width: 86, height: 86, borderRadius: 28.666666666666668, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" };
+const result = require("set").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileView.tsx");
 
 export default function GuildProfileView(guildProfile) {
   guildProfile = guildProfile.guildProfile;
@@ -92,7 +99,7 @@ export default function GuildProfileView(guildProfile) {
     if (null == guildProfile) {
       return null;
     } else {
-      let obj = outer1_1(outer1_2[12]);
+      let obj = closure_1_1(closure_1_2[12]);
       obj = { id: null, icon: null, size: 96, canAnimate: true };
       ({ id: obj2[0], icon: obj2[1] } = tmp);
       const guildIconSource = obj.getGuildIconSource(obj);
@@ -104,7 +111,7 @@ export default function GuildProfileView(guildProfile) {
     }
     tmp = guildProfile;
   }, items);
-  const items1 = [callback(GuildProfileBackground, { guildProfile }), callback(importDefault(9516), { profile: guildProfile, guildIconSource: memo }), ];
+  const items1 = [callback(GuildProfileBackground, { guildProfile }), callback(stylesDefault, { profile: guildProfile, guildIconSource: memo }), ];
   obj = { style: tmp.body, children: null };
   let tmp5Result = null != guildProfile.description;
   if (tmp5Result) {
@@ -113,9 +120,9 @@ export default function GuildProfileView(guildProfile) {
   if (tmp5Result) {
     obj = { variant: "text-md/medium", color: "text-subtle", children: null };
     obj[2] = guildProfile.description;
-    tmp5Result = tmp5(guildProfile(4734).Text, obj);
+    tmp5Result = tmp5(guildProfile(4739).Text, obj);
   }
-  const items2 = [tmp5Result, callback(importDefault(9518), { profile: guildProfile }), callback(importDefault(9531), { profile: guildProfile })];
+  const items2 = [tmp5Result, callback(ClickableGameIconDefault, { profile: guildProfile }), callback(TraitEmojiDefault, { profile: guildProfile })];
   obj[1] = items2;
   items1[2] = closure_9(closure_4, obj);
   obj[1] = items1;
@@ -123,8 +130,8 @@ export default function GuildProfileView(guildProfile) {
 };
 export const getBackgroundForProfile = function getBackgroundForProfile(closure_2, token) {
   const items = [token, ];
-  const obj = require(1364) /* isThemeLight */;
-  const obj2 = require(4104) /* ManaContext */;
+  const obj = isThemeLight;
+  const obj2 = ManaContext;
   if (isThemeDarkResult) {
     let brightenColorResult = obj2.brightenColor(token, 0.8);
   } else {

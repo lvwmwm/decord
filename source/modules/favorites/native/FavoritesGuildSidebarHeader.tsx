@@ -1,20 +1,25 @@
-// Module ID: 15541
-// Function ID: 15542
+// Module ID: 15606
+// Function ID: 15607
 // Name: EmptyBody
-// Dependencies: [19, 17, 15464, 21, 4661, 712, 9979, 11959, 4342, 9983, 2007, 9982, 4734, 1236, 3079, 6876, 6896, 6867, 4733, 2]
+// Dependencies: [19, 17, 15528, 21, 4668, 712, 10018, 12008, 4346, 10022, 2008, 10021, 4739, 1236, 3082, 6914, 6934, 6905, 4738, 2]
 // Exports: default
 
-// Module 15541 (EmptyBody)
-import set from "set";
-import { View } from "ChatIcon";
-import { useHasFavoritesGuildSuggestions as closure_5 } from "items";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15606 (EmptyBody)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 3082 */;
+import Stack from "Stack" /* 4738 */;
+import Text from "Text" /* 4739 */;
+import ChatIcon from "ChatIcon" /* 6905 */;
+import TextIcon from "TextIcon" /* 6914 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 6934 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { useHasFavoritesGuildSuggestions as closure_5 } from "items" /* 15528 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function EmptyBody() {
   const callback = React.useCallback(() => {
     if (obj.getFavoritesAccess().hasAccess) {
@@ -26,35 +31,31 @@ function EmptyBody() {
     }
   }, []);
   const obj = { variant: "text-sm/medium", color: "text-muted", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.format(importDefault(3079).Z3Hdr5, { onClick: callback });
-  return callback2(require(4734) /* Text */.Text, obj);
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.format(messagesProxyDefault.Z3Hdr5, { onClick: callback });
+  return callback2(Text.Text, obj);
 }
 function PlaceholderRows() {
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = { style: tmp.placeholderRows, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   obj = { style: tmp.placeholderRow, children: null };
-  obj = { size: "sm", color: null };
-  obj[1] = importDefault(712).colors.ICON_MUTED;
-  const items = [callback2(require(6876) /* TextIcon */.TextIcon, obj), ];
+  obj = { size: "sm", color: ThemesDefault.colors.ICON_MUTED };
+  const items = [callback2(TextIcon.TextIcon, obj), ];
   const items1 = [, ];
   ({ placeholderBar: arr2[0], placeholderBarShort: arr2[1] } = tmp);
   items[1] = callback2(View, { style: items1 });
   obj[1] = items;
   const items2 = [callback3(View, obj), , ];
-  const obj1 = { style: tmp.placeholderRow, children: null };
-  const obj2 = { size: "sm", color: null };
-  obj2[1] = importDefault(712).colors.ICON_MUTED;
-  const items3 = [callback2(require(6896) /* VoiceNormalIcon */.VoiceNormalIcon, obj2), ];
+  obj1 = { style: tmp.placeholderRow, children: null };
+  const items3 = [callback2(VoiceNormalIcon.VoiceNormalIcon, { size: "sm", color: ThemesDefault.colors.ICON_MUTED }), ];
   const items4 = [, ];
   ({ placeholderBar: arr5[0], placeholderBarLong: arr5[1] } = tmp);
   items3[1] = callback2(View, { style: items4 });
   obj1[1] = items3;
   items2[1] = callback3(View, obj1);
   const obj3 = { style: tmp.placeholderRow, children: null };
-  const obj4 = { size: "sm", color: null };
-  obj4[1] = importDefault(712).colors.ICON_MUTED;
-  const items5 = [callback2(require(6867) /* ChatIcon */.ChatIcon, obj4), ];
+  const obj2 = { size: "sm", color: ThemesDefault.colors.ICON_MUTED };
+  const items5 = [callback2(ChatIcon.ChatIcon, { size: "sm", color: ThemesDefault.colors.ICON_MUTED }), ];
   const items6 = [, ];
   ({ placeholderBar: arr7[0], placeholderBarShort: arr7[1] } = tmp);
   items5[1] = callback2(View, { style: items6 });
@@ -63,30 +64,29 @@ function PlaceholderRows() {
   obj[3] = items2;
   return callback3(View, obj);
 }
-({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
+({ jsx: closure_6, jsxs: error, Fragment: closure_8 } = jsxProd);
 createCacheKey = { copy: null, divider: null, placeholderRows: null, placeholderRow: null, placeholderBar: null, placeholderBarShort: null, placeholderBarLong: null };
-createCacheKey = { paddingTop: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { paddingTop: ThemesDefault.space.PX_16, paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { height: 1, marginTop: require("Themes").space.PX_12, marginHorizontal: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-let obj1 = { height: 1, marginTop: require("Themes").space.PX_12, marginHorizontal: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-createCacheKey[2] = { paddingTop: require("Themes").space.PX_8 };
-let obj2 = { paddingTop: require("Themes").space.PX_8 };
-createCacheKey[3] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16 };
-let obj3 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16 };
-createCacheKey[4] = { height: require("Themes").space.PX_8, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
-let obj4 = { height: require("Themes").space.PX_8, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
-createCacheKey[5] = { width: require("Themes").space.PX_80 };
-const obj5 = { width: require("Themes").space.PX_80 };
-createCacheKey[6] = { width: require("Themes").space.PX_128 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj6 = { width: require("Themes").space.PX_128 };
-const result = require("items").fileFinishedImporting("modules/favorites/native/FavoritesGuildSidebarHeader.tsx");
+createCacheKey[1] = { height: 1, marginTop: ThemesDefault.space.PX_12, marginHorizontal: ThemesDefault.space.PX_16, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+let obj1 = { height: 1, marginTop: ThemesDefault.space.PX_12, marginHorizontal: ThemesDefault.space.PX_16, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+createCacheKey[2] = { paddingTop: ThemesDefault.space.PX_8 };
+let obj2 = { paddingTop: ThemesDefault.space.PX_8 };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_8, paddingVertical: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_16 };
+let obj3 = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_8, paddingVertical: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_16 };
+createCacheKey[4] = { height: ThemesDefault.space.PX_8, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL };
+const obj4 = { height: ThemesDefault.space.PX_8, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL };
+createCacheKey[5] = { width: ThemesDefault.space.PX_80 };
+const obj5 = { width: ThemesDefault.space.PX_80 };
+createCacheKey[6] = { width: ThemesDefault.space.PX_128 };
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+const obj6 = { width: ThemesDefault.space.PX_128 };
+const result = require("set").fileFinishedImporting("modules/favorites/native/FavoritesGuildSidebarHeader.tsx");
 
 export default function FavoritesGuildSidebarHeader() {
-  const tmp = createCacheKey();
+  const tmp = callback4();
   const tmp2 = callback();
-  let obj = { spacing: null, children: null };
-  obj[0] = importDefault(712).space.PX_8;
+  let obj = { spacing: ThemesDefault.space.PX_8, children: null };
   let tmp7 = null;
   if (tmp2) {
     obj = { style: null };
@@ -94,15 +94,13 @@ export default function FavoritesGuildSidebarHeader() {
     tmp7 = callback2(View, obj);
   }
   const items = [tmp7, , ];
-  obj = { spacing: null, style: null, children: null };
-  obj[0] = importDefault(712).space.PX_8;
-  obj[1] = tmp.copy;
-  const obj1 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
+  obj = { spacing: tmp6(712).space.PX_8, style: tmp.copy, children: null };
+  obj1 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp4(1236).intl;
-  obj1[2] = intl.string(importDefault(3079)["1n0TGE"]);
-  const items1 = [callback2(require(4734) /* Text */.Heading, obj1), callback2(EmptyBody, {})];
+  obj1[2] = intl.string(messagesProxyDefault["1n0TGE"]);
+  const items1 = [callback2(Text.Heading, obj1), callback2(EmptyBody, {})];
   obj[2] = items1;
-  items[1] = closure_7(require(4733) /* Stack */.Stack, obj);
+  items[1] = closure_7(Stack.Stack, obj);
   let tmp3Result = null;
   if (!tmp2) {
     const obj2 = { children: null };
@@ -114,5 +112,5 @@ export default function FavoritesGuildSidebarHeader() {
   }
   items[2] = tmp3Result;
   obj[1] = items;
-  return closure_7(require(4733) /* Stack */.Stack, obj);
+  return closure_7(Stack.Stack, obj);
 };

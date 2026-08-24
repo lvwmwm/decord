@@ -1,34 +1,37 @@
-// Module ID: 9373
-// Function ID: 9374
+// Module ID: 9410
+// Function ID: 9411
 // Name: PremiumUpsellGradientBackground
-// Dependencies: [19, 17, 7403, 21, 4661, 4756, 691, 2]
+// Dependencies: [19, 17, 7441, 21, 4668, 4761, 691, 2]
 // Exports: PremiumUpsellGradientBackground
 
-// Module 9373 (PremiumUpsellGradientBackground)
-import "noop";
-import { Gradients } from "items";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9410 (PremiumUpsellGradientBackground)
+import noopAll from "noop" /* 19 */;
+import keys from "keys" /* 691 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import { Gradients } from "items" /* 7441 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { gradient: null };
 createCacheKey = { opacity: 0.1 };
 const merged = Object.assign(require("get ActivityIndicator").StyleSheet.absoluteFillObject);
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("items").fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellGradientBackground.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellGradientBackground.tsx");
 
 export const PremiumUpsellGradientBackground = function PremiumUpsellGradientBackground(useTier0UpsellContent) {
-  const obj = { style: createCacheKey().gradient, start: null, end: null, colors: null };
-  const tmp = createCacheKey();
+  const obj = { style: callback().gradient, start: null, end: null, colors: null };
+  const tmp = callback();
   const tmp2 = jsx;
-  obj[1] = require(691) /* keys */.HorizontalGradient.START;
-  obj[2] = require(691) /* keys */.HorizontalGradient.END;
+  obj[1] = keys.HorizontalGradient.START;
+  obj[2] = keys.HorizontalGradient.END;
   if (true === useTier0UpsellContent.useTier0UpsellContent) {
     let PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
   } else {
     PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
   }
   obj[3] = PREMIUM_TIER_2_TRI_COLOR;
-  return tmp2(importDefault(4756), obj);
+  return tmp2(LinearGradientDefault, obj);
 };

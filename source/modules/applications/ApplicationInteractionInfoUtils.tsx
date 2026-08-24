@@ -1,11 +1,14 @@
-// Module ID: 8445
-// Function ID: 8446
+// Module ID: 8484
+// Function ID: 8485
 // Name: canViewInteractionInfo
 // Dependencies: [1954, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 8445 (canViewInteractionInfo)
-const result = require("set").fileFinishedImporting("modules/applications/ApplicationInteractionInfoUtils.tsx");
+// Module 8484 (canViewInteractionInfo)
+import set from "set" /* 2 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+
+const result = set.fileFinishedImporting("modules/applications/ApplicationInteractionInfoUtils.tsx");
 
 export const canViewInteractionInfo = function canViewInteractionInfo(message) {
   return null != message.interactionMetadata;
@@ -16,14 +19,14 @@ export const isPrimaryEntryPointCommandMessage = function isPrimaryEntryPointCom
   if (interactionMetadata != null) {
     type = interactionMetadata.type;
   }
-  let tmp4 = type === require(1954) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND;
+  let tmp4 = type === PermissionOverwriteType.InteractionTypes.APPLICATION_COMMAND;
   if (tmp4) {
     const interactionMetadata2 = interactionMetadata.interactionMetadata;
     let command_type;
     if (interactionMetadata2 != null) {
       command_type = interactionMetadata2.command_type;
     }
-    tmp4 = command_type === require(1954) /* PermissionOverwriteType */.ApplicationCommandType.PRIMARY_ENTRY_POINT;
+    tmp4 = command_type === PermissionOverwriteType.ApplicationCommandType.PRIMARY_ENTRY_POINT;
   }
   return tmp4;
 };

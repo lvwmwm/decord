@@ -4,5 +4,7 @@
 // Dependencies: [19]
 
 // Module 1568 (NavigationFocusedRouteStateContext)
+import noopAll from "noop" /* 19 */;
 
-export const NavigationFocusedRouteStateContext = require("noop").createContext(undefined);
+
+export const NavigationFocusedRouteStateContext = noopAll.createContext(undefined);

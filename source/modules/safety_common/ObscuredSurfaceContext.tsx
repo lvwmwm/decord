@@ -1,11 +1,11 @@
-// Module ID: 9128
-// Function ID: 9129
+// Module ID: 9165
+// Function ID: 9166
 // Name: context
 // Dependencies: [19, 2]
 // Exports: useObscuredSurface
 
-// Module 9128 (context)
-import importAllResult from "noop";
+// Module 9165 (context)
+import importAllResult from "noop" /* 19 */;
 
 let c0 = importAllResult;
 const context = importAllResult.createContext({ obscured: false });

@@ -1,23 +1,26 @@
-// Module ID: 9571
-// Function ID: 9572
+// Module ID: 9608
+// Function ID: 9609
 // Name: AvatarDecorationProductPreview
-// Dependencies: [19, 17, 21, 4661, 9176, 9205, 1236, 1297, 2]
+// Dependencies: [19, 17, 21, 4668, 9213, 9242, 1236, 1297, 2]
 // Exports: default
 
-// Module 9571 (AvatarDecorationProductPreview)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9608 (AvatarDecorationProductPreview)
+import noopAll from "noop" /* 19 */;
+import useCurrentUser from "useCurrentUser" /* 9213 */;
+import firstAvatarDecoration2 from "firstAvatarDecoration" /* 9242 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_4 = createCacheKey.createStyles({ fullSizePreview: { flex: 1, alignItems: "center", justifyContent: "center" } });
-const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/AvatarDecorationProductPreview.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/native/AvatarDecorationProductPreview.tsx");
 
 export default function AvatarDecorationProductPreview(product) {
-  let obj = require(9176) /* useCurrentUser */;
+  let obj = useCurrentUser;
   const currentUser = obj.useCurrentUser();
-  let obj1 = require(9205) /* firstAvatarDecoration */;
+  obj1 = firstAvatarDecoration2;
   const firstAvatarDecoration = obj1.useShopProductItems(product.product).firstAvatarDecoration;
   let tmp5 = null;
   if (null != firstAvatarDecoration) {

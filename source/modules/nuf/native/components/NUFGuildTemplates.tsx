@@ -1,26 +1,22 @@
-// Module ID: 11879
-// Function ID: 11880
+// Module ID: 11928
+// Function ID: 11929
 // Name: onCreateGuild
-// Dependencies: [5, 19, 17, 4201, 676, 11880, 8617, 21, 6778, 11643, 9568, 11881, 11923, 698, 503, 6314, 11856, 1222, 11883, 11885, 11500, 1236, 11893, 11894, 11924, 11905, 6312, 2]
+// Dependencies: [5, 19, 17, 4205, 676, 11929, 8654, 21, 6815, 11692, 9605, 11930, 11972, 698, 503, 6345, 11905, 1222, 11932, 11934, 11549, 1236, 11942, 11943, 11973, 11954, 6343, 2]
 // Exports: default
 
-// Module 11879 (onCreateGuild)
-import GuildTemplateId from "GuildTemplateId";
-import CreationIntent from "CreationIntent";
-import { Keyboard } from "transitionTo";
-import initialize from "initialize";
-import ME from "ME";
-import { GuildTemplateId } from "GuildTemplateId";
-import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
-import { jsx } from "getSystemLocale";
+// Module 11928 (onCreateGuild)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import NavigationStack from "NavigationStack" /* 6343 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import { Keyboard } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "initialize" /* 4205 */;
+import ME from "ME" /* 676 */;
+import { GuildTemplateId } from "GuildTemplateId" /* 11929 */;
+import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics" /* 8654 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c9;
-let closure_12;
-let error;
-let map1;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function onCreateGuild() {
   const self = this;
   const apply = _onCreateGuild.apply;
@@ -34,9 +30,9 @@ function onCreateGuild() {
 function _onCreateGuild() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -45,11 +41,11 @@ function _onCreateGuild() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -64,9 +60,9 @@ function _onCreateGuild() {
               obj[0] = arg1;
               return obj;
             } else {
-              const dependencyMap = tmp5;
+              dependencyMap = tmp5;
               const callback2 = tmp2;
-              let obj1 = outer1_1(outer1_2[8]);
+              obj1 = closure_1_1(closure_1_2[8]);
               c3 = 1;
               c4 = 1;
               obj1 = { value: null, done: false };
@@ -82,19 +78,19 @@ function _onCreateGuild() {
             obj[0] = arg1;
             return obj;
           } else {
-            const guildProgress = callback(11643).createGuildProgress(callback);
-            callback2(9568)();
-            const obj6 = callback(11643);
-            const result = callback2(11881).closeCreateGuildOnboardingModal();
-            const obj7 = callback2(11881);
-            const result1 = callback(11923).showInstantInviteModal(callback);
-            const obj8 = callback(11923);
+            const guildProgress = callback(11692).createGuildProgress(callback);
+            callback2(9605)();
+            const obj6 = callback(11692);
+            const result = callback2(11930).closeCreateGuildOnboardingModal();
+            const obj7 = callback2(11930);
+            const result1 = callback(11972).showInstantInviteModal(callback);
+            const obj8 = callback(11972);
             const obj2 = { flow_type: null, from_step: null, to_step: "modal_closed" };
             obj2[0] = constants2.GUILD_CREATE_MODAL;
             obj2[1] = constants3.CREATE_SERVER;
             callback2(698).track(constants.USER_FLOW_TRANSITION, obj2);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c4 = tmp;
@@ -103,7 +99,7 @@ function _onCreateGuild() {
       }
     })();
   });
-  const _onCreateGuild = tmp;
+  closure_16 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -115,11 +111,11 @@ function _onCreateGuild() {
 function _onCreateServer() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c4 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c4 = 0;
+    c3 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c3 === 2) {
         c3 = 3;
@@ -128,11 +124,11 @@ function _onCreateServer() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -148,16 +144,16 @@ function _onCreateServer() {
               return obj;
             } else {
               let arr = closure_0;
-              if (id.id !== outer1_10.CREATE) {
+              if (id.id !== closure_1_10.CREATE) {
                 c4 = 1;
                 c3 = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = outer1_15(tmp14);
+                obj1 = { value: null, done: false };
+                obj1[0] = closure_1_15(tmp14);
                 return obj1;
               } else {
                 const obj2 = { guildId: null };
                 obj2[0] = tmp14;
-                arr = arr.push(outer1_11.CHANNEL_PROMPT, obj2);
+                arr = arr.push(closure_1_11.CHANNEL_PROMPT, obj2);
               }
             }
           } else if (arg0 === 1) {
@@ -170,7 +166,7 @@ function _onCreateServer() {
             return obj;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp8) {
           c3 = tmp;
           throw tmp8;
@@ -178,7 +174,7 @@ function _onCreateServer() {
       }
     })();
   });
-  const _onCreateServer = tmp;
+  closure_17 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -187,194 +183,373 @@ function _onCreateServer() {
   }
   return applyArgumentsResult;
 }
-({ AnalyticEvents: error, AnalyticsSections: metroImportAll, NOOP: c9 } = ME);
+({ AnalyticEvents: error, AnalyticsSections: closure_8, NOOP: c9 } = ME);
 ({ CreateGuildModalStates: unpackModuleId, GuildTemplateTriggers: closure_12, NUXGuildTemplatesAnalytics: map1 } = NUXGuildTemplatesAnalytics);
 let obj = { impression_group: require("encodeProperties").ImpressionGroups.GUILD_ADD_FLOW };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/nuf/native/components/NUFGuildTemplates.tsx");
+let result = require("set").fileFinishedImporting("modules/nuf/native/components/NUFGuildTemplates.tsx");
 
 export default function NUFGuildTemplates() {
-  let obj = { screens: null, onWillFocus: null, headerBackTitle: null, initialRouteName: null };
-  obj[0] = React.useMemo(() => {
-    let obj = {};
-    obj = {
-      impressionName: callback(503).ImpressionNames.GUILD_ADD_LANDING,
-      impressionProperties: closure_18,
-      fullscreen: true,
-      headerTitle() {
+  obj = {
+    screens: React.useMemo(() => {
+      obj = {};
+      obj = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_LANDING,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        headerLeft: null,
+        render: null
+      };
+      let obj2 = callback(6345);
+      obj[4] = obj2.getHeaderCloseButton(() => {
+        callback(11905).trackNUFStep(constants2.STEP_GUILD_TEMPLATE, constants2.STEP_FRIEND_LIST, { skip: true });
+        obj = callback(11905);
+        callback(1222).transitionTo(fallbackRoute.fallbackRoute);
+        const obj2 = callback(1222);
+        const result = callback2(11930).closeCreateGuildOnboardingModal();
+      });
+      obj[5] = function render() {
+        return callback3(callback2(11932), { trigger: constants.NUF });
+      };
+      obj[constants.GUILD_TEMPLATES] = obj;
+      obj = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_INTENT_SELECTION,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        render(guildTemplate) {
+          return callback3(callback2(11934), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.NUF });
+        }
+      };
+      obj[constants.CREATION_INTENT] = obj;
+      obj[constants.CREATE_SERVER] = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_CUSTOMIZE,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        render(arg0, arg1) {
+          const callback = arg0;
+          const callback2 = arg1;
+          obj = {};
+          const merged = Object.assign(arg0);
+          obj.onCreate = function onCreate(guild) {
+            return (function onCreateServer(closure_1, id, guildTemplate) {
+              const self = this;
+              const apply = closure_17.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            })(closure_1, guild.guild.id, guildTemplate.guildTemplate);
+          };
+          const intl = callback(1236).intl;
+          obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
+          return callback3(callback2(11549), obj);
+        }
+      };
+      obj2 = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_JOIN,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        render() {
+          obj = { location: "Onboarding Join Guild Modal", onClose: callback2(11930).closeCreateGuildModal };
+          return callback3(callback2(11942), obj);
+        }
+      };
+      obj[constants.JOIN_SERVER] = obj2;
+      obj1 = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_CUSTOMIZE,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        render(arg0, arg1) {
+          const callback = arg0;
+          const callback2 = arg1;
+          obj = {};
+          const merged = Object.assign(arg0);
+          obj.onCreate = function onCreate(guild) {
+            return (function onCreateServer(closure_1, id, guildTemplate) {
+              const self = this;
+              const apply = closure_17.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            })(closure_1, guild.guild.id, guildTemplate.guildTemplate);
+          };
+          const intl = callback(1236).intl;
+          obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
+          return callback3(callback2(11549), obj);
+        }
+      };
+      obj[constants.ACCEPT_INVITE] = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_ACCEPT_INVITE,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        headerLeft() {
+          return null;
+        },
+        render(code) {
+          obj = { code: code.code, onPressClose: callback2(11930).closeCreateGuildModal };
+          return callback3(callback2(11943), obj);
+        }
+      };
+      const obj3 = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_ACCEPT_INVITE,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        headerLeft() {
+          return null;
+        },
+        render(code) {
+          obj = { code: code.code, onPressClose: callback2(11930).closeCreateGuildModal };
+          return callback3(callback2(11943), obj);
+        }
+      };
+      obj[constants.CHANNEL_PROMPT] = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_CHANNEL_PROMPT,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        render(guildId) {
+          guildId = guildId.guildId;
+          obj = {
+            hasSkip: true,
+            hasBack: false,
+            onCancel: closure_9,
+            onSuccess() {
+              return closure_1_15(guildId);
+            },
+            guildId,
+            buttonText: null
+          };
+          const intl = guildId(1236).intl;
+          obj[5] = intl.string(guildId(1236).t["uHXB+F"]);
+          return callback3(callback2(11973), obj);
+        }
+      };
+      const obj5 = { impressionName: "Array", impressionProperties: true, fullscreen: true, ignoreKeyboard: null, headerTitle: null, headerLeft: null, render: "other" };
+      obj5[1] = closure_18;
+      obj5[4] = function headerTitle() {
         return null;
-      },
-      headerLeft: null,
-      render: null
-    };
-    let obj2 = callback(6314);
-    obj[4] = obj2.getHeaderCloseButton(() => {
-      callback(11856).trackNUFStep(constants2.STEP_GUILD_TEMPLATE, constants2.STEP_FRIEND_LIST, { skip: true });
-      const obj = callback(11856);
-      callback(1222).transitionTo(fallbackRoute.fallbackRoute);
-      const obj2 = callback(1222);
-      const result = callback2(11881).closeCreateGuildOnboardingModal();
-    });
-    obj[5] = function render() {
-      return callback3(callback2(11883), { trigger: constants.NUF });
-    };
-    obj[constants.GUILD_TEMPLATES] = obj;
-    obj = {
-      impressionName: callback(503).ImpressionNames.GUILD_ADD_INTENT_SELECTION,
-      impressionProperties: closure_18,
-      fullscreen: true,
-      headerTitle() {
+      };
+      obj5[5] = function headerLeft() {
         return null;
-      },
-      render(guildTemplate) {
-        return callback3(callback2(11885), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.NUF });
-      }
-    };
-    obj[constants.CREATION_INTENT] = obj;
-    obj[constants.CREATE_SERVER] = {
-      impressionName: callback(503).ImpressionNames.GUILD_ADD_CUSTOMIZE,
-      impressionProperties: closure_18,
-      fullscreen: true,
-      headerTitle() {
-        return null;
-      },
-      render(arg0, arg1) {
-        const callback = arg0;
-        const callback2 = arg1;
-        const obj = {};
-        const merged = Object.assign(arg0);
-        obj.onCreate = function onCreate(guild) {
-          return (function onCreateServer(closure_1, id, guildTemplate) {
-            const self = this;
-            const apply = closure_17.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          })(closure_1, guild.guild.id, guildTemplate.guildTemplate);
-        };
-        const intl = callback(1236).intl;
-        obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
-        return callback3(callback2(11500), obj);
-      }
-    };
-    obj2 = {
-      impressionName: callback(503).ImpressionNames.GUILD_ADD_JOIN,
-      impressionProperties: closure_18,
-      fullscreen: true,
-      headerTitle() {
-        return null;
-      },
-      render() {
-        const obj = { location: "Onboarding Join Guild Modal", onClose: null };
-        obj[1] = callback2(11881).closeCreateGuildModal;
-        return callback3(callback2(11893), obj);
-      }
-    };
-    obj[constants.JOIN_SERVER] = obj2;
-    const obj1 = {
-      impressionName: callback(503).ImpressionNames.GUILD_ADD_CUSTOMIZE,
-      impressionProperties: closure_18,
-      fullscreen: true,
-      headerTitle() {
-        return null;
-      },
-      render(arg0, arg1) {
-        const callback = arg0;
-        const callback2 = arg1;
-        const obj = {};
-        const merged = Object.assign(arg0);
-        obj.onCreate = function onCreate(guild) {
-          return (function onCreateServer(closure_1, id, guildTemplate) {
-            const self = this;
-            const apply = closure_17.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          })(closure_1, guild.guild.id, guildTemplate.guildTemplate);
-        };
-        const intl = callback(1236).intl;
-        obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
-        return callback3(callback2(11500), obj);
-      }
-    };
-    obj[constants.ACCEPT_INVITE] = {
-      impressionName: callback(503).ImpressionNames.GUILD_ADD_ACCEPT_INVITE,
-      impressionProperties: closure_18,
-      fullscreen: true,
-      headerTitle() {
-        return null;
-      },
-      headerLeft() {
-        return null;
-      },
-      render(code) {
-        const obj = { code: code.code, onPressClose: null };
-        obj[1] = callback2(11881).closeCreateGuildModal;
-        return callback3(callback2(11894), obj);
-      }
-    };
-    const obj3 = {
-      impressionName: callback(503).ImpressionNames.GUILD_ADD_ACCEPT_INVITE,
-      impressionProperties: closure_18,
-      fullscreen: true,
-      headerTitle() {
-        return null;
-      },
-      headerLeft() {
-        return null;
-      },
-      render(code) {
-        const obj = { code: code.code, onPressClose: null };
-        obj[1] = callback2(11881).closeCreateGuildModal;
-        return callback3(callback2(11894), obj);
-      }
-    };
-    obj[constants.CHANNEL_PROMPT] = {
-      impressionName: callback(503).ImpressionNames.GUILD_ADD_CHANNEL_PROMPT,
-      impressionProperties: closure_18,
-      fullscreen: true,
-      headerTitle() {
-        return null;
-      },
-      render(guildId) {
-        guildId = guildId.guildId;
-        const obj = {
-          hasSkip: true,
-          hasBack: false,
-          onCancel: closure_9,
-          onSuccess() {
-            return outer1_15(guildId);
-          },
-          guildId,
-          buttonText: null
-        };
-        const intl = guildId(1236).intl;
-        obj[5] = intl.string(guildId(1236).t["uHXB+F"]);
-        return callback3(callback2(11924), obj);
-      }
-    };
-    const obj5 = { impressionName: "Array", impressionProperties: true, fullscreen: true, ignoreKeyboard: null, headerTitle: null, headerLeft: null, render: true };
-    obj5[1] = closure_18;
-    obj5[4] = function headerTitle() {
-      return null;
-    };
-    obj5[5] = function headerLeft() {
-      return null;
-    };
-    obj5[6] = function render() {
-      return callback3(callback2(11905), { isNestedNavigator: true });
-    };
-    obj[constants.JOIN_STUDENT_HUB] = obj5;
-    return obj;
-  }, []);
-  obj[1] = Keyboard.dismiss;
-  let intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
+      };
+      obj5[6] = function render() {
+        return callback3(callback2(11954), { isNestedNavigator: true });
+      };
+      obj[constants.JOIN_STUDENT_HUB] = obj5;
+      return obj;
+    }, []),
+    onWillFocus: Keyboard.dismiss,
+    headerBackTitle: null,
+    initialRouteName: null
+  };
+  let intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t["13/7kX"]);
   obj[3] = constants.GUILD_TEMPLATES;
-  return jsx(require(6312) /* NavigationStack */.Navigator, { screens: null, onWillFocus: null, headerBackTitle: null, initialRouteName: null });
+  return jsx(NavigationStack.Navigator, {
+    screens: React.useMemo(() => {
+      obj = {};
+      obj = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_LANDING,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        headerLeft: null,
+        render: null
+      };
+      let obj2 = callback(6345);
+      obj[4] = obj2.getHeaderCloseButton(() => {
+        callback(11905).trackNUFStep(constants2.STEP_GUILD_TEMPLATE, constants2.STEP_FRIEND_LIST, { skip: true });
+        obj = callback(11905);
+        callback(1222).transitionTo(fallbackRoute.fallbackRoute);
+        const obj2 = callback(1222);
+        const result = callback2(11930).closeCreateGuildOnboardingModal();
+      });
+      obj[5] = function render() {
+        return callback3(callback2(11932), { trigger: constants.NUF });
+      };
+      obj[constants.GUILD_TEMPLATES] = obj;
+      obj = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_INTENT_SELECTION,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        render(guildTemplate) {
+          return callback3(callback2(11934), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.NUF });
+        }
+      };
+      obj[constants.CREATION_INTENT] = obj;
+      obj[constants.CREATE_SERVER] = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_CUSTOMIZE,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        render(arg0, arg1) {
+          const callback = arg0;
+          const callback2 = arg1;
+          obj = {};
+          const merged = Object.assign(arg0);
+          obj.onCreate = function onCreate(guild) {
+            return (function onCreateServer(closure_1, id, guildTemplate) {
+              const self = this;
+              const apply = closure_17.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            })(closure_1, guild.guild.id, guildTemplate.guildTemplate);
+          };
+          const intl = callback(1236).intl;
+          obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
+          return callback3(callback2(11549), obj);
+        }
+      };
+      obj2 = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_JOIN,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        render() {
+          obj = { location: "Onboarding Join Guild Modal", onClose: callback2(11930).closeCreateGuildModal };
+          return callback3(callback2(11942), obj);
+        }
+      };
+      obj[constants.JOIN_SERVER] = obj2;
+      obj1 = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_CUSTOMIZE,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        render(arg0, arg1) {
+          const callback = arg0;
+          const callback2 = arg1;
+          obj = {};
+          const merged = Object.assign(arg0);
+          obj.onCreate = function onCreate(guild) {
+            return (function onCreateServer(closure_1, id, guildTemplate) {
+              const self = this;
+              const apply = closure_17.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            })(closure_1, guild.guild.id, guildTemplate.guildTemplate);
+          };
+          const intl = callback(1236).intl;
+          obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
+          return callback3(callback2(11549), obj);
+        }
+      };
+      obj[constants.ACCEPT_INVITE] = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_ACCEPT_INVITE,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        headerLeft() {
+          return null;
+        },
+        render(code) {
+          obj = { code: code.code, onPressClose: callback2(11930).closeCreateGuildModal };
+          return callback3(callback2(11943), obj);
+        }
+      };
+      const obj3 = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_ACCEPT_INVITE,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        headerLeft() {
+          return null;
+        },
+        render(code) {
+          obj = { code: code.code, onPressClose: callback2(11930).closeCreateGuildModal };
+          return callback3(callback2(11943), obj);
+        }
+      };
+      obj[constants.CHANNEL_PROMPT] = {
+        impressionName: callback(503).ImpressionNames.GUILD_ADD_CHANNEL_PROMPT,
+        impressionProperties: closure_18,
+        fullscreen: true,
+        headerTitle() {
+          return null;
+        },
+        render(guildId) {
+          guildId = guildId.guildId;
+          obj = {
+            hasSkip: true,
+            hasBack: false,
+            onCancel: closure_9,
+            onSuccess() {
+              return closure_1_15(guildId);
+            },
+            guildId,
+            buttonText: null
+          };
+          const intl = guildId(1236).intl;
+          obj[5] = intl.string(guildId(1236).t["uHXB+F"]);
+          return callback3(callback2(11973), obj);
+        }
+      };
+      const obj5 = { impressionName: "Array", impressionProperties: true, fullscreen: true, ignoreKeyboard: null, headerTitle: null, headerLeft: null, render: "other" };
+      obj5[1] = closure_18;
+      obj5[4] = function headerTitle() {
+        return null;
+      };
+      obj5[5] = function headerLeft() {
+        return null;
+      };
+      obj5[6] = function render() {
+        return callback3(callback2(11954), { isNestedNavigator: true });
+      };
+      obj[constants.JOIN_STUDENT_HUB] = obj5;
+      return obj;
+    }, []),
+    onWillFocus: Keyboard.dismiss,
+    headerBackTitle: null,
+    initialRouteName: null
+  });
 };

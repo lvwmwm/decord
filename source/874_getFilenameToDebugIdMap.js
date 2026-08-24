@@ -4,7 +4,9 @@
 // Dependencies: [821, 833]
 
 // Module 874 (getFilenameToDebugIdMap)
-const require = arg1;
+import createStackParser from "createStackParser" /* 833 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function getFilenameToDebugIdMap(arg0) {
   const _require = arg0;
@@ -131,7 +133,7 @@ arg5.getDebugImagesForResources = function getDebugImagesForResources(arg0, arg1
       let tmp8 = require;
       let tmp9 = dependencyMap;
       let tmp7 = nextResult;
-      let obj = require(833) /* createStackParser */;
+      let obj = createStackParser;
       let result = obj.normalizeStackTracePath(nextResult);
       let tmp11 = result;
       if (result) {

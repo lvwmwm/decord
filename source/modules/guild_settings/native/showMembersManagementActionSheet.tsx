@@ -1,32 +1,29 @@
-// Module ID: 15828
-// Function ID: 15829
+// Module ID: 15897
+// Function ID: 15898
 // Name: showMembersManagementActionSheet
-// Dependencies: [1922, 1236, 4342, 15829, 2007, 7231, 15830, 7172, 2]
+// Dependencies: [1922, 1236, 4346, 15898, 2008, 7269, 15899, 7210, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 15828 (showMembersManagementActionSheet)
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 15897 (showMembersManagementActionSheet)
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
-let result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/guild_settings/native/showMembersManagementActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_settings/native/showMembersManagementActionSheet.tsx");
 
 export default function showMembersManagementActionSheet(guild) {
-  let canPrune;
-  let dependencyMap;
-  let importDefault;
   guild = guild.guild;
   ({ canPrune, selectedRoleId: importDefault, onFilterRoleId: dependencyMap } = guild);
   let obj = { label: null, onPress: null };
   const intl = guild(1236).intl;
   obj[0] = intl.string(guild(1236).t.pEasFX);
   obj[1] = function onPress() {
-    let obj = outer1_1(outer1_2[2]);
+    let obj = closure_1_1(closure_1_2[2]);
     obj = { guild, selectedRoleId: closure_1, onFilterRoleId: closure_2 };
-    obj.openLazy(guild(outer1_2[4])(outer1_2[3], outer1_2.paths), "MembersFilter", obj);
+    obj.openLazy(guild(closure_1_2[4])(closure_1_2[3], closure_1_2.paths), "MembersFilter", obj);
   };
   const items = [obj];
   if (canPrune == null) {
-    let tmpResult = tmp(7231);
+    let tmpResult = tmp(7269);
     canPrune = tmpResult.canPruneGuildMembers(guild, authStore.getCurrentUser());
   }
   if (canPrune) {
@@ -34,42 +31,39 @@ export default function showMembersManagementActionSheet(guild) {
     const intl2 = tmp(1236).intl;
     obj[0] = intl2.string(tmp(1236).t["2mIlKQ"]);
     obj[1] = function onPress() {
-      let obj = outer1_1(outer1_2[2]);
+      let obj = closure_1_1(closure_1_2[2]);
       obj = { guild };
-      obj.openLazy(guild(outer1_2[4])(outer1_2[6], outer1_2.paths), "MembersPrune", obj);
+      obj.openLazy(guild(closure_1_2[4])(closure_1_2[6], closure_1_2.paths), "MembersPrune", obj);
     };
     items.push(obj);
   }
-  tmpResult = tmp(7172);
+  tmpResult = tmp(7210);
   const result = tmpResult.showSimpleActionSheet({ key: "GuildSettingsMembersMore", options: items, hasIcons: false });
 };
 export const getMembersManagementActions = function getMembersManagementActions(guild) {
-  let canPrune;
-  let dependencyMap;
-  let importDefault;
   guild = guild.guild;
   ({ canPrune, selectedRoleId: importDefault, onFilterRoleId: dependencyMap } = guild);
   let obj = { label: null, action: null };
   const intl = guild(1236).intl;
   obj[0] = intl.string(guild(1236).t.pEasFX);
   obj[1] = function action() {
-    let obj = outer1_1(outer1_2[2]);
+    let obj = closure_1_1(closure_1_2[2]);
     obj = { guild, selectedRoleId: closure_1, onFilterRoleId: closure_2 };
-    obj.openLazy(guild(outer1_2[4])(outer1_2[3], outer1_2.paths), "MembersFilter", obj);
+    obj.openLazy(guild(closure_1_2[4])(closure_1_2[3], closure_1_2.paths), "MembersFilter", obj);
   };
   const items = [obj];
   if (canPrune == null) {
-    canPrune = tmp(7231).canPruneGuildMembers(guild, authStore.getCurrentUser());
-    const tmpResult = tmp(7231);
+    canPrune = tmp(7269).canPruneGuildMembers(guild, authStore.getCurrentUser());
+    const tmpResult = tmp(7269);
   }
   if (canPrune) {
     obj = { label: null, action: null, variant: "destructive" };
     const intl2 = tmp(1236).intl;
     obj[0] = intl2.string(tmp(1236).t["2mIlKQ"]);
     obj[1] = function action() {
-      let obj = outer1_1(outer1_2[2]);
+      let obj = closure_1_1(closure_1_2[2]);
       obj = { guild };
-      obj.openLazy(guild(outer1_2[4])(outer1_2[6], outer1_2.paths), "MembersPrune", obj);
+      obj.openLazy(guild(closure_1_2[4])(closure_1_2[6], closure_1_2.paths), "MembersPrune", obj);
     };
     items.push(obj);
   }

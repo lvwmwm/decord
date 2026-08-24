@@ -1,30 +1,32 @@
-// Module ID: 11468
-// Function ID: 11469
+// Module ID: 11517
+// Function ID: 11518
 // Name: GuildDirectorySearchModal
-// Dependencies: [19, 21, 11469, 6312, 7127, 2]
+// Dependencies: [19, 21, 11518, 6343, 7165, 2]
 // Exports: default
 
-// Module 11468 (GuildDirectorySearchModal)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 11517 (GuildDirectorySearchModal)
+import noopAll from "noop" /* 19 */;
+import useInitialValueDefault from "useInitialValue" /* 7165 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
+noopAll;
 const SEARCH_SCREEN_KEY = "SEARCH_SCREEN_KEY";
-const result = require("DefaultState").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectorySearchModal.tsx");
+const result = require("set").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectorySearchModal.tsx");
 
 export default function GuildDirectorySearchModal(arg0) {
   const _require = arg0;
-  const obj = { screens: null, initialRouteName: null };
-  obj[0] = importDefault(7127)(() => ({
-    [outer1_4]: {
-      fullscreen: true,
-      headerShown: false,
-      render() {
-        const merged = Object.assign(closure_0);
-        return outer1_3(outer1_1(outer1_2[2]), {});
+  return jsx(_require(6343).Navigator, {
+    screens: useInitialValueDefault(() => ({
+      [closure_1_4]: {
+        fullscreen: true,
+        headerShown: false,
+        render() {
+          const merged = Object.assign(closure_0);
+          return closure_1_3(closure_1_1(closure_1_2[2]), {});
+        }
       }
-    }
-  }));
-  obj[1] = SEARCH_SCREEN_KEY;
-  return jsx(_require(6312).Navigator, { screens: null, initialRouteName: null });
+    })),
+    initialRouteName: SEARCH_SCREEN_KEY
+  });
 };

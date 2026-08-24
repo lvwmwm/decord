@@ -1,52 +1,68 @@
-// Module ID: 10050
-// Function ID: 10051
+// Module ID: 10089
+// Function ID: 10090
 // Name: PreviewIcon
-// Dependencies: [19, 17, 4030, 21, 6882, 7998, 9904, 10051, 4318, 7990, 8508, 8510, 4751, 10053, 1367, 10028, 10056, 9288, 4734, 4310, 4661, 712, 4097, 4066, 8157, 10066, 8340, 8161, 589, 2]
+// Dependencies: [19, 17, 4033, 21, 6920, 8037, 9943, 10090, 4322, 8029, 8547, 8549, 4756, 10092, 1367, 10067, 10095, 9325, 4739, 4314, 4668, 712, 4100, 4069, 8196, 10105, 8379, 8200, 589, 2]
 
-// Module 10050 (PreviewIcon)
-import importAllResult from "useTheme";
-import { View } from "map";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import jsxProd from "Themes";
+// Module 10089 (PreviewIcon)
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import map from "map" /* 4100 */;
+import LinkIcon from "LinkIcon" /* 4322 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import Text from "Text" /* 4739 */;
+import getFontScale from "getFontScale" /* 4756 */;
+import ImageIcon from "ImageIcon" /* 6920 */;
+import StickerIcon from "StickerIcon" /* 8029 */;
+import VideoIcon from "VideoIcon" /* 8037 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 8547 */;
+import PhoneHangUpIcon from "PhoneHangUpIcon" /* 8549 */;
+import map2 from "map" /* 9325 */;
+import MusicIcon from "MusicIcon" /* 9943 */;
+import formatMessagePreview from "formatMessagePreview" /* 10067 */;
+import AttachmentIcon from "AttachmentIcon" /* 10090 */;
+import getOrParseMessagePreviewMarkupAST from "getOrParseMessagePreviewMarkupAST" /* 10092 */;
+import getLayoutStyles from "getLayoutStyles" /* 10095 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function PreviewIcon(icon) {
   icon = icon.icon;
   const merged = Object.assign(icon, Object.create(null));
   if ("image" === icon) {
     let obj = {};
     const merged1 = Object.assign(merged);
-    return callback(require(6882) /* ImageIcon */.ImageIcon, obj);
+    return callback(ImageIcon.ImageIcon, obj);
   } else if ("video" === icon) {
     obj = {};
     const merged2 = Object.assign(merged);
-    return callback(require(7998) /* VideoIcon */.VideoIcon, obj);
+    return callback(VideoIcon.VideoIcon, obj);
   } else if ("audio" === icon) {
-    const obj1 = {};
+    obj1 = {};
     const merged3 = Object.assign(merged);
-    return callback(require(9904) /* MusicIcon */.MusicIcon, obj1);
+    return callback(MusicIcon.MusicIcon, obj1);
   } else if ("attachment" === icon) {
     const obj2 = {};
     const merged4 = Object.assign(merged);
-    return callback(require(10051) /* AttachmentIcon */.AttachmentIcon, obj2);
+    return callback(AttachmentIcon.AttachmentIcon, obj2);
   } else if ("link" === icon) {
     const obj3 = {};
     const merged5 = Object.assign(merged);
-    return callback(require(4318) /* LinkIcon */.LinkIcon, obj3);
+    return callback(LinkIcon.LinkIcon, obj3);
   } else if ("sticker" === icon) {
     const obj4 = {};
     const merged6 = Object.assign(merged);
-    return callback(require(7990) /* StickerIcon */.StickerIcon, obj4);
+    return callback(StickerIcon.StickerIcon, obj4);
   } else if ("call-active" === icon) {
     const obj5 = {};
     const merged7 = Object.assign(merged);
-    return callback(require(8508) /* PhoneCallIcon */.PhoneCallIcon, obj5);
+    return callback(PhoneCallIcon.PhoneCallIcon, obj5);
   } else if ("call-ended" === icon) {
     obj = {};
     const merged8 = Object.assign(merged);
-    return callback(require(8510) /* PhoneHangUpIcon */.PhoneHangUpIcon, obj);
+    return callback(PhoneHangUpIcon.PhoneHangUpIcon, obj);
   }
 }
 class ChannelRowPreview {
@@ -81,7 +97,7 @@ class ChannelRowPreview {
         str2 = "markup";
         if ("markup" === type) {
           tmp9 = jsx;
-          tmp10 = f48286;
+          tmp10 = closure_9;
           if ("markup" === formattedMessagePreview.type) {
             content = formattedMessagePreview.markup;
           } else {
@@ -156,35 +172,35 @@ class NativeChannelRowPreview {
       gifAutoPlay = false;
     }
     c1 = gifAutoPlay;
-    c2 = undefined;
-    useToken = undefined;
-    c4 = undefined;
-    c5 = undefined;
-    textColor = undefined;
+    closure_2 = undefined;
+    closure_3 = undefined;
+    closure_4 = undefined;
+    closure_5 = undefined;
+    closure_6 = undefined;
     ({ textColor, gradientStyles, gradientColors } = global);
     tmp = require("useTheme")();
     obj = require("createCacheKey");
     obj = { seeMoreLabelColor: require("Themes").colors.TEXT_DEFAULT };
-    c2 = obj.createNativeStyleProperties(obj)(tmp);
+    closure_2 = obj.createNativeStyleProperties(obj)(tmp);
     obj3 = require("map");
-    useToken = obj3.useToken(textColor);
+    closure_3 = obj3.useToken(textColor);
     RenderEmbeds = require("explicitContentFromProto").RenderEmbeds;
     setting = RenderEmbeds.getSetting();
-    c4 = setting;
+    closure_4 = setting;
     InlineEmbedMedia = require("explicitContentFromProto").InlineEmbedMedia;
     setting1 = InlineEmbedMedia.getSetting();
-    c5 = setting1;
+    closure_5 = setting1;
     InlineAttachmentMedia = require("explicitContentFromProto").InlineAttachmentMedia;
     setting2 = InlineAttachmentMedia.getSetting();
-    textColor = setting2;
+    closure_6 = setting2;
     items = [, , , ];
     items[0] = setting;
     items[1] = setting1;
     items[2] = setting2;
     items[3] = gifAutoPlay;
-    memo = useToken.useMemo(() => {
+    memo = closure_3.useMemo(() => {
       let obj = new gifAutoPlay(seeMoreLabelColor[24])();
-      obj = { renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2, renderReactions: false, animateEmoji: false, gifAutoPlay, renderReplies: false, renderCodedLinks: false, renderGiftCode: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, renderComponents: false, ignoreMentioned: true, enableSwipeActions: false, renderExecutedCommands: false, useAlternateEmbedColors: true };
+      obj = { renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2, renderReactions: false, animateEmoji: false, gifAutoPlay, renderReplies: false, renderCodedLinks: false, renderGiftCode: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, enableSwipeActions: false, renderExecutedCommands: false, useAlternateEmbedColors: true };
       obj.setOptions(obj);
       return obj;
     }, items);
@@ -193,11 +209,11 @@ class NativeChannelRowPreview {
       horizontalOffset: 0,
       modifyRow(message) {
             let processColorOrThrowResult;
-            message.contextType = outer1_0(seeMoreLabelColor[26]).MessageContextType.SEARCH;
+            message.contextType = closure_1_0(seeMoreLabelColor[26]).MessageContextType.SEARCH;
             if (null != closure_3) {
               try {
-                processColorOrThrowResult = outer1_0(seeMoreLabelColor[27]).processColorOrThrow(tmp4);
-                const tmp2Result = outer1_0(seeMoreLabelColor[27]);
+                processColorOrThrowResult = closure_1_0(seeMoreLabelColor[27]).processColorOrThrow(tmp4);
+                const tmp2Result = closure_1_0(seeMoreLabelColor[27]);
               } catch (err) {
               }
             }
@@ -221,29 +237,23 @@ class NativeChannelRowPreview {
       gradientStyles,
       gradientColors
     };
-    return textColor(require("DCDChatItem"), obj1);
+    return closure_6(require("DCDChatItem"), obj1);
   }
 }
 let c3 = importAllResult;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_9 = importAllResult.memo((arg0) => {
-  let channelId;
-  let color;
-  let guildId;
-  let layout;
-  let markup;
-  let muted;
   ({ markup, channelId, guildId, muted, layout, color } = arg0);
-  const fontScale = require(4751) /* getFontScale */.useFontScale();
-  const obj = require(4751) /* getFontScale */;
-  return require(10053) /* getOrParseMessagePreviewMarkupAST */.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
+  const fontScale = getFontScale.useFontScale();
+  const obj = getFontScale;
+  return getOrParseMessagePreviewMarkupAST.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
 });
 const memoResult = importAllResult.memo((message) => {
   const _require = message;
   let obj = _require(589);
-  const items = [markAllUserIdListsStale];
+  const items = [closure_5];
   const items1 = [message.message.author.id];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.isBlockedOrIgnored(message.message.author.id), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.isBlockedOrIgnored(message.message.author.id), items1);
   if (obj2.isMessageContentPreviewable(message.message)) {
     if (!stateFromStores) {
       obj = {};
@@ -256,7 +266,7 @@ const memoResult = importAllResult.memo((message) => {
   const merged1 = Object.assign(message);
   tmp7 = callback(ChannelRowPreview, obj);
 });
-const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/ChannelRowPreview.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/ChannelRowPreview.tsx");
 
 export { ChannelRowPreview };
 export { NativeChannelRowPreview };

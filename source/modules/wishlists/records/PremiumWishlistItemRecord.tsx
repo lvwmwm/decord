@@ -1,14 +1,15 @@
-// Module ID: 9190
-// Function ID: 9191
+// Module ID: 9227
+// Function ID: 9228
 // Name: fromServer
-// Dependencies: [4515, 9188, 676, 2]
+// Dependencies: [4520, 9225, 676, 2]
 // Exports: isPremiumWishlistItemRecord
 
-// Module 9190 (fromServer)
-import createFromServer from "createFromServer";
-import "fromServer";
-import { SKUProductLines } from "ME";
+// Module 9227 (fromServer)
+import fromServerDefault from "fromServer" /* 9225 */;
+import closure_0 from "createFromServer" /* 4520 */;
+import { SKUProductLines } from "ME" /* 676 */;
 
+fromServerDefault;
 let prototype;
 prototype = function PremiumWishlistItemRecord(sku) {
   const tmp = new prototype(sku, new.target, new.target);
@@ -20,10 +21,10 @@ prototype = function PremiumWishlistItemRecord(sku) {
 class prototype extends tmp2 {
 }
 prototype["fromServer"] = function fromServer(sku) {
-  const fromServer = createFromServer.createFromServer(sku.sku);
+  const fromServer = closure_0.createFromServer(sku.sku);
   if (null == fromServer) {
     const _Error = Error;
-    const error = new Error("SKU not found");
+    error = new Error("SKU not found");
     throw error;
   } else {
     const obj = {};
@@ -60,7 +61,7 @@ prototype["fromSKU"] = function fromSKU(id) {
   }
   return tmp;
 };
-const result = require("ME").fileFinishedImporting("modules/wishlists/records/PremiumWishlistItemRecord.tsx");
+const result = require("set").fileFinishedImporting("modules/wishlists/records/PremiumWishlistItemRecord.tsx");
 
 export default prototype;
 export const isPremiumWishlistItemRecord = function isPremiumWishlistItemRecord(arg0) {

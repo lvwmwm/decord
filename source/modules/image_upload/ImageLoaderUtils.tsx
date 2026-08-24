@@ -5,34 +5,25 @@
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
 // Module 1469 (handleImageLoad)
-import _slicedToArray from "_slicedToArray";
-import fails from "fails";
-import ME from "ME";
+import privDefault from "priv" /* 1405 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
+import fit from "fit" /* 1491 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1896 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function handleImageLoad(arg0, callbacks) {
-  let c0 = true;
-  let closure_1 = callbacks;
+  c0 = true;
+  closure_1 = callbacks;
   callbacks = callbacks.callbacks;
-  tmp3.del(callbacks.url);
+  store.del(callbacks.url);
   if (null != callbacks) {
     const item = callbacks.forEach((arg0) => arg0(c0, obj));
   }
 }
 function getSrcWithWidthAndHeight(quality) {
-  let format;
-  let height;
-  let sourceHeight;
-  let sourceWidth;
-  let src;
-  let targetHeight;
-  let targetWidth;
-  let tmp6;
-  let tmp8;
-  let tmp9;
-  let width;
   ({ src, sourceWidth, sourceHeight, format } = quality);
   ({ targetWidth, targetHeight } = quality);
   if (format === undefined) {
@@ -51,7 +42,7 @@ function getSrcWithWidthAndHeight(quality) {
     flag2 = false;
   }
   if (!src.startsWith("data:image")) {
-    let obj = importDefault(1487);
+    let obj = isDiscordProxiedAssetUrlDefault;
     if (!obj.isDiscordCdnUrl(src)) {
       const items = [, ];
       [arr[0], tmp6] = callback(src.split("?"), 2);
@@ -87,8 +78,8 @@ function getSrcWithWidthAndHeight(quality) {
       obj[1] = targetHeight;
       obj[2] = closure_6;
       obj[3] = closure_6;
-      const obj3 = require(1491) /* fit */;
-      ({ width, height } = require(1491) /* fit */.fit(obj));
+      const obj3 = fit;
+      ({ width, height } = fit.fit(obj));
       if (width !== sourceWidth) {
         const tmp18 = (function getAttachmentLadderConfig(arg0) {
           try {
@@ -139,19 +130,19 @@ function getSrcWithWidthAndHeight(quality) {
 const re7 = /\.webp($|\?|#)/i;
 const re8 = /\.avif($|\?|#)/i;
 let closure_9 = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096];
-let c10 = new require("priv")({ max: 1000 });
-const tmp3 = new require("priv")({ max: 1000 });
-let result = require("ME").fileFinishedImporting("modules/image_upload/ImageLoaderUtils.tsx");
+let closure_10 = new privDefault({ max: 1000 });
+const tmp3 = new privDefault({ max: 1000 });
+let result = require("set").fileFinishedImporting("modules/image_upload/ImageLoaderUtils.tsx");
 
-export const getDevicePixelRatio = require("getDevicePixelRatio");
+export const getDevicePixelRatio = getDevicePixelRatioDefault;
 export const isImageLoaded = function isImageLoaded(arg0) {
-  const value = tmp3.get(arg0);
+  const value = store.get(arg0);
   return null != value && value.loaded;
 };
 export const loadImage = function loadImage(arg0, bind) {
   let obj = arg0;
-  obj = tmp3;
-  let value = tmp3.get(arg0);
+  obj = store;
+  let value = store.get(arg0);
   let backoff = value;
   if (null != value) {
     if (value.loaded) {
@@ -164,7 +155,7 @@ export const loadImage = function loadImage(arg0, bind) {
               if (null != closure_2) {
                 arg0(false, tmp);
               } else {
-                const obj = { url: null, loaded: true };
+                obj = { url: null, loaded: true };
                 obj[0] = closure_0;
                 arg0(true, obj);
               }
@@ -202,7 +193,7 @@ export const loadImage = function loadImage(arg0, bind) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -217,9 +208,9 @@ export const loadImage = function loadImage(arg0, bind) {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_1 = tmp2;
-              let closure_0 = tmp2;
-              let obj1 = outer1_1(c2[6]);
+              closure_1 = tmp2;
+              closure_0 = tmp2;
+              let obj1 = closure_1_1(c2[6]);
               c2 = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
@@ -237,14 +228,14 @@ export const loadImage = function loadImage(arg0, bind) {
           } else {
             if (c2.fails < 5) {
               c2.fail(() => {
-                let image = new globalThis.Image();
-                let backoff;
+                image = new globalThis.Image();
+                backoff = undefined;
                 if (null == tmp2.backoff) {
                   let tmp7 = new tmp22(table[5])();
                   tmp.backoff = tmp7;
                 }
                 backoff = tmp.backoff;
-                image.onerror = outer1_4(function*() {
+                image.onerror = closure_1_4(function*() {
                   if (c3 === 2) {
                     c3 = 3;
                     HermesBuiltin.throwTypeError();
@@ -256,7 +247,7 @@ export const loadImage = function loadImage(arg0, bind) {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -271,9 +262,9 @@ export const loadImage = function loadImage(arg0, bind) {
                           obj[0] = arg1;
                           return obj;
                         } else {
-                          let closure_1 = tmp2;
-                          let closure_0 = tmp2;
-                          let obj1 = outer1_1(c2[6]);
+                          closure_1 = tmp2;
+                          closure_0 = tmp2;
+                          let obj1 = closure_1_1(c2[6]);
                           c2 = 1;
                           c3 = 1;
                           obj1 = { value: null, done: false };
@@ -291,19 +282,19 @@ export const loadImage = function loadImage(arg0, bind) {
                       } else {
                         if (c2.fails < 5) {
                           c2.fail(() => {
-                            let image = new globalThis.Image();
-                            let backoff;
+                            image = new globalThis.Image();
+                            backoff = undefined;
                             if (null == tmp2.backoff) {
                               let tmp7 = new tmp22(table[5])();
                               tmp.backoff = tmp7;
                             }
                             backoff = tmp.backoff;
-                            image.onerror = outer1_4(/* F103843 */ function() { ... });
+                            image.onerror = closure_1_4(/* F104710 */ function() { ... });
                             image.onload = function onload() { ... };
                             image.src = tmp2.url;
                           });
                         } else {
-                          outer1_11(true, closure_0, closure_1);
+                          closure_1_11(true, closure_0, closure_1);
                         }
                         c3 = 3;
                       }
@@ -314,8 +305,6 @@ export const loadImage = function loadImage(arg0, bind) {
                   }
                 });
                 image.onload = () => {
-                  let callbacks;
-                  let url;
                   backoff = backoff.backoff;
                   if (null != backoff) {
                     backoff.succeed();
@@ -324,7 +313,7 @@ export const loadImage = function loadImage(arg0, bind) {
                   let obj = tmp;
                   ({ callbacks, url } = backoff);
                   obj = { url, loaded: true, width: obj.width, height: obj.height };
-                  const result = outer1_10.set(url, obj);
+                  const result = closure_1_10.set(url, obj);
                   if (null != callbacks) {
                     const item = callbacks.forEach((arg0) => arg0(c0, obj));
                   }
@@ -332,7 +321,7 @@ export const loadImage = function loadImage(arg0, bind) {
                 image.src = tmp2.url;
               });
             } else {
-              outer1_11(true, closure_0, closure_1);
+              closure_1_11(true, closure_0, closure_1);
             }
             c3 = 3;
           }
@@ -343,8 +332,6 @@ export const loadImage = function loadImage(arg0, bind) {
       }
     });
     image.onload = () => {
-      let callbacks;
-      let url;
       backoff = backoff.backoff;
       if (null != backoff) {
         backoff.succeed();
@@ -353,7 +340,7 @@ export const loadImage = function loadImage(arg0, bind) {
       let obj = tmp;
       ({ callbacks, url } = backoff);
       obj = { url, loaded: true, width: obj.width, height: obj.height };
-      const result = outer1_10.set(url, obj);
+      const result = closure_1_10.set(url, obj);
       if (null != callbacks) {
         const item = callbacks.forEach((arg0) => arg0(c0, obj));
       }
@@ -389,10 +376,10 @@ export const loadImage = function loadImage(arg0, bind) {
     }
   };
 };
-export const getBestMediaProxySize = function getBestMediaProxySize(size, set) {
-  let closure_0 = size;
-  let flag = set;
-  if (set === undefined) {
+export const getBestMediaProxySize = function getBestMediaProxySize(size, closure_12) {
+  closure_0 = size;
+  let flag = closure_12;
+  if (closure_12 === undefined) {
     flag = false;
   }
   if (flag) {
@@ -412,11 +399,6 @@ export const getBestMediaProxySize = function getBestMediaProxySize(size, set) {
 };
 export { getSrcWithWidthAndHeight };
 export const getImageSrc = function getImageSrc(format) {
-  let height;
-  let maxHeight;
-  let maxWidth;
-  let ratio;
-  let width;
   ({ width, height, maxWidth, maxHeight, ratio } = format);
   if (ratio === undefined) {
     ratio = 1;
@@ -455,6 +437,6 @@ export const getImageSrc = function getImageSrc(format) {
     const _Math4 = Math;
     bound1 = Math.min(rounded1, maxHeight);
   }
-  const tmp10 = importDefault(1896)();
+  const tmp10 = getDevicePixelRatioDefault();
   return getSrcWithWidthAndHeight({ src: format.src, sourceWidth: width, sourceHeight: height, targetWidth: bound * tmp10, targetHeight: bound1 * tmp10, format, quality, animated: flag, srcIsAnimated: flag2 });
 };

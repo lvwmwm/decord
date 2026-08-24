@@ -1,11 +1,11 @@
-// Module ID: 16193
-// Function ID: 16194
+// Module ID: 16290
+// Function ID: 16291
 // Name: useSimpleGuildSize
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 16193 (useSimpleGuildSize)
-import noop from "noop";
+// Module 16290 (useSimpleGuildSize)
+import closure_0 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/useSimpleGuildSize.tsx");
 
@@ -25,7 +25,7 @@ export default function useSimpleGuildSize(size) {
     containerSize: num,
     containerSizeStyle: memo,
     containerStyles: size.useMemo(() => {
-      let num = 0;
+      num = 0;
       if (null == size) {
         num = 4;
       }

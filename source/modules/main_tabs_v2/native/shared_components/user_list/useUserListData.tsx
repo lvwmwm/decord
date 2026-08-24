@@ -1,23 +1,29 @@
-// Module ID: 9636
-// Function ID: 9637
+// Module ID: 9675
+// Function ID: 9676
 // Name: _toPropertyKey
-// Dependencies: [109, 32, 19, 5410, 5406, 5407, 1930, 4030, 1922, 676, 4017, 5405, 7597, 709, 5409, 6777, 12, 1236, 9637, 2]
+// Dependencies: [109, 32, 19, 5415, 5411, 5412, 1930, 4033, 1922, 676, 4020, 5410, 7635, 709, 5414, 6814, 12, 1236, 9676, 2]
 // Exports: default
 
-// Module 9636 (_toPropertyKey)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import _slicedToArray from "_slicedToArray";
-import closure_5 from "set";
-import initialize from "initialize";
-import recountRelationshipTypes from "recountRelationshipTypes";
-import recomputeAffinities from "recomputeAffinities";
-import createdAt from "createdAt";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { RelationshipTypes } from "ME";
-import set from "noop";
+// Module 9675 (_toPropertyKey)
+import applyDefault from "apply" /* 12 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getAllDefault from "getAll" /* 5410 */;
+import cleanString from "cleanString" /* 5414 */;
+import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 6814 */;
+import getTransformedUserDefault from "getTransformedUser" /* 7635 */;
+import closure_3 from "_objectWithoutProperties" /* 109 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import closure_6 from "initialize" /* 5415 */;
+import closure_7 from "recountRelationshipTypes" /* 5411 */;
+import closure_8 from "recomputeAffinities" /* 5412 */;
+import closure_9 from "createdAt" /* 1930 */;
+import closure_10 from "markAllUserIdListsStale" /* 4033 */;
+import closure_11 from "mergeGuildAvatar" /* 1922 */;
+import { RelationshipTypes } from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -50,19 +56,19 @@ function _toPropertyKey(obj) {
   return text;
 }
 function isMatch(arg0, arg1, arg2) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   let obj = arg2;
   if (arg2 == null) {
     obj = {};
   }
   const exact = obj.exact;
-  let closure_1 = undefined !== exact && exact;
+  closure_1 = undefined !== exact && exact;
   const contains = obj.contains;
-  const dependencyMap = undefined !== contains && contains;
+  closure_2 = undefined !== contains && contains;
   function _loop(arr) {
-    let closure_0 = arr;
+    closure_0 = arr;
     if (arr.some((str) => {
-      if (outer1_1) {
+      if (closure_1_1) {
         return str === arr;
       } else if (str.startsWith(arr)) {
         return true;
@@ -70,8 +76,8 @@ function isMatch(arg0, arg1, arg2) {
         const joined = arr.join(" ");
         let startsWithResult = joined.startsWith(tmp);
         if (!startsWithResult) {
-          let hasItem = outer1_2;
-          if (outer1_2) {
+          let hasItem = closure_1_2;
+          if (closure_1_2) {
             hasItem = joined.includes(tmp);
           }
           startsWithResult = hasItem;
@@ -80,7 +86,7 @@ function isMatch(arg0, arg1, arg2) {
       }
     })) {
       const obj = { v: null };
-      obj[0] = _objectWithoutProperties;
+      obj[0] = closure_3;
       return obj;
     }
   }
@@ -89,7 +95,7 @@ function isMatch(arg0, arg1, arg2) {
   while (obj2 !== undefined) {
     let tmp4 = callback2;
     let tmp5 = callback2(tmp3, 2);
-    let _objectWithoutProperties = tmp5[0];
+    closure_3 = tmp5[0];
     let _loopResult = _loop(tmp5[1]);
     let tmp7 = _loopResult;
     if (_loopResult) {
@@ -101,24 +107,6 @@ function isMatch(arg0, arg1, arg2) {
   return null;
 }
 function parseUserSearchResults(affinitySuggestionsLimit) {
-  let AffinitySuggestions;
-  let FriendRequests;
-  let FriendRequestsIncoming;
-  let FriendRequestsOutgoing;
-  let FriendRequestsSpam;
-  let FriendSuggestions;
-  let Friends;
-  let GuildMembers;
-  let data;
-  let excludeCurrentUser;
-  let withAffinitySuggestions;
-  let withFriendRequests;
-  let withFriendRequestsIncoming;
-  let withFriendRequestsOutgoing;
-  let withFriendRequestsSpam;
-  let withFriendSuggestions;
-  let withFriends;
-  let withGuildMembers;
   ({ data, withFriends, excludeCurrentUser } = affinitySuggestionsLimit);
   ({ withGuildMembers, withAffinitySuggestions, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam } = affinitySuggestionsLimit);
   if (excludeCurrentUser === undefined) {
@@ -177,8 +165,8 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
     found = items7.filter((user) => user.user.id !== id);
   }
   if (withFriends) {
-    const mapped = importDefault(12)(tmp).map((items, title) => ({ title, items }));
-    const arr12 = importDefault(12)(tmp);
+    const mapped = applyDefault(tmp).map((items, title) => ({ title, items }));
+    const arr12 = applyDefault(tmp);
     items = mapped.sortBy((title) => title.title).value();
     const iter = mapped.sortBy((title) => title.title);
   } else {
@@ -190,7 +178,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   const intl = id(1236).intl;
   obj[0] = intl.string(id(1236).t.HbJ7eD);
   if (withAffinitySuggestions) {
-    let obj3 = importDefault(12)(items);
+    let obj3 = applyDefault(items);
     const sortByResult = obj3.sortBy((affinity) => -affinity.affinity);
     let valueResult = obj3.sortBy((affinity) => -affinity.affinity).slice(0, num).value();
     const iter2 = obj3.sortBy((affinity) => -affinity.affinity).slice(0, num);
@@ -199,7 +187,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   }
   obj[1] = valueResult;
   const items10 = [obj, , , , , , , ];
-  const obj1 = { title: null, items: null };
+  obj1 = { title: null, items: null };
   const intl2 = tmp6(1236).intl;
   obj1[0] = intl2.formatToPlainString(id(1236).t.zsVtft, { pendingRequestNumber: items1.length });
   if (!withFriendRequests) {
@@ -266,8 +254,6 @@ class UserSearch {
     obj.affinities = {};
     obj.userSearchContext = null;
     secondaryIndexMap = new require("version").SecondaryIndexMap((arg0) => {
-      let names;
-      let type;
       ({ names, type } = arg0);
       const items = [];
       if (constants.PENDING_INCOMING === type) {
@@ -400,8 +386,8 @@ class UserSearch {
       if (arg0 === undefined) {
         flag = false;
       }
-      if (!outer1_1(outer1_2[11]).shouldUseCache) {
-        const userAffinities = outer1_8.getUserAffinities();
+      if (!closure_1_1(closure_1_2[11]).shouldUseCache) {
+        const userAffinities = closure_1_8.getUserAffinities();
         const item = userAffinities.forEach((otherUserId) => {
           otherUserId = otherUserId.otherUserId;
           affinities.affinities[otherUserId] = otherUserId.communicationProbability;
@@ -444,19 +430,19 @@ prototype["subscribe"] = function subscribe(onUpdate) {
   self.onUpdate = onUpdate;
   let userSearchContext = null;
   if (flag) {
-    userSearchContext = importDefault(7597).getUserSearchContext((results) => {
+    userSearchContext = getTransformedUserDefault.getUserSearchContext((results) => {
       results = results.results;
       let items;
       if (items.currentQuery === results.query) {
         items = [];
         if (results.reduce((arg0, id) => {
-          if (outer2_1(outer2_2[11]).shouldUseCache) {
+          if (closure_2_1(closure_2_2[11]).shouldUseCache) {
             return false;
-          } else if (outer2_15.has(outer2_10.getRelationshipType(id.id))) {
+          } else if (closure_2_15.has(closure_2_10.getRelationshipType(id.id))) {
             return arg0;
           } else {
             if (items.withGameFriends) {
-              if (outer2_7.getGameFriendsForUser(id.id).length > 0) {
+              if (closure_2_7.getGameFriendsForUser(id.id).length > 0) {
                 return arg0;
               }
             }
@@ -477,33 +463,33 @@ prototype["subscribe"] = function subscribe(onUpdate) {
         }
       }
     }, 20);
-    const obj = importDefault(7597);
+    const obj = getTransformedUserDefault;
   }
   self.userSearchContext = userSearchContext;
-  const subscription = importDefault(709).subscribe("POST_CONNECTION_OPEN", self.handlePostConnectionOpen);
-  const obj2 = importDefault(709);
-  const subscription1 = importDefault(709).subscribe("RELATIONSHIP_ADD", self.handleRelationship);
-  const obj3 = importDefault(709);
-  const subscription2 = importDefault(709).subscribe("RELATIONSHIP_REMOVE", self.handleRelationship);
-  const obj4 = importDefault(709);
-  const subscription3 = importDefault(709).subscribe("RELATIONSHIP_UPDATE", self.handleRelationship);
-  const obj5 = importDefault(709);
-  const subscription4 = importDefault(709).subscribe("GAME_RELATIONSHIP_ADD", self.handleGameRelationshipAdd);
-  const obj6 = importDefault(709);
-  const subscription5 = importDefault(709).subscribe("GAME_RELATIONSHIP_REMOVE", self.handleGameRelationshipRemove);
-  const obj7 = importDefault(709);
-  const subscription6 = importDefault(709).subscribe("FRIEND_SUGGESTION_CREATE", self.handleFriendSuggestionCreate);
-  const obj8 = importDefault(709);
-  const subscription7 = importDefault(709).subscribe("FRIEND_SUGGESTION_DELETE", self.handleFriendSuggestionDelete);
-  const obj9 = importDefault(709);
-  const subscription8 = importDefault(709).subscribe("GUILD_MEMBER_ADD", self.handleGuildMember);
-  const obj10 = importDefault(709);
-  const subscription9 = importDefault(709).subscribe("GUILD_MEMBER_UPDATE", self.handleGuildMember);
-  const obj11 = importDefault(709);
-  const subscription10 = importDefault(709).subscribe("GUILD_MEMBER_REMOVE", self.handleGuildMember);
-  const obj12 = importDefault(709);
-  const subscription11 = importDefault(709).subscribe("GUILD_MEMBERS_CHUNK_BATCH", self.handleGuildMembersChunkBatch);
-  recomputeAffinities.addChangeListener(self.handleUserAffinitiesUpdate);
+  const subscription = dispatcherDefault.subscribe("POST_CONNECTION_OPEN", self.handlePostConnectionOpen);
+  const obj2 = dispatcherDefault;
+  const subscription1 = dispatcherDefault.subscribe("RELATIONSHIP_ADD", self.handleRelationship);
+  const obj3 = dispatcherDefault;
+  const subscription2 = dispatcherDefault.subscribe("RELATIONSHIP_REMOVE", self.handleRelationship);
+  const obj4 = dispatcherDefault;
+  const subscription3 = dispatcherDefault.subscribe("RELATIONSHIP_UPDATE", self.handleRelationship);
+  const obj5 = dispatcherDefault;
+  const subscription4 = dispatcherDefault.subscribe("GAME_RELATIONSHIP_ADD", self.handleGameRelationshipAdd);
+  const obj6 = dispatcherDefault;
+  const subscription5 = dispatcherDefault.subscribe("GAME_RELATIONSHIP_REMOVE", self.handleGameRelationshipRemove);
+  const obj7 = dispatcherDefault;
+  const subscription6 = dispatcherDefault.subscribe("FRIEND_SUGGESTION_CREATE", self.handleFriendSuggestionCreate);
+  const obj8 = dispatcherDefault;
+  const subscription7 = dispatcherDefault.subscribe("FRIEND_SUGGESTION_DELETE", self.handleFriendSuggestionDelete);
+  const obj9 = dispatcherDefault;
+  const subscription8 = dispatcherDefault.subscribe("GUILD_MEMBER_ADD", self.handleGuildMember);
+  const obj10 = dispatcherDefault;
+  const subscription9 = dispatcherDefault.subscribe("GUILD_MEMBER_UPDATE", self.handleGuildMember);
+  const obj11 = dispatcherDefault;
+  const subscription10 = dispatcherDefault.subscribe("GUILD_MEMBER_REMOVE", self.handleGuildMember);
+  const obj12 = dispatcherDefault;
+  const subscription11 = dispatcherDefault.subscribe("GUILD_MEMBERS_CHUNK_BATCH", self.handleGuildMembersChunkBatch);
+  closure_8.addChangeListener(self.handleUserAffinitiesUpdate);
 };
 prototype["unsubscribe"] = function unsubscribe() {
   const self = this;
@@ -512,34 +498,34 @@ prototype["unsubscribe"] = function unsubscribe() {
   if (userSearchContext != null) {
     userSearchContext.destroy();
   }
-  importDefault(709).unsubscribe("POST_CONNECTION_OPEN", self.handlePostConnectionOpen);
-  const obj = importDefault(709);
-  importDefault(709).unsubscribe("RELATIONSHIP_ADD", self.handleRelationship);
-  const obj2 = importDefault(709);
-  importDefault(709).unsubscribe("RELATIONSHIP_REMOVE", self.handleRelationship);
-  const obj3 = importDefault(709);
-  importDefault(709).unsubscribe("RELATIONSHIP_UPDATE", self.handleRelationship);
-  const obj4 = importDefault(709);
-  importDefault(709).unsubscribe("GAME_RELATIONSHIP_ADD", self.handleGameRelationshipAdd);
-  const obj5 = importDefault(709);
-  importDefault(709).unsubscribe("GAME_RELATIONSHIP_REMOVE", self.handleGameRelationshipRemove);
-  const obj6 = importDefault(709);
-  importDefault(709).unsubscribe("FRIEND_SUGGESTION_CREATE", self.handleFriendSuggestionCreate);
-  const obj7 = importDefault(709);
-  importDefault(709).unsubscribe("FRIEND_SUGGESTION_DELETE", self.handleFriendSuggestionDelete);
-  const obj8 = importDefault(709);
-  importDefault(709).unsubscribe("GUILD_MEMBER_ADD", self.handleGuildMember);
-  const obj9 = importDefault(709);
-  importDefault(709).unsubscribe("GUILD_MEMBER_UPDATE", self.handleGuildMember);
-  const obj10 = importDefault(709);
-  importDefault(709).unsubscribe("GUILD_MEMBER_REMOVE", self.handleGuildMember);
-  const obj11 = importDefault(709);
-  importDefault(709).unsubscribe("GUILD_MEMBERS_CHUNK_BATCH", self.handleGuildMembersChunkBatch);
-  recomputeAffinities.removeChangeListener(self.handleUserAffinitiesUpdate);
+  dispatcherDefault.unsubscribe("POST_CONNECTION_OPEN", self.handlePostConnectionOpen);
+  const obj = dispatcherDefault;
+  dispatcherDefault.unsubscribe("RELATIONSHIP_ADD", self.handleRelationship);
+  const obj2 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("RELATIONSHIP_REMOVE", self.handleRelationship);
+  const obj3 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("RELATIONSHIP_UPDATE", self.handleRelationship);
+  const obj4 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("GAME_RELATIONSHIP_ADD", self.handleGameRelationshipAdd);
+  const obj5 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("GAME_RELATIONSHIP_REMOVE", self.handleGameRelationshipRemove);
+  const obj6 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("FRIEND_SUGGESTION_CREATE", self.handleFriendSuggestionCreate);
+  const obj7 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("FRIEND_SUGGESTION_DELETE", self.handleFriendSuggestionDelete);
+  const obj8 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("GUILD_MEMBER_ADD", self.handleGuildMember);
+  const obj9 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("GUILD_MEMBER_UPDATE", self.handleGuildMember);
+  const obj10 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("GUILD_MEMBER_REMOVE", self.handleGuildMember);
+  const obj11 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("GUILD_MEMBERS_CHUNK_BATCH", self.handleGuildMembersChunkBatch);
+  closure_8.removeChangeListener(self.handleUserAffinitiesUpdate);
 };
 prototype["fetch"] = function fetch(toLocaleLowerCase) {
   const self = this;
-  let obj = require(5409) /* cleanString */;
+  let obj = cleanString;
   const cleanStringResult = obj.cleanString(toLocaleLowerCase);
   if ("" === cleanStringResult) {
     const userSearchContext2 = self.userSearchContext;
@@ -548,8 +534,8 @@ prototype["fetch"] = function fetch(toLocaleLowerCase) {
     }
   } else {
     if (arg1) {
-      const members = importDefault(6777).requestMembers(null, cleanStringResult);
-      const obj2 = importDefault(6777);
+      const members = getGuildNameSuggestionDefault.requestMembers(null, cleanStringResult);
+      const obj2 = getGuildNameSuggestionDefault;
     }
     const userSearchContext = self.userSearchContext;
     if (userSearchContext != null) {
@@ -564,7 +550,7 @@ prototype["filter"] = function filter(toLocaleLowerCase) {
   let self = this;
   self = this;
   let _require = toLocaleLowerCase;
-  let obj = _require(5409);
+  let obj = _require(5414);
   const cleanStringResult = obj.cleanString(toLocaleLowerCase);
   _require = cleanStringResult;
   if (this.currentQuery === cleanStringResult) {
@@ -580,7 +566,7 @@ prototype["filter"] = function filter(toLocaleLowerCase) {
       const obj4 = self(12);
       obj[closure_16.Friends] = obj4.sortBy(self(12).uniqBy(self.filteredFriends, (user) => user.user.id), (names) => {
         let num = 0;
-        if (null != outer1_14(names.names, closure_0, { exact: true })) {
+        if (null != closure_1_14(names.names, closure_0, { exact: true })) {
           num = -1000;
         }
         return num;
@@ -589,7 +575,7 @@ prototype["filter"] = function filter(toLocaleLowerCase) {
       const obj6 = self(12);
       obj[closure_16.GuildMembers] = obj6.sortBy(self(12).uniqBy(self.filteredGuildMembers, (user) => user.user.id), (names) => {
         let num = 0;
-        if (null != outer1_14(names.names, closure_0, { exact: true })) {
+        if (null != closure_1_14(names.names, closure_0, { exact: true })) {
           num = -1000;
         }
         return num;
@@ -605,7 +591,7 @@ prototype["filter"] = function filter(toLocaleLowerCase) {
       const indexMap = self.indexMap;
       const values = indexMap.values(closure_16.Friends);
       const item = values.forEach((names) => {
-        const tmp = outer1_14(names.names, closure_0, { contains: true });
+        const tmp = closure_1_14(names.names, closure_0, { contains: true });
         if (null != tmp) {
           const filteredFriends = self.filteredFriends;
           if (filteredFriends != null) {
@@ -645,7 +631,7 @@ prototype["initializeUsersFromStores"] = function initializeUsersFromStores() {
 };
 prototype["initializeUsersFromCache"] = function initializeUsersFromCache() {
   const self = this;
-  const all = importDefault(5405).getAll();
+  const all = getAllDefault.getAll();
   return all.then((arg0) => {
     while (tmp !== undefined) {
       let tmp3 = self;
@@ -655,7 +641,7 @@ prototype["initializeUsersFromCache"] = function initializeUsersFromCache() {
   });
 };
 prototype["updateUser"] = function updateUser(id) {
-  if (importDefault(5405).shouldUseCache) {
+  if (getAllDefault.shouldUseCache) {
     return false;
   } else {
     const self = this;
@@ -664,7 +650,7 @@ prototype["updateUser"] = function updateUser(id) {
         const indexMap = self.indexMap;
         return indexMap.delete(id);
       }
-      obj = require(5409) /* cleanString */;
+      obj = cleanString;
     }
     const value = self.getItem(id);
     if (null == value) {
@@ -678,14 +664,12 @@ prototype["updateUser"] = function updateUser(id) {
   }
 };
 prototype["getItem"] = function getItem(closure_0) {
-  let names;
-  let nick;
   const user = authStore2.getUser(closure_0);
   if (null == user) {
     return null;
   } else {
     const self = this;
-    names = require(5409) /* cleanString */.getNames(user);
+    names = cleanString.getNames(user);
     ({ nick, names } = names);
     let obj = { user: null, names: null, affinity: null, firstMatch: null };
     obj[0] = user;
@@ -699,9 +683,9 @@ prototype["getItem"] = function getItem(closure_0) {
       nick = isMatch(names, self.currentQuery, { contains: true });
     }
     obj[3] = nick;
-    const obj4 = require(5409) /* cleanString */;
+    const obj4 = cleanString;
     const tmp12 = require;
-    const relationshipType = require(5409) /* cleanString */.getRelationshipType(user.id);
+    const relationshipType = cleanString.getRelationshipType(user.id);
     if (relationshipType !== RelationshipTypes.FRIEND) {
       const gameFriendsForUser = authStore.getGameFriendsForUser(closure_0);
       if (gameFriendsForUser.length > 0) {
@@ -711,7 +695,7 @@ prototype["getItem"] = function getItem(closure_0) {
         return obj;
       }
     }
-    const obj1 = {};
+    obj1 = {};
     const merged1 = Object.assign(obj);
     obj1.type = relationshipType;
     return obj1;
@@ -742,7 +726,7 @@ prototype["getItemCached"] = function getItemCached(type) {
     let self = this;
     const obj = { type: null, user: null, names: null, affinity: null, firstMatch: null };
     obj[0] = names.type;
-    const tmp4 = new createdAt(names.user);
+    const tmp4 = new closure_9(names.user);
     obj[1] = tmp4;
     ({ names: obj[2], affinity: obj[3] } = names);
     if ("" !== this.currentQuery) {
@@ -781,14 +765,14 @@ export default function useUserListData(query) {
     flag2 = true;
   }
   let first;
-  let c14;
+  closure_14 = undefined;
   let memo;
   let first1;
   const tmp = withGameFriends(withFriendSuggestions.useState(0), 2);
   first = tmp[0];
-  c14 = tmp3;
+  closure_14 = tmp3;
   let items = [tmp[1], withGameFriends];
-  memo = withFriendSuggestions.useMemo(() => new outer1_17(() => callback(Date.now()), withGameFriends), items);
+  memo = withFriendSuggestions.useMemo(() => new closure_1_17(() => callback(Date.now()), withGameFriends), items);
   const items1 = [first, memo, query];
   first1 = withGameFriends(withFriendSuggestions.useMemo(() => {
     const items = [memo.filter(query), first];
@@ -796,7 +780,7 @@ export default function useUserListData(query) {
   }, items1), 1)[0];
   const items2 = [memo, withGuildMembers];
   const effect = withFriendSuggestions.useEffect(() => {
-    let closure_0 = withGuildMembers(withAffinitySuggestions[16]).debounce(() => callback2(Date.now()), 0);
+    closure_0 = withGuildMembers(withAffinitySuggestions[16]).debounce(() => callback2(Date.now()), 0);
     const subscription = memo.subscribe(() => {
       callback();
     }, withGuildMembers);
@@ -810,7 +794,7 @@ export default function useUserListData(query) {
     const userAffinitiesV2 = query(withAffinitySuggestions[18]).fetchUserAffinitiesV2();
   }, []);
   const items4 = [first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, flag, num, flag2];
-  return withFriendSuggestions.useMemo(() => outer1_18({ data: first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser: flag, affinitySuggestionsLimit: num, withAlphabeticalSections: flag2 }), items4);
+  return withFriendSuggestions.useMemo(() => closure_1_18({ data: first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser: flag, affinitySuggestionsLimit: num, withAlphabeticalSections: flag2 }), items4);
 };
 export { UserSearch };
 export { parseUserSearchResults };

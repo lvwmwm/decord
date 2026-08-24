@@ -1,14 +1,18 @@
-// Module ID: 4372
-// Function ID: 4373
+// Module ID: 4376
+// Function ID: 4377
 // Name: getEstablishedDate
 // Dependencies: [1395, 676, 1430, 2]
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
 
-// Module 4372 (getEstablishedDate)
-import { createChannelRecordFromInvite as closure_2 } from "createChannelRecord";
-import { GuildFeatures } from "ME";
+// Module 4376 (getEstablishedDate)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
 
-const result = require("fromGuildPropertiesWithAdditionalFields").fileFinishedImporting("modules/guild_profile/GuildProfileUtils.tsx");
+let closure_2 = createChannelRecord.createChannelRecordFromInvite;
+const GuildFeatures = ME.GuildFeatures;
+const result = set.fileFinishedImporting("modules/guild_profile/GuildProfileUtils.tsx");
 
 export const getEstablishedDate = function getEstablishedDate(tmpResult1, locale) {
   if (null != tmpResult1) {
@@ -33,7 +37,7 @@ export const guildInviteCanEmbedProfile = function guildInviteCanEmbedProfile(gu
   if (null == guild.guild) {
     return false;
   } else {
-    const features = require(1430) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(guild.guild).features;
+    const features = fromGuildPropertiesWithAdditionalFields.fromInviteGuild(guild.guild).features;
     if (features.has(GuildFeatures.HUB)) {
       return false;
     } else {
@@ -51,6 +55,6 @@ export const guildInviteCanEmbedProfile = function guildInviteCanEmbedProfile(gu
       }
       return !isGuildVoiceOrThreadResult;
     }
-    const obj = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
+    const obj = fromGuildPropertiesWithAdditionalFields;
   }
 };

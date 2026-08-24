@@ -1,13 +1,16 @@
-// Module ID: 12293
-// Function ID: 12294
+// Module ID: 12345
+// Function ID: 12346
 // Name: getWidgetAssetURL
 // Dependencies: [676, 1435, 2]
 // Exports: getWidgetAssetURL
 
-// Module 12293 (getWidgetAssetURL)
-import { DEFAULT_CDN_HOST } from "ME";
+// Module 12345 (getWidgetAssetURL)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getAvatarURL from "getAvatarURL" /* 1435 */;
 
-const result = require("set").fileFinishedImporting("modules/user_profile/WidgetAssetUtils.tsx");
+const DEFAULT_CDN_HOST = ME.DEFAULT_CDN_HOST;
+const result = set.fileFinishedImporting("modules/user_profile/WidgetAssetUtils.tsx");
 
 export const getWidgetAssetURL = function getWidgetAssetURL(arg0, fileId, arg2) {
   let obj = arg2;
@@ -22,7 +25,7 @@ export const getWidgetAssetURL = function getWidgetAssetURL(arg0, fileId, arg2) 
     CDN_HOST = DEFAULT_CDN_HOST;
   }
   let str = "webp";
-  if (!require(1435) /* getAvatarURL */.SUPPORTS_WEBP) {
+  if (!getAvatarURL.SUPPORTS_WEBP) {
     let str2 = "png";
     if (flag) {
       str2 = "gif";

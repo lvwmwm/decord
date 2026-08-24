@@ -4,7 +4,9 @@
 // Dependencies: [516, 517]
 
 // Module 515 (v1)
-const require = arg1;
+import unsafeStringify from "unsafeStringify" /* 517 */;
+
+require = arg1;
 const module = arg2;
 const dependencyMap = arg6;
 let c5 = 0;
@@ -85,7 +87,7 @@ arg5.default = function v1(arg0, arg1, arg2) {
   }
   if (num7 >= 10000) {
     const _Error = Error;
-    const error = new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+    error = new Error("uuid.v1(): Can't create more than 10M uuids/sec");
     throw error;
   } else {
     closure_4 = tmp19;
@@ -110,8 +112,8 @@ arg5.default = function v1(arg0, arg1, arg2) {
       num10 = num10 + 1;
     } while (num10 < 6);
     if (!unsafeStringifyResult) {
-      unsafeStringifyResult = require(517) /* unsafeStringify */.unsafeStringify(array);
-      const obj2 = require(517) /* unsafeStringify */;
+      unsafeStringifyResult = unsafeStringify.unsafeStringify(array);
+      const obj2 = unsafeStringify;
     }
     return unsafeStringifyResult;
   }

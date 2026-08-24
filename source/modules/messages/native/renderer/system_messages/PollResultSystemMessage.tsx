@@ -1,32 +1,35 @@
-// Module ID: 8260
-// Function ID: 8261
+// Module ID: 8300
+// Function ID: 8301
 // Name: createPollResultSystemMessage
-// Dependencies: [1925, 8185, 8187, 1236, 1435, 4034, 8261, 8188, 2]
+// Dependencies: [1925, 8225, 8227, 1236, 1435, 4037, 8301, 8228, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 8260 (createPollResultSystemMessage)
-import { EMOJI_URL_BASE_SIZE } from "set";
+// Module 8300 (createPollResultSystemMessage)
+import set from "set" /* 2 */;
+import set2 from "set" /* 1925 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8301 */;
 
-const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
+const EMOJI_URL_BASE_SIZE = set2.EMOJI_URL_BASE_SIZE;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
 
 export const createPollResultSystemMessage = function createPollResultSystemMessage(message) {
-  const tmp3 = importDefault(8261)(message.message.embeds[0]);
+  const tmp3 = parsePollResultSystemMessageEmbedDefault(message.message.embeds[0]);
   if (null == tmp3) {
     return null;
   } else if (null == message.message.messageReference) {
     return null;
   } else {
     message = message.message;
-    const messageAuthorWithProcessedColor = obj6(8185).getMessageAuthorWithProcessedColor(message);
+    const messageAuthorWithProcessedColor = obj6(8225).getMessageAuthorWithProcessedColor(message);
     let obj = { username: null, usernameOnClick: null, title: null, titleOnClick: null };
     obj[0] = messageAuthorWithProcessedColor.nick;
     obj = { message: null, author: null, roleStyle: null };
     obj[0] = message;
     obj[1] = messageAuthorWithProcessedColor;
     obj[2] = message.roleStyle;
-    obj[1] = tmp(8187)(obj);
+    obj[1] = tmp(8227)(obj);
     obj[2] = tmp3.questionText;
-    const obj1 = { action: "bindJumpToMessage", targetChannelId: null, targetMessageId: null, medium: true };
+    obj1 = { action: "bindJumpToMessage", targetChannelId: null, targetMessageId: null, medium: true };
     obj1[1] = message.messageReference.channel_id;
     obj1[2] = message.messageReference.message_id;
     obj[3] = obj1;
@@ -80,17 +83,17 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
             items.push(obj7);
           } else {
             obj = { type: "emoji", content: null, surrogate: null };
-            obj[1] = tmp(4034).convertSurrogateToName(id.name, false);
+            obj[1] = tmp(4037).convertSurrogateToName(id.name, false);
             obj[2] = id.name;
             items.push(obj);
-            const tmpResult1 = tmp(4034);
+            const tmpResult1 = tmp(4037);
           }
           items.push({ type: "text", content: " " });
         }
       }
     }
     const obj10 = {};
-    const merged3 = Object.assign(tmp(8188)(message));
+    const merged3 = Object.assign(tmp(8228)(message));
     obj10.content = formatToPartsResult;
     return obj10;
   }

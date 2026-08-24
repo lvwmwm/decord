@@ -1,15 +1,16 @@
-// Module ID: 8446
-// Function ID: 8447
+// Module ID: 8485
+// Function ID: 8486
 // Name: isActivityInTextSupportedForChannel
-// Dependencies: [1391, 4021, 505, 692, 589, 2]
+// Dependencies: [1391, 4024, 505, 692, 589, 2]
 // Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
 
-// Module 8446 (isActivityInTextSupportedForChannel)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "sum";
+// Module 8485 (isActivityInTextSupportedForChannel)
+import set from "set" /* 692 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "sum" /* 505 */;
 
-const require = arg1;
+require = arg1;
 function isActivityInTextSupportedForChannel(channel) {
   if (null == channel) {
     return false;
@@ -21,16 +22,16 @@ function isActivityInTextSupportedForChannel(channel) {
       if (channel != null) {
         type = channel.type;
       }
-      hasItem = type === require(692) /* set */.ChannelTypes.GUILD_CATEGORY;
+      hasItem = type === set.ChannelTypes.GUILD_CATEGORY;
     }
     if (hasItem) {
-      const items = [require(692) /* set */.ChannelTypes.GUILD_TEXT, require(692) /* set */.ChannelTypes.GUILD_VOICE, require(692) /* set */.ChannelTypes.GROUP_DM, require(692) /* set */.ChannelTypes.DM, require(692) /* set */.ChannelTypes.GUILD_SPACE];
+      const items = [set.ChannelTypes.GUILD_TEXT, set.ChannelTypes.GUILD_VOICE, set.ChannelTypes.GROUP_DM, set.ChannelTypes.DM, set.ChannelTypes.GUILD_SPACE];
       hasItem = items.includes(channel.type);
     }
     return hasItem;
   }
 }
-const result = require("sum").fileFinishedImporting("modules/activities/ActivitiesInTextUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/ActivitiesInTextUtils.tsx");
 
 export { isActivityInTextSupportedForChannel };
 export const isActivitiesInTextEnabled = function isActivitiesInTextEnabled(channel) {
@@ -43,7 +44,7 @@ export const isActivitiesInTextEnabled = function isActivitiesInTextEnabled(chan
         flag = true;
         if (null != channel.guild_id) {
           flag = true;
-          if (!getUncachedChannelPermissions.can(Permissions.USE_EMBEDDED_ACTIVITIES, channel)) {
+          if (!closure_3.can(Permissions.USE_EMBEDDED_ACTIVITIES, channel)) {
             flag = false;
           }
         }
@@ -54,19 +55,19 @@ export const isActivitiesInTextEnabled = function isActivitiesInTextEnabled(chan
 };
 export const useIsActivitiesInTextEnabled = function useIsActivitiesInTextEnabled(id) {
   const _require = id;
-  const items = [ensureGuildLoaded, getUncachedChannelPermissions];
+  const items = [closure_2, closure_3];
   return _require(589).useStateFromStores(items, () => {
-    const channel = outer1_2.getChannel(closure_0);
+    const channel = closure_1_2.getChannel(closure_0);
     let flag = false;
     if (null != channel) {
       flag = false;
       if (undefined !== channel) {
         flag = false;
-        if (outer1_5(channel)) {
+        if (closure_1_5(channel)) {
           flag = true;
           if (null != channel.guild_id) {
             flag = true;
-            if (!outer1_3.can(outer1_4.USE_EMBEDDED_ACTIVITIES, channel)) {
+            if (!closure_1_3.can(closure_1_4.USE_EMBEDDED_ACTIVITIES, channel)) {
               flag = false;
             }
           }
@@ -89,9 +90,9 @@ export const getIsAppLauncherEnabled = function getIsAppLauncherEnabled(channel)
 };
 export const useIsAppLauncherEnabled = function useIsAppLauncherEnabled(id) {
   const _require = id;
-  const items = [ensureGuildLoaded];
+  const items = [closure_2];
   return _require(589).useStateFromStores(items, () => {
-    const channel = outer1_2.getChannel(closure_0);
+    const channel = closure_1_2.getChannel(closure_0);
     let tmp2 = null != channel;
     if (tmp2) {
       let guild_id;
@@ -100,7 +101,7 @@ export const useIsAppLauncherEnabled = function useIsAppLauncherEnabled(id) {
       }
       let tmp4 = null != guild_id;
       if (!tmp4) {
-        tmp4 = outer1_5(channel);
+        tmp4 = closure_1_5(channel);
       }
       tmp2 = tmp4;
     }

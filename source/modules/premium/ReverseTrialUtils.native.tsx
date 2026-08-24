@@ -1,18 +1,19 @@
-// Module ID: 8278
-// Function ID: 8279
+// Module ID: 8318
+// Function ID: 8319
 // Name: useIsInReverseTrial
 // Dependencies: [1922, 589, 2]
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useIsInReverseTrial, useReverseTrialDaysRemaining
 
-// Module 8278 (useIsInReverseTrial)
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 8318 (useIsInReverseTrial)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/ReverseTrialUtils.native.tsx");
 
 export const useIsInReverseTrial = function useIsInReverseTrial() {
-  const items = [mergeGuildAvatar];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
+  const items = [closure_2];
+  return initialize.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let flag;
     if (currentUser != null) {

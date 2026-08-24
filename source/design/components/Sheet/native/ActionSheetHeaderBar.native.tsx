@@ -1,25 +1,24 @@
-// Module ID: 7124
-// Function ID: 7125
+// Module ID: 7162
+// Function ID: 7163
 // Name: ActionSheetHeaderBar
-// Dependencies: [19, 17, 21, 4661, 712, 1236, 1494, 4097, 4721, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1236, 1494, 4100, 4727, 2]
 // Exports: ActionSheetHeaderBar
 
-// Module 7124 (ActionSheetHeaderBar)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7162 (ActionSheetHeaderBar)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import map from "map" /* 4100 */;
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4727 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Pressable: c3, StyleSheet: c4, TouchableWithoutFeedback: c5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles((arg0, height, marginBottom) => {
   let obj = { marginBottom };
   if ("floating" === arg0) {
@@ -43,7 +42,7 @@ let closure_10 = createCacheKey.createStyles((arg0, height, marginBottom) => {
     tmp4 = obj4;
   }
   const merged2 = Object.assign(tmp4);
-  obj[1] = { alignSelf: "center", width: importDefault(712).modules.mobile.SHEET_HANDLE_WIDTH, height: importDefault(712).modules.mobile.SHEET_HANDLE_HEIGHT, borderRadius: importDefault(712).radii.sm, top: importDefault(712).modules.mobile.SHEET_HANDLE_MARGIN_TOP };
+  obj[1] = { alignSelf: "center", width: ThemesDefault.modules.mobile.SHEET_HANDLE_WIDTH, height: ThemesDefault.modules.mobile.SHEET_HANDLE_HEIGHT, borderRadius: ThemesDefault.radii.sm, top: ThemesDefault.modules.mobile.SHEET_HANDLE_MARGIN_TOP };
   const obj5 = {};
   const merged3 = Object.assign(absoluteFillObject.absoluteFillObject);
   obj5.height = height;
@@ -51,25 +50,21 @@ let closure_10 = createCacheKey.createStyles((arg0, height, marginBottom) => {
   obj[2] = obj5;
   return obj;
 });
-const result = require("jsxProd").fileFinishedImporting("design/components/Sheet/native/ActionSheetHeaderBar.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Sheet/native/ActionSheetHeaderBar.native.tsx");
 
 export const ActionSheetHeaderBar = function ActionSheetHeaderBar(accessibilityLabel) {
-  let onPress;
-  let style;
-  let tabStyle;
-  let variant;
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
   if (accessibilityLabel === undefined) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    accessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.WAI6xu);
+    const intl = getSystemLocale.intl;
+    accessibilityLabel = intl.string(getSystemLocale.t.WAI6xu);
   }
   ({ onPress, variant, style, tabStyle } = accessibilityLabel);
   if (variant === undefined) {
     variant = "default";
   }
-  let obj = require(4097) /* map */;
-  const tmp3 = callback3(variant, importDefault(1494)().height, obj.useToken(importDefault(712).modules.mobile.SHEET_HANDLE_MARGIN_BOTTOM));
-  let obj1 = require(4721) /* SCREEN_READER_ENABLED_GETTER */;
+  let obj = map;
+  const tmp3 = callback3(variant, useWindowDimensionsDefault().height, obj.useToken(ThemesDefault.modules.mobile.SHEET_HANDLE_MARGIN_BOTTOM));
+  obj1 = SCREEN_READER_ENABLED_GETTER;
   obj = { onPress, onAccessibilityEscape: onPress, "aria-hidden": true, children: null };
   obj = { style: items, children: null };
   items = [tmp3.header, style];

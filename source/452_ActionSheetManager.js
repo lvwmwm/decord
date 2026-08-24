@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 452 (ActionSheetManager)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("ActionSheetManager");
+
+export default getAll.get("ActionSheetManager");

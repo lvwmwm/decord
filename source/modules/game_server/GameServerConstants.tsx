@@ -1,10 +1,14 @@
-// Module ID: 4263
-// Function ID: 4264
+// Module ID: 4267
+// Function ID: 4268
 // Name: str11
-// Dependencies: [1929, 4264, 2]
+// Dependencies: [1929, 4268, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 4263 (str11)
+// Module 4267 (str11)
+import set from "set" /* 2 */;
+import Environments from "Environments" /* 1929 */;
+import GameServerProviderType from "GameServerProviderType" /* 4268 */;
+
 let obj = { SELECT_GAME: "select-game", SERVER_SETTINGS: "server-settings" };
 obj = { type: "go-to-step", step: obj.SERVER_SETTINGS };
 obj = { type: "go-to-step", step: obj.SELECT_GAME };
@@ -55,12 +59,12 @@ NewGamesCoachmarkContent.FEATURED_GAME_NAME = "Windrose";
 NewGamesCoachmarkContent.SECOND_GAME_NAME = "Factorio";
 NewGamesCoachmarkContent.THIRD_GAME_NAME = "V Rising";
 let str13 = "https://discord.shockbyte.com/support";
-if (window.GLOBAL_ENV.RELEASE_CHANNEL === require("Environments").Environments.STAGING) {
+if (window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.Environments.STAGING) {
   str13 = "https://purple-prod.shockbyte.dev/support";
 }
 const obj1 = {};
-obj1[require("GameServerProviderType").GameServerProviderType.SHOCKBYTE] = str13;
-const result = require("set").fileFinishedImporting("modules/game_server/GameServerConstants.tsx");
+obj1[GameServerProviderType.GameServerProviderType.SHOCKBYTE] = str13;
+const result = set.fileFinishedImporting("modules/game_server/GameServerConstants.tsx");
 
 export const GameServerSetupStep = obj;
 export const GAME_SERVER_DEFAULT_STEP_CONFIG = { steps: { [obj.SELECT_GAME]: { onBack: { type: "close" }, onNext: obj }, [obj.SERVER_SETTINGS]: { onBack: obj, onNext: { type: "save" } } } };
@@ -78,6 +82,6 @@ export const HYTALE_GAME_ID = str8;
 export { NewGamesCoachmarkContent };
 export const GameServerGameProvider = { SHOCKBYTE: 0, [0]: "SHOCKBYTE" };
 export const GAME_SERVER_SUPPORT_URLS = obj1;
-export const GAME_SERVER_TOS = { [require(4264).GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
+export const GAME_SERVER_TOS = { [GameServerProviderType.GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
 export const GAME_SERVER_SURVEY_URL = (arg0, arg1) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=" + arg0 + "&guild_id=" + arg1;
 export const GAME_SERVER_POWERUP_SKU_ID = "0";

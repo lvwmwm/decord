@@ -5,11 +5,10 @@
 // Exports: getRequestPayloadXhrOrFetch, parseGraphQLQuery
 
 // Module 1087 (_getGraphQLOperation)
-import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+import addClsInstrumentationHandler from "addClsInstrumentationHandler" /* 1033 */;
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
 
 function _getGraphQLOperation(obj) {
-  let operationName;
-  let query;
   let tmp = typeof obj === "object";
   let tmp2 = tmp;
   if (typeof obj === "object") {
@@ -60,10 +59,10 @@ function _getGraphQLOperation(obj) {
       } else {
         const match1 = query.match(/^(?:\s*)(query|mutation|subscription)(?:\s*)[{(]/);
         if (match1) {
-          obj = { operationType: null, operationName: "a" };
+          obj = { operationType: null, operationName: "r" };
           obj[0] = match1[1];
         } else {
-          obj = { operationType: "r", operationName: "accessibilityRole" };
+          obj = { operationType: "Array", operationName: "ct" };
         }
       }
       let operationName2 = obj.operationName;
@@ -143,7 +142,7 @@ export { _getGraphQLOperation };
 export { getGraphQLRequestPayload };
 export const getRequestPayloadXhrOrFetch = function getRequestPayloadXhrOrFetch(input) {
   if ("xhr" in input) {
-    const tmp7 = input.xhr[require(undefined, 1033) /* addClsInstrumentationHandler */.SENTRY_XHR_DATA_KEY];
+    const tmp7 = input.xhr[addClsInstrumentationHandler.SENTRY_XHR_DATA_KEY];
     let first = tmp7;
     if (tmp7) {
       first = tmp5(1033).getBodyString(tmp7.body)[0];
@@ -152,21 +151,21 @@ export const getRequestPayloadXhrOrFetch = function getRequestPayloadXhrOrFetch(
     let first1 = first;
     tmp5 = require;
   } else {
-    const fetchRequestArgBody = require(1033) /* addClsInstrumentationHandler */.getFetchRequestArgBody(input.input);
-    const obj = require(1033) /* addClsInstrumentationHandler */;
-    first1 = require(1033) /* addClsInstrumentationHandler */.getBodyString(fetchRequestArgBody)[0];
-    const obj2 = require(1033) /* addClsInstrumentationHandler */;
+    const fetchRequestArgBody = addClsInstrumentationHandler.getFetchRequestArgBody(input.input);
+    const obj = addClsInstrumentationHandler;
+    first1 = addClsInstrumentationHandler.getBodyString(fetchRequestArgBody)[0];
+    const obj2 = addClsInstrumentationHandler;
   }
   return first1;
 };
 export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineIntegration((arg0) => {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return {
     name: "GraphQLClient",
     setup(on) {
       on.on("beforeOutgoingRequestSpan", (updateName, input) => {
-        const tmp3 = lib(outer1_1[0]).spanToJSON(updateName).data || {};
-        if ("http.client" === tmp3[lib(undefined, outer1_1[0]).SEMANTIC_ATTRIBUTE_SENTRY_OP]) {
+        const tmp3 = lib(closure_1_1[0]).spanToJSON(updateName).data || {};
+        if ("http.client" === tmp3[lib(undefined, closure_1_1[0]).SEMANTIC_ATTRIBUTE_SENTRY_OP]) {
           const tmp4 = tmp3[tmp(undefined, tmp2[0]).SEMANTIC_ATTRIBUTE_URL_FULL] || tmp3["http.url"];
           const tmp5 = tmp3[tmp(undefined, tmp2[0]).SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD] || tmp3["http.method"];
           let tmpResult = tmp(tmp2[0]);
@@ -190,10 +189,10 @@ export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineI
               }
               if (result) {
                 if (first1) {
-                  const tmp14 = outer1_5(first1);
+                  const tmp14 = closure_1_5(first1);
                   if (tmp14) {
                     const _HermesInternal = HermesInternal;
-                    updateName.updateName("" + tmp5 + " " + tmp4 + " (" + outer1_2(tmp14) + ")");
+                    updateName.updateName("" + tmp5 + " " + tmp4 + " (" + closure_1_2(tmp14) + ")");
                     let tmp20 = typeof tmp14 === "object";
                     let tmp21 = tmp20;
                     if (typeof tmp14 === "object") {
@@ -246,8 +245,6 @@ export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineI
         }
       });
       on.on("beforeOutgoingRequestBreadcrumb", (type, input) => {
-        let category;
-        let data;
         ({ category, data } = type);
         if ("http" === type.type) {
           if ("fetch" === category) {
@@ -255,7 +252,7 @@ export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineI
             if (data != null) {
               url = data.url;
             }
-            const result = lib(outer1_1[0]).stringMatchesSomePattern(url, lib.endpoints);
+            const result = lib(closure_1_1[0]).stringMatchesSomePattern(url, lib.endpoints);
             if ("xhr" in input) {
               const tmp10 = input.xhr[tmp5(undefined, tmp6[1]).SENTRY_XHR_DATA_KEY];
               let first = tmp10;
@@ -273,10 +270,10 @@ export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineI
             if (result) {
               if (data) {
                 if (first1) {
-                  const tmp13 = outer1_5(first1);
+                  const tmp13 = closure_1_5(first1);
                   if (!data.graphql) {
                     if (tmp13) {
-                      data["graphql.operation"] = outer1_2(tmp13);
+                      data["graphql.operation"] = closure_1_2(tmp13);
                       let tmp15 = typeof tmp13 === "object";
                       let tmp16 = tmp15;
                       if (typeof tmp13 === "object") {
@@ -325,7 +322,7 @@ export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineI
                 }
               }
             }
-            const obj = lib(outer1_1[0]);
+            const obj = lib(closure_1_1[0]);
           }
         }
       });
@@ -342,10 +339,10 @@ export const parseGraphQLQuery = function parseGraphQLQuery(str) {
   } else {
     const match1 = str.match(/^(?:\s*)(query|mutation|subscription)(?:\s*)[{(]/);
     if (match1) {
-      obj = { operationType: null, operationName: "a" };
+      obj = { operationType: null, operationName: "r" };
       obj[0] = match1[1];
     } else {
-      obj = { operationType: "r", operationName: "accessibilityRole" };
+      obj = { operationType: "Array", operationName: "ct" };
     }
     return obj;
   }

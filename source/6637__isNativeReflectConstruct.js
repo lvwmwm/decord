@@ -1,15 +1,20 @@
 // Module ID: 6637
 // Function ID: 6638
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 6587, 6610]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 6638, 6622, 6631]
 
 // Module 6637 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
+import noopAll from "noop" /* 19 */;
+import _inheritsDefault from "_inherits" /* 98 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 6631 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 6638 */;
+import closure_3 from "_classCallCheck" /* 41 */;
+import closure_4 from "_possibleConstructorReturn" /* 93 */;
+import closure_5 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const FeTurbulence = arg1;
+const ClipPath = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -21,21 +26,22 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
-class FeTurbulence {
+noopAll;
+class ClipPath {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeTurbulence);
-    tmp2 = __esModule;
-    obj = __esModule(FeTurbulence);
-    tmp3 = __esModule;
+    tmp = closure_3(this, ClipPath);
+    tmp2 = closure_5;
+    obj = closure_5(ClipPath);
+    tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -49,19 +55,21 @@ class FeTurbulence {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeTurbulence, require("_isNativeReflectConstruct"));
-let obj = {
-  key: "render",
-  value: function render() {
-    const result = FeTurbulence(6587).warnUnimplementedFilter();
-    return null;
+_inheritsDefault(ClipPath, _isNativeReflectConstructDefault);
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      const props = this.props;
+      const obj = { ref: this.refMethod };
+      const tmp = __INTERNAL_VIEW_CONFIGDefault;
+      const merged = Object.assign(ClipPath(6622).extract(this, props));
+      obj.children = props.children;
+      return <tmp ref={this.refMethod} />;
+    }
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeTurbulence, items);
-importDefaultResultResult.displayName = "FeTurbulence";
-obj = {};
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = obj;
+];
+const importDefaultResultResult = importDefaultResult(ClipPath, items);
+importDefaultResultResult.displayName = "ClipPath";
 
 export default importDefaultResultResult;

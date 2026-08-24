@@ -4,6 +4,12 @@
 // Dependencies: [733, 756, 759, 760, 761]
 
 // Module 732 (MapCache)
+import mapCacheClear from "mapCacheClear" /* 733 */;
+import mapCacheDelete from "mapCacheDelete" /* 756 */;
+import mapCacheGet from "mapCacheGet" /* 759 */;
+import mapCacheHas from "mapCacheHas" /* 760 */;
+import mapCacheSet from "mapCacheSet" /* 761 */;
+
 class MapCache {
   constructor(arg0) {
     num = 0;
@@ -19,10 +25,10 @@ class MapCache {
     return;
   }
 }
-MapCache.prototype.clear = require("mapCacheClear");
-MapCache.prototype.delete = require("mapCacheDelete");
-MapCache.prototype.get = require("mapCacheGet");
-MapCache.prototype.has = require("mapCacheHas");
-MapCache.prototype.set = require("mapCacheSet");
+MapCache.prototype.clear = mapCacheClear;
+MapCache.prototype.delete = mapCacheDelete;
+MapCache.prototype.get = mapCacheGet;
+MapCache.prototype.has = mapCacheHas;
+MapCache.prototype.set = mapCacheSet;
 
 export default MapCache;

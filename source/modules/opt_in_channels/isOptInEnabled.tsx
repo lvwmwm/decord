@@ -1,37 +1,35 @@
-// Module ID: 5282
-// Function ID: 5283
+// Module ID: 5287
+// Function ID: 5288
 // Name: useOptInEnabledForGuild
-// Dependencies: [1910, 4021, 5043, 1922, 676, 589, 2]
+// Dependencies: [1910, 4024, 5048, 1922, 676, 589, 2]
 // Exports: isOptInEnabledForGuild, useOptInEnabledForGuild, useShouldShowOnboardingAdminUpsellForGuild
 
-// Module 5282 (useOptInEnabledForGuild)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 5287 (useOptInEnabledForGuild)
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_4 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let closure_6;
-let error;
 const require = arg1;
 ({ GuildFeatures: closure_6, Permissions: error } = ME);
-const result = require("updateUserGuildSettingsInternal").fileFinishedImporting("modules/opt_in_channels/isOptInEnabled.tsx");
+const result = require("set").fileFinishedImporting("modules/opt_in_channels/isOptInEnabled.tsx");
 
 export const useOptInEnabledForGuild = function useOptInEnabledForGuild(id) {
   const _require = id;
-  const items = [updateUserGuildSettingsInternal, createGuildRecordFromRust, mergeGuildAvatar];
+  const items = [closure_4, closure_2, closure_5];
   return _require(589).useStateFromStores(items, () => {
-    let isOptInEnabledResult = outer1_4.isOptInEnabled(closure_0);
-    const guild = outer1_2.getGuild(closure_0);
+    let isOptInEnabledResult = closure_1_4.isOptInEnabled(closure_0);
+    const guild = closure_1_2.getGuild(closure_0);
     let flag;
     if (guild != null) {
       const features = guild.features;
-      flag = features.has(outer1_6.COMMUNITY);
+      flag = features.has(closure_1_6.COMMUNITY);
     }
     if (flag == null) {
       flag = false;
     }
-    const currentUser = outer1_5.getCurrentUser();
+    const currentUser = closure_1_5.getCurrentUser();
     let flag2;
     if (currentUser != null) {
       flag2 = currentUser.isStaff();
@@ -64,19 +62,19 @@ export const isOptInEnabledForGuild = function isOptInEnabledForGuild(_guildId) 
 };
 export const useShouldShowOnboardingAdminUpsellForGuild = function useShouldShowOnboardingAdminUpsellForGuild(arg0) {
   const _require = arg0;
-  const items = [createGuildRecordFromRust, getUncachedChannelPermissions];
+  const items = [closure_2, closure_3];
   return _require(589).useStateFromStores(items, () => {
-    const guild = outer1_2.getGuild(closure_0);
+    const guild = closure_1_2.getGuild(closure_0);
     let flag;
-    const canResult = outer1_3.can(outer1_7.MANAGE_GUILD, guild);
+    const canResult = closure_1_3.can(closure_1_7.MANAGE_GUILD, guild);
     if (guild != null) {
       const features = guild.features;
-      flag = features.has(outer1_6.GUILD_ONBOARDING_EVER_ENABLED);
+      flag = features.has(closure_1_6.GUILD_ONBOARDING_EVER_ENABLED);
     }
     if (flag == null) {
       flag = false;
     }
-    const canResult1 = outer1_3.can(outer1_7.MANAGE_ROLES, guild);
-    return null != guild && canResult && outer1_3.can(outer1_7.MANAGE_ROLES, guild) && !flag;
+    const canResult1 = closure_1_3.can(closure_1_7.MANAGE_ROLES, guild);
+    return null != guild && canResult && closure_1_3.can(closure_1_7.MANAGE_ROLES, guild) && !flag;
   });
 };

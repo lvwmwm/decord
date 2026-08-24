@@ -1,24 +1,28 @@
-// Module ID: 8367
-// Function ID: 8368
+// Module ID: 8406
+// Function ID: 8407
 // Name: getDecorationSizeForAvatarSize
-// Dependencies: [1436, 1297, 4342, 8368, 2007, 2]
+// Dependencies: [1436, 1297, 4346, 8407, 2008, 2]
 // Exports: getDecorationCutoutForAvatarCutout, getDecorationSizeForAvatarSize, openAvatarDecorationActionSheet
 
-// Module 8367 (getDecorationSizeForAvatarSize)
-import { DECORATION_TO_AVATAR_RATIO as closure_3 } from "DECORATION_TO_AVATAR_RATIO";
+// Module 8406 (getDecorationSizeForAvatarSize)
+import set from "set" /* 2 */;
+import Button from "Button" /* 1297 */;
+import DECORATION_TO_AVATAR_RATIO from "DECORATION_TO_AVATAR_RATIO" /* 1436 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
 
-let result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarDecorationUtils.tsx");
+let closure_3 = DECORATION_TO_AVATAR_RATIO.DECORATION_TO_AVATAR_RATIO;
+let result = set.fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarDecorationUtils.tsx");
 
 export const getDecorationSizeForAvatarSize = function getDecorationSizeForAvatarSize(NORMAL) {
   if (typeof NORMAL !== "number") {
-    let result = require(1297) /* Button */.AVATAR_SIZE_MAP[NORMAL] * closure_3;
+    let result = Button.AVATAR_SIZE_MAP[NORMAL] * closure_3;
   } else {
     result = NORMAL * closure_3;
   }
   return result;
 };
 export const getDecorationCutoutForAvatarCutout = function getDecorationCutoutForAvatarCutout(memo, arg1) {
-  let inset;
   const _require = arg1;
   let tmp = memo;
   if (null != memo) {
@@ -46,13 +50,8 @@ export const getDecorationCutoutForAvatarCutout = function getDecorationCutoutFo
   return tmp;
 };
 export const openAvatarDecorationActionSheet = function openAvatarDecorationActionSheet(arg0) {
-  let analyticsLocations;
-  let currentAvatarDecoration;
-  let guildId;
-  let isTryItOut;
-  let user;
   ({ user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations } = arg0);
-  importDefault(4342).hideActionSheet();
-  const obj = importDefault(4342);
-  importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(8368, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
+  ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet();
+  const obj = ACTION_SHEET_HEIGHT_HALFDefault;
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(8407, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
 };

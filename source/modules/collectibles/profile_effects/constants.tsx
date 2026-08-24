@@ -1,10 +1,12 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 9249
+// Function ID: 9250
 // Name: PROFILE_EFFECT_INTRO_MINIMUM_DELAY
 // Dependencies: [2]
 
-// Module 9212 (PROFILE_EFFECT_INTRO_MINIMUM_DELAY)
-const result = require("set").fileFinishedImporting("modules/collectibles/profile_effects/constants.tsx");
+// Module 9249 (PROFILE_EFFECT_INTRO_MINIMUM_DELAY)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/collectibles/profile_effects/constants.tsx");
 
 export const PROFILE_EFFECT_INTRO_MINIMUM_DELAY = 0.1;
 export const PROFILE_EFFECT_INTRO_DELAY = 500;

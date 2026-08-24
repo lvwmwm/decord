@@ -1,24 +1,29 @@
-// Module ID: 12700
-// Function ID: 12701
+// Module ID: 12752
+// Function ID: 12753
 // Name: ButtonBadge
-// Dependencies: [19, 21, 4661, 712, 500, 1297, 1367, 4751, 5433, 4734, 8498, 2]
+// Dependencies: [19, 21, 4668, 712, 500, 1297, 1367, 4756, 5438, 4739, 8537, 2]
 // Exports: default
 
-// Module 12700 (ButtonBadge)
-import importAllResult from "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12752 (ButtonBadge)
+import set from "set" /* 500 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import getFontScale from "getFontScale" /* 4756 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 8537 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 8537 */;
+import importAllResult from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 class ButtonBadge {
   constructor(arg0) {
     str = global.badgePosition;
     if (str === undefined) {
       str = "left";
     }
-    tmp = f55120(false);
+    tmp = closure_6(false);
     tmp2 = jsx;
     obj = { size: null, maskSize: 2, style: null, maskColor: null };
     tmp3 = require("DEFAULT_BADGE_SIZE");
@@ -34,14 +39,14 @@ let closure_6 = createCacheKey.createStyles((arg0) => {
   let obj = { actionIconButtonPressable: { minWidth: 32, minHeight: 32, borderRadius: 20, marginEnd: 12, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 12 }, withoutMargin: { marginEnd: 0 }, filled: null, outlined: null, roundButton: null, actionIcon: null, actionText: null, unreadBadgeLeft: null, unreadBadgeRight: null, unreadBadgeMask: null, countStyle: null };
   let prop;
   if (!arg0) {
-    prop = importDefault(712).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND;
+    prop = ThemesDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND;
   }
   obj[2] = { backgroundColor: prop };
-  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: importDefault(712).colors.INPUT_BACKGROUND_DEFAULT };
-  const merged = Object.assign(importDefault(712).shadows.SHADOW_LOW);
+  obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: ThemesDefault.colors.INPUT_BACKGROUND_DEFAULT };
+  const merged = Object.assign(ThemesDefault.shadows.SHADOW_LOW);
   obj[3] = obj;
   obj[4] = { maxWidth: 32, maxHeight: 32 };
-  const colors = importDefault(712).colors;
+  const colors = ThemesDefault.colors;
   obj[5] = { tintColor: arg0 ? colors.ICON_SUBTLE : colors.INTERACTIVE_TEXT_DEFAULT };
   let num = 0;
   if (obj3.isAndroid()) {
@@ -52,17 +57,15 @@ let closure_6 = createCacheKey.createStyles((arg0) => {
   obj[8] = { position: "absolute", right: -2, top: -1 };
   obj = { color: tmp4(712).colors.BACKGROUND_BASE_LOW };
   obj[9] = obj;
-  obj3 = require(500) /* set */;
-  obj[10] = { position: "relative", marginLeft: importDefault(712).space.PX_8 };
+  obj3 = set;
+  obj[10] = { position: "relative", marginLeft: ThemesDefault.space.PX_8 };
   return obj;
 });
 let closure_7 = importAllResult.memo((color) => {
-  let IconComponent;
-  let source;
   ({ IconComponent, source } = color);
   let ICON_SUBTLE = color.color;
   const isRefreshEnabled = color.isRefreshEnabled;
-  let dependencyMap;
+  dependencyMap = undefined;
   const tmp = callback2(isRefreshEnabled);
   dependencyMap = tmp;
   const items = [tmp, ICON_SUBTLE, source];
@@ -79,22 +82,9 @@ let closure_7 = importAllResult.memo((color) => {
   }
   return tmp2Result;
 });
-const result = require("createCacheKey").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/IconActionButton.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/IconActionButton.tsx");
 
 export default function IconActionButton(variant) {
-  let IconComponent;
-  let accessibilityLabel;
-  let badge;
-  let badgePosition;
-  let buttonText;
-  let color;
-  let disabled;
-  let hitSlop;
-  let noMargin;
-  let onLongPress;
-  let onPress;
-  let source;
-  let style;
   let str = variant.variant;
   ({ source, IconComponent } = variant);
   if (str === undefined) {
@@ -109,9 +99,9 @@ export default function IconActionButton(variant) {
     num = 0;
   }
   ({ noMargin, hitSlop, disabled, onPress, onLongPress } = variant);
-  const tmp2 = importDefault(1367)("IconActionButton");
+  const tmp2 = useIsMobileVisualRefreshExperimentEnabledDefault("IconActionButton");
   const tmp3 = callback2(tmp2);
-  require(4751) /* getFontScale */;
+  getFontScale;
   let tmp11Result = null != buttonText;
   if (tmp11Result) {
     tmp11Result = tmp6 <= 1.2;
@@ -135,7 +125,7 @@ export default function IconActionButton(variant) {
     obj = { variant: "text-sm/bold", style: null, children: null };
     obj[1] = tmp3.actionText;
     obj[2] = buttonText;
-    tmp11Result = tmp11(tmp4(4734).Text, obj);
+    tmp11Result = tmp11(tmp4(4739).Text, obj);
   }
   items1[1] = tmp11Result;
   tmp11Result = null;
@@ -147,13 +137,13 @@ export default function IconActionButton(variant) {
   }
   items1[2] = tmp11Result;
   if (badge) {
-    const obj1 = { badgePosition: null };
+    obj1 = { badgePosition: null };
     obj1[0] = badgePosition;
     badge = tmp11(ButtonBadge, obj1);
   }
   items1[3] = badge;
   obj[7] = items1;
-  return closure_5(require(5433) /* PressableBase */.PressableOpacity, obj);
+  return closure_5(PressableBase.PressableOpacity, obj);
 };
 export const ICON_ACTION_BUTTON_SIZE = 32;
 export { ButtonBadge };

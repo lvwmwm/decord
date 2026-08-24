@@ -1,17 +1,18 @@
-// Module ID: 14846
-// Function ID: 14847
+// Module ID: 14910
+// Function ID: 14911
 // Name: _handleUploadDebugLogSettingPress
-// Dependencies: [5, 17, 676, 21, 644, 705, 500, 10131, 4094, 4330, 1236, 10669, 2]
+// Dependencies: [5, 17, 676, 21, 644, 705, 500, 10170, 4097, 4334, 1236, 10708, 2]
 
-// Module 14846 (_handleUploadDebugLogSettingPress)
-import batchUpdates from "batchUpdates";
-import { ActivityIndicator } from "get ActivityIndicator";
-import { DebugLogCategory } from "ME";
-import { jsx } from "jsxProd";
-import keys from "keys";
-import createToggle from "createToggle";
+// Module 14910 (_handleUploadDebugLogSettingPress)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
+import { DebugLogCategory } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import keys from "keys" /* 644 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 function _handleUploadDebugLogSettingPress() {
   const self = this;
   const tmp = callback(function*() {
@@ -26,7 +27,7 @@ function _handleUploadDebugLogSettingPress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -52,13 +53,13 @@ function _handleUploadDebugLogSettingPress() {
             } else {
               ANDROID_APP = uploadDebugLogFiles.ANDROID_APP;
             }
-            let c3 = 2;
-            obj8 = outer1_0(outer1_2[6]);
-            uploadDebugLogFiles = outer1_0(outer1_2[7]).uploadDebugLogFiles;
+            c3 = 2;
+            obj8 = closure_1_0(closure_1_2[6]);
+            uploadDebugLogFiles = closure_1_0(closure_1_2[7]).uploadDebugLogFiles;
             uploadDebugLogFiles(ANDROID_APP);
             c4 = 3;
             c5 = 1;
-            const tmp29 = outer1_0(outer1_2[7]);
+            const tmp29 = closure_1_0(closure_1_2[7]);
           }
         } else if (1 === tmp8) {
           c3 = 0;
@@ -70,9 +71,9 @@ function _handleUploadDebugLogSettingPress() {
         } else {
           if (2 === tmp8) {
             c3 = 1;
-            let obj1 = callback2(4094);
+            obj1 = callback2(4097);
             obj1 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj1[1] = callback(4330).CircleInformationIcon;
+            obj1[1] = callback(4334).CircleInformationIcon;
             const intl = callback(1236).intl;
             obj1[2] = intl.string(callback(1236).t.VzHcSm);
             obj1.open(obj1);
@@ -87,12 +88,12 @@ function _handleUploadDebugLogSettingPress() {
             throw arg1;
           } else if (arg0 !== 2) {
             const obj2 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj2[1] = callback(4330).CircleInformationIcon;
+            obj2[1] = callback(4334).CircleInformationIcon;
             const intl2 = callback(1236).intl;
             obj2[2] = intl2.string(callback(1236).t.BvyxE7);
-            callback2(4094).open(obj2);
+            callback2(4097).open(obj2);
             c3 = 1;
-            const obj6 = callback2(4094);
+            const obj6 = callback2(4097);
           }
           c3 = 0;
           (function onUploadDebugLogsRequestFinish() {
@@ -117,7 +118,7 @@ function _handleUploadDebugLogSettingPress() {
       }
     }
   });
-  const _handleUploadDebugLogSettingPress = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -129,8 +130,8 @@ function _handleUploadDebugLogSettingPress() {
 let closure_7 = keys.create(() => ({ isDisabled: false, isUploading: false }));
 keys = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.aY1OH2);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.aY1OH2);
   },
   parent: null,
   IconComponent: require("CircleInformationIcon").CircleInformationIcon,
@@ -156,6 +157,6 @@ keys = {
   }
 };
 keys = createToggle.createPressable(keys);
-const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/UploadDebugLogsSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/UploadDebugLogsSetting.tsx");
 
 export default keys;

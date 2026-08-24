@@ -1,31 +1,31 @@
-// Module ID: 6162
-// Function ID: 6163
+// Module ID: 6193
+// Function ID: 6194
 // Name: SmokeIllocon
-// Dependencies: [21, 5449, 6163, 2]
+// Dependencies: [21, 5454, 6194, 2]
 // Exports: SmokeIllocon
 
-// Module 6162 (SmokeIllocon)
-import { jsx } from "jsxProd";
+// Module 6193 (SmokeIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6194 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SmokeIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SmokeIllocon.native.tsx");
 
 export const SmokeIllocon = function SmokeIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6163);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

@@ -1,39 +1,39 @@
-// Module ID: 15526
-// Function ID: 15527
+// Module ID: 15591
+// Function ID: 15592
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 5067, 4495, 676, 4229, 4230, 1231, 2]
+// Dependencies: [32, 19, 5072, 4499, 676, 4233, 4234, 1231, 2]
 // Exports: useShouldRenderChannelList
 
-// Module 15526 (useShouldRenderChannelList)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import handleClearCaches from "handleClearCaches";
-import _handleConnectionOpen from "_handleConnectionOpen";
-import { ComponentActions } from "ME";
+// Module 15591 (useShouldRenderChannelList)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "handleClearCaches" /* 5072 */;
+import closure_5 from "_handleConnectionOpen" /* 4499 */;
+import { ComponentActions } from "ME" /* 676 */;
 
 const require = arg1;
 let c7 = false;
-let result = require("handleClearCaches").fileFinishedImporting("modules/guild_sidebar/native/useShouldRenderChannelList.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_sidebar/native/useShouldRenderChannelList.tsx");
 
 export const useShouldRenderChannelList = function useShouldRenderChannelList() {
   const tmp = callback(React.useState(c7), 2);
   const first = tmp[0];
-  let closure_1 = tmp[1];
+  closure_1 = tmp[1];
   const items = [first];
   const effect = React.useEffect(() => {
     function allowRender(arg0) {
-      const outer1_7 = true;
+      c7 = true;
       handleGatewayChange(true);
     }
     function handleGatewayChange(arg0) {
-      if (outer1_5.isConnected()) {
-        const outer1_7 = true;
+      if (closure_1_5.isConnected()) {
+        c7 = true;
         handleGatewayChange(true);
       }
     }
     function handleCacheChange() {
-      if ("cache-loaded" === outer1_4.getLazyCacheStatus()) {
-        const outer1_7 = true;
+      if ("cache-loaded" === closure_1_4.getLazyCacheStatus()) {
+        c7 = true;
         handleGatewayChange(true);
       }
     }
@@ -45,24 +45,24 @@ export const useShouldRenderChannelList = function useShouldRenderChannelList() 
         currentRoute = rootNavigationRef.getCurrentRoute();
       }
       if (null != obj.coerceGuildsRoute(currentRoute)) {
-        const outer1_7 = true;
+        c7 = true;
         handleGatewayChange(true);
       }
     }
     if (!allowRender) {
-      let result = outer1_5.addReactChangeListener(handleGatewayChange);
-      let result1 = outer1_4.addReactChangeListener(handleCacheChange);
+      let result = closure_1_5.addReactChangeListener(handleGatewayChange);
+      let result1 = closure_1_4.addReactChangeListener(handleCacheChange);
       let ComponentDispatch = first(1231).ComponentDispatch;
-      const subscription = ComponentDispatch.subscribe(outer1_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-      let rootNavigationRef = first(4230).getRootNavigationRef();
+      const subscription = ComponentDispatch.subscribe(closure_1_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+      let rootNavigationRef = first(4234).getRootNavigationRef();
       if (rootNavigationRef != null) {
         rootNavigationRef.addListener("state", handleNavigationChange);
       }
       return () => {
-        const result = outer2_5.removeReactChangeListener(handleGatewayChange);
-        const result1 = outer2_4.addReactChangeListener(handleCacheChange);
+        const result = closure_2_5.removeReactChangeListener(handleGatewayChange);
+        const result1 = closure_2_4.addReactChangeListener(handleCacheChange);
         const ComponentDispatch = first(handleGatewayChange[7]).ComponentDispatch;
-        ComponentDispatch.unsubscribe(outer2_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+        ComponentDispatch.unsubscribe(closure_2_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
         const rootNavigationRef = first(handleGatewayChange[6]).getRootNavigationRef();
         if (rootNavigationRef != null) {
           rootNavigationRef.removeListener("state", handleNavigationChange);

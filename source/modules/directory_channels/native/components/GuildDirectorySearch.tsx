@@ -1,59 +1,54 @@
-// Module ID: 11469
-// Function ID: 11470
+// Module ID: 11518
+// Function ID: 11519
 // Name: DefaultState
-// Dependencies: [32, 19, 17, 1910, 11470, 676, 21, 4661, 712, 11473, 4734, 1236, 1297, 589, 11474, 11475, 1629, 11504, 11507, 6314, 7336, 11483, 11467, 698, 2]
+// Dependencies: [32, 19, 17, 1910, 11519, 676, 21, 4668, 712, 11522, 4739, 1236, 1297, 589, 11523, 11524, 1629, 11553, 11556, 6345, 7374, 11532, 11516, 698, 2]
 // Exports: default
 
-// Module 11469 (DefaultState)
-import _slicedToArray from "_slicedToArray";
-import HeaderBackImage from "HeaderBackImage";
-import get_ActivityIndicator from "module_11504";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getSearchState from "getSearchState";
-import ME from "ME";
-import jsxProd from "_addDirectoryGuildEntry";
-import createCacheKey from "createCacheKey";
-import ArrayResult from "module_7336";
+// Module 11518 (DefaultState)
+import ThemesDefault from "Themes" /* 712 */;
+import registerAssetDefault from "registerAsset" /* 11522 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_9 from "createGuildRecordFromRust" /* 1910 */;
+import closure_10 from "getSearchState" /* 11519 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import ArrayResult from "module_20" /* 20 */;
 
-let Fonts;
-let closure_12;
-let closure_6;
-let error;
-let map1;
-let metroImportAll;
-let unpackModuleId;
-let require = arg1;
+const require = arg1;
 function DefaultState() {
-  const tmp = createCacheKey();
-  const require = tmp;
+  const tmp = callback3();
+  const _require = tmp;
   let obj = { style: tmp.emptyWrapper, children: null };
-  obj = { style: tmp.emptyStateImage, source: importDefault(11473) };
+  obj = { style: tmp.emptyStateImage, source: registerAssetDefault };
   const items = [callback(closure_7, obj), ];
   obj = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.format(require(1236) /* getSystemLocale */.t.aYLd8O, {
+  const intl = _require(1236).intl;
+  obj[3] = intl.format(_require(1236).t.aYLd8O, {
     protipHook(children) {
-      return outer1_12(tmp(outer1_3[12]).LegacyText, { style: tmp.proTip, children }, "protip");
+      return closure_1_12(lib(closure_1_3[12]).LegacyText, { style: lib.proTip, children }, "protip");
     }
   });
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  items[1] = callback(_require(4739).Text, obj);
   obj[1] = items;
   return callback2(closure_6, obj);
 }
 function EmptyState(channel) {
   channel = channel.channel;
-  let importDefault;
-  const tmp = createCacheKey();
+  importDefault = undefined;
+  const tmp = callback3();
   let obj = channel(589);
-  const items = [createGuildRecordFromRust];
-  importDefault = obj.useStateFromStores(items, () => outer1_9.getGuild(channel.getGuildId()));
-  let obj1 = channel(11474);
+  const items = [closure_9];
+  importDefault = obj.useStateFromStores(items, () => closure_1_9.getGuild(channel.getGuildId()));
+  obj1 = channel(11523);
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1236).intl;
   if (canCreateOrAddGuildInDirectory) {
     obj = { addServerHook: null };
     obj[0] = function addServerHook() {
-      let obj = lib(outer1_3[15]);
+      let obj = lib(closure_1_3[15]);
       obj = { directoryGuildName: lib.name, directoryGuildId: lib.id, directoryChannelId: channel.id };
       obj.open(obj);
     };
@@ -62,48 +57,48 @@ function EmptyState(channel) {
     formatResult = intl.string(tmp2(1236).t.vYyEnv);
   }
   obj = { style: tmp.emptyWrapper, children: null };
-  obj1 = { style: tmp.emptyStateImage, source: importDefault(11473) };
+  obj1 = { style: tmp.emptyStateImage, source: registerAssetDefault };
   const items1 = [callback(closure_7, obj1), , ];
   const obj2 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp2(1236).intl;
   obj2[3] = intl2.string(channel(1236).t["6HXiuE"]);
-  items1[1] = callback(channel(4734).Text, obj2);
-  items1[2] = callback(channel(4734).Text, { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult });
+  items1[1] = callback(channel(4739).Text, obj2);
+  items1[2] = callback(channel(4739).Text, { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult });
   obj[1] = items1;
   return callback2(closure_6, obj);
 }
-({ View: closure_6, Image: error, FlatList: metroImportAll } = get_ActivityIndicator);
+({ View: closure_6, Image: error, FlatList: closure_8 } = get_ActivityIndicator);
 ({ AnalyticEvents: unpackModuleId, Fonts } = ME);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 createCacheKey = { flex: { flex: 1, height: "100%" }, fauxHeader: { paddingHorizontal: 0 }, scrollContainer: null, emptyWrapper: null, emptyStateImage: null, emptyStateText: null, emptyStateTitle: null, proTip: null };
-createCacheKey = { flex: 1, width: "100%", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { flex: 1, width: "100%", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[2] = createCacheKey;
 createCacheKey[3] = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: 16 };
 createCacheKey[4] = { marginBottom: 24 };
 createCacheKey[5] = { textAlign: "center" };
 createCacheKey[6] = { marginBottom: 4, textAlign: "center" };
-createCacheKey[7] = { fontFamily: Fonts.PRIMARY_BOLD, color: require("Themes").unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { fontFamily: Fonts.PRIMARY_BOLD, color: require("Themes").unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
-let closure_17 = require("module_7336").fill(null);
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectorySearch.tsx");
+createCacheKey[7] = { fontFamily: Fonts.PRIMARY_BOLD, color: ThemesDefault.unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
+let closure_14 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { fontFamily: Fonts.PRIMARY_BOLD, color: ThemesDefault.unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
+let closure_17 = require("module_20").fill(null);
+let result = require("set").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectorySearch.tsx");
 
 export default function GuildDirectorySearch(channel) {
   channel = channel.channel;
-  let importDefault;
-  let closure_2;
+  importDefault = undefined;
+  closure_2 = undefined;
   let searchFetching;
   let searchResults;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const tmp2 = searchResults(React.useState(false), 2);
   importDefault = tmp2[1];
   const tmp3 = searchResults(React.useState(""), 2);
   closure_2 = tmp3[0];
   let obj = channel(searchFetching[13]);
-  const items = [getSearchState];
+  const items = [closure_10];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const searchState = outer1_10.getSearchState(channel.id);
-    return { searchFetching: searchState.fetching, searchResults: outer1_10.getSearchResults(channel.id, searchState.mostRecentQuery) };
+    const searchState = closure_1_10.getSearchState(channel.id);
+    return { searchFetching: searchState.fetching, searchResults: closure_1_10.getSearchResults(channel.id, searchState.mostRecentQuery) };
   });
   searchFetching = stateFromStoresObject.searchFetching;
   searchResults = stateFromStoresObject.searchResults;
@@ -111,7 +106,7 @@ export default function GuildDirectorySearch(channel) {
   let memo = React.useMemo(() => {
     let combined = searchResults;
     if (searchFetching) {
-      combined = searchResults.concat(outer1_17);
+      combined = searchResults.concat(closure_1_17);
     }
     return combined;
   }, items1);
@@ -121,7 +116,7 @@ export default function GuildDirectorySearch(channel) {
     obj[0] = tmp.flex;
     obj = { style: null, children: null };
     obj[0] = tmp.fauxHeader;
-    const obj1 = { placeholder: null, onChange: null, onClose: null, onSubmitEditing: null };
+    obj1 = { placeholder: null, onChange: null, onClose: null, onSubmitEditing: null };
     const intl = tmp4(tmp5[11]).intl;
     obj1[0] = intl.string(tmp4(tmp5[11]).t.nL2wKD);
     obj1[1] = tmp3[1];
@@ -137,7 +132,7 @@ export default function GuildDirectorySearch(channel) {
         obj = { directory_channel_id: null, directory_guild_id: null };
         obj[0] = channel.id;
         obj[1] = channel.getGuildId();
-        callback(searchFetching[23]).track(outer1_11.GUILD_DIRECTORY_SEARCH, obj);
+        callback(searchFetching[23]).track(closure_1_11.GUILD_DIRECTORY_SEARCH, obj);
         if (null != result) {
           result.then(() => callback(true));
         } else {
@@ -180,7 +175,7 @@ export default function GuildDirectorySearch(channel) {
       return guildId;
     };
     obj3[3] = function ListEmptyComponent() {
-      return outer1_12(outer1_16, { channel });
+      return closure_1_12(closure_1_16, { channel });
     };
     obj3[4] = { right: 0 };
     obj3[5] = tmp.scrollContainer;

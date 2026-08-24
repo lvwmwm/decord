@@ -5,7 +5,9 @@
 // Exports: fromServerGuildIncidentsData, toServerGuildIncidentsData
 
 // Module 1908 (fromServerGuildIncidentsData)
-const result = require("set").fileFinishedImporting("modules/guild_antiraid/guildIncidentsSerialization.tsx");
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/guild_antiraid/guildIncidentsSerialization.tsx");
 
 export const fromServerGuildIncidentsData = function fromServerGuildIncidentsData(incidents_data) {
   if (null != incidents_data) {

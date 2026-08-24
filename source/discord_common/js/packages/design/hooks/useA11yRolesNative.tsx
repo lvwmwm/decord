@@ -1,13 +1,15 @@
-// Module ID: 4105
-// Function ID: 4106
+// Module ID: 4108
+// Function ID: 4109
 // Name: useCheckboxA11yNative
 // Dependencies: [17, 2]
 // Exports: useCheckboxA11yNative, useRadioA11yNative
 
-// Module 4105 (useCheckboxA11yNative)
-import { Platform } from "get ActivityIndicator";
+// Module 4108 (useCheckboxA11yNative)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/hooks/useA11yRolesNative.tsx");
+const Platform = get_ActivityIndicator.Platform;
+const result = set.fileFinishedImporting("../discord_common/js/packages/design/hooks/useA11yRolesNative.tsx");
 
 export const useCheckboxA11yNative = function useCheckboxA11yNative(checked) {
   checked = checked.checked;

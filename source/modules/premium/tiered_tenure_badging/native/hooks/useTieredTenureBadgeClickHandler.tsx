@@ -1,36 +1,34 @@
-// Module ID: 9466
-// Function ID: 9467
+// Module ID: 9503
+// Function ID: 9504
 // Name: useTieredTenureBadgeClickHandler
-// Dependencies: [19, 1922, 1924, 9467, 676, 7186, 9468, 5381, 589, 7360, 4342, 9469, 2007, 9469, 698, 2]
+// Dependencies: [19, 1922, 1924, 9504, 676, 7224, 9505, 5386, 589, 7398, 4346, 9506, 2008, 9506, 698, 2]
 // Exports: useTieredTenureBadgeClickHandler
 
-// Module 9466 (useTieredTenureBadgeClickHandler)
-import noop from "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { PremiumTypes } from "GuildFeatures";
-import { DEFAULT_PREMIUM_BADGE_ID } from "DEFAULT_PREMIUM_BADGE_ID";
-import ME from "ME";
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET";
+// Module 9503 (useTieredTenureBadgeClickHandler)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { DEFAULT_PREMIUM_BADGE_ID } from "DEFAULT_PREMIUM_BADGE_ID" /* 9504 */;
+import ME from "ME" /* 676 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ AnalyticEvents: error, UserSettingsSections: metroImportAll } = ME);
-const result = require("GuildFeatures").fileFinishedImporting("modules/premium/tiered_tenure_badging/native/hooks/useTieredTenureBadgeClickHandler.tsx");
+({ AnalyticEvents: error, UserSettingsSections: closure_8 } = ME);
+const result = require("set").fileFinishedImporting("modules/premium/tiered_tenure_badging/native/hooks/useTieredTenureBadgeClickHandler.tsx");
 
 export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeClickHandler(id, userId, themeType) {
   const _require = id;
-  let closure_1 = userId;
-  const dependencyMap = themeType;
-  const isPremiumSubscriber = _require(9468).useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  closure_1 = userId;
+  dependencyMap = themeType;
+  let isPremiumSubscriber = _require(9505).useIsPremiumSubscriber(PremiumTypes.TIER_2);
   let tmp4 = typeof id === "string";
   if (typeof id === "string") {
-    let tmpResult = tmp(5381);
+    let tmpResult = tmp(5386);
     tmp4 = null != tmpResult.getTieredTenureBadge(id);
   }
   tmpResult = tmp(589);
-  const items = [mergeGuildAvatar];
-  const stateFromStores = tmpResult.useStateFromStores(items, () => tmp4.getCurrentUser());
+  const items = [isPremiumSubscriber];
+  const stateFromStores = tmpResult.useStateFromStores(items, () => isPremiumSubscriber.getCurrentUser());
   if (!tmp4) {
     let tmp7 = id === DEFAULT_PREMIUM_BADGE_ID;
     if (tmp7) {
@@ -45,14 +43,14 @@ export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeCli
     }
     tmp4 = tmp7;
   }
-  mergeGuildAvatar = tmp4;
+  isPremiumSubscriber = tmp4;
   const items1 = [themeType, userId, tmp4, id, isPremiumSubscriber];
   let callback = null;
   if (tmp4) {
     callback = isPremiumSubscriber.useCallback(() => {
-      if (themeType === outer1_9.YOU_SCREEN) {
+      if (themeType === closure_1_9.YOU_SCREEN) {
         let obj = { screen: null };
-        obj[0] = outer1_8.PREMIUM;
+        obj[0] = closure_1_8.PREMIUM;
         id(themeType[9]).openUserSettings(obj);
         let tmp2 = themeType;
         const obj3 = id(themeType[9]);
@@ -64,12 +62,12 @@ export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeCli
         obj[0] = userId;
         obj.openLazy(tmp4, id(themeType[13]).TIERED_TENURE_BADGE_ACTION_SHEET_KEY, obj, "stack");
       }
-      if (mergeGuildAvatar) {
-        const obj1 = { badge: null, viewed_user_id: null, premium_type: null };
+      if (isPremiumSubscriber) {
+        obj1 = { badge: null, viewed_user_id: null, premium_type: null };
         obj1[0] = id;
         obj1[1] = userId;
         obj1[2] = isPremiumSubscriber;
-        userId(tmp2[14]).track(outer1_7.TIERED_TENURE_BADGE_CLICKED, obj1);
+        userId(tmp2[14]).track(closure_1_7.TIERED_TENURE_BADGE_CLICKED, obj1);
         const obj5 = userId(tmp2[14]);
       }
     }, items1);

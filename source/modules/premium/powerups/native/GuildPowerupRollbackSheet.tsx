@@ -1,22 +1,19 @@
-// Module ID: 11684
-// Function ID: 11685
+// Module ID: 11733
+// Function ID: 11734
 // Name: GuildPowerupRollbackSheet
-// Dependencies: [21, 8017, 4745, 2]
+// Dependencies: [21, 8056, 4750, 2]
 // Exports: default
 
-// Module 11684 (GuildPowerupRollbackSheet)
-import { jsx } from "jsxProd";
+// Module 11733 (GuildPowerupRollbackSheet)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import Button from "Button" /* 4750 */;
+import PromoSheet from "PromoSheet" /* 8056 */;
 
-const result = require("Button").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupRollbackSheet.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupRollbackSheet.tsx");
 
 export default function GuildPowerupRollbackSheet(arg0) {
-  let body;
-  let ctaText;
-  let header;
-  let onCtaPress;
-  let onDismiss;
   ({ header, body, ctaText, onCtaPress, onDismiss } = arg0);
-  const obj = { title: header, description: body, onDismiss, actions: null };
-  obj[3] = jsx(require(4745) /* Button */.Button, { variant: "primary", text: ctaText, onPress: onCtaPress });
-  return jsx(require(8017) /* PromoSheet */.PromoSheet, { title: header, description: body, onDismiss, actions: null });
+  return jsx(PromoSheet.PromoSheet, { title: header, description: body, onDismiss, actions: jsx(Button.Button, { variant: "primary", text: ctaText, onPress: onCtaPress }) });
 };

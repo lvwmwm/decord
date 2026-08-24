@@ -1,16 +1,13 @@
-// Module ID: 12538
-// Function ID: 12539
-// Dependencies: [19, 17, 21, 4661, 4986, 12539, 12492, 10526, 12508, 4988, 12505, 12566, 2]
+// Module ID: 12592
+// Function ID: 12593
+// Dependencies: [19, 17, 21, 4668, 4991, 12593, 12546, 10565, 12562, 4993, 12559, 12620, 2]
 
-// Module 12538
-import importAllResult from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12592
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 let c3 = importAllResult;
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
@@ -19,8 +16,8 @@ const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
   let canModerateRequestToSpeak;
   let actionBarPrimaryButton;
-  let importAllResult;
-  let c4;
+  importAllResult = undefined;
+  closure_4 = undefined;
   let callback;
   callback = undefined;
   let obj = channel(actionBarPrimaryButton[4]);
@@ -35,7 +32,7 @@ const memoResult = importAllResult.memo((channel) => {
   importAllResult = tmp7;
   let obj3 = channel(actionBarPrimaryButton[6]);
   const tmp8 = channel(actionBarPrimaryButton[8]).useShowStageMusicMuteButton(channel.id) && !tmp7;
-  c4 = tmp8;
+  closure_4 = tmp8;
   let obj4 = channel(actionBarPrimaryButton[8]);
   const isStageVideoEnabledResult = tmp2(tmp3[9]).isStageVideoEnabled(channel.guild_id);
   callback = isStageVideoEnabledResult;
@@ -62,7 +59,7 @@ const memoResult = importAllResult.memo((channel) => {
     pointerEvents: "box-none",
     style: items2,
     children: importAllResult.useMemo(() => {
-      if (c3) {
+      if (closure_3) {
         let tmp24 = _undefined;
         if (_undefined) {
           let obj = { channel: null, isSmallSize: null };
@@ -75,7 +72,7 @@ const memoResult = importAllResult.memo((channel) => {
         obj[0] = channel;
         obj[1] = _undefined;
         items[1] = _undefined(channel(actionBarPrimaryButton[11]).ChannelCallMicButton, obj);
-        let obj1 = channel(actionBarPrimaryButton[10]);
+        obj1 = channel(actionBarPrimaryButton[10]);
         obj1 = { children: null };
         const obj2 = { channel: null, isSmallSize: null };
         obj2[0] = channel;
@@ -87,15 +84,15 @@ const memoResult = importAllResult.memo((channel) => {
         items[3] = _undefined(channel(actionBarPrimaryButton[10]).ChatButton, obj3);
         items[4] = callback(_undefined);
         obj1[0] = items;
-        outer1_7(callback, obj1);
-        const tmp22 = outer1_7;
+        closure_1_7(callback, obj1);
+        const tmp22 = closure_1_7;
         const tmp23 = callback;
         const tmp33 = _undefined;
         const tmp37 = canModerateRequestToSpeak ? obj1.RequestToSpeakListButton : obj1.MoveToAudienceButton;
       } else {
-        let tmp = c4;
-        let tmp2 = c4;
-        if (c4) {
+        let tmp = closure_4;
+        let tmp2 = closure_4;
+        if (closure_4) {
           tmp2 = canModerateRequestToSpeak;
         }
         if (tmp) {
@@ -124,13 +121,13 @@ const memoResult = importAllResult.memo((channel) => {
         items1[3] = _undefined(channel(actionBarPrimaryButton[10]).ChatButton, obj7);
         items1[4] = callback(tmp2);
         obj6[0] = items1;
-        return outer1_7(callback, obj6);
+        return closure_1_7(callback, obj6);
       }
     }, items1)
   };
   items2 = [tmp.container, { height: getActionBarHeight }];
-  return callback(c4, obj);
+  return callback(closure_4, obj);
 });
-const result = require("jsxProd").fileFinishedImporting("modules/stage_channels/native/components/StageActionBar.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/components/StageActionBar.tsx");
 
 export default memoResult;

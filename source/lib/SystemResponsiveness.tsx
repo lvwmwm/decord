@@ -1,17 +1,20 @@
-// Module ID: 13093
-// Function ID: 13094
+// Module ID: 13149
+// Function ID: 13150
 // Name: start
-// Dependencies: [7490, 4569, 12, 2]
+// Dependencies: [7528, 4574, 12, 2]
 
-// Module 13093 (start)
-const result = require("apply").fileFinishedImporting("lib/SystemResponsiveness.tsx");
+// Module 13149 (start)
+import set from "set" /* 2 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4574 */;
+
+const result = set.fileFinishedImporting("lib/SystemResponsiveness.tsx");
 class SystemResponsiveness {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     obj.sampleStats = function sampleStats(rtp) {
       if (null != rtp) {
-        const item = outer1_1(outer1_2[2]).forEach(rtp.rtp.outbound, (type) => {
+        const item = closure_1_1(closure_1_2[2]).forEach(rtp.rtp.outbound, (type) => {
           if ("audio" === type.type) {
             let prop = type.pttQueueLatencyMicrosSamples;
             if (prop == null) {
@@ -26,7 +29,7 @@ class SystemResponsiveness {
             }
           }
         });
-        const arr = outer1_1(outer1_2[2]);
+        const arr = closure_1_1(closure_1_2[2]);
       }
     };
     obj.connection = global;
@@ -38,11 +41,11 @@ class SystemResponsiveness {
 const prototype = SystemResponsiveness.prototype;
 prototype["start"] = function start() {
   const connection = this.connection;
-  connection.on(require(4569) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
+  connection.on(BaseConnectionEvent.BaseConnectionEvent.Stats, this.sampleStats);
 };
 prototype["stop"] = function stop() {
   const connection = this.connection;
-  connection.off(require(4569) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
+  connection.off(BaseConnectionEvent.BaseConnectionEvent.Stats, this.sampleStats);
 };
 prototype["getPttQueueLatencyStats"] = function getPttQueueLatencyStats() {
   const pttQueueLatencyHistogram = this.pttQueueLatencyHistogram;

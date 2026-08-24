@@ -1,21 +1,21 @@
-// Module ID: 15340
-// Function ID: 15341
+// Module ID: 15404
+// Function ID: 15405
 // Name: _getEmojiSource
-// Dependencies: [5, 17, 4038, 1435, 2]
+// Dependencies: [5, 17, 4041, 1435, 2]
 // Exports: getEmojiSource
 
-// Module 15340 (_getEmojiSource)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import { NativeModules } from "get ActivityIndicator";
+// Module 15404 (_getEmojiSource)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
 
 const require = arg1;
 function _getEmojiSource() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
     const iter = (function*(arg0) {
       if (c7 === 2) {
         c7 = 3;
@@ -28,7 +28,7 @@ function _getEmojiSource() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -43,13 +43,13 @@ function _getEmojiSource() {
               obj[0] = arg1;
               return obj;
             } else {
-              let c5 = 0;
-              let closure_4 = tmp2;
+              c5 = 0;
+              closure_4 = tmp2;
               let num11;
               if (num11 === undefined) {
                 num11 = 32;
               }
-              let asyncGeneratorStep;
+              closure_2 = undefined;
               let ImageManager;
               c6 = 1;
               c7 = 1;
@@ -61,7 +61,7 @@ function _getEmojiSource() {
               throw arg1;
             } else if (arg0 === 2) {
               c7 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -74,15 +74,15 @@ function _getEmojiSource() {
               obj2[0] = ImageManager;
               obj2[1] = lib.id;
               const emojiUrl = lib(num11[2]).getEmojiUrl(obj2, num11);
-              asyncGeneratorStep = emojiUrl;
+              closure_2 = emojiUrl;
               if (emojiUrl == null) {
-                asyncGeneratorStep = "";
+                closure_2 = "";
               }
-              if ("" !== asyncGeneratorStep) {
+              if ("" !== closure_2) {
                 let obj5 = lib(num11[3]);
                 c7 = 3;
                 const obj3 = { value: null, done: true };
-                obj3[0] = obj5.makeSource(asyncGeneratorStep);
+                obj3[0] = obj5.makeSource(closure_2);
                 return obj3;
               } else {
                 ImageManager = ImageManager.ImageManager;
@@ -120,7 +120,7 @@ function _getEmojiSource() {
     iter.next();
     return iter;
   });
-  const _getEmojiSource = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -129,7 +129,7 @@ function _getEmojiSource() {
   }
   return applyArgumentsResult;
 }
-const result = require("getEmojiUnavailableReason").fileFinishedImporting("modules/emojis/native/utils/EmojiSourceUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/emojis/native/utils/EmojiSourceUtils.tsx");
 
 export const getEmojiSource = function getEmojiSource(emoji) {
   const self = this;

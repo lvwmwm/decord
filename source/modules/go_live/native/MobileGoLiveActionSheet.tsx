@@ -1,37 +1,39 @@
-// Module ID: 10932
-// Function ID: 10933
+// Module ID: 10971
+// Function ID: 10972
 // Name: ApplicationStreamPresets
-// Dependencies: [32, 19, 4562, 4652, 1391, 1910, 1979, 1922, 4524, 676, 4529, 21, 4661, 712, 501, 4342, 10932, 2007, 503, 589, 10933, 10938, 7139, 7159, 4115, 9860, 9654, 8597, 1236, 2173, 10939, 10941, 7190, 4734, 4096, 9397, 6950, 6952, 6803, 6286, 8101, 8471, 691, 8100, 9394, 8482, 9498, 7178, 4745, 10931, 2]
+// Dependencies: [32, 19, 4567, 4658, 1391, 1910, 1980, 1922, 4529, 676, 4534, 21, 4668, 712, 501, 4346, 10971, 2008, 503, 589, 10972, 10977, 7177, 7197, 4119, 9899, 9693, 6604, 1236, 2174, 10978, 10980, 7228, 4739, 4099, 9434, 6988, 6990, 6840, 6317, 8140, 8510, 691, 8139, 9431, 8521, 9535, 7216, 4750, 10970, 2]
 // Exports: showMobileGoLiveActionSheet
 
-// Module 10932 (ApplicationStreamPresets)
-import set from "set";
-import importAllResult from "initialize";
-import ApplicationStreamPresets from "ApplicationStreamPresets";
-import reset from "reset";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import handleConnectionOpen from "handleConnectionOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { ApplicationStreamPresets } from "RESOLUTION_720";
-import { ApplicationStreamStates } from "ME";
-import { MediaEngineContextTypes } from "DesktopSources";
-import jsxProd from "apexExperiment";
-import createCacheKey from "createCacheKey";
-import PlatformTypes from "PlatformTypes";
+// Module 10971 (ApplicationStreamPresets)
+import encodeProperties from "encodeProperties" /* 503 */;
+import ThemesDefault from "Themes" /* 712 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import closure_5 from "ApplicationStreamPresets" /* 4567 */;
+import closure_6 from "reset" /* 4658 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "createGuildRecordFromRust" /* 1910 */;
+import closure_9 from "handleConnectionOpen" /* 1980 */;
+import closure_10 from "mergeGuildAvatar" /* 1922 */;
+import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4529 */;
+import { ApplicationStreamStates } from "ME" /* 676 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4534 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import PlatformTypes from "PlatformTypes" /* 501 */;
 
-let closure_14;
-let closure_15;
-const require = arg1;
+require = arg1;
 let c4 = importAllResult;
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 let obj = { wrapper: null, header: null, section: null, highQualityLabel: null };
-obj = { gap: require("Themes").space.PX_24 };
+obj = { gap: ThemesDefault.space.PX_24 };
 obj[0] = obj;
 obj[1] = { textAlign: "center" };
-createCacheKey = { marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { marginHorizontal: ThemesDefault.space.PX_16 };
 obj[2] = createCacheKey;
-obj[3] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+obj[3] = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
 let closure_16 = createCacheKey.createStyles(obj);
 const MobileGoLiveActionSheet = "MobileGoLiveActionSheet";
 let items = [{ preset: ApplicationStreamPresets.PRESET_MOBILE_DEFAULT, enabled: true }, , ];
@@ -41,26 +43,24 @@ items[1] = obj4;
 items[2] = { preset: ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY, enabled: true };
 const found = items.filter((enabled) => enabled.enabled);
 let closure_18 = found.map((preset) => preset.preset);
-let obj2 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+let obj2 = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
 let obj3 = { preset: ApplicationStreamPresets.PRESET_MOBILE_DEFAULT, enabled: true };
 const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
-  let preset;
-  let soundshareEnabled;
   let obj = user(callback[19]);
   let items = [analyticsLocations];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => analyticsLocations.getState());
   ({ preset, soundshareEnabled } = stateFromStoresObject);
-  let obj1 = user(callback[19]);
-  const items1 = [mergeGuildAvatar, first1, first, createGuildRecordFromRust];
+  obj1 = user(callback[19]);
+  const items1 = [closure_10, first1, first, closure_8];
   const stateFromStoresObject1 = obj1.useStateFromStoresObject(items1, () => {
-    const user = currentUser.getCurrentUser();
+    user = currentUser.getCurrentUser();
     const channel = first.getChannel(first1.getVoiceChannelId());
     let guildId;
     if (channel != null) {
       guildId = channel.getGuildId();
     }
     guild = guild.getGuild(guildId);
-    let guildPremiumTier;
+    guildPremiumTier = undefined;
     if (guild != null) {
       guildPremiumTier = guild.premiumTier;
     }
@@ -72,10 +72,10 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
   const items2 = [user, guildPremiumTier];
   callback = activeSourceId.useCallback((arg0) => user(callback[20]).canStreamWithPreset(arg0, user, guildPremiumTier), items2);
   let obj3 = user(callback[19]);
-  const items3 = [reset];
+  const items3 = [closure_6];
   const stateFromStoresObject2 = obj3.useStateFromStoresObject(items3, () => {
-    let obj = tmp9;
-    const currentUserActiveStream = tmp9.getCurrentUserActiveStream();
+    let obj = currentUserActiveStream;
+    currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
     let tmp2 = null != currentUserActiveStream;
     if (tmp2) {
       tmp2 = currentUserActiveStream.state === constants.ACTIVE;
@@ -98,7 +98,7 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
   const goLiveUpsellVariant = obj4.useConfig({ location: "MobileGoLiveActionSheet" }).goLiveUpsellVariant;
   analyticsLocations = guildPremiumTier(callback[22])(guildPremiumTier(callback[23]).MOBILE_GO_LIVE_ACTION_SHEET).analyticsLocations;
   const tmp9 = callback2();
-  reset = tmp9;
+  closure_6 = tmp9;
   let tmp11 = preset === ApplicationStreamPresets.PRESET_MOBILE_DEFAULT;
   if (!tmp11) {
     tmp11 = preset === tmp10.PRESET_MOBILE_PERFORMANCE;
@@ -109,15 +109,13 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
   if (tmp11) {
     const tmp14 = isStreaming(activeSourceId.useState(preset), 2);
     first = tmp14[0];
-    createGuildRecordFromRust = tmp14[1];
+    closure_8 = tmp14[1];
     const tmp16 = isStreaming(obj2.useState(soundshareEnabled), 2);
     first1 = tmp16[0];
-    mergeGuildAvatar = tmp16[1];
+    closure_10 = tmp16[1];
     const sharedValue = tmp(tmp2[24]).useSharedValue(!callback(tmp10.PRESET_MOBILE_HIGH_QUALITY));
     const items4 = [user, guildPremiumTier, activeSourceId, isStreaming];
     ApplicationStreamPresets = obj2.useCallback((arg0, arg1) => {
-      let tmp4;
-      let tmp5;
       let items = guildPremiumTier(callback[20])(arg0, user, guildPremiumTier);
       if (items == null) {
         items = [];
@@ -138,9 +136,9 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
             obj[1] = tmp4;
             obj[2] = tmp5;
             obj[0] = obj;
-            obj[1] = outer1_13.STREAM;
+            obj[1] = closure_1_13.STREAM;
             if (null != activeSourceId) {
-              const obj1 = { sourceId: null, sound: null };
+              obj1 = { sourceId: null, sound: null };
               obj1[0] = tmp7;
               obj1[1] = arg1;
               obj.desktopSettings = obj1;
@@ -174,7 +172,7 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
         guild(arg0);
         lib(arg0, first1);
         if (isStreaming) {
-          guildPremiumTier(callback[15]).hideActionSheet(outer1_17);
+          guildPremiumTier(callback[15]).hideActionSheet(closure_1_17);
           const obj3 = guildPremiumTier(callback[15]);
         }
       } else {
@@ -188,12 +186,12 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
     obj4[3] = closure_18.map((value) => {
       let obj = user(callback[20]);
       const maxSettingsForPreset = obj.getMaxSettingsForPreset(lib.PRESET_MOBILE_DEFAULT);
-      let obj1 = user(callback[20]);
+      obj1 = user(callback[20]);
       const maxSettingsForPreset1 = obj1.getMaxSettingsForPreset(lib.PRESET_MOBILE_PERFORMANCE);
       let obj2 = user(callback[20]);
       const maxSettingsForPreset2 = obj2.getMaxSettingsForPreset(lib.PRESET_MOBILE_HIGH_QUALITY);
       obj = { value };
-      obj = { icon: outer1_14(user(callback[27]).MobilePhoneIcon, {}), label: null, subLabel: null };
+      obj = { icon: closure_1_14(user(callback[27]).MobilePhoneIcon, {}), label: null, subLabel: null };
       const intl = user(callback[28]).intl;
       obj[1] = intl.string(guildPremiumTier(callback[29])["2qmQ8N"]);
       let str = "";
@@ -202,7 +200,7 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
         const intl2 = tmp2(tmp3[28]).intl;
         str2 = intl2.formatToPlainString(tmp8(tmp3[29]).ibH7vy, maxSettingsForPreset);
       }
-      obj1 = { [outer1_11.PRESET_MOBILE_DEFAULT]: obj };
+      obj1 = { [closure_1_11.PRESET_MOBILE_DEFAULT]: obj };
       obj[2] = str2;
       obj2 = { icon: tmp(tmp2(tmp3[30]).SpeedometerIcon, {}), label: null, subLabel: null };
       const intl3 = tmp2(tmp3[28]).intl;
@@ -214,17 +212,16 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
       }
       obj2[2] = formatToPlainStringResult;
       obj1[lib.PRESET_MOBILE_PERFORMANCE] = obj2;
-      const obj3 = { icon: outer1_14(user(callback[31]).ImageSparkleIcon, {}), label: null, subLabel: null };
-      const obj4 = { style: tmp9.highQualityLabel, children: null };
+      const obj3 = { icon: closure_1_14(user(callback[31]).ImageSparkleIcon, {}), label: null, subLabel: null };
+      const obj4 = { style: currentUserActiveStream.highQualityLabel, children: null };
       const obj5 = { variant: "text-md/semibold", color: "text-strong", children: null };
       const intl5 = tmp2(tmp3[28]).intl;
       obj5[2] = intl5.string(guildPremiumTier(callback[29]).nMcXo1);
-      const items = [outer1_14(user(callback[33]).Text, obj5), ];
-      const obj6 = { source: null, size: "xs" };
-      obj6[0] = guildPremiumTier(callback[35]);
-      items[1] = outer1_14(user(callback[34]).BaseIconImage, obj6);
+      const items = [closure_1_14(user(callback[33]).Text, obj5), ];
+      const tmp8Result = guildPremiumTier(callback[32]);
+      items[1] = closure_1_14(user(callback[34]).BaseIconImage, { source: guildPremiumTier(callback[35]), size: "xs" });
       obj4[1] = items;
-      obj3[1] = outer1_15(guildPremiumTier(callback[32]), obj4);
+      obj3[1] = closure_1_15(tmp8Result, obj4);
       if (null != maxSettingsForPreset2) {
         const intl6 = tmp2(tmp3[28]).intl;
         str = intl6.formatToPlainString(tmp8(tmp3[29]).q4gYBi, maxSettingsForPreset2);
@@ -233,7 +230,7 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
       obj1[lib.PRESET_MOBILE_HIGH_QUALITY] = obj3;
       const merged = Object.assign(obj1[value]);
       const merged1 = Object.assign(obj);
-      return outer1_14(user(callback[43]).TableRadioRow, {}, value);
+      return closure_1_14(user(callback[43]).TableRadioRow, {}, value);
     });
     obj3[2] = callback(tmp(tmp2[40]).TableRadioGroup, obj4);
     obj2[1] = callback(tmp(tmp2[39]).TableRowGroup, obj3);
@@ -243,7 +240,7 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
       let obj5 = { style: null, children: null };
       obj5[0] = tmp9.section;
       tmp7Result = tmp7(tmp2[32]);
-      let obj6 = { featureName: null, shouldShow: null };
+      const obj6 = { featureName: null, shouldShow: null };
       obj6[0] = tmp(tmp2[45]).EntitlementFeatureNames.STREAM_HIGH_QUALITY;
       obj6[1] = sharedValue;
       obj5[1] = tmp18(tmp7(tmp2[44]), obj6);
@@ -322,14 +319,13 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
   }
   preset = tmp10.PRESET_MOBILE_DEFAULT;
 });
-let result = require("ApplicationStreamPresets").fileFinishedImporting("modules/go_live/native/MobileGoLiveActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/go_live/native/MobileGoLiveActionSheet.tsx");
 
 export default memoResult;
 export const showMobileGoLiveActionSheet = function showMobileGoLiveActionSheet(closure_1) {
-  let obj = importDefault(4342);
-  obj = { impressionName: null, impressionProperties: null };
-  obj[0] = require(503) /* encodeProperties */.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET;
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
+  obj = { impressionName: encodeProperties.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET, impressionProperties: null };
   obj = { location_stack: closure_1 };
   obj[1] = obj;
-  obj.openLazy(require(2007) /* asyncRequireImpl */(10932, dependencyMap.paths), MobileGoLiveActionSheet, obj);
+  obj.openLazy(asyncRequireImpl(10971, dependencyMap.paths), MobileGoLiveActionSheet, obj);
 };

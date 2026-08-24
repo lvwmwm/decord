@@ -1,32 +1,36 @@
-// Module ID: 4307
-// Function ID: 4308
+// Module ID: 4311
+// Function ID: 4312
 // Name: getCustomThemesName
-// Dependencies: [1302, 4308, 1346, 1348, 1236, 2533, 1349, 4309, 589, 1367, 2]
+// Dependencies: [1302, 4312, 1346, 1348, 1236, 2534, 1349, 4313, 589, 1367, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, useAllMobileThemes, useCustomBackgroundGradient, usePerModeCustomBackgroundGradient, useSavedCustomTheme
 
-// Module 4307 (getCustomThemesName)
-import handleThemeChange from "handleThemeChange";
-import validateSavedTheme from "validateSavedTheme";
-import reset from "reset";
-import ThemeTypes from "ThemeTypes";
+// Module 4311 (getCustomThemesName)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ClientThemeType from "ClientThemeType" /* 1349 */;
+import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import messagesProxyDefault from "messagesProxy" /* 2534 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4313 */;
+import closure_3 from "handleThemeChange" /* 1302 */;
+import closure_4 from "validateSavedTheme" /* 4312 */;
+import closure_5 from "reset" /* 1346 */;
+import ThemeTypes from "ThemeTypes" /* 1348 */;
 
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function getCustomThemesName() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  return intl.string(importDefault(2533).yl1iMm);
+  const intl = getSystemLocale.intl;
+  return intl.string(messagesProxyDefault.yl1iMm);
 }
-({ BACKGROUND_GRADIENT_PRESETS_MOBILE: closure_6, LEGACY_STANDARD_BACKGROUND_THEMES: error, REFRESH_STANDARD_BACKGROUND_THEMES: metroImportAll } = ThemeTypes);
-const result = require("reset").fileFinishedImporting("modules/client_themes/native/MobileThemesUtils.tsx");
+({ BACKGROUND_GRADIENT_PRESETS_MOBILE: closure_6, LEGACY_STANDARD_BACKGROUND_THEMES: error, REFRESH_STANDARD_BACKGROUND_THEMES: closure_8 } = ThemeTypes);
+const result = require("set").fileFinishedImporting("modules/client_themes/native/MobileThemesUtils.tsx");
 
 export const getCustomBackgroundGradient = function getCustomBackgroundGradient() {
   const customThemeDisplaySettings = store.getCustomThemeDisplaySettings();
   let tmp2 = null;
   if (undefined !== customThemeDisplaySettings) {
     const obj = { type: null, getName: null, theme: null, customThemeSettings: null };
-    obj[0] = require(1349) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
+    obj[0] = ClientThemeType.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
     obj[1] = getCustomThemesName;
     ({ baseTheme: obj[2], customTheme: obj[3] } = customThemeDisplaySettings);
     tmp2 = obj;
@@ -34,12 +38,12 @@ export const getCustomBackgroundGradient = function getCustomBackgroundGradient(
   return tmp2;
 };
 export const useCustomBackgroundGradient = function useCustomBackgroundGradient(base_theme) {
-  let obj = require(4309) /* useCustomThemeDisplaySettings */;
+  let obj = useCustomThemeDisplaySettings;
   const customThemeDisplaySettings = obj.useCustomThemeDisplaySettings(base_theme);
   let tmp4 = null;
   if (undefined !== customThemeDisplaySettings) {
     obj = { type: null, getName: null, theme: null, customThemeSettings: null };
-    obj[0] = require(1349) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
+    obj[0] = ClientThemeType.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
     obj[1] = getCustomThemesName;
     ({ baseTheme: obj2[2], customTheme: obj2[3] } = customThemeDisplaySettings);
     tmp4 = obj;
@@ -48,12 +52,12 @@ export const useCustomBackgroundGradient = function useCustomBackgroundGradient(
 };
 export const usePerModeCustomBackgroundGradient = function usePerModeCustomBackgroundGradient(arg0) {
   const _require = arg0;
-  const items = [handleThemeChange];
+  const items = [closure_3];
   return _require(589).useStateFromStores(items, () => {
     if (null == mode) {
       return null;
     } else {
-      const syncedClientTheme = outer1_3.getSyncedClientTheme(tmp);
+      const syncedClientTheme = closure_1_3.getSyncedClientTheme(tmp);
       let prop;
       if (syncedClientTheme != null) {
         prop = syncedClientTheme.customUserThemeSettings;
@@ -63,9 +67,9 @@ export const usePerModeCustomBackgroundGradient = function usePerModeCustomBackg
         tmp3 = null;
         if (0 !== prop.colors.length) {
           const obj = { type: null, getName: null, theme: null, customThemeSettings: null };
-          obj[0] = mode(outer1_2[6]).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
-          obj[1] = outer1_9;
-          obj[2] = outer1_3.themePreferenceForSystemTheme(tmp);
+          obj[0] = mode(closure_1_2[6]).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
+          obj[1] = closure_1_9;
+          obj[2] = closure_1_3.themePreferenceForSystemTheme(tmp);
           obj[3] = prop;
           tmp3 = obj;
         }
@@ -79,12 +83,12 @@ export const getAllMobileThemes = function getAllMobileThemes() {
   let tmp2 = null;
   if (undefined !== customThemeDisplaySettings) {
     const obj = { type: null, getName: null, theme: null, customThemeSettings: null };
-    obj[0] = require(1349) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
+    obj[0] = ClientThemeType.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
     obj[1] = getCustomThemesName;
     ({ baseTheme: obj[2], customTheme: obj[3] } = customThemeDisplaySettings);
     tmp2 = obj;
   }
-  const tmp6 = require(1367) /* useIsMobileVisualRefreshExperimentEnabled */.isMobileVisualRefreshEnabled("MobileThemesUtils") ? closure_8 : closure_7;
+  const tmp6 = useIsMobileVisualRefreshExperimentEnabled.isMobileVisualRefreshEnabled("MobileThemesUtils") ? closure_8 : closure_7;
   if (null != tmp2) {
     const items = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(tmp6, 0);
@@ -99,13 +103,13 @@ export const getAllMobileThemes = function getAllMobileThemes() {
 };
 export const useAllMobileThemes = function useAllMobileThemes(mode) {
   let obj = _require(589);
-  const items = [validateSavedTheme];
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => savedCustomTheme.getSavedCustomTheme());
   let tmp4 = null;
   if (null != stateFromStores) {
     tmp4 = stateFromStores;
   }
-  let tmpResult = tmp(4309);
+  let tmpResult = tmp(4313);
   const customThemeDisplaySettings = tmpResult.useCustomThemeDisplaySettings(tmp4);
   let stateFromStores1 = null;
   if (undefined !== customThemeDisplaySettings) {
@@ -117,13 +121,13 @@ export const useAllMobileThemes = function useAllMobileThemes(mode) {
   }
   _require = mode;
   tmpResult = tmp(589);
-  const items1 = [handleThemeChange];
+  const items1 = [closure_3];
   if (null != mode) {
     stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
       if (null == mode) {
         return null;
       } else {
-        const syncedClientTheme = outer1_3.getSyncedClientTheme(tmp);
+        const syncedClientTheme = closure_1_3.getSyncedClientTheme(tmp);
         let prop;
         if (syncedClientTheme != null) {
           prop = syncedClientTheme.customUserThemeSettings;
@@ -133,9 +137,9 @@ export const useAllMobileThemes = function useAllMobileThemes(mode) {
           tmp3 = null;
           if (0 !== prop.colors.length) {
             const obj = { type: null, getName: null, theme: null, customThemeSettings: null };
-            obj[0] = mode(outer1_2[6]).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
-            obj[1] = outer1_9;
-            obj[2] = outer1_3.themePreferenceForSystemTheme(tmp);
+            obj[0] = mode(closure_1_2[6]).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
+            obj[1] = closure_1_9;
+            obj[2] = closure_1_3.themePreferenceForSystemTheme(tmp);
             obj[3] = prop;
             tmp3 = obj;
           }
@@ -144,7 +148,7 @@ export const useAllMobileThemes = function useAllMobileThemes(mode) {
       }
     });
   }
-  const tmp8 = importDefault(1367)("MobileThemesUtils") ? closure_8 : closure_7;
+  const tmp8 = useIsMobileVisualRefreshExperimentEnabledDefault("MobileThemesUtils") ? closure_8 : closure_7;
   if (null != stateFromStores1) {
     const items2 = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(tmp8, 0);
@@ -158,8 +162,8 @@ export const useAllMobileThemes = function useAllMobileThemes(mode) {
   return items3;
 };
 export const useSavedCustomTheme = function useSavedCustomTheme() {
-  const items = [validateSavedTheme];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => savedCustomTheme.getSavedCustomTheme());
+  const items = [closure_4];
+  const stateFromStores = initialize.useStateFromStores(items, () => savedCustomTheme.getSavedCustomTheme());
   let tmp2 = null;
   if (null != stateFromStores) {
     tmp2 = stateFromStores;

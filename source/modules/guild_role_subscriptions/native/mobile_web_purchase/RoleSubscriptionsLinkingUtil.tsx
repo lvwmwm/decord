@@ -1,15 +1,13 @@
-// Module ID: 7278
-// Function ID: 7279
+// Module ID: 7316
+// Function ID: 7317
 // Name: performRoleSubscriptionUpsellRedirect
-// Dependencies: [5, 676, 1398, 7279, 2007, 3, 2]
+// Dependencies: [5, 676, 1398, 7317, 2008, 3, 2]
 
-// Module 7278 (performRoleSubscriptionUpsellRedirect)
-import timestamp from "timestamp";
-import ME from "ME";
-import { StaticChannelRoute } from "set";
+// Module 7316 (performRoleSubscriptionUpsellRedirect)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import ME from "ME" /* 676 */;
+import { StaticChannelRoute } from "set" /* 1398 */;
 
-let c4;
-let c5;
 const require = arg1;
 function performRoleSubscriptionUpsellRedirect(guildId) {
   const self = this;
@@ -24,10 +22,10 @@ function performRoleSubscriptionUpsellRedirect(guildId) {
 function _performRoleSubscriptionUpsellRedirect() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (constants === 2) {
         constants = 3;
@@ -40,7 +38,7 @@ function _performRoleSubscriptionUpsellRedirect() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -60,16 +58,16 @@ function _performRoleSubscriptionUpsellRedirect() {
               let callback;
               lib = undefined;
               callback = c5.CHANNEL(callback, constants.ROLE_SUBSCRIPTIONS);
-              let c4 = 1;
+              c4 = 1;
               c5 = 2;
               constants = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = callback(outer1_2[4])(outer1_2[3], outer1_2.paths);
+              obj1 = { value: null, done: false };
+              obj1[0] = callback(closure_1_2[4])(closure_1_2[3], closure_1_2.paths);
               return obj1;
             }
           } else if (1 === tmp8) {
             c4 = 0;
-            table = timestamp;
+            table = closure_3;
             let obj3 = new lib(table[5])("RoleSubscriptionsLinkingUtil");
             obj3.error("Could not perform handoff", table);
             constants = 3;
@@ -107,7 +105,7 @@ function _performRoleSubscriptionUpsellRedirect() {
             return { value: true, done: true };
           }
         } catch (tmp23) {
-          timestamp = tmp23;
+          closure_3 = tmp23;
           if (tmp4 === c4) {
             constants = tmp2;
             throw tmp23;
@@ -118,7 +116,7 @@ function _performRoleSubscriptionUpsellRedirect() {
       }
     })();
   });
-  const _performRoleSubscriptionUpsellRedirect = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -141,7 +139,7 @@ function _performRoleSubscriptionTeamCreationRedirect() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -158,8 +156,8 @@ function _performRoleSubscriptionTeamCreationRedirect() {
           } else {
             c1 = 1;
             c0 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_11(outer1_4.DEVELOPER_PORTAL_TEAMS);
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_11(closure_1_4.DEVELOPER_PORTAL_TEAMS);
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -172,7 +170,7 @@ function _performRoleSubscriptionTeamCreationRedirect() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = tmp;
@@ -180,7 +178,7 @@ function _performRoleSubscriptionTeamCreationRedirect() {
       }
     }
   });
-  const _performRoleSubscriptionTeamCreationRedirect = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -192,9 +190,9 @@ function _performRoleSubscriptionTeamCreationRedirect() {
 function _performRoleSubscriptionEditPayoutRedirect() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -207,7 +205,7 @@ function _performRoleSubscriptionEditPayoutRedirect() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -224,8 +222,8 @@ function _performRoleSubscriptionEditPayoutRedirect() {
             } else {
               c2 = 1;
               c1 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_11(outer1_4.DEVELOPER_PORTAL_EDIT_PAYOUTS(closure_0));
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_11(closure_1_4.DEVELOPER_PORTAL_EDIT_PAYOUTS(closure_0));
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -238,7 +236,7 @@ function _performRoleSubscriptionEditPayoutRedirect() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c1 = tmp;
@@ -247,7 +245,7 @@ function _performRoleSubscriptionEditPayoutRedirect() {
       }
     })();
   });
-  const _performRoleSubscriptionEditPayoutRedirect = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -269,10 +267,10 @@ function performDeveloperPortalRedirectWithTokenHandoff() {
 function _performDeveloperPortalRedirectWithTokenHandoff() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c6 === 2) {
         c6 = 3;
@@ -285,7 +283,7 @@ function _performDeveloperPortalRedirectWithTokenHandoff() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -303,16 +301,16 @@ function _performDeveloperPortalRedirectWithTokenHandoff() {
               let table = tmp3;
               let lib = tmp7;
               lib = undefined;
-              let c4 = 1;
+              c4 = 1;
               c5 = 2;
               c6 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = callback(outer1_2[4])(outer1_2[3], outer1_2.paths);
+              obj1 = { value: null, done: false };
+              obj1[0] = callback(closure_1_2[4])(closure_1_2[3], closure_1_2.paths);
               return obj1;
             }
           } else if (1 === tmp7) {
             c4 = 0;
-            table = timestamp;
+            table = closure_3;
             let obj3 = new lib(table[5])("RoleSubscriptionsLinkingUtil");
             obj3.error("Could not perform handoff for the developer portal", table);
             c6 = 3;
@@ -350,7 +348,7 @@ function _performDeveloperPortalRedirectWithTokenHandoff() {
             return { value: true, done: true };
           }
         } catch (tmp27) {
-          timestamp = tmp27;
+          closure_3 = tmp27;
           if (tmp4 === c4) {
             c6 = tmp2;
             throw tmp27;
@@ -361,7 +359,7 @@ function _performDeveloperPortalRedirectWithTokenHandoff() {
       }
     })();
   });
-  const _performDeveloperPortalRedirectWithTokenHandoff = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);

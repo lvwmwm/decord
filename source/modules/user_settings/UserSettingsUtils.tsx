@@ -5,23 +5,26 @@
 // Exports: b64ToPreloadedUserSettingsProto, b64ToProtoWithType, mergeTopLevelFields, mutateUserChannelSettings, mutateUserChannelSettingsInternal, mutateUserGuildSettings, mutateUserGuildSettingsInternal, protoToB64, protoToB64WithType, runMigrations, serializeUsageHistory
 
 // Module 1342 (b64ToProto)
-import _slicedToArray from "_slicedToArray";
-import { ZERO_STRING_GUILD_ID } from "ME";
+import applyDefault from "apply" /* 12 */;
+import create from "create" /* 1306 */;
+import _mod1307 from "module_1307" /* 1307 */;
+import create2 from "create" /* 1335 */;
+import create3 from "create" /* 1341 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import { ZERO_STRING_GUILD_ID } from "ME" /* 676 */;
 
-let FRECENCY_AND_FAVORITES_SETTINGS;
-let PRELOADED_USER_SETTINGS;
-const require = arg1;
+require = arg1;
 function b64ToProto(ProtoClass, settings) {
   if (null == settings) {
     return null;
   } else {
-    require(1307);
+    _mod1307;
     try {
       return ProtoClass.fromBinary(tmp4, obj);
     } catch (tmp7) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
-      const error = new Error("Settings proto failed to deserialize (potentially corrupt): " + tmp7);
+      error = new Error("Settings proto failed to deserialize (potentially corrupt): " + tmp7);
       throw error;
     }
   }
@@ -29,13 +32,13 @@ function b64ToProto(ProtoClass, settings) {
 let obj = {
   readerFactory(buf) {
     const textDecoder = new TextDecoder("utf-8");
-    const binaryReader = new require(1307).BinaryReader(buf, textDecoder);
+    const binaryReader = new _mod1307.BinaryReader(buf, textDecoder);
     return binaryReader;
   }
 };
 obj = { [PRELOADED_USER_SETTINGS]: require("create").PreloadedUserSettings, [FRECENCY_AND_FAVORITES_SETTINGS]: require("create").FrecencyUserSettings };
 ({ PRELOADED_USER_SETTINGS, FRECENCY_AND_FAVORITES_SETTINGS } = require("MAX_FAVORITES").UserSettingsTypes);
-const result = require("ME").fileFinishedImporting("modules/user_settings/UserSettingsUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/UserSettingsUtils.tsx");
 
 export const BINARY_READ_OPTIONS = obj;
 export const b64ToProtoWithType = function b64ToProtoWithType(type, proto) {
@@ -51,16 +54,16 @@ export const b64ToProtoWithType = function b64ToProtoWithType(type, proto) {
 };
 export { b64ToProto };
 export const b64ToPreloadedUserSettingsProto = function b64ToPreloadedUserSettingsProto(settings) {
-  return b64ToProto(require(1306) /* create */.PreloadedUserSettings, settings);
+  return b64ToProto(create.PreloadedUserSettings, settings);
 };
 export const protoToB64WithType = function protoToB64WithType(arg0, favoriteGifs) {
-  return require(1307).base64encode(obj[arg0].toBinary(favoriteGifs));
+  return _mod1307.base64encode(obj[arg0].toBinary(favoriteGifs));
 };
 export const protoToB64 = function protoToB64(ProtoClass, protoToSave) {
-  return require(1307).base64encode(ProtoClass.toBinary(protoToSave));
+  return _mod1307.base64encode(ProtoClass.toBinary(protoToSave));
 };
 export const mergeTopLevelFields = function mergeTopLevelFields(ProtoClass, proto, proto2) {
-  const obj = {};
+  obj = {};
   const merged = Object.assign(proto);
   for (const key10007 in arg2) {
     let tmp5 = key10007;
@@ -72,7 +75,7 @@ export const mergeTopLevelFields = function mergeTopLevelFields(ProtoClass, prot
 };
 export const mutateUserGuildSettings = function mutateUserGuildSettings(guilds) {
   if (null == guilds.guilds) {
-    const AllGuildSettings = require(1306) /* create */.AllGuildSettings;
+    const AllGuildSettings = create.AllGuildSettings;
     guilds.guilds = AllGuildSettings.create();
   }
   let tmp3 = arg1;
@@ -85,12 +88,12 @@ export const mutateUserGuildSettings = function mutateUserGuildSettings(guilds) 
     tmp3 = ZERO_STRING_GUILD_ID;
   }
   if (!(tmp3 in guilds.guilds)) {
-    const GuildSettings = require(1306) /* create */.GuildSettings;
+    const GuildSettings = create.GuildSettings;
     guilds.guilds[tmp3] = GuildSettings.create();
   }
   return arg2(guilds.guilds[tmp3]);
 };
-export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsInternal(guilds, closure_0, f70184) {
+export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsInternal(guilds, closure_0, f70740) {
   let tmp = closure_0;
   let tmp2 = null != closure_0;
   if (tmp2) {
@@ -100,14 +103,14 @@ export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsI
     tmp = ZERO_STRING_GUILD_ID;
   }
   if (!(tmp in guilds.guilds)) {
-    const GuildSettings = require(1306) /* create */.GuildSettings;
+    const GuildSettings = create.GuildSettings;
     guilds.guilds[tmp] = GuildSettings.create();
   }
-  return f70184(guilds.guilds[tmp]);
+  return f70740(guilds.guilds[tmp]);
 };
 export const mutateUserChannelSettings = function mutateUserChannelSettings(guilds, arg1, id, arg3) {
   if (null == guilds.guilds) {
-    const AllGuildSettings = require(1306) /* create */.AllGuildSettings;
+    const AllGuildSettings = create.AllGuildSettings;
     guilds.guilds = AllGuildSettings.create();
   }
   let tmp3 = arg1;
@@ -120,25 +123,25 @@ export const mutateUserChannelSettings = function mutateUserChannelSettings(guil
     tmp3 = ZERO_STRING_GUILD_ID;
   }
   if (!(tmp3 in guilds.guilds)) {
-    const GuildSettings = require(1306) /* create */.GuildSettings;
+    const GuildSettings = create.GuildSettings;
     guilds.guilds[tmp3] = GuildSettings.create();
   }
   if (!(id in guilds.guilds[tmp3].channels)) {
-    const ChannelSettings = require(1306) /* create */.ChannelSettings;
+    const ChannelSettings = create.ChannelSettings;
     tmp7.channels[id] = ChannelSettings.create();
   }
   return arg3(guilds.guilds[tmp3].channels[id]);
 };
-export const mutateUserChannelSettingsInternal = function mutateUserChannelSettingsInternal(channels, closure_0, f70184) {
+export const mutateUserChannelSettingsInternal = function mutateUserChannelSettingsInternal(channels, closure_0, f70740) {
   if (!(closure_0 in channels.channels)) {
-    const ChannelSettings = require(1306) /* create */.ChannelSettings;
+    const ChannelSettings = create.ChannelSettings;
     channels.channels[closure_0] = ChannelSettings.create();
   }
-  return f70184(channels.channels[closure_0]);
+  return f70740(channels.channels[closure_0]);
 };
 export const runMigrations = function runMigrations(closure_1, closure_2) {
   if (null == closure_1.versions) {
-    const Versions = require(1335) /* create */.Versions;
+    const Versions = create2.Versions;
     closure_1.versions = Versions.create();
   }
   let num = 0;
@@ -162,7 +165,7 @@ export const runMigrations = function runMigrations(closure_1, closure_2) {
   const iter2 = closure_2[Symbol.iterator]();
   const nextResult1 = iter2.next();
   while (iter2 !== undefined) {
-    let obj = nextResult1;
+    obj = nextResult1;
     if (nextResult1.version <= closure_1.versions.clientVersion) {
       if (tmp8) {
         let tmp16 = nextResult1;
@@ -196,13 +199,11 @@ export const runMigrations = function runMigrations(closure_1, closure_2) {
 };
 export const serializeUsageHistory = function serializeUsageHistory(usageHistory, closure_13) {
   let length;
-  let recentUses;
   const entries = Object.entries(usageHistory);
   let tmp = entries;
   if (entries.length > closure_13) {
-    let obj = importDefault(12);
+    obj = applyDefault;
     const reversed = obj.sortBy(entries, (arg0) => {
-      let tmp;
       [, tmp] = arg0;
       return tmp.recentUses[tmp.recentUses.length - 1];
     }).reverse();
@@ -215,7 +216,6 @@ export const serializeUsageHistory = function serializeUsageHistory(usageHistory
       } while (length > closure_13);
     }
     const sortByResult = obj.sortBy(entries, (arg0) => {
-      let tmp;
       [, tmp] = arg0;
       return tmp.recentUses[tmp.recentUses.length - 1];
     });
@@ -227,7 +227,7 @@ export const serializeUsageHistory = function serializeUsageHistory(usageHistory
     let tmp9 = tmp8[1];
     let tmp10 = require;
     let tmp11 = dependencyMap;
-    let FrecencyItem = require(1341) /* create */.FrecencyItem;
+    let FrecencyItem = create3.FrecencyItem;
     obj = FrecencyItem.create();
     ({ frecency: tmp12.frecency, recentUses } = tmp9);
     let found = recentUses.filter((arg0) => {

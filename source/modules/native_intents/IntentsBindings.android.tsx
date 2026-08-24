@@ -1,10 +1,12 @@
-// Module ID: 17081
-// Function ID: 17082
+// Module ID: 17174
+// Function ID: 17175
 // Name: set
 // Dependencies: [2]
 
-// Module 17081 (set)
-const result = require("set").fileFinishedImporting("modules/native_intents/IntentsBindings.android.tsx");
+// Module 17174 (set)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/native_intents/IntentsBindings.android.tsx");
 
 export default {
   hasSearch() {

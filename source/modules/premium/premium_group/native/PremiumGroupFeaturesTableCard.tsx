@@ -1,20 +1,25 @@
-// Module ID: 12916
-// Function ID: 12917
+// Module ID: 12971
+// Function ID: 12972
 // Name: BetaPill
-// Dependencies: [17, 7403, 21, 4661, 712, 4734, 1236, 12917, 1297, 4756, 4223, 9329, 2]
+// Dependencies: [17, 7441, 21, 4668, 712, 4739, 1236, 12972, 1297, 4761, 4227, 9366, 2]
 // Exports: default
 
-// Module 12916 (BetaPill)
-import { View } from "get ActivityIndicator";
-import { Gradients } from "items";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12971 (BetaPill)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
+import Text from "Text" /* 4739 */;
+import items3 from "items" /* 7441 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 12972 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 class BetaPill {
   constructor() {
-    tmp = jsxs();
+    tmp = closure_7();
     obj = { style: tmp.betaPill, children: null };
     obj = { variant: "text-xs/bold", style: tmp.betaText, children: null };
     intl = require("getSystemLocale").intl;
@@ -23,67 +28,65 @@ class BetaPill {
     return jsx(View, obj);
   }
 }
+const View = get_ActivityIndicator.View;
+const Gradients = items3.Gradients;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { premiumGroupCard: null, headerContainer: null, betaPill: null, betaText: null, title: null, description: null };
-obj = { padding: 16, borderRadius: require("Themes").radii.sm - 2, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "flex-start" };
+obj = { padding: 16, borderRadius: ThemesDefault.radii.sm - 2, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "flex-start" };
 obj[0] = obj;
 obj[1] = { display: "flex", flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 };
-obj[2] = { backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingBottom: 2 };
-let obj1 = { backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingBottom: 2 };
-obj[3] = { color: require("Themes").colors.BLACK, textAlign: "center", textTransform: "uppercase" };
-let obj2 = { color: require("Themes").colors.BLACK, textAlign: "center", textTransform: "uppercase" };
-obj[4] = { color: require("Themes").colors.TEXT_DEFAULT, marginBottom: 16 };
-const obj3 = { color: require("Themes").colors.TEXT_DEFAULT, marginBottom: 16 };
-obj[5] = { color: require("Themes").colors.TEXT_DEFAULT };
+obj[2] = { backgroundColor: ThemesDefault.colors.WHITE, borderRadius: ThemesDefault.radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingBottom: 2 };
+let obj1 = { backgroundColor: ThemesDefault.colors.WHITE, borderRadius: ThemesDefault.radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingBottom: 2 };
+obj[3] = { color: ThemesDefault.colors.BLACK, textAlign: "center", textTransform: "uppercase" };
+let obj2 = { color: ThemesDefault.colors.BLACK, textAlign: "center", textTransform: "uppercase" };
+obj[4] = { color: ThemesDefault.colors.TEXT_DEFAULT, marginBottom: 16 };
+const obj3 = { color: ThemesDefault.colors.TEXT_DEFAULT, marginBottom: 16 };
+obj[5] = { color: ThemesDefault.colors.TEXT_DEFAULT };
 let closure_7 = createCacheKey.createStyles(obj);
-let obj4 = { color: require("Themes").colors.TEXT_DEFAULT };
-const result = require("jsxProd").fileFinishedImporting("modules/premium/premium_group/native/PremiumGroupFeaturesTableCard.tsx");
+let obj4 = { color: ThemesDefault.colors.TEXT_DEFAULT };
+const result = set.fileFinishedImporting("modules/premium/premium_group/native/PremiumGroupFeaturesTableCard.tsx");
 
 export default function PremiumGroupFeaturesTableCard(arg0) {
-  let bodyString;
-  let premiumGroupRole;
-  let style;
-  let subheaderString;
   ({ style, premiumGroupRole } = arg0);
   const tmp = callback3();
-  const tmp4 = importDefault(12917)(premiumGroupRole, false);
+  const tmp4 = usePremiumGroupFeaturesTableCardTextDefault(premiumGroupRole, false);
   if (null == tmp4) {
     return null;
   } else {
     ({ subheaderString, bodyString } = tmp4);
     let obj = { borderWidth: 2, direction: null, colors: null, borderRadius: null, style: null, children: null };
-    obj[1] = require(1297) /* Button */.GradientBorder.Direction.HORIZONTAL;
+    obj[1] = Button.GradientBorder.Direction.HORIZONTAL;
     obj[2] = Gradients.PREMIUM_TIER_2;
     obj[3] = tmp2(712).radii.sm;
     obj[4] = style;
     obj = { start: null, end: null, colors: null, locations: null, style: null, children: null };
     obj[0] = { x: 0, y: 0 };
     obj[1] = { x: 1, y: 0 };
-    let obj2 = require(4223) /* hexToRgba */;
+    let obj2 = hexToRgba;
     const items = [obj2.hexWithOpacity("#8547C6", 0.15), , ];
-    const tmp2Result = tmp2(4756);
-    items[1] = require(4223) /* hexToRgba */.hexWithOpacity("#B845C1", 0.15);
-    const obj4 = require(4223) /* hexToRgba */;
-    items[2] = require(4223) /* hexToRgba */.hexWithOpacity("#AB5D8A", 0.15);
+    const tmp2Result = tmp2(4761);
+    items[1] = hexToRgba.hexWithOpacity("#B845C1", 0.15);
+    const obj4 = hexToRgba;
+    items[2] = hexToRgba.hexWithOpacity("#AB5D8A", 0.15);
     obj[2] = items;
     obj[3] = [0, 0.4996, 0.9593];
     obj[4] = tmp.premiumGroupCard;
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
-    const items1 = [callback(tmp2(9329), { width: 181, height: 16 }), callback(BetaPill, {})];
+    const items1 = [callback(tmp2(9366), { width: 181, height: 16 }), callback(BetaPill, {})];
     obj[1] = items1;
     const items2 = [callback2(View, obj), , ];
-    const obj1 = { variant: "text-sm/normal", style: null, children: null };
+    obj1 = { variant: "text-sm/normal", style: null, children: null };
     obj1[1] = tmp.title;
     obj1[2] = subheaderString;
-    items2[1] = callback(require(4734) /* Text */.Text, obj1);
+    items2[1] = callback(Text.Text, obj1);
     obj2 = { variant: "text-sm/normal", style: null, children: null };
     obj2[1] = tmp.description;
     obj2[2] = bodyString;
-    items2[2] = callback(require(4734) /* Text */.Text, obj2);
+    items2[2] = callback(Text.Text, obj2);
     obj[5] = items2;
     obj[5] = callback2(tmp2Result, obj);
-    return callback(require(1297) /* Button */.GradientBorder, obj);
+    return callback(Button.GradientBorder, obj);
   }
 };
 export { BetaPill };

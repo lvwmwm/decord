@@ -1,20 +1,22 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 14164
+// Function ID: 14165
 // Name: KeyImage
-// Dependencies: [17, 21, 4661, 14097, 2]
+// Dependencies: [17, 21, 4668, 14165, 2]
 // Exports: KeyImage
 
-// Module 14096 (KeyImage)
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14164 (KeyImage)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import registerAssetDefault from "registerAsset" /* 14165 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+const Image = get_ActivityIndicator.Image;
+const jsx = jsxProd.jsx;
 let closure_4 = createCacheKey.createStyles({ icon: { width: 128, height: 128, marginBottom: 8 } });
-const result = require("createCacheKey").fileFinishedImporting("modules/mfa/native/components/KeyImage.tsx");
+const result = set.fileFinishedImporting("modules/mfa/native/components/KeyImage.tsx");
 
 export const KeyImage = function KeyImage() {
-  const obj = { source: null, style: null };
-  obj[0] = importDefault(14097);
-  obj[1] = callback().icon;
-  return <Image source={null} style={null} />;
+  const obj = { source: registerAssetDefault, style: callback().icon };
+  return <Image source={registerAssetDefault} style={callback().icon} />;
 };

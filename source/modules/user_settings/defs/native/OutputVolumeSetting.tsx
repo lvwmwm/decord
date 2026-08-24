@@ -1,37 +1,41 @@
-// Module ID: 14597
-// Function ID: 14598
+// Module ID: 14665
+// Function ID: 14666
 // Name: volumeSlider
-// Dependencies: [4497, 8198, 589, 10669, 1236, 9654, 12136, 2]
+// Dependencies: [4501, 8238, 589, 10708, 1236, 9693, 12188, 2]
 
-// Module 14597 (volumeSlider)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createToggle from "createToggle";
+// Module 14665 (volumeSlider)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9693 */;
+import apexExperimentDefault from "apexExperiment" /* 12188 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.xPHVBs);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.xPHVBs);
   },
   parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   maximum: 200,
   useValue: function useOutputVolumeSettingValue() {
-    const items = [_detectH265HardwareDecode];
-    return require(589) /* initialize */.useStateFromStores(items, () => outputVolume.getOutputVolume());
+    const items = [closure_3];
+    return initialize.useStateFromStores(items, () => outputVolume.getOutputVolume());
   },
-  onValueChange: require("trackDeviceChanged").setOutputVolume,
+  onValueChange: trackDeviceChangedDefault.setOutputVolume,
   useSearchTerms() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1236) /* getSystemLocale */.t["3182VD"]), ];
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    items[1] = intl2.string(require(1236) /* getSystemLocale */.t["DGq/PR"]);
+    const intl = getSystemLocale.intl;
+    const items = [intl.string(getSystemLocale.t["3182VD"]), ];
+    const intl2 = getSystemLocale.intl;
+    items[1] = intl2.string(getSystemLocale.t["DGq/PR"]);
     return items;
   },
   usePredicate() {
-    return importDefault(12136).useConfig({ location: "OutputVolumeSetting" }).audioOutputPresent;
+    return apexExperimentDefault.useConfig({ location: "OutputVolumeSetting" }).audioOutputPresent;
   }
 };
 createToggle = createToggle.createVolumeSlider(createToggle);
-const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/OutputVolumeSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/OutputVolumeSetting.tsx");
 
 export default createToggle;

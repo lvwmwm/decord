@@ -1,15 +1,22 @@
-// Module ID: 17090
-// Function ID: 17091
+// Module ID: 17183
+// Function ID: 17184
 // Name: fetchAndUpdateTask
-// Dependencies: [5, 19, 1922, 17084, 17086, 5260, 17085, 4094, 8764, 1236, 2597, 1500, 17089, 2]
+// Dependencies: [5, 19, 1922, 17177, 17179, 5265, 17178, 4097, 8801, 1236, 2598, 1500, 17182, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 17090 (fetchAndUpdateTask)
-import module_5260 from "module_5260";
-import noop from "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 17183 (fetchAndUpdateTask)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2598 */;
+import dispatcherDefault from "dispatcher" /* 4097 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import registerAssetDefault from "registerAsset" /* 8801 */;
+import TaskType from "TaskType" /* 17177 */;
+import SAFETY_FLOWS_MODAL_KEY from "SAFETY_FLOWS_MODAL_KEY" /* 17178 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
+require = arg1;
 function fetchAndUpdateTask() {
   const self = this;
   const apply = _fetchAndUpdateTask.apply;
@@ -23,11 +30,11 @@ function fetchAndUpdateTask() {
 function _fetchAndUpdateTask() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     return (function*(arg0) {
-      let closure_1 = tmp2;
+      closure_1 = tmp2;
       const obj2 = callback(table[4]);
       closure_1 = yield obj2.getCurrentTask();
       if (null != closure_1) {
@@ -36,7 +43,7 @@ function _fetchAndUpdateTask() {
       return closure_1;
     })();
   });
-  const _fetchAndUpdateTask = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -47,20 +54,20 @@ function _fetchAndUpdateTask() {
 }
 function navigateToScreenForTask(closure_1, closure_0) {
   if (null == closure_0) {
-    let obj = importDefault(5260);
-    obj.popWithKey(require(17085) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
+    let obj = _modDef5265;
+    obj.popWithKey(SAFETY_FLOWS_MODAL_KEY.SAFETY_FLOWS_MODAL_KEY);
     obj = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: null, content: null };
-    obj[1] = importDefault(8764);
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl.string(importDefault(2597)["/fHz9S"]);
-    importDefault(4094).open(obj);
+    obj[1] = registerAssetDefault;
+    const intl = getSystemLocale.intl;
+    obj[2] = intl.string(messagesProxyDefault["/fHz9S"]);
+    dispatcherDefault.open(obj);
   } else {
     const task_type = closure_0.task_type;
-    const tmp16 = require(17084) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
+    const tmp16 = TaskType.TASK_TYPE_TO_SCREENS[task_type];
     let tmp5 = null;
     if (null != tmp16) {
       let tmp = tmp16;
-      if (task_type === tmp14(17084).TaskType.EMAIL_VERIFICATION) {
+      if (task_type === tmp14(17177).TaskType.EMAIL_VERIFICATION) {
         const currentUser = authStore.getCurrentUser();
         let email;
         if (currentUser != null) {
@@ -68,7 +75,7 @@ function navigateToScreenForTask(closure_1, closure_0) {
         }
         tmp = tmp16;
         if (null != email) {
-          const items = [tmp14(17084).SafetyFlowScreens.VERIFY_EMAIL];
+          const items = [tmp14(17177).SafetyFlowScreens.VERIFY_EMAIL];
           tmp = items;
         }
       }
@@ -77,18 +84,18 @@ function navigateToScreenForTask(closure_1, closure_0) {
     if (null != tmp5) {
       closure_1.push(tmp5[0]);
     } else {
-      closure_1.push(tmp14(17084).SafetyFlowScreens.UPDATE_APP);
+      closure_1.push(tmp14(17177).SafetyFlowScreens.UPDATE_APP);
     }
   }
 }
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/safety_flows/native/SafetyFlowsUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/safety_flows/native/SafetyFlowsUtils.tsx");
 
 export const getScreensForTaskType = function getScreensForTaskType(task_type) {
-  const tmp3 = require(17084) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
+  const tmp3 = TaskType.TASK_TYPE_TO_SCREENS[task_type];
   let tmp4 = null;
   if (null != tmp3) {
     let tmp5 = tmp3;
-    if (task_type === tmp(17084).TaskType.EMAIL_VERIFICATION) {
+    if (task_type === tmp(17177).TaskType.EMAIL_VERIFICATION) {
       const currentUser = authStore.getCurrentUser();
       let email;
       if (currentUser != null) {
@@ -96,7 +103,7 @@ export const getScreensForTaskType = function getScreensForTaskType(task_type) {
       }
       tmp5 = tmp3;
       if (null != email) {
-        const items = [tmp(17084).SafetyFlowScreens.VERIFY_EMAIL];
+        const items = [tmp(17177).SafetyFlowScreens.VERIFY_EMAIL];
         tmp5 = items;
       }
     }
@@ -115,9 +122,9 @@ export const useOnTaskComplete = function useOnTaskComplete() {
   setTask = safetyFlowTask.setTask;
   _require = undefined;
   _require = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -130,7 +137,7 @@ export const useOnTaskComplete = function useOnTaskComplete() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -145,12 +152,12 @@ export const useOnTaskComplete = function useOnTaskComplete() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_2 = tmp2;
-              let closure_1 = tmp5;
+              closure_2 = tmp2;
+              closure_1 = tmp5;
               let callback;
-              const obj1 = { task_id: null, flow_id: null, data: null };
-              obj1[0] = outer1_1.task_id;
-              obj1[1] = outer1_1.flow_context.flow_id;
+              obj1 = { task_id: null, flow_id: null, data: null };
+              obj1[0] = closure_1_1.task_id;
+              obj1[1] = closure_1_1.flow_context.flow_id;
               obj1[2] = callback;
               c3 = 1;
               c4 = 1;
@@ -171,7 +178,7 @@ export const useOnTaskComplete = function useOnTaskComplete() {
               c3 = 2;
               c4 = 1;
               const obj4 = { value: null, done: false };
-              obj4[0] = outer2_6(outer1_2);
+              obj4[0] = closure_2_6(closure_1_2);
               return obj4;
             }
           } else if (arg0 === 1) {
@@ -184,9 +191,9 @@ export const useOnTaskComplete = function useOnTaskComplete() {
             return obj;
           } else {
             callback = arg1;
-            outer2_8(callback, callback);
+            closure_2_8(callback, callback);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c4 = tmp;

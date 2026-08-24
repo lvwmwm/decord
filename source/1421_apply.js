@@ -4,8 +4,6 @@
 // Dependencies: []
 
 // Module 1421 (apply)
-let call;
-let call2;
 let apply = typeof Reflect === "object";
 if (typeof Reflect === "object") {
   const _Reflect2 = Reflect;
@@ -174,7 +172,7 @@ if (typeof apply === "function") {
         }
         if (tmp5) {
           tmp5 = !/^\[object HTML/.test(tmp4);
-          const obj = /^\[object HTML/;
+          obj = /^\[object HTML/;
         }
         let tmp6 = !tmp5;
         if (!tmp5) {

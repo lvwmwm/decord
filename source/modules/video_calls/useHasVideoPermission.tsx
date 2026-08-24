@@ -1,27 +1,28 @@
-// Module ID: 10930
-// Function ID: 10931
+// Module ID: 10969
+// Function ID: 10970
 // Name: useHasVideoPermission
-// Dependencies: [1910, 4021, 589, 7478, 2]
+// Dependencies: [1910, 4024, 589, 7516, 2]
 // Exports: default, getVideoPermission
 
-// Module 10930 (useHasVideoPermission)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+// Module 10969 (useHasVideoPermission)
+import canStreamInChannel from "canStreamInChannel" /* 7516 */;
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/video_calls/useHasVideoPermission.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/video_calls/useHasVideoPermission.tsx");
 
 export default function useHasVideoPermission(arg0) {
   const _require = arg0;
-  const items = [createGuildRecordFromRust, getUncachedChannelPermissions];
+  const items = [closure_2, closure_3];
   const items1 = [arg0];
   return _require(589).useStateFromStores(items, () => {
     let tmp = null != callback;
     if (tmp) {
       let isPrivateResult = obj.isPrivate();
       if (!isPrivateResult) {
-        const obj2 = callback(outer1_1[3]);
-        isPrivateResult = obj2.canStreamInChannel(obj, outer1_2, outer1_3, false);
+        const obj2 = callback(closure_1_1[3]);
+        isPrivateResult = obj2.canStreamInChannel(obj, closure_1_2, closure_1_3, false);
       }
       tmp = isPrivateResult;
     }
@@ -31,8 +32,8 @@ export default function useHasVideoPermission(arg0) {
 export const getVideoPermission = function getVideoPermission(channel) {
   let isPrivateResult = channel.isPrivate();
   if (!isPrivateResult) {
-    const obj = require(7478) /* canStreamInChannel */;
-    isPrivateResult = obj.canStreamInChannel(channel, createGuildRecordFromRust, getUncachedChannelPermissions, false);
+    const obj = canStreamInChannel;
+    isPrivateResult = obj.canStreamInChannel(channel, closure_2, closure_3, false);
   }
   return isPrivateResult;
 };

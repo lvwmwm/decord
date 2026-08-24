@@ -1,10 +1,11 @@
-// Module ID: 4017
-// Function ID: 4018
+// Module ID: 4020
+// Function ID: 4021
 // Name: version
-// Dependencies: [32, 4018, 2]
+// Dependencies: [32, 4021, 2]
 
-// Module 4017 (version)
-import _slicedToArray from "_slicedToArray";
+// Module 4020 (version)
+import sortedIndexByDefault from "sortedIndexBy" /* 4021 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
 let closure_3 = [];
 let result = require("set").fileFinishedImporting("../discord_common/js/packages/secondary-index-map/SecondaryIndexMap.tsx");
@@ -116,13 +117,11 @@ prototype["get"] = function get(arg0) {
   return valueMap.get(arg0);
 };
 prototype["set"] = function set(arg0, value) {
-  let sortBy;
-  let valueArray;
   let self = this;
   self = this;
-  const dependencyMap = value;
+  dependencyMap = value;
   value = this.get(arg0);
-  const importDefault = value;
+  importDefault = value;
   let tmp2 = null != value || null != value;
   if (tmp2) {
     let flag = null == value || null == value || !self.isEqual(value, value);
@@ -136,7 +135,7 @@ prototype["set"] = function set(arg0, value) {
       }
       ({ valueArray, sortBy } = self);
       if (null != value) {
-        let tmp7 = importDefault(4018)(valueArray, value, sortBy);
+        let tmp7 = sortedIndexByDefault(valueArray, value, sortBy);
         let tmp8 = tmp7;
         if (valueArray[tmp7] !== value) {
           let tmp9 = tmp7;
@@ -156,7 +155,7 @@ prototype["set"] = function set(arg0, value) {
         valueArray.splice(tmp8, 1);
       }
       if (null != value) {
-        valueArray.splice(importDefault(4018)(valueArray, value, sortBy), 0, value);
+        valueArray.splice(sortedIndexByDefault(valueArray, value, sortBy), 0, value);
       }
       if (null != value) {
         const item = self.indexBy(value).forEach((arg0) => {

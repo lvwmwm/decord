@@ -1,20 +1,20 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15559
+// Function ID: 15560
 // Name: FavoritesGuildCoachmarkMenuItemContent
-// Dependencies: [19, 1394, 676, 1388, 21, 9990, 7126, 589, 1236, 3079, 9314, 2]
+// Dependencies: [19, 1394, 676, 1388, 21, 10029, 7164, 589, 1236, 3082, 9351, 2]
 // Exports: default
 
-// Module 15494 (FavoritesGuildCoachmarkMenuItemContent)
-import noop from "noop";
-import initializeFromUserSettings from "initializeFromUserSettings";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { jsx } from "jsxProd";
-import set from "ME";
+// Module 15559 (FavoritesGuildCoachmarkMenuItemContent)
+import Layer from "Layer" /* 7164 */;
+import items12 from "items1" /* 10029 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "initializeFromUserSettings" /* 1394 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { jsx } from "jsxProd" /* 21 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 function FavoritesGuildCoachmarkMenuItemContent(arg0) {
-  let channelType;
-  let targetRef;
   let stateFromStores;
   let shouldShowPopover;
   let markPopoverAsDismissed;
@@ -29,15 +29,15 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   markPopoverAsDismissed = favoritesMenuItemPopoverDismissibleContent.markPopoverAsDismissed;
   const items1 = [markPopoverAsDismissed];
   callback = callback.useCallback(() => {
-    markPopoverAsDismissed(outer1_5.USER_DISMISS);
+    markPopoverAsDismissed(closure_1_5.USER_DISMISS);
   }, items1);
   const items2 = [markPopoverAsDismissed];
   callback1 = callback.useCallback(() => {
-    markPopoverAsDismissed(outer1_5.TAKE_ACTION);
+    markPopoverAsDismissed(closure_1_5.TAKE_ACTION);
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, callback, callback1];
   const memo = callback.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "tokenize must be called with bankDetails or bankLogin.", onButtonPress: "M16 6h-1v6h1V6Z" };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "Contact Sync Suggestions", onButtonPress: "M4 10v4h1v1h3v-1h1v-4H4Z" };
     const intl = stateFromStores(markPopoverAsDismissed[8]).intl;
     const tmp4 = shouldShowPopover(markPopoverAsDismissed[9]);
     if (stateFromStores) {
@@ -64,14 +64,14 @@ let set = new Set(items);
 const result = set.fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkMenuItem.tsx");
 
 export default function FavoritesGuildCoachmarkMenuItem(arg0) {
-  let obj = require(9990) /* items1 */;
+  let obj = items12;
   let tmp3 = null;
   if (obj.useShouldRenderFavoritesMenuItemPopover()) {
     obj = { zIndex: 1, children: null };
     obj = {};
     const merged = Object.assign(arg0);
     obj[1] = <FavoritesGuildCoachmarkMenuItemContent />;
-    tmp3 = jsx(require(7126) /* Layer */.LayerScope, {});
+    tmp3 = jsx(Layer.LayerScope, {});
   }
   return tmp3;
 };

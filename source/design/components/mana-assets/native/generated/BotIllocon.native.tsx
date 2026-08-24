@@ -1,31 +1,31 @@
-// Module ID: 5550
-// Function ID: 5551
+// Module ID: 5557
+// Function ID: 5558
 // Name: BotIllocon
-// Dependencies: [21, 5449, 5551, 2]
+// Dependencies: [21, 5454, 5558, 2]
 // Exports: BotIllocon
 
-// Module 5550 (BotIllocon)
-import { jsx } from "jsxProd";
+// Module 5557 (BotIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5558 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BotIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BotIllocon.native.tsx");
 
 export const BotIllocon = function BotIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5551);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

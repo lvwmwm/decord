@@ -1,16 +1,18 @@
-// Module ID: 10550
-// Function ID: 10551
+// Module ID: 10589
+// Function ID: 10590
 // Name: fetchSummary
-// Dependencies: [5, 19, 4495, 1391, 10551, 676, 687, 709, 530, 4273, 12, 10553, 647, 2]
+// Dependencies: [5, 19, 4499, 1391, 10590, 676, 687, 709, 530, 4277, 12, 10592, 647, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 10550 (fetchSummary)
-import ME from "ME";
-import noop from "noop";
-import _handleConnectionOpen from "_handleConnectionOpen";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleQuickSwitcherUpdate from "handleQuickSwitcherUpdate";
-import { Routes } from "ME";
+// Module 10589 (fetchSummary)
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "_handleConnectionOpen" /* 4499 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "handleQuickSwitcherUpdate" /* 10590 */;
+import { Routes } from "ME" /* 676 */;
 
 const require = arg1;
 function fetchSummary(c1, c4) {
@@ -26,11 +28,11 @@ function fetchSummary(c1, c4) {
 function _fetchSummary() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (c7 === 2) {
         c7 = 3;
@@ -43,7 +45,7 @@ function _fetchSummary() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -68,18 +70,18 @@ function _fetchSummary() {
               if (c7.shouldFetch(callback, timestamp)) {
                 const _Date2 = Date;
                 timestamp = Date.now();
-                let obj3 = callback2(outer1_2[7]);
-                let obj1 = { type: "REQUEST_CHANNEL_SUMMARY", channelId: null, summaryId: null, requestedAt: null };
+                let obj3 = callback2(closure_1_2[7]);
+                obj1 = { type: "REQUEST_CHANNEL_SUMMARY", channelId: null, summaryId: null, requestedAt: null };
                 obj1[1] = tmp47;
                 obj1[2] = tmp48;
                 obj1[3] = timestamp;
                 obj3.dispatch(obj1);
                 aPIError = undefined;
                 body = undefined;
-                let c5 = 1;
-                const HTTP = callback(outer1_2[8]).HTTP;
+                c5 = 1;
+                const HTTP = callback(closure_1_2[8]).HTTP;
                 const obj2 = { url: null, rejectWithError: false };
-                obj2[0] = outer1_8.CHANNEL_SUMMARY(tmp47, tmp48);
+                obj2[0] = closure_1_8.CHANNEL_SUMMARY(tmp47, tmp48);
                 c6 = 2;
                 c7 = 1;
                 obj3 = { value: null, done: false };
@@ -132,7 +134,7 @@ function _fetchSummary() {
       }
     })();
   });
-  const _fetchSummary = tmp;
+  closure_13 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -154,10 +156,10 @@ function fetchSummaries(channelId) {
 function _fetchSummaries() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0) {
       if (c8 === 2) {
         c8 = 3;
@@ -170,7 +172,7 @@ function _fetchSummaries() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -186,25 +188,25 @@ function _fetchSummaries() {
               obj[0] = arg1;
               return obj;
             } else {
-              let noop = tmp3;
+              closure_4 = tmp3;
               let body = dispatchResult1;
               let callback2;
-              let dependencyMap;
+              dependencyMap = undefined;
               body = undefined;
-              noop = undefined;
+              closure_4 = undefined;
               if (c7.shouldFetch(callback)) {
                 const _Date2 = Date;
                 const timestamp = Date.now();
                 callback2 = timestamp;
-                let obj4 = outer1_1(outer1_2[7]);
-                let obj1 = { type: "REQUEST_CHANNEL_SUMMARIES", channelId: null, requestedAt: null };
+                let obj4 = closure_1_1(closure_1_2[7]);
+                obj1 = { type: "REQUEST_CHANNEL_SUMMARIES", channelId: null, requestedAt: null };
                 obj1[1] = tmp55;
                 obj1[2] = timestamp;
                 obj4.dispatch(obj1);
                 dependencyMap = undefined;
                 body = undefined;
-                let c6 = 1;
-                const HTTP = callback(outer1_2[8]).HTTP;
+                c6 = 1;
+                const HTTP = callback(closure_1_2[8]).HTTP;
                 let obj2 = { url: null, rejectWithError: false };
                 obj2[0] = c8.CHANNEL_SUMMARIES(tmp55);
                 c7 = 2;
@@ -217,7 +219,7 @@ function _fetchSummaries() {
           } else {
             if (1 === dispatchResult1) {
               c6 = 0;
-              const aPIError = new callback(4273).APIError(_handleConnectionOpen);
+              const aPIError = new callback(4277).APIError(closure_5);
               dependencyMap = aPIError;
             } else if (arg0 === 1) {
               c8 = 3;
@@ -253,13 +255,13 @@ function _fetchSummaries() {
               }
               summaries = callback2;
             }
-            noop = summaries;
+            closure_4 = summaries;
             obj1 = callback2(12);
-            noop = obj1.takeRight(noop, 75);
+            closure_4 = obj1.takeRight(closure_4, 75);
             obj2 = callback2(709);
             obj4 = { type: "RECEIVE_CHANNEL_SUMMARIES", channelId: null, summaries: null, error: null, requestedAt: null, receivedAt: null };
             obj4[1] = callback;
-            obj4[2] = noop;
+            obj4[2] = closure_4;
             if (dependencyMap == null) {
               dependencyMap = undefined;
             }
@@ -271,7 +273,7 @@ function _fetchSummaries() {
           }
           c8 = 3;
         } catch (tmp45) {
-          _handleConnectionOpen = tmp45;
+          closure_5 = tmp45;
           if (tmp4 === c6) {
             c8 = tmp2;
             throw tmp45;
@@ -282,7 +284,7 @@ function _fetchSummaries() {
       }
     })();
   });
-  const _fetchSummaries = tmp;
+  closure_14 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -293,7 +295,7 @@ function _fetchSummaries() {
 }
 function setHighlightedSummary(channelId) {
   let tmp = arg1;
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "SET_HIGHLIGHTED_SUMMARY", channelId, summaryId: null };
   if (arg1 == null) {
     tmp = null;
@@ -306,7 +308,7 @@ function setSelectedSummary(c1, c4) {
   if (tmp2) {
     fetchSummary(c1, tmp);
   }
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "SET_SELECTED_SUMMARY", channelId: c1, summaryId: null };
   if (tmp == null) {
     tmp = null;
@@ -316,7 +318,7 @@ function setSelectedSummary(c1, c4) {
 }
 function updateVisibleMessages(arg0, arg1) {
   let tmp = arg0;
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   if (arg0 == null) {
     tmp = null;
   }
@@ -329,7 +331,7 @@ function updateVisibleMessages(arg0, arg1) {
   obj.dispatch(obj);
 }
 function setSummaryFeedback(summary, rating) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "SET_SUMMARY_FEEDBACK", summary, rating };
   obj.dispatch(obj);
 }
@@ -357,7 +359,7 @@ function _fetchChannelAffinities() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -378,18 +380,18 @@ function _fetchChannelAffinities() {
             aPIError = undefined;
             body = undefined;
             let channel_affinities;
-            if (outer1_7.shouldFetchChannelAffinities()) {
+            if (closure_1_7.shouldFetchChannelAffinities()) {
               const _Date2 = Date;
               const timestamp = Date.now();
               callback = timestamp;
-              let obj4 = outer1_1(outer1_2[7]);
-              let obj1 = { type: "REQUEST_CHANNEL_AFFINITIES", requestedAt: null };
+              let obj4 = closure_1_1(closure_1_2[7]);
+              obj1 = { type: "REQUEST_CHANNEL_AFFINITIES", requestedAt: null };
               obj1[1] = timestamp;
               obj4.dispatch(obj1);
               aPIError = undefined;
               body = undefined;
-              let c4 = 1;
-              const HTTP = outer1_0(outer1_2[8]).HTTP;
+              c4 = 1;
+              const HTTP = closure_1_0(closure_1_2[8]).HTTP;
               c5 = 2;
               c6 = 1;
               const obj2 = { value: null, done: false };
@@ -440,7 +442,7 @@ function _fetchChannelAffinities() {
           obj4[4] = Date.now();
           obj1.dispatch(obj4);
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp38) {
         channel_affinities = tmp38;
@@ -453,7 +455,7 @@ function _fetchChannelAffinities() {
       }
     }
   });
-  const _fetchChannelAffinities = tmp;
+  closure_16 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -475,11 +477,11 @@ function fetchSummariesBulk() {
 function _fetchSummariesBulk() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     const iter = (function*(arg0) {
       if (constants === 2) {
         constants = 3;
@@ -492,7 +494,7 @@ function _fetchSummariesBulk() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -508,10 +510,10 @@ function _fetchSummariesBulk() {
               return obj;
             } else {
               let aPIError = tmp3;
-              let ME = tmp7;
+              closure_3 = tmp7;
               let flag;
-              let dependencyMap;
-              let obj1 = flag;
+              dependencyMap = undefined;
+              obj1 = flag;
               if (flag === undefined) {
                 obj1 = {};
               }
@@ -524,9 +526,9 @@ function _fetchSummariesBulk() {
                 flag2 = true;
               }
               dependencyMap = flag2;
-              ME = undefined;
+              closure_3 = undefined;
               aPIError = undefined;
-              let body;
+              let _undefined;
               let summaries;
               c7 = 1;
               constants = 1;
@@ -548,7 +550,7 @@ function _fetchSummariesBulk() {
               }
               substr = dependencyMap;
               const _Date2 = Date;
-              ME = Date.now();
+              closure_3 = Date.now();
               const obj3 = { withQuickSwitcher: null, withChannelAffinities: null };
               obj3[0] = flag;
               obj3[1] = dependencyMap;
@@ -587,10 +589,10 @@ function _fetchSummariesBulk() {
               } else {
                 const obj5 = { type: "REQUEST_CHANNEL_SUMMARIES_BULK", channelIds: null, requestedAt: null };
                 obj5[1] = closure_0;
-                obj5[2] = outer1_3;
+                obj5[2] = closure_1_3;
                 flag(709).dispatch(obj5);
-                let outer1_4;
-                let outer1_5;
+                c4 = undefined;
+                c5 = undefined;
                 summaries = 1;
                 const HTTP = substr(530).HTTP;
                 const obj6 = { url: null, body: null, rejectWithError: false };
@@ -608,8 +610,8 @@ function _fetchSummariesBulk() {
           } else {
             if (2 === tmp7) {
               summaries = 0;
-              c7 = body;
-              aPIError = new substr(4273).APIError(c7);
+              c7 = _undefined;
+              aPIError = new substr(4277).APIError(c7);
             } else if (arg0 === 1) {
               constants = 3;
               throw arg1;
@@ -620,16 +622,16 @@ function _fetchSummariesBulk() {
               obj[0] = arg1;
               return obj;
             } else {
-              body = arg1;
+              _undefined = arg1;
               summaries = 0;
             }
             summaries = undefined;
-            if (body != null) {
-              summaries = body.body.summaries;
+            if (_undefined != null) {
+              summaries = _undefined.body.summaries;
             }
             obj1 = flag(709);
             const obj9 = { type: "RECEIVE_CHANNEL_SUMMARIES_BULK", requestedAt: null, receivedAt: null, summaries: null, requestArgs: null, error: null };
-            obj9[1] = ME;
+            obj9[1] = closure_3;
             const _Date = Date;
             obj9[2] = Date.now();
             obj9[3] = summaries;
@@ -639,10 +641,10 @@ function _fetchSummariesBulk() {
             obj9[5] = aPIError;
             obj1.dispatch(obj9);
             constants = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp39) {
-          body = tmp39;
+          _undefined = tmp39;
           if (tmp4 === summaries) {
             constants = tmp2;
             throw tmp39;
@@ -655,7 +657,7 @@ function _fetchSummariesBulk() {
     iter.next();
     return iter;
   });
-  const _fetchSummariesBulk = tmp;
+  closure_18 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -674,7 +676,7 @@ function useChannelSummaries(channelIds) {
   }
   let stateFromStores;
   let memo;
-  const items = [_handleConnectionOpen];
+  const items = [closure_5];
   stateFromStores = channelIds(memo[12]).useStateFromStores(items, () => connected.isConnected());
   const items1 = [channelIds];
   memo = React.useMemo(() => channelIds.join(","), items1);
@@ -682,15 +684,15 @@ function useChannelSummaries(channelIds) {
   const effect = React.useEffect(() => {
     function _fetch() {
       const self = this;
-      const tmp = outer2_3(function*() {
-        let closure_0 = tmp3;
-        let c3 = 1;
-        yield outer2_15();
+      const tmp = closure_2_3(function*() {
+        closure_0 = tmp3;
+        c3 = 1;
+        yield closure_2_15();
         if (1 === tmp7) {
           c3 = 0;
-          outer2_17(outer1_2.split(","));
-          let c1 = 2;
-          let c4 = 1;
+          closure_2_17(closure_1_2.split(","));
+          c1 = 2;
+          c4 = 1;
         } else if (2 === tmp7) {
           if (arg0 === 1) {
             c4 = 3;
@@ -702,7 +704,7 @@ function useChannelSummaries(channelIds) {
             return obj2;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -713,7 +715,7 @@ function useChannelSummaries(channelIds) {
         c3 = 0;
         return arg1;
       });
-      const _fetch = tmp;
+      closure_0 = tmp;
       const apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -736,8 +738,8 @@ function useChannelSummaries(channelIds) {
     }
   }, items2);
   const obj = channelIds(memo[12]);
-  const items3 = [handleQuickSwitcherUpdate];
-  return channelIds(memo[12]).useStateFromStoresArray(items3, () => handleQuickSwitcherUpdate.topSummaries(), []);
+  const items3 = [closure_7];
+  return channelIds(memo[12]).useStateFromStoresArray(items3, () => closure_7.topSummaries(), []);
 }
 function deleteSummary(arg0) {
   const self = this;
@@ -752,10 +754,10 @@ function deleteSummary(arg0) {
 function _deleteSummary() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c6 === 2) {
         c6 = 3;
@@ -768,7 +770,7 @@ function _deleteSummary() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -783,12 +785,12 @@ function _deleteSummary() {
               obj[0] = arg1;
               return obj;
             } else {
-              const dependencyMap = tmp3;
+              dependencyMap = tmp3;
               let callback = tmp7;
-              let c4 = 1;
-              const HTTP = lib(outer1_2[8]).HTTP;
-              const obj1 = { url: null, rejectWithError: false };
-              obj1[0] = outer1_8.CHANNEL_SUMMARY(lib.channelId, lib.id);
+              c4 = 1;
+              const HTTP = lib(closure_1_2[8]).HTTP;
+              obj1 = { url: null, rejectWithError: false };
+              obj1[0] = closure_1_8.CHANNEL_SUMMARY(lib.channelId, lib.id);
               c5 = 2;
               c6 = 1;
               const obj2 = { value: null, done: false };
@@ -797,8 +799,8 @@ function _deleteSummary() {
             }
           } else if (1 === tmp7) {
             c4 = 0;
-            callback = ME;
-            const aPIError = new lib(4273).APIError(callback);
+            callback = closure_3;
+            const aPIError = new lib(4277).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -816,10 +818,10 @@ function _deleteSummary() {
             obj.dispatch(obj4);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
-          ME = tmp25;
+          closure_3 = tmp25;
           if (tmp4 === c4) {
             c6 = tmp2;
             throw tmp25;
@@ -830,7 +832,7 @@ function _deleteSummary() {
       }
     })();
   });
-  const _deleteSummary = tmp;
+  closure_19 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -839,17 +841,17 @@ function _deleteSummary() {
   }
   return applyArgumentsResult;
 }
-let closure_9 = 30 * require("set").Millis.SECOND;
+let closure_9 = 30 * setDefault.Millis.SECOND;
 let closure_10 = {};
 let closure_11 = {};
-const result = require("_handleConnectionOpen").fileFinishedImporting("modules/summaries/SummaryActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/summaries/SummaryActionCreators.tsx");
 
 export default { setSummaryFeedback, updateVisibleMessages, setSelectedSummary, setHighlightedSummary, fetchSummaries, fetchSummariesBulk, useChannelSummaries, deleteSummary };
 export { fetchSummary };
 export { fetchSummaries };
 export { setHighlightedSummary };
 export const toggleTopicsBar = function toggleTopicsBar() {
-  importDefault(709).dispatch({ type: "TOGGLE_TOPICS_BAR" });
+  dispatcherDefault.dispatch({ type: "TOGGLE_TOPICS_BAR" });
 };
 export { setSelectedSummary };
 export { updateVisibleMessages };
@@ -877,7 +879,7 @@ export const useMaybeFetchChannelAffinitiesAndSummaries = function useMaybeFetch
   }
   let stateFromStores;
   let memo;
-  const items1 = [_handleConnectionOpen];
+  const items1 = [closure_5];
   stateFromStores = items(memo[12]).useStateFromStores(items1, () => connected.isConnected());
   const items2 = [items];
   memo = React.useMemo(() => channelIds.join(","), items2);
@@ -885,15 +887,15 @@ export const useMaybeFetchChannelAffinitiesAndSummaries = function useMaybeFetch
   const effect = React.useEffect(() => {
     function _fetch() {
       const self = this;
-      const tmp = outer2_3(function*() {
-        let closure_0 = tmp3;
-        let c3 = 1;
-        yield outer2_15();
+      const tmp = closure_2_3(function*() {
+        closure_0 = tmp3;
+        c3 = 1;
+        yield closure_2_15();
         if (1 === tmp7) {
           c3 = 0;
-          outer2_17(outer1_2.split(","));
-          let c1 = 2;
-          let c4 = 1;
+          closure_2_17(closure_1_2.split(","));
+          c1 = 2;
+          c4 = 1;
         } else if (2 === tmp7) {
           if (arg0 === 1) {
             c4 = 3;
@@ -905,7 +907,7 @@ export const useMaybeFetchChannelAffinitiesAndSummaries = function useMaybeFetch
             return obj2;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -916,7 +918,7 @@ export const useMaybeFetchChannelAffinitiesAndSummaries = function useMaybeFetch
         c3 = 0;
         return arg1;
       });
-      const _fetch = tmp;
+      closure_0 = tmp;
       const apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);

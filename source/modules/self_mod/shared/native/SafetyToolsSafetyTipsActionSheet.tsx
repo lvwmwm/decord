@@ -1,42 +1,42 @@
-// Module ID: 10621
-// Function ID: 10622
+// Module ID: 10660
+// Function ID: 10661
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [19, 17, 10569, 21, 4661, 712, 10612, 1236, 10588, 4734, 2]
+// Dependencies: [19, 17, 10608, 21, 4668, 712, 10651, 1236, 10627, 4739, 2]
 // Exports: default
 
-// Module 10621 (SafetyToolsSafetyTipsActionSheet)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { getInappropriateConversationsSafetyTips as closure_4 } from "LOCATION_CONTEXT_MOBILE";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10660 (SafetyToolsSafetyTipsActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 10627 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 10651 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { getInappropriateConversationsSafetyTips as closure_4 } from "LOCATION_CONTEXT_MOBILE" /* 10608 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { safetyTipsContainer: null };
-createCacheKey = { marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { marginHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("LOCATION_CONTEXT_MOBILE").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsSafetyTipsActionSheet.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsSafetyTipsActionSheet.tsx");
 
 export default function SafetyToolsSafetyTipsActionSheet(arg0) {
-  let channelId;
-  let onClose;
-  let recipientId;
-  let warningId;
-  let warningType;
   ({ channelId, recipientId, warningId, warningType, onClose } = arg0);
   let obj = { hasHeaderBack: true, recipientId, warningId, warningType, headerTitle: null, channelId: null, onClose: null, children: null };
-  const tmp = createCacheKey();
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[4] = intl.string(require(1236) /* getSystemLocale */.t.EtNxi6);
+  const tmp = callback2();
+  const intl = getSystemLocale.intl;
+  obj[4] = intl.string(getSystemLocale.t.EtNxi6);
   obj[5] = channelId;
   obj[6] = onClose;
   obj = { style: tmp.safetyTipsContainer, children: null };
   obj = { description: null, safetyTips: null };
-  const tmp2 = importDefault(10612);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.DJMZX6);
-  const tmp3 = importDefault(10588);
+  const tmp2 = SafetyToolsActionSheetWrapperDefault;
+  const intl2 = getSystemLocale.intl;
+  obj[0] = intl2.string(getSystemLocale.t.DJMZX6);
+  const tmp3 = SafetyTipsContainerDefault;
   obj[1] = callback().map((children) => callback2(callback(table[9]).Text, { variant: "text-sm/medium", children }, arg1));
   obj[1] = <tmp3 description={null} safetyTips={null} />;
   obj[7] = <View description={null} safetyTips={null} />;

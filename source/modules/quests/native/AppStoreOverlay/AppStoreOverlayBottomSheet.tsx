@@ -1,84 +1,78 @@
-// Module ID: 10696
-// Function ID: 10697
+// Module ID: 10735
+// Function ID: 10736
 // Name: AppStoreOverlayFooter
-// Dependencies: [32, 19, 17, 676, 21, 4661, 712, 4097, 689, 4756, 6803, 4745, 1236, 1494, 7688, 4761, 4084, 4342, 6950, 7124, 6952, 5449, 4734, 10697, 10700, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4668, 712, 4100, 689, 4761, 6840, 4750, 1236, 1494, 7726, 4766, 4087, 4346, 6988, 7162, 6990, 5454, 4739, 10736, 10739, 2]
 // Exports: default
 
-// Module 10696 (AppStoreOverlayFooter)
-import _slicedToArray from "_slicedToArray";
-import ActionSheetHeaderBar from "ActionSheetHeaderBar";
-import { View } from "ACTION_SHEET_HEIGHT_HALF";
-import ME from "ME";
-import jsxProd from "preload";
-import createCacheKey from "createCacheKey";
+// Module 10735 (AppStoreOverlayFooter)
+import ThemesDefault from "Themes" /* 712 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 function AppStoreOverlayFooter(arg0) {
-  let onInstallPress;
-  let onLayout;
   let token;
   ({ onInstallPress, onLayout } = arg0);
-  const tmp = createCacheKey();
-  let obj = token(4097);
-  token = obj.useToken(importDefault(712).colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  const tmp = callback3();
+  let obj = token(4100);
+  token = obj.useToken(ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
   let items = [token];
   obj = { style: tmp.footer, onLayout, children: null };
   const memo = React.useMemo(() => {
-    const obj = outer1_1(outer1_2[8])(token);
-    const items = [outer1_1(outer1_2[8])(token).alpha(0).hex(), token];
+    const obj = closure_1_1(closure_1_2[8])(token);
+    const items = [closure_1_1(closure_1_2[8])(token).alpha(0).hex(), token];
     return items;
   }, items);
   obj = { pointerEvents: "none", style: tmp.footerGradient, colors: memo, start: constants.START, end: constants.END };
-  const items1 = [callback(importDefault(4756), obj), ];
-  const obj1 = { bottom: true, children: null };
+  const items1 = [callback(LinearGradientDefault, obj), ];
+  obj1 = { bottom: true, children: null };
   const obj2 = { size: "lg", text: null, onPress: null };
   const intl = token(1236).intl;
   obj2[1] = intl.string(token(1236).t.lwQdjB);
   obj2[2] = onInstallPress;
-  obj1[1] = callback(token(4745).Button, obj2);
-  items1[1] = callback(token(6803).SafeAreaPaddingView, obj1);
+  obj1[1] = callback(token(4750).Button, obj2);
+  items1[1] = callback(token(6840).SafeAreaPaddingView, obj1);
   obj[2] = items1;
   return callback2(View, obj);
 }
 ({ MEDIA_MODAL_KEY: closure_6, VerticalGradient: error } = ME);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { headerBar: { zIndex: 1 }, container: null, containerWithHeader: null, iconContainer: null, icon: null, textBlock: null, mediaSection: null, aboutSection: null, header: null, bodyContainer: null, footer: null, footerGradient: null };
-createCacheKey = { paddingTop: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
+createCacheKey = { paddingTop: ThemesDefault.space.PX_16, paddingHorizontal: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_16 };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { paddingTop: 110 };
-createCacheKey[3] = { width: 84, height: 84, borderRadius: require("Themes").radii.xl, overflow: "hidden", borderWidth: 6, borderColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[3] = { width: 84, height: 84, borderRadius: ThemesDefault.radii.xl, overflow: "hidden", borderWidth: 6, borderColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createCacheKey[4] = { width: 72, height: 72 };
-let obj1 = { width: 84, height: 84, borderRadius: require("Themes").radii.xl, overflow: "hidden", borderWidth: 6, borderColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-createCacheKey[5] = { gap: require("Themes").space.PX_4 };
-let obj2 = { gap: require("Themes").space.PX_4 };
-createCacheKey[6] = { gap: require("Themes").space.PX_8 };
-let obj3 = { gap: require("Themes").space.PX_8 };
-createCacheKey[7] = { borderRadius: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.CARD_SECONDARY_BACKGROUND_DEFAULT, padding: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
+let obj1 = { width: 84, height: 84, borderRadius: ThemesDefault.radii.xl, overflow: "hidden", borderWidth: 6, borderColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[5] = { gap: ThemesDefault.space.PX_4 };
+let obj2 = { gap: ThemesDefault.space.PX_4 };
+createCacheKey[6] = { gap: ThemesDefault.space.PX_8 };
+let obj3 = { gap: ThemesDefault.space.PX_8 };
+createCacheKey[7] = { borderRadius: ThemesDefault.space.PX_16, backgroundColor: ThemesDefault.colors.CARD_SECONDARY_BACKGROUND_DEFAULT, padding: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8 };
 createCacheKey[8] = { width: "100%", height: 156, overflow: "hidden", position: "absolute", top: 0, left: 0, right: 0 };
 createCacheKey[9] = { flex: 1, minHeight: 0 };
-let obj4 = { borderRadius: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.CARD_SECONDARY_BACKGROUND_DEFAULT, padding: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
-createCacheKey[10] = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: require("Themes").space.PX_16 };
+let obj4 = { borderRadius: ThemesDefault.space.PX_16, backgroundColor: ThemesDefault.colors.CARD_SECONDARY_BACKGROUND_DEFAULT, padding: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8 };
+createCacheKey[10] = { backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[11] = { position: "absolute", top: -64, right: 0, left: 0, height: 64 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj5 = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: require("Themes").space.PX_16 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayBottomSheet.tsx");
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj5 = { backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayBottomSheet.tsx");
 
 export default function AppStoreOverlayBottomSheet(metadata) {
-  let bottomSheetClose;
-  let bottomSheetRef;
   metadata = metadata.metadata;
   const onOpen = metadata.onOpen;
   const onDismiss = metadata.onDismiss;
   const onInstallPress = metadata.onInstallPress;
   let React;
-  let closure_5;
-  let closure_6;
+  closure_5 = undefined;
+  closure_6 = undefined;
   let callback1;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const tmp4 = onInstallPress(React.useState(0), 2);
   React = tmp4[1];
   let obj = metadata(onDismiss[14]);
@@ -105,7 +99,7 @@ export default function AppStoreOverlayBottomSheet(metadata) {
       const tmp3 = onDismiss;
     }
   }, items1);
-  let obj1 = metadata(onDismiss[15]);
+  obj1 = metadata(onDismiss[15]);
   const unmountEffect = obj1.useUnmountEffect(callback);
   const items2 = [metadata.storeUrl, onInstallPress];
   callback1 = React.useCallback(() => {
@@ -118,14 +112,13 @@ export default function AppStoreOverlayBottomSheet(metadata) {
     callback1();
   }, items3);
   let headerUrl = metadata.headerUrl;
-  const callback3 = React.useCallback((nativeEvent) => {
+  callback3 = React.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.height);
   }, []);
   if (headerUrl == null) {
     headerUrl = null;
   }
-  obj = { ref: bottomSheetRef, scrollable: true, handleDisabled: true, startHeight: 0.7 * onOpen(onDismiss[13])().height, onDismiss: callback, footer: null, children: null };
-  obj[5] = callback(AppStoreOverlayFooter, { onInstallPress: callback1, onLayout: callback3 });
+  obj = { ref: bottomSheetRef, scrollable: true, handleDisabled: true, startHeight: 0.7 * onOpen(onDismiss[13])().height, onDismiss: callback, footer: callback(AppStoreOverlayFooter, { onInstallPress: callback1, onLayout: callback3 }), children: null };
   obj = { variant: "overlay", style: tmp.headerBar, onPress: bottomSheetClose };
   const items4 = [callback(metadata(onDismiss[19]).ActionSheetHeaderBar, obj), ];
   obj1 = { style: tmp.bodyContainer, contentContainerStyle: { paddingBottom: tmp4[0] }, children: null };

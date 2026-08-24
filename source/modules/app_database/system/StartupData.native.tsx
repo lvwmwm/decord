@@ -1,17 +1,21 @@
-// Module ID: 1972
-// Function ID: 1973
+// Module ID: 1973
+// Function ID: 1974
 // Name: getUserId
-// Dependencies: [17, 500, 1973, 2]
+// Dependencies: [17, 500, 1974, 2]
 // Exports: getUserId, setUserId
 
-// Module 1972 (getUserId)
-import { NativeModules } from "get ActivityIndicator";
+// Module 1973 (getUserId)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import set2 from "set" /* 500 */;
+import enforcingDefault from "enforcing" /* 1974 */;
 
-const result = require("enforcing").fileFinishedImporting("modules/app_database/system/StartupData.native.tsx");
+const NativeModules = get_ActivityIndicator.NativeModules;
+const result = set.fileFinishedImporting("modules/app_database/system/StartupData.native.tsx");
 
 export const getUserId = function getUserId() {
   if (obj.isAndroid()) {
-    let userId = importDefault(1973).getConstants().userId;
+    let userId = enforcingDefault.getConstants().userId;
     let tmp6 = null;
     if (null != userId) {
       tmp6 = userId;
@@ -24,12 +28,12 @@ export const getUserId = function getUserId() {
     }
     return userId;
   }
-  obj = require(500) /* set */;
+  obj = set2;
 };
 export const setUserId = function setUserId(id) {
   if (obj.isAndroid()) {
-    importDefault(1973).setUserId(id);
-    const obj2 = importDefault(1973);
+    enforcingDefault.setUserId(id);
+    const obj2 = enforcingDefault;
   } else {
     const DCDAppDatabase = NativeModules.DCDAppDatabase;
     DCDAppDatabase.setUserId(id);

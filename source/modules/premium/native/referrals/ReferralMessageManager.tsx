@@ -1,31 +1,36 @@
-// Module ID: 17051
-// Function ID: 17052
+// Module ID: 17144
+// Function ID: 17145
 // Name: handleReferralMessages
-// Dependencies: [4045, 7421, 686, 11, 7876, 5038, 16635, 2]
+// Dependencies: [4048, 7459, 686, 11, 7915, 5043, 16731, 2]
 
-// Module 17051 (handleReferralMessages)
-import reset from "reset";
-import emitChanges from "emitChanges";
-import "initialize";
+// Module 17144 (handleReferralMessages)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import set from "set" /* 686 */;
+import initializeDefault from "initialize" /* 5043 */;
+import _fetchUserOffer from "_fetchUserOffer" /* 7915 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 16731 */;
+import closure_3 from "reset" /* 4048 */;
+import closure_4 from "emitChanges" /* 7459 */;
 
-const require = arg1;
+require = arg1;
 function handleReferralMessages(type) {
-  if (type.type === require(686) /* set */.MessageTypes.PREMIUM_REFERRAL) {
+  if (type.type === set.MessageTypes.PREMIUM_REFERRAL) {
     if (null != type.content) {
       if (obj3.isProbablyAValidSnowflake(type.content)) {
         premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
         const tmp9Result = tmp9(11);
         if (tmp6) {
-          const userOffer = require(7876) /* _fetchUserOffer */.fetchUserOffer("ReferralMessageManager");
-          const tmpResult = require(7876) /* _fetchUserOffer */;
+          const userOffer = _fetchUserOffer.fetchUserOffer("ReferralMessageManager");
+          const tmpResult = _fetchUserOffer;
         }
-        tmp6 = null == premiumTypeSubscription && emitChanges.shouldFetchReferralOffer(tmp9(11).extractTimestamp(type.content));
+        tmp6 = null == premiumTypeSubscription && closure_4.shouldFetchReferralOffer(tmp9(11).extractTimestamp(type.content));
       }
-      obj3 = importDefault(11);
+      obj3 = DISCORD_EPOCHDefault;
       tmp9 = importDefault;
     }
   }
 }
+initializeDefault;
 class ReferralMessageManager extends tmp6 {
   constructor() {
     tmp3 = new ReferralMessageManager(tmp2, tmp, new.target);
@@ -36,7 +41,7 @@ class ReferralMessageManager extends tmp6 {
 }
 tmp = new tmp(tmp4, tmp3, tmp2, Object, defineProperty, ReferralMessageManager, importDefault);
 // ThrowIfThisInitialized (0x7c)
-require("setupLoadFromMessageManagerHandlers")(tmp, handleReferralMessages);
+setupLoadFromMessageManagerHandlersDefault(tmp, handleReferralMessages);
 const result = require("set").fileFinishedImporting("modules/premium/native/referrals/ReferralMessageManager.tsx");
 
 export default tmp;

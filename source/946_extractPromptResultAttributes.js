@@ -5,13 +5,13 @@
 // Exports: extractPromptResultAttributes, extractToolResultAttributes
 
 // Module 946 (extractPromptResultAttributes)
-import _slicedToArray from "_slicedToArray";
+import isJsonRpcNotification from "isJsonRpcNotification" /* 936 */;
+import _mod940 from "module_940" /* 940 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const extractPromptResultAttributes = function extractPromptResultAttributes(protocolVersion, recordOutputs) {
-  let _slicedToArray;
-  let closure_3;
   let obj = {};
   if (obj2.isValidContentItem(protocolVersion)) {
     let tmp4 = recordOutputs;
@@ -67,9 +67,9 @@ export const extractPromptResultAttributes = function extractPromptResultAttribu
         const entries = messages.entries();
         const tmp8 = entries[Symbol.iterator]();
         while (tmp8 !== undefined) {
-          let tmp12 = _slicedToArray;
-          let tmp13 = _slicedToArray(tmp10, 2);
-          [_slicedToArray, closure_3] = tmp13;
+          let tmp12 = callback;
+          let tmp13 = callback(tmp10, 2);
+          [closure_2, closure_3] = tmp13;
           let _loop2Result = _loop2();
           continue;
         }
@@ -82,18 +82,16 @@ export const extractPromptResultAttributes = function extractPromptResultAttribu
   obj2 = obj(messages[2]);
 };
 export const extractToolResultAttributes = function extractToolResultAttributes(protocolVersion, recordOutputs) {
-  let obj = require(936) /* isJsonRpcNotification */;
+  let obj = isJsonRpcNotification;
   if (obj.isValidContentItem(protocolVersion)) {
     const _Array = Array;
     if (Array.isArray(protocolVersion.content)) {
       obj = (function buildAllContentItemAttributes(content, recordOutputs) {
-        let closure_3;
-        let closure_4;
-        let closure_0 = content;
-        let closure_1 = recordOutputs;
+        closure_0 = content;
+        closure_1 = recordOutputs;
         let obj = { [closure_0(closure_1[1]).MCP_TOOL_RESULT_CONTENT_COUNT_ATTRIBUTE]: content.length };
         function _loop() {
-          const obj = content(table[2]);
+          obj = content(table[2]);
           if (obj.isValidContentItem(closure_4)) {
             let str = "mcp.tool.result";
             if (1 !== content.length) {
@@ -163,11 +161,11 @@ export const extractToolResultAttributes = function extractToolResultAttributes(
       obj = {};
     }
     if (typeof protocolVersion.isError === "boolean") {
-      obj[tmp(940).MCP_TOOL_RESULT_IS_ERROR_ATTRIBUTE] = protocolVersion.isError;
+      obj[_mod940.MCP_TOOL_RESULT_IS_ERROR_ATTRIBUTE] = protocolVersion.isError;
     }
     return obj;
   } else {
     return {};
   }
-  tmp = require;
+  let tmp = require;
 };

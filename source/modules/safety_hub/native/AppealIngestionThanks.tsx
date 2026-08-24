@@ -1,26 +1,29 @@
-// Module ID: 11093
-// Function ID: 11094
+// Module ID: 11132
+// Function ID: 11133
 // Name: AppealIngestionThanks
-// Dependencies: [19, 17, 21, 4661, 11081, 6803, 1297, 2]
+// Dependencies: [19, 17, 21, 4668, 11120, 6840, 1297, 2]
 // Exports: default
 
-// Module 11093 (AppealIngestionThanks)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11132 (AppealIngestionThanks)
+import noopAll from "noop" /* 19 */;
+import Button from "Button" /* 1297 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 11120 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_4 = createCacheKey.createStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" } });
-const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/native/AppealIngestionThanks.tsx");
+const result = require("set").fileFinishedImporting("modules/safety_hub/native/AppealIngestionThanks.tsx");
 
 export default function AppealIngestionThanks() {
   const tmp = callback();
   let obj = { children: null };
   obj = { style: tmp.container, children: null };
-  obj = { bottom: true, style: tmp.container, children: null };
-  obj[2] = jsx(require(1297) /* Button */.LegacyText, { children: "TODO - Thanks" });
-  obj[1] = jsx(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, style: tmp.container, children: null });
-  obj[0] = <View bottom style={tmp.container}>{null}</View>;
-  return jsx(require(11081) /* AppealIngestionModal */.AppealIngestionModalScreen, { bottom: true, style: tmp.container, children: null });
+  obj = { bottom: true, style: tmp.container, children: jsx(Button.LegacyText, { children: "TODO - Thanks" }) };
+  obj[1] = jsx(SafeAreaPaddingView.SafeAreaPaddingView, { bottom: true, style: tmp.container, children: jsx(Button.LegacyText, { children: "TODO - Thanks" }) });
+  obj[0] = <View bottom style={tmp.container}>{jsx(Button.LegacyText, { children: "TODO - Thanks" })}</View>;
+  return jsx(AppealIngestionModal.AppealIngestionModalScreen, { bottom: true, style: tmp.container, children: jsx(Button.LegacyText, { children: "TODO - Thanks" }) });
 };

@@ -1,28 +1,24 @@
-// Module ID: 12118
-// Function ID: 12119
+// Module ID: 12170
+// Function ID: 12171
 // Name: useTrackUserProfileActivityView
-// Dependencies: [32, 19, 9199, 589, 2]
+// Dependencies: [32, 19, 9236, 589, 2]
 // Exports: default
 
-// Module 12118 (useTrackUserProfileActivityView)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import map from "map";
+// Module 12170 (useTrackUserProfileActivityView)
+import closure_2 from "_slicedToArray" /* 32 */;
+import noop from "noop" /* 19 */;
+import closure_5 from "map" /* 9236 */;
 
-let c3;
-let c4;
 const require = arg1;
 ({ useEffect: c3, useState: c4 } = noop);
-const result = require("map").fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileActivityView.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileActivityView.tsx");
 
 export default function useTrackUserProfileActivityView(arg0) {
-  let onAction;
-  let require;
   ({ userId: require, onAction } = arg0);
   let callback;
   let callback2;
-  const items = [map];
-  const stateFromStores = require(onAction[3]).useStateFromStores(items, () => outer1_5.isFetchingUserOutbox(closure_0));
+  const items = [closure_5];
+  const stateFromStores = require(onAction[3]).useStateFromStores(items, () => closure_1_5.isFetchingUserOutbox(closure_0));
   const tmp2 = callback(callback3(false), 2);
   callback = tmp2[1];
   let tmp3 = !stateFromStores;
@@ -32,7 +28,7 @@ export default function useTrackUserProfileActivityView(arg0) {
   callback2 = tmp3;
   const items1 = [tmp3, onAction];
   callback2(() => {
-    if (c3) {
+    if (closure_3) {
       onAction({ action: "VIEW_ACTIVITY_CARD" });
       callback(true);
     }

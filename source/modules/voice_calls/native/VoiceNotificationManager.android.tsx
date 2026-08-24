@@ -1,36 +1,38 @@
-// Module ID: 13828
-// Function ID: 13829
+// Module ID: 13886
+// Function ID: 13887
 // Name: processColor
-// Dependencies: [32, 17, 1390, 4478, 4652, 1391, 4497, 4539, 4030, 1922, 676, 712, 7505, 7504, 12598, 9908, 4984, 1236, 4720, 2]
+// Dependencies: [32, 17, 1390, 4482, 4658, 1391, 4501, 4544, 4033, 1922, 676, 712, 7543, 7542, 12652, 9947, 4989, 1236, 4726, 2]
 
-// Module 13828 (processColor)
-import _slicedToArray from "_slicedToArray";
-import { processColor } from "getSystemLocale";
-import participantFromServer from "participantFromServer";
-import addApplication from "addApplication";
-import reset from "reset";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createRTCConnection from "createRTCConnection";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { InputModes } from "ME";
-import "initialize";
-import set from "participantFromServer";
+// Module 13886 (processColor)
+import ThemesDefault from "Themes" /* 712 */;
+import initializeDefault from "initialize" /* 4726 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import { processColor } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "participantFromServer" /* 1390 */;
+import closure_5 from "addApplication" /* 4482 */;
+import closure_6 from "reset" /* 4658 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_9 from "createRTCConnection" /* 4544 */;
+import closure_10 from "markAllUserIdListsStale" /* 4033 */;
+import closure_11 from "mergeGuildAvatar" /* 1922 */;
+import { InputModes } from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-let closure_13 = processColor(require("Themes").unsafe_rawColors.BRAND_500);
-let closure_14 = processColor(require("Themes").unsafe_rawColors.RED_NEW_46);
+let set = arg1;
+let closure_13 = processColor(ThemesDefault.unsafe_rawColors.BRAND_500);
+let closure_14 = processColor(ThemesDefault.unsafe_rawColors.RED_NEW_46);
 class VoiceNotificationManager {
   constructor() {
     obj = Object.create(new.target.prototype);
-    VoiceNotificationManager = obj;
+    closure_0 = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "RCTView", embeddedActivity: "face_with_spiral_eyes", isStreaming: "woozy_face" };
+    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "sentry-feedback-screenshot-button", embeddedActivity: "onDismiss", isStreaming: "1212569433839636530" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
-      const channelId = outer1_9.getChannelId();
-      const state = outer1_9.getState();
+      const channelId = closure_1_9.getChannelId();
+      const state = closure_1_9.getState();
       if (!tmp3) {
-        const obj = {};
+        obj = {};
         const merged = Object.assign(obj.state);
         obj.channelId = channelId;
         obj.connectionState = state;
@@ -38,8 +40,8 @@ class VoiceNotificationManager {
       }
     };
     obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
-      let obj = outer1_8;
-      const tmp = outer1_8.isSelfMute() || obj.isSelfMutedTemporarily();
+      obj = closure_1_8;
+      const tmp = closure_1_8.isSelfMute() || obj.isSelfMutedTemporarily();
       const tmp2 = obj.isSelfDeaf() || obj.isDeaf();
       let tmp4 = obj.state.selfMute === tmp;
       const mode = obj.getMode();
@@ -61,14 +63,14 @@ class VoiceNotificationManager {
     obj.handleEmbeddedActivityStateChange = function handleEmbeddedActivityStateChange() {
       if (null != obj.state.channelId) {
         obj = {};
-        const currentEmbeddedActivity = outer1_4.getCurrentEmbeddedActivity();
+        const currentEmbeddedActivity = closure_1_4.getCurrentEmbeddedActivity();
         const merged = Object.assign(obj.state);
         obj.embeddedActivity = currentEmbeddedActivity;
         obj.handleUpdate(obj);
       }
     };
     obj.handleApplicationStreamStateChange = function handleApplicationStreamStateChange() {
-      const tmp = null != outer1_6.getCurrentUserActiveStream();
+      const tmp = null != closure_1_6.getCurrentUserActiveStream();
       if (obj.state.isStreaming !== tmp) {
         obj = {};
         const merged = Object.assign(obj.state);
@@ -77,9 +79,6 @@ class VoiceNotificationManager {
       }
     };
     obj.getIcon = function getIcon(state) {
-      let deafened;
-      let isPushToTalk;
-      let selfMute;
       ({ deafened, selfMute, isPushToTalk } = state);
       const ServiceNotificationIcon = obj(table[12]).ServiceNotificationIcon;
       if (deafened) {
@@ -97,18 +96,11 @@ class VoiceNotificationManager {
       return items3;
     };
     obj.handleUpdate = function handleUpdate(connectionState) {
-      let deafened;
-      let isStreaming;
-      let selfMute;
-      let tmp4;
-      let tmp5;
-      let tmp7;
-      let tmp8;
       if (null != connectionState.connectionState) {
         let updateServiceHandlerResult = obj;
-        [tmp4, tmp5] = outer1_3(obj.getIcon(obj.state), 2);
-        const tmp3 = outer1_3(obj.getIcon(obj.state), 2);
-        [tmp7, tmp8] = outer1_3(obj.getIcon(connectionState), 2);
+        [tmp4, tmp5] = closure_1_3(obj.getIcon(obj.state), 2);
+        const tmp3 = closure_1_3(obj.getIcon(obj.state), 2);
+        [tmp7, tmp8] = closure_1_3(obj.getIcon(connectionState), 2);
         if (obj.state.channelId === connectionState.channelId) {
           if (updateServiceHandlerResult.state.connectionState === connectionState.connectionState) {
             if (updateServiceHandlerResult.state.selfMute === connectionState.selfMute) {
@@ -139,17 +131,17 @@ class VoiceNotificationManager {
         const embeddedActivity3 = connectionState.embeddedActivity;
         updateServiceHandlerResult.state = connectionState;
         ({ connectionState, selfMute, deafened, isStreaming } = connectionState);
-        const channel = outer1_7.getChannel(connectionState.channelId);
+        const channel = closure_1_7.getChannel(connectionState.channelId);
         if (null != channel) {
-          let tmp16 = outer1_1;
-          let updateServiceHandler = outer1_2;
+          let tmp16 = closure_1_1;
+          let updateServiceHandler = closure_1_2;
           let str2 = "";
           if (null != embeddedActivity3) {
             let applicationId;
             if (embeddedActivity3 != null) {
               applicationId = embeddedActivity3.applicationId;
             }
-            const application = outer1_5.getApplication(applicationId);
+            const application = closure_1_5.getApplication(applicationId);
             let name;
             if (application != null) {
               name = application.name;
@@ -158,9 +150,9 @@ class VoiceNotificationManager {
             str2 = " - " + tmp16(updateServiceHandler[15])(name);
             const tmp16Result = tmp16(updateServiceHandler[15]);
           }
-          const obj3 = outer1_1(outer1_2[14]);
+          const obj3 = closure_1_1(closure_1_2[14]);
           obj = { title: null, content: null, priority: null, contentAction: null, auxiliaryActions: null, type: null, usesGateway: true, icon: null, color: null };
-          const channelName = obj(updateServiceHandler[16]).computeChannelName(channel, outer1_11, outer1_10);
+          const channelName = obj(updateServiceHandler[16]).computeChannelName(channel, closure_1_11, closure_1_10);
           const intl = obj(updateServiceHandler[17]).intl;
           obj = { callState: null };
           obj[0] = obj3.getStatus(connectionState).connectionStatusText;
@@ -199,10 +191,10 @@ class VoiceNotificationManager {
           updateServiceHandlerResult = updateServiceHandler(updateServiceHandlerResult.voiceServiceHandlerId, obj);
           const obj4 = obj(updateServiceHandler[16]);
         } else {
-          outer1_1(outer1_2[13]).removeServiceHandler(updateServiceHandlerResult.voiceServiceHandlerId);
-          const obj2 = outer1_1(outer1_2[13]);
+          closure_1_1(closure_1_2[13]).removeServiceHandler(updateServiceHandlerResult.voiceServiceHandlerId);
+          const obj2 = closure_1_1(closure_1_2[13]);
         }
-        const tmp6 = outer1_3(obj.getIcon(connectionState), 2);
+        const tmp6 = closure_1_3(obj.getIcon(connectionState), 2);
       } else {
         obj.state = connectionState;
       }
@@ -217,25 +209,25 @@ class VoiceNotificationManager {
 }
 const prototype = VoiceNotificationManager.prototype;
 prototype["initialize"] = function initialize() {
-  createRTCConnection.addChangeListener(this.handleVoiceStateChange);
-  _detectH265HardwareDecode.addChangeListener(this.handleMediaEngineStateChange);
-  participantFromServer.addChangeListener(this.handleEmbeddedActivityStateChange);
-  reset.addChangeListener(this.handleApplicationStreamStateChange);
+  closure_9.addChangeListener(this.handleVoiceStateChange);
+  closure_8.addChangeListener(this.handleMediaEngineStateChange);
+  closure_4.addChangeListener(this.handleEmbeddedActivityStateChange);
+  closure_6.addChangeListener(this.handleApplicationStreamStateChange);
 };
 prototype["terminate"] = function terminate() {
-  createRTCConnection.removeChangeListener(this.handleVoiceStateChange);
-  _detectH265HardwareDecode.removeChangeListener(this.handleMediaEngineStateChange);
-  participantFromServer.removeChangeListener(this.handleEmbeddedActivityStateChange);
-  reset.removeChangeListener(this.handleApplicationStreamStateChange);
+  closure_9.removeChangeListener(this.handleVoiceStateChange);
+  closure_8.removeChangeListener(this.handleMediaEngineStateChange);
+  closure_4.removeChangeListener(this.handleEmbeddedActivityStateChange);
+  closure_6.removeChangeListener(this.handleApplicationStreamStateChange);
 };
-let set = Object.create(VoiceNotificationManager.prototype);
+set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "RCTView", embeddedActivity: "face_with_spiral_eyes", isStreaming: "woozy_face" };
+set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "sentry-feedback-screenshot-button", embeddedActivity: "onDismiss", isStreaming: "1212569433839636530" };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
-  const channelId = outer1_9.getChannelId();
-  const state = outer1_9.getState();
+  const channelId = closure_1_9.getChannelId();
+  const state = closure_1_9.getState();
   if (!tmp3) {
-    const obj = {};
+    obj = {};
     const merged = Object.assign(obj.state);
     obj.channelId = channelId;
     obj.connectionState = state;
@@ -243,8 +235,8 @@ set.handleVoiceStateChange = function handleVoiceStateChange() {
   }
 };
 set.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
-  let obj = outer1_8;
-  const tmp = outer1_8.isSelfMute() || obj.isSelfMutedTemporarily();
+  obj = closure_1_8;
+  const tmp = closure_1_8.isSelfMute() || obj.isSelfMutedTemporarily();
   const tmp2 = obj.isSelfDeaf() || obj.isDeaf();
   let tmp4 = obj.state.selfMute === tmp;
   const mode = obj.getMode();
@@ -266,14 +258,14 @@ set.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
 set.handleEmbeddedActivityStateChange = function handleEmbeddedActivityStateChange() {
   if (null != obj.state.channelId) {
     obj = {};
-    const currentEmbeddedActivity = outer1_4.getCurrentEmbeddedActivity();
+    const currentEmbeddedActivity = closure_1_4.getCurrentEmbeddedActivity();
     const merged = Object.assign(obj.state);
     obj.embeddedActivity = currentEmbeddedActivity;
     obj.handleUpdate(obj);
   }
 };
 set.handleApplicationStreamStateChange = function handleApplicationStreamStateChange() {
-  const tmp = null != outer1_6.getCurrentUserActiveStream();
+  const tmp = null != closure_1_6.getCurrentUserActiveStream();
   if (obj.state.isStreaming !== tmp) {
     obj = {};
     const merged = Object.assign(obj.state);
@@ -282,9 +274,6 @@ set.handleApplicationStreamStateChange = function handleApplicationStreamStateCh
   }
 };
 set.getIcon = function getIcon(state) {
-  let deafened;
-  let isPushToTalk;
-  let selfMute;
   ({ deafened, selfMute, isPushToTalk } = state);
   const ServiceNotificationIcon = obj(table[12]).ServiceNotificationIcon;
   if (deafened) {
@@ -302,18 +291,11 @@ set.getIcon = function getIcon(state) {
   return items3;
 };
 set.handleUpdate = function handleUpdate(connectionState) {
-  let deafened;
-  let isStreaming;
-  let selfMute;
-  let tmp4;
-  let tmp5;
-  let tmp7;
-  let tmp8;
   if (null != connectionState.connectionState) {
     let updateServiceHandlerResult = obj;
-    [tmp4, tmp5] = outer1_3(obj.getIcon(obj.state), 2);
-    const tmp3 = outer1_3(obj.getIcon(obj.state), 2);
-    [tmp7, tmp8] = outer1_3(obj.getIcon(connectionState), 2);
+    [tmp4, tmp5] = closure_1_3(obj.getIcon(obj.state), 2);
+    const tmp3 = closure_1_3(obj.getIcon(obj.state), 2);
+    [tmp7, tmp8] = closure_1_3(obj.getIcon(connectionState), 2);
     if (obj.state.channelId === connectionState.channelId) {
       if (updateServiceHandlerResult.state.connectionState === connectionState.connectionState) {
         if (updateServiceHandlerResult.state.selfMute === connectionState.selfMute) {
@@ -344,17 +326,17 @@ set.handleUpdate = function handleUpdate(connectionState) {
     const embeddedActivity3 = connectionState.embeddedActivity;
     updateServiceHandlerResult.state = connectionState;
     ({ connectionState, selfMute, deafened, isStreaming } = connectionState);
-    const channel = outer1_7.getChannel(connectionState.channelId);
+    const channel = closure_1_7.getChannel(connectionState.channelId);
     if (null != channel) {
-      let tmp16 = outer1_1;
-      let updateServiceHandler = outer1_2;
+      let tmp16 = closure_1_1;
+      let updateServiceHandler = closure_1_2;
       let str2 = "";
       if (null != embeddedActivity3) {
         let applicationId;
         if (embeddedActivity3 != null) {
           applicationId = embeddedActivity3.applicationId;
         }
-        const application = outer1_5.getApplication(applicationId);
+        const application = closure_1_5.getApplication(applicationId);
         let name;
         if (application != null) {
           name = application.name;
@@ -363,9 +345,9 @@ set.handleUpdate = function handleUpdate(connectionState) {
         str2 = " - " + tmp16(updateServiceHandler[15])(name);
         const tmp16Result = tmp16(updateServiceHandler[15]);
       }
-      const obj3 = outer1_1(outer1_2[14]);
+      const obj3 = closure_1_1(closure_1_2[14]);
       obj = { title: null, content: null, priority: null, contentAction: null, auxiliaryActions: null, type: null, usesGateway: true, icon: null, color: null };
-      const channelName = obj(updateServiceHandler[16]).computeChannelName(channel, outer1_11, outer1_10);
+      const channelName = obj(updateServiceHandler[16]).computeChannelName(channel, closure_1_11, closure_1_10);
       const intl = obj(updateServiceHandler[17]).intl;
       obj = { callState: null };
       obj[0] = obj3.getStatus(connectionState).connectionStatusText;
@@ -404,10 +386,10 @@ set.handleUpdate = function handleUpdate(connectionState) {
       updateServiceHandlerResult = updateServiceHandler(updateServiceHandlerResult.voiceServiceHandlerId, obj);
       const obj4 = obj(updateServiceHandler[16]);
     } else {
-      outer1_1(outer1_2[13]).removeServiceHandler(updateServiceHandlerResult.voiceServiceHandlerId);
-      const obj2 = outer1_1(outer1_2[13]);
+      closure_1_1(closure_1_2[13]).removeServiceHandler(updateServiceHandlerResult.voiceServiceHandlerId);
+      const obj2 = closure_1_1(closure_1_2[13]);
     }
-    const tmp6 = outer1_3(obj.getIcon(connectionState), 2);
+    const tmp6 = closure_1_3(obj.getIcon(connectionState), 2);
   } else {
     obj.state = connectionState;
   }
@@ -417,14 +399,15 @@ set.createAction = function createAction(channel, Disconnect, intl2) {
   obj = { channelId: channel.id };
   return obj;
 };
+initializeDefault;
 class VoiceNotificationLifecycleManager extends tmp3 {
 }
 const prototype2 = VoiceNotificationLifecycleManager.prototype;
 prototype2["_initialize"] = function _initialize() {
-  obj.initialize();
+  set.initialize();
 };
 prototype2["_terminate"] = function _terminate() {
-  obj.terminate();
+  set.terminate();
 };
 const voiceNotificationLifecycleManager = new VoiceNotificationLifecycleManager();
 const result = set.fileFinishedImporting("modules/voice_calls/native/VoiceNotificationManager.android.tsx");

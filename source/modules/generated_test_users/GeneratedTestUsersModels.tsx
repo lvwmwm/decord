@@ -1,11 +1,12 @@
-// Module ID: 13986
-// Function ID: 13987
+// Module ID: 14054
+// Function ID: 14055
 // Name: fromServer
 // Dependencies: [1931, 2]
 
-// Module 13986 (fromServer)
-import "toJS";
+// Module 14054 (fromServer)
+import toJSDefault from "toJS" /* 1931 */;
 
+toJSDefault;
 let GeneratedTestPoolRecord;
 class GeneratedTestPoolRecord extends tmp2 {
   constructor(arg0) {

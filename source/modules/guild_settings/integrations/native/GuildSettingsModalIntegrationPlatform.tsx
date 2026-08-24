@@ -1,38 +1,30 @@
-// Module ID: 16820
-// Function ID: 16821
+// Module ID: 16913
+// Function ID: 16914
 // Name: getDerivedStateFromProps
-// Dependencies: [19, 17, 8875, 676, 21, 4661, 712, 16781, 16821, 5097, 1435, 1363, 6286, 6291, 7178, 1236, 8874, 4656, 4763, 4097, 1500, 589, 4310, 6314, 5432, 7360, 1993, 8083, 4733, 4734, 6550, 2]
+// Dependencies: [19, 17, 8912, 676, 21, 4668, 712, 16874, 16914, 5102, 1435, 1363, 6317, 6322, 7216, 1236, 8911, 4662, 4768, 4100, 1500, 589, 4314, 6345, 5437, 7398, 1994, 8122, 4738, 4739, 6581, 2]
 // Exports: default
 
-// Module 16820 (getDerivedStateFromProps)
-import get_ActivityIndicator from "module_4656";
-import handleFormInit from "handleFormInit";
-import ME from "ME";
-import jsxProd from "initialize";
-import createCacheKey from "createCacheKey";
-import { Component } from "map";
-import importAllResult from "map";
+// Module 16913 (getDerivedStateFromProps)
+import ThemesDefault from "Themes" /* 712 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5102 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "handleFormInit" /* 8912 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c10;
-let c3;
-let c4;
-let c5;
-let c9;
-let closure_12;
-let error;
-let map1;
-let metroImportAll;
-let unpackModuleId;
 let require = arg1;
 ({ ActivityIndicator: c3, Image: c4, View: c5 } = get_ActivityIndicator);
-({ GuildSettingsSections: error, HelpdeskArticles: metroImportAll, PlatformTypes: c9, UserSettingsSections: c10 } = ME);
+({ GuildSettingsSections: error, HelpdeskArticles: closure_8, PlatformTypes: c9, UserSettingsSections: c10 } = ME);
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = jsxProd);
 createCacheKey = { form: null, trailingWrapper: null, platformIcon: null };
-createCacheKey = { paddingTop: require("Themes").space.PX_16 };
+createCacheKey = { paddingTop: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexDirection: "row", alignItems: "center" };
 createCacheKey[2] = { width: 24, height: 24 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_14 = createCacheKey.createStyles(createCacheKey);
+const Component = importAllResult.Component;
 class IntegrationItem extends Component {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -47,32 +39,32 @@ class IntegrationItem extends Component {
         if (integration.enabled) {
           setState({ enabled: false });
           let showResult = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, confirmColor: null };
-          const intl = applyArgumentsResult(outer1_2[15]).intl;
-          showResult[0] = intl.string(applyArgumentsResult(outer1_2[15]).t.emx3lN);
+          const intl = applyArgumentsResult(closure_1_2[15]).intl;
+          showResult[0] = intl.string(applyArgumentsResult(closure_1_2[15]).t.emx3lN);
           if ("youtube" === integration.type) {
-            const intl3 = tmp9(outer1_2[15]).intl;
-            let stringResult = intl3.string(tmp9(outer1_2[15]).t.anKQWU);
+            const intl3 = tmp9(closure_1_2[15]).intl;
+            let stringResult = intl3.string(tmp9(closure_1_2[15]).t.anKQWU);
           } else {
-            const intl2 = tmp9(outer1_2[15]).intl;
-            stringResult = intl2.string(tmp9(outer1_2[15]).t["BW/xtn"]);
+            const intl2 = tmp9(closure_1_2[15]).intl;
+            stringResult = intl2.string(tmp9(closure_1_2[15]).t["BW/xtn"]);
           }
           showResult[1] = stringResult;
-          const intl4 = tmp9(outer1_2[15]).intl;
-          showResult[2] = intl4.string(applyArgumentsResult(outer1_2[15]).t.R9GHya);
-          const intl5 = tmp9(outer1_2[15]).intl;
-          showResult[3] = intl5.string(applyArgumentsResult(outer1_2[15]).t["ETE/oC"]);
+          const intl4 = tmp9(closure_1_2[15]).intl;
+          showResult[2] = intl4.string(applyArgumentsResult(closure_1_2[15]).t.R9GHya);
+          const intl5 = tmp9(closure_1_2[15]).intl;
+          showResult[3] = intl5.string(applyArgumentsResult(closure_1_2[15]).t["ETE/oC"]);
           showResult[4] = function onConfirm() {
-            return outer2_1(outer2_2[16]).disableIntegration(guild.id, integration.id);
+            return closure_2_1(closure_2_2[16]).disableIntegration(guild.id, integration.id);
           };
           showResult[5] = function onCancel() {
             return guild.setState({ enabled: true });
           };
-          showResult[6] = outer1_1(outer1_2[18]).Colors.RED;
-          showResult = outer1_1(outer1_2[17]).show(showResult);
-          const obj2 = outer1_1(outer1_2[17]);
+          showResult[6] = closure_1_1(closure_1_2[18]).Colors.RED;
+          showResult = closure_1_1(closure_1_2[17]).show(showResult);
+          const obj2 = closure_1_1(closure_1_2[17]);
         } else {
           setState({ enabled: true });
-          showResult = outer1_1(outer1_2[16]);
+          showResult = closure_1_1(closure_1_2[16]);
           showResult.enableIntegration(guild.id, integration.type, integration.id);
         }
       }
@@ -98,28 +90,26 @@ IntegrationItem["getDerivedStateFromProps"] = function getDerivedStateFromProps(
   return tmp;
 };
 IntegrationItem.prototype["render"] = function render() {
-  let importDefault;
-  let styles;
   const self = this;
   const props = this.props;
   const integration = props.integration;
   ({ onPress: importDefault, styles } = props);
-  const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = integration(16781).SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS;
+  const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = integration(16874).SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS;
   if (SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS.includes(integration.type)) {
     const type = integration.type;
-    if (tmp(16821).IntegrationTypes.YOUTUBE === type) {
+    if (tmp(16914).IntegrationTypes.YOUTUBE === type) {
       const account = integration.account;
       let name;
       if (account != null) {
         name = account.name;
       }
       let combined = name;
-    } else if (tmp(16821).IntegrationTypes.TWITCH === type) {
+    } else if (tmp(16914).IntegrationTypes.TWITCH === type) {
       const _HermesInternal = HermesInternal;
       let str = "twitch.tv/";
       combined = "twitch.tv/" + integration.name;
     }
-    let obj = importDefault(5097);
+    let obj = getPlatformUserUrlDefault;
     const value = obj.get(integration.type);
     if (null == value) {
       str = undefined;
@@ -144,7 +134,7 @@ IntegrationItem.prototype["render"] = function render() {
       if (enabled) {
         syncing2 = integration.syncing;
       }
-      const obj1 = { hasIcons: true, children: null };
+      obj1 = { hasIcons: true, children: null };
       obj[5] = syncing2;
       obj[6] = function onPress() {
         let enabled = integration.enabled;
@@ -153,7 +143,7 @@ IntegrationItem.prototype["render"] = function render() {
         }
         return enabled;
       };
-      const items = [closure_11(tmp(6291).TableRow, obj), ];
+      const items = [closure_11(tmp(6322).TableRow, obj), ];
       const obj2 = { value: null, disabled: null, onValueChange: null, label: null };
       const _Boolean = Boolean;
       obj2[0] = Boolean(self.state.enabled);
@@ -161,9 +151,9 @@ IntegrationItem.prototype["render"] = function render() {
       obj2[2] = self.handleToggleEnabled;
       const intl = tmp(1236).intl;
       obj2[3] = intl.string(tmp(1236).t.vQC6vR);
-      items[1] = closure_11(tmp(7178).TableSwitchRow, obj2);
+      items[1] = closure_11(tmp(7216).TableSwitchRow, obj2);
       obj1[1] = items;
-      return closure_12(tmp(6286).TableRowGroup, obj1);
+      return closure_12(tmp(6317).TableRowGroup, obj1);
     } else {
       let tmpResult = tmp(1435);
       tmpResult = tmp(1363);
@@ -180,39 +170,37 @@ IntegrationItem.prototype["render"] = function render() {
     return null;
   }
 };
-const result = require("handleFormInit").fileFinishedImporting("modules/guild_settings/integrations/native/GuildSettingsModalIntegrationPlatform.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_settings/integrations/native/GuildSettingsModalIntegrationPlatform.tsx");
 
 export default function GuildSettingsModalIntegrationPlatform(platformType) {
-  let c5;
-  let guild;
   platformType = platformType.platformType;
   const closeGuildSettings = platformType.closeGuildSettings;
-  let dependencyMap;
+  dependencyMap = undefined;
   let navigation;
   let submitting;
   c5 = undefined;
   guild = undefined;
-  let closure_7;
+  closure_7 = undefined;
   function onSave() {
     if (null != guild) {
-      let obj = closeGuildSettings(_undefined[16]);
+      let obj = closeGuildSettings(8911);
       obj = { features: null };
       obj[0] = tmp.features;
       obj.saveGuild(tmp.id, obj);
     }
   }
-  let obj = platformType(4097);
+  let obj = platformType(4100);
   const token = obj.useToken(closeGuildSettings(712).modules.mobile.TABLE_ROW_PADDING);
-  const tmp5 = createCacheKey();
+  const tmp5 = callback();
   dependencyMap = tmp5;
-  let obj1 = platformType(1500);
+  obj1 = platformType(1500);
   navigation = obj1.useNavigation();
   let obj3 = platformType(589);
   const items = [guild];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => ({ guild: guild.getGuild(), submitting: guild.isSubmitting(), hasChanges: guild.hasChanges() }));
   submitting = stateFromStoresObject.submitting;
   ({ hasChanges: c5, guild } = stateFromStoresObject);
-  closure_7 = closeGuildSettings(4310)();
+  closure_7 = closeGuildSettings(4314)();
   let obj4 = platformType(589);
   const items1 = [guild];
   const stateFromStores = obj4.useStateFromStores(items1, () => guild.getProps().integrations);
@@ -228,7 +216,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     }
     obj = { headerLeft: null, title: null, headerRight: null };
     obj[0] = fn;
-    let tmp3Result = tmp3(5097);
+    let tmp3Result = tmp3(5102);
     const value = tmp3Result.get(platformType);
     let name;
     if (value != null) {
@@ -236,22 +224,22 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     }
     function onConectTap() {
       closeGuildSettings();
-      let obj = platformType(_undefined[25]);
-      obj = { screen: outer1_10.CONNECTIONS, isRootScreen: true };
+      let obj = platformType(7398);
+      obj = { screen: closure_1_10.CONNECTIONS, isRootScreen: true };
       obj.openUserSettings(obj);
     }
     obj[1] = name;
     obj[2] = function headerRight() {
       if (submitting) {
-        let tmp2 = outer1_11(platformType(_undefined[23]).HeaderSubmittingIndicator, {});
+        let tmp2 = closure_1_11(platformType(6345).HeaderSubmittingIndicator, {});
       } else {
         tmp2 = null;
         if (c5) {
           const obj = { text: null, onPress: null };
-          const intl = platformType(_undefined[15]).intl;
-          obj[0] = intl.string(platformType(_undefined[15]).t["R3BPH+"]);
+          const intl = platformType(1236).intl;
+          obj[0] = intl.string(platformType(1236).t["R3BPH+"]);
           obj[1] = onSave;
-          tmp2 = outer1_11(platformType(_undefined[24]).HeaderActionButton, obj);
+          tmp2 = closure_1_11(platformType(5437).HeaderActionButton, obj);
         }
       }
       return tmp2;
@@ -261,16 +249,16 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
       let intl = tmp(1236).intl;
       obj = { connectAction: null, helpdeskArticle: null };
       obj[0] = onConectTap;
-      tmp3Result = tmp3(1993);
+      tmp3Result = tmp3(1994);
       obj[1] = tmp3Result.getArticleURL(onSave.YOUTUBE_INTEGRATION);
       let formatResult = intl.format(tmp(1236).t["4OSAQ9"], obj);
     } else if (tmp10.TWITCH === platformType) {
       const intl2 = tmp(1236).intl;
       obj1 = { connectAction: null, helpdeskArticle: null };
       obj1[0] = onConectTap;
-      obj1[1] = tmp3(1993).getArticleURL(onSave.TWITCH_INTEGRATION);
+      obj1[1] = tmp3(1994).getArticleURL(onSave.TWITCH_INTEGRATION);
       formatResult = intl2.format(tmp(1236).t.ro1jEN, obj1);
-      const tmp3Result1 = tmp3(1993);
+      const tmp3Result1 = tmp3(1994);
     }
     const obj2 = { style: null, contentContainerStyle: null, children: null };
     obj2[0] = tmp5.form;
@@ -283,14 +271,14 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     let mapped;
     if (found != null) {
       mapped = found.map((id) => {
-        let closure_0 = arg1;
-        return outer1_11(outer1_15, {
+        closure_0 = arg1;
+        return closure_1_11(closure_1_15, {
           guild,
           theme: closure_7,
           integration: id,
-          styles: c2,
+          styles: closure_2,
           onPress() {
-            outer1_3.push(constants.INTEGRATION_SETTINGS, { integrationId: closure_0 });
+            closure_1_3.push(constants.INTEGRATION_SETTINGS, { integrationId: closure_0 });
           }
         }, id.id);
       });
@@ -299,10 +287,10 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     const items2 = [mapped, ];
     const obj6 = { variant: "text-sm/medium", color: "text-muted", children: null };
     obj6[2] = formatResult;
-    items2[1] = closure_11(tmp(4734).Text, obj6);
+    items2[1] = closure_11(tmp(4739).Text, obj6);
     obj3[2] = items2;
-    obj2[2] = closure_12(tmp(4733).Stack, obj3);
-    const items3 = [closure_11(tmp(8083).Form, obj2), closure_11(tmp(6550).NavScrim, {})];
+    obj2[2] = closure_12(tmp(4738).Stack, obj3);
+    const items3 = [closure_11(tmp(8122).Form, obj2), closure_11(tmp(6581).NavScrim, {})];
     obj5[0] = items3;
     return closure_12(closure_13, obj5);
   }

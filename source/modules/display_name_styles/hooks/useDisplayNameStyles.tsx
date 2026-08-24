@@ -1,26 +1,25 @@
-// Module ID: 4815
-// Function ID: 4816
+// Module ID: 4820
+// Function ID: 4821
 // Name: useDisplayNameStyles
-// Dependencies: [19, 1990, 1922, 4816, 589, 4818, 2]
+// Dependencies: [19, 1991, 1922, 4821, 589, 4823, 2]
 // Exports: default
 
-// Module 4815 (useDisplayNameStyles)
-import { useContext } from "noop";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 4820 (useDisplayNameStyles)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
 
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStyles.tsx");
+const useContext = noop.useContext;
+const result = set.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStyles.tsx");
 
 export default function useDisplayNameStyles() {
-  let guildId;
-  let ignoreDisabledStylesSetting;
-  let pendingDisplayNameStyles;
-  let require;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
   ({ userId: require, guildId } = obj);
+  importDefault = guildId;
   ({ pendingDisplayNameStyles, ignoreDisabledStylesSetting } = obj);
   if (ignoreDisabledStylesSetting === undefined) {
     ignoreDisabledStylesSetting = false;
@@ -30,29 +29,29 @@ export default function useDisplayNameStyles() {
   const obj2 = require(stateFromStores[3]);
   const tmp = require;
   const tmp2 = stateFromStores;
-  const items = [mergeGuildAvatar];
+  const items = [closure_5];
   stateFromStores = require(stateFromStores[4]).useStateFromStores(items, () => {
     if (null != closure_0) {
-      let user = outer1_5.getUser(tmp);
+      let user = closure_1_5.getUser(tmp);
     } else {
-      user = outer1_5.getCurrentUser();
+      user = closure_1_5.getCurrentUser();
     }
     return user;
   });
-  const tmp5 = useContext(guildId(stateFromStores[5]));
+  const tmp5 = useContext(importDefault(stateFromStores[5]));
   let tmp6 = null;
   if (null == guildId) {
-    guildId = tmp5;
+    importDefault = tmp5;
     guildId = tmp5;
   }
   const obj3 = require(stateFromStores[4]);
-  const items1 = [trackCommunicationDisabled];
+  const items1 = [closure_4];
   const stateFromStores1 = tmp(tmp2[4]).useStateFromStores(items1, () => {
     let member = null;
-    if (null != guildId) {
+    if (null != closure_1) {
       member = null;
       if (null != stateFromStores) {
-        member = outer1_4.getMember(tmp, tmp3.id);
+        member = closure_1_4.getMember(tmp, tmp3.id);
       }
     }
     return member;

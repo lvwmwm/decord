@@ -1,28 +1,27 @@
-// Module ID: 8282
-// Function ID: 8283
+// Module ID: 8322
+// Function ID: 8323
 // Name: createVoiceSessionSystemMessage
-// Dependencies: [1391, 8203, 8185, 8283, 1236, 8187, 8188, 2]
+// Dependencies: [1391, 8243, 8225, 8323, 1236, 8227, 8228, 2]
 // Exports: createVoiceSessionSystemMessage
 
-// Module 8282 (createVoiceSessionSystemMessage)
-import ensureGuildLoaded from "ensureGuildLoaded";
+// Module 8322 (createVoiceSessionSystemMessage)
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8243 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;
-const result = require("getMessageAuthorWithProcessedColor").fileFinishedImporting("modules/messages/native/renderer/system_messages/VoiceSessionSystemMessage.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/VoiceSessionSystemMessage.tsx");
 
 export const createVoiceSessionSystemMessage = function createVoiceSessionSystemMessage(message) {
-  let roleStyle;
   ({ message, roleStyle } = message);
   let _require;
   _require = channel.getChannel(message.channel_id);
-  const tmp3 = importDefault(8203)(message);
-  let obj = _require(8185);
+  const tmp3 = getHumanizedCallDurationDefault(message);
+  let obj = _require(8225);
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  let obj1 = _require(8283);
+  obj1 = _require(8323);
   const sortedVoiceSessionParticipants = obj1.getSortedVoiceSessionParticipants(message);
   const mapped = sortedVoiceSessionParticipants.map((user) => {
-    const obj = { user, messageAuthor: null };
-    obj[1] = callback(outer1_2[2]).getUserAuthorWithProcessedColor(user, callback);
+    const obj = { user, messageAuthor: callback(closure_1_2[2]).getUserAuthorWithProcessedColor(user, callback) };
     return obj;
   });
   if (null == tmp3) {
@@ -33,7 +32,7 @@ export const createVoiceSessionSystemMessage = function createVoiceSessionSystem
     obj[0] = message;
     obj[1] = messageAuthorWithProcessedColor;
     obj[2] = roleStyle;
-    obj[1] = tmp(8187)(obj);
+    obj[1] = tmp(8227)(obj);
     let formatToPartsResult = intl.formatToParts(tmp4(1236).t.HzBfIN, obj);
   } else {
     const intl2 = tmp4(1236).intl;
@@ -44,7 +43,7 @@ export const createVoiceSessionSystemMessage = function createVoiceSessionSystem
     obj2[0] = message;
     obj2[1] = messageAuthorWithProcessedColor;
     obj2[2] = roleStyle;
-    obj1[2] = tmp(8187)(obj2);
+    obj1[2] = tmp(8227)(obj2);
     const first = mapped[0];
     let nick;
     if (first != null) {
@@ -58,7 +57,7 @@ export const createVoiceSessionSystemMessage = function createVoiceSessionSystem
       obj3[1] = message;
       obj3[2] = mapped[0].messageAuthor;
       obj3[3] = roleStyle;
-      tmp7 = tmp(8187)(obj3);
+      tmp7 = tmp(8227)(obj3);
     }
     obj1[4] = tmp7;
     let nick1;
@@ -73,13 +72,13 @@ export const createVoiceSessionSystemMessage = function createVoiceSessionSystem
       obj4[1] = message;
       obj4[2] = mapped[1].messageAuthor;
       obj4[3] = roleStyle;
-      tmp10 = tmp(8187)(obj4);
+      tmp10 = tmp(8227)(obj4);
     }
     obj1[6] = tmp10;
     obj1[7] = mapped.length - 1;
     obj1[8] = tmp3;
     formatToPartsResult = intl2.formatToParts(tmp4(1236).t.atbXuX, obj1);
   }
-  const merged = Object.assign(tmp(8188)(message));
+  const merged = Object.assign(tmp(8228)(message));
   return { content: formatToPartsResult };
 };

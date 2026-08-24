@@ -1,56 +1,52 @@
-// Module ID: 13456
-// Function ID: 13457
+// Module ID: 13514
+// Function ID: 13515
 // Name: HelpMessage
-// Dependencies: [19, 17, 21, 4661, 712, 688, 8074, 4330, 7341, 4335, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 688, 8113, 4334, 7379, 4339, 4739, 2]
 // Exports: default
 
-// Module 13456 (HelpMessage)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import int2hslRaw from "int2hslRaw";
-import int2hslRaw from "int2hslRaw";
-import int2hslRaw from "int2hslRaw";
-import int2hslRaw from "int2hslRaw";
-import int2hslRaw from "int2hslRaw";
-import int2hslRaw from "int2hslRaw";
-import int2hslRaw from "int2hslRaw";
-import int2hslRaw from "int2hslRaw";
+// Module 13514 (HelpMessage)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4334 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4339 */;
+import Text from "Text" /* 4739 */;
+import CircleXIcon from "CircleXIcon" /* 7379 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 8113 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import int2hslRaw from "int2hslRaw" /* 688 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, row: null, content: null, warningContainer: null, infoContainer: null, errorContainer: null, successContainer: null };
-createCacheKey = { padding: require("Themes").space.PX_8, borderWidth: 1, borderStyle: "solid", gap: require("Themes").space.PX_8 };
+createCacheKey = { padding: ThemesDefault.space.PX_8, borderWidth: 1, borderStyle: "solid", gap: ThemesDefault.space.PX_8 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { display: "flex", flexDirection: "row", alignItems: "center" };
-createCacheKey[2] = { flex: 1, marginLeft: require("Themes").space.PX_8 };
+createCacheKey[2] = { flex: 1, marginLeft: ThemesDefault.space.PX_8 };
 let obj2 = { backgroundColor: null, borderColor: null };
-obj2[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(require("Themes").unsafe_rawColors.YELLOW_300), 0.1);
-obj2[1] = require("Themes").unsafe_rawColors.YELLOW_300;
+obj2[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(ThemesDefault.unsafe_rawColors.YELLOW_300), 0.1);
+obj2[1] = ThemesDefault.unsafe_rawColors.YELLOW_300;
 createCacheKey[3] = obj2;
 let obj3 = { backgroundColor: null, borderColor: null };
-obj3[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(require("Themes").unsafe_rawColors.BLUE_345), 0.1);
-obj3[1] = require("Themes").unsafe_rawColors.BLUE_345;
+obj3[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(ThemesDefault.unsafe_rawColors.BLUE_345), 0.1);
+obj3[1] = ThemesDefault.unsafe_rawColors.BLUE_345;
 createCacheKey[4] = obj3;
 const obj4 = { backgroundColor: null, borderColor: null };
-obj4[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(require("Themes").unsafe_rawColors.RED_400), 0.1);
-obj4[1] = require("Themes").unsafe_rawColors.RED_400;
+obj4[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(ThemesDefault.unsafe_rawColors.RED_400), 0.1);
+obj4[1] = ThemesDefault.unsafe_rawColors.RED_400;
 createCacheKey[5] = obj4;
 int2hslRaw = { backgroundColor: null, borderColor: null };
-int2hslRaw[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(require("Themes").unsafe_rawColors.GREEN_400), 0.1);
-int2hslRaw[1] = require("Themes").unsafe_rawColors.GREEN_400;
+int2hslRaw[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(ThemesDefault.unsafe_rawColors.GREEN_400), 0.1);
+int2hslRaw[1] = ThemesDefault.unsafe_rawColors.GREEN_400;
 createCacheKey[6] = int2hslRaw;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_6 = createCacheKey.createStyles(createCacheKey);
 int2hslRaw = { WARNING: 0, [0]: "WARNING", INFO: 1, [1]: "INFO", ERROR: 2, [2]: "ERROR", SUCCESS: 3, [3]: "SUCCESS" };
-let obj1 = { flex: 1, marginLeft: require("Themes").space.PX_8 };
-const result = require("jsxProd").fileFinishedImporting("design/void/HelpMessage/native/HelpMessage.tsx");
+let obj1 = { flex: 1, marginLeft: ThemesDefault.space.PX_8 };
+const result = require("set").fileFinishedImporting("design/void/HelpMessage/native/HelpMessage.tsx");
 
 export default function HelpMessage(children) {
-  let messageType;
-  let textVariant;
   ({ messageType, textVariant } = children);
   if (textVariant === undefined) {
     textVariant = "text-sm/medium";
@@ -61,9 +57,9 @@ export default function HelpMessage(children) {
   }
   let xs = children.borderRadius;
   if (xs === undefined) {
-    xs = importDefault(712).radii.xs;
+    xs = ThemesDefault.radii.xs;
   }
-  const tmp3 = createCacheKey();
+  const tmp3 = callback2();
   const items = [tmp3.container, , ];
   if (int2hslRaw.WARNING === messageType) {
     let successContainer = tmp3.warningContainer;
@@ -80,22 +76,22 @@ export default function HelpMessage(children) {
   obj = { style: tmp3.row, children: null };
   if (int2hslRaw.WARNING === messageType) {
     obj = { color: null };
-    obj[0] = importDefault(712).unsafe_rawColors.YELLOW_300;
-    let tmp7 = callback(require(8074) /* CircleErrorIcon */.CircleErrorIcon, obj);
+    obj[0] = ThemesDefault.unsafe_rawColors.YELLOW_300;
+    let tmp7 = callback(CircleErrorIcon.CircleErrorIcon, obj);
   } else if (tmp6.INFO === messageType) {
-    const obj1 = { color: null };
-    obj1[0] = importDefault(712).unsafe_rawColors.BLUE_345;
-    tmp7 = callback(require(4330) /* CircleInformationIcon */.CircleInformationIcon, obj1);
+    obj1 = { color: null };
+    obj1[0] = ThemesDefault.unsafe_rawColors.BLUE_345;
+    tmp7 = callback(CircleInformationIcon.CircleInformationIcon, obj1);
   } else if (tmp6.ERROR === messageType) {
     const obj2 = { color: null };
-    obj2[0] = importDefault(712).unsafe_rawColors.RED_400;
-    tmp7 = callback(require(7341) /* CircleXIcon */.CircleXIcon, obj2);
+    obj2[0] = ThemesDefault.unsafe_rawColors.RED_400;
+    tmp7 = callback(CircleXIcon.CircleXIcon, obj2);
   } else if (tmp6.SUCCESS === messageType) {
     const obj3 = { color: null };
-    obj3[0] = importDefault(712).unsafe_rawColors.GREEN_400;
-    tmp7 = callback(require(4335) /* CircleCheckIcon */.CircleCheckIcon, obj3);
+    obj3[0] = ThemesDefault.unsafe_rawColors.GREEN_400;
+    tmp7 = callback(CircleCheckIcon.CircleCheckIcon, obj3);
   }
-  const items1 = [tmp7, callback(require(4734) /* Text */.Text, { style: tmp3.content, color: str, variant: textVariant, children: children.children })];
+  const items1 = [tmp7, callback(Text.Text, { style: tmp3.content, color: str, variant: textVariant, children: children.children })];
   obj[1] = items1;
   const items2 = [closure_5(View, obj), children.button];
   obj[1] = items2;

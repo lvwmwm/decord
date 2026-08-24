@@ -1,21 +1,20 @@
-// Module ID: 8651
-// Function ID: 8652
+// Module ID: 8688
+// Function ID: 8689
 // Name: PortalToNativeView
-// Dependencies: [19, 17, 21, 4661, 2]
+// Dependencies: [19, 17, 21, 4668, 2]
 // Exports: default
 
-// Module 8651 (PortalToNativeView)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8688 (PortalToNativeView)
+import noopAll from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+noopAll;
 let closure_1 = require("get ActivityIndicator").requireNativeComponent("PortalToNativeView");
 let closure_2 = createCacheKey.createStyles({ portal: { position: "absolute", opacity: 0, height: 0, right: 0, left: 0, top: 0 } });
-const result = require("jsxProd").fileFinishedImporting("modules/portals/PortalToNativeView.native.tsx");
+const result = require("set").fileFinishedImporting("modules/portals/PortalToNativeView.native.tsx");
 
 export default function PortalToNativeView(arg0) {
-  let children;
-  let portalId;
   ({ portalId, children } = arg0);
   return <closure_1 pointerEvents="none" portalId={portalId} style={callback().portal}>{children}</closure_1>;
 };

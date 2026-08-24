@@ -1,12 +1,13 @@
-// Module ID: 7610
-// Function ID: 7611
+// Module ID: 7648
+// Function ID: 7649
 // Name: createFromServer
-// Dependencies: [1931, 7422, 2]
+// Dependencies: [1931, 7460, 2]
 
-// Module 7610 (createFromServer)
-import "toJS";
-import createFromServer from "createFromServer";
+// Module 7648 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
+import closure_0 from "createFromServer" /* 7460 */;
 
+toJSDefault;
 let UserDiscountOfferRecord;
 class UserDiscountOfferRecord extends tmp2 {
   constructor(arg0) {
@@ -32,10 +33,8 @@ class UserDiscountOfferRecord extends tmp2 {
 }
 const prototype = UserDiscountOfferRecord.prototype;
 UserDiscountOfferRecord["createFromServer"] = function createFromServer(discount) {
-  let discount_id;
-  let id;
   ({ id, discount_id } = discount);
-  const fromServer = createFromServer.createFromServer(discount.discount);
+  const fromServer = closure_0.createFromServer(discount.discount);
   const user_id = discount.user_id;
   let date = null;
   if (null != discount.applied_at) {

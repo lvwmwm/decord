@@ -1,24 +1,23 @@
-// Module ID: 4369
-// Function ID: 4370
+// Module ID: 4373
+// Function ID: 4374
 // Name: InviteTypes
-// Dependencies: [4370, 1395, 4371, 4372, 2]
+// Dependencies: [4374, 1395, 4375, 4376, 2]
 // Exports: getGuildInviteExtendedType, getInviteType, isEmbeddedApplicationInvite, isFriendInvite, isGroupDMInvite, isGuildScheduledEventInviteEmbed, isRoleSubscriptionInvite, isStreamInvite, isVoiceChannelInvite
 
-// Module 4369 (InviteTypes)
-import { isEventUpcoming } from "scheduledEventSort";
-import createChannelRecord from "createChannelRecord";
-import InviteSendStates from "InviteSendStates";
+// Module 4373 (InviteTypes)
+import set from "set" /* 2 */;
+import scheduledEventSort from "scheduledEventSort" /* 4374 */;
+import getEstablishedDate from "getEstablishedDate" /* 4376 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import InviteSendStates from "InviteSendStates" /* 4375 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
+const isEventUpcoming = scheduledEventSort.isEventUpcoming;
 ({ isGuildVocalChannelType: c3, isMultiUserDM: c4 } = createChannelRecord);
 ({ InviteTargetTypes: c5, InviteTypes: closure_6 } = InviteSendStates);
 let obj = { EVENT: "event", APPLICATION: "application", PROFILE: "profile", DEFAULT: "default", VOICE_CHANNEL: "voice_channel" };
-const result = require("InviteSendStates").fileFinishedImporting("modules/instant_invite/InviteTypeUtils.tsx");
+const result = set.fileFinishedImporting("modules/instant_invite/InviteTypeUtils.tsx");
 
-export const InviteTypes = require("InviteSendStates").InviteTypes;
+export const InviteTypes = InviteSendStates.InviteTypes;
 export const isGroupDMInvite = function isGroupDMInvite(invite) {
   let tmp = invite.type === constants2.GROUP_DM;
   if (!tmp) {
@@ -103,7 +102,7 @@ export const getGuildInviteExtendedType = function getGuildInviteExtendedType(in
   } else if (invite.target_type === constants.EMBEDDED_APPLICATION) {
     PROFILE = obj.APPLICATION;
   } else {
-    obj = require(4372) /* getEstablishedDate */;
+    obj = getEstablishedDate;
     if (obj.guildInviteCanEmbedProfile(invite)) {
       PROFILE = obj.PROFILE;
     } else {

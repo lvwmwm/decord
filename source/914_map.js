@@ -4,13 +4,15 @@
 // Dependencies: [821]
 
 // Module 914 (map)
-const require = arg1;
+import _mod821 from "module_821" /* 821 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 const map = new Map();
 const set = new Set();
 arg5.addMetadataToStackFrames = function addMetadataToStackFrames(arg0, exception) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   exception = exception.exception;
   if (exception != null) {
     const values = exception.values;
@@ -59,7 +61,7 @@ arg5.addMetadataToStackFrames = function addMetadataToStackFrames(arg0, exceptio
                       }
                     }
                   })(closure_0);
-                  const value = outer1_2.get(filename.filename);
+                  const value = closure_1_2.get(filename.filename);
                   if (value) {
                     filename.module_metadata = value;
                   }
@@ -74,15 +76,15 @@ arg5.addMetadataToStackFrames = function addMetadataToStackFrames(arg0, exceptio
 };
 arg5.getFilenameToMetadataMap = function getFilenameToMetadataMap(arg0) {
   const obj = {};
-  if (require(821).GLOBAL_OBJ._sentryModuleMetadata) {
+  if (_mod821.GLOBAL_OBJ._sentryModuleMetadata) {
     const _Object = Object;
-    const keys = Object.keys(tmp2(821).GLOBAL_OBJ._sentryModuleMetadata);
+    const keys = Object.keys(_mod821.GLOBAL_OBJ._sentryModuleMetadata);
     for (const item10026 of keys) {
       let tmp11 = require;
       let tmp12 = require;
       let tmp13 = dependencyMap;
       let tmp14 = dependencyMap;
-      let tmp15 = require(821).GLOBAL_OBJ._sentryModuleMetadata[item10026];
+      let tmp15 = _mod821.GLOBAL_OBJ._sentryModuleMetadata[item10026];
       let obj2 = arg0(item10026);
       let reversed = obj2.reverse();
       let tmp17 = reversed;
@@ -105,7 +107,7 @@ arg5.getFilenameToMetadataMap = function getFilenameToMetadataMap(arg0) {
     return obj;
   }
   const tmp = require;
-  tmp2 = require;
+  const tmp2 = require;
   const tmp3 = dependencyMap;
 };
 arg5.getMetadataForUrl = function getMetadataForUrl(closure_0) {

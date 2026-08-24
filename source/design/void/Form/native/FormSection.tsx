@@ -1,53 +1,35 @@
-// Module ID: 7692
-// Function ID: 7693
+// Module ID: 7730
+// Function ID: 7731
 // Name: FormSection
-// Dependencies: [19, 17, 1301, 21, 4661, 712, 6939, 6937, 7693, 6286, 7694, 500, 2]
+// Dependencies: [19, 17, 1301, 21, 4668, 712, 6977, 6975, 7731, 6317, 7732, 500, 2]
 // Exports: default
 
-// Module 7692 (FormSection)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { TitleStyleType } from "semanticColor";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7730 (FormSection)
+import ThemesDefault from "Themes" /* 712 */;
+import context from "context" /* 6977 */;
+import DividerDefault from "Divider" /* 7731 */;
+import FormTitleDefault from "FormTitle" /* 7732 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { TitleStyleType } from "semanticColor" /* 1301 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let Platform;
-let StyleSheet;
-let c4;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 ({ View: c4, StyleSheet, Platform } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { titledSectionHeader: null, titledSectionNoBorder: null, titledSectionNoBorderOrMargin: null, emptySectionHeader: null, sectionBody: null, sectionBodyIOSBorder: null };
-createCacheKey = { borderTopWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, marginTop: 16 };
+createCacheKey = { borderTopWidth: 1, borderColor: ThemesDefault.colors.BORDER_SUBTLE, marginTop: 16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { marginTop: 24 };
 createCacheKey[2] = {};
 createCacheKey[3] = { marginTop: 24 };
 createCacheKey[4] = {};
 createCacheKey[5] = {};
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("semanticColor").fileFinishedImporting("design/void/Form/native/FormSection.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("design/void/Form/native/FormSection.tsx");
 
 export default function FormSection(arg0) {
-  let accessibilityLabel;
-  let accessibilityRole;
-  let children;
-  let description;
-  let error;
-  let hasIcons;
-  let hint;
-  let icon;
-  let inset;
-  let sectionBodyStyle;
-  let thinTitle;
-  let title;
-  let titleStyleType;
-  let titleTextStyle;
-  let titleViewStyle;
-  let uppercaseTitle;
-  let wrapperStyle;
   ({ children, inset } = arg0);
   ({ icon, thinTitle } = arg0);
   if (inset === undefined) {
@@ -59,15 +41,15 @@ export default function FormSection(arg0) {
   }
   ({ error, hint, hasIcons } = arg0);
   ({ titleViewStyle, titleTextStyle, sectionBodyStyle, wrapperStyle } = arg0);
-  const tmp2 = createCacheKey();
+  const tmp2 = callback2();
   let obj = React;
-  if (React.useContext(require(6939) /* context */.RedesignCompatContext)) {
+  if (React.useContext(context.RedesignCompatContext)) {
     const Children = obj.Children;
     const toArrayResult = Children.toArray(children);
     const found = toArrayResult.filter((type) => {
-      let isValidElementResult = noop.isValidElement(type);
+      let isValidElementResult = closure_3.isValidElement(type);
       if (isValidElementResult) {
-        isValidElementResult = type.type !== callback(7693);
+        isValidElementResult = type.type !== callback(7731);
       }
       return isValidElementResult;
     });
@@ -75,7 +57,7 @@ export default function FormSection(arg0) {
     obj[0] = { marginBottom: 24 };
     obj = { style: null, children: null };
     obj[0] = { paddingHorizontal: 12 };
-    const obj1 = { title: null, hasIcons: null, hasTrailingText: null, children: null };
+    obj1 = { title: null, hasIcons: null, hasTrailingText: null, children: null };
     obj1[0] = title;
     if (hasIcons == null) {
       hasIcons = tmp17;
@@ -85,7 +67,7 @@ export default function FormSection(arg0) {
     let flag = false;
     if (obj.isValidElement(element)) {
       flag = false;
-      if (element.type !== importDefault(7693)) {
+      if (element.type !== DividerDefault) {
         flag = false;
         if (null != element.props) {
           const props = element.props;
@@ -96,7 +78,7 @@ export default function FormSection(arg0) {
     }
     obj1[2] = flag;
     obj1[3] = found;
-    obj[1] = callback(tmp3(6286).TableRowGroup, obj1);
+    obj[1] = callback(tmp3(6317).TableRowGroup, obj1);
     const items = [callback(closure_4, obj), ];
     let tmp20Result = null;
     if (null != hint) {
@@ -126,8 +108,8 @@ export default function FormSection(arg0) {
       obj3[5] = thinTitle;
       obj3[6] = uppercaseTitle;
       obj3[7] = inset;
-      tmp6 = callback(importDefault(7694), obj3);
-      const tmp10 = importDefault(7694);
+      tmp6 = callback(FormTitleDefault, obj3);
+      const tmp10 = FormTitleDefault;
     }
     const emptySectionHeader = tmp2.emptySectionHeader;
     let titledSectionNoBorderOrMargin = emptySectionHeader;

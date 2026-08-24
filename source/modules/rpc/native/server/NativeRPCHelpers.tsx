@@ -1,21 +1,21 @@
-// Module ID: 8756
-// Function ID: 8757
+// Module ID: 8793
+// Function ID: 8794
 // Name: validateSocketClient
-// Dependencies: [5, 4277, 676, 8757, 8752, 2]
+// Dependencies: [5, 4281, 676, 8794, 8789, 2]
 // Exports: getDeprecatedVoiceSettings, getVoiceSettings, validateSocketClient
 
-// Module 8756 (validateSocketClient)
-import { TransportTypes } from "RPC_SCOPE_CONFIG";
-import { RPCCloseCodes } from "ME";
-import importDefaultResult from "set";
+// Module 8793 (validateSocketClient)
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4281 */;
+import { RPCCloseCodes } from "ME" /* 676 */;
+import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 
 let closure_0 = arg1;
-closure_0 = require("set")((arg0, arg1, arg2) => {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let closure_2 = arg2;
-  let c5 = 0;
-  let c6 = 0;
+closure_0 = importDefaultResult((arg0, arg1, arg2) => {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  closure_2 = arg2;
+  c5 = 0;
+  c6 = 0;
   return (function*(arg0, arg1, arg2) {
     if (c6 === 2) {
       c6 = 3;
@@ -28,7 +28,7 @@ closure_0 = require("set")((arg0, arg1, arg2) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -43,26 +43,26 @@ closure_0 = require("set")((arg0, arg1, arg2) => {
             obj[0] = arg1;
             return obj;
           } else {
-            let c4 = 0;
-            let closure_3 = tmp2;
-            const result = callback(8757).validateOriginAndUpdateSocket(callback, callback2);
+            c4 = 0;
+            closure_3 = tmp2;
+            const result = callback(8794).validateOriginAndUpdateSocket(callback, callback2);
             if (null == dependencyMap) {
-              const obj1 = { closeCode: null };
-              obj1[0] = outer1_4.INVALID_CLIENTID;
-              const tmp23 = new callback2(8752)(obj1, "No Client ID Specified");
+              obj1 = { closeCode: null };
+              obj1[0] = closure_1_4.INVALID_CLIENTID;
+              const tmp23 = new callback2(8789)(obj1, "No Client ID Specified");
               c6 = 3;
               const obj2 = { value: null, done: true };
               obj2[0] = Promise.reject(tmp23);
               return obj2;
             } else {
-              let obj3 = callback(8757);
+              let obj3 = callback(8794);
               c5 = 1;
               c6 = 1;
               obj3 = { value: null, done: false };
-              obj3[0] = obj3.processSocketThrottlers(tmp33, tmp31.transport !== outer1_3.POST_MESSAGE, tmp31.abortController.signal);
+              obj3[0] = obj3.processSocketThrottlers(tmp33, tmp31.transport !== closure_1_3.POST_MESSAGE, tmp31.abortController.signal);
               return obj3;
             }
-            const obj10 = callback(8757);
+            const obj10 = callback(8794);
             tmp33 = dependencyMap;
           }
         } else if (arg0 === 1) {
@@ -74,7 +74,7 @@ closure_0 = require("set")((arg0, arg1, arg2) => {
           obj4[0] = arg1;
           return obj4;
         } else {
-          obj = callback(8757);
+          obj = callback(8794);
           c6 = 3;
           const obj5 = { value: null, done: true };
           obj5[0] = obj.validateSocketApplication(callback, dependencyMap, callback2);
@@ -87,7 +87,7 @@ closure_0 = require("set")((arg0, arg1, arg2) => {
     }
   })();
 });
-let result = require("ME").fileFinishedImporting("modules/rpc/native/server/NativeRPCHelpers.tsx");
+let result = require("set").fileFinishedImporting("modules/rpc/native/server/NativeRPCHelpers.tsx");
 
 export const validateSocketClient = function() {
   const self = this;
@@ -99,5 +99,5 @@ export const validateSocketClient = function() {
   }
   return applyArgumentsResult;
 };
-export const getDeprecatedVoiceSettings = () => callback(8757).getDeprecatedVoiceSettingsWithShortcut(() => []);
-export const getVoiceSettings = (arg0) => callback(8757).getVoiceSettingsWithShortcut(arg0, () => "");
+export const getDeprecatedVoiceSettings = () => callback(8794).getDeprecatedVoiceSettingsWithShortcut(() => []);
+export const getVoiceSettings = (arg0) => callback(8794).getVoiceSettingsWithShortcut(arg0, () => "");

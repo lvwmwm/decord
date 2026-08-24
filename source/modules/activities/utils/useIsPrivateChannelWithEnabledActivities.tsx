@@ -1,19 +1,19 @@
-// Module ID: 8700
-// Function ID: 8701
+// Module ID: 8737
+// Function ID: 8738
 // Name: useIsPrivateChannelWithEnabledActivities
 // Dependencies: [1391, 647, 2]
 // Exports: default, isPrivateChannelWithEnabledActivities
 
-// Module 8700 (useIsPrivateChannelWithEnabledActivities)
-import ensureGuildLoaded from "ensureGuildLoaded";
+// Module 8737 (useIsPrivateChannelWithEnabledActivities)
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/utils/useIsPrivateChannelWithEnabledActivities.tsx");
 
 export default function useIsPrivateChannelWithEnabledActivities(arg0) {
   const _require = arg0;
-  const items = [ensureGuildLoaded];
-  const stateFromStores = _require(647).useStateFromStores(items, () => outer1_2.getChannel(closure_0));
+  const items = [closure_2];
+  const stateFromStores = _require(647).useStateFromStores(items, () => closure_1_2.getChannel(closure_0));
   let flag;
   if (stateFromStores != null) {
     flag = stateFromStores.isPrivate();

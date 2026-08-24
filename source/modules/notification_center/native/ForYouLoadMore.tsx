@@ -1,26 +1,26 @@
-// Module ID: 15703
-// Function ID: 15704
+// Module ID: 15772
+// Function ID: 15773
 // Name: ForYouLoadMore
-// Dependencies: [19, 17, 4801, 21, 4661, 647, 4745, 1236, 2]
+// Dependencies: [19, 17, 4806, 21, 4668, 647, 4750, 1236, 2]
 // Exports: ForYouLoadMore
 
-// Module 15703 (ForYouLoadMore)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _validate from "_validate";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15772 (ForYouLoadMore)
+import noopAll from "noop" /* 19 */;
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_4 from "_validate" /* 4806 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ ActivityIndicator: obj1, View: c3 } = get_ActivityIndicator);
 let closure_6 = createCacheKey.createStyles({ container: { alignItems: "center", flexDirection: "row", justifyContent: "center", marginTop: 8, marginBottom: 24, marginHorizontal: 16, height: 42 } });
-const result = require("_validate").fileFinishedImporting("modules/notification_center/native/ForYouLoadMore.tsx");
+const result = require("set").fileFinishedImporting("modules/notification_center/native/ForYouLoadMore.tsx");
 
 export const ForYouLoadMore = function ForYouLoadMore(onPressLoad) {
-  let obj = require(647) /* defaultAreStatesEqual */;
-  const items = [_validate];
+  let obj = defaultAreStatesEqual;
+  const items = [closure_4];
   obj = { style: callback().container, children: null };
   if (obj.useStateFromStores(items, () => loading.loading)) {
     let tmp4Result = tmp4(closure_2, {});
@@ -29,7 +29,7 @@ export const ForYouLoadMore = function ForYouLoadMore(onPressLoad) {
     const intl = tmp2(1236).intl;
     obj[3] = intl.string(tmp2(1236).t["Q/LSXp"]);
     obj[4] = onPressLoad.onPressLoad;
-    tmp4Result = tmp4(tmp2(4745).Button, obj);
+    tmp4Result = tmp4(tmp2(4750).Button, obj);
   }
   obj[1] = tmp4Result;
   return <closure_3 style={callback().container}>{null}</closure_3>;

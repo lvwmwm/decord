@@ -1,58 +1,68 @@
-// Module ID: 17118
-// Function ID: 17119
+// Module ID: 17212
+// Function ID: 17213
 // Name: receiveLocalNotification
-// Dependencies: [13263, 676, 5066, 709, 1208, 698, 6778, 8734, 2007, 4768, 4306, 2]
+// Dependencies: [13321, 676, 1398, 5071, 709, 1208, 698, 6815, 8771, 2008, 4773, 4310, 1222, 2]
 // Exports: receiveLocalNotification
 
-// Module 17118 (receiveLocalNotification)
-import { LocalNotificationTypes } from "LocalNotificationTypes";
-import { AnalyticEvents } from "ME";
+// Module 17212 (receiveLocalNotification)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import set2 from "set" /* 1398 */;
+import LocalNotificationTypes2 from "LocalNotificationTypes" /* 13321 */;
+import ME from "ME" /* 676 */;
 
-let result = require("getDeviceMetadata").fileFinishedImporting("modules/local_push_notification/native/LocalPushNotificationActionCreators.tsx");
+const LocalNotificationTypes = LocalNotificationTypes2.LocalNotificationTypes;
+({ AnalyticEvents: c4, Routes: c5 } = ME);
+const StaticChannelRoute = set2.StaticChannelRoute;
+let result = set.fileFinishedImporting("modules/local_push_notification/native/LocalPushNotificationActionCreators.tsx");
 
 export const receiveLocalNotification = function receiveLocalNotification(getData) {
   if (null != getData.getData) {
-    data(5066).trackAppOpened("notification");
+    data(5071).trackAppOpened("notification");
     data = getData.getData();
     let type = data.type;
     function dispatch() {
-      let obj = outer1_1(outer1_2[3]);
+      let obj = closure_1_1(closure_1_2[4]);
       obj.dispatch({ type: "PUSH_NOTIFICATION_CLICK" });
       obj = { type: data.type };
-      outer1_1(outer1_2[4]).addBreadcrumb({ message: "Notification Clicked", data: obj });
-      const obj2 = outer1_1(outer1_2[4]);
-      const tmp = outer1_1;
+      closure_1_1(closure_1_2[5]).addBreadcrumb({ message: "Notification Clicked", data: obj });
+      const obj2 = closure_1_1(closure_1_2[5]);
+      const tmp = closure_1_1;
       obj = { notif_type: data.type, guild_id: null };
       let guildId = null;
       if ("guildId" in data) {
         guildId = tmp4.guildId;
       }
       obj[1] = guildId;
-      outer1_1(outer1_2[5]).track(outer1_4.NOTIFICATION_CLICKED, obj);
+      closure_1_1(closure_1_2[6]).track(closure_1_4.NOTIFICATION_CLICKED, obj);
       const type = tmp4.type;
-      if (outer1_3.GUILD_VERIFICATION === type) {
-        const result = tmp(tmp2[6]).transitionToGuildSync(tmp4.guildId);
-        const tmpResult = tmp(tmp2[6]);
+      if (closure_1_3.GUILD_VERIFICATION === type) {
+        const result = tmp(tmp2[7]).transitionToGuildSync(tmp4.guildId);
+        const tmpResult = tmp(tmp2[7]);
       } else if (tmp8.CALL_RING === type) {
-        data(tmp2[8])(tmp2[7], tmp2.paths).then((arg0) => arg0.default(channelId.channelId));
-        const promise2 = data(tmp2[8])(tmp2[7], tmp2.paths);
+        data(tmp2[9])(tmp2[8], tmp2.paths).then((arg0) => arg0.default(channelId.channelId));
+        const promise2 = data(tmp2[9])(tmp2[8], tmp2.paths);
       } else if (tmp8.MESSAGE_SEND_FAILED === type) {
-        data(tmp2[8])(tmp2[9], tmp2.paths).then((transitionToMessage) => {
-          let channelId;
-          let messageId;
+        data(tmp2[9])(tmp2[10], tmp2.paths).then((transitionToMessage) => {
           ({ channelId, messageId } = closure_0);
-          return transitionToMessage.transitionToMessage(channelId, messageId, { jumpType: outer1_0(outer1_2[10]).JumpType.INSTANT });
+          return transitionToMessage.transitionToMessage(channelId, messageId, { jumpType: closure_1_0(closure_1_2[11]).JumpType.INSTANT });
         });
-        const promise = data(tmp2[8])(tmp2[9], tmp2.paths);
+        const promise = data(tmp2[9])(tmp2[10], tmp2.paths);
+      } else if (tmp8.VIBEGRATIONS === type) {
+        if (null != tmp4.guildId) {
+          ({ guildId: data, projectId: closure_1 } = tmp4);
+          data(tmp2[9])(tmp2[12], tmp2.paths).then((transitionTo) => transitionTo.transitionTo(closure_2_5.CHANNEL(closure_0, closure_2_6.VIBEGRATIONS, closure_1)));
+          const promise3 = data(tmp2[9])(tmp2[12], tmp2.paths);
+        }
       }
     }
-    let obj2 = data(5066);
+    let obj2 = data(5071);
     if (obj.isDispatching()) {
       const _setImmediate = setImmediate;
       setImmediate(dispatch);
     } else {
       dispatch();
     }
-    obj = importDefault(709);
+    obj = dispatcherDefault;
   }
 };

@@ -1,18 +1,20 @@
-// Module ID: 10020
-// Function ID: 10021
+// Module ID: 10059
+// Function ID: 10060
 // Name: initialize
 // Dependencies: [1218, 589, 709, 2]
 
-// Module 10020 (initialize)
-import fetchFingerprint from "fetchFingerprint";
-import { Store } from "initialize";
+// Module 10059 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "fetchFingerprint" /* 1218 */;
 
 let closure_1 = {};
+const Store = initializeDefault.Store;
 class RpcNotificationSettingsStore extends Store {
 }
 const prototype = RpcNotificationSettingsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint);
+  this.waitFor(closure_0);
 };
 prototype["areSlayerNotificationsSuppressed"] = function areSlayerNotificationsSuppressed() {
   for (const key10002 in closure_1) {
@@ -29,7 +31,7 @@ prototype["areSlayerNotificationsSuppressed"] = function areSlayerNotificationsS
   return false;
 };
 RpcNotificationSettingsStore.displayName = "RpcNotificationSettingsStore";
-const rpcNotificationSettingsStore = new RpcNotificationSettingsStore(require("dispatcher"), {
+const rpcNotificationSettingsStore = new RpcNotificationSettingsStore(dispatcherDefault, {
   RPC_APP_DISCONNECTED: function handleRpcAppDisconnected(arg0) {
     delete tmp2[tmp];
   },
@@ -40,6 +42,6 @@ const rpcNotificationSettingsStore = new RpcNotificationSettingsStore(require("d
     }
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/notifications/RpcNotificationSettingsStore.tsx");
+const result = require("set").fileFinishedImporting("modules/notifications/RpcNotificationSettingsStore.tsx");
 
 export default rpcNotificationSettingsStore;

@@ -1,22 +1,17 @@
-// Module ID: 8558
-// Function ID: 8559
+// Module ID: 8597
+// Function ID: 8598
 // Name: TableCheckboxRow
-// Dependencies: [19, 21, 4115, 4099, 4105, 6291, 8085, 2]
+// Dependencies: [19, 21, 4119, 4102, 4108, 6322, 8124, 2]
 // Exports: TableCheckboxRow
 
-// Module 8558 (TableCheckboxRow)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 8597 (TableCheckboxRow)
+import closure_2 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("module_4115").fileFinishedImporting("design/components/TableRow/native/TableCheckboxRow.native.tsx");
+let result = require("set").fileFinishedImporting("design/components/TableRow/native/TableCheckboxRow.native.tsx");
 
 export const TableCheckboxRow = function TableCheckboxRow(checked) {
-  let accessibilityRole;
-  let accessibilityState;
-  let disabled;
-  let label;
-  let subLabel;
   checked = checked.checked;
   ({ label, subLabel, disabled } = checked);
   if (disabled === undefined) {

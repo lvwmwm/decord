@@ -1,10 +1,12 @@
-// Module ID: 8759
-// Function ID: 8760
+// Module ID: 8796
+// Function ID: 8797
 // Name: _processQueue
 // Dependencies: [2]
 
-// Module 8759 (_processQueue)
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/leaky-bucket/LeakyBucket.tsx");
+// Module 8796 (_processQueue)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/packages/leaky-bucket/LeakyBucket.tsx");
 class LeakyBucket {
   constructor(arg0, arg1) {
     obj = Object.create(new.target.prototype);
@@ -53,9 +55,9 @@ prototype["_iterate"] = function _iterate() {
 };
 prototype["process"] = function process(arg0) {
   const self = this;
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return new Promise((arg0, arg1) => {
-    let closure_0 = arg1;
+    closure_0 = arg1;
     let obj = closure_0;
     let aborted;
     if (closure_0 != null) {
@@ -63,7 +65,7 @@ prototype["process"] = function process(arg0) {
     }
     if (aborted) {
       const _Error = Error;
-      let error = new Error("Already aborted");
+      error = new Error("Already aborted");
       arg1(error);
     } else {
       obj = { resolve: null, signal: null };
@@ -79,7 +81,7 @@ prototype["process"] = function process(arg0) {
             const _queue1 = obj._queue;
             _queue1.splice(index, 1);
           }
-          const error = new Error("Aborted");
+          error = new Error("Aborted");
           callback(error);
         }, { once: true });
       }

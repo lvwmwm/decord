@@ -1,10 +1,13 @@
-// Module ID: 15273
-// Function ID: 15274
+// Module ID: 15337
+// Function ID: 15338
 // Name: isTimingConfig
 // Dependencies: [1297, 2]
 // Exports: isTimingConfig
 
-// Module 15273 (isTimingConfig)
+// Module 15337 (isTimingConfig)
+import set from "set" /* 2 */;
+import Button from "Button" /* 1297 */;
+
 function isTimingConfig(duration) {
   return null != duration && null != duration.duration;
 }
@@ -16,16 +19,15 @@ obj = { damping: 30 };
 const merged = Object.assign(obj);
 obj = { damping: 20 };
 const merged1 = Object.assign(obj);
-const obj1 = { duration: 250, easing: require("Button").STANDARD_EASING };
-const obj2 = { duration: 200, easing: require("Button").STANDARD_EASING };
-const obj3 = { swipeSidePanelOpen: null, swipeSidePanelClose: null, nonSwipeSidePanelOpen: null, nonSwipeSidePanelClose: null, touchSlopForPanGesture: 8, minFlingVelocityX: 240 };
-obj3[0] = { duration: 250, easing: require("Button").DECELERATED_EASING };
-const obj4 = { duration: 250, easing: require("Button").DECELERATED_EASING };
-obj3[1] = { duration: 200, easing: require("Button").DECELERATED_EASING };
+const obj1 = { duration: 250, easing: Button.STANDARD_EASING };
+const obj2 = { duration: 200, easing: Button.STANDARD_EASING };
+const obj3 = { swipeSidePanelOpen: { duration: 250, easing: Button.DECELERATED_EASING }, swipeSidePanelClose: null, nonSwipeSidePanelOpen: null, nonSwipeSidePanelClose: null, touchSlopForPanGesture: 8, minFlingVelocityX: 240 };
+const obj4 = { duration: 250, easing: Button.DECELERATED_EASING };
+obj3[1] = { duration: 200, easing: Button.DECELERATED_EASING };
 obj3[2] = obj1;
 obj3[3] = obj2;
-const obj5 = { duration: 200, easing: require("Button").DECELERATED_EASING };
-const result = require("set").fileFinishedImporting("modules/panels/native/PanelsConfig.tsx");
+const obj5 = { duration: 200, easing: Button.DECELERATED_EASING };
+const result = set.fileFinishedImporting("modules/panels/native/PanelsConfig.tsx");
 
 export { isTimingConfig };
 export const SIDE_PANEL_OPEN_DURATION_MS = 250;

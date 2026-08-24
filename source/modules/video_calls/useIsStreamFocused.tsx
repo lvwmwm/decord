@@ -1,23 +1,23 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 12535
+// Function ID: 12536
 // Name: useIsStreamFocused
-// Dependencies: [4773, 4544, 589, 2]
+// Dependencies: [4778, 4549, 589, 2]
 // Exports: useIsStreamFocused
 
-// Module 12481 (useIsStreamFocused)
-import getParticipants from "getParticipants";
-import { isStreamParticipant } from "ParticipantTypes";
+// Module 12535 (useIsStreamFocused)
+import closure_2 from "getParticipants" /* 4778 */;
+import { isStreamParticipant } from "ParticipantTypes" /* 4549 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/video_calls/useIsStreamFocused.tsx");
+const result = require("set").fileFinishedImporting("modules/video_calls/useIsStreamFocused.tsx");
 
 export const useIsStreamFocused = function useIsStreamFocused(id) {
   const _require = id;
-  const items = [getParticipants];
+  const items = [closure_2];
   const stateFromStores = _require(589).useStateFromStores(items, () => {
     let selectedParticipant = null;
     if (null != closure_0) {
-      selectedParticipant = outer1_2.getSelectedParticipant(tmp);
+      selectedParticipant = closure_1_2.getSelectedParticipant(tmp);
     }
     return selectedParticipant;
   });

@@ -1,15 +1,20 @@
-// Module ID: 11042
-// Function ID: 11043
+// Module ID: 11081
+// Function ID: 11082
 // Name: AutomodEventType
-// Dependencies: [11043, 2, 11044, 11045]
+// Dependencies: [11082, 2, 11083, 11084]
 
-// Module 11042 (AutomodEventType)
-const items = [require("AutomodTriggerType").AutomodTriggerType.USER_PROFILE, require("AutomodTriggerType").AutomodTriggerType.SERVER_POLICY, require("AutomodTriggerType").AutomodTriggerType.MENTION_SPAM, require("AutomodTriggerType").AutomodTriggerType.ML_SPAM, require("AutomodTriggerType").AutomodTriggerType.DEFAULT_KEYWORD_LIST, require("AutomodTriggerType").AutomodTriggerType.KEYWORD];
-const result = require("AutomodEventType").fileFinishedImporting("modules/guild_automod/Constants.tsx");
+// Module 11081 (AutomodEventType)
+import set from "set" /* 2 */;
+import AutomodTriggerType from "AutomodTriggerType" /* 11082 */;
+import AutomodEventType from "AutomodEventType" /* 11083 */;
+import AutomodActionType from "AutomodActionType" /* 11084 */;
 
-export const AutomodEventType = require("AutomodEventType").AutomodEventType;
-export const AutomodTriggerType = require("AutomodTriggerType").AutomodTriggerType;
-export const AutomodActionType = require("AutomodActionType").AutomodActionType;
+const items = [AutomodTriggerType.AutomodTriggerType.USER_PROFILE, AutomodTriggerType.AutomodTriggerType.SERVER_POLICY, AutomodTriggerType.AutomodTriggerType.MENTION_SPAM, AutomodTriggerType.AutomodTriggerType.ML_SPAM, AutomodTriggerType.AutomodTriggerType.DEFAULT_KEYWORD_LIST, AutomodTriggerType.AutomodTriggerType.KEYWORD];
+const result = set.fileFinishedImporting("modules/guild_automod/Constants.tsx");
+
+export const AutomodEventType = AutomodEventType.AutomodEventType;
+export const AutomodTriggerType = AutomodTriggerType.AutomodTriggerType;
+export const AutomodActionType = AutomodActionType.AutomodActionType;
 export const KeywordPreset = { PROFANITY: 1, [1]: "PROFANITY", SEXUAL_CONTENT: 2, [2]: "SEXUAL_CONTENT", SLURS: 3, [3]: "SLURS" };
 export const AUTOMOD_TRIGGER_TYPES = items;
 export const MAX_KEYWORDS_PER_KEYWORD_FILTER = 1000;

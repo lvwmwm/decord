@@ -1,28 +1,26 @@
-// Module ID: 9206
-// Function ID: 9207
+// Module ID: 9243
+// Function ID: 9244
 // Name: BundleStaticPreviewContent
-// Dependencies: [19, 17, 9207, 21, 5449, 4661, 712, 38, 1949, 1946, 9208, 9218, 9220, 1297, 2]
+// Dependencies: [19, 17, 9244, 21, 5454, 4668, 712, 38, 1949, 1946, 9245, 9255, 9257, 1297, 2]
 // Exports: default
 
-// Module 9206 (BundleStaticPreviewContent)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9243 (BundleStaticPreviewContent)
+import noopAll from "noop" /* 19 */;
+import _modDef38 from "module_38" /* 38 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getNameplateData from "getNameplateData" /* 1946 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+import preloadDefault from "preload" /* 5454 */;
+import ProfileEffectSampleDefault from "ProfileEffectSample" /* 9245 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9255 */;
+import NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG from "NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG" /* 9257 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO" /* 9244 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c3;
-let c4;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function BundleStaticPreviewContent(mutedBackground) {
-  let bgStatic;
-  let disableBackground;
-  let fgStatic;
-  let previewAssets;
-  let targetSize;
   ({ previewAssets, disableBackground, targetSize } = mutedBackground);
   ({ bgStatic, fgStatic } = previewAssets);
   let tmp = null;
@@ -50,9 +48,9 @@ function BundleStaticPreviewContent(mutedBackground) {
     obj[0] = combined;
     obj[0] = obj;
     obj[1] = closure_9.bgImage;
-    tmp = closure_6(importDefault(5449), obj);
+    tmp = closure_6(preloadDefault, obj);
     const tmp2 = closure_6;
-    const tmp5 = importDefault(5449);
+    const tmp5 = preloadDefault;
   }
   obj = { style: closure_9.container, children: null };
   let tmp21Result = !disableBackground;
@@ -60,7 +58,7 @@ function BundleStaticPreviewContent(mutedBackground) {
     tmp21Result = null != tmp;
   }
   if (tmp21Result) {
-    const obj1 = { style: null, pointerEvents: "none", children: null };
+    obj1 = { style: null, pointerEvents: "none", children: null };
     obj1[0] = tmp19.bgBleedClip;
     tmp21Result = tmp;
     if (mutedBackground.mutedBackground) {
@@ -100,19 +98,15 @@ function BundleStaticPreviewContent(mutedBackground) {
     obj5[0] = combined1;
     obj4[0] = obj5;
     obj4[1] = tmp19.fgImage;
-    obj3[2] = closure_6(importDefault(5449), obj4);
+    obj3[2] = closure_6(preloadDefault, obj4);
     tmp24Result = tmp24(tmp18, obj3);
-    const tmp27 = importDefault(5449);
+    const tmp27 = preloadDefault;
   }
   items[1] = tmp24Result;
   obj[1] = items;
   return closure_7(closure_4, obj);
 }
 function BundleSampleV2Composed(arg0) {
-  let deco;
-  let nameplate;
-  let pfx;
-  let size;
   ({ deco, pfx, nameplate, size } = arg0);
   if (size === undefined) {
     size = "small";
@@ -120,19 +114,19 @@ function BundleSampleV2Composed(arg0) {
   const tmp = callback2(size);
   let nameplateData;
   if (null != nameplate) {
-    importDefault(38)(nameplate.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE, "Item must be Nameplate");
-    let obj = require(1946) /* getNameplateData */;
+    _modDef38(nameplate.type === CollectiblesItemType.CollectiblesItemType.NAMEPLATE, "Item must be Nameplate");
+    let obj = getNameplateData;
     nameplateData = obj.getNameplateData(nameplate);
-    const tmp5 = importDefault(38);
+    const tmp5 = _modDef38;
   }
   obj = { style: tmp.bundle, children: null };
   let tmp12 = null != pfx;
   if (tmp12) {
     obj = { style: null, children: null };
     obj[0] = tmp.pfx;
-    const obj1 = { item: null };
+    obj1 = { item: null };
     obj1[0] = pfx;
-    obj[1] = callback(importDefault(9208), obj1);
+    obj[1] = callback(ProfileEffectSampleDefault, obj1);
     tmp12 = callback(tmp11, obj);
   }
   const items = [tmp12, , ];
@@ -156,7 +150,7 @@ function BundleSampleV2Composed(arg0) {
       }
       obj3[1] = XSMALL_20;
       obj3[2] = nameplateData;
-      obj3 = tmp22(require(9220) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
+      obj3 = tmp22(NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG.NameplateDummyUserPreview, obj3);
       obj2[1] = obj3;
       callback(tmp11, obj2);
     }
@@ -168,10 +162,11 @@ function BundleSampleV2Composed(arg0) {
     obj5[0] = deco;
     obj5[1] = tmp9;
     obj5[2] = null != nameplateData;
-    obj4[1] = callback(importDefault(9218), obj5);
+    obj4[1] = callback(AvatarDecorationSampleV2Default, obj5);
     callback(tmp11, obj4);
   }
 }
+noopAll;
 ({ PixelRatio: c3, StyleSheet, View: c4 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let obj = { container: null, bgBleedClip: null, bgMutedWrap: null, bgImage: null, fgClip: null, fgImage: null };
@@ -201,28 +196,23 @@ obj[5] = {};
 const styles = StyleSheet.create(obj);
 let closure_10 = createCacheKey.createStyles((arg0) => {
   let obj = { bundle: null, pfx: null, avatar: null, avatarWithNameplate: null, nameplate: null };
-  obj = { width: tmp.bundleWidth, height: tmp.bundleHeight, borderRadius: importDefault(712).radii.xs };
+  obj = { width: tmp.bundleWidth, height: tmp.bundleHeight, borderRadius: ThemesDefault.radii.xs };
   obj[0] = obj;
-  obj = { position: "absolute", top: tmp.pfxTop, left: tmp.pfxLeft, width: tmp.pfxWidth, height: tmp.pfxHeight, backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, transform: items, zIndex: 0, overflow: "hidden", borderRadius: importDefault(712).radii.xs };
+  obj = { position: "absolute", top: tmp.pfxTop, left: tmp.pfxLeft, width: tmp.pfxWidth, height: tmp.pfxHeight, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, transform: items, zIndex: 0, overflow: "hidden", borderRadius: ThemesDefault.radii.xs };
   items = [{ rotate: "-8deg" }];
   obj[1] = obj;
   const items1 = [{ rotate: "8deg" }];
   obj[2] = { position: "absolute", top: BUNDLE_PREVIEW_CONFIG[arg0].avatarTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarRight, transform: items1, zIndex: 1, alignItems: "center", justifyContent: "center" };
   const items2 = [{ rotate: "8deg" }];
-  obj[3] = { position: "absolute", top: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateRight, transform: items2, zIndex: 1, alignItems: "center", justifyContent: "center", shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.5, shadowRadius: 4 };
-  const obj1 = { position: "absolute", top: BUNDLE_PREVIEW_CONFIG[arg0].avatarTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarRight, transform: items1, zIndex: 1, alignItems: "center", justifyContent: "center" };
-  const obj2 = { position: "absolute", top: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateRight, transform: items2, zIndex: 1, alignItems: "center", justifyContent: "center", shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.5, shadowRadius: 4 };
-  obj[4] = { position: "absolute", bottom: BUNDLE_PREVIEW_CONFIG[arg0].nameplateBottom, marginHorizontal: 10, width: "90%", backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOWER, zIndex: 2, borderRadius: importDefault(712).radii.sm, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.5, shadowRadius: 4 };
+  obj[3] = { position: "absolute", top: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateRight, transform: items2, zIndex: 1, alignItems: "center", justifyContent: "center", shadowColor: ThemesDefault.colors.BLACK, shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.5, shadowRadius: 4 };
+  obj1 = { position: "absolute", top: BUNDLE_PREVIEW_CONFIG[arg0].avatarTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarRight, transform: items1, zIndex: 1, alignItems: "center", justifyContent: "center" };
+  const obj2 = { position: "absolute", top: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateRight, transform: items2, zIndex: 1, alignItems: "center", justifyContent: "center", shadowColor: ThemesDefault.colors.BLACK, shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.5, shadowRadius: 4 };
+  obj[4] = { position: "absolute", bottom: BUNDLE_PREVIEW_CONFIG[arg0].nameplateBottom, marginHorizontal: 10, width: "90%", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, zIndex: 2, borderRadius: ThemesDefault.radii.sm, shadowColor: ThemesDefault.colors.BLACK, shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.5, shadowRadius: 4 };
   return obj;
 });
-const result = require("SAMPLE_PROFILE_ASPECT_RATIO").fileFinishedImporting("modules/collectibles/native/BundleSampleV2.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/native/BundleSampleV2.tsx");
 
 export default function BundleSampleV2(size) {
-  let deco;
-  let disableStaticBackground;
-  let nameplate;
-  let pfx;
-  let previewAssets;
   let str = size.size;
   ({ deco, pfx, nameplate } = size);
   if (str === undefined) {

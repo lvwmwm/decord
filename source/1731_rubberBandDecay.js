@@ -4,11 +4,11 @@
 // Dependencies: [1730]
 
 // Module 1731 (rubberBandDecay)
-const require = arg1;
+import isValidRubberBandConfig from "isValidRubberBandConfig" /* 1730 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function rubberBandDecay(current, lastTimestamp, deceleration) {
-  let startTimestamp;
-  let velocity;
   current = current.current;
   ({ startTimestamp, velocity } = current);
   const bound = Math.min(Math.max(lastTimestamp - current.lastTimestamp, 0), 64);
@@ -22,7 +22,7 @@ function rubberBandDecay(current, lastTimestamp, deceleration) {
     num2 = current - deceleration.clamp[num];
   }
   const result = -1 - deceleration.deceleration * (lastTimestamp - startTimestamp);
-  const diff = velocity * Math.exp(result * require(1730) /* isValidRubberBandConfig */.SLOPE_FACTOR) - num2 * deceleration.rubberBandFactor;
+  const diff = velocity * Math.exp(result * isValidRubberBandConfig.SLOPE_FACTOR) - num2 * deceleration.rubberBandFactor;
   if (Math.abs(num2) > 0.1) {
     current.springActive = true;
   } else if (current.springActive) {
@@ -31,7 +31,7 @@ function rubberBandDecay(current, lastTimestamp, deceleration) {
   } else {
     const _Math = Math;
     const absolute1 = Math.abs(diff);
-    if (absolute1 < require(1730) /* isValidRubberBandConfig */.VELOCITY_EPS) {
+    if (absolute1 < isValidRubberBandConfig.VELOCITY_EPS) {
       return true;
     }
   }

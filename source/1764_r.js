@@ -4,7 +4,10 @@
 // Dependencies: [1765, 1697, 1766, 1665]
 
 // Module 1764 (r)
-const require = arg1;
+import call from "call" /* 1697 */;
+import JEST_WORKER_ID from "JEST_WORKER_ID" /* 1765 */;
+
+require = arg1;
 const dependencyMap = arg6;
 const fn = function r(obj) {
   let tmp = typeof obj === "object";
@@ -130,8 +133,8 @@ fn4.__closure = {};
 fn4.__workletHash = 13235944247491;
 fn4.__initData = { code: "function pnpm_colorsTs8(){return'DynamicColorIOS is not available on this platform.';}" };
 function processColorNumber(arr) {
-  const result = require(1697) /* call */.processColorInitially(arr);
-  const obj = require(1697) /* call */;
+  const result = call.processColorInitially(arr);
+  obj = call;
   let tmp3 = result;
   if (tmp2) {
     tmp3 = result | 0;
@@ -196,7 +199,7 @@ function processColor(arr, target) {
   if (typeof processColorNumber !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const obj = require(1697) /* call */;
+  obj = call;
   const result = obj.processColorInitially(arr);
   let tmp5 = result;
   if (tmp4) {
@@ -261,7 +264,7 @@ function processColor(arr, target) {
       }
     }
   }
-  tmp4 = require(1765) /* JEST_WORKER_ID */.IS_ANDROID && typeof result === "number";
+  tmp4 = JEST_WORKER_ID.IS_ANDROID && typeof result === "number";
 }
 processColor.__closure = { processColorNumber, ValueProcessorTarget: require("module_1766").ValueProcessorTarget, isPlatformColorObject, isDynamicColorObjectIOS, IS_IOS: require("JEST_WORKER_ID").IS_IOS, ERROR_MESSAGES: obj, processDynamicColorObjectIOS };
 processColor.__workletHash = 3532980737440;
@@ -321,7 +324,7 @@ function processColorsInProps(obj) {
     let tmp3 = key10005;
     let tmp4 = require;
     let tmp5 = dependencyMap;
-    let ColorProperties = require(1697) /* call */.ColorProperties;
+    let ColorProperties = call.ColorProperties;
     if (!ColorProperties.includes(key10005)) {
       continue;
     } else {
@@ -348,7 +351,7 @@ function unprocessColorsInProps(styleProps) {
     let tmp3 = key10005;
     let tmp4 = require;
     let tmp5 = dependencyMap;
-    let ColorProperties = require(1697) /* call */.ColorProperties;
+    let ColorProperties = call.ColorProperties;
     if (!ColorProperties.includes(key10005)) {
       continue;
     } else {

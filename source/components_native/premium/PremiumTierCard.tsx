@@ -1,45 +1,42 @@
-// Module ID: 12997
-// Function ID: 12998
+// Module ID: 13052
+// Function ID: 13053
 // Name: textLogoTier2
-// Dependencies: [19, 17, 7403, 1924, 21, 4661, 712, 6289, 1367, 4756, 691, 4039, 12998, 12999, 7674, 7613, 7614, 7669, 6292, 2]
+// Dependencies: [19, 17, 7441, 1924, 21, 4668, 712, 6320, 1367, 4761, 691, 4042, 13053, 13054, 7712, 7651, 7652, 7707, 6323, 2]
 // Exports: default
 
-// Module 12997 (textLogoTier2)
-import "set";
-import get_ActivityIndicator from "registerAsset";
-import { getPremiumGradientColor } from "items";
-import { PremiumTypes } from "GuildFeatures";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13052 (textLogoTier2)
+import noopAll from "noop" /* 19 */;
+import keys from "keys" /* 691 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import PressableCard from "PressableCard" /* 6323 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { getPremiumGradientColor } from "items" /* 7441 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ View: c3, Image: c4 } = get_ActivityIndicator);
-({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { header: { marginTop: 24, padding: 16 }, textLogoTier0: { width: 158, height: 32 }, textLogoTier1: { width: 185, height: 32 }, textLogoTier2: { width: 80, height: 32 }, wumpusLogo: { position: "absolute", top: 0, right: 24, zIndex: 1 }, wumpusLogoTier0: { width: 83, height: 100 }, wumpusLogoTier1: { width: 86, height: 100 }, wumpusLogoTier2: { width: 133, height: 100 }, body: null, bodyLegacy: null };
-createCacheKey = { padding: 16, borderBottomRightRadius: require("Themes").radii.xs, borderBottomLeftRadius: require("Themes").radii.xs };
+createCacheKey = { padding: 16, borderBottomRightRadius: ThemesDefault.radii.xs, borderBottomLeftRadius: ThemesDefault.radii.xs };
 createCacheKey[8] = createCacheKey;
 createCacheKey[9] = { backgroundColor: require("result").DARK_PRIMARY_630_LIGHT_PRIMARY_100 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_10 = createCacheKey.createStyles(createCacheKey);
 let obj1 = { backgroundColor: require("result").DARK_PRIMARY_630_LIGHT_PRIMARY_100 };
-const result = require("items").fileFinishedImporting("components_native/premium/PremiumTierCard.tsx");
+const result = require("set").fileFinishedImporting("components_native/premium/PremiumTierCard.tsx");
 
 export default function _default(children) {
-  let premiumType;
-  let style;
   ({ premiumType, style } = children);
-  const tmp = createCacheKey();
-  const tmp4 = importDefault(1367)("PremiumTierCard");
-  let obj = { style: tmp.header, start: null, end: null, colors: null, children: null };
-  obj[1] = require(691) /* keys */.HorizontalGradient.START;
-  obj[2] = require(691) /* keys */.HorizontalGradient.END;
-  obj[3] = getPremiumGradientColor(premiumType);
+  const tmp = callback();
+  const tmp4 = useIsMobileVisualRefreshExperimentEnabledDefault("PremiumTierCard");
+  let obj = { style: tmp.header, start: keys.HorizontalGradient.START, end: keys.HorizontalGradient.END, colors: getPremiumGradientColor(premiumType), children: null };
   obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, source: null };
-  let obj2 = require(4039) /* getPremiumPlanItem */;
+  let obj2 = getPremiumPlanItem;
   obj[1] = obj2.getPremiumTypeDisplayName(premiumType);
   if (PremiumTypes.TIER_0 === premiumType) {
     let textLogoTier2 = tmp.textLogoTier0;
@@ -50,15 +47,15 @@ export default function _default(children) {
   }
   obj[3] = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp2Result = tmp2(12998);
+    let tmp2Result = tmp2(13053);
   } else if (tmp11.TIER_1 === premiumType) {
-    tmp2Result = tmp2(12999);
+    tmp2Result = tmp2(13054);
   } else if (tmp11.TIER_2 === premiumType) {
-    tmp2Result = tmp2(7674);
+    tmp2Result = tmp2(7712);
   }
   obj[4] = tmp2Result;
   obj[4] = closure_7(closure_4, obj);
-  const items = [closure_7(importDefault(4756), obj), , ];
+  const items = [closure_7(LinearGradientDefault, obj), , ];
   const items1 = [tmp.wumpusLogo, ];
   if (PremiumTypes.TIER_0 === premiumType) {
     let wumpusLogoTier2 = tmp.wumpusLogoTier0;
@@ -70,11 +67,11 @@ export default function _default(children) {
   obj = { accessible: false, importantForAccessibility: "no", style: items1, source: null };
   items1[1] = wumpusLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp2Result = tmp2(7613);
+    tmp2Result = tmp2(7651);
   } else if (tmp11.TIER_1 === premiumType) {
-    tmp2Result = tmp2(7614);
+    tmp2Result = tmp2(7652);
   } else if (tmp11.TIER_2 === premiumType) {
-    tmp2Result = tmp2(7669);
+    tmp2Result = tmp2(7707);
   }
   obj[3] = tmp2Result;
   items[1] = closure_7(closure_4, obj);
@@ -83,7 +80,7 @@ export default function _default(children) {
   if (!tmp4) {
     bodyLegacy = tmp.bodyLegacy;
   }
-  const obj1 = { children: null };
+  obj1 = { children: null };
   items2[1] = bodyLegacy;
   items[2] = closure_7(closure_3, { style: items2, children: children.children });
   obj1[0] = items;
@@ -92,7 +89,7 @@ export default function _default(children) {
     obj2 = { variant: "surface-high", style: null, children: null };
     obj2[1] = style;
     obj2[2] = tmp5Result;
-    let tmp7Result = tmp7(require(6292) /* PressableCard */.Card, obj2);
+    let tmp7Result = tmp7(PressableCard.Card, obj2);
   } else {
     const obj3 = { style: null, children: null };
     obj3[0] = style;

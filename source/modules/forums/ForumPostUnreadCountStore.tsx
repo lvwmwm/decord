@@ -1,28 +1,31 @@
-// Module ID: 8514
-// Function ID: 8515
+// Module ID: 8553
+// Function ID: 8554
 // Name: set
-// Dependencies: [4969, 1391, 4772, 589, 38, 709, 2]
+// Dependencies: [4974, 1391, 4777, 589, 38, 709, 2]
 
-// Module 8514 (set)
-import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import { Store } from "initialize";
-import set from "generateOldThreadCutoff";
+// Module 8553 (set)
+import _modDef38 from "module_38" /* 38 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "handleThreadCreateOrUpdate" /* 4974 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "generateOldThreadCutoff" /* 4777 */;
+import set from "set" /* 2 */;
 
 let closure_5 = {};
 let set = new Set();
+const Store = initializeDefault.Store;
 class ForumPostUnreadCountStore extends Store {
 }
 const prototype = ForumPostUnreadCountStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(handleThreadCreateOrUpdate, ensureGuildLoaded, generateOldThreadCutoff);
+  this.waitFor(closure_2, closure_3, closure_4);
 };
 prototype["getCount"] = function getCount(arg0) {
   return dependencyMap[arg0];
 };
 prototype["getThreadIdsMissingCounts"] = function getThreadIdsMissingCounts(guild_id, threadIds) {
-  importDefault(38)(handleThreadCreateOrUpdate.hasLoaded(guild_id), "must wait for THREAD_LIST_SYNC before calling this");
+  _modDef38(closure_2.hasLoaded(guild_id), "must wait for THREAD_LIST_SYNC before calling this");
   return threadIds.filter((arg0) => {
     let tmp = !(arg0 in closure_5);
     if (tmp) {
@@ -32,16 +35,16 @@ prototype["getThreadIdsMissingCounts"] = function getThreadIdsMissingCounts(guil
   });
 };
 ForumPostUnreadCountStore.displayName = "ForumPostUnreadCountStore";
-const forumPostUnreadCountStore = new ForumPostUnreadCountStore(require("dispatcher"), {
+const forumPostUnreadCountStore = new ForumPostUnreadCountStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_5 = {};
-    const set = new Set();
+    closure_5 = {};
+    set = new Set();
   },
   THREAD_CREATE: function handleThreadCreate(channel) {
     channel = channel.channel;
     let isNewlyCreated = channel.isNewlyCreated;
     if (isNewlyCreated) {
-      const hasLoadedResult = handleThreadCreateOrUpdate.hasLoaded(channel.guild_id);
+      const hasLoadedResult = closure_2.hasLoaded(channel.guild_id);
       if (hasLoadedResult) {
         closure_5[channel.id] = 0;
       }
@@ -50,8 +53,6 @@ const forumPostUnreadCountStore = new ForumPostUnreadCountStore(require("dispatc
     return isNewlyCreated;
   },
   MESSAGE_CREATE: function handleMessageCreate(isPushNotification) {
-    let channelId;
-    let optimistic;
     ({ channelId, optimistic } = isPushNotification);
     let tmp = !optimistic;
     if (!optimistic) {

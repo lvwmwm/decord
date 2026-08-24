@@ -1,62 +1,65 @@
-// Module ID: 16878
-// Function ID: 16879
+// Module ID: 16971
+// Function ID: 16972
 // Name: getIntroHeaderSource
-// Dependencies: [19, 17, 21, 7907, 16879, 16880, 16881, 1363, 2]
+// Dependencies: [19, 17, 21, 7946, 16972, 16973, 16974, 1363, 2]
 // Exports: IntroHeader, getIntroHeaderSource, useIntroHeaderSource
 
-// Module 16878 (getIntroHeaderSource)
-import "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 16971 (getIntroHeaderSource)
+import noopAll from "noop" /* 19 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/IntroHeader.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Illustration/native/redesign/generated/IntroHeader.tsx");
 
 export const getIntroHeaderSource = function getIntroHeaderSource(theme) {
-  let obj = require(7907) /* getIllustrationSource */;
+  let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(16879);
+      return callback(16972);
     },
     darker() {
-      return callback(16880);
+      return callback(16973);
     },
     light() {
-      return callback(16881);
+      return callback(16974);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useIntroHeaderSource = function useIntroHeaderSource() {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16879);
+      return callback(16972);
     },
     darker() {
-      return callback(16880);
+      return callback(16973);
     },
     light() {
-      return callback(16881);
+      return callback(16974);
     }
   };
-  return require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const IntroHeader = function IntroHeader(arg0) {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16879);
+      return callback(16972);
     },
     darker() {
-      return callback(16880);
+      return callback(16973);
     },
     light() {
-      return callback(16881);
+      return callback(16974);
     }
   };
   obj = {};
-  const illustrationSource = require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

@@ -5,8 +5,8 @@
 // Exports: useNavigationHelpers
 
 // Module 1583 (useNavigationHelpers)
-import noop from "noop";
-import { PrivateValueStore } from "PrivateValueStore";
+import closure_2 from "noop" /* 19 */;
+import { PrivateValueStore } from "PrivateValueStore" /* 1504 */;
 
 const require = arg1;
 
@@ -32,17 +32,17 @@ export const useNavigationHelpers = function useNavigationHelpers(id) {
     const merged1 = Object.assign(id(onAction[3]).CommonActions);
     const keys = Object.keys(obj);
     const reduced = keys.reduce((arg0, arg1) => {
-      let closure_0 = arg1;
+      closure_0 = arg1;
       arg0[arg1] = () => {
         const items = [...HermesBuiltin.copyRestArgs()];
         const applyResult = table[table].apply(items);
         let applyResultResult = applyResult;
         if (typeof applyResult === "function") {
-          applyResultResult = applyResult(outer1_3());
+          applyResultResult = applyResult(closure_1_3());
         }
-        if (!outer1_1(applyResultResult)) {
-          if (outer1_2 != null) {
-            outer1_2(applyResultResult);
+        if (!closure_1_1(applyResultResult)) {
+          if (closure_1_2 != null) {
+            closure_1_2(applyResultResult);
           }
         }
       };
@@ -105,7 +105,7 @@ export const useNavigationHelpers = function useNavigationHelpers(id) {
         }
         return tmp2;
       } else {
-        return outer1_6;
+        return closure_1_6;
       }
     };
     obj.getState = function getState() {

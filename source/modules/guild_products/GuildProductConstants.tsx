@@ -1,10 +1,12 @@
-// Module ID: 4873
-// Function ID: 4874
+// Module ID: 4878
+// Function ID: 4879
 // Name: GUILD_PRODUCT_EDIT_MODAL_KEY
 // Dependencies: [2]
 
-// Module 4873 (GUILD_PRODUCT_EDIT_MODAL_KEY)
-const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductConstants.tsx");
+// Module 4878 (GUILD_PRODUCT_EDIT_MODAL_KEY)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/guild_products/GuildProductConstants.tsx");
 
 export const GUILD_PRODUCT_EDIT_MODAL_KEY = "guild-product-edit-modal";
 export const MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES = 1073741824;

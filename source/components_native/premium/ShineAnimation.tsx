@@ -1,18 +1,14 @@
-// Module ID: 7686
-// Function ID: 7687
-// Dependencies: [19, 17, 21, 4661, 712, 4115, 4664, 689, 2]
+// Module ID: 7724
+// Function ID: 7725
+// Dependencies: [19, 17, 21, 4668, 712, 4119, 4671, 689, 2]
 
-// Module 7686
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7724
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c4;
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 let c3 = importAllResult;
 ({ Image: c4, View: c5, StyleSheet } = get_ActivityIndicator);
@@ -24,16 +20,14 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj[1] = obj;
 let items = [{ rotate: "30deg" }];
 obj[2] = { transform: items, width: 56, flex: 0, height: "300%", top: "-10%" };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, flex: 1 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_NORMAL, flex: 1 };
 obj[3] = createCacheKey;
 let closure_9 = createCacheKey.createStyles(obj);
 let closure_10 = { code: "function ShineAnimationTsx1(){const{interpolate,progress}=this.__closure;const widthPercent=interpolate(progress.get(),[0,1],[20,160]);return{width:widthPercent+\"%\"};}" };
 let closure_11 = { code: "function ShineAnimationTsx2(){const{ShineAnimationConfig,interpolateColor,progress,flashStartColor,flashEndColor}=this.__closure;const startTime=ShineAnimationConfig.FLASH_TIME_PERCENT;const duration=ShineAnimationConfig.FLASH_DURATION_PERCENT;return{backgroundColor:interpolateColor(progress.get(),[0,startTime,startTime,startTime+duration,1],[flashStartColor,flashStartColor,flashEndColor,flashEndColor,flashStartColor])};}" };
 const memoResult = importAllResult.memo(function ShineAnimation(arg0) {
-  let source;
-  let style;
   let sharedValue;
-  let importDefault;
+  importDefault = undefined;
   let hexResult1;
   ({ source, style } = arg0);
   const tmp = callback3();
@@ -45,12 +39,12 @@ const memoResult = importAllResult.memo(function ShineAnimation(arg0) {
     const obj2 = sharedValue(hexResult1[5]);
     const result = sharedValue.set(obj.withDelay(400, obj2.withRepeat(sharedValue(hexResult1[6]).withTiming(1, { duration: 1000 }), -1, false)));
   }, items);
-  let obj1 = sharedValue(hexResult1[5]);
+  obj1 = sharedValue(hexResult1[5]);
   class A {
     constructor() {
       obj = { width: null };
-      obj2 = c0(c2[5]);
-      obj[0] = "" + obj2.interpolate(c0.get(), [0, 1], [20, 160]) + "%";
+      obj2 = closure_0(closure_2[5]);
+      obj[0] = "" + obj2.interpolate(closure_0.get(), [0, 1], [20, 160]) + "%";
       return obj;
     }
   }
@@ -70,21 +64,21 @@ const memoResult = importAllResult.memo(function ShineAnimation(arg0) {
   const alphaResult1 = importDefault(hexResult1[7])(importDefault(hexResult1[4]).unsafe_rawColors.BRAND_360).alpha(1);
   class E {
     constructor() {
-      FLASH_TIME_PERCENT = outer1_8.FLASH_TIME_PERCENT;
+      FLASH_TIME_PERCENT = closure_1_8.FLASH_TIME_PERCENT;
       obj = { backgroundColor: null };
-      obj2 = c0(c2[5]);
+      obj2 = closure_0(closure_2[5]);
       items = [0];
       items[1] = FLASH_TIME_PERCENT;
       items[2] = FLASH_TIME_PERCENT;
-      items[3] = FLASH_TIME_PERCENT + outer1_8.FLASH_DURATION_PERCENT;
+      items[3] = FLASH_TIME_PERCENT + closure_1_8.FLASH_DURATION_PERCENT;
       items[4] = 1;
       items1 = [, , , , ];
-      items1[0] = c1;
-      items1[1] = c1;
-      items1[2] = c2;
-      items1[3] = c2;
-      items1[4] = c1;
-      obj[0] = obj2.interpolateColor(c0.get(), items, items1);
+      items1[0] = closure_1;
+      items1[1] = closure_1;
+      items1[2] = closure_2;
+      items1[3] = closure_2;
+      items1[4] = closure_1;
+      obj[0] = obj2.interpolateColor(closure_0.get(), items, items1);
       return obj;
     }
   }
@@ -104,6 +98,6 @@ const memoResult = importAllResult.memo(function ShineAnimation(arg0) {
   obj1[1] = items3;
   return callback2(importDefault(hexResult1[5]).View, obj1);
 });
-let result = require("jsxProd").fileFinishedImporting("components_native/premium/ShineAnimation.tsx");
+let result = require("set").fileFinishedImporting("components_native/premium/ShineAnimation.tsx");
 
 export default memoResult;

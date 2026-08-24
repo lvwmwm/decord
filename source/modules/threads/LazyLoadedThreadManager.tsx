@@ -1,43 +1,40 @@
-// Module ID: 7277
-// Function ID: 7278
+// Module ID: 7315
+// Function ID: 7316
 // Name: initialize
-// Dependencies: [4495, 1395, 1391, 1979, 676, 1398, 709, 5389, 4202, 4215, 530, 2]
+// Dependencies: [4499, 1395, 1391, 1980, 676, 1398, 709, 5394, 4206, 4219, 530, 2]
 
-// Module 7277 (initialize)
-import _handleConnectionOpen from "_handleConnectionOpen";
-import createChannelRecord from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import ME from "ME";
-import { isStaticChannelRoute } from "set";
+// Module 7315 (initialize)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "_handleConnectionOpen" /* 4499 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "handleConnectionOpen" /* 1980 */;
+import ME from "ME" /* 676 */;
+import { isStaticChannelRoute } from "set" /* 1398 */;
 
-let c4;
-let c5;
-let c9;
-let metroImportAll;
 const require = arg1;
 function initialize() {
   if (!c12) {
     c12 = true;
-    const subscription = importDefault(709).subscribe("CONNECTION_OPEN", () => {
-      let closure_11 = {};
+    const subscription = dispatcherDefault.subscribe("CONNECTION_OPEN", () => {
+      closure_11 = {};
       channelId = channelId.getChannelId();
       if (tmp2) {
         callback(channelId);
       }
     });
-    const obj = importDefault(709);
+    const obj = dispatcherDefault;
   }
 }
 function dispatchLoadedThread(arg0, arg1) {
   const tmp = callback(arg0);
-  importDefault(709).dispatch({ type: "THREAD_CREATE", channel: tmp, messageId: undefined });
+  dispatcherDefault.dispatch({ type: "THREAD_CREATE", channel: tmp, messageId: undefined });
 }
 function loadThread(channelId) {
   const _require = channelId;
   if (null == channelId) {
     return Promise.resolve();
-  } else if (channelId === _require(5389).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+  } else if (channelId === _require(5394).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
     return Promise.resolve();
   } else if (isStaticChannelRoute(channelId)) {
     return Promise.resolve();
@@ -46,16 +43,16 @@ function loadThread(channelId) {
   } else {
     if (!c12) {
       c12 = true;
-      let obj = importDefault(709);
+      let obj = dispatcherDefault;
       const subscription = obj.subscribe("CONNECTION_OPEN", () => {
-        let closure_11 = {};
+        closure_11 = {};
         channelId = channelId.getChannelId();
         if (tmp2) {
           callback(channelId);
         }
       });
     }
-    if (_handleConnectionOpen.isConnected()) {
+    if (closure_3.isConnected()) {
       if (null != dependencyMap[channelId]) {
         if ("LOADING" === tmp7.type) {
           let resolved = tmp7.promise;
@@ -64,11 +61,11 @@ function loadThread(channelId) {
         }
         return resolved;
       } else {
-        let tmp13Result = tmp13(4202);
+        let tmp13Result = tmp13(4206);
         const _location = location;
         obj = { path: null, exact: true };
-        const RouteParam = tmp13(4215).RouteParam;
-        const RouteParam2 = tmp13(4215).RouteParam;
+        const RouteParam = tmp13(4219).RouteParam;
+        const RouteParam2 = tmp13(4219).RouteParam;
         obj[0] = closure_9.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(), ":messageId");
         importDefault = tmp13Result.matchPath(location.pathname, obj);
         const HTTP = tmp13(530).HTTP;
@@ -80,8 +77,8 @@ function loadThread(channelId) {
         const guildIdResult = RouteParam.guildId();
         const catchPromise = value.then((body) => {
           body = body.body;
-          outer1_11[closure_0] = { type: "LOADED" };
-          if (outer1_5.has(body.type)) {
+          closure_1_11[closure_0] = { type: "LOADED" };
+          if (closure_1_5.has(body.type)) {
             let messageId;
             if (lib != null) {
               const params = lib.params;
@@ -89,16 +86,16 @@ function loadThread(channelId) {
                 messageId = params.messageId;
               }
             }
-            let obj = lib(outer1_2[6]);
+            let obj = lib(closure_1_2[6]);
             obj = { type: "THREAD_CREATE", channel: null, messageId: null };
-            obj[1] = outer1_4(body);
+            obj[1] = closure_1_4(body);
             obj[2] = messageId;
             obj.dispatch(obj);
-            const tmp4 = outer1_4(body);
+            const tmp4 = closure_1_4(body);
           }
         }).catch(() => {
-          outer1_11[closure_0] = { type: "NOT_FOUND" };
-          let obj = lib(outer1_2[6]);
+          closure_1_11[closure_0] = { type: "NOT_FOUND" };
+          let obj = lib(closure_1_2[6]);
           obj = { id: closure_0, guild_id: null, parent_id: "Array" };
           let guildId;
           if (lib != null) {
@@ -110,7 +107,7 @@ function loadThread(channelId) {
           obj[1] = guildId;
           obj.dispatch({ type: "CHANNEL_DELETE", channel: obj });
         });
-        const obj1 = { type: "LOADING", promise: null };
+        obj1 = { type: "LOADING", promise: null };
         obj1[1] = catchPromise;
         dependencyMap[channelId] = obj1;
         return catchPromise;
@@ -121,10 +118,10 @@ function loadThread(channelId) {
   }
 }
 ({ createChannelRecordFromServer: c4, THREAD_CHANNEL_TYPES: c5 } = createChannelRecord);
-({ Endpoints: metroImportAll, Routes: c9 } = ME);
+({ Endpoints: closure_8, Routes: c9 } = ME);
 let closure_11 = {};
 let c12 = false;
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/threads/LazyLoadedThreadManager.tsx");
+const result = require("set").fileFinishedImporting("modules/threads/LazyLoadedThreadManager.tsx");
 
 export default {
   getLoadState(key10013) {
@@ -137,7 +134,7 @@ export default {
   loadThread,
   loadThreadsBulk(arr) {
     initialize();
-    if (_handleConnectionOpen.isConnected()) {
+    if (closure_3.isConnected()) {
       const items = [];
       const items1 = [];
       let iter = arr[Symbol.iterator]();
@@ -146,7 +143,7 @@ export default {
         let tmp9 = nextResult;
         let tmp10 = items1;
         let tmp11 = dependencyMap;
-        if (nextResult !== items1(5389).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(5394).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           let tmp12 = isStaticChannelRoute;
           let tmp13 = nextResult;
           if (!isStaticChannelRoute(tmp9)) {
@@ -193,24 +190,24 @@ export default {
           while (iter !== undefined) {
             let id = nextResult.id;
             let addResult = set.add(id);
-            let tmp3 = outer1_11;
-            outer1_11[id] = { type: "LOADED" };
-            let tmp4 = outer1_14;
-            let tmp5 = outer1_14(nextResult);
+            let tmp3 = closure_1_11;
+            closure_1_11[id] = { type: "LOADED" };
+            let tmp4 = closure_1_14;
+            let tmp5 = closure_1_14(nextResult);
             continue;
           }
           for (const item10029 of items1) {
             let tmp6 = item10029;
             if (!set.has(item10029)) {
-              let tmp7 = outer1_11;
+              let tmp7 = closure_1_11;
               let tmp8 = item10029;
-              outer1_11[tmp6] = { type: "NOT_FOUND" };
+              closure_1_11[tmp6] = { type: "NOT_FOUND" };
             }
             continue;
           }
         }).catch(() => {
           for (const item10005 of items1) {
-            let tmp3 = outer1_11;
+            let tmp3 = closure_1_11;
             delete tmp[tmp2];
             continue;
           }

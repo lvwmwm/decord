@@ -1,14 +1,18 @@
-// Module ID: 6801
-// Function ID: 6802
+// Module ID: 6838
+// Function ID: 6839
 // Name: get
-// Dependencies: [589, 12, 4200, 709, 2]
+// Dependencies: [589, 12, 4204, 709, 2]
 
-// Module 6801 (get)
-import { Store } from "initialize";
+// Module 6838 (get)
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4204 */;
 
-const require = arg1;
+require = arg1;
 let obj = { version: "", description: "", formFields: [] };
 let closure_4 = {};
+const Store = initializeDefault.Store;
 class MemberVerificationFormStore extends Store {
 }
 const prototype = MemberVerificationFormStore.prototype;
@@ -22,18 +26,15 @@ prototype["getRulesPrompt"] = function getRulesPrompt(guildId) {
   if (dependencyMap[guildId] != null) {
     formFields = tmp2.formFields;
   }
-  return importDefault(12).find(formFields, require(4200) /* MAX_RESULTS_PER_PAGE */.isTermsFormField);
+  return applyDefault.find(formFields, MAX_RESULTS_PER_PAGE.isTermsFormField);
 };
 MemberVerificationFormStore.displayName = "MemberVerificationFormStore";
 obj = {
   INVITE_ACCEPT_SUCCESS: function handleInviteData(invite) {
-    let description;
-    let guild;
-    let member_verification_form;
     ({ member_verification_form, guild } = invite.invite);
     let flag = null != guild && null != member_verification_form;
     if (flag) {
-      const obj = { version: null, description: null, formFields: null, guild: null };
+      obj = { version: null, description: null, formFields: null, guild: null };
       ({ version: obj[0], description } = member_verification_form);
       if (description == null) {
         description = "";
@@ -48,8 +49,6 @@ obj = {
     return flag;
   },
   MEMBER_VERIFICATION_FORM_UPDATE: function handleVerificationFormUpdate(arg0) {
-    let form;
-    let guildId;
     ({ form, guildId } = arg0);
     if (null == form) {
       dependencyMap[guildId] = obj;
@@ -81,8 +80,8 @@ obj = {
     delete tmp2[tmp];
   }
 };
-const memberVerificationFormStore = new MemberVerificationFormStore(require("dispatcher"), obj);
-const result = require("MAX_RESULTS_PER_PAGE").fileFinishedImporting("modules/guild_member_verification/MemberVerificationFormStore.tsx");
+const memberVerificationFormStore = new MemberVerificationFormStore(dispatcherDefault, obj);
+const result = require("set").fileFinishedImporting("modules/guild_member_verification/MemberVerificationFormStore.tsx");
 
 export default memberVerificationFormStore;
 export const NO_MEMBER_VERIFICATION_FORM = obj;

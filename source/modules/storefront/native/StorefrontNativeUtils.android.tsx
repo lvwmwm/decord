@@ -1,14 +1,14 @@
-// Module ID: 10355
-// Function ID: 10356
+// Module ID: 10394
+// Function ID: 10395
 // Name: useFormattedSKUPrice
-// Dependencies: [19, 7662, 589, 5319, 2]
+// Dependencies: [19, 7700, 589, 5324, 2]
 // Exports: useFormattedSKUPrice
 
-// Module 10355 (useFormattedSKUPrice)
-import noop from "noop";
+// Module 10394 (useFormattedSKUPrice)
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/storefront/native/StorefrontNativeUtils.android.tsx");
+const result = require("set").fileFinishedImporting("modules/storefront/native/StorefrontNativeUtils.android.tsx");
 
 export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
   sku = sku.sku;
@@ -27,19 +27,19 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
   _require = tmp2;
   let items = [tmp2];
   const effect = React.useEffect(() => {
-    if (null != _undefined) {
+    if (null != _null) {
       const items = [tmp];
-      const inAppSkus = _undefined(outer1_2[1]).loadInAppSkus(items);
-      const obj = _undefined(outer1_2[1]);
+      const inAppSkus = _null(closure_1_2[1]).loadInAppSkus(items);
+      const obj = _null(closure_1_2[1]);
     }
   }, items);
-  const items1 = [stateFromStores(5319)];
+  const items1 = [stateFromStores(5324)];
   const items2 = [tmp2];
   stateFromStores = _require(589).useStateFromStores(items1, () => {
     let product = null;
     if (null != c0) {
-      product = stateFromStores(outer1_2[3]).getProduct(tmp);
-      const obj = stateFromStores(outer1_2[3]);
+      product = stateFromStores(closure_1_2[3]).getProduct(tmp);
+      const obj = stateFromStores(closure_1_2[3]);
     }
     return product;
   }, items2);

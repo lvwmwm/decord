@@ -1,20 +1,22 @@
-// Module ID: 15123
-// Function ID: 15124
+// Module ID: 15187
+// Function ID: 15188
 // Name: AndroidAuthRadioGroup
-// Dependencies: [32, 19, 17, 21, 4661, 712, 1236, 1297, 500, 530, 8588, 15124, 14096, 8586, 15127, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 1236, 1297, 500, 530, 8627, 15188, 14164, 8625, 15191, 2]
 // Exports: default
 
-// Module 15123 (AndroidAuthRadioGroup)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { NativeModules } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15187 (AndroidAuthRadioGroup)
+import ThemesDefault from "Themes" /* 712 */;
+import _promptForRegisterCredentialDefault from "_promptForRegisterCredential" /* 8625 */;
+import MFAOptionScreenDefault from "MFAOptionScreen" /* 15188 */;
+import MFAButtonDefault from "MFAButton" /* 15191 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 function AndroidAuthRadioGroup(setAuthenticator) {
-  let authenticatorSelection;
-  let inProgress;
   setAuthenticator = setAuthenticator.setAuthenticator;
   ({ authenticatorSelection, inProgress } = setAuthenticator);
   let obj = { value: obj1.ANDROID_PASSKEY, name: null };
@@ -26,7 +28,7 @@ function AndroidAuthRadioGroup(setAuthenticator) {
   obj[1] = intl2.string(setAuthenticator(1236).t.TKop3X);
   items[1] = obj;
   obj = {
-    style: createCacheKey().radioItem,
+    style: callback().radioItem,
     options: items,
     onChange(value) {
       return setAuthenticator(value.value);
@@ -36,7 +38,7 @@ function AndroidAuthRadioGroup(setAuthenticator) {
     withSpacing: true
   };
   return jsx(setAuthenticator(1297).RadioGroup, {
-    style: createCacheKey().radioItem,
+    style: callback().radioItem,
     options: items,
     onChange(value) {
       return setAuthenticator(value.value);
@@ -47,23 +49,17 @@ function AndroidAuthRadioGroup(setAuthenticator) {
   });
 }
 createCacheKey = { radioItem: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.md };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.md };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_6 = createCacheKey.createStyles(createCacheKey);
 let obj1 = { AUTHENTICATE: 0, [0]: "AUTHENTICATE", ANDROID_PASSKEY: 1, [1]: "ANDROID_PASSKEY" };
 let closure_8 = { [obj1.AUTHENTICATE]: NativeModules.DCDSecurityKeyManager.authenticate, [obj1.ANDROID_PASSKEY]: NativeModules.DCDSecurityKeyManager.authenticatePasskey };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/mfa/native/screens/WebAuthnScreen.tsx");
+let result = require("set").fileFinishedImporting("modules/mfa/native/screens/WebAuthnScreen.tsx");
 
 export default function WebAuthnScreen(arg0) {
-  let c1;
-  let c4;
-  let finish;
-  let mfaChallenge;
-  let tmp11;
-  let tmp3;
   ({ mfaChallenge, finish } = arg0);
-  let importDefault;
-  let dependencyMap;
+  importDefault = undefined;
+  dependencyMap = undefined;
   let first;
   let React;
   let challenge;
@@ -72,7 +68,7 @@ export default function WebAuthnScreen(arg0) {
   [tmp3, c1] = first(React.useState(false), 2);
   const tmp4 = first(React.useState(undefined), 2);
   dependencyMap = tmp4[1];
-  let obj1 = finish(500);
+  obj1 = finish(500);
   let tmpResult = tmp(React.useState(obj1.isAndroid() ? tmp7.ANDROID_PASSKEY : tmp7.AUTHENTICATE), 2);
   first = tmpResult[0];
   tmpResult = tmp(obj.useState(false), 2);
@@ -80,7 +76,7 @@ export default function WebAuthnScreen(arg0) {
   const methods = mfaChallenge.methods;
   challenge = methods.find((type) => "webauthn" === type.type).challenge;
   const items = [first];
-  memo = obj.useMemo(() => outer1_8[first], items);
+  memo = obj.useMemo(() => closure_1_8[first], items);
   const items1 = [memo, challenge, finish];
   const callback = obj.useCallback(() => {
     callback(undefined);
@@ -89,7 +85,7 @@ export default function WebAuthnScreen(arg0) {
     const nextPromise = memo(challenge).then((data) => callback({ mfaType: "webauthn", data }));
     const nextPromise1 = memo(challenge).then((data) => callback({ mfaType: "webauthn", data })).then(() => callback4(true));
     memo(challenge).then((data) => callback({ mfaType: "webauthn", data })).then(() => callback4(true)).catch((message) => {
-      if (message instanceof outer1_0(outer1_2[9]).HTTPResponseError) {
+      if (message instanceof closure_1_0(closure_1_2[9]).HTTPResponseError) {
         const intl = tmp(tmp2[6]).intl;
         callback3(intl.string(tmp(tmp2[6]).t.xSCvBf));
       } else {
@@ -106,8 +102,8 @@ export default function WebAuthnScreen(arg0) {
   obj[0] = intl.string(finish(1236).t.saHocI);
   const intl2 = tmp5(1236).intl;
   obj[1] = intl2.string(finish(1236).t.YpMrqM);
-  obj[2] = challenge(finish(14096).KeyImage, {});
-  let shouldDisplayAndroidFidoSelector = importDefault(8586).shouldDisplayAndroidFidoSelector;
+  obj[2] = challenge(finish(14164).KeyImage, {});
+  let shouldDisplayAndroidFidoSelector = _promptForRegisterCredentialDefault.shouldDisplayAndroidFidoSelector;
   if (shouldDisplayAndroidFidoSelector) {
     obj = { authenticatorSelection: null, setAuthenticator: null, inProgress: null };
     obj[0] = first;
@@ -122,7 +118,7 @@ export default function WebAuthnScreen(arg0) {
   }
   obj[3] = shouldDisplayAndroidFidoSelector;
   obj1 = { variant: "primary", text: null, loading: null, disabled: null, onPress: null };
-  const tmp16 = importDefault(15124);
+  const tmp16 = MFAOptionScreenDefault;
   const intl3 = tmp5(1236).intl;
   obj1[1] = intl3.string(finish(1236).t.Xr3Eks);
   let tmp20 = tmp3;
@@ -132,7 +128,7 @@ export default function WebAuthnScreen(arg0) {
   obj1[2] = tmp20;
   obj1[3] = tmp3;
   obj1[4] = callback;
-  obj[4] = challenge(tmp15(15127), obj1);
+  obj[4] = challenge(MFAButtonDefault, obj1);
   obj[5] = { mfaChallenge, finish };
   obj[7] = tmp4[0];
   return challenge(tmp16, obj);

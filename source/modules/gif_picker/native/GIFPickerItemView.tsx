@@ -1,24 +1,26 @@
-// Module ID: 10209
-// Function ID: 10210
+// Module ID: 10248
+// Function ID: 10249
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 4661, 10198, 712, 1892, 4342, 10210, 2007, 1236, 5433, 5449, 2]
+// Dependencies: [19, 17, 21, 4668, 10237, 712, 1892, 4346, 10249, 2008, 1236, 5438, 5454, 2]
 // Exports: default
 
-// Module 10209 (GIFPickerItemView)
-import importAllResult from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10248 (GIFPickerItemView)
+import ThemesDefault from "Themes" /* 712 */;
+import transformFavoriteGifUrl from "transformFavoriteGifUrl" /* 10237 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 let closure_6 = createCacheKey.createStyles((height) => {
   let obj = { container: null, gifImage: null, gifImageSelected: null };
-  obj = { paddingBottom: require(10198) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: require(10198) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: importDefault(712).radii.xs, width: "100%", height, flex: 1 };
+  obj = { paddingBottom: transformFavoriteGifUrl.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: transformFavoriteGifUrl.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: ThemesDefault.radii.xs, width: "100%", height, flex: 1 };
   obj[0] = obj;
-  obj = { backgroundColor: importDefault(712).colors.BORDER_SUBTLE, borderRadius: importDefault(712).radii.xs, flex: 1 };
+  obj = { backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, borderRadius: ThemesDefault.radii.xs, flex: 1 };
   obj[1] = obj;
-  obj[2] = { borderWidth: 2, borderColor: importDefault(712).colors.BACKGROUND_BRAND };
+  obj[2] = { borderWidth: 2, borderColor: ThemesDefault.colors.BACKGROUND_BRAND };
   return obj;
 });
 const memoResult = importAllResult.memo((height) => {
@@ -27,7 +29,7 @@ const memoResult = importAllResult.memo((height) => {
   obj = { style: tmp.gifImage };
   return <View style={tmp.gifImage} />;
 });
-let result = require("jsxProd").fileFinishedImporting("modules/gif_picker/native/GIFPickerItemView.tsx");
+let result = require("set").fileFinishedImporting("modules/gif_picker/native/GIFPickerItemView.tsx");
 
 export default function GIFPickerItemView(onPressGIF) {
   onPressGIF = onPressGIF.onPressGIF;

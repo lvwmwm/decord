@@ -1,27 +1,31 @@
-// Module ID: 13995
-// Function ID: 13996
+// Module ID: 14063
+// Function ID: 14064
 // Name: GuildSelectDefaultIcon
-// Dependencies: [32, 109, 19, 17, 1994, 13993, 1910, 10670, 21, 4661, 712, 1297, 6291, 1500, 13996, 589, 1236, 9551, 7188, 15060, 15061, 7178, 1356, 8101, 8100, 7167, 4093, 12139, 4343, 4344, 6292, 4733, 4734, 1898, 500, 13542, 5433, 4745, 4097, 7359, 1892, 2]
+// Dependencies: [32, 109, 19, 17, 1995, 14061, 1910, 10709, 21, 4668, 712, 1297, 6322, 1500, 14064, 589, 1236, 9588, 7226, 15124, 15125, 7216, 1356, 8140, 8139, 7205, 4096, 12191, 4347, 4348, 6323, 4738, 4739, 1898, 500, 13600, 5438, 4750, 4100, 7397, 1892, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 13995 (GuildSelectDefaultIcon)
-import Text from "Text";
-import _objectWithoutProperties from "_objectWithoutProperties";
-import importAllResult from "useHighlightSettingItem";
-import { View } from "ClydeIcon";
-import _getSystemLocale from "_getSystemLocale";
-import zustandStore from "zustandStore";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
-import jsxProd from "TableSwitchRow";
-import createCacheKey from "createCacheKey";
+// Module 14063 (GuildSelectDefaultIcon)
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import Text from "Text" /* 4739 */;
+import TableRowInner from "TableRowInner" /* 6322 */;
+import context2 from "context" /* 8140 */;
+import ClydeIcon from "ClydeIcon" /* 9588 */;
+import VolumeSliderDefault from "VolumeSlider" /* 12191 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 15124 */;
+import _modDef15125 from "module_15125" /* 15125 */;
+import closure_5 from "_slicedToArray" /* 32 */;
+import closure_6 from "_objectWithoutProperties" /* 109 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_9 from "_getSystemLocale" /* 1995 */;
+import closure_10 from "zustandStore" /* 14061 */;
+import closure_11 from "createGuildRecordFromRust" /* 1910 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 10709 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_12;
-let closure_14;
-let closure_15;
-let closure_16;
-let map1;
-const require = arg1;
+require = arg1;
 class GuildSelectDefaultIcon {
   constructor(arg0) {
     str = global.size;
@@ -29,7 +33,7 @@ class GuildSelectDefaultIcon {
       str = "sm";
     }
     num = 32;
-    tmp = jsxs();
+    tmp = closure_17();
     if ("xs" === str) {
       num = 24;
     }
@@ -62,13 +66,13 @@ function SettingSearchResultBreadcrumbs(breadcrumbs) {
   if (0 !== breadcrumbs.length) {
     const obj = { variant: "text-xs/medium", color: "text-muted", children: null };
     obj[2] = breadcrumbs.join(" \u2192 ");
-    tmp = callback3(require(4734) /* Text */.Text, obj);
+    tmp = callback3(Text.Text, obj);
   }
   return tmp;
 }
 function SettingSearchResultIcon(IconComponent) {
   IconComponent = IconComponent.IconComponent;
-  require(4097) /* map */;
+  map;
   if (null == IconComponent) {
     let obj = { style: null };
     obj = { width: null };
@@ -78,15 +82,11 @@ function SettingSearchResultIcon(IconComponent) {
   } else {
     obj = { IconComponent: null };
     obj[0] = IconComponent;
-    tmp6 = callback3(require(6291) /* TableRowInner */.TableRow.Icon, obj);
+    tmp6 = callback3(TableRowInner.TableRow.Icon, obj);
   }
   return tmp6;
 }
 function RouteSettingSearchResult(setting) {
-  let IconComponent;
-  let breadcrumbs;
-  let settingData;
-  let title;
   ({ settingData, title } = setting);
   setting = setting.setting;
   const index = setting.index;
@@ -106,25 +106,17 @@ function RouteSettingSearchResult(setting) {
   const items = [preNavigationAction, index, stackNavigation, screen, setting, title, total];
   const callback = importAllResult.useCallback(() => {
     let obj = { selected: setting };
-    outer1_10.setState(obj);
+    closure_1_10.setState(obj);
     obj = { setting, title, route: screen.route, searchResultPosition: index, numSearchResults: total };
     const result = title(index[39]).trackSettingSearchResultPress(obj);
     const obj2 = title(index[39]);
     obj = { navigation: stackNavigation, screen, preNavigationAction };
     const result1 = title(index[14]).onRouteSettingOnPress(obj);
   }, items);
-  obj = { label: title, onPress: callback, arrow: true, icon: null, subLabel: null, start: null, end: null };
-  obj[3] = callback3(SettingSearchResultIcon, { IconComponent });
-  obj[4] = callback3(SettingSearchResultBreadcrumbs, { breadcrumbs });
-  obj[5] = 0 === index;
-  obj[6] = index === total - 1;
+  obj = { label: title, onPress: callback, arrow: true, icon: callback3(SettingSearchResultIcon, { IconComponent }), subLabel: callback3(SettingSearchResultBreadcrumbs, { breadcrumbs }), start: 0 === index, end: index === total - 1 };
   return callback3(title(index[12]).TableRow, obj);
 }
 function PressableSettingSearchResult(setting) {
-  let IconComponent;
-  let breadcrumbs;
-  let settingData;
-  let title;
   ({ settingData, title } = setting);
   setting = setting.setting;
   const index = setting.index;
@@ -140,17 +132,9 @@ function PressableSettingSearchResult(setting) {
     const result1 = title(index[40]).dismissGlobalKeyboard();
     onPress();
   }, items);
-  let obj = { label: title, onPress: callback, icon: null, subLabel: null, start: null, end: null, arrow: null };
-  obj[2] = callback3(SettingSearchResultIcon, { IconComponent });
-  obj[3] = callback3(SettingSearchResultBreadcrumbs, { breadcrumbs });
-  obj[4] = 0 === index;
-  obj[5] = index === total - 1;
-  obj[6] = settingData.withArrow;
-  return callback3(title(index[12]).TableRow, obj);
+  return callback3(title(index[12]).TableRow, { label: title, onPress: callback, icon: callback3(SettingSearchResultIcon, { IconComponent }), subLabel: callback3(SettingSearchResultBreadcrumbs, { breadcrumbs }), start: 0 === index, end: index === total - 1, arrow: settingData.withArrow });
 }
 function StaticSettingSearchResult(title) {
-  let IconComponent;
-  let breadcrumbs;
   title = title.title;
   const setting = title.setting;
   const index = title.index;
@@ -198,8 +182,6 @@ function StaticSettingSearchResult(title) {
   return closure_14(title(index[12]).TableRow, obj);
 }
 function SettingSearchResultPlaceholder(arg0) {
-  let end;
-  let start;
   ({ start, end } = arg0);
   const tmp = callback5();
   let obj = { start, end, label: null, icon: null };
@@ -207,7 +189,7 @@ function SettingSearchResultPlaceholder(arg0) {
   obj[2] = callback3(View, { style: items });
   obj = { style: tmp.placeholderAvatar };
   obj[3] = callback3(View, obj);
-  return callback3(require(6291) /* TableRowInner */.TableRow, obj);
+  return callback3(TableRowInner.TableRow, obj);
 }
 let closure_3 = ["onSlidingComplete", "step", "startIcon", "endIcon", "minimumValue", "maximumValue", "valueLabel", "defaultValue", "onValueChange"];
 let closure_4 = ["settingData"];
@@ -215,31 +197,17 @@ let error = importAllResult;
 ({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: closure_12, NodeType: map1 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
 let obj = { slider: null, sliderTitle: null, radioSettingHighlight: null, defaultIcon: null, placeholderAvatar: null, placeholderUsername: null };
-obj = { marginTop: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_8 };
+obj = { marginTop: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_8 };
 obj[0] = obj;
 obj[1] = { flexDirection: "row", justifyContent: "space-between" };
 obj[2] = { top: 26 };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, justifyContent: "center", alignItems: "center" };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND, justifyContent: "center", alignItems: "center" };
 obj[3] = createCacheKey;
-let obj2 = { width: null, height: null, borderRadius: null, backgroundColor: null };
-obj2[0] = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.REFRESH_MEDIUM_32];
-obj2[1] = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.REFRESH_MEDIUM_32];
-obj2[2] = require("Themes").radii.xl;
-obj2[3] = require("Themes").colors.BACKGROUND_MOD_MUTED;
-obj[4] = obj2;
-obj[5] = { height: 20, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+obj[4] = { width: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.REFRESH_MEDIUM_32], height: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.REFRESH_MEDIUM_32], borderRadius: ThemesDefault.radii.xl, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
+let obj2 = { width: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.REFRESH_MEDIUM_32], height: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.REFRESH_MEDIUM_32], borderRadius: ThemesDefault.radii.xl, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
+obj[5] = { height: 20, borderRadius: ThemesDefault.radii.md, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
 let closure_17 = createCacheKey.createStyles(obj);
 let closure_18 = importAllResult.memo((arg0) => {
-  let IconComponent;
-  let end;
-  let screen;
-  let start;
-  let useDescription;
-  let useIsDisabled;
-  let usePreNavigationAction;
-  let useTitle;
-  let useTrailing;
-  let variant;
   ({ useTrailing, usePreNavigationAction, screen } = arg0);
   ({ useDescription, useIsDisabled, IconComponent } = arg0);
   let stackNavigation;
@@ -284,7 +252,7 @@ let closure_18 = importAllResult.memo((arg0) => {
     if (null != trailing) {
       tmp10Result = trailing;
       if (typeof trailing === "string") {
-        const obj1 = { text: null };
+        obj1 = { text: null };
         obj1[0] = trailing;
         tmp10Result = tmp10(tmp(tmp2[12]).TableRow.TrailingText, obj1);
       }
@@ -301,14 +269,14 @@ let closure_18 = importAllResult.memo((arg0) => {
 let closure_20 = importAllResult.memo((useSelectedGuildId) => {
   const merged = Object.assign(useSelectedGuildId, Object.create(null));
   let selectedGuildId;
-  let closure_1;
-  let dependencyMap;
+  closure_1 = undefined;
+  dependencyMap = undefined;
   selectedGuildId = useSelectedGuildId.useSelectedGuildId();
   let obj = selectedGuildId(589);
-  const items = [createGuildRecordFromRust];
-  closure_1 = obj.useStateFromStores(items, () => outer1_11.getGuild(selectedGuildId));
-  const items1 = [createGuildRecordFromRust];
-  const stateFromStores = selectedGuildId(589).useStateFromStores(items1, () => outer1_11.getGuild(selectedGuildId));
+  const items = [closure_11];
+  closure_1 = obj.useStateFromStores(items, () => closure_1_11.getGuild(selectedGuildId));
+  const items1 = [closure_11];
+  const stateFromStores = selectedGuildId(589).useStateFromStores(items1, () => closure_1_11.getGuild(selectedGuildId));
   if (selectedGuildId === closure_12) {
     const intl2 = tmp3(1236).intl;
     let stringResult = intl2.string(tmp3(1236).t.OMVg25);
@@ -333,12 +301,12 @@ let closure_20 = importAllResult.memo((useSelectedGuildId) => {
   obj.withArrow = true;
   obj.IconComponent = importAllResult.memo(() => {
     if (null == callback) {
-      let tmp7 = outer1_14(outer1_19, {});
+      let tmp7 = closure_1_14(closure_1_19, {});
     } else {
       const obj = { size: null, guild: null };
       obj[0] = selectedGuildId(_undefined[18]).GuildIconSizes.SMALL_32;
       obj[1] = tmp;
-      tmp7 = outer1_14(callback(_undefined[18]), obj);
+      tmp7 = closure_1_14(callback(_undefined[18]), obj);
       const tmp5 = callback(_undefined[18]);
     }
     return tmp7;
@@ -346,20 +314,9 @@ let closure_20 = importAllResult.memo((useSelectedGuildId) => {
   return callback3(closure_21, obj);
 });
 let closure_21 = importAllResult.memo((arg0) => {
-  let IconComponent;
-  let end;
-  let onPress;
-  let setting;
-  let start;
-  let useDescription;
-  let useIsDisabled;
-  let useTitle;
-  let useTrailing;
-  let variant;
-  let withArrow;
   ({ useDescription, useIsDisabled, useTrailing, variant, start, end, IconComponent } = arg0);
   ({ setting, onPress, useTitle, withArrow } = arg0);
-  let obj = require(15060) /* useHighlightSettingItem */;
+  let obj = useHighlightSettingItem;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   let description;
   const title = useTitle();
@@ -380,7 +337,7 @@ let closure_21 = importAllResult.memo((arg0) => {
     obj = { IconComponent: null, variant: null };
     obj[0] = IconComponent;
     obj[1] = variant;
-    tmp10Result = tmp10(tmp(6291).TableRow.Icon, obj);
+    tmp10Result = tmp10(tmp(6322).TableRow.Icon, obj);
   }
   obj[4] = tmp10Result;
   obj[5] = onPress;
@@ -389,40 +346,29 @@ let closure_21 = importAllResult.memo((arg0) => {
   if (null != trailing) {
     tmp10Result = trailing;
     if (typeof trailing === "string") {
-      const obj1 = { text: null };
+      obj1 = { text: null };
       obj1[0] = trailing;
-      tmp10Result = tmp10(tmp(6291).TableRow.TrailingText, obj1);
+      tmp10Result = tmp10(tmp(6322).TableRow.TrailingText, obj1);
     }
     tmp12 = tmp10Result;
   }
   obj[7] = tmp12;
   obj[8] = start;
   obj[9] = end;
-  const children = [closure_14(require(6291) /* TableRowInner */.TableRow, obj), ];
+  const children = [closure_14(TableRowInner.TableRow, obj), ];
   if (highlightSettingItem) {
     const obj2 = { start: null, end: null };
     obj2[0] = start;
     obj2[1] = end;
-    highlightSettingItem = tmp10(importDefault(15061), obj2);
+    highlightSettingItem = tmp10(_modDef15125, obj2);
   }
   children[1] = highlightSettingItem;
   return closure_16(closure_15, { children });
 });
 let closure_22 = importAllResult.memo((arg0) => {
-  let IconComponent;
-  let end;
-  let hasIcon;
-  let onValueChange;
-  let setting;
-  let start;
-  let useDescription;
-  let useIsDisabled;
-  let useTitle;
-  let useValue;
-  let variant;
   ({ useDescription, useIsDisabled, variant, start, end, IconComponent } = arg0);
   ({ setting, onValueChange, useTitle, useValue, hasIcon } = arg0);
-  let obj = require(15060) /* useHighlightSettingItem */;
+  let obj = useHighlightSettingItem;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const title = useTitle();
   let description;
@@ -440,7 +386,7 @@ let closure_22 = importAllResult.memo((arg0) => {
     obj = { IconComponent: null, variant: null };
     obj[0] = IconComponent;
     obj[1] = variant;
-    tmp8Result = tmp8(tmp(6291).TableRow.Icon, obj);
+    tmp8Result = tmp8(tmp(6322).TableRow.Icon, obj);
   }
   obj[2] = tmp8Result;
   obj[3] = value;
@@ -449,10 +395,10 @@ let closure_22 = importAllResult.memo((arg0) => {
   obj[6] = onValueChange;
   obj[7] = start;
   obj[8] = end;
-  tmp8Result = tmp8(tmp(7178).TableSwitchRow, obj);
+  tmp8Result = tmp8(tmp(7216).TableSwitchRow, obj);
   let tmp8Result1 = tmp8Result;
   if (true === hasIcon) {
-    const obj1 = { children: null };
+    obj1 = { children: null };
     obj1[0] = tmp8Result;
     tmp8Result1 = tmp8(ForceSwitchIcons, obj1);
   }
@@ -461,19 +407,14 @@ let closure_22 = importAllResult.memo((arg0) => {
     const obj2 = { start: null, end: null };
     obj2[0] = start;
     obj2[1] = end;
-    highlightSettingItem = tmp8(importDefault(15061), obj2);
+    highlightSettingItem = tmp8(_modDef15125, obj2);
   }
   children[1] = highlightSettingItem;
   return closure_16(closure_15, { children });
 });
 let closure_24 = importAllResult.memo((arg0) => {
-  let onValueChange;
-  let setting;
-  let useOptions;
-  let useTitle;
-  let useValue;
   ({ setting, useTitle, useValue, useOptions, onValueChange } = arg0);
-  let obj = require(15060) /* useHighlightSettingItem */;
+  let obj = useHighlightSettingItem;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const title = useTitle();
   const value = useValue();
@@ -483,39 +424,35 @@ let closure_24 = importAllResult.memo((arg0) => {
     let _HermesInternal = HermesInternal;
     combined = "" + value;
   }
-  obj = { title, defaultValue: combined, onChange: onValueChange, hasIcons: false, children: null };
-  obj[4] = options.map((label) => {
-    if (typeof label.value === "number") {
-      const _HermesInternal = HermesInternal;
-      let combined = "" + label.value;
-    } else {
-      combined = label.value;
-    }
-    return callback2(callback(table[24]).TableRadioRow, { value: combined, label: label.label, subLabel: label.subLabel, disabled: label.disabled }, label.value);
-  });
-  const children = [callback3(require(8101) /* context */.TableRadioGroup, obj, combined), ];
+  obj = {
+    title,
+    defaultValue: combined,
+    onChange: onValueChange,
+    hasIcons: false,
+    children: options.map((label) => {
+      if (typeof label.value === "number") {
+        const _HermesInternal = HermesInternal;
+        let combined = "" + label.value;
+      } else {
+        combined = label.value;
+      }
+      return callback2(callback(table[24]).TableRadioRow, { value: combined, label: label.label, subLabel: label.subLabel, disabled: label.disabled }, label.value);
+    })
+  };
+  const children = [callback3(context2.TableRadioGroup, obj, combined), ];
   if (highlightSettingItem) {
     obj = { start: true, end: true, style: null };
     obj[2] = tmp.radioSettingHighlight;
-    highlightSettingItem = callback3(importDefault(15061), obj);
+    highlightSettingItem = callback3(_modDef15125, obj);
   }
   children[1] = highlightSettingItem;
   return closure_16(closure_15, { children });
 });
 let closure_25 = importAllResult.memo((arg0) => {
-  let IconComponent;
-  let end;
-  let setting;
-  let start;
-  let useDescription;
-  let useIsDisabled;
-  let useTitle;
-  let useTrailing;
-  let variant;
   ({ variant, useTrailing, useIsDisabled, useDescription, start, end, IconComponent } = arg0);
   let trailing;
   ({ setting, useTitle } = arg0);
-  let obj = trailing(15060);
+  let obj = trailing(15124);
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   trailing = undefined;
   const title = useTitle();
@@ -533,10 +470,10 @@ let closure_25 = importAllResult.memo((arg0) => {
   const items = [trailing];
   const callback = importAllResult.useCallback(() => {
     if (null != trailing) {
-      trailing(outer1_2[25]).copy(tmp);
-      const obj = trailing(outer1_2[25]);
-      const result = trailing(outer1_2[26]).presentCopiedToClipboard();
-      const obj2 = trailing(outer1_2[26]);
+      trailing(closure_1_2[25]).copy(tmp);
+      const obj = trailing(closure_1_2[25]);
+      const result = trailing(closure_1_2[26]).presentCopiedToClipboard();
+      const obj2 = trailing(closure_1_2[26]);
     }
   }, items);
   obj = { label: title, subLabel: description, onPress: null, variant: null, disabled: null, icon: null, trailing: null, start: null, end: null };
@@ -552,39 +489,32 @@ let closure_25 = importAllResult.memo((arg0) => {
     obj = { IconComponent: null, variant: null };
     obj[0] = IconComponent;
     obj[1] = variant;
-    tmp11Result = tmp11(tmp(6291).TableRow.Icon, obj);
+    tmp11Result = tmp11(tmp(6322).TableRow.Icon, obj);
   }
   obj[5] = tmp11Result;
   tmp11Result = null;
   if (null != trailing) {
-    const obj1 = { text: null };
+    obj1 = { text: null };
     obj1[0] = trailing;
-    tmp11Result = tmp11(tmp(6291).TableRow.TrailingText, obj1);
+    tmp11Result = tmp11(tmp(6322).TableRow.TrailingText, obj1);
   }
   obj[6] = tmp11Result;
   obj[7] = start;
   obj[8] = end;
-  const children = [closure_14(trailing(6291).TableRow, obj), ];
+  const children = [closure_14(trailing(6322).TableRow, obj), ];
   if (highlightSettingItem) {
     let obj2 = { start: null, end: null };
     obj2[0] = start;
     obj2[1] = end;
-    highlightSettingItem = tmp11(importDefault(15061), obj2);
+    highlightSettingItem = tmp11(_modDef15125, obj2);
   }
   children[1] = highlightSettingItem;
   return closure_16(closure_15, { children });
 });
 let closure_26 = importAllResult.memo((arg0) => {
-  let end;
-  let maximum;
-  let onValueChange;
-  let setting;
-  let start;
-  let useTitle;
-  let useValue;
   ({ useValue, start, end } = arg0);
   ({ setting, useTitle, onValueChange, maximum } = arg0);
-  let obj = require(15060) /* useHighlightSettingItem */;
+  let obj = useHighlightSettingItem;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   let value;
   const title = useTitle();
@@ -592,29 +522,19 @@ let closure_26 = importAllResult.memo((arg0) => {
     value = useValue();
   }
   obj = { label: title, start, end, subLabel: null };
-  obj = { style: callback5().slider, children: null };
-  obj[1] = callback3(importDefault(12139), { value, maxVolume: maximum, onValueChange });
+  obj = { style: callback5().slider, children: callback3(VolumeSliderDefault, { value, maxVolume: maximum, onValueChange }) };
   obj[3] = callback3(View, obj);
-  const children = [callback3(require(6291) /* TableRowInner */.TableRow, obj), ];
+  const children = [callback3(TableRowInner.TableRow, obj), ];
   if (highlightSettingItem) {
-    const obj1 = { start: null, end: null };
+    obj1 = { start: null, end: null };
     obj1[0] = start;
     obj1[1] = end;
-    highlightSettingItem = callback3(importDefault(15061), obj1);
+    highlightSettingItem = callback3(_modDef15125, obj1);
   }
   children[1] = highlightSettingItem;
   return closure_16(closure_15, { children });
 });
 let closure_27 = importAllResult.memo((useTrailing) => {
-  let c9;
-  let defaultValue;
-  let end;
-  let endIcon;
-  let start;
-  let startIcon;
-  let tmp11;
-  let useProps;
-  let valueLabel;
   useTrailing = useTrailing.useTrailing;
   let onSlidingComplete;
   let num;
@@ -624,7 +544,7 @@ let closure_27 = importAllResult.memo((useTrailing) => {
   let onValueChange;
   let callback2;
   let first;
-  let closure_8;
+  closure_8 = undefined;
   c9 = undefined;
   let callback1;
   let callback3;
@@ -659,9 +579,9 @@ let closure_27 = importAllResult.memo((useTrailing) => {
   const tmp4 = callback5();
   let obj = onSlidingComplete(num2[15]);
   const items = [c9];
-  const stateFromStores = obj.useStateFromStores(items, () => _undefined2.locale);
+  const stateFromStores = obj.useStateFromStores(items, () => _undefined.locale);
   const tmp8 = onValueChange(first.useState(() => {
-    let value = _undefined.value;
+    value = value.value;
     if (value == null) {
       value = num3;
     }
@@ -672,7 +592,7 @@ let closure_27 = importAllResult.memo((useTrailing) => {
   [tmp11, c9] = onValueChange(first.useState(false), 2);
   const items1 = [onValueChange];
   const callback = first.useCallback(() => {
-    _undefined2(true);
+    _undefined(true);
   }, []);
   callback1 = first.useCallback((arg0) => {
     callback(arg0);
@@ -683,7 +603,7 @@ let closure_27 = importAllResult.memo((useTrailing) => {
   const items2 = [onSlidingComplete];
   const items3 = [callback1, onSlidingComplete];
   callback2 = first.useCallback((arg0) => {
-    _undefined2(false);
+    _undefined(false);
     if (onSlidingComplete != null) {
       tmp2(arg0);
     }
@@ -721,7 +641,7 @@ let closure_27 = importAllResult.memo((useTrailing) => {
       let tmp5Result = tmp5(tmp6[33]);
       formatPercentResult = tmp5Result.formatPercent(stateFromStores, first);
     }
-    const obj1 = { variant: "text-sm/medium", color: "text-muted", children: null };
+    obj1 = { variant: "text-sm/medium", color: "text-muted", children: null };
     obj1[2] = formatPercentResult;
     tmp20Result = tmp20(tmp5(tmp6[32]).Text, obj1);
   }
@@ -761,15 +681,11 @@ let closure_27 = importAllResult.memo((useTrailing) => {
   obj[4] = callback4(onSlidingComplete(num2[31]).Stack, obj4);
   return callback3(onSlidingComplete(num2[30]).Card, obj);
 });
-let obj3 = { height: 20, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
-let result = require("noop").fileFinishedImporting("modules/settings/native/renderer/SettingRenderer.tsx");
+let obj3 = { height: 20, borderRadius: ThemesDefault.radii.md, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
+let result = require("set").fileFinishedImporting("modules/settings/native/renderer/SettingRenderer.tsx");
 
 export { GuildSelectDefaultIcon };
 export const renderSettingItem = function renderSettingItem(item) {
-  let end;
-  let setting;
-  let settingData;
-  let start;
   ({ setting, settingData, start, end } = item);
   const type = settingData.type;
   if (constants.GUILD_SELECTOR === type) {
@@ -786,7 +702,7 @@ export const renderSettingItem = function renderSettingItem(item) {
     obj.end = end;
     return callback3(closure_18, obj);
   } else if (tmp.PRESSABLE === type) {
-    const obj1 = {};
+    obj1 = {};
     const merged2 = Object.assign(settingData);
     obj1.start = start;
     obj1.end = end;
@@ -849,7 +765,7 @@ export const renderSettingSearchResultItem = function renderSettingSearchResultI
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("[SettingRenderer] Found unsupported renderer type for setting: " + item.setting);
+    error = new Error("[SettingRenderer] Found unsupported renderer type for setting: " + item.setting);
     throw error;
   }
 };

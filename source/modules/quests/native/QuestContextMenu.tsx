@@ -1,26 +1,29 @@
-// Module ID: 14504
-// Function ID: 14505
+// Module ID: 14572
+// Function ID: 14573
 // Name: renderDefaultButton
-// Dependencies: [109, 19, 7453, 676, 21, 8035, 9416, 1236, 10684, 589, 6719, 10953, 10687, 10496, 7474, 500, 4355, 10947, 10689, 7480, 1351, 14457, 10477, 6693, 14505, 4322, 7476, 7167, 4326, 9502, 9503, 9507, 7469, 9958, 2]
+// Dependencies: [109, 19, 7491, 676, 21, 8074, 9453, 1236, 10723, 589, 6756, 10992, 10726, 10535, 7512, 500, 4359, 10986, 10728, 7518, 1351, 14525, 10516, 6729, 14573, 4326, 7514, 7205, 4330, 9539, 9540, 9544, 7507, 9997, 2]
 
-// Module 14504 (renderDefaultButton)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import importAllResult from "getQuestContentName";
-import initializeState from "initializeState";
-import { LinkingTypes } from "ME";
-import { jsx } from "module_14457";
+// Module 14572 (renderDefaultButton)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import IconButton from "IconButton" /* 8074 */;
+import registerAssetDefault from "registerAsset" /* 9453 */;
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import importAllResult from "noop" /* 19 */;
+import closure_6 from "initializeState" /* 7491 */;
+import { LinkingTypes } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function renderDefaultButton(ref) {
   const obj = { ref: ref.ref };
   const merged = Object.assign(callback(ref, closure_3));
-  obj.icon = importDefault(9416);
+  obj.icon = registerAssetDefault;
   obj.variant = "secondary";
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.CAgr1w);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj.accessibilityHint = intl2.string(require(1236) /* getSystemLocale */.t.hd0b7t);
-  return jsx(require(8035) /* IconButton */.IconButton, { ref: ref.ref });
+  const intl = getSystemLocale.intl;
+  obj.accessibilityLabel = intl.string(getSystemLocale.t.CAgr1w);
+  const intl2 = getSystemLocale.intl;
+  obj.accessibilityHint = intl2.string(getSystemLocale.t.hd0b7t);
+  return jsx(IconButton.IconButton, { ref: ref.ref });
 }
 let closure_3 = ["ref"];
 let c5 = importAllResult;
@@ -181,7 +184,7 @@ const memoResult = importAllResult.memo((children) => {
     items[HermesBuiltin.arraySpread(memo1, 5)] = {
       label: "Copy Quest ID",
       action() {
-        return outer1_0(outer1_2[27]).copy(id.id);
+        return closure_1_0(closure_1_2[27]).copy(id.id);
       }
     };
     return items;
@@ -198,7 +201,7 @@ const memoResult = importAllResult.memo((children) => {
     const obj = {
       label: "Show in Quest Bar",
       action() {
-        return callback(outer1_0(outer1_2[10]).QuestContent.QUEST_BAR_MOBILE);
+        return callback(closure_1_0(closure_1_2[10]).QuestContent.QUEST_BAR_MOBILE);
       },
       IconComponent: null
     };
@@ -258,6 +261,6 @@ const memoResult = importAllResult.memo((children) => {
   }, items11);
   return handleResetHasBeenSeenClick(quest(sourceQuestContent[33]).ContextMenu, { items, onOpen, triggerOnTap: true, children });
 });
-let result = require("initializeState").fileFinishedImporting("modules/quests/native/QuestContextMenu.tsx");
+let result = require("set").fileFinishedImporting("modules/quests/native/QuestContextMenu.tsx");
 
 export default memoResult;

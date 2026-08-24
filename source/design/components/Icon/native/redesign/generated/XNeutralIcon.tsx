@@ -1,15 +1,18 @@
-// Module ID: 8309
-// Function ID: 8310
+// Module ID: 8349
+// Function ID: 8350
 // Name: XNeutralIcon
-// Dependencies: [19, 21, 4096, 8310, 2]
+// Dependencies: [19, 21, 4099, 8350, 2]
 // Exports: XNeutralIcon
 
-// Module 8309 (XNeutralIcon)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 8349 (XNeutralIcon)
+import noopAll from "noop" /* 19 */;
+import BaseIconImage from "BaseIconImage" /* 4099 */;
+import registerAsset from "registerAsset" /* 8350 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("BaseIconImage").fileFinishedImporting("design/components/Icon/native/redesign/generated/XNeutralIcon.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Icon/native/redesign/generated/XNeutralIcon.tsx");
 
 export const XNeutralIcon = function XNeutralIcon(color) {
   let str = color.color;
@@ -17,10 +20,6 @@ export const XNeutralIcon = function XNeutralIcon(color) {
     str = "#4E5058";
   }
   const merged = Object.assign(color, Object.create(null));
-  const obj = { source: null, color: null, style: null };
-  obj[0] = require(8310) /* registerAsset */;
-  obj[1] = str;
-  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(BaseIconImage.BaseIconImage, { source: registerAsset, color: str, style: color.style });
 };

@@ -1,12 +1,20 @@
-// Module ID: 13204
-// Function ID: 13205
+// Module ID: 13259
+// Function ID: 13260
 // Name: items
-// Dependencies: [17, 13205, 13207, 3, 500, 13206, 4842, 2]
+// Dependencies: [17, 13260, 13262, 3, 500, 13261, 4847, 2]
 // Exports: getCompressionHandler
 
-// Module 13204 (items)
-import { NativeModules } from "get ActivityIndicator";
+// Module 13259 (items)
+import set from "set" /* 2 */;
+import timestampDefault from "timestamp" /* 3 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import set2 from "set" /* 500 */;
+import get from "get" /* 4847 */;
+import supportsZstd from "supportsZstd" /* 13260 */;
+import enforcing from "enforcing" /* 13261 */;
+import _mod13262 from "module_13262" /* 13262 */;
 
+const NativeModules = get_ActivityIndicator.NativeModules;
 const items = [];
 class BaseGatewayCompressionHandler {
   constructor(arg0) {
@@ -41,7 +49,7 @@ const fn = (arg0) => {
   } else {
     tmp._decoder = null;
   }
-  tmp._stream = require(13205) /* supportsZstd */.createZstdContextWeb();
+  tmp._stream = supportsZstd.createZstdContextWeb();
   return tmp;
 };
 const prototype2 = fn.prototype;
@@ -60,7 +68,7 @@ prototype2["feed"] = function feed(dataView) {
   const self = this;
   if (null == this._stream) {
     const _Error2 = Error;
-    const error = new Error("Trying to decompress with zstd but did not initialize with it");
+    error = new Error("Trying to decompress with zstd but did not initialize with it");
     throw error;
   } else {
     const _ArrayBuffer = ArrayBuffer;
@@ -87,11 +95,9 @@ prototype2["close"] = function close() {
 };
 items.push(fn);
 const fn2 = (arg0) => {
-  let _inflate;
-  let handleFlushEnd;
   tmp = new tmp(arg0, new.target, tmp, new.target);
   // ThrowIfThisInitialized (0x7c)
-  tmp._pako = require(13207);
+  tmp._pako = _mod13262;
   tmp._usesZstd = false;
   tmp._zstdDecoder = null;
   tmp._zstdStream = null;
@@ -122,7 +128,7 @@ prototype3["feed"] = function feed(buffer) {
   const self = this;
   if (null == this._inflate) {
     const _Error3 = Error;
-    const error = new Error("Trying to feed to closed compression adapter");
+    error = new Error("Trying to feed to closed compression adapter");
     throw error;
   } else if (null === self._onDataReady) {
     const _Error2 = Error;
@@ -165,7 +171,7 @@ prototype3["handleFlushEnd"] = function handleFlushEnd(arg0) {
     if (arg0 !== tmp.Z_OK) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
-      const error = new Error("zlib error, " + arg0 + ", " + _inflate.strm.msg);
+      error = new Error("zlib error, " + arg0 + ", " + _inflate.strm.msg);
       throw error;
     } else {
       const chunks = _inflate.chunks;
@@ -212,14 +218,14 @@ prototype3["handleFlushEnd"] = function handleFlushEnd(arg0) {
       }
     }
   } else {
-    const obj = new importDefault(3)("GatewayCompressionHandler");
+    const obj = new timestampDefault("GatewayCompressionHandler");
     obj.error("flush end happened on closed compression adapter");
   }
 };
 items.push(fn2);
 const fn3 = () => {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult._pako = require(13207);
+  applyArgumentsResult._pako = _mod13262;
   return applyArgumentsResult;
 };
 const prototype4 = fn3.prototype;
@@ -248,7 +254,7 @@ prototype4["feed"] = function feed(arg0) {
   }
   if (null == self._onDataReady) {
     const _Error = Error;
-    const error = new Error("Cannot feed unless a data ready callback is registered.");
+    error = new Error("Cannot feed unless a data ready callback is registered.");
     throw error;
   } else {
     self._onDataReady(inflateResult);
@@ -269,7 +275,7 @@ class fn4 extends BaseGatewayCompressionHandler {
 }
 fn4["canUse"] = function canUse() {
   if (obj.isAndroid()) {
-    let tmp5 = null != require(13206) /* enforcing */.default;
+    let tmp5 = null != enforcing.default;
   } else {
     tmp5 = null != NativeModules.DCDCompressionManager;
   }
@@ -279,12 +285,12 @@ prototype5["bindWebSocket"] = function bindWebSocket(_socketId) {
   const self = this;
   this.close();
   this._socketId = _socketId._socketId;
-  const obj = require(13205) /* supportsZstd */;
-  const supportsZstdResult = require(13205) /* supportsZstd */.supportsZstd();
-  const isAndroidResult = require(500) /* set */.isAndroid();
+  const obj = supportsZstd;
+  const supportsZstdResult = supportsZstd.supportsZstd();
+  const isAndroidResult = set2.isAndroid();
   if (supportsZstdResult) {
     if (isAndroidResult) {
-      const _default2 = tmp2(13206).default;
+      const _default2 = tmp2(13261).default;
       if (_default2 != null) {
         const result = _default2.enableZstdStreamSupport(self._socketId);
       }
@@ -293,7 +299,7 @@ prototype5["bindWebSocket"] = function bindWebSocket(_socketId) {
       const result1 = DCDCompressionManager2.enableZstdStreamSupport(self._socketId, 0);
     }
   } else if (isAndroidResult) {
-    const _default = tmp2(13206).default;
+    const _default = tmp2(13261).default;
     if (_default != null) {
       const result2 = _default.enableZlibStreamSupport(self._socketId);
     }
@@ -316,7 +322,7 @@ prototype5["feed"] = function feed(arg0) {
   const self = this;
   if (null == this._onDataReady) {
     const _Error = Error;
-    const error = new Error("Cannot feed unless a data ready callback is registered.");
+    error = new Error("Cannot feed unless a data ready callback is registered.");
     throw error;
   } else if (null !== arg0) {
     self._onDataReady(arg0);
@@ -327,7 +333,7 @@ prototype5["close"] = function close() {
   this._socketId = null;
   if (null !== _socketId) {
     if (obj.isAndroid()) {
-      const _default = tmp(13206).default;
+      const _default = tmp(13261).default;
       if (_default != null) {
         const result = _default.disableZlibStreamSupport(_socketId);
       }
@@ -335,7 +341,7 @@ prototype5["close"] = function close() {
       const DCDCompressionManager = NativeModules.DCDCompressionManager;
       const result1 = DCDCompressionManager.disableZlibStreamSupport(_socketId);
     }
-    obj = require(500) /* set */;
+    obj = set2;
     tmp = require;
   }
 };
@@ -356,7 +362,7 @@ prototype6["feed"] = function feed(arg0) {
   const self = this;
   if (null == this._onDataReady) {
     const _Error = Error;
-    const error = new Error("Cannot feed unless a data ready callback is registered.");
+    error = new Error("Cannot feed unless a data ready callback is registered.");
     throw error;
   } else {
     self._onDataReady(arg0);
@@ -366,10 +372,10 @@ prototype6["close"] = function close() {
 
 };
 items.push(NullGatewayCompressionHandler);
-let result = require("module_13207").fileFinishedImporting("modules/gateway/GatewayCompressionHandler.tsx");
+let result = set.fileFinishedImporting("modules/gateway/GatewayCompressionHandler.tsx");
 
 export const getCompressionHandler = function getCompressionHandler(closure_10) {
-  const ProcessArgs = require(4842) /* get */.ProcessArgs;
+  const ProcessArgs = get.ProcessArgs;
   if (ProcessArgs.isDiscordGatewayPlaintextSet()) {
     return new NullGatewayCompressionHandler(closure_10);
   } else {

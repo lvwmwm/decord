@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 250 (DeviceEventManager)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("DeviceEventManager");
+
+export default getAll.get("DeviceEventManager");

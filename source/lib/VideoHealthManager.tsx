@@ -1,11 +1,17 @@
-// Module ID: 13096
-// Function ID: 13097
+// Module ID: 13152
+// Function ID: 13153
 // Name: calculateFps
-// Dependencies: [676, 3, 4383, 13097, 4548, 687, 2]
+// Dependencies: [676, 3, 4387, 13153, 4553, 687, 2]
 
-// Module 13096 (calculateFps)
-import { VideoToggleState } from "ME";
+// Module 13152 (calculateFps)
+import set2 from "set" /* 2 */;
+import timestampDefault from "timestamp" /* 3 */;
+import ME from "ME" /* 676 */;
+import isTablet from "isTablet" /* 4387 */;
+import sleep from "sleep" /* 4553 */;
+import dispatchAutoDisableVideoDefault from "dispatchAutoDisableVideo" /* 13153 */;
 
+const VideoToggleState = ME.VideoToggleState;
 class VideoHealthManager {
   constructor(arg0, arg1, arg2, arg3) {
     obj = Object.create(new.target.prototype);
@@ -78,14 +84,14 @@ prototype["updateFps"] = function updateFps(arg0, arg1, arg2) {
               const streamDisabledUsers2 = self.streamDisabledUsers;
               streamDisabledUsers2.add(arg0);
               self.currentVideoAutoToggleState[arg0] = VideoToggleState.DISABLED;
-              importDefault(13097)(arg0, VideoToggleState.DISABLED);
+              dispatchAutoDisableVideoDefault(arg0, VideoToggleState.DISABLED);
               const result = self.startReenableBackoffTimer(arg0);
             } else if (self.currentVideoAutoToggleState[arg0] === VideoToggleState.AUTO_PROBING) {
               self.currentVideoAutoToggleState[arg0] = tmp7.AUTO_ENABLED;
               const logger2 = self.logger;
               const _HermesInternal2 = HermesInternal;
               logger2.info("acceptable conditions reached, will reset and send a AUTO_ENABLED for user " + arg0);
-              importDefault(13097)(arg0, tmp7.AUTO_ENABLED);
+              dispatchAutoDisableVideoDefault(arg0, tmp7.AUTO_ENABLED);
             }
             if (self.probingUserId === arg0) {
               self.probingUserId = undefined;
@@ -99,8 +105,6 @@ prototype["updateFps"] = function updateFps(arg0, arg1, arg2) {
   }
 };
 prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0) {
-  let expBackoffFactor;
-  let lastBackoffTime;
   let self = this;
   self = this;
   const _require = arg0;
@@ -113,7 +117,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
     if (null !== lastBackoffTime) {
       num2 = 1;
       if (expBackoffFactor <= 16) {
-        let obj = _require(4548);
+        let obj = _require(4553);
         num2 = 1;
         if (self.elapsedSeconds(obj.now(), lastBackoffTime) <= 600) {
           num2 = expBackoffFactor * 2;
@@ -121,7 +125,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
       }
     }
     obj = { lastBackoffTime: null, expBackoffFactor: null };
-    obj[0] = _require(4548).now();
+    obj[0] = _require(4553).now();
     obj[1] = num2;
     self.retryBackoffCache[arg0] = obj;
     const result = num2 * self.backoffTimeSec;
@@ -133,7 +137,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
     self.timeoutIdCache[arg0] = setTimeout(() => {
       self.queueReenable(closure_0);
     }, result1);
-    const obj3 = _require(4548);
+    const obj3 = _require(4553);
   }
 };
 prototype["queueReenable"] = function queueReenable(closure_0) {
@@ -167,13 +171,13 @@ prototype["reenableVideo"] = function reenableVideo(arr) {
   if (flag) {
     const logger = self.logger;
     const _HermesInternal = HermesInternal;
-    logger.info("reenableVideo called for user " + arr + " - time = " + require(4548) /* sleep */.now());
+    logger.info("reenableVideo called for user " + arr + " - time = " + sleep.now());
     const result = self.stateCleanupBeforeEnable(arr);
     self.currentVideoAutoToggleState[arr] = VideoToggleState.AUTO_PROBING;
     self.probingUserId = arr;
-    importDefault(13097)(arr, VideoToggleState.AUTO_PROBING);
+    dispatchAutoDisableVideoDefault(arr, VideoToggleState.AUTO_PROBING);
     flag = true;
-    const obj = require(4548) /* sleep */;
+    const obj = sleep;
   }
   return flag;
 };
@@ -228,8 +232,8 @@ prototype["disable"] = function disable() {
     continue;
   }
 };
-VideoHealthManager.defaultConfig = { featureEnabled: require("isTablet").isMobile, windowLength: 5, allowedPoorFpsRatio: 1, fpsThreshold: 5, backoffTimeSec: 15 };
-let obj = { featureEnabled: require("isTablet").isMobile, windowLength: 5, allowedPoorFpsRatio: 1, fpsThreshold: 5, backoffTimeSec: 15 };
-let result = require("isTablet").fileFinishedImporting("lib/VideoHealthManager.tsx");
+VideoHealthManager.defaultConfig = { featureEnabled: isTablet.isMobile, windowLength: 5, allowedPoorFpsRatio: 1, fpsThreshold: 5, backoffTimeSec: 15 };
+let obj = { featureEnabled: isTablet.isMobile, windowLength: 5, allowedPoorFpsRatio: 1, fpsThreshold: 5, backoffTimeSec: 15 };
+let result = set2.fileFinishedImporting("lib/VideoHealthManager.tsx");
 
 export { VideoHealthManager };

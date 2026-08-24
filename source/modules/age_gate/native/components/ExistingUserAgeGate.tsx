@@ -1,43 +1,30 @@
-// Module ID: 16521
-// Function ID: 16522
+// Module ID: 16616
+// Function ID: 16617
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 1385, 1922, 1221, 16519, 676, 21, 4661, 1500, 589, 698, 1236, 1993, 38, 15226, 5260, 3975, 15249, 6803, 4734, 16522, 4745, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1922, 1221, 16614, 676, 21, 4668, 1500, 589, 698, 1236, 1994, 38, 15290, 5265, 3978, 15313, 6840, 4739, 16617, 4750, 2]
 // Exports: default
 
-// Module 16521 (ExistingUserAgeGate)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import _slicedToArray from "_slicedToArray";
-import closure_5 from "t";
-import { View } from "submitDateOfBirth";
-import handleRequiredAction from "handleRequiredAction";
-import closure_8 from "mergeGuildAvatar";
-import result from "result";
-import { ExistingUserAgeGateScreens as closure_11 } from "ExistingUserAgeGateScreens";
-import ME from "ME";
-import jsxProd from "SafeAreaPaddingView";
-import createCacheKey from "createCacheKey";
+// Module 16616 (ExistingUserAgeGate)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_7 from "handleRequiredAction" /* 1385 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import result from "result" /* 1221 */;
+import { ExistingUserAgeGateScreens as closure_11 } from "ExistingUserAgeGateScreens" /* 16614 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_12;
-let closure_14;
-let closure_15;
-let map1;
 const require = arg1;
 ({ AgeGateAnalyticAction: c9, AgeGateSource: c10 } = result);
 ({ AnalyticEvents: closure_12, HelpdeskArticles: map1 } = ME);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 let closure_16 = createCacheKey.createStyles({ container: { flex: 1, padding: 16, alignItems: "center", justifyContent: "center" }, header: { marginBottom: 8, textAlign: "center" }, body: { textAlign: "center", lineHeight: 20, marginBottom: 16 }, inputGroup: { marginBottom: 16, width: "100%" }, buttonWrapper: { width: "100%" } });
-result = require("noop").fileFinishedImporting("modules/age_gate/native/components/ExistingUserAgeGate.tsx");
+result = require("set").fileFinishedImporting("modules/age_gate/native/components/ExistingUserAgeGate.tsx");
 
 export default function ExistingUserAgeGate(onSuccess) {
-  let FAMILY_CENTER;
-  let NSFW_CHANNEL;
-  let NSFW_VOICE_CHANNEL;
-  let c7;
-  let c8;
-  let tmp12;
-  let tmp14;
   onSuccess = onSuccess.onSuccess;
   const onClose = onSuccess.onClose;
   const source = onSuccess.source;
@@ -61,10 +48,10 @@ export default function ExistingUserAgeGate(onSuccess) {
   function _submitBirthday() {
     const self = this;
     const tmp = navigation((arg0) => {
-      let closure_0 = arg0;
-      let c5 = 0;
-      let c6 = 0;
-      let c4 = 0;
+      c0 = arg0;
+      c5 = 0;
+      c6 = 0;
+      c4 = 0;
       return (function*(arg0) {
         if (c6 === 2) {
           c6 = 3;
@@ -77,7 +64,7 @@ export default function ExistingUserAgeGate(onSuccess) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -92,23 +79,23 @@ export default function ExistingUserAgeGate(onSuccess) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_2 = tmp3;
-                let closure_1 = tmp7;
-                let c0;
-                outer1_1(outer1_2[16])(null != c0, "Cannot submit null birthday.");
-                c0 = false;
-                let c4 = 1;
-                outer1_7(null);
-                outer1_8(true);
+                closure_2 = tmp3;
+                closure_1 = tmp7;
+                let _true;
+                closure_1_1(closure_1_2[16])(null != _true, "Cannot submit null birthday.");
+                _true = false;
+                c4 = 1;
+                closure_1_7(null);
+                closure_1_8(true);
                 c5 = 2;
                 c6 = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = callback(outer1_2[17]).submitDateOfBirth(c0, outer1_2);
+                obj1 = { value: null, done: false };
+                obj1[0] = _true(closure_1_2[17]).submitDateOfBirth(_true, closure_1_2);
                 return obj1;
               }
             } else if (1 === tmp7) {
               c4 = 0;
-              closure_1 = mergeGuildAvatar;
+              closure_1 = closure_3;
               if (null == closure_1.body) {
                 let username;
                 if (closure_1 != null) {
@@ -118,32 +105,32 @@ export default function ExistingUserAgeGate(onSuccess) {
                   }
                 }
                 if (null != username) {
-                  const intl = callback(outer1_2[14]).intl;
-                  let message = intl.string(callback(outer1_2[14]).t["TGg/2k"]);
+                  const intl = _true(closure_1_2[14]).intl;
+                  let message = intl.string(_true(closure_1_2[14]).t["TGg/2k"]);
                 } else {
                   message = closure_1.message;
                 }
-                handleRequiredAction(message);
-                callback2(false);
-                callback = true;
-                let obj2 = outer1_1(outer1_2[13]);
+                closure_7(message);
+                callback(false);
+                _true = true;
+                let obj2 = closure_1_1(closure_1_2[13]);
                 obj2 = { source: null, action: null };
-                obj2[0] = outer1_2;
-                obj2[1] = outer1_9.AGE_GATE_FAILURE;
-                obj2.track(outer1_12.AGE_GATE_ACTION, obj2);
-                const tmp16 = handleRequiredAction;
+                obj2[0] = closure_1_2;
+                obj2[1] = closure_1_9.AGE_GATE_FAILURE;
+                obj2.track(closure_1_12.AGE_GATE_ACTION, obj2);
+                const tmp16 = closure_7;
               }
               const obj3 = { onClose: null, underageMessage: null, existingUser: true };
-              obj3[0] = outer1_1(outer1_2[18]).pop;
+              obj3[0] = closure_1_1(closure_1_2[18]).pop;
               obj3[1] = closure_1.body.date_of_birth;
-              outer1_3.push(outer1_11.Blocked, obj3);
+              closure_1_3.push(closure_1_11.Blocked, obj3);
             } else if (arg0 === 1) {
               c6 = 3;
               throw arg1;
             } else {
               if (arg0 !== 2) {
                 c4 = 0;
-                { shouldShowError: null }[0] = callback;
+                { shouldShowError: null }[0] = _true;
                 c6 = 3;
               }
               c4 = 0;
@@ -153,7 +140,7 @@ export default function ExistingUserAgeGate(onSuccess) {
               return obj;
             }
           } catch (tmp47) {
-            mergeGuildAvatar = tmp47;
+            closure_3 = tmp47;
             if (tmp4 === c4) {
               c6 = tmp2;
               throw tmp47;
@@ -164,7 +151,7 @@ export default function ExistingUserAgeGate(onSuccess) {
         }
       })();
     });
-    const _submitBirthday = tmp;
+    closure_11 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -187,7 +174,7 @@ export default function ExistingUserAgeGate(onSuccess) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -202,25 +189,25 @@ export default function ExistingUserAgeGate(onSuccess) {
               obj[0] = arg1;
               return obj;
             } else {
-              v0(outer1_2[16])(null != outer1_6, "Cannot submit null birthday.");
-              const diffResult = v0(outer1_2[19])().diff(outer1_6, "years");
+              v0(closure_1_2[16])(null != closure_1_6, "Cannot submit null birthday.");
+              const diffResult = v0(closure_1_2[19])().diff(closure_1_6, "years");
               if (diffResult < 18) {
-                const obj1 = { source: null, onConfirm: null, age: null };
-                obj1[0] = outer1_2;
+                obj1 = { source: null, onConfirm: null, age: null };
+                obj1[0] = closure_1_2;
                 obj1[1] = function onConfirm() {
                   return callback(closure_6);
                 };
                 obj1[2] = diffResult;
-                outer1_3.push(outer1_11.AgeGateConfirm, obj1);
+                closure_1_3.push(closure_1_11.AgeGateConfirm, obj1);
               } else {
                 v0 = 1;
                 c0 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = outer1_10(tmp18);
+                obj2[0] = closure_1_10(tmp18);
                 return obj2;
               }
-              const obj6 = v0(outer1_2[19])();
-              tmp18 = outer1_6;
+              const obj6 = v0(closure_1_2[19])();
+              tmp18 = closure_1_6;
             }
           } else if (arg0 === 1) {
             c0 = 3;
@@ -232,14 +219,14 @@ export default function ExistingUserAgeGate(onSuccess) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp10) {
           c0 = tmp;
           throw tmp10;
         }
       }
     });
-    const _submitBirthdayWithAgeConfirmation = tmp;
+    closure_12 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -251,7 +238,7 @@ export default function ExistingUserAgeGate(onSuccess) {
   let tmp = callback2();
   let obj = onSuccess(source[11]);
   navigation = obj.useNavigation();
-  let obj1 = onSuccess(source[12]);
+  obj1 = onSuccess(source[12]);
   const items = [c8];
   stateFromStores = obj1.useStateFromStores(items, () => _undefined2.getCurrentUser());
   let tmp7 = source === submitBirthday.NSFW_SERVER;
@@ -287,7 +274,7 @@ export default function ExistingUserAgeGate(onSuccess) {
       nsfwAllowed = tmp.nsfwAllowed;
     }
     if (false === nsfwAllowed) {
-      if (c5) {
+      if (closure_5) {
         navigation.push(_submitBirthday.Pawtect);
       }
     }

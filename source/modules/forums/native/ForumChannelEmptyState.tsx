@@ -1,41 +1,40 @@
-// Module ID: 11945
-// Function ID: 11946
-// Dependencies: [19, 17, 21, 4661, 1363, 1629, 11946, 11947, 4734, 1236, 2]
+// Module ID: 11994
+// Function ID: 11995
+// Dependencies: [19, 17, 21, 4668, 1363, 1629, 11995, 11996, 4739, 1236, 2]
 
-// Module 11945
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 11994
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import Text from "Text" /* 4739 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ View: c3, Image: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ container: { flex: 1, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, image: { width: 120, height: 80 }, title: { textAlign: "center", marginTop: 16, marginHorizontal: 20 }, subtext: { textAlign: "center", marginTop: 4, marginHorizontal: 20 } });
-const memoResult = require("noop").memo((topViewHeight) => {
+const memoResult = importAllResult.memo((topViewHeight) => {
   let num = topViewHeight.topViewHeight;
   if (num === undefined) {
     num = 0;
   }
   const tagFilter = topViewHeight.tagFilter;
   const tmp = callback();
-  let obj = require(1363) /* AccessibilityAnnouncer */;
-  const rect = importDefault(1629)();
+  let obj = AccessibilityAnnouncer;
+  const rect = useSafeAreaInsetsDefault();
   obj = { style: items, children: null };
   items = [tmp.container, { marginBottom: rect.bottom + rect.top + num }];
-  let obj2 = require(1363) /* AccessibilityAnnouncer */;
+  let obj2 = AccessibilityAnnouncer;
   if (obj2.isThemeLight(obj.useThemeContext().theme)) {
-    let tmp4Result = tmp4(11946);
+    let tmp4Result = tmp4(11995);
   } else {
-    tmp4Result = tmp4(11947);
+    tmp4Result = tmp4(11996);
   }
   obj = { source: tmp4Result, style: tmp.image };
   const items1 = [closure_5(closure_4, obj), , ];
-  const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
+  obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp2(1236).intl;
   if (tagFilter.size > 0) {
     obj2 = { numTags: null };
@@ -45,7 +44,7 @@ const memoResult = require("noop").memo((topViewHeight) => {
     formatToPlainStringResult = intl.string(tmp2(1236).t.PwTMG0);
   }
   obj1[4] = formatToPlainStringResult;
-  items1[1] = closure_5(require(4734) /* Text */.Text, obj1);
+  items1[1] = closure_5(Text.Text, obj1);
   const obj3 = { style: tmp.subtext, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = tmp2(1236).intl;
   const formatToPlainString = intl2.formatToPlainString;
@@ -60,10 +59,10 @@ const memoResult = require("noop").memo((topViewHeight) => {
     formatToPlainStringResult1 = formatToPlainString(t.YtsXFD, obj5);
   }
   obj3[3] = formatToPlainStringResult1;
-  items1[2] = closure_5(require(4734) /* Text */.Text, obj3);
+  items1[2] = closure_5(Text.Text, obj3);
   obj[1] = items1;
   return closure_6(closure_3, obj);
 });
-const result = require("jsxProd").fileFinishedImporting("modules/forums/native/ForumChannelEmptyState.tsx");
+const result = require("set").fileFinishedImporting("modules/forums/native/ForumChannelEmptyState.tsx");
 
 export default memoResult;

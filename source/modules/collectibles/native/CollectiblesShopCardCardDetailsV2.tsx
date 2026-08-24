@@ -1,29 +1,35 @@
-// Module ID: 9248
-// Function ID: 9249
+// Module ID: 9285
+// Function ID: 9286
 // Name: memoResult1
-// Dependencies: [19, 17, 5319, 676, 21, 4661, 712, 9173, 5312, 9249, 5313, 9252, 9258, 4734, 1236, 9238, 500, 8014, 7988, 9176, 9233, 1949, 4039, 4097, 4223, 9259, 589, 4756, 9260, 2]
+// Dependencies: [19, 17, 5324, 676, 21, 4668, 712, 9210, 5317, 9286, 5318, 9289, 9295, 4739, 1236, 9275, 500, 8053, 8027, 9213, 9270, 1949, 4042, 4100, 4227, 9296, 589, 4761, 9297, 2]
 
-// Module 9248 (memoResult1)
-import importAllResult from "useCurrentUser";
-import { View } from "TagIcon";
-import updateProduct from "updateProduct";
-import ME from "ME";
-import jsxProd from "CollectiblesItemType";
-import createCacheKey from "createCacheKey";
+// Module 9285 (memoResult1)
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
+import map from "map" /* 4100 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
+import Text from "Text" /* 4739 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import useCurrentUser from "useCurrentUser" /* 9213 */;
+import useCanPurchaseFrames from "useCanPurchaseFrames" /* 9270 */;
+import getCardProductName from "getCardProductName" /* 9296 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "updateProduct" /* 5324 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 ({ CurrencyCodes: closure_6, VerticalGradient: error } = ME);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let obj = { regularMetadataContainer: null, assetName: null, priceVariantsContainer: null, priceDescription: null, text: null, discountPercentage: null, wheelIcon: null, androidTextPadding: null };
-obj = { position: "absolute", height: "45%", width: "100%", padding: 10, flex: 1, bottom: 0, overflow: "hidden", borderBottomLeftRadius: require("Themes").radii.sm, borderBottomRightRadius: require("Themes").radii.sm, display: "flex", flexDirection: "column", justifyContent: "flex-end" };
+obj = { position: "absolute", height: "45%", width: "100%", padding: 10, flex: 1, bottom: 0, overflow: "hidden", borderBottomLeftRadius: ThemesDefault.radii.sm, borderBottomRightRadius: ThemesDefault.radii.sm, display: "flex", flexDirection: "column", justifyContent: "flex-end" };
 obj[0] = obj;
 obj[1] = { marginBottom: 4 };
-createCacheKey = { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", gap: require("Themes").space.PX_4 };
+createCacheKey = { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", gap: ThemesDefault.space.PX_4 };
 obj[2] = createCacheKey;
 obj[3] = { display: "flex", flexDirection: "row", alignItems: "center", flex: 1 };
 obj[4] = { flexShrink: 1 };
@@ -32,14 +38,6 @@ obj[6] = { marginTop: 0, marginRight: 3 };
 obj[7] = { paddingBottom: 2 };
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {
-  let collectibleProductState;
-  let discountSource;
-  let hasShopDiscount;
-  let isDisabled;
-  let isFetchingGoogleSkus;
-  let preferVCPrice;
-  let product;
-  let styles;
   ({ product, hasShopDiscount } = arg0);
   ({ styles, collectibleProductState } = arg0);
   let selectedProduct;
@@ -48,7 +46,7 @@ const memoResult = importAllResult.memo((arg0) => {
   ({ discountSource, isFetchingGoogleSkus, preferVCPrice, isDisabled } = arg0);
   let obj = hasShopDiscount(memo[7]);
   const defaultVariantIndex = obj.useDefaultVariantIndex(product);
-  let obj1 = hasShopDiscount(memo[8]);
+  obj1 = hasShopDiscount(memo[8]);
   selectedProduct = obj1.getSelectedProduct(product, defaultVariantIndex);
   let obj2 = hasShopDiscount(memo[9]);
   const formattedPriceForCollectiblesProduct = obj2.getFormattedPriceForCollectiblesProduct(selectedProduct, hasShopDiscount, true);
@@ -61,7 +59,7 @@ const memoResult = importAllResult.memo((arg0) => {
   const items1 = [selectedProduct, hasShopDiscount];
   const memo1 = balance.useMemo(() => hasShopDiscount(memo[10]).getProductDiscount(selectedProduct, hasShopDiscount).discountPercentage, items1);
   const items2 = [selectedProduct, hasShopDiscount];
-  const memo2 = balance.useMemo(() => hasShopDiscount(memo[10]).getProductDiscount(selectedProduct, hasShopDiscount, outer1_6.DISCORD_ORB).discountPercentage, items2);
+  const memo2 = balance.useMemo(() => hasShopDiscount(memo[10]).getProductDiscount(selectedProduct, hasShopDiscount, closure_1_6.DISCORD_ORB).discountPercentage, items2);
   let obj3 = hasShopDiscount(memo[11]);
   balance = obj3.useFetchVirtualCurrencyBalance().balance;
   const items3 = [balance, memo];
@@ -226,45 +224,40 @@ const memoResult = importAllResult.memo((arg0) => {
 const unpackModuleId = memoResult;
 memoResult.displayName = "PriceDescription";
 const memoResult1 = importAllResult.memo(function CardDetailsV2(arg0) {
-  let collectibleProductState;
-  let hidePrice;
-  let isDisabled;
-  let preferVCPrice;
-  let product;
   ({ product, hidePrice } = arg0);
   ({ collectibleProductState, preferVCPrice, isDisabled } = arg0);
   const tmp = callback2();
-  let obj = require(9176) /* useCurrentUser */;
+  let obj = useCurrentUser;
   const currentUser = obj.useCurrentUser();
-  let obj1 = require(9233) /* useCanPurchaseFrames */;
+  obj1 = useCanPurchaseFrames;
   let isProfileFramesEarlyAccessPhase = obj1.useIsProfileFramesEarlyAccessPhase("CollectiblesShopCardCardDetailsV2");
   if (isProfileFramesEarlyAccessPhase) {
-    let tmp2Result = tmp2(5312);
+    let tmp2Result = tmp2(5317);
     const productType = tmp2Result.getProductType(product);
     isProfileFramesEarlyAccessPhase = productType === tmp2(1949).CollectiblesItemType.PROFILE_FRAME;
   }
-  let obj3 = importDefault(4039);
-  tmp2Result = tmp2(5313);
+  let obj3 = getPremiumPlanItemDefault;
+  tmp2Result = tmp2(5318);
   const shopDiscountSource = tmp2Result.getShopDiscountSource(currentUser);
   const tmp8 = obj3.canUseShopDiscounts(currentUser) || isProfileFramesEarlyAccessPhase;
-  const token = require(4097) /* map */.useToken(tmp7(712).colors.BACKGROUND_BASE_LOW);
-  const tmp2Result1 = require(4097) /* map */;
-  const tmp2Result2 = require(4223) /* hexToRgba */;
-  const tmp2Result3 = require(4223) /* hexToRgba */;
-  const hexToRgbaStringResult = tmp2Result2.hexToRgbaString(require(4223) /* hexToRgba */.hexWithOpacity(token, 0.9));
-  const tmp2Result4 = require(4223) /* hexToRgba */;
-  const tmp2Result5 = require(4223) /* hexToRgba */;
-  const hexToRgbaStringResult1 = tmp2Result4.hexToRgbaString(require(4223) /* hexToRgba */.hexWithOpacity(token, 0));
-  const cardProductName = require(9259) /* getCardProductName */.getCardProductName(product);
-  const tmp2Result6 = require(9259) /* getCardProductName */;
-  const items = [updateProduct];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus());
+  const token = map.useToken(tmp7(712).colors.BACKGROUND_BASE_LOW);
+  const tmp2Result1 = map;
+  const tmp2Result2 = hexToRgba;
+  const tmp2Result3 = hexToRgba;
+  const hexToRgbaStringResult = tmp2Result2.hexToRgbaString(hexToRgba.hexWithOpacity(token, 0.9));
+  const tmp2Result4 = hexToRgba;
+  const tmp2Result5 = hexToRgba;
+  const hexToRgbaStringResult1 = tmp2Result4.hexToRgbaString(hexToRgba.hexWithOpacity(token, 0));
+  const cardProductName = getCardProductName.getCardProductName(product);
+  const tmp2Result6 = getCardProductName;
+  const items = [closure_5];
+  const stateFromStores = initialize.useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus());
   obj = { style: items1, colors: items2, locations: [0, 0.4, 1], start: constants.START, end: constants.END, children: null };
   items1 = [tmp.regularMetadataContainer];
   items2 = [hexToRgbaStringResult1, hexToRgbaStringResult, token];
-  const tmp2Result7 = require(589) /* initialize */;
+  const tmp2Result7 = initialize;
   obj = { style: tmp.assetName, variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: cardProductName };
-  const items3 = [callback(require(4734) /* Text */.Text, obj), ];
+  const items3 = [callback(Text.Text, obj), ];
   let tmp15Result = !hidePrice;
   if (!hidePrice) {
     obj1 = { style: null, children: null };
@@ -281,14 +274,14 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(arg0) {
     const items4 = [tmp17(closure_11, obj2), ];
     obj3 = { product: null };
     obj3[0] = product;
-    items4[1] = tmp17(tmp7(9260), obj3);
+    items4[1] = tmp17(tmp7(9297), obj3);
     obj1[1] = items4;
     tmp15Result = tmp15(View, obj1);
   }
   items3[1] = tmp15Result;
   obj[5] = items3;
-  return closure_9(importDefault(4756), obj);
+  return closure_9(LinearGradientDefault, obj);
 });
-const result = require("updateProduct").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardCardDetailsV2.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardCardDetailsV2.tsx");
 
 export default memoResult1;

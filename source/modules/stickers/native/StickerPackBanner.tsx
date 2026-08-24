@@ -1,33 +1,30 @@
-// Module ID: 10229
-// Function ID: 10230
+// Module ID: 10268
+// Function ID: 10269
 // Name: StickerPackBanner
-// Dependencies: [19, 17, 21, 4823, 2]
+// Dependencies: [19, 17, 21, 4828, 2]
 // Exports: default
 
-// Module 10229 (StickerPackBanner)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 10268 (StickerPackBanner)
+import noopAll from "noop" /* 19 */;
+import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4828 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c3;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Image: obj1, View: c3 } = get_ActivityIndicator);
-const result = require("jsxProd").fileFinishedImporting("modules/stickers/native/StickerPackBanner.tsx");
+const result = require("set").fileFinishedImporting("modules/stickers/native/StickerPackBanner.tsx");
 
 export default function StickerPackBanner(arg0) {
-  let containerStyle;
-  let stickerPack;
-  let style;
   ({ containerStyle, style, stickerPack } = arg0);
-  let obj = require(4823) /* getStickerExtensionFromFormatType */;
+  let obj = getStickerExtensionFromFormatType;
   const stickerPackBannerAssetUrl = obj.getStickerPackBannerAssetUrl(stickerPack, 1024);
   let tmp2 = null;
   if (null != stickerPackBannerAssetUrl) {
     obj = { style: null, children: null };
     obj[0] = containerStyle;
     obj = { source: null, style: null, resizeMode: "contain" };
-    const obj1 = { uri: null };
+    obj1 = { uri: null };
     obj1[0] = stickerPackBannerAssetUrl;
     obj[0] = obj1;
     obj[1] = style;

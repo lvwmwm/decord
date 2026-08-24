@@ -4,7 +4,9 @@
 // Dependencies: [821, 822]
 
 // Module 820 (unwrapScopeFromWeakRef)
-const require = arg1;
+import addNonEnumerableProperty from "addNonEnumerableProperty" /* 822 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function unwrapScopeFromWeakRef(obj) {
   if (obj) {
@@ -29,7 +31,7 @@ arg5.getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
 };
 arg5.setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
   if (arg0) {
-    const result = require(822) /* addNonEnumerableProperty */.addNonEnumerableProperty(arg0, _sentryIsolationScope, (function wrapScopeWithWeakRef(arg0) {
+    const result = addNonEnumerableProperty.addNonEnumerableProperty(arg0, _sentryIsolationScope, (function wrapScopeWithWeakRef(arg0) {
       try {
         let _WeakRef = callback(table[0]).GLOBAL_OBJ.WeakRef;
         if (typeof _WeakRef === "function") {
@@ -41,8 +43,8 @@ arg5.setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2
       } catch (err) {
       }
     })(arg2));
-    const obj = require(822) /* addNonEnumerableProperty */;
-    const result1 = require(822) /* addNonEnumerableProperty */.addNonEnumerableProperty(arg0, _sentryScope, arg1);
-    const obj2 = require(822) /* addNonEnumerableProperty */;
+    const obj = addNonEnumerableProperty;
+    const result1 = addNonEnumerableProperty.addNonEnumerableProperty(arg0, _sentryScope, arg1);
+    const obj2 = addNonEnumerableProperty;
   }
 };

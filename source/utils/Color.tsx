@@ -1,19 +1,19 @@
-// Module ID: 4224
-// Function ID: 4225
+// Module ID: 4228
+// Function ID: 4229
 // Name: hslToRgb
 // Dependencies: [32, 2]
 
-// Module 4224 (hslToRgb)
-import _slicedToArray from "_slicedToArray";
+// Module 4228 (hslToRgb)
+import closure_0 from "_slicedToArray" /* 32 */;
 
 function hslToRgb(alpha) {
   const hue = alpha.hue;
-  let _slicedToArray;
+  closure_0 = undefined;
   const result = alpha.lightness / 255;
   const result1 = alpha.saturation / 255;
   const result2 = (1 - Math.abs(2 * result - 1)) * result1;
   const result3 = result2 * (1 - Math.abs(hue / 60 % 2 - 1));
-  _slicedToArray = result - result2 / 2;
+  closure_0 = result - result2 / 2;
   if (hue < 60) {
     const items = [result2, result3, 0];
     let items5 = items;
@@ -32,7 +32,7 @@ function hslToRgb(alpha) {
   } else {
     items5 = [result2, 0, result3];
   }
-  const mapped = items5.map((arg0) => Math.round(255 * (arg0 + _slicedToArray)));
+  const mapped = items5.map((arg0) => Math.round(255 * (arg0 + closure_0)));
   return { red: mapped[0], green: mapped[1], blue: mapped[2], alpha: alpha.alpha };
 }
 const re2 = /^#[0-9a-f]{3,8}$/i;
@@ -100,10 +100,6 @@ Color["parseRgbString"] = function parseRgbString(arg0) {
   return parseColorFnStringResult;
 };
 Color["parseHexString"] = function parseHexString(str) {
-  let tmp3;
-  let tmp4;
-  let tmp5;
-  let tmp6;
   if (null != str.match(closure_2)) {
     const items = [6, 8];
     if (!items.includes(str.length)) {
@@ -145,13 +141,6 @@ Color["parseHexString"] = function parseHexString(str) {
   }
 };
 Color["parseColorFnString"] = function parseColorFnString(str) {
-  let alpha;
-  let blue;
-  let green;
-  let red;
-  let tmp4;
-  let tmp5;
-  let tmp6;
   let match = str.match(closure_3);
   if (match == null) {
     match = [];

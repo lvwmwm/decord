@@ -1,14 +1,19 @@
-// Module ID: 9568
-// Function ID: 9569
+// Module ID: 9605
+// Function ID: 9606
 // Name: navigateToLastChannel
-// Dependencies: [4229, 9569, 4768, 2]
+// Dependencies: [4233, 9606, 4773, 2]
 // Exports: default
 
-// Module 9568 (navigateToLastChannel)
-const result = require("transitionToChannel").fileFinishedImporting("modules/main_tabs_v2/native/navigateToLastChannel.tsx");
+// Module 9605 (navigateToLastChannel)
+import set from "set" /* 2 */;
+import coerceMainRoute from "coerceMainRoute" /* 4233 */;
+import transitionToChannel from "transitionToChannel" /* 4773 */;
+import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 9606 */;
+
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/navigateToLastChannel.tsx");
 
 export default function navigateToLastChannel() {
-  const coerceGuildsRouteResult = require(4229) /* coerceMainRoute */.coerceGuildsRoute(importDefault(9569)());
+  const coerceGuildsRouteResult = coerceMainRoute.coerceGuildsRoute(getNavigatorCurrentRouteDefault());
   let tmp4 = null != coerceGuildsRouteResult;
   if (tmp4) {
     const params = coerceGuildsRouteResult.params;
@@ -24,7 +29,7 @@ export default function navigateToLastChannel() {
     if (params2 != null) {
       channelId1 = params2.channelId;
     }
-    require(4768) /* transitionToChannel */.transitionToChannel(channelId1);
-    const tmpResult = require(4768) /* transitionToChannel */;
+    transitionToChannel.transitionToChannel(channelId1);
+    const tmpResult = transitionToChannel;
   }
 };

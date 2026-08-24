@@ -1,18 +1,19 @@
-// Module ID: 5822
-// Function ID: 5823
+// Module ID: 5853
+// Function ID: 5854
 // Name: GemRightBackward3dIllustration
-// Dependencies: [21, 5449, 5823, 2]
+// Dependencies: [21, 5454, 5854, 2]
 // Exports: GemRightBackward3dIllustration
 
-// Module 5822 (GemRightBackward3dIllustration)
-import { jsx } from "jsxProd";
+// Module 5853 (GemRightBackward3dIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5854 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemRightBackward3dIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemRightBackward3dIllustration.native.tsx");
 
 export const GemRightBackward3dIllustration = function GemRightBackward3dIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const GemRightBackward3dIllustration = function GemRightBackward3dIllustr
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5823);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GemRightBackward3dIllustration = function GemRightBackward3dIllustr
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

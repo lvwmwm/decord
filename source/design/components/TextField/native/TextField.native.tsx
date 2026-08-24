@@ -1,32 +1,30 @@
-// Module ID: 7338
-// Function ID: 7339
+// Module ID: 7376
+// Function ID: 7377
 // Name: TextField
-// Dependencies: [19, 21, 7339, 7340, 7344, 7347, 2]
+// Dependencies: [19, 21, 7377, 7378, 7382, 7385, 2]
 
-// Module 7338 (TextField)
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 7376 (TextField)
+import useTextFieldState from "useTextFieldState" /* 7377 */;
+import useInputClearButton from "useInputClearButton" /* 7378 */;
+import InputAttachmentContainer from "InputAttachmentContainer" /* 7382 */;
+import BaseTextField from "BaseTextField" /* 7385 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-const forwardRefResult = require("noop").forwardRef((onClear, ref) => {
-  let innerRef;
-  let inputProps;
-  let inputStyle;
-  let leading;
-  let state;
-  let trailing;
-  let obj = require(7339) /* useTextFieldState */;
+require = arg1;
+const forwardRefResult = importAllResult.forwardRef((onClear, ref) => {
+  let obj = useTextFieldState;
   const textField = obj.useTextField(onClear, ref);
   ({ inputProps, innerRef, state } = textField);
-  const inputClearButtonConfig = require(7340) /* useInputClearButton */.useInputClearButtonConfig(onClear, state);
+  const inputClearButtonConfig = useInputClearButton.useInputClearButtonConfig(onClear, state);
   let tmp5;
   if (null != inputClearButtonConfig) {
     obj = { trailing: null, trailingPressableProps: null };
     ({ content: obj3[0], pressableProps: obj3[1] } = inputClearButtonConfig);
     tmp5 = obj;
   }
-  const obj2 = require(7340) /* useInputClearButton */;
-  const inputAttachments = require(7344) /* InputAttachmentContainer */.useInputAttachments(onClear, tmp5);
+  const obj2 = useInputClearButton;
+  const inputAttachments = InputAttachmentContainer.useInputAttachments(onClear, tmp5);
   ({ leading, trailing, inputStyle } = inputAttachments);
   obj = {};
   const merged = Object.assign(inputProps);
@@ -34,8 +32,8 @@ const forwardRefResult = require("noop").forwardRef((onClear, ref) => {
   obj.leading = leading;
   obj.trailing = trailing;
   obj.inputStyle = inputStyle;
-  return jsx(require(7347) /* BaseTextField */.BaseTextField, {});
+  return jsx(BaseTextField.BaseTextField, {});
 });
-const result = require("useTextFieldState").fileFinishedImporting("design/components/TextField/native/TextField.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/TextField/native/TextField.native.tsx");
 
 export const TextField = forwardRefResult;

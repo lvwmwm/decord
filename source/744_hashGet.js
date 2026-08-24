@@ -4,10 +4,12 @@
 // Dependencies: [736]
 
 // Module 744 (hashGet)
+import getNative from "getNative" /* 736 */;
+
 
 export default function hashGet(arg0) {
   const __data__ = this.__data__;
-  if (require(736) /* getNative */) {
+  if (getNative) {
     let tmp4;
     if ("__lodash_hash_undefined__" !== __data__[arg0]) {
       tmp4 = tmp3;

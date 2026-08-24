@@ -1,28 +1,29 @@
-// Module ID: 8983
-// Function ID: 8984
+// Module ID: 9020
+// Function ID: 9021
 // Name: useBadges
-// Dependencies: [4220, 1922, 4066, 647, 1236, 2]
+// Dependencies: [4224, 1922, 4069, 647, 1236, 2]
 // Exports: default
 
-// Module 8983 (useBadges)
-import initialize from "initialize";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 9020 (useBadges)
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import closure_2 from "initialize" /* 4224 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
+require = arg1;
 const legacy_username = "legacy_username";
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_profile/hooks/useBadges.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useBadges.tsx");
 
 export default function useBadges(getBadges) {
-  const LegacyUsernameDisabled = require(4066) /* explicitContentFromProto */.LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = explicitContentFromProto.LegacyUsernameDisabled;
   let setting = LegacyUsernameDisabled.useSetting();
   if (undefined !== arg1) {
     setting = arg1;
   }
   let tmpResult = tmp(647);
-  const items = [mergeGuildAvatar];
+  const items = [closure_3];
   const stateFromStores = tmpResult.useStateFromStores(items, () => currentUser.getCurrentUser());
   tmpResult = tmp(647);
-  [][0] = initialize;
+  [][0] = closure_2;
   if (null == getBadges) {
     return [];
   } else {

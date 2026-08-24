@@ -1,20 +1,18 @@
-// Module ID: 10868
-// Function ID: 10869
+// Module ID: 10907
+// Function ID: 10908
 // Name: ExplicitMediaObscuredFalsePositiveActionSheet
-// Dependencies: [19, 5004, 21, 10869, 10870, 10871, 5027, 4342, 5001, 2]
+// Dependencies: [19, 5009, 21, 10908, 10909, 10910, 5032, 4346, 5006, 2]
 // Exports: default
 
-// Module 10868 (ExplicitMediaObscuredFalsePositiveActionSheet)
-import noop from "noop";
-import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY";
-import { jsx } from "jsxProd";
+// Module 10907 (ExplicitMediaObscuredFalsePositiveActionSheet)
+import closure_3 from "noop" /* 19 */;
+import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY" /* 5009 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaObscuredFalsePositiveActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaObscuredFalsePositiveActionSheet.tsx");
 
 export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId) {
-  let attachmentId;
-  let embedId;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   let redactableMediaAttachmentsForMessage;

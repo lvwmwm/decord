@@ -1,12 +1,13 @@
-// Module ID: 4305
-// Function ID: 4306
+// Module ID: 4309
+// Function ID: 4310
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 4305 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 4309 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "guild", name: "2026-06-server-theme-apex-shadow", defaultConfig: { enabled: false, inExperiment: false, gatesApex: false }, variations: { 0: { enabled: false, inExperiment: true, gatesApex: false }, 1: { enabled: true, inExperiment: true, gatesApex: false }, 2: { enabled: false, inExperiment: true, gatesApex: true }, 3: { enabled: true, inExperiment: true, gatesApex: true } } });
-const result = require("set").fileFinishedImporting("modules/premium/powerups/experiments/ServerThemeApexShadowExperiment.tsx");
+const result = set.fileFinishedImporting("modules/premium/powerups/experiments/ServerThemeApexShadowExperiment.tsx");
 
 export const ServerThemeApexShadowExperiment = apexExperiment;

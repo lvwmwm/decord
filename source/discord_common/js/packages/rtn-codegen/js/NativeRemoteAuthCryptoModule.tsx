@@ -1,12 +1,14 @@
-// Module ID: 15257
-// Function ID: 15258
+// Module ID: 15321
+// Function ID: 15322
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 15257 (enforcing)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 15321 (enforcing)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeRemoteAuthCryptoModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeRemoteAuthCryptoModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeRemoteAuthCryptoModule.tsx");
 
 export default enforcing;

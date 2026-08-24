@@ -1,35 +1,33 @@
-// Module ID: 16250
-// Function ID: 16251
+// Module ID: 16347
+// Function ID: 16348
 // Name: QuestActivityButtonInner
-// Dependencies: [19, 17, 4662, 7453, 16251, 6716, 21, 4115, 6571, 4661, 712, 10684, 589, 5260, 16252, 2007, 4342, 16253, 4664, 7130, 14484, 16254, 14352, 1236, 10707, 2]
+// Dependencies: [19, 17, 4669, 7491, 16348, 6753, 21, 4119, 6607, 4668, 712, 10723, 589, 5265, 16349, 2008, 4346, 16350, 4671, 7168, 14552, 16351, 14420, 1236, 10746, 2]
 
-// Module 16250 (QuestActivityButtonInner)
-import importAllResult from "play";
-import { View } from "contextMenuButton";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import initializeState from "initializeState";
-import set from "set";
-import { QuestVariants } from "QuestsExperimentLocations";
-import jsxProd from "module_16254";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4115";
+// Module 16347 (QuestActivityButtonInner)
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_6 from "initializeState" /* 7491 */;
+import closure_7 from "set" /* 16348 */;
+import { QuestVariants } from "QuestsExperimentLocations" /* 6753 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "module_4119" /* 4119 */;
 
-let c10;
-let c9;
 const require = arg1;
 function QuestActivityButtonInner(quest) {
-  let userStatus;
   quest = quest.quest;
   let stateFromStores;
-  let dependencyMap;
+  dependencyMap = undefined;
   let num;
-  let c4;
+  closure_4 = undefined;
   let sharedValue;
   let sharedValue1;
   let ref;
-  let c8;
-  let obj = quest(10684);
-  let obj1 = quest(589);
+  closure_8 = undefined;
+  let obj = quest(10723);
+  obj1 = quest(589);
   let items = [sharedValue];
   stateFromStores = obj1.useStateFromStores(items, () => sharedValue.useReducedMotion);
   let obj2 = num;
@@ -52,7 +50,7 @@ function QuestActivityButtonInner(quest) {
     if (null == enrolledAt) {
       let obj = { questId: null };
       obj[0] = tmp.id;
-      stateFromStores(_undefined[13]).pushLazy(quest(_undefined[15])(_undefined[14], _undefined.paths), obj, outer1_17);
+      stateFromStores(_undefined[13]).pushLazy(quest(_undefined[15])(_undefined[14], _undefined.paths), obj, closure_1_17);
       const obj3 = stateFromStores(_undefined[13]);
     } else {
       obj = stateFromStores(_undefined[16]);
@@ -89,10 +87,10 @@ function QuestActivityButtonInner(quest) {
     }
     tmp9 = null != completedAt;
   }
-  c4 = tmp9;
-  let tmpResult = tmp(4115);
+  closure_4 = tmp9;
+  let tmpResult = tmp(4119);
   sharedValue = tmpResult.useSharedValue(num);
-  tmpResult = tmp(4115);
+  tmpResult = tmp(4119);
   let num2 = 0;
   if (tmp9) {
     num2 = 1;
@@ -100,7 +98,7 @@ function QuestActivityButtonInner(quest) {
   sharedValue1 = tmpResult.useSharedValue(num2);
   ref = obj2.useRef(null);
   const tmp14 = callback3();
-  c8 = tmp14;
+  closure_8 = tmp14;
   const fn = function u() {
     return { shadowOpacity: sharedValue1.get() };
   };
@@ -108,17 +106,17 @@ function QuestActivityButtonInner(quest) {
   fn.__workletHash = 4459043613798;
   fn.__initData = closure_14;
   const items2 = [tmp14.confetti];
-  const animatedStyle = quest(4115).useAnimatedStyle(fn);
+  const animatedStyle = quest(4119).useAnimatedStyle(fn);
   const memo = obj2.useMemo(() => {
     const obj = {};
-    const merged = Object.assign(_undefined2.confetti);
-    obj.width = outer1_11;
-    obj.height = outer1_11;
+    const merged = Object.assign(confetti.confetti);
+    obj.width = closure_1_11;
+    obj.height = closure_1_11;
     const items = [{ scale: 1.6 }];
     obj.transform = items;
     return obj;
   }, items2);
-  const tmpResult1 = quest(4115);
+  const tmpResult1 = quest(4119);
   const fn2 = function l() {
     return { strokeDashoffset: c2 - c2 * sharedValue.get() };
   };
@@ -126,21 +124,21 @@ function QuestActivityButtonInner(quest) {
   fn2.__workletHash = 3373122453897;
   fn2.__initData = closure_15;
   const items3 = [sharedValue, num, stateFromStores];
-  const animatedProps = quest(4115).useAnimatedProps(fn2);
+  const animatedProps = quest(4119).useAnimatedProps(fn2);
   const effect = obj2.useEffect(() => {
-    let num = 500;
+    num = 500;
     if (stateFromStores) {
       num = 0;
     }
     const result = sharedValue.set(quest(_undefined[18]).withTiming(num, { duration: num }));
     return () => {
-      outer1_0(outer1_2[7]).cancelAnimation(maybeApplyNoTextColorForLightCustomTheme);
+      closure_1_0(closure_1_2[7]).cancelAnimation(closure_5);
     };
   }, items3);
   const items4 = [sharedValue1, tmp9, stateFromStores];
   const effect1 = obj2.useEffect(() => {
     if (!stateFromStores) {
-      if (c4) {
+      if (closure_4) {
         const result = sharedValue1.set(quest(_undefined[18]).withTiming(1, { duration: 500 }));
         const current = ref.current;
         if (current != null) {
@@ -161,42 +159,39 @@ function QuestActivityButtonInner(quest) {
   items5[2] = animatedStyle;
   obj = { style: memo, pointerEvents: "none", children: null };
   obj1 = { ref, source: null, autoPlay: false, loop: false };
-  const tmpResult2 = quest(4115);
-  obj1[1] = quest(14484);
-  obj[2] = callback(stateFromStores(7130), obj1);
-  const items6 = [callback(c4, obj), , , ];
+  const tmpResult2 = quest(4119);
+  obj1[1] = quest(14552);
+  obj[2] = callback(stateFromStores(7168), obj1);
+  const items6 = [callback(closure_4, obj), , , ];
   obj2 = { style: tmp14.buttonWrapper, children: null };
   let obj3 = { icon: null, onPress: null, accessibilityLabel: null };
-  const tmp20 = stateFromStores(7130);
-  obj3[0] = stateFromStores(14352);
+  const tmp20 = stateFromStores(7168);
+  obj3[0] = stateFromStores(14420);
   obj3[1] = callback;
   const intl = tmp(1236).intl;
   obj3[2] = intl.string(quest(1236).t.JALI2K);
-  obj2[1] = callback(stateFromStores(16254), obj3);
-  items6[1] = callback(c4, obj2);
+  obj2[1] = callback(stateFromStores(16351), obj3);
+  items6[1] = callback(closure_4, obj2);
   const obj4 = { pointerEvents: "none", style: tmp14.canvas, children: null };
   const obj5 = { height: c11, width: c11, children: null };
-  const obj6 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: null, strokeWidth: 3.4, strokeDasharray: null };
-  obj6[4] = stateFromStores(712).unsafe_rawColors.OPACITY_32;
-  obj6[6] = result;
-  obj5[2] = callback(quest(6571).Circle, obj6);
-  obj4[2] = callback(quest(6571).Svg, obj5);
-  items6[2] = callback(c4, obj4);
+  const tmp21 = stateFromStores(16351);
+  obj5[2] = callback(quest(6607).Circle, { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: stateFromStores(712).unsafe_rawColors.OPACITY_32, strokeWidth: 3.4, strokeDasharray: result });
+  obj4[2] = callback(quest(6607).Svg, obj5);
+  items6[2] = callback(closure_4, obj4);
   const obj7 = { pointerEvents: "none", style: tmp14.canvas, children: null };
-  const obj8 = { height: c11, width: c11, children: null };
-  obj8[2] = callback(closure_12, { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: tmp14.progressPath.color, strokeWidth: 3.4, strokeDasharray: result, animatedProps });
-  obj7[2] = callback(quest(6571).Svg, obj8);
-  items6[3] = callback(c4, obj7);
+  const obj6 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: stateFromStores(712).unsafe_rawColors.OPACITY_32, strokeWidth: 3.4, strokeDasharray: result };
+  obj7[2] = callback(quest(6607).Svg, { height: c11, width: c11, children: callback(closure_12, obj9) });
+  items6[3] = callback(closure_4, obj7);
   obj[2] = items6;
-  return callback2(stateFromStores(4115).View, obj);
+  return callback2(stateFromStores(4119).View, obj);
 }
 let c3 = importAllResult;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let c11 = 32;
-let closure_12 = require("module_4115").createAnimatedComponent(require("inlineStyles").Circle);
+let closure_12 = importDefaultResult.createAnimatedComponent(require("inlineStyles").Circle);
 let obj = { container: { position: "relative", width: 32, height: 32, justifyContent: "center", alignItems: "center" }, completionGlow: { shadowOffset: { width: 0, height: 0 }, shadowRadius: 12, shadowOpacity: 0, elevation: 4, shadowColor: "#30C77399" }, canvas: { position: "absolute", transform: items }, progressPath: null, buttonWrapper: null, confetti: null };
 items = [{ rotate: "-90deg" }];
-obj = { color: require("Themes").colors.STATUS_POSITIVE };
+obj = { color: ThemesDefault.colors.STATUS_POSITIVE };
 obj[3] = obj;
 obj[4] = { position: "absolute", borderRadius: 16, overflow: "hidden" };
 obj[5] = { position: "absolute" };
@@ -211,9 +206,9 @@ const memoResult = importAllResult.memo(function QuestActivityButton(application
   let memo;
   let stateFromStores2;
   let obj = applicationId(stateFromStores1[12]);
-  const items = [initializeState];
+  const items = [closure_6];
   stateFromStores = obj.useStateFromStores(items, () => quests.quests);
-  const items1 = [set];
+  const items1 = [closure_7];
   stateFromStores1 = applicationId(stateFromStores1[12]).useStateFromStores(items1, () => state.getState().autoEnroll);
   const items2 = [stateFromStores, applicationId];
   memo = memo.useMemo(() => {
@@ -224,13 +219,13 @@ const memoResult = importAllResult.memo(function QuestActivityButton(application
     });
   }, items2);
   const obj2 = applicationId(stateFromStores1[12]);
-  const items3 = [set];
+  const items3 = [closure_7];
   stateFromStores2 = applicationId(stateFromStores1[12]).useStateFromStores(items3, () => {
     let id;
     if (memo != null) {
       id = memo.id;
     }
-    return outer1_7.isDismissed(id);
+    return closure_1_7.isDismissed(id);
   });
   const items4 = [memo, stateFromStores1, stateFromStores2];
   const effect = memo.useEffect(() => {
@@ -253,7 +248,7 @@ const memoResult = importAllResult.memo(function QuestActivityButton(application
       let obj = stateFromStores(stateFromStores1[13]);
       obj = { questId: null };
       obj[0] = tmp.id;
-      obj.pushLazy(applicationId(stateFromStores1[15])(stateFromStores1[14], stateFromStores1.paths), obj, outer1_17);
+      obj.pushLazy(applicationId(stateFromStores1[15])(stateFromStores1[14], stateFromStores1.paths), obj, closure_1_17);
     }
   }, items4);
   let tmp6 = null;
@@ -264,6 +259,6 @@ const memoResult = importAllResult.memo(function QuestActivityButton(application
   }
   return tmp6;
 });
-let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/frames/panel/native/QuestActivityButton.tsx");
+let result = require("set").fileFinishedImporting("modules/frames/panel/native/QuestActivityButton.tsx");
 
 export default memoResult;

@@ -1,33 +1,32 @@
-// Module ID: 9534
-// Function ID: 9535
+// Module ID: 9571
+// Function ID: 9572
 // Name: useGuildProfileCTA
-// Dependencies: [19, 1218, 1990, 1910, 4359, 1922, 676, 589, 1403, 8056, 9535, 8375, 6909, 2]
+// Dependencies: [19, 1218, 1991, 1910, 4363, 1922, 676, 589, 1403, 8095, 9572, 8414, 6947, 2]
 // Exports: default, getGuildProfileCTAType
 
-// Module 9534 (useGuildProfileCTA)
-import noop from "noop";
-import fetchFingerprint from "fetchFingerprint";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import updateInvite from "updateInvite";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 9571 (useGuildProfileCTA)
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 9572 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_7 from "updateInvite" /* 4363 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let c10;
-let c9;
 const require = arg1;
 ({ InviteStates: c9, GuildFeatures: c10 } = ME);
 let obj = { IS_MEMBER: 0, [0]: "IS_MEMBER", ADOPT_TAG: 1, [1]: "ADOPT_TAG", HAS_APPLICATION: 2, [2]: "HAS_APPLICATION", APPLY_TO_JOIN: 3, [3]: "APPLY_TO_JOIN", LURK_DISCOVERABLE: 4, [4]: "LURK_DISCOVERABLE", JOIN_VIA_INVITE: 5, [5]: "JOIN_VIA_INVITE", ACCEPT_ROLES: 6, [6]: "ACCEPT_ROLES" };
 obj = { INVITE: "INVITE" };
-const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfileCTA.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfileCTA.tsx");
 
 export default function useGuildProfileCTA(id) {
   const _require = id;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
+  importDefault = arg1;
+  dependencyMap = arg2;
   id = id.id;
   const features = id.features;
-  let obj = _require(589);
+  obj = _require(589);
   const items = [features];
   const stateFromStores = obj.useStateFromStores(items, () => features.getId());
   const items1 = [stateFromStores1];
@@ -65,13 +64,13 @@ export default function useGuildProfileCTA(id) {
     if (null != invite) {
       if (invite.state !== validInviteKey.BANNED) {
         if (invite.state !== tmp8.EXPIRED) {
-          let obj = { validInviteKey: null, isBypassInvite: null, inviteRoles: null };
+          obj = { validInviteKey: null, isBypassInvite: null, inviteRoles: null };
           obj[0] = inviteKeyForGuildId;
           let num = invite.flags;
           if (num == null) {
             num = 0;
           }
-          obj[1] = id(1403).hasFlag(num, id(8056).GuildInviteFlags.IS_APPLICATION_BYPASS);
+          obj[1] = id(1403).hasFlag(num, id(8095).GuildInviteFlags.IS_APPLICATION_BYPASS);
           obj[2] = invite.roles;
           const obj2 = id(1403);
           const tmp6 = id;
@@ -84,8 +83,8 @@ export default function useGuildProfileCTA(id) {
   const validInviteKey = stateFromStoresObject.validInviteKey;
   const isBypassInvite = stateFromStoresObject.isBypassInvite;
   const inviteRoles = stateFromStoresObject.inviteRoles;
-  let tmp6 = importDefault(9535)();
-  obj = tmp6;
+  let tmp6 = usePendingFolderGuildIdsDefault();
+  closure_12 = tmp6;
   const items8 = [stateFromStores3, tmp6, id, features, validInviteKey, , , , , , , ];
   ({ visibility: arr9[5], tag: arr9[6] } = id);
   items8[7] = isBypassInvite;
@@ -97,7 +96,7 @@ export default function useGuildProfileCTA(id) {
     guildId: id,
     ctaType: id.useMemo(() => {
       if (stateFromStores3) {
-        if (closure_1 === tmp6.INVITE) {
+        if (closure_1 === closure_12.INVITE) {
           if (null != inviteRoles) {
             if (arr2.length > 0) {
               if (null != stateFromStores2) {
@@ -147,9 +146,9 @@ export default function useGuildProfileCTA(id) {
         }
         IS_MEMBER = inviteRoles.IS_MEMBER;
         tmp22 = closure_1;
-        tmp23 = tmp6;
+        tmp23 = closure_12;
       } else {
-        if (tmp6.includes(id)) {
+        if (closure_12.includes(id)) {
           let APPLY_TO_JOIN = inviteRoles.HAS_APPLICATION;
         } else {
           let hasItem;
@@ -192,8 +191,6 @@ export default function useGuildProfileCTA(id) {
 export const CTATypes = obj;
 export const GuildProfileCTAContext = obj;
 export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfileFromInvite, code) {
-  let features;
-  let id;
   ({ id, features } = guildProfileFromInvite);
   id = id.getId();
   user = user.getUser(id);
@@ -222,18 +219,18 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
       flag = false;
       tmp11 = null;
       if (invite.state !== tmp12.EXPIRED) {
-        const obj = set(1403);
+        obj = set(1403);
         let num = invite.flags;
         if (num == null) {
           num = 0;
         }
-        flag = obj.hasFlag(num, set(8056).GuildInviteFlags.IS_APPLICATION_BYPASS);
+        flag = obj.hasFlag(num, set(8095).GuildInviteFlags.IS_APPLICATION_BYPASS);
         tmp11 = inviteKeyForGuildId;
         const tmp13 = set;
       }
     }
   }
-  const pendingFolderGuildIds = set(9535).getPendingFolderGuildIds();
+  const pendingFolderGuildIds = set(9572).getPendingFolderGuildIds();
   if (tmp7) {
     let roles;
     if (invite != null) {
@@ -295,7 +292,7 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
     }
     return APPLY_TO_JOIN;
   }
-  const obj2 = set(9535);
+  const obj2 = set(9572);
   const tmp15 = set;
   tmp7 = null != joinedAt;
 };

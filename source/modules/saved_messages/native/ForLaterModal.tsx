@@ -1,35 +1,38 @@
-// Module ID: 8491
-// Function ID: 8492
+// Module ID: 8530
+// Function ID: 8531
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4661, 712, 1629, 1236, 8489, 6319, 8492, 500, 6314, 5260, 12720, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1629, 1236, 8528, 6350, 8531, 500, 6345, 5265, 12775, 2]
 // Exports: default
 
-// Module 8491 (ForLaterModal)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8530 (ForLaterModal)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import keyExtractorDefault from "keyExtractor" /* 12775 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { modal: null, headerLeftContainer: null, headerRightContainer: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, borderBottomWidth: 0, shadowColor: "transparent", height: "100%" };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, borderBottomWidth: 0, shadowColor: "transparent", height: "100%" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { paddingLeft: require("Themes").space.PX_16 };
-const obj1 = { paddingLeft: require("Themes").space.PX_16 };
-createCacheKey[2] = { paddingRight: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj2 = { paddingRight: require("Themes").space.PX_16 };
-const result = require("jsxProd").fileFinishedImporting("modules/saved_messages/native/ForLaterModal.tsx");
+createCacheKey[1] = { paddingLeft: ThemesDefault.space.PX_16 };
+const obj1 = { paddingLeft: ThemesDefault.space.PX_16 };
+createCacheKey[2] = { paddingRight: ThemesDefault.space.PX_16 };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const obj2 = { paddingRight: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/saved_messages/native/ForLaterModal.tsx");
 
 export default function ForLaterModal(type) {
   type = type.type;
   let _require;
-  const tmp = createCacheKey();
+  const tmp = callback();
   const intl = _require(1236).intl;
-  if (type === _require(8489).SavedMessageSortTypes.REMINDER) {
+  if (type === _require(8528).SavedMessageSortTypes.REMINDER) {
   } else {
   }
   const stringResult = intl.string(_2pAkDA);
@@ -38,7 +41,7 @@ export default function ForLaterModal(type) {
   obj = {
     title: stringResult,
     headerTitle() {
-      return outer1_4(_undefined(outer1_2[9]).GenericHeaderTitle, { title: _undefined });
+      return closure_1_4(_undefined(closure_1_2[9]).GenericHeaderTitle, { title: _undefined });
     },
     headerTitleAlign: "center",
     headerStatusBarHeight: null,
@@ -49,16 +52,15 @@ export default function ForLaterModal(type) {
   let tmp4Result = tmp4(500);
   let num = 0;
   if (!tmp4Result.isIOS()) {
-    num = importDefault(1629)().top;
+    num = useSafeAreaInsetsDefault().top;
   }
-  obj[3] = num + importDefault(712).space.PX_8;
-  tmp4Result = tmp4(6314);
-  obj[4] = tmp4Result.getHeaderCloseButton(importDefault(5260).pop);
+  obj[3] = num + ThemesDefault.space.PX_8;
+  tmp4Result = tmp4(6345);
+  obj[4] = tmp4Result.getHeaderCloseButton(_modDef5265.pop);
   ({ headerLeftContainer: obj2[5], headerRightContainer: obj2[6] } = tmp);
-  const items = [closure_4(_require(6319).Header, obj), ];
-  obj = { type, onClose: null };
-  obj[1] = importDefault(5260).pop;
-  items[1] = closure_4(importDefault(12720), obj, type);
+  const items = [closure_4(_require(6350).Header, obj), ];
+  obj = { type, onClose: _modDef5265.pop };
+  items[1] = closure_4(keyExtractorDefault, obj, type);
   obj[1] = items;
   return closure_5(View, obj);
 };

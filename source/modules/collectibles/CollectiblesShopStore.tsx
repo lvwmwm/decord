@@ -1,17 +1,19 @@
-// Module ID: 5325
-// Function ID: 5326
+// Module ID: 5330
+// Function ID: 5331
 // Name: items
 // Dependencies: [589, 709, 2]
 
-// Module 5325 (items)
-import { Store } from "initialize";
-import set from "set";
+// Module 5330 (items)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import set from "set" /* 2 */;
 
 const items = [];
 let c3 = null;
 let closure_4 = {};
 let set = new Set();
 let closure_6 = {};
+const Store = initializeDefault.Store;
 class CollectiblesShopStore extends Store {
 }
 const prototype = CollectiblesShopStore.prototype;
@@ -66,7 +68,7 @@ prototype["getLayoutFetchError"] = function getLayoutFetchError(c0) {
   return tmp;
 };
 CollectiblesShopStore.displayName = "CollectiblesShopStore";
-const collectiblesShopStore = new CollectiblesShopStore(require("dispatcher"), {
+const collectiblesShopStore = new CollectiblesShopStore(dispatcherDefault, {
   COLLECTIBLES_SHOP_OPEN: function handleOpen(analyticsLocations) {
     analyticsLocations = analyticsLocations.analyticsLocations;
     if (analyticsLocations == null) {
@@ -79,9 +81,9 @@ const collectiblesShopStore = new CollectiblesShopStore(require("dispatcher"), {
     const initialProductSkuId = analyticsLocations.initialProductSkuId;
   },
   COLLECTIBLES_SHOP_CLOSE: function handleClose() {
-    let closure_2 = items;
-    let c3 = null;
-    let c0;
+    closure_2 = items;
+    c3 = null;
+    c0 = undefined;
   },
   COLLECTIBLES_PRODUCT_DETAILS_OPEN: function handleProductDetailsOpen(skuId) {
     if (skuId.skuId === c0) {
@@ -103,12 +105,12 @@ const collectiblesShopStore = new CollectiblesShopStore(require("dispatcher"), {
     set.delete(tab);
   },
   LOGOUT: function handleLogout() {
-    let closure_2 = items;
-    let c3 = null;
-    let c0;
-    let closure_4 = {};
-    const set = new Set();
-    let closure_6 = {};
+    closure_2 = items;
+    c3 = null;
+    c0 = undefined;
+    closure_4 = {};
+    set = new Set();
+    closure_6 = {};
   }
 });
 const result = set.fileFinishedImporting("modules/collectibles/CollectiblesShopStore.tsx");

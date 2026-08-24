@@ -4,7 +4,7 @@
 // Dependencies: [1657]
 
 // Module 1685 (weakMap)
-import isJest from "isJest";
+import isJest from "isJest" /* 1657 */;
 
 isJest = isJest.shouldBeUseWeb();
 const SymbolResult = Symbol("shareable flag");

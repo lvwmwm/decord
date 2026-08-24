@@ -1,10 +1,12 @@
-// Module ID: 5248
-// Function ID: 5249
+// Module ID: 5253
+// Function ID: 5254
 // Name: ApplicationCommandSectionType
 // Dependencies: [2]
 
-// Module 5248 (ApplicationCommandSectionType)
-const result = require("set").fileFinishedImporting("modules/application_commands/ApplicationCommandTypes.tsx");
+// Module 5253 (ApplicationCommandSectionType)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/application_commands/ApplicationCommandTypes.tsx");
 
 export const ApplicationCommandSectionType = { BUILT_IN: 0, [0]: "BUILT_IN", APPLICATION: 1, [1]: "APPLICATION" };
 export const ApplicationCommandInputType = { BUILT_IN: 0, [0]: "BUILT_IN", BUILT_IN_TEXT: 1, [1]: "BUILT_IN_TEXT", BUILT_IN_INTEGRATION: 2, [2]: "BUILT_IN_INTEGRATION", BOT: 3, [3]: "BOT", PLACEHOLDER: 4, [4]: "PLACEHOLDER" };

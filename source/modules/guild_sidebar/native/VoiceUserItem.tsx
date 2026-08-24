@@ -1,53 +1,39 @@
-// Module ID: 15385
-// Function ID: 15386
+// Module ID: 15449
+// Function ID: 15450
 // Name: getVoiceUserHeight
-// Dependencies: [19, 17, 4662, 676, 21, 1297, 9288, 4661, 712, 10056, 589, 9731, 9732, 9734, 698, 4115, 4664, 1435, 15386, 9683, 9685, 9679, 9681, 7998, 7975, 9884, 9744, 2]
+// Dependencies: [19, 17, 4669, 676, 21, 1297, 9325, 4668, 712, 10095, 589, 9770, 9771, 9773, 698, 4119, 4671, 1435, 15450, 9722, 9724, 9718, 9720, 8037, 8014, 9923, 9783, 2]
 // Exports: getVoiceUserHeight
 
-// Module 15385 (getVoiceUserHeight)
-import importAllResult from "MicrophoneDenyIcon";
-import { View } from "getAvatarURL";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { AnalyticEvents } from "ME";
-import jsxProd from "HeadphonesDenyIcon";
-import createCacheKey from "createCacheKey";
-import getLayoutStyles from "getLayoutStyles";
-import merged from "expandEventProperties";
+// Module 15449 (getVoiceUserHeight)
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import map from "map" /* 9325 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import getLayoutStyles from "getLayoutStyles" /* 10095 */;
+import merged from "module_14" /* 14 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let c9 = "text-sm/medium";
 let c10 = "redesign-channel-name-muted-text";
 const XSMALL_20 = require("Button").AvatarSizes.XSMALL_20;
 let obj = { voiceState: { flex: 1, flexDirection: "row", alignItems: "center", paddingVertical: 5 }, disabled: { opacity: 0.5 }, voiceStateCollapsed: null, voiceStateIcon: null, legacyVoiceStateIcon: null, gameIcon: null };
-obj = { marginTop: 4, marginRight: 8, width: 32, height: 32, borderRadius: require("Themes").radii.lg, borderWidth: 4, borderColor: require("Themes").colors.BACKGROUND_BASE_LOW, alignItems: "center", overflow: "hidden" };
+obj = { marginTop: 4, marginRight: 8, width: 32, height: 32, borderRadius: ThemesDefault.radii.lg, borderWidth: 4, borderColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", overflow: "hidden" };
 obj[2] = obj;
 createCacheKey = { marginLeft: 6 };
 obj[3] = createCacheKey;
-obj[4] = { tintColor: require("Themes").colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, marginLeft: 6 };
+obj[4] = { tintColor: ThemesDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, marginLeft: 6 };
 obj[5] = { marginLeft: 6 };
 let closure_12 = createCacheKey.createStyles(obj);
 let closure_13 = { code: "function VoiceUserItemTsx1(){const{ringing,shouldAnimate,PULSE_ENDING_OPACITY,withRepeat,withSequence,withDelay,INNER_PULSE_DELAY,withTiming,PULSE_DURATION,Easing,PULSE_STARTING_OPACITY,FADE_DURATION}=this.__closure;if(!ringing){return{opacity:1.0};}else if(!shouldAnimate){return{opacity:PULSE_ENDING_OPACITY};}return{opacity:withRepeat(withSequence(withDelay(INNER_PULSE_DELAY,withTiming(PULSE_ENDING_OPACITY,{duration:PULSE_DURATION,easing:Easing.bezier(0.4,0.0,1,1)})),withDelay(PULSE_DURATION,withTiming(PULSE_STARTING_OPACITY,{duration:FADE_DURATION}))),-1)};}" };
-let obj2 = { tintColor: require("Themes").colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, marginLeft: 6 };
+let obj2 = { tintColor: ThemesDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, marginLeft: 6 };
 const memoResult = importAllResult.memo(function VoiceUserItem(guildId) {
-  let collapsed;
-  let deaf;
-  let disabled;
-  let isInEmbeddedActivity;
-  let localMute;
-  let mute;
-  let platform;
-  let require;
-  let ringing;
-  let serverDeaf;
-  let serverMute;
-  let stream;
-  let user;
-  let video;
-  let voicePlatform;
   ({ member: require, user } = guildId);
   guildId = guildId.guildId;
   const channelId = guildId.channelId;
@@ -83,8 +69,8 @@ const memoResult = importAllResult.memo(function VoiceUserItem(guildId) {
   class A {
     constructor() {
       if (ringing) {
-        tmp = maybeApplyNoTextColorForLightCustomTheme;
-        if (maybeApplyNoTextColorForLightCustomTheme) {
+        tmp = closure_5;
+        if (closure_5) {
           obj = { opacity: null };
           tmp2 = member;
           tmp3 = guildId;
@@ -127,7 +113,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(guildId) {
   if (collapsed) {
     obj = { style: null, children: null };
     obj[0] = tmp.voiceStateCollapsed;
-    const obj1 = { source: null, size: null };
+    obj1 = { source: null, size: null };
     obj1[0] = getSource;
     obj1[1] = XSMALL_20;
     obj[1] = callback(tmp2(tmp3[5]).Avatar, obj1);
@@ -253,10 +239,10 @@ const memoResult = importAllResult.memo(function VoiceUserItem(guildId) {
   }
   return tmp12Result;
 });
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/guild_sidebar/native/VoiceUserItem.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_sidebar/native/VoiceUserItem.tsx");
 
 export default memoResult;
 export const getVoiceUserHeight = function getVoiceUserHeight(fontScale) {
-  const obj = require(9288) /* map */;
-  return Math.max(require(9288) /* map */.scaleTextLineHeight(c9, fontScale), require(1297) /* Button */.AVATAR_SIZE_MAP[XSMALL_20]) + 10;
+  const obj = map;
+  return Math.max(map.scaleTextLineHeight(c9, fontScale), Button.AVATAR_SIZE_MAP[XSMALL_20]) + 10;
 };

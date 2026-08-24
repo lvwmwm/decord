@@ -1,13 +1,15 @@
-// Module ID: 6928
-// Function ID: 6929
+// Module ID: 6966
+// Function ID: 6967
 // Name: getRoleMemberCount
 // Dependencies: [589, 709, 2]
 
-// Module 6928 (getRoleMemberCount)
-import { Store } from "initialize";
+// Module 6966 (getRoleMemberCount)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let closure_0 = {};
 let closure_1 = {};
+const Store = initializeDefault.Store;
 class GuildRoleMemberCountStore extends Store {
 }
 const prototype = GuildRoleMemberCountStore.prototype;
@@ -31,7 +33,7 @@ prototype["shouldFetch"] = function shouldFetch(arg0) {
   }
 };
 GuildRoleMemberCountStore.displayName = "GuildRoleMemberCountStore";
-const guildRoleMemberCountStore = new GuildRoleMemberCountStore(require("dispatcher"), {
+const guildRoleMemberCountStore = new GuildRoleMemberCountStore(dispatcherDefault, {
   GUILD_ROLE_MEMBER_COUNT_FETCH_SUCCESS: function handleGuildRoleMemberCountFetchSuccess(guildId) {
     guildId = guildId.guildId;
     closure_0[guildId] = guildId.roleMemberCount;

@@ -1,44 +1,39 @@
-// Module ID: 11888
-// Function ID: 11889
-// Dependencies: [19, 17, 1391, 8919, 1910, 11502, 1922, 11887, 4371, 21, 4661, 712, 589, 4984, 8920, 11889, 5433, 1297, 9966, 4219, 1236, 1435, 1903, 4734, 6291, 11890, 2]
+// Module ID: 11937
+// Function ID: 11938
+// Dependencies: [19, 17, 1391, 8956, 1910, 11551, 1922, 11936, 4375, 21, 4668, 712, 589, 4989, 8957, 11938, 5438, 1297, 10005, 4223, 1236, 1435, 1903, 4739, 6322, 11939, 2]
 
-// Module 11888
-import { View } from "Button";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import updateWithLatestInvite from "updateWithLatestInvite";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import _computeRows from "_computeRows";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import setSendState from "setSendState";
-import { InviteSendStates } from "InviteSendStates";
-import { jsx } from "getAvatarURL";
-import createCacheKey from "createCacheKey";
-import importAllResult from "nameFromUser";
+// Module 11937
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "updateWithLatestInvite" /* 8956 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_7 from "_computeRows" /* 11551 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import setSendState from "setSendState" /* 11936 */;
+import { InviteSendStates } from "InviteSendStates" /* 4375 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c10;
-let c9;
 const require = arg1;
 ({ setSendState: c9, useInstantInviteSendStates: c10 } = setSendState);
 let obj = { acronym: null };
-obj = { width: 32, height: 32, borderRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center", overflow: "hidden", marginTop: 0, marginRight: 10, borderColor: require("Themes").colors.BORDER_MUTED, borderStyle: "solid", borderWidth: 2 };
+obj = { width: 32, height: 32, borderRadius: ThemesDefault.radii.lg, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center", overflow: "hidden", marginTop: 0, marginRight: 10, borderColor: ThemesDefault.colors.BORDER_MUTED, borderStyle: "solid", borderWidth: 2 };
 obj[0] = obj;
 let closure_13 = createCacheKey.createStyles(obj);
-const memoResult = require("nameFromUser").memo(function InstantInviteRow(row) {
-  let View;
-  let ensureGuildLoaded;
-  let end;
-  let start;
+const memoResult = importAllResult.memo(function InstantInviteRow(row) {
   row = row.row;
   const code = row.code;
   const onPressAvatar = row.onPressAvatar;
-  ({ onInviteSent: View, source: ensureGuildLoaded } = row);
+  ({ onInviteSent: View, source: closure_4 } = row);
   let id;
   ({ start, end } = row);
   id = row.item.id;
   let obj = row(onPressAvatar[12]);
   const items = [id];
   const stateFromStores = obj.useStateFromStores(items, () => id.isSubmitting());
-  let obj1 = row(onPressAvatar[12]);
+  obj1 = row(onPressAvatar[12]);
   const items1 = [id];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => id.getError());
   const tmp6 = callback((arg0) => {
@@ -53,8 +48,8 @@ const memoResult = require("nameFromUser").memo(function InstantInviteRow(row) {
     return tmp2;
   });
   let obj2 = row(onPressAvatar[12]);
-  const items2 = [ensureGuildLoaded];
-  const stateFromStores2 = obj2.useStateFromStores(items2, () => outer1_4.getChannel(id));
+  const items2 = [closure_4];
+  const stateFromStores2 = obj2.useStateFromStores(items2, () => closure_1_4.getChannel(id));
   let str = code(onPressAvatar[13])(stateFromStores2);
   if (null == code) {
     return null;
@@ -126,7 +121,7 @@ const memoResult = require("nameFromUser").memo(function InstantInviteRow(row) {
         if (null != code) {
           function handleSendState(arg0) {
             if (null != closure_1) {
-              outer1_9(tmp, updateWithLatestInvite, arg0 ? outer1_11.SENT : outer1_11.ERROR);
+              closure_1_9(tmp, closure_5, arg0 ? closure_1_11.SENT : closure_1_11.ERROR);
               if (arg0) {
                 if (callback != null) {
                   callback();
@@ -134,7 +129,7 @@ const memoResult = require("nameFromUser").memo(function InstantInviteRow(row) {
               }
             }
           }
-          outer1_9(tmp, id, outer1_11.SENDING);
+          closure_1_9(tmp, id, closure_1_11.SENDING);
           const type = row.type;
           if (row(onPressAvatar[14]).RowTypes.FRIEND !== type) {
             if (tmp7(tmp8[14]).RowTypes.DM !== type) {
@@ -144,23 +139,23 @@ const memoResult = require("nameFromUser").memo(function InstantInviteRow(row) {
                   let obj = { inviteKey: null, type: null, channel: null, location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
                   obj[0] = tmp;
                   obj[1] = tmp7(tmp8[15]).InvitePropertiesType.GROUP_DM;
-                  obj[2] = outer1_4.getChannel(tmp3);
+                  obj[2] = closure_1_4.getChannel(tmp3);
                   obj = { suggestionData: null, source: null };
-                  obj[0] = outer1_7.getSelectedInviteMetadata(tmp6);
-                  obj[1] = ensureGuildLoaded;
+                  obj[0] = closure_1_7.getSelectedInviteMetadata(tmp6);
+                  obj[1] = closure_4;
                   obj[4] = obj;
                   obj3.enqueue(obj, handleSendState);
                 }
               } else if (tmp7(tmp8[14]).RowTypes.CHANNEL === type) {
                 if (null != tmp) {
                   obj = code(tmp8[15]);
-                  const obj1 = { inviteKey: null, type: null, channel: null, location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
+                  obj1 = { inviteKey: null, type: null, channel: null, location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
                   obj1[0] = tmp;
                   obj1[1] = tmp7(tmp8[15]).InvitePropertiesType.CHANNEL;
-                  obj1[2] = outer1_4.getChannel(tmp3);
+                  obj1[2] = closure_1_4.getChannel(tmp3);
                   const obj2 = { suggestionData: null, source: null };
-                  obj2[0] = outer1_7.getSelectedInviteMetadata(tmp6);
-                  obj2[1] = ensureGuildLoaded;
+                  obj2[0] = closure_1_7.getSelectedInviteMetadata(tmp6);
+                  obj2[1] = closure_4;
                   obj1[4] = obj2;
                   obj.enqueue(obj1, handleSendState);
                 }
@@ -171,10 +166,10 @@ const memoResult = require("nameFromUser").memo(function InstantInviteRow(row) {
             obj3 = { inviteKey: null, type: null, user: null, location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
             obj3[0] = tmp;
             obj3[1] = tmp7(tmp8[15]).InvitePropertiesType.USER;
-            obj3[2] = outer1_8.getUser(tmp3);
+            obj3[2] = closure_1_8.getUser(tmp3);
             const obj4 = { suggestionData: null, source: null };
-            obj4[0] = outer1_7.getSelectedInviteMetadata(tmp6);
-            obj4[1] = ensureGuildLoaded;
+            obj4[0] = closure_1_7.getSelectedInviteMetadata(tmp6);
+            obj4[1] = closure_4;
             obj3[4] = obj4;
             code(tmp8[15]).enqueue(obj3, handleSendState);
             const obj7 = code(tmp8[15]);
@@ -264,6 +259,6 @@ const memoResult = require("nameFromUser").memo(function InstantInviteRow(row) {
     const tmp8Result4 = tmp8(tmp3[19]);
   }
 });
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteRow.tsx");
+const result = require("set").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteRow.tsx");
 
 export default memoResult;

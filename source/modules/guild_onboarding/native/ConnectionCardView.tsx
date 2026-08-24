@@ -1,51 +1,44 @@
-// Module ID: 7154
-// Function ID: 7155
+// Module ID: 7192
+// Function ID: 7193
 // Name: ConnectionCardView
-// Dependencies: [19, 17, 21, 4661, 712, 4734, 1236, 4335, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4739, 1236, 4339, 4750, 2]
 // Exports: default
 
-// Module 7154 (ConnectionCardView)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7192 (ConnectionCardView)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ View: obj1, ActivityIndicator: c3 } = get_ActivityIndicator);
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { card: null, leftContent: null, icon: null, textContent: null, connectedStatus: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.md, borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, padding: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.md, borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_SUBTLE, padding: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flexDirection: "row", alignItems: "center", flex: 1, marginRight: require("Themes").space.PX_12 };
-obj1 = { flexDirection: "row", alignItems: "center", flex: 1, marginRight: require("Themes").space.PX_12 };
-createCacheKey[2] = { width: 32, height: 32, marginRight: require("Themes").space.PX_12, justifyContent: "center", alignItems: "center" };
+createCacheKey[1] = { flexDirection: "row", alignItems: "center", flex: 1, marginRight: ThemesDefault.space.PX_12 };
+obj1 = { flexDirection: "row", alignItems: "center", flex: 1, marginRight: ThemesDefault.space.PX_12 };
+createCacheKey[2] = { width: 32, height: 32, marginRight: ThemesDefault.space.PX_12, justifyContent: "center", alignItems: "center" };
 createCacheKey[3] = { flex: 1 };
-let obj2 = { width: 32, height: 32, marginRight: require("Themes").space.PX_12, justifyContent: "center", alignItems: "center" };
-createCacheKey[4] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8 };
-const result = require("jsxProd").fileFinishedImporting("modules/guild_onboarding/native/ConnectionCardView.tsx");
+let obj2 = { width: 32, height: 32, marginRight: ThemesDefault.space.PX_12, justifyContent: "center", alignItems: "center" };
+createCacheKey[4] = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_8 };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_8 };
+const result = require("set").fileFinishedImporting("modules/guild_onboarding/native/ConnectionCardView.tsx");
 
 export default function ConnectionCardView(description) {
-  let canConnect;
-  let displayName;
-  let icon;
-  let isConnected;
-  let isLoading;
-  let onConnect;
   description = description.description;
   ({ displayName, icon, isLoading, isConnected, canConnect, onConnect } = description);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { style: tmp.card, children: null };
   obj = { style: tmp.leftContent, children: null };
   obj = { style: tmp.icon, children: icon };
   const items = [callback(closure_2, obj), ];
-  const obj1 = { style: tmp.textContent, children: null };
-  const items1 = [callback(require(4734) /* Text */.Text, { variant: "text-md/medium", color: "text-strong", children: displayName }), ];
+  obj1 = { style: tmp.textContent, children: null };
+  const items1 = [callback(Text.Text, { variant: "text-md/medium", color: "text-strong", children: displayName }), ];
   let tmp4Result = null != description;
   if (tmp4Result) {
     tmp4Result = description.length > 0;
@@ -53,7 +46,7 @@ export default function ConnectionCardView(description) {
   if (tmp4Result) {
     const obj2 = { variant: "text-sm/normal", color: "text-subtle", children: null };
     obj2[2] = description;
-    tmp4Result = tmp4(tmp5(4734).Text, obj2);
+    tmp4Result = tmp4(tmp5(4739).Text, obj2);
   }
   items1[1] = tmp4Result;
   obj1[1] = items1;
@@ -68,7 +61,7 @@ export default function ConnectionCardView(description) {
     const obj4 = { variant: "text-sm/medium", color: "text-feedback-positive", children: null };
     const intl2 = tmp5(1236).intl;
     obj4[2] = intl2.string(tmp5(1236).t["LV+CXH"]);
-    const items3 = [tmp4(tmp5(4734).Text, obj4), tmp4(tmp5(4335).CircleCheckIcon, { size: "sm", color: "status-positive" })];
+    const items3 = [tmp4(tmp5(4739).Text, obj4), tmp4(tmp5(4339).CircleCheckIcon, { size: "sm", color: "status-positive" })];
     obj3[1] = items3;
     tmp4Result = tmp2(tmp3, obj3);
   } else {
@@ -77,7 +70,7 @@ export default function ConnectionCardView(description) {
     const intl = tmp5(1236).intl;
     obj5[3] = intl.string(tmp5(1236).t.S0W8Z5);
     obj5[4] = !canConnect;
-    tmp4Result = tmp4(tmp5(4745).Button, obj5);
+    tmp4Result = tmp4(tmp5(4750).Button, obj5);
   }
   items2[1] = tmp4Result;
   obj[1] = items2;

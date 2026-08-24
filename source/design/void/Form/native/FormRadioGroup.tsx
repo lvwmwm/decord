@@ -1,42 +1,36 @@
-// Module ID: 8103
-// Function ID: 8104
+// Module ID: 8142
+// Function ID: 8143
 // Name: FormRadioGroup
-// Dependencies: [19, 17, 21, 6939, 8101, 7692, 2]
+// Dependencies: [19, 17, 21, 6977, 8140, 7730, 2]
 // Exports: default
 
-// Module 8103 (FormRadioGroup)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
+// Module 8142 (FormRadioGroup)
+import context from "context" /* 6977 */;
+import FormSectionDefault from "FormSection" /* 7730 */;
+import context2 from "context" /* 8140 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
-const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormRadioGroup.tsx");
+const result = require("set").fileFinishedImporting("design/void/Form/native/FormRadioGroup.tsx");
 
 export default function FormRadioGroup(arg0) {
-  let accessibilityLabel;
-  let children;
-  let hasIcons;
-  let hint;
-  let icon;
-  let title;
-  let value;
   ({ title, children, hint } = arg0);
   ({ hasIcons, accessibilityLabel, value, icon } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  if (React.useContext(require(6939) /* context */.RedesignCompatContext)) {
+  if (React.useContext(context.RedesignCompatContext)) {
     let obj = { style: null, children: null };
     obj[0] = { marginBottom: 24, marginHorizontal: 12 };
     obj = { children: null };
-    const obj1 = { defaultValue: null, hasIcons: null, title: null, accessibilityLabel: null, children: null };
+    obj1 = { defaultValue: null, hasIcons: null, title: null, accessibilityLabel: null, children: null };
     obj1[0] = value;
     obj1[1] = hasIcons;
     obj1[2] = title;
     obj1[3] = accessibilityLabel;
     obj1[4] = children;
-    obj[0] = callback(require(8101) /* context */.TableRadioGroup, obj1);
+    obj[0] = callback(context2.TableRadioGroup, obj1);
     const items = [callback(View, obj), ];
     let tmp13Result = null;
     if (null != hint) {
@@ -58,8 +52,8 @@ export default function FormRadioGroup(arg0) {
     obj[4] = icon;
     const merged1 = Object.assign(merged);
     obj.children = children;
-    tmp11Result = callback(importDefault(7692), obj);
-    const tmp6 = importDefault(7692);
+    tmp11Result = callback(FormSectionDefault, obj);
+    const tmp6 = FormSectionDefault;
   }
   return tmp11Result;
 };

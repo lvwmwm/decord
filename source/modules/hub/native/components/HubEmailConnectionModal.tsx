@@ -1,34 +1,34 @@
-// Module ID: 11905
-// Function ID: 11906
+// Module ID: 11954
+// Function ID: 11955
 // Name: HubEmailConnectionModal
-// Dependencies: [19, 11897, 21, 4661, 6370, 6314, 11906, 503, 11909, 11912, 11914, 11915, 11916, 11920, 6803, 1500, 7127, 11922, 6312, 1236, 2]
+// Dependencies: [19, 11946, 21, 4668, 6401, 6345, 11955, 503, 11958, 11961, 11963, 11964, 11965, 11969, 6840, 1500, 7165, 11971, 6343, 1236, 2]
 // Exports: HubEmailConnectionScreen, default
 
-// Module 11905 (HubEmailConnectionModal)
-import "getSystemLocale";
-import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11954 (HubEmailConnectionModal)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useNavigation from "useNavigation" /* 1500 */;
+import NavigationStack from "NavigationStack" /* 6343 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import useInitialValueDefault from "useInitialValue" /* 7165 */;
+import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 11946 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { safeArea: null };
 createCacheKey = { marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, flex: 1 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/hub/native/components/HubEmailConnectionModal.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/hub/native/components/HubEmailConnectionModal.tsx");
 
 export default function HubEmailConnectionModal(arg0) {
-  let HubEmailConnectionSteps;
-  let dependencyMap;
-  let importDefault;
-  let initialRouteStack;
-  let require;
-  let screens;
   ({ isNestedNavigator: require, onCloseExtra: importDefault, invite: dependencyMap, displayStudentPrompt: HubEmailConnectionSteps } = arg0);
-  let jsx;
-  let obj = require(1500) /* useNavigation */;
+  jsx = undefined;
+  let obj = useNavigation;
   jsx = obj.useNavigation();
-  ({ screens, initialRouteStack } = importDefault(7127)(() => {
+  ({ screens, initialRouteStack } = useInitialValueDefault(() => {
     function handleClose() {
       let flag = arg0;
       if (arg0 === undefined) {
@@ -40,8 +40,8 @@ export default function HubEmailConnectionModal(arg0) {
       if (closure_0) {
         navigation.goBack();
       } else {
-        outer1_1(outer1_2[17]).close();
-        const obj = outer1_1(outer1_2[17]);
+        closure_1_1(closure_1_2[17]).close();
+        const obj = closure_1_1(closure_1_2[17]);
       }
     }
     const items = [];
@@ -61,7 +61,7 @@ export default function HubEmailConnectionModal(arg0) {
       obj[1] = obj;
       push(obj);
     }
-    let obj3 = outer1_0(outer1_2[5]);
+    let obj3 = closure_1_0(closure_1_2[5]);
     if (closure_0) {
       let headerBackButton = obj3.getHeaderBackButton(handleClose);
       let tmp8 = tmp6;
@@ -71,8 +71,8 @@ export default function HubEmailConnectionModal(arg0) {
       tmp8 = tmp6;
       tmp9 = tmp5;
     }
-    const obj1 = { screens: null, initialRouteStack: null };
-    const obj2 = { [outer1_3.STUDENT_PROMPT]: obj3 };
+    obj1 = { screens: null, initialRouteStack: null };
+    const obj2 = { [closure_1_3.STUDENT_PROMPT]: obj3 };
     obj3 = {
       fullscreen: true,
       headerLeft: headerBackButton,
@@ -81,10 +81,10 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11906), {});
+        return navigation(callback(11955), {});
       }
     };
-    obj2[outer1_3.VERIFY_EMAIL] = {
+    obj2[closure_1_3.VERIFY_EMAIL] = {
       impressionName: tmp9(tmp8[7]).ImpressionNames.HUB_EMAIL_SIGNUP,
       impressionProperties(invite) {
         return { has_invite: null != invite.invite };
@@ -96,55 +96,55 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11909), {});
+        return navigation(callback(11958), {});
       }
     };
-    obj2[outer1_3.EMAIL_WAITLIST] = {
+    obj2[closure_1_3.EMAIL_WAITLIST] = {
       fullscreen: true,
       headerTitle() {
         return null;
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11912), {});
+        return navigation(callback(11961), {});
       }
     };
-    obj2[outer1_3.SUBMIT_SCHOOL] = {
+    obj2[closure_1_3.SUBMIT_SCHOOL] = {
       fullscreen: true,
       headerTitle() {
         return null;
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11914), {});
+        return navigation(callback(11963), {});
       }
     };
-    obj2[outer1_3.SELECT_SCHOOL] = {
+    obj2[closure_1_3.SELECT_SCHOOL] = {
       fullscreen: true,
       headerTitle() {
         return null;
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11915), {});
+        return navigation(callback(11964), {});
       }
     };
-    obj2[outer1_3.VERIFY_PIN] = {
+    obj2[closure_1_3.VERIFY_PIN] = {
       fullscreen: true,
       headerTitle() {
         return null;
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11916), {});
+        return navigation(callback(11965), {});
       }
     };
-    obj2[outer1_3.SELECT_SCHOOL_SEARCH] = {
+    obj2[closure_1_3.SELECT_SCHOOL_SEARCH] = {
       fullscreen: true,
       headerShown: false,
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11920), {});
+        return navigation(callback(11969), {});
       }
     };
     obj1[0] = obj2;
@@ -152,11 +152,11 @@ export default function HubEmailConnectionModal(arg0) {
     return obj1;
   }));
   obj = { screens, initialRouteStack, headerBackTitle: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-  return jsx(require(6312) /* NavigationStack */.Navigator, { screens, initialRouteStack, headerBackTitle: null });
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t["13/7kX"]);
+  return jsx(NavigationStack.Navigator, { screens, initialRouteStack, headerBackTitle: null });
 };
 export const HubEmailConnectionScreen = function HubEmailConnectionScreen(children) {
-  const tmp = createCacheKey();
-  return jsx(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: createCacheKey().safeArea, children: children.children });
+  const tmp = callback();
+  return jsx(SafeAreaPaddingView.SafeAreaPaddingView, { top: true, style: callback().safeArea, children: children.children });
 };

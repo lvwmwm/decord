@@ -1,31 +1,37 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16787
+// Function ID: 16788
 // Name: handleRelationshipAdd
-// Dependencies: [676, 1363, 1236, 16692, 5038, 2]
+// Dependencies: [676, 1363, 1236, 16788, 5043, 2]
 
-// Module 16691 (handleRelationshipAdd)
-import { RelationshipTypes } from "ME";
-import "initialize";
+// Module 16787 (handleRelationshipAdd)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 1363 */;
+import initializeDefault from "initialize" /* 5043 */;
+import showPendingNotificationAll from "showPendingNotification" /* 16788 */;
 
 function handleRelationshipAdd(relationship) {
   relationship = relationship.relationship;
   if (!tmp) {
-    const AccessibilityAnnouncer = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+    const intl = getSystemLocale.intl;
     const obj = { username: null };
     obj[0] = relationship.user.username;
-    AccessibilityAnnouncer.announce(intl.formatToPlainString(require(1236) /* getSystemLocale */.t.zH0kC7, obj));
-    const result = importAll(16692).showPendingNotification(relationship.user);
-    const obj2 = importAll(16692);
+    AccessibilityAnnouncer.announce(intl.formatToPlainString(getSystemLocale.t.zH0kC7, obj));
+    const result = showPendingNotificationAll.showPendingNotification(relationship.user);
+    const obj2 = showPendingNotificationAll;
   }
 }
 function handleFriendRequestAccepted(user) {
   user = user.user;
-  const AccessibilityAnnouncer = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
-  const intl = require(1236) /* getSystemLocale */.intl;
-  AccessibilityAnnouncer.announce(intl.formatToPlainString(require(1236) /* getSystemLocale */.t["/+7xky"], { username: user.username }));
-  const result = importAll(16692).showAcceptedNotification(user);
+  const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+  const intl = getSystemLocale.intl;
+  AccessibilityAnnouncer.announce(intl.formatToPlainString(getSystemLocale.t["/+7xky"], { username: user.username }));
+  const result = showPendingNotificationAll.showAcceptedNotification(user);
 }
+const RelationshipTypes = ME.RelationshipTypes;
+initializeDefault;
 let prototype = function RelationshipManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { RELATIONSHIP_ADD: handleRelationshipAdd, FRIEND_REQUEST_ACCEPTED: handleFriendRequestAccepted };
@@ -34,6 +40,6 @@ let prototype = function RelationshipManager() {
 class prototype extends tmp2 {
 }
 prototype = new prototype();
-let result = require("getSystemLocale").fileFinishedImporting("modules/relationships/RelationshipManager.tsx");
+let result = set.fileFinishedImporting("modules/relationships/RelationshipManager.tsx");
 
 export default prototype;

@@ -1,27 +1,24 @@
-// Module ID: 9820
-// Function ID: 9821
+// Module ID: 9859
+// Function ID: 9860
 // Name: Scope
-// Dependencies: [19, 17, 21, 4661, 1236, 7341, 712, 4335, 4734, 7127, 4374, 8770, 4375, 2]
+// Dependencies: [19, 17, 21, 4668, 1236, 7379, 712, 4339, 4739, 7165, 4378, 8807, 4379, 2]
 // Exports: default
 
-// Module 9820 (Scope)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9859 (Scope)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function Scope(arg0) {
-  let error;
-  let isFake;
-  let text;
   ({ text, error, isFake } = arg0);
   const tmp = callback2();
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   const string = intl.string;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (isFake) {
     let stringResult = string(t.OX8EMU);
     let tmp6 = tmp2;
@@ -40,12 +37,12 @@ function Scope(arg0) {
   if (isFake) {
     obj = { style: null, color: null, size: "refresh_sm" };
     obj[0] = tmp.fakeScopeIcon;
-    obj[1] = importDefault(712).colors.TEXT_MUTED;
-    let tmp10Result = tmp10(tmp6(7341).CircleXIcon, obj);
+    obj[1] = ThemesDefault.colors.TEXT_MUTED;
+    let tmp10Result = tmp10(tmp6(7379).CircleXIcon, obj);
   } else {
-    const obj1 = { color: null, size: "refresh_sm" };
-    obj1[0] = importDefault(712).colors.TEXT_MUTED;
-    tmp10Result = tmp10(tmp6(4335).CircleCheckIcon, obj1);
+    obj1 = { color: null, size: "refresh_sm" };
+    obj1[0] = ThemesDefault.colors.TEXT_MUTED;
+    tmp10Result = tmp10(tmp6(4339).CircleCheckIcon, obj1);
   }
   obj[3] = tmp10Result;
   const items = [closure_4(View, obj), ];
@@ -54,12 +51,12 @@ function Scope(arg0) {
   if (isFake) {
     str3 = "text-muted";
   }
-  const items1 = [closure_4(tmp6(4734).Text, { variant: "text-md/normal", color: str3, children: text }), ];
+  const items1 = [closure_4(tmp6(4739).Text, { variant: "text-md/normal", color: str3, children: text }), ];
   tmp10Result = null;
   if (null != error) {
     const obj3 = { variant: "text-xs/normal", children: null };
     obj3[1] = error;
-    tmp10Result = tmp10(tmp6(4734).Text, obj3);
+    tmp10Result = tmp10(tmp6(4739).Text, obj3);
   }
   items1[1] = tmp10Result;
   obj2[1] = items1;
@@ -67,16 +64,12 @@ function Scope(arg0) {
   obj[3] = items;
   return closure_5(View, obj);
 }
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ scopesContainer: { flexDirection: "column", gap: 16 }, scopes: { flexDirection: "column", gap: 16 }, scopeContainer: { flexDirection: "row" }, scope: { flex: 1, flexDirection: "column", justifyContent: "center" }, iconWrapper: { marginRight: 12, width: 20, height: 20 }, fakeScopeIcon: { opacity: 0.6 } });
-const result = require("jsxProd").fileFinishedImporting("modules/oauth2/native/AuthorizeScopes.tsx");
+const result = require("set").fileFinishedImporting("modules/oauth2/native/AuthorizeScopes.tsx");
 
 export default function AuthorizeScopes(accountScopes) {
-  let application;
-  let importDefault;
-  let integrationType;
-  let isTrustedName;
-  let requestedScopes;
   accountScopes = accountScopes.accountScopes;
   ({ requestedScopes, errors: importDefault, isTrustedName } = accountScopes);
   ({ application, integrationType } = accountScopes);
@@ -93,9 +86,9 @@ export default function AuthorizeScopes(accountScopes) {
     } else {
       tmp4 = tmp14;
     }
-    let hasItem = integrationType === tmp4(8770).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === tmp4(8807).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(tmp4(4375).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(tmp4(4379).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     let obj = { style: null, children: null };
     obj[0] = tmp.scopesContainer;
@@ -104,18 +97,18 @@ export default function AuthorizeScopes(accountScopes) {
     obj = { application: null };
     obj[0] = application.name;
     obj[2] = intl.format(_1Hz_Sl, obj);
-    const items = [callback(tmp4(4734).Text, obj), ];
-    const obj1 = { style: null, children: null };
+    const items = [callback(tmp4(4739).Text, obj), ];
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.scopes;
     const mapped = accountScopes.map((nextResult) => {
-      let closure_0 = nextResult;
-      const scopeNames = accountScopes(outer1_2[10]).getScopeNames(nextResult, closure_0);
+      closure_0 = nextResult;
+      const scopeNames = accountScopes(closure_1_2[10]).getScopeNames(nextResult, closure_0);
       return scopeNames.map((text) => {
         const obj = { text, error: null };
         let tmp3;
         if (0 === arg1) {
           let first;
-          if (outer1_1 != null) {
+          if (closure_1_1 != null) {
             if (tmp4[closure_0] != null) {
               first = tmp8[0];
             }
@@ -123,7 +116,7 @@ export default function AuthorizeScopes(accountScopes) {
           tmp3 = first;
         }
         obj[1] = tmp3;
-        return outer2_4(outer2_7, obj, "" + closure_0 + "-" + arg1);
+        return closure_2_4(closure_2_7, obj, "" + closure_0 + "-" + arg1);
       });
     });
     const items1 = [mapped.flat(), , ];

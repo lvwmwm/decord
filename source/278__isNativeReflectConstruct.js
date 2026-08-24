@@ -4,7 +4,9 @@
 // Dependencies: [189]
 
 // Module 278 (_isNativeReflectConstruct)
-const require = arg1;
+import _isNativeReflectConstruct from "_isNativeReflectConstruct" /* 189 */;
+
+require = arg1;
 const module = arg2;
 const dependencyMap = arg6;
 arg5.default = {
@@ -19,9 +21,9 @@ arg5.default = {
       } catch (err) {
       }
     } else if (typeof error === "string") {
-      let syntheticError = new require(189) /* _isNativeReflectConstruct */.SyntheticError(error);
+      let syntheticError = new _isNativeReflectConstruct.SyntheticError(error);
     } else {
-      syntheticError = new require(189) /* _isNativeReflectConstruct */.SyntheticError("Unspecified error");
+      syntheticError = new _isNativeReflectConstruct.SyntheticError("Unspecified error");
     }
   }
 };

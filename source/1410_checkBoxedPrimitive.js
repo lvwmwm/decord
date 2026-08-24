@@ -5,6 +5,11 @@
 // Exports: isAnyArrayBuffer, isArrayBuffer, isArrayBufferView, isAsyncFunction, isBigInt64Array, isBigIntObject, isBigUint64Array, isBooleanObject, isBoxedPrimitive, isDataView, isFloat32Array, isFloat64Array, isGeneratorObject, isInt16Array, isInt32Array, isInt8Array, isMap, isMapIterator, isNumberObject, isPromise, isSet, isSetIterator, isSharedArrayBuffer, isStringObject, isSymbolObject, isUint16Array, isUint32Array, isUint8Array, isUint8ClampedArray, isWeakMap, isWeakSet, isWebAssemblyCompiledModule
 
 // Module 1410 (checkBoxedPrimitive)
+import isArguments from "isArguments" /* 1411 */;
+import isGeneratorFunction from "isGeneratorFunction" /* 1413 */;
+import isTypedArray from "isTypedArray" /* 1416 */;
+import _mod1417 from "module_1417" /* 1417 */;
+
 function checkBoxedPrimitive(obj, closure_6) {
   if (typeof obj !== "object") {
     return false;
@@ -114,19 +119,19 @@ if (typeof SharedArrayBuffer !== "undefined") {
 }
 const items = ["isProxy", "isExternal", "isModuleNamespaceObject"];
 const item = items.forEach((arg0) => {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   Object.defineProperty(exports, arg0, {
     enumerable: false,
     value() {
-      const error = new Error(closure_0 + " is not supported in userland");
+      error = new Error(closure_0 + " is not supported in userland");
       throw error;
     }
   });
 });
 
-export const isArgumentsObject = require("isArguments");
-export const isGeneratorFunction = require("isGeneratorFunction");
-export const isTypedArray = require("isTypedArray");
+export const isArgumentsObject = isArguments;
+export { isGeneratorFunction };
+export { isTypedArray };
 export const isPromise = function isPromise(obj) {
   let tmp = typeof Promise !== "undefined";
   if (typeof Promise !== "undefined") {
@@ -147,7 +152,7 @@ export const isArrayBufferView = function isArrayBufferView(arg0) {
     }
     return isViewResult;
   }
-  isViewResult = require(1416) /* isTypedArray */(arg0);
+  isViewResult = isTypedArray(arg0);
   if (!isViewResult) {
     const _DataView = DataView;
     if (typeof DataView === "undefined") {
@@ -161,37 +166,37 @@ export const isArrayBufferView = function isArrayBufferView(arg0) {
   }
 };
 export const isUint8Array = function isUint8Array(arg0) {
-  return "Uint8Array" === require(1417)(arg0);
+  return "Uint8Array" === _mod1417(arg0);
 };
 export const isUint8ClampedArray = function isUint8ClampedArray(arg0) {
-  return "Uint8ClampedArray" === require(1417)(arg0);
+  return "Uint8ClampedArray" === _mod1417(arg0);
 };
 export const isUint16Array = function isUint16Array(arg0) {
-  return "Uint16Array" === require(1417)(arg0);
+  return "Uint16Array" === _mod1417(arg0);
 };
 export const isUint32Array = function isUint32Array(arg0) {
-  return "Uint32Array" === require(1417)(arg0);
+  return "Uint32Array" === _mod1417(arg0);
 };
 export const isInt8Array = function isInt8Array(arg0) {
-  return "Int8Array" === require(1417)(arg0);
+  return "Int8Array" === _mod1417(arg0);
 };
 export const isInt16Array = function isInt16Array(arg0) {
-  return "Int16Array" === require(1417)(arg0);
+  return "Int16Array" === _mod1417(arg0);
 };
 export const isInt32Array = function isInt32Array(arg0) {
-  return "Int32Array" === require(1417)(arg0);
+  return "Int32Array" === _mod1417(arg0);
 };
 export const isFloat32Array = function isFloat32Array(arg0) {
-  return "Float32Array" === require(1417)(arg0);
+  return "Float32Array" === _mod1417(arg0);
 };
 export const isFloat64Array = function isFloat64Array(arg0) {
-  return "Float64Array" === require(1417)(arg0);
+  return "Float64Array" === _mod1417(arg0);
 };
 export const isBigInt64Array = function isBigInt64Array(arg0) {
-  return "BigInt64Array" === require(1417)(arg0);
+  return "BigInt64Array" === _mod1417(arg0);
 };
 export const isBigUint64Array = function isBigUint64Array(arg0) {
-  return "BigUint64Array" === require(1417)(arg0);
+  return "BigUint64Array" === _mod1417(arg0);
 };
 export const isMap = function isMap(arg0) {
   if (typeof Map === "undefined") {

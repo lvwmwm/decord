@@ -1,18 +1,22 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9604
+// Function ID: 9605
 // Name: useDefaultAppLauncherWidth
-// Dependencies: [6951, 1494, 9566, 2]
+// Dependencies: [6989, 1494, 9603, 2]
 // Exports: useDefaultAppLauncherWidth
 
-// Module 9567 (useDefaultAppLauncherWidth)
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
+// Module 9604 (useDefaultAppLauncherWidth)
+import set from "set" /* 2 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9603 */;
 
-const result = require("AppLauncherEntrypoint").fileFinishedImporting("modules/app_launcher/native/hooks/useDefaultAppLauncherWidth.tsx");
+const ACTION_SHEET_MAX_WIDTH = ACTION_SHEET_START_HEIGHT_RATIO.ACTION_SHEET_MAX_WIDTH;
+const result = set.fileFinishedImporting("modules/app_launcher/native/hooks/useDefaultAppLauncherWidth.tsx");
 
 export const useDefaultAppLauncherWidth = function useDefaultAppLauncherWidth(TEXT) {
-  const width = importDefault(1494)().width;
+  const width = useWindowDimensionsDefault().width;
   let bound = width;
-  if (TEXT !== require(9566) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT) {
+  if (TEXT !== AppLauncherEntrypoint.AppLauncherEntrypoint.TEXT) {
     const _Math = Math;
     bound = Math.min(width, ACTION_SHEET_MAX_WIDTH);
   }

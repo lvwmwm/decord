@@ -1,12 +1,17 @@
-// Module ID: 8761
-// Function ID: 8762
+// Module ID: 8798
+// Function ID: 8799
 // Name: send
-// Dependencies: [676, 8762, 8752, 8751, 2]
+// Dependencies: [676, 8799, 8789, 8788, 2]
 
-// Module 8761 (send)
-import { RPCCloseCodes } from "ME";
-import "checkRpcVersion";
+// Module 8798 (send)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import HANDSHAKEDefault from "HANDSHAKE" /* 8788 */;
+import prototypeDefault from "prototype" /* 8789 */;
+import checkRpcVersionDefault from "checkRpcVersion" /* 8799 */;
 
+const RPCCloseCodes = ME.RPCCloseCodes;
+checkRpcVersionDefault;
 class WindowProxySocket extends tmp2 {
   constructor(arg0) {
     ({ postMessageToRPCClient, encoding, logger } = global);
@@ -65,7 +70,7 @@ prototype["send"] = function send(arg0) {
   if (onSendingToRPCClient != null) {
     onSendingToRPCClient(arg0, self.id);
   }
-  const items = [importDefault(8751).FRAME, arg0];
+  const items = [HANDSHAKEDefault.FRAME, arg0];
   const result = self.postMessageToRPCClient(items, self.source.origin);
 };
 prototype["close"] = function close(arg0, arg1) {
@@ -78,6 +83,6 @@ prototype["close"] = function close(arg0, arg1) {
   }
   self.closed = true;
 };
-let result = require("prototype").fileFinishedImporting("modules/rpc/transports/PostMessageProxySocket.tsx");
+let result = set.fileFinishedImporting("modules/rpc/transports/PostMessageProxySocket.tsx");
 
 export default WindowProxySocket;

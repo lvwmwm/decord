@@ -4,7 +4,11 @@
 // Dependencies: [936, 939, 940]
 
 // Module 938 (extractClientInfo)
-const require = arg1;
+import isJsonRpcNotification from "isJsonRpcNotification" /* 936 */;
+import weakMap from "weakMap" /* 939 */;
+import _mod940 from "module_940" /* 940 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function extractClientInfo(requestInfo) {
   let remoteAddress;
@@ -108,27 +112,25 @@ arg5.buildServerAttributesFromInfo = function buildServerAttributesFromInfo(serv
   }
   const obj = {};
   if (name) {
-    obj[require(940).MCP_SERVER_NAME_ATTRIBUTE] = serverInfo.name;
+    obj[_mod940.MCP_SERVER_NAME_ATTRIBUTE] = serverInfo.name;
   }
   let title;
   if (serverInfo != null) {
     title = serverInfo.title;
   }
   if (title) {
-    obj[require(940).MCP_SERVER_TITLE_ATTRIBUTE] = serverInfo.title;
+    obj[_mod940.MCP_SERVER_TITLE_ATTRIBUTE] = serverInfo.title;
   }
   let version;
   if (serverInfo != null) {
     version = serverInfo.version;
   }
   if (version) {
-    obj[require(940).MCP_SERVER_VERSION_ATTRIBUTE] = serverInfo.version;
+    obj[_mod940.MCP_SERVER_VERSION_ATTRIBUTE] = serverInfo.version;
   }
   return obj;
 };
 arg5.buildTransportAttributes = function buildTransportAttributes(transport, extra) {
-  let mcpTransport;
-  let networkTransport;
   let sessionId;
   if (transport) {
     if ("sessionId" in transport) {
@@ -173,13 +175,13 @@ arg5.buildTransportAttributes = function buildTransportAttributes(transport, ext
     obj = { mcpTransport: "unknown", networkTransport: "unknown" };
   }
   ({ mcpTransport, networkTransport } = obj);
-  let obj4 = require(939) /* weakMap */;
+  let obj4 = weakMap;
   const clientInfoForTransport = obj4.getClientInfoForTransport(transport);
   let name1;
   if (clientInfoForTransport != null) {
     name1 = clientInfoForTransport.name;
   }
-  const obj1 = {};
+  obj1 = {};
   if (name1) {
     obj1["mcp.client.name"] = clientInfoForTransport.name;
   }
@@ -249,9 +251,9 @@ arg5.buildTransportAttributes = function buildTransportAttributes(transport, ext
     port = obj6;
   }
   const merged2 = Object.assign(port);
-  obj4[require(940).MCP_TRANSPORT_ATTRIBUTE] = mcpTransport;
-  obj4[require(940).NETWORK_TRANSPORT_ATTRIBUTE] = networkTransport;
-  obj4[require(940).NETWORK_PROTOCOL_VERSION_ATTRIBUTE] = "2.0";
+  obj4[_mod940.MCP_TRANSPORT_ATTRIBUTE] = mcpTransport;
+  obj4[_mod940.NETWORK_TRANSPORT_ATTRIBUTE] = networkTransport;
+  obj4[_mod940.NETWORK_PROTOCOL_VERSION_ATTRIBUTE] = "2.0";
   let tmp22 = protocolVersionForTransport;
   if (protocolVersionForTransport) {
     const obj7 = {};
@@ -285,7 +287,7 @@ arg5.extractSessionDataFromInitializeRequest = function extractSessionDataFromIn
         }
       }
       obj.clientInfo = obj;
-      tmpResult = require(936) /* isJsonRpcNotification */;
+      tmpResult = isJsonRpcNotification;
     }
   }
   return obj;
@@ -311,13 +313,13 @@ arg5.extractSessionDataFromInitializeResponse = function extractSessionDataFromI
         }
       }
       obj.serverInfo = obj;
-      tmpResult = require(936) /* isJsonRpcNotification */;
+      tmpResult = isJsonRpcNotification;
     }
   }
   return obj;
 };
 arg5.getClientAttributes = function getClientAttributes(transport) {
-  let obj = require(939) /* weakMap */;
+  let obj = weakMap;
   const clientInfoForTransport = obj.getClientInfoForTransport(transport);
   let name;
   if (clientInfoForTransport != null) {
@@ -344,7 +346,7 @@ arg5.getClientAttributes = function getClientAttributes(transport) {
   return obj;
 };
 arg5.getServerAttributes = function getServerAttributes(transport) {
-  let obj = require(939) /* weakMap */;
+  let obj = weakMap;
   const sessionDataForTransport = obj.getSessionDataForTransport(transport);
   let serverInfo;
   if (sessionDataForTransport != null) {

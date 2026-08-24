@@ -1,22 +1,24 @@
-// Module ID: 12784
-// Function ID: 12785
+// Module ID: 12839
+// Function ID: 12840
 // Name: getCanSendInvite
-// Dependencies: [676, 10917, 7260, 10918, 10919, 10920, 2]
+// Dependencies: [676, 10956, 7298, 10957, 10958, 10959, 2]
 // Exports: getCanSendInvite
 
-// Module 12784 (getCanSendInvite)
-import ME from "ME";
+// Module 12839 (getCanSendInvite)
+import set from "set" /* 2 */;
+import resultDefault from "result" /* 10956 */;
+import getPartySize from "getPartySize" /* 10957 */;
+import hasPartySize from "hasPartySize" /* 10958 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
 ({ ActivityFlags: c3, ActivityActionTypes: c4 } = ME);
-const result = require("hasFlag").fileFinishedImporting("modules/activities/utils/getCanSendInvite.tsx");
+const result = set.fileFinishedImporting("modules/activities/utils/getCanSendInvite.tsx");
 
 export const getCanSendInvite = function getCanSendInvite(findActivityResult, author, application, id1) {
   if (author.author.id === id1) {
     return false;
   } else {
-    if (importDefault(10917)(findActivityResult, author, application.id)) {
+    if (resultDefault(findActivityResult, author, application.id)) {
       const activity = author.activity;
       let type;
       if (activity != null) {
@@ -24,15 +26,15 @@ export const getCanSendInvite = function getCanSendInvite(findActivityResult, au
       }
       if (type !== constants2.JOIN_REQUEST) {
         return false;
-      } else if (tmp11(7260)(findActivityResult, constants.JOIN)) {
-        const partySize = require(10918) /* getPartySize */.getPartySize(findActivityResult);
-        const obj = require(10918) /* getPartySize */;
+      } else if (tmp11(7298)(findActivityResult, constants.JOIN)) {
+        const partySize = getPartySize.getPartySize(findActivityResult);
+        const obj = getPartySize;
         const tmp5 = require;
-        const hasPartySizeResult = require(10919) /* hasPartySize */.hasPartySize(partySize);
+        const hasPartySizeResult = hasPartySize.hasPartySize(partySize);
         let isPartyFullResult = !hasPartySizeResult;
         if (hasPartySizeResult) {
-          isPartyFullResult = tmp5(10920).isPartyFull(partySize);
-          const tmp5Result = tmp5(10920);
+          isPartyFullResult = tmp5(10959).isPartyFull(partySize);
+          const tmp5Result = tmp5(10959);
         }
         return !isPartyFullResult;
       } else {

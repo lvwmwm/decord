@@ -1,12 +1,16 @@
-// Module ID: 16699
-// Function ID: 16700
+// Module ID: 16795
+// Function ID: 16796
 // Name: _initialize
-// Dependencies: [1995, 5038, 11511, 2]
+// Dependencies: [1996, 5043, 11560, 2]
 
-// Module 16699 (_initialize)
-import { subscribeToIntlLoadingSuccess as closure_2 } from "_setAppLocale";
-import "initialize";
+// Module 16795 (_initialize)
+import set from "set" /* 2 */;
+import _setAppLocale from "_setAppLocale" /* 1996 */;
+import initializeDefault from "initialize" /* 5043 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 11560 */;
 
+let closure_2 = _setAppLocale.subscribeToIntlLoadingSuccess;
+initializeDefault;
 class SearchTokensManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -17,7 +21,7 @@ class SearchTokensManager extends tmp2 {
 }
 const prototype = SearchTokensManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  this._unsubscribeIntlLoadingStore = callback(require(11511) /* SearchTokenTypes */.refreshSearchTokens);
+  this._unsubscribeIntlLoadingStore = callback(SearchTokenTypes.refreshSearchTokens);
 };
 prototype["_terminate"] = function _terminate() {
   const _unsubscribeIntlLoadingStore = this._unsubscribeIntlLoadingStore;
@@ -26,6 +30,6 @@ prototype["_terminate"] = function _terminate() {
   }
 };
 const searchTokensManager = new SearchTokensManager();
-let result = require("SearchTokenTypes").fileFinishedImporting("modules/search/managers/SearchTokensManager.tsx");
+let result = set.fileFinishedImporting("modules/search/managers/SearchTokensManager.tsx");
 
 export default searchTokensManager;

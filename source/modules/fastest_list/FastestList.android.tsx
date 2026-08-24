@@ -1,56 +1,26 @@
-// Module ID: 8636
-// Function ID: 8637
-// Dependencies: [377, 19, 21, 4115, 8637, 6952, 8638, 8639, 8641, 8642, 8644, 8647, 8648, 8652, 2]
+// Module ID: 8673
+// Function ID: 8674
+// Dependencies: [377, 19, 21, 4119, 8674, 6990, 8675, 8676, 8678, 8679, 8681, 8684, 8685, 8689, 2]
 
-// Module 8636
-import "_readOnlyError";
-import importAllResult from "noop";
-import jsxProd from "jsxProd";
-import animatedComponent from "__INTERNAL_VIEW_CONFIG";
-import importDefaultResult1 from "module_4115";
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
-import BottomSheetModal from "BottomSheetModal";
-import importDefaultResult2 from "module_4115";
+// Module 8673
+import _readOnlyErrorDefault from "_readOnlyError" /* 377 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8674 */;
+import importAllResult from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
+import importDefaultResult1 from "module_4119" /* 4119 */;
+import BottomSheetModal from "BottomSheetModal" /* 6990 */;
 
-let c4;
-let c5;
-let closure_6;
 const require = arg1;
+_readOnlyErrorDefault;
 let c3 = importAllResult;
 ({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
+const animatedComponent = importDefaultResult1.createAnimatedComponent(__INTERNAL_VIEW_CONFIGDefault);
+let closure_7 = importDefaultResult1.createAnimatedComponent(__INTERNAL_VIEW_CONFIGDefault);
 let closure_8 = BottomSheetModal.createBottomSheetScrollableComponent(require("BottomSheetModal").SCROLLABLE_TYPE.SCROLLVIEW, animatedComponent);
 let c9 = 0;
+const importDefaultResult2 = importDefaultResult1;
 const forwardRefResult = importAllResult.forwardRef(function FastestList(estimatedListSize, ref) {
-  let inActionSheet;
-  let itemSize;
-  let keyboardDismissMode;
-  let listFooterAlwaysMounted;
-  let listFooterSize;
-  let listHeaderAlwaysMounted;
-  let listHeaderSize;
-  let marginEnd;
-  let marginStart;
-  let onLayout;
-  let onScroll;
-  let onScrollBeginDrag;
-  let onScrollEndDrag;
-  let placeholderConfig;
-  let placeholdersForceEnabled;
-  let renderAhead;
-  let renderItem;
-  let renderListFooter;
-  let renderListHeader;
-  let renderSectionFooter;
-  let renderSectionHeader;
-  let scrollReporting;
-  let sectionFooterSize;
-  let sectionHeaderSize;
-  let sections;
-  let showsHorizontalScrollIndicator;
-  let style;
-  let style2;
-  let wrapChildren;
-  let closure_0 = estimatedListSize;
+  closure_0 = estimatedListSize;
   const enabled = estimatedListSize.enabled;
   let tmp = undefined === enabled;
   if (!tmp) {
@@ -112,14 +82,11 @@ const forwardRefResult = importAllResult.forwardRef(function FastestList(estimat
         flag = false;
       }
       if (null != ref.current) {
-        const Commands = outer1_0(outer1_2[4]).Commands;
+        const Commands = closure_1_0(closure_1_2[4]).Commands;
         Commands.scrollToTop(tmp.current, flag);
       }
     },
     scrollToLocation(paddingStart) {
-      let animated;
-      let item;
-      let section;
       ({ section, item, animated } = paddingStart);
       if (animated === undefined) {
         animated = false;
@@ -129,7 +96,7 @@ const forwardRefResult = importAllResult.forwardRef(function FastestList(estimat
         num = 0;
       }
       if (null != ref.current) {
-        const Commands = outer1_0(outer1_2[4]).Commands;
+        const Commands = closure_1_0(closure_1_2[4]).Commands;
         Commands.scrollToLocation(tmp.current, section, item, animated, num);
       }
     }
@@ -151,8 +118,8 @@ const forwardRefResult = importAllResult.forwardRef(function FastestList(estimat
     if (null != listId) {
       str = listId;
     }
-    const outer1_9 = tmp + 1;
-    return "" + str + "-" + +outer1_9;
+    closure_9 = tmp + 1;
+    return "" + str + "-" + +closure_9;
   }, items2);
   const tmp17 = listId(ref[9])(placeholderConfig);
   const tmp19 = listId(ref[10])({ fastestListId: memo, itemSize, keyExtractor: estimatedListSize.keyExtractor, listFooterSize, listHeaderSize, sections, sectionHeaderSize, sectionFooterSize });
@@ -165,7 +132,7 @@ const forwardRefResult = importAllResult.forwardRef(function FastestList(estimat
         tmp10Result = tmp10(tmp11[4]);
       }
     }
-    tmp10Result = __INTERNAL_VIEW_CONFIG;
+    tmp10Result = closure_7;
   }
   let obj = { accessibilityLabel: estimatedListSize.accessibilityLabel, horizontal: tmp2, insetStart: num, insetEnd: num2, keyboardDismissOnDrag: null, onUnexpectedItemSize: null, onLayout: null, onScroll: null, onScrollBeginDrag: null, onScrollEndDrag: null, onVisibleItemsChanged: null, placeholderConfig: null, ref: null, renderAhead: null, scrollEventThrottle: null, sectionsVersioned: null, showsHorizontalScrollIndicator: null, showsVerticalScrollIndicator: null, style: null };
   let tmp23 = "on-drag" === keyboardDismissMode;
@@ -202,6 +169,6 @@ const forwardRefResult = importAllResult.forwardRef(function FastestList(estimat
   const merged = Object.assign(estimatedListSize);
   tmp22Result = tmp22(tmp10Result, obj);
 });
-const result = require("jsxProd").fileFinishedImporting("modules/fastest_list/FastestList.android.tsx");
+const result = require("set").fileFinishedImporting("modules/fastest_list/FastestList.android.tsx");
 
 export default forwardRefResult;

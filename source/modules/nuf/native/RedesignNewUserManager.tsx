@@ -1,19 +1,19 @@
-// Module ID: 16658
-// Function ID: 16659
+// Module ID: 16754
+// Function ID: 16755
 // Name: prototype
-// Dependencies: [11850, 4494, 5038, 8918, 16659, 5260, 16661, 2007, 16660, 500, 4229, 2]
+// Dependencies: [11899, 4498, 5043, 8955, 16755, 5265, 16757, 2008, 16756, 500, 4233, 2]
 
-// Module 16658 (prototype)
-import ContactSyncModes from "ContactSyncModes";
-import initialize from "initialize";
-import "initialize";
+// Module 16754 (prototype)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 5043 */;
+import ContactSyncModes from "ContactSyncModes" /* 11899 */;
+import closure_5 from "initialize" /* 4498 */;
 
-let c3;
-let c4;
 ({ initialize: c3, ContactSyncModes: c4 } = ContactSyncModes);
+initializeDefault;
 let prototype = function RedesignNewUserManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const require = applyArgumentsResult;
+  require = applyArgumentsResult;
   applyArgumentsResult._onboardingStepIndex = -1;
   applyArgumentsResult._lastShownStepIndex = -1;
   applyArgumentsResult.actions = {
@@ -31,8 +31,6 @@ let prototype = function RedesignNewUserManager() {
     const tmp2 = table;
     const nextOnboardingStep = applyArgumentsResult(table[4]).getNextOnboardingStep(false, -1, -1);
     nextOnboardingStep.then((arg0) => {
-      let lastShownStepIndex;
-      let onboardingStepIndex;
       ({ lastShownStepIndex, onboardingStepIndex } = arg0);
       let obj = callback(table[4]);
       const keyForOnboardingStep = obj.getKeyForOnboardingStep(onboardingStepIndex);
@@ -58,11 +56,11 @@ let prototype = function RedesignNewUserManager() {
     applyArgumentsResult.startOnboarding();
   };
   applyArgumentsResult.handleConnectionOpen = function handleConnectionOpen() {
-    if (null != outer1_5.getType()) {
+    if (null != closure_1_5.getType()) {
       if (!obj.isModalOpen()) {
         applyArgumentsResult.startOnboarding();
       }
-      obj = applyArgumentsResult(outer1_2[10]);
+      obj = applyArgumentsResult(closure_1_2[10]);
     }
   };
   return applyArgumentsResult;
@@ -70,6 +68,6 @@ let prototype = function RedesignNewUserManager() {
 class prototype extends tmp3 {
 }
 prototype = new prototype();
-const result = require("initialize").fileFinishedImporting("modules/nuf/native/RedesignNewUserManager.tsx");
+const result = set.fileFinishedImporting("modules/nuf/native/RedesignNewUserManager.tsx");
 
 export default prototype;

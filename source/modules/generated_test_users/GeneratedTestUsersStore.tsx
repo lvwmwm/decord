@@ -1,11 +1,12 @@
-// Module ID: 13962
-// Function ID: 13963
+// Module ID: 14030
+// Function ID: 14031
 // Name: handleAddUser
 // Dependencies: [1930, 589, 709, 2]
 
-// Module 13962 (handleAddUser)
-import createdAt from "createdAt";
-import { PersistedStore } from "initialize";
+// Module 14030 (handleAddUser)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "createdAt" /* 1930 */;
 
 function handleAddUser(id) {
   if (null == closure_1.users) {
@@ -14,9 +15,10 @@ function handleAddUser(id) {
     tmp.users = map;
   }
   const users = tmp.users;
-  const result = users.set(id.id, new createdAt(id));
+  const result = users.set(id.id, new closure_0(id));
 }
 let closure_1 = { pools: null, users: null };
+const PersistedStore = initializeDefault.PersistedStore;
 class GeneratedTestUsersStore extends PersistedStore {
 }
 const prototype = GeneratedTestUsersStore.prototype;
@@ -31,7 +33,7 @@ prototype["initialize"] = function initialize(pools) {
     if (null != pools.users) {
       const _Map2 = Map;
       const _Object2 = Object;
-      const map1 = new Map(Object.entries(pools.users));
+      map1 = new Map(Object.entries(pools.users));
       closure_1.users = map1;
     }
   }
@@ -52,7 +54,7 @@ prototype["getState"] = function getState() {
   return obj;
 };
 prototype["getUsersForPool"] = function getUsersForPool(id) {
-  let createdAt = id;
+  closure_0 = id;
   const users = closure_1.users;
   let items;
   if (users != null) {
@@ -62,10 +64,10 @@ prototype["getUsersForPool"] = function getUsersForPool(id) {
     items = [];
   }
   return Array.from(items).filter((id) => {
-    const pools = outer1_1.pools;
+    const pools = closure_1_1.pools;
     let hasItem;
     if (pools != null) {
-      const value = pools.get(createdAt);
+      const value = pools.get(closure_0);
       if (value != null) {
         const userIds = value.userIds;
         hasItem = userIds.includes(id.id);
@@ -107,10 +109,8 @@ prototype["getPools"] = function getPools() {
 };
 GeneratedTestUsersStore.displayName = "GeneratedTestUsersStore";
 GeneratedTestUsersStore.persistKey = "GeneratedTestUsersStore";
-const generatedTestUsersStore = new GeneratedTestUsersStore(require("dispatcher"), {
+const generatedTestUsersStore = new GeneratedTestUsersStore(dispatcherDefault, {
   GENERATED_POOL_BY_ID_FETCH_SUCCESS: function handleFetchPoolByIdSuccess(arg0) {
-    let pool;
-    let users;
     ({ pool, users } = arg0);
     if (null == closure_1.pools) {
       const _Map = Map;
@@ -148,6 +148,6 @@ const generatedTestUsersStore = new GeneratedTestUsersStore(require("dispatcher"
     tmp = closure_1;
   }
 });
-let result = require("dispatcher").fileFinishedImporting("modules/generated_test_users/GeneratedTestUsersStore.tsx");
+let result = require("set").fileFinishedImporting("modules/generated_test_users/GeneratedTestUsersStore.tsx");
 
 export default generatedTestUsersStore;

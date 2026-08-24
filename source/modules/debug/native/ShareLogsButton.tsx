@@ -1,25 +1,27 @@
-// Module ID: 14874
-// Function ID: 14875
-// Dependencies: [19, 21, 5433, 1236, 9067, 7, 12047, 2]
+// Module ID: 14938
+// Function ID: 14939
+// Dependencies: [19, 21, 5438, 1236, 9104, 7, 12099, 2]
 
-// Module 14874
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 14938
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import ShareIcon from "ShareIcon" /* 12099 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-const memoResult = require("noop").memo(function ShareLogsButton() {
+require = arg1;
+const memoResult = importAllResult.memo(function ShareLogsButton() {
   let obj = { accessibilityLabel: null, onPress: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["Aw+09z"]);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["Aw+09z"]);
   obj[1] = function onPress() {
-    let obj = callback(9067);
-    obj = { message: null };
-    obj[0] = callback(7).stringify();
+    let obj = callback(9104);
+    obj = { message: callback(7).stringify() };
     return obj.showShareActionSheet(obj, "Debug Logs");
   };
-  obj[2] = jsx(require(12047) /* ShareIcon */.ShareIcon, {});
-  return jsx(require(5433) /* PressableBase */.PressableOpacity, { accessibilityLabel: null, onPress: null, children: null });
+  obj[2] = jsx(ShareIcon.ShareIcon, {});
+  return jsx(PressableBase.PressableOpacity, { accessibilityLabel: null, onPress: null, children: null });
 });
-const result = require("PressableBase").fileFinishedImporting("modules/debug/native/ShareLogsButton.tsx");
+const result = require("set").fileFinishedImporting("modules/debug/native/ShareLogsButton.tsx");
 
 export default memoResult;

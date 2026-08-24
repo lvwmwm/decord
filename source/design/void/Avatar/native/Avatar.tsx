@@ -1,38 +1,37 @@
-// Module ID: 13478
-// Function ID: 13479
+// Module ID: 13536
+// Function ID: 13537
 // Name: getStatusSize
-// Dependencies: [19, 17, 676, 1298, 21, 4661, 712, 12125, 13467, 13468, 8402, 8367, 13479, 8401, 13469, 4747, 12461, 12462, 2]
+// Dependencies: [19, 17, 676, 1298, 21, 4668, 712, 12177, 13525, 13526, 8441, 8406, 13537, 8440, 13527, 4752, 12513, 12514, 2]
 
-// Module 13478 (getStatusSize)
-import importAllResult from "noop";
-import { View } from "registerAsset";
-import { StatusTypes } from "ME";
-import STATUS_PADDING from "STATUS_PADDING";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13536 (getStatusSize)
+import ThemesDefault from "Themes" /* 712 */;
+import getDecorationSizeForAvatarSize from "getDecorationSizeForAvatarSize" /* 8406 */;
+import StaticNativeCutoutAvatarImage from "StaticNativeCutoutAvatarImage" /* 12177 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { StatusTypes } from "ME" /* 676 */;
+import STATUS_PADDING from "STATUS_PADDING" /* 1298 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function getStatusSize(arg0) {
-  if (require(12125) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXSMALL !== arg0) {
-    if (tmp(12125).AvatarSizes.XSMALL !== arg0) {
-      if (tmp(12125).AvatarSizes.XSMALL_20 !== arg0) {
-        if (tmp(12125).AvatarSizes.SMALL !== arg0) {
-          if (tmp(12125).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+  if (StaticNativeCutoutAvatarImage.AvatarSizes.XXSMALL !== arg0) {
+    if (tmp(12177).AvatarSizes.XSMALL !== arg0) {
+      if (tmp(12177).AvatarSizes.XSMALL_20 !== arg0) {
+        if (tmp(12177).AvatarSizes.SMALL !== arg0) {
+          if (tmp(12177).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return closure_7.REFRESH_MEDIUM_10;
           } else {
-            if (tmp(12125).AvatarSizes.NORMAL !== arg0) {
-              if (tmp(12125).AvatarSizes.TABS_22 !== arg0) {
-                if (tmp(12125).AvatarSizes.LARGE !== arg0) {
-                  if (tmp(12125).AvatarSizes.LARGE_48 !== arg0) {
-                    if (tmp(12125).AvatarSizes.XLARGE !== arg0) {
-                      if (tmp(12125).AvatarSizes.XLARGE_72 !== arg0) {
-                        if (tmp(12125).AvatarSizes.XXLARGE !== arg0) {
-                          if (tmp(12125).AvatarSizes.PROFILE !== arg0) {
-                            if (tmp(12125).AvatarSizes.YOUBAR_60 !== arg0) {
+            if (tmp(12177).AvatarSizes.NORMAL !== arg0) {
+              if (tmp(12177).AvatarSizes.TABS_22 !== arg0) {
+                if (tmp(12177).AvatarSizes.LARGE !== arg0) {
+                  if (tmp(12177).AvatarSizes.LARGE_48 !== arg0) {
+                    if (tmp(12177).AvatarSizes.XLARGE !== arg0) {
+                      if (tmp(12177).AvatarSizes.XLARGE_72 !== arg0) {
+                        if (tmp(12177).AvatarSizes.XXLARGE !== arg0) {
+                          if (tmp(12177).AvatarSizes.PROFILE !== arg0) {
+                            if (tmp(12177).AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }
@@ -54,45 +53,25 @@ function getStatusSize(arg0) {
 }
 let c3 = importAllResult;
 ({ STATUS_PADDING: closure_6, StatusSizes: error } = STATUS_PADDING);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles((NORMAL) => {
   let obj = { status: { position: "absolute", right: -3, bottom: -3 }, speaking: null, stageSpeaking: null, voiceStatus: null, decoration: null, container: null };
-  obj = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: importDefault(712).colors.STATUS_SPEAKING };
+  obj = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: ThemesDefault.colors.STATUS_SPEAKING };
   obj[1] = obj;
   obj[2] = { position: "absolute", right: -2, bottom: -2 };
-  obj = { width: 24, height: 24, justifyContent: "center", alignItems: "center", backgroundColor: importDefault(712).unsafe_rawColors.RED_400, borderRadius: importDefault(712).radii.md, right: 0, bottom: 0 };
+  obj = { width: 24, height: 24, justifyContent: "center", alignItems: "center", backgroundColor: ThemesDefault.unsafe_rawColors.RED_400, borderRadius: ThemesDefault.radii.md, right: 0, bottom: 0 };
   obj[3] = obj;
-  const obj1 = { position: "absolute", top: null, left: null };
-  const decorationSizeForAvatarSize = require(8367) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
-  obj1[1] = -(decorationSizeForAvatarSize - require(12125) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
-  const obj5 = require(8367) /* getDecorationSizeForAvatarSize */;
-  const decorationSizeForAvatarSize1 = require(8367) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
-  obj1[2] = -(decorationSizeForAvatarSize1 - require(12125) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
+  obj1 = { position: "absolute", top: null, left: null };
+  const decorationSizeForAvatarSize = getDecorationSizeForAvatarSize.getDecorationSizeForAvatarSize(NORMAL);
+  obj1[1] = -(decorationSizeForAvatarSize - StaticNativeCutoutAvatarImage.styles[NORMAL].width) / 2;
+  const obj5 = getDecorationSizeForAvatarSize;
+  const decorationSizeForAvatarSize1 = getDecorationSizeForAvatarSize.getDecorationSizeForAvatarSize(NORMAL);
+  obj1[2] = -(decorationSizeForAvatarSize1 - StaticNativeCutoutAvatarImage.styles[NORMAL].width) / 2;
   obj[4] = obj1;
   obj[5] = { position: "relative" };
   return obj;
 });
 const memoResult = importAllResult.memo((isMobileOnline) => {
-  let accessibilityLabel;
-  let accessible;
-  let avatarDecoration;
-  let avatarStyle;
-  let channel;
-  let cutout;
-  let cutout2;
-  let deaf;
-  let decorationCutout;
-  let disablePlaceholder;
-  let guildId;
-  let isStageCall;
-  let mute;
-  let needsOffscreenAlphaCompositing;
-  let source;
-  let statusStyle;
-  let streaming;
-  let style;
-  let typing;
-  let user;
   ({ channel, streaming } = isMobileOnline);
   if (streaming === undefined) {
     streaming = false;
@@ -138,12 +117,6 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
   callback = tmp3;
   let items = [cutout, autoStatusCutout, flag, flag2, NORMAL, status, typing, statusSizeOverride, tmp3];
   const memo = NORMAL.useMemo(() => {
-    let height;
-    let height2;
-    let height3;
-    let width;
-    let width2;
-    let width3;
     if (null != autoStatusCutout) {
       let diff1 = status;
       let items = statusSizeOverride;
@@ -152,7 +125,7 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
         if (diff1 !== autoStatusCutout.UNKNOWN) {
           diff1 = flag(status[7]).AVATAR_SIZE_MAP[tmp2];
           if (items == null) {
-            items = outer1_11(tmp2);
+            items = closure_1_11(tmp2);
           }
           if (items == null) {
             items = 0;
@@ -191,7 +164,7 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
               let obj5 = flag(status[8]);
               const vRStatusContainerRect = obj5.getVRStatusContainerRect(items);
               ({ width: width2, height: height2 } = vRStatusContainerRect);
-              const obj1 = { nativeCutouts: null };
+              obj1 = { nativeCutouts: null };
               let obj2 = { shape: null, x: null, y: null, width: null, height: null, cornerRadius: null };
               obj2[0] = flag(status[10]).CutoutShape.RoundedRect;
               obj2[1] = diff1 - width2 + result;
@@ -236,7 +209,7 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
     } else {
       const obj6 = { cutout: null, decorationCutout: null };
       obj6[0] = cutout;
-      obj6[1] = flag(status[11]).getDecorationCutoutForAvatarCutout(cutout, -_undefined.decoration.top);
+      obj6[1] = flag(status[11]).getDecorationCutoutForAvatarCutout(cutout, -decoration.decoration.top);
       return obj6;
     }
   }, items);
@@ -280,7 +253,7 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
               }
               let merged1 = null;
               if (null != statusSizeOverride) {
-                let obj1 = { size: null, isMobileOnline: null, isVROnline: null, status: null, streaming: null, style: null };
+                obj1 = { size: null, isMobileOnline: null, isVROnline: null, status: null, streaming: null, style: null };
                 obj1[0] = statusSizeOverride;
                 obj1[1] = flag;
                 obj1[2] = flag2;
@@ -391,7 +364,7 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
     }
   }
 });
-let result = require("ME").fileFinishedImporting("design/void/Avatar/native/Avatar.tsx");
+let result = require("set").fileFinishedImporting("design/void/Avatar/native/Avatar.tsx");
 
 export default memoResult;
 export const AvatarSizes = require("StaticNativeCutoutAvatarImage").AvatarSizes;

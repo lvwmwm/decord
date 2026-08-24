@@ -4,8 +4,9 @@
 // Dependencies: [41, 42, 126]
 
 // Module 163 (PerformanceEntry)
-import PerformanceEntry from "_classCallCheck";
-import setPlatformObject from "setPlatformObject";
+import _createClassDefault from "_createClass" /* 42 */;
+import PerformanceEntry from "_classCallCheck" /* 41 */;
+import setPlatformObject from "setPlatformObject" /* 126 */;
 
 class PerformanceEntry {
   constructor(arg0, arg1) {
@@ -47,7 +48,7 @@ const items = [
     }
   }
 ];
-const tmp2 = require("_createClass")(PerformanceEntry, items);
+const tmp2 = _createClassDefault(PerformanceEntry, items);
 class PerformanceEntry {
   constructor() {
     typeError = new TypeError("Failed to construct 'PerformanceEntry': Illegal constructor");

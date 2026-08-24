@@ -1,29 +1,25 @@
-// Module ID: 11273
-// Function ID: 11274
+// Module ID: 11324
+// Function ID: 11325
 // Name: TrackSectionHeader
-// Dependencies: [11264, 9177, 503, 2]
+// Dependencies: [11315, 9214, 503, 2]
 // Exports: default
 
-// Module 11273 (TrackSectionHeader)
-import handleDismissWithDismissed from "handleDismissWithDismissed";
+// Module 11324 (TrackSectionHeader)
+import encodeProperties from "encodeProperties" /* 503 */;
+import trackImpressionDefault from "trackImpression" /* 9214 */;
+import closure_3 from "handleDismissWithDismissed" /* 11315 */;
 
-const require = arg1;
-const result = require("encodeProperties").fileFinishedImporting("modules/app_launcher/native/screens/home/TrackSectionHeader.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/home/TrackSectionHeader.tsx");
 
 export default function TrackSectionHeader(viewed) {
-  let children;
-  let numItems;
-  let numVisibleItems;
-  let sectionName;
   viewed = viewed.viewed;
   ({ sectionName, numItems, numVisibleItems, children } = viewed);
-  let obj = { type: null, name: null, properties: null };
-  obj[0] = require(503) /* encodeProperties */.ImpressionTypes.VIEW;
-  obj[1] = require(503) /* encodeProperties */.ImpressionNames.APP_LAUNCHER_SECTION;
-  obj = { section_name: sectionName, num_items: numItems, num_visible_items: numVisibleItems, source: handleDismissWithDismissed.entrypoint() };
+  let obj = { type: encodeProperties.ImpressionTypes.VIEW, name: encodeProperties.ImpressionNames.APP_LAUNCHER_SECTION, properties: null };
+  obj = { section_name: sectionName, num_items: numItems, num_visible_items: numVisibleItems, source: closure_3.entrypoint() };
   obj[2] = obj;
   obj = { disableTrack: !viewed };
   const items = [viewed];
-  importDefault(9177)(obj, obj, items);
+  trackImpressionDefault(obj, obj, items);
   return children;
 };

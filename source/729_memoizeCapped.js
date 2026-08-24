@@ -4,7 +4,7 @@
 // Dependencies: [730]
 
 // Module 729 (memoizeCapped)
-import memoizeCapped from "memoizeCapped";
+import memoizeCapped from "memoizeCapped" /* 730 */;
 
 const re0 = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
 const re1 = /\\(\\)?/g;
@@ -16,7 +16,7 @@ export default memoizeCapped((str) => {
   }
   let replaced = str.replace(items, (arg0, arg1, arg2, str) => {
     if (arg2) {
-      let replaced = str.replace(outer1_1, "$1");
+      let replaced = str.replace(closure_1_1, "$1");
     } else {
       replaced = arg1;
       if (!arg1) {

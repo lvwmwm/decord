@@ -1,13 +1,16 @@
-// Module ID: 16389
-// Function ID: 16390
+// Module ID: 16486
+// Function ID: 16487
 // Name: getConsoleConnectingText
 // Dependencies: [676, 1236, 2]
 // Exports: getConsoleConnectingText
 
-// Module 16389 (getConsoleConnectingText)
-import { PlatformTypes } from "ME";
+// Module 16486 (getConsoleConnectingText)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
 
-const result = require("set").fileFinishedImporting("modules/game_console/native/getConsoleConnectingText.tsx");
+const PlatformTypes = ME.PlatformTypes;
+const result = set.fileFinishedImporting("modules/game_console/native/getConsoleConnectingText.tsx");
 
 export const getConsoleConnectingText = function getConsoleConnectingText(stateFromStores1, stateFromStores, arg2) {
   let type;
@@ -23,23 +26,23 @@ export const getConsoleConnectingText = function getConsoleConnectingText(stateF
   }
   if (type === PlatformTypes.XBOX) {
     if (arg2) {
-      const intl4 = require(1236) /* getSystemLocale */.intl;
-      let str2 = intl4.format(require(1236) /* getSystemLocale */.t["ynEs/Y"], {});
+      const intl4 = getSystemLocale.intl;
+      let str2 = intl4.format(getSystemLocale.t["ynEs/Y"], {});
     } else {
       str2 = "Xbox";
       if (tmp4) {
-        const intl3 = require(1236) /* getSystemLocale */.intl;
-        str2 = intl3.string(require(1236) /* getSystemLocale */.t.UjA4HX);
+        const intl3 = getSystemLocale.intl;
+        str2 = intl3.string(getSystemLocale.t.UjA4HX);
       }
     }
   } else if (arg2) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    let str = intl2.format(require(1236) /* getSystemLocale */.t.TZ17Bg, {});
+    const intl2 = getSystemLocale.intl;
+    let str = intl2.format(getSystemLocale.t.TZ17Bg, {});
   } else {
     str = "PS5";
     if (tmp4) {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      str = intl.string(require(1236) /* getSystemLocale */.t.QCw1oW);
+      const intl = getSystemLocale.intl;
+      str = intl.string(getSystemLocale.t.QCw1oW);
     }
   }
 };

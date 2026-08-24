@@ -1,11 +1,15 @@
-// Module ID: 16547
-// Function ID: 16548
+// Module ID: 16642
+// Function ID: 16643
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4289, 7660, 4798, 16548, 16048, 16549, 16550, 8439, 2]
+// Dependencies: [4293, 7698, 4803, 16643, 16146, 16644, 16645, 8478, 2]
 
-// Module 16547 (commonTriggerPointConfiguration)
-const items = [require("experiment"), require("experiment").VoiceChannelHoistingExperiment, require("experiment").HangoutWindowExperiment, require("experiment"), require("experiment"), require("experiment").VoiceChannelBadgeExperiment];
+// Module 16642 (commonTriggerPointConfiguration)
+import experimentDefault from "experiment" /* 4803 */;
+import experimentDefault2 from "experiment" /* 16644 */;
+import experimentDefault3 from "experiment" /* 16645 */;
+
+const items = [experimentDefault, require("experiment").VoiceChannelHoistingExperiment, require("experiment").HangoutWindowExperiment, experimentDefault2, experimentDefault3, require("experiment").VoiceChannelBadgeExperiment];
 const commonTriggerPointConfiguration = new require("registeredExperimentIds").CommonTriggerPointConfiguration(items, require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL, { location: "voice call initiated" });
-const result = require("experiment").fileFinishedImporting("modules/experiments/trigger_points/VoiceCallTriggerPoint.tsx");
+const result = require("set").fileFinishedImporting("modules/experiments/trigger_points/VoiceCallTriggerPoint.tsx");
 
 export const VoiceCallTriggerPoint = commonTriggerPointConfiguration;

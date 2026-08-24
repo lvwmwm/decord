@@ -1,13 +1,14 @@
-// Module ID: 14022
-// Function ID: 14023
+// Module ID: 14090
+// Function ID: 14091
 // Name: set
-// Dependencies: [8932, 2]
+// Dependencies: [8969, 2]
 // Exports: getHideableBadges, getUnhideableBadgeIds
 
-// Module 14022 (set)
-import set from "set";
+// Module 14090 (set)
+import BadgeId from "BadgeId" /* 8969 */;
+import set from "set" /* 2 */;
 
-let items = [require("BadgeId").BadgeId.STAFF];
+let items = [BadgeId.BadgeId.STAFF];
 let set = new Set(items);
 const result = set.fileFinishedImporting("modules/badges/BadgeCustomization.tsx");
 
@@ -16,14 +17,14 @@ export const getUnhideableBadgeIds = function getUnhideableBadgeIds(tenureBadgeH
   if (!tenureBadgeHideable.tenureBadgeHideable) {
     const _Set = Set;
     const items = [];
-    items[HermesBuiltin.arraySpread(set, 0)] = require(8932) /* BadgeId */.BadgeId.PREMIUM_TENURE;
+    items[HermesBuiltin.arraySpread(set, 0)] = BadgeId.BadgeId.PREMIUM_TENURE;
     set = new Set(items);
     const arraySpreadResult = HermesBuiltin.arraySpread(set, 0);
   }
   return set;
 };
 export const getHideableBadges = function getHideableBadges(memo, unhideableBadgeIds) {
-  let closure_0 = unhideableBadgeIds;
+  closure_0 = unhideableBadgeIds;
   const found = memo.filter((owned) => {
     owned = owned.owned;
     if (owned) {

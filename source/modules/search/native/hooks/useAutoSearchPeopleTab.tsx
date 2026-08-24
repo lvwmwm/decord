@@ -1,44 +1,44 @@
-// Module ID: 15943
-// Function ID: 15944
+// Module ID: 16040
+// Function ID: 16041
 // Name: useAutoSearchPeopleTab
-// Dependencies: [19, 11510, 11524, 9637, 11534, 12, 11509, 2]
+// Dependencies: [19, 11559, 11573, 9676, 11583, 12, 11558, 2]
 // Exports: useAutoSearchPeopleTab
 
-// Module 15943 (useAutoSearchPeopleTab)
-import noop from "noop";
-import prototype from "prototype";
-import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_5 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME";
+// Module 16040 (useAutoSearchPeopleTab)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "prototype" /* 11559 */;
+import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_5 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 11573 */;
 
 const require = arg1;
-const result = require("SEARCH_TEXT_INPUT_DEBOUNCE_TIME").fileFinishedImporting("modules/search/native/hooks/useAutoSearchPeopleTab.tsx");
+const result = require("set").fileFinishedImporting("modules/search/native/hooks/useAutoSearchPeopleTab.tsx");
 
 export const useAutoSearchPeopleTab = function useAutoSearchPeopleTab(searchContext, arg1) {
-  let closure_0 = searchContext;
-  let closure_1 = arg1;
+  closure_0 = searchContext;
+  closure_1 = arg1;
   const items = [arg1, searchContext];
   const effect = React.useEffect(() => {
     if (!callback) {
-      const userAffinitiesV2 = searchContext(outer1_2[3]).fetchUserAffinitiesV2();
-      const obj = searchContext(outer1_2[3]);
-      callback(outer1_2[4]).searchPeopleTab(searchContext, "");
-      const obj2 = callback(outer1_2[4]);
+      const userAffinitiesV2 = searchContext(closure_1_2[3]).fetchUserAffinitiesV2();
+      const obj = searchContext(closure_1_2[3]);
+      callback(closure_1_2[4]).searchPeopleTab(searchContext, "");
+      const obj2 = callback(closure_1_2[4]);
     }
   }, items);
   const items1 = [searchContext, arg1];
   const effect1 = React.useEffect(() => {
     if (!callback) {
-      let obj = searchContext(outer1_2[5]);
-      const debounceResult = searchContext(outer1_2[5]).debounce((searchQueryString) => {
-        if (!outer1_4.isAutocompleteVisible(closure_0)) {
-          outer1_1(outer1_2[4]).searchPeopleTab(closure_0, searchQueryString);
-          const obj = outer1_1(outer1_2[4]);
+      let obj = searchContext(closure_1_2[5]);
+      const debounceResult = searchContext(closure_1_2[5]).debounce((searchQueryString) => {
+        if (!closure_1_4.isAutocompleteVisible(closure_0)) {
+          closure_1_1(closure_1_2[4]).searchPeopleTab(closure_0, searchQueryString);
+          const obj = closure_1_1(closure_1_2[4]);
         }
-      }, outer1_5);
-      return callback(outer1_2[6]).subscribeTextInputValue(searchContext, debounceResult);
+      }, closure_1_5);
+      return callback(closure_1_2[6]).subscribeTextInputValue(searchContext, debounceResult);
     }
   }, items1);
   const items2 = [searchContext];
   const effect2 = React.useEffect(() => () => {
-    outer1_1(outer1_2[4]).cleanupPeopleTab(closure_0);
+    closure_1_1(closure_1_2[4]).cleanupPeopleTab(closure_0);
   }, items2);
 };

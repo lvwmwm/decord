@@ -1,11 +1,15 @@
-// Module ID: 16032
-// Function ID: 16033
+// Module ID: 16130
+// Function ID: 16131
 // Name: getSecondsSliderLabel
-// Dependencies: [1236, 3975, 2]
+// Dependencies: [1236, 3978, 2]
 // Exports: getSecondsSliderLabel
 
-// Module 16032 (getSecondsSliderLabel)
-const result = require("set").fileFinishedImporting("utils/SecondsSliderUtils.tsx");
+// Module 16130 (getSecondsSliderLabel)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import tDefault from "t" /* 3978 */;
+
+const result = set.fileFinishedImporting("utils/SecondsSliderUtils.tsx");
 
 export const getSecondsSliderLabel = function getSecondsSliderLabel(rateLimitPerUser, arg1, intl) {
   let flag = arg1;
@@ -14,42 +18,42 @@ export const getSecondsSliderLabel = function getSecondsSliderLabel(rateLimitPer
   }
   let stringResult = intl;
   if (intl === undefined) {
-    intl = require(1236) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1236) /* getSystemLocale */.t.Yl1D84);
+    intl = getSystemLocale.intl;
+    stringResult = intl.string(getSystemLocale.t.Yl1D84);
   }
-  const durationResult = importDefault(3975).duration(rateLimitPerUser, "seconds");
+  const durationResult = tDefault.duration(rateLimitPerUser, "seconds");
   if (durationResult.days() > 0) {
-    const intl6 = require(1236) /* getSystemLocale */.intl;
-    let t = require(1236) /* getSystemLocale */.t;
+    const intl6 = getSystemLocale.intl;
+    let t = getSystemLocale.t;
     t = { days: null };
     t[0] = durationResult.days();
     intl6.formatToPlainString(flag ? t.GBLpQ8 : t["k2UNz+"], t);
     const tmp16 = flag ? t.GBLpQ8 : t["k2UNz+"];
   } else if (durationResult.hours() > 0) {
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    let t1 = require(1236) /* getSystemLocale */.t;
+    const intl5 = getSystemLocale.intl;
+    let t1 = getSystemLocale.t;
     t1 = { hours: null };
     t1[0] = durationResult.hours();
     intl5.formatToPlainString(flag ? t1.rhY1Rs : t1.xCjYxK, t1);
     const tmp13 = flag ? t1.rhY1Rs : t1.xCjYxK;
   } else if (durationResult.minutes() > 0) {
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    let t2 = require(1236) /* getSystemLocale */.t;
+    const intl4 = getSystemLocale.intl;
+    let t2 = getSystemLocale.t;
     t2 = { minutes: null };
     t2[0] = durationResult.minutes();
     intl4.formatToPlainString(flag ? t2["XIGt+W"] : t2.iXLF9W, t2);
     const tmp10 = flag ? t2["XIGt+W"] : t2.iXLF9W;
   } else if (rateLimitPerUser > 0) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    let t3 = require(1236) /* getSystemLocale */.t;
+    const intl3 = getSystemLocale.intl;
+    let t3 = getSystemLocale.t;
     t3 = { seconds: null };
     t3[0] = durationResult.seconds();
     intl3.formatToPlainString(flag ? t3.pyvjRp : t3.geSp4K, t3);
     const tmp7 = flag ? t3.pyvjRp : t3.geSp4K;
   } else {
     if (flag) {
-      const intl2 = require(1236) /* getSystemLocale */.intl;
-      stringResult = intl2.string(require(1236) /* getSystemLocale */.t.Yl1D84);
+      const intl2 = getSystemLocale.intl;
+      stringResult = intl2.string(getSystemLocale.t.Yl1D84);
     }
     return stringResult;
   }

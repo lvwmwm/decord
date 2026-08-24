@@ -1,13 +1,15 @@
-// Module ID: 5026
-// Function ID: 5027
+// Module ID: 5031
+// Function ID: 5032
 // Name: isForwardMessage
 // Dependencies: [676, 2]
 // Exports: default, isForwardServerMessage
 
-// Module 5026 (isForwardMessage)
-import { MessageReferenceTypes } from "ME";
+// Module 5031 (isForwardMessage)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/forwarding/isForwardMessage.tsx");
+const MessageReferenceTypes = ME.MessageReferenceTypes;
+const result = set.fileFinishedImporting("modules/forwarding/isForwardMessage.tsx");
 
 export default function isForwardMessage(messageReference) {
   messageReference = messageReference.messageReference;

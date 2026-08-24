@@ -1,17 +1,15 @@
-// Module ID: 15909
-// Function ID: 15910
+// Module ID: 16006
+// Function ID: 16007
 // Name: styles
-// Dependencies: [8507, 4661, 2]
+// Dependencies: [8546, 4668, 2]
 
-// Module 15909 (styles)
-import MessageEmbedTypes from "MessageEmbedTypes";
-import createCacheKey from "createCacheKey";
+// Module 16006 (styles)
+import set from "set" /* 2 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let SEARCH_LIST_HORIZONTAL_PADDING;
-let SEARCH_LIST_SECTION_TOP_PADDING;
-let SEARCH_ROW_TAP_STATE_PADDING;
 ({ SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING, SEARCH_ROW_TAP_STATE_PADDING } = MessageEmbedTypes);
 const styles = createCacheKey.createStyles({ filesOrLinksContentContainer: { paddingTop: SEARCH_LIST_HORIZONTAL_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, mediaContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, messagesContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING - SEARCH_ROW_TAP_STATE_PADDING }, membersContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING } });
-const result = require("set").fileFinishedImporting("modules/search/native/components/tabs/hooks/useContentContainerStyles.tsx");
+const result = set.fileFinishedImporting("modules/search/native/components/tabs/hooks/useContentContainerStyles.tsx");
 
 export const useContentContainerStyles = styles;

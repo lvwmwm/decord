@@ -1,18 +1,19 @@
-// Module ID: 6254
-// Function ID: 6255
+// Module ID: 6285
+// Function ID: 6286
 // Name: VendingMachineSpotIllustration
-// Dependencies: [21, 5449, 6255, 2]
+// Dependencies: [21, 5454, 6286, 2]
 // Exports: VendingMachineSpotIllustration
 
-// Module 6254 (VendingMachineSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 6285 (VendingMachineSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6286 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/VendingMachineSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/VendingMachineSpotIllustration.native.tsx");
 
 export const VendingMachineSpotIllustration = function VendingMachineSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const VendingMachineSpotIllustration = function VendingMachineSpotIllustr
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6255);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const VendingMachineSpotIllustration = function VendingMachineSpotIllustr
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

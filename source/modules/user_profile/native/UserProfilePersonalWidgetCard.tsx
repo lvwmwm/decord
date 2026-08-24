@@ -1,24 +1,25 @@
-// Module ID: 12291
-// Function ID: 12292
+// Module ID: 12343
+// Function ID: 12344
 // Name: PersonalWidgetText
-// Dependencies: [32, 19, 17, 1218, 676, 21, 4661, 712, 12292, 4734, 4066, 12293, 4756, 4104, 1236, 5449, 8989, 589, 7185, 7988, 12186, 2]
+// Dependencies: [32, 19, 17, 1218, 676, 21, 4668, 712, 12344, 4739, 4069, 12345, 4761, 4107, 1236, 5454, 9026, 589, 7223, 8027, 12238, 2]
 // Exports: default
 
-// Module 12291 (PersonalWidgetText)
-import _slicedToArray from "_slicedToArray";
-import NitroWheelIcon from "NitroWheelIcon";
-import get_ActivityIndicator from "initialize";
-import fetchFingerprint from "fetchFingerprint";
-import { ThemeTypes } from "ME";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 12343 (PersonalWidgetText)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ManaContext from "ManaContext" /* 4107 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import preloadDefault from "preload" /* 5454 */;
+import GifTagDefault from "GifTag" /* 9026 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_8 from "fetchFingerprint" /* 1218 */;
+import { ThemeTypes } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let closure_6;
-let error;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function PersonalWidgetText(lineClamp) {
   const variant = lineClamp.variant;
   const color = lineClamp.color;
@@ -37,7 +38,7 @@ function useWidgetImage(userId, image, disableInteraction) {
   const setting = GifAutoPlay.useSetting();
   let obj = React;
   let tmp2 = callback(React.useState(false), 2);
-  let closure_1 = tmp2[1];
+  closure_1 = tmp2[1];
   first = setting;
   if (!setting) {
     first = tmp2[0];
@@ -53,7 +54,7 @@ function useWidgetImage(userId, image, disableInteraction) {
   const items = [userId, tmp4, first];
   const memo = obj.useMemo(() => {
     let tmp2 = null;
-    if (null != _slicedToArray) {
+    if (null != closure_3) {
       let obj = userId(first[11]);
       let isAnimated = tmp.isAnimated;
       if (isAnimated) {
@@ -86,14 +87,9 @@ function useWidgetImage(userId, image, disableInteraction) {
   return obj;
 }
 function CoverSection(section) {
-  let canToggleAnimation;
-  let disableInteraction;
-  let showGifTag;
-  let toggleAnimation;
-  let userId;
   section = section.section;
   ({ userId, disableInteraction } = section);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const tmp2 = useWidgetImage(userId, section.image, disableInteraction);
   const source = tmp2.source;
   const items = [tmp.coverContent, ];
@@ -109,7 +105,7 @@ function CoverSection(section) {
     obj = { colors: null, style: null, pointerEvents: "none" };
     obj[0] = closure_12;
     obj[1] = closure_6.absoluteFill;
-    tmp6 = callback2(importDefault(4756), obj);
+    tmp6 = callback2(LinearGradientDefault, obj);
   }
   const items1 = [tmp6, , ];
   let tmp12 = null;
@@ -121,7 +117,7 @@ function CoverSection(section) {
   items1[1] = tmp12;
   let tmp15 = null;
   if ("" !== section.subtitle) {
-    const obj1 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3, children: null };
+    obj1 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3, children: null };
     obj1[3] = section.subtitle;
     tmp15 = callback2(PersonalWidgetText, obj1);
   }
@@ -143,7 +139,7 @@ function CoverSection(section) {
       const obj5 = { source: null, style: null, resizeMode: "cover" };
       obj5[0] = source;
       obj5[1] = closure_6.absoluteFill;
-      obj4[4] = tmp27(importDefault(5449), obj5);
+      obj4[4] = tmp27(preloadDefault, obj5);
       let tmp27Result = tmp27(closure_5, obj4);
       let tmp20 = importDefault;
     } else {
@@ -151,31 +147,26 @@ function CoverSection(section) {
       const obj6 = { source: null, style: null, resizeMode: "cover" };
       obj6[0] = source;
       obj6[1] = closure_6.absoluteFill;
-      tmp27Result = tmp27(importDefault(5449), obj6);
+      tmp27Result = tmp27(preloadDefault, obj6);
     }
     const items2 = [tmp27Result, tmp3Result, ];
     tmp27Result = null;
     if (showGifTag) {
       const obj7 = { style: null };
       obj7[0] = tmp.gifTag;
-      tmp27Result = tmp27(tmp20(8989), obj7);
+      tmp27Result = tmp27(tmp20(9026), obj7);
     }
     items2[2] = tmp27Result;
     obj3[1] = items2;
     obj2[3] = tmp3(tmp4, obj3);
-    tmp27Result1 = tmp27(require(4104) /* ManaContext */.ThemeContextProvider, obj2);
+    tmp27Result1 = tmp27(ManaContext.ThemeContextProvider, obj2);
   }
   return tmp27Result1;
 }
 function FieldRow(field) {
-  let canToggleAnimation;
-  let disableInteraction;
-  let showGifTag;
-  let toggleAnimation;
-  let userId;
   field = field.field;
   ({ userId, disableInteraction } = field);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const tmp2 = useWidgetImage(userId, field.image, disableInteraction);
   const source = tmp2.source;
   let tmp3 = null;
@@ -184,7 +175,7 @@ function FieldRow(field) {
     let obj = { source: null, style: null, resizeMode: "cover" };
     obj[0] = source;
     obj[1] = tmp.fieldImage;
-    tmp3 = callback2(importDefault(5449), obj);
+    tmp3 = callback2(preloadDefault, obj);
   }
   obj = { style: tmp.fieldRow, children: null };
   let tmp7Result = tmp3;
@@ -193,14 +184,14 @@ function FieldRow(field) {
     if (canToggleAnimation) {
       obj = { onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
       obj[0] = toggleAnimation;
-      const intl = require(1236) /* getSystemLocale */.intl;
-      obj[2] = intl.string(require(1236) /* getSystemLocale */.t.MxXgrL);
+      const intl = getSystemLocale.intl;
+      obj[2] = intl.string(getSystemLocale.t.MxXgrL);
       const items = [tmp3, ];
       let tmp13 = null;
       if (showGifTag) {
-        const obj1 = { style: null };
+        obj1 = { style: null };
         obj1[0] = tmp.gifTagSmall;
-        tmp13 = callback2(importDefault(8989), obj1);
+        tmp13 = callback2(GifTagDefault, obj1);
       }
       items[1] = tmp13;
       obj[3] = items;
@@ -230,16 +221,13 @@ function FieldRow(field) {
   return closure_11(closure_7, obj);
 }
 function FieldsSection(arg0) {
-  let importDefault;
-  let require;
-  let section;
   ({ userId: require, section, disableInteraction: importDefault } = arg0);
   let tmp2 = null;
   if (0 !== section.fields.length) {
     const obj = { style: null, children: null };
     obj[0] = tmp.fieldsContainer;
     const fields = section.fields;
-    obj[1] = fields.map((field) => outer1_10(outer1_17, { userId: closure_0, field, disableInteraction: closure_1 }, field.key));
+    obj[1] = fields.map((field) => closure_1_10(closure_1_17, { userId: closure_0, field, disableInteraction: closure_1 }, field.key));
     tmp2 = callback2(closure_7, obj);
   }
   return tmp2;
@@ -248,43 +236,41 @@ function FieldsSection(arg0) {
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_12 = ["rgba(7, 7, 9, 0)", "rgba(7, 7, 9, 0.8)"];
 createCacheKey = { coverContainer: null, coverContent: null, coverContentWithImage: null, sectionsContainer: null, fieldsContainer: null, fieldRow: null, fieldImage: null, fieldContent: null, gifTag: null, gifTagSmall: null };
-createCacheKey = { borderRadius: require("Themes").radii.md, overflow: "hidden", justifyContent: "flex-end" };
+createCacheKey = { borderRadius: ThemesDefault.radii.md, overflow: "hidden", justifyContent: "flex-end" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { gap: require("Themes").space.PX_4 };
-let obj1 = { gap: require("Themes").space.PX_4 };
-createCacheKey[2] = { padding: require("Themes").space.PX_16, marginTop: 56 };
-let obj2 = { padding: require("Themes").space.PX_16, marginTop: 56 };
-createCacheKey[3] = { gap: require("Themes").space.PX_12 };
-let obj3 = { gap: require("Themes").space.PX_12 };
-createCacheKey[4] = { gap: require("Themes").space.PX_12 };
-let obj4 = { gap: require("Themes").space.PX_12 };
-createCacheKey[5] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
-let obj5 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
-createCacheKey[6] = { width: require("Themes").space.PX_48, height: require("Themes").space.PX_48, borderRadius: require("Themes").radii.sm };
+createCacheKey[1] = { gap: ThemesDefault.space.PX_4 };
+let obj1 = { gap: ThemesDefault.space.PX_4 };
+createCacheKey[2] = { padding: ThemesDefault.space.PX_16, marginTop: 56 };
+let obj2 = { padding: ThemesDefault.space.PX_16, marginTop: 56 };
+createCacheKey[3] = { gap: ThemesDefault.space.PX_12 };
+let obj3 = { gap: ThemesDefault.space.PX_12 };
+createCacheKey[4] = { gap: ThemesDefault.space.PX_12 };
+let obj4 = { gap: ThemesDefault.space.PX_12 };
+createCacheKey[5] = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_12 };
+let obj5 = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_12 };
+createCacheKey[6] = { width: ThemesDefault.space.PX_48, height: ThemesDefault.space.PX_48, borderRadius: ThemesDefault.radii.sm };
 createCacheKey[7] = { flex: 1 };
-let obj6 = { width: require("Themes").space.PX_48, height: require("Themes").space.PX_48, borderRadius: require("Themes").radii.sm };
-createCacheKey[8] = { position: "absolute", top: require("Themes").space.PX_8, left: require("Themes").space.PX_8 };
-let obj7 = { position: "absolute", top: require("Themes").space.PX_8, left: require("Themes").space.PX_8 };
-createCacheKey[9] = { position: "absolute", top: require("Themes").space.PX_4, left: require("Themes").space.PX_4 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj8 = { position: "absolute", top: require("Themes").space.PX_4, left: require("Themes").space.PX_4 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfilePersonalWidgetCard.tsx");
+let obj6 = { width: ThemesDefault.space.PX_48, height: ThemesDefault.space.PX_48, borderRadius: ThemesDefault.radii.sm };
+createCacheKey[8] = { position: "absolute", top: ThemesDefault.space.PX_8, left: ThemesDefault.space.PX_8 };
+let obj7 = { position: "absolute", top: ThemesDefault.space.PX_8, left: ThemesDefault.space.PX_8 };
+createCacheKey[9] = { position: "absolute", top: ThemesDefault.space.PX_4, left: ThemesDefault.space.PX_4 };
+let closure_13 = createCacheKey.createStyles(createCacheKey);
+const obj8 = { position: "absolute", top: ThemesDefault.space.PX_4, left: ThemesDefault.space.PX_4 };
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfilePersonalWidgetCard.tsx");
 
 export default function UserProfilePersonalWidgetCard(style) {
-  let disableInteraction;
-  let widget;
   const userId = style.userId;
   ({ widget, disableInteraction } = style);
   if (disableInteraction === undefined) {
     disableInteraction = false;
   }
   let obj = userId(589);
-  const items = [fetchFingerprint];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getId() === userId);
+  const items = [closure_8];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getId() === userId);
   obj = { style: style.cardStyle, titleLeadingIcon: null, title: null, trailingAction: null, children: null };
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const tmp5 = disableInteraction;
-  obj[1] = callback2(userId(7988).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+  obj[1] = callback2(userId(8027).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
   obj[2] = widget.header;
   let tmp4Result = !stateFromStores;
   if (!stateFromStores) {
@@ -294,10 +280,10 @@ export default function UserProfilePersonalWidgetCard(style) {
     obj = { userId: null, widget: null };
     obj[0] = userId;
     obj[1] = widget;
-    tmp4Result = tmp4(tmp5(12186), obj);
+    tmp4Result = tmp4(tmp5(12238), obj);
   }
   obj[3] = tmp4Result;
-  const tmp6 = disableInteraction(7185);
+  const tmp6 = disableInteraction(7223);
   const sections = widget.sections;
   obj[4] = callback2(closure_7, {
     style: tmp.sectionsContainer,
@@ -308,13 +294,13 @@ export default function UserProfilePersonalWidgetCard(style) {
         obj[0] = userId;
         obj[1] = type;
         obj[2] = disableInteraction;
-        return outer1_10(outer1_16, obj, arg1);
+        return closure_1_10(closure_1_16, obj, arg1);
       } else if ("fields" === type) {
         obj = { userId: null, section: null, disableInteraction: null };
         obj[0] = userId;
         obj[1] = type;
         obj[2] = disableInteraction;
-        return outer1_10(outer1_18, obj, arg1);
+        return closure_1_10(closure_1_18, obj, arg1);
       } else {
         return null;
       }

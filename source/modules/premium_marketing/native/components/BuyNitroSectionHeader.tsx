@@ -1,24 +1,19 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 8065
+// Function ID: 8066
 // Name: BuyNitroSectionHeader
-// Dependencies: [21, 4734, 2]
+// Dependencies: [21, 4739, 2]
 // Exports: default
 
-// Module 8026 (BuyNitroSectionHeader)
-import jsxProd from "jsxProd";
+// Module 8065 (BuyNitroSectionHeader)
+import set from "set" /* 2 */;
+import Text from "Text" /* 4739 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-let obj1;
 ({ jsx: obj1, Fragment: c3, jsxs: c4 } = jsxProd);
 const Nitro = "Nitro";
-const result = require("set").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroSectionHeader.tsx");
+const result = set.fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroSectionHeader.tsx");
 
 export default function BuyNitroSectionHeader(arg0) {
-  let onPress;
-  let style;
-  let title;
-  let titleRequiresNitroHack;
   ({ title, titleRequiresNitroHack } = arg0);
   ({ style, onPress } = arg0);
   if (titleRequiresNitroHack === undefined) {
@@ -35,7 +30,7 @@ export default function BuyNitroSectionHeader(arg0) {
       obj = { variant: "text-sm/semibold", color: "text-link", accessibilityRole: "link", onPress: null, children: null };
       obj[3] = onPress;
       obj[4] = tmp5;
-      items[1] = tmp(require(4734) /* Text */.Text, obj);
+      items[1] = tmp(Text.Text, obj);
       items[2] = title.slice(index + 5);
       obj[0] = items;
       tmp7 = callback(closure_3, obj);
@@ -44,5 +39,5 @@ export default function BuyNitroSectionHeader(arg0) {
     tmp5 = Nitro;
   }
   obj[4] = tmp4;
-  return closure_2(require(4734) /* Text */.Text, obj);
+  return closure_2(Text.Text, obj);
 };

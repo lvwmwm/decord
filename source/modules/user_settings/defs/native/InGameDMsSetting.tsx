@@ -1,17 +1,20 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15093
+// Function ID: 15094
 // Name: radio
-// Dependencies: [19, 8198, 4066, 1306, 1236, 10669, 2]
+// Dependencies: [19, 8238, 4069, 1306, 1236, 10708, 2]
 
-// Module 15029 (radio)
-import noop from "noop";
-import createToggle from "createToggle";
+// Module 15093 (radio)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import create from "create" /* 1306 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import closure_2 from "noop" /* 19 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["ms+Tme"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["ms+Tme"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.CONNECTED_GAMES,
   useOptions: function useInGameDMsSettingOptions() {
@@ -32,24 +35,24 @@ createToggle = {
     }, []);
   },
   useValue: function useInGameDMsSettingValue() {
-    const SlayerSDKReceiveDMsInGame = require(4066) /* explicitContentFromProto */.SlayerSDKReceiveDMsInGame;
+    const SlayerSDKReceiveDMsInGame = explicitContentFromProto.SlayerSDKReceiveDMsInGame;
     let SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = SlayerSDKReceiveDMsInGame.useSetting();
-    if (SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL === require(1306) /* create */.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET) {
-      SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = require(1306) /* create */.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
+    if (SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL === create.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET) {
+      SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = create.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
     }
     return SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
   },
   onValueChange: function onInGameDMsSettingValueChange(arg0) {
-    const SlayerSDKReceiveDMsInGame = require(4066) /* explicitContentFromProto */.SlayerSDKReceiveDMsInGame;
+    const SlayerSDKReceiveDMsInGame = explicitContentFromProto.SlayerSDKReceiveDMsInGame;
     SlayerSDKReceiveDMsInGame.updateSetting(Number(arg0));
   },
   useSearchTerms() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1236) /* getSystemLocale */.t.XpBObB)];
+    const intl = getSystemLocale.intl;
+    const items = [intl.string(getSystemLocale.t.XpBObB)];
     return items;
   }
 };
 createToggle = createToggle.createRadio(createToggle);
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/InGameDMsSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/InGameDMsSetting.tsx");
 
 export default createToggle;

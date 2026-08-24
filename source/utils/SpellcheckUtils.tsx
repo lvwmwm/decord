@@ -1,21 +1,22 @@
-// Module ID: 6915
-// Function ID: 6916
+// Module ID: 6953
+// Function ID: 6954
 // Name: _setEnabled
-// Dependencies: [5, 4493, 4004, 500, 6916, 2]
+// Dependencies: [5, 4497, 4007, 500, 6954, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 6915 (_setEnabled)
-import closure_3 from "set";
-import set from "set";
-import set from "set";
+// Module 6953 (_setEnabled)
+import set2 from "set" /* 500 */;
+import setDefault from "set" /* 4007 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import set from "set" /* 500 */;
 
-const require = arg1;
+require = arg1;
 function _setEnabled() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     return (function*(arg0) {
       if (c3 === 2) {
         c3 = 3;
@@ -28,7 +29,7 @@ function _setEnabled() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -43,12 +44,12 @@ function _setEnabled() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_1 = tmp2;
+              closure_1 = tmp2;
               closure_1 = undefined;
               c2 = 1;
               c3 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_5;
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_5;
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -65,7 +66,7 @@ function _setEnabled() {
               closure_1.enabled = closure_0;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c3 = tmp;
@@ -74,7 +75,7 @@ function _setEnabled() {
       }
     })();
   });
-  const _setEnabled = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -86,9 +87,9 @@ function _setEnabled() {
 function _setLearnedWords() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     return (function*(arg0) {
       if (c3 === 2) {
         c3 = 3;
@@ -101,7 +102,7 @@ function _setLearnedWords() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -120,8 +121,8 @@ function _setLearnedWords() {
               learnedWords = undefined;
               c2 = 1;
               c3 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_5;
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_5;
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -138,7 +139,7 @@ function _setLearnedWords() {
               learnedWords.setLearnedWords(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c3 = tmp;
@@ -147,7 +148,7 @@ function _setLearnedWords() {
       }
     })();
   });
-  const _setLearnedWords = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -159,10 +160,10 @@ function _setLearnedWords() {
 function _isMisspelled() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     const iter = (function*(arg0) {
       if (c5 === 2) {
         c5 = 3;
@@ -175,7 +176,7 @@ function _isMisspelled() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -190,7 +191,7 @@ function _isMisspelled() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_3 = tmp5;
+              closure_3 = tmp5;
               let misspelled = tmp2;
               let flag;
               if (flag === undefined) {
@@ -207,7 +208,7 @@ function _isMisspelled() {
               throw arg1;
             } else if (arg0 === 2) {
               c5 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -245,7 +246,7 @@ function _isMisspelled() {
     iter.next();
     return iter;
   });
-  const _isMisspelled = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -257,11 +258,11 @@ function _isMisspelled() {
 function _getCorrections() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c5 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c5 = 0;
+    c6 = 0;
     const iter = (function*(arg0) {
       if (c6 === 2) {
         c6 = 3;
@@ -274,7 +275,7 @@ function _getCorrections() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -289,7 +290,7 @@ function _getCorrections() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_4 = tmp5;
+              closure_4 = tmp5;
               let correctionsForMisspelling = tmp2;
               let flag;
               let num10;
@@ -310,7 +311,7 @@ function _getCorrections() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -347,7 +348,7 @@ function _getCorrections() {
     iter.next();
     return iter;
   });
-  const _getCorrections = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -359,9 +360,9 @@ function _getCorrections() {
 function _getCachedMisspelling() {
   const self = this;
   const tmp = callback(() => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*() {
       if (c4 === 2) {
         c4 = 3;
@@ -374,7 +375,7 @@ function _getCachedMisspelling() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -407,7 +408,7 @@ function _getCachedMisspelling() {
               throw arg1;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -455,7 +456,7 @@ function _getCachedMisspelling() {
     iter.next();
     return iter;
   });
-  const _getCachedMisspelling = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -467,9 +468,9 @@ function _getCachedMisspelling() {
 function _replaceWithCorrection() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     return (function*(arg0) {
       if (c3 === 2) {
         c3 = 3;
@@ -482,7 +483,7 @@ function _replaceWithCorrection() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -497,12 +498,12 @@ function _replaceWithCorrection() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_1 = tmp2;
+              closure_1 = tmp2;
               closure_1 = undefined;
               c2 = 1;
               c3 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_5;
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_5;
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -519,7 +520,7 @@ function _replaceWithCorrection() {
               closure_1.replaceMisspelling(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c3 = tmp;
@@ -528,7 +529,7 @@ function _replaceWithCorrection() {
       }
     })();
   });
-  const _replaceWithCorrection = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -540,7 +541,7 @@ function _replaceWithCorrection() {
 require("processCallbacks").addPostConnectionCallback;
 set = set.isDesktop();
 if (set) {
-  const importDefaultResult = require("set");
+  const importDefaultResult = setDefault;
   let spellCheck;
   if (importDefaultResult != null) {
     spellCheck = importDefaultResult.spellCheck;
@@ -550,21 +551,21 @@ if (set) {
 let promise = null;
 if (set) {
   promise = new Promise((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const resolved = Promise.resolve();
-    resolved.then(() => outer1_4(() => callback(outer1_0(outer1_2[4]).install())));
+    resolved.then(() => closure_1_4(() => callback(closure_1_0(closure_1_2[4]).install())));
   });
 }
 let c6 = null;
 if (promise != null) {
   promise.then((arg0) => {
-    let closure_6 = arg0;
+    closure_6 = arg0;
   });
 }
 function isSupported() {
-  let isDesktopResult = require(500) /* set */.isDesktop();
+  let isDesktopResult = set2.isDesktop();
   if (isDesktopResult) {
-    const tmp4 = importDefault(4004);
+    const tmp4 = setDefault;
     let spellCheck;
     if (tmp4 != null) {
       spellCheck = tmp4.spellCheck;
@@ -642,13 +643,13 @@ export const setAppLocale = function setAppLocale(arg0) {
   }
 };
 export const addResultListener = function addResultListener(arg0) {
-  const tmp3 = importDefault(4004);
+  const tmp3 = setDefault;
   let spellCheck;
   if (tmp3 != null) {
     spellCheck = tmp3.spellCheck;
   }
   if (null != spellCheck) {
-    spellCheck = importDefault(4004).spellCheck;
+    spellCheck = setDefault.spellCheck;
     let fn2 = spellCheck.on("spellcheck-result", arg0);
     if (fn2 == null) {
       fn2 = () => {

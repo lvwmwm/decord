@@ -1,26 +1,29 @@
-// Module ID: 16012
-// Function ID: 16013
+// Module ID: 16109
+// Function ID: 16110
 // Name: trackYouTabAvatarPress
 // Dependencies: [676, 698, 2]
 // Exports: trackYouTabAvatarPress, trackYouTabCustomStatusPress, trackYouTabEditProfilePress, trackYouTabNitroIconPress, trackYouTabSettingsIconPress
 
-// Module 16012 (trackYouTabAvatarPress)
-import { AnalyticEvents } from "ME";
+// Module 16109 (trackYouTabAvatarPress)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 
-const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/tracking/Tracking.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/tracking/Tracking.tsx");
 
 export const trackYouTabAvatarPress = function trackYouTabAvatarPress() {
-  importDefault(698).track(AnalyticEvents.YOU_TAB_AVATAR_PRESS);
+  expandEventPropertiesDefault.track(AnalyticEvents.YOU_TAB_AVATAR_PRESS);
 };
 export const trackYouTabCustomStatusPress = function trackYouTabCustomStatusPress() {
-  importDefault(698).track(AnalyticEvents.YOU_TAB_CUSTOM_STATUS_PRESS);
+  expandEventPropertiesDefault.track(AnalyticEvents.YOU_TAB_CUSTOM_STATUS_PRESS);
 };
 export const trackYouTabEditProfilePress = function trackYouTabEditProfilePress() {
-  importDefault(698).track(AnalyticEvents.YOU_TAB_EDIT_PROFILE_PRESS);
+  expandEventPropertiesDefault.track(AnalyticEvents.YOU_TAB_EDIT_PROFILE_PRESS);
 };
 export const trackYouTabNitroIconPress = function trackYouTabNitroIconPress() {
-  importDefault(698).track(AnalyticEvents.YOU_TAB_NITRO_ICON_PRESS);
+  expandEventPropertiesDefault.track(AnalyticEvents.YOU_TAB_NITRO_ICON_PRESS);
 };
 export const trackYouTabSettingsIconPress = function trackYouTabSettingsIconPress(has_badge) {
-  importDefault(698).track(AnalyticEvents.YOU_TAB_SETTINGS_ICON_PRESS, { has_badge: has_badge.isBadged });
+  expandEventPropertiesDefault.track(AnalyticEvents.YOU_TAB_SETTINGS_ICON_PRESS, { has_badge: has_badge.isBadged });
 };

@@ -6,7 +6,7 @@
 // Module 532 (_createForOfIteratorHelper)
 const exports = arg5;
 function _createForOfIteratorHelper(iterable) {
-  let closure_0 = iterable;
+  closure_0 = iterable;
   iterable = typeof Symbol !== "undefined";
   if (typeof Symbol !== "undefined") {
     const _Symbol = Symbol;
@@ -17,8 +17,8 @@ function _createForOfIteratorHelper(iterable) {
   }
   let arr = iterable;
   if (iterable) {
-    let c4 = true;
-    let c5 = false;
+    c4 = true;
+    c5 = false;
     let obj = { s: null, n: null, e: null, f: null };
     obj[0] = function s() {
       const call = closure_1.call;
@@ -30,8 +30,8 @@ function _createForOfIteratorHelper(iterable) {
       return iter;
     };
     obj[2] = function e(arg0) {
-      let c5 = true;
-      let closure_3 = arg0;
+      c5 = true;
+      closure_3 = arg0;
     };
     obj[3] = function f() {
       try {
@@ -131,7 +131,7 @@ function _createForOfIteratorHelper(iterable) {
     if (arr) {
       closure_0 = arr;
     }
-    let c2 = 0;
+    c2 = 0;
     class F {
       constructor() {
         return;

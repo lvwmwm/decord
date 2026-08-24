@@ -4,7 +4,7 @@
 // Dependencies: [1241]
 
 // Module 16841 (registerAsset)
-import registerAsset from "registerAsset";
+import registerAsset from "registerAsset" /* 1241 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_settings/roles/native/images", width: 375, height: 280, scales: [2, 3], hash: "385febe027093418da10e0784f3891bd", name: "illustration-dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 24, height: 24, scales: [2, 3], hash: "5d792e9e92a8795cc3d086a321f6344d", name: "ic_premium_tiers_24px", type: "png" });

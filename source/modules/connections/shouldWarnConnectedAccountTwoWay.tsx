@@ -1,14 +1,15 @@
-// Module ID: 14321
-// Function ID: 14322
+// Module ID: 14389
+// Function ID: 14390
 // Name: set
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 14321 (set)
-import set from "set";
+// Module 14389 (set)
+import ME from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
 const items = [, , , ];
-({ XBOX: arr[0], PLAYSTATION: arr[1], PLAYSTATION_STAGING: arr[2], CRUNCHYROLL: arr[3] } = require("ME").PlatformTypes);
+({ XBOX: arr[0], PLAYSTATION: arr[1], PLAYSTATION_STAGING: arr[2], CRUNCHYROLL: arr[3] } = ME.PlatformTypes);
 let set = new Set(items);
 const result = set.fileFinishedImporting("modules/connections/shouldWarnConnectedAccountTwoWay.tsx");
 

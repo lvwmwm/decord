@@ -1,10 +1,12 @@
-// Module ID: 4357
-// Function ID: 4358
+// Module ID: 4361
+// Function ID: 4362
 // Name: CustomCheckoutFlow
 // Dependencies: [2]
 
-// Module 4357 (CustomCheckoutFlow)
-const result = require("set").fileFinishedImporting("modules/payments/PaymentConstants.tsx");
+// Module 4361 (CustomCheckoutFlow)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/payments/PaymentConstants.tsx");
 
 export const CustomCheckoutFlow = { MOBILE_WEB_REDIRECT_CHECKOUT: "mobile_web_redirect_checkout", META_QUEST_WEB_REDIRECT_CHECKOUT: "meta_quest_web_redirect_checkout", DEV_STORYBOOK_CHECKOUT: "dev_storybook_checkout" };
 export const MobileWebRedirectCheckoutDeepLinkActions = { PREMIUM_CHECKOUT_SUCCESS: "premium_checkout_success", PREMIUM_SUBSCRIPTION_UPDATE: "premium_subscription_update", GUILD_BOOST_CHECKOUT_SUCCESS: "guild_boost_checkout_success", DEFAULT: "default" };

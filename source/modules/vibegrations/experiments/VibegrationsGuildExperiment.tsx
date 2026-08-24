@@ -1,15 +1,17 @@
-// Module ID: 7215
-// Function ID: 7216
+// Module ID: 7253
+// Function ID: 7254
 // Name: useIsVibegrationsGuildEnabled
 // Dependencies: [676, 1472, 2]
 // Exports: isVibegrationsGuildEnabled, useIsVibegrationsGuildEnabled
 
-// Module 7215 (useIsVibegrationsGuildEnabled)
-import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
-import ApexExperiment from "ApexExperiment";
+// Module 7253 (useIsVibegrationsGuildEnabled)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
+const EMPTY_STRING_SNOWFLAKE_ID = ME.EMPTY_STRING_SNOWFLAKE_ID;
 let closure_1 = ApexExperiment.createApexExperiment({ name: "2026-07-vibegrations-guild", kind: "guild", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
-const result = require("set").fileFinishedImporting("modules/vibegrations/experiments/VibegrationsGuildExperiment.tsx");
+const result = set.fileFinishedImporting("modules/vibegrations/experiments/VibegrationsGuildExperiment.tsx");
 
 export const useIsVibegrationsGuildEnabled = function useIsVibegrationsGuildEnabled(location) {
   let guildId = location.guildId;

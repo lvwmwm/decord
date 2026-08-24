@@ -1,19 +1,20 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 11620
+// Function ID: 11621
 // Name: ApplicationCommandLoadingItem
-// Dependencies: [19, 17, 10177, 21, 4661, 712, 4751, 2]
+// Dependencies: [19, 17, 10216, 21, 4668, 712, 4756, 2]
 // Exports: default
 
-// Module 11571 (ApplicationCommandLoadingItem)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11620 (ApplicationCommandLoadingItem)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getFontScale from "getFontScale" /* 4756 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT" /* 10216 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let c7 = 16;
 let closure_8 = createCacheKey.createStyles((arg0) => {
@@ -21,17 +22,17 @@ let closure_8 = createCacheKey.createStyles((arg0) => {
   obj = { flexDirection: "row", paddingVertical: 4, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
   obj[0] = obj;
   obj[1] = { flexDirection: "column", width: "75%", height: "100%", justifyContent: "space-between" };
-  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_STRONG, height: c7, borderRadius: c7, width: "20%" };
+  obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG, height: c7, borderRadius: c7, width: "20%" };
   obj[2] = obj;
-  obj[3] = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, height: c7, borderRadius: c7, width: "80%" };
-  const obj1 = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, height: c7, borderRadius: c7, width: "80%" };
-  obj[4] = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_STRONG, paddingLeft: 16, width: "25%", marginLeft: "auto", height: c7, borderRadius: c7 };
+  obj[3] = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, height: c7, borderRadius: c7, width: "80%" };
+  obj1 = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, height: c7, borderRadius: c7, width: "80%" };
+  obj[4] = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG, paddingLeft: 16, width: "25%", marginLeft: "auto", height: c7, borderRadius: c7 };
   return obj;
 });
-const result = require("AUTOCOMPLETE_ROW_HEIGHT").fileFinishedImporting("modules/application_commands/native/ApplicationCommandLoadingItem.tsx");
+const result = require("set").fileFinishedImporting("modules/application_commands/native/ApplicationCommandLoadingItem.tsx");
 
 export default function ApplicationCommandLoadingItem() {
-  let obj = require(4751) /* getFontScale */;
+  let obj = getFontScale;
   const tmp = callback3(obj.useFontScale());
   obj = { style: tmp.applicationCommandLoadingItem, children: null };
   obj = { style: tmp.applicationCommandLoadingLeftWrapper, children: null };

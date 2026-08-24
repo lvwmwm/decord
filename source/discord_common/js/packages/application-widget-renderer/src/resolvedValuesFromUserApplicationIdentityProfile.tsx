@@ -1,13 +1,15 @@
-// Module ID: 12275
-// Function ID: 12276
+// Module ID: 12327
+// Function ID: 12328
 // Name: isVisualUnfurledMedia
-// Dependencies: [32, 12193, 12276, 2]
+// Dependencies: [32, 12245, 12328, 2]
 // Exports: default
 
-// Module 12275 (isVisualUnfurledMedia)
-import _slicedToArray from "_slicedToArray";
+// Module 12327 (isVisualUnfurledMedia)
+import resolveFieldValue from "resolveFieldValue" /* 12245 */;
+import ProfileDataDynamicType from "ProfileDataDynamicType" /* 12328 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
-const require = arg1;
+require = arg1;
 function isVisualUnfurledMedia(value) {
   let tmp = null != value.width;
   if (tmp) {
@@ -22,8 +24,6 @@ function isVisualUnfurledMedia(value) {
   return tmp;
 }
 function resolvedValuesFromPrimary(data) {
-  let tmp7;
-  let tmp8;
   data = data.data;
   let primary;
   if (data != null) {
@@ -46,7 +46,7 @@ function resolvedValuesFromPrimary(data) {
         obj = { type: null, value: null };
         let tmp23 = require;
         let tmp24 = dependencyMap;
-        obj[0] = require(12193) /* resolveFieldValue */.ResolvedValueType.STRING;
+        obj[0] = resolveFieldValue.ResolvedValueType.STRING;
         let tmp25 = tmp8;
         obj[1] = tmp9;
         obj[tmp7] = obj;
@@ -57,7 +57,7 @@ function resolvedValuesFromPrimary(data) {
           obj = { type: null, value: null };
           let tmp19 = require;
           let tmp20 = dependencyMap;
-          obj[0] = require(12193) /* resolveFieldValue */.ResolvedValueType.NUMBER;
+          obj[0] = resolveFieldValue.ResolvedValueType.NUMBER;
           let tmp21 = tmp8;
           obj[1] = tmp9;
           obj[tmp7] = obj;
@@ -74,10 +74,10 @@ function resolvedValuesFromPrimary(data) {
                   let tmp13 = tmp8;
                   if (isVisualUnfurledMedia(tmp9)) {
                     let tmp14 = tmp7;
-                    let obj1 = { type: null, media: null };
+                    obj1 = { type: null, media: null };
                     let tmp15 = require;
                     let tmp16 = dependencyMap;
-                    obj1[0] = require(12193) /* resolveFieldValue */.ResolvedValueType.MEDIA;
+                    obj1[0] = resolveFieldValue.ResolvedValueType.MEDIA;
                     let obj2 = { url: null, width: null, height: null };
                     let tmp17 = tmp8;
                     ({ proxy_url: obj3[0], width: obj3[1], height: obj3[2] } = tmp9);
@@ -112,29 +112,29 @@ function resolvedValuesFromDynamic(data) {
       let iter = nextResult;
       let tmp5 = require;
       let tmp6 = dependencyMap;
-      if (nextResult.type === require(12276) /* ProfileDataDynamicType */.ProfileDataDynamicType.STRING) {
+      if (nextResult.type === ProfileDataDynamicType.ProfileDataDynamicType.STRING) {
         let tmp9 = nextResult;
         obj = { type: null, value: null };
-        obj[0] = tmp5(12193).ResolvedValueType.STRING;
+        obj[0] = tmp5(12245).ResolvedValueType.STRING;
         obj[1] = iter.value;
         obj[iter.name] = obj;
       } else {
         let tmp11 = nextResult;
-        if (iter.type === tmp5(12276).ProfileDataDynamicType.NUMBER) {
+        if (iter.type === tmp5(12328).ProfileDataDynamicType.NUMBER) {
           let tmp8 = nextResult;
           obj = { type: null, value: null };
-          obj[0] = tmp5(12193).ResolvedValueType.NUMBER;
+          obj[0] = tmp5(12245).ResolvedValueType.NUMBER;
           obj[1] = iter.value;
           obj[iter.name] = obj;
         } else {
           let tmp12 = nextResult;
-          if (iter.type === tmp5(12276).ProfileDataDynamicType.MEDIA) {
+          if (iter.type === tmp5(12328).ProfileDataDynamicType.MEDIA) {
             let tmp13 = isVisualUnfurledMedia;
             let tmp14 = nextResult;
             if (isVisualUnfurledMedia(iter.value)) {
               let tmp7 = nextResult;
-              let obj1 = { type: null, media: null };
-              obj1[0] = tmp5(12193).ResolvedValueType.MEDIA;
+              obj1 = { type: null, media: null };
+              obj1[0] = tmp5(12245).ResolvedValueType.MEDIA;
               let obj2 = { url: null, width: null, height: null };
               obj2[0] = iter.value.proxy_url;
               obj2[1] = iter.value.width;
@@ -151,7 +151,7 @@ function resolvedValuesFromDynamic(data) {
     return obj;
   }
 }
-const result = require("ProfileDataDynamicType").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedValuesFromUserApplicationIdentityProfile.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedValuesFromUserApplicationIdentityProfile.tsx");
 
 export default function resolvedValuesFromUserApplicationIdentityProfile(profile) {
   if (null == profile) {
@@ -160,7 +160,7 @@ export default function resolvedValuesFromUserApplicationIdentityProfile(profile
     obj = {};
     if (null != profile.username) {
       obj = { type: null, value: null };
-      obj[0] = require(12193) /* resolveFieldValue */.ResolvedValueType.STRING;
+      obj[0] = resolveFieldValue.ResolvedValueType.STRING;
       obj[1] = profile.username;
       obj.username = obj;
     }

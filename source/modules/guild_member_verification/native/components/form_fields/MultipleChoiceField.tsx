@@ -1,34 +1,31 @@
-// Module ID: 8662
-// Function ID: 8663
+// Module ID: 8699
+// Function ID: 8700
 // Name: MultipleChoiceField
-// Dependencies: [19, 17, 505, 21, 4661, 6782, 712, 4734, 8101, 8100, 2]
+// Dependencies: [19, 17, 505, 21, 4668, 6819, 712, 4739, 8140, 8139, 2]
 // Exports: default
 
-// Module 8662 (MultipleChoiceField)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
+// Module 8699 (MultipleChoiceField)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_2 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: { marginVertical: 12, flexDirection: "column" }, formHeader: null };
 createCacheKey = {};
-const merged = Object.assign(require("createTextStyle")(require("sum").Fonts.DISPLAY_SEMIBOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 16, { uppercase: false }));
+const merged = Object.assign(importDefaultResult(require("sum").Fonts.DISPLAY_SEMIBOLD, ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 16, { uppercase: false }));
 createCacheKey.paddingBottom = 16;
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("sum").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/MultipleChoiceField.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/MultipleChoiceField.tsx");
 
 export default function MultipleChoiceField(hasIcons) {
-  let field;
-  let require;
   ({ field, onChange: require } = hasIcons);
   let choices;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   choices = field.choices;
   let num = field.response;
   const items = [choices];

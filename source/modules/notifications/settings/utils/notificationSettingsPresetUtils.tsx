@@ -1,22 +1,26 @@
-// Module ID: 5046
-// Function ID: 5047
+// Module ID: 5051
+// Function ID: 5052
 // Name: Presets
-// Dependencies: [676, 5044, 4486, 1236, 2]
+// Dependencies: [676, 5049, 4490, 1236, 2]
 // Exports: arePresetSettingsUnset, presetFromSettings, presetName
 
-// Module 5046 (Presets)
-import { UserNotificationSettings } from "ME";
-import { UnreadSetting } from "ReadStateTypes";
+// Module 5051 (Presets)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import t from "t" /* 4490 */;
+import ReadStateTypes from "ReadStateTypes" /* 5049 */;
 
+const UserNotificationSettings = ME.UserNotificationSettings;
+const UnreadSetting = ReadStateTypes.UnreadSetting;
 const obj = { ALL_MESSAGES: "all_messages", MENTIONS: "mentions", NOTHING: "nothing", CUSTOM: "custom" };
-const result = require("t").fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsPresetUtils.tsx");
+const result = set.fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsPresetUtils.tsx");
 
 export const Presets = obj;
 export const presetFromSettings = function presetFromSettings(unreadSetting, messageNotifications) {
   const items = [messageNotifications, unreadSetting];
-  const match = require(4486) /* t */.match(items);
+  const match = t.match(items);
   const items1 = [UserNotificationSettings.ALL_MESSAGES, UnreadSetting.ALL_MESSAGES];
-  const str = require(4486) /* t */;
+  const str = t;
   const items2 = [UserNotificationSettings.ONLY_MENTIONS, UnreadSetting.UNSET];
   const withResult = match.with(items1, () => constants.ALL_MESSAGES);
   const items3 = [UserNotificationSettings.ONLY_MENTIONS, UnreadSetting.ONLY_MENTIONS];
@@ -28,8 +32,8 @@ export const presetFromSettings = function presetFromSettings(unreadSetting, mes
   return match.with(items1, () => constants.ALL_MESSAGES).with(items2, () => constants.MENTIONS).with(items3, () => constants.MENTIONS).with(items4, () => constants.NOTHING).with(items5, () => constants.NOTHING).otherwise(() => constants.CUSTOM);
 };
 export const presetName = function presetName(tmp4Result) {
-  const match = require(4486) /* t */.match(tmp4Result);
-  const str = require(4486) /* t */;
+  const match = t.match(tmp4Result);
+  const str = t;
   const withResult = match.with(obj.ALL_MESSAGES, () => {
     const intl = callback(1236).intl;
     return intl.string(callback(1236).t.hZrr6k);

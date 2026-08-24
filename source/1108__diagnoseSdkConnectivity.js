@@ -5,11 +5,11 @@
 // Exports: diagnoseSdkConnectivity
 
 // Module 1108 (_diagnoseSdkConnectivity)
-import asyncGeneratorStep from "asyncGeneratorStep";
+import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 function _diagnoseSdkConnectivity() {
   const self = this;
-  const tmp = asyncGeneratorStep(function*() {
+  const tmp = callback(function*() {
     if (v0 === 2) {
       v0 = 3;
       HermesBuiltin.throwTypeError();
@@ -21,7 +21,7 @@ function _diagnoseSdkConnectivity() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -44,10 +44,10 @@ function _diagnoseSdkConnectivity() {
                   str = "https://o447951.ingest.sentry.io/api/4509632503087104/envelope/?sentry_version=7&sentry_key=c1dfb07d783ad5325c245c1fd3725390&sentry_client=sentry.javascript.browser%2F1.33.7";
                 }
                 v0 = str;
-                let c2 = 1;
+                c2 = 1;
                 table = 2;
                 v0 = 1;
-                const obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = tmp14(tmp15[1]).suppressTracing(() => fetch(c0, { body: "{}", method: "POST", mode: "cors", credentials: "omit" }));
                 return obj1;
               } else {
@@ -78,7 +78,7 @@ function _diagnoseSdkConnectivity() {
         } else {
           c2 = 0;
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         if (tmp3 === c2) {
@@ -90,7 +90,7 @@ function _diagnoseSdkConnectivity() {
       }
     }
   });
-  const _diagnoseSdkConnectivity = tmp;
+  closure_3 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);

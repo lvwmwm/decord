@@ -1,38 +1,43 @@
-// Module ID: 14350
-// Function ID: 14351
+// Module ID: 14418
+// Function ID: 14419
 // Name: route
-// Dependencies: [676, 10669, 1236, 10685, 14351, 14353, 7474, 6721, 2]
+// Dependencies: [676, 10708, 1236, 10724, 14419, 14421, 7512, 6758, 2]
 
-// Module 14350 (route)
-import createToggle from "createToggle";
+// Module 14418 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getIsEligibleForQuests from "getIsEligibleForQuests" /* 10724 */;
+import QuestsIcon from "QuestsIcon" /* 14419 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.JALI2K);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.JALI2K);
   },
   usePredicate() {
-    return require(10685) /* getIsEligibleForQuests */.getIsEligibleForQuests();
+    return getIsEligibleForQuests.getIsEligibleForQuests();
   },
   parent: null,
-  IconComponent: require("QuestsIcon").QuestsIcon,
+  IconComponent: QuestsIcon.QuestsIcon,
   screen: obj,
   usePreNavigationAction() {
     return () => {
-      let obj = callback(7474);
-      obj = { fromContent: callback(6721).QuestContent.USER_SETTINGS };
+      let obj = callback(7512);
+      obj = { fromContent: callback(6758).QuestContent.USER_SETTINGS };
       const result = obj.setQuestHomeUtmContext(obj);
       return true;
     };
   }
 };
 obj = {
-  route: require("ME").UserSettingsSections.QUESTS,
+  route: ME.UserSettingsSections.QUESTS,
   getComponent() {
-    return require(14353) /* QuestHomeSetting */.default;
+    return require(14421) /* QuestHomeSetting */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-let result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/QuestHomeSetting.tsx");
+let result = set.fileFinishedImporting("modules/user_settings/defs/native/QuestHomeSetting.tsx");
 
 export default route;

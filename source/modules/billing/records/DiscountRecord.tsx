@@ -1,14 +1,13 @@
-// Module ID: 7422
-// Function ID: 7423
+// Module ID: 7460
+// Function ID: 7461
 // Name: createFromServer
 // Dependencies: [1931, 1924, 2]
 
-// Module 7422 (createFromServer)
-import "toJS";
-import GuildFeatures from "GuildFeatures";
+// Module 7460 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
-let DiscountUserUsageLimitIntervalTypes;
-let SubscriptionIntervalTypes;
+toJSDefault;
 ({ SubscriptionIntervalTypes, DiscountUserUsageLimitIntervalTypes } = GuildFeatures);
 let closure_0 = { [DiscountUserUsageLimitIntervalTypes.DAY]: SubscriptionIntervalTypes.DAY, [DiscountUserUsageLimitIntervalTypes.WEEK]: SubscriptionIntervalTypes.DAY, [DiscountUserUsageLimitIntervalTypes.MONTH]: SubscriptionIntervalTypes.MONTH, [DiscountUserUsageLimitIntervalTypes.YEAR]: SubscriptionIntervalTypes.YEAR };
 let DiscountRecord;
@@ -22,12 +21,6 @@ class DiscountRecord extends tmp2 {
 }
 const prototype = DiscountRecord.prototype;
 DiscountRecord["createFromServer"] = function createFromServer(arg0) {
-  let amount;
-  let id;
-  let plan_ids;
-  let user_usage_limit;
-  let user_usage_limit_interval;
-  let user_usage_limit_interval_count;
   ({ id, plan_ids, user_usage_limit_interval, user_usage_limit_interval_count } = arg0);
   ({ user_usage_limit, amount } = arg0);
   if (typeof DiscountRecord !== "function") {

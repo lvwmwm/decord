@@ -1,10 +1,12 @@
-// Module ID: 13561
-// Function ID: 13562
+// Module ID: 13619
+// Function ID: 13620
 // Name: append
 // Dependencies: [2]
 
-// Module 13561 (append)
-const result = require("set").fileFinishedImporting("modules/telemetry_ring/native/channels/BaseTelemetryChannel.tsx");
+// Module 13619 (append)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/telemetry_ring/native/channels/BaseTelemetryChannel.tsx");
 class BaseTelemetryChannel {
   constructor(arg0, arg1) {
     obj = Object.create(new.target.prototype);

@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 462 (Clipboard)
+import getAll from "get" /* 30 */;
 
-export default require("get").getEnforcing("Clipboard");
+
+export default getAll.getEnforcing("Clipboard");

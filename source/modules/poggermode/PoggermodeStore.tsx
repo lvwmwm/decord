@@ -1,21 +1,21 @@
-// Module ID: 7578
-// Function ID: 7579
+// Module ID: 7616
+// Function ID: 7617
 // Name: updateCombo
-// Dependencies: [1218, 1979, 7432, 7433, 676, 4017, 4259, 7579, 1231, 589, 709, 2]
+// Dependencies: [1218, 1980, 7470, 7471, 676, 4020, 4263, 7617, 1231, 589, 709, 2]
 // Exports: getComboId, isComboing, shouldTrackMessage
 
-// Module 7578 (updateCombo)
-import fetchFingerprint from "fetchFingerprint";
-import handleConnectionOpen from "handleConnectionOpen";
-import initialize from "initialize";
-import ConfettiLocation from "ConfettiLocation";
-import { ComponentActions } from "ME";
-import { Store } from "initialize";
-import set from "initialize";
+// Module 7616 (updateCombo)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getComboShakeIntensity from "getComboShakeIntensity" /* 7617 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "handleConnectionOpen" /* 1980 */;
+import closure_4 from "initialize" /* 7470 */;
+import ConfettiLocation from "ConfettiLocation" /* 7471 */;
+import { ComponentActions } from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function updateCombo(userId) {
   let flag;
   flag = true;
@@ -54,7 +54,7 @@ function updateCombo(userId) {
     decayInterval = iter.decayInterval;
   }
   if (decayInterval == null) {
-    decayInterval = new obj(4259).Interval();
+    decayInterval = new obj(4263).Interval();
   }
   obj.decayInterval = decayInterval;
   const result = obj.set("" + userId.userId + "-" + userId.channelId, obj);
@@ -62,15 +62,15 @@ function updateCombo(userId) {
     decayInterval = obj.decayInterval;
     if (decayInterval != null) {
       decayInterval.start(1000, () => {
-        const iter2 = outer1_9.get("" + obj.userId + "-" + obj.channelId);
+        const iter2 = closure_1_9.get("" + obj.userId + "-" + obj.channelId);
         if (null != iter2) {
           if (iter2.value > 0) {
             if (!tmp) {
               obj = {};
               const merged = Object.assign(iter2);
               obj.value = iter2.value - 1;
-              outer1_11(obj);
-              outer1_12.emitChange();
+              closure_1_11(obj);
+              closure_1_12.emitChange();
             }
           }
           const decayInterval = iter2.decayInterval;
@@ -82,8 +82,8 @@ function updateCombo(userId) {
             const merged1 = Object.assign(iter2);
             obj.value = 0;
             obj.multiplier = 1;
-            outer1_11(obj);
-            outer1_12.emitChange();
+            closure_1_11(obj);
+            closure_1_12.emitChange();
           }
           tmp = iter.multiplier !== iter2.multiplier && iter.value !== iter2.value;
         }
@@ -104,18 +104,19 @@ const secondaryIndexMap1 = new require("version").SecondaryIndexMap((combo) => {
   items[2] = combo.combo.userId;
   return items;
 }, (channelId) => "" + channelId.channelId + "-" + channelId.combo.userId + "-" + channelId.messageId);
+const Store = initializeDefault.Store;
 class PoggermodeStore extends Store {
 }
 const prototype = PoggermodeStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, initialize, handleConnectionOpen);
+  this.waitFor(closure_2, closure_4, closure_3);
 };
 prototype["getComboScore"] = function getComboScore(arg0, arg1) {
   const value = secondaryIndexMap.get("" + arg0 + "-" + arg1);
   let num = 0;
   if (null != value) {
-    num = require(7579) /* getComboShakeIntensity */.getComboScore(value);
-    const obj = require(7579) /* getComboShakeIntensity */;
+    num = getComboShakeIntensity.getComboScore(value);
+    const obj = getComboShakeIntensity;
   }
   return num;
 };
@@ -126,7 +127,7 @@ prototype["isComboing"] = function isComboing(id, throwTypeErrorResult) {
   const iter = this.getUserCombo(id, throwTypeErrorResult);
   let tmp = null != iter;
   if (tmp) {
-    tmp = iter.value >= initialize.combosRequiredCount;
+    tmp = iter.value >= closure_4.combosRequiredCount;
   }
   if (tmp) {
     let tmp3 = null != iter;
@@ -161,16 +162,16 @@ prototype["getUserComboShakeIntensity"] = function getUserComboShakeIntensity(id
   const userCombo = this.getUserCombo(id, throwTypeErrorResult);
   let num = 0;
   if (null != userCombo) {
-    num = require(7579) /* getComboShakeIntensity */.getComboShakeIntensity(userCombo, LEVEL_4) * arg2;
-    const obj = require(7579) /* getComboShakeIntensity */;
+    num = getComboShakeIntensity.getComboShakeIntensity(userCombo, LEVEL_4) * arg2;
+    const obj = getComboShakeIntensity;
   }
   return num;
 };
 PoggermodeStore.displayName = "PoggermodeStore";
-const poggermodeStore = new PoggermodeStore(require("dispatcher"), {
+const poggermodeStore = new PoggermodeStore(dispatcherDefault, {
   POGGERMODE_UPDATE_COMBO: function handleComboing(arg0) {
     const merged = Object.assign(arg0, Object.create(null));
-    if (initialize.isEnabled()) {
+    if (closure_4.isEnabled()) {
       updateCombo(merged);
     } else {
       return false;
@@ -178,19 +179,16 @@ const poggermodeStore = new PoggermodeStore(require("dispatcher"), {
   },
   POGGERMODE_UPDATE_MESSAGE_COMBO: function handleUpdateMessageCombo(comboMessage) {
     comboMessage = comboMessage.comboMessage;
-    if (initialize.isEnabled()) {
+    if (closure_4.isEnabled()) {
       const result = secondaryIndexMap1.set(comboMessage.messageId, comboMessage);
     } else {
       return false;
     }
   },
   MESSAGE_CREATE: function handleIncomingMessage(message) {
-    let author;
-    let mentions;
-    let nonce;
     ({ mentions, author, nonce } = message.message);
     let id;
-    if (initialize.isEnabled()) {
+    if (closure_4.isEnabled()) {
       id = id.getId();
       let id1;
       if (author != null) {
@@ -221,12 +219,12 @@ const poggermodeStore = new PoggermodeStore(require("dispatcher"), {
             if (null != mentions) {
               if (null != mentions.find((id) => id.id === id)) {
                 if (null != value) {
-                  let num2 = id(7579).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
+                  let num2 = id(7617).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
                   if (num2 == null) {
                     num2 = 0.001;
                   }
                   let result = num2;
-                  const obj2 = id(7579);
+                  const obj2 = id(7617);
                 } else {
                   const _Math = Math;
                   result = 4 * Math.random();

@@ -1,19 +1,22 @@
-// Module ID: 11162
-// Function ID: 11163
+// Module ID: 11214
+// Function ID: 11215
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 11162 (dispatcher)
-const result = require("set").fileFinishedImporting("actions/TypingActionCreators.tsx");
+// Module 11214 (dispatcher)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("actions/TypingActionCreators.tsx");
 
 export default {
   startTyping(id) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "TYPING_START_LOCAL", channelId: id };
     obj.dispatch(obj);
   },
   stopTyping(id) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "TYPING_STOP_LOCAL", channelId: id };
     obj.dispatch(obj);
   }

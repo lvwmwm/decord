@@ -1,18 +1,18 @@
-// Module ID: 12084
-// Function ID: 12085
+// Module ID: 12136
+// Function ID: 12137
 // Name: useMediaViewerClosePosition
-// Dependencies: [32, 19, 676, 12079, 8601, 4115, 2]
+// Dependencies: [32, 19, 676, 12131, 8638, 4119, 2]
 // Exports: default
 
-// Module 12084 (useMediaViewerClosePosition)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { NOOP } from "ME";
+// Module 12136 (useMediaViewerClosePosition)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { NOOP } from "ME" /* 676 */;
 
 const require = arg1;
 let closure_6 = { code: "function useMediaViewerClosePositionTsx1(){const{index}=this.__closure;return index.get();}" };
 let closure_7 = { code: "function useMediaViewerClosePositionTsx2(index){const{runOnJS,setClosePosition}=this.__closure;runOnJS(setClosePosition)(index);}" };
-const result = require("ME").fileFinishedImporting("modules/media_viewer/native/useMediaViewerClosePosition.tsx");
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/useMediaViewerClosePosition.tsx");
 
 export default function useMediaViewerClosePosition(index) {
   index = index.index;
@@ -42,7 +42,7 @@ export default function useMediaViewerClosePosition(index) {
   const items = [tmp, sources, windowHeight, windowWidth];
   callback = React.useCallback((arg0) => {
     if (null == sources[arg0]) {
-      _undefined();
+      callback();
     }
     if (null != sources[arg0]) {
       let obj = sources(windowHeight[3])(tmp5, tmp6, tmp);

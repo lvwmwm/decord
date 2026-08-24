@@ -1,28 +1,32 @@
-// Module ID: 11869
-// Function ID: 11870
+// Module ID: 11918
+// Function ID: 11919
 // Name: SkipHeaderButton
-// Dependencies: [19, 21, 4661, 712, 1236, 8492, 2]
+// Dependencies: [19, 21, 4668, 712, 1236, 8531, 2]
 // Exports: default
 
-// Module 11869 (SkipHeaderButton)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11918 (SkipHeaderButton)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import GenericHeaderTitle from "GenericHeaderTitle" /* 8531 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { button: null, insideNavigatorButton: null };
-createCacheKey = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { paddingRight: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createCacheKey").fileFinishedImporting("modules/nuf/native/components/SkipHeaderButton.tsx");
+let closure_3 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/nuf/native/components/SkipHeaderButton.tsx");
 
 export default function SkipHeaderButton(label) {
-  const tmp = createCacheKey();
+  const tmp = callback();
   label = label.label;
   if (label == null) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    label = intl.string(require(1236) /* getSystemLocale */.t["5Wxrcd"]);
+    const intl = getSystemLocale.intl;
+    label = intl.string(getSystemLocale.t["5Wxrcd"]);
   }
   const obj = {};
   const merged = Object.assign(label);
@@ -35,5 +39,5 @@ export default function SkipHeaderButton(label) {
   obj.labelStyle = items;
   obj.label = label;
   obj.accessibilityLabel = label;
-  return jsx(require(8492) /* GenericHeaderTitle */.HeaderTextButton, {});
+  return jsx(GenericHeaderTitle.HeaderTextButton, {});
 };

@@ -1,10 +1,12 @@
-// Module ID: 10960
-// Function ID: 10961
+// Module ID: 10999
+// Function ID: 11000
 // Name: metadata
 // Dependencies: [2]
 
-// Module 10960 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/orbs/quest_reward_mobile_bg.mp4.js");
+// Module 10999 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/orbs/quest_reward_mobile_bg.mp4.js");
 
 export default "https://cdn.discordapp.com/assets/content/1bf412bbe50980a19b5d7deeaf320775de6338aba68cb42baf8e49365d749a09.mp4";
 export const metadata = { fileBytes: 126652 };

@@ -1,19 +1,21 @@
-// Module ID: 6789
-// Function ID: 6790
+// Module ID: 6826
+// Function ID: 6827
 // Name: replaceFlagIconAndFlagColor
 // Dependencies: [2]
 // Exports: default
 
-// Module 6789 (replaceFlagIconAndFlagColor)
-const result = require("set").fileFinishedImporting("modules/guild_onboarding/LandingAssetUtils.tsx");
+// Module 6826 (replaceFlagIconAndFlagColor)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/guild_onboarding/LandingAssetUtils.tsx");
 
 export default function replaceFlagIconAndFlagColor(layers, p) {
-  let closure_0 = layers;
-  let closure_1 = arg2;
+  closure_0 = layers;
+  closure_1 = arg2;
   layers.assets[0].p = p;
   layers = layers.layers;
   const findIndexResult = layers.findIndex((nm) => "flag" === nm.nm);
-  let closure_2 = findIndexResult;
+  closure_2 = findIndexResult;
   let it = layers.layers[findIndexResult].shapes[0].it;
   const item = it.forEach((arg0, arg1) => {
     if ("gr" === layers.layers[closure_2].shapes[0].it[arg1].ty) {

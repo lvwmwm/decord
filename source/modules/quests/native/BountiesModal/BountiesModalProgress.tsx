@@ -1,39 +1,36 @@
-// Module ID: 14379
-// Function ID: 14380
+// Module ID: 14447
+// Function ID: 14448
 // Name: BountiesModalProgress
-// Dependencies: [32, 19, 17, 21, 4661, 712, 4115, 4664, 4667, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 4119, 4671, 4674, 2]
 // Exports: default
 
-// Module 14379 (BountiesModalProgress)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14447 (BountiesModalProgress)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 ({ StyleSheet: c5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles(() => {
   let obj = { progressContainer: { height: 4 }, progressTrack: null, progressBar: null, progressBarGlowLayer: null };
   obj = {};
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
-  obj.borderRadius = importDefault(712).radii.round;
-  obj.backgroundColor = importDefault(712).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
+  obj.borderRadius = ThemesDefault.radii.round;
+  obj.backgroundColor = ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
   obj.opacity = 0.54;
   obj[1] = obj;
-  obj = { position: "absolute", height: "100%", left: 0, bottom: 0, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).unsafe_rawColors.GREEN_300, shadowOffset: { width: 0, height: 0 }, shadowRadius: 8, shadowOpacity: 1, elevation: 4, shadowColor: "#30C773" };
+  obj = { position: "absolute", height: "100%", left: 0, bottom: 0, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.unsafe_rawColors.GREEN_300, shadowOffset: { width: 0, height: 0 }, shadowRadius: 8, shadowOpacity: 1, elevation: 4, shadowColor: "#30C773" };
   obj[2] = obj;
-  obj[3] = { position: "absolute", height: "100%", left: 0, bottom: 0, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).unsafe_rawColors.GREEN_300, shadowOffset: { width: 0, height: 0 }, shadowRadius: 12, shadowOpacity: 1, elevation: 8, shadowColor: importDefault(712).unsafe_rawColors.GREEN_300 };
+  obj[3] = { position: "absolute", height: "100%", left: 0, bottom: 0, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.unsafe_rawColors.GREEN_300, shadowOffset: { width: 0, height: 0 }, shadowRadius: 12, shadowOpacity: 1, elevation: 8, shadowColor: ThemesDefault.unsafe_rawColors.GREEN_300 };
   return obj;
 });
 let closure_10 = { code: "function BountiesModalProgressTsx1(){const{withTiming,visible,timingFast}=this.__closure;return{opacity:withTiming(visible?1:0,timingFast)};}" };
 let closure_11 = { code: "function BountiesModalProgressTsx2(){const{withTiming,progress,shouldSkipAnimation,timingNone,timingFast}=this.__closure;return{width:withTiming(progress*100+\"%\",shouldSkipAnimation?timingNone:timingFast,'animate-always')};}" };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalProgress.tsx");
+let result = require("set").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalProgress.tsx");
 
 export default function BountiesModalProgress(progress) {
   progress = progress.progress;
@@ -52,8 +49,8 @@ export default function BountiesModalProgress(progress) {
   class O {
     constructor() {
       tmp = progress;
-      tmp2 = c2;
-      obj = progress(c2[7]);
+      tmp2 = closure_2;
+      obj = progress(closure_2[7]);
       num = 0;
       if (visible) {
         num = 1;
@@ -70,10 +67,10 @@ export default function BountiesModalProgress(progress) {
   let obj2 = progress(first[6]);
   class B {
     constructor() {
-      obj = progress(c2[7]);
+      obj = progress(closure_2[7]);
       result = 100 * progress;
-      tmp2 = progress(c2[8]);
-      obj = { width: obj.withTiming(`${tmp}%`, c2 ? tmp2.timingNone : tmp2.timingFast, "animate-always") };
+      tmp2 = progress(closure_2[8]);
+      obj = { width: obj.withTiming(`${tmp}%`, closure_2 ? tmp2.timingNone : tmp2.timingFast, "animate-always") };
       return obj;
     }
   }
@@ -82,7 +79,7 @@ export default function BountiesModalProgress(progress) {
   B.__workletHash = 15586067343237;
   B.__initData = closure_11;
   const animatedStyle1 = obj2.useAnimatedStyle(B);
-  const obj1 = { style: items, children: null };
+  obj1 = { style: items, children: null };
   items = [tmp.progressContainer, progress.style, animatedStyle];
   obj2 = { style: tmp.progressTrack };
   const items1 = [callback2(closure_6, obj2), , ];

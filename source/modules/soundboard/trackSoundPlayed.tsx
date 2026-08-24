@@ -1,22 +1,21 @@
-// Module ID: 7332
-// Function ID: 7333
+// Module ID: 7370
+// Function ID: 7371
 // Name: trackSoundPlayed
-// Dependencies: [4504, 1391, 4539, 1979, 4781, 676, 1924, 698, 2]
+// Dependencies: [4508, 1391, 4544, 1980, 4786, 676, 1924, 698, 2]
 // Exports: default
 
-// Module 7332 (trackSoundPlayed)
-import initialize from "initialize";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createRTCConnection from "createRTCConnection";
-import handleConnectionOpen from "handleConnectionOpen";
-import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
-import { AnalyticEvents } from "ME";
-import GuildFeatures from "GuildFeatures";
+// Module 7370 (trackSoundPlayed)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import closure_2 from "initialize" /* 4508 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "createRTCConnection" /* 4544 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4786 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
-let c9;
-let metroImportAll;
-({ AnalyticsPremiumFeatureNames: metroImportAll, AnalyticsPremiumFeatureTiers: c9 } = GuildFeatures);
-const result = require("createRTCConnection").fileFinishedImporting("modules/soundboard/trackSoundPlayed.tsx");
+({ AnalyticsPremiumFeatureNames: closure_8, AnalyticsPremiumFeatureTiers: c9 } = GuildFeatures);
+const result = require("set").fileFinishedImporting("modules/soundboard/trackSoundPlayed.tsx");
 
 export default function trackSoundPlayed(location_stack, in_overlay, guildId) {
   channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
@@ -58,5 +57,5 @@ export default function trackSoundPlayed(location_stack, in_overlay, guildId) {
     sum = arg4 + 1;
   }
   obj[13] = sum;
-  importDefault(698).track(AnalyticEvents.PREMIUM_FEATURE_USAGE, obj);
+  expandEventPropertiesDefault.track(AnalyticEvents.PREMIUM_FEATURE_USAGE, obj);
 };

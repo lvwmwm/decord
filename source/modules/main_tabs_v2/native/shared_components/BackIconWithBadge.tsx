@@ -1,19 +1,21 @@
-// Module ID: 15659
-// Function ID: 15660
+// Module ID: 15728
+// Function ID: 15729
 // Name: IconWithBadge
-// Dependencies: [19, 17, 5383, 21, 4661, 712, 589, 15650, 1297, 8402, 501, 6316, 6368, 4328, 2]
+// Dependencies: [19, 17, 5388, 21, 4668, 712, 589, 15719, 1297, 8441, 501, 6347, 6399, 4332, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 15659 (IconWithBadge)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15728 (IconWithBadge)
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import XLargeIcon from "XLargeIcon" /* 4332 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6347 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "updateGuildUnreadSentinel" /* 5388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function IconWithBadge(includeNotificationsCount) {
   let flag = includeNotificationsCount.includeNotificationsCount;
   if (flag === undefined) {
@@ -21,9 +23,9 @@ function IconWithBadge(includeNotificationsCount) {
   }
   let _require;
   let memo;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = _require(589);
-  const items = [updateGuildUnreadSentinel];
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   let num = 0;
   if (null != stateFromStores) {
@@ -31,30 +33,30 @@ function IconWithBadge(includeNotificationsCount) {
   }
   let num2 = 0;
   if (flag) {
-    num2 = memo(15650)().value;
+    num2 = memo(15719)().value;
   }
   const sum = num + num2;
   _require = sum;
   const items1 = [sum];
   memo = React.useMemo(() => {
     if (_undefined < 10) {
-      let BADGE_SIZE = _undefined(outer1_2[8]).BADGE_SIZE;
+      let BADGE_SIZE = _undefined(closure_1_2[8]).BADGE_SIZE;
     } else {
-      BADGE_SIZE = _undefined(outer1_2[8]).BADGE_SIZE + 8;
+      BADGE_SIZE = _undefined(closure_1_2[8]).BADGE_SIZE + 8;
     }
     return BADGE_SIZE;
   }, items1);
   const items2 = [sum, memo];
   const memo1 = React.useMemo(() => {
     if (0 !== _undefined) {
-      const BADGE_PADDING = _undefined(outer1_2[8]).BADGE_PADDING;
+      const BADGE_PADDING = _undefined(closure_1_2[8]).BADGE_PADDING;
       const obj = { shape: null, x: null, y: null, width: null, height: null, cornerRadius: null };
-      obj[0] = _undefined(outer1_2[9]).CutoutShape.RoundedRect;
+      obj[0] = _undefined(closure_1_2[9]).CutoutShape.RoundedRect;
       obj[1] = 12 - BADGE_PADDING;
       obj[2] = 16 - BADGE_PADDING;
       obj[3] = memo + 2 * BADGE_PADDING;
-      obj[4] = _undefined(outer1_2[8]).BADGE_SIZE + 2 * BADGE_PADDING;
-      obj[5] = (_undefined(outer1_2[8]).BADGE_SIZE + 2 * BADGE_PADDING) / 2;
+      obj[4] = _undefined(closure_1_2[8]).BADGE_SIZE + 2 * BADGE_PADDING;
+      obj[5] = (_undefined(closure_1_2[8]).BADGE_SIZE + 2 * BADGE_PADDING) / 2;
       return obj;
     }
   }, items2);
@@ -63,7 +65,7 @@ function IconWithBadge(includeNotificationsCount) {
     obj = { height: 40, width: 40, paddingTop: 8, marginRight: -8 };
   }
   obj = { style: obj, children: null };
-  const obj1 = { style: tmp.backIcon, children: null };
+  obj1 = { style: tmp.backIcon, children: null };
   const tmp11 = closure_7;
   tmp2Result = _require(501);
   const tmp5 = memo;
@@ -73,7 +75,7 @@ function IconWithBadge(includeNotificationsCount) {
   } else {
     items4 = [];
   }
-  const tmp5Result = memo(8402);
+  const tmp5Result = memo(8441);
   const items5 = [closure_6(tmp5Result, { cutouts: items4, children: closure_6(includeNotificationsCount.Icon, obj3) }), ];
   let tmp9Result = null;
   if (sum > 0) {
@@ -91,10 +93,10 @@ function IconWithBadge(includeNotificationsCount) {
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { badgeWrapper: { position: "absolute", top: 16, left: 12 }, backIcon: { height: 24, width: 24 }, iconWithBadge: null };
-createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4, borderRadius: require("Themes").modules.button.BORDER_RADIUS, padding: 7, backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
+createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4, borderRadius: ThemesDefault.modules.button.BORDER_RADIUS, padding: 7, backgroundColor: ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
 createCacheKey[2] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("updateGuildUnreadSentinel").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/BackIconWithBadge.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/BackIconWithBadge.tsx");
 
 export const BACK_ICON_WITH_BADGE_HIT_SLOP = { top: 8, bottom: 8, left: 8, right: 8 };
 export const SettingsLeftIconWithBadge = function SettingsLeftIconWithBadge(navigation) {
@@ -106,10 +108,10 @@ export const SettingsLeftIconWithBadge = function SettingsLeftIconWithBadge(navi
   const items = [navigation];
   const obj = { includeNotificationsCount: flag, Icon: null };
   if (React.useMemo(() => navigation.getState().index > 0, items)) {
-    obj[1] = tmp3(6316).ArrowLargeLeftIcon;
+    obj[1] = tmp3(6347).ArrowLargeLeftIcon;
     let tmp5 = obj;
   } else {
-    obj[1] = tmp3(6368).XSmallIcon;
+    obj[1] = tmp3(6399).XSmallIcon;
     tmp5 = obj;
   }
   return closure_6(IconWithBadge, tmp5);
@@ -119,17 +121,17 @@ export const LeftBackIconWithBadge = function LeftBackIconWithBadge(includeNotif
   if (flag === undefined) {
     flag = false;
   }
-  return callback(IconWithBadge, { includeNotificationsCount: flag, Icon: require(6316) /* ArrowLargeLeftIcon */.ArrowLargeLeftIcon });
+  return callback(IconWithBadge, { includeNotificationsCount: flag, Icon: ArrowLargeLeftIcon.ArrowLargeLeftIcon });
 };
 export const CloseIconWithBadgeOnSide = function CloseIconWithBadgeOnSide(count) {
   count = count.count;
-  let obj = { style: createCacheKey().iconWithBadge, children: null };
-  const items = [callback(require(4328) /* XLargeIcon */.XLargeIcon, { size: "sm", color: "white" }), ];
+  let obj = { style: callback2().iconWithBadge, children: null };
+  const items = [callback(XLargeIcon.XLargeIcon, { size: "sm", color: "white" }), ];
   let tmp3Result = null;
   if (count > 0) {
     obj = { value: null };
     obj[0] = count;
-    tmp3Result = callback(require(1297) /* Button */.Badge, obj);
+    tmp3Result = callback(Button.Badge, obj);
   }
   items[1] = tmp3Result;
   obj[1] = items;

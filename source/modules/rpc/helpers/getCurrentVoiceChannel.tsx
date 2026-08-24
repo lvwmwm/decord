@@ -1,15 +1,15 @@
-// Module ID: 7333
-// Function ID: 7334
+// Module ID: 7371
+// Function ID: 7372
 // Name: getCurrentVoiceChannel
-// Dependencies: [1218, 1391, 4542, 2]
+// Dependencies: [1218, 1391, 4547, 2]
 // Exports: default
 
-// Module 7333 (getCurrentVoiceChannel)
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import updateVoiceState from "updateVoiceState";
+// Module 7371 (getCurrentVoiceChannel)
+import closure_0 from "fetchFingerprint" /* 1218 */;
+import closure_1 from "ensureGuildLoaded" /* 1391 */;
+import closure_2 from "updateVoiceState" /* 4547 */;
 
-const result = require("updateVoiceState").fileFinishedImporting("modules/rpc/helpers/getCurrentVoiceChannel.tsx");
+const result = require("set").fileFinishedImporting("modules/rpc/helpers/getCurrentVoiceChannel.tsx");
 
 export default function getCurrentVoiceChannel() {
   const id = store.getId();

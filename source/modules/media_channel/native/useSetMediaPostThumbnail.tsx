@@ -1,23 +1,23 @@
-// Module ID: 10438
-// Function ID: 10439
+// Module ID: 10477
+// Function ID: 10478
 // Name: useSetMediaPostThumbnail
-// Dependencies: [19, 4825, 4824, 647, 4829, 8466, 4342, 2]
+// Dependencies: [19, 4830, 4829, 647, 4834, 8505, 4346, 2]
 // Exports: default
 
-// Module 10438 (useSetMediaPostThumbnail)
-import noop from "noop";
-import { DraftType } from "handleChanged";
-import map from "map";
+// Module 10477 (useSetMediaPostThumbnail)
+import closure_3 from "noop" /* 19 */;
+import { DraftType } from "handleChanged" /* 4830 */;
+import closure_5 from "map" /* 4829 */;
 
 const require = arg1;
-const result = require("map").fileFinishedImporting("modules/media_channel/native/useSetMediaPostThumbnail.tsx");
+const result = require("set").fileFinishedImporting("modules/media_channel/native/useSetMediaPostThumbnail.tsx");
 
 export default function useSetMediaPostThumbnail(arg0, arg1) {
   const _require = arg0;
-  let closure_1 = arg1;
-  const items = [map];
+  closure_1 = arg1;
+  const items = [closure_5];
   stateFromStores = _require(stateFromStores[3]).useStateFromStores(items, () => {
-    const uploads = outer1_5.getUploads(closure_0, outer1_4.ChannelMessage);
+    const uploads = closure_1_5.getUploads(closure_0, closure_1_4.ChannelMessage);
     let found = uploads.find((item) => {
       let platform;
       if (item != null) {
@@ -54,7 +54,7 @@ export default function useSetMediaPostThumbnail(arg0, arg1) {
       }
       if (tmp4) {
         let obj = callback(stateFromStores[5]);
-        obj.update(closure_0, tmp24.id, outer1_4.ChannelMessage, { thumbnail: false });
+        obj.update(closure_0, tmp24.id, closure_1_4.ChannelMessage, { thumbnail: false });
       }
       let flag;
       if (tmp != null) {
@@ -70,7 +70,7 @@ export default function useSetMediaPostThumbnail(arg0, arg1) {
       }
       obj = { thumbnail: null, spoiler: false };
       obj[0] = !flag;
-      obj2.update(closure_0, id2, outer1_4.ChannelMessage, obj);
+      obj2.update(closure_0, id2, closure_1_4.ChannelMessage, obj);
       callback(stateFromStores[6]).hideActionSheet();
       const obj4 = callback(stateFromStores[6]);
     }

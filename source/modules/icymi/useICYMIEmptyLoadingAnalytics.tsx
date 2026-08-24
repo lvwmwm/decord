@@ -1,18 +1,18 @@
-// Module ID: 15744
-// Function ID: 15745
+// Module ID: 15813
+// Function ID: 15814
 // Name: useICYMIEmptyLoadingAnalytics
-// Dependencies: [19, 9065, 2]
+// Dependencies: [19, 9102, 2]
 // Exports: useICYMIEmptyLoadingAnalytics
 
-// Module 15744 (useICYMIEmptyLoadingAnalytics)
-import noop from "noop";
+// Module 15813 (useICYMIEmptyLoadingAnalytics)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/icymi/useICYMIEmptyLoadingAnalytics.tsx");
 
 export const useICYMIEmptyLoadingAnalytics = function useICYMIEmptyLoadingAnalytics(loading, isFocused) {
-  let closure_0 = loading;
-  let closure_1 = isFocused;
+  closure_0 = loading;
+  closure_1 = isFocused;
   React = React.useRef(null);
   const items = [loading, isFocused];
   const effect = React.useEffect(() => {

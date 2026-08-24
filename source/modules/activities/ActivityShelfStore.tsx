@@ -1,12 +1,14 @@
-// Module ID: 8717
-// Function ID: 8718
+// Module ID: 8754
+// Function ID: 8755
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 8717 (initialize)
-import { PersistedStore } from "initialize";
+// Module 8754 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let closure_0 = { usageByApplicationId: {}, shelfOrder: [] };
+const PersistedStore = initializeDefault.PersistedStore;
 class ActivityShelfStore extends PersistedStore {
 }
 const prototype = ActivityShelfStore.prototype;
@@ -23,9 +25,9 @@ prototype["getState"] = function getState() {
 };
 ActivityShelfStore.displayName = "ActivityShelfStore";
 ActivityShelfStore.persistKey = "ActivityShelfStore";
-const activityShelfStore = new ActivityShelfStore(require("dispatcher"), {
+const activityShelfStore = new ActivityShelfStore(dispatcherDefault, {
   LOGOUT: function reset() {
-    let closure_0 = { usageByApplicationId: {}, shelfOrder: [] };
+    closure_0 = { usageByApplicationId: {}, shelfOrder: [] };
   }
 });
 const result = require("set").fileFinishedImporting("modules/activities/ActivityShelfStore.tsx");

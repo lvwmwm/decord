@@ -1,33 +1,34 @@
-// Module ID: 10861
-// Function ID: 10862
+// Module ID: 10900
+// Function ID: 10901
 // Name: useChannelFollowerStats
-// Dependencies: [32, 19, 10862, 687, 589, 10536, 2]
+// Dependencies: [32, 19, 10901, 687, 589, 10575, 2]
 // Exports: default
 
-// Module 10861 (useChannelFollowerStats)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import getFollowerStatsForChannel from "getFollowerStatsForChannel";
+// Module 10900 (useChannelFollowerStats)
+import setDefault from "set" /* 687 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "getFollowerStatsForChannel" /* 10901 */;
 
 const require = arg1;
-const HOUR = require("set").Millis.HOUR;
-const result = require("getFollowerStatsForChannel").fileFinishedImporting("modules/channel_following/useChannelFollowerStats.tsx");
+const HOUR = setDefault.Millis.HOUR;
+const result = require("set").fileFinishedImporting("modules/channel_following/useChannelFollowerStats.tsx");
 
 export default function useChannelFollowerStats(arg0) {
   const _require = arg0;
   const tmp = stateFromStores(React.useState(false), 2);
   const first = tmp[0];
-  const dependencyMap = tmp[1];
-  const items = [getFollowerStatsForChannel];
+  dependencyMap = tmp[1];
+  const items = [closure_5];
   const items1 = [arg0];
-  stateFromStores = _require(589).useStateFromStores(items, () => outer1_5.getFollowerStatsForChannel(closure_0), items1);
+  stateFromStores = _require(589).useStateFromStores(items, () => closure_1_5.getFollowerStatsForChannel(closure_0), items1);
   const items2 = [arg0, stateFromStores, first];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
       if (!first) {
         dependencyMap(true);
-        const channelFollowerStats = first(10536).fetchChannelFollowerStats(closure_0);
-        const obj = first(10536);
+        const channelFollowerStats = first(10575).fetchChannelFollowerStats(closure_0);
+        const obj = first(10575);
       }
     } else {
       const _Date = Date;

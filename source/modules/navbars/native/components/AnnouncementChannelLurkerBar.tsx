@@ -1,21 +1,20 @@
-// Module ID: 10528
-// Function ID: 10529
+// Module ID: 10567
+// Function ID: 10568
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 4661, 712, 4734, 1236, 4745, 10529, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4739, 1236, 4750, 10568, 2]
 
-// Module 10528 (AnnouncementChannelLurkerBar)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10567 (AnnouncementChannelLurkerBar)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
 const require = arg1;
 class AnnouncementChannelLurkerBar {
   constructor(arg0) {
     channel = global.channel;
-    tmp = jsxs();
+    tmp = closure_5();
     obj = { style: tmp.wrapper, children: null };
     obj = { style: tmp.text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: null };
     intl = require("getSystemLocale").intl;
@@ -26,8 +25,8 @@ class AnnouncementChannelLurkerBar {
       onPress() {
             const guildId = channel.getGuildId();
             if (null != guildId) {
-              const result = channel(outer1_1[8]).showChannelFollowingActionSheet(channel.id, guildId);
-              const obj = channel(outer1_1[8]);
+              const result = channel(closure_1_1[8]).showChannelFollowingActionSheet(channel.id, guildId);
+              const obj = channel(closure_1_1[8]);
             }
           },
       text: null,
@@ -42,13 +41,14 @@ class AnnouncementChannelLurkerBar {
     return jsxs(View, obj);
   }
 }
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 createCacheKey = { wrapper: null, text: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, padding: 16, paddingTop: 8 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, paddingTop: 8 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { textAlign: "center", marginBottom: 8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("jsxProd").fileFinishedImporting("modules/navbars/native/components/AnnouncementChannelLurkerBar.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/navbars/native/components/AnnouncementChannelLurkerBar.tsx");
 
 export default AnnouncementChannelLurkerBar;
 export { AnnouncementChannelLurkerBar };

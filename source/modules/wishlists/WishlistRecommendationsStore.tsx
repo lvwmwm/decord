@@ -1,58 +1,58 @@
-// Module ID: 10347
-// Function ID: 10348
+// Module ID: 10386
+// Function ID: 10387
 // Name: handleUserSettingsStoreUpdate
-// Dependencies: [1994, 589, 709, 2]
+// Dependencies: [1995, 589, 709, 2]
 
-// Module 10347 (handleUserSettingsStoreUpdate)
-import _getSystemLocale from "_getSystemLocale";
-import { Store } from "initialize";
+// Module 10386 (handleUserSettingsStoreUpdate)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "_getSystemLocale" /* 1995 */;
 
 function handleUserSettingsStoreUpdate() {
-  if (locale === _getSystemLocale.locale) {
+  if (locale === closure_0.locale) {
     return false;
   } else {
-    let closure_2 = {};
+    closure_2 = {};
     locale = tmp.locale;
   }
 }
 let closure_2 = {};
+const Store = initializeDefault.Store;
 class WishlistRecommendationsStore extends Store {
 }
 const prototype = WishlistRecommendationsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(_getSystemLocale);
-  const items = [_getSystemLocale];
+  this.waitFor(closure_0);
+  const items = [closure_0];
   this.syncWith(items, handleUserSettingsStoreUpdate);
-  const locale = _getSystemLocale.locale;
+  const locale = closure_0.locale;
 };
-prototype["getRecommendations"] = function getRecommendations(memo, memo3) {
-  if (0 !== memo.length) {
+prototype["getRecommendations"] = function getRecommendations(applicationIds, memo3) {
+  if (0 !== applicationIds.length) {
     if (0 !== memo3.length) {
-      if (0 === memo.length) {
+      if (0 === applicationIds.length) {
         const _Error = Error;
-        const error = new Error("No user IDs provided");
+        error = new Error("No user IDs provided");
         throw error;
       } else {
         const items = [];
-        HermesBuiltin.arraySpread(memo3, HermesBuiltin.arraySpread(memo, 0));
+        HermesBuiltin.arraySpread(memo3, HermesBuiltin.arraySpread(applicationIds, 0));
         return tmp2[items.join(items, ",")];
       }
     }
   }
 };
-const wishlistRecommendationsStore = new WishlistRecommendationsStore(require("dispatcher"), {
+const wishlistRecommendationsStore = new WishlistRecommendationsStore(dispatcherDefault, {
   LOGOUT: function handleLogout() {
-    let closure_2 = {};
+    closure_2 = {};
   },
   WISHLIST_RECOMMENDATIONS_FETCH_START: function handleFetchStart(arg0) {
-    let applicationIds;
-    let userIds;
     ({ userIds, applicationIds } = arg0);
     if (0 !== userIds.length) {
       if (0 !== applicationIds.length) {
         if (0 === userIds.length) {
           const _Error = Error;
-          const error = new Error("No user IDs provided");
+          error = new Error("No user IDs provided");
           throw error;
         } else {
           const items = [];
@@ -67,14 +67,12 @@ const wishlistRecommendationsStore = new WishlistRecommendationsStore(require("d
     return false;
   },
   WISHLIST_RECOMMENDATIONS_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
-    let applicationIds;
-    let userIds;
     ({ userIds, applicationIds } = arg0);
     if (0 !== userIds.length) {
       if (0 !== applicationIds.length) {
         if (0 === userIds.length) {
           const _Error = Error;
-          const error = new Error("No user IDs provided");
+          error = new Error("No user IDs provided");
           throw error;
         } else {
           const items = [];
@@ -93,14 +91,12 @@ const wishlistRecommendationsStore = new WishlistRecommendationsStore(require("d
     return false;
   },
   WISHLIST_RECOMMENDATIONS_FETCH_FAILURE: function handleFetchFailure(arg0) {
-    let applicationIds;
-    let userIds;
     ({ userIds, applicationIds } = arg0);
     if (0 !== userIds.length) {
       if (0 !== applicationIds.length) {
         if (0 === userIds.length) {
           const _Error = Error;
-          const error = new Error("No user IDs provided");
+          error = new Error("No user IDs provided");
           throw error;
         } else {
           const items = [];
@@ -126,6 +122,6 @@ const wishlistRecommendationsStore = new WishlistRecommendationsStore(require("d
     return false;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/wishlists/WishlistRecommendationsStore.tsx");
+const result = require("set").fileFinishedImporting("modules/wishlists/WishlistRecommendationsStore.tsx");
 
 export default wishlistRecommendationsStore;

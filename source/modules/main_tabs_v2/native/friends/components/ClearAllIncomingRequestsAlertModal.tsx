@@ -1,17 +1,17 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 16095
+// Function ID: 16096
 // Name: handleConfirm
-// Dependencies: [5, 19, 21, 9736, 4660, 1236, 4660, 2]
+// Dependencies: [5, 19, 21, 9775, 4667, 1236, 4667, 2]
 // Exports: default
 
-// Module 15998 (handleConfirm)
-import getSystemLocale from "getSystemLocale";
-import "noop";
-import jsxProd from "jsxProd";
+// Module 16095 (handleConfirm)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function handleConfirm() {
   const self = this;
   const apply = _handleConfirm.apply;
@@ -36,7 +36,7 @@ function _handleConfirm() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -51,7 +51,7 @@ function _handleConfirm() {
             obj[0] = arg1;
             return obj;
           } else {
-            let obj1 = v0(outer1_2[3]);
+            obj1 = v0(closure_1_2[3]);
             v0 = 1;
             c0 = 1;
             obj1 = { value: null, done: false };
@@ -68,7 +68,7 @@ function _handleConfirm() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = tmp;
@@ -76,7 +76,7 @@ function _handleConfirm() {
       }
     }
   });
-  const _handleConfirm = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -85,25 +85,26 @@ function _handleConfirm() {
   }
   return applyArgumentsResult;
 }
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ClearAllIncomingRequestsAlertModal.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ClearAllIncomingRequestsAlertModal.tsx");
 
 export default function ClearAllIncomingRequestsAlertModal(incomingRequestCount) {
   let obj = { title: null, content: null, actions: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.z2pFjo);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["0nTvEw"], { incomingRequestCount: incomingRequestCount.incomingRequestCount });
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.z2pFjo);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.formatToPlainString(getSystemLocale.t["0nTvEw"], { incomingRequestCount: incomingRequestCount.incomingRequestCount });
   obj = { children: null };
   obj = { variant: "destructive", onPress: handleConfirm, text: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl3.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
-  const items = [callback2(require(4660) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
-  const obj1 = { variant: "secondary", text: null };
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
-  items[1] = callback2(require(4660) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
+  const intl3 = getSystemLocale.intl;
+  obj[2] = intl3.string(getSystemLocale.t["cY+Oob"]);
+  const items = [callback2(getAlertModalItemKey.AlertActionButton, obj, "confirm"), ];
+  obj1 = { variant: "secondary", text: null };
+  const intl4 = getSystemLocale.intl;
+  obj1[1] = intl4.string(getSystemLocale.t["ETE/oC"]);
+  items[1] = callback2(getAlertModalItemKey.AlertActionButton, obj1, "cancel");
   obj[0] = items;
-  obj[2] = callback3(require(4660) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback2(require(4660) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[2] = callback3(getAlertModalItemKey.AlertActions, obj);
+  return callback2(getAlertModalItemKey.AlertModal, obj);
 };

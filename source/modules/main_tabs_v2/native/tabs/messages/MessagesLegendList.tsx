@@ -1,20 +1,14 @@
-// Module ID: 15318
-// Function ID: 15319
-// Dependencies: [19, 21, 15319, 15295, 15359, 15360, 15307, 15305, 15310, 15320, 15358, 15361, 15363, 2]
+// Module ID: 15382
+// Function ID: 15383
+// Dependencies: [19, 21, 15383, 15359, 15423, 15424, 15371, 15369, 15374, 15384, 15422, 15425, 15427, 2]
 
-// Module 15318
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 15382
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let c3 = importAllResult;
 const memoResult = importAllResult.memo(importAllResult.forwardRef(function MessagesLegendList(listItemHeight, ref) {
-  let accessibilityLabel;
-  let data;
-  let handleScrollAnimated;
-  let insetEnd;
-  let isRefreshEnabled;
-  let recycleItems;
   ({ data, insetEnd } = listItemHeight);
   const estimatedItemSize = listItemHeight.listItemHeight;
   const listItemSuggestedFriendHeight = listItemHeight.listItemSuggestedFriendHeight;
@@ -172,6 +166,6 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef(function Mess
   const scrollIndicatorInsets = listLeft.useMemo(() => ({ bottom: scrollIndicatorInsetBottom }), items8);
   return listRefHappeningNow(insetEnd(listItemSuggestedFriendHeight[12]).AnimatedLegendList, { ref, accessibilityLabel, contentContainerStyle, data: data.listData, estimatedHeaderSize, estimatedItemSize, getFixedItemSize, getItemType, keyExtractor, ListFooterComponent, ListHeaderComponent, onScroll, recycleItems, renderItem, scrollIndicatorInsets, stickyHeaderIndices });
 }));
-const result = require("useMessagesFlatData").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesLegendList.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesLegendList.tsx");
 
 export default memoResult;

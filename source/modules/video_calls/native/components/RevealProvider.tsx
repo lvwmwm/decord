@@ -1,34 +1,30 @@
-// Module ID: 8678
-// Function ID: 8679
+// Module ID: 8715
+// Function ID: 8716
 // Name: useRevealProviderValue
-// Dependencies: [19, 4086, 4540, 8669, 21, 589, 8673, 8679, 500, 4310, 8032, 8680, 2]
+// Dependencies: [19, 4089, 4545, 8706, 21, 589, 8710, 8716, 500, 4314, 8071, 8717, 2]
 // Exports: default
 
-// Module 8678 (useRevealProviderValue)
-import importAllResult from "noop";
-import setContent from "setContent";
-import set from "set";
-import VoiceChatDrawerState from "VoiceChatDrawerState";
-import jsxProd from "jsxProd";
+// Module 8715 (useRevealProviderValue)
+import areParticipantStatesEqualDefault from "areParticipantStatesEqual" /* 8710 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 8716 */;
+import importAllResult from "noop" /* 19 */;
+import closure_4 from "setContent" /* 4089 */;
+import closure_5 from "set" /* 4545 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 8706 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c10;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-let unpackModuleId;
-let require = arg1;
+const require = arg1;
 function useRevealProviderValue(arg0, channel) {
   let tmp = arg0;
-  const items = [setContent];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => null != key.getKey());
-  const obj = require(589) /* initialize */;
-  const tmp2 = require;
-  const tmp5 = importDefault(8673)(channel);
+  const items = [closure_4];
+  const stateFromStores = stateFromStores1(589).useStateFromStores(items, () => null != key.getKey());
+  const obj = stateFromStores1(589);
+  const tmp2 = stateFromStores1;
+  const tmp5 = areParticipantStatesEqualDefault(channel);
   const tmp6 = callback2();
-  const items1 = [set];
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
-  const obj2 = require(589) /* initialize */;
+  const items1 = [closure_5];
+  stateFromStores1 = stateFromStores1(589).useStateFromStores(items1, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
+  const obj2 = stateFromStores1(589);
   if (!arg0) {
     tmp = stateFromStores;
   }
@@ -44,24 +40,20 @@ function useRevealProviderValue(arg0, channel) {
   if (!tmp) {
     tmp = stateFromStores1;
   }
-  require = tmp;
-  const tmp8 = importDefault(8679)(channel.id);
+  stateFromStores1 = tmp;
+  const tmp8 = useIsActivityFocusedDefault(channel.id);
   const tmp10 = tmp2(500).isIOS() && tmp8;
   importDefault = tmp10;
   const items2 = [tmp, tmp10];
-  return importAllResult.useMemo(() => ({ reveal: closure_0, prefersDeferringSystemGestures: closure_1 }), items2);
+  return importAllResult.useMemo(() => ({ reveal: stateFromStores1, prefersDeferringSystemGestures: closure_1 }), items2);
 }
 let c3 = importAllResult;
-({ useChannelCallStore: closure_6, focusTimeout: error, resetFocusTimer: metroImportAll, useIsVoiceChatFocused: c9 } = VoiceChatDrawerState);
+({ useChannelCallStore: closure_6, focusTimeout: error, resetFocusTimer: closure_8, useIsVoiceChatFocused: c9 } = VoiceChatDrawerState);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 const context = importAllResult.createContext({ reveal: true });
 const result = require("set").fileFinishedImporting("modules/video_calls/native/components/RevealProvider.tsx");
 
 export default function RevealProvider(showStatus) {
-  let channel;
-  let children;
-  let prefersDeferringSystemGestures;
-  let reveal;
   let flag = showStatus.showStatus;
   ({ channel, children } = showStatus);
   if (flag === undefined) {
@@ -71,17 +63,17 @@ export default function RevealProvider(showStatus) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let c0;
+  closure_0 = undefined;
   const tmp = callback((focus) => focus.focus);
-  c0 = tmp;
+  closure_0 = tmp;
   const tmp2 = useRevealProviderValue(tmp, channel);
   ({ reveal, prefersDeferringSystemGestures } = tmp2);
   const items = [tmp];
   const effect = importAllResult.useEffect(() => {
-    if (c0) {
-      outer1_8();
+    if (closure_0) {
+      closure_1_8();
     } else {
-      outer1_7.stop();
+      closure_1_7.stop();
     }
   }, items);
   let str = "light-content";
@@ -93,13 +85,13 @@ export default function RevealProvider(showStatus) {
   }
   const obj = { value: tmp2, children: null };
   let tmp10 = !reveal;
-  let tmp4Result = tmp4(8032);
+  let tmp4Result = tmp4(8071);
   if (!reveal) {
     tmp10 = !flag;
   }
   const items1 = [closure_10(tmp4Result, { hidden: tmp10, animated: true, barStyle: str }), children, ];
   let tmp12 = !reveal;
-  tmp4Result = tmp4(8680);
+  tmp4Result = tmp4(8717);
   if (!reveal) {
     tmp12 = !prefersDeferringSystemGestures;
   }

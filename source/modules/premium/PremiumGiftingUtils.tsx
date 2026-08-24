@@ -1,29 +1,29 @@
-// Module ID: 8294
-// Function ID: 8295
+// Module ID: 8334
+// Function ID: 8335
 // Name: _sendGiftMessage
-// Dependencies: [5, 1391, 4663, 4770, 38, 4381, 7427, 7436, 2]
+// Dependencies: [5, 1391, 4670, 4775, 38, 4385, 7465, 7474, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 8294 (_sendGiftMessage)
-import _resolveGiftCode from "_resolveGiftCode";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+// Module 8334 (_sendGiftMessage)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4670 */;
 
 const require = arg1;
 function _sendGiftMessage() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
-      let _resolveGiftCode = tmp5;
-      let dependencyMap = tmp2;
+      closure_3 = tmp5;
+      dependencyMap = tmp2;
       const callback = lib;
       if (null == lib) {
         const _Error2 = Error;
-        let error = new Error("giftCode must be defined");
+        error = new Error("giftCode must be defined");
         throw error;
       }
       if (null == tmp40) {
@@ -31,30 +31,30 @@ function _sendGiftMessage() {
         const error1 = new Error("Recipient must be defined");
         throw error1;
       }
-      const obj2 = lib(outer1_2[3]);
-      const obj1 = { recipientIds: null };
+      const obj2 = lib(closure_1_2[3]);
+      obj1 = { recipientIds: null };
       obj1[0] = tmp40.id;
       lib = yield obj2.openPrivateChannel(obj1).then((arg0) => {
         channel = channel.getChannel(arg0);
         callback(table[4])(null != channel, "PrivateChannel is null");
         if (null == channel) {
           const _Error = Error;
-          const error = new Error("Channel must be defined");
+          error = new Error("Channel must be defined");
           throw error;
         } else {
           return channel;
         }
       });
-      dependencyMap = callback(4381).getGiftCodeURL(callback);
-      const obj9 = lib(7427);
+      dependencyMap = callback(4385).getGiftCodeURL(callback);
+      const obj9 = lib(7465);
       const id = lib.id;
-      const obj8 = callback(4381);
+      const obj8 = callback(4385);
       const obj4 = { isGiftLinkSentOnBehalfOfUser: true, location: null };
       obj4[1] = constants.GIFTING;
-      return obj9.sendMessage(id, lib(7436).parse(lib, dependencyMap), undefined, obj4);
+      return obj9.sendMessage(id, lib(7474).parse(lib, dependencyMap), undefined, obj4);
     })();
   });
-  const _sendGiftMessage = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -63,7 +63,7 @@ function _sendGiftMessage() {
   }
   return applyArgumentsResult;
 }
-const result = require("MESSAGE_GROUP_SPACING").fileFinishedImporting("modules/premium/PremiumGiftingUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/PremiumGiftingUtils.tsx");
 
 export const AnimationState = { ACTION: "action", LOOP: "loop", IDLE: "idle" };
 export const sendGiftMessage = function sendGiftMessage() {

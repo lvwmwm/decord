@@ -1,27 +1,31 @@
-// Module ID: 14302
-// Function ID: 14303
+// Module ID: 14370
+// Function ID: 14371
 // Name: route
-// Dependencies: [676, 10669, 1236, 14303, 14305, 2]
+// Dependencies: [676, 10708, 1236, 14371, 14373, 2]
 
-// Module 14302 (route)
-import createToggle from "createToggle";
+// Module 14370 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import LaptopPhoneIcon from "LaptopPhoneIcon" /* 14371 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["+1h0k/"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["+1h0k/"]);
   },
   parent: null,
-  IconComponent: require("LaptopPhoneIcon").LaptopPhoneIcon,
+  IconComponent: LaptopPhoneIcon.LaptopPhoneIcon,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.SESSIONS,
+  route: ME.UserSettingsSections.SESSIONS,
   getComponent() {
-    return require(14305) /* UserSettingsSessions */.default;
+    return require(14373) /* UserSettingsSessions */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/DevicesSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/DevicesSetting.tsx");
 
 export default route;

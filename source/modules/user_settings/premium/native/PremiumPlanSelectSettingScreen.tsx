@@ -1,20 +1,23 @@
-// Module ID: 14347
-// Function ID: 14348
+// Module ID: 14415
+// Function ID: 14416
 // Name: PremiumPlanSelectSettingScreen
-// Dependencies: [19, 21, 7385, 12973, 2]
+// Dependencies: [19, 21, 7423, 13028, 2]
 // Exports: default
 
-// Module 14347 (PremiumPlanSelectSettingScreen)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 14415 (PremiumPlanSelectSettingScreen)
+import noopAll from "noop" /* 19 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7423 */;
+import BoostPurchaseNitroBannerDefault from "BoostPurchaseNitroBanner" /* 13028 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("useSettingNavigationRoute").fileFinishedImporting("modules/user_settings/premium/native/PremiumPlanSelectSettingScreen.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/PremiumPlanSelectSettingScreen.tsx");
 
 export default function PremiumPlanSelectSettingScreen() {
-  let obj = require(7385) /* useSettingNavigationRoute */;
+  let obj = useSettingNavigationRoute;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
   obj = {};
   const merged = Object.assign(settingNavigationRoute.params);
-  return jsx(importDefault(12973), {});
+  return jsx(BoostPurchaseNitroBannerDefault, {});
 };

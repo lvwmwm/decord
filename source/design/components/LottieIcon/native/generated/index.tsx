@@ -1,9 +1,11 @@
-// Module ID: 15294
-// Function ID: 15295
-// Dependencies: [2, 13499, 13501, 13503, 13505, 13507, 12540, 13509, 13511, 13513, 13515, 13517, 13519, 13521, 13523, 13525, 13527, 10406, 10403]
+// Module ID: 15358
+// Function ID: 15359
+// Dependencies: [2, 13557, 13559, 13561, 13563, 13565, 12594, 13567, 13569, 13571, 13573, 13575, 13577, 13579, 13581, 13583, 13585, 10445, 10442]
 
-// Module 15294
-const result = require("items").fileFinishedImporting("design/components/LottieIcon/native/generated/index.tsx");
+// Module 15358
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("design/components/LottieIcon/native/generated/index.tsx");
 for (const key10018 in require("items")) {
   let tmp3 = key10018;
   arg5[key10018] = require("items")[key10018];

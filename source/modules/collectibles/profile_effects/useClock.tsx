@@ -1,16 +1,16 @@
-// Module ID: 9215
-// Function ID: 9216
+// Module ID: 9252
+// Function ID: 9253
 // Name: allowableMinInterval
-// Dependencies: [19, 38, 4761, 2]
+// Dependencies: [19, 38, 4766, 2]
 // Exports: default
 
-// Module 9215 (allowableMinInterval)
-import noop from "noop";
+// Module 9252 (allowableMinInterval)
+import closure_2 from "noop" /* 19 */;
 
-const result = require("useMountLayoutEffect").fileFinishedImporting("modules/collectibles/profile_effects/useClock.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/profile_effects/useClock.tsx");
 
 export default function _default(arg0) {
-  const importDefault = arg0;
+  importDefault = arg0;
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -26,13 +26,13 @@ export default function _default(arg0) {
   if (num2 === undefined) {
     num2 = 3000;
   }
-  let closure_6;
-  let closure_7;
-  let closure_8;
-  let closure_9;
+  closure_6 = undefined;
+  closure_7 = undefined;
+  closure_8 = undefined;
+  closure_9 = undefined;
   let ticking;
-  let closure_11;
-  let closure_12;
+  closure_11 = undefined;
+  closure_12 = undefined;
   let callback;
   let stop;
   let callback2;
@@ -66,7 +66,7 @@ export default function _default(arg0) {
         tmp4.current = current;
       }
       const diff = current - tmp4.current;
-      let num = allowableMinInterval;
+      num = allowableMinInterval;
       const diff1 = current - tmp2.current;
       if (allowableMinInterval == null) {
         num = 120;

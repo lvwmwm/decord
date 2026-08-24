@@ -1,31 +1,38 @@
-// Module ID: 7374
-// Function ID: 7375
+// Module ID: 7412
+// Function ID: 7413
 // Name: defaultMobileWebNitroManagementSuccessCallback
-// Dependencies: [676, 505, 21, 3, 4656, 1236, 500, 1625, 7375, 7377, 2]
+// Dependencies: [676, 505, 21, 3, 4662, 1236, 500, 1625, 7413, 7415, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
-// Module 7374 (defaultMobileWebNitroManagementSuccessCallback)
-import { SubscriptionStatusTypes } from "ME";
-import { PaymentGatewayToFriendlyName as closure_4 } from "sum";
-import { jsx } from "jsxProd";
+// Module 7412 (defaultMobileWebNitroManagementSuccessCallback)
+import set from "set" /* 2 */;
+import timestampDefault from "timestamp" /* 3 */;
+import jsxProd from "jsxProd" /* 21 */;
+import sum from "sum" /* 505 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import _modDef4662 from "module_4662" /* 4662 */;
 
 function defaultMobileWebNitroManagementSuccessCallback() {
-  return tmp2.log("Successfully opened mobile web Nitro Management page");
+  return logger.log("Successfully opened mobile web Nitro Management page");
 }
 function defaultMobileWebNitroManagementFailureCallback(arg0) {
-  tmp2.error("Failed to open mobile web Nitro Management page, error response: ", arg0);
-  let obj = importDefault(4656);
+  logger.error("Failed to open mobile web Nitro Management page, error response: ", arg0);
+  obj = _modDef4662;
   obj = { title: null, body: null, hideActionSheet: true };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.NrBVjw);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["gD+grx"]);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.NrBVjw);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t["gD+grx"]);
   obj.show(obj);
 }
-let closure_6 = new require("timestamp")("PremiumManagementUtils");
+const SubscriptionStatusTypes = ME.SubscriptionStatusTypes;
+let closure_4 = sum.PaymentGatewayToFriendlyName;
+const jsx = jsxProd.jsx;
+let closure_6 = new timestampDefault("PremiumManagementUtils");
 let obj = { IN_APP: "manage_in_app", IN_EXTERNAL_MOBILE_PAYMENT_GATEWAY: "manage_in_external_mobile_payment_gateway", IN_WEB: "manage_in_web" };
-const tmp2 = new require("timestamp")("PremiumManagementUtils");
-let result = require("jsxProd").fileFinishedImporting("modules/premium/native/utils/PremiumManagementUtils.tsx");
+const tmp2 = new timestampDefault("PremiumManagementUtils");
+let result = set.fileFinishedImporting("modules/premium/native/utils/PremiumManagementUtils.tsx");
 
 export const MobileWebDestinationTypes = { PREMIUM_MANAGEMENT: "premium_management" };
 export const PremiumManagementMethod = obj;
@@ -48,7 +55,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
   if (arg1 === undefined) {
     tmp = null;
   }
-  const require = tmp;
+  const _require = tmp;
   if (null == subscription) {
     if (null != null) {
       if (null !== obj.IN_APP) {
@@ -86,33 +93,33 @@ export const getExternalManagementMessage = function getExternalManagementMessag
                 obj = { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" };
                 obj[0] = { justifyContent: "flex-start" };
                 obj[1] = function onPress() {
-                  if (null != tmp) {
-                    let obj = tmp(outer1_2[8]);
+                  if (null != _null) {
+                    obj = _null(closure_1_2[8]);
                     obj = { loadId: null };
                     obj[0] = tmp.loadId;
-                    const tmp4 = null != tmp.onSuccessCallback ? tmp.onSuccessCallback : outer1_8;
-                    const tmp5 = null != tmp.onFailureCallback ? tmp.onFailureCallback : outer1_9;
+                    const tmp4 = null != tmp.onSuccessCallback ? tmp.onSuccessCallback : closure_1_8;
+                    const tmp5 = null != tmp.onFailureCallback ? tmp.onFailureCallback : closure_1_9;
                     const result = obj.goToStandaloneNitroManagementFromMobileApp("premium_external_management", obj, tmp4, tmp5);
                   }
                 };
                 const intl3 = tmp13(1236).intl;
                 const t = tmp13(1236).t;
                 obj[2] = intl3.string(tmp8 ? t.tqSSSA : t["olSp/D"]);
-                jsx(tmp13(7377).LinkButton, { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" });
+                jsx(tmp13(7415).LinkButton, { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" });
                 const tmp9 = jsx;
               } else {
                 function manageExternalNitroSubscription() {
-                  if (null != tmp) {
-                    let obj = tmp(outer1_2[8]);
+                  if (null != _null) {
+                    obj = _null(closure_1_2[8]);
                     obj = { loadId: null };
                     obj[0] = tmp.loadId;
-                    const tmp4 = null != tmp.onSuccessCallback ? tmp.onSuccessCallback : outer1_8;
-                    const tmp5 = null != tmp.onFailureCallback ? tmp.onFailureCallback : outer1_9;
+                    const tmp4 = null != tmp.onSuccessCallback ? tmp.onSuccessCallback : closure_1_8;
+                    const tmp5 = null != tmp.onFailureCallback ? tmp.onFailureCallback : closure_1_9;
                     return obj.goToStandaloneNitroManagementFromMobileApp("premium_external_management", obj, tmp4, tmp5);
                   }
                 }
                 const intl2 = tmp13(1236).intl;
-                const obj1 = { manageExternalNitroSubscription: null };
+                obj1 = { manageExternalNitroSubscription: null };
                 obj1[0] = manageExternalNitroSubscription;
                 return intl2.format(tmp13(1236).t.IERwUb, obj1);
               }
@@ -126,7 +133,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
         } else {
           return null;
         }
-        obj7 = require(500) /* set */;
+        obj7 = _require(500);
       }
     }
     return null;

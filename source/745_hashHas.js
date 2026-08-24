@@ -4,10 +4,12 @@
 // Dependencies: [736]
 
 // Module 745 (hashHas)
+import getNative from "getNative" /* 736 */;
+
 
 export default function hashHas(arg0) {
   const __data__ = this.__data__;
-  if (require(736) /* getNative */) {
+  if (getNative) {
     let tmp2 = undefined !== __data__[arg0];
   } else {
     const call = hasOwnProperty.call;

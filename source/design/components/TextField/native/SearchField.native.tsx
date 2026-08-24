@@ -1,26 +1,29 @@
-// Module ID: 7337
-// Function ID: 7338
+// Module ID: 7375
+// Function ID: 7376
 // Name: SearchField
-// Dependencies: [19, 21, 7338, 1236, 7351, 2]
+// Dependencies: [19, 21, 7376, 1236, 7389, 2]
 
-// Module 7337 (SearchField)
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 7375 (SearchField)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import TextField from "TextField" /* 7376 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7389 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-const forwardRefResult = require("noop").forwardRef((arg0, arg1) => {
+require = arg1;
+const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
   const obj = { placeholder: null, returnKeyType: "search", ref: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["5h0QOP"]);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["5h0QOP"]);
   obj[2] = arg1;
   const merged = Object.assign(arg0);
   obj.autoCorrect = false;
   obj.autoCapitalize = "none";
   obj.accessibilityRole = "search";
-  obj.leadingIcon = require(7351) /* MagnifyingGlassIcon */.MagnifyingGlassIcon;
+  obj.leadingIcon = MagnifyingGlassIcon.MagnifyingGlassIcon;
   obj.isClearable = true;
-  return jsx(require(7338) /* TextField */.TextField, { placeholder: null, returnKeyType: "search", ref: null });
+  return jsx(TextField.TextField, { placeholder: null, returnKeyType: "search", ref: null });
 });
-const result = require("TextField").fileFinishedImporting("design/components/TextField/native/SearchField.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/TextField/native/SearchField.native.tsx");
 
 export const SearchField = forwardRefResult;

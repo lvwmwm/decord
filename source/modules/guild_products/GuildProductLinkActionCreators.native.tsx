@@ -1,18 +1,22 @@
-// Module ID: 12415
-// Function ID: 12416
+// Module ID: 12467
+// Function ID: 12468
 // Name: openGuildProductLink
-// Dependencies: [4656, 1236, 2]
+// Dependencies: [4662, 1236, 2]
 // Exports: openGuildProductLink
 
-// Module 12415 (openGuildProductLink)
-const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductLinkActionCreators.native.tsx");
+// Module 12467 (openGuildProductLink)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+
+const result = set.fileFinishedImporting("modules/guild_products/GuildProductLinkActionCreators.native.tsx");
 
 export const openGuildProductLink = function openGuildProductLink(closure_0, closure_1) {
-  let obj = importDefault(4656);
+  let obj = _modDef4662;
   obj = { body: null, confirmText: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["mYlo/T"]);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.BddRzS);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["mYlo/T"]);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t.BddRzS);
   obj.show(obj);
 };

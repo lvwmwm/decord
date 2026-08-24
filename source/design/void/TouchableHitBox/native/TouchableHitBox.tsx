@@ -1,44 +1,31 @@
-// Module ID: 8910
-// Function ID: 8911
+// Module ID: 8947
+// Function ID: 8948
 // Name: render
-// Dependencies: [19, 17, 21, 4661, 712, 4104, 1297, 5433, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4107, 1297, 5438, 2]
 
-// Module 8910 (render)
-import { ActivityIndicator } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import { PureComponent } from "noop";
-import importAllResult from "noop";
+// Module 8947 (render)
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 createCacheKey = { button: null, buttonText: null, buttonIcon: null, buttonSpinner: null, buttonDisabled: null };
-createCacheKey = { flexGrow: 0, flexShrink: 1, justifyContent: "center", alignItems: "center", backgroundColor: "transparent", alignSelf: "flex-start", borderRadius: require("Themes").radii.sm };
+createCacheKey = { flexGrow: 0, flexShrink: 1, justifyContent: "center", alignItems: "center", backgroundColor: "transparent", alignSelf: "flex-start", borderRadius: ThemesDefault.radii.sm };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { lineHeight: 24, margin: 10, maxWidth: 60, fontSize: 16 };
 createCacheKey[2] = { margin: 10 };
 createCacheKey[3] = { margin: 12 };
 createCacheKey[4] = { opacity: 0.6 };
-createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+let closure_4 = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+const PureComponent = importAllResult.PureComponent;
 class TouchableHitBox extends PureComponent {
 }
 TouchableHitBox.prototype["render"] = function render() {
-  let IconComponent;
-  let accessibilityLabel;
-  let accessibilityRole;
-  let accessibilityState;
-  let activeOpacity;
-  let color;
-  let disableColor;
-  let disabled;
-  let iconSize;
-  let iconStyle;
-  let loading;
-  let onLongPress;
-  let onPress;
-  let source;
-  let style;
-  let text;
-  const tmp = createCacheKey(this.context);
+  const tmp = callback(this.context);
   const props = this.props;
   ({ disabled, source, text, loading, IconComponent, iconStyle, color, disableColor } = props);
   let tmp2 = undefined !== disableColor;
@@ -63,7 +50,7 @@ TouchableHitBox.prototype["render"] = function render() {
     obj[2] = color;
     obj[3] = iconSize;
     obj[4] = tmp2;
-    tmp8Result = jsx(require(1297) /* Button */.Icon, { style: null, source: null, color: null, size: null, disableColor: null });
+    tmp8Result = jsx(Button.Icon, { style: null, source: null, color: null, size: null, disableColor: null });
     const tmp4 = jsx;
   }
   if (loading) {
@@ -79,12 +66,12 @@ TouchableHitBox.prototype["render"] = function render() {
     }
     obj = { numberOfLines: 1, style: null, children: null };
     items1[1] = buttonDisabled3;
-    const obj1 = { color: null };
+    obj1 = { color: null };
     obj1[0] = color;
     items1[2] = obj1;
     obj[1] = items1;
     obj[2] = text;
-    tmp8Result = jsx(require(1297) /* Button */.LegacyText, { numberOfLines: 1, style: null, children: null });
+    tmp8Result = jsx(Button.LegacyText, { numberOfLines: 1, style: null, children: null });
     const tmp8 = jsx;
   } else {
     if (null != IconComponent) {
@@ -116,7 +103,7 @@ TouchableHitBox.prototype["render"] = function render() {
   }
   obj3[7] = disabled;
   obj3[8] = tmp8Result;
-  return jsx(require(5433) /* PressableBase */.PressableOpacity, { accessibilityRole, accessibilityLabel, accessibilityState, onPress, onLongPress, activeOpacity, style: items3, disabled: null, children: null });
+  return jsx(PressableBase.PressableOpacity, { accessibilityRole, accessibilityLabel, accessibilityState, onPress, onLongPress, activeOpacity, style: items3, disabled: null, children: null });
 };
 TouchableHitBox.contextType = require("ManaContext").ThemeContext;
 TouchableHitBox.defaultProps = {
@@ -124,6 +111,6 @@ TouchableHitBox.defaultProps = {
 
   }
 };
-const result = require("jsxProd").fileFinishedImporting("design/void/TouchableHitBox/native/TouchableHitBox.tsx");
+const result = require("set").fileFinishedImporting("design/void/TouchableHitBox/native/TouchableHitBox.tsx");
 
 export default TouchableHitBox;

@@ -1,31 +1,31 @@
-// Module ID: 15227
-// Function ID: 15228
+// Module ID: 15291
+// Function ID: 15292
 // Name: useInitialRegistrationStep
-// Dependencies: [19, 1218, 5258, 15212, 15211, 589, 5256, 2]
+// Dependencies: [19, 1218, 5263, 15276, 15275, 589, 5261, 2]
 // Exports: default
 
-// Module 15227 (useInitialRegistrationStep)
-import noop from "noop";
-import fetchFingerprint from "fetchFingerprint";
-import hasConsented from "hasConsented";
-import { resetRegistration } from "useRegistrationUIStore";
+// Module 15291 (useInitialRegistrationStep)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "hasConsented" /* 5263 */;
+import { resetRegistration } from "useRegistrationUIStore" /* 15276 */;
 
 const require = arg1;
-const result = require("hasConsented").fileFinishedImporting("modules/auth/native/useInitialRegistrationStep.tsx");
+const result = require("set").fileFinishedImporting("modules/auth/native/useInitialRegistrationStep.tsx");
 
 export default function useInitialRegistrationStep(arg0) {
   const _require = arg0;
-  const items = [hasConsented];
+  const items = [closure_5];
   const stateFromStores = _require(589).useStateFromStores(items, () => authenticationConsentRequired.getAuthenticationConsentRequired());
   const items1 = [stateFromStores, arg0];
   const effect = React.useEffect(() => {
-    let tmp2 = callback === callback(outer1_2[4]).getRegistrationSteps()[1];
+    let tmp2 = callback === callback(closure_1_2[4]).getRegistrationSteps()[1];
     if (tmp2) {
       tmp2 = null == stateFromStores;
     }
     if (tmp2) {
-      const locationMetadata = stateFromStores(outer1_2[6]).getLocationMetadata();
-      const obj2 = stateFromStores(outer1_2[6]);
+      const locationMetadata = stateFromStores(closure_1_2[6]).getLocationMetadata();
+      const obj2 = stateFromStores(closure_1_2[6]);
     }
   }, items1);
   const items2 = [arg0];
@@ -39,6 +39,6 @@ export default function useInitialRegistrationStep(arg0) {
         }
       };
     }
-    obj = callback(outer1_2[4]);
+    obj = callback(closure_1_2[4]);
   }, items2);
 };

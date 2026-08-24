@@ -1,24 +1,30 @@
-// Module ID: 4538
-// Function ID: 4539
+// Module ID: 4543
+// Function ID: 4544
 // Name: initialize
-// Dependencies: [4529, 595, 589, 12, 709, 2]
+// Dependencies: [4534, 595, 589, 12, 709, 2]
 
-// Module 4538 (initialize)
-import { DeviceTypes } from "DesktopSources";
-import { Store } from "initialize";
+// Module 4543 (initialize)
+import set from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import Storage2 from "Storage" /* 595 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import DesktopSources from "DesktopSources" /* 4534 */;
 
+const DeviceTypes = DesktopSources.DeviceTypes;
 const CertifiedDeviceStore = "CertifiedDeviceStore";
 let closure_5 = {};
 let closure_6 = {};
 let c7 = 0;
+const Store = initializeDefault.Store;
 class CertifiedDeviceStore extends Store {
 }
 const prototype = CertifiedDeviceStore.prototype;
 prototype["initialize"] = function initialize() {
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage2.Storage;
   const value = Storage.get(CertifiedDeviceStore);
   if (null != value) {
-    let item = importDefault(12).forEach(value, (arr) => {
+    let item = applyDefault.forEach(value, (arr) => {
       const item = arr.forEach((type) => {
         if (tmp) {
           type.hardwareMute = false;
@@ -36,7 +42,7 @@ prototype["initialize"] = function initialize() {
         return id;
       });
     });
-    const arr = importDefault(12);
+    const arr = applyDefault;
   }
 };
 prototype["isCertified"] = function isCertified(found) {
@@ -55,8 +61,8 @@ prototype["getCertifiedDeviceName"] = function getCertifiedDeviceName(inputDevic
   return combined;
 };
 prototype["getCertifiedDeviceByType"] = function getCertifiedDeviceByType(arg0) {
-  let closure_0 = arg0;
-  return importDefault(12).find(closure_6, (type) => type.type === closure_0);
+  closure_0 = arg0;
+  return applyDefault.find(closure_6, (type) => type.type === closure_0);
 };
 prototype["isHardwareMute"] = function isHardwareMute(arg0) {
   let flag = false;
@@ -108,10 +114,8 @@ prototype["getRevision"] = function getRevision() {
   return c7;
 };
 CertifiedDeviceStore.displayName = "CertifiedDeviceStore";
-const certifiedDeviceStore = new CertifiedDeviceStore(require("dispatcher"), {
+const certifiedDeviceStore = new CertifiedDeviceStore(dispatcherDefault, {
   CERTIFIED_DEVICES_SET: function handleSetCertifiedDevices(arg0) {
-    let applicationId;
-    let devices;
     ({ applicationId, devices } = arg0);
     if (null != table[applicationId]) {
       const item = arr.forEach((arg0) => {
@@ -124,11 +128,11 @@ const certifiedDeviceStore = new CertifiedDeviceStore(require("dispatcher"), {
       closure_6[id.id] = id;
       return id;
     });
-    const Storage = require(595) /* Storage */.Storage;
+    const Storage = Storage2.Storage;
     const result = Storage.set(CertifiedDeviceStore, tmp);
     closure_7 = closure_7 + 1;
   }
 });
-let result = require("initialize").fileFinishedImporting("stores/CertifiedDeviceStore.tsx");
+let result = set.fileFinishedImporting("stores/CertifiedDeviceStore.tsx");
 
 export default certifiedDeviceStore;

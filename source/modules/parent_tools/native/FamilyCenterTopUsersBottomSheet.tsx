@@ -1,50 +1,57 @@
-// Module ID: 14254
-// Function ID: 14255
+// Module ID: 14322
+// Function ID: 14323
 // Name: UserRow
-// Dependencies: [19, 1922, 21, 4661, 5363, 6291, 4219, 1297, 7175, 4734, 1236, 2335, 6286, 2]
+// Dependencies: [19, 1922, 21, 4668, 5368, 6322, 4223, 1297, 7213, 4739, 1236, 2336, 6317, 2]
 // Exports: default
 
-// Module 14254 (UserRow)
-import "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14322 (UserRow)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import messagesProxyDefault from "messagesProxy" /* 2336 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import Text from "Text" /* 4739 */;
+import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 5368 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import TableRowInner from "TableRowInner" /* 6322 */;
+import ActionSheet from "ActionSheet" /* 7213 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function UserRow(userActivity) {
   userActivity = userActivity.userActivity;
   user = user.getUser(userActivity.user_id);
   if (null == user) {
     return null;
   } else {
-    let obj = require(5363) /* getEmptyActivityFormatter */;
+    let obj = getEmptyActivityFormatter;
     const topUserOrGuildDescription = obj.getTopUserOrGuildDescription(userActivity.dms_sent, userActivity.call_count);
     obj = { label: null, subLabel: null, icon: null };
-    obj[0] = importDefault(4219).getName(user);
+    obj[0] = nameFromUserDefault.getName(user);
     obj[1] = topUserOrGuildDescription;
     obj = { size: null, user: null, guildId: "Array" };
-    obj[0] = require(1297) /* Button */.AvatarSizes.SMALL;
+    obj[0] = Button.AvatarSizes.SMALL;
     obj[1] = user;
-    obj[2] = callback(require(1297) /* Button */.Avatar, obj);
-    return callback(require(6291) /* TableRowInner */.TableRow, obj);
+    obj[2] = callback(Button.Avatar, obj);
+    return callback(TableRowInner.TableRow, obj);
   }
 }
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ header: { textAlign: "center" } });
-const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterTopUsersBottomSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/parent_tools/native/FamilyCenterTopUsersBottomSheet.tsx");
 
 export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   topUserActivities = topUserActivities.topUserActivities;
   let obj = { children: null };
   obj = { variant: "text-md/bold", style: callback3().header, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(importDefault(2335).BxbvS7);
-  const items = [callback(require(4734) /* Text */.Text, obj), ];
-  obj = { hasIcons: true, children: null };
-  obj[1] = topUserActivities.map((userActivity) => callback(closure_7, { userActivity }, userActivity.user_id));
-  items[1] = callback(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(messagesProxyDefault.BxbvS7);
+  const items = [callback(Text.Text, obj), ];
+  obj = { hasIcons: true, children: topUserActivities.map((userActivity) => callback(closure_7, { userActivity }, userActivity.user_id)) };
+  items[1] = callback(TableRowGroupTitle.TableRowGroup, obj);
   obj[0] = items;
-  return callback2(require(7175) /* ActionSheet */.ActionSheet, obj);
+  return callback2(ActionSheet.ActionSheet, obj);
 };

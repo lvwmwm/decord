@@ -1,25 +1,22 @@
-// Module ID: 16207
-// Function ID: 16208
+// Module ID: 16304
+// Function ID: 16305
 // Name: ChannelSubtitle
-// Dependencies: [19, 10055, 21, 16196, 4734, 15486, 10053, 2]
+// Dependencies: [19, 10094, 21, 16293, 4739, 15551, 10092, 2]
 // Exports: renderChannelSubtitle
 
-// Module 16207 (ChannelSubtitle)
-import "noop";
-import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
-import { jsx } from "jsxProd";
+// Module 16304 (ChannelSubtitle)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 15551 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16293 */;
+import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth" /* 10094 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function ChannelSubtitle(arg0) {
-  let channelId;
-  let connected;
-  let guildId;
-  let muted;
-  let subtitle;
-  let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, subtitle } = arg0);
-  let obj = require(15486) /* getChannelSubtitleData */;
+  let obj = getChannelSubtitleData;
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;
@@ -41,21 +38,20 @@ function ChannelSubtitle(arg0) {
       str = "text-muted";
     }
     obj[5] = str;
-    obj.children = tmp(10053).renderMessagePreviewMarkup(obj);
-    return jsx(tmp(4734).Text, { content: null, muted: null, channelId: null, guildId: null, disableAnimatedEmoji: null, color: null });
+    obj.children = tmp(10092).renderMessagePreviewMarkup(obj);
+    return jsx(tmp(4739).Text, { content: null, muted: null, channelId: null, guildId: null, disableAnimatedEmoji: null, color: null });
   }
 }
-const result = require("jsxProd").fileFinishedImporting("modules/launchpad/native/shared/ChannelSubtitle.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/ChannelSubtitle.tsx");
 
 export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
-  let muted;
-  let subtitle;
   ({ subtitle, muted } = arg0);
   if (null == subtitle) {
     return null;
   } else {
     let obj = { variant: null, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75, style: null };
-    obj[0] = importDefault(16196)().messagePreview.text.variant;
+    obj[0] = getLayoutStyleDefault().messagePreview.text.variant;
     let num = 1;
     if (!muted) {
       num = SUBTITLE_OPACITY_NORMAL;
@@ -67,9 +63,9 @@ export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
       obj = {};
       const merged = Object.assign(obj);
       obj.children = subtitle;
-      let tmp9 = jsx(require(4734) /* Text */.Text, {});
+      let tmp9 = jsx(Text.Text, {});
     } else {
-      const obj1 = { channelId: null, guildId: null, subtitle: null, muted: null, connected: null, textProps: null };
+      obj1 = { channelId: null, guildId: null, subtitle: null, muted: null, connected: null, textProps: null };
       obj1[0] = tmp;
       obj1[1] = tmp2;
       obj1[2] = subtitle;

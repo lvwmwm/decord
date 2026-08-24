@@ -1,31 +1,31 @@
-// Module ID: 5904
-// Function ID: 5905
+// Module ID: 5935
+// Function ID: 5936
 // Name: HeroIllocon
-// Dependencies: [21, 5449, 5905, 2]
+// Dependencies: [21, 5454, 5936, 2]
 // Exports: HeroIllocon
 
-// Module 5904 (HeroIllocon)
-import { jsx } from "jsxProd";
+// Module 5935 (HeroIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5936 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HeroIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HeroIllocon.native.tsx");
 
 export const HeroIllocon = function HeroIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5905);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

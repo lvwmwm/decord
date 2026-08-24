@@ -1,23 +1,21 @@
-// Module ID: 9599
-// Function ID: 9600
+// Module ID: 9636
+// Function ID: 9637
 // Name: PremiumGiftBackgroundAnimation
-// Dependencies: [32, 19, 17, 4662, 21, 4661, 589, 8294, 9600, 7130, 2]
+// Dependencies: [32, 19, 17, 4669, 21, 4668, 589, 8334, 9637, 7168, 2]
 // Exports: default
 
-// Module 9599 (PremiumGiftBackgroundAnimation)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9636 (PremiumGiftBackgroundAnimation)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ container: { display: "flex", alignItems: "flex-end", justifyContent: "center", flexDirection: "row" }, consistentHeight: { height: 300 }, animation: { maxWidth: 375, width: "100%", height: "auto" }, baseAnimation: { position: "absolute", bottom: 0 }, lottie: { height: 275 } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundAnimation.android.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundAnimation.android.tsx");
 
 export default function PremiumGiftBackgroundAnimation(giftStyle) {
   giftStyle = giftStyle.giftStyle;
@@ -26,13 +24,13 @@ export default function PremiumGiftBackgroundAnimation(giftStyle) {
   let ref;
   let ref1;
   let first;
-  let closure_5;
+  closure_5 = undefined;
   let first1;
-  let closure_7;
+  closure_7 = undefined;
   let first2;
   let callback;
   let first3;
-  let closure_11;
+  closure_11 = undefined;
   const tmp = callback();
   let obj = giftStyle(ref[6]);
   const items = [first1];
@@ -55,7 +53,7 @@ export default function PremiumGiftBackgroundAnimation(giftStyle) {
   const items2 = [giftStyle];
   const memo = first.useMemo(() => giftStyle(ref[8]).getGiftAnimationData(giftStyle, giftStyle(ref[7]).AnimationState.ACTION), items1);
   const memo1 = first.useMemo(() => giftStyle(ref[8]).getGiftAnimationData(giftStyle, giftStyle(ref[7]).AnimationState.LOOP), items2);
-  let obj1 = giftStyle(ref[8]);
+  obj1 = giftStyle(ref[8]);
   const lottieType = obj1.getLottieType(giftStyle);
   const items3 = [first2, first1, giftStyle, first];
   const memo2 = first.useMemo(() => {

@@ -1,23 +1,23 @@
-// Module ID: 16435
-// Function ID: 16436
+// Module ID: 16530
+// Function ID: 16531
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 4662, 1390, 8664, 13902, 8703, 11441, 21, 4115, 1629, 16229, 13901, 589, 16436, 2]
+// Dependencies: [32, 19, 4669, 1390, 8701, 13970, 8740, 11490, 21, 4119, 1629, 16326, 13969, 589, 16531, 2]
 // Exports: default
 
-// Module 16435 (MediaPlaybackPanelController)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import participantFromServer from "participantFromServer";
-import withEqualityFn from "withEqualityFn";
-import { MediaPlaybackPanelModes } from "MediaPlaybackPanelModes";
-import { ActivityPanelModes } from "ActivityPanelModes";
-import { MorphablePanelModes } from "MIN_PAN_GESTURE_MOVE";
-import { jsx } from "jsxProd";
+// Module 16530 (MediaPlaybackPanelController)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_6 from "participantFromServer" /* 1390 */;
+import closure_7 from "withEqualityFn" /* 8701 */;
+import { MediaPlaybackPanelModes } from "MediaPlaybackPanelModes" /* 13970 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 8740 */;
+import { MorphablePanelModes } from "MIN_PAN_GESTURE_MOVE" /* 11490 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let closure_12 = { code: "function MediaPlaybackPanelControllerTsx1(){const{mode,MediaPlaybackPanelModes,MorphablePanelModes}=this.__closure;switch(mode.get()){case MediaPlaybackPanelModes.PIP:{return MorphablePanelModes.PIP;}default:{return MorphablePanelModes.UNDEFINED;}}}" };
-let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelController.tsx");
+let result = require("set").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelController.tsx");
 
 export default function MediaPlaybackPanelController(children) {
   let sharedValue;
@@ -29,12 +29,12 @@ export default function MediaPlaybackPanelController(children) {
   let sharedValue5;
   let sharedValue4;
   let sharedValue6;
-  let closure_9;
-  let closure_10;
+  closure_9 = undefined;
+  closure_10 = undefined;
   let first;
-  let c12;
-  let closure_13;
-  let c14;
+  closure_12 = undefined;
+  closure_13 = undefined;
+  closure_14 = undefined;
   let stateFromStores;
   sharedValue = undefined;
   derivedValue = undefined;
@@ -49,14 +49,14 @@ export default function MediaPlaybackPanelController(children) {
   const items = [sharedValue3];
   const effect = sharedValue2.useEffect(() => {
     function onChange() {
-      const useReducedMotion = outer1_5.useReducedMotion;
+      const useReducedMotion = closure_1_5.useReducedMotion;
       if (useReducedMotion !== closure_1.get()) {
         const result = closure_1.set(useReducedMotion);
       }
     }
-    let result = _undefined.addReactChangeListener(onChange);
+    let result = closure_5.addReactChangeListener(onChange);
     return () => {
-      const result = c5.removeReactChangeListener(onChange);
+      const result = closure_5.removeReactChangeListener(onChange);
     };
   }, items);
   const obj5 = sharedValue(sharedValue1[9]);
@@ -75,7 +75,7 @@ export default function MediaPlaybackPanelController(children) {
   obj = { mode: sharedValue, MediaPlaybackPanelModes: sharedValue6, MorphablePanelModes: closure_10 };
   fn.__closure = obj;
   fn.__workletHash = 10375114450450;
-  fn.__initData = c12;
+  fn.__initData = closure_12;
   derivedValue = sharedValue(sharedValue1[9]).useDerivedValue(fn);
   const obj8 = sharedValue(sharedValue1[9]);
   const tmp8 = derivedValue(sharedValue1[10])();
@@ -87,12 +87,12 @@ export default function MediaPlaybackPanelController(children) {
   closure_10 = sharedValue2.useRef(undefined);
   const tmp11 = sharedValue3(sharedValue2.useState(sharedValue.get()), 2);
   first = tmp11[0];
-  c12 = tmp13;
+  closure_12 = tmp13;
   const items1 = [first, tmp11[1]];
   closure_13 = sharedValue2.useCallback(() => {
     let flag = first === sharedValue6.PIP;
     if (flag) {
-      _undefined2(tmp.DISMISSED);
+      callback(tmp.DISMISSED);
       derivedValue(sharedValue1[12]).userDidClosePip();
       flag = true;
       const obj = derivedValue(sharedValue1[12]);
@@ -100,17 +100,17 @@ export default function MediaPlaybackPanelController(children) {
     return flag;
   }, items1);
   const tmp14 = sharedValue4((voicePanelsPIP) => voicePanelsPIP.voicePanelsPIP.size > 0);
-  c14 = tmp14;
+  closure_14 = tmp14;
   const obj11 = sharedValue(sharedValue1[9]);
   const items2 = [sharedValue5];
   stateFromStores = sharedValue(sharedValue1[13]).useStateFromStores(items2, () => sharedValue5.getActivityPanelMode() === constants.PIP);
   const items3 = [sharedValue4, tmp14, stateFromStores];
   const layoutEffect = sharedValue2.useLayoutEffect(() => {
-    let tmp2 = !c14;
-    if (!c14) {
+    let tmp2 = !closure_14;
+    if (!closure_14) {
       tmp2 = !stateFromStores;
     }
     const result = sharedValue4.set(tmp2);
   }, items3);
-  return first(derivedValue(sharedValue1[14]).Provider, { value: sharedValue3(sharedValue2.useState(() => ({ mode: sharedValue, setMode: c12, morphablePanelMode: derivedValue, wrapperDimensions: sharedValue1, useReducedMotion: sharedValue3, pipState: sharedValue2, pipAvoidanceSpecs: c5, dismissToPipGestureRef: closure_10, dismissPanel: closure_13, scrollPosition: sharedValue5, canShowPIP: sharedValue4, lockScrolling: sharedValue6, wrapperOffset: closure_9 })), 1)[0], children: children.children });
+  return first(derivedValue(sharedValue1[14]).Provider, { value: sharedValue3(sharedValue2.useState(() => ({ mode: sharedValue, setMode: closure_12, morphablePanelMode: derivedValue, wrapperDimensions: sharedValue1, useReducedMotion: sharedValue3, pipState: sharedValue2, pipAvoidanceSpecs: closure_5, dismissToPipGestureRef: closure_10, dismissPanel: closure_13, scrollPosition: sharedValue5, canShowPIP: sharedValue4, lockScrolling: sharedValue6, wrapperOffset: closure_9 })), 1)[0], children: children.children });
 };

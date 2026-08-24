@@ -5,7 +5,7 @@
 // Exports: registerReanimatedError, registerWorkletStackDetails, reportFatalErrorOnJS
 
 // Module 1665 (t)
-import _slicedToArray from "_slicedToArray";
+import closure_1 from "_slicedToArray" /* 32 */;
 
 const fn = function t(arg0) {
   let str = "[Reanimated]";
@@ -13,7 +13,7 @@ const fn = function t(arg0) {
     const _HermesInternal = HermesInternal;
     str = "" + "[Reanimated]" + " " + arg0;
   }
-  const error = new Error(str);
+  error = new Error(str);
   error.name = "ReanimatedError";
   return error;
 };
@@ -25,7 +25,7 @@ function registerReanimatedError() {
     global.ReanimatedError = fn;
   } else {
     const _Error = Error;
-    const error = new Error("[Reanimated] registerReanimatedError() must be called on Worklet runtime");
+    error = new Error("[Reanimated] registerReanimatedError() must be called on Worklet runtime");
     throw error;
   }
 }
@@ -41,7 +41,7 @@ export const registerWorkletStackDetails = function registerWorkletStackDetails(
 };
 export const reportFatalErrorOnJS = function reportFatalErrorOnJS(stack) {
   let str = stack.stack;
-  const error = new Error();
+  error = new Error();
   error.message = stack.message;
   let tmp2;
   if (str) {
@@ -50,10 +50,10 @@ export const reportFatalErrorOnJS = function reportFatalErrorOnJS(stack) {
       const item = match.forEach((str) => {
         const parts = str.split(/:|_/);
         let replaced = globalThis;
-        let concat = outer1_1;
-        const tmp = outer1_1(parts.map(Number), 4);
+        let concat = closure_1_1;
+        const tmp = closure_1_1(parts.map(Number), 4);
         str = tmp[3];
-        const value = outer1_3.get(tmp[1]);
+        const value = closure_1_3.get(tmp[1]);
         if (value) {
           const combined = concat(value, 3);
           let first = combined[0];

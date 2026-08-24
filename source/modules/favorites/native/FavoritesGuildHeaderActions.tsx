@@ -1,27 +1,27 @@
-// Module ID: 15411
-// Function ID: 15412
+// Module ID: 15475
+// Function ID: 15476
 // Name: FavoritesGuildHeaderActionButton
-// Dependencies: [19, 21, 15412, 8035, 6369, 11374, 15413, 2]
+// Dependencies: [19, 21, 15476, 8074, 6400, 11425, 15477, 2]
 // Exports: FavoritesGuildHeaderActionButton
 
-// Module 15411 (FavoritesGuildHeaderActionButton)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15475 (FavoritesGuildHeaderActionButton)
+import noopAll from "noop" /* 19 */;
+import IconButton from "IconButton" /* 8074 */;
+import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 15476 */;
+import handleCreateCategory from "handleCreateCategory" /* 15477 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("useFavoritesGuildHeaderAction").fileFinishedImporting("modules/favorites/native/FavoritesGuildHeaderActions.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/favorites/native/FavoritesGuildHeaderActions.tsx");
 
 export const FavoritesGuildHeaderActionButton = function FavoritesGuildHeaderActionButton() {
-  let exitPreview;
-  let isPreview;
-  let label;
-  ({ isPreview, exitPreview, label } = importDefault(15412)());
-  const obj = { variant: "secondary", size: "sm", icon: null, onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 };
-  obj[2] = importDefault(isPreview ? 6369 : 11374);
+  ({ isPreview, exitPreview, label } = useFavoritesGuildHeaderActionDefault());
+  const obj = { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 6400 : 11425), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 };
   if (!isPreview) {
-    exitPreview = require(15413) /* handleCreateCategory */.openFavoritesGuildAddActionSheet;
+    exitPreview = handleCreateCategory.openFavoritesGuildAddActionSheet;
   }
   obj[3] = exitPreview;
   obj[4] = label;
-  return jsx(require(8035) /* IconButton */.IconButton, { variant: "secondary", size: "sm", icon: null, onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 });
+  return jsx(IconButton.IconButton, { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 6400 : 11425), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 });
 };

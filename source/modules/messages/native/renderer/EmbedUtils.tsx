@@ -1,13 +1,14 @@
-// Module ID: 8171
-// Function ID: 8172
+// Module ID: 8210
+// Function ID: 8211
 // Name: frozen
 // Dependencies: [17, 2]
 // Exports: getAssetUriForEmbed, shouldPlayVideoInline
 
-// Module 8171 (frozen)
-import { Image } from "get ActivityIndicator";
-import set from "set";
+// Module 8210 (frozen)
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import set from "set" /* 2 */;
 
+const Image = get_ActivityIndicator.Image;
 let set = new Set(["YouTube", "TikTok"]);
 const frozen = Object.freeze(set);
 const result = set.fileFinishedImporting("modules/messages/native/renderer/EmbedUtils.tsx");

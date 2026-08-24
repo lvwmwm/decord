@@ -4,7 +4,9 @@
 // Dependencies: [2]
 
 // Module 592 (has)
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/flux/ChangeListeners.tsx");
+import set2 from "set" /* 2 */;
+
+const result = set2.fileFinishedImporting("../discord_common/js/packages/flux/ChangeListeners.tsx");
 class ChangeListeners {
   constructor() {
     obj = Object.create(new.target.prototype);

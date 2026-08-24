@@ -1,16 +1,19 @@
-// Module ID: 17067
-// Function ID: 17068
+// Module ID: 17160
+// Function ID: 17161
 // Name: AVErrorAudioCaptureSampleRateMismatchDefinition
-// Dependencies: [4557, 4497, 4539, 687, 9668, 17055, 2]
+// Dependencies: [4562, 4501, 4544, 687, 9707, 17148, 2]
 
-// Module 17067 (AVErrorAudioCaptureSampleRateMismatchDefinition)
-import updateAveragedStatsHelper from "updateAveragedStatsHelper";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createRTCConnection from "createRTCConnection";
+// Module 17160 (AVErrorAudioCaptureSampleRateMismatchDefinition)
+import setDefault from "set" /* 687 */;
+import mapped from "mapped" /* 9707 */;
+import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17148 */;
+import closure_2 from "updateAveragedStatsHelper" /* 4562 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_4 from "createRTCConnection" /* 4544 */;
 
-const require = arg1;
-let closure_5 = 10 * require("set").Millis.SECOND;
-const result = require("createRTCConnection").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorAudioCaptureSampleRateMismatch.tsx");
+require = arg1;
+let closure_5 = 10 * setDefault.Millis.SECOND;
+const result = require("set").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorAudioCaptureSampleRateMismatch.tsx");
 
 export const AVErrorAudioCaptureSampleRateMismatchDefinition = {
   getActiveErrors() {
@@ -47,12 +50,12 @@ export const AVErrorAudioCaptureSampleRateMismatchDefinition = {
         let tmp5;
         if (Math.abs(num2) > 30) {
           obj = { type: null, audioCaptureSampleRateMismatchPercent: null };
-          obj[0] = require(9668) /* mapped */.AVError.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH;
+          obj[0] = mapped.AVError.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH;
           obj[1] = num2;
-          const merged = Object.assign(require(17055) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
+          const merged = Object.assign(getVoiceChannelErrorContext.getVoiceChannelErrorContext());
           const items = [obj];
           tmp5 = items;
-          const obj4 = require(17055) /* getVoiceChannelErrorContext */;
+          const obj4 = getVoiceChannelErrorContext;
         }
         return tmp5;
       }

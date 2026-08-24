@@ -1,27 +1,28 @@
-// Module ID: 7236
-// Function ID: 7237
+// Module ID: 7274
+// Function ID: 7275
 // Name: GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME
-// Dependencies: [109, 19, 1391, 676, 589, 7237, 7269, 38, 5378, 7140, 7275, 7260, 5269, 2]
+// Dependencies: [109, 19, 1391, 676, 589, 7275, 7307, 38, 5383, 7178, 7313, 7298, 5274, 2]
 // Exports: canInviteToActivity, useFirstMessage, useGameInvitesActiveAndArchivedThreads, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useIsGameInvitesPost, useSubscribeToGameInvitePostAuthors
 
-// Module 7236 (GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import { useMemo } from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import ME from "ME";
+// Module 7274 (GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME)
+import _modDef38 from "module_38" /* 38 */;
+import hasFlagDefault from "hasFlag" /* 7298 */;
+import loadForumPostData from "loadForumPostData" /* 7307 */;
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import { useMemo } from "noop" /* 19 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import ME from "ME" /* 676 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 let closure_3 = ["data"];
-({ ActivityFlags: error, ActivityTypes: metroImportAll } = ME);
+({ ActivityFlags: error, ActivityTypes: closure_8 } = ME);
 let c9 = "No Mic";
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/game_invite_channels/GameInvitesChannelUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/game_invite_channels/GameInvitesChannelUtils.tsx");
 
 export const GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME = "No Mic";
 export const useIsGameInvitesPost = function useIsGameInvitesPost(channel) {
   const _require = channel;
-  const items = [ensureGuildLoaded];
+  const items = [closure_6];
   return _require(589).useStateFromStores(items, () => {
     let tmp = null != closure_0;
     if (tmp) {
@@ -32,7 +33,7 @@ export const useIsGameInvitesPost = function useIsGameInvitesPost(channel) {
       }
       let tmp4 = !tmp3;
       if (!tmp3) {
-        const channel = outer1_6.getChannel(obj.parent_id);
+        const channel = closure_1_6.getChannel(obj.parent_id);
         let flag;
         if (channel != null) {
           flag = channel.isGameInvitesChannel();
@@ -48,10 +49,10 @@ export const useIsGameInvitesPost = function useIsGameInvitesPost(channel) {
   });
 };
 export const useIsGameInvitePostVoiceEnabled = function useIsGameInvitePostVoiceEnabled(thread) {
-  const appliedTags = _require(7237).useAppliedTags(thread);
+  const appliedTags = _require(7275).useAppliedTags(thread);
   _require = thread;
-  const obj = _require(7237);
-  const items = [ensureGuildLoaded];
+  const obj = _require(7275);
+  const items = [closure_6];
   const obj3 = _require(589);
   return _require(589).useStateFromStores(items, () => {
     let tmp = null != closure_0;
@@ -63,7 +64,7 @@ export const useIsGameInvitePostVoiceEnabled = function useIsGameInvitePostVoice
       }
       let tmp4 = !tmp3;
       if (!tmp3) {
-        const channel = outer1_6.getChannel(obj.parent_id);
+        const channel = closure_1_6.getChannel(obj.parent_id);
         let flag;
         if (channel != null) {
           flag = channel.isGameInvitesChannel();
@@ -79,21 +80,21 @@ export const useIsGameInvitePostVoiceEnabled = function useIsGameInvitePostVoice
   }) && !appliedTags.some((name) => name.name === closure_9);
 };
 export const useFirstMessage = function useFirstMessage(stateFromStores, enabled) {
-  let obj = require(7269) /* loadForumPostData */;
+  let obj = loadForumPostData;
   obj = { enabled, allowArchived: true };
   return obj.useFirstForumPostMessage(stateFromStores, obj);
 };
 export const useGameInvitesChannelOfficialApplication = function useGameInvitesChannelOfficialApplication(arg0) {
   let application = arg0;
-  const items = [ensureGuildLoaded];
-  const stateFromStores = application(589).useStateFromStores(items, () => outer1_6.getChannel(application));
+  const items = [closure_6];
+  const stateFromStores = application(589).useStateFromStores(items, () => closure_1_6.getChannel(application));
   let isGameInvitesChannelResult = null == stateFromStores;
   const obj = application(589);
   if (!isGameInvitesChannelResult) {
     isGameInvitesChannelResult = stateFromStores.isGameInvitesChannel();
   }
-  importDefault(38)(isGameInvitesChannelResult, "requires a game invites channel");
-  let tmpResult = tmp(5378);
+  _modDef38(isGameInvitesChannelResult, "requires a game invites channel");
+  let tmpResult = tmp(5383);
   let gameId;
   if (stateFromStores != null) {
     gameId = stateFromStores.gameId;
@@ -103,20 +104,20 @@ export const useGameInvitesChannelOfficialApplication = function useGameInvitesC
   if (data != null) {
     officialApplicationId = data.getOfficialApplicationId();
   }
-  tmpResult = tmp(7140);
+  tmpResult = tmp(7178);
   application = tmpResult.useApplication(officialApplicationId);
   const items1 = [application];
   return useMemo(() => {
-    const merged = Object.assign(outer1_4(application, outer1_3));
+    const merged = Object.assign(closure_1_4(application, closure_1_3));
     return { application: application.data };
   }, items1);
 };
 export const useSubscribeToGameInvitePostAuthors = function useSubscribeToGameInvitePostAuthors(isGameInvitesChannel) {
   const _require = isGameInvitesChannel;
-  let closure_1 = arg1;
+  closure_1 = arg1;
   const isGameInvitesChannelResult = isGameInvitesChannel.isGameInvitesChannel();
-  const dependencyMap = isGameInvitesChannelResult;
-  let items = [ensureGuildLoaded];
+  dependencyMap = isGameInvitesChannelResult;
+  let items = [closure_6];
   const items1 = [isGameInvitesChannelResult, arg1];
   const stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => {
     if (closure_2) {
@@ -125,8 +126,8 @@ export const useSubscribeToGameInvitePostAuthors = function useSubscribeToGameIn
       const items = [];
       const tmp7 = dependencyMap[Symbol.iterator]();
       while (tmp7 !== undefined) {
-        let tmp12 = outer1_6;
-        let channel = outer1_6.getChannel(tmp10);
+        let tmp12 = closure_1_6;
+        let channel = closure_1_6.getChannel(tmp10);
         let ownerId;
         if (channel != null) {
           ownerId = channel.ownerId;
@@ -161,20 +162,20 @@ export const useSubscribeToGameInvitePostAuthors = function useSubscribeToGameIn
     }
     return tmp;
   }, items2);
-  const subscribeGuildMembers = _require(7275).useSubscribeGuildMembers(tmp3, "GameInvitesChannelPostAuthors");
+  const subscribeGuildMembers = _require(7313).useSubscribeGuildMembers(tmp3, "GameInvitesChannelPostAuthors");
 };
 export const canInviteToActivity = function canInviteToActivity(type) {
   let tmp = type.type === constants2.PLAYING;
   if (tmp) {
-    tmp = importDefault(7260)(type, constants.JOIN);
+    tmp = hasFlagDefault(type, constants.JOIN);
   }
   return tmp;
 };
 export const useGameInvitesActiveAndArchivedThreads = function useGameInvitesActiveAndArchivedThreads(isGameInvitesChannel) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
+  closure_0 = arg1;
+  closure_1 = arg2;
   const isGameInvitesChannelResult = isGameInvitesChannel.isGameInvitesChannel();
-  const dependencyMap = isGameInvitesChannelResult;
+  dependencyMap = isGameInvitesChannelResult;
   let items = [isGameInvitesChannelResult, arg1, arg2];
   return useMemo(() => {
     if (closure_2) {
@@ -186,8 +187,8 @@ export const useGameInvitesActiveAndArchivedThreads = function useGameInvitesAct
       const nextResult = iter.next();
       while (iter !== undefined) {
         let tmp11 = nextResult;
-        let tmp12 = outer1_6;
-        let channel = outer1_6.getChannel(nextResult);
+        let tmp12 = closure_1_6;
+        let channel = closure_1_6.getChannel(nextResult);
         if (null != channel) {
           let tmp15 = callback;
           let tmp16 = isGameInvitesChannelResult;

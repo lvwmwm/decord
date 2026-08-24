@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 455 (Appearance)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("Appearance");
+
+export default getAll.get("Appearance");

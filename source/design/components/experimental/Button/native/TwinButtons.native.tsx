@@ -1,14 +1,15 @@
-// Module ID: 8813
-// Function ID: 8814
+// Module ID: 8850
+// Function ID: 8851
 // Name: TwinButtons
-// Dependencies: [19, 17, 21, 4661, 712, 4751, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4756, 4750, 2]
 // Exports: TwinButtons
 
-// Module 8813 (TwinButtons)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8850 (TwinButtons)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_6 = createCacheKey.createStyles((arg0) => {
@@ -17,28 +18,28 @@ let closure_6 = createCacheKey.createStyles((arg0) => {
     str = "column";
   }
   const container = { flexDirection: str, gap: null };
-  const space = importDefault(712).space;
+  const space = ThemesDefault.space;
   container[1] = arg0 ? space.PX_8 : space.PX_12;
   return { container, button: { flex: 1 } };
 });
-const result = require("jsxProd").fileFinishedImporting("design/components/experimental/Button/native/TwinButtons.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/experimental/Button/native/TwinButtons.native.tsx");
 
 export const TwinButtons = function TwinButtons(children) {
   let _require;
-  let obj = _require(4751);
+  let obj = _require(4756);
   let tmp = callback(obj.useFontScale() > 1.2);
   _require = tmp;
   obj = {
     style: tmp.container,
     children: Children.map(children.children, (type) => {
       let tmp = null;
-      if (outer1_3.isValidElement(type)) {
+      if (closure_1_3.isValidElement(type)) {
         tmp = null;
-        if (type.type === _undefined(outer1_2[6]).Button) {
+        if (type.type === lib(closure_1_2[6]).Button) {
           const obj = { style: null, children: null };
-          obj[0] = _undefined.button;
+          obj[0] = lib.button;
           obj[1] = type;
-          tmp = outer1_5(outer1_4, obj);
+          tmp = closure_1_5(closure_1_4, obj);
         }
       }
       return tmp;
@@ -47,13 +48,13 @@ export const TwinButtons = function TwinButtons(children) {
   Children = React.Children;
   return <View style={tmp.container}>{Children.map(arg0.children, (type) => {
     let tmp = null;
-    if (outer1_3.isValidElement(type)) {
+    if (closure_1_3.isValidElement(type)) {
       tmp = null;
-      if (type.type === _undefined(outer1_2[6]).Button) {
+      if (type.type === lib(closure_1_2[6]).Button) {
         const obj = { style: null, children: null };
-        obj[0] = _undefined.button;
+        obj[0] = lib.button;
         obj[1] = type;
-        tmp = outer1_5(outer1_4, obj);
+        tmp = closure_1_5(closure_1_4, obj);
       }
     }
     return tmp;

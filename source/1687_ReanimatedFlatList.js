@@ -4,30 +4,28 @@
 // Dependencies: [109, 19, 17, 21, 1688, 1794, 1792, 1793]
 
 // Module 1687 (ReanimatedFlatList)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import noop from "noop";
-import { useRef } from "noop";
-import { jsx } from "jsxProd";
-import createAnimatedComponent from "createAnimatedComponent";
-import isReactRendering from "isReactRendering";
+import closure_3 from "_objectWithoutProperties" /* 109 */;
+import closure_4 from "noop" /* 19 */;
+import { useRef } from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createAnimatedComponent from "createAnimatedComponent" /* 1688 */;
+import isReactRendering from "isReactRendering" /* 1793 */;
 
-let require = arg1;
+const require = arg1;
 let closure_2 = ["itemLayoutAnimation", "skipEnteringExitingAnimations", "CellRendererComponentStyle"];
 let closure_7 = createAnimatedComponent.createAnimatedComponent(require("get ActivityIndicator").FlatList);
 
 export const ReanimatedFlatList = isReactRendering.componentWithRef((skipEnteringExitingAnimations, ref) => {
-  let CellRendererComponentStyle;
-  let itemLayoutAnimation;
   ({ itemLayoutAnimation, CellRendererComponentStyle } = skipEnteringExitingAnimations);
   const tmp = callback(skipEnteringExitingAnimations, closure_2);
   if (!("scrollEventThrottle" in tmp)) {
     tmp.scrollEventThrottle = 1;
   }
   const tmp2 = useRef(itemLayoutAnimation);
-  const require = tmp2;
+  const _require = tmp2;
   tmp2.current = itemLayoutAnimation;
   const tmp3 = useRef(CellRendererComponentStyle);
-  const dependencyMap = tmp3;
+  dependencyMap = tmp3;
   tmp3.current = CellRendererComponentStyle;
   let obj = { ref };
   const memo = React.useMemo(() => (onLayout) => {
@@ -55,7 +53,7 @@ export const ReanimatedFlatList = isReactRendering.componentWithRef((skipEnterin
     items[1] = current;
     obj[2] = items;
     obj[3] = onLayout.children;
-    return outer1_6(ref(table[5]).AnimatedView, obj);
+    return closure_1_6(ref(table[5]).AnimatedView, obj);
   }, []);
   const merged = Object.assign(tmp);
   obj.CellRendererComponent = memo;
@@ -64,7 +62,7 @@ export const ReanimatedFlatList = isReactRendering.componentWithRef((skipEnterin
   if (undefined !== skipEnteringExitingAnimations.skipEnteringExitingAnimations) {
     obj = { skipEntering: true, skipExiting: true, children: null };
     obj[2] = tmp7;
-    tmp5Result = jsx(require(1792) /* _isNativeReflectConstruct */.LayoutAnimationConfig, { skipEntering: true, skipExiting: true, children: null });
+    tmp5Result = jsx(_require(1792).LayoutAnimationConfig, { skipEntering: true, skipExiting: true, children: null });
   }
   return tmp5Result;
 });

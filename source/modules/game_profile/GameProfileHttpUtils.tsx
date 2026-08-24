@@ -1,38 +1,40 @@
-// Module ID: 9168
-// Function ID: 9169
+// Module ID: 9205
+// Function ID: 9206
 // Name: _getShopCollection
-// Dependencies: [5, 1994, 9098, 676, 9169, 709, 4384, 530, 589, 584, 687, 9163, 2]
+// Dependencies: [5, 1995, 9135, 676, 9206, 709, 4388, 530, 589, 584, 687, 9200, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 9168 (_getShopCollection)
-import dispatcher from "dispatcher";
-import _getSystemLocale from "_getSystemLocale";
-import importDefaultResult from "getSimilarGames";
-import { Endpoints } from "ME";
-import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_7 } from "set";
-import initialize from "initialize";
+// Module 9205 (_getShopCollection)
+import failsDefault from "fails" /* 584 */;
+import setDefault from "set" /* 687 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import importDefaultResult from "getSimilarGames" /* 9135 */;
+import { Endpoints } from "ME" /* 676 */;
+import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_7 } from "set" /* 9206 */;
+import initialize from "initialize" /* 589 */;
 
 const require = arg1;
 function _getShopCollection() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0, body) {
-      const dependencyMap = tmp3;
-      const obj1 = { type: "GAME_PROFILE_GET_SHOP_COLLECTION_START", collectionId: null };
+      dependencyMap = tmp3;
+      obj1 = { type: "GAME_PROFILE_GET_SHOP_COLLECTION_START", collectionId: null };
       obj1[1] = callback;
-      outer1_1(outer1_2[5]).dispatch(obj1);
+      closure_1_1(closure_1_2[5]).dispatch(obj1);
       let locale = 1;
-      const obj9 = outer1_1(outer1_2[5]);
+      const obj9 = closure_1_1(closure_1_2[5]);
       const obj2 = { url: null, query: null, rejectWithError: false, retries: 2 };
       obj2[0] = c6.STOREFRONT_COLLECTION_WITH_PRODUCTS(callback);
       let obj3 = { locale: null };
       obj3[0] = locale.locale;
       obj2[1] = obj3;
-      yield callback(outer1_2[6]).httpGetWithCountryCodeQuery(obj2);
+      yield callback(closure_1_2[6]).httpGetWithCountryCodeQuery(obj2);
       if (1 === tmp7) {
         locale = 0;
         obj3 = callback2(709);
@@ -57,7 +59,7 @@ function _getShopCollection() {
       return body;
     })();
   });
-  const _getShopCollection = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -69,9 +71,9 @@ function _getShopCollection() {
 function _fetchSimilarGames() {
   const self = this;
   let tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0, body) {
       if (c5 === 2) {
         c5 = 3;
@@ -84,7 +86,7 @@ function _fetchSimilarGames() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -99,12 +101,12 @@ function _fetchSimilarGames() {
               obj[0] = body;
               return obj;
             } else {
-              let dispatcher = tmp2;
+              closure_3 = tmp2;
               const table = tmp5;
               let lib;
-              const HTTP = callback(outer1_2[7]).HTTP;
-              const obj1 = { url: null, rejectWithError: true };
-              obj1[0] = outer1_6.SIMILAR_GAMES(callback);
+              const HTTP = callback(closure_1_2[7]).HTTP;
+              obj1 = { url: null, rejectWithError: true };
+              obj1[0] = closure_1_6.SIMILAR_GAMES(callback);
               c4 = 1;
               c5 = 1;
               const obj2 = { value: null, done: false };
@@ -128,7 +130,7 @@ function _fetchSimilarGames() {
             lib = lib.filter((arg0) => {
               let tmp = arg0 !== closure_0;
               if (tmp) {
-                tmp = !outer1_7.has(arg0);
+                tmp = !closure_1_7.has(arg0);
               }
               return tmp;
             });
@@ -138,7 +140,7 @@ function _fetchSimilarGames() {
             obj4[2] = lib;
             obj.dispatch(obj4);
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           c5 = tmp;
@@ -147,7 +149,7 @@ function _fetchSimilarGames() {
       }
     })();
   });
-  const _fetchSimilarGames = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -159,18 +161,18 @@ function _fetchSimilarGames() {
 function _getGameAnnouncements() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c8 = 0;
-    let c9 = 0;
-    let c7 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c8 = 0;
+    c9 = 0;
+    c7 = 0;
     return (function*(arg0, body) {
-      let closure_5 = tmp3;
-      let _getSystemLocale = tmp5;
-      let obj1 = { type: "GAME_PROFILE_GET_ANNOUNCEMENTS_START", gameId: null };
+      closure_5 = tmp3;
+      closure_4 = tmp5;
+      obj1 = { type: "GAME_PROFILE_GET_ANNOUNCEMENTS_START", gameId: null };
       obj1[1] = callback;
-      callback2(outer1_2[5]).dispatch(obj1);
-      let c7 = 1;
+      callback2(closure_1_2[5]).dispatch(obj1);
+      c7 = 1;
       if (body != null) {
         const limit = tmp44.limit;
       }
@@ -178,9 +180,9 @@ function _getGameAnnouncements() {
       if (null != limit) {
         obj2.limit = tmp44.limit;
       }
-      const HTTP = callback(outer1_2[7]).HTTP;
+      const HTTP = callback(closure_1_2[7]).HTTP;
       const obj3 = { url: null, query: null, rejectWithError: false };
-      obj3[0] = outer1_6.GAME_ANNOUNCEMENTS(callback);
+      obj3[0] = closure_1_6.GAME_ANNOUNCEMENTS(callback);
       obj3[1] = obj2;
       yield HTTP.get(obj3);
       if (1 === tmp8) {
@@ -189,7 +191,7 @@ function _getGameAnnouncements() {
         const obj5 = { type: "GAME_PROFILE_GET_ANNOUNCEMENTS_ERROR", gameId: null };
         obj5[1] = callback;
         obj1.dispatch(obj5);
-        let c9 = 3;
+        c9 = 3;
       } else if (arg0 === 1) {
         c9 = 3;
         throw body;
@@ -198,28 +200,28 @@ function _getGameAnnouncements() {
         const obj6 = { type: "GAME_PROFILE_GET_ANNOUNCEMENTS_SUCCESS", gameId: null, messages: null, channelId: null, guildId: null };
         obj6[1] = callback;
         const obj9 = body(709);
-        obj6[2] = callback(9163).toAnnouncementMessages(body.messages);
+        obj6[2] = callback(9200).toAnnouncementMessages(body.messages);
         const channel_id = body.channel_id;
-        let dependencyMap = channel_id;
+        dependencyMap = channel_id;
         if (channel_id == null) {
           dependencyMap = undefined;
         }
         obj6[3] = dependencyMap;
         const guild_id = body.guild_id;
-        let c3 = guild_id;
+        c3 = guild_id;
         if (guild_id == null) {
           c3 = undefined;
         }
         obj6[4] = c3;
         obj9.dispatch(obj6);
         c7 = 0;
-        const obj11 = callback(9163);
+        const obj11 = callback(9200);
       }
       c7 = 0;
       return body;
     })();
   });
-  const _getGameAnnouncements = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -258,18 +260,18 @@ initialize = {
     })(arg0);
   },
   retryConfig: initialize,
-  failureStaleAfter: require("set").Seconds.MINUTE
+  failureStaleAfter: setDefault.Seconds.MINUTE
 };
 initialize = {
   backoff() {
-    let tmp = importDefault(584);
-    const result = 5 * importDefault(687).Millis.SECOND;
-    tmp = new tmp(result, 5 * importDefault(687).Millis.MINUTE);
+    let tmp = failsDefault;
+    const result = 5 * setDefault.Millis.SECOND;
+    tmp = new tmp(result, 5 * setDefault.Millis.MINUTE);
     return tmp;
   }
 };
 const fetchStore = initialize.createFetchStore(importDefaultResult, initialize);
-let result = require("getSimilarGames").fileFinishedImporting("modules/game_profile/GameProfileHttpUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/game_profile/GameProfileHttpUtils.tsx");
 
 export const getShopCollection = function getShopCollection(arg0) {
   const self = this;

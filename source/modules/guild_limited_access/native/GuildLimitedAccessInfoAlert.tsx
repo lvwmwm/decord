@@ -1,40 +1,42 @@
-// Module ID: 13072
-// Function ID: 13073
+// Module ID: 13128
+// Function ID: 13129
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 1910, 13073, 676, 21, 4661, 6782, 712, 1236, 4763, 1297, 4734, 2]
+// Dependencies: [19, 1910, 13129, 676, 21, 4668, 6819, 712, 1236, 4768, 1297, 4739, 2]
 // Exports: default
 
-// Module 13072 (GuildLimitedAccessInfoAlert)
-import "noop";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GUILD_LIMITED_ACCESS_HC_LINK as closure_4 } from "GUILD_LIMITED_ACCESS_HC_LINK";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
+// Module 13128 (GuildLimitedAccessInfoAlert)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import componentDidMountDefault from "componentDidMount" /* 4768 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import { GUILD_LIMITED_ACCESS_HC_LINK as closure_4 } from "GUILD_LIMITED_ACCESS_HC_LINK" /* 13129 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { header: null, text: null };
 createCacheKey = {};
-const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.PRIMARY_BOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+const merged = Object.assign(importDefaultResult(require("ME").Fonts.PRIMARY_BOLD, ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 createCacheKey.textAlign = "center";
 createCacheKey.marginVertical = 12;
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { textAlign: "center", marginVertical: 8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("GUILD_LIMITED_ACCESS_HC_LINK").fileFinishedImporting("modules/guild_limited_access/native/GuildLimitedAccessInfoAlert.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_limited_access/native/GuildLimitedAccessInfoAlert.tsx");
 
 export default function GuildLimitedAccessInfoAlert(arg0) {
-  let guildId;
-  let onClose;
   ({ guildId, onClose } = arg0);
-  const tmp = createCacheKey();
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const tmp = callback3();
+  const intl = getSystemLocale.intl;
   let obj = { helpdeskArticle: closure_4 };
   guild = guild.getGuild(guildId);
-  let formatResult1 = intl.format(require(1236) /* getSystemLocale */.t.ZqkXsC, obj);
+  let formatResult1 = intl.format(getSystemLocale.t.ZqkXsC, obj);
   if (null != guild) {
     const intl2 = tmp2(1236).intl;
     obj = { guildName: null, helpdeskArticle: null };
@@ -43,12 +45,12 @@ export default function GuildLimitedAccessInfoAlert(arg0) {
     formatResult1 = intl2.format(tmp2(1236).t.jn0Xyx, obj);
   }
   obj = { onClose, children: null };
-  const formatResult = intl.format(require(1236) /* getSystemLocale */.t.ZqkXsC, obj);
+  const formatResult = intl.format(getSystemLocale.t.ZqkXsC, obj);
   tmp4 = closure_4;
-  const obj1 = { style: tmp.header, children: null };
+  obj1 = { style: tmp.header, children: null };
   const intl3 = tmp2(1236).intl;
-  obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.kJwpBW);
-  const items = [callback(require(1297) /* Button */.LegacyText, obj1), callback(require(4734) /* Text */.Text, { style: tmp.text, variant: "text-md/medium", children: formatResult1 })];
+  obj1[1] = intl3.string(getSystemLocale.t.kJwpBW);
+  const items = [callback(Button.LegacyText, obj1), callback(Text.Text, { style: tmp.text, variant: "text-md/medium", children: formatResult1 })];
   obj[1] = items;
-  return callback2(importDefault(4763), obj);
+  return callback2(componentDidMountDefault, obj);
 };

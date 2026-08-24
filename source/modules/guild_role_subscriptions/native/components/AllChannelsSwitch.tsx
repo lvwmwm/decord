@@ -1,37 +1,34 @@
-// Module ID: 16982
-// Function ID: 16983
+// Module ID: 17075
+// Function ID: 17076
 // Name: Row
-// Dependencies: [19, 17, 14574, 676, 21, 4661, 712, 6782, 4105, 8910, 1297, 16983, 1236, 16984, 2]
+// Dependencies: [19, 17, 14642, 676, 21, 4668, 712, 6819, 4108, 8947, 1297, 17076, 1236, 17077, 2]
 // Exports: default
 
-// Module 16982 (Row)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { AllChannelAccessOptions } from "AllChannelAccessOptions";
-import { Fonts } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
-import importDefaultResult1 from "createTextStyle";
+// Module 17075 (Row)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4108 */;
+import renderDefault from "render" /* 8947 */;
+import registerAssetDefault from "registerAsset" /* 17076 */;
+import registerAssetDefault2 from "registerAsset" /* 17077 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { AllChannelAccessOptions } from "AllChannelAccessOptions" /* 14642 */;
+import { Fonts } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function Row(arg0) {
-  let accessibilityRole;
-  let accessibilityState;
-  let disabled;
-  let icon;
-  let label;
-  let onPress;
-  let selected;
   ({ selected, disabled } = arg0);
   ({ icon, label, onPress } = arg0);
   if (disabled === undefined) {
     disabled = false;
   }
-  const tmp = createCacheKey();
-  let obj = require(4105) /* useCheckboxA11yNative */;
+  const tmp = callback3();
+  let obj = useCheckboxA11yNative;
   const radioA11yNative = obj.useRadioA11yNative({ selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   obj = { style: tmp.row, accessibilityRole, accessibilityState, disabled: null, onPress: null, children: null };
@@ -41,68 +38,65 @@ function Row(arg0) {
   }
   obj[3] = tmp7;
   obj[4] = onPress;
-  obj = { size: null, source: null };
-  obj[0] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
-  obj[1] = icon;
-  const items = [callback(require(1297) /* Button */.Icon, obj), , ];
+  obj = { size: tmp2(1297).Icon.Sizes.MEDIUM, source: icon };
+  const items = [callback(Button.Icon, obj), , ];
   const items1 = [tmp.rowLabel, ];
   let rowLabelSelected = selected;
   if (selected) {
     rowLabelSelected = tmp.rowLabelSelected;
   }
   items1[1] = rowLabelSelected;
-  items[1] = callback(require(1297) /* Button */.LegacyText, { style: items1, numberOfLines: 1, ellipsizeMode: "tail", children: label });
-  items[2] = callback(require(1297) /* Button */.RadioIndicator, { style: tmp.rowIndicator, active: selected });
+  items[1] = callback(Button.LegacyText, { style: items1, numberOfLines: 1, ellipsizeMode: "tail", children: label });
+  items[2] = callback(Button.RadioIndicator, { style: tmp.rowIndicator, active: selected });
   obj[5] = items;
-  return closure_6(importDefault(8910), obj);
+  return closure_6(renderDefault, obj);
 }
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: null, row: null, rowLabel: null, rowLabelSelected: null, rowIndicator: null, separator: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.sm };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.sm };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { alignSelf: "stretch", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", padding: 16 };
 let obj1 = {};
-const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_SUBTLE, 16));
+const merged = Object.assign(importDefaultResult(Fonts.PRIMARY_MEDIUM, ThemesDefault.colors.TEXT_SUBTLE, 16));
 obj1.flexShrink = 1;
 obj1.marginHorizontal = 16;
 createCacheKey[2] = obj1;
 const obj2 = {};
-const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
+const merged1 = Object.assign(importDefaultResult(Fonts.PRIMARY_SEMIBOLD, ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
 createCacheKey[3] = obj2;
 createCacheKey[4] = { marginStart: "auto" };
-createCacheKey[5] = { backgroundColor: require("Themes").colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj3 = { backgroundColor: require("Themes").colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
-const result = require("AllChannelAccessOptions").fileFinishedImporting("modules/guild_role_subscriptions/native/components/AllChannelsSwitch.tsx");
+const importDefaultResult1 = importDefaultResult;
+createCacheKey[5] = { backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const obj3 = { backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/AllChannelsSwitch.tsx");
 
 export default function AllChannelsSwitch(style) {
-  let channelAccessFormat;
-  let disabled;
-  let require;
   ({ channelAccessFormat, setChannelAccessFormat: require, disabled } = style);
   if (disabled === undefined) {
     disabled = false;
   }
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { style: items, accessibilityRole: "radiogroup", accessibilityState: { disabled }, children: null };
   items = [tmp.container, style.style];
-  obj = { icon: importDefault(16983), label: null, selected: null, onPress: null, disabled: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["vs2T+B"]);
+  obj = { icon: registerAssetDefault, label: null, selected: null, onPress: null, disabled: null };
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t["vs2T+B"]);
   obj[2] = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
   obj[3] = function onPress() {
-    return callback(outer1_4.SOME_CHANNELS_ACCESS);
+    return callback(closure_1_4.SOME_CHANNELS_ACCESS);
   };
   obj[4] = disabled;
   const items1 = [callback(Row, obj), , ];
   obj = { style: tmp.separator };
   items1[1] = callback(View, obj);
-  const obj1 = { icon: importDefault(16984), label: null, selected: null, onPress: null, disabled: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.l4Tr7X);
+  obj1 = { icon: registerAssetDefault2, label: null, selected: null, onPress: null, disabled: null };
+  const intl2 = getSystemLocale.intl;
+  obj1[1] = intl2.string(getSystemLocale.t.l4Tr7X);
   obj1[2] = channelAccessFormat === AllChannelAccessOptions.ALL_CHANNELS_ACCESS;
   obj1[3] = function onPress() {
-    return callback(outer1_4.ALL_CHANNELS_ACCESS);
+    return callback(closure_1_4.ALL_CHANNELS_ACCESS);
   };
   obj1[4] = disabled;
   items1[2] = callback(Row, obj1);

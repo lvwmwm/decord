@@ -1,13 +1,15 @@
-// Module ID: 8341
-// Function ID: 8342
+// Module ID: 8380
+// Function ID: 8381
 // Name: set
-// Dependencies: [8342, 1487, 2]
+// Dependencies: [8381, 1487, 2]
 // Exports: isSuspiciousDownload
 
-// Module 8341 (set)
-import set from "set";
+// Module 8380 (set)
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
+import _modDef8381 from "module_8381" /* 8381 */;
+import set from "set" /* 2 */;
 
-let set = new Set(require("module_8342"));
+let set = new Set(_modDef8381);
 let obj = { "github.com": null, "bitbucket.org": null, "gitlab.com": null };
 const regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
 obj[0] = regExp;
@@ -18,9 +20,7 @@ obj[2] = regExp2;
 const result = set.fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadUtils.tsx");
 
 export const isSuspiciousDownload = function isSuspiciousDownload(localUri) {
-  let hostname;
-  let pathname;
-  const obj = importDefault(1487);
+  obj = isDiscordProxiedAssetUrlDefault;
   let toURLSafeResult = obj.toURLSafe(localUri);
   if (toURLSafeResult == null) {
     toURLSafeResult = {};

@@ -1,31 +1,33 @@
-// Module ID: 16964
-// Function ID: 16965
+// Module ID: 17057
+// Function ID: 17058
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 16950, 14551, 21, 16954, 1236, 16944, 2]
+// Dependencies: [32, 19, 17043, 14619, 21, 17047, 1236, 17037, 2]
 // Exports: default
 
-// Module 16964 (GuildRoleSubscriptionGroupGatingModal)
-import _slicedToArray from "_slicedToArray";
-import "noop";
-import usePriceTiers from "usePriceTiers";
-import { GuildRoleSubscriptionsTierScenes as closure_5 } from "MAX_SUBSCRIPTION_TIERS";
-import { jsx } from "jsxProd";
+// Module 17057 (GuildRoleSubscriptionGroupGatingModal)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 17037 */;
+import HeaderDefault from "Header" /* 17047 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "usePriceTiers" /* 17043 */;
+import { GuildRoleSubscriptionsTierScenes as closure_5 } from "MAX_SUBSCRIPTION_TIERS" /* 14619 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("usePriceTiers").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionGroupGatingModal.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionGroupGatingModal.tsx");
 
 export default function GuildRoleSubscriptionGroupGatingModal(arg0) {
-  let tmp2;
-  let tmp3;
-  [tmp2, tmp3] = callback(usePriceTiers.useGroupIsFullGateState(), 2);
+  [tmp2, tmp3] = callback(closure_4.useGroupIsFullGateState(), 2);
   const obj = { title: null, description: null, canProceedToNextStep: true, nextStep: null };
-  const tmp = callback(usePriceTiers.useGroupIsFullGateState(), 2);
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.N38nNP);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.csJWVI);
+  const tmp = callback(closure_4.useGroupIsFullGateState(), 2);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.N38nNP);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t.csJWVI);
   obj[3] = constants.GROUP;
   const merged = Object.assign(arg0);
-  obj.children = jsx(importDefault(16944), { isFullServerGating: tmp2, onChange: tmp3 });
-  return jsx(importDefault(16954), { title: null, description: null, canProceedToNextStep: true, nextStep: null });
+  obj.children = jsx(FormGuildGatingModeSelectorDefault, { isFullServerGating: tmp2, onChange: tmp3 });
+  return jsx(HeaderDefault, { title: null, description: null, canProceedToNextStep: true, nextStep: null });
 };

@@ -1,11 +1,14 @@
-// Module ID: 5438
-// Function ID: 5439
+// Module ID: 5443
+// Function ID: 5444
 // Name: SafetyHubView
 // Dependencies: [676, 503, 2]
 
-// Module 5438 (SafetyHubView)
-import { AnalyticsSections } from "ME";
+// Module 5443 (SafetyHubView)
+import set from "set" /* 2 */;
+import encodeProperties from "encodeProperties" /* 503 */;
+import ME from "ME" /* 676 */;
 
+const AnalyticsSections = ME.AnalyticsSections;
 let obj = { SETTINGS: "SETTINGS", ACCOUNT_STANDING: "ACCOUNT_STANDING", GUILD_SETTINGS: "GUILD_SETTINGS", ENCRYPTION: "ENCRYPTION", CONTENT_AND_SOCIAL: "CONTENT_AND_SOCIAL", DATA_PRIVACY: "DATA_PRIVACY" };
 const items = [, , ];
 ({ SETTINGS: arr[0], ACCOUNT_STANDING: arr[1], ENCRYPTION: arr[2] } = obj);
@@ -15,9 +18,9 @@ const items1 = [, , , ];
 ({ DIDNT_VIOLATE_POLICY: arr2[0], TOO_STRICT_UNFAIR: arr2[1], DONT_AGREE_PENALTY: arr2[2], SOMETHING_ELSE: arr2[3] } = obj);
 const obj1 = { impression_group: null };
 const frozen = Object.freeze(obj);
-obj1[0] = require("encodeProperties").ImpressionGroups.APPEAL_INGESTION;
+obj1[0] = encodeProperties.ImpressionGroups.APPEAL_INGESTION;
 const obj2 = { SPEED_BUMP: "speed-bump", COLLECT_SIGNAL: "collect-signal", CONFIRM_SUBMISSION: "confirm-submission", REQUEST_SENT: "request-sent", THANKS: "thanks" };
-const result = require("set").fileFinishedImporting("modules/safety_hub/SafetyHubConstants.tsx");
+const result = set.fileFinishedImporting("modules/safety_hub/SafetyHubConstants.tsx");
 const prototype = function SafetyHubLinks() {
   return Object.create(new.target.prototype);
 }.prototype;

@@ -1,13 +1,17 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16371
+// Function ID: 16372
 // Name: initialize
 // Dependencies: [1397, 589, 709, 2]
 
-// Module 16277 (initialize)
-import { GuildScheduledEventStatus } from "GUILD_EVENT_MAX_NAME_LENGTH";
-import { PersistedStore } from "initialize";
+// Module 16371 (initialize)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 
+const GuildScheduledEventStatus = GUILD_EVENT_MAX_NAME_LENGTH.GuildScheduledEventStatus;
 let closure_1 = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class EventBannerStore extends PersistedStore {
 }
 const prototype = EventBannerStore.prototype;
@@ -27,7 +31,7 @@ prototype["getState"] = function getState() {
 };
 EventBannerStore.displayName = "EventBannerStore";
 EventBannerStore.persistKey = "EventBanner";
-const eventBannerStore = new EventBannerStore(require("dispatcher"), {
+const eventBannerStore = new EventBannerStore(dispatcherDefault, {
   EVENT_BANNER_DISMISS: function handleDismiss(eventId) {
     const obj = {};
     const merged = Object.assign(obj);
@@ -61,6 +65,6 @@ const eventBannerStore = new EventBannerStore(require("dispatcher"), {
     }
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/guild_scheduled_events/EventBannerStore.tsx");
+const result = set.fileFinishedImporting("modules/guild_scheduled_events/EventBannerStore.tsx");
 
 export default eventBannerStore;

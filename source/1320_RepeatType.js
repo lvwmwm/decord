@@ -4,7 +4,9 @@
 // Dependencies: [1321]
 
 // Module 1320 (RepeatType)
-const require = arg1;
+import lowerCamelCase from "lowerCamelCase" /* 1321 */;
+
+require = arg1;
 const dependencyMap = arg6;
 ScalarType.ScalarType = undefined;
 ScalarType.LongType = undefined;
@@ -76,14 +78,14 @@ RepeatType[2] = "UNPACKED";
 ScalarType.normalizeFieldInfo = function normalizeFieldInfo(localName) {
   localName = localName.localName;
   if (null === localName) {
-    localName = require(1321) /* lowerCamelCase */.lowerCamelCase(localName.name);
-    const obj = require(1321) /* lowerCamelCase */;
+    localName = lowerCamelCase.lowerCamelCase(localName.name);
+    const obj = lowerCamelCase;
   }
   localName.localName = localName;
   let jsonName = localName.jsonName;
   if (null === jsonName) {
-    jsonName = require(1321) /* lowerCamelCase */.lowerCamelCase(localName.name);
-    const obj2 = require(1321) /* lowerCamelCase */;
+    jsonName = lowerCamelCase.lowerCamelCase(localName.name);
+    const obj2 = lowerCamelCase;
   }
   localName.jsonName = jsonName;
   let NO = localName.repeat;
@@ -109,7 +111,7 @@ ScalarType.normalizeFieldInfo = function normalizeFieldInfo(localName) {
   return localName;
 };
 ScalarType.readFieldOptions = function readFieldOptions(fields, arg1, arg2, fromJson) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   fields = fields.fields;
   const found = fields.find((localName) => {
     let tmp2 = localName.localName == closure_0;
@@ -133,7 +135,7 @@ ScalarType.readFieldOptions = function readFieldOptions(fields, arg1, arg2, from
   return fromJsonResult;
 };
 ScalarType.readFieldOption = function readFieldOption(fields, arg1, arg2, fromJson) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   fields = fields.fields;
   const found = fields.find((localName) => {
     let tmp2 = localName.localName == closure_0;

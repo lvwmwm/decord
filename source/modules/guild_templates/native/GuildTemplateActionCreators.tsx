@@ -1,28 +1,32 @@
-// Module ID: 10971
-// Function ID: 10972
+// Module ID: 11010
+// Function ID: 11011
 // Name: showModal
-// Dependencies: [7287, 5260, 10972, 2007, 709, 2]
+// Dependencies: [7325, 5265, 11011, 2008, 709, 2]
 
-// Module 10971 (showModal)
-import merged from "map";
+// Module 11010 (showModal)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import mapDefault from "map" /* 7325 */;
 
-const require = arg1;
+require = arg1;
 const GUILD_TEMPLATE_MODAL_KEY = "GUILD_TEMPLATE_MODAL_KEY";
 let obj = {};
+const merged = Object.assign(mapDefault);
 obj.showModal = function showModal(code) {
-  let obj = importDefault(5260);
+  let obj = _modDef5265;
   obj = { code };
-  obj.pushLazy(require(2007) /* asyncRequireImpl */(10972, dependencyMap.paths), obj, GUILD_TEMPLATE_MODAL_KEY);
+  obj.pushLazy(asyncRequireImpl(11011, dependencyMap.paths), obj, GUILD_TEMPLATE_MODAL_KEY);
   obj = { type: "GUILD_TEMPLATE_MODAL_SHOW", code };
-  importDefault(709).dispatch(obj);
-  const obj3 = importDefault(709);
-  const guildTemplate = importDefault(7287).resolveGuildTemplate(code);
+  dispatcherDefault.dispatch(obj);
+  const obj3 = dispatcherDefault;
+  const guildTemplate = mapDefault.resolveGuildTemplate(code);
 };
 obj.hideModal = function hideModal() {
-  importDefault(5260).popWithKey(GUILD_TEMPLATE_MODAL_KEY);
-  const obj = importDefault(5260);
-  importDefault(709).dispatch({ type: "GUILD_TEMPLATE_MODAL_HIDE" });
+  _modDef5265.popWithKey(GUILD_TEMPLATE_MODAL_KEY);
+  const obj = _modDef5265;
+  dispatcherDefault.dispatch({ type: "GUILD_TEMPLATE_MODAL_HIDE" });
 };
-const result = require("ConnectedAcceptGuildTemplate").fileFinishedImporting("modules/guild_templates/native/GuildTemplateActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_templates/native/GuildTemplateActionCreators.tsx");
 
 export default obj;

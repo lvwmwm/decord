@@ -1,9 +1,11 @@
-// Module ID: 5366
-// Function ID: 5367
+// Module ID: 5371
+// Function ID: 5372
 // Name: WidgetType
 // Dependencies: [2]
 
-// Module 5366 (WidgetType)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/WidgetType.tsx");
+// Module 5371 (WidgetType)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/WidgetType.tsx");
 
 export const WidgetType = { CURRENT_GAMES: "current_games", WANT_TO_PLAY_GAMES: "want_to_play_games", PLAYED_GAMES: "played_games", FAVORITE_GAMES: "favorite_games", APPLICATION: "application", PERSONAL: "personal", CLIPS_GALLERY: "clips_gallery" };

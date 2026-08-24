@@ -1,18 +1,20 @@
-// Module ID: 7521
-// Function ID: 7522
+// Module ID: 7559
+// Function ID: 7560
 // Name: collectThreadMetadata
-// Dependencies: [7517, 7271, 1395, 4021, 676, 1222, 11, 2]
+// Dependencies: [7555, 7309, 1395, 4024, 676, 1222, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 7521 (collectThreadMetadata)
-import updateFromGuild from "updateFromGuild";
-import updateState from "updateState";
-import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "ME";
+// Module 7559 (collectThreadMetadata)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import transitionTo from "transitionTo" /* 1222 */;
+import closure_3 from "updateFromGuild" /* 7555 */;
+import closure_4 from "updateState" /* 7309 */;
+import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1395 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("createChannelRecord").fileFinishedImporting("modules/app_analytics/ThreadAnalyticsUtils.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/app_analytics/ThreadAnalyticsUtils.tsx");
 
 export const collectThreadMetadata = function collectThreadMetadata(channel, arg1) {
   let flag = arg1;
@@ -25,7 +27,7 @@ export const collectThreadMetadata = function collectThreadMetadata(channel, arg
     if (THREAD_CHANNEL_TYPES.has(channel.type)) {
       let lastRouteChangeSource;
       if (flag) {
-        let obj = require(1222) /* transitionTo */;
+        let obj = transitionTo;
         lastRouteChangeSource = obj.getLastRouteChangeSource();
       }
       obj = { location: null, thread_approximate_member_count: null, thread_approximate_message_count: null, thread_archived: null, thread_locked: null, thread_auto_archive_duration_minutes: null, thread_approximate_creation_date: null, can_send_message: null, parent_channel_type: null };
@@ -56,11 +58,11 @@ export const collectThreadMetadata = function collectThreadMetadata(channel, arg
         num = 0;
       }
       obj[5] = num;
-      obj[6] = importDefault(11).extractTimestamp(channel.id);
-      obj[7] = getUncachedChannelPermissions.can(Permissions.SEND_MESSAGES, channel);
+      obj[6] = DISCORD_EPOCHDefault.extractTimestamp(channel.id);
+      obj[7] = closure_6.can(Permissions.SEND_MESSAGES, channel);
       obj[8] = channel.parentChannelThreadType;
       tmp = obj;
-      const obj3 = importDefault(11);
+      const obj3 = DISCORD_EPOCHDefault;
     }
   }
   return tmp;

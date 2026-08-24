@@ -1,23 +1,22 @@
-// Module ID: 9043
-// Function ID: 9044
+// Module ID: 9080
+// Function ID: 9081
 // Name: useMediaShareActions
-// Dependencies: [19, 9044, 1391, 4994, 9066, 676, 5004, 21, 647, 5001, 8339, 4342, 8994, 4811, 9067, 8996, 8775, 4090, 9076, 4768, 4232, 10868, 2007, 10851, 4324, 1236, 9087, 12047, 12049, 10899, 6877, 7175, 7177, 2]
+// Dependencies: [19, 9081, 1391, 4999, 9103, 676, 5009, 21, 647, 5006, 8378, 4346, 9031, 4816, 9104, 9033, 8812, 4093, 9113, 4773, 4236, 10907, 2008, 10890, 4328, 1236, 9124, 12099, 12101, 10938, 6915, 7213, 7215, 2]
 // Exports: default
 
-// Module 9043 (useMediaShareActions)
-import transitionToChannel from "transitionToChannel";
-import filterStaffGuild from "filterStaffGuild";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import reinjectEphemerals from "reinjectEphemerals";
-import messages from "messages";
-import ME from "ME";
-import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_11 } from "USER_SETTING_ACTION_SHEET_KEY";
-import { jsx } from "ExplicitMediaObscuredFalsePositiveActionSheet";
+// Module 9080 (useMediaShareActions)
+import ActionSheet from "ActionSheet" /* 7213 */;
+import ActionSheetRowIcon from "ActionSheetRowIcon" /* 7215 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "filterStaffGuild" /* 9081 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "reinjectEphemerals" /* 4999 */;
+import closure_7 from "messages" /* 9103 */;
+import ME from "ME" /* 676 */;
+import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_11 } from "USER_SETTING_ACTION_SHEET_KEY" /* 5009 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c10;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function useMediaShareActions(source) {
   source = source.source;
   let disableDownload = source.disableDownload;
@@ -91,7 +90,7 @@ function useMediaShareActions(source) {
       obj = { href: null, onConfirm: null };
       obj[0] = tmp3.sourceURI;
       obj[1] = function onConfirm() {
-        outer1_1(outer1_2[17]).openURL(sourceURI.sourceURI);
+        closure_1_1(closure_1_2[17]).openURL(sourceURI.sourceURI);
       };
       source(shareable[16]).handleClick(obj);
       const obj2 = source(shareable[16]);
@@ -105,7 +104,7 @@ function useMediaShareActions(source) {
       if ("embed" !== source.accessoryType) {
         const attachmentId = tmp8.attachmentId;
         if (null != attachmentId) {
-          obj = { message: null, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "M5 9H1v1h4V9ZM1 3H0v1h1V3ZM4 15H3v1h1v-1ZM6 10H5v1h1v-1Z" };
+          obj = { message: null, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "M9 0H7v1h2V0ZM5 0H2v1h3V0ZM14 0h-3v1h3V0ZM15 1h-1v1h1V1ZM16 2h-1v4h1V2ZM10 1H9v1h1v2h1V1h-1ZM5 1v3h1V2h1V1H5ZM2 1H1v1h1V1ZM1 2H0v4h1V2ZM2 6H1v1h1V6ZM4 7H2v1h2V7ZM14 7h-2v1h2V7ZM15 6h-1v1h1V6ZM12 9V8h-1v2h4V9h-3ZM4 8v1H1v1h4V8H4ZM1 10H0v4h1v-4ZM2 14H1v1h1v-1ZM14 15H2v1h12v-1ZM15 14h-1v1h1v-1ZM16 10h-1v4h1v-4ZM6 10H5v1h1v-1ZM7 11H6v1h1v-1ZM10 11H9v1h1v-1ZM11 10h-1v1h1v-1ZM9 12H7v1h2v-1Z" };
           obj[0] = tmp3;
           obj = { onlyAttachmentIds: null };
           const items = [attachmentId];
@@ -115,8 +114,8 @@ function useMediaShareActions(source) {
           const obj5 = source(tmp[18]);
         }
       } else {
-        let obj1 = source(tmp[18]);
-        obj1 = { message: null, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "M5 9H1v1h4V9ZM1 3H0v1h1V3ZM4 15H3v1h1v-1ZM6 10H5v1h1v-1Z" };
+        obj1 = source(tmp[18]);
+        obj1 = { message: null, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "M9 0H7v1h2V0ZM5 0H2v1h3V0ZM14 0h-3v1h3V0ZM15 1h-1v1h1V1ZM16 2h-1v4h1V2ZM10 1H9v1h1v2h1V1h-1ZM5 1v3h1V2h1V1H5ZM2 1H1v1h1V1ZM1 2H0v4h1V2ZM2 6H1v1h1V6ZM4 7H2v1h2V7ZM14 7h-2v1h2V7ZM15 6h-1v1h1V6ZM12 9V8h-1v2h4V9h-3ZM4 8v1H1v1h4V8H4ZM1 10H0v4h1v-4ZM2 14H1v1h1v-1ZM14 15H2v1h12v-1ZM15 14h-1v1h1v-1ZM16 10h-1v4h1v-4ZM6 10H5v1h1v-1ZM7 11H6v1h1v-1ZM10 11H9v1h1v-1ZM11 10h-1v1h1v-1ZM9 12H7v1h2v-1Z" };
         obj1[0] = tmp3;
         const obj2 = { onlyEmbedIndices: null };
         const items1 = [tmp8.mediaIndex];
@@ -128,8 +127,6 @@ function useMediaShareActions(source) {
   }, items5);
   const items6 = [source];
   callback4 = channelId.useCallback(() => {
-    let channelId;
-    let messageId;
     let obj = disableDownload(shareable[11]);
     obj.hideActionSheet();
     if (tmp4) {
@@ -203,7 +200,7 @@ function useMediaShareActions(source) {
       obj[2] = callback1;
       items.push(obj);
     }
-    const obj1 = { IconComponent: source(shareable[28]).WindowLaunchIcon, label: null, action: null };
+    obj1 = { IconComponent: source(shareable[28]).WindowLaunchIcon, label: null, action: null };
     const intl4 = source(shareable[25]).intl;
     obj1[1] = intl4.string(source(shareable[25]).t.q5jLJB);
     obj1[2] = callback2;
@@ -227,21 +224,41 @@ function useMediaShareActions(source) {
     return items;
   }, items8);
 }
-({ AnalyticsSections: metroImportAll, GIF_RE_IOS: c9, MediaType: c10 } = ME);
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/media_viewer/native/components/MediaShareActions.tsx");
+({ AnalyticsSections: closure_8, GIF_RE_IOS: c9, MediaType: c10 } = ME);
+let result = require("set").fileFinishedImporting("modules/media_viewer/native/components/MediaShareActions.tsx");
 
 export default function MediaShareActionSheet(source) {
   let obj = { source: source.source, disableDownload: source.disableDownload, shareable: source.shareable };
   obj = { children: null };
-  obj = { hasIcons: true, children: null };
-  obj[1] = useMediaShareActions(obj).map((IconComponent) => {
-    let obj = { icon: null, onPress: null, label: null };
-    obj = { IconComponent: IconComponent.IconComponent };
-    obj[0] = callback2(callback(7177).ActionSheetRow.Icon, obj);
-    ({ action: obj[1], label: obj[2] } = IconComponent);
-    return callback2(callback(7177).ActionSheetRow, obj, arg1);
+  obj = {
+    hasIcons: true,
+    children: useMediaShareActions(obj).map((IconComponent) => {
+      let obj = { icon: null, onPress: null, label: null };
+      obj = { IconComponent: IconComponent.IconComponent };
+      obj[0] = callback2(callback(7215).ActionSheetRow.Icon, obj);
+      ({ action: obj[1], label: obj[2] } = IconComponent);
+      return callback2(callback(7215).ActionSheetRow, obj, arg1);
+    })
+  };
+  obj[0] = jsx(ActionSheetRowIcon.ActionSheetRow.Group, {
+    hasIcons: true,
+    children: useMediaShareActions(obj).map((IconComponent) => {
+      let obj = { icon: null, onPress: null, label: null };
+      obj = { IconComponent: IconComponent.IconComponent };
+      obj[0] = callback2(callback(7215).ActionSheetRow.Icon, obj);
+      ({ action: obj[1], label: obj[2] } = IconComponent);
+      return callback2(callback(7215).ActionSheetRow, obj, arg1);
+    })
   });
-  obj[0] = jsx(require(7177) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: true, children: null });
-  return jsx(require(7175) /* ActionSheet */.ActionSheet, { hasIcons: true, children: null });
+  return jsx(ActionSheet.ActionSheet, {
+    hasIcons: true,
+    children: useMediaShareActions(obj).map((IconComponent) => {
+      let obj = { icon: null, onPress: null, label: null };
+      obj = { IconComponent: IconComponent.IconComponent };
+      obj[0] = callback2(callback(7215).ActionSheetRow.Icon, obj);
+      ({ action: obj[1], label: obj[2] } = IconComponent);
+      return callback2(callback(7215).ActionSheetRow, obj, arg1);
+    })
+  });
 };
 export { useMediaShareActions };

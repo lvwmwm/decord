@@ -3,12 +3,14 @@
 // Dependencies: [848, 823, 824]
 
 // Module 932
-const require = arg1;
+import getClient from "getClient" /* 848 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.profiler = {
   startProfiler() {
-    const client = require(848) /* getClient */.getClient();
+    const client = getClient.getClient();
     if (client) {
       const integrationByName = client.getIntegrationByName("ProfilingIntegration");
       if (integrationByName) {
@@ -30,7 +32,7 @@ arg5.profiler = {
     }
   },
   stopProfiler() {
-    const client = require(848) /* getClient */.getClient();
+    const client = getClient.getClient();
     if (client) {
       const integrationByName = client.getIntegrationByName("ProfilingIntegration");
       if (integrationByName) {

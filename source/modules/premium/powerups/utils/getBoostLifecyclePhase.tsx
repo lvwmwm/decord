@@ -1,12 +1,15 @@
-// Module ID: 11750
-// Function ID: 11751
+// Module ID: 11799
+// Function ID: 11800
 // Name: BOOST_EXPIRING_DISPLAY_WINDOW_DAYS
 // Dependencies: [11, 2]
 // Exports: getBoostLifecycleInfo, getBoostLifecycleTimestamp
 
-// Module 11750 (BOOST_EXPIRING_DISPLAY_WINDOW_DAYS)
+// Module 11799 (BOOST_EXPIRING_DISPLAY_WINDOW_DAYS)
+import set from "set" /* 2 */;
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+
 let c2 = 259200000;
-const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/getBoostLifecyclePhase.tsx");
+const result = set.fileFinishedImporting("modules/premium/powerups/utils/getBoostLifecyclePhase.tsx");
 
 export const BOOST_EXPIRING_DISPLAY_WINDOW_DAYS = 3;
 export const BOOST_EXPIRING_DISPLAY_WINDOW_MS = 259200000;
@@ -29,7 +32,7 @@ export const getBoostLifecycleInfo = function getBoostLifecycleInfo(ended, closu
 export const getBoostLifecycleTimestamp = function getBoostLifecycleTimestamp(id, boostLifecycleInfo) {
   const phase = boostLifecycleInfo.phase;
   if ("gave" === phase) {
-    return importDefault(11).extractTimestamp(id.id);
+    return DISCORD_EPOCHDefault.extractTimestamp(id.id);
   } else if ("expiring" === phase) {
     const endsAt2 = boostLifecycleInfo.endsAt;
     return endsAt2.getTime() - c2;
@@ -40,8 +43,8 @@ export const getBoostLifecycleTimestamp = function getBoostLifecycleTimestamp(id
       time = endsAt.getTime();
     }
     if (time == null) {
-      time = importDefault(11).extractTimestamp(id.id);
-      const obj = importDefault(11);
+      time = DISCORD_EPOCHDefault.extractTimestamp(id.id);
+      const obj = DISCORD_EPOCHDefault;
     }
     return time;
   }

@@ -1,33 +1,31 @@
-// Module ID: 14146
-// Function ID: 14147
+// Module ID: 14214
+// Function ID: 14215
 // Name: TwoFASetupEnterCode
-// Dependencies: [32, 19, 7383, 14140, 21, 4661, 14143, 1500, 589, 8588, 14101, 1236, 14139, 6803, 1297, 14147, 6804, 2]
+// Dependencies: [32, 19, 7421, 14208, 21, 4668, 14211, 1500, 589, 8627, 14169, 1236, 14207, 6840, 1297, 14215, 6841, 2]
 // Exports: default
 
-// Module 14146 (TwoFASetupEnterCode)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import getState from "getState";
-import { TwoFAModalSetupSections } from "frozen";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14214 (TwoFASetupEnterCode)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "getState" /* 7421 */;
+import { TwoFAModalSetupSections } from "frozen" /* 14208 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
-const result = require("getState").fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupEnterCode.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupEnterCode.tsx");
 
 export default function TwoFASetupEnterCode(stateFromStores) {
   const _require = stateFromStores;
   let obj = _require(navigation[6]);
   const twoFASetupStyles = obj.useTwoFASetupStyles();
-  const importDefault = ref.useRef(stateFromStores);
+  importDefault = ref.useRef(stateFromStores);
   const effect = ref.useEffect(() => {
     closure_1.current = closure_0;
   });
-  let obj1 = _require(navigation[7]);
+  obj1 = _require(navigation[7]);
   navigation = obj1.useNavigation();
   let obj2 = _require(navigation[8]);
   const items = [ref1];
@@ -50,10 +48,10 @@ export default function TwoFASetupEnterCode(stateFromStores) {
       if (null != body.body) {
         let message = body.body.message;
       } else {
-        const intl = outer1_0(outer1_2[11]).intl;
-        message = intl.string(outer1_0(outer1_2[11]).t["1u5B+G"]);
+        const intl = closure_1_0(closure_1_2[11]).intl;
+        message = intl.string(closure_1_0(closure_1_2[11]).t["1u5B+G"]);
       }
-      noop.current = message;
+      closure_4.current = message;
       const current = ref.current;
       if (current != null) {
         current.clear();

@@ -1,17 +1,16 @@
-// Module ID: 8071
-// Function ID: 8072
+// Module ID: 8110
+// Function ID: 8111
 // Name: TextInput
-// Dependencies: [19, 21, 8072, 7338, 500, 2]
+// Dependencies: [19, 21, 8111, 7376, 500, 2]
 
-// Module 8071 (TextInput)
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 8110 (TextInput)
+import TextField from "TextField" /* 7376 */;
+import Input from "Input" /* 8111 */;
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 const forwardRefResult = importAllResult.forwardRef((errorMessage, ref) => {
-  let accessibilityLabel;
-  let label;
-  let status;
   ({ label, accessibilityLabel, status } = errorMessage);
   const id = importAllResult.useId();
   if (status == null) {
@@ -47,9 +46,9 @@ const forwardRefResult = importAllResult.forwardRef((errorMessage, ref) => {
     tmp10 = id;
   }
   obj.accessibilityLabelledBy = tmp10;
-  obj.children = jsx(require(7338) /* TextField */.TextField, { ref });
-  return jsx(require(8072) /* Input */.Input, { ref });
+  obj.children = jsx(TextField.TextField, { ref });
+  return jsx(Input.Input, { ref });
 });
-const result = require("Input").fileFinishedImporting("design/components/TextInput/native/TextInput.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/TextInput/native/TextInput.native.tsx");
 
 export const TextInput = forwardRefResult;

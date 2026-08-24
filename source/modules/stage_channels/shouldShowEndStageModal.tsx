@@ -1,17 +1,17 @@
-// Module ID: 12516
-// Function ID: 12517
+// Module ID: 12570
+// Function ID: 12571
 // Name: shouldShowEndStageModal
-// Dependencies: [1218, 4989, 4990, 1396, 6703, 2]
+// Dependencies: [1218, 4994, 4995, 1396, 6740, 2]
 // Exports: default
 
-// Module 12516 (shouldShowEndStageModal)
-import fetchFingerprint from "fetchFingerprint";
-import getActiveStageChannelIds from "getActiveStageChannelIds";
-import buildStageChannelUserRoles from "buildStageChannelUserRoles";
-import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
+// Module 12570 (shouldShowEndStageModal)
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "getActiveStageChannelIds" /* 4994 */;
+import closure_4 from "buildStageChannelUserRoles" /* 4995 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
 
 const require = arg1;
-const result = require("buildStageChannelUserRoles").fileFinishedImporting("modules/stage_channels/shouldShowEndStageModal.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/shouldShowEndStageModal.tsx");
 
 export default function shouldShowEndStageModal(isGuildStageVoice) {
   const _require = isGuildStageVoice;
@@ -26,7 +26,7 @@ export default function shouldShowEndStageModal(isGuildStageVoice) {
           let tmp7 = null == mutableParticipants.find((user) => {
             let isModeratorResult = user.user.id !== id;
             if (isModeratorResult) {
-              isModeratorResult = outer1_4.isModerator(user.user.id, isGuildStageVoice.id);
+              isModeratorResult = closure_1_4.isModerator(user.user.id, isGuildStageVoice.id);
             }
             return isModeratorResult;
           });
@@ -35,7 +35,7 @@ export default function shouldShowEndStageModal(isGuildStageVoice) {
             tmp7 = null == mutableParticipants1.find((user) => {
               let isModeratorResult = user.user.id !== id;
               if (isModeratorResult) {
-                isModeratorResult = outer1_4.isModerator(user.user.id, isGuildStageVoice.id);
+                isModeratorResult = closure_1_4.isModerator(user.user.id, isGuildStageVoice.id);
               }
               return isModeratorResult;
             });

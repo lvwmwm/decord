@@ -1,25 +1,28 @@
-// Module ID: 14232
-// Function ID: 14233
+// Module ID: 14300
+// Function ID: 14301
 // Name: FamilyCenterActivityBannerButton
-// Dependencies: [19, 17, 21, 4661, 7621, 7622, 14233, 712, 11107, 1236, 2335, 14240, 14241, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 7659, 7660, 14301, 712, 11146, 1236, 2336, 14308, 14309, 4739, 2]
 // Exports: default
 
-// Module 14232 (FamilyCenterActivityBannerButton)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
+// Module 14300 (FamilyCenterActivityBannerButton)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2336 */;
+import Text from "Text" /* 4739 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 7659 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7660 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11146 */;
+import FamilyCenterTeenQRCodeButtonInner from "FamilyCenterTeenQRCodeButtonInner" /* 14301 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function FamilyCenterActivityBannerButton() {
-  let obj = require(7621) /* useUserIdsForLinkStatus */;
+  let obj = useUserIdsForLinkStatus;
   const hasActiveLinks = obj.useHasActiveLinks();
-  const tmp5 = importDefault(7622)();
+  const tmp5 = useIsInAdultAgeGroupDefault();
   const tmp = callback();
   const tmp2 = require;
   let tmp6 = null;
@@ -29,7 +32,7 @@ function FamilyCenterActivityBannerButton() {
     }
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    let tmp7Result = tmp2(14233);
+    let tmp7Result = FamilyCenterTeenQRCodeButtonInner;
     tmp7Result = tmp7(tmp5 ? tmp7Result.FamilyCenterParentQRCodeButton : tmp7Result.FamilyCenterTeenQRCodeButton, {});
     obj[1] = tmp7Result;
     tmp7Result = tmp7(closure_3, obj);
@@ -37,44 +40,45 @@ function FamilyCenterActivityBannerButton() {
   }
   return tmp6;
 }
+noopAll;
 ({ View: c3, Image: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ container: { width: "100%" } });
 createCacheKey = { container: null, art: null, header: null, description: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, marginTop: 16, padding: 24, alignItems: "center", borderRadius: require("Themes").radii.md, elevation: 2 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, marginTop: 16, padding: 24, alignItems: "center", borderRadius: ThemesDefault.radii.md, elevation: 2 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = { maxWidth: 243, maxHeight: 119, marginBottom: require("Themes").space.PX_8 };
+createCacheKey = { maxWidth: 243, maxHeight: 119, marginBottom: ThemesDefault.space.PX_8 };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { marginBottom: require("Themes").space.PX_8, textAlign: "center" };
+createCacheKey[2] = { marginBottom: ThemesDefault.space.PX_8, textAlign: "center" };
 createCacheKey[3] = { textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { marginBottom: require("Themes").space.PX_8, textAlign: "center" };
-const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityBanner.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { marginBottom: ThemesDefault.space.PX_8, textAlign: "center" };
+const result = require("set").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityBanner.tsx");
 
 export default function FamilyCenterActivityBanner() {
-  const tmp4 = createCacheKey();
-  let obj = require(7621) /* useUserIdsForLinkStatus */;
+  const tmp4 = callback2();
+  let obj = useUserIdsForLinkStatus;
   const hasMaxConnections = obj.useHasMaxConnections();
-  let obj1 = require(11107) /* useAgeSpecificText */;
-  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1 = useAgeSpecificText;
+  const intl = getSystemLocale.intl;
   const tmp = importDefault;
-  const tmp3 = importDefault(7622)();
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  const ageSpecificText = obj1.useAgeSpecificText(intl.string(importDefault(2335)["T7GyW+"]), intl2.string(importDefault(2335).goKE2b));
-  let obj2 = require(11107) /* useAgeSpecificText */;
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  const stringResult = intl.string(importDefault(2335)["T7GyW+"]);
-  const intl4 = require(1236) /* getSystemLocale */.intl;
+  const tmp3 = useIsInAdultAgeGroupDefault();
+  const intl2 = getSystemLocale.intl;
+  const ageSpecificText = obj1.useAgeSpecificText(intl.string(messagesProxyDefault["T7GyW+"]), intl2.string(messagesProxyDefault.goKE2b));
+  let obj2 = useAgeSpecificText;
+  const intl3 = getSystemLocale.intl;
+  const stringResult = intl.string(messagesProxyDefault["T7GyW+"]);
+  const intl4 = getSystemLocale.intl;
   obj = { style: tmp4.container, children: null };
   obj = { source: null, style: null };
-  const ageSpecificText1 = obj2.useAgeSpecificText(intl3.format(importDefault(2335).MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(importDefault(2335).EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  obj[0] = tmp(tmp3 ? 14240 : 14241);
+  const ageSpecificText1 = obj2.useAgeSpecificText(intl3.format(messagesProxyDefault.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(messagesProxyDefault.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
+  obj[0] = tmp(tmp3 ? 14308 : 14309);
   obj[1] = tmp4.art;
   const items = [closure_5(closure_4, obj), , , ];
   obj1 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };
-  items[1] = closure_5(require(4734) /* Text */.Text, obj1);
+  items[1] = closure_5(Text.Text, obj1);
   obj2 = { style: tmp4.description, variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 };
-  items[2] = closure_5(require(4734) /* Text */.Text, obj2);
+  items[2] = closure_5(Text.Text, obj2);
   let tmp13Result = null;
   if (!hasMaxConnections) {
     tmp13Result = tmp13(FamilyCenterActivityBannerButton, {});

@@ -1,19 +1,22 @@
-// Module ID: 14156
-// Function ID: 14157
+// Module ID: 14224
+// Function ID: 14225
 // Name: route
-// Dependencies: [19, 14077, 1922, 8198, 676, 4827, 1236, 5264, 589, 10669, 14080, 2]
+// Dependencies: [19, 14145, 1922, 8238, 676, 4832, 1236, 5269, 589, 10708, 14148, 2]
 
-// Module 14156 (route)
-import noop from "noop";
-import hasFetchedCredentials from "hasFetchedCredentials";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import createToggle from "createToggle";
+// Module 14224 (route)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import _fetchWebAuthnConditionalChallenge from "_fetchWebAuthnConditionalChallenge" /* 5269 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "hasFetchedCredentials" /* 14145 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.y7SXYX);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.y7SXYX);
   },
   parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   usePreNavigationAction: function useAccountCanUseWebAuthnView() {
@@ -27,7 +30,7 @@ createToggle = {
         flag = false;
       }
       if (!flag) {
-        let obj = callback2(4827);
+        let obj = callback2(4832);
         obj = { title: null, body: null };
         const intl = callback(1236).intl;
         obj[0] = intl.string(callback(1236).t.v740sh);
@@ -39,16 +42,14 @@ createToggle = {
     }, []);
   },
   useTrailing: function useAccountSecurityKeysSettingTrailing() {
-    if (!hasFetchedCredentials.hasFetchedCredentials()) {
-      const webAuthnCredentials = require(5264) /* _fetchWebAuthnConditionalChallenge */.fetchWebAuthnCredentials();
-      let obj = require(5264) /* _fetchWebAuthnConditionalChallenge */;
+    if (!closure_4.hasFetchedCredentials()) {
+      const webAuthnCredentials = _fetchWebAuthnConditionalChallenge.fetchWebAuthnCredentials();
+      const obj = _fetchWebAuthnConditionalChallenge;
     }
-    const items = [hasFetchedCredentials];
-    return require(589) /* initialize */.useStateFromStores(items, () => {
+    const items = [closure_4];
+    return initialize.useStateFromStores(items, () => {
       const intl = callback(1236).intl;
-      const obj = { count: null };
-      obj[0] = credentials.getCredentials().length;
-      return intl.formatToPlainString(callback(1236).t.n8mZ0X, obj);
+      return intl.formatToPlainString(callback(1236).t.n8mZ0X, { count: credentials.getCredentials().length });
     });
   },
   unsearchable: true,
@@ -57,10 +58,10 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.WEBAUTHN_VIEW,
   getComponent() {
-    return require(14080) /* UserSettingsWebAuthn */.default;
+    return require(14148) /* UserSettingsWebAuthn */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_settings/defs/native/AccountWebAuthnViewSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AccountWebAuthnViewSetting.tsx");
 
 export default createToggle;

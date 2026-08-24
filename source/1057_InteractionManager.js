@@ -4,8 +4,8 @@
 // Dependencies: [41, 42, 1056]
 
 // Module 1057 (InteractionManager)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import closure_2 from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
 const InteractionManager = require;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
@@ -14,7 +14,7 @@ class InteractionManager {
   constructor() {
     self = this;
     tmp = InteractionManager;
-    tmp2 = outer1_2(this, InteractionManager);
+    tmp2 = closure_2(this, InteractionManager);
     __init = InteractionManager.prototype.__init;
     call = __init.call;
     if (typeof call === "unknown") {

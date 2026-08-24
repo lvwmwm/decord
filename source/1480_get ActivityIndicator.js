@@ -4,5 +4,7 @@
 // Dependencies: [17]
 
 // Module 1480 (get ActivityIndicator)
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-export default require("get ActivityIndicator").NativeModules.RNCNetInfo;
+
+export default get_ActivityIndicator.NativeModules.RNCNetInfo;

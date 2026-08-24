@@ -1,28 +1,28 @@
-// Module ID: 9911
-// Function ID: 9912
+// Module ID: 9950
+// Function ID: 9951
 // Name: ActionButton
-// Dependencies: [19, 17, 21, 4750, 8035, 2]
+// Dependencies: [19, 17, 21, 4755, 8074, 2]
 // Exports: default
 
-// Module 9911 (ActionButton)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 9950 (ActionButton)
+import noopAll from "noop" /* 19 */;
+import styleProperties from "styleProperties" /* 4755 */;
+import IconButton from "IconButton" /* 8074 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("components_native/common/ActionButton.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("components_native/common/ActionButton.tsx");
 
 export default function ActionButton(style) {
   let str = "tertiary";
   if ("positive" === style.type) {
     str = "active";
   }
-  let obj = require(4750) /* styleProperties */;
+  let obj = styleProperties;
   obj = { style: style.styles, children: null };
-  obj = { icon: null, onPress: null, accessibilityLabel: null, variant: null, size: "sm" };
-  obj[0] = jsx(style.IconComponent, { color: obj.useButtonTextColorStyles(str).color, size: "sm" });
+  obj = { icon: jsx(style.IconComponent, { color: obj.useButtonTextColorStyles(str).color, size: "sm" }), onPress: jsx(IconButton.IconButton, { style: style.styles, children: null }), accessibilityLabel: null, variant: str, size: "sm" };
   ({ onPress: obj3[1], accessibilityLabel: obj3[2] } = style);
-  obj[3] = str;
-  obj[1] = jsx(require(8035) /* IconButton */.IconButton, { icon: null, onPress: null, accessibilityLabel: null, variant: null, size: "sm" });
-  return <View icon={null} onPress={null} accessibilityLabel={null} variant={null} size="sm" />;
+  return <View icon={jsx(arg0.IconComponent, { color: obj.useButtonTextColorStyles(str).color, size: "sm" })} onPress={jsx(IconButton.IconButton, { style: arg0.styles, children: null })} accessibilityLabel={null} variant={str} size="sm" />;
 };

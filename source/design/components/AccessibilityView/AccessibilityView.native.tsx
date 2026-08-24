@@ -1,17 +1,16 @@
-// Module ID: 4717
-// Function ID: 4718
+// Module ID: 4723
+// Function ID: 4724
 // Name: AccessibilityView
-// Dependencies: [19, 17, 21, 4718, 4115, 2]
+// Dependencies: [19, 17, 21, 4724, 4119, 2]
 
-// Module 4717 (AccessibilityView)
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
-import importDefaultResult from "module_4115";
+// Module 4723 (AccessibilityView)
+import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 4724 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
+import importDefaultResult from "module_4119" /* 4119 */;
 
-const forwardRefResult = require("noop").forwardRef((accessibilityViewIsModal, ref) => {
-  let nativeID;
-  let onAccessibilityEscape;
+const forwardRefResult = importAllResult.forwardRef((accessibilityViewIsModal, ref) => {
   let flag = accessibilityViewIsModal.accessibilityViewIsModal;
   if (flag === undefined) {
     flag = false;
@@ -21,11 +20,11 @@ const forwardRefResult = require("noop").forwardRef((accessibilityViewIsModal, r
   if (flag) {
     if (null == onAccessibilityEscape) {
       const _Error = Error;
-      const error = new Error("Must have a onAccessibilityEscape callback when accessibilityViewIsModal is enabled.");
+      error = new Error("Must have a onAccessibilityEscape callback when accessibilityViewIsModal is enabled.");
       throw error;
     }
   }
-  importDefault(4718)({ accessibilityViewIsModal: flag, nativeID });
+  useAccessibilityViewIsModalToggleDefault({ accessibilityViewIsModal: flag, nativeID });
   const obj = { ref, nativeID, collapsable: null, onAccessibilityEscape: null, accessibilityViewIsModal: null };
   let collapsable = null == nativeID;
   if (collapsable) {
@@ -37,8 +36,8 @@ const forwardRefResult = require("noop").forwardRef((accessibilityViewIsModal, r
   const merged1 = Object.assign(merged);
   return <View ref={arg1} nativeID={nativeID} collapsable={null} onAccessibilityEscape={null} accessibilityViewIsModal={null} />;
 });
-const animatedComponent = require("module_4115").createAnimatedComponent(forwardRefResult);
-const result = require("jsxProd").fileFinishedImporting("design/components/AccessibilityView/AccessibilityView.native.tsx");
+const animatedComponent = importDefaultResult.createAnimatedComponent(forwardRefResult);
+const result = require("set").fileFinishedImporting("design/components/AccessibilityView/AccessibilityView.native.tsx");
 
 export const AccessibilityView = forwardRefResult;
 export const AccessibilityViewAnimated = animatedComponent;

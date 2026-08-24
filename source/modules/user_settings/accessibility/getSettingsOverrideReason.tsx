@@ -1,36 +1,37 @@
-// Module ID: 14677
-// Function ID: 14678
+// Module ID: 14745
+// Function ID: 14746
 // Name: getSettingsOverrideReason
-// Dependencies: [4067, 685, 1236, 589, 2]
+// Dependencies: [4070, 685, 1236, 589, 2]
 // Exports: default, useSettingsOverrideReason
 
-// Module 14677 (getSettingsOverrideReason)
-import updateExistingSettings from "updateExistingSettings";
-import { SettingsOverrideReasonKeys as closure_3 } from "MAX_FAVORITES";
+// Module 14745 (getSettingsOverrideReason)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "updateExistingSettings" /* 4070 */;
+import { SettingsOverrideReasonKeys as closure_3 } from "MAX_FAVORITES" /* 685 */;
 
-const require = arg1;
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/accessibility/getSettingsOverrideReason.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/user_settings/accessibility/getSettingsOverrideReason.tsx");
 
 export default function getSettingsOverrideReason(arg0) {
   if (constants.REDUCED_MOTION === arg0) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.format(require(1236) /* getSystemLocale */.t["1dT9V4"], {});
+    const intl2 = getSystemLocale.intl;
+    return intl2.format(getSystemLocale.t["1dT9V4"], {});
   } else if (tmp.REDUCED_MOTION_STICKERS === arg0) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["2ExvRu"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["2ExvRu"]);
   }
 };
 export const useSettingsOverrideReason = function useSettingsOverrideReason(arg0) {
   const _require = arg0;
-  const items = [updateExistingSettings];
+  const items = [closure_2];
   return _require(589).useStateFromStores(items, () => {
-    const appliedOverrideReasonKey = outer1_2.getAppliedOverrideReasonKey(callback);
-    if (outer1_3.REDUCED_MOTION === appliedOverrideReasonKey) {
-      const intl2 = callback(outer1_1[2]).intl;
-      let formatResult = intl2.format(callback(outer1_1[2]).t["1dT9V4"], {});
+    const appliedOverrideReasonKey = closure_1_2.getAppliedOverrideReasonKey(callback);
+    if (closure_1_3.REDUCED_MOTION === appliedOverrideReasonKey) {
+      const intl2 = callback(closure_1_1[2]).intl;
+      let formatResult = intl2.format(callback(closure_1_1[2]).t["1dT9V4"], {});
     } else if (tmp2.REDUCED_MOTION_STICKERS === appliedOverrideReasonKey) {
-      const intl = callback(outer1_1[2]).intl;
-      formatResult = intl.string(callback(outer1_1[2]).t["2ExvRu"]);
+      const intl = callback(closure_1_1[2]).intl;
+      formatResult = intl.string(callback(closure_1_1[2]).t["2ExvRu"]);
     }
     return formatResult;
   });

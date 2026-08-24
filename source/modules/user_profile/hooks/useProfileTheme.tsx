@@ -1,31 +1,27 @@
-// Module ID: 8970
-// Function ID: 8971
+// Module ID: 9007
+// Function ID: 9008
 // Name: useProfileTheme
-// Dependencies: [32, 4662, 8971, 676, 4310, 589, 711, 8345, 688, 8422, 1363, 2]
+// Dependencies: [32, 4669, 9008, 676, 4314, 589, 711, 8384, 688, 8461, 1363, 2]
 // Exports: default
 
-// Module 8970 (useProfileTheme)
-import _slicedToArray from "_slicedToArray";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { useEffectiveThemeOverride } from "useProfileThemeOverrideStore";
-import { ThemeTypes } from "ME";
+// Module 9007 (useProfileTheme)
+import initialize from "initialize" /* 589 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { useEffectiveThemeOverride } from "useProfileThemeOverrideStore" /* 9008 */;
+import { ThemeTypes } from "ME" /* 676 */;
 
-const require = arg1;
-let result = require("useProfileThemeOverrideStore").fileFinishedImporting("modules/user_profile/hooks/useProfileTheme.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("modules/user_profile/hooks/useProfileTheme.tsx");
 
 export default function useProfileTheme(arg0) {
-  let displayProfile;
-  let forceUserTheme;
-  let isPreview;
-  let pendingAvatarSrc;
-  let pendingThemeColors;
-  let user;
   ({ user, displayProfile, pendingAvatarSrc } = arg0);
   ({ pendingThemeColors, isPreview, forceUserTheme } = arg0);
-  const tmp2 = importDefault(4310)();
+  const tmp2 = useThemeDefault();
   const tmp3 = useEffectiveThemeOverride();
-  let obj = require(589) /* initialize */;
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  let obj = initialize;
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => obj.syncProfileThemeWithUserTheme);
   if (pendingAvatarSrc == null) {
     let avatarURL;
@@ -40,7 +36,7 @@ export default function useProfileTheme(arg0) {
   }
   let tmp4Result = tmp4(711);
   const result = tmp4Result.unsafe_getResolvedRawColor("PRIMARY_530", { saturation: 1 });
-  tmp4Result = tmp4(8345);
+  tmp4Result = tmp4(8384);
   callback(tmp4Result.useAvatarColors(pendingAvatarSrc, result, false), 2);
   if (null != tmp3) {
     return tmp3;
@@ -80,12 +76,12 @@ export default function useProfileTheme(arg0) {
     if (!stateFromStores) {
       tmp16 = tmp2;
       if (!forceUserTheme) {
-        let profileTheme = tmp4(8422).getProfileTheme(first);
+        let profileTheme = tmp4(8461).getProfileTheme(first);
         if (profileTheme == null) {
           profileTheme = tmp2;
         }
         tmp16 = profileTheme;
-        const tmp4Result3 = tmp4(8422);
+        const tmp4Result3 = tmp4(8461);
       }
     }
     if (tmp16 !== ThemeTypes.DARK) {

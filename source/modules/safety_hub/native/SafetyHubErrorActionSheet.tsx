@@ -1,34 +1,40 @@
-// Module ID: 14109
-// Function ID: 14110
+// Module ID: 14177
+// Function ID: 14178
 // Name: SafetyHubErrorActionSheet
-// Dependencies: [19, 17, 21, 4661, 712, 14107, 6950, 7341, 4734, 1236, 4745, 11067, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 14175, 6988, 7379, 4739, 1236, 4750, 11106, 2]
 // Exports: default
 
-// Module 14109 (SafetyHubErrorActionSheet)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14177 (SafetyHubErrorActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import Background from "Background" /* 6988 */;
+import CircleXIcon from "CircleXIcon" /* 7379 */;
+import useIsSafetyHubLoadingDefault from "useIsSafetyHubLoading" /* 14175 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { errorContainer: null, redesignErrorIconContainer: null, redesignErrorIcon: null };
-createCacheKey = { display: "flex", alignItems: "center", justifyContent: "center", paddingTop: require("Themes").space.PX_8, paddingBottom: require("Themes").space.PX_24, gap: require("Themes").space.PX_16, minHeight: 120 };
+createCacheKey = { display: "flex", alignItems: "center", justifyContent: "center", paddingTop: ThemesDefault.space.PX_8, paddingBottom: ThemesDefault.space.PX_24, gap: ThemesDefault.space.PX_16, minHeight: 120 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { display: "flex", justifyContent: "center", alignItems: "center", height: 40, width: 40, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.WHITE };
+createCacheKey[1] = { display: "flex", justifyContent: "center", alignItems: "center", height: 40, width: 40, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.WHITE };
 createCacheKey[2] = { height: 50, width: 50 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { display: "flex", justifyContent: "center", alignItems: "center", height: 40, width: 40, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.WHITE };
-const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/native/SafetyHubErrorActionSheet.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { display: "flex", justifyContent: "center", alignItems: "center", height: 40, width: 40, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.WHITE };
+const result = require("set").fileFinishedImporting("modules/safety_hub/native/SafetyHubErrorActionSheet.tsx");
 
 export default function SafetyHubErrorActionSheet(arg0) {
   if (arg0 == null) {
     HermesBuiltin.throwTypeError();
   } else {
-    const tmp3 = createCacheKey();
-    const tmp6 = importDefault(14107)();
+    const tmp3 = callback3();
+    const tmp6 = useIsSafetyHubLoadingDefault();
     let obj = { children: null };
     obj = { style: null, children: null };
     const items = [tmp3.errorContainer];
@@ -36,28 +42,28 @@ export default function SafetyHubErrorActionSheet(arg0) {
     obj = { style: null, children: null };
     const items1 = [tmp3.redesignErrorIconContainer];
     obj[0] = items1;
-    const obj1 = { size: "custom", color: null, style: null };
-    obj1[1] = importDefault(712).colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT;
+    obj1 = { size: "custom", color: null, style: null };
+    obj1[1] = ThemesDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT;
     const items2 = [tmp3.redesignErrorIcon];
     obj1[2] = items2;
-    obj[1] = callback(require(7341) /* CircleXIcon */.CircleXIcon, obj1);
+    obj[1] = callback(CircleXIcon.CircleXIcon, obj1);
     const items3 = [callback(View, obj), ];
     const obj2 = { variant: "heading-lg/normal", children: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj2[1] = intl.string(require(1236) /* getSystemLocale */.t.TDRvqs);
-    items3[1] = callback(require(4734) /* Text */.Text, obj2);
+    const intl = getSystemLocale.intl;
+    obj2[1] = intl.string(getSystemLocale.t.TDRvqs);
+    items3[1] = callback(Text.Text, obj2);
     obj[1] = items3;
     const items4 = [callback2(View, obj), ];
     const obj3 = { onPress: null, text: null, loading: null, disabled: null };
     obj3[0] = function onPress() {
       return callback(table[11]).getSafetyHubData();
     };
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj3[1] = intl2.string(require(1236) /* getSystemLocale */.t.R1AN4F);
+    const intl2 = getSystemLocale.intl;
+    obj3[1] = intl2.string(getSystemLocale.t.R1AN4F);
     obj3[2] = tmp6;
     obj3[3] = tmp6;
-    items4[1] = callback(require(4745) /* Button */.Button, obj3);
+    items4[1] = callback(Button.Button, obj3);
     obj[0] = items4;
-    return callback2(require(6950) /* Background */.BottomSheet, obj);
+    return callback2(Background.BottomSheet, obj);
   }
 };

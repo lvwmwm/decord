@@ -1,18 +1,20 @@
-// Module ID: 10359
-// Function ID: 10360
+// Module ID: 10399
+// Function ID: 10400
 // Name: items
-// Dependencies: [1994, 7202, 676, 10360, 1236, 3271, 2]
+// Dependencies: [1995, 7240, 676, 10400, 1236, 3274, 2]
 // Exports: getCheckoutDisclaimerMessageForApplication, getFinePrintMessageForApplication, getGiftLinkAccountDescriptionForApplication, getMobileFinePrintMessageForApplication, getNotSupportedSentence, getRedeemPurchaseDescriptionForApplication
 
-// Module 10359 (items)
-import _getSystemLocale from "_getSystemLocale";
-import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
-import { MarketingURLs } from "ME";
+// Module 10399 (items)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 3274 */;
+import closure_3 from "_getSystemLocale" /* 1995 */;
+import closure_4 from "handleUserSettingsStoreUpdate" /* 7240 */;
+import { MarketingURLs } from "ME" /* 676 */;
 
-const require = arg1;
-let closure_6 = { [arg1(10360).StorefrontPlatform.DESKTOP]: "PC", [arg1(10360).StorefrontPlatform.XBOX]: "Xbox", [arg1(10360).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(10360).StorefrontPlatform.SWITCH]: "Switch", [arg1(10360).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(10360).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(10360).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
+require = arg1;
+let closure_6 = { [arg1(10400).StorefrontPlatform.DESKTOP]: "PC", [arg1(10400).StorefrontPlatform.XBOX]: "Xbox", [arg1(10400).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(10400).StorefrontPlatform.SWITCH]: "Switch", [arg1(10400).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(10400).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(10400).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
 let items = [require("StorefrontPlatform").StorefrontPlatform.PLAYSTATION];
-const result = require("ME").fileFinishedImporting("modules/slayer_storefront/utils/SlayerStorefrontDisclaimerUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/slayer_storefront/utils/SlayerStorefrontDisclaimerUtils.tsx");
 
 export const getNotSupportedSentence = function getNotSupportedSentence(id) {
   if (null == id) {
@@ -23,18 +25,18 @@ export const getNotSupportedSentence = function getNotSupportedSentence(id) {
   }
   let str = "";
   if (0 !== arr.length) {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const obj = { platforms: null, count: null };
     const _Intl = Intl;
-    const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
+    const listFormat = new Intl.ListFormat(closure_3.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    str = intl.formatToPlainString(importDefault(3271)["5h8p5P"], obj);
+    str = intl.formatToPlainString(messagesProxyDefault["5h8p5P"], obj);
   }
   return str;
 };
 export const getCheckoutDisclaimerMessageForApplication = function getCheckoutDisclaimerMessageForApplication(id) {
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   id = undefined;
   if (id != null) {
     id = id.id;
@@ -47,15 +49,15 @@ export const getCheckoutDisclaimerMessageForApplication = function getCheckoutDi
   }
   let platforms_info = "";
   if (0 !== arr.length) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     const obj = { platforms: null, count: null };
     const _Intl = Intl;
-    const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
+    const listFormat = new Intl.ListFormat(closure_3.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    platforms_info = intl2.formatToPlainString(importDefault(3271)["5h8p5P"], obj);
+    platforms_info = intl2.formatToPlainString(messagesProxyDefault["5h8p5P"], obj);
   }
-  return intl.format(importDefault(3271).Q0dHYO, { platforms_info });
+  return intl.format(messagesProxyDefault.Q0dHYO, { platforms_info });
 };
 export const getFinePrintMessageForApplication = function getFinePrintMessageForApplication(name, shouldAppendDisclaimer) {
   let str;
@@ -65,7 +67,7 @@ export const getFinePrintMessageForApplication = function getFinePrintMessageFor
   if (str == null) {
     str = "game's";
   }
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   const format = intl.format;
   if (shouldAppendDisclaimer.shouldAppendDisclaimer) {
     let obj = { applicationName: null, platforms_info: null };
@@ -86,15 +88,15 @@ export const getFinePrintMessageForApplication = function getFinePrintMessageFor
       const intl3 = tmp(1236).intl;
       obj = { platforms: null, count: null };
       const _Intl = Intl;
-      const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
+      const listFormat = new Intl.ListFormat(closure_3.locale);
       obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
       obj[1] = arr.length;
-      str2 = intl3.formatToPlainString(tmp4(3271)["5h8p5P"], obj);
+      str2 = intl3.formatToPlainString(tmp4(3274)["5h8p5P"], obj);
     }
-    const obj1 = { platforms_info: null };
+    obj1 = { platforms_info: null };
     obj1[0] = str2;
-    obj[1] = intl2.format(importDefault(3271).Q0dHYO, obj1);
-    let formatResult = format(importDefault(3271)["3ah/a2"], obj);
+    obj[1] = intl2.format(messagesProxyDefault.Q0dHYO, obj1);
+    let formatResult = format(messagesProxyDefault["3ah/a2"], obj);
     tmp4 = importDefault;
   } else {
     obj = { applicationName: null };
@@ -112,9 +114,9 @@ export const getMobileFinePrintMessageForApplication = function getMobileFinePri
     str = "game's";
   }
   let obj = { buyButtonLabel: stringResult, paidServiceTermURL: MarketingURLs.PAID_TERMS, applicationName: str };
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   const format = intl.format;
-  const tmp4 = importDefault(3271);
+  const tmp4 = messagesProxyDefault;
   if (shouldAppendDisclaimer.shouldAppendDisclaimer) {
     let id;
     if (name != null) {
@@ -131,16 +133,16 @@ export const getMobileFinePrintMessageForApplication = function getMobileFinePri
       const intl3 = tmp(1236).intl;
       obj = { platforms: null, count: null };
       const _Intl = Intl;
-      const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
+      const listFormat = new Intl.ListFormat(closure_3.locale);
       obj[0] = listFormat.format(arr2.map((arg0) => table[arg0]));
       obj[1] = arr2.length;
-      str2 = intl3.formatToPlainString(tmp3(3271)["5h8p5P"], obj);
+      str2 = intl3.formatToPlainString(tmp3(3274)["5h8p5P"], obj);
     }
     obj = { platforms_info: null };
     obj[0] = str2;
     items = [format(tmp4.Q0dHYO, obj), ];
     const intl2 = tmp(1236).intl;
-    items[1] = intl2.format(tmp3(3271).Ufm9XX, obj);
+    items[1] = intl2.format(tmp3(3274).Ufm9XX, obj);
     let items1 = items;
   } else {
     items1 = [format(tmp4.Ufm9XX, obj)];
@@ -148,7 +150,7 @@ export const getMobileFinePrintMessageForApplication = function getMobileFinePri
   return items1;
 };
 export const getRedeemPurchaseDescriptionForApplication = function getRedeemPurchaseDescriptionForApplication(applicationName) {
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   let obj = { applicationName: applicationName.name, platforms_info: null };
   const id = applicationName.id;
   if (null == id) {
@@ -159,19 +161,19 @@ export const getRedeemPurchaseDescriptionForApplication = function getRedeemPurc
   }
   let str = "";
   if (0 !== arr.length) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     obj = { platforms: null, count: null };
     const _Intl = Intl;
-    const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
+    const listFormat = new Intl.ListFormat(closure_3.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    str = intl2.formatToPlainString(importDefault(3271)["5h8p5P"], obj);
+    str = intl2.formatToPlainString(messagesProxyDefault["5h8p5P"], obj);
   }
   obj[1] = str;
-  return intl.format(importDefault(3271).fO4b1C, obj);
+  return intl.format(messagesProxyDefault.fO4b1C, obj);
 };
 export const getGiftLinkAccountDescriptionForApplication = function getGiftLinkAccountDescriptionForApplication(applicationName, hasAlreadyLinked) {
-  const tmp3 = importDefault(3271);
+  const tmp3 = messagesProxyDefault;
   if (hasAlreadyLinked.hasAlreadyLinked) {
     let vyAtfo = tmp3.yqAKVO;
     let tmp4 = tmp;
@@ -179,7 +181,7 @@ export const getGiftLinkAccountDescriptionForApplication = function getGiftLinkA
     vyAtfo = tmp3.vyAtfo;
     tmp4 = tmp;
   }
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   let obj = { applicationName: applicationName.name, platforms_info: null };
   const id = applicationName.id;
   if (null == id) {
@@ -190,13 +192,13 @@ export const getGiftLinkAccountDescriptionForApplication = function getGiftLinkA
   }
   let str = "";
   if (0 !== arr.length) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     obj = { platforms: null, count: null };
     const _Intl = Intl;
-    const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
+    const listFormat = new Intl.ListFormat(closure_3.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    str = intl2.formatToPlainString(tmp4(3271)["5h8p5P"], obj);
+    str = intl2.formatToPlainString(tmp4(3274)["5h8p5P"], obj);
   }
   obj[1] = str;
   return intl.format(vyAtfo, obj);

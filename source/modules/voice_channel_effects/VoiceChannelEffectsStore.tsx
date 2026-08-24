@@ -1,25 +1,32 @@
-// Module ID: 12460
-// Function ID: 12461
+// Module ID: 12512
+// Function ID: 12513
 // Name: recentlyUsedEmojis
-// Dependencies: [4544, 709, 687, 12, 7309, 1363, 589, 2]
+// Dependencies: [4549, 709, 687, 12, 7347, 1363, 589, 2]
 // Exports: clearVoiceChannelEffectForUser
 
-// Module 12460 (recentlyUsedEmojis)
-import { EMOJI_PICKER_EMOJI_TO_SHOW_COUNT as closure_4 } from "ParticipantTypes";
-import apply from "apply";
-import { Store } from "initialize";
+// Module 12512 (recentlyUsedEmojis)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 1363 */;
+import ParticipantTypes from "ParticipantTypes" /* 4549 */;
+import VoiceChannelEffectAnimationType from "VoiceChannelEffectAnimationType" /* 7347 */;
+import apply from "apply" /* 12 */;
 
+let closure_4 = ParticipantTypes.EMOJI_PICKER_EMOJI_TO_SHOW_COUNT;
 let closure_5 = [];
 let closure_6 = {};
 let closure_7 = [];
 let closure_8 = [];
-let closure_9 = 10 * require("set").Millis.SECOND;
+let closure_9 = 10 * setDefault.Millis.SECOND;
 let closure_10 = apply.debounce(() => {
-  const effectAnnouncement = require(7309) /* VoiceChannelEffectAnimationType */.getEffectAnnouncement(closure_7);
-  const AccessibilityAnnouncer = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const effectAnnouncement = VoiceChannelEffectAnimationType.getEffectAnnouncement(closure_7);
+  const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(effectAnnouncement, "polite");
   closure_7 = [];
 }, 500);
+const Store = initializeDefault.Store;
 class VoiceChannelEffectsStore extends Store {
 }
 const prototype = VoiceChannelEffectsStore.prototype;
@@ -51,7 +58,7 @@ prototype["getEffectForUserId"] = function getEffectForUserId(arg0) {
   return dependencyMap[arg0];
 };
 VoiceChannelEffectsStore.displayName = "VoiceChannelEffectsStore";
-const voiceChannelEffectsStore = new VoiceChannelEffectsStore(require("dispatcher"), {
+const voiceChannelEffectsStore = new VoiceChannelEffectsStore(dispatcherDefault, {
   VOICE_CHANNEL_EFFECT_CLEAR: function handleClearVoiceChannelEffect(arg0) {
     if (null != dependencyMap[arg0.userId]) {
       delete tmp[tmp2];
@@ -61,18 +68,15 @@ const voiceChannelEffectsStore = new VoiceChannelEffectsStore(require("dispatche
     emoji = emoji.emoji;
     if (null != emoji) {
       arr = arr.unshift(emoji);
-      const uniqByResult = require(12) /* apply */.uniqBy(arr, "name");
+      const uniqByResult = apply.uniqBy(arr, "name");
       arr = uniqByResult;
       if (uniqByResult.length > closure_4 + 1) {
         arr = arr.pop();
       }
-      const obj = require(12) /* apply */;
+      const obj = apply;
     }
   },
   VOICE_CHANNEL_EFFECT_SEND: function handleReceivedVoiceChannelEffect(arg0) {
-    let animationType;
-    let emoji;
-    let userId;
     ({ emoji, userId, animationType } = arg0);
     if (tmp) {
       let obj = { emoji: null, sentAt: null, animationType: null };
@@ -107,12 +111,12 @@ const voiceChannelEffectsStore = new VoiceChannelEffectsStore(require("dispatche
     const date = new Date(Date.now() + cooldownEndsAtMs.cooldownEndsAtMs);
   }
 });
-const result = require("set").fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsStore.tsx");
+const result = set.fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsStore.tsx");
 
 export default voiceChannelEffectsStore;
 export const clearVoiceChannelEffectForUser = function clearVoiceChannelEffectForUser(arg0) {
   if (null != arg0) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "VOICE_CHANNEL_EFFECT_CLEAR", userId: null };
     obj[1] = arg0;
     obj.dispatch(obj);

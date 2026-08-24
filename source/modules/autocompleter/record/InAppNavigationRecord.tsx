@@ -1,15 +1,17 @@
-// Module ID: 6715
-// Function ID: 6716
+// Module ID: 6752
+// Function ID: 6753
 // Name: fromType
-// Dependencies: [1931, 676, 6716, 685, 6725, 2]
+// Dependencies: [1931, 676, 6753, 685, 6762, 2]
 
-// Module 6715 (fromType)
-import "toJS";
-import { Routes } from "ME";
-import { RewardFilterTypes } from "QuestsExperimentLocations";
-import { UserSettingsPath } from "MAX_FAVORITES";
+// Module 6752 (fromType)
+import toJSDefault from "toJS" /* 1931 */;
+import settingsPathToRoute from "settingsPathToRoute" /* 6762 */;
+import { Routes } from "ME" /* 676 */;
+import { RewardFilterTypes } from "QuestsExperimentLocations" /* 6753 */;
+import { UserSettingsPath } from "MAX_FAVORITES" /* 685 */;
 
-const require = arg1;
+require = arg1;
+toJSDefault;
 let obj = { SHOP: "SHOP", SHOP_ORBS_TAB: "SHOP_ORBS_TAB", NITRO_HOME: "NITRO_HOME", QUEST_HOME: "QUEST_HOME", QUEST_ORBS: "QUEST_ORBS", APPS_HOME: "APPS_HOME", SETTINGS: "SETTINGS", PLAYGROUND: "PLAYGROUND" };
 let prototype;
 prototype = function InAppNavigationRecord(collectionId) {
@@ -65,7 +67,7 @@ prototype["fromType"] = function fromType(arg0) {
     ({ path: tmp86.path, type: tmp86.type, label: tmp86.label, collectionId: tmp86.collectionId, IconComponent: tmp86.IconComponent } = obj);
     return tmp86;
   } else if (tmp7.QUEST_HOME === arg0) {
-    const obj1 = { path: null, type: null };
+    obj1 = { path: null, type: null };
     obj1[0] = Routes.QUEST_HOME;
     obj1[1] = tmp7.QUEST_HOME;
     if (typeof prototype !== "function") {
@@ -105,7 +107,7 @@ prototype["fromType"] = function fromType(arg0) {
     throwTypeErrorResult = arg2;
     if (tmp7.SETTINGS === arg0) {
       if (settingsPathToRouteResult == null) {
-        obj2 = require(6725) /* settingsPathToRoute */;
+        obj2 = settingsPathToRoute;
         settingsPathToRouteResult = obj2.settingsPathToRoute(UserSettingsPath.ACCOUNT);
       }
       const obj3 = { path: null, label: null, type: null };
@@ -190,12 +192,12 @@ prototype["fromType"] = function fromType(arg0) {
       return tmp21;
     } else {
       const _Error = Error;
-      const error = new Error("Unhandled InAppNavigationType");
+      error = new Error("Unhandled InAppNavigationType");
       throw error;
     }
   }
 };
-const result = require("QuestsExperimentLocations").fileFinishedImporting("modules/autocompleter/record/InAppNavigationRecord.tsx");
+const result = require("set").fileFinishedImporting("modules/autocompleter/record/InAppNavigationRecord.tsx");
 
 export default prototype;
 export const InAppNavigationRecord = prototype;

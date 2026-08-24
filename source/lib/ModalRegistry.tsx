@@ -1,9 +1,11 @@
-// Module ID: 16132
-// Function ID: 16133
+// Module ID: 16230
+// Function ID: 16231
 // Name: getStores
 // Dependencies: [2]
 
-// Module 16132 (getStores)
+// Module 16230 (getStores)
+import set2 from "set" /* 2 */;
+
 class ModalRegistry {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -55,6 +57,6 @@ prototype["getOpenModal"] = function getOpenModal() {
     return obj;
   }
 };
-const result = require("set").fileFinishedImporting("lib/ModalRegistry.tsx");
+const result = set2.fileFinishedImporting("lib/ModalRegistry.tsx");
 
 export default ModalRegistry;

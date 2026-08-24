@@ -1,29 +1,29 @@
-// Module ID: 14038
-// Function ID: 14039
+// Module ID: 14106
+// Function ID: 14107
 // Name: EditProfileThemeActionSheet
-// Dependencies: [19, 21, 4661, 712, 7175, 6949, 1236, 1297, 6286, 6291, 4342, 2]
+// Dependencies: [19, 21, 4668, 712, 7213, 6987, 1236, 1297, 6317, 6322, 4346, 2]
 // Exports: default
 
-// Module 14038 (EditProfileThemeActionSheet)
-import "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14106 (EditProfileThemeActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
 const require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 createCacheKey = { nitroWheel: null, titleWrapper: null, titleContainer: null };
-createCacheKey = { tintColor: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, marginLeft: 4, width: 20, height: 20 };
+createCacheKey = { tintColor: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, marginLeft: 4, width: 20, height: 20 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flex: 0 };
 createCacheKey[2] = { justifyContent: "flex-start" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createCacheKey").fileFinishedImporting("modules/user_settings/profiles/native/EditProfileThemeActionSheet.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_settings/profiles/native/EditProfileThemeActionSheet.tsx");
 
 export default function EditProfileThemeActionSheet(onResetTheme) {
   onResetTheme = onResetTheme.onResetTheme;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { children: null };
   obj = { title: null, trailing: null, titleWrapperStyle: null, titleContainerStyle: null };
   const intl = onResetTheme(1236).intl;
@@ -31,8 +31,8 @@ export default function EditProfileThemeActionSheet(onResetTheme) {
   obj = { style: tmp.nitroWheel };
   obj[1] = callback(onResetTheme(1297).NitroWheel, obj);
   ({ titleWrapper: obj2[2], titleContainer: obj2[3] } = tmp);
-  const items = [callback(onResetTheme(6949).BottomSheetTitleHeader, obj), ];
-  const obj1 = { hasIcons: false, children: null };
+  const items = [callback(onResetTheme(6987).BottomSheetTitleHeader, obj), ];
+  obj1 = { hasIcons: false, children: null };
   const obj2 = { label: null, subLabel: null, onPress: null };
   const intl2 = onResetTheme(1236).intl;
   obj2[0] = intl2.string(onResetTheme(1236).t["L+GmoR"]);
@@ -40,10 +40,10 @@ export default function EditProfileThemeActionSheet(onResetTheme) {
   obj2[1] = intl3.string(onResetTheme(1236).t.MA9iNr);
   obj2[2] = function onPress() {
     onResetTheme();
-    outer1_1(outer1_2[10]).hideActionSheet();
+    closure_1_1(closure_1_2[10]).hideActionSheet();
   };
-  obj1[1] = callback(onResetTheme(6291).TableRow, obj2);
-  items[1] = callback(onResetTheme(6286).TableRowGroup, obj1);
+  obj1[1] = callback(onResetTheme(6322).TableRow, obj2);
+  items[1] = callback(onResetTheme(6317).TableRowGroup, obj1);
   obj[0] = items;
-  return callback2(onResetTheme(7175).ActionSheet, obj);
+  return callback2(onResetTheme(7213).ActionSheet, obj);
 };

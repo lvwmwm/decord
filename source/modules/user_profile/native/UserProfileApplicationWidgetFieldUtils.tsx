@@ -1,28 +1,29 @@
-// Module ID: 12277
-// Function ID: 12278
+// Module ID: 12329
+// Function ID: 12330
 // Name: formatDurationNarrow
-// Dependencies: [19, 17, 21, 4661, 712, 1236, 12278, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1236, 12330, 4739, 2]
 // Exports: FieldText, formatDurationNarrow
 
-// Module 12277 (formatDurationNarrow)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12329 (formatDurationNarrow)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import ImageSkeleton from "ImageSkeleton" /* 12330 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Image: obj1, View: c3 } = get_ActivityIndicator);
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { fieldTextRow: null, fieldIcon: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { width: 16, height: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetFieldUtils.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetFieldUtils.tsx");
 
 export const formatDurationNarrow = function formatDurationNarrow(arg0) {
   let num = 0;
@@ -36,52 +37,48 @@ export const formatDurationNarrow = function formatDurationNarrow(arg0) {
   const result1 = Math.floor(num / 1000) % 60;
   const items = [];
   if (rounded > 0) {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     let obj = { hours: null };
     obj[0] = rounded;
-    items.push(intl.formatToPlainString(require(1236) /* getSystemLocale */.t.rhY1Rs, obj));
+    items.push(intl.formatToPlainString(getSystemLocale.t.rhY1Rs, obj));
   }
   if (0 < result) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     obj = { minutes: null };
     obj[0] = result;
-    items.push(intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["XIGt+W"], obj));
+    items.push(intl2.formatToPlainString(getSystemLocale.t["XIGt+W"], obj));
   }
   let tmp10 = result1 > 0;
   if (0 >= result1) {
     tmp10 = 0 === items.length;
   }
   if (tmp10) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
+    const intl3 = getSystemLocale.intl;
     obj = { seconds: null };
     obj[0] = result1;
-    items.push(intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.pyvjRp, obj));
+    items.push(intl3.formatToPlainString(getSystemLocale.t.pyvjRp, obj));
   }
   return items.join(" ");
 };
 export const FieldText = function FieldText(arg0) {
-  let color;
-  let field;
-  let skeletonWidthChars;
-  let variant;
   ({ field, variant } = arg0);
   ({ color, skeletonWidthChars } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   if ("hidden" === field.status) {
     return null;
   } else if ("skeleton" === field.status) {
     let obj = { variant: null, widthChars: null };
     obj[0] = variant;
     obj[1] = skeletonWidthChars;
-    let tmp9Result = callback(require(12278) /* ImageSkeleton */.TextSkeleton, obj);
+    let tmp9Result = callback(ImageSkeleton.TextSkeleton, obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.fieldTextRow;
-    const obj1 = { variant: null, color: null, lineClamp: 2, children: null };
+    obj1 = { variant: null, color: null, lineClamp: 2, children: null };
     obj1[0] = variant;
     obj1[1] = color;
     obj1[3] = field.text;
-    const items = [callback(require(4734) /* Text */.Text, obj1), ];
+    const items = [callback(Text.Text, obj1), ];
     let tmp11Result = null != field.icon;
     if (tmp11Result) {
       obj = { source: null, style: null, resizeMode: "contain" };

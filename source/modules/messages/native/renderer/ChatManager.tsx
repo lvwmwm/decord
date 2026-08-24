@@ -1,15 +1,16 @@
-// Module ID: 10730
-// Function ID: 10731
+// Module ID: 10769
+// Function ID: 10770
 // Name: getPreviousMessages
-// Dependencies: [8158, 10731, 659, 2]
+// Dependencies: [8197, 10770, 659, 2]
 
-// Module 10730 (getPreviousMessages)
-import Changeset from "Changeset";
+// Module 10769 (getPreviousMessages)
+import set from "set" /* 2 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
+import getEmbeddedActivityKeyDefault from "getEmbeddedActivityKey" /* 10770 */;
+import Changeset from "Changeset" /* 8197 */;
 
-let c3;
-let obj1;
 ({ Changeset: obj1, RowType: c3 } = Changeset);
-const result = require("isUndefinedOrNull").fileFinishedImporting("modules/messages/native/renderer/ChatManager.tsx");
+const result = set.fileFinishedImporting("modules/messages/native/renderer/ChatManager.tsx");
 class ChatManager {
   constructor() {
     obj = Object.create(new.target.prototype);
@@ -124,7 +125,7 @@ prototype["determineChangeTypeForUploadProgress"] = function determineChangeType
   }
 };
 prototype["determineChangeTypeForEmbeddedActivity"] = function determineChangeTypeForEmbeddedActivity(arg0) {
-  const tmp = importDefault(10731)(arg0);
+  const tmp = getEmbeddedActivityKeyDefault(arg0);
   this.embeddedActivities[tmp] = arg0;
   if (null != this.embeddedActivities[tmp]) {
     let INSERT = constants.UPDATE;
@@ -134,8 +135,6 @@ prototype["determineChangeTypeForEmbeddedActivity"] = function determineChangeTy
   return INSERT;
 };
 prototype["determineChangeType"] = function determineChangeType(forceRender) {
-  let message;
-  let updateMessageIds;
   ({ message, updateMessageIds } = forceRender);
   let flag = arg1;
   if (arg1 === undefined) {
@@ -168,7 +167,7 @@ prototype["determineChangeType"] = function determineChangeType(forceRender) {
             hasItem = updateMessageIds.has(message.id);
           }
           if (!hasItem) {
-            INSERT = importDefault(659)(tmp, message) ? tmp5.NOOP : tmp5.UPDATE;
+            INSERT = isUndefinedOrNullDefault(tmp, message) ? tmp5.NOOP : tmp5.UPDATE;
           }
         }
         INSERT = constants.UPDATE;

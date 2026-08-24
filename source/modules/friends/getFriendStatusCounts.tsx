@@ -1,15 +1,15 @@
-// Module ID: 15970
-// Function ID: 15971
+// Module ID: 16067
+// Function ID: 16068
 // Name: getFriendStatusCounts
-// Dependencies: [4559, 4030, 676, 2]
+// Dependencies: [4564, 4033, 676, 2]
 // Exports: default
 
-// Module 15970 (getFriendStatusCounts)
-import sortActivity from "sortActivity";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import { StatusTypes } from "ME";
+// Module 16067 (getFriendStatusCounts)
+import closure_0 from "sortActivity" /* 4564 */;
+import closure_1 from "markAllUserIdListsStale" /* 4033 */;
+import { StatusTypes } from "ME" /* 676 */;
 
-const result = require("ME").fileFinishedImporting("modules/friends/getFriendStatusCounts.tsx");
+const result = require("set").fileFinishedImporting("modules/friends/getFriendStatusCounts.tsx");
 
 export default function getFriendStatusCounts() {
   let num_friends_online = 0;

@@ -1,10 +1,12 @@
-// Module ID: 11878
-// Function ID: 11879
+// Module ID: 11927
+// Function ID: 11928
 // Name: NewUserTypes
 // Dependencies: [2]
 
-// Module 11878 (NewUserTypes)
-const result = require("set").fileFinishedImporting("modules/nuf/NUFConstants.tsx");
+// Module 11927 (NewUserTypes)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/nuf/NUFConstants.tsx");
 
 export const NewUserTypes = { MARKETING_UNCLAIMED: 0, [0]: "MARKETING_UNCLAIMED", INVITE_UNCLAIMED: 1, [1]: "INVITE_UNCLAIMED", ORGANIC_REGISTERED: 2, [2]: "ORGANIC_REGISTERED", ORGANIC_REGISTERED_GUILD_TEMPLATE: 3, [3]: "ORGANIC_REGISTERED_GUILD_TEMPLATE" };
 export const NUF_NOTIFICATION_MODAL_KEY = "nuf-notification-modal-key";

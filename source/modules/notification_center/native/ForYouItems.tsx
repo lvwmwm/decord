@@ -1,58 +1,46 @@
-// Module ID: 15674
-// Function ID: 15675
+// Module ID: 15743
+// Function ID: 15744
 // Name: ForYouFooter
-// Dependencies: [5, 32, 19, 17, 4662, 4478, 1391, 1910, 1922, 15668, 676, 5259, 21, 4661, 4734, 712, 4764, 15673, 1236, 1403, 8261, 7508, 10447, 10250, 8122, 589, 8315, 1297, 11799, 15675, 1500, 4355, 4492, 4802, 698, 8443, 15676, 10808, 4094, 10831, 2007, 4342, 15678, 4333, 15670, 7172, 15679, 15680, 11, 5433, 15681, 4967, 12349, 1501, 4066, 4071, 15691, 15692, 15693, 15694, 15695, 15701, 810, 15702, 15703, 1370, 15672, 8029, 15704, 2]
+// Dependencies: [5, 32, 19, 17, 4669, 4482, 1391, 1910, 1922, 15737, 676, 5264, 21, 4668, 4739, 712, 4769, 15742, 1236, 1403, 8301, 7546, 10486, 10289, 8161, 589, 8355, 1297, 11848, 15744, 1500, 4359, 4496, 4807, 698, 8482, 15745, 10847, 4097, 10870, 2008, 4346, 15747, 4337, 15739, 7210, 15748, 15749, 11, 5438, 15750, 4972, 12401, 1501, 4069, 4074, 15760, 15761, 15762, 15763, 15764, 15770, 810, 15771, 15772, 1370, 15741, 8068, 15773, 2]
 
-// Module 15674 (ForYouFooter)
-import addApplication from "addApplication";
-import handleSupportedURL from "handleSupportedURL";
-import importAllResult from "hasFlag";
-import get_ActivityIndicator from "ForYouMentionPlaceholder";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import closure_10 from "addApplication";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import handleLoadFinished from "handleLoadFinished";
-import ME from "ME";
-import { NotificationTypes } from "str2";
-import jsxProd from "getSampleOfVoterUsernamesForAnswer";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
+// Module 15743 (ForYouFooter)
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import createRulesAll from "createRules" /* 4769 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 11848 */;
+import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 15742 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_10 from "addApplication" /* 4482 */;
+import closure_11 from "ensureGuildLoaded" /* 1391 */;
+import closure_12 from "createGuildRecordFromRust" /* 1910 */;
+import closure_13 from "mergeGuildAvatar" /* 1922 */;
+import closure_14 from "handleLoadFinished" /* 15737 */;
+import ME from "ME" /* 676 */;
+import { NotificationTypes } from "str2" /* 5264 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_18;
-let closure_19;
-let closure_21;
-let closure_22;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
-    tmp = callback(require(15673) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
+    tmp = callback(ForYouMentionPlaceholder.ForYouMentionPlaceholder, {});
   }
   return tmp;
 }
 function Callout(arg0) {
-  let acked;
-  let compactMode;
-  let item;
   ({ item, acked, compactMode } = arg0);
-  const tmp = createCacheKey();
-  let obj = importAll(4764);
+  const tmp = callback6();
+  let obj = createRulesAll;
   obj = { style: tmp.calloutContainer, pointerEvents: "none", children: null };
   obj = { style: tmp.messagePreviewBarV2 };
-  const parser = obj.getParser(callback3());
+  const parser = obj.getParser(callback4());
   const items = [callback(closure_7, obj), ];
-  const obj1 = { style: items1, variant: "redesign/message-preview/medium", lineClamp: null, children: null };
+  obj1 = { style: items1, variant: "redesign/message-preview/medium", lineClamp: null, children: null };
   items1 = [acked ? tmp.calloutTextAcked : tmp.calloutTextNotAcked];
   let num = 10;
   if (compactMode) {
@@ -60,25 +48,23 @@ function Callout(arg0) {
   }
   obj1[2] = num;
   obj1[3] = parser(item.callout);
-  items[1] = callback(require(4734) /* Text */.Text, obj1);
+  items[1] = callback(Text.Text, obj1);
   obj[2] = items;
   return closure_22(closure_7, obj);
 }
 function ForYouMessagePreviewV2(item) {
-  let compactMode;
-  let roleStyle;
   item = item.item;
   const acked = item.acked;
   let guild_id;
   let message_channel_id;
   ({ compactMode, roleStyle } = item);
-  let messagePreviewIconV2 = createCacheKey();
+  let messagePreviewIconV2 = callback6();
   let SMALL = dependencyMap;
-  let obj = message_channel_id(4764);
-  const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(callback4(), closure_28, roleStyle);
+  let obj = message_channel_id(4769);
+  const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(callback5(), closure_28, roleStyle);
   const intl = item(1236).intl;
   const stringResult = intl.string(item(1236).t.BOi07B);
-  let obj1 = item(1403);
+  obj1 = item(1403);
   let message = item.message;
   let num;
   if (message != null) {
@@ -129,10 +115,10 @@ function ForYouMessagePreviewV2(item) {
         first = embeds[0];
       }
     }
-    const tmp15 = guild_id(8261)(first);
+    const tmp15 = guild_id(8301)(first);
     let result = stringResult;
     if (null != tmp15) {
-      let tmp2Result = tmp2(7508);
+      let tmp2Result = tmp2(7546);
       result = tmp2Result.formatPollResultNotificationCenterText(tmp15);
     }
   } else if (stickers.length > 0) {
@@ -185,20 +171,20 @@ function ForYouMessagePreviewV2(item) {
   message_channel_id = item.message_channel_id;
   hasFlagResult = obj1.hasFlag(num, constants.IS_VOICE_MESSAGE);
   tmp4 = constants;
-  let items = [createGuildRecordFromRust];
-  const stateFromStores = item(589).useStateFromStores(items, () => outer1_12.getGuild(guild_id));
+  let items = [closure_12];
+  const stateFromStores = item(589).useStateFromStores(items, () => closure_1_12.getGuild(guild_id));
   const tmp2Result1 = item(589);
-  const items1 = [ensureGuildLoaded];
-  const stateFromStores1 = item(589).useStateFromStores(items1, () => outer1_11.getChannel(message_channel_id));
+  const items1 = [closure_11];
+  const stateFromStores1 = item(589).useStateFromStores(items1, () => closure_1_11.getChannel(message_channel_id));
   const tmp2Result2 = item(589);
-  const items2 = [mergeGuildAvatar];
+  const items2 = [closure_13];
   const stateFromStoresArray = item(589).useStateFromStoresArray(items2, () => {
     const message = item.message;
     let id;
     if (message != null) {
       id = message.author.id;
     }
-    const items = [outer1_13.getUser(id)];
+    const items = [closure_1_13.getUser(id)];
     const message2 = item.message;
     let mapped;
     if (message2 != null) {
@@ -240,18 +226,18 @@ function ForYouMessagePreviewV2(item) {
   if (acked) {
     str2 = "text-muted";
   }
-  const items5 = [item(8315).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, { textColor: str2 }), ];
+  const items5 = [item(8355).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, { textColor: str2 }), ];
   if (null == ATTACHMENT) {
     items5[1] = tmp26;
     obj1[3] = items5;
-    items3[1] = tmp21(tmp2(4734).Text, obj1);
+    items3[1] = tmp21(tmp2(4739).Text, obj1);
     obj[2] = items3;
     return tmp21(tmp22, obj);
   } else {
     const obj3 = { style: null, children: null };
     obj3[0] = messagePreviewIconV2.messagePreviewIconV2Container;
     if (constants3.ATTACHMENT === ATTACHMENT) {
-      let tmp29 = guild_id(10447);
+      let tmp29 = guild_id(10486);
       const obj4 = { source: null, size: null, style: null };
       obj4[0] = tmp29;
       SMALL = tmp2(1297).IconSizes.SMALL;
@@ -263,24 +249,24 @@ function ForYouMessagePreviewV2(item) {
     } else if (tmp28.STICKER !== ATTACHMENT) {
       tmp29 = null;
       if (tmp28.VOICE_MESSAGE === ATTACHMENT) {
-        tmp29 = guild_id(8122);
+        tmp29 = guild_id(8161);
       }
     }
-    tmp29 = guild_id(10250);
+    tmp29 = guild_id(10289);
   }
 }
 function ApplicationName(applicationId) {
   applicationId = applicationId.applicationId;
   let obj = applicationId(589);
   const items = [closure_10];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getApplication(applicationId));
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_10.getApplication(applicationId));
   if (null == stateFromStores) {
     let tmp5 = callback(closure_7, {});
   } else {
     obj = { application: null, textVariant: null, iconSize: 16 };
     obj[0] = stateFromStores;
     obj[1] = applicationId.textVariant;
-    tmp5 = callback(importDefault(11799), obj, stateFromStores.id);
+    tmp5 = callback(ApplicationIconAndNameDefault, obj, stateFromStores.id);
   }
   return tmp5;
 }
@@ -312,87 +298,73 @@ function ScrollToTopRef(scrollRef) {
 function extractKey(id) {
   return id.id;
 }
-({ View: error, RefreshControl: metroImportAll, StyleSheet } = get_ActivityIndicator);
+({ View: error, RefreshControl: closure_8, StyleSheet } = get_ActivityIndicator);
 ({ AnalyticEvents: closure_15, MessageFlags: closure_16, AnalyticsLocations: closure_17, MessageTypes: closure_18, EMPTY_STRING_SNOWFLAKE_ID: closure_19 } = ME);
 ({ jsx: closure_21, jsxs: closure_22 } = jsxProd);
 let closure_23 = { waitForInteraction: false, viewAreaCoveragePercentThreshold: 100, minimumViewTime: 1000 };
 let obj = { strong: null };
 obj = {};
 const merged = Object.assign(require("Text").TextStyleSheet["text-md/medium"]);
-obj.color = require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY;
+obj.color = ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY;
 obj[0] = obj;
 let closure_24 = createCacheKey.createStyles(obj);
 createCacheKey = { strong: null };
 let obj2 = {};
 const merged1 = Object.assign(require("Text").TextStyleSheet["text-md/medium"]);
-obj2.color = require("Themes").colors.TEXT_MUTED;
+obj2.color = ThemesDefault.colors.TEXT_MUTED;
 createCacheKey[0] = obj2;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_25 = createCacheKey.createStyles(createCacheKey);
 let obj3 = { mention: null };
-createCacheKey = { color: require("Themes").colors.MENTION_FOREGROUND, backgroundColor: require("Themes").colors.MENTION_BACKGROUND };
+createCacheKey = { color: ThemesDefault.colors.MENTION_FOREGROUND, backgroundColor: ThemesDefault.colors.MENTION_BACKGROUND };
 obj3[0] = createCacheKey;
 let closure_26 = createCacheKey.createStyles(obj3);
-let obj5 = { mention: null };
-obj5[0] = { color: require("Themes").colors.MENTION_FOREGROUND, backgroundColor: "transparent" };
+let obj5 = { mention: { color: ThemesDefault.colors.MENTION_FOREGROUND, backgroundColor: "transparent" } };
 let closure_27 = createCacheKey.createStyles(obj5);
 let closure_28 = { channelMentionText: "redesign/message-preview/medium" };
 createCacheKey = { container: { flex: 1 }, row: null, rowCompact: null, rowActive: null, col: null, unreadIndicatorV2: null, unreadIndicatorCompactV2: null, rowText: null, rowTextV2: null, rowBody: null, rowBodyV2: null, rowBodyAcked: null, rowTime: null, rowTimeV2: null, itemV2: null, calloutContainer: null, calloutTextAcked: null, calloutTextNotAcked: null, messagePreviewContainerV2: null, messagePreviewBarV2: null, messagePreviewIconV2Container: null, messagePreviewIconV2: null, messagePreviewTextV2Acked: null, messagePreviewTextV2NotAcked: null, messagePreviewSystemTextV2: null, refreshSpinner: null, forYouDivider: null, friendRequestNoteContainer: null };
-let obj6 = { color: require("Themes").colors.MENTION_FOREGROUND, backgroundColor: "transparent" };
-createCacheKey[1] = { marginHorizontal: 4, paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4, borderRadius: require("Themes").radii.lg, flexDirection: "row", justifyContent: "space-between" };
+let obj6 = { color: ThemesDefault.colors.MENTION_FOREGROUND, backgroundColor: "transparent" };
+createCacheKey[1] = { marginHorizontal: 4, paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4, borderRadius: ThemesDefault.radii.lg, flexDirection: "row", justifyContent: "space-between" };
 createCacheKey[2] = { paddingVertical: 6 };
-let obj8 = { marginHorizontal: 4, paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4, borderRadius: require("Themes").radii.lg, flexDirection: "row", justifyContent: "space-between" };
-createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+let obj8 = { marginHorizontal: 4, paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4, borderRadius: ThemesDefault.radii.lg, flexDirection: "row", justifyContent: "space-between" };
+createCacheKey[3] = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
 createCacheKey[4] = { flexDirection: "column", flex: 1 };
-createCacheKey = { top: 28, backgroundColor: require("Themes").colors.BACKGROUND_BRAND, height: 8, width: 8, borderRadius: require("Themes").radii.xs, position: "absolute", left: 4 };
+createCacheKey = { top: 28, backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND, height: 8, width: 8, borderRadius: ThemesDefault.radii.xs, position: "absolute", left: 4 };
 createCacheKey[5] = createCacheKey;
 createCacheKey[6] = { top: 18 };
 createCacheKey[7] = { flex: 1 };
 createCacheKey[8] = { flexDirection: "row", justifyContent: "space-between" };
 createCacheKey[9] = { lineHeight: 20 };
 createCacheKey[10] = { marginRight: 30 };
-let obj9 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
-createCacheKey[11] = { color: require("Themes").colors.TEXT_MUTED };
+let obj9 = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED };
+createCacheKey[11] = { color: ThemesDefault.colors.TEXT_MUTED };
 createCacheKey[12] = { lineHeight: 20 };
 createCacheKey[13] = { marginLeft: -24 };
 createCacheKey[14] = { alignItems: "flex-start", marginRight: 4, marginLeft: 8 };
 createCacheKey[15] = { marginTop: 4, flexDirection: "row", marginRight: 16 };
-let obj11 = { color: require("Themes").colors.TEXT_MUTED };
-createCacheKey[16] = { color: require("Themes").colors.TEXT_MUTED };
-createCacheKey = { color: require("Themes").colors.TEXT_DEFAULT };
+let obj11 = { color: ThemesDefault.colors.TEXT_MUTED };
+createCacheKey[16] = { color: ThemesDefault.colors.TEXT_MUTED };
+createCacheKey = { color: ThemesDefault.colors.TEXT_DEFAULT };
 createCacheKey[17] = createCacheKey;
 createCacheKey[18] = { marginTop: 4, flexDirection: "row", marginRight: 16 };
-let obj12 = { color: require("Themes").colors.TEXT_MUTED };
-createCacheKey[19] = { marginRight: 8, borderLeftColor: require("Themes").colors.BORDER_SUBTLE, borderLeftWidth: 3, borderRadius: 2, height: "auto" };
+let obj12 = { color: ThemesDefault.colors.TEXT_MUTED };
+createCacheKey[19] = { marginRight: 8, borderLeftColor: ThemesDefault.colors.BORDER_SUBTLE, borderLeftWidth: 3, borderRadius: 2, height: "auto" };
 createCacheKey[20] = { paddingTop: 4 };
-const obj14 = { marginRight: 8, borderLeftColor: require("Themes").colors.BORDER_SUBTLE, borderLeftWidth: 3, borderRadius: 2, height: "auto" };
-createCacheKey[21] = { marginLeft: 4, tintColor: require("Themes").colors.TEXT_SUBTLE };
-const obj15 = { marginLeft: 4, tintColor: require("Themes").colors.TEXT_SUBTLE };
-createCacheKey[22] = { color: require("Themes").colors.TEXT_MUTED };
-const obj16 = { color: require("Themes").colors.TEXT_MUTED };
-createCacheKey[23] = { color: require("Themes").colors.TEXT_DEFAULT };
+const obj14 = { marginRight: 8, borderLeftColor: ThemesDefault.colors.BORDER_SUBTLE, borderLeftWidth: 3, borderRadius: 2, height: "auto" };
+createCacheKey[21] = { marginLeft: 4, tintColor: ThemesDefault.colors.TEXT_SUBTLE };
+const obj15 = { marginLeft: 4, tintColor: ThemesDefault.colors.TEXT_SUBTLE };
+createCacheKey[22] = { color: ThemesDefault.colors.TEXT_MUTED };
+const obj16 = { color: ThemesDefault.colors.TEXT_MUTED };
+createCacheKey[23] = { color: ThemesDefault.colors.TEXT_DEFAULT };
 createCacheKey[24] = { fontStyle: "italic", fontWeight: "normal" };
-const obj17 = { color: require("Themes").colors.TEXT_DEFAULT };
-createCacheKey[25] = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-const obj18 = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-createCacheKey[26] = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: require("Themes").colors.BORDER_SUBTLE, marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
-const obj19 = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: require("Themes").colors.BORDER_SUBTLE, marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
-createCacheKey[27] = { marginTop: 4, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj17 = { color: ThemesDefault.colors.TEXT_DEFAULT };
+createCacheKey[25] = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+const obj18 = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[26] = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: ThemesDefault.colors.BORDER_SUBTLE, marginTop: ThemesDefault.space.PX_12, marginBottom: ThemesDefault.space.PX_8 };
+const obj19 = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: ThemesDefault.colors.BORDER_SUBTLE, marginTop: ThemesDefault.space.PX_12, marginBottom: ThemesDefault.space.PX_8 };
+createCacheKey[27] = { marginTop: 4, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+let closure_29 = createCacheKey.createStyles(createCacheKey);
 let closure_31 = { STICKER: "sticker", VOICE_MESSAGE: "voice_message", ATTACHMENT: "attachment" };
 let closure_35 = importAllResult.memo((item) => {
-  let accessibilityActions;
-  let ackedBeforeId;
-  let actionButtons;
-  let actionsNode;
-  let compactMode;
-  let forceHoistItem;
-  let isForceHoisted;
-  let isSoftAcked;
-  let onAccessibilityAction;
-  let onSoftAckItem;
-  let roleStyle;
-  let tmp10;
-  let tmp11;
   item = item.item;
   const rowIndex = item.rowIndex;
   ({ isSoftAcked, onSoftAckItem } = item);
@@ -402,7 +374,7 @@ let closure_35 = importAllResult.memo((item) => {
   let callback;
   let str;
   ({ ackedBeforeId, roleStyle } = item);
-  const tmp = createCacheKey();
+  const tmp = callback6();
   let obj = item(notificationCenterItemAcked[29]);
   notificationCenterItemAcked = obj.useNotificationCenterItemAcked(item, ackedBeforeId);
   if (!isSoftAcked) {
@@ -431,7 +403,7 @@ let closure_35 = importAllResult.memo((item) => {
     }
     callback();
     obj = { action_type: item(tmp7[33]).NotificationCenterActionTypes.CLICKED, notification_center_id: tmp5.id, item_type: tmp5.type, acked: notificationCenterItemAcked, item_index: rowIndex, deeplink: tmp5.deeplink };
-    rowIndex(notificationCenterItemAcked[34]).track(outer1_15.NOTIFICATION_CENTER_ACTION, obj);
+    rowIndex(notificationCenterItemAcked[34]).track(closure_1_15.NOTIFICATION_CENTER_ACTION, obj);
   }, items1);
   const items2 = [item];
   const callback2 = str.useCallback(() => {
@@ -443,9 +415,8 @@ let closure_35 = importAllResult.memo((item) => {
       obj[1] = rowIndex(tmp3[35]);
       obj[2] = tmp2(tmp3[36]).LightbulbIcon;
       obj[3] = function onPress() {
-        let tmp21;
         try {
-          let str = lib.deeplink;
+          str = lib.deeplink;
           if (str == null) {
             str = "";
           }
@@ -453,25 +424,25 @@ let closure_35 = importAllResult.memo((item) => {
           if (null == match) {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
-            const error = new Error("Invalid deeplink: " + tmp2.deeplink);
+            error = new Error("Invalid deeplink: " + tmp2.deeplink);
             throw error;
           } else {
-            const tmp20 = outer1_5(tmp5, 5);
+            const tmp20 = closure_1_5(tmp5, 5);
             [r10045, tmp21] = tmp20;
-            const obj3 = lib(outer1_3[37]);
+            const obj3 = lib(closure_1_3[37]);
             let obj = { id: null, channel_id: null };
             obj[0] = tmp20[3];
             obj[1] = tmp20[2];
             obj = { summary_id: null };
             obj[0] = tmp20[4];
-            const result = obj3.openGuildHighlightNotificationForPush(tmp21, obj, outer1_20.TRENDING_CONTENT_PUSH, outer1_17.NOTIFICATION_CENTER, obj);
+            const result = obj3.openGuildHighlightNotificationForPush(tmp21, obj, closure_1_20.TRENDING_CONTENT_PUSH, closure_1_17.NOTIFICATION_CENTER, obj);
           }
           tmp2 = lib;
         } catch (err) {
-          obj = outer1_1(outer1_3[38]);
-          const obj1 = { key: "USER_SURVEY_ERROR", content: null };
-          const intl = lib(outer1_3[18]).intl;
-          obj1[1] = intl.string(lib(outer1_3[18]).t.HO9Lf2);
+          obj = closure_1_1(closure_1_3[38]);
+          obj1 = { key: "USER_SURVEY_ERROR", content: null };
+          const intl = lib(closure_1_3[18]).intl;
+          obj1[1] = intl.string(lib(closure_1_3[18]).t.HO9Lf2);
           obj.open(obj1);
         }
       };
@@ -485,17 +456,17 @@ let closure_35 = importAllResult.memo((item) => {
       obj[2] = tmp2(tmp3[36]).LightbulbIcon;
       obj[3] = function onPress() {
         try {
-          let obj = outer1_1(outer1_3[41]);
+          let obj = closure_1_1(closure_1_3[41]);
           obj = { notificationType: null, location: null };
           obj[0] = lib.type;
-          obj[1] = outer1_17.NOTIFICATION_CENTER;
-          obj.openLazy(lib(outer1_3[40])(outer1_3[39], outer1_3.paths), "NotificationSurvey", obj);
+          obj[1] = closure_1_17.NOTIFICATION_CENTER;
+          obj.openLazy(lib(closure_1_3[40])(closure_1_3[39], closure_1_3.paths), "NotificationSurvey", obj);
         } catch (err) {
           obj = { key: "USER_SURVEY_ERROR", content: null };
-          const intl = lib(outer1_3[18]).intl;
-          obj[1] = intl.string(lib(outer1_3[18]).t.HO9Lf2);
-          outer1_1(outer1_3[38]).open(obj);
-          const obj3 = outer1_1(outer1_3[38]);
+          const intl = lib(closure_1_3[18]).intl;
+          obj[1] = intl.string(lib(closure_1_3[18]).t.HO9Lf2);
+          closure_1_1(closure_1_3[38]).open(obj);
+          const obj3 = closure_1_1(closure_1_3[38]);
         }
       };
       items.push(obj);
@@ -508,17 +479,17 @@ let closure_35 = importAllResult.memo((item) => {
       obj[1] = tmp6(tmp3[42]);
       obj[2] = tmp2(tmp3[43]).TrashIcon;
       item = navigation(function*() {
-        const callback = tmp3;
-        let c3 = 1;
-        yield callback(outer2_3[44]).deleteNotificationCenterItem(outer1_0);
+        callback = tmp3;
+        c3 = 1;
+        yield callback(closure_2_3[44]).deleteNotificationCenterItem(closure_1_0);
         if (1 === tmp7) {
           c3 = 0;
-          const obj1 = outer2_1(outer2_3[38]);
+          obj1 = closure_2_1(closure_2_3[38]);
           const obj2 = { key: "REMOVE_NOTIFICATION_ERROR", content: null };
-          const intl = callback(outer2_3[18]).intl;
-          obj2[1] = intl.string(callback(outer2_3[18]).t.WDxhvB);
+          const intl = callback(closure_2_3[18]).intl;
+          obj2[1] = intl.string(callback(closure_2_3[18]).t.WDxhvB);
           obj1.open(obj2);
-          let c4 = 3;
+          c4 = 3;
         } else if (arg0 === 1) {
           c4 = 3;
           throw arg1;
@@ -547,7 +518,7 @@ let closure_35 = importAllResult.memo((item) => {
   const itemActionButtonPropsV2 = tmp2Result.useItemActionButtonPropsV2(item, callback, navigation, forceHoistItem, isForceHoisted, onSoftAckItem, tmp11, compactMode);
   ({ actionButtons, actionsNode, accessibilityActions, onAccessibilityAction } = itemActionButtonPropsV2);
   let obj3 = onSoftAckItem(tmp3[16]);
-  const parserWithoutLinks = obj3.getParserWithoutLinks(createCacheKey());
+  const parserWithoutLinks = obj3.getParserWithoutLinks(callback3());
   let obj4 = onSoftAckItem(tmp3[16]);
   const parserWithoutLinks1 = obj4.getParserWithoutLinks(callback2());
   let tmp15 = item.type === tmp2(tmp3[33]).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED;
@@ -576,13 +547,13 @@ let closure_35 = importAllResult.memo((item) => {
     obj = { item: null, renderApplication: null };
     obj[0] = item;
     obj[1] = function renderApplication(applicationId) {
-      return outer1_21(outer1_34, { applicationId, textVariant: str });
+      return closure_1_21(closure_1_34, { applicationId, textVariant: str });
     };
     tmp10 = rowIndex(tmp3[47])(obj);
   }
   let obj7 = rowIndex(tmp3[48]);
   const extractTimestampResult = obj7.extractTimestamp(item.id);
-  let obj1 = { accessibilityRole: "button", accessibilityActions, onAccessibilityAction, style: null, onPress: null, onAccessibilityTap: null, onLongPress: null, underlayColor: null, children: null };
+  obj1 = { accessibilityRole: "button", accessibilityActions, onAccessibilityAction, style: null, onPress: null, onAccessibilityTap: null, onLongPress: null, underlayColor: null, children: null };
   const items3 = [tmp.row, ];
   let rowCompact = compactMode;
   if (rowCompact) {
@@ -700,13 +671,8 @@ let closure_35 = importAllResult.memo((item) => {
     isSoftAcked ? parserWithoutLinks(tmp10) : parserWithoutLinks1(tmp10);
   }
 });
-const obj20 = { marginTop: 4, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+const obj20 = { marginTop: 4, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
 const memoResult = importAllResult.memo((loadMore) => {
-  let items;
-  let loadingMore;
-  let nestedInLaunchPad;
-  let onScroll;
-  let shouldScrollToTop;
   loadMore = loadMore.loadMore;
   ({ nestedInLaunchPad, shouldScrollToTop } = loadMore);
   const isSoftAcked = loadMore.isSoftAcked;
@@ -720,36 +686,34 @@ const memoResult = importAllResult.memo((loadMore) => {
   if (flag === undefined) {
     flag = false;
   }
-  let c9;
+  closure_9 = undefined;
   let setting;
   let stateFromStores;
   let stateFromStores1;
-  let c13;
+  closure_13 = undefined;
   let callback;
   let ref;
-  let closure_16;
-  const tmp = createCacheKey();
-  c9 = tmp;
+  closure_16 = undefined;
+  const tmp = callback6();
+  closure_9 = tmp;
   const NotificationCenterAckedBeforeId = loadMore(onSoftAckItem[54]).NotificationCenterAckedBeforeId;
   setting = NotificationCenterAckedBeforeId.useSetting();
   let obj = loadMore(onSoftAckItem[25]);
-  items = [c9];
-  stateFromStores = obj.useStateFromStores(items, () => _undefined.roleStyle);
-  let obj1 = loadMore(onSoftAckItem[25]);
+  items = [closure_9];
+  stateFromStores = obj.useStateFromStores(items, () => roleStyle.roleStyle);
+  obj1 = loadMore(onSoftAckItem[25]);
   const items1 = [callback];
   stateFromStores1 = obj1.useStateFromStores(items1, () => callback.isRefreshing());
   const ChannelListLayoutSetting = loadMore(onSoftAckItem[54]).ChannelListLayoutSetting;
   const setting1 = ChannelListLayoutSetting.useSetting();
   const tmp8 = setting1 === loadMore(onSoftAckItem[55]).ChannelListLayoutTypes.COMPACT;
-  c13 = tmp8;
+  closure_13 = tmp8;
   const items2 = [loadMore];
   callback = suggestedFriendAdded.useCallback(() => {
     loadMore(true);
   }, items2);
   const items3 = [tmp.forYouDivider, suggestedFriendAdded, onAddSuggestionAnimationFinish, stateFromStores, setting, isSoftAcked, onSoftAckItem, forceHoistItem, isForceHoisted, tmp8, callback, flag];
-  const callback1 = suggestedFriendAdded.useCallback((arg0) => {
-
-  }, items3);
+  const callback1 = suggestedFriendAdded.useCallback((arg0) => closure_1_21(loadMore(onSoftAckItem[64]).ForYouLoadMore, { onPressLoad: callback }), items3);
   ref = suggestedFriendAdded.useRef(null);
   const items4 = [shouldScrollToTop];
   const effect = suggestedFriendAdded.useEffect(() => {
@@ -783,20 +747,11 @@ const memoResult = importAllResult.memo((loadMore) => {
     tmp17 = callback(ScrollToTopRef, obj);
   }
   const items6 = [tmp17, ];
-  obj1 = { ref, data: items, ListEmptyComponent: null, onScroll: null, refreshControl: null, keyExtractor: null, renderItem: null, extraData: null, onEndReached: null, onEndReachedThreshold: 0.8, ListFooterComponent: null, viewabilityConfig: null };
-  obj1[2] = callback(loadMore(onSoftAckItem[68]).ForYouEmptyState, { height: tmp14[0] });
-  obj1[3] = onScroll;
-  obj1[4] = callback(flag, { onRefresh: callback2, refreshing: stateFromStores1, tintColor: tmp.refreshSpinner.color });
-  obj1[5] = extractKey;
-  obj1[6] = callback1;
-  obj1[7] = setting;
-  obj1[8] = loadMore;
-  obj1[10] = callback(ForYouFooter, { loading: loadingMore });
-  obj1[11] = closure_23;
+  obj1 = { ref, data: items, ListEmptyComponent: callback(tmp2(tmp3[68]).ForYouEmptyState, { height: tmp14[0] }), onScroll, refreshControl: callback(flag, obj2), keyExtractor: extractKey, renderItem: callback1, extraData: setting, onEndReached: loadMore, onEndReachedThreshold: 0.8, ListFooterComponent: callback(ForYouFooter, { loading: loadingMore }), viewabilityConfig: closure_23 };
   items6[1] = callback(loadMore(onSoftAckItem[67]).FlashList, obj1);
   obj[2] = items6;
   return closure_22(onAddSuggestionAnimationFinish, obj);
 });
-let result = require("noop").fileFinishedImporting("modules/notification_center/native/ForYouItems.tsx");
+let result = require("set").fileFinishedImporting("modules/notification_center/native/ForYouItems.tsx");
 
 export const ForYouItems = memoResult;

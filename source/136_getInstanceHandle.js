@@ -4,7 +4,10 @@
 // Dependencies: [114, 137, 138]
 
 // Module 136 (getInstanceHandle)
-const require = arg1;
+import renderElement from "renderElement" /* 114 */;
+import createReactNativeDocumentInstanceHandle from "createReactNativeDocumentInstanceHandle" /* 137 */;
+
+require = arg1;
 const dependencyMap = arg6;
 let closure_4 = Symbol("internalInstanceHandle");
 let closure_5 = Symbol("ownerDocument");
@@ -26,7 +29,7 @@ arg5.setOwnerDocument = function setOwnerDocument(tmp3Result, arg1) {
 };
 arg5.getPublicInstanceFromInstanceHandle = function getPublicInstanceFromInstanceHandle(element) {
   if (null == callback2) {
-    callback2 = require(114) /* renderElement */.getPublicInstanceFromInternalInstanceHandle;
+    callback2 = renderElement.getPublicInstanceFromInternalInstanceHandle;
   }
   const tmp3 = callback2(element);
   if (null != tmp3) {
@@ -45,12 +48,12 @@ arg5.getPublicInstanceFromInstanceHandle = function getPublicInstanceFromInstanc
         publicInstanceFromReactNativeDocumentInstanceHandle = tmp4Result.getPublicInstanceFromReactNativeDocumentElementInstanceHandle(element);
       }
     }
-    obj = require(137) /* createReactNativeDocumentInstanceHandle */;
+    obj = createReactNativeDocumentInstanceHandle;
   }
 };
 arg5.getNativeNodeReference = function getNativeNodeReference(target) {
   if (null == callback) {
-    callback = require(114) /* renderElement */.getNodeFromInternalInstanceHandle;
+    callback = renderElement.getNodeFromInternalInstanceHandle;
   }
   const tmp4 = callback(target[closure_4]);
   if (null != tmp4) {
@@ -69,7 +72,7 @@ arg5.getNativeNodeReference = function getNativeNodeReference(target) {
         nativeNodeReferenceFromReactNativeDocumentInstanceHandle = tmp5Result.getNativeElementReferenceFromReactNativeDocumentElementInstanceHandle(tmp);
       }
     }
-    obj = require(137) /* createReactNativeDocumentInstanceHandle */;
+    obj = createReactNativeDocumentInstanceHandle;
   }
 };
 arg5.getNativeElementReference = function getNativeElementReference(nativeElementReference3) {
@@ -102,7 +105,7 @@ arg5.getCurrentProps = function getCurrentProps(arg0) {
 };
 arg5.getNativeTextReference = function getNativeTextReference(arg0) {
   if (null == callback) {
-    callback = require(114) /* renderElement */.getNodeFromInternalInstanceHandle;
+    callback = renderElement.getNodeFromInternalInstanceHandle;
   }
   return callback(arg0[closure_4]);
 };

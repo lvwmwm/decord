@@ -1,10 +1,12 @@
-// Module ID: 16156
-// Function ID: 16157
+// Module ID: 16253
+// Function ID: 16254
 // Name: metadata
 // Dependencies: [2]
 
-// Module 16156 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/gifting/new_gifting_badges.png.js");
+// Module 16253 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/gifting/new_gifting_badges.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/6c3ba62d914abaf06acb2e664bd0515aaf49ab966e671dcd013678208b3d7d58.png";
 export const metadata = { fileBytes: 49547 };

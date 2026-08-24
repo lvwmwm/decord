@@ -1,12 +1,13 @@
-// Module ID: 4511
-// Function ID: 4512
+// Module ID: 4516
+// Function ID: 4517
 // Name: GameTheme
-// Dependencies: [1931, 4479, 2]
+// Dependencies: [1931, 4483, 2]
 
-// Module 4511 (GameTheme)
-import "toJS";
-import { createExecutable } from "createExecutable";
+// Module 4516 (GameTheme)
+import toJSDefault from "toJS" /* 1931 */;
+import { createExecutable } from "createExecutable" /* 4483 */;
 
+toJSDefault;
 const result = require("set").fileFinishedImporting("modules/game_detection/GameDetectionTypes.tsx");
 class DetectableGameRecord extends tmp2 {
   constructor(arg0) {
@@ -32,8 +33,6 @@ class DetectableGameRecord extends tmp2 {
 }
 const prototype = DetectableGameRecord.prototype;
 prototype["getIconURL"] = function getIconURL(arg0) {
-  let icon;
-  let id;
   let combined = null;
   if (null != this.icon) {
     ({ id, icon } = this);

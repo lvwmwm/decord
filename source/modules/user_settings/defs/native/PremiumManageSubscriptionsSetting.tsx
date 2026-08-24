@@ -1,17 +1,19 @@
-// Module ID: 14343
-// Function ID: 14344
+// Module ID: 14411
+// Function ID: 14412
 // Name: route
-// Dependencies: [19, 676, 7388, 7729, 4039, 12850, 10669, 1236, 14344, 14342, 2]
+// Dependencies: [19, 676, 7426, 7767, 4042, 12905, 10708, 1236, 14412, 14410, 2]
 
-// Module 14343 (route)
-import noop from "noop";
-import createToggle from "createToggle";
+// Module 14411 (route)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
+import closure_3 from "noop" /* 19 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["z5YcJ+"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["z5YcJ+"]);
   },
   parent: null,
   IconComponent: require("SubscriptionIcon").SubscriptionIcon,
@@ -27,8 +29,8 @@ createToggle = {
     }, []);
   },
   usePredicate: function useShowManageSubscriptionsSetting() {
-    let hasPremiumSubscriptionToDisplay = require(4039) /* getPremiumPlanItem */.useHasPremiumSubscriptionToDisplay();
-    const obj = require(4039) /* getPremiumPlanItem */;
+    let hasPremiumSubscriptionToDisplay = getPremiumPlanItem.useHasPremiumSubscriptionToDisplay();
+    const obj = getPremiumPlanItem;
     if (hasPremiumSubscriptionToDisplay) {
       hasPremiumSubscriptionToDisplay = obj2.useMobileNitroManageSubscriptionsSettingsExperiment({ location: "useShowManageSubscriptionsSetting" });
     }
@@ -39,10 +41,10 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM_MANAGE_PLAN,
   getComponent() {
-    return require(14342) /* PremiumPlanSelectSettingScreen */.default;
+    return require(14410) /* PremiumPlanSelectSettingScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-const result = require("useBlockedPaymentsConfig").fileFinishedImporting("modules/user_settings/defs/native/PremiumManageSubscriptionsSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/PremiumManageSubscriptionsSetting.tsx");
 
 export default createToggle;

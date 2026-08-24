@@ -1,31 +1,34 @@
-// Module ID: 8566
-// Function ID: 8567
+// Module ID: 8605
+// Function ID: 8606
 // Name: getChangeEmailReasonDisplayText
-// Dependencies: [8565, 1236, 2]
+// Dependencies: [8604, 1236, 2]
 // Exports: getChangeEmailReasonDisplayText
 
-// Module 8566 (getChangeEmailReasonDisplayText)
-import { ChangeEmailReasons } from "ChangeEmailReasons";
+// Module 8605 (getChangeEmailReasonDisplayText)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ChangeEmailReasons2 from "ChangeEmailReasons" /* 8604 */;
 
+const ChangeEmailReasons = ChangeEmailReasons2.ChangeEmailReasons;
 let closure_2 = {
   [ChangeEmailReasons.DISCORD_EMPLOYEE_ASKED_ME_TO]: () => {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.naBTFO);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.naBTFO);
   },
   [ChangeEmailReasons.SOMEONE_ASKED_ME_TO]: () => {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.LQ0RUP);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.LQ0RUP);
   },
   [ChangeEmailReasons.NEW_EMAIL]: () => {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.oOqQjw);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.oOqQjw);
   },
   [ChangeEmailReasons.SOMETHING_ELSE]: () => {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.p38n1b);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.p38n1b);
   }
 };
-const result = require("set").fileFinishedImporting("modules/verification/ChangeEmailUtils.tsx");
+const result = set.fileFinishedImporting("modules/verification/ChangeEmailUtils.tsx");
 
 export const getChangeEmailReasonDisplayText = function getChangeEmailReasonDisplayText(arg0) {
   return dependencyMap[arg0]();

@@ -1,23 +1,24 @@
-// Module ID: 10018
-// Function ID: 10019
+// Module ID: 10057
+// Function ID: 10058
 // Name: canViewPotentiallyNSFWChannel
-// Dependencies: [1391, 1922, 5252, 2]
+// Dependencies: [1391, 1922, 5257, 2]
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage
 
-// Module 10018 (canViewPotentiallyNSFWChannel)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 10057 (canViewPotentiallyNSFWChannel)
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 5257 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
-const result = require("shouldShowAgeGateForVoiceChannel").fileFinishedImporting("modules/messages/MessageUtils.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/messages/MessageUtils.tsx");
 
 export const canViewPotentiallyNSFWChannel = function canViewPotentiallyNSFWChannel(channel_id) {
   currentUser = currentUser.getCurrentUser();
   const channel = store.getChannel(channel_id);
   let tmp3 = null != currentUser && null != channel;
   if (tmp3) {
-    tmp3 = !require(5252) /* shouldShowAgeGateForVoiceChannel */.isChannelContentGated(channel);
-    const obj = require(5252) /* shouldShowAgeGateForVoiceChannel */;
+    tmp3 = !shouldShowAgeGateForVoiceChannel.isChannelContentGated(channel);
+    const obj = shouldShowAgeGateForVoiceChannel;
   }
   return tmp3;
 };

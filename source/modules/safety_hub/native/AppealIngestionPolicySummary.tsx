@@ -1,45 +1,49 @@
-// Module ID: 11085
-// Function ID: 11086
+// Module ID: 11124
+// Function ID: 11125
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 4661, 712, 5437, 4223, 4734, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 5442, 4227, 4739, 1236, 2]
 // Exports: default
 
-// Module 11085 (AppealIngestionPolicySummary)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11124 (AppealIngestionPolicySummary)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
+import Text from "Text" /* 4739 */;
+import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 5442 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 createCacheKey = { sectionTitle: { marginBottom: 8 }, policy: { marginBottom: 16 }, borderColor: null, userContainer: null };
-createCacheKey = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey = { color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 createCacheKey[2] = createCacheKey;
-createCacheKey[3] = { marginTop: 8, justifyContent: "flex-start", minHeight: 40, borderRadius: require("Themes").radii.sm, borderWidth: 1, padding: 18 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { marginTop: 8, justifyContent: "flex-start", minHeight: 40, borderRadius: require("Themes").radii.sm, borderWidth: 1, padding: 18 };
-const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/native/AppealIngestionPolicySummary.tsx");
+createCacheKey[3] = { marginTop: 8, justifyContent: "flex-start", minHeight: 40, borderRadius: ThemesDefault.radii.sm, borderWidth: 1, padding: 18 };
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const obj1 = { marginTop: 8, justifyContent: "flex-start", minHeight: 40, borderRadius: ThemesDefault.radii.sm, borderWidth: 1, padding: 18 };
+const result = require("set").fileFinishedImporting("modules/safety_hub/native/AppealIngestionPolicySummary.tsx");
 
 export default function AppealIngestionPolicySummary(classification) {
   classification = classification.classification;
-  const tmp = createCacheKey();
-  let obj = require(5437) /* parseMessageEmbedForProps */;
+  const tmp = callback3();
+  let obj = parseMessageEmbedForProps;
   let description;
   if (classification != null) {
     description = classification.description;
   }
   const capitalizeTextResult = obj.capitalizeText(description);
   obj = { style: tmp.policy, children: null };
-  const tmp2Result = require(4223) /* hexToRgba */;
+  const tmp2Result = hexToRgba;
   obj = { style: tmp.sectionTitle, variant: "text-sm/bold", children: null };
   const intl = tmp2(1236).intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.xsdcxh);
-  const items = [callback(require(4734) /* Text */.Text, obj), ];
-  const hexWithOpacityResult = require(4223) /* hexToRgba */.hexWithOpacity(tmp.borderColor.color, 0.08);
+  obj[2] = intl.string(getSystemLocale.t.xsdcxh);
+  const items = [callback(Text.Text, obj), ];
+  const hexWithOpacityResult = hexToRgba.hexWithOpacity(tmp.borderColor.color, 0.08);
   const items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  items[1] = callback(View, { style: items1, children: callback(require(4734) /* Text */.Text, { variant: "text-md/semibold", children: capitalizeTextResult }) });
+  items[1] = callback(View, { style: items1, children: callback(Text.Text, { variant: "text-md/semibold", children: capitalizeTextResult }) });
   obj[1] = items;
   return callback2(View, obj);
 };

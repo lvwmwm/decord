@@ -1,21 +1,17 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 9258
+// Function ID: 9259
 // Name: NameplateInner
-// Dependencies: [19, 4662, 21, 4661, 589, 4310, 4115, 4664, 1946, 9222, 4756, 500, 9217, 5449, 2]
+// Dependencies: [19, 4669, 21, 4668, 589, 4314, 4119, 4671, 1946, 9259, 4761, 500, 9254, 5454, 2]
 // Exports: default
 
-// Module 9221 (NameplateInner)
-import noop from "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9258 (NameplateInner)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 function NameplateInner(isFocused) {
-  let isPressed;
-  let nameplate;
   ({ nameplate, isPressed } = isFocused);
   if (isPressed === undefined) {
     isPressed = false;
@@ -50,10 +46,10 @@ function NameplateInner(isFocused) {
   }
   let sharedValue;
   let obj = flag6(589);
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const tmp4 = callback2(flag3, isPressed, flag, flag2, flag5);
-  let obj1 = flag6(4115);
+  obj1 = flag6(4119);
   let num = 1;
   if (flag6) {
     num = 0;
@@ -62,17 +58,17 @@ function NameplateInner(isFocused) {
   const items1 = [sharedValue, flag6];
   const effect = React.useEffect(() => {
     if (flag6) {
-      let obj = flag6(outer1_2[7]);
+      let obj = flag6(closure_1_2[7]);
       obj = { duration: 100, easing: null };
-      const Easing = flag6(outer1_2[6]).Easing;
-      obj[1] = Easing.in(flag6(outer1_2[6]).Easing.ease);
+      const Easing = flag6(closure_1_2[6]).Easing;
+      obj[1] = Easing.in(flag6(closure_1_2[6]).Easing.ease);
       const result = sharedValue.set(obj.withTiming(1, obj));
     }
   }, items1);
-  let tmpResult = tmp(4115);
+  let tmpResult = tmp(4119);
   class A {
     constructor() {
-      obj = { opacity: c1.get() };
+      obj = { opacity: closure_1.get() };
       return obj;
     }
   }
@@ -81,9 +77,9 @@ function NameplateInner(isFocused) {
   A.__initData = closure_8;
   const animatedStyle = tmpResult.useAnimatedStyle(A);
   tmpResult = tmp(1946);
-  const backgroundGradientColors = tmpResult.getBackgroundGradientColors(nameplate.palette, sharedValue(4310)());
-  const tmp6 = sharedValue(4310)();
-  const nameplateAssets = flag6(9222).getNameplateAssets(nameplate);
+  const backgroundGradientColors = tmpResult.getBackgroundGradientColors(nameplate.palette, sharedValue(4314)());
+  const tmp6 = sharedValue(4314)();
+  const nameplateAssets = flag6(9259).getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp12 = true === flag7;
   if (tmp12) {
@@ -115,25 +111,25 @@ function NameplateInner(isFocused) {
     const items3 = [, ];
     ({ left: arr4[0], right: arr4[1] } = backgroundGradientColors);
     obj[3] = items3;
-    tmp15Result = callback(tmp5(4756), obj);
+    tmp15Result = callback(tmp5(4761), obj);
     const tmp15 = callback;
-    const tmp5Result = tmp5(4756);
+    const tmp5Result = tmp5(4761);
   }
   const items4 = [tmp15Result, ];
   const tmp13 = closure_6;
-  const tmpResult1 = flag6(9222);
+  const tmpResult1 = flag6(9259);
   if (tmpResult2.isAndroid()) {
     if (tmp12) {
       const obj2 = { url: null, style: null, autoplay: true };
       obj2[0] = str;
       obj2[1] = tmp4.img;
-      let tmp17 = callback(tmp(9217).APNGPlayer, obj2);
+      let tmp17 = callback(tmp(9254).APNGPlayer, obj2);
     }
     items4[1] = tmp17;
     obj[1] = items4;
-    return tmp13(tmp5(4115).View, obj);
+    return tmp13(tmp5(4119).View, obj);
   }
-  tmp17 = callback(tmp5(5449), { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" });
+  tmp17 = callback(tmp5(5454), { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" });
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles((arg0, arg1, arg2, arg3, arg4) => {
@@ -183,7 +179,7 @@ let closure_7 = createCacheKey.createStyles((arg0, arg1, arg2, arg3, arg4) => {
   return obj;
 });
 let closure_8 = { code: "function NameplateTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-let result = require("jsxProd").fileFinishedImporting("modules/collectibles/nameplates/native/Nameplate.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/nameplates/native/Nameplate.tsx");
 
 export default function Nameplate(nameplate) {
   nameplate = nameplate.nameplate;

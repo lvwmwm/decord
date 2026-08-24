@@ -1,12 +1,12 @@
-// Module ID: 13889
-// Function ID: 13890
+// Module ID: 13956
+// Function ID: 13957
 // Name: voiceSettingsEventHandlers
-// Dependencies: [13890, 8756, 2]
+// Dependencies: [13957, 8793, 2]
 
-// Module 13889 (voiceSettingsEventHandlers)
-import importDefaultResult from "createVoiceSettingsEventHandlers";
+// Module 13956 (voiceSettingsEventHandlers)
+import importDefaultResult from "createVoiceSettingsEventHandlers" /* 13957 */;
 
-const importDefaultResultResult = require("createVoiceSettingsEventHandlers")(require("validateSocketClient").getDeprecatedVoiceSettings, require("validateSocketClient").getVoiceSettings);
+const importDefaultResultResult = importDefaultResult(require("validateSocketClient").getDeprecatedVoiceSettings, require("validateSocketClient").getVoiceSettings);
 const result = require("set").fileFinishedImporting("modules/rpc/native/events/voiceSettingsEventHandlers.tsx");
 
 export const voiceSettingsEventHandlers = importDefaultResultResult;

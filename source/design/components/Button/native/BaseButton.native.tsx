@@ -1,50 +1,26 @@
-// Module ID: 4752
-// Function ID: 4753
+// Module ID: 4757
+// Function ID: 4758
 // Name: BaseButton
-// Dependencies: [109, 19, 17, 4753, 21, 4104, 4661, 4750, 4115, 1370, 500, 2]
+// Dependencies: [109, 19, 17, 4758, 21, 4107, 4668, 4755, 4119, 1370, 500, 2]
 
-// Module 4752 (BaseButton)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4115";
-import importDefaultResult1 from "module_4115";
+// Module 4757 (BaseButton)
+import closure_3 from "_objectWithoutProperties" /* 109 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE" /* 4758 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "module_4119" /* 4119 */;
 
-let Pressable;
-let TouchableOpacity;
 const require = arg1;
 let closure_2 = ["style"];
 let c4 = importAllResult;
 ({ Pressable, TouchableOpacity } = get_ActivityIndicator);
 let closure_7 = createCacheKey.createStyles({ disabled: { opacity: 0.5 } });
-let closure_8 = require("module_4115").createAnimatedComponent(Pressable);
-let closure_9 = require("module_4115").createAnimatedComponent(TouchableOpacity);
+let closure_8 = importDefaultResult.createAnimatedComponent(Pressable);
+let closure_9 = importDefaultResult.createAnimatedComponent(TouchableOpacity);
+const importDefaultResult1 = importDefaultResult;
 const forwardRefResult = importAllResult.forwardRef((disabled, ref) => {
-  let accessibilityActions;
-  let accessibilityElementsHidden;
-  let accessibilityHint;
-  let accessibilityLabel;
-  let accessibilityRole;
-  let accessibilityState;
-  let accessibilityValue;
-  let accessible;
-  let children;
-  let hitSlop;
-  let importantForAccessibility;
-  let onAccessibilityAction;
-  let onLayout;
-  let onLongPress;
-  let onPress;
-  let onPressDisabled;
-  let onPressIn;
-  let onPressOut;
-  let pointerEvents;
-  let pressed;
-  let scaleAmountInPx;
-  let variant;
   ({ children, variant } = disabled);
   if (variant === undefined) {
     variant = "primary";
@@ -59,14 +35,14 @@ const forwardRefResult = importAllResult.forwardRef((disabled, ref) => {
   }
   ({ pressed, onPress, onPressDisabled, onPressIn, onPressOut, onLayout, accessible, accessibilityRole, accessibilityLabel, accessibilityHint, accessibilityState } = disabled);
   ({ accessibilityElementsHidden, importantForAccessibility, hitSlop, scaleAmountInPx } = disabled);
-  let c2;
+  closure_2 = undefined;
   let buttonAnimationProps;
   ({ onLongPress, accessibilityValue, accessibilityActions, onAccessibilityAction, pointerEvents } = disabled);
   let tmp2 = flag;
   if (flag) {
     tmp2 = null == onPressDisabled;
   }
-  c2 = tmp2;
+  closure_2 = tmp2;
   if (flag) {
     onPress = onPressDisabled;
   }
@@ -79,7 +55,7 @@ const forwardRefResult = importAllResult.forwardRef((disabled, ref) => {
     obj[1] = onPressIn;
     obj[2] = onPressOut;
     obj[1] = obj;
-    let obj1 = obj;
+    obj1 = obj;
   } else {
     obj1 = { animatedScaleStyles: null, buttonAnimationProps: null };
     obj1[0] = buttonPressAnimationProps.style;
@@ -90,7 +66,7 @@ const forwardRefResult = importAllResult.forwardRef((disabled, ref) => {
   const memo = importAllResult.useMemo(() => {
     const obj = {};
     const merged = Object.assign(accessibilityState);
-    obj.disabled = c2;
+    obj.disabled = closure_2;
     obj.busy = flag2;
     return obj;
   }, items);
@@ -185,6 +161,6 @@ const forwardRefResult = importAllResult.forwardRef((disabled, ref) => {
   }
   tmp = callback();
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Button/native/BaseButton.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Button/native/BaseButton.native.tsx");
 
 export const BaseButton = forwardRefResult;

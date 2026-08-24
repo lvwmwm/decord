@@ -1,13 +1,14 @@
-// Module ID: 10465
-// Function ID: 10466
+// Module ID: 10504
+// Function ID: 10505
 // Name: componentWillUnmount
-// Dependencies: [19, 21, 10466, 8124, 2]
+// Dependencies: [19, 21, 10505, 8163, 2]
 
-// Module 10465 (componentWillUnmount)
-import { jsx } from "jsxProd";
-import { Component } from "noop";
-import importAllResult from "noop";
+// Module 10504 (componentWillUnmount)
+import renderDefaultEmptyDefault from "renderDefaultEmpty" /* 8163 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
+const Component = importAllResult.Component;
 class SwipeableFastList extends Component {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -17,11 +18,11 @@ class SwipeableFastList extends Component {
     applyArgumentsResult._refs = {};
     applyArgumentsResult._bounceTimeout = null;
     applyArgumentsResult.renderRow = function renderRow(arg0, arg1, arg2) {
-      let closure_1 = arg1;
+      closure_1 = arg1;
       let props = applyArgumentsResult.props;
       const renderQuickActions = props.renderQuickActions;
-      let closure_3 = "" + arg0 + ":" + arg1;
-      let c4 = false;
+      closure_3 = "" + arg0 + ":" + arg1;
+      c4 = false;
       if (arg0._shouldBounceFirstRowOnMount) {
         arg0._shouldBounceFirstRowOnMount = false;
         c4 = true;
@@ -48,10 +49,9 @@ class SwipeableFastList extends Component {
         onSwipeableClose() {
           return closure_0.handleClose(closure_3);
         },
-        children: null
+        children: props.renderItem(arg0, arg1, arg2)
       };
-      obj[5] = props.renderItem(arg0, arg1, arg2);
-      return outer1_2(arg0(outer1_1[2]), obj);
+      return closure_1_2(arg0(closure_1_1[2]), obj);
     };
     applyArgumentsResult.handleScroll = function handleScroll(arg0) {
       applyArgumentsResult.closeOpenRow();
@@ -73,7 +73,7 @@ prototype["componentWillUnmount"] = function componentWillUnmount() {
 prototype["bounceSwipeable"] = function bounceSwipeable(arg0) {
   let self = this;
   self = this;
-  let closure_0 = arg0;
+  closure_0 = arg0;
   if (null != this._bounceTimeout) {
     const _clearTimeout = clearTimeout;
     clearTimeout(self._bounceTimeout);
@@ -108,7 +108,7 @@ prototype["render"] = function render() {
   const obj = {};
   const merged = Object.assign(this.props);
   ({ handleScroll: obj.onScroll, renderRow: obj.renderItem } = this);
-  return jsx(importDefault(8124), {});
+  return jsx(renderDefaultEmptyDefault, {});
 };
 SwipeableFastList.defaultProps = {
   bounceFirstRowOnMount: true,
@@ -116,6 +116,6 @@ SwipeableFastList.defaultProps = {
     return null;
   }
 };
-const result = require("SwipeDirection").fileFinishedImporting("components_native/common/SwipeableFastList.tsx");
+const result = require("set").fileFinishedImporting("components_native/common/SwipeableFastList.tsx");
 
 export default SwipeableFastList;

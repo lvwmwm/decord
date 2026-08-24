@@ -1,29 +1,29 @@
-// Module ID: 11576
-// Function ID: 11577
+// Module ID: 11625
+// Function ID: 11626
 // Name: DescriptionEllipsis
-// Dependencies: [19, 17, 21, 4661, 712, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 2]
 // Exports: default
 
-// Module 11576 (DescriptionEllipsis)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11625 (DescriptionEllipsis)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_1;
-let obj1;
+noopAll;
 ({ jsx: closure_1, jsxs: obj1 } = jsxProd);
 createCacheKey = { topicEllipsis: null, topicEllipsisDot: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", flexDirection: "row", borderRadius: require("Themes").radii.xs, marginTop: 4, height: 12, width: 24 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", flexDirection: "row", borderRadius: ThemesDefault.radii.xs, marginTop: 4, height: 12, width: 24 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { backgroundColor: require("Themes").colors.TEXT_MUTED, borderRadius: 2, margin: 1, height: 4, width: 4 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-obj1 = { backgroundColor: require("Themes").colors.TEXT_MUTED, borderRadius: 2, margin: 1, height: 4, width: 4 };
-const result = require("jsxProd").fileFinishedImporting("components_native/common/DescriptionEllipsis.tsx");
+createCacheKey[1] = { backgroundColor: ThemesDefault.colors.TEXT_MUTED, borderRadius: 2, margin: 1, height: 4, width: 4 };
+let closure_3 = createCacheKey.createStyles(createCacheKey);
+obj1 = { backgroundColor: ThemesDefault.colors.TEXT_MUTED, borderRadius: 2, margin: 1, height: 4, width: 4 };
+const result = require("set").fileFinishedImporting("components_native/common/DescriptionEllipsis.tsx");
 
 export default function DescriptionEllipsis(dotStyle) {
   dotStyle = dotStyle.dotStyle;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const obj = { style: items, children: null };
   items = [tmp.topicEllipsis, dotStyle.style];
   const items1 = [tmp.topicEllipsisDot, dotStyle];

@@ -1,37 +1,37 @@
-// Module ID: 9732
-// Function ID: 9733
+// Module ID: 9771
+// Function ID: 9772
 // Name: usePlayingGameActivities
-// Dependencies: [19, 1218, 4559, 7250, 589, 9733, 2]
+// Dependencies: [19, 1218, 4564, 7288, 589, 9772, 2]
 // Exports: default
 
-// Module 9732 (usePlayingGameActivities)
-import noop from "noop";
-import fetchFingerprint from "fetchFingerprint";
-import sortActivity from "sortActivity";
-import filterPlayingActivities from "filterPlayingActivities";
+// Module 9771 (usePlayingGameActivities)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "sortActivity" /* 4564 */;
+import closure_6 from "filterPlayingActivities" /* 7288 */;
 
 const require = arg1;
 let closure_7 = [];
-const result = require("sortActivity").fileFinishedImporting("modules/activities/hooks/usePlayingGameActivities.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/hooks/usePlayingGameActivities.tsx");
 
 export default function usePlayingGameActivities(arg0, arg1) {
   const _require = arg0;
-  let closure_1 = arg1;
+  closure_1 = arg1;
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
   }
   let stateFromStores;
-  const items = [filterPlayingActivities, sortActivity, fetchFingerprint];
+  const items = [closure_6, closure_5, closure_4];
   stateFromStores = _require(flag[4]).useStateFromStores(items, () => {
     if (flag) {
-      if (outer1_4.getId() === closure_0) {
-        let activities = outer1_6.getActivities();
+      if (closure_1_4.getId() === closure_0) {
+        let activities = closure_1_6.getActivities();
       } else {
-        activities = outer1_5.getActivities(tmp2, closure_1);
+        activities = closure_1_5.getActivities(tmp2, closure_1);
       }
     } else {
-      return outer1_7;
+      return closure_1_7;
     }
   });
   const items1 = [stateFromStores];

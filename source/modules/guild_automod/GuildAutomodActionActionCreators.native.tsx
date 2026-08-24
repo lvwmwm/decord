@@ -1,25 +1,27 @@
-// Module ID: 11041
-// Function ID: 11042
+// Module ID: 11080
+// Function ID: 11081
 // Name: getPromiseableActionHandlers
-// Dependencies: [19, 11042, 21, 5260, 11046, 2007, 4656, 11049, 2]
+// Dependencies: [19, 11081, 21, 5265, 11085, 2008, 4662, 11088, 2]
 // Exports: getPromiseableActionHandlers, openAutomodProfileQuarantineAlert, openConfirmRemoveMentionRaid, openRaidResolveModal, openSubmitFeedback
 
-// Module 11041 (getPromiseableActionHandlers)
-import "noop";
-import AutomodEventType from "AutomodEventType";
-import { jsx } from "jsxProd";
+// Module 11080 (getPromiseableActionHandlers)
+import noopAll from "noop" /* 19 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import AutomodEventType from "AutomodEventType" /* 11081 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ AutomodActionType: c3, SUBMIT_FEEDBACK_MODAL_KEY: c4 } = AutomodEventType);
-const result = require("jsxProd").fileFinishedImporting("modules/guild_automod/GuildAutomodActionActionCreators.native.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_automod/GuildAutomodActionActionCreators.native.tsx");
 
 export const getPromiseableActionHandlers = function getPromiseableActionHandlers() {
   return { [closure_3.BLOCK_MESSAGE]: null, [closure_3.FLAG_TO_CHANNEL]: null, [closure_3.USER_COMMUNICATION_DISABLED]: null };
 };
 export const openSubmitFeedback = function openSubmitFeedback(messageId, content, decisionId, channel) {
-  let obj = importDefault(5260);
+  let obj = _modDef5265;
   obj = {
     onCloseModal() {
       callback(table[3]).popWithKey(closure_4);
@@ -27,7 +29,7 @@ export const openSubmitFeedback = function openSubmitFeedback(messageId, content
     automodDecision: obj
   };
   obj = { messageId, messageContent: content, decisionId, channel };
-  obj.pushLazy(require(2007) /* asyncRequireImpl */(11046, dependencyMap.paths), obj, closure_4);
+  obj.pushLazy(asyncRequireImpl(11085, dependencyMap.paths), obj, closure_4);
 };
 export function openRaidResolveModal() {
 
@@ -36,17 +38,17 @@ export function openConfirmRemoveMentionRaid(arg0) {
 
 }
 export const openAutomodProfileQuarantineAlert = function openAutomodProfileQuarantineAlert(guildId) {
-  let closure_0 = guildId;
-  let obj = importDefault(4656);
+  closure_0 = guildId;
+  let obj = _modDef4662;
   obj = {
     importer() {
-      return guildId(outer1_2[5])(outer1_2[7], outer1_2.paths).then((arg0) => {
-        let closure_0 = arg0.default;
+      return guildId(closure_1_2[5])(closure_1_2[7], closure_1_2.paths).then((arg0) => {
+        closure_0 = arg0.default;
         return (arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
           obj.guildId = closure_0;
-          return outer2_5(closure_0, obj);
+          return closure_2_5(closure_0, obj);
         };
       });
     }

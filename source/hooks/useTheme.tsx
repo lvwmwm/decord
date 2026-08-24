@@ -1,21 +1,24 @@
-// Module ID: 4310
-// Function ID: 4311
+// Module ID: 4314
+// Function ID: 4315
 // Name: useTheme
 // Dependencies: [676, 1363, 2]
 // Exports: default, getThemeIndex, useTheme, useThemeIndex
 
-// Module 4310 (useTheme)
-import { ThemeTypes } from "ME";
+// Module 4314 (useTheme)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
 
 function useTheme() {
-  return require(1363) /* AccessibilityAnnouncer */.useThemeContext().theme;
+  return AccessibilityAnnouncer.useThemeContext().theme;
 }
-const result = require("set").fileFinishedImporting("hooks/useTheme.tsx");
+const ThemeTypes = ME.ThemeTypes;
+const result = set.fileFinishedImporting("hooks/useTheme.tsx");
 
 export default useTheme;
 export { useTheme };
 export const useThemeIndex = function useThemeIndex() {
-  const theme = require(1363) /* AccessibilityAnnouncer */.useThemeContext().theme;
+  const theme = AccessibilityAnnouncer.useThemeContext().theme;
   let num = 0;
   if (ThemeTypes.DARK !== theme) {
     if (ThemeTypes.LIGHT === theme) {

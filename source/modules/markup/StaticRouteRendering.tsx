@@ -1,34 +1,35 @@
-// Module ID: 6827
-// Function ID: 6828
+// Module ID: 6865
+// Function ID: 6866
 // Name: staticRouteToTranslation
-// Dependencies: [1983, 1236, 2]
+// Dependencies: [1984, 1236, 2]
 // Exports: staticRouteToItemString, staticRouteToTranslation
 
-// Module 6827 (staticRouteToTranslation)
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+// Module 6865 (staticRouteToTranslation)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "createGuildRoleRecordFromRust" /* 1984 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/markup/StaticRouteRendering.tsx");
 
 export const staticRouteToTranslation = function staticRouteToTranslation(arg0) {
   if ("home" !== arg0) {
     if ("guide" !== arg0) {
       if ("browse" === arg0) {
-        const intl3 = require(1236) /* getSystemLocale */.intl;
-        return intl3.string(require(1236) /* getSystemLocale */.t.et6wav);
+        const intl3 = getSystemLocale.intl;
+        return intl3.string(getSystemLocale.t.et6wav);
       } else if ("customize" === arg0) {
-        const intl2 = require(1236) /* getSystemLocale */.intl;
-        return intl2.string(require(1236) /* getSystemLocale */.t.h9mGOP);
+        const intl2 = getSystemLocale.intl;
+        return intl2.string(getSystemLocale.t.h9mGOP);
       } else if ("linked-roles" === arg0) {
-        const intl = require(1236) /* getSystemLocale */.intl;
-        return intl.string(require(1236) /* getSystemLocale */.t.ghtnss);
+        const intl = getSystemLocale.intl;
+        return intl.string(getSystemLocale.t.ghtnss);
       } else {
         return null;
       }
     }
   }
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  return intl4.string(require(1236) /* getSystemLocale */.t.VbpLyU);
+  const intl4 = getSystemLocale.intl;
+  return intl4.string(getSystemLocale.t.VbpLyU);
 };
 export const staticRouteToItemString = function staticRouteToItemString(arg0, arg1, id) {
   if ("linked-roles" === arg0) {

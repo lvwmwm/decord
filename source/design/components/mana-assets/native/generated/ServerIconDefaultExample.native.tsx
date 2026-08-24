@@ -1,18 +1,19 @@
-// Module ID: 6124
-// Function ID: 6125
+// Module ID: 6155
+// Function ID: 6156
 // Name: ServerIconDefaultExample
-// Dependencies: [21, 5449, 6125, 2]
+// Dependencies: [21, 5454, 6156, 2]
 // Exports: ServerIconDefaultExample
 
-// Module 6124 (ServerIconDefaultExample)
-import { jsx } from "jsxProd";
+// Module 6155 (ServerIconDefaultExample)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6156 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconDefaultExample.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconDefaultExample.native.tsx");
 
 export const ServerIconDefaultExample = function ServerIconDefaultExample(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const ServerIconDefaultExample = function ServerIconDefaultExample(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6125);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ServerIconDefaultExample = function ServerIconDefaultExample(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

@@ -1,28 +1,28 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 17064
+// Function ID: 17065
 // Name: items
-// Dependencies: [19, 6727, 589, 6732, 2]
+// Dependencies: [19, 6764, 589, 6769, 2]
 // Exports: default
 
-// Module 16971 (items)
-import noop from "noop";
-import getEmojiToGroupId from "getEmojiToGroupId";
+// Module 17064 (items)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "getEmojiToGroupId" /* 6764 */;
 
 const require = arg1;
 let items = [];
-const result = require("initialize").fileFinishedImporting("modules/guild_role_subscriptions/useRoleSubscriptionEmojis.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/useRoleSubscriptionEmojis.tsx");
 
 export default function useRoleSubscriptionEmojis(arg0) {
   const _require = arg0;
-  const items = [getEmojiToGroupId];
+  items = [closure_3];
   const items1 = [arg0];
-  stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => outer1_3.getGuildEmoji(closure_0), items1);
+  stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => closure_1_3.getGuildEmoji(closure_0), items1);
   const items2 = [stateFromStores, arg0];
   return React.useMemo(() => {
     if (null == stateFromStores) {
-      let found = outer1_4;
+      let found = closure_1_4;
     } else {
-      found = stateFromStores.filter((roles) => outer1_0(outer1_1[3]).isRoleSubscriptionEmoji(roles, closure_0));
+      found = stateFromStores.filter((roles) => closure_1_0(closure_1_1[3]).isRoleSubscriptionEmoji(roles, closure_0));
     }
     return found;
   }, items2);

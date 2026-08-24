@@ -1,26 +1,29 @@
-// Module ID: 15329
-// Function ID: 15330
+// Module ID: 15393
+// Function ID: 15394
 // Name: getActiveTextChannels
-// Dependencies: [1395, 1391, 4021, 5043, 13255, 676, 1398, 1370, 2]
+// Dependencies: [1395, 1391, 4024, 5048, 13310, 676, 1398, 1370, 2]
 // Exports: getActiveTextChannels
 
-// Module 15329 (getActiveTextChannels)
-import { isTextChannel } from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import truncateOldMessageData from "truncateOldMessageData";
-import { Permissions } from "ME";
-import { ChannelFlags } from "set";
+// Module 15393 (getActiveTextChannels)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import set2 from "set" /* 1398 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_5 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_6 from "truncateOldMessageData" /* 13310 */;
 
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_home/useActiveChannels.tsx");
+const isTextChannel = createChannelRecord.isTextChannel;
+const Permissions = ME.Permissions;
+const ChannelFlags = set2.ChannelFlags;
+const result = set.fileFinishedImporting("modules/guild_home/useActiveChannels.tsx");
 
 export const getActiveTextChannels = function getActiveTextChannels(guildId) {
-  let obj;
-  let obj2;
   let tmp = arg1;
   if (arg1 === undefined) {
-    let items = [ensureGuildLoaded, getUncachedChannelPermissions, truncateOldMessageData, updateUserGuildSettingsInternal];
+    let items = [closure_3, closure_4, closure_6, closure_5];
     tmp = items;
   }
   [, , obj, obj2] = tmp;
@@ -34,11 +37,11 @@ export const getActiveTextChannels = function getActiveTextChannels(guildId) {
   }
   mutedChannels = obj2.getMutedChannels(guildId);
   const mapped = items.map((arg0) => store.getChannel(arg0));
-  const found = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+  const found = mapped.filter(isDiscordFrontendDevelopment.isNotNullish);
   return found.filter((hasFlag) => {
     let hasFlagResult;
     if (hasFlag != null) {
-      hasFlagResult = hasFlag.hasFlag(outer1_8.ACTIVE_CHANNELS_REMOVED);
+      hasFlagResult = hasFlag.hasFlag(closure_1_8.ACTIVE_CHANNELS_REMOVED);
     }
     if (hasFlagResult) {
       return false;
@@ -51,7 +54,7 @@ export const getActiveTextChannels = function getActiveTextChannels(guildId) {
             return false;
           }
         }
-        if (closure_1.can(outer1_7.VIEW_CHANNEL, hasFlag)) {
+        if (closure_1.can(closure_1_7.VIEW_CHANNEL, hasFlag)) {
           const channel = store.getChannel(hasFlag.parent_id);
           const isThreadResult = hasFlag.isThread();
           let tmp8 = !isThreadResult;
@@ -61,7 +64,7 @@ export const getActiveTextChannels = function getActiveTextChannels(guildId) {
           if (!tmp8) {
             let hasFlagResult1;
             if (channel != null) {
-              hasFlagResult1 = channel.hasFlag(outer1_8.ACTIVE_CHANNELS_REMOVED);
+              hasFlagResult1 = channel.hasFlag(closure_1_8.ACTIVE_CHANNELS_REMOVED);
             }
             tmp8 = !hasFlagResult1;
           }

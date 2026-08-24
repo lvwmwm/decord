@@ -1,18 +1,18 @@
-// Module ID: 15560
-// Function ID: 15561
+// Module ID: 15625
+// Function ID: 15626
 // Name: useGuildsBarBottomRightBadge
-// Dependencies: [32, 19, 21, 4661, 1297, 4097, 712, 15561, 15562, 15566, 2]
+// Dependencies: [32, 19, 21, 4668, 1297, 4100, 712, 15626, 15627, 15631, 2]
 // Exports: default
 
-// Module 15560 (useGuildsBarBottomRightBadge)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15625 (useGuildsBarBottomRightBadge)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_6 = createCacheKey.createStyles({ bottomRightBadge: { position: "absolute", right: 9, backgroundColor: "transparent", borderColor: "transparent" } });
-const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/native/hooks/useGuildsBarBottomRightBadge.tsx");
+const result = require("set").fileFinishedImporting("modules/guilds_bar/native/hooks/useGuildsBarBottomRightBadge.tsx");
 
 export default function useGuildsBarBottomRightBadge(mentionCount) {
   mentionCount = mentionCount.mentionCount;
@@ -45,7 +45,7 @@ export default function useGuildsBarBottomRightBadge(mentionCount) {
   token1 = mentionCount(joinRequestState[5]).useToken(isMentionLowImportance(joinRequestState[6]).modules.mobile.GUILD_BAR_ITEM_MARGIN);
   let items = [tmp.bottomRightBadge, token1];
   memo = React.useMemo(() => {
-    const items = [_undefined.bottomRightBadge, { bottom: token1 - mentionCount(joinRequestState[4]).BADGE_PADDING }];
+    const items = [bottomRightBadge.bottomRightBadge, { bottom: token1 - mentionCount(joinRequestState[4]).BADGE_PADDING }];
     return items;
   }, items);
   let items1 = [first, flag, joinRequestState, mentionCount, isMentionLowImportance, memo, token];
@@ -56,7 +56,7 @@ export default function useGuildsBarBottomRightBadge(mentionCount) {
       obj[2] = first - 2 * mentionCount(joinRequestState[4]).BADGE_PADDING;
       const tmp20Result = isMentionLowImportance(joinRequestState[7])(obj);
       obj = { badge: null, cutout: null, cutouts: null };
-      const obj1 = { maskStyle: null, value: null, isMentionLowImportance: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", onLayout: null };
+      obj1 = { maskStyle: null, value: null, isMentionLowImportance: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", onLayout: null };
       obj1[0] = memo;
       obj1[1] = tmp;
       obj1[2] = isMentionLowImportance;
@@ -97,7 +97,7 @@ export default function useGuildsBarBottomRightBadge(mentionCount) {
       obj5[2] = items2;
       return obj5;
     } else {
-      return { badge: null, cutout: "Array", cutouts: "text" };
+      return { badge: null, cutout: "Array", cutouts: "applicationId" };
     }
   }, items1);
 };

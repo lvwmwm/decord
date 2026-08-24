@@ -1,21 +1,22 @@
-// Module ID: 9243
-// Function ID: 9244
+// Module ID: 9280
+// Function ID: 9281
 // Name: getProductPurchaseState
-// Dependencies: [5324, 9244, 1949, 589, 2]
+// Dependencies: [5329, 9281, 1949, 589, 2]
 // Exports: useProductPurchaseState
 
-// Module 9243 (getProductPurchaseState)
-import map from "map";
+// Module 9280 (getProductPurchaseState)
+import compactDefault from "compact" /* 9281 */;
+import closure_3 from "map" /* 5329 */;
 
 const require = arg1;
-function getProductPurchaseState(outer1_5, skuId) {
-  const _require = outer1_5;
-  let tmp = null != outer1_5.getPurchase(skuId.skuId);
+function getProductPurchaseState(closure_1_5, skuId) {
+  const _require = closure_1_5;
+  let tmp = null != closure_1_5.getPurchase(skuId.skuId);
   let items = skuId.items;
   if (items == null) {
     items = [];
   }
-  const tmp3Result = importDefault(9244)(items.map((skuId) => outer1_5.getPurchase(skuId.skuId)));
+  const tmp3Result = compactDefault(items.map((skuId) => store.getPurchase(skuId.skuId)));
   let type;
   if (skuId != null) {
     type = skuId.type;
@@ -33,7 +34,7 @@ function getProductPurchaseState(outer1_5, skuId) {
     const variants = skuId.variants;
     let everyResult;
     if (variants != null) {
-      everyResult = variants.every((skuId) => null != outer1_5.getPurchase(skuId.skuId));
+      everyResult = variants.every((skuId) => null != store.getPurchase(skuId.skuId));
     }
     let flag = everyResult;
     if (everyResult == null) {
@@ -44,7 +45,7 @@ function getProductPurchaseState(outer1_5, skuId) {
     const variants2 = skuId.variants;
     let flag2;
     if (variants2 != null) {
-      flag2 = variants2.some((skuId) => null != outer1_5.getPurchase(skuId.skuId));
+      flag2 = variants2.some((skuId) => null != store.getPurchase(skuId.skuId));
     }
     if (flag2) {
       flag2 = !everyResult;
@@ -59,14 +60,14 @@ function getProductPurchaseState(outer1_5, skuId) {
     obj[0] = tmp;
     return obj;
   }
-  const tmp3 = importDefault(9244);
+  const tmp3 = compactDefault;
   tmp5 = _require;
 }
-const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/hooks/useProductPurchaseState.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useProductPurchaseState.tsx");
 
 export { getProductPurchaseState };
 export const useProductPurchaseState = function useProductPurchaseState(product) {
   const _require = product;
-  const items = [map];
-  return _require(589).useStateFromStoresObject(items, () => outer1_4(outer1_3, closure_0));
+  const items = [closure_3];
+  return _require(589).useStateFromStoresObject(items, () => closure_1_4(closure_1_3, closure_0));
 };

@@ -1,23 +1,26 @@
-// Module ID: 13811
-// Function ID: 13812
+// Module ID: 13869
+// Function ID: 13870
 // Name: AccessibilityFeatureFlags
-// Dependencies: [17, 4662, 13570, 13812, 10561, 698, 13813, 2]
+// Dependencies: [17, 4669, 13628, 13870, 10600, 698, 13871, 2]
 
-// Module 13811 (AccessibilityFeatureFlags)
-import get_ActivityIndicator from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags";
+// Module 13869 (AccessibilityFeatureFlags)
+import set from "set" /* 2 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import uDefault from "u" /* 10600 */;
+import AccessibilityFeatureFlags2 from "AccessibilityFeatureFlags" /* 13628 */;
+import A11Y_FEATURE_MAP from "A11Y_FEATURE_MAP" /* 13870 */;
+import setFontSize from "setFontSize" /* 13871 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
 
-let c3;
-let c4;
-let c5;
 ({ AccessibilityInfo: c3, Appearance: c4, AppState: c5 } = get_ActivityIndicator);
+const AccessibilityFeatureFlags = AccessibilityFeatureFlags2.AccessibilityFeatureFlags;
 const NONE = AccessibilityFeatureFlags.NONE;
-let result = require("AccessibilityFeatureFlags").fileFinishedImporting("modules/a11y/native/AccessibilitySystemFeatures.tsx");
+let result = set.fileFinishedImporting("modules/a11y/native/AccessibilitySystemFeatures.tsx");
 
 export default {
   init() {
-    maybeApplyNoTextColorForLightCustomTheme.addChangeListener(this.handleAccessibilityStoreChanged);
+    closure_6.addChangeListener(this.handleAccessibilityStoreChanged);
     const listener = closure_3.addEventListener("reduceMotionChanged", this.handleReduceMotionChanged);
     const result = closure_3.isReduceMotionEnabled();
     result.then(this.handleReduceMotionChanged);
@@ -37,91 +40,91 @@ export default {
     closure_4.addChangeListener(this.handlePreferredColorSchemeChanged);
     const listener5 = closure_5.addEventListener("change", this.handleAppStateChange);
     const obj = { colorScheme: closure_4.getColorScheme() };
-    const result4 = importDefault(698).setSystemAccessibilityFeatures(this.getActiveFeatures);
+    const result4 = expandEventPropertiesDefault.setSystemAccessibilityFeatures(this.getActiveFeatures);
   },
   getActiveFeatures() {
     return NONE;
   },
   handleReduceMotionChanged(arg0) {
-    let obj = require(13813) /* setFontSize */;
+    let obj = setFontSize;
     let str = "no-preference";
     if (arg0) {
       str = "reduce";
     }
     const result = obj.systemPrefersReducedMotionChanged(str);
     const REDUCED_MOTION = AccessibilityFeatureFlags.REDUCED_MOTION;
-    const useReducedMotion = maybeApplyNoTextColorForLightCustomTheme.useReducedMotion;
+    const useReducedMotion = closure_6.useReducedMotion;
     if (useReducedMotion) {
-      let closure_8 = tmp4 | REDUCED_MOTION;
+      closure_8 = tmp4 | REDUCED_MOTION;
     } else {
       closure_8 = tmp4 & ~REDUCED_MOTION;
     }
-    const tmp5 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[REDUCED_MOTION];
+    const tmp5 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[REDUCED_MOTION];
     if (null != tmp5) {
       obj = {};
       obj[tmp5] = useReducedMotion;
-      importDefault(10561)(tmp(13812).accessibilityPreferencesSharedValue, obj);
-      const tmp7 = importDefault(10561);
+      uDefault(tmp(13870).accessibilityPreferencesSharedValue, obj);
+      const tmp7 = uDefault;
     }
   },
   handleReduceTransparencyChanged(arg0) {
     const REDUCED_TRANSPARENCY = AccessibilityFeatureFlags.REDUCED_TRANSPARENCY;
     if (arg0) {
-      let closure_8 = tmp | REDUCED_TRANSPARENCY;
+      closure_8 = tmp | REDUCED_TRANSPARENCY;
     } else {
       closure_8 = tmp & ~REDUCED_TRANSPARENCY;
     }
-    const tmp4 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[REDUCED_TRANSPARENCY];
+    const tmp4 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[REDUCED_TRANSPARENCY];
     if (null != tmp4) {
       const obj = {};
       obj[tmp4] = arg0;
-      importDefault(10561)(require(13812) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, obj);
-      const tmp6 = importDefault(10561);
+      uDefault(A11Y_FEATURE_MAP.accessibilityPreferencesSharedValue, obj);
+      const tmp6 = uDefault;
     }
   },
   handleBoldTextChanged(arg0) {
     const BOLD_TEXT = AccessibilityFeatureFlags.BOLD_TEXT;
     if (arg0) {
-      let closure_8 = tmp | BOLD_TEXT;
+      closure_8 = tmp | BOLD_TEXT;
     } else {
       closure_8 = tmp & ~BOLD_TEXT;
     }
-    const tmp4 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[BOLD_TEXT];
+    const tmp4 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[BOLD_TEXT];
     if (null != tmp4) {
       const obj = {};
       obj[tmp4] = arg0;
-      importDefault(10561)(require(13812) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, obj);
-      const tmp6 = importDefault(10561);
+      uDefault(A11Y_FEATURE_MAP.accessibilityPreferencesSharedValue, obj);
+      const tmp6 = uDefault;
     }
   },
   handleGrayscaleChanged(arg0) {
     const GRAYSCALE = AccessibilityFeatureFlags.GRAYSCALE;
     if (arg0) {
-      let closure_8 = tmp | GRAYSCALE;
+      closure_8 = tmp | GRAYSCALE;
     } else {
       closure_8 = tmp & ~GRAYSCALE;
     }
-    const tmp4 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[GRAYSCALE];
+    const tmp4 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[GRAYSCALE];
     if (null != tmp4) {
       const obj = {};
       obj[tmp4] = arg0;
-      importDefault(10561)(require(13812) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, obj);
-      const tmp6 = importDefault(10561);
+      uDefault(A11Y_FEATURE_MAP.accessibilityPreferencesSharedValue, obj);
+      const tmp6 = uDefault;
     }
   },
   handleInvertColorsChanged(arg0) {
     const INVERT_COLORS = AccessibilityFeatureFlags.INVERT_COLORS;
     if (arg0) {
-      let closure_8 = tmp | INVERT_COLORS;
+      closure_8 = tmp | INVERT_COLORS;
     } else {
       closure_8 = tmp & ~INVERT_COLORS;
     }
-    const tmp4 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[INVERT_COLORS];
+    const tmp4 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[INVERT_COLORS];
     if (null != tmp4) {
       const obj = {};
       obj[tmp4] = arg0;
-      importDefault(10561)(require(13812) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, obj);
-      const tmp6 = importDefault(10561);
+      uDefault(A11Y_FEATURE_MAP.accessibilityPreferencesSharedValue, obj);
+      const tmp6 = uDefault;
     }
   },
   handlePreferredColorSchemeChanged(colorScheme) {
@@ -129,138 +132,138 @@ export default {
     if ("dark" === colorScheme) {
       const PREFERS_COLOR_SCHEME_LIGHT3 = AccessibilityFeatureFlags.PREFERS_COLOR_SCHEME_LIGHT;
       closure_8 = closure_8 & ~PREFERS_COLOR_SCHEME_LIGHT3;
-      const tmp21 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_LIGHT3];
+      const tmp21 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_LIGHT3];
       if (null != tmp21) {
         let obj = {};
         obj[tmp21] = false;
-        importDefault(10561)(tmp19(13812).accessibilityPreferencesSharedValue, obj);
-        const tmp24 = importDefault(10561);
+        uDefault(tmp19(13870).accessibilityPreferencesSharedValue, obj);
+        const tmp24 = uDefault;
       }
       const PREFERS_COLOR_SCHEME_DARK2 = AccessibilityFeatureFlags.PREFERS_COLOR_SCHEME_DARK;
       closure_8 = closure_8 | PREFERS_COLOR_SCHEME_DARK2;
-      const tmp27 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_DARK2];
+      const tmp27 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_DARK2];
       if (null != tmp27) {
         obj = {};
         obj[tmp27] = true;
-        importDefault(10561)(tmp19(13812).accessibilityPreferencesSharedValue, obj);
-        const tmp29 = importDefault(10561);
+        uDefault(tmp19(13870).accessibilityPreferencesSharedValue, obj);
+        const tmp29 = uDefault;
       }
       const tmp17 = AccessibilityFeatureFlags;
     } else if ("light" === colorScheme) {
       const PREFERS_COLOR_SCHEME_DARK = AccessibilityFeatureFlags.PREFERS_COLOR_SCHEME_DARK;
       closure_8 = closure_8 & ~PREFERS_COLOR_SCHEME_DARK;
-      const tmp10 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_DARK];
+      const tmp10 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_DARK];
       if (null != tmp10) {
-        const obj1 = {};
+        obj1 = {};
         obj1[tmp10] = false;
-        importDefault(10561)(tmp8(13812).accessibilityPreferencesSharedValue, obj1);
-        const tmp13 = importDefault(10561);
+        uDefault(tmp8(13870).accessibilityPreferencesSharedValue, obj1);
+        const tmp13 = uDefault;
       }
       const PREFERS_COLOR_SCHEME_LIGHT2 = AccessibilityFeatureFlags.PREFERS_COLOR_SCHEME_LIGHT;
       closure_8 = closure_8 | PREFERS_COLOR_SCHEME_LIGHT2;
-      const tmp16 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_LIGHT2];
+      const tmp16 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_LIGHT2];
       if (null != tmp16) {
         const obj2 = {};
         obj2[tmp16] = true;
-        importDefault(10561)(tmp8(13812).accessibilityPreferencesSharedValue, obj2);
-        const tmp41 = importDefault(10561);
+        uDefault(tmp8(13870).accessibilityPreferencesSharedValue, obj2);
+        const tmp41 = uDefault;
       }
       const tmp6 = AccessibilityFeatureFlags;
     } else {
       const PREFERS_COLOR_SCHEME_DARK3 = AccessibilityFeatureFlags.PREFERS_COLOR_SCHEME_DARK;
       closure_8 = closure_8 & ~PREFERS_COLOR_SCHEME_DARK3;
-      const tmp35 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_DARK3];
+      const tmp35 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_DARK3];
       if (null != tmp35) {
         obj = {};
         obj[tmp35] = false;
-        importDefault(10561)(tmp33(13812).accessibilityPreferencesSharedValue, obj);
-        const tmp2 = importDefault(10561);
+        uDefault(tmp33(13870).accessibilityPreferencesSharedValue, obj);
+        const tmp2 = uDefault;
       }
       const PREFERS_COLOR_SCHEME_LIGHT = AccessibilityFeatureFlags.PREFERS_COLOR_SCHEME_LIGHT;
       closure_8 = closure_8 & ~PREFERS_COLOR_SCHEME_LIGHT;
-      const tmp5 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_LIGHT];
+      const tmp5 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_LIGHT];
       if (null != tmp5) {
         const obj3 = {};
         obj3[tmp5] = false;
-        importDefault(10561)(tmp33(13812).accessibilityPreferencesSharedValue, obj3);
-        const tmp38 = importDefault(10561);
+        uDefault(tmp33(13870).accessibilityPreferencesSharedValue, obj3);
+        const tmp38 = uDefault;
       }
       const tmp31 = AccessibilityFeatureFlags;
     }
   },
   handleAccessibilityStoreChanged() {
     const REDUCED_MOTION = AccessibilityFeatureFlags.REDUCED_MOTION;
-    const useReducedMotion = maybeApplyNoTextColorForLightCustomTheme.useReducedMotion;
+    const useReducedMotion = closure_6.useReducedMotion;
     if (useReducedMotion) {
-      let closure_8 = tmp3 | REDUCED_MOTION;
+      closure_8 = tmp3 | REDUCED_MOTION;
     } else {
       closure_8 = tmp3 & ~REDUCED_MOTION;
     }
-    const tmp6 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[REDUCED_MOTION];
+    const tmp6 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[REDUCED_MOTION];
     if (null != tmp6) {
       let obj = {};
       obj[tmp6] = useReducedMotion;
-      importDefault(10561)(tmp4(13812).accessibilityPreferencesSharedValue, obj);
-      const tmp8 = importDefault(10561);
+      uDefault(tmp4(13870).accessibilityPreferencesSharedValue, obj);
+      const tmp8 = uDefault;
     }
     const REDUCED_MOTION_FROM_USER_SETTINGS = tmp.REDUCED_MOTION_FROM_USER_SETTINGS;
-    if ("auto" !== maybeApplyNoTextColorForLightCustomTheme.rawPrefersReducedMotion) {
+    if ("auto" !== closure_6.rawPrefersReducedMotion) {
       closure_8 = tmp11 | REDUCED_MOTION_FROM_USER_SETTINGS;
     } else {
       closure_8 = tmp11 & ~REDUCED_MOTION_FROM_USER_SETTINGS;
     }
-    const tmp12 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[REDUCED_MOTION_FROM_USER_SETTINGS];
+    const tmp12 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[REDUCED_MOTION_FROM_USER_SETTINGS];
     if (null != tmp12) {
       obj = {};
       obj[tmp12] = tmp10;
-      importDefault(10561)(tmp4(13812).accessibilityPreferencesSharedValue, obj);
-      const tmp14 = importDefault(10561);
+      uDefault(tmp4(13870).accessibilityPreferencesSharedValue, obj);
+      const tmp14 = uDefault;
     }
     const SATURATION_LEVEL_DECREASED = tmp.SATURATION_LEVEL_DECREASED;
-    if (maybeApplyNoTextColorForLightCustomTheme.saturation < 1) {
+    if (closure_6.saturation < 1) {
       closure_8 = tmp17 | SATURATION_LEVEL_DECREASED;
     } else {
       closure_8 = tmp17 & ~SATURATION_LEVEL_DECREASED;
     }
-    const tmp18 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[SATURATION_LEVEL_DECREASED];
+    const tmp18 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[SATURATION_LEVEL_DECREASED];
     if (null != tmp18) {
       obj = {};
       obj[tmp18] = tmp16;
-      importDefault(10561)(tmp4(13812).accessibilityPreferencesSharedValue, obj);
-      const tmp20 = importDefault(10561);
+      uDefault(tmp4(13870).accessibilityPreferencesSharedValue, obj);
+      const tmp20 = uDefault;
     }
     const CONTRAST_LEVEL_DECREASED = tmp.CONTRAST_LEVEL_DECREASED;
-    if (maybeApplyNoTextColorForLightCustomTheme.contrast < 1) {
+    if (closure_6.contrast < 1) {
       closure_8 = tmp23 | CONTRAST_LEVEL_DECREASED;
     } else {
       closure_8 = tmp23 & ~CONTRAST_LEVEL_DECREASED;
     }
-    const tmp24 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[CONTRAST_LEVEL_DECREASED];
+    const tmp24 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[CONTRAST_LEVEL_DECREASED];
     if (null != tmp24) {
-      const obj1 = {};
+      obj1 = {};
       obj1[tmp24] = tmp22;
-      importDefault(10561)(tmp4(13812).accessibilityPreferencesSharedValue, obj1);
-      const tmp26 = importDefault(10561);
+      uDefault(tmp4(13870).accessibilityPreferencesSharedValue, obj1);
+      const tmp26 = uDefault;
     }
     const CONTRAST_LEVEL_INCREASED = tmp.CONTRAST_LEVEL_INCREASED;
-    if (maybeApplyNoTextColorForLightCustomTheme.contrast > 1) {
+    if (closure_6.contrast > 1) {
       closure_8 = tmp29 | CONTRAST_LEVEL_INCREASED;
     } else {
       closure_8 = tmp29 & ~CONTRAST_LEVEL_INCREASED;
     }
-    const tmp30 = require(13812) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[CONTRAST_LEVEL_INCREASED];
+    const tmp30 = A11Y_FEATURE_MAP.A11Y_FEATURE_MAP[CONTRAST_LEVEL_INCREASED];
     if (null != tmp30) {
       const obj2 = {};
       obj2[tmp30] = tmp28;
-      importDefault(10561)(tmp4(13812).accessibilityPreferencesSharedValue, obj2);
-      const tmp32 = importDefault(10561);
+      uDefault(tmp4(13870).accessibilityPreferencesSharedValue, obj2);
+      const tmp32 = uDefault;
     }
   },
   handleAppStateChange(arg0) {
     if ("active" === arg0) {
       let result = closure_3.isReduceMotionEnabled();
       result.then((arg0) => {
-        let obj = callback(13813);
+        let obj = callback(13871);
         let str = "no-preference";
         if (arg0) {
           str = "reduce";
@@ -269,34 +272,34 @@ export default {
         const REDUCED_MOTION = constants.REDUCED_MOTION;
         useReducedMotion = useReducedMotion.useReducedMotion;
         if (useReducedMotion) {
-          let closure_8 = tmp4 | REDUCED_MOTION;
+          closure_8 = tmp4 | REDUCED_MOTION;
         } else {
           closure_8 = tmp4 & ~REDUCED_MOTION;
         }
-        const tmp5 = callback(13812).A11Y_FEATURE_MAP[REDUCED_MOTION];
+        const tmp5 = callback(13870).A11Y_FEATURE_MAP[REDUCED_MOTION];
         if (null != tmp5) {
           obj = {};
           obj[tmp5] = useReducedMotion;
-          callback2(10561)(tmp(13812).accessibilityPreferencesSharedValue, obj);
-          const tmp7 = callback2(10561);
+          callback2(10600)(tmp(13870).accessibilityPreferencesSharedValue, obj);
+          const tmp7 = callback2(10600);
         }
       });
       const result1 = closure_3.prefersCrossFadeTransitions();
       result1.then((systemPrefersCrossfades) => {
         const REDUCED_MOTION_PREFERS_CROSSFADES = constants.REDUCED_MOTION_PREFERS_CROSSFADES;
         if (systemPrefersCrossfades) {
-          let closure_8 = tmp | REDUCED_MOTION_PREFERS_CROSSFADES;
+          closure_8 = tmp | REDUCED_MOTION_PREFERS_CROSSFADES;
         } else {
           closure_8 = tmp & ~REDUCED_MOTION_PREFERS_CROSSFADES;
         }
-        const tmp4 = callback(13812).A11Y_FEATURE_MAP[REDUCED_MOTION_PREFERS_CROSSFADES];
+        const tmp4 = callback(13870).A11Y_FEATURE_MAP[REDUCED_MOTION_PREFERS_CROSSFADES];
         if (null != tmp4) {
           const obj = {};
           obj[tmp4] = systemPrefersCrossfades;
-          callback2(10561)(tmp2(13812).accessibilityPreferencesSharedValue, obj);
-          const tmp6 = callback2(10561);
+          callback2(10600)(tmp2(13870).accessibilityPreferencesSharedValue, obj);
+          const tmp6 = callback2(10600);
         }
-        const result = callback(13813).systemPrefersCrossfadesChanged(systemPrefersCrossfades);
+        const result = callback(13871).systemPrefersCrossfadesChanged(systemPrefersCrossfades);
       });
     }
   }

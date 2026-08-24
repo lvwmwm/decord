@@ -1,28 +1,33 @@
-// Module ID: 14285
-// Function ID: 14286
+// Module ID: 14353
+// Function ID: 14354
 // Name: route
-// Dependencies: [8198, 676, 10669, 1236, 2335, 14286, 2]
+// Dependencies: [8238, 676, 10708, 1236, 2336, 14354, 2]
 
-// Module 14285 (route)
-import createToggle from "createToggle";
+// Module 14353 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2336 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2335).ahKIJO);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.ahKIJO);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.FAMILY_CENTER,
+  parent: MobileUserSettings.MobileUserSettings.FAMILY_CENTER,
   unsearchable: true,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS,
+  route: ME.UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS,
   getComponent() {
-    return require(14286) /* FamilyCenterParentalControlsSettings */.default;
+    return require(14354) /* FamilyCenterParentalControlsSettings */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterSettingParentalControlsSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterSettingParentalControlsSetting.tsx");
 
 export default route;
 export const FamilyCenterParentalControlsSetting = route;

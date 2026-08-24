@@ -1,42 +1,45 @@
-// Module ID: 15260
-// Function ID: 15261
+// Module ID: 15324
+// Function ID: 15325
 // Name: getRedirectStepForErrorKey
-// Dependencies: [15213, 676, 691, 8594, 15211, 15220, 2]
+// Dependencies: [15277, 676, 691, 8633, 15275, 15284, 2]
 // Exports: default
 
-// Module 15260 (getRedirectStepForErrorKey)
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
-import { AbortCodes } from "ME";
+// Module 15324 (getRedirectStepForErrorKey)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import keys from "keys" /* 691 */;
+import getErrorDefault from "getError" /* 8633 */;
+import headerTitle from "headerTitle" /* 15275 */;
+import trackRegTransition from "trackRegTransition" /* 15284 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15277 */;
 
-let c3;
-let c4;
-let c5;
 function getRedirectStepForErrorKey(arg0) {
   if ("email" !== arg0) {
     if ("phoneToken" !== arg0) {
       if ("global_name" === arg0) {
-        return require(691) /* keys */.AuthStates.REGISTER_DISPLAY_NAME;
+        return keys.AuthStates.REGISTER_DISPLAY_NAME;
       } else {
         if ("username" !== arg0) {
           if ("password" !== arg0) {
             return null;
           }
         }
-        return require(691) /* keys */.AuthStates.REGISTER_ACCOUNT_INFORMATION;
+        return keys.AuthStates.REGISTER_ACCOUNT_INFORMATION;
       }
     }
   }
-  return require(691) /* keys */.AuthStates.REGISTER_IDENTITY;
+  return keys.AuthStates.REGISTER_IDENTITY;
 }
 ({ RegisterTransitionSteps: c3, RegistrationTransitionActionTypes: c4, authStateToRegisterTransitionStep: c5 } = RegistrationTransitionActionTypes);
-let closure_7 = { [require(691).AuthStates.REGISTER_IDENTITY]: ["email", "phoneToken"], [require(691).AuthStates.REGISTER_DISPLAY_NAME]: ["global_name"], [require(691).AuthStates.REGISTER_ACCOUNT_INFORMATION]: ["username", "password"] };
-const result = require("keys").fileFinishedImporting("modules/auth/native/components/utils/handleRegisterErrorRedirection.tsx");
+const AbortCodes = ME.AbortCodes;
+let closure_7 = { [keys.AuthStates.REGISTER_IDENTITY]: ["email", "phoneToken"], [keys.AuthStates.REGISTER_DISPLAY_NAME]: ["global_name"], [keys.AuthStates.REGISTER_ACCOUNT_INFORMATION]: ["username", "password"] };
+const result = set.fileFinishedImporting("modules/auth/native/components/utils/handleRegisterErrorRedirection.tsx");
 
 export default function handleRegisterErrorRedirection(navigate, arg1, code) {
-  if (null == importDefault(8594)("date_of_birth", code)) {
+  if (null == getErrorDefault("date_of_birth", code)) {
     const _Number = Number;
     if (Number(code.code) !== AbortCodes.UNDER_MINIMUM_AGE) {
-      const registrationSteps = require(15211) /* headerTitle */.getRegistrationSteps();
+      const registrationSteps = headerTitle.getRegistrationSteps();
       const obj8 = registrationSteps[Symbol.iterator]();
       while (obj8 !== undefined) {
         let tmp6 = table;
@@ -51,7 +54,7 @@ export default function handleRegisterErrorRedirection(navigate, arg1, code) {
           let tmp9 = item10023;
           let tmp11 = dependencyMap;
           let tmp12 = dependencyMap;
-          let tmp13 = importDefault(8594)(item10023, arg2);
+          let tmp13 = getErrorDefault(item10023, arg2);
           if (null != tmp13) {
             let tmp15 = getRedirectStepForErrorKey;
             let tmp16 = item10023;
@@ -68,7 +71,7 @@ export default function handleRegisterErrorRedirection(navigate, arg1, code) {
               let items1 = [tmp14, ];
               let tmp23 = require;
               let tmp24 = tmp11;
-              let obj3 = require(15220) /* trackRegTransition */;
+              let obj3 = trackRegTransition;
               items1[1] = obj3.getCommonErrorDetails(arg2.error_code);
               obj[2] = items1;
               let tmp25 = arg1(obj);
@@ -87,13 +90,13 @@ export default function handleRegisterErrorRedirection(navigate, arg1, code) {
         obj = { step: null, actionType: null, details: null };
         obj[0] = arg3;
         obj[1] = constants2.RESPONSE_ERROR;
-        const items2 = [require(15220) /* trackRegTransition */.getCommonErrorDetails(code.error_code)];
+        const items2 = [trackRegTransition.getCommonErrorDetails(code.error_code)];
         obj[2] = items2;
         arg1(obj);
-        const obj5 = require(15220) /* trackRegTransition */;
+        const obj5 = trackRegTransition;
       }
     }
   }
   arg1({ step: constants.AGE_GATE_UNDERAGE, actionType: constants2.VIEWED });
-  navigate.push(require(691) /* keys */.AuthStates.AGE_GATE_UNDERAGE, { fromRegister: true, disableSwipe: true });
+  navigate.push(keys.AuthStates.AGE_GATE_UNDERAGE, { fromRegister: true, disableSwipe: true });
 };

@@ -5,10 +5,10 @@
 // Exports: getAvailableLocales, getLanguages, getNormalizedLocale, useSyncMessages
 
 // Module 1237 (getAvailableLocales)
-import noop from "noop";
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("module_1274").fileFinishedImporting("intl/util.tsx");
+const result = require("set").fileFinishedImporting("intl/util.tsx");
 
 export const getAvailableLocales = function getAvailableLocales() {
   _require = _require(1238).default;
@@ -16,7 +16,7 @@ export const getAvailableLocales = function getAvailableLocales() {
   const mapped = found.map((code) => {
     code = code.code;
     const obj = { value: code, name: code.name, localizedName: null };
-    const obj2 = dependencyMap(outer1_1[2]);
+    const obj2 = dependencyMap(closure_1_1[2]);
     obj[2] = dependencyMap[obj2.runtimeHashMessageKey(obj2, code)];
     return obj;
   });
@@ -69,7 +69,7 @@ export const getNormalizedLocale = function getNormalizedLocale(str, arg1) {
   const arr = parts(1296);
 };
 export const useSyncMessages = function useSyncMessages(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const syncExternalStore = noop.useSyncExternalStore((arg0) => closure_0.onChange(arg0), () => closure_0.isLocaleLoaded(currentLocale.currentLocale));
+  closure_0 = arg0;
+  closure_1 = arg1;
+  const syncExternalStore = closure_2.useSyncExternalStore((arg0) => closure_0.onChange(arg0), () => closure_0.isLocaleLoaded(currentLocale.currentLocale));
 };

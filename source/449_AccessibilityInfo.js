@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 449 (AccessibilityInfo)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("AccessibilityInfo");
+
+export default getAll.get("AccessibilityInfo");

@@ -1,22 +1,21 @@
-// Module ID: 9535
-// Function ID: 9536
+// Module ID: 9572
+// Function ID: 9573
 // Name: usePendingFolderGuildIds
-// Dependencies: [4198, 1910, 589, 2]
+// Dependencies: [4202, 1910, 589, 2]
 // Exports: default, getPendingFolderGuildIds
 
-// Module 9535 (usePendingFolderGuildIds)
-import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
+// Module 9572 (usePendingFolderGuildIds)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "handleGatewayJoinRequestUpdate" /* 4202 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");
 
 export default function usePendingFolderGuildIds() {
-  let items = [handleGatewayJoinRequestUpdate, createGuildRecordFromRust];
-  return require(589) /* initialize */.useStateFromStoresArray(items, () => {
-    let obj;
-    let obj2;
-    const items = [handleGatewayJoinRequestUpdate, createGuildRecordFromRust];
+  let items = [closure_2, closure_3];
+  return initialize.useStateFromStoresArray(items, () => {
+    const items = [closure_2, closure_3];
     [obj, obj2] = items;
     let guilds;
     const guildIds = obj.computeGuildIds();
@@ -25,11 +24,9 @@ export default function usePendingFolderGuildIds() {
   });
 };
 export const getPendingFolderGuildIds = function getPendingFolderGuildIds() {
-  let obj;
-  let obj2;
   let tmp = arg0;
   if (arg0 === undefined) {
-    const items = [handleGatewayJoinRequestUpdate, createGuildRecordFromRust];
+    const items = [closure_2, closure_3];
     tmp = items;
   }
   [obj, obj2] = tmp;

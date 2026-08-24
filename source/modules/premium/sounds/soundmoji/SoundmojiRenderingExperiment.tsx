@@ -1,16 +1,17 @@
-// Module ID: 6821
-// Function ID: 6822
+// Module ID: 6859
+// Function ID: 6860
 // Name: getSoundmojiRenderingExperiment
 // Dependencies: [1472, 2]
 // Exports: getSoundmojiRenderingExperiment, useSoundmojiRenderingExperiment
 
-// Module 6821 (getSoundmojiRenderingExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 6859 (getSoundmojiRenderingExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-03-soundmoji-rendering", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/premium/sounds/soundmoji/SoundmojiRenderingExperiment.tsx");
+const result = set.fileFinishedImporting("modules/premium/sounds/soundmoji/SoundmojiRenderingExperiment.tsx");
 
 export const getSoundmojiRenderingExperiment = function getSoundmojiRenderingExperiment(location) {
   return closure_0.getConfig({ location: location.location }).enabled;

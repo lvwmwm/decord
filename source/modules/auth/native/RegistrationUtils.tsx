@@ -1,29 +1,21 @@
-// Module ID: 15220
-// Function ID: 15221
+// Module ID: 15284
+// Function ID: 15285
 // Name: trackRegTransition
-// Dependencies: [19, 4359, 8923, 15212, 15213, 676, 21, 698, 15210, 6319, 2]
+// Dependencies: [19, 4363, 8960, 15276, 15277, 676, 21, 698, 15274, 6350, 2]
 // Exports: BackButtonWithTracking, getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
-// Module 15220 (trackRegTransition)
-import noop from "noop";
-import updateInvite from "updateInvite";
-import getDisplayedInviteCode from "getDisplayedInviteCode";
-import useRegistrationUIStore from "useRegistrationUIStore";
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
-import { AnalyticEvents } from "ME";
-import { jsx } from "jsxProd";
+// Module 15284 (trackRegTransition)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "updateInvite" /* 4363 */;
+import closure_5 from "getDisplayedInviteCode" /* 8960 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15276 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15277 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 function trackRegTransition(overrideRegistrationOptions) {
-  let actionType;
-  let details;
-  let fromStep;
-  let step;
-  let toStep;
   let registrationOptions = overrideRegistrationOptions.overrideRegistrationOptions;
   ({ step, fromStep, toStep, actionType, details } = overrideRegistrationOptions);
   displayedInviteCode = displayedInviteCode.getDisplayedInviteCode();
@@ -53,7 +45,7 @@ function trackRegTransition(overrideRegistrationOptions) {
       str2 = "phone";
     }
   }
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { step, identity_type: str2, action_type: actionType, action_details: details, registration_source: str, invite_code: null, invite_channel_id: null, invite_channel_type: null, invite_guild_id: null, invite_inviter_id: null, from_step: null, to_step: null };
   let code;
   if (invite != null) {
@@ -97,8 +89,8 @@ function trackRegTransition(overrideRegistrationOptions) {
   obj.track(AnalyticEvents.REGISTER_TRANSITION, obj);
 }
 ({ clearRegistrationErrorMessage: closure_6, useRegistrationUIStore: error } = useRegistrationUIStore);
-({ RegisterTransitionSteps: metroImportAll, RegistrationTransitionActionTypes: c9 } = RegistrationTransitionActionTypes);
-const result = require("getDisplayedInviteCode").fileFinishedImporting("modules/auth/native/RegistrationUtils.tsx");
+({ RegisterTransitionSteps: closure_8, RegistrationTransitionActionTypes: c9 } = RegistrationTransitionActionTypes);
+const result = require("set").fileFinishedImporting("modules/auth/native/RegistrationUtils.tsx");
 
 export const hasAllRegistrationFieldsCompleted = function hasAllRegistrationFieldsCompleted(email, isConsentRequired) {
   isConsentRequired = isConsentRequired.isConsentRequired;
@@ -131,28 +123,23 @@ export const hasAllRegistrationFieldsCompleted = function hasAllRegistrationFiel
 export { trackRegTransition };
 export function getTrackRegTransition(closure_0) {
   return (arg0) => {
-    let actionType;
-    let details;
-    let overrideRegistrationOptions;
-    let step;
-    let toStep;
     ({ step, actionType, toStep, details, overrideRegistrationOptions } = arg0);
-    if (actionType === outer1_9.VIEWED) {
-      if (step === outer1_8.CAPTCHA) {
+    if (actionType === closure_1_9.VIEWED) {
+      if (step === closure_1_8.CAPTCHA) {
         let obj = { step: null, fromStep: null, actionType: null };
         obj[0] = step;
         obj[1] = ref.current;
         obj[2] = actionType;
-        outer1_12(obj);
+        closure_1_12(obj);
       }
     }
-    if (actionType === outer1_9.VIEWED) {
+    if (actionType === closure_1_9.VIEWED) {
       if (null != step) {
         obj = { step: null, fromStep: null, actionType: null };
         obj[0] = step;
         obj[1] = ref.current;
         obj[2] = actionType;
-        outer1_12(obj);
+        closure_1_12(obj);
       }
       ref.current = step;
     } else if (null != step) {
@@ -162,29 +149,27 @@ export function getTrackRegTransition(closure_0) {
       obj[2] = actionType;
       obj[3] = details;
       obj[4] = overrideRegistrationOptions;
-      outer1_12(obj);
+      closure_1_12(obj);
     }
     return tmp9;
   };
 }
 export const BackButtonWithTracking = function BackButtonWithTracking(arg0) {
-  let dependencyMap;
-  let importDefault;
-  _require = React.useContext(_require(15210).TrackRegistrationContext);
+  _require = React.useContext(_require(15274).TrackRegistrationContext);
   ({ destinationStep: importDefault, onPress: dependencyMap } = arg0);
   let obj = {};
   const merged = Object.assign(arg0);
   obj.onPress = function onPress() {
     if (null != closure_2) {
-      outer1_6();
+      closure_1_6();
       const obj = { step: null, actionType: null };
       obj[0] = closure_1;
-      obj[1] = outer1_9.VIEWED;
+      obj[1] = closure_1_9.VIEWED;
       callback(obj);
       tmp();
     }
   };
-  return jsx(_require(6319).HeaderBackButton, {});
+  return jsx(_require(6350).HeaderBackButton, {});
 };
 export const getCommonErrorDetails = function getCommonErrorDetails(error_code) {
   if (-1 === error_code) {

@@ -1,32 +1,29 @@
-// Module ID: 15443
-// Function ID: 15444
-// Dependencies: [32, 19, 17, 10055, 676, 21, 4115, 4661, 712, 500, 8502, 4751, 9288, 5042, 14452, 4744, 4748, 6885, 15190, 14409, 4734, 1236, 2]
+// Module ID: 15507
+// Function ID: 15508
+// Dependencies: [32, 19, 17, 10094, 676, 21, 4119, 4668, 712, 500, 8541, 4756, 9325, 5047, 14520, 4749, 4753, 6923, 15254, 14477, 4739, 1236, 2]
 
-// Module 15443
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "ArrowSmallUpIcon";
-import hairlineWidth from "hairlineWidth";
-import { AnalyticEvents } from "ME";
-import jsxProd from "getSystemLocale";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4115";
+// Module 15507
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import hairlineWidth from "hairlineWidth" /* 10094 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "module_4119" /* 4119 */;
 
-let c5;
-let c9;
-let closure_6;
-let metroImportAll;
 const require = arg1;
 let c4 = importAllResult;
 ({ getScaledSearchBarHeight: c5, VIEWABILITY_CONFIG: closure_6 } = hairlineWidth);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
-let closure_10 = require("module_4115").createAnimatedComponent(require("AtIcon").Pressable);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
+let closure_10 = importDefaultResult.createAnimatedComponent(require("get ActivityIndicator").Pressable);
 let closure_11 = createCacheKey.createStyles((arg0, arg1) => {
   let num = 5;
   if (arg0) {
     num = 6;
   }
-  let obj = { position: "absolute", right: "50%", zIndex: 1, marginVertical: 12, marginHorizontal: 0, paddingRight: 9, paddingLeft: num, paddingVertical: 4, minHeight: 24, flexDirection: "row", justifyContent: "center", alignItems: "center", borderRadius: importDefault(712).radii.round, backgroundColor: null, elevation: 4, shadowColor: null, shadowOffset: null, shadowOpacity: 0.08, shadowRadius: 4, borderWidth: 1, borderColor: null };
-  const tmp3 = importDefault(712);
+  let obj = { position: "absolute", right: "50%", zIndex: 1, marginVertical: 12, marginHorizontal: 0, paddingRight: 9, paddingLeft: num, paddingVertical: 4, minHeight: 24, flexDirection: "row", justifyContent: "center", alignItems: "center", borderRadius: ThemesDefault.radii.round, backgroundColor: null, elevation: 4, shadowColor: null, shadowOffset: null, shadowOpacity: 0.08, shadowRadius: 4, borderWidth: 1, borderColor: null };
+  const tmp3 = ThemesDefault;
   if (arg0) {
     let RED_400 = tmp3.unsafe_rawColors.RED_400;
   } else {
@@ -35,9 +32,9 @@ let closure_11 = createCacheKey.createStyles((arg0, arg1) => {
   }
   obj = { unreadBar: null, text: null };
   obj[13] = RED_400;
-  obj[15] = importDefault(712).colors.BLACK;
+  obj[15] = ThemesDefault.colors.BLACK;
   obj[16] = { width: 0, height: 1 };
-  obj[20] = importDefault(712).colors.BORDER_SUBTLE;
+  obj[20] = ThemesDefault.colors.BORDER_SUBTLE;
   obj[0] = obj;
   let num2 = 0;
   if (obj3.isAndroid()) {
@@ -59,14 +56,14 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
   const endReachedCounter = position.endReachedCounter;
   const headerHeight = position.headerHeight;
   let first;
-  let closure_10;
+  closure_10 = undefined;
   let sharedValue;
   let sharedValue1;
   let sharedValue2;
   let youBarTotalHeight;
-  let c15;
+  closure_15 = undefined;
   let first1;
-  let closure_17;
+  closure_17 = undefined;
   let callback4;
   let obj = guildChannelsListUnreadBarInsetEnd;
   let flag = isMention;
@@ -83,7 +80,7 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
     }
   }, items);
   let tmp6 = sharedValue(first, shown(onPress[10])());
-  let obj1 = position(onPress[11]);
+  obj1 = position(onPress[11]);
   const fontScale = obj1.useFontScale();
   let sum = position(onPress[12]).scaleTextLineHeight(sharedValue1, fontScale) + 8;
   const obj3 = position(onPress[12]);
@@ -144,7 +141,7 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
     return obj;
   }, items6);
   const tmp21 = scrollPosition(fontScale);
-  c15 = tmp21;
+  closure_15 = tmp21;
   const tmp22 = isMention(obj.useState(false), 2);
   first1 = tmp22[0];
   closure_17 = tmp22[1];
@@ -164,15 +161,15 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
     constructor() {
       tmp = shown;
       if (!shown) {
-        tmp11 = c16;
-        if (c16) {
+        tmp11 = closure_16;
+        if (closure_16) {
           tmp12 = position;
           tmp13 = onPress;
           obj2 = position(onPress[6]);
-          tmp14 = c18;
-          tmp15 = obj2.runOnJS(c18)();
+          tmp14 = closure_18;
+          tmp15 = obj2.runOnJS(closure_18)();
         }
-        tmp16 = c12;
+        tmp16 = closure_12;
         num = 12;
         tmp18 = position;
         str2 = "bottom";
@@ -199,9 +196,9 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
         if (tmp) {
           num5 = 1;
         }
-        obj4 = c11;
+        obj4 = closure_11;
         num6 = 1;
-        if (c11.get() > 0) {
+        if (closure_11.get() > 0) {
           num7 = 5;
           sum = obj4.get() + 5;
           num6 = sum / obj4.get();
@@ -234,12 +231,12 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
         tmp32 = position;
         tmp33 = onPress;
         obj12 = position(onPress[6]);
-        tmp34 = c13;
+        tmp34 = closure_13;
         items1 = [1];
         items1[1] = num6;
         tmp36 = position;
         tmp37 = onPress;
-        interpolateResult = obj12.interpolate(c13.get(), [0, 1], items1);
+        interpolateResult = obj12.interpolate(closure_13.get(), [0, 1], items1);
         obj3[0] = obj11.withSpring(interpolateResult, position(onPress[16]).ON_PRESS_SPRING);
         items[2] = obj3;
         obj[1] = items;
@@ -257,13 +254,13 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
           }
           if (tmp6) {
             tmp8 = listPaddingTop;
-            tmp9 = useMemo;
-            tmp6 = obj.get() > listPaddingTop + useMemo;
+            tmp9 = closure_15;
+            tmp6 = obj.get() > listPaddingTop + closure_15;
           }
           tmp4 = tmp6;
         } else {
-          tmp3 = c16;
-          tmp4 = !c16;
+          tmp3 = closure_16;
+          tmp4 = !closure_16;
         }
         tmp10 = tmp4;
       }
@@ -313,6 +310,6 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
   obj[8] = items9;
   return first(closure_10, obj);
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/channel_list_v2/native/unread_bars/ChannelsUnreadBar.tsx");
+let result = require("set").fileFinishedImporting("modules/channel_list_v2/native/unread_bars/ChannelsUnreadBar.tsx");
 
 export default memoResult;

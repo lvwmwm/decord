@@ -1,66 +1,64 @@
-// Module ID: 5363
-// Function ID: 5364
+// Module ID: 5368
+// Function ID: 5369
 // Name: getEmptyActivityFormatter
-// Dependencies: [5296, 5297, 1236, 2335, 3975, 5298, 2]
+// Dependencies: [5301, 5302, 1236, 2336, 3978, 5303, 2]
 // Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 5363 (getEmptyActivityFormatter)
-import freshTeenActivityWithMap from "freshTeenActivityWithMap";
-import items from "items";
+// Module 5368 (getEmptyActivityFormatter)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2336 */;
+import tDefault from "t" /* 3978 */;
+import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 5303 */;
+import closure_3 from "freshTeenActivityWithMap" /* 5301 */;
+import items from "items" /* 5302 */;
 
-let c4;
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
-({ ACTION_TO_TEXT: c4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: c5, FamilyCenterFailureCode: closure_6, TeenActionDisplayType: error, UserLinkStatus: metroImportAll, UserLinkType: c9 } = items);
+require = arg1;
+({ ACTION_TO_TEXT: c4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: c5, FamilyCenterFailureCode: closure_6, TeenActionDisplayType: error, UserLinkStatus: closure_8, UserLinkType: c9 } = items);
 let c10 = 86400;
 let c11 = 172800;
-let result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/FamilyCenterUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/parent_tools/FamilyCenterUtils.tsx");
 
 export const getEmptyActivityFormatter = function getEmptyActivityFormatter() {
   const obj = { today: null, yesterday: null, days: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(importDefault(2335).VjIAQQ);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(importDefault(2335)["2a8xHY"]);
-  obj[2] = importDefault(2335).Xt6oND;
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(messagesProxyDefault.VjIAQQ);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(messagesProxyDefault["2a8xHY"]);
+  obj[2] = messagesProxyDefault.Xt6oND;
   return obj;
 };
 export const getActivityWindowTimestampFormatter = function getActivityWindowTimestampFormatter(arg0) {
   const obj = { today: null, yesterday: null, days: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   const string = intl.string;
-  const tmp4 = importDefault(2335);
+  const tmp4 = messagesProxyDefault;
   if (arg0) {
     obj[0] = string(tmp4["2AtcIs"]);
     const intl3 = tmp(1236).intl;
-    obj[1] = intl3.string(tmp3(2335).stOECr);
-    obj[2] = tmp3(2335).n8n5Ba;
+    obj[1] = intl3.string(tmp3(2336).stOECr);
+    obj[2] = tmp3(2336).n8n5Ba;
     let tmp5 = obj;
   } else {
     obj[0] = string(tmp4.g1ZX6m);
     const intl2 = tmp(1236).intl;
-    obj[1] = intl2.string(tmp3(2335).s3qSVt);
-    obj[2] = tmp3(2335).f1UJiC;
+    obj[1] = intl2.string(tmp3(2336).s3qSVt);
+    obj[2] = tmp3(2336).f1UJiC;
     tmp5 = obj;
   }
   return tmp5;
 };
 export const formatUserActivityTimestamp = function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
-  let obj = importDefault(3975)();
-  const diffResult = obj.diff(importDefault(3975)(time), "s");
+  let obj = tDefault();
+  const diffResult = obj.diff(tDefault(time), "s");
   const tmp3 = timestampFormatter();
-  importDefault(3975)(time).format("LL");
+  tDefault(time).format("LL");
   if (diffResult < c10) {
     let yesterday = tmp3.today;
   } else if (diffResult < c11) {
     yesterday = tmp3.yesterday;
   } else {
     let num = arg2;
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const _Math = Math;
     const rounded = Math.floor(diffResult / tmp5);
     if (arg2 == null) {
@@ -73,20 +71,20 @@ export const formatUserActivityTimestamp = function formatUserActivityTimestamp(
   return yesterday;
 };
 export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMESTAMP_FORMATTER) {
-  let obj = importDefault(3975)();
-  const diffResult = obj.diff(importDefault(3975)(arg0), "s");
+  let obj = tDefault();
+  const diffResult = obj.diff(tDefault(arg0), "s");
   const tmp3 = SENT_TIMESTAMP_FORMATTER();
-  importDefault(3975)(arg0);
+  tDefault(arg0);
   if (diffResult < 60) {
     let yesterday = tmp3.seconds;
   } else if (diffResult < 3600) {
-    const intl4 = require(1236) /* getSystemLocale */.intl;
+    const intl4 = getSystemLocale.intl;
     obj = { count: null };
     const _Math3 = Math;
     obj[0] = Math.floor(diffResult / 60);
     yesterday = intl4.formatToPlainString(tmp3.minutes, obj);
   } else if (diffResult < c10) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
+    const intl3 = getSystemLocale.intl;
     obj = { count: null };
     const _Math2 = Math;
     obj[0] = Math.floor(diffResult / 3600);
@@ -94,13 +92,13 @@ export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMES
   } else if (diffResult < c11) {
     yesterday = tmp3.yesterday;
   } else if (diffResult < 604800) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    const obj1 = { count: null };
+    const intl2 = getSystemLocale.intl;
+    obj1 = { count: null };
     const _Math = Math;
     obj1[0] = Math.floor(diffResult / tmp13);
     yesterday = intl2.formatToPlainString(tmp3.days, obj1);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const obj2 = { date: null };
     obj2[0] = tmp5;
     yesterday = intl.formatToPlainString(tmp3.date, obj2);
@@ -167,7 +165,7 @@ export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
   if (authStore.getAreLinkedUsersProcessed()) {
     return obj.getLinkedUsers();
   } else {
-    const linkedUsers = importDefault(5298).fetchLinkedUsers();
+    const linkedUsers = maybeFetchCollectiblesForInvoicesDefault.fetchLinkedUsers();
   }
   obj = authStore;
 };
@@ -194,22 +192,22 @@ export const isParentallyControlled = function isParentallyControlled() {
 export const getTopUserOrGuildDescription = function getTopUserOrGuildDescription(dms_sent, call_count) {
   if (call_count > 0) {
     if (0 === dms_sent) {
-      const intl3 = require(1236) /* getSystemLocale */.intl;
+      const intl3 = getSystemLocale.intl;
       let obj = { callCount: null };
       obj[0] = call_count;
-      let formatToPlainStringResult = intl3.formatToPlainString(importDefault(2335)["L/Cj7S"], obj);
+      let formatToPlainStringResult = intl3.formatToPlainString(messagesProxyDefault["L/Cj7S"], obj);
     }
     return formatToPlainStringResult;
   }
   if (dms_sent > 0) {
     if (0 === call_count) {
-      const intl2 = require(1236) /* getSystemLocale */.intl;
+      const intl2 = getSystemLocale.intl;
       obj = { messageCount: null };
       obj[0] = dms_sent;
-      formatToPlainStringResult = intl2.formatToPlainString(importDefault(2335)["6X1F0i"], obj);
+      formatToPlainStringResult = intl2.formatToPlainString(messagesProxyDefault["6X1F0i"], obj);
     }
   }
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   obj = { messageCount: dms_sent, callCount: call_count };
-  formatToPlainStringResult = intl.formatToPlainString(importDefault(2335).IYqGMG, obj);
+  formatToPlainStringResult = intl.formatToPlainString(messagesProxyDefault.IYqGMG, obj);
 };

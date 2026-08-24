@@ -1,20 +1,23 @@
-// Module ID: 8849
-// Function ID: 8850
-// Dependencies: [1395, 1391, 4768, 5260, 8845, 2007, 2]
+// Module ID: 8886
+// Function ID: 8887
+// Dependencies: [1395, 1391, 4773, 5265, 8882, 2008, 2]
 
-// Module 8849
-import { CREATEABLE_NON_VOCAL_CHANNEL_NAME_TYPES as closure_3 } from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
+// Module 8886
+import set from "set" /* 2 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
 
+let closure_3 = createChannelRecord.CREATEABLE_NON_VOCAL_CHANNEL_NAME_TYPES;
 const CREATE_CHANNEL_MODAL_KEY = "CREATE_CHANNEL_MODAL_KEY";
-const result = require("transitionToChannel").fileFinishedImporting("actions/native/CreateChannelModalActionCreators.tsx");
+const result = set.fileFinishedImporting("actions/native/CreateChannelModalActionCreators.tsx");
 
 export default {
   CREATE_CHANNEL_MODAL_KEY: "CREATE_CHANNEL_MODAL_KEY",
   open(arg0, arg1, arg2, arg3) {
     const self = this;
     if (null != arg1) {
-      const obj2 = importDefault(5260);
+      const obj2 = _modDef5265;
       const tmp = arg0;
       let obj = { channelType: null, guildId: null, categoryId: null, cloneChannelId: null, onChannelCreated: null };
       obj[0] = tmp;
@@ -23,23 +26,23 @@ export default {
       obj[3] = arg3;
       obj[4] = function onChannelCreated(id) {
         self.close();
-        const channel = outer1_4.getChannel(id);
+        const channel = closure_1_4.getChannel(id);
         let hasItem = null != arg1 && null != channel;
         if (hasItem) {
-          hasItem = outer1_3.has(channel.type);
+          hasItem = closure_1_3.has(channel.type);
         }
         if (hasItem) {
-          self(outer1_2[2]).transitionToChannel(id);
-          const obj = self(outer1_2[2]);
+          self(closure_1_2[2]).transitionToChannel(id);
+          const obj = self(closure_1_2[2]);
         }
       };
-      obj2.pushLazy(self(2007)(8845, dependencyMap.paths), obj, CREATE_CHANNEL_MODAL_KEY);
+      obj2.pushLazy(self(2008)(8882, dependencyMap.paths), obj, CREATE_CHANNEL_MODAL_KEY);
       const tmp2 = arg2;
       const tmp3 = arg3;
-      const tmp9 = self(2007)(8845, dependencyMap.paths);
+      const tmp9 = self(2008)(8882, dependencyMap.paths);
     }
   },
   close() {
-    importDefault(5260).popWithKey(CREATE_CHANNEL_MODAL_KEY);
+    _modDef5265.popWithKey(CREATE_CHANNEL_MODAL_KEY);
   }
 };

@@ -1,15 +1,15 @@
-// Module ID: 9456
-// Function ID: 9457
+// Module ID: 9493
+// Function ID: 9494
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 4662, 589, 1935, 9457, 4223, 689, 2]
+// Dependencies: [19, 4669, 589, 1935, 9494, 4227, 689, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 9456 (useDisplayNameStylesAccessibleColors)
-import noop from "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+// Module 9493 (useDisplayNameStylesAccessibleColors)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesAccessibleColors.tsx");
+const result = require("set").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesAccessibleColors.tsx");
 
 export const useDisplayNameStylesAccessibleColors = function useDisplayNameStylesAccessibleColors(displayNameStyles) {
   displayNameStyles = displayNameStyles.displayNameStyles;
@@ -41,9 +41,9 @@ export const useDisplayNameStylesAccessibleColors = function useDisplayNameStyle
     } else {
       const colors = tmp.colors;
       items = colors.map((arg0) => {
-        let obj = outer1_0(outer1_2[5]);
-        obj = { foreground: outer1_1(outer1_2[6])(arg0), background: null, ratio: null, saturationFactor: null };
-        if (noop === outer1_0(outer1_2[3]).DisplayNameEffect.TOON) {
+        let obj = closure_1_0(closure_1_2[5]);
+        obj = { foreground: closure_1_1(closure_1_2[6])(arg0), background: null, ratio: null, saturationFactor: null };
+        if (closure_3 === closure_1_0(closure_1_2[3]).DisplayNameEffect.TOON) {
           let tmp4 = tmp2(tmp[6])("#333");
         } else {
           tmp4 = tmp2(tmp[6])(closure_1);

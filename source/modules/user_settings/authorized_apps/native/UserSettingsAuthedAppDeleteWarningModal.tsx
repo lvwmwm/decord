@@ -1,26 +1,26 @@
-// Module ID: 11766
-// Function ID: 11767
+// Module ID: 11815
+// Function ID: 11816
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 10724, 1236, 11767, 9856, 4660, 2]
+// Dependencies: [21, 10763, 1236, 11816, 9895, 4667, 2]
 // Exports: default
 
-// Module 11766 (UserSettingsAuthedAppDeleteWarningModal)
-import jsxProd from "jsxProd";
+// Module 11815 (UserSettingsAuthedAppDeleteWarningModal)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import isSocialLayerApplication from "isSocialLayerApplication" /* 10763 */;
+import isAuthorizedAppTwoWayDefault from "isAuthorizedAppTwoWay" /* 11816 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-let c5;
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
-let result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/authorized_apps/native/UserSettingsAuthedAppDeleteWarningModal.tsx");
+let result = set.fileFinishedImporting("modules/user_settings/authorized_apps/native/UserSettingsAuthedAppDeleteWarningModal.tsx");
 
 export default function UserSettingsAuthedAppDeleteWarningModal(application) {
-  let onDelete;
-  let scopes;
   application = application.application;
   ({ scopes, onDelete } = application);
-  let obj = require(10724) /* isSocialLayerApplication */;
+  let obj = isSocialLayerApplication;
   const result = obj.isSocialLayerSDKAuthorization(application, scopes);
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   if (result) {
     obj = { applicationName: null };
     obj[0] = application.name;
@@ -36,14 +36,14 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
     obj[0] = application.name;
     let formatToPlainStringResult1 = formatToPlainString(t.inM1Yt, obj);
   } else {
-    const obj1 = { applicationName: null };
+    obj1 = { applicationName: null };
     obj1[0] = application.name;
     formatToPlainStringResult1 = formatToPlainString(t.QWGvxA, obj1);
   }
-  let tmp9 = importDefault(11767)(application.id);
+  let tmp9 = isAuthorizedAppTwoWayDefault(application.id);
   if (tmp9) {
     const obj2 = { children: null };
-    let tmp8Result = tmp8(9856);
+    let tmp8Result = tmp8(9895);
     const intl3 = tmp(1236).intl;
     const obj3 = { applicationName: null };
     obj3[0] = application.name;
@@ -54,8 +54,8 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   let tmp12 = result;
   if (result) {
     const obj4 = { look: null, children: null };
-    tmp8Result = tmp8(9856);
-    obj4[0] = tmp(9856).InfoBoxLooks.WARNING;
+    tmp8Result = tmp8(9895);
+    obj4[0] = tmp(9895).InfoBoxLooks.WARNING;
     const intl4 = tmp(1236).intl;
     obj4[1] = intl4.string(tmp(1236).t.LY35Zy);
     tmp12 = callback(tmp8Result, obj4);
@@ -65,14 +65,14 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   const obj6 = { children: null };
   const obj7 = { variant: "destructive", text: null, onPress: null };
   const intl5 = tmp(1236).intl;
-  obj7[1] = intl5.string(require(1236) /* getSystemLocale */.t.xUqheM);
+  obj7[1] = intl5.string(getSystemLocale.t.xUqheM);
   obj7[2] = onDelete;
-  const items1 = [callback(require(4660) /* getAlertModalItemKey */.AlertActionButton, obj7, "confirm"), ];
+  const items1 = [callback(getAlertModalItemKey.AlertActionButton, obj7, "confirm"), ];
   const obj8 = { variant: "secondary", text: null };
   const intl6 = tmp(1236).intl;
-  obj8[1] = intl6.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
-  items1[1] = callback(require(4660) /* getAlertModalItemKey */.AlertActionButton, obj8, "cancel");
+  obj8[1] = intl6.string(getSystemLocale.t["ETE/oC"]);
+  items1[1] = callback(getAlertModalItemKey.AlertActionButton, obj8, "cancel");
   obj6[0] = items1;
   obj5[3] = closure_5(closure_4, obj6);
-  return callback(require(4660) /* getAlertModalItemKey */.AlertModal, obj5);
+  return callback(getAlertModalItemKey.AlertModal, obj5);
 };

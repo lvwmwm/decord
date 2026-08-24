@@ -1,21 +1,24 @@
-// Module ID: 4382
-// Function ID: 4383
+// Module ID: 4386
+// Function ID: 4387
 // Name: handleSubscribeFailure
-// Dependencies: [4273, 589, 709, 2]
+// Dependencies: [4277, 589, 709, 2]
 
-// Module 4382 (handleSubscribeFailure)
-import { Store } from "initialize";
+// Module 4386 (handleSubscribeFailure)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4277 */;
 
-const require = arg1;
+require = arg1;
 function handleSubscribeFailure(error) {
   error = error.error;
 }
 function handleClearError() {
-  let c2 = null;
+  c2 = null;
 }
 let c2 = null;
 let c3 = null;
 let c4 = null;
+const Store = initializeDefault.Store;
 class PremiumPaymentModalStore extends Store {
 }
 const prototype = PremiumPaymentModalStore.prototype;
@@ -33,23 +36,21 @@ prototype["getGiftCode"] = function getGiftCode(arg0) {
   return tmp;
 };
 PremiumPaymentModalStore.displayName = "PremiumPaymentModalStore";
-const premiumPaymentModalStore = new PremiumPaymentModalStore(require("dispatcher"), {
+const premiumPaymentModalStore = new PremiumPaymentModalStore(dispatcherDefault, {
   PREMIUM_PAYMENT_SUBSCRIBE_FAIL: handleSubscribeFailure,
   PREMIUM_PAYMENT_UPDATE_FAIL: handleSubscribeFailure,
   PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: function handleSubscribeSuccess() {
-    let c2 = null;
+    c2 = null;
   },
   PREMIUM_PAYMENT_UPDATE_SUCCESS: handleClearError,
   PREMIUM_PAYMENT_ERROR_CLEAR: handleClearError,
   BRAINTREE_TOKENIZE_PAYPAL_FAIL: function handlePayPalTokenizeFailure(message) {
-    const billingError = new require(4273) /* V6OrEarlierAPIError */.BillingError(message.message);
+    const billingError = new V6OrEarlierAPIError.BillingError(message.message);
   },
   BRAINTREE_TOKENIZE_VENMO_FAIL: function handleVenmoTokenizeFailure(message) {
-    const billingError = new require(4273) /* V6OrEarlierAPIError */.BillingError(message.message);
+    const billingError = new V6OrEarlierAPIError.BillingError(message.message);
   },
   SKU_PURCHASE_SUCCESS: function handleSKUPurchaseSuccess(arg0) {
-    let c3;
-    let c4;
     ({ giftCode: c3, skuId: c4 } = arg0);
   },
   SKU_PURCHASE_FAIL: function handleSKUPurchaseFail(error) {
@@ -70,6 +71,6 @@ const premiumPaymentModalStore = new PremiumPaymentModalStore(require("dispatche
     return false;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("stores/PremiumPaymentModalStore.tsx");
+const result = require("set").fileFinishedImporting("stores/PremiumPaymentModalStore.tsx");
 
 export default premiumPaymentModalStore;

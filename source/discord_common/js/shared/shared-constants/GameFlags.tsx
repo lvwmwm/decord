@@ -1,9 +1,11 @@
-// Module ID: 9521
-// Function ID: 9522
+// Module ID: 9558
+// Function ID: 9559
 // Name: GameFlags
 // Dependencies: [2]
 
-// Module 9521 (GameFlags)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/GameFlags.tsx");
+// Module 9558 (GameFlags)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GameFlags.tsx");
 
 export const GameFlags = { GAME_PROFILE_DISABLED: 1, [1]: "GAME_PROFILE_DISABLED" };

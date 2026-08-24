@@ -1,18 +1,19 @@
-// Module ID: 15061
-// Function ID: 15062
-// Dependencies: [19, 17, 13993, 21, 4661, 712, 4115, 4664, 2]
+// Module ID: 15125
+// Function ID: 15126
+// Dependencies: [19, 17, 14061, 21, 4668, 712, 4119, 4671, 2]
 
-// Module 15061
-import importAllResult from "noop";
-import { StyleSheet } from "get ActivityIndicator";
-import zustandStore from "zustandStore";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15125
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { StyleSheet } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "zustandStore" /* 14061 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let c3 = importAllResult;
 let obj = { background: null };
-obj = { backgroundColor: require("Themes").colors.INTERACTIVE_TEXT_HOVER };
+obj = { backgroundColor: ThemesDefault.colors.INTERACTIVE_TEXT_HOVER };
 obj[0] = obj;
 let closure_7 = createCacheKey.createStyles(obj);
 let closure_8 = { code: "function SettingListItemHighlightTsx1(){const{withSequence,withDelay,withTiming,Easing,runOnJS,clearSelectedSearchResult}=this.__closure;return{opacity:withSequence(withDelay(500,withTiming(0,{duration:0})),withTiming(0.2,{duration:300,easing:Easing.ease}),withTiming(0,{duration:300,easing:Easing.ease},'respect-motion-settings',function(finished){if(finished){runOnJS(clearSelectedSearchResult);}}))};}" };
@@ -51,7 +52,7 @@ const memoResult = importAllResult.memo((start) => {
   let obj = start(callback[6]);
   let fn = function _() {
     let obj = { opacity: null };
-    let obj1 = start(callback[6]);
+    obj1 = start(callback[6]);
     const obj3 = start(callback[6]);
     const obj4 = start(callback[7]);
     const withDelayResult = obj3.withDelay(500, start(callback[7]).withTiming(0, { duration: 0 }));
@@ -61,14 +62,14 @@ const memoResult = importAllResult.memo((start) => {
     obj = { duration: 300, easing: start(callback[6]).Easing.ease };
     const fn = function t(arg0) {
       if (arg0) {
-        outer1_0(outer1_2[6]).runOnJS(closure_2);
-        const obj = outer1_0(outer1_2[6]);
+        closure_1_0(closure_1_2[6]).runOnJS(closure_2);
+        const obj = closure_1_0(closure_1_2[6]);
       }
     };
     obj1 = { runOnJS: start(callback[6]).runOnJS, clearSelectedSearchResult: callback };
     fn.__closure = obj1;
     fn.__workletHash = 13391094209244;
-    fn.__initData = outer1_9;
+    fn.__initData = closure_1_9;
     obj[0] = obj1.withSequence(withDelayResult, withTimingResult, start(callback[7]).withTiming(0, obj, "respect-motion-settings", fn));
     return obj;
   };
@@ -80,6 +81,6 @@ const memoResult = importAllResult.memo((start) => {
   const style = [StyleSheet.absoluteFill, callback().background, memo, animatedStyle, start.style];
   return jsx(end(callback[6]).View, { pointerEvents: "none", style });
 });
-const result = require("zustandStore").fileFinishedImporting("modules/settings/native/renderer/SettingListItemHighlight.tsx");
+const result = require("set").fileFinishedImporting("modules/settings/native/renderer/SettingListItemHighlight.tsx");
 
 export default memoResult;

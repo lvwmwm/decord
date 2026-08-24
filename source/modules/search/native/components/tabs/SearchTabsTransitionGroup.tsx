@@ -1,14 +1,15 @@
-// Module ID: 15939
-// Function ID: 15940
+// Module ID: 16036
+// Function ID: 16037
 // Name: getItemKey
-// Dependencies: [19, 21, 4066, 11783, 4115, 4668, 4744, 4748, 15845, 11783, 2]
+// Dependencies: [19, 21, 4069, 11832, 4119, 4107, 4749, 4753, 15942, 11832, 2]
 // Exports: default
 
-// Module 15939 (getItemKey)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 16036 (getItemKey)
+import ManaContext from "ManaContext" /* 4107 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function getItemKey(items) {
   items = items.items;
   const mapped = items.map((id) => id.id);
@@ -34,20 +35,17 @@ function AnimatedTabs(state) {
     const fn = function t(arg0) {
       let tmp = arg0;
       if (arg0) {
-        tmp = closure_1 === outer1_0(outer1_2[5]).TransitionStates.YEETED;
+        tmp = closure_1 === closure_1_0(closure_1_2[5]).TransitionStates.YEETED;
       }
       if (tmp) {
-        outer1_0(outer1_2[4]).runOnJS(closure_2)();
-        const obj = outer1_0(outer1_2[4]);
+        closure_1_0(closure_1_2[4]).runOnJS(closure_2)();
+        const obj = closure_1_0(closure_1_2[4]);
       }
     };
-    obj = { transitionState, TransitionStates: null, runOnJS: null, cleanUp: null };
-    obj[1] = setting(cleanUp[5]).TransitionStates;
-    obj[2] = setting(cleanUp[4]).runOnJS;
-    obj[3] = cleanUp;
+    obj = { transitionState, TransitionStates: setting(cleanUp[5]).TransitionStates, runOnJS: setting(cleanUp[4]).runOnJS, cleanUp };
     fn.__closure = obj;
     fn.__workletHash = 15209468679721;
-    fn.__initData = outer1_7;
+    fn.__initData = closure_1_7;
     obj[0] = setting(cleanUp[6]).withSpring(value, setting(cleanUp[7]).springStandard, "respect-motion-settings", fn);
     let str = "absolute";
     if (1 === sharedValue.get()) {
@@ -98,7 +96,7 @@ function AnimatedTabs(state) {
   tmpResult = tmp(tmp2[4]);
   class F {
     constructor() {
-      scrollOffset = MOUNTED.scrollOffset;
+      scrollOffset = closure_0.scrollOffset;
       return scrollOffset.get() > 0;
     }
   }
@@ -118,7 +116,7 @@ function AnimatedTabs(state) {
   fn3.__initData = closure_10;
   const animatedReaction = tmpResult.useAnimatedReaction(F, fn3);
   obj = { style: animatedStyle, children: null };
-  const obj1 = { state, grow: false, formatCount: callback, simultaneousHandlers: null, onEndDrag: null };
+  obj1 = { state, grow: false, formatCount: callback, simultaneousHandlers: null, onEndDrag: null };
   let gesture;
   if (context != null) {
     gesture = context.gesture;
@@ -140,9 +138,9 @@ let closure_7 = { code: "function SearchTabsTransitionGroupTsx2(finished){const{
 let closure_8 = { code: "function SearchTabsTransitionGroupTsx3(){const{swipeForMemberListContext}=this.__closure;var _swipeForMemberListCo;(_swipeForMemberListCo=swipeForMemberListContext)===null||_swipeForMemberListCo===void 0||_swipeForMemberListCo.disallowGesture.set(false);}" };
 let closure_9 = { code: "function SearchTabsTransitionGroupTsx4(){const{state}=this.__closure;return state.scrollOffset.get()>0;}" };
 let closure_10 = { code: "function SearchTabsTransitionGroupTsx5(isOffsetFromStart,prevIsOffsetFromStart){const{swipeForMemberListContext}=this.__closure;if(isOffsetFromStart!==prevIsOffsetFromStart){var _swipeForMemberListCo;(_swipeForMemberListCo=swipeForMemberListContext)===null||_swipeForMemberListCo===void 0||_swipeForMemberListCo.disallowGesture.set(isOffsetFromStart);}}" };
-let result = require("explicitContentFromProto").fileFinishedImporting("modules/search/native/components/tabs/SearchTabsTransitionGroup.tsx");
+let result = require("set").fileFinishedImporting("modules/search/native/components/tabs/SearchTabsTransitionGroup.tsx");
 
 export default function SearchTabsTransitionGroup(state) {
   const items = [state.state];
-  return jsx(require(4668) /* wrapChildrenDefault */.TransitionGroup, { items, getItemKey, renderItem });
+  return jsx(ManaContext.TransitionGroup, { items, getItemKey, renderItem });
 };

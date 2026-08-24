@@ -1,16 +1,16 @@
-// Module ID: 13201
-// Function ID: 13202
+// Module ID: 13256
+// Function ID: 13257
 // Name: prettyPrintTrace_
 // Dependencies: [109, 1922, 676, 10, 9, 698, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 13201 (prettyPrintTrace_)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 13256 (prettyPrintTrace_)
+import isTracingDefault from "isTracing" /* 10 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import closure_5 from "_objectWithoutProperties" /* 109 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let error;
-let metroImportAll;
 function prettyPrintTrace_(calls, arg1) {
   let length;
   if (null == calls) {
@@ -58,8 +58,8 @@ function eachTraceCall(calls, arg1) {
 let closure_2 = ["guilds", "merged_presences", "merged_members", "read_state", "private_channels", "user_guild_settings", "user_settings", "user_settings_proto", "experiments", "guild_experiments", "relationships", "users"];
 let closure_3 = ["features"];
 let closure_4 = ["threads", "guild_scheduled_events"];
-({ AnalyticEvents: error, ChannelTypes: metroImportAll } = ME);
-let result = require("ME").fileFinishedImporting("modules/gateway/GatewaySocketAnalytics.tsx");
+({ AnalyticEvents: error, ChannelTypes: closure_8 } = ME);
+let result = require("set").fileFinishedImporting("modules/gateway/GatewaySocketAnalytics.tsx");
 
 export function reportDevtoolsEvent() {
 
@@ -106,7 +106,7 @@ export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, 
     }
   })(data);
   if (null != compressionAnalytics) {
-    let obj = importDefault(10);
+    let obj = isTracingDefault;
     let _Math = Math;
     obj.addDetail("payload_size(kb)", Math.round(compressionAnalytics.uncompressed_byte_size / 1024));
   }
@@ -114,13 +114,13 @@ export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, 
   if (num2 == null) {
     num2 = 0;
   }
-  importDefault(10).addDetail("server_time(ms)", num2);
+  isTracingDefault.addDetail("server_time(ms)", num2);
   obj = {};
   const merged = Object.assign(compressionAnalytics);
   const merged1 = Object.assign(tmp);
   const guilds = data.guilds;
   importDefault = 0;
-  const dependencyMap = 0;
+  dependencyMap = 0;
   let item = guilds.forEach((unavailable) => {
     if (!unavailable.unavailable) {
       if ("partial" === unavailable.data_mode) {
@@ -131,7 +131,7 @@ export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, 
       if (tmp2) {
         const item = channels.forEach((type) => {
           closure_1 = closure_1 + 1;
-          if (type.type === outer1_8.GUILD_CATEGORY) {
+          if (type.type === closure_1_8.GUILD_CATEGORY) {
             closure_0 = closure_0 + 1;
           }
         });
@@ -235,18 +235,6 @@ export const getConnectionPath = function getConnectionPath(_trace) {
   }
 };
 export const getReadyPayloadByteSizeAnalytics = function getReadyPayloadByteSizeAnalytics(data) {
-  let experiments;
-  let guild_experiments;
-  let guilds;
-  let merged_members;
-  let merged_presences;
-  let private_channels;
-  let read_state;
-  let relationships;
-  let user_guild_settings;
-  let user_settings;
-  let user_settings_proto;
-  let users;
   if (Math.random() <= 0.01) {
     const _Date2 = Date;
     ({ guilds, merged_presences, merged_members, user_settings, user_settings_proto, experiments, guild_experiments } = data);
@@ -262,10 +250,6 @@ export const getReadyPayloadByteSizeAnalytics = function getReadyPayloadByteSize
     const items6 = [];
     const items7 = [];
     const item = guilds.forEach((unavailable) => {
-      let guild_scheduled_events;
-      let partial_updates;
-      let stickers;
-      let threads;
       partial_updates = unavailable;
       if (!unavailable.unavailable) {
         let properties = partial_updates.properties;
@@ -378,11 +362,8 @@ export const getReadyPayloadByteSizeAnalytics = function getReadyPayloadByteSize
   }
 };
 export const logGatewayConnected = function logGatewayConnected(gatewayUrl) {
-  let altGateway;
-  let now;
-  let socket;
   ({ socket, altGateway, now } = gatewayUrl);
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { num_failed_connect_attempts: socket.failedConnectAttempts, gateway_url: gatewayUrl.gatewayUrl, assigned_to_alt_gateway: altGateway.isAssignedToAltGateway(), did_fall_back_from_alt_gateway: altGateway.getDidFallBack(), is_reconnect: socket.hasConnectedOnce, is_fast_connect: socket.isFastConnect, duration_ms_since_first_connect_attempt: now - socket.firstConnectAttemptStartTime, duration_ms_since_connect_attempt_start: now - socket.connectionStartTime };
   obj.track(constants.GATEWAY_CONNECTED, obj, { logEventProperties: true });
 };
@@ -419,7 +400,7 @@ export const logResumeAnalytics = function logResumeAnalytics(resumeAnalytics) {
     obj[5] = Math.floor(resumeAnalytics.totalWaitTime);
     const _Math6 = Math;
     obj[6] = Math.floor(resumeAnalytics.dispatchTime);
-    importDefault(698).track(constants.CONNECTION_RESUMED, obj, { logEventProperties: true });
-    const obj2 = importDefault(698);
+    expandEventPropertiesDefault.track(constants.CONNECTION_RESUMED, obj, { logEventProperties: true });
+    const obj2 = expandEventPropertiesDefault;
   }
 };

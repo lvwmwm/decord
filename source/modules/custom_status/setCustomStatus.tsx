@@ -1,32 +1,32 @@
-// Module ID: 9295
-// Function ID: 9296
+// Module ID: 9332
+// Function ID: 9333
 // Name: setCustomStatus
-// Dependencies: [9292, 676, 4066, 3975, 9296, 698, 2]
+// Dependencies: [9329, 676, 4069, 3978, 9333, 698, 2]
 // Exports: default
 
-// Module 9295 (setCustomStatus)
-import { ClearAfterValues } from "StatusTypes";
-import { AnalyticEvents } from "ME";
+// Module 9332 (setCustomStatus)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import tDefault from "t" /* 3978 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import StatusTypes from "StatusTypes" /* 9329 */;
+import getClearAfterDurationDefault from "getClearAfterDuration" /* 9333 */;
 
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/custom_status/setCustomStatus.tsx");
+const ClearAfterValues = StatusTypes.ClearAfterValues;
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/custom_status/setCustomStatus.tsx");
 
 export default function setCustomStatus(arg0) {
-  let _prompt;
-  let analyticsContext;
-  let analyticsLocations;
-  let clearAfter;
-  let createdAtMs;
-  let emojiInfo;
-  let text;
   ({ text, emojiInfo, clearAfter, analyticsContext, createdAtMs, prompt: _prompt, analyticsLocations } = arg0);
   const trimmed = text.trim();
   if (trimmed.length <= 0) {
     if (null == emojiInfo) {
-      const CustomStatusSetting = require(4066) /* explicitContentFromProto */.CustomStatusSetting;
+      const CustomStatusSetting = explicitContentFromProto.CustomStatusSetting;
       return CustomStatusSetting.updateSetting(undefined);
     }
   }
-  const CustomStatusSetting2 = require(4066) /* explicitContentFromProto */.CustomStatusSetting;
+  const CustomStatusSetting2 = explicitContentFromProto.CustomStatusSetting;
   let str = "";
   if (trimmed.length > 0) {
     str = trimmed;
@@ -37,10 +37,10 @@ export default function setCustomStatus(arg0) {
     str2 = "0";
     if (clearAfter !== ClearAfterValues.DONT_CLEAR) {
       const _String = String;
-      const obj2 = importDefault(3975)();
-      const addResult = importDefault(3975)().add(importDefault(9296)(clearAfter), "ms");
-      str2 = String(importDefault(3975)().add(importDefault(9296)(clearAfter), "ms").toDate().getTime());
-      const toDateResult = importDefault(3975)().add(importDefault(9296)(clearAfter), "ms").toDate();
+      const obj2 = tDefault();
+      const addResult = tDefault().add(getClearAfterDurationDefault(clearAfter), "ms");
+      str2 = String(tDefault().add(getClearAfterDurationDefault(clearAfter), "ms").toDate().getTime());
+      const toDateResult = tDefault().add(getClearAfterDurationDefault(clearAfter), "ms").toDate();
     }
   }
   obj[1] = str2;
@@ -58,9 +58,9 @@ export default function setCustomStatus(arg0) {
   }
   obj[3] = str5;
   if (createdAtMs == null) {
-    const obj5 = importDefault(3975)();
-    createdAtMs = importDefault(3975)().toDate().getTime();
-    const toDateResult1 = importDefault(3975)().toDate();
+    const obj5 = tDefault();
+    createdAtMs = tDefault().toDate().getTime();
+    const toDateResult1 = tDefault().toDate();
   }
   obj[4] = String(createdAtMs);
   const updateSettingResult = CustomStatusSetting2.updateSetting(obj);
@@ -91,6 +91,6 @@ export default function setCustomStatus(arg0) {
   }
   obj[4] = value;
   obj[5] = analyticsLocations;
-  importDefault(698).track(AnalyticEvents.CUSTOM_STATUS_UPDATED, obj);
+  expandEventPropertiesDefault.track(AnalyticEvents.CUSTOM_STATUS_UPDATED, obj);
   return updateSettingResult;
 };

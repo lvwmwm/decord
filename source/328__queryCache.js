@@ -5,18 +5,22 @@
 // Exports: default
 
 // Module 328 (_queryCache)
-import resolveAssetSource from "resolveAssetSource";
-import "noop";
-import { use } from "noop";
-import { jsx } from "jsxProd";
-import set from "set";
+import noopAll from "noop" /* 19 */;
+import resolveAssetSourceDefault from "resolveAssetSource" /* 81 */;
+import get_hairlineWidthDefault from "get hairlineWidth" /* 254 */;
+import ImageLoaderDefault from "ImageLoader" /* 329 */;
+import getImageSourcesFromImageProps from "getImageSourcesFromImageProps" /* 331 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { use } from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import set from "set" /* 333 */;
 
-const require = arg1;
+require = arg1;
 function _queryCache() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c1 = 0;
     return (function*(arg0) {
       if (v0 === 2) {
         v0 = 3;
@@ -29,7 +33,7 @@ function _queryCache() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -43,9 +47,9 @@ function _queryCache() {
             obj[0] = arg1;
             return obj;
           } else {
-            obj = v0(outer1_2[3]);
+            obj = v0(closure_1_2[3]);
             v0 = 3;
-            const obj1 = { value: null, done: true };
+            obj1 = { value: null, done: true };
             obj1[0] = obj.queryCache(closure_0);
             return obj1;
           }
@@ -56,7 +60,7 @@ function _queryCache() {
       }
     })();
   });
-  const _queryCache = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -65,54 +69,20 @@ function _queryCache() {
   }
   return applyArgumentsResult;
 }
+noopAll;
 let c6 = 1;
-let closure_8 = { uri: "Array", width: "HermesInternal", height: "r" };
+let closure_8 = { uri: "getGuild", width: "call", height: "HTTP" };
 function _BaseImage(arg0) {
-  let accessibilityLabel;
-  let accessibilityLabelledBy;
-  let accessibilityState;
-  let accessible;
-  let alt;
-  let children;
-  let crossOrigin;
-  let defaultSource;
-  let headers;
-  let height;
-  let height2;
-  let height3;
-  let loadingIndicatorSource;
-  let onError;
-  let onLoad;
-  let onLoadEnd;
-  let onLoadStart;
-  let ref;
-  let referrerPolicy;
-  let resizeMode;
-  let source;
-  let src;
-  let srcSet;
-  let style;
-  let tmp;
-  let tmp2;
-  let tmp3;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let width;
-  let width2;
-  let width3;
   ({ alt, accessible, aria-labelledby: tmp, aria-busy: tmp2, aria-checked: tmp3, aria-disabled: tmp4, aria-expanded: tmp5, aria-label: tmp7, aria-selected: tmp8, accessibilityLabel, accessibilityLabelledBy, accessibilityState, defaultSource, loadingIndicatorSource, style, onLoadStart, onLoad, onLoadEnd, onError, width, height } = arg0);
   ({ ref, aria-hidden: tmp6, children, source, src, crossOrigin, referrerPolicy, srcSet, resizeMode } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(331) /* getImageSourcesFromImageProps */;
+  let obj = getImageSourcesFromImageProps;
   const arr = obj.getImageSourcesFromImageProps({ crossOrigin, referrerPolicy, src, srcSet, width, height, source }) || closure_8;
-  const tmp13 = importDefault(81)(defaultSource);
-  const tmp14 = importDefault(81)(loadingIndicatorSource);
+  const tmp13 = resolveAssetSourceDefault(defaultSource);
+  const tmp14 = resolveAssetSourceDefault(loadingIndicatorSource);
   if (null != children) {
     const _Error2 = Error;
-    const error = new Error("The <Image> component cannot contain children. If you want to render content on top of the image, consider using the <ImageBackground> component or absolute positioning.");
+    error = new Error("The <Image> component cannot contain children. If you want to render content on top of the image, consider using the <ImageBackground> component or absolute positioning.");
     throw error;
   } else {
     if (null != defaultSource) {
@@ -204,7 +174,7 @@ function _BaseImage(arg0) {
           busy = accessibilityState.busy;
         }
       }
-      const obj1 = { busy: null, checked: null, disabled: null, expanded: null, selected: null };
+      obj1 = { busy: null, checked: null, disabled: null, expanded: null, selected: null };
       obj1[0] = tmp2;
       if (tmp3 == null) {
         let checked;
@@ -279,9 +249,9 @@ if (null != set) {
 }
 resultResult.displayName = "Image";
 resultResult.getSize = function getSize(arg0, fn) {
-  let closure_0 = arg0;
-  const importDefault = fn;
-  const size = importDefault(329).getSize(arg0);
+  closure_0 = arg0;
+  importDefault = fn;
+  const size = ImageLoaderDefault.getSize(arg0);
   if (typeof fn !== "function") {
     return size;
   } else {
@@ -293,12 +263,12 @@ resultResult.getSize = function getSize(arg0, fn) {
     }
     size.then((width) => callback(width.width, width.height)).catch(fn);
   }
-  const obj = importDefault(329);
+  const obj = ImageLoaderDefault;
 };
 resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1, fn) {
-  let closure_0 = arg0;
-  const importDefault = fn;
-  const sizeWithHeaders = importDefault(329).getSizeWithHeaders(arg0, arg1);
+  closure_0 = arg0;
+  importDefault = fn;
+  const sizeWithHeaders = ImageLoaderDefault.getSizeWithHeaders(arg0, arg1);
   if (typeof fn !== "function") {
     return sizeWithHeaders;
   } else {
@@ -310,24 +280,24 @@ resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1, fn) {
     }
     sizeWithHeaders.then((width) => callback(width.width, width.height)).catch(fn);
   }
-  const obj = importDefault(329);
+  const obj = ImageLoaderDefault;
 };
 resultResult.prefetch = function prefetch(closure_0) {
-  let closure_6 = tmp + 1;
+  closure_6 = tmp + 1;
   if (arg1) {
     arg1(tmp);
   }
-  return importDefault(329).prefetchImage(closure_0, +closure_6);
+  return ImageLoaderDefault.prefetchImage(closure_0, +closure_6);
 };
 resultResult.prefetchWithMetadata = function prefetchWithMetadata(arg0, arg1, arg2, arg3) {
-  let closure_6 = tmp + 1;
+  closure_6 = tmp + 1;
   if (arg3) {
     arg3(tmp);
   }
-  return importDefault(329).prefetchImage(arg0, +closure_6);
+  return ImageLoaderDefault.prefetchImage(arg0, +closure_6);
 };
 resultResult.abortPrefetch = function abortPrefetch(_requestId) {
-  importDefault(329).abortRequest(_requestId);
+  ImageLoaderDefault.abortRequest(_requestId);
 };
 resultResult.queryCache = function queryCache(closure_0) {
   const self = this;
@@ -339,7 +309,7 @@ resultResult.queryCache = function queryCache(closure_0) {
   }
   return applyArgumentsResult;
 };
-resultResult.resolveAssetSource = require("resolveAssetSource");
-let closure_9 = require("get hairlineWidth").create({ base: { overflow: "hidden" } });
+resultResult.resolveAssetSource = resolveAssetSourceDefault;
+let closure_9 = get_hairlineWidthDefault.create({ base: { overflow: "hidden" } });
 
 export default resultResult;

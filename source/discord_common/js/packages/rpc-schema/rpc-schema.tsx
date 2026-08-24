@@ -1,17 +1,21 @@
-// Module ID: 13846
-// Function ID: 13847
-// Name: createRPCCommand
-// Dependencies: [13847, 13848, 2]
+// Module ID: 13909
+// Function ID: 13910
+// Name: CONTEXT_MENU_ICON_NAMES
+// Dependencies: [13910, 13911, 2, 13912]
 // Exports: createRPCCommand
 
-// Module 13846 (createRPCCommand)
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rpc-schema/rpc-schema.tsx");
+// Module 13909 (CONTEXT_MENU_ICON_NAMES)
+import set from "set" /* 2 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 13912 */;
 
+const result = set.fileFinishedImporting("../discord_common/js/packages/rpc-schema/rpc-schema.tsx");
+
+export const CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES.CONTEXT_MENU_ICON_NAMES;
 export const createRPCCommand = function createRPCCommand(AUTHENTICATE, scope) {
   let request;
-  let dependencyMap;
+  dependencyMap = undefined;
   let obj = { scope: scope.scope, handler: scope.handler };
-  const tmp = request(13847).RPCCommandSchemas[AUTHENTICATE];
+  const tmp = request(13910).RPCCommandSchemas[AUTHENTICATE];
   request = undefined;
   if (tmp != null) {
     request = tmp.request;

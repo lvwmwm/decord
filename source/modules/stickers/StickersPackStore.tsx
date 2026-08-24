@@ -1,14 +1,16 @@
-// Module ID: 6771
-// Function ID: 6772
+// Module ID: 6808
+// Function ID: 6809
 // Name: parseServerPackSticker
-// Dependencies: [32, 1432, 1911, 687, 4964, 2]
+// Dependencies: [32, 1432, 1911, 687, 4969, 2]
 
-// Module 6771 (parseServerPackSticker)
-import _slicedToArray from "_slicedToArray";
-import { TypeTag } from "TypeTag";
-import { LibdiscoreStore } from "identity";
+// Module 6808 (parseServerPackSticker)
+import setDefault from "set" /* 687 */;
+import StickerFormat from "StickerFormat" /* 4969 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import { TypeTag } from "TypeTag" /* 1432 */;
+import { LibdiscoreStore } from "identity" /* 1911 */;
 
-let require = arg1;
+require = arg1;
 function parseServerPackSticker(id) {
   const obj = { id: id.id, tags: id.tags, type: id.type, name: id.name, description: id.description, format_type: id.format_type, pack_id: id.pack_id };
   obj[TypeTag] = "PackSticker";
@@ -16,13 +18,13 @@ function parseServerPackSticker(id) {
 }
 function deriveStickerMetadata(name, name2) {
   const items = [];
-  let obj = { type: require(4964) /* StickerFormat */.StickerMetadataTypes.STICKER_NAME, value: null };
+  let obj = { type: StickerFormat.StickerMetadataTypes.STICKER_NAME, value: null };
   const trimmed = name.name.trim();
   obj[1] = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != name2) {
     obj = { type: null, value: null };
-    obj[0] = require(4964) /* StickerFormat */.StickerMetadataTypes.PACK_NAME;
+    obj[0] = StickerFormat.StickerMetadataTypes.PACK_NAME;
     obj[1] = name2.name;
     items.push(obj);
   }
@@ -45,7 +47,7 @@ function ingestStickerPack(item10017, packStickersDatabase, packsDatabase, premi
 }
 let c4 = false;
 let c5 = null;
-const HOUR = require("set").Millis.HOUR;
+const HOUR = setDefault.Millis.HOUR;
 class StickersPackStore extends LibdiscoreStore {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -68,8 +70,6 @@ class StickersPackStore extends LibdiscoreStore {
     });
     packStickersDatabase3 = applyArgumentsResult.packStickersDatabase;
     applyArgumentsResult.getStickerMetadataMap = packStickersDatabase3.memoized((obj) => {
-      let tmp4;
-      let tmp5;
       const map = new Map();
       for (const key10012 in arg0) {
         let tmp9 = key10012;
@@ -78,13 +78,13 @@ class StickersPackStore extends LibdiscoreStore {
         let tmp11 = entries;
         let tmp = entries;
         for (const item10014 of entries) {
-          let tmp2 = outer1_2;
-          let tmp3 = outer1_2(item10014, 2);
+          let tmp2 = closure_1_2;
+          let tmp3 = closure_1_2(item10014, 2);
           let tmp6 = applyArgumentsResult;
           let packsDatabase = applyArgumentsResult.packsDatabase;
           [tmp4, tmp5] = tmp3;
-          let tmp7 = outer1_8;
-          let result = map.set(tmp4, outer1_8(tmp5, packsDatabase.get(key10012)));
+          let tmp7 = closure_1_8;
+          let result = map.set(tmp4, closure_1_8(tmp5, packsDatabase.get(key10012)));
           continue;
         }
       }
@@ -146,9 +146,6 @@ const stickersPackStore = new StickersPackStore({
     clearAllDBs.clearAllDBs();
   },
   STICKER_PACK_FETCH_SUCCESS(pack) {
-    let packStickersDatabase;
-    let packsDatabase;
-    let premiumPacksDatabase;
     pack = pack.pack;
     ({ packStickersDatabase, packsDatabase, premiumPacksDatabase } = arg1);
     const result = packsDatabase.set(pack.id, pack);
@@ -165,17 +162,14 @@ const stickersPackStore = new StickersPackStore({
     })(pack.stickers));
   },
   STICKER_PACKS_FETCH_START(arg0, markDirty) {
-    let c4 = true;
+    c4 = true;
     markDirty.markDirty();
   },
   STICKER_PACKS_FETCH_SUCCESS(arg0, markDirty) {
-    let packStickersDatabase;
-    let packsDatabase;
-    let premiumPacksDatabase;
     ({ packStickersDatabase, packsDatabase, premiumPacksDatabase } = markDirty);
-    let c4 = false;
+    c4 = false;
     markDirty.markDirty();
-    let closure_5 = performance.now();
+    closure_5 = performance.now();
     for (const item10017 of tmp) {
       let tmp3 = ingestStickerPack;
       let num = 0;
@@ -196,6 +190,6 @@ const stickersPackStore = new StickersPackStore({
     packStickersDatabase.setRecord(sticker.pack_id, sticker.id, obj);
   }
 });
-let result = require("identity").fileFinishedImporting("modules/stickers/StickersPackStore.tsx");
+let result = require("set").fileFinishedImporting("modules/stickers/StickersPackStore.tsx");
 
 export default stickersPackStore;

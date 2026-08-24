@@ -1,13 +1,14 @@
-// Module ID: 7286
-// Function ID: 7287
-// Dependencies: [5, 4021, 676, 7287, 709, 2]
+// Module ID: 7324
+// Function ID: 7325
+// Dependencies: [5, 4024, 676, 7325, 709, 2]
 
-// Module 7286
-import set from "set";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "ME";
+// Module 7324
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "ME" /* 676 */;
 
-const result = require("ME").fileFinishedImporting("modules/guild_templates/GuildTemplateTooltipActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_templates/GuildTemplateTooltipActionCreators.tsx");
 
 export default {
   checkGuildTemplateDirty(closure_0) {
@@ -23,7 +24,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -38,9 +39,9 @@ export default {
               obj[0] = arg1;
               return obj;
             } else {
-              let obj1 = { guildId: null };
+              obj1 = { guildId: null };
               obj1[0] = v0;
-              if (outer1_3.canWithPartialContext(outer1_4.MANAGE_GUILD, obj1)) {
+              if (closure_1_3.canWithPartialContext(closure_1_4.MANAGE_GUILD, obj1)) {
                 obj1 = v0(table[3]);
                 table = 1;
                 v0 = 1;
@@ -60,7 +61,7 @@ export default {
             return obj;
           }
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp7) {
           v0 = tmp;
           throw tmp7;
@@ -69,11 +70,11 @@ export default {
     })();
   },
   hideGuildTemplateDirtyTooltip(guildId) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "GUILD_TEMPLATE_DIRTY_TOOLTIP_HIDE", guildId };
     obj.dispatch(obj);
   },
   hideGuildTemplatePromotionTooltip() {
-    importDefault(709).dispatch({ type: "GUILD_TEMPLATE_PROMOTION_TOOLTIP_HIDE" });
+    dispatcherDefault.dispatch({ type: "GUILD_TEMPLATE_PROMOTION_TOOLTIP_HIDE" });
   }
 };

@@ -1,18 +1,23 @@
-// Module ID: 9342
-// Function ID: 9343
+// Module ID: 9379
+// Function ID: 9380
 // Name: useExpressionPickerListWidth
-// Dependencies: [1338, 6951, 1494, 1629, 2]
+// Dependencies: [1338, 6989, 1494, 1629, 2]
 // Exports: default
 
-// Module 9342 (useExpressionPickerListWidth)
-import { PADDING_HORIZONTAL } from "ExpressionPickerViewType";
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
+// Module 9379 (useExpressionPickerListWidth)
+import set from "set" /* 2 */;
+import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1338 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
 
-const result = require("useWindowDimensions").fileFinishedImporting("modules/expression_picker/native/useExpressionPickerListWidth.native.tsx");
+const PADDING_HORIZONTAL = ExpressionPickerViewType.PADDING_HORIZONTAL;
+const ACTION_SHEET_MAX_WIDTH = ACTION_SHEET_START_HEIGHT_RATIO.ACTION_SHEET_MAX_WIDTH;
+const result = set.fileFinishedImporting("modules/expression_picker/native/useExpressionPickerListWidth.native.tsx");
 
 export default function useExpressionPickerListWidth(arg0) {
-  const rect = importDefault(1629)();
-  const diff = importDefault(1494)().width - rect.left - rect.right - 2 * PADDING_HORIZONTAL;
+  const rect = useSafeAreaInsetsDefault();
+  const diff = useWindowDimensionsDefault().width - rect.left - rect.right - 2 * PADDING_HORIZONTAL;
   let bound = diff;
   if (!arg0) {
     const _Math = Math;

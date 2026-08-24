@@ -1,14 +1,20 @@
-// Module ID: 14084
-// Function ID: 14085
-// Dependencies: [4196, 1377, 1379, 5260, 14085, 2007, 4342, 14086, 14088, 2]
+// Module ID: 14152
+// Function ID: 14153
+// Dependencies: [4200, 1377, 1379, 5265, 14153, 2008, 4346, 14154, 14156, 2]
 
-// Module 14084
+// Module 14152
+import set from "set" /* 2 */;
+import DismissibleContent from "DismissibleContent" /* 1377 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+
 const PASSKEY_UPSELL_KEY = "PASSKEY_UPSELL_KEY";
-let result = require("addVersionedDismissedContent").fileFinishedImporting("modules/webauthn/native/PasskeyUpsellActionCreators.tsx");
+let result = set.fileFinishedImporting("modules/webauthn/native/PasskeyUpsellActionCreators.tsx");
 
 export default {
   openPasskeyUpsell() {
-    if (!obj.UNSAFE_isDismissibleContentDismissed(require(1377) /* DismissibleContent */.DismissibleContent.PASSWORDLESS_UPSELL)) {
+    if (!obj.UNSAFE_isDismissibleContentDismissed(DismissibleContent.DismissibleContent.PASSWORDLESS_UPSELL)) {
       const self = this;
       const markDismissibleContentAsShown = tmp(1379).requestMarkDismissibleContentAsShown(tmp(1377).DismissibleContent.PASSWORDLESS_UPSELL);
       const result = this.openPasskeyUpsellPromoSheet();
@@ -16,18 +22,18 @@ export default {
     }
   },
   openPasskeyUpsellModal() {
-    importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(14085, dependencyMap.paths), undefined, PASSKEY_UPSELL_KEY);
+    _modDef5265.pushLazy(asyncRequireImpl(14153, dependencyMap.paths), undefined, PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellModal() {
-    importDefault(5260).popWithKey(PASSKEY_UPSELL_KEY);
+    _modDef5265.popWithKey(PASSKEY_UPSELL_KEY);
   },
   openPasskeyUpsellPromoSheet() {
-    importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(14086, dependencyMap.paths), PASSKEY_UPSELL_KEY);
+    ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(14154, dependencyMap.paths), PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellPromoSheet() {
-    importDefault(4342).hideActionSheet(PASSKEY_UPSELL_KEY);
+    ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet(PASSKEY_UPSELL_KEY);
   },
   openPasskeyUpsellPromoModal(closure_0) {
-    importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(14088, dependencyMap.paths), closure_0, PASSKEY_UPSELL_KEY);
+    _modDef5265.pushLazy(asyncRequireImpl(14156, dependencyMap.paths), closure_0, PASSKEY_UPSELL_KEY);
   }
 };

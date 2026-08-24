@@ -1,28 +1,28 @@
-// Module ID: 9735
-// Function ID: 9736
-// Dependencies: [1391, 4030, 1922, 676, 4975, 530, 698, 4827, 1236, 9736, 9730, 709, 2]
+// Module ID: 9774
+// Function ID: 9775
+// Dependencies: [1391, 4033, 1922, 676, 4980, 530, 698, 4832, 1236, 9775, 9769, 709, 2]
 
-// Module 9735
-import ensureGuildLoaded from "ensureGuildLoaded";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 9774
+import sendRequest from "sendRequest" /* 530 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import _modDef4980 from "module_4980" /* 4980 */;
+import useCanRingToGuildVoiceChannel from "useCanRingToGuildVoiceChannel" /* 9769 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "markAllUserIdListsStale" /* 4033 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
-({ Endpoints: closure_6, AnalyticEvents: error, ChannelTypesSets: metroImportAll, ChannelTypes: c9 } = ME);
-let result = require("mergeGuildAvatar").fileFinishedImporting("actions/CallActionCreators.tsx");
+require = arg1;
+({ Endpoints: closure_6, AnalyticEvents: error, ChannelTypesSets: closure_8, ChannelTypes: c9 } = ME);
+let result = require("set").fileFinishedImporting("actions/CallActionCreators.tsx");
 
 export default {
   call(id, c1) {
     let self = this;
     self = this;
-    const importDefault = id;
-    const dependencyMap = c1;
-    let ensureGuildLoaded = arg2;
+    importDefault = id;
+    dependencyMap = c1;
+    closure_3 = arg2;
     const blocked = arg3;
     const user = arg4;
     if (null != arg3) {
@@ -33,11 +33,11 @@ export default {
         obj[0] = self.CALL(id);
         const value = HTTP.get(obj);
         value.then((body) => {
-          let ringable = ensureGuildLoaded;
-          if (ensureGuildLoaded) {
+          let ringable = closure_3;
+          if (closure_3) {
             ringable = body.body.ringable;
           }
-          const voiceChannel = id(4975).selectVoiceChannel(id, dependencyMap);
+          const voiceChannel = id(4980).selectVoiceChannel(id, dependencyMap);
           if (ringable) {
             self.ring(tmp2);
           }
@@ -46,7 +46,7 @@ export default {
           }
         }, () => {
           let obj = id(698);
-          obj.track(outer1_7.OPEN_POPOUT, { type: "Not Friend", source: "Call" });
+          obj.track(closure_1_7.OPEN_POPOUT, { type: "Not Friend", source: "Call" });
           obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
           const intl = lib(1236).intl;
           obj[0] = intl.string(lib(1236).t.My50nf);
@@ -61,15 +61,15 @@ export default {
           const intl4 = tmp3(1236).intl;
           obj[3] = intl4.string(lib(1236).t.BddRzS);
           obj[4] = function onConfirm() {
-            let obj = outer1_1(outer1_2[9]);
-            obj = { userId: markAllUserIdListsStale, context: { location: "Call" } };
+            let obj = closure_1_1(closure_1_2[9]);
+            obj = { userId: closure_4, context: { location: "Call" } };
             obj.addRelationship(obj);
           };
-          id(4827).show(obj);
+          id(4832).show(obj);
         });
       }
     } else {
-      obj = importDefault(4975);
+      obj = _modDef4980;
       let voiceChannel = obj.selectVoiceChannel(id, c1);
       if (arg2) {
         self.ring(id);
@@ -82,7 +82,7 @@ export default {
   ring(channelId, items, gdm_invite) {
     channel = channel.getChannel(channelId);
     if (null != channel) {
-      let obj = require(9730) /* useCanRingToGuildVoiceChannel */;
+      let obj = useCanRingToGuildVoiceChannel;
       const CALLABLE = constants.CALLABLE;
       const result = obj.canRingUsersInChannel(channel);
       if (result) {
@@ -95,14 +95,14 @@ export default {
         obj[1] = obj;
         HTTP.post(obj);
         if (tmp14) {
-          let obj1 = { type: "GUILD_LOCAL_RING_START", ringing: null, guildId: null };
+          obj1 = { type: "GUILD_LOCAL_RING_START", ringing: null, guildId: null };
           obj1[1] = items;
           obj1[2] = channel.guild_id;
-          importDefault(709).dispatch(obj1);
-          const obj6 = importDefault(709);
+          dispatcherDefault.dispatch(obj1);
+          const obj6 = dispatcherDefault;
         }
       } else if (tmp7) {
-        obj1 = importDefault(709);
+        obj1 = dispatcherDefault;
         const obj2 = { type: "CALL_ENQUEUE_RING", channelId: null, recipients: null };
         obj2[1] = channelId;
         obj2[2] = items;
@@ -112,7 +112,7 @@ export default {
     }
   },
   stopRinging(channelId, items) {
-    const HTTP = require(530) /* sendRequest */.HTTP;
+    const HTTP = sendRequest.HTTP;
     obj = { url: closure_6.CALL_STOP_RINGING(channelId), body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { recipients: items };
     return HTTP.post(obj);

@@ -1,37 +1,35 @@
-// Module ID: 16812
-// Function ID: 16813
+// Module ID: 16905
+// Function ID: 16906
 // Name: GuildSettingsServerTagPickerCell
-// Dependencies: [19, 17, 21, 4661, 712, 4105, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4108, 2]
 // Exports: default
 
-// Module 16812 (GuildSettingsServerTagPickerCell)
-import "noop";
-import { Pressable } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16905 (GuildSettingsServerTagPickerCell)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4108 */;
+import { Pressable } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { cell: null, cellSelected: null };
-createCacheKey = { alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.md, borderWidth: 2, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, borderColor: require("Themes").colors.BORDER_MUTED };
+createCacheKey = { alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.md, borderWidth: 2, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE, borderColor: ThemesDefault.colors.BORDER_MUTED };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { borderColor: require("Themes").unsafe_rawColors.BRAND_500 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { borderColor: require("Themes").unsafe_rawColors.BRAND_500 };
-const result = require("jsxProd").fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagPickerCell.tsx");
+createCacheKey[1] = { borderColor: ThemesDefault.unsafe_rawColors.BRAND_500 };
+let closure_4 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderColor: ThemesDefault.unsafe_rawColors.BRAND_500 };
+const result = require("set").fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagPickerCell.tsx");
 
 export default function GuildSettingsServerTagPickerCell(accessibilityLabel) {
-  let accessibilityRole;
-  let children;
-  let onPress;
-  let selected;
-  let size;
   ({ size, selected, accessibilityRole } = accessibilityLabel);
   if (accessibilityRole === undefined) {
     accessibilityRole = "radio";
   }
   ({ onPress, children } = accessibilityLabel);
-  const tmp = createCacheKey();
-  let obj = require(4105) /* useCheckboxA11yNative */;
+  const tmp = callback();
+  let obj = useCheckboxA11yNative;
   let radioA11yNative = obj.useRadioA11yNative({ selected });
   if ("button" === accessibilityRole) {
     obj = { accessibilityRole: "button", accessibilityState: null };
@@ -40,7 +38,7 @@ export default function GuildSettingsServerTagPickerCell(accessibilityLabel) {
     obj[1] = obj;
     radioA11yNative = obj;
   }
-  const obj1 = { accessibilityRole: radioA11yNative.accessibilityRole, accessibilityState: radioA11yNative.accessibilityState, accessibilityLabel: accessibilityLabel.accessibilityLabel, onPress, style: null, children: null };
+  obj1 = { accessibilityRole: radioA11yNative.accessibilityRole, accessibilityState: radioA11yNative.accessibilityState, accessibilityLabel: accessibilityLabel.accessibilityLabel, onPress, style: null, children: null };
   const items = [tmp.cell, , ];
   if (selected) {
     selected = tmp.cellSelected;

@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 490 (ToastAndroid)
+import getAll from "get" /* 30 */;
 
-export default require("get").getEnforcing("ToastAndroid");
+
+export default getAll.getEnforcing("ToastAndroid");

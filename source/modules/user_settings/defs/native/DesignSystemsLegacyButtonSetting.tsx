@@ -1,25 +1,28 @@
-// Module ID: 14902
-// Function ID: 14903
+// Module ID: 14966
+// Function ID: 14967
 // Name: route
-// Dependencies: [8198, 676, 10669, 14903, 2]
+// Dependencies: [8238, 676, 10708, 14967, 2]
 
-// Module 14902 (route)
-import createToggle from "createToggle";
+// Module 14966 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
     return "Legacy Button";
   },
-  parent: require("MobileUserSettings").MobileUserSettings.DESIGN_SYSTEMS,
+  parent: MobileUserSettings.MobileUserSettings.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_LEGACY_BUTTON,
+  route: ME.UserSettingsSections.DESIGN_SYSTEM_LEGACY_BUTTON,
   getComponent() {
-    return require(14903) /* ComparisonRow */.default;
+    return require(14967) /* ComparisonRow */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsLegacyButtonSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsLegacyButtonSetting.tsx");
 
 export default route;

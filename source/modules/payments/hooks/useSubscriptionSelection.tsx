@@ -1,18 +1,16 @@
-// Module ID: 9586
-// Function ID: 9587
+// Module ID: 9623
+// Function ID: 9624
 // Name: useSubscriptionSelection
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 9586 (useSubscriptionSelection)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 9623 (useSubscriptionSelection)
+import closure_0 from "_slicedToArray" /* 32 */;
+import closure_1 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/payments/hooks/useSubscriptionSelection.tsx");
 
 export default function useSubscriptionSelection() {
-  let tmp2;
-  let tmp3;
   [tmp2, tmp3] = callback(React.useState(undefined), 2);
   const tmp4 = callback(React.useState(undefined), 2);
   return { selectedSkuId: tmp2, setSelectedSkuId: tmp3, selectedPlanId: tmp4[0], setSelectedPlanId: tmp4[1] };

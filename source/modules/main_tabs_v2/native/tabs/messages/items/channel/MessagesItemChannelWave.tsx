@@ -1,29 +1,32 @@
-// Module ID: 15304
-// Function ID: 15305
-// Dependencies: [19, 21, 4745, 1236, 4734, 2]
+// Module ID: 15368
+// Function ID: 15369
+// Dependencies: [19, 21, 4750, 1236, 4739, 2]
 
-// Module 15304
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 15368
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-const memoResult = require("noop").memo(function MessagesItemChannelWave(hasNameplate) {
+require = arg1;
+const memoResult = importAllResult.memo(function MessagesItemChannelWave(hasNameplate) {
   let flag = hasNameplate.hasNameplate;
   if (flag === undefined) {
     flag = false;
   }
   const obj = { text: null, icon: null, variant: null, size: "sm", onPress: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.n8nU4W);
-  obj[1] = jsx(require(4734) /* Text */.Text, { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" });
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.n8nU4W);
+  obj[1] = jsx(Text.Text, { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" });
   let str = "secondary";
   if (flag) {
     str = "secondary-overlay";
   }
   obj[2] = str;
   obj[4] = hasNameplate.wavePressed;
-  return jsx(require(4745) /* Button */.Button, { text: null, icon: null, variant: null, size: "sm", onPress: null });
+  return jsx(Button.Button, { text: null, icon: null, variant: null, size: "sm", onPress: null });
 });
-const result = require("Button").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelWave.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelWave.tsx");
 
 export default memoResult;

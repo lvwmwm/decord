@@ -1,19 +1,20 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 14266
+// Function ID: 14267
 // Name: setFindYourFriendsDeletionIsLoading
-// Dependencies: [5, 17, 8198, 21, 700, 705, 4006, 11853, 585, 4094, 10669, 14199, 2]
+// Dependencies: [5, 17, 8238, 21, 700, 705, 4009, 11902, 585, 4097, 10708, 14267, 2]
 
-// Module 14198 (setFindYourFriendsDeletionIsLoading)
-import batchUpdates from "batchUpdates";
-import { ActivityIndicator } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import identity from "identity";
-import createToggle from "createToggle";
+// Module 14266 (setFindYourFriendsDeletionIsLoading)
+import isIterable from "isIterable" /* 4009 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import identity from "identity" /* 700 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 function setFindYourFriendsDeletionIsLoading(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => outer1_6.setState({ isLoading: closure_0 }));
+  _require(705).batchUpdates(() => closure_1_6.setState({ isLoading: closure_0 }));
 }
 function _onFindYourFriendsDeletionPress() {
   const self = this;
@@ -29,7 +30,7 @@ function _onFindYourFriendsDeletionPress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -52,12 +53,12 @@ function _onFindYourFriendsDeletionPress() {
             })()) {
               c5 = 3;
             } else {
-              outer1_7(true);
-              let c3 = 2;
+              closure_1_7(true);
+              c3 = 2;
               c4 = 3;
               c5 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(outer1_2[7]).adminDeleteContactSync();
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_0(closure_1_2[7]).adminDeleteContactSync();
               return obj1;
             }
           }
@@ -68,7 +69,7 @@ function _onFindYourFriendsDeletionPress() {
             const aPIError = new callback(585).APIError(callback2);
             callback = aPIError.getAnyErrorMessage();
             if (null != callback) {
-              let obj2 = callback2(4094);
+              let obj2 = callback2(4097);
               obj2 = { key: "FIND_YOUR_FRIENDS_DELETION", content: null };
               obj2[1] = callback;
               obj2.open(obj2);
@@ -105,7 +106,7 @@ function _onFindYourFriendsDeletionPress() {
       }
     }
   });
-  const _onFindYourFriendsDeletionPress = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -121,7 +122,7 @@ identity = {
   },
   parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return callback2((isLoading) => isLoading.isLoading, require(4006) /* isIterable */.shallow);
+    return callback2((isLoading) => isLoading.isLoading, isIterable.shallow);
   },
   onPress: function onFindYourFriendsDeletionPress() {
     const self = this;
@@ -136,13 +137,13 @@ identity = {
   usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
-    if (callback2((isLoading) => isLoading.isLoading, require(4006) /* isIterable */.shallow)) {
+    if (callback2((isLoading) => isLoading.isLoading, isIterable.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;
   }
 };
 identity = createToggle.createPressable(identity);
-const result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/StaffOnlyFindYourFriendsDeletionSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/StaffOnlyFindYourFriendsDeletionSetting.tsx");
 
 export default identity;

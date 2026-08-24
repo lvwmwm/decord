@@ -1,40 +1,40 @@
-// Module ID: 11485
-// Function ID: 11486
+// Module ID: 11534
+// Function ID: 11535
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 1910, 4021, 5078, 11479, 676, 589, 4761, 11483, 2]
+// Dependencies: [5, 32, 19, 1910, 4024, 5083, 11528, 676, 589, 4766, 11532, 2]
 // Exports: default
 
-// Module 11485 (useAvailableAndAddedGuilds)
-import insertUnsortedGuilds from "insertUnsortedGuilds";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import closure_9 from "insertUnsortedGuilds";
-import isFetching from "isFetching";
-import { Permissions } from "ME";
+// Module 11534 (useAvailableAndAddedGuilds)
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "_slicedToArray" /* 32 */;
+import closure_6 from "noop" /* 19 */;
+import closure_7 from "createGuildRecordFromRust" /* 1910 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_9 from "insertUnsortedGuilds" /* 5083 */;
+import closure_10 from "isFetching" /* 11528 */;
+import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("noop").fileFinishedImporting("modules/directory_channels/useAvailableAndAddedGuilds.tsx");
+const result = require("set").fileFinishedImporting("modules/directory_channels/useAvailableAndAddedGuilds.tsx");
 
 export default function useAvailableAndAddedGuilds(arg0, arg1) {
   const _require = arg0;
-  const importDefault = arg1;
+  importDefault = arg1;
   const tmp = callback(React.useState(false), 2);
-  let closure_2 = tmp[1];
+  closure_2 = tmp[1];
   let obj = _require(stateFromStores[8]);
-  let items = [isFetching];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_10.getAdminGuildEntryIds(closure_1));
-  const items1 = [closure_9, createGuildRecordFromRust, getUncachedChannelPermissions];
+  let items = [closure_10];
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_10.getAdminGuildEntryIds(closure_1));
+  const items1 = [closure_9, closure_7, closure_8];
   const items2 = [arg0];
   const stateFromStoresArray = _require(stateFromStores[8]).useStateFromStoresArray(items1, () => {
-    const flattenedGuildIds = outer1_9.getFlattenedGuildIds();
+    const flattenedGuildIds = closure_1_9.getFlattenedGuildIds();
     const items = [];
     const item = flattenedGuildIds.forEach((arg0) => {
-      const guild = outer2_7.getGuild(arg0);
+      const guild = closure_2_7.getGuild(arg0);
       let canResult = null != guild;
       if (canResult) {
-        canResult = outer2_8.can(outer2_11.ADMINISTRATOR, guild);
+        canResult = closure_2_8.can(closure_2_11.ADMINISTRATOR, guild);
       }
       if (canResult) {
         canResult = guild.id !== items;
@@ -58,7 +58,7 @@ export default function useAvailableAndAddedGuilds(arg0, arg1) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -73,13 +73,13 @@ export default function useAvailableAndAddedGuilds(arg0, arg1) {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_0 = tmp2;
+              closure_0 = tmp2;
               v0(true);
-              let obj1 = v0(outer1_3[10]);
+              obj1 = v0(closure_1_3[10]);
               c1 = 1;
               v0 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = obj1.fetchGuildEntriesForIds(c1, outer1_4.map((id) => id.id));
+              obj1[0] = obj1.fetchGuildEntriesForIds(c1, closure_1_4.map((id) => id.id));
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -93,7 +93,7 @@ export default function useAvailableAndAddedGuilds(arg0, arg1) {
           } else {
             v0(false);
             v0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           v0 = tmp;

@@ -1,19 +1,17 @@
-// Module ID: 8907
-// Function ID: 8908
+// Module ID: 8944
+// Function ID: 8945
 // Name: createStageChannelForEvent
-// Dependencies: [5, 1395, 1391, 1910, 1397, 676, 8848, 38, 8067, 8783, 2]
+// Dependencies: [5, 1395, 1391, 1910, 1397, 676, 8885, 38, 8106, 8820, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8907 (createStageChannelForEvent)
-import ME from "ME";
-import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
-import { ChannelTypes } from "ME";
+// Module 8944 (createStageChannelForEvent)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { createChannelRecordFromServer as closure_4 } from "createChannelRecord" /* 1395 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
+import { ChannelTypes } from "ME" /* 676 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
 function createStageChannelForEvent(guild, name, arg2) {
   const self = this;
@@ -28,11 +26,11 @@ function createStageChannelForEvent(guild, name, arg2) {
 function _createStageChannelForEvent() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c5 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c5 = 0;
+    c6 = 0;
     const iter = (function*(arg0, arg1) {
       if (c6 === 2) {
         c6 = 3;
@@ -45,7 +43,7 @@ function _createStageChannelForEvent() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -78,7 +76,7 @@ function _createStageChannelForEvent() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -117,7 +115,7 @@ function _createStageChannelForEvent() {
               }
             }
             const _Error = Error;
-            const error = new Error("Can't create channel for event");
+            error = new Error("Can't create channel for event");
             throw error;
           }
         } catch (tmp22) {
@@ -129,7 +127,7 @@ function _createStageChannelForEvent() {
     iter.next();
     return iter;
   });
-  const _createStageChannelForEvent = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -155,10 +153,10 @@ function findOrCreateEventChannel(guild_id) {
 function _preStartEventActions() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (c5 === 2) {
         c5 = 3;
@@ -171,7 +169,7 @@ function _preStartEventActions() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -186,14 +184,14 @@ function _preStartEventActions() {
               obj[0] = arg1;
               return obj;
             } else {
-              let ME = tmp5;
+              closure_3 = tmp5;
               const table = tmp2;
               let entity_type;
-              if (entity_type.entity_type === outer1_7.STAGE_INSTANCE) {
+              if (entity_type.entity_type === closure_1_7.STAGE_INSTANCE) {
                 c4 = 1;
                 c5 = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = outer1_12(tmp13, tmp14);
+                obj1 = { value: null, done: false };
+                obj1[0] = closure_1_12(tmp13, tmp14);
                 return obj1;
               } else {
                 c5 = 3;
@@ -217,7 +215,7 @@ function _preStartEventActions() {
       }
     })();
   });
-  const _preStartEventActions = tmp;
+  closure_13 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -229,10 +227,10 @@ function _preStartEventActions() {
 function _setEventAsActive() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     const iter = (function*(arg0) {
       if (id === 2) {
         id = 3;
@@ -245,7 +243,7 @@ function _setEventAsActive() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -282,7 +280,7 @@ function _setEventAsActive() {
                 throw arg1;
               } else if (arg0 === 2) {
                 id = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -346,7 +344,7 @@ function _setEventAsActive() {
               return obj;
             }
             id = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp41) {
           id = tmp;
@@ -357,7 +355,7 @@ function _setEventAsActive() {
     iter.next();
     return iter;
   });
-  const _setEventAsActive = tmp;
+  closure_14 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -366,8 +364,8 @@ function _setEventAsActive() {
   }
   return applyArgumentsResult;
 }
-({ GuildScheduledEventEntityTypes: error, GuildScheduledEventPrivacyLevel: metroImportAll } = GUILD_EVENT_MAX_NAME_LENGTH);
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/guild_scheduled_events/StartEventUtils.tsx");
+({ GuildScheduledEventEntityTypes: error, GuildScheduledEventPrivacyLevel: closure_8 } = GUILD_EVENT_MAX_NAME_LENGTH);
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/StartEventUtils.tsx");
 
 export { createStageChannelForEvent };
 export { findOrCreateEventChannel };

@@ -1,16 +1,17 @@
-// Module ID: 16690
-// Function ID: 16691
+// Module ID: 16786
+// Function ID: 16787
 // Name: prototype
-// Dependencies: [11585, 1922, 4219, 5038, 11579, 2]
+// Dependencies: [11634, 1922, 4223, 5043, 11628, 2]
 
-// Module 16690 (prototype)
-import initialize from "initialize";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import "initialize";
+// Module 16786 (prototype)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_2 from "initialize" /* 11634 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
+initializeDefault;
 let prototype = function PushNotificationCacheManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const importDefault = applyArgumentsResult;
+  importDefault = applyArgumentsResult;
   applyArgumentsResult.actions = {
     POST_CONNECTION_OPEN() {
       return applyArgumentsResult.handleUserUpdate();
@@ -22,21 +23,21 @@ let prototype = function PushNotificationCacheManager() {
       return applyArgumentsResult.handleLogout();
     }
   };
-  const items = [initialize, () => applyArgumentsResult.syncMultiAccountUsers()];
+  const items = [closure_2, () => applyArgumentsResult.syncMultiAccountUsers()];
   const items1 = [items];
   applyArgumentsResult.stores = new Map(items1);
   applyArgumentsResult.handleUserUpdate = function handleUserUpdate() {
     currentUser = currentUser.getCurrentUser();
     if (null != currentUser) {
-      applyArgumentsResult(11579).setCurrentUser(currentUser.username, currentUser.id);
-      const obj2 = applyArgumentsResult(11579);
+      applyArgumentsResult(11628).setCurrentUser(currentUser.username, currentUser.id);
+      const obj2 = applyArgumentsResult(11628);
     } else {
-      applyArgumentsResult(11579).setCurrentUser(null, null);
-      const obj = applyArgumentsResult(11579);
+      applyArgumentsResult(11628).setCurrentUser(null, null);
+      const obj = applyArgumentsResult(11628);
     }
   };
   applyArgumentsResult.syncMultiAccountUsers = function syncMultiAccountUsers() {
-    obj = obj(11579);
+    obj = obj(11628);
     obj = undefined;
     if (obj.canUseMultiAccountNotifications) {
       const validUsers = obj.getValidUsers();
@@ -45,7 +46,7 @@ let prototype = function PushNotificationCacheManager() {
       } else {
         obj = {};
         const item = validUsers.forEach((id) => {
-          obj = obj(outer1_1[2]);
+          obj = obj(closure_1_1[2]);
           obj[id.id] = obj.getUserTag(id, { identifiable: "always" });
         });
       }
@@ -55,7 +56,7 @@ let prototype = function PushNotificationCacheManager() {
     obj.setMultiAccountUsers(obj);
   };
   applyArgumentsResult.handleLogout = function handleLogout() {
-    const result = applyArgumentsResult(outer1_1[4]).clearPushNotificationLogs();
+    const result = applyArgumentsResult(closure_1_1[4]).clearPushNotificationLogs();
     applyArgumentsResult.handleUserUpdate();
   };
   return applyArgumentsResult;
@@ -63,6 +64,6 @@ let prototype = function PushNotificationCacheManager() {
 class prototype extends tmp2 {
 }
 prototype = new prototype();
-let result = require("nameFromUser").fileFinishedImporting("modules/push_notifications/native/PushNotificationCacheManager.tsx");
+let result = require("set").fileFinishedImporting("modules/push_notifications/native/PushNotificationCacheManager.tsx");
 
 export default prototype;

@@ -1,62 +1,65 @@
-// Module ID: 16103
-// Function ID: 16104
+// Module ID: 16201
+// Function ID: 16202
 // Name: getPendingSource
-// Dependencies: [19, 17, 21, 7907, 16104, 16105, 16106, 1363, 2]
+// Dependencies: [19, 17, 21, 7946, 16202, 16203, 16204, 1363, 2]
 // Exports: Pending, getPendingSource, usePendingSource
 
-// Module 16103 (getPendingSource)
-import "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 16201 (getPendingSource)
+import noopAll from "noop" /* 19 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Pending.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Pending.tsx");
 
 export const getPendingSource = function getPendingSource(theme) {
-  let obj = require(7907) /* getIllustrationSource */;
+  let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(16104);
+      return callback(16202);
     },
     darker() {
-      return callback(16105);
+      return callback(16203);
     },
     light() {
-      return callback(16106);
+      return callback(16204);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const usePendingSource = function usePendingSource() {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16104);
+      return callback(16202);
     },
     darker() {
-      return callback(16105);
+      return callback(16203);
     },
     light() {
-      return callback(16106);
+      return callback(16204);
     }
   };
-  return require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const Pending = function Pending(arg0) {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16104);
+      return callback(16202);
     },
     darker() {
-      return callback(16105);
+      return callback(16203);
     },
     light() {
-      return callback(16106);
+      return callback(16204);
     }
   };
   obj = {};
-  const illustrationSource = require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

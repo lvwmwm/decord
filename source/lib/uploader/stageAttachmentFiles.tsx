@@ -1,22 +1,22 @@
-// Module ID: 7586
-// Function ID: 7587
+// Module ID: 7624
+// Function ID: 7625
 // Name: _stageAttachmentFiles
-// Dependencies: [5, 676, 4828, 2]
+// Dependencies: [5, 676, 4833, 2]
 // Exports: default
 
-// Module 7586 (_stageAttachmentFiles)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import { AbortCodes } from "ME";
+// Module 7624 (_stageAttachmentFiles)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { AbortCodes } from "ME" /* 676 */;
 
 const require = arg1;
 function _stageAttachmentFiles() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let asyncGeneratorStep = arg2;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c4 = 0;
+    c5 = 0;
     const iter = (function*(arg0) {
       if (c5 === 2) {
         c5 = 3;
@@ -29,7 +29,7 @@ function _stageAttachmentFiles() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -44,9 +44,9 @@ function _stageAttachmentFiles() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_3 = tmp2;
+              closure_3 = tmp2;
               let flag;
-              let asyncGeneratorStep;
+              closure_2 = undefined;
               if (flag === undefined) {
                 flag = false;
               }
@@ -61,28 +61,28 @@ function _stageAttachmentFiles() {
               throw arg1;
             } else if (arg0 === 2) {
               c5 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
               closure_3 = closure_0.map((arg0) => {
-                let closure_0 = arg0;
+                closure_0 = arg0;
                 return new Promise((arg0, arg1) => {
                   const lib = arg0;
-                  let closure_1 = arg1;
+                  closure_1 = arg1;
                   const status = lib.status;
                   if (lib(flag[2]).CloudUploadStatus.NOT_STARTED === status) {
                     obj.upload();
                   } else if (tmp(tmp2[2]).CloudUploadStatus.COMPLETED === status) {
                     arg0("complete");
                   } else if (tmp(tmp2[2]).CloudUploadStatus.ERROR === status) {
-                    if (outer1_1) {
+                    if (closure_1_1) {
                       if (obj.error !== constants.ENTITY_TOO_LARGE) {
                         obj.upload();
                       }
                     }
                     const _Error2 = Error;
-                    let error = new Error("File failed to upload");
+                    error = new Error("File failed to upload");
                     arg1(error);
                   } else if (tmp(tmp2[2]).CloudUploadStatus.CANCELED === status) {
                     const _Error = Error;
@@ -114,7 +114,7 @@ function _stageAttachmentFiles() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c5 = tmp;
@@ -125,7 +125,7 @@ function _stageAttachmentFiles() {
     iter.next();
     return iter;
   });
-  const _stageAttachmentFiles = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);

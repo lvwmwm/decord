@@ -1,19 +1,22 @@
-// Module ID: 10675
-// Function ID: 10676
+// Module ID: 10714
+// Function ID: 10715
 // Name: markChannelInvited
 // Dependencies: [709, 2]
 // Exports: dismissSession, markChannelInvited
 
-// Module 10675 (markChannelInvited)
-const result = require("set").fileFinishedImporting("modules/activities/stores/RichPresenceInviteBarActionCreators.tsx");
+// Module 10714 (markChannelInvited)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/activities/stores/RichPresenceInviteBarActionCreators.tsx");
 
 export const markChannelInvited = function markChannelInvited(activitySessionKey, id) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "RICH_PRESENCE_INVITE_BAR_CHANNEL_INVITED", sessionKey: activitySessionKey, channelId: id };
   obj.dispatch(obj);
 };
 export const dismissSession = function dismissSession(sessionKey) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "RICH_PRESENCE_INVITE_BAR_SESSION_DISMISSED", sessionKey };
   obj.dispatch(obj);
 };

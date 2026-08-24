@@ -4,15 +4,15 @@
 // Dependencies: [1026]
 
 // Module 1029 (feedbackSyncIntegration)
-import mergeOptions from "mergeOptions";
+import mergeOptions from "mergeOptions" /* 1026 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const feedbackSyncIntegration = mergeOptions.buildFeedbackIntegration({
   getModalIntegration() {
-    return require(1026) /* mergeOptions */.feedbackModalIntegration;
+    return mergeOptions.feedbackModalIntegration;
   },
   getScreenshotIntegration() {
-    return require(1026) /* mergeOptions */.feedbackScreenshotIntegration;
+    return mergeOptions.feedbackScreenshotIntegration;
   }
 });

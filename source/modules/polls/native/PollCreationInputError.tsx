@@ -1,28 +1,27 @@
-// Module ID: 11391
-// Function ID: 11392
+// Module ID: 11442
+// Function ID: 11443
 // Name: PollCreationInputError
-// Dependencies: [19, 17, 21, 4661, 712, 1351, 1297, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1351, 1297, 4739, 2]
 // Exports: default
 
-// Module 11391 (PollCreationInputError)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11442 (PollCreationInputError)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_2 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: { flexDirection: "row", alignItems: "center", marginTop: -10 }, icon: null };
-createCacheKey = { alignSelf: "center", marginRight: 5, color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
+createCacheKey = { alignSelf: "center", marginRight: 5, color: ThemesDefault.colors.TEXT_FEEDBACK_CRITICAL };
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/polls/native/PollCreationInputError.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/polls/native/PollCreationInputError.tsx");
 
 export default function PollCreationInputError(message) {
   message = message.message;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const items = [message];
   const effect = React.useEffect(() => {
     let tmp2 = null != message;
@@ -30,13 +29,13 @@ export default function PollCreationInputError(message) {
       tmp2 = "" !== tmp;
     }
     if (tmp2) {
-      const AccessibilityAnnouncer = message(outer1_1[5]).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = message(closure_1_1[5]).AccessibilityAnnouncer;
       AccessibilityAnnouncer.announce(tmp);
     }
   }, items);
   let obj = { style: tmp.container, children: null };
   obj = { width: 16, height: 16, style: tmp.icon };
-  const items1 = [callback(message(1297).WarningCircle, obj), callback(message(4734).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
+  const items1 = [callback(message(1297).WarningCircle, obj), callback(message(4739).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
   obj[1] = items1;
   return callback2(View, obj);
 };

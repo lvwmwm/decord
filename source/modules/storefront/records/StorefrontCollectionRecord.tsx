@@ -1,12 +1,12 @@
-// Module ID: 5327
-// Function ID: 5328
+// Module ID: 5332
+// Function ID: 5333
 // Name: fromServer
-// Dependencies: [5328, 5314, 5329, 2]
+// Dependencies: [5333, 5319, 5334, 2]
 
-// Module 5327 (fromServer)
-import fromServer from "fromServer";
-import { AssetDisplayConfigRecord } from "fromServer";
-import closure_2 from "fromServer";
+// Module 5332 (fromServer)
+import closure_0 from "fromServer" /* 5333 */;
+import { AssetDisplayConfigRecord } from "fromServer" /* 5319 */;
+import closure_2 from "fromServer" /* 5334 */;
 
 let prototype;
 prototype = function StorefrontCollectionRecord(arg0) {
@@ -14,12 +14,6 @@ prototype = function StorefrontCollectionRecord(arg0) {
   return Object.create(new.target.prototype);
 }.prototype;
 prototype["fromServer"] = function fromServer(arg0) {
-  let application_id;
-  let created_at;
-  let tenant_metadata;
-  let unpublish_settings;
-  let unpublished_at;
-  let updated_at;
   ({ created_at, updated_at, unpublished_at, unpublish_settings } = arg0);
   ({ application_id, tenant_metadata } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
@@ -54,7 +48,7 @@ prototype["fromServer"] = function fromServer(arg0) {
   obj.willUnpublishAt = date3;
   let fromServerResult;
   if (null != collectibles.styles) {
-    fromServerResult = fromServer.fromServer(collectibles.styles);
+    fromServerResult = closure_0.fromServer(collectibles.styles);
   }
   obj.styles = fromServerResult;
   ({ banner_text_color: obj2.bannerTextColor, hero_ranking: obj2.heroRanking } = collectibles);
@@ -71,6 +65,6 @@ prototype["fromServer"] = function fromServer(arg0) {
   ({ hero_url: obj2.heroUrl, hero_rive_url: obj2.heroRiveUrl, hero_animated_url: obj2.heroAnimatedUrl, hero_logo_url: obj2.heroLogoUrl, hero_banner_url: obj2.heroBannerUrl, hero_banner_animated_url: obj2.heroBannerAnimatedUrl, catalog_banner_url: obj2.catalogBannerUrl, catalog_banner_rive_url: obj2.catalogBannerRiveUrl, catalog_banner_animated_url: obj2.catalogBannerAnimatedUrl, featured_block_url: obj2.featuredBlockUrl, logo_url: obj2.logoUrl, pdp_bg_url: obj2.pdpBgUrl, wide_banner_url: obj2.wideBannerUrl, wide_banner_animated_url: obj2.wideBannerAnimatedUrl, mobile_hero_url: obj2.mobileHeroUrl, mobile_hero_animated_url: obj2.mobileHeroAnimatedUrl, mobile_banner_url: obj2.mobileBannerUrl, mobile_bg_url: obj2.mobileBgUrl, shop_button_bg_hover_url: obj2.shopButtonBgHoverUrl, upsell_banner_popout_url: obj2.upsellBannerPopoutUrl, upsell_banner_url: obj2.upsellBannerUrl, hero_block_title: obj2.heroBlockTitle, featured_block_body: obj2.featuredBlockBody, mobile_hero_block_title: obj2.mobileHeroBlockTitle, mobile_products_title: obj2.mobileProductsTitle, mobile_summary: obj2.mobileSummary, wide_banner_title: obj2.wideBannerTitle, wide_banner_body: obj2.wideBannerBody } = collectibles);
   return new tmp2(obj);
 };
-const result = require("fromServer").fileFinishedImporting("modules/storefront/records/StorefrontCollectionRecord.tsx");
+const result = require("set").fileFinishedImporting("modules/storefront/records/StorefrontCollectionRecord.tsx");
 
 export default prototype;

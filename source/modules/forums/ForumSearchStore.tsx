@@ -1,29 +1,31 @@
-// Module ID: 7515
-// Function ID: 7516
+// Module ID: 7553
+// Function ID: 7554
 // Name: initialize
 // Dependencies: [1391, 589, 709, 2]
 
-// Module 7515 (initialize)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { Store } from "initialize";
+// Module 7553 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "ensureGuildLoaded" /* 1391 */;
 
 let closure_1 = {};
+const Store = initializeDefault.Store;
 class ForumSearchStore extends Store {
 }
 const prototype = ForumSearchStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded);
+  this.waitFor(closure_0);
 };
-prototype["getSearchQuery"] = function getSearchQuery(ensureGuildLoaded) {
+prototype["getSearchQuery"] = function getSearchQuery(closure_0) {
   let query;
-  if (dependencyMap[ensureGuildLoaded] != null) {
+  if (dependencyMap[closure_0] != null) {
     query = tmp.query;
   }
   return query;
 };
-prototype["getSearchLoading"] = function getSearchLoading(ensureGuildLoaded) {
+prototype["getSearchLoading"] = function getSearchLoading(closure_0) {
   let flag;
-  if (dependencyMap[ensureGuildLoaded] != null) {
+  if (dependencyMap[closure_0] != null) {
     flag = tmp.loading;
   }
   if (flag == null) {
@@ -50,9 +52,9 @@ prototype["getHasSearchResults"] = function getHasSearchResults(arg0) {
   return tmp3;
 };
 ForumSearchStore.displayName = "ForumSearchStore";
-const forumSearchStore = new ForumSearchStore(require("dispatcher"), {
+const forumSearchStore = new ForumSearchStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_1 = {};
+    closure_1 = {};
   },
   THREAD_DELETE: function handleThreadDelete(channel) {
     channel = channel.channel;
@@ -160,6 +162,6 @@ const forumSearchStore = new ForumSearchStore(require("dispatcher"), {
     return tmp4;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/forums/ForumSearchStore.tsx");
+const result = require("set").fileFinishedImporting("modules/forums/ForumSearchStore.tsx");
 
 export default forumSearchStore;

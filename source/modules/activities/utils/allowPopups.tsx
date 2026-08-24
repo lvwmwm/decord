@@ -1,13 +1,15 @@
-// Module ID: 12478
-// Function ID: 12479
+// Module ID: 12532
+// Function ID: 12533
 // Name: allowPopups
-// Dependencies: [4481, 2]
+// Dependencies: [4485, 2]
 // Exports: allowPopups
 
-// Module 12478 (allowPopups)
-import { APPLICATIONS_WITH_ALLOWED_POPUPS as closure_0 } from "items3";
+// Module 12532 (allowPopups)
+import set from "set" /* 2 */;
+import items3 from "items3" /* 4485 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/utils/allowPopups.tsx");
+let closure_0 = items3.APPLICATIONS_WITH_ALLOWED_POPUPS;
+const result = set.fileFinishedImporting("modules/activities/utils/allowPopups.tsx");
 
 export const allowPopups = function allowPopups(application) {
   let prop = application;

@@ -1,20 +1,21 @@
-// Module ID: 15581
-// Function ID: 15582
+// Module ID: 15646
+// Function ID: 15647
 // Name: useIsHomeDrawerChannelMuted
-// Dependencies: [4023, 1395, 5043, 589, 2]
+// Dependencies: [4026, 1395, 5048, 589, 2]
 // Exports: useIsHomeDrawerChannelMuted
 
-// Module 15581 (useIsHomeDrawerChannelMuted)
-import storeThread from "storeThread";
-import { isThread } from "createChannelRecord";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+// Module 15646 (useIsHomeDrawerChannelMuted)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "storeThread" /* 4026 */;
+import { isThread } from "createChannelRecord" /* 1395 */;
+import closure_4 from "updateUserGuildSettingsInternal" /* 5048 */;
 
-const require = arg1;
-let result = require("updateUserGuildSettingsInternal").fileFinishedImporting("modules/home_drawer/native/isHomeDrawerChannelMuted.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("modules/home_drawer/native/isHomeDrawerChannelMuted.tsx");
 
 export const useIsHomeDrawerChannelMuted = function useIsHomeDrawerChannelMuted() {
-  const items = [storeThread, updateUserGuildSettingsInternal];
-  return require(589) /* initialize */.useStateFromStores(items, () => (type) => {
+  const items = [closure_2, closure_4];
+  return initialize.useStateFromStores(items, () => (type) => {
     const tmp = callback(type.type);
     if (tmp) {
       if (muted.isMuted(type.id)) {
@@ -27,5 +28,5 @@ export const useIsHomeDrawerChannelMuted = function useIsHomeDrawerChannelMuted(
       result = guildOrCategoryOrChannelMuted.isGuildOrCategoryOrChannelMuted(type.guild_id, tmp3);
     }
     return result;
-  }, [], require(589) /* initialize */.statesWillNeverBeEqual);
+  }, [], initialize.statesWillNeverBeEqual);
 };

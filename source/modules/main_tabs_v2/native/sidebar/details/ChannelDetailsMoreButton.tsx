@@ -1,15 +1,17 @@
-// Module ID: 15950
-// Function ID: 15951
+// Module ID: 16047
+// Function ID: 16048
 // Name: MoreButton
-// Dependencies: [19, 21, 9919, 8495, 8492, 1236, 8904, 2]
+// Dependencies: [19, 21, 9958, 8534, 8531, 1236, 8941, 2]
 // Exports: default
 
-// Module 15950 (MoreButton)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 16047 (MoreButton)
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8534 */;
+import registerAssetDefault from "registerAsset" /* 8941 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("openChannelLongPressActionSheet").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsMoreButton.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsMoreButton.tsx");
 
 export default function MoreButton(channel) {
   channel = channel.channel;
@@ -21,11 +23,11 @@ export default function MoreButton(channel) {
       obj = { accessibilityLabel: null, source: null, onPress: null };
       const intl = channel(1236).intl;
       obj[0] = intl.string(channel(1236).t["UKOtz+"]);
-      obj[1] = importDefault(8904);
+      obj[1] = registerAssetDefault;
       obj[2] = tmp;
-      obj[0] = jsx(channel(8492).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
-      tmp2 = jsx(importDefault(8495), { accessibilityLabel: null, source: null, onPress: null });
-      const tmp6 = importDefault(8495);
+      obj[0] = jsx(channel(8531).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
+      tmp2 = jsx(PressableNavigatorButtonWrapperDefault, { accessibilityLabel: null, source: null, onPress: null });
+      const tmp6 = PressableNavigatorButtonWrapperDefault;
     } else {
       tmp2 = null;
     }

@@ -1,29 +1,30 @@
-// Module ID: 8611
-// Function ID: 8612
+// Module ID: 8648
+// Function ID: 8649
 // Name: AuthHeader
-// Dependencies: [19, 676, 21, 4661, 6782, 712, 1297, 2]
+// Dependencies: [19, 676, 21, 4668, 6819, 712, 1297, 2]
 // Exports: default
 
-// Module 8611 (AuthHeader)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
+// Module 8648 (AuthHeader)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { header: null };
 createCacheKey = {};
-const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.DISPLAY_EXTRABOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+const merged = Object.assign(importDefaultResult(require("ME").Fonts.DISPLAY_EXTRABOLD, ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 createCacheKey.textAlign = "center";
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/auth/native/components/atoms/AuthHeader.tsx");
+let closure_3 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/auth/native/components/atoms/AuthHeader.tsx");
 
 export default function AuthHeader(arg0) {
-  let children;
-  let style;
   ({ children, style } = arg0);
-  style = [createCacheKey().header, ];
+  style = [callback().header, ];
   style[1] = style;
-  return jsx(require(1297) /* Button */.LegacyText, { style, accessibilityRole: "header", children });
+  return jsx(Button.LegacyText, { style, accessibilityRole: "header", children });
 };

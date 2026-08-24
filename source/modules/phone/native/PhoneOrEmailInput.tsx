@@ -1,26 +1,22 @@
-// Module ID: 8599
-// Function ID: 8600
-// Dependencies: [32, 19, 21, 8600, 8601, 1236, 8603, 2]
+// Module ID: 8636
+// Function ID: 8637
+// Dependencies: [32, 19, 21, 8637, 8638, 1236, 8640, 2]
 
-// Module 8599
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 8636
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let c4 = importAllResult;
 const forwardRefResult = importAllResult.forwardRef((onChange, ref) => {
-  let alpha2;
-  let c4;
-  let countryCode;
-  let tmp3;
   onChange = onChange.onChange;
   ({ alpha2, countryCode } = onChange);
   const onPressCountrySelector = onChange.onPressCountrySelector;
   const forceMode = onChange.forceMode;
   const merged = Object.assign(onChange, Object.create(null));
   ref = undefined;
-  let c6;
+  closure_6 = undefined;
   let combined;
   let obj = importAllResult;
   [tmp3, c4] = forceMode(undefined.useState(""), 2);
@@ -112,7 +108,7 @@ const forwardRefResult = importAllResult.forwardRef((onChange, ref) => {
     }
   }, items);
   const tmp10 = countryCode(onPressCountrySelector[4])(callback);
-  c6 = tmp10;
+  closure_6 = tmp10;
   const items1 = [countryCode, tmp10];
   const effect = importAllResult.useEffect(() => {
     const current = ref.current;
@@ -123,7 +119,7 @@ const forwardRefResult = importAllResult.forwardRef((onChange, ref) => {
     if (str == null) {
       str = "";
     }
-    c6(str);
+    closure_6(str);
   }, items1);
   combined = undefined;
   if (result) {
@@ -153,6 +149,6 @@ const forwardRefResult = importAllResult.forwardRef((onChange, ref) => {
   obj.leadingPressableProps = memo;
   return ref(tmp6(tmp7[6]).SplitTextInput, obj);
 });
-let result = require("jsxProd").fileFinishedImporting("modules/phone/native/PhoneOrEmailInput.tsx");
+let result = require("set").fileFinishedImporting("modules/phone/native/PhoneOrEmailInput.tsx");
 
 export default forwardRefResult;

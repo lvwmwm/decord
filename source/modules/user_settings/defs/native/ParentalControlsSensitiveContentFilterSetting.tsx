@@ -1,28 +1,33 @@
-// Module ID: 15032
-// Function ID: 15033
+// Module ID: 15096
+// Function ID: 15097
 // Name: route
-// Dependencies: [8198, 676, 10669, 1236, 6877, 15033, 2]
+// Dependencies: [8238, 676, 10708, 1236, 6915, 15097, 2]
 
-// Module 15032 (route)
-import createToggle from "createToggle";
+// Module 15096 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 6915 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["Hj/But"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["Hj/But"]);
   },
-  IconComponent: require("ImageWarningIcon").ImageWarningIcon,
-  parent: require("MobileUserSettings").MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  IconComponent: ImageWarningIcon.ImageWarningIcon,
+  parent: MobileUserSettings.MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   screen: obj,
   unsearchable: true
 };
 obj = {
-  route: require("ME").UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
+  route: ME.UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   getComponent() {
-    return require(15033) /* UserSettingsSensitiveContentFilters */.default;
+    return require(15097) /* UserSettingsSensitiveContentFilters */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsSensitiveContentFilterSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsSensitiveContentFilterSetting.tsx");
 
 export default route;

@@ -1,13 +1,15 @@
-// Module ID: 4341
-// Function ID: 4342
+// Module ID: 4345
+// Function ID: 4346
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 4341 (enforcing)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 4345 (enforcing)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeBrowserManagerModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeBrowserManagerModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeBrowserManagerModule.tsx");
 
 export default enforcing;
 export const BrowserType = { SAFARI: 0, [0]: "SAFARI", IN_APP: 1, [1]: "IN_APP", CHROME: 2, [2]: "CHROME" };

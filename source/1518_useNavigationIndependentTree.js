@@ -5,10 +5,11 @@
 // Exports: useNavigationIndependentTree
 
 // Module 1518 (useNavigationIndependentTree)
-import noop from "noop";
+import NavigationIndependentTreeContext from "NavigationIndependentTreeContext" /* 1519 */;
+import closure_2 from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 
 export const useNavigationIndependentTree = function useNavigationIndependentTree() {
-  return React.useContext(require(1519) /* NavigationIndependentTreeContext */.NavigationIndependentTreeContext);
+  return React.useContext(NavigationIndependentTreeContext.NavigationIndependentTreeContext);
 };

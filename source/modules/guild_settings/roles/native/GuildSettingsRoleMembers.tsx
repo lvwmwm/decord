@@ -1,75 +1,75 @@
-// Module ID: 16855
-// Function ID: 16856
+// Module ID: 16948
+// Function ID: 16949
 // Name: onMembersLoadFail
-// Dependencies: [32, 19, 17, 6928, 676, 21, 4661, 712, 4094, 8555, 1236, 16835, 7275, 589, 4827, 8874, 1297, 698, 4342, 16836, 2007, 9965, 8035, 7341, 7337, 4330, 4734, 6291, 9545, 2]
+// Dependencies: [32, 19, 17, 6966, 676, 21, 4668, 712, 4097, 8594, 1236, 16928, 7313, 589, 4832, 8911, 1297, 698, 4346, 16929, 2008, 10004, 8074, 7379, 7375, 4334, 4739, 6322, 9582, 2]
 // Exports: default
 
-// Module 16855 (onMembersLoadFail)
-import _slicedToArray from "_slicedToArray";
-import _toPropertyKey from "_toPropertyKey";
-import { View } from "expandEventProperties";
-import getRoleMemberCount from "getRoleMemberCount";
-import { AnalyticEvents } from "ME";
-import jsxProd from "memoResult1";
-import createCacheKey from "createCacheKey";
+// Module 16948 (onMembersLoadFail)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import dispatcherDefault from "dispatcher" /* 4097 */;
+import registerAssetDefault from "registerAsset" /* 8594 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "getRoleMemberCount" /* 6966 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function onMembersLoadFail() {
-  let obj = importDefault(4094);
-  obj = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: importDefault(8555), content: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.fEptJP);
+  let obj = dispatcherDefault;
+  obj = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: registerAssetDefault, content: null };
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.fEptJP);
   obj.open(obj);
 }
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { container: null, containerSearchBar: null, missingMembers: null, missingMembersText: null };
-createCacheKey = { paddingHorizontal: require("Themes").space.PX_12, flex: 1 };
+createCacheKey = { paddingHorizontal: ThemesDefault.space.PX_12, flex: 1 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { paddingBottom: require("Themes").space.PX_12 };
-let obj1 = { paddingBottom: require("Themes").space.PX_12 };
-createCacheKey[2] = { borderRadius: require("Themes").radii.md, borderWidth: 1, borderColor: require("Themes").colors.ICON_FEEDBACK_INFO, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_INFO, marginBottom: require("Themes").space.PX_16, padding: require("Themes").space.PX_8, flexDirection: "row", alignItems: "center" };
-let obj2 = { borderRadius: require("Themes").radii.md, borderWidth: 1, borderColor: require("Themes").colors.ICON_FEEDBACK_INFO, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_INFO, marginBottom: require("Themes").space.PX_16, padding: require("Themes").space.PX_8, flexDirection: "row", alignItems: "center" };
-createCacheKey[3] = { marginLeft: require("Themes").space.PX_8, flex: 1 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { marginLeft: require("Themes").space.PX_8, flex: 1 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleMembers.tsx");
+createCacheKey[1] = { paddingBottom: ThemesDefault.space.PX_12 };
+let obj1 = { paddingBottom: ThemesDefault.space.PX_12 };
+createCacheKey[2] = { borderRadius: ThemesDefault.radii.md, borderWidth: 1, borderColor: ThemesDefault.colors.ICON_FEEDBACK_INFO, backgroundColor: ThemesDefault.colors.BACKGROUND_FEEDBACK_INFO, marginBottom: ThemesDefault.space.PX_16, padding: ThemesDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
+let obj2 = { borderRadius: ThemesDefault.radii.md, borderWidth: 1, borderColor: ThemesDefault.colors.ICON_FEEDBACK_INFO, backgroundColor: ThemesDefault.colors.BACKGROUND_FEEDBACK_INFO, marginBottom: ThemesDefault.space.PX_16, padding: ThemesDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
+createCacheKey[3] = { marginLeft: ThemesDefault.space.PX_8, flex: 1 };
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { marginLeft: ThemesDefault.space.PX_8, flex: 1 };
+const result = require("set").fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleMembers.tsx");
 
 export default function GuildSettingsRoleMembers(guild) {
-  let str;
-  let tmp3;
   guild = guild.guild;
   const role = guild.role;
   const locked = guild.locked;
   let formatted;
   let found;
   let callback;
-  let getRoleMemberCount;
-  const tmp = createCacheKey();
+  closure_6 = undefined;
+  const tmp = callback2();
   [str, tmp3] = formatted(found.useState(""), 2);
   const tmp2 = formatted(found.useState(""), 2);
   formatted = str.trim().toLowerCase();
   let obj = guild(locked[11]);
   const queryGuildMembers = obj.useQueryGuildMembers(guild.id, formatted);
-  let obj1 = guild(locked[11]);
+  obj1 = guild(locked[11]);
   const guildRoleMembers = obj1.useGuildRoleMembers(guild.id, role.id, onMembersLoadFail);
   found = guildRoleMembers.filter((name) => {
-    const formatted = name.name.toLowerCase();
+    formatted = name.name.toLowerCase();
     return formatted.includes(formatted);
   });
   let obj2 = guild(locked[12]);
   obj = { [guild.id]: guildRoleMembers.map((id) => id.id) };
   const subscribeGuildMembers = obj2.useSubscribeGuildMembers(obj, "GuildSettingsRoleMembers");
   let obj4 = guild(locked[13]);
-  let items = [getRoleMemberCount];
+  let items = [closure_6];
   const items1 = [guild.id, role.id];
   const items2 = [guild.id, , ];
   ({ id: arr5[1], name: arr5[2] } = role);
   const str2 = str.trim();
   callback = found.useCallback((name, arr) => {
-    let closure_0 = name;
-    const found = arr.filter((arg0) => arg0 !== found.id);
+    closure_0 = name;
+    found = arr.filter((arg0) => arg0 !== found.id);
     if (found.length !== arr.length) {
       let obj = role(locked[14]);
       obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, hideActionSheet: false, confirmColor: null };
@@ -88,11 +88,11 @@ export default function GuildSettingsRoleMembers(guild) {
         const items = [found.id];
         let obj = role(locked[15]);
         role(locked[15]).updateMemberRoles(name.id, name.id, found, [], items).catch(() => {
-          let obj = callback2(4094);
+          let obj = callback2(4097);
           obj = { key: "ERROR_OCCURRED_TRY_AGAIN", content: null, icon: null };
           const intl = callback(1236).intl;
           obj[1] = intl.string(callback(1236).t.fEptJP);
-          obj[2] = callback2(8555);
+          obj[2] = callback2(8594);
           obj.open(obj);
         });
       };
@@ -104,12 +104,12 @@ export default function GuildSettingsRoleMembers(guild) {
   const items4 = [callback, guild.id, locked, found];
   const callback1 = found.useCallback(() => {
     let obj = role(locked[17]);
-    obj.track(outer1_7.OPEN_POPOUT, { type: "Add Role Members", location_page: "Role Settings", location_section: "Members" });
+    obj.track(closure_1_7.OPEN_POPOUT, { type: "Add Role Members", location_page: "Role Settings", location_section: "Members" });
     const obj2 = role(locked[18]);
     obj = { guild, role };
     obj2.openLazy(guild(locked[20])(locked[19], locked.paths), "role-add-members-" + guild.id + "-" + role.id, obj);
   }, items3);
-  getRoleMemberCount = found.useCallback((item) => {
+  closure_6 = found.useCallback((item) => {
     item = item.item;
     const index = item.index;
     let obj = { end: index === found.length - 1, start: null, guildId: null, userId: null, trailing: null };
@@ -127,12 +127,12 @@ export default function GuildSettingsRoleMembers(guild) {
       const intl = guild(tmp2[10]).intl;
       obj[1] = intl.string(guild(tmp2[10]).t["7sFNfW"]);
       obj[3] = function onPress() {
-        return outer1_5(item, item.roles);
+        return closure_1_5(item, item.roles);
       };
       tmpResult = tmp(guild(tmp2[22]).IconButton, obj);
     }
     obj[4] = tmpResult;
-    return outer1_8(role(locked[21]), obj, item.id);
+    return closure_1_8(role(locked[21]), obj, item.id);
   }, items4);
   obj = { style: tmp.container, children: null };
   obj1 = { style: tmp.containerSearchBar, children: callback(guild(locked[24]).SearchField, { onChange: tmp3 }) };

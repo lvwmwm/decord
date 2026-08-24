@@ -1,22 +1,24 @@
-// Module ID: 9874
-// Function ID: 9875
+// Module ID: 9913
+// Function ID: 9914
 // Name: fetchSurveyIfNeeded
-// Dependencies: [4295, 1910, 4021, 4197, 1922, 676, 687, 9875, 506, 595, 3975, 589, 709, 2]
+// Dependencies: [4299, 1910, 4024, 4201, 1922, 676, 687, 9914, 506, 595, 3978, 589, 709, 2]
 
-// Module 9874 (fetchSurveyIfNeeded)
-import handleInviteData from "handleInviteData";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import handleConnectionOpen from "handleConnectionOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { PersistedStore } from "initialize";
-import set from "getUncachedChannelPermissions";
+// Module 9913 (fetchSurveyIfNeeded)
+import initializeDefault from "initialize" /* 589 */;
+import Storage2 from "Storage" /* 595 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import tDefault from "t" /* 3978 */;
+import overrideSurvey from "overrideSurvey" /* 9914 */;
+import closure_4 from "handleInviteData" /* 4299 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_7 from "handleConnectionOpen" /* 4201 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-let c10;
-let c9;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function fetchSurveyIfNeeded() {
   let tmp = c18;
   if (!c18) {
@@ -33,13 +35,13 @@ function fetchSurveyIfNeeded() {
   }
   if (!tmp) {
     c18 = true;
-    obj = require(9875) /* overrideSurvey */;
+    obj = overrideSurvey;
     obj.surveyFetch(obj.surveyOverride, true);
   }
 }
 function setSurvey(survey) {
   survey = survey.survey;
-  let c18 = false;
+  c18 = false;
   obj.lastFetched = Date.now();
   if (survey.isActionTriggered) {
     const _Date = Date;
@@ -131,9 +133,9 @@ function setSurvey(survey) {
                 }
                 let tmp43 = nextResult;
                 let tmp44 = id === tmp14.ownerId;
-                let tmp45 = getUncachedChannelPermissions;
+                let tmp45 = closure_6;
                 let tmp46 = constants2;
-                let canResult = getUncachedChannelPermissions.can(constants2.ADMINISTRATOR, tmp14);
+                let canResult = closure_6.can(constants2.ADMINISTRATOR, tmp14);
                 let tmp48 = constants3;
                 let tmp49 = constants3;
                 if (!guild_requirements.includes(constants3.IS_OWNER)) {
@@ -183,9 +185,9 @@ function setSurvey(survey) {
                   let tmp32 = item10086;
                   obj = callback(table[8]);
                   let tmp35 = item10086;
-                  let tmp36 = getUncachedChannelPermissions;
+                  let tmp36 = closure_6;
                   let tmp37 = nextResult;
-                  if (getUncachedChannelPermissions.can(obj.deserialize(tmp32), tmp14)) {
+                  if (closure_6.can(obj.deserialize(tmp32), tmp14)) {
                     flag5 = true;
                     let tmp38 = obj4;
                     obj4.return();
@@ -222,11 +224,11 @@ function setSurvey(survey) {
   if (!c14) {
     tmp6 = c15;
   }
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage2.Storage;
   const value = Storage.get(closure_11);
   let tmp9 = null == value;
   if (!tmp9) {
-    obj = importDefault(3975)();
+    obj = tDefault();
     tmp9 = obj.diff(value, "day") < 7;
   }
   let tmp11 = null;
@@ -242,7 +244,7 @@ function setSurvey(survey) {
       }
     }
   }
-  let c17 = tmp11;
+  survey = tmp11;
 }
 function handleSelectedGuildChange() {
   if (null != c17) {
@@ -323,9 +325,9 @@ function handleSelectedGuildChange() {
                 }
                 let tmp43 = nextResult;
                 let tmp44 = id === tmp14.ownerId;
-                let tmp45 = getUncachedChannelPermissions;
+                let tmp45 = closure_6;
                 let tmp46 = constants2;
-                let canResult = getUncachedChannelPermissions.can(constants2.ADMINISTRATOR, tmp14);
+                let canResult = closure_6.can(constants2.ADMINISTRATOR, tmp14);
                 let tmp48 = constants3;
                 let tmp49 = constants3;
                 if (!guild_requirements.includes(constants3.IS_OWNER)) {
@@ -375,9 +377,9 @@ function handleSelectedGuildChange() {
                   let tmp32 = item10086;
                   obj = callback(table[8]);
                   let tmp35 = item10086;
-                  let tmp36 = getUncachedChannelPermissions;
+                  let tmp36 = closure_6;
                   let tmp37 = nextResult;
-                  if (getUncachedChannelPermissions.can(obj.deserialize(tmp32), tmp14)) {
+                  if (closure_6.can(obj.deserialize(tmp32), tmp14)) {
                     flag5 = true;
                     let tmp38 = obj4;
                     obj4.return();
@@ -499,9 +501,9 @@ function handleSelectedGuildChange() {
                 }
                 let tmp43 = nextResult;
                 let tmp44 = id === tmp14.ownerId;
-                let tmp45 = getUncachedChannelPermissions;
+                let tmp45 = closure_6;
                 let tmp46 = constants2;
-                let canResult = getUncachedChannelPermissions.can(constants2.ADMINISTRATOR, tmp14);
+                let canResult = closure_6.can(constants2.ADMINISTRATOR, tmp14);
                 let tmp48 = constants3;
                 let tmp49 = constants3;
                 if (!guild_requirements.includes(constants3.IS_OWNER)) {
@@ -551,9 +553,9 @@ function handleSelectedGuildChange() {
                   let tmp32 = item10086;
                   obj = callback(table[8]);
                   let tmp35 = item10086;
-                  let tmp36 = getUncachedChannelPermissions;
+                  let tmp36 = closure_6;
                   let tmp37 = nextResult;
-                  if (getUncachedChannelPermissions.can(obj.deserialize(tmp32), tmp14)) {
+                  if (closure_6.can(obj.deserialize(tmp32), tmp14)) {
                     flag5 = true;
                     let tmp38 = obj4;
                     obj4.return();
@@ -601,18 +603,23 @@ let c15 = false;
 let closure_16 = {};
 let c17 = null;
 let c18 = false;
-const DAY = require("set").Millis.DAY;
-const result = 10 * require("set").Millis.HOUR;
+const DAY = setDefault.Millis.DAY;
+const result = 10 * setDefault.Millis.HOUR;
 obj = { IS_OWNER: "is_owner", IS_ADMIN: "is_admin", IS_COMMUNITY: "is_community", GUILD_SIZE: "guild_size", IS_HUB: "is_hub", IS_VIEWING: "is_viewing", GUILD_PERMISSIONS: "guild_permissions", GUILD_SIZE_ALL: "guild_size_all" };
 let set = new Set(Object.values(obj));
+const PersistedStore = initializeDefault.PersistedStore;
 class SurveyStore extends PersistedStore {
 }
 const prototype = SurveyStore.prototype;
 prototype["initialize"] = function initialize(arg0) {
   const self = this;
-  const tmp = arg0;
-  this.waitFor(handleInviteData, createGuildRecordFromRust, getUncachedChannelPermissions, handleConnectionOpen, mergeGuildAvatar);
-  const items = [handleConnectionOpen];
+  let tmp = arg0;
+  this.waitFor(closure_4, closure_5, closure_6, closure_7, closure_8);
+  if (arg0 == null) {
+    tmp = obj;
+  }
+  closure_13 = tmp;
+  const items = [closure_7];
   self.syncWith(items, handleSelectedGuildChange);
 };
 prototype["getState"] = function getState() {
@@ -657,7 +664,7 @@ let items = [
     return {};
   },
   (lastSeen) => {
-    const obj = {};
+    obj = {};
     const merged = Object.assign(lastSeen);
     lastSeen = lastSeen.lastSeen;
     if (lastSeen == null) {
@@ -667,7 +674,7 @@ let items = [
     return obj;
   },
   (hiddenSurveys) => {
-    const obj = {};
+    obj = {};
     const merged = Object.assign(hiddenSurveys);
     hiddenSurveys = hiddenSurveys.hiddenSurveys;
     if (hiddenSurveys == null) {
@@ -684,7 +691,7 @@ obj = {
   SURVEY_FETCHED: setSurvey,
   SURVEY_HIDE: function handleSurveyHide(key) {
     obj.hiddenSurveys[key.key] = true;
-    let c17 = null;
+    c17 = null;
     if (obj == null) {
       obj = {};
     }
@@ -697,14 +704,14 @@ obj = {
       const hiddenSurveys = obj.hiddenSurveys;
       delete tmp[tmp2];
     }
-    obj = require(9875) /* overrideSurvey */;
+    obj = overrideSurvey;
     obj.surveyFetch(obj.surveyOverride, true);
   },
   PUSH_NOTIFICATION_CLICK: function handlePushNotificationClick() {
-    let c14 = true;
+    c14 = true;
   },
   DISPLAYED_INVITE_SHOW: function handleInviteShow() {
-    let c15 = true;
+    c15 = true;
   },
   LOGOUT: function handleLogout() {
     obj.hiddenSurveys = {};
@@ -713,7 +720,7 @@ obj = {
     obj.lastSeen = Date.now();
   }
 };
-const surveyStore = new SurveyStore(require("dispatcher"), obj);
+const surveyStore = new SurveyStore(dispatcherDefault, obj);
 const result1 = set.fileFinishedImporting("stores/SurveyStore.tsx");
 
 export default surveyStore;

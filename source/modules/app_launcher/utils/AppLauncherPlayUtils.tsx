@@ -1,26 +1,20 @@
-// Module ID: 10710
-// Function ID: 10711
+// Module ID: 10749
+// Function ID: 10750
 // Name: _launchActivityInBotDM
-// Dependencies: [5, 8722, 8723, 4770, 8746, 2]
+// Dependencies: [5, 8759, 8760, 4775, 8783, 2]
 // Exports: launchActivityInBotDM
 
-// Module 10710 (_launchActivityInBotDM)
-import set from "set";
+// Module 10749 (_launchActivityInBotDM)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
 function _launchActivityInBotDM() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
-      let c3;
-      let c4;
-      let c5;
       if (c4 === 2) {
         c4 = 3;
         HermesBuiltin.throwTypeError();
@@ -32,7 +26,7 @@ function _launchActivityInBotDM() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -47,7 +41,7 @@ function _launchActivityInBotDM() {
               obj[0] = arg1;
               return obj;
             } else {
-              let dependencyMap = 0;
+              dependencyMap = 0;
               let callback2 = tmp2;
               let callback;
               callback2 = undefined;
@@ -56,7 +50,7 @@ function _launchActivityInBotDM() {
               c4 = undefined;
               c5 = undefined;
               ({ appId: c0, botId: c1, analyticsLocations: c2, customId: c3, referrerId: c4, commandOrigin: c5 } = callback);
-              let closure_6;
+              closure_6 = undefined;
               c3 = 1;
               c4 = 1;
               return { value: "ct", done: true };
@@ -67,30 +61,30 @@ function _launchActivityInBotDM() {
               throw arg1;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
               const obj2 = { applicationId: null };
               obj2[0] = callback;
               if (obj14.tryLaunchAsFrame(obj2)) {
-                let obj7 = callback(8723);
-                const result = obj7.stashPendingFrameLaunch(callback, { isStart: true });
+                let obj8 = callback(8760);
+                const result = obj8.stashPendingFrameLaunch(callback, { isStart: true });
                 c4 = 3;
                 const obj3 = { value: null, done: true };
                 obj3[0] = Promise.resolve(true);
                 return obj3;
               } else {
-                let obj4 = callback2(4770);
-                obj4 = { recipientIds: null };
+                let obj5 = callback2(4775);
+                const obj4 = { recipientIds: null };
                 obj4[0] = callback2;
                 c3 = 2;
                 c4 = 1;
-                const obj5 = { value: null, done: false };
-                obj5[0] = obj4.openPrivateChannel(obj4);
+                obj5 = { value: null, done: false };
+                obj5[0] = obj5.openPrivateChannel(obj4);
                 return obj5;
               }
-              obj14 = callback(8722);
+              obj14 = callback(8759);
             }
           } else if (2 === tmp5) {
             if (arg0 === 1) {
@@ -103,7 +97,7 @@ function _launchActivityInBotDM() {
               return obj6;
             } else {
               closure_6 = arg1;
-              obj7 = { targetApplicationId: null, channelId: null, analyticsLocations: null, customId: null, referrerId: null, commandOrigin: null };
+              const obj7 = { targetApplicationId: null, channelId: null, analyticsLocations: null, customId: null, referrerId: null, commandOrigin: null };
               obj7[0] = callback;
               obj7[1] = closure_6;
               obj7[2] = dependencyMap;
@@ -112,8 +106,8 @@ function _launchActivityInBotDM() {
               obj7[5] = c5;
               c3 = 3;
               c4 = 1;
-              const obj8 = { value: null, done: false };
-              obj8[0] = callback2(8746)(obj7);
+              obj8 = { value: null, done: false };
+              obj8[0] = callback2(8783)(obj7);
               return obj8;
             }
           } else if (arg0 === 1) {
@@ -130,16 +124,16 @@ function _launchActivityInBotDM() {
             obj[0] = arg1;
             return obj;
           }
-        } catch (tmp14) {
+        } catch (tmp24) {
           c4 = tmp;
-          throw tmp14;
+          throw tmp24;
         }
       }
     })();
     iter.next();
     return iter;
   });
-  const _launchActivityInBotDM = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -148,7 +142,7 @@ function _launchActivityInBotDM() {
   }
   return applyArgumentsResult;
 }
-let result = require("stashPendingFrameLaunch").fileFinishedImporting("modules/app_launcher/utils/AppLauncherPlayUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/app_launcher/utils/AppLauncherPlayUtils.tsx");
 
 export const launchActivityInBotDM = function launchActivityInBotDM(arg0) {
   const self = this;

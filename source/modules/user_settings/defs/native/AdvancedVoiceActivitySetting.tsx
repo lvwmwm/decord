@@ -1,39 +1,42 @@
-// Module ID: 14606
-// Function ID: 14607
+// Module ID: 14674
+// Function ID: 14675
 // Name: toggle
-// Dependencies: [4497, 8198, 589, 9654, 1236, 10669, 2]
+// Dependencies: [4501, 8238, 589, 9693, 1236, 10708, 2]
 
-// Module 14606 (toggle)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createToggle from "createToggle";
+// Module 14674 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9693 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.BbESsg);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.BbESsg);
   },
   parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useValue: function useAdvancedVoiceActivitySettingValue() {
-    const items = [_detectH265HardwareDecode];
-    return require(589) /* initialize */.useStateFromStores(items, () => modeOptions.getModeOptions().vadUseKrisp);
+    const items = [closure_3];
+    return initialize.useStateFromStores(items, () => modeOptions.getModeOptions().vadUseKrisp);
   },
   onValueChange: function onAdvancedVoiceActivitySettingValueChange(vadUseKrisp) {
     mode = mode.getMode();
-    let obj = importDefault(9654);
+    let obj = trackDeviceChangedDefault;
     obj = { vadUseKrisp };
     obj.setMode(mode, obj);
   },
   useDescription: function useAdvancedVoiceActivitySettingDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.LoOB1F);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.LoOB1F);
   },
   usePredicate: function useHasAdvancedVoiceActivitySetting() {
-    const items = [_detectH265HardwareDecode];
-    return require(589) /* initialize */.useStateFromStores(items, () => advancedVoiceActivitySupported.isAdvancedVoiceActivitySupported());
+    const items = [closure_3];
+    return initialize.useStateFromStores(items, () => advancedVoiceActivitySupported.isAdvancedVoiceActivitySupported());
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/AdvancedVoiceActivitySetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AdvancedVoiceActivitySetting.tsx");
 
 export default createToggle;

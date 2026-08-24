@@ -1,35 +1,24 @@
-// Module ID: 7373
-// Function ID: 7374
+// Module ID: 7411
+// Function ID: 7412
 // Name: _launchGuildBoostFlowOrAlert
-// Dependencies: [5, 4045, 676, 1924, 4656, 1236, 698, 4466, 7374, 7378, 5322, 7379, 7380, 4039, 2]
+// Dependencies: [5, 4048, 676, 1924, 4662, 1236, 698, 4470, 7412, 7416, 5327, 7417, 7418, 4042, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7373 (_launchGuildBoostFlowOrAlert)
-import getSystemLocale from "getSystemLocale";
-import reset from "reset";
-import ME from "ME";
-import GuildFeatures from "GuildFeatures";
+// Module 7411 (_launchGuildBoostFlowOrAlert)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "reset" /* 4048 */;
+import ME from "ME" /* 676 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 function _launchGuildBoostFlowOrAlert() {
   const self = this;
   let tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
-      let c3;
-      let c4;
-      let c5;
       if (premiumTypeSubscription === 2) {
         premiumTypeSubscription = 3;
         HermesBuiltin.throwTypeError();
@@ -41,7 +30,7 @@ function _launchGuildBoostFlowOrAlert() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -57,7 +46,7 @@ function _launchGuildBoostFlowOrAlert() {
               return obj;
             } else {
               c3 = tmp2;
-              let dependencyMap = tmp6;
+              dependencyMap = tmp6;
               let callback;
               c1 = undefined;
               dependencyMap = undefined;
@@ -67,7 +56,7 @@ function _launchGuildBoostFlowOrAlert() {
               ({ source: c0, analyticsLocations: c1, guildId: c2, onBack: c3, onPaymentSuccess: c4, onPaymentDismiss: c5 } = callback);
               premiumTypeSubscription = undefined;
               let externalManagementMessage;
-              let c8;
+              c8 = undefined;
               let constants;
               let mobileBoostingEnabled;
               c5 = 1;
@@ -81,12 +70,12 @@ function _launchGuildBoostFlowOrAlert() {
                 throw arg1;
               } else if (arg0 === 2) {
                 premiumTypeSubscription = 3;
-                let obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else if (c4.hasFetchedSubscriptions()) {
                 premiumTypeSubscription = c4.getPremiumTypeSubscription();
-                let obj3 = callback(7374);
+                let obj3 = callback(7412);
                 externalManagementMessage = obj3.getExternalManagementMessage(premiumTypeSubscription);
                 if (null != externalManagementMessage) {
                   (function alertUnableToManageSub(closure_7, c0) {
@@ -103,8 +92,8 @@ function _launchGuildBoostFlowOrAlert() {
                   c8 = null;
                   if (null != premiumTypeSubscription) {
                     c4 = 1;
-                    constants = callback(7378).getProductIdFromSubscription(premiumTypeSubscription, true);
-                    const tmp65 = callback(5322).AppStorePremiumProductIdsToPremiumBundledItems[constants];
+                    constants = callback(7416).getProductIdFromSubscription(premiumTypeSubscription, true);
+                    const tmp65 = callback(5327).AppStorePremiumProductIdsToPremiumBundledItems[constants];
                     let interval;
                     if (tmp65 != null) {
                       interval = tmp65.interval;
@@ -115,12 +104,12 @@ function _launchGuildBoostFlowOrAlert() {
                     }
                     c8 = c1;
                     c4 = 0;
-                    const obj11 = callback(7378);
+                    const obj11 = callback(7416);
                   }
                 }
                 premiumTypeSubscription = 3;
               } else {
-                obj1 = callback(4466);
+                obj1 = callback(4470);
                 c5 = 2;
                 premiumTypeSubscription = 1;
                 let obj2 = { value: null, done: false };
@@ -141,11 +130,11 @@ function _launchGuildBoostFlowOrAlert() {
               c4 = 0;
               c8 = null;
             }
-            mobileBoostingEnabled = callback(7379).getMobileBoostingEnabled("GuildBoostPurchasing");
+            mobileBoostingEnabled = callback(7417).getMobileBoostingEnabled("GuildBoostPurchasing");
             if (mobileBoostingEnabled) {
               mobileBoostingEnabled = c8 === constants.YEAR;
             }
-            const obj5 = callback(7379);
+            const obj5 = callback(7417);
             obj3 = { showCurrentPlan: false, isBoostPurchaseFlow: true, allowYearlyBundles: null, predicate: null, analyticsLocation: null, analyticsLocations: null, guildId: null, onBack: null, onPaymentSuccess: null, onPaymentDismiss: null };
             obj3[2] = mobileBoostingEnabled;
             obj3[3] = function predicate(interval) {
@@ -180,8 +169,8 @@ function _launchGuildBoostFlowOrAlert() {
             obj3[7] = c3;
             obj3[8] = c4;
             obj3[9] = c5;
-            const result = callback(7380).launchPremiumPlanSelect(obj3);
-            const obj6 = callback(7380);
+            const result = callback(7418).launchPremiumPlanSelect(obj3);
+            const obj6 = callback(7418);
           }
         } catch (tmp45) {
           if (tmp3 === c4) {
@@ -196,7 +185,7 @@ function _launchGuildBoostFlowOrAlert() {
     iter.next();
     return iter;
   });
-  const _launchGuildBoostFlowOrAlert = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -206,8 +195,8 @@ function _launchGuildBoostFlowOrAlert() {
   return applyArgumentsResult;
 }
 ({ AnalyticEvents: c5, AnalyticsSections: closure_6 } = ME);
-({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: error, PremiumTypes: metroImportAll, SubscriptionIntervalTypes: c9 } = GuildFeatures);
-let result = require("ME").fileFinishedImporting("modules/guild_boosting/native/GuildBoostPurchasingUtils.tsx");
+({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: error, PremiumTypes: closure_8, SubscriptionIntervalTypes: c9 } = GuildFeatures);
+let result = require("set").fileFinishedImporting("modules/guild_boosting/native/GuildBoostPurchasingUtils.tsx");
 
 export const launchGuildBoostFlowOrAlert = function launchGuildBoostFlowOrAlert(arg0) {
   const self = this;

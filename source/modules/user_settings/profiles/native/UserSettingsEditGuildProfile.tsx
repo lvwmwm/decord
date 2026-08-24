@@ -1,45 +1,42 @@
-// Module ID: 14066
-// Function ID: 14067
+// Module ID: 14134
+// Function ID: 14135
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8370, 1922, 21, 4661, 712, 7139, 7159, 589, 14067, 9539, 8417, 14069, 6291, 7188, 9446, 4342, 14071, 2007, 14072, 2]
+// Dependencies: [19, 17, 8409, 1922, 21, 4668, 712, 7177, 7197, 589, 14135, 9576, 8456, 14137, 6322, 7226, 9483, 4346, 14139, 2008, 14140, 2]
 // Exports: default
 
-// Module 14066 (UserSettingsEditGuildProfile)
-import asyncRequireImpl from "asyncRequireImpl";
-import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
-import handleFormOpen from "handleFormOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 14134 (UserSettingsEditGuildProfile)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_5 from "handleFormOpen" /* 8409 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c4;
-let error;
-let metroImportAll;
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { guildSelector: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.none, borderTopWidth: StyleSheet.hairlineWidth, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, overflow: "hidden" };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.none, borderTopWidth: StyleSheet.hairlineWidth, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, overflow: "hidden" };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("handleFormOpen").fileFinishedImporting("modules/user_settings/profiles/native/UserSettingsEditGuildProfile.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_settings/profiles/native/UserSettingsEditGuildProfile.tsx");
 
 export default function UserSettingsEditGuildProfile() {
   function onSelectGuild(id) {
     resetPending();
     stateFromStores(resetPending[11]).setCurrentGuild(id.id);
   }
-  let tmp = createCacheKey();
+  let tmp = callback3();
   let obj = stateFromStores(resetPending[9]);
-  const items = [mergeGuildAvatar];
+  const items = [closure_6];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const tmp7 = guild(resetPending[10])();
   guild = tmp7.guild;
   resetPending = tmp7.resetPending;
-  let obj1 = stateFromStores(resetPending[9]);
-  const items1 = [handleFormOpen];
-  const React = obj1.useStateFromStores(items1, () => handleFormOpen.showNotice());
+  obj1 = stateFromStores(resetPending[9]);
+  const items1 = [closure_5];
+  const React = obj1.useStateFromStores(items1, () => closure_5.showNotice());
   const items2 = [stateFromStores, guild];
   const effect = React.useEffect(() => {
     let obj = stateFromStores;
@@ -77,15 +74,15 @@ export default function UserSettingsEditGuildProfile() {
               tmp2 = null != closure_1;
             }
             if (tmp2) {
-              let obj = outer1_1(outer1_2[17]);
+              let obj = closure_1_1(closure_1_2[17]);
               obj = { user: null, selectedGuild: null, onSelectGuild: null };
               obj[0] = closure_0;
               obj[1] = closure_1;
               obj[2] = closure_4;
-              obj.openLazy(outer1_0(outer1_2[19])(outer1_2[18], outer1_2.paths), "GuildSelectComponentActionSheet", obj);
+              obj.openLazy(closure_1_0(closure_1_2[19])(closure_1_2[18], closure_1_2.paths), "GuildSelectComponentActionSheet", obj);
             }
           },
-          hasEdits: asyncRequireImpl,
+          hasEdits: closure_3,
           resetPending
         });
       };

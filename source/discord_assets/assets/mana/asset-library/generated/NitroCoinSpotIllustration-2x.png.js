@@ -1,10 +1,12 @@
-// Module ID: 5957
-// Function ID: 5958
+// Module ID: 5988
+// Function ID: 5989
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5957 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroCoinSpotIllustration-2x.png.js");
+// Module 5988 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroCoinSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/1cd9ccd20f1cc006034c7d6397c6c07e4053baee4649bf7a934daa404b60fd6a.png";
 export const metadata = { fileBytes: 148772 };

@@ -1,16 +1,19 @@
-// Module ID: 10664
-// Function ID: 10665
+// Module ID: 10703
+// Function ID: 10704
 // Name: useIsMessageSwipeActionsEnabled
-// Dependencies: [10665, 10666, 10667, 2]
+// Dependencies: [10704, 10705, 10706, 2]
 // Exports: useIsMessageSwipeActionsEnabled
 
-// Module 10664 (useIsMessageSwipeActionsEnabled)
-import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG";
+// Module 10703 (useIsMessageSwipeActionsEnabled)
+import set from "set" /* 2 */;
+import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 10704 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 10705 */;
 
-const result = require("useIsSwipeToMemberListEnabled").fileFinishedImporting("experiments/SwipeToReplyExperiment.tsx");
+const LaunchPadTypes = LAUNCH_PAD_SPRING_CONFIG.LaunchPadTypes;
+const result = set.fileFinishedImporting("experiments/SwipeToReplyExperiment.tsx");
 
 export const useIsMessageSwipeActionsEnabled = function useIsMessageSwipeActionsEnabled() {
-  const tmp = importDefault(10666)() === LaunchPadTypes.GESTURE_FULL;
+  const tmp = useLaunchPadTypeDefault() === LaunchPadTypes.GESTURE_FULL;
   let tmp2 = !tmp;
   if (!tmp) {
     tmp2 = !obj.useIsSwipeToMemberListEnabled();

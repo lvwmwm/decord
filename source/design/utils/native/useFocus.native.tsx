@@ -1,12 +1,12 @@
-// Module ID: 4102
-// Function ID: 4103
+// Module ID: 4105
+// Function ID: 4106
 // Name: useFocus
 // Dependencies: [32, 19, 2]
 // Exports: useFocus
 
-// Module 4102 (useFocus)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 4105 (useFocus)
+import closure_0 from "_slicedToArray" /* 32 */;
+import closure_1 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("design/utils/native/useFocus.native.tsx");
 

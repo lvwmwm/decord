@@ -1,24 +1,19 @@
-// Module ID: 12925
-// Function ID: 12926
+// Module ID: 12980
+// Function ID: 12981
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 676, 1924, 7139, 7418, 7417, 7393, 1236, 4039, 2]
+// Dependencies: [19, 676, 1924, 7177, 7456, 7455, 7431, 1236, 4042, 2]
 // Exports: default
 
-// Module 12925 (useOpenPremiumMarketingPayment)
-import noop from "noop";
-import ME from "ME";
-import GuildFeatures from "GuildFeatures";
+// Module 12980 (useOpenPremiumMarketingPayment)
+import closure_3 from "noop" /* 19 */;
+import ME from "ME" /* 676 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
-let AnalyticsObjectTypes;
-let AnalyticsPages;
-let AnalyticsSections;
-let c4;
-let c5;
 const require = arg1;
 ({ AnalyticsPages, AnalyticsSections, AnalyticsObjectTypes } = ME);
 ({ SubscriptionIntervalTypes: c4, PremiumTypes: c5 } = GuildFeatures);
 let closure_6 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_PREMIUM, objectType: AnalyticsObjectTypes.BUY };
-const result = require("GuildFeatures").fileFinishedImporting("modules/user_settings/premium/native/useOpenPremiumMarketingPayment.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/useOpenPremiumMarketingPayment.tsx");
 
 export default function useOpenPremiumMarketingPayment(arg0) {
   const analyticsLocations = premiumTrialOffer(premiumTrialOfferPremiumType[3])(arg0).analyticsLocations;
@@ -27,13 +22,10 @@ export default function useOpenPremiumMarketingPayment(arg0) {
   premiumTrialOfferPremiumType = analyticsLocations(premiumTrialOfferPremiumType[5]).usePremiumTrialOfferPremiumType();
   obj = {
     openPayment: React.useCallback(() => {
-      const obj = { analyticsLocation: outer1_6, analyticsLocations, predicate: null, initialSelectedCriteria: null, premiumType: null, showFormTitle: false };
+      const obj = { analyticsLocation: closure_1_6, analyticsLocations, predicate: null, initialSelectedCriteria: null, premiumType: null, showFormTitle: false };
       let fn;
       if (null == premiumTrialOfferPremiumType) {
         fn = (additionalPlans) => {
-          let interval;
-          let numPremiumGuild;
-          let premiumTier;
           let tmp = 0 === additionalPlans.additionalPlans.length;
           ({ numPremiumGuild, interval, premiumTier } = additionalPlans);
           if (tmp) {

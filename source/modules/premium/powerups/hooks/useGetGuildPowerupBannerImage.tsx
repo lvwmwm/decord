@@ -1,18 +1,19 @@
-// Module ID: 11689
-// Function ID: 11690
+// Module ID: 11738
+// Function ID: 11739
 // Name: useGetGuildPowerupBannerImage
-// Dependencies: [4662, 589, 2]
+// Dependencies: [4669, 589, 2]
 // Exports: default, getGuildPowerupBannerImage
 
-// Module 11689 (useGetGuildPowerupBannerImage)
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+// Module 11738 (useGetGuildPowerupBannerImage)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGetGuildPowerupBannerImage.tsx");
 
 export default function useGetGuildPowerupBannerImage(animatedImageUrl) {
-  require(589) /* initialize */;
-  [][0] = maybeApplyNoTextColorForLightCustomTheme;
+  initialize;
+  [][0] = closure_2;
   if (null != animatedImageUrl) {
     if (!tmp2) {
       if (false !== arg1) {
@@ -27,9 +28,9 @@ export default function useGetGuildPowerupBannerImage(animatedImageUrl) {
     staticImageUrl = animatedImageUrl.staticImageUrl;
   }
 };
-export const getGuildPowerupBannerImage = function getGuildPowerupBannerImage(found, outer1_4, arg2) {
+export const getGuildPowerupBannerImage = function getGuildPowerupBannerImage(found, closure_1_4, arg2) {
   if (null != found) {
-    if (!outer1_4) {
+    if (!closure_1_4) {
       if (false !== arg2) {
         if (!arg3) {
           let staticImageUrl = found.animatedImageUrl;

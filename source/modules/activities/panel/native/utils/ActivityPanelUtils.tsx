@@ -1,19 +1,20 @@
-// Module ID: 16227
-// Function ID: 16228
+// Module ID: 16324
+// Function ID: 16325
 // Name: useIsActivityPanelFullscreen
-// Dependencies: [1390, 8703, 589, 4011, 8724, 2]
+// Dependencies: [1390, 8740, 589, 4014, 8761, 2]
 // Exports: useIsActivityPanelFullscreen
 
-// Module 16227 (useIsActivityPanelFullscreen)
-import participantFromServer from "participantFromServer";
-import { ActivityPanelModes } from "ActivityPanelModes";
+// Module 16324 (useIsActivityPanelFullscreen)
+import initialize from "initialize" /* 589 */;
+import closure_3 from "participantFromServer" /* 1390 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 8740 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/activities/panel/native/utils/ActivityPanelUtils.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/activities/panel/native/utils/ActivityPanelUtils.tsx");
 
 export const useIsActivityPanelFullscreen = function useIsActivityPanelFullscreen() {
-  const items = [participantFromServer];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
+  const items = [closure_3];
+  return initialize.useStateFromStores(items, () => {
     const embeddedActivityLocationChannelId = callback(table[3]).getEmbeddedActivityLocationChannelId(store.getConnectedActivityLocation());
     let tmp3 = store.getActivityPanelMode() === constants.PANEL;
     if (tmp3) {

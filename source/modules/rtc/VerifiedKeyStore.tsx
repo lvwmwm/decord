@@ -1,13 +1,17 @@
-// Module ID: 9692
-// Function ID: 9693
+// Module ID: 9731
+// Function ID: 9732
 // Name: initialize
-// Dependencies: [9693, 589, 11, 709, 2]
+// Dependencies: [9732, 589, 11, 709, 2]
 
-// Module 9692 (initialize)
-import { PersistedStore } from "initialize";
+// Module 9731 (initialize)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import set from "set" /* 9732 */;
 
-const require = arg1;
+require = arg1;
 let closure_3 = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class VerifiedKeyStore extends PersistedStore {
 }
 const prototype = VerifiedKeyStore.prototype;
@@ -24,7 +28,7 @@ prototype["getState"] = function getState() {
   return { users: closure_3 };
 };
 prototype["getKeyTrustedAt"] = function getKeyTrustedAt(arg0, uint8Array) {
-  const obj = require(9693) /* set */;
+  const obj = set;
   let tmp2;
   if (dependencyMap[arg0] != null) {
     tmp2 = tmp[obj.serializeKey(obj, uint8Array)];
@@ -35,17 +39,15 @@ prototype["isKeyVerified"] = function isKeyVerified(arg0, uint8Array) {
   return null != this.getKeyTrustedAt(arg0, uint8Array);
 };
 prototype["getUserIds"] = function getUserIds() {
-  return importDefault(11).keys(closure_3);
+  return DISCORD_EPOCHDefault.keys(closure_3);
 };
 prototype["getUserVerifiedKeys"] = function getUserVerifiedKeys(closure_0) {
   return dependencyMap[closure_0];
 };
 VerifiedKeyStore.displayName = "VerifiedKeyStore";
 VerifiedKeyStore.persistKey = "VerifiedKeyStore";
-const verifiedKeyStore = new VerifiedKeyStore(require("dispatcher"), {
+const verifiedKeyStore = new VerifiedKeyStore(dispatcherDefault, {
   SECURE_FRAMES_VERIFIED_KEY_CREATE: function handleSecureFramesVerifiedKeyCreate(arg0) {
-    let key;
-    let userId;
     ({ userId, key } = arg0);
     let obj = dependencyMap[userId];
     if (obj == null) {
@@ -53,8 +55,8 @@ const verifiedKeyStore = new VerifiedKeyStore(require("dispatcher"), {
     }
     dependencyMap[userId] = obj;
     const uint8Array = new Uint8Array(key);
-    const obj2 = require(9693) /* set */;
-    obj[require(9693) /* set */.serializeKey(uint8Array)] = Date.now();
+    const obj2 = set;
+    obj[set.serializeKey(uint8Array)] = Date.now();
   },
   SECURE_FRAMES_VERIFIED_KEY_DELETE: function handleSecureFramesVerifiedKeyDelete(arg0) {
     let tmp6 = null;
@@ -81,6 +83,6 @@ const verifiedKeyStore = new VerifiedKeyStore(require("dispatcher"), {
     return null != dependencyMap[arg0.userId];
   }
 });
-const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/rtc/VerifiedKeyStore.tsx");
+const result = require("set").fileFinishedImporting("modules/rtc/VerifiedKeyStore.tsx");
 
 export default verifiedKeyStore;

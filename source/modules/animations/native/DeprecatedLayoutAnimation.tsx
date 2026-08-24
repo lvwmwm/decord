@@ -1,27 +1,26 @@
-// Module ID: 5443
-// Function ID: 5444
+// Module ID: 5448
+// Function ID: 5449
 // Name: LayoutAnimation
-// Dependencies: [17, 4662, 500, 2]
+// Dependencies: [17, 4669, 500, 2]
 // Exports: DeprecatedLayoutAnimation, DeprecatedLayoutAnimationKeyboard
 
-// Module 5443 (LayoutAnimation)
-import get_ActivityIndicator from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import obj from "module_150";
-import obj from "module_150";
+// Module 5448 (LayoutAnimation)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import obj from "module_150" /* 150 */;
 
-let LayoutAnimation;
-let obj1;
 ({ Keyboard: obj1, LayoutAnimation } = get_ActivityIndicator);
-const result = require("set").fileFinishedImporting("modules/animations/native/DeprecatedLayoutAnimation.tsx");
+const result = set.fileFinishedImporting("modules/animations/native/DeprecatedLayoutAnimation.tsx");
 
 export const CONFIG_GUILD_FOLDER_OPACITY = obj;
 export const CONFIG_GUILD_FOLDER_SCALEXY = obj;
 export const DeprecatedLayoutAnimation = function DeprecatedLayoutAnimation(duration) {
-  let useReducedMotion = maybeApplyNoTextColorForLightCustomTheme.useReducedMotion;
+  let useReducedMotion = closure_4.useReducedMotion;
   if (!useReducedMotion) {
-    useReducedMotion = require(500) /* set */.isAndroid();
-    const obj = require(500) /* set */;
+    useReducedMotion = set2.isAndroid();
+    const obj = set2;
   }
   if (!useReducedMotion) {
     if (null != duration) {
@@ -37,7 +36,7 @@ export const DeprecatedLayoutAnimationKeyboard = function DeprecatedLayoutAnimat
     flag = false;
   }
   if (flag) {
-    let obj = require(500) /* set */;
+    let obj = set2;
     if (!obj.isAndroid()) {
       obj = { duration: null };
       obj[0] = keyboardDuration;
@@ -45,10 +44,10 @@ export const DeprecatedLayoutAnimationKeyboard = function DeprecatedLayoutAnimat
     }
   }
   obj = { duration: keyboardDuration, update: obj1 };
-  let useReducedMotion = maybeApplyNoTextColorForLightCustomTheme.useReducedMotion;
+  let useReducedMotion = closure_4.useReducedMotion;
   if (!useReducedMotion) {
-    useReducedMotion = require(500) /* set */.isAndroid();
-    const obj6 = require(500) /* set */;
+    useReducedMotion = set2.isAndroid();
+    const obj6 = set2;
   }
   if (!useReducedMotion) {
     LayoutAnimation.configureNext(obj);

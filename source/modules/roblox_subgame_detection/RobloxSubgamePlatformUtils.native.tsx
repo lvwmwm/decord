@@ -1,12 +1,12 @@
-// Module ID: 4645
-// Function ID: 4646
-// Dependencies: [5, 4646, 4644, 2]
+// Module ID: 4651
+// Function ID: 4652
+// Dependencies: [5, 4652, 4650, 2]
 
-// Module 4645
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 4651
+import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
-let result = require("ROBLOX_PROTOCOL_URL").fileFinishedImporting("modules/roblox_subgame_detection/RobloxSubgamePlatformUtils.native.tsx");
+let result = require("set").fileFinishedImporting("modules/roblox_subgame_detection/RobloxSubgamePlatformUtils.native.tsx");
 
 export default {
   getRobloxSubgameURL(closure_0) {
@@ -22,7 +22,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -37,11 +37,11 @@ export default {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_0 = tmp4;
-              let obj2 = outer1_0(4646);
+              closure_0 = tmp4;
+              let obj2 = closure_1_0(4652);
               dependencyMap = 1;
               c2 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = obj2.canOpenUrlScheme("roblox");
               return obj1;
             }
@@ -54,7 +54,7 @@ export default {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = outer1_0(4644);
+            obj = closure_1_0(4650);
             if (arg1) {
               obj.ROBLOX_PROTOCOL_URL(closure_0);
             } else {

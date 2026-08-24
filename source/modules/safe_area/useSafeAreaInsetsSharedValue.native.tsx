@@ -1,29 +1,31 @@
-// Module ID: 10559
-// Function ID: 10560
+// Module ID: 10598
+// Function ID: 10599
 // Name: _loop
-// Dependencies: [4115, 1629, 10560, 10561, 1642, 1497, 2]
+// Dependencies: [4119, 1629, 10599, 10600, 1642, 1497, 2]
 // Exports: default
 
-// Module 10559 (_loop)
-import module_4115 from "module_4115";
-import useSafeAreaInsets from "useSafeAreaInsets";
-import module_4115 from "module_4115";
-import useSafeAreaInsets from "useSafeAreaInsets";
+// Module 10598 (_loop)
+import set from "set" /* 2 */;
+import context from "context" /* 1497 */;
+import APP_ENTRY_KEYS from "APP_ENTRY_KEYS" /* 1642 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10599 */;
+import module_4119 from "module_4119" /* 4119 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1629 */;
 
 let obj = { main: null, share: null };
 obj = {};
 const merged = Object.assign(useSafeAreaInsets.getSafeAreaInsets("main"));
-obj[0] = module_4115.makeMutable(obj);
+obj[0] = module_4119.makeMutable(obj);
 obj = {};
 const merged1 = Object.assign(useSafeAreaInsets.getSafeAreaInsets("share"));
-obj[1] = module_4115.makeMutable(obj);
+obj[1] = module_4119.makeMutable(obj);
 function _loop(iter) {
-  let closure_0 = iter;
-  importDefault(10560)((arg0) => {
-    outer1_1(outer1_2[3])(outer1_3[closure_0], arg0);
+  closure_0 = iter;
+  subscribeToSafeAreaInsetsDefault((arg0) => {
+    closure_1_1(closure_1_2[3])(closure_1_3[closure_0], arg0);
   }, iter);
 }
-const iter = require("APP_ENTRY_KEYS").APP_ENTRY_KEYS[Symbol.iterator]();
+const iter = APP_ENTRY_KEYS.APP_ENTRY_KEYS[Symbol.iterator]();
 while (iter !== undefined) {
   let _loopResult = _loop(iter.next());
   continue;
@@ -43,9 +45,9 @@ const tmp5 = (() => {
   getSafeAreaInsetsWorklet.__initData = closure_4;
   return getSafeAreaInsetsWorklet;
 })();
-const result = require("subscribeToSafeAreaInsets").fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
+const result = set.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
 
 export default function useSafeAreaInsetsSharedValue() {
-  const obj = require(1497) /* context */;
+  obj = context;
   return obj[obj.useAppEntryKey(obj)];
 };

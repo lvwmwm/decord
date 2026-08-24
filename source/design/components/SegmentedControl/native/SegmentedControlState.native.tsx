@@ -1,15 +1,15 @@
-// Module ID: 8799
-// Function ID: 8800
+// Module ID: 8836
+// Function ID: 8837
 // Name: useSegmentedControlState
-// Dependencies: [19, 712, 1356, 4115, 4343, 4721, 2]
+// Dependencies: [19, 712, 1356, 4119, 4347, 4727, 2]
 // Exports: useSegmentedControlState
 
-// Module 8799 (useSegmentedControlState)
-import noop from "noop";
+// Module 8836 (useSegmentedControlState)
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
 let closure_4 = { code: "function SegmentedControlStateNativeTsx1(index,dimensions){const{itemDimensions,itemCount}=this.__closure;itemDimensions.get()[index]=dimensions;itemDimensions.set([...itemDimensions.get()].slice(0,itemCount));}" };
-let result = require("context").fileFinishedImporting("design/components/SegmentedControl/native/SegmentedControlState.native.tsx");
+let result = require("set").fileFinishedImporting("design/components/SegmentedControl/native/SegmentedControlState.native.tsx");
 
 export const useSegmentedControlState = function useSegmentedControlState(items) {
   items = items.items;
@@ -34,7 +34,7 @@ export const useSegmentedControlState = function useSegmentedControlState(items)
   let sharedValue5;
   let animatedRef;
   let sharedValue6;
-  let closure_15;
+  closure_15 = undefined;
   let callback;
   let length;
   let callback1;
@@ -62,7 +62,7 @@ export const useSegmentedControlState = function useSegmentedControlState(items)
   }, items2);
   const items3 = [sharedValue4, onPageChangeStart, pageWidth, sharedValue1, animatedRef, enabled, onSetActiveIndex];
   callback = onPageChange.useCallback((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     let flag = arg1;
     if (arg1 === undefined) {
       flag = true;
@@ -81,19 +81,19 @@ export const useSegmentedControlState = function useSegmentedControlState(items)
     if (arg0 !== sharedValue4.get()) {
       if (null != onPageChangeStart) {
         tmp14(arg0, () => {
-          const result = outer1_11.set(closure_0);
+          const result = closure_1_11.set(closure_0);
           const result1 = closure_0 * flag2;
-          const result2 = outer1_8.set(result1);
+          const result2 = closure_1_8.set(result1);
           let tmp5 = !flag2;
           if (!flag2) {
-            tmp5 = !outer1_6;
+            tmp5 = !closure_1_6;
           }
           if (tmp5) {
             let obj = items(PX_24[5]);
             tmp5 = !obj.getIsScreenReaderEnabled();
           }
-          if (outer1_13 != null) {
-            const current = outer1_13.current;
+          if (closure_1_13 != null) {
+            const current = closure_1_13.current;
             if (current != null) {
               obj = { x: null, animated: null };
               obj[0] = result1;
@@ -101,7 +101,7 @@ export const useSegmentedControlState = function useSegmentedControlState(items)
               current.scrollTo(obj);
             }
           }
-          if (outer1_5 != null) {
+          if (closure_1_5 != null) {
             tmp10(closure_0);
           }
         });
@@ -135,9 +135,9 @@ export const useSegmentedControlState = function useSegmentedControlState(items)
   length = items.length;
   class M {
     constructor(arg0, arg1) {
-      useContext.get()[items] = arg1;
-      items = [...useContext.get()];
-      result = useContext.set(items.slice(0, length));
+      closure_7.get()[items] = arg1;
+      items = [...closure_7.get()];
+      result = closure_7.set(items.slice(0, length));
       return;
     }
   }

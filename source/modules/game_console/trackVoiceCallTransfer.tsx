@@ -1,19 +1,20 @@
-// Module ID: 9851
-// Function ID: 9852
+// Module ID: 9890
+// Function ID: 9891
 // Name: trackVoiceCallTransfer
-// Dependencies: [1391, 4539, 4541, 676, 698, 2]
+// Dependencies: [1391, 4544, 4546, 676, 698, 2]
 // Exports: default
 
-// Module 9851 (trackVoiceCallTransfer)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createRTCConnection from "createRTCConnection";
-import handleUpdate from "handleUpdate";
-import { AnalyticEvents } from "ME";
+// Module 9890 (trackVoiceCallTransfer)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "createRTCConnection" /* 4544 */;
+import closure_4 from "handleUpdate" /* 4546 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-const result = require("handleUpdate").fileFinishedImporting("modules/game_console/trackVoiceCallTransfer.tsx");
+const result = require("set").fileFinishedImporting("modules/game_console/trackVoiceCallTransfer.tsx");
 
 export default function trackVoiceCallTransfer(arg0, arg1, sessionId) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   let str = "discord_client";
   if (null != sessionId) {
     sessionById = sessionById.getSessionById(sessionId);

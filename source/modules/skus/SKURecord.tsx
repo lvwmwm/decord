@@ -1,20 +1,20 @@
-// Module ID: 4515
-// Function ID: 4516
+// Module ID: 4520
+// Function ID: 4521
 // Name: createFromServer
-// Dependencies: [1931, 4479, 4516, 676, 3975, 4517, 4518, 1403, 2]
+// Dependencies: [1931, 4483, 4521, 676, 3978, 4522, 4523, 1403, 2]
 
-// Module 4515 (createFromServer)
-import "toJS";
-import createExecutable from "createExecutable";
-import { THE_GAME_AWARD_WINNER_SKUS as closure_4 } from "set";
-import ME from "ME";
+// Module 4520 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
+import tDefault from "t" /* 3978 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 4522 */;
+import transformProfileEffectKeyFrameFromServerDefault from "transformProfileEffectKeyFrameFromServer" /* 4523 */;
+import closure_3 from "createExecutable" /* 4483 */;
+import { THE_GAME_AWARD_WINNER_SKUS as closure_4 } from "set" /* 4521 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
-({ GIFTABLE_CURRENCIES: c5, OperatingSystems: closure_6, SKUFlags: error, SKUTypes: metroImportAll } = ME);
+toJSDefault;
+({ GIFTABLE_CURRENCIES: c5, OperatingSystems: closure_6, SKUFlags: error, SKUTypes: closure_8 } = ME);
 let SKURecord;
 class SKURecord extends tmp2 {
   constructor(arg0) {
@@ -28,14 +28,11 @@ class SKURecord extends tmp2 {
 }
 const prototype = SKURecord.prototype;
 SKURecord["createFromServer"] = function createFromServer(id) {
-  let deleted;
-  let eligible_offers;
-  let name;
   const price = id.price;
   let obj = { id: id.id, type: id.type, applicationId: id.application_id, application: null, eligiblePaymentGateways: null, googleSkuIds: null, productLine: null, name: null, releaseDate: null, preorderReleaseAt: null, preorderApproximateReleaseDate: null, summary: null, features: null, genres: null, dependentSkuId: null, manifests: null, availableRegions: null, accessType: null, systemRequirements: null, contentRating: null, contentRatingAgency: null, legalNotice: null, price: null, prices: null, premium: null, showAgeGate: null, restricted: null, slug: null, exclusive: null, locales: null, flags: null, externalPurchaseUrl: null, deleted: null, bundledSkuIds: null, bundledSkus: null, tenantMetadata: null, selectedOptions: null, productId: null, thumbnailAssetId: null, description: null, orbsReward: null, eligibleOffers: null, previewAssetPaths: null };
   let fromServer = null;
   if (null != id.application) {
-    fromServer = createExecutable.createFromServer(id.application);
+    fromServer = closure_3.createFromServer(id.application);
   }
   obj[3] = fromServer;
   let prop = id.eligible_payment_gateways;
@@ -55,12 +52,12 @@ SKURecord["createFromServer"] = function createFromServer(id) {
   obj[7] = name;
   let tmp6 = null;
   if (null != id.release_date) {
-    tmp6 = importDefault(3975)(id.release_date);
+    tmp6 = tDefault(id.release_date);
   }
   obj[8] = tmp6;
   let tmp9 = null;
   if (null != id.preorder_release_at) {
-    tmp9 = importDefault(3975)(id.preorder_release_at);
+    tmp9 = tDefault(id.preorder_release_at);
   }
   obj[9] = tmp9;
   ({ preorder_approximate_release_date: obj[10], summary: obj[11] } = id);
@@ -76,7 +73,7 @@ SKURecord["createFromServer"] = function createFromServer(id) {
     tmp14 = obj;
   }
   obj[22] = tmp14;
-  obj[23] = importDefault(4517)(id.prices);
+  obj[23] = getPricesFromServerDefault(id.prices);
   let flag = id.premium;
   if (flag == null) {
     flag = false;
@@ -114,7 +111,7 @@ SKURecord["createFromServer"] = function createFromServer(id) {
     mapped = [];
   }
   obj[34] = mapped;
-  obj[35] = importDefault(4518)(id.tenant_metadata);
+  obj[35] = transformProfileEffectKeyFrameFromServerDefault(id.tenant_metadata);
   const selected_options = id.selected_options;
   let mapped1;
   if (selected_options != null) {

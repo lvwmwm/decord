@@ -1,27 +1,26 @@
-// Module ID: 15696
-// Function ID: 15697
+// Module ID: 15765
+// Function ID: 15766
 // Name: renderChannelPressableWrapper
-// Dependencies: [19, 17, 21, 10056, 2]
+// Dependencies: [19, 17, 21, 10095, 2]
 // Exports: renderChannelPressableWrapper
 
-// Module 15696 (renderChannelPressableWrapper)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 15765 (renderChannelPressableWrapper)
+import noopAll from "noop" /* 19 */;
+import getLayoutStyles from "getLayoutStyles" /* 10095 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelPressableWrapper.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelPressableWrapper.tsx");
 
 export const renderChannelPressableWrapper = function renderChannelPressableWrapper(children, panelVariant) {
-  let isThread;
-  let launchpad;
-  let layout;
   let flag = panelVariant.panelVariant;
   ({ layout, launchpad, isThread } = panelVariant);
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(10056) /* getLayoutStyles */;
+  let obj = getLayoutStyles;
   const layout2 = obj.getLayoutStyles(layout, launchpad).layout;
   if (isThread) {
     let marginThread = layout2.marginThread;

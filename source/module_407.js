@@ -3,8 +3,10 @@
 // Dependencies: [19, 387, 298]
 
 // Module 407
-import "noop";
-import createAnimatedComponent from "createAnimatedComponent";
+import noopAll from "noop" /* 19 */;
+import useTextPressabilityDefault from "useTextPressability" /* 298 */;
+import createAnimatedComponentDefault from "createAnimatedComponent" /* 387 */;
 
+noopAll;
 
-export default createAnimatedComponent(require("useTextPressability"));
+export default createAnimatedComponentDefault(useTextPressabilityDefault);

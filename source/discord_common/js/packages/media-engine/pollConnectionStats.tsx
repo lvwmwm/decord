@@ -1,14 +1,14 @@
-// Module ID: 4577
-// Function ID: 4578
+// Module ID: 4583
+// Function ID: 4584
 // Name: pollConnectionStats
-// Dependencies: [5, 4569, 4578, 2]
+// Dependencies: [5, 4574, 4584, 2]
 // Exports: default
 
-// Module 4577 (pollConnectionStats)
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 4583 (pollConnectionStats)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
-const result = require("STATS_INTERVAL").fileFinishedImporting("../discord_common/js/packages/media-engine/pollConnectionStats.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/pollConnectionStats.tsx");
 
 export default function pollConnectionStats(on) {
   const _require = on;
@@ -36,7 +36,7 @@ export default function pollConnectionStats(on) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -54,30 +54,30 @@ export default function pollConnectionStats(on) {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_3 = tmp;
-              let c2 = tmp2;
-              let closure_0;
+              closure_3 = tmp;
+              c2 = tmp2;
+              closure_0 = undefined;
               let items;
               c2 = undefined;
               closure_3 = undefined;
-              let tmp40 = outer1_1;
-              if (!outer1_1) {
+              let tmp40 = closure_1_1;
+              if (!closure_1_1) {
                 items = [];
                 closure_0 = items;
-                let tmp17 = outer1_0;
-                let eachConnectionResult = outer1_0.eachConnection((connection) => arr.push({ connection, stats: connection.emitStats() }));
+                let tmp17 = closure_1_0;
+                let eachConnectionResult = closure_1_0.eachConnection((connection) => arr.push({ connection, stats: connection.emitStats() }));
                 items = [];
                 let tmp19 = items;
                 closure_0 = items[Symbol.iterator]();
               }
               let num5 = 3;
               c7 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp5) {
             let tmp14 = closure_4;
             let tmp15 = closure_4;
-            let c5 = 0;
+            c5 = 0;
             let tmp16 = closure_0;
             closure_0.return();
             throw closure_4;
@@ -91,7 +91,7 @@ export default function pollConnectionStats(on) {
             closure_0.return();
             let num2 = 3;
             c7 = 3;
-            let obj1 = { value: null, done: true };
+            obj1 = { value: null, done: true };
             obj1[0] = arg1;
             return obj1;
           } else {
@@ -116,13 +116,13 @@ export default function pollConnectionStats(on) {
             let tmp25 = c2;
             let tmp26 = closure_3;
             let tmp27 = closure_0;
-            let tmp28 = outer1_0;
-            let tmp29 = outer1_1;
+            let tmp28 = closure_1_0;
+            let tmp29 = closure_1_1;
             let tmp30 = items;
-            let emitResult = closure_0.emit(outer1_0(outer1_1[1]).MediaEngineEvent.ConnectionStats, items);
+            let emitResult = closure_0.emit(closure_1_0(closure_1_1[1]).MediaEngineEvent.ConnectionStats, items);
             let _setTimeout = setTimeout;
             let tmp32 = c2;
-            let timerId = setTimeout(c2, outer1_0(outer1_1[2]).STATS_INTERVAL);
+            let timerId = setTimeout(c2, closure_1_0(closure_1_1[2]).STATS_INTERVAL);
           } else {
             let tmp23 = c2;
             c5 = 1;
@@ -138,7 +138,7 @@ export default function pollConnectionStats(on) {
         }
       }
     });
-    const _pollStats = tmp;
+    closure_3 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -147,10 +147,10 @@ export default function pollConnectionStats(on) {
     }
     return applyArgumentsResult;
   }
-  const dependencyMap = false;
-  on.on(_require(4569).MediaEngineEvent.Destroy, () => {
-    let c1 = true;
+  dependencyMap = false;
+  on.on(_require(4574).MediaEngineEvent.Destroy, () => {
+    c1 = true;
     return true;
   });
-  let timerId = setTimeout(pollStats, _require(4578).STATS_INTERVAL);
+  let timerId = setTimeout(pollStats, _require(4584).STATS_INTERVAL);
 };

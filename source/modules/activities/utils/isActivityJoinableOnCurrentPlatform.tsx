@@ -1,22 +1,22 @@
-// Module ID: 12132
-// Function ID: 12133
+// Module ID: 12184
+// Function ID: 12185
 // Name: isActivityJoinableOnCurrentPlatform
-// Dependencies: [676, 501, 1625, 7260, 2]
+// Dependencies: [676, 501, 1625, 7298, 2]
 // Exports: default, getCurrentActivityGamePlatform, isActivityJoinable
 
-// Module 12132 (isActivityJoinableOnCurrentPlatform)
-import ME from "ME";
+// Module 12184 (isActivityJoinableOnCurrentPlatform)
+import set from "set" /* 2 */;
+import PlatformTypes from "PlatformTypes" /* 501 */;
+import hasFlagDefault from "hasFlag" /* 7298 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
-let c5;
 ({ ActivityFlags: c3, ActivityGamePlatforms: c4, ActivityTypes: c5 } = ME);
-const result = require("isMetaQuest").fileFinishedImporting("modules/activities/utils/isActivityJoinableOnCurrentPlatform.tsx");
+const result = set.fileFinishedImporting("modules/activities/utils/isActivityJoinableOnCurrentPlatform.tsx");
 
 export default function isActivityJoinableOnCurrentPlatform(type) {
   let tmp = null == type;
   if (!tmp) {
-    tmp = !importDefault(7260)(type, constants.JOIN);
+    tmp = !hasFlagDefault(type, constants.JOIN);
   }
   if (!tmp) {
     tmp = type.type !== constants3.PLAYING;
@@ -61,7 +61,7 @@ export default function isActivityJoinableOnCurrentPlatform(type) {
       }
       return hasItem;
     }
-    obj = require(501) /* PlatformTypes */;
+    obj = PlatformTypes;
   } else {
     return false;
   }
@@ -83,7 +83,7 @@ export const getCurrentActivityGamePlatform = function getCurrentActivityGamePla
 export const isActivityJoinable = function isActivityJoinable(type) {
   let tmp = null == type;
   if (!tmp) {
-    tmp = !importDefault(7260)(type, constants.JOIN);
+    tmp = !hasFlagDefault(type, constants.JOIN);
   }
   if (!tmp) {
     tmp = type.type !== constants3.PLAYING;

@@ -1,13 +1,15 @@
-// Module ID: 12469
-// Function ID: 12470
+// Module ID: 12521
+// Function ID: 12522
 // Name: doesOrientationMatchLockState
-// Dependencies: [4481, 2]
+// Dependencies: [4485, 2]
 // Exports: default
 
-// Module 12469 (doesOrientationMatchLockState)
-import { OrientationLockState } from "items3";
+// Module 12521 (doesOrientationMatchLockState)
+import set from "set" /* 2 */;
+import items3 from "items3" /* 4485 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/native/doesOrientationMatchLockState.tsx");
+const OrientationLockState = items3.OrientationLockState;
+const result = set.fileFinishedImporting("modules/activities/native/doesOrientationMatchLockState.tsx");
 
 export default function doesOrientationMatchLockState(arg0, arg1) {
   let tmp = null == arg1;

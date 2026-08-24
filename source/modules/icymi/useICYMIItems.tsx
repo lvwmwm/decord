@@ -1,17 +1,18 @@
-// Module ID: 15742
-// Function ID: 15743
+// Module ID: 15811
+// Function ID: 15812
 // Name: createItem
-// Dependencies: [19, 9044, 7589, 589, 9057, 2]
+// Dependencies: [19, 9081, 7627, 589, 9094, 2]
 // Exports: default
 
-// Module 15742 (createItem)
-import noop from "noop";
-import filterStaffGuild from "filterStaffGuild";
+// Module 15811 (createItem)
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7627 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "filterStaffGuild" /* 9081 */;
 
-const require = arg1;
+require = arg1;
 function createItem(id, type, arg2) {
   type = type.type;
-  if (require(7589) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE === type) {
+  if (MessageEmbedTypes.ICYMIItemTypes.MESSAGE === type) {
     if (type.message.id === type.message.channel_id) {
       if (null != type.threadChannel) {
         let obj = { id: null, timestamp: null, channelType: null, data: null, score: null, debugScore: null, unread: null };
@@ -26,7 +27,7 @@ function createItem(id, type, arg2) {
         const _JSON5 = JSON;
         obj[5] = JSON.stringify(id.score_components);
         obj[6] = arg2;
-        let obj1 = obj;
+        obj1 = obj;
       }
       return obj1;
     }
@@ -45,9 +46,9 @@ function createItem(id, type, arg2) {
     obj1[5] = JSON.stringify(id.score_components);
     obj1[6] = arg2;
   } else {
-    if (tmp(7589).ICYMIItemTypes.ACTIVITY !== type) {
-      if (tmp(7589).ICYMIItemTypes.CUSTOM_STATUS !== type) {
-        if (tmp(7589).ICYMIItemTypes.GUILD_EVENT === type) {
+    if (tmp(7627).ICYMIItemTypes.ACTIVITY !== type) {
+      if (tmp(7627).ICYMIItemTypes.CUSTOM_STATUS !== type) {
+        if (tmp(7627).ICYMIItemTypes.GUILD_EVENT === type) {
           const obj3 = { id: null, timestamp: null, data: null, score: null, debugScore: null, unread: null };
           obj3[0] = id.id;
           const _Date2 = Date;
@@ -60,7 +61,7 @@ function createItem(id, type, arg2) {
           obj3[4] = JSON.stringify(id.score_components);
           obj3[5] = arg2;
           return obj3;
-        } else if (tmp(7589).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
+        } else if (tmp(7627).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
           obj = { id: null, timestamp: null, data: null, score: null, debugScore: null, unread: null };
           obj[0] = id.id;
           const _Date = Date;
@@ -90,28 +91,28 @@ function createItem(id, type, arg2) {
     return obj5;
   }
 }
-const result = require("MessageEmbedTypes").fileFinishedImporting("modules/icymi/useICYMIItems.tsx");
+const result = require("set").fileFinishedImporting("modules/icymi/useICYMIItems.tsx");
 
 export default function useICYMIItems() {
   let obj = stateFromStores1(589);
-  const items = [filterStaffGuild];
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => store.getUnreadDisplayItems());
-  const items1 = [filterStaffGuild];
+  const items1 = [closure_4];
   stateFromStores1 = stateFromStores1(589).useStateFromStores(items1, () => store.getReadDisplayItems());
   const obj2 = stateFromStores1(589);
-  const items2 = [filterStaffGuild];
+  const items2 = [closure_4];
   const stateFromStores2 = stateFromStores1(589).useStateFromStores(items2, () => store.getNextIndexToHydrate());
   const obj3 = stateFromStores1(589);
-  const items3 = [filterStaffGuild];
+  const items3 = [closure_4];
   const stateFromStoresObject = stateFromStores1(589).useStateFromStoresObject(items3, () => store.getHydratedItems());
   const obj4 = stateFromStores1(589);
-  const items4 = [filterStaffGuild];
+  const items4 = [closure_4];
   const stateFromStores3 = stateFromStores1(589).useStateFromStores(items4, () => store.getMissingItems());
   const items5 = [stateFromStores1];
   const effect = React.useEffect(() => {
     stateFromStores1 = Date.now() + stateFromStores1.length;
-    outer1_1(outer1_2[4]).ackGravityItems(stateFromStores1.map((id) => {
-      let closure_0 = tmp - 1;
+    closure_1_1(closure_1_2[4]).ackGravityItems(stateFromStores1.map((id) => {
+      closure_0 = tmp - 1;
       return { id: id.id, timestamp: +closure_0 };
     }, true));
   }, items5);
@@ -132,7 +133,7 @@ export default function useICYMIItems() {
           if (tmp10) {
             let tmp11 = stateFromStores1;
             let tmp12 = dependencyMap;
-            tmp10 = tmp6.type === stateFromStores1(7589).ICYMIItemTypes.MESSAGE;
+            tmp10 = tmp6.type === stateFromStores1(7627).ICYMIItemTypes.MESSAGE;
           }
           if (tmp10) {
             let message_context = tmp6.data.message_context;
@@ -183,7 +184,7 @@ export default function useICYMIItems() {
           if (tmp23) {
             let tmp24 = stateFromStores1;
             let tmp25 = dependencyMap;
-            tmp23 = tmp19.type === stateFromStores1(7589).ICYMIItemTypes.MESSAGE;
+            tmp23 = tmp19.type === stateFromStores1(7627).ICYMIItemTypes.MESSAGE;
           }
           if (tmp23) {
             let message_context2 = tmp19.data.message_context;

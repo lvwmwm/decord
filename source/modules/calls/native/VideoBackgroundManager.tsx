@@ -1,12 +1,13 @@
-// Module ID: 8415
-// Function ID: 8416
+// Module ID: 8454
+// Function ID: 8455
 // Name: prototype
-// Dependencies: [1979, 5038, 2]
+// Dependencies: [1980, 5043, 2]
 
-// Module 8415 (prototype)
-import handleConnectionOpen from "handleConnectionOpen";
-import "initialize";
+// Module 8454 (prototype)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_0 from "handleConnectionOpen" /* 1980 */;
 
+initializeDefault;
 let prototype = function VideoBackgroundManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   const voiceChannelId = applyArgumentsResult;

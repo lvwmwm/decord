@@ -1,54 +1,51 @@
-// Module ID: 12321
-// Function ID: 12322
+// Module ID: 12373
+// Function ID: 12374
 // Name: exitingAnimation
-// Dependencies: [32, 19, 17, 4662, 9186, 9187, 1922, 5365, 8931, 6951, 21, 4661, 712, 4115, 4664, 589, 1629, 7139, 7159, 12317, 12318, 8323, 12299, 9192, 8935, 9450, 1236, 6952, 6286, 7178, 8125, 10367, 8035, 4333, 2]
+// Dependencies: [32, 19, 17, 4669, 9223, 9224, 1922, 5370, 8968, 6989, 21, 4668, 712, 4119, 4671, 589, 1629, 7177, 7197, 12369, 12370, 12351, 9229, 8972, 9487, 1236, 6990, 6317, 7216, 8164, 10407, 8074, 4337, 2]
 // Exports: default
 
-// Module 12321 (exitingAnimation)
-import IconButton from "IconButton";
-import useCardGridLayout from "useCardGridLayout";
-import get_ActivityIndicator from "context";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import get from "get";
-import { getWishlistProductLines } from "fromServer";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import createUserWidgetFromServer from "createUserWidgetFromServer";
-import { TrackUserProfileWishlistActions as closure_12 } from "USER_PROFILE_TOOLTIP_DELAY";
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
-import jsxProd from "apexExperiment";
-import createCacheKey from "createCacheKey";
-import { LinearTransition } from "module_4115";
-import module_300 from "module_300";
-import dampingResult from "module_100";
+// Module 12373 (exitingAnimation)
+import ThemesDefault from "Themes" /* 712 */;
+import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4671 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_8 from "get" /* 9223 */;
+import { getWishlistProductLines } from "fromServer" /* 9224 */;
+import closure_10 from "mergeGuildAvatar" /* 1922 */;
+import closure_11 from "createUserWidgetFromServer" /* 5370 */;
+import { TrackUserProfileWishlistActions as closure_12 } from "USER_PROFILE_TOOLTIP_DELAY" /* 8968 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import { LinearTransition } from "module_4119" /* 4119 */;
+import closure_17 from "module_300" /* 300 */;
+import dampingResult from "module_100" /* 100 */;
 
-let c5;
-let closure_14;
-let closure_15;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 createCacheKey = { container: null, loadingContainer: null, toggleRow: null, itemsContainer: null, itemWrapper: null, deleteButton: null };
-createCacheKey = { flex: 1, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { flex: 1, paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flex: 1, justifyContent: "center", alignItems: "center", paddingTop: require("Themes").space.PX_48 };
-let obj1 = { flex: 1, justifyContent: "center", alignItems: "center", paddingTop: require("Themes").space.PX_48 };
-createCacheKey[2] = { marginBottom: require("Themes").space.PX_16 };
+createCacheKey[1] = { flex: 1, justifyContent: "center", alignItems: "center", paddingTop: ThemesDefault.space.PX_48 };
+let obj1 = { flex: 1, justifyContent: "center", alignItems: "center", paddingTop: ThemesDefault.space.PX_48 };
+createCacheKey[2] = { marginBottom: ThemesDefault.space.PX_16 };
 createCacheKey[3] = { alignSelf: "center", flexDirection: "row", flexWrap: "wrap", gap: 16 };
 createCacheKey[4] = { position: "relative" };
-let obj2 = { marginBottom: require("Themes").space.PX_16 };
-createCacheKey[5] = { position: "absolute", top: require("Themes").space.PX_8, right: require("Themes").space.PX_8, zIndex: 1 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { position: "absolute", top: require("Themes").space.PX_8, right: require("Themes").space.PX_8, zIndex: 1 };
+let obj2 = { marginBottom: ThemesDefault.space.PX_16 };
+createCacheKey[5] = { position: "absolute", top: ThemesDefault.space.PX_8, right: ThemesDefault.space.PX_8, zIndex: 1 };
+let closure_16 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { position: "absolute", top: ThemesDefault.space.PX_8, right: ThemesDefault.space.PX_8, zIndex: 1 };
 const springifyResult = LinearTransition.springify();
 const massResult = LinearTransition.springify().mass(0.8);
 function exitingAnimation() {
   let obj = { animations: null, initialValues: null };
-  obj = { opacity: null, transform: null };
-  obj[0] = require(4664) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(0, { duration: 150 });
+  obj = { opacity: CONFIG_NEVER_ANIMATE_TIMING.withTiming(0, { duration: 150 }), transform: null };
   obj = { scale: null };
-  const obj3 = require(4664) /* CONFIG_NEVER_ANIMATE_TIMING */;
-  obj[0] = require(4664) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(0.8, { duration: 150 });
+  const obj3 = CONFIG_NEVER_ANIMATE_TIMING;
+  obj[0] = CONFIG_NEVER_ANIMATE_TIMING.withTiming(0.8, { duration: 150 });
   const items = [obj];
   obj[1] = items;
   obj[0] = obj;
@@ -60,25 +57,22 @@ exitingAnimation.__closure = { withTiming: require("CONFIG_NEVER_ANIMATE_TIMING"
 exitingAnimation.__workletHash = 17293915965800;
 exitingAnimation.__initData = { code: "function exitingAnimation_EditWishlistActionSheetTsx1(_values){const{withTiming}=this.__closure;return{animations:{opacity:withTiming(0,{duration:150}),transform:[{scale:withTiming(0.8,{duration:150})}]},initialValues:{opacity:1,transform:[{scale:1}]}};}" };
 let obj4 = { withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/EditWishlistActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/native/EditWishlistActionSheet.tsx");
 
 export default function EditWishlistActionSheet(wishlistId) {
-  let c5;
-  let rowWidth;
   wishlistId = wishlistId.wishlistId;
   const analyticsContext = wishlistId.analyticsContext;
   let analyticsLocations = wishlistId.analyticsLocations;
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
   analyticsLocations = undefined;
   c5 = undefined;
   let stateFromStores;
   let stateFromStores2;
   let first;
-  let closure_9;
-  let isEligibleForSocialLayerStorefrontMobilePurchasing;
-  let createUserWidgetFromServer;
-  let tmp = createCacheKey();
+  closure_9 = undefined;
+  closure_10 = undefined;
+  let tmp = callback3();
   dependencyMap = tmp;
   let obj = wishlistId(589);
   let items = [stateFromStores2];
@@ -86,10 +80,10 @@ export default function EditWishlistActionSheet(wishlistId) {
   if (analyticsLocations == null) {
     analyticsLocations = [];
   }
-  analyticsLocations = analyticsContext(7139)(analyticsLocations, tmp4(7159).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
+  analyticsLocations = analyticsContext(7177)(analyticsLocations, tmp4(7197).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  let tmp5 = analyticsContext(7139);
-  ({ cardWidth: c5, rowWidth } = analyticsContext(12317)(obj));
+  let tmp5 = analyticsContext(7177);
+  ({ cardWidth: c5, rowWidth } = analyticsContext(12369)(obj));
   if (null != rowWidth) {
     obj = { width: null };
     obj[0] = rowWidth;
@@ -101,13 +95,13 @@ export default function EditWishlistActionSheet(wishlistId) {
   tmp2Result = tmp2(589);
   const items2 = [first];
   const stateFromStores1 = tmp2Result.useStateFromStores(items2, () => first.isFetching(wishlistId));
-  let tmp6 = analyticsContext(12317)(obj);
-  const items3 = [isEligibleForSocialLayerStorefrontMobilePurchasing, createUserWidgetFromServer];
+  let tmp6 = analyticsContext(12369)(obj);
+  const items3 = [closure_10, closure_11];
   stateFromStores2 = wishlistId(589).useStateFromStores(items3, () => {
-    const currentUser = isEligibleForSocialLayerStorefrontMobilePurchasing.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     let wishlistSettings = null;
     if (null != currentUser) {
-      wishlistSettings = wishlistSettings.getWishlistSettings(currentUser.id, wishlistId);
+      wishlistSettings = closure_1_11.getWishlistSettings(currentUser.id, wishlistId);
     }
     return wishlistSettings;
   });
@@ -126,21 +120,15 @@ export default function EditWishlistActionSheet(wishlistId) {
       visibility = tmp.visibility;
     }
     if (null != visibility) {
-      callback(tmp.visibility === wishlistId(_undefined[20]).WishlistVisibility.PUBLIC);
+      callback(tmp.visibility === wishlistId(itemWrapper[20]).WishlistVisibility.PUBLIC);
     }
   }, items4);
-  const tmp2Result1 = wishlistId(589);
-  isEligibleForSocialLayerStorefrontMobilePurchasing = wishlistId(8323).useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "edit_wishlist_action_sheet" });
-  const items5 = [stateFromStores, isEligibleForSocialLayerStorefrontMobilePurchasing];
+  const items5 = [stateFromStores];
   const memo = obj6.useMemo(() => {
     let found;
     if (stateFromStores != null) {
       const items = stateFromStores.items;
-      found = items.filter((sku) => {
-        let obj = outer1_0(outer1_2[22]);
-        obj = { isWishlistOwner: true, isSocialLayerStorefrontMobilePurchasingEnabled: mergeGuildAvatar };
-        return obj.isEligibleWishlistItemOnMobile(sku, obj);
-      });
+      found = items.filter((sku) => callback(table[21]).isEligibleWishlistItemOnMobile(sku, { isWishlistOwner: true }));
     }
     if (found == null) {
       found = [];
@@ -150,27 +138,27 @@ export default function EditWishlistActionSheet(wishlistId) {
   const items6 = [wishlistId, first, stateFromStores, analyticsContext, analyticsLocations];
   const items7 = [wishlistId, analyticsLocations];
   callback = obj6.useCallback(() => {
-    const WishlistVisibility = wishlistId(_undefined[20]).WishlistVisibility;
+    const WishlistVisibility = wishlistId(itemWrapper[20]).WishlistVisibility;
     callback(!first);
-    let obj = analyticsContext(_undefined[23]);
+    let obj = analyticsContext(itemWrapper[22]);
     const result = obj.updateWishlistVisibility(wishlistId, first ? WishlistVisibility.PRIVATE : WishlistVisibility.PUBLIC);
     obj = {};
     const merged = Object.assign(analyticsContext);
     obj.analyticsLocations = analyticsLocations;
     obj.wishlistId = wishlistId;
-    obj.action = first ? outer1_12.WISHLIST_TOGGLE_PRIVATE : outer1_12.WISHLIST_TOGGLE_PUBLIC;
+    obj.action = first ? closure_1_12.WISHLIST_TOGGLE_PRIVATE : closure_1_12.WISHLIST_TOGGLE_PUBLIC;
     let tmp8;
     if (null != stateFromStores) {
       tmp8 = callback(tmp7);
     }
     obj.productLines = tmp8;
-    const result1 = wishlistId(_undefined[24]).trackUserProfileWishlistAction(obj);
+    const result1 = wishlistId(itemWrapper[23]).trackUserProfileWishlistAction(obj);
   }, items6);
-  createUserWidgetFromServer = obj6.useCallback((outer1_1) => {
-    const result = analyticsContext(_undefined[23]).removeSkuFromWishlist(wishlistId, outer1_1, analyticsLocations);
+  closure_10 = obj6.useCallback((closure_1_1) => {
+    const result = analyticsContext(itemWrapper[22]).removeSkuFromWishlist(wishlistId, closure_1_1, analyticsLocations);
   }, items7);
-  let obj1 = { scrollable: true, startExpanded: true, title: null, children: null };
-  const tmp2Result2 = wishlistId(8323);
+  obj1 = { scrollable: true, startExpanded: true, title: null, children: null };
+  const tmp2Result1 = wishlistId(589);
   let intl = tmp2(1236).intl;
   obj1[2] = intl.string(wishlistId(1236).t["OEgx/4"]);
   let obj2 = { contentContainerStyle: { paddingBottom: analyticsContext(1629)().bottom }, children: null };
@@ -184,67 +172,67 @@ export default function EditWishlistActionSheet(wishlistId) {
   obj6[1] = intl3.string(wishlistId(1236).t.dw58pE);
   obj6[2] = first;
   obj6[3] = callback;
-  obj5[1] = callback2(wishlistId(7178).TableSwitchRow, obj6);
-  obj4[1] = callback2(wishlistId(6286).TableRowGroup, obj5);
+  obj5[1] = callback2(wishlistId(7216).TableSwitchRow, obj6);
+  obj4[1] = callback2(wishlistId(6317).TableRowGroup, obj5);
   const items8 = [callback2(stateFromStores, obj4), ];
   if (stateFromStores1) {
     if (null == stateFromStores) {
       const obj7 = { style: null, children: null };
       obj7[0] = tmp.loadingContainer;
-      obj7[1] = tmp17(c5, {});
-      let tmp17Result = tmp17(tmp20, obj7);
+      obj7[1] = tmp16(c5, {});
+      let tmp16Result = tmp16(tmp19, obj7);
     }
-    items8[1] = tmp17Result;
+    items8[1] = tmp16Result;
     obj3[1] = items8;
-    obj2[1] = closure_15(tmp20, obj3);
-    obj1[3] = tmp17(tmp2(6952).BottomSheetScrollView, obj2);
-    return tmp17(tmp4Result, obj1);
+    obj2[1] = closure_15(tmp19, obj3);
+    obj1[3] = tmp16(tmp2(6990).BottomSheetScrollView, obj2);
+    return tmp16(tmp4Result, obj1);
   }
-  tmp17Result = null;
+  tmp16Result = null;
   if (0 !== memo.length) {
     const obj8 = { style: null, children: null };
     const items9 = [tmp.itemsContainer, tmp7];
     obj8[0] = items9;
     obj8[1] = memo.map((sku) => {
       let skuId = sku;
-      let closure_0 = sku;
+      closure_0 = sku;
       if (null == sku.sku) {
         return null;
       } else {
-        let str = _undefined;
+        let str = itemWrapper;
         let obj = { style: null, exiting: null, layout: null, children: null };
-        obj[0] = _undefined.itemWrapper;
+        obj[0] = itemWrapper.itemWrapper;
         let tmp6;
-        if (!IconButton) {
-          tmp6 = outer1_18;
+        if (!closure_3) {
+          tmp6 = closure_1_18;
         }
         obj[1] = tmp6;
         let tmp7;
         if (!tmp5) {
-          tmp7 = outer1_17;
+          tmp7 = closure_1_17;
         }
         obj[2] = tmp7;
         obj = { sku: null, isOwned: null, size: null, accessibilityHidden: true };
         ({ sku: obj2[0], isOwned: obj2[1] } = skuId);
         obj[2] = c5;
-        const items = [outer1_14(analyticsContext(str[31]), obj), ];
+        const items = [closure_1_14(analyticsContext(str[30]), obj), ];
         obj = { style: null, children: null };
-        obj[0] = _undefined.deleteButton;
+        obj[0] = itemWrapper.deleteButton;
         let stringResult = wishlistId;
-        let obj1 = { variant: "primary-overlay", size: "sm", icon: null, onPress: null, accessibilityLabel: null };
+        obj1 = { variant: "primary-overlay", size: "sm", icon: null, onPress: null, accessibilityLabel: null };
         const obj2 = { size: "sm", color: null };
         obj2[1] = analyticsContext(str[12]).colors.ICON_FEEDBACK_CRITICAL;
-        obj1[2] = outer1_14(wishlistId(str[33]).TrashIcon, obj2);
+        obj1[2] = closure_1_14(wishlistId(str[32]).TrashIcon, obj2);
         obj1[3] = function onPress() {
-          return outer1_11(sku.skuId);
+          return closure_1_10(sku.skuId);
         };
-        const intl = wishlistId(str[26]).intl;
+        const intl = wishlistId(str[25]).intl;
         const obj3 = { productName: null };
         obj3[0] = skuId.skuName;
-        const formatToPlainStringResult = intl.formatToPlainString(wishlistId(str[26]).t["IBBF8/"], obj3);
+        const formatToPlainStringResult = intl.formatToPlainString(wishlistId(str[25]).t["IBBF8/"], obj3);
         if (skuId.isOwned) {
-          const intl2 = stringResult(str[26]).intl;
-          stringResult = intl2.string(stringResult(str[26]).t["6cfuDj"]);
+          const intl2 = stringResult(str[25]).intl;
+          stringResult = intl2.string(stringResult(str[25]).t["6cfuDj"]);
           const _HermesInternal = HermesInternal;
           str = "";
           let combined = "" + formatToPlainStringResult + ", " + stringResult;
@@ -252,20 +240,20 @@ export default function EditWishlistActionSheet(wishlistId) {
           combined = formatToPlainStringResult;
         }
         obj1[4] = combined;
-        obj1 = tmp8(wishlistId(str[32]).IconButton, obj1);
+        obj1 = tmp8(wishlistId(str[31]).IconButton, obj1);
         obj[1] = obj1;
         obj = tmp8(stateFromStores, obj);
         items[1] = obj;
         obj[3] = items;
         skuId = skuId.skuId;
-        outer1_15(analyticsContext(_undefined[30]), obj, skuId);
-        const tmp = outer1_15;
+        closure_1_15(analyticsContext(itemWrapper[29]), obj, skuId);
+        const tmp = closure_1_15;
         const tmp10 = stateFromStores;
-        const tmp3 = analyticsContext(_undefined[30]);
-        const tmp4 = _undefined;
-        tmp5 = IconButton;
+        const tmp3 = analyticsContext(itemWrapper[29]);
+        const tmp4 = itemWrapper;
+        tmp5 = closure_3;
       }
     });
-    tmp17Result = tmp17(tmp20, obj8);
+    tmp16Result = tmp16(tmp19, obj8);
   }
 };

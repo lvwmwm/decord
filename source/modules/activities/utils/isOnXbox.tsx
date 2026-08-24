@@ -1,14 +1,17 @@
-// Module ID: 12099
-// Function ID: 12100
+// Module ID: 12151
+// Function ID: 12152
 // Name: isOnXbox
-// Dependencies: [4481, 676, 2]
+// Dependencies: [4485, 676, 2]
 // Exports: default
 
-// Module 12099 (isOnXbox)
-import { XBOX_ACTIVITY_APPLICATION_ID as closure_0 } from "items3";
-import { ActivityGamePlatforms } from "ME";
+// Module 12151 (isOnXbox)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import items3 from "items3" /* 4485 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/utils/isOnXbox.tsx");
+let closure_0 = items3.XBOX_ACTIVITY_APPLICATION_ID;
+const ActivityGamePlatforms = ME.ActivityGamePlatforms;
+const result = set.fileFinishedImporting("modules/activities/utils/isOnXbox.tsx");
 
 export default function isOnXbox(application_id) {
   application_id = undefined;

@@ -1,13 +1,15 @@
-// Module ID: 10188
-// Function ID: 10189
+// Module ID: 10227
+// Function ID: 10228
 // Name: dismissKeyboard
 // Dependencies: [17, 2]
 // Exports: dismissKeyboard
 
-// Module 10188 (dismissKeyboard)
-import { Keyboard } from "get ActivityIndicator";
+// Module 10227 (dismissKeyboard)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-const result = require("set").fileFinishedImporting("utils/native/KeyboardUtils.tsx");
+const Keyboard = get_ActivityIndicator.Keyboard;
+const result = set.fileFinishedImporting("utils/native/KeyboardUtils.tsx");
 
 export const dismissKeyboard = function dismissKeyboard() {
   let flag = arg0;

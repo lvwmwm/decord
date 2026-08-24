@@ -1,12 +1,14 @@
-// Module ID: 13815
-// Function ID: 13816
+// Module ID: 13873
+// Function ID: 13874
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 13815 (enforcing)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 13873 (enforcing)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeThemeModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeThemeModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeThemeModule.tsx");
 
 export default enforcing;

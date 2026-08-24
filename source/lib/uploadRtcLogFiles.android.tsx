@@ -1,23 +1,22 @@
-// Module ID: 10132
-// Function ID: 10133
+// Module ID: 10171
+// Function ID: 10172
 // Name: _uploadRtcLogFiles
-// Dependencies: [5, 676, 3, 8949, 4273, 530, 2]
+// Dependencies: [5, 676, 3, 8986, 4277, 530, 2]
 // Exports: uploadRtcLogFiles
 
-// Module 10132 (_uploadRtcLogFiles)
-import sendRequest from "sendRequest";
-import ME from "ME";
+// Module 10171 (_uploadRtcLogFiles)
+import timestampDefault from "timestamp" /* 3 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
 const require = arg1;
 function _uploadRtcLogFiles() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0) {
       if (c8 === 2) {
         c8 = 3;
@@ -30,7 +29,7 @@ function _uploadRtcLogFiles() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -49,10 +48,10 @@ function _uploadRtcLogFiles() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_4 = tmp;
-              let closure_3 = tmp4;
+              closure_4 = tmp;
+              closure_3 = tmp4;
               let tmp81 = callback;
-              let closure_1;
+              closure_1 = undefined;
               let length;
               let items = ["discord-webrtc_0", "discord-webrtc_1", "discord-last-webrtc_0", "discord-last-webrtc_1"];
               length = items;
@@ -63,7 +62,7 @@ function _uploadRtcLogFiles() {
           } else if (1 === tmp4) {
             let tmp52 = logger;
             let tmp53 = logger;
-            let c6 = 0;
+            c6 = 0;
             let tmp54 = closure_1;
             closure_1.return();
             throw logger;
@@ -134,7 +133,7 @@ function _uploadRtcLogFiles() {
               closure_1.return();
               let num4 = 3;
               c8 = 3;
-              let obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -196,7 +195,7 @@ function _uploadRtcLogFiles() {
           if (closure_1 === undefined) {
             let num7 = 3;
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else {
             let tmp58 = closure_3;
             closure_1 = tmp57;
@@ -218,7 +217,7 @@ function _uploadRtcLogFiles() {
       }
     })();
   });
-  const _uploadRtcLogFiles = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -228,9 +227,9 @@ function _uploadRtcLogFiles() {
   return applyArgumentsResult;
 }
 ({ DebugLogCategory: c3, Endpoints: c4 } = ME);
-let c5 = new require("_readFile")("uploadRtcLogFiles");
-const tmp3 = new require("_readFile")("uploadRtcLogFiles");
-const result = require("timestamp").fileFinishedImporting("lib/uploadRtcLogFiles.android.tsx");
+let closure_5 = new timestampDefault("uploadRtcLogFiles");
+const tmp3 = new timestampDefault("uploadRtcLogFiles");
+const result = require("set").fileFinishedImporting("lib/uploadRtcLogFiles.android.tsx");
 
 export const uploadRtcLogFiles = function uploadRtcLogFiles(arg0, closure_0) {
   const self = this;

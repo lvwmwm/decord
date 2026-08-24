@@ -1,34 +1,35 @@
-// Module ID: 12707
-// Function ID: 12708
-// Dependencies: [19, 17, 21, 4661, 712, 1297, 11952, 4734, 1236, 2]
+// Module ID: 12762
+// Function ID: 12763
+// Dependencies: [19, 17, 21, 4668, 712, 1297, 12001, 4739, 1236, 2]
 
-// Module 12707
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 12762
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import registerAssetDefault from "registerAsset" /* 12001 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { container: null };
-obj = { flex: 1, flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8 };
+obj = { flex: 1, flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_8 };
 obj[0] = obj;
 let closure_6 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(function HomeChannelHeader() {
+const memoResult = importAllResult.memo(function HomeChannelHeader() {
   let obj = { style: callback3().container, children: null };
-  obj = { source: null, size: null, disableColor: true };
-  obj[0] = importDefault(11952);
-  obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
-  const items = [callback(require(1297) /* Button */.Icon, obj), ];
+  obj = { source: registerAssetDefault, size: Button.Icon.Sizes.MEDIUM, disableColor: true };
+  const items = [callback(Button.Icon, obj), ];
   obj = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.Ym2Ri6);
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.Ym2Ri6);
+  items[1] = callback(Text.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 });
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/channel/header/HomeChannelHeader.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/channel/header/HomeChannelHeader.tsx");
 
 export default memoResult;

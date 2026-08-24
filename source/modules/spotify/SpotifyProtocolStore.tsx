@@ -1,19 +1,21 @@
-// Module ID: 7244
-// Function ID: 7245
+// Module ID: 7282
+// Function ID: 7283
 // Name: isProtocolRegistered
 // Dependencies: [589, 709, 2]
 
-// Module 7244 (isProtocolRegistered)
-import { Store } from "initialize";
+// Module 7282 (isProtocolRegistered)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0 = false;
+const Store = initializeDefault.Store;
 class SpotifyProtocolStore extends Store {
 }
 SpotifyProtocolStore.prototype["isProtocolRegistered"] = function isProtocolRegistered() {
   return c0;
 };
 SpotifyProtocolStore.displayName = "SpotifyProtocolStore";
-const spotifyProtocolStore = new SpotifyProtocolStore(require("dispatcher"), {
+const spotifyProtocolStore = new SpotifyProtocolStore(dispatcherDefault, {
   SPOTIFY_SET_PROTOCOL_REGISTERED: function handleSetProtocolRegistered(isRegistered) {
     isRegistered = isRegistered.isRegistered;
   }

@@ -1,36 +1,37 @@
-// Module ID: 11721
-// Function ID: 11722
+// Module ID: 11770
+// Function ID: 11771
 // Name: GuildPowerupsSectionHeader
-// Dependencies: [17, 21, 4661, 712, 8307, 4734, 2]
+// Dependencies: [17, 21, 4668, 712, 8347, 4739, 2]
 // Exports: default
 
-// Module 11721 (GuildPowerupsSectionHeader)
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11770 (GuildPowerupsSectionHeader)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import apexExperiment from "apexExperiment" /* 8347 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
+const View = get_ActivityIndicator.View;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let obj = { headerContainer: null };
-obj = { padding: require("Themes").space.PX_16 };
+obj = { padding: ThemesDefault.space.PX_16 };
 obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
-const result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSectionHeader.tsx");
+const result = set.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSectionHeader.tsx");
 
 export default function GuildPowerupsSectionHeader(arg0) {
-  let description;
-  let title;
   ({ title, description } = arg0);
-  let obj = require(8307) /* apexExperiment */;
+  let obj = apexExperiment;
   obj = { style: callback2().headerContainer, children: null };
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsSectionHeader");
-  const items = [callback(require(4734) /* Text */.Text, { variant: "heading-lg/semibold", accessibilityRole: "header", children: title }), ];
+  const items = [callback(Text.Text, { variant: "heading-lg/semibold", accessibilityRole: "header", children: title }), ];
   let str = "text-md/normal";
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-sm/normal";
   }
-  items[1] = callback(require(4734) /* Text */.Text, { variant: str, children: description });
+  items[1] = callback(Text.Text, { variant: str, children: description });
   obj[1] = items;
   return closure_4(View, obj);
 };

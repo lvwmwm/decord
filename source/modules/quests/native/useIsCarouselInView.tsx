@@ -1,27 +1,25 @@
-// Module ID: 14432
-// Function ID: 14433
+// Module ID: 14500
+// Function ID: 14501
 // Name: useIsCarouselInView
 // Dependencies: [32, 19, 1494, 2]
 // Exports: default
 
-// Module 14432 (useIsCarouselInView)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 14500 (useIsCarouselInView)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
 
-const result = require("useWindowDimensions").fileFinishedImporting("modules/quests/native/useIsCarouselInView.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/useIsCarouselInView.tsx");
 
 export default function useIsCarouselInView() {
-  let noop;
-  let tmp4;
   const containerRef = React.useRef(null);
   height = containerRef(height[2])().height;
   const callback = React.useRef(height);
   const items = [height];
   const effect = React.useEffect(() => {
-    _slicedToArray.current = height;
+    closure_2.current = height;
   }, items);
-  [tmp4, noop] = callback(React.useState(true), 2);
-  let closure_4 = React.useRef(isInView);
+  [tmp4, closure_3] = callback(React.useState(true), 2);
+  closure_4 = React.useRef(isInView);
   const effect1 = React.useEffect(() => {
     const interval = setInterval(() => {
       if (null != ref.current) {

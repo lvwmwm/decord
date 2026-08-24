@@ -1,28 +1,30 @@
-// Module ID: 13253
-// Function ID: 13254
+// Module ID: 13308
+// Function ID: 13309
 // Name: reset
-// Dependencies: [13252, 13254, 589, 709, 2]
+// Dependencies: [13307, 13309, 589, 709, 2]
 
-// Module 13253 (reset)
-import map from "map";
-import closure_1 from "map";
-import { Store } from "initialize";
+// Module 13308 (reset)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "map" /* 13307 */;
+import closure_1 from "map" /* 13309 */;
 
 function reset() {
-  let closure_2 = [];
+  closure_2 = [];
 }
 let closure_2 = [];
+const Store = initializeDefault.Store;
 class GlobalDiscoveryServersSearchLayoutStore extends Store {
 }
 const prototype = GlobalDiscoveryServersSearchLayoutStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(map, closure_1);
+  this.waitFor(closure_0, closure_1);
 };
 prototype["getVisibleTabs"] = function getVisibleTabs() {
   return closure_2;
 };
 GlobalDiscoveryServersSearchLayoutStore.displayName = "GlobalDiscoveryServersSearchLayoutStore";
-const globalDiscoveryServersSearchLayoutStore = new GlobalDiscoveryServersSearchLayoutStore(require("dispatcher"), {
+const globalDiscoveryServersSearchLayoutStore = new GlobalDiscoveryServersSearchLayoutStore(dispatcherDefault, {
   CONNECTION_OPEN: reset,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_LAYOUT_RESET: reset,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS: function handleGlobalDiscoveryServersSearchCountSuccess(query) {
@@ -32,6 +34,6 @@ const globalDiscoveryServersSearchLayoutStore = new GlobalDiscoveryServersSearch
     }
   }
 });
-const result = require("initialize").fileFinishedImporting("modules/global_discovery_servers/GlobalDiscoveryServersSearchLayoutStore.tsx");
+const result = require("set").fileFinishedImporting("modules/global_discovery_servers/GlobalDiscoveryServersSearchLayoutStore.tsx");
 
 export default globalDiscoveryServersSearchLayoutStore;

@@ -1,19 +1,20 @@
-// Module ID: 7291
-// Function ID: 7292
+// Module ID: 7329
+// Function ID: 7330
 // Name: getIdFromHistoryItem
-// Dependencies: [1391, 589, 709, 4230, 4229, 4232, 2]
+// Dependencies: [1391, 589, 709, 4234, 4233, 4236, 2]
 // Exports: getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 7291 (getIdFromHistoryItem)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { PersistedStore } from "initialize";
+// Module 7329 (getIdFromHistoryItem)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;
 function getIdFromHistoryItem(str) {
   return str.replace(regExp, "");
 }
 function removeHistoryItem(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   let flag = map.delete(arg0);
   if (flag) {
     arr = arr.filter((arg0) => arg0 !== combined);
@@ -35,11 +36,12 @@ let c4 = "guild-";
 const regExp = new RegExp("^(?:" + "channel-" + "|" + "guild-" + ")");
 let closure_6 = [];
 const map = new Map();
+const PersistedStore = initializeDefault.PersistedStore;
 class NavigationHistoryStore extends PersistedStore {
 }
 const prototype = NavigationHistoryStore.prototype;
 prototype["initialize"] = function initialize(history) {
-  this.waitFor(ensureGuildLoaded);
+  this.waitFor(closure_2);
   map.clear();
   history = undefined;
   if (history != null) {
@@ -53,7 +55,7 @@ prototype["initialize"] = function initialize(history) {
     let result = map.set(item10015, undefined);
     continue;
   }
-  let closure_6 = Array.from(map.keys());
+  closure_6 = Array.from(map.keys());
 };
 prototype["getState"] = function getState() {
   return { history: closure_6 };
@@ -70,9 +72,9 @@ prototype["getLastFocusedTimestampForHistoryItem"] = function getLastFocusedTime
 };
 NavigationHistoryStore.displayName = "NavigationHistoryStore";
 NavigationHistoryStore.persistKey = "NavigationHistoryStore";
-const navigationHistoryStore = new NavigationHistoryStore(require("dispatcher"), {
+const navigationHistoryStore = new NavigationHistoryStore(dispatcherDefault, {
   LOGOUT() {
-    let closure_6 = [];
+    closure_6 = [];
     map.clear();
   },
   CHANNEL_DELETE: handleChannelDelete,
@@ -115,22 +117,22 @@ const navigationHistoryStore = new NavigationHistoryStore(require("dispatcher"),
     }
   }
 });
-let result = require("dispatcher").fileFinishedImporting("modules/main_tabs_v2/native/NavigationHistoryStore.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/NavigationHistoryStore.tsx");
 
 export default navigationHistoryStore;
 export const CHANNEL_PREFIX = "channel-";
 export const GUILD_PREFIX = "guild-";
 export { getIdFromHistoryItem };
 export const handleHistoryStoreNavigationChange = function handleHistoryStoreNavigationChange() {
-  const rootNavigationRef = combined2(4230).getRootNavigationRef();
+  const rootNavigationRef = combined2(4234).getRootNavigationRef();
   if (null != rootNavigationRef) {
     const currentRoute = rootNavigationRef.getCurrentRoute();
     if (null != currentRoute) {
       if (null != currentRoute.params) {
-        let tmpResult = tmp(4229);
+        let tmpResult = tmp(4233);
         const coerceChannelRouteResult = tmpResult.coerceChannelRoute(currentRoute);
         if (null == coerceChannelRouteResult) {
-          tmpResult = tmp(4229);
+          tmpResult = tmp(4233);
           const coerceGuildsRouteResult = tmpResult.coerceGuildsRoute(currentRoute);
           if (null != coerceGuildsRouteResult) {
             if (tmpResult1.getChatLayout().isChatLockedOpen) {
@@ -181,7 +183,7 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
               }
               navigationHistoryStore.emitChange();
             }
-            tmpResult1 = tmp(4232);
+            tmpResult1 = tmp(4236);
           }
         } else {
           const _HermesInternal2 = HermesInternal;

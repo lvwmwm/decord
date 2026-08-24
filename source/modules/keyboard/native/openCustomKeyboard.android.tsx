@@ -1,22 +1,22 @@
-// Module ID: 11205
-// Function ID: 11206
+// Module ID: 11256
+// Function ID: 11257
 // Name: openCustomKeyboard
-// Dependencies: [1498, 6548, 4240, 11160, 2]
+// Dependencies: [1498, 6579, 4244, 11212, 2]
 // Exports: default
 
-// Module 11205 (openCustomKeyboard)
-const result = require("zustandStore").fileFinishedImporting("modules/keyboard/native/openCustomKeyboard.android.tsx");
+// Module 11256 (openCustomKeyboard)
+import set from "set" /* 2 */;
+import computeEntryState from "computeEntryState" /* 1498 */;
+import runAfterInteractions from "runAfterInteractions" /* 6579 */;
+
+const result = set.fileFinishedImporting("modules/keyboard/native/openCustomKeyboard.android.tsx");
 
 export default function openCustomKeyboard(secondaryTextFieldRef) {
-  let dependencyMap;
-  let importDefault;
-  let keyboardParams;
-  let require;
   ({ channelId: require, chatInputRef: importDefault, chatInputNativeRef: dependencyMap, keyboardParams } = secondaryTextFieldRef);
   secondaryTextFieldRef = secondaryTextFieldRef.secondaryTextFieldRef;
-  require(1498) /* computeEntryState */.setKeyboardType(keyboardParams);
-  let obj = require(1498) /* computeEntryState */;
-  require(6548) /* runAfterInteractions */.runAfterInteractions(() => {
+  computeEntryState.setKeyboardType(keyboardParams);
+  let obj = computeEntryState;
+  runAfterInteractions.runAfterInteractions(() => {
     const current = ref.current;
     current.blur();
     if (secondaryTextFieldRef != null) {
@@ -25,9 +25,9 @@ export default function openCustomKeyboard(secondaryTextFieldRef) {
         current2.blur();
       }
     }
-    outer1_0(outer1_2[2]).openPortalKeyboard(keyboardParams.type, closure_0, ref);
-    const obj = outer1_0(outer1_2[2]);
+    closure_1_0(closure_1_2[2]).openPortalKeyboard(keyboardParams.type, closure_0, ref);
+    const obj = closure_1_0(closure_1_2[2]);
     const tmp = ref;
-    outer1_1(outer1_2[3]).openCustomKeyboard(ref2.current);
+    closure_1_1(closure_1_2[3]).openCustomKeyboard(ref2.current);
   });
 };

@@ -1,29 +1,25 @@
-// Module ID: 16295
-// Function ID: 16296
+// Module ID: 16389
+// Function ID: 16390
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [19, 17, 1922, 4780, 676, 21, 4661, 712, 500, 589, 7139, 7299, 7304, 6824, 7175, 6930, 11121, 4734, 4745, 9410, 9412, 1236, 10074, 8130, 2]
+// Dependencies: [19, 17, 1922, 4785, 676, 21, 4668, 712, 500, 589, 7177, 7337, 7342, 6862, 7213, 6968, 11160, 4739, 4750, 9447, 9449, 1236, 10113, 8169, 2]
 // Exports: default
 
-// Module 16295 (SoundboardSoundPreviewActionSheet)
-import StarIcon from "StarIcon";
-import get_ActivityIndicator from "Text";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
-import { AnalyticsObjects } from "ME";
-import jsxProd from "getSystemLocale";
-import createCacheKey from "createCacheKey";
-import set from "set";
-import set from "mergeGuildAvatar";
+// Module 16389 (SoundboardSoundPreviewActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_7 from "handleSoundCreateOrUpdate" /* 4785 */;
+import { AnalyticsObjects } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import set from "set" /* 500 */;
 
-let c10;
-let c4;
-let c5;
-let c9;
 const require = arg1;
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { emoji: null, emojiFastImage: null, emojiText: null, text: null, buttonContainer: null, star: null };
-createCacheKey = { marginTop: require("Themes").space.PX_16, width: 64, height: 64, alignSelf: "center" };
+createCacheKey = { marginTop: ThemesDefault.space.PX_16, width: 64, height: 64, alignSelf: "center" };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { width: 128, height: 128 };
 let num;
@@ -31,24 +27,24 @@ if (set.isIOS()) {
   num = 60;
 }
 createCacheKey[2] = { fontSize: num, lineHeight: 74 };
-createCacheKey[3] = { marginTop: require("Themes").space.PX_16, alignSelf: "center" };
-let obj1 = { marginTop: require("Themes").space.PX_16, alignSelf: "center" };
-createCacheKey[4] = { gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_24 };
-set = { width: 16, height: 16, tintColor: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[3] = { marginTop: ThemesDefault.space.PX_16, alignSelf: "center" };
+let obj1 = { marginTop: ThemesDefault.space.PX_16, alignSelf: "center" };
+createCacheKey[4] = { gap: ThemesDefault.space.PX_8, marginTop: ThemesDefault.space.PX_24 };
+set = { width: 16, height: 16, tintColor: ThemesDefault.colors.TEXT_DEFAULT };
 createCacheKey[5] = set;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_11 = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("modules/soundboard/native/SoundboardSoundPreviewActionSheet.tsx");
 
 export default function SoundboardSoundPreviewActionSheet(channelId) {
   channelId = channelId.channelId;
   const sound = channelId.sound;
-  let dependencyMap;
+  dependencyMap = undefined;
   let analyticsLocations;
   let isPlayingSound;
   let isFavorite;
-  const tmp = createCacheKey();
+  const tmp = callback();
   let obj = channelId(589);
-  const items = [mergeGuildAvatar];
+  const items = [closure_6];
   dependencyMap = obj.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let id;
@@ -57,62 +53,61 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
     }
     return id;
   });
-  analyticsLocations = sound(7139)().analyticsLocations;
-  let obj1 = channelId(589);
-  const items1 = [handleSoundCreateOrUpdate];
+  analyticsLocations = sound(7177)().analyticsLocations;
+  obj1 = channelId(589);
+  const items1 = [closure_7];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => {
     let isUserPlayingSoundsResult = null != closure_2;
     if (isUserPlayingSoundsResult) {
-      isUserPlayingSoundsResult = outer1_7.isUserPlayingSounds(tmp);
+      isUserPlayingSoundsResult = closure_1_7.isUserPlayingSounds(tmp);
     }
-    return { isPlayingSound: isUserPlayingSoundsResult, isFavorite: outer1_7.isFavoriteSound(sound.soundId) };
+    return { isPlayingSound: isUserPlayingSoundsResult, isFavorite: closure_1_7.isFavoriteSound(sound.soundId) };
   });
   isPlayingSound = stateFromStoresObject.isPlayingSound;
   isFavorite = stateFromStoresObject.isFavorite;
   const items2 = [isFavorite, sound, analyticsLocations];
   const items3 = [channelId, sound, isPlayingSound];
-  const callback = analyticsLocations.useCallback(() => {
+  callback = analyticsLocations.useCallback(() => {
     if (isFavorite) {
-      let tmpResult = tmp(7299);
+      let tmpResult = tmp(7337);
       tmpResult.removeFavoriteSound(sound.soundId);
     } else {
-      tmpResult = tmp(7304);
+      tmpResult = tmp(7342);
       let obj = { sound: null, location: null };
       obj[0] = sound;
       obj = {};
       const merged = Object.assign(analyticsLocations);
-      obj.object = outer1_8.SOUNDBOARD_SOUND;
+      obj.object = closure_1_8.SOUNDBOARD_SOUND;
       obj[1] = obj;
       tmpResult.trackSoundFavorited(obj);
-      channelId(7299).addFavoriteSound(sound.soundId);
-      const obj4 = channelId(7299);
+      channelId(7337).addFavoriteSound(sound.soundId);
+      const obj4 = channelId(7337);
     }
   }, items2);
   const callback1 = analyticsLocations.useCallback(() => {
     if (!isPlayingSound) {
-      channelId(7299).playSoundLocally(channelId, sound, channelId(6824).LocalSoundTrigger.SOUNDBOARD);
-      const obj = channelId(7299);
+      channelId(7337).playSoundLocally(channelId, sound, channelId(6862).LocalSoundTrigger.SOUNDBOARD);
+      const obj = channelId(7337);
     }
   }, items3);
-  obj = { fastImageStyle: items4, textEmojiStyle: items5, src: null, name: null };
+  obj = { fastImageStyle: items4, textEmojiStyle: items5, src: sound(11160)(sound, 64), name: null };
   items4 = [, ];
   ({ emoji: arr5[0], emojiFastImage: arr5[1] } = tmp);
   items5 = [, ];
   ({ emoji: arr6[0], emojiText: arr6[1] } = tmp);
-  obj[2] = sound(11121)(sound, 64);
   let str = sound.emojiName;
   if (str == null) {
     str = "";
   }
   obj[3] = str;
-  const items6 = [closure_9(sound(6930), obj), , ];
+  const items6 = [closure_9(sound(6968), obj), , ];
   obj = { style: tmp.text, variant: "heading-lg/extrabold", children: sound.name };
-  items6[1] = closure_9(channelId(4734).Text, obj);
+  items6[1] = closure_9(channelId(4739).Text, obj);
   obj1 = { style: tmp.buttonContainer, children: null };
   if (isFavorite) {
-    let StarOutlineIcon = tmp2(9410).StarIcon;
+    let StarOutlineIcon = tmp2(9447).StarIcon;
   } else {
-    StarOutlineIcon = tmp2(9412).StarOutlineIcon;
+    StarOutlineIcon = tmp2(9449).StarOutlineIcon;
   }
   const obj2 = { variant: "primary", icon: closure_9(StarOutlineIcon, obj3), text: null, onPress: null };
   const intl = tmp2(1236).intl;
@@ -125,15 +120,15 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   }
   obj2[2] = stringResult;
   obj2[3] = callback;
-  const items7 = [closure_9(channelId(4745).Button, obj2), ];
+  const items7 = [closure_9(channelId(4750).Button, obj2), ];
   if (isPlayingSound) {
     let obj4 = { style: null };
     obj4[0] = tmp.star;
-    let tmp8Result = tmp8(tmp2(10074).WaveformIcon, obj4);
+    let tmp8Result = tmp8(tmp2(10113).WaveformIcon, obj4);
   } else {
     const obj5 = { style: null, source: null };
     obj5[0] = tmp.star;
-    obj5[1] = sound(8130);
+    obj5[1] = sound(8169);
     tmp8Result = tmp8(isFavorite, obj5);
   }
   const obj6 = { variant: "secondary", icon: tmp8Result, text: null, onPress: null };
@@ -143,10 +138,10 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   const obj8 = { children: null };
   obj6[2] = intl2.string(isPlayingSound ? t2.diasud : t2.Kd4uxG);
   obj6[3] = callback1;
-  items7[1] = closure_9(channelId(4745).Button, obj6);
+  items7[1] = closure_9(channelId(4750).Button, obj6);
   obj1[1] = items7;
   items6[2] = closure_10(isPlayingSound, obj1);
   obj8[0] = items6;
   obj7[1] = closure_10(isPlayingSound, obj8);
-  return closure_9(channelId(7175).ActionSheet, obj7);
+  return closure_9(channelId(7213).ActionSheet, obj7);
 };

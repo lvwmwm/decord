@@ -1,35 +1,38 @@
-// Module ID: 15668
-// Function ID: 15669
+// Module ID: 15737
+// Function ID: 15738
 // Name: handleLoadFinished
-// Dependencies: [32, 5384, 687, 589, 4802, 11, 709, 2]
+// Dependencies: [32, 5389, 687, 589, 4807, 11, 709, 2]
 
-// Module 15668 (handleLoadFinished)
-import _slicedToArray from "_slicedToArray";
-import findOrCreateMessageRecord from "findOrCreateMessageRecord";
-import { PersistedStore } from "initialize";
+// Module 15737 (handleLoadFinished)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import NotificationCenterScenes from "NotificationCenterScenes" /* 4807 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "findOrCreateMessageRecord" /* 5389 */;
 
-const require = arg1;
+require = arg1;
 function handleLoadFinished() {
   closure_6.hasNewMentions = false;
   closure_6.isDataStale = false;
   closure_6.isRefreshing = false;
 }
-let closure_5 = 90 * require("set").Millis.DAY;
+let closure_5 = 90 * setDefault.Millis.DAY;
 let closure_6 = { tab: null, localItemAcks: {}, hasNewMentions: false, isDataStale: false, isRefreshing: false };
+const PersistedStore = initializeDefault.PersistedStore;
 class NotificationCenterStore extends PersistedStore {
 }
 const prototype = NotificationCenterStore.prototype;
 prototype["initialize"] = function initialize(localItemAcks) {
-  this.waitFor(findOrCreateMessageRecord);
+  this.waitFor(closure_4);
   if (null != localItemAcks) {
-    let closure_6 = localItemAcks;
+    closure_6 = localItemAcks;
     localItemAcks = localItemAcks.localItemAcks;
     if (localItemAcks == null) {
       localItemAcks = {};
     }
     localItemAcks.localItemAcks = (function purge(localItemAcks) {
-      let tmp6;
-      let tmp7;
       const obj = {};
       const entries = Object.entries(localItemAcks);
       while (tmp2 !== undefined) {
@@ -57,7 +60,7 @@ prototype["getState"] = function getState() {
 prototype["getTab"] = function getTab() {
   let ForYou = closure_6.tab;
   if (ForYou == null) {
-    ForYou = require(4802) /* NotificationCenterScenes */.NotificationCenterTabs.ForYou;
+    ForYou = NotificationCenterScenes.NotificationCenterTabs.ForYou;
   }
   return ForYou;
 };
@@ -66,8 +69,8 @@ prototype["isLocalItemAcked"] = function isLocalItemAcked(addResult) {
   if (tmp) {
     let tmp3 = null != closure_6.localItemAcks[addResult.local_id];
     if (!tmp3) {
-      tmp3 = importDefault(11).age(addResult.id) > closure_5;
-      const obj = importDefault(11);
+      tmp3 = DISCORD_EPOCHDefault.age(addResult.id) > closure_5;
+      const obj = DISCORD_EPOCHDefault;
     }
     tmp = tmp3;
   }
@@ -94,9 +97,9 @@ prototype["shouldReload"] = function shouldReload() {
 };
 NotificationCenterStore.displayName = "NotificationCenterStore";
 NotificationCenterStore.persistKey = "NotificationCenterStore";
-const notificationCenterStore = new NotificationCenterStore(require("dispatcher"), {
+const notificationCenterStore = new NotificationCenterStore(dispatcherDefault, {
   MESSAGE_CREATE: function handleMessageCreate(message) {
-    if (findOrCreateMessageRecord.hasMention(message.message.id)) {
+    if (closure_4.hasMention(message.message.id)) {
       closure_6.hasNewMentions = true;
     }
   },

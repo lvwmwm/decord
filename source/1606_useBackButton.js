@@ -5,7 +5,7 @@
 // Exports: useBackButton
 
 // Module 1606 (useBackButton)
-import noop from "noop";
+import closure_0 from "noop" /* 19 */;
 
 require("get ActivityIndicator").BackHandler;
 
@@ -13,7 +13,7 @@ export const useBackButton = function useBackButton(ref) {
   const React = ref;
   const items = [ref];
   const effect = React.useEffect(() => {
-    let noop = outer1_1.addEventListener("hardwareBackPress", () => {
+    closure_0 = closure_1_1.addEventListener("hardwareBackPress", () => {
       const current = ref.current;
       let tmp = null != current;
       if (tmp) {

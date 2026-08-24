@@ -1,14 +1,15 @@
-// Module ID: 10606
-// Function ID: 10607
+// Module ID: 10645
+// Function ID: 10646
 // Name: set
-// Dependencies: [19, 1994, 5296, 7622, 647, 9999, 2]
+// Dependencies: [19, 1995, 5301, 7660, 647, 10038, 2]
 // Exports: useShouldShowHelplineLink, useShouldShowThroughlineLink
 
-// Module 10606 (set)
-import noop from "noop";
-import _getSystemLocale from "_getSystemLocale";
-import freshTeenActivityWithMap from "freshTeenActivityWithMap";
-import set from "freshTeenActivityWithMap";
+// Module 10645 (set)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7660 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "freshTeenActivityWithMap" /* 5301 */;
+import set from "set" /* 2 */;
 
 const require = arg1;
 let set = new Set(["US"]);
@@ -16,17 +17,17 @@ const set1 = new Set(["en-US", "es-ES"]);
 const result = set.fileFinishedImporting("modules/parent_tools/hooks/useHelpLineVisibility.tsx");
 
 export const useShouldShowHelplineLink = function useShouldShowHelplineLink() {
-  const tmp = importDefault(7622)();
-  const items = [freshTeenActivityWithMap];
+  const tmp = useIsInAdultAgeGroupDefault();
+  const items = [closure_5];
   stateFromStores = stateFromStores(647).useStateFromStores(items, () => userCountry.getUserCountry());
   const obj = stateFromStores(647);
-  const items1 = [_getSystemLocale];
+  const items1 = [closure_4];
   const items2 = [stateFromStores];
   const stateFromStores1 = stateFromStores(647).useStateFromStores(items1, () => locale.locale);
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
-      const userCountryCode = stateFromStores(outer1_2[5]).fetchUserCountryCode();
-      const obj = stateFromStores(outer1_2[5]);
+      const userCountryCode = stateFromStores(closure_1_2[5]).fetchUserCountryCode();
+      const obj = stateFromStores(closure_1_2[5]);
     }
   }, items2);
   let hasItem = !tmp;
@@ -42,19 +43,19 @@ export const useShouldShowHelplineLink = function useShouldShowHelplineLink() {
   return hasItem;
 };
 export const useShouldShowThroughlineLink = function useShouldShowThroughlineLink() {
-  const tmp = importDefault(7622)();
+  const tmp = useIsInAdultAgeGroupDefault();
   let stateFromStores;
-  const tmp2 = importDefault(7622)();
-  const items = [freshTeenActivityWithMap];
+  const tmp2 = useIsInAdultAgeGroupDefault();
+  const items = [closure_5];
   stateFromStores = stateFromStores(647).useStateFromStores(items, () => userCountry.getUserCountry());
   let obj = stateFromStores(647);
-  const items1 = [_getSystemLocale];
+  const items1 = [closure_4];
   const items2 = [stateFromStores];
   const stateFromStores1 = stateFromStores(647).useStateFromStores(items1, () => locale.locale);
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
-      const userCountryCode = stateFromStores(outer1_2[5]).fetchUserCountryCode();
-      const obj = stateFromStores(outer1_2[5]);
+      const userCountryCode = stateFromStores(closure_1_2[5]).fetchUserCountryCode();
+      const obj = stateFromStores(closure_1_2[5]);
     }
   }, items2);
   let hasItem = !tmp2;

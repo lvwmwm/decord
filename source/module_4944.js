@@ -3,11 +3,12 @@
 // Dependencies: []
 
 // Module 4944
-arg5.default = {
-  get() {
-    if (typeof TextDecoder !== "undefined") {
-      const _TextDecoder = TextDecoder;
-      return TextDecoder;
-    }
+let obj = { 4: null };
+obj = {
+  name: "ShotInfo",
+  description(arg0) {
+    return arg0;
   }
 };
+obj[4] = obj;
+arg5.default = obj;

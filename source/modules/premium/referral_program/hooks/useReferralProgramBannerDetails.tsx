@@ -1,23 +1,23 @@
-// Module ID: 12880
-// Function ID: 12881
+// Module ID: 12935
+// Function ID: 12936
 // Name: MAX_REFERRALS_SENT
-// Dependencies: [19, 1922, 7423, 589, 8418, 2]
+// Dependencies: [19, 1922, 7461, 589, 8457, 2]
 // Exports: useReferralProgramBannerDetails
 
-// Module 12880 (MAX_REFERRALS_SENT)
-import noop from "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import emitChanges from "emitChanges";
+// Module 12935 (MAX_REFERRALS_SENT)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "emitChanges" /* 7461 */;
 
 const require = arg1;
-const result = require("emitChanges").fileFinishedImporting("modules/premium/referral_program/hooks/useReferralProgramBannerDetails.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/referral_program/hooks/useReferralProgramBannerDetails.tsx");
 
 export const MAX_REFERRALS_SENT = 3;
 export const useReferralProgramBannerDetails = function useReferralProgramBannerDetails() {
   let obj = stateFromStoresArray(589);
-  const items = [emitChanges];
+  const items = [closure_4];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => authStore.getSentUserIds());
-  const items1 = [mergeGuildAvatar];
+  const items1 = [closure_3];
   const items2 = [stateFromStoresArray];
   const stateFromStoresArray1 = stateFromStoresArray(589).useStateFromStoresArray(items1, () => {
     const mapped = stateFromStoresArray.map((arg0) => user.getUser(arg0));
@@ -30,7 +30,7 @@ export const useReferralProgramBannerDetails = function useReferralProgramBanner
   }, items2);
   obj = { referralSentUsers: stateFromStoresArray1, hasSentAllReferrals: 3 === stateFromStoresArray.length, refreshAt: null };
   const obj2 = stateFromStoresArray(589);
-  const items3 = [emitChanges];
+  const items3 = [closure_4];
   obj[2] = stateFromStoresArray(589).useStateFromStores(items3, () => authStore.getRefreshAt());
   return obj;
 };

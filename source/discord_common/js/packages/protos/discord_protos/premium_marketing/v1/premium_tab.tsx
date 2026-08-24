@@ -1,13 +1,15 @@
-// Module ID: 7636
-// Function ID: 7637
+// Module ID: 7674
+// Function ID: 7675
 // Name: create
-// Dependencies: [32, 1307, 7633, 2]
+// Dependencies: [32, 1307, 7671, 2]
 
-// Module 7636 (create)
-import _slicedToArray from "_slicedToArray";
-import { MessageType } from "module_1307";
+// Module 7674 (create)
+import _mod1307 from "module_1307" /* 1307 */;
+import create from "create" /* 7671 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import { MessageType } from "module_1307" /* 1307 */;
 
-const require = arg1;
+require = arg1;
 class PremiumTab$Type extends MessageType {
   constructor() {
     items = [, , , , , ];
@@ -28,7 +30,7 @@ class PremiumTab$Type extends MessageType {
       name: "acknowledged_badge_label_localized",
       kind: "message",
       T() {
-            return callback(7633).LocalizedString;
+            return callback(7671).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.PremiumTab", items, T);
@@ -41,16 +43,14 @@ prototype["create"] = function create(arr) {
   let obj = { badgeLabel: "", acknowledgedBadgeLabel: "", showHoverGradient: false, deeplinkSection: "" };
   const _Object = Object;
   obj = { enumerable: false, value: this };
-  _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
+  _Object.defineProperty(obj, _mod1307.MESSAGE_TYPE, obj);
   if (undefined !== arr) {
-    const result = require(1307).reflectionMergePartial(this, obj, arr);
-    const tmpResult = require(1307);
+    const result = _mod1307.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1307;
   }
   return obj;
 };
 prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
-  let tmp5;
-  let tmp6;
   const self = this;
   let obj = arg3;
   if (arg3 == null) {
@@ -73,7 +73,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (5 === tmp5) {
         let tmp27 = require;
         let tmp28 = dependencyMap;
-        let LocalizedString2 = require(7633) /* create */.LocalizedString;
+        let LocalizedString2 = create.LocalizedString;
         let tmp29 = LocalizedString2;
         let tmp30 = pos;
         let tmp31 = readUnknownField;
@@ -81,7 +81,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (6 === tmp5) {
         let tmp22 = require;
         let tmp23 = dependencyMap;
-        let LocalizedString = require(7633) /* create */.LocalizedString;
+        let LocalizedString = create.LocalizedString;
         let tmp24 = LocalizedString;
         let tmp25 = pos;
         let tmp26 = readUnknownField;
@@ -99,7 +99,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
           let tmp17 = tmp6;
           let tmp18 = new.target;
           let tmp19 = new.target;
-          let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+          error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
           let tmp21 = error;
           throw error;
         } else {
@@ -108,7 +108,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
             if (true === onRead) {
               let tmp8 = require;
               let tmp9 = dependencyMap;
-              onRead = require(1307).UnknownFieldHandler.onRead;
+              onRead = _mod1307.UnknownFieldHandler.onRead;
             }
             let tmp10 = obj;
             let tmp11 = tmp5;
@@ -124,37 +124,37 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
 };
 prototype["internalBinaryWrite"] = function internalBinaryWrite(badgeLabel, tag, writeUnknownFields) {
   if ("" !== badgeLabel.badgeLabel) {
-    tag.tag(1, require(1307).WireType.LengthDelimited).string(badgeLabel.badgeLabel);
-    const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
+    tag.tag(1, _mod1307.WireType.LengthDelimited).string(badgeLabel.badgeLabel);
+    const tagResult = tag.tag(1, _mod1307.WireType.LengthDelimited);
   }
   if ("" !== badgeLabel.acknowledgedBadgeLabel) {
-    tag.tag(2, require(1307).WireType.LengthDelimited).string(badgeLabel.acknowledgedBadgeLabel);
-    const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
+    tag.tag(2, _mod1307.WireType.LengthDelimited).string(badgeLabel.acknowledgedBadgeLabel);
+    const tagResult1 = tag.tag(2, _mod1307.WireType.LengthDelimited);
   }
   if (false !== badgeLabel.showHoverGradient) {
-    tag.tag(3, require(1307).WireType.Varint).bool(badgeLabel.showHoverGradient);
-    const tagResult2 = tag.tag(3, require(1307).WireType.Varint);
+    tag.tag(3, _mod1307.WireType.Varint).bool(badgeLabel.showHoverGradient);
+    const tagResult2 = tag.tag(3, _mod1307.WireType.Varint);
   }
   if ("" !== badgeLabel.deeplinkSection) {
-    tag.tag(4, require(1307).WireType.LengthDelimited).string(badgeLabel.deeplinkSection);
-    const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
+    tag.tag(4, _mod1307.WireType.LengthDelimited).string(badgeLabel.deeplinkSection);
+    const tagResult3 = tag.tag(4, _mod1307.WireType.LengthDelimited);
   }
   if (badgeLabel.badgeLabelLocalized) {
-    const LocalizedString = require(7633) /* create */.LocalizedString;
-    const tagResult4 = tag.tag(5, require(1307).WireType.LengthDelimited);
-    const joined = LocalizedString.internalBinaryWrite(badgeLabel.badgeLabelLocalized, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(badgeLabel.badgeLabelLocalized, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const LocalizedString = create.LocalizedString;
+    const tagResult4 = tag.tag(5, _mod1307.WireType.LengthDelimited);
+    const joined = LocalizedString.internalBinaryWrite(badgeLabel.badgeLabelLocalized, tag.tag(5, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(badgeLabel.badgeLabelLocalized, tag.tag(5, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (badgeLabel.acknowledgedBadgeLabelLocalized) {
-    const LocalizedString2 = require(7633) /* create */.LocalizedString;
-    const tagResult5 = tag.tag(6, require(1307).WireType.LengthDelimited);
-    const joined1 = LocalizedString2.internalBinaryWrite(badgeLabel.acknowledgedBadgeLabelLocalized, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = LocalizedString2.internalBinaryWrite(badgeLabel.acknowledgedBadgeLabelLocalized, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const LocalizedString2 = create.LocalizedString;
+    const tagResult5 = tag.tag(6, _mod1307.WireType.LengthDelimited);
+    const joined1 = LocalizedString2.internalBinaryWrite(badgeLabel.acknowledgedBadgeLabelLocalized, tag.tag(6, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = LocalizedString2.internalBinaryWrite(badgeLabel.acknowledgedBadgeLabelLocalized, tag.tag(6, _mod1307.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = require(1307).UnknownFieldHandler.onWrite;
+      onWrite = _mod1307.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, badgeLabel, tag);
@@ -175,11 +175,11 @@ items[5] = {
   name: "acknowledged_badge_label_localized",
   kind: "message",
   T() {
-    return callback(7633).LocalizedString;
+    return callback(7671).LocalizedString;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.PremiumTab", items, tmp, T, PremiumTab$Type, prototype, items);
 // ThrowIfThisInitialized (0x7c)
-let result = require("create").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/premium_tab.tsx");
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/premium_tab.tsx");
 
 export const PremiumTab = prototype;

@@ -1,18 +1,18 @@
-// Module ID: 14415
-// Function ID: 14416
+// Module ID: 14483
+// Function ID: 14484
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 4661, 4115, 4664, 4667, 4756, 14397, 2]
+// Dependencies: [17, 21, 4668, 4119, 4671, 4674, 4761, 14465, 2]
 // Exports: default
 
-// Module 14415 (BountiesModalEndCard)
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14483 (BountiesModalEndCard)
+import set from "set" /* 2 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 14465 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
 ({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles(() => {
@@ -27,25 +27,23 @@ let closure_7 = createCacheKey.createStyles(() => {
   return obj;
 });
 let closure_8 = { code: "function BountiesModalEndCardTsx1(){const{withTiming,visible,timingStandard}=this.__closure;return{opacity:withTiming(visible?1:0,timingStandard)};}" };
-const result = require("createCacheKey").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalEndCard.tsx");
+const result = set.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalEndCard.tsx");
 
 export default function BountiesModalEndCard(visible) {
-  let bounty;
-  let sourceQuestContent;
   visible = visible.visible;
   ({ bounty, sourceQuestContent } = visible);
   const tmp = callback3();
-  visible(4115);
+  visible(4119);
   const fn = function y() {
-    let obj = visible(outer1_2[4]);
+    let obj = visible(closure_1_2[4]);
     let num = 0;
     if (visible) {
       num = 1;
     }
-    obj = { opacity: obj.withTiming(num, visible(outer1_2[5]).timingStandard) };
+    obj = { opacity: obj.withTiming(num, visible(closure_1_2[5]).timingStandard) };
     return obj;
   };
-  let obj = { withTiming: visible(4664).withTiming, visible, timingStandard: visible(4667).timingStandard };
+  let obj = { withTiming: visible(4671).withTiming, visible, timingStandard: visible(4674).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 15062259404736;
   fn.__initData = closure_8;
@@ -56,17 +54,17 @@ export default function BountiesModalEndCard(visible) {
     obj = { style: null };
     obj[0] = tmp.backdropTint;
     const items1 = [callback(closure_4, obj), , ];
-    const obj1 = { colors: null, locations: null, style: null };
+    obj1 = { colors: null, locations: null, style: null };
     obj1[0] = ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"];
     obj1[1] = [0, 0.841];
     obj1[2] = tmp.backdropGradient;
-    items1[1] = callback(importDefault(4756), obj1);
+    items1[1] = callback(LinearGradientDefault, obj1);
     const obj2 = { bounty: null, sourceQuestContent: null };
     obj2[0] = bounty;
     obj2[1] = sourceQuestContent;
-    items1[2] = callback(importDefault(14397), obj2);
+    items1[2] = callback(BountiesEndCardPressableCtaDefault, obj2);
     obj[2] = items1;
-    visible = callback2(importDefault(4115).View, obj);
+    visible = callback2(_modDef4119.View, obj);
   }
   return visible;
 };

@@ -1,40 +1,42 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14345
+// Function ID: 14346
 // Name: FamilyCenterRequestorDetails
-// Dependencies: [19, 17, 21, 4661, 1297, 712, 7621, 14249, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 1297, 712, 7659, 14317, 4739, 2]
 // Exports: default
 
-// Module 14277 (FamilyCenterRequestorDetails)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14345 (FamilyCenterRequestorDetails)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 7659 */;
+import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 14317 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: { display: "flex", flexDirection: "row", flexGrow: 1, flexShrink: 1 }, avatar: null, detailsContainer: null };
-createCacheKey = { borderRadius: null, backgroundColor: null };
-createCacheKey[0] = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2;
-createCacheKey[1] = require("Themes").colors.BACKGROUND_SURFACE_HIGH;
+createCacheKey = { borderRadius: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { paddingLeft: require("Themes").space.PX_12, paddingRight: require("Themes").space.PX_4, flexGrow: 1, flexShrink: 1 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { paddingLeft: require("Themes").space.PX_12, paddingRight: require("Themes").space.PX_4, flexGrow: 1, flexShrink: 1 };
-const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterRequestorDetails.tsx");
+createCacheKey[2] = { paddingLeft: ThemesDefault.space.PX_12, paddingRight: ThemesDefault.space.PX_4, flexGrow: 1, flexShrink: 1 };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingLeft: ThemesDefault.space.PX_12, paddingRight: ThemesDefault.space.PX_4, flexGrow: 1, flexShrink: 1 };
+const result = require("set").fileFinishedImporting("modules/parent_tools/native/FamilyCenterRequestorDetails.tsx");
 
 export default function FamilyCenterRequestorDetails(otherUser) {
   otherUser = otherUser.otherUser;
-  const tmp = createCacheKey();
-  let obj = require(7621) /* useUserIdsForLinkStatus */;
+  const tmp = callback3();
+  let obj = useUserIdsForLinkStatus;
   obj = { style: tmp.container, children: null };
   const linkTimestampText = obj.useLinkTimestampText(otherUser.id, otherUser.status);
   obj = { avatarStyle: tmp.avatar, user: otherUser, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: "Heartbeat" };
   obj[4] = otherUser.avatarDecoration;
-  const items = [callback(require(1297) /* Button */.Avatar, obj), ];
-  const obj1 = { style: tmp.detailsContainer, children: null };
-  const items1 = [callback(importDefault(14249), { user: otherUser }), callback(require(4734) /* Text */.Text, { variant: "text-xs/semibold", color: "text-muted", children: linkTimestampText })];
+  const items = [callback(Button.Avatar, obj), ];
+  obj1 = { style: tmp.detailsContainer, children: null };
+  const items1 = [callback(FamilyCenterUsernameHeaderDefault, { user: otherUser }), callback(Text.Text, { variant: "text-xs/semibold", color: "text-muted", children: linkTimestampText })];
   obj1[1] = items1;
   items[1] = callback2(View, obj1);
   obj[1] = items;

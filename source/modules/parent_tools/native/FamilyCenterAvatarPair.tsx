@@ -1,35 +1,34 @@
-// Module ID: 14279
-// Function ID: 14280
+// Module ID: 14347
+// Function ID: 14348
 // Name: FamilyCenterAvatarPair
-// Dependencies: [19, 17, 1922, 21, 4661, 712, 647, 1297, 2]
+// Dependencies: [19, 17, 1922, 21, 4668, 712, 647, 1297, 2]
 // Exports: default
 
-// Module 14279 (FamilyCenterAvatarPair)
-import "noop";
-import { View } from "get ActivityIndicator";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14347 (FamilyCenterAvatarPair)
+import noopAll from "noop" /* 19 */;
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { avatars: null, icon: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.round, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 8 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.round, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 8 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { height: 24, width: 24, marginHorizontal: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/parent_tools/native/FamilyCenterAvatarPair.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/parent_tools/native/FamilyCenterAvatarPair.tsx");
 
 export default function FamilyCenterAvatarPair(otherUser) {
-  let iconSrc;
-  let iconStyles;
   otherUser = otherUser.otherUser;
   ({ iconSrc, iconStyles } = otherUser);
-  const tmp = createCacheKey();
-  let obj = require(647) /* defaultAreStatesEqual */;
-  const items = [mergeGuildAvatar];
+  const tmp = callback3();
+  let obj = defaultAreStatesEqual;
+  const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let tmp5 = null;
   if (undefined !== stateFromStores) {
@@ -37,18 +36,18 @@ export default function FamilyCenterAvatarPair(otherUser) {
     if (undefined !== otherUser) {
       obj = { style: null, children: null };
       obj[0] = tmp.avatars;
-      obj = { size: null, user: null, guildId: "Array", avatarDecoration: true };
+      obj = { size: null, user: null, guildId: "Array", avatarDecoration: "\u{1F9DC}\u{1F3FC}\u200D\u2640\uFE0F" };
       obj[0] = tmp2(1297).AvatarSizes.LARGE_48;
       obj[1] = stateFromStores;
       obj[3] = stateFromStores.avatarDecoration;
       const items1 = [callback(tmp2(1297).Avatar, obj), , ];
-      const obj1 = { style: null, size: null, source: null };
+      obj1 = { style: null, size: null, source: null };
       const items2 = [tmp.icon, iconStyles];
       obj1[0] = items2;
       obj1[1] = tmp2(1297).Icon.Sizes.EXTRA_SMALL;
       obj1[2] = iconSrc;
       items1[1] = callback(tmp2(1297).Icon, obj1);
-      const obj2 = { size: null, user: null, guildId: "Array", avatarDecoration: true };
+      const obj2 = { size: null, user: null, guildId: "Array", avatarDecoration: "\u{1F9DC}\u{1F3FC}\u200D\u2640\uFE0F" };
       obj2[0] = tmp2(1297).AvatarSizes.LARGE_48;
       obj2[1] = otherUser;
       obj2[3] = otherUser.avatarDecoration;

@@ -1,69 +1,64 @@
-// Module ID: 14115
-// Function ID: 14116
+// Module ID: 14183
+// Function ID: 14184
 // Name: UsernameStatusMessage
-// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4661, 712, 4486, 14116, 4734, 1236, 1500, 589, 4039, 14117, 7877, 8620, 530, 1501, 8492, 8071, 8624, 8576, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4668, 712, 4490, 14184, 4739, 1236, 1500, 589, 4042, 14185, 7916, 8657, 530, 1501, 8531, 8110, 8661, 8615, 2]
 // Exports: default
 
-// Module 14115 (UsernameStatusMessage)
-import ME from "ME";
-import _slicedToArray from "_slicedToArray";
-import sendRequest from "sendRequest";
-import get_ActivityIndicator from "dispatcher";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { UserSettingsSections } from "ME";
-import jsxProd from "GenericHeaderTitle";
-import createCacheKey from "createCacheKey";
+// Module 14183 (UsernameStatusMessage)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "_slicedToArray" /* 32 */;
+import closure_6 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import { UserSettingsSections } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_12;
-let error;
-let metroImportAll;
-let unpackModuleId;
 const require = arg1;
 function UsernameStatusMessage(showHint) {
   showHint = showHint.showHint;
-  const match = showHint(4486).match(showHint.usernameStatus);
-  let obj = { type: showHint(14116).NameValidationState.ERROR, message: null };
-  const P = showHint(4486).P;
+  const match = showHint(4490).match(showHint.usernameStatus);
+  let obj = { type: showHint(14184).NameValidationState.ERROR, message: null };
+  const P = showHint(4490).P;
   obj[1] = P.select();
-  const str = showHint(4486);
-  obj = { type: showHint(14116).NameValidationState.AVAILABLE, message: null };
-  const P2 = showHint(4486).P;
+  const str = showHint(4490);
+  obj = { type: showHint(14184).NameValidationState.AVAILABLE, message: null };
+  const P2 = showHint(4490).P;
   obj[1] = P2.select();
-  const withResult = match.with(obj, (children) => callback(showHint(4734).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
-  return match.with(obj, (children) => callback(showHint(4734).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })).with(obj, (children) => callback(showHint(4734).Text, { variant: "text-xs/medium", color: "text-feedback-positive", children })).otherwise(() => {
+  const withResult = match.with(obj, (children) => callback(showHint(4739).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
+  return match.with(obj, (children) => callback(showHint(4739).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })).with(obj, (children) => callback(showHint(4739).Text, { variant: "text-xs/medium", color: "text-feedback-positive", children })).otherwise(() => {
     let tmp = null;
     if (showHint) {
       const obj = { variant: "text-xs/medium", color: "text-default", children: null };
-      const intl = showHint(outer1_3[12]).intl;
-      obj[2] = intl.string(showHint(outer1_3[12]).t.z7c4bP);
-      tmp = outer1_11(showHint(outer1_3[11]).Text, obj);
+      const intl = showHint(closure_1_3[12]).intl;
+      obj[2] = intl.string(showHint(closure_1_3[12]).t.z7c4bP);
+      tmp = closure_1_11(showHint(closure_1_3[11]).Text, obj);
     }
     return tmp;
   });
 }
-({ View: error, ScrollView: metroImportAll } = get_ActivityIndicator);
+({ View: error, ScrollView: closure_8 } = get_ActivityIndicator);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
 createCacheKey = { background: null, container: null, inputs: null, username: null, discriminator: null, divider: null, dividerInner: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { padding: 16 };
 createCacheKey[2] = { flex: 1, flexDirection: "row", marginTop: 8 };
 createCacheKey[3] = { flex: 2 };
 createCacheKey[4] = { flex: 1 };
-createCacheKey[5] = { width: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
-let obj1 = { width: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
-createCacheKey[6] = { flex: 1, marginVertical: 12, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_SELECTED };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { flex: 1, marginVertical: 12, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_SELECTED };
-const result = require("noop").fileFinishedImporting("modules/user_settings/account/native/UserSettingsChangeUsername.tsx");
+createCacheKey[5] = { width: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
+let obj1 = { width: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
+createCacheKey[6] = { flex: 1, marginVertical: 12, backgroundColor: ThemesDefault.colors.INTERACTIVE_BACKGROUND_SELECTED };
+let closure_13 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { flex: 1, marginVertical: 12, backgroundColor: ThemesDefault.colors.INTERACTIVE_BACKGROUND_SELECTED };
+const result = require("set").fileFinishedImporting("modules/user_settings/account/native/UserSettingsChangeUsername.tsx");
 
 export default function UserSettingsChangeUsername() {
-  let sendRequest;
-  let obj6;
-  let tmp = createCacheKey();
+  let tmp = callback();
   let obj = navigation(first[13]);
   navigation = obj.useNavigation();
-  let obj1 = navigation(first[14]);
+  obj1 = navigation(first[14]);
   const items = [callback];
   const stateFromStores = obj1.useStateFromStores(items, () => callback.getCurrentUser());
   let obj3 = stateFromStores(first[15]);
@@ -75,7 +70,7 @@ export default function UserSettingsChangeUsername() {
     }
     canEditDiscriminatorResult = !hasUniqueUsernameResult;
   }
-  const importAll = canEditDiscriminatorResult;
+  importAll = canEditDiscriminatorResult;
   let obj4 = React;
   let str;
   if (stateFromStores != null) {
@@ -86,7 +81,7 @@ export default function UserSettingsChangeUsername() {
   }
   const tmp10 = first1(React.useState(str), 2);
   first = tmp10[0];
-  let ME = tmp10[1];
+  closure_4 = tmp10[1];
   let str2;
   if (stateFromStores != null) {
     str2 = stateFromStores.discriminator;
@@ -97,7 +92,7 @@ export default function UserSettingsChangeUsername() {
   let tmp9Result = tmp9(obj4.useState(str2), 2);
   first1 = tmp9Result[0];
   tmp9Result = tmp9(obj4.useState(null), 2);
-  [obj6, sendRequest] = tmp9Result;
+  [obj6, closure_6] = tmp9Result;
   let hasUniqueUsernameResult1;
   if (stateFromStores != null) {
     hasUniqueUsernameResult1 = stateFromStores.hasUniqueUsername();
@@ -133,39 +128,39 @@ export default function UserSettingsChangeUsername() {
     }
     tmp21 = tmp23;
   }
-  let closure_8 = tmp21;
+  isMatch = tmp21;
   const items1 = [tmp21, canEditDiscriminatorResult, first1, navigation, stateFromStores, first];
   callback = obj4.useCallback(() => {
-    if (closure_8) {
+    if (isMatch) {
       let obj = stateFromStores(first[17]);
-      obj.setSection(outer1_10.ACCOUNT_CONFIRM_PASSWORD);
+      obj.setSection(closure_1_10.ACCOUNT_CONFIRM_PASSWORD);
       obj = { onSubmit: null, onSuccess: null };
-      const navigation = callback((arg0) => {
-        let closure_0 = arg0;
-        let c3 = 0;
-        let c4 = 0;
+      navigation = callback((arg0) => {
+        closure_0 = arg0;
+        c3 = 0;
+        c4 = 0;
         return (function*(arg0) {
-          let closure_2 = tmp5;
+          closure_2 = tmp5;
           let v6OrEarlierAPIError = tmp2;
-          if (null == outer1_1) {
+          if (null == closure_1_1) {
             return null;
           }
-          outer1_6(null);
-          const obj1 = { username: null, password: null, discriminator: null };
+          closure_1_6(null);
+          obj1 = { username: null, password: null, discriminator: null };
           obj1[0] = c3;
           obj1[1] = tmp45;
-          if (outer1_2) {
-            const tmp34 = outer1_5;
+          if (closure_1_2) {
+            const tmp34 = closure_1_5;
           }
           obj1[2] = tmp34;
-          const obj3 = outer2_2(outer2_3[18]);
+          const obj3 = closure_2_2(closure_2_3[18]);
           const lib = yield obj3.saveAccountChanges(obj1, { close: false });
           if (!lib.ok) {
-            v6OrEarlierAPIError = new lib(outer2_3[19]).V6OrEarlierAPIError(lib);
-            const CommonActions = lib(outer2_3[20]).CommonActions;
-            lib.dispatch(CommonActions.navigate(outer2_10.ACCOUNT_CHANGE_USERNAME));
-            outer1_6(v6OrEarlierAPIError);
-            let c4 = 3;
+            v6OrEarlierAPIError = new lib(closure_2_3[19]).V6OrEarlierAPIError(lib);
+            const CommonActions = lib(closure_2_3[20]).CommonActions;
+            lib.dispatch(CommonActions.navigate(closure_2_10.ACCOUNT_CHANGE_USERNAME));
+            closure_1_6(v6OrEarlierAPIError);
+            c4 = 3;
             return { value: null, done: true };
           }
           return lib;
@@ -182,10 +177,10 @@ export default function UserSettingsChangeUsername() {
         return applyArgumentsResult;
       };
       obj[1] = function onSuccess() {
-        const CommonActions = lib(outer1_3[20]).CommonActions;
-        lib.dispatch(CommonActions.navigate(outer1_10.ACCOUNT));
+        const CommonActions = lib(closure_1_3[20]).CommonActions;
+        lib.dispatch(CommonActions.navigate(closure_1_10.ACCOUNT));
       };
-      navigation.push(outer1_10.ACCOUNT_CONFIRM_PASSWORD, obj);
+      navigation.push(closure_1_10.ACCOUNT_CONFIRM_PASSWORD, obj);
     }
   }, items1);
   const items2 = [canEditDiscriminatorResult, callback];
@@ -207,10 +202,10 @@ export default function UserSettingsChangeUsername() {
         if (closure_8) {
           const obj = {};
           const merged = Object.assign(arg0);
-          obj.onPress = mergeGuildAvatar;
-          const intl = outer1_0(outer1_3[12]).intl;
-          obj.label = intl.string(outer1_0(outer1_3[12]).t["R3BPH+"]);
-          tmp = outer1_11(outer1_0(outer1_3[21]).HeaderTextButton, obj);
+          obj.onPress = closure_9;
+          const intl = closure_1_0(closure_1_3[12]).intl;
+          obj.label = intl.string(closure_1_0(closure_1_3[12]).t["R3BPH+"]);
+          tmp = closure_1_11(closure_1_0(closure_1_3[21]).HeaderTextButton, obj);
         }
         return tmp;
       }
@@ -314,7 +309,7 @@ export default function UserSettingsChangeUsername() {
     obj3[1] = items5;
     items4[1] = closure_12(ref, obj3);
     obj2[3] = items4;
-    return closure_12(closure_8, obj2);
+    return closure_12(isMatch, obj2);
   }
   const tmp16 = !hasUniqueUsernameResult1;
   const tmp2Result = navigation(first[16]);

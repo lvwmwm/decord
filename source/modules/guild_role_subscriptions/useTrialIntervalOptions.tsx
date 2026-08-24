@@ -1,30 +1,30 @@
-// Module ID: 14578
-// Function ID: 14579
+// Module ID: 14646
+// Function ID: 14647
 // Name: useTrialIntervalOptions
-// Dependencies: [19, 14551, 1924, 1236, 14577, 2]
+// Dependencies: [19, 14619, 1924, 1236, 14645, 2]
 // Exports: default
 
-// Module 14578 (useTrialIntervalOptions)
-import noop from "noop";
-import { TIER_TRIAL_INTERVALS } from "MAX_SUBSCRIPTION_TIERS";
-import { SubscriptionIntervalTypes } from "GuildFeatures";
+// Module 14646 (useTrialIntervalOptions)
+import closure_2 from "noop" /* 19 */;
+import { TIER_TRIAL_INTERVALS } from "MAX_SUBSCRIPTION_TIERS" /* 14619 */;
+import { SubscriptionIntervalTypes } from "GuildFeatures" /* 1924 */;
 
 const require = arg1;
-const result = require("GuildFeatures").fileFinishedImporting("modules/guild_role_subscriptions/useTrialIntervalOptions.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/useTrialIntervalOptions.tsx");
 
 export default function useTrialIntervalOptions(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const items = [arg0];
   return React.useMemo(() => {
-    const options = outer1_3.map((interval) => {
+    const options = closure_1_3.map((interval) => {
       let obj = { value: interval, label: null, isDefault: null };
       if (interval.interval === constants.DAY) {
         if (7 === interval.interval_count) {
           const intl = lib(1236).intl;
           obj = { defaultLimit: null };
-          obj[0] = lib(14577).formatPlanIntervalDuration(interval);
+          obj[0] = lib(14645).formatPlanIntervalDuration(interval);
           let formatToPlainStringResult = intl.formatToPlainString(lib(1236).t.XfSsr1, obj);
-          const obj4 = lib(14577);
+          const obj4 = lib(14645);
         }
         obj[1] = formatToPlainStringResult;
         let tmp5 = interval.interval === tmp.DAY;
@@ -34,7 +34,7 @@ export default function useTrialIntervalOptions(arg0) {
         obj[2] = tmp5;
         return obj;
       }
-      formatToPlainStringResult = lib(14577).formatPlanIntervalDuration(interval);
+      formatToPlainStringResult = lib(14645).formatPlanIntervalDuration(interval);
     });
     let selectedOption = closure_0;
     if (null != closure_0) {

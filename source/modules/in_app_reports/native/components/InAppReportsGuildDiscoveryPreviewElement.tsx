@@ -1,54 +1,60 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 12862
+// Function ID: 12863
 // Name: GuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4662, 21, 4661, 712, 589, 4223, 4734, 1236, 7188, 1430, 2]
+// Dependencies: [19, 17, 4669, 21, 4668, 712, 589, 4227, 4739, 1236, 7226, 1430, 2]
 // Exports: default
 
-// Module 12807 (GuildDiscoveryPreviewElement)
-import "noop";
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12862 (GuildDiscoveryPreviewElement)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
+import Text from "Text" /* 4739 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 7226 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: null, title: null, itemContainer: null, guildInfo: null, guildName: null, guildIcon: null };
-createCacheKey = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey = { color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { textTransform: "uppercase", lineHeight: 16, marginBottom: 8 };
-createCacheKey[3] = { minHeight: 40, borderRadius: require("Themes").radii.sm, borderWidth: 1, padding: 8 };
+createCacheKey[3] = { minHeight: 40, borderRadius: ThemesDefault.radii.sm, borderWidth: 1, padding: 8 };
 createCacheKey[4] = { display: "flex", flexDirection: "row", alignItems: "center" };
 createCacheKey[5] = { lineHeight: 18, marginStart: 8 };
-let obj1 = { minHeight: 40, borderRadius: require("Themes").radii.sm, borderWidth: 1, padding: 8 };
-createCacheKey[6] = { borderRadius: require("Themes").radii.xs, width: 18, height: 18 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { borderRadius: require("Themes").radii.xs, width: 18, height: 18 };
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsGuildDiscoveryPreviewElement.tsx");
+let obj1 = { minHeight: 40, borderRadius: ThemesDefault.radii.sm, borderWidth: 1, padding: 8 };
+createCacheKey[6] = { borderRadius: ThemesDefault.radii.xs, width: 18, height: 18 };
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { borderRadius: ThemesDefault.radii.xs, width: 18, height: 18 };
+const result = require("set").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsGuildDiscoveryPreviewElement.tsx");
 
 export default function GuildDiscoveryPreviewElement(guild) {
   guild = guild.guild;
-  const tmp = createCacheKey();
-  let obj = require(589) /* initialize */;
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const tmp = callback3();
+  let obj = initialize;
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj1 = require(4223) /* hexToRgba */;
+  obj1 = hexToRgba;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.nTe4HC);
-  const items1 = [callback(require(4734) /* Text */.Text, obj), ];
+  const intl = getSystemLocale.intl;
+  obj[3] = intl.string(getSystemLocale.t.nTe4HC);
+  const items1 = [callback(Text.Text, obj), ];
   obj1 = { style: items2, children: null };
   items2 = [tmp.itemContainer, { borderColor: obj1.hexWithOpacity(tmp.borderColor.color, 0.08) }];
   const obj2 = { style: tmp.guildInfo, children: null };
   const obj3 = { style: tmp.guildIcon, guild: null, animate: null };
   const hexWithOpacityResult = obj1.hexWithOpacity(tmp.borderColor.color, 0.08);
-  const tmp4 = importDefault(7188);
-  obj3[1] = require(1430) /* fromGuildPropertiesWithAdditionalFields */.fromClientDiscoverableGuild(guild);
+  const tmp4 = GuildIconSizesDefault;
+  obj3[1] = fromGuildPropertiesWithAdditionalFields.fromClientDiscoverableGuild(guild);
   obj3[2] = !stateFromStores;
-  const items3 = [callback(tmp4, obj3), callback(require(4734) /* Text */.Text, { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: guild.name })];
+  const items3 = [callback(tmp4, obj3), callback(Text.Text, { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: guild.name })];
   obj2[1] = items3;
   obj1[1] = callback2(View, obj2);
   items1[1] = callback(View, obj1);

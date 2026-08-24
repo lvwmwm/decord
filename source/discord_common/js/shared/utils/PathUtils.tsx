@@ -5,6 +5,8 @@
 // Exports: getLoginPath, wrapPaths
 
 // Module 507 (getAuthenticationPath)
+import set from "set" /* 2 */;
+
 function getAuthenticationPath(login, arg1, flag, arg3) {
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -53,7 +55,7 @@ class UnescapedPathParam {
 UnescapedPathParam.prototype["toString"] = function toString() {
   return this.value;
 };
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/PathUtils.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/shared/utils/PathUtils.tsx");
 
 export const getLoginPath = function getLoginPath(arg0, flag) {
   if (flag === undefined) {
@@ -68,8 +70,8 @@ export const getLoginPath = function getLoginPath(arg0, flag) {
 export { getAuthenticationPath };
 export { UnescapedPathParam };
 export const wrapPaths = function wrapPaths(frozen, arg1) {
-  let closure_0 = frozen;
-  let closure_1 = arg1;
+  closure_0 = frozen;
+  closure_1 = arg1;
   const obj = {};
   function _loop() {
     const table = tmp2;
@@ -79,10 +81,11 @@ export const wrapPaths = function wrapPaths(frozen, arg1) {
     } else {
       obj[tmp] = () => {
         const items = [...arguments];
-        return outer1_1(...items.map((arg0) => {
+        const callback = closure_1_1;
+        return callback(...items.map((arg0) => {
           if (null == arg0) {
             return arg0;
-          } else if (arg0 instanceof outer1_1) {
+          } else if (arg0 instanceof closure_1_1) {
             let str = arg0.toString();
           } else if (null == closure_0) {
             let _encodeURIComponent = encodeURIComponent;
@@ -109,7 +112,7 @@ export const wrapPaths = function wrapPaths(frozen, arg1) {
   const keys = Object.keys(frozen);
   const iter = keys[Symbol.iterator]();
   while (iter !== undefined) {
-    let closure_3 = iter.next();
+    closure_3 = iter.next();
     let _loopResult = _loop();
     continue;
   }

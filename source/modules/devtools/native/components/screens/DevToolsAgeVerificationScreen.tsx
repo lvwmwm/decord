@@ -1,19 +1,23 @@
-// Module ID: 15163
-// Function ID: 15164
+// Module ID: 15227
+// Function ID: 15228
 // Name: showAgeVerificationTestModal
-// Dependencies: [5, 19, 17, 21, 4661, 712, 5436, 5428, 4094, 5254, 1629, 6286, 6291, 8595, 6297, 2]
+// Dependencies: [5, 19, 17, 21, 4668, 712, 5441, 5433, 4097, 5259, 1629, 6317, 6322, 8634, 6328, 2]
 // Exports: default
 
-// Module 15163 (showAgeVerificationTestModal)
-import Themes from "Themes";
-import "noop";
-import { ScrollView } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15227 (showAgeVerificationTestModal)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import TableRowInner from "TableRowInner" /* 6322 */;
+import TableRowArrow from "TableRowArrow" /* 6328 */;
+import KeyIcon from "KeyIcon" /* 8634 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { ScrollView } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function showAgeVerificationTestModal() {
   const self = this;
   const apply = _showAgeVerificationTestModal.apply;
@@ -28,14 +32,14 @@ function _showAgeVerificationTestModal() {
   const self = this;
   const tmp = callback(function*() {
     const callback = tmp3;
-    let c3 = 1;
-    let obj2 = outer1_0(outer1_2[6]);
+    c3 = 1;
+    let obj2 = closure_1_0(closure_1_2[6]);
     yield obj2.requestAgeVerification({});
     if (1 === tmp7) {
       c3 = 0;
-      const obj1 = callback(4094);
+      obj1 = callback(4097);
       obj1.open({ content: "Failed to show age verification test modal", key: "age-verification-test-failure" });
-      let c5 = 3;
+      c5 = 3;
     } else if (arg0 === 1) {
       c5 = 3;
       throw arg1;
@@ -49,15 +53,15 @@ function _showAgeVerificationTestModal() {
       obj2[4] = function onComplete() {
         tmp3(tmp15[8]).open({ content: "[On Complete] Successfully age verified", key: "age-verification-test-success" });
       };
-      obj2[5] = lib(5254).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS;
-      callback(5428).showAgeVerification(obj2);
+      obj2[5] = lib(5259).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS;
+      callback(5433).showAgeVerification(obj2);
       c3 = 0;
-      const obj7 = callback(5428);
+      const obj7 = callback(5433);
     }
     c3 = 0;
     return arg1;
   });
-  const _showAgeVerificationTestModal = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -66,41 +70,37 @@ function _showAgeVerificationTestModal() {
   }
   return applyArgumentsResult;
 }
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: null, content: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { padding: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { padding: require("Themes").space.PX_16 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAgeVerificationScreen.tsx");
+createCacheKey[1] = { padding: ThemesDefault.space.PX_16 };
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { padding: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAgeVerificationScreen.tsx");
 
 export default function DevToolsAgeVerificationScreen() {
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = { style: tmp.container, contentContainerStyle: null, children: null };
   const items = [tmp.content, ];
-  obj = { paddingBottom: tmp.content.padding + importDefault(1629)().bottom };
+  obj = { paddingBottom: tmp.content.padding + useSafeAreaInsetsDefault().bottom };
   items[1] = obj;
   obj[1] = items;
   obj = { title: "Quick Actions", hasIcons: true, children: null };
-  const obj1 = { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: null, trailing: null };
-  obj1[2] = callback2(require(8595) /* KeyIcon */.KeyIcon, {});
-  obj1[3] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
-  const items1 = [callback2(require(6291) /* TableRowInner */.TableRow, obj1), ];
-  const obj2 = {
+  const items1 = [callback2(TableRowInner.TableRow, { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: callback2(KeyIcon.KeyIcon, {}), trailing: callback2(TableRowArrow.TableRowArrow, {}) }), ];
+  obj1 = { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: callback2(KeyIcon.KeyIcon, {}), trailing: callback2(TableRowArrow.TableRowArrow, {}) };
+  items1[1] = callback2(TableRowInner.TableRow, {
     label: "Launch Age Verification Modal",
     onPress() {
-      let obj = callback2(5428);
-      obj = { entryPoint: callback(5254).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS };
+      let obj = callback2(5433);
+      obj = { entryPoint: callback(5259).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS };
       return obj.showAgeVerificationGetStartedModal(obj);
     },
-    icon: null,
-    trailing: null
-  };
-  obj2[2] = callback2(require(8595) /* KeyIcon */.KeyIcon, {});
-  obj2[3] = callback2(require(6297) /* TableRowArrow */.TableRowArrow, {});
-  items1[1] = callback2(require(6291) /* TableRowInner */.TableRow, obj2);
+    icon: callback2(KeyIcon.KeyIcon, {}),
+    trailing: callback2(TableRowArrow.TableRowArrow, {})
+  });
   obj[2] = items1;
-  obj[2] = callback3(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[2] = callback3(TableRowGroupTitle.TableRowGroup, obj);
   return callback2(ScrollView, obj);
 };

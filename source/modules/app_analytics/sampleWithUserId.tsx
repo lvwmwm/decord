@@ -1,15 +1,18 @@
-// Module ID: 5062
-// Function ID: 5063
+// Module ID: 5067
+// Function ID: 5068
 // Name: sampleWithUserId
 // Dependencies: [1217, 2]
 // Exports: sampleWithUserId
 
-// Module 5062 (sampleWithUserId)
+// Module 5067 (sampleWithUserId)
+import set from "set" /* 2 */;
+import MurmurHashV3Default from "MurmurHashV3" /* 1217 */;
+
 let c2 = 2147483647;
-const result = require("set").fileFinishedImporting("modules/app_analytics/sampleWithUserId.tsx");
+const result = set.fileFinishedImporting("modules/app_analytics/sampleWithUserId.tsx");
 
 export const sampleWithUserId = function sampleWithUserId(id, arg1) {
-  const v3Result = importDefault(1217).v3(String(id));
+  const v3Result = MurmurHashV3Default.v3(String(id));
   let sum = v3Result;
   if (v3Result < 0) {
     sum = v3Result + 4294967296;

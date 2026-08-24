@@ -1,31 +1,19 @@
-// Module ID: 6950
-// Function ID: 6951
+// Module ID: 6988
+// Function ID: 6989
 // Name: Background
-// Dependencies: [32, 19, 17, 6951, 21, 4661, 712, 500, 1629, 4721, 6952, 6370, 4756, 691, 4115, 7122, 1356, 7123, 4761, 7124, 7125, 6550, 1494, 4225, 7126, 4104, 2]
+// Dependencies: [32, 19, 17, 6989, 21, 4668, 712, 500, 1629, 4727, 6990, 6401, 4761, 691, 4119, 7160, 1356, 7161, 4766, 7162, 7163, 6581, 1494, 4229, 7164, 4107, 2]
 
-// Module 6950 (Background)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "ActionSheetHeaderBar";
-import get_ActivityIndicator from "useBottomSheetImperativeHandle";
-import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO";
-import jsxProd from "NavScrim";
-import createCacheKey from "createCacheKey";
+// Module 6988 (Background)
+import set from "set" /* 500 */;
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let Platform;
-let c10;
-let c5;
-let c9;
-let closure_12;
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_6;
-let error;
-let map1;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function Background(arg0) {
   const merged = Object.assign(arg0);
   return callback(closure_6, {});
@@ -39,7 +27,7 @@ function GradientBackground(arg0) {
 }
 let c4 = importAllResult;
 ({ StyleSheet: c5, View: closure_6, Platform } = get_ActivityIndicator);
-({ ACTION_SHEET_START_HEIGHT_RATIO: error, ACTION_SHEET_MAX_WIDTH: metroImportAll, ACTION_SHEET_SPRING_CONFIG: c9, ACTION_SHEET_SPRING_CONFIG_REDUCED_MOTION: c10, ACTION_SHEET_GRADIENT_BORDER_WIDTH: unpackModuleId, ACTION_SHEET_GRADIENT_BORDER_RADIUS: closure_12, ACTION_SHEET_BORDER_RADIUS: map1, ACTION_SHEET_INNER_BORDER_RADIUS: closure_14, ACTION_SHEET_MINIMUM_BOTTOM_PADDING: closure_15 } = ACTION_SHEET_START_HEIGHT_RATIO);
+({ ACTION_SHEET_START_HEIGHT_RATIO: error, ACTION_SHEET_MAX_WIDTH: closure_8, ACTION_SHEET_SPRING_CONFIG: c9, ACTION_SHEET_SPRING_CONFIG_REDUCED_MOTION: c10, ACTION_SHEET_GRADIENT_BORDER_WIDTH: unpackModuleId, ACTION_SHEET_GRADIENT_BORDER_RADIUS: closure_12, ACTION_SHEET_BORDER_RADIUS: map1, ACTION_SHEET_INNER_BORDER_RADIUS: closure_14, ACTION_SHEET_MINIMUM_BOTTOM_PADDING: closure_15 } = ACTION_SHEET_START_HEIGHT_RATIO);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
 let closure_18 = createCacheKey.createStyles((arg0) => {
   let num = arg1;
@@ -51,16 +39,16 @@ let closure_18 = createCacheKey.createStyles((arg0) => {
     flag = false;
   }
   let obj = { background: null, wrapper: null, wrapperWithBorder: null, content: null, gradient: null, handleIndicator: null, backgroundOverlay: null, header: null, body: null };
-  obj = { overflow: "hidden", borderTopLeftRadius: closure_13, borderTopRightRadius: closure_13, backgroundColor: importDefault(712).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+  obj = { overflow: "hidden", borderTopLeftRadius: closure_13, borderTopRightRadius: closure_13, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
   obj[0] = obj;
   obj[1] = { overflow: "hidden", flex: 1 };
-  obj = { overflow: "hidden", marginTop: closure_11, marginHorizontal: closure_11, borderTopLeftRadius: closure_12, borderTopRightRadius: closure_12, backgroundColor: importDefault(712).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+  obj = { overflow: "hidden", marginTop: closure_11, marginHorizontal: closure_11, borderTopLeftRadius: closure_12, borderTopRightRadius: closure_12, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
   obj[2] = obj;
   let tmp4;
   if (arg0) {
     tmp4 = tmp;
   }
-  const obj1 = { borderTopLeftRadius: tmp4, borderTopRightRadius: null, overflow: null, marginBottom: null, flex: 1 };
+  obj1 = { borderTopLeftRadius: tmp4, borderTopRightRadius: null, overflow: null, marginBottom: null, flex: 1 };
   let tmp5;
   if (arg0) {
     tmp5 = tmp;
@@ -77,29 +65,22 @@ let closure_18 = createCacheKey.createStyles((arg0) => {
   }
   obj1[3] = num2;
   obj[3] = obj1;
-  let obj4 = require(500) /* set */;
+  let obj4 = set;
   let str2;
   if (obj4.isIOS()) {
     str2 = "hidden";
   }
   obj[4] = { height: "100%", overflow: str2, borderTopLeftRadius: closure_14, borderTopRightRadius: closure_14 };
-  obj[5] = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_STRONG };
+  obj[5] = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG };
   obj4 = {};
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
-  obj4.backgroundColor = importDefault(712).colors.MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT;
+  obj4.backgroundColor = ThemesDefault.colors.MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT;
   obj[6] = obj4;
   obj[7] = { marginBottom: 16 };
   obj[8] = { flex: 1 };
   return obj;
 });
 let closure_19 = importAllResult.forwardRef((windowDimensions, ref) => {
-  let children;
-  let hasEverExpanded;
-  let keyboardShouldPersistTaps;
-  let scrollViewStyle;
-  let startExpanded;
-  let startHeight;
-  let wrapperStyle;
   ({ startHeight, hasEverExpanded } = windowDimensions);
   const height = windowDimensions.windowDimensions.height;
   const onChange = windowDimensions.onChange;
@@ -109,13 +90,13 @@ let closure_19 = importAllResult.forwardRef((windowDimensions, ref) => {
   const merged = Object.assign(windowDimensions, Object.create(null));
   let isScreenReaderEnabled;
   startHeight = undefined;
-  let closure_4;
+  closure_4 = undefined;
   let obj = onChange(isScreenReaderEnabled[9]);
   isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   if (startHeight == null) {
     startHeight = height * closure_7;
   }
-  let obj1 = closure_4;
+  obj1 = closure_4;
   if (!isScreenReaderEnabled) {
     if (!startExpanded) {
       let items = [startHeight];
@@ -169,13 +150,6 @@ let closure_19 = importAllResult.forwardRef((windowDimensions, ref) => {
   items = [];
 });
 let closure_20 = importAllResult.forwardRef((windowDimensions, ref) => {
-  let children;
-  let contentHeight;
-  let extraContent;
-  let hasEverExpanded;
-  let maxHeight;
-  let startHeight;
-  let wrapperStyle;
   ({ startHeight, contentHeight, maxHeight, hasEverExpanded } = windowDimensions);
   const height = windowDimensions.windowDimensions.height;
   const onChange = windowDimensions.onChange;
@@ -186,7 +160,7 @@ let closure_20 = importAllResult.forwardRef((windowDimensions, ref) => {
   let isScreenReaderEnabled;
   startHeight = undefined;
   maxHeight = undefined;
-  let c6;
+  c6 = undefined;
   let obj = hasEverExpanded(onExpand[9]);
   isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   if (startHeight == null) {
@@ -256,22 +230,6 @@ let closure_23 = { code: "function BottomSheetNativeTsx1(){const{animatedIndex}=
 let closure_24 = { code: "function BottomSheetNativeTsx2(){const{animatedIsVisuallyClosed}=this.__closure;return animatedIsVisuallyClosed.get();}" };
 let closure_25 = { code: "function BottomSheetNativeTsx3(isVisuallyClosed){const{transitionState,runOnJS,onLeave}=this.__closure;if(isVisuallyClosed&&transitionState==='exiting'){runOnJS(onLeave)();}}" };
 const forwardRefResult = importAllResult.forwardRef((scrollable, ref) => {
-  let backgroundStyles;
-  let bodyStyles;
-  let borderGradient;
-  let children;
-  let containerHeight;
-  let contentHeight;
-  let contentStyles;
-  let extraContent;
-  let handleComponent;
-  let handleDisabled;
-  let header;
-  let keyboardShouldPersistTaps;
-  let maxHeight;
-  let showGradient;
-  let startExpanded;
-  let startHeight;
   let flag = scrollable.scrollable;
   if (flag === undefined) {
     flag = false;
@@ -299,9 +257,9 @@ const forwardRefResult = importAllResult.forwardRef((scrollable, ref) => {
   let onLeave;
   let registerDismissHandler;
   ref = undefined;
-  let closure_11;
-  let closure_12;
-  let closure_13;
+  closure_11 = undefined;
+  closure_12 = undefined;
+  closure_13 = undefined;
   let animatedIndex;
   let derivedValue;
   let obj = onExpand;
@@ -418,7 +376,7 @@ const forwardRefResult = importAllResult.forwardRef((scrollable, ref) => {
   const animatedReaction = width(dismissAccessibilityLabel[14]).useAnimatedReaction(_e, he);
   const items4 = [dismissAccessibilityLabel];
   const items5 = [backdropOpacity, backdropChildren];
-  callback2 = obj.useCallback(() => outer1_16(width(dismissAccessibilityLabel[19]).ActionSheetHeaderBar, {
+  callback2 = obj.useCallback(() => closure_1_16(width(dismissAccessibilityLabel[19]).ActionSheetHeaderBar, {
     accessibilityLabel: dismissAccessibilityLabel,
     onPress() {
       const current = ref.current;
@@ -432,9 +390,9 @@ const forwardRefResult = importAllResult.forwardRef((scrollable, ref) => {
     let obj = { style: items, children: null };
     items = [onDismiss.absoluteFill, animatedIndex.style];
     obj = { animatedIndex: animatedIndex.animatedIndex, opacity: width };
-    const items1 = [outer1_16(width(dismissAccessibilityLabel[20]).BottomSheetBackdrop, obj), backdropChildren];
+    const items1 = [closure_1_16(width(dismissAccessibilityLabel[20]).BottomSheetBackdrop, obj), backdropChildren];
     obj[1] = items1;
-    return outer1_17(transitionState, obj);
+    return closure_1_17(transitionState, obj);
   }, items5);
   const callback4 = obj.useCallback((arg0) => {
     const obj = {};
@@ -444,7 +402,7 @@ const forwardRefResult = importAllResult.forwardRef((scrollable, ref) => {
       tmpResult = tmp(width(dismissAccessibilityLabel[21]).NavScrim, {});
     }
     obj.children = tmpResult;
-    return outer1_16(width(dismissAccessibilityLabel[10]).BottomSheetFooter, obj);
+    return closure_1_16(width(dismissAccessibilityLabel[10]).BottomSheetFooter, obj);
   }, items6);
   const tmp21 = backdropChildren(dismissAccessibilityLabel[22])({ ignoreKeyboard: true });
   width = undefined;
@@ -497,7 +455,7 @@ const forwardRefResult = importAllResult.forwardRef((scrollable, ref) => {
     obj[29] = onLeave;
     obj[30] = borderGradient;
     obj[31] = extraContent;
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     const items10 = [tmp5.content, contentStyles];
     obj1[0] = items10;
     let tmp26Result = null != header;
@@ -532,6 +490,6 @@ const forwardRefResult = importAllResult.forwardRef((scrollable, ref) => {
     return tmp26Result1;
   }
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Sheet/native/BottomSheet.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Sheet/native/BottomSheet.native.tsx");
 
 export const BottomSheet = forwardRefResult;

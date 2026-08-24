@@ -1,26 +1,26 @@
-// Module ID: 6888
-// Function ID: 6889
+// Module ID: 6926
+// Function ID: 6927
 // Name: AnnouncementsLockIcon
-// Dependencies: [19, 21, 712, 4096, 6865, 2]
+// Dependencies: [19, 21, 712, 4099, 6903, 2]
 // Exports: AnnouncementsLockIcon
 
-// Module 6888 (AnnouncementsLockIcon)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 6926 (AnnouncementsLockIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import BaseIconImage from "BaseIconImage" /* 4099 */;
+import registerAsset from "registerAsset" /* 6903 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/AnnouncementsLockIcon.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Icon/native/redesign/generated/AnnouncementsLockIcon.tsx");
 
 export const AnnouncementsLockIcon = function AnnouncementsLockIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = ThemesDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.create(null));
-  const obj = { source: null, color: null, style: null };
-  obj[0] = require(6865) /* registerAsset */;
-  obj[1] = INTERACTIVE_ICON_DEFAULT;
-  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(BaseIconImage.BaseIconImage, { source: registerAsset, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

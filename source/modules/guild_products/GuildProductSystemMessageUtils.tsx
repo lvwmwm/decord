@@ -1,19 +1,22 @@
-// Module ID: 8213
-// Function ID: 8214
+// Module ID: 8253
+// Function ID: 8254
 // Name: getGuildProductPurchaseSystemMessageContentMobile
 // Dependencies: [676, 1236, 2]
 // Exports: getGuildProductPurchaseSystemMessageContentMobile
 
-// Module 8213 (getGuildProductPurchaseSystemMessageContentMobile)
-import { NOOP } from "ME";
+// Module 8253 (getGuildProductPurchaseSystemMessageContentMobile)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
 
-const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductSystemMessageUtils.tsx");
+const NOOP = ME.NOOP;
+const result = set.fileFinishedImporting("modules/guild_products/GuildProductSystemMessageUtils.tsx");
 
 export const getGuildProductPurchaseSystemMessageContentMobile = function getGuildProductPurchaseSystemMessageContentMobile(username) {
   let usernameHook = username.usernameOnClickHandler;
   if (usernameHook === undefined) {
     usernameHook = NOOP;
   }
-  const intl = require(1236) /* getSystemLocale */.intl;
-  return intl.formatToParts(require(1236) /* getSystemLocale */.t["w4iXs+"], { username: username.username, usernameHook, productName: username.productName });
+  const intl = getSystemLocale.intl;
+  return intl.formatToParts(getSystemLocale.t["w4iXs+"], { username: username.username, usernameHook, productName: username.productName });
 };

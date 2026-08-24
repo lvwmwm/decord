@@ -1,10 +1,12 @@
-// Module ID: 5557
-// Function ID: 5558
+// Module ID: 5564
+// Function ID: 5565
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5557 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BrushAndSwordIllocon-2x.png.js");
+// Module 5564 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BrushAndSwordIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/5a7da233ef8e64b9cbaa85ae993a0cf9251ea5806a0ac6a4fd7a5504c101f0a4.png";
 export const metadata = { fileBytes: 741 };

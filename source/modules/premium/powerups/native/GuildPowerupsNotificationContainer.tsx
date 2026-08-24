@@ -1,41 +1,46 @@
-// Module ID: 11724
-// Function ID: 11725
+// Module ID: 11773
+// Function ID: 11774
 // Name: Tier3OverrideNotice
-// Dependencies: [17, 21, 4661, 712, 8307, 4734, 11725, 11726, 1236, 2367, 11729, 2]
+// Dependencies: [17, 21, 4668, 712, 8347, 4739, 11774, 11775, 1236, 2368, 11778, 2]
 // Exports: default
 
-// Module 11724 (Tier3OverrideNotice)
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11773 (Tier3OverrideNotice)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import apexExperiment from "apexExperiment" /* 8347 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 11774 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 11775 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 function Tier3OverrideNotice(children) {
-  let obj = require(8307) /* apexExperiment */;
+  let obj = apexExperiment;
   obj = { style: callback().staffContainer, children: null };
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("Tier3OverrideNotice");
   let str = "text-sm/medium";
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-sm/normal";
   }
-  obj[1] = closure_4(require(4734) /* Text */.Text, { variant: str, children: children.text });
+  obj[1] = closure_4(Text.Text, { variant: str, children: children.text });
   return closure_4(View, obj);
 }
+const View = get_ActivityIndicator.View;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { container: null, staffContainer: null };
-obj = { gap: require("Themes").space.PX_12, margin: require("Themes").space.PX_16 };
+obj = { gap: ThemesDefault.space.PX_12, margin: ThemesDefault.space.PX_16 };
 obj[0] = obj;
-obj[1] = { padding: require("Themes").space.PX_12, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("Themes").radii.md, borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_SUBTLE };
+obj[1] = { padding: ThemesDefault.space.PX_12, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: ThemesDefault.radii.md, borderWidth: 1, borderStyle: "solid", borderColor: ThemesDefault.colors.BORDER_SUBTLE };
 let closure_6 = createCacheKey.createStyles(obj);
-let obj1 = { padding: require("Themes").space.PX_12, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("Themes").radii.md, borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_SUBTLE };
-const result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsNotificationContainer.tsx");
+let obj1 = { padding: ThemesDefault.space.PX_12, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: ThemesDefault.radii.md, borderWidth: 1, borderStyle: "solid", borderColor: ThemesDefault.colors.BORDER_SUBTLE };
+const result = set.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsNotificationContainer.tsx");
 
 export default function GuildPowerupsNotificationContainer(guildId) {
   guildId = guildId.guildId;
-  const tmp4 = importDefault(11725)(guildId);
-  const tmp5 = importDefault(11726)(guildId);
-  let obj = require(8307) /* apexExperiment */;
+  const tmp4 = useGuildPowerupTier3OverrideConfigDefault(guildId);
+  const tmp5 = useGuildPowerupExpiringNotificationsConfigDefault(guildId);
+  let obj = apexExperiment;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsNotificationContainer");
   if (tmp4.shouldShow) {
     obj = { style: null, children: null };
@@ -52,11 +57,11 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     }
     obj[1] = str2;
     const intl = tmp6(1236).intl;
-    obj[2] = intl.string(tmp2(2367)["3FRirU"]);
-    const items = [closure_4(tmp6(4734).Text, obj), , ];
+    obj[2] = intl.string(tmp2(2368)["3FRirU"]);
+    const items = [closure_4(tmp6(4739).Text, obj), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
-      const obj1 = { text: null };
+      obj1 = { text: null };
       obj1[0] = tmp4.text;
       shouldShow = tmp11(Tier3OverrideNotice, obj1);
     }
@@ -66,7 +71,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
       const obj2 = { guildId: null, powerupNames: null, warnings: null };
       obj2[0] = guildId;
       ({ expiringPowerupNames: obj5[1], warnings: obj5[2] } = tmp5);
-      shouldShow2 = tmp11(tmp2(11729), obj2);
+      shouldShow2 = tmp11(tmp2(11778), obj2);
     }
     items[2] = shouldShow2;
     obj[1] = items;

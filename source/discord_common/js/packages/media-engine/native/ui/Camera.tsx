@@ -1,11 +1,12 @@
-// Module ID: 4576
-// Function ID: 4577
+// Module ID: 4582
+// Function ID: 4583
 // Name: Camera
-// Dependencies: [19, 21, 4573, 2]
+// Dependencies: [19, 21, 4578, 2]
 
-// Module 4576 (Camera)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 4582 (Camera)
+import noopAll from "noop" /* 19 */;
+import VideoDefault from "Video" /* 4578 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 class Camera {
   constructor(arg0) {
@@ -33,7 +34,8 @@ class Camera {
     return tmp2Result;
   }
 }
+noopAll;
 Camera.defaultProps = { disabled: false, width: 320, height: 180 };
-const result = require("Video").fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/Camera.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/Camera.tsx");
 
 export default Camera;

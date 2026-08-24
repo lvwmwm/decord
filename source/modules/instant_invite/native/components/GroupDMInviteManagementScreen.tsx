@@ -1,37 +1,32 @@
-// Module ID: 9947
-// Function ID: 9948
+// Module ID: 9986
+// Function ID: 9987
 // Name: GroupDMInviteManagement
-// Dependencies: [5, 32, 19, 17, 8044, 8133, 676, 21, 4661, 4761, 530, 12, 712, 9948, 6549, 1297, 9973, 9974, 1236, 6314, 503, 6312, 2]
+// Dependencies: [5, 32, 19, 17, 8083, 8172, 676, 21, 4668, 4766, 530, 12, 712, 9987, 6580, 1297, 10012, 10013, 1236, 6345, 503, 6343, 2]
 
-// Module 9947 (GroupDMInviteManagement)
-import closure_3 from "normalizeChannelPropertyForCompare";
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "HeaderBackImage";
-import get_ActivityIndicator from "registerAsset";
-import createFromServer from "createFromServer";
-import normalizeChannelPropertyForCompare from "normalizeChannelPropertyForCompare";
-import ME from "ME";
-import { jsx } from "NavigationStack";
-import createCacheKey from "createCacheKey";
+// Module 9986 (GroupDMInviteManagement)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_8 from "createFromServer" /* 8083 */;
+import normalizeChannelPropertyForCompare from "normalizeChannelPropertyForCompare" /* 8172 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let Platform;
-let c10;
-let c9;
-let closure_6;
-let error;
 const require = arg1;
 function GroupDMInviteManagement(channelId) {
   channelId = channelId.channelId;
   let first;
-  let dependencyMap;
-  let closure_3;
+  dependencyMap = undefined;
+  closure_3 = undefined;
   let callback;
   const tmp2 = callback(importAllResult.useState([]), 2);
   first = tmp2[0];
   dependencyMap = tmp2[1];
   const tmp3 = callback(importAllResult.useState(true), 2);
   closure_3 = tmp3[1];
-  first(4761)(() => {
+  first(4766)(() => {
     function _fetchInvites() {
       const self = this;
       const tmp = callback(function*() {
@@ -46,7 +41,7 @@ function GroupDMInviteManagement(channelId) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -61,12 +56,12 @@ function GroupDMInviteManagement(channelId) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_1 = tmp2;
+                closure_1 = tmp2;
                 let callback = tmp5;
                 callback = undefined;
-                const HTTP = callback(outer2_2[10]).HTTP;
-                const obj1 = { url: null, retries: 3, oldFormErrors: true, rejectWithError: true };
-                obj1[0] = outer2_10.INSTANT_INVITES(outer1_0);
+                const HTTP = callback(closure_2_2[10]).HTTP;
+                obj1 = { url: null, retries: 3, oldFormErrors: true, rejectWithError: true };
+                obj1[0] = closure_2_10.INSTANT_INVITES(closure_1_0);
                 v0 = 1;
                 v02 = 1;
                 const obj2 = { value: null, done: false };
@@ -87,12 +82,12 @@ function GroupDMInviteManagement(channelId) {
                 const obj = {};
                 const merged = Object.assign(arg0);
                 ({ max_uses: obj.maxUses, max_age: obj.maxAge, created_at: obj.createdAt } = arg0);
-                return new createFromServer(obj);
+                return new closure_8(obj);
               });
               v0(callback);
               v02(false);
               v02 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp13) {
             v02 = tmp;
@@ -100,7 +95,7 @@ function GroupDMInviteManagement(channelId) {
           }
         }
       });
-      const _fetchInvites = tmp;
+      closure_0 = tmp;
       const apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -144,11 +139,11 @@ function GroupDMInviteManagement(channelId) {
   [][0] = first;
   callback = importAllResult.useCallback((code) => code.code, []);
   if (tmp3[0]) {
-    let tmp14 = jsx(channelId(6549).SceneLoadingIndicator, {});
+    let tmp14 = jsx(channelId(6580).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
     let obj = { lightSource: null, darkSource: null, title: null, body: null };
-    obj[0] = tmp4(9973);
-    obj[1] = tmp4(9974);
+    obj[0] = tmp4(10012);
+    obj[1] = tmp4(10013);
     const intl = channelId(1236).intl;
     obj[2] = intl.string(channelId(1236).t["+nLJkZ"]);
     const intl2 = channelId(1236).intl;
@@ -176,18 +171,18 @@ const memoResult = importAllResult.memo(function GroupDMInviteManagementScreen(c
   const memo = importAllResult.useMemo(() => {
     let obj = {};
     obj = { title: null, headerLeft: null, render: null, impressionName: null };
-    const intl = channelId(outer1_2[18]).intl;
-    obj[0] = intl.string(channelId(outer1_2[18]).t.OQ9MKu);
-    obj[1] = channelId(outer1_2[19]).getHeaderCloseButton(onClose);
+    const intl = channelId(closure_1_2[18]).intl;
+    obj[0] = intl.string(channelId(closure_1_2[18]).t.OQ9MKu);
+    obj[1] = channelId(closure_1_2[19]).getHeaderCloseButton(onClose);
     obj[2] = function render() {
-      return outer1_11(outer1_13, { channelId: closure_0 });
+      return closure_1_11(closure_1_13, { channelId: closure_0 });
     };
-    obj[3] = channelId(outer1_2[20]).ImpressionNames.GDM_SETTINGS_INVITES;
-    obj[outer1_9.INSTANT_INVITES_MANAGEMENT] = obj;
+    obj[3] = channelId(closure_1_2[20]).ImpressionNames.GDM_SETTINGS_INVITES;
+    obj[closure_1_9.INSTANT_INVITES_MANAGEMENT] = obj;
     return obj;
   }, items);
-  return jsx(channelId(6312).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+  return jsx(channelId(6343).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
 });
-const result = require("noop").fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
 
 export default memoResult;

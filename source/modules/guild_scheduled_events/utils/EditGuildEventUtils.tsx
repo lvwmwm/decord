@@ -1,20 +1,18 @@
-// Module ID: 8784
-// Function ID: 8785
+// Module ID: 8821
+// Function ID: 8822
 // Name: EditGuildEventScreens
-// Dependencies: [1218, 1397, 8785, 8788, 2]
+// Dependencies: [1218, 1397, 8822, 8825, 2]
 // Exports: convertToFakeGuildEvent, getInitialGuildEventData, isEditingEvent, isExistingGuildEvent, recurrenceRuleFromServer, recurrenceRuleToServer
 
-// Module 8784 (EditGuildEventScreens)
-import fetchFingerprint from "fetchFingerprint";
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
+// Module 8821 (EditGuildEventScreens)
+import getRRule from "getRRule" /* 8822 */;
+import getChannelFromEvent from "getChannelFromEvent" /* 8825 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ GuildScheduledEventEntityTypes: c3, GuildScheduledEventStatus: c4, GuildScheduledEventPrivacyLevel: c5, FAKE_EVENT_ID: closure_6 } = GUILD_EVENT_MAX_NAME_LENGTH);
-const result = require("getRRule").fileFinishedImporting("modules/guild_scheduled_events/utils/EditGuildEventUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/utils/EditGuildEventUtils.tsx");
 
 export const EditGuildEventScreens = { CHANNEL_SELECTOR: "ChannelSelector", DETAILS: "Details", PREVIEW: "Preview" };
 export const isEditingEvent = function isEditingEvent(initialGuildEvent) {
@@ -25,7 +23,6 @@ export const isEditingEvent = function isEditingEvent(initialGuildEvent) {
   return Boolean(id);
 };
 export const recurrenceRuleToServer = function recurrenceRuleToServer(recurrenceRule) {
-  let byMonthDay;
   let tmp = null;
   if (null != recurrenceRule) {
     const obj = { start: null, end: null, frequency: null, interval: null, by_weekday: null, by_n_weekday: null, by_month: null, by_month_day: null, by_year_day: null, count: null };
@@ -74,18 +71,6 @@ export const isExistingGuildEvent = function isExistingGuildEvent(arg0) {
   return tmp;
 };
 export const convertToFakeGuildEvent = function convertToFakeGuildEvent(guildEvent, id) {
-  let byMonthDay;
-  let channelId;
-  let description;
-  let entityMetadata;
-  let entityType;
-  let eventExceptions;
-  let image;
-  let name;
-  let privacyLevel;
-  let recurrenceRule;
-  let scheduledEndTime;
-  let scheduledStartTime;
   let tmp = arg2;
   ({ description, entityMetadata, image, recurrenceRule, eventExceptions } = guildEvent);
   ({ name, privacyLevel, channelId, scheduledStartTime, scheduledEndTime, entityType } = guildEvent);
@@ -163,9 +148,9 @@ export const getInitialGuildEventData = function getInitialGuildEventData(initia
     scheduled_start_time = initialGuildEvent.scheduled_start_time;
   }
   if (scheduled_start_time == null) {
-    const initialEventStartDate = require(8785) /* getRRule */.getInitialEventStartDate();
+    const initialEventStartDate = getRRule.getInitialEventStartDate();
     scheduled_start_time = initialEventStartDate.toISOString();
-    const obj2 = require(8785) /* getRRule */;
+    const obj2 = getRRule;
   }
   obj[3] = scheduled_start_time;
   let entity_type;
@@ -240,13 +225,13 @@ export const getInitialGuildEventData = function getInitialGuildEventData(initia
       entity_type1 = initialGuildEvent.entity_type;
     }
     if (entity_type1 === constants.EXTERNAL) {
-      const locationFromEvent = require(8788) /* getChannelFromEvent */.getLocationFromEvent(initialGuildEvent);
+      const locationFromEvent = getChannelFromEvent.getLocationFromEvent(initialGuildEvent);
       if (null != locationFromEvent) {
         obj = { location: null };
         obj[0] = locationFromEvent;
         obj.entityMetadata = obj;
       }
-      const obj7 = require(8788) /* getChannelFromEvent */;
+      const obj7 = getChannelFromEvent;
     }
     return obj;
   }

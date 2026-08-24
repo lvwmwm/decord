@@ -1,27 +1,28 @@
-// Module ID: 8200
-// Function ID: 8201
+// Module ID: 8240
+// Function ID: 8241
 // Name: useUserCommunicationDisabled
-// Dependencies: [1990, 1922, 589, 4010, 2]
+// Dependencies: [1991, 1922, 589, 4013, 2]
 // Exports: default, useCurrentUserCommunicationDisabled, userCommunicationDisabled
 
-// Module 8200 (useUserCommunicationDisabled)
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 8240 (useUserCommunicationDisabled)
+import isCommunicationDisabled from "isCommunicationDisabled" /* 4013 */;
+import closure_2 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/guild_communication_disabled/useUserCommunicationDisabled.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/guild_communication_disabled/useUserCommunicationDisabled.tsx");
 
 export default function useUserCommunicationDisabled(arg0, arg1) {
   const _require = arg0;
-  const dependencyMap = arg1;
-  const items = [trackCommunicationDisabled];
+  dependencyMap = arg1;
+  const items = [closure_2];
   const items1 = [arg1, arg0];
   const stateFromStores = _require(589).useStateFromStores(items, () => {
     let member = null;
     if (null != closure_1) {
       member = null;
       if (null != tmp) {
-        member = outer1_2.getMember(tmp2, tmp);
+        member = closure_1_2.getMember(tmp2, tmp);
       }
     }
     return member;
@@ -36,26 +37,26 @@ export default function useUserCommunicationDisabled(arg0, arg1) {
   const items2 = [prop, ];
   const obj = _require(589);
   const tmp = _require;
-  items2[1] = _require(4010).isMemberCommunicationDisabled(stateFromStores);
+  items2[1] = _require(4013).isMemberCommunicationDisabled(stateFromStores);
   return items2;
 };
 export const useCurrentUserCommunicationDisabled = function useCurrentUserCommunicationDisabled(guild_id) {
-  const items = [mergeGuildAvatar];
+  const items = [closure_3];
   const stateFromStores = id(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   id = undefined;
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const dependencyMap = guild_id;
+  dependencyMap = guild_id;
   let tmpResult = tmp(589);
-  const items1 = [trackCommunicationDisabled];
+  const items1 = [closure_2];
   const items2 = [guild_id, id];
   const stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
     let member = null;
     if (null != closure_1) {
       member = null;
       if (null != tmp) {
-        member = outer1_2.getMember(tmp2, tmp);
+        member = closure_1_2.getMember(tmp2, tmp);
       }
     }
     return member;
@@ -68,7 +69,7 @@ export const useCurrentUserCommunicationDisabled = function useCurrentUserCommun
     prop = null;
   }
   const items3 = [prop, ];
-  tmpResult = tmp(4010);
+  tmpResult = tmp(4013);
   items3[1] = tmpResult.isMemberCommunicationDisabled(stateFromStores1);
   return items3;
 };
@@ -77,7 +78,7 @@ export const userCommunicationDisabled = function userCommunicationDisabled(id, 
   if (null != guildId) {
     member = null;
     if (null != id) {
-      member = trackCommunicationDisabled.getMember(guildId, id);
+      member = closure_2.getMember(guildId, id);
     }
   }
   let prop;
@@ -87,6 +88,6 @@ export const userCommunicationDisabled = function userCommunicationDisabled(id, 
   if (prop == null) {
     prop = null;
   }
-  const items = [prop, require(4010) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member)];
+  const items = [prop, isCommunicationDisabled.isMemberCommunicationDisabled(member)];
   return items;
 };

@@ -1,21 +1,23 @@
-// Module ID: 12601
-// Function ID: 12602
+// Module ID: 12655
+// Function ID: 12656
 // Name: StageChannelBackground
-// Dependencies: [19, 17, 21, 4661, 712, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 2]
 // Exports: default
 
-// Module 12601 (StageChannelBackground)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12655 (StageChannelBackground)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+noopAll;
 createCacheKey = { container: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BLACK };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BLACK };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/stage_channels/native/components/StageChannelBackground.tsx");
+let closure_2 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/components/StageChannelBackground.tsx");
 
 export default function StageChannelBackground(children) {
-  return <View style={createCacheKey().container}>{arg0.children}</View>;
+  return <View style={callback().container}>{arg0.children}</View>;
 };

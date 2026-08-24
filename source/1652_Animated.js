@@ -5,30 +5,23 @@
 // Exports: KeyboardProvider
 
 // Module 1652 (Animated)
-import closure_2 from "controlEdgeToEdgeValues";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import controlEdgeToEdgeValues from "controlEdgeToEdgeValues";
+import noopDefault from "noop" /* 19 */;
+import cancelAnimationDefault from "cancelAnimation" /* 1654 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import noop from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import controlEdgeToEdgeValues from "controlEdgeToEdgeValues" /* 1653 */;
 
-let Platform;
-let StyleSheet;
-let c10;
-let c4;
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
-let unpackModuleId;
-let require = arg1;
-({ useCallback: c4, useEffect: c5, useMemo: closure_6, useRef: error, useState: metroImportAll } = noop);
+const require = arg1;
+({ useCallback: c4, useEffect: c5, useMemo: closure_6, useRef: error, useState: closure_8 } = noop);
+noopDefault;
 let Animated = get_ActivityIndicator.Animated;
 ({ Platform, StyleSheet } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
-controlEdgeToEdgeValues = controlEdgeToEdgeValues.isEdgeToEdge();
-let closure_13 = require("cancelAnimation").createAnimatedComponent(Animated.createAnimatedComponent(require("nativeEventEmitter").KeyboardControllerView));
+let closure_12 = controlEdgeToEdgeValues.isEdgeToEdge();
+let closure_13 = cancelAnimationDefault.createAnimatedComponent(Animated.createAnimatedComponent(require("nativeEventEmitter").KeyboardControllerView));
 const styles = StyleSheet.create({ container: { flex: 1 }, hidden: { display: "none", position: "absolute" } });
 const android = "android";
 let closure_16 = { code: "function pnpm_animatedTsx1(event,platforms){const{OS,progressSV,heightSV}=this.__closure;if(platforms.includes(OS)){progressSV.value=event.progress;heightSV.value=-event.height;}}" };
@@ -39,10 +32,6 @@ let closure_20 = { code: "function pnpm_animatedTsx5(event){const{updateSharedVa
 let closure_21 = { code: "function pnpm_animatedTsx6(e){const{layout}=this.__closure;if(e.target!==-1){layout.value=e;}else{layout.value=null;}}" };
 
 export const KeyboardProvider = (enabled) => {
-  let children;
-  let navigationBarTranslucent;
-  let preserveEdgeToEdge;
-  let statusBarTranslucent;
   enabled = enabled.enabled;
   let tmp = undefined === enabled;
   ({ children, statusBarTranslucent, navigationBarTranslucent, preserveEdgeToEdge } = enabled);
@@ -50,26 +39,26 @@ export const KeyboardProvider = (enabled) => {
     tmp = enabled;
   }
   const preload = enabled.preload;
-  const require = tmp2;
+  const _require = tmp2;
   const tmp3 = sharedValue1(null);
-  const dependencyMap = tmp3;
+  dependencyMap = tmp3;
   const tmp4 = callback(sharedValue2(tmp), 2);
   const first = tmp4[0];
   callback = tmp4[1];
-  let obj = require(1843) /* useEventHandlerRegistration */;
+  let obj = _require(1843);
   const callback2 = obj.useAnimatedValue(0);
-  let obj1 = require(1843) /* useEventHandlerRegistration */;
+  obj1 = _require(1843);
   const callback3 = obj1.useAnimatedValue(0);
-  let obj2 = require(1654) /* cancelAnimation */;
+  let obj2 = _require(1654);
   const sharedValue = obj2.useSharedValue(0);
-  let obj3 = require(1654) /* cancelAnimation */;
+  let obj3 = _require(1654);
   sharedValue1 = obj3.useSharedValue(0);
-  sharedValue2 = require(1654) /* cancelAnimation */.useSharedValue(null);
-  const obj5 = require(1654) /* cancelAnimation */;
-  const Animated = require(1843) /* useEventHandlerRegistration */.useEventHandlerRegistration(tmp3);
-  const obj6 = require(1843) /* useEventHandlerRegistration */;
-  let closure_10 = require(1843) /* useEventHandlerRegistration */.useEventHandlerRegistration(tmp3);
-  let closure_11 = callback2(first(function*() {
+  sharedValue2 = _require(1654).useSharedValue(null);
+  const obj5 = _require(1654);
+  Animated = _require(1843).useEventHandlerRegistration(tmp3);
+  const obj6 = _require(1843);
+  closure_10 = _require(1843).useEventHandlerRegistration(tmp3);
+  closure_11 = callback2(first(function*() {
     if (v0 === 2) {
       v0 = 3;
       HermesBuiltin.throwTypeError();
@@ -81,7 +70,7 @@ export const KeyboardProvider = (enabled) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -107,7 +96,7 @@ export const KeyboardProvider = (enabled) => {
               });
             });
             v0 = 1;
-            const obj1 = { value: null, done: false };
+            obj1 = { value: null, done: false };
             obj1[0] = promise;
             return obj1;
           }
@@ -121,7 +110,7 @@ export const KeyboardProvider = (enabled) => {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp14) {
         v0 = tmp;
@@ -130,7 +119,7 @@ export const KeyboardProvider = (enabled) => {
     }
   }), []);
   let items = [first];
-  const obj7 = require(1843) /* useEventHandlerRegistration */;
+  const obj7 = _require(1843);
   const tmp9 = sharedValue(() => {
     let obj = { enabled: first, animated: null, reanimated: null, layout: null, update: null, setKeyboardHandlers: null, setInputHandlers: null, setEnabled: null };
     obj = { progress: closure_4, height: closure_9.multiply(closure_5, -1) };
@@ -141,7 +130,7 @@ export const KeyboardProvider = (enabled) => {
     obj[4] = closure_11;
     obj[5] = closure_9;
     obj[6] = closure_10;
-    obj[7] = _slicedToArray;
+    obj[7] = closure_3;
     return obj;
   }, items);
   const tmp11 = sharedValue(() => {
@@ -149,7 +138,7 @@ export const KeyboardProvider = (enabled) => {
     return closure_9.event(items, { useNativeDriver: true });
   }, []);
   const fn = function _(progress, arr) {
-    if (arr.includes(outer1_15)) {
+    if (arr.includes(closure_1_15)) {
       sharedValue.value = progress.progress;
       sharedValue1.value = -progress.height;
     }
@@ -159,7 +148,7 @@ export const KeyboardProvider = (enabled) => {
   fn.__workletHash = 2170890222740;
   fn.__initData = closure_16;
   const tmp10 = sharedValue(() => {
-    const items = [outer1_14.hidden, ];
+    const items = [closure_1_14.hidden, ];
     let obj = { translateX: closure_5 };
     const items1 = [obj, ];
     obj = { translateY: closure_4 };
@@ -175,7 +164,7 @@ export const KeyboardProvider = (enabled) => {
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }
       items = ["ios"];
-      if (items.includes(outer1_15)) {
+      if (items.includes(closure_1_15)) {
         tmp = enabled;
         tmp2 = closure_6;
         closure_6.value = enabled.progress;
@@ -196,7 +185,7 @@ export const KeyboardProvider = (enabled) => {
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }
       items = ["android"];
-      if (items.includes(outer1_15)) {
+      if (items.includes(closure_1_15)) {
         tmp = enabled;
         tmp2 = closure_6;
         closure_6.value = enabled.progress;
@@ -215,7 +204,7 @@ export const KeyboardProvider = (enabled) => {
       HermesBuiltin.throwTypeError();
     }
     const items = ["android", "ios"];
-    if (items.includes(outer1_15)) {
+    if (items.includes(closure_1_15)) {
       sharedValue.value = progress.progress;
       sharedValue1.value = -progress.height;
     }
@@ -229,7 +218,7 @@ export const KeyboardProvider = (enabled) => {
       HermesBuiltin.throwTypeError();
     }
     const items = ["android"];
-    if (items.includes(outer1_15)) {
+    if (items.includes(closure_1_15)) {
       sharedValue.value = progress.progress;
       sharedValue1.value = -progress.height;
     }
@@ -238,8 +227,8 @@ export const KeyboardProvider = (enabled) => {
   fn3.__workletHash = 10129400155228;
   fn3.__initData = closure_20;
   obj[3] = fn3;
-  const obj9 = require(1845) /* useAnimatedKeyboardHandler */;
-  const animatedKeyboardHandler = require(1845) /* useAnimatedKeyboardHandler */.useAnimatedKeyboardHandler(obj, []);
+  const obj9 = _require(1845);
+  const animatedKeyboardHandler = _require(1845).useAnimatedKeyboardHandler(obj, []);
   obj1 = { onFocusedInputLayoutChanged: null };
   class I {
     constructor(arg0) {
@@ -259,15 +248,15 @@ export const KeyboardProvider = (enabled) => {
   I.__initData = closure_21;
   obj1[0] = I;
   let items1 = [undefined === preload || preload];
-  const obj11 = require(1845) /* useAnimatedKeyboardHandler */;
+  const obj11 = _require(1845);
   callback3(() => {
-    if (tmp2) {
-      const KeyboardController = tmp2(tmp3[10]).KeyboardController;
+    if (callback) {
+      const KeyboardController = callback(table[10]).KeyboardController;
       KeyboardController.preload();
     }
   }, items1);
   obj2 = { value: tmp9, children: null };
-  obj3 = { ref: tmp3, enabled: first, navigationBarTranslucent: null, statusBarTranslucent: null, preserveEdgeToEdge: null, style: null, onKeyboardMoveReanimated: null, onKeyboardMoveStart: "Boolean", onKeyboardMove: "image/gif", onKeyboardMoveInteractive: null, onKeyboardMoveEnd: null, onFocusedInputLayoutChangedReanimated: null, children: "buzola" };
+  obj3 = { ref: tmp3, enabled: first, navigationBarTranslucent: null, statusBarTranslucent: null, preserveEdgeToEdge: null, style: null, onKeyboardMoveReanimated: null, onKeyboardMoveStart: "Boolean", onKeyboardMove: "M3 9v1H2v1H1v4h1v-1h1v-3h1v-1h4V9H3Z", onKeyboardMoveInteractive: null, onKeyboardMoveEnd: "private", onFocusedInputLayoutChangedReanimated: "a", children: "getScaledImageUrl" };
   let tmp18 = fn;
   let tmp19 = fn;
   if (!fn) {
@@ -288,9 +277,9 @@ export const KeyboardProvider = (enabled) => {
   obj3[8] = tmp11;
   obj3[9] = tmp11;
   obj3[10] = tmp11;
-  obj3[11] = require(1845) /* useAnimatedKeyboardHandler */.useFocusedInputLayoutHandler(obj1, []);
+  obj3[11] = _require(1845).useFocusedInputLayoutHandler(obj1, []);
   obj3[12] = children;
   const items2 = [closure_10(closure_13, obj3), closure_10(Animated.View, { style: tmp10 })];
   obj2[1] = items2;
-  return closure_11(require(1847) /* NOOP */.KeyboardContext.Provider, obj2);
+  return closure_11(_require(1847).KeyboardContext.Provider, obj2);
 };

@@ -4,7 +4,8 @@
 // Dependencies: [654, 2]
 
 // Module 653 (u)
-import u from "u";
+import set from "set" /* 2 */;
+import u from "u" /* 654 */;
 
 try {
   let _Date = Date;
@@ -52,7 +53,7 @@ try {
     } catch (err) {
     }
   }
-  const _module1 = require("set");
+  const _module1 = set;
   const result = _module1.fileFinishedImporting("../discord_common/js/packages/performance-utils/index.js");
   exports.navigationStart = tmp4;
   exports.timeOrigin = tmp5;

@@ -1,22 +1,20 @@
-// Module ID: 15615
-// Function ID: 15616
+// Module ID: 15681
+// Function ID: 15682
 // Name: _handleCreateJoinGuildPress
-// Dependencies: [5, 19, 17, 4197, 676, 1924, 21, 4661, 10202, 2007, 11881, 7192, 8471, 7159, 1367, 15558, 13261, 589, 15572, 1236, 15616, 9545, 712, 2]
+// Dependencies: [5, 19, 17, 4201, 676, 1924, 21, 4668, 10241, 2008, 11930, 7230, 8510, 7197, 1367, 15623, 13319, 589, 15637, 1236, 15682, 9582, 712, 2]
 
-// Module 15615 (_handleCreateJoinGuildPress)
-import GuildFeatures from "GuildFeatures";
-import importAllResult from "getSystemLocale";
-import { View } from "initialize";
-import handleConnectionOpen from "handleConnectionOpen";
-import ME from "ME";
-import { PremiumUpsellTypes } from "GuildFeatures";
-import { jsx } from "CirclePlusIcon";
-import createCacheKey from "createCacheKey";
+// Module 15681 (_handleCreateJoinGuildPress)
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import UnreadIndicatorDefault from "UnreadIndicator" /* 15623 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "handleConnectionOpen" /* 4201 */;
+import ME from "ME" /* 676 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let error;
-let metroImportAll;
 const require = arg1;
 function _handleCreateJoinGuildPress() {
   const self = this;
@@ -32,7 +30,7 @@ function _handleCreateJoinGuildPress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -53,8 +51,8 @@ function _handleCreateJoinGuildPress() {
             lib2 = undefined;
             c2 = 1;
             c3 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_0(c2[9])(c2[8], c2.paths);
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_0(c2[9])(c2[8], c2.paths);
             return obj1;
           }
         } else if (1 === tmp5) {
@@ -110,7 +108,7 @@ function _handleCreateJoinGuildPress() {
       }
     }
   });
-  const _handleCreateJoinGuildPress = tmp;
+  closure_14 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -120,16 +118,16 @@ function _handleCreateJoinGuildPress() {
   return applyArgumentsResult;
 }
 let c4 = importAllResult;
-({ AnalyticsPages: error, MOBILE_GUILD_UPSELL_LIST: metroImportAll, TooltipNames: c9, UpsellTypes: c10 } = ME);
+({ AnalyticsPages: error, MOBILE_GUILD_UPSELL_LIST: closure_8, TooltipNames: c9, UpsellTypes: c10 } = ME);
 let closure_13 = createCacheKey.createStyles({ stretch: { alignSelf: "stretch" } });
 const memoResult = importAllResult.memo(function GuildsBarCreateJoinButton() {
-  const tmp3 = importDefault(1367)("GuildsBarCreateJoinButton");
-  let obj = enabled(15558);
+  const tmp3 = useIsMobileVisualRefreshExperimentEnabledDefault("GuildsBarCreateJoinButton");
+  let obj = enabled(15623);
   const tmp4 = callback2();
-  const GameCommunityAddServerEntryExperiment = enabled(13261).GameCommunityAddServerEntryExperiment;
+  const GameCommunityAddServerEntryExperiment = enabled(13319).GameCommunityAddServerEntryExperiment;
   enabled = GameCommunityAddServerEntryExperiment.useConfig({ location: "GuildsBarCreateJoinButton" }).enabled;
-  let obj1 = enabled(589);
-  const items = [handleConnectionOpen];
+  obj1 = enabled(589);
+  const items = [closure_6];
   let stateFromStores = enabled;
   if (enabled) {
     stateFromStores = obj1.useStateFromStores(items, () => guildId.getGuildId() === closure_8);
@@ -140,7 +138,7 @@ const memoResult = importAllResult.memo(function GuildsBarCreateJoinButton() {
     onPress() {
       if (closure_0) {
         if (!obj.isAtGuildCapAndNonPremium()) {
-          outer1_1(outer1_2[18])(outer1_8);
+          closure_1_1(closure_1_2[18])(closure_1_8);
         }
       }
       (function handleCreateJoinGuildPress() {
@@ -155,7 +153,7 @@ const memoResult = importAllResult.memo(function GuildsBarCreateJoinButton() {
       })();
     }
   }), items1);
-  obj = { selected: stateFromStores, circle: null, unread: false, styles: null, overState: "y", config: "userIdRange", label: null, expandedChildren: "League of Legends", children: null };
+  obj = { selected: stateFromStores, circle: null, unread: false, styles: null, overState: "y", config: "clientLocation", label: null, expandedChildren: "League of Legends", children: null };
   let tmp12 = !tmp3;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
   const tmp10 = View;
@@ -167,13 +165,13 @@ const memoResult = importAllResult.memo(function GuildsBarCreateJoinButton() {
   obj[5] = memo;
   const intl = tmp5(1236).intl;
   obj[6] = intl.string(enabled(1236).t.l5WIbf);
-  obj[7] = jsx(enabled(15616).HomeDrawerAddServerRowExpandedChildren, {});
+  obj[7] = jsx(enabled(15682).HomeDrawerAddServerRowExpandedChildren, {});
   const colors = tmp(712).colors;
   obj1 = { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT };
-  obj[8] = jsx(enabled(9545).CirclePlusIcon, { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
-  obj[1] = jsx(importDefault(15558), { selected: stateFromStores, circle: null, unread: false, styles: null, overState: "y", config: "userIdRange", label: null, expandedChildren: "League of Legends", children: null });
-  return <tmp10 selected={stateFromStores} circle={null} unread={false} styles={null} overState="y" config="userIdRange" label={null} expandedChildren="League of Legends">{null}</tmp10>;
+  obj[8] = jsx(enabled(9582).CirclePlusIcon, { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
+  obj[1] = jsx(UnreadIndicatorDefault, { selected: stateFromStores, circle: null, unread: false, styles: null, overState: "y", config: "clientLocation", label: null, expandedChildren: "League of Legends", children: null });
+  return <tmp10 selected={stateFromStores} circle={null} unread={false} styles={null} overState="y" config="clientLocation" label={null} expandedChildren="League of Legends">{null}</tmp10>;
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/guilds_bar/native/GuildsBarCreateJoinButton.tsx");
+let result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBarCreateJoinButton.tsx");
 
 export default memoResult;

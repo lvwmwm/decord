@@ -1,37 +1,33 @@
-// Module ID: 4975
-// Function ID: 4976
-// Dependencies: [4540, 1391, 4497, 676, 709, 1222, 4976, 9845, 2]
+// Module ID: 4980
+// Function ID: 4981
+// Dependencies: [4545, 1391, 4501, 676, 709, 1222, 4981, 9884, 2]
 
-// Module 4975
-import set from "set";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import ME from "ME";
+// Module 4980
+import dispatcherDefault from "dispatcher" /* 709 */;
+import transitionTo from "transitionTo" /* 1222 */;
+import selectVoiceChannelAdditional from "selectVoiceChannelAdditional" /* 4981 */;
+import disconnectRemoteAll from "disconnectRemote" /* 9884 */;
+import closure_4 from "set" /* 4545 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4501 */;
+import ME from "ME" /* 676 */;
 
-let PopoutWindowKeys;
-let error;
-let metroImportAll;
-const require = arg1;
-({ ME: error, PopoutWindowKeys, Routes: metroImportAll } = ME);
-const result = require("_detectH265HardwareDecode").fileFinishedImporting("actions/SelectedChannelActionCreators.tsx");
+require = arg1;
+({ ME: error, PopoutWindowKeys, Routes: closure_8 } = ME);
+const result = require("set").fileFinishedImporting("actions/SelectedChannelActionCreators.tsx");
 
 export default {
   selectChannel(guildId) {
-    let channelId;
-    let jumpType;
-    let messageId;
-    let skipMessageFetch;
-    let source;
     guildId = guildId.guildId;
     ({ channelId, messageId, jumpType, source, skipMessageFetch } = guildId);
     let tmp = null;
     if (guildId !== closure_7) {
       tmp = guildId;
     }
-    importDefault(709).dispatch({ type: "CHANNEL_SELECT", guildId: tmp, channelId, messageId, jumpType, source, skipMessageFetch });
+    dispatcherDefault.dispatch({ type: "CHANNEL_SELECT", guildId: tmp, channelId, messageId, jumpType, source, skipMessageFetch });
   },
   selectPrivateChannel(id) {
-    require(1222) /* transitionTo */.transitionTo(closure_8.CHANNEL(closure_7, id));
+    transitionTo.transitionTo(closure_8.CHANNEL(closure_7, id));
   },
   selectVoiceChannel(id, c1, flag2) {
     let flag = c1;
@@ -54,15 +50,15 @@ export default {
         const mediaEngine = supported.getMediaEngine();
         mediaEngine.interact();
       }
-      const obj5 = require(4976) /* selectVoiceChannelAdditional */;
+      const obj5 = selectVoiceChannelAdditional;
       const voiceChannelAdditional = obj5.selectVoiceChannelAdditional(id, guildId, flag, flag2, obj);
     }
   },
   disconnect() {
     remoteSessionId = remoteSessionId.getRemoteSessionId();
     if (null != remoteSessionId) {
-      importAll(9845).remoteDisconnect(remoteSessionId);
-      const obj = importAll(9845);
+      disconnectRemoteAll.remoteDisconnect(remoteSessionId);
+      const obj = disconnectRemoteAll;
     }
     const voiceChannel = this.selectVoiceChannel(null);
   }

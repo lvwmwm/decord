@@ -1,47 +1,49 @@
-// Module ID: 6792
-// Function ID: 6793
+// Module ID: 6829
+// Function ID: 6830
 // Name: updateImpersonating
-// Dependencies: [1391, 1980, 1990, 1983, 4021, 1979, 5043, 1982, 676, 1398, 698, 5042, 1988, 709, 1222, 2]
+// Dependencies: [1391, 1981, 1991, 1984, 4024, 1980, 5048, 1983, 676, 1398, 698, 5047, 1989, 709, 1222, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 6792 (updateImpersonating)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import comparator from "comparator";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import handleConnectionOpen from "handleConnectionOpen";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import initialize from "initialize";
-import ME from "ME";
-import { isStaticChannelRoute } from "set";
+// Module 6829 (updateImpersonating)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import transitionTo from "transitionTo" /* 1222 */;
+import ImpersonateType from "ImpersonateType" /* 1989 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 5047 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "comparator" /* 1981 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_8 from "handleConnectionOpen" /* 1980 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_10 from "initialize" /* 1983 */;
+import ME from "ME" /* 676 */;
+import { isStaticChannelRoute } from "set" /* 1398 */;
 
-let closure_12;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function updateImpersonating(closure_0, type) {
   data = data.getData(closure_0);
   if (tmp2) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     obj = { num_roles: null };
     const _Object = Object;
     obj[0] = Object.keys(data.roles).length;
-    const merged = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(closure_0));
-    obj.is_viewing_as_member = data.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+    const merged = Object.assign(collectGuildAnalyticsMetadata.collectGuildAnalyticsMetadata(closure_0));
+    obj.is_viewing_as_member = data.type === ImpersonateType.ImpersonateType.NEW_MEMBER;
     obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-    const obj3 = require(5042) /* collectGuildAnalyticsMetadata */;
+    const obj3 = collectGuildAnalyticsMetadata;
     const tmp7 = require;
     obj = { type: "IMPERSONATE_UPDATE", guildId: null, data: null };
     obj[1] = closure_0;
-    const obj1 = {};
+    obj1 = {};
     const merged1 = Object.assign(data);
     const merged2 = Object.assign(type);
     obj[2] = obj1;
-    importDefault(709).dispatch(obj);
+    dispatcherDefault.dispatch(obj);
     const channelId = store2.getChannelId(closure_0);
     if (null == channelId) {
-      if (!getUncachedChannelPermissions.can(constants.VIEW_CHANNEL, tmp21)) {
+      if (!closure_7.can(constants.VIEW_CHANNEL, tmp21)) {
         const defaultChannel = store.getDefaultChannel(closure_0);
         if (null != defaultChannel) {
           tmp7(1222).transitionTo(closure_12.CHANNEL(closure_0, defaultChannel.id));
@@ -49,36 +51,36 @@ function updateImpersonating(closure_0, type) {
         }
       }
     }
-    const obj4 = importDefault(709);
+    const obj4 = dispatcherDefault;
   }
 }
 ({ Permissions: unpackModuleId, Routes: closure_12, AnalyticEvents: map1 } = ME);
-let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/impersonate/ImpersonateActionCreators.tsx");
+let result = require("set").fileFinishedImporting("modules/impersonate/ImpersonateActionCreators.tsx");
 
 export const startImpersonating = function startImpersonating(guildId, data) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { num_roles: Object.keys(data.roles).length };
-  const merged = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
-  obj.is_viewing_as_member = data.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+  const merged = Object.assign(collectGuildAnalyticsMetadata.collectGuildAnalyticsMetadata(guildId));
+  obj.is_viewing_as_member = data.type === ImpersonateType.ImpersonateType.NEW_MEMBER;
   obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-  const obj3 = require(5042) /* collectGuildAnalyticsMetadata */;
+  const obj3 = collectGuildAnalyticsMetadata;
   const tmp2 = require;
   obj = { type: "IMPERSONATE_UPDATE", guildId, data };
-  importDefault(709).dispatch(obj);
+  dispatcherDefault.dispatch(obj);
   const channelId = store2.getChannelId(guildId);
   if (null == channelId) {
-    if (!getUncachedChannelPermissions.can(constants.VIEW_CHANNEL, tmp7)) {
+    if (!closure_7.can(constants.VIEW_CHANNEL, tmp7)) {
       const defaultChannel = store.getDefaultChannel(guildId);
       if (null != defaultChannel) {
-        tmp2(1222).transitionTo(closure_12.CHANNEL(guildId, defaultChannel.id));
-        const tmp2Result = tmp2(1222);
+        transitionTo.transitionTo(closure_12.CHANNEL(guildId, defaultChannel.id));
+        const tmp2Result = transitionTo;
       }
     }
   }
 };
 export { updateImpersonating };
 export const stopImpersonating = function stopImpersonating(guildId) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "IMPERSONATE_STOP", guildId };
   obj.dispatch(obj);
 };
@@ -86,15 +88,15 @@ export const updateImpersonatedChannels = function updateImpersonatedChannels(gu
   const set = new Set(optedInChannels.getOptedInChannels(guildId1));
   const item = items1.forEach((arg0) => set.add(arg0));
   const item1 = items2.forEach((arg0) => set.delete(arg0));
-  updateImpersonating(guildId1, { type: set(1988).ImpersonateType.NEW_MEMBER, optInChannels: set });
+  updateImpersonating(guildId1, { type: set(1989).ImpersonateType.NEW_MEMBER, optInChannels: set });
 };
 export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId, c2) {
   (function optIntoPrivateChannelsForGrantedRolesForPreview(guildId, c2) {
-    let closure_0 = guildId;
-    let items = [...comparator.getSelectableChannelIds(guildId), ...comparator.getVocalChannelIds(guildId)];
-    let closure_2 = Array.from(c2);
+    closure_0 = guildId;
+    let items = [...closure_4.getSelectableChannelIds(guildId), ...closure_4.getVocalChannelIds(guildId)];
+    closure_2 = Array.from(c2);
     const result = store.addConditionalChangeListener(() => {
-      const selfMember = outer1_5.getSelfMember(set);
+      const selfMember = closure_1_5.getSelfMember(set);
       set = selfMember;
       if (null == selfMember) {
         return false;
@@ -104,20 +106,20 @@ export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId,
       })) {
         return true;
       } else {
-        const items = [];
-        let arraySpreadResult = HermesBuiltin.arraySpread(outer1_4.getSelectableChannelIds(tmp), 0);
-        arraySpreadResult = HermesBuiltin.arraySpread(outer1_4.getVocalChannelIds(tmp), arraySpreadResult);
+        items = [];
+        let arraySpreadResult = HermesBuiltin.arraySpread(closure_1_4.getSelectableChannelIds(tmp), 0);
+        arraySpreadResult = HermesBuiltin.arraySpread(closure_1_4.getVocalChannelIds(tmp), arraySpreadResult);
         const found = items.filter((arg0) => !closure_1.includes(arg0));
         if (found.length > 0) {
           const items1 = [];
           const _Set = Set;
-          set = new Set(outer1_9.getOptedInChannels(tmp));
+          set = new Set(closure_1_9.getOptedInChannels(tmp));
           const item = found.forEach((arg0) => set.add(arg0));
           const item1 = items1.forEach((arg0) => set.delete(arg0));
           const obj = { type: null, optInChannels: null };
           obj[0] = guildId(closure_2[12]).ImpersonateType.NEW_MEMBER;
           obj[1] = set;
-          outer1_15(tmp, obj);
+          closure_1_15(tmp, obj);
         }
         return false;
       }
@@ -129,10 +131,10 @@ export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId,
     obj[item10013.id] = item10013;
     continue;
   }
-  obj = { type: require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER, roles: obj };
+  obj = { type: ImpersonateType.ImpersonateType.NEW_MEMBER, roles: obj };
   updateImpersonating(guildId, obj);
 };
 export const updateImpersonatedData = function updateImpersonatedData(closure_0, arg1) {
   const merged = Object.assign(arg1);
-  updateImpersonating(closure_0, { type: require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER });
+  updateImpersonating(closure_0, { type: ImpersonateType.ImpersonateType.NEW_MEMBER });
 };

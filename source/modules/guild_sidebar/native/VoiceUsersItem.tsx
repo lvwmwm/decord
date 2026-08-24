@@ -1,17 +1,18 @@
-// Module ID: 15391
-// Function ID: 15392
+// Module ID: 15455
+// Function ID: 15456
 // Name: VoiceUsersItem
-// Dependencies: [19, 17, 21, 4661, 2]
+// Dependencies: [19, 17, 21, 4668, 2]
 // Exports: default
 
-// Module 15391 (VoiceUsersItem)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15455 (VoiceUsersItem)
+import noopAll from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+noopAll;
 let closure_2 = createCacheKey.createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { paddingRight: 0, flexDirection: "row", flexWrap: "wrap", alignItems: "center" } });
-const result = require("jsxProd").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsersItem.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsersItem.tsx");
 
 export default function VoiceUsersItem(children) {
   let voiceStatesCollapsed = children.collapsed;

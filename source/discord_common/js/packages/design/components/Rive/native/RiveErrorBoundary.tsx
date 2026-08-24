@@ -1,11 +1,12 @@
-// Module ID: 4164
-// Function ID: 4165
+// Module ID: 4168
+// Function ID: 4169
 // Name: getDerivedStateFromError
-// Dependencies: [19, 4160, 2]
+// Dependencies: [19, 4164, 2]
 
-// Module 4164 (getDerivedStateFromError)
-import { Component } from "noop";
+// Module 4168 (getDerivedStateFromError)
+import noopAll from "noop" /* 19 */;
 
+const Component = noopAll.Component;
 class RiveErrorBoundary extends Component {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

@@ -1,19 +1,15 @@
-// Module ID: 12068
-// Function ID: 12069
-// Dependencies: [19, 21, 4066, 7267, 4342, 1222, 7167, 4093, 8136, 7175, 7177, 10899, 1236, 9563, 9435, 2]
+// Module ID: 12120
+// Function ID: 12121
+// Dependencies: [19, 21, 4069, 7305, 4346, 1222, 7205, 4096, 8175, 7213, 7215, 10938, 1236, 9600, 9472, 2]
 
-// Module 12068
-import importAllResult from "noop";
-import jsxProd from "jsxProd";
+// Module 12120
+import importAllResult from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
 const require = arg1;
 let c3 = importAllResult;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 const memoResult = importAllResult.memo(function MediaMessagePreviewActionSheet(channel) {
-  let closeMediaModal;
-  let user;
   channel = channel.channel;
   const message = channel.message;
   ({ user, closeMediaModal } = channel);
@@ -54,15 +50,14 @@ const memoResult = importAllResult.memo(function MediaMessagePreviewActionSheet(
     const result = channel(closeMediaModal[8]).showReportModalForMessage(message, "mobile_media_message_preview_action_sheet");
   }, items2);
   let obj = { icon: null, label: null, onPress: null };
-  obj = { IconComponent: null };
-  obj[0] = channel(closeMediaModal[11]).ChatArrowRightIcon;
+  obj = { IconComponent: tmp(tmp2[11]).ChatArrowRightIcon };
   obj[0] = callback(channel(closeMediaModal[10]).ActionSheetRow.Icon, obj);
   const intl = tmp(tmp2[12]).intl;
   obj[1] = intl.string(channel(closeMediaModal[12]).t["+TSRGD"]);
   obj[2] = callback1;
   const items3 = [callback(channel(closeMediaModal[10]).ActionSheetRow, obj), , ];
   if (setting) {
-    const obj1 = { icon: null, label: null, onPress: null };
+    obj1 = { icon: null, label: null, onPress: null };
     const obj2 = { IconComponent: null };
     obj2[0] = tmp(tmp2[13]).IdIcon;
     obj1[0] = tmp10(tmp(tmp2[10]).ActionSheetRow.Icon, obj2);
@@ -85,6 +80,6 @@ const memoResult = importAllResult.memo(function MediaMessagePreviewActionSheet(
   items3[2] = canReportUserResult;
   return callback(channel(closeMediaModal[9]).ActionSheet, { children: closure_5(channel(closeMediaModal[10]).ActionSheetRow.Group, { hasIcons: true, children: items3 }) });
 });
-let result = require("explicitContentFromProto").fileFinishedImporting("modules/media_viewer/native/components/message_preview/MediaMessagePreviewActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/media_viewer/native/components/message_preview/MediaMessagePreviewActionSheet.tsx");
 
 export default memoResult;

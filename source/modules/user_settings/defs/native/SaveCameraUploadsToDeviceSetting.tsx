@@ -1,30 +1,33 @@
-// Module ID: 14774
-// Function ID: 14775
+// Module ID: 14838
+// Function ID: 14839
 // Name: toggle
-// Dependencies: [1304, 8198, 589, 9365, 10669, 1236, 2]
+// Dependencies: [1304, 8238, 589, 9402, 10708, 1236, 2]
 
-// Module 14774 (toggle)
-import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
-import createToggle from "createToggle";
+// Module 14838 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 9402 */;
+import closure_3 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["99tBAC"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["99tBAC"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.CHAT,
   useValue: function useSaveCameraUploadsToDeviceValue() {
-    const items = [CHANNEL_SIDEBAR_WIDTH];
-    return require(589) /* initialize */.useStateFromStores(items, () => obj.saveCameraUploadsToDevice);
+    const items = [closure_3];
+    return initialize.useStateFromStores(items, () => obj.saveCameraUploadsToDevice);
   },
   onValueChange: function onSaveCameraUploadsToDeviceValueChange(saveCameraUploadsToDevice) {
-    let obj = importDefault(9365);
+    let obj = saveGuildFoldersDefault;
     obj = { saveCameraUploadsToDevice };
     const result = obj.updatedUnsyncedSettings(obj);
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-let result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/SaveCameraUploadsToDeviceSetting.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/SaveCameraUploadsToDeviceSetting.tsx");
 
 export default createToggle;

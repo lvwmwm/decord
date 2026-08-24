@@ -1,31 +1,31 @@
-// Module ID: 8957
-// Function ID: 8958
+// Module ID: 8994
+// Function ID: 8995
 // Name: useProfileFrame
-// Dependencies: [5301, 5324, 5308, 589, 2]
+// Dependencies: [5306, 5329, 5313, 589, 2]
 // Exports: default
 
-// Module 8957 (useProfileFrame)
-import updateCategoriesAndProducts from "updateCategoriesAndProducts";
-import map from "map";
-import { isProfileFrameRecord } from "fromServer";
+// Module 8994 (useProfileFrame)
+import closure_2 from "updateCategoriesAndProducts" /* 5306 */;
+import closure_3 from "map" /* 5329 */;
+import { isProfileFrameRecord } from "fromServer" /* 5313 */;
 
 const require = arg1;
-const result = require("fromServer").fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrame.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrame.tsx");
 
 export default function useProfileFrame(arg0) {
   const _require = arg0;
-  const items = [updateCategoriesAndProducts, map];
+  const items = [closure_2, closure_3];
   return _require(589).useStateFromStores(items, () => {
     if (null != closure_0) {
-      const product = outer1_2.getProduct(tmp);
+      const product = closure_1_2.getProduct(tmp);
       let first;
       if (product != null) {
         first = product.items[0];
       }
-      if (outer1_4(first)) {
+      if (closure_1_4(first)) {
         return product.items[0];
       } else {
-        const purchase = outer1_3.getPurchase(tmp);
+        const purchase = closure_1_3.getPurchase(tmp);
         let first1;
         if (purchase != null) {
           first1 = purchase.items[0];

@@ -1,39 +1,39 @@
-// Module ID: 8269
-// Function ID: 8270
+// Module ID: 8309
+// Function ID: 8310
 // Name: getPriceString
-// Dependencies: [4044, 4039, 5316, 2]
+// Dependencies: [4047, 4042, 5321, 2]
 // Exports: getPriceString
 
-// Module 8269 (getPriceString)
-import addSubscriptionPlan from "addSubscriptionPlan";
+// Module 8309 (getPriceString)
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 5321 */;
+import closure_2 from "addSubscriptionPlan" /* 4047 */;
 
-const require = arg1;
-const result = require("formatSingleCurrencyPrice").fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.shared.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.shared.tsx");
 
 export const getPriceString = function getPriceString(hasAnyPremiumGroup) {
-  let interval;
-  let intervalCount;
   if (null != hasAnyPremiumGroup) {
     if (hasAnyPremiumGroup.hasAnyPremiumGroup) {
       const planIdFromItems = hasAnyPremiumGroup.planIdFromItems;
       if (null == planIdFromItems) {
         return null;
       } else {
-        const value = addSubscriptionPlan.get(planIdFromItems);
+        const value = closure_2.get(planIdFromItems);
         if (null == value) {
           return null;
         } else {
-          const price = require(4039) /* getPremiumPlanItem */.getPrice(planIdFromItems);
-          const obj2 = require(4039) /* getPremiumPlanItem */;
+          const price = getPremiumPlanItem.getPrice(planIdFromItems);
+          const obj2 = getPremiumPlanItem;
           const tmp2 = require;
-          const formatPriceResult = require(5316) /* formatSingleCurrencyPrice */.formatPrice(price.amount, price.currency);
+          const formatPriceResult = formatSingleCurrencyPrice.formatPrice(price.amount, price.currency);
           if (tmp) {
             ({ interval, intervalCount } = value);
-            return tmp2(5316).formatRate(formatPriceResult, interval, intervalCount);
+            return tmp2(5321).formatRate(formatPriceResult, interval, intervalCount);
           } else {
             return formatPriceResult;
           }
-          const obj3 = require(5316) /* formatSingleCurrencyPrice */;
+          const obj3 = formatSingleCurrencyPrice;
         }
       }
     }

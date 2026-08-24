@@ -1,40 +1,42 @@
-// Module ID: 9237
-// Function ID: 9238
+// Module ID: 9274
+// Function ID: 9275
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 1994, 1302, 21, 4661, 712, 1236, 589, 1363, 7410, 4734, 2]
+// Dependencies: [19, 17, 1995, 1302, 21, 4668, 712, 1236, 589, 1363, 7448, 4739, 2]
 // Exports: default
 
-// Module 9237 (LimitedTimeBadge)
-import "noop";
-import { View } from "get ActivityIndicator";
-import _getSystemLocale from "_getSystemLocale";
-import handleThemeChange from "handleThemeChange";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9274 (LimitedTimeBadge)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useCountdownDefault from "useCountdown" /* 7448 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "handleThemeChange" /* 1302 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { root: null, backgroundDarkMode: null, backgroundLightMode: null };
-createCacheKey = { borderRadius: require("Themes").radii.md, paddingHorizontal: 8, paddingVertical: 2 };
+createCacheKey = { borderRadius: ThemesDefault.radii.md, paddingHorizontal: 8, paddingVertical: 2 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { backgroundColor: require("Themes").colors.WHITE };
-let obj1 = { backgroundColor: require("Themes").colors.WHITE };
-createCacheKey[2] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
-const result = require("_getSystemLocale").fileFinishedImporting("modules/collectibles/native/LimitedTimeBadge.tsx");
+createCacheKey[1] = { backgroundColor: ThemesDefault.colors.WHITE };
+let obj1 = { backgroundColor: ThemesDefault.colors.WHITE };
+createCacheKey[2] = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG };
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG };
+const result = require("set").fileFinishedImporting("modules/collectibles/native/LimitedTimeBadge.tsx");
 
 export default function LimitedTimeBadge(unpublishedAt) {
-  let days;
-  let hours;
-  const tmp = createCacheKey();
-  let obj = require(589) /* initialize */;
-  const items = [handleThemeChange];
+  const tmp = callback();
+  let obj = initialize;
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => callback(table[9]).isThemeDark(theme.theme));
-  let obj1 = require(589) /* initialize */;
-  const items1 = [_getSystemLocale];
+  obj1 = initialize;
+  const items1 = [closure_4];
   const items2 = ["en-US", "en-GB"];
   const hasItem = items2.includes(obj1.useStateFromStores(items1, () => locale.locale));
-  ({ days, hours } = importDefault(7410)(unpublishedAt.unpublishedAt, 1000, undefined, true));
+  ({ days, hours } = useCountdownDefault(unpublishedAt.unpublishedAt, 1000, undefined, true));
   if (hasItem) {
     if (days > 1) {
       const intl6 = tmp2(1236).intl;
@@ -81,7 +83,7 @@ export default function LimitedTimeBadge(unpublishedAt) {
     obj3[0] = days;
     obj2[2] = intl7.formatToPlainString(tmp2(1236).t.TlZULM, obj3);
     obj2[4] = sum;
-    obj1[1] = jsx(tmp2(4734).Text, { color: null, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null });
+    obj1[1] = jsx(tmp2(4739).Text, { color: null, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null });
     return <View style={null}>{null}</View>;
   }
 };

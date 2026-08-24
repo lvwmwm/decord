@@ -4,9 +4,11 @@
 // Dependencies: [732]
 
 // Module 731 (memoize)
+import MapCache from "MapCache" /* 732 */;
+
 function memoize(fn, fn2) {
   const _require = fn;
-  const dependencyMap = fn2;
+  dependencyMap = fn2;
   if (typeof fn === "function") {
     function memoized() {
       const self = this;
@@ -37,6 +39,6 @@ function memoize(fn, fn2) {
   const typeError = new TypeError("Expected a function");
   throw typeError;
 }
-memoize.Cache = require("MapCache");
+memoize.Cache = MapCache;
 
 export default memoize;

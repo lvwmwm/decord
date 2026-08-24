@@ -1,24 +1,27 @@
-// Module ID: 6777
-// Function ID: 6778
+// Module ID: 6814
+// Function ID: 6815
 // Name: getGuildNameSuggestion
-// Dependencies: [1910, 1922, 1405, 687, 6778, 4219, 1236, 2]
+// Dependencies: [1910, 1922, 1405, 687, 6815, 4223, 1236, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 6777 (getGuildNameSuggestion)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import importDefaultResult from "priv";
+// Module 6814 (getGuildNameSuggestion)
+import setDefault from "set" /* 687 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import nameFromUserAll from "nameFromUser" /* 4223 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import importDefaultResult from "priv" /* 1405 */;
 
-const require = arg1;
+require = arg1;
 function getGuildNameSuggestion(truncateUsername) {
   currentUser = currentUser.getCurrentUser();
-  let obj = importAll(4219);
+  let obj = nameFromUserAll;
   const name = obj.getName(currentUser);
   let str = "";
   if (null != name) {
     str = "";
     if (0 !== name.length) {
-      const intl = require(1236) /* getSystemLocale */.intl;
+      const intl = getSystemLocale.intl;
       truncateUsername = undefined;
       if (truncateUsername != null) {
         truncateUsername = truncateUsername.truncateUsername;
@@ -29,24 +32,24 @@ function getGuildNameSuggestion(truncateUsername) {
       }
       obj = { username: null };
       obj[0] = substr;
-      str = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.Y6Qfju, obj);
+      str = intl.formatToPlainString(getSystemLocale.t.Y6Qfju, obj);
     }
   }
   return str;
 }
 let obj = { maxAge: null };
-obj[0] = require("set").Millis.MINUTE;
+obj[0] = setDefault.Millis.MINUTE;
 importDefaultResult = new importDefaultResult(obj);
 const error = importDefaultResult;
 obj = {
   getGuildNameSuggestion,
   requestMembers(arr) {
-    let closure_0 = arg1;
+    closure_0 = arg1;
     let num = arg2;
     if (arg2 === undefined) {
       num = 10;
     }
-    let closure_1;
+    closure_1 = undefined;
     const isArray = Array.isArray(arr);
     let items = [];
     closure_1 = items;
@@ -57,9 +60,9 @@ obj = {
           str = "";
         }
         const combined = "" + str + ":" + closure_0;
-        const value = outer1_7.get(combined);
+        const value = closure_1_7.get(combined);
         if (null == value) {
-          const result = outer1_7.set(combined, true);
+          const result = closure_1_7.set(combined, true);
         }
         if (null == value) {
           arr = arr.push(arg0);
@@ -97,27 +100,27 @@ obj = {
           if (null == items) {
             const push = items.push;
             const items1 = [];
-            HermesBuiltin.arraySpread(outer1_5.getGuildIds(), 0);
+            HermesBuiltin.arraySpread(closure_1_5.getGuildIds(), 0);
             HermesBuiltin.apply(items1, items);
           } else {
             const _Array = Array;
             if (Array.isArray(arr2)) {
               const item = arr2.forEach((arg0) => {
-                const guild = outer1_5.getGuild(arg0);
+                const guild = closure_1_5.getGuild(arg0);
                 if (null != guild) {
                   items.push(guild.id);
                 }
               });
             } else {
-              let guild = outer1_5.getGuild(arr2);
+              let guild = closure_1_5.getGuild(arr2);
               if (null != guild) {
-                const arr = items.push(guild.id);
+                arr = items.push(guild.id);
               }
             }
           }
           if (items.length > 0) {
-            const members = arr(outer1_3[4]).requestMembers(items, arr.toLocaleLowerCase(), num);
-            const obj = arr(outer1_3[4]);
+            const members = arr(closure_1_3[4]).requestMembers(items, arr.toLocaleLowerCase(), num);
+            const obj = arr(closure_1_3[4]);
           }
         }, 200);
       }
@@ -135,33 +138,33 @@ obj = {
         if (null == items) {
           const push = items.push;
           const items1 = [];
-          HermesBuiltin.arraySpread(outer1_5.getGuildIds(), 0);
+          HermesBuiltin.arraySpread(closure_1_5.getGuildIds(), 0);
           HermesBuiltin.apply(items1, items);
         } else {
           const _Array = Array;
           if (Array.isArray(arr2)) {
             const item = arr2.forEach((arg0) => {
-              const guild = outer1_5.getGuild(arg0);
+              const guild = closure_1_5.getGuild(arg0);
               if (null != guild) {
                 items.push(guild.id);
               }
             });
           } else {
-            let guild = outer1_5.getGuild(arr2);
+            let guild = closure_1_5.getGuild(arr2);
             if (null != guild) {
-              const arr = items.push(guild.id);
+              arr = items.push(guild.id);
             }
           }
         }
         if (items.length > 0) {
-          const members = arr(outer1_3[4]).requestMembers(items, arr.toLocaleLowerCase(), num);
-          const obj = arr(outer1_3[4]);
+          const members = arr(closure_1_3[4]).requestMembers(items, arr.toLocaleLowerCase(), num);
+          const obj = arr(closure_1_3[4]);
         }
       }, 200);
     }
   }
 };
-let result = require("priv").fileFinishedImporting("utils/GuildUtils.tsx");
+let result = require("set").fileFinishedImporting("utils/GuildUtils.tsx");
 
 export default obj;
 export { getGuildNameSuggestion };

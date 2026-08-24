@@ -1,30 +1,26 @@
-// Module ID: 16955
-// Function ID: 16956
+// Module ID: 17048
+// Function ID: 17049
 // Name: ApplicationRejectedNotice
-// Dependencies: [19, 17, 1910, 676, 21, 4661, 589, 16931, 11384, 16904, 1236, 14559, 16945, 2]
+// Dependencies: [19, 17, 1910, 676, 21, 4668, 589, 17024, 11435, 16997, 1236, 14627, 17038, 2]
 // Exports: default
 
-// Module 16955 (ApplicationRejectedNotice)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GuildFeatures } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 17048 (ApplicationRejectedNotice)
+import noopAll from "noop" /* 19 */;
+import useGroupListingsFetchContext from "useGroupListingsFetchContext" /* 14627 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 17024 */;
+import useRoleSubscriptionSettingsDisabled from "useRoleSubscriptionSettingsDisabled" /* 17038 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import { GuildFeatures } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function ApplicationRejectedNotice(guildId) {
-  let reapplyNoticeText;
-  let requestRejectedNoticeText;
-  let resubmissionError;
   guildId = guildId.guildId;
   let obj = guildId(589);
-  const items = [createGuildRecordFromRust];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(guildId));
+  const items = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getGuild(guildId));
   if (stateFromStores != null) {
     const features = stateFromStores.features;
     const hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED);
@@ -34,19 +30,19 @@ function ApplicationRejectedNotice(guildId) {
     const hasItem1 = features2.has(GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   }
   const tmp = callback3();
-  ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = importDefault(16931)(stateFromStores));
+  ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = useOnboardingMonetizationEnableFlowDefault(stateFromStores));
   if (null != resubmissionError) {
     obj = { children: null };
-    let tmp9Result = tmp9(11384);
+    let tmp9Result = tmp9(11435);
     obj[0] = resubmissionError.getAnyErrorMessage();
     let tmp14 = callback(tmp9Result, obj);
   } else if (null != requestRejectedNoticeText) {
     obj = { notice: null };
     obj[0] = requestRejectedNoticeText;
-    tmp14 = callback(tmp9(16904), obj);
+    tmp14 = callback(tmp9(16997), obj);
   } else if (tmp13) {
-    const obj1 = { notice: null };
-    tmp9Result = tmp9(16904);
+    obj1 = { notice: null };
+    tmp9Result = tmp9(16997);
     const intl3 = tmp2(1236).intl;
     obj1[0] = intl3.string(tmp2(1236).t.MyJpJT);
     tmp14 = callback(tmp9Result, obj1);
@@ -57,22 +53,22 @@ function ApplicationRejectedNotice(guildId) {
     obj2[1] = intl2.string(tmp2(1236).t["YKw/NQ"]);
     obj2[2] = tmp12;
     obj2[3] = tmp11;
-    tmp14 = callback(tmp9(16904), obj2);
-    const tmp9Result1 = tmp9(16904);
+    tmp14 = callback(tmp9(16997), obj2);
+    const tmp9Result1 = tmp9(16997);
   } else if (true === hasItem1) {
     const obj3 = { notice: null };
     const intl = tmp2(1236).intl;
     obj3[0] = intl.string(tmp2(1236).t.e2g9sW);
-    tmp14 = callback(tmp9(16904), obj3);
-    const tmp9Result2 = tmp9(16904);
+    tmp14 = callback(tmp9(16997), obj3);
+    const tmp9Result2 = tmp9(16997);
   } else {
     tmp14 = null;
     if (true === hasItem) {
       const obj4 = { notice: null };
       const intl4 = tmp2(1236).intl;
       obj4[0] = intl4.string(tmp2(1236).t.rxI9sl);
-      tmp14 = callback(tmp9(16904), obj4);
-      const tmp9Result3 = tmp9(16904);
+      tmp14 = callback(tmp9(16997), obj4);
+      const tmp9Result3 = tmp9(16997);
     }
   }
   let tmp24 = null;
@@ -85,11 +81,9 @@ function ApplicationRejectedNotice(guildId) {
   return tmp24;
 }
 function GuildSettingsRoleSubscription(arg0) {
-  let children;
-  let guildId;
   ({ guildId, children } = arg0);
   const tmp = callback3();
-  let obj = require(14559) /* useGroupListingsFetchContext */;
+  let obj = useGroupListingsFetchContext;
   if (obj.useGroupListingsFetchContext()) {
     obj = { style: null, children: null };
     obj[0] = tmp.container;
@@ -99,17 +93,18 @@ function GuildSettingsRoleSubscription(arg0) {
     obj[1] = items;
     let tmp5 = callback2(closure_4, obj);
   } else {
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.spinner;
     obj1[1] = callback(closure_3, {});
     tmp5 = callback(closure_4, obj1);
   }
   return tmp5;
 }
+noopAll;
 ({ ActivityIndicator: c3, View: c4 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ container: { flex: 1 }, warningBlockContainer: { marginHorizontal: 16, marginTop: 16 }, spinner: { marginTop: 12 } });
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionContainer.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionContainer.tsx");
 
 export default function GuildSettingsRoleSubscriptionContainer(guildId) {
   let obj = { guildId: guildId.guildId, refetchOnMount: true, children: null };
@@ -117,6 +112,6 @@ export default function GuildSettingsRoleSubscriptionContainer(guildId) {
   obj = {};
   const merged = Object.assign(guildId);
   obj[1] = callback(GuildSettingsRoleSubscription, obj);
-  obj[2] = callback(require(16945) /* useRoleSubscriptionSettingsDisabled */.RoleSubscriptionSettingsDisabledContextProvider, obj);
-  return callback(require(14559) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
+  obj[2] = callback(useRoleSubscriptionSettingsDisabled.RoleSubscriptionSettingsDisabledContextProvider, obj);
+  return callback(useGroupListingsFetchContext.GroupListingsFetchContextProvider, obj);
 };

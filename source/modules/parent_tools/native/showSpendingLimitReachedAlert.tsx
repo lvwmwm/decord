@@ -1,27 +1,31 @@
-// Module ID: 7620
-// Function ID: 7621
+// Module ID: 7658
+// Function ID: 7659
 // Name: isSpendingLimitError
-// Dependencies: [4273, 4061, 7621, 4656, 1236, 5353, 4770, 2]
+// Dependencies: [4277, 4064, 7659, 4662, 1236, 5358, 4775, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 7620 (isSpendingLimitError)
-const result = require("useUserIdsForLinkStatus").fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
+// Module 7658 (isSpendingLimitError)
+import set from "set" /* 2 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4277 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+
+const result = set.fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
 
 export const isSpendingLimitError = function isSpendingLimitError(billingError) {
-  let tmp3 = billingError instanceof require(4273) /* V6OrEarlierAPIError */.BillingError;
+  let tmp3 = billingError instanceof V6OrEarlierAPIError.BillingError;
   if (tmp3) {
-    let tmp4 = billingError.code === tmp(4061).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED;
+    let tmp4 = billingError.code === tmp(4064).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED;
     if (!tmp4) {
-      tmp4 = billingError.code === tmp(4061).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
+      tmp4 = billingError.code === tmp(4064).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
     }
     tmp3 = tmp4;
   }
   return tmp3;
 };
 export const showSpendingLimitReachedAlert = function showSpendingLimitReachedAlert() {
-  let obj = activeLinkUserIds(7621);
+  let obj = activeLinkUserIds(7659);
   activeLinkUserIds = obj.getActiveLinkUserIds();
-  let obj1 = importDefault(4656);
+  obj1 = _modDef4662;
   obj = { title: null, body: null, isDismissable: true };
   const intl = activeLinkUserIds(1236).intl;
   obj[0] = intl.string(activeLinkUserIds(1236).t.QJKKrT);
@@ -32,10 +36,10 @@ export const showSpendingLimitReachedAlert = function showSpendingLimitReachedAl
     const intl3 = tmp(1236).intl;
     obj[0] = intl3.string(tmp(1236).t.GF9RCX);
     obj[1] = function onConfirm() {
-      let obj = activeLinkUserIds(outer1_2[5]);
+      let obj = activeLinkUserIds(closure_1_2[5]);
       obj.popLayer();
       obj = { recipientIds: activeLinkUserIds };
-      outer1_1(outer1_2[6]).openPrivateChannel(obj);
+      closure_1_1(closure_1_2[6]).openPrivateChannel(obj);
     };
     const intl4 = tmp(1236).intl;
     obj[2] = intl4.string(tmp(1236).t.L5eIZ2);

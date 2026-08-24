@@ -1,23 +1,23 @@
-// Module ID: 14587
-// Function ID: 14588
+// Module ID: 14655
+// Function ID: 14656
 // Name: useEmojiByIdOrName
-// Dependencies: [6727, 589, 2]
+// Dependencies: [6764, 589, 2]
 // Exports: default, useEmojiByIdOrName
 
-// Module 14587 (useEmojiByIdOrName)
-import getEmojiToGroupId from "getEmojiToGroupId";
+// Module 14655 (useEmojiByIdOrName)
+import closure_2 from "getEmojiToGroupId" /* 6764 */;
 
 const require = arg1;
 function useEmojiByIdOrName(guildId, emojiId) {
   const _require = guildId;
-  const dependencyMap = emojiId;
-  const items = [getEmojiToGroupId];
+  dependencyMap = emojiId;
+  const items = [closure_2];
   const items1 = [guildId, emojiId];
   return _require(589).useStateFromStores(items, () => {
     if (null == closure_1) {
       return null;
     } else {
-      const disambiguatedEmojiContext = outer1_2.getDisambiguatedEmojiContext(closure_0);
+      const disambiguatedEmojiContext = closure_1_2.getDisambiguatedEmojiContext(closure_0);
       let byId = disambiguatedEmojiContext.getById(tmp);
       if (byId == null) {
         byId = disambiguatedEmojiContext.getByName(tmp);

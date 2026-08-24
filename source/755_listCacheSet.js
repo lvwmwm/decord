@@ -4,11 +4,13 @@
 // Dependencies: [751]
 
 // Module 755 (listCacheSet)
+import assocIndexOf from "assocIndexOf" /* 751 */;
+
 
 export default function listCacheSet(arg0, arg1) {
   const self = this;
   const __data__ = this.__data__;
-  const tmp = require(751) /* assocIndexOf */(__data__, arg0);
+  const tmp = assocIndexOf(__data__, arg0);
   if (tmp < 0) {
     self.size = self.size + 1;
     const items = [arg0, arg1];

@@ -1,64 +1,71 @@
-// Module ID: 16144
-// Function ID: 16145
-// Name: GiftingPromotionCoachmarkActionSheet
-// Dependencies: [19, 17, 4662, 7628, 676, 1388, 21, 4661, 712, 589, 10304, 16145, 6701, 4342, 7139, 7159, 10295, 6950, 500, 9217, 5449, 4734, 4745, 1236, 2]
+// Module ID: 16241
+// Function ID: 16242
+// Name: PX_4
+// Dependencies: [19, 17, 4669, 7666, 676, 1388, 21, 4668, 712, 500, 589, 10343, 16242, 6738, 4346, 7177, 7197, 10334, 6988, 9254, 5454, 4739, 4750, 1236, 2]
 // Exports: default
 
-// Module 16144 (GiftingPromotionCoachmarkActionSheet)
-import useAPNGPlayerControls from "useAPNGPlayerControls";
-import { View } from "Background";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import createEmptyPromotionsByType from "createEmptyPromotionsByType";
-import ME from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "Text";
-import createCacheKey from "createCacheKey";
+// Module 16241 (PX_4)
+import ThemesDefault from "Themes" /* 712 */;
+import preloadDefault from "preload" /* 5454 */;
+import usePreviousDefault from "usePrevious" /* 6738 */;
+import contextDefault from "context" /* 7177 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_6 from "createEmptyPromotionsByType" /* 7666 */;
+import ME from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import set from "set" /* 500 */;
 
-let c9;
-let closure_12;
-let error;
-let metroImportAll;
-let unpackModuleId;
 const require = arg1;
-({ AnalyticsSections: error, AnalyticsObjects: metroImportAll, AnalyticsPages: c9 } = ME);
+({ AnalyticsSections: error, AnalyticsObjects: closure_8, AnalyticsPages: c9 } = ME);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
-createCacheKey = { container: null, textContainer: null, text: null, countdownBadge: null, imageShared: null, imageWrapperAndroid: null };
-createCacheKey = { alignItems: "center", padding: require("Themes").space.PX_16 };
+createCacheKey = { container: null, textContainer: null, text: null, countdownBadge: null, countdownBadgeText: null, imageShared: null, imageWrapperAndroid: null };
+createCacheKey = { alignItems: "center", padding: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { gap: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_24 };
+createCacheKey[1] = { gap: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_16, paddingVertical: ThemesDefault.space.PX_24 };
 createCacheKey[2] = { textAlign: "center" };
-let obj1 = { gap: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_24 };
-createCacheKey[3] = { flexDirection: "row", alignSelf: "center", borderRadius: require("Themes").radii.round, paddingHorizontal: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_24, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
-let obj2 = { flexDirection: "row", alignSelf: "center", borderRadius: require("Themes").radii.round, paddingHorizontal: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_24, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
-createCacheKey[4] = { height: 188, width: 335, borderRadius: require("Themes").radii.sm };
-createCacheKey[5] = { overflow: "hidden" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { height: 188, width: 335, borderRadius: require("Themes").radii.sm };
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingPromotionCoachmark.tsx");
+let obj1 = { gap: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_16, paddingVertical: ThemesDefault.space.PX_24 };
+createCacheKey[3] = { flexDirection: "row", alignSelf: "center", borderRadius: ThemesDefault.radii.round, paddingHorizontal: ThemesDefault.space.PX_8, marginTop: ThemesDefault.space.PX_24, backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
+set = set.isAndroid();
+const space = ThemesDefault.space;
+let obj3 = { lineHeight: set ? space.PX_12 : space.PX_16, paddingVertical: null };
+let PX_4;
+if (set.isAndroid()) {
+  PX_4 = ThemesDefault.space.PX_4;
+}
+obj3[1] = PX_4;
+createCacheKey[4] = obj3;
+let obj2 = { flexDirection: "row", alignSelf: "center", borderRadius: ThemesDefault.radii.round, paddingHorizontal: ThemesDefault.space.PX_8, marginTop: ThemesDefault.space.PX_24, backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
+createCacheKey[5] = { height: 188, width: 335, borderRadius: ThemesDefault.radii.sm };
+createCacheKey[6] = { overflow: "hidden" };
+let closure_13 = createCacheKey.createStyles(createCacheKey);
+const result = set.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingPromotionCoachmark.tsx");
 
 export default function GiftingPromotionCoachmarkActionSheet(arg0) {
-  let coachmarkComponent;
-  let markAsDismissed;
   ({ coachmarkComponent, markAsDismissed } = arg0);
-  let importDefault;
-  let dependencyMap;
+  importDefault = undefined;
+  dependencyMap = undefined;
   let React;
-  let c4;
+  closure_4 = undefined;
   let analyticsLocations;
-  const tmp = createCacheKey();
+  const tmp = callback();
   let obj = markAsDismissed(589);
   const items = [analyticsLocations];
   const stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.useReducedMotion);
-  let obj1 = markAsDismissed(10304);
+  obj1 = markAsDismissed(10343);
   let asset;
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
   }
   const themeAndReducedMotionAwareAssetUrl = obj1.useThemeAndReducedMotionAwareAssetUrl(asset);
   let tmp2Result = tmp2(589);
-  const items1 = [createEmptyPromotionsByType];
+  const items1 = [closure_6];
   const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
-  tmp2Result = tmp2(16145);
+  tmp2Result = tmp2(16242);
   let endDate;
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
@@ -66,36 +73,36 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   const str = tmp2Result.useTickingFormattedLimitedOfferTimeLeft(endDate);
   importDefault = tmp9;
   let tmp10 = importDefault;
-  const tmp11 = importDefault(6701)(null != stateFromStores1);
+  const tmp11 = usePreviousDefault(null != stateFromStores1);
   dependencyMap = tmp11;
   React = tmp12;
-  const tmp13 = importDefault(6701)(null != str);
-  c4 = tmp13;
+  const tmp13 = usePreviousDefault(null != str);
+  closure_4 = tmp13;
   const items2 = [tmp13, null != str, null != stateFromStores1, tmp11, markAsDismissed];
   const effect = React.useEffect(() => {
-    if (_undefined2) {
-      if (!_undefined) {
-        _undefined(_undefined2[13]).hideActionSheet();
-        const obj = _undefined(_undefined2[13]);
+    if (dependencyMap) {
+      if (!callback) {
+        callback(4346).hideActionSheet();
+        const obj = callback(4346);
       }
     }
-    let tmp5 = c4;
-    if (c4) {
-      tmp5 = !c3;
+    let tmp5 = closure_4;
+    if (closure_4) {
+      tmp5 = !closure_3;
     }
     if (tmp5) {
-      _undefined(_undefined2[13]).hideActionSheet();
-      markAsDismissed(outer1_10.AUTO_DISMISS);
-      const obj2 = _undefined(_undefined2[13]);
+      callback(4346).hideActionSheet();
+      markAsDismissed(closure_1_10.AUTO_DISMISS);
+      const obj2 = callback(4346);
     }
   }, items2);
-  analyticsLocations = importDefault(7139)(importDefault(7159).GIFTING_PROMOTION_COACHMARK).analyticsLocations;
+  analyticsLocations = contextDefault(QUICK_SWITCHERDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
   const items3 = [analyticsLocations, markAsDismissed];
   let tmp18Result = null;
   if (null != coachmarkComponent) {
     obj = { startExpanded: true, onDismiss: null, children: null };
     obj[1] = function onDismiss() {
-      return markAsDismissed(outer1_10.USER_DISMISS);
+      return markAsDismissed(closure_1_10.USER_DISMISS);
     };
     obj = { style: null, children: null };
     obj[0] = tmp.container;
@@ -105,9 +112,10 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       if (tmp18Result) {
         obj1 = { style: null, children: null };
         obj1[0] = tmp.countdownBadge;
-        let obj2 = { variant: "text-xs/bold", color: "text-overlay-light", children: null };
-        obj2[2] = str.toUpperCase();
-        obj1[1] = tmp18(tmp2(4734).Text, obj2);
+        let obj2 = { variant: "text-xs/bold", color: "text-overlay-light", style: null, children: null };
+        obj2[2] = tmp.countdownBadgeText;
+        obj2[3] = str.toUpperCase();
+        obj1[1] = tmp18(tmp2(4739).Text, obj2);
         tmp18Result = tmp18(tmp21, obj1);
       }
       items4[1] = tmp18Result;
@@ -116,18 +124,18 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       const obj4 = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
       obj4[0] = tmp.text;
       obj4[3] = coachmarkComponent.header;
-      const items5 = [tmp18(tmp2(4734).Text, obj4), ];
+      const items5 = [tmp18(tmp2(4739).Text, obj4), ];
       const obj5 = { style: null, variant: "text-md/normal", color: "text-default", children: null };
       obj5[0] = tmp.text;
       obj5[3] = coachmarkComponent.body;
-      items5[1] = tmp18(tmp2(4734).Text, obj5);
+      items5[1] = tmp18(tmp2(4739).Text, obj5);
       obj3[1] = items5;
       items4[2] = tmp20(tmp21, obj3);
       const obj6 = { grow: true, text: null, onPress: null };
       const intl = tmp2(1236).intl;
       obj6[1] = intl.string(tmp2(1236).t.RzWDqY);
       obj6[2] = tmp16;
-      items4[3] = tmp18(tmp2(4745).Button, obj6);
+      items4[3] = tmp18(tmp2(4750).Button, obj6);
       obj[1] = items4;
       obj[2] = tmp20(tmp21, obj);
       tmp18Result = tmp18(tmp19, obj);
@@ -141,11 +149,11 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
           const obj8 = { url: null, style: null, autoplay: true };
           obj8[0] = themeAndReducedMotionAwareAssetUrl;
           obj8[1] = tmp.imageShared;
-          obj7[1] = tmp18(tmp2(9217).APNGPlayer, obj8);
+          obj7[1] = tmp18(tmp2(9254).APNGPlayer, obj8);
           let tmp18Result1 = tmp18(tmp21, obj7);
         }
       }
-      tmp10 = tmp10(5449);
+      tmp10 = preloadDefault;
       const obj9 = { source: null, style: null };
       const obj10 = { uri: null };
       obj10[0] = themeAndReducedMotionAwareAssetUrl;

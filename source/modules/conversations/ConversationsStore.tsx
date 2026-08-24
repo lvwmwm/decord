@@ -1,23 +1,22 @@
-// Module ID: 5014
-// Function ID: 5015
+// Module ID: 5019
+// Function ID: 5020
 // Name: removePendingListFetch
-// Dependencies: [1218, 1391, 4030, 1979, 1922, 5015, 5016, 1405, 11, 4803, 5017, 1370, 4032, 589, 709, 2]
+// Dependencies: [1218, 1391, 4033, 1980, 1922, 5020, 5021, 1405, 11, 4808, 5022, 1370, 4035, 589, 709, 2]
 
-// Module 5014 (removePendingListFetch)
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import handleConnectionOpen from "handleConnectionOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import initialize from "initialize";
-import CONVERSATION_COLORS from "CONVERSATION_COLORS";
-import { Store } from "initialize";
+// Module 5019 (removePendingListFetch)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import privDefault from "priv" /* 1405 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import closure_6 from "handleConnectionOpen" /* 1980 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_8 from "initialize" /* 5020 */;
+import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 5021 */;
 
-let MAX_CHANNELS_WITH_CONVERSATIONS;
-let c10;
-let c9;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function removePendingListFetch(channelId, requestKey) {
   const value = map.get(channelId);
   const tmp = null == value || !value.has(requestKey);
@@ -93,7 +92,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
   if (messageReferences === undefined) {
     items = [];
   }
-  const peekResult = tmp3.peek(channelId);
+  const peekResult = navigation.peek(channelId);
   if (null != peekResult) {
     const conversationMetadataById = peekResult.conversationMetadataById;
     let value = conversationMetadataById.get(conversationId);
@@ -104,7 +103,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
         while (tmp4 !== undefined) {
           let tmp8 = require;
           let tmp9 = dependencyMap;
-          let obj = require(4803) /* createMinimalMessageRecord */;
+          let obj = createMinimalMessageRecord;
           let messageRecord = obj.createMessageRecord(tmp6);
           let tmp11 = messageRecord;
           let arr = items1.push(messageRecord);
@@ -137,26 +136,20 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
             obj = { conversationId: null, moderationLabel: null, message: null };
             let tmp23 = require;
             let tmp24 = dependencyMap;
-            let obj4 = require(4803) /* createMinimalMessageRecord */;
+            let obj4 = createMinimalMessageRecord;
             obj[2] = obj4.createMessageRecord(tmp21);
             let result1 = messageMetadataByMessageId4.set(tmp21.id, obj);
           }
           continue;
         }
-        tmp3 = messages;
       }
     }
   }
 }
 function handleReaction(channelId) {
-  let emoji;
-  let messageId;
-  let reactionType;
-  let type;
-  let userId;
   ({ messageId, emoji, reactionType } = channelId);
   ({ type, userId } = channelId);
-  const peekResult = tmp3.peek(channelId.channelId);
+  const peekResult = navigation.peek(channelId.channelId);
   if (null == peekResult) {
     return false;
   } else {
@@ -205,29 +198,29 @@ function handleReaction(channelId) {
       } else {
         return false;
       }
-      obj2 = messageId(4032);
+      obj2 = messageId(4035);
     }
   }
 }
 function handleRelationshipUpdate() {
-  let c0 = false;
-  let item = tmp3.forEach((messageMetadataByMessageId) => {
-    let closure_0 = messageMetadataByMessageId;
+  c0 = false;
+  let item = navigation.forEach((messageMetadataByMessageId) => {
+    c0 = messageMetadataByMessageId;
     const prop = messageMetadataByMessageId.messageMetadataByMessageId;
     const item = prop.forEach((message) => {
       if (null != message.message) {
-        const isBlockedForMessageResult = outer2_5.isBlockedForMessage(message.message);
-        const isIgnoredForMessageResult = outer2_5.isIgnoredForMessage(message.message);
+        const isBlockedForMessageResult = closure_2_5.isBlockedForMessage(message.message);
+        const isIgnoredForMessageResult = closure_2_5.isIgnoredForMessage(message.message);
         if (message.message.blocked !== isBlockedForMessageResult) {
-          let messageMetadataByMessageId = true;
+          c0 = true;
           message = message.message;
           const result = message.set("blocked", isBlockedForMessageResult);
           const result1 = result.set("ignored", isIgnoredForMessageResult);
-          messageMetadataByMessageId = arg1;
+          const _true = arg1;
           message.message = result1;
           let value = null;
           if (null != message.conversationId) {
-            const conversationMetadataById = messageMetadataByMessageId.conversationMetadataById;
+            const conversationMetadataById = _true.conversationMetadataById;
             value = conversationMetadataById.get(message.conversationId);
           }
           let hydratedMessages;
@@ -251,8 +244,8 @@ function handleRelationshipUpdate() {
   return c0;
 }
 function removeHydratedMessage(arg0, arg1) {
-  let closure_0 = arg1;
-  const peekResult = tmp3.peek(arg0);
+  closure_0 = arg1;
+  const peekResult = navigation.peek(arg0);
   if (null == peekResult) {
     return false;
   } else {
@@ -278,8 +271,8 @@ function removeHydratedMessage(arg0, arg1) {
   }
 }
 function evictChannel(arg0) {
-  let hasItem = tmp3.has(arg0);
-  tmp3.del(arg0);
+  let hasItem = navigation.has(arg0);
+  navigation.del(arg0);
   if (!hasItem) {
     hasItem = map.delete(arg0);
   }
@@ -292,20 +285,21 @@ let obj = {
     return map.delete(arg0);
   }
 };
-let closure_12 = new require("priv")(obj);
+let closure_12 = new privDefault(obj);
 let map = new Map();
 let map1 = new Map();
+const Store = initializeDefault.Store;
 class ConversationsStore extends Store {
 }
 const prototype = ConversationsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, ensureGuildLoaded, initialize, markAllUserIdListsStale, handleConnectionOpen, mergeGuildAvatar);
+  this.waitFor(closure_3, closure_4, closure_8, closure_5, closure_6, closure_7);
 };
 prototype["hasChannelData"] = function hasChannelData(id) {
-  return tmp3.has(id);
+  return navigation.has(id);
 };
 prototype["getChannelConversations"] = function getChannelConversations(_handleEndReached) {
-  const peekResult = tmp3.peek(_handleEndReached);
+  const peekResult = navigation.peek(_handleEndReached);
   let conversations = null;
   if (null != peekResult) {
     conversations = peekResult.conversations;
@@ -313,7 +307,7 @@ prototype["getChannelConversations"] = function getChannelConversations(_handleE
   return conversations;
 };
 prototype["getConversationForMessage"] = function getConversationForMessage(arg0, arg1) {
-  const peekResult = tmp3.peek(arg0);
+  const peekResult = navigation.peek(arg0);
   let conversationId;
   if (peekResult != null) {
     const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
@@ -321,7 +315,6 @@ prototype["getConversationForMessage"] = function getConversationForMessage(arg0
     if (value != null) {
       conversationId = value.conversationId;
     }
-    tmp3 = arg1;
   }
   if (conversationId == null) {
     conversationId = null;
@@ -329,12 +322,11 @@ prototype["getConversationForMessage"] = function getConversationForMessage(arg0
   return conversationId;
 };
 prototype["getMessageMetadata"] = function getMessageMetadata(arg0, arg1) {
-  const peekResult = tmp3.peek(arg0);
+  const peekResult = navigation.peek(arg0);
   let value;
   if (peekResult != null) {
     const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
     value = messageMetadataByMessageId.get(arg1);
-    tmp3 = arg1;
   }
   if (value == null) {
     value = null;
@@ -353,12 +345,11 @@ prototype["getMessage"] = function getMessage(arg0, arg1) {
   return message;
 };
 prototype["getConversationMetadata"] = function getConversationMetadata(channelId, conversationId) {
-  const peekResult = tmp3.peek(channelId);
+  const peekResult = navigation.peek(channelId);
   let value;
   if (peekResult != null) {
     const conversationMetadataById = peekResult.conversationMetadataById;
     value = conversationMetadataById.get(conversationId);
-    tmp3 = conversationId;
   }
   if (value == null) {
     value = null;
@@ -366,11 +357,9 @@ prototype["getConversationMetadata"] = function getConversationMetadata(channelI
   return value;
 };
 prototype["getEdgeMarker"] = function getEdgeMarker(_handleEndReached, after) {
-  const peekResult = tmp3.peek(_handleEndReached);
+  const peekResult = navigation.peek(_handleEndReached);
   if (null == peekResult) {
     return null;
-  } else {
-    tmp3 = "before" === after ? peekResult.reachedOldest : peekResult.reachedNewest;
   }
 };
 prototype["isPendingFetch"] = function isPendingFetch(_handleEndReached) {
@@ -388,7 +377,7 @@ prototype["isListFetchPending"] = function isListFetchPending(c0, c8) {
   return flag;
 };
 prototype["getSelectedConversationId"] = function getSelectedConversationId(arg0) {
-  const peekResult = tmp3.peek(arg0);
+  const peekResult = navigation.peek(arg0);
   let prop;
   if (peekResult != null) {
     prop = peekResult.selectedConversationId;
@@ -399,12 +388,12 @@ prototype["getSelectedConversationId"] = function getSelectedConversationId(arg0
   return prop;
 };
 prototype["getSelectedConversation"] = function getSelectedConversation(arg0) {
-  const peekResult = tmp3.peek(arg0);
+  const peekResult = navigation.peek(arg0);
   let prop;
   if (peekResult != null) {
     prop = peekResult.selectedConversationId;
   }
-  tmp3 = null;
+  let tmp3 = null;
   if (null != prop) {
     let conversation;
     if (peekResult != null) {
@@ -422,7 +411,7 @@ prototype["getSelectedConversation"] = function getSelectedConversation(arg0) {
   return tmp3;
 };
 prototype["getConversationColor"] = function getConversationColor(arg0, arg1) {
-  const peekResult = tmp3.peek(arg0);
+  const peekResult = navigation.peek(arg0);
   let tmp2 = null;
   if (null != peekResult) {
     const conversationMetadataById = peekResult.conversationMetadataById;
@@ -435,12 +424,11 @@ prototype["getConversationColor"] = function getConversationColor(arg0, arg1) {
       color = null;
     }
     tmp2 = color;
-    tmp3 = arg1;
   }
   return tmp2;
 };
 prototype["getHydratedMessages"] = function getHydratedMessages(channelId, conversationId) {
-  const peekResult = tmp3.peek(channelId);
+  const peekResult = navigation.peek(channelId);
   let hydratedMessages;
   if (peekResult != null) {
     const conversationMetadataById = peekResult.conversationMetadataById;
@@ -448,7 +436,6 @@ prototype["getHydratedMessages"] = function getHydratedMessages(channelId, conve
     if (value != null) {
       hydratedMessages = value.hydratedMessages;
     }
-    tmp3 = conversationId;
   }
   if (hydratedMessages == null) {
     hydratedMessages = null;
@@ -456,7 +443,7 @@ prototype["getHydratedMessages"] = function getHydratedMessages(channelId, conve
   return hydratedMessages;
 };
 prototype["getHydratedMessageById"] = function getHydratedMessageById(arg0, arg1) {
-  const peekResult = tmp3.peek(arg0);
+  const peekResult = navigation.peek(arg0);
   let message;
   if (peekResult != null) {
     const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
@@ -464,7 +451,6 @@ prototype["getHydratedMessageById"] = function getHydratedMessageById(arg0, arg1
     if (value != null) {
       message = value.message;
     }
-    tmp3 = arg1;
   }
   if (message == null) {
     message = null;
@@ -487,12 +473,11 @@ prototype["isConversationFetchPending"] = function isConversationFetchPending(ar
   return tmp;
 };
 prototype["getConversationFeedbackRating"] = function getConversationFeedbackRating(arg0, arg1) {
-  const peekResult = tmp3.peek(arg0);
+  const peekResult = navigation.peek(arg0);
   let value;
   if (peekResult != null) {
     const recentFeedbackRatingsByConversationId = peekResult.recentFeedbackRatingsByConversationId;
     value = recentFeedbackRatingsByConversationId.get(arg1);
-    tmp3 = arg1;
   }
   if (value == null) {
     value = null;
@@ -518,11 +503,6 @@ obj = {
     }
   },
   CONVERSATION_FETCH_SUCCESS: function handleConversationFetchSuccess(arg0) {
-    let channelId;
-    let conversationId;
-    let fullyHydrated;
-    let messageReferences;
-    let messages;
     ({ channelId, conversationId, messages, messageReferences, fullyHydrated } = arg0);
     let str = "preview";
     if (fullyHydrated) {
@@ -552,8 +532,6 @@ obj = {
     }
   },
   CONVERSATIONS_FETCH_START: function handleFetchStart(isJump) {
-    let channelId;
-    let requestKey;
     ({ channelId, requestKey } = isJump);
     if (isJump.isJump) {
       map.delete(channelId);
@@ -568,18 +546,12 @@ obj = {
     value.add(requestKey);
   },
   CONVERSATIONS_FETCH_SUCCESS: function handleFetchSuccess(requestKey) {
-    let anchor;
-    let channelId;
-    let direction;
-    let fullyHydrated;
-    let isJump;
-    let rawConversations;
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(5017).mapConversation);
+      const mapped = rawConversations.map(set(5022).mapConversation);
       const found = mapped.filter(set(1370).isNotNullish);
-      const peekResult = tmp3.peek(channelId);
+      const peekResult = navigation.peek(channelId);
       if (isJump) {
         let prop;
         if (!tmp5) {
@@ -647,7 +619,7 @@ obj = {
             timestamp = Date.now();
           }
           const arr5 = (function mergeConversations(conversations, found) {
-            const map = new Map();
+            map = new Map();
             const iter = conversations[Symbol.iterator]();
             const nextResult = iter.next();
             while (iter !== undefined) {
@@ -678,11 +650,11 @@ obj = {
               tmp30 = timestamp1;
             } else {
               let tmp32 = (function clampAnchorWindowStart(arr5, anchor) {
-                let closure_0 = anchor;
+                closure_0 = anchor;
                 if (null == anchor) {
                   return 0;
                 } else {
-                  let length = arr5.findIndex((startMessageId) => outer1_1(outer1_2[8]).compare(startMessageId.startMessageId, closure_0) >= 0);
+                  let length = arr5.findIndex((startMessageId) => closure_1_1(closure_1_2[8]).compare(startMessageId.startMessageId, closure_0) >= 0);
                   if (-1 === length) {
                     length = arr5.length;
                   }
@@ -729,8 +701,8 @@ obj = {
             if (guildId == null) {
               guildId = null;
             }
-            const map = new Map();
-            const map1 = new Map();
+            map = new Map();
+            map1 = new Map();
             let num;
             if (peekResult != null) {
               num = peekResult.colorIndex;
@@ -927,7 +899,7 @@ obj = {
               prop = peekResult.recentFeedbackRatingsByConversationId;
             }
             if (prop == null) {
-              const obj1 = { max: null };
+              obj1 = { max: null };
               obj1[0] = closure_10;
               prop = new callback(table[7])(obj1);
             }
@@ -989,14 +961,12 @@ obj = {
         }
         tmp20 = found.some((id) => !set.has(id.id)) || null == anchor;
       }
-      obj2 = tmp3;
+      obj2 = navigation;
     } else {
       return false;
     }
   },
   CONVERSATIONS_FETCH_FAILURE: function handleFetchFailure(arg0) {
-    let channelId;
-    let requestKey;
     ({ channelId, requestKey } = arg0);
     const value = map.get(channelId);
     const tmp = null == value || !value.has(requestKey);
@@ -1015,24 +985,23 @@ obj = {
     channelId = channelId.channelId;
     let hasItem = null != channelId;
     if (hasItem) {
-      hasItem = tmp3.has(channelId);
+      hasItem = navigation.has(channelId);
     }
     if (hasItem) {
-      const value = tmp3.get(channelId);
+      const value = navigation.get(channelId);
     }
     return false;
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     const id = channel.channel.id;
-    let hasItem = tmp3.has(id);
-    tmp3.del(id);
+    let hasItem = navigation.has(id);
+    navigation.del(id);
     if (!hasItem) {
       hasItem = map.delete(id);
     }
     return hasItem;
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
-    let tmp3;
     guild = guild.guild;
     if ("unavailable" in guild) {
       if (true === guild.unavailable) {
@@ -1040,13 +1009,13 @@ obj = {
       }
     }
     let flag2 = false;
-    const keys = tmp3.keys();
+    const keys = navigation.keys();
     const iter = keys[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tmp4 = tmp3;
-      tmp3 = nextResult;
-      let peekResult = tmp3.peek(nextResult);
+      let tmp4 = navigation;
+      let tmp3 = nextResult;
+      let peekResult = navigation.peek(nextResult);
       let guildId;
       if (peekResult != null) {
         guildId = peekResult.guildId;
@@ -1068,7 +1037,7 @@ obj = {
     channelId = channelId.channelId;
     if (null != channelId.jump) {
       if (channelId.getChannelId() === channelId) {
-        const peekResult = tmp3.peek(channelId);
+        const peekResult = navigation.peek(channelId);
         let flag = null != peekResult;
         if (flag) {
           peekResult.reachedOldest = null;
@@ -1085,7 +1054,7 @@ obj = {
     if (null == channelId) {
       return false;
     } else {
-      const peekResult = tmp3.peek(channelId);
+      const peekResult = navigation.peek(channelId);
       let flag = null != peekResult;
       if (flag) {
         peekResult.selectedConversationId = tmp;
@@ -1096,7 +1065,7 @@ obj = {
   },
   CLEAR_CONVERSATION_SELECTION: function handleClearConversationSelection(conversationId) {
     conversationId = conversationId.conversationId;
-    const peekResult = tmp3.peek(conversationId.channelId);
+    const peekResult = navigation.peek(conversationId.channelId);
     if (null == peekResult) {
       return false;
     } else {
@@ -1114,10 +1083,8 @@ obj = {
     }
   },
   SET_CONVERSATION_FEEDBACK_RATING: function handleSetConversationFeedbackRating(channelId) {
-    let conversationId;
-    let rating;
     ({ conversationId, rating } = channelId);
-    const peekResult = tmp3.peek(channelId.channelId);
+    const peekResult = navigation.peek(channelId.channelId);
     let flag = null != peekResult;
     if (flag) {
       const recentFeedbackRatingsByConversationId = peekResult.recentFeedbackRatingsByConversationId;
@@ -1127,13 +1094,11 @@ obj = {
     return flag;
   },
   MESSAGE_UPDATE: function handleMessageUpdate(message) {
-    let channel_id;
-    let id;
     message = message.message;
     ({ channel_id, id } = message);
     if (null != channel_id) {
       if (null != id) {
-        const peekResult = tmp3.peek(channel_id);
+        const peekResult = navigation.peek(channel_id);
         if (null == peekResult) {
           return false;
         } else {
@@ -1145,7 +1110,7 @@ obj = {
           }
           let flag = null != message;
           if (flag) {
-            const updateMessageRecordResult = id(4803).updateMessageRecord(value.message, message);
+            const updateMessageRecordResult = id(4808).updateMessageRecord(value.message, message);
             value.message = updateMessageRecordResult;
             value = null;
             if (null != value.conversationId) {
@@ -1169,7 +1134,7 @@ obj = {
                 flag = true;
               }
             }
-            const obj = id(4803);
+            const obj = id(4808);
           }
           return flag;
         }
@@ -1181,7 +1146,7 @@ obj = {
   MESSAGE_REACTION_REMOVE: handleReaction,
   MESSAGE_REACTION_ADD_MANY: function handleReactionBatch(messageId) {
     messageId = messageId.messageId;
-    const peekResult = tmp3.peek(messageId.channelId);
+    const peekResult = navigation.peek(messageId.channelId);
     if (null == peekResult) {
       return false;
     } else {
@@ -1222,7 +1187,7 @@ obj = {
   },
   MESSAGE_REACTION_REMOVE_ALL: function handleRemoveAllReactions(messageId) {
     messageId = messageId.messageId;
-    const peekResult = tmp3.peek(messageId.channelId);
+    const peekResult = navigation.peek(messageId.channelId);
     if (null == peekResult) {
       return false;
     } else {
@@ -1263,7 +1228,7 @@ obj = {
   },
   MESSAGE_REACTION_REMOVE_EMOJI: function handleRemoveEmojiReactions(messageId) {
     messageId = messageId.messageId;
-    const peekResult = tmp3.peek(messageId.channelId);
+    const peekResult = navigation.peek(messageId.channelId);
     if (null == peekResult) {
       return false;
     } else {
@@ -1304,7 +1269,7 @@ obj = {
   },
   MESSAGE_DELETE: function handleMessageDelete(id) {
     id = id.id;
-    const peekResult = tmp3.peek(id.channelId);
+    const peekResult = navigation.peek(id.channelId);
     let flag = false;
     if (null != peekResult) {
       const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
@@ -1344,13 +1309,13 @@ obj = {
   RELATIONSHIP_UPDATE: handleRelationshipUpdate,
   RELATIONSHIP_REMOVE: handleRelationshipUpdate,
   LOGOUT: function handleLogout() {
-    tmp3.reset();
+    navigation.reset();
     map.clear();
     map1.clear();
   }
 };
-const conversationsStore = new ConversationsStore(require("dispatcher"), obj);
-let tmp3 = new require("priv")(obj);
-let result = require("markAllUserIdListsStale").fileFinishedImporting("modules/conversations/ConversationsStore.tsx");
+const conversationsStore = new ConversationsStore(dispatcherDefault, obj);
+let tmp3 = new privDefault(obj);
+let result = require("set").fileFinishedImporting("modules/conversations/ConversationsStore.tsx");
 
 export default conversationsStore;

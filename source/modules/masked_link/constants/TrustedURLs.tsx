@@ -1,10 +1,10 @@
-// Module ID: 12422
-// Function ID: 12423
+// Module ID: 12474
+// Function ID: 12475
 // Name: set1
 // Dependencies: [2]
 
-// Module 12422 (set1)
-import set from "set";
+// Module 12474 (set1)
+import set from "set" /* 2 */;
 
 let set = new Set(["https://account.riotgames.com/#connected-accounts", "https://aes.sgp.pvp.net/providers/discord/link/v1", "https://aes.sgp.pvp.net/providers/discord/link/v1?origin=Discord", "https://marvelrivals.com/discord", "https://wutheringwaves-dc.kurogames-global.com/", "https://id.embark.games/id/connected-platforms", "https://myaccount.ea.com/am/ui/connected-accounts", "https://playbpsr.com/discord_bind", "https://infinitynikki.infoldgames.com/proj/dcbd.html", "https://vrchat.com/home/profile", "https://account.1047games.com/", "https://discord.facepunch.com/", "https://account.battle.net/connections/discord"]);
 const items = [...set];

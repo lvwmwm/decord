@@ -1,15 +1,16 @@
-// Module ID: 10120
-// Function ID: 10121
-// Dependencies: [17, 500, 10121, 2]
+// Module ID: 10159
+// Function ID: 10160
+// Dependencies: [17, 500, 10160, 2]
 
-// Module 10120
-import set from "set";
-import set from "__INTERNAL_VIEW_CONFIG";
+// Module 10159
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 10160 */;
+import set from "set" /* 500 */;
 
 if (set.isAndroid()) {
-  let _default = require("__INTERNAL_VIEW_CONFIG").default;
+  let _default = __INTERNAL_VIEW_CONFIG.default;
 } else {
-  _default = require("get ActivityIndicator").requireNativeComponent("APNGStickerView");
+  _default = get_ActivityIndicator.requireNativeComponent("APNGStickerView");
 }
 const result = set.fileFinishedImporting("components_native/common/NativeAPNGView.tsx");
 

@@ -1,11 +1,13 @@
-// Module ID: 16636
-// Function ID: 16637
+// Module ID: 16732
+// Function ID: 16733
 // Name: handleLogout
-// Dependencies: [5038, 5040, 2]
+// Dependencies: [5043, 5045, 2]
 
-// Module 16636 (handleLogout)
-import "initialize";
+// Module 16732 (handleLogout)
+import initializeDefault from "initialize" /* 5043 */;
+import itemsDefault from "items" /* 5045 */;
 
+initializeDefault;
 class MessageQueueManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -14,7 +16,7 @@ class MessageQueueManager extends tmp2 {
   }
 }
 MessageQueueManager.prototype["handleLogout"] = function handleLogout() {
-  importDefault(5040).clear();
+  itemsDefault.clear();
 };
 const messageQueueManager = new MessageQueueManager();
 const result = require("set").fileFinishedImporting("modules/messages/MessageQueueManager.tsx");

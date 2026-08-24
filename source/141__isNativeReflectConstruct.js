@@ -5,10 +5,12 @@
 // Exports: getBoundingClientRect
 
 // Module 141 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
+import _inheritsDefault from "_inherits" /* 98 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 124 */;
+import closure_3 from "_classCallCheck" /* 41 */;
+import closure_4 from "_possibleConstructorReturn" /* 93 */;
+import closure_5 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
 const ReadOnlyElement = arg1;
 function _isNativeReflectConstruct() {
@@ -22,10 +24,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -33,10 +35,10 @@ function _isNativeReflectConstruct() {
 class ReadOnlyElement {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, ReadOnlyElement);
-    tmp2 = __esModule;
-    obj = __esModule(ReadOnlyElement);
-    tmp3 = __esModule;
+    tmp = closure_3(this, ReadOnlyElement);
+    tmp2 = closure_5;
+    obj = closure_5(ReadOnlyElement);
+    tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -50,7 +52,7 @@ class ReadOnlyElement {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(ReadOnlyElement, require("_isNativeReflectConstruct"));
+_inheritsDefault(ReadOnlyElement, require("_isNativeReflectConstruct"));
 const items = [
   {
     key: "childElementCount",
@@ -261,10 +263,10 @@ const items = [
       nativeElementReference = ReadOnlyElement(136).getNativeElementReference(this);
       if (null != nativeElementReference) {
         const boundingClientRect = importDefault(139).getBoundingClientRect(nativeElementReference, true);
-        let tmp6 = new importDefault(124)(boundingClientRect[0], boundingClientRect[1], boundingClientRect[2], boundingClientRect[3]);
+        let tmp6 = new _isNativeReflectConstructDefault(boundingClientRect[0], boundingClientRect[1], boundingClientRect[2], boundingClientRect[3]);
         const obj2 = importDefault(139);
       } else {
-        tmp6 = new importDefault(124)(0, 0, 0, 0);
+        tmp6 = new _isNativeReflectConstructDefault(0, 0, 0, 0);
       }
       return tmp6;
     }
@@ -308,10 +310,10 @@ export const getBoundingClientRect = function _getBoundingClientRect(nativeEleme
   const nativeElementReference = ReadOnlyElement(136).getNativeElementReference(nativeElementReference3);
   if (null != nativeElementReference) {
     const boundingClientRect = importDefault(139).getBoundingClientRect(nativeElementReference, includeTransform.includeTransform);
-    const tmp12 = new importDefault(124)(boundingClientRect[0], boundingClientRect[1], boundingClientRect[2], boundingClientRect[3]);
+    const tmp12 = new _isNativeReflectConstructDefault(boundingClientRect[0], boundingClientRect[1], boundingClientRect[2], boundingClientRect[3]);
     return tmp12;
   } else {
-    const tmp6 = new importDefault(124)(0, 0, 0, 0);
+    const tmp6 = new _isNativeReflectConstructDefault(0, 0, 0, 0);
     return tmp6;
   }
   const obj = ReadOnlyElement(136);

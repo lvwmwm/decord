@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 139 (NativeDOMCxx)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("NativeDOMCxx");
+
+export default getAll.get("NativeDOMCxx");

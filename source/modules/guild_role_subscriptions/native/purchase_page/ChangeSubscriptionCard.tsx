@@ -1,49 +1,50 @@
-// Module ID: 15804
-// Function ID: 15805
+// Module ID: 15873
+// Function ID: 15874
 // Name: emphasisHook
-// Dependencies: [32, 19, 17, 676, 21, 4661, 712, 4734, 1629, 14573, 3975, 6950, 1236, 1297, 15797, 5260, 15805, 2007, 4342, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4668, 712, 4739, 1629, 14641, 3978, 6988, 1236, 1297, 15866, 5265, 15874, 2008, 4346, 2]
 // Exports: default
 
-// Module 15804 (emphasisHook)
-import _slicedToArray from "_slicedToArray";
-import "set";
-import { View } from "asyncRequireImpl";
-import { SubscriptionStatusTypes } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15873 (emphasisHook)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import tDefault from "t" /* 3978 */;
+import Text from "Text" /* 4739 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 14641 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { SubscriptionStatusTypes } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function emphasisHook(children) {
-  return callback2(require(4734) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children });
+  return callback2(Text.Text, { variant: "text-sm/medium", color: "text-default", children });
 }
-({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
+noopAll;
+({ jsx: error, jsxs: closure_8, Fragment: c9 } = jsxProd);
 createCacheKey = { container: null };
-createCacheKey = { paddingVertical: 16, paddingHorizontal: 24, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { paddingVertical: 16, paddingHorizontal: 24, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/ChangeSubscriptionCard.tsx");
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/ChangeSubscriptionCard.tsx");
 
 export default function ChangeSubscriptionCard(activeSubscription) {
-  let activeListingId;
-  let changeToListingId;
   activeSubscription = activeSubscription.activeSubscription;
   ({ activeListingId, changeToListingId } = activeSubscription);
-  let obj = importAll(14573);
+  let obj = getRoleEmojisAll;
   const first = callback(obj.useName(activeListingId), 1)[0];
-  let obj1 = importAll(14573);
-  let obj2 = importDefault(3975)(activeSubscription.currentPeriodEnd);
-  const tmp = createCacheKey();
+  obj1 = getRoleEmojisAll;
+  let obj2 = tDefault(activeSubscription.currentPeriodEnd);
+  const tmp = callback4();
   obj = { style: items, children: null };
   items = [tmp.container, ];
-  obj = { paddingBottom: 16 + importDefault(1629)().bottom };
+  obj = { paddingBottom: 16 + useSafeAreaInsetsDefault().bottom };
   items[1] = obj;
   obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = activeSubscription(1236).intl;
   obj1[2] = intl.format(activeSubscription(1236).t.l3uCCX, { activeListingName: first });
-  const items1 = [callback2(activeSubscription(4734).Text, obj1), callback2(activeSubscription(1297).Spacer, { size: 16 }), , ];
+  const items1 = [callback2(activeSubscription(4739).Text, obj1), callback2(activeSubscription(1297).Spacer, { size: 16 }), , ];
   obj2 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = activeSubscription(1236).intl;
   const formatResult = obj2.format("MMMM Do");
@@ -52,7 +53,7 @@ export default function ChangeSubscriptionCard(activeSubscription) {
   const intl3 = activeSubscription(1236).intl;
   items2[2] = intl3.format(activeSubscription(1236).t.KIiWca, { emphasisHook });
   obj2[2] = items2;
-  items1[2] = callback3(activeSubscription(4734).Text, obj2);
+  items1[2] = callback3(activeSubscription(4739).Text, obj2);
   let tmp7Result = null;
   if (activeSubscription.status !== SubscriptionStatusTypes.CANCELED) {
     const obj5 = { children: null };
@@ -61,12 +62,12 @@ export default function ChangeSubscriptionCard(activeSubscription) {
     const intl4 = tmp6(1236).intl;
     obj6[0] = intl4.string(tmp6(1236).t.UwHVxr);
     obj6[1] = function onPress() {
-      let obj = outer1_1(outer1_3[15]);
+      let obj = closure_1_1(closure_1_3[15]);
       obj = { subscriptionId: activeSubscription.id };
-      obj.pushLazy(activeSubscription(outer1_3[17])(outer1_3[16], outer1_3.paths), obj);
-      outer1_1(outer1_3[18]).hideActionSheet();
+      obj.pushLazy(activeSubscription(closure_1_3[17])(closure_1_3[16], closure_1_3.paths), obj);
+      closure_1_1(closure_1_3[18]).hideActionSheet();
     };
-    items3[1] = tmp5(tmp6(15797).ArrowButton, obj6);
+    items3[1] = tmp5(tmp6(15866).ArrowButton, obj6);
     obj5[0] = items3;
     tmp7Result = tmp7(closure_9, obj5);
   }
@@ -74,5 +75,5 @@ export default function ChangeSubscriptionCard(activeSubscription) {
   const obj4 = { emphasisHook };
   items1[3] = tmp7Result;
   obj[1] = items1;
-  return callback2(activeSubscription(6950).BottomSheet, { startExpanded: true, children: callback3(tmp8, obj) });
+  return callback2(activeSubscription(6988).BottomSheet, { startExpanded: true, children: callback3(tmp8, obj) });
 };

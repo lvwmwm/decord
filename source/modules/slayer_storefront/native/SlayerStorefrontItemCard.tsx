@@ -1,26 +1,25 @@
-// Module ID: 9228
-// Function ID: 9229
+// Module ID: 9265
+// Function ID: 9266
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 4661, 712, 7200, 9229, 5311, 5449, 4756, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 7238, 9266, 5316, 5454, 4761, 2]
 // Exports: default
 
-// Module 9228 (SlayerStorefrontItemCard)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9265 (SlayerStorefrontItemCard)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ ImageBackground: c4, View: c5 } = get_ActivityIndicator);
 createCacheKey = { cardContainer: null, cardImageBackground: null, cardImage: null };
-createCacheKey = { borderRadius: require("Themes").radii.md, overflow: "hidden", shadowColor: "#000", shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 8 };
+createCacheKey = { borderRadius: ThemesDefault.radii.md, overflow: "hidden", shadowColor: "#000", shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 8 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center" };
 createCacheKey[2] = { width: "100%", height: "100%", resizeMode: "cover" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontItemCard.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontItemCard.tsx");
 
 export default function SlayerStorefrontItemCard(sku) {
   sku = sku.sku;
@@ -30,7 +29,7 @@ export default function SlayerStorefrontItemCard(sku) {
   }
   let bound;
   let dominantColorFromImage;
-  let cardImage = createCacheKey();
+  let cardImage = callback();
   let size = num;
   if (typeof num !== "object") {
     let obj = { width: null, height: null };
@@ -67,7 +66,7 @@ export default function SlayerStorefrontItemCard(sku) {
       const items2 = [cardImage.cardContainer, size, sku.containerStyle];
       obj[0] = items2;
       if (null != str2) {
-        const obj1 = { source: null, style: null, children: null };
+        obj1 = { source: null, style: null, children: null };
         const obj2 = { uri: null };
         obj2[0] = str2.toString();
         obj1[0] = obj2;

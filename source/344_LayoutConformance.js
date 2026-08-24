@@ -5,14 +5,17 @@
 // Exports: default
 
 // Module 344 (LayoutConformance)
-import "noop";
-import { jsx } from "jsxProd";
+import noopAll from "noop" /* 19 */;
+import get_hairlineWidthDefault from "get hairlineWidth" /* 254 */;
+import LayoutConformanceDefault from "LayoutConformance" /* 345 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let closure_3 = require("get hairlineWidth").create({ container: { display: "contents" } });
+noopAll;
+let closure_3 = get_hairlineWidthDefault.create({ container: { display: "contents" } });
 
 export default function LayoutConformance(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj.style = container.container;
-  return jsx(importDefault(345), {});
+  return jsx(LayoutConformanceDefault, {});
 };

@@ -1,11 +1,11 @@
-// Module ID: 4649
-// Function ID: 4650
+// Module ID: 4655
+// Function ID: 4656
 // Name: getSoundshareAnalyticsContext
-// Dependencies: [4504, 2]
+// Dependencies: [4508, 2]
 // Exports: default
 
-// Module 4649 (getSoundshareAnalyticsContext)
-import initialize from "initialize";
+// Module 4655 (getSoundshareAnalyticsContext)
+import closure_0 from "initialize" /* 4508 */;
 
 const result = require("set").fileFinishedImporting("modules/go_live/utils/getSoundshareAnalyticsContext.tsx");
 

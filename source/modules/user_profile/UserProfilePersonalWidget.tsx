@@ -1,14 +1,36 @@
-// Module ID: 5375
-// Function ID: 5376
-// Name: isFieldEmpty
-// Dependencies: [1922, 1924, 5376, 1236, 1370, 659, 5366, 1945, 2]
-// Exports: createDefaultCoverSection, createDefaultField, createDefaultFieldsSection, createDefaultPersonalWidget, parsePersonalWidgetSections
+// Module ID: 5380
+// Function ID: 5381
+// Name: createDefaultFieldsSection
+// Dependencies: [1922, 1924, 5381, 1370, 659, 5371, 1945, 2]
+// Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
-// Module 5375 (isFieldEmpty)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { PremiumTypes } from "GuildFeatures";
+// Module 5380 (createDefaultFieldsSection)
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
+import WidgetType from "WidgetType" /* 5371 */;
+import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 5381 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
-const require = arg1;
+require = arg1;
+function createDefaultFieldsSection() {
+  let obj = { type: PersonalWidgetSectionType.PersonalWidgetSectionType.FIELDS, fields: items };
+  obj = { key: `field-${tmp}`, title: "", description: "" };
+  const sum = tmp + 1;
+  closure_5 = sum;
+  items = [obj, , , ];
+  obj = { key: `field-${tmp3}`, title: "", description: "" };
+  const sum1 = tmp3 + 1;
+  closure_5 = sum1;
+  items[1] = obj;
+  const sum2 = tmp5 + 1;
+  closure_5 = sum2;
+  items[2] = { key: `field-${+sum1}`, title: "", description: "" };
+  closure_5 = tmp7 + 1;
+  items[3] = { key: `field-${+sum2}`, title: "", description: "" };
+  return obj;
+}
 function isFieldEmpty(title) {
   let tmp = "" === title.title.trim();
   if (tmp) {
@@ -22,7 +44,7 @@ function isFieldEmpty(title) {
 }
 function isSectionEmpty(type) {
   type = type.type;
-  if (require(5376) /* PersonalWidgetSectionType */.PersonalWidgetSectionType.COVER === type) {
+  if (PersonalWidgetSectionType.PersonalWidgetSectionType.COVER === type) {
     let tmp4 = "" === type.title.trim();
     if (tmp4) {
       tmp4 = "" === type.subtitle.trim();
@@ -32,14 +54,13 @@ function isSectionEmpty(type) {
       tmp4 = null == type.image;
     }
     return tmp4;
-  } else if (tmp(5376).PersonalWidgetSectionType.FIELDS === type) {
+  } else if (PersonalWidgetSectionType.PersonalWidgetSectionType.FIELDS === type) {
     const fields = type.fields;
     return fields.every(isFieldEmpty);
   }
-  tmp = require;
+  const tmp = require;
 }
 function parseField(image) {
-  let is_animated;
   image = image.image;
   let tmp;
   if (null != image) {
@@ -54,7 +75,7 @@ function parseField(image) {
     }
   }
   obj = { key: `field-${tmp2}`, title: null, description: null, image: null, hideImage: null };
-  let closure_5 = tmp2 + 1;
+  closure_5 = tmp2 + 1;
   let str2 = image.title;
   if (str2 == null) {
     str2 = "";
@@ -70,9 +91,8 @@ function parseField(image) {
   return obj;
 }
 function serializeSection(type) {
-  let image;
   type = type.type;
-  if (require(5376) /* PersonalWidgetSectionType */.PersonalWidgetSectionType.COVER === type) {
+  if (PersonalWidgetSectionType.PersonalWidgetSectionType.COVER === type) {
     let obj = { type: null, title: null, subtitle: null, image: null };
     ({ type: obj2[0], title: obj2[1], subtitle: obj2[2], image } = type);
     if (null == image) {
@@ -82,12 +102,12 @@ function serializeSection(type) {
       obj = { filename: null };
       image = image.filename;
       obj[0] = image;
-      let obj1 = obj;
+      obj1 = obj;
     } else {
       obj1 = { file_id: null, width: null, height: null, is_animated: null };
       ({ fileId: obj3[0], width: obj3[1], height: obj3[2], isAnimated: obj3[3] } = image);
     }
-  } else if (require(5376) /* PersonalWidgetSectionType */.PersonalWidgetSectionType.FIELDS === type) {
+  } else if (PersonalWidgetSectionType.PersonalWidgetSectionType.FIELDS === type) {
     const fields = type.fields;
     const found = fields.filter((title) => {
       let tmp = "" === title.title.trim();
@@ -161,12 +181,12 @@ prototype["toSubmission"] = function toSubmission() {
       const str = type.title;
     } else if (callback(table[2]).PersonalWidgetSectionType.FIELDS === type) {
       const fields = type.fields;
-      everyResult = fields.every(closure_6);
+      everyResult = fields.every(closure_7);
     }
     return !everyResult;
   });
   const mapped = found.map(serializeSection);
-  obj[2] = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+  obj[2] = mapped.filter(isDiscordFrontendDevelopment.isNotNullish);
   obj[1] = obj;
   return obj;
 };
@@ -191,13 +211,13 @@ prototype["isValid"] = function isValid() {
       const str = type.title;
     } else if (callback(table[2]).PersonalWidgetSectionType.FIELDS === type) {
       const fields = type.fields;
-      everyResult = fields.every(closure_6);
+      everyResult = fields.every(closure_7);
     }
     return !everyResult;
   });
 };
 prototype["isUpdatable"] = function isUpdatable() {
-  return require(1945) /* isPremiumAtLeast */.isPremium(currentUser.getCurrentUser(), PremiumTypes.TIER_2);
+  return isPremiumAtLeast.isPremium(currentUser.getCurrentUser(), PremiumTypes.TIER_2);
 };
 prototype["isEqual"] = function isEqual(header) {
   let tmp = header instanceof UserProfilePersonalWidget;
@@ -218,18 +238,18 @@ prototype["isEqual"] = function isEqual(header) {
         flag = false;
         if (image2.type === image.type) {
           const type = image2.type;
-          if (require(5376) /* PersonalWidgetSectionType */.PersonalWidgetSectionType.COVER === type) {
+          if (PersonalWidgetSectionType.PersonalWidgetSectionType.COVER === type) {
             let tmp13 = image2.title === image.title && image2.subtitle === image.subtitle;
             if (tmp13) {
               image2 = image2.image;
               image = image.image;
-              tmp13 = importDefault(659)(image2, image);
+              tmp13 = isUndefinedOrNullDefault(image2, image);
             }
             flag = false;
             sum = sum + 1;
             num2 = sum;
             flag = true;
-          } else if (tmp16(5376).PersonalWidgetSectionType.FIELDS !== type) {
+          } else if (tmp16(5381).PersonalWidgetSectionType.FIELDS !== type) {
             flag = false;
           }
           tmp16 = require;
@@ -250,7 +270,7 @@ prototype["isEqual"] = function isEqual(header) {
               if (tmp8) {
                 let tmp10 = importDefault;
                 let tmp11 = dependencyMap;
-                tmp8 = importDefault(659)(tmp6.image, tmp7.image);
+                tmp8 = isUndefinedOrNullDefault(tmp6.image, tmp7.image);
               }
               flag2 = false;
               if (!tmp8) {
@@ -281,63 +301,48 @@ prototype["getProfileAnalyticsOptions"] = function getProfileAnalyticsOptions() 
 prototype["getProfileEditAnalyticsOptions"] = function getProfileEditAnalyticsOptions() {
   return { widgetEdited: this.type };
 };
-const result = require("PersonalWidgetSectionType").fileFinishedImporting("modules/user_profile/UserProfilePersonalWidget.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/UserProfilePersonalWidget.tsx");
 
 export const createDefaultCoverSection = function createDefaultCoverSection() {
-  return { type: require(5376) /* PersonalWidgetSectionType */.PersonalWidgetSectionType.COVER, title: "", subtitle: "" };
+  return { type: PersonalWidgetSectionType.PersonalWidgetSectionType.COVER, title: "", subtitle: "" };
 };
 export const createDefaultField = function createDefaultField() {
-  let closure_5 = tmp + 1;
+  closure_5 = tmp + 1;
   return { key: `field-${+closure_5}`, title: "", description: "" };
 };
-export const createDefaultFieldsSection = function createDefaultFieldsSection() {
-  let obj = { type: require(5376) /* PersonalWidgetSectionType */.PersonalWidgetSectionType.FIELDS, fields: items };
-  obj = { key: `field-${tmp}`, title: "", description: "" };
-  let closure_5 = tmp + 1;
-  items = [obj];
-  return obj;
-};
+export { createDefaultFieldsSection };
 export const createDefaultPersonalWidget = function createDefaultPersonalWidget() {
-  let header;
-  let id;
-  let sections;
-  let obj = { header: null, sections: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.QxKl9A);
-  obj = { type: require(5376) /* PersonalWidgetSectionType */.PersonalWidgetSectionType.COVER, title: "", subtitle: "" };
-  const items = [obj, ];
-  obj = { type: require(5376) /* PersonalWidgetSectionType */.PersonalWidgetSectionType.FIELDS, fields: items1 };
-  let closure_5 = tmp4 + 1;
-  items1 = [{ key: `field-${+closure_5}`, title: "", description: "" }];
-  items[1] = obj;
+  let obj = { header: "", sections: null };
+  obj = { type: PersonalWidgetSectionType.PersonalWidgetSectionType.COVER, title: "", subtitle: "" };
+  const items = [obj, createDefaultFieldsSection()];
   obj[1] = items;
   if (typeof UserProfilePersonalWidget !== "function") {
     HermesBuiltin.throwTypeError();
   }
   ({ header, sections, id } = obj);
-  const obj2 = Object.create(UserProfilePersonalWidget.prototype);
-  obj2.id = id;
-  obj2.type = require(5366) /* WidgetType */.WidgetType.PERSONAL;
+  obj = Object.create(UserProfilePersonalWidget.prototype);
+  obj.id = id;
+  obj.type = WidgetType.WidgetType.PERSONAL;
   if (header == null) {
     header = "";
   }
-  obj2.header = header;
+  obj.header = header;
   if (sections == null) {
     sections = [];
   }
-  obj2.sections = sections;
-  return obj2;
+  obj.sections = sections;
+  return obj;
+};
+export const isPersonalWidgetNew = function isPersonalWidgetNew() {
+  return Date.now() < 1790726400000;
 };
 export const parsePersonalWidgetSections = function parsePersonalWidgetSections(sections) {
   if (null == sections) {
     let items = [];
   } else {
     const mapped = sections.map((type) => {
-      let fields;
-      let is_animated;
-      let title;
       type = type.type;
-      if (callback(5376).PersonalWidgetSectionType.COVER === type) {
+      if (callback(5381).PersonalWidgetSectionType.COVER === type) {
         let obj = { type: null, title: null, subtitle: null, image: null };
         ({ type: obj2[0], title } = type);
         if (title == null) {
@@ -364,19 +369,19 @@ export const parsePersonalWidgetSections = function parsePersonalWidgetSections(
         }
         obj[3] = tmp5;
         return obj;
-      } else if (tmp(5376).PersonalWidgetSectionType.FIELDS === type) {
+      } else if (tmp(5381).PersonalWidgetSectionType.FIELDS === type) {
         obj = { type: null, fields: null };
         ({ type: obj[0], fields } = type);
-        obj[1] = fields.map(closure_8);
+        obj[1] = fields.map(closure_9);
         return obj;
       }
       tmp = callback;
     });
-    items = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+    items = mapped.filter(isDiscordFrontendDevelopment.isNotNullish);
   }
-  if (!items.some((type) => type.type === callback(5376).PersonalWidgetSectionType.FIELDS)) {
+  if (!items.some((type) => type.type === callback(5381).PersonalWidgetSectionType.FIELDS)) {
     let obj = { type: null, fields: null };
-    obj[0] = require(5376) /* PersonalWidgetSectionType */.PersonalWidgetSectionType.FIELDS;
+    obj[0] = PersonalWidgetSectionType.PersonalWidgetSectionType.FIELDS;
     obj[1] = [];
     items.push(obj);
   }

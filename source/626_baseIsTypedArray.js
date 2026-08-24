@@ -4,6 +4,8 @@
 // Dependencies: [620, 604, 607]
 
 // Module 626 (baseIsTypedArray)
+import isObjectLike from "isObjectLike" /* 620 */;
+
 const obj = {};
 obj["[object Uint32Array]"] = true;
 obj["[object Uint16Array]"] = true;
@@ -31,7 +33,7 @@ obj["[object Array]"] = false;
 obj["[object Arguments]"] = false;
 
 export default function baseIsTypedArray(arg0) {
-  let tmp3 = require(620) /* isObjectLike */(arg0) && tmp(604)(arg0.length);
+  let tmp3 = isObjectLike(arg0) && tmp(604)(arg0.length);
   if (tmp3) {
     tmp3 = obj[tmp(undefined, 607)(undefined, arg0)];
   }

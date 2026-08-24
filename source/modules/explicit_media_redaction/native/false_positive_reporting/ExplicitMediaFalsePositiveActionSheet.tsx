@@ -1,22 +1,26 @@
-// Module ID: 10871
-// Function ID: 10872
+// Module ID: 10910
+// Function ID: 10911
 // Name: ExplicitMediaFalsePositivePreviewEmbed
-// Dependencies: [19, 17, 21, 4838, 9019, 4661, 712, 1297, 4342, 4094, 9835, 9834, 1236, 4093, 5001, 6950, 4734, 4745, 2]
+// Dependencies: [19, 17, 21, 4843, 9056, 4668, 712, 1297, 4346, 4097, 9874, 9873, 1236, 4096, 5006, 6988, 4739, 4750, 2]
 // Exports: ExplicitMediaFalsePositiveActionSheet, handleError, handleSuccess
 
-// Module 10871 (ExplicitMediaFalsePositivePreviewEmbed)
-import noop from "noop";
-import get_ActivityIndicator from "Button";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import Button from "Button";
+// Module 10910 (ExplicitMediaFalsePositivePreviewEmbed)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import presentAddedFriendToast from "presentAddedFriendToast" /* 4096 */;
+import dispatcherDefault from "dispatcher" /* 4097 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import openImagePickerUnhandled from "openImagePickerUnhandled" /* 4843 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 9056 */;
+import ShieldIcon from "ShieldIcon" /* 9873 */;
+import registerAssetDefault from "registerAsset" /* 9874 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import Button from "Button" /* 1297 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function ExplicitMediaFalsePositivePreviewEmbed(embed) {
   embed = embed.embed;
   if (undefined !== embed.video) {
@@ -48,18 +52,18 @@ function ExplicitMediaFalsePositivePreviewAttachment(attachment) {
 }
 function ExplicitMediaFalsePositivePreview(url) {
   url = url.url;
-  const tmp = createCacheKey();
-  let obj = require(4838) /* openImagePickerUnhandled */;
+  const tmp = callback2();
+  let obj = openImagePickerUnhandled;
   obj = { style: items, children: null };
   items = [, ];
   ({ mediaContainer: arr[0], elevationShadow: arr[1] } = tmp);
   if (obj.isVideo(url)) {
     obj = { volume: 0, resizeMode: "cover", repeat: true, style: null, source: null, controls: true, paused: true };
     obj[3] = tmp.media;
-    const obj1 = { uri: null };
+    obj1 = { uri: null };
     obj1[0] = url;
     obj[4] = obj1;
-    let tmp3Result = tmp3(importDefault(9019), obj);
+    let tmp3Result = tmp3(_isNativeReflectConstructDefault, obj);
   } else {
     const obj2 = { style: null, source: null };
     const items1 = [, ];
@@ -74,46 +78,42 @@ function ExplicitMediaFalsePositivePreview(url) {
   return closure_7(closure_4, obj);
 }
 ({ View: c4, Image: c5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { content: null, contentContainer: null, heading: null, mediaContainer: null, elevationShadow: null, image: null, media: null, footer: null };
-createCacheKey = { padding: require("Themes").space.PX_16 };
+createCacheKey = { padding: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { justifyContent: "center", textAlign: "center", alignItems: "center" };
-createCacheKey[2] = { marginBottom: require("Themes").space.PX_8 };
-let obj1 = { marginBottom: require("Themes").space.PX_8 };
-createCacheKey[3] = { width: "100%", padding: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.xs, marginTop: require("Themes").space.PX_8, aspectRatio: "4 / 3" };
+createCacheKey[2] = { marginBottom: ThemesDefault.space.PX_8 };
+let obj1 = { marginBottom: ThemesDefault.space.PX_8 };
+createCacheKey[3] = { width: "100%", padding: ThemesDefault.space.PX_16, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.xs, marginTop: ThemesDefault.space.PX_8, aspectRatio: "4 / 3" };
 createCacheKey[4] = Button.generateBoxShadowStyle(require("Button").FOUR_DP_ELEVATION_SHADOW_PARAMS);
 createCacheKey[5] = { resizeMode: "contain" };
-let obj2 = { width: "100%", padding: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.xs, marginTop: require("Themes").space.PX_8, aspectRatio: "4 / 3" };
-createCacheKey[6] = { flex: 1, borderRadius: require("Themes").radii.xs };
-let obj3 = { flex: 1, borderRadius: require("Themes").radii.xs };
-createCacheKey[7] = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT, paddingVertical: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj4 = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT, paddingVertical: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
-let result = require("jsxProd").fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaFalsePositiveActionSheet.tsx");
+let obj2 = { width: "100%", padding: ThemesDefault.space.PX_16, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.xs, marginTop: ThemesDefault.space.PX_8, aspectRatio: "4 / 3" };
+createCacheKey[6] = { flex: 1, borderRadius: ThemesDefault.radii.xs };
+let obj3 = { flex: 1, borderRadius: ThemesDefault.radii.xs };
+createCacheKey[7] = { backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT, paddingVertical: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8 };
+let closure_12 = createCacheKey.createStyles(createCacheKey);
+let obj4 = { backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT, paddingVertical: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8 };
+let result = require("set").fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaFalsePositiveActionSheet.tsx");
 
 export const handleSuccess = function handleSuccess(arg0) {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj.hideActionSheet(arg0);
-  obj = { key: "explicit_media_report_false_positive_success", icon: importDefault(9835), IconComponent: require(9834) /* ShieldIcon */.ShieldIcon, iconColor: "text-brand", content: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[4] = intl.string(require(1236) /* getSystemLocale */.t.gFsTKu);
-  importDefault(4094).open(obj);
+  obj = { key: "explicit_media_report_false_positive_success", icon: registerAssetDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor: "text-brand", content: null };
+  const intl = getSystemLocale.intl;
+  obj[4] = intl.string(getSystemLocale.t.gFsTKu);
+  dispatcherDefault.open(obj);
 };
 export const handleError = function handleError() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  require(4093) /* presentAddedFriendToast */.presentError(intl.string(require(1236) /* getSystemLocale */.t.R0RpRX));
+  const intl = getSystemLocale.intl;
+  presentAddedFriendToast.presentError(intl.string(getSystemLocale.t.R0RpRX));
 };
 export const ExplicitMediaFalsePositiveActionSheet = function ExplicitMediaFalsePositiveActionSheet(channelId) {
-  let attachmentPreview;
-  let embedPreview;
-  let isReportFalsePositiveLoading;
-  let onConfirmPress;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   ({ isReportFalsePositiveLoading, attachmentPreview, embedPreview, onConfirmPress } = channelId);
   const analyticsContext = channelId.analyticsContext;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   const items = [channelId, messageId, analyticsContext];
   const items1 = [channelId, messageId, analyticsContext, onConfirmPress];
   const callback = analyticsContext.useCallback(() => {
@@ -147,7 +147,7 @@ export const ExplicitMediaFalsePositiveActionSheet = function ExplicitMediaFalse
   items3[1] = callback(channelId(onConfirmPress[16]).Text, obj);
   let tmp5Result = null != attachmentPreview;
   if (tmp5Result) {
-    const obj1 = { attachment: null };
+    obj1 = { attachment: null };
     obj1[0] = attachmentPreview;
     tmp5Result = tmp5(ExplicitMediaFalsePositivePreviewAttachment, obj1);
   }

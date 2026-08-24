@@ -1,0 +1,14 @@
+// Module ID: 7904
+// Function ID: 7905
+// Name: _optionalChainDelete
+// Dependencies: [7903]
+
+// Module 7904 (_optionalChainDelete)
+import _optionalChain from "_optionalChain" /* 7903 */;
+
+require = arg1;
+const dependencyMap = arg6;
+arg5._optionalChainDelete = function _optionalChainDelete(arg0) {
+  const _optionalChainResult = _optionalChain._optionalChain(arg0);
+  return null == _optionalChainResult || _optionalChainResult;
+};

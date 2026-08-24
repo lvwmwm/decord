@@ -1,45 +1,48 @@
-// Module ID: 16524
-// Function ID: 16525
+// Module ID: 16619
+// Function ID: 16620
 // Name: AgeGateVerify
-// Dependencies: [19, 17, 21, 4661, 712, 5252, 4992, 6803, 5447, 4734, 4745, 5428, 5254, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 5257, 4997, 6840, 5452, 4739, 4750, 5433, 5259, 2]
 // Exports: default
 
-// Module 16524 (AgeGateVerify)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16619 (AgeGateVerify)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4997 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 5257 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5452 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, header: null, body: null, buttonWrapper: null };
-createCacheKey = { padding: require("Themes").space.PX_16, flex: 1, alignItems: "center", justifyContent: "center", gap: require("Themes").space.PX_16 };
+createCacheKey = { padding: ThemesDefault.space.PX_16, flex: 1, alignItems: "center", justifyContent: "center", gap: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { textAlign: "center" };
 createCacheKey[2] = { textAlign: "center" };
 createCacheKey[3] = { width: "100%" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("jsxProd").fileFinishedImporting("modules/age_gate/native/components/AgeGateVerify.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/age_gate/native/components/AgeGateVerify.tsx");
 
 export default function AgeGateVerify(source) {
-  let verifyAgreementButtonText;
-  let verifyGateDescription;
-  let verifyTitle;
   source = source.source;
-  const tmp = createCacheKey();
-  let obj = require(5252) /* shouldShowAgeGateForVoiceChannel */;
+  const tmp = callback2();
+  let obj = shouldShowAgeGateForVoiceChannel;
   const ageGateVerifyContent = obj.useAgeGateVerifyContent(source);
   ({ verifyAgreementButtonText, verifyGateDescription, verifyTitle } = ageGateVerifyContent);
-  let obj1 = require(4992) /* useAgeVerificationRunner */;
+  obj1 = useAgeVerificationRunner;
   const maybePerformReactiveCheckForSource = obj1.useMaybePerformReactiveCheckForSource(source);
   obj = { top: true, style: tmp.container, children: null };
-  const items = [callback(require(5447) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, {}), , , ];
+  const items = [callback(AccountAgeTier10LargeBadge.ShieldSpotIllustration, {}), , , ];
   obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: verifyTitle };
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  items[1] = callback(Text.Text, obj);
   obj1 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: verifyGateDescription };
-  items[2] = callback(require(4734) /* Text */.Text, obj1);
+  items[2] = callback(Text.Text, obj1);
   let tmp7Result = null != verifyAgreementButtonText;
   if (tmp7Result) {
     const obj2 = { style: null, children: null };
@@ -47,14 +50,14 @@ export default function AgeGateVerify(source) {
     const obj3 = { text: null, onPress: null, grow: true };
     obj3[0] = verifyAgreementButtonText;
     obj3[1] = function onPress() {
-      let obj = callback2(5428);
-      obj = { entryPoint: callback(5254).AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
+      let obj = callback2(5433);
+      obj = { entryPoint: callback(5259).AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
       const result = obj.showAgeVerificationGetStartedModal(obj);
     };
-    obj2[1] = tmp7(require(4745) /* Button */.Button, obj3);
+    obj2[1] = tmp7(Button.Button, obj3);
     tmp7Result = tmp7(View, obj2);
   }
   items[3] = tmp7Result;
   obj[2] = items;
-  return closure_5(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return closure_5(SafeAreaPaddingView.SafeAreaPaddingView, obj);
 };

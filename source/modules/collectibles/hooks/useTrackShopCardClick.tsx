@@ -1,25 +1,25 @@
-// Module ID: 9230
-// Function ID: 9231
+// Module ID: 9267
+// Function ID: 9268
 // Name: useTrackShopCardClick
-// Dependencies: [19, 9231, 676, 9175, 9176, 5313, 5312, 698, 2]
+// Dependencies: [19, 9268, 676, 9212, 9213, 5318, 5317, 698, 2]
 // Exports: useTrackShopCardClick
 
-// Module 9230 (useTrackShopCardClick)
-import noop from "noop";
-import { useSelectedVariantIndex } from "useSelectedVariantIndex";
-import { AnalyticEvents } from "ME";
+// Module 9267 (useTrackShopCardClick)
+import closure_3 from "noop" /* 19 */;
+import { useSelectedVariantIndex } from "useSelectedVariantIndex" /* 9268 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
 let require = arg1;
-const result = require("ME").fileFinishedImporting("modules/collectibles/hooks/useTrackShopCardClick.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useTrackShopCardClick.tsx");
 
 export const useTrackShopCardClick = function useTrackShopCardClick(product) {
   product = product.product;
-  const require = product;
+  require = product;
   const analyticsLocations = product.analyticsLocations;
   let cardId;
   let sessionId;
   let tilePosition;
-  let c5;
+  closure_5 = undefined;
   let shopDiscountSource;
   let collectiblesAnalyticsContext = require(cardId[3]).useCollectiblesAnalyticsContext();
   if (collectiblesAnalyticsContext == null) {
@@ -29,7 +29,7 @@ export const useTrackShopCardClick = function useTrackShopCardClick(product) {
   sessionId = collectiblesAnalyticsContext.sessionId;
   tilePosition = collectiblesAnalyticsContext.tilePosition;
   const tmp3 = tilePosition(product);
-  c5 = tmp3;
+  closure_5 = tmp3;
   let tmpResult = tmp(tmp2[4]);
   const currentUserIfAvailable = tmpResult.useCurrentUserIfAvailable();
   tmpResult = tmp(tmp2[5]);
@@ -40,7 +40,7 @@ export const useTrackShopCardClick = function useTrackShopCardClick(product) {
     if (obj.getIsVariantProduct(closure_0)) {
       let tmp4 = arg1;
       if (arg1 == null) {
-        tmp4 = _undefined;
+        tmp4 = constants;
       }
       let skuId;
       if (tmp3.variants[tmp4] != null) {
@@ -59,6 +59,6 @@ export const useTrackShopCardClick = function useTrackShopCardClick(product) {
     obj[6] = tilePosition;
     tmpResult = tmp(tmp2[5]);
     obj[7] = tmpResult.getAnalyticsShopDiscountSource(shopDiscountSource);
-    analyticsLocations(cardId[7]).track(_undefined.SHOP_CARD_CLICKED, obj);
+    analyticsLocations(cardId[7]).track(constants.SHOP_CARD_CLICKED, obj);
   }, items);
 };

@@ -1,19 +1,17 @@
-// Module ID: 9896
-// Function ID: 9897
+// Module ID: 9935
+// Function ID: 9936
 // Name: getVisibleUserVoiceActivity
-// Dependencies: [1391, 4021, 4542, 505, 589, 2]
+// Dependencies: [1391, 4024, 4547, 505, 589, 2]
 // Exports: canViewUserVoiceChannel, default, getUserVoiceState
 
-// Module 9896 (getVisibleUserVoiceActivity)
-import importDefaultResult from "ensureGuildLoaded";
-import importDefaultResult1 from "getUncachedChannelPermissions";
-import importDefaultResult2 from "updateVoiceState";
-import { Permissions } from "sum";
+// Module 9935 (getVisibleUserVoiceActivity)
+import importDefaultResult from "ensureGuildLoaded" /* 1391 */;
+import importDefaultResult1 from "getUncachedChannelPermissions" /* 4024 */;
+import importDefaultResult2 from "updateVoiceState" /* 4547 */;
+import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;
-function getVisibleUserVoiceActivity(arg0) {
-  let guildId;
-  let userId;
+function getVisibleUserVoiceActivity(arg0, arg1) {
   ({ userId, guildId } = arg0);
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -71,8 +69,8 @@ function getVisibleUserVoiceActivity(arg0) {
   }
 }
 let closure_6 = { ChannelStore: importDefaultResult, PermissionStore: importDefaultResult1, VoiceStateStore: importDefaultResult2 };
-let closure_7 = Object.freeze({ voiceState: "r", voiceChannel: "accessibilityRole" });
-const result = require("updateVoiceState").fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
+let closure_7 = Object.freeze({ voiceState: "Array", voiceChannel: "ct" });
+const result = require("set").fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
 
 export default function useUserVoiceActivity(userId) {
   userId = userId.userId;
@@ -81,13 +79,11 @@ export default function useUserVoiceActivity(userId) {
   const items1 = [guildId, userId];
   return userId(guildId[4]).useStateFromStoresObject(items, () => {
     let obj = { userId, guildId };
-    obj = { ChannelStore: outer1_2, PermissionStore: outer1_3, VoiceStateStore: outer1_4 };
-    return outer1_8(obj, obj);
+    obj = { ChannelStore: closure_1_2, PermissionStore: closure_1_3, VoiceStateStore: closure_1_4 };
+    return closure_1_8(obj, obj);
   }, items1);
 };
 export const getUserVoiceState = function getUserVoiceState(arg0) {
-  let guildId;
-  let userId;
   ({ userId, guildId } = arg0);
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -106,8 +102,6 @@ export const getUserVoiceState = function getUserVoiceState(arg0) {
   }
 };
 export const canViewUserVoiceChannel = function canViewUserVoiceChannel(arg0) {
-  let guildId;
-  let userId;
   ({ userId, guildId } = arg0);
   let tmp = arg1;
   if (arg1 === undefined) {

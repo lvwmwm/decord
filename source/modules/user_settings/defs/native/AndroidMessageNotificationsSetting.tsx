@@ -1,15 +1,17 @@
-// Module ID: 14799
-// Function ID: 14800
+// Module ID: 14863
+// Function ID: 14864
 // Name: useAndroidMessageNotificationsSettingValue
-// Dependencies: [14788, 8198, 500, 10669, 1236, 2]
+// Dependencies: [14852, 8238, 500, 10708, 1236, 2]
 // Exports: useAndroidMessageNotificationsSettingValue, useHasAndroidMessageNotificationsSetting
 
-// Module 14799 (useAndroidMessageNotificationsSettingValue)
-import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore";
-import createToggle from "createToggle";
+// Module 14863 (useAndroidMessageNotificationsSettingValue)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore" /* 14852 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let obj1;
-let setAndroidMessageNotificationsEnabled;
 function useAndroidMessageNotificationsSettingValue() {
   let flag = callback();
   if (flag == null) {
@@ -19,7 +21,7 @@ function useAndroidMessageNotificationsSettingValue() {
 }
 function useHasAndroidMessageNotificationsSetting() {
   const tmp = callback();
-  let isAndroidResult = require(500) /* set */.isAndroid();
+  let isAndroidResult = set2.isAndroid();
   if (isAndroidResult) {
     isAndroidResult = null != tmp;
   }
@@ -28,25 +30,25 @@ function useHasAndroidMessageNotificationsSetting() {
 ({ useAndroidMessageNotificationsEnabled: obj1, setAndroidMessageNotificationsEnabled } = _initializeAndroidNotificationSettingsStore);
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["zViLy+"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["zViLy+"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
   useValue: useAndroidMessageNotificationsSettingValue,
   onValueChange: setAndroidMessageNotificationsEnabled,
   usePredicate: useHasAndroidMessageNotificationsSetting
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["zViLy+"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["zViLy+"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
   useValue: useAndroidMessageNotificationsSettingValue,
   onValueChange: setAndroidMessageNotificationsEnabled,
   usePredicate: useHasAndroidMessageNotificationsSetting
 };
-const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AndroidMessageNotificationsSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/AndroidMessageNotificationsSetting.tsx");
 
 export default toggle;
 export { useAndroidMessageNotificationsSettingValue };

@@ -1,11 +1,13 @@
-// Module ID: 9214
-// Function ID: 9215
+// Module ID: 9251
+// Function ID: 9252
 // Name: DEFAULT_PROFILE_EFFECT_WH_RATIO
 // Dependencies: [2]
 // Exports: getAssetWHRatio
 
-// Module 9214 (DEFAULT_PROFILE_EFFECT_WH_RATIO)
-const result = require("set").fileFinishedImporting("modules/collectibles/profile_effects/native/getAssetWHRatio.tsx");
+// Module 9251 (DEFAULT_PROFILE_EFFECT_WH_RATIO)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/collectibles/profile_effects/native/getAssetWHRatio.tsx");
 
 export const DEFAULT_PROFILE_EFFECT_WH_RATIO = 0.5113636363636364;
 export const getAssetWHRatio = function getAssetWHRatio(width) {

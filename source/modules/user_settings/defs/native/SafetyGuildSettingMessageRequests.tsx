@@ -1,20 +1,28 @@
-// Module ID: 15020
-// Function ID: 15021
+// Module ID: 15084
+// Function ID: 15085
 // Name: showMessageRequestRestrictionModal
-// Dependencies: [1910, 15011, 8198, 10670, 4066, 4827, 1236, 4763, 15021, 5428, 5254, 7357, 15018, 14181, 10669, 2]
+// Dependencies: [1910, 15075, 8238, 10709, 4069, 4832, 1236, 4768, 15085, 5433, 5259, 7395, 15082, 14249, 10708, 2]
 
-// Module 15020 (showMessageRequestRestrictionModal)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
-import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
-import createToggle from "createToggle";
+// Module 15084 (showMessageRequestRestrictionModal)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import componentDidMountDefault from "componentDidMount" /* 4768 */;
+import setDefault from "set" /* 4832 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 5259 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 5433 */;
+import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds" /* 7395 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14249 */;
+import useDefaultGuildsRestricted from "useDefaultGuildsRestricted" /* 15082 */;
+import shouldAgeVerifyForDMDefaultOff from "shouldAgeVerifyForDMDefaultOff" /* 15085 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15075 */;
+import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 10709 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function showMessageRequestRestrictionModal(arg0) {
   const _require = arg0;
-  let obj = importDefault(4827);
+  let obj = setDefault;
   obj = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null, onCancel: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.yAfu1p);
@@ -24,20 +32,20 @@ function showMessageRequestRestrictionModal(arg0) {
   obj[2] = intl3.string(_require(1236).t.p89ACt);
   const intl4 = _require(1236).intl;
   obj[3] = intl4.string(_require(1236).t.gm1Vej);
-  obj[4] = importDefault(4763).Colors.RED;
+  obj[4] = componentDidMountDefault.Colors.RED;
   obj[5] = function onConfirm() {
-    const MessageRequestRestrictedDefault = callback(outer1_2[4]).MessageRequestRestrictedDefault;
+    const MessageRequestRestrictedDefault = callback(closure_1_2[4]).MessageRequestRestrictedDefault;
     MessageRequestRestrictedDefault.updateSetting(callback);
-    const MessageRequestRestrictedGuildIds = callback(outer1_2[4]).MessageRequestRestrictedGuildIds;
+    const MessageRequestRestrictedGuildIds = callback(closure_1_2[4]).MessageRequestRestrictedGuildIds;
     if (callback) {
-      let guildIds = outer1_3.getGuildIds();
+      let guildIds = closure_1_3.getGuildIds();
     } else {
       guildIds = [];
     }
     MessageRequestRestrictedGuildIds.updateSetting(guildIds);
   };
   obj[6] = function onCancel() {
-    const MessageRequestRestrictedDefault = callback(outer1_2[4]).MessageRequestRestrictedDefault;
+    const MessageRequestRestrictedDefault = callback(closure_1_2[4]).MessageRequestRestrictedDefault;
     MessageRequestRestrictedDefault.updateSetting(callback);
   };
   obj.show(obj);
@@ -45,23 +53,23 @@ function showMessageRequestRestrictionModal(arg0) {
 ({ getSelectedGuildId: c4, useUserSafetySettingsSelectedGuildStore: c5 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["3o2ojh"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["3o2ojh"]);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.o5fjz6);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.o5fjz6);
   },
   parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
     const selectedGuildId = callback2().selectedGuildId;
-    const defaultGuildsRestricted = require(15018) /* useDefaultGuildsRestricted */.useDefaultGuildsRestricted();
+    const defaultGuildsRestricted = useDefaultGuildsRestricted.useDefaultGuildsRestricted();
     const selectedGuildId2 = callback2().selectedGuildId;
-    const RestrictedGuildIds = require(4066) /* explicitContentFromProto */.RestrictedGuildIds;
+    const RestrictedGuildIds = explicitContentFromProto.RestrictedGuildIds;
     const setting = RestrictedGuildIds.useSetting();
     let hasItem = setting.includes(selectedGuildId2);
-    const obj = require(15018) /* useDefaultGuildsRestricted */;
-    const tmp6 = selectedGuildId2 !== closure_6 || !require(14181) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    const obj = useDefaultGuildsRestricted;
+    const tmp6 = selectedGuildId2 !== closure_6 || !useParentalControlledExplicitContentSettings.useIsParentallyControlled();
     let tmp7 = !tmp6;
     if (tmp6) {
       if (selectedGuildId2 === tmp5) {
@@ -69,9 +77,9 @@ createToggle = {
       }
       tmp7 = hasItem;
     }
-    const MessageRequestRestrictedDefault = tmp(4066).MessageRequestRestrictedDefault;
-    const obj3 = require(14181) /* useParentalControlledExplicitContentSettings */;
-    const MessageRequestRestrictedGuildIds = tmp(4066).MessageRequestRestrictedGuildIds;
+    const MessageRequestRestrictedDefault = tmp(4069).MessageRequestRestrictedDefault;
+    const obj3 = useParentalControlledExplicitContentSettings;
+    const MessageRequestRestrictedGuildIds = tmp(4069).MessageRequestRestrictedGuildIds;
     const setting1 = MessageRequestRestrictedGuildIds.useSetting();
     let tmp9 = !setting1.includes(selectedGuildId);
     let tmp10 = !tmp7;
@@ -84,12 +92,12 @@ createToggle = {
     return tmp10;
   },
   useIsDisabled() {
-    const defaultGuildsRestricted = require(15018) /* useDefaultGuildsRestricted */.useDefaultGuildsRestricted();
+    const defaultGuildsRestricted = useDefaultGuildsRestricted.useDefaultGuildsRestricted();
     const selectedGuildId = callback2().selectedGuildId;
-    const RestrictedGuildIds = require(4066) /* explicitContentFromProto */.RestrictedGuildIds;
+    const RestrictedGuildIds = explicitContentFromProto.RestrictedGuildIds;
     const setting = RestrictedGuildIds.useSetting();
     let hasItem = setting.includes(selectedGuildId);
-    const obj = require(15018) /* useDefaultGuildsRestricted */;
+    const obj = useDefaultGuildsRestricted;
     let tmp4 = selectedGuildId !== closure_6;
     if (!tmp4) {
       tmp4 = !obj3.useIsParentallyControlled();
@@ -105,34 +113,34 @@ createToggle = {
   },
   onValueChange: function onAllowMessageRequestsFromServerMembersValueChange(arg0) {
     if (!arg0) {
-      let obj = require(15021) /* shouldAgeVerifyForDMDefaultOff */;
+      let obj = shouldAgeVerifyForDMDefaultOff;
       if (obj.shouldAgeVerifyForDMDefaultOff()) {
         obj = { entryPoint: null };
-        obj[0] = require(5254) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS;
-        const result = importDefault(5428).showAgeVerificationGetStartedModal(obj);
-        const obj2 = importDefault(5428);
+        obj[0] = AgeVerificationModalEntryPoint.AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS;
+        const result = openIncodeAgeVerificationModalDefault.showAgeVerificationGetStartedModal(obj);
+        const obj2 = openIncodeAgeVerificationModalDefault;
       }
     }
     const tmp5 = callback();
     if (tmp5 === closure_6) {
       showMessageRequestRestrictionModal(!arg0);
     } else {
-      const sanitizedMessageRequestRestrictedGuilds = require(7357) /* getSanitizedRestrictedGuilds */.getSanitizedMessageRequestRestrictedGuilds();
+      const sanitizedMessageRequestRestrictedGuilds = getSanitizedRestrictedGuilds.getSanitizedMessageRequestRestrictedGuilds();
       if (arg0) {
         sanitizedMessageRequestRestrictedGuilds.delete(tmp5);
       } else {
         sanitizedMessageRequestRestrictedGuilds.add(tmp5);
       }
-      const MessageRequestRestrictedGuildIds = require(4066) /* explicitContentFromProto */.MessageRequestRestrictedGuildIds;
+      const MessageRequestRestrictedGuildIds = explicitContentFromProto.MessageRequestRestrictedGuildIds;
       const _Array = Array;
       MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
-      const obj4 = require(7357) /* getSanitizedRestrictedGuilds */;
+      const obj4 = getSanitizedRestrictedGuilds;
       const tmp6 = require;
     }
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-let result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/SafetyGuildSettingMessageRequests.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/SafetyGuildSettingMessageRequests.tsx");
 
 export default createToggle;
 export { showMessageRequestRestrictionModal };

@@ -1,18 +1,23 @@
-// Module ID: 8184
-// Function ID: 8185
+// Module ID: 8224
+// Function ID: 8225
 // Name: createAddRecipientSystemMessage
-// Dependencies: [1395, 1391, 1922, 8185, 8187, 1236, 8188, 2]
+// Dependencies: [1395, 1391, 1922, 8225, 8227, 1236, 8228, 2]
 // Exports: createAddRecipientSystemMessage
 
-// Module 8184 (createAddRecipientSystemMessage)
-import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 8224 (createAddRecipientSystemMessage)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8225 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8227 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8228 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
 
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/messages/native/renderer/system_messages/AddRecipientSystemMessage.tsx");
+const THREAD_CHANNEL_TYPES = createChannelRecord.THREAD_CHANNEL_TYPES;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/AddRecipientSystemMessage.tsx");
 
 export const createAddRecipientSystemMessage = function createAddRecipientSystemMessage(message) {
-  let roleStyle;
   ({ message, roleStyle } = message);
   const first = message.mentions[0];
   user = user.getUser(first);
@@ -21,19 +26,19 @@ export const createAddRecipientSystemMessage = function createAddRecipientSystem
   if (hasItem) {
     hasItem = THREAD_CHANNEL_TYPES.has(channel.type);
   }
-  let obj = require(8185) /* getMessageAuthorWithProcessedColor */;
+  let obj = getMessageAuthorWithProcessedColor;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const userAuthorWithProcessedColor = require(8185) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(8187)({ message, author: messageAuthorWithProcessedColor, roleStyle }), otherUsername: userAuthorWithProcessedColor.nick, otherUsernameOnClick: importDefault(8187)({ userId: first, message, author: userAuthorWithProcessedColor, roleStyle }) };
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const userAuthorWithProcessedColor = getMessageAuthorWithProcessedColor.getUserAuthorWithProcessedColor(user, channel);
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }), otherUsername: userAuthorWithProcessedColor.nick, otherUsernameOnClick: formatUsernameOnClickDefault({ userId: first, message, author: userAuthorWithProcessedColor, roleStyle }) };
+  const intl = getSystemLocale.intl;
   const formatToParts = intl.formatToParts;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (hasItem) {
     let formatToPartsResult = formatToParts(t.Vej1Nw, obj);
   } else {
     formatToPartsResult = formatToParts(t["7/Xl0S"], obj);
   }
   obj = { content: formatToPartsResult };
-  const merged = Object.assign(importDefault(8188)(message));
+  const merged = Object.assign(createCommonMessageDefault(message));
   return obj;
 };

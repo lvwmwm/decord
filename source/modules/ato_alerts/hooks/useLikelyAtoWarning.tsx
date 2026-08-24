@@ -1,23 +1,29 @@
-// Module ID: 10579
-// Function ID: 10580
+// Module ID: 10618
+// Function ID: 10619
 // Name: useLikelyAtoWarning
-// Dependencies: [9921, 10571, 10572, 10573, 10574, 10570, 2]
+// Dependencies: [9960, 10610, 10611, 10612, 10613, 10609, 2]
 // Exports: useLikelyAtoWarning
 
-// Module 10579 (useLikelyAtoWarning)
-import { SafetyWarningTypes } from "handleConnectionOpen";
+// Module 10618 (useLikelyAtoWarning)
+import set from "set" /* 2 */;
+import handleConnectionOpen from "handleConnectionOpen" /* 9960 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10610 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 10611 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10612 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10613 */;
 
-const result = require("useIsMessageRequest").fileFinishedImporting("modules/ato_alerts/hooks/useLikelyAtoWarning.tsx");
+const SafetyWarningTypes = handleConnectionOpen.SafetyWarningTypes;
+const result = set.fileFinishedImporting("modules/ato_alerts/hooks/useLikelyAtoWarning.tsx");
 
 export const useLikelyAtoWarning = function useLikelyAtoWarning(channelId) {
-  const isSpamMessageRequest = require(10571) /* useIsSpamMessageRequest */.useIsSpamMessageRequest(channelId);
-  const obj = require(10571) /* useIsSpamMessageRequest */;
-  const isMessageRequest = require(10572) /* useIsMessageRequest */.useIsMessageRequest(channelId);
-  const obj2 = require(10572) /* useIsMessageRequest */;
-  const channelSafetyWarning = require(10573) /* useChannelSafetyWarning */.useChannelSafetyWarning(channelId, SafetyWarningTypes.LIKELY_ATO);
-  const obj3 = require(10573) /* useChannelSafetyWarning */;
-  const obj4 = require(10574) /* useInappropriateConversationWarningsForChannel */;
-  const tmp4 = require(10574) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId).length > 0;
+  const isSpamMessageRequest = useIsSpamMessageRequest.useIsSpamMessageRequest(channelId);
+  const obj = useIsSpamMessageRequest;
+  const isMessageRequest = useIsMessageRequest.useIsMessageRequest(channelId);
+  const obj2 = useIsMessageRequest;
+  const channelSafetyWarning = useChannelSafetyWarning.useChannelSafetyWarning(channelId, SafetyWarningTypes.LIKELY_ATO);
+  const obj3 = useChannelSafetyWarning;
+  const obj4 = useInappropriateConversationWarningsForChannel;
+  const tmp4 = useInappropriateConversationWarningsForChannel.useInappropriateConversationWarningsForChannel(channelId).length > 0;
   if (!isSpamMessageRequest) {
     if (!isMessageRequest) {
       if (!tmp4) {

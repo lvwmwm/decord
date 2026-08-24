@@ -5,7 +5,10 @@
 // Exports: createModifiedProto, getProtoFieldClass
 
 // Module 1375 (getProtoFieldClass)
-const result = require("set").fileFinishedImporting("modules/user_settings/UserSettingsProtoUtils.tsx");
+import set from "set" /* 2 */;
+import b64ToProto from "b64ToProto" /* 1342 */;
+
+const result = set.fileFinishedImporting("modules/user_settings/UserSettingsProtoUtils.tsx");
 
 export const getProtoFieldClass = function getProtoFieldClass(PreloadedUserSettings, closure_0) {
   const fields = PreloadedUserSettings.fields;
@@ -21,7 +24,7 @@ export const getProtoFieldClass = function getProtoFieldClass(PreloadedUserSetti
 };
 export const createModifiedProto = function createModifiedProto(closure_1, c2, closure_0, PreloadedUserSettings, closure_02) {
   if (null != closure_1) {
-    let fromBinaryResult = closure_0.fromBinary(closure_0.toBinary(closure_1), require(1342) /* b64ToProto */.BINARY_READ_OPTIONS);
+    let fromBinaryResult = closure_0.fromBinary(closure_0.toBinary(closure_1), b64ToProto.BINARY_READ_OPTIONS);
     const toBinaryResult = closure_0.toBinary(closure_1);
   } else {
     fromBinaryResult = closure_0.create();

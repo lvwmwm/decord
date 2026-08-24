@@ -3,18 +3,16 @@
 // Dependencies: [442, 143]
 
 // Module 444
-import DEFAULT_INITIAL_NUM_TO_RENDER from "DEFAULT_INITIAL_NUM_TO_RENDER";
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 143 */;
+import DEFAULT_INITIAL_NUM_TO_RENDER from "DEFAULT_INITIAL_NUM_TO_RENDER" /* 442 */;
 
 const FALLBACK_ESTIMATED_WIDTH = DEFAULT_INITIAL_NUM_TO_RENDER.FALLBACK_ESTIMATED_WIDTH;
 obj = {
   initial: obj,
   next(arg0) {
-    let target;
-    let targetRect;
-    let thresholdRect;
     ({ target, targetRect, thresholdRect } = arg0);
-    let importDefault;
-    if (target instanceof importDefault(143)) {
+    importDefault = undefined;
+    if (target instanceof _isNativeReflectConstructDefault) {
       const _Math = Math;
       const _Math2 = Math;
       const bound = Math.min(targetRect.x + targetRect.width, thresholdRect.x + thresholdRect.width);
@@ -64,7 +62,7 @@ obj = {
       return obj;
     } else {
       const _Error = Error;
-      const error = new Error("Expected target to be a ReactNativeElement. VirtualRow requires DOM APIs to be enabled in React Native.");
+      error = new Error("Expected target to be a ReactNativeElement. VirtualRow requires DOM APIs to be enabled in React Native.");
       throw error;
     }
   }

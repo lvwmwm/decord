@@ -1,18 +1,23 @@
-// Module ID: 9259
-// Function ID: 9260
+// Module ID: 9296
+// Function ID: 9297
 // Name: getCardProductName
-// Dependencies: [1949, 1236, 5312, 2]
+// Dependencies: [1949, 1236, 5317, 2]
 // Exports: getCardProductName, getProductName, getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 9259 (getCardProductName)
-const result = require("getProductOrbPrice").fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");
+// Module 9296 (getCardProductName)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+import getProductOrbPrice from "getProductOrbPrice" /* 5317 */;
+
+const result = set.fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");
 
 export const getCardProductName = function getCardProductName(product) {
   if (null == product) {
     let str2 = "";
     if (null != product) {
       str2 = "";
-      if (product.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE) {
+      if (product.type === CollectiblesItemType.CollectiblesItemType.BUNDLE) {
         str2 = "";
         if (product.items.length > 0) {
           const intl2 = tmp3(1236).intl;
@@ -27,7 +32,7 @@ export const getCardProductName = function getCardProductName(product) {
   } else {
     let BZN5k2 = require;
     obj = dependencyMap;
-    const string = require(1236) /* getSystemLocale */.intl.string;
+    const string = getSystemLocale.intl.string;
     if ("baseVariantName" in product) {
       const intl = BZN5k2(1236).intl;
       BZN5k2 = BZN5k2(1236).t.BZN5k2;
@@ -42,7 +47,7 @@ export const getProductName = function getProductName(baseVariantName) {
   if (null == baseVariantName) {
     return "";
   } else {
-    const string = require(1236) /* getSystemLocale */.intl.string;
+    const string = getSystemLocale.intl.string;
     if ("baseVariantName" in baseVariantName) {
       if (null != baseVariantName.baseVariantName) {
         if (baseVariantName.variantLabel !== tmp3) {
@@ -61,7 +66,7 @@ export const getPurchasedProductName = function getPurchasedProductName(baseVari
   if (null == baseVariantName) {
     return "";
   } else {
-    const string = require(1236) /* getSystemLocale */.intl.string;
+    const string = getSystemLocale.intl.string;
     if (null != baseVariantName.baseVariantName) {
       if (baseVariantName.variantLabel !== tmp3) {
         const intl = tmp(1236).intl;
@@ -76,9 +81,9 @@ export const getPurchasedProductName = function getPurchasedProductName(baseVari
 };
 export const getProductNameAndTypeLabel = function getProductNameAndTypeLabel(closure_0) {
   if (null == closure_0) {
-    let obj1 = require(5312) /* getProductOrbPrice */;
+    obj1 = getProductOrbPrice;
     const productType = obj1.getProductType(closure_0);
-    if (require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === productType) {
+    if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === productType) {
       const intl5 = tmp3(1236).intl;
       let obj = { product: null };
       obj[0] = "";
@@ -104,7 +109,7 @@ export const getProductNameAndTypeLabel = function getProductNameAndTypeLabel(cl
   } else {
     let BZN5k2 = require;
     obj = dependencyMap;
-    const string = require(1236) /* getSystemLocale */.intl.string;
+    const string = getSystemLocale.intl.string;
     if ("baseVariantName" in closure_0) {
       const intl = BZN5k2(1236).intl;
       BZN5k2 = BZN5k2(1236).t.BZN5k2;

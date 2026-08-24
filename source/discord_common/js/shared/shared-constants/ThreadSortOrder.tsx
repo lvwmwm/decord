@@ -4,7 +4,7 @@
 // Dependencies: [2]
 
 // Module 1400 (set)
-import set from "set";
+import set from "set" /* 2 */;
 
 const obj = { ALL: null };
 let set = new Set([0, 1]);

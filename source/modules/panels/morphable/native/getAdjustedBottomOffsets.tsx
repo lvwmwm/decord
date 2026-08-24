@@ -1,17 +1,14 @@
-// Module ID: 16231
-// Function ID: 16232
+// Module ID: 16328
+// Function ID: 16329
 // Name: t
 // Dependencies: [500, 2]
 // Exports: default
 
-// Module 16231 (t)
-import set from "set";
-import set from "set";
+// Module 16328 (t)
+import set from "set" /* 500 */;
 
 set = set.isAndroid();
 const fn = function t(arg0) {
-  let keyboardHeight;
-  let screenBottomOffset;
   ({ screenBottomOffset, keyboardHeight } = arg0);
   let bottomOffset = screenBottomOffset;
   if (keyboardHeight > 0) {

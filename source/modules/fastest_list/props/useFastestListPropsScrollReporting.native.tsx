@@ -1,12 +1,14 @@
-// Module ID: 8647
-// Function ID: 8648
+// Module ID: 8684
+// Function ID: 8685
 // Name: useFastestListPropsScrollReporting
-// Dependencies: [4115, 2]
+// Dependencies: [4119, 2]
 // Exports: default
 
-// Module 8647 (useFastestListPropsScrollReporting)
+// Module 8684 (useFastestListPropsScrollReporting)
+import set from "set" /* 2 */;
+
 let closure_2 = { code: "function useFastestListPropsScrollReportingNativeTsx1(event){const{scrollPosition,horizontal}=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}}" };
-let result = require("set").fileFinishedImporting("modules/fastest_list/props/useFastestListPropsScrollReporting.native.tsx");
+let result = set.fileFinishedImporting("modules/fastest_list/props/useFastestListPropsScrollReporting.native.tsx");
 
 export default function useFastestListPropsScrollReporting(scrollReporting, horizontal) {
   const _require = horizontal;

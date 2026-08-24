@@ -4,6 +4,8 @@
 // Dependencies: [545]
 
 // Module 544 (_Symbol)
+import hasSymbols from "hasSymbols" /* 545 */;
+
 let _Symbol = typeof Symbol !== "undefined";
 if (typeof Symbol !== "undefined") {
   _Symbol = Symbol;
@@ -22,7 +24,7 @@ export default function hasNativeSymbols() {
         const SymbolResult = Symbol("bar");
         let tmp8 = typeof SymbolResult === "symbol";
         if (typeof SymbolResult === "symbol") {
-          tmp8 = require(545) /* hasSymbols */();
+          tmp8 = hasSymbols();
         }
         tmp3 = tmp8;
       }

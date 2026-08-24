@@ -1,47 +1,44 @@
-// Module ID: 15606
-// Function ID: 15607
+// Module ID: 15672
+// Function ID: 15673
 // Name: useChannelUnreadBadgeState
-// Dependencies: [5276, 4772, 5043, 589, 5282, 2]
+// Dependencies: [5281, 4777, 5048, 589, 5287, 2]
 // Exports: useBaseChannelUnreadBadgeState, useChannelUnreadBadgeState
 
-// Module 15606 (useChannelUnreadBadgeState)
-import guildHasCommunity from "guildHasCommunity";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+// Module 15672 (useChannelUnreadBadgeState)
+import closure_2 from "guildHasCommunity" /* 5281 */;
+import closure_3 from "generateOldThreadCutoff" /* 4777 */;
+import closure_4 from "updateUserGuildSettingsInternal" /* 5048 */;
 
 const require = arg1;
-const result = require("updateUserGuildSettingsInternal").fileFinishedImporting("modules/launchpad/native/shared/useChannelUnreadBadgeState.tsx");
+const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/useChannelUnreadBadgeState.tsx");
 
 export const useChannelUnreadBadgeState = function useChannelUnreadBadgeState(channel, flag) {
-  let isMentionLowImportance;
-  let mentionCount;
-  let unread;
   const _require = channel;
-  const dependencyMap = flag;
+  dependencyMap = flag;
   let obj = _require(589);
-  const items = [generateOldThreadCutoff];
+  const items = [closure_3];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const obj = { ackMessageId: outer1_3.ackMessageId(user.id), unread: null, mentionCount: null, isMentionLowImportance: null };
+    const obj = { ackMessageId: closure_1_3.ackMessageId(user.id), unread: null, mentionCount: null, isMentionLowImportance: null };
     let hasUnreadResult = !closure_1;
     if (!closure_1) {
       hasUnreadResult = obj2.hasUnread(tmp.id);
     }
     obj[1] = hasUnreadResult;
-    obj[2] = outer1_3.getMentionCount(user.id);
-    obj[3] = outer1_3.getIsMentionLowImportance(user.id);
+    obj[2] = closure_1_3.getMentionCount(user.id);
+    obj[3] = closure_1_3.getIsMentionLowImportance(user.id);
     return obj;
   });
   ({ unread, mentionCount, isMentionLowImportance } = stateFromStoresObject);
-  const items1 = [guildHasCommunity];
+  const items1 = [closure_2];
   const items2 = [, ];
   ({ guild_id: arr3[0], id: arr3[1] } = channel);
-  const stateFromStores = _require(589).useStateFromStores(items1, () => outer1_2.shouldIndicateNewChannel(user.guild_id, user.id), items2);
+  const stateFromStores = _require(589).useStateFromStores(items1, () => closure_1_2.shouldIndicateNewChannel(user.guild_id, user.id), items2);
   const obj2 = _require(589);
   obj = { unread, resolvedUnreadSetting: null, newChannel: null, optInEnabled: null, mentionCount: null, isMentionLowImportance: null };
-  const optInEnabledForGuild = _require(5282).useOptInEnabledForGuild(channel.guild_id);
-  const obj3 = _require(5282);
-  const items3 = [updateUserGuildSettingsInternal];
-  obj[1] = _require(589).useStateFromStores(items3, () => outer1_4.resolveUnreadSetting(closure_0));
+  const optInEnabledForGuild = _require(5287).useOptInEnabledForGuild(channel.guild_id);
+  const obj3 = _require(5287);
+  const items3 = [closure_4];
+  obj[1] = _require(589).useStateFromStores(items3, () => closure_1_4.resolveUnreadSetting(closure_0));
   obj[2] = stateFromStores;
   obj[3] = optInEnabledForGuild;
   obj[4] = mentionCount;
@@ -50,17 +47,17 @@ export const useChannelUnreadBadgeState = function useChannelUnreadBadgeState(ch
 };
 export const useBaseChannelUnreadBadgeState = function useBaseChannelUnreadBadgeState(channel, muted) {
   const _require = channel;
-  const dependencyMap = muted;
-  const items = [generateOldThreadCutoff];
+  dependencyMap = muted;
+  const items = [closure_3];
   return _require(589).useStateFromStoresObject(items, () => {
-    const obj = { ackMessageId: outer1_3.ackMessageId(user.id), unread: null, mentionCount: null, isMentionLowImportance: null };
+    const obj = { ackMessageId: closure_1_3.ackMessageId(user.id), unread: null, mentionCount: null, isMentionLowImportance: null };
     let hasUnreadResult = !closure_1;
     if (!closure_1) {
       hasUnreadResult = obj2.hasUnread(tmp.id);
     }
     obj[1] = hasUnreadResult;
-    obj[2] = outer1_3.getMentionCount(user.id);
-    obj[3] = outer1_3.getIsMentionLowImportance(user.id);
+    obj[2] = closure_1_3.getMentionCount(user.id);
+    obj[3] = closure_1_3.getIsMentionLowImportance(user.id);
     return obj;
   });
 };

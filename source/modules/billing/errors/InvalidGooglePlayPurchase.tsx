@@ -1,11 +1,12 @@
-// Module ID: 7619
-// Function ID: 7620
+// Module ID: 7657
+// Function ID: 7658
 // Name: prototype
-// Dependencies: [4061, 2]
+// Dependencies: [4064, 2]
 
-// Module 7619 (prototype)
-import "set";
+// Module 7657 (prototype)
+import setDefault from "set" /* 4064 */;
 
+setDefault;
 const prototype = function InvalidGooglePlayPurchase() {
   return HermesBuiltin.applyArguments(new.target, new.target);
 }.prototype;

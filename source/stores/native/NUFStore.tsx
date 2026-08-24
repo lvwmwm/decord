@@ -1,23 +1,24 @@
-// Module ID: 5387
-// Function ID: 5388
+// Module ID: 5392
+// Function ID: 5393
 // Name: handleCacheOrSocketLoaded
-// Dependencies: [1910, 4030, 589, 709, 2]
+// Dependencies: [1910, 4033, 589, 709, 2]
 
-// Module 5387 (handleCacheOrSocketLoaded)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import { PersistedStore } from "initialize";
+// Module 5392 (handleCacheOrSocketLoaded)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "createGuildRecordFromRust" /* 1910 */;
+import closure_1 from "markAllUserIdListsStale" /* 4033 */;
 
 function handleCacheOrSocketLoaded() {
   let flag = false;
-  let c2 = false;
+  c2 = false;
   const tmp = store.getGuildCount() > 0;
-  if (tmp !== c3) {
-    c3 = tmp;
+  if (tmp !== closure_3) {
+    closure_3 = tmp;
     flag = true;
   }
-  if (tmp !== c4) {
-    c4 = tmp;
+  if (tmp !== closure_4) {
+    closure_4 = tmp;
     flag = true;
   }
   return flag;
@@ -28,12 +29,12 @@ function handleUpdate() {
   } else {
     const tmp2 = store.getGuildCount() > 0;
     let flag = false;
-    if (tmp2 !== c3) {
-      c3 = tmp2;
+    if (tmp2 !== closure_3) {
+      closure_3 = tmp2;
       flag = true;
     }
-    if (tmp2 !== c4) {
-      c4 = tmp2;
+    if (tmp2 !== closure_4) {
+      closure_4 = tmp2;
       flag = true;
     }
     return flag;
@@ -42,12 +43,13 @@ function handleUpdate() {
 let c2 = false;
 let c3 = false;
 let c4 = false;
+const PersistedStore = initializeDefault.PersistedStore;
 class NUFStore extends PersistedStore {
 }
 const prototype = NUFStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(markAllUserIdListsStale, createGuildRecordFromRust);
-  const items = [markAllUserIdListsStale, createGuildRecordFromRust];
+  this.waitFor(closure_1, closure_0);
+  const items = [closure_1, closure_0];
   this.syncWith(items, handleUpdate);
 };
 prototype["getState"] = function getState() {
@@ -67,13 +69,13 @@ Object.defineProperty(prototype, "showQuickSwitcher", {
 });
 NUFStore.displayName = "NUFStore";
 NUFStore.persistKey = "NUFStore";
-const nUFStore = new NUFStore(require("dispatcher"), {
+const nUFStore = new NUFStore(dispatcherDefault, {
   CACHE_LOADED: function handleCacheLoaded() {
-    let c2 = true;
+    c2 = true;
   },
   CACHE_LOADED_LAZY: handleCacheOrSocketLoaded,
   CONNECTION_OPEN: handleCacheOrSocketLoaded
 });
-const result = require("initialize").fileFinishedImporting("stores/native/NUFStore.tsx");
+const result = require("set").fileFinishedImporting("stores/native/NUFStore.tsx");
 
 export default nUFStore;

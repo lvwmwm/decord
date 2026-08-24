@@ -1,13 +1,12 @@
-// Module ID: 4221
-// Function ID: 4222
+// Module ID: 4225
+// Function ID: 4226
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments, useOverlayChat, useOverlayStreamerMode
 
-// Module 4221 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
+// Module 4225 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 let obj = { 1: null, 2: { keybindOverride: "ctrl+tab" }, 3: { keybindOverride: "alt+x" } };
 obj[3] = { keybindOverride: "ctrl+l" };
@@ -18,7 +17,7 @@ const apexExperiment1 = ApexExperiment.createApexExperiment({ name: "2025-11-ove
 const obj1 = { 1: null };
 obj1[1] = { enabled: true };
 const apexExperiment2 = ApexExperiment.createApexExperiment({ name: "2026-04-overlay-streamer-mode", kind: "user", defaultConfig: { enabled: false }, variations: obj1 });
-const result = require("set").fileFinishedImporting("modules/overlay/OverlayV3Experiment.tsx");
+const result = set.fileFinishedImporting("modules/overlay/OverlayV3Experiment.tsx");
 
 export const OverlayDefaultKeybindOverrideExperiment = apexExperiment;
 export const getOverlayDefaultKeybind = function getOverlayDefaultKeybind(location) {

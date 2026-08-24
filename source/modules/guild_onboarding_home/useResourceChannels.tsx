@@ -1,21 +1,21 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 15884
+// Function ID: 15885
 // Name: useResourceChannels
-// Dependencies: [1391, 5048, 647, 2]
+// Dependencies: [1391, 5053, 647, 2]
 // Exports: default
 
-// Module 15815 (useResourceChannels)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
+// Module 15884 (useResourceChannels)
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "handleSettingsLoadSuccess" /* 5053 */;
 
 const require = arg1;
-const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/guild_onboarding_home/useResourceChannels.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/useResourceChannels.tsx");
 
 export default function useResourceChannels(arg0) {
   const _require = arg0;
-  const items = [handleSettingsLoadSuccess, ensureGuildLoaded];
+  const items = [closure_3, closure_2];
   return _require(647).useStateFromStoresArray(items, () => {
-    const resourceChannels = outer1_3.getResourceChannels(closure_0);
+    const resourceChannels = closure_1_3.getResourceChannels(closure_0);
     return resourceChannels.filter((channelId) => null != channel.getChannel(channelId.channelId));
   });
 };

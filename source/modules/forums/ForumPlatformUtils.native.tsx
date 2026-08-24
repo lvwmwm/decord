@@ -1,14 +1,17 @@
-// Module ID: 8065
-// Function ID: 8066
+// Module ID: 8104
+// Function ID: 8105
 // Name: getSystemLocale
 // Dependencies: [1236, 2]
 
-// Module 8065 (getSystemLocale)
-const result = require("set").fileFinishedImporting("modules/forums/ForumPlatformUtils.native.tsx");
+// Module 8104 (getSystemLocale)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
+const result = set.fileFinishedImporting("modules/forums/ForumPlatformUtils.native.tsx");
 
 export default {
   getForumChannelPermissionText() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.LG9VAi);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.LG9VAi);
   }
 };

@@ -1,20 +1,21 @@
-// Module ID: 11066
-// Function ID: 11067
+// Module ID: 11105
+// Function ID: 11106
 // Name: useSafetyHubClassifications
-// Dependencies: [19, 11061, 5438, 589, 11, 5437, 5439, 11067, 2]
+// Dependencies: [19, 11100, 5443, 589, 11, 5442, 5444, 11106, 2]
 // Exports: useActiveSafetyHubClassifications, useExpiredSafetyHubClassifications, useSafetyHubAppealSignal, useSafetyHubClassification, useSafetyHubClassifications
 
-// Module 11066 (useSafetyHubClassifications)
-import noop from "noop";
-import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
-import { ViolationType } from "SafetyHubView";
+// Module 11105 (useSafetyHubClassifications)
+import initialize from "initialize" /* 589 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11100 */;
+import { ViolationType } from "SafetyHubView" /* 5443 */;
 
-const require = arg1;
-const result = require("SafetyHubView").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubClassifications.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubClassifications.tsx");
 
 export const useSafetyHubClassifications = function useSafetyHubClassifications() {
-  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
-  const stateFromStoresArray = require(589) /* initialize */.useStateFromStoresArray(items, () => classifications.getClassifications());
+  const items = [closure_5];
+  const stateFromStoresArray = initialize.useStateFromStoresArray(items, () => classifications.getClassifications());
   return stateFromStoresArray.sort((id, id2) => {
     const obj = callback(11);
     const extractTimestampResult = callback(11).extractTimestamp(id2.id);
@@ -24,16 +25,16 @@ export const useSafetyHubClassifications = function useSafetyHubClassifications(
 export const useSafetyHubClassification = function useSafetyHubClassification(classificationId) {
   const _require = classificationId;
   let obj = _require(589);
-  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getClassification(closure_0));
-  const items1 = [handleSafetyHubRequestAgeVerificationResetModalAction];
-  const stateFromStores1 = _require(589).useStateFromStores(items1, () => outer1_5.getClassificationRequestState(closure_0));
+  const items = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getClassification(closure_0));
+  const items1 = [closure_5];
+  const stateFromStores1 = _require(589).useStateFromStores(items1, () => closure_1_5.getClassificationRequestState(closure_0));
   const obj2 = _require(589);
   let tmp = _require;
-  const items2 = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  const items2 = [closure_5];
   const stateFromStores2 = _require(589).useStateFromStores(items2, () => store.getIsDsaEligible());
   const obj3 = _require(589);
-  const items3 = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  const items3 = [closure_5];
   let stateFromStores3 = _require(589).useStateFromStores(items3, () => store.getIsAppealEligible());
   const obj4 = _require(589);
   if (obj5.isGuildClassification(stateFromStores)) {
@@ -42,7 +43,7 @@ export const useSafetyHubClassification = function useSafetyHubClassification(cl
     if (guild_metadata != null) {
       member_type = guild_metadata.member_type;
     }
-    if (member_type === tmp(5439).MemberType.OWNER) {
+    if (member_type === tmp(5444).MemberType.OWNER) {
       let GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;
@@ -55,8 +56,8 @@ export const useSafetyHubClassification = function useSafetyHubClassification(cl
         tmp = null == stateFromStores1;
       }
       if (tmp) {
-        const safetyHubDataForClassification = stateFromStores1(outer1_3[7]).getSafetyHubDataForClassification(closure_0);
-        const obj = stateFromStores1(outer1_3[7]);
+        const safetyHubDataForClassification = stateFromStores1(closure_1_3[7]).getSafetyHubDataForClassification(closure_0);
+        const obj = stateFromStores1(closure_1_3[7]);
       }
     }, items4);
     obj = { classification: null, classificationRequestState: null, isDsaEligible: null, isAppealEligible: null, violationType: null };
@@ -75,7 +76,7 @@ export const useSafetyHubClassification = function useSafetyHubClassification(cl
   }
 };
 export const useActiveSafetyHubClassifications = function useActiveSafetyHubClassifications() {
-  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  const items = [closure_5];
   const stateFromStoresArray = date(589).useStateFromStoresArray(items, () => classifications.getClassifications());
   const sorted = stateFromStoresArray.sort((id, id2) => {
     const obj = callback(11);
@@ -84,12 +85,12 @@ export const useActiveSafetyHubClassifications = function useActiveSafetyHubClas
   });
   date = new Date();
   return sorted.filter((max_expiration_time) => {
-    const date = new Date(max_expiration_time.max_expiration_time);
+    date = new Date(max_expiration_time.max_expiration_time);
     return date > date;
   });
 };
 export const useExpiredSafetyHubClassifications = function useExpiredSafetyHubClassifications() {
-  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  const items = [closure_5];
   const stateFromStoresArray = date(589).useStateFromStoresArray(items, () => classifications.getClassifications());
   const sorted = stateFromStoresArray.sort((id, id2) => {
     const obj = callback(11);
@@ -98,11 +99,11 @@ export const useExpiredSafetyHubClassifications = function useExpiredSafetyHubCl
   });
   date = new Date();
   return sorted.filter((max_expiration_time) => {
-    const date = new Date(max_expiration_time.max_expiration_time);
+    date = new Date(max_expiration_time.max_expiration_time);
     return date <= date;
   });
 };
 export const useSafetyHubAppealSignal = function useSafetyHubAppealSignal() {
-  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
-  return require(589) /* initialize */.useStateFromStores(items, () => appealSignal.getAppealSignal());
+  const items = [closure_5];
+  return initialize.useStateFromStores(items, () => appealSignal.getAppealSignal());
 };

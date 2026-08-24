@@ -1,17 +1,20 @@
-// Module ID: 4846
-// Function ID: 4847
+// Module ID: 4851
+// Function ID: 4852
 // Name: setPermission
 // Dependencies: [709, 2]
 
-// Module 4846 (setPermission)
+// Module 4851 (setPermission)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
 const prototype = function NativePermissionActionCreators() {
   return Object.create(new.target.prototype);
 }.prototype;
-prototype["setPermission"] = function setPermission(closure_0, c2) {
-  let obj = importDefault(709);
-  obj = { type: "SET_NATIVE_PERMISSION", permissionType: closure_0, state: c2 };
+prototype["setPermission"] = function setPermission(closure_0, DENIED) {
+  let obj = dispatcherDefault;
+  obj = { type: "SET_NATIVE_PERMISSION", permissionType: closure_0, state: DENIED };
   obj.dispatch(obj);
 };
-const result = require("set").fileFinishedImporting("modules/native_permissions/NativePermissionActionCreators.tsx");
+const result = set.fileFinishedImporting("modules/native_permissions/NativePermissionActionCreators.tsx");
 
 export default prototype;

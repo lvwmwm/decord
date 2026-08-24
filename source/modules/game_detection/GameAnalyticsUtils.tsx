@@ -1,13 +1,14 @@
-// Module ID: 4642
-// Function ID: 4643
+// Module ID: 4648
+// Function ID: 4649
 // Name: removeExecutablePathPrefix
-// Dependencies: [4509, 4643, 500, 2]
+// Dependencies: [4514, 4649, 500, 2]
 // Exports: getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 4642 (removeExecutablePathPrefix)
-import gameFromServer from "gameFromServer";
+// Module 4648 (removeExecutablePathPrefix)
+import _openRobloxURLWithRootPlaceId from "_openRobloxURLWithRootPlaceId" /* 4649 */;
+import closure_2 from "gameFromServer" /* 4514 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_detection/GameAnalyticsUtils.tsx");
 
 export const removeExecutablePathPrefix = function removeExecutablePathPrefix(exePath) {
@@ -22,7 +23,7 @@ export const removeExecutablePathPrefix = function removeExecutablePathPrefix(ex
 };
 export const getRunningGameAnalytics = function getRunningGameAnalytics(streamApplication) {
   if (null == streamApplication) {
-    return { gameName: "Array", gameId: "accessibilityRole", exe: "e", distributor: "_distance", sku: "Array", gameMetadata: "isArray", rawExePath: "r" };
+    return { gameName: "top", gameId: "channel", exe: "then", distributor: "createStyles", sku: "Map", gameMetadata: "accessibilityLabel", rawExePath: "window" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     let id = streamApplication.id;
@@ -40,7 +41,7 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
       str3 = "";
     }
     obj[3] = str3;
-    const findGameResult = gameFromServer.findGame(obj);
+    const findGameResult = closure_2.findGame(obj);
     const name2 = streamApplication.name;
     obj = { gameName: null, gameId: null, exe: null, distributor: null, sku: null, gameMetadata: null, rawExePath: null };
     obj[0] = name2;
@@ -71,8 +72,8 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
     obj[4] = sku;
     let subgameMetadata;
     if (null != streamApplication) {
-      subgameMetadata = require(4643) /* _openRobloxURLWithRootPlaceId */.getSubgameMetadata(streamApplication);
-      const obj4 = require(4643) /* _openRobloxURLWithRootPlaceId */;
+      subgameMetadata = _openRobloxURLWithRootPlaceId.getSubgameMetadata(streamApplication);
+      const obj4 = _openRobloxURLWithRootPlaceId;
     }
     obj[5] = subgameMetadata;
     obj[6] = str;
@@ -87,7 +88,7 @@ export const isVerifiedGameExecutable = function isVerifiedGameExecutable(str, a
       if (formatted.endsWith("/")) {
         substr = formatted.slice(0, -1);
       }
-      const dependencyMap = substr(500).getPlatformName();
+      dependencyMap = substr(500).getPlatformName();
       return arr.some((os) => {
         let tmp = os.os === closure_1;
         if (tmp) {

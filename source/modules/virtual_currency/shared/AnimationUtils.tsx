@@ -1,12 +1,14 @@
-// Module ID: 10409
-// Function ID: 10410
+// Module ID: 10448
+// Function ID: 10449
 // Name: EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS
 // Dependencies: [2]
 // Exports: getDesiredAnimationConfigs
 
-// Module 10409 (EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS)
+// Module 10448 (EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS)
+import set from "set" /* 2 */;
+
 let obj = { EARN: 0.25, SPEND: 0.3 };
-let result = require("set").fileFinishedImporting("modules/virtual_currency/shared/AnimationUtils.tsx");
+let result = set.fileFinishedImporting("modules/virtual_currency/shared/AnimationUtils.tsx");
 
 export const EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS = 3000;
 export const ORB_LOTTIE_COUNTER_ANIMATION_FACTORS = obj;

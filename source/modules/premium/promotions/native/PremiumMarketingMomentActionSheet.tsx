@@ -1,36 +1,35 @@
-// Module ID: 16150
-// Function ID: 16151
+// Module ID: 16247
+// Function ID: 16248
 // Name: PremiumMarketingMomentActionSheet
-// Dependencies: [19, 17, 4662, 676, 1388, 21, 4661, 712, 589, 7139, 709, 8039, 9177, 503, 7931, 12838, 6950, 4830, 9018, 5449, 4734, 4090, 9498, 1236, 2]
+// Dependencies: [19, 17, 4669, 676, 1388, 21, 4668, 712, 589, 7177, 709, 8078, 9214, 503, 7970, 12893, 6988, 4835, 9055, 5454, 4739, 4093, 9535, 1236, 2]
 // Exports: default
 
-// Module 16150 (PremiumMarketingMomentActionSheet)
-import preload from "preload";
-import { View } from "items";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { AnalyticsPages } from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "module_4090";
-import createCacheKey from "createCacheKey";
+// Module 16247 (PremiumMarketingMomentActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { AnalyticsPages } from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
 const require = arg1;
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { container: null, buttonContainer: null, header: null, body: null, image: null, video: null };
-createCacheKey = { display: "flex", flexDirection: "column", alignItems: "center", paddingVertical: 12, paddingHorizontal: 20, borderRadius: require("Themes").radii.lg };
+createCacheKey = { display: "flex", flexDirection: "column", alignItems: "center", paddingVertical: 12, paddingHorizontal: 20, borderRadius: ThemesDefault.radii.lg };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginTop: require("Themes").space.PX_24, width: 335, height: 48 };
-let obj1 = { marginTop: require("Themes").space.PX_24, width: 335, height: 48 };
-createCacheKey[2] = { marginBottom: require("Themes").space.PX_8, textAlign: "center" };
+createCacheKey[1] = { marginTop: ThemesDefault.space.PX_24, width: 335, height: 48 };
+let obj1 = { marginTop: ThemesDefault.space.PX_24, width: 335, height: 48 };
+createCacheKey[2] = { marginBottom: ThemesDefault.space.PX_8, textAlign: "center" };
 createCacheKey[3] = { textAlign: "center" };
-let obj2 = { marginBottom: require("Themes").space.PX_8, textAlign: "center" };
-createCacheKey[4] = { height: 188, width: 335, borderRadius: require("Themes").radii.md, marginBottom: require("Themes").space.PX_24 };
-const obj3 = { height: 188, width: 335, borderRadius: require("Themes").radii.md, marginBottom: require("Themes").space.PX_24 };
-createCacheKey[5] = { borderRadius: require("Themes").radii.md, marginBottom: require("Themes").space.PX_24 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj4 = { borderRadius: require("Themes").radii.md, marginBottom: require("Themes").space.PX_24 };
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/premium/promotions/native/PremiumMarketingMomentActionSheet.tsx");
+let obj2 = { marginBottom: ThemesDefault.space.PX_8, textAlign: "center" };
+createCacheKey[4] = { height: 188, width: 335, borderRadius: ThemesDefault.radii.md, marginBottom: ThemesDefault.space.PX_24 };
+const obj3 = { height: 188, width: 335, borderRadius: ThemesDefault.radii.md, marginBottom: ThemesDefault.space.PX_24 };
+createCacheKey[5] = { borderRadius: ThemesDefault.radii.md, marginBottom: ThemesDefault.space.PX_24 };
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj4 = { borderRadius: ThemesDefault.radii.md, marginBottom: ThemesDefault.space.PX_24 };
+const result = require("set").fileFinishedImporting("modules/premium/promotions/native/PremiumMarketingMomentActionSheet.tsx");
 
 export default function PremiumMarketingMomentActionSheet(component_id) {
   const markAsDismissed = component_id.markAsDismissed;
@@ -39,12 +38,12 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
   let analyticsLocations;
   let callback;
   let helpArticleLinkProps;
-  const tmp = createCacheKey();
+  const tmp = callback();
   let obj = markAsDismissed(promotionId[8]);
   const items = [helpArticleLinkProps];
   const stateFromStores = obj.useStateFromStores(items, () => helpArticleLinkProps.useReducedMotion);
   analyticsLocations = bottomSheetData(promotionId[9])().analyticsLocations;
-  let obj1 = analyticsLocations;
+  obj1 = analyticsLocations;
   const items1 = [markAsDismissed, promotionId];
   callback = analyticsLocations.useCallback((arg0) => {
     markAsDismissed(arg0);
@@ -70,7 +69,7 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
   items2[3] = analyticsLocations;
   const items3 = [callback];
   const callback1 = analyticsLocations.useCallback(() => {
-    callback(outer1_7.PRIMARY);
+    callback(closure_1_7.PRIMARY);
     let obj = markAsDismissed(promotionId[11]);
     const button = bottomSheetData.button;
     let buttonAction;
@@ -87,11 +86,11 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
     }
     obj[1] = value;
     obj[2] = analyticsLocations;
-    obj[3] = outer1_6.PREMIUM_MARKETING_MOMENT_ACTION_SHEET;
+    obj[3] = closure_1_6.PREMIUM_MARKETING_MOMENT_ACTION_SHEET;
     obj.getButtonActionHandler(obj)();
   }, items2);
   const callback2 = obj1.useCallback(() => {
-    callback(outer1_7.USER_DISMISS);
+    callback(closure_1_7.USER_DISMISS);
   }, items3);
   obj = { type: null, name: null, properties: null };
   let tmp5Result = tmp5(tmp3[12]);

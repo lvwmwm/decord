@@ -1,44 +1,47 @@
-// Module ID: 12329
-// Function ID: 12330
+// Module ID: 12381
+// Function ID: 12382
 // Name: UserProfilePrivateBanner
-// Dependencies: [19, 17, 7186, 21, 4661, 712, 688, 6890, 4734, 1236, 2]
+// Dependencies: [19, 17, 7224, 21, 4668, 712, 688, 6928, 4739, 1236, 2]
 // Exports: default
 
-// Module 12329 (UserProfilePrivateBanner)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12381 (UserProfilePrivateBanner)
+import noopAll from "noop" /* 19 */;
+import int2hslRaw from "int2hslRaw" /* 688 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import LockIcon from "LockIcon" /* 6928 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { banner: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingTop: 18, paddingBottom: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: require("ARBITRARY_LARGE_OFFSET").PROFILE_TOP_LAYER_Z_INDEX };
+createCacheKey = { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingTop: 18, paddingBottom: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_8, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: require("ARBITRARY_LARGE_OFFSET").PROFILE_TOP_LAYER_Z_INDEX };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("ARBITRARY_LARGE_OFFSET").fileFinishedImporting("modules/user_profile/native/UserProfilePrivateBanner.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfilePrivateBanner.tsx");
 
 export default function UserProfilePrivateBanner(primaryColor) {
   primaryColor = primaryColor.primaryColor;
-  const items = [createCacheKey().banner, ];
+  const items = [callback2().banner, ];
   let tmp3 = null != primaryColor;
   if (tmp3) {
     let obj = { backgroundColor: null };
-    let obj1 = require(688) /* int2hslRaw */;
+    obj1 = int2hslRaw;
     obj[0] = obj1.int2hex(primaryColor);
     tmp3 = obj;
   }
   obj = { style: items, children: null };
   items[1] = tmp3;
-  obj = { size: "xs", color: null };
-  obj[1] = importDefault(712).colors.TEXT_DEFAULT;
-  const items1 = [callback(require(6890) /* LockIcon */.LockIcon, obj), ];
+  obj = { size: "xs", color: ThemesDefault.colors.TEXT_DEFAULT };
+  const items1 = [callback(LockIcon.LockIcon, obj), ];
   obj1 = { variant: "text-sm/medium", color: "text-default", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.KPnd2O);
-  items1[1] = callback(require(4734) /* Text */.Text, obj1);
+  const intl = getSystemLocale.intl;
+  obj1[2] = intl.string(getSystemLocale.t.KPnd2O);
+  items1[1] = callback(Text.Text, obj1);
   obj[1] = items1;
   return closure_5(View, obj);
 };

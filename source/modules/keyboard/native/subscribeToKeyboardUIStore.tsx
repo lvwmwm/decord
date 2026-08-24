@@ -5,7 +5,9 @@
 // Exports: default
 
 // Module 1496 (subscribeToKeyboardUIStore)
-const result = require("set").fileFinishedImporting("modules/keyboard/native/subscribeToKeyboardUIStore.tsx");
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/keyboard/native/subscribeToKeyboardUIStore.tsx");
 
 export default function subscribeToKeyboardUIStore(arg0) {
   const _require = arg0;

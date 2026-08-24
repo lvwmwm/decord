@@ -1,25 +1,29 @@
-// Module ID: 5096
-// Function ID: 5097
+// Module ID: 5101
+// Function ID: 5102
 // Name: createFetchKeys
-// Dependencies: [5, 676, 1236, 5097, 5220, 4310, 1363, 530, 2]
+// Dependencies: [5, 676, 1236, 5102, 5225, 4314, 1363, 530, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
-// Module 5096 (createFetchKeys)
-import useTheme from "useTheme";
-import { Endpoints } from "ME";
+// Module 5101 (createFetchKeys)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5102 */;
+import PlatformTypes from "PlatformTypes" /* 5225 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function createFetchKeys(arg0, arr) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return arr.map((arg0) => closure_0 + arg0);
 }
 function getUserIdFromFetchKey(arg0) {
   return arg0.split("-")[1];
 }
 function updateFetchRequests(arr) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   const item = arr.forEach((arg0) => {
-    outer1_5[arg0] = closure_0;
+    closure_1_5[arg0] = closure_0;
   });
 }
 function _transformFetchMemberSupplementalResponse(userId) {
@@ -28,11 +32,11 @@ function _transformFetchMemberSupplementalResponse(userId) {
 function _fetchMemberSupplemental() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (v0 === 2) {
         v0 = 3;
@@ -41,11 +45,11 @@ function _fetchMemberSupplemental() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -60,32 +64,32 @@ function _fetchMemberSupplemental() {
               obj[0] = arg1;
               return obj;
             } else {
-              let useTheme = tmp3;
+              closure_3 = tmp3;
               let arr2 = tmp7;
-              let c1;
+              closure_1 = undefined;
               arr2 = undefined;
-              useTheme = undefined;
-              let closure_4;
-              let c5;
+              closure_3 = undefined;
+              closure_4 = undefined;
+              c5 = undefined;
               constants = undefined;
               v0 = undefined;
-              const tmp53 = v0(callback, c1);
-              c1 = tmp53;
+              const tmp53 = v0(callback, closure_1);
+              closure_1 = tmp53;
               arr2 = (function getFetchchableUsers(arr) {
                 const found = arr.filter((arg0) => table[arg0] <= constants.UNFETCHED);
                 return found.map(closure_8);
               })(tmp53);
               if (0 === arr2.length) {
                 v0 = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = [];
                 return obj1;
               } else {
-                outer1_9(tmp53, constants.PENDING);
+                closure_1_9(tmp53, constants.PENDING);
                 c5 = 1;
-                const HTTP = callback(outer1_2[7]).HTTP;
+                const HTTP = callback(closure_1_2[7]).HTTP;
                 const obj2 = { url: null, body: null, rejectWithError: true };
-                obj2[0] = outer1_4.MEMBER_SAFETY_SUPPLEMENTAL(tmp50);
+                obj2[0] = closure_1_4.MEMBER_SAFETY_SUPPLEMENTAL(tmp50);
                 const obj3 = { user_ids: null };
                 obj3[0] = arr2;
                 obj2[1] = obj3;
@@ -99,7 +103,7 @@ function _fetchMemberSupplemental() {
             }
           } else if (1 === tmp7) {
             c5 = 0;
-            callback2(c1, constants.FAILED);
+            callback2(closure_1, constants.FAILED);
             v0 = 3;
             const obj5 = { value: null, done: true };
             obj5[0] = [];
@@ -114,10 +118,10 @@ function _fetchMemberSupplemental() {
             obj6[0] = arg1;
             return obj6;
           } else {
-            useTheme = arg1;
+            closure_3 = arg1;
             const _Array = Array;
-            if (Array.isArray(useTheme.body)) {
-              const body = useTheme.body;
+            if (Array.isArray(closure_3.body)) {
+              const body = closure_3.body;
               closure_4 = body.map(closure_12);
               c5 = [];
               const item = closure_4.forEach((userId) => arr.push(userId.userId));
@@ -131,7 +135,7 @@ function _fetchMemberSupplemental() {
               obj7[0] = closure_4;
               return obj7;
             } else {
-              callback2(c1, constants.FAILED);
+              callback2(closure_1, constants.FAILED);
               c5 = 0;
               v0 = 3;
               obj = { value: null, done: true };
@@ -151,7 +155,7 @@ function _fetchMemberSupplemental() {
       }
     })();
   });
-  const _fetchMemberSupplemental = tmp;
+  closure_13 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -164,12 +168,12 @@ let closure_5 = {};
 let closure_6 = { FAILED: 0, [0]: "FAILED", UNFETCHED: 1, [1]: "UNFETCHED", PENDING: 2, [2]: "PENDING", SUCCEEDED: 3, [3]: "SUCCEEDED", FAILED_NO_RETRY: 4, [4]: "FAILED_NO_RETRY" };
 let obj = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", BOT: 1, [1]: "BOT", INTEGRATION: 2, [2]: "INTEGRATION", DISCOVERY: 3, [3]: "DISCOVERY", HUB: 4, [4]: "HUB", INVITE: 5, [5]: "INVITE", VANITY_URL: 6, [6]: "VANITY_URL", MANUAL_MEMBER_VERIFICATION: 7, [7]: "MANUAL_MEMBER_VERIFICATION", SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL: 8, [8]: "SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL" };
 obj = { DISCORD: "discord", TWITCH: "twitch", YOUTUBE: "youtube", GUILD_SUBSCRIPTION: "guild_subscription" };
-const result = require("getSystemLocale").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetySupplementalUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetySupplementalUtils.tsx");
 
 export const registerFetchedSupplementals = function registerFetchedSupplementals(guildId, memberIds) {
-  let closure_0 = guildId;
+  closure_0 = guildId;
   const item = memberIds.forEach((arg0) => {
-    outer1_5[closure_0 + arg0] = outer1_6.SUCCEEDED;
+    closure_1_5[closure_0 + arg0] = closure_1_6.SUCCEEDED;
   });
 };
 export const JoinSourceType = obj;
@@ -183,59 +187,59 @@ export const getJoinSourceTypeLabel = function getJoinSourceTypeLabel(arg0) {
     flag = false;
   }
   if (obj.BOT === arg0) {
-    const intl10 = require(1236) /* getSystemLocale */.intl;
-    return intl10.string(require(1236) /* getSystemLocale */.t.HumZAi);
+    const intl10 = getSystemLocale.intl;
+    return intl10.string(getSystemLocale.t.HumZAi);
   } else if (tmp2.INTEGRATION === arg0) {
-    const intl9 = require(1236) /* getSystemLocale */.intl;
-    return intl9.string(require(1236) /* getSystemLocale */.t.gmCUFw);
+    const intl9 = getSystemLocale.intl;
+    return intl9.string(getSystemLocale.t.gmCUFw);
   } else if (tmp2.DISCOVERY === arg0) {
-    const intl8 = require(1236) /* getSystemLocale */.intl;
-    return intl8.string(require(1236) /* getSystemLocale */.t["Ql/e9Y"]);
+    const intl8 = getSystemLocale.intl;
+    return intl8.string(getSystemLocale.t["Ql/e9Y"]);
   } else if (tmp2.HUB === arg0) {
-    const intl7 = require(1236) /* getSystemLocale */.intl;
-    return intl7.string(require(1236) /* getSystemLocale */.t.Op8B3O);
+    const intl7 = getSystemLocale.intl;
+    return intl7.string(getSystemLocale.t.Op8B3O);
   } else if (tmp2.INVITE === arg0) {
-    const intl6 = require(1236) /* getSystemLocale */.intl;
-    return intl6.string(require(1236) /* getSystemLocale */.t["/3vIRd"]);
+    const intl6 = getSystemLocale.intl;
+    return intl6.string(getSystemLocale.t["/3vIRd"]);
   } else if (tmp2.VANITY_URL === arg0) {
     if (null != tmp) {
       if (!flag) {
-        const intl4 = require(1236) /* getSystemLocale */.intl;
+        const intl4 = getSystemLocale.intl;
         obj = { vanityUrl: null };
         obj[0] = tmp;
-        let formatToPlainStringResult = intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.EIUjRy, obj);
+        let formatToPlainStringResult = intl4.formatToPlainString(getSystemLocale.t.EIUjRy, obj);
       }
       return formatToPlainStringResult;
     }
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    formatToPlainStringResult = intl5.string(require(1236) /* getSystemLocale */.t.dGiD1O);
+    const intl5 = getSystemLocale.intl;
+    formatToPlainStringResult = intl5.string(getSystemLocale.t.dGiD1O);
   } else if (tmp2.MANUAL_MEMBER_VERIFICATION === arg0) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(require(1236) /* getSystemLocale */.t.vdu7oS);
+    const intl3 = getSystemLocale.intl;
+    return intl3.string(getSystemLocale.t.vdu7oS);
   } else if (tmp2.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL === arg0) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(require(1236) /* getSystemLocale */.t["9/ZreX"]);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(getSystemLocale.t["9/ZreX"]);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.DvMBkS);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.DvMBkS);
   }
 };
 export const IntegrationType = obj;
 export const getIntegrationLabel = function getIntegrationLabel(arg0) {
   if (obj.TWITCH === arg0) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(require(1236) /* getSystemLocale */.t.AVGAkw);
+    const intl3 = getSystemLocale.intl;
+    return intl3.string(getSystemLocale.t.AVGAkw);
   } else if (tmp.YOUTUBE === arg0) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(require(1236) /* getSystemLocale */.t.PHSAsn);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(getSystemLocale.t.PHSAsn);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.gmCUFw);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.gmCUFw);
   }
 };
 export const useGetIntegrationIconString = function useGetIntegrationIconString(arg0) {
-  const obj = importDefault(5097);
-  const value = obj.get(require(5220) /* PlatformTypes */.useLegacyPlatformType(arg0));
+  obj = getPlatformUserUrlDefault;
+  const value = obj.get(PlatformTypes.useLegacyPlatformType(arg0));
   let tmp5 = null;
   if (null != value) {
     const items = [, ];
@@ -244,10 +248,10 @@ export const useGetIntegrationIconString = function useGetIntegrationIconString(
     if (items.includes(arg0)) {
       let str = value.icon;
       const _HermesInternal = HermesInternal;
-      const tmp2Result = require(1363) /* AccessibilityAnnouncer */;
+      const tmp2Result = AccessibilityAnnouncer;
       str = "url('";
-      const combined = "url('" + require(1363) /* AccessibilityAnnouncer */.isThemeDark(tmp4) ? str.darkSVG : str.lightSVG + "')";
-      const tmp7 = require(1363) /* AccessibilityAnnouncer */.isThemeDark(tmp4) ? str.darkSVG : str.lightSVG;
+      const combined = "url('" + AccessibilityAnnouncer.isThemeDark(tmp4) ? str.darkSVG : str.lightSVG + "')";
+      const tmp7 = AccessibilityAnnouncer.isThemeDark(tmp4) ? str.darkSVG : str.lightSVG;
     }
   }
   return tmp5;

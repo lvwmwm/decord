@@ -1,25 +1,24 @@
-// Module ID: 8773
-// Function ID: 8774
+// Module ID: 8810
+// Function ID: 8811
 // Name: installApplication
-// Dependencies: [676, 8774, 698, 8775, 4090, 12426, 506, 5260, 10766, 2007, 4375, 2]
+// Dependencies: [676, 8811, 698, 8812, 4093, 12478, 506, 5265, 10805, 2008, 4379, 2]
 // Exports: installApplication, installPrivateChannelIntegration, openOAuth2Modal
 
-// Module 8773 (installApplication)
-import { AnalyticEvents } from "ME";
-import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_5 } from "OAUTH2_AUTHORIZE_MODAL_KEY";
+// Module 8810 (installApplication)
+import set from "set" /* 2 */;
+import fromStringAll from "fromString" /* 506 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import set2 from "set" /* 4379 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 8811 */;
 
-const result = require("expandEventProperties").fileFinishedImporting("utils/native/ApplicationUtils.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+let closure_5 = OAUTH2_AUTHORIZE_MODAL_KEY.OAUTH2_AUTHORIZE_MODAL_KEY;
+const result = set.fileFinishedImporting("utils/native/ApplicationUtils.tsx");
 
 export const installApplication = function installApplication(arg0) {
-  let applicationId;
-  let channelId;
-  let customInstallUrl;
-  let disableGuildSelect;
-  let guildId;
-  let importDefault;
-  let installParams;
-  let integrationTypesConfig;
-  let source;
   ({ applicationId, customInstallUrl } = arg0);
   let obj5 = customInstallUrl;
   ({ installParams, integrationTypesConfig, guildId, channelId, disableGuildSelect, source, oauth2Callback: importDefault } = arg0);
@@ -27,14 +26,14 @@ export const installApplication = function installApplication(arg0) {
     let obj = { application_id: null, auth_type: "custom_url", source: null, device_platform: "mobile_native" };
     obj[0] = applicationId;
     obj[2] = source;
-    importDefault(698).track(AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, obj);
-    const obj12 = importDefault(698);
+    expandEventPropertiesDefault.track(AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, obj);
+    const obj12 = expandEventPropertiesDefault;
     obj = { href: null, onConfirm: null };
     obj[0] = customInstallUrl;
     obj[1] = function onConfirm() {
-      outer1_1(outer1_3[4]).openURL(obj5);
+      closure_1_1(closure_1_3[4]).openURL(obj5);
     };
-    return obj5(8775).handleClick(obj);
+    return obj5(8812).handleClick(obj);
   } else {
     if (null != integrationTypesConfig) {
       const _Object = Object;
@@ -54,8 +53,8 @@ export const installApplication = function installApplication(arg0) {
         }
         return tmp2;
       })) {
-        obj5 = importDefault(698);
-        let obj1 = { application_id: null, auth_type: "in_app", source: null, device_platform: "mobile_native" };
+        obj5 = expandEventPropertiesDefault;
+        obj1 = { application_id: null, auth_type: "in_app", source: null, device_platform: "mobile_native" };
         obj1[0] = applicationId;
         obj1[2] = source;
         obj5.track(AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, obj1);
@@ -65,32 +64,32 @@ export const installApplication = function installApplication(arg0) {
         obj2[2] = channelId;
         obj2[3] = disableGuildSelect;
         obj2[4] = function callback(arg0) {
-          outer1_1(outer1_3[5])(arg0);
+          closure_1_1(closure_1_3[5])(arg0);
           if (null != callback) {
             callback(arg0);
           }
         };
         obj5 = obj2;
-        importDefault(5260).popWithKey(closure_5);
-        const obj9 = importDefault(5260);
+        _modDef5265.popWithKey(closure_5);
+        const obj9 = _modDef5265;
         const obj3 = {};
-        const obj10 = importDefault(5260);
+        const obj10 = _modDef5265;
         const merged = Object.assign(obj2);
         obj3.dismissOAuthModal = function dismissOAuthModal() {
           const dismissOAuthModal = obj5.dismissOAuthModal;
           if (dismissOAuthModal != null) {
             dismissOAuthModal();
           }
-          outer1_1(outer1_3[7]).popWithKey(outer1_5);
+          closure_1_1(closure_1_3[7]).popWithKey(closure_1_5);
         };
-        obj10.pushLazy(obj5(2007)(10766, dependencyMap.paths), obj3, closure_5);
+        obj10.pushLazy(obj5(2008)(10805, dependencyMap.paths), obj3, closure_5);
       }
     }
     if (null != installParams) {
       const obj4 = { application_id: null, auth_type: "in_app", source: null, device_platform: "mobile_native" };
       obj4[0] = applicationId;
       obj4[2] = source;
-      importDefault(698).track(AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, obj4);
+      expandEventPropertiesDefault.track(AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, obj4);
       obj5 = { clientId: null, guildId: null, channelId: null, disableGuildSelect: null, scopes: null, permissions: null, callback: null };
       obj5[0] = applicationId;
       obj5[1] = guildId;
@@ -107,7 +106,7 @@ export const installApplication = function installApplication(arg0) {
       }
       let deserializeResult;
       if (null != permissions) {
-        obj1 = importAll(506);
+        obj1 = fromStringAll;
         let permissions1;
         if (installParams != null) {
           permissions1 = installParams.permissions;
@@ -116,16 +115,16 @@ export const installApplication = function installApplication(arg0) {
       }
       obj5[5] = deserializeResult;
       obj5[6] = function callback(arg0) {
-        outer1_1(outer1_3[5])(arg0);
+        closure_1_1(closure_1_3[5])(arg0);
         if (null != callback) {
           callback(arg0);
         }
       };
-      let tmp32Result = tmp32(5260);
+      let tmp32Result = tmp32(5265);
       tmp32Result.popWithKey(closure_5);
-      tmp32Result = tmp32(5260);
+      tmp32Result = tmp32(5265);
       const obj6 = {};
-      const obj16 = importDefault(698);
+      const obj16 = expandEventPropertiesDefault;
       const tmp33 = dependencyMap;
       const merged1 = Object.assign(obj5);
       obj6.dismissOAuthModal = function dismissOAuthModal() {
@@ -133,42 +132,39 @@ export const installApplication = function installApplication(arg0) {
         if (dismissOAuthModal != null) {
           dismissOAuthModal();
         }
-        outer1_1(outer1_3[7]).popWithKey(outer1_5);
+        closure_1_1(closure_1_3[7]).popWithKey(closure_1_5);
       };
-      tmp32Result.pushLazy(obj5(2007)(10766, dependencyMap.paths), obj6, closure_5);
-      const tmp10 = obj5(2007)(10766, dependencyMap.paths);
+      tmp32Result.pushLazy(obj5(2008)(10805, dependencyMap.paths), obj6, closure_5);
+      const tmp10 = obj5(2008)(10805, dependencyMap.paths);
     }
   }
 };
 export const openOAuth2Modal = function openOAuth2Modal(arg0) {
   const _require = arg0;
-  let obj = importDefault(5260);
+  let obj = _modDef5265;
   obj.popWithKey(closure_5);
   obj = {};
-  const obj2 = importDefault(5260);
+  const obj2 = _modDef5265;
   const merged = Object.assign(arg0);
   obj.dismissOAuthModal = function dismissOAuthModal() {
     const dismissOAuthModal = obj5.dismissOAuthModal;
     if (dismissOAuthModal != null) {
       dismissOAuthModal();
     }
-    outer1_1(outer1_3[7]).popWithKey(outer1_5);
+    closure_1_1(closure_1_3[7]).popWithKey(closure_1_5);
   };
-  obj2.pushLazy(_require(2007)(10766, dependencyMap.paths), obj, closure_5);
+  obj2.pushLazy(_require(2008)(10805, dependencyMap.paths), obj, closure_5);
 };
 export const installPrivateChannelIntegration = function installPrivateChannelIntegration(arg0) {
-  let applicationId;
-  let callback;
-  let channelId;
   ({ applicationId, channelId, callback } = arg0);
-  let obj = importDefault(5260);
+  let obj = _modDef5265;
   obj = { clientId: applicationId, scopes: null, channelId: null, dismissOAuthModal: null, disableGuildSelect: true, callback: null };
-  const items = [require(4375) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS];
+  const items = [set2.OAuth2Scopes.APPLICATIONS_COMMANDS];
   obj[1] = items;
   obj[2] = channelId;
   obj[3] = function dismissOAuthModal() {
     return callback(table[7]).popWithKey(closure_5);
   };
   obj[5] = callback;
-  obj.pushLazy(require(2007) /* asyncRequireImpl */(10766, dependencyMap.paths), obj, closure_5);
+  obj.pushLazy(asyncRequireImpl(10805, dependencyMap.paths), obj, closure_5);
 };

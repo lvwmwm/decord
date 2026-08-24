@@ -1,26 +1,27 @@
-// Module ID: 16544
-// Function ID: 16545
+// Module ID: 16639
+// Function ID: 16640
 // Name: handleChannelSelect
-// Dependencies: [1391, 1979, 10576, 10610, 16545, 5038, 2]
+// Dependencies: [1391, 1980, 10615, 10649, 16640, 5043, 2]
 
-// Module 16544 (handleChannelSelect)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import "initialize";
+// Module 16639 (handleChannelSelect)
+import initializeDefault from "initialize" /* 5043 */;
+import InappropriateConversationExperiment from "InappropriateConversationExperiment" /* 10615 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "handleConnectionOpen" /* 1980 */;
 
-const require = arg1;
+require = arg1;
 function handleChannelSelect(channelId) {
   channelId = channelId.channelId;
   if (null == channelId) {
     return false;
   } else {
     if (obj6.isEligibleForInappropriateConversationWarning({ location: "channel_select" })) {
-      let tmp4Result = tmp4(10610);
+      let tmp4Result = tmp4(10649);
       if (tmp4Result.getSafetyAlertsSettingOrDefault()) {
         channel = channel.getChannel(channelId);
         if (null != channel) {
           if (channel.isDM()) {
-            tmp4Result = tmp4(10610);
+            tmp4Result = tmp4(10649);
             const inappropriateConversationTakeoverForChannel = tmp4Result.getInappropriateConversationTakeoverForChannel(channelId);
             let flag3 = null != inappropriateConversationTakeoverForChannel;
             if (flag3) {
@@ -28,9 +29,9 @@ function handleChannelSelect(channelId) {
               ({ id: obj5[0], type: obj5[1] } = inappropriateConversationTakeoverForChannel);
               obj[2] = channel.getRecipientId();
               obj[3] = channelId;
-              tmp4(16545).showTakeoverModal(obj);
+              tmp4(16640).showTakeoverModal(obj);
               flag3 = true;
-              const tmp4Result1 = tmp4(16545);
+              const tmp4Result1 = tmp4(16640);
             }
             return flag3;
           }
@@ -42,15 +43,15 @@ function handleChannelSelect(channelId) {
     } else {
       return false;
     }
-    obj6 = require(10576) /* InappropriateConversationExperiment */;
+    obj6 = InappropriateConversationExperiment;
   }
 }
 function handleChannelUpdates(channels) {
   channels = channels.channels;
   let currentlySelectedChannelId;
-  let obj = currentlySelectedChannelId(10576);
+  let obj = currentlySelectedChannelId(10615);
   if (obj.isEligibleForInappropriateConversationWarning({ location: "channel_updates" })) {
-    let tmpResult = tmp(10610);
+    let tmpResult = tmp(10649);
     if (tmpResult.getSafetyAlertsSettingOrDefault()) {
       currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
       if (null == currentlySelectedChannelId) {
@@ -60,7 +61,7 @@ function handleChannelUpdates(channels) {
         if (null == found) {
           return false;
         } else {
-          tmpResult = tmp(10610);
+          tmpResult = tmp(10649);
           const inappropriateConversationTakeoverForChannel = tmpResult.getInappropriateConversationTakeoverForChannel(found.id);
           const tmp6 = null == inappropriateConversationTakeoverForChannel || !found.isDM();
           let flag3 = !tmp6;
@@ -69,9 +70,9 @@ function handleChannelUpdates(channels) {
             ({ id: obj4[0], type: obj4[1] } = inappropriateConversationTakeoverForChannel);
             obj[2] = found.getRecipientId();
             obj[3] = found.id;
-            tmp(16545).showTakeoverModal(obj);
+            tmp(16640).showTakeoverModal(obj);
             flag3 = true;
-            const tmpResult1 = tmp(16545);
+            const tmpResult1 = tmp(16640);
           }
           return flag3;
         }
@@ -83,6 +84,7 @@ function handleChannelUpdates(channels) {
     return false;
   }
 }
+initializeDefault;
 let prototype = function ChannelSafetyWarningsManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { CHANNEL_SELECT: handleChannelSelect, CHANNEL_UPDATES: handleChannelUpdates };
@@ -91,6 +93,6 @@ let prototype = function ChannelSafetyWarningsManager() {
 class prototype extends tmp2 {
 }
 prototype = new prototype();
-const result = require("InappropriateConversationExperiment").fileFinishedImporting("modules/self_mod/ChannelSafetyWarningsManager.tsx");
+const result = require("set").fileFinishedImporting("modules/self_mod/ChannelSafetyWarningsManager.tsx");
 
 export default prototype;

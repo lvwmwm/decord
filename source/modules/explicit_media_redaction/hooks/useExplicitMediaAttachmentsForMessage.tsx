@@ -1,23 +1,23 @@
-// Module ID: 10869
-// Function ID: 10870
+// Module ID: 10908
+// Function ID: 10909
 // Name: useRedactableMediaAttachmentsForMessage
-// Dependencies: [4994, 647, 10118, 5019, 5022, 2]
+// Dependencies: [4999, 647, 10157, 5024, 5027, 2]
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage
 
-// Module 10869 (useRedactableMediaAttachmentsForMessage)
-import reinjectEphemerals from "reinjectEphemerals";
+// Module 10908 (useRedactableMediaAttachmentsForMessage)
+import closure_2 from "reinjectEphemerals" /* 4999 */;
 
 const require = arg1;
-const result = require("useEnabledHarmTypesBitmaskForChannelAndAuthorId").fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaAttachmentsForMessage.tsx");
+const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaAttachmentsForMessage.tsx");
 
 export const useRedactableMediaAttachmentsForMessage = function useRedactableMediaAttachmentsForMessage(channelId, messageId, attachmentId) {
   const _require = channelId;
-  const dependencyMap = messageId;
-  let reinjectEphemerals = attachmentId;
-  const items = [reinjectEphemerals];
+  dependencyMap = messageId;
+  closure_2 = attachmentId;
+  const items = [closure_2];
   const stateFromStores = _require(647).useStateFromStores(items, () => attachmentId.getMessage(closure_0, closure_1));
   let obj = _require(647);
-  let closure_3 = _require(10118).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  closure_3 = _require(10157).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -33,16 +33,16 @@ export const useRedactableMediaAttachmentsForMessage = function useRedactableMed
     }
     return found;
   }
-  const obj2 = _require(10118);
+  const obj2 = _require(10157);
 };
 export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmbedsForMessage(channelId, messageId, embedId) {
   const _require = channelId;
-  const dependencyMap = messageId;
-  let reinjectEphemerals = embedId;
-  const items = [reinjectEphemerals];
+  dependencyMap = messageId;
+  closure_2 = embedId;
+  const items = [closure_2];
   const stateFromStores = _require(647).useStateFromStores(items, () => embedId.getMessage(closure_0, closure_1));
   let obj = _require(647);
-  let closure_3 = _require(10118).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  closure_3 = _require(10157).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -58,5 +58,5 @@ export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmb
     }
     return found;
   }
-  const obj2 = _require(10118);
+  const obj2 = _require(10157);
 };

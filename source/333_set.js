@@ -5,13 +5,15 @@
 // Exports: unstable_getImageComponentDecorator, unstable_registerImageAttachedCallback, unstable_setImageComponentDecorator, unstable_unregisterImageAttachedCallback, useWrapRefWithImageAttachedCallbacks
 
 // Module 333 (set)
-import "noop";
-import { useRef } from "noop";
+import noopAll from "noop" /* 19 */;
+import useMergeRefsDefault from "useMergeRefs" /* 334 */;
+import { useRef } from "noop" /* 19 */;
 
+noopAll;
 const set = new Set();
 
 export function unstable_setImageComponentDecorator(arg0) {
-  let closure_2 = arg0;
+  closure_2 = arg0;
 }
 export function unstable_getImageComponentDecorator() {
   return closure_2;
@@ -23,7 +25,7 @@ export const unstable_unregisterImageAttachedCallback = function unstable_unregi
   set.delete(arg0);
 };
 export const useWrapRefWithImageAttachedCallbacks = function useWrapRefWithImageAttachedCallbacks(ref) {
-  const importDefault = useRef([]);
+  importDefault = useRef([]);
   let tmp = useRef(null);
   if (null == tmp.current) {
     tmp.current = (arg0) => {
@@ -34,7 +36,7 @@ export const useWrapRefWithImageAttachedCallbacks = function useWrapRefWithImage
           tmp3.current = [];
         }
       } else {
-        const item1 = outer1_4.forEach((arg0) => {
+        const item1 = closure_1_4.forEach((arg0) => {
           const tmp = arg0(ref);
           if (null != tmp) {
             const current = ref.current;
@@ -44,5 +46,5 @@ export const useWrapRefWithImageAttachedCallbacks = function useWrapRefWithImage
       }
     };
   }
-  return importDefault(334)(ref, tmp.current);
+  return useMergeRefsDefault(ref, tmp.current);
 };

@@ -1,62 +1,65 @@
-// Module ID: 12939
-// Function ID: 12940
+// Module ID: 12994
+// Function ID: 12995
 // Name: getTier048PxSource
-// Dependencies: [19, 17, 21, 7907, 12940, 12941, 12942, 1363, 2]
+// Dependencies: [19, 17, 21, 7946, 12995, 12996, 12997, 1363, 2]
 // Exports: Tier048Px, getTier048PxSource, useTier048PxSource
 
-// Module 12939 (getTier048PxSource)
-import "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 12994 (getTier048PxSource)
+import noopAll from "noop" /* 19 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Tier048Px.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Tier048Px.tsx");
 
 export const getTier048PxSource = function getTier048PxSource(theme) {
-  let obj = require(7907) /* getIllustrationSource */;
+  let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(12940);
+      return callback(12995);
     },
     darker() {
-      return callback(12941);
+      return callback(12996);
     },
     light() {
-      return callback(12942);
+      return callback(12997);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useTier048PxSource = function useTier048PxSource() {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(12940);
+      return callback(12995);
     },
     darker() {
-      return callback(12941);
+      return callback(12996);
     },
     light() {
-      return callback(12942);
+      return callback(12997);
     }
   };
-  return require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const Tier048Px = function Tier048Px(arg0) {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(12940);
+      return callback(12995);
     },
     darker() {
-      return callback(12941);
+      return callback(12996);
     },
     light() {
-      return callback(12942);
+      return callback(12997);
     }
   };
   obj = {};
-  const illustrationSource = require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

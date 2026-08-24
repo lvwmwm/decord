@@ -1,13 +1,16 @@
-// Module ID: 4005
-// Function ID: 4006
+// Module ID: 4008
+// Function ID: 4009
 // Name: getLocalizedLink
 // Dependencies: [1236, 2]
 // Exports: default
 
-// Module 4005 (getLocalizedLink)
-const result = require("set").fileFinishedImporting("modules/links/getLocalizedLink.tsx");
+// Module 4008 (getLocalizedLink)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
+const result = set.fileFinishedImporting("modules/links/getLocalizedLink.tsx");
 
 export default function getLocalizedLink(arg0) {
-  const formatted = require(1236) /* getSystemLocale */.intl.currentLocale.toLowerCase();
+  const formatted = getSystemLocale.intl.currentLocale.toLowerCase();
   return formatted in arg0 ? arg0[formatted] : arg0.default;
 };

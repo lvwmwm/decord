@@ -1,29 +1,28 @@
-// Module ID: 6783
-// Function ID: 6784
+// Module ID: 6820
+// Function ID: 6821
 // Name: getBaseAnimationData
-// Dependencies: [5, 17, 4197, 6784, 6785, 676, 6786, 4342, 5260, 6778, 6787, 1435, 1896, 6789, 6790, 6791, 6800, 2007, 1222, 2]
+// Dependencies: [5, 17, 4201, 6821, 6822, 676, 6823, 4346, 5265, 6815, 6824, 1435, 1896, 6826, 6827, 6828, 6837, 2008, 1222, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 6783 (getBaseAnimationData)
-import closure_3 from "ME";
-import { NativeModules } from "asyncRequireImpl";
-import handleConnectionOpen from "handleConnectionOpen";
-import shouldShowOnboarding from "shouldShowOnboarding";
-import { GUILD_ONBOARDING_MODAL_KEY as closure_7 } from "GUILD_ONBOARDING_MODAL_KEY";
-import ME from "ME";
+// Module 6820 (getBaseAnimationData)
+import _mod6823 from "module_6823" /* 6823 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "handleConnectionOpen" /* 4201 */;
+import closure_6 from "shouldShowOnboarding" /* 6821 */;
+import { GUILD_ONBOARDING_MODAL_KEY as closure_7 } from "GUILD_ONBOARDING_MODAL_KEY" /* 6822 */;
+import ME from "ME" /* 676 */;
 
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(require(6786)));
+  return JSON.parse(JSON.stringify(_mod6823));
 }
 function _doGuildOnboarding() {
   let self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
     const iter = (function*(arg0) {
       if (c6 === 2) {
         c6 = 3;
@@ -36,7 +35,7 @@ function _doGuildOnboarding() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -51,8 +50,8 @@ function _doGuildOnboarding() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_3 = tmp2;
-              let closure_4 = tmp5;
+              closure_3 = tmp2;
+              closure_4 = tmp5;
               let guildId;
               guildId = guildId.guildId;
               let lib;
@@ -66,18 +65,18 @@ function _doGuildOnboarding() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj8 = lib(4342);
+              let obj8 = lib(4346);
               obj8.hideActionSheet();
-              lib(5260).popAll();
-              const obj10 = lib(5260);
+              lib(5265).popAll();
+              const obj10 = lib(5265);
               c5 = 2;
               c6 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = guildId(6778).waitForGuild(closure_0);
+              obj2[0] = guildId(6815).waitForGuild(closure_0);
               return obj2;
             }
           } else {
@@ -93,13 +92,13 @@ function _doGuildOnboarding() {
               } else {
                 lib = arg1;
                 const features2 = lib.features;
-                let hasItem = features2.has(outer1_8.GUILD_ONBOARDING);
+                let hasItem = features2.has(closure_1_8.GUILD_ONBOARDING);
                 if (hasItem) {
                   const features = lib.features;
                   hasItem = features.has(constants.COMMUNITY);
                 }
                 if (hasItem) {
-                  let obj5 = guildId(6787);
+                  let obj5 = guildId(6824);
                   c5 = 3;
                   c6 = 1;
                   const obj4 = { value: null, done: false };
@@ -117,7 +116,7 @@ function _doGuildOnboarding() {
                 obj5[0] = arg1;
                 return obj5;
               } else if (c6.shouldShowOnboarding(guildId)) {
-                const dependencyMap = closure_12;
+                dependencyMap = closure_12;
                 lib = guildId;
                 c5 = 4;
                 c6 = 1;
@@ -161,7 +160,7 @@ function _doGuildOnboarding() {
               return obj;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp42) {
           c6 = tmp;
@@ -172,7 +171,7 @@ function _doGuildOnboarding() {
     iter.next();
     return iter;
   });
-  const _doGuildOnboarding = tmp;
+  closure_13 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -184,10 +183,10 @@ function _doGuildOnboarding() {
 function _fetchLandingAsset() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
+    c3 = 0;
     return (function*(arg0) {
       if (c5 === 2) {
         c5 = 3;
@@ -200,7 +199,7 @@ function _fetchLandingAsset() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -215,16 +214,16 @@ function _fetchLandingAsset() {
               obj[0] = arg1;
               return obj;
             } else {
-              let dependencyMap = tmp3;
+              dependencyMap = tmp3;
               let callback = tmp7;
               let guildIconSource;
               callback = undefined;
               dependencyMap = undefined;
-              const obj1 = { id: null, icon: null, canAnimate: false, size: null };
+              obj1 = { id: null, icon: null, canAnimate: false, size: null };
               ({ id: obj10[0], icon: obj10[1] } = guildIconSource);
-              obj1[3] = 96 / outer1_1(outer1_2[12])();
-              guildIconSource = outer1_1(outer1_2[11]).getGuildIconSource(obj1);
-              let c3 = 1;
+              obj1[3] = 96 / closure_1_1(closure_1_2[12])();
+              guildIconSource = closure_1_1(closure_1_2[11]).getGuildIconSource(obj1);
+              c3 = 1;
               const ImageManager2 = c4.ImageManager;
               c4 = 2;
               c5 = 1;
@@ -269,7 +268,7 @@ function _fetchLandingAsset() {
           } else {
             dependencyMap = arg1;
             const _HermesInternal = HermesInternal;
-            const tmp12 = callback(6789);
+            const tmp12 = callback(6826);
             c3 = 0;
             c5 = 3;
             obj = { value: null, done: true };
@@ -287,7 +286,7 @@ function _fetchLandingAsset() {
       }
     })();
   });
-  const _fetchLandingAsset = tmp;
+  closure_14 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -298,41 +297,41 @@ function _fetchLandingAsset() {
 }
 function openAndWaitForOnboarding(arg0) {
   const _require = arg0;
-  const result = _require(6790).waitForOnboardingCompletion(arg0);
+  const result = _require(6827).waitForOnboardingCompletion(arg0);
   result.then(() => {
-    if (null != outer1_11[closure_0]) {
+    if (null != closure_1_11[closure_0]) {
       tmp4();
     }
     delete tmp[tmp2];
-    outer1_1(outer1_2[15]).finishOnboarding(closure_0);
+    closure_1_1(closure_1_2[15]).finishOnboarding(closure_0);
   });
-  let obj = _require(6790);
+  let obj = _require(6827);
   return new Promise((arg0) => {
-    if (null == outer1_11[callback]) {
+    if (null == closure_1_11[callback]) {
       tmp[tmp2] = arg0;
     }
-    let obj = outer1_1(outer1_2[8]);
+    let obj = closure_1_1(closure_1_2[8]);
     obj = {
       guildId: tmp2,
       backShouldLeaveGuild: true,
       onFinish() {
 
       },
-      landingAnimation: outer1_12[tmp2],
+      landingAnimation: closure_1_12[tmp2],
       isFirstOpen: true
     };
-    obj.pushLazy(callback(outer1_2[17])(outer1_2[16], outer1_2.paths), obj, outer1_7).then(() => {
-      if (outer1_5.getGuildId() !== closure_0) {
-        outer1_0(outer1_2[18]).transitionTo(outer1_9.CHANNEL(tmp));
-        const obj = outer1_0(outer1_2[18]);
+    obj.pushLazy(callback(closure_1_2[17])(closure_1_2[16], closure_1_2.paths), obj, closure_1_7).then(() => {
+      if (closure_1_5.getGuildId() !== closure_0) {
+        closure_1_0(closure_1_2[18]).transitionTo(closure_1_9.CHANNEL(tmp));
+        const obj = closure_1_0(closure_1_2[18]);
       }
     });
   });
 }
-({ GuildFeatures: metroImportAll, Routes: c9 } = ME);
+({ GuildFeatures: closure_8, Routes: c9 } = ME);
 let closure_11 = {};
 let closure_12 = {};
-let result = require("handleConnectionOpen").fileFinishedImporting("modules/guild_onboarding/doGuildOnboarding.native.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_onboarding/doGuildOnboarding.native.tsx");
 
 export default function doGuildOnboarding() {
   const self = this;

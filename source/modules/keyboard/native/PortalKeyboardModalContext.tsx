@@ -1,11 +1,11 @@
-// Module ID: 9388
-// Function ID: 9389
+// Module ID: 9425
+// Function ID: 9426
 // Name: context
 // Dependencies: [19, 2]
 // Exports: useIsPortalKeyboardInModal
 
-// Module 9388 (context)
-import importAllResult from "noop";
+// Module 9425 (context)
+import importAllResult from "noop" /* 19 */;
 
 let c0 = importAllResult;
 const context = importAllResult.createContext(false);

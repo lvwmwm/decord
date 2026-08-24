@@ -1,28 +1,25 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 10652
+// Function ID: 10653
 // Name: SafetyToolsActionSheetHeader
-// Dependencies: [19, 17, 21, 4661, 712, 10604, 6314, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 10643, 6345, 4739, 2]
 // Exports: default
 
-// Module 10613 (SafetyToolsActionSheetHeader)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10652 (SafetyToolsActionSheetHeader)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_2 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { navbarContainer: { display: "flex", flexDirection: "row", justifyContent: "center" }, navbarLeft: null };
-createCacheKey = { position: "absolute", left: require("Themes").space.PX_16 };
+createCacheKey = { position: "absolute", left: ThemesDefault.space.PX_16 };
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("jsxProd").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheetHeader.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheetHeader.tsx");
 
 export default function SafetyToolsActionSheetHeader(channelId) {
-  let hasBackButton;
-  let title;
   channelId = channelId.channelId;
   const recipientId = channelId.recipientId;
   const warningId = channelId.warningId;
@@ -30,7 +27,7 @@ export default function SafetyToolsActionSheetHeader(channelId) {
   let callback;
   callback = undefined;
   ({ title, hasBackButton } = channelId);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   callback = tmp;
   const items = [channelId, recipientId, warningId, warningType];
   callback = warningId.useCallback(() => {
@@ -42,8 +39,8 @@ export default function SafetyToolsActionSheetHeader(channelId) {
   if (memo) {
     memo = warningId.useMemo(() => {
       let obj = channelId(recipientId[6]);
-      obj = { style: _undefined.navbarLeft };
-      return _undefined(obj.getHeaderBackButton(callback), obj);
+      obj = { style: lib.navbarLeft };
+      return lib(obj.getHeaderBackButton(callback), obj);
     }, items1);
   }
   const items2 = [memo, callback(channelId(recipientId[7]).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: title })];

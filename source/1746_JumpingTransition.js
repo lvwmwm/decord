@@ -4,13 +4,11 @@
 // Dependencies: [1706]
 
 // Module 1746 (JumpingTransition)
-const require = arg1;
+import linear from "linear" /* 1706 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.JumpingTransition = function JumpingTransition(name) {
-  let scaleX;
-  let scaleY;
-  let translateX;
-  let translateY;
   ({ translateX, translateY, scaleX, scaleY } = arg1);
   const absolute = Math.abs(translateX);
   const result = Math.max(absolute, Math.abs(translateY)) / 2;
@@ -24,10 +22,10 @@ arg5.JumpingTransition = function JumpingTransition(name) {
   obj = { transform: null, easing: null };
   const items = [{ translateX: "" + translateX + "px", translateY: "" + translateY + "px", scale: "" + scaleX + "," + scaleY }];
   obj[0] = items;
-  obj[1] = require(1706) /* linear */.Easing.exp;
+  obj[1] = linear.Easing.exp;
   obj[0] = obj;
   const obj2 = { transform: null };
-  const obj1 = { translateX: "" + translateX + "px", translateY: "" + translateY + "px", scale: "" + scaleX + "," + scaleY };
+  obj1 = { translateX: "" + translateX + "px", translateY: "" + translateY + "px", scale: "" + scaleX + "," + scaleY };
   const items1 = [{ translateX: `${translateX / 2}px`, translateY: "" + diff + "px", scale: "" + scaleX + "," + scaleY }];
   obj2[0] = items1;
   obj[50] = obj2;

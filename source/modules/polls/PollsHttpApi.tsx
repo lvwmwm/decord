@@ -1,25 +1,22 @@
-// Module ID: 10889
-// Function ID: 10890
+// Module ID: 10928
+// Function ID: 10929
 // Name: _submitPollVote
-// Dependencies: [5, 676, 530, 4273, 2]
+// Dependencies: [5, 676, 530, 4277, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 10889 (_submitPollVote)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import { Endpoints } from "ME";
+// Module 10928 (_submitPollVote)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _submitPollVote() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -31,7 +28,7 @@ function _submitPollVote() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -47,7 +44,7 @@ function _submitPollVote() {
               return obj;
             } else {
               c2 = tmp3;
-              let dependencyMap = tmp5;
+              dependencyMap = tmp5;
               let callback;
               dependencyMap = undefined;
               c2 = undefined;
@@ -62,11 +59,11 @@ function _submitPollVote() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
-              let c4 = 1;
+              c4 = 1;
               const HTTP = callback(530).HTTP;
               const obj2 = { url: null, body: null, rejectWithError: false };
               obj2[0] = closure_3.POLL_ANSWERS(callback, dependencyMap);
@@ -81,7 +78,7 @@ function _submitPollVote() {
             }
           } else if (2 === tmp8) {
             c4 = 0;
-            const aPIError = new callback(4273).APIError(closure_3);
+            const aPIError = new callback(4277).APIError(closure_3);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -95,7 +92,7 @@ function _submitPollVote() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp21) {
           closure_3 = tmp21;
@@ -111,7 +108,7 @@ function _submitPollVote() {
     iter.next();
     return iter;
   });
-  const _submitPollVote = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -123,13 +120,11 @@ function _submitPollVote() {
 function _endPollEarly() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -141,7 +136,7 @@ function _endPollEarly() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -156,8 +151,8 @@ function _endPollEarly() {
               obj[0] = arg1;
               return obj;
             } else {
-              let asyncGeneratorStep = tmp3;
-              let dependencyMap = tmp5;
+              closure_2 = tmp3;
+              dependencyMap = tmp5;
               let callback;
               dependencyMap = undefined;
               ({ channelId: c0, messageId: c1 } = callback);
@@ -171,11 +166,11 @@ function _endPollEarly() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
-              let c4 = 1;
+              c4 = 1;
               const HTTP = callback(530).HTTP;
               const obj2 = { url: null, rejectWithError: false };
               obj2[0] = closure_3.POLL_EXPIRE(callback, dependencyMap);
@@ -187,8 +182,8 @@ function _endPollEarly() {
             }
           } else if (2 === tmp8) {
             c4 = 0;
-            asyncGeneratorStep = closure_3;
-            const aPIError = new callback(4273).APIError(asyncGeneratorStep);
+            closure_2 = closure_3;
+            const aPIError = new callback(4277).APIError(closure_2);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -202,7 +197,7 @@ function _endPollEarly() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           closure_3 = tmp28;
@@ -218,7 +213,7 @@ function _endPollEarly() {
     iter.next();
     return iter;
   });
-  const _endPollEarly = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -227,7 +222,7 @@ function _endPollEarly() {
   }
   return applyArgumentsResult;
 }
-const result = require("sendRequest").fileFinishedImporting("modules/polls/PollsHttpApi.tsx");
+const result = require("set").fileFinishedImporting("modules/polls/PollsHttpApi.tsx");
 
 export const submitPollVote = function submitPollVote(arg0) {
   const self = this;

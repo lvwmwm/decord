@@ -1,34 +1,47 @@
-// Module ID: 16124
-// Function ID: 16125
+// Module ID: 16222
+// Function ID: 16223
 // Name: BurstReactionAnimationContainer
-// Dependencies: [19, 17, 1391, 4539, 21, 589, 8687, 4229, 8667, 16125, 500, 13945, 1236, 16127, 13940, 13810, 2, 16128, 16129, 16130, 16131, 16139, 16141, 16172]
+// Dependencies: [19, 17, 1391, 4544, 21, 589, 8724, 4233, 8704, 16223, 500, 14013, 1236, 16225, 14008, 13868, 2, 16226, 16227, 16228, 16229, 16237, 16238, 16269]
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
-// Module 16124 (BurstReactionAnimationContainer)
-import ActionSheetPresenter from "ActionSheetPresenter";
-import { NativeModules } from "BurstReactionAnimationContainerInner";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createRTCConnection from "createRTCConnection";
-import { jsx } from "MuteDeafen";
+// Module 16222 (BurstReactionAnimationContainer)
+import initialize from "initialize" /* 589 */;
+import coerceMainRoute from "coerceMainRoute" /* 4233 */;
+import isVoicePanelEnabled from "isVoicePanelEnabled" /* 8704 */;
+import usePipVideoOrStream from "usePipVideoOrStream" /* 8724 */;
+import KeyCommandsView from "KeyCommandsView" /* 14008 */;
+import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 16223 */;
+import BurstReactionAnimationContainerInnerDefault from "BurstReactionAnimationContainerInner" /* 16226 */;
+import MenuContainerDefault from "MenuContainer" /* 16227 */;
+import ActionSheetPresenterDefault from "ActionSheetPresenter" /* 16228 */;
+import StyleSheetDefault from "StyleSheet" /* 16229 */;
+import MuteDeafenDefault from "MuteDeafen" /* 16237 */;
+import trackActionSheetImpressionDefault from "trackActionSheetImpression" /* 16238 */;
+import AnimatedToastDefault from "AnimatedToast" /* 16269 */;
+import closure_3 from "noop" /* 19 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "createRTCConnection" /* 4544 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-let result = require("ensureGuildLoaded").fileFinishedImporting("components_native/MainShared.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("components_native/MainShared.tsx");
 
-export const BurstReactionAnimationContainer = require("BurstReactionAnimationContainerInner");
-export const MenuContainer = require("MenuContainer");
-export const ActionSheetContainer = require("ActionSheetPresenter");
-export const Alerts = require("StyleSheet");
-export const SoundPlayer = require("MuteDeafen");
-export const MainViewTooltipActionSheetsV2 = require("trackActionSheetImpression");
-export const ToastContainer = require("AnimatedToast");
+export const BurstReactionAnimationContainer = BurstReactionAnimationContainerInnerDefault;
+export const MenuContainer = MenuContainerDefault;
+export const ActionSheetContainer = ActionSheetPresenterDefault;
+export const Alerts = StyleSheetDefault;
+export const SoundPlayer = MuteDeafenDefault;
+export const MainViewTooltipActionSheetsV2 = trackActionSheetImpressionDefault;
+export const ToastContainer = AnimatedToastDefault;
 export const PictureInPictureGlobalContainer = function PictureInPictureGlobalContainer() {
-  let obj = require(589) /* initialize */;
-  const items = [ensureGuildLoaded, createRTCConnection];
+  let obj = initialize;
+  const items = [closure_5, closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId.getChannelId()));
-  const hasPipParticipant = require(8687) /* usePipVideoOrStream */.useHasPipParticipant({ isActivityViewFocused: false });
-  const obj2 = require(8687) /* usePipVideoOrStream */;
-  const isModalOpen = require(4229) /* coerceMainRoute */.useIsModalOpen();
-  require(8667) /* isVoicePanelEnabled */;
+  const hasPipParticipant = usePipVideoOrStream.useHasPipParticipant({ isActivityViewFocused: false });
+  const obj2 = usePipVideoOrStream;
+  const isModalOpen = coerceMainRoute.useIsModalOpen();
+  isVoicePanelEnabled;
   let tmp7 = null;
   if (null != stateFromStores) {
     tmp7 = null;
@@ -39,7 +52,7 @@ export const PictureInPictureGlobalContainer = function PictureInPictureGlobalCo
         if (!tmp6) {
           obj = { channel: null };
           obj[0] = stateFromStores;
-          tmp7 = jsx(importDefault(16125), { channel: null });
+          tmp7 = jsx(PictureInPictureGlobalDefault, { channel: null });
         }
       }
     }
@@ -64,7 +77,7 @@ export const useAppKeyCommands = function useAppKeyCommands() {
     const items = [obj];
     return items;
   }, []);
-  const keyCommands = require(13940) /* KeyCommandsView */.useKeyCommands(memo);
+  const keyCommands = KeyCommandsView.useKeyCommands(memo);
 };
 export const useScreenReaderEnabled = function useScreenReaderEnabled() {
   const effect = React.useEffect(() => {

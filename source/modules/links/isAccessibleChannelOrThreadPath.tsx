@@ -1,34 +1,27 @@
-// Module ID: 7213
-// Function ID: 7214
+// Module ID: 7251
+// Function ID: 7252
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1981, 6784, 1391, 1983, 1910, 676, 1398, 7214, 7216, 7225, 7200, 7228, 7230, 5283, 7231, 5292, 4285, 7232, 7198, 1370, 7277, 4770, 4488, 2]
+// Dependencies: [5, 1982, 6821, 1391, 1984, 1910, 676, 1398, 7252, 7254, 7263, 7238, 7266, 7268, 5288, 7269, 5297, 4289, 7270, 7236, 1370, 7315, 4775, 4492, 2]
 // Exports: default
 
-// Module 7213 (_isAccessibleChannelOrThreadPath)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import isSubscriptionGated from "isSubscriptionGated";
-import shouldShowOnboarding from "shouldShowOnboarding";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import closure_8 from "createGuildRecordFromRust";
-import ME from "ME";
-import set from "set";
-import set from "shouldShowOnboarding";
+// Module 7251 (_isAccessibleChannelOrThreadPath)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "isSubscriptionGated" /* 1982 */;
+import closure_5 from "shouldShowOnboarding" /* 6821 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_8 from "createGuildRecordFromRust" /* 1910 */;
+import ME from "ME" /* 676 */;
+import set from "set" /* 1398 */;
 
-let c10;
-let c9;
-let closure_12;
-let unpackModuleId;
 const require = arg1;
 function _isAccessibleChannelOrThreadPath() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let obj5;
       if (c5 === 2) {
         c5 = 3;
         let throwTypeErrorResult = HermesBuiltin.throwTypeError();
@@ -44,7 +37,7 @@ function _isAccessibleChannelOrThreadPath() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -79,7 +72,7 @@ function _isAccessibleChannelOrThreadPath() {
                   throw arg1;
                 } else if (arg0 === 2) {
                   c5 = 3;
-                  let obj1 = { value: null, done: true };
+                  obj1 = { value: null, done: true };
                   obj1[0] = arg1;
                   return obj1;
                 } else {
@@ -429,7 +422,7 @@ function _isAccessibleChannelOrThreadPath() {
     iter.next();
     return iter;
   });
-  const _isAccessibleChannelOrThreadPath = tmp;
+  closure_13 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);

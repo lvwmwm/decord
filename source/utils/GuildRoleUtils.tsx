@@ -1,17 +1,23 @@
-// Module ID: 1987
-// Function ID: 1988
+// Module ID: 1988
+// Function ID: 1989
 // Name: compareGuildRoles
-// Dependencies: [11, 688, 1986, 1985, 2]
+// Dependencies: [11, 688, 1987, 1986, 2]
 // Exports: doesRoleSortHigher, filterRoleDeletes, inviteRoleToDisplayData, sortGuildRoleRecords, sortInviteRoles
 
-// Module 1987 (compareGuildRoles)
+// Module 1988 (compareGuildRoles)
+import set from "set" /* 2 */;
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import int2hslRaw from "int2hslRaw" /* 688 */;
+import fromServerArrayAll from "fromServerArray" /* 1986 */;
+import extractColorStringsFromServerColors from "extractColorStringsFromServerColors" /* 1987 */;
+
 function compareGuildRoles(guildId, id) {
   guildId = guildId.guildId;
   if (guildId.id === guildId) {
     let num2 = 1;
     if (id.id === guildId) {
-      num2 = importDefault(11).compare(guildId.id, id.id);
-      const obj2 = importDefault(11);
+      num2 = DISCORD_EPOCHDefault.compare(guildId.id, id.id);
+      const obj2 = DISCORD_EPOCHDefault;
     }
     let num = num2;
   } else {
@@ -20,14 +26,14 @@ function compareGuildRoles(guildId, id) {
       if (guildId.position !== id.position) {
         let diff = id.position - guildId.position;
       } else {
-        diff = importDefault(11).compare(guildId.id, id.id);
-        const obj = importDefault(11);
+        diff = DISCORD_EPOCHDefault.compare(guildId.id, id.id);
+        const obj = DISCORD_EPOCHDefault;
       }
     }
   }
   return num;
 }
-let result = require("extractColorStringsFromServerColors").fileFinishedImporting("utils/GuildRoleUtils.tsx");
+let result = set.fileFinishedImporting("utils/GuildRoleUtils.tsx");
 
 export const sortGuildRoleRecords = function sortGuildRoleRecords(arr) {
   const sorted = arr.sort(compareGuildRoles);
@@ -39,8 +45,8 @@ export const doesRoleSortHigher = function doesRoleSortHigher(guildId, id) {
   if (guildId.id === guildId) {
     let num2 = 1;
     if (id.id === guildId) {
-      num2 = importDefault(11).compare(guildId.id, id.id);
-      const obj2 = importDefault(11);
+      num2 = DISCORD_EPOCHDefault.compare(guildId.id, id.id);
+      const obj2 = DISCORD_EPOCHDefault;
     }
     let num = num2;
   } else {
@@ -49,8 +55,8 @@ export const doesRoleSortHigher = function doesRoleSortHigher(guildId, id) {
       if (guildId.position !== id.position) {
         let diff = id.position - guildId.position;
       } else {
-        diff = importDefault(11).compare(guildId.id, id.id);
-        const obj = importDefault(11);
+        diff = DISCORD_EPOCHDefault.compare(guildId.id, id.id);
+        const obj = DISCORD_EPOCHDefault;
       }
     }
   }
@@ -60,8 +66,8 @@ export const sortInviteRoles = function sortInviteRoles(position, position2) {
   if (position.position !== position2.position) {
     let diff = position2.position - position.position;
   } else {
-    diff = importDefault(11).compare(position.id, position2.id);
-    const obj = importDefault(11);
+    diff = DISCORD_EPOCHDefault.compare(position.id, position2.id);
+    const obj = DISCORD_EPOCHDefault;
   }
   return diff;
 };
@@ -69,14 +75,14 @@ export const inviteRoleToDisplayData = function inviteRoleToDisplayData(id, id) 
   const obj = { id: id.id, name: id.name, guildId: id, colorString: null, colorStrings: null, icon: null, unicodeEmoji: null };
   let int2hexResult = null;
   if (0 !== id.color) {
-    int2hexResult = require(688) /* int2hslRaw */.int2hex(id.color);
-    const obj2 = require(688) /* int2hslRaw */;
+    int2hexResult = int2hslRaw.int2hex(id.color);
+    const obj2 = int2hslRaw;
   }
   obj[3] = int2hexResult;
   let result = null;
   if (null != id.colors) {
-    result = require(1986) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
-    const obj3 = require(1986) /* extractColorStringsFromServerColors */;
+    result = extractColorStringsFromServerColors.extractColorStringsFromServerColors(id.colors);
+    const obj3 = extractColorStringsFromServerColors;
   }
   obj[4] = result;
   let icon = id.icon;
@@ -114,7 +120,7 @@ export const filterRoleDeletes = function filterRoleDeletes(id, unsafeMutableRol
     for (const item10018 of items) {
       let tmp7 = importAll;
       let tmp8 = dependencyMap;
-      obj = importAll(1985);
+      obj = fromServerArrayAll;
       obj[item10018.id] = obj.fromServer(arg0, item10018);
       continue;
     }

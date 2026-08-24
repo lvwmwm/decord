@@ -1,39 +1,42 @@
-// Module ID: 12599
-// Function ID: 12600
+// Module ID: 12653
+// Function ID: 12654
 // Name: StageChannelCallBackground
-// Dependencies: [19, 21, 12493, 4661, 1629, 12600, 12601, 4115, 8032, 12602, 2]
+// Dependencies: [19, 21, 12547, 4668, 1629, 12654, 12655, 4119, 8071, 12656, 2]
 // Exports: default
 
-// Module 12599 (StageChannelCallBackground)
-import "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12653 (StageChannelCallBackground)
+import noopAll from "noop" /* 19 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import componentDidMountDefault from "componentDidMount" /* 8071 */;
+import FocusedControlsHeader from "FocusedControlsHeader" /* 12547 */;
+import useStageActionBarAnimation from "useStageActionBarAnimation" /* 12654 */;
+import StageChannelBackgroundDefault from "StageChannelBackground" /* 12655 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 12656 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function StageChannelCallBackground(arg0) {
-  let channelId;
-  let children;
   ({ children, channelId } = arg0);
-  let obj = require(12600) /* useStageActionBarAnimation */;
-  const stageActionBarAnimation = obj.useStageActionBarAnimation(channelId, require(12493) /* FocusedControlsHeader */.FOCUSED_CONTROLS_HEADER_HEIGHT + importDefault(1629)().top);
+  let obj = useStageActionBarAnimation;
+  const stageActionBarAnimation = obj.useStageActionBarAnimation(channelId, FocusedControlsHeader.FOCUSED_CONTROLS_HEADER_HEIGHT + useSafeAreaInsetsDefault().top);
   obj = { children: null };
   const tmp = callback3();
   const items = [tmp.container, stageActionBarAnimation];
-  obj[0] = callback(importDefault(4115).View, { style: items, children });
-  return callback(importDefault(12601), obj);
+  obj[0] = callback(_modDef4119.View, { style: items, children });
+  return callback(StageChannelBackgroundDefault, obj);
 }
+noopAll;
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ container: { flex: 1, paddingHorizontal: 12 } });
-const result = require("FocusedControlsHeader").fileFinishedImporting("modules/stage_channels/native/components/StageChannelCallView.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/components/StageChannelCallView.tsx");
 
 export default function StageChannelCallView(channel) {
   channel = channel.channel;
   let obj = { children: null };
-  const items = [callback(importDefault(8032), { animated: true, barStyle: "light-content" }), ];
-  obj = { channelId: channel.id, children: callback(importDefault(12602), { channel }) };
+  const items = [callback(componentDidMountDefault, { animated: true, barStyle: "light-content" }), ];
+  obj = { channelId: channel.id, children: callback(StageChannelCallListDefault, { channel }) };
   items[1] = callback(StageChannelCallBackground, obj);
   obj[0] = items;
   return callback2(closure_4, obj);

@@ -1,17 +1,20 @@
-// Module ID: 7727
-// Function ID: 7728
+// Module ID: 7765
+// Function ID: 7766
 // Name: items
-// Dependencies: [7728, 2]
+// Dependencies: [7766, 2]
 
-// Module 7727 (items)
-const result = require("set").fileFinishedImporting("utils/native/IAPUtils.mock.tsx");
+// Module 7765 (items)
+import set from "set" /* 2 */;
+import items from "items" /* 7766 */;
+
+const result = set.fileFinishedImporting("utils/native/IAPUtils.mock.tsx");
 
 export default {
   loadProducts() {
-    return Promise.resolve(require(7728) /* items */.copiedIAPProducts);
+    return Promise.resolve(items.copiedIAPProducts);
   },
   purchaseProduct() {
-    const error = new Error("IAPUtils is mocked \u2014 purchases cannot be completed in this build.");
+    error = new Error("IAPUtils is mocked \u2014 purchases cannot be completed in this build.");
     return Promise.reject(error);
   },
   canMakePayments() {

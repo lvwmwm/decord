@@ -1,16 +1,17 @@
-// Module ID: 11403
-// Function ID: 11404
+// Module ID: 11454
+// Function ID: 11455
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [19, 21, 4239, 1367, 4115, 1627, 4664, 4667, 9975, 2]
+// Dependencies: [19, 21, 4243, 1367, 4119, 1627, 4671, 4674, 10014, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 11403 (MediaKeyboardButtonIcon)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 11454 (MediaKeyboardButtonIcon)
+import noopAll from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
+noopAll;
 let closure_4 = { code: "function MediaKeyboardButtonIconTsx1(){const{keyboard,KeyboardTypes,chatInputFloating,withTiming,timingStandard}=this.__closure;const isActive=keyboard===KeyboardTypes.MEDIA||chatInputFloating&&keyboard===KeyboardTypes.APP_LAUNCHER;return{transform:[{rotate:withTiming(isActive?'45deg':'0deg',timingStandard)}]};}" };
-const result = require("useKeyboardType").fileFinishedImporting("modules/media_keyboard/native/MediaKeyboardButtonIcon.tsx");
+const result = require("set").fileFinishedImporting("modules/media_keyboard/native/MediaKeyboardButtonIcon.tsx");
 
 export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
   if (arg0 == null) {
@@ -19,17 +20,17 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     let _require;
     let chatInputFloating;
     const merged = Object.assign(arg0, undefined);
-    const tmp6 = chatInputFloating(4239)();
+    const tmp6 = chatInputFloating(4243)();
     _require = tmp6;
     let obj = _require(1367);
     chatInputFloating = obj.useMobileVisualRefreshConfig({ location: "MediaKeyboardButtonIcon" }).chatInputFloating;
-    let obj1 = _require(4115);
+    obj1 = _require(4119);
     const fn = function s() {
-      let tmp4 = _undefined === _undefined(outer1_2[5]).KeyboardTypes.MEDIA;
+      let tmp4 = callback === callback(closure_1_2[5]).KeyboardTypes.MEDIA;
       if (!tmp4) {
         let tmp5 = chatInputFloating;
         if (chatInputFloating) {
-          tmp5 = _undefined === tmp2(tmp3[5]).KeyboardTypes.APP_LAUNCHER;
+          tmp5 = callback === tmp2(tmp3[5]).KeyboardTypes.APP_LAUNCHER;
         }
         tmp4 = tmp5;
       }
@@ -38,7 +39,7 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
         str = "45deg";
       }
       let obj = { transform: null };
-      obj = { rotate: _undefined(outer1_2[6]).withTiming(str, tmp2(tmp3[7]).timingStandard) };
+      obj = { rotate: callback(closure_1_2[6]).withTiming(str, tmp2(tmp3[7]).timingStandard) };
       const items = [obj];
       obj[0] = items;
       return obj;
@@ -47,8 +48,8 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     obj[0] = tmp6;
     obj[1] = _require(1627).KeyboardTypes;
     obj[2] = chatInputFloating;
-    obj[3] = _require(4664).withTiming;
-    obj[4] = _require(4667).timingStandard;
+    obj[3] = _require(4671).withTiming;
+    obj[4] = _require(4674).timingStandard;
     fn.__closure = obj;
     fn.__workletHash = 12686941860647;
     fn.__initData = closure_4;
@@ -57,7 +58,7 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     obj[0] = animatedStyle;
     obj1 = {};
     const merged1 = Object.assign(merged);
-    obj[1] = jsx(_require(9975).PlusLargeIcon, {});
-    return jsx(chatInputFloating(4115).View, { style: null, children: null });
+    obj[1] = jsx(_require(10014).PlusLargeIcon, {});
+    return jsx(chatInputFloating(4119).View, { style: null, children: null });
   }
 };

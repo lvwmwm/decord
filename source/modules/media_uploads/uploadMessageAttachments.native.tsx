@@ -1,27 +1,22 @@
-// Module ID: 7581
-// Function ID: 7582
+// Module ID: 7619
+// Function ID: 7620
 // Name: _uploadMessageAttachments
-// Dependencies: [5, 7582, 7583, 4803, 709, 2]
+// Dependencies: [5, 7620, 7621, 4808, 709, 2]
 // Exports: uploadMessageAttachments
 
-// Module 7581 (_uploadMessageAttachments)
-import closure_3 from "set";
-import initialize from "initialize";
-import set from "nativeEventEmitter";
+// Module 7619 (_uploadMessageAttachments)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "initialize" /* 7620 */;
+import set from "set" /* 2 */;
 
 const require = arg1;
 function _uploadMessageAttachments() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
     const iter = (function*(arg0, attachments) {
-      let c0;
-      let c2;
-      let c3;
-      let c4;
-      let closure_1;
       if (set === 2) {
         set = 3;
         HermesBuiltin.throwTypeError();
@@ -33,7 +28,7 @@ function _uploadMessageAttachments() {
           obj[0] = attachments;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -49,7 +44,7 @@ function _uploadMessageAttachments() {
               return obj;
             } else {
               c3 = tmp5;
-              let dependencyMap = tmp2;
+              dependencyMap = tmp2;
               let callback;
               let callback2;
               dependencyMap = undefined;
@@ -57,8 +52,8 @@ function _uploadMessageAttachments() {
               c4 = undefined;
               ({ channelId: c0, message: closure_1, nonce: c2, items: c3, shouldUploadFailureSendNotification: c4 } = callback);
               set = undefined;
-              let closure_6;
-              let closure_7;
+              closure_6 = undefined;
+              closure_7 = undefined;
               c4 = 1;
               set = 1;
               return { value: "ct", done: true };
@@ -69,18 +64,18 @@ function _uploadMessageAttachments() {
               throw attachments;
             } else if (arg0 === 2) {
               set = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = attachments;
               return obj1;
             } else if (set.has(dependencyMap)) {
               set = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
-              const tmp16 = new callback2(7583)();
+              const tmp16 = new callback2(7621)();
               set = tmp16;
               const _HermesInternal = HermesInternal;
               closure_6 = "pending-upload-" + set._file.id;
-              let obj2 = callback(4803);
+              let obj2 = callback(4808);
               obj2 = {};
               const merged = Object.assign(callback2);
               obj2.key = closure_6;
@@ -109,7 +104,7 @@ function _uploadMessageAttachments() {
                 obj.dispatch(obj);
               });
               set.on("complete", (id) => {
-                let closure_0 = id;
+                closure_0 = id;
                 set.delete(_undefined);
                 messageForFile = messageForFile.getMessageForFile(id.id);
                 let _aborted = null != messageForFile;
@@ -176,7 +171,7 @@ function _uploadMessageAttachments() {
     iter.next();
     return iter;
   });
-  const _uploadMessageAttachments = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);

@@ -1,24 +1,31 @@
-// Module ID: 11463
-// Function ID: 11464
+// Module ID: 11512
+// Function ID: 11513
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4661, 500, 712, 1363, 8502, 4310, 4734, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 500, 712, 1363, 8541, 4314, 4739, 1236, 2]
 // Exports: default
 
-// Module 11463 (NewBadge)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11512 (NewBadge)
+import noopAll from "noop" /* 19 */;
+import set from "set" /* 500 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import Text from "Text" /* 4739 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8541 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_5 = createCacheKey.createStyles((arg0, arg1) => {
-  let obj = require(500) /* set */;
+  let obj = set;
   let num = 0;
   if (obj.isIOS()) {
     num = 1;
   }
   obj = { text: { textAlign: "center", textTransform: "uppercase", marginTop: num }, base: null };
-  obj = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: importDefault(712).radii.round, paddingHorizontal: 6, paddingVertical: 3, backgroundColor: null };
+  obj = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.round, paddingHorizontal: 6, paddingVertical: 3, backgroundColor: null };
   if (tmpResult.isThemeLight(arg1)) {
     if (!arg0) {
       let MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(712).colors.BACKGROUND_BRAND;
@@ -29,11 +36,11 @@ let closure_5 = createCacheKey.createStyles((arg0, arg1) => {
   }
   MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(712).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
+const result = require("set").fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
 export default function NewBadge() {
-  const tmp2 = importDefault(8502)();
-  const tmp3 = importDefault(4310)();
+  const tmp2 = useIsUsingClientThemeDefault();
+  const tmp3 = useThemeDefault();
   const tmp4 = callback(tmp2, tmp3);
   let obj = { style: tmp4.base, children: null };
   obj = { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null };
@@ -44,7 +51,7 @@ export default function NewBadge() {
   }
   obj[2] = str;
   const intl = tmp7(1236).intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
-  obj[1] = jsx(require(4734) /* Text */.Text, { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null });
+  obj[3] = intl.string(getSystemLocale.t.y2b7CA);
+  obj[1] = jsx(Text.Text, { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null });
   return <View variant="text-xxs/bold" style={tmp4.text} color={null}>{null}</View>;
 };

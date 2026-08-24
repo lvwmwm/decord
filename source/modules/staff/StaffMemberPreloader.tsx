@@ -1,15 +1,16 @@
-// Module ID: 16707
-// Function ID: 16708
+// Module ID: 16803
+// Function ID: 16804
 // Name: preloadStaffMembers
-// Dependencies: [1910, 1922, 16708, 6778, 2]
+// Dependencies: [1910, 1922, 16804, 6815, 2]
 // Exports: preloadStaffMembers
 
-// Module 16707 (preloadStaffMembers)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { PRELOAD_SERVER_ID } from "PRELOAD_SERVER_ID";
+// Module 16803 (preloadStaffMembers)
+import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 6815 */;
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { PRELOAD_SERVER_ID } from "PRELOAD_SERVER_ID" /* 16804 */;
 
-const result = require("PRELOAD_SERVER_ID").fileFinishedImporting("modules/staff/StaffMemberPreloader.tsx");
+const result = require("set").fileFinishedImporting("modules/staff/StaffMemberPreloader.tsx");
 
 export const preloadStaffMembers = function preloadStaffMembers() {
   currentUser = currentUser.getCurrentUser();
@@ -21,7 +22,7 @@ export const preloadStaffMembers = function preloadStaffMembers() {
     isStaffResult = null != guild.getGuild(PRELOAD_SERVER_ID);
   }
   if (isStaffResult) {
-    const obj2 = importDefault(6778);
+    const obj2 = showTooManyUserGuildsAlertDefault;
     const members = obj2.requestMembers(PRELOAD_SERVER_ID, "", 0, false);
   }
 };

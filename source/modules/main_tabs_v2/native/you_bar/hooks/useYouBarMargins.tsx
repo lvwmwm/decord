@@ -1,20 +1,21 @@
-// Module ID: 14449
-// Function ID: 14450
+// Module ID: 14517
+// Function ID: 14518
 // Name: useYouBarHorizontalMargin
-// Dependencies: [14450, 1629, 501, 1367, 4097, 712, 2]
+// Dependencies: [14518, 1629, 501, 1367, 4100, 712, 2]
 // Exports: useYouBarBottomMargin, useYouBarHorizontalMargin
 
-// Module 14449 (useYouBarHorizontalMargin)
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
+// Module 14517 (useYouBarHorizontalMargin)
+import set from "set" /* 2 */;
+import PlatformTypes from "PlatformTypes" /* 501 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import map from "map" /* 4100 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14518 */;
 
-let c3;
-let c4;
-let c5;
 ({ YOU_BAR_MARGIN_IOS: c3, YOU_BAR_MARGIN: c4, YOU_BAR_FLOATING_OFFSET_MINIMUM: c5 } = CONNECTION_BANNER_HEIGHT);
-const result = require("PlatformTypes").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarMargins.tsx");
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarMargins.tsx");
 
 export const useYouBarHorizontalMargin = function useYouBarHorizontalMargin() {
-  if (importDefault(1629)().bottom > 0) {
+  if (useSafeAreaInsetsDefault().bottom > 0) {
     if (obj.isIOS()) {
       let tmp3 = closure_3;
     }
@@ -23,8 +24,8 @@ export const useYouBarHorizontalMargin = function useYouBarHorizontalMargin() {
   tmp3 = closure_4;
 };
 export const useYouBarBottomMargin = function useYouBarBottomMargin() {
-  const bottom = importDefault(1629)().bottom;
-  require(4097) /* map */;
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  map;
   if (tmp2) {
     const _Math2 = Math;
     let bound = Math.max(tmp5, bottom);
@@ -33,7 +34,7 @@ export const useYouBarBottomMargin = function useYouBarBottomMargin() {
       if (tmp3Result.isIOS()) {
         bound = closure_3;
       }
-      tmp3Result = require(501) /* PlatformTypes */;
+      tmp3Result = PlatformTypes;
     }
     const _Math = Math;
     bound = Math.max(closure_5, bottom);

@@ -1,10 +1,12 @@
-// Module ID: 11831
-// Function ID: 11832
+// Module ID: 11880
+// Function ID: 11881
 // Name: WELCOME_SCREEN_TYPE
 // Dependencies: [2]
 
-// Module 11831 (WELCOME_SCREEN_TYPE)
-const result = require("set").fileFinishedImporting("modules/welcome_screen/WelcomeScreenConstants.tsx");
+// Module 11880 (WELCOME_SCREEN_TYPE)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/welcome_screen/WelcomeScreenConstants.tsx");
 
 export const WELCOME_SCREEN_TYPE = "Guild Welcome Screen";
 export const WELCOME_EMOJI_TOOLTIP_STORAGE_KEY = "hasClickedWelcomeEmojiPicker";

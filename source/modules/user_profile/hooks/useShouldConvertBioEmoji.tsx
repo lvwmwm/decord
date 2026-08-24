@@ -1,26 +1,29 @@
-// Module ID: 8378
-// Function ID: 8379
+// Module ID: 8417
+// Function ID: 8418
 // Name: useShouldConvertBioEmoji
-// Dependencies: [4066, 2]
+// Dependencies: [4069, 2]
 // Exports: default, getShouldConvertBioEmoji
 
-// Module 8378 (useShouldConvertBioEmoji)
-const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useShouldConvertBioEmoji.tsx");
+// Module 8417 (useShouldConvertBioEmoji)
+import set from "set" /* 2 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+
+const result = set.fileFinishedImporting("modules/user_profile/hooks/useShouldConvertBioEmoji.tsx");
 
 export default function useShouldConvertBioEmoji() {
-  const UseLegacyChatInput = require(4066) /* explicitContentFromProto */.UseLegacyChatInput;
+  const UseLegacyChatInput = explicitContentFromProto.UseLegacyChatInput;
   let setting = UseLegacyChatInput.useSetting();
-  const UseRichChatInput = require(4066) /* explicitContentFromProto */.UseRichChatInput;
+  const UseRichChatInput = explicitContentFromProto.UseRichChatInput;
   if (!setting) {
     setting = !UseRichChatInput.useSetting();
   }
   return setting;
 };
 export const getShouldConvertBioEmoji = function getShouldConvertBioEmoji() {
-  const UseLegacyChatInput = require(4066) /* explicitContentFromProto */.UseLegacyChatInput;
+  const UseLegacyChatInput = explicitContentFromProto.UseLegacyChatInput;
   let setting = UseLegacyChatInput.getSetting();
   if (!setting) {
-    const UseRichChatInput = require(4066) /* explicitContentFromProto */.UseRichChatInput;
+    const UseRichChatInput = explicitContentFromProto.UseRichChatInput;
     setting = !UseRichChatInput.getSetting();
   }
   return setting;

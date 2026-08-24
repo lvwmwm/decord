@@ -1,37 +1,41 @@
-// Module ID: 16883
-// Function ID: 16884
+// Module ID: 16976
+// Function ID: 16977
 // Name: onModalClose
-// Dependencies: [19, 21, 16882, 6318, 6314, 1236, 5432, 8143, 16884, 16885, 16897, 16898, 6312, 2]
+// Dependencies: [19, 21, 16975, 6349, 6345, 1236, 5437, 8182, 16977, 16978, 16990, 16991, 6343, 2]
 // Exports: default
 
-// Module 16883 (onModalClose)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 16976 (onModalClose)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import NavigationStack from "NavigationStack" /* 6343 */;
+import HeaderBackImage from "HeaderBackImage" /* 6345 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6349 */;
+import _modDef16975 from "module_16975" /* 16975 */;
+import EnableCommunityModalSteps from "EnableCommunityModalSteps" /* 16977 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function onModalClose() {
-  importDefault(16882).close();
+  _modDef16975.close();
 }
 function HeaderBackButton(arg0) {
-  require(6318) /* useNavigatorBackPressHandler */.useNavigatorBackPressHandler(() => {
+  useNavigatorBackPressHandler.useNavigatorBackPressHandler(() => {
     callback(table[2]).close();
     return true;
   });
-  const obj = require(6318) /* useNavigatorBackPressHandler */;
-  const intl = require(1236) /* getSystemLocale */.intl;
-  return require(6314) /* HeaderBackImage */.getHeaderTextButton(intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]), onModalClose)(arg0);
+  const obj = useNavigatorBackPressHandler;
+  const intl = getSystemLocale.intl;
+  return HeaderBackImage.getHeaderTextButton(intl.string(getSystemLocale.t["13/7kX"]), onModalClose)(arg0);
 }
-const result = require("module_16882").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/EnableCommunityModal.tsx");
+const result = require("set").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/EnableCommunityModal.tsx");
 
 export default function EnableCommunityModal() {
   const memo = React.useMemo(() => {
     function headerRight() {
-      const obj = { source: null, onPress: null, accessibilityLabel: null };
-      obj[0] = callback2(8143);
-      obj[1] = closure_5;
+      const obj = { source: callback2(8182), onPress: closure_5, accessibilityLabel: null };
       const intl = callback(1236).intl;
       obj[2] = intl.string(callback(1236).t.cpT0Cq);
-      return callback3(callback(5432).HeaderActionButton, obj);
+      return callback3(callback(5437).HeaderActionButton, obj);
     }
     let obj = {
       headerRight,
@@ -40,7 +44,7 @@ export default function EnableCommunityModal() {
         return null;
       },
       render() {
-        return callback3(callback2(16885), {});
+        return callback3(callback2(16978), {});
       }
     };
     obj = {
@@ -49,7 +53,7 @@ export default function EnableCommunityModal() {
         return null;
       },
       render() {
-        return callback3(callback2(16897), {});
+        return callback3(callback2(16990), {});
       }
     };
     obj = {
@@ -58,14 +62,13 @@ export default function EnableCommunityModal() {
         return null;
       },
       render() {
-        return callback3(callback2(16898), {});
+        return callback3(callback2(16991), {});
       }
     };
     return { [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_1]: obj, [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_2]: obj, [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_3]: obj };
   }, []);
-  let obj = { screens: memo, initialRouteName: null, headerBackTitle: null };
-  obj[1] = require(16884) /* EnableCommunityModalSteps */.EnableCommunityModalSteps.STEP_1;
-  let intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-  return jsx(require(6312) /* NavigationStack */.Navigator, { screens: memo, initialRouteName: null, headerBackTitle: null });
+  let obj = { screens: memo, initialRouteName: EnableCommunityModalSteps.EnableCommunityModalSteps.STEP_1, headerBackTitle: null };
+  let intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t["13/7kX"]);
+  return jsx(NavigationStack.Navigator, { screens: memo, initialRouteName: EnableCommunityModalSteps.EnableCommunityModalSteps.STEP_1, headerBackTitle: null });
 };

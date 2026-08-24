@@ -1,10 +1,12 @@
-// Module ID: 4180
-// Function ID: 4181
+// Module ID: 4184
+// Function ID: 4185
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4180 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/ExpressiveButton.riv.js");
+// Module 4184 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/ExpressiveButton.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/1a5bde58bdc4f85d58d06994c7f1687a67b3e563bfeb17279fb0cef40c46ca46.riv";
 export const metadata = { fileBytes: 9755 };

@@ -5,16 +5,16 @@
 // Exports: createStore, makeBrowserOfflineTransport
 
 // Module 1098 (_push)
-import asyncGeneratorStep from "asyncGeneratorStep";
+import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 function _push(arg0, arg1, arg2) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
+  closure_0 = arg1;
+  closure_1 = arg2;
   return arg0((getAllKeys) => {
     const allKeys = getAllKeys.getAllKeys();
     return new Promise((arg0, arg1) => {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
+      closure_0 = arg0;
+      closure_1 = arg1;
       const fn = () => lib(lib.result);
       closure_0.onsuccess = fn;
       closure_0.oncomplete = fn;
@@ -22,7 +22,7 @@ function _push(arg0, arg1, arg2) {
       closure_0.onerror = fn2;
       closure_0.onabort = fn2;
     }).then((arg0) => {
-      if (arg0.length < outer1_1) {
+      if (arg0.length < closure_1_1) {
         const _Math = Math;
         const items = [];
         items[HermesBuiltin.arraySpread(arg0, 0)] = 0;
@@ -30,8 +30,8 @@ function _push(arg0, arg1, arg2) {
         transaction.put(closure_0, HermesBuiltin.apply(items, Math) + 1);
         transaction = transaction.transaction;
         const promise = new Promise((arg0, arg1) => {
-          let closure_0 = arg0;
-          let closure_1 = arg1;
+          closure_0 = arg0;
+          closure_1 = arg1;
           const fn = () => lib(lib.result);
           closure_0.onsuccess = fn;
           closure_0.oncomplete = fn;
@@ -45,13 +45,13 @@ function _push(arg0, arg1, arg2) {
   });
 }
 function _unshift(arg0, arg1, arg2) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
+  closure_0 = arg1;
+  closure_1 = arg2;
   return arg0((getAllKeys) => {
     const allKeys = getAllKeys.getAllKeys();
     return new Promise((arg0, arg1) => {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
+      closure_0 = arg0;
+      closure_1 = arg1;
       const fn = () => lib(lib.result);
       closure_0.onsuccess = fn;
       closure_0.oncomplete = fn;
@@ -59,7 +59,7 @@ function _unshift(arg0, arg1, arg2) {
       closure_0.onerror = fn2;
       closure_0.onabort = fn2;
     }).then((arg0) => {
-      if (arg0.length < outer1_1) {
+      if (arg0.length < closure_1_1) {
         const _Math = Math;
         const items = [];
         items[HermesBuiltin.arraySpread(arg0, 0)] = 0;
@@ -67,8 +67,8 @@ function _unshift(arg0, arg1, arg2) {
         transaction.put(closure_0, HermesBuiltin.apply(items, Math) - 1);
         transaction = transaction.transaction;
         const promise = new Promise((arg0, arg1) => {
-          let closure_0 = arg0;
-          let closure_1 = arg1;
+          closure_0 = arg0;
+          closure_1 = arg1;
           const fn = () => lib(lib.result);
           closure_0.onsuccess = fn;
           closure_0.oncomplete = fn;
@@ -85,8 +85,8 @@ function _shift(arg0) {
   return arg0((getAllKeys) => {
     const allKeys = getAllKeys.getAllKeys();
     return new Promise((arg0, arg1) => {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
+      closure_0 = arg0;
+      closure_1 = arg1;
       const fn = () => lib(lib.result);
       closure_0.onsuccess = fn;
       closure_0.oncomplete = fn;
@@ -95,12 +95,12 @@ function _shift(arg0) {
       closure_0.onabort = fn2;
     }).then((arg0) => {
       const first = arg0[0];
-      let closure_0 = first;
+      closure_0 = first;
       if (null != first) {
         closure_0 = closure_0.get(first);
         const promise = new Promise((arg0, arg1) => {
-          let closure_0 = arg0;
-          let closure_1 = arg1;
+          closure_0 = arg0;
+          closure_1 = arg1;
           const fn = () => lib(lib.result);
           closure_0.onsuccess = fn;
           closure_0.oncomplete = fn;
@@ -113,8 +113,8 @@ function _shift(arg0) {
           set.delete(transaction);
           transaction = set.transaction;
           return new Promise((arg0, arg1) => {
-            let closure_0 = arg0;
-            let closure_1 = arg1;
+            closure_0 = arg0;
+            closure_1 = arg1;
             const fn = () => { ... };
             closure_0.onsuccess = fn;
             closure_0.oncomplete = fn;
@@ -128,24 +128,24 @@ function _shift(arg0) {
   });
 }
 function createIndexedDbStore(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   function getStore() {
-    if (null == f69157) {
+    if (null == f69713) {
       let str = dbName.dbName;
       if (!str) {
         str = "sentry-offline";
       }
       dbName = dbName.storeName || "queue";
       const openResult = globalThis.indexedDB.open(str);
-      f69157 = openResult;
+      f69713 = openResult;
       openResult.onupgradeneeded = () => {
-        const result = f69157.result;
+        const result = f69713.result;
         return result.createObjectStore(closure_0);
       };
       dbName = openResult;
       const promise = new Promise((arg0, arg1) => {
-        let closure_0 = arg0;
-        let closure_1 = arg1;
+        closure_0 = arg0;
+        closure_1 = arg1;
         const fn = () => lib(lib.result);
         closure_0.onsuccess = fn;
         closure_0.oncomplete = fn;
@@ -153,24 +153,24 @@ function createIndexedDbStore(arg0) {
         closure_0.onerror = fn2;
         closure_0.onabort = fn2;
       });
-      f69157 = (arg0) => {
-        let closure_0 = arg0;
+      f69713 = (arg0) => {
+        closure_0 = arg0;
         return promise.then((transaction) => callback(transaction.transaction(callback, "readwrite").objectStore(callback)));
       };
       const tmp7 = dbName;
     }
-    return f69157;
+    return f69713;
   }
   let obj = { push: null, unshift: null, shift: null };
-  let closure_4 = asyncGeneratorStep((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
-    let c3 = 0;
+  closure_4 = callback((arg0) => {
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
+    c3 = 0;
     return (function*(arg0) {
-      let closure_2 = tmp3;
-      let c3 = 1;
-      let obj3 = lib(outer1_1[1]);
+      closure_2 = tmp3;
+      c3 = 1;
+      let obj3 = lib(closure_1_1[1]);
       yield obj3.serializeEnvelope(lib);
       if (1 === tmp7) {
         c3 = 0;
@@ -191,7 +191,7 @@ function createIndexedDbStore(arg0) {
           if (!num4) {
             num4 = 30;
           }
-          let c4 = 3;
+          c4 = 3;
           v0 = 1;
           obj3 = { value: null, done: false };
           obj3[0] = c3(v0(), lib, num4);
@@ -217,15 +217,15 @@ function createIndexedDbStore(arg0) {
     }
     return applyArgumentsResult;
   };
-  let closure_3 = asyncGeneratorStep((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
-    let c3 = 0;
+  closure_3 = callback((arg0) => {
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
+    c3 = 0;
     return (function*(arg0) {
-      let closure_2 = tmp3;
-      let c3 = 1;
-      let obj3 = lib(outer1_1[1]);
+      closure_2 = tmp3;
+      c3 = 1;
+      let obj3 = lib(closure_1_1[1]);
       yield obj3.serializeEnvelope(lib);
       if (1 === tmp7) {
         c3 = 0;
@@ -246,7 +246,7 @@ function createIndexedDbStore(arg0) {
           if (!num4) {
             num4 = 30;
           }
-          let c4 = 3;
+          c4 = 3;
           v0 = 1;
           obj3 = { value: null, done: false };
           obj3[0] = c4(v0(), lib, num4);
@@ -272,13 +272,13 @@ function createIndexedDbStore(arg0) {
     }
     return applyArgumentsResult;
   };
-  asyncGeneratorStep = asyncGeneratorStep(function*() {
-    let closure_1 = tmp3;
-    let c2 = 1;
-    yield outer1_5(outer1_5());
+  callback = callback(function*() {
+    closure_1 = tmp3;
+    c2 = 1;
+    yield closure_1_5(closure_1_5());
     if (1 === tmp7) {
       c2 = 0;
-      let c4 = 3;
+      c4 = 3;
     } else if (arg0 === 1) {
       c4 = 3;
       throw arg1;
@@ -289,12 +289,12 @@ function createIndexedDbStore(arg0) {
       obj2[0] = arg1;
       return obj2;
     } else {
-      let closure_0 = arg1;
+      closure_0 = arg1;
       if (!closure_0) {
         c2 = 0;
       }
     }
-    const obj = outer1_0(outer1_1[1]);
+    const obj = closure_1_0(closure_1_1[1]);
     c2 = 0;
     return obj.parseEnvelope(closure_0);
   });
@@ -313,17 +313,17 @@ function createIndexedDbStore(arg0) {
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const createStore = function createStore(arg0, arg1) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   const openResult = globalThis.indexedDB.open(arg0);
-  const dependencyMap = openResult;
+  dependencyMap = openResult;
   openResult.onupgradeneeded = () => {
-    const result = f69157.result;
+    const result = f69713.result;
     return result.createObjectStore(closure_0);
   };
   closure_0 = openResult;
   const promise = new Promise((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
+    closure_0 = arg0;
+    closure_1 = arg1;
     const fn = () => lib(lib.result);
     closure_0.onsuccess = fn;
     closure_0.oncomplete = fn;
@@ -332,7 +332,7 @@ export const createStore = function createStore(arg0, arg1) {
     closure_0.onabort = fn2;
   });
   return (arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     return promise.then((transaction) => callback(transaction.transaction(callback, "readwrite").objectStore(callback)));
   };
 };
@@ -345,12 +345,12 @@ export const makeBrowserOfflineTransport = function makeBrowserOfflineTransport(
   return (arg0) => {
     let obj = {};
     const merged = Object.assign(arg0);
-    obj.createStore = outer1_6;
+    obj.createStore = closure_1_6;
     const tmp2 = callback(obj);
     callback = tmp2;
-    const WINDOW = callback(outer1_1[2]).WINDOW;
+    const WINDOW = callback(closure_1_1[2]).WINDOW;
     callback = undefined;
-    callback = outer1_2(function*(arg0) {
+    callback = closure_1_2(function*(arg0) {
       if (c0 === 2) {
         c0 = 3;
         HermesBuiltin.throwTypeError();
@@ -362,7 +362,7 @@ export const makeBrowserOfflineTransport = function makeBrowserOfflineTransport(
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -379,7 +379,7 @@ export const makeBrowserOfflineTransport = function makeBrowserOfflineTransport(
             } else {
               c1 = 1;
               c0 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = c0.flush();
               return obj1;
             }
@@ -393,7 +393,7 @@ export const makeBrowserOfflineTransport = function makeBrowserOfflineTransport(
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp6) {
           c0 = tmp;

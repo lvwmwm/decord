@@ -4,14 +4,19 @@
 // Dependencies: [532, 533, 579, 580, 581, 582, 583]
 
 // Module 531 (_createForOfIteratorHelper)
-import _createForOfIteratorHelper from "_createForOfIteratorHelper";
-import _createForOfIteratorHelper from "_createForOfIteratorHelper";
+import _mod533 from "module_533" /* 533 */;
+import defaultOptions from "defaultOptions" /* 579 */;
+import ResponseBase from "ResponseBase" /* 580 */;
+import Emitter from "Emitter" /* 581 */;
+import RequestBase from "RequestBase" /* 582 */;
+import _createForOfIteratorHelper2 from "_createForOfIteratorHelper" /* 583 */;
+import _createForOfIteratorHelper from "_createForOfIteratorHelper" /* 532 */;
 
 let length;
-let require;
+let str2 = require;
 let _exports = exports;
 function _createForOfIteratorHelper(iterable) {
-  let closure_0 = iterable;
+  closure_0 = iterable;
   iterable = typeof Symbol !== "undefined";
   if (typeof Symbol !== "undefined") {
     const _Symbol = Symbol;
@@ -22,8 +27,8 @@ function _createForOfIteratorHelper(iterable) {
   }
   let arr = iterable;
   if (iterable) {
-    let c4 = true;
-    let c5 = false;
+    c4 = true;
+    c5 = false;
     let obj = { s: null, n: null, e: null, f: null };
     obj[0] = function s() {
       const call = closure_1.call;
@@ -35,8 +40,8 @@ function _createForOfIteratorHelper(iterable) {
       return iter;
     };
     obj[2] = function e(arg0) {
-      let c5 = true;
-      let closure_3 = arg0;
+      c5 = true;
+      closure_3 = arg0;
     };
     obj[3] = function f() {
       try {
@@ -136,7 +141,7 @@ function _createForOfIteratorHelper(iterable) {
     if (arr) {
       closure_0 = arr;
     }
-    let c2 = 0;
+    c2 = 0;
     class F {
       constructor() {
         return;
@@ -194,10 +199,10 @@ function pushEncodedKeyValuePair(items, key10006, value) {
       } else {
         if (obj2.isObject(value)) {
           for (const key10033 in arg2) {
-            let tmp26 = require;
+            let tmp26 = str2;
             let tmp27 = dependencyMap;
             let tmp25 = key10033;
-            let obj4 = require(532) /* _createForOfIteratorHelper */;
+            let obj4 = str2(532);
             if (!obj4.hasOwn(arg2, key10033)) {
               continue;
             } else {
@@ -219,7 +224,7 @@ function pushEncodedKeyValuePair(items, key10006, value) {
           const text = `${encodeURI(key10006)}=`;
           items.push(`${encodeURI(key10006)}=` + encodeURIComponent(value));
         }
-        obj2 = require(532) /* _createForOfIteratorHelper */;
+        obj2 = str2(532);
       }
     } else {
       const _encodeURI = encodeURI;
@@ -259,7 +264,7 @@ class Response {
         index = arr2.indexOf(":");
         tmp4 = num6;
         if (-1 !== index) {
-          str5 = require("_createForOfIteratorHelper");
+          str5 = require("module_0");
           tmp6 = trim;
           formatted = str5.toLowerCase();
           str6 = arr2.slice(index + 1);
@@ -388,19 +393,19 @@ class Request {
     onResult = self.on("end", () => {
       try {
         let obj = self;
-        obj = Object.create(outer1_10.prototype);
-        outer1_10(self);
+        obj = Object.create(closure_1_10.prototype);
+        closure_1_10(self);
         obj.emit("response", obj);
         try {
           if (!obj._isResponseOK(tmp8)) {
-            let str2 = tmp8.statusText;
+            str2 = tmp8.statusText;
             if (!str2) {
               str2 = tmp8.text;
             }
             if (!str2) {
               str2 = "Unsuccessful HTTP response";
             }
-            const error = new Error(str2);
+            error = new Error(str2);
           }
           if (error) {
             error.original = null;
@@ -494,7 +499,7 @@ class Request {
         return btoa(arg0);
       } else {
         const _Error = Error;
-        const error = new Error("Cannot use basic auth, btoa is not a function");
+        error = new Error("Cannot use basic auth, btoa is not a function");
         throw error;
       }
     });
@@ -844,7 +849,7 @@ _exports.getXHR = () => {
     return xMLHttpRequest;
   } else {
     const _Error = Error;
-    const error = new Error("Browser-only version of superagent could not find XHR");
+    error = new Error("Browser-only version of superagent could not find XHR");
     throw error;
   }
 };
@@ -856,9 +861,9 @@ _exports.serializeObject = function serialize(obj) {
     const items = [];
     for (const key10012 in arg0) {
       let tmp4 = key10012;
-      let tmp5 = require;
+      let tmp5 = str2;
       let tmp6 = dependencyMap;
-      let obj2 = require(532) /* _createForOfIteratorHelper */;
+      let obj2 = str2(532);
       if (!obj2.hasOwn(arg0, key10012)) {
         continue;
       } else {
@@ -872,31 +877,30 @@ _exports.serializeObject = function serialize(obj) {
   } else {
     return obj;
   }
-  obj = require(532) /* _createForOfIteratorHelper */;
+  obj = str2(532);
 };
 _exports.parseString = parseString;
 _exports.types = { html: "text/html", json: "application/json", xml: "text/xml", urlencoded: "application/x-www-form-urlencoded", form: "application/x-www-form-urlencoded", "form-data": "application/x-www-form-urlencoded" };
-let obj = { "application/x-www-form-urlencoded": require("module_533").stringify, "application/json": require("defaultOptions") };
+let obj = { "application/x-www-form-urlencoded": _mod533.stringify, "application/json": defaultOptions };
 _exports.serialize = obj;
 obj = { "application/x-www-form-urlencoded": parseString, "application/json": JSON.parse };
 _exports.parse = obj;
-_createForOfIteratorHelper.mixin(Response.prototype, require("ResponseBase").prototype);
+_createForOfIteratorHelper.mixin(Response.prototype, ResponseBase.prototype);
 _exports.Response = Response;
-require("Emitter")(Request.prototype);
-_createForOfIteratorHelper.mixin(Request.prototype, require("RequestBase").prototype);
+Emitter(Request.prototype);
+_createForOfIteratorHelper.mixin(Request.prototype, RequestBase.prototype);
 Request.prototype.ca = Request.prototype.agent;
 Request.prototype.buffer = Request.prototype.ca;
 Request.prototype.pipe = Request.prototype.write;
-_exports.agent = () => new require(583) /* _createForOfIteratorHelper */();
+_exports.agent = () => new str2(583)();
 let items = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"];
 let num = 0;
 let num2 = 0;
 if (0 < items.length) {
   do {
-    let str2 = items[num2];
-    require = str2;
-    require("_createForOfIteratorHelper").prototype[str2.toLowerCase()] = function(arg0, arg1) {
-      const request = new outer1_6.Request(closure_0, arg0);
+    str2 = items[num2];
+    _createForOfIteratorHelper2.prototype[str2.toLowerCase()] = function(arg0, arg1) {
+      const request = new _exports.Request(str2, arg0);
       this._setDefaults(request);
       if (arg1) {
         request.end(arg1);
@@ -924,7 +928,7 @@ function del(arg0, fn) {
   }
   return obj;
 }
-require("_createForOfIteratorHelper").prototype.del = require("_createForOfIteratorHelper").prototype.delete;
+_createForOfIteratorHelper2.prototype.del = _createForOfIteratorHelper2.prototype.delete;
 _exports.get = (arg0, fn) => {
   let tmp = arg2;
   const obj = _exports("GET", arg0);

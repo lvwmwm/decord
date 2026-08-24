@@ -1,13 +1,17 @@
-// Module ID: 13669
-// Function ID: 13670
-// Dependencies: [3, 13670, 13740, 13758, 13761, 13764, 511, 1214, 2]
+// Module ID: 13727
+// Function ID: 13728
+// Dependencies: [3, 13728, 13798, 13816, 13819, 13822, 511, 1214, 2]
 
-// Module 13669
-import timestamp from "_typeof";
-import module_13670 from "module_13670";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _typeof from "_typeof";
-import GetOption from "GetOption";
+// Module 13727
+import set from "set" /* 2 */;
+import Buffer from "Buffer" /* 511 */;
+import q from "q" /* 1214 */;
+import _isNativeReflectConstruct from "_isNativeReflectConstruct" /* 13822 */;
+import timestamp from "timestamp" /* 3 */;
+import module_13728 from "module_13728" /* 13728 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 13798 */;
+import _typeof from "_typeof" /* 13816 */;
+import GetOption from "GetOption" /* 13819 */;
 
 if (typeof process === "undefined") {
   const _window3 = window;
@@ -21,12 +25,12 @@ if (!global.self) {
   global.self = global;
 }
 if (null == window.crypto) {
-  const _module5 = require("_isNativeReflectConstruct");
+  const _module5 = _isNativeReflectConstruct;
   const _window = window;
   window.crypto = global.crypto;
 }
 if (null == global.Buffer) {
-  global.Buffer = require("Buffer").Buffer;
+  global.Buffer = Buffer.Buffer;
 }
 if (null == global.__reanimatedWorkletInit) {
   global.__reanimatedWorkletInit = () => {
@@ -44,6 +48,6 @@ if (tmp7) {
   tmp7 = null != window.TextDecoder;
 }
 if (!tmp7) {
-  const _module6 = require("q");
+  const _module6 = q;
 }
-const result = require("get ActivityIndicator").fileFinishedImporting("polyfillsNative.tsx");
+const result = set.fileFinishedImporting("polyfillsNative.tsx");

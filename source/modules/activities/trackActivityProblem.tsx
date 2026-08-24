@@ -1,23 +1,18 @@
-// Module ID: 16571
-// Function ID: 16572
+// Module ID: 16667
+// Function ID: 16668
 // Name: trackActivityProblem
 // Dependencies: [676, 698, 2]
 // Exports: default
 
-// Module 16571 (trackActivityProblem)
-import { AnalyticEvents } from "ME";
+// Module 16667 (trackActivityProblem)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/trackActivityProblem.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/activities/trackActivityProblem.tsx");
 
 export default function trackActivityProblem(arg0) {
-  let _location;
-  let activityApplication;
-  let analyticsData;
-  let channel;
-  let embeddedActivityLocation;
-  let feedback;
-  let problem;
-  let rating;
   ({ channel, activityApplication, analyticsData } = arg0);
   ({ problem, embeddedActivityLocation, feedback } = arg0);
   if (analyticsData === undefined) {
@@ -27,7 +22,7 @@ export default function trackActivityProblem(arg0) {
   if (rating === undefined) {
     rating = null;
   }
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { reason: problem, guild_id: null, channel_id: null, application_id: null, application_name: null, location: null, rating: null, feedback: null, embedded_activity_location_kind: null, rtc_connection_id: null, media_session_id: null };
   let guildId;
   if (channel != null) {

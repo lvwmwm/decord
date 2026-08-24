@@ -1,55 +1,38 @@
-// Module ID: 16789
-// Function ID: 16790
+// Module ID: 16882
+// Function ID: 16883
 // Name: HeaderRow
-// Dependencies: [5, 32, 19, 17, 16783, 676, 1925, 21, 4661, 712, 8839, 9406, 698, 1236, 514, 4838, 4745, 4734, 589, 2]
+// Dependencies: [5, 32, 19, 17, 16876, 676, 1925, 21, 4668, 712, 8876, 9443, 698, 1236, 514, 4843, 4750, 4739, 589, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 16789 (HeaderRow)
-import closure_3 from "ME";
-import _slicedToArray from "_slicedToArray";
-import set from "set";
-import get_ActivityIndicator from "Text";
-import initialize from "initialize";
-import ME from "ME";
-import { EMOJI_MAX_FILESIZE_KB } from "set";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16882 (HeaderRow)
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_8 from "initialize" /* 16876 */;
+import ME from "ME" /* 676 */;
+import { EMOJI_MAX_FILESIZE_KB } from "set" /* 1925 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_14;
-let closure_15;
-let closure_6;
-let error;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function HeaderRow(guild) {
-  let c4;
-  let c5;
-  let c6;
-  let c7;
-  let dependencyMap;
-  let description;
-  let importDefault;
-  let isUploading;
-  let tmp3;
-  let tmp5;
-  let uploadDisabled;
   guild = guild.guild;
   ({ emojisLength: importDefault, onSelectRolesForEmoji: dependencyMap, uploadDisabled } = guild);
   ({ isUploading, description } = guild);
   if (uploadDisabled === undefined) {
     uploadDisabled = false;
   }
-  let c3;
+  closure_3 = undefined;
   let callback;
   let React;
   c6 = undefined;
   c7 = undefined;
   function _handleImagePicker() {
     const self = this;
-    const tmp = _undefined(function*() {
+    const tmp = lib(function*() {
       if (c8 === 2) {
         c8 = 3;
         HermesBuiltin.throwTypeError();
@@ -61,7 +44,7 @@ function HeaderRow(guild) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -77,26 +60,26 @@ function HeaderRow(guild) {
               return obj;
             } else {
               const callback = tmp3;
-              let closure_3 = tmp7;
-              let closure_0;
+              closure_3 = tmp7;
+              closure_0 = undefined;
               let base64;
               let upload;
-              outer1_4(true);
+              closure_1_4(true);
               v0(null);
-              v02(outer1_0(outer1_2[14]).v4());
+              v02(closure_1_0(closure_1_2[14]).v4());
               v0 = 1;
-              const obj7 = outer1_0(outer1_2[14]);
-              const obj1 = { guild_id: null, upload_id: null };
-              obj1[0] = outer1_0.id;
-              obj1[1] = outer1_6;
-              outer1_1(outer1_2[12]).track(outer1_10.EMOJI_UPLOAD_STARTED, obj1);
-              const obj8 = outer1_1(outer1_2[12]);
+              const obj7 = closure_1_0(closure_1_2[14]);
+              obj1 = { guild_id: null, upload_id: null };
+              obj1[0] = closure_1_0.id;
+              obj1[1] = closure_1_6;
+              closure_1_1(closure_1_2[12]).track(closure_1_10.EMOJI_UPLOAD_STARTED, obj1);
+              const obj8 = closure_1_1(closure_1_2[12]);
               const obj2 = { size: null };
-              obj2[0] = outer1_11;
+              obj2[0] = closure_1_11;
               v02 = 2;
               c8 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = outer1_1(outer1_2[15]).openImagePicker(obj2);
+              obj3[0] = closure_1_1(closure_1_2[15]).openImagePicker(obj2);
               return obj3;
             }
           } else if (1 === tmp7) {
@@ -127,16 +110,16 @@ function HeaderRow(guild) {
                     obj = { guildId: lib.id, image, name: combined, roles, originalMd5 };
                     const uploadEmojiResult = obj.uploadEmoji(obj);
                     obj.uploadEmoji(obj).then(() => {
-                      let obj = outer1_1(outer1_2[12]);
+                      let obj = closure_1_1(closure_1_2[12]);
                       obj = { guild_id: image.id, upload_id: closure_6 };
-                      return obj.track(outer1_10.EMOJI_UPLOAD_COMPLETED, obj);
+                      return obj.track(closure_1_10.EMOJI_UPLOAD_COMPLETED, obj);
                     }).catch((body) => {
                       body = body.body;
                       if (null == body) {
                         if (null != undefined) {
-                          outer1_5(undefined);
+                          closure_1_5(undefined);
                         }
-                      } else if (body.code === outer2_9.TOO_MANY_EMOJI) {
+                      } else if (body.code === closure_2_9.TOO_MANY_EMOJI) {
                         const intl3 = image(upload[13]).intl;
                         let stringResult = intl3.string(image(upload[13]).t["jP/Rqm"]);
                       } else if (body.code === tmp.TOO_MANY_ANIMATED_EMOJI) {
@@ -148,11 +131,11 @@ function HeaderRow(guild) {
                         obj[0] = image.id;
                         const _Buffer = Buffer;
                         obj[1] = Buffer.byteLength(image);
-                        obj[2] = outer1_6;
-                        obj.track(outer2_10.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, obj);
+                        obj[2] = closure_1_6;
+                        obj.track(closure_2_10.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, obj);
                         const intl = image(upload[13]).intl;
                         obj = { maxSize: null };
-                        obj[0] = outer2_12;
+                        obj[0] = closure_2_12;
                         stringResult = intl.formatToPlainString(image(upload[13]).t.kIO9jy, obj);
                       }
                     });
@@ -197,7 +180,7 @@ function HeaderRow(guild) {
         }
       }
     });
-    const _handleImagePicker = tmp;
+    closure_8 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -206,14 +189,14 @@ function HeaderRow(guild) {
     }
     return applyArgumentsResult;
   }
-  let tmp = createCacheKey();
-  c3 = tmp;
+  let tmp = callback3();
+  closure_3 = tmp;
   [tmp3, c4] = callback(React.useState(false), 2);
   const tmp2 = callback(React.useState(false), 2);
   [tmp5, c5] = callback(React.useState(null), 2);
   const tmp4 = callback(React.useState(null), 2);
   [c6, c7] = callback(React.useState(""), 2);
-  let obj = guild(8839);
+  let obj = guild(8876);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
   let intl = guild(1236).intl;
   obj = { id: null, text: null };
@@ -223,7 +206,7 @@ function HeaderRow(guild) {
   let items = [obj, , , ];
   let intl2 = guild(1236).intl;
   obj = { maxSize: EMOJI_MAX_FILESIZE_KB };
-  let obj1 = { id: null, text: null };
+  obj1 = { id: null, text: null };
   let stringResult = intl.string(guild(1236).t.N2qTQ3);
   obj1[0] = "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 2;
   obj1[1] = intl2.formatToPlainString(guild(1236).t.gfAXoR, obj);
@@ -257,7 +240,7 @@ function HeaderRow(guild) {
     const intl5 = tmp7(1236).intl;
     obj5[3] = intl5.string(tmp7(1236).t["DU0dy/"]);
     obj5[4] = uploadDisabled;
-    canCreateExpressions = tmp13(tmp7(4745).Button, obj5);
+    canCreateExpressions = tmp13(tmp7(4750).Button, obj5);
   }
   const items1 = [canCreateExpressions, , ];
   let tmp13Result = null != tmp5;
@@ -265,18 +248,18 @@ function HeaderRow(guild) {
     const obj6 = { style: null, variant: "text-sm/medium", color: "text-feedback-critical", children: null };
     obj6[0] = tmp.errorText;
     obj6[3] = tmp5;
-    tmp13Result = tmp13(tmp7(4734).Text, obj6);
+    tmp13Result = tmp13(tmp7(4739).Text, obj6);
   }
   let obj7 = { children: null };
   items1[1] = tmp13Result;
   let obj8 = { style: tmp.uploadInstructionsContainer, children: null };
-  const items2 = [closure_14(guild(4734).Text, { variant: "text-sm/medium", color: "text-muted", children: description }), , ];
+  const items2 = [closure_14(guild(4739).Text, { variant: "text-sm/medium", color: "text-muted", children: description }), , ];
   const obj9 = { variant: "text-xs/bold", color: "text-muted", style: tmp.uploadInstructionsHeading, children: null };
   const intl6 = tmp7(1236).intl;
   const stringResult2 = intl4.string(guild(1236).t["8Vr5Qd"]);
   const tmp14 = closure_15;
   obj9[3] = intl6.string(guild(1236).t.jrXfyw).toUpperCase();
-  items2[1] = closure_14(guild(4734).Text, obj9);
+  items2[1] = closure_14(guild(4739).Text, obj9);
   items2[2] = closure_14(c7, {
     style: tmp.uploadInstructionsList,
     data: items,
@@ -286,7 +269,7 @@ function HeaderRow(guild) {
     renderItem: function renderUploadInstructionsListItem(item) {
       item = item.item;
       const items = ["\u2022", " ", item.text];
-      return outer1_13(guild(outer1_2[17]).Text, { style: _undefined.uploadListItem, variant: "text-xs/medium", color: "text-muted", accessibilityLabel: item.text, children: items });
+      return closure_1_13(guild(closure_1_2[17]).Text, { style: lib.uploadListItem, variant: "text-xs/medium", color: "text-muted", accessibilityLabel: item.text, children: items });
     }
   });
   obj8[1] = items2;
@@ -299,27 +282,27 @@ function HeaderRow(guild) {
 ({ AbortCodes: c9, AnalyticEvents: c10, UPLOAD_SMALL_SIZE: unpackModuleId } = ME);
 ({ jsxs: map1, jsx: closure_14, Fragment: closure_15 } = jsxProd);
 createCacheKey = { uploadInstructionsContainer: null, uploadInstructionsHeading: null, uploadInstructionsList: null, headerContainer: null, errorText: null, uploadListItem: null };
-createCacheKey = { marginTop: require("Themes").space.PX_12 };
+createCacheKey = { marginTop: ThemesDefault.space.PX_12 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginVertical: require("Themes").space.PX_12 };
+createCacheKey[1] = { marginVertical: ThemesDefault.space.PX_12 };
 createCacheKey[2] = { marginLeft: 8 };
-let obj1 = { marginVertical: require("Themes").space.PX_12 };
-createCacheKey[3] = { paddingTop: require("Themes").space.PX_16 };
-let obj2 = { paddingTop: require("Themes").space.PX_16 };
-createCacheKey[4] = { marginTop: require("Themes").space.PX_8 };
-let obj3 = { marginTop: require("Themes").space.PX_8 };
-createCacheKey[5] = { paddingRight: require("Themes").space.PX_8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj4 = { paddingRight: require("Themes").space.PX_8 };
-const result = require("noop").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalEmoji/HeaderRow.tsx");
+let obj1 = { marginVertical: ThemesDefault.space.PX_12 };
+createCacheKey[3] = { paddingTop: ThemesDefault.space.PX_16 };
+let obj2 = { paddingTop: ThemesDefault.space.PX_16 };
+createCacheKey[4] = { marginTop: ThemesDefault.space.PX_8 };
+let obj3 = { marginTop: ThemesDefault.space.PX_8 };
+createCacheKey[5] = { paddingRight: ThemesDefault.space.PX_8 };
+let closure_16 = createCacheKey.createStyles(createCacheKey);
+let obj4 = { paddingRight: ThemesDefault.space.PX_8 };
+const result = require("set").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalEmoji/HeaderRow.tsx");
 
 export const ConnectedHeaderRow = function ConnectedHeaderRow(arg0) {
   if (arg0 == null) {
     HermesBuiltin.throwTypeError();
   } else {
     const merged = Object.assign(arg0, undefined);
-    let obj = require(589) /* initialize */;
-    const items = [initialize];
+    let obj = initialize;
+    const items = [closure_8];
     obj = { isUploading: null };
     obj[0] = obj.useStateFromStores(items, () => uploadingEmoji.isUploadingEmoji());
     const merged1 = Object.assign(merged);

@@ -4,7 +4,7 @@
 // Dependencies: [1241]
 
 // Module 5120 (registerAsset)
-import registerAsset from "registerAsset";
+import registerAsset from "registerAsset" /* 1241 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "e99a6a1cd140c0c8eecfa7ce5bbe308d", name: "img_account_sync_skype_light_and_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "141e24b0bc4cfc4d58d1cb3b5e32f1dc", name: "img_bungie_dark", type: "png" });

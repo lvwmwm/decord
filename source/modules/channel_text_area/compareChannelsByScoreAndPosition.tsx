@@ -1,12 +1,12 @@
-// Module ID: 7297
-// Function ID: 7298
+// Module ID: 7335
+// Function ID: 7336
 // Name: compareChannelsByScoreAndPosition
 // Dependencies: [1391, 676, 2]
 // Exports: default
 
-// Module 7297 (compareChannelsByScoreAndPosition)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { ChannelTypes } from "ME";
+// Module 7335 (compareChannelsByScoreAndPosition)
+import closure_0 from "ensureGuildLoaded" /* 1391 */;
+import { ChannelTypes } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/channel_text_area/compareChannelsByScoreAndPosition.tsx");
 

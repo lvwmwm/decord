@@ -1,27 +1,31 @@
-// Module ID: 11896
-// Function ID: 11897
+// Module ID: 11945
+// Function ID: 11946
 // Name: shouldShowInviter
-// Dependencies: [32, 19, 17, 11585, 1930, 1922, 676, 11897, 21, 4661, 712, 6289, 4369, 1297, 11832, 4219, 1236, 8548, 4734, 1435, 5449, 698, 589, 11898, 8800, 4745, 6687, 2]
+// Dependencies: [32, 19, 17, 11634, 1930, 1922, 676, 11946, 21, 4668, 712, 6320, 4373, 1297, 11881, 4223, 1236, 8587, 4739, 1435, 5454, 698, 589, 11947, 8837, 4750, 6723, 2]
 // Exports: default
 
-// Module 11896 (shouldShowInviter)
-import _slicedToArray from "_slicedToArray";
-import getAvatarURL from "getAvatarURL";
-import { View } from "getGuildBadgeSource";
-import initialize from "initialize";
-import createdAt from "createdAt";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { INVITE_ROUTING_HUB_GUILD_ID as closure_11 } from "HubEmailConnectionSteps";
-import jsxProd from "expandEventProperties";
-import createCacheKey from "createCacheKey";
+// Module 11945 (shouldShowInviter)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import InviteTypes from "InviteTypes" /* 4373 */;
+import Text from "Text" /* 4739 */;
+import getGuildBadgeSourceDefault from "getGuildBadgeSource" /* 8587 */;
+import renderDefault from "render" /* 11881 */;
+import InviteRolesListDefault from "InviteRolesList" /* 11947 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "initialize" /* 11634 */;
+import closure_7 from "createdAt" /* 1930 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import { INVITE_ROUTING_HUB_GUILD_ID as closure_11 } from "HubEmailConnectionSteps" /* 11946 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_12;
-let closure_14;
-let map1;
-const require = arg1;
+require = arg1;
 function shouldShowInviter(invite, isGuildMember) {
   let tmp = null != invite.inviter;
   if (tmp) {
@@ -60,16 +64,16 @@ function shouldShowInviter(invite, isGuildMember) {
 }
 function InviteDestinationIcon(invite) {
   invite = invite.invite;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let obj = { style: items, children: null };
   items = [tmp.avatarContainer];
   if (obj2.isGroupDMInvite(invite)) {
     if (null != invite.inviter) {
       let tmp2Result = null;
       if (null != invite.inviter) {
-        obj = { avatarStyle: null, user: null, guildId: "Array", size: true };
+        obj = { avatarStyle: null, user: null, guildId: "Array", size: "\u{1F9DC}\u{1F3FC}\u200D\u2640\uFE0F" };
         obj[0] = tmp.avatar;
-        const tmp14 = new createdAt(invite.inviter);
+        const tmp14 = new closure_7(invite.inviter);
         obj[1] = tmp14;
         obj[3] = tmp4(1297).AvatarSizes.XLARGE;
         tmp2Result = tmp2(tmp4(1297).Avatar, obj);
@@ -83,15 +87,15 @@ function InviteDestinationIcon(invite) {
     obj = { style: null, guild: null, size: null, textScale: 2 };
     obj[0] = tmp.avatar;
     obj[1] = invite.guild;
-    obj[2] = importDefault(11832).Sizes.LARGE;
-    tmp2Result = tmp2(importDefault(11832), obj);
-    const tmp9 = importDefault(11832);
+    obj[2] = renderDefault.Sizes.LARGE;
+    tmp2Result = tmp2(renderDefault, obj);
+    const tmp9 = renderDefault;
   }
 }
 function InviteHeader(invite) {
   invite = invite.invite;
-  const tmp = createCacheKey();
-  let obj = require(4369) /* InviteTypes */;
+  const tmp = callback4();
+  let obj = InviteTypes;
   if (obj.isGroupDMInvite(invite)) {
     const channel = invite.channel;
     let name;
@@ -99,7 +103,7 @@ function InviteHeader(invite) {
       name = channel.name;
     }
     if (name == null) {
-      let obj1 = importDefault(4219);
+      obj1 = nameFromUserDefault;
       name = obj1.getFormattedName(invite.inviter);
     }
   } else {
@@ -111,9 +115,9 @@ function InviteHeader(invite) {
   if (tmp2Result.isFriendInvite(invite)) {
     const intl = tmp2(1236).intl;
     obj = { username: null };
-    obj[0] = importDefault(4219).getFormattedName(invite.inviter);
+    obj[0] = nameFromUserDefault.getFormattedName(invite.inviter);
     name = intl.formatToPlainString(tmp2(1236).t["4aF92R"], obj);
-    const obj5 = importDefault(4219);
+    const obj5 = nameFromUserDefault;
   }
   let tmp9 = null;
   if (null != name) {
@@ -122,11 +126,11 @@ function InviteHeader(invite) {
     obj1 = { guild: null, style: null, disableColor: true };
     obj1[0] = invite.guild;
     obj1[1] = tmp.featureIcon;
-    const items = [callback2(importDefault(8548), obj1), ];
+    const items = [callback2(getGuildBadgeSourceDefault, obj1), ];
     const obj2 = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj2[0] = tmp.guildNameText;
     obj2[3] = name;
-    items[1] = callback2(tmp2(4734).Heading, obj2);
+    items[1] = callback2(tmp2(4739).Heading, obj2);
     obj[1] = items;
     tmp9 = callback3(View, obj);
   }
@@ -135,7 +139,7 @@ function InviteHeader(invite) {
 function InviteJoinContext(invite) {
   invite = invite.invite;
   const isGuildMember = invite.isGuildMember;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   const items = [invite, isGuildMember];
   const memo = React.useMemo(() => {
     if (obj.isStreamInvite(invite)) {
@@ -146,7 +150,7 @@ function InviteJoinContext(invite) {
       return userAvatarSource;
     }
     userAvatarSource = null;
-    if (outer1_16(invite, isGuildMember)) {
+    if (closure_1_16(invite, isGuildMember)) {
       userAvatarSource = null;
       if (null != tmp2.inviter) {
         userAvatarSource = isGuildMember(tmp[19]).getUserAvatarSource(tmp2.inviter);
@@ -155,35 +159,35 @@ function InviteJoinContext(invite) {
     }
   }, items);
   const intl = invite(1236).intl;
-  let obj = invite(4369);
+  let obj = invite(4373);
   if (obj.isFriendInvite(invite)) {
     const intl7 = tmp3(1236).intl;
     obj = { username: null };
-    obj[0] = isGuildMember(4219).getFormattedName(invite.inviter);
+    obj[0] = isGuildMember(4223).getFormattedName(invite.inviter);
     let formatResult = intl7.format(tmp3(1236).t.Quj7HX, obj);
-    const obj11 = isGuildMember(4219);
+    const obj11 = isGuildMember(4223);
   } else {
-    let tmp3Result = tmp3(4369);
+    let tmp3Result = tmp3(4373);
     if (tmp3Result.isGroupDMInvite(invite)) {
       if (null != invite.channel) {
         if (null != invite.inviter) {
           const intl6 = tmp3(1236).intl;
           obj = { username: null };
-          obj[0] = isGuildMember(4219).getFormattedName(invite.inviter);
+          obj[0] = isGuildMember(4223).getFormattedName(invite.inviter);
           let formatResult1 = intl6.format(tmp3(1236).t.Lu4h18, obj);
-          const obj9 = isGuildMember(4219);
+          const obj9 = isGuildMember(4223);
         }
         formatResult = formatResult1;
       }
       const intl5 = tmp3(1236).intl;
       formatResult1 = intl5.string(tmp3(1236).t.OsdY8B);
     } else {
-      tmp3Result = tmp3(4369);
+      tmp3Result = tmp3(4373);
       if (tmp3Result.isStreamInvite(invite)) {
         if (null != invite.target_user) {
           const intl4 = tmp3(1236).intl;
-          const obj1 = { username: null };
-          let obj6 = isGuildMember(4219);
+          obj1 = { username: null };
+          let obj6 = isGuildMember(4223);
           obj1[0] = obj6.getFormattedName(invite.target_user);
           formatResult = intl4.formatToPlainString(tmp3(1236).t.x2L32Q, obj1);
         }
@@ -211,7 +215,7 @@ function InviteJoinContext(invite) {
         if (tmp10) {
           const intl2 = tmp3(1236).intl;
           let obj2 = { username: null };
-          let obj4 = isGuildMember(4219);
+          let obj4 = isGuildMember(4223);
           obj2[0] = obj4.getFormattedName(invite.inviter);
           formatResult = intl2.format(tmp3(1236).t.spU2mI, obj2);
         }
@@ -228,20 +232,20 @@ function InviteJoinContext(invite) {
       const obj5 = { source: null, style: null };
       obj5[0] = memo;
       obj5[1] = tmp.inviterIcon;
-      obj4[1] = callback2(isGuildMember(5449), obj5);
+      obj4[1] = callback2(isGuildMember(5454), obj5);
       tmp22 = callback2(tmp21, obj4);
     }
-    tmp3Result1 = tmp3(4369);
+    tmp3Result1 = tmp3(4373);
   }
   const items1 = [tmp22, ];
   obj6 = { style: tmp.inviteJoinText, variant: "text-sm/normal", color: "text-default", children: formatResult };
-  items1[1] = callback2(invite(4734).Text, obj6);
+  items1[1] = callback2(invite(4739).Text, obj6);
   obj3[1] = items1;
   return closure_13(View, obj3);
 }
 function InviteMemberCounts(invite) {
   invite = invite.invite;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   let num = invite.approximate_presence_count;
   if (num == null) {
     num = 0;
@@ -274,15 +278,15 @@ function InviteMemberCounts(invite) {
         let tmp17Result = null;
         if (null != tmp2.onlineCount) {
           obj = { children: null };
-          const obj1 = { style: null };
+          obj1 = { style: null };
           obj1[0] = tmp.dotOnline;
           const items = [callback2(tmp18, obj1), ];
           const obj2 = { variant: "text-xs/medium", color: "text-default", children: null };
-          const intl = require(1236) /* getSystemLocale */.intl;
+          const intl = getSystemLocale.intl;
           const obj3 = { membersOnline: null };
           obj3[0] = tmp2.onlineCount;
-          obj2[2] = intl.format(require(1236) /* getSystemLocale */.t["LC+S+m"], obj3);
-          items[1] = callback2(require(4734) /* Text */.Text, obj2);
+          obj2[2] = intl.format(getSystemLocale.t["LC+S+m"], obj3);
+          items[1] = callback2(Text.Text, obj2);
           obj[0] = items;
           tmp17Result = tmp17(closure_14, obj);
         }
@@ -294,11 +298,11 @@ function InviteMemberCounts(invite) {
           obj5[0] = tmp.dotOffline;
           const items2 = [callback2(tmp18, obj5), ];
           const obj6 = { variant: "text-xs/medium", color: "text-default", children: null };
-          const intl2 = require(1236) /* getSystemLocale */.intl;
+          const intl2 = getSystemLocale.intl;
           const obj7 = { count: null };
           obj7[0] = tmp2.memberCount;
-          obj6[2] = intl2.format(require(1236) /* getSystemLocale */.t.zRl6XR, obj7);
-          items2[1] = callback2(require(4734) /* Text */.Text, obj6);
+          obj6[2] = intl2.format(getSystemLocale.t.zRl6XR, obj7);
+          items2[1] = callback2(Text.Text, obj6);
           obj4[0] = items2;
           tmp17Result = tmp17(closure_14, obj4);
         }
@@ -313,51 +317,46 @@ function InviteMemberCounts(invite) {
 ({ AnalyticEvents: c9, InviteStates: c10 } = ME);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 createCacheKey = { avatar: null, avatarContainer: null, inviteJoinContainer: null, inviteJoinText: null, inviterIconWrapper: null, inviterIcon: null, guildNameContainer: null, guildNameText: null, featureIcon: null, memberInfo: null, rolesList: null, dotOnline: null, dotOffline: null, embedDetailsCard: null };
-createCacheKey = { height: 64, width: 64, margin: 0, borderRadius: require("Themes").radii.lg };
+createCacheKey = { height: 64, width: 64, margin: 0, borderRadius: ThemesDefault.radii.lg };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { borderRadius: require("Themes").radii.none, height: 64, width: 64, marginBottom: 24, marginTop: 24 };
+createCacheKey[1] = { borderRadius: ThemesDefault.radii.none, height: 64, width: 64, marginBottom: 24, marginTop: 24 };
 createCacheKey[2] = { flexDirection: "row", alignItems: "flex-start", marginBottom: 8, marginLeft: 16, marginRight: 16 };
 createCacheKey[3] = { textAlign: "center" };
-let obj1 = { borderRadius: require("Themes").radii.none, height: 64, width: 64, marginBottom: 24, marginTop: 24 };
-createCacheKey[4] = { borderRadius: require("Themes").radii.none, marginRight: 8 };
-let obj2 = { borderRadius: require("Themes").radii.none, marginRight: 8 };
-createCacheKey[5] = { width: 20, height: 20, borderRadius: require("Themes").radii.md };
+let obj1 = { borderRadius: ThemesDefault.radii.none, height: 64, width: 64, marginBottom: 24, marginTop: 24 };
+createCacheKey[4] = { borderRadius: ThemesDefault.radii.none, marginRight: 8 };
+let obj2 = { borderRadius: ThemesDefault.radii.none, marginRight: 8 };
+createCacheKey[5] = { width: 20, height: 20, borderRadius: ThemesDefault.radii.md };
 createCacheKey[6] = { flexDirection: "row", alignItems: "center", marginBottom: 8 };
 createCacheKey[7] = { textAlign: "center" };
-let obj3 = { width: 20, height: 20, borderRadius: require("Themes").radii.md };
+let obj3 = { width: 20, height: 20, borderRadius: ThemesDefault.radii.md };
 createCacheKey[8] = { flexGrow: 0, marginRight: 8, opacity: require("result").DARK_1_LIGHT_04 };
 createCacheKey[9] = { flexDirection: "row", alignItems: "center", marginBottom: 8 };
 createCacheKey[10] = { marginTop: 8, marginBottom: 8, alignItems: "center" };
 let obj4 = { flexGrow: 0, marginRight: 8, opacity: require("result").DARK_1_LIGHT_04 };
-createCacheKey[11] = { width: 8, height: 8, borderRadius: require("Themes").radii.sm, marginRight: 4, backgroundColor: require("Themes").unsafe_rawColors.GREEN_360 };
-let obj5 = { width: 8, height: 8, borderRadius: require("Themes").radii.sm, marginRight: 4, backgroundColor: require("Themes").unsafe_rawColors.GREEN_360 };
-createCacheKey[12] = { width: 8, height: 8, borderRadius: require("Themes").radii.sm, marginRight: 4, marginLeft: 16, backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_400 };
-let obj6 = { width: 8, height: 8, borderRadius: require("Themes").radii.sm, marginRight: 4, marginLeft: 16, backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_400 };
-createCacheKey[13] = { width: "100%", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, padding: 16, borderRadius: require("Themes").radii.sm, marginTop: 16, marginBottom: 8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+createCacheKey[11] = { width: 8, height: 8, borderRadius: ThemesDefault.radii.sm, marginRight: 4, backgroundColor: ThemesDefault.unsafe_rawColors.GREEN_360 };
+let obj5 = { width: 8, height: 8, borderRadius: ThemesDefault.radii.sm, marginRight: 4, backgroundColor: ThemesDefault.unsafe_rawColors.GREEN_360 };
+createCacheKey[12] = { width: 8, height: 8, borderRadius: ThemesDefault.radii.sm, marginRight: 4, marginLeft: 16, backgroundColor: ThemesDefault.unsafe_rawColors.PRIMARY_400 };
+let obj6 = { width: 8, height: 8, borderRadius: ThemesDefault.radii.sm, marginRight: 4, marginLeft: 16, backgroundColor: ThemesDefault.unsafe_rawColors.PRIMARY_400 };
+createCacheKey[13] = { width: "100%", backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, borderRadius: ThemesDefault.radii.sm, marginTop: 16, marginBottom: 8 };
+let closure_15 = createCacheKey.createStyles(createCacheKey);
 let closure_21 = { ACCEPT: 0, [0]: "ACCEPT", DECLINE: 1, [1]: "DECLINE" };
-let obj7 = { width: "100%", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, padding: 16, borderRadius: require("Themes").radii.sm, marginTop: 16, marginBottom: 8 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/accept_invite/native/InviteDetails.tsx");
+let obj7 = { width: "100%", backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, borderRadius: ThemesDefault.radii.sm, marginTop: 16, marginBottom: 8 };
+const result = require("set").fileFinishedImporting("modules/accept_invite/native/InviteDetails.tsx");
 
 export default function InviteDetails(invite) {
-  let c3;
-  let dependencyMap;
-  let importDefault;
-  let isGuildMember;
-  let tmp3;
   invite = invite.invite;
   ({ isGuildMember, onPressJoin: importDefault, onPressClose: dependencyMap } = invite);
   let callback;
   let stateFromStores;
-  const tmp = createCacheKey();
+  const tmp = callback4();
   [tmp3, c3] = callback(stateFromStores.useState(), 2);
   let obj = { invite, isGuildMember, isRegistration: invite.isRegistration };
   const guild_scheduled_event = invite.guild_scheduled_event;
-  let obj1 = invite(589);
-  const items = [mergeGuildAvatar];
+  obj1 = invite(589);
+  const items = [closure_8];
   stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj2 = invite(589);
-  const items1 = [initialize];
+  const items1 = [closure_6];
   let stateFromStores1 = obj2.useStateFromStores(items1, () => canUseMultiAccountMobile.getCanUseMultiAccountMobile());
   obj = {};
   const merged = Object.assign(obj);
@@ -371,20 +370,20 @@ export default function InviteDetails(invite) {
   obj2 = {};
   const merged3 = Object.assign(obj);
   items2[3] = callback2(InviteMemberCounts, obj2);
-  items2[4] = callback2(importDefault(11898), { invite, style: tmp.rolesList });
+  items2[4] = callback2(InviteRolesListDefault, { invite, style: tmp.rolesList });
   let tmp8Result = null != guild_scheduled_event;
   if (tmp8Result) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.embedDetailsCard;
     const obj5 = { event: null };
     obj5[0] = guild_scheduled_event;
-    const items3 = [tmp10(tmp4(8800).GuildEventCardHeader, obj5), , ];
+    const items3 = [tmp10(tmp4(8837).GuildEventCardHeader, obj5), , ];
     const obj6 = { event: null };
     obj6[0] = guild_scheduled_event;
-    items3[1] = tmp10(tmp4(8800).GuildEventCardMetaInfo, obj6);
+    items3[1] = tmp10(tmp4(8837).GuildEventCardMetaInfo, obj6);
     const obj7 = { event: null };
     obj7[0] = guild_scheduled_event;
-    items3[2] = tmp10(tmp4(8800).GuildEventCardGuildInfo, obj7);
+    items3[2] = tmp10(tmp4(8837).GuildEventCardGuildInfo, obj7);
     obj4[1] = items3;
     tmp8Result = tmp8(View, obj4);
   }
@@ -394,14 +393,14 @@ export default function InviteDetails(invite) {
   }
   let userAvatarSource = null;
   if (null != stateFromStores) {
-    userAvatarSource = importDefault(1435).getUserAvatarSource(stateFromStores, false, 20);
-    const tmp15Result = importDefault(1435);
+    userAvatarSource = getAvatarURLDefault.getUserAvatarSource(stateFromStores, false, 20);
+    const tmp15Result = getAvatarURLDefault;
   }
   let tmp10Result;
   if (null != userAvatarSource) {
     const obj8 = { source: null, variant: "entity" };
     obj8[0] = userAvatarSource;
-    tmp10Result = tmp10(tmp4(4745).Button.Icon, obj8);
+    tmp10Result = tmp10(tmp4(4750).Button.Icon, obj8);
   }
   if (null != stateFromStores) {
     const intl = tmp4(1236).intl;
@@ -433,10 +432,10 @@ export default function InviteDetails(invite) {
     }
   }
   function handleAcceptInvitePress() {
-    _undefined(outer1_21.ACCEPT);
+    _undefined(closure_1_21.ACCEPT);
     callback();
   }
-  const items4 = [callback2(invite(4745).Button, { icon: tmp10Result, variant: "primary", size: "lg", text: tmp24, accessibilityLabel: stringResult, onPress: handleAcceptInvitePress, loading: tmp3 === constants2.ACCEPT, disabled: tmp3 === constants2.ACCEPT }), ];
+  const items4 = [callback2(invite(4750).Button, { icon: tmp10Result, variant: "primary", size: "lg", text: tmp24, accessibilityLabel: stringResult, onPress: handleAcceptInvitePress, loading: tmp3 === constants2.ACCEPT, disabled: tmp3 === constants2.ACCEPT }), ];
   const intl4 = tmp4(1236).intl;
   const string = intl4.string;
   const t = tmp4(1236).t;
@@ -447,13 +446,13 @@ export default function InviteDetails(invite) {
   }
   const obj11 = { children: null };
   const obj12 = { children: null };
-  items4[1] = callback2(invite(4745).Button, {
+  items4[1] = callback2(invite(4750).Button, {
     variant: "secondary",
     size: "lg",
     text: stringResult1,
     onPress: function handleCancelPress() {
-      _undefined(outer1_21.DECLINE);
-      let obj = outer1_1(outer1_2[21]);
+      _undefined(closure_1_21.DECLINE);
+      let obj = closure_1_1(closure_1_2[21]);
       obj = { invite_code: invite.code, guild_id: null };
       const guild = invite.guild;
       let id;
@@ -461,14 +460,14 @@ export default function InviteDetails(invite) {
         id = guild.id;
       }
       obj[1] = id;
-      obj.track(outer1_9.INVITE_ACCEPT_DISMISSED, obj);
+      obj.track(closure_1_9.INVITE_ACCEPT_DISMISSED, obj);
       callback2();
     },
     loading: tmp3 === constants2.DECLINE,
     disabled: tmp3 === constants2.DECLINE
   });
   obj12[0] = items4;
-  items2[6] = closure_13(invite(6687).ButtonGroup, obj12);
+  items2[6] = closure_13(invite(6723).ButtonGroup, obj12);
   obj11[0] = items2;
   return closure_13(closure_14, obj11);
 };

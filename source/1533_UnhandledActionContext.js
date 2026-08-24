@@ -4,5 +4,7 @@
 // Dependencies: [19]
 
 // Module 1533 (UnhandledActionContext)
+import noopAll from "noop" /* 19 */;
 
-export const UnhandledActionContext = require("noop").createContext(undefined);
+
+export const UnhandledActionContext = noopAll.createContext(undefined);

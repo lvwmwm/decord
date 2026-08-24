@@ -1,31 +1,36 @@
-// Module ID: 17074
-// Function ID: 17075
+// Module ID: 17167
+// Function ID: 17168
 // Name: platformShowStreamFull
-// Dependencies: [19, 4562, 4524, 4529, 21, 3, 17075, 4656, 17076, 2007, 10938, 9654, 2]
+// Dependencies: [19, 4567, 4529, 4534, 21, 3, 17168, 4662, 17169, 2008, 10977, 9693, 2]
 
-// Module 17074 (platformShowStreamFull)
-import "noop";
-import ApplicationStreamPresets from "ApplicationStreamPresets";
-import { ApplicationStreamPresets } from "RESOLUTION_720";
-import { MediaEngineContextTypes } from "DesktopSources";
-import { jsx } from "jsxProd";
-import "updateRegion";
+// Module 17167 (platformShowStreamFull)
+import timestampDefault from "timestamp" /* 3 */;
+import noopAll from "noop" /* 19 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+import apexExperimentDefault from "apexExperiment" /* 10977 */;
+import updateRegionDefault from "updateRegion" /* 17168 */;
+import closure_3 from "ApplicationStreamPresets" /* 4567 */;
+import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4529 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4534 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let obj = new require("DesktopSources")("ApplicationStreamingManager");
+noopAll;
+let obj = new timestampDefault("ApplicationStreamingManager");
 obj.enableNativeLogger(true);
+updateRegionDefault;
 class ApplicationStreamingManager extends tmp4 {
 }
 const prototype = ApplicationStreamingManager.prototype;
 prototype["platformShowStreamFull"] = function platformShowStreamFull() {
-  let obj = importDefault(4656);
+  obj = _modDef4662;
   obj = {
     importer() {
       return callback(paths[9])(paths[8], paths.paths).then((arg0) => {
-        let closure_0 = arg0.default;
+        closure_0 = arg0.default;
         return (arg0) => {
           const merged = Object.assign(arg0);
-          return outer1_6(closure_0, {});
+          return closure_1_6(closure_0, {});
         };
       });
     }
@@ -33,14 +38,10 @@ prototype["platformShowStreamFull"] = function platformShowStreamFull() {
   obj.openLazy(obj);
 };
 prototype["platformHandleStreamStart"] = function platformHandleStreamStart(sourceId) {
-  let fps;
-  let preset;
-  let resolution;
-  let soundshareEnabled;
   sourceId = sourceId.sourceId;
   if (null != sourceId) {
     let setGoLiveSource = importDefault;
-    let obj = importDefault(10938);
+    obj = apexExperimentDefault;
     if (obj.getConfig({ location: "platformHandleStreamStart" }).showMobileGoLiveUpsell) {
       state = state.getState();
     } else {
@@ -48,20 +49,20 @@ prototype["platformHandleStreamStart"] = function platformHandleStreamStart(sour
       state[0] = ApplicationStreamPresets.PRESET_CUSTOM;
     }
     ({ preset, resolution, fps, soundshareEnabled } = state);
-    setGoLiveSource = setGoLiveSource(9654).setGoLiveSource;
+    setGoLiveSource = setGoLiveSource(9693).setGoLiveSource;
     obj = { desktopSettings: null, qualityOptions: null, context: null };
     obj = { sourceId: null, sound: null };
     obj[0] = sourceId;
     obj[1] = soundshareEnabled;
     obj[0] = obj;
-    const obj1 = { preset: null, resolution: null, frameRate: null };
+    obj1 = { preset: null, resolution: null, frameRate: null };
     obj1[0] = preset;
     obj1[1] = resolution;
     obj1[2] = fps;
     obj[1] = obj1;
     obj[2] = MediaEngineContextTypes.STREAM;
     setGoLiveSource(obj);
-    const setGoLiveSourceResult = setGoLiveSource(9654);
+    const setGoLiveSourceResult = setGoLiveSource(9693);
   } else {
     const _HermesInternal = HermesInternal;
     obj.warn("invalid start_stream: both application + display modes were specified (source-id: " + sourceId + ")");
@@ -71,6 +72,6 @@ prototype["platformHandleVoiceStateUpdate"] = function platformHandleVoiceStateU
 
 };
 const applicationStreamingManager = new ApplicationStreamingManager();
-const result = require("RESOLUTION_720").fileFinishedImporting("modules/go_live/native/ApplicationStreamingManager.tsx");
+const result = require("set").fileFinishedImporting("modules/go_live/native/ApplicationStreamingManager.tsx");
 
 export default applicationStreamingManager;

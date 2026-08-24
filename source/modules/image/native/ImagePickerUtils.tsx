@@ -1,15 +1,18 @@
-// Module ID: 4852
-// Function ID: 4853
+// Module ID: 4857
+// Function ID: 4858
 // Name: isActionPickSupported
 // Dependencies: [1625, 2]
 // Exports: isActionPickSupported, isImageCaptureIntentSupported
 
-// Module 4852 (isActionPickSupported)
-const result = require("set").fileFinishedImporting("modules/image/native/ImagePickerUtils.tsx");
+// Module 4857 (isActionPickSupported)
+import set from "set" /* 2 */;
+import isMetaQuest from "isMetaQuest" /* 1625 */;
+
+const result = set.fileFinishedImporting("modules/image/native/ImagePickerUtils.tsx");
 
 export const isActionPickSupported = function isActionPickSupported() {
-  return !require(1625) /* isMetaQuest */.isMetaQuest();
+  return !isMetaQuest.isMetaQuest();
 };
 export const isImageCaptureIntentSupported = function isImageCaptureIntentSupported() {
-  return !require(1625) /* isMetaQuest */.isMetaQuest();
+  return !isMetaQuest.isMetaQuest();
 };

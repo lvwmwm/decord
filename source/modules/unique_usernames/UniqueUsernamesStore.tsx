@@ -1,15 +1,17 @@
-// Module ID: 14119
-// Function ID: 14120
+// Module ID: 14187
+// Function ID: 14188
 // Name: isRateLimited
 // Dependencies: [1405, 687, 589, 709, 2]
 
-// Module 14119 (isRateLimited)
-import { Store } from "initialize";
+// Module 14187 (isRateLimited)
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import privDefault from "priv" /* 1405 */;
 
 let closure_2 = { taken: null, error: "HermesInternal", rateLimited: null };
-let obj = { validations: null, currentUsernameInvalid: false, retryAfterTime: null, suggestions: null };
-obj[0] = new require("priv")({ max: 100, maxAge: 60000 });
-obj[3] = { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "ct", fetched: "RNSVGFeBlend" } };
+let obj = { validations: new privDefault({ max: 100, maxAge: 60000 }), currentUsernameInvalid: false, retryAfterTime: null, suggestions: { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "ct", fetched: "RNSVGFeBlend" } } };
+const Store = initializeDefault.Store;
 class UniqueUsernamesStore extends Store {
 }
 const prototype = UniqueUsernamesStore.prototype;
@@ -58,9 +60,6 @@ obj = {
     const result = validations.set(taken.username, obj);
   },
   UNIQUE_USERNAME_ATTEMPT_FAILURE: function handleUniqueUsernameAttemptFailure(statusCode) {
-    let error;
-    let retryAfter;
-    let username;
     ({ username, error, retryAfter } = statusCode);
     if (429 === statusCode.statusCode) {
       let validations = obj.validations;
@@ -70,7 +69,7 @@ obj = {
       if (retryAfter == null) {
         num = 7;
       }
-      const result = validations.set(username, obj, num * importDefault(687).Millis.SECOND);
+      const result = validations.set(username, obj, num * setDefault.Millis.SECOND);
       let tmp = obj;
       const tmp3 = obj;
     } else {
@@ -83,7 +82,7 @@ obj = {
     if (null != retryAfter) {
       const _Date = Date;
       const timestamp = Date.now();
-      tmp.retryAfterTime = timestamp + retryAfter * importDefault(687).Millis.SECOND;
+      tmp.retryAfterTime = timestamp + retryAfter * setDefault.Millis.SECOND;
     }
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
@@ -114,8 +113,8 @@ obj = {
     }
   }
 };
-const uniqueUsernamesStore = new UniqueUsernamesStore(require("dispatcher"), obj);
-let tmp2 = new require("priv")({ max: 100, maxAge: 60000 });
-let result = require("initialize").fileFinishedImporting("modules/unique_usernames/UniqueUsernamesStore.tsx");
+const uniqueUsernamesStore = new UniqueUsernamesStore(dispatcherDefault, obj);
+let tmp2 = new privDefault({ max: 100, maxAge: 60000 });
+let result = require("set").fileFinishedImporting("modules/unique_usernames/UniqueUsernamesStore.tsx");
 
 export default uniqueUsernamesStore;

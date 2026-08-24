@@ -1,70 +1,71 @@
-// Module ID: 16042
-// Function ID: 16043
+// Module ID: 16140
+// Function ID: 16141
 // Name: AddModeratorsActionSheet
-// Dependencies: [5, 32, 19, 17, 1910, 8064, 21, 4661, 712, 589, 4984, 4986, 1954, 8851, 4093, 4342, 6950, 6949, 1236, 4745, 8871, 1399, 2]
+// Dependencies: [5, 32, 19, 17, 1910, 8103, 21, 4668, 712, 589, 4989, 4991, 1954, 8888, 4096, 4346, 6988, 6987, 1236, 4750, 8908, 1399, 2]
 // Exports: default
 
-// Module 16042 (AddModeratorsActionSheet)
-import RowType from "RowType";
-import _slicedToArray from "_slicedToArray";
-import Button from "Button";
-import { View } from "RedesignBottomSheetTitleHeaderBase";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { RowType } from "RowType";
-import { jsx } from "Permissions";
-import createCacheKey from "createCacheKey";
+// Module 16140 (AddModeratorsActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_7 from "createGuildRecordFromRust" /* 1910 */;
+import { RowType } from "RowType" /* 8103 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 createCacheKey = { container: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("noop").fileFinishedImporting("modules/stage_channels/native/channel_permissions/AddModeratorsActionSheet.tsx");
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/stage_channels/native/channel_permissions/AddModeratorsActionSheet.tsx");
 
 export default function AddModeratorsActionSheet(channel) {
   channel = channel.channel;
   let first;
   function _handleAddModeratorsPressed() {
     const self = this;
-    const tmp = outer1_3(function*() {
-      let c1 = tmp3;
-      let c0 = 0;
+    const tmp = closure_1_3(function*() {
+      c1 = tmp3;
+      c0 = 0;
       c1 = 0;
       const _Object = Object;
-      const values = Object.values(outer1_1);
+      const values = Object.values(closure_1_1);
       const found = values.filter((row) => null != row.row.id);
-      let c3 = 1;
+      c3 = 1;
       const mapped = found.map((row) => {
         row = row.row;
-        if (row.rowType === outer2_8.ROLE) {
+        if (row.rowType === closure_2_8.ROLE) {
           closure_1 = closure_1 + 1;
-          let moderatorOverwrite = outer2_0(outer2_2[11]).createModeratorOverwrite(row.id, outer2_0(outer2_2[12]).PermissionOverwriteType.ROLE, c0);
-          const obj2 = outer2_0(outer2_2[11]);
+          let moderatorOverwrite = closure_2_0(closure_2_2[11]).createModeratorOverwrite(row.id, closure_2_0(closure_2_2[12]).PermissionOverwriteType.ROLE, c0);
+          const obj2 = closure_2_0(closure_2_2[11]);
         } else {
           closure_0 = closure_0 + 1;
-          moderatorOverwrite = outer2_0(outer2_2[11]).createModeratorOverwrite(row.id, outer2_0(outer2_2[12]).PermissionOverwriteType.MEMBER, c0);
-          const obj = outer2_0(outer2_2[11]);
+          moderatorOverwrite = closure_2_0(closure_2_2[11]).createModeratorOverwrite(row.id, closure_2_0(closure_2_2[12]).PermissionOverwriteType.MEMBER, c0);
+          const obj = closure_2_0(closure_2_2[11]);
         }
         return moderatorOverwrite;
       });
-      yield outer1_0(outer1_2[13]).savePermissionUpdates(outer1_0.id, mapped);
+      yield closure_1_0(closure_1_2[13]).savePermissionUpdates(closure_1_0.id, mapped);
       if (1 === tmp7) {
         c3 = 0;
-        let c5 = 3;
+        c5 = 3;
       } else if (arg0 === 1) {
         c5 = 3;
         throw arg1;
       } else if (arg0 !== 2) {
-        let obj = outer1_0(outer1_2[14]);
+        let obj = closure_1_0(closure_1_2[14]);
         const result = obj.memberOrRoleAddedToast(c1, c0);
-        const obj1 = outer1_1(outer1_2[15]);
+        obj1 = closure_1_1(closure_1_2[15]);
         obj1.hideActionSheet();
         c3 = 0;
       }
       c3 = 0;
       return arg1;
     });
-    const _handleAddModeratorsPressed = tmp;
+    closure_2 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -76,13 +77,13 @@ export default function AddModeratorsActionSheet(channel) {
   const tmp2 = callback(React.useState({}), 2);
   first = tmp2[0];
   let obj = channel(_handleAddModeratorsPressed[9]);
-  const items = [createGuildRecordFromRust];
+  const items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let guildId;
     if (channel != null) {
       guildId = channel.getGuildId();
     }
-    return outer1_7.getGuild(guildId);
+    return closure_1_7.getGuild(guildId);
   });
   let str = first(_handleAddModeratorsPressed[10])(channel, true);
   if (str == null) {
@@ -107,7 +108,7 @@ export default function AddModeratorsActionSheet(channel) {
         };
         let obj4 = obj;
       }
-      let obj1 = { scrollable: true, header: null, startExpanded: true, children: null };
+      obj1 = { scrollable: true, header: null, startExpanded: true, children: null };
       obj[2] = tmp12(tmp13, obj4);
       obj1[1] = tmp12(tmp4(tmp5[17]).BottomSheetTitleHeader, obj);
       let obj2 = { style: null, children: null };

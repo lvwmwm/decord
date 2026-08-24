@@ -3,7 +3,7 @@
 // Dependencies: [1690, 1724, 1771, 1782, 1789]
 
 // Module 1770
-import startObservingProgress from "startObservingProgress";
+import startObservingProgress from "startObservingProgress" /* 1690 */;
 
 for (const key10015 in require("BaseAnimationBuilder")) {
   let tmp3 = key10015;

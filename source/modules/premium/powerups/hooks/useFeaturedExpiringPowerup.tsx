@@ -1,21 +1,21 @@
-// Module ID: 11675
-// Function ID: 11676
+// Module ID: 11724
+// Function ID: 11725
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 4282, 4261, 589, 11676, 5313, 2]
+// Dependencies: [19, 4286, 4265, 589, 11725, 5318, 2]
 // Exports: default
 
-// Module 11675 (useFeaturedExpiringPowerup)
-import noop from "noop";
-import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
-import calculateAppliedBoosts from "calculateAppliedBoosts";
+// Module 11724 (useFeaturedExpiringPowerup)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "handleGameServerInstanceCreated" /* 4286 */;
+import closure_4 from "calculateAppliedBoosts" /* 4265 */;
 
 const require = arg1;
-const result = require("calculateAppliedBoosts").fileFinishedImporting("modules/premium/powerups/hooks/useFeaturedExpiringPowerup.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useFeaturedExpiringPowerup.tsx");
 
 export default function useFeaturedExpiringPowerup(arg0) {
   const _require = arg0;
-  let items = [calculateAppliedBoosts];
-  stateFromStores = _require(stateFromStores[3]).useStateFromStores(items, () => outer1_4.getStateForGuild(closure_0));
+  let items = [closure_4];
+  stateFromStores = _require(stateFromStores[3]).useStateFromStores(items, () => closure_1_4.getStateForGuild(closure_0));
   let obj = _require(stateFromStores[3]);
   const items1 = [expiringPowerupCoachmarkEnabled];
   const stateFromStores1 = _require(stateFromStores[3]).useStateFromStores(items1, () => expiringPowerupCoachmarkEnabled.getStateForGuild(closure_0));

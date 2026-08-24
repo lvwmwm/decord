@@ -1,23 +1,17 @@
-// Module ID: 13496
-// Function ID: 13497
+// Module ID: 13554
+// Function ID: 13555
 // Name: MenuItem
-// Dependencies: [19, 21, 4661, 13494, 4747, 6937, 6940, 2]
+// Dependencies: [19, 21, 4668, 13552, 4752, 6975, 6978, 2]
 
-// Module 13496 (MenuItem)
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13554 (MenuItem)
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let c3 = importAllResult;
 let closure_5 = createCacheKey.createStyles({ formIcon: { width: 20, height: 20 }, formLabel: { fontSize: 14, fontWeight: "500" } });
 const forwardRefResult = importAllResult.forwardRef((action, ref) => {
-  let IconComponent;
-  let disabled;
-  let iconSource;
-  let label;
-  let showIconFirst;
-  let style;
   ({ label, IconComponent, iconSource, showIconFirst } = action);
   if (showIconFirst === undefined) {
     showIconFirst = false;
@@ -29,7 +23,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   action = action.action;
   let menuClose;
   const tmp = callback();
-  menuClose = importAllResult.useContext(action(13494).MenuContext).menuClose;
+  menuClose = importAllResult.useContext(action(13552).MenuContext).menuClose;
   if (null != IconComponent) {
     let tmp3 = <IconComponent size="sm" />;
   } else {
@@ -38,7 +32,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
       let obj = { source: null, style: null };
       obj[0] = iconSource;
       obj[1] = tmp.formIcon;
-      tmp3 = jsx(menuClose(4747), { source: null, style: null });
+      tmp3 = jsx(menuClose(4752), { source: null, style: null });
     }
   }
   obj = { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null };
@@ -63,15 +57,15 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
     obj = { text: null, style: null };
     obj[0] = label;
     obj[1] = tmp.formLabel;
-    tmp7Result = tmp7(menuClose(6940), obj);
+    tmp7Result = tmp7(menuClose(6978), obj);
   }
   obj[6] = tmp7Result;
   obj[7] = function onPress() {
     action();
     menuClose();
   };
-  return jsx(menuClose(6937), { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null });
+  return jsx(menuClose(6975), { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null });
 });
-const result = require("createCacheKey").fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
+const result = require("set").fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
 
 export const MenuItem = forwardRefResult;

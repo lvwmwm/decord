@@ -1,30 +1,32 @@
-// Module ID: 15862
-// Function ID: 15863
-// Dependencies: [19, 17, 21, 4661, 5441, 1351, 4734, 2]
+// Module ID: 15959
+// Function ID: 15960
+// Dependencies: [19, 17, 21, 4668, 5446, 1351, 4739, 2]
 
-// Module 15862
-import importAllResult from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15959
+import Text from "Text" /* 4739 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5446 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let require = arg1;
+require = arg1;
 let c3 = importAllResult;
 let closure_6 = createCacheKey.createStyles({ container: { justifyContent: "center", alignItems: "center", height: "100%", display: "flex" }, text: { textAlign: "center", width: "75%" } });
 const memoResult = importAllResult.memo((text) => {
   text = text.text;
-  const require = text;
+  require = text;
   const tmp = callback();
   const items = [text];
   const effect = importAllResult.useEffect(() => {
-    const AccessibilityAnnouncer = text(outer1_2[5]).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = text(closure_1_2[5]).AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(closure_0, "polite");
   }, items);
-  obj = { style: items1, children: jsx(require(4734) /* Text */.Text, obj) };
-  items1 = [tmp.container, { paddingBottom: importDefault(5441)({ includeKeyboardHeight: true }).insets.bottom }];
+  obj = { style: items1, children: jsx(Text.Text, obj) };
+  items1 = [tmp.container, { paddingBottom: useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets.bottom }];
   obj = { variant: "text-sm/medium", color: "text-muted", style: tmp.text, children: text };
   return <View variant="text-sm/medium" color="text-muted" style={tmp.text}>{text}</View>;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/tabs/pages/ErrorScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/search/native/components/tabs/pages/ErrorScreen.tsx");
 
 export default memoResult;

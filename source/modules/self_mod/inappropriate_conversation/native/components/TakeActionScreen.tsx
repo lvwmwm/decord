@@ -1,63 +1,53 @@
-// Module ID: 15176
-// Function ID: 15177
+// Module ID: 15240
+// Function ID: 15241
 // Name: TakeActionButtons
-// Dependencies: [5, 32, 19, 17, 4030, 1922, 10569, 21, 4661, 712, 589, 10603, 10606, 1500, 9736, 6553, 10582, 8136, 4094, 1236, 4335, 4093, 4745, 10614, 9436, 6851, 6694, 4090, 4734, 2]
+// Dependencies: [5, 32, 19, 17, 4033, 1922, 10608, 21, 4668, 712, 589, 10642, 10645, 1500, 9775, 6584, 10621, 8175, 4097, 1236, 4339, 4096, 4750, 10653, 9473, 6889, 6730, 4093, 4739, 2]
 // Exports: default
 
-// Module 15176 (TakeActionButtons)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import _slicedToArray from "_slicedToArray";
-import getSystemLocale from "getSystemLocale";
-import { useState } from "getSystemLocale";
-import { View } from "_submitHamReportForFirstDM";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import closure_9 from "mergeGuildAvatar";
-import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
-import jsxProd from "presentAddedFriendToast";
-import createCacheKey from "createCacheKey";
+// Module 15240 (TakeActionButtons)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { useState } from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_8 from "markAllUserIdListsStale" /* 4033 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 10608 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let closure_12;
-let closure_14;
-let closure_15;
-let closure_16;
-let map1;
-let unpackModuleId;
 const require = arg1;
 ({ MODAL_LOCATION_CONTEXT_MOBILE: c10, NOFILTR_URL: unpackModuleId, THROUGHLINE_URL: closure_12, REPORTED_USER_CONFIRMATION_TOAST_KEY: map1, TOAST_CHECKMARK_ICON_COLOR: closure_14 } = LOCATION_CONTEXT_MOBILE);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
 createCacheKey = { container: null, toastContainer: null, helplineGroup: null, textCenter: null };
-createCacheKey = { display: "flex", alignItems: "center", alignSelf: "stretch", gap: require("Themes").space.PX_16 };
+createCacheKey = { display: "flex", alignItems: "center", alignSelf: "stretch", gap: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_12 };
-let obj1 = { paddingHorizontal: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_12 };
-createCacheKey[2] = { display: "flex", alignSelf: "stretch", gap: require("Themes").space.PX_4 };
+createCacheKey[1] = { paddingHorizontal: ThemesDefault.space.PX_8, paddingVertical: ThemesDefault.space.PX_12 };
+let obj1 = { paddingHorizontal: ThemesDefault.space.PX_8, paddingVertical: ThemesDefault.space.PX_12 };
+createCacheKey[2] = { display: "flex", alignSelf: "stretch", gap: ThemesDefault.space.PX_4 };
 createCacheKey[3] = { textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj2 = { display: "flex", alignSelf: "stretch", gap: require("Themes").space.PX_4 };
-let result = require("noop").fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/components/TakeActionScreen.tsx");
+let closure_17 = createCacheKey.createStyles(createCacheKey);
+let obj2 = { display: "flex", alignSelf: "stretch", gap: ThemesDefault.space.PX_4 };
+let result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/components/TakeActionScreen.tsx");
 
 export default function TakeActionButtons(senderId) {
-  let c6;
-  let isReported;
-  let setReported;
-  let tmp8;
   senderId = senderId.senderId;
   const channelId = senderId.channelId;
   ({ isReported, setReported } = senderId);
   const trackAnalyticsEvent = senderId.trackAnalyticsEvent;
   let callback;
   let lastChannelMessage;
-  let useState;
-  let closure_7;
-  let markAllUserIdListsStale;
-  const tmp = createCacheKey();
+  useState = undefined;
+  closure_7 = undefined;
+  closure_8 = undefined;
+  const tmp = callback2();
   callback = tmp;
   let obj = senderId(setReported[10]);
-  const items = [markAllUserIdListsStale];
+  const items = [closure_8];
   const items1 = [senderId];
   const stateFromStores = obj.useStateFromStores(items, () => blocked.isBlocked(senderId), items1);
-  let obj1 = senderId(setReported[11]);
+  obj1 = senderId(setReported[11]);
   lastChannelMessage = obj1.useLastChannelMessage(channelId);
   let obj2 = senderId(setReported[12]);
   const shouldShowHelplineLink = obj2.useShouldShowHelplineLink();
@@ -69,22 +59,22 @@ export default function TakeActionButtons(senderId) {
   const shouldShowThroughlineLink = obj4.useShouldShowThroughlineLink();
   callback = lastChannelMessage.useCallback(() => {
     let obj = channelId(setReported[14]);
-    obj = { location: outer1_10 };
+    obj = { location: closure_1_10 };
     obj.blockUser(senderId, obj).then(() => {
-      const result = outer1_1(outer1_2[15]).showBlockSuccessToast(closure_0, closure_1);
+      const result = closure_1_1(closure_1_2[15]).showBlockSuccessToast(closure_0, closure_1);
     });
     trackAnalyticsEvent(senderId(setReported[16]).CtaEventTypes.USER_TAKEOVER_MODAL_BLOCK);
   }, items2);
   const items3 = [senderId, channelId, trackAnalyticsEvent];
   const callback1 = lastChannelMessage.useCallback(() => {
     let obj = channelId(setReported[14]);
-    obj = { location: outer1_10 };
+    obj = { location: closure_1_10 };
     obj.unblockUser(senderId, obj);
     const result = channelId(setReported[15]).showUnblockSuccessToast(senderId, channelId);
     trackAnalyticsEvent(senderId(setReported[16]).CtaEventTypes.USER_TAKEOVER_MODAL_UNBLOCK);
   }, items3);
   const items4 = [senderId, channelId, tmp.toastContainer, setReported, lastChannelMessage, trackAnalyticsEvent];
-  markAllUserIdListsStale = lastChannelMessage.useCallback(trackAnalyticsEvent(function*() {
+  closure_8 = lastChannelMessage.useCallback(trackAnalyticsEvent(function*() {
     if (dependencyMap === 2) {
       dependencyMap = 3;
       HermesBuiltin.throwTypeError();
@@ -96,7 +86,7 @@ export default function TakeActionButtons(senderId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -111,26 +101,26 @@ export default function TakeActionButtons(senderId) {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_0 = tmp4;
-            if (null != outer1_9.getUser(outer1_0)) {
-              outer1_6(true);
-              let obj2 = outer1_0(8136);
+            closure_0 = tmp4;
+            if (null != closure_1_9.getUser(closure_1_0)) {
+              closure_1_6(true);
+              let obj2 = closure_1_0(8175);
               v0 = 1;
               dependencyMap = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = obj2.submitReportForInappropriateConversationSafetyAlert(outer1_5, () => {
+              obj1 = { value: null, done: false };
+              obj1[0] = obj2.submitReportForInappropriateConversationSafetyAlert(closure_1_5, () => {
                 dependencyMap(true);
-                let obj = v1(4094);
-                obj = { key: outer1_13, content: null, IconComponent: null, iconColor: null, containerStyle: null };
+                let obj = v1(4097);
+                obj = { key: closure_1_13, content: null, IconComponent: null, iconColor: null, containerStyle: null };
                 const intl = tmp4(1236).intl;
                 obj[1] = intl.string(tmp4(1236).t.gn2c6X);
-                obj[2] = tmp4(4335).CircleCheckIcon;
-                obj[3] = outer1_14;
+                obj[2] = tmp4(4339).CircleCheckIcon;
+                obj[3] = closure_1_14;
                 obj[4] = toastContainer.toastContainer;
                 obj.open(obj);
               }, () => {
                 const intl = tmp4(1236).intl;
-                tmp4(4093).presentFailedToast(intl.string(tmp4(1236).t["0YV04/"]));
+                tmp4(4096).presentFailedToast(intl.string(tmp4(1236).t["0YV04/"]));
               });
               return obj1;
             } else {
@@ -142,9 +132,9 @@ export default function TakeActionButtons(senderId) {
           throw arg1;
         } else if (arg0 !== 2) {
           callback2(false);
-          obj = v0(6553);
+          obj = v0(6584);
           const result = obj.showReportSuccessToast(closure_0, v0);
-          callback(outer1_0(10582).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
+          callback(closure_1_0(10621).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         dependencyMap = 3;
         obj2 = { value: null, done: true };
@@ -157,8 +147,7 @@ export default function TakeActionButtons(senderId) {
     }
   }), items4);
   obj = { style: tmp.container, children: null };
-  obj = { variant: "primary", size: "lg", icon: null, text: null, grow: true, onPress: null };
-  obj[2] = channelId(setReported[23]);
+  obj = { variant: "primary", size: "lg", icon: channelId(setReported[23]), text: null, grow: true, onPress: null };
   let intl = senderId(setReported[19]).intl;
   const string = intl.string;
   const t = senderId(setReported[19]).t;
@@ -173,10 +162,7 @@ export default function TakeActionButtons(senderId) {
   }
   obj[5] = callback;
   const items5 = [closure_15(senderId(setReported[22]).Button, obj), , ];
-  obj1 = { variant: "secondary", size: "lg", icon: null, loading: null, disabled: null, text: null, grow: true, onPress: null };
-  obj1[2] = channelId(setReported[24]);
-  obj1[3] = tmp8;
-  obj1[4] = isReported;
+  obj1 = { variant: "secondary", size: "lg", icon: tmp15(tmp3[24]), loading: tmp8, disabled: isReported, text: null, grow: true, onPress: null };
   const intl2 = tmp2(tmp3[19]).intl;
   const string2 = intl2.string;
   const t2 = tmp2(tmp3[19]).t;
@@ -211,7 +197,7 @@ export default function TakeActionButtons(senderId) {
     if (shouldShowThroughlineLink) {
       obj4[3] = string3(t3.HQ2nKl);
       obj4[5] = function onPress() {
-        channelId(setReported[27]).openURL(outer1_12);
+        channelId(setReported[27]).openURL(closure_1_12);
         trackAnalyticsEvent(senderId(setReported[16]).CtaEventTypes.USER_TAKEOVER_MODAL_THROUGHLINE);
       };
       const items6 = [tmp14(Button, obj4), ];
@@ -225,7 +211,7 @@ export default function TakeActionButtons(senderId) {
     } else {
       obj4[3] = string3(t3["65XQar"]);
       obj4[5] = function onPress() {
-        channelId(setReported[27]).openURL(outer1_11);
+        channelId(setReported[27]).openURL(closure_1_11);
         trackAnalyticsEvent(senderId(setReported[16]).CtaEventTypes.USER_TAKEOVER_MODAL_NO_FILTR);
       };
       const items7 = [tmp14(Button, obj4), ];

@@ -1,18 +1,18 @@
-// Module ID: 16109
-// Function ID: 16110
+// Module ID: 16207
+// Function ID: 16208
 // Name: MessageRequestsScreen
-// Dependencies: [19, 21, 16107, 2]
+// Dependencies: [19, 21, 16205, 2]
 // Exports: default
 
-// Module 16109 (MessageRequestsScreen)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 16207 (MessageRequestsScreen)
+import closure_2 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const result = require("PendingSpamMessageRequestRow").fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsSpamScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsSpamScreen.tsx");
 
 export default function MessageRequestsScreen(navigation) {
   navigation = navigation.navigation;
   const items = [navigation];
   const goToMessageRequestPreview = React.useCallback((channelId) => navigation.push("preview", { channelId }), items);
-  return jsx(navigation(16107), { goToMessageRequestPreview });
+  return jsx(navigation(16205), { goToMessageRequestPreview });
 };

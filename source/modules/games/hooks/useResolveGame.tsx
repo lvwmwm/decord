@@ -1,18 +1,16 @@
-// Module ID: 9523
-// Function ID: 9524
+// Module ID: 9560
+// Function ID: 9561
 // Name: useResolveGame
-// Dependencies: [19, 7145, 5378, 2]
+// Dependencies: [19, 7183, 5383, 2]
 // Exports: default
 
-// Module 9523 (useResolveGame)
-import noop from "noop";
+// Module 9560 (useResolveGame)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("importDefaultResult1").fileFinishedImporting("modules/games/hooks/useResolveGame.tsx");
+const result = require("set").fileFinishedImporting("modules/games/hooks/useResolveGame.tsx");
 
 export default function useResolveGame(arg0) {
-  let applicationId;
-  let gameId;
   ({ applicationId, gameId } = arg0);
   let getOrFetchApplication;
   let obj = gameId(getOrFetchApplication[1]);

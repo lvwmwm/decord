@@ -1,15 +1,15 @@
-// Module ID: 15839
-// Function ID: 15840
+// Module ID: 15908
+// Function ID: 15909
 // Name: useSortedMemberApplications
-// Dependencies: [19, 7428, 589, 4200, 2]
+// Dependencies: [19, 7466, 589, 4204, 2]
 // Exports: useSortedMemberApplications
 
-// Module 15839 (useSortedMemberApplications)
-import noop from "noop";
-import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
+// Module 15908 (useSortedMemberApplications)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "updateSubmittedGuildJoinRequestTotal" /* 7466 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/guild_member_verification/hooks/useSortedMemberApplications.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/useSortedMemberApplications.tsx");
 
 export const useSortedMemberApplications = function useSortedMemberApplications(guildId) {
   guildId = guildId.guildId;

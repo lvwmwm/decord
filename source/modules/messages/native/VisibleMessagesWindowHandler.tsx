@@ -1,12 +1,14 @@
-// Module ID: 10547
-// Function ID: 10548
+// Module ID: 10586
+// Function ID: 10587
 // Name: Changeset
-// Dependencies: [8158, 2]
+// Dependencies: [8197, 2]
 
-// Module 10547 (Changeset)
-import { RowType } from "Changeset";
+// Module 10586 (Changeset)
+import set from "set" /* 2 */;
+import Changeset from "Changeset" /* 8197 */;
 
-const result = require("set").fileFinishedImporting("modules/messages/native/VisibleMessagesWindowHandler.tsx");
+const RowType = Changeset.RowType;
+const result = set.fileFinishedImporting("modules/messages/native/VisibleMessagesWindowHandler.tsx");
 
 export default function VisibleMessagesWindowHandler() {
   let obj = Object.create(new.target.prototype);
@@ -23,9 +25,6 @@ export default function VisibleMessagesWindowHandler() {
     obj.data = null;
   };
   obj.handleScrollPosition = function handleScrollPosition(arg0) {
-    let firstVisibleMessageRowIndex;
-    let lastVisibleMessageRowIndex;
-    let rows;
     ({ rows, firstVisibleMessageRowIndex, lastVisibleMessageRowIndex } = arg0);
     if (null != obj.callback) {
       let tmp2 = null;

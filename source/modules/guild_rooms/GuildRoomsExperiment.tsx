@@ -1,14 +1,15 @@
-// Module ID: 9882
-// Function ID: 9883
+// Module ID: 9921
+// Function ID: 9922
 // Name: experiment
-// Dependencies: [4286, 2]
+// Dependencies: [4290, 2]
 
-// Module 9882 (experiment)
-import createExperiment from "createExperiment";
+// Module 9921 (experiment)
+import set from "set" /* 2 */;
+import createExperiment from "createExperiment" /* 4290 */;
 
 const items = [{ id: 1, label: "Enable Guild Rooms in this guild", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 2, label: "Enable Guild Rooms without Interactions", config: { enabled: true, interactionsEnabled: false, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 3, label: "Enable Guild Rooms with Room Variants", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: true, posturesEnabled: true } }, { id: 4, label: "Enable Guild Rooms without Postures", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: false } }];
 const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-06_guild_rooms", label: "Guild Rooms", defaultConfig: { enabled: false, interactionsEnabled: false, multipleRoomsEnabled: false, posturesEnabled: false }, treatments: items });
-const result = require("set").fileFinishedImporting("modules/guild_rooms/GuildRoomsExperiment.tsx");
+const result = set.fileFinishedImporting("modules/guild_rooms/GuildRoomsExperiment.tsx");
 
 export default experiment;
 export const GUILD_ROOMS_EXPERIMENT_ID = "2026-06_guild_rooms";

@@ -5,15 +5,20 @@
 // Exports: _INTERNAL_captureMetric, _INTERNAL_getMetricBuffer
 
 // Module 885 (_INTERNAL_captureSerializedMetric)
-import _slicedToArray from "_slicedToArray";
+import __SENTRY_DEBUG__ from "__SENTRY_DEBUG__" /* 823 */;
+import getGlobalSingleton from "getGlobalSingleton" /* 825 */;
+import getClient from "getClient" /* 848 */;
+import mergeScopeData from "mergeScopeData" /* 871 */;
+import createMetricContainerEnvelopeItem from "createMetricContainerEnvelopeItem" /* 886 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
 function _INTERNAL_captureSerializedMetric(closure_0) {
-  const globalSingleton = require(825) /* getGlobalSingleton */.getGlobalSingleton("clientToMetricBufferMap", () => {
+  const globalSingleton = getGlobalSingleton.getGlobalSingleton("clientToMetricBufferMap", () => {
     const weakMap = new WeakMap();
     return weakMap;
   });
-  const obj = require(825) /* getGlobalSingleton */;
-  const globalSingleton1 = require(825) /* getGlobalSingleton */.getGlobalSingleton("clientToMetricBufferMap", () => {
+  const obj = getGlobalSingleton;
+  const globalSingleton1 = getGlobalSingleton.getGlobalSingleton("clientToMetricBufferMap", () => {
     const weakMap = new WeakMap();
     return weakMap;
   });
@@ -32,52 +37,42 @@ function _INTERNAL_captureSerializedMetric(closure_0) {
   }
 }
 function _INTERNAL_flushMetricsBuffer(closure_0, value) {
-  let _metadata;
-  let tunnel;
   let items = value;
   if (value == null) {
-    const globalSingleton = require(825) /* getGlobalSingleton */.getGlobalSingleton("clientToMetricBufferMap", () => {
+    const globalSingleton = getGlobalSingleton.getGlobalSingleton("clientToMetricBufferMap", () => {
       const weakMap = new WeakMap();
       return weakMap;
     });
     items = globalSingleton.get(closure_0);
-    const obj = require(825) /* getGlobalSingleton */;
+    const obj = getGlobalSingleton;
   }
   if (items == null) {
     items = [];
   }
   if (0 !== items.length) {
     const options = closure_0.getOptions();
-    const obj3 = require(886) /* createMetricContainerEnvelopeItem */;
+    const obj3 = createMetricContainerEnvelopeItem;
     ({ _metadata, tunnel } = options);
     const metricEnvelope = obj3.createMetricEnvelope(items, _metadata, tunnel, closure_0.getDsn());
-    const globalSingleton1 = require(825) /* getGlobalSingleton */.getGlobalSingleton("clientToMetricBufferMap", () => {
+    const globalSingleton1 = getGlobalSingleton.getGlobalSingleton("clientToMetricBufferMap", () => {
       const weakMap = new WeakMap();
       return weakMap;
     });
     const result = globalSingleton1.set(closure_0, []);
     closure_0.emit("flushMetrics");
     closure_0.sendEnvelope(metricEnvelope);
-    const obj4 = require(825) /* getGlobalSingleton */;
+    const obj4 = getGlobalSingleton;
   }
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attributes, scope) {
-  let _experiments;
-  let beforeSendMetric;
-  let enableMetrics;
-  let environment;
-  let name;
-  let release;
-  let user;
-  let version;
   scope = undefined;
   if (scope != null) {
     scope = scope.scope;
   }
   if (scope == null) {
-    let obj = require(848) /* getClient */;
+    let obj = getClient;
     scope = obj.getCurrentScope();
   }
   let prop;
@@ -92,7 +87,7 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
     client = scope.getClient();
   }
   if (client == null) {
-    let obj1 = require(848) /* getClient */;
+    obj1 = getClient;
     client = obj1.getClient();
   }
   if (client) {
@@ -105,7 +100,7 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
       }
       if (enableMetrics != null) {
         if (!enableMetrics) {
-          if (require(823) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
+          if (__SENTRY_DEBUG__.DEBUG_BUILD) {
             const debug2 = tmp13(824).debug;
             debug2.warn("metrics option not enabled, metric will not be captured.");
           }
@@ -113,8 +108,8 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
         }
       }
     }
-    let obj2 = require(871) /* mergeScopeData */;
-    const combinedScopeData = obj2.getCombinedScopeData(require(848) /* getClient */.getIsolationScope(), scope);
+    let obj2 = mergeScopeData;
+    const combinedScopeData = obj2.getCombinedScopeData(getClient.getIsolationScope(), scope);
     ({ user, attributes } = combinedScopeData);
     const options1 = client.getOptions();
     ({ release, environment } = options1);
@@ -221,7 +216,7 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
     }
     if (beforeSendMetricResult) {
       let tmp17Result = tmp17(881);
-      const tmp37 = _slicedToArray(tmp17Result._getTraceInfoFromScope(client, scope), 2)[1];
+      const tmp37 = callback(tmp17Result._getTraceInfoFromScope(client, scope), 2)[1];
       tmp17Result = tmp17(844);
       const _getSpanForScopeResult = tmp17Result._getSpanForScope(scope);
       if (_getSpanForScopeResult) {
@@ -258,9 +253,9 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
       const debug3 = tmp17(824).debug;
       debug3.log("`beforeSendMetric` returned `null`, will not send metric.");
     }
-    const obj4 = require(848) /* getClient */;
+    const obj4 = getClient;
   } else {
-    if (require(823) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
+    if (__SENTRY_DEBUG__.DEBUG_BUILD) {
       const debug = tmp8(824).debug;
       debug.warn("No client available to capture metric.");
     }
@@ -270,7 +265,7 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
 export { _INTERNAL_captureSerializedMetric };
 export { _INTERNAL_flushMetricsBuffer };
 export const _INTERNAL_getMetricBuffer = function _INTERNAL_getMetricBuffer(arg0) {
-  const globalSingleton = require(825) /* getGlobalSingleton */.getGlobalSingleton("clientToMetricBufferMap", () => {
+  const globalSingleton = getGlobalSingleton.getGlobalSingleton("clientToMetricBufferMap", () => {
     const weakMap = new WeakMap();
     return weakMap;
   });

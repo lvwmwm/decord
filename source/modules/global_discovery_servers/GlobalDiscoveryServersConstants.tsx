@@ -1,13 +1,15 @@
-// Module ID: 8876
-// Function ID: 8877
+// Module ID: 8913
+// Function ID: 8914
 // Name: DEFAULT_DISCOVERY_CATEGORY_ID
 // Dependencies: [687, 1236, 2]
 // Exports: getLanguageOptions
 
-// Module 8876 (DEFAULT_DISCOVERY_CATEGORY_ID)
-import set from "set";
+// Module 8913 (DEFAULT_DISCOVERY_CATEGORY_ID)
+import setDefault from "set" /* 687 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 let obj = { FEATURED: "featured", GAMING: "gaming", MUSIC: "music", ENTERTAINMENT: "entertainment", TECH: "tech", EDUCATION: "education", HUBS: "hubs" };
 const items = [obj.HUBS];
 let set = new Set(items);
@@ -15,7 +17,7 @@ obj = { Clans: -3, [-3]: "Clans", Hub: -2, [-2]: "Hub", Communities: -1, [-1]: "
 const items1 = [, , , , ];
 ({ Activity: arr2[0], Music: arr2[1], Television: arr2[2], Science: arr2[3], Education: arr2[4] } = obj);
 let closure_2 = ["en-GB"];
-const result = 10 * require("set").Millis.MINUTE;
+const result = 10 * setDefault.Millis.MINUTE;
 const result1 = set.fileFinishedImporting("modules/global_discovery_servers/GlobalDiscoveryServersConstants.tsx");
 
 export const DEFAULT_DISCOVERY_CATEGORY_ID = 0;
@@ -36,7 +38,7 @@ export const FEATURED_GUILDS_SEARCH_OPTIONS = { categoryId: -1 };
 export const CategoryId = obj;
 export const DISCOVERY_SIDEBAR_CATEGORIES = items1;
 export const getLanguageOptions = function getLanguageOptions() {
-  const languages = require(1236) /* getSystemLocale */.getLanguages();
+  const languages = getSystemLocale.getLanguages();
   const found = languages.filter((code) => !closure_2.includes(code.code));
   return found.map((code) => {
     let tmp = code;

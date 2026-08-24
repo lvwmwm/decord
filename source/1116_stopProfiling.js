@@ -5,10 +5,11 @@
 // Exports: addNativeProfileToHermesProfile, createAndroidWithHermesProfile, hermesProfilingIntegration, startProfiling
 
 // Module 1116 (stopProfiling)
-import { Platform } from "get ActivityIndicator";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import NativeModules from "NativeModules" /* 1001 */;
 
 function stopProfiling(arg0) {
-  const NATIVE = require(1001) /* NativeModules */.NATIVE;
+  const NATIVE = NativeModules.NATIVE;
   const stopProfilingResult = NATIVE.stopProfiling();
   if (stopProfilingResult) {
     const _Date = Date;
@@ -48,7 +49,7 @@ function stopProfiling(arg0) {
             }
           }
           if (images) {
-            const obj1 = { debug_meta: null };
+            obj1 = { debug_meta: null };
             const obj2 = { images: null };
             obj2[0] = measurements.debug_meta.images;
             obj1[0] = obj2;
@@ -73,7 +74,7 @@ function stopProfiling(arg0) {
   }
 }
 function addNativeThreadCpuProfileToHermes(profile, profile2, active_thread_id) {
-  let closure_0 = active_thread_id;
+  closure_0 = active_thread_id;
   profile.thread_metadata = Object.assign(Object.assign({}, profile2.thread_metadata), profile.thread_metadata);
   profile.queue_metadata = Object.assign(Object.assign({}, profile2.queue_metadata), profile.queue_metadata);
   if (profile2.frames) {
@@ -94,6 +95,7 @@ function addNativeThreadCpuProfileToHermes(profile, profile2, active_thread_id) 
   profile.samples = items1;
   return profile;
 }
+const Platform = get_ActivityIndicator.Platform;
 let c2 = 1000000;
 let closure_3 = { platformProfilers: true };
 
@@ -102,9 +104,9 @@ export const hermesProfilingIntegration = () => {
   if (arg0 === undefined) {
     tmp = c3;
   }
-  let c0;
-  let c1;
-  let closure_2;
+  c0 = undefined;
+  c1 = undefined;
+  closure_2 = undefined;
   c3 = undefined;
   let _startCurrentProfileForActiveTransaction;
   let _startCurrentProfile;
@@ -321,7 +323,7 @@ export const hermesProfilingIntegration = () => {
             client.on("spanStart", _startCurrentProfile);
             client.on("spanEnd", _finishCurrentProfileForSpan);
             client.on("beforeEnvelope", (arg0) => {
-              const PROFILE_QUEUE = outer1_0(outer1_1[3]).PROFILE_QUEUE;
+              const PROFILE_QUEUE = closure_1_0(closure_1_1[3]).PROFILE_QUEUE;
               if (PROFILE_QUEUE.size()) {
                 const result = tmp(tmp2[4]).findProfiledTransactionsFromEnvelope(arg0);
                 if (result.length) {
@@ -336,8 +338,8 @@ export const hermesProfilingIntegration = () => {
                     }
                     continue;
                   }
-                  const result1 = outer1_0(outer1_1[4]).addProfilesToEnvelope(arg0, items);
-                  const obj2 = outer1_0(outer1_1[4]);
+                  const result1 = closure_1_0(closure_1_1[4]).addProfilesToEnvelope(arg0, items);
+                  const obj2 = closure_1_0(closure_1_1[4]);
                 } else {
                   const debug = tmp(tmp2[2]).debug;
                   debug.log("[Profiling] no profiled transactions found in envelope");
@@ -356,7 +358,7 @@ export const hermesProfilingIntegration = () => {
   };
 };
 export const startProfiling = function startProfiling(arg0) {
-  const NATIVE = require(1001) /* NativeModules */.NATIVE;
+  const NATIVE = NativeModules.NATIVE;
   let result = null;
   if (NATIVE.startProfiling(arg0)) {
     const _Date = Date;
@@ -391,7 +393,7 @@ export const addNativeProfileToHermesProfile = function addNativeProfileToHermes
     obj = { images: null };
     obj[0] = measurements.debug_meta.images;
     obj[0] = obj;
-    let obj1 = obj;
+    obj1 = obj;
   } else {
     obj1 = {};
   }

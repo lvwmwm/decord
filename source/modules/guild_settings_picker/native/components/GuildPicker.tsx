@@ -1,26 +1,25 @@
-// Module ID: 13354
-// Function ID: 13355
+// Module ID: 13412
+// Function ID: 13413
 // Name: GuildPicker
-// Dependencies: [19, 21, 13355, 13356, 4342, 8821, 2007, 1236, 2]
+// Dependencies: [19, 21, 13413, 13414, 4346, 8858, 2008, 1236, 2]
 // Exports: default
 
-// Module 13354 (GuildPicker)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 13412 (GuildPicker)
+import noopAll from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
+noopAll;
 const GuildPicker = "GuildPicker";
-const result = require("useFilteredGuilds").fileFinishedImporting("modules/guild_settings_picker/native/components/GuildPicker.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_settings_picker/native/components/GuildPicker.tsx");
 
 export default function GuildPicker(isGuildIncluded) {
-  let c2;
-  let selectedGuild;
   const guildId = isGuildIncluded.guildId;
   const onChange = isGuildIncluded.onChange;
-  let dependencyMap;
-  ({ options: c2, selectedGuild } = onChange(13355)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
+  dependencyMap = undefined;
+  ({ options: c2, selectedGuild } = onChange(13413)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
   let name;
-  const tmp2 = onChange(13355)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
+  const tmp2 = onChange(13413)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
   const tmp3 = jsx;
   if (selectedGuild != null) {
     name = selectedGuild.name;
@@ -44,11 +43,11 @@ export default function GuildPicker(isGuildIncluded) {
         });
       };
       obj[3] = guildId;
-      obj.openLazy(guildId(_undefined[6])(_undefined[5], _undefined.paths), outer1_4, obj);
+      obj.openLazy(guildId(_undefined[6])(_undefined[5], _undefined.paths), closure_1_4, obj);
     },
     placeholder: null
   };
   let intl = guildId(1236).intl;
   obj[2] = intl.string(guildId(1236).t.etZ9tX);
-  return tmp3(onChange(13356), obj);
+  return tmp3(onChange(13414), obj);
 };

@@ -1,23 +1,25 @@
-// Module ID: 10007
-// Function ID: 10008
-// Dependencies: [5043, 709, 6797, 2]
+// Module ID: 10046
+// Function ID: 10047
+// Dependencies: [5048, 709, 6834, 2]
 
-// Module 10007
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+// Module 10046
+import dispatcherDefault from "dispatcher" /* 709 */;
+import handleConnectionOpenDefault from "handleConnectionOpen" /* 6834 */;
+import closure_2 from "updateUserGuildSettingsInternal" /* 5048 */;
 
-let result = require("handleConnectionOpen").fileFinishedImporting("actions/ChannelCollapseActionCreators.tsx");
+let result = require("set").fileFinishedImporting("actions/ChannelCollapseActionCreators.tsx");
 
 export default {
   update(channelId) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "CHANNEL_COLLAPSE", channelId };
     obj.dispatch(obj);
   },
   toggleCollapseGuild(id) {
-    let obj = importDefault(6797);
+    let obj = handleConnectionOpenDefault;
     obj = { hide_muted_channels: !guildCollapsed.isGuildCollapsed(id) };
     const result = obj.saveUserGuildSettings(id, obj);
     obj = { type: "GUILD_TOGGLE_COLLAPSE_MUTED", guildId: id };
-    importDefault(709).dispatch(obj);
+    dispatcherDefault.dispatch(obj);
   }
 };

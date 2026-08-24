@@ -4,12 +4,14 @@
 // Dependencies: [140, 143, 151, 114]
 
 // Module 281 (createPublicRootInstance)
-const require = arg1;
+import _isNativeReflectConstruct from "_isNativeReflectConstruct" /* 140 */;
+
+require = arg1;
 const module = arg2;
 const exports = arg3;
 const dependencyMap = arg6;
 arg5.createPublicRootInstance = function createPublicRootInstance(arg0) {
-  return require(140) /* _isNativeReflectConstruct */.createReactNativeDocument(arg0);
+  return _isNativeReflectConstruct.createReactNativeDocument(arg0);
 };
 arg5.createPublicInstance = function createPublicInstance(nativeTag, viewConfig, internalInstanceHandle, arg3) {
   return new module(143)(nativeTag, viewConfig, internalInstanceHandle, arg3);

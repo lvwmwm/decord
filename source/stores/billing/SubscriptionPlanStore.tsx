@@ -1,31 +1,28 @@
-// Module ID: 4044
-// Function ID: 4045
+// Module ID: 4047
+// Function ID: 4048
 // Name: addSubscriptionPlan
-// Dependencies: [4040, 676, 1924, 1989, 589, 11, 709, 2]
+// Dependencies: [4043, 676, 1924, 1990, 589, 11, 709, 2]
 
-// Module 4044 (addSubscriptionPlan)
-import createFromServer from "createFromServer";
-import ME from "ME";
-import GuildFeatures from "GuildFeatures";
-import { Store } from "initialize";
-import set from "GuildFeatures";
+// Module 4047 (addSubscriptionPlan)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1990 */;
+import closure_3 from "createFromServer" /* 4043 */;
+import ME from "ME" /* 676 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import set from "set" /* 2 */;
 
-let SubscriptionIntervalTypes;
-let SubscriptionPlanInfo;
-let c4;
-let c5;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function addSubscriptionPlan(fromServer) {
   const skuId = fromServer.skuId;
   closure_10[fromServer.id] = fromServer;
   if (null != fromServer.prices[constants.DEFAULT]) {
     const _Set4 = Set;
     const _Object = Object;
-    const set = new Set(Object.keys(tmp.paymentSourcePrices));
+    set = new Set(Object.keys(tmp.paymentSourcePrices));
     closure_14[fromServer.id] = set;
-    let set1 = dependencyMap2[fromServer.skuId];
+    set1 = dependencyMap2[fromServer.skuId];
     if (set1 == null) {
       const _Set = Set;
       set1 = new Set();
@@ -43,33 +40,33 @@ function addSubscriptionPlan(fromServer) {
     obj.add(fromServer.id);
   } else {
     const _Set3 = Set;
-    const items1 = [fromServer.id];
+    items1 = [fromServer.id];
     const set3 = new Set(items1);
     tmp14[skuId] = set3;
   }
 }
 function addSubscriptionPlanFromServer(subscription_plan) {
-  addSubscriptionPlan(createFromServer.createFromServer(subscription_plan));
+  addSubscriptionPlan(closure_3.createFromServer(subscription_plan));
 }
 function reset() {
-  require(1989) /* areArraysShallowlyEqual */.clearObject(closure_10);
-  const obj = require(1989) /* areArraysShallowlyEqual */;
-  require(1989) /* areArraysShallowlyEqual */.clearObject(closure_11);
+  areArraysShallowlyEqual.clearObject(closure_10);
+  const obj = areArraysShallowlyEqual;
+  areArraysShallowlyEqual.clearObject(closure_11);
   set.clear();
   set1.clear();
-  const obj2 = require(1989) /* areArraysShallowlyEqual */;
-  require(1989) /* areArraysShallowlyEqual */.clearObject(closure_14);
-  const obj3 = require(1989) /* areArraysShallowlyEqual */;
-  require(1989) /* areArraysShallowlyEqual */.clearObject(closure_15);
+  const obj2 = areArraysShallowlyEqual;
+  areArraysShallowlyEqual.clearObject(closure_14);
+  const obj3 = areArraysShallowlyEqual;
+  areArraysShallowlyEqual.clearObject(closure_15);
   const items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
   const item = items.forEach((id) => {
-    callback(createFromServer.createFromServer({ id: id.id, name: id.name, interval: id.interval, interval_count: id.intervalCount, tax_inclusive: true, sku_id: id.skuId, currency: constants.USD, price: 0, price_tier: 0 }));
+    callback(closure_3.createFromServer({ id: id.id, name: id.name, interval: id.interval, interval_count: id.intervalCount, tax_inclusive: true, sku_id: id.skuId, currency: constants.USD, price: 0, price_tier: 0 }));
   });
 }
 ({ CurrencyCodes: c4, PriceSetAssignmentPurchaseTypes: c5 } = ME);
 ({ SubscriptionIntervalTypes, SubscriptionPlanInfo } = GuildFeatures);
 const SubscriptionPlans = GuildFeatures.SubscriptionPlans;
-({ PremiumSubscriptionSKUs: metroImportAll, ACTIVE_PREMIUM_SKUS: c9 } = GuildFeatures);
+({ PremiumSubscriptionSKUs: closure_8, ACTIVE_PREMIUM_SKUS: c9 } = GuildFeatures);
 let closure_10 = {};
 let closure_11 = {};
 let set = new Set();
@@ -78,10 +75,11 @@ let closure_14 = {};
 let closure_15 = {};
 let items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
 let item = items.forEach((id) => {
-  callback(createFromServer.createFromServer({ id: id.id, name: id.name, interval: id.interval, interval_count: id.intervalCount, tax_inclusive: true, sku_id: id.skuId, currency: constants.USD, price: 0, price_tier: 0 }));
+  callback(closure_3.createFromServer({ id: id.id, name: id.name, interval: id.interval, interval_count: id.intervalCount, tax_inclusive: true, sku_id: id.skuId, currency: constants.USD, price: 0, price_tier: 0 }));
 });
 let items1 = [, , ];
 ({ DAY: arr2[0], MONTH: arr2[1], YEAR: arr2[2] } = SubscriptionIntervalTypes);
+const Store = initializeDefault.Store;
 class SubscriptionPlanStore extends Store {
 }
 const prototype = SubscriptionPlanStore.prototype;
@@ -89,7 +87,7 @@ prototype["getPlanIdsForSkus"] = function getPlanIdsForSkus(items) {
   items = [];
   while (tmp !== undefined) {
     let tmp3 = dependencyMap;
-    let set = dependencyMap[tmp2];
+    set = dependencyMap[tmp2];
     if (set == null) {
       let _Set = Set;
       let tmp5 = new.target;
@@ -102,7 +100,7 @@ prototype["getPlanIdsForSkus"] = function getPlanIdsForSkus(items) {
       return index - closure_18.indexOf(dependencyMap[arg1].interval) || dependencyMap[arg0].intervalCount - dependencyMap[arg1].intervalCount;
     });
     let push = items.push;
-    let items1 = [];
+    items1 = [];
     let tmp8 = items1;
     let tmp9 = arr;
     let num = 0;
@@ -116,7 +114,7 @@ prototype["getPlanIdsForSkus"] = function getPlanIdsForSkus(items) {
   return items;
 };
 prototype["getFetchedSKUIDs"] = function getFetchedSKUIDs() {
-  return importDefault(11).keys(closure_11);
+  return DISCORD_EPOCHDefault.keys(closure_11);
 };
 prototype["getForSKU"] = function getForSKU(arg0) {
   let items = dependencyMap[arg0];
@@ -126,14 +124,14 @@ prototype["getForSKU"] = function getForSKU(arg0) {
   return Array.from(items).map((arg0) => table[arg0]);
 };
 prototype["getForSkuAndInterval"] = function getForSkuAndInterval(GUILD, interval, intervalCount) {
-  let closure_0 = interval;
+  closure_0 = interval;
   let num = intervalCount;
   if (intervalCount === undefined) {
     num = 1;
   }
   const forSKU = this.getForSKU(GUILD);
   return forSKU.find((id) => {
-    let tmp = id.id !== outer1_7.PREMIUM_GROUP_MONTH;
+    let tmp = id.id !== closure_1_7.PREMIUM_GROUP_MONTH;
     if (tmp) {
       tmp = id.interval === closure_0;
     }
@@ -188,7 +186,7 @@ prototype["getPaymentSourcesForPlanId"] = function getPaymentSourcesForPlanId(ke
   return tmp2;
 };
 prototype["getPaymentSourceIds"] = function getPaymentSourceIds() {
-  const set = new Set();
+  set = new Set();
   const values = Object.values(closure_14);
   const item = values.forEach((arr) => arr.forEach((arg0) => set.add(arg0)));
   return set;
@@ -207,21 +205,19 @@ prototype["hasPaymentSourceForSKUId"] = function hasPaymentSourceForSKUId(closur
 };
 prototype["hasPaymentSourceForSKUIds"] = function hasPaymentSourceForSKUIds(defaultPaymentSourceId, arr) {
   const self = this;
-  let closure_0 = defaultPaymentSourceId;
+  closure_0 = defaultPaymentSourceId;
   return arr.every((arg0) => self.hasPaymentSourceForSKUId(closure_0, arg0));
 };
 SubscriptionPlanStore.displayName = "SubscriptionPlanStore";
-const subscriptionPlanStore = new SubscriptionPlanStore(require("dispatcher"), {
+const subscriptionPlanStore = new SubscriptionPlanStore(dispatcherDefault, {
   SUBSCRIPTION_PLANS_FETCH: function handleSubscriptionPlansFetch(skuId) {
     set.add(skuId.skuId);
   },
   SUBSCRIPTION_PLANS_FETCH_SUCCESS: function handleSubscriptionPlansFetchSuccess(arg0) {
-    let skuId;
-    let subscriptionPlans;
     ({ skuId, subscriptionPlans } = arg0);
-    const set = new Set();
+    set = new Set();
     closure_11[skuId] = set;
-    const set1 = new Set();
+    set1 = new Set();
     closure_15[skuId] = set1;
     const item = subscriptionPlans.forEach(addSubscriptionPlanFromServer);
     set.delete(skuId);
@@ -236,7 +232,7 @@ const subscriptionPlanStore = new SubscriptionPlanStore(require("dispatcher"), {
   GIFT_CODE_RESOLVE_SUCCESS: function handleGiftCodeResolveSuccess(giftCode) {
     giftCode = giftCode.giftCode;
     if (null != giftCode.subscription_plan) {
-      addSubscriptionPlan(createFromServer.createFromServer(giftCode.subscription_plan));
+      addSubscriptionPlan(closure_3.createFromServer(giftCode.subscription_plan));
     }
   },
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: function handleEntitlementGiftsFetchSuccess(arg0) {

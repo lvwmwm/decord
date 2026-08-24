@@ -1,17 +1,22 @@
-// Module ID: 13960
-// Function ID: 13961
+// Module ID: 14028
+// Function ID: 14029
 // Name: CacheLogEntry
-// Dependencies: [17, 1391, 21, 4661, 712, 6291, 4733, 6286, 5082, 4734, 2]
+// Dependencies: [17, 1391, 21, 4668, 712, 6322, 4738, 6317, 5087, 4739, 2]
 // Exports: default
 
-// Module 13960 (CacheLogEntry)
-import { ScrollView } from "get ActivityIndicator";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14028 (CacheLogEntry)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Stack from "Stack" /* 4738 */;
+import Text from "Text" /* 4739 */;
+import recordChannelFetchStartDefault from "recordChannelFetchStart" /* 5087 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import TableRowInner from "TableRowInner" /* 6322 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 function CacheLogEntry(entry) {
   entry = entry.entry;
   let str = entry.before;
@@ -57,42 +62,39 @@ function CacheLogEntry(entry) {
   const date = new Date(entry.startTime);
   const tmp4 = closure_5;
   const items = [combined, combined1, str3, str7, str11];
-  return tmp4(require(6291) /* TableRowInner */.TableRow, { label: "" + name, subLabel: items.join("\n") });
+  return tmp4(TableRowInner.TableRow, { label: "" + name, subLabel: items.join("\n") });
 }
+const ScrollView = get_ActivityIndicator.ScrollView;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { container: null, contentContainer: null };
-obj = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 obj[0] = obj;
-obj[1] = { padding: require("Themes").space.PX_16 };
+obj[1] = { padding: ThemesDefault.space.PX_16 };
 let closure_7 = createCacheKey.createStyles(obj);
-let obj1 = { padding: require("Themes").space.PX_16 };
-const result = require("jsxProd").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsLocalMessageCache.tsx");
+let obj1 = { padding: ThemesDefault.space.PX_16 };
+const result = set.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsLocalMessageCache.tsx");
 
 export default function DevToolsLocalMessageCache() {
   const tmp = callback3();
   let obj = { style: tmp.container, contentContainerStyle: tmp.contentContainer, children: null };
   obj = { spacing: 8, children: null };
   obj = { title: "Local Message Cache Stats", hasIcons: false, children: null };
-  const obj1 = { label: "Channels Fetched", subLabel: null };
-  obj1[1] = importDefault(5082).channelsFetchStarted.size;
-  const items = [callback(require(6291) /* TableRowInner */.TableRow, obj1), , , ];
-  const obj2 = { label: "Cache Hits", subLabel: null };
-  obj2[1] = importDefault(5082).channelsFetchedWithLocalMessages.size;
-  items[1] = callback(require(6291) /* TableRowInner */.TableRow, obj2);
-  const obj3 = { label: "Cache Misses", subLabel: null };
-  obj3[1] = importDefault(5082).channelsFetchedNetwork.size - importDefault(5082).channelsFetchedWithLocalMessages.size;
-  items[2] = callback(require(6291) /* TableRowInner */.TableRow, obj3);
-  const obj4 = { label: "Incomplete Fetches", subLabel: null };
-  obj4[1] = importDefault(5082).channelsFetchStarted.size - importDefault(5082).channelsFetchedNetwork.size;
-  items[3] = callback(require(6291) /* TableRowInner */.TableRow, obj4);
+  const items = [callback(TableRowInner.TableRow, { label: "Channels Fetched", subLabel: recordChannelFetchStartDefault.channelsFetchStarted.size }), , , ];
+  obj1 = { label: "Channels Fetched", subLabel: recordChannelFetchStartDefault.channelsFetchStarted.size };
+  items[1] = callback(TableRowInner.TableRow, { label: "Cache Hits", subLabel: recordChannelFetchStartDefault.channelsFetchedWithLocalMessages.size });
+  const obj2 = { label: "Cache Hits", subLabel: recordChannelFetchStartDefault.channelsFetchedWithLocalMessages.size };
+  items[2] = callback(TableRowInner.TableRow, { label: "Cache Misses", subLabel: recordChannelFetchStartDefault.channelsFetchedNetwork.size - recordChannelFetchStartDefault.channelsFetchedWithLocalMessages.size });
+  const obj3 = { label: "Cache Misses", subLabel: recordChannelFetchStartDefault.channelsFetchedNetwork.size - recordChannelFetchStartDefault.channelsFetchedWithLocalMessages.size };
+  items[3] = callback(TableRowInner.TableRow, { label: "Incomplete Fetches", subLabel: recordChannelFetchStartDefault.channelsFetchStarted.size - recordChannelFetchStartDefault.channelsFetchedNetwork.size });
   obj[2] = items;
-  const items1 = [callback2(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj), callback(require(4734) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
+  const items1 = [callback2(TableRowGroupTitle.TableRowGroup, obj), callback(Text.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
   const obj5 = { title: "Fetch Log (Reversed)", hasIcons: false, children: null };
-  const fetchLogs = importDefault(5082).fetchLogs;
+  const fetchLogs = recordChannelFetchStartDefault.fetchLogs;
+  const obj4 = { label: "Incomplete Fetches", subLabel: recordChannelFetchStartDefault.channelsFetchStarted.size - recordChannelFetchStartDefault.channelsFetchedNetwork.size };
   const reversed = Array.from(fetchLogs.values()).reverse();
   obj5[2] = reversed.map((entry) => callback(closure_8, { entry }, arg1));
-  items1[2] = callback(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj5);
+  items1[2] = callback(TableRowGroupTitle.TableRowGroup, obj5);
   obj[1] = items1;
-  obj[2] = callback2(require(4733) /* Stack */.Stack, obj);
+  obj[2] = callback2(Stack.Stack, obj);
   return callback(ScrollView, obj);
 };

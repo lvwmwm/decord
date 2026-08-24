@@ -4,17 +4,19 @@
 // Dependencies: [1923, 1930, 1218, 1220, 676, 1924, 1932, 1928, 1899, 1900, 1933, 1937, 1943, 1403, 12, 1953, 1954, 1370, 2]
 
 // Module 1922 (mergeGuildAvatar)
-import setPremiumTypeActual from "setPremiumTypeActual";
-import createdAt from "createdAt";
-import fetchFingerprint from "fetchFingerprint";
-import "clearAll";
-import ME from "ME";
-import { UNSELECTED_PREMIUM_TYPE_OVERRIDE as closure_10 } from "GuildFeatures";
+import clearAllDefault from "clearAll" /* 1220 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import hasFlagAll from "hasFlag" /* 1403 */;
+import validatePremiumType from "validatePremiumType" /* 1928 */;
+import isUserPrimaryGuildEqual from "isUserPrimaryGuildEqual" /* 1932 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import closure_4 from "setPremiumTypeActual" /* 1923 */;
+import closure_5 from "createdAt" /* 1930 */;
+import closure_6 from "fetchFingerprint" /* 1218 */;
+import ME from "ME" /* 676 */;
+import { UNSELECTED_PREMIUM_TYPE_OVERRIDE as closure_10 } from "GuildFeatures" /* 1924 */;
 
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function mergeGuildAvatar(id, guildId, avatar) {
   if (null == obj[id]) {
     return false;
@@ -34,7 +36,7 @@ function mergeGuildAvatar(id, guildId, avatar) {
 function mergeUserPrimaryGuild(id, primary_guild) {
   let tmp3 = null != tmp2;
   if (tmp3) {
-    const obj = require(1932) /* isUserPrimaryGuildEqual */;
+    obj = isUserPrimaryGuildEqual;
     const result = obj.isUserPrimaryGuildEqual(tmp2.primaryGuild, primary_guild.primary_guild);
     let tmp8 = !result;
     if (!result) {
@@ -59,7 +61,7 @@ function transformUser(mfa_enabled) {
     mfa_enabled.mfaEnabled = mfa_enabled;
     delete tmp[tmp2];
   }
-  const premiumTypeFromRawValue = require(1928) /* validatePremiumType */.getPremiumTypeFromRawValue(mfa_enabled.premium_type);
+  const premiumTypeFromRawValue = validatePremiumType.getPremiumTypeFromRawValue(mfa_enabled.premium_type);
   if (undefined !== premiumTypeFromRawValue) {
     mfa_enabled.premiumType = premiumTypeFromRawValue;
     delete tmp[tmp3];
@@ -154,7 +156,7 @@ function mergeUser(user, arg1) {
   }
   if (null == obj[user.id]) {
     transformUser(user);
-    const tmp26 = new createdAt(user);
+    const tmp26 = new closure_5(user);
     const premiumType3 = tmp26.premiumType;
     let mergeResult = tmp26;
     let tmp19 = premiumType3;
@@ -170,7 +172,7 @@ function mergeUser(user, arg1) {
       tmp26.premiumType = premiumType4;
       mergeResult = tmp26;
       tmp19 = premiumType3;
-      obj6 = require(1928) /* validatePremiumType */;
+      obj6 = validatePremiumType;
     }
     tmp28 = undefined !== premiumType3 && tmp2;
   } else {
@@ -183,8 +185,8 @@ function mergeUser(user, arg1) {
       }
       let isStaffEnvRawDataResult = undefined !== premiumType && tmp2;
       if (isStaffEnvRawDataResult) {
-        isStaffEnvRawDataResult = require(1928) /* validatePremiumType */.isStaffEnvRawData(user);
-        const obj2 = require(1928) /* validatePremiumType */;
+        isStaffEnvRawDataResult = validatePremiumType.isStaffEnvRawData(user);
+        const obj2 = validatePremiumType;
       }
       if (isStaffEnvRawDataResult) {
         let premiumType2 = user.premium_type;
@@ -203,7 +205,7 @@ function mergeUser(user, arg1) {
         } else if (undefined !== user.premium_type) {
           user.premium_type = premiumType2;
         }
-        obj3 = require(1928) /* validatePremiumType */;
+        obj3 = validatePremiumType;
       }
       if (tmp14 !== true) {
         if (tmp15 !== true) {
@@ -211,7 +213,7 @@ function mergeUser(user, arg1) {
             user.primary_guild = tmp16(1932).ensureUserPrimaryGuild(user.primary_guild);
             const tmp16Result = tmp16(1932);
           }
-          obj4 = require(1932) /* isUserPrimaryGuildEqual */;
+          obj4 = isUserPrimaryGuildEqual;
           tmp16 = require;
         }
         user.primary_guild = obj.primaryGuild;
@@ -222,8 +224,8 @@ function mergeUser(user, arg1) {
       tmp14 = null == obj.primaryGuild && null == user.primary_guild;
     }
   }
-  const obj7 = require(1928) /* validatePremiumType */;
-  obj7.validatePremiumType(require(1928) /* validatePremiumType */.isStaffEnv(mergeResult), tmp19, mergeResult.premiumType);
+  const obj7 = validatePremiumType;
+  obj7.validatePremiumType(validatePremiumType.isStaffEnv(mergeResult), tmp19, mergeResult.premiumType);
   obj[user.id] = mergeResult;
   if (obj[user.id] !== mergeResult) {
     closure_12 = closure_12 + 1;
@@ -231,7 +233,7 @@ function mergeUser(user, arg1) {
   return obj[user.id] !== mergeResult;
 }
 function mergeUsersFromMessage(message, arg1) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   let tmp = null != message.author;
   if (tmp) {
     tmp = "SENDING" !== message.state;
@@ -245,8 +247,8 @@ function mergeUsersFromMessage(message, arg1) {
   const mentions = message.mentions;
   if (mentions != null) {
     let item = mentions.forEach((id) => {
-      if (id.id !== outer1_6.getId()) {
-        outer1_17(id, closure_0);
+      if (id.id !== closure_1_6.getId()) {
+        closure_1_17(id, closure_0);
       }
     });
   }
@@ -273,8 +275,8 @@ function mergeUsersFromMessage(message, arg1) {
       clip_participants = clip_participants.clip_participants;
       if (clip_participants != null) {
         const item = clip_participants.forEach((id) => {
-          if (id.id !== outer1_6.getId()) {
-            outer1_17(id, closure_0);
+          if (id.id !== closure_1_6.getId()) {
+            closure_1_17(id, closure_0);
           }
         });
       }
@@ -324,7 +326,7 @@ function mergeUsersFromMessage(message, arg1) {
         }
       }
       if (null != user) {
-        outer1_17(moderator_report.moderator_report.reported_member.user, closure_0);
+        closure_1_17(moderator_report.moderator_report.reported_member.user, closure_0);
       }
       const moderator_report2 = moderator_report.moderator_report;
       let user1;
@@ -335,7 +337,7 @@ function mergeUsersFromMessage(message, arg1) {
         }
       }
       if (null != user1) {
-        outer1_17(moderator_report.moderator_report.reporting_member.user, closure_0);
+        closure_1_17(moderator_report.moderator_report.reporting_member.user, closure_0);
       }
       const message = moderator_report.message;
       let users;
@@ -350,16 +352,14 @@ function mergeUsersFromMessage(message, arg1) {
       }
       const values = Object.values(users);
       const item = values.forEach((id) => {
-        if (id.id !== outer1_6.getId()) {
-          outer1_17(id, closure_0);
+        if (id.id !== closure_1_6.getId()) {
+          closure_1_17(id, closure_0);
         }
       });
     });
   }
 }
 function handleConnectionOpen(user) {
-  let guilds;
-  let users;
   ({ users, guilds } = user);
   delete tmp2[tmp];
   delete tmp2[tmp];
@@ -368,12 +368,12 @@ function handleConnectionOpen(user) {
     callback(arg0);
   });
   const item1 = guilds.forEach((members) => {
-    let closure_0 = members;
+    closure_0 = members;
     members = members.members;
     const item = members.forEach((avatar) => {
       const id = members.id;
       avatar = avatar.avatar;
-      if (null != outer1_11[avatar.user.id]) {
+      if (null != closure_1_11[avatar.user.id]) {
         if (null == avatar) {
           let result = obj.removeGuildAvatarHash(id);
         } else {
@@ -381,45 +381,43 @@ function handleConnectionOpen(user) {
         }
         tmp[obj.id] = result;
         if (obj !== result) {
-          outer1_12 = outer1_12 + 1;
+          closure_12 = closure_12 + 1;
         }
       }
       const user = avatar.user;
-      if (null != outer1_11[avatar.user.id]) {
-        const result1 = members(outer1_3[6]).isUserPrimaryGuildEqual(tmp4.primaryGuild, user.primary_guild);
+      if (null != closure_1_11[avatar.user.id]) {
+        const result1 = members(closure_1_3[6]).isUserPrimaryGuildEqual(tmp4.primaryGuild, user.primary_guild);
         if (!result1) {
           if (tmp5) {
             tmp4.primaryGuild = tmp7(tmp8[6]).ensureUserPrimaryGuild(user.primary_guild);
             tmp[tmp4.id] = tmp4;
-            outer1_12 = outer1_12 + 1;
+            closure_12 = closure_12 + 1;
             const tmp7Result = tmp7(tmp8[6]);
           }
           tmp5 = null == tmp4.primaryGuild || null != user.primary_guild;
         }
-        const obj3 = members(outer1_3[6]);
+        const obj3 = members(closure_1_3[6]);
         tmp7 = members;
-        tmp8 = outer1_3;
+        tmp8 = closure_1_3;
       }
     });
   });
   if (null != obj[store2.getId(store2)]) {
     obj = { id: null, username: "Wumpus", discriminator: "0", globalName: "Wumpus", avatar: "c1f86b313385cb97985f1b118851c28c" };
     obj[0] = c13;
-    const tmp12 = new createdAt(obj);
+    const tmp12 = new closure_5(obj);
     obj[c13] = tmp12;
   }
 }
 function handleConnectionOpenSupplemental(arg0) {
-  let guilds;
-  let lazyPrivateChannels;
   ({ guilds, lazyPrivateChannels } = arg0);
   let item = guilds.forEach((members) => {
-    let closure_0 = members;
+    closure_0 = members;
     members = members.members;
     const item = members.forEach((avatar) => {
       const id = members.id;
       avatar = avatar.avatar;
-      if (null != outer1_11[avatar.user.id]) {
+      if (null != closure_1_11[avatar.user.id]) {
         if (null == avatar) {
           let result = obj.removeGuildAvatarHash(id);
         } else {
@@ -427,24 +425,24 @@ function handleConnectionOpenSupplemental(arg0) {
         }
         tmp[obj.id] = result;
         if (obj !== result) {
-          outer1_12 = outer1_12 + 1;
+          closure_12 = closure_12 + 1;
         }
       }
       const user = avatar.user;
-      if (null != outer1_11[avatar.user.id]) {
-        const result1 = members(outer1_3[6]).isUserPrimaryGuildEqual(tmp4.primaryGuild, user.primary_guild);
+      if (null != closure_1_11[avatar.user.id]) {
+        const result1 = members(closure_1_3[6]).isUserPrimaryGuildEqual(tmp4.primaryGuild, user.primary_guild);
         if (!result1) {
           if (tmp5) {
             tmp4.primaryGuild = tmp7(tmp8[6]).ensureUserPrimaryGuild(user.primary_guild);
             tmp[tmp4.id] = tmp4;
-            outer1_12 = outer1_12 + 1;
+            closure_12 = closure_12 + 1;
             const tmp7Result = tmp7(tmp8[6]);
           }
           tmp5 = null == tmp4.primaryGuild || null != user.primary_guild;
         }
-        const obj3 = members(outer1_3[6]);
+        const obj3 = members(closure_1_3[6]);
         tmp7 = members;
-        tmp8 = outer1_3;
+        tmp8 = closure_1_3;
       }
     });
   });
@@ -478,11 +476,11 @@ function handleInitialize(users) {
       }
       if (!tmp7) {
         let tmp10 = nextResult;
-        let tmp11 = createdAt;
+        let tmp11 = closure_5;
         let tmp12 = new.target;
         let tmp13 = new.target;
         let tmp14 = tmp5;
-        let tmp15 = new createdAt(nextResult);
+        let tmp15 = new closure_5(nextResult);
         let tmp16 = tmp15;
         tmp6[tmp5.id] = tmp15;
       }
@@ -514,7 +512,7 @@ function handleCurrentUserUpdate(user) {
 }
 function updatePremiumType(user) {
   user = user.user;
-  const obj = { id: user.id, premiumType: null };
+  obj = { id: user.id, premiumType: null };
   let premiumType = user.premiumType;
   if (obj2.isStaffEnv(user)) {
     let premiumTypeOverride = store.getPremiumTypeOverride();
@@ -574,8 +572,6 @@ function handleThreadListSync(mostRecentMessages) {
 function handleLoadSearchResults(data) {
   data = data.data;
   let item = data.forEach((arg0) => {
-    let channels;
-    let messages;
     ({ messages, channels } = arg0);
     let item = messages.forEach((arr) => {
       const item = arr.forEach((arg0) => {
@@ -597,8 +593,6 @@ function handleLoadSearchResults(data) {
   return false;
 }
 function handleLoadThreadsSuccess(arg0) {
-  let firstMessages;
-  let owners;
   ({ firstMessages, owners } = arg0);
   if (null != firstMessages) {
     const item = firstMessages.forEach((arg0) => {
@@ -612,9 +606,6 @@ function handleLoadThreadsSuccess(arg0) {
 function handleLoadForumPosts(threads) {
   const values = Object.values(threads.threads);
   const item = values.forEach((arg0) => {
-    let first_message;
-    let most_recent_message;
-    let owner;
     ({ first_message, most_recent_message, owner } = arg0);
     if (null != first_message) {
       callback2(first_message, true);
@@ -637,21 +628,17 @@ function handleLoadMessageRequestsSupplementalDataSuccess(supplementalData) {
   });
 }
 function handleFetchUsersForGuildEventSuccess(arg0) {
-  let guildScheduledEventUsers;
-  let require;
   ({ guildScheduledEventUsers, guildId: require } = arg0);
   const item = guildScheduledEventUsers.forEach((arg0) => {
-    let member;
-    let user;
     ({ user, member } = arg0);
     if (null != user) {
-      outer1_17(user);
+      closure_1_17(user);
       let avatar;
       if (member != null) {
         avatar = member.avatar;
       }
       if (null != avatar) {
-        if (null != outer1_11[user.id]) {
+        if (null != closure_1_11[user.id]) {
           if (null == avatar) {
             let result = obj.removeGuildAvatarHash(tmp4);
           } else {
@@ -659,7 +646,7 @@ function handleFetchUsersForGuildEventSuccess(arg0) {
           }
           tmp5[obj.id] = result;
           if (obj !== result) {
-            outer1_12 = outer1_12 + 1;
+            closure_12 = closure_12 + 1;
           }
         }
       }
@@ -684,7 +671,7 @@ function handleIncomingMessage(message) {
   message = message.message;
   mergeUsersFromMessage(message, true);
   if (null != message.flags) {
-    const obj = importAll(1403);
+    obj = hasFlagAll;
     if (obj.hasFlag(message.flags, constants2.URGENT)) {
       const obj3 = obj[store2.getId(store2)];
       let flag = null != obj3;
@@ -723,7 +710,7 @@ function handleUpdateChannels(arg0) {
 function handlePresenceUpdates(updates) {
   updates = updates.updates;
   const mapped = updates.map((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const id = tmp2;
     if (null == table[arg0.user.id]) {
       return false;
@@ -732,14 +719,14 @@ function handlePresenceUpdates(updates) {
         const user = lib.user;
         let tmp2 = arg0;
         if (user.hasOwnProperty(key10009)) {
-          const result = tmp2.set(lib(outer1_3[14]).camelCase(key10009), lib.user[key10009]);
+          const result = closure_1.set(lib(closure_1_3[14]).camelCase(key10009), lib.user[key10009]);
           let tmp7 = arg0;
           if (!arg0) {
-            tmp7 = result !== tmp2;
+            tmp7 = result !== closure_1;
           }
-          tmp2 = result;
+          closure_1 = result;
           tmp2 = tmp7;
-          const obj = lib(outer1_3[14]);
+          obj = lib(closure_1_3[14]);
         }
         return tmp2;
       }, false);
@@ -772,8 +759,6 @@ function handleRecipient(isMember) {
   return isMember;
 }
 function handleGuildMembers(user) {
-  let avatar;
-  let guildId;
   ({ guildId, avatar } = user);
   let flag = false;
   if (null != obj[user.user.id]) {
@@ -822,15 +807,15 @@ function handleGuildMemberListUpdate(arg0) {
   return false;
 }
 function handleGuildMembersChunkBatch(arg0) {
-  let c0 = false;
+  c0 = false;
   function _loop(iter) {
-    let closure_0 = iter;
+    closure_0 = iter;
     const members = iter.members;
     closure_0 = members.reduce((arg0, avatar) => {
-      const guildId = iter.guildId;
+      guildId = guildId.guildId;
       avatar = avatar.avatar;
       let flag = false;
-      if (null != outer1_11[avatar.user.id]) {
+      if (null != closure_1_11[avatar.user.id]) {
         if (null == avatar) {
           let result = obj.removeGuildAvatarHash(guildId);
         } else {
@@ -839,7 +824,7 @@ function handleGuildMembersChunkBatch(arg0) {
         tmp2[obj.id] = result;
         flag = tmp4;
         if (obj !== result) {
-          outer1_12 = outer1_12 + 1;
+          closure_12 = closure_12 + 1;
           flag = tmp4;
         }
       }
@@ -902,18 +887,18 @@ function handleLocalMessagesLoaded(users) {
 }
 function handleThreadMemberListUpdate(members) {
   members = members.members;
-  let c0 = false;
+  c0 = false;
   const item = members.forEach((member) => {
     let tmp = null != member.member;
     if (tmp) {
-      tmp = outer1_17(member.member.user);
+      tmp = closure_1_17(member.member.user);
     }
     if (tmp) {
-      let c0 = true;
+      c0 = true;
     }
     let tmp3 = null != member.presence;
     if (tmp3) {
-      tmp3 = outer1_17(member.presence.user);
+      tmp3 = closure_1_17(member.presence.user);
     }
     if (tmp3) {
       c0 = true;
@@ -923,19 +908,19 @@ function handleThreadMemberListUpdate(members) {
 }
 function handleThreadMembersUpdate(addedMembers) {
   addedMembers = addedMembers.addedMembers;
-  let c0 = false;
+  c0 = false;
   if (addedMembers != null) {
     const item = addedMembers.forEach((member) => {
       let tmp = null != member.member;
       if (tmp) {
-        tmp = outer1_17(member.member.user);
+        tmp = closure_1_17(member.member.user);
       }
       if (tmp) {
-        let c0 = true;
+        c0 = true;
       }
       let tmp3 = null != member.presence;
       if (tmp3) {
-        tmp3 = outer1_17(member.presence.user);
+        tmp3 = closure_1_17(member.presence.user);
       }
       if (tmp3) {
         c0 = true;
@@ -948,25 +933,21 @@ function handleGuildCreate(guild) {
   guild = guild.guild;
   const members = guild.members;
   const item = members.forEach((user) => {
-    let avatar;
-    let bot;
-    let discriminator;
-    let username;
     user = user.user;
     const id = user.id;
     const avatar2 = user.avatar;
     ({ username, avatar, discriminator, bot } = user);
-    if (id !== outer1_6.getId()) {
-      const obj = { id: null, username: null, avatar: null, discriminator: null, bot: null };
+    if (id !== closure_1_6.getId()) {
+      obj = { id: null, username: null, avatar: null, discriminator: null, bot: null };
       obj[0] = id;
       obj[1] = username;
       obj[2] = avatar;
       obj[3] = discriminator;
       obj[4] = bot;
-      outer1_17(obj);
+      closure_1_17(obj);
     }
     const id2 = guild.id;
-    if (null != outer1_11[id]) {
+    if (null != closure_1_11[id]) {
       if (null == avatar2) {
         let result = obj2.removeGuildAvatarHash(id2);
       } else {
@@ -974,7 +955,7 @@ function handleGuildCreate(guild) {
       }
       tmp3[obj2.id] = result;
       if (obj2 !== result) {
-        outer1_12 = outer1_12 + 1;
+        closure_12 = closure_12 + 1;
       }
     }
   });
@@ -1000,7 +981,7 @@ function handleAuditLogFetched(users) {
   users = users.users;
   const item = users.forEach((id) => {
     if (null == table[id.id]) {
-      const tmp6 = new createdAt(id);
+      const tmp6 = new closure_5(id);
       tmp[id.id] = tmp6;
     }
   });
@@ -1023,8 +1004,6 @@ function handleGuildPremiumSubscriptionsFetchSuccess(appliedBoosts) {
   });
 }
 function handleGuildJoinRequest(request) {
-  let actioned_by_user;
-  let user;
   ({ user, actioned_by_user } = request.request);
   let flag = false;
   if (null != user) {
@@ -1070,8 +1049,8 @@ function handleMemberSafetyGuildMemberSearchSuccess(members) {
   return members.reduce((arg0, member) => {
     let tmp = arg0;
     if (member.member.user.id !== closure_0) {
-      tmp = outer1_17(member.member.user) || arg0;
-      const tmp3 = outer1_17(member.member.user) || arg0;
+      tmp = closure_1_17(member.member.user) || arg0;
+      const tmp3 = closure_1_17(member.member.user) || arg0;
     }
     return tmp;
   }, false);
@@ -1105,7 +1084,7 @@ function handleInitiateAgeVerification(arg0) {
     let flag = null != obj2;
     if (flag) {
       const id = obj.getId();
-      store2[id] = obj2.set("ageVerificationStatus", require(1954) /* PermissionOverwriteType */.AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING);
+      store2[id] = obj2.set("ageVerificationStatus", PermissionOverwriteType.AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING);
       flag = true;
     }
     return flag;
@@ -1115,7 +1094,7 @@ function handleCloseAgeVerificationModal(status) {
   const obj2 = store2[store2.getId(store2)];
   let tmp2 = null != obj2;
   if (tmp2) {
-    let flag = obj2.ageVerificationStatus === require(1954) /* PermissionOverwriteType */.AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
+    let flag = obj2.ageVerificationStatus === PermissionOverwriteType.AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
     if (flag) {
       const id = obj.getId();
       store2[id] = obj2.set("ageVerificationStatus", status.status);
@@ -1164,7 +1143,8 @@ function handleGuildStickersFetchSuccess(stickers) {
     return tmp;
   }, false);
 }
-({ UserFlags: error, MessageFlags: metroImportAll, ChannelTypes: c9 } = ME);
+clearAllDefault;
+({ UserFlags: error, MessageFlags: closure_8, ChannelTypes: c9 } = ME);
 let obj = {};
 let c12 = 0;
 let c13 = "47835198259242069";
@@ -1172,7 +1152,7 @@ let closure_43 = ["username", "avatar", "global_name", "discriminator", "bot", "
 let UserStore;
 class UserStore extends tmp2 {
   constructor() {
-    c0 = undefined;
+    closure_0 = undefined;
     obj = {
       CONNECTION_OPEN: handleConnectionOpen,
       CONNECTION_OPEN_SUPPLEMENTAL: handleConnectionOpenSupplemental,
@@ -1247,19 +1227,19 @@ class UserStore extends tmp2 {
     };
     tmp = new tmp(obj, handleCloseAgeVerificationModal, new.target, tmp);
     // ThrowIfThisInitialized (0x7c)
-    c0 = tmp;
+    closure_0 = tmp;
     return tmp;
   }
 }
 const prototype = UserStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, setPremiumTypeActual);
+  this.waitFor(closure_6, closure_4);
 };
 prototype["takeSnapshot"] = function takeSnapshot() {
-  let obj = { version: UserStore.LATEST_SNAPSHOT_VERSION, data: null };
+  obj = { version: UserStore.LATEST_SNAPSHOT_VERSION, data: null };
   obj = { users: null };
   const items = [this.getCurrentUser()];
-  obj[0] = items.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+  obj[0] = items.filter(isDiscordFrontendDevelopment.isNotNullish);
   obj[1] = obj;
   return obj;
 };
@@ -1270,11 +1250,11 @@ prototype["handleLoadCache"] = function handleLoadCache(users) {
     for (const item10012 of users) {
       let tmp4 = obj;
       let tmp5 = obj;
-      let tmp6 = createdAt;
+      let tmp6 = closure_5;
       let tmp7 = new.target;
       let tmp8 = new.target;
       let tmp9 = item10012;
-      let tmp10 = new createdAt(item10012);
+      let tmp10 = new closure_5(item10012);
       let tmp11 = tmp10;
       obj[item10012.id] = tmp10;
       continue;
@@ -1297,11 +1277,11 @@ prototype["handleLoadCache"] = function handleLoadCache(users) {
       if (!tmp19) {
         let tmp22 = tmp17;
         let tmp23 = nextResult;
-        let tmp24 = createdAt;
+        let tmp24 = closure_5;
         let tmp25 = new.target;
         let tmp26 = new.target;
         let tmp27 = tmp16;
-        let tmp28 = new createdAt(nextResult);
+        let tmp28 = new closure_5(nextResult);
         let tmp29 = tmp28;
         tmp18[tmp16.id] = tmp28;
       }
@@ -1347,7 +1327,7 @@ prototype["findByTag"] = function findByTag(match, match2) {
   for (const key10005 in obj) {
     let tmp = key10005;
     let tmp2 = obj;
-    let obj = obj[key10005];
+    obj = obj[key10005];
     if (null != arg1) {
       if (obj.username === arg0) {
         if (obj.discriminator === arg1) {
@@ -1409,7 +1389,7 @@ prototype["getCurrentUser"] = function getCurrentUser() {
 UserStore.displayName = "UserStore";
 UserStore.LATEST_SNAPSHOT_VERSION = 1;
 const userStore = new UserStore();
-let result = require("fetchFingerprint").fileFinishedImporting("stores/UserStore.tsx");
+let result = require("set").fileFinishedImporting("stores/UserStore.tsx");
 
 export default userStore;
 export const users = obj;

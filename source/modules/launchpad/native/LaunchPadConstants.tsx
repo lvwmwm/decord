@@ -1,17 +1,18 @@
-// Module ID: 10665
-// Function ID: 10666
+// Module ID: 10704
+// Function ID: 10705
 // Name: LAUNCH_PAD_SPRING_CONFIG
-// Dependencies: [17, 500, 4354, 2]
+// Dependencies: [17, 500, 4358, 2]
 
-// Module 10665 (LAUNCH_PAD_SPRING_CONFIG)
-import { Dimensions } from "get ActivityIndicator";
-import set from "set";
-import set from "DCDDeviceManager";
+// Module 10704 (LAUNCH_PAD_SPRING_CONFIG)
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4358 */;
+import set from "set" /* 500 */;
 
+const Dimensions = get_ActivityIndicator.Dimensions;
 const size = Dimensions.get("screen");
 let num = 24;
 if (!set.isAndroid()) {
-  const _module1 = require("DCDDeviceManager");
+  const _module1 = DCDDeviceManager;
   let num2 = 13;
   if (!_module1.isIpadOS()) {
     const _Math = Math;

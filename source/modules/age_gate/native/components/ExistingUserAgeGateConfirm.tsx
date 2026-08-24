@@ -1,43 +1,40 @@
-// Module ID: 16523
-// Function ID: 16524
+// Module ID: 16618
+// Function ID: 16619
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 676, 21, 4661, 1500, 6803, 4734, 1236, 1993, 4745, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4668, 1500, 6840, 4739, 1236, 1994, 4750, 2]
 // Exports: default
 
-// Module 16523 (ExistingUserAgeGateConfirm)
-import closure_3 from "jsxProd";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { HelpdeskArticles } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16618 (ExistingUserAgeGateConfirm)
+import combinedDefault from "combined" /* 1994 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { HelpdeskArticles } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
 const require = arg1;
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles({ container: { padding: 16, flex: 1, alignItems: "center", justifyContent: "center" }, header: { textAlign: "center", marginBottom: 8 }, body: { textAlign: "center", lineHeight: 20, marginBottom: 16 }, buttonWrapper: { width: "100%" } });
-const result = require("noop").fileFinishedImporting("modules/age_gate/native/components/ExistingUserAgeGateConfirm.tsx");
+const result = require("set").fileFinishedImporting("modules/age_gate/native/components/ExistingUserAgeGateConfirm.tsx");
 
 export default function ExistingUserAgeGateConfirm(age) {
-  let c2;
-  let tmp3;
   const onConfirm = age.onConfirm;
-  let importDefault;
-  let dependencyMap;
+  importDefault = undefined;
+  dependencyMap = undefined;
   function _handleConfirm() {
     const self = this;
     const tmp = _handleConfirm(function*() {
-      let closure_0 = tmp3;
-      outer1_2(true);
-      let c3 = 1;
-      yield outer1_0();
+      closure_0 = tmp3;
+      closure_1_2(true);
+      c3 = 1;
+      yield closure_1_0();
       if (1 === tmp7) {
         c3 = 0;
         arr = arr.pop();
         callback(false);
-        let c4 = 3;
+        c4 = 3;
       } else if (arg0 === 1) {
         c4 = 3;
         throw arg1;
@@ -50,7 +47,7 @@ export default function ExistingUserAgeGateConfirm(age) {
       c3 = 0;
       return arg1;
     });
-    _handleConfirm = tmp;
+    closure_3 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -67,14 +64,14 @@ export default function ExistingUserAgeGateConfirm(age) {
   obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = onConfirm(1236).intl;
   obj[3] = intl.format(onConfirm(1236).t.wumolR, { age: age.age });
-  const items = [callback2(onConfirm(4734).Text, obj), , ];
-  const obj1 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: null };
+  const items = [callback2(onConfirm(4739).Text, obj), , ];
+  obj1 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: null };
   const intl2 = onConfirm(1236).intl;
   const obj2 = { helpURL: null };
   const tmp2 = callback(React.useState(false), 2);
-  obj2[0] = importDefault(1993).getArticleURL(HelpdeskArticles.AGE_GATE);
+  obj2[0] = combinedDefault.getArticleURL(HelpdeskArticles.AGE_GATE);
   obj1[3] = intl2.format(onConfirm(1236).t.n3QjDE, obj2);
-  items[1] = callback2(onConfirm(4734).Text, obj1);
+  items[1] = callback2(onConfirm(4739).Text, obj1);
   const obj3 = { style: tmp.buttonWrapper, children: null };
   const obj4 = { loading: tmp3, disabled: tmp3, text: null, onPress: null, grow: true };
   const intl3 = onConfirm(1236).intl;
@@ -89,8 +86,8 @@ export default function ExistingUserAgeGateConfirm(age) {
     }
     return applyArgumentsResult;
   };
-  obj3[1] = callback2(onConfirm(4745).Button, obj4);
+  obj3[1] = callback2(onConfirm(4750).Button, obj4);
   items[2] = callback2(View, obj3);
   obj[2] = items;
-  return callback3(onConfirm(6803).SafeAreaPaddingView, obj);
+  return callback3(onConfirm(6840).SafeAreaPaddingView, obj);
 };

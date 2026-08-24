@@ -1,19 +1,18 @@
-// Module ID: 10923
-// Function ID: 10924
+// Module ID: 10962
+// Function ID: 10963
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [5290, 4541, 676, 501, 1403, 7258, 2]
+// Dependencies: [5295, 4546, 676, 501, 1403, 7296, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 10923 (getRemoteJoinableActivityPlatform)
-import isConnected from "isConnected";
-import handleUpdate from "handleUpdate";
-import ME from "ME";
+// Module 10962 (getRemoteJoinableActivityPlatform)
+import hasFlag from "hasFlag" /* 1403 */;
+import closure_2 from "isConnected" /* 5295 */;
+import closure_3 from "handleUpdate" /* 4546 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ ActivityFlags: c4, ActivityGamePlatforms: c5 } = ME);
-const result = require("ME").fileFinishedImporting("modules/activities/utils/getRemoteJoinableActivityPlatform.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/utils/getRemoteJoinableActivityPlatform.tsx");
 
 export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActivityPlatform(presenceActivity) {
   if (null == presenceActivity) {
@@ -29,7 +28,7 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
         remoteApplicationActivity = remoteApplicationActivity.getRemoteApplicationActivity(application_id);
         let tmp4 = null;
         if (null != remoteApplicationActivity) {
-          let tmp11Result = tmp11(7258);
+          let tmp11Result = tmp11(7296);
           tmp4 = null;
           if (!tmp11Result.isContextlessEmbeddedActivity(remoteApplicationActivity)) {
             if (null == remoteApplicationActivity.application_id) {
@@ -68,7 +67,7 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
         }
         return tmp4;
       }
-      obj5 = require(1403) /* hasFlag */;
+      obj5 = hasFlag;
       tmp = constants;
     }
     return null;

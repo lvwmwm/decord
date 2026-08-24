@@ -1,15 +1,15 @@
-// Module ID: 6803
-// Function ID: 6804
+// Module ID: 6840
+// Function ID: 6841
 // Name: SafeAreaPaddingView
-// Dependencies: [19, 17, 21, 1629, 6804, 659, 2]
+// Dependencies: [19, 17, 21, 1629, 6841, 659, 2]
 // Exports: SafeAreaPaddingView
 
-// Module 6803 (SafeAreaPaddingView)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 6840 (SafeAreaPaddingView)
+import closure_2 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const result = require("jsxProd").fileFinishedImporting("components_native/common/SafeAreaView.tsx");
+const result = require("set").fileFinishedImporting("components_native/common/SafeAreaView.tsx");
 
 export const SafeAreaPaddingView = function SafeAreaPaddingView(top) {
   let flag = top.top;
@@ -31,15 +31,15 @@ export const SafeAreaPaddingView = function SafeAreaPaddingView(top) {
   let style = top.style;
   const merged = Object.assign(top, Object.create(null));
   let ref;
-  let items;
+  dependencyMap = undefined;
   let React;
-  const rect = ref(items[3])();
-  let obj1 = React;
+  const rect = ref(1629)();
+  obj1 = React;
   ref = React.useRef(null);
   if (style == null) {
     style = {};
   }
-  items = [style, , , , ];
+  let items = [style, , , , ];
   let tmp9;
   if (flag) {
     let obj = { paddingTop: null };
@@ -68,16 +68,17 @@ export const SafeAreaPaddingView = function SafeAreaPaddingView(top) {
     tmp12 = obj2;
   }
   items[4] = tmp12;
-  const tmp13 = ref(items[4])(ref);
-  const tmp14 = ref(items[5])(items, tmp13);
+  dependencyMap = items;
+  const tmp13 = ref(6841)(ref);
+  const tmp14 = ref(659)(items, tmp13);
   React = tmp14;
   if (tmp14) {
-    items = tmp13;
+    dependencyMap = tmp13;
     items = tmp13;
   }
   const insertionEffect = obj1.useInsertionEffect(() => {
-    if (!c2) {
-      ref.current = items;
+    if (!closure_2) {
+      ref.current = closure_1;
     }
   });
   const merged1 = Object.assign(merged);

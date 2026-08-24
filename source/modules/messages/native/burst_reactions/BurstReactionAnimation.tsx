@@ -1,36 +1,33 @@
-// Module ID: 7573
-// Function ID: 7574
+// Module ID: 7611
+// Function ID: 7612
 // Name: BurstReactionAnimation
-// Dependencies: [19, 4662, 21, 4661, 7531, 589, 7574, 7130, 2]
+// Dependencies: [19, 4669, 21, 4668, 7569, 589, 7612, 7168, 2]
 // Exports: default
 
-// Module 7573 (BurstReactionAnimation)
-import "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7611 (BurstReactionAnimation)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import _generateAnimationSource from "_generateAnimationSource" /* 7569 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_5 = createCacheKey.createStyles({ content: { width: "100%" } });
-const result = require("jsxProd").fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimation.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimation.tsx");
 
 export default function BurstReactionAnimation(arg0) {
-  let channelId;
-  let emoji;
-  let isFullscreen;
-  let messageId;
-  let onComplete;
-  let withFadeOut;
   ({ onComplete, withFadeOut } = arg0);
   ({ channelId, messageId, emoji, isFullscreen } = arg0);
   if (withFadeOut === undefined) {
     withFadeOut = true;
   }
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(7531) /* _generateAnimationSource */;
+  let obj = _generateAnimationSource;
   const burstReactionAnimationSource = obj.useBurstReactionAnimationSource({ emoji, messageId, channelId, isFullscreen });
-  require(589) /* initialize */;
-  [][0] = maybeApplyNoTextColorForLightCustomTheme;
+  initialize;
+  [][0] = closure_3;
   if (null == burstReactionAnimationSource) {
     return null;
   } else {
@@ -41,7 +38,7 @@ export default function BurstReactionAnimation(arg0) {
       obj = { onAnimationFinish: null };
       obj[0] = onComplete;
     }
-    const obj1 = { style: null, loop: false, speed: null };
+    obj1 = { style: null, loop: false, speed: null };
     obj1[0] = tmp2.content;
     let num = 1.2;
     if (tmp6) {
@@ -51,7 +48,7 @@ export default function BurstReactionAnimation(arg0) {
     const merged1 = Object.assign(merged);
     const merged2 = Object.assign(obj);
     obj1.source = burstReactionAnimationSource;
-    return jsx(importDefault(withFadeOut ? 7574 : 7130), { style: null, loop: false, speed: null });
+    return jsx(importDefault(withFadeOut ? 7612 : 7168), { style: null, loop: false, speed: null });
   }
   tmp2 = callback();
 };

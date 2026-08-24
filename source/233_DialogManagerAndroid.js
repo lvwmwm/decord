@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 233 (DialogManagerAndroid)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("DialogManagerAndroid");
+
+export default getAll.get("DialogManagerAndroid");

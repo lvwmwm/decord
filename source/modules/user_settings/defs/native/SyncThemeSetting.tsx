@@ -1,34 +1,39 @@
-// Module ID: 14654
-// Function ID: 14655
+// Module ID: 14722
+// Function ID: 14723
 // Name: toggle
-// Dependencies: [4195, 1303, 1302, 1340, 8198, 676, 1367, 589, 1236, 14655, 9365, 10669, 2]
+// Dependencies: [4199, 1303, 1302, 1340, 8238, 676, 1367, 589, 1236, 14723, 9402, 10708, 2]
 
-// Module 14654 (toggle)
-import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
-import initialize from "initialize";
-import handleThemeChange from "handleThemeChange";
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import { AnalyticEvents } from "ME";
-import createToggle from "createToggle";
+// Module 14722 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 9402 */;
+import track from "track" /* 14723 */;
+import closure_3 from "isSyncedModeThemesEnabled" /* 4199 */;
+import closure_4 from "initialize" /* 1303 */;
+import closure_5 from "handleThemeChange" /* 1302 */;
+import closure_6 from "handleConnectionClosedOrResumed" /* 1340 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["3340dY"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["3340dY"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   useIsDisabled: function useSyncThemeDisabled() {
-    let stateFromStores = importDefault(1367)("SyncThemeSetting");
-    const items = [handleThemeChange];
+    let stateFromStores = useIsMobileVisualRefreshExperimentEnabledDefault("SyncThemeSetting");
+    const items = [closure_5];
     if (stateFromStores) {
       stateFromStores = obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
     }
     return stateFromStores;
   },
   useValue: function useSyncThemeAcrossClientsValue() {
-    const items = [initialize];
-    return require(589) /* initialize */.useStateFromStores(items, () => false !== initialize.shouldSync("appearance"));
+    const items = [closure_4];
+    return initialize.useStateFromStores(items, () => false !== closure_4.shouldSync("appearance"));
   },
   onValueChange: function onSyncThemeAcrossClientsValueChange(is_sync_enabled) {
     gradientPreset = gradientPreset.gradientPreset;
@@ -47,17 +52,17 @@ createToggle = {
         prop = clientThemeSettings.customUserThemeSettings;
       }
     }
-    let obj = require(14655) /* track */;
+    let obj = track;
     obj = { is_sync_enabled, base_theme: theme.theme, client_theme: id, has_custom_theme: null != prop };
     obj.track(AnalyticEvents.SYNC_ACROSS_CLIENTS_TOGGLED, obj);
-    const result = importDefault(9365).setShouldSyncAppearanceSettings(is_sync_enabled);
+    const result = saveGuildFoldersDefault.setShouldSyncAppearanceSettings(is_sync_enabled);
   },
   useDescription: function useSyncThemeAcrossClientsDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.CRtkeH).trim();
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.CRtkeH).trim();
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-let result = require("handleThemeChange").fileFinishedImporting("modules/user_settings/defs/native/SyncThemeSetting.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/SyncThemeSetting.tsx");
 
 export default createToggle;

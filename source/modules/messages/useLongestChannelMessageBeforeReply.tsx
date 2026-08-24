@@ -1,23 +1,23 @@
-// Module ID: 11618
-// Function ID: 11619
+// Module ID: 11667
+// Function ID: 11668
 // Name: useLongestChannelMessageBeforeReply
-// Dependencies: [4994, 589, 2]
+// Dependencies: [4999, 589, 2]
 // Exports: useLongestChannelMessageBeforeReply
 
-// Module 11618 (useLongestChannelMessageBeforeReply)
-import reinjectEphemerals from "reinjectEphemerals";
+// Module 11667 (useLongestChannelMessageBeforeReply)
+import closure_2 from "reinjectEphemerals" /* 4999 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/useLongestChannelMessageBeforeReply.tsx");
 
 export const useLongestChannelMessageBeforeReply = function useLongestChannelMessageBeforeReply(id, recipientId) {
   const _require = id;
-  const dependencyMap = recipientId;
-  const items = [reinjectEphemerals];
+  dependencyMap = recipientId;
+  const items = [closure_2];
   const items1 = [id, recipientId];
   return _require(589).useStateFromStores(items, () => {
     if (null != closure_1) {
-      const messages = outer1_2.getMessages(closure_0);
+      const messages = closure_1_2.getMessages(closure_0);
       const findOldestResult = messages.findOldest((author) => author.author.id === closure_1);
       let tmp4 = findOldestResult;
       if (null != findOldestResult) {

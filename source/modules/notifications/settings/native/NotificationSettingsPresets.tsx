@@ -1,17 +1,16 @@
-// Module ID: 10093
-// Function ID: 10094
+// Module ID: 10132
+// Function ID: 10133
 // Name: NotificationSettingsPresets
-// Dependencies: [19, 17, 21, 1236, 5046, 4335, 10094, 10001, 4661, 712, 8799, 4734, 4745, 10096, 10098, 10090, 2]
+// Dependencies: [19, 17, 21, 1236, 5051, 4339, 10133, 10040, 4668, 712, 8836, 4739, 4750, 10135, 10137, 10129, 2]
 // Exports: NotificationSettingsChannelPresets, NotificationSettingsGuildPresets
 
-// Module 10093 (NotificationSettingsPresets)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10132 (NotificationSettingsPresets)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_2 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
 function NotificationSettingsPresets(preset) {
   const _require = preset;
@@ -27,7 +26,7 @@ function NotificationSettingsPresets(preset) {
     }
     num = num2;
   }
-  let tmp = createCacheKey();
+  let tmp = callback3();
   let obj = {
     pageWidth: 0,
     onSetActiveIndex(arg0) {
@@ -62,7 +61,7 @@ function NotificationSettingsPresets(preset) {
   obj[1] = _require(num[4]).Presets.ALL_MESSAGES;
   obj[2] = callback(_require(num[5]).CircleCheckIcon, {});
   const items = [obj, , ];
-  const obj1 = { label: null, id: null, icon: null, page: null };
+  obj1 = { label: null, id: null, icon: null, page: null };
   const intl2 = tmp2(tmp3[3]).intl;
   obj1[0] = intl2.string(_require(num[3]).t.y59NJm);
   obj1[1] = _require(num[4]).Presets.MENTIONS;
@@ -120,26 +119,28 @@ function NotificationSettingsPresets(preset) {
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { customContainer: null };
-createCacheKey = { padding: 16, minHeight: 82, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.lg + 8, backgroundColor: require("Themes").colors.REDESIGN_INPUT_CONTROL_ACTIVE_BG };
+createCacheKey = { padding: 16, minHeight: 82, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.lg + 8, backgroundColor: ThemesDefault.colors.REDESIGN_INPUT_CONTROL_ACTIVE_BG };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsPresets.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsPresets.tsx");
 
 export const NotificationSettingsGuildPresets = function NotificationSettingsGuildPresets(guildId) {
   const _require = guildId;
-  const obj = { preset: null, updatePreset: null };
-  obj[0] = _require(10098).useGuildPresetSettings(guildId.guildId).preset;
-  obj[1] = function updatePreset(arg0) {
-    return guildId(outer1_1[14]).updateGuildPreset(guildId.guildId, arg0);
+  const obj = {
+    preset: _require(10137).useGuildPresetSettings(guildId.guildId).preset,
+    updatePreset(arg0) {
+      return guildId(closure_1_1[14]).updateGuildPreset(guildId.guildId, arg0);
+    }
   };
   return callback(NotificationSettingsPresets, obj);
 };
 export const NotificationSettingsChannelPresets = function NotificationSettingsChannelPresets(channel) {
   const _require = channel;
-  const obj = { preset: null, updatePreset: null };
-  obj[0] = _require(10090).useChannelPresetSettings(channel.channel).preset;
-  obj[1] = function updatePreset(arg0) {
-    return channel(outer1_1[15]).updateChannelPreset(channel.channel.guild_id, channel.channel.id, arg0);
+  const obj = {
+    preset: _require(10129).useChannelPresetSettings(channel.channel).preset,
+    updatePreset(arg0) {
+      return channel(closure_1_1[15]).updateChannelPreset(channel.channel.guild_id, channel.channel.id, arg0);
+    }
   };
   return callback(NotificationSettingsPresets, obj);
 };

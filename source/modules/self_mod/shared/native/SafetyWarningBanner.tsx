@@ -1,19 +1,15 @@
-// Module ID: 10584
-// Function ID: 10585
+// Module ID: 10623
+// Function ID: 10624
 // Name: SafetyWarningBanner
-// Dependencies: [19, 17, 21, 4661, 712, 5006, 5011, 10582, 1236, 1297, 10585, 10586, 4734, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 5011, 5016, 10621, 1236, 1297, 10624, 10625, 4739, 4750, 2]
 
-// Module 10584 (SafetyWarningBanner)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10623 (SafetyWarningBanner)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 class SafetyWarningBanner {
   constructor(arg0) {
@@ -24,7 +20,7 @@ class SafetyWarningBanner {
     onDismiss = global.onDismiss;
     buttons = global.buttons;
     ({ header, description } = global);
-    tmp = jsxs();
+    tmp = closure_9();
     effect = warningType.useEffect(() => {
       let obj = warningId(senderId[5]);
       obj = { name: channelId(senderId[6]).MetricEvents.SAFETY_WARNING_VIEW };
@@ -52,9 +48,7 @@ class SafetyWarningBanner {
     };
     intl = require("getSystemLocale").intl;
     obj[2] = intl.string(require("getSystemLocale").t["1UatJ0"]);
-    obj1 = { style: tmp.closeButtonIcon, source: null, size: null };
-    obj1[1] = require("registerAsset");
-    obj1[2] = require("Button").IconSizes.MEDIUM;
+    obj1 = { style: tmp.closeButtonIcon, source: require("registerAsset"), size: require("Button").IconSizes.MEDIUM };
     obj[3] = jsx(require("Button").Icon, obj1);
     items1 = [, , ];
     items1[0] = jsx(Pressable, obj);
@@ -90,26 +84,26 @@ class SafetyWarningBanner {
   }
 }
 ({ Image: c4, Pressable: c5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: null, contentContainer: null, safetyShieldIconContainer: null, safetyShieldIcon: null, textContainer: null, text: null, closeButton: null, closeButtonIcon: null, buttonsContainer: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_12 };
-const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST, paddingHorizontal: ThemesDefault.space.PX_16, paddingVertical: ThemesDefault.space.PX_12 };
+const merged = Object.assign(ThemesDefault.shadows.SHADOW_LOW);
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexDirection: "row", alignItems: "center" };
 createCacheKey[2] = { width: 42, height: 50 };
 createCacheKey[3] = { flex: 1, width: "auto", height: "auto" };
-createCacheKey[4] = { flex: 1, marginLeft: require("Themes").space.PX_16, marginRight: require("Themes").space.PX_40 };
-let obj1 = { flex: 1, marginLeft: require("Themes").space.PX_16, marginRight: require("Themes").space.PX_40 };
-createCacheKey[5] = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
-let obj2 = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
-createCacheKey[6] = { position: "absolute", top: require("Themes").space.PX_8, right: require("Themes").space.PX_16, zIndex: 1 };
-let obj3 = { position: "absolute", top: require("Themes").space.PX_8, right: require("Themes").space.PX_16, zIndex: 1 };
-createCacheKey[7] = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-let obj4 = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-createCacheKey[8] = { flexDirection: "row", marginTop: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj5 = { flexDirection: "row", marginTop: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
-const result = require("jsxProd").fileFinishedImporting("modules/self_mod/shared/native/SafetyWarningBanner.tsx");
+createCacheKey[4] = { flex: 1, marginLeft: ThemesDefault.space.PX_16, marginRight: ThemesDefault.space.PX_40 };
+let obj1 = { flex: 1, marginLeft: ThemesDefault.space.PX_16, marginRight: ThemesDefault.space.PX_40 };
+createCacheKey[5] = { color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+let obj2 = { color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[6] = { position: "absolute", top: ThemesDefault.space.PX_8, right: ThemesDefault.space.PX_16, zIndex: 1 };
+let obj3 = { position: "absolute", top: ThemesDefault.space.PX_8, right: ThemesDefault.space.PX_16, zIndex: 1 };
+createCacheKey[7] = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+let obj4 = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[8] = { flexDirection: "row", marginTop: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8 };
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+let obj5 = { flexDirection: "row", marginTop: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8 };
+const result = require("set").fileFinishedImporting("modules/self_mod/shared/native/SafetyWarningBanner.tsx");
 
 export default SafetyWarningBanner;
 export { SafetyWarningBanner };

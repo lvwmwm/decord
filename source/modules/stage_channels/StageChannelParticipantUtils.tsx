@@ -1,13 +1,16 @@
-// Module ID: 12521
-// Function ID: 12522
+// Module ID: 12575
+// Function ID: 12576
 // Name: participantMemberInfo
-// Dependencies: [687, 4219, 1236, 2]
+// Dependencies: [687, 4223, 1236, 2]
 // Exports: participantMemberInfo
 
-// Module 12521 (participantMemberInfo)
-const require = arg1;
-const DAY = require("set").Millis.DAY;
-const result = require("getSystemLocale").fileFinishedImporting("modules/stage_channels/StageChannelParticipantUtils.tsx");
+// Module 12575 (participantMemberInfo)
+import setDefault from "set" /* 687 */;
+import nameFromUser from "nameFromUser" /* 4223 */;
+
+require = arg1;
+const DAY = setDefault.Millis.DAY;
+const result = require("set").fileFinishedImporting("modules/stage_channels/StageChannelParticipantUtils.tsx");
 
 export const participantMemberInfo = function participantMemberInfo(participant) {
   if (obj.isNewUser(participant.user)) {
@@ -51,5 +54,5 @@ export const participantMemberInfo = function participantMemberInfo(participant)
     }
     return stringResult;
   }
-  obj = require(4219) /* nameFromUser */;
+  obj = nameFromUser;
 };

@@ -1,23 +1,19 @@
-// Module ID: 12074
-// Function ID: 12075
-// Dependencies: [32, 19, 17, 21, 4661, 712, 4734, 1236, 12075, 2]
+// Module ID: 12126
+// Function ID: 12127
+// Dependencies: [32, 19, 17, 21, 4668, 712, 4739, 1236, 12127, 2]
 
-// Module 12074
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12126
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 let c4 = importAllResult;
 ({ View: c5, ActivityIndicator: closure_6, StyleSheet } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let obj = { loader: null, loaderIndicator: null, loaderText: null };
 obj = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -26,16 +22,12 @@ obj.alignItems = "center";
 obj.justifyContent = "center";
 obj.backgroundColor = "rgba(0, 0, 0, 0.7)";
 obj[0] = obj;
-createCacheKey = { marginTop: require("Themes").space.PX_12 };
+createCacheKey = { marginTop: ThemesDefault.space.PX_12 };
 obj[1] = createCacheKey;
 obj[2] = { textAlign: "center" };
 let closure_9 = createCacheKey.createStyles(obj);
 let closure_10 = { None: 0, [0]: "None", Loading: 1, [1]: "Loading", Loaded: 2, [2]: "Loaded", Error: 3, [3]: "Error" };
 const memoResult = importAllResult.memo(function MediaModalLoader(onLoad) {
-  let c5;
-  let onLoadStart;
-  let style;
-  let tmp8;
   ({ style, onLoadStart } = onLoad);
   onLoad = onLoad.onLoad;
   const onError = onLoad.onError;
@@ -46,9 +38,9 @@ const memoResult = importAllResult.memo(function MediaModalLoader(onLoad) {
   const source = onLoad.source;
   const merged = Object.assign(onLoad, Object.create(null));
   let first;
-  let importAllResult;
+  importAllResult = undefined;
   c5 = undefined;
-  let closure_6;
+  closure_6 = undefined;
   const tmp2 = callback2();
   const tmp5 = first(importAllResult.useState(closure_10.None), 2);
   first = tmp5[0];
@@ -66,11 +58,11 @@ const memoResult = importAllResult.memo(function MediaModalLoader(onLoad) {
     nativeEvent = nativeEvent.nativeEvent;
     _undefined(100 * nativeEvent.loaded / nativeEvent.total);
   }, []);
-  callback2 = importAllResult.useCallback(() => callback(outer1_10.Loaded), []);
+  callback2 = importAllResult.useCallback(() => callback(closure_1_10.Loaded), []);
   const items = [first, onLoadStart, onError, onLoad];
-  const callback3 = importAllResult.useCallback(() => callback(outer1_10.Error), []);
+  const callback3 = importAllResult.useCallback(() => callback(closure_1_10.Error), []);
   const effect = importAllResult.useEffect(() => {
-    if (outer1_10.Loading === first) {
+    if (closure_1_10.Loading === first) {
       if (onLoadStart != null) {
         tmp9();
       }
@@ -96,7 +88,7 @@ const memoResult = importAllResult.memo(function MediaModalLoader(onLoad) {
     obj[1] = callback(onLoadStart(onError[6]).Text, obj);
     let tmp28Result1 = callback(c5, obj);
   } else {
-    const obj1 = {};
+    obj1 = {};
     const merged1 = Object.assign(merged);
     obj1.style = style;
     obj1.source = source;
@@ -143,6 +135,6 @@ const memoResult = importAllResult.memo(function MediaModalLoader(onLoad) {
   }
   return tmp28Result1;
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/media_viewer/native/components/MediaModalLoader.tsx");
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/components/MediaModalLoader.tsx");
 
 export default memoResult;

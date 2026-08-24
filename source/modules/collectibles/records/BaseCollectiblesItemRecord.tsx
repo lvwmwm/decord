@@ -4,8 +4,9 @@
 // Dependencies: [1931, 2]
 
 // Module 1948 (fromServer)
-import "toJS";
+import toJSDefault from "toJS" /* 1931 */;
 
+toJSDefault;
 let prototype;
 prototype = function BaseCollectiblesItemRecord(skuId) {
   const tmp = new prototype(new.target);

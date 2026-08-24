@@ -1,34 +1,34 @@
-// Module ID: 9689
-// Function ID: 9690
+// Module ID: 9728
+// Function ID: 9729
 // Name: useIsUserSecureFramesVerified
-// Dependencies: [1218, 4539, 9690, 9726, 589, 9729, 4531, 2]
+// Dependencies: [1218, 4544, 9729, 9765, 589, 9768, 4536, 2]
 // Exports: useIsCallSecureFramesVerified, useIsStreamSecureFramesVerified, useIsUserSecureFramesVerified
 
-// Module 9689 (useIsUserSecureFramesVerified)
-import fetchFingerprint from "fetchFingerprint";
-import createRTCConnection from "createRTCConnection";
-import computeCallVerification from "computeCallVerification";
+// Module 9728 (useIsUserSecureFramesVerified)
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "createRTCConnection" /* 4544 */;
+import closure_4 from "computeCallVerification" /* 9729 */;
 
 const require = arg1;
-const result = require("computeCallVerification").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesVerified.tsx");
+const result = require("set").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesVerified.tsx");
 
 export const useIsUserSecureFramesVerified = function useIsUserSecureFramesVerified(channelId) {
   const userId = channelId.userId;
   let isSecureFramesUIEnabled;
   isSecureFramesUIEnabled = userId(isSecureFramesUIEnabled[3]).useIsSecureFramesUIEnabled({ channelId: channelId.channelId });
   const obj = userId(isSecureFramesUIEnabled[3]);
-  const items = [computeCallVerification, fetchFingerprint, createRTCConnection];
+  const items = [closure_4, closure_2, closure_3];
   const items1 = [isSecureFramesUIEnabled, userId];
   return userId(isSecureFramesUIEnabled[4]).useStateFromStores(items, () => {
     let isUserConnectedResult = null != userId && isSecureFramesUIEnabled;
     if (isUserConnectedResult) {
-      isUserConnectedResult = outer1_3.isUserConnected(tmp);
+      isUserConnectedResult = closure_1_3.isUserConnected(tmp);
     }
     if (isUserConnectedResult) {
-      isUserConnectedResult = outer1_2.getId() !== tmp;
+      isUserConnectedResult = closure_1_2.getId() !== tmp;
     }
     if (isUserConnectedResult) {
-      isUserConnectedResult = outer1_4.isUserVerified(tmp);
+      isUserConnectedResult = closure_1_4.isUserVerified(tmp);
     }
     return isUserConnectedResult;
   }, items1);
@@ -41,7 +41,7 @@ export const useIsStreamSecureFramesVerified = function useIsStreamSecureFramesV
   const obj = streamKey(isSecureFramesUIEnabled[3]);
   isStreamRTCConnectionEmpty = streamKey(isSecureFramesUIEnabled[5]).useIsStreamRTCConnectionEmpty(streamKey);
   const obj2 = streamKey(isSecureFramesUIEnabled[5]);
-  const items = [computeCallVerification, isStreamRTCConnectionEmpty];
+  const items = [closure_4, isStreamRTCConnectionEmpty];
   const items1 = [isStreamRTCConnectionEmpty, isSecureFramesUIEnabled, streamKey];
   return streamKey(isSecureFramesUIEnabled[4]).useStateFromStores(items, () => {
     if (isSecureFramesUIEnabled) {
@@ -52,7 +52,7 @@ export const useIsStreamSecureFramesVerified = function useIsStreamSecureFramesV
           const id = isStreamRTCConnectionEmpty.getId();
           let isStreamVerifiedResult = streamKey(isSecureFramesUIEnabled[6]).decodeStreamKey(tmp2).ownerId !== id;
           if (isStreamVerifiedResult) {
-            isStreamVerifiedResult = outer1_4.isStreamVerified(tmp2);
+            isStreamVerifiedResult = closure_1_4.isStreamVerified(tmp2);
           }
           return isStreamVerifiedResult;
         }
@@ -68,7 +68,7 @@ export const useIsCallSecureFramesVerified = function useIsCallSecureFramesVerif
   const obj = isSecureFramesUIEnabled(isCallRTCConnectionEmpty[3]);
   isCallRTCConnectionEmpty = isSecureFramesUIEnabled(isCallRTCConnectionEmpty[5]).useIsCallRTCConnectionEmpty();
   const obj2 = isSecureFramesUIEnabled(isCallRTCConnectionEmpty[5]);
-  const items = [computeCallVerification];
+  const items = [closure_4];
   const items1 = [isCallRTCConnectionEmpty, isSecureFramesUIEnabled];
   return isSecureFramesUIEnabled(isCallRTCConnectionEmpty[4]).useStateFromStores(items, () => {
     let tmp = !isSecureFramesUIEnabled;
@@ -77,7 +77,7 @@ export const useIsCallSecureFramesVerified = function useIsCallSecureFramesVerif
     }
     let isCallVerifiedResult = !tmp;
     if (!tmp) {
-      isCallVerifiedResult = outer1_4.isCallVerified();
+      isCallVerifiedResult = closure_1_4.isCallVerified();
     }
     return isCallVerifiedResult;
   }, items1);

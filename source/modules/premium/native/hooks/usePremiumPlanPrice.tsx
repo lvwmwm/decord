@@ -1,34 +1,32 @@
-// Module ID: 7934
-// Function ID: 7935
+// Module ID: 7973
+// Function ID: 7974
 // Name: usePremiumPlanPrice
-// Dependencies: [19, 4044, 4045, 5319, 505, 589, 7696, 7935, 7936, 5322, 500, 7127, 584, 7223, 5316, 2]
+// Dependencies: [19, 4047, 4048, 5324, 505, 589, 7734, 7974, 7975, 5327, 500, 7165, 584, 7261, 5321, 2]
 // Exports: default
 
-// Module 7934 (usePremiumPlanPrice)
-import noop from "noop";
-import addSubscriptionPlan from "addSubscriptionPlan";
-import reset from "reset";
-import updateProduct from "updateProduct";
-import { PaymentGateways } from "sum";
+// Module 7973 (usePremiumPlanPrice)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "addSubscriptionPlan" /* 4047 */;
+import closure_5 from "reset" /* 4048 */;
+import closure_6 from "updateProduct" /* 5324 */;
+import { PaymentGateways } from "sum" /* 505 */;
 
 const require = arg1;
-const result = require("reset").fileFinishedImporting("modules/premium/native/hooks/usePremiumPlanPrice.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/hooks/usePremiumPlanPrice.tsx");
 
 export default function usePremiumPlanPrice(arg0) {
-  let price;
-  let priceState;
   const _require = arg0;
   let formatPrice = _require;
   let amount = priceState;
   let obj = _require(priceState[5]);
-  const items = [reset];
-  const stateFromStores = obj.useStateFromStores(items, () => tmp10.getPremiumTypeSubscription());
+  const items = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_5.getPremiumTypeSubscription());
   const NitroACOMSubscriptionExperiment = _require(priceState[6]).NitroACOMSubscriptionExperiment;
   let enabled = NitroACOMSubscriptionExperiment.useConfig({ location: "usePremiumPlanPrice" }).enabled;
   storeFront = storeFront(priceState[7]).useNativeIAPPayments().storeFront;
   const obj2 = storeFront(priceState[7]);
   const tmp2 = storeFront;
-  const items1 = [addSubscriptionPlan];
+  const items1 = [closure_4];
   const items2 = [arg0];
   const stateFromStores1 = _require(priceState[5]).useStateFromStores(items1, () => {
     let value = null;
@@ -46,12 +44,12 @@ export default function usePremiumPlanPrice(arg0) {
   }
   const React = tmp6;
   const tmp4 = storeFront(priceState[8])(stateFromStores1, storeFront);
-  const items3 = [updateProduct];
+  const items3 = [closure_6];
   const items4 = [tmp6];
   const stateFromStores2 = formatPrice(amount[5]).useStateFromStores(items3, () => {
     let product = null;
-    if (null != noop) {
-      product = outer1_6.getProduct(tmp);
+    if (null != closure_3) {
+      product = closure_1_6.getProduct(tmp);
     }
     return product;
   }, items4);
@@ -67,12 +65,12 @@ export default function usePremiumPlanPrice(arg0) {
     }
     isIOSResult = enabled;
   }
-  addSubscriptionPlan = isIOSResult;
+  closure_4 = isIOSResult;
   const tmp10 = tmp2(amount[11])(() => new storeFront(priceState[12])(500, 10000));
-  reset = tmp10;
+  closure_5 = tmp10;
   const items5 = [isIOSResult, priceState, storeFront, tmp10];
   const effect = React.useEffect(() => {
-    if (addSubscriptionPlan) {
+    if (closure_4) {
       if (priceState !== callback(priceState[8]).PriceStates.PRICE_AVAILABLE) {
         if (tmp === tmp2(tmp3[8]).PriceStates.MISMATCHING_COUNTRIES) {
           let country;
@@ -80,21 +78,21 @@ export default function usePremiumPlanPrice(arg0) {
             country = tmp6.country;
           }
           if (null != country) {
-            if (!tmp10.pending) {
+            if (!closure_5.pending) {
               if (!isIOSResult.isFetchingForPremiumSKUs()) {
                 if (obj.fails < 3) {
                   country = tmp6.country;
                   obj.fail(() => {
                     if (!isIOSResult.isFetchingForPremiumSKUs()) {
                       const obj = country(priceState[13]);
-                      const premiumSubscriptionPlans = obj.fetchPremiumSubscriptionPlans(country, undefined, undefined, outer2_7.APPLE_ADVANCED_COMMERCE);
+                      const premiumSubscriptionPlans = obj.fetchPremiumSubscriptionPlans(country, undefined, undefined, closure_2_7.APPLE_ADVANCED_COMMERCE);
                       premiumSubscriptionPlans.catch(() => {
 
                       });
                     }
                   });
                   return () => {
-                    reset.cancel();
+                    closure_5.cancel();
                   };
                 }
               }
@@ -102,7 +100,7 @@ export default function usePremiumPlanPrice(arg0) {
           }
         }
       } else {
-        tmp10.succeed();
+        closure_5.succeed();
       }
     }
   }, items5);

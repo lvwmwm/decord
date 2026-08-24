@@ -1,53 +1,55 @@
-// Module ID: 12802
-// Function ID: 12803
+// Module ID: 12857
+// Function ID: 12858
 // Name: UserPreview
-// Dependencies: [19, 17, 21, 4661, 712, 4223, 4734, 1236, 1297, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4227, 4739, 1236, 1297, 2]
 // Exports: default
 
-// Module 12802 (UserPreview)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12857 (UserPreview)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
+import Text from "Text" /* 4739 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 createCacheKey = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: null, title: null, userContainer: null, userProfileInfo: null };
-createCacheKey = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey = { color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { lineHeight: 16, marginBottom: 8 };
-createCacheKey[3] = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: require("Themes").radii.sm, borderWidth: 1, padding: 12 };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: ThemesDefault.radii.sm, borderWidth: 1, padding: 12 };
 createCacheKey[4] = { marginLeft: 8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: require("Themes").radii.sm, borderWidth: 1, padding: 12 };
-const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUserPreview.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: ThemesDefault.radii.sm, borderWidth: 1, padding: 12 };
+const result = require("set").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUserPreview.tsx");
 
 export default function UserPreview(user) {
   user = user.user;
-  const tmp = createCacheKey();
-  let obj = require(4223) /* hexToRgba */;
+  const tmp = callback2();
+  let obj = hexToRgba;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.Rsth7z).toUpperCase();
-  const items = [callback(require(4734) /* Text */.Text, obj), ];
-  const obj1 = { style: items1, children: null };
+  obj[3] = intl.string(getSystemLocale.t.Rsth7z).toUpperCase();
+  const items = [callback(Text.Text, obj), ];
+  obj1 = { style: items1, children: null };
   items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  const obj2 = { size: null, user: null, guildId: "Array" };
-  obj2[0] = require(1297) /* Button */.AvatarSizes.LARGE_48;
-  obj2[1] = user;
-  const items2 = [callback(require(1297) /* Button */.Avatar, obj2), ];
+  const str = intl.string(getSystemLocale.t.Rsth7z);
+  const items2 = [callback(Button.Avatar, { size: Button.AvatarSizes.LARGE_48, user, guildId: "Array" }), ];
   const obj3 = { style: tmp.userProfileInfo, children: null };
   let tmp7Result = null != user.globalName;
   if (tmp7Result) {
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj4[2] = user.globalName;
-    tmp7Result = tmp7(tmp2(4734).Text, obj4);
+    tmp7Result = tmp7(tmp2(4739).Text, obj4);
   }
-  const items3 = [tmp7Result, callback(require(4734) /* Text */.Text, { color: "text-default", variant: "text-sm/normal", children: user.username })];
+  const items3 = [tmp7Result, callback(Text.Text, { color: "text-default", variant: "text-sm/normal", children: user.username })];
   obj3[1] = items3;
   items2[1] = closure_4(View, obj3);
   obj1[1] = items2;

@@ -1,21 +1,25 @@
-// Module ID: 13269
-// Function ID: 13270
+// Module ID: 13327
+// Function ID: 13328
 // Name: initialize
-// Dependencies: [7250, 676, 687, 4066, 709, 589, 2]
+// Dependencies: [7288, 676, 687, 4069, 709, 589, 2]
 
-// Module 13269 (initialize)
-import filterPlayingActivities from "filterPlayingActivities";
-import { StatusTypes } from "ME";
-import { PersistedStore } from "initialize";
+// Module 13327 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import closure_3 from "filterPlayingActivities" /* 7288 */;
+import { StatusTypes } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 let closure_5 = [];
 let c6 = false;
+const PersistedStore = initializeDefault.PersistedStore;
 class HabitualDNDStore extends PersistedStore {
 }
 const prototype = HabitualDNDStore.prototype;
 prototype["initialize"] = function initialize(sessionStartsWithDND) {
-  this.waitFor(filterPlayingActivities);
+  this.waitFor(closure_3);
   let isArray = null != sessionStartsWithDND;
   if (isArray) {
     const _Array = Array;
@@ -33,16 +37,16 @@ prototype["getState"] = function getState() {
 };
 prototype["getTemp"] = function getTemp() {
   const obj = { x: null };
-  const StatusExpiresAtSetting = require(4066) /* explicitContentFromProto */.StatusExpiresAtSetting;
+  const StatusExpiresAtSetting = explicitContentFromProto.StatusExpiresAtSetting;
   obj[0] = StatusExpiresAtSetting.getSetting();
   return obj;
 };
 HabitualDNDStore.displayName = "HabitualDNDStore";
 HabitualDNDStore.persistKey = "habitualDND";
-const habitualDNDStore = new HabitualDNDStore(require("dispatcher"), {
+const habitualDNDStore = new HabitualDNDStore(dispatcherDefault, {
   POST_CONNECTION_OPEN: function handleConnect() {
     if (status.getStatus() === StatusTypes.DND) {
-      const StatusExpiresAtSetting = require(4066) /* explicitContentFromProto */.StatusExpiresAtSetting;
+      const StatusExpiresAtSetting = explicitContentFromProto.StatusExpiresAtSetting;
       if ("0" === StatusExpiresAtSetting.getSetting()) {
         const _Date = Date;
         arr = arr.push(Date.now());
@@ -62,7 +66,7 @@ const habitualDNDStore = new HabitualDNDStore(require("dispatcher"), {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
             callback(709).dispatch({ type: "HABITUAL_DND_CLEAR" });
-          }, 15 * importDefault(687).Millis.SECOND);
+          }, 15 * setDefault.Millis.SECOND);
         }
       }
     }
@@ -76,7 +80,7 @@ const habitualDNDStore = new HabitualDNDStore(require("dispatcher"), {
         return arg0 < timestamp - 3 * callback(table[2]).Millis.DAY;
       });
     }
-    let c6 = someResult;
+    c6 = someResult;
     arr = [];
   }
 });

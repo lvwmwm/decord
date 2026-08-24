@@ -1,37 +1,39 @@
-// Module ID: 4548
-// Function ID: 4549
+// Module ID: 4553
+// Function ID: 4554
 // Name: sleep
-// Dependencies: [5, 4549, 653, 4550, 2]
+// Dependencies: [5, 4554, 653, 4555, 2]
 // Exports: convertMinutesToGivenTimeUnit, getTimeAndUnit, getTimeUnit
 
-// Module 4548 (sleep)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import tryCatch from "tryCatch";
+// Module 4553 (sleep)
+import u from "u" /* 653 */;
+import findLastIndexDefault from "findLastIndex" /* 4555 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import tryCatch from "tryCatch" /* 4554 */;
 
-let require = arg1;
+require = arg1;
 function sleep(num) {
   let asMillisecondsResult = num;
   if (typeof num !== "number") {
     asMillisecondsResult = num.asMilliseconds();
   }
-  const require = asMillisecondsResult;
+  require = asMillisecondsResult;
   return new Promise((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const timerId = setTimeout(() => callback(), closure_0);
   });
 }
 let c4 = 3600000;
 function now() {
-  const _performance = require(653) /* u */.performance;
-  return Math.floor(require(653) /* u */.timeOrigin + _performance.now());
+  const _performance = u.performance;
+  return Math.floor(u.timeOrigin + _performance.now());
 }
 const fn = () => Object.create(new.target.prototype);
 fn.prototype["now"] = function now() {
   if (typeof now !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const _performance = require(653) /* u */.performance;
-  return Math.floor(require(653) /* u */.timeOrigin + _performance.now());
+  const _performance = u.performance;
+  return Math.floor(u.timeOrigin + _performance.now());
 };
 let obj = Object.create(fn.prototype);
 let TimeSpan;
@@ -54,13 +56,13 @@ class TimeSpan {
       return obj.milliseconds / 1000 / 60 / 60;
     };
     obj.add = function add(milliseconds) {
-      return outer1_12.fromMilliseconds(obj.milliseconds + milliseconds.milliseconds);
+      return closure_1_12.fromMilliseconds(obj.milliseconds + milliseconds.milliseconds);
     };
     obj.subtract = function subtract(milliseconds) {
-      return outer1_12.fromMilliseconds(obj.milliseconds - milliseconds.milliseconds);
+      return closure_1_12.fromMilliseconds(obj.milliseconds - milliseconds.milliseconds);
     };
     obj.subtractOrZero = function subtractOrZero(milliseconds) {
-      return outer1_12.fromMilliseconds(Math.max(obj.milliseconds - milliseconds.milliseconds, 0));
+      return closure_1_12.fromMilliseconds(Math.max(obj.milliseconds - milliseconds.milliseconds, 0));
     };
     if (!importAll) {
       num = 0;
@@ -96,7 +98,7 @@ TimeSpan.fromMilliseconds = function fromMilliseconds(timePassed) {
     HermesBuiltin.throwTypeError();
   }
   let num = timePassed;
-  const obj = Object.create(TimeSpan.prototype);
+  obj = Object.create(TimeSpan.prototype);
   obj.milliseconds = 0;
   obj.asMilliseconds = function asMilliseconds() {
     return obj.milliseconds;
@@ -111,13 +113,13 @@ TimeSpan.fromMilliseconds = function fromMilliseconds(timePassed) {
     return obj.milliseconds / 1000 / 60 / 60;
   };
   obj.add = function add(milliseconds) {
-    return outer1_12.fromMilliseconds(obj.milliseconds + milliseconds.milliseconds);
+    return closure_1_12.fromMilliseconds(obj.milliseconds + milliseconds.milliseconds);
   };
   obj.subtract = function subtract(milliseconds) {
-    return outer1_12.fromMilliseconds(obj.milliseconds - milliseconds.milliseconds);
+    return closure_1_12.fromMilliseconds(obj.milliseconds - milliseconds.milliseconds);
   };
   obj.subtractOrZero = function subtractOrZero(milliseconds) {
-    return outer1_12.fromMilliseconds(Math.max(obj.milliseconds - milliseconds.milliseconds, 0));
+    return closure_1_12.fromMilliseconds(Math.max(obj.milliseconds - milliseconds.milliseconds, 0));
   };
   if (!timePassed) {
     num = 0;
@@ -128,11 +130,10 @@ TimeSpan.fromMilliseconds = function fromMilliseconds(timePassed) {
   return obj;
 };
 TimeSpan.fromSeconds = function fromSeconds(arg0) {
-  let milliseconds;
   if (typeof TimeSpan !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const obj = Object.create(TimeSpan.prototype);
+  obj = Object.create(TimeSpan.prototype);
   obj.milliseconds = 0;
   obj.asMilliseconds = function asMilliseconds() {
     return obj.milliseconds;
@@ -147,13 +148,13 @@ TimeSpan.fromSeconds = function fromSeconds(arg0) {
     return obj.milliseconds / 1000 / 60 / 60;
   };
   obj.add = function add(milliseconds) {
-    return outer1_12.fromMilliseconds(obj.milliseconds + milliseconds.milliseconds);
+    return closure_1_12.fromMilliseconds(obj.milliseconds + milliseconds.milliseconds);
   };
   obj.subtract = function subtract(milliseconds) {
-    return outer1_12.fromMilliseconds(obj.milliseconds - milliseconds.milliseconds);
+    return closure_1_12.fromMilliseconds(obj.milliseconds - milliseconds.milliseconds);
   };
   obj.subtractOrZero = function subtractOrZero(milliseconds) {
-    return outer1_12.fromMilliseconds(Math.max(obj.milliseconds - milliseconds.milliseconds, 0));
+    return closure_1_12.fromMilliseconds(Math.max(obj.milliseconds - milliseconds.milliseconds, 0));
   };
   ({ milliseconds: tmp2.milliseconds, milliseconds } = obj);
   obj.milliseconds = obj.milliseconds;
@@ -161,12 +162,11 @@ TimeSpan.fromSeconds = function fromSeconds(arg0) {
   return obj;
 };
 TimeSpan.fromMinutes = function fromMinutes(arg0) {
-  let milliseconds;
   if (typeof TimeSpan !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let num = arg0;
-  const obj = Object.create(TimeSpan.prototype);
+  obj = Object.create(TimeSpan.prototype);
   obj.milliseconds = 0;
   obj.asMilliseconds = function asMilliseconds() {
     return obj.milliseconds;
@@ -181,13 +181,13 @@ TimeSpan.fromMinutes = function fromMinutes(arg0) {
     return obj.milliseconds / 1000 / 60 / 60;
   };
   obj.add = function add(milliseconds) {
-    return outer1_12.fromMilliseconds(obj.milliseconds + milliseconds.milliseconds);
+    return closure_1_12.fromMilliseconds(obj.milliseconds + milliseconds.milliseconds);
   };
   obj.subtract = function subtract(milliseconds) {
-    return outer1_12.fromMilliseconds(obj.milliseconds - milliseconds.milliseconds);
+    return closure_1_12.fromMilliseconds(obj.milliseconds - milliseconds.milliseconds);
   };
   obj.subtractOrZero = function subtractOrZero(milliseconds) {
-    return outer1_12.fromMilliseconds(Math.max(obj.milliseconds - milliseconds.milliseconds, 0));
+    return closure_1_12.fromMilliseconds(Math.max(obj.milliseconds - milliseconds.milliseconds, 0));
   };
   ({ milliseconds: tmp2.milliseconds, milliseconds: tmp2.milliseconds, milliseconds } = obj);
   if (!arg0) {
@@ -198,12 +198,11 @@ TimeSpan.fromMinutes = function fromMinutes(arg0) {
   return obj;
 };
 TimeSpan.fromHours = function fromHours(arg0) {
-  let milliseconds;
   if (typeof TimeSpan !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let num = arg0;
-  const obj = Object.create(TimeSpan.prototype);
+  obj = Object.create(TimeSpan.prototype);
   obj.milliseconds = 0;
   obj.asMilliseconds = function asMilliseconds() {
     return obj.milliseconds;
@@ -218,13 +217,13 @@ TimeSpan.fromHours = function fromHours(arg0) {
     return obj.milliseconds / 1000 / 60 / 60;
   };
   obj.add = function add(milliseconds) {
-    return outer1_12.fromMilliseconds(obj.milliseconds + milliseconds.milliseconds);
+    return closure_1_12.fromMilliseconds(obj.milliseconds + milliseconds.milliseconds);
   };
   obj.subtract = function subtract(milliseconds) {
-    return outer1_12.fromMilliseconds(obj.milliseconds - milliseconds.milliseconds);
+    return closure_1_12.fromMilliseconds(obj.milliseconds - milliseconds.milliseconds);
   };
   obj.subtractOrZero = function subtractOrZero(milliseconds) {
-    return outer1_12.fromMilliseconds(Math.max(obj.milliseconds - milliseconds.milliseconds, 0));
+    return closure_1_12.fromMilliseconds(Math.max(obj.milliseconds - milliseconds.milliseconds, 0));
   };
   ({ milliseconds: tmp2.milliseconds, milliseconds: tmp2.milliseconds, milliseconds: tmp2.milliseconds, milliseconds } = obj);
   if (!arg0) {
@@ -274,8 +273,6 @@ prototype2["reset"] = function reset() {
   this.timePassed = 0;
 };
 prototype2["stop"] = function stop() {
-  let timePassed;
-  let timestampProducer;
   const self = this;
   if (null != this.startTime) {
     ({ timestampProducer, timePassed } = self);
@@ -309,7 +306,7 @@ StopWatch["startNew"] = function startNew() {
   if (typeof StopWatch !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const obj = Object.create(StopWatch.prototype);
+  obj = Object.create(StopWatch.prototype);
   obj.timestampProducer = obj;
   obj.start();
   return obj;
@@ -339,7 +336,7 @@ prototype3["hasTimedOut"] = function hasTimedOut() {
     return watch2.elapsed().isGreaterOrEqualTo(self.timeout);
   } else {
     const _Error = Error;
-    const error = new Error("`start` must be called before `hasTimedOut`");
+    error = new Error("`start` must be called before `hasTimedOut`");
     throw error;
   }
 };
@@ -354,7 +351,7 @@ TimeOut["startNew"] = function startNew(timeout) {
   if (typeof StopWatch !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  let obj = Object.create(TimeOut.prototype);
+  obj = Object.create(TimeOut.prototype);
   obj = Object.create(StopWatch.prototype);
   obj.timestampProducer = obj;
   obj[0] = obj;
@@ -363,8 +360,8 @@ TimeOut["startNew"] = function startNew(timeout) {
   return obj;
 };
 TimeOut["waitFor"] = function waitFor(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   return callback(function*() {
     if (c3 === 2) {
       c3 = 3;
@@ -373,11 +370,11 @@ TimeOut["waitFor"] = function waitFor(arg0, arg1) {
       if (arg0 === 1) {
         throw arg1;
       } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
+        obj = { value: null, done: true };
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -392,13 +389,13 @@ TimeOut["waitFor"] = function waitFor(arg0, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp2;
-            let sleep = tmp5;
+            closure_1 = tmp2;
+            sleep = tmp5;
             sleep = undefined;
             closure_1 = undefined;
-            sleep = outer1_7.fromMilliseconds(100);
-            let tmp13 = outer1_0;
-            if (!(outer1_0 instanceof outer1_7)) {
+            sleep = closure_1_7.fromMilliseconds(100);
+            let tmp13 = closure_1_0;
+            if (!(closure_1_0 instanceof closure_1_7)) {
               const timeout = tmp24.timeout;
               tmp13 = timeout;
               if (null != tmp24.sleep) {
@@ -406,7 +403,7 @@ TimeOut["waitFor"] = function waitFor(arg0, arg1) {
                 tmp13 = timeout;
               }
             }
-            closure_1 = outer1_14.startNew(tmp13);
+            closure_1 = closure_1_14.startNew(tmp13);
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {
@@ -414,7 +411,7 @@ TimeOut["waitFor"] = function waitFor(arg0, arg1) {
             throw arg1;
           } else if (arg0 === 2) {
             c3 = 3;
-            const obj1 = { value: null, done: true };
+            obj1 = { value: null, done: true };
             obj1[0] = arg1;
             return obj1;
           } else if (true === arg1) {
@@ -424,7 +421,7 @@ TimeOut["waitFor"] = function waitFor(arg0, arg1) {
             c2 = 2;
             c3 = 1;
             const obj2 = { value: null, done: false };
-            obj2[0] = outer1_9(sleep);
+            obj2[0] = closure_1_9(sleep);
             return obj2;
           }
         } else if (arg0 === 1) {
@@ -442,7 +439,7 @@ TimeOut["waitFor"] = function waitFor(arg0, arg1) {
         c2 = 1;
         c3 = 1;
         const obj3 = { value: null, done: false };
-        obj3[0] = outer1_1();
+        obj3[0] = closure_1_1();
         return obj3;
       } catch (tmp17) {
         c3 = tmp;
@@ -454,7 +451,7 @@ TimeOut["waitFor"] = function waitFor(arg0, arg1) {
 obj = { NONE: "NONE", SECONDS: "SECONDS", MINUTES: "MINUTES", HOURS: "HOURS", DAYS: "DAYS", WEEKS: "WEEKS", MONTHS: "MONTHS", YEARS: "YEARS" };
 obj = { unit: obj.NONE, max: 0 };
 const items = [obj, { unit: obj.SECONDS, max: 1 }, { unit: obj.MINUTES, max: 60 }, { unit: obj.HOURS, max: 1440 }, { unit: obj.DAYS, max: 44640 }, { unit: obj.WEEKS, max: 40320 }, { unit: obj.MONTHS, max: 525600 }, { unit: obj.YEARS, max: Infinity }];
-const result = require("u").fileFinishedImporting("../discord_common/js/packages/time-utils/TimeUtils.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/time-utils/TimeUtils.tsx");
 class ControllableTimeStampProducer {
 }
 const prototype4 = ControllableTimeStampProducer.prototype;
@@ -559,11 +556,11 @@ export const convertMinutesToGivenTimeUnit = function convertMinutesToGivenTimeU
 };
 export const TimeUnitMax = items;
 export const getTimeUnit = function getTimeUnit(arg0, arg1) {
-  let closure_0 = arg0;
-  const importDefault = arg1;
-  const tmp2 = importDefault(4550)(items, (unit) => f75588(unit.unit), items.findIndex((max) => {
+  closure_0 = arg0;
+  importDefault = arg1;
+  const tmp2 = findLastIndexDefault(items, (unit) => f76149(unit.unit), items.findIndex((max) => {
     max = max.max;
-    let tmp = max.unit === outer1_10.NONE;
+    let tmp = max.unit === closure_1_10.NONE;
     if (tmp) {
       tmp = closure_0 === max;
     }
@@ -575,7 +572,7 @@ export const getTimeUnit = function getTimeUnit(arg0, arg1) {
   if (null != tmp2) {
     return tmp2.unit;
   } else {
-    const found = arr.find((unit) => f75588(unit.unit));
+    const found = arr.find((unit) => f76149(unit.unit));
     let unit = null;
     if (null != found) {
       unit = found.unit;
@@ -585,7 +582,7 @@ export const getTimeUnit = function getTimeUnit(arg0, arg1) {
   arr = items;
   const findIndexResult = items.findIndex((max) => {
     max = max.max;
-    let tmp = max.unit === outer1_10.NONE;
+    let tmp = max.unit === closure_1_10.NONE;
     if (tmp) {
       tmp = closure_0 === max;
     }
@@ -596,17 +593,17 @@ export const getTimeUnit = function getTimeUnit(arg0, arg1) {
   });
 };
 export const getTimeAndUnit = function getTimeAndUnit(rounded, items) {
-  let closure_0 = items;
+  closure_0 = items;
   if (null == rounded) {
-    let obj = { unit: null, time: 0 };
+    obj = { unit: null, time: 0 };
     obj[0] = obj.NONE;
     return obj;
   } else {
     closure_0 = rounded;
-    const f75588 = (arg0) => closure_0.includes(arg0);
-    const tmp12 = f75588(4550)(items, (unit) => f75588(unit.unit), items.findIndex((max) => {
+    const f76149 = (arg0) => closure_0.includes(arg0);
+    const tmp12 = f76149(4555)(items, (unit) => f76149(unit.unit), items.findIndex((max) => {
       max = max.max;
-      let tmp = max.unit === outer1_10.NONE;
+      let tmp = max.unit === closure_1_10.NONE;
       if (tmp) {
         tmp = closure_0 === max;
       }
@@ -618,7 +615,7 @@ export const getTimeAndUnit = function getTimeAndUnit(rounded, items) {
     if (null != tmp12) {
       let unit = tmp12.unit;
     } else {
-      const found = arr.find((unit) => f75588(unit.unit));
+      const found = arr.find((unit) => f76149(unit.unit));
       unit = null;
       if (null != found) {
         unit = found.unit;
@@ -663,7 +660,7 @@ export const getTimeAndUnit = function getTimeAndUnit(rounded, items) {
     arr = items;
     const findIndexResult = items.findIndex((max) => {
       max = max.max;
-      let tmp = max.unit === outer1_10.NONE;
+      let tmp = max.unit === closure_1_10.NONE;
       if (tmp) {
         tmp = closure_0 === max;
       }

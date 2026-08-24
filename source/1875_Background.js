@@ -4,9 +4,15 @@
 // Dependencies: [1876, 1877, 1878, 1880, 1881]
 
 // Module 1875 (Background)
+import noopDefault from "noop" /* 1876 */;
+import _modDef1877 from "module_1877" /* 1877 */;
+import onPressDefault from "onPress" /* 1878 */;
+import onPressDefault2 from "onPress" /* 1880 */;
+import onPressDefault3 from "onPress" /* 1881 */;
 
-export const Background = require("noop");
-export const Content = require("module_1877");
-export const Done = require("onPress");
-export const Next = require("onPress");
-export const Prev = require("onPress");
+
+export const Background = noopDefault;
+export const Content = _modDef1877;
+export const Done = onPressDefault;
+export const Next = onPressDefault2;
+export const Prev = onPressDefault3;

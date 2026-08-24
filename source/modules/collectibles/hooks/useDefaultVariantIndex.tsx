@@ -1,17 +1,17 @@
-// Module ID: 9173
-// Function ID: 9174
+// Module ID: 9210
+// Function ID: 9211
 // Name: useDefaultVariantIndex
-// Dependencies: [5324, 589, 5312, 2]
+// Dependencies: [5329, 589, 5317, 2]
 // Exports: useDefaultVariantIndex
 
-// Module 9173 (useDefaultVariantIndex)
-import map from "map";
+// Module 9210 (useDefaultVariantIndex)
+import closure_2 from "map" /* 5329 */;
 
 const require = arg1;
-const result = require("getProductOrbPrice").fileFinishedImporting("modules/collectibles/hooks/useDefaultVariantIndex.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useDefaultVariantIndex.tsx");
 
 export const useDefaultVariantIndex = function useDefaultVariantIndex(product) {
-  const items = [map];
+  const items = [closure_2];
   _require = _require(589).useStateFromStores(items, () => purchases.purchases);
   let num = 0;
   if (null != product) {
@@ -21,7 +21,7 @@ export const useDefaultVariantIndex = function useDefaultVariantIndex(product) {
       const variants = product.variants;
       num = Math.max(0, variants.findIndex((skuId) => !set.has(skuId.skuId)));
     }
-    tmpResult = _require(5312);
+    tmpResult = _require(5317);
   }
   return num;
 };

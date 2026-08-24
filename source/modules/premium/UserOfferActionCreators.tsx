@@ -1,31 +1,29 @@
-// Module ID: 7876
-// Function ID: 7877
+// Module ID: 7915
+// Function ID: 7916
 // Name: _fetchUserOffer
-// Dependencies: [5, 7610, 7425, 1924, 676, 500, 709, 698, 530, 7612, 1208, 4196, 1377, 1374, 2]
+// Dependencies: [5, 7648, 7463, 1924, 676, 500, 709, 698, 530, 7650, 1208, 4200, 1377, 1374, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer
 
-// Module 7876 (_fetchUserOffer)
-import set from "set";
-import createFromServer from "createFromServer";
-import closure_5 from "createFromServer";
-import { PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID as closure_6 } from "GuildFeatures";
-import ME from "ME";
+// Module 7915 (_fetchUserOffer)
+import sendRequest from "sendRequest" /* 530 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "createFromServer" /* 7648 */;
+import closure_5 from "createFromServer" /* 7463 */;
+import { PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID as closure_6 } from "GuildFeatures" /* 1924 */;
+import ME from "ME" /* 676 */;
 
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function _fetchUserOffer() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let set = arg3;
-    let createFromServer = arg4;
-    let c11 = 0;
-    let c12 = 0;
-    let c10 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    closure_3 = arg3;
+    closure_4 = arg4;
+    c11 = 0;
+    c12 = 0;
+    c10 = 0;
     const iter = (function*(arg0) {
       if (c12 === 2) {
         c12 = 3;
@@ -44,7 +42,7 @@ function _fetchUserOffer() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -62,27 +60,27 @@ function _fetchUserOffer() {
                 let obj4 = tmp3;
                 let constants = tmp7;
                 let flag;
-                let obj1;
+                obj1 = undefined;
                 let retries;
-                let createFromServer;
+                closure_4 = undefined;
                 throwTypeErrorResult = callback;
                 if (flag === undefined) {
                   flag = true;
                 }
                 if (obj1 === undefined) {
-                  obj1 = { offerId: "r", paymentGatewayOverride: "accessibilityRole" };
+                  obj1 = { offerId: "Array", paymentGatewayOverride: "ct" };
                 }
                 throwTypeErrorResult = retries;
-                throwTypeErrorResult = createFromServer;
+                throwTypeErrorResult = closure_4;
                 let offerId;
-                let c6;
+                c6 = undefined;
                 constants = undefined;
                 obj4 = undefined;
-                let closure_9;
+                closure_9 = undefined;
                 let trial_id;
                 discount_id = undefined;
                 c12 = undefined;
-                let error;
+                error = undefined;
                 discount_id = 1;
                 c12 = 1;
                 return { value: "ct", done: true };
@@ -113,7 +111,7 @@ function _fetchUserOffer() {
                   c6 = obj1.paymentGatewayOverride;
                   if (undefined !== c6) {
                     throwTypeErrorResult = constants;
-                    let tmp99 = outer1_6;
+                    let tmp99 = closure_1_6;
                   } else {
                     tmp99 = (function getPaymentGateway() {
                       if (obj.isAndroid()) {
@@ -129,12 +127,12 @@ function _fetchUserOffer() {
                     })();
                   }
                   throwTypeErrorResult = constants;
-                  const outer1_7 = tmp99;
-                  throwTypeErrorResult = outer1_7;
-                  if (null == outer1_7) {
+                  closure_7 = tmp99;
+                  throwTypeErrorResult = closure_7;
+                  if (null == closure_7) {
                     throwTypeErrorResult = constants;
-                    throwTypeErrorResult = outer1_5;
-                    if (null == outer1_5) {
+                    throwTypeErrorResult = closure_1_5;
+                    if (null == closure_1_5) {
                       obj4 = {};
                     }
                     throwTypeErrorResult = constants;
@@ -225,7 +223,7 @@ function _fetchUserOffer() {
                     obj10[0] = offerId;
                     obj10[1] = discount_id;
                     obj9[0] = obj10;
-                    const merged = Object.assign(createFromServer);
+                    const merged = Object.assign(closure_4);
                     obj5.captureException(error, obj9);
                     throw error;
                   }
@@ -252,7 +250,7 @@ function _fetchUserOffer() {
               obj11[1] = fromServer;
               let fromServer1 = null;
               if (null != discount_id) {
-                fromServer1 = createFromServer.createFromServer(discount_id);
+                fromServer1 = closure_4.createFromServer(discount_id);
               }
               obj11[2] = fromServer1;
               obj3.dispatch(obj11);
@@ -277,7 +275,7 @@ function _fetchUserOffer() {
     iter.next();
     return iter;
   });
-  const _fetchUserOffer = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -289,19 +287,19 @@ function _fetchUserOffer() {
 function _fetchExistingChurnDiscountOffer() {
   const self = this;
   const tmp = callback(function*() {
-    const dependencyMap = tmp3;
-    outer1_1(outer1_2[6]).dispatch({ type: "BILLING_USER_OFFER_FETCH_START" });
-    let c4 = 1;
-    const HTTP = outer1_0(outer1_2[8]).HTTP;
-    const obj1 = { url: null, rejectWithError: true };
-    obj1[0] = outer1_8.CHURN_USER_OFFER;
+    dependencyMap = tmp3;
+    closure_1_1(closure_1_2[6]).dispatch({ type: "BILLING_USER_OFFER_FETCH_START" });
+    c4 = 1;
+    const HTTP = closure_1_0(closure_1_2[8]).HTTP;
+    obj1 = { url: null, rejectWithError: true };
+    obj1[0] = closure_1_8.CHURN_USER_OFFER;
     yield HTTP.get(obj1);
     c4 = 0;
     let obj5 = fromServer(709);
     obj5.dispatch({ type: "BILLING_USER_OFFER_FETCH_FAIL" });
     yield "HermesInternal";
     const offer = arg1.body.offer;
-    let closure_0 = offer;
+    closure_0 = offer;
     if (offer == null) {
       closure_0 = null;
     }
@@ -318,7 +316,7 @@ function _fetchExistingChurnDiscountOffer() {
     c4 = 0;
     return obj5;
   });
-  const _fetchExistingChurnDiscountOffer = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -331,15 +329,15 @@ function _fetchChurnDiscountOffer() {
   const self = this;
   const tmp = callback(function*() {
     const table = tmp3;
-    let closure_0 = null;
-    let c4 = 1;
-    const HTTP = outer1_0(outer1_2[8]).HTTP;
-    const obj1 = { url: null, rejectWithError: true };
-    obj1[0] = outer1_8.CHURN_USER_OFFER;
+    closure_0 = null;
+    c4 = 1;
+    const HTTP = closure_1_0(closure_1_2[8]).HTTP;
+    obj1 = { url: null, rejectWithError: true };
+    obj1[0] = closure_1_8.CHURN_USER_OFFER;
     yield HTTP.post(obj1);
     if (1 === tmp7) {
       c4 = 0;
-      let c6 = 3;
+      c6 = 3;
     } else if (arg0 === 1) {
       c6 = 3;
       throw arg1;
@@ -362,7 +360,7 @@ function _fetchChurnDiscountOffer() {
     c4 = 0;
     return arg1;
   });
-  const _fetchChurnDiscountOffer = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -371,8 +369,8 @@ function _fetchChurnDiscountOffer() {
   }
   return applyArgumentsResult;
 }
-({ AnalyticEvents: error, Endpoints: metroImportAll, PaymentGateways: c9 } = ME);
-let result = require("createFromServer").fileFinishedImporting("modules/premium/UserOfferActionCreators.tsx");
+({ AnalyticEvents: error, Endpoints: closure_8, PaymentGateways: c9 } = ME);
+let result = require("set").fileFinishedImporting("modules/premium/UserOfferActionCreators.tsx");
 
 export const fetchUserOffer = function fetchUserOffer(MobilePremiumOfferManager, arg1, arg2) {
   const self = this;
@@ -417,7 +415,7 @@ export const acknowledgeUserOffer = function acknowledgeUserOffer(expiresAt, has
       id1 = hasAcknowledged.id;
     }
   }
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   let obj = { url: constants.USER_OFFER_ACKNOWLEDGED, body: { user_trial_offer_id: id, user_discount_offer_id: id1 }, oldFormErrors: true, rejectWithError: false };
   const postResult = HTTP.post({ url: constants.USER_OFFER_ACKNOWLEDGED, body: { user_trial_offer_id: id, user_discount_offer_id: id1 }, oldFormErrors: true, rejectWithError: false });
   return HTTP.post({ url: constants.USER_OFFER_ACKNOWLEDGED, body: { user_trial_offer_id: id, user_discount_offer_id: id1 }, oldFormErrors: true, rejectWithError: false }).then((body) => {
@@ -441,12 +439,12 @@ export const acknowledgeUserOffer = function acknowledgeUserOffer(expiresAt, has
     obj = { type: "BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS", userTrialOffer: fromServer, userDiscount: null, userDiscountOffer: null };
     let fromServer1 = null;
     if (null != user_discount) {
-      fromServer1 = createFromServer.createFromServer(user_discount);
+      fromServer1 = closure_4.createFromServer(user_discount);
     }
     obj[2] = fromServer1;
     let fromServer2 = null;
     if (null != user_discount_offer) {
-      fromServer2 = createFromServer.createFromServer(user_discount_offer);
+      fromServer2 = closure_4.createFromServer(user_discount_offer);
     }
     obj[3] = fromServer2;
     obj.dispatch(obj);

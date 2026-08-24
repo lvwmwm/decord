@@ -4,6 +4,8 @@
 // Dependencies: [606, 740, 605, 742]
 
 // Module 739 (baseIsNative)
+import isObject from "isObject" /* 606 */;
+
 const re2 = /^\[object .+?Constructor\]$/;
 const call = toString.call;
 const str = typeof call === "unknown" ? toString() : call(hasOwnProperty);
@@ -11,7 +13,7 @@ let closure_3 = RegExp(`^${typeof call === "unknown" ? toString() : call(hasOwnP
 
 export default function baseIsNative(arg0) {
   let tmp2 = dependencyMap;
-  const tmp3 = require(606) /* isObject */(arg0);
+  const tmp3 = isObject(arg0);
   let tmp4 = !tmp3;
   if (tmp3) {
     tmp4 = tmp(740)(arg0);

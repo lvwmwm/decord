@@ -1,32 +1,29 @@
-// Module ID: 4731
-// Function ID: 4732
+// Module ID: 4736
+// Function ID: 4737
 // Name: setAccessibilityFocus
 // Dependencies: [17, 2]
 // Exports: setAccessibilityFocus
 
-// Module 4731 (setAccessibilityFocus)
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 4736 (setAccessibilityFocus)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-let c0;
-let closure_1;
 ({ AccessibilityInfo: c0, findNodeHandle: closure_1 } = get_ActivityIndicator);
-let result = require("set").fileFinishedImporting("modules/a11y/native/setAccessibilityFocus.android.tsx");
+let result = set.fileFinishedImporting("modules/a11y/native/setAccessibilityFocus.android.tsx");
 
 export const setAccessibilityFocus = function setAccessibilityFocus(arg0) {
-  let delay;
-  let ref;
   ({ ref, delay } = arg0);
   if (delay === undefined) {
     delay = 0;
   }
-  let c0;
+  closure_0 = undefined;
   if (null != ref) {
     const tmp2 = callback(ref.current);
-    c0 = tmp2;
+    closure_0 = tmp2;
     if (null != tmp2) {
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        const result = _undefined.setAccessibilityFocus(_undefined);
+        const result = accessibilityFocus.setAccessibilityFocus(accessibilityFocus);
       }, delay);
     }
   }

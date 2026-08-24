@@ -1,22 +1,21 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 16086
+// Function ID: 16087
 // Name: IncomingRequestRow
-// Dependencies: [19, 4662, 4478, 9081, 676, 21, 4115, 647, 1236, 4219, 15309, 11799, 9645, 15698, 15990, 2]
+// Dependencies: [19, 4669, 4482, 9118, 676, 21, 4119, 647, 1236, 4223, 15373, 11848, 9684, 15767, 16087, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 15989 (IncomingRequestRow)
-import noop from "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import addApplication from "addApplication";
-import { UserRowModes } from "UserRowModes";
-import { RelationshipTypes } from "ME";
-import { jsx } from "jsxProd";
+// Module 16086 (IncomingRequestRow)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_5 from "addApplication" /* 4482 */;
+import { UserRowModes } from "UserRowModes" /* 9118 */;
+import { RelationshipTypes } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function IncomingRequestRow(user) {
-  let acceptedRequestAccessibilityLabel;
-  let acceptedRequestLabel;
-  let accessibilityLabel;
   user = user.user;
   const applicationId = user.applicationId;
   const accepted = user.accepted;
@@ -31,7 +30,7 @@ function IncomingRequestRow(user) {
   let stateFromStores1;
   let obj = user(accepted[6]);
   sharedValue = obj.useSharedValue(false);
-  let obj1 = user(accepted[7]);
+  obj1 = user(accepted[7]);
   let items = [onDeclineIncomingRequest];
   const stateFromStores = obj1.useStateFromStores(items, () => onDeclineIncomingRequest.useReducedMotion);
   let items1 = [accepted, sharedValue];
@@ -116,11 +115,9 @@ function IncomingRequestRow(user) {
   return userTag(applicationId(accepted[12]), obj);
 }
 function IncomingGameFriendRequestRow(arg0) {
-  let application;
-  let user;
   ({ user, application } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = importDefault(4219);
+  let obj = nameFromUserDefault;
   const userTag = obj.useUserTag(user);
   obj = { user, applicationId: application.id, accessibilityLabel: null, acceptedRequestLabel: null, acceptedRequestAccessibilityLabel: null, acceptRequestAccessibilityLabel: null, ignoreRequestAccessibilityLabel: null };
   const intl = application(1236).intl;
@@ -128,7 +125,7 @@ function IncomingGameFriendRequestRow(arg0) {
   const intl2 = application(1236).intl;
   obj = {
     applicationNameHook() {
-      return outer1_8(outer1_1(outer1_2[11]), { application, textVariant: "text-xs/medium", iconSize: 12 }, application.id);
+      return closure_1_8(closure_1_1(closure_1_2[11]), { application, textVariant: "text-xs/medium", iconSize: 12 }, application.id);
     }
   };
   obj[3] = intl2.format(application(1236).t.gRgJGR, obj);
@@ -140,28 +137,28 @@ function IncomingGameFriendRequestRow(arg0) {
   obj[6] = intl5.formatToPlainString(application(1236).t.d8Cw5e, { name: userTag, applicationName: application.name });
   const merged1 = Object.assign(merged);
   return <IncomingRequestRow applicationNameHook={function applicationNameHook() {
-    return outer1_8(outer1_1(outer1_2[11]), { application, textVariant: "text-xs/medium", iconSize: 12 }, application.id);
+    return closure_1_8(closure_1_1(closure_1_2[11]), { application, textVariant: "text-xs/medium", iconSize: 12 }, application.id);
   }} />;
 }
 let closure_9 = { ACCEPT: "accept", DECLINE: "decline", WAVE: "wave" };
-let result = require("addApplication").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/IncomingRequestRow.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/IncomingRequestRow.tsx");
 
 export const IncomingFriendRequestRow = function IncomingFriendRequestRow(user) {
   user = user.user;
   const merged = Object.assign(user, Object.create(null));
-  let obj = importDefault(4219);
+  let obj = nameFromUserDefault;
   const userTag = obj.useUserTag(user);
   obj = { user, accessibilityLabel: null, acceptedRequestLabel: null, acceptedRequestAccessibilityLabel: null, acceptRequestAccessibilityLabel: null, ignoreRequestAccessibilityLabel: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.u6lp4x, { name: userTag });
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t["0E614Z"]);
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.cRwkp7, { name: userTag });
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj[4] = intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.MUfqsS, { name: userTag });
-  const intl5 = require(1236) /* getSystemLocale */.intl;
-  obj[5] = intl5.formatToPlainString(require(1236) /* getSystemLocale */.t["0OF9IB"], { name: userTag });
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.formatToPlainString(getSystemLocale.t.u6lp4x, { name: userTag });
+  const intl2 = getSystemLocale.intl;
+  obj[2] = intl2.string(getSystemLocale.t["0E614Z"]);
+  const intl3 = getSystemLocale.intl;
+  obj[3] = intl3.formatToPlainString(getSystemLocale.t.cRwkp7, { name: userTag });
+  const intl4 = getSystemLocale.intl;
+  obj[4] = intl4.formatToPlainString(getSystemLocale.t.MUfqsS, { name: userTag });
+  const intl5 = getSystemLocale.intl;
+  obj[5] = intl5.formatToPlainString(getSystemLocale.t["0OF9IB"], { name: userTag });
   const merged1 = Object.assign(merged);
   return <IncomingRequestRow user={user} accessibilityLabel={null} acceptedRequestLabel={null} acceptedRequestAccessibilityLabel={null} acceptRequestAccessibilityLabel={null} ignoreRequestAccessibilityLabel={null} />;
 };
@@ -170,8 +167,8 @@ export const ConnectedIncomingGameFriendRequestRow = function ConnectedIncomingG
   let tmp = null;
   const merged = Object.assign(applicationId, Object.create(null));
   let obj = applicationId(647);
-  const items = [addApplication];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getApplication(applicationId));
+  const items = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getApplication(applicationId));
   if (null != stateFromStores) {
     obj = { user: null, application: null };
     obj[0] = applicationId.user;

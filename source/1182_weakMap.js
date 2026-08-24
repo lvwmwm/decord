@@ -12,9 +12,9 @@ arg5.enableSyncToNative = function enableSyncToNative(globalScope) {
   if (!weakMap.has(globalScope)) {
     let result = weakMap.set(globalScope, true);
     _require(1154).fillTyped(globalScope, "setUser", (arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return (arg0) => {
-        const NATIVE = callback(outer2_1[1]).NATIVE;
+        const NATIVE = callback(closure_2_1[1]).NATIVE;
         NATIVE.setUser(arg0);
         const call = callback.call;
         return typeof call === "unknown" ? callback(arg0) : call(callback, arg0);
@@ -22,10 +22,10 @@ arg5.enableSyncToNative = function enableSyncToNative(globalScope) {
     });
     let obj2 = _require(1154);
     _require(1154).fillTyped(globalScope, "setTag", (arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return (arg0, arg1) => {
-        const NATIVE = callback(outer2_1[1]).NATIVE;
-        const NATIVE2 = callback(outer2_1[1]).NATIVE;
+        const NATIVE = callback(closure_2_1[1]).NATIVE;
+        const NATIVE2 = callback(closure_2_1[1]).NATIVE;
         NATIVE.setTag(arg0, NATIVE2.primitiveProcessor(arg1));
         const call = callback.call;
         return typeof call === "unknown" ? callback(arg0, arg1) : call(callback, arg0, arg1);
@@ -33,13 +33,13 @@ arg5.enableSyncToNative = function enableSyncToNative(globalScope) {
     });
     const obj3 = _require(1154);
     _require(1154).fillTyped(globalScope, "setTags", (arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return (arg0) => {
-        let closure_0 = arg0;
+        closure_0 = arg0;
         const keys = Object.keys(arg0);
         const item = keys.forEach((arg0) => {
-          const NATIVE = dependencyMap(outer1_1[1]).NATIVE;
-          const NATIVE2 = dependencyMap(outer1_1[1]).NATIVE;
+          const NATIVE = dependencyMap(closure_1_1[1]).NATIVE;
+          const NATIVE2 = dependencyMap(closure_1_1[1]).NATIVE;
           NATIVE.setTag(arg0, NATIVE2.primitiveProcessor(dependencyMap[arg0]));
         });
         const call = closure_0.call;
@@ -48,12 +48,12 @@ arg5.enableSyncToNative = function enableSyncToNative(globalScope) {
     });
     const obj4 = _require(1154);
     _require(1154).fillTyped(globalScope, "setExtras", (arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return (arg0) => {
-        let closure_0 = arg0;
+        closure_0 = arg0;
         const keys = Object.keys(arg0);
         const item = keys.forEach((arg0) => {
-          const NATIVE = dependencyMap(outer1_1[1]).NATIVE;
+          const NATIVE = dependencyMap(closure_1_1[1]).NATIVE;
           NATIVE.setExtra(arg0, dependencyMap[arg0]);
         });
         const call = closure_0.call;
@@ -62,9 +62,9 @@ arg5.enableSyncToNative = function enableSyncToNative(globalScope) {
     });
     const obj5 = _require(1154);
     _require(1154).fillTyped(globalScope, "setExtra", (arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return (arg0, arg1) => {
-        const NATIVE = callback(outer2_1[1]).NATIVE;
+        const NATIVE = callback(closure_2_1[1]).NATIVE;
         NATIVE.setExtra(arg0, arg1);
         const call = callback.call;
         return typeof call === "unknown" ? callback(arg0, arg1) : call(callback, arg0, arg1);
@@ -72,18 +72,18 @@ arg5.enableSyncToNative = function enableSyncToNative(globalScope) {
     });
     const obj6 = _require(1154);
     _require(1154).fillTyped(globalScope, "addBreadcrumb", (arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return (level) => {
         let DEFAULT_BREADCRUMB_LEVEL = level.level;
         const merged = Object.assign({}, level);
         if (!DEFAULT_BREADCRUMB_LEVEL) {
-          DEFAULT_BREADCRUMB_LEVEL = callback(outer2_1[2]).DEFAULT_BREADCRUMB_LEVEL;
+          DEFAULT_BREADCRUMB_LEVEL = callback(closure_2_1[2]).DEFAULT_BREADCRUMB_LEVEL;
         }
         const obj = { level: DEFAULT_BREADCRUMB_LEVEL, data: null };
         let result;
         if (level.data) {
-          result = callback(outer2_1[3]).convertToNormalizedObject(level.data);
-          const obj2 = callback(outer2_1[3]);
+          result = callback(closure_2_1[3]).convertToNormalizedObject(level.data);
+          const obj2 = callback(closure_2_1[3]);
         }
         obj[1] = result;
         const merged1 = Object.assign(merged, obj);
@@ -106,9 +106,9 @@ arg5.enableSyncToNative = function enableSyncToNative(globalScope) {
     });
     const obj7 = _require(1154);
     _require(1154).fillTyped(globalScope, "clearBreadcrumbs", (arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return () => {
-        const NATIVE = callback(outer2_1[1]).NATIVE;
+        const NATIVE = callback(closure_2_1[1]).NATIVE;
         NATIVE.clearBreadcrumbs();
         const call = callback.call;
         return typeof call === "unknown" ? callback() : call(callback);
@@ -116,9 +116,9 @@ arg5.enableSyncToNative = function enableSyncToNative(globalScope) {
     });
     const obj8 = _require(1154);
     _require(1154).fillTyped(globalScope, "setContext", (arg0) => {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       return (arg0, arg1) => {
-        const NATIVE = callback(outer2_1[1]).NATIVE;
+        const NATIVE = callback(closure_2_1[1]).NATIVE;
         NATIVE.setContext(arg0, arg1);
         const call = callback.call;
         return typeof call === "unknown" ? callback(arg0, arg1) : call(callback, arg0, arg1);

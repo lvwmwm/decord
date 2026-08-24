@@ -1,37 +1,45 @@
-// Module ID: 15562
-// Function ID: 15563
+// Module ID: 15627
+// Function ID: 15628
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [19, 17, 21, 4661, 712, 6289, 4200, 15563, 15564, 15565, 11456, 5449, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 6320, 4204, 15628, 15629, 15630, 11505, 5454, 2]
 // Exports: default
 
-// Module 15562 (GuildsBarGuildJoinRequestBadge)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15627 (GuildsBarGuildJoinRequestBadge)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4204 */;
+import preloadDefault from "preload" /* 5454 */;
+import registerAssetDefault from "registerAsset" /* 11505 */;
+import registerAssetDefault2 from "registerAsset" /* 15628 */;
+import registerAssetDefault3 from "registerAsset" /* 15629 */;
+import registerAssetDefault4 from "registerAsset" /* 15630 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { badgeImageContainer: null, badgeImage: null };
-createCacheKey = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
+createCacheKey = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { height: 16, width: 16, opacity: require("result").DARK_1_LIGHT_08 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_5 = createCacheKey.createStyles(createCacheKey);
 const obj1 = { height: 16, width: 16, opacity: require("result").DARK_1_LIGHT_08 };
-const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx");
+const result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx");
 
 export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
   joinRequestState = joinRequestState.joinRequestState;
-  const tmp = createCacheKey();
-  if (require(4200) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp4 = importDefault(15563);
-  } else if (tmp2(4200).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp4 = importDefault(15564);
-  } else if (tmp2(4200).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp4 = importDefault(15565);
+  const tmp = callback();
+  if (MAX_RESULTS_PER_PAGE.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
+    let tmp4 = registerAssetDefault2;
+  } else if (tmp2(4204).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+    tmp4 = registerAssetDefault3;
+  } else if (tmp2(4204).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
+    tmp4 = registerAssetDefault4;
   } else {
     tmp4 = null;
-    if (tmp2(4200).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp4 = importDefault(11456);
+    if (tmp2(4204).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+      tmp4 = registerAssetDefault;
     }
   }
   let tmp9 = null;
@@ -42,7 +50,7 @@ export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
     obj = { source: null, style: null };
     obj[0] = tmp4;
     obj[1] = tmp.badgeImage;
-    obj[2] = jsx(importDefault(5449), { source: null, style: null });
+    obj[2] = jsx(preloadDefault, { source: null, style: null });
     tmp9 = <View source={null} style={null} />;
   }
   return tmp9;

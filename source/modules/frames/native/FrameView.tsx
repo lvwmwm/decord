@@ -1,22 +1,20 @@
-// Module ID: 16263
-// Function ID: 16264
+// Module ID: 15935
+// Function ID: 15936
 // Name: FrameViewInner
-// Dependencies: [32, 19, 8708, 8709, 4481, 21, 7140, 709, 8766, 16264, 12468, 16265, 12478, 589, 2]
+// Dependencies: [32, 19, 8745, 8746, 4485, 21, 7178, 709, 8803, 15936, 12520, 15937, 12532, 589, 2]
+// Exports: InlineFrameView
 
-// Module 16263 (FrameViewInner)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import map from "map";
-import FrameLayoutModes from "FrameLayoutModes";
-import { ActivityPlatform } from "items3";
-import { jsx } from "jsxProd";
+// Module 15935 (FrameViewInner)
+import initialize from "initialize" /* 589 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import closure_5 from "map" /* 8745 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 8746 */;
+import { ActivityPlatform } from "items3" /* 4485 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function FrameViewInner(frame) {
-  let isLandscape;
-  let isResetting;
   frame = frame.frame;
   const layoutMode = frame.layoutMode;
   let landscapeSafeAreasConfig = frame.portraitSafeAreasConfig;
@@ -48,7 +46,7 @@ function FrameViewInner(frame) {
   obj = { instance_id: "example-cl-instance", platform: ActivityPlatform.MOBILE, discord_proxy_ticket: frame.data.proxyTicket };
   ({ isResetting, isLandscape } = baseActivityView);
   obj = { wakeLockKey: "FrameActivities", showLoadingIndicator: first, isResetting, children: null };
-  const obj1 = {
+  obj1 = {
     onActivityCrash() {
       setIsResetting(true);
       const timerId = setTimeout(() => callback(false), 0);
@@ -93,8 +91,8 @@ function FrameViewInner(frame) {
 let c4 = importAllResult;
 ({ asLaunched: closure_6, FrameLayoutModes: error } = FrameLayoutModes);
 const memoResult = importAllResult.memo(function FrameViewGate(arg0) {
-  let obj = require(589) /* initialize */;
-  const items = [map];
+  let obj = initialize;
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => callback(mainFrame.getMainFrame()));
   let tmp2 = null;
   if (null != stateFromStores) {
@@ -105,7 +103,23 @@ const memoResult = importAllResult.memo(function FrameViewGate(arg0) {
   }
   return tmp2;
 });
-const result = require("map").fileFinishedImporting("modules/frames/native/FrameView.tsx");
+const result = require("set").fileFinishedImporting("modules/frames/native/FrameView.tsx");
 
 export default memoResult;
+export const InlineFrameView = function InlineFrameView(frameId) {
+  frameId = frameId.frameId;
+  let tmp = null;
+  const merged = Object.assign(frameId, Object.create(null));
+  let obj = frameId(589);
+  const items = [closure_5];
+  const items1 = [frameId];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_6(closure_1_5.getFrame(frameId)), items1);
+  if (null != stateFromStores) {
+    obj = { frame: null };
+    obj[0] = stateFromStores;
+    const merged1 = Object.assign(merged);
+    tmp = <FrameViewInner frame={null} />;
+  }
+  return tmp;
+};
 export const FrameView = memoResult;

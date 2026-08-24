@@ -1,11 +1,12 @@
-// Module ID: 6548
-// Function ID: 6549
+// Module ID: 6579
+// Function ID: 6580
 // Name: runAfterInteractions
-// Dependencies: [17, 4259, 2]
+// Dependencies: [17, 4263, 2]
 // Exports: runAfterInteractions
 
-// Module 6548 (runAfterInteractions)
-import { InteractionManager } from "get ActivityIndicator";
+// Module 6579 (runAfterInteractions)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
 function runAfterInteractions(arg0, MINUTE) {
   const _require = arg0;
@@ -13,13 +14,13 @@ function runAfterInteractions(arg0, MINUTE) {
   if (MINUTE === undefined) {
     num = 2000;
   }
-  let dependencyMap;
+  dependencyMap = undefined;
   let delayedCall;
   dependencyMap = delayedCall.runAfterInteractions(() => {
     delayedCall.cancel();
     callback();
   });
-  delayedCall = new _require(4259).DelayedCall(num, () => {
+  delayedCall = new _require(4263).DelayedCall(num, () => {
     closure_1.cancel();
     callback();
   });
@@ -31,7 +32,8 @@ function runAfterInteractions(arg0, MINUTE) {
     }
   };
 }
-const result = require("set").fileFinishedImporting("utils/native/RunAfterInteractionsUtils.tsx");
+const InteractionManager = get_ActivityIndicator.InteractionManager;
+const result = set.fileFinishedImporting("utils/native/RunAfterInteractionsUtils.tsx");
 
 export default { runAfterInteractions };
 export { runAfterInteractions };

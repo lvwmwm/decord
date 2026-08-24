@@ -4,14 +4,14 @@
 // Dependencies: [41, 42, 829, 831, 844, 845, 827, 838, 832, 846, 830, 823, 824]
 
 // Module 843 (Scope)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import closure_2 from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
 const Scope = require;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 class Scope {
   constructor() {
-    tmp = outer1_2(this, Scope);
+    tmp = closure_2(this, Scope);
     this._notifyingListeners = false;
     this._scopeListeners = [];
     this._eventProcessors = [];
@@ -38,7 +38,7 @@ let items = [
     value: function clone() {
       const self = this;
       let obj = Object.create(Scope.prototype);
-      _classCallCheck(obj, Scope);
+      callback(obj, Scope);
       obj._notifyingListeners = false;
       obj._scopeListeners = [];
       obj._eventProcessors = [];
@@ -51,7 +51,7 @@ let items = [
       obj._contexts = {};
       obj._sdkProcessingMetadata = {};
       obj = { traceId: null, sampleRand: null };
-      let obj1 = Scope(829);
+      obj1 = Scope(829);
       obj[0] = obj1.generateTraceId();
       let obj2 = Scope(831);
       obj[1] = obj2.safeMathRandom();
@@ -135,7 +135,7 @@ let items = [
     value: function setUser(arg0) {
       let obj = arg0;
       if (!arg0) {
-        obj = { email: "Array", id: "flex", ip_address: "y", username: "HermesInternal" };
+        obj = { email: "channel", id: "then", ip_address: "WireType", username: "header" };
       }
       const self = this;
       this._user = obj;
@@ -280,13 +280,6 @@ let items = [
   {
     key: "update",
     value: function update(fn) {
-      let attributes;
-      let contexts;
-      let extra;
-      let fingerprint;
-      let level;
-      let tags;
-      let user;
       const self = this;
       if (fn) {
         let obj = fn;
@@ -296,7 +289,7 @@ let items = [
         if (obj instanceof Scope) {
           let scopeData = obj.getScopeData();
         } else {
-          let obj1 = Scope(827);
+          obj1 = Scope(827);
           if (obj1.isPlainObject(obj)) {
             scopeData = fn;
           }
@@ -430,8 +423,7 @@ let items = [
     key: "getScopeData",
     value: function getScopeData() {
       const self = this;
-      const obj = { breadcrumbs: this._breadcrumbs, attachments: this._attachments, contexts: this._contexts, tags: this._tags, attributes: this._attributes, extra: this._extra, user: this._user, level: this._level, fingerprint: tmp, eventProcessors: self._eventProcessors, propagationContext: self._propagationContext, sdkProcessingMetadata: self._sdkProcessingMetadata, transactionName: self._transactionName, span: null };
-      obj[13] = Scope(844)._getSpanForScope(self);
+      const obj = { breadcrumbs: this._breadcrumbs, attachments: this._attachments, contexts: this._contexts, tags: this._tags, attributes: this._attributes, extra: this._extra, user: this._user, level: this._level, fingerprint: tmp, eventProcessors: self._eventProcessors, propagationContext: self._propagationContext, sdkProcessingMetadata: self._sdkProcessingMetadata, transactionName: self._transactionName, span: Scope(844)._getSpanForScope(self) };
       return obj;
     }
   },
@@ -469,7 +461,7 @@ let items = [
       const self = this;
       if (this._client) {
         const _Error = Error;
-        const error = new Error("Sentry syntheticException");
+        error = new Error("Sentry syntheticException");
         const _client = self._client;
         obj = { originalException: null, syntheticException: null };
         obj[0] = arg0;

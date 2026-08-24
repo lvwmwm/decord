@@ -5,15 +5,14 @@
 // Exports: useCurrentRender
 
 // Module 1590 (useCurrentRender)
-import noop from "noop";
+import CurrentRenderContext from "CurrentRenderContext" /* 1549 */;
+import closure_2 from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 
 export const useCurrentRender = function useCurrentRender(arg0) {
-  let navigation;
-  let state;
   ({ state, navigation } = arg0);
-  const context = React.useContext(require(1549) /* CurrentRenderContext */.CurrentRenderContext);
+  const context = React.useContext(CurrentRenderContext.CurrentRenderContext);
   let isFocusedResult = context;
   if (context) {
     isFocusedResult = navigation.isFocused();

@@ -5,12 +5,16 @@
 // Exports: hasGlobalDefaultAvatarDecoration, isAvatarDecorationExpired, isEqualAvatarDecoration, parseAvatarDecorationData
 
 // Module 1899 (parseAvatarDecorationData)
-let result = require("set").fileFinishedImporting("modules/collectibles/avatar_decorations/AvatarDecorationUtils.tsx");
+import set from "set" /* 2 */;
+import apply from "apply" /* 12 */;
+import parseSkuIdFromServerData from "parseSkuIdFromServerData" /* 1900 */;
+
+let result = set.fileFinishedImporting("modules/collectibles/avatar_decorations/AvatarDecorationUtils.tsx");
 
 export const parseAvatarDecorationData = function parseAvatarDecorationData(avatar_decoration_data) {
   if (typeof avatar_decoration_data === "object") {
     if (null != avatar_decoration_data) {
-      let obj = require(1900) /* parseSkuIdFromServerData */;
+      let obj = parseSkuIdFromServerData;
       const result = obj.parseSkuIdFromServerData(avatar_decoration_data);
       if (null == result) {
         return null;
@@ -102,8 +106,8 @@ export const isEqualAvatarDecoration = function isEqualAvatarDecoration(avatarDe
           }
         }
       }
-      let isEqualResult = require(12) /* apply */.isEqual(tmp2, tmp6);
-      const obj5 = require(12) /* apply */;
+      let isEqualResult = apply.isEqual(tmp2, tmp6);
+      const obj5 = apply;
     }
     return isEqualResult;
   }

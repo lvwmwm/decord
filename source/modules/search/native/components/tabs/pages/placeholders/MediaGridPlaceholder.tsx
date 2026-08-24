@@ -1,101 +1,96 @@
-// Module ID: 15871
-// Function ID: 15872
+// Module ID: 15968
+// Function ID: 15969
 // Name: MediaGridPlaceholderItem
-// Dependencies: [19, 17, 8507, 21, 4661, 712, 15870, 4115, 15872, 12, 4734, 1236, 11509, 15873, 2]
+// Dependencies: [19, 17, 8546, 21, 4668, 712, 15967, 4119, 15969, 12, 4739, 1236, 11558, 15970, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 15871 (MediaGridPlaceholderItem)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import MessageEmbedTypes from "MessageEmbedTypes";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15968 (MediaGridPlaceholderItem)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import Text from "Text" /* 4739 */;
+import useFullscreenPlaceholderCount from "useFullscreenPlaceholderCount" /* 15967 */;
+import _modDef15969 from "module_15969" /* 15969 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let SEARCH_LIST_HORIZONTAL_PADDING;
-let SEARCH_LIST_SECTION_TOP_PADDING;
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 ({ MEDIA_NUM_COLUMNS: c5, MEDIA_ITEM_GAP_WIDTH: closure_6, SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING } = MessageEmbedTypes);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: { zIndex: 1, position: "absolute", width: "100%" }, recentsContainer: { position: "relative", paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, row: { flexDirection: "row" }, section: { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", textTransform: "none", paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingBottom: 8 }, sectionItem: null, sectionText: null };
-createCacheKey = { borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey = { borderRadius: ThemesDefault.radii.xs, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 createCacheKey[4] = createCacheKey;
 createCacheKey[5] = { opacity: 0 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("MessageEmbedTypes").fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/MediaGridPlaceholder.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/MediaGridPlaceholder.tsx");
 
 export default function MediaGridPlaceholderItem(arg0) {
-  let containerStyle;
-  let size;
   ({ size, containerStyle } = arg0);
-  let obj = require(15870) /* useFullscreenPlaceholderCount */;
+  let obj = useFullscreenPlaceholderCount;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
-  obj = { style: items, pointerEvents: "none", children: null };
+  obj = { style: items, pointerEvents: "none", children: callback(_modDef15969, { height: size, width: size, style: containerStyle }) };
   items = [containerStyle, placeholderAnimatedStyle];
-  obj[2] = callback(importDefault(15872), { height: size, width: size, style: containerStyle });
-  return callback(importDefault(4115).View, obj);
+  return callback(_modDef4119.View, obj);
 };
 export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(visible) {
-  let numRows;
-  let require;
   ({ size: require, numRows } = visible);
-  let dependencyMap;
+  dependencyMap = undefined;
   let memo;
   let memo1;
-  let tmp = createCacheKey();
+  let tmp = callback3();
   dependencyMap = tmp;
   const items = [numRows];
-  memo = memo.useMemo(() => outer1_0(_undefined[9]).range(0, numRows * outer1_5), items);
+  memo = memo.useMemo(() => closure_1_0(row[9]).range(0, numRows * closure_1_5), items);
   const items1 = [memo];
-  memo1 = memo.useMemo(() => outer1_0(_undefined[9]).chunk(memo, outer1_5), items1);
-  let obj = require(15870) /* useFullscreenPlaceholderCount */;
+  memo1 = memo.useMemo(() => closure_1_0(row[9]).chunk(memo, closure_1_5), items1);
+  let obj = useFullscreenPlaceholderCount;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(visible.visible);
   obj = { style: items2, pointerEvents: "none", children: null };
   items2 = [, , ];
   ({ container: arr4[0], recentsContainer: arr4[1] } = tmp);
   items2[2] = placeholderAnimatedStyle;
   obj = { style: tmp.section, children: null };
-  const obj1 = { style: tmp.sectionItem, children: null };
+  obj1 = { style: tmp.sectionItem, children: null };
   const obj2 = { style: tmp.sectionText, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj2[5] = intl.string(require(1236) /* getSystemLocale */.t.LBYpDH);
-  obj1[1] = callback(require(4734) /* Text */.Text, obj2);
+  const intl = getSystemLocale.intl;
+  obj2[5] = intl.string(getSystemLocale.t.LBYpDH);
+  obj1[1] = callback(Text.Text, obj2);
   const items3 = [callback(memo1, obj1), ];
   const obj3 = { style: tmp.sectionItem, children: null };
   const obj4 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.sectionText, children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.LFTAUp);
-  obj3[1] = callback(require(4734) /* Text */.Text, obj4);
+  const intl2 = getSystemLocale.intl;
+  obj4[3] = intl2.string(getSystemLocale.t.LFTAUp);
+  obj3[1] = callback(Text.Text, obj4);
   items3[1] = callback(memo1, obj3);
   obj[1] = items3;
   const items4 = [
     callback2(memo1, obj),
     memo1.map((arr) => {
-      let closure_0 = arg1;
+      closure_0 = arg1;
       const children = [
-        outer1_7(memo1, {
-          style: _undefined.row,
+        closure_1_7(memo1, {
+          style: row.row,
           children: arr.map((arg0, arg1) => {
             let obj = { height: closure_0, width: closure_0, style: null };
-            const tmp = numRows(15872);
-            obj = { itemIndex: closure_0 * outer2_5 + arg1, numItems: outer1_3.length, numColumns: outer2_5, spacing: outer2_6 };
-            obj[2] = outer2_0(11509).getMediaGridItemStyles(obj);
-            return outer2_7(tmp, obj, arg1);
+            const tmp = numRows(15969);
+            obj = { itemIndex: closure_0 * closure_2_5 + arg1, numItems: closure_1_3.length, numColumns: closure_2_5, spacing: closure_2_6 };
+            obj[2] = closure_2_0(11558).getMediaGridItemStyles(obj);
+            return closure_2_7(tmp, obj, arg1);
           })
         }),
 
       ];
       let tmp2Result = arg1 < memo1.length - 1;
       if (tmp2Result) {
-        tmp2Result = outer1_7(outer1_0(_undefined[13]).MediaVerticalSeparator, {});
+        tmp2Result = closure_1_7(closure_1_0(row[13]).MediaVerticalSeparator, {});
       }
       children[1] = tmp2Result;
-      return outer1_8(memo.Fragment, { children }, arg1);
+      return closure_1_8(memo.Fragment, { children }, arg1);
     })
   ];
   obj[2] = items4;
-  return callback2(numRows(4115).View, obj);
+  return callback2(numRows(4119).View, obj);
 };

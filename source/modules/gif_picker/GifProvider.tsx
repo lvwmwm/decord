@@ -1,15 +1,18 @@
-// Module ID: 10196
-// Function ID: 10197
+// Module ID: 10235
+// Function ID: 10236
 // Name: GIF_PROVIDER
 // Dependencies: [1236, 2]
 // Exports: getSearchPlaceholder
 
-// Module 10196 (GIF_PROVIDER)
-const result = require("set").fileFinishedImporting("modules/gif_picker/GifProvider.tsx");
+// Module 10235 (GIF_PROVIDER)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
+const result = set.fileFinishedImporting("modules/gif_picker/GifProvider.tsx");
 
 export const GIF_PROVIDER = "klipy";
 export const GIF_PROVIDER_EMBED_NAME = "Klipy";
 export const getSearchPlaceholder = function getSearchPlaceholder() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  return intl.string(require(1236) /* getSystemLocale */.t.T1Frnm);
+  const intl = getSystemLocale.intl;
+  return intl.string(getSystemLocale.t.T1Frnm);
 };

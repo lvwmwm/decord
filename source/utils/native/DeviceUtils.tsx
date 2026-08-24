@@ -1,22 +1,23 @@
-// Module ID: 4354
-// Function ID: 4355
+// Module ID: 4358
+// Function ID: 4359
 // Name: DCDDeviceManager
 // Dependencies: [17, 500, 671, 595, 2]
 // Exports: getDevice, getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersion, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS, isOrientationLockSupported
 
-// Module 4354 (DCDDeviceManager)
-import set from "set";
-import set from "enforcing";
+// Module 4358 (DCDDeviceManager)
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import enforcingDefault from "enforcing" /* 671 */;
+import set from "set" /* 500 */;
 
 if (set.isAndroid()) {
-  const importDefaultResult = require("enforcing");
+  const importDefaultResult = enforcingDefault;
   let constants;
   if (importDefaultResult != null) {
     constants = importDefaultResult.getConstants();
   }
   let DCDDeviceManager = constants;
 } else {
-  DCDDeviceManager = require("get ActivityIndicator").NativeModules.DCDDeviceManager;
+  DCDDeviceManager = get_ActivityIndicator.NativeModules.DCDDeviceManager;
 }
 let c4 = null;
 const mediaPerformanceClass = "mediaPerformanceClass";
@@ -88,10 +89,10 @@ export const getDeviceMediaPerformanceClass = function getDeviceMediaPerformance
       tmp5 = null == value;
     }
     if (tmp5) {
-      mediaPerformanceClass2 = importDefault(671).getMediaPerformanceClass();
+      mediaPerformanceClass2 = enforcingDefault.getMediaPerformanceClass();
       const Storage2 = tmp(595).Storage;
       const result = Storage2.set(mediaPerformanceClass, mediaPerformanceClass2);
-      const obj2 = importDefault(671);
+      const obj2 = enforcingDefault;
     }
     tmp3 = mediaPerformanceClass2;
   }

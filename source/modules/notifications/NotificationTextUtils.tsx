@@ -1,41 +1,48 @@
-// Module ID: 10019
-// Function ID: 10020
+// Module ID: 10058
+// Function ID: 10059
 // Name: shouldNotifyBase
-// Dependencies: [1390, 4022, 4799, 4023, 8664, 1395, 1391, 1910, 4539, 4030, 1979, 4197, 7250, 5043, 1385, 1922, 10020, 676, 8703, 1235, 5252, 4066, 1403, 10021, 10022, 4819, 4230, 10023, 7438, 4984, 1236, 8428, 4796, 5385, 8209, 3, 5026, 4219, 1954, 7436, 10024, 589, 2]
+// Dependencies: [1390, 4025, 4804, 4026, 8701, 1395, 1391, 1910, 4544, 4033, 1980, 4201, 7288, 5048, 1385, 1922, 10059, 676, 8740, 1235, 5257, 4069, 1403, 10060, 10061, 4824, 4234, 10062, 7476, 4989, 1236, 8467, 4801, 5390, 8249, 3, 5031, 4223, 1954, 7474, 10063, 589, 2]
 // Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel, useAllowInAppNotifications
 
-// Module 10019 (shouldNotifyBase)
-import participantFromServer from "participantFromServer";
-import initialize from "initialize";
-import processChannel from "processChannel";
-import storeThread from "storeThread";
-import withEqualityFn from "withEqualityFn";
-import createChannelRecord from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import createRTCConnection from "createRTCConnection";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import handleConnectionOpen from "handleConnectionOpen";
-import closure_15 from "handleConnectionOpen";
-import filterPlayingActivities from "filterPlayingActivities";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import handleRequiredAction from "handleRequiredAction";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import closure_20 from "initialize";
-import ME from "ME";
-import { ActivityPanelModes } from "ActivityPanelModes";
-import { ThreadMemberFlags } from "AbortCodes";
+// Module 10058 (shouldNotifyBase)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import hasFlag from "hasFlag" /* 1403 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+import getNicknameDefault from "getNickname" /* 4801 */;
+import isMentioned from "isMentioned" /* 4824 */;
+import computeChannelName from "computeChannelName" /* 4989 */;
+import isForwardMessage from "isForwardMessage" /* 5031 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 5257 */;
+import isSystemMessageDefault from "isSystemMessage" /* 5390 */;
+import FSI from "FSI" /* 7476 */;
+import isChannelCurrentlyVisible from "isChannelCurrentlyVisible" /* 10060 */;
+import computeThreadNotificationSetting from "computeThreadNotificationSetting" /* 10061 */;
+import useFocusModeEnabled from "useFocusModeEnabled" /* 10063 */;
+import closure_3 from "participantFromServer" /* 1390 */;
+import closure_4 from "initialize" /* 4025 */;
+import closure_5 from "processChannel" /* 4804 */;
+import closure_6 from "storeThread" /* 4026 */;
+import closure_7 from "withEqualityFn" /* 8701 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import closure_10 from "ensureGuildLoaded" /* 1391 */;
+import closure_11 from "createGuildRecordFromRust" /* 1910 */;
+import closure_12 from "createRTCConnection" /* 4544 */;
+import closure_13 from "markAllUserIdListsStale" /* 4033 */;
+import closure_14 from "handleConnectionOpen" /* 1980 */;
+import closure_15 from "handleConnectionOpen" /* 4201 */;
+import closure_16 from "filterPlayingActivities" /* 7288 */;
+import closure_17 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_18 from "handleRequiredAction" /* 1385 */;
+import closure_19 from "mergeGuildAvatar" /* 1922 */;
+import closure_20 from "initialize" /* 10059 */;
+import ME from "ME" /* 676 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 8740 */;
+import { ThreadMemberFlags } from "AbortCodes" /* 1235 */;
 
-let c9;
-let closure_21;
-let closure_22;
-let closure_23;
-let closure_24;
-let closure_25;
-let closure_26;
-let closure_27;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function shouldNotifyBase(currentUser, user, channel, arg3) {
   let obj = arg3;
   if (arg3 === undefined) {
@@ -62,7 +69,7 @@ function shouldNotifyBase(currentUser, user, channel, arg3) {
         }
         let tmp10 = !tmp8;
         if (!tmp8) {
-          const isBlockedOrIgnoredResult = markAllUserIdListsStale.isBlockedOrIgnored(user.id);
+          const isBlockedOrIgnoredResult = closure_13.isBlockedOrIgnored(user.id);
           let tmp13 = !isBlockedOrIgnoredResult;
           if (!isBlockedOrIgnoredResult) {
             const ignoreStatus = obj.ignoreStatus;
@@ -72,14 +79,14 @@ function shouldNotifyBase(currentUser, user, channel, arg3) {
             }
             let tmp17 = !tmp14;
             if (!tmp14) {
-              const FocusMode = tmp2(4066).FocusMode;
+              const FocusMode = tmp2(4069).FocusMode;
               const setting = FocusMode.getSetting();
               let tmp19 = !setting;
               if (!setting) {
                 const ignoreNoMessagesSetting = obj.ignoreNoMessagesSetting;
                 let allowNoMessagesResult = !ignoreNoMessagesSetting;
                 if (!ignoreNoMessagesSetting) {
-                  allowNoMessagesResult = updateUserGuildSettingsInternal.allowNoMessages(channel);
+                  allowNoMessagesResult = closure_17.allowNoMessages(channel);
                 }
                 tmp19 = !allowNoMessagesResult;
               }
@@ -93,25 +100,25 @@ function shouldNotifyBase(currentUser, user, channel, arg3) {
       }
       return tmp6;
     }
-    obj2 = require(5252) /* shouldShowAgeGateForVoiceChannel */;
+    obj2 = shouldShowAgeGateForVoiceChannel;
     tmp2 = require;
   }
 }
 function renderTitle(channelName, channel, channel) {
-  const obj = require(7438) /* FSI */;
-  const isolateResult = require(7438) /* FSI */.isolate(channelName);
-  const obj2 = require(7438) /* FSI */;
-  const obj3 = require(4984) /* computeChannelName */;
-  const tmp4 = mergeGuildAvatar;
-  const tmp5 = markAllUserIdListsStale;
+  const obj = FSI;
+  const isolateResult = FSI.isolate(channelName);
+  const obj2 = FSI;
+  const obj3 = computeChannelName;
+  const tmp4 = closure_19;
+  const tmp5 = closure_13;
   let str = "";
   if (null != channel) {
-    let tmpResult = tmp(7438);
-    tmpResult = tmp(4984);
+    let tmpResult = tmp(7476);
+    tmpResult = tmp(4989);
     const _HermesInternal = HermesInternal;
     str = ", " + tmpResult.isolate(tmpResult.computeChannelName(channel, tmp4, tmp5));
   }
-  return "" + isolateResult + " (" + obj2.isolate(require(4984) /* computeChannelName */.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true)) + str + ")";
+  return "" + isolateResult + " (" + obj2.isolate(computeChannelName.computeChannelName(channel, closure_19, closure_13, true)) + str + ")";
 }
 function getInviteEmbedFormatString(type, _TD0la, _TD0la2, _TD0la3) {
   type = type.type;
@@ -127,9 +134,9 @@ function getInviteEmbedFormatString(type, _TD0la, _TD0la2, _TD0la3) {
   }
   return _TD0la;
 }
-({ GUILD_VOCAL_CHANNEL_TYPES: metroImportAll, THREAD_CHANNEL_TYPES: c9 } = createChannelRecord);
+({ GUILD_VOCAL_CHANNEL_TYPES: closure_8, THREAD_CHANNEL_TYPES: c9 } = createChannelRecord);
 ({ ActivityActionTypes: closure_21, ChannelTypes: closure_22, MessageFlags: closure_23, MessageTypes: closure_24, MessageTypesSets: closure_25, StatusTypes: closure_26, UserFlags: closure_27 } = ME);
-let result = require("processChannel").fileFinishedImporting("modules/notifications/NotificationTextUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/notifications/NotificationTextUtils.tsx");
 
 export { shouldNotifyBase };
 export const shouldNotify = function shouldNotify(message, channel_id, result) {
@@ -142,12 +149,12 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
     flag2 = false;
   }
   if (null != message.flags) {
-    let obj = require(1403) /* hasFlag */;
+    let obj = hasFlag;
     if (obj.hasFlag(message.flags, constants3.SUPPRESS_NOTIFICATIONS)) {
       return false;
     }
   }
-  let obj1 = store2;
+  obj1 = store2;
   const channel = store2.getChannel(channel_id);
   let channel1 = channel;
   if (message.type === constants4.THREAD_STARTER_MESSAGE) {
@@ -190,9 +197,9 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
               if (obj5.isChannelCurrentlyVisible(channel1.id)) {
                 return false;
               }
-              obj5 = require(10021) /* isChannelCurrentlyVisible */;
+              obj5 = isChannelCurrentlyVisible;
             }
-            if (markAllUserIdListsStale.isBlockedOrIgnoredForMessage(message)) {
+            if (closure_13.isBlockedOrIgnoredForMessage(message)) {
               return false;
             } else {
               if (undefined !== message.activity_instance) {
@@ -218,7 +225,7 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
                 if (muted.isMuted(channel1.id)) {
                   return false;
                 } else {
-                  const threadNotificationSetting = require(10022) /* computeThreadNotificationSetting */.computeThreadNotificationSetting(channel1);
+                  const threadNotificationSetting = computeThreadNotificationSetting.computeThreadNotificationSetting(channel1);
                   let tmp39 = threadNotificationSetting !== ThreadMemberFlags.NO_MESSAGES;
                   if (tmp39) {
                     result = threadNotificationSetting === ThreadMemberFlags.ALL_MESSAGES;
@@ -226,8 +233,8 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
                       obj = { rawMessage: null, userId: null, suppressEveryone: false, suppressRoles: false };
                       obj[0] = message;
                       obj[1] = currentUser.id;
-                      result = require(4819) /* isMentioned */.isRawMessageMentioned(obj);
-                      const tmp36Result = require(4819) /* isMentioned */;
+                      result = isMentioned.isRawMessageMentioned(obj);
+                      const tmp36Result = isMentioned;
                     }
                     tmp39 = result;
                   }
@@ -239,7 +246,7 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
                 if (hasItem) {
                   tmp29 = channelId.getChannelId() === channel1.id;
                 }
-                if (updateUserGuildSettingsInternal.allowAllMessages(channel1)) {
+                if (closure_17.allowAllMessages(channel1)) {
                   if (tmp29) {
                     return true;
                   }
@@ -251,7 +258,7 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
                 obj1[1] = currentUser.id;
                 obj1[2] = result1;
                 obj1[3] = result2;
-                return require(4819) /* isMentioned */.isRawMessageMentioned(obj1);
+                return isMentioned.isRawMessageMentioned(obj1);
               }
             }
           }
@@ -292,18 +299,18 @@ export const shouldNotifyForSelectedChannel = function shouldNotifyForSelectedCh
         const hasFlagResult = user.hasFlag(constants7.SPAMMER);
         let tmp12 = !hasFlagResult;
         if (!hasFlagResult) {
-          const result = markAllUserIdListsStale.isBlockedOrIgnoredForMessage(type);
+          const result = closure_13.isBlockedOrIgnoredForMessage(type);
           let tmp15 = !result;
           if (!result) {
             let tmp16 = user.id !== currentUser.id;
             if (tmp16) {
               let tmp19 = store3.getStatus() !== constants6.DND;
               if (tmp19) {
-                const FocusMode = require(4066) /* explicitContentFromProto */.FocusMode;
+                const FocusMode = explicitContentFromProto.FocusMode;
                 const setting = FocusMode.getSetting();
                 let tmp23 = !setting;
                 if (!setting) {
-                  tmp23 = !updateUserGuildSettingsInternal.allowNoMessages(channel1);
+                  tmp23 = !closure_17.allowNoMessages(channel1);
                 }
                 tmp19 = tmp23;
               }
@@ -337,13 +344,13 @@ export const shouldNotifyForForumThreadCreation = function shouldNotifyForForumT
     obj[0] = flag2;
     let tmp9 = shouldNotifyBase(currentUser, user, channel2, obj);
     if (tmp9) {
-      const result = updateUserGuildSettingsInternal.isGuildOrCategoryOrChannelMuted(channel2.guild_id, channel2.id);
+      const result = closure_17.isGuildOrCategoryOrChannelMuted(channel2.guild_id, channel2.id);
       let tmp11 = !result;
       if (!result) {
         let result1 = !flag;
         if (!flag) {
-          result1 = require(10021) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel2.id);
-          const obj3 = require(10021) /* isChannelCurrentlyVisible */;
+          result1 = isChannelCurrentlyVisible.isChannelCurrentlyVisible(channel2.id);
+          const obj3 = isChannelCurrentlyVisible;
         }
         let newForumThreadsCreated = !result1;
         if (!result1) {
@@ -352,17 +359,13 @@ export const shouldNotifyForForumThreadCreation = function shouldNotifyForForumT
         tmp11 = newForumThreadsCreated;
       }
       tmp9 = tmp11;
-      obj2 = updateUserGuildSettingsInternal;
+      obj2 = closure_17;
     }
     tmp3 = tmp9;
   }
   return tmp3;
 };
 export const shouldNotifyForReaction = function shouldNotifyForReaction(arg0) {
-  let channel;
-  let includeSelectedChannel;
-  let message;
-  let reactor;
   ({ channel, reactor, includeSelectedChannel, message } = arg0);
   const currentUser = authStore.getCurrentUser();
   const author = message.author;
@@ -377,13 +380,13 @@ export const shouldNotifyForReaction = function shouldNotifyForReaction(arg0) {
     if (tmp10) {
       let tmp11 = null == reactor;
       if (!tmp11) {
-        tmp11 = !markAllUserIdListsStale.isBlockedOrIgnored(reactor.id);
+        tmp11 = !closure_13.isBlockedOrIgnored(reactor.id);
       }
       if (tmp11) {
         let result = !includeSelectedChannel;
         if (!includeSelectedChannel) {
-          result = require(10021) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel.id);
-          const obj = require(10021) /* isChannelCurrentlyVisible */;
+          result = isChannelCurrentlyVisible.isChannelCurrentlyVisible(channel.id);
+          const obj = isChannelCurrentlyVisible;
         }
         tmp11 = !result;
       }
@@ -398,14 +401,14 @@ export const shouldIncludeSelectedChannel = function shouldIncludeSelectedChanne
   let flag = true;
   if (!state.isVoicePanelFullscreen()) {
     if (null == store.getConnectedActivityLocation()) {
-      const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
+      const rootNavigationRef = getRootNavigationRef.getRootNavigationRef();
       let tmp5 = null == rootNavigationRef || !rootNavigationRef.isReady();
       if (!tmp5) {
-        tmp5 = !tmp3(10023).isChannelFocused();
-        const tmp3Result = tmp3(10023);
+        tmp5 = !tmp3(10062).isChannelFocused();
+        const tmp3Result = tmp3(10062);
       }
       flag = tmp5;
-      const obj3 = require(4230) /* getRootNavigationRef */;
+      const obj3 = getRootNavigationRef;
       tmp3 = require;
     } else {
       flag = true;
@@ -416,8 +419,7 @@ export const shouldIncludeSelectedChannel = function shouldIncludeSelectedChanne
 };
 export { renderTitle };
 export const makeTextChatNotification = function makeTextChatNotification(getGuildId, content, bot) {
-  let emoji;
-  let obj = importDefault(4796);
+  let obj = getNicknameDefault;
   const name = obj.getName(getGuildId.getGuildId(), getGuildId.id, bot);
   const type = getGuildId.type;
   if (constants2.GUILD_ANNOUNCEMENT !== type) {
@@ -430,8 +432,8 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
               if (tmp4.GROUP_DM === type) {
                 let tmp6 = getGuildId.isManaged() && bot.bot;
                 if (tmp6) {
-                  let obj1 = require(4984) /* computeChannelName */;
-                  tmp6 = name === obj1.computeChannelName(getGuildId, mergeGuildAvatar, markAllUserIdListsStale);
+                  obj1 = computeChannelName;
+                  tmp6 = name === obj1.computeChannelName(getGuildId, closure_19, closure_13);
                 }
                 tmp5 = name;
                 if (!tmp6) {
@@ -440,8 +442,8 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
               }
             }
             content = content.content;
-            if (tmp(5385)(content)) {
-              let tmpResult = tmp(8209);
+            if (tmp(5390)(content)) {
+              let tmpResult = tmp(8249);
               content = tmpResult.stringify(content, getGuildId);
               if (null == content) {
                 const obj15 = new tmp(3)("NotificationTextUtils");
@@ -449,7 +451,7 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
                 obj[0] = content;
                 obj15.warn("SystemMessageUtils.stringify(...) could not convert", obj);
                 const _Error = Error;
-                const error = new Error("failed to stringify system message");
+                error = new Error("failed to stringify system message");
                 throw error;
               }
             }
@@ -459,33 +461,33 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
               sticker_items = "stickerItems" in content ? content.stickerItems : content.stickers;
             }
             if ("message_reference" in content) {
-              let obj4 = require(5026) /* isForwardMessage */;
+              let obj4 = isForwardMessage;
               let result = obj4.isForwardServerMessage(content);
             } else {
-              result = tmp(5026)(content);
+              result = tmp(5031)(content);
             }
             const items = [];
             if (result) {
-              const intl8 = require(1236) /* getSystemLocale */.intl;
-              let stringResult = intl8.string(require(1236) /* getSystemLocale */.t["9ddYKt"]);
+              const intl8 = getSystemLocale.intl;
+              let stringResult = intl8.string(getSystemLocale.t["9ddYKt"]);
               let tmp26 = items;
             } else {
               if (null != content.activity) {
                 if (null != content.application) {
                   if (content.activity.type === constants.JOIN) {
-                    const intl7 = require(1236) /* getSystemLocale */.intl;
+                    const intl7 = getSystemLocale.intl;
                     obj = { user: null, game: null };
                     obj[0] = name;
                     obj[1] = content.application.name;
-                    let str7 = intl7.formatToPlainString(getInviteEmbedFormatString(getGuildId, require(1236) /* getSystemLocale */.t.E8CgCh, require(1236) /* getSystemLocale */.t.c6KHWJ, require(1236) /* getSystemLocale */.t.Fy7rJN), obj);
+                    let str7 = intl7.formatToPlainString(getInviteEmbedFormatString(getGuildId, getSystemLocale.t.E8CgCh, getSystemLocale.t.c6KHWJ, getSystemLocale.t.Fy7rJN), obj);
                   } else {
                     str7 = "";
                     if (content.activity.type === tmp44.JOIN_REQUEST) {
-                      const intl9 = require(1236) /* getSystemLocale */.intl;
+                      const intl9 = getSystemLocale.intl;
                       obj1 = { user: null, game: null };
                       obj1[0] = name;
                       obj1[1] = content.application.name;
-                      str7 = intl9.formatToPlainString(getInviteEmbedFormatString(getGuildId, require(1236) /* getSystemLocale */.t["/TD0la"], require(1236) /* getSystemLocale */.t["/TD0la"], require(1236) /* getSystemLocale */.t["/TD0la"]), obj1);
+                      str7 = intl9.formatToPlainString(getInviteEmbedFormatString(getGuildId, getSystemLocale.t["/TD0la"], getSystemLocale.t["/TD0la"], getSystemLocale.t["/TD0la"]), obj1);
                     }
                   }
                   stringResult = str7;
@@ -494,35 +496,35 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
               }
               if (null != content.activity) {
                 if (content.activity.type === constants.LISTEN) {
-                  const intl6 = require(1236) /* getSystemLocale */.intl;
+                  const intl6 = getSystemLocale.intl;
                   let obj2 = { user: null };
                   obj2[0] = name;
-                  stringResult = intl6.formatToPlainString(getInviteEmbedFormatString(getGuildId, require(1236) /* getSystemLocale */.t.SaDdmN, require(1236) /* getSystemLocale */.t.qsODhp, require(1236) /* getSystemLocale */.t.WeiMTW), obj2);
+                  stringResult = intl6.formatToPlainString(getInviteEmbedFormatString(getGuildId, getSystemLocale.t.SaDdmN, getSystemLocale.t.qsODhp, getSystemLocale.t.WeiMTW), obj2);
                   tmp26 = items;
-                  const tmp43 = getInviteEmbedFormatString(getGuildId, require(1236) /* getSystemLocale */.t.SaDdmN, require(1236) /* getSystemLocale */.t.qsODhp, require(1236) /* getSystemLocale */.t.WeiMTW);
+                  const tmp43 = getInviteEmbedFormatString(getGuildId, getSystemLocale.t.SaDdmN, getSystemLocale.t.qsODhp, getSystemLocale.t.WeiMTW);
                 }
               }
               if (null != sticker_items) {
                 if (sticker_items.length > 0) {
-                  const intl5 = require(1236) /* getSystemLocale */.intl;
+                  const intl5 = getSystemLocale.intl;
                   const obj3 = { stickerName: null };
                   obj3[0] = sticker_items[0].name;
-                  stringResult = intl5.formatToPlainString(require(1236) /* getSystemLocale */.t.zY4v1B, obj3);
+                  stringResult = intl5.formatToPlainString(getSystemLocale.t.zY4v1B, obj3);
                   tmp26 = items;
                 }
               }
               if (content.type === constants4.PREMIUM_REFERRAL) {
-                const intl4 = require(1236) /* getSystemLocale */.intl;
+                const intl4 = getSystemLocale.intl;
                 obj4 = { username: null };
-                tmpResult = tmp(4219);
+                tmpResult = tmp(4223);
                 obj4[0] = tmpResult.getName(bot);
-                stringResult = intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.lieTqU, obj4);
+                stringResult = intl4.formatToPlainString(getSystemLocale.t.lieTqU, obj4);
                 tmp26 = items;
               } else if (null != content.poll) {
-                const intl3 = require(1236) /* getSystemLocale */.intl;
+                const intl3 = getSystemLocale.intl;
                 const obj5 = { question: null };
                 obj5[0] = content.poll.question.text;
-                stringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.ImizdM, obj5);
+                stringResult = intl3.formatToPlainString(getSystemLocale.t.ImizdM, obj5);
                 tmp26 = items;
               } else if (content.type === tmp23.POLL_RESULT) {
                 const embeds = content.embeds;
@@ -537,24 +539,24 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
                   }
                 }
                 if (null == found) {
-                  let intl2 = require(1236) /* getSystemLocale */.intl;
+                  let intl2 = getSystemLocale.intl;
                   const obj6 = { question: null };
                   obj6[0] = "";
-                  stringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["9WrecI"], obj6);
+                  stringResult = intl2.formatToPlainString(getSystemLocale.t["9WrecI"], obj6);
                   tmp26 = items;
                 }
               } else {
                 if (null != content.components) {
                   if (content.components.length > 0) {
-                    if (content.components[0].type === require(1954) /* PermissionOverwriteType */.ComponentType.CHECKPOINT_CARD) {
+                    if (content.components[0].type === PermissionOverwriteType.ComponentType.CHECKPOINT_CARD) {
                       let intl = tmp24(1236).intl;
                       stringResult = intl.string(tmp24(1236).t.HWnMTQ);
                       tmp26 = items;
                     }
                   }
                 }
-                const tmpResult1 = tmp(7436);
-                ({ content, emoji } = tmp(7436).unparseWithMeta(content, getGuildId.id, true));
+                const tmpResult1 = tmp(7474);
+                ({ content, emoji } = tmp(7474).unparseWithMeta(content, getGuildId.id, true));
                 tmp26 = emoji;
                 stringResult = content;
                 if (0 !== content.length) {
@@ -581,7 +583,7 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
                     }
                   }
                 }
-                const unparseWithMetaResult = tmp(7436).unparseWithMeta(content, getGuildId.id, true);
+                const unparseWithMetaResult = tmp(7474).unparseWithMeta(content, getGuildId.id, true);
               }
             }
             if (0 === stringResult.length) {
@@ -647,7 +649,7 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
       tmp5 = renderTitle(name, channel, obj2.getChannel(channel.parent_id));
     }
   }
-  if (importDefault(5385)(content)) {
+  if (isSystemMessageDefault(content)) {
     tmp5 = name;
     if (null != guild.getGuild(getGuildId.getGuildId())) {
       tmp5 = renderTitle(name, getGuildId, channel);
@@ -657,10 +659,10 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
   }
 };
 export const allowInAppNotifications = function allowInAppNotifications() {
-  if (handleRequiredAction.hasAction()) {
+  if (closure_18.hasAction()) {
     return false;
   } else {
-    const ShowInAppNotifications = require(4066) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = explicitContentFromProto.ShowInAppNotifications;
     let setting = ShowInAppNotifications.getSetting();
     if (setting) {
       setting = !obj.getFocusModeEnabled();
@@ -669,12 +671,12 @@ export const allowInAppNotifications = function allowInAppNotifications() {
   }
 };
 export const useAllowInAppNotifications = function useAllowInAppNotifications() {
-  const ShowInAppNotifications = require(4066) /* explicitContentFromProto */.ShowInAppNotifications;
+  const ShowInAppNotifications = explicitContentFromProto.ShowInAppNotifications;
   const setting = ShowInAppNotifications.useSetting();
-  const focusModeEnabled = require(10024) /* useFocusModeEnabled */.useFocusModeEnabled();
-  const obj = require(10024) /* useFocusModeEnabled */;
-  const items = [handleRequiredAction];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => handleRequiredAction.hasAction());
+  const focusModeEnabled = useFocusModeEnabled.useFocusModeEnabled();
+  const obj = useFocusModeEnabled;
+  const items = [closure_18];
+  const stateFromStores = initialize.useStateFromStores(items, () => closure_18.hasAction());
   let tmp4 = !stateFromStores;
   if (!stateFromStores) {
     tmp4 = setting;

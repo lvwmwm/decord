@@ -1,35 +1,30 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 14995
+// Function ID: 14996
 // Name: Content
-// Dependencies: [32, 19, 17, 21, 4661, 14929, 5507, 9314, 4745, 1367, 4756, 6286, 7178, 8101, 8100, 6803, 7126, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 14993, 5512, 9351, 4750, 1367, 4761, 6317, 7216, 8140, 8139, 6840, 7164, 2]
 // Exports: default
 
-// Module 14931 (Content)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "set";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14995 (Content)
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import Layer from "Layer" /* 7164 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function Content() {
-  let tmp11;
-  let tmp12;
   let tmp = callback2();
   let obj = first3;
   const tmp2 = first2(first3.useState(true), 2);
   const first = tmp2[0];
-  const importDefault = tmp2[1];
+  importDefault = tmp2[1];
   const tmp4 = first2(first3.useState(false), 2);
   const first1 = tmp4[0];
   const tmp6 = first2(first3.useState(false), 2);
   first2 = tmp6[0];
-  let obj1 = first(first1[5]);
+  obj1 = first(first1[5]);
   [tmp11, tmp12] = first2(obj1.useCanRotate(), 2);
   const tmp13 = first2(first3.useState(false), 2);
   first3 = tmp13[0];
@@ -46,7 +41,7 @@ function Content() {
   const ref = obj.useRef(null);
   const items = [first3, first2, first, first1, str, first4, first5];
   const memo = obj.useMemo(() => {
-    let str = "top";
+    str = "top";
     if (first2) {
       str = "bottom";
     }
@@ -168,16 +163,15 @@ function Content() {
   return closure_8(tmp28, obj9);
 }
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
+({ jsx: error, jsxs: closure_8, Fragment: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles({ container: { paddingTop: 240, flex: 1, alignItems: "center", justifyContent: "center" }, flex: { flex: 1, padding: 16 } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemCoachmark.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemCoachmark.tsx");
 
 export default function UserSettingsDesignSystemCoachmark() {
   let obj = { style: callback2().flex, bottom: true, children: null };
   obj = { children: null };
-  obj = { children: null };
-  obj[0] = callback(Content, {});
-  obj[0] = callback(require(7126) /* Layer */.LayerScope, obj);
+  obj = { children: callback(Content, {}) };
+  obj[0] = callback(Layer.LayerScope, obj);
   obj[2] = callback(closure_6, obj);
-  return callback(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback(SafeAreaPaddingView.SafeAreaPaddingView, obj);
 };

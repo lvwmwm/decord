@@ -1,17 +1,19 @@
-// Module ID: 13281
-// Function ID: 13282
+// Module ID: 13339
+// Function ID: 13340
 // Name: init
-// Dependencies: [4030, 4542, 13282, 589, 709, 2]
+// Dependencies: [4033, 4547, 13340, 589, 709, 2]
 
-// Module 13281 (init)
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import updateVoiceState from "updateVoiceState";
-import { Store } from "initialize";
-import set from "handleChannelSelect";
+// Module 13339 (init)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import handleChannelSelectDefault from "handleChannelSelect" /* 13340 */;
+import closure_2 from "markAllUserIdListsStale" /* 4033 */;
+import closure_3 from "updateVoiceState" /* 4547 */;
+import set from "set" /* 2 */;
 
 function init() {
-  let closure_4 = {};
-  let closure_5 = {};
+  closure_4 = {};
+  closure_5 = {};
 }
 function handleRelationshipChange(relationship) {
   relationship = relationship.relationship;
@@ -23,7 +25,7 @@ function handleRelationshipChange(relationship) {
   return tmp2;
 }
 function processUserInChannel(channelId, id) {
-  const set = new Set(dependencyMap[channelId]);
+  set = new Set(dependencyMap[channelId]);
   const isBlockedResult = blocked.isBlocked(id);
   if (isBlockedResult) {
     if (!set.has(id)) {
@@ -49,8 +51,8 @@ function processUserInChannel(channelId, id) {
             delete tmp[tmp2];
           }
           if (flag3) {
-            const result = importDefault(13282).handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
-            const obj4 = importDefault(13282);
+            const result = handleChannelSelectDefault.handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
+            const obj4 = handleChannelSelectDefault;
           }
           return flag4;
         }
@@ -79,11 +81,12 @@ function processUserInChannel(channelId, id) {
 let closure_4 = {};
 let closure_5 = {};
 let set = new Set();
+const Store = initializeDefault.Store;
 class VoiceChannelBlockedUserStore extends Store {
 }
 const prototype = VoiceChannelBlockedUserStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(markAllUserIdListsStale, updateVoiceState);
+  this.waitFor(closure_2, closure_3);
 };
 prototype["getBlockedUsersForVoiceChannel"] = function getBlockedUsersForVoiceChannel(channelId) {
   let tmp = dependencyMap[channelId];
@@ -99,7 +102,7 @@ prototype["getIgnoredUsersForVoiceChannel"] = function getIgnoredUsersForVoiceCh
   }
   return tmp;
 };
-const voiceChannelBlockedUserStore = new VoiceChannelBlockedUserStore(require("dispatcher"), {
+const voiceChannelBlockedUserStore = new VoiceChannelBlockedUserStore(dispatcherDefault, {
   CONNECTION_OPEN: init,
   LOGOUT: init,
   OVERLAY_INITIALIZE: function handleOverlayInitialize() {
@@ -130,25 +133,25 @@ const voiceChannelBlockedUserStore = new VoiceChannelBlockedUserStore(require("d
   },
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
     voiceStates = voiceStates.voiceStates;
-    let c0 = false;
+    c0 = false;
     const item = voiceStates.forEach((oldChannelId) => {
       if (null != oldChannelId.oldChannelId) {
-        if (null != outer1_4[oldChannelId.oldChannelId]) {
-          if (outer1_4[oldChannelId.oldChannelId] != null) {
+        if (null != closure_1_4[oldChannelId.oldChannelId]) {
+          if (closure_1_4[oldChannelId.oldChannelId] != null) {
             obj.delete(oldChannelId.userId);
           }
-          let c0 = true;
+          closure_0 = true;
         }
-        if (null != outer1_5[oldChannelId.oldChannelId]) {
-          if (outer1_5[oldChannelId.oldChannelId] != null) {
+        if (null != closure_1_5[oldChannelId.oldChannelId]) {
+          if (closure_1_5[oldChannelId.oldChannelId] != null) {
             obj2.delete(oldChannelId.userId);
           }
-          c0 = true;
+          closure_0 = true;
         }
       }
       if (null != oldChannelId.channelId) {
-        c0 = outer1_8(oldChannelId.channelId, oldChannelId.userId) || c0;
-        const tmp8 = outer1_8(oldChannelId.channelId, oldChannelId.userId) || c0;
+        closure_0 = closure_1_8(oldChannelId.channelId, oldChannelId.userId) || closure_0;
+        const tmp8 = closure_1_8(oldChannelId.channelId, oldChannelId.userId) || closure_0;
       }
     });
     return c0;

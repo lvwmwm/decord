@@ -1,13 +1,15 @@
-// Module ID: 11587
-// Function ID: 11588
+// Module ID: 11636
+// Function ID: 11637
 // Name: isStaff
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 11587 (isStaff)
-import { UserFlags } from "ME";
+// Module 11636 (isStaff)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/user/isStaffFromRawUser.tsx");
+const UserFlags = ME.UserFlags;
+const result = set.fileFinishedImporting("modules/user/isStaffFromRawUser.tsx");
 
 export default function isStaff(flags) {
   let num = flags.flags;

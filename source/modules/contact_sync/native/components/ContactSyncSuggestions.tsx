@@ -1,29 +1,25 @@
-// Module ID: 11871
-// Function ID: 11872
+// Module ID: 11920
+// Function ID: 11921
 // Name: SuggestedFriendsSectionHeader
-// Dependencies: [32, 19, 17, 676, 11872, 21, 4661, 712, 6370, 4751, 4734, 4219, 1435, 8558, 1297, 1236, 4097, 4223, 11, 8083, 8029, 4756, 691, 4745, 698, 2]
+// Dependencies: [32, 19, 17, 676, 11921, 21, 4668, 712, 6401, 4756, 4739, 4223, 1435, 8597, 1297, 1236, 4100, 4227, 11, 8122, 8068, 4761, 691, 4750, 698, 2]
 // Exports: default
 
-// Module 11871 (SuggestedFriendsSectionHeader)
-import _slicedToArray from "_slicedToArray";
-import Form from "Form";
-import { View } from "hexToRgba";
-import { AnalyticEvents } from "ME";
-import { SuggestedFriendSource } from "SuggestedFriendSource";
-import jsxProd from "LinearGradient";
-import createCacheKey from "createCacheKey";
+// Module 11920 (SuggestedFriendsSectionHeader)
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { SuggestedFriendSource } from "SuggestedFriendSource" /* 11921 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function SuggestedFriendsSectionHeader(children) {
-  return callback(View, { style: createCacheKey().sectionHeader, children: callback(require(4734) /* Text */.Text, { color: "text-muted", variant: "text-sm/semibold", children: children.label }) });
+  return callback(View, { style: callback3().sectionHeader, children: callback(Text.Text, { color: "text-muted", variant: "text-sm/semibold", children: children.label }) });
 }
 function SuggestionRow(suggestion) {
-  let end;
-  let selected;
-  let start;
   suggestion = suggestion.suggestion;
   const onSelect = suggestion.onSelect;
   const first = suggestion.reasons[0];
@@ -32,7 +28,7 @@ function SuggestionRow(suggestion) {
   if (first != null) {
     name = first.name;
   }
-  let obj = suggestion(4219);
+  let obj = suggestion(4223);
   const userTag = obj.getUserTag(suggestion.suggested_user);
   let tmp6 = userTag;
   if (null != name) {
@@ -41,15 +37,14 @@ function SuggestionRow(suggestion) {
       tmp6 = name;
     }
   }
-  let obj1 = onSelect(1435);
+  obj1 = onSelect(1435);
   const userAvatarSource = obj1.getUserAvatarSource(suggestion.suggested_user);
   obj = { start, end, icon: null, checked: null, label: null, subLabel: null, onPress: null };
-  obj = { source: userAvatarSource, size: null };
-  obj[1] = suggestion(1297).AvatarSizes.REFRESH_MEDIUM_32;
+  obj = { source: userAvatarSource, size: tmp3(1297).AvatarSizes.REFRESH_MEDIUM_32 };
   obj[2] = callback(suggestion(1297).Avatar, obj);
   obj[3] = selected;
   obj[4] = tmp6;
-  const items = [callback(suggestion(4734).Text, { variant: "text-xs/medium", color: "text-muted", children: userTag }), ];
+  const items = [callback(suggestion(4739).Text, { variant: "text-xs/medium", color: "text-muted", children: userTag }), ];
   let tmp8Result = null != suggestion.mutual_friends_count;
   if (tmp8Result) {
     obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
@@ -57,58 +52,58 @@ function SuggestionRow(suggestion) {
     const obj2 = { count: null };
     obj2[0] = suggestion.mutual_friends_count;
     obj1[2] = intl.format(tmp3(1236).t.z7y34b, obj2);
-    tmp8Result = tmp8(tmp3(4734).Text, obj1);
+    tmp8Result = tmp8(tmp3(4739).Text, obj1);
   }
   items[1] = tmp8Result;
   obj[5] = closure_10(closure_9, { children: items });
   obj[6] = function onPress() {
     return onSelect(suggestion.suggested_user.id);
   };
-  return callback(suggestion(8558).TableCheckboxRow, obj);
+  return callback(suggestion(8597).TableCheckboxRow, obj);
 }
-({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: null, header: null, title: null, subtitle: null, list: null, divider: null, linearGradient: null, redesignButton: null, sectionHeader: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32, justifyContent: "center" };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32, justifyContent: "center" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { alignItems: "center", paddingTop: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_24 };
+createCacheKey[1] = { alignItems: "center", paddingTop: ThemesDefault.space.PX_16, paddingBottom: ThemesDefault.space.PX_24 };
 createCacheKey[2] = { marginBottom: 8, textAlign: "center" };
 createCacheKey[3] = { lineHeight: 18, textAlign: "center" };
-let obj1 = { alignItems: "center", paddingTop: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_24 };
-createCacheKey[4] = { flex: 1, marginTop: require("Themes").space.PX_12 };
-let obj2 = { flex: 1, marginTop: require("Themes").space.PX_12 };
-createCacheKey[5] = { backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+let obj1 = { alignItems: "center", paddingTop: ThemesDefault.space.PX_16, paddingBottom: ThemesDefault.space.PX_24 };
+createCacheKey[4] = { flex: 1, marginTop: ThemesDefault.space.PX_12 };
+let obj2 = { flex: 1, marginTop: ThemesDefault.space.PX_12 };
+createCacheKey[5] = { backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 createCacheKey[6] = { position: "absolute", width: "100%", bottom: 0, minHeight: 136 };
-let obj3 = { backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-createCacheKey[7] = { position: "absolute", width: "100%", bottom: 0, padding: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_32 };
-let obj4 = { position: "absolute", width: "100%", bottom: 0, padding: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_32 };
-createCacheKey[8] = { marginBottom: require("Themes").space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj5 = { marginBottom: require("Themes").space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncSuggestions.tsx");
+let obj3 = { backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+createCacheKey[7] = { position: "absolute", width: "100%", bottom: 0, padding: ThemesDefault.space.PX_16, paddingBottom: ThemesDefault.space.PX_32 };
+let obj4 = { position: "absolute", width: "100%", bottom: 0, padding: ThemesDefault.space.PX_16, paddingBottom: ThemesDefault.space.PX_32 };
+createCacheKey[8] = { marginBottom: ThemesDefault.space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let obj5 = { marginBottom: ThemesDefault.space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+const result = require("set").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncSuggestions.tsx");
 
 export default function ContactSyncSuggestions(friendSuggestions) {
   friendSuggestions = friendSuggestions.friendSuggestions;
   const onSubmit = friendSuggestions.onSubmit;
-  let dependencyMap;
+  dependencyMap = undefined;
   let first;
   let React;
   let callback;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   dependencyMap = tmp;
   const reduced = friendSuggestions.reduce((arg0, suggested_user) => {
     arg0[suggested_user.suggested_user.id] = true;
     return arg0;
   }, {});
-  let obj = friendSuggestions(4097);
+  let obj = friendSuggestions(4100);
   const token = obj.useToken(onSubmit(712).colors.BACKGROUND_BASE_LOW);
-  let obj1 = friendSuggestions(4223);
+  obj1 = friendSuggestions(4227);
   let items = [obj1.hexOpacityToRgba(token, 0), ];
-  let obj2 = friendSuggestions(4223);
+  let obj2 = friendSuggestions(4227);
   items[1] = obj2.hexOpacityToRgba(token, 100);
   const tmp4 = first(React.useState(reduced), 2);
   first = tmp4[0];
   React = tmp4[1];
-  let obj3 = friendSuggestions(4751);
+  let obj3 = friendSuggestions(4756);
   const fontScale = obj3.useFontScale();
   const sum = onSubmit(712).space.PX_16 + onSubmit(712).space.PX_32 + 40;
   let items1 = [first];
@@ -129,7 +124,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     const items = [];
     items.push({ type: "header" });
     const item = items.forEach((friendSuggestion) => {
-      items.push({ type: "suggestedFriend", props: { friendSuggestion, selected: outer1_3[friendSuggestion.suggested_user.id] } });
+      items.push({ type: "suggestedFriend", props: { friendSuggestion, selected: closure_1_3[friendSuggestion.suggested_user.id] } });
     });
     return items;
   }, items2);
@@ -137,31 +132,29 @@ export default function ContactSyncSuggestions(friendSuggestions) {
   items4 = [, ];
   ({ container: arr6[0], list: arr6[1] } = tmp);
   const callback1 = React.useCallback((arg0) => {
-    let index;
-    let item;
     ({ item, index } = arg0);
     if ("header" === item.type) {
       let obj = { children: null };
       obj = { style: null, children: null };
-      obj[0] = _undefined.header;
-      const obj1 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-      obj1[0] = _undefined.title;
-      const intl = friendSuggestions(_undefined[15]).intl;
-      obj1[4] = intl.string(friendSuggestions(_undefined[15]).t["7Fjv54"]);
-      const items = [outer1_8(friendSuggestions(_undefined[10]).Text, obj1), ];
+      obj[0] = closure_2.header;
+      obj1 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+      obj1[0] = closure_2.title;
+      const intl = friendSuggestions(closure_2[15]).intl;
+      obj1[4] = intl.string(friendSuggestions(closure_2[15]).t["7Fjv54"]);
+      const items = [closure_1_8(friendSuggestions(closure_2[10]).Text, obj1), ];
       const obj2 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
-      obj2[0] = _undefined.subtitle;
-      const intl2 = friendSuggestions(_undefined[15]).intl;
-      obj2[3] = intl2.string(friendSuggestions(_undefined[15]).t.ait1x0);
-      items[1] = outer1_8(friendSuggestions(_undefined[10]).Text, obj2);
+      obj2[0] = closure_2.subtitle;
+      const intl2 = friendSuggestions(closure_2[15]).intl;
+      obj2[3] = intl2.string(friendSuggestions(closure_2[15]).t.ait1x0);
+      items[1] = closure_1_8(friendSuggestions(closure_2[10]).Text, obj2);
       obj[1] = items;
-      const items1 = [outer1_10(callback, obj), ];
+      const items1 = [closure_1_10(callback, obj), ];
       const obj3 = { label: null };
-      const intl3 = friendSuggestions(_undefined[15]).intl;
-      obj3[0] = intl3.string(friendSuggestions(_undefined[15]).t["1uAmCw"]);
-      items1[1] = outer1_8(outer1_12, obj3);
+      const intl3 = friendSuggestions(closure_2[15]).intl;
+      obj3[0] = intl3.string(friendSuggestions(closure_2[15]).t["1uAmCw"]);
+      items1[1] = closure_1_8(closure_1_12, obj3);
       obj[0] = items1;
-      return outer1_10(outer1_9, obj);
+      return closure_1_10(closure_1_9, obj);
     } else {
       const friendSuggestion = item.props.friendSuggestion;
       const obj4 = { start: null, end: null, suggestion: null, selected: null, onSelect: null };
@@ -170,39 +163,37 @@ export default function ContactSyncSuggestions(friendSuggestions) {
       obj4[2] = friendSuggestion;
       obj4[3] = item.props.selected;
       obj4[4] = callback;
-      const items2 = [outer1_8(outer1_13, obj4), ];
+      const items2 = [closure_1_8(closure_1_13, obj4), ];
       let tmp5 = null;
       if (index < friendSuggestions.length) {
         obj = { iconPush: true, style: null };
-        obj[1] = _undefined.divider;
-        tmp5 = outer1_8(friendSuggestions(_undefined[19]).FormDivider, obj);
+        obj[1] = closure_2.divider;
+        tmp5 = closure_1_8(friendSuggestions(closure_2[19]).FormDivider, obj);
       }
       const obj5 = { children: null };
       items2[1] = tmp5;
       obj5[0] = items2;
-      return outer1_10(React.Fragment, obj5, friendSuggestion.suggested_user.id);
+      return closure_1_10(React.Fragment, obj5, friendSuggestion.suggested_user.id);
     }
   }, items3);
   obj = { contentContainerStyle: null, data: null, renderItem: null };
-  obj1 = { paddingHorizontal: null, paddingBottom: null };
-  obj1[0] = onSubmit(712).space.PX_16;
-  obj1[1] = sum1;
+  obj1 = { paddingHorizontal: onSubmit(712).space.PX_16, paddingBottom: sum1 };
   obj[0] = obj1;
   obj[1] = memo;
   obj[2] = callback1;
-  const items5 = [callback(friendSuggestions(8029).FlashList, obj), , ];
+  const items5 = [callback(friendSuggestions(8068).FlashList, obj), , ];
   obj2 = { style: tmp.linearGradient, start: null, end: null, pointerEvents: "none", colors: null };
   const someResult = keys.some((arg0) => first[arg0]);
   obj2[1] = friendSuggestions(691).VerticalGradient.START;
   obj2[2] = friendSuggestions(691).VerticalGradient.END;
   obj2[4] = items;
-  items5[1] = callback(onSubmit(4756), obj2);
+  items5[1] = callback(onSubmit(4761), obj2);
   obj3 = { style: tmp.redesignButton, children: null };
   obj4 = { variant: "primary", size: "lg", text: null, onPress: null, disabled: null };
   let intl = friendSuggestions(1236).intl;
   obj4[2] = intl.string(friendSuggestions(1236).t["J5/69j"]);
   obj4[3] = function onPress() {
-    const keys = onSubmit(_undefined[18]).keys(first);
+    const keys = onSubmit(closure_2[18]).keys(first);
     const found = keys.filter((arg0) => table2[arg0]);
     onSubmit(found);
     const item = found.forEach((suggested_user_id) => {
@@ -212,7 +203,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     });
   };
   obj4[4] = !someResult;
-  obj3[1] = callback(friendSuggestions(4745).Button, obj4);
+  obj3[1] = callback(friendSuggestions(4750).Button, obj4);
   items5[2] = callback(callback, obj3);
   obj[1] = items5;
   return callback2(callback, obj);

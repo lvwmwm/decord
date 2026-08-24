@@ -1,18 +1,20 @@
-// Module ID: 15166
-// Function ID: 15167
+// Module ID: 15230
+// Function ID: 15231
 // Name: SelectMenuNativeComponent
-// Dependencies: [19, 21, 15167, 2]
+// Dependencies: [19, 21, 15231, 2]
 // Exports: default
 
-// Module 15166 (SelectMenuNativeComponent)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15230 (SelectMenuNativeComponent)
+import noopAll from "noop" /* 19 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 15231 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const result = require("__INTERNAL_VIEW_CONFIG").fileFinishedImporting("modules/interaction_components/native/SelectMenuNativeComponent.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("modules/interaction_components/native/SelectMenuNativeComponent.tsx");
 
 export default function SelectMenuNativeComponent(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj.style = { width: "100%" };
-  return jsx(importDefault(15167), {});
+  return jsx(__INTERNAL_VIEW_CONFIGDefault, {});
 };

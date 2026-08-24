@@ -1,46 +1,46 @@
-// Module ID: 5087
-// Function ID: 5088
+// Module ID: 5092
+// Function ID: 5093
 // Name: noop
-// Dependencies: [5069, 1981, 4195, 1346, 4288, 5088, 5250, 4260, 4799, 4800, 4995, 5296, 5276, 5013, 5365, 1994, 1302, 1340, 1391, 5278, 1980, 1990, 1393, 5383, 1983, 1910, 4994, 4021, 4772, 5078, 5043, 1922, 5387, 5388, 2]
+// Dependencies: [5074, 1982, 4199, 1346, 4292, 5093, 5255, 4264, 4804, 4805, 5000, 5301, 5281, 5018, 5370, 1995, 1302, 1340, 1391, 5283, 1981, 1991, 1393, 5388, 1984, 1910, 4999, 4024, 4777, 5083, 5048, 1922, 5392, 5393, 2]
 // Exports: default
 
-// Module 5087 (noop)
-import handleSelectedChannelStoreChanged from "handleSelectedChannelStoreChanged";
-import isSubscriptionGated from "isSubscriptionGated";
-import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
-import reset from "reset";
-import getHash from "getHash";
-import getMemberSafetyPageStore from "getMemberSafetyPageStore";
-import handleReset from "handleReset";
-import snapshotSelectedGuildId from "snapshotSelectedGuildId";
-import processChannel from "processChannel";
-import processChannel from "processChannel";
-import dropChannelIfEmpty from "dropChannelIfEmpty";
-import freshTeenActivityWithMap from "freshTeenActivityWithMap";
-import guildHasCommunity from "guildHasCommunity";
-import processMessage from "processMessage";
-import createUserWidgetFromServer from "createUserWidgetFromServer";
-import _getSystemLocale from "_getSystemLocale";
-import handleThemeChange from "handleThemeChange";
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import setIndex from "setIndex";
-import comparator from "comparator";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import allGuildIds from "allGuildIds";
-import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import reinjectEphemerals from "reinjectEphemerals";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import insertUnsortedGuilds from "insertUnsortedGuilds";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import handleCacheOrSocketLoaded from "handleCacheOrSocketLoaded";
-import makeSortedChannel from "makeSortedChannel";
+// Module 5092 (noop)
+import set from "set" /* 2 */;
+import handleSelectedChannelStoreChanged from "handleSelectedChannelStoreChanged" /* 5074 */;
+import isSubscriptionGated from "isSubscriptionGated" /* 1982 */;
+import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled" /* 4199 */;
+import reset from "reset" /* 1346 */;
+import getHash from "getHash" /* 4292 */;
+import getMemberSafetyPageStore from "getMemberSafetyPageStore" /* 5093 */;
+import handleReset from "handleReset" /* 5255 */;
+import snapshotSelectedGuildId from "snapshotSelectedGuildId" /* 4264 */;
+import processChannel from "processChannel" /* 4804 */;
+import dropChannelIfEmpty from "dropChannelIfEmpty" /* 5000 */;
+import freshTeenActivityWithMap from "freshTeenActivityWithMap" /* 5301 */;
+import guildHasCommunity from "guildHasCommunity" /* 5281 */;
+import processMessage from "processMessage" /* 5018 */;
+import createUserWidgetFromServer from "createUserWidgetFromServer" /* 5370 */;
+import _getSystemLocale from "_getSystemLocale" /* 1995 */;
+import handleThemeChange from "handleThemeChange" /* 1302 */;
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed" /* 1340 */;
+import ensureGuildLoaded from "ensureGuildLoaded" /* 1391 */;
+import setIndex from "setIndex" /* 5283 */;
+import comparator from "comparator" /* 1981 */;
+import trackCommunicationDisabled from "trackCommunicationDisabled" /* 1991 */;
+import allGuildIds from "allGuildIds" /* 1393 */;
+import updateGuildUnreadSentinel from "updateGuildUnreadSentinel" /* 5388 */;
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust" /* 1984 */;
+import createGuildRecordFromRust from "createGuildRecordFromRust" /* 1910 */;
+import reinjectEphemerals from "reinjectEphemerals" /* 4999 */;
+import getUncachedChannelPermissions from "getUncachedChannelPermissions" /* 4024 */;
+import generateOldThreadCutoff from "generateOldThreadCutoff" /* 4777 */;
+import insertUnsortedGuilds from "insertUnsortedGuilds" /* 5083 */;
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal" /* 5048 */;
+import mergeGuildAvatar from "mergeGuildAvatar" /* 1922 */;
+import handleCacheOrSocketLoaded from "handleCacheOrSocketLoaded" /* 5392 */;
+import makeSortedChannel from "makeSortedChannel" /* 5393 */;
 
-const result = require("isSyncedModeThemesEnabled").fileFinishedImporting("modules/app_startup/AllCacheStores.native.tsx");
+const result = set.fileFinishedImporting("modules/app_startup/AllCacheStores.native.tsx");
 
 export default function noop() {
 

@@ -4,7 +4,9 @@
 // Dependencies: [1002, 1135]
 
 // Module 1134 (browserReplayIntegrationNoop)
-const require = arg1;
+import init from "init" /* 1135 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function browserReplayIntegrationNoop() {
 
@@ -53,8 +55,8 @@ arg5.browserReplayIntegration = () => {
     const items1 = [".sentry-react-native-unmask:not(.sentry-react-native-mask *) > *"];
     HermesBuiltin.arraySpread(tmp8, 1);
     obj[1] = items1;
-    replayIntegrationResult = require(1135) /* init */.replayIntegration(Object.assign(merged, obj));
-    const tmpResult = require(1135) /* init */;
+    replayIntegrationResult = init.replayIntegration(Object.assign(merged, obj));
+    const tmpResult = init;
   }
   return replayIntegrationResult;
 };

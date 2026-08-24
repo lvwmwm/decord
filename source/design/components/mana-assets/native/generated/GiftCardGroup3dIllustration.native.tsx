@@ -1,18 +1,19 @@
-// Module ID: 5838
-// Function ID: 5839
+// Module ID: 5869
+// Function ID: 5870
 // Name: GiftCardGroup3dIllustration
-// Dependencies: [21, 5449, 5839, 2]
+// Dependencies: [21, 5454, 5870, 2]
 // Exports: GiftCardGroup3dIllustration
 
-// Module 5838 (GiftCardGroup3dIllustration)
-import { jsx } from "jsxProd";
+// Module 5869 (GiftCardGroup3dIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5870 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardGroup3dIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardGroup3dIllustration.native.tsx");
 
 export const GiftCardGroup3dIllustration = function GiftCardGroup3dIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const GiftCardGroup3dIllustration = function GiftCardGroup3dIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5839);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GiftCardGroup3dIllustration = function GiftCardGroup3dIllustration(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

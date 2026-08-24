@@ -1,15 +1,16 @@
-// Module ID: 4733
-// Function ID: 4734
+// Module ID: 4738
+// Function ID: 4739
 // Name: Stack
-// Dependencies: [19, 17, 21, 4661, 2]
+// Dependencies: [19, 17, 21, 4668, 2]
 // Exports: Stack
 
-// Module 4733 (Stack)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 4738 (Stack)
+import noopAll from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+noopAll;
 let closure_2 = createCacheKey.createStyles((gap, arg1, alignItems, justifyContent) => {
   const stack = { width: "100%", gap, alignItems, justifyContent, flexDirection: null };
   let str = "column";
@@ -19,12 +20,9 @@ let closure_2 = createCacheKey.createStyles((gap, arg1, alignItems, justifyConte
   stack[4] = str;
   return { stack };
 });
-const result = require("jsxProd").fileFinishedImporting("design/components/Stack/native/Stack.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Stack/native/Stack.native.tsx");
 
 export const Stack = function Stack(spacing) {
-  let children;
-  let onLayout;
-  let style;
   spacing = spacing.spacing;
   let num = 8;
   if (undefined !== spacing) {

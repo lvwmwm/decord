@@ -1,43 +1,47 @@
-// Module ID: 16837
-// Function ID: 16838
+// Module ID: 16930
+// Function ID: 16931
 // Name: batchChannelUpdate
 // Dependencies: [676, 709, 530, 2]
 // Exports: batchChannelUpdate, batchRoleUpdate
 
-// Module 16837 (batchChannelUpdate)
-import { Endpoints } from "ME";
+// Module 16930 (batchChannelUpdate)
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import ME from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
-function batchChannelUpdate(outer1_0) {
+function batchChannelUpdate(closure_1_0) {
   if (arg1.length > 0) {
     function onEnd() {
       return callback(table[1]).dispatch({ type: "GUILD_SETTINGS_SUBMIT_SUCCESS" });
     }
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj.dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
-    const HTTP = require(530) /* sendRequest */.HTTP;
+    const HTTP = sendRequest.HTTP;
     obj = { url: null, body: null, oldFormErrors: true, rejectWithError: true };
-    obj[0] = Endpoints.GUILD_CHANNELS(outer1_0);
+    obj[0] = Endpoints.GUILD_CHANNELS(closure_1_0);
     obj[1] = arg1;
     HTTP.patch(obj).then(onEnd, onEnd);
     const patchResult = HTTP.patch(obj);
   }
 }
-function batchRoleUpdate(outer1_0) {
+function batchRoleUpdate(closure_1_0) {
   if (arg1.length > 0) {
     function onEnd() {
       return callback(table[1]).dispatch({ type: "GUILD_SETTINGS_SUBMIT_SUCCESS" });
     }
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj.dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
-    const HTTP = require(530) /* sendRequest */.HTTP;
+    const HTTP = sendRequest.HTTP;
     obj = { url: null, body: null, oldFormErrors: true, rejectWithError: true };
-    obj[0] = Endpoints.GUILD_ROLES(outer1_0);
+    obj[0] = Endpoints.GUILD_ROLES(closure_1_0);
     obj[1] = arg1;
     HTTP.patch(obj).then(onEnd, onEnd);
     const patchResult = HTTP.patch(obj);
   }
 }
-const result = require("sendRequest").fileFinishedImporting("actions/native/GuildActionCreators.tsx");
+const Endpoints = ME.Endpoints;
+const result = set.fileFinishedImporting("actions/native/GuildActionCreators.tsx");
 
 export default { batchChannelUpdate, batchRoleUpdate };
 export { batchChannelUpdate };

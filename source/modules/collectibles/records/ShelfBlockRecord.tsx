@@ -1,14 +1,16 @@
-// Module ID: 5348
-// Function ID: 5349
+// Module ID: 5353
+// Function ID: 5354
 // Name: fromServer
-// Dependencies: [5339, 2]
+// Dependencies: [5344, 2]
 
-// Module 5348 (fromServer)
+// Module 5353 (fromServer)
+import set from "set" /* 2 */;
+import ShopBlockType from "ShopBlockType" /* 5344 */;
+
 let prototype;
 prototype = function ShelfBlockRecord(show_button) {
-  let category_sku_id;
   const obj = Object.create(new.target.prototype);
-  obj.type = require(5339) /* ShopBlockType */.ShopBlockType.SHELF;
+  obj.type = ShopBlockType.ShopBlockType.SHELF;
   ({ name: tmp.name, ranked_sku_ids: tmp.rankedSkuIds, category_sku_id } = show_button);
   if (category_sku_id == null) {
     category_sku_id = null;
@@ -38,12 +40,11 @@ prototype = function ShelfBlockRecord(show_button) {
   return obj;
 }.prototype;
 prototype["fromServer"] = function fromServer(show_button) {
-  let category_sku_id;
   if (typeof prototype !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(5339) /* ShopBlockType */.ShopBlockType.SHELF;
+  obj.type = ShopBlockType.ShopBlockType.SHELF;
   ({ name: tmp2.name, ranked_sku_ids: tmp2.rankedSkuIds, category_sku_id } = show_button);
   if (category_sku_id == null) {
     category_sku_id = null;
@@ -72,6 +73,6 @@ prototype["fromServer"] = function fromServer(show_button) {
   obj.mobileBackgroundImage = prop1;
   return obj;
 };
-const result = require("set").fileFinishedImporting("modules/collectibles/records/ShelfBlockRecord.tsx");
+const result = set.fileFinishedImporting("modules/collectibles/records/ShelfBlockRecord.tsx");
 
 export const ShelfBlockRecord = prototype;

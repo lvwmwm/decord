@@ -1,31 +1,24 @@
-// Module ID: 4038
-// Function ID: 4039
+// Module ID: 4041
+// Function ID: 4042
 // Name: getEmojiUnavailableReason
-// Dependencies: [5, 1395, 4021, 1922, 676, 1925, 4037, 4039, 6732, 4014, 7530, 1491, 1435, 2]
+// Dependencies: [5, 1395, 4024, 1922, 676, 1925, 4040, 4042, 6769, 4017, 7568, 1491, 1435, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
-// Module 4038 (getEmojiUnavailableReason)
-import closure_3 from "set";
-import createChannelRecord from "createChannelRecord";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { Permissions } from "ME";
-import set from "set";
-import set from "getUncachedChannelPermissions";
+// Module 4041 (getEmojiUnavailableReason)
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import fit from "fit" /* 1491 */;
+import EmojiTypes from "EmojiTypes" /* 4040 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
+import getURLDefault from "getURL" /* 7568 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { Permissions } from "ME" /* 676 */;
+import set from "set" /* 1925 */;
 
-let EmojiDisabledReasons;
-let c10;
-let c4;
-let c5;
-let c9;
-let closure_14;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function getEmojiUnavailableReason(intention) {
-  let channel;
-  let emoji;
-  let guildId;
   ({ emoji, channel, guildId } = intention);
   if (guildId === undefined) {
     guildId = undefined;
@@ -34,7 +27,7 @@ function getEmojiUnavailableReason(intention) {
     }
   }
   intention = intention.intention;
-  let tmp5 = emoji.type === require(4037) /* EmojiTypes */.EmojiTypes.GUILD;
+  let tmp5 = emoji.type === EmojiTypes.EmojiTypes.GUILD;
   if (!tmp5) {
     tmp5 = null != emoji.guildId;
   }
@@ -51,7 +44,7 @@ function getEmojiUnavailableReason(intention) {
         }
         let tmp13 = null != emoji && null != guildId;
         if (tmp13) {
-          const tmp14 = emoji.type === tmp3(4037).EmojiTypes.GUILD || null != emoji.guildId;
+          const tmp14 = emoji.type === tmp3(4040).EmojiTypes.GUILD || null != emoji.guildId;
           let tmp15 = !tmp14;
           if (tmp14) {
             tmp15 = guildId === emoji.guildId;
@@ -70,7 +63,7 @@ function getEmojiUnavailableReason(intention) {
           if (!callback4(intention)) {
             let tmp19 = null != emoji && null != guildId;
             if (tmp19) {
-              const tmp20 = emoji.type === tmp3(4037).EmojiTypes.GUILD || null != emoji.guildId;
+              const tmp20 = emoji.type === tmp3(4040).EmojiTypes.GUILD || null != emoji.guildId;
               let tmp21 = !tmp20;
               if (tmp20) {
                 tmp21 = guildId === emoji.guildId;
@@ -105,9 +98,9 @@ function getEmojiUnavailableReason(intention) {
               }
             }
           }
-          let tmp3Result = tmp3(6732);
+          let tmp3Result = tmp3(6769);
           if (tmp3Result.isUnusableRoleSubscriptionEmoji(emoji, guildId)) {
-            tmp3Result = tmp3(4014);
+            tmp3Result = tmp3(4017);
             tmp3Result.shouldHideGuildPurchaseEntryPoints(emoji.guildId) ? EmojiDisabledReasons.ROLE_SUBSCRIPTION_UNAVAILABLE : EmojiDisabledReasons.ROLE_SUBSCRIPTION_LOCKED;
           } else {
             let PREMIUM_LOCKED = null;
@@ -118,13 +111,13 @@ function getEmojiUnavailableReason(intention) {
                 if (!tmp3Result1.isPurchasableRoleSubscriptionEmoji(emoji)) {
                   PREMIUM_LOCKED = EmojiDisabledReasons.PREMIUM_LOCKED;
                 }
-                tmp3Result1 = tmp3(6732);
+                tmp3Result1 = tmp3(6769);
               }
-              tmp27Result = tmp27(4039);
+              tmp27Result = tmp27(4042);
             }
             return PREMIUM_LOCKED;
           }
-          obj = importDefault(4039);
+          obj = getPremiumPlanItemDefault;
           tmp27 = importDefault;
         }
       }
@@ -137,16 +130,16 @@ function getEmojiUnavailableReason(intention) {
 function _getEmojiColors() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       const obj2 = v0(table[10]);
       yield obj2.getEmojiColors(closure_0);
       return arg1;
     })();
   });
-  const _getEmojiColors = tmp;
+  closure_19 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -185,12 +178,12 @@ export default {
     }
     return tmp2;
   },
-  filterUnsupportedEmojis: require("getURL").filterUnsupportedEmojis,
-  getURL: require("getURL").getURL,
+  filterUnsupportedEmojis: getURLDefault.filterUnsupportedEmojis,
+  getURL: getURLDefault.getURL,
   isInternalEmojiForGuildId(type) {
     let tmp = null != type && null != arg1;
     if (tmp) {
-      const tmp4 = type.type === require(4037) /* EmojiTypes */.EmojiTypes.GUILD || null != type.guildId;
+      const tmp4 = type.type === EmojiTypes.EmojiTypes.GUILD || null != type.guildId;
       let tmp5 = !tmp4;
       if (tmp4) {
         tmp5 = arg1 === type.guildId;
@@ -201,16 +194,13 @@ export default {
   },
   getEmojiUnavailableReason,
   isCustomEmoji(emoji) {
-    let tmp = emoji.type === require(4037) /* EmojiTypes */.EmojiTypes.GUILD;
+    let tmp = emoji.type === EmojiTypes.EmojiTypes.GUILD;
     if (!tmp) {
       tmp = null != emoji.guildId;
     }
     return tmp;
   },
   getEmojiUnavailableReasons(arg0) {
-    let channel;
-    let guildId;
-    let intention;
     ({ channel, guildId, intention } = arg0);
     const emojisDisabled = new Set();
     const emojisUnfiltered = [];
@@ -274,9 +264,6 @@ export default {
     return set.has(getEmojiUnavailableReason(intention));
   },
   isEmojiCategoryNitroLocked(categoryEmojis) {
-    let channel;
-    let guildId;
-    let intention;
     categoryEmojis = categoryEmojis.categoryEmojis;
     let flag = false;
     let num = 0;
@@ -318,17 +305,17 @@ export default {
     return size.size > 2097152;
   },
   isDataTooBig(arg0) {
-    return require(1491) /* fit */.dataUriFileSize(arg0) > closure_9;
+    return fit.dataUriFileSize(arg0) > closure_9;
   }
 };
 export const countEmoji = function countEmoji(arr) {
-  let closure_0 = arg1;
-  let c1 = 0;
-  let c2 = 0;
-  let c3 = 0;
-  let c4 = 0;
-  let c5 = 0;
-  let c6 = 0;
+  closure_0 = arg1;
+  c1 = 0;
+  c2 = 0;
+  c3 = 0;
+  c4 = 0;
+  c5 = 0;
+  c6 = 0;
   const item = arr.forEach((id) => {
     if (null != id.id) {
       if (id.type === callback(table[6]).EmojiTypes.GUILD) {
@@ -345,7 +332,7 @@ export const countEmoji = function countEmoji(arr) {
         }
       }
       if (id.animated) {
-        getUncachedChannelPermissions = getUncachedChannelPermissions + 1;
+        closure_6 = closure_6 + 1;
       }
     } else {
       closure_1 = closure_1 + 1;
@@ -364,8 +351,6 @@ export const getEmojiColors = function getEmojiColors() {
   return applyArgumentsResult;
 };
 export const getEmojiUrl = function getEmojiUrl(arg0, arg1) {
-  let animated;
-  let id;
   let num = arg1;
   if (arg1 === undefined) {
     num = 32;
@@ -379,10 +364,10 @@ export const getEmojiUrl = function getEmojiUrl(arg0, arg1) {
       animated = false;
     }
     obj[2] = animated;
-    let emojiURL = importDefault(1435).getEmojiURL(obj);
-    const obj2 = importDefault(1435);
+    let emojiURL = getAvatarURLDefault.getEmojiURL(obj);
+    const obj2 = getAvatarURLDefault;
   } else {
-    obj = importDefault(7530);
+    obj = getURLDefault;
     emojiURL = obj.getURL(tmp);
   }
   return emojiURL;

@@ -1,17 +1,17 @@
-// Module ID: 11745
-// Function ID: 11746
+// Module ID: 11794
+// Function ID: 11795
 // Name: useGameServerPerk
-// Dependencies: [19, 4282, 4263, 4262, 4285, 589, 11746, 1236, 2757, 11747, 2]
+// Dependencies: [19, 4286, 4267, 4266, 4289, 589, 11795, 1236, 2758, 11796, 2]
 // Exports: default
 
-// Module 11745 (useGameServerPerk)
-import noop from "noop";
-import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
-import { GAME_SERVER_POWERUP_SKU_ID as closure_5 } from "str11";
-import { GuildPowerupType } from "BoostedGuildTiers";
+// Module 11794 (useGameServerPerk)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "handleGameServerInstanceCreated" /* 4286 */;
+import { GAME_SERVER_POWERUP_SKU_ID as closure_5 } from "str11" /* 4267 */;
+import { GuildPowerupType } from "BoostedGuildTiers" /* 4266 */;
 
 const require = arg1;
-const result = require("str11").fileFinishedImporting("modules/game_server/hooks/useGameServerPerk.tsx");
+const result = require("set").fileFinishedImporting("modules/game_server/hooks/useGameServerPerk.tsx");
 
 export default function useGameServerPerk(guildId) {
   const _require = guildId;
@@ -29,7 +29,7 @@ export default function useGameServerPerk(guildId) {
       tmp = null;
       if (null != stateFromStores) {
         let obj = { skuId: null, title: null, description: null, cost: null, dependencies: null, type: null, animatedImageUrl: null, staticImageUrl: null };
-        obj[0] = outer1_5;
+        obj[0] = closure_1_5;
         const intl = guildId(stateFromStores[7]).intl;
         obj[1] = intl.string(gameServerEnabled(stateFromStores[8])["B3OfL/"]);
         const intl2 = guildId(stateFromStores[7]).intl;
@@ -39,7 +39,7 @@ export default function useGameServerPerk(guildId) {
         obj[2] = intl2.format(gameServerEnabled(stateFromStores[8])["+UqyGU"], obj);
         obj[3] = tmp2;
         obj[4] = [];
-        obj[5] = outer1_6.PERK;
+        obj[5] = closure_1_6.PERK;
         obj[6] = gameServerEnabled(stateFromStores[9]);
         obj[7] = gameServerEnabled(stateFromStores[9]);
         tmp = obj;

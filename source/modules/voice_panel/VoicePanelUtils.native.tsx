@@ -1,19 +1,21 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8704
+// Function ID: 8705
 // Name: isVoicePanelEnabled
-// Dependencies: [1391, 4539, 8664, 8665, 647, 2]
+// Dependencies: [1391, 4544, 8701, 8702, 647, 2]
 // Exports: isVoicePanelEnabled, useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 8667 (isVoicePanelEnabled)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createRTCConnection from "createRTCConnection";
-import withEqualityFn from "withEqualityFn";
+// Module 8704 (isVoicePanelEnabled)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+import useIsStageVoicePanelEnabled from "useIsStageVoicePanelEnabled" /* 8702 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "createRTCConnection" /* 4544 */;
+import closure_4 from "withEqualityFn" /* 8701 */;
 
-const require = arg1;
-let result = require("withEqualityFn").fileFinishedImporting("modules/voice_panel/VoicePanelUtils.native.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("modules/voice_panel/VoicePanelUtils.native.tsx");
 
 export const isVoicePanelEnabled = function isVoicePanelEnabled(channel2) {
-  const result = require(8665) /* useIsStageVoicePanelEnabled */.isStageVoicePanelEnabled("voice_panel_utils");
+  const result = useIsStageVoicePanelEnabled.isStageVoicePanelEnabled("voice_panel_utils");
   let tmp2 = !result;
   if (!result) {
     let isGuildStageVoiceResult;
@@ -25,8 +27,8 @@ export const isVoicePanelEnabled = function isVoicePanelEnabled(channel2) {
   return !tmp2;
 };
 export const useIsVoicePanelShowing = function useIsVoicePanelShowing() {
-  const items = [ensureGuildLoaded, createRTCConnection];
-  return require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
+  const items = [closure_2, closure_3];
+  return defaultAreStatesEqual.useStateFromStores(items, () => {
     channel = channel.getChannel(channelId.getChannelId());
     let tmp = null != channel;
     if (tmp) {
@@ -45,13 +47,13 @@ export const useIsVoicePanelFullscreen = function useIsVoicePanelFullscreen() {
   return callback((isVoicePanelFullscreen) => isVoicePanelFullscreen.isVoicePanelFullscreen());
 };
 export const useIsVoicePanelOpen = function useIsVoicePanelOpen(channelId) {
-  let closure_0 = channelId;
+  closure_0 = channelId;
   return callback((isChannelOpen) => isChannelOpen.isChannelOpen(closure_0));
 };
 export const useIsAnyVoicePanelOpen = function useIsAnyVoicePanelOpen() {
   return callback((isAnyVoicePanelOpen) => isAnyVoicePanelOpen.isAnyVoicePanelOpen());
 };
 export const useIsVoicePanelMounted = function useIsVoicePanelMounted(channelId) {
-  let closure_0 = channelId;
+  closure_0 = channelId;
   return callback((isMounted) => isMounted.isMounted(closure_0));
 };

@@ -1,23 +1,25 @@
-// Module ID: 5079
-// Function ID: 5080
+// Module ID: 5084
+// Function ID: 5085
 // Name: set
 // Dependencies: [1340, 589, 709, 2]
 
-// Module 5079 (set)
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import { PersistedStore } from "initialize";
-import set from "dispatcher";
+// Module 5084 (set)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "handleConnectionClosedOrResumed" /* 1340 */;
+import set from "set" /* 2 */;
 
 let set = new Set();
+const PersistedStore = initializeDefault.PersistedStore;
 class ExpandedGuildFolderStore extends PersistedStore {
 }
 const prototype = ExpandedGuildFolderStore.prototype;
 prototype["initialize"] = function initialize(expandedFolders) {
   if (null != expandedFolders) {
     const _Set = Set;
-    const set = new Set(expandedFolders.expandedFolders);
+    set = new Set(expandedFolders.expandedFolders);
   }
-  this.waitFor(handleConnectionClosedOrResumed);
+  this.waitFor(closure_0);
 };
 prototype["getState"] = function getState() {
   return { expandedFolders: Array.from(set) };
@@ -30,7 +32,7 @@ prototype["isFolderExpanded"] = function isFolderExpanded(folderId) {
 };
 ExpandedGuildFolderStore.displayName = "ExpandedGuildFolderStore";
 ExpandedGuildFolderStore.persistKey = "ExpandedGuildFolderStore";
-const expandedGuildFolderStore = new ExpandedGuildFolderStore(require("dispatcher"), {
+const expandedGuildFolderStore = new ExpandedGuildFolderStore(dispatcherDefault, {
   TOGGLE_GUILD_FOLDER_EXPAND: function toggleFolderExpand(folderId) {
     folderId = folderId.folderId;
     set = new Set(set);
@@ -55,11 +57,10 @@ const expandedGuildFolderStore = new ExpandedGuildFolderStore(require("dispatche
       return false;
     } else {
       function _loop(iter) {
-        const guildFolders = iter;
-        if (!guildFolders.some((folderId) => folderId.folderId === handleConnectionClosedOrResumed)) {
+        guildFolders = iter;
+        if (!guildFolders.some((folderId) => folderId.folderId === closure_0)) {
           const _Set = Set;
-          const set = new Set(c1);
-          c1 = set;
+          set = new Set(set);
           set.delete(iter);
           c1 = true;
         }

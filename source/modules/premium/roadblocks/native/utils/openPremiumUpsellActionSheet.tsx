@@ -1,16 +1,20 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 8518
+// Function ID: 8519
 // Name: openPremiumUpsellActionSheet
-// Dependencies: [4342, 8480, 2007, 2]
+// Dependencies: [4346, 8519, 2008, 2]
 // Exports: default
 
-// Module 8479 (openPremiumUpsellActionSheet)
+// Module 8518 (openPremiumUpsellActionSheet)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+
 const PremiumUpsellActionSheetKey = "PremiumUpsellActionSheetKey";
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/premium/roadblocks/native/utils/openPremiumUpsellActionSheet.tsx");
+const result = set.fileFinishedImporting("modules/premium/roadblocks/native/utils/openPremiumUpsellActionSheet.tsx");
 
 export default function openPremiumUpsellActionSheet(featureName, subfeatureName, analyticsLocations) {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { featureName, subfeatureName, analyticsLocations };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(8480, dependencyMap.paths), PremiumUpsellActionSheetKey, obj);
+  obj.openLazy(asyncRequireImpl(8519, dependencyMap.paths), PremiumUpsellActionSheetKey, obj);
 };
 export const PREMIUM_UPSELL_ACTION_SHEET_KEY = "PremiumUpsellActionSheetKey";

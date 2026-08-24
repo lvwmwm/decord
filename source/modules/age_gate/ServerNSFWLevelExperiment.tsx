@@ -5,12 +5,13 @@
 // Exports: isServerNSFWLevelEnabled
 
 // Module 1907 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2025-09-server-nsfw-level", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/age_gate/ServerNSFWLevelExperiment.tsx");
+const result = set.fileFinishedImporting("modules/age_gate/ServerNSFWLevelExperiment.tsx");
 
 export const ServerNSFWLevelExperiment = apexExperiment;
 export const isServerNSFWLevelEnabled = function isServerNSFWLevelEnabled(guild_record) {

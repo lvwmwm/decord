@@ -1,22 +1,24 @@
-// Module ID: 10461
-// Function ID: 10462
+// Module ID: 10500
+// Function ID: 10501
 // Name: useEmojiColorPalette
-// Dependencies: [4662, 1302, 589, 1363, 8182, 2]
+// Dependencies: [4669, 1302, 589, 1363, 8222, 2]
 // Exports: useEmojiColorPalette
 
-// Module 10461 (useEmojiColorPalette)
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import handleThemeChange from "handleThemeChange";
+// Module 10500 (useEmojiColorPalette)
+import initialize from "initialize" /* 589 */;
+import buildPlatformedThemedEmojiColorPalette from "buildPlatformedThemedEmojiColorPalette" /* 8222 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_3 from "handleThemeChange" /* 1302 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/emojis/hooks/useEmojiColorPalette.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/emojis/hooks/useEmojiColorPalette.tsx");
 
 export const useEmojiColorPalette = function useEmojiColorPalette(burst_colors) {
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => saturation.saturation);
-  const obj = require(589) /* initialize */;
-  const items1 = [handleThemeChange];
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => callback(table[3]).isThemeDark(theme.theme));
-  const obj2 = require(589) /* initialize */;
-  return require(8182) /* buildPlatformedThemedEmojiColorPalette */.buildEmojiColorPalette(burst_colors, stateFromStores, stateFromStores1);
+  const items = [closure_2];
+  const stateFromStores = initialize.useStateFromStores(items, () => saturation.saturation);
+  const obj = initialize;
+  const items1 = [closure_3];
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => callback(table[3]).isThemeDark(theme.theme));
+  const obj2 = initialize;
+  return buildPlatformedThemedEmojiColorPalette.buildEmojiColorPalette(burst_colors, stateFromStores, stateFromStores1);
 };

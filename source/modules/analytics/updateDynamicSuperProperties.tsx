@@ -1,16 +1,21 @@
-// Module ID: 16494
-// Function ID: 16495
+// Module ID: 16589
+// Function ID: 16590
 // Name: updateDynamicSuperProperties
-// Dependencies: [5054, 503, 10501, 2]
+// Dependencies: [5059, 503, 10540, 2]
 // Exports: updateDynamicSuperProperties
 
-// Module 16494 (updateDynamicSuperProperties)
-let result = require("module_10501").fileFinishedImporting("modules/analytics/updateDynamicSuperProperties.tsx");
+// Module 16589 (updateDynamicSuperProperties)
+import set from "set" /* 2 */;
+import encodeProperties from "encodeProperties" /* 503 */;
+import trackHeartbeat from "trackHeartbeat" /* 5059 */;
+import _modDef10540 from "module_10540" /* 10540 */;
+
+let result = set.fileFinishedImporting("modules/analytics/updateDynamicSuperProperties.tsx");
 
 export const updateDynamicSuperProperties = function updateDynamicSuperProperties() {
-  let obj = require(5054) /* trackHeartbeat */;
+  let obj = trackHeartbeat;
   const activeSessionUnsafe = obj.getActiveSessionUnsafe();
-  const superProperties = require(503) /* encodeProperties */.getSuperProperties();
+  const superProperties = encodeProperties.getSuperProperties();
   let uuid;
   if (activeSessionUnsafe != null) {
     uuid = activeSessionUnsafe.uuid;
@@ -23,9 +28,9 @@ export const updateDynamicSuperProperties = function updateDynamicSuperPropertie
   if (uuid !== prop) {
     obj.client_heartbeat_session_id = uuid;
   }
-  const obj2 = require(503) /* encodeProperties */;
+  const obj2 = encodeProperties;
   const tmp = require;
-  const state = importDefault(10501).getState();
+  const state = _modDef10540.getState();
   let client_app_state;
   if (superProperties != null) {
     client_app_state = superProperties.client_app_state;
@@ -34,7 +39,7 @@ export const updateDynamicSuperProperties = function updateDynamicSuperPropertie
     obj.client_app_state = state;
   }
   if (Object.keys(obj).length > 0) {
-    const result = tmp(503).extendSuperProperties(obj);
-    const tmpResult = tmp(503);
+    const result = encodeProperties.extendSuperProperties(obj);
+    const tmpResult = encodeProperties;
   }
 };

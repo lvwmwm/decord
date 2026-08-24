@@ -1,11 +1,12 @@
-// Module ID: 13572
-// Function ID: 13573
+// Module ID: 13630
+// Function ID: 13631
 // Name: toLocaleLowerCase
-// Dependencies: [13573, 13669, 2]
+// Dependencies: [13631, 13727, 2]
 
-// Module 13572 (toLocaleLowerCase)
-import addLikelySubtags from "addLikelySubtags";
-import module_13669 from "module_13669";
+// Module 13630 (toLocaleLowerCase)
+import set from "set" /* 2 */;
+import addLikelySubtags from "addLikelySubtags" /* 13631 */;
+import module_13727 from "module_13727" /* 13727 */;
 
 String.prototype.toLocaleLowerCase = function toLocaleLowerCase() {
   const self = this;
@@ -17,4 +18,4 @@ String.prototype.toLocaleLowerCase = function toLocaleLowerCase() {
     const tmp = toLocaleLowerCase;
   }
 };
-const result = require("set").fileFinishedImporting("polyfills.android.tsx");
+const result = set.fileFinishedImporting("polyfills.android.tsx");

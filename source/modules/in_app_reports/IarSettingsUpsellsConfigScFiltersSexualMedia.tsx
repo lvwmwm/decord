@@ -1,56 +1,56 @@
-// Module ID: 8150
-// Function ID: 8151
+// Module ID: 8189
+// Function ID: 8190
 // Name: items
-// Dependencies: [5023, 1306, 1236, 8137, 2]
+// Dependencies: [5028, 1306, 1236, 8176, 2]
 
-// Module 8150 (items)
+// Module 8189 (items)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import create from "create" /* 1306 */;
+import resolveExplicitContentSettingWithDefaults from "resolveExplicitContentSettingWithDefaults" /* 5028 */;
+import ReportNames from "ReportNames" /* 8176 */;
+
 let obj = {
   getTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["Gtck/t"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["Gtck/t"]);
   },
   getDisabledTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.E6UmXa);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.E6UmXa);
   },
   getDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.jcRSp6);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.jcRSp6);
   },
   eligibleReportSubtypes: null,
   onApply: null,
   predicate: null
 };
-const items = [require("ReportNames").ReportSubType.SUB_CSAM, require("ReportNames").ReportSubType.SUB_LOLI, require("ReportNames").ReportSubType.SUB_NCP, require("ReportNames").ReportSubType.SUB_SEXUALLY_DEGRADING_CONTENT, require("ReportNames").ReportSubType.SUB_UNSOLICITED_PORN];
+const items = [ReportNames.ReportSubType.SUB_CSAM, ReportNames.ReportSubType.SUB_LOLI, ReportNames.ReportSubType.SUB_NCP, ReportNames.ReportSubType.SUB_SEXUALLY_DEGRADING_CONTENT, ReportNames.ReportSubType.SUB_UNSOLICITED_PORN];
 obj[3] = items;
 obj[4] = function onApply() {
-  let explicitContentFriendDm;
-  let explicitContentGuilds;
-  let explicitContentNonFriendDm;
-  let obj = require(5023) /* resolveExplicitContentSettingWithDefaults */;
-  const explicitContentSettingOrDefault = require(5023) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
+  let obj = resolveExplicitContentSettingWithDefaults;
+  const explicitContentSettingOrDefault = resolveExplicitContentSettingWithDefaults.getExplicitContentSettingOrDefault();
   obj = {};
   ({ explicitContentGuilds, explicitContentFriendDm, explicitContentNonFriendDm } = explicitContentSettingOrDefault);
-  if (explicitContentGuilds === require(1306) /* create */.ExplicitContentRedaction.SHOW) {
+  if (explicitContentGuilds === create.ExplicitContentRedaction.SHOW) {
     obj.explicitContentGuilds = tmp(1306).ExplicitContentRedaction.BLUR;
   }
-  if (explicitContentFriendDm === require(1306) /* create */.ExplicitContentRedaction.SHOW) {
+  if (explicitContentFriendDm === create.ExplicitContentRedaction.SHOW) {
     obj.explicitContentFriendDm = tmp(1306).ExplicitContentRedaction.BLUR;
   }
-  if (explicitContentNonFriendDm === require(1306) /* create */.ExplicitContentRedaction.SHOW) {
+  if (explicitContentNonFriendDm === create.ExplicitContentRedaction.SHOW) {
     obj.explicitContentNonFriendDm = tmp(1306).ExplicitContentRedaction.BLUR;
   }
   return obj.updateExplicitContentSetting(obj);
 };
 obj[5] = function predicate() {
-  let explicitContentFriendDm;
-  let explicitContentGuilds;
-  let explicitContentNonFriendDm;
-  const explicitContentSettingOrDefault = require(5023) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
+  const explicitContentSettingOrDefault = resolveExplicitContentSettingWithDefaults.getExplicitContentSettingOrDefault();
   ({ explicitContentGuilds, explicitContentFriendDm, explicitContentNonFriendDm } = explicitContentSettingOrDefault);
-  const obj = require(5023) /* resolveExplicitContentSettingWithDefaults */;
-  return explicitContentGuilds === require(1306) /* create */.ExplicitContentRedaction.SHOW || explicitContentFriendDm === require(1306) /* create */.ExplicitContentRedaction.SHOW || explicitContentNonFriendDm === require(1306) /* create */.ExplicitContentRedaction.SHOW;
+  const obj = resolveExplicitContentSettingWithDefaults;
+  return explicitContentGuilds === create.ExplicitContentRedaction.SHOW || explicitContentFriendDm === create.ExplicitContentRedaction.SHOW || explicitContentNonFriendDm === create.ExplicitContentRedaction.SHOW;
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigScFiltersSexualMedia.tsx");
+const result = set.fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigScFiltersSexualMedia.tsx");
 
 export default obj;

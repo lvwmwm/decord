@@ -1,21 +1,21 @@
-// Module ID: 6766
-// Function ID: 6767
+// Module ID: 6803
+// Function ID: 6804
 // Name: items
-// Dependencies: [19, 1910, 676, 500, 6767, 647, 2]
+// Dependencies: [19, 1910, 676, 500, 6804, 647, 2]
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP
 
-// Module 6766 (items)
-import noop from "noop";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
+// Module 6803 (items)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 
 const require = arg1;
 let c4 = "13.2";
 let items = [require("ME").GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
-const result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/IAPEligibility.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/IAPEligibility.tsx");
 
 export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guildId) {
   if (obj.isIOS()) {
-    const str = tmp(6767).getSystemVersion();
+    const str = tmp(6804).getSystemVersion();
     if (null != str) {
       const parts = str.split(".");
       const _Number = Number;
@@ -78,7 +78,7 @@ export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guil
 export const useCanUseRoleSubscriptionIAP = function useCanUseRoleSubscriptionIAP(guildId) {
   const _require = guildId;
   const memo = React.useMemo(() => {
-    const str = guildId(6767).getSystemVersion();
+    const str = guildId(6804).getSystemVersion();
     let tmp = null != str;
     if (tmp) {
       const parts = str.split(".");
@@ -125,13 +125,13 @@ export const useCanUseRoleSubscriptionIAP = function useCanUseRoleSubscriptionIA
     return tmp;
   }, []);
   let memo1 = React.useMemo(() => guildId(500).isIOS(), []);
-  const items = [createGuildRecordFromRust];
+  items = [closure_3];
   if (memo1) {
     memo1 = obj.useStateFromStores(items, () => {
-      guild = outer1_3.getGuild(guild);
+      guild = closure_1_3.getGuild(guild);
       let everyResult = null != guild;
       if (everyResult) {
-        everyResult = outer1_5.every((arg0) => {
+        everyResult = closure_1_5.every((arg0) => {
           const features = guild.features;
           return features.has(arg0);
         });

@@ -1,10 +1,11 @@
-// Module ID: 12284
-// Function ID: 12285
+// Module ID: 12336
+// Function ID: 12337
 // Name: handleFeaturedOrDeveloperFetchSuccess
 // Dependencies: [12, 589, 709, 2]
 
-// Module 12284 (handleFeaturedOrDeveloperFetchSuccess)
-import { Store } from "initialize";
+// Module 12336 (handleFeaturedOrDeveloperFetchSuccess)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 const require = arg1;
 function handleFeaturedOrDeveloperFetchSuccess(configs) {
@@ -13,8 +14,6 @@ function handleFeaturedOrDeveloperFetchSuccess(configs) {
   const flatResult = values.flat();
   const entries = Object.entries(_require(12).groupBy(flatResult, (application_id) => application_id.application_id));
   const mapped = entries.map((arg0) => {
-    let obj;
-    let tmp;
     [tmp, obj] = arg0;
     const items = [
       tmp,
@@ -25,7 +24,7 @@ function handleFeaturedOrDeveloperFetchSuccess(configs) {
         }
         return resolved_assets;
       }).filter((updated_at) => {
-        const value = outer1_2.get(closure_0);
+        const value = closure_1_2.get(closure_0);
         let tmp2;
         if (value != null) {
           tmp2 = value[updated_at.key];
@@ -44,32 +43,30 @@ function handleFeaturedOrDeveloperFetchSuccess(configs) {
     return items;
   });
   const found = mapped.filter((arg0) => {
-    let arr;
     [, arr] = arg0;
     return arr.length > 0;
   });
   const item = found.forEach((arg0) => {
-    let arr;
-    let tmp;
     [tmp, arr] = arg0;
-    let c0 = true;
-    const merged = Object.assign(outer1_2.get(tmp));
+    c0 = true;
+    const merged = Object.assign(closure_1_2.get(tmp));
     const merged1 = Object.assign(Object.fromEntries(arr.map((key) => {
       const items = [key.key, key];
       return items;
     })));
-    return outer1_2.set(tmp, {});
+    return closure_1_2.set(tmp, {});
   });
   return _require;
 }
 const map = new Map();
+const Store = initializeDefault.Store;
 class ApplicationAssetsV2Store extends Store {
 }
 ApplicationAssetsV2Store.prototype["getAssets"] = function getAssets(arg0) {
   return map.get(arg0);
 };
 ApplicationAssetsV2Store.displayName = "ApplicationAssetsV2Store";
-const applicationAssetsV2Store = new ApplicationAssetsV2Store(require("dispatcher"), {
+const applicationAssetsV2Store = new ApplicationAssetsV2Store(dispatcherDefault, {
   LOGOUT: function handleLogout() {
     map.clear();
   },
@@ -77,8 +74,6 @@ const applicationAssetsV2Store = new ApplicationAssetsV2Store(require("dispatche
     const _require = false;
     const entries = Object.entries(_require(12).groupBy(configs.configs, (application_id) => application_id.application_id));
     const mapped = entries.map((arg0) => {
-      let obj;
-      let tmp;
       [tmp, obj] = arg0;
       const items = [
         tmp,
@@ -89,7 +84,7 @@ const applicationAssetsV2Store = new ApplicationAssetsV2Store(require("dispatche
           }
           return resolved_assets;
         }).filter((updated_at) => {
-          const value = outer1_2.get(closure_0);
+          const value = closure_1_2.get(closure_0);
           let tmp2;
           if (value != null) {
             tmp2 = value[updated_at.key];
@@ -108,27 +103,24 @@ const applicationAssetsV2Store = new ApplicationAssetsV2Store(require("dispatche
       return items;
     });
     const found = mapped.filter((arg0) => {
-      let arr;
       [, arr] = arg0;
       return arr.length > 0;
     });
     const item = found.forEach((arg0) => {
-      let arr;
-      let tmp;
       [tmp, arr] = arg0;
-      let c0 = true;
-      const merged = Object.assign(outer1_2.get(tmp));
+      c0 = true;
+      const merged = Object.assign(closure_1_2.get(tmp));
       const merged1 = Object.assign(Object.fromEntries(arr.map((key) => {
         const items = [key.key, key];
         return items;
       })));
-      return outer1_2.set(tmp, {});
+      return closure_1_2.set(tmp, {});
     });
     return _require;
   },
   APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS: handleFeaturedOrDeveloperFetchSuccess,
   APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_SUCCESS: handleFeaturedOrDeveloperFetchSuccess
 });
-const result = require("dispatcher").fileFinishedImporting("modules/application_assets_v2/ApplicationAssetsV2Store.tsx");
+const result = require("set").fileFinishedImporting("modules/application_assets_v2/ApplicationAssetsV2Store.tsx");
 
 export default applicationAssetsV2Store;

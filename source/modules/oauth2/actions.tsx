@@ -1,18 +1,19 @@
-// Module ID: 9772
-// Function ID: 9773
+// Module ID: 9811
+// Function ID: 9812
 // Name: getLocationContextServer
-// Dependencies: [5, 1391, 1979, 676, 530, 5256, 507, 2]
+// Dependencies: [5, 1391, 1980, 676, 530, 5261, 507, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 9772 (getLocationContextServer)
-import handleLogout from "handleLogout";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import ME from "ME";
+// Module 9811 (getLocationContextServer)
+import getAuthenticationPath from "getAuthenticationPath" /* 507 */;
+import sendRequest from "sendRequest" /* 530 */;
+import handleLogoutDefault from "handleLogout" /* 5261 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
+import ME from "ME" /* 676 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function getLocationContextServer() {
   basicChannel = basicChannel.getBasicChannel(channelId.getChannelId());
   let str;
@@ -44,24 +45,10 @@ function getLocationContextServer() {
 function _authorize() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0, body) {
-      let c0;
-      let c1;
-      let c10;
-      let c11;
-      let c12;
-      let c13;
-      let c2;
-      let c3;
-      let c4;
-      let c5;
-      let c6;
-      let c7;
-      let c8;
-      let c9;
       if (c4 === 2) {
         c4 = 3;
         HermesBuiltin.throwTypeError();
@@ -73,7 +60,7 @@ function _authorize() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -115,7 +102,7 @@ function _authorize() {
               throw body;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = body;
               return obj1;
             } else {
@@ -185,7 +172,7 @@ function _authorize() {
     iter.next();
     return iter;
   });
-  const _authorize = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -197,21 +184,10 @@ function _authorize() {
 function _fetchAuthorization() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0, body) {
-      let c0;
-      let c1;
-      let c10;
-      let c2;
-      let c3;
-      let c4;
-      let c5;
-      let c6;
-      let c7;
-      let c8;
-      let c9;
       if (c4 === 2) {
         c4 = 3;
         HermesBuiltin.throwTypeError();
@@ -223,7 +199,7 @@ function _fetchAuthorization() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -238,7 +214,7 @@ function _fetchAuthorization() {
               obj[0] = body;
               return obj;
             } else {
-              let dependencyMap = tmp5;
+              dependencyMap = tmp5;
               c1 = tmp2;
               let callback;
               c1 = undefined;
@@ -262,7 +238,7 @@ function _fetchAuthorization() {
               throw body;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = body;
               return obj1;
             } else {
@@ -312,7 +288,7 @@ function _fetchAuthorization() {
     iter.next();
     return iter;
   });
-  const _fetchAuthorization = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -324,13 +300,13 @@ function _fetchAuthorization() {
 function _startSamsungAuthorization() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2, arg3, arg4) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let handleLogout = arg3;
-    let ensureGuildLoaded = arg4;
-    let c6 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    closure_3 = arg3;
+    closure_4 = arg4;
+    c6 = 0;
+    c5 = 0;
     return (function*(arg0, arg1, arg2, arg3, arg4) {
       if (c5 === 2) {
         c5 = 3;
@@ -343,7 +319,7 @@ function _startSamsungAuthorization() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -359,13 +335,13 @@ function _startSamsungAuthorization() {
               return obj;
             } else {
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, query: null, rejectWithError: null };
-              obj1[0] = outer1_7.OAUTH2_AUTHORIZE_SAMSUNG;
+              obj1 = { url: null, query: null, rejectWithError: null };
+              obj1[0] = closure_1_7.OAUTH2_AUTHORIZE_SAMSUNG;
               const obj2 = { client_id: null, state: null, response_type: null, redirect_uri: null, prompt: "consent", scope: null };
               obj2[0] = callback;
-              obj2[1] = ensureGuildLoaded;
+              obj2[1] = closure_4;
               obj2[2] = dependencyMap;
-              obj2[3] = handleLogout;
+              obj2[3] = closure_3;
               obj2[5] = closure_1.join(" ");
               obj1[1] = obj2;
               obj1[2] = callback(530).rejectWithMigratedError();
@@ -385,7 +361,7 @@ function _startSamsungAuthorization() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c5 = tmp;
@@ -394,7 +370,7 @@ function _startSamsungAuthorization() {
       }
     })();
   });
-  const _startSamsungAuthorization = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -406,13 +382,13 @@ function _startSamsungAuthorization() {
 function _fetchChannels() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0, body) {
       const HTTP = callback(530).HTTP;
-      const obj1 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
-      obj1[0] = outer1_7.OAUTH2_AUTHORIZE_WEBHOOK_CHANNELS;
+      obj1 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
+      obj1[0] = closure_1_7.OAUTH2_AUTHORIZE_WEBHOOK_CHANNELS;
       const obj2 = { guild_id: null };
       obj2[0] = callback;
       obj1[1] = obj2;
@@ -421,7 +397,7 @@ function _fetchChannels() {
       return body.body;
     })();
   });
-  const _fetchChannels = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -433,13 +409,13 @@ function _fetchChannels() {
 function _verifyUserCode() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       const HTTP = callback(530).HTTP;
-      const obj1 = { url: null, body: null, rejectWithError: null };
-      obj1[0] = outer1_7.OAUTH2_DEVICE_VERIFY;
+      obj1 = { url: null, body: null, rejectWithError: null };
+      obj1[0] = closure_1_7.OAUTH2_DEVICE_VERIFY;
       const obj2 = { user_code: null };
       obj2[0] = callback;
       obj1[1] = obj2;
@@ -448,7 +424,7 @@ function _verifyUserCode() {
       return arg1;
     })();
   });
-  const _verifyUserCode = tmp;
+  closure_13 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -460,14 +436,14 @@ function _verifyUserCode() {
 function _finishUserCode() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c3 = 0;
-    let c2 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c3 = 0;
+    c2 = 0;
     return (function*(arg0, arg1) {
       const HTTP = callback(530).HTTP;
-      const obj1 = { url: null, body: null, rejectWithError: null };
-      obj1[0] = outer1_7.OAUTH2_DEVICE_FINISH;
+      obj1 = { url: null, body: null, rejectWithError: null };
+      obj1[0] = closure_1_7.OAUTH2_DEVICE_FINISH;
       const obj2 = { user_code: null, result: null };
       obj2[0] = callback;
       obj2[1] = closure_1;
@@ -477,7 +453,7 @@ function _finishUserCode() {
       return arg1;
     })();
   });
-  const _finishUserCode = tmp;
+  closure_14 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -489,15 +465,15 @@ function _finishUserCode() {
 function _finishUserCodeTwoWayLinkError() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c4 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c4 = 0;
+    c3 = 0;
     return (function*(arg0, arg1, arg2) {
       const HTTP = callback(530).HTTP;
-      const obj1 = { url: null, body: null, rejectWithError: null };
-      obj1[0] = outer1_7.OAUTH2_DEVICE_FINISH;
+      obj1 = { url: null, body: null, rejectWithError: null };
+      obj1[0] = closure_1_7.OAUTH2_DEVICE_FINISH;
       const obj2 = { user_code: null, result: "two_way_link_error", error_code: null, error_source: null };
       obj2[0] = callback;
       obj2[2] = closure_1;
@@ -508,7 +484,7 @@ function _finishUserCodeTwoWayLinkError() {
       return arg1;
     })();
   });
-  const _finishUserCodeTwoWayLinkError = tmp;
+  closure_15 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -518,14 +494,14 @@ function _finishUserCodeTwoWayLinkError() {
   return applyArgumentsResult;
 }
 ({ ChannelTypes: closure_6, Endpoints: error } = ME);
-const result = require("handleConnectionOpen").fileFinishedImporting("modules/oauth2/actions.tsx");
+const result = require("set").fileFinishedImporting("modules/oauth2/actions.tsx");
 
 export { getLocationContextServer };
 export const acceptWhitelist = function acceptWhitelist(token) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   obj = { url: obj.OAUTH2_WHITELIST_ACCEPT, query: obj, oldFormErrors: true, rejectWithError: null };
   obj = { token };
-  obj[3] = require(530) /* sendRequest */.rejectWithMigratedError();
+  obj[3] = sendRequest.rejectWithMigratedError();
   return HTTP.post(obj);
 };
 export const authorize = function authorize() {
@@ -548,7 +524,7 @@ export const fetchAuthorization = function fetchAuthorization(arg0) {
   }
   return applyArgumentsResult;
 };
-export const startSamsungAuthorization = function startSamsungAuthorization(closure_0, closure_45, closure_1, arg3, handleConnectionOpen) {
+export const startSamsungAuthorization = function startSamsungAuthorization(closure_0, closure_45, closure_1, arg3, closure_5) {
   const self = this;
   const apply = _startSamsungAuthorization.apply;
   if (typeof apply === "unknown") {
@@ -569,10 +545,10 @@ export const fetchChannels = function fetchChannels(closure_0) {
   return applyArgumentsResult;
 };
 export const logoutWithRedirect = function logoutWithRedirect(pathname, login_required_account_manager) {
-  const obj = importDefault(5256);
-  obj.logout(login_required_account_manager, require(507) /* getAuthenticationPath */.getLoginPath(pathname.pathname + pathname.search, false));
+  const obj = handleLogoutDefault;
+  obj.logout(login_required_account_manager, getAuthenticationPath.getLoginPath(pathname.pathname + pathname.search, false));
 };
-export const verifyUserCode = function verifyUserCode(outer1_0) {
+export const verifyUserCode = function verifyUserCode(closure_1_0) {
   const self = this;
   const apply = _verifyUserCode.apply;
   if (typeof apply === "unknown") {

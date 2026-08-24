@@ -4,11 +4,13 @@
 // Dependencies: [41, 42, 93, 95, 96, 98, 379]
 
 // Module 386 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _get from "_get";
-import importDefaultResult from "_createClass";
+import _inheritsDefault from "_inherits" /* 98 */;
+import AnimationDefault from "Animation" /* 379 */;
+import closure_1 from "_classCallCheck" /* 41 */;
+import closure_2 from "_possibleConstructorReturn" /* 93 */;
+import closure_3 from "_getPrototypeOf" /* 95 */;
+import closure_4 from "_get" /* 96 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
 const DecayAnimation = global;
 function _isNativeReflectConstruct() {
@@ -22,10 +24,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -33,12 +35,12 @@ function _isNativeReflectConstruct() {
 class DecayAnimation {
   constructor(arg0) {
     self = this;
-    tmp = _isNativeReflectConstruct(this, DecayAnimation);
+    tmp = closure_1(this, DecayAnimation);
     items = [];
     items[0] = global;
-    tmp2 = __esModule;
-    obj = __esModule(DecayAnimation);
-    tmp3 = __esModule;
+    tmp2 = closure_3;
+    obj = closure_3(DecayAnimation);
+    tmp3 = closure_2;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -56,7 +58,7 @@ class DecayAnimation {
     return tmp3Result;
   }
 }
-require("_inherits")(DecayAnimation, require("Animation"));
+_inheritsDefault(DecayAnimation, AnimationDefault);
 let items = [
   {
     key: "__getNativeAnimationConfig",
@@ -71,7 +73,7 @@ let items = [
       self = this;
       self = this;
       const tmp = callback3(callback2(self.prototype), "start", this);
-      let _classCallCheck = tmp;
+      closure_1 = tmp;
       let fn = tmp;
       if (typeof tmp === "function") {
         fn = (items) => fn.apply(self, items);

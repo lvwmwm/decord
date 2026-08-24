@@ -1,10 +1,12 @@
-// Module ID: 11851
-// Function ID: 11852
+// Module ID: 11900
+// Function ID: 11901
 // Name: ContactSyncLandingPage
 // Dependencies: [2]
 
-// Module 11851 (ContactSyncLandingPage)
-const result = require("set").fileFinishedImporting("modules/contact_sync/native/ContactSyncConstants.tsx");
+// Module 11900 (ContactSyncLandingPage)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/contact_sync/native/ContactSyncConstants.tsx");
 
 export const ContactSyncLandingPage = { DEFAULT: 0, [0]: "DEFAULT", UPSELL_ACTION_SHEET: 1, [1]: "UPSELL_ACTION_SHEET" };
 export const ContactSyncScenes = { WELCOME: "WELCOME", NAME_INPUT: "NAME_INPUT", SUGGESTIONS: "SUGGESTIONS", ADD_PHONE: "ADD_PHONE", VERIFY_PHONE: "VERIFY_PHONE", VERIFY_PASSWORD: "VERIFY_PASSWORD" };

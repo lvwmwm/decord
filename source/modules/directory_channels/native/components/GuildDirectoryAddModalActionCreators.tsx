@@ -1,16 +1,20 @@
-// Module ID: 11475
-// Function ID: 11476
-// Dependencies: [5260, 11476, 2007, 2]
+// Module ID: 11524
+// Function ID: 11525
+// Dependencies: [5265, 11525, 2008, 2]
 
-// Module 11475
+// Module 11524
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+
 const GUILD_DIRECTORY_ADD_MODAL_KEY = "GUILD_DIRECTORY_ADD_MODAL_KEY";
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryAddModalActionCreators.tsx");
+const result = set.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryAddModalActionCreators.tsx");
 
 export default {
   open(closure_0) {
-    importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(11476, dependencyMap.paths), closure_0, GUILD_DIRECTORY_ADD_MODAL_KEY);
+    _modDef5265.pushLazy(asyncRequireImpl(11525, dependencyMap.paths), closure_0, GUILD_DIRECTORY_ADD_MODAL_KEY);
   },
   close() {
-    importDefault(5260).popWithKey(GUILD_DIRECTORY_ADD_MODAL_KEY);
+    _modDef5265.popWithKey(GUILD_DIRECTORY_ADD_MODAL_KEY);
   }
 };

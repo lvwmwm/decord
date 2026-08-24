@@ -1,21 +1,23 @@
-// Module ID: 8920
-// Function ID: 8921
+// Module ID: 8957
+// Function ID: 8958
 // Name: isGuildMember
-// Dependencies: [1390, 1391, 1990, 4772, 4030, 1922, 5388, 676, 4371, 6714, 8921, 1236, 2]
+// Dependencies: [1390, 1391, 1991, 4777, 4033, 1922, 5393, 676, 4375, 6751, 8958, 1236, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 8920 (isGuildMember)
-import participantFromServer from "participantFromServer";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import makeSortedChannel from "makeSortedChannel";
-import { ChannelTypes } from "ME";
-import { InviteTargetTypes } from "InviteSendStates";
+// Module 8957 (isGuildMember)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import NOOPDefault from "NOOP" /* 6751 */;
+import closure_3 from "participantFromServer" /* 1390 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "generateOldThreadCutoff" /* 4777 */;
+import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "makeSortedChannel" /* 5393 */;
+import { ChannelTypes } from "ME" /* 676 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 4375 */;
 
-const require = arg1;
+require = arg1;
 function isGuildMember(omitGuildId, id) {
   let isMemberResult = null != omitGuildId;
   if (isMemberResult) {
@@ -24,14 +26,6 @@ function isGuildMember(omitGuildId, id) {
   return isMemberResult;
 }
 function addDmUsers(arg0) {
-  let counts;
-  let includeGroupDms;
-  let limit;
-  let maxRowsWithoutQuery;
-  let omitGuildId;
-  let omitUserIds;
-  let rows;
-  let shownUserIds;
   ({ omitUserIds, maxRowsWithoutQuery, shownUserIds, rows, counts, limit } = arg0);
   let num = 0;
   ({ omitGuildId, includeGroupDms } = arg0);
@@ -61,7 +55,7 @@ function addDmUsers(arg0) {
     let tmp5 = store;
     let tmp6 = nextResult;
     let channel = store.getChannel(tmp3);
-    let obj = channel;
+    obj = channel;
     if (null != channel) {
       let tmp31 = channel;
       if (obj.isPrivate()) {
@@ -80,9 +74,9 @@ function addDmUsers(arg0) {
             num = num + 1;
           }
         }
-        let tmp10 = generateOldThreadCutoff;
+        let tmp10 = closure_6;
         let tmp11 = channel;
-        if (null != generateOldThreadCutoff.lastMessageId(obj.id)) {
+        if (null != closure_6.lastMessageId(obj.id)) {
           let tmp32 = channel;
           let recipientId = obj.getRecipientId();
           let tmp34 = recipientId;
@@ -130,19 +124,19 @@ const minutes = "minutes";
 const hours = "hours";
 const days = "days";
 const never = "never";
-let closure_19 = { [arg1(8921).INVITE_OPTIONS_30_MINUTES.value]: { value: 30, type: "minutes" }, [arg1(8921).INVITE_OPTIONS_1_HOUR.value]: { value: 1, type: "hours" }, [arg1(8921).INVITE_OPTIONS_6_HOURS.value]: { value: 6, type: "hours" }, [arg1(8921).INVITE_OPTIONS_12_HOURS.value]: { value: 12, type: "hours" }, [arg1(8921).INVITE_OPTIONS_1_DAY.value]: { value: 1, type: "days" }, [arg1(8921).INVITE_OPTIONS_7_DAYS.value]: { value: 7, type: "days" }, [arg1(8921).INVITE_OPTIONS_14_DAYS.value]: { value: 14, type: "days" }, [arg1(8921).INVITE_OPTIONS_30_DAYS.value]: { value: 30, type: "days" }, [arg1(8921).INVITE_OPTIONS_60_DAYS.value]: { value: 60, type: "days" }, [arg1(8921).INVITE_OPTIONS_FOREVER.value]: { value: 0, type: "never" } };
+let closure_19 = { [arg1(8958).INVITE_OPTIONS_30_MINUTES.value]: { value: 30, type: "minutes" }, [arg1(8958).INVITE_OPTIONS_1_HOUR.value]: { value: 1, type: "hours" }, [arg1(8958).INVITE_OPTIONS_6_HOURS.value]: { value: 6, type: "hours" }, [arg1(8958).INVITE_OPTIONS_12_HOURS.value]: { value: 12, type: "hours" }, [arg1(8958).INVITE_OPTIONS_1_DAY.value]: { value: 1, type: "days" }, [arg1(8958).INVITE_OPTIONS_7_DAYS.value]: { value: 7, type: "days" }, [arg1(8958).INVITE_OPTIONS_14_DAYS.value]: { value: 14, type: "days" }, [arg1(8958).INVITE_OPTIONS_30_DAYS.value]: { value: 30, type: "days" }, [arg1(8958).INVITE_OPTIONS_60_DAYS.value]: { value: 60, type: "days" }, [arg1(8958).INVITE_OPTIONS_FOREVER.value]: { value: 0, type: "never" } };
 let items = [require("get label").INVITE_OPTIONS_14_DAYS, require("get label").INVITE_OPTIONS_30_DAYS, require("get label").INVITE_OPTIONS_60_DAYS];
 obj = {
   getMaxAgeOptionByValue(label) {
-    let closure_0 = label;
+    closure_0 = label;
     items = [...items];
     return items.find((value) => value.value === closure_0) || null;
   },
   getMaxAgeOptions(arg0) {
     const _require = arg0;
-    const MAX_AGE_OPTIONS = _require(8921).MAX_AGE_OPTIONS;
+    const MAX_AGE_OPTIONS = _require(8958).MAX_AGE_OPTIONS;
     return MAX_AGE_OPTIONS.filter((value) => {
-      const hasItem = outer1_20.includes(value);
+      const hasItem = closure_1_20.includes(value);
       let tmp2 = !hasItem;
       if (hasItem) {
         let hasItem1;
@@ -180,31 +174,18 @@ obj = {
   INVITE_OPTIONS_50_TIMES: require("get label").INVITE_OPTIONS_50_TIMES,
   INVITE_OPTIONS_100_TIMES: require("get label").INVITE_OPTIONS_100_TIMES
 };
-const result = require("trackCommunicationDisabled").fileFinishedImporting("utils/InstantInviteUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/InstantInviteUtils.tsx");
 
 export default obj;
 export const RowTypes = obj;
 export const generateRowsForQuery = function generateRowsForQuery(arg0) {
-  let c0;
-  let c1;
-  let c2;
-  let c3;
-  let inviteTargetType;
-  let maxRowsWithoutQuery;
-  let omitGuildId;
-  let omitUserIds;
-  let query;
-  let query2;
-  let query3;
-  let suggestedChannelIds;
-  let suggestedUserIds;
   ({ query, inviteTargetType, omitUserIds, suggestedUserIds } = arg0);
   ({ suggestedChannelIds, maxRowsWithoutQuery, omitGuildId } = arg0);
   const set = new Set();
   const rows = [];
   const counts = { numFriends: 0, numDms: 0, numGroupDms: 0, numGuildMembers: 0, numChannels: 0 };
   if ("" === query) {
-    let obj = { omitUserIds: null, maxRowsWithoutQuery: null, omitGuildId: null, shownUserIds: null, rows: null, counts: null };
+    obj = { omitUserIds: null, maxRowsWithoutQuery: null, omitGuildId: null, shownUserIds: null, rows: null, counts: null };
     obj[0] = omitUserIds;
     obj[1] = maxRowsWithoutQuery;
     obj[2] = omitGuildId;
@@ -217,14 +198,10 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       obj.includeGroupDms = false;
       obj.limit = 1;
       addDmUsers(obj);
-      let obj1 = {};
+      obj1 = {};
       const merged1 = Object.assign(obj);
       obj1.suggestedChannelIds = suggestedChannelIds;
       (function addChannels(arg0) {
-        let counts;
-        let maxRowsWithoutQuery;
-        let rows;
-        let suggestedChannelIds;
         ({ suggestedChannelIds, maxRowsWithoutQuery, rows, counts } = arg0);
         if (null != suggestedChannelIds) {
           const iter = suggestedChannelIds[Symbol.iterator]();
@@ -245,7 +222,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
             let tmp6 = nextResult;
             channel = channel.getChannel(tmp4);
             if (null != channel) {
-              let obj = { type: null, item: null, isSuggested: true };
+              obj = { type: null, item: null, isSuggested: true };
               let tmp9 = constants;
               obj[0] = constants.CHANNEL;
               let tmp10 = channel;
@@ -262,12 +239,6 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     const merged2 = Object.assign(obj);
     obj2.suggestedUserIds = suggestedUserIds;
     (function addSuggestedUsers(arg0) {
-      let counts;
-      let maxRowsWithoutQuery;
-      let omitUserIds;
-      let rows;
-      let shownUserIds;
-      let suggestedUserIds;
       ({ omitUserIds, suggestedUserIds, maxRowsWithoutQuery, shownUserIds, rows, counts } = arg0);
       if (null != suggestedUserIds) {
         const iter = suggestedUserIds[Symbol.iterator]();
@@ -301,7 +272,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
               if (!tmp12) {
                 let tmp15 = user;
                 let addResult = shownUserIds.add(tmp11.id);
-                let obj = { type: null, item: null, isSuggested: true };
+                obj = { type: null, item: null, isSuggested: true };
                 let tmp17 = constants;
                 obj[0] = constants.FRIEND;
                 obj[1] = tmp11;
@@ -319,11 +290,6 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     obj3.includeGroupDms = true;
     addDmUsers(obj3);
     (function addFriends(arg0) {
-      let counts;
-      let maxRowsWithoutQuery;
-      let omitUserIds;
-      let rows;
-      let shownUserIds;
       ({ omitUserIds, maxRowsWithoutQuery, shownUserIds, rows, counts } = arg0);
       friendIDs = friendIDs.getFriendIDs();
       const iter = friendIDs[Symbol.iterator]();
@@ -354,7 +320,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
               tmp11 = callback(tmp, tmp10.id);
             }
             if (!tmp11) {
-              let obj = { type: null, item: null, isSuggested: false };
+              obj = { type: null, item: null, isSuggested: false };
               let tmp14 = constants;
               obj[0] = constants.FRIEND;
               let tmp15 = user;
@@ -377,14 +343,14 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       const merged4 = Object.assign(obj4);
       obj5.inviteTargetType = inviteTargetType;
       c0 = undefined;
-      let importDefault;
+      importDefault = undefined;
       ({ rows: c0, counts: c1 } = obj5);
       if (obj5.inviteTargetType === tmp40.EMBEDDED_APPLICATION) {
-        obj1 = importDefault(6714);
+        obj1 = NOOPDefault;
         const obj6 = { query: null, limit: 3, guildId: "call" };
         obj6[0] = tmp44;
         let item = obj1.queryChannels(obj6).forEach((item) => {
-          _undefined.push({ type: outer1_12.CHANNEL, item: item.record, isSuggested: false, score: item.score });
+          _undefined.push({ type: closure_1_12.CHANNEL, item: item.record, isSuggested: false, score: item.score });
           _undefined2.numChannels = _undefined2.numChannels + 1;
         });
         const queryChannelsResult = obj1.queryChannels(obj6);
@@ -396,14 +362,10 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     obj7.shownUserIds = set;
     obj7.suggestedUserIds = suggestedUserIds;
     (function addQueriedSuggestedUsers(suggestedUserIds) {
-      let c0;
-      let c1;
-      let omitUserIds;
-      let shownUserIds;
       ({ rows: c0, counts: c1, omitUserIds, shownUserIds } = suggestedUserIds);
       suggestedUserIds = suggestedUserIds.suggestedUserIds;
       if (null != suggestedUserIds) {
-        const items = [];
+        items = [];
         for (const item10012 of suggestedUserIds) {
           let tmp3 = item10012;
           if (!omitUserIds.has(item10012)) {
@@ -420,7 +382,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
           }
           continue;
         }
-        let obj = _undefined2(shownUserIds[9]);
+        obj = _undefined2(shownUserIds[9]);
         obj = { query: null, members: null, limit: 10 };
         obj[0] = tmp;
         obj[1] = items;
@@ -438,26 +400,26 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     obj8.shownUserIds = set;
     c0 = undefined;
     importDefault = undefined;
-    let dependencyMap;
+    dependencyMap = undefined;
     c3 = undefined;
     ({ omitUserIds: c0, shownUserIds: c1, rows: c2, counts: c3 } = obj8);
-    obj5 = importDefault(6714);
+    obj5 = NOOPDefault;
     const obj9 = { query: null, limit: 50 };
     obj9[0] = obj8.query;
     const item1 = obj5.queryDMUsers(obj9).forEach((record) => {
       record = record.record;
       if (!_undefined.has(record.id)) {
-        let obj = _undefined2;
+        obj = _undefined2;
         if (!_undefined2.has(record.id)) {
-          const dMFromUserId = outer1_4.getDMFromUserId(record.id);
+          const dMFromUserId = closure_1_4.getDMFromUserId(record.id);
           let tmp4 = null != dMFromUserId;
           if (tmp4) {
-            tmp4 = null != outer1_6.lastMessageId(dMFromUserId);
+            tmp4 = null != closure_1_6.lastMessageId(dMFromUserId);
           }
           if (tmp4) {
             obj.add(record.id);
             obj = { type: null, item: null, isSuggested: false, score: null };
-            obj[0] = outer1_12.DM;
+            obj[0] = closure_1_12.DM;
             obj[1] = record;
             obj[3] = record.score;
             _undefined3.push(obj);
@@ -469,12 +431,12 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     c0 = undefined;
     importDefault = undefined;
     ({ rows: c0, counts: c1, query: query2 } = obj4);
-    obj7 = importDefault(6714);
+    obj7 = NOOPDefault;
     let obj10 = { query: null, limit: 50, fuzzy: false };
     obj10[0] = query2;
     const queryDMUsersResult = obj5.queryDMUsers(obj9);
     const item2 = obj7.queryGroupDMs(obj10).forEach((item) => {
-      _undefined.push({ type: outer1_12.GROUP_DM, item: item.record, isSuggested: false, score: item.score });
+      _undefined.push({ type: closure_1_12.GROUP_DM, item: item.record, isSuggested: false, score: item.score });
       _undefined2.numGroupDms = _undefined2.numGroupDms + 1;
     });
     const obj11 = {};
@@ -486,7 +448,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     dependencyMap = undefined;
     c3 = undefined;
     ({ rows: c0, counts: c1, omitUserIds: c2, shownUserIds: c3, query: query3 } = obj11);
-    obj10 = importDefault(6714);
+    obj10 = NOOPDefault;
     const obj12 = { query: null, limit: 500, _fuzzy: false };
     obj12[0] = query3;
     const queryGroupDMsResult = obj7.queryGroupDMs(obj10);
@@ -498,8 +460,8 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       }
       if (!hasItem) {
         _undefined4.add(record.id);
-        const obj = { type: null, item: null, isSuggested: false, score: null };
-        obj[0] = outer1_12.FRIEND;
+        obj = { type: null, item: null, isSuggested: false, score: null };
+        obj[0] = closure_1_12.FRIEND;
         obj[1] = record;
         obj[3] = record.score;
         _undefined.push(obj);
@@ -511,7 +473,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
   return { rows, counts };
 };
 export const groupInviteSuggestions = function groupInviteSuggestions(arg0, omitGuildId) {
-  const items = [];
+  items = [];
   const items1 = [];
   const iter = arg0[Symbol.iterator]();
   const nextResult = iter.next();
@@ -543,7 +505,7 @@ export const groupInviteSuggestions = function groupInviteSuggestions(arg0, omit
 };
 export const getMostRecentDMedUser = function getMostRecentDMedUser(set, id) {
   const privateChannelIds = store2.getPrivateChannelIds();
-  const obj = privateChannelIds[Symbol.iterator]();
+  obj = privateChannelIds[Symbol.iterator]();
   while (obj !== undefined) {
     let tmp3 = store;
     let channel = store.getChannel(tmp2);
@@ -551,9 +513,9 @@ export const getMostRecentDMedUser = function getMostRecentDMedUser(set, id) {
     if (null != channel) {
       let tmp20 = channel;
       if (obj2.isDM()) {
-        let tmp5 = generateOldThreadCutoff;
+        let tmp5 = closure_6;
         let tmp6 = channel;
-        if (null != generateOldThreadCutoff.lastMessageId(obj2.id)) {
+        if (null != closure_6.lastMessageId(obj2.id)) {
           let tmp7 = channel;
           let recipientId = obj2.getRecipientId();
           let tmp9 = recipientId;
@@ -616,34 +578,34 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
   const value = dependencyMap2[maxAge].value;
   const type = dependencyMap2[maxAge].type;
   if (minutes === type) {
-    const intl4 = require(1236) /* getSystemLocale */.intl;
+    const intl4 = getSystemLocale.intl;
     if (tmp2) {
-      let stringResult = intl4.string(tmp12(1236).t["/WbTXD"]);
+      let stringResult = intl4.string(tmp13(1236).t["/WbTXD"]);
     } else {
-      let obj = { numUses: null };
+      obj = { numUses: null };
       obj[0] = parsed;
-      stringResult = intl4.formatToPlainString(tmp12(1236).t.eDRWJK, obj);
+      stringResult = intl4.formatToPlainString(tmp13(1236).t.eDRWJK, obj);
     }
     return stringResult;
   } else if (hours === type) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
+    const intl3 = getSystemLocale.intl;
     const formatToPlainString2 = intl3.formatToPlainString;
-    const t2 = require(1236) /* getSystemLocale */.t;
+    const t2 = getSystemLocale.t;
     if (tmp2) {
       obj = { numHours: null };
       obj[0] = value;
       let formatToPlainString2Result = formatToPlainString2(t2.ZVdJMy, obj);
     } else {
-      const obj1 = { numHours: null, numUses: null };
+      obj1 = { numHours: null, numUses: null };
       obj1[0] = value;
       obj1[1] = parsed;
       formatToPlainString2Result = formatToPlainString2(t2.NgZgAB, obj1);
     }
     return formatToPlainString2Result;
   } else if (days === type) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const t = require(1236) /* getSystemLocale */.t;
+    const t = getSystemLocale.t;
     if (tmp2) {
       const obj2 = { numDays: null };
       obj2[0] = value;
@@ -656,13 +618,13 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
     }
     return formatToPlainStringResult;
   } else if (never === type) {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     if (tmp2) {
-      let stringResult1 = intl.string(tmp3(1236).t.QrHBnC);
+      let stringResult1 = intl.string(tmp4(1236).t.QrHBnC);
     } else {
       obj = { numUses: null };
       obj[0] = parsed;
-      stringResult1 = intl.formatToPlainString(tmp3(1236).t.yJnTxI, obj);
+      stringResult1 = intl.formatToPlainString(tmp4(1236).t.yJnTxI, obj);
     }
     return stringResult1;
   } else {
@@ -671,36 +633,36 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
 };
 export const urgentShareMessageString = function urgentShareMessageString(arg0, arg1) {
   if (null == arg0) {
-    const intl5 = require(1236) /* getSystemLocale */.intl;
-    let obj = { link: null };
+    const intl5 = getSystemLocale.intl;
+    obj = { link: null };
     obj[0] = arg1;
-    return intl5.formatToPlainString(require(1236) /* getSystemLocale */.t.RHbY6K, obj);
+    return intl5.formatToPlainString(getSystemLocale.t.RHbY6K, obj);
   } else {
     const value = dependencyMap2[arg0].value;
     const type = dependencyMap2[arg0].type;
     if (minutes === type) {
-      const intl4 = require(1236) /* getSystemLocale */.intl;
+      const intl4 = getSystemLocale.intl;
       obj = { numMinutes: null, link: null };
       obj[0] = value;
       obj[1] = arg1;
-      return intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.N3VHkw, obj);
+      return intl4.formatToPlainString(getSystemLocale.t.N3VHkw, obj);
     } else if (hours === type) {
-      const intl3 = require(1236) /* getSystemLocale */.intl;
-      const obj1 = { numHours: null, link: null };
+      const intl3 = getSystemLocale.intl;
+      obj1 = { numHours: null, link: null };
       obj1[0] = value;
       obj1[1] = arg1;
-      return intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["3d9BlG"], obj1);
+      return intl3.formatToPlainString(getSystemLocale.t["3d9BlG"], obj1);
     } else if (days === type) {
-      const intl2 = require(1236) /* getSystemLocale */.intl;
+      const intl2 = getSystemLocale.intl;
       const obj2 = { numDays: null, link: null };
       obj2[0] = value;
       obj2[1] = arg1;
-      return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.gLIlkb, obj2);
+      return intl2.formatToPlainString(getSystemLocale.t.gLIlkb, obj2);
     } else {
-      const intl = require(1236) /* getSystemLocale */.intl;
+      const intl = getSystemLocale.intl;
       obj = { link: null };
       obj[0] = arg1;
-      return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.RHbY6K, obj);
+      return intl.formatToPlainString(getSystemLocale.t.RHbY6K, obj);
     }
   }
 };

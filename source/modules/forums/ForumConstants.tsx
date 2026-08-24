@@ -1,10 +1,12 @@
-// Module ID: 7273
-// Function ID: 7274
+// Module ID: 7311
+// Function ID: 7312
 // Name: FORUM_GUIDELINES_ACTION_SHEET
 // Dependencies: [2]
 
-// Module 7273 (FORUM_GUIDELINES_ACTION_SHEET)
-const result = require("set").fileFinishedImporting("modules/forums/ForumConstants.tsx");
+// Module 7311 (FORUM_GUIDELINES_ACTION_SHEET)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/forums/ForumConstants.tsx");
 
 export const FORUM_GUIDELINES_ACTION_SHEET = "forum-guidelines-action-sheet";
 export const MAX_FORUM_TAGS = 20;

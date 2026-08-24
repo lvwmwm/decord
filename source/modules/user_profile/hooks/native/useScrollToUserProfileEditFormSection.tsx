@@ -1,24 +1,24 @@
-// Module ID: 14025
-// Function ID: 14026
+// Module ID: 14093
+// Function ID: 14094
 // Name: useScrollToUserProfileEditFormSection
-// Dependencies: [19, 17, 4662, 9537, 589, 2]
+// Dependencies: [19, 17, 4669, 9574, 589, 2]
 // Exports: default
 
-// Module 14025 (useScrollToUserProfileEditFormSection)
-import noop from "noop";
-import { findNodeHandle } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import zustandStore from "zustandStore";
+// Module 14093 (useScrollToUserProfileEditFormSection)
+import closure_2 from "noop" /* 19 */;
+import { findNodeHandle } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_5 from "zustandStore" /* 9574 */;
 
 const require = arg1;
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/user_profile/hooks/native/useScrollToUserProfileEditFormSection.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useScrollToUserProfileEditFormSection.tsx");
 
 export default function useScrollToUserProfileEditFormSection(arg0, arg1) {
   const _require = arg0;
-  const dependencyMap = arg1;
+  dependencyMap = arg1;
   ref = ref.useRef({});
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
-  let closure_3 = _require(589).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const items = [closure_4];
+  closure_3 = _require(589).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const effect = ref.useEffect(() => {
     let tmp2 = null != closure_1;
     if (tmp2) {
@@ -32,7 +32,7 @@ export default function useScrollToUserProfileEditFormSection(arg0, arg1) {
     if (tmp2) {
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        const tmp = outer1_3(ref.current);
+        const tmp = closure_1_3(ref.current);
         if (null != tmp) {
           if (obj != null) {
             obj.measureLayout(tmp, (arg0, arg1) => {
@@ -46,7 +46,7 @@ export default function useScrollToUserProfileEditFormSection(arg0, arg1) {
               }
             });
           }
-          outer1_5.setState({ scrollPosition: null });
+          closure_1_5.setState({ scrollPosition: null });
         }
       }, 0);
     }

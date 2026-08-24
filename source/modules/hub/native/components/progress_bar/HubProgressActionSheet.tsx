@@ -1,44 +1,34 @@
-// Module ID: 11846
-// Function ID: 11847
+// Module ID: 11895
+// Function ID: 11896
 // Name: HubProgressActionSheet
-// Dependencies: [19, 17, 1980, 11506, 676, 11477, 11637, 21, 4342, 4661, 11842, 11643, 698, 11505, 1236, 11645, 4734, 11647, 1222, 11847, 1306, 8918, 11848, 11849, 11930, 4745, 5433, 6950, 2]
+// Dependencies: [19, 17, 1981, 11555, 676, 11526, 11686, 21, 4346, 4668, 11891, 11692, 698, 11554, 1236, 11694, 4739, 11696, 1222, 11896, 1306, 8955, 11897, 11898, 11979, 4750, 5438, 6988, 2]
 // Exports: default
 
-// Module 11846 (HubProgressActionSheet)
-import registerAsset from "registerAsset";
-import { View } from "ProgressItem";
-import comparator from "comparator";
-import items from "items";
-import ME from "ME";
-import { DirectoryChannelScrollBehavior as closure_12 } from "GuildDirectoryCreate";
-import Steps from "Steps";
-import jsxProd from "showInstantInviteActionSheet";
-import createCacheKey from "createCacheKey";
+// Module 11895 (HubProgressActionSheet)
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "comparator" /* 1981 */;
+import items from "items" /* 11555 */;
+import ME from "ME" /* 676 */;
+import { DirectoryChannelScrollBehavior as closure_12 } from "GuildDirectoryCreate" /* 11526 */;
+import Steps from "Steps" /* 11686 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_6;
-let error;
-let map1;
-let metroImportAll;
-let unpackModuleId;
 const require = arg1;
 ({ HUB_PROGRESS_ACTION_SHEET_ID: closure_6, HUB_PROGRESS_NUM_TOTAL_STEPS: error } = items);
-({ AnalyticEvents: metroImportAll, AnalyticsLocations: c9, InstantInviteSources: c10, Routes: unpackModuleId } = ME);
+({ AnalyticEvents: closure_8, AnalyticsLocations: c9, InstantInviteSources: c10, Routes: unpackModuleId } = ME);
 ({ AnalyticsActions: map1, AnalyticsSetupTypes: closure_14 } = Steps);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
 let closure_17 = createCacheKey.createStyles({ container: { padding: 16 }, footer: { marginTop: 12, display: "flex", alignItems: "center" } });
-let result = require("comparator").fileFinishedImporting("modules/hub/native/components/progress_bar/HubProgressActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/hub/native/components/progress_bar/HubProgressActionSheet.tsx");
 
 export default function HubProgressActionSheet(guild) {
   guild = guild.guild;
   const analyticsSource = guild.analyticsSource;
   let hubProgressBarCompletedSteps;
   let size;
-  let closure_4;
+  closure_4 = undefined;
   const tmp = callback2();
   let obj = guild(hubProgressBarCompletedSteps[10]);
   hubProgressBarCompletedSteps = obj.useHubProgressBarCompletedSteps(guild);
@@ -52,7 +42,7 @@ export default function HubProgressActionSheet(guild) {
   const effect1 = size.useEffect(() => {
     let obj = analyticsSource(hubProgressBarCompletedSteps[12]);
     obj = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
-    obj.track(outer1_8.OPEN_MODAL, obj);
+    obj.track(closure_1_8.OPEN_MODAL, obj);
   }, items);
   const intl = guild(hubProgressBarCompletedSteps[14]).intl;
   const string = intl.string;
@@ -64,11 +54,11 @@ export default function HubProgressActionSheet(guild) {
   }
   function handleFinishPress() {
     let obj = analyticsSource(hubProgressBarCompletedSteps[12]);
-    obj = { setup_type: outer1_14.HUB_PROGRESS, action: outer1_13.DISMISS, num_total_actions: outer1_7, num_actions_completed: size };
-    obj.track(outer1_8.SERVER_SETUP_CTA_CLICKED, obj);
+    obj = { setup_type: closure_1_14.HUB_PROGRESS, action: closure_1_13.DISMISS, num_total_actions: closure_1_7, num_actions_completed: size };
+    obj.track(closure_1_8.SERVER_SETUP_CTA_CLICKED, obj);
     guild(hubProgressBarCompletedSteps[13]).skipHubProgress(guild.id);
     const obj3 = guild(hubProgressBarCompletedSteps[13]);
-    analyticsSource(hubProgressBarCompletedSteps[8]).hideActionSheet(outer1_6);
+    analyticsSource(hubProgressBarCompletedSteps[8]).hideActionSheet(closure_1_6);
   }
   obj = { style: tmp.container, children: null };
   obj = { title: stringResult, subtitle: null };
@@ -83,25 +73,24 @@ export default function HubProgressActionSheet(guild) {
   const items1 = [callback(guild(hubProgressBarCompletedSteps[15]).GuildProgressHeader, obj), , , , ];
   let obj2 = {
     onPress() {
-      const defaultChannel = outer1_5.getDefaultChannel(guild.id);
+      const defaultChannel = closure_1_5.getDefaultChannel(guild.id);
       if (null != defaultChannel) {
         let obj = guild(hubProgressBarCompletedSteps[18]);
         obj = { state: null };
         obj = { scrollBehavior: null };
-        obj[0] = outer1_12.GUILD_LIST_TOP;
+        obj[0] = closure_1_12.GUILD_LIST_TOP;
         obj[0] = obj;
-        obj.transitionTo(outer1_11.CHANNEL(guild.id, defaultChannel.id), obj);
-        analyticsSource(hubProgressBarCompletedSteps[8]).hideActionSheet(outer1_6);
+        obj.transitionTo(closure_1_11.CHANNEL(guild.id, defaultChannel.id), obj);
+        analyticsSource(hubProgressBarCompletedSteps[8]).hideActionSheet(closure_1_6);
         const obj4 = analyticsSource(hubProgressBarCompletedSteps[8]);
       }
     },
-    source: null,
+    source: analyticsSource(hubProgressBarCompletedSteps[19]),
     title: null,
     isCompleted: null,
     analyticsSetupType: null,
     analyticsAction: null
   };
-  obj2[1] = analyticsSource(hubProgressBarCompletedSteps[19]);
   const intl3 = tmp2(tmp3[14]).intl;
   obj2[2] = intl3.string(guild(hubProgressBarCompletedSteps[14]).t.iNR25n);
   obj2[3] = hubProgressBarCompletedSteps.has(guild(hubProgressBarCompletedSteps[20]).HubProgressStep.JOIN_GUILD);
@@ -110,11 +99,11 @@ export default function HubProgressActionSheet(guild) {
   items1[1] = callback(analyticsSource(hubProgressBarCompletedSteps[17]), obj2);
   let obj3 = {
     onPress() {
-      const defaultChannel = outer1_5.getDefaultChannel(guild.id);
-      const channels = outer1_5.getChannels(guild.id);
+      const defaultChannel = closure_1_5.getDefaultChannel(guild.id);
+      const channels = closure_1_5.getChannels(guild.id);
       if (tmp4) {
         const obj = guild(hubProgressBarCompletedSteps[21]);
-        const result = obj.handleOpenInviteActionsheet(tmp, defaultChannel.id, channels, outer1_10.HUB_PROGRESS);
+        const result = obj.handleOpenInviteActionsheet(tmp, defaultChannel.id, channels, closure_1_10.HUB_PROGRESS);
       }
     },
     source: null,
@@ -123,7 +112,7 @@ export default function HubProgressActionSheet(guild) {
     analyticsSetupType: null,
     analyticsAction: null
   };
-  const obj1 = {
+  obj1 = {
     numFinished: size,
     total: closure_7,
     stepsHook(children) {
@@ -143,9 +132,9 @@ export default function HubProgressActionSheet(guild) {
   let obj4 = {
     onPress() {
       if (!hubProgressBarCompletedSteps.has(guild(hubProgressBarCompletedSteps[20]).HubProgressStep.CONTACT_SYNC)) {
-        guild(tmp2[23]).openContactSyncModal({}, outer1_9.HUB_PROGRESS);
+        guild(tmp2[23]).openContactSyncModal({}, closure_1_9.HUB_PROGRESS);
         const tmpResult = guild(tmp2[23]);
-        analyticsSource(tmp2[8]).hideActionSheet(outer1_6);
+        analyticsSource(tmp2[8]).hideActionSheet(closure_1_6);
         const obj2 = analyticsSource(tmp2[8]);
       }
     },

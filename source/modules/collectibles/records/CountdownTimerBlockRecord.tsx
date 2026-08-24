@@ -1,13 +1,16 @@
-// Module ID: 5338
-// Function ID: 5339
+// Module ID: 5343
+// Function ID: 5344
 // Name: fromServer
-// Dependencies: [5339, 2]
+// Dependencies: [5344, 2]
 
-// Module 5338 (fromServer)
+// Module 5343 (fromServer)
+import set from "set" /* 2 */;
+import ShopBlockType from "ShopBlockType" /* 5344 */;
+
 let prototype;
 prototype = function CountdownTimerBlockRecord(end_time) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(5339) /* ShopBlockType */.ShopBlockType.COUNTDOWN_TIMER;
+  obj.type = ShopBlockType.ShopBlockType.COUNTDOWN_TIMER;
   ({ title: tmp.title, body: tmp.body, banner_url: tmp.bannerUrl } = end_time);
   obj.endTime = new Date(end_time.end_time);
   obj.textColor = end_time.text_color;
@@ -18,12 +21,12 @@ prototype["fromServer"] = function fromServer(end_time) {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(5339) /* ShopBlockType */.ShopBlockType.COUNTDOWN_TIMER;
+  obj.type = ShopBlockType.ShopBlockType.COUNTDOWN_TIMER;
   ({ title: tmp2.title, body: tmp2.body, banner_url: tmp2.bannerUrl } = end_time);
   obj.endTime = new Date(end_time.end_time);
   obj.textColor = end_time.text_color;
   return obj;
 };
-const result = require("set").fileFinishedImporting("modules/collectibles/records/CountdownTimerBlockRecord.tsx");
+const result = set.fileFinishedImporting("modules/collectibles/records/CountdownTimerBlockRecord.tsx");
 
 export const CountdownTimerBlockRecord = prototype;

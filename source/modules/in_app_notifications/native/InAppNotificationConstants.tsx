@@ -1,14 +1,16 @@
-// Module ID: 10030
-// Function ID: 10031
+// Module ID: 10069
+// Function ID: 10070
 // Name: set
-// Dependencies: [712, 4115, 2]
+// Dependencies: [712, 4119, 2]
 
-// Module 10030 (set)
-import { Easing } from "module_4115";
-import set from "set";
+// Module 10069 (set)
+import ThemesDefault from "Themes" /* 712 */;
+import _mod4119 from "module_4119" /* 4119 */;
+import set from "set" /* 2 */;
 
 let set = new Set([10, 25]);
 const obj = { duration: 220, easing: null };
+const Easing = _mod4119.Easing;
 obj[1] = Easing.bezier(0.16, 1, 0.3, 1);
 const result = set.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationConstants.tsx");
 
@@ -16,8 +18,8 @@ export const REACTION_MILESTONE_COUNTS = set;
 export const IN_APP_NOTIFICATION_MAX_HEIGHT = 96;
 export const NOTIFICATION_MAX_WIDTH = 480;
 export const NOTIFICATION_PREVIEW_LINE_CLAMP = 2;
-export const RIGHT_ACCESSORY_LEFT_MARGIN = require("Themes").space.PX_8;
-export const NOTIFICATION_CONTAINER_MARGIN = require("Themes").space.PX_16;
+export const RIGHT_ACCESSORY_LEFT_MARGIN = ThemesDefault.space.PX_8;
+export const NOTIFICATION_CONTAINER_MARGIN = ThemesDefault.space.PX_16;
 export const PAN_INPUT_RANGE = [-100, 0, 100];
 export const MIN_SWIPE_DISTANCE = 25;
 export const MIN_SWIPE_VELOCITY = 100;

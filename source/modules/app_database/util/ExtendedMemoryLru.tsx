@@ -1,13 +1,15 @@
-// Module ID: 5071
-// Function ID: 5072
+// Module ID: 5076
+// Function ID: 5077
 // Name: totalLength
-// Dependencies: [32, 5072, 5073, 2]
+// Dependencies: [32, 5077, 5078, 2]
 
-// Module 5071 (totalLength)
-import _slicedToArray from "_slicedToArray";
+// Module 5076 (totalLength)
+import length from "length" /* 5077 */;
+import nextAll from "next" /* 5078 */;
+import closure_3 from "_slicedToArray" /* 32 */;
 
-const require = arg1;
-const result = require("next").fileFinishedImporting("modules/app_database/util/ExtendedMemoryLru.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/app_database/util/ExtendedMemoryLru.tsx");
 class ExtendedMemoryLru {
   constructor(arg0, arg1) {
     obj = Object.create(new.target.prototype);
@@ -126,19 +128,19 @@ prototype["allEntries"] = function allEntries() {
   const extended = this.extended;
   const primary = this.primary;
   const entries = extended.entries();
-  return importAll(5073).chain(entries, primary.entries());
+  return nextAll.chain(entries, primary.entries());
 };
 prototype["allKeys"] = function allKeys() {
   const extended = this.extended;
   const primary = this.primary;
   const keys = extended.keys();
-  return importAll(5073).chain(keys, primary.keys());
+  return nextAll.chain(keys, primary.keys());
 };
 prototype["allValues"] = function allValues() {
   const extended = this.extended;
   const primary = this.primary;
   const values = extended.values();
-  return importAll(5073).chain(values, primary.values());
+  return nextAll.chain(values, primary.values());
 };
 
 export { ExtendedMemoryLru };

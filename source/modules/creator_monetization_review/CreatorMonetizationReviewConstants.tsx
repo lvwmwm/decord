@@ -1,13 +1,15 @@
-// Module ID: 4016
-// Function ID: 4017
+// Module ID: 4019
+// Function ID: 4020
 // Name: CreatorMonetizationRestrictions
 // Dependencies: [2]
 
-// Module 4016 (CreatorMonetizationRestrictions)
+// Module 4019 (CreatorMonetizationRestrictions)
+import set from "set" /* 2 */;
+
 const obj = { NEW_PURCHASES_DISABLED: "NEW_PURCHASES_DISABLED", REAPPLICATION_DISABLED: "REAPPLICATION_DISABLED", SETTINGS_READ_ONLY: "SETTINGS_READ_ONLY", SUBSCRIPTIONS_ENDED_FULL_REFUND: "SUBSCRIPTIONS_ENDED_FULL_REFUND", SUBSCRIPTIONS_ENDED_PRORATED_REFUND: "SUBSCRIPTIONS_ENDED_PRORATED_REFUND" };
 const items = [, , ];
 ({ NEW_PURCHASES_DISABLED: arr[0], REAPPLICATION_DISABLED: arr[1], SETTINGS_READ_ONLY: arr[2] } = obj);
-const result = require("set").fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationReviewConstants.tsx");
+const result = set.fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationReviewConstants.tsx");
 
 export const CreatorMonetizationRestrictions = obj;
 export const DefaultCreatorMonetizationRestrictions = items;

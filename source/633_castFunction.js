@@ -4,11 +4,13 @@
 // Dependencies: [634]
 
 // Module 633 (castFunction)
+import identity from "identity" /* 634 */;
+
 
 export default function castFunction(fn) {
   let tmp = fn;
   if (typeof fn !== "function") {
-    tmp = require(634) /* identity */;
+    tmp = identity;
   }
   return tmp;
 };

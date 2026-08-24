@@ -1,14 +1,21 @@
-// Module ID: 12548
-// Function ID: 12549
+// Module ID: 12602
+// Function ID: 12603
 // Name: getUserAgnosticState
 // Dependencies: [676, 698, 500, 1625, 589, 709, 2]
 // Exports: isMobileOverlaySupported
 
-// Module 12548 (getUserAgnosticState)
-import { AnalyticEvents } from "ME";
-import { DeviceSettingsStore } from "initialize";
+// Module 12602 (getUserAgnosticState)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+import initializeDefault from "initialize" /* 589 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isMetaQuest from "isMetaQuest" /* 1625 */;
 
+const AnalyticEvents = ME.AnalyticEvents;
 let c4 = false;
+const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class MobileVoiceOverlayStore extends DeviceSettingsStore {
 }
 const prototype = MobileVoiceOverlayStore.prototype;
@@ -25,10 +32,10 @@ prototype["initialize"] = function initialize(enabled) {
   }
 };
 prototype["getEnabled"] = function getEnabled() {
-  let isAndroidResult = require(500) /* set */.isAndroid();
+  let isAndroidResult = set2.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = !require(1625) /* isMetaQuest */.isMetaQuest();
-    const tmpResult = require(1625) /* isMetaQuest */;
+    isAndroidResult = !isMetaQuest.isMetaQuest();
+    const tmpResult = isMetaQuest;
   }
   if (isAndroidResult) {
     isAndroidResult = c4;
@@ -37,22 +44,22 @@ prototype["getEnabled"] = function getEnabled() {
 };
 MobileVoiceOverlayStore.displayName = "MobileVoiceOverlayStore";
 MobileVoiceOverlayStore.persistKey = "MobileVoiceOverlayStore";
-const mobileVoiceOverlayStore = new MobileVoiceOverlayStore(require("dispatcher"), {
+const mobileVoiceOverlayStore = new MobileVoiceOverlayStore(dispatcherDefault, {
   MOBILE_VOICE_OVERLAY_STATE_CHANGED: function handleMobileVoiceOverlayStateChanged(enabled) {
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     obj = { enabled: enabled.enabled };
     obj.track(AnalyticEvents.MOBILE_OVERLAY_TOGGLED, obj);
     enabled = enabled.enabled;
   }
 });
-const result = require("set").fileFinishedImporting("stores/native/MobileVoiceOverlayStore.tsx");
+const result = set.fileFinishedImporting("stores/native/MobileVoiceOverlayStore.tsx");
 
 export default mobileVoiceOverlayStore;
 export const isMobileOverlaySupported = function isMobileOverlaySupported() {
-  let isAndroidResult = require(500) /* set */.isAndroid();
+  let isAndroidResult = set2.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = !require(1625) /* isMetaQuest */.isMetaQuest();
-    const tmpResult = require(1625) /* isMetaQuest */;
+    isAndroidResult = !isMetaQuest.isMetaQuest();
+    const tmpResult = isMetaQuest;
   }
   return isAndroidResult;
 };

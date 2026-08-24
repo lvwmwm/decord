@@ -1,15 +1,17 @@
-// Module ID: 4067
-// Function ID: 4068
+// Module ID: 4070
+// Function ID: 4071
 // Name: updateExistingSettings
 // Dependencies: [1340, 589, 595, 709, 2]
 
-// Module 4067 (updateExistingSettings)
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import { PersistedStore } from "initialize";
+// Module 4070 (updateExistingSettings)
+import initializeDefault from "initialize" /* 589 */;
+import Storage3 from "Storage" /* 595 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
 
-const require = arg1;
+require = arg1;
 function updateExistingSettings() {
-  const settings = handleConnectionClosedOrResumed.settings;
+  const settings = closure_2.settings;
   const textAndImages = settings.textAndImages;
   let value;
   if (textAndImages != null) {
@@ -38,6 +40,7 @@ function updateExistingSettings() {
 }
 let closure_3 = {};
 let closure_4 = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class UserSettingsOverridesStore extends PersistedStore {
 }
 const prototype = UserSettingsOverridesStore.prototype;
@@ -46,7 +49,7 @@ prototype["initialize"] = function initialize(arg0) {
   if (arg0 == null) {
     obj = {};
   }
-  const items = [handleConnectionClosedOrResumed];
+  const items = [closure_2];
   this.syncWith(items, updateExistingSettings);
 };
 prototype["getState"] = function getState() {
@@ -66,20 +69,20 @@ UserSettingsOverridesStore.displayName = "UserSettingsOverridesStore";
 UserSettingsOverridesStore.persistKey = "UserSettingsOverridesStore";
 let items = [
   () => {
-    const Storage = require(595) /* Storage */.Storage;
+    const Storage = Storage3.Storage;
     let obj = Storage.get("UserSettingsStoreOverrides");
     if (obj == null) {
       obj = {};
     }
-    const Storage2 = require(595) /* Storage */.Storage;
+    const Storage2 = Storage3.Storage;
     Storage2.remove("UserSettingsStoreOverrides");
     return obj;
   }
 ];
 UserSettingsOverridesStore.migrations = items;
-const userSettingsOverridesStore = new UserSettingsOverridesStore(require("dispatcher"), {
+const userSettingsOverridesStore = new UserSettingsOverridesStore(dispatcherDefault, {
   USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsProtoUpdate() {
-    const settings = handleConnectionClosedOrResumed.settings;
+    const settings = closure_2.settings;
     const textAndImages = settings.textAndImages;
     let value;
     if (textAndImages != null) {
@@ -138,12 +141,12 @@ const userSettingsOverridesStore = new UserSettingsOverridesStore(require("dispa
     }
   },
   LOGOUT: function handleLogOut() {
-    let closure_3 = {};
+    closure_3 = {};
   },
   LOGIN_SUCCESS: function handleLogInSuccess() {
-    let closure_3 = {};
+    closure_3 = {};
   }
 });
-const result = require("Storage").fileFinishedImporting("modules/user_settings/UserSettingsOverridesStore.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/UserSettingsOverridesStore.tsx");
 
 export default userSettingsOverridesStore;

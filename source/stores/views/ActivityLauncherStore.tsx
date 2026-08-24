@@ -1,20 +1,17 @@
-// Module ID: 10663
-// Function ID: 10664
+// Module ID: 10702
+// Function ID: 10703
 // Name: handleActivityStateChanged
-// Dependencies: [7251, 7250, 676, 4259, 709, 589, 2]
+// Dependencies: [7289, 7288, 676, 4263, 709, 589, 2]
 
-// Module 10663 (handleActivityStateChanged)
-import updateActivities from "updateActivities";
-import filterPlayingActivities from "filterPlayingActivities";
-import ME from "ME";
-import { Store } from "initialize";
+// Module 10702 (handleActivityStateChanged)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "updateActivities" /* 7289 */;
+import closure_4 from "filterPlayingActivities" /* 7288 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 function handleActivityStateChanged(COMPLETE, JOIN, type) {
-  let applicationId;
-  let remotePartyId;
   ({ applicationId, remotePartyId } = type);
   if (COMPLETE === constants.COMPLETE) {
     if (dependencyMap[applicationId] != null) {
@@ -36,14 +33,14 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
     obj[JOIN] = obj;
     dependencyMap[applicationId] = obj;
     if (COMPLETE === tmp5.FAILED) {
-      let closure_1 = JOIN;
+      closure_1 = JOIN;
       if (null != dependencyMap2[applicationId]) {
         tmp16[applicationId].stop();
         const obj5 = tmp16[applicationId];
       }
-      const timeout = new applicationId(4259).Timeout();
+      const timeout = new applicationId(4263).Timeout();
       timeout.start(c9, () => {
-        let obj = JOIN(outer1_2[4]);
+        let obj = JOIN(closure_1_2[4]);
         obj = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType: JOIN };
         return obj.dispatch(obj);
       });
@@ -59,9 +56,9 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
         tmp7[applicationId].stop();
         const obj3 = tmp7[applicationId];
       }
-      const timeout1 = new applicationId(4259).Timeout();
+      const timeout1 = new applicationId(4263).Timeout();
       timeout1.start(num, () => {
-        let obj = JOIN(outer1_2[4]);
+        let obj = JOIN(closure_1_2[4]);
         obj = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType: JOIN };
         return obj.dispatch(obj);
       });
@@ -82,8 +79,6 @@ function handleActivityComplete(type) {
 function handleActivityUpdate() {
   const entries = Object.entries(closure_7);
   const mapped = entries.map((arg0) => {
-    let tmp;
-    let tmp2;
     [tmp, tmp2] = arg0;
     const obj = { applicationId: tmp, remotePartyId: null };
     let remotePartyId;
@@ -94,13 +89,11 @@ function handleActivityUpdate() {
     return obj;
   });
   const found = mapped.filter((remotePartyId) => null != remotePartyId.remotePartyId);
-  let c0 = false;
+  c0 = false;
   const item = found.forEach((arg0) => {
-    let applicationId;
-    let remotePartyId;
     ({ applicationId, remotePartyId } = arg0);
-    const applicationActivity = outer1_3.getApplicationActivity(applicationId);
-    const applicationActivity1 = outer1_4.getApplicationActivity(applicationId);
+    const applicationActivity = closure_1_3.getApplicationActivity(applicationId);
+    const applicationActivity1 = closure_1_4.getApplicationActivity(applicationId);
     let id;
     if (applicationActivity != null) {
       const party = applicationActivity.party;
@@ -123,8 +116,8 @@ function handleActivityUpdate() {
       const obj = { applicationId: null, remotePartyId: null };
       obj[0] = applicationId;
       obj[1] = remotePartyId;
-      outer1_10(outer1_5.COMPLETE, outer1_6.JOIN, obj);
-      let c0 = true;
+      closure_1_10(closure_1_5.COMPLETE, closure_1_6.JOIN, obj);
+      c0 = true;
     }
   });
   return c0;
@@ -133,11 +126,12 @@ function handleActivityUpdate() {
 let closure_7 = {};
 let closure_8 = {};
 let c9 = 120000;
+const Store = initializeDefault.Store;
 class ActivityLauncherStore extends Store {
 }
 const prototype = ActivityLauncherStore.prototype;
 prototype["initialize"] = function initialize() {
-  const items = [updateActivities, filterPlayingActivities];
+  const items = [closure_3, closure_4];
   this.syncWith(items, handleActivityUpdate);
 };
 prototype["getState"] = function getState(arg0, arg1) {
@@ -153,7 +147,7 @@ prototype["getStates"] = function getStates() {
   return closure_7;
 };
 ActivityLauncherStore.displayName = "ActivityLauncherStore";
-const activityLauncherStore = new ActivityLauncherStore(require("dispatcher"), {
+const activityLauncherStore = new ActivityLauncherStore(dispatcherDefault, {
   OVERLAY_INITIALIZE: function handleOverlayInitialize(activityLauncherStates) {
     const obj = {};
     const merged = Object.assign(activityLauncherStates.activityLauncherStates);
@@ -174,6 +168,6 @@ const activityLauncherStore = new ActivityLauncherStore(require("dispatcher"), {
     }
   }
 });
-const result = require("ME").fileFinishedImporting("stores/views/ActivityLauncherStore.tsx");
+const result = require("set").fileFinishedImporting("stores/views/ActivityLauncherStore.tsx");
 
 export default activityLauncherStore;

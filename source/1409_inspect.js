@@ -5,6 +5,10 @@
 // Exports: _extend, callbackify, debuglog, deprecate, format, isArray, isBoolean, isDate, isError, isFunction, isNull, isNullOrUndefined, isNumber, isObject, isPrimitive, isRegExp, isString, isSymbol, isUndefined, log, promisify
 
 // Module 1409 (inspect)
+import checkBoxedPrimitive from "checkBoxedPrimitive" /* 1410 */;
+import isBuffer from "isBuffer" /* 1427 */;
+import _mod1428 from "module_1428" /* 1428 */;
+
 function inspect(arg0, flag) {
   const obj = { seen: [], stylize: stylizeNoColor };
   if (arguments.length >= 3) {
@@ -47,8 +51,8 @@ function stylizeNoColor(arg0, arg1) {
 }
 function formatValue(customInspect, inspect) {
   let _exports = customInspect;
-  let closure_1 = inspect;
-  let closure_2 = arg2;
+  closure_1 = inspect;
+  closure_2 = arg2;
   if (customInspect.customInspect) {
     if (inspect) {
       if (typeof inspect.inspect === "function") {
@@ -258,13 +262,13 @@ function formatValue(customInspect, inspect) {
                   }
                   const item1 = ownPropertyNames.forEach((str) => {
                     if (!str.match(/^\d+$/)) {
-                      items1.push(outer1_9(closure_0, closure_1, closure_2, obj, str, true));
+                      items1.push(closure_1_9(closure_0, closure_1, closure_2, obj, str, true));
                     }
                   });
                   let mapped = items1;
                   length = inspect.length;
                 } else {
-                  mapped = ownPropertyNames.map((arg0) => outer1_9(closure_0, closure_1, closure_2, obj, arg0, items1));
+                  mapped = ownPropertyNames.map((arg0) => closure_1_9(closure_0, closure_1, closure_2, obj, arg0, items1));
                 }
                 const seen1 = customInspect.seen;
                 seen1.pop();
@@ -421,7 +425,7 @@ function callbackifyOnRejected(reason) {
   let tmp = reason;
   if (!reason) {
     const _Error = Error;
-    const error = new Error("Promise was rejected with a falsy value");
+    error = new Error("Promise was rejected with a falsy value");
     error.reason = reason;
     tmp = error;
   }
@@ -545,10 +549,9 @@ exports.promisify.custom = SymbolResult;
 
 export const format = (str) => {
   let length;
-  let sum1;
   if (typeof str === "string") {
-    let c0 = 1;
-    let closure_1 = arguments;
+    let sum1 = 1;
+    closure_1 = arguments;
     const length2 = arguments.length;
     let _String = String;
     let replaced = String(str).replace(length2, (arg0) => {
@@ -576,9 +579,9 @@ export const format = (str) => {
         return arg0;
       }
     });
-    let tmp13 = arguments[c0];
+    let tmp13 = arguments[sum1];
     let tmp16 = replaced;
-    if (c0 < length2) {
+    if (sum1 < length2) {
       while (true) {
         let tmp17 = tmp13;
         let tmp18 = replaced;
@@ -591,14 +594,14 @@ export const format = (str) => {
             let tmp20 = inspect;
             let text = `${tmp11} ${inspect(tmp13)}`;
           }
-          let tmp22 = c0;
-          let sum = c0 + 1;
-          c0 = sum;
+          let tmp22 = sum1;
+          let sum = sum1 + 1;
+          sum1 = sum;
           tmp13 = arguments[sum];
-          let tmp24 = c0;
+          let tmp24 = sum1;
           replaced = text;
           tmp16 = text;
-          if (c0 >= length2) {
+          if (sum1 >= length2) {
             break;
           }
         }
@@ -608,15 +611,14 @@ export const format = (str) => {
     return tmp16;
   } else {
     const items = [];
-    c0 = 0;
+    sum1 = 0;
     if (0 < arguments.length) {
       do {
         let tmp = inspect;
-        let tmp2 = c0;
-        let arr = items.push(inspect(arguments[c0]));
-        let tmp4 = c0;
-        sum1 = c0 + 1;
-        c0 = sum1;
+        let tmp2 = sum1;
+        let arr = items.push(inspect(arguments[sum1]));
+        let tmp4 = sum1;
+        sum1 = sum1 + 1;
         length = arguments.length;
       } while (sum1 < length);
     }
@@ -624,8 +626,8 @@ export const format = (str) => {
   }
 };
 export const deprecate = (arg0, arg1) => {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   if (typeof process !== "undefined") {
     let _process = process;
     if (true === process.noDeprecation) {
@@ -645,13 +647,13 @@ export const deprecate = (arg0, arg1) => {
       return applyArgumentsResult;
     };
   } else {
-    let c2 = false;
+    c2 = false;
     return function deprecated() {
       if (!c2) {
         const _process = process;
         if (process.throwDeprecation) {
           const _Error = Error;
-          const error = new Error(closure_1);
+          error = new Error(closure_1);
           throw error;
         } else {
           const _process2 = process;
@@ -700,7 +702,7 @@ export const debuglog = (str) => {
   return table[formatted];
 };
 export { inspect };
-export const types = require("checkBoxedPrimitive");
+export const types = checkBoxedPrimitive;
 export { isArray };
 export { isBoolean };
 export { isNull };
@@ -725,7 +727,7 @@ export function isPrimitive(flag) {
   }
   return tmp;
 }
-export const isBuffer = require("isBuffer");
+export { isBuffer };
 export const log = () => {
   const date = new Date();
   const str = date.getHours();
@@ -761,7 +763,7 @@ export const log = () => {
   }
   console.log("%s - %s", joined1, applyArgumentsResult);
 };
-export const inherits = require("module_1428");
+export const inherits = _mod1428;
 export const _extend = (arg0, obj) => {
   let tmp5;
   if (obj) {
@@ -786,7 +788,7 @@ export const _extend = (arg0, obj) => {
   return arg0;
 };
 export const promisify = function promisify(fn) {
-  let closure_0 = fn;
+  closure_0 = fn;
   if (typeof fn !== "function") {
     const _TypeError2 = TypeError;
     const typeError = new TypeError("The \"original\" argument must be of type Function");
@@ -810,8 +812,8 @@ export const promisify = function promisify(fn) {
     fn = function n() {
       let length;
       const promise = new Promise((arg0, arg1) => {
-        let closure_0 = arg0;
-        let closure_1 = arg1;
+        closure_0 = arg0;
+        closure_1 = arg1;
       });
       const items = [];
       let num = 0;
@@ -851,7 +853,7 @@ export const promisify = function promisify(fn) {
   }
 };
 export const callbackify = function callbackify(fn) {
-  let closure_0 = fn;
+  closure_0 = fn;
   if (typeof fn !== "function") {
     let _TypeError = TypeError;
     let typeError = new TypeError("The \"original\" argument must be of type Function");
@@ -888,7 +890,7 @@ export const callbackify = function callbackify(fn) {
         arr.apply(this, items).then((cache) => {
           process.nextTick(cb.bind(null, null, cache));
         }, (c165) => {
-          process.nextTick(outer1_12.bind(null, c165, cb));
+          process.nextTick(closure_1_12.bind(null, c165, cb));
         });
       }
     }

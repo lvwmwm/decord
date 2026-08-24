@@ -1,11 +1,13 @@
-// Module ID: 5414
-// Function ID: 5415
+// Module ID: 5419
+// Function ID: 5420
 // Name: waitSafelyForPostTTI
-// Dependencies: [5415, 2]
+// Dependencies: [5420, 2]
 // Exports: waitSafelyForPostTTI
 
-// Module 5414 (waitSafelyForPostTTI)
-const result = require("set").fileFinishedImporting("modules/app_startup/PostTTIScheduler/SafePostTTIScheduler.tsx");
+// Module 5419 (waitSafelyForPostTTI)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/app_startup/PostTTIScheduler/SafePostTTIScheduler.tsx");
 
 export const waitSafelyForPostTTI = function waitSafelyForPostTTI(arg0) {
   let num = arg0;
@@ -13,11 +15,11 @@ export const waitSafelyForPostTTI = function waitSafelyForPostTTI(arg0) {
     num = 4000;
   }
   return new Promise((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const timeout = setTimeout(() => {
       callback();
     }, closure_0);
-    num(outer1_1[0]).schedulePostTTIEvent(() => {
+    num(closure_1_1[0]).schedulePostTTIEvent(() => {
       clearTimeout(closure_1);
       callback();
     });

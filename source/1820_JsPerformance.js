@@ -5,27 +5,20 @@
 // Exports: PerformanceMonitor
 
 // Module 1820 (JsPerformance)
-import noop from "noop";
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import configureProps from "configureProps";
-import createAnimatedComponent from "createAnimatedComponent";
+import noopDefault from "noop" /* 19 */;
+import noop from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import configureProps from "configureProps" /* 1753 */;
+import createAnimatedComponent from "createAnimatedComponent" /* 1688 */;
 
-let StyleSheet;
-let TextInput;
-let c3;
-let c4;
-let c5;
-let closure_6;
-let obj1;
 function JsPerformance(smoothingFrames) {
   smoothingFrames = smoothingFrames.smoothingFrames;
   let sharedValue;
-  let dependencyMap;
+  dependencyMap = undefined;
   let obj = sharedValue(1797);
   sharedValue = obj.useSharedValue(null);
-  let obj1 = sharedValue(1797);
+  obj1 = sharedValue(1797);
   const sharedValue1 = obj1.useSharedValue(0);
   if (typeof createCircularDoublesBuffer !== "function") {
     HermesBuiltin.throwTypeError();
@@ -67,14 +60,14 @@ function JsPerformance(smoothingFrames) {
   dependencyMap = closure_3(obj);
   const items = [sharedValue, sharedValue1];
   callback(() => {
-    let c0 = 0;
+    c0 = 0;
     function loop() {
       let animationFrame = requestAnimationFrame((arg0) => {
         if (closure_0 > 0) {
           const _Math2 = Math;
-          const current = outer1_1.current;
+          const current = closure_1_1.current;
           const rounded = Math.round(arg0);
-          if (typeof outer1_10 !== "function") {
+          if (typeof closure_1_10 !== "function") {
             HermesBuiltin.throwTypeError();
           }
           const _Math = Math;
@@ -84,11 +77,11 @@ function JsPerformance(smoothingFrames) {
             arr = rounded1;
           }
           const result = (rounded1 - arr) / current.count;
-          if (typeof outer1_9 !== "function") {
+          if (typeof closure_1_9 !== "function") {
             HermesBuiltin.throwTypeError();
           }
           const result1 = 2 * (1000 / result);
-          outer1_0.value = result1.toFixed(0);
+          closure_1_0.value = result1.toFixed(0);
         }
         closure_0 = arg0;
         const animationFrame = requestAnimationFrame(closure_1);
@@ -97,9 +90,9 @@ function JsPerformance(smoothingFrames) {
     let animationFrame = requestAnimationFrame((arg0) => {
       if (closure_0 > 0) {
         const _Math2 = Math;
-        const current = outer1_1.current;
+        const current = closure_1_1.current;
         const rounded = Math.round(arg0);
-        if (typeof outer1_10 !== "function") {
+        if (typeof closure_1_10 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         const _Math = Math;
@@ -109,11 +102,11 @@ function JsPerformance(smoothingFrames) {
           arr = rounded1;
         }
         const result = (rounded1 - arr) / current.count;
-        if (typeof outer1_9 !== "function") {
+        if (typeof closure_1_9 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         const result1 = 2 * (1000 / result);
-        outer1_0.value = result1.toFixed(0);
+        closure_1_0.value = result1.toFixed(0);
       }
       closure_0 = arg0;
       const animationFrame = requestAnimationFrame(closure_1);
@@ -141,11 +134,11 @@ function UiPerformance(smoothingFrames) {
   let sharedValue1;
   let obj = smoothingFrames(sharedValue[5]);
   sharedValue = obj.useSharedValue(null);
-  let obj1 = smoothingFrames(sharedValue[5]);
+  obj1 = smoothingFrames(sharedValue[5]);
   sharedValue1 = obj1.useSharedValue(null);
   const fn = function n(timestamp) {
     if (null === sharedValue1.value) {
-      if (typeof outer1_7 !== "function") {
+      if (typeof closure_1_7 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       const obj = { next: 0, buffer: null, size: null, count: 0, push: null, front: null, back: null };
@@ -187,7 +180,7 @@ function UiPerformance(smoothingFrames) {
     }
     const value = iter.value;
     const rounded = Math.round(timestamp.timestamp);
-    if (typeof outer1_10 !== "function") {
+    if (typeof closure_1_10 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const rounded1 = Math.round(rounded);
@@ -196,7 +189,7 @@ function UiPerformance(smoothingFrames) {
       arr = rounded1;
     }
     const result = (rounded1 - arr) / value.count;
-    if (typeof outer1_9 !== "function") {
+    if (typeof closure_1_9 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const result1 = 1000 / result;
@@ -225,6 +218,7 @@ function UiPerformance(smoothingFrames) {
   return callback2(closure_4, obj);
 }
 ({ useEffect: obj1, useRef: c3 } = noop);
+noopDefault;
 ({ StyleSheet, View: c4, TextInput } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 function createCircularDoublesBuffer(arg0) {

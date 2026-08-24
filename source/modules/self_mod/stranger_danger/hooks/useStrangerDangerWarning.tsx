@@ -1,32 +1,37 @@
-// Module ID: 10570
-// Function ID: 10571
+// Module ID: 10609
+// Function ID: 10610
 // Name: useStrangerDangerWarning
-// Dependencies: [1922, 9921, 589, 10571, 10572, 10573, 8152, 10574, 2]
+// Dependencies: [1922, 9960, 589, 10610, 10611, 10612, 8191, 10613, 2]
 // Exports: useStrangerDangerWarning
 
-// Module 10570 (useStrangerDangerWarning)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { SafetyWarningTypes } from "handleConnectionOpen";
+// Module 10609 (useStrangerDangerWarning)
+import initialize from "initialize" /* 589 */;
+import useUserIsTeen from "useUserIsTeen" /* 8191 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10610 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 10611 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10612 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 9960 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx");
 
 export const useStrangerDangerWarning = function useStrangerDangerWarning(id) {
-  const items = [mergeGuildAvatar];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = require(589) /* initialize */;
+  const items = [closure_2];
+  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj = initialize;
   const tmp = require;
-  const isSpamMessageRequest = require(10571) /* useIsSpamMessageRequest */.useIsSpamMessageRequest(id);
-  const obj3 = require(10571) /* useIsSpamMessageRequest */;
-  const isMessageRequest = require(10572) /* useIsMessageRequest */.useIsMessageRequest(id);
-  const obj4 = require(10572) /* useIsMessageRequest */;
-  const channelSafetyWarning = require(10573) /* useChannelSafetyWarning */.useChannelSafetyWarning(id, SafetyWarningTypes.STRANGER_DANGER);
-  const obj5 = require(10573) /* useChannelSafetyWarning */;
-  const userIsTeen = require(8152) /* useUserIsTeen */.useUserIsTeen();
+  const isSpamMessageRequest = useIsSpamMessageRequest.useIsSpamMessageRequest(id);
+  const obj3 = useIsSpamMessageRequest;
+  const isMessageRequest = useIsMessageRequest.useIsMessageRequest(id);
+  const obj4 = useIsMessageRequest;
+  const channelSafetyWarning = useChannelSafetyWarning.useChannelSafetyWarning(id, SafetyWarningTypes.STRANGER_DANGER);
+  const obj5 = useChannelSafetyWarning;
+  const userIsTeen = useUserIsTeen.useUserIsTeen();
   if (stateFromStores != null) {
     const isStaffResult = stateFromStores.isStaff();
   }
-  const obj6 = require(8152) /* useUserIsTeen */;
+  const obj6 = useUserIsTeen;
   if (userIsTeen) {
     if (!isSpamMessageRequest) {
       if (!isMessageRequest) {

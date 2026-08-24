@@ -1,74 +1,83 @@
-// Module ID: 14155
-// Function ID: 14156
+// Module ID: 14223
+// Function ID: 14224
 // Name: toggle
-// Dependencies: [1922, 8198, 676, 8627, 589, 14151, 1236, 14101, 14153, 4656, 5260, 8626, 2007, 8629, 12, 10669, 14102, 2]
+// Dependencies: [1922, 8238, 676, 8664, 589, 14219, 1236, 14169, 14221, 4662, 5265, 8663, 2008, 8666, 12, 10708, 14170, 2]
 
-// Module 14155 (toggle)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { UserFlags } from "ME";
-import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY";
-import apply from "asyncRequireImpl";
-import createToggle from "createToggle";
+// Module 14223 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import ChangePhoneReason from "ChangePhoneReason" /* 8666 */;
+import _modDef14169 from "module_14169" /* 14169 */;
+import getSMSBackupDisabledMessage from "getSMSBackupDisabledMessage" /* 14219 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 14221 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { UserFlags } from "ME" /* 676 */;
+import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY" /* 8664 */;
+import apply from "apply" /* 12 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 let closure_6 = apply.debounce(function toggleSMS(user) {
   user = user.user;
   if (user.mfaSMSEnabled) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    const formatted = intl2.string(require(1236) /* getSystemLocale */.t["CIGa+7"]).toUpperCase();
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    const str2 = intl2.string(require(1236) /* getSystemLocale */.t["CIGa+7"]);
+    const intl2 = getSystemLocale.intl;
+    const formatted = intl2.string(getSystemLocale.t["CIGa+7"]).toUpperCase();
+    const intl3 = getSystemLocale.intl;
+    const str2 = intl2.string(getSystemLocale.t["CIGa+7"]);
     let obj = { onSubmit: null, title: null, placeholder: null, closeOnSuccess: true };
-    const formatted1 = intl3.string(require(1236) /* getSystemLocale */.t.wlfmlR).toUpperCase();
-    obj[0] = importDefault(14101).disableSMS;
+    const formatted1 = intl3.string(getSystemLocale.t.wlfmlR).toUpperCase();
+    obj[0] = _modDef14169.disableSMS;
     obj[1] = formatted1;
     obj[2] = formatted;
-    importDefault(14153)(obj);
-    const str3 = intl3.string(require(1236) /* getSystemLocale */.t.wlfmlR);
+    showUserSettingsInputAlertDefault(obj);
+    const str3 = intl3.string(getSystemLocale.t.wlfmlR);
   } else {
     if (null != user) {
       if (null != user.phone) {
-        const intl = require(1236) /* getSystemLocale */.intl;
-        const formatted2 = intl.string(require(1236) /* getSystemLocale */.t.DZQe23).toUpperCase();
-        const str = intl.string(require(1236) /* getSystemLocale */.t.DZQe23);
+        const intl = getSystemLocale.intl;
+        const formatted2 = intl.string(getSystemLocale.t.DZQe23).toUpperCase();
+        const str = intl.string(getSystemLocale.t.DZQe23);
         obj = { title: null };
         obj[0] = formatted2;
-        const obj3 = importDefault(4656);
-        importDefault(4656).confirm(obj).then((arg0) => {
+        const obj3 = _modDef4662;
+        _modDef4662.confirm(obj).then((arg0) => {
           if (arg0) {
             callback(table[7]).enableSMS();
             const obj = callback(table[7]);
           }
         });
-        const confirmResult = importDefault(4656).confirm(obj);
+        const confirmResult = _modDef4662.confirm(obj);
       }
     }
-    obj = importDefault(5260);
-    const obj1 = { reason: null };
-    obj1[0] = require(8629) /* ChangePhoneReason */.ChangePhoneReason.USER_SETTINGS_UPDATE;
-    obj.pushLazy(require(2007) /* asyncRequireImpl */(8626, dependencyMap.paths), obj1, closure_5);
-    const tmp5 = require(2007) /* asyncRequireImpl */(8626, dependencyMap.paths);
+    obj = _modDef5265;
+    obj1 = { reason: null };
+    obj1[0] = ChangePhoneReason.ChangePhoneReason.USER_SETTINGS_UPDATE;
+    obj.pushLazy(asyncRequireImpl(8663, dependencyMap.paths), obj1, closure_5);
+    const tmp5 = asyncRequireImpl(8663, dependencyMap.paths);
   }
 }, 200);
 apply = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.uHAJ5v);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.uHAJ5v);
   },
   parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   useIsDisabled: function useAccountSMSBackupSettingIsDisabled() {
-    const items = [mergeGuildAvatar];
-    const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
+    const items = [closure_3];
+    const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
-      sMSBackupDisabledMessage = require(14151) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
-      const tmpResult = require(14151) /* getSMSBackupDisabledMessage */;
+      sMSBackupDisabledMessage = getSMSBackupDisabledMessage.getSMSBackupDisabledMessage(stateFromStores);
+      const tmpResult = getSMSBackupDisabledMessage;
     }
     return null != sMSBackupDisabledMessage;
   },
   useValue: function useAccountSMSBackupSettingToggleValue() {
-    const items = [mergeGuildAvatar];
-    const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
+    const items = [closure_3];
+    const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
     let flag;
     if (stateFromStores != null) {
       flag = stateFromStores.hasFlag(UserFlags.MFA_SMS);
@@ -88,18 +97,18 @@ apply = {
     }
   },
   useDescription: function useAccountSMSBackupSettingDescription() {
-    const items = [mergeGuildAvatar];
-    const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
+    const items = [closure_3];
+    const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
-      sMSBackupDisabledMessage = require(14151) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
-      const tmpResult = require(14151) /* getSMSBackupDisabledMessage */;
+      sMSBackupDisabledMessage = getSMSBackupDisabledMessage.getSMSBackupDisabledMessage(stateFromStores);
+      const tmpResult = getSMSBackupDisabledMessage;
     }
     return sMSBackupDisabledMessage;
   },
   usePredicate: require("useIs2FAEnabled").useIsTOTPEnabled
 };
 apply = createToggle.createToggle(apply);
-const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/AccountSmsBackupSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AccountSmsBackupSetting.tsx");
 
 export default apply;

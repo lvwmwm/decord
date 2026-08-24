@@ -4,5 +4,7 @@
 // Dependencies: [255]
 
 // Module 254 (get hairlineWidth)
+import get_hairlineWidth from "get hairlineWidth" /* 255 */;
 
-export { default as default } from "get hairlineWidth";
+
+export default get_hairlineWidth.default;

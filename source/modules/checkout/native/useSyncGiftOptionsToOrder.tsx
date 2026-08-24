@@ -1,32 +1,31 @@
-// Module ID: 10364
-// Function ID: 10365
+// Module ID: 10404
+// Function ID: 10405
 // Name: useSyncGiftOptionsToOrder
-// Dependencies: [32, 19, 3, 7400, 4054, 2]
+// Dependencies: [32, 19, 3, 7438, 4057, 2]
 // Exports: default
 
-// Module 10364 (useSyncGiftOptionsToOrder)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 10404 (useSyncGiftOptionsToOrder)
+import timestampDefault from "timestamp" /* 3 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-let c4 = new require("getOrders")("useSyncGiftOptionsToOrder");
-const tmp2 = new require("getOrders")("useSyncGiftOptionsToOrder");
-let result = require("timestamp").fileFinishedImporting("modules/checkout/native/useSyncGiftOptionsToOrder.tsx");
+let closure_4 = new timestampDefault("useSyncGiftOptionsToOrder");
+const tmp2 = new timestampDefault("useSyncGiftOptionsToOrder");
+let result = require("set").fileFinishedImporting("modules/checkout/native/useSyncGiftOptionsToOrder.tsx");
 
 export default function useSyncGiftOptionsToOrder(arg0, arg1) {
-  let closure_11;
-  let tmp2;
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   let callback = React.useRef(null);
   React = React.useRef(null);
-  let closure_4 = React.useRef(false);
-  let closure_5 = React.useRef(undefined);
-  let closure_6 = React.useRef(null);
-  let closure_7 = React.useRef(0);
-  let closure_8 = React.useRef(null);
-  let closure_9 = React.useRef(null);
-  let closure_10 = React.useRef([]);
+  closure_4 = React.useRef(false);
+  closure_5 = React.useRef(undefined);
+  closure_6 = React.useRef(null);
+  closure_7 = React.useRef(0);
+  closure_8 = React.useRef(null);
+  closure_9 = React.useRef(null);
+  closure_10 = React.useRef([]);
   [tmp2, closure_11] = callback(React.useState(0), 2);
   callback = React.useCallback((arg0) => {
     closure_10.current = [];
@@ -47,7 +46,7 @@ export default function useSyncGiftOptionsToOrder(arg0, arg1) {
   const effect1 = React.useEffect(() => {
     if (null != id) {
       id = tmp.id;
-      noop.current = table;
+      closure_3.current = table;
       if (ref5.current !== id) {
         ref5.current = id;
         ref4.current = tmp.revision;
@@ -76,15 +75,15 @@ export default function useSyncGiftOptionsToOrder(arg0, arg1) {
           const updateOrderResult = obj.updateOrder(obj);
           const nextPromise = obj.updateOrder(obj).then((current) => {
             closure_5.current = current;
-            _slicedToArray.current = closure_1;
+            closure_2.current = closure_1;
             closure_7.current = 0;
           });
           obj.updateOrder(obj).then((current) => {
             closure_5.current = current;
-            _slicedToArray.current = closure_1;
+            closure_2.current = closure_1;
             closure_7.current = 0;
           }).catch((error) => {
-            outer1_7.current = outer1_7.current + 1;
+            closure_1_7.current = closure_1_7.current + 1;
             let obj = { error, orderId: id };
             logger.error("Failed to sync gift customization to order", obj);
             obj = { orderId: id };
@@ -106,10 +105,10 @@ export default function useSyncGiftOptionsToOrder(arg0, arg1) {
           });
           const catchPromise = obj.updateOrder(obj).then((current) => {
             closure_5.current = current;
-            _slicedToArray.current = closure_1;
+            closure_2.current = closure_1;
             closure_7.current = 0;
           }).catch((error) => {
-            outer1_7.current = outer1_7.current + 1;
+            closure_1_7.current = closure_1_7.current + 1;
             let obj = { error, orderId: id };
             logger.error("Failed to sync gift customization to order", obj);
             obj = { orderId: id };

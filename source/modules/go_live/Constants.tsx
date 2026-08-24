@@ -1,10 +1,11 @@
-// Module ID: 4532
-// Function ID: 4533
+// Module ID: 4537
+// Function ID: 4538
 // Name: StreamIssueReportReasons
-// Dependencies: [4533, 2]
+// Dependencies: [4538, 2]
 
-// Module 4532 (StreamIssueReportReasons)
-import set from "set";
+// Module 4537 (StreamIssueReportReasons)
+import Notifications from "Notifications" /* 4538 */;
+import set from "set" /* 2 */;
 
 let set = new Set(["chrome.exe", "opera.exe", "firefox.exe", "brave.exe", "msedge.exe"]);
 const result = set.fileFinishedImporting("modules/go_live/Constants.tsx");
@@ -22,6 +23,6 @@ export const WINDOWS_GRAPHICS_CAPTURE_NEW_APIS_BUILD = 26100;
 export const WINDOWS_GRAPHICS_CAPTURE_SEMVER = ">=10.0.22000";
 export const WINDOWS_GRAPHICS_CAPTURE_BUILD = 22000;
 export const StreamTypes = { GUILD: "guild", CALL: "call" };
-export const STREAM_NOTIFY_GUILD_MAX_SIZE = require("Notifications").Notifications.StreamNotificationsGuildMaxSize;
+export const STREAM_NOTIFY_GUILD_MAX_SIZE = Notifications.Notifications.StreamNotificationsGuildMaxSize;
 export const GO_LIVE_NOTIFY_FRIENDS_MIN_MEMBER_COUNT = 30;
 export const BROWSER_EXECUTABLES = set;

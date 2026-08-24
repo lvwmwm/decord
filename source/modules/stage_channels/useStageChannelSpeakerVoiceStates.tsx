@@ -1,38 +1,36 @@
-// Module ID: 15498
-// Function ID: 15499
+// Module ID: 15563
+// Function ID: 15564
 // Name: transformParticipantToSortedVoiceState
-// Dependencies: [32, 1394, 1391, 4545, 4989, 589, 1913, 11, 1370, 6703, 6709, 2]
+// Dependencies: [32, 1394, 1391, 4550, 4994, 589, 1913, 11, 1370, 6740, 6746, 2]
 // Exports: default
 
-// Module 15498 (transformParticipantToSortedVoiceState)
-import _slicedToArray from "_slicedToArray";
-import initializeFromUserSettings from "initializeFromUserSettings";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { getComparator } from "getVoiceStatesForGuild";
-import getActiveStageChannelIds from "getActiveStageChannelIds";
+// Module 15563 (transformParticipantToSortedVoiceState)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "initializeFromUserSettings" /* 1394 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import { getComparator } from "getVoiceStatesForGuild" /* 4550 */;
+import closure_7 from "getActiveStageChannelIds" /* 4994 */;
 
 const require = arg1;
 function transformParticipantToSortedVoiceState(user) {
-  let userNick;
-  let voiceState;
   ({ voiceState, userNick } = user);
   return { user: user.user, voiceState, nick: userNick, comparator: getComparator(voiceState, userNick) };
 }
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/stage_channels/useStageChannelSpeakerVoiceStates.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/useStageChannelSpeakerVoiceStates.tsx");
 
 export default function useStageChannelSpeakerVoiceStates(arg0) {
   const _require = arg0;
-  let items = [getActiveStageChannelIds, ensureGuildLoaded, initializeFromUserSettings];
+  let items = [closure_7, closure_5, closure_4];
   const items1 = [arg0];
   return callback(_require(589).useStateFromStores(items, () => {
     if (obj.isFavoritesGuildId(callback)) {
-      const keys = outer1_1(tmp2[7]).keys(outer1_4.getFavoriteChannels());
+      const keys = closure_1_1(tmp2[7]).keys(closure_1_4.getFavoriteChannels());
       const mapped = keys.map((arg0) => channel.getChannel(arg0));
       let found = mapped.filter(callback(tmp2[8]).isNotNullish);
       let found1 = found.filter((isGuildStageVoice) => isGuildStageVoice.isGuildStageVoice());
-      const obj2 = outer1_1(tmp2[7]);
+      const obj2 = closure_1_1(tmp2[7]);
     } else {
-      found1 = outer1_7.getChannels(callback);
+      found1 = closure_1_7.getChannels(callback);
     }
     const items = [
       found1.reduce((arg0, id) => {
@@ -44,6 +42,6 @@ export default function useStageChannelSpeakerVoiceStates(arg0) {
       found1.reduce((arg0, id) => arg0 + store.getParticipantsVersion(id.id), 0)
     ];
     return items;
-  }, items1, _require(6709).isVersionEqual), 1)[0];
+  }, items1, _require(6746).isVersionEqual), 1)[0];
 };
 export { transformParticipantToSortedVoiceState };

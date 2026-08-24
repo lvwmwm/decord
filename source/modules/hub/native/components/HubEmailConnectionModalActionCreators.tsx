@@ -1,21 +1,22 @@
-// Module ID: 11922
-// Function ID: 11923
-// Dependencies: [5, 5260, 11905, 2007, 2]
+// Module ID: 11971
+// Function ID: 11972
+// Dependencies: [5, 5265, 11954, 2008, 2]
 
-// Module 11922
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 11971
+import _modDef5265 from "module_5265" /* 5265 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
 const HUB_EMAIL_CONNECTION_MODAL_KEY = "HUB_EMAIL_CONNECTION_MODAL_KEY";
-const result = require("HubEmailConnectionModal").fileFinishedImporting("modules/hub/native/components/HubEmailConnectionModalActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/hub/native/components/HubEmailConnectionModalActionCreators.tsx");
 
 export default {
   open(closure_0) {
     closure_0 = arg1;
-    importDefault(5260).pushLazy(callback(function*() {
-      let closure_1 = tmp5;
-      let closure_0 = tmp2;
-      yield outer1_0(paths[3])(paths[2], paths.paths);
+    _modDef5265.pushLazy(callback(function*() {
+      closure_1 = tmp5;
+      closure_0 = tmp2;
+      yield closure_1_0(paths[3])(paths[2], paths.paths);
       closure_0 = arg1.default;
       if (null != closure_0) {
         const obj = { animation: null };
@@ -26,6 +27,6 @@ export default {
     }), closure_0, HUB_EMAIL_CONNECTION_MODAL_KEY);
   },
   close() {
-    importDefault(5260).popWithKey(HUB_EMAIL_CONNECTION_MODAL_KEY);
+    _modDef5265.popWithKey(HUB_EMAIL_CONNECTION_MODAL_KEY);
   }
 };

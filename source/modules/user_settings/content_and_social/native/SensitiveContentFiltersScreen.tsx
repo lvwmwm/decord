@@ -1,25 +1,25 @@
-// Module ID: 14171
-// Function ID: 14172
+// Module ID: 14239
+// Function ID: 14240
 // Name: UserSettingsSensitiveContentFilters
-// Dependencies: [19, 8198, 21, 1236, 10669, 14172, 13991, 2]
+// Dependencies: [19, 8238, 21, 1236, 10708, 14240, 14059, 2]
 // Exports: default
 
-// Module 14171 (UserSettingsSensitiveContentFilters)
-import noop from "noop";
-import { MobileUserSettings } from "MobileUserSettings";
-import jsxProd from "jsxProd";
+// Module 14239 (UserSettingsSensitiveContentFilters)
+import _modDef14059 from "module_14059" /* 14059 */;
+import items3 from "items" /* 14240 */;
+import itemsDefault from "items" /* 14240 */;
+import closure_3 from "noop" /* 19 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 8238 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersScreen.tsx");
 
 export default function UserSettingsSensitiveContentFilters() {
   let obj = { children: null };
   const memo = React.useMemo(() => {
-    let obj = callback(10669);
+    let obj = callback(10708);
     obj = { sections: null };
     obj = { label: null, settings: null, subLabel: null };
     const intl = callback(1236).intl;
@@ -30,7 +30,7 @@ export default function UserSettingsSensitiveContentFilters() {
     const intl2 = callback(1236).intl;
     obj[2] = intl2.string(callback(1236).t.Wnojv1);
     const items1 = [obj, ];
-    const obj1 = { label: null, settings: null, subLabel: null };
+    obj1 = { label: null, settings: null, subLabel: null };
     const intl3 = callback(1236).intl;
     obj1[0] = intl3.string(callback(1236).t["16/3Bi"]);
     const items2 = [, , ];
@@ -42,9 +42,8 @@ export default function UserSettingsSensitiveContentFilters() {
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  obj = { screen: null };
-  obj[0] = require(14172) /* items */.SettingsScreen.SENSITIVE_CONTENT_FILTERS;
-  let items = [callback(importDefault(14172), obj), callback(importDefault(13991), { node: memo })];
+  obj = { screen: items3.SettingsScreen.SENSITIVE_CONTENT_FILTERS };
+  let items = [callback(itemsDefault, obj), callback(_modDef14059, { node: memo })];
   obj[0] = items;
   return callback2(closure_6, obj);
 };

@@ -1,20 +1,20 @@
-// Module ID: 11727
-// Function ID: 11728
+// Module ID: 11776
+// Function ID: 11777
 // Name: useGetExpiringGuildPowerups
-// Dependencies: [19, 4261, 589, 11662, 1370, 2]
+// Dependencies: [19, 4265, 589, 11711, 1370, 2]
 // Exports: default
 
-// Module 11727 (useGetExpiringGuildPowerups)
-import noop from "noop";
-import calculateAppliedBoosts from "calculateAppliedBoosts";
+// Module 11776 (useGetExpiringGuildPowerups)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "calculateAppliedBoosts" /* 4265 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/premium/powerups/hooks/useGetExpiringGuildPowerups.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGetExpiringGuildPowerups.tsx");
 
 export default function useGetExpiringGuildPowerups(arg0) {
   const _require = arg0;
-  const items = [calculateAppliedBoosts];
-  stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => outer1_3.getStateForGuild(closure_0));
+  const items = [closure_3];
+  stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => closure_1_3.getStateForGuild(closure_0));
   const items1 = [stateFromStores];
   return React.useMemo(() => {
     if (null == stateFromStores) {

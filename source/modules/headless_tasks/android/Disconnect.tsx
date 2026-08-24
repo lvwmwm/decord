@@ -1,23 +1,23 @@
-// Module ID: 17147
-// Function ID: 17148
+// Module ID: 17241
+// Function ID: 17242
 // Name: promise
-// Dependencies: [1391, 17148, 9647, 2]
+// Dependencies: [1391, 17242, 9686, 2]
 
-// Module 17147 (promise)
-import ensureGuildLoaded from "ensureGuildLoaded";
+// Module 17241 (promise)
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;
-const result = require("_handleToggleVideo").fileFinishedImporting("modules/headless_tasks/android/Disconnect.tsx");
+const result = require("set").fileFinishedImporting("modules/headless_tasks/android/Disconnect.tsx");
 
 export default (channelId) => {
   channelId = channelId.channelId;
   return new Promise((arg0) => {
-    let closure_0 = arg0;
-    outer1_1(outer1_2[1]).awaitStorage(() => {
-      const channel = outer2_3.getChannel(callback);
+    closure_0 = arg0;
+    closure_1_1(closure_1_2[1]).awaitStorage(() => {
+      const channel = closure_2_3.getChannel(callback);
       if (null != channel) {
-        channelId(outer2_2[2]).handleDisconnect(channel);
-        const obj = channelId(outer2_2[2]);
+        channelId(closure_2_2[2]).handleDisconnect(channel);
+        const obj = channelId(closure_2_2[2]);
       }
       callback(true);
     });

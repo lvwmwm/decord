@@ -1,44 +1,40 @@
-// Module ID: 15542
-// Function ID: 15543
+// Module ID: 15607
+// Function ID: 15608
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 1990, 1910, 1922, 9348, 676, 21, 4661, 712, 589, 698, 8454, 15397, 1297, 6782, 15543, 1236, 1993, 2]
+// Dependencies: [19, 17, 1991, 1910, 1922, 9385, 676, 21, 4668, 712, 589, 698, 8493, 15461, 1297, 6819, 15608, 1236, 1994, 2]
 // Exports: default
 
-// Module 15542 (NsfwGateGuildSidebar)
-import set from "set";
-import { View } from "getSystemLocale";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { NsfwGateSource } from "NsfwGateSource";
-import ME from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15607 (NsfwGateGuildSidebar)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { NsfwGateSource } from "NsfwGateSource" /* 9385 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_12;
-let map1;
-let unpackModuleId;
 const require = arg1;
 ({ AnalyticEvents: c9, HelpdeskArticles: c10, Fonts: unpackModuleId } = ME);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 createCacheKey = { container: null, emptyStateContainer: null, emptyStateImageContainer: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.PANEL_BG };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.PANEL_BG };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flex: 1 };
 createCacheKey[2] = { marginBottom: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/age_gate/native/components/NsfwGateGuildSidebar.tsx");
+let closure_14 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/age_gate/native/components/NsfwGateGuildSidebar.tsx");
 
 export default function NsfwGateGuildSidebar(guildId) {
   guildId = guildId.guildId;
   let stateFromStores;
   let currentUser;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = guildId(currentUser[10]);
-  const items = [createGuildRecordFromRust];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_6.getGuild(guildId));
+  const items = [closure_6];
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getGuild(guildId));
   currentUser = currentUser.getCurrentUser();
   const items1 = [guildId, stateFromStores, currentUser];
   const effect = React.useEffect(() => {
@@ -51,15 +47,15 @@ export default function NsfwGateGuildSidebar(guildId) {
       obj = { guild_id: null, user_id: null, is_member: null, is_user_opted_in_to_age_restricted_servers: null, source: null };
       obj[0] = guildId;
       obj[1] = tmp.id;
-      obj[2] = outer1_5.isMember(guildId, tmp.id);
+      obj[2] = closure_1_5.isMember(guildId, tmp.id);
       let nsfwAllowed = tmp.nsfwAllowed;
       if (nsfwAllowed) {
         nsfwAllowed = guildId(tmp5[12]).getViewNsfwGuildsOrDefault();
         const obj3 = guildId(tmp5[12]);
       }
       obj[3] = nsfwAllowed;
-      obj[4] = outer1_8.GUILD_SIDEBAR;
-      obj.track(outer1_9.GUILD_NSFW_GATE_VIEWED, obj);
+      obj[4] = closure_1_8.GUILD_SIDEBAR;
+      obj.track(closure_1_9.GUILD_NSFW_GATE_VIEWED, obj);
       tmp5 = currentUser;
     }
   }, items1);
@@ -71,7 +67,7 @@ export default function NsfwGateGuildSidebar(guildId) {
     obj = { guild: null, showExtraButtons: false };
     obj[0] = stateFromStores;
     const items3 = [callback(stateFromStores(tmp3[13]), obj), ];
-    const obj1 = { imageStyle: null, titleStyle: null, containerStyle: null, source: null, title: null, body: null };
+    obj1 = { imageStyle: null, titleStyle: null, containerStyle: null, source: null, title: null, body: null };
     obj1[0] = tmp.emptyStateImageContainer;
     obj1[1] = stateFromStores(tmp3[15])(constants2.DISPLAY_EXTRABOLD, undefined, 16);
     obj1[2] = tmp.emptyStateContainer;

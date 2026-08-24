@@ -1,26 +1,22 @@
-// Module ID: 14065
-// Function ID: 14066
+// Module ID: 14133
+// Function ID: 14134
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 676, 21, 4661, 1629, 1500, 7417, 7139, 7159, 7877, 9325, 9326, 14045, 1236, 4734, 2]
+// Dependencies: [19, 676, 21, 4668, 1629, 1500, 7455, 7177, 7197, 7916, 9362, 9363, 14113, 1236, 4739, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 14065 (UserProfilePremiumUpsellCard)
-import noop from "noop";
-import ME from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14133 (UserProfilePremiumUpsellCard)
+import closure_3 from "noop" /* 19 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 ({ AnalyticsObjects: c4, AnalyticsPages: c5, AnalyticsSections: closure_6, UserSettingsSections: error } = ME);
 let closure_9 = createCacheKey.createStyles((bottom) => {
   const container = { position: "absolute", bottom, start: 0, end: 0 };
   return { container };
 });
-const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfilePremiumUpsellCard.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfilePremiumUpsellCard.tsx");
 
 export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCard(isTryItOut) {
   isTryItOut = isTryItOut.isTryItOut;
@@ -30,25 +26,25 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
   navigation = obj.useNavigation();
   const tmp = analyticsLocations;
   const tmp3 = callback(analyticsLocations(1629)().bottom);
-  let nitroTrialCtaOverride = navigation(7417).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
-  const obj2 = navigation(7417);
-  const tmp8 = analyticsLocations(7159);
+  let nitroTrialCtaOverride = navigation(7455).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
+  const obj2 = navigation(7455);
+  const tmp8 = analyticsLocations(7197);
   const items = [isTryItOut ? tmp8.USER_SETTINGS_TRY_OUT_PREMIUM : tmp8.USER_SETTINGS_USER_PROFILE];
-  analyticsLocations = analyticsLocations(7139)(items).analyticsLocations;
+  analyticsLocations = analyticsLocations(7177)(items).analyticsLocations;
   const items1 = [navigation];
   callback = React.useCallback(() => {
-    analyticsLocations(outer1_2[9]).setSection(outer1_7.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
-    navigation.push(outer1_7.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
+    analyticsLocations(closure_1_2[9]).setSection(closure_1_7.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
+    navigation.push(closure_1_7.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
   }, items1);
   const items2 = [analyticsLocations];
   const callback1 = React.useCallback(() => {
     obj = { analyticsLocation: obj, analyticsLocations, premiumFeatureCardOrder: null };
-    obj = { page: outer1_5.USER_SETTINGS, section: outer1_6.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT, object: outer1_4.BUTTON_CTA };
-    obj[2] = navigation(outer1_2[11]).PremiumFeatureCardOrder.TIER_2_LEADING;
-    analyticsLocations(outer1_2[10])(obj);
+    obj = { page: closure_1_5.USER_SETTINGS, section: closure_1_6.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT, object: closure_1_4.BUTTON_CTA };
+    obj[2] = navigation(closure_1_2[11]).PremiumFeatureCardOrder.TIER_2_LEADING;
+    analyticsLocations(closure_1_2[10])(obj);
   }, items2);
   obj = { style: tmp3.container, ctaText: null, showLinearGradient: true, onPress: null, children: null };
-  const tmp7 = analyticsLocations(7139);
+  const tmp7 = analyticsLocations(7177);
   if (isTryItOut) {
     if (nitroTrialCtaOverride == null) {
       const intl2 = tmp4(1236).intl;
@@ -72,6 +68,6 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
   } else {
     stringResult1 = string(t.Tii53U);
   }
-  obj[4] = jsx(navigation(4734).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5, children: stringResult1 });
-  return jsx(tmp(14045), { style: tmp3.container, ctaText: null, showLinearGradient: true, onPress: null, children: null });
+  obj[4] = jsx(navigation(4739).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5, children: stringResult1 });
+  return jsx(tmp(14113), { style: tmp3.container, ctaText: null, showLinearGradient: true, onPress: null, children: null });
 };

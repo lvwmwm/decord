@@ -1,42 +1,34 @@
-// Module ID: 8554
-// Function ID: 8555
+// Module ID: 8593
+// Function ID: 8594
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 6801, 676, 21, 4661, 4094, 1236, 8555, 8526, 7127, 4200, 589, 6859, 6906, 8556, 8579, 4745, 2]
+// Dependencies: [5, 32, 19, 17, 6838, 676, 21, 4668, 4097, 1236, 8594, 8565, 7165, 4204, 589, 6897, 6944, 8595, 8618, 4750, 2]
 // Exports: default
 
-// Module 8554 (MemberVerificationForm)
-import ME from "ME";
-import _slicedToArray from "_slicedToArray";
-import Button from "Button";
-import { View } from "MemberVerificationFormRenderer";
-import get from "get";
-import { NO_MEMBER_VERIFICATION_FORM as closure_8 } from "get";
-import { VerificationLevels } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8593 (MemberVerificationForm)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_7 from "get" /* 6838 */;
+import { NO_MEMBER_VERIFICATION_FORM as closure_8 } from "get" /* 6838 */;
+import { VerificationLevels } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let unpackModuleId;
 const require = arg1;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_12 = createCacheKey.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 16, paddingVertical: 0 }, submitButton: { marginTop: 12, marginBottom: 12 }, error: { alignSelf: "center", paddingVertical: 16, fontSize: 16 } });
-const result = require("noop").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationForm.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationForm.tsx");
 
 export default function MemberVerificationForm(guild) {
-  let c8;
-  let c9;
-  let importDefault;
-  let onClose;
-  let tmp24;
-  let tmp26;
   guild = guild.guild;
-  ({ onSuccess: importDefault, onClose } = guild);
+  ({ onSuccess: closure_1, onClose } = guild);
   let stateFromStores = onClose;
   let memo;
   let first;
   let React;
-  let c6;
-  let c7;
+  closure_6 = undefined;
+  closure_7 = undefined;
   c8 = undefined;
   c9 = undefined;
   let memo1;
@@ -54,7 +46,7 @@ export default function MemberVerificationForm(guild) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -71,10 +63,10 @@ export default function MemberVerificationForm(guild) {
             } else {
               const callback = tmp3;
               let body = tmp7;
-              let closure_0;
+              closure_0 = undefined;
               body = undefined;
               if (null != c4) {
-                if (outer1_10) {
+                if (closure_1_10) {
                   (function showIncompleteToast() {
                     let obj = body(tmp3[8]);
                     obj = { key: "MEMBER_VERIFICATION_FORM_INCOMPLETE", content: null, icon: null };
@@ -84,23 +76,23 @@ export default function MemberVerificationForm(guild) {
                     obj.open(obj);
                   })();
                   c6 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 } else {
-                  outer1_9(null);
-                  outer1_8(true);
+                  closure_1_9(null);
+                  closure_1_8(true);
                   closure_0 = c6;
                   if (c6 == null) {
-                    closure_0 = outer1_8;
+                    closure_0 = closure_1_8;
                   }
-                  const obj1 = {};
+                  obj1 = {};
                   const merged = Object.assign(closure_0);
-                  let obj2 = outer1_0(outer1_2[15]);
+                  let obj2 = closure_1_0(closure_1_2[15]);
                   obj1.formFields = obj2.removeInternalFields(tmp61);
                   c4 = 1;
                   c5 = 2;
                   c6 = 1;
                   obj2 = { value: null, done: false };
-                  obj2[0] = outer1_1(outer1_2[16]).submitVerificationForm(outer1_0.id, obj1);
+                  obj2[0] = closure_1_1(closure_1_2[16]).submitVerificationForm(closure_1_0.id, obj1);
                   return obj2;
                 }
               } else {
@@ -134,10 +126,10 @@ export default function MemberVerificationForm(guild) {
                 }
               }
               tmp22(message);
-              outer1_8(false);
+              closure_1_8(false);
             }
-            let intl = outer1_0(outer1_2[9]).intl;
-            message = intl.string(outer1_0(outer1_2[9]).t.PD09Sl);
+            let intl = closure_1_0(closure_1_2[9]).intl;
+            message = intl.string(closure_1_0(closure_1_2[9]).t.PD09Sl);
             tmp22 = closure_9;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -169,7 +161,7 @@ export default function MemberVerificationForm(guild) {
         }
       }
     });
-    const _handleSubmit = tmp;
+    closure_11 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -187,7 +179,7 @@ export default function MemberVerificationForm(guild) {
   stateFromStores = undefined;
   memo = undefined;
   React = undefined;
-  c6 = undefined;
+  closure_6 = undefined;
   function getFormFields() {
     if (!memo) {
       if (null != closure_1) {
@@ -213,13 +205,13 @@ export default function MemberVerificationForm(guild) {
   }
   first = getFormFields;
   importDefault = undefined;
-  let obj1 = guild(stateFromStores[11]);
+  obj1 = guild(stateFromStores[11]);
   importDefault = obj1.useInitialVerification(guild.id);
   const tmp6 = importDefault(stateFromStores[12])(() => {
-    if (guild.verificationLevel === _undefined3.VERY_HIGH) {
+    if (guild.verificationLevel === _undefined.VERY_HIGH) {
       let phone;
-      if (tmp6 != null) {
-        phone = tmp6.phone;
+      if (phone != null) {
+        phone = phone.phone;
       }
       let tmp5 = null;
       if (!phone) {
@@ -238,9 +230,9 @@ export default function MemberVerificationForm(guild) {
   });
   importDefault = tmp6;
   let obj2 = guild(stateFromStores[14]);
-  let items = [c7];
+  let items = [closure_7];
   const items1 = [guild.id];
-  stateFromStores = obj2.useStateFromStores(items, () => _undefined2.get(guild), items1);
+  stateFromStores = obj2.useStateFromStores(items, () => closure_7.get(guild), items1);
   let obj3 = React;
   let formFields;
   if (stateFromStores != null) {
@@ -259,7 +251,7 @@ export default function MemberVerificationForm(guild) {
   }, items2);
   React = obj3.useRef(getFormFields);
   const effect = obj3.useEffect(() => {
-    Button.current = first;
+    closure_5.current = first;
   });
   if (!memo) {
     if (null != tmp6) {
@@ -274,25 +266,25 @@ export default function MemberVerificationForm(guild) {
       HermesBuiltin.arraySpread(formFields1, 1);
     }
     const tmp16 = first(tmp11(items3), 2);
-    c6 = tmp17;
+    closure_6 = tmp17;
     const items4 = [stateFromStores];
     const effect1 = obj3.useEffect(() => {
       if (null != stateFromStores) {
-        _undefined(ref.current());
+        callback(ref.current());
       }
     }, items4);
     const items5 = [tmp16[0], tmp16[1], stateFromStores, memo];
     const tmp19 = first(items5, 4);
     first = tmp19[0];
     React = tmp19[1];
-    c6 = tmp21;
-    c7 = tmp22;
+    closure_6 = tmp21;
+    closure_7 = tmp22;
     [tmp24, c8] = first(obj3.useState(false), 2);
     const tmp23 = first(obj3.useState(false), 2);
     [tmp26, c9] = first(obj3.useState(null), 2);
     const items6 = [onClose, tmp19[2]];
     const effect2 = obj3.useEffect(() => {
-      if (c6 === c8) {
+      if (closure_6 === c8) {
         if (stateFromStores != null) {
           tmp(false);
         }
@@ -306,11 +298,11 @@ export default function MemberVerificationForm(guild) {
       }
       if (someResult) {
         return true;
-      } else if (c7) {
+      } else if (closure_7) {
         return false;
       } else {
         const verificationLevel = guild.verificationLevel;
-        if (_undefined3.VERY_HIGH === verificationLevel) {
+        if (_undefined.VERY_HIGH === verificationLevel) {
           return !memo[guild(undefined, stateFromStores[13]).UserVerificationFieldPlatforms.PHONE];
         } else {
           if (tmp4.HIGH !== verificationLevel) {
@@ -379,9 +371,9 @@ export default function MemberVerificationForm(guild) {
         return applyArgumentsResult;
       };
       obj2[1] = memo1(tmp2(tmp3[19]).Button, obj3);
-      items8[2] = memo1(c6, obj2);
+      items8[2] = memo1(closure_6, obj2);
       obj[1] = items8;
-      return _handleSubmit(c6, obj);
+      return _handleSubmit(closure_6, obj);
     }
     const tmp25 = first(obj3.useState(null), 2);
   }

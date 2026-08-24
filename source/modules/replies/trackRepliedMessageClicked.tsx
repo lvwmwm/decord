@@ -1,14 +1,19 @@
-// Module ID: 10838
-// Function ID: 10839
+// Module ID: 10877
+// Function ID: 10878
 // Name: trackRepliedMessageClicked
-// Dependencies: [5013, 676, 9164, 5042, 2]
+// Dependencies: [5018, 676, 9201, 5047, 2]
 // Exports: default
 
-// Module 10838 (trackRepliedMessageClicked)
-import { ReferencedMessageState } from "processMessage";
-import { AnalyticEvents } from "ME";
+// Module 10877 (trackRepliedMessageClicked)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import processMessage from "processMessage" /* 5018 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 5047 */;
+import maybeCreateMessageRecordFromSnapshotDefault from "maybeCreateMessageRecordFromSnapshot" /* 9201 */;
 
-const result = require("maybeCreateMessageRecordFromSnapshot").fileFinishedImporting("modules/replies/trackRepliedMessageClicked.tsx");
+const ReferencedMessageState = processMessage.ReferencedMessageState;
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/replies/trackRepliedMessageClicked.tsx");
 
 export default function trackRepliedMessageClicked(messageReference, state, channel_id) {
   messageReference = messageReference.messageReference;
@@ -19,7 +24,7 @@ export default function trackRepliedMessageClicked(messageReference, state, chan
   let tmp3 = null;
   let tmp4 = null;
   if (state.state === ReferencedMessageState.LOADED) {
-    const tmp9 = importDefault(9164)(state.message);
+    const tmp9 = maybeCreateMessageRecordFromSnapshotDefault(state.message);
     const content = tmp9.content;
     let num;
     if (content != null) {
@@ -32,7 +37,7 @@ export default function trackRepliedMessageClicked(messageReference, state, chan
     tmp4 = tmp9.attachments.length > 0 || tmp9.embeds.length > 0 || tmp9.stickerItems.length > 0 || tmp9.stickers.length > 0;
     const tmp5 = tmp9.attachments.length > 0 || tmp9.embeds.length > 0 || tmp9.stickerItems.length > 0 || tmp9.stickers.length > 0;
   }
-  let obj = require(5042) /* collectGuildAnalyticsMetadata */;
+  let obj = collectGuildAnalyticsMetadata;
   const guild_id = channel_id.guild_id;
   obj = { guild_id, channel_id: channel_id.id, reply_message_id: messageReference.id, replied_message_id: message_id, replied_message_is_loaded: state.state === ReferencedMessageState.LOADED, replied_message_has_media: tmp4, replied_message_length: tmp3 };
   obj.trackWithMetadata(AnalyticEvents.REPLIED_MESSAGE_CLICKED, obj);

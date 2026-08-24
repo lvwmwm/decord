@@ -1,37 +1,31 @@
-// Module ID: 16441
-// Function ID: 16442
+// Module ID: 16536
+// Function ID: 16537
 // Name: linkFromAppsFlyer
-// Dependencies: [32, 5, 16442, 16492, 17, 16512, 1995, 1979, 7383, 5053, 16513, 676, 9, 3, 17111, 5086, 17112, 10970, 589, 705, 1210, 17114, 13558, 500, 10, 17115, 8714, 709, 17116, 5066, 1208, 17117, 17118, 11579, 595, 698, 502, 1971, 8451, 2006, 1274, 17119, 2007, 8671, 17121, 13766, 5420, 17139, 17140, 17141, 9084, 5082, 5067, 4231, 1302, 4662, 1367, 13814, 16176, 16177, 707, 13555, 5052, 13819, 13832, 5383, 17142, 6377, 5054, 5067, 2]
+// Dependencies: [32, 5, 16537, 16587, 17, 16607, 1996, 1980, 7421, 5058, 16608, 676, 9, 3, 17205, 5091, 17206, 11009, 589, 705, 1210, 17208, 13616, 500, 10, 17209, 8751, 709, 17210, 5071, 1208, 17211, 17212, 11628, 595, 698, 502, 1972, 8490, 2007, 1274, 17213, 2008, 8708, 17215, 13824, 5425, 17233, 17234, 17235, 9121, 5087, 5072, 4235, 1302, 4669, 1367, 13872, 16273, 16274, 707, 13613, 5057, 13877, 13890, 5388, 17236, 6408, 5059, 5072, 2]
 // Exports: init, initHeadlessTask
 
-// Module 16441 (linkFromAppsFlyer)
-import receiveLocalNotification from "receiveLocalNotification";
-import closure_5 from "timestamp";
-import module_16442 from "module_16442";
-import isAnalyticsEndpoint from "isAnalyticsEndpoint";
-import get_ActivityIndicator from "BundleUpdaterManager";
-import timestamp from "timestamp";
-import { subscribeToIntlLoadingSuccess as closure_11 } from "_setAppLocale";
-import handleConnectionOpen from "handleConnectionOpen";
-import getState from "getState";
-import result from "result";
-import module_16513 from "module_16513";
-import ME from "ME";
-import { loadImports } from "result";
-import { loadIndex } from "result";
+// Module 16536 (linkFromAppsFlyer)
+import timestampDefault from "timestamp" /* 3 */;
+import serializeDefault from "serialize" /* 9 */;
+import enforcingDefault from "enforcing" /* 502 */;
+import Storage4 from "Storage" /* 595 */;
+import setSecondaryTokenAll from "setSecondaryToken" /* 707 */;
+import _modDef1208 from "module_1208" /* 1208 */;
+import databaseNameDefault from "databaseName" /* 1972 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "asyncGeneratorStep" /* 5 */;
+import module_16537 from "module_16537" /* 16537 */;
+import isAnalyticsEndpoint from "isAnalyticsEndpoint" /* 16587 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import timestamp from "timestamp" /* 16607 */;
+import { subscribeToIntlLoadingSuccess as closure_11 } from "_setAppLocale" /* 1996 */;
+import closure_12 from "handleConnectionOpen" /* 1980 */;
+import closure_13 from "getState" /* 7421 */;
+import result from "result" /* 5058 */;
+import module_16608 from "module_16608" /* 16608 */;
+import ME from "ME" /* 676 */;
 
-let c10;
-let c9;
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_18;
-let closure_19;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function linkFromAppsFlyer(arg0) {
   try {
     const _URL = URL;
@@ -39,10 +33,10 @@ function linkFromAppsFlyer(arg0) {
     const searchParams = uRL.searchParams;
     return "true" === searchParams.get("fromAppsFlyer");
   } catch (tmp8) {
-    const obj = { url: null, error: null };
+    obj = { url: null, error: null };
     obj[0] = tmp;
     obj[1] = tmp8;
-    tmp10.error("Failed to parse URL in linkFromAppsFlyer", obj);
+    closure_20.error("Failed to parse URL in linkFromAppsFlyer", obj);
     return false;
   }
 }
@@ -61,11 +55,11 @@ function _getInitialURLs() {
   const tmp = callback(function*() {
     let arr = tmp2;
     arr = [];
-    const DeepLinkManager = outer1_10.DeepLinkManager;
+    const DeepLinkManager = closure_1_10.DeepLinkManager;
     yield DeepLinkManager.getInitialURL();
     if (1 === tmp5) {
       if (arg0 === 1) {
-        let dependencyMap = 3;
+        dependencyMap = 3;
         throw arg1;
       } else if (arg0 === 2) {
         dependencyMap = 3;
@@ -73,17 +67,17 @@ function _getInitialURLs() {
         obj2[0] = arg1;
         return obj2;
       } else {
-        let closure_1 = arg1;
+        closure_1 = arg1;
         if (null != closure_1) {
           if (null != closure_1.url) {
             if (callback(closure_1.url)) {
-              let push = arr(17111).DeeplinkSource;
+              let push = arr(17205).DeeplinkSource;
               if (closure_1.isDeferred) {
                 let AppsFlyer = push.AppsFlyerDeferred;
               } else {
                 AppsFlyer = push.AppsFlyer;
               }
-              let c2 = AppsFlyer;
+              c2 = AppsFlyer;
               push = arr.push;
               const obj3 = { url: null, source: null };
               obj3[0] = closure_1.url;
@@ -92,7 +86,7 @@ function _getInitialURLs() {
             } else {
               const obj4 = { url: null, source: null };
               obj4[0] = closure_1.url;
-              obj4[1] = arr(17111).DeeplinkSource.OS;
+              obj4[1] = arr(17205).DeeplinkSource.OS;
               arr = arr.push(obj4);
               dependencyMap = 3;
             }
@@ -112,13 +106,13 @@ function _getInitialURLs() {
       if (null != dependencyMap) {
         const obj6 = { url: null, source: null };
         obj6[0] = dependencyMap;
-        obj6[1] = arr(17111).DeeplinkSource.ReactNativeLinking;
+        obj6[1] = arr(17205).DeeplinkSource.ReactNativeLinking;
         arr.push(obj6);
       }
     }
     return arg1;
   });
-  const _getInitialURLs = tmp;
+  closure_24 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -143,7 +137,7 @@ function sharedInit() {
       arr = arr2.push(getData);
     }
   }
-  let obj = importDefault(handleNotification[17]);
+  obj = importDefault(handleNotification[17]);
   let result = obj.setupOTAAssetFallback();
   const Emitter = importDefault(handleNotification[18]).Emitter;
   const result1 = Emitter.injectBatchEmitChanges(_require(handleNotification[19]).batchUpdates);
@@ -160,13 +154,13 @@ function sharedInit() {
     }
     if (!isAndroidResult) {
       promise.then(() => {
-        outer1_20.log("Handling URL: " + url);
-        let obj = outer1_1(outer1_3[24]);
+        closure_1_20.log("Handling URL: " + url);
+        obj = closure_1_1(closure_1_3[24]);
         obj.mark("\u2757", "Handle URL " + url);
         obj = { url, source: null };
-        const DeeplinkSource = url(outer1_3[14]).DeeplinkSource;
-        obj[1] = outer1_22(url) ? DeeplinkSource.AppsFlyer : DeeplinkSource.OS;
-        outer1_1(outer1_3[15])("handleURL", () => callback(table[16])).default(obj, false);
+        const DeeplinkSource = url(closure_1_3[14]).DeeplinkSource;
+        obj[1] = closure_1_22(url) ? DeeplinkSource.AppsFlyer : DeeplinkSource.OS;
+        closure_1_1(closure_1_3[15])("handleURL", () => callback(table[16])).default(obj, false);
       });
     }
   });
@@ -179,7 +173,7 @@ function sharedInit() {
       const _HermesInternal = HermesInternal;
       closure_20.verbose("Get initial downloaded bundle " + versionRequired.versionRequired);
       arr(handleNotification[25]).prepareUpdate(versionRequired.versionRequired);
-      const obj = arr(handleNotification[25]);
+      obj = arr(handleNotification[25]);
     }
   });
   const obj3 = importDefault(handleNotification[17]);
@@ -196,7 +190,7 @@ function sharedInit() {
     for (const item10010 of metrics) {
       let tmp2 = arr;
       let tmp3 = handleNotification;
-      let obj = arr(handleNotification[17]);
+      obj = arr(handleNotification[17]);
       let emitOtaMetricResult = obj.emitOtaMetric(item10010);
       continue;
     }
@@ -208,7 +202,7 @@ function sharedInit() {
     for (const item10010 of metrics) {
       let tmp2 = arr;
       let tmp3 = handleNotification;
-      let obj = arr(handleNotification[17]);
+      obj = arr(handleNotification[17]);
       let emitOtaMetricResult = obj.emitOtaMetric(item10010);
       continue;
     }
@@ -233,7 +227,7 @@ function sharedInit() {
   const listener3 = obj8.addEventListener("change", (arg0) => {
     const appStateChangeStart = arr(handleNotification[12]).imports.appStateChangeStart;
     appStateChangeStart.record();
-    let obj = arr(handleNotification[24]);
+    obj = arr(handleNotification[24]);
     obj.resumeTracing();
     obj = { message: "App state changed to " + arg0, category: "appState" };
     arr(handleNotification[30]).addBreadcrumb(obj);
@@ -254,12 +248,12 @@ function sharedInit() {
   }
   _require = false;
   importDefault = [];
-  let closure_2 = [];
+  closure_2 = [];
   let tmpResult = tmp(tmp2[33]);
   const result3 = tmpResult.addNotificationEventListener("notification", (arg0) => {
-    const state = outer1_13.getState();
-    outer1_20.log("Push notification received, the app state is " + state);
-    if (state !== outer1_14.ACTIVE) {
+    const state = closure_1_13.getState();
+    closure_1_20.log("Push notification received, the app state is " + state);
+    if (state !== closure_1_14.ACTIVE) {
       if (c0) {
         arr(handleNotification[15])("receiveNotification", () => callback(table[31])).default(arg0, false);
         arr(handleNotification[12]).extraProperties.tapped_notification = true;
@@ -272,7 +266,7 @@ function sharedInit() {
   const result4 = tmpResult.addNotificationEventListener("localNotification", handleLocalNotification);
   obj = {
     onStorageInitialize(arg0) {
-      let c0 = true;
+      c0 = true;
       const item = arr.forEach(handleNotification);
       const item1 = arr2.forEach(handleLocalNotification);
       arr.length = 0;
@@ -291,11 +285,11 @@ function _trackFirstLaunched() {
       if (arg0 === 1) {
         throw arg1;
       } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
+        obj = { value: null, done: true };
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -310,22 +304,22 @@ function _trackFirstLaunched() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_2 = tmp2;
-            const Storage2 = outer1_0(outer1_3[34]).Storage;
-            if (Storage2.get(outer1_15.APP_FIRST_LAUNCHED, true)) {
-              const tmp18 = outer1_1(outer1_3[35]);
+            closure_2 = tmp2;
+            const Storage2 = closure_1_0(closure_1_3[34]).Storage;
+            if (Storage2.get(closure_1_15.APP_FIRST_LAUNCHED, true)) {
+              const tmp18 = closure_1_1(closure_1_3[35]);
               const table = tmp18;
               const track = tmp18.track;
-              const APP_FIRST_LAUNCHED = outer1_15.APP_FIRST_LAUNCHED;
-              const obj1 = {};
-              let obj2 = outer1_0(outer1_3[23]);
+              const APP_FIRST_LAUNCHED = closure_1_15.APP_FIRST_LAUNCHED;
+              obj1 = {};
+              let obj2 = closure_1_0(closure_1_3[23]);
               if (obj2.isAndroid()) {
                 let IOS = tmp22.ANDROID;
               } else {
                 IOS = tmp22.IOS;
               }
               obj1.platform = IOS;
-              const InstallReferrer = outer1_10.InstallReferrer;
+              const InstallReferrer = closure_1_10.InstallReferrer;
               let value;
               if (InstallReferrer != null) {
                 value = InstallReferrer.get();
@@ -358,7 +352,7 @@ function _trackFirstLaunched() {
       }
     }
   });
-  const _trackFirstLaunched = tmp;
+  closure_27 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -381,22 +375,22 @@ function _loadStorage() {
   const self = this;
   const tmp = callback(function*() {
     let callback = tmp3;
-    let dependencyMap = 1;
-    const loadStorage2 = outer1_1(9).loadStorage;
+    dependencyMap = 1;
+    const loadStorage2 = closure_1_1(9).loadStorage;
     loadStorage2.recordStart();
-    let Storage = outer1_0(595).Storage;
-    yield Storage.refresh([], outer1_18);
+    let Storage = closure_1_0(595).Storage;
+    yield Storage.refresh([], closure_1_18);
     if (1 === tmp7) {
       dependencyMap = 0;
       callback = closure_2;
       logger.error("Unable to load Storage", callback);
-      let c5 = 3;
+      c5 = 3;
     } else if (arg0 === 1) {
       c5 = 3;
       throw arg1;
     } else if (arg0 !== 2) {
-      let closure_0 = arg1;
-      const loadStorage = callback(9).loadStorage;
+      closure_0 = arg1;
+      loadStorage = callback(9).loadStorage;
       loadStorage.recordEnd();
       const parseStorage = callback(9).parseStorage;
       parseStorage.measureAsync(() => {
@@ -408,7 +402,7 @@ function _loadStorage() {
     dependencyMap = 0;
     return arg1;
   });
-  const _loadStorage = tmp;
+  closure_29 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -419,12 +413,12 @@ function _loadStorage() {
 }
 function loadKvStorage() {
   try {
-    importDefault(1971).initialize();
+    databaseNameDefault.initialize();
     return Promise.resolve();
   } catch (tmp4) {
-    tmp10.warn("DatabaseManager.initialize errored.", tmp4);
-    importDefault(1208).captureException(tmp4);
-    const obj2 = importDefault(1208);
+    closure_20.warn("DatabaseManager.initialize errored.", tmp4);
+    _modDef1208.captureException(tmp4);
+    const obj2 = _modDef1208;
   }
 }
 function initializeIntl() {
@@ -440,9 +434,9 @@ function initializeIntl() {
 function _initializeIntl() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -451,11 +445,11 @@ function _initializeIntl() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -470,7 +464,7 @@ function _initializeIntl() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_2 = tmp2;
+              closure_2 = tmp2;
               let callback = tmp5;
               let log;
               log = log.log;
@@ -485,7 +479,7 @@ function _initializeIntl() {
               throw arg1;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -560,7 +554,7 @@ function _initializeIntl() {
           } else {
             callback2(() => callback());
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp29) {
           c4 = tmp;
@@ -571,7 +565,7 @@ function _initializeIntl() {
     iter.next();
     return iter;
   });
-  const _initializeIntl = tmp;
+  closure_36 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -594,11 +588,11 @@ function _init(_payload) {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -621,83 +615,83 @@ function _init(_payload) {
               v0 = undefined;
               c3 = undefined;
               let lib;
-              let closure_5;
-              let c6;
+              closure_5 = undefined;
+              c6 = undefined;
               let resolved;
-              let c8;
-              let c9;
-              let c10;
-              let c11;
-              let getState;
-              let closure_14;
-              let dependencyMap;
-              let closure_16;
-              let closure_17;
-              let closure_18;
-              let closure_19;
-              throwTypeErrorResult = outer1_34;
-              throwTypeErrorResult = outer1_33;
-              if (outer1_34 !== outer1_33.Full) {
-                throwTypeErrorResult = outer1_34;
-                throwTypeErrorResult = outer1_34 === throwTypeErrorResult.HeadlessRan;
+              c8 = undefined;
+              c9 = undefined;
+              c10 = undefined;
+              c11 = undefined;
+              closure_13 = undefined;
+              closure_14 = undefined;
+              dependencyMap = undefined;
+              closure_16 = undefined;
+              closure_17 = undefined;
+              closure_18 = undefined;
+              closure_19 = undefined;
+              throwTypeErrorResult = Full;
+              throwTypeErrorResult = closure_1_33;
+              if (Full !== closure_1_33.Full) {
+                throwTypeErrorResult = Full;
+                throwTypeErrorResult = Full === throwTypeErrorResult.HeadlessRan;
                 callback = throwTypeErrorResult;
-                outer1_34 = throwTypeErrorResult.Full;
+                Full = throwTypeErrorResult.Full;
                 onStorageInitialize = throwTypeErrorResult;
                 if (!throwTypeErrorResult) {
-                  throwTypeErrorResult = outer1_26;
-                  onStorageInitialize = outer1_26().onStorageInitialize;
+                  throwTypeErrorResult = closure_1_26;
+                  onStorageInitialize = closure_1_26().onStorageInitialize;
                 }
-                throwTypeErrorResult = outer1_0;
+                throwTypeErrorResult = closure_1_0;
                 throwTypeErrorResult = c3;
-                throwTypeErrorResult = outer1_0;
+                throwTypeErrorResult = closure_1_0;
                 throwTypeErrorResult = c3;
-                throwTypeErrorResult = outer1_0(500).isAndroid();
-                let _Promise6 = outer1_0(8671);
+                throwTypeErrorResult = closure_1_0(500).isAndroid();
+                let _Promise6 = closure_1_0(8708);
                 if (throwTypeErrorResult) {
                   throwTypeErrorResult = _Promise6.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
                 } else {
                   throwTypeErrorResult = _Promise6.lockOrientationForiOS();
                 }
-                throwTypeErrorResult = outer1_1;
+                throwTypeErrorResult = closure_1_1;
                 throwTypeErrorResult = c3;
-                throwTypeErrorResult = outer1_6;
-                throwTypeErrorResult = outer1_14;
-                outer1_1(9).didBackgroundApp = outer1_6.currentState === outer1_14.BACKGROUND;
-                throwTypeErrorResult = outer1_1;
+                throwTypeErrorResult = closure_6;
+                throwTypeErrorResult = closure_1_14;
+                closure_1_1(9).didBackgroundApp = closure_6.currentState === closure_1_14.BACKGROUND;
+                throwTypeErrorResult = closure_1_1;
                 throwTypeErrorResult = c3;
-                const loadStorageStart = outer1_1(9).imports.loadStorageStart;
+                const loadStorageStart = closure_1_1(9).imports.loadStorageStart;
                 throwTypeErrorResult = loadStorageStart.record();
                 throwTypeErrorResult = globalThis;
                 _Promise6 = Promise;
-                throwTypeErrorResult = outer1_23;
-                const items = [outer1_23(), , , , ];
-                throwTypeErrorResult = outer1_1;
+                throwTypeErrorResult = closure_1_23;
+                const items = [closure_1_23(), , , , ];
+                throwTypeErrorResult = closure_1_1;
                 throwTypeErrorResult = c3;
-                const obj14 = outer1_0(500);
-                const initialNotification = outer1_1(11579).getInitialNotification();
+                const obj14 = closure_1_0(500);
+                const initialNotification = closure_1_1(11628).getInitialNotification();
                 items[1] = initialNotification.catch(() => null);
-                throwTypeErrorResult = outer1_28;
-                items[2] = outer1_28();
-                throwTypeErrorResult = outer1_30;
-                items[3] = outer1_30();
-                throwTypeErrorResult = outer1_0;
+                throwTypeErrorResult = closure_1_28;
+                items[2] = closure_1_28();
+                throwTypeErrorResult = closure_1_30;
+                items[3] = closure_1_30();
+                throwTypeErrorResult = closure_1_0;
                 throwTypeErrorResult = c3;
-                num2 = outer1_0(2007);
+                num2 = closure_1_0(2008);
                 throwTypeErrorResult = c3;
                 throwTypeErrorResult = c3;
-                const obj15 = outer1_1(11579);
-                throwTypeErrorResult = num2(17121, c3.paths).then((arg0) => arg0.default());
+                const obj15 = closure_1_1(11628);
+                throwTypeErrorResult = num2(17215, c3.paths).then((arg0) => arg0.default());
                 items[4] = throwTypeErrorResult;
                 throwTypeErrorResult = Promise.all(items);
                 v0 = 1;
                 c3 = 1;
-                const num2Result = num2(17121, c3.paths);
+                const num2Result = num2(17215, c3.paths);
               } else {
-                throwTypeErrorResult = outer1_1;
+                throwTypeErrorResult = closure_1_1;
                 throwTypeErrorResult = c3;
-                throwTypeErrorResult = outer1_1(1208).addBreadcrumb({ message: "Init called when already initialized" });
+                throwTypeErrorResult = closure_1_1(1208).addBreadcrumb({ message: "Init called when already initialized" });
                 c3 = 3;
-                const obj13 = outer1_1(1208);
+                const obj13 = closure_1_1(1208);
               }
             }
           } else {
@@ -707,7 +701,7 @@ function _init(_payload) {
                 throw arg1;
               } else if (arg0 === 2) {
                 c3 = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -728,17 +722,17 @@ function _init(_payload) {
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = c3;
                 if (obj18.isAndroid()) {
-                  if (callback(13766).isTTITest) {
+                  if (callback(13824).isTTITest) {
                     throwTypeErrorResult = callback;
                     throwTypeErrorResult = onStorageInitialize;
-                    throwTypeErrorResult = outer1_0;
+                    throwTypeErrorResult = closure_1_0;
                     throwTypeErrorResult = c3;
-                    outer1_6 = outer1_0(5420).default;
-                    throwTypeErrorResult = outer1_6;
+                    closure_6 = closure_1_0(5425).default;
+                    throwTypeErrorResult = closure_6;
                     v0 = 2;
                     c3 = 1;
                     let obj2 = { value: null, done: false };
-                    obj2[0] = outer1_6.yieldConfig();
+                    obj2[0] = closure_6.yieldConfig();
                     return obj2;
                   }
                 }
@@ -769,9 +763,9 @@ function _init(_payload) {
               throwTypeErrorResult = dependencyMap;
               closure_16 = 5.default;
               throwTypeErrorResult = dependencyMap;
-              closure_17 = 16442.default;
+              closure_17 = 16537.default;
               throwTypeErrorResult = dependencyMap;
-              closure_18 = 16492.default;
+              closure_18 = 16587.default;
               throwTypeErrorResult = dependencyMap;
               closure_19 = 17;
               throwTypeErrorResult = closure_16;
@@ -788,14 +782,14 @@ function _init(_payload) {
               if (!callback) {
                 closure_19.init();
               }
-              callback(6377);
-              obj = callback(5054);
+              callback(6408);
+              obj = callback(5059);
               const sessionHeartbeatScheduler = obj.initSessionHeartbeatScheduler();
             }
             if (callback) {
               resolved = Promise.resolve();
             } else {
-              resolved = callback2({ log: true });
+              resolved = callback3({ log: true });
             }
             obj3 = onStorageInitialize(10);
             obj3.markAndLog(logger, "\u{1F3C3}", "The initial promise has resolved");
@@ -826,46 +820,46 @@ function _init(_payload) {
               return applyArgumentsResult;
             })();
             if (!callback) {
-              outer1_40();
+              closure_1_40();
               if (onStorageInitialize != null) {
                 onStorageInitialize();
               }
             }
-            outer1_1(5086)("DispatcherBridge", () => {
+            closure_1_1(5091)("DispatcherBridge", () => {
               _undefined(paths[47]);
             });
             if (callback) {
-              let obj5 = outer1_1(10);
-              obj5.markAndLog(outer1_20, "\u{1F3C3}", "Flux already initialized.");
+              let obj5 = closure_1_1(10);
+              obj5.markAndLog(closure_1_20, "\u{1F3C3}", "Flux already initialized.");
             } else {
-              let obj4 = outer1_1(10);
+              let obj4 = closure_1_1(10);
               obj4.time("\u{1F3C3}", "Flux.initialize()", () => {
                 onStorageInitialize(paths[18]).initialize();
                 closure_20.verbose("Flux has initialized");
               });
             }
-            outer1_1(17140)();
-            const result1 = outer1_0(17141).setupLibdiscoreTimersMonitor();
-            const item = outer1_4.forEach((url) => {
+            closure_1_1(17234)();
+            const result1 = closure_1_0(17235).setupLibdiscoreTimersMonitor();
+            const item = closure_1_4.forEach((url) => {
               url = url.url;
               onStorageInitialize(paths[15])("handleURL", () => callback(table[16])).default(url, true);
             });
-            let outer1_8 = false;
-            if (null != outer1_5) {
-              const outer1_9 = outer1_1(5086)("receiveNotification", () => _undefined(paths[31])).default;
-              outer1_1(9).extraProperties.tapped_notification = true;
-              throwTypeErrorResult = outer1_9;
-              throwTypeErrorResult = outer1_5;
-              outer1_8 = outer1_9(outer1_5, true);
+            closure_8 = false;
+            if (null != closure_1_5) {
+              const callback2 = closure_1_1(5091)("receiveNotification", () => _undefined(paths[31])).default;
+              closure_1_1(9).extraProperties.tapped_notification = true;
+              throwTypeErrorResult = callback2;
+              throwTypeErrorResult = closure_1_5;
+              closure_8 = callback2(closure_1_5, true);
             }
             throwTypeErrorResult = callback;
-            throwTypeErrorResult = outer1_8;
-            if (!outer1_8) {
+            throwTypeErrorResult = closure_8;
+            if (!closure_8) {
               throwTypeErrorResult = onStorageInitialize;
-              throwTypeErrorResult = outer1_12;
-              const outer1_10 = outer1_12.getChannelId();
-              throwTypeErrorResult = outer1_10;
-              if (null != outer1_10) {
+              throwTypeErrorResult = _null;
+              const channelId = _null.getChannelId();
+              throwTypeErrorResult = channelId;
+              if (null != channelId) {
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = onStorageInitialize;
                 throwTypeErrorResult = onStorageInitialize;
@@ -875,36 +869,35 @@ function _init(_payload) {
                 obj4[0] = c10;
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = c3;
-                obj4[3] = callback(5082).INITIAL_MESSAGE_FETCH_KEY;
-                throwTypeErrorResult = onStorageInitialize(9084).fetchMessages(obj4);
-                const obj8 = onStorageInitialize(9084);
+                obj4[3] = callback(5087).INITIAL_MESSAGE_FETCH_KEY;
+                throwTypeErrorResult = onStorageInitialize(9121).fetchMessages(obj4);
+                const obj8 = onStorageInitialize(9121);
               }
             }
             throwTypeErrorResult = callback;
             throwTypeErrorResult = onStorageInitialize;
-            throwTypeErrorResult = outer1_1;
+            throwTypeErrorResult = closure_1_1;
             throwTypeErrorResult = c3;
-            const loadMiniCacheStart = outer1_1(9).imports.loadMiniCacheStart;
+            const loadMiniCacheStart = closure_1_1(9).imports.loadMiniCacheStart;
             throwTypeErrorResult = loadMiniCacheStart.record();
             let items2 = globalThis;
             throwTypeErrorResult = new.target;
             throwTypeErrorResult = new.target;
             throwTypeErrorResult = new Promise((arg0) => {
               const _undefined = arg0;
-              _undefined(paths[42])(paths[52], paths.paths).then((arg0) => arg0.default.loadCacheAsync(outer1_4(callback(outer1_3[53]).computeInitialNavigationState(), 1)[0], () => {
-                outer1_0(outer1_3[57]).updateSaturation(outer1_0(outer1_3[55]).default.saturation);
-                const obj = outer1_0(outer1_3[57]);
-                outer1_0(outer1_3[58]).updateVisualRefresh(outer1_0(outer1_3[56]).isMobileVisualRefreshEnabled("NativeAppStartup"));
-                const obj2 = outer1_0(outer1_3[58]);
-                outer1_0(outer1_3[59]).updateTheme(outer1_0(outer1_3[54]).default.theme);
+              _undefined(paths[42])(paths[52], paths.paths).then((arg0) => arg0.default.loadCacheAsync(closure_1_4(callback(closure_1_3[53]).computeInitialNavigationState(), 1)[0], () => {
+                closure_1_0(closure_1_3[57]).updateSaturation(closure_1_0(closure_1_3[55]).default.saturation);
+                obj = closure_1_0(closure_1_3[57]);
+                closure_1_0(closure_1_3[58]).updateVisualRefresh(closure_1_0(closure_1_3[56]).isMobileVisualRefreshEnabled("NativeAppStartup"));
+                const obj2 = closure_1_0(closure_1_3[58]);
+                closure_1_0(closure_1_3[59]).updateTheme(closure_1_0(closure_1_3[54]).default.theme);
                 callback();
               }));
             });
-            const outer1_11 = throwTypeErrorResult;
-            outer1_12 = null;
+            _null = null;
             throwTypeErrorResult = v0;
             throwTypeErrorResult = c3;
-            const obj7 = outer1_0(17141);
+            const obj7 = closure_1_0(17235);
             if (null != obj10.getToken()) {
               throwTypeErrorResult = callback;
               items2.Promise.resolve();
@@ -912,52 +905,51 @@ function _init(_payload) {
             } else {
               throwTypeErrorResult = callback;
               throwTypeErrorResult = onStorageInitialize;
-              throwTypeErrorResult = outer1_0;
+              throwTypeErrorResult = closure_1_0;
               throwTypeErrorResult = c3;
-              getState = outer1_0(13555);
-              throwTypeErrorResult = getState;
-              throwTypeErrorResult = getState.beginLoadedExperimentsTimeout();
-              throwTypeErrorResult = getState;
-              getState.getPromise();
+              closure_13 = closure_1_0(13613);
+              throwTypeErrorResult = closure_13;
+              throwTypeErrorResult = closure_13.beginLoadedExperimentsTimeout();
+              throwTypeErrorResult = closure_13;
+              closure_13.getPromise();
             }
             throwTypeErrorResult = callback;
             throwTypeErrorResult = onStorageInitialize;
-            throwTypeErrorResult = outer1_11;
-            const items1 = [outer1_11, ];
-            throwTypeErrorResult = outer1_12;
-            items1[1] = outer1_12;
+            const items1 = [throwTypeErrorResult, ];
+            throwTypeErrorResult = _null;
+            items1[1] = _null;
             const _Promise4 = items2.Promise;
             obj10 = v0(707);
             throwTypeErrorResult = items2.Promise.all(items1).then(() => {
               closure_32.resolve();
             });
-            throwTypeErrorResult = outer1_0;
+            throwTypeErrorResult = closure_1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2 = [outer1_0(2007)(5052, c3.paths), , , , , ];
-            throwTypeErrorResult = outer1_0;
+            items2 = [closure_1_0(2008)(5057, c3.paths), , , , , ];
+            throwTypeErrorResult = closure_1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[1] = outer1_0(2007)(13819, c3.paths);
-            throwTypeErrorResult = outer1_0;
+            items2[1] = closure_1_0(2008)(13877, c3.paths);
+            throwTypeErrorResult = closure_1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[2] = outer1_0(2007)(13832, c3.paths);
-            throwTypeErrorResult = outer1_0;
+            items2[2] = closure_1_0(2008)(13890, c3.paths);
+            throwTypeErrorResult = closure_1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[3] = outer1_0(2007)(5383, c3.paths);
-            throwTypeErrorResult = outer1_0;
+            items2[3] = closure_1_0(2008)(5388, c3.paths);
+            throwTypeErrorResult = closure_1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[4] = outer1_0(2007)(17142, c3.paths);
-            throwTypeErrorResult = outer1_7;
-            items2[5] = outer1_7;
+            items2[4] = closure_1_0(2008)(17236, c3.paths);
+            throwTypeErrorResult = closure_1_7;
+            items2[5] = closure_1_7;
             throwTypeErrorResult = items2.Promise.all(items2);
             v0 = 3;
             c3 = 1;
@@ -975,7 +967,7 @@ function _init(_payload) {
       }
     }
   });
-  const _init = tmp;
+  closure_38 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -994,11 +986,11 @@ function _initHeadlessTask() {
       if (arg0 === 1) {
         throw arg1;
       } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
+        obj = { value: null, done: true };
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1017,13 +1009,13 @@ function _initHeadlessTask() {
             let onStorageInitialize = tmp2;
             onStorageInitialize = undefined;
             callback = undefined;
-            if (outer1_34 === outer1_33.None) {
-              outer1_34 = outer1_33.HeadlessRan;
-              onStorageInitialize = outer1_26().onStorageInitialize;
-              const items = [outer1_28(), outer1_30(), outer1_35({ log: false })];
+            if (HeadlessRan === closure_1_33.None) {
+              HeadlessRan = closure_1_33.HeadlessRan;
+              onStorageInitialize = closure_1_26().onStorageInitialize;
+              const items = [closure_1_28(), closure_1_30(), closure_1_35({ log: false })];
               c2 = 1;
               c3 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = Promise.all(items);
               return obj1;
             } else {
@@ -1077,7 +1069,7 @@ function _initHeadlessTask() {
       }
     }
   });
-  const _initHeadlessTask = tmp;
+  closure_39 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -1087,51 +1079,53 @@ function _initHeadlessTask() {
   return applyArgumentsResult;
 }
 function initializeTokenStorage() {
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage4.Storage;
   if (null == Storage.get(closure_17)) {
     if (tmpResult.isAndroid()) {
-      let token = importDefault(502).getConstants().token;
-      const obj3 = importDefault(502);
+      let token = enforcingDefault.getConstants().token;
+      const obj3 = enforcingDefault;
     } else {
       token = closure_10.DCDFastConnectManager.token;
     }
     if (null != token) {
-      tmp10.log("Applying token storage fix.");
+      closure_20.log("Applying token storage fix.");
       const Storage2 = tmp(595).Storage;
       const result = Storage2.set(tmp3, token);
-      let obj = tmp10;
+      obj = closure_20;
     } else {
-      tmp10.log("Cannot apply token storage fix as token not in NSUserDefaults.");
-      obj = tmp10;
+      closure_20.log("Cannot apply token storage fix as token not in NSUserDefaults.");
+      obj = closure_20;
     }
     tmpResult = tmp(500);
   } else {
-    obj = tmp10;
-    tmp10.verbose("No need to apply token storage fix as token already exists.");
+    obj = closure_20;
+    closure_20.verbose("No need to apply token storage fix as token already exists.");
   }
-  importAll(707).init();
-  const obj4 = importAll(707);
-  const obj5 = importAll(707);
+  setSecondaryTokenAll.init();
+  const obj4 = setSecondaryTokenAll;
+  const obj5 = setSecondaryTokenAll;
   const Storage3 = tmp(595).Storage;
-  obj = { storageHasToken: null != Storage3.get(tmp3), tokenManagerHasToken: null != importAll(707).getToken() };
+  obj = { storageHasToken: null != Storage3.get(tmp3), tokenManagerHasToken: null != setSecondaryTokenAll.getToken() };
   obj.verbose("Token manager has initialized", obj);
   callback2();
 }
-({ AppState: closure_6, NativeEventEmitter: error, Linking: metroImportAll, LogBox: c9, NativeModules: c10 } = get_ActivityIndicator);
+({ AppState: closure_6, NativeEventEmitter: error, Linking: closure_8, LogBox: c9, NativeModules: c10 } = get_ActivityIndicator);
 ({ AppStates: closure_14, AnalyticEvents: closure_15, FIRST_RUN_DATE_KEY: closure_16, TOKEN_KEY: closure_17, STORAGE_SECURE_KEYS: closure_18, Platforms: closure_19 } = ME);
+const loadImports = serializeDefault.loadImports;
 loadImports.recordEnd();
-let closure_20 = new require("isAnalyticsEndpoint")("index.native.tsx");
+let closure_20 = new timestampDefault("index.native.tsx");
 let c21 = false;
 let c25 = null;
 const future = new require("Future").Future();
 let obj = { None: 0, [0]: "None", HeadlessRan: 1, [1]: "HeadlessRan", Full: 2, [2]: "Full" };
 const None = obj.None;
 const promise = new Promise((arg0) => {
-  let closure_31 = arg0;
+  closure_31 = arg0;
 });
+const loadIndex = serializeDefault.loadIndex;
 loadIndex.recordEnd();
-const tmp10 = new require("isAnalyticsEndpoint")("index.native.tsx");
-result = require("module_16442").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
+const tmp10 = new timestampDefault("index.native.tsx");
+result = require("set").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
 
 export const applicationReady = future;
 export const init = function init() {

@@ -4,8 +4,12 @@
 // Dependencies: [793, 616, 795]
 
 // Module 792 (getAllKeys)
+import keys from "keys" /* 616 */;
+import baseGetAllKeys from "baseGetAllKeys" /* 793 */;
+import getOwnPropertySymbols from "getOwnPropertySymbols" /* 795 */;
+
 
 export default function getAllKeys(arg0) {
-  const tmp = require(793) /* baseGetAllKeys */;
-  return tmp(arg0, require(616) /* keys */, require(795) /* getOwnPropertySymbols */);
+  const tmp = baseGetAllKeys;
+  return tmp(arg0, keys, getOwnPropertySymbols);
 };

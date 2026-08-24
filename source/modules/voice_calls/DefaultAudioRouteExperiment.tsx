@@ -1,14 +1,15 @@
-// Module ID: 16339
-// Function ID: 16340
+// Module ID: 16434
+// Function ID: 16435
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 16339 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 16434 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null, 2: { defaultSpeakerForGuildCall: true, defaultSpeakerForDMCall: false } };
 obj[2] = { defaultSpeakerForGuildCall: true, defaultSpeakerForDMCall: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-default-audio-route", kind: "user", defaultConfig: { defaultSpeakerForGuildCall: false, defaultSpeakerForDMCall: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/voice_calls/DefaultAudioRouteExperiment.tsx");
+const result = set.fileFinishedImporting("modules/voice_calls/DefaultAudioRouteExperiment.tsx");
 
 export default apexExperiment;

@@ -1,11 +1,14 @@
-// Module ID: 9922
-// Function ID: 9923
+// Module ID: 9961
+// Function ID: 9962
 // Name: ChannelDetailsNavigatorScreens
-// Dependencies: [8507, 2]
+// Dependencies: [8546, 2]
 
-// Module 9922 (ChannelDetailsNavigatorScreens)
-const sum = require("MessageEmbedTypes").SEARCH_BAR_HEIGHT + 40;
-const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsConstants.tsx");
+// Module 9961 (ChannelDetailsNavigatorScreens)
+import set from "set" /* 2 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
+
+const sum = MessageEmbedTypes.SEARCH_BAR_HEIGHT + 40;
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsConstants.tsx");
 
 export const ChannelDetailsNavigatorScreens = { DETAILS: "root", MUTE: "mute", THREADS: "threads", SETTINGS: "settings", PINNED_MESSAGES: "pinned-messages" };
 export const ChannelDetailsButtonTypes = { SEARCH: "search", MUTE: "mute", THREADS: "threads", SETTINGS: "settings", MORE: "more" };

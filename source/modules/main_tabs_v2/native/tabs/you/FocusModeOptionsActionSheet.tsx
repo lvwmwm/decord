@@ -1,80 +1,81 @@
-// Module ID: 15639
-// Function ID: 15640
+// Module ID: 15707
+// Function ID: 15708
 // Name: label
-// Dependencies: [19, 21, 687, 1236, 10024, 7175, 6286, 6291, 2]
+// Dependencies: [19, 21, 687, 1236, 10063, 7213, 6317, 6322, 2]
 // Exports: default
 
-// Module 15639 (label)
-import "noop";
-import jsxProd from "jsxProd";
+// Module 15707 (label)
+import noopAll from "noop" /* 19 */;
+import setDefault from "set" /* 687 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: obj1, jsxs: c3 } = jsxProd);
 let obj = {
-  duration: 30 * require("set").Millis.MINUTE,
+  duration: 30 * setDefault.Millis.MINUTE,
   label() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.RxJGbL);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.RxJGbL);
   }
 };
 let items = [obj, , , , , ];
 obj = {
-  duration: require("set").Millis.HOUR,
+  duration: setDefault.Millis.HOUR,
   label() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.UMWBZr);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.UMWBZr);
   }
 };
 items[1] = obj;
 obj = {
-  duration: 3 * require("set").Millis.HOUR,
+  duration: 3 * setDefault.Millis.HOUR,
   label() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.QmYWtu);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.QmYWtu);
   }
 };
 items[2] = obj;
 items[3] = {
-  duration: 8 * require("set").Millis.HOUR,
+  duration: 8 * setDefault.Millis.HOUR,
   label() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.EpAXPC);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.EpAXPC);
   }
 };
 obj1 = {
-  duration: 8 * require("set").Millis.HOUR,
+  duration: 8 * setDefault.Millis.HOUR,
   label() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.EpAXPC);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.EpAXPC);
   }
 };
 items[4] = {
-  duration: require("set").Millis.DAY,
+  duration: setDefault.Millis.DAY,
   label() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["755t4q"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["755t4q"]);
   }
 };
 const obj3 = { duration: "Array", label: 0 };
 obj3[1] = function label() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  return intl.string(require(1236) /* getSystemLocale */.t["46dqJY"]);
+  const intl = getSystemLocale.intl;
+  return intl.string(getSystemLocale.t["46dqJY"]);
 };
 items[5] = obj3;
 const obj2 = {
-  duration: require("set").Millis.DAY,
+  duration: setDefault.Millis.DAY,
   label() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["755t4q"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["755t4q"]);
   }
 };
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/FocusModeOptionsActionSheet.tsx");
 
 export default function FocusModeOptionsActionSheet(onSelect) {
   onSelect = onSelect.onSelect;
-  let obj = onSelect(10024);
+  let obj = onSelect(10063);
   const focusModeEnabled = obj.useFocusModeEnabled();
   obj = { title: null, hasIcons: false, children: null };
   const intl = onSelect(1236).intl;
@@ -91,23 +92,24 @@ export default function FocusModeOptionsActionSheet(onSelect) {
     };
     const intl4 = tmp(1236).intl;
     obj[4] = intl4.string(tmp(1236).t.rk35Gm);
-    tmp4Result = tmp4(tmp(6291).TableRow, obj);
+    tmp4Result = tmp4(tmp(6322).TableRow, obj);
   }
-  const obj1 = { children: null };
-  const items = [tmp4Result, ];
+  obj1 = { children: null };
+  items = [tmp4Result, ];
   items[1] = items.map((duration) => {
     duration = duration.duration;
     const label = duration.label;
-    const obj = { accessibilityLabel: null, accessibilityHint: null, onPress: null, trailing: null, label: null };
-    obj[0] = label();
-    obj[1] = label();
-    obj[2] = function onPress() {
-      duration(true, duration);
-    };
-    obj[4] = label();
-    return outer1_2(onSelect(outer1_1[7]).TableRow, obj, "" + duration);
+    return closure_1_2(onSelect(closure_1_1[7]).TableRow, {
+      accessibilityLabel: label(),
+      accessibilityHint: label(),
+      onPress() {
+        duration(true, duration);
+      },
+      trailing: null,
+      label: label()
+    }, "" + duration);
   });
   obj[2] = items;
-  obj1[0] = closure_3(onSelect(6286).TableRowGroup, obj);
-  return closure_2(onSelect(7175).ActionSheet, obj1);
+  obj1[0] = closure_3(onSelect(6317).TableRowGroup, obj);
+  return closure_2(onSelect(7213).ActionSheet, obj1);
 };

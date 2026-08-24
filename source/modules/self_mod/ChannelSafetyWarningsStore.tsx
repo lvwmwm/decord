@@ -1,15 +1,17 @@
-// Module ID: 9921
-// Function ID: 9922
+// Module ID: 9960
+// Function ID: 9961
 // Name: handleConnectionOpen
 // Dependencies: [1391, 687, 589, 709, 2]
 
-// Module 9921 (handleConnectionOpen)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { Store } from "initialize";
-import set from "initialize";
+// Module 9960 (handleConnectionOpen)
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "ensureGuildLoaded" /* 1391 */;
+import set from "set" /* 2 */;
 
 function handleConnectionOpen() {
-  let closure_4 = {};
+  closure_4 = {};
   const values = Object.values(mutablePrivateChannels.getMutablePrivateChannels());
   const item = values.forEach((safetyWarnings) => {
     safetyWarnings = safetyWarnings.safetyWarnings;
@@ -43,34 +45,35 @@ function handleConnectionOpen() {
     }
   });
 }
-let closure_1 = 5 * require("set").Millis.SECOND;
+let closure_1 = 5 * setDefault.Millis.SECOND;
 let obj = { STRANGER_DANGER: 1, [1]: "STRANGER_DANGER", INAPPROPRIATE_CONVERSATION_TIER_1: 2, [2]: "INAPPROPRIATE_CONVERSATION_TIER_1", INAPPROPRIATE_CONVERSATION_TIER_2: 3, [3]: "INAPPROPRIATE_CONVERSATION_TIER_2", LIKELY_ATO: 4, [4]: "LIKELY_ATO" };
 let closure_3 = [];
 let closure_4 = {};
 let set = new Set();
+const Store = initializeDefault.Store;
 class ChannelSafetyWarningsStore extends Store {
 }
 const prototype = ChannelSafetyWarningsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded);
+  this.waitFor(closure_0);
 };
 prototype["getChannelSafetyWarning"] = function getChannelSafetyWarning(c0, c1) {
-  let ensureGuildLoaded = c1;
+  closure_0 = c1;
   let found;
   if (dependencyMap[c0] != null) {
-    found = arr.find((id) => id.id === ensureGuildLoaded);
+    found = arr.find((id) => id.id === closure_0);
   }
   return found;
 };
-prototype["getChannelSafetyWarnings"] = function getChannelSafetyWarnings(ensureGuildLoaded) {
-  let tmp = dependencyMap[ensureGuildLoaded];
+prototype["getChannelSafetyWarnings"] = function getChannelSafetyWarnings(closure_0) {
+  let tmp = dependencyMap[closure_0];
   if (tmp == null) {
     tmp = closure_3;
   }
   return tmp;
 };
-prototype["hasShownInitialTooltipForChannel"] = function hasShownInitialTooltipForChannel(ensureGuildLoaded) {
-  return set.has(ensureGuildLoaded);
+prototype["hasShownInitialTooltipForChannel"] = function hasShownInitialTooltipForChannel(closure_0) {
+  return set.has(closure_0);
 };
 obj = {
   CHANNEL_CREATE: function handleChannelCreate(channel) {
@@ -150,15 +153,12 @@ obj = {
   CONNECTION_OPEN: handleConnectionOpen,
   CONNECTION_OPEN_SUPPLEMENTAL: handleConnectionOpen,
   CHANNEL_SAFETY_WARNING_FEEDBACK: function handleChannelSafetyWarningFeedback(arg0) {
-    let channelId;
-    let ensureGuildLoaded;
-    let closure_1;
-    ({ channelId, warningId: ensureGuildLoaded, feedbackType: closure_1 } = arg0);
+    ({ channelId, warningId: closure_0, feedbackType: closure_1 } = arg0);
     if (null != dependencyMap[channelId]) {
       dependencyMap[channelId] = arr.map((id) => {
         let tmp = id;
-        if (id.id === ensureGuildLoaded) {
-          const obj = {};
+        if (id.id === closure_0) {
+          obj = {};
           const merged = Object.assign(id);
           obj.feedback_type = closure_1;
           tmp = obj;
@@ -172,7 +172,7 @@ obj = {
     set.delete(channelId);
     if (null != dependencyMap[channelId]) {
       dependencyMap[channelId] = arr.map((arg0) => {
-        const obj = {};
+        obj = {};
         const merged = Object.assign(arg0);
         obj.dismiss_timestamp = undefined;
         return obj;
@@ -180,18 +180,16 @@ obj = {
     }
   },
   DISMISS_CHANNEL_SAFETY_WARNINGS: function handleDismissChannelSafetyWarnings(arg0) {
-    let channelId;
-    let ensureGuildLoaded;
-    ({ channelId, warningIds: ensureGuildLoaded } = arg0);
-    let closure_1;
+    ({ channelId, warningIds: closure_0 } = arg0);
+    closure_1 = undefined;
     if (null != dependencyMap[channelId]) {
       const _Date = Date;
       const date = new Date();
       closure_1 = date.toISOString();
       dependencyMap[channelId] = arr.map((id) => {
         let tmp = id;
-        if (ensureGuildLoaded.includes(id.id)) {
-          const obj = {};
+        if (closure_0.includes(id.id)) {
+          obj = {};
           const merged = Object.assign(id);
           obj.dismiss_timestamp = closure_1;
           tmp = obj;
@@ -204,7 +202,7 @@ obj = {
     set.add(channelId.channelId);
   }
 };
-const channelSafetyWarningsStore = new ChannelSafetyWarningsStore(require("dispatcher"), obj);
+const channelSafetyWarningsStore = new ChannelSafetyWarningsStore(dispatcherDefault, obj);
 const result = set.fileFinishedImporting("modules/self_mod/ChannelSafetyWarningsStore.tsx");
 
 export default channelSafetyWarningsStore;

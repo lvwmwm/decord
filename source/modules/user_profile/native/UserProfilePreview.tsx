@@ -1,27 +1,24 @@
-// Module ID: 9284
-// Function ID: 9285
+// Module ID: 9321
+// Function ID: 9322
 // Name: filterLayer
-// Dependencies: [32, 19, 17, 8370, 7186, 21, 4661, 712, 589, 8416, 8970, 8982, 7256, 8979, 8376, 8945, 8384, 8983, 8967, 4104, 8964, 8951, 8987, 9212, 8990, 9285, 9286, 9451, 9548, 9210, 2]
+// Dependencies: [32, 19, 17, 8409, 7224, 21, 4668, 712, 589, 8455, 9007, 9019, 7294, 9016, 8415, 8982, 8423, 9020, 9004, 4107, 9001, 8988, 9024, 9249, 9027, 9322, 9323, 9488, 9585, 9247, 2]
 // Exports: default
 
-// Module 9284 (filterLayer)
-import _slicedToArray from "_slicedToArray";
-import ManaContext from "ManaContext";
-import { View } from "useBadges";
-import handleFormOpen from "handleFormOpen";
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
-import jsxProd from "ProfileFrameLayerOrder";
-import createCacheKey from "createCacheKey";
+// Module 9321 (filterLayer)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "handleFormOpen" /* 8409 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let error;
-let metroImportAll;
 const require = arg1;
 function filterLayer(responsive) {
   return true !== responsive.responsive;
 }
-({ PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: error, UserProfileThemeTypes: metroImportAll } = ARBITRARY_LARGE_OFFSET);
+({ PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: error, UserProfileThemeTypes: closure_8 } = ARBITRARY_LARGE_OFFSET);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let closure_12 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   let num = arg2;
@@ -29,9 +26,8 @@ let closure_12 = createCacheKey.createStyles((arg0, arg1, arg2) => {
     num = 263;
   }
   let obj = { profileContainer: { position: "relative", width: "100%", maxWidth: num }, profileContentContainer: null, profileInnerContent: null, aboutMeCard: null, profileEffect: null };
-  obj = { overflow: "hidden", minHeight: num2, borderWidth: null, borderColor: null, borderRadius: null };
-  obj[2] = 1;
-  const colors = importDefault(712).colors;
+  obj = { overflow: "hidden", minHeight: num2, borderWidth: 1, borderColor: null, borderRadius: null };
+  const colors = ThemesDefault.colors;
   if (arg1) {
     let BACKGROUND_SURFACE_HIGH = colors.BORDER_MUTED;
     let tmp4 = tmp;
@@ -48,38 +44,9 @@ let closure_12 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   obj[4] = { zIndex: 1 };
   return obj;
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfilePreview.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfilePreview.tsx");
 
 export default function UserProfilePreview(hideFrame) {
-  let accessibilityLabel;
-  let additionalBadges;
-  let avatarBackground;
-  let compact;
-  let containerBackground;
-  let displayName;
-  let displayNameStylesOverride;
-  let gradientFallbackBackground;
-  let guildId;
-  let maxWidth;
-  let pendingAccentColor;
-  let pendingAvatar;
-  let pendingAvatarDecoration;
-  let pendingBanner;
-  let pendingDisplayNameStyles;
-  let pendingGlobalName;
-  let pendingLegacyUsernameDisabled;
-  let pendingProfileEffect;
-  let pendingProfileFrame;
-  let pendingPronouns;
-  let pendingThemeColors;
-  let primaryColor;
-  let profileEffectOverride;
-  let profileEffectRestartKey;
-  let profileFrameOverride;
-  let secondaryColor;
-  let style;
-  let theme;
-  let user;
   ({ user, displayName, guildId } = hideFrame);
   ({ profileEffectOverride, profileEffectRestartKey, profileFrameOverride, displayNameStylesOverride, compact } = hideFrame);
   ({ accessibilityLabel, style } = hideFrame);
@@ -94,20 +61,20 @@ export default function UserProfilePreview(hideFrame) {
   if (additionalBadges === undefined) {
     additionalBadges = [];
   }
-  let importDefault;
+  importDefault = undefined;
   let set;
   let first;
   let React;
   let obj = guildId(set[8]);
-  const items = [handleFormOpen];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => outer1_6.getPendingChanges(guildId));
+  const items = [closure_6];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => closure_1_6.getPendingChanges(guildId));
   ({ pendingAccentColor, pendingThemeColors, pendingProfileEffect, pendingProfileFrame, pendingDisplayNameStyles, pendingPronouns } = stateFromStoresObject);
   ({ pendingAvatar, pendingBanner, pendingAvatarDecoration, pendingGlobalName, pendingLegacyUsernameDisabled } = stateFromStoresObject);
   const tmp5 = importDefault(set[9])(user.id, guildId);
   ({ theme, primaryColor, secondaryColor } = importDefault(set[10])({ user, displayProfile: tmp5, pendingThemeColors }));
   const tmp8 = callback(compact, null != primaryColor, maxWidth);
   const tmp9 = importDefault(set[11])();
-  let obj1 = guildId(set[12]);
+  obj1 = guildId(set[12]);
   const customStatusActivity = obj1.useCustomStatusActivity();
   let tmp27Result = null != customStatusActivity && !compact;
   let tmpResult = tmp(tmp2[13]);
@@ -179,15 +146,12 @@ export default function UserProfilePreview(hideFrame) {
   React = tmp23[1];
   const items2 = [tmp4ResultResult, first.width];
   callback = React.useCallback((nativeEvent) => {
-    callback({ width: Math.floor(nativeEvent.nativeEvent.layout.width), height: Math.floor(nativeEvent.nativeEvent.layout.height) });
+    callback2({ width: Math.floor(nativeEvent.nativeEvent.layout.width), height: Math.floor(nativeEvent.nativeEvent.layout.height) });
   }, []);
   const memo = React.useMemo(() => {
-    let overflowBottom;
-    let overflowHorizontal;
-    let overflowTop;
-    if (null != _undefined) {
+    if (null != callback) {
       const layers = tmp.layers;
-      ({ overflowTop, overflowBottom, overflowHorizontal } = _undefined(set[18])(tmp, first.width));
+      ({ overflowTop, overflowBottom, overflowHorizontal } = callback(set[18])(tmp, first.width));
       let num = 0;
       if (layers.some((type) => {
         let tmp = "staple" === type.type;

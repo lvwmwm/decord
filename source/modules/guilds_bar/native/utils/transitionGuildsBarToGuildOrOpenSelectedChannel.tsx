@@ -1,26 +1,27 @@
-// Module ID: 15572
-// Function ID: 15573
+// Module ID: 15637
+// Function ID: 15638
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
-// Dependencies: [1979, 4197, 676, 4230, 4229, 4768, 7302, 2]
+// Dependencies: [1980, 4201, 676, 4234, 4233, 4773, 7340, 2]
 // Exports: default
 
-// Module 15572 (transitionGuildsBarToGuildOrOpenSelectedChannel)
-import handleConnectionOpen from "handleConnectionOpen";
-import closure_3 from "handleConnectionOpen";
-import { ME } from "ME";
+// Module 15637 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+import closure_2 from "handleConnectionOpen" /* 1980 */;
+import closure_3 from "handleConnectionOpen" /* 4201 */;
+import { ME } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/guilds_bar/native/utils/transitionGuildsBarToGuildOrOpenSelectedChannel.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/guilds_bar/native/utils/transitionGuildsBarToGuildOrOpenSelectedChannel.tsx");
 
 export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
-  const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = getRootNavigationRef.getRootNavigationRef();
   let isReadyResult;
   if (rootNavigationRef != null) {
     isReadyResult = rootNavigationRef.isReady();
   }
   let tmp4;
   if (true === isReadyResult) {
-    let tmpResult = tmp(4229);
+    let tmpResult = tmp(4233);
     const coerceGuildsRouteResult = tmpResult.coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
     let drawerOpen;
     if (coerceGuildsRouteResult != null) {
@@ -47,10 +48,10 @@ export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
     }
   }
   if (null != tmp4) {
-    tmpResult = tmp(4768);
+    tmpResult = tmp(4773);
     tmpResult.transitionToChannel(tmp4);
   } else {
-    tmp(7302).transitionToGuild(arg0);
-    const tmpResult1 = tmp(7302);
+    tmp(7340).transitionToGuild(arg0);
+    const tmpResult1 = tmp(7340);
   }
 };

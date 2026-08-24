@@ -1,28 +1,31 @@
-// Module ID: 12737
-// Function ID: 12738
+// Module ID: 12792
+// Function ID: 12793
 // Name: openForumExplicitMediaWarning
-// Dependencies: [21, 4656, 12738, 2007, 2]
+// Dependencies: [21, 4662, 12793, 2008, 2]
 // Exports: default
 
-// Module 12737 (openForumExplicitMediaWarning)
-import { jsx } from "jsxProd";
+// Module 12792 (openForumExplicitMediaWarning)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import _modDef4662 from "module_4662" /* 4662 */;
 
-const result = require("ForumExplicitMediaAlert").fileFinishedImporting("modules/forums/openForumExplicitMediaWarning.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("modules/forums/openForumExplicitMediaWarning.native.tsx");
 
 export default function openForumExplicitMediaWarning(arg0, arg1) {
-  let closure_0 = arg0;
-  const importDefault = arg1;
-  let obj = importDefault(4656);
+  closure_0 = arg0;
+  importDefault = arg1;
+  let obj = _modDef4662;
   obj = {
     importer() {
-      return callback(outer1_2[3])(outer1_2[2], outer1_2.paths).then((arg0) => {
-        let closure_0 = arg0.default;
+      return callback(closure_1_2[3])(closure_1_2[2], closure_1_2.paths).then((arg0) => {
+        closure_0 = arg0.default;
         return (arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
           obj.channelId = closure_0;
-          obj.messageId = outer1_1;
-          return outer2_3(closure_0, obj);
+          obj.messageId = closure_1_1;
+          return closure_2_3(closure_0, obj);
         };
       });
     }

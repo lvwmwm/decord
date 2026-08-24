@@ -4,13 +4,13 @@
 // Dependencies: [41, 42, 38]
 
 // Module 316 (ChildListCollection)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import _createClassDefault from "_createClass" /* 42 */;
+import closure_2 from "_classCallCheck" /* 41 */;
 
 const ChildListCollection = importDefault;
 class ChildListCollection {
   constructor() {
-    tmp = outer1_2(this, ChildListCollection);
+    tmp = closure_2(this, ChildListCollection);
     map = new Map();
     this._cellKeyToChildren = map;
     map1 = new Map();
@@ -113,4 +113,4 @@ let items = [
   }
 ];
 
-export default _createClass(ChildListCollection, items);
+export default _createClassDefault(ChildListCollection, items);

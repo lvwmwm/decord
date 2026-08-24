@@ -1,10 +1,12 @@
-// Module ID: 11786
-// Function ID: 11787
+// Module ID: 11835
+// Function ID: 11836
 // Name: roundIfClose
 // Dependencies: [2]
 // Exports: roundIfClose
 
-// Module 11786 (roundIfClose)
+// Module 11835 (roundIfClose)
+import set from "set" /* 2 */;
+
 function roundIfClose(result, arg1) {
   const diff = result - Math.floor(result);
   if (diff >= 1 - arg1) {
@@ -22,6 +24,6 @@ function roundIfClose(result, arg1) {
 roundIfClose.__closure = {};
 roundIfClose.__workletHash = 15933993422996;
 roundIfClose.__initData = { code: "function roundIfClose_MathUtilsTsx1(num,precision){const decimalPart=num-Math.floor(num);if(decimalPart>=1-precision){return Math.ceil(num);}if(decimalPart<=precision){return Math.floor(num);}return num;}" };
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/MathUtils.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/shared/utils/MathUtils.tsx");
 
 export { roundIfClose };

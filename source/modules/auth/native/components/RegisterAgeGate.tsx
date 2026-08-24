@@ -1,53 +1,45 @@
-// Module ID: 15248
-// Function ID: 15249
+// Module ID: 15312
+// Function ID: 15313
 // Name: RegisterAgeGate
-// Dependencies: [32, 19, 17, 5258, 15212, 15213, 676, 21, 4661, 712, 3975, 15249, 4104, 1500, 15210, 589, 8594, 15228, 15211, 38, 8609, 1236, 8072, 8811, 15250, 4745, 8579, 8830, 1363, 2]
+// Dependencies: [32, 19, 17, 5263, 15276, 15277, 676, 21, 4668, 712, 3978, 15313, 4107, 1500, 15274, 589, 8633, 15292, 15275, 38, 8646, 1236, 8111, 8848, 15314, 4750, 8618, 8867, 1363, 2]
 // Exports: default
 
-// Module 15248 (RegisterAgeGate)
-import _slicedToArray from "_slicedToArray";
-import module_38 from "module_38";
-import { View } from "useAuthFlowBackHandler";
-import hasConsented from "hasConsented";
-import useRegistrationUIStore from "useRegistrationUIStore";
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
-import { AuthStates } from "ME";
-import jsxProd from "getSystemLocale";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "t";
-import subtractResult from "module_100";
+// Module 15312 (RegisterAgeGate)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "hasConsented" /* 5263 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15276 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15277 */;
+import { AuthStates } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "t" /* 3978 */;
+import subtractResult from "module_100" /* 100 */;
 
-let c10;
-let c9;
-let closure_12;
-let closure_14;
-let error;
-let map1;
-let metroImportAll;
 const require = arg1;
-({ updateRegistrationOptions: error, useRegistrationUIStore: metroImportAll } = useRegistrationUIStore);
+({ updateRegistrationOptions: error, useRegistrationUIStore: closure_8 } = useRegistrationUIStore);
 ({ RegisterTransitionSteps: c9, RegistrationTransitionActionTypes: c10 } = RegistrationTransitionActionTypes);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 createCacheKey = { inputGroup: { marginTop: 24, marginBottom: 24 }, flexGrow: { flexGrow: 1 }, button: { flexGrow: 0, marginBottom: 4, marginTop: 16, flexDirection: "column" }, datePickerButton: null, page: null };
-createCacheKey = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 createCacheKey[3] = createCacheKey;
 createCacheKey[4] = { flex: 1 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const utcResult = require("t").utc();
+let closure_15 = createCacheKey.createStyles(createCacheKey);
+const utcResult = importDefaultResult.utc();
 let closure_17 = utcResult.toDate();
 const cloneResult = utcResult.clone();
 let closure_18 = utcResult.clone().endOf("year").toDate();
 const endOfResult = utcResult.clone().endOf("year");
 const cloneResult1 = utcResult.clone();
 let closure_19 = require("module_100").toDate();
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/auth/native/components/RegisterAgeGate.tsx");
+let result = require("set").fileFinishedImporting("modules/auth/native/components/RegisterAgeGate.tsx");
 
 export default function RegisterAgeGate() {
-  let hasConsented;
-  let tmp14;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = _require(first[12]);
-  let obj1 = _require(first[13]);
+  obj1 = _require(first[13]);
   _require = obj1.useNavigation();
   let obj2 = first1;
   const context = first1.useContext(_require(first[14]).TrackRegistrationContext);
@@ -66,7 +58,7 @@ export default function RegisterAgeGate() {
   const consent = obj3.getState().registrationOptions.consent;
   let tmp7Result = tmp7(obj2.useState(null != consent && consent), 2);
   first1 = tmp7Result[0];
-  let closure_5 = tmp7Result[1];
+  closure_5 = tmp7Result[1];
   const items = [first];
   const memo = obj2.useMemo(() => {
     let toDateResult;
@@ -76,10 +68,10 @@ export default function RegisterAgeGate() {
     return toDateResult;
   }, items);
   tmp7Result = tmp7(obj2.useState(false), 2);
-  [tmp14, hasConsented] = tmp7Result;
+  [tmp14, closure_6] = tmp7Result;
   let obj4Result = obj3((submitting) => submitting.submitting);
   let tmp2Result = tmp2(tmp3[15]);
-  const items1 = [hasConsented];
+  const items1 = [closure_6];
   const stateFromStores = tmp2Result.useStateFromStores(items1, () => authenticationConsentRequired.getAuthenticationConsentRequired());
   obj4Result = obj3((errors) => errors.errors);
   let message = context(tmp3[16])("consent", obj4Result);
@@ -91,7 +83,7 @@ export default function RegisterAgeGate() {
   tmp18Result(tmp2Result.getPreviousRegistrationTransitionStep(AuthStates.AGE_GATE));
   const items2 = [context];
   const effect = obj2.useEffect(() => {
-    context({ step: outer1_9.AGE_GATE, actionType: outer1_10.VIEWED });
+    context({ step: closure_1_9.AGE_GATE, actionType: closure_1_10.VIEWED });
   }, items2);
   const tmp22 = context(first[11])(first);
   obj = { style: tmp.page, children: null };
@@ -133,11 +125,12 @@ export default function RegisterAgeGate() {
   obj2[2] = closure_12(_require(first[23]).InputButton, obj3);
   obj1[1] = closure_12(_require(first[22]).Input, obj2);
   const items3 = [closure_12(closure_5, obj1), , , ];
-  const obj4 = { consentRequired: null, consent: null, onToggleConsent: null };
-  obj4[0] = Boolean(stateFromStores);
-  obj4[1] = first1;
-  obj4[2] = function onToggleConsent() {
-    return callback3((arg0) => !arg0);
+  const obj4 = {
+    consentRequired: Boolean(stateFromStores),
+    consent: first1,
+    onToggleConsent() {
+      return callback3((arg0) => !arg0);
+    }
   };
   items3[1] = closure_12(context(first[24]), obj4);
   const obj5 = { style: tmp.button, children: null };
@@ -154,9 +147,9 @@ export default function RegisterAgeGate() {
       }
       obj[1] = tmp4;
       stateFromStores(obj);
-      obj = { step: outer1_9.AGE_GATE, actionType: outer1_10.SUBMITTED };
+      obj = { step: closure_1_9.AGE_GATE, actionType: closure_1_10.SUBMITTED };
       context(obj);
-      const result = callback(first[18]).handleRegistrationSubmit(outer1_11.AGE_GATE, callback, context);
+      const result = callback(first[18]).handleRegistrationSubmit(closure_1_11.AGE_GATE, callback, context);
     },
     text: null
   };

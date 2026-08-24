@@ -1,22 +1,27 @@
-// Module ID: 14235
-// Function ID: 14236
+// Module ID: 14303
+// Function ID: 14304
 // Name: shareGuardianConnectLink
-// Dependencies: [5297, 9067, 1236, 2335, 2]
+// Dependencies: [5302, 9104, 1236, 2336, 2]
 // Exports: shareGuardianConnectLink
 
-// Module 14235 (shareGuardianConnectLink)
-import { FAMILY_CENTER_REQUEST_QR_CODE_URL as closure_3 } from "items";
+// Module 14303 (shareGuardianConnectLink)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2336 */;
+import items from "items" /* 5302 */;
+import showShareActionSheet from "showShareActionSheet" /* 9104 */;
 
-const result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/native/shareGuardianConnectLink.tsx");
+let closure_3 = items.FAMILY_CENTER_REQUEST_QR_CODE_URL;
+const result = set.fileFinishedImporting("modules/parent_tools/native/shareGuardianConnectLink.tsx");
 
-export const shareGuardianConnectLink = function shareGuardianConnectLink(globalName, closure_2) {
+export const shareGuardianConnectLink = function shareGuardianConnectLink(globalName, linkCode) {
   let username = globalName.globalName;
   if (username == null) {
     username = globalName.username;
   }
-  let obj = require(9067) /* showShareActionSheet */;
+  let obj = showShareActionSheet;
   obj = { message: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.formatToPlainString(importDefault(2335).lVD5Nd, { username, url: callback(globalName.id, closure_2) });
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.formatToPlainString(messagesProxyDefault.lVD5Nd, { username, url: callback(globalName.id, linkCode) });
   obj.showShareActionSheet(obj, "Family Center Connect Guardian");
 };

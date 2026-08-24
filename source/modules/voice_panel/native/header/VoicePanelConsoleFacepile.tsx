@@ -1,69 +1,70 @@
-// Module ID: 16343
-// Function ID: 16344
+// Module ID: 16438
+// Function ID: 16439
 // Name: getConsoleInfo
-// Dependencies: [19, 676, 21, 4661, 712, 9884, 1236, 9747, 1370, 7190, 1297, 2]
+// Dependencies: [19, 676, 21, 4668, 712, 9923, 1236, 9786, 1370, 7228, 1297, 2]
 // Exports: default
 
-// Module 16343 (getConsoleInfo)
-import noop from "noop";
-import { PlatformTypes } from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16438 (getConsoleInfo)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9786 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 9923 */;
+import closure_3 from "noop" /* 19 */;
+import { PlatformTypes } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let require = arg1;
+require = arg1;
 function getConsoleInfo(type) {
   type = type.type;
   if (PlatformTypes.XBOX === type) {
     let obj = { icon: null, color: null, connectLabel: null, connectSublabel: null };
-    obj[0] = importDefault(9884)(type.type);
-    obj[1] = importDefault(712).unsafe_rawColors.PLATFORM_XBOX;
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.QN7HXV);
-    const intl4 = require(1236) /* getSystemLocale */.intl;
-    obj[3] = intl4.string(require(1236) /* getSystemLocale */.t["M/Ld86"]);
+    obj[0] = getConsoleIconDefault(type.type);
+    obj[1] = ThemesDefault.unsafe_rawColors.PLATFORM_XBOX;
+    const intl3 = getSystemLocale.intl;
+    obj[2] = intl3.string(getSystemLocale.t.QN7HXV);
+    const intl4 = getSystemLocale.intl;
+    obj[3] = intl4.string(getSystemLocale.t["M/Ld86"]);
     return obj;
   } else if (tmp.PLAYSTATION === type) {
     obj = { icon: null, color: null, connectLabel: null, connectSublabel: null };
-    obj[0] = importDefault(9884)(type.type);
-    obj[1] = importDefault(712).unsafe_rawColors.PLATFORM_PLAYSTATION;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl.string(require(1236) /* getSystemLocale */.t["3qLlTS"]);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[3] = intl2.string(require(1236) /* getSystemLocale */.t["/uR9x1"]);
+    obj[0] = getConsoleIconDefault(type.type);
+    obj[1] = ThemesDefault.unsafe_rawColors.PLATFORM_PLAYSTATION;
+    const intl = getSystemLocale.intl;
+    obj[2] = intl.string(getSystemLocale.t["3qLlTS"]);
+    const intl2 = getSystemLocale.intl;
+    obj[3] = intl2.string(getSystemLocale.t["/uR9x1"]);
     return obj;
   } else {
     return null;
   }
 }
 createCacheKey = { consoleIconContainer: null, consoleIcon: null };
-createCacheKey = { borderRadius: require("Themes").radii.round, padding: 8, margin: -3, borderWidth: 3, borderColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { borderRadius: ThemesDefault.radii.round, padding: 8, margin: -3, borderWidth: 3, borderColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { tintColor: require("Themes").colors.WHITE };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { tintColor: require("Themes").colors.WHITE };
-const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelConsoleFacepile.tsx");
+createCacheKey[1] = { tintColor: ThemesDefault.colors.WHITE };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const obj1 = { tintColor: ThemesDefault.colors.WHITE };
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelConsoleFacepile.tsx");
 
 export default function VoicePanelConsoleFacepile() {
-  let tmp = createCacheKey();
-  const require = tmp;
-  const tmp2 = importDefault(9747)();
+  const tmp = callback();
+  const _require = tmp;
+  const tmp2 = useGameConsoleAccountsDefault();
   importDefault = tmp2;
   let items = [tmp2];
   const items1 = [tmp];
   items = React.useMemo(() => {
-    const mapped = tmp2.map(outer1_7);
-    return mapped.filter(tmp(outer1_2[8]).isNotNullish);
+    const mapped = lib2.map(closure_1_7);
+    return mapped.filter(lib(closure_1_2[8]).isNotNullish);
   }, items);
   const renderItem = React.useCallback((backgroundColor) => {
     let obj = { style: items, children: null };
-    items = [tmp.consoleIconContainer, { backgroundColor: backgroundColor.color }];
-    tmp = tmp2(outer1_2[9]);
-    obj = { style: tmp.consoleIcon, size: null, source: null };
-    obj[1] = tmp(outer1_2[10]).Icon.Sizes.MEDIUM;
-    obj[2] = backgroundColor.icon;
-    obj[1] = outer1_5(tmp(outer1_2[10]).Icon, obj);
-    return outer1_5(tmp, obj);
+    items = [lib.consoleIconContainer, { backgroundColor: backgroundColor.color }];
+    obj = { style: lib.consoleIcon, size: lib(closure_1_2[10]).Icon.Sizes.MEDIUM, source: backgroundColor.icon };
+    obj[1] = closure_1_5(lib(closure_1_2[10]).Icon, obj);
+    return closure_1_5(lib2(closure_1_2[9]), obj);
   }, items1);
-  return jsx(require(1297) /* Button */.SummarizedIconRow, { items, renderItem, offsetAmount: -3 });
+  return jsx(_require(1297).SummarizedIconRow, { items, renderItem, offsetAmount: -3 });
 };
 export { getConsoleInfo };

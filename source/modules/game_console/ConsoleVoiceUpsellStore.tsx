@@ -1,26 +1,27 @@
-// Module ID: 16337
-// Function ID: 16338
+// Module ID: 16432
+// Function ID: 16433
 // Name: useConsoleVoiceUpsellStore
 // Dependencies: [644, 705, 2]
 // Exports: setShowConsoleVoiceSparkles, setVoiceUpsellDismissed
 
-// Module 16337 (useConsoleVoiceUpsellStore)
-import keys from "keys";
+// Module 16432 (useConsoleVoiceUpsellStore)
+import set from "set" /* 2 */;
+import keys from "keys" /* 644 */;
 
 let closure_2 = Object.freeze({ voiceUpsellDismissed: false, showSparkles: false });
 const obj = keys.create(() => closure_2);
-const result = require("set").fileFinishedImporting("modules/game_console/ConsoleVoiceUpsellStore.tsx");
+const result = set.fileFinishedImporting("modules/game_console/ConsoleVoiceUpsellStore.tsx");
 
 export const useConsoleVoiceUpsellStore = obj;
 export const setShowConsoleVoiceSparkles = function setShowConsoleVoiceSparkles(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => {
-    outer1_3.setState({ showSparkles: closure_0 });
+    closure_1_3.setState({ showSparkles: closure_0 });
   });
 };
 export const setVoiceUpsellDismissed = function setVoiceUpsellDismissed(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => {
-    outer1_3.setState({ voiceUpsellDismissed: closure_0 });
+    closure_1_3.setState({ voiceUpsellDismissed: closure_0 });
   });
 };

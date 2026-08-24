@@ -1,12 +1,14 @@
-// Module ID: 16171
-// Function ID: 16172
+// Module ID: 16268
+// Function ID: 16269
 // Name: NativeAPNGPreloadModule
 // Dependencies: [17, 2]
 
-// Module 16171 (NativeAPNGPreloadModule)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 16268 (NativeAPNGPreloadModule)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const value = TurboModuleRegistry.get("NativeAPNGPreloadModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAPNGPreloadModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAPNGPreloadModule.tsx");
 
 export default value;

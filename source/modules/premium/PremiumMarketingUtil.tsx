@@ -1,25 +1,27 @@
-// Module ID: 12320
-// Function ID: 12321
+// Module ID: 12372
+// Function ID: 12373
 // Name: navigateToPremiumHomePage
-// Dependencies: [676, 7360, 5353, 1222, 2]
+// Dependencies: [676, 7398, 5358, 1222, 2]
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage
 
-// Module 12320 (navigateToPremiumHomePage)
-import ME from "ME";
+// Module 12372 (navigateToPremiumHomePage)
+import set from "set" /* 2 */;
+import transitionTo from "transitionTo" /* 1222 */;
+import pushLayer from "pushLayer" /* 5358 */;
+import openUserSettings from "openUserSettings" /* 7398 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let obj1;
 ({ Routes: obj1, UserSettingsSections: c3 } = ME);
-const result = require("pushLayer").fileFinishedImporting("modules/premium/PremiumMarketingUtil.tsx");
+const result = set.fileFinishedImporting("modules/premium/PremiumMarketingUtil.tsx");
 
 export const navigateToPremiumHomePage = function navigateToPremiumHomePage() {
-  require(7360) /* openUserSettings */.openUserSettings({ screen: constants2.PREMIUM });
+  openUserSettings.openUserSettings({ screen: constants2.PREMIUM });
 };
 export const navigateToNitroHomePage = function navigateToNitroHomePage(arg0) {
   if (arg0 != null) {
     arg0();
   }
-  require(5353) /* pushLayer */.popLayer();
-  const obj = require(5353) /* pushLayer */;
-  require(1222) /* transitionTo */.transitionTo(constants.APPLICATION_STORE);
+  pushLayer.popLayer();
+  const obj = pushLayer;
+  transitionTo.transitionTo(constants.APPLICATION_STORE);
 };

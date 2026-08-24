@@ -1,54 +1,55 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16167
+// Function ID: 16168
 // Name: shouldComponentUpdate
-// Dependencies: [32, 853, 19, 1391, 5278, 1910, 4021, 4030, 1922, 676, 21, 4661, 712, 4104, 5279, 11588, 4026, 6778, 4827, 1236, 4984, 6291, 6286, 8083, 4733, 4734, 589, 1500, 38, 2]
+// Dependencies: [32, 853, 19, 1391, 5283, 1910, 4024, 4033, 1922, 676, 21, 4668, 712, 4107, 5284, 11637, 4029, 6815, 4832, 1236, 4989, 6322, 6317, 8122, 4738, 4739, 589, 1500, 38, 2]
 // Exports: default
 
-// Module 16069 (shouldComponentUpdate)
-import _slicedToArray from "_slicedToArray";
-import _toArray from "_toArray";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import setIndex from "setIndex";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { Permissions } from "ME";
-import jsxProd from "TableRowInner";
-import createCacheKey from "createCacheKey";
-import importAllResult from "getSystemLocale";
+// Module 16167 (shouldComponentUpdate)
+import _modDef38 from "module_38" /* 38 */;
+import ThemesDefault from "Themes" /* 712 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "_toArray" /* 853 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "setIndex" /* 5283 */;
+import closure_8 from "createGuildRecordFromRust" /* 1910 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_10 from "markAllUserIdListsStale" /* 4033 */;
+import closure_11 from "mergeGuildAvatar" /* 1922 */;
+import { Permissions } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let closure_14;
-let map1;
-const require = arg1;
+require = arg1;
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 createCacheKey = { screenContainer: null, stackPadding: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, paddingTop: require("Themes").space.PX_16 };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { paddingHorizontal: require("Themes").modules.mobile.TABLE_ROW_PADDING };
-createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+createCacheKey[1] = { paddingHorizontal: ThemesDefault.modules.mobile.TABLE_ROW_PADDING };
+let closure_15 = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
 const Component = importAllResult.Component;
 class ChannelSettingsChangeCategory extends Component {
   constructor(arg0) {
     tmp3 = new ChannelSettingsChangeCategory(global, tmp2, tmp);
     // ThrowIfThisInitialized (0x7c)
     channel = global.channel;
-    getGuildId = createGuildRecordFromRust.getGuild(channel.getGuildId());
+    closure_0 = closure_8.getGuild(channel.getGuildId());
     channel2 = global.channel;
     obj = { category: null, categories: null, submitting: false };
-    categories = setIndex.getCategories(channel2.getGuildId());
-    obj[0] = ensureGuildLoaded.getChannel(global.channel.parent_id);
+    categories = closure_7.getCategories(channel2.getGuildId());
+    obj[0] = closure_6.getChannel(global.channel.parent_id);
     _categories = categories._categories;
     mapped = _categories.map((channel) => channel.channel);
     obj[1] = mapped.filter((id) => {
       let canResult = "null" === id.id;
       if (canResult) {
-        canResult = outer1_9.can(outer1_12.MANAGE_CHANNELS, closure_0);
+        canResult = closure_1_9.can(closure_1_12.MANAGE_CHANNELS, closure_0);
       }
       if (!canResult) {
-        let canResult1 = outer1_9.can(outer1_12.MANAGE_CHANNELS, id);
+        let canResult1 = closure_1_9.can(closure_1_12.MANAGE_CHANNELS, id);
         if (canResult1) {
-          canResult1 = outer1_9.can(outer1_12.VIEW_CHANNEL, id);
+          canResult1 = closure_1_9.can(closure_1_12.VIEW_CHANNEL, id);
         }
         canResult = canResult1;
       }
@@ -68,11 +69,11 @@ prototype["handleSetCategory"] = function handleSetCategory(id) {
   function saveUpdates() {
     if (null == guildId) {
       const _Error = Error;
-      const error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
+      error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
       throw error;
     } else {
-      const obj = channel(channel[17]);
-      return channel(channel[17]).batchChannelUpdate(tmp, setIndex).then(() => arr.pop());
+      obj = channel(channel[17]);
+      return channel(channel[17]).batchChannelUpdate(tmp, closure_7).then(() => arr.pop());
     }
   }
   const props = this.props;
@@ -83,7 +84,7 @@ prototype["handleSetCategory"] = function handleSetCategory(id) {
   const guildId = channel.getGuildId();
   if (null == guildId) {
     const _Error2 = Error;
-    let error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
+    error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
     throw error;
   } else {
     let tmp3 = null;
@@ -139,7 +140,7 @@ prototype["handleSetCategory"] = function handleSetCategory(id) {
           let flag = id.id === channel.id;
           if (flag) {
             id.parent_id = closure_0;
-            let ensureGuildLoaded = id;
+            closure_6 = id;
             flag = true;
           }
           return flag;
@@ -151,36 +152,36 @@ prototype["handleSetCategory"] = function handleSetCategory(id) {
         arr = result.push(obj1);
       }
       let obj6 = _require(tmp7[15]);
-      let createGuildRecordFromRust = navigation(tmp7[16]).areChannelsLocked(channel, channel);
+      closure_8 = navigation(tmp7[16]).areChannelsLocked(channel, channel);
       const obj3 = navigation(tmp7[16]);
-      let getUncachedChannelPermissions = navigation(tmp7[16]).areChannelsLocked(channel, obj.getChannel(channel.parent_id));
+      closure_9 = navigation(tmp7[16]).areChannelsLocked(channel, obj.getChannel(channel.parent_id));
       self.setState({ submitting: true }, () => {
         if (null != channel) {
-          if (getUncachedChannelPermissions) {
-            if (!createGuildRecordFromRust) {
-              let obj = channel(channel[18]);
+          if (closure_9) {
+            if (!closure_8) {
+              obj = channel(channel[18]);
               obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null };
               const intl = id(channel[19]).intl;
               obj[0] = intl.string(id(channel[19]).t.YWMtRe);
               const intl2 = id(channel[19]).intl;
               obj = { channelName: null, categoryName: null };
               const obj4 = id(channel[20]);
-              obj[0] = obj4.computeChannelName(channel, outer1_11, saveUpdates, true);
-              obj[1] = id(channel[20]).computeChannelName(tmp, outer1_11, saveUpdates);
+              obj[0] = obj4.computeChannelName(channel, closure_1_11, saveUpdates, true);
+              obj[1] = id(channel[20]).computeChannelName(tmp, closure_1_11, saveUpdates);
               obj[1] = intl2.format(id(channel[19]).t["iKW+jY"], obj);
               const intl3 = id(channel[19]).intl;
               obj[2] = intl3.string(id(channel[19]).t.eW8Gy4);
               const intl4 = id(channel[19]).intl;
               obj[3] = intl4.string(id(channel[19]).t.s4uM3b);
               obj[4] = function onConfirm() {
-                ensureGuildLoaded.lock_permissions = true;
-                if (null == _slicedToArray) {
+                closure_6.lock_permissions = true;
+                if (null == closure_4) {
                   const _Error = Error;
-                  const error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
+                  error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
                   throw error;
                 } else {
-                  const obj = outer1_1(outer1_3[17]);
-                  outer1_1(outer1_3[17]).batchChannelUpdate(tmp, setIndex).then(() => arr.pop());
+                  obj = closure_1_1(closure_1_3[17]);
+                  closure_1_1(closure_1_3[17]).batchChannelUpdate(tmp, closure_7).then(() => arr.pop());
                 }
               };
               obj[5] = saveUpdates;
@@ -191,12 +192,12 @@ prototype["handleSetCategory"] = function handleSetCategory(id) {
         }
         if (null == guildId) {
           let _Error = Error;
-          let error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
+          error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
           throw error;
         } else {
           const obj6 = channel(channel[17]);
-          channel(channel[17]).batchChannelUpdate(tmp24, setIndex).then(() => arr.pop());
-          const batchChannelUpdateResult = channel(channel[17]).batchChannelUpdate(tmp24, setIndex);
+          channel(channel[17]).batchChannelUpdate(tmp24, closure_7).then(() => arr.pop());
+          const batchChannelUpdateResult = channel(channel[17]).batchChannelUpdate(tmp24, closure_7);
         }
       });
     }
@@ -206,7 +207,7 @@ prototype["handleSetCategory"] = function handleSetCategory(id) {
 prototype["renderCategory"] = function renderCategory(label) {
   const self = this;
   const _require = label;
-  return callback3(_require(6291).TableRow, {
+  return callback3(_require(6322).TableRow, {
     label: label.name,
     onPress() {
       return self.handleSetCategory(label.id);
@@ -233,7 +234,7 @@ prototype["renderCategories"] = function renderCategories() {
   if (mapped.length > 0) {
     const obj = { hasIcons: false, children: null };
     obj[1] = mapped;
-    tmp4 = callback3(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj);
+    tmp4 = callback3(TableRowGroupTitle.TableRowGroup, obj);
   }
   return tmp4;
 };
@@ -242,10 +243,9 @@ prototype["render"] = function render() {
   self = this;
   const category = this.state.category;
   const first = callback(this.state.categories, 1)[0];
-  const tmp2 = createCacheKey(this.context);
+  const tmp2 = callback4(this.context);
   let obj = { style: tmp2.screenContainer, children: null };
-  obj = { style: tmp2.stackPadding, spacing: null, children: null };
-  obj[1] = self(712).space.PX_24;
+  obj = { style: tmp2.stackPadding, spacing: self(712).space.PX_24, children: null };
   const intl = first(1236).intl;
   if (null != category) {
     let name = category.name;
@@ -254,40 +254,40 @@ prototype["render"] = function render() {
     name = intl2.string(tmp4(1236).t.GSfOoo);
   }
   obj = { variant: "text-md/medium", color: "text-muted", children: intl.formatToPlainString(first(1236).t.OqccVl, { categoryName: name }) };
-  const items = [closure_13(first(4734).Text, obj), , ];
+  const items = [closure_13(first(4739).Text, obj), , ];
   let tmp3Result = null;
   if (null != first) {
     tmp3Result = null;
     if ("null" === first.id) {
       tmp3Result = null;
       if (null != category) {
-        const obj1 = { hasIcons: false, children: null };
+        obj1 = { hasIcons: false, children: null };
         const obj2 = { label: null, onPress: null };
         obj2[0] = first.name;
         obj2[1] = function onPress() {
           return self.handleSetCategory(first.id);
         };
-        obj1[1] = tmp3(tmp4(6291).TableRow, obj2, first.id);
-        tmp3Result = tmp3(tmp4(6286).TableRowGroup, obj1);
+        obj1[1] = tmp3(tmp4(6322).TableRow, obj2, first.id);
+        tmp3Result = tmp3(tmp4(6317).TableRowGroup, obj1);
       }
     }
   }
   items[1] = tmp3Result;
   items[2] = self.renderCategories();
   obj[2] = items;
-  obj[1] = closure_14(first(4733).Stack, obj);
-  return closure_13(first(8083).Form, obj);
+  obj[1] = closure_14(first(4738).Stack, obj);
+  return closure_13(first(8122).Form, obj);
 };
 ChannelSettingsChangeCategory.contextType = require("ManaContext").ThemeContext;
-let obj1 = { paddingHorizontal: require("Themes").modules.mobile.TABLE_ROW_PADDING };
-let result = require("noop").fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeCategory.tsx");
+let obj1 = { paddingHorizontal: ThemesDefault.modules.mobile.TABLE_ROW_PADDING };
+let result = require("set").fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeCategory.tsx");
 
 export default function ConnectedChannelSettingsChangeCategory(channelId) {
   channelId = channelId.channelId;
-  const items = [ensureGuildLoaded];
-  const channel = channelId(589).useStateFromStores(items, () => outer1_6.getChannel(channelId));
+  const items = [closure_6];
+  const channel = channelId(589).useStateFromStores(items, () => closure_1_6.getChannel(channelId));
   const obj = channelId(589);
   const navigation = channelId(1500).useNavigation();
-  importDefault(38)(null != channel, "ConnectedChannelSettingsChangeCategory: channel cannot be undefined");
+  _modDef38(null != channel, "ConnectedChannelSettingsChangeCategory: channel cannot be undefined");
   return callback3(ChannelSettingsChangeCategory, { channel, navigation });
 };

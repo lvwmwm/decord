@@ -1,33 +1,28 @@
-// Module ID: 15253
-// Function ID: 15254
+// Module ID: 15317
+// Function ID: 15318
 // Name: CompanionRemoteAuth
-// Dependencies: [19, 17, 676, 21, 4661, 15254, 5446, 4734, 1236, 4745, 1297, 4219, 1500, 4818, 698, 15255, 15259, 8609, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 15318, 5451, 4739, 1236, 4750, 1297, 4223, 1500, 4823, 698, 15319, 15323, 8646, 2]
 // Exports: CompanionRemoteAuth
 
-// Module 15253 (CompanionRemoteAuth)
-import noop from "noop";
-import { View } from "AuthFormView";
-import ME from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15317 (CompanionRemoteAuth)
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 ({ AnalyticEvents: c5, LoginSuccessfulSources: closure_6 } = ME);
-({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles({ statusContainer: { alignItems: "center", marginTop: 32 }, avatar: { marginBottom: 16 }, statusText: { textAlign: "center", marginTop: 16, marginBottom: 24, paddingHorizontal: 32 }, buttonContainer: { width: "100%", paddingHorizontal: 16, marginTop: 16 } });
-const result = require("ME").fileFinishedImporting("modules/remote_auth/components/native/CompanionRemoteAuth.tsx");
+const result = require("set").fileFinishedImporting("modules/remote_auth/components/native/CompanionRemoteAuth.tsx");
 
 export const CompanionRemoteAuth = function CompanionRemoteAuth() {
   let tmp = callback2();
   let obj = navigation(1500);
   navigation = obj.useNavigation();
-  let obj1 = React;
-  const context = React.useContext(fingerprint(4818));
+  obj1 = React;
+  const context = React.useContext(fingerprint(4823));
   const callback = React.useCallback((arg0) => {
     let tmp = arg0;
     let obj = fingerprint(table[14]);
@@ -38,37 +33,37 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     obj[4] = tmp;
     obj.track(constants.LOGIN_SUCCESSFUL, obj);
   }, []);
-  let obj2 = navigation(15255);
+  let obj2 = navigation(15319);
   const state = obj2.useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = React.useCallback(() => {
     navigation.goBack();
   }, items);
   fingerprint = null;
-  if (state.step === navigation(15254).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(15318).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
   const effect = obj1.useEffect(() => {
     if (null != fingerprint) {
       const _HermesInternal = HermesInternal;
-      const obj = fingerprint(outer1_2[16]);
-      fingerprint(outer1_2[16]).sendAuthUrl("https://discord.com/ra/" + tmp).catch(() => {
-        const error = new Error("Failed to initialize authentication");
+      const obj = fingerprint(closure_1_2[16]);
+      fingerprint(closure_1_2[16]).sendAuthUrl("https://discord.com/ra/" + tmp).catch(() => {
+        error = new Error("Failed to initialize authentication");
         throw error;
       });
-      const sendAuthUrlResult = fingerprint(outer1_2[16]).sendAuthUrl("https://discord.com/ra/" + tmp);
+      const sendAuthUrlResult = fingerprint(closure_1_2[16]).sendAuthUrl("https://discord.com/ra/" + tmp);
     }
   }, items1);
   obj = { headerText: null, children: null };
-  let tmp5Result = tmp5(8609);
+  let tmp5Result = tmp5(8646);
   const intl = tmp2(1236).intl;
   obj[0] = intl.string(navigation(1236).t["7fNJgA"]);
   obj = { style: tmp.statusContainer, children: null };
   const step = state.step;
-  if (navigation(15254).RemoteAuthStep.INITIALIZING !== step) {
-    if (tmp2(15254).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
-      if (tmp2(15254).RemoteAuthStep.PENDING_TICKET === step) {
+  if (navigation(15318).RemoteAuthStep.INITIALIZING !== step) {
+    if (tmp2(15318).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
+      if (tmp2(15318).RemoteAuthStep.PENDING_TICKET === step) {
         const user = state.user;
         obj1 = { children: null };
         obj2 = { style: null, user: null, size: null, guildId: null };
@@ -80,27 +75,27 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
         const obj3 = { variant: "heading-lg/bold", children: null };
         const intl2 = tmp2(1236).intl;
         obj3[1] = intl2.string(tmp2(1236).t.apGCUT);
-        items2[1] = tmp11(tmp2(4734).Text, obj3);
+        items2[1] = tmp11(tmp2(4739).Text, obj3);
         const obj4 = { style: null, variant: "text-md/medium", color: "text-muted", children: null };
         obj4[0] = tmp.statusText;
         const intl3 = tmp2(1236).intl;
         const obj5 = { username: null };
-        tmp5Result = tmp5(4219);
+        tmp5Result = tmp5(4223);
         obj5[0] = tmp5Result.getUserTag(user);
         obj4[3] = intl3.format(tmp2(1236).t.Cbl5JK, obj5);
-        items2[2] = tmp11(tmp2(4734).Text, obj4);
+        items2[2] = tmp11(tmp2(4739).Text, obj4);
         const obj6 = { style: null, children: null };
         obj6[0] = tmp.buttonContainer;
         const obj7 = { size: "lg", variant: "tertiary", text: null, onPress: null };
         const intl4 = tmp2(1236).intl;
         obj7[2] = intl4.string(tmp2(1236).t["ETE/oC"]);
         obj7[3] = callback1;
-        obj6[1] = tmp11(tmp2(4745).Button, obj7);
+        obj6[1] = tmp11(tmp2(4750).Button, obj7);
         items2[3] = tmp11(tmp13, obj6);
         obj1[0] = items2;
         let tmp11Result = callback(closure_8, obj1);
-      } else if (tmp2(15254).RemoteAuthStep.PENDING_LOGIN === step) {
-        tmp11Result = tmp11(tmp2(5446).ActivityIndicator, {});
+      } else if (tmp2(15318).RemoteAuthStep.PENDING_LOGIN === step) {
+        tmp11Result = tmp11(tmp2(5451).ActivityIndicator, {});
       }
     }
     obj[1] = tmp11Result;
@@ -108,17 +103,17 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     return tmp11(tmp5Result, obj);
   }
   const obj8 = { children: null };
-  const items3 = [closure_7(navigation(5446).ActivityIndicator, {}), , ];
+  const items3 = [closure_7(navigation(5451).ActivityIndicator, {}), , ];
   const obj9 = { style: tmp.statusText, variant: "text-md/medium", color: "text-muted", children: null };
   const intl5 = tmp2(1236).intl;
   obj9[3] = intl5.string(navigation(1236).t["7LkwqE"]);
-  items3[1] = closure_7(navigation(4734).Text, obj9);
+  items3[1] = closure_7(navigation(4739).Text, obj9);
   const obj10 = { style: tmp.buttonContainer, children: null };
   const obj11 = { size: "lg", variant: "tertiary", text: null, onPress: null };
   const intl6 = tmp2(1236).intl;
   obj11[2] = intl6.string(navigation(1236).t["ETE/oC"]);
   obj11[3] = callback1;
-  obj10[1] = closure_7(navigation(4745).Button, obj11);
+  obj10[1] = closure_7(navigation(4750).Button, obj11);
   items3[2] = closure_7(View, obj10);
   obj8[0] = items3;
   tmp11Result = callback(closure_8, obj8);

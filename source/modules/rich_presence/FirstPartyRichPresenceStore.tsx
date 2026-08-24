@@ -1,13 +1,16 @@
-// Module ID: 7252
-// Function ID: 7253
+// Module ID: 7290
+// Function ID: 7291
 // Name: updateActivities
-// Dependencies: [7253, 659, 589, 709, 2]
+// Dependencies: [7291, 659, 589, 709, 2]
 
-// Module 7252 (updateActivities)
-import { Store } from "initialize";
+// Module 7290 (updateActivities)
+import initializeDefault from "initialize" /* 589 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import handleUpdateActivityDefault from "handleUpdateActivity" /* 7291 */;
 
 function updateActivities() {
-  const items = [];
+  items = [];
   const iter = items[Symbol.iterator]();
   while (iter !== undefined) {
     let activity = nextResult.getActivity();
@@ -17,15 +20,16 @@ function updateActivities() {
     }
     continue;
   }
-  const tmp6 = importDefault(659)(items, items);
+  const tmp6 = isUndefinedOrNullDefault(items, items);
   let flag = !tmp6;
   if (!tmp6) {
     flag = true;
   }
   return flag;
 }
-let items = [require("handleUpdateActivity")];
+let items = [handleUpdateActivityDefault];
 let closure_3 = [];
+const Store = initializeDefault.Store;
 class FirstPartyRichPresenceStore extends Store {
 }
 const prototype = FirstPartyRichPresenceStore.prototype;
@@ -36,7 +40,7 @@ prototype["getActivities"] = function getActivities() {
   return closure_3;
 };
 FirstPartyRichPresenceStore.displayName = "FirstPartyRichPresenceStore";
-const firstPartyRichPresenceStore = new FirstPartyRichPresenceStore(require("dispatcher"));
-const result = require("initialize").fileFinishedImporting("modules/rich_presence/FirstPartyRichPresenceStore.tsx");
+const firstPartyRichPresenceStore = new FirstPartyRichPresenceStore(dispatcherDefault);
+const result = require("set").fileFinishedImporting("modules/rich_presence/FirstPartyRichPresenceStore.tsx");
 
 export default firstPartyRichPresenceStore;

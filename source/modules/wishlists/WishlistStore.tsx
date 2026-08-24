@@ -1,17 +1,20 @@
-// Module ID: 9186
-// Function ID: 9187
+// Module ID: 9223
+// Function ID: 9224
 // Name: get
-// Dependencies: [9187, 1208, 5365, 589, 709, 2]
+// Dependencies: [9224, 1208, 5370, 589, 709, 2]
 
-// Module 9186 (get)
-import fromServer from "fromServer";
-import closure_5 from "fromServer";
-import { Store } from "initialize";
+// Module 9223 (get)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import _modDef1208 from "module_1208" /* 1208 */;
+import createUserWidgetFromServer from "createUserWidgetFromServer" /* 5370 */;
+import fromServer from "fromServer" /* 9224 */;
+import closure_5 from "fromServer" /* 9224 */;
 
-let c3;
-let c4;
 ({ getWishlistSkuIds: c3, wishlistHasSkuId: c4 } = fromServer);
 let closure_6 = {};
+const Store = initializeDefault.Store;
 class WishlistStore extends Store {
 }
 const prototype = WishlistStore.prototype;
@@ -60,7 +63,7 @@ prototype["getUpdatedAt"] = function getUpdatedAt(arg0) {
 prototype["getLastFetchedAt"] = function getLastFetchedAt(arg0) {
   return this.get(arg0).lastFetchedAt;
 };
-const wishlistStore = new WishlistStore(require("dispatcher"), {
+const wishlistStore = new WishlistStore(dispatcherDefault, {
   WISHLIST_FETCH_START: function handleFetchStart(wishlistId) {
     wishlistId = wishlistId.wishlistId;
     let tmp2 = dependencyMap[wishlistId];
@@ -73,8 +76,6 @@ const wishlistStore = new WishlistStore(require("dispatcher"), {
     tmp2.error = undefined;
   },
   WISHLIST_FETCH_SUCCESS: function handleFetchSuccess(wishlistId) {
-    let updatedAt;
-    let wishlistData;
     wishlistId = wishlistId.wishlistId;
     let tmp2 = dependencyMap[wishlistId];
     ({ wishlistData, updatedAt } = wishlistId);
@@ -114,11 +115,9 @@ const wishlistStore = new WishlistStore(require("dispatcher"), {
     tmp2.lastFetchedAt = Date.now();
   },
   WISHLIST_ADD_SKU_FAILURE: function handleAddSkuFailure(error) {
-    importDefault(1208).captureException(error.error);
+    _modDef1208.captureException(error.error);
   },
   WISHLIST_REMOVE_SKU_START: function handleRemoveSkuStart(arg0) {
-    let require;
-    let wishlistId;
     ({ wishlistId, skuId: require } = arg0);
     let tmp2 = dependencyMap[wishlistId];
     if (tmp2 == null) {
@@ -159,7 +158,7 @@ const wishlistStore = new WishlistStore(require("dispatcher"), {
       tmp2 = obj;
     }
     tmp2.updatedAt = undefined;
-    importDefault(1208).captureException(wishlistId.error);
+    _modDef1208.captureException(wishlistId.error);
   },
   WISHLIST_UPDATE_VISIBILITY_SUCCESS: function handleUpdateVisibilitySuccess(wishlistId) {
     wishlistId = wishlistId.wishlistId;
@@ -174,7 +173,7 @@ const wishlistStore = new WishlistStore(require("dispatcher"), {
     tmp2.lastFetchedAt = Date.now();
   },
   WISHLIST_UPDATE_VISIBILITY_FAILURE: function handleUpdateVisibilityFailure(error) {
-    importDefault(1208).captureException(error.error);
+    _modDef1208.captureException(error.error);
   },
   WISHLIST_REORDER_START: function handleReorderStart(wishlistId) {
     wishlistId = wishlistId.wishlistId;
@@ -208,13 +207,11 @@ const wishlistStore = new WishlistStore(require("dispatcher"), {
       tmp2 = obj;
     }
     tmp2.updatedAt = undefined;
-    importDefault(1208).captureException(wishlistId.error);
+    _modDef1208.captureException(wishlistId.error);
   },
   WISHLIST_ITEM_PURCHASED: function handleWishlistItemPurchased(arg0) {
-    let recipientId;
-    let skuId;
     ({ recipientId, skuId } = arg0);
-    const firstWishlistId = require(5365) /* createUserWidgetFromServer */.default.getFirstWishlistId(recipientId);
+    const firstWishlistId = createUserWidgetFromServer.default.getFirstWishlistId(recipientId);
     let tmp2 = null != firstWishlistId;
     if (tmp2) {
       tmp2 = null != dependencyMap[firstWishlistId];
@@ -230,6 +227,6 @@ const wishlistStore = new WishlistStore(require("dispatcher"), {
     }
   }
 });
-const result = require("createUserWidgetFromServer").fileFinishedImporting("modules/wishlists/WishlistStore.tsx");
+const result = set.fileFinishedImporting("modules/wishlists/WishlistStore.tsx");
 
 export default wishlistStore;

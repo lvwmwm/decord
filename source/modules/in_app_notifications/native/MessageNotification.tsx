@@ -1,22 +1,20 @@
-// Module ID: 10047
-// Function ID: 10048
-// Dependencies: [19, 4662, 10030, 21, 4661, 10048, 589, 1297, 1236, 4814, 10080, 7436, 1351, 5260, 4768, 10081, 2007, 10113, 10117, 2]
+// Module ID: 10086
+// Function ID: 10087
+// Dependencies: [19, 4669, 10069, 21, 4668, 10087, 589, 1297, 1236, 4819, 10119, 7474, 1351, 5265, 4773, 10120, 2008, 10152, 10156, 2]
 
-// Module 10047
-import importAllResult from "set";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import set from "set";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import set from "set";
+// Module 10086
+import NativeMessagePreviewContentDefault from "NativeMessagePreviewContent" /* 10087 */;
+import importAllResult from "noop" /* 19 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import set from "set" /* 10069 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 let c3 = importAllResult;
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: c5, NOTIFICATION_PREVIEW_LINE_CLAMP: closure_6 } = set);
 let closure_8 = createCacheKey.createStyles({ newContainerRoleDot: { paddingRight: 4, paddingTop: 0 } });
-let closure_9 = importAllResult.memo((message) => jsx(importDefault(10048), { message: message.message, lineClamp: closure_6, maxHeight: closure_5 }));
+let closure_9 = importAllResult.memo((message) => jsx(NativeMessagePreviewContentDefault, { message: message.message, lineClamp: closure_6, maxHeight: closure_5 }));
 const result = set.fileFinishedImporting("modules/in_app_notifications/native/MessageNotification.tsx");
 
 export default importAllResult.memo(function MessageNotification(notification) {
@@ -85,8 +83,7 @@ export default importAllResult.memo(function MessageNotification(notification) {
   const items1 = [nullableMessageAuthor.nick, channel.id, message.content];
   const effect = guild.useEffect(() => {
     const intl = message(parentChannel[8]).intl;
-    const obj = { userName: nullableMessageAuthor.nick, message: null };
-    obj[1] = channel(parentChannel[11]).unparse(message.content, channel.id, true);
+    const obj = { userName: nullableMessageAuthor.nick, message: channel(parentChannel[11]).unparse(message.content, channel.id, true) };
     const obj2 = channel(parentChannel[11]);
     const AccessibilityAnnouncer = message(parentChannel[12]).AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(intl.formatToPlainString(message(parentChannel[8]).t.Hjp1LH, obj));
@@ -105,7 +102,7 @@ export default importAllResult.memo(function MessageNotification(notification) {
     return obj.pushLazy(message(parentChannel[16])(parentChannel[15], parentChannel.paths), obj, "in-app-notification-settings-modal");
   }, items3);
   const memo = guild.useMemo(() => ({ type: "message", channel, parentChannel, guild, author: nullableMessageAuthor, onDismiss: handleDismissNotification }), items4);
-  const obj1 = { user: message.author, guildId: null, size: null };
+  obj1 = { user: message.author, guildId: null, size: null };
   const guild2 = notification.guild;
   let id;
   if (guild2 != null) {

@@ -1,35 +1,38 @@
-// Module ID: 16134
-// Function ID: 16135
+// Module ID: 16232
+// Function ID: 16233
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 16134 (dispatcher)
-const result = require("set").fileFinishedImporting("actions/PermissionActionCreators.tsx");
+// Module 16232 (dispatcher)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("actions/PermissionActionCreators.tsx");
 
 export default {
   clearVADWarning() {
-    importDefault(709).dispatch({ type: "PERMISSION_CLEAR_VAD_WARNING" });
+    dispatcherDefault.dispatch({ type: "PERMISSION_CLEAR_VAD_WARNING" });
   },
   clearSuppressWarning() {
     let flag = arg0;
     if (arg0 === undefined) {
       flag = false;
     }
-    importDefault(709).dispatch({ type: "PERMISSION_CLEAR_SUPPRESS_WARNING", forever: flag });
+    dispatcherDefault.dispatch({ type: "PERMISSION_CLEAR_SUPPRESS_WARNING", forever: flag });
   },
   clearPTTAdminWarning() {
-    importDefault(709).dispatch({ type: "PERMISSION_CLEAR_PTT_ADMIN_WARNING" });
+    dispatcherDefault.dispatch({ type: "PERMISSION_CLEAR_PTT_ADMIN_WARNING" });
   },
   requestElevatedProcess(pid) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "PERMISSION_REQUEST_ELEVATED_PROCESS", pid };
     obj.dispatch(obj);
   },
   clearElevatedProcess() {
-    importDefault(709).dispatch({ type: "PERMISSION_CLEAR_ELEVATED_PROCESS" });
+    dispatcherDefault.dispatch({ type: "PERMISSION_CLEAR_ELEVATED_PROCESS" });
   },
   continueNonelevatedProcess(pid) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "PERMISSION_CONTINUE_NONELEVATED_PROCESS", pid };
     obj.dispatch(obj);
   }

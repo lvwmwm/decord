@@ -1,9 +1,11 @@
-// Module ID: 13571
-// Function ID: 13572
+// Module ID: 13629
+// Function ID: 13630
 // Name: ME
 // Dependencies: [676, 2]
 
-// Module 13571 (ME)
-import { AnalyticEvents } from "ME";
+// Module 13629 (ME)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("utils/AnalyticsSchema.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("utils/AnalyticsSchema.tsx");

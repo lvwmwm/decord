@@ -5,7 +5,7 @@
 // Exports: useFocusedListenersChildrenAdapter
 
 // Module 1584 (useFocusedListenersChildrenAdapter)
-import noop from "noop";
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 

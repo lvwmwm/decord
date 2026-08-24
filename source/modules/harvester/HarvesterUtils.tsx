@@ -1,18 +1,19 @@
-// Module ID: 14216
-// Function ID: 14217
+// Module ID: 14284
+// Function ID: 14285
 // Name: harvestDisabled
-// Dependencies: [32, 19, 1922, 13257, 14217, 589, 2]
+// Dependencies: [32, 19, 1922, 13315, 14285, 589, 2]
 // Exports: harvestDisabled, useRequestHarvestStatus
 
-// Module 14216 (harvestDisabled)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import harvestType from "harvestType";
-import { REQUEST_DATA_LIMIT_MS } from "REQUEST_DATA_LIMIT_DAYS";
+// Module 14284 (harvestDisabled)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "harvestType" /* 13315 */;
+import { REQUEST_DATA_LIMIT_MS } from "REQUEST_DATA_LIMIT_DAYS" /* 14285 */;
 
-const require = arg1;
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/harvester/HarvesterUtils.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/harvester/HarvesterUtils.tsx");
 
 export const harvestDisabled = function harvestDisabled(created_at, stateFromStores) {
   const verified = stateFromStores.verified;
@@ -35,14 +36,12 @@ export const harvestDisabled = function harvestDisabled(created_at, stateFromSto
   return tmp;
 };
 export const useRequestHarvestStatus = function useRequestHarvestStatus() {
-  let require;
-  let tmp3;
-  let obj = require(589) /* initialize */;
-  const items = [mergeGuildAvatar];
+  let obj = initialize;
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const items1 = [harvestType];
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => harvestType.harvestType);
-  const obj3 = require(589) /* initialize */;
+  const items1 = [closure_5];
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => harvestType.harvestType);
+  const obj3 = initialize;
   [tmp3, require] = callback(React.useState(() => Date.now()), 2);
   let sum = tmp3;
   if (null != stateFromStores1) {
@@ -50,7 +49,7 @@ export const useRequestHarvestStatus = function useRequestHarvestStatus() {
     const date = new Date(stateFromStores1.created_at);
     sum = date.getTime() + REQUEST_DATA_LIMIT_MS;
   }
-  const dependencyMap = sum;
+  dependencyMap = sum;
   callback = obj4.useRef(null);
   const items2 = [sum];
   const effect = obj4.useEffect(() => {

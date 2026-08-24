@@ -1,25 +1,26 @@
-// Module ID: 17028
-// Function ID: 17029
+// Module ID: 17121
+// Function ID: 17122
 // Name: _reportSessionMeaningfullyOnline
-// Dependencies: [5, 7250, 17029, 676, 505, 687, 530, 1208, 709, 5038, 4066, 2]
+// Dependencies: [5, 7288, 17122, 676, 505, 687, 530, 1208, 709, 5043, 4069, 2]
 
-// Module 17028 (_reportSessionMeaningfullyOnline)
-import set from "set";
-import filterPlayingActivities from "filterPlayingActivities";
-import initialize from "initialize";
-import { Endpoints } from "ME";
-import { StatusTypes } from "sum";
-import "initialize";
+// Module 17121 (_reportSessionMeaningfullyOnline)
+import setDefault from "set" /* 687 */;
+import initializeDefault from "initialize" /* 5043 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "filterPlayingActivities" /* 7288 */;
+import closure_5 from "initialize" /* 17122 */;
+import { Endpoints } from "ME" /* 676 */;
+import { StatusTypes } from "sum" /* 505 */;
 
 let require = arg1;
 function _reportSessionMeaningfullyOnline() {
   const self = this;
   const tmp = callback(function*() {
     const callback = tmp3;
-    let c3 = 1;
-    const HTTP = outer1_0(outer1_2[6]).HTTP;
-    let obj1 = { url: null, rejectWithError: true };
-    obj1[0] = outer1_6.USER_MEANINGFULLY_ONLINE;
+    c3 = 1;
+    const HTTP = closure_1_0(closure_1_2[6]).HTTP;
+    obj1 = { url: null, rejectWithError: true };
+    obj1[0] = closure_1_6.USER_MEANINGFULLY_ONLINE;
     yield HTTP.post(obj1);
     if (1 === tmp7) {
       c3 = 0;
@@ -31,7 +32,7 @@ function _reportSessionMeaningfullyOnline() {
           const _Date = Date;
           obj3[1] = Date.now();
           obj1.dispatch(obj3);
-          let c5 = 3;
+          c5 = 3;
         }
       }
       obj3 = callback(1208);
@@ -51,7 +52,7 @@ function _reportSessionMeaningfullyOnline() {
     c3 = 0;
     return arg1;
   });
-  const _reportSessionMeaningfullyOnline = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -60,7 +61,8 @@ function _reportSessionMeaningfullyOnline() {
   }
   return applyArgumentsResult;
 }
-let closure_8 = 5 * require("set").Millis.MINUTE;
+let closure_8 = 5 * setDefault.Millis.MINUTE;
+initializeDefault;
 class FriendOnlineTimerManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -84,42 +86,42 @@ class FriendOnlineTimerManager extends tmp2 {
           }
     };
     applyArgumentsResult.start = function start() {
-      const NotifyFriendsOnComeOnline = applyArgumentsResult(outer1_2[10]).NotifyFriendsOnComeOnline;
+      const NotifyFriendsOnComeOnline = applyArgumentsResult(closure_1_2[10]).NotifyFriendsOnComeOnline;
       let setting = NotifyFriendsOnComeOnline.getSetting();
       if (setting) {
-        setting = outer1_5.isCooldownElapsed();
+        setting = closure_1_5.isCooldownElapsed();
       }
       if (setting) {
         setting = null == applyArgumentsResult.timerId;
       }
       if (setting) {
         let items = [, ];
-        ({ ONLINE: arr[0], STREAMING: arr[1] } = outer1_7);
-        setting = items.includes(outer1_4.getStatus());
+        ({ ONLINE: arr[0], STREAMING: arr[1] } = closure_1_7);
+        setting = items.includes(closure_1_4.getStatus());
       }
       if (setting) {
         const _setTimeout = setTimeout;
         applyArgumentsResult.timerId = setTimeout(() => {
           closure_0.timerId = null;
           const items = [, ];
-          ({ ONLINE: arr[0], STREAMING: arr[1] } = outer1_7);
-          let hasItem = items.includes(outer1_4.getStatus());
+          ({ ONLINE: arr[0], STREAMING: arr[1] } = closure_1_7);
+          let hasItem = items.includes(closure_1_4.getStatus());
           if (hasItem) {
-            hasItem = outer1_5.isCooldownElapsed();
+            hasItem = closure_1_5.isCooldownElapsed();
           }
           if (hasItem) {
             (function reportSessionMeaningfullyOnline() {
               const self = this;
               const apply = closure_9.apply;
               if (typeof apply === "unknown") {
-                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+                applyArgumentsResult = HermesBuiltin.applyArguments(self);
               } else {
                 applyArgumentsResult = apply(self, arguments);
               }
               return applyArgumentsResult;
             })();
           }
-        }, outer1_8);
+        }, closure_1_8);
       }
     };
     applyArgumentsResult.clear = function clear() {
@@ -140,6 +142,6 @@ prototype["_terminate"] = function _terminate() {
   this.clear();
 };
 const friendOnlineTimerManager = new FriendOnlineTimerManager();
-const result = require("initialize").fileFinishedImporting("modules/notifications/friend_online/FriendOnlineTimer.tsx");
+const result = require("set").fileFinishedImporting("modules/notifications/friend_online/FriendOnlineTimer.tsx");
 
 export default friendOnlineTimerManager;

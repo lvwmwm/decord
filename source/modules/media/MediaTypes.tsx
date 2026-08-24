@@ -1,14 +1,18 @@
-// Module ID: 4810
-// Function ID: 4811
+// Module ID: 4815
+// Function ID: 4816
 // Name: messageAttachmentToUnfurledMediaItem
-// Dependencies: [676, 1403, 1954, 4811, 1487, 2]
+// Dependencies: [676, 1403, 1954, 4816, 1487, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
-// Module 4810 (messageAttachmentToUnfurledMediaItem)
-import { MessageAttachmentFlags } from "ME";
+// Module 4815 (messageAttachmentToUnfurledMediaItem)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import hasFlag from "hasFlag" /* 1403 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
+import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4816 */;
 
 function messageAttachmentToUnfurledMediaItem(flags) {
-  let obj = require(1403) /* hasFlag */;
+  obj = hasFlag;
   let num = flags.flags;
   if (num == null) {
     num = 0;
@@ -37,9 +41,10 @@ function messageAttachmentToUnfurledMediaItem(flags) {
   obj[10] = num4;
   return obj;
 }
+const MessageAttachmentFlags = ME.MessageAttachmentFlags;
 let obj = { EXPLICIT: 1, [1]: "EXPLICIT", GORE: 2, [2]: "GORE", SELF_HARM: 4, [4]: "SELF_HARM" };
 obj = { IS_ANIMATED: 1, [1]: "IS_ANIMATED" };
-const result = require("PermissionOverwriteType").fileFinishedImporting("modules/media/MediaTypes.tsx");
+const result = set.fileFinishedImporting("modules/media/MediaTypes.tsx");
 
 export const ContentScanFlags = obj;
 export const ImageEncoder = { NATIVE: "native", JPEGLI: "jpegli", JPEG_IOS: "jpeg_ios", PASSTHROUGH: "passthrough" };
@@ -48,7 +53,7 @@ export const toContentScanMetadata = function toContentScanMetadata(version) {
 };
 export const UnfurledMediaItemFlags = obj;
 export const toUnfurledMediaItem = function toUnfurledMediaItem(media) {
-  let obj = { url: media.url, proxyUrl: media.proxy_url, height: media.height, width: media.width, placeholder: media.placeholder, placeholderVersion: media.placeholder_version, contentType: media.content_type, originalContentType: media.original_content_type, loadingState: media.loading_state, contentScanMetadata: null, flags: null };
+  obj = { url: media.url, proxyUrl: media.proxy_url, height: media.height, width: media.width, placeholder: media.placeholder, placeholderVersion: media.placeholder_version, contentType: media.content_type, originalContentType: media.original_content_type, loadingState: media.loading_state, contentScanMetadata: null, flags: null };
   let tmp;
   if (null != media.content_scan_metadata) {
     obj = { version: null, flags: null };
@@ -75,16 +80,16 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(conten
         if (null != obj3.toURLSafe(contentType.proxyUrl)) {
           str3 = "VIDEO";
         }
-        obj3 = importDefault(1487);
+        obj3 = isDiscordProxiedAssetUrlDefault;
       }
     }
     str = str3;
-    tmpResult = require(4811) /* urlMatchesFileExtension */;
+    tmpResult = urlMatchesFileExtension;
   }
   return str;
 };
 export const messageAttachmentToMediaItem = function messageAttachmentToMediaItem(found2, tmp2Result) {
-  let obj = {};
+  obj = {};
   const merged = Object.assign(messageAttachmentToUnfurledMediaItem(found2));
   let str = "IMAGE";
   if (!obj2.isImageFile(found2.filename)) {
@@ -93,7 +98,7 @@ export const messageAttachmentToMediaItem = function messageAttachmentToMediaIte
       str2 = "VIDEO";
     }
     str = str2;
-    tmp2Result = require(4811) /* urlMatchesFileExtension */;
+    tmp2Result = urlMatchesFileExtension;
   }
   obj.type = str;
   obj.alt = found2.description;
@@ -124,7 +129,7 @@ export const getMediaItemDisplayUrl = function getMediaItemDisplayUrl(type) {
   } else {
     if ("VIDEO" === type.type) {
       if (null != type.proxyUrl) {
-        let str = importDefault(1487).toURLSafe(type.proxyUrl);
+        let str = isDiscordProxiedAssetUrlDefault.toURLSafe(type.proxyUrl);
         str = null;
         if (null != str) {
           const searchParams = str.searchParams;

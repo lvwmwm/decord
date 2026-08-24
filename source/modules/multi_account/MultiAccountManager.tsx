@@ -1,14 +1,17 @@
-// Module ID: 16640
-// Function ID: 16641
+// Module ID: 16736
+// Function ID: 16737
 // Name: _initialize
-// Dependencies: [1922, 13268, 5038, 709, 13188, 2]
+// Dependencies: [1922, 13326, 5043, 709, 13243, 2]
 
-// Module 16640 (_initialize)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import initialize from "initialize";
-import "initialize";
+// Module 16736 (_initialize)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 5043 */;
+import noop from "noop" /* 13243 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "initialize" /* 13326 */;
 
-let require = arg1;
+require = arg1;
+initializeDefault;
 class MultiAccountManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -22,9 +25,9 @@ class MultiAccountManager extends tmp2 {
           }
     };
     applyArgumentsResult.handleConnectionOpen = function handleConnectionOpen() {
-      let switchResult = outer1_4.getSwitchResult();
+      let switchResult = closure_1_4.getSwitchResult();
       if (null != switchResult) {
-        const currentUser = outer1_3.getCurrentUser();
+        const currentUser = closure_1_3.getCurrentUser();
         if (null != currentUser) {
           let obj = closure_0;
           if (switchResult.success) {
@@ -34,7 +37,7 @@ class MultiAccountManager extends tmp2 {
             obj.onSwitchError(currentUser);
             obj2 = obj;
           }
-          obj = applyArgumentsResult(outer1_2[4]);
+          obj = applyArgumentsResult(closure_1_2[4]);
           const result = obj.setAccountSwitchUserId(null);
           obj2.onSwitchComplete();
         }
@@ -45,11 +48,11 @@ class MultiAccountManager extends tmp2 {
 }
 const prototype = MultiAccountManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  const subscription = importDefault(709).subscribe("CONNECTION_OPEN", this.handleConnectionOpen);
+  const subscription = dispatcherDefault.subscribe("CONNECTION_OPEN", this.handleConnectionOpen);
   this.handleConnectionOpen();
 };
 prototype["_terminate"] = function _terminate() {
-  importDefault(709).unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen);
+  dispatcherDefault.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen);
 };
 prototype["handleLogout"] = function handleLogout(isSwitchingAccount) {
   if (isSwitchingAccount.isSwitchingAccount) {
@@ -58,8 +61,8 @@ prototype["handleLogout"] = function handleLogout(isSwitchingAccount) {
   }
 };
 prototype["handleMultiAccountSwitchStart"] = function handleMultiAccountSwitchStart(targetUserId) {
-  const result = require(13188) /* noop */.setAccountSwitchUserId(targetUserId.targetUserId);
+  const result = noop.setAccountSwitchUserId(targetUserId.targetUserId);
 };
-let result = require("initialize").fileFinishedImporting("modules/multi_account/MultiAccountManager.tsx");
+let result = require("set").fileFinishedImporting("modules/multi_account/MultiAccountManager.tsx");
 
 export default MultiAccountManager;

@@ -1,38 +1,39 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 11948
+// Function ID: 11949
 // Name: InviteErrorBase
-// Dependencies: [19, 17, 676, 21, 4661, 712, 1363, 4310, 11900, 11901, 11902, 1236, 4734, 4745, 1435, 1297, 11903, 7188, 1993, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 1363, 4314, 11949, 11950, 11951, 1236, 4739, 4750, 1435, 1297, 11952, 7226, 1994, 2]
 // Exports: default
 
-// Module 11899 (InviteErrorBase)
-import "set";
-import get_ActivityIndicator from "GuildIconSizes";
-import ME from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11948 (InviteErrorBase)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import combinedDefault from "combined" /* 1994 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 7226 */;
+import getDescriptiveInviteError from "getDescriptiveInviteError" /* 11951 */;
+import registerAssetDefault from "registerAsset" /* 11952 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c3;
-let c4;
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function InviteErrorBase(invite) {
-  let inviteError;
-  let require;
   ({ onPressClose: require, inviteError } = invite);
-  const tmp = createCacheKey();
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  const tmp = callback3();
+  let obj = AccessibilityAnnouncer;
   const tmp4 = importDefault;
-  const tmp4Result = importDefault(obj.isThemeDark(importDefault(4310)()) ? 11900 : 11901);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 11949 : 11950);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
-  const descriptiveInviteError = require(11902) /* getDescriptiveInviteError */.getDescriptiveInviteError(code);
+  const descriptiveInviteError = getDescriptiveInviteError.getDescriptiveInviteError(code);
   if (invite.invite.state === constants3.BANNED) {
     const intl2 = tmp2(1236).intl;
     let stringResult = intl2.string(tmp2(1236).t["GzD/aa"]);
@@ -57,24 +58,24 @@ function InviteErrorBase(invite) {
     const intl3 = tmp2(1236).intl;
     title = intl3.string(tmp2(1236).t.u9zxnX);
   }
-  const obj1 = { children: null };
+  obj1 = { children: null };
   obj[3] = title;
   function handlePressClose() {
     callback();
   }
-  items[1] = callback(require(4734) /* Text */.Text, obj);
-  items[2] = callback(require(4734) /* Text */.Text, { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult });
+  items[1] = callback(Text.Text, obj);
+  items[2] = callback(Text.Text, { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult });
   const obj3 = { variant: "primary", size: "lg", text: null, onPress: null };
   const intl4 = tmp2(1236).intl;
-  obj3[2] = intl4.string(require(1236) /* getSystemLocale */.t.wcqOoF);
+  obj3[2] = intl4.string(getSystemLocale.t.wcqOoF);
   obj3[3] = handlePressClose;
-  items[3] = callback(require(4745) /* Button */.Button, obj3);
+  items[3] = callback(Button.Button, obj3);
   obj1[0] = items;
   return closure_10(closure_9, obj1);
 }
 function InviteDisabledError(onPressClose) {
   onPressClose = onPressClose.onPressClose;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const guild = onPressClose.invite.guild;
   if (null == guild) {
     return null;
@@ -82,58 +83,59 @@ function InviteDisabledError(onPressClose) {
     function handlePressClose() {
       onPressClose();
     }
-    let obj = importDefault(1435);
+    let obj = getAvatarURLDefault;
     obj = { id: null, icon: null, size: 64, canAnimate: false };
     ({ id: obj2[0], icon: obj2[1] } = guild);
     obj = { children: null };
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.disabledView;
     const guildIconURL = obj.getGuildIconURL(obj);
     const obj2 = { style: null, source: null };
     obj2[0] = tmp.disabledPauseIcon;
-    obj2[1] = importDefault(11903);
+    obj2[1] = registerAssetDefault;
     const items = [callback(onPressClose(1297).Icon, obj2), ];
     const obj3 = { style: null, icon: null, size: null };
     obj3[0] = tmp.guildIcon;
     obj3[1] = guildIconURL;
-    obj3[2] = onPressClose(7188).GuildIconSizes.XLARGE;
-    items[1] = callback(importDefault(7188), obj3);
+    obj3[2] = onPressClose(7226).GuildIconSizes.XLARGE;
+    items[1] = callback(GuildIconSizesDefault, obj3);
     obj1[1] = items;
     const items1 = [callback2(closure_4, obj1), , , ];
     const obj4 = { style: null, variant: "heading-xl/semibold", color: "text-feedback-critical", children: null };
     obj4[0] = tmp.disabledTitle;
     const intl = onPressClose(1236).intl;
     obj4[3] = intl.string(onPressClose(1236).t.jlLX2Z);
-    items1[1] = callback(onPressClose(4734).Text, obj4);
+    items1[1] = callback(onPressClose(4739).Text, obj4);
     const obj5 = { style: null, variant: "text-md/normal", color: "text-default", children: null };
     obj5[0] = tmp.disabledBody;
     const intl2 = onPressClose(1236).intl;
     const obj6 = { articleLink: null };
-    const tmp10 = importDefault(7188);
-    obj6[0] = importDefault(1993).getArticleURL(constants2.INVITE_DISABLED);
+    const tmp10 = GuildIconSizesDefault;
+    obj6[0] = combinedDefault.getArticleURL(constants2.INVITE_DISABLED);
     obj5[3] = intl2.format(onPressClose(1236).t.RXSeLl, obj6);
-    items1[2] = callback(onPressClose(4734).Text, obj5);
+    items1[2] = callback(onPressClose(4739).Text, obj5);
     const obj7 = { variant: "primary", size: "lg", text: null, onPress: null };
     const intl3 = onPressClose(1236).intl;
     obj7[2] = intl3.string(onPressClose(1236).t["yD/zkn"]);
     obj7[3] = handlePressClose;
-    items1[3] = callback(onPressClose(4745).Button, obj7);
+    items1[3] = callback(onPressClose(4750).Button, obj7);
     obj[0] = items1;
     return callback2(closure_9, obj);
   }
 }
+noopAll;
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
 ({ AbortCodes: c5, HelpdeskArticles: closure_6, InviteStates: error } = ME);
-({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { expiredImage: { marginTop: 32, marginBottom: 32 }, expiredTitle: { marginBottom: 8, backgroundColor: "transparent", textAlign: "center" }, expiredBody: { backgroundColor: "transparent", marginBottom: 24 }, disabledView: { justifyContent: "center", alignItems: "center" }, disabledPauseIcon: null, guildIcon: null, disabledTitle: null, disabledBody: null };
-createCacheKey = { position: "absolute", alignSelf: "center", tintColor: require("Themes").colors.WHITE, width: 42, height: 42 };
+createCacheKey = { position: "absolute", alignSelf: "center", tintColor: ThemesDefault.colors.WHITE, width: 42, height: 42 };
 createCacheKey[4] = createCacheKey;
-createCacheKey[5] = { borderRadius: require("Themes").radii.lg, opacity: 0.2, zIndex: -999 };
+createCacheKey[5] = { borderRadius: ThemesDefault.radii.lg, opacity: 0.2, zIndex: -999 };
 createCacheKey[6] = { marginTop: 16, marginBottom: 8, textAlign: "center" };
 createCacheKey[7] = { textAlign: "center", marginBottom: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { borderRadius: require("Themes").radii.lg, opacity: 0.2, zIndex: -999 };
-const result = require("ME").fileFinishedImporting("modules/accept_invite/native/InviteError.tsx");
+let closure_11 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderRadius: ThemesDefault.radii.lg, opacity: 0.2, zIndex: -999 };
+const result = require("set").fileFinishedImporting("modules/accept_invite/native/InviteError.tsx");
 
 export default function InviteError(inviteError) {
   inviteError = inviteError.inviteError;

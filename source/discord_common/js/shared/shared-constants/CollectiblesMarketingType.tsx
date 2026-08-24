@@ -1,9 +1,11 @@
-// Module ID: 5332
-// Function ID: 5333
+// Module ID: 5337
+// Function ID: 5338
 // Name: CollectiblesMarketingType
 // Dependencies: [2]
 
-// Module 5332 (CollectiblesMarketingType)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesMarketingType.tsx");
+// Module 5337 (CollectiblesMarketingType)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesMarketingType.tsx");
 
 export const CollectiblesMarketingType = { COACHTIP: 0, [0]: "COACHTIP", BADGE: 1, [1]: "BADGE", BANNER: 2, [2]: "BANNER", COACHMARK: 3, [3]: "COACHMARK", TAB_TOOLTIP: 4, [4]: "TAB_TOOLTIP" };

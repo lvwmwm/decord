@@ -1,26 +1,22 @@
-// Module ID: 15649
-// Function ID: 15650
-// Dependencies: [19, 17, 10850, 14450, 21, 4661, 712, 15650, 4115, 4744, 8484, 589, 4343, 8488, 8489, 1236, 10003, 15648, 8035, 1297, 4230, 2]
+// Module ID: 15718
+// Function ID: 15719
+// Dependencies: [19, 17, 10889, 14518, 21, 4668, 712, 15719, 4119, 4749, 8523, 589, 4347, 8527, 8528, 1236, 10042, 15717, 8074, 1297, 4234, 2]
 
-// Module 15649
-import importAllResult from "Button";
-import { View } from "YouBarButtonIcon";
-import getTimeSafe from "getTimeSafe";
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 15718
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "getTimeSafe" /* 10889 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14518 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let YOU_BAR_BUTTON_ICON_SIZE;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 let c3 = importAllResult;
 ({ YOU_BAR_SPRING_CONFIG: closure_6, YOU_BAR_BUTTON_HIT_SLOP: error, YOU_BAR_BUTTON_ICON_SIZE } = CONNECTION_BANNER_HEIGHT);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let obj = { icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, iconContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, overdueReminderDot: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_NOTIFICATION };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION };
 obj[2] = obj;
 let closure_10 = createCacheKey.createStyles(obj);
 let closure_11 = { code: "function YouBarNotificationsButtonTsx1(){const{withSpring,badgeCount,YOU_BAR_SPRING_CONFIG,tokens}=this.__closure;return{transform:[{scaleX:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)}],marginLeft:withSpring(badgeCount>0?tokens.space.PX_4:0,YOU_BAR_SPRING_CONFIG),opacity:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)};}" };
@@ -40,7 +36,7 @@ const memoResult = importAllResult.memo(function YouBarNotificationsButton(hasNa
       num = 1;
     }
     obj = { transform: null, marginLeft: null, opacity: null };
-    obj = { scaleX: obj.withSpring(num, outer1_6) };
+    obj = { scaleX: obj.withSpring(num, closure_1_6) };
     const items = [obj];
     obj[0] = items;
     let tmpResult = tmp(tmp2[9]);
@@ -48,13 +44,13 @@ const memoResult = importAllResult.memo(function YouBarNotificationsButton(hasNa
     if (_undefined > 0) {
       num2 = isForLaterExperimentOn(tmp2[6]).space.PX_4;
     }
-    obj[1] = tmpResult.withSpring(num2, outer1_6);
+    obj[1] = tmpResult.withSpring(num2, closure_1_6);
     tmpResult = tmp(tmp2[9]);
     let num3 = 0;
     if (_undefined > 0) {
       num3 = 1;
     }
-    obj[2] = tmpResult.withSpring(num3, outer1_6);
+    obj[2] = tmpResult.withSpring(num3, closure_1_6);
     return obj;
   };
   obj = { withSpring: _require(callback[9]).withSpring, badgeCount: value, YOU_BAR_SPRING_CONFIG: closure_6, tokens: isForLaterExperimentOn(callback[6]) };
@@ -120,7 +116,7 @@ const memoResult = importAllResult.memo(function YouBarNotificationsButton(hasNa
   let combined = formatToPlainStringResult;
   if (tmp10) {
     const intl2 = tmp4(tmp3[15]).intl;
-    const obj1 = { count: null };
+    obj1 = { count: null };
     obj1[0] = stateFromStores;
     const _HermesInternal = HermesInternal;
     combined = "" + formatToPlainStringResult + ", " + intl2.formatToPlainString(tmp4(tmp3[15]).t.yBmFPA, obj1);
@@ -135,9 +131,8 @@ const memoResult = importAllResult.memo(function YouBarNotificationsButton(hasNa
   const obj4 = { style: tmp.iconContainer, children: null };
   const tmp14Result = closure_8(_require(callback[16]).BellIcon, obj);
   const items4 = [closure_8(_require(callback[17]).YouBarButtonIcon, { icon: closure_8(_require(callback[16]).BellIcon, obj), hasBadge: tmp10, badgeStyle: tmp.overdueReminderDot }), ];
-  const obj6 = { style: animatedStyle, children: null };
-  obj6[1] = closure_8(_require(callback[19]).Badge, { value });
-  items4[1] = closure_8(tmp2(callback[8]).View, obj6);
+  const obj5 = { icon: closure_8(_require(callback[16]).BellIcon, obj), hasBadge: tmp10, badgeStyle: tmp.overdueReminderDot };
+  items4[1] = closure_8(tmp2(callback[8]).View, { style: animatedStyle, children: closure_8(_require(callback[19]).Badge, { value }) });
   obj4[1] = items4;
   obj2[5] = callback(View, obj4);
   obj2[6] = function onPress() {
@@ -151,6 +146,6 @@ const memoResult = importAllResult.memo(function YouBarNotificationsButton(hasNa
   obj3[0] = closure_8(_require(callback[18]).IconButton, obj2);
   return closure_8(_require(callback[17]).YouBarButtonContainer, obj3);
 });
-let result = require("getTimeSafe").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarNotificationsButton.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarNotificationsButton.tsx");
 
 export default memoResult;

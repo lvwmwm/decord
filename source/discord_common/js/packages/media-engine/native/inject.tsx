@@ -1,19 +1,21 @@
-// Module ID: 4499
-// Function ID: 4500
+// Module ID: 4503
+// Function ID: 4504
 // Name: inject
 // Dependencies: [2]
 // Exports: getOpenH264LibraryPath, getVoiceEngine, inject, setProcessPriority, supported, supportsFeature
 
-// Module 4499 (inject)
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/inject.tsx");
+// Module 4503 (inject)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/native/inject.tsx");
 
 export function inject(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
 }
 export const supported = function supported() {
   if (null == uiStore) {
     const _Error = Error;
-    const error = new Error("Native dependencies have not been injected.");
+    error = new Error("Native dependencies have not been injected.");
     throw error;
   } else {
     return uiStore.supported();
@@ -22,7 +24,7 @@ export const supported = function supported() {
 export const supportsFeature = function supportsFeature(arg0) {
   if (null == uiStore) {
     const _Error = Error;
-    const error = new Error("Native dependencies have not been injected.");
+    error = new Error("Native dependencies have not been injected.");
     throw error;
   } else {
     return uiStore.supportsFeature(arg0);
@@ -31,7 +33,7 @@ export const supportsFeature = function supportsFeature(arg0) {
 export const setProcessPriority = function setProcessPriority(arg0) {
   if (null == uiStore) {
     const _Error = Error;
-    const error = new Error("Native dependencies have not been injected.");
+    error = new Error("Native dependencies have not been injected.");
     throw error;
   } else {
     uiStore.setProcessPriority(arg0);
@@ -40,7 +42,7 @@ export const setProcessPriority = function setProcessPriority(arg0) {
 export const getVoiceEngine = function getVoiceEngine() {
   if (null == uiStore) {
     const _Error = Error;
-    const error = new Error("Native dependencies have not been injected.");
+    error = new Error("Native dependencies have not been injected.");
     throw error;
   } else {
     let tmp = voiceEngine;
@@ -54,7 +56,7 @@ export const getVoiceEngine = function getVoiceEngine() {
 export const getOpenH264LibraryPath = function getOpenH264LibraryPath() {
   if (null == uiStore) {
     const _Error = Error;
-    const error = new Error("Native dependencies have not been injected.");
+    error = new Error("Native dependencies have not been injected.");
     throw error;
   } else {
     return uiStore.getOpenH264LibraryPath();

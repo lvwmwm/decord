@@ -1,27 +1,28 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 10603
+// Function ID: 10604
 // Name: useCreateThreadViewProps
-// Dependencies: [1391, 10167, 647, 2]
+// Dependencies: [1391, 10206, 647, 2]
 // Exports: default
 
-// Module 10564 (useCreateThreadViewProps)
-import ensureGuildLoaded from "ensureGuildLoaded";
+// Module 10603 (useCreateThreadViewProps)
+import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 10206 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
-let require = arg1;
-const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/threads/native/useCreateThreadViewProps.tsx");
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/threads/native/useCreateThreadViewProps.tsx");
 
 export default function useCreateThreadViewProps(arg0) {
-  const tmp = importDefault(10167)(arg0);
-  const require = tmp;
-  let obj = require(647) /* defaultAreStatesEqual */;
-  const items = [ensureGuildLoaded];
+  const tmp = useGetThreadDraftSettingsDefault(arg0);
+  const _require = tmp;
+  let obj = _require(647);
+  const items = [closure_3];
   const items1 = [tmp];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let parentChannelId;
-    if (outer1_3 != null) {
-      parentChannelId = tmp.parentChannelId;
+    if (parentChannelId != null) {
+      parentChannelId = parentChannelId.parentChannelId;
     }
-    return outer1_3.getChannel(parentChannelId);
+    return closure_1_3.getChannel(parentChannelId);
   }, items1);
   let tmp3 = null;
   if (null != tmp) {

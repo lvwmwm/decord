@@ -1,11 +1,13 @@
-// Module ID: 13086
-// Function ID: 13087
+// Module ID: 13142
+// Function ID: 13143
 // Name: getKrispModel
-// Dependencies: [4499, 2]
+// Dependencies: [4503, 2]
 // Exports: getKrispModel, setKrispModelOverride, setKrispSuppressionLevel
 
-// Module 13086 (getKrispModel)
-const result = require("set").fileFinishedImporting("modules/noise_cancellation/native/KrispUtils.tsx");
+// Module 13142 (getKrispModel)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/noise_cancellation/native/KrispUtils.tsx");
 
 export const getKrispModel = function getKrispModel() {
   return new Promise((arg0) => {

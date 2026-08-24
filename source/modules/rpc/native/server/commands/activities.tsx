@@ -1,21 +1,18 @@
-// Module ID: 13880
-// Function ID: 13881
+// Module ID: 13946
+// Function ID: 13947
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [5, 4277, 676, 4839, 4375, 13849, 8752, 8918, 13838, 4840, 4851, 8701, 4274, 2]
+// Dependencies: [5, 4281, 676, 4844, 4379, 13913, 8789, 8955, 13901, 4845, 4856, 8738, 4278, 2]
 
-// Module 13880 (RPC_LOCAL_SCOPE)
-import validateOpenInviteDialog from "validateOpenInviteDialog";
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
-import ME from "ME";
-import { NativePermissionTypes } from "NativePermissionStatus";
+// Module 13946 (RPC_LOCAL_SCOPE)
+import prototypeDefault from "prototype" /* 8789 */;
+import showInstantInviteActionSheet from "showInstantInviteActionSheet" /* 8955 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 13913 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4281 */;
+import ME from "ME" /* 676 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4844 */;
 
-let RPCCommands;
-let RPC_AUTHENTICATED_SCOPE;
-let RPC_LOCAL_SCOPE;
-let RPC_SCOPE_CONFIG;
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);
 ({ InstantInviteSources: c4, RPCCommands, RPCErrors: c5 } = ME);
 let obj = {};
@@ -26,21 +23,21 @@ obj[RPC_SCOPE_CONFIG.ANY] = items;
 obj[0] = obj;
 obj[1] = function handler(socket) {
   socket = socket.socket;
-  let obj = require(13849) /* validateOpenInviteDialog */;
+  let obj = validateOpenInviteDialog;
   const result = obj.validateOpenInviteDialog(socket);
   if (null != result.frame) {
     obj = { errorCode: null };
     obj[0] = constants2.UNKNOWN_ERROR;
-    const tmp12 = new importDefault(8752)(obj, "Cannot support frames (yet)");
+    const tmp12 = new prototypeDefault(obj, "Cannot support frames (yet)");
     throw tmp12;
   } else {
     obj = { source: null, targetApplicationId: null };
     obj[0] = constants.ACTIVITY_INVITE;
     const id = socket.application.id;
     obj[1] = id;
-    const result1 = tmp(8918).showInstantInviteActionSheet(tmp4, obj);
+    const result1 = showInstantInviteActionSheet.showInstantInviteActionSheet(tmp4, obj);
   }
-  tmp = require;
+  const tmp = require;
 };
 obj[RPCCommands.OPEN_INVITE_DIALOG] = obj;
 let obj1 = { scope: null, handler: null };
@@ -62,7 +59,7 @@ obj1[1] = function handler(socket) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -83,26 +80,26 @@ obj1[1] = function handler(socket) {
             id = undefined;
             c2 = undefined;
             c3 = undefined;
-            id = outer1_0.application.id;
+            id = closure_1_0.application.id;
             if (null == id) {
-              const obj1 = { errorCode: null };
-              obj1[0] = outer1_5.INVALID_COMMAND;
-              const tmp62 = new outer1_1(c2[6])(obj1, "No application.");
+              obj1 = { errorCode: null };
+              obj1[0] = closure_1_5.INVALID_COMMAND;
+              const tmp62 = new closure_1_1(closure_2[6])(obj1, "No application.");
               throw tmp62;
             } else {
-              const tmp92 = outer1_1(c2[8])();
+              const tmp92 = closure_1_1(closure_2[8])();
               id = undefined;
               if (tmp92 != null) {
                 id = tmp92.id;
               }
               if (null == id) {
                 const obj2 = { errorCode: null };
-                obj2[0] = outer1_5.UNKNOWN_ERROR;
-                const tmp54 = new outer1_1(c2[6])(obj2, "Unable to find selected channel");
+                obj2[0] = closure_1_5.UNKNOWN_ERROR;
+                const tmp54 = new closure_1_1(closure_2[6])(obj2, "Unable to find selected channel");
                 throw tmp54;
               } else {
-                let obj11 = outer1_1(c2[9]);
-                const permission = obj11.requestPermission(outer1_6.PHOTOS);
+                let obj11 = closure_1_1(closure_2[9]);
+                const permission = obj11.requestPermission(closure_1_6.PHOTOS);
                 c2 = 1;
                 c3 = 1;
                 const obj3 = { value: null, done: false };
@@ -130,7 +127,7 @@ obj1[1] = function handler(socket) {
             return obj5;
           } else {
             const obj6 = { errorCode: null };
-            obj6[0] = outer1_5.UNKNOWN_ERROR;
+            obj6[0] = closure_1_5.UNKNOWN_ERROR;
             const tmp42 = new tmp86(tmp87[6])(obj6, "Missing photo permissions");
             throw tmp42;
           }
@@ -144,11 +141,11 @@ obj1[1] = function handler(socket) {
             obj7[0] = arg1;
             return obj7;
           } else {
-            c2 = arg1.assets[0];
-            if (null == c2) {
+            closure_2 = arg1.assets[0];
+            if (null == closure_2) {
               const obj8 = { errorCode: null };
-              obj8[0] = outer1_5.UNKNOWN_ERROR;
-              const tmp36 = new outer1_1(c2[6])(obj8, "No image selected");
+              obj8[0] = closure_1_5.UNKNOWN_ERROR;
+              const tmp36 = new closure_1_1(closure_2[6])(obj8, "No image selected");
               throw tmp36;
             } else {
               const obj9 = { name: null, type: null, uri: null };
@@ -158,7 +155,7 @@ obj1[1] = function handler(socket) {
               c2 = 3;
               c3 = 1;
               const obj10 = { value: null, done: false };
-              obj10[0] = outer1_0(c2[11]).uploadImageAttachment(id, id, obj9);
+              obj10[0] = closure_1_0(closure_2[11]).uploadImageAttachment(id, id, obj9);
               return obj10;
             }
           }
@@ -174,7 +171,7 @@ obj1[1] = function handler(socket) {
           c3 = arg1;
           if (null != c3) {
             if (null != c3.url) {
-              if (!(c3 instanceof outer1_1(c2[12]))) {
+              if (!(c3 instanceof closure_1_1(closure_2[12]))) {
                 obj = { image_url: null };
                 obj[0] = c3.url;
                 c3 = 3;
@@ -185,9 +182,9 @@ obj1[1] = function handler(socket) {
             }
           }
           const obj13 = { errorCode: null };
-          obj13[0] = outer1_5.UNKNOWN_ERROR;
+          obj13[0] = closure_1_5.UNKNOWN_ERROR;
           const _JSON = JSON;
-          let tmp20 = outer1_1(c2[6]);
+          let tmp20 = closure_1_1(closure_2[6]);
           tmp20 = new tmp20(obj13, JSON.stringify(c3));
           throw tmp20;
         }
@@ -199,6 +196,6 @@ obj1[1] = function handler(socket) {
   })();
 };
 obj[RPCCommands.INITIATE_IMAGE_UPLOAD] = obj1;
-let result = require("ME").fileFinishedImporting("modules/rpc/native/server/commands/activities.tsx");
+let result = require("set").fileFinishedImporting("modules/rpc/native/server/commands/activities.tsx");
 
 export default obj;

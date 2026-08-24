@@ -1,28 +1,28 @@
-// Module ID: 10376
-// Function ID: 10377
+// Module ID: 10416
+// Function ID: 10417
 // Name: useFetchCollectiblesProduct
-// Dependencies: [32, 19, 4521, 5301, 676, 647, 1949, 5300, 2]
+// Dependencies: [32, 19, 4526, 5306, 676, 647, 1949, 5305, 2]
 // Exports: useFetchCollectiblesProduct
 
-// Module 10376 (useFetchCollectiblesProduct)
-import _slicedToArray from "_slicedToArray";
-import { useEffect } from "noop";
-import addSku from "addSku";
-import updateCategoriesAndProducts from "updateCategoriesAndProducts";
-import { SKUProductLines } from "ME";
+// Module 10416 (useFetchCollectiblesProduct)
+import closure_2 from "_slicedToArray" /* 32 */;
+import { useEffect } from "noop" /* 19 */;
+import closure_4 from "addSku" /* 4526 */;
+import closure_5 from "updateCategoriesAndProducts" /* 5306 */;
+import { SKUProductLines } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("addSku").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProduct.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProduct.tsx");
 
 export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(skuId, arg1) {
   const _require = skuId;
-  const dependencyMap = arg1;
+  dependencyMap = arg1;
   let obj = _require(647);
-  let items = [addSku];
+  let items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let value = null;
     if (null != closure_0) {
-      value = tmp8.get(tmp);
+      value = closure_4.get(tmp);
     }
     return value;
   });
@@ -38,7 +38,7 @@ export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(
     return items;
   }), 2);
   const first = tmp6[0];
-  addSku = tmp8;
+  closure_4 = tmp8;
   tmpResult = tmp(647);
   const items2 = [stateFromStores1];
   stateFromStores1 = tmpResult.useStateFromStores(items2, () => stateFromStores1.isProductFetchBackedOff(closure_0));
@@ -65,12 +65,12 @@ export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(
       tmp2 = tmp4;
     }
     if (!tmp2) {
-      tmp2 = _slicedToArray;
+      tmp2 = closure_2;
     }
     if (!tmp2) {
       let state;
-      if (tmp8 != null) {
-        state = tmp8.state;
+      if (closure_4 != null) {
+        state = closure_4.state;
       }
       tmp2 = "fetching" === state;
     }

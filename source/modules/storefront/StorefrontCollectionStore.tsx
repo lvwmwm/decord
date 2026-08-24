@@ -1,13 +1,15 @@
-// Module ID: 11999
-// Function ID: 12000
+// Module ID: 12048
+// Function ID: 12049
 // Name: getFetchState
 // Dependencies: [589, 709, 2]
 
-// Module 11999 (getFetchState)
-import { Store } from "initialize";
+// Module 12048 (getFetchState)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let closure_0 = {};
 let closure_1 = {};
+const Store = initializeDefault.Store;
 class StorefrontCollectionStore extends Store {
 }
 const prototype = StorefrontCollectionStore.prototype;
@@ -133,7 +135,7 @@ prototype["getCollectionsForApplication"] = function getCollectionsForApplicatio
   return collections;
 };
 StorefrontCollectionStore.displayName = "StorefrontCollectionStore";
-const storefrontCollectionStore = new StorefrontCollectionStore(require("dispatcher"), {
+const storefrontCollectionStore = new StorefrontCollectionStore(dispatcherDefault, {
   STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH: function handleCollectionsWithProductsFetch(collectionIds) {
     collectionIds = collectionIds.collectionIds;
     const item = collectionIds.forEach((arg0) => {
@@ -145,10 +147,8 @@ const storefrontCollectionStore = new StorefrontCollectionStore(require("dispatc
     });
   },
   STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH_SUCCESS: function handleCollectionsWithProductsFetchSuccess(arg0) {
-    let collectionIds;
-    let collections;
     ({ collectionIds, collections } = arg0);
-    let closure_0;
+    closure_0 = undefined;
     let set;
     closure_0 = Date.now();
     set = new Set();
@@ -163,13 +163,11 @@ const storefrontCollectionStore = new StorefrontCollectionStore(require("dispatc
     });
   },
   STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH_FAILURE: function handleCollectionsWithProductsFetchFailure(arg0) {
-    let closure_0;
-    let collectionIds;
     ({ collectionIds, apiError: closure_0 } = arg0);
-    let closure_1;
+    closure_1 = undefined;
     closure_1 = Date.now();
     const item = collectionIds.forEach((arg0) => {
-      outer1_0[arg0] = { state: "error", fetchedAt: closure_1, fetchError: closure_0 };
+      closure_1_0[arg0] = { state: "error", fetchedAt: closure_1, fetchError: closure_0 };
     });
   },
   STOREFRONT_COLLECTIONS_FOR_APPLICATION_FETCH: function handleCollectionsForApplicationFetch(applicationId) {
@@ -181,9 +179,6 @@ const storefrontCollectionStore = new StorefrontCollectionStore(require("dispatc
     dependencyMap2[applicationId] = { state: "loading", collections };
   },
   STOREFRONT_COLLECTIONS_FOR_APPLICATION_FETCH_SUCCESS: function handleCollectionsForApplicationFetchSuccess(collections) {
-    let applicationId;
-    let includePricing;
-    let skuTypes;
     collections = collections.collections;
     let timestamp;
     ({ applicationId, includePricing, skuTypes } = collections);
@@ -194,14 +189,12 @@ const storefrontCollectionStore = new StorefrontCollectionStore(require("dispatc
     });
   },
   STOREFRONT_COLLECTIONS_FOR_APPLICATION_FETCH_FAILURE: function handleCollectionsForApplicationFetchFailure(arg0) {
-    let apiError;
-    let applicationId;
     ({ applicationId, apiError } = arg0);
     closure_1[applicationId] = { state: "error", fetchedAt: Date.now(), fetchError: apiError };
   },
   LOGOUT: function handleLogout() {
-    let closure_0 = {};
-    let closure_1 = {};
+    closure_0 = {};
+    closure_1 = {};
   }
 });
 const result = require("set").fileFinishedImporting("modules/storefront/StorefrontCollectionStore.tsx");

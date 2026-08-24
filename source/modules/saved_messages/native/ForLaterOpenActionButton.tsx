@@ -1,31 +1,33 @@
-// Module ID: 15660
-// Function ID: 15661
+// Module ID: 15729
+// Function ID: 15730
 // Name: BadgedIcon
-// Dependencies: [19, 17, 10850, 21, 8402, 15661, 4661, 712, 4310, 4097, 4750, 8489, 4338, 10876, 589, 8484, 8479, 8482, 7159, 8488, 8035, 1236, 2]
+// Dependencies: [19, 17, 10889, 21, 8441, 15730, 4668, 712, 4314, 4100, 4755, 8528, 4342, 10915, 589, 8523, 8518, 8521, 7197, 8527, 8074, 1236, 2]
 
-// Module 15660 (BadgedIcon)
-import importAllResult from "showForLaterModal";
-import { View } from "EntitlementFeatureNames";
-import getTimeSafe from "getTimeSafe";
-import jsxProd from "getSystemLocale";
-import createCacheKey from "createCacheKey";
+// Module 15729 (BadgedIcon)
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import styleProperties from "styleProperties" /* 4755 */;
+import SolidCutoutDefault from "SolidCutout" /* 8441 */;
+import SavedMessageSortTypes from "SavedMessageSortTypes" /* 8528 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "getTimeSafe" /* 10889 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function BadgedIcon(arg0) {
-  let showRedDot;
-  let type;
   ({ type, showRedDot } = arg0);
-  let obj = require(4097) /* map */;
-  const token = obj.useToken(importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT, importDefault(4310)());
+  obj = map;
+  const token = obj.useToken(ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT, useThemeDefault());
   const tmp6 = callback2();
-  let obj1 = require(4750) /* styleProperties */;
+  obj1 = styleProperties;
   const iconSizeStyles = obj1.useIconSizeStyles("sm", true, 2);
-  if (type === require(8489) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER) {
-    let BookmarkIcon = tmp4(4338).ClockIcon;
+  if (type === SavedMessageSortTypes.SavedMessageSortTypes.REMINDER) {
+    let BookmarkIcon = tmp4(4342).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(10876).BookmarkIcon;
+    BookmarkIcon = tmp4(10915).BookmarkIcon;
   }
   obj = { style: items, children: null };
   items = [tmp6.container, iconSizeStyles];
@@ -38,13 +40,13 @@ function BadgedIcon(arg0) {
     const obj2 = { size: "sm", color: null };
     obj2[1] = token;
     obj1[1] = tmp8(BookmarkIcon, obj2);
-    const items2 = [tmp8(importDefault(8402), obj1), ];
+    const items2 = [tmp8(SolidCutoutDefault, obj1), ];
     const obj3 = { style: null };
     obj3[0] = tmp6.dot;
     items2[1] = tmp8(tmp9, obj3);
     obj[1] = items2;
     let tmp8Result = callback(tmp9, obj);
-    const tmpResult = importDefault(8402);
+    const tmpResult = SolidCutoutDefault;
   } else {
     const obj4 = { size: "sm", color: null };
     obj4[1] = token;
@@ -56,9 +58,8 @@ function BadgedIcon(arg0) {
 let c3 = importAllResult;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let obj = { shape: require("SolidCutout").CutoutShape.Circle, x: require("getIconSize").ICON_SIZE.sm - 7, y: require("getIconSize").ICON_SIZE.sm - 8, size: 10 };
-obj = { container: { aspectRatio: 1, alignItems: "center", justifyContent: "center", position: "relative" }, iconAnchor: null, dot: null };
-obj[1] = { width: require("getIconSize").ICON_SIZE.sm, height: require("getIconSize").ICON_SIZE.sm, position: "relative" };
-createCacheKey = { position: "absolute", height: 6.5, width: 6.5, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: require("Themes").radii.lg, right: -2, bottom: -0.5 };
+obj = { container: { aspectRatio: 1, alignItems: "center", justifyContent: "center", position: "relative" }, iconAnchor: { width: require("getIconSize").ICON_SIZE.sm, height: require("getIconSize").ICON_SIZE.sm, position: "relative" }, dot: null };
+createCacheKey = { position: "absolute", height: 6.5, width: 6.5, backgroundColor: ThemesDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: ThemesDefault.radii.lg, right: -2, bottom: -0.5 };
 obj[2] = createCacheKey;
 let closure_9 = createCacheKey.createStyles(obj);
 let obj1 = { width: require("getIconSize").ICON_SIZE.sm, height: require("getIconSize").ICON_SIZE.sm, position: "relative" };
@@ -67,12 +68,12 @@ const forwardRefResult = importAllResult.forwardRef((type, ref) => {
   const onOpen = type.onOpen;
   let stateFromStores1;
   let hasForLaterAccess;
-  let obj = type(stateFromStores1[14]);
-  let items = [getTimeSafe];
-  const stateFromStores = obj.useStateFromStores(items, () => getTimeSafe.hasOverdueReminder(), []);
-  let obj1 = type(stateFromStores1[14]);
-  const items1 = [getTimeSafe];
-  stateFromStores1 = obj1.useStateFromStores(items1, () => getTimeSafe.getSavedMessageCount());
+  obj = type(stateFromStores1[14]);
+  let items = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_5.hasOverdueReminder(), []);
+  obj1 = type(stateFromStores1[14]);
+  const items1 = [closure_5];
+  stateFromStores1 = obj1.useStateFromStores(items1, () => closure_5.getSavedMessageCount());
   hasForLaterAccess = type(stateFromStores1[15]).useHasForLaterAccess("ForLaterOpenActionButton");
   const items2 = [hasForLaterAccess, onOpen, stateFromStores1, type];
   obj = { ref, children: null };
@@ -101,6 +102,6 @@ const forwardRefResult = importAllResult.forwardRef((type, ref) => {
   obj[1] = closure_6(type(stateFromStores1[20]).IconButton, obj1);
   return closure_6(tmp8, obj);
 });
-const result = require("getTimeSafe").fileFinishedImporting("modules/saved_messages/native/ForLaterOpenActionButton.tsx");
+const result = require("set").fileFinishedImporting("modules/saved_messages/native/ForLaterOpenActionButton.tsx");
 
 export default forwardRefResult;

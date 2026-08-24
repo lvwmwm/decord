@@ -4,8 +4,9 @@
 // Dependencies: [19, 113]
 
 // Module 350 (noop)
-import "noop";
-import codegenNativeCommands from "codegenNativeCommands";
+import noopAll from "noop" /* 19 */;
+import codegenNativeCommandsDefault from "codegenNativeCommands" /* 113 */;
 
+noopAll;
 
-export default codegenNativeCommands({ supportedCommands: ["flashScrollIndicators", "scrollTo", "scrollToEnd", "zoomToRect"] });
+export default codegenNativeCommandsDefault({ supportedCommands: ["flashScrollIndicators", "scrollTo", "scrollToEnd", "zoomToRect"] });

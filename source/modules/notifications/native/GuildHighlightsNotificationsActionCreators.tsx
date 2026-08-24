@@ -1,25 +1,29 @@
-// Module ID: 10808
-// Function ID: 10809
+// Module ID: 10847
+// Function ID: 10848
 // Name: openGuildHighlightNotificationForPush
-// Dependencies: [10809, 676, 4342, 10810, 2007, 1236, 698, 2]
+// Dependencies: [10848, 676, 4346, 10849, 2008, 1236, 698, 2]
 // Exports: openGuildHighlightNotificationForPush
 
-// Module 10808 (openGuildHighlightNotificationForPush)
-import { NotificationUserFeedbackReasons as closure_3 } from "NotificationUserFeedbackReasons";
-import { AnalyticEvents } from "ME";
+// Module 10847 (openGuildHighlightNotificationForPush)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import NotificationUserFeedbackReasons from "NotificationUserFeedbackReasons" /* 10848 */;
 
-const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/notifications/native/GuildHighlightsNotificationsActionCreators.tsx");
+let closure_3 = NotificationUserFeedbackReasons.NotificationUserFeedbackReasons;
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/notifications/native/GuildHighlightsNotificationsActionCreators.tsx");
 
 export const openGuildHighlightNotificationForPush = function openGuildHighlightNotificationForPush(guildId, arg1, TRENDING_CONTENT_PUSH, NOTIFICATION_CENTER, arg4) {
   const _require = guildId;
-  const importDefault = arg1;
-  const dependencyMap = TRENDING_CONTENT_PUSH;
+  importDefault = arg1;
+  dependencyMap = TRENDING_CONTENT_PUSH;
   const constants = NOTIFICATION_CENTER;
-  let closure_4 = arg4;
-  let obj = importDefault(4342);
+  closure_4 = arg4;
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { guildId, feedbackSettings: null };
   obj = { reasons: null, onFeedbackShown: null, onFeedbackCompleted: null };
-  const obj1 = { value: constants.TOO_MANY, label: null };
+  obj1 = { value: constants.TOO_MANY, label: null };
   const intl = _require(1236).intl;
   obj1[1] = intl.string(_require(1236).t.pLeQp0);
   const items = [obj1, , , , ];
@@ -60,5 +64,5 @@ export const openGuildHighlightNotificationForPush = function openGuildHighlight
     obj.track(constants.FEEDBACK_FORM_SUBMITTED, obj);
   };
   obj[1] = obj;
-  obj.openLazy(_require(2007)(10810, dependencyMap.paths), "GuildHighlightsNotifications", obj);
+  obj.openLazy(_require(2008)(10849, dependencyMap.paths), "GuildHighlightsNotifications", obj);
 };

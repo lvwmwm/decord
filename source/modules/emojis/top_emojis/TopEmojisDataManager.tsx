@@ -1,14 +1,16 @@
-// Module ID: 16558
-// Function ID: 16559
+// Module ID: 16653
+// Function ID: 16654
 // Name: handleInteraction
-// Dependencies: [4197, 1925, 5038, 9304, 2]
+// Dependencies: [4201, 1925, 5043, 9341, 2]
 
-// Module 16558 (handleInteraction)
-import handleConnectionOpen from "handleConnectionOpen";
-import { EmojiInteractionPoint } from "set";
-import "initialize";
+// Module 16653 (handleInteraction)
+import initializeDefault from "initialize" /* 5043 */;
+import maybeFetchTopEmojisByGuild from "maybeFetchTopEmojisByGuild" /* 9341 */;
+import closure_2 from "handleConnectionOpen" /* 4201 */;
+import { EmojiInteractionPoint } from "set" /* 1925 */;
 
-const require = arg1;
+require = arg1;
+initializeDefault;
 class TopEmojisDataManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -20,11 +22,11 @@ TopEmojisDataManager.prototype["handleInteraction"] = function handleInteraction
   const items = [EmojiInteractionPoint.EmojiButtonMouseEntered];
   if (items.includes(interaction.interaction)) {
     guildId = guildId.getGuildId();
-    const result = require(9304) /* maybeFetchTopEmojisByGuild */.maybeFetchTopEmojisByGuild(guildId);
-    const obj = require(9304) /* maybeFetchTopEmojisByGuild */;
+    const result = maybeFetchTopEmojisByGuild.maybeFetchTopEmojisByGuild(guildId);
+    const obj = maybeFetchTopEmojisByGuild;
   }
 };
 const topEmojisDataManager = new TopEmojisDataManager();
-let result = require("initialize").fileFinishedImporting("modules/emojis/top_emojis/TopEmojisDataManager.tsx");
+let result = require("set").fileFinishedImporting("modules/emojis/top_emojis/TopEmojisDataManager.tsx");
 
 export default topEmojisDataManager;

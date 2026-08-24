@@ -1,11 +1,12 @@
-// Module ID: 16618
-// Function ID: 16619
+// Module ID: 16714
+// Function ID: 16715
 // Name: _initialize
-// Dependencies: [5038, 2]
+// Dependencies: [5043, 2]
 
-// Module 16618 (_initialize)
-import "initialize";
+// Module 16714 (_initialize)
+import initializeDefault from "initialize" /* 5043 */;
 
+initializeDefault;
 class DiskUsageManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

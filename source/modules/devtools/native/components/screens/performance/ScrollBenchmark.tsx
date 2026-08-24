@@ -1,24 +1,25 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15252
+// Function ID: 15253
 // Name: ScrollBenchmark
-// Dependencies: [19, 21, 15185, 6291, 2]
+// Dependencies: [19, 21, 15249, 6322, 2]
 // Exports: default
 
-// Module 15188 (ScrollBenchmark)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15252 (ScrollBenchmark)
+import noopAll from "noop" /* 19 */;
+import TableRowInner from "TableRowInner" /* 6322 */;
+import useFrameMonitorDefault from "useFrameMonitor" /* 15249 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("useFrameMonitor").fileFinishedImporting("modules/devtools/native/components/screens/performance/ScrollBenchmark.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/performance/ScrollBenchmark.tsx");
 
 export default function ScrollBenchmark(subLabel) {
-  let monitoring;
-  let start;
   let str = subLabel.subLabel;
   if (str === undefined) {
     str = "Records frame times while you scroll the content below.";
   }
-  const tmp = importDefault(15185)(subLabel.onResult);
+  const tmp = useFrameMonitorDefault(subLabel.onResult);
   ({ monitoring, start } = tmp);
   let str2 = "Start scroll monitor";
   if (monitoring) {
@@ -34,5 +35,5 @@ export default function ScrollBenchmark(subLabel) {
     start = tmp.stop;
   }
   obj[4] = start;
-  return jsx(require(6291) /* TableRowInner */.TableRow, { label: str2, subLabel: str, variant: null, arrow: true, onPress: null });
+  return jsx(TableRowInner.TableRow, { label: str2, subLabel: str, variant: null, arrow: true, onPress: null });
 };

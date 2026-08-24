@@ -4,13 +4,15 @@
 // Dependencies: [95]
 
 // Module 97 (_superPropBase)
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+
 
 export default function _superPropBase(arg0, key10009) {
   const hasOwnProperty = {}.hasOwnProperty;
   const call = hasOwnProperty.call;
   let tmp = arg0;
   if (!(typeof call === "unknown" ? hasOwnProperty(key10009) : call(arg0, key10009))) {
-    let tmp4 = require(95) /* _getPrototypeOf */(arg0);
+    let tmp4 = _getPrototypeOf(arg0);
     tmp = tmp4;
     if (null !== tmp4) {
       while (true) {
@@ -23,7 +25,7 @@ export default function _superPropBase(arg0, key10009) {
         } else {
           let tmp7 = require;
           let tmp8 = dependencyMap;
-          tmp4 = require(95) /* _getPrototypeOf */(tmp4);
+          tmp4 = _getPrototypeOf(tmp4);
           tmp = tmp4;
           if (null === tmp4) {
             break;

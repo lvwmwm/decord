@@ -4,9 +4,12 @@
 // Dependencies: [608, 599, 764, 638]
 
 // Module 763 (toString)
+import _mod599 from "module_599" /* 599 */;
+import _mod608 from "module_608" /* 608 */;
+
 let prototype;
-if (require("module_608")) {
-  prototype = require("module_608").prototype;
+if (_mod608) {
+  prototype = _mod608.prototype;
 }
 let toString;
 if (prototype) {
@@ -15,7 +18,7 @@ if (prototype) {
 function baseToString(str) {
   if (typeof str === "string") {
     return str;
-  } else if (require(599)(str)) {
+  } else if (_mod599(str)) {
     return "" + tmp5(764)(str, baseToString);
   } else if (tmp5(638)(str)) {
     if (!toString) {

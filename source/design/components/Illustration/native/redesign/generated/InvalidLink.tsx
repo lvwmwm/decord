@@ -1,62 +1,65 @@
-// Module ID: 10975
-// Function ID: 10976
+// Module ID: 11014
+// Function ID: 11015
 // Name: getInvalidLinkSource
-// Dependencies: [19, 17, 21, 7907, 10661, 10976, 10662, 1363, 2]
+// Dependencies: [19, 17, 21, 7946, 10700, 11015, 10701, 1363, 2]
 // Exports: InvalidLink, getInvalidLinkSource, useInvalidLinkSource
 
-// Module 10975 (getInvalidLinkSource)
-import "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 11014 (getInvalidLinkSource)
+import noopAll from "noop" /* 19 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/InvalidLink.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Illustration/native/redesign/generated/InvalidLink.tsx");
 
 export const getInvalidLinkSource = function getInvalidLinkSource(theme) {
-  let obj = require(7907) /* getIllustrationSource */;
+  let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(10661);
+      return callback(10700);
     },
     darker() {
-      return callback(10976);
+      return callback(11015);
     },
     light() {
-      return callback(10662);
+      return callback(10701);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useInvalidLinkSource = function useInvalidLinkSource() {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(10661);
+      return callback(10700);
     },
     darker() {
-      return callback(10976);
+      return callback(11015);
     },
     light() {
-      return callback(10662);
+      return callback(10701);
     }
   };
-  return require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const InvalidLink = function InvalidLink(arg0) {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(10661);
+      return callback(10700);
     },
     darker() {
-      return callback(10976);
+      return callback(11015);
     },
     light() {
-      return callback(10662);
+      return callback(10701);
     }
   };
   obj = {};
-  const illustrationSource = require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

@@ -1,31 +1,31 @@
-// Module ID: 6270
-// Function ID: 6271
+// Module ID: 6301
+// Function ID: 6302
 // Name: WiltedFlowerIllocon
-// Dependencies: [21, 5449, 6271, 2]
+// Dependencies: [21, 5454, 6302, 2]
 // Exports: WiltedFlowerIllocon
 
-// Module 6270 (WiltedFlowerIllocon)
-import { jsx } from "jsxProd";
+// Module 6301 (WiltedFlowerIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6302 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WiltedFlowerIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WiltedFlowerIllocon.native.tsx");
 
 export const WiltedFlowerIllocon = function WiltedFlowerIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6271);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

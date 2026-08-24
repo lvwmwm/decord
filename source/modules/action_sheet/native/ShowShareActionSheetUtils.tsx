@@ -1,18 +1,25 @@
-// Module ID: 9069
-// Function ID: 9070
+// Module ID: 9106
+// Function ID: 9107
 // Name: trackAppClickInNativeShareSheet
-// Dependencies: [676, 9070, 698, 9071, 1487, 500, 6924, 2]
+// Dependencies: [676, 9107, 698, 9108, 1487, 500, 6962, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 9069 (trackAppClickInNativeShareSheet)
-import { AnalyticEvents } from "ME";
-import { SHARE_SHEET_PRESENT_DELAY_MS as closure_4 } from "SHARE_PREPARING_MODAL_KEY";
+// Module 9106 (trackAppClickInNativeShareSheet)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
+import getExtensionFromContentType from "getExtensionFromContentType" /* 6962 */;
+import SHARE_PREPARING_MODAL_KEY from "SHARE_PREPARING_MODAL_KEY" /* 9107 */;
+import apexExperiment from "apexExperiment" /* 9108 */;
 
-const result = require("expandEventProperties").fileFinishedImporting("modules/action_sheet/native/ShowShareActionSheetUtils.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+let closure_4 = SHARE_PREPARING_MODAL_KEY.SHARE_SHEET_PRESENT_DELAY_MS;
+const result = set.fileFinishedImporting("modules/action_sheet/native/ShowShareActionSheetUtils.tsx");
 
 export const trackAppClickInNativeShareSheet = function trackAppClickInNativeShareSheet(app, _location) {
   let str = app;
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   if (app == null) {
     str = "";
   }
@@ -20,9 +27,7 @@ export const trackAppClickInNativeShareSheet = function trackAppClickInNativeSha
   obj.track(AnalyticEvents.NATIVE_SHARE_SHEET_APP_CLICKED, obj);
 };
 export const getMediaShareParams = function getMediaShareParams(source) {
-  let contentType;
-  let videoURI;
-  let obj = require(9071) /* apexExperiment */;
+  let obj = apexExperiment;
   if (obj.getMobileMediaViewerShareExperimentEnabled("shareMediaSource")) {
     if (true !== source.disableDownload) {
       if (null != source.shareURI) {
@@ -34,13 +39,13 @@ export const getMediaShareParams = function getMediaShareParams(source) {
           }
           ({ videoURI, contentType } = source);
           if (null != videoURI) {
-            tmpResult = tmp(6924);
+            tmpResult = tmp(6962);
             const decideFileExtensionResult = tmpResult.decideFileExtension(videoURI, contentType, true);
             obj = { mediaFallbackUrl: null, mediaStagingOptions: null };
             obj[0] = videoURI;
             let tmp11;
             if (null != decideFileExtensionResult) {
-              const obj1 = { url: null, fileExtension: null, mediaType: "video" };
+              obj1 = { url: null, fileExtension: null, mediaType: "video" };
               obj1[0] = videoURI;
               obj1[1] = decideFileExtensionResult;
               const merged = Object.assign(tmp3);
@@ -49,7 +54,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
             obj[1] = tmp11;
             return obj;
           } else {
-            const decideFileExtensionResult1 = tmp(6924).decideFileExtension(source.uri, contentType, true);
+            const decideFileExtensionResult1 = tmp(6962).decideFileExtension(source.uri, contentType, true);
             const obj2 = { mediaFallbackUrl: null, mediaStagingOptions: null };
             obj2[0] = source.shareURI;
             let tmp6;
@@ -68,7 +73,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
           obj4[0] = source.shareURI;
           return obj4;
         }
-        obj11 = importDefault(1487);
+        obj11 = isDiscordProxiedAssetUrlDefault;
       }
     }
   }
@@ -81,6 +86,6 @@ export const getMediaShareParams = function getMediaShareParams(source) {
   }
   return { mediaFallbackUrl };
 };
-export const resolveShareFileExtension = function resolveShareFileExtension(outer1_0, contentType) {
-  return require(6924) /* decideFileExtension */.decideFileExtension(outer1_0, contentType, true);
+export const resolveShareFileExtension = function resolveShareFileExtension(closure_1_0, closure_1_1) {
+  return getExtensionFromContentType.decideFileExtension(closure_1_0, closure_1_1, true);
 };

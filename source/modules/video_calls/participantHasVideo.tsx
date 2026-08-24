@@ -1,29 +1,26 @@
-// Module ID: 11444
-// Function ID: 11445
+// Module ID: 11493
+// Function ID: 11494
 // Name: canRenderParticipantVideo
-// Dependencies: [1218, 4497, 4544, 4529, 589, 2]
+// Dependencies: [1218, 4501, 4549, 4534, 589, 2]
 // Exports: default, useCanRenderParticipantVideo
 
-// Module 11444 (canRenderParticipantVideo)
-import fetchFingerprint from "fetchFingerprint";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import ParticipantTypes from "ParticipantTypes";
-import { Features } from "DesktopSources";
+// Module 11493 (canRenderParticipantVideo)
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import ParticipantTypes from "ParticipantTypes" /* 4549 */;
+import { Features } from "DesktopSources" /* 4534 */;
 
-let c4;
-let c5;
-let closure_6;
 const require = arg1;
-function canRenderParticipantVideo(participant, outer1_4) {
-  let obj = outer1_4;
-  if (outer1_4 === undefined) {
-    obj = _detectH265HardwareDecode;
+function canRenderParticipantVideo(participant, closure_1_4) {
+  let obj = closure_1_4;
+  if (closure_1_4 === undefined) {
+    obj = closure_3;
   }
   let tmp = null != participant;
   if (tmp) {
     let tmp3 = participant.type !== constants.ACTIVITY;
     if (tmp3) {
-      const supportsResult = _detectH265HardwareDecode.supports(Features.VIDEO);
+      const supportsResult = closure_3.supports(Features.VIDEO);
       if (!supportsResult) {
         tmp3 = supportsResult;
       } else if (callback(participant)) {
@@ -61,13 +58,13 @@ function canRenderParticipantVideo(participant, outer1_4) {
   return tmp;
 }
 ({ ParticipantTypes: c4, isStreamParticipant: c5, isUserParticipant: closure_6 } = ParticipantTypes);
-const result = require("ParticipantTypes").fileFinishedImporting("modules/video_calls/participantHasVideo.tsx");
+const result = require("set").fileFinishedImporting("modules/video_calls/participantHasVideo.tsx");
 
 export default function participantHasVideo(type) {
   let streamId = type;
   let tmp = type.type !== constants.ACTIVITY;
   if (tmp) {
-    const supportsResult = _detectH265HardwareDecode.supports(Features.VIDEO);
+    const supportsResult = closure_3.supports(Features.VIDEO);
     if (!supportsResult) {
       tmp = supportsResult;
     } else if (callback(streamId)) {
@@ -89,6 +86,6 @@ export default function participantHasVideo(type) {
 export { canRenderParticipantVideo };
 export const useCanRenderParticipantVideo = function useCanRenderParticipantVideo(stateFromStores) {
   const _require = stateFromStores;
-  const items = [_detectH265HardwareDecode];
-  return _require(589).useStateFromStores(items, () => outer1_8(closure_0, outer1_3));
+  const items = [closure_3];
+  return _require(589).useStateFromStores(items, () => closure_1_8(closure_0, closure_1_3));
 };

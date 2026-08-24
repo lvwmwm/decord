@@ -1,18 +1,20 @@
-// Module ID: 8548
-// Function ID: 8549
+// Module ID: 8587
+// Function ID: 8588
 // Name: getGuildBadgeSource
-// Dependencies: [19, 676, 21, 8549, 8550, 8551, 8552, 1430, 1297, 2]
+// Dependencies: [19, 676, 21, 8588, 8589, 8590, 8591, 1430, 1297, 2]
 
-// Module 8548 (getGuildBadgeSource)
-import "noop";
-import { GuildFeatures } from "ME";
-import { jsx } from "jsxProd";
+// Module 8587 (getGuildBadgeSource)
+import noopAll from "noop" /* 19 */;
+import Button from "Button" /* 1297 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
+import registerAssetDefault from "registerAsset" /* 8588 */;
+import registerAssetDefault2 from "registerAsset" /* 8589 */;
+import registerAssetDefault3 from "registerAsset" /* 8590 */;
+import registerAssetDefault4 from "registerAsset" /* 8591 */;
+import { GuildFeatures } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let PARTNERED;
-let PARTNERED_BLACK;
-let VERIFIED;
-let VERIFIED_BLACK;
-const require = arg1;
+require = arg1;
 function getGuildBadgeSource(guild, flag) {
   let has = guild;
   let NONE = obj.NONE;
@@ -44,11 +46,11 @@ function getGuildBadgeSource(guild, flag) {
             hasItem = Boolean(hasItem1);
           }
         }
-        obj2 = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
+        obj2 = fromGuildPropertiesWithAdditionalFields;
       }
     }
   } else {
-    obj = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
+    obj = fromGuildPropertiesWithAdditionalFields;
     if (obj.isGuildRecord(has)) {
       const features3 = has.features;
       let hasItem2 = features3.has(VERIFIED);
@@ -97,11 +99,12 @@ class GuildBadge {
     return tmp2;
   }
 }
+noopAll;
 let obj = { PARTNERED: 0, [0]: "PARTNERED", VERIFIED: 1, [1]: "VERIFIED", PARTNERED_BLACK: 2, [2]: "PARTNERED_BLACK", VERIFIED_BLACK: 3, [3]: "VERIFIED_BLACK", NONE: 4, [4]: "NONE" };
-obj = { [VERIFIED]: require("registerAsset"), [PARTNERED]: require("registerAsset"), [VERIFIED_BLACK]: require("registerAsset"), [PARTNERED_BLACK]: require("registerAsset"), [obj.NONE]: null };
+obj = { [VERIFIED]: registerAssetDefault, [PARTNERED]: registerAssetDefault2, [VERIFIED_BLACK]: registerAssetDefault3, [PARTNERED_BLACK]: registerAssetDefault4, [obj.NONE]: null };
 ({ VERIFIED, PARTNERED, VERIFIED_BLACK, PARTNERED_BLACK } = obj);
 GuildBadge.Sizes = require("Button").Icon.Sizes;
-const result = require("jsxProd").fileFinishedImporting("modules/guild/native/GuildBadge.tsx");
+const result = require("set").fileFinishedImporting("modules/guild/native/GuildBadge.tsx");
 
 export default GuildBadge;
 export { getGuildBadgeSource };

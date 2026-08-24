@@ -1,9 +1,11 @@
-// Module ID: 4788
-// Function ID: 4789
+// Module ID: 4793
+// Function ID: 4794
 // Name: AgeRestrictionSource
 // Dependencies: [2]
 
-// Module 4788 (AgeRestrictionSource)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AgeRestrictionSource.tsx");
+// Module 4793 (AgeRestrictionSource)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AgeRestrictionSource.tsx");
 
 export const AgeRestrictionSource = { NO_CLASSIFICATION: 0, [0]: "NO_CLASSIFICATION", MANUAL_CLASSIFICATION: 1, [1]: "MANUAL_CLASSIFICATION", AUTOMATED_CLASSIFICATION: 2, [2]: "AUTOMATED_CLASSIFICATION", AGENCY_CLASSIFICATION_ESRB: 3, [3]: "AGENCY_CLASSIFICATION_ESRB", AGENCY_CLASSIFICATION_PEGI: 4, [4]: "AGENCY_CLASSIFICATION_PEGI", DISCORD_CLASSIFICATION: 5, [5]: "DISCORD_CLASSIFICATION", AGENCY_CLASSIFICATION_GOP: 6, [6]: "AGENCY_CLASSIFICATION_GOP", AGENCY_CLASSIFICATION_IGDB: 7, [7]: "AGENCY_CLASSIFICATION_IGDB" };

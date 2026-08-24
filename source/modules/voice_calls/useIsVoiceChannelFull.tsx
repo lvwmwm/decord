@@ -1,31 +1,31 @@
-// Module ID: 12535
-// Function ID: 12536
+// Module ID: 12589
+// Function ID: 12590
 // Name: useIsVoiceChannelFull
-// Dependencies: [1910, 4021, 4542, 505, 589, 4979, 2]
+// Dependencies: [1910, 4024, 4547, 505, 589, 4984, 2]
 // Exports: default, useIsVoiceChannelLocked
 
-// Module 12535 (useIsVoiceChannelFull)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import updateVoiceState from "updateVoiceState";
-import { Permissions } from "sum";
+// Module 12589 (useIsVoiceChannelFull)
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_4 from "updateVoiceState" /* 4547 */;
+import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;
-const result = require("updateVoiceState").fileFinishedImporting("modules/voice_calls/useIsVoiceChannelFull.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_calls/useIsVoiceChannelFull.tsx");
 
 export default function useIsVoiceChannelFull(arg0) {
   const _require = arg0;
-  const items = [updateVoiceState, createGuildRecordFromRust];
-  return _require(589).useStateFromStores(items, () => callback(outer1_1[5]).isChannelFull(callback, outer1_4, outer1_2));
+  const items = [closure_4, closure_2];
+  return _require(589).useStateFromStores(items, () => callback(closure_1_1[5]).isChannelFull(callback, closure_1_4, closure_1_2));
 };
 export const useIsVoiceChannelLocked = function useIsVoiceChannelLocked(channel) {
   const _require = channel;
-  const items = [getUncachedChannelPermissions];
+  const items = [closure_3];
   const items1 = [channel];
   return _require(589).useStateFromStores(items, () => {
     let tmp2 = null == closure_0;
     if (!tmp2) {
-      tmp2 = !outer1_3.can(outer1_5.CONNECT, tmp);
+      tmp2 = !closure_1_3.can(closure_1_5.CONNECT, tmp);
     }
     return tmp2;
   }, items1);

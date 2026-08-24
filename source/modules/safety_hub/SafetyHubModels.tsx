@@ -1,10 +1,12 @@
-// Module ID: 5439
-// Function ID: 5440
+// Module ID: 5444
+// Function ID: 5445
 // Name: ContentIdType
 // Dependencies: [2]
 
-// Module 5439 (ContentIdType)
-const result = require("set").fileFinishedImporting("modules/safety_hub/SafetyHubModels.tsx");
+// Module 5444 (ContentIdType)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/safety_hub/SafetyHubModels.tsx");
 
 export const ContentIdType = { MESSAGE: "message" };
 export const MemberType = { OWNER: 1, [1]: "OWNER", MEMBER: 2, [2]: "MEMBER" };

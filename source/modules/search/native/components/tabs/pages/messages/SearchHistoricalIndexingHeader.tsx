@@ -1,23 +1,20 @@
-// Module ID: 15918
-// Function ID: 15919
+// Module ID: 16015
+// Function ID: 16016
 // Name: HistoricalIndexingHeader
-// Dependencies: [19, 1994, 8507, 21, 4661, 11531, 6292, 4734, 1236, 2]
+// Dependencies: [19, 1995, 8546, 21, 4668, 11580, 6323, 4739, 1236, 2]
 // Exports: default
 
-// Module 15918 (HistoricalIndexingHeader)
-import noop from "noop";
-import _getSystemLocale from "_getSystemLocale";
-import MessageEmbedTypes from "MessageEmbedTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16015 (HistoricalIndexingHeader)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let SEARCH_LIST_HORIZONTAL_PADDING;
-let SEARCH_ROW_TAP_STATE_PADDING;
-let c5;
 const require = arg1;
 ({ SearchTabs: c5, SEARCH_LIST_HORIZONTAL_PADDING, SEARCH_ROW_TAP_STATE_PADDING } = MessageEmbedTypes);
 let closure_7 = createCacheKey.createStyles({ header: { marginBottom: 16 }, headerMessages: { marginHorizontal: SEARCH_LIST_HORIZONTAL_PADDING, marginTop: SEARCH_ROW_TAP_STATE_PADDING } });
-const result = require("MessageEmbedTypes").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchHistoricalIndexingHeader.tsx");
+const result = require("set").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchHistoricalIndexingHeader.tsx");
 
 export default function HistoricalIndexingHeader(searchContext) {
   searchContext = searchContext.searchContext;
@@ -28,11 +25,11 @@ export default function HistoricalIndexingHeader(searchContext) {
   React = tmp;
   const items = [documentsIndexed];
   const items1 = [tmp.headerMessages, tab];
-  const memo = React.useMemo(() => Number(documentsIndexed).toLocaleString(outer1_4.locale), items);
+  const memo = React.useMemo(() => Number(documentsIndexed).toLocaleString(closure_1_4.locale), items);
   const items2 = [documentsIndexed, searchContext];
   const memo1 = React.useMemo(() => {
-    if (tab === outer1_5.MESSAGES) {
-      const headerMessages = _undefined.headerMessages;
+    if (tab === closure_1_5.MESSAGES) {
+      headerMessages = headerMessages.headerMessages;
     }
     return headerMessages;
   }, items1);

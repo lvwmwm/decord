@@ -1,26 +1,27 @@
-// Module ID: 11158
-// Function ID: 11159
+// Module ID: 11210
+// Function ID: 11211
 // Name: RefreshChatInputCoachmark
-// Dependencies: [32, 19, 1388, 1367, 7366, 1377, 1236, 4104, 9314, 2]
+// Dependencies: [32, 19, 1388, 1367, 7404, 1377, 1236, 4107, 9351, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 11158 (RefreshChatInputCoachmark)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { ContentDismissActionType } from "ContentDismissActionType";
+// Module 11210 (RefreshChatInputCoachmark)
+import useCoachmark from "useCoachmark" /* 9351 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 
-const require = arg1;
-const result = require("ContentDismissActionType").fileFinishedImporting("modules/chat_input/native/RefreshChatInputCoachmark.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/chat_input/native/RefreshChatInputCoachmark.tsx");
 
 export default function RefreshChatInputCoachmark(buttonRef) {
   const merged = Object.assign(buttonRef, Object.create(null));
-  const coachmark = require(9314) /* useCoachmark */.useCoachmark(buttonRef.buttonRef, merged);
+  const coachmark = useCoachmark.useCoachmark(buttonRef.buttonRef, merged);
   return null;
 };
 export const useRefreshChatInputCoachmark = function useRefreshChatInputCoachmark(disabled) {
   let _require;
-  let importDefault;
-  _require(7366);
+  importDefault = undefined;
+  _require(7404);
   if (tmp2) {
     if (!disabled.disabled) {
       let items = [tmp3(1377).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
@@ -34,15 +35,15 @@ export const useRefreshChatInputCoachmark = function useRefreshChatInputCoachmar
     if (tmp9) {
       memo = React.useMemo(() => {
         let obj = { title: null, description: null, position: "top", offsetY: 4, visible: null, onDismiss: null, graphic: null };
-        const intl = _undefined(outer1_2[6]).intl;
-        obj[0] = intl.string(_undefined(outer1_2[6]).t.eqI1WA);
-        const intl2 = _undefined(outer1_2[6]).intl;
-        obj[1] = intl2.string(_undefined(outer1_2[6]).t.nxO3NK);
-        obj[4] = c1;
+        const intl = callback(closure_1_2[6]).intl;
+        obj[0] = intl.string(callback(closure_1_2[6]).t.eqI1WA);
+        const intl2 = callback(closure_1_2[6]).intl;
+        obj[1] = intl2.string(callback(closure_1_2[6]).t.nxO3NK);
+        obj[4] = closure_1;
         obj[5] = function onDismiss() {
-          callback(outer1_5.USER_DISMISS);
+          callback(closure_1_5.USER_DISMISS);
         };
-        obj = { type: "rive", rive: _undefined(outer1_2[7]).OmnibuttonCoachmarkRive, aspectRatio: "16/9" };
+        obj = { type: "rive", rive: callback(closure_1_2[7]).OmnibuttonCoachmarkRive, aspectRatio: "16/9" };
         obj[6] = obj;
         return obj;
       }, items1);

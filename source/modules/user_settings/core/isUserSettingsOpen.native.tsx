@@ -1,16 +1,17 @@
-// Module ID: 13308
-// Function ID: 13309
+// Module ID: 13366
+// Function ID: 13367
 // Name: isUserSettingsOpen
-// Dependencies: [32, 19, 4230, 2]
+// Dependencies: [32, 19, 4234, 2]
 // Exports: useIsUserSettingsOpen
 
-// Module 13308 (isUserSettingsOpen)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 13366 (isUserSettingsOpen)
+import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 function isUserSettingsOpen() {
-  const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = getRootNavigationRef.getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {
@@ -92,12 +93,10 @@ function isUserSettingsOpen() {
   }
   return tmp2;
 }
-const result = require("getRootNavigationRef").fileFinishedImporting("modules/user_settings/core/isUserSettingsOpen.native.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/core/isUserSettingsOpen.native.tsx");
 
 export { isUserSettingsOpen };
 export const useIsUserSettingsOpen = function useIsUserSettingsOpen() {
-  let require;
-  let tmp2;
   [tmp2, require] = callback(React.useState(isUserSettingsOpen), 2);
   const effect = React.useEffect(() => {
     function handleStateChange() {
@@ -147,14 +146,14 @@ export const useIsUserSettingsOpen = function useIsUserSettingsOpen() {
         rootNavigationRef(someResult);
       }
     }
-    const rootNavigationRef = outer1_0(outer1_1[2]).getRootNavigationRef();
+    const rootNavigationRef = closure_1_0(closure_1_1[2]).getRootNavigationRef();
     if (null != rootNavigationRef) {
       rootNavigationRef.addListener("state", handleStateChange);
       return () => {
         rootNavigationRef.removeListener("state", handleStateChange);
       };
     }
-    const obj = outer1_0(outer1_1[2]);
+    const obj = closure_1_0(closure_1_1[2]);
   }, []);
   return tmp2;
 };

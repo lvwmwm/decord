@@ -4,7 +4,7 @@
 // Dependencies: [615]
 
 // Module 614 (createBaseFor)
-import createBaseFor from "createBaseFor";
+import createBaseFor from "createBaseFor" /* 615 */;
 
 
 export default createBaseFor();

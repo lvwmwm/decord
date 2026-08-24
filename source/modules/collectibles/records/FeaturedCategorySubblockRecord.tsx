@@ -1,13 +1,16 @@
-// Module ID: 5341
-// Function ID: 5342
+// Module ID: 5346
+// Function ID: 5347
 // Name: fromServer
-// Dependencies: [5342, 2]
+// Dependencies: [5347, 2]
 
-// Module 5341 (fromServer)
+// Module 5346 (fromServer)
+import set from "set" /* 2 */;
+import FeaturedSubblockType from "FeaturedSubblockType" /* 5347 */;
+
 let prototype;
 prototype = function FeaturedCategorySubblockRecord(unpublished_at) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(5342) /* FeaturedSubblockType */.FeaturedSubblockType.CATEGORY;
+  obj.type = FeaturedSubblockType.FeaturedSubblockType.CATEGORY;
   ({ category_store_listing_id: tmp.categoryStoreListingId, name: tmp.name } = unpublished_at);
   let date = null;
   if (null != unpublished_at.unpublished_at) {
@@ -23,7 +26,7 @@ prototype["fromServer"] = function fromServer(unpublished_at) {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(5342) /* FeaturedSubblockType */.FeaturedSubblockType.CATEGORY;
+  obj.type = FeaturedSubblockType.FeaturedSubblockType.CATEGORY;
   ({ category_store_listing_id: tmp2.categoryStoreListingId, name: tmp2.name } = unpublished_at);
   let date = null;
   if (null != unpublished_at.unpublished_at) {
@@ -34,6 +37,6 @@ prototype["fromServer"] = function fromServer(unpublished_at) {
   ({ body_text: tmp2.bodyText, banner_text_color: tmp2.bannerTextColor, banner_url: tmp2.bannerUrl, asset_url: tmp2.assetUrl } = unpublished_at);
   return obj;
 };
-const result = require("set").fileFinishedImporting("modules/collectibles/records/FeaturedCategorySubblockRecord.tsx");
+const result = set.fileFinishedImporting("modules/collectibles/records/FeaturedCategorySubblockRecord.tsx");
 
 export const FeaturedCategorySubblockRecord = prototype;

@@ -1,11 +1,12 @@
-// Module ID: 13817
-// Function ID: 13818
+// Module ID: 13875
+// Function ID: 13876
 // Name: _initialize
-// Dependencies: [4720, 2]
+// Dependencies: [4726, 2]
 
-// Module 13817 (_initialize)
-import "initialize";
+// Module 13875 (_initialize)
+import initializeDefault from "initialize" /* 4726 */;
 
+initializeDefault;
 class CallKitLifecycleManager extends tmp2 {
 }
 const prototype = CallKitLifecycleManager.prototype;

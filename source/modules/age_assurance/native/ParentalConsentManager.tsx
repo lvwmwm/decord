@@ -1,18 +1,19 @@
-// Module ID: 16671
-// Function ID: 16672
+// Module ID: 16767
+// Function ID: 16768
 // Name: onPostConnectionOpen
-// Dependencies: [5, 1922, 676, 1625, 4354, 500, 5038, 4072, 16672, 16674, 698, 1208, 16675, 2]
+// Dependencies: [5, 1922, 676, 1625, 4358, 500, 5043, 4075, 16768, 16770, 698, 1208, 16771, 2]
 
-// Module 16671 (onPostConnectionOpen)
-import set from "set";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { AnalyticEvents } from "ME";
-import "initialize";
+// Module 16767 (onPostConnectionOpen)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
 let require = arg1;
 let c6 = 26;
 let c7 = 2;
 let c8 = false;
+initializeDefault;
 class ParentalConsentManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -40,7 +41,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -55,8 +56,8 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
             obj[0] = arg1;
             return obj;
           } else {
-            const outer1_8 = true;
-            let result = null != outer1_4.getCurrentUser();
+            c8 = true;
+            let result = null != closure_1_4.getCurrentUser();
             if (result) {
               result = (function isPlatformSupported() {
                 if (obj.isMetaQuest()) {
@@ -96,7 +97,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
               })();
             }
             if (result) {
-              let obj1 = v0(outer1_2[7]);
+              obj1 = v0(closure_1_2[7]);
               result = obj1.shouldCollectAppStoreSignal();
             }
             if (result) {
@@ -106,7 +107,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
               obj1[0] = v0.performAgeCheck(!tmp15);
               return obj1;
             }
-            tmp15 = outer1_8;
+            tmp15 = c8;
           }
         } else if (arg0 === 1) {
           v0 = 3;
@@ -118,7 +119,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
           return obj;
         }
         v0 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         v0 = tmp;
         throw tmp9;
@@ -127,20 +128,20 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
   })();
 };
 prototype["performAgeCheck"] = function performAgeCheck(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   const self = this;
   return callback(function*() {
-    let closure_1 = tmp3;
-    let c3 = 1;
-    yield outer1_1.collectAgeSignal();
+    closure_1 = tmp3;
+    c3 = 1;
+    yield closure_1_1.collectAgeSignal();
     if (1 === tmp7) {
       c3 = 0;
       c3 = closure_2;
       let obj2 = { tags: null };
       obj2[0] = { source: "parental_consent_manager", step: "perform_age_check" };
-      outer1_1(outer1_2[11]).captureException(c3, obj2);
+      closure_1_1(closure_1_2[11]).captureException(c3, obj2);
       let constants = 3;
-      const obj11 = outer1_1(outer1_2[11]);
+      const obj11 = closure_1_1(closure_1_2[11]);
     } else if (2 === tmp7) {
       if (arg0 === 1) {
         constants = 3;
@@ -152,9 +153,9 @@ prototype["performAgeCheck"] = function performAgeCheck(arg0) {
         obj3[0] = arg1;
         return obj3;
       } else {
-        let closure_0 = arg1;
-        let obj7 = outer1_0(outer1_2[8]);
-        let c4 = 3;
+        closure_0 = arg1;
+        let obj7 = closure_1_0(closure_1_2[8]);
+        c4 = 3;
         constants = 1;
         let obj4 = { value: null, done: false };
         obj4[0] = obj7.getAgeSignalIntegrityToken(closure_0);
@@ -172,7 +173,7 @@ prototype["performAgeCheck"] = function performAgeCheck(arg0) {
         return obj5;
       } else {
         closure_1 = arg1;
-        obj4 = outer1_0(outer1_2[9]);
+        obj4 = closure_1_0(closure_1_2[9]);
         c4 = 4;
         constants = 1;
         const obj6 = { value: null, done: false };
@@ -184,10 +185,10 @@ prototype["performAgeCheck"] = function performAgeCheck(arg0) {
       throw arg1;
     } else if (arg0 !== 2) {
       closure_2 = arg1;
-      const obj = outer1_1(outer1_2[10]);
+      const obj = closure_1_1(closure_1_2[10]);
       obj7 = { should_block: null, platform: null };
       obj7[0] = closure_2;
-      obj2 = outer1_0(outer1_2[5]);
+      obj2 = closure_1_0(closure_1_2[5]);
       obj7[1] = obj2.getNativePlatform();
       obj.track(constants.PARENTAL_CONSENT_CHECKED, obj7);
       c3 = 0;
@@ -209,7 +210,7 @@ prototype["collectAgeSignal"] = function collectAgeSignal() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -226,11 +227,11 @@ prototype["collectAgeSignal"] = function collectAgeSignal() {
           } else {
             const callback2 = tmp3;
             let callback = tmp7;
-            let c3 = 1;
+            c3 = 1;
             c4 = 2;
             c5 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_0(outer1_2[12]).default.getAgeSignals({ firstAgeGate: 13, secondAgeGate: 18 });
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_0(closure_1_2[12]).default.getAgeSignals({ firstAgeGate: 13, secondAgeGate: 18 });
             return obj1;
           }
         } else if (1 === tmp7) {
@@ -280,6 +281,6 @@ prototype["collectAgeSignal"] = function collectAgeSignal() {
   })();
 };
 const parentalConsentManager = new ParentalConsentManager();
-let result = require("ME").fileFinishedImporting("modules/age_assurance/native/ParentalConsentManager.tsx");
+let result = require("set").fileFinishedImporting("modules/age_assurance/native/ParentalConsentManager.tsx");
 
 export default parentalConsentManager;

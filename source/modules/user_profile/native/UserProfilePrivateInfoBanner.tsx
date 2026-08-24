@@ -1,19 +1,25 @@
-// Module ID: 12303
-// Function ID: 12304
+// Module ID: 12355
+// Function ID: 12356
 // Name: UserProfilePrivateInfoBanner
-// Dependencies: [17, 21, 4661, 712, 4734, 1236, 2]
+// Dependencies: [17, 21, 4668, 712, 4739, 1236, 2]
 // Exports: default
 
-// Module 12303 (UserProfilePrivateInfoBanner)
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12355 (UserProfilePrivateInfoBanner)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+const View = get_ActivityIndicator.View;
+const jsx = jsxProd.jsx;
 let obj = { banner: null };
-obj = { padding: require("Themes").space.PX_12, borderRadius: require("Themes").radii.lg, borderWidth: 1, borderColor: require("Themes").colors.BORDER_MUTED, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+obj = { padding: ThemesDefault.space.PX_12, borderRadius: ThemesDefault.radii.lg, borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_MUTED, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj[0] = obj;
 let closure_4 = createCacheKey.createStyles(obj);
-const result = require("createCacheKey").fileFinishedImporting("modules/user_profile/native/UserProfilePrivateInfoBanner.tsx");
+const result = set.fileFinishedImporting("modules/user_profile/native/UserProfilePrivateInfoBanner.tsx");
 
 export default function UserProfilePrivateInfoBanner(username) {
   const containerBackground = username.containerBackground;
@@ -27,8 +33,8 @@ export default function UserProfilePrivateInfoBanner(username) {
   obj = { style: items, children: null };
   items[1] = tmp3;
   obj = { variant: "text-sm/normal", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.format(require(1236) /* getSystemLocale */.t.P8ij6Z, { username: username.username });
-  obj[1] = jsx(require(4734) /* Text */.Text, { variant: "text-sm/normal", children: null });
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.format(getSystemLocale.t.P8ij6Z, { username: username.username });
+  obj[1] = jsx(Text.Text, { variant: "text-sm/normal", children: null });
   return <View variant="text-sm/normal">{null}</View>;
 };

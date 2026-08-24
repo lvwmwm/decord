@@ -1,16 +1,19 @@
-// Module ID: 15225
-// Function ID: 15226
+// Module ID: 15289
+// Function ID: 15290
 // Name: trackAgeGateSubmitted
-// Dependencies: [676, 698, 3975, 2]
+// Dependencies: [676, 698, 3978, 2]
 // Exports: default
 
-// Module 15225 (trackAgeGateSubmitted)
-import { AnalyticEvents } from "ME";
+// Module 15289 (trackAgeGateSubmitted)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 
-const result = require("t").fileFinishedImporting("modules/auth/experiment/trackAgeGateSubmitted.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/auth/experiment/trackAgeGateSubmitted.tsx");
 
 export default function trackAgeGateSubmitted(format, section) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   let formatResult = null;
   if (obj2.diff(format, "years") < 18) {
     formatResult = format.format("YYYY-MM-DD");

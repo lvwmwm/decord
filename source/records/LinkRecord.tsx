@@ -1,12 +1,13 @@
-// Module ID: 7596
-// Function ID: 7597
+// Module ID: 7634
+// Function ID: 7635
 // Name: fromPath
 // Dependencies: [1931, 676, 2]
 
-// Module 7596 (fromPath)
-import "toJS";
-import { Routes } from "ME";
+// Module 7634 (fromPath)
+import toJSDefault from "toJS" /* 1931 */;
+import { Routes } from "ME" /* 676 */;
 
+toJSDefault;
 let prototype;
 prototype = function LinkRecord(arg0) {
   const tmp = new prototype(new.target, new.target);

@@ -1,25 +1,28 @@
-// Module ID: 14420
-// Function ID: 14421
+// Module ID: 14488
+// Function ID: 14489
 // Name: EmptyState
-// Dependencies: [32, 19, 17, 7452, 6716, 1388, 21, 712, 14421, 4661, 10953, 1236, 5447, 4734, 14418, 1377, 7366, 709, 14422, 4343, 7470, 7480, 6719, 14359, 6548, 9502, 9503, 9507, 7469, 14432, 10957, 8029, 14433, 10684, 589, 14436, 2]
+// Dependencies: [32, 19, 17, 7490, 6753, 1388, 21, 712, 14489, 4668, 10992, 1236, 5452, 4739, 14486, 1377, 7404, 709, 14490, 4347, 7508, 7518, 6756, 14427, 6579, 9539, 9540, 9544, 7507, 14500, 10996, 8068, 14501, 10723, 589, 14504, 2]
 
-// Module 14420 (EmptyState)
-import ListEdgeSpacer from "ListEdgeSpacer";
-import importAllResult from "HapticFeedbackTypes";
-import { View } from "dispatcher";
-import set from "set";
-import { BountyCarouselEmptyStateReason as closure_7 } from "QuestsExperimentLocations";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "getQuestContentName";
-import createCacheKey from "createCacheKey";
+// Module 14488 (EmptyState)
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5452 */;
+import useTrackQuestEventWithImpression from "useTrackQuestEventWithImpression" /* 10992 */;
+import BountiesCtaDescriptionDefault from "BountiesCtaDescription" /* 14504 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "set" /* 7490 */;
+import { BountyCarouselEmptyStateReason as closure_7 } from "QuestsExperimentLocations" /* 6753 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-const require = arg1;
+require = arg1;
 function EmptyState(reason) {
   reason = reason.reason;
   const tmp = callback4();
-  let obj = require(10953) /* useTrackQuestEventWithImpression */;
+  let obj = useTrackQuestEventWithImpression;
   const bountyCarouselEmptyStateAnalytics = obj.useBountyCarouselEmptyStateAnalytics(reason);
   if (reason === constants.COMPLETED) {
     const intl2 = tmp2(1236).intl;
@@ -34,17 +37,17 @@ function EmptyState(reason) {
     ReqPds = tmp2(1236).t.ReqPds;
   }
   obj = { style: tmp.emptyState, children: null };
-  const items = [callback2(require(5447) /* AccountAgeTier10LargeBadge */.BountiesPosterIllocon, { size: 32 }), ];
+  const items = [callback2(AccountAgeTier10LargeBadge.BountiesPosterIllocon, { size: 32 }), ];
   obj = { style: tmp.emptyStateText, children: null };
-  const items1 = [callback2(require(4734) /* Text */.Text, { variant: "text-sm/semibold", color: "text-default", children: stringResult }), ];
-  const obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
+  const items1 = [callback2(Text.Text, { variant: "text-sm/semibold", color: "text-default", children: stringResult }), ];
+  obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
   const intl3 = tmp2(1236).intl;
   obj1[2] = intl3.format(ReqPds, {
     onClickLearnMore() {
       callback(table[14])();
     }
   });
-  items1[1] = callback2(require(4734) /* Text */.Text, obj1);
+  items1[1] = callback2(Text.Text, obj1);
   obj[1] = items1;
   items[1] = callback3(View, obj);
   obj[1] = items;
@@ -58,9 +61,6 @@ function keyExtractor(id) {
   return id.id;
 }
 function QuestHomeBountiesCarousel(bounties) {
-  let obtainableOrbRewards;
-  let orbShopProducts;
-  let showOrbShopPlaceholderCarousel;
   bounties = bounties.bounties;
   ({ orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel } = bounties);
   if (showOrbShopPlaceholderCarousel === undefined) {
@@ -70,17 +70,17 @@ function QuestHomeBountiesCarousel(bounties) {
   let first;
   let callback;
   let first1;
-  let closure_5;
+  closure_5 = undefined;
   let first2;
-  let closure_7;
-  let closure_8;
+  closure_7 = undefined;
+  closure_8 = undefined;
   let callback2;
-  let closure_10;
+  closure_10 = undefined;
   callback = undefined;
-  let closure_12;
-  let closure_13;
+  closure_12 = undefined;
+  closure_13 = undefined;
   let callback4;
-  let closure_15;
+  closure_15 = undefined;
   let callback6;
   let callback7;
   let isInView;
@@ -203,21 +203,21 @@ function QuestHomeBountiesCarousel(bounties) {
     }
   }, items4);
   callback6 = first1.useCallback((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     if (null != ref3.current) {
       const _clearTimeout = clearTimeout;
       clearTimeout(tmp.current);
       tmp.current = null;
     }
     ref3.current = setTimeout(() => {
-      outer1_14.current = true;
-      const current = outer1_1.current;
+      closure_1_14.current = true;
+      const current = closure_1_1.current;
       if (current != null) {
         const obj = { offset: null, animated: true };
         obj[0] = closure_0 * closure_13;
         current.scrollToOffset(obj);
       }
-      outer1_15.current = null;
+      closure_1_15.current = null;
     }, 350);
   }, []);
   const effect = first1.useEffect(() => () => {
@@ -230,26 +230,26 @@ function QuestHomeBountiesCarousel(bounties) {
   const items5 = [bounties, first1, callback6];
   const effect1 = first1.useEffect(() => {
     function handleModalClose(key) {
-      if (key.key === handleModalClose(outer1_2[23]).BOUNTIES_MODAL_KEY) {
+      if (key.key === handleModalClose(closure_1_2[23]).BOUNTIES_MODAL_KEY) {
         callback(false);
         const current = ref.current;
         ref.current = null;
         if (null != current) {
-          let isBountyCompletedResult = outer1_6.isBountyCompleted(current);
+          let isBountyCompletedResult = closure_1_6.isBountyCompleted(current);
           if (isBountyCompletedResult) {
             isBountyCompletedResult = !ref2.current;
           }
           ref2.current = false;
           const findIndexResult = current.findIndex((id) => id.id === current);
-          let closure_1 = findIndexResult;
+          closure_1 = findIndexResult;
           if (-1 !== findIndexResult) {
             const findIndexResult1 = obj.findIndex((id) => {
-              let tmp = arg1 > outer1_4;
+              let tmp = arg1 > closure_1_4;
               if (tmp) {
                 tmp = arg1 > closure_1;
               }
               if (tmp) {
-                tmp = !outer2_6.isBountyCompleted(id.id);
+                tmp = !closure_2_6.isBountyCompleted(id.id);
               }
               return tmp;
             });
@@ -260,10 +260,10 @@ function QuestHomeBountiesCarousel(bounties) {
               isBountyCompletedResult = findIndexResult1 <= closure_4 + 3;
             }
             if (isBountyCompletedResult) {
-              handleModalClose(outer1_2[24]).runAfterInteractions(() => {
-                outer1_16(findIndexResult1);
+              handleModalClose(closure_1_2[24]).runAfterInteractions(() => {
+                closure_1_16(findIndexResult1);
               });
-              const tmpResult = handleModalClose(outer1_2[24]);
+              const tmpResult = handleModalClose(closure_1_2[24]);
             }
           }
           obj = current;
@@ -312,31 +312,33 @@ function QuestHomeBountiesCarousel(bounties) {
   const callback8 = first1.useCallback((item) => {
     item = item.item;
     const index = item.index;
-    const obj = { adContentId: item.id, adCreativeType: null, questContent: null, questContentPosition: null, trackGuildAndChannelMetadata: false, visibilityRef: null, sourceQuestContent: null, overrideVisibility: null, children: null };
-    obj[1] = bounties(first[28]).AdCreativeType.BOUNTY;
-    obj[2] = bounties(first[22]).QuestContent.QUEST_HOME_MOBILE_CAROUSEL;
-    obj[3] = index;
-    obj[5] = closure_10;
-    obj[6] = bounties(first[22]).QuestContent.QUEST_HOME_MOBILE_CAROUSEL;
-    obj[7] = isInView && undefined;
-    obj[8] = function children() {
-      return callback(ref(first[8]), { bounty: item, index, isActive: index === outer1_4, isModalVisible: outer1_6, onPress: outer1_17 });
-    };
-    return closure_9(bounties(first[30]).BillableAdPlacementImpressionTrackerNative, obj, item.id);
+    return closure_9(bounties(first[30]).BillableAdPlacementImpressionTrackerNative, {
+      adContentId: item.id,
+      adCreativeType: bounties(first[28]).AdCreativeType.BOUNTY,
+      questContent: bounties(first[22]).QuestContent.QUEST_HOME_MOBILE_CAROUSEL,
+      questContentPosition: index,
+      trackGuildAndChannelMetadata: false,
+      visibilityRef: closure_10,
+      sourceQuestContent: bounties(first[22]).QuestContent.QUEST_HOME_MOBILE_CAROUSEL,
+      overrideVisibility: isInView && undefined,
+      children() {
+        return callback(ref(first[8]), { bounty: item, index, isActive: index === closure_1_4, isModalVisible: closure_1_6, onPress: closure_1_17 });
+      }
+    }, item.id);
   }, items6);
   const items8 = [isInView, first1, first2];
   const callback9 = first1.useCallback((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     let obj = {};
     let merged = Object.assign(arg0);
     obj.onLayout = function onLayout(nativeEvent) {
       let obj = index;
       if (null != index[index.index]) {
         obj = {};
-        const merged = Object.assign(outer1_10.current.children[tmp.id]);
+        const merged = Object.assign(closure_1_10.current.children[tmp.id]);
         obj.layout = nativeEvent.nativeEvent.layout;
-        outer1_10.current.children[tmp.id] = obj;
-        outer1_11(tmp.id);
+        closure_1_10.current.children[tmp.id] = obj;
+        closure_1_11(tmp.id);
       }
       obj.onLayout(nativeEvent);
     };
@@ -350,7 +352,7 @@ function QuestHomeBountiesCarousel(bounties) {
   const items9 = [callback2(closure_5, obj), ];
   let tmp32Result = null;
   if (tmp2) {
-    const obj1 = { orbShopProducts: null, obtainableOrbRewards: null, showOrbShopPlaceholderCarousel: null };
+    obj1 = { orbShopProducts: null, obtainableOrbRewards: null, showOrbShopPlaceholderCarousel: null };
     obj1[0] = orbShopProducts;
     obj1[1] = obtainableOrbRewards;
     obj1[2] = showOrbShopPlaceholderCarousel;
@@ -362,34 +364,30 @@ function QuestHomeBountiesCarousel(bounties) {
 }
 let c4 = importAllResult;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
-let PX_16 = require("Themes").space.PX_16;
-PX_16 = require("Themes").space.PX_16;
+let PX_16 = ThemesDefault.space.PX_16;
+PX_16 = ThemesDefault.space.PX_16;
 let closure_13 = require("CARD_WIDTH").CARD_WIDTH + PX_16;
 let closure_14 = createCacheKey.createStyles(() => {
   let obj = { container: null, listContentContainer: null, emptyState: null, emptyStateText: null };
-  obj = { marginBottom: importDefault(712).space.PX_48 };
+  obj = { marginBottom: ThemesDefault.space.PX_48 };
   obj[0] = obj;
   obj = { paddingLeft: PX_16 };
   obj[1] = obj;
-  obj[2] = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_12, borderWidth: 1, borderColor: importDefault(712).colors.BORDER_MUTED, backgroundColor: importDefault(712).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(712).radii.lg, overflow: "hidden", paddingHorizontal: importDefault(712).space.PX_16, paddingVertical: 14, marginHorizontal: importDefault(712).space.PX_16 };
+  obj[2] = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_12, borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_MUTED, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.lg, overflow: "hidden", paddingHorizontal: ThemesDefault.space.PX_16, paddingVertical: 14, marginHorizontal: ThemesDefault.space.PX_16 };
   obj[3] = { flex: 1, gap: 2 };
   return obj;
 });
 const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
-  let obtainableOrbRewards;
-  let orbShopProducts;
-  let showOrbShopPlaceholderCarousel;
-  let verticalScrollEnabled;
   ({ verticalScrollEnabled, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel } = arg0);
   if (showOrbShopPlaceholderCarousel === undefined) {
     showOrbShopPlaceholderCarousel = false;
   }
   let obj = dependencyMap;
-  let obj1 = first(10684);
+  obj1 = first(10723);
   const questHomeBounties = obj1.useQuestHomeBounties().questHomeBounties;
   const tmp2 = callback4();
   first = undefined;
-  let importDefault;
+  importDefault = undefined;
   dependencyMap = undefined;
   if (questHomeBounties.length > 0) {
     const items = [tmp(1377).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
@@ -397,7 +395,7 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
   } else {
     items1 = [];
   }
-  let tmpResult = tmp(7366);
+  let tmpResult = tmp(7404);
   const tmp3 = callback(tmpResult.useSelectedDismissibleContent(items1), 2);
   first = tmp3[0];
   importDefault = tmp5;
@@ -410,18 +408,18 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
     }
     if (!current) {
       ref.current = true;
-      _undefined(ref[14])();
+      callback(ref[14])();
     }
   }, items2);
   const items3 = [first, tmp3[1]];
   const effect1 = importAllResult.useEffect(() => {
     function handleHide(key) {
-      if (key.key === handleHide(outer1_2[14]).PROMO_SHEET_KEY) {
-        callback(outer1_8.USER_DISMISS);
+      if (key.key === handleHide(closure_1_2[14]).PROMO_SHEET_KEY) {
+        callback(closure_1_8.USER_DISMISS);
       }
     }
     if (handleHide === first(ref[15]).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET) {
-      const subscription = _undefined(tmp[17]).subscribe("HIDE_ACTION_SHEET", handleHide);
+      const subscription = callback(tmp[17]).subscribe("HIDE_ACTION_SHEET", handleHide);
       return () => {
         callback(table[17]).unsubscribe("HIDE_ACTION_SHEET", handleHide);
       };
@@ -430,8 +428,8 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
   }, items3);
   let tmp8 = 0 === questHomeBounties.length;
   tmpResult = tmp(589);
-  const items4 = [set];
-  const stateFromStores = tmpResult.useStateFromStores(items4, () => set.areAllBountiesCompleted());
+  const items4 = [closure_6];
+  const stateFromStores = tmpResult.useStateFromStores(items4, () => closure_6.areAllBountiesCompleted());
   let tmp10 = !tmp8;
   if (!tmp8) {
     tmp10 = !stateFromStores;
@@ -440,8 +438,8 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
     tmp10 = obtainableOrbRewards > 0;
   }
   if (tmp10) {
-    tmp10 = orbShopProducts.length >= tmp(14422).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-    const tmp11 = orbShopProducts.length >= tmp(14422).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+    tmp10 = orbShopProducts.length >= tmp(14490).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+    const tmp11 = orbShopProducts.length >= tmp(14490).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
   }
   if (!tmp8) {
     if (!stateFromStores) {
@@ -450,14 +448,14 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
         obj[0] = tmp2.container;
         obj = { bounties: null };
         obj[0] = questHomeBounties;
-        const items5 = [callback2(importDefault(14436), obj), ];
+        const items5 = [callback2(BountiesCtaDescriptionDefault, obj), ];
         let tmp17Result = null;
         if (tmp10) {
           obj1 = { orbShopProducts: null, obtainableOrbRewards: null, showOrbShopPlaceholderCarousel: null };
           obj1[0] = orbShopProducts;
           obj1[1] = obtainableOrbRewards;
           obj1[2] = showOrbShopPlaceholderCarousel;
-          tmp17Result = tmp17(tmp18(14433), obj1);
+          tmp17Result = tmp17(tmp18(14501), obj1);
         }
         items5[1] = tmp17Result;
         obj[1] = items5;
@@ -485,8 +483,8 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
       tmp8 = stateFromStores;
     }
     obj[1] = tmp8;
-    let tmp20Result = tmp20(importDefault(14436), obj);
-    const tmp25 = importDefault(14436);
+    let tmp20Result = tmp20(BountiesCtaDescriptionDefault, obj);
+    const tmp25 = BountiesCtaDescriptionDefault;
   } else {
     const obj4 = { reason: null };
     obj4[0] = tmp8 ? closure_7.EMPTY : closure_7.COMPLETED;
@@ -495,6 +493,6 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
   obj3[1] = tmp20Result;
   tmp20Result = tmp20(View, obj3);
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/QuestHomeBounties.tsx");
+let result = require("set").fileFinishedImporting("modules/quests/native/QuestHomeBounties.tsx");
 
 export default memoResult;

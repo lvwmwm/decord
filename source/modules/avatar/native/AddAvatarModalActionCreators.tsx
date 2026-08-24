@@ -1,39 +1,48 @@
-// Module ID: 16645
-// Function ID: 16646
+// Module ID: 16741
+// Function ID: 16742
 // Name: handlePressNext
-// Dependencies: [16646, 676, 698, 8620, 4827, 1236, 8374, 8376, 5260, 16647, 2007, 11877, 2]
+// Dependencies: [16742, 676, 698, 8657, 4832, 1236, 8413, 8415, 5265, 16743, 2008, 11926, 2]
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 16645 (handlePressNext)
-import { ADD_AVATAR_MODAL_KEY } from "ADD_AVATAR_MODAL_KEY";
-import { AnalyticEvents } from "ME";
+// Module 16741 (handlePressNext)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import setDefault from "set" /* 4832 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import saveProfileAndAccountRequest from "saveProfileAndAccountRequest" /* 8657 */;
+import _startContactSyncForDiscoverability from "_startContactSyncForDiscoverability" /* 11926 */;
+import ADD_AVATAR_MODAL_KEY2 from "ADD_AVATAR_MODAL_KEY" /* 16742 */;
 
-let result = require("expandEventProperties").fileFinishedImporting("modules/avatar/native/AddAvatarModalActionCreators.tsx");
+const ADD_AVATAR_MODAL_KEY = ADD_AVATAR_MODAL_KEY2.ADD_AVATAR_MODAL_KEY;
+const AnalyticEvents = ME.AnalyticEvents;
+let result = set.fileFinishedImporting("modules/avatar/native/AddAvatarModalActionCreators.tsx");
 
 export const handlePressNext = function handlePressNext(pendingImage, first, fn) {
   if (null != pendingImage) {
     let obj = { default_avatar_selected: null, is_guild_profile: false, location: null };
     obj[0] = first;
     obj[2] = { page: "Onboarding" };
-    importDefault(698).track(AnalyticEvents.USER_AVATAR_UPDATED, obj);
-    const obj3 = importDefault(698);
+    expandEventPropertiesDefault.track(AnalyticEvents.USER_AVATAR_UPDATED, obj);
+    const obj3 = expandEventPropertiesDefault;
     obj = { avatar: null, avatar_description: null };
     ({ imageUri: obj6[0], description: obj6[1] } = pendingImage);
-    const result = require(8620) /* saveProfileAndAccountRequest */.saveProfileAndAccountRequest(obj);
-    const obj5 = require(8620) /* saveProfileAndAccountRequest */;
+    const result = saveProfileAndAccountRequest.saveProfileAndAccountRequest(obj);
+    const obj5 = saveProfileAndAccountRequest;
   }
   if (null != fn) {
     fn();
   } else {
-    obj = importDefault(5260);
+    obj = _modDef5265;
     obj.popWithKey(ADD_AVATAR_MODAL_KEY);
-    require(11877) /* _startContactSyncForDiscoverability */.nextOnboardingStep({ skip: false });
-    const obj2 = require(11877) /* _startContactSyncForDiscoverability */;
+    _startContactSyncForDiscoverability.nextOnboardingStep({ skip: false });
+    const obj2 = _startContactSyncForDiscoverability;
   }
 };
 export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
   const _require = arg0;
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj.track(AnalyticEvents.NUO_TRANSITION, { flow_type: "Mobile NUX Post Reg", from_step: "Skip avatar modal", skip_attempt: true });
   obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, hideActionSheet: false };
   const intl = _require(1236).intl;
@@ -45,21 +54,21 @@ export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
   const intl4 = _require(1236).intl;
   obj[3] = intl4.string(_require(1236).t.nhJ8OC);
   obj[4] = function onConfirm() {
-    callback(outer1_2[6]).setPendingChanges({ avatar: null });
-    const obj = callback(outer1_2[6]);
+    callback(closure_1_2[6]).setPendingChanges({ avatar: null });
+    const obj = callback(closure_1_2[6]);
     const tmp = callback;
-    const result = callback(outer1_2[7]).announcePendingAvatarChange("remove");
+    const result = callback(closure_1_2[7]).announcePendingAvatarChange("remove");
     if (null != callback) {
       tmp5(true);
     } else {
-      outer1_1(tmp2[8]).popWithKey(outer1_3);
-      const obj3 = outer1_1(tmp2[8]);
+      closure_1_1(tmp2[8]).popWithKey(closure_1_3);
+      const obj3 = closure_1_1(tmp2[8]);
       tmp(tmp2[11]).nextOnboardingStep({ skip: true });
       const tmpResult = tmp(tmp2[11]);
     }
   };
-  importDefault(4827).show(obj);
+  setDefault.show(obj);
 };
 export const openAddAvatarModal = function openAddAvatarModal() {
-  importDefault(5260).pushLazy(require(2007) /* asyncRequireImpl */(16647, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
+  _modDef5265.pushLazy(asyncRequireImpl(16743, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
 };

@@ -1,65 +1,64 @@
-// Module ID: 10180
-// Function ID: 10181
+// Module ID: 10219
+// Function ID: 10220
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 4661, 712, 4984, 5433, 1236, 6368, 6883, 4734, 6871, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4989, 5438, 1236, 6399, 6921, 4739, 6909, 2]
 // Exports: default
 
-// Module 10180 (ForumComposerHeader)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10219 (ForumComposerHeader)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import computeChannelNameDefault from "computeChannelName" /* 4989 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import XSmallIcon from "XSmallIcon" /* 6399 */;
+import ForumIcon from "ForumIcon" /* 6921 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles((height) => {
   obj = { headerBar: obj, headerBarContent: { flexDirection: "row", alignItems: "center", flex: 1 }, headerBarText: null, headerBarSeparator: null, button: null };
   obj = { height, flexDirection: "row", alignItems: "center" };
-  obj = { marginHorizontal: importDefault(712).space.PX_16 };
+  obj = { marginHorizontal: ThemesDefault.space.PX_16 };
   obj[2] = obj;
-  const obj1 = {};
+  obj1 = {};
   const merged = Object.assign(closure_3.absoluteFillObject);
   obj1.height = closure_3.hairlineWidth;
-  obj1.backgroundColor = importDefault(712).colors.BORDER_SUBTLE;
+  obj1.backgroundColor = ThemesDefault.colors.BORDER_SUBTLE;
   obj1.top = undefined;
   obj[3] = obj1;
-  obj[4] = { paddingHorizontal: importDefault(712).space.PX_16 };
+  obj[4] = { paddingHorizontal: ThemesDefault.space.PX_16 };
   return obj;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/forums/native/composer/ForumComposerHeader.tsx");
+const result = require("set").fileFinishedImporting("modules/forums/native/composer/ForumComposerHeader.tsx");
 
 export default function ForumComposerHeader(height) {
-  let channel;
-  let onGuidelinesPress;
-  let require;
-  let submitting;
-  let title;
   ({ title, channel, onClose: require } = height);
   ({ submitting, onGuidelinesPress } = height);
   const tmp = callback2(height.height);
   let obj = { style: tmp.headerBar, children: null };
   obj = { style: tmp.button, accessibilityRole: "button", accessibilityLabel: null, disabled: null, onPress: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.cpT0Cq);
   obj[3] = submitting;
   obj[4] = function onPress() {
     return callback(false);
   };
-  obj[5] = callback(require(6368) /* XSmallIcon */.XSmallIcon, {});
-  const items = [callback(require(5433) /* PressableBase */.PressableOpacity, obj), , , ];
+  obj[5] = callback(XSmallIcon.XSmallIcon, {});
+  const items = [callback(PressableBase.PressableOpacity, obj), , , ];
   obj = { style: tmp.headerBarContent, children: null };
-  const items1 = [callback(require(6883) /* ForumIcon */.ForumIcon, { size: "sm" }), ];
-  const obj1 = { style: tmp.headerBarText, children: null };
+  const items1 = [callback(ForumIcon.ForumIcon, { size: "sm" }), ];
+  obj1 = { style: tmp.headerBarText, children: null };
   if ("" === title) {
     const intl2 = tmp7(1236).intl;
     title = intl2.string(tmp7(1236).t["7EjFCk"]);
   }
-  const items2 = [callback(require(4734) /* Text */.Text, { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title }), callback(require(4734) /* Text */.Text, { variant: "text-xs/medium", color: "text-default", children: importDefault(4984)(channel) })];
+  const items2 = [callback(Text.Text, { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title }), callback(Text.Text, { variant: "text-xs/medium", color: "text-default", children: computeChannelNameDefault(channel) })];
   obj1[1] = items2;
   items1[1] = closure_6(closure_4, obj1);
   obj[1] = items1;
@@ -75,8 +74,8 @@ export default function ForumComposerHeader(height) {
     obj2[1] = intl3.string(tmp7(1236).t.yR6HwZ);
     obj2[2] = tmp.button;
     obj2[3] = onGuidelinesPress;
-    obj2[4] = tmp6(tmp7(6871).BookCheckIcon, {});
-    tmp6Result = tmp6(tmp7(5433).PressableOpacity, obj2);
+    obj2[4] = tmp6(tmp7(6909).BookCheckIcon, {});
+    tmp6Result = tmp6(tmp7(5438).PressableOpacity, obj2);
   }
   items[2] = tmp6Result;
   items[3] = callback(closure_4, { style: tmp.headerBarSeparator });

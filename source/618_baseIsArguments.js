@@ -4,16 +4,15 @@
 // Dependencies: [619, 620]
 
 // Module 618 (baseIsArguments)
-import baseIsArguments from "baseIsArguments";
+import isObjectLike from "isObjectLike" /* 620 */;
+import baseIsArguments from "baseIsArguments" /* 619 */;
 
-let c3;
-let obj1;
 ({ hasOwnProperty: obj1, propertyIsEnumerable: c3 } = Object.prototype);
 if (baseIsArguments((() => arguments)())) {
-  let fn = require("baseIsArguments");
+  let fn = baseIsArguments;
 } else {
   fn = (arg0) => {
-    const tmp = require(620) /* isObjectLike */(arg0);
+    const tmp = isObjectLike(arg0);
     if (!tmp) {
       if (!tmp) {
         return tmp;

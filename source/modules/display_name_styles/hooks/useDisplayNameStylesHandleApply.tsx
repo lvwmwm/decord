@@ -1,15 +1,15 @@
-// Module ID: 14683
-// Function ID: 14684
+// Module ID: 14751
+// Function ID: 14752
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [19, 676, 1935, 8377, 8374, 698, 1936, 2]
+// Dependencies: [19, 676, 1935, 8416, 8413, 698, 1936, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 14683 (useDisplayNameStylesHandleApply)
-import noop from "noop";
-import { AnalyticEvents } from "ME";
+// Module 14751 (useDisplayNameStylesHandleApply)
+import closure_3 from "noop" /* 19 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;
-let result = require("DisplayNameEffect").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
+let result = require("set").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
 
 export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHandleApply(hasChanges) {
   hasChanges = hasChanges.hasChanges;

@@ -1,22 +1,21 @@
-// Module ID: 4977
-// Function ID: 4978
+// Module ID: 4982
+// Function ID: 4983
 // Name: recomputeGuild
-// Dependencies: [1434, 1990, 1983, 1910, 1922, 676, 4009, 1403, 709, 11, 589, 2]
+// Dependencies: [1434, 1991, 1984, 1910, 1922, 676, 4012, 1403, 709, 11, 589, 2]
 
-// Module 4977 (recomputeGuild)
-import { isGuildOwner } from "GuildNSFWContentLevel";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { GuildMemberFlags } from "GuildMemberFlags";
-import { Store } from "initialize";
-import set from "createGuildRoleRecordFromRust";
+// Module 4982 (recomputeGuild)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
+import GuildMemberFlags2 from "GuildMemberFlags" /* 4012 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-let c10;
-let c9;
-let metroImportAll;
 function recomputeGuild(guildId) {
   const _require = guildId;
   clearGuild(guildId);
@@ -164,7 +163,7 @@ function recomputeGuild(guildId) {
               HermesBuiltin.arraySpread(items, 0);
               const _Math2 = Math;
               timerId = setTimeout(() => {
-                let obj = outer1_1(outer1_2[8]);
+                let obj = closure_1_1(closure_1_2[8]);
                 obj = { type: "GUILD_VERIFICATION_CHECK", guildId: closure_0 };
                 return obj.dispatch(obj);
               }, HermesBuiltin.apply(items1, Math));
@@ -227,15 +226,18 @@ function handleCreateOrUpdateGuild(guild) {
   set.delete(guild.guild.id);
   recomputeGuild(guild.guild.id);
 }
-({ VerificationLevels: metroImportAll, VerificationCriteria: c9, GuildFeatures: c10 } = ME);
+const isGuildOwner = GuildNSFWContentLevel.isGuildOwner;
+({ VerificationLevels: closure_8, VerificationCriteria: c9, GuildFeatures: c10 } = ME);
+const GuildMemberFlags = GuildMemberFlags2.GuildMemberFlags;
 let closure_12 = { notClaimed: false, notEmailVerified: false, notPhoneVerified: false, newAccount: false, newMember: false, missingVerificationRole: false, canChat: true };
 let set = new Set();
 let closure_14 = {};
+const Store = initializeDefault.Store;
 class GuildVerificationStore extends Store {
 }
 const prototype = GuildVerificationStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(trackCommunicationDisabled, createGuildRoleRecordFromRust, createGuildRecordFromRust, mergeGuildAvatar);
+  this.waitFor(closure_4, closure_5, closure_6, closure_7);
 };
 prototype["getCheck"] = function getCheck(guild_id) {
   if (null == guild_id) {
@@ -255,7 +257,7 @@ prototype["canChatInGuild"] = function canChatInGuild(guildId) {
   return this.getCheck(guildId).canChat;
 };
 GuildVerificationStore.displayName = "GuildVerificationStore";
-const guildVerificationStore = new GuildVerificationStore(require("dispatcher"), {
+const guildVerificationStore = new GuildVerificationStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
     set.clear();
     for (const key10008 in closure_14) {
@@ -271,7 +273,7 @@ const guildVerificationStore = new GuildVerificationStore(require("dispatcher"),
     }
   },
   CONNECTION_CLOSED: function handleConnectionClosed() {
-    const keys = importDefault(11).keys(closure_14);
+    const keys = DISCORD_EPOCHDefault.keys(closure_14);
     const item = keys.forEach(clearGuild);
   },
   CURRENT_USER_UPDATE: function handleCurrentUserUpdate() {

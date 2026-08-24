@@ -1,35 +1,40 @@
-// Module ID: 12680
-// Function ID: 12681
+// Module ID: 12734
+// Function ID: 12735
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [19, 676, 21, 4661, 4660, 8074, 1236, 1993, 4660, 2]
+// Dependencies: [19, 676, 21, 4668, 4667, 8113, 1236, 1994, 4667, 2]
 // Exports: default
 
-// Module 12680 (ProvisionalAccountNoCallAllowed)
-import "noop";
-import { HelpdeskArticles } from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12734 (ProvisionalAccountNoCallAllowed)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import combinedDefault from "combined" /* 1994 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 8113 */;
+import { HelpdeskArticles } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_5 = createCacheKey.createStyles({ header: { alignSelf: "center" } });
-const result = require("jsxProd").fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountNoCallAllowed.tsx");
+const result = require("set").fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountNoCallAllowed.tsx");
 
 export default function ProvisionalAccountNoCallAllowed() {
   let obj = { header: null, title: null, content: null, actions: null };
   obj = { size: "lg", style: callback().header };
-  obj[0] = jsx(require(8074) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: callback().header });
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["vh+Zpq"]);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = jsx(CircleErrorIcon.CircleErrorIcon, { size: "lg", style: callback().header });
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t["vh+Zpq"]);
+  const intl2 = getSystemLocale.intl;
   obj = { helpdeskArticle: null };
   const tmp = callback();
-  obj[0] = importDefault(1993).getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS);
-  obj[2] = intl2.format(require(1236) /* getSystemLocale */.t["tx08s+"], obj);
-  const obj1 = { children: null };
+  obj[0] = combinedDefault.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS);
+  obj[2] = intl2.format(getSystemLocale.t["tx08s+"], obj);
+  obj1 = { children: null };
   const obj2 = { variant: "secondary", text: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t["NX+WJN"]);
-  obj1[0] = jsx(require(4660) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary", text: null }, "got-it");
-  obj[3] = jsx(require(4660) /* getAlertModalItemKey */.AlertActions, { children: null });
-  return jsx(require(4660) /* getAlertModalItemKey */.AlertModal, { helpdeskArticle: null });
+  const intl3 = getSystemLocale.intl;
+  obj2[1] = intl3.string(getSystemLocale.t["NX+WJN"]);
+  obj1[0] = jsx(getAlertModalItemKey.AlertActionButton, { variant: "secondary", text: null }, "got-it");
+  obj[3] = jsx(getAlertModalItemKey.AlertActions, { children: null });
+  return jsx(getAlertModalItemKey.AlertModal, { helpdeskArticle: null });
 };

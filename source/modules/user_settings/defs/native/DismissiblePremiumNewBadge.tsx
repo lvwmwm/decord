@@ -1,34 +1,32 @@
-// Module ID: 14703
-// Function ID: 14704
+// Module ID: 14771
+// Function ID: 14772
 // Name: DismissiblePremiumNewBadge
-// Dependencies: [19, 7403, 21, 4661, 712, 10261, 500, 1297, 4756, 691, 2]
+// Dependencies: [19, 7441, 21, 4668, 712, 10300, 500, 1297, 4761, 691, 2]
 // Exports: default
 
-// Module 14703 (DismissiblePremiumNewBadge)
-import "noop";
-import { Gradients } from "items";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14771 (DismissiblePremiumNewBadge)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10300 */;
+import { Gradients } from "items" /* 7441 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
+noopAll;
 createCacheKey = { newTag: { backgroundColor: "transparent" }, newTagContainer: null };
-createCacheKey = { borderRadius: require("Themes").radii.sm, marginLeft: require("Themes").space.PX_4 };
+createCacheKey = { borderRadius: ThemesDefault.radii.sm, marginLeft: ThemesDefault.space.PX_4 };
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/defs/native/DismissiblePremiumNewBadge.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/DismissiblePremiumNewBadge.tsx");
 
 export default function DismissiblePremiumNewBadge(dismissibleContent) {
-  let Gradients;
-  let createCacheKey;
-  let dependencyMap;
-  let importDefault;
-  let jsx;
   dismissibleContent = dismissibleContent.dismissibleContent;
-  ({ containerStyle: importDefault, noGradient: dependencyMap, newPremiumStyle: Gradients, colors: jsx, variantOverride: createCacheKey } = dismissibleContent);
-  let closure_6;
-  closure_6 = createCacheKey();
+  ({ containerStyle: importDefault, noGradient: dependencyMap, newPremiumStyle: Gradients, colors: jsx, variantOverride: closure_5 } = dismissibleContent);
+  closure_6 = undefined;
+  closure_6 = callback();
   let items = [dismissibleContent];
-  return jsx(importDefault(10261), {
+  return jsx(SelectedDismissibleContentDefault, {
     contentTypes: items,
     children(visibleContent) {
       if (visibleContent.visibleContent !== dismissibleContent) {
@@ -36,7 +34,7 @@ export default function DismissiblePremiumNewBadge(dismissibleContent) {
       } else {
         let tmp3 = closure_5;
         if (null == closure_5) {
-          let obj = dismissibleContent(outer1_2[6]);
+          let obj = dismissibleContent(closure_1_2[6]);
           let str = "text-xs/bold";
           if (obj.isAndroid()) {
             str = "text-xxs/bold";
@@ -48,31 +46,31 @@ export default function DismissiblePremiumNewBadge(dismissibleContent) {
           obj[0] = tmp3;
           const items = [closure_6.newTagContainer, closure_1];
           obj[1] = items;
-          let tmp6Result = outer1_4(dismissibleContent(outer1_2[7]).NewTag, obj);
+          let tmp6Result = closure_1_4(dismissibleContent(closure_1_2[7]).NewTag, obj);
         } else if (closure_3) {
           obj = { variant: null, containerStyle: null, gradient: true, colors: null };
           obj[0] = tmp3;
           obj[1] = closure_6.newTag;
-          obj[3] = outer1_3.PREMIUM_TIER_2_TRI_COLOR;
-          tmp6Result = tmp6(dismissibleContent(outer1_2[7]).NewTag, obj);
+          obj[3] = closure_1_3.PREMIUM_TIER_2_TRI_COLOR;
+          tmp6Result = tmp6(dismissibleContent(closure_1_2[7]).NewTag, obj);
         } else {
-          const obj1 = { style: null, start: null, end: null, colors: null, children: null };
+          obj1 = { style: null, start: null, end: null, colors: null, children: null };
           obj1[0] = closure_6.newTagContainer;
-          obj1[1] = dismissibleContent(outer1_2[9]).HorizontalGradient.START;
-          obj1[2] = dismissibleContent(outer1_2[9]).HorizontalGradient.END;
+          obj1[1] = dismissibleContent(closure_1_2[9]).HorizontalGradient.START;
+          obj1[2] = dismissibleContent(closure_1_2[9]).HorizontalGradient.END;
           let tmp15 = closure_4;
           if (closure_4 == null) {
-            const items1 = [tmp7(outer1_2[4]).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, tmp7(outer1_2[4]).unsafe_rawColors.PREMIUM_TIER_2_PINK];
+            const items1 = [tmp7(closure_1_2[4]).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, tmp7(closure_1_2[4]).unsafe_rawColors.PREMIUM_TIER_2_PINK];
             tmp15 = items1;
           }
           obj1[3] = tmp15;
           const obj2 = { containerStyle: null, variant: null };
           obj2[0] = closure_6.newTag;
           obj2[1] = tmp3;
-          obj1[4] = outer1_4(dismissibleContent(outer1_2[7]).NewTag, obj2);
-          tmp6Result = tmp6(outer1_1(outer1_2[8]), obj1);
+          obj1[4] = closure_1_4(dismissibleContent(closure_1_2[7]).NewTag, obj2);
+          tmp6Result = tmp6(closure_1_1(closure_1_2[8]), obj1);
           const tmp10 = closure_6;
-          const tmp9 = outer1_1(outer1_2[8]);
+          const tmp9 = closure_1_1(closure_1_2[8]);
         }
         return tmp6Result;
       }

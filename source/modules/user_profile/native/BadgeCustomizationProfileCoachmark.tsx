@@ -1,23 +1,23 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16118
+// Function ID: 16119
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [19, 1922, 1388, 589, 4039, 1236, 9314, 2]
+// Dependencies: [19, 1922, 1388, 589, 4042, 1236, 9351, 2]
 // Exports: default
 
-// Module 16021 (BadgeCustomizationProfileCoachmark)
-import noop from "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { ContentDismissActionType } from "ContentDismissActionType";
+// Module 16118 (BadgeCustomizationProfileCoachmark)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 
 const require = arg1;
-const result = require("ContentDismissActionType").fileFinishedImporting("modules/user_profile/native/BadgeCustomizationProfileCoachmark.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/BadgeCustomizationProfileCoachmark.tsx");
 
 export default function BadgeCustomizationProfileCoachmark(visible) {
   visible = visible.visible;
   const markAsDismissed = visible.markAsDismissed;
   const onTryItOut = visible.onTryItOut;
   let stateFromStores;
-  const items = [mergeGuildAvatar];
+  const items = [closure_4];
   stateFromStores = visible(onTryItOut[3]).useStateFromStores(items, () => markAsDismissed(onTryItOut[4]).canUsePremiumProfileCustomization(currentUser.getCurrentUser()));
   const items1 = [stateFromStores, visible, markAsDismissed, onTryItOut];
   const memo = stateFromStores.useMemo(() => {
@@ -29,12 +29,12 @@ export default function BadgeCustomizationProfileCoachmark(visible) {
     obj[1] = intl2.string(stateFromStores ? t.p82vky : t.IDh31t);
     obj[2] = visible;
     obj[4] = function onDismiss() {
-      return callback(outer1_5.USER_DISMISS);
+      return callback(closure_1_5.USER_DISMISS);
     };
     const intl3 = tmp(tmp2[5]).intl;
     obj[5] = intl3.string(visible(onTryItOut[5]).t["4P5I8V"]);
     obj[7] = function onButtonPress() {
-      callback(outer1_5.TAKE_ACTION);
+      callback(closure_1_5.TAKE_ACTION);
       callback2();
     };
     return obj;

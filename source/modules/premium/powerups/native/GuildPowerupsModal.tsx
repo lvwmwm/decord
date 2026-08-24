@@ -1,65 +1,53 @@
-// Module ID: 11649
-// Function ID: 11650
+// Module ID: 11698
+// Function ID: 11699
 // Name: GuildPowerupsModal
-// Dependencies: [19, 17, 4262, 21, 4661, 712, 4285, 11650, 11660, 11680, 1629, 7139, 11685, 11686, 11715, 5260, 4281, 6319, 1236, 2367, 8492, 6314, 11722, 11724, 11732, 11738, 11748, 11756, 2]
+// Dependencies: [19, 17, 4266, 21, 4668, 712, 4289, 11699, 11709, 11729, 1629, 7177, 11734, 11735, 11764, 5265, 4285, 6350, 1236, 2368, 8531, 6345, 11771, 11773, 11781, 11787, 11797, 11805, 2]
 // Exports: default
 
-// Module 11649 (GuildPowerupsModal)
-import messagesProxy from "messagesProxy";
-import get_ActivityIndicator from "Background";
-import BoostedGuildTiers from "BoostedGuildTiers";
-import jsxProd from "HeaderBackImage";
-import createCacheKey from "createCacheKey";
+// Module 11698 (GuildPowerupsModal)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4266 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 ({ ScrollView: c4, View: c5 } = get_ActivityIndicator);
 ({ BoostInfoType: closure_6, GuildPowerupType: error } = BoostedGuildTiers);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { container: null, headerLeftContainer: null, headerRightContainer: null, boostInfoContainer: null, boostInfoSeparator: null, scrollView: null, boostButtonContainer: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { paddingLeft: require("Themes").space.PX_16 };
-let obj1 = { paddingLeft: require("Themes").space.PX_16 };
-createCacheKey[2] = { paddingRight: require("Themes").space.PX_16 };
-let obj2 = { paddingRight: require("Themes").space.PX_16 };
-createCacheKey[3] = { flexDirection: "row", justifyContent: "space-between", borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_SUBTLE, marginBottom: require("Themes").space.PX_16 };
-let obj3 = { flexDirection: "row", justifyContent: "space-between", borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_SUBTLE, marginBottom: require("Themes").space.PX_16 };
-createCacheKey[4] = { width: 1, height: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-let obj4 = { width: 1, height: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-createCacheKey[5] = { paddingBottom: require("Themes").space.PX_96 };
-let obj5 = { paddingBottom: require("Themes").space.PX_96 };
-createCacheKey[6] = { paddingHorizontal: require("Themes").space.PX_16, position: "absolute", bottom: 0, left: 0, right: 0 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj6 = { paddingHorizontal: require("Themes").space.PX_16, position: "absolute", bottom: 0, left: 0, right: 0 };
-const result = require("BoostedGuildTiers").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsModal.tsx");
+createCacheKey[1] = { paddingLeft: ThemesDefault.space.PX_16 };
+let obj1 = { paddingLeft: ThemesDefault.space.PX_16 };
+createCacheKey[2] = { paddingRight: ThemesDefault.space.PX_16 };
+let obj2 = { paddingRight: ThemesDefault.space.PX_16 };
+createCacheKey[3] = { flexDirection: "row", justifyContent: "space-between", borderWidth: 1, borderStyle: "solid", borderColor: ThemesDefault.colors.BORDER_SUBTLE, marginBottom: ThemesDefault.space.PX_16 };
+let obj3 = { flexDirection: "row", justifyContent: "space-between", borderWidth: 1, borderStyle: "solid", borderColor: ThemesDefault.colors.BORDER_SUBTLE, marginBottom: ThemesDefault.space.PX_16 };
+createCacheKey[4] = { width: 1, height: "100%", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+let obj4 = { width: 1, height: "100%", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+createCacheKey[5] = { paddingBottom: ThemesDefault.space.PX_96 };
+let obj5 = { paddingBottom: ThemesDefault.space.PX_96 };
+createCacheKey[6] = { paddingHorizontal: ThemesDefault.space.PX_16, position: "absolute", bottom: 0, left: 0, right: 0 };
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+let obj6 = { paddingHorizontal: ThemesDefault.space.PX_16, position: "absolute", bottom: 0, left: 0, right: 0 };
+const result = require("set").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsModal.tsx");
 
 export default function GuildPowerupsModal(guildId) {
-  let analyticsLocation;
-  let autoOpenPerkId;
-  let available;
-  let bottom;
-  let spent;
-  let top;
-  let total;
   guildId = guildId.guildId;
   ({ analyticsLocation, autoOpenPerkId } = guildId);
   const autoOpenRequestId = guildId.autoOpenRequestId;
   let buildGuildPowerupsSections;
-  let closure_4;
+  closure_4 = undefined;
   let obj = guildId(autoOpenRequestId[6]);
   const gameServerEnabled = obj.useGameServerEnabled(guildId, "GuildPowerupsModal");
   autoOpenPerkId(autoOpenRequestId[7])(guildId);
-  let obj1 = guildId(autoOpenRequestId[8]);
+  obj1 = guildId(autoOpenRequestId[8]);
   const autoDismissGuildPowerupsNotifications = obj1.useAutoDismissGuildPowerupsNotifications(guildId);
   autoOpenPerkId(autoOpenRequestId[9])(guildId, "GuildPowerupsModal", null != autoOpenPerkId);
   ({ bottom, top } = autoOpenPerkId(autoOpenRequestId[10])());
-  let tmp9 = createCacheKey();
+  let tmp9 = callback3();
   let tmp8 = autoOpenPerkId(autoOpenRequestId[10])();
   if (null != analyticsLocation) {
     const items = [analyticsLocation];
@@ -176,16 +164,16 @@ export default function GuildPowerupsModal(guildId) {
     callback(autoOpenPerkId(autoOpenRequestId[23]), { guildId }),
     buildGuildPowerupsSections.map((type) => {
       type = type.type;
-      if (outer1_7.LEVEL === type) {
+      if (closure_1_7.LEVEL === type) {
         let obj = { guildId: null, listings: null };
         obj[0] = guildId;
         obj[1] = type.listings;
-        return outer1_8(autoOpenPerkId(autoOpenRequestId[24]), obj, type.type);
+        return closure_1_8(autoOpenPerkId(autoOpenRequestId[24]), obj, type.type);
       } else if (tmp.PERK === type) {
         obj = { guildId: null, listings: null };
         obj[0] = guildId;
         obj[1] = type.listings;
-        return outer1_8(autoOpenPerkId(autoOpenRequestId[25]), obj, type.type);
+        return closure_1_8(autoOpenPerkId(autoOpenRequestId[25]), obj, type.type);
       } else {
         return null;
       }

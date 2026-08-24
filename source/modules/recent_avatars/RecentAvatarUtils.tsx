@@ -1,17 +1,18 @@
-// Module ID: 8384
-// Function ID: 8385
+// Module ID: 8423
+// Function ID: 8424
 // Name: getArchivedAvatarURL
-// Dependencies: [676, 1435, 1469, 1484, 1236, 8385, 1370, 2]
+// Dependencies: [676, 1435, 1469, 1484, 1236, 8424, 1370, 2]
 // Exports: generateAvatarDescription, generateRecentAvatarFileDetails, getImageFormat, getPendingAvatarSrc
 
-// Module 8384 (getArchivedAvatarURL)
-import { Endpoints } from "ME";
+// Module 8423 (getArchivedAvatarURL)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getAvatarURL from "getAvatarURL" /* 1435 */;
+import handleImageLoad from "handleImageLoad" /* 1469 */;
+import parseDefault from "parse" /* 1484 */;
+import AssetOriginTypes from "AssetOriginTypes" /* 8424 */;
 
 function getArchivedAvatarURL(allowWebp) {
-  let avatarId;
-  let canAnimate;
-  let storageHash;
-  let userId;
   ({ userId, avatarId, storageHash, canAnimate } = allowWebp);
   if (canAnimate === undefined) {
     canAnimate = false;
@@ -36,7 +37,7 @@ function getArchivedAvatarURL(allowWebp) {
     flag = true;
   }
   if (flag2) {
-    let obj = require(1435) /* getAvatarURL */;
+    let obj = getAvatarURL;
     if (obj.isAnimatedIconHash(storageHash)) {
       let str6 = "gif";
       if (flag) {
@@ -48,10 +49,10 @@ function getArchivedAvatarURL(allowWebp) {
       let str2 = str6;
     }
     obj = { size: null };
-    const obj3 = require(1469) /* handleImageLoad */;
+    const obj3 = handleImageLoad;
     tmp2 = require;
     const tmp6 = require;
-    obj[0] = obj3.getBestMediaProxySize(allowWebp.size * require(1469) /* handleImageLoad */.getDevicePixelRatio());
+    obj[0] = obj3.getBestMediaProxySize(allowWebp.size * handleImageLoad.getDevicePixelRatio());
     let isAnimatedIconHashResult = "webp" === str2 && canAnimate;
     if (isAnimatedIconHashResult) {
       isAnimatedIconHashResult = tmp6(1435).isAnimatedIconHash(storageHash);
@@ -60,24 +61,25 @@ function getArchivedAvatarURL(allowWebp) {
     if (isAnimatedIconHashResult) {
       obj.animated = true;
     }
-    const obj4 = require(1469) /* handleImageLoad */;
+    const obj4 = handleImageLoad;
     const ARCHIVED_AVATARResult = Endpoints.ARCHIVED_AVATAR(userId, avatarId, storageHash, str2);
     const _HermesInternal2 = HermesInternal;
-    return "" + combined + ARCHIVED_AVATARResult + "?" + importDefault(1484).stringify(obj);
+    return "" + combined + ARCHIVED_AVATARResult + "?" + parseDefault.stringify(obj);
   }
   str2 = "jpg";
   if (null != window.GLOBAL_ENV.CDN_HOST) {
     let str4 = "png";
     if (flag) {
       str4 = "png";
-      if (require(1435) /* getAvatarURL */.SUPPORTS_WEBP) {
+      if (getAvatarURL.SUPPORTS_WEBP) {
         str4 = "webp";
       }
     }
     str2 = str4;
   }
 }
-const result = require("handleImageLoad").fileFinishedImporting("modules/recent_avatars/RecentAvatarUtils.tsx");
+const Endpoints = ME.Endpoints;
+const result = set.fileFinishedImporting("modules/recent_avatars/RecentAvatarUtils.tsx");
 
 export const getImageFormat = function getImageFormat(canAnimate) {
   let flag = canAnimate.canAnimate;
@@ -93,7 +95,7 @@ export const getImageFormat = function getImageFormat(canAnimate) {
       let str5 = "gif";
       if (flag2) {
         str5 = "gif";
-        if (require(1435) /* getAvatarURL */.SUPPORTS_WEBP) {
+        if (getAvatarURL.SUPPORTS_WEBP) {
           str5 = "webp";
         }
       }
@@ -106,7 +108,7 @@ export const getImageFormat = function getImageFormat(canAnimate) {
     let str3 = "png";
     if (flag2) {
       str3 = "png";
-      if (require(1435) /* getAvatarURL */.SUPPORTS_WEBP) {
+      if (getAvatarURL.SUPPORTS_WEBP) {
         str3 = "webp";
       }
     }
@@ -115,17 +117,15 @@ export const getImageFormat = function getImageFormat(canAnimate) {
 };
 export { getArchivedAvatarURL };
 export const generateAvatarDescription = function generateAvatarDescription(maxSettingsForPreset) {
-  let assetOrigin;
-  let filename;
   let obj = maxSettingsForPreset;
   if (maxSettingsForPreset == null) {
     obj = {};
   }
   ({ filename, assetOrigin } = obj);
   if (undefined === assetOrigin) {
-    assetOrigin = require(8385) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
+    assetOrigin = AssetOriginTypes.AssetOriginTypes.NEW_ASSET;
   }
-  if (assetOrigin !== require(8385) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+  if (assetOrigin !== AssetOriginTypes.AssetOriginTypes.ARCHIVED_ASSET) {
     if (filename == null) {
       const intl = tmp3(1236).intl;
       filename = intl.string(tmp3(1236).t.lqaIxI);
@@ -133,7 +133,7 @@ export const generateAvatarDescription = function generateAvatarDescription(maxS
     const _Date = Date;
     const date = new Date();
     const intl2 = tmp3(1236).intl;
-    if (assetOrigin === tmp3(8385).AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
+    if (assetOrigin === tmp3(8424).AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
       let DYil93 = tmp3(1236).t.eC2sZi;
     } else {
       DYil93 = tmp3(1236).t.DYil93;
@@ -145,7 +145,7 @@ export const generateAvatarDescription = function generateAvatarDescription(maxS
   }
 };
 export const generateRecentAvatarFileDetails = function generateRecentAvatarFileDetails(storageHash) {
-  let flag = require(1435) /* getAvatarURL */.SUPPORTS_WEBP;
+  let flag = getAvatarURL.SUPPORTS_WEBP;
   if (flag === undefined) {
     flag = true;
   }
@@ -197,9 +197,6 @@ export const generateRecentAvatarFileDetails = function generateRecentAvatarFile
   return obj;
 };
 export const getPendingAvatarSrc = function getPendingAvatarSrc(canAnimate) {
-  let image;
-  let size;
-  let userId;
   ({ userId, image, size } = canAnimate);
   if (size === undefined) {
     size = 80;
@@ -212,7 +209,7 @@ export const getPendingAvatarSrc = function getPendingAvatarSrc(canAnimate) {
   if (null != image) {
     tmp = image;
     if (typeof image !== "string") {
-      if (image.assetOrigin === require(8385) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+      if (image.assetOrigin === AssetOriginTypes.AssetOriginTypes.ARCHIVED_ASSET) {
         const obj = { userId: null, avatarId: null, storageHash: null, size: null, canAnimate: null };
         obj[0] = userId;
         userId = image.originalAsset.id;

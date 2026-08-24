@@ -1,27 +1,26 @@
-// Module ID: 8962
-// Function ID: 8963
+// Module ID: 8999
+// Function ID: 9000
 // Name: _maybeFetchProductsWithSkus
-// Dependencies: [5, 1994, 8963, 5329, 676, 687, 709, 4384, 4274, 2]
+// Dependencies: [5, 1995, 9000, 5334, 676, 687, 709, 4388, 4278, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 8962 (_maybeFetchProductsWithSkus)
-import set from "set";
-import _getSystemLocale from "_getSystemLocale";
-import getFetchState from "getFetchState";
-import fromServer from "fromServer";
-import { Endpoints } from "ME";
+// Module 8999 (_maybeFetchProductsWithSkus)
+import setDefault from "set" /* 687 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "getFetchState" /* 9000 */;
+import closure_6 from "fromServer" /* 5334 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _maybeFetchProductsWithSkus() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let ignoreCache;
       if (fromServer === 2) {
         fromServer = 3;
         HermesBuiltin.throwTypeError();
@@ -33,7 +32,7 @@ function _maybeFetchProductsWithSkus() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -69,7 +68,7 @@ function _maybeFetchProductsWithSkus() {
                 throw arg1;
               } else if (arg0 === 2) {
                 fromServer = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -158,7 +157,7 @@ function _maybeFetchProductsWithSkus() {
     iter.next();
     return iter;
   });
-  const _maybeFetchProductsWithSkus = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -189,13 +188,11 @@ function shouldFetchProductBySku(closure_0) {
 function _maybeFetchProductsBySkuIds() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let ignoreCache;
       if (fromServer === 2) {
         fromServer = 3;
         HermesBuiltin.throwTypeError();
@@ -207,7 +204,7 @@ function _maybeFetchProductsBySkuIds() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -243,7 +240,7 @@ function _maybeFetchProductsBySkuIds() {
                 throw arg1;
               } else if (arg0 === 2) {
                 fromServer = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -314,7 +311,7 @@ function _maybeFetchProductsBySkuIds() {
     iter.next();
     return iter;
   });
-  const _maybeFetchProductsBySkuIds = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -323,9 +320,9 @@ function _maybeFetchProductsBySkuIds() {
   }
   return applyArgumentsResult;
 }
-let closure_8 = 12 * require("set").Millis.HOUR;
-let closure_9 = 10 * require("set").Millis.MINUTE;
-const result = require("getFetchState").fileFinishedImporting("modules/storefront/StorefrontProductActionCreators.tsx");
+let closure_8 = 12 * setDefault.Millis.HOUR;
+let closure_9 = 10 * setDefault.Millis.MINUTE;
+const result = require("set").fileFinishedImporting("modules/storefront/StorefrontProductActionCreators.tsx");
 
 export const maybeFetchProductsWithSkus = function maybeFetchProductsWithSkus() {
   const self = this;

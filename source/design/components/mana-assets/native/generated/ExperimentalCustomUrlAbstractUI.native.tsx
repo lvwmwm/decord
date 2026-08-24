@@ -1,18 +1,19 @@
-// Module ID: 5680
-// Function ID: 5681
+// Module ID: 5711
+// Function ID: 5712
 // Name: ExperimentalCustomUrlAbstractUI
-// Dependencies: [21, 5449, 5681, 2]
+// Dependencies: [21, 5454, 5712, 2]
 // Exports: ExperimentalCustomUrlAbstractUI
 
-// Module 5680 (ExperimentalCustomUrlAbstractUI)
-import { jsx } from "jsxProd";
+// Module 5711 (ExperimentalCustomUrlAbstractUI)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5712 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalCustomUrlAbstractUI.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalCustomUrlAbstractUI.native.tsx");
 
 export const ExperimentalCustomUrlAbstractUI = function ExperimentalCustomUrlAbstractUI(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const ExperimentalCustomUrlAbstractUI = function ExperimentalCustomUrlAbs
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5681);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ExperimentalCustomUrlAbstractUI = function ExperimentalCustomUrlAbs
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

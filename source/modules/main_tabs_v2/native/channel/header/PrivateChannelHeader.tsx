@@ -1,30 +1,26 @@
-// Module ID: 12708
-// Function ID: 12709
+// Module ID: 12763
+// Function ID: 12764
 // Name: GroupDmMemberCount
-// Dependencies: [19, 1391, 4559, 4030, 1922, 676, 21, 1297, 4661, 712, 589, 12705, 4984, 1236, 9893, 12709, 4219, 12711, 2]
+// Dependencies: [19, 1391, 4564, 4033, 1922, 676, 21, 1297, 4668, 712, 589, 12760, 4989, 1236, 9932, 12764, 4223, 12766, 2]
 
-// Module 12708 (GroupDmMemberCount)
-import importAllResult from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import sortActivity from "sortActivity";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12763 (GroupDmMemberCount)
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "sortActivity" /* 4564 */;
+import closure_6 from "markAllUserIdListsStale" /* 4033 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_12;
-let metroImportAll;
-let unpackModuleId;
 const require = arg1;
 function GroupDmMemberCount(channel) {
   channel = channel.channel;
-  let items = [mergeGuildAvatar, sortActivity];
+  let items = [closure_7, closure_5];
   const stateFromStores = channel(589).useStateFromStores(items, () => {
     const items = [...channel.recipients];
-    const currentUser = outer1_7.getCurrentUser();
+    const currentUser = closure_1_7.getCurrentUser();
     let str;
     if (currentUser != null) {
       str = currentUser.id;
@@ -49,58 +45,55 @@ function GroupDmMemberCount(channel) {
     }, 0);
   });
   const obj = channel(589);
-  return channel(12711).renderMemberCountText(stateFromStores, channel.recipients.length);
+  return channel(12766).renderMemberCountText(stateFromStores, channel.recipients.length);
 }
 let c3 = importAllResult;
-({ ChannelTypes: metroImportAll, StatusTypes: c9 } = ME);
+({ ChannelTypes: closure_8, StatusTypes: c9 } = ME);
 ({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
 let closure_13 = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.REFRESH_MEDIUM_32];
 let obj = { activityStatusText: null };
-obj = { color: require("Themes").colors.TEXT_MUTED };
+obj = { color: ThemesDefault.colors.TEXT_MUTED };
 obj[0] = obj;
 let closure_14 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function PrivateChannelHeader(channelId) {
-  let isMobileOnline;
-  let isVROnline;
-  let status;
   channelId = channelId.channelId;
   const screenIndex = channelId.screenIndex;
   const pressable = channelId.pressable;
   let stateFromStores;
   let stateFromStores1;
   let obj = channelId(stateFromStores[10]);
-  const items = [ensureGuildLoaded];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(channelId));
+  const items = [closure_4];
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getChannel(channelId));
   let obj2 = channelId(stateFromStores[10]);
-  const items1 = [mergeGuildAvatar];
+  const items1 = [closure_7];
   stateFromStores1 = obj2.useStateFromStores(items1, () => {
     let type;
     if (stateFromStores != null) {
       type = obj.type;
     }
     let user;
-    if (type === outer1_8.DM) {
-      user = outer1_7.getUser(obj.getRecipientId());
+    if (type === closure_1_8.DM) {
+      user = closure_1_7.getUser(obj.getRecipientId());
     }
     return user;
   });
   let obj4 = channelId(stateFromStores[10]);
-  const items2 = [sortActivity];
+  const items2 = [closure_5];
   const stateFromStoresObject = obj4.useStateFromStoresObject(items2, () => {
     let isMobileOnlineResult = null != stateFromStores1;
     if (isMobileOnlineResult) {
-      isMobileOnlineResult = outer1_5.isMobileOnline(tmp.id);
+      isMobileOnlineResult = closure_1_5.isMobileOnline(tmp.id);
     }
     const obj = { isMobileOnline: isMobileOnlineResult, isVROnline: null, status: null };
     let isVROnlineResult = null != tmp;
     if (isVROnlineResult) {
-      isVROnlineResult = outer1_5.isVROnline(tmp.id);
+      isVROnlineResult = closure_1_5.isVROnline(tmp.id);
     }
     obj[1] = isVROnlineResult;
     if (null != stateFromStores1) {
-      let UNKNOWN = outer1_5.getStatus(tmp.id);
+      let UNKNOWN = closure_1_5.getStatus(tmp.id);
     } else {
-      UNKNOWN = outer1_9.UNKNOWN;
+      UNKNOWN = closure_1_9.UNKNOWN;
     }
     obj[2] = UNKNOWN;
     return obj;
@@ -112,7 +105,7 @@ const memoResult = importAllResult.memo(function PrivateChannelHeader(channelId)
   }, items3);
   if (null != stateFromStores) {
     let tmp2Result = tmp2(tmp3[12]);
-    let channelName = tmp2Result.computeChannelName(stateFromStores, tmp4, markAllUserIdListsStale);
+    let channelName = tmp2Result.computeChannelName(stateFromStores, tmp4, closure_6);
   } else {
     const intl = tmp2(tmp3[13]).intl;
     channelName = intl.string(tmp2(tmp3[13]).t.ai6Lbr);
@@ -150,7 +143,7 @@ const memoResult = importAllResult.memo(function PrivateChannelHeader(channelId)
   if (null != stateFromStores1) {
     humanizeStatusResult = null;
     if (!stateFromStores1.isSystemUser()) {
-      const obj1 = { isMobile: null, isVR: null };
+      obj1 = { isMobile: null, isVR: null };
       obj1[0] = isMobileOnline;
       obj1[1] = isVROnline;
       humanizeStatusResult = tmp2(tmp3[16]).humanizeStatus(status, obj1);
@@ -184,7 +177,7 @@ const memoResult = importAllResult.memo(function PrivateChannelHeader(channelId)
   const items4 = [renderUserAvatarResult, ];
   tmp = callback2();
   const tmp28 = closure_12;
-  tmp4 = mergeGuildAvatar;
+  tmp4 = closure_7;
   obj2 = { accessibleTitle: formatToPlainStringResult, subtitle: tmp10Result, disableArrow: !pressable, userId: null, guildId: null };
   let id;
   if (stateFromStores1 != null) {
@@ -214,6 +207,6 @@ const memoResult = importAllResult.memo(function PrivateChannelHeader(channelId)
   }
   const tmp2Result4 = channelId(stateFromStores[17]);
 });
-let result = require("sortActivity").fileFinishedImporting("modules/main_tabs_v2/native/channel/header/PrivateChannelHeader.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/channel/header/PrivateChannelHeader.tsx");
 
 export default memoResult;

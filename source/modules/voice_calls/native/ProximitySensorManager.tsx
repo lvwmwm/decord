@@ -1,25 +1,27 @@
-// Module ID: 16688
-// Function ID: 16689
+// Module ID: 16784
+// Function ID: 16785
 // Name: handleChange
-// Dependencies: [17, 1390, 4652, 4539, 9648, 500, 16689, 9649, 5038, 2]
+// Dependencies: [17, 1390, 4658, 4544, 9687, 500, 16785, 9688, 5043, 2]
 
-// Module 16688 (handleChange)
-import participantFromServer from "participantFromServer";
-import reset from "reset";
-import createRTCConnection from "createRTCConnection";
-import handleAudioRouteChanged from "handleAudioRouteChanged";
-import set from "set";
-import "initialize";
-import set from "reset";
+// Module 16784 (handleChange)
+import set2 from "set" /* 500 */;
+import initializeDefault from "initialize" /* 5043 */;
+import RouteTypes from "RouteTypes" /* 9688 */;
+import enforcingDefault from "enforcing" /* 16785 */;
+import closure_2 from "participantFromServer" /* 1390 */;
+import closure_3 from "reset" /* 4658 */;
+import closure_4 from "createRTCConnection" /* 4544 */;
+import closure_5 from "handleAudioRouteChanged" /* 9687 */;
+import set from "set" /* 500 */;
 
-const require = arg1;
+require = arg1;
 function handleChange() {
   currentRouteType = currentRouteType.getCurrentRouteType();
   const tmp3 = null != currentEmbeddedActivity.getCurrentEmbeddedActivity();
   const isConnectedResult = connected.isConnected();
-  let tmp8 = currentRouteType === require(9649) /* RouteTypes */.RouteTypes.RECEIVER && isConnectedResult;
+  let tmp8 = currentRouteType === RouteTypes.RouteTypes.RECEIVER && isConnectedResult;
   if (tmp8) {
-    let isIOSResult = require(500) /* set */.isIOS();
+    let isIOSResult = set2.isIOS();
     if (!isIOSResult) {
       let tmp10 = !tmp3;
       if (!tmp3) {
@@ -28,19 +30,20 @@ function handleChange() {
       isIOSResult = tmp10;
     }
     tmp8 = isIOSResult;
-    const tmp6Result = require(500) /* set */;
+    const tmp6Result = set2;
   }
   const result = ProximitySensorManager.setProximityMonitoringEnabled(tmp8);
 }
 if (set.isIOS()) {
   let ProximitySensorManager = require("get ActivityIndicator").NativeModules.ProximitySensorManager;
 } else {
-  ProximitySensorManager = require("enforcing");
+  ProximitySensorManager = enforcingDefault;
 }
+initializeDefault;
 let prototype = function ProximitySensorManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const result = new Map().set(handleAudioRouteChanged, handleChange);
-  applyArgumentsResult.stores = result.set(createRTCConnection, handleChange);
+  const result = new Map().set(closure_5, handleChange);
+  applyArgumentsResult.stores = result.set(closure_4, handleChange);
   return applyArgumentsResult;
 }.prototype;
 class prototype extends tmp2 {

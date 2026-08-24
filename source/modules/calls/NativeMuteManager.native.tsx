@@ -1,21 +1,23 @@
-// Module ID: 13090
-// Function ID: 13091
+// Module ID: 13146
+// Function ID: 13147
 // Name: nativeMuteChanged
-// Dependencies: [9648, 4497, 3, 4259, 709, 9654, 4499, 2]
+// Dependencies: [9687, 4501, 3, 4263, 709, 9693, 4503, 2]
 
-// Module 13090 (nativeMuteChanged)
-import importDefaultResult from "handleAudioRouteChanged";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import importDefaultResult1 from "dispatcher";
+// Module 13146 (nativeMuteChanged)
+import timestampDefault from "timestamp" /* 3 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9693 */;
+import importDefaultResult from "handleAudioRouteChanged" /* 9687 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4501 */;
+import importDefaultResult1 from "dispatcher" /* 709 */;
 
 let obj = arg1;
 let c3 = importDefaultResult;
-const obj2 = new require("start")("NativeMuteManager");
+const obj2 = new timestampDefault("NativeMuteManager");
 obj2.enableNativeLogger(true);
 class NativeMuteManager {
   constructor() {
     obj = Object.create(new.target.prototype);
-    NativeMuteManager = obj;
+    closure_0 = obj;
     obj.ignoreForNativeUnmute = false;
     obj.needToUnmuteNative = false;
     obj.ignoreForAudioRouteChange = false;
@@ -42,26 +44,26 @@ class NativeMuteManager {
 }
 const prototype = NativeMuteManager.prototype;
 prototype["nativeMuteChanged"] = function nativeMuteChanged() {
-  if (!_detectH265HardwareDecode.hasActiveCallKitCall()) {
+  if (!closure_4.hasActiveCallKitCall()) {
     const self = this;
     if (this.ignoreForNativeUnmute) {
       self.ignoreForNativeUnmute = false;
     } else if (!self.ignoreForAudioRouteChange) {
       self.needToUnmuteNative = true;
       obj2.log("Native mute changed > toggling mute");
-      importDefault(9654).toggleSelfMute({ playSoundEffect: false });
-      const obj = importDefault(9654);
+      trackDeviceChangedDefault.toggleSelfMute({ playSoundEffect: false });
+      obj = trackDeviceChangedDefault;
     }
   }
 };
 prototype["updateNativeMute"] = function updateNativeMute() {
-  if (!_detectH265HardwareDecode.hasActiveCallKitCall()) {
+  if (!closure_4.hasActiveCallKitCall()) {
     const self = this;
     if (this.needToUnmuteNative) {
       self.needToUnmuteNative = false;
       self.ignoreForNativeUnmute = true;
       obj2.log("Update native mute > unmuting native");
-      obj = obj(4499);
+      obj = obj(4503);
       const voiceEngine = obj.getVoiceEngine();
       const setNativeMuteState = voiceEngine.setNativeMuteState;
       if (setNativeMuteState != null) {
@@ -73,7 +75,7 @@ prototype["updateNativeMute"] = function updateNativeMute() {
 prototype["handleVoiceChannelSelect"] = function handleVoiceChannelSelect(channelId) {
   if (null == channelId.channelId) {
     obj2.log("Leaving voice channel > unmuting native");
-    obj = obj(4499);
+    obj = obj(4503);
     const voiceEngine = obj.getVoiceEngine();
     const setNativeMuteState = voiceEngine.setNativeMuteState;
     if (setNativeMuteState != null) {
@@ -101,7 +103,7 @@ obj.handleAudioRouteChange = function handleAudioRouteChange() {
   });
 };
 importDefaultResult.addChangeListener(obj.handleAudioRouteChange);
-let subscription = require("dispatcher").subscribe("VOICE_CHANNEL_SELECT", obj.handleVoiceChannelSelect);
+let subscription = importDefaultResult1.subscribe("VOICE_CHANNEL_SELECT", obj.handleVoiceChannelSelect);
 class NativeMuteManagerWrapper {
 }
 const prototype2 = NativeMuteManagerWrapper.prototype;
@@ -111,6 +113,6 @@ prototype2["nativeMuteChanged"] = function nativeMuteChanged(arg0) {
 prototype2["updateNativeMute"] = function updateNativeMute() {
   obj.updateNativeMute();
 };
-const result = require("timestamp").fileFinishedImporting("modules/calls/NativeMuteManager.native.tsx");
+const result = require("set").fileFinishedImporting("modules/calls/NativeMuteManager.native.tsx");
 
 export default Object.create(NativeMuteManagerWrapper.prototype);

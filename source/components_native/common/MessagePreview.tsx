@@ -1,34 +1,32 @@
-// Module ID: 16036
-// Function ID: 16037
+// Module ID: 16134
+// Function ID: 16135
 // Name: MessagePreview
-// Dependencies: [19, 9066, 676, 21, 589, 1236, 15868, 12697, 2]
+// Dependencies: [19, 9103, 676, 21, 589, 1236, 15965, 12751, 2]
 // Exports: default
 
-// Module 16036 (MessagePreview)
-import noop from "noop";
-import messages from "messages";
-import ME from "ME";
-import { jsx } from "jsxProd";
+// Module 16134 (MessagePreview)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "messages" /* 9103 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let AnalyticsObjects;
-let AnalyticsSections;
 const require = arg1;
 ({ AnalyticsSections, AnalyticsObjects } = ME);
 let closure_6 = { section: AnalyticsSections.CHANNEL_SEARCH, object: AnalyticsObjects.CHANNEL_SEARCH };
-const result = require("ME").fileFinishedImporting("components_native/common/MessagePreview.tsx");
+const result = require("set").fileFinishedImporting("components_native/common/MessagePreview.tsx");
 
 export default function MessagePreview(channelId) {
   const onBeforeJumpToMessage = channelId.onBeforeJumpToMessage;
   let jumpTargetId;
   let obj = onBeforeJumpToMessage(589);
-  const items = [messages];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ messages: messages.messages, jumpTargetId: messages.jumpTargetId }));
+  const items = [closure_4];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ messages: closure_4.messages, jumpTargetId: closure_4.jumpTargetId }));
   jumpTargetId = stateFromStoresObject.jumpTargetId;
   const items1 = [jumpTargetId, onBeforeJumpToMessage];
   const memo = React.useMemo(() => {
     const obj = { jumpToChatText: null, jumpTargetId: null, onBeforeJumpToMessage: null };
-    const intl = onBeforeJumpToMessage(outer1_2[5]).intl;
-    obj[0] = intl.string(onBeforeJumpToMessage(outer1_2[5]).t["+TSRGD"]);
+    const intl = onBeforeJumpToMessage(closure_1_2[5]).intl;
+    obj[0] = intl.string(onBeforeJumpToMessage(closure_1_2[5]).t["+TSRGD"]);
     obj[1] = jumpTargetId;
     obj[2] = onBeforeJumpToMessage;
     return obj;
@@ -37,5 +35,5 @@ export default function MessagePreview(channelId) {
     callback(table[6]).clearMessages();
   }, []);
   obj = { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation: closure_6 };
-  return jsx(onBeforeJumpToMessage(12697).ChatPreview, { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation: closure_6 });
+  return jsx(onBeforeJumpToMessage(12751).ChatPreview, { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation: closure_6 });
 };

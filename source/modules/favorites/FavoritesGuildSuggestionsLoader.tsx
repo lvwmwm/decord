@@ -1,22 +1,20 @@
-// Module ID: 15536
-// Function ID: 15537
+// Module ID: 15601
+// Function ID: 15602
 // Name: FavoritesGuildSuggestionsLoaderInner
-// Dependencies: [19, 15464, 21, 15537, 2]
+// Dependencies: [19, 15528, 21, 15602, 2]
 
-// Module 15536 (FavoritesGuildSuggestionsLoaderInner)
-import importAllResult from "noop";
-import items from "items";
-import { jsx } from "jsxProd";
+// Module 15601 (FavoritesGuildSuggestionsLoaderInner)
+import getAffineChannelIdDefault from "getAffineChannelId" /* 15602 */;
+import importAllResult from "noop" /* 19 */;
+import items from "items" /* 15528 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-let c5;
 function FavoritesGuildSuggestionsLoaderInner() {
-  const tmp = importDefault(15537)(4);
+  const tmp = getAffineChannelIdDefault(4);
   importDefault = tmp;
   const items = [tmp];
   const layoutEffect = importAllResult.useLayoutEffect(() => {
-    outer1_4(closure_0);
+    closure_1_4(closure_0);
   }, items);
   return null;
 }
@@ -38,7 +36,7 @@ const memoResult = importAllResult.memo(function FavoritesGuildSuggestionsLoader
       }
       if (!tmp2) {
         tmp.current = false;
-        outer1_4(outer1_3);
+        closure_1_4(closure_1_3);
       }
     }
   }, items);
@@ -48,6 +46,6 @@ const memoResult = importAllResult.memo(function FavoritesGuildSuggestionsLoader
   }
   return tmp3;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/favorites/FavoritesGuildSuggestionsLoader.tsx");
+const result = require("set").fileFinishedImporting("modules/favorites/FavoritesGuildSuggestionsLoader.tsx");
 
 export default memoResult;

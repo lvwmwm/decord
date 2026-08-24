@@ -4,7 +4,12 @@
 // Dependencies: [33, 34, 35, 37]
 
 // Module 32 (_slicedToArray)
+import _arrayWithHoles from "_arrayWithHoles" /* 33 */;
+import _iterableToArrayLimit from "_iterableToArrayLimit" /* 34 */;
+import _unsupportedIterableToArray from "_unsupportedIterableToArray" /* 35 */;
+import _nonIterableRest from "_nonIterableRest" /* 37 */;
+
 
 export default function _slicedToArray(arg0, arg1) {
-  return require(33) /* _arrayWithHoles */(arg0) || require(34) /* _iterableToArrayLimit */(arg0, arg1) || require(35) /* _unsupportedIterableToArray */(arg0, arg1) || require(37) /* _nonIterableRest */();
+  return _arrayWithHoles(arg0) || _iterableToArrayLimit(arg0, arg1) || _unsupportedIterableToArray(arg0, arg1) || _nonIterableRest();
 };

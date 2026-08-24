@@ -1,35 +1,36 @@
-// Module ID: 11853
-// Function ID: 11854
+// Module ID: 11902
+// Function ID: 11903
 // Name: _uploadContacts
-// Dependencies: [5, 17, 5221, 11852, 11851, 676, 501, 5227, 503, 709, 11854, 4066, 1208, 589, 1403, 1993, 4090, 5260, 2]
+// Dependencies: [5, 17, 5226, 11901, 11900, 676, 501, 5232, 503, 709, 11903, 4069, 1208, 589, 1403, 1994, 4093, 5265, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 11853 (_uploadContacts)
-import closure_3 from "ME";
-import { NativeModules } from "module_5260";
-import set from "set";
-import setStoredContacts from "setStoredContacts";
-import ContactSyncLandingPage from "ContactSyncLandingPage";
-import ME from "ME";
+// Module 11902 (_uploadContacts)
+import PlatformTypes from "PlatformTypes" /* 501 */;
+import encodeProperties from "encodeProperties" /* 503 */;
+import initialize from "initialize" /* 589 */;
+import _modDef1208 from "module_1208" /* 1208 */;
+import hasFlag from "hasFlag" /* 1403 */;
+import combinedDefault from "combined" /* 1994 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import _modDef4093 from "module_4093" /* 4093 */;
+import _modDef5232 from "module_5232" /* 5232 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import _requestAndSyncContacts from "_requestAndSyncContacts" /* 11903 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "set" /* 5226 */;
+import setStoredContacts from "setStoredContacts" /* 11901 */;
+import ContactSyncLandingPage from "ContactSyncLandingPage" /* 11900 */;
+import ME from "ME" /* 676 */;
 
-let c10;
-let c9;
-let closure_12;
-let closure_14;
-let closure_15;
-let closure_6;
-let error;
-let map1;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function _uploadContacts() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     const iter = (function*(arg0, body) {
       if (c5 === 2) {
         c5 = 3;
@@ -42,7 +43,7 @@ function _uploadContacts() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -58,7 +59,7 @@ function _uploadContacts() {
               return obj;
             } else {
               body = tmp5;
-              let dependencyMap = tmp2;
+              dependencyMap = tmp2;
               let flag;
               if (flag === undefined) {
                 flag = false;
@@ -75,13 +76,13 @@ function _uploadContacts() {
               throw body;
             } else if (arg0 === 2) {
               c5 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = body;
               return obj1;
             } else {
               const _JSON = JSON;
               dependencyMap = JSON.parse(callback);
-              let obj7 = flag(5227);
+              let obj7 = flag(5232);
               const obj2 = { url: null, body: null, trackedActionData: null, rejectWithError: false };
               obj2[0] = constants2.CONNECTION_SYNC_CONTACTS;
               const obj3 = { friend_list_entries: null, background: null, allowed_in_suggestions: null, include_mutual_friends_count: false };
@@ -128,7 +129,7 @@ function _uploadContacts() {
     iter.next();
     return iter;
   });
-  const _uploadContacts = tmp;
+  closure_18 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -137,7 +138,7 @@ function _uploadContacts() {
   }
   return applyArgumentsResult;
 }
-({ useContactSyncStore: closure_6, clearDismissState: error, deleteStoredContacts: metroImportAll } = setStoredContacts);
+({ useContactSyncStore: closure_6, clearDismissState: error, deleteStoredContacts: closure_8 } = setStoredContacts);
 ({ CONTACT_SYNC_MODAL_KEY: c9, ContactPermissions: c10, ContactSyncSuggestionsSetting: unpackModuleId } = ContactSyncLandingPage);
 ({ Endpoints: closure_12, PlatformTypes: map1, FriendDiscoveryFlags: closure_14, HelpdeskArticles: closure_15 } = ME);
 error = new Error("No contact permissions");
@@ -149,7 +150,7 @@ export const ContactSyncPermissionDenied = error;
 export const ContactSyncFailedUserHasNoPhone = error1;
 export const ContactImageFetchFailed = error2;
 export const isContactSyncAvailable = function isContactSyncAvailable() {
-  let isIOSResult = require(501) /* PlatformTypes */.isIOS();
+  let isIOSResult = PlatformTypes.isIOS();
   if (!isIOSResult) {
     const DCDContactSyncManager = NativeModules.DCDContactSyncManager;
     let flag;
@@ -164,7 +165,7 @@ export const isContactSyncAvailable = function isContactSyncAvailable() {
   return isIOSResult;
 };
 export const checkContactPermissions = function checkContactPermissions() {
-  let isIOSResult = require(501) /* PlatformTypes */.isIOS();
+  let isIOSResult = PlatformTypes.isIOS();
   if (!isIOSResult) {
     const DCDContactSyncManager = NativeModules.DCDContactSyncManager;
     let flag;
@@ -195,34 +196,34 @@ export const uploadContacts = function uploadContacts(c3, arg1) {
   return applyArgumentsResult;
 };
 export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
-  let obj = importDefault(5227);
+  let obj = _modDef5232;
   obj = { url: closure_12.USER_BULK_RELATIONSHIPS, body: obj, trackedActionData: null, rejectWithError: false };
   obj = { user_ids, token: bulkAddToken };
-  obj[2] = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE };
-  const obj1 = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE };
+  obj[2] = { event: encodeProperties.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE };
+  obj1 = { event: encodeProperties.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE };
   return obj.post(obj).then((body) => body.body);
 };
 export const adminDeleteContactSync = function adminDeleteContactSync() {
   callback2();
   callback3();
-  let obj = require(11854) /* _requestAndSyncContacts */;
+  let obj = _requestAndSyncContacts;
   const result = obj.removeLastUserContactsUpload();
-  const ContactSyncEnabled = require(4066) /* explicitContentFromProto */.ContactSyncEnabled;
+  const ContactSyncEnabled = explicitContentFromProto.ContactSyncEnabled;
   ContactSyncEnabled.updateSetting(false);
   obj = { url: closure_12.CONNECTION(constants2.CONTACTS, "@me"), oldFormErrors: true, trackedActionData: null, rejectWithError: false };
-  obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_CONNECTIONS_UPDATE };
+  obj = { event: encodeProperties.NetworkActionNames.USER_CONNECTIONS_UPDATE };
   obj[2] = obj;
-  return importDefault(5227).delete(obj);
+  return _modDef5232.delete(obj);
 };
 export const getImageForContactId = function getImageForContactId(closure_0, arg1) {
   let DCDContactSyncManager = NativeModules.DCDContactSyncManager;
   return new Promise((closure_0) => {
-    const DCDContactSyncManager = arg1;
+    DCDContactSyncManager = arg1;
     const imageForContactId = DCDContactSyncManager.getImageForContactId(closure_0, (arg0, str) => {
       if (null == arg0) {
         callback(str.replace(/(\r\n|\n|\r)/gm, ""));
       } else {
-        callback2(outer1_17);
+        callback2(closure_1_17);
       }
     });
   });
@@ -261,7 +262,7 @@ export const getContacts = function getContacts(closure_0, storedContacts) {
           parsed = {};
         }
       } else {
-        callback(outer2_16);
+        callback(closure_2_16);
       }
     });
   });
@@ -271,27 +272,27 @@ export const getStoredContacts = function getStoredContacts() {
     const _JSON = JSON;
     return JSON.parse(tmp2);
   } catch (tmp4) {
-    importDefault(1208).captureException(tmp4);
-    const obj = importDefault(1208);
+    _modDef1208.captureException(tmp4);
+    const obj = _modDef1208;
   }
 };
 export const useContactSyncAccount = function useContactSyncAccount() {
-  const items = [set];
-  return require(589) /* initialize */.useStateFromStores(items, () => localAccount.getLocalAccount(constants.CONTACTS));
+  const items = [closure_5];
+  return initialize.useStateFromStores(items, () => localAccount.getLocalAccount(constants.CONTACTS));
 };
 export const useContactSyncEnabled = function useContactSyncEnabled() {
-  const items = [set];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
+  const items = [closure_5];
+  return initialize.useStateFromStores(items, () => {
     localAccount = localAccount.getLocalAccount(constants.CONTACTS);
     return null != localAccount && localAccount.friendSync && localAccount.type === constants.CONTACTS;
   });
 };
 export const useContactSyncUserIsDiscoverable = function useContactSyncUserIsDiscoverable() {
-  const FriendDiscoverySettings = require(4066) /* explicitContentFromProto */.FriendDiscoverySettings;
+  const FriendDiscoverySettings = explicitContentFromProto.FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
-  let obj = require(1403) /* hasFlag */;
+  let obj = hasFlag;
   let hasFlagResult = obj.hasFlag(setting, constants3.FIND_BY_PHONE);
-  const hasFlagResult1 = require(1403) /* hasFlag */.hasFlag(setting, constants3.FIND_BY_EMAIL);
+  const hasFlagResult1 = hasFlag.hasFlag(setting, constants3.FIND_BY_EMAIL);
   obj = { phone: hasFlagResult, email: hasFlagResult1, any: null };
   if (!hasFlagResult) {
     hasFlagResult = hasFlagResult1;
@@ -307,12 +308,12 @@ export const isContactSyncEnabled = function isContactSyncEnabled(contactSyncAcc
   return tmp;
 };
 export const getOpenLearnMoreUrl = function getOpenLearnMoreUrl() {
-  return importDefault(1993).getArticleURL(constants4.CONTACT_SYNC);
+  return combinedDefault.getArticleURL(constants4.CONTACT_SYNC);
 };
 export const handleOpenLearnMoreLink = function handleOpenLearnMoreLink() {
-  const obj = importDefault(4090);
-  obj.openURL(importDefault(1993).getArticleURL(constants4.CONTACT_SYNC));
+  const obj = _modDef4093;
+  obj.openURL(combinedDefault.getArticleURL(constants4.CONTACT_SYNC));
 };
 export const transitionToAddFriendsLandingPage = function transitionToAddFriendsLandingPage() {
-  importDefault(5260).popWithKey(closure_9);
+  _modDef5265.popWithKey(closure_9);
 };

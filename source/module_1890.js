@@ -4,11 +4,14 @@
 // Exports: default
 
 // Module 1890
-import "noop";
-import { Animated } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+import noopDefault from "noop" /* 19 */;
+import useResizeMode from "useResizeMode" /* 1848 */;
+import KeyboardAvoidingView from "KeyboardAvoidingView" /* 1859 */;
+import { Animated } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
+noopDefault;
 let closure_3 = Animated.createAnimatedComponent(require("nativeEventEmitter").KeyboardBackgroundView);
 
 export default function _default(children) {
@@ -17,8 +20,7 @@ export default function _default(children) {
   if (!tmp) {
     tmp = enabled;
   }
-  let obj = require(1848) /* useResizeMode */;
-  obj = { enabled: tmp, children: null };
-  obj[1] = <closure_3 style={{ opacity: obj.useKeyboardAnimation().progress }}>{arg0.children}</closure_3>;
-  return jsx(require(1859) /* KeyboardAvoidingView */.KeyboardStickyView, { enabled: tmp, children: null });
+  let obj = useResizeMode;
+  obj = { enabled: tmp, children: <closure_3 style={{ opacity: obj.useKeyboardAnimation().progress }}>{arg0.children}</closure_3> };
+  return jsx(KeyboardAvoidingView.KeyboardStickyView, { enabled: tmp, children: <closure_3 style={{ opacity: obj.useKeyboardAnimation().progress }}>{arg0.children}</closure_3> });
 };

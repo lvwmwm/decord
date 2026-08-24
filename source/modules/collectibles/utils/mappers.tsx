@@ -5,7 +5,9 @@
 // Exports: parseServerUserCollectibles, parseSkuIdFromServerData
 
 // Module 1900 (parseSkuIdFromServerData)
-const result = require("set").fileFinishedImporting("modules/collectibles/utils/mappers.tsx");
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/collectibles/utils/mappers.tsx");
 
 export const parseSkuIdFromServerData = function parseSkuIdFromServerData(skuId) {
   if (typeof skuId.skuId !== "string") {

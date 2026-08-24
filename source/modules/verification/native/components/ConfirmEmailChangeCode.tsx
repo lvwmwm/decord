@@ -1,17 +1,17 @@
-// Module ID: 8573
-// Function ID: 8574
+// Module ID: 8612
+// Function ID: 8613
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 8563, 21, 1500, 691, 8574, 8571, 1236, 2]
+// Dependencies: [5, 19, 8602, 21, 1500, 691, 8613, 8610, 1236, 2]
 // Exports: default
 
-// Module 8573 (ConfirmEmailChangeCode)
-import keys from "keys";
-import noop from "noop";
-import { setEmailToken } from "ChangeEmailFields";
-import { jsx } from "jsxProd";
+// Module 8612 (ConfirmEmailChangeCode)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import { setEmailToken } from "ChangeEmailFields" /* 8602 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("ChangeEmailFields").fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
+const result = require("set").fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
 
 export default function ConfirmEmailChangeCode(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
@@ -25,9 +25,9 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
     if (arg0 == null) {
       tmp = null;
     }
-    outer1_5(tmp);
+    closure_1_5(tmp);
     const push = navigation.push;
-    const VerificationModalScenes = callback(outer1_2[5]).VerificationModalScenes;
+    const VerificationModalScenes = callback(closure_1_2[5]).VerificationModalScenes;
     if (callback) {
       push(VerificationModalScenes.CHANGE_EMAIL_COLLECT_REASONS);
     } else {
@@ -37,9 +37,9 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
   obj = { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null };
   _require = undefined;
   _require = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       const obj2 = callback(table[7]);
       yield obj2.confirmEmailChange(callback);
@@ -69,7 +69,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -84,7 +84,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
             obj[0] = arg1;
             return obj;
           } else {
-            let obj1 = v0(outer1_2[7]);
+            obj1 = v0(closure_1_2[7]);
             c1 = 1;
             v0 = 1;
             obj1 = { value: null, done: false };
@@ -101,7 +101,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         v0 = tmp;
@@ -113,5 +113,5 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
   obj[3] = intl.string(_require(1236).t["2x/2Uo"]);
   const intl2 = _require(1236).intl;
   obj[4] = intl2.string(_require(1236).t.PDTjLN);
-  return jsx(navigation(8574), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
+  return jsx(navigation(8613), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
 };

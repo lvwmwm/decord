@@ -1,67 +1,69 @@
-// Module ID: 9125
-// Function ID: 9126
+// Module ID: 9162
+// Function ID: 9163
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4661, 712, 9099, 4090, 1629, 7175, 6952, 4734, 1236, 4745, 4342, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 9136, 4093, 1629, 7213, 6990, 4739, 1236, 4750, 4346, 2]
 // Exports: default
 
-// Module 9125 (GameProfileStoreLinksActionSheet)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9162 (GameProfileStoreLinksActionSheet)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import _modDef4093 from "module_4093" /* 4093 */;
+import Text from "Text" /* 4739 */;
+import BottomSheetModal from "BottomSheetModal" /* 6990 */;
+import ActionSheet from "ActionSheet" /* 7213 */;
+import _getDeepLinkUrlDefault from "_getDeepLinkUrl" /* 9136 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { header: null, headerText: null, buttons: null };
-createCacheKey = { gap: require("Themes").space.PX_8, paddingTop: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_24 };
+createCacheKey = { gap: ThemesDefault.space.PX_8, paddingTop: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_16, paddingBottom: ThemesDefault.space.PX_24 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { textAlign: "center" };
-createCacheKey[2] = { gap: require("Themes").space.PX_12 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { gap: require("Themes").space.PX_12 };
-const result = require("jsxProd").fileFinishedImporting("modules/game_profile/native/components/GameProfileStoreLinksActionSheet.tsx");
+createCacheKey[2] = { gap: ThemesDefault.space.PX_12 };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { gap: ThemesDefault.space.PX_12 };
+const result = require("set").fileFinishedImporting("modules/game_profile/native/components/GameProfileStoreLinksActionSheet.tsx");
 
 export default function GameProfileStoreLinksActionSheet(gameName) {
-  let require;
-  let websiteButtons;
   ({ websiteButtons, trackAction: require } = gameName);
-  let importDefault;
-  const tmp = createCacheKey();
-  importDefault = importDefault(9099)(importDefault(4090).openURL);
+  importDefault = undefined;
+  const tmp = callback3();
+  importDefault = _getDeepLinkUrlDefault(_modDef4093.openURL);
   let obj = { children: null };
   obj = { contentContainerStyle: null, children: null };
-  obj = { paddingBottom: null };
-  obj[0] = importDefault(1629)().bottom + importDefault(712).space.PX_16;
+  obj = { paddingBottom: useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16 };
   obj[0] = obj;
-  const obj1 = { style: tmp.header, children: null };
+  obj1 = { style: tmp.header, children: null };
   const obj2 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj2[3] = intl.string(require(1236) /* getSystemLocale */.t["/4gj6r"]);
-  const items = [callback(require(4734) /* Text */.Text, obj2), ];
+  const intl = getSystemLocale.intl;
+  obj2[3] = intl.string(getSystemLocale.t["/4gj6r"]);
+  const items = [callback(Text.Text, obj2), ];
   const obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.headerText, children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj3[3] = intl2.format(require(1236) /* getSystemLocale */.t["0acM2Y"], { gameName: gameName.gameName });
-  items[1] = callback(require(4734) /* Text */.Text, obj3);
+  const intl2 = getSystemLocale.intl;
+  obj3[3] = intl2.format(getSystemLocale.t["0acM2Y"], { gameName: gameName.gameName });
+  items[1] = callback(Text.Text, obj3);
   obj1[1] = items;
   const items1 = [callback2(View, obj1), ];
-  const tmp2 = importDefault(9099);
+  const tmp2 = _getDeepLinkUrlDefault;
   items1[1] = callback(View, {
     style: tmp.buttons,
     children: websiteButtons.map((url) => {
-      let icon;
-      let title;
       url = url.url;
       const action = url.action;
       ({ icon, title } = url);
-      return outer1_4(outer1_0(outer1_2[12]).Button, {
+      return closure_1_4(closure_1_0(closure_1_2[12]).Button, {
         icon,
         text: title,
         variant: "secondary",
         size: "md",
         onPress() {
-          action(outer2_2[13]).hideActionSheet();
+          action(closure_2_2[13]).hideActionSheet();
           url(action);
           action(url);
         }
@@ -69,7 +71,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
     })
   });
   obj[1] = items1;
-  obj[0] = callback2(require(6952) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  return callback(require(7175) /* ActionSheet */.ActionSheet, obj);
+  obj[0] = callback2(BottomSheetModal.BottomSheetScrollView, obj);
+  return callback(ActionSheet.ActionSheet, obj);
 };
 export const ACTION_SHEET_KEY = "game-profile-store-links";

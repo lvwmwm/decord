@@ -1,16 +1,19 @@
-// Module ID: 7258
-// Function ID: 7259
+// Module ID: 7296
+// Function ID: 7297
 // Name: computeActivityFlags
-// Dependencies: [676, 4066, 595, 1403, 7259, 2]
+// Dependencies: [676, 4069, 595, 1403, 7297, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 7258 (computeActivityFlags)
-import ME from "ME";
+// Module 7296 (computeActivityFlags)
+import set from "set" /* 2 */;
+import Storage2 from "Storage" /* 595 */;
+import hasFlag from "hasFlag" /* 1403 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7297 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
 ({ ActivityFlags: c3, ActivityPartyPrivacy: c4 } = ME);
-const result = require("Storage").fileFinishedImporting("modules/activities/utils/ActivityFlagUtils.tsx");
+const result = set.fileFinishedImporting("modules/activities/utils/ActivityFlagUtils.tsx");
 
 export const computeActivityFlags = function computeActivityFlags(activity, flag, arg2, canLaunchFrameResult, privacy) {
   if (flag === undefined) {
@@ -46,9 +49,9 @@ export const computeActivityFlags = function computeActivityFlags(activity, flag
     tmp6 = tmp4 | constants.CONTEXTLESS;
   }
   if (flag2) {
-    const AllowActivityPartyPrivacyFriends2 = require(4066) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
+    const AllowActivityPartyPrivacyFriends2 = explicitContentFromProto.AllowActivityPartyPrivacyFriends;
     const setting = AllowActivityPartyPrivacyFriends2.getSetting();
-    const AllowActivityPartyPrivacyVoiceChannel2 = require(4066) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
+    const AllowActivityPartyPrivacyVoiceChannel2 = explicitContentFromProto.AllowActivityPartyPrivacyVoiceChannel;
     const PARTY_PRIVACY_FRIENDS2 = constants.PARTY_PRIVACY_FRIENDS;
     const setting1 = AllowActivityPartyPrivacyVoiceChannel2.getSetting();
     if (setting) {
@@ -66,15 +69,15 @@ export const computeActivityFlags = function computeActivityFlags(activity, flag
   } else {
     let value = PRIVATE === constants2.PUBLIC;
     if (!value) {
-      const Storage = require(595) /* Storage */.Storage;
+      const Storage = Storage2.Storage;
       value = Storage.get("ACTIVITIES_FORCE_PUBLIC");
     }
     if (!value) {
       return tmp6;
     } else {
-      const AllowActivityPartyPrivacyFriends = require(4066) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
+      const AllowActivityPartyPrivacyFriends = explicitContentFromProto.AllowActivityPartyPrivacyFriends;
       const setting2 = AllowActivityPartyPrivacyFriends.getSetting();
-      const AllowActivityPartyPrivacyVoiceChannel = require(4066) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
+      const AllowActivityPartyPrivacyVoiceChannel = explicitContentFromProto.AllowActivityPartyPrivacyVoiceChannel;
       const PARTY_PRIVACY_FRIENDS = constants.PARTY_PRIVACY_FRIENDS;
       const setting3 = AllowActivityPartyPrivacyVoiceChannel.getSetting();
       if (setting2) {
@@ -101,9 +104,9 @@ export const isContextlessEmbeddedActivity = function isContextlessEmbeddedActiv
   if (num == null) {
     num = 0;
   }
-  let hasFlagResult = require(1403) /* hasFlag */.hasFlag(num, constants.CONTEXTLESS);
+  let hasFlagResult = hasFlag.hasFlag(num, constants.CONTEXTLESS);
   if (hasFlagResult) {
-    hasFlagResult = importDefault(7259)(remoteApplicationActivity);
+    hasFlagResult = isEmbeddedActivityDefault(remoteApplicationActivity);
   }
   return hasFlagResult;
 };

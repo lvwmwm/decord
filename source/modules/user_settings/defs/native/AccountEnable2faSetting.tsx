@@ -1,17 +1,21 @@
-// Module ID: 14137
-// Function ID: 14138
+// Module ID: 14205
+// Function ID: 14206
 // Name: pressable
-// Dependencies: [1922, 8198, 14102, 14138, 4827, 1236, 10669, 2]
+// Dependencies: [1922, 8238, 14170, 14206, 4832, 1236, 10708, 2]
 
-// Module 14137 (pressable)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import createToggle from "createToggle";
+// Module 14205 (pressable)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import setDefault from "set" /* 4832 */;
+import useIs2FAEnabled from "useIs2FAEnabled" /* 14170 */;
+import _modDef14206 from "module_14206" /* 14206 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.cDgKte);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.cDgKte);
   },
   parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
   onPress: function onAccountEnable2FASettingPress() {
@@ -22,23 +26,23 @@ createToggle = {
     }
     if (verified != null) {
       if (verified) {
-        let obj = importDefault(14138);
+        let obj = _modDef14206;
         obj.open();
       }
     }
     obj = { title: null, body: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.v740sh);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.uggF7o);
-    importDefault(4827).show(obj);
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t.v740sh);
+    const intl2 = getSystemLocale.intl;
+    obj[1] = intl2.string(getSystemLocale.t.uggF7o);
+    setDefault.show(obj);
   },
   withArrow: true,
   usePredicate: function useHasAccountEnable2FASetting() {
-    return !require(14102) /* useIs2FAEnabled */.useIsTOTPEnabled();
+    return !useIs2FAEnabled.useIsTOTPEnabled();
   }
 };
 createToggle = createToggle.createPressable(createToggle);
-const result = require("useIs2FAEnabled").fileFinishedImporting("modules/user_settings/defs/native/AccountEnable2faSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AccountEnable2faSetting.tsx");
 
 export default createToggle;

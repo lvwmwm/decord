@@ -1,15 +1,17 @@
-// Module ID: 9652
-// Function ID: 9653
+// Module ID: 9691
+// Function ID: 9692
 // Name: enforcing
 // Dependencies: [17, 2]
 // Exports: getInvalidAndroidDevice
 
-// Module 9652 (enforcing)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 9691 (enforcing)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 let obj = { SPEAKERPHONE: "SPEAKERPHONE", WIRED_HEADSET: "WIRED_HEADSET", EARPIECE: "EARPIECE", BLUETOOTH_HEADSET: "BLUETOOTH_HEADSET", INVALID: "INVALID" };
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAudioManagerModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAudioManagerModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAudioManagerModule.tsx");
 
 export default enforcing;
 export const AudioDeviceType = obj;

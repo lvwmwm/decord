@@ -1,33 +1,36 @@
-// Module ID: 7428
-// Function ID: 7429
+// Module ID: 7466
+// Function ID: 7467
 // Name: updateSubmittedGuildJoinRequestTotal
-// Dependencies: [1922, 4198, 3975, 4200, 4017, 4199, 687, 589, 709, 2]
+// Dependencies: [1922, 4202, 3978, 4204, 4020, 4203, 687, 589, 709, 2]
 
-// Module 7428 (updateSubmittedGuildJoinRequestTotal)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { joinRequestFromServer } from "handleGatewayJoinRequestUpdate";
-import { Store } from "initialize";
+// Module 7466 (updateSubmittedGuildJoinRequestTotal)
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import tDefault from "t" /* 3978 */;
+import isActionedApplicationStatus from "isActionedApplicationStatus" /* 4203 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4204 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { joinRequestFromServer } from "handleGatewayJoinRequestUpdate" /* 4202 */;
 
-const require = arg1;
+require = arg1;
 function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatus) {
   if (DELETED !== applicationStatus) {
     if (null != DELETED) {
-      if (DELETED === require(4200) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
+      if (DELETED === MAX_RESULTS_PER_PAGE.GuildJoinRequestApplicationStatuses.SUBMITTED) {
         dependencyMap[guildId] = dependencyMap[guildId] + 1;
-        const result = map.set(guildId, importDefault(3975)());
+        const result = map.set(guildId, tDefault());
       }
-      if (applicationStatus === tmp12(4200).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+      if (applicationStatus === tmp12(4204).GuildJoinRequestApplicationStatuses.SUBMITTED) {
         const _Math = Math;
         dependencyMap[guildId] = Math.max(0, dependencyMap[guildId] - 1);
-        const result1 = map.set(guildId, importDefault(3975)());
+        const result1 = map.set(guildId, tDefault());
       }
       tmp12 = require;
     }
   }
 }
 function guildJoinRequestsIndex(joinRequestId) {
-  let applicationStatus;
-  let guildId;
   const items = [];
   if (typeof StaticGuildJoinRequestIndexes_GUILD_JOIN_REQUESTS_BY_ID !== "function") {
     HermesBuiltin.throwTypeError();
@@ -47,7 +50,7 @@ function upsert(joinRequestId) {
     secondaryIndexMap2.delete(joinRequestId.joinRequestId);
     const result1 = secondaryIndexMap1.set(joinRequestId.joinRequestId, joinRequestId);
   }
-  obj = require(4199) /* isActionedApplicationStatus */;
+  obj = isActionedApplicationStatus;
   const tmp2 = require;
   if (tmp2Result.isActionedApplicationStatus(joinRequestId.applicationStatus)) {
     secondaryIndexMap1.delete(joinRequestId.joinRequestId);
@@ -71,7 +74,7 @@ function handleGuildJoinRequestCreateOrUpdate(request) {
         secondaryIndexMap2.delete(tmp.joinRequestId);
         const result1 = secondaryIndexMap1.set(tmp.joinRequestId, tmp);
       }
-      obj = require(4199) /* isActionedApplicationStatus */;
+      obj = isActionedApplicationStatus;
       const obj3 = secondaryIndexMap;
       const tmp8 = require;
       if (tmp8Result.isActionedApplicationStatus(tmp.applicationStatus)) {
@@ -100,12 +103,13 @@ let closure_16 = {};
 let closure_17 = {};
 let closure_18 = {};
 let closure_19 = {};
-let closure_20 = 10 * require("set").Seconds.MINUTE;
+let closure_20 = 10 * setDefault.Seconds.MINUTE;
+const Store = initializeDefault.Store;
 class GuildJoinRequestStoreV2 extends Store {
 }
 const prototype = GuildJoinRequestStoreV2.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(mergeGuildAvatar);
+  this.waitFor(closure_3);
 };
 prototype["getRequest"] = function getRequest(arg0) {
   return table3[arg0];
@@ -123,7 +127,7 @@ prototype["getRequests"] = function getRequests(guildId, applicationStatus) {
     } else {
       values = secondaryIndexMap.values(combined);
     }
-    tmp2Result = require(4199) /* isActionedApplicationStatus */;
+    tmp2Result = isActionedApplicationStatus;
   }
   return values;
 };
@@ -138,8 +142,8 @@ prototype["hasFetched"] = function hasFetched(arg0) {
     const value = obj.get(arg0);
     let tmp3 = null != value;
     if (tmp3) {
-      tmp3 = importDefault(3975)().diff(value, "seconds") < closure_20;
-      const obj2 = importDefault(3975)();
+      tmp3 = tDefault().diff(value, "seconds") < closure_20;
+      const obj2 = tDefault();
     }
     return tmp3;
   } else {
@@ -150,14 +154,14 @@ prototype["hasFetched"] = function hasFetched(arg0) {
 prototype["getSelectedApplicationTab"] = function getSelectedApplicationTab(arg0) {
   let SUBMITTED = dependencyMap2[arg0];
   if (SUBMITTED == null) {
-    SUBMITTED = require(4200) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.SUBMITTED;
+    SUBMITTED = MAX_RESULTS_PER_PAGE.GuildJoinRequestApplicationStatuses.SUBMITTED;
   }
   return SUBMITTED;
 };
 prototype["getSelectedSortOrder"] = function getSelectedSortOrder(arg0) {
   let TIMESTAMP_DESC = dependencyMap3[arg0];
   if (TIMESTAMP_DESC == null) {
-    TIMESTAMP_DESC = require(4200) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestSortOrders.TIMESTAMP_DESC;
+    TIMESTAMP_DESC = MAX_RESULTS_PER_PAGE.GuildJoinRequestSortOrders.TIMESTAMP_DESC;
   }
   return TIMESTAMP_DESC;
 };
@@ -178,7 +182,7 @@ prototype["getRequestsForUser"] = function getRequestsForUser(guildId, userId) {
   return found;
 };
 GuildJoinRequestStoreV2.displayName = "GuildJoinRequestStoreV2";
-const guildJoinRequestStoreV2 = new GuildJoinRequestStoreV2(require("dispatcher"), {
+const guildJoinRequestStoreV2 = new GuildJoinRequestStoreV2(dispatcherDefault, {
   GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: function handleFetchByIdSuccess(joinRequest) {
     joinRequest = joinRequest.joinRequest;
     closure_19[joinRequest.joinRequestId] = joinRequest;
@@ -187,7 +191,7 @@ const guildJoinRequestStoreV2 = new GuildJoinRequestStoreV2(require("dispatcher"
       secondaryIndexMap2.delete(joinRequest.joinRequestId);
       const result1 = secondaryIndexMap1.set(joinRequest.joinRequestId, joinRequest);
     }
-    obj = require(4199) /* isActionedApplicationStatus */;
+    obj = isActionedApplicationStatus;
     const tmp2 = require;
     if (tmp2Result.isActionedApplicationStatus(joinRequest.applicationStatus)) {
       secondaryIndexMap1.delete(joinRequest.joinRequestId);
@@ -195,8 +199,6 @@ const guildJoinRequestStoreV2 = new GuildJoinRequestStoreV2(require("dispatcher"
     }
   },
   GUILD_JOIN_REQUESTS_FOR_USER_FETCH_SUCCESS: function handleFetchForUserSuccess(requests) {
-    let guildId;
-    let userId;
     requests = requests.requests;
     ({ guildId, userId } = requests);
     const item = requests.forEach(upsert);
@@ -204,16 +206,12 @@ const guildJoinRequestStoreV2 = new GuildJoinRequestStoreV2(require("dispatcher"
     closure_8[combined] = requests.map((joinRequestId) => joinRequestId.joinRequestId);
   },
   GUILD_JOIN_REQUESTS_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
-    let guildId;
-    let requests;
-    let status;
-    let total;
     ({ requests, guildId } = arg0);
-    let c9 = false;
+    c9 = false;
     ({ status, total } = arg0);
-    if (status === require(4200) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
+    if (status === MAX_RESULTS_PER_PAGE.GuildJoinRequestApplicationStatuses.SUBMITTED) {
       closure_6[guildId] = total;
-      let result = map.set(guildId, importDefault(3975)());
+      let result = map.set(guildId, tDefault());
     }
     const item = requests.forEach((joinRequestId) => {
       closure_19[joinRequestId.joinRequestId] = joinRequestId;
@@ -232,10 +230,10 @@ const guildJoinRequestStoreV2 = new GuildJoinRequestStoreV2(require("dispatcher"
     });
   },
   GUILD_JOIN_REQUESTS_FETCH_START: function handleFetchStart() {
-    let c9 = true;
+    c9 = true;
   },
   GUILD_JOIN_REQUESTS_FETCH_FAILURE: function handleFetchFailure() {
-    let c9 = false;
+    c9 = false;
   },
   GUILD_JOIN_REQUEST_CREATE: handleGuildJoinRequestCreateOrUpdate,
   GUILD_JOIN_REQUEST_UPDATE: handleGuildJoinRequestCreateOrUpdate,
@@ -251,35 +249,30 @@ const guildJoinRequestStoreV2 = new GuildJoinRequestStoreV2(require("dispatcher"
     }
   },
   GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: function handleSetApplicationTab(arg0) {
-    let applicationTab;
-    let guildId;
     ({ guildId, applicationTab } = arg0);
     if (applicationTab !== dependencyMap2[guildId]) {
       dependencyMap2[guildId] = applicationTab;
     }
   },
   GUILD_JOIN_REQUESTS_SET_SORT_ORDER: function handleSetSortOrder(arg0) {
-    let applicationStatus;
-    let guildId;
-    let sortOrder;
     ({ guildId, sortOrder, applicationStatus } = arg0);
     if (sortOrder !== dependencyMap3[guildId]) {
       dependencyMap3[guildId] = sortOrder;
       if (obj.isActionedApplicationStatus(applicationStatus)) {
         secondaryIndexMap2.clear();
       }
-      obj = require(4199) /* isActionedApplicationStatus */;
+      obj = isActionedApplicationStatus;
       const tmp = require;
       if (tmpResult.isSubmittedApplicationStatus(applicationStatus)) {
         secondaryIndexMap1.clear();
       }
-      tmpResult = require(4199) /* isActionedApplicationStatus */;
+      tmpResult = isActionedApplicationStatus;
     }
   },
   GUILD_JOIN_REQUESTS_SET_SELECTED: function handleGuildJoinRequestSelect(guildId) {
     closure_18[guildId.guildId] = guildId.request;
   }
 });
-let result = require("t").fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestStore.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestStore.tsx");
 
 export default guildJoinRequestStoreV2;

@@ -5,7 +5,8 @@
 // Exports: getCurrentReactNativeTracingIntegration, getReactNativeTracingIntegration, reactNativeTracingIntegration
 
 // Module 1166 (INTEGRATION_NAME)
-import isHermesEnabled from "isHermesEnabled";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+import isHermesEnabled from "isHermesEnabled" /* 1002 */;
 
 const ReactNativeTracing = "ReactNativeTracing";
 let obj = { traceFetch: null, traceXHR: true, enableHTTPTimings: true };
@@ -14,7 +15,7 @@ obj[0] = isHermesEnabled.isWeb();
 export const INTEGRATION_NAME = "ReactNativeTracing";
 export const defaultReactNativeTracingOptions = obj;
 export const reactNativeTracingIntegration = () => {
-  let obj = arg0;
+  obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
@@ -107,11 +108,11 @@ export const reactNativeTracingIntegration = () => {
   };
 };
 export const getCurrentReactNativeTracingIntegration = function getCurrentReactNativeTracingIntegration() {
-  const client = require(817) /* registerSpanErrorInstrumentation */.getClient();
+  const client = registerSpanErrorInstrumentation.getClient();
   if (client) {
     return client.getIntegrationByName(ReactNativeTracing);
   }
-  const obj = require(817) /* registerSpanErrorInstrumentation */;
+  obj = registerSpanErrorInstrumentation;
 };
 export const getReactNativeTracingIntegration = function getReactNativeTracingIntegration(getIntegrationByName) {
   return getIntegrationByName.getIntegrationByName(ReactNativeTracing);

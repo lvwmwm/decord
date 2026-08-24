@@ -1,17 +1,21 @@
-// Module ID: 7513
-// Function ID: 7514
+// Module ID: 7551
+// Function ID: 7552
 // Name: listKey
-// Dependencies: [32, 1395, 1391, 4772, 4023, 1400, 7514, 12, 1402, 11, 7272, 589, 709, 2]
+// Dependencies: [32, 1395, 1391, 4777, 4026, 1400, 7552, 12, 1402, 11, 7310, 589, 709, 2]
 
-// Module 7513 (listKey)
-import _slicedToArray from "_slicedToArray";
-import { ALL_CHANNEL_TYPES } from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import storeThread from "storeThread";
-import { Store } from "initialize";
+// Module 7551 (listKey)
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import set from "set" /* 1400 */;
+import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7552 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import { ALL_CHANNEL_TYPES } from "createChannelRecord" /* 1395 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "generateOldThreadCutoff" /* 4777 */;
+import closure_7 from "storeThread" /* 4026 */;
 
-const require = arg1;
+require = arg1;
 function listKey(channelId, sortOrder, tagFilter, tagSetting) {
   let iter = tagFilter;
   const combined = "" + channelId + "|" + sortOrder + "|" + tagSetting + "|";
@@ -28,27 +32,24 @@ function listKey(channelId, sortOrder, tagFilter, tagSetting) {
   }
 }
 function getSortValue(id) {
-  if (arg1 === require(1400) /* set */.ThreadSortOrder.LATEST_ACTIVITY) {
-    id = generateOldThreadCutoff.lastMessageId(id.id);
+  if (arg1 === set.ThreadSortOrder.LATEST_ACTIVITY) {
+    id = closure_6.lastMessageId(id.id);
   } else {
     id = id.id;
   }
   return id;
 }
 function resortListState(value) {
-  let _slicedToArray;
-  let dependencyMap;
-  let importDefault;
   const sortOrder = value.sortOrder;
-  ({ tagFilter: importDefault, tagSetting: dependencyMap, hasMore: _slicedToArray } = value);
+  ({ tagFilter: importDefault, tagSetting: dependencyMap, hasMore: closure_3 } = value);
   let id = store.getChannel(value.threads[value.threads.length - 1]);
   if (null == id) {
-    let c4 = null;
-    let tmp7 = importDefault(12);
-    const found = importDefault(12)(store.getAllThreadsForParent(value.channelId)).filter((isArchivedThread) => isArchivedThread.isArchivedThread());
+    c4 = null;
+    let tmp7 = applyDefault;
+    const found = applyDefault(store.getAllThreadsForParent(value.channelId)).filter((isArchivedThread) => isArchivedThread.isArchivedThread());
     const found1 = found.filter((appliedTags) => {
       if (0 !== size.size) {
-        if (sortOrder(outer1_2[8]).ThreadSearchTagSetting.MATCH_SOME === closure_2) {
+        if (sortOrder(closure_1_2[8]).ThreadSearchTagSetting.MATCH_SOME === closure_2) {
           const appliedTags2 = appliedTags.appliedTags;
           let someResult;
           if (appliedTags2 != null) {
@@ -57,7 +58,7 @@ function resortListState(value) {
           if (true !== someResult) {
             return false;
           }
-        } else if (tmp20(outer1_2[8]).ThreadSearchTagSetting.MATCH_ALL === tmp19) {
+        } else if (tmp20(closure_1_2[8]).ThreadSearchTagSetting.MATCH_ALL === tmp19) {
           const values = size.values();
           const iter = values[Symbol.iterator]();
           while (iter !== undefined) {
@@ -79,16 +80,16 @@ function resortListState(value) {
         tmp19 = closure_2;
         tmp20 = sortOrder;
       }
-      if (_slicedToArray) {
+      if (closure_3) {
         if (null != c4) {
           let tmp13 = null;
           if (null != appliedTags) {
-            tmp13 = outer1_10(appliedTags, sortOrder);
+            tmp13 = closure_1_10(appliedTags, sortOrder);
           }
           let tmp16 = null != tmp13;
           if (tmp16) {
-            tmp16 = outer1_1(outer1_2[9]).compare(tmp13, tmp11) >= 0;
-            const obj2 = outer1_1(outer1_2[9]);
+            tmp16 = closure_1_1(closure_1_2[9]).compare(tmp13, tmp11) >= 0;
+            const obj2 = closure_1_1(closure_1_2[9]);
           }
           return tmp16;
         }
@@ -96,39 +97,40 @@ function resortListState(value) {
       return true;
     });
     const sorted = found1.sort((id, id2) => {
-      if (sortOrder === sortOrder(outer1_2[5]).ThreadSortOrder.LATEST_ACTIVITY) {
-        id = outer1_6.lastMessageId(id.id);
+      if (sortOrder === sortOrder(closure_1_2[5]).ThreadSortOrder.LATEST_ACTIVITY) {
+        id = closure_1_6.lastMessageId(id.id);
       } else {
         id = id.id;
       }
-      if (sortOrder === sortOrder(outer1_2[5]).ThreadSortOrder.LATEST_ACTIVITY) {
-        id2 = outer1_6.lastMessageId(id2.id);
+      if (sortOrder === sortOrder(closure_1_2[5]).ThreadSortOrder.LATEST_ACTIVITY) {
+        id2 = closure_1_6.lastMessageId(id2.id);
       } else {
         id2 = id2.id;
       }
-      return outer1_1(outer1_2[9]).compare(id, id2);
+      return closure_1_1(closure_1_2[9]).compare(id, id2);
     });
     const mapped = sorted.map((id) => id.id);
-    const tmp7Result = importDefault(12)(store.getAllThreadsForParent(value.channelId));
+    const tmp7Result = applyDefault(store.getAllThreadsForParent(value.channelId));
     value.threads = mapped.reverse().value();
   } else if (sortOrder === sortOrder(1400).ThreadSortOrder.LATEST_ACTIVITY) {
     id = id.id;
-    let id2 = generateOldThreadCutoff.lastMessageId(id);
+    let id2 = closure_6.lastMessageId(id);
   } else {
     id2 = id.id;
   }
 }
 const map = new Map();
 let closure_12 = [];
+const Store = initializeDefault.Store;
 class ArchivedThreadsStore extends Store {
 }
 const prototype = ArchivedThreadsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded, storeThread, generateOldThreadCutoff);
+  this.waitFor(closure_5, closure_7, closure_6);
 };
-prototype["getCanLoadMore"] = function getCanLoadMore(id, closure_1, closure_2, _slicedToArray) {
+prototype["getCanLoadMore"] = function getCanLoadMore(id, closure_1, closure_2, closure_3) {
   let iter = closure_2;
-  const combined = "" + id + "|" + closure_1 + "|" + _slicedToArray + "|";
+  const combined = "" + id + "|" + closure_1 + "|" + closure_3 + "|";
   if (0 === closure_2.size) {
     const value = map.get(combined);
     let tmp7 = null != value;
@@ -147,9 +149,9 @@ prototype["getCanLoadMore"] = function getCanLoadMore(id, closure_1, closure_2, 
     const arr = Array.from(iter);
   }
 };
-prototype["getNextOffset"] = function getNextOffset(id, closure_1, closure_2, _slicedToArray) {
+prototype["getNextOffset"] = function getNextOffset(id, closure_1, closure_2, closure_3) {
   let iter = closure_2;
-  const combined = "" + id + "|" + closure_1 + "|" + _slicedToArray + "|";
+  const combined = "" + id + "|" + closure_1 + "|" + closure_3 + "|";
   if (0 === closure_2.size) {
     const value = map.get(combined);
     let num2;
@@ -170,9 +172,9 @@ prototype["getNextOffset"] = function getNextOffset(id, closure_1, closure_2, _s
     const arr = Array.from(iter);
   }
 };
-prototype["getIsInitialLoad"] = function getIsInitialLoad(id, closure_1, closure_2, _slicedToArray) {
+prototype["getIsInitialLoad"] = function getIsInitialLoad(id, closure_1, closure_2, closure_3) {
   let iter = closure_2;
-  const combined = "" + id + "|" + closure_1 + "|" + _slicedToArray + "|";
+  const combined = "" + id + "|" + closure_1 + "|" + closure_3 + "|";
   if (0 === closure_2.size) {
     const value = map.get(combined);
     let flag;
@@ -216,9 +218,9 @@ prototype["isLoading"] = function isLoading(arg0, arg1, size) {
     const arr = Array.from(iter);
   }
 };
-prototype["getThreads"] = function getThreads(id, closure_1, closure_2, _slicedToArray) {
+prototype["getThreads"] = function getThreads(id, closure_1, closure_2, closure_3) {
   let iter = closure_2;
-  const combined = "" + id + "|" + closure_1 + "|" + _slicedToArray + "|";
+  const combined = "" + id + "|" + closure_1 + "|" + closure_3 + "|";
   if (0 === closure_2.size) {
     const value = map.get(combined);
     let threads;
@@ -240,13 +242,13 @@ prototype["getThreads"] = function getThreads(id, closure_1, closure_2, _slicedT
   }
 };
 ArchivedThreadsStore.displayName = "ArchivedThreadsStore";
-const archivedThreadsStore = new ArchivedThreadsStore(require("dispatcher"), {
+const archivedThreadsStore = new ArchivedThreadsStore(dispatcherDefault, {
   CONNECTION_OPEN: function resetAll() {
     map.clear();
   },
   THREAD_DELETE: function handleThreadDelete(channel) {
     if (!(function removeThreadIdFromAllLists(id) {
-      let closure_0 = id;
+      closure_0 = id;
       let flag = false;
       const values = closure_8.values();
       const iter = values[Symbol.iterator]();
@@ -294,7 +296,7 @@ const archivedThreadsStore = new ArchivedThreadsStore(require("dispatcher"), {
     } else {
       return false;
     }
-    obj = channel(7272);
+    obj = channel(7310);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     let flag = false;
@@ -348,8 +350,8 @@ const archivedThreadsStore = new ArchivedThreadsStore(require("dispatcher"), {
           const _Array2 = Array;
           obj[4] = Array.from(tagFilter.tagFilter);
           obj[5] = tagFilter.sortOrder;
-          const result = require(7514) /* trackForumChannelSeenBatch */.trackForumMorePostsLoaded(obj);
-          const obj3 = require(7514) /* trackForumChannelSeenBatch */;
+          const result = trackForumChannelSeenBatch.trackForumMorePostsLoaded(obj);
+          const obj3 = trackForumChannelSeenBatch;
         }
         resortListState(value);
         value.hasMore = tagFilter.hasMore;
@@ -417,7 +419,7 @@ const archivedThreadsStore = new ArchivedThreadsStore(require("dispatcher"), {
     return flag ? undefined : false;
   }
 });
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/threads/ArchivedThreadsStore.tsx");
+let result = require("set").fileFinishedImporting("modules/threads/ArchivedThreadsStore.tsx");
 
 export default archivedThreadsStore;
 export const PAGE_SIZE = 25;

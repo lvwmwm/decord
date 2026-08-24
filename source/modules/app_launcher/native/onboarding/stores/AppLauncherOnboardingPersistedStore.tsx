@@ -1,13 +1,15 @@
-// Module ID: 11217
-// Function ID: 11218
+// Module ID: 11268
+// Function ID: 11269
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 11217 (initialize)
-import { PersistedStore } from "initialize";
+// Module 11268 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let obj = { canShowBotsBanner: false, canShowAppsOrActivitiesBanner: false, willShowGlobalSearchOnboarding: false, timeMs: 0, channelId: "0" };
 let closure_1 = { lastSeenTimeMs: null, triggeredOnboardingContentMetadata: obj };
+const PersistedStore = initializeDefault.PersistedStore;
 class AppLauncherOnboardingPersistedStore extends PersistedStore {
 }
 const prototype = AppLauncherOnboardingPersistedStore.prototype;
@@ -36,7 +38,7 @@ const items = [
     if (lastSeenTimeMs == null) {
       lastSeenTimeMs = null;
     }
-    let obj = { lastSeenTimeMs, triggeredOnboardingContentMetadata: null };
+    obj = { lastSeenTimeMs, triggeredOnboardingContentMetadata: null };
     let canShowBotsBanner;
     if (lastSeenTimeMs != null) {
       const triggeredOnboardingContentMetadata = lastSeenTimeMs.triggeredOnboardingContentMetadata;
@@ -105,7 +107,7 @@ obj = {
     closure_1.triggeredOnboardingContentMetadata = triggeredOnboardingContentMetadata.triggeredOnboardingContentMetadata;
   }
 };
-const appLauncherOnboardingPersistedStore = new AppLauncherOnboardingPersistedStore(require("dispatcher"), obj);
+const appLauncherOnboardingPersistedStore = new AppLauncherOnboardingPersistedStore(dispatcherDefault, obj);
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/stores/AppLauncherOnboardingPersistedStore.tsx");
 
 export default appLauncherOnboardingPersistedStore;

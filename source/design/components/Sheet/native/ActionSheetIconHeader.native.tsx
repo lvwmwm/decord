@@ -1,37 +1,35 @@
-// Module ID: 10516
-// Function ID: 10517
+// Module ID: 10555
+// Function ID: 10556
 // Name: ActionSheetIconHeader
-// Dependencies: [19, 17, 21, 4661, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 4739, 2]
 // Exports: ActionSheetIconHeader
 
-// Module 10516 (ActionSheetIconHeader)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10555 (ActionSheetIconHeader)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_5 = createCacheKey.createStyles({ container: { paddingVertical: 0, flexDirection: "row", alignItems: "center", gap: 12 }, titles: { justifyContent: "center", flex: 1 } });
-const result = require("jsxProd").fileFinishedImporting("design/components/Sheet/native/ActionSheetIconHeader.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Sheet/native/ActionSheetIconHeader.native.tsx");
 
 export const ActionSheetIconHeader = function ActionSheetIconHeader(subtitle) {
-  let icon;
-  let title;
   subtitle = subtitle.subtitle;
   ({ title, icon } = subtitle);
   const tmp = callback2();
   let obj = { style: tmp.container, children: null };
   const items = [callback(View, { children: icon }), ];
   obj = { style: tmp.titles, children: null };
-  const items1 = [callback(require(4734) /* Text */.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title }), ];
+  const items1 = [callback(Text.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title }), ];
   let tmp4Result = null;
   if (null != subtitle) {
     obj = { variant: "text-xs/medium", color: "text-default", children: null };
     obj[2] = subtitle;
-    tmp4Result = callback(require(4734) /* Text */.Text, obj);
+    tmp4Result = callback(Text.Text, obj);
   }
   items1[1] = tmp4Result;
   obj[1] = items1;

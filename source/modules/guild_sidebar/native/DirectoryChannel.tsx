@@ -1,19 +1,20 @@
-// Module ID: 15471
-// Function ID: 15472
-// Dependencies: [19, 1391, 1980, 10055, 5044, 21, 4661, 712, 647, 1222, 9919, 15378, 8886, 2]
+// Module ID: 15535
+// Function ID: 15536
+// Dependencies: [19, 1391, 1981, 10094, 5049, 21, 4668, 712, 647, 1222, 9958, 15442, 8923, 2]
 
-// Module 15471
-import importAllResult from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import comparator from "comparator";
-import { UnreadSetting } from "ReadStateTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15535
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "comparator" /* 1981 */;
+import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let c3 = importAllResult;
 let obj = { container: null };
-obj = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("Themes").radii.md };
+obj = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: ThemesDefault.radii.md };
 obj[0] = obj;
 let closure_8 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((guildId) => {
@@ -21,12 +22,12 @@ const memoResult = importAllResult.memo((guildId) => {
   let selected = guildId.selected;
   let id;
   let obj = guildId(647);
-  const items = [ensureGuildLoaded, comparator];
+  const items = [closure_4, closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const directoryChannelIds = outer1_5.getDirectoryChannelIds(guildId);
+    const directoryChannelIds = closure_1_5.getDirectoryChannelIds(guildId);
     let channel = null;
     if (0 !== directoryChannelIds.length) {
-      channel = outer1_4.getChannel(directoryChannelIds[0]);
+      channel = closure_1_4.getChannel(directoryChannelIds[0]);
     }
     return channel;
   });
@@ -40,7 +41,7 @@ const memoResult = importAllResult.memo((guildId) => {
   const items1 = [guildId, id];
   [][0] = id;
   const callback = importAllResult.useCallback(() => {
-    guildId(outer1_2[9]).transitionToGuild(guildId, id);
+    guildId(closure_1_2[9]).transitionToGuild(guildId, id);
   }, items1);
   let tmp7 = null;
   if (null != stateFromStores) {
@@ -50,18 +51,18 @@ const memoResult = importAllResult.memo((guildId) => {
     obj[2] = tmp.container;
     obj = { channel: null };
     obj[0] = stateFromStores;
-    obj[5] = id(8886)(obj);
-    const obj1 = { selected: null };
+    obj[5] = id(8923)(obj);
+    obj1 = { selected: null };
     obj1[0] = selected;
     obj[6] = obj1;
     obj[7] = stateFromStores;
     obj[8] = selected;
     obj[9] = UnreadSetting.ONLY_MENTIONS;
-    tmp7 = jsx(id(15378), { channel: null });
-    const tmp10 = id(15378);
+    tmp7 = jsx(id(15442), { channel: null });
+    const tmp10 = id(15442);
   }
   return tmp7;
 });
-let result = require("comparator").fileFinishedImporting("modules/guild_sidebar/native/DirectoryChannel.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_sidebar/native/DirectoryChannel.tsx");
 
 export default memoResult;

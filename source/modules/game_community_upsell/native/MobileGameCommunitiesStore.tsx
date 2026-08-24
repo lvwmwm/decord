@@ -1,11 +1,12 @@
-// Module ID: 15074
-// Function ID: 15075
+// Module ID: 15138
+// Function ID: 15139
 // Name: set
-// Dependencies: [7301, 589, 709, 2]
+// Dependencies: [7339, 589, 709, 2]
 
-// Module 15074 (set)
-import { PersistedStore } from "initialize";
-import set from "dispatcher";
+// Module 15138 (set)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import set from "set" /* 2 */;
 
 const require = arg1;
 let obj = { guilds: [], lastFetchedAt: 0, lastFetchedGameIds: null, dismissedGuildIds: null, guildGameIds: null };
@@ -13,15 +14,16 @@ let set = new Set();
 obj[2] = set;
 obj[3] = new Set();
 obj[4] = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class MobileGameCommunitiesStore extends PersistedStore {
 }
 const prototype = MobileGameCommunitiesStore.prototype;
 prototype["initialize"] = function initialize(guilds) {
   if (null != guilds) {
-    let obj = { guilds: null, lastFetchedAt: null, lastFetchedGameIds: null, dismissedGuildIds: null, guildGameIds: null };
+    obj = { guilds: null, lastFetchedAt: null, lastFetchedGameIds: null, dismissedGuildIds: null, guildGameIds: null };
     guilds = guilds.guilds;
     obj[0] = guilds.map((features) => {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(features);
       obj.features = new Set(features.features);
       return obj;
@@ -43,22 +45,19 @@ prototype["initialize"] = function initialize(guilds) {
 prototype["getState"] = function getState() {
   obj = {
     guilds: guilds.map((features) => {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(features);
       const items = [...features.features];
       obj.features = items;
       return obj;
     }),
     lastFetchedAt: obj.lastFetchedAt,
-    lastFetchedGameIds: null,
-    dismissedGuildIds: null,
-    guildGameIds: null
+    lastFetchedGameIds: items,
+    dismissedGuildIds: [...obj.dismissedGuildIds],
+    guildGameIds: obj.guildGameIds
   };
   guilds = obj.guilds;
-  let items = [...obj.lastFetchedGameIds];
-  obj[2] = items;
-  obj[3] = [...obj.dismissedGuildIds];
-  obj[4] = obj.guildGameIds;
+  items = [...obj.lastFetchedGameIds];
   return obj;
 };
 prototype["getPresentableUpsellGuilds"] = function getPresentableUpsellGuilds() {
@@ -84,7 +83,7 @@ prototype["getDismissedGuildIds"] = function getDismissedGuildIds() {
   return obj.dismissedGuildIds;
 };
 prototype["DEV_clearFetchCache"] = function DEV_clearFetchCache() {
-  const obj = {};
+  obj = {};
   const merged = Object.assign(obj);
   obj.guilds = [];
   obj.lastFetchedAt = 0;
@@ -93,14 +92,13 @@ prototype["DEV_clearFetchCache"] = function DEV_clearFetchCache() {
   this.emitChange();
 };
 prototype["DEV_clearDismissedGuilds"] = function DEV_clearDismissedGuilds() {
-  const obj = {};
+  obj = {};
   const merged = Object.assign(obj);
   obj.dismissedGuildIds = new Set();
   this.emitChange();
 };
 prototype["DEV_clearState"] = function DEV_clearState() {
-  const obj = { guilds: [], lastFetchedAt: 0, lastFetchedGameIds: null, dismissedGuildIds: null, guildGameIds: null };
-  obj[2] = new Set();
+  obj = { guilds: [], lastFetchedAt: 0, lastFetchedGameIds: new Set(), dismissedGuildIds: null, guildGameIds: null };
   const set = new Set();
   obj[3] = new Set();
   obj[4] = {};
@@ -110,10 +108,8 @@ MobileGameCommunitiesStore.displayName = "MobileGameCommunitiesStore";
 MobileGameCommunitiesStore.persistKey = "MobileGameCommunitiesStore";
 obj = {
   MOBILE_GAME_COMMUNITIES_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
-    let gameIds;
-    let guilds;
     ({ guilds, gameIds } = arg0);
-    let obj = {};
+    obj = {};
     const merged = Object.assign(obj.guildGameIds);
     const iter = guilds[Symbol.iterator]();
     const nextResult = iter.next();
@@ -133,21 +129,20 @@ obj = {
     obj.guildGameIds = obj;
   },
   MOBILE_GAME_COMMUNITIES_DISMISS_GUILD: function handleDismissGuildAction(guildId) {
-    const obj = {};
+    obj = {};
     const merged = Object.assign(obj);
     const items = [];
     items[HermesBuiltin.arraySpread(obj.dismissedGuildIds, 0)] = guildId.guildId;
     obj.dismissedGuildIds = new Set(items);
   },
   LOGOUT: function handleLogout() {
-    const obj = { guilds: [], lastFetchedAt: 0, lastFetchedGameIds: null, dismissedGuildIds: null, guildGameIds: null };
-    obj[2] = new Set();
+    obj = { guilds: [], lastFetchedAt: 0, lastFetchedGameIds: new Set(), dismissedGuildIds: null, guildGameIds: null };
     const set = new Set();
     obj[3] = new Set();
     obj[4] = {};
   }
 };
-const mobileGameCommunitiesStore = new MobileGameCommunitiesStore(require("dispatcher"), obj);
+const mobileGameCommunitiesStore = new MobileGameCommunitiesStore(dispatcherDefault, obj);
 const result = set.fileFinishedImporting("modules/game_community_upsell/native/MobileGameCommunitiesStore.tsx");
 
 export default mobileGameCommunitiesStore;

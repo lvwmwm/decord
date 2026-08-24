@@ -1,13 +1,18 @@
 // Module ID: 4702
 // Function ID: 4703
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [17, 65]
+// Dependencies: [17, 106, 65]
 
 // Module 4702 (__INTERNAL_VIEW_CONFIG)
-import { codegenNativeComponent } from "get ActivityIndicator";
-import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import weakSet from "weakSet" /* 106 */;
+import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
-const obj = { uiViewClassName: "RNSScreenFooter", validAttributes: {} };
+const codegenNativeComponent = get_ActivityIndicator.codegenNativeComponent;
+let obj = { uiViewClassName: "RNSScreenStack", directEventTypes: { topFinishTransitioning: { registrationName: "onFinishTransitioning" } }, validAttributes: null };
+obj = { iosPreventReattachmentOfDismissedScreens: true };
+const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onFinishTransitioning: true }));
+obj[2] = obj;
 
-export default setRuntimeConfigProvider.get("RNSScreenFooter", () => obj);
+export default setRuntimeConfigProvider.get("RNSScreenStack", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

@@ -1,17 +1,15 @@
-// Module ID: 10781
-// Function ID: 10782
+// Module ID: 10820
+// Function ID: 10821
 // Name: showLongPressURLActionSheet
-// Dependencies: [4343, 1236, 4093, 7167, 4090, 9067, 10782, 7172, 2]
+// Dependencies: [4347, 1236, 4096, 7205, 4093, 9104, 10821, 7210, 2]
 // Exports: default
 
-// Module 10781 (showLongPressURLActionSheet)
-let result = require("presentAddedFriendToast").fileFinishedImporting("modules/links/native/showLongPressURLActionSheet.tsx");
+// Module 10820 (showLongPressURLActionSheet)
+import set from "set" /* 2 */;
+
+let result = set.fileFinishedImporting("modules/links/native/showLongPressURLActionSheet.tsx");
 
 export default function showLongPressURLActionSheet(urlString) {
-  let channelId;
-  let closure_3;
-  let disableHapticFeedback;
-  let importDefault;
   const str = urlString.urlString;
   ({ guildId: importDefault, channelId } = urlString);
   ({ messageId: closure_3, disableHapticFeedback } = urlString);
@@ -43,16 +41,16 @@ export default function showLongPressURLActionSheet(urlString) {
       const intl = tmp12(tmp13[1]).intl;
       obj[0] = intl.string(tmp12(tmp13[1]).t["+wbjMW"]);
       obj[1] = function onPress() {
-        outer1_1(channelId[4]).openURL(str.replace("tel:", "sms:"));
+        closure_1_1(channelId[4]).openURL(str.replace("tel:", "sms:"));
       };
       items.push(obj);
     }
   }
-  const obj1 = { label: null, onPress: null };
+  obj1 = { label: null, onPress: null };
   const intl2 = str(channelId[1]).intl;
   obj1[0] = intl2.string(str(channelId[1]).t.wuRE8M);
   obj1[1] = function onPress() {
-    outer1_1(channelId[4]).openURL(str);
+    closure_1_1(channelId[4]).openURL(str);
   };
   const items1 = [obj1, , ];
   const obj2 = { label: null, onPress: null };
@@ -78,7 +76,7 @@ export default function showLongPressURLActionSheet(urlString) {
     const intl5 = tmp7(tmp8[1]).intl;
     obj4[0] = intl5.string(tmp7(tmp8[1]).t.aW2YlJ);
     obj4[1] = function onPress() {
-      outer1_1(channelId[6])({ guildId: closure_1, channelId, messageId: closure_3, navigationSettings: { navigationReplace: true, safe: true } });
+      closure_1_1(channelId[6])({ guildId: closure_1, channelId, messageId: closure_3, navigationSettings: { navigationReplace: true, safe: true } });
     };
     items1.unshift(obj4);
   }

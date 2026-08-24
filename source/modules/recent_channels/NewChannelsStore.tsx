@@ -1,26 +1,27 @@
-// Module ID: 5276
-// Function ID: 5277
+// Module ID: 5281
+// Function ID: 5282
 // Name: guildHasCommunity
-// Dependencies: [1340, 1218, 1391, 1980, 1990, 1910, 4772, 5043, 676, 687, 4972, 709, 5277, 11, 589, 2]
+// Dependencies: [1340, 1218, 1391, 1981, 1991, 1910, 4777, 5048, 676, 687, 4977, 709, 5282, 11, 589, 2]
 
-// Module 5276 (guildHasCommunity)
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import comparator from "comparator";
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "comparator";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import ME from "ME";
-import { Store } from "initialize";
-import set from "ensureGuildLoaded";
+// Module 5281 (guildHasCommunity)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import SidebarType from "SidebarType" /* 4977 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "comparator" /* 1981 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "comparator" /* 1981 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "createGuildRecordFromRust" /* 1910 */;
+import closure_10 from "generateOldThreadCutoff" /* 4777 */;
+import closure_11 from "updateUserGuildSettingsInternal" /* 5048 */;
+import ME from "ME" /* 676 */;
+import set from "set" /* 2 */;
 
-let closure_12;
-let closure_14;
-let map1;
-const require = arg1;
+require = arg1;
 function guildHasCommunity(nextResult) {
   const guild = store.getGuild(nextResult);
   let hasItem;
@@ -48,7 +49,7 @@ function seedCommunityBaseline() {
   return false;
 }
 function maybeAckViewedChannel(guildId, channelId) {
-  let closure_0 = channelId;
+  closure_0 = channelId;
   let tmp = null != obj && null != channelId && obj.has(channelId);
   if (tmp) {
     const guild = store.getGuild(guildId);
@@ -74,16 +75,16 @@ function maybeAckViewedChannel(guildId, channelId) {
     tmp = 0 === store2.getMentionCount(channelId);
   }
   if (tmp) {
-    importDefault(709).wait(() => {
-      let obj = channelId(outer1_2[12]);
-      obj = { object: outer1_12.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED, objectType: outer1_13.ACK_AUTOMATIC };
-      return obj.ack(channelId, obj, true, true, outer1_1(outer1_2[13]).atPreviousMillisecond(channelId));
+    dispatcherDefault.wait(() => {
+      let obj = channelId(closure_1_2[12]);
+      obj = { object: closure_1_12.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED, objectType: closure_1_13.ACK_AUTOMATIC };
+      return obj.ack(channelId, obj, true, true, closure_1_1(closure_1_2[13]).atPreviousMillisecond(channelId));
     });
-    const obj3 = importDefault(709);
+    const obj3 = dispatcherDefault;
   }
 }
 function initializeNewChannels(guildId) {
-  let closure_0 = guildId;
+  closure_0 = guildId;
   if (null == dependencyMap[guildId]) {
     let joinedAt;
     const mapped = channels.getChannels(guildId)[closure_7].map((channel) => channel.channel.id);
@@ -93,29 +94,29 @@ function initializeNewChannels(guildId) {
     }
     if (null != joinedAt) {
       const _Set2 = Set;
-      const set = new Set();
+      set = new Set();
       tmp[guildId] = set;
       const _Date2 = Date;
       const date = new Date(joinedAt);
       const time = date.getTime();
       if (0 !== mapped.length) {
         const _Set = Set;
-        const set1 = new Set(mapped.filter((channelId) => {
-          const extractTimestampResult = callback(outer1_2[13]).extractTimestamp(channelId);
-          let tmp4 = null == outer1_10.getTrackedAckMessageId(channelId);
+        set1 = new Set(mapped.filter((channelId) => {
+          const extractTimestampResult = callback(closure_1_2[13]).extractTimestamp(channelId);
+          let tmp4 = null == closure_1_10.getTrackedAckMessageId(channelId);
           if (tmp4) {
             const _Date = Date;
             const timestamp = Date.now();
-            tmp4 = extractTimestampResult > timestamp - callback(outer1_2[9]).Millis.WEEK;
+            tmp4 = extractTimestampResult > timestamp - callback(closure_1_2[9]).Millis.WEEK;
           }
           if (tmp4) {
-            tmp4 = extractTimestampResult > outer1_3.getGuildRecentsDismissedAt(closure_0);
+            tmp4 = extractTimestampResult > closure_1_3.getGuildRecentsDismissedAt(closure_0);
           }
           if (tmp4) {
             tmp4 = extractTimestampResult > callback;
           }
           if (tmp4) {
-            tmp4 = !outer1_11.isChannelOrParentOptedIn(closure_0, channelId);
+            tmp4 = !closure_1_11.isChannelOrParentOptedIn(closure_0, channelId);
           }
           return tmp4;
         }));
@@ -128,11 +129,11 @@ function initializeNewChannels(guildId) {
   }
 }
 function pruneNewChannels() {
-  const keys = importDefault(11).keys(closure_16);
+  const keys = DISCORD_EPOCHDefault.keys(closure_16);
   const item = keys.forEach((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     const items = [...closure_16[arg0]];
-    table[arg0] = new Set(items.filter((channelId) => !outer1_11.isChannelOrParentOptedIn(closure_0, channelId)));
+    table[arg0] = new Set(items.filter((channelId) => !closure_1_11.isChannelOrParentOptedIn(closure_0, channelId)));
   });
 }
 ({ AnalyticsObjects: closure_12, AnalyticsObjectTypes: map1, GuildFeatures: closure_14 } = ME);
@@ -140,12 +141,13 @@ let set = new Set();
 let closure_16 = {};
 let closure_17 = {};
 let set1 = new Set();
+const Store = initializeDefault.Store;
 class NewChannelsStore extends Store {
 }
 const prototype = NewChannelsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, ensureGuildLoaded, comparator, trackCommunicationDisabled, createGuildRecordFromRust, generateOldThreadCutoff, updateUserGuildSettingsInternal, handleConnectionClosedOrResumed);
-  const items = [updateUserGuildSettingsInternal];
+  this.waitFor(closure_4, closure_5, closure_6, closure_8, closure_9, closure_10, closure_11, closure_3);
+  const items = [closure_11];
   this.syncWith(items, pruneNewChannels);
 };
 prototype["getNewChannelIds"] = function getNewChannelIds(id) {
@@ -199,14 +201,14 @@ prototype["shouldIndicateNewChannel"] = function shouldIndicateNewChannel(guild_
   }
 };
 NewChannelsStore.displayName = "NewChannelsStore";
-const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
+const newChannelsStore = new NewChannelsStore(dispatcherDefault, {
   BULK_CLEAR_RECENTS: function handleBulkClearRecents(guildId) {
     guildId = guildId.guildId;
     const channelIds = guildId.channelIds;
     if (null == dependencyMap[guildId]) {
       return false;
     } else {
-      const item = channelIds.forEach((arg0) => outer1_16[guildId].delete(arg0));
+      const item = channelIds.forEach((arg0) => closure_1_16[guildId].delete(arg0));
       if (0 === tmp3[guildId].size) {
         delete tmp[tmp2];
       }
@@ -216,8 +218,6 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
     return true;
   },
   CHANNEL_SELECT: function handleChannelSelect(arg0) {
-    let channelId;
-    let guildId;
     ({ guildId, channelId } = arg0);
     if (null == guildId) {
       return false;
@@ -226,7 +226,7 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
       if (!tmp2) {
         const _Date = Date;
         const timestamp = Date.now();
-        tmp2 = table[guildId] < timestamp - importDefault(687).Millis.HOUR;
+        tmp2 = table[guildId] < timestamp - setDefault.Millis.HOUR;
       }
       let flag = false;
       if (tmp2) {
@@ -243,7 +243,7 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
     guildId = guildId.guildId;
     let tmp2 = null == guildId;
     if (!tmp2) {
-      tmp2 = tmp !== require(4972) /* SidebarType */.SidebarType.VIEW_CHANNEL;
+      tmp2 = tmp !== SidebarType.SidebarType.VIEW_CHANNEL;
     }
     if (!tmp2) {
       maybeAckViewedChannel(guildId, guildId.channelId);
@@ -275,8 +275,8 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
   GUILD_UPDATE: function handleGuildUpdate(guild) {
     guild = guild.guild;
     let hasItem;
-    let c0;
-    let set;
+    closure_0 = undefined;
+    set = undefined;
     guild = store.getGuild(guild.id);
     if (guild != null) {
       const features = guild.features;
@@ -285,7 +285,7 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
     if (true === hasItem) {
       if (!set1.has(guild.id)) {
         obj2.add(guild.id);
-        c0 = tmp7;
+        closure_0 = tmp7;
         const guild1 = store.getGuild(guild.id);
         const _Set = Set;
         set = new Set();
@@ -295,7 +295,7 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
           const item = items.forEach((arg0) => {
             let hasItem = null != arg0;
             if (hasItem) {
-              hasItem = _undefined.has(arg0);
+              hasItem = set.has(arg0);
             }
             if (hasItem) {
               set.add(arg0);
@@ -321,7 +321,7 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
   CHANNEL_CREATE: function handleChannelCreate(channel) {
     channel = channel.channel;
     if (!channel.isVocal()) {
-      let set = dependencyMap[channel.guild_id];
+      set = dependencyMap[channel.guild_id];
       if (set == null) {
         const _Set = Set;
         set = new Set();

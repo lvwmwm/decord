@@ -1,12 +1,15 @@
-// Module ID: 4015
-// Function ID: 4016
+// Module ID: 4018
+// Function ID: 4019
 // Name: makeGroupListingIndexSubscriptionListingTag
-// Dependencies: [4016, 4017, 589, 38, 709, 2]
+// Dependencies: [4019, 4020, 589, 38, 709, 2]
 
-// Module 4015 (makeGroupListingIndexSubscriptionListingTag)
-import { DefaultCreatorMonetizationRestrictions as closure_2 } from "CreatorMonetizationRestrictions";
-import { Store } from "initialize";
-import set from "initialize";
+// Module 4018 (makeGroupListingIndexSubscriptionListingTag)
+import _modDef38 from "module_38" /* 38 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import CreatorMonetizationRestrictions from "CreatorMonetizationRestrictions" /* 4019 */;
+import version from "version" /* 4020 */;
+import set from "set" /* 2 */;
 
 function makeGroupListingIndexSubscriptionListingTag(arg0) {
   return "subscription_listing:" + arg0;
@@ -39,13 +42,14 @@ function saveBenefitChannels(benefitChannels) {
     continue;
   }
 }
+let closure_2 = CreatorMonetizationRestrictions.DefaultCreatorMonetizationRestrictions;
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED" };
-const secondaryIndexMap = new require("version").SecondaryIndexMap((guild_id) => {
+const secondaryIndexMap = new version.SecondaryIndexMap((guild_id) => {
   const items = ["guild:" + guild_id.guild_id, ...prop.map(makeGroupListingIndexSubscriptionListingTag)];
   prop = guild_id.subscription_listings_ids;
   return items;
 }, (id) => id.id);
-const secondaryIndexMap1 = new require("version").SecondaryIndexMap((application_id) => {
+const secondaryIndexMap1 = new version.SecondaryIndexMap((application_id) => {
   const items = ["application:" + application_id.application_id, "plan:" + application_id.subscription_plans[0].id];
   return items;
 }, (id) => id.id);
@@ -58,6 +62,7 @@ let closure_12 = {};
 const map = new Map();
 const map1 = new Map();
 let closure_19 = [];
+const Store = initializeDefault.Store;
 class GuildRoleSubscriptionsStore extends Store {
 }
 const prototype = GuildRoleSubscriptionsStore.prototype;
@@ -79,7 +84,7 @@ prototype["getSubscriptionGroupListingsForGuild"] = function getSubscriptionGrou
 };
 prototype["getSubscriptionGroupListingForSubscriptionListing"] = function getSubscriptionGroupListingForSubscriptionListing(createSubscription) {
   const values = secondaryIndexMap.values("subscription_listing:" + createSubscription);
-  importDefault(38)(values.length <= 1, "Found multiple group listings for listing");
+  _modDef38(values.length <= 1, "Found multiple group listings for listing");
   return values[0];
 };
 prototype["getSubscriptionListing"] = function getSubscriptionListing(editStateId) {
@@ -101,7 +106,7 @@ prototype["getSubscriptionListingsForGuild"] = function getSubscriptionListingsF
 };
 prototype["getSubscriptionListingForPlan"] = function getSubscriptionListingForPlan(closure_0) {
   const values = secondaryIndexMap1.values("plan:" + closure_0);
-  importDefault(38)(values.length <= 1, "Found multiple listings for plan");
+  _modDef38(values.length <= 1, "Found multiple listings for plan");
   return values[0];
 };
 prototype["getSubscriptionSettings"] = function getSubscriptionSettings(id) {
@@ -131,12 +136,12 @@ obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
     secondaryIndexMap.clear();
     secondaryIndexMap1.clear();
-    let closure_7 = {};
+    closure_7 = {};
     set.clear();
-    let closure_9 = {};
-    let closure_10 = {};
-    let closure_11 = {};
-    let closure_12 = {};
+    closure_9 = {};
+    closure_10 = {};
+    closure_11 = {};
+    closure_12 = {};
     map.clear();
     map1.clear();
   },
@@ -162,11 +167,6 @@ obj = {
     }
   },
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS: function handleFetchListingsSuccess(arg0) {
-    let benefitChannels;
-    let groupListings;
-    let guildId;
-    let settings;
-    let subscriptionTrials;
     ({ guildId, groupListings, subscriptionTrials } = arg0);
     closure_7[guildId] = obj.FETCHED;
     ({ benefitChannels, settings } = arg0);
@@ -235,7 +235,7 @@ obj = {
     closure_12[guildId.guildId] = obj.NOT_FETCHED;
   }
 };
-const guildRoleSubscriptionsStore = new GuildRoleSubscriptionsStore(require("dispatcher"), obj);
+const guildRoleSubscriptionsStore = new GuildRoleSubscriptionsStore(dispatcherDefault, obj);
 let result = set.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsStore.tsx");
 
 export default guildRoleSubscriptionsStore;

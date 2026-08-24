@@ -1,15 +1,15 @@
-// Module ID: 14368
-// Function ID: 14369
+// Module ID: 14436
+// Function ID: 14437
 // Name: set
-// Dependencies: [32, 19, 17, 6716, 10712, 14367, 4115, 4664, 4667, 4340, 2]
+// Dependencies: [32, 19, 17, 6753, 10751, 14435, 4119, 4671, 4674, 4344, 2]
 // Exports: clearDismissedScrollAffordanceBountyIds, useBountiesAutoScroll
 
-// Module 14368 (set)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { AppState } from "get ActivityIndicator";
-import { QuestsExperimentLocations } from "QuestsExperimentLocations";
-import set from "get ActivityIndicator";
+// Module 14436 (set)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import { AppState } from "get ActivityIndicator" /* 17 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 6753 */;
+import set from "set" /* 2 */;
 
 const require = arg1;
 let set = new Set();
@@ -21,14 +21,6 @@ export const clearDismissedScrollAffordanceBountyIds = function clearDismissedSc
   set.clear();
 };
 export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
-  let c11;
-  let c13;
-  let c14;
-  let tmp11;
-  let tmp19;
-  let tmp20;
-  let tmp6;
-  let tmp9;
   listRef = listRef.listRef;
   const enabled = listRef.enabled;
   const mode = listRef.mode;
@@ -37,25 +29,25 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
   const slotHeight = listRef.slotHeight;
   const onCountdownCancelled = listRef.onCountdownCancelled;
   let ctaTimerMilliSeconds;
-  let c8;
-  let c9;
+  c8 = undefined;
+  c9 = undefined;
   let first;
   c11 = undefined;
-  let closure_12;
+  closure_12 = undefined;
   c13 = undefined;
   c14 = undefined;
-  let closure_15;
-  let closure_16;
-  let closure_17;
-  let closure_18;
-  let closure_19;
-  let closure_20;
-  let closure_21;
-  let closure_22;
-  let closure_23;
-  let closure_24;
+  closure_15 = undefined;
+  closure_16 = undefined;
+  closure_17 = undefined;
+  closure_18 = undefined;
+  closure_19 = undefined;
+  closure_20 = undefined;
+  closure_21 = undefined;
+  closure_22 = undefined;
+  closure_23 = undefined;
+  closure_24 = undefined;
   let sharedValue;
-  let closure_26;
+  closure_26 = undefined;
   let callback;
   let callback1;
   let callback2;
@@ -201,7 +193,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
           current = ref2.current;
         }
         if (!current) {
-          const result = closure_25.set(outer1_0(outer1_1[7]).withTiming(0.83, outer1_0(outer1_1[8]).timingSlow));
+          const result = closure_25.set(closure_1_0(closure_1_1[7]).withTiming(0.83, closure_1_0(closure_1_1[8]).timingSlow));
           callback(true);
           const _setTimeout = setTimeout;
           closure_20.current = setTimeout(() => {
@@ -214,7 +206,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
               callback(true);
             }
           }, 500);
-          const obj = outer1_0(outer1_1[7]);
+          const obj = closure_1_0(closure_1_1[7]);
         }
       }, num);
       flag = true;
@@ -338,14 +330,14 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
   }, items12);
   const items13 = [callback11, callback12];
   const effect3 = obj3.useEffect(() => {
-    let closure_0 = activeBountyId.addEventListener("change", (arg0) => {
+    closure_0 = activeBountyId.addEventListener("change", (arg0) => {
       if ("active" === arg0) {
         callback3();
       } else {
         callback2();
       }
     });
-    let closure_1 = listRef(enabled[9]).subscribeToIsInAppBrowserOpen((arg0) => {
+    closure_1 = listRef(enabled[9]).subscribeToIsInAppBrowserOpen((arg0) => {
       if (arg0) {
         callback2();
       } else {

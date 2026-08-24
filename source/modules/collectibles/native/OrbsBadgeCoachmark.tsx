@@ -1,42 +1,42 @@
-// Module ID: 9499
-// Function ID: 9500
+// Module ID: 9536
+// Function ID: 9537
 // Name: OrbsBadgeCoachmarkImg
-// Dependencies: [19, 17, 21, 4661, 9500, 1236, 4230, 9314, 2]
+// Dependencies: [19, 17, 21, 4668, 9537, 1236, 4234, 9351, 2]
 // Exports: default, useOrbsBadgeCoachmark
 
-// Module 9499 (OrbsBadgeCoachmarkImg)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9536 (OrbsBadgeCoachmarkImg)
+import useCoachmark from "useCoachmark" /* 9351 */;
+import metadataDefault from "metadata" /* 9537 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function OrbsBadgeCoachmarkImg() {
   const tmp = callback();
   let obj = { style: tmp.coachmarkImageContainer, children: null };
   obj = { source: null, style: null };
-  obj = { uri: importDefault(9500) };
+  obj = { uri: metadataDefault };
   obj[0] = obj;
   obj[1] = tmp.coachmarkImage;
-  obj[1] = <closure_5 uri={importDefault(9500)} />;
-  return <closure_4 uri={importDefault(9500)} />;
+  obj[1] = <closure_5 uri={metadataDefault} />;
+  return <closure_4 uri={metadataDefault} />;
 }
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 let closure_7 = createCacheKey.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" }, coachmarkImage: { width: 80, height: 80 }, coachmarkDescription: { marginBottom: -10 } });
-const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/OrbsBadgeCoachmark.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/native/OrbsBadgeCoachmark.tsx");
 
 export default function OrbsBadgeCoachmark(badgeRef) {
   const merged = Object.assign(badgeRef, Object.create(null));
-  const coachmark = require(9314) /* useCoachmark */.useCoachmark(badgeRef.badgeRef, merged);
+  const coachmark = useCoachmark.useCoachmark(badgeRef.badgeRef, merged);
   return null;
 };
 export const useOrbsBadgeCoachmark = function useOrbsBadgeCoachmark(disabled) {
   disabled = disabled.disabled;
-  let c1;
+  closure_1 = undefined;
   const tmp = callback();
-  c1 = tmp;
+  closure_1 = tmp;
   const items = [disabled, tmp.coachmarkDescription];
   let tmp3 = null;
   if (!disabled) {

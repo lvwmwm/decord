@@ -1,26 +1,25 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16857
+// Function ID: 16858
 // Name: AutomodTriggerType
-// Dependencies: [19, 11042, 1236, 16049, 10035, 2]
+// Dependencies: [19, 11081, 1236, 16147, 10074, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, useAvailableTriggerTypes, validateRuleByTriggerConfigOrThrow
 
-// Module 16764 (AutomodTriggerType)
-import noop from "noop";
-import AutomodEventType from "AutomodEventType";
-import set from "getSystemLocale";
+// Module 16857 (AutomodTriggerType)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import isInMentionRaidExperiment from "isInMentionRaidExperiment" /* 10074 */;
+import closure_2 from "noop" /* 19 */;
+import AutomodEventType from "AutomodEventType" /* 11081 */;
+import set from "set" /* 2 */;
 
-let AutomodActionType;
-let AutomodEventType;
-let AutomodTriggerType;
-const require = arg1;
+require = arg1;
 ({ AutomodActionType, AutomodEventType, AutomodTriggerType } = AutomodEventType);
 let closure_4 = AutomodEventType.MENTION_SPAM_LIMIT_DEFAULT;
 let obj = { NEW: "new", RECOMMENDED: "recommended", BETA: "beta", ALPHA: "alpha" };
 obj = {};
 obj = {
   getDefaultRuleName() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.ffR2cM);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.ffR2cM);
   },
   type: AutomodTriggerType.SPAM_LINK,
   eventType: AutomodEventType.MESSAGE_SEND,
@@ -37,8 +36,8 @@ obj[6] = new Set();
 obj[AutomodTriggerType.SPAM_LINK] = obj;
 const obj1 = {
   getDefaultRuleName() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.ffR2cM);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.ffR2cM);
   },
   type: AutomodTriggerType.KEYWORD,
   eventType: AutomodEventType.MESSAGE_SEND,
@@ -59,8 +58,8 @@ obj1[6] = new Set(items1);
 obj[AutomodTriggerType.KEYWORD] = obj1;
 const obj2 = {
   getDefaultRuleName() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["puF/Os"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["puF/Os"]);
   },
   type: AutomodTriggerType.ML_SPAM,
   eventType: AutomodEventType.MESSAGE_SEND,
@@ -81,8 +80,8 @@ obj2[6] = new Set(items3);
 obj[AutomodTriggerType.ML_SPAM] = obj2;
 const obj3 = {
   getDefaultRuleName() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.LnGhZv);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.LnGhZv);
   },
   type: AutomodTriggerType.DEFAULT_KEYWORD_LIST,
   eventType: AutomodEventType.MESSAGE_SEND,
@@ -103,8 +102,8 @@ obj3[6] = new Set(items5);
 obj[AutomodTriggerType.DEFAULT_KEYWORD_LIST] = obj3;
 const obj4 = {
   getDefaultRuleName() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.pX7i6n);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.pX7i6n);
   },
   type: AutomodTriggerType.MENTION_SPAM,
   eventType: AutomodEventType.MESSAGE_SEND,
@@ -125,8 +124,8 @@ obj4[6] = new Set(items7);
 obj[AutomodTriggerType.MENTION_SPAM] = obj4;
 const obj5 = {
   getDefaultRuleName() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.q1L2v8);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.q1L2v8);
   },
   type: AutomodTriggerType.USER_PROFILE,
   eventType: AutomodEventType.GUILD_MEMBER_JOIN_OR_UPDATE,
@@ -147,8 +146,8 @@ obj5[6] = new Set(items9);
 obj[AutomodTriggerType.USER_PROFILE] = obj5;
 const obj6 = {
   getDefaultRuleName() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.ZQr92M);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.ZQr92M);
   },
   type: AutomodTriggerType.SERVER_POLICY,
   eventType: AutomodEventType.MESSAGE_SEND,
@@ -184,12 +183,10 @@ export const getAvailableActionTypes = function getAvailableActionTypes(arg0) {
   return Array.from(obj[arg0].availableActionTypes);
 };
 export const validateRuleByTriggerConfigOrThrow = function validateRuleByTriggerConfigOrThrow(actions, arr) {
-  let require;
-  let triggerType;
   ({ id: require, triggerType } = actions);
   actions = actions.actions;
-  let c2;
-  c2 = tmp;
+  closure_2 = undefined;
+  closure_2 = tmp;
   if (arr.filter((id) => {
     let tmp = closure_0 !== id.id;
     if (tmp) {
@@ -199,10 +196,10 @@ export const validateRuleByTriggerConfigOrThrow = function validateRuleByTrigger
   }).length > obj[triggerType].perGuildMaxCount) {
     const _Error3 = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("You have exceeded the maximum number of rules of type " + triggerType);
+    error = new Error("You have exceeded the maximum number of rules of type " + triggerType);
     throw error;
   } else if (actions.some((type) => {
-    const availableActionTypes = _undefined.availableActionTypes;
+    availableActionTypes = availableActionTypes.availableActionTypes;
     return !availableActionTypes.has(type.type);
   })) {
     const _Error2 = Error;
@@ -215,13 +212,13 @@ export const validateRuleByTriggerConfigOrThrow = function validateRuleByTrigger
   }
 };
 export const useAvailableTriggerTypes = function useAvailableTriggerTypes(arg0) {
-  isUserProfileRuleEnabled = isUserProfileRuleEnabled(16049).useIsUserProfileRuleEnabled(arg0);
+  isUserProfileRuleEnabled = isUserProfileRuleEnabled(16147).useIsUserProfileRuleEnabled(arg0);
   const items = [isUserProfileRuleEnabled];
   return React.useMemo(() => {
-    const keys = Object.keys(outer1_7);
+    const keys = Object.keys(closure_1_7);
     return keys.reduce((arg0, arg1) => {
-      const found = outer1_7[arg1].filter((type) => {
-        let tmp2 = type.type !== outer1_3.SERVER_POLICY;
+      const found = closure_1_7[arg1].filter((type) => {
+        let tmp2 = type.type !== closure_1_3.SERVER_POLICY;
         if (tmp2) {
           let tmp3 = type.type === tmp.USER_PROFILE;
           if (tmp3) {
@@ -237,13 +234,13 @@ export const useAvailableTriggerTypes = function useAvailableTriggerTypes(arg0) 
       });
       arg0[arg1] = found.map((type) => type.type);
       return arg0;
-    }, { [outer1_6.MEMBERS]: [], [outer1_6.CONTENT]: [] });
+    }, { [closure_1_6.MEMBERS]: [], [closure_1_6.CONTENT]: [] });
   }, items);
 };
 export const getDefaultTriggerMetadataForTriggerType = function getDefaultTriggerMetadataForTriggerType(arg0, arg1) {
-  require(10035) /* isInMentionRaidExperiment */;
+  isInMentionRaidExperiment;
   if (AutomodTriggerType.DEFAULT_KEYWORD_LIST === arg0) {
-    let obj = { allowList: null, presets: null };
+    obj = { allowList: null, presets: null };
     obj[0] = [];
     obj[1] = [];
     return obj;

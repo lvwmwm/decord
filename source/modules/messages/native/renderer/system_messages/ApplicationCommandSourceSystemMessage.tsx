@@ -1,18 +1,24 @@
-// Module ID: 8228
-// Function ID: 8229
+// Module ID: 8268
+// Function ID: 8269
 // Name: createApplicationCommandSourceSystemMessage
-// Dependencies: [676, 6810, 8229, 8185, 1236, 8187, 8188, 2]
+// Dependencies: [676, 6847, 8269, 8225, 1236, 8227, 8228, 2]
 // Exports: createApplicationCommandSourceSystemMessage
 
-// Module 8228 (createApplicationCommandSourceSystemMessage)
-import { MessageTypes } from "ME";
-import { COMMAND_SENTINEL } from "regExp";
+// Module 8268 (createApplicationCommandSourceSystemMessage)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import regExp from "regExp" /* 6847 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8227 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8228 */;
+import getApplicationCommand from "getApplicationCommand" /* 8269 */;
 
-const result = require("getApplicationCommand").fileFinishedImporting("modules/messages/native/renderer/system_messages/ApplicationCommandSourceSystemMessage.tsx");
+const MessageTypes = ME.MessageTypes;
+const COMMAND_SENTINEL = regExp.COMMAND_SENTINEL;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/ApplicationCommandSourceSystemMessage.tsx");
 
 export const createApplicationCommandSourceSystemMessage = function createApplicationCommandSourceSystemMessage(message) {
   message = message.message;
-  let obj = require(8229) /* getApplicationCommand */;
+  let obj = getApplicationCommand;
   const applicationCommand = obj.getApplicationCommand(message.content);
   const application = message.application;
   if (application != null) {
@@ -20,7 +26,7 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
   }
   if (null != applicationCommand) {
     if (null != name) {
-      const messageAuthorWithProcessedColor = tmp(8185).getMessageAuthorWithProcessedColor(message);
+      const messageAuthorWithProcessedColor = tmp(8225).getMessageAuthorWithProcessedColor(message);
       const intl = tmp(1236).intl;
       obj = { username: null, usernameOnClick: null, commandName: null, applicationName: null };
       obj[0] = messageAuthorWithProcessedColor.nick;
@@ -28,18 +34,18 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
       obj[0] = message;
       obj[1] = messageAuthorWithProcessedColor;
       obj[2] = message.roleStyle;
-      obj[1] = importDefault(8187)(obj);
+      obj[1] = formatUsernameOnClickDefault(obj);
       if (message.type === MessageTypes.CHAT_INPUT_COMMAND) {
         const _HermesInternal = HermesInternal;
         let name2 = "" + COMMAND_SENTINEL + applicationCommand.name;
       } else {
         name2 = applicationCommand.name;
       }
-      const obj1 = { content: null };
+      obj1 = { content: null };
       obj[2] = name2;
       obj[3] = name;
       obj1[0] = intl.formatToParts(tmp(1236).t["1Zm+zw"], obj);
-      const merged = Object.assign(importDefault(8188)(message));
+      const merged = Object.assign(createCommonMessageDefault(message));
       return obj1;
     }
   }

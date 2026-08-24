@@ -1,35 +1,41 @@
-// Module ID: 14824
-// Function ID: 14825
+// Module ID: 14888
+// Function ID: 14889
 // Name: toggle
-// Dependencies: [10015, 8198, 5364, 14268, 7621, 10669, 1236, 589, 14825, 2]
+// Dependencies: [10054, 8238, 5369, 14336, 7659, 10708, 1236, 589, 14889, 2]
 
-// Module 14824 (toggle)
-import DesktopNotificationTypes from "DesktopNotificationTypes";
-import createToggle from "createToggle";
+// Module 14888 (toggle)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import apexExperiment from "apexExperiment" /* 5369 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 7659 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 14336 */;
+import _modDef14889 from "module_14889" /* 14889 */;
+import closure_3 from "DesktopNotificationTypes" /* 10054 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.z6tZKH);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.z6tZKH);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.TummoQ);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.TummoQ);
   },
   parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
   useValue() {
-    const items = [DesktopNotificationTypes];
-    return require(589) /* initialize */.useStateFromStores(items, () => obj.screenDowntimeReminder);
+    const items = [closure_3];
+    return initialize.useStateFromStores(items, () => obj.screenDowntimeReminder);
   },
   onValueChange(screenDowntimeReminder) {
-    return importDefault(14825).setScreenDowntimeReminder(screenDowntimeReminder);
+    return _modDef14889.setScreenDowntimeReminder(screenDowntimeReminder);
   },
   usePredicate() {
-    let isFamilyCenterV3Enabled = require(5364) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeReminderSetting" });
-    const obj = require(5364) /* apexExperiment */;
-    const tmp2 = importDefault(14268)();
-    const hasActiveParentLinks = require(7621) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
+    let isFamilyCenterV3Enabled = apexExperiment.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeReminderSetting" });
+    const obj = apexExperiment;
+    const tmp2 = useUserIsTeenAgeGroupDefault();
+    const hasActiveParentLinks = useUserIdsForLinkStatus.useHasActiveParentLinks();
     if (isFamilyCenterV3Enabled) {
       isFamilyCenterV3Enabled = tmp2;
     }
@@ -40,6 +46,6 @@ createToggle = {
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("apexExperiment").fileFinishedImporting("modules/user_settings/defs/native/ScreenDowntimeReminderSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/ScreenDowntimeReminderSetting.tsx");
 
 export default createToggle;

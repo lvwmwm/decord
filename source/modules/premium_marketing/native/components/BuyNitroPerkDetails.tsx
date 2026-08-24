@@ -1,31 +1,28 @@
-// Module ID: 8016
-// Function ID: 8017
+// Module ID: 8055
+// Function ID: 8056
 // Name: openBuyNitroPerkDetails
-// Dependencies: [19, 17, 21, 4661, 7933, 8017, 1236, 4733, 712, 8020, 8021, 7159, 4342, 2]
+// Dependencies: [19, 17, 21, 4668, 7972, 8056, 1236, 4738, 712, 8059, 8060, 7197, 4346, 2]
 // Exports: openBuyNitroPerkDetails
 
-// Module 8016 (openBuyNitroPerkDetails)
-import { Image } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 8055 (openBuyNitroPerkDetails)
+import ThemesDefault from "Themes" /* 712 */;
+import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
+import PremiumTypes from "PremiumTypes" /* 7972 */;
+import BuyNitroPurchaseButtonDefault from "BuyNitroPurchaseButton" /* 8060 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 const BuyNitroPerkDetailsActionSheet = "BuyNitroPerkDetailsActionSheet";
 let closure_7 = createCacheKey.createStyles({ illustration: { width: "100%", height: 180 } });
-let closure_8 = require("noop").memo((perk) => {
-  let analyticsLocations;
-  let applicationId;
-  let onPaymentDismiss;
-  let onPaymentSuccess;
-  let selectedProductId;
-  let selectedTier;
+let closure_8 = importAllResult.memo((perk) => {
   perk = perk.perk;
   ({ selectedTier, selectedProductId, analyticsLocations, applicationId, onPaymentSuccess, onPaymentDismiss } = perk);
-  let obj = require(7933) /* PremiumTypes */;
+  let obj = PremiumTypes;
   const buyNitroPlanSelection = obj.useBuyNitroPlanSelection({ tier: selectedTier, productId: selectedProductId });
   const detail = perk.detail;
   let tmp6Result = null;
@@ -38,19 +35,19 @@ let closure_8 = require("noop").memo((perk) => {
     obj[0] = detail.image;
     obj[1] = tmp.illustration;
     obj[2] = callback(Image, obj);
-    const obj1 = { spacing: null, children: null };
-    obj1[0] = importDefault(712).space.PX_12;
+    obj1 = { spacing: null, children: null };
+    obj1[0] = ThemesDefault.space.PX_12;
     tmp6Result = null != buyNitroPlanSelection.selection.item;
     if (tmp6Result) {
       const obj2 = { planSelection: null, item: null, centered: true };
       obj2[0] = buyNitroPlanSelection;
       obj2[1] = buyNitroPlanSelection.selection.item;
-      tmp6Result = tmp6(tmp9(8020), obj2);
+      tmp6Result = tmp6(tmp9(8059), obj2);
     }
     const items = [tmp6Result, ];
     const obj3 = { planSelection: null, location: null, sourceAnalyticsLocations: null, applicationId: null, onHostSheetClose: null, onPaymentSuccess: null, onPaymentDismiss: null };
     obj3[0] = buyNitroPlanSelection;
-    obj3[1] = importDefault(7159).PREMIUM_MARKETING_PERK_CARD;
+    obj3[1] = QUICK_SWITCHERDefault.PREMIUM_MARKETING_PERK_CARD;
     obj3[2] = analyticsLocations;
     obj3[3] = applicationId;
     obj3[4] = function onHostSheetClose() {
@@ -58,19 +55,19 @@ let closure_8 = require("noop").memo((perk) => {
     };
     obj3[5] = onPaymentSuccess;
     obj3[6] = onPaymentDismiss;
-    items[1] = callback(importDefault(8021), obj3);
+    items[1] = callback(BuyNitroPurchaseButtonDefault, obj3);
     obj1[1] = items;
-    obj[3] = closure_5(tmp2(4733).Stack, obj1);
-    tmp6Result = tmp6(tmp2(8017).PromoSheet, obj);
+    obj[3] = closure_5(tmp2(4738).Stack, obj1);
+    tmp6Result = tmp6(tmp2(8056).PromoSheet, obj);
     const tmp8 = closure_5;
-    const tmp9Result = importDefault(8021);
+    const tmp9Result = BuyNitroPurchaseButtonDefault;
   }
   return tmp6Result;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPerkDetails.tsx");
+const result = require("set").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPerkDetails.tsx");
 
 export const openBuyNitroPerkDetails = function openBuyNitroPerkDetails(perk, arg1) {
-  let obj = require(4342) /* ACTION_SHEET_HEIGHT_HALF */;
+  let obj = ACTION_SHEET_HEIGHT_HALF;
   obj = { content: null, key: null };
   obj = { perk };
   const merged = Object.assign(arg1);

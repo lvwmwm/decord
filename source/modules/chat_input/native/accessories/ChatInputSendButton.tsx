@@ -1,19 +1,23 @@
-// Module ID: 11417
-// Function ID: 11418
+// Module ID: 11468
+// Function ID: 11469
 // Name: renderChatInputSendButton
-// Dependencies: [32, 19, 17, 4662, 7440, 11149, 21, 4661, 712, 4097, 11409, 11418, 11402, 4320, 1236, 1367, 589, 4668, 11424, 4115, 2]
+// Dependencies: [32, 19, 17, 4669, 7478, 11188, 21, 4668, 712, 4100, 11460, 11469, 11453, 4324, 1236, 1367, 589, 4107, 11475, 4119, 2]
 
-// Module 11417 (renderChatInputSendButton)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "module_4115";
-import { View } from "wrapChildrenDefault";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import setCooldown from "setCooldown";
-import { CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS as closure_8 } from "TextAreaCta";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11468 (renderChatInputSendButton)
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import useChatInputFloatingWidthDefault from "useChatInputFloatingWidth" /* 11475 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_7 from "setCooldown" /* 7478 */;
+import { CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS as closure_8 } from "TextAreaCta" /* 11188 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 function renderChatInputSendButton(type, arg1, state, cleanup) {
   const merged = Object.assign(arg1);
   return <closure_12 key={arg0} type={arg0} state={arg2} cleanup={arg3} />;
@@ -24,55 +28,43 @@ function getChatInputSendButtonItemKey(sendVoiceMessageEnabled) {
   }
 }
 function FloatingSlot(arg0) {
-  let buttonHeight;
-  let buttonMargin;
-  let buttonWidth;
-  let children;
-  let sendVoiceMessageEnabled;
   ({ buttonHeight, buttonMargin } = arg0);
   ({ buttonWidth, sendVoiceMessageEnabled, children } = arg0);
-  const style = [{ height: buttonHeight }, importDefault(11424)({ expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin }).animatedStyle];
-  return jsx(importDefault(4115).View, { style, children });
+  const style = [{ height: buttonHeight }, useChatInputFloatingWidthDefault({ expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin }).animatedStyle];
+  return jsx(_modDef4119.View, { style, children });
 }
 let c4 = importAllResult;
 let closure_10 = { BUTTON_SEND: "send-button", BUTTON_SEND_DISABLED: "send-button-disabled", BUTTON_SEND_VOICE_MESSAGE: "voice-message-button", BUTTON_SEND_VOICE_MESSAGE_DISABLED: "voice-message-button-disabled" };
 let closure_11 = createCacheKey.createStyles((width, height) => {
   obj = { button: obj, buttonActive: null, iconActive: null };
   obj = { width, height };
-  obj = { backgroundColor: importDefault(712).colors.CHAT_INPUT_SEND_BUTTON_ACTIVE_BACKGROUND };
+  obj = { backgroundColor: ThemesDefault.colors.CHAT_INPUT_SEND_BUTTON_ACTIVE_BACKGROUND };
   obj[1] = obj;
-  obj[2] = { tintColor: importDefault(712).colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT };
+  obj[2] = { tintColor: ThemesDefault.colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT };
   return obj;
 });
 let closure_12 = importAllResult.memo((type) => {
-  let channelId;
-  let cleanup;
-  let isOnCooldown;
-  let onSendMessage;
-  let sendEnabled;
-  let state;
-  let withBounce;
   type = type.type;
   ({ onSendMessage, sendEnabled, isOnCooldown, channelId, state, cleanup, withBounce } = type);
-  let obj = require(4097) /* map */;
-  const token = obj.useToken(importDefault(712).modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH);
-  let obj1 = require(4097) /* map */;
+  let obj = map;
+  const token = obj.useToken(ThemesDefault.modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH);
+  obj1 = map;
   let num = 0;
   if (type === constants.BUTTON_SEND_VOICE_MESSAGE || type === constants.BUTTON_SEND_VOICE_MESSAGE_DISABLED) {
     num = closure_8;
   }
   obj = { cleanup, state, withBounce, bounceEnterDelayMs: num, children: null };
-  let tmp3Result = tmp3(11409);
+  let tmp3Result = tmp3(11460);
   if (type === constants.BUTTON_SEND_VOICE_MESSAGE || type === constants.BUTTON_SEND_VOICE_MESSAGE_DISABLED) {
     obj = { disabled: null, channelId: null };
     obj[0] = isOnCooldown;
     obj[1] = channelId;
-    let tmp7Result = tmp7(tmp3(11418), obj);
+    let tmp7Result = tmp7(tmp3(11469), obj);
   } else {
     obj1 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: null, accessibilityLabel: null, onPress: null, disabled: null };
     ({ button: obj4[1], buttonActive: obj4[2], iconActive: obj4[3] } = tmp5);
-    tmp3Result = tmp3(11402);
-    obj1[4] = tmp(4320).SendMessageIcon;
+    tmp3Result = tmp3(11453);
+    obj1[4] = tmp(4324).SendMessageIcon;
     const intl = tmp(1236).intl;
     obj1[5] = intl.string(tmp(1236).t.TXNS7S);
     obj1[6] = onSendMessage;
@@ -83,13 +75,6 @@ let closure_12 = importAllResult.memo((type) => {
   return <tmp3Result cleanup={cleanup} state={state} withBounce={withBounce} bounceEnterDelayMs={num}>{null}</tmp3Result>;
 });
 const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
-  let c3;
-  let canSendVoiceMessage;
-  let defaultValue;
-  let hasPendingAttachments;
-  let hasPendingEdit;
-  let onSendMessage;
-  let tmp10;
   channel = channel.channel;
   ({ canSendVoiceMessage, onSendMessage } = channel);
   let flag = channel.requireTextContent;
@@ -100,11 +85,11 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   let chatInputFloating;
   let callback;
   let stateFromStores1;
-  let c5;
+  closure_5 = undefined;
   canSendVoiceMessage = undefined;
   let obj = channel(chatInputFloating[9]);
   const token = obj.useToken(onSendMessage(chatInputFloating[8]).modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH);
-  let obj1 = channel(chatInputFloating[9]);
+  obj1 = channel(chatInputFloating[9]);
   const token1 = obj1.useToken(onSendMessage(chatInputFloating[8]).modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT);
   let obj2 = channel(chatInputFloating[9]);
   const token2 = obj2.useToken(onSendMessage(chatInputFloating[8]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
@@ -117,9 +102,9 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   const tmp7 = callback2(token, token1);
   [tmp10, c3] = callback(stateFromStores1.useState(defaultValue.length > 0), 2);
   let obj6 = channel(chatInputFloating[16]);
-  const items1 = [setCooldown];
+  const items1 = [closure_7];
   const items2 = [channel];
-  stateFromStores1 = obj6.useStateFromStores(items1, () => outer1_7.isChannelOnCooldown(channel), items2);
+  stateFromStores1 = obj6.useStateFromStores(items1, () => closure_1_7.isChannelOnCooldown(channel), items2);
   let tmp12 = !stateFromStores1;
   if (stateFromStores1) {
     tmp12 = hasPendingEdit;
@@ -133,13 +118,13 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
     }
     tmp12 = tmp10;
   }
-  c5 = tmp12;
+  closure_5 = tmp12;
   if (canSendVoiceMessage) {
     canSendVoiceMessage = !tmp12;
   }
   const items3 = [channel.id, stateFromStores1, onSendMessage, tmp12, canSendVoiceMessage, chatInputFloating];
   const memo = obj5.useMemo(() => {
-    const items = [{ channelId: channel.id, isOnCooldown: stateFromStores1, onSendMessage, sendEnabled: c5, sendVoiceMessageEnabled: canSendVoiceMessage, withBounce: chatInputFloating }];
+    const items = [{ channelId: channel.id, isOnCooldown: stateFromStores1, onSendMessage, sendEnabled: closure_5, sendVoiceMessageEnabled: canSendVoiceMessage, withBounce: chatInputFloating }];
     return items;
   }, items3);
   const imperativeHandle = obj5.useImperativeHandle(ref, () => ({ setHasText: c3 }));
@@ -168,7 +153,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
         const tmp3Result = tmp3(tmp2[12]);
       }
       obj[1] = tmp20Result;
-      return <c5 width={null} height={null} alignItems="center" justifyContent="center" />;
+      return <closure_5 width={null} height={null} alignItems="center" justifyContent="center" />;
     }
   }
   obj3 = { items: memo, renderItem: renderChatInputSendButton, getItemKey: getChatInputSendButtonItemKey };
@@ -188,12 +173,12 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
     obj6[1] = token1;
     obj5[0] = obj6;
     obj5[1] = tmp16;
-    tmp15Result = tmp15(c5, obj5);
+    tmp15Result = tmp15(closure_5, obj5);
   }
   return tmp15Result;
 });
 forwardRefResult.displayName = "ChatInputSendButton";
 const memoResult = importAllResult.memo(forwardRefResult);
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputSendButton.tsx");
+let result = require("set").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputSendButton.tsx");
 
 export default memoResult;

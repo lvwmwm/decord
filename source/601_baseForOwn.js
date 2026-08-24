@@ -4,7 +4,8 @@
 // Dependencies: [602, 613]
 
 // Module 601 (baseForOwn)
-import createBaseEach from "createBaseEach";
+import baseForOwn from "baseForOwn" /* 613 */;
+import createBaseEach from "createBaseEach" /* 602 */;
 
 
-export default createBaseEach(require("baseForOwn"));
+export default createBaseEach(baseForOwn);

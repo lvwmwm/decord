@@ -1,44 +1,44 @@
-// Module ID: 9132
-// Function ID: 9133
+// Module ID: 9169
+// Function ID: 9170
 // Name: GameProfileRankPill
-// Dependencies: [19, 17, 21, 4661, 712, 8010, 4734, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 8049, 4739, 1236, 2]
 // Exports: default
 
-// Module 9132 (GameProfileRankPill)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9169 (GameProfileRankPill)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import TrophyIcon from "TrophyIcon" /* 8049 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: { flex: 1, flexDirection: "row", alignItems: "flex-end" }, gameRankPill: null };
-createCacheKey = { flexDirection: "row", backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.round, paddingHorizontal: require("Themes").space.PX_8, alignItems: "center", gap: require("Themes").space.PX_4 };
-const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey = { flexDirection: "row", backgroundColor: ThemesDefault.colors.WHITE, borderRadius: ThemesDefault.radii.round, paddingHorizontal: ThemesDefault.space.PX_8, alignItems: "center", gap: ThemesDefault.space.PX_4 };
+const merged = Object.assign(ThemesDefault.shadows.SHADOW_LOW);
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/game_profile/native/components/GameProfileRankPill.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/game_profile/native/components/GameProfileRankPill.tsx");
 
 export default function GameProfileRankPill(arg0) {
-  let compact;
-  let rank;
   ({ rank, compact } = arg0);
   if (compact === undefined) {
     compact = false;
   }
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.gameRankPill, children: null };
-  obj = { size: "xxs", color: null };
-  obj[1] = importDefault(712).colors.BLACK;
-  const items = [callback(require(8010) /* TrophyIcon */.TrophyIcon, obj), ];
-  const intl = require(1236) /* getSystemLocale */.intl;
+  obj = { size: "xxs", color: ThemesDefault.colors.BLACK };
+  const items = [callback(TrophyIcon.TrophyIcon, obj), ];
+  const intl = getSystemLocale.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (compact) {
-    const obj1 = { rank: null };
+    obj1 = { rank: null };
     obj1[0] = rank;
     let str = formatToPlainString(t.UA6RoE, obj1);
   } else {
@@ -46,7 +46,7 @@ export default function GameProfileRankPill(arg0) {
     obj2[0] = rank;
     str = formatToPlainString(t.ehZXlZ, obj2);
   }
-  items[1] = callback(require(4734) /* Text */.Text, { variant: "text-xs/bold", color: "text-overlay-dark", children: str.toUpperCase() });
+  items[1] = callback(Text.Text, { variant: "text-xs/bold", color: "text-overlay-dark", children: str.toUpperCase() });
   obj[1] = items;
   obj[1] = closure_5(View, obj);
   return callback(View, obj);

@@ -1,14 +1,15 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 8977
+// Function ID: 8978
 // Name: isUserProfilePerformanceAnalyticsEnabled
 // Dependencies: [1472, 2]
 // Exports: isUserProfilePerformanceAnalyticsEnabled
 
-// Module 8940 (isUserProfilePerformanceAnalyticsEnabled)
-import ApexExperiment from "ApexExperiment";
+// Module 8977 (isUserProfilePerformanceAnalyticsEnabled)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-04-user-profile-performance-analytics", defaultConfig: { performanceAnalyticsEnabled: false }, variations: { 0: { performanceAnalyticsEnabled: false }, 1: { performanceAnalyticsEnabled: true } } });
-const result = require("set").fileFinishedImporting("modules/user_profile/experiments/UserProfilePerformanceAnalyticsExperiment.tsx");
+const result = set.fileFinishedImporting("modules/user_profile/experiments/UserProfilePerformanceAnalyticsExperiment.tsx");
 
 export const isUserProfilePerformanceAnalyticsEnabled = function isUserProfilePerformanceAnalyticsEnabled(UserProfileAnalyticsUtils) {
   return config.getConfig({ location: UserProfileAnalyticsUtils }).performanceAnalyticsEnabled;

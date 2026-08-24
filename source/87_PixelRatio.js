@@ -4,13 +4,13 @@
 // Dependencies: [41, 42, 88]
 
 // Module 87 (PixelRatio)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import _createClassDefault from "_createClass" /* 42 */;
+import closure_2 from "_classCallCheck" /* 41 */;
 
 const PixelRatio = arg1;
 class PixelRatio {
   constructor() {
-    tmp = outer1_2(this, PixelRatio);
+    tmp = closure_2(this, PixelRatio);
     return;
   }
 }
@@ -52,4 +52,4 @@ const items = [
   }
 ];
 
-export default _createClass(PixelRatio, null, items);
+export default _createClassDefault(PixelRatio, null, items);

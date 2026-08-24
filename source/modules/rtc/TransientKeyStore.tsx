@@ -1,12 +1,14 @@
-// Module ID: 9691
-// Function ID: 9692
+// Module ID: 9730
+// Function ID: 9731
 // Name: map
 // Dependencies: [589, 709, 2]
 
-// Module 9691 (map)
-import { Store } from "initialize";
+// Module 9730 (map)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 const map = new Map();
+const Store = initializeDefault.Store;
 class TransientKeyStore extends Store {
 }
 const prototype = TransientKeyStore.prototype;
@@ -32,7 +34,7 @@ prototype["isKeyVerified"] = function isKeyVerified(arg0, arg1) {
   return false;
 };
 TransientKeyStore.displayName = "TransientKeyStore";
-const transientKeyStore = new TransientKeyStore(require("dispatcher"), {
+const transientKeyStore = new TransientKeyStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
     map.clear();
   },

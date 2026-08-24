@@ -1,33 +1,36 @@
-// Module ID: 15952
-// Function ID: 15953
+// Module ID: 16049
+// Function ID: 16050
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 676, 21, 4661, 712, 7145, 4734, 1236, 1993, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 7183, 4739, 1236, 1994, 2]
 // Exports: default
 
-// Module 15952 (ChannelDetailsLinkedLobby)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { HelpdeskArticles } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16049 (ChannelDetailsLinkedLobby)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import combinedDefault from "combined" /* 1994 */;
+import Text2 from "Text" /* 4739 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7183 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { HelpdeskArticles } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Fragment: c5, jsxs: closure_6, jsx: error } = jsxProd);
 createCacheKey = { container: { alignItems: "center" }, divider: null };
-createCacheKey = { height: 1, width: 48, marginTop: 12, backgroundColor: require("Themes").colors.BORDER_STRONG };
+createCacheKey = { height: 1, width: 48, marginTop: 12, backgroundColor: ThemesDefault.colors.BORDER_STRONG };
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsLinkedLobby.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsLinkedLobby.tsx");
 
 export default function ChannelDetailsLinkedLobby(channel) {
   channel = channel.channel;
-  let divider = createCacheKey();
+  let divider = callback();
   let BPDKoA = require;
   let getArticleURL = dependencyMap;
-  let obj = require(7145) /* useGetOrFetchApplications */;
+  let obj = useGetOrFetchApplications;
   const linkedLobby = channel.linkedLobby;
   let application_id;
   if (linkedLobby != null) {
@@ -40,23 +43,23 @@ export default function ChannelDetailsLinkedLobby(channel) {
     obj = { style: null, children: null };
     const items = [divider.container, channel.containerStyle];
     obj[0] = items;
-    let Text = BPDKoA(4734).Text;
+    let Text = Text2.Text;
     if (null != intl) {
-      const intl3 = BPDKoA(1236).intl;
+      const intl3 = getSystemLocale.intl;
       obj = { applicationName: null };
       obj[0] = intl.name;
-      let formatResult = intl3.format(BPDKoA(1236).t.SgxMJs, obj);
+      let formatResult = intl3.format(getSystemLocale.t.SgxMJs, obj);
     } else {
-      const intl2 = BPDKoA(1236).intl;
-      formatResult = intl2.string(BPDKoA(1236).t.yQqVss);
+      const intl2 = getSystemLocale.intl;
+      formatResult = intl2.string(getSystemLocale.t.yQqVss);
     }
-    const obj1 = { variant: "text-sm/normal", color: "text-default", children: null };
+    obj1 = { variant: "text-sm/normal", color: "text-default", children: null };
     const obj2 = { children: null };
     const items1 = [formatResult, "  \u2022  ", ];
-    intl = BPDKoA(1236).intl;
-    BPDKoA = BPDKoA(1236).t.BPDKoA;
+    intl = getSystemLocale.intl;
+    BPDKoA = getSystemLocale.t.BPDKoA;
     const obj3 = { helpdeskArticle: null };
-    getArticleURL = importDefault(1993).getArticleURL;
+    getArticleURL = combinedDefault.getArticleURL;
     obj3[0] = getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
     items1[2] = intl.format(BPDKoA, obj3);
     obj2[0] = items1;
@@ -70,6 +73,6 @@ export default function ChannelDetailsLinkedLobby(channel) {
     obj[1] = items2;
     closure_6(View, obj);
     const tmp5 = closure_5;
-    const tmp8 = importDefault(1993);
+    const tmp8 = combinedDefault;
   }
 };

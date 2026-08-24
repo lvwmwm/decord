@@ -1,15 +1,15 @@
-// Module ID: 13011
-// Function ID: 13012
+// Module ID: 13066
+// Function ID: 13067
 // Name: orderMarketablePerksForDisplay
-// Dependencies: [32, 4263, 4265, 2]
+// Dependencies: [32, 4267, 4269, 2]
 // Exports: default
 
-// Module 13011 (orderMarketablePerksForDisplay)
-import _slicedToArray from "_slicedToArray";
-import { GAME_SERVER_POWERUP_SKU_ID as closure_3 } from "str11";
+// Module 13066 (orderMarketablePerksForDisplay)
+import closure_2 from "_slicedToArray" /* 32 */;
+import { GAME_SERVER_POWERUP_SKU_ID as closure_3 } from "str11" /* 4267 */;
 
 const require = arg1;
-const result = require("VANITY_URL_POWERUP_SKU_ID").fileFinishedImporting("modules/premium/powerups/utils/orderMarketablePerksForDisplay.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/orderMarketablePerksForDisplay.tsx");
 
 export default function orderMarketablePerksForDisplay(arg0) {
   const items = [...arg0];

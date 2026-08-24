@@ -1,21 +1,23 @@
-// Module ID: 14610
-// Function ID: 14611
+// Module ID: 14678
+// Function ID: 14679
 // Name: fetchUserCustomThemes
-// Dependencies: [4308, 676, 709, 530, 2]
+// Dependencies: [4312, 676, 709, 530, 2]
 // Exports: fetchUserCustomThemes
 
-// Module 14610 (fetchUserCustomThemes)
-import validateSavedTheme from "validateSavedTheme";
-import { Endpoints } from "ME";
+// Module 14678 (fetchUserCustomThemes)
+import sendRequest from "sendRequest" /* 530 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "validateSavedTheme" /* 4312 */;
+import { Endpoints } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("dispatcher").fileFinishedImporting("modules/client_themes/SavedCustomThemeActionCreators.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/client_themes/SavedCustomThemeActionCreators.tsx");
 
 export const fetchUserCustomThemes = function fetchUserCustomThemes() {
   if (!fetching.isFetching()) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj.dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_START" });
-    const HTTP = require(530) /* sendRequest */.HTTP;
+    const HTTP = sendRequest.HTTP;
     obj = { url: null, oldFormErrors: true, rejectWithError: true };
     obj[0] = Endpoints.USERS_ME_CUSTOM_THEMES;
     const value = HTTP.get(obj);

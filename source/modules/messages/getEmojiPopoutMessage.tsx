@@ -1,43 +1,29 @@
-// Module ID: 9409
-// Function ID: 9410
+// Module ID: 9446
+// Function ID: 9447
 // Name: EmojiPopoutType
-// Dependencies: [7189, 1236, 2]
+// Dependencies: [7227, 1236, 2]
 // Exports: getEmojiPopoutData
 
-// Module 9409 (EmojiPopoutType)
-import { EmojiSourceDataTypes } from "getEmojiSourceData";
+// Module 9446 (EmojiPopoutType)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getEmojiSourceData from "getEmojiSourceData" /* 7227 */;
 
+const EmojiSourceDataTypes = getEmojiSourceData.EmojiSourceDataTypes;
 let closure_3 = { DEFAULT: "Custom Emoji Popout", CROSS_SERVER: "Custom Emoji Popout (Cross-Server)", UPSELL_CURRENT_SERVER_JOINED: "Custom Emoji Popout (Upsell Joined Current-Server)", UPSELL_CROSS_SERVER_JOINED: "Custom Emoji Popout (Upsell Joined Cross-Server)", UPSELL_CROSS_SERVER_JOINABLE: "Custom Emoji Popout (Upsell Not-Joined Cross-Server)", UPSELL_CROSS_SERVER_UNJOINABLE: "Custom Emoji Popout (Soft Upsell)" };
 let obj = { GET_PREMIUM: "GET_PREMIUM", JOIN_GUILD: "JOIN_GUILD", UNAVAILABLE: "UNAVAILABLE" };
-const result = require("set").fileFinishedImporting("modules/messages/getEmojiPopoutMessage.tsx");
+const result = set.fileFinishedImporting("modules/messages/getEmojiPopoutMessage.tsx");
 
 export const EmojiPopoutType = obj;
 export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
-  let emojiComesFromCurrentGuild;
-  let emojiComesFromCurrentGuild2;
-  let expressionSourceApplication;
-  let hasJoinedEmojiSourceGuild;
-  let hasJoinedEmojiSourceGuild2;
-  let hasJoinedEmojiSourceGuild3;
-  let isDiscoverable;
-  let isDiscoverable2;
-  let isPremium;
-  let isPremium2;
-  let isPremium3;
-  let isRoleSubscriptionEmoji;
-  let isUnusableRoleSubscriptionEmoji;
-  let isUnusableRoleSubscriptionEmoji2;
-  let onOpenPremiumSettings;
-  let shouldHideRoleSubscriptionCTA;
-  let userIsRoleSubscriber;
   ({ expressionSourceApplication, hasJoinedEmojiSourceGuild, isUnusableRoleSubscriptionEmoji, isDiscoverable, emojiComesFromCurrentGuild, userIsRoleSubscriber, shouldHideRoleSubscriptionCTA } = sourceType);
   ({ isPremium, isRoleSubscriptionEmoji, onOpenPremiumSettings } = sourceType);
   if (sourceType.sourceType === EmojiSourceDataTypes.APPLICATION) {
     if (null != expressionSourceApplication) {
-      const intl8 = require(1236) /* getSystemLocale */.intl;
-      let obj = { appName: null };
+      const intl8 = getSystemLocale.intl;
+      obj = { appName: null };
       obj[0] = expressionSourceApplication.name;
-      let formatToPlainStringResult = intl8.formatToPlainString(require(1236) /* getSystemLocale */.t.uERlTd, obj);
+      let formatToPlainStringResult = intl8.formatToPlainString(getSystemLocale.t.uERlTd, obj);
       let tmp6 = require;
     }
     ({ isPremium: isPremium2, hasJoinedEmojiSourceGuild: hasJoinedEmojiSourceGuild2, isDiscoverable: isDiscoverable2 } = sourceType);
@@ -60,7 +46,7 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
             obj[1] = intl10.string(tmp6(1236).t.riu2R5);
             let obj2 = obj;
           }
-          const obj1 = {};
+          obj1 = {};
           const merged = Object.assign(obj2);
           obj1.emojiDescription = formatToPlainStringResult;
           obj1.analyticsType = DEFAULT;
@@ -91,9 +77,9 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
   }
   if (isPremium) {
     if (!hasJoinedEmojiSourceGuild) {
-      const intl4 = require(1236) /* getSystemLocale */.intl;
+      const intl4 = getSystemLocale.intl;
       const string2 = intl4.string;
-      const t = require(1236) /* getSystemLocale */.t;
+      const t = getSystemLocale.t;
       if (isDiscoverable) {
         let string2Result = string2(t.xE9WGt);
         let tmp26 = tmp24;
@@ -105,9 +91,9 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
       }
     }
     if (!isRoleSubscriptionEmoji) {
-      const intl5 = require(1236) /* getSystemLocale */.intl;
+      const intl5 = getSystemLocale.intl;
       const string3 = intl5.string;
-      const t2 = require(1236) /* getSystemLocale */.t;
+      const t2 = getSystemLocale.t;
       if (emojiComesFromCurrentGuild) {
         let string3Result = string3(t2.hU4kIe);
         let tmp31 = tmp29;
@@ -119,9 +105,9 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
       }
     }
     if (!shouldHideRoleSubscriptionCTA) {
-      const intl6 = require(1236) /* getSystemLocale */.intl;
+      const intl6 = getSystemLocale.intl;
       const string4 = intl6.string;
-      let vLklfF2 = require(1236) /* getSystemLocale */.t;
+      let vLklfF2 = getSystemLocale.t;
       if (isUnusableRoleSubscriptionEmoji) {
         if (userIsRoleSubscriber) {
           vLklfF2 = vLklfF2.vLklfF;
@@ -139,15 +125,15 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
         let tmp37 = tmp33;
       }
     }
-    const intl7 = require(1236) /* getSystemLocale */.intl;
-    string4Result1 = intl7.string(require(1236) /* getSystemLocale */.t.xFb68j);
+    const intl7 = getSystemLocale.intl;
+    string4Result1 = intl7.string(getSystemLocale.t.xFb68j);
     tmp36 = dependencyMap;
     tmp37 = require;
   } else if (hasJoinedEmojiSourceGuild) {
     if (!shouldHideRoleSubscriptionCTA) {
-      const intl2 = require(1236) /* getSystemLocale */.intl;
+      const intl2 = getSystemLocale.intl;
       const string = intl2.string;
-      let vLklfF = require(1236) /* getSystemLocale */.t;
+      let vLklfF = getSystemLocale.t;
       if (isUnusableRoleSubscriptionEmoji) {
         if (userIsRoleSubscriber) {
           vLklfF = vLklfF.vLklfF;
@@ -169,12 +155,12 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
         tmp11 = tmp7;
       }
     }
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    stringResult1 = intl3.string(require(1236) /* getSystemLocale */.t.xFb68j);
+    const intl3 = getSystemLocale.intl;
+    stringResult1 = intl3.string(getSystemLocale.t.xFb68j);
     tmp10 = dependencyMap;
     tmp11 = require;
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     if (isDiscoverable) {
       formatToPlainStringResult = intl.string(tmp2(1236).t.FJ6Z01);
       tmp6 = tmp2;

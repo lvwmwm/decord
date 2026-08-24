@@ -1,23 +1,24 @@
-// Module ID: 11887
-// Function ID: 11888
+// Module ID: 11936
+// Function ID: 11937
 // Name: setSendState
 // Dependencies: [644, 705, 2]
 // Exports: setSendState
 
-// Module 11887 (setSendState)
-import keys from "keys";
+// Module 11936 (setSendState)
+import set from "set" /* 2 */;
+import keys from "keys" /* 644 */;
 
 let obj = keys.create(() => ({}));
-const result = require("set").fileFinishedImporting("modules/instant_invite/InstantInviteSendStateStore.tsx");
+const result = set.fileFinishedImporting("modules/instant_invite/InstantInviteSendStateStore.tsx");
 
 export const setSendState = function setSendState(arg0, arg1, arg2) {
   const _require = arg0;
-  const dependencyMap = arg1;
-  let obj = arg2;
+  dependencyMap = arg1;
+  obj = arg2;
   const state = obj.getState();
   obj = _require(705);
   obj.batchUpdates(() => {
-    let obj = {};
+    obj = {};
     const merged = Object.assign(table);
     obj = {};
     const merged1 = Object.assign(table[closure_0]);

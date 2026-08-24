@@ -5,9 +5,10 @@
 // Exports: default
 
 // Module 56 (processColorStops)
-import _slicedToArray from "_slicedToArray";
+import processColor from "processColor" /* 50 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
-const require = arg1;
+require = arg1;
 function processColorStops(nextResult) {
   const items = [];
   let num = 0;
@@ -33,7 +34,7 @@ function processColorStops(nextResult) {
       }
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      obj = require(50) /* processColor */;
+      obj = processColor;
       let defaultResult = obj.default(tmp.color);
       if (null == defaultResult) {
         break;
@@ -62,7 +63,7 @@ function processColorStops(nextResult) {
             }
           }
         }
-        let obj1 = { color: null, position: null };
+        obj1 = { color: null, position: null };
         obj1[0] = defaultResult;
         let arr1 = items.push(obj1);
       }
@@ -490,7 +491,7 @@ function parseRadialGradientCSSString(str) {
       }
       if (null != tmp23) {
         if (null != tmp22) {
-          const obj1 = { top: null, left: null };
+          obj1 = { top: null, left: null };
           obj1[0] = tmp23;
           obj1[1] = tmp22;
           flag4 = flag;
@@ -637,10 +638,6 @@ function parseLinearGradientCSSString(str) {
   return tmp16;
 }
 function parseColorStopsCSSString(items) {
-  let obj5;
-  let obj8;
-  let tmp12;
-  let tmp18;
   items = [];
   const parts = items.join(",").split(closure_5);
   let num = 0;
@@ -667,7 +664,7 @@ function parseColorStopsCSSString(items) {
         }
         let tmp21 = require;
         let tmp22 = dependencyMap;
-        let obj10 = require(50) /* processColor */;
+        let obj10 = processColor;
         let defaultResult = obj10.default(tmp18);
         if (null == defaultResult) {
           return null;
@@ -696,14 +693,14 @@ function parseColorStopsCSSString(items) {
         }
         let tmp14 = require;
         let tmp15 = dependencyMap;
-        let obj6 = require(50) /* processColor */;
+        let obj6 = processColor;
         let defaultResult1 = obj6.default(tmp12);
         if (null == defaultResult1) {
           return null;
         } else if (null == parsed2) {
           return null;
         } else {
-          let obj1 = { color: null, position: null };
+          obj1 = { color: null, position: null };
           obj1[0] = defaultResult1;
           obj1[1] = parsed2;
           let arr1 = items.push(obj1);
@@ -741,7 +738,7 @@ function parseColorStopsCSSString(items) {
         } else {
           let tmp6 = require;
           let tmp7 = dependencyMap;
-          obj = require(50) /* processColor */;
+          obj = processColor;
           let defaultResult2 = obj.default(match[0]);
           if (null == defaultResult2) {
             return null;
@@ -988,7 +985,7 @@ export default function processBackgroundImage(str) {
               if ("radial-gradient" === tmp5.type) {
                 let shape = ellipse;
                 let size = c13;
-                let obj1 = {};
+                obj1 = {};
                 let tmp57 = closure_14;
                 let tmp58 = obj1;
                 let merged = Object.assign(closure_14);

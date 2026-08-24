@@ -1,25 +1,31 @@
-// Module ID: 14501
-// Function ID: 14502
+// Module ID: 14569
+// Function ID: 14570
 // Name: VideoQuestModalCloseButton
-// Dependencies: [21, 712, 5433, 1236, 6368, 2]
+// Dependencies: [21, 712, 5438, 1236, 6399, 2]
 // Exports: default
 
-// Module 14501 (VideoQuestModalCloseButton)
-import { jsx } from "jsxProd";
+// Module 14569 (VideoQuestModalCloseButton)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import XSmallIcon from "XSmallIcon" /* 6399 */;
 
-const result = require("PressableBase").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalCloseButton.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalCloseButton.tsx");
 
 export default function VideoQuestModalCloseButton(iconColor) {
   let MOBILE_TEXT_HEADING_PRIMARY = iconColor.iconColor;
   if (MOBILE_TEXT_HEADING_PRIMARY === undefined) {
-    MOBILE_TEXT_HEADING_PRIMARY = importDefault(712).colors.MOBILE_TEXT_HEADING_PRIMARY;
+    MOBILE_TEXT_HEADING_PRIMARY = ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY;
   }
   const obj = { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12, onPress: null, style: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.cpT0Cq);
   obj[3] = iconColor.onClose;
   const items = [{ flexShrink: 0, minWidth: 24, minHeight: 24 }, iconColor.style];
   obj[4] = items;
-  obj[5] = jsx(require(6368) /* XSmallIcon */.XSmallIcon, { color: MOBILE_TEXT_HEADING_PRIMARY });
-  return jsx(require(5433) /* PressableBase */.PressableOpacity, { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12, onPress: null, style: null, children: null });
+  obj[5] = jsx(XSmallIcon.XSmallIcon, { color: MOBILE_TEXT_HEADING_PRIMARY });
+  return jsx(PressableBase.PressableOpacity, { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12, onPress: null, style: null, children: null });
 };

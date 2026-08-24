@@ -1,10 +1,12 @@
-// Module ID: 9869
-// Function ID: 9870
+// Module ID: 9908
+// Function ID: 9909
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9869 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/guild-room/lr-bg-tv.webp.js");
+// Module 9908 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/guild-room/lr-bg-tv.webp.js");
 
 export default "https://cdn.discordapp.com/assets/content/320ae17d126cb2f82102cd73f82afb31e27736a64a866ea95c590adde3b73a70.webp";
 export const metadata = { fileBytes: 559372 };

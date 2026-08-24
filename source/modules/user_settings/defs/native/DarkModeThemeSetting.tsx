@@ -1,40 +1,43 @@
-// Module ID: 14652
-// Function ID: 14653
+// Module ID: 14720
+// Function ID: 14721
 // Name: route
-// Dependencies: [1302, 1305, 8198, 676, 1367, 589, 10669, 1236, 14650, 14653, 2]
+// Dependencies: [1302, 1305, 8238, 676, 1367, 589, 10708, 1236, 14718, 14721, 2]
 
-// Module 14652 (route)
-import handleThemeChange from "handleThemeChange";
-import { SystemTheme } from "SystemThemeState";
-import createToggle from "createToggle";
+// Module 14720 (route)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 14718 */;
+import closure_3 from "handleThemeChange" /* 1302 */;
+import { SystemTheme } from "SystemThemeState" /* 1305 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["EgvHH/"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["EgvHH/"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   usePredicate: function useSyncedModePickerVisible() {
-    let stateFromStores = importDefault(1367)("DarkModeThemeSetting");
-    const items = [handleThemeChange];
+    let stateFromStores = useIsMobileVisualRefreshExperimentEnabledDefault("DarkModeThemeSetting");
+    const items = [closure_3];
     if (stateFromStores) {
       stateFromStores = obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
     }
     return stateFromStores;
   },
   useTrailing() {
-    return require(14650) /* useSyncedModeThemeName */.useSyncedModeThemeName(SystemTheme.DARK);
+    return useSyncedModeThemeName.useSyncedModeThemeName(SystemTheme.DARK);
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE_DARK_MODE_THEME_PICKER,
   getComponent() {
-    return require(14653) /* SettingsAppearanceDarkModeThemePickerScreen */.default;
+    return require(14721) /* SettingsAppearanceDarkModeThemePickerScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-const result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/DarkModeThemeSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/DarkModeThemeSetting.tsx");
 
 export default createToggle;

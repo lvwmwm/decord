@@ -1,37 +1,32 @@
-// Module ID: 12151
-// Function ID: 12152
+// Module ID: 12203
+// Function ID: 12204
 // Name: ModeratorActionRow
-// Dependencies: [19, 4990, 1391, 1980, 1990, 1910, 4021, 4542, 676, 4009, 21, 4661, 1367, 6291, 7185, 4734, 8934, 4342, 9896, 589, 7234, 11014, 1399, 11015, 4984, 4981, 4979, 4026, 1236, 12152, 8062, 12154, 8083, 6896, 10534, 2007, 6778, 7355, 5260, 11016, 1403, 10905, 4010, 11033, 11019, 9685, 11422, 9681, 11697, 8510, 4316, 11035, 9830, 11037, 12156, 11791, 7512, 6286, 2]
+// Dependencies: [19, 4995, 1391, 1981, 1991, 1910, 4024, 4547, 676, 4012, 21, 4668, 1367, 6322, 7223, 4739, 8971, 4346, 9935, 589, 7272, 11053, 1399, 11054, 4989, 4986, 4984, 4029, 1236, 12204, 8101, 12206, 8122, 6934, 10573, 2008, 6815, 7393, 5265, 11055, 1403, 10944, 4013, 11072, 11058, 9724, 11473, 9720, 11746, 8549, 4320, 11074, 9869, 11076, 12208, 11840, 7550, 6317, 2]
 // Exports: default
 
-// Module 12151 (ModeratorActionRow)
-import "initialize";
-import buildStageChannelUserRoles from "buildStageChannelUserRoles";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import comparator from "comparator";
-import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import updateVoiceState from "updateVoiceState";
-import ME from "ME";
-import { GuildMemberFlags } from "GuildMemberFlags";
-import { jsx } from "getGuildMemberAgeInRange";
-import createCacheKey from "createCacheKey";
+// Module 12203 (ModeratorActionRow)
+import noopAll from "noop" /* 19 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import Text from "Text" /* 4739 */;
+import TableRowInner from "TableRowInner" /* 6322 */;
+import Divider from "Divider" /* 7223 */;
+import closure_4 from "buildStageChannelUserRoles" /* 4995 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "comparator" /* 1981 */;
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "createGuildRecordFromRust" /* 1910 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_11 from "updateVoiceState" /* 4547 */;
+import ME from "ME" /* 676 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4012 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_12;
-let map1;
-const require = arg1;
+require = arg1;
 function ModeratorActionRow(arg0) {
-  let disabled;
-  let hint;
-  let icon;
-  let isDestructive;
-  let label;
-  let onPress;
-  let sublabel;
   ({ label, sublabel, icon, hint, disabled, isDestructive, onPress } = arg0);
-  if (importDefault(1367)("UserProfileModeratorActions")) {
+  if (useIsMobileVisualRefreshExperimentEnabledDefault("UserProfileModeratorActions")) {
     let str = "default";
     if (isDestructive) {
       str = "danger";
@@ -42,7 +37,7 @@ function ModeratorActionRow(arg0) {
     obj = { IconComponent: null, variant: null };
     obj[0] = icon;
     obj[1] = str;
-    obj[2] = jsx(require(6291) /* TableRowInner */.TableRow.Icon, { IconComponent: null, variant: null });
+    obj[2] = jsx(TableRowInner.TableRow.Icon, { IconComponent: null, variant: null });
     obj[3] = null != hint;
     obj[4] = str;
     obj[5] = disabled;
@@ -53,15 +48,15 @@ function ModeratorActionRow(arg0) {
       combined = "" + label + ", " + sublabel;
     }
     obj[7] = combined;
-    return jsx(require(6291) /* TableRowInner */.TableRow, { IconComponent: null, variant: null });
+    return jsx(TableRowInner.TableRow, { IconComponent: null, variant: null });
   } else {
     obj = { label: null, sublabel: null, icon: null, hint: null, disabled: null, isDestructive: null, onPress: null };
     obj[0] = label;
     let tmp2Result;
     if (null != sublabel) {
-      const obj1 = { variant: "text-xs/normal", color: "text-subtle", children: null };
+      obj1 = { variant: "text-xs/normal", color: "text-subtle", children: null };
       obj1[2] = sublabel;
-      tmp2Result = tmp2(require(4734) /* Text */.Text, obj1);
+      tmp2Result = tmp2(Text.Text, obj1);
     }
     obj[1] = tmp2Result;
     obj[2] = icon;
@@ -69,27 +64,15 @@ function ModeratorActionRow(arg0) {
     obj[4] = disabled;
     obj[5] = isDestructive;
     obj[6] = onPress;
-    return jsx(require(7185) /* Divider */.UserProfileFormRow, { label: null, sublabel: null, icon: null, hint: null, disabled: null, isDestructive: null, onPress: null });
+    return jsx(Divider.UserProfileFormRow, { label: null, sublabel: null, icon: null, hint: null, disabled: null, isDestructive: null, onPress: null });
   }
 }
+noopAll;
 ({ GuildFeatures: closure_12, Permissions: map1 } = ME);
 let closure_16 = createCacheKey.createStyles({ cardContainer: { paddingBottom: 0 }, cardTitle: { marginBottom: 0 } });
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/user_profile/native/UserProfileModeratorActions.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileModeratorActions.tsx");
 
 export default function UserProfileModeratorActions(user) {
-  let canBanUser;
-  let canChangeNick;
-  let canDeafenMembers;
-  let canKickUser;
-  let canManageGuild;
-  let canManageGuildRoles;
-  let canManageUserRoles;
-  let canModerateMembers;
-  let canModerateStage;
-  let canMoveMembers;
-  let canMuteMembers;
-  let currentUser;
-  let guildId;
   user = user.user;
   ({ currentUser, guildId } = user);
   let channelId = user.channelId;
@@ -100,11 +83,11 @@ export default function UserProfileModeratorActions(user) {
   let voiceChannel;
   let stateFromStores;
   let stateFromStores1;
-  let c10;
+  closure_10 = undefined;
   let stateFromStores3;
   canMoveMembers = undefined;
-  let closure_13;
-  let GuildMemberFlags;
+  closure_13 = undefined;
+  GuildMemberFlags = undefined;
   let tmp = callback();
   let stringResult2 = showUserProfile;
   const tmp4 = guildId(showUserProfile[12])("UserProfileModeratorActions");
@@ -122,7 +105,7 @@ export default function UserProfileModeratorActions(user) {
   let obj3 = user(showUserProfile[19]);
   const items1 = [stateFromStores];
   stateFromStores1 = obj3.useStateFromStores(items1, () => stateFromStores.getMember(guildId, user.id));
-  c10 = tmp10;
+  closure_10 = tmp10;
   let obj4 = user(showUserProfile[19]);
   const items2 = [hideActionSheet];
   const stateFromStores2 = obj4.useStateFromStores(items2, () => {
@@ -152,43 +135,42 @@ export default function UserProfileModeratorActions(user) {
   let obj6 = user(showUserProfile[20]);
   const canRemoveThreadMember = obj6.useCanRemoveThreadMember(channelId);
   let obj7 = user(showUserProfile[19]);
-  const items4 = [c10];
+  const items4 = [closure_10];
   const stateFromStoresObject = obj7.useStateFromStoresObject(items4, () => {
-    const obj = { canKickUser: null, canBanUser: null, canChangeNick: null, canManageUserRoles: null, canManageGuildRoles: null, canManageGuild: null, canModerateMembers: null, canMoveMembers: null, canMuteMembers: null, canDeafenMembers: null, canModerateStage: null };
-    obj[0] = user(showUserProfile[21]).canKickMember(user, stateFromStores);
+    const obj = { canKickUser: user(showUserProfile[21]).canKickMember(user, stateFromStores), canBanUser: null, canChangeNick: null, canManageUserRoles: null, canManageGuildRoles: null, canManageGuild: null, canModerateMembers: null, canMoveMembers: null, canMuteMembers: null, canDeafenMembers: null, canModerateStage: null };
     const obj2 = user(showUserProfile[21]);
     const tmp = user;
     const tmp2 = showUserProfile;
     obj[1] = user(showUserProfile[21]).canBanMember(user, stateFromStores);
     let canManageUserResult = null != stateFromStores;
     if (canManageUserResult) {
-      canManageUserResult = _undefined.canManageUser(constants.MANAGE_NICKNAMES, tmp3, tmp4);
+      canManageUserResult = closure_10.canManageUser(constants.MANAGE_NICKNAMES, tmp3, tmp4);
     }
     obj[2] = canManageUserResult;
     let canManageUserResult1 = null != tmp4;
     if (canManageUserResult1) {
-      canManageUserResult1 = _undefined.canManageUser(constants.MANAGE_ROLES, tmp3, tmp4);
+      canManageUserResult1 = closure_10.canManageUser(constants.MANAGE_ROLES, tmp3, tmp4);
     }
     obj[3] = canManageUserResult1;
     let canResult = null != tmp4;
     if (canResult) {
-      canResult = _undefined.can(constants.MANAGE_ROLES, tmp4);
+      canResult = closure_10.can(constants.MANAGE_ROLES, tmp4);
     }
     obj[4] = canResult;
     let canManageUserResult2 = null != tmp4;
     if (canManageUserResult2) {
-      canManageUserResult2 = _undefined.canManageUser(constants.MANAGE_GUILD, tmp3, tmp4);
+      canManageUserResult2 = closure_10.canManageUser(constants.MANAGE_GUILD, tmp3, tmp4);
     }
     obj[5] = canManageUserResult2;
     let canManageUserResult3 = null != tmp4;
     if (canManageUserResult3) {
-      canManageUserResult3 = _undefined.canManageUser(constants.MODERATE_MEMBERS, tmp3, tmp4);
+      canManageUserResult3 = closure_10.canManageUser(constants.MODERATE_MEMBERS, tmp3, tmp4);
     }
     obj[6] = canManageUserResult3;
-    obj[7] = _undefined.can(constants.MOVE_MEMBERS, voiceChannel);
-    obj[8] = _undefined.can(constants.MUTE_MEMBERS, voiceChannel);
-    obj[9] = _undefined.can(constants.DEAFEN_MEMBERS, voiceChannel);
-    obj[10] = _undefined.can(tmp(tmp2[22]).MODERATE_STAGE_CHANNEL_PERMISSIONS, voiceChannel);
+    obj[7] = closure_10.can(constants.MOVE_MEMBERS, voiceChannel);
+    obj[8] = closure_10.can(constants.MUTE_MEMBERS, voiceChannel);
+    obj[9] = closure_10.can(constants.DEAFEN_MEMBERS, voiceChannel);
+    obj[10] = closure_10.can(tmp(tmp2[22]).MODERATE_STAGE_CHANNEL_PERMISSIONS, voiceChannel);
     return obj;
   });
   ({ canKickUser, canBanUser, canModerateMembers, canMoveMembers } = stateFromStoresObject);
@@ -239,7 +221,7 @@ export default function UserProfileModeratorActions(user) {
     return trackUserProfileAction.getPermissionsForUser(user.id, id).speaker;
   });
   tmp5Result = tmp5(stringResult2[19]);
-  const items6 = [voiceState, stateFromStores3, stateFromStores1, c10];
+  const items6 = [voiceState, stateFromStores3, stateFromStores1, closure_10];
   closure_13 = tmp5Result.useStateFromStoresArray(items6, () => {
     if (canMoveMembers) {
       if (null != voiceChannel) {
@@ -248,24 +230,24 @@ export default function UserProfileModeratorActions(user) {
           if (channel.id === id.id) {
             return tmp;
           } else {
-            let can = outer1_10.can;
-            let canResult = outer1_13;
-            if (getUncachedChannelPermissions) {
+            let can = closure_1_10.can;
+            let canResult = closure_1_13;
+            if (closure_10) {
               canResult = can(canResult.CONNECT, channel);
               if (canResult) {
-                can = outer1_11;
-                canResult = !outer1_0(outer1_3[26]).isChannelFull(channel, outer1_11, outer1_9);
-                const obj4 = outer1_0(outer1_3[26]);
+                can = closure_1_11;
+                canResult = !closure_1_0(closure_1_3[26]).isChannelFull(channel, closure_1_11, closure_1_9);
+                const obj4 = closure_1_0(closure_1_3[26]);
               }
               let canResult1 = canResult;
             } else {
               canResult1 = can(canResult.MOVE_MEMBERS, channel);
               if (canResult1) {
-                let canResult2 = outer1_10.can(outer1_13.CONNECT, channel);
+                let canResult2 = closure_1_10.can(closure_1_13.CONNECT, channel);
                 if (!canResult2) {
-                  let obj = outer1_2(outer1_3[27]);
+                  let obj = closure_1_2(closure_1_3[27]);
                   obj = { permission: null, user: null, context: null };
-                  obj[0] = outer1_13.CONNECT;
+                  obj[0] = closure_1_13.CONNECT;
                   obj[1] = closure_0;
                   obj[2] = channel;
                   canResult2 = obj.can(obj);
@@ -273,8 +255,8 @@ export default function UserProfileModeratorActions(user) {
                 canResult1 = canResult2;
               }
               if (canResult1) {
-                canResult1 = !outer1_0(outer1_3[26]).isChannelFull(channel, outer1_11, outer1_9);
-                const obj3 = outer1_0(outer1_3[26]);
+                canResult1 = !closure_1_0(closure_1_3[26]).isChannelFull(channel, closure_1_11, closure_1_9);
+                const obj3 = closure_1_0(closure_1_3[26]);
               }
             }
           }
@@ -320,7 +302,7 @@ export default function UserProfileModeratorActions(user) {
             obj[3] = function onPress() {
               trackUserProfileAction({ action: "PRESS_INVITE_TO_SPEAK" });
               const obj = user(showUserProfile[30]);
-              if (c10) {
+              if (closure_10) {
                 const result = obj.audienceAckRequestToSpeak(voiceChannel, false);
               } else {
                 obj.inviteUserToStage(voiceChannel, user.id);
@@ -338,7 +320,7 @@ export default function UserProfileModeratorActions(user) {
         tmp37 = canMoveMembers;
       }
       if (tmp37) {
-        const obj1 = { label: null, hint: null, sublabel: null, icon: null, onPress: null };
+        obj1 = { label: null, hint: null, sublabel: null, icon: null, onPress: null };
         const intl5 = tmp5(stringResult2[28]).intl;
         obj1[0] = intl5.string(tmp5(stringResult2[28]).t.FAplms);
         obj1[1] = tmp5(stringResult2[32]).FormArrow;
@@ -354,7 +336,7 @@ export default function UserProfileModeratorActions(user) {
           obj[1] = obj;
           obj[2] = closure_13;
           obj[3] = function onSelect(id) {
-            return outer1_1(outer1_3[36]).setChannel(id2.id, id.id, id.id);
+            return closure_1_1(closure_1_3[36]).setChannel(id2.id, id.id, id.id);
           };
           obj.openLazy(user(showUserProfile[35])(showUserProfile[34], showUserProfile.paths), "ChannelPicker", obj, "stack");
         };
@@ -392,12 +374,12 @@ export default function UserProfileModeratorActions(user) {
             userId: user.id,
             guildId: stateFromStores.id,
             onClose() {
-              let arr = outer1_1(outer1_3[38]);
+              let arr = closure_1_1(closure_1_3[38]);
               arr = arr.pop();
               dependencyMap();
             },
             onRemove() {
-              let arr = callback(5260);
+              let arr = callback(5265);
               arr = arr.pop();
             }
           };
@@ -430,7 +412,7 @@ export default function UserProfileModeratorActions(user) {
           if (num == null) {
             num = 0;
           }
-          obj.setMemberFlags(stateFromStores.id, user.id, user(showUserProfile[40]).setFlag(num, _undefined2.BYPASSES_VERIFICATION, false));
+          obj.setMemberFlags(stateFromStores.id, user.id, user(showUserProfile[40]).setFlag(num, _undefined.BYPASSES_VERIFICATION, false));
         };
         items7.push(<ModeratorActionRow key="unverify" label={null} icon={null} onPress={null} />);
       }
@@ -446,7 +428,7 @@ export default function UserProfileModeratorActions(user) {
           if (num == null) {
             num = 0;
           }
-          obj.setMemberFlags(stateFromStores.id, user.id, user(showUserProfile[40]).setFlag(num, _undefined2.BYPASSES_VERIFICATION, true));
+          obj.setMemberFlags(stateFromStores.id, user.id, user(showUserProfile[40]).setFlag(num, _undefined.BYPASSES_VERIFICATION, true));
         };
         items7.push(<ModeratorActionRow key="verify" label={null} icon={null} onPress={null} />);
       }
@@ -558,7 +540,7 @@ export default function UserProfileModeratorActions(user) {
                         user,
                         onConfirm() {
                           callback({ action: "PRESS_REMOVE_FROM_THREAD" });
-                          outer1_1(outer1_3[56]).removeMember(closure_2, id.id, "Context Menu");
+                          closure_1_1(closure_1_3[56]).removeMember(closure_2, id.id, "Context Menu");
                           callback2();
                         }
                       };

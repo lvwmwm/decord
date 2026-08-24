@@ -1,26 +1,26 @@
-// Module ID: 16365
-// Function ID: 16366
+// Module ID: 16462
+// Function ID: 16463
 // Name: useActivityUsers
 // Dependencies: [1922, 1390, 647, 2]
 // Exports: default
 
-// Module 16365 (useActivityUsers)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import participantFromServer from "participantFromServer";
+// Module 16462 (useActivityUsers)
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "participantFromServer" /* 1390 */;
 
 const require = arg1;
-const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/activities/useActivityUsers.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/useActivityUsers.tsx");
 
 export default function useActivityUsers(arg0, arg1) {
   const _require = arg0;
-  const dependencyMap = arg1;
-  let items = [participantFromServer, mergeGuildAvatar];
+  dependencyMap = arg1;
+  let items = [closure_3, closure_2];
   const items1 = [arg1, arg0];
   return _require(647).useStateFromStoresArray(items, () => {
     if (null == closure_1) {
       return [];
     } else {
-      const embeddedActivitiesForChannel = outer1_3.getEmbeddedActivitiesForChannel(tmp);
+      const embeddedActivitiesForChannel = closure_1_3.getEmbeddedActivitiesForChannel(tmp);
       const found = embeddedActivitiesForChannel.find((applicationId) => applicationId.applicationId === closure_0);
       if (null == found) {
         let items = [];

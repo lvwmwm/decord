@@ -1,12 +1,12 @@
-// Module ID: 8638
-// Function ID: 8639
+// Module ID: 8675
+// Function ID: 8676
 // Name: useFastestListComputedStyles
 // Dependencies: [19, 17, 2]
 // Exports: default
 
-// Module 8638 (useFastestListComputedStyles)
-import noop from "noop";
-import { StyleSheet } from "get ActivityIndicator";
+// Module 8675 (useFastestListComputedStyles)
+import closure_0 from "noop" /* 19 */;
+import { StyleSheet } from "get ActivityIndicator" /* 17 */;
 
 const result = require("set").fileFinishedImporting("modules/fastest_list/useFastestListComputedStyles.android.tsx");
 
@@ -24,7 +24,7 @@ export default function useFastestListComputedStyles(style) {
     } else {
       obj = { flex: 1 };
     }
-    const flattenResult = outer1_1.flatten(obj);
+    const flattenResult = closure_1_1.flatten(obj);
     let num;
     if (flattenResult != null) {
       num = flattenResult.marginStart;
@@ -149,7 +149,7 @@ export default function useFastestListComputedStyles(style) {
           }
         }
         const _Error = Error;
-        const error = new Error("FastestList: paddingStart and paddingEnd must be numbers.");
+        error = new Error("FastestList: paddingStart and paddingEnd must be numbers.");
         throw error;
       }
     }

@@ -1,23 +1,20 @@
-// Module ID: 7694
-// Function ID: 7695
+// Module ID: 7732
+// Function ID: 7733
 // Name: FormTitle
-// Dependencies: [19, 17, 676, 21, 500, 4661, 712, 1297, 2]
+// Dependencies: [19, 17, 676, 21, 500, 4668, 712, 1297, 2]
 // Exports: default
 
-// Module 7694 (FormTitle)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import set from "set";
-import set from "set";
-import createCacheKey from "createCacheKey";
-import set from "ME";
+// Module 7732 (FormTitle)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import set from "set" /* 500 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let Platform;
-let c3;
-let c4;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ View: obj1, Platform } = get_ActivityIndicator);
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let num = 58;
@@ -29,20 +26,14 @@ if (set.isAndroid()) {
   num2 = 56;
 }
 set = { titleWrapper: { flexDirection: "row", justifyContent: "space-between", paddingTop: 16, paddingBottom: 16 }, horizontalPadding: { paddingHorizontal: 16 }, thinTitle: { paddingTop: 26 }, titleText: null, error: null };
-set = { fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: require("Themes").colors.TEXT_SUBTLE };
+set = { fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: ThemesDefault.colors.TEXT_SUBTLE };
 set[3] = set;
-set = { color: require("Themes").unsafe_rawColors.RED_400 };
+set = { color: ThemesDefault.unsafe_rawColors.RED_400 };
 set[4] = set;
-set = createCacheKey.createStyles(set);
+let closure_5 = createCacheKey.createStyles(set);
 const result = set.fileFinishedImporting("design/void/Form/native/FormTitle.tsx");
 
 export default function FormTitle(thinTitle) {
-  let icon;
-  let numberOfLines;
-  let textStyle;
-  let title;
-  let uppercaseTitle;
-  let viewStyle;
   ({ title, uppercaseTitle } = thinTitle);
   ({ icon, numberOfLines } = thinTitle);
   if (uppercaseTitle === undefined) {
@@ -61,7 +52,7 @@ export default function FormTitle(thinTitle) {
     flag3 = false;
   }
   ({ viewStyle, textStyle } = thinTitle);
-  const tmp = set();
+  const tmp = callback();
   const items = [tmp.titleWrapper, , , ];
   if (flag) {
     flag = tmp.thinTitle;
@@ -85,7 +76,7 @@ export default function FormTitle(thinTitle) {
     formatted = title.toUpperCase();
   }
   obj[3] = formatted;
-  const items2 = [closure_3(require(1297) /* Button */.LegacyText, obj), icon];
+  const items2 = [closure_3(Button.LegacyText, obj), icon];
   obj[1] = items2;
   return closure_4(closure_2, obj);
 };

@@ -1,13 +1,15 @@
-// Module ID: 1977
-// Function ID: 1978
+// Module ID: 1978
+// Function ID: 1979
 // Name: isChangelogUser
-// Dependencies: [1978, 2]
+// Dependencies: [1979, 2]
 // Exports: default
 
-// Module 1977 (isChangelogUser)
-import { SYSTEM_UPDATES_USER_ID } from "CHANGELOG_MODAL_KEY";
+// Module 1978 (isChangelogUser)
+import set from "set" /* 2 */;
+import CHANGELOG_MODAL_KEY from "CHANGELOG_MODAL_KEY" /* 1979 */;
 
-const result = require("set").fileFinishedImporting("modules/changelog/utils/isChangelogUser.tsx");
+const SYSTEM_UPDATES_USER_ID = CHANGELOG_MODAL_KEY.SYSTEM_UPDATES_USER_ID;
+const result = set.fileFinishedImporting("modules/changelog/utils/isChangelogUser.tsx");
 
 export default function isChangelogUser(arg0) {
   let tmp = null != arg0;

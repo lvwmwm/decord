@@ -1,11 +1,13 @@
-// Module ID: 17109
-// Function ID: 17110
+// Module ID: 17203
+// Function ID: 17204
 // Name: AccountLinkManagerNative
-// Dependencies: [16158, 4340, 2]
+// Dependencies: [16255, 4344, 2]
 
-// Module 17109 (AccountLinkManagerNative)
-import { AccountLinkManager } from "_claimIncentivizedAccountLinkingReward";
+// Module 17203 (AccountLinkManagerNative)
+import set from "set" /* 2 */;
+import _claimIncentivizedAccountLinkingReward from "_claimIncentivizedAccountLinkingReward" /* 16255 */;
 
+const AccountLinkManager = _claimIncentivizedAccountLinkingReward.AccountLinkManager;
 class AccountLinkManagerNative extends AccountLinkManager {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -37,7 +39,7 @@ class AccountLinkManagerNative extends AccountLinkManager {
   }
   evaluatePending() {
     if (!this.isBrowserOpen) {
-      tmp2 = __esModule;
+      tmp2 = closure_2;
       evaluatePendingResult = super.evaluatePending();
     }
     return;
@@ -45,6 +47,6 @@ class AccountLinkManagerNative extends AccountLinkManager {
 }
 let closure_2 = AccountLinkManagerNative.prototype;
 const accountLinkManagerNative = new AccountLinkManagerNative();
-const result = require("set").fileFinishedImporting("modules/application_account_linking/native/AccountLinkManagerNative.tsx");
+const result = set.fileFinishedImporting("modules/application_account_linking/native/AccountLinkManagerNative.tsx");
 
 export default accountLinkManagerNative;

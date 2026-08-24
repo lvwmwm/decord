@@ -1,0 +1,16 @@
+// Module ID: 6421
+// Function ID: 6422
+// Name: GestureDetectorType
+// Dependencies: [6422, 6425, 6485, 6487]
+
+// Module 6421 (GestureDetectorType)
+import GestureDetectorType from "GestureDetectorType" /* 6422 */;
+import GestureDetector from "GestureDetector" /* 6425 */;
+import InterceptingGestureDetector from "InterceptingGestureDetector" /* 6485 */;
+import VirtualDetector from "VirtualDetector" /* 6487 */;
+
+
+export const GestureDetectorType = GestureDetectorType.GestureDetectorType;
+export const GestureDetector = GestureDetector.GestureDetector;
+export const InterceptingGestureDetector = InterceptingGestureDetector.InterceptingGestureDetector;
+export const VirtualGestureDetector = VirtualDetector.VirtualDetector;

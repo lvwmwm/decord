@@ -1,10 +1,12 @@
-// Module ID: 5392
-// Function ID: 5393
+// Module ID: 5397
+// Function ID: 5398
 // Name: actions
 // Dependencies: [2]
 
-// Module 5392 (actions)
-const result = require("set").fileFinishedImporting("modules/app_database/system/AppDatabaseManager.Entry.tsx");
+// Module 5397 (actions)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/app_database/system/AppDatabaseManager.Entry.tsx");
 class Entry {
   constructor(arg0, arg1) {
     obj = Object.create(new.target.prototype);

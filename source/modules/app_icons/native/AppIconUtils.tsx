@@ -1,25 +1,23 @@
-// Module ID: 7945
-// Function ID: 7946
+// Module ID: 7984
+// Function ID: 7985
 // Name: fetchCurrentAppIcon
-// Dependencies: [32, 5, 19, 17, 7946, 676, 1924, 3, 500, 7973, 7947, 4761, 709, 698, 4094, 1236, 7360, 1625, 2]
+// Dependencies: [32, 5, 19, 17, 7985, 676, 1924, 3, 500, 8012, 7986, 4766, 709, 698, 4097, 1236, 7398, 1625, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons, useCurrentAppIcon
 
-// Module 7945 (fetchCurrentAppIcon)
-import _slicedToArray from "_slicedToArray";
-import closure_4 from "ME";
-import noop from "noop";
-import items from "items";
-import ME from "ME";
-import { PremiumTypes } from "GuildFeatures";
-import set from "set";
-import set from "noop";
+// Module 7984 (fetchCurrentAppIcon)
+import timestampDefault from "timestamp" /* 3 */;
+import isMetaQuest from "isMetaQuest" /* 1625 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4766 */;
+import openUserSettings from "openUserSettings" /* 7398 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "noop" /* 19 */;
+import items from "items" /* 7985 */;
+import ME from "ME" /* 676 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import set from "set" /* 500 */;
 
-let c10;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function fetchCurrentAppIcon() {
   const self = this;
   const apply = _fetchCurrentAppIcon.apply;
@@ -44,7 +42,7 @@ function _fetchCurrentAppIcon() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -59,17 +57,17 @@ function _fetchCurrentAppIcon() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp3;
+            closure_1 = tmp3;
             let callback = tmp7;
-            let c3 = 1;
-            let obj3 = outer1_13;
+            c3 = 1;
+            let obj3 = closure_1_13;
             let currentIcon;
-            if (outer1_13 != null) {
+            if (closure_1_13 != null) {
               currentIcon = obj3.getCurrentIcon();
             }
             c4 = 2;
             c5 = 1;
-            const obj1 = { value: null, done: false };
+            obj1 = { value: null, done: false };
             obj1[0] = currentIcon;
             return obj1;
           }
@@ -109,7 +107,7 @@ function _fetchCurrentAppIcon() {
       }
     }
   });
-  const _fetchCurrentAppIcon = tmp;
+  closure_15 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -121,31 +119,31 @@ function _fetchCurrentAppIcon() {
 function _setAppIcon() {
   const self = this;
   const tmp = callback2((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
-      let _slicedToArray = tmp3;
-      let dependencyMap = tmp5;
-      let c5 = 1;
-      let obj3 = outer1_13;
-      if (outer1_13 != null) {
+      closure_3 = tmp3;
+      dependencyMap = tmp5;
+      c5 = 1;
+      let obj3 = closure_1_13;
+      if (closure_1_13 != null) {
         const setIconResult = obj3.setIcon(tmp27);
       }
       yield setIconResult;
       if (1 === tmp8) {
         c5 = 0;
         dependencyMap = closure_4;
-        const obj1 = callback2(4094);
+        obj1 = callback2(4097);
         const obj2 = { key: "APP_ICON_LOGS_ERROR_MESSAGE_GENERIC", content: null };
         const intl = callback(1236).intl;
         obj2[1] = intl.string(callback(1236).t["c76eo/"]);
         obj1.open(obj2);
         const _HermesInternal = HermesInternal;
         logger.warn("Error changing users app icon: " + dependencyMap);
-        let c7 = 3;
+        c7 = 3;
       } else if (arg0 === 1) {
         c7 = 3;
         throw arg1;
@@ -156,7 +154,7 @@ function _setAppIcon() {
         obj3[0] = callback;
         obj3[1] = callback2;
         let TIER_2 = null;
-        if (callback !== callback(7947).FreemiumAppIconIds.DEFAULT) {
+        if (callback !== callback(7986).FreemiumAppIconIds.DEFAULT) {
           TIER_2 = TIER_2.TIER_2;
         }
         obj3[2] = TIER_2;
@@ -168,7 +166,7 @@ function _setAppIcon() {
       return arg1;
     })();
   });
-  const _setAppIcon = tmp;
+  closure_16 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -177,18 +175,18 @@ function _setAppIcon() {
   }
   return applyArgumentsResult;
 }
-({ getDefaultIcon: closure_6, getOfficialAlternateIcons: error, getLimitedAlternateIcons: metroImportAll } = items);
+({ getDefaultIcon: closure_6, getOfficialAlternateIcons: error, getLimitedAlternateIcons: closure_8 } = items);
 ({ AnalyticEvents: c9, UserSettingsSections: c10 } = ME);
-let closure_12 = new require("get ActivityIndicator")("AppIconUtils");
+let closure_12 = new timestampDefault("AppIconUtils");
 if (set.isAndroid()) {
   let DCDIconManager = require("enforcing").default;
 } else {
-  DCDIconManager = require("isMetaQuest").NativeModules.DCDIconManager;
+  DCDIconManager = require("get ActivityIndicator").NativeModules.DCDIconManager;
 }
 function useCurrentAppIcon() {
-  const tmp = callback(React.useState(_require(7947).FreemiumAppIconIds.DEFAULT), 2);
+  const tmp = callback(React.useState(_require(7986).FreemiumAppIconIds.DEFAULT), 2);
   _require = tmp[1];
-  const importDefault = React.useCallback(callback2(function*() {
+  importDefault = React.useCallback(callback2(function*() {
     if (c3 === 2) {
       c3 = 3;
       HermesBuiltin.throwTypeError();
@@ -200,7 +198,7 @@ function useCurrentAppIcon() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -215,13 +213,13 @@ function useCurrentAppIcon() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp5;
+            closure_1 = tmp5;
             let callback = tmp2;
             callback = undefined;
             c2 = 1;
             c3 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_14();
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_14();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -236,7 +234,7 @@ function useCurrentAppIcon() {
           callback = arg1;
           callback(callback);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = tmp;
@@ -244,11 +242,11 @@ function useCurrentAppIcon() {
       }
     }
   }), []);
-  importDefault(4761)(() => {
+  useMountLayoutEffectDefault(() => {
     callback();
     const subscription = callback(709).subscribe("APP_ICON_UPDATED", callback);
     return () => {
-      outer1_1(outer1_2[12]).unsubscribe("APP_ICON_UPDATED", closure_1);
+      closure_1_1(closure_1_2[12]).unsubscribe("APP_ICON_UPDATED", closure_1);
     };
   });
   return tmp[0];
@@ -268,13 +266,9 @@ export const setAppIcon = function setAppIcon(DEFAULT, premiumType) {
   return applyArgumentsResult;
 };
 export const useAppIcons = function useAppIcons() {
-  let closure_0;
-  let closure_1;
-  let tmp4;
-  let tmp6;
-  const currentAppIcon = callback(React.useState(_require(7947).FreemiumAppIconIds.DEFAULT), 2);
+  const currentAppIcon = callback(React.useState(_require(7986).FreemiumAppIconIds.DEFAULT), 2);
   _require = currentAppIcon[1];
-  const importDefault = React.useCallback(callback2(function*() {
+  importDefault = React.useCallback(callback2(function*() {
     if (c3 === 2) {
       c3 = 3;
       HermesBuiltin.throwTypeError();
@@ -286,7 +280,7 @@ export const useAppIcons = function useAppIcons() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -301,13 +295,13 @@ export const useAppIcons = function useAppIcons() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp5;
+            closure_1 = tmp5;
             let callback = tmp2;
             callback = undefined;
             c2 = 1;
             c3 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_14();
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_14();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -322,7 +316,7 @@ export const useAppIcons = function useAppIcons() {
           callback = arg1;
           callback(callback);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = tmp;
@@ -330,42 +324,41 @@ export const useAppIcons = function useAppIcons() {
       }
     }
   }), []);
-  importDefault(4761)(() => {
+  useMountLayoutEffectDefault(() => {
     callback();
     const subscription = callback(709).subscribe("APP_ICON_UPDATED", callback);
     return () => {
-      outer1_1(outer1_2[12]).unsubscribe("APP_ICON_UPDATED", closure_1);
+      closure_1_1(closure_1_2[12]).unsubscribe("APP_ICON_UPDATED", closure_1);
     };
   });
   [tmp4, closure_0] = callback(React.useState([]), 2);
   const tmp3 = callback(React.useState([]), 2);
   [tmp6, closure_1] = callback(React.useState([]), 2);
-  const dependencyMap = React.useCallback(callback2(function*() {
-    let closure_2 = tmp3;
-    let c4 = 1;
-    if (outer1_13 != null) {
-      const availableIcons = outer1_13.getAvailableIcons();
+  dependencyMap = React.useCallback(callback2(function*() {
+    closure_2 = tmp3;
+    c4 = 1;
+    if (closure_1_13 != null) {
+      const availableIcons = closure_1_13.getAvailableIcons();
     }
     yield availableIcons;
     if (1 === tmp7) {
       c4 = 0;
-      const outer1_3 = _slicedToArray;
-      const obj1 = outer1_1(outer1_2[14]);
+      obj1 = closure_1_1(closure_1_2[14]);
       const obj2 = { key: "APP_ICON_LOGS_ERROR_MESSAGE_GENERIC", content: null };
-      const intl = outer1_0(outer1_2[15]).intl;
-      obj2[1] = intl.string(outer1_0(outer1_2[15]).t["c76eo/"]);
+      const intl = closure_1_0(closure_1_2[15]).intl;
+      obj2[1] = intl.string(closure_1_0(closure_1_2[15]).t["c76eo/"]);
       obj1.open(obj2);
       const _HermesInternal = HermesInternal;
-      outer1_12.warn("Error fetching available app icons: " + outer1_3);
+      closure_1_12.warn("Error fetching available app icons: " + closure_3);
       let v0 = 3;
     } else if (arg0 === 1) {
       v0 = 3;
       throw arg1;
     } else if (arg0 !== 2) {
       let callback = arg1.map((id) => id.id);
-      const callback2 = outer1_7().filter((id) => closure_0.includes(id.id));
-      const arr = outer1_7();
-      closure_2 = outer1_8().filter((id) => closure_0.includes(id.id));
+      const callback2 = closure_1_7().filter((id) => closure_0.includes(id.id));
+      const arr = closure_1_7();
+      closure_2 = closure_1_8().filter((id) => closure_0.includes(id.id));
       callback2(closure_2);
       callback = 0;
       const items = [v0()];
@@ -374,25 +367,25 @@ export const useAppIcons = function useAppIcons() {
       callback = HermesBuiltin.arraySpread(callback2, sum);
       callback(items);
       c4 = 0;
-      const arr2 = outer1_8();
+      const arr2 = closure_1_8();
     }
     c4 = 0;
     return arg1;
   }), []);
-  importDefault(4761)(() => {
+  useMountLayoutEffectDefault(() => {
     dependencyMap();
     const subscription = callback(709).subscribe("APP_ICON_UPDATED", dependencyMap);
     return () => {
-      outer1_1(outer1_2[12]).unsubscribe("APP_ICON_UPDATED", closure_2);
+      closure_1_1(closure_1_2[12]).unsubscribe("APP_ICON_UPDATED", closure_2);
     };
   });
   return { officialAppIcons, limitedTimeAppIcons, currentAppIcon: currentAppIcon[0] };
 };
 export const navigateToAppIconSettings = function navigateToAppIconSettings() {
-  let obj = require(7360) /* openUserSettings */;
+  let obj = openUserSettings;
   obj = { screen: constants.APP_ICONS };
   obj.openUserSettings(obj);
 };
 export const isAppIconsSupported = function isAppIconsSupported() {
-  return !require(1625) /* isMetaQuest */.isMetaQuest();
+  return !isMetaQuest.isMetaQuest();
 };

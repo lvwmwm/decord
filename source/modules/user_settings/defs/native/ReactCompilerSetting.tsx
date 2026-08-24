@@ -1,16 +1,18 @@
-// Module ID: 15024
-// Function ID: 15025
-// Dependencies: [10669, 14870, 2]
+// Module ID: 15088
+// Function ID: 15089
+// Dependencies: [10708, 14934, 2]
 
-// Module 15024
-import createToggle from "createToggle";
+// Module 15088
+import set from "set" /* 2 */;
+import WrenchIcon from "WrenchIcon" /* 14934 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const obj = {
   useTitle() {
     return "React Compiler";
   },
   parent: null,
-  IconComponent: require("WrenchIcon").WrenchIcon,
+  IconComponent: WrenchIcon.WrenchIcon,
   useTrailing() {
     return "Enabled";
   },
@@ -23,7 +25,7 @@ const createStaticResult = createToggle.createStatic({
     return "React Compiler";
   },
   parent: null,
-  IconComponent: require("WrenchIcon").WrenchIcon,
+  IconComponent: WrenchIcon.WrenchIcon,
   useTrailing() {
     return "Enabled";
   },
@@ -31,6 +33,6 @@ const createStaticResult = createToggle.createStatic({
     return false;
   }
 });
-const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/ReactCompilerSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ReactCompilerSetting.tsx");
 
 export default createStaticResult;

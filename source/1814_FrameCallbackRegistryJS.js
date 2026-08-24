@@ -4,17 +4,19 @@
 // Dependencies: [41, 42, 1815, 1698]
 
 // Module 1814 (FrameCallbackRegistryJS)
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import _createClassDefault from "_createClass" /* 42 */;
+import isReanimated3 from "isReanimated3" /* 1698 */;
+import t from "t" /* 1815 */;
+import closure_3 from "_classCallCheck" /* 41 */;
 
 const FrameCallbackRegistryJS = global;
-const require = arg1;
+require = arg1;
 let closure_4 = { code: "function pnpm_FrameCallbackRegistryJSTs1(){const{callback,callbackId}=this.__closure;global._frameCallbackRegistry.registerFrameCallback(callback,callbackId);}" };
 let closure_5 = { code: "function pnpm_FrameCallbackRegistryJSTs2(){const{callbackId}=this.__closure;global._frameCallbackRegistry.unregisterFrameCallback(callbackId);}" };
 let closure_6 = { code: "function pnpm_FrameCallbackRegistryJSTs3(){const{callbackId,state}=this.__closure;global._frameCallbackRegistry.manageStateFrameCallback(callbackId,state);}" };
 class FrameCallbackRegistryJS {
   constructor() {
-    tmp = outer1_3(this, FrameCallbackRegistryJS);
+    tmp = closure_3(this, FrameCallbackRegistryJS);
     this.nextCallbackId = 0;
     obj = require("t");
     prepareUIRegistryResult = obj.prepareUIRegistry();
@@ -25,7 +27,7 @@ const items = [
   {
     key: "registerFrameCallback",
     value: function registerFrameCallback(arg0) {
-      let closure_0 = arg0;
+      closure_0 = arg0;
       if (arg0) {
         const self = this;
         const nextCallbackId = this.nextCallbackId;
@@ -50,20 +52,20 @@ const items = [
   {
     key: "unregisterFrameCallback",
     value: function unregisterFrameCallback(callbackId) {
-      let closure_0 = callbackId;
+      closure_0 = callbackId;
       const fn = function c() {
         const result = obj._frameCallbackRegistry.unregisterFrameCallback(obj);
       };
       fn.__closure = { callbackId };
       fn.__workletHash = 9182274559334;
       fn.__initData = closure_5;
-      require(1698) /* isReanimated3 */.runOnUI(fn)();
+      isReanimated3.runOnUI(fn)();
     }
   },
   {
     key: "manageStateFrameCallback",
     value: function manageStateFrameCallback(callbackId, state) {
-      let closure_0 = callbackId;
+      closure_0 = callbackId;
       const _require = state;
       const fn = function t() {
         const result = obj._frameCallbackRegistry.manageStateFrameCallback(obj, closure_1);
@@ -76,4 +78,4 @@ const items = [
   }
 ];
 
-export default _createClass(FrameCallbackRegistryJS, items);
+export default _createClassDefault(FrameCallbackRegistryJS, items);

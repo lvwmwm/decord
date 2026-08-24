@@ -1,16 +1,15 @@
-// Module ID: 6288
-// Function ID: 6289
+// Module ID: 6319
+// Function ID: 6320
 // Name: TABLE_ROW_HEIGHT
 // Dependencies: [17, 2]
 // Exports: getTableDividerWidth
 
-// Module 6288 (TABLE_ROW_HEIGHT)
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 6319 (TABLE_ROW_HEIGHT)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-let Platform;
-let StyleSheet;
 ({ Platform, StyleSheet } = get_ActivityIndicator);
-const result = require("set").fileFinishedImporting("design/components/TableRow/native/TableRowConstants.tsx");
+const result = set.fileFinishedImporting("design/components/TableRow/native/TableRowConstants.tsx");
 
 export const TABLE_ROW_HEIGHT = 60;
 export const TABLE_ROW_CONTENT_HEIGHT = 36;

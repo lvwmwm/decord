@@ -1,9 +1,12 @@
-// Module ID: 8125
-// Function ID: 8126
+// Module ID: 8164
+// Function ID: 8165
 // Name: set
-// Dependencies: [2, 4116]
+// Dependencies: [2, 4120]
 
-// Module 8125 (set)
-const result = require("set").fileFinishedImporting("modules/core/native/ReanimatedNativeView.tsx");
+// Module 8164 (set)
+import set from "set" /* 2 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4120 */;
 
-export { default } from "REAWorkaroundView";
+const result = set.fileFinishedImporting("modules/core/native/ReanimatedNativeView.tsx");
+
+export default REAWorkaroundViewDefault;

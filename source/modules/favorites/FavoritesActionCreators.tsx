@@ -1,27 +1,32 @@
-// Module ID: 9978
-// Function ID: 9979
+// Module ID: 10017
+// Function ID: 10018
 // Name: getNextPositionFromChannels
-// Dependencies: [5, 1383, 1395, 1391, 4021, 1979, 4197, 1394, 1429, 676, 505, 1306, 1337, 12, 9979, 9982, 4827, 1236, 1374, 11, 9985, 9986, 1913, 1222, 9987, 9988, 9990, 2]
+// Dependencies: [5, 1383, 1395, 1391, 4024, 1980, 4201, 1394, 1429, 676, 505, 1306, 1337, 12, 10018, 10021, 4832, 1236, 1374, 11, 10024, 10025, 1913, 1222, 10026, 10027, 10029, 2]
 // Exports: addFavoriteCategory, addFavoriteChannels, addFavoriteChannelsToCategory, removeFavoriteCategory, resetFavoritesGuild, setFavoriteCategoriesCollapsed, setFavoriteChannelNickname, setFavoritesGuildVisibility, setFavoritesGuildVisibilityFromSettings, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels
 
-// Module 9978 (getNextPositionFromChannels)
-import handleConnectionOpen from "handleConnectionOpen";
-import { resetFatigueCooldown } from "withContent";
-import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import closure_8 from "handleConnectionOpen";
-import closure_9 from "handleConnectionOpen";
-import initializeFromUserSettings from "initializeFromUserSettings";
-import ME from "ME";
-import { Permissions } from "sum";
-import date from "date";
+// Module 10017 (getNextPositionFromChannels)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import applyDefault from "apply" /* 12 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import create from "create" /* 1306 */;
+import updateUserGuildSettings from "updateUserGuildSettings" /* 1374 */;
+import setDefault from "set" /* 4832 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10018 */;
+import handleDCShownToUser from "handleDCShownToUser" /* 10026 */;
+import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 10027 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { resetFatigueCooldown } from "withContent" /* 1383 */;
+import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1395 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_8 from "handleConnectionOpen" /* 1980 */;
+import closure_9 from "handleConnectionOpen" /* 4201 */;
+import closure_10 from "initializeFromUserSettings" /* 1394 */;
+import ME from "ME" /* 676 */;
+import { Permissions } from "sum" /* 505 */;
+import date from "date" /* 1429 */;
 
-let closure_12;
-let closure_14;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function getNextPositionFromChannels(arg0) {
   let num = 0;
   let num2 = 0;
@@ -51,7 +56,7 @@ function cleanFavoriteChannels(obj) {
     if (null != tmp12) {
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      if (tmp12.type === require(1306) /* create */.FavoriteChannelType.CATEGORY) {
+      if (tmp12.type === create.FavoriteChannelType.CATEGORY) {
         continue;
       } else {
         let tmp5 = channel;
@@ -65,9 +70,9 @@ function cleanFavoriteChannels(obj) {
           }
           let isPrivateResult = channel.isPrivate();
           if (!isPrivateResult) {
-            let tmp9 = getUncachedChannelPermissions;
+            let tmp9 = closure_7;
             let tmp10 = Permissions;
-            isPrivateResult = getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel);
+            isPrivateResult = closure_7.can(Permissions.VIEW_CHANNEL, channel);
           }
           if (isPrivateResult) {
             continue;
@@ -109,7 +114,7 @@ function cleanupChannelParentId(arg0, arg1) {
       }
       let tmp4 = null != tmp3;
       if (tmp4) {
-        tmp4 = tmp3.type === require(1306) /* create */.FavoriteChannelType.CATEGORY;
+        tmp4 = tmp3.type === create.FavoriteChannelType.CATEGORY;
       }
       if (!tmp4) {
         tmp.parentId = tmp2;
@@ -118,22 +123,22 @@ function cleanupChannelParentId(arg0, arg1) {
   }
 }
 function countFavoritesAgainstLimit(arg0) {
-  return importDefault(12).filter(arg0, (type) => type.type !== callback(table[11]).FavoriteChannelType.CATEGORY).length;
+  return applyDefault.filter(arg0, (type) => type.type !== callback(table[11]).FavoriteChannelType.CATEGORY).length;
 }
 function getReachedLimit(arg0, arg1) {
   cleanFavoriteChannels(arg0);
-  let obj = importDefault(12);
+  let obj = applyDefault;
   if (obj.size(arg0) >= closure_12) {
     obj = { limit: null, canUpsell: false };
     obj[0] = tmp4;
     return obj;
   } else {
-    const favoritesAccess = require(9979) /* useFavoritesAccess */.getFavoritesAccess();
+    const favoritesAccess = useFavoritesAccess.getFavoritesAccess();
     const favoriteLimit = favoritesAccess.favoriteLimit;
     let tmp6 = null;
     if (favoriteLimit > 0) {
       tmp6 = null;
-      if (arg1 !== require(1306) /* create */.FavoriteChannelType.CATEGORY) {
+      if (arg1 !== create.FavoriteChannelType.CATEGORY) {
         tmp6 = null;
         if (tmp2Result.filter(arg0, (type) => type.type !== callback(table[11]).FavoriteChannelType.CATEGORY).length >= favoriteLimit) {
           obj = { limit: null, canUpsell: null };
@@ -141,27 +146,27 @@ function getReachedLimit(arg0, arg1) {
           obj[1] = tmp9;
           tmp6 = obj;
         }
-        tmp2Result = tmp2(12);
+        tmp2Result = applyDefault;
       }
     }
     return tmp6;
   }
-  tmp2 = importDefault;
+  const tmp2 = importDefault;
 }
 function showLimitReachedAlert(limit) {
   limit = limit.limit;
   if (limit.canUpsell) {
-    tmp(9982)(limit);
+    tmp(10021)(limit);
   } else {
     let obj = { title: null, body: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t["+XYXtZ"]);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t["+XYXtZ"]);
+    const intl2 = getSystemLocale.intl;
     obj = { count: null };
     obj[0] = limit;
-    obj[1] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.JaIyFi, obj);
-    tmp(4827).show(obj);
-    const tmpResult = tmp(4827);
+    obj[1] = intl2.formatToPlainString(getSystemLocale.t.JaIyFi, obj);
+    tmp(4832).show(obj);
+    const tmpResult = tmp(4832);
   }
 }
 function onSaveFailed(status) {
@@ -170,38 +175,36 @@ function onSaveFailed(status) {
     status = status.status;
   }
   if (403 === status) {
-    const PreloadedUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = updateUserGuildSettings.PreloadedUserSettingsActionCreators;
     const ifNecessary = PreloadedUserSettingsActionCreators.loadIfNecessary(true);
     ifNecessary.catch(closure_13);
-    let obj = importDefault(4827);
+    let obj = setDefault;
     obj = { title: null, body: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.iufib1);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.eAn6z2);
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t.iufib1);
+    const intl2 = getSystemLocale.intl;
+    obj[1] = intl2.string(getSystemLocale.t.eAn6z2);
     obj.show(obj);
   }
 }
 function updateFavoritesProto(arg0) {
-  let batched;
-  let update;
   ({ update, batched } = arg0);
   if (batched === undefined) {
     batched = false;
   }
-  const PreloadedUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
-  const UserSettingsDelay = require(1374) /* updateUserGuildSettings */.UserSettingsDelay;
+  const PreloadedUserSettingsActionCreators = updateUserGuildSettings.PreloadedUserSettingsActionCreators;
+  const UserSettingsDelay = updateUserGuildSettings.UserSettingsDelay;
   return PreloadedUserSettingsActionCreators.updateAsync("favorites", update, batched ? UserSettingsDelay.FREQUENT_USER_ACTION : UserSettingsDelay.INFREQUENT_USER_ACTION, onSaveFailed);
 }
 function createFavoriteCategory(arg0, nickname) {
   let fromTimestampResult = arg2;
   if (arg2 === undefined) {
-    let obj = importDefault(11);
+    let obj = DISCORD_EPOCHDefault;
     const _Date = Date;
     fromTimestampResult = obj.fromTimestamp(Date.now());
   }
-  const FavoriteChannel = require(1306) /* create */.FavoriteChannel;
-  obj = { nickname, type: require(1306) /* create */.FavoriteChannelType.CATEGORY, position: null, parentId: null };
+  const FavoriteChannel = create.FavoriteChannel;
+  obj = { nickname, type: create.FavoriteChannelType.CATEGORY, position: null, parentId: null };
   let num = 0;
   let num2 = 0;
   const keys = Object.keys();
@@ -239,11 +242,11 @@ function addFavoriteChannelsToParent() {
 function _addFavoriteChannelsToParent() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c5 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c5 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c6 === 2) {
         c6 = 3;
@@ -256,7 +259,7 @@ function _addFavoriteChannelsToParent() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -272,11 +275,11 @@ function _addFavoriteChannelsToParent() {
               return obj;
             } else {
               let findCategoryIdByName = tmp2;
-              let handleConnectionOpen = tmp3;
-              let closure_0 = callback;
+              closure_3 = tmp3;
+              closure_0 = callback;
               callback = found;
               found = undefined;
-              handleConnectionOpen = undefined;
+              closure_3 = undefined;
               findCategoryIdByName = function findCategoryIdByName(favoriteChannels, categoryName) {
                 const trimmed = categoryName.trim();
                 for (const key10009 in arg0) {
@@ -298,10 +301,10 @@ function _addFavoriteChannelsToParent() {
                   continue;
                 }
               };
-              found = closure_0.filter((arg0) => !initializeFromUserSettings.isFavorite(arg0));
+              found = closure_0.filter((arg0) => !closure_10.isFavorite(arg0));
               if (0 !== found.length) {
-                handleConnectionOpen = !outer1_10.favoriteGuildEnabled;
-                const obj1 = { update: null };
+                closure_3 = !closure_1_10.favoriteGuildEnabled;
+                obj1 = { update: null };
                 obj1[0] = function update(favoriteChannels) {
                   let flag = false;
                   let parentId = null;
@@ -309,7 +312,7 @@ function _addFavoriteChannelsToParent() {
                     parentId = tmp.parentId;
                   }
                   if (parentId == null) {
-                    parentId = outer1_11;
+                    parentId = closure_1_11;
                   }
                   let tmp4 = parentId;
                   const iter = found[Symbol.iterator]();
@@ -318,12 +321,12 @@ function _addFavoriteChannelsToParent() {
                     let tmp7 = nextResult;
                     let tmp9 = callback;
                     let tmp10 = found;
-                    let tmp8 = outer1_20;
-                    let tmp11 = outer1_20(favoriteChannels.favoriteChannels, callback(found[11]).FavoriteChannelType.REFERENCE_ORIGINAL);
+                    let tmp8 = closure_1_20;
+                    let tmp11 = closure_1_20(favoriteChannels.favoriteChannels, callback(found[11]).FavoriteChannelType.REFERENCE_ORIGINAL);
                     let tmp12 = tmp11;
                     if (null != tmp11) {
-                      let tmp53 = outer1_21;
-                      let tmp54 = outer1_21(tmp11);
+                      let tmp53 = closure_1_21;
+                      let tmp54 = closure_1_21(tmp11);
                       let tmp55 = flag;
                       if (flag) {
                         let tmp57 = iter;
@@ -344,18 +347,18 @@ function _addFavoriteChannelsToParent() {
                           let tmp15 = tmp63;
                           let tmp16 = findCategoryIdByName(favoriteChannels.favoriteChannels, tmp64.categoryName);
                           if (tmp16 == null) {
-                            let tmp17 = outer1_24;
+                            let tmp17 = closure_1_24;
                             let tmp18 = tmp63;
-                            tmp16 = outer1_24(favoriteChannels.favoriteChannels, tmp64.categoryName);
+                            tmp16 = closure_1_24(favoriteChannels.favoriteChannels, tmp64.categoryName);
                           }
                           tmp4 = tmp16;
                           let tmp19 = callback;
                           let tmp20 = found;
                           let tmp8Result = tmp8(favoriteChannels.favoriteChannels, callback(found[11]).FavoriteChannelType.REFERENCE_ORIGINAL);
                           if (null != tmp8Result) {
-                            let tmp23 = outer1_21;
+                            let tmp23 = closure_1_21;
                             let tmp24 = tmp8Result;
-                            let tmp25 = outer1_21(tmp22);
+                            let tmp25 = closure_1_21(tmp22);
                             let tmp26 = iter;
                             iter.return();
                             return false;
@@ -384,16 +387,16 @@ function _addFavoriteChannelsToParent() {
                         obj = UInt32Value.create(obj);
                       }
                       obj[2] = obj;
-                      let tmp39 = outer1_16;
-                      obj[3] = outer1_16(favoriteChannels.favoriteChannels);
+                      let tmp39 = closure_1_16;
+                      obj[3] = closure_1_16(favoriteChannels.favoriteChannels);
                       let tmp40 = tmp4;
                       obj[4] = tmp4;
                       favoriteChannels.favoriteChannels[tmp7] = FavoriteChannel.create(obj);
-                      let tmp41 = outer1_17;
-                      let tmp42 = outer1_17(favoriteChannels.favoriteChannels);
-                      let tmp43 = outer1_18;
+                      let tmp41 = closure_1_17;
+                      let tmp42 = closure_1_17(favoriteChannels.favoriteChannels);
+                      let tmp43 = closure_1_18;
                       let tmp44 = nextResult;
-                      let tmp45 = outer1_18(favoriteChannels.favoriteChannels, tmp7);
+                      let tmp45 = closure_1_18(favoriteChannels.favoriteChannels, tmp7);
                       flag = true;
                       let tmp46 = callback;
                       let tmp47 = found;
@@ -407,12 +410,12 @@ function _addFavoriteChannelsToParent() {
                       if (type == null) {
                         type = null;
                       }
-                      let tmp51 = outer1_19;
-                      let result = obj3.trackFavoritesGuildAddToFavorites(tmp48, type, outer1_19(favoriteChannels.favoriteChannels));
+                      let tmp51 = closure_1_19;
+                      let result = obj3.trackFavoritesGuildAddToFavorites(tmp48, type, closure_1_19(favoriteChannels.favoriteChannels));
                       continue;
                     }
                     if (flag) {
-                      flag = handleConnectionOpen;
+                      flag = closure_3;
                     }
                     if (flag) {
                       let tmp58 = callback;
@@ -430,7 +433,7 @@ function _addFavoriteChannelsToParent() {
                 c5 = 1;
                 c6 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = outer1_23(obj1);
+                obj2[0] = closure_1_23(obj1);
                 return obj2;
               } else {
                 c6 = 3;
@@ -440,7 +443,7 @@ function _addFavoriteChannelsToParent() {
             c6 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            if (found.some((arg0) => initializeFromUserSettings.isFavorite(arg0))) {
+            if (found.some((arg0) => closure_10.isFavorite(arg0))) {
               callback(table[21])();
             }
           }
@@ -455,7 +458,7 @@ function _addFavoriteChannelsToParent() {
       }
     })();
   });
-  const _addFavoriteChannelsToParent = tmp;
+  closure_26 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -467,13 +470,10 @@ function _addFavoriteChannelsToParent() {
 function _addFavoriteChannels() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
       if (c5 === 2) {
         c5 = 3;
         HermesBuiltin.throwTypeError();
@@ -485,7 +485,7 @@ function _addFavoriteChannels() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -500,7 +500,7 @@ function _addFavoriteChannels() {
               obj[0] = arg1;
               return obj;
             } else {
-              let handleConnectionOpen = tmp5;
+              closure_3 = tmp5;
               c2 = tmp2;
               c0 = undefined;
               c1 = undefined;
@@ -516,7 +516,7 @@ function _addFavoriteChannels() {
               throw arg1;
             } else if (arg0 === 2) {
               c5 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -541,7 +541,7 @@ function _addFavoriteChannels() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c5 = tmp;
@@ -552,7 +552,7 @@ function _addFavoriteChannels() {
     iter.next();
     return iter;
   });
-  const _addFavoriteChannels = tmp;
+  closure_27 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -562,8 +562,6 @@ function _addFavoriteChannels() {
   return applyArgumentsResult;
 }
 function removeFavoriteChannel(closure_0, arg1) {
-  let batched;
-  let update;
   const _require = closure_0;
   let obj = arg1;
   if (arg1 === undefined) {
@@ -574,7 +572,7 @@ function removeFavoriteChannel(closure_0, arg1) {
     flag = true;
   }
   let favorite;
-  favorite = initializeFromUserSettings.getFavorite(closure_0);
+  favorite = closure_10.getFavorite(closure_0);
   if (null != favorite) {
     obj = { update: null };
     obj[0] = function update(favoriteChannels) {
@@ -586,18 +584,18 @@ function removeFavoriteChannel(closure_0, arg1) {
           if (arg0.favoriteChannels[key10014].parentId !== callback) {
             continue;
           } else {
-            let tmp3 = outer1_11;
-            arg0.favoriteChannels[key10014].parentId = outer1_11;
+            let tmp3 = closure_1_11;
+            arg0.favoriteChannels[key10014].parentId = closure_1_11;
             continue;
           }
           continue;
         }
       }
-      outer1_17(favoriteChannels.favoriteChannels);
+      closure_1_17(favoriteChannels.favoriteChannels);
       if (flag) {
         let tmp9 = null;
         if (favorite.type !== callback(favorite[11]).FavoriteChannelType.CATEGORY) {
-          const channel = outer1_6.getChannel(callback);
+          const channel = closure_1_6.getChannel(callback);
           let type;
           if (channel != null) {
             type = channel.type;
@@ -636,9 +634,9 @@ function removeFavoriteChannel(closure_0, arg1) {
 function _addFavoriteCategory() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -651,7 +649,7 @@ function _addFavoriteCategory() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -666,21 +664,21 @@ function _addFavoriteCategory() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_2 = tmp2;
-              let closure_1 = tmp3;
+              closure_2 = tmp2;
+              closure_1 = tmp3;
               let callback;
               closure_1 = undefined;
               if (obj8.isFavoritesGuildCategoryNameValid(callback)) {
                 callback = str2.trim();
-                let obj2 = outer1_1(tmp23[19]);
+                let obj2 = closure_1_1(tmp23[19]);
                 const _Date = Date;
                 closure_1 = obj2.fromTimestamp(Date.now());
-                let obj1 = { update: null };
+                obj1 = { update: null };
                 obj1[0] = function update(favoriteChannels) {
                   favoriteChannels = favoriteChannels.favoriteChannels;
-                  outer1_17(favoriteChannels);
+                  closure_1_17(favoriteChannels);
                   let obj = callback2(tmp2[13]);
-                  if (obj.size(favoriteChannels) >= outer1_12) {
+                  if (obj.size(favoriteChannels) >= closure_1_12) {
                     obj = { limit: null, canUpsell: false };
                     obj[0] = tmp5;
                     let tmp6 = obj;
@@ -709,7 +707,7 @@ function _addFavoriteCategory() {
                       tmp4(tmp2[15])(limit);
                     } else {
                       tmp4Result = tmp4(tmp2[16]);
-                      const obj1 = { title: null, body: null };
+                      obj1 = { title: null, body: null };
                       const intl = tmp(tmp2[17]).intl;
                       obj1[0] = intl.string(tmp(tmp2[17]).t["+XYXtZ"]);
                       const intl2 = tmp(tmp2[17]).intl;
@@ -720,21 +718,21 @@ function _addFavoriteCategory() {
                     }
                     return false;
                   } else {
-                    outer1_24(favoriteChannels.favoriteChannels, callback, callback2);
+                    closure_1_24(favoriteChannels.favoriteChannels, callback, callback2);
                   }
                 };
                 c3 = 1;
                 c4 = 1;
                 obj2 = { value: null, done: false };
-                obj2[0] = outer1_23(obj1);
+                obj2[0] = closure_1_23(obj1);
                 return obj2;
               } else {
                 c4 = 3;
                 return { value: null, done: true };
               }
-              obj8 = callback(outer1_2[22]);
+              obj8 = callback(closure_1_2[22]);
               str2 = callback;
-              tmp23 = outer1_2;
+              tmp23 = closure_1_2;
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -761,7 +759,7 @@ function _addFavoriteCategory() {
       }
     })();
   });
-  const _addFavoriteCategory = tmp;
+  closure_29 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -773,13 +771,10 @@ function _addFavoriteCategory() {
 function _addFavoriteChannelsToCategory() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
       if (c4 === 2) {
         c4 = 3;
         HermesBuiltin.throwTypeError();
@@ -791,7 +786,7 @@ function _addFavoriteChannelsToCategory() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -822,7 +817,7 @@ function _addFavoriteChannelsToCategory() {
               throw arg1;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -844,7 +839,7 @@ function _addFavoriteChannelsToCategory() {
             return obj;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c4 = tmp;
@@ -855,7 +850,7 @@ function _addFavoriteChannelsToCategory() {
     iter.next();
     return iter;
   });
-  const _addFavoriteChannelsToCategory = tmp;
+  closure_30 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -866,7 +861,7 @@ function _addFavoriteChannelsToCategory() {
 }
 ({ FAVORITES_UNCATEGORIZED_PARENT_ID: unpackModuleId, MAX_FAVORITE_CHANNELS: closure_12 } = require("date"));
 ({ NOOP: map1, Routes: closure_14 } = ME);
-let result = require("createChannelRecord").fileFinishedImporting("modules/favorites/FavoritesActionCreators.tsx");
+let result = require("set").fileFinishedImporting("modules/favorites/FavoritesActionCreators.tsx");
 
 export const addFavoriteChannels = function addFavoriteChannels(arg0) {
   const self = this;
@@ -880,11 +875,9 @@ export const addFavoriteChannels = function addFavoriteChannels(arg0) {
 };
 export { removeFavoriteChannel };
 export const setFavoriteChannelNickname = function setFavoriteChannelNickname(categoryId, trimmed) {
-  let batched;
-  let update;
   const _require = categoryId;
-  let closure_1 = trimmed;
-  if (initializeFromUserSettings.isFavorite(categoryId)) {
+  closure_1 = trimmed;
+  if (closure_10.isFavorite(categoryId)) {
     const obj = { update: null };
     obj[0] = function update(arg0) {
       let str = closure_1;
@@ -928,7 +921,7 @@ export const removeFavoriteCategory = function removeFavoriteCategory(closure_0)
 };
 export const setFavoriteCategoriesCollapsed = function setFavoriteCategoriesCollapsed(arg0, id) {
   const _require = arg0;
-  let closure_1 = id;
+  closure_1 = id;
   const PreloadedUserSettingsActionCreators = _require(1374).PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("favorites", function update(favoriteChannels) {
     let tmp = closure_1;
@@ -943,8 +936,6 @@ export const setFavoriteCategoriesCollapsed = function setFavoriteCategoriesColl
   }, _require(1374).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);
 };
 export const updateFavoriteChannels = function updateFavoriteChannels(dnDUpdates) {
-  let batched;
-  let update;
   const _require = dnDUpdates;
   if (0 !== dnDUpdates.length) {
     const obj = { update: null };
@@ -965,16 +956,16 @@ export const updateFavoriteChannels = function updateFavoriteChannels(dnDUpdates
           let tmp8 = nextResult;
           let parent_id = tmp3.parent_id;
           if (parent_id == null) {
-            parent_id = outer1_11;
+            parent_id = closure_1_11;
           }
           favoriteChannels.favoriteChannels[id].parentId = parent_id;
-          let tmp9 = outer1_18;
+          let tmp9 = closure_1_18;
           let tmp10 = id;
-          let tmp11 = outer1_18(favoriteChannels.favoriteChannels, id);
+          let tmp11 = closure_1_18(favoriteChannels.favoriteChannels, id);
         }
         continue;
       }
-      const result = dnDUpdates(outer1_2[20]).trackFavoritesGuildOrderUpdated();
+      const result = dnDUpdates(closure_1_2[20]).trackFavoritesGuildOrderUpdated();
     };
     ({ update, batched } = obj);
     if (batched === undefined) {
@@ -987,34 +978,32 @@ export const updateFavoriteChannels = function updateFavoriteChannels(dnDUpdates
   }
 };
 export const updateFavoriteChannelParent = function updateFavoriteChannelParent(arg0, arg1) {
-  let batched;
-  let update;
   const _require = arg0;
-  let closure_1 = arg1;
+  closure_1 = arg1;
   ({ update, batched } = {
     update(favoriteChannels) {
       let tmp2 = closure_1;
       if (closure_1 == null) {
-        tmp2 = outer1_11;
+        tmp2 = closure_1_11;
       }
       favoriteChannels.favoriteChannels[callback].parentId = tmp2;
       favoriteChannels = favoriteChannels.favoriteChannels;
       if (null != favoriteChannels[callback]) {
-        if (tmp3.parentId !== outer1_11) {
+        if (tmp3.parentId !== closure_1_11) {
           let tmp5 = null;
           if (null != tmp3.parentId) {
             tmp5 = favoriteChannels[tmp3.parentId];
           }
           let tmp6 = null != tmp5;
           if (tmp6) {
-            tmp6 = tmp5.type === callback(outer1_2[11]).FavoriteChannelType.CATEGORY;
+            tmp6 = tmp5.type === callback(closure_1_2[11]).FavoriteChannelType.CATEGORY;
           }
           if (!tmp6) {
             tmp3.parentId = tmp4;
           }
         }
       }
-      const result = callback(outer1_2[20]).trackFavoritesGuildOrderUpdated();
+      const result = callback(closure_1_2[20]).trackFavoritesGuildOrderUpdated();
     }
   });
   if (batched === undefined) {
@@ -1025,8 +1014,6 @@ export const updateFavoriteChannelParent = function updateFavoriteChannelParent(
   PreloadedUserSettingsActionCreators.updateAsync("favorites", update, batched ? UserSettingsDelay.FREQUENT_USER_ACTION : UserSettingsDelay.INFREQUENT_USER_ACTION, onSaveFailed);
 };
 export const toggleFavoriteGuildMuted = function toggleFavoriteGuildMuted() {
-  let batched;
-  let update;
   ({ update, batched } = {
     update(muted) {
       muted.muted = !muted.muted;
@@ -1035,8 +1022,8 @@ export const toggleFavoriteGuildMuted = function toggleFavoriteGuildMuted() {
   if (batched === undefined) {
     batched = false;
   }
-  const PreloadedUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
-  const UserSettingsDelay = require(1374) /* updateUserGuildSettings */.UserSettingsDelay;
+  const PreloadedUserSettingsActionCreators = updateUserGuildSettings.PreloadedUserSettingsActionCreators;
+  const UserSettingsDelay = updateUserGuildSettings.UserSettingsDelay;
   PreloadedUserSettingsActionCreators.updateAsync("favorites", update, batched ? UserSettingsDelay.FREQUENT_USER_ACTION : UserSettingsDelay.INFREQUENT_USER_ACTION, onSaveFailed);
 };
 export const resetFavoritesGuild = function resetFavoritesGuild() {
@@ -1047,7 +1034,7 @@ export const resetFavoritesGuild = function resetFavoritesGuild() {
       arg0.muted = false;
     }
   });
-  const result = require(9987) /* handleDCShownToUser */.resetDismissibleContentFrameworkStore();
+  const result = handleDCShownToUser.resetDismissibleContentFrameworkStore();
   resetFatigueCooldown();
   const obj = {
     update(arg0) {
@@ -1056,19 +1043,17 @@ export const resetFavoritesGuild = function resetFavoritesGuild() {
       arg0.muted = false;
     }
   };
-  const obj2 = require(9987) /* handleDCShownToUser */;
-  const result1 = require(9988) /* hasOfferedFavoritesGuildOnboarding */.resetHasOfferedFavoritesGuildOnboarding();
+  const obj2 = handleDCShownToUser;
+  const result1 = hasOfferedFavoritesGuildOnboarding.resetHasOfferedFavoritesGuildOnboarding();
   for (const item10024 of tmp5) {
     let tmp6 = require;
     let tmp7 = dependencyMap;
-    let obj4 = require(1374) /* updateUserGuildSettings */;
+    let obj4 = updateUserGuildSettings;
     let result2 = obj4.removeDismissedContent(item10024);
     continue;
   }
 };
 export const setFavoritesGuildVisibility = function setFavoritesGuildVisibility(arg0, server_context_menu) {
-  let batched;
-  let update;
   const _require = arg0;
   let str = server_context_menu;
   if (server_context_menu === undefined) {
@@ -1083,11 +1068,11 @@ export const setFavoritesGuildVisibility = function setFavoritesGuildVisibility(
       if (value === callback) {
         return false;
       } else {
-        const BoolValue = callback(outer1_2[12]).BoolValue;
+        const BoolValue = callback(closure_1_2[12]).BoolValue;
         const obj = { value: null };
         obj[0] = tmp2;
         guildVisible.guildVisible = BoolValue.create(obj);
-        const result = callback(outer1_2[20]).trackFavoritesGuildVisibilitySettingToggled(settings_page, tmp2);
+        const result = callback(closure_1_2[20]).trackFavoritesGuildVisibilitySettingToggled(settings_page, tmp2);
       }
     }
   });
@@ -1099,8 +1084,6 @@ export const setFavoritesGuildVisibility = function setFavoritesGuildVisibility(
   PreloadedUserSettingsActionCreators.updateAsync("favorites", update, batched ? UserSettingsDelay.FREQUENT_USER_ACTION : UserSettingsDelay.INFREQUENT_USER_ACTION, onSaveFailed);
 };
 export const setFavoritesGuildVisibilityFromSettings = function setFavoritesGuildVisibilityFromSettings(arg0) {
-  let batched;
-  let update;
   const _require = arg0;
   const settings_page = "settings_page";
   ({ update, batched } = {
@@ -1112,11 +1095,11 @@ export const setFavoritesGuildVisibilityFromSettings = function setFavoritesGuil
       if (value === callback) {
         return false;
       } else {
-        const BoolValue = callback(outer1_2[12]).BoolValue;
+        const BoolValue = callback(closure_1_2[12]).BoolValue;
         const obj = { value: null };
         obj[0] = tmp2;
         guildVisible.guildVisible = BoolValue.create(obj);
-        const result = callback(outer1_2[20]).trackFavoritesGuildVisibilitySettingToggled(settings_page, tmp2);
+        const result = callback(closure_1_2[20]).trackFavoritesGuildVisibilitySettingToggled(settings_page, tmp2);
       }
     }
   });

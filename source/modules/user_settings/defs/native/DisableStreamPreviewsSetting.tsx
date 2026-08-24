@@ -1,51 +1,55 @@
-// Module ID: 15005
-// Function ID: 15006
+// Module ID: 15069
+// Function ID: 15070
 // Name: toggle
-// Dependencies: [8198, 4066, 10669, 1236, 2]
+// Dependencies: [8238, 4069, 10708, 1236, 2]
 
-// Module 15005 (toggle)
-import createToggle from "createToggle";
+// Module 15069 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["1CzWUK"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["1CzWUK"]);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.jTNPHM);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.jTNPHM);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
+  parent: MobileUserSettings.MobileUserSettings.VOICE,
   useValue() {
-    const DisableStreamPreviews = require(4066) /* explicitContentFromProto */.DisableStreamPreviews;
+    const DisableStreamPreviews = explicitContentFromProto.DisableStreamPreviews;
     let flag = DisableStreamPreviews.useSetting();
     if (flag == null) {
       flag = false;
     }
     return flag;
   },
-  onValueChange: require("explicitContentFromProto").DisableStreamPreviews.updateSetting
+  onValueChange: explicitContentFromProto.DisableStreamPreviews.updateSetting
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["1CzWUK"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["1CzWUK"]);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.jTNPHM);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.jTNPHM);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.VOICE,
+  parent: MobileUserSettings.MobileUserSettings.VOICE,
   useValue() {
-    const DisableStreamPreviews = require(4066) /* explicitContentFromProto */.DisableStreamPreviews;
+    const DisableStreamPreviews = explicitContentFromProto.DisableStreamPreviews;
     let flag = DisableStreamPreviews.useSetting();
     if (flag == null) {
       flag = false;
     }
     return flag;
   },
-  onValueChange: require("explicitContentFromProto").DisableStreamPreviews.updateSetting
+  onValueChange: explicitContentFromProto.DisableStreamPreviews.updateSetting
 };
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DisableStreamPreviewsSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/DisableStreamPreviewsSetting.tsx");
 
 export default toggle;

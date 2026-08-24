@@ -1,25 +1,25 @@
-// Module ID: 11210
-// Function ID: 11211
+// Module ID: 11261
+// Function ID: 11262
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 8449, 1391, 1388, 4196, 1377, 589, 11211, 11216, 7366, 2]
+// Dependencies: [32, 8488, 1391, 1388, 4200, 1377, 589, 11262, 11267, 7404, 2]
 // Exports: default
 
-// Module 11210 (useAppLauncherOnboardingContent)
-import _slicedToArray from "_slicedToArray";
-import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { DismissibleContentGroupName as closure_6 } from "ContentDismissActionType";
+// Module 11261 (useAppLauncherOnboardingContent)
+import resultDefault from "result" /* 11267 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "handleUserSettingsProtoStoreChange" /* 8488 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import { DismissibleContentGroupName as closure_6 } from "ContentDismissActionType" /* 1388 */;
 
 const require = arg1;
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useAppLauncherOnboardingContent.tsx");
+let result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useAppLauncherOnboardingContent.tsx");
 
 export default function useAppLauncherOnboardingContent(channelId) {
   channelId = channelId.channelId;
   let items = [];
-  let obj = { channel: null };
-  const items1 = [ensureGuildLoaded];
-  obj[0] = channelId(589).useStateFromStores(items1, () => outer1_5.getChannel(channelId));
-  const tmp3 = importDefault(11216)({ channelId });
+  let obj = { channel: channelId(589).useStateFromStores(items1, () => closure_1_5.getChannel(channelId)) };
+  items1 = [closure_5];
+  const tmp3 = resultDefault({ channelId });
   if (tmp3.canShowBotsBanner) {
     items.push(tmp(1377).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
   }
@@ -28,12 +28,12 @@ export default function useAppLauncherOnboardingContent(channelId) {
     const DismissibleContent = tmp(1377).DismissibleContent;
     if ((function useHasUsedActivities(channel) {
       channel = channel.channel;
-      let obj = channelId(4196);
+      let obj = channelId(4200);
       let result = obj.useIsDismissibleContentDismissed_UNSAFE(channelId(1377).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
-      const result1 = channelId(4196).useIsDismissibleContentDismissed_UNSAFE(channelId(1377).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
-      const obj2 = channelId(4196);
+      const result1 = channelId(4200).useIsDismissibleContentDismissed_UNSAFE(channelId(1377).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+      const obj2 = channelId(4200);
       const tmp = channelId;
-      const items = [handleUserSettingsProtoStoreChange];
+      const items = [closure_4];
       const stateFromStores = channelId(589).useStateFromStores(items, () => applicationFrecencyWithoutLoadingLatest.getApplicationFrecencyWithoutLoadingLatest());
       let guild_id;
       if (channel != null) {
@@ -45,7 +45,7 @@ export default function useAppLauncherOnboardingContent(channelId) {
         result = result1;
       }
       obj[1] = !result;
-      const activityApplications = tmp(11211).useActivityApplications(obj);
+      const activityApplications = tmp(11262).useActivityApplications(obj);
       let flag = false;
       for (const item10042 of activityApplications) {
         if (null != stateFromStores.getEntry(item10042.id)) {
@@ -65,7 +65,7 @@ export default function useAppLauncherOnboardingContent(channelId) {
     }
   }
   let obj2 = channelId(589);
-  let tmp7 = callback(channelId(7366).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
+  let tmp7 = callback(channelId(7404).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
   obj = { visibleContent: tmp7[0], markAsDismissed: tmp7[1] };
   return obj;
 };

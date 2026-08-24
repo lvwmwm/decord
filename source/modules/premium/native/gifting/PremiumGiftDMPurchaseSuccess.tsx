@@ -1,43 +1,44 @@
-// Module ID: 10386
-// Function ID: 10387
+// Module ID: 10425
+// Function ID: 10426
 // Name: PremiumGiftDMSuccessBody
-// Dependencies: [19, 17, 21, 4661, 712, 9625, 1500, 9592, 10296, 4745, 1236, 2399, 9599, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 9662, 1500, 9629, 10335, 4750, 1236, 2400, 9636, 4739, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 10386 (PremiumGiftDMSuccessBody)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10425 (PremiumGiftDMSuccessBody)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 9636 */;
+import NativeGiftContextProvider from "NativeGiftContextProvider" /* 9662 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { title: null, description: null };
-createCacheKey = { marginTop: require("Themes").space.PX_24, textAlign: "center" };
+createCacheKey = { marginTop: ThemesDefault.space.PX_24, textAlign: "center" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginTop: require("Themes").space.PX_8, textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { marginTop: require("Themes").space.PX_8, textAlign: "center" };
-const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftDMPurchaseSuccess.tsx");
+createCacheKey[1] = { marginTop: ThemesDefault.space.PX_8, textAlign: "center" };
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { marginTop: ThemesDefault.space.PX_8, textAlign: "center" };
+const result = require("set").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftDMPurchaseSuccess.tsx");
 
 export default function PremiumGiftDMSuccessBody() {
-  const tmp = createCacheKey();
-  let obj = require(9625) /* NativeGiftContextProvider */;
+  const tmp = callback3();
+  let obj = NativeGiftContextProvider;
   obj = { children: null };
-  obj = { children: null };
-  obj[0] = callback(importDefault(9599), { giftStyle: obj.useNativeGiftContext().giftStyle });
+  obj = { children: callback(PremiumGiftBackgroundAnimationDefault, { giftStyle: obj.useNativeGiftContext().giftStyle }) };
   const items = [callback(View, obj), , ];
-  const obj1 = { style: tmp.title, variant: "heading-lg/bold", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.MqZXbv);
-  items[1] = callback(require(4734) /* Text */.Text, obj1);
+  obj1 = { style: tmp.title, variant: "heading-lg/bold", children: null };
+  const intl = getSystemLocale.intl;
+  obj1[2] = intl.string(getSystemLocale.t.MqZXbv);
+  items[1] = callback(Text.Text, obj1);
   const obj2 = { style: tmp.description, variant: "text-md/medium", children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj2[2] = intl2.string(require(1236) /* getSystemLocale */.t.Y1keV0);
-  items[2] = callback(require(4734) /* Text */.Text, obj2);
+  const intl2 = getSystemLocale.intl;
+  obj2[2] = intl2.string(getSystemLocale.t.Y1keV0);
+  items[2] = callback(Text.Text, obj2);
   obj[0] = items;
   return callback2(closure_6, obj);
 };

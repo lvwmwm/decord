@@ -1,27 +1,28 @@
-// Module ID: 8724
-// Function ID: 8725
+// Module ID: 8761
+// Function ID: 8762
 // Name: isVoiceEmbeddedActivity
-// Dependencies: [1218, 1391, 1979, 4542, 692, 2]
+// Dependencies: [1218, 1391, 1980, 4547, 692, 2]
 // Exports: default
 
-// Module 8724 (isVoiceEmbeddedActivity)
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import updateVoiceState from "updateVoiceState";
+// Module 8761 (isVoiceEmbeddedActivity)
+import set from "set" /* 692 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "updateVoiceState" /* 4547 */;
 
-const require = arg1;
-const result = require("handleConnectionOpen").fileFinishedImporting("modules/activities/utils/isVoiceEmbeddedActivity.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/activities/utils/isVoiceEmbeddedActivity.tsx");
 
 export default function isVoiceEmbeddedActivity(arg0) {
   let obj = arg1;
   if (arg1 === undefined) {
-    obj = ensureGuildLoaded;
+    obj = closure_3;
   }
   const channel = obj.getChannel(arg0);
   let tmp3 = null != channel;
   if (tmp3) {
-    let tmp6 = channel.type === require(692) /* set */.ChannelTypes.GUILD_VOICE;
+    let tmp6 = channel.type === set.ChannelTypes.GUILD_VOICE;
     if (!tmp6) {
       let isPrivateResult = channel.isPrivate();
       if (isPrivateResult) {

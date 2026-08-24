@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 353 (FrameRateLogger)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("FrameRateLogger");
+
+export default getAll.get("FrameRateLogger");

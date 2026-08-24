@@ -1,14 +1,15 @@
-// Module ID: 4534
-// Function ID: 4535
+// Module ID: 4539
+// Function ID: 4540
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 4534 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 4539 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enableDistributedClips: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-05-distributed-clips", defaultConfig: { enableDistributedClips: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/clips/DistributedClipsExperiment.tsx");
+const result = set.fileFinishedImporting("modules/clips/DistributedClipsExperiment.tsx");
 
 export default apexExperiment;

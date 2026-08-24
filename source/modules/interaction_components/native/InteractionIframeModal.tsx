@@ -1,23 +1,22 @@
-// Module ID: 16614
-// Function ID: 16615
+// Module ID: 16710
+// Function ID: 16711
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 4482, 21, 4661, 712, 16602, 5441, 8671, 16615, 4732, 4094, 1236, 12471, 12478, 5433, 4328, 4734, 9462, 2]
+// Dependencies: [32, 19, 17, 4486, 21, 4668, 712, 16698, 5446, 8708, 16711, 4737, 4097, 1236, 12525, 12532, 5438, 4332, 4739, 9499, 2]
 // Exports: default
 
-// Module 16614 (InteractionIframeModal)
-import _slicedToArray from "_slicedToArray";
-import getBotLabel from "getBotLabel";
-import { View } from "XLargeIcon";
-import { BotTagTypes } from "ApplicationTypes";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16710 (InteractionIframeModal)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { BotTagTypes } from "ApplicationTypes" /* 4486 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { wrapper: null, header: null, headerCenterContainer: null, headerTitleContainer: null, closeButton: null, spacerView: null, botTag: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexDirection: "row", padding: 16, justifyContent: "space-between", alignItems: "center" };
 createCacheKey[2] = { flexDirection: "column", alignItems: "center" };
@@ -25,18 +24,18 @@ createCacheKey[3] = { flexDirection: "row", marginBottom: 2 };
 createCacheKey[4] = { marginEnd: 8 };
 createCacheKey[5] = { marginStart: 8, width: 32 };
 createCacheKey[6] = { marginStart: 4 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/interaction_components/native/InteractionIframeModal.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/interaction_components/native/InteractionIframeModal.tsx");
 
 export default function InteractionIframeModal(children) {
-  const tmp = createCacheKey();
+  const tmp = callback3();
   const application = children.application;
   const id = application.id;
   let obj = id(callback[7]);
   const iframeModalState = obj.useIframeModalState(children);
   const queryParams = iframeModalState.queryParams;
   const tmp5 = callback(React.useState(false), 2);
-  const importDefault = tmp5[1];
+  importDefault = tmp5[1];
   const insets = importDefault(callback[8])({ includeKeyboardHeight: true }).insets;
   const layoutEffect = React.useLayoutEffect(() => {
     id(callback[9]).lockOrientation("PORTRAIT");
@@ -81,7 +80,7 @@ export default function InteractionIframeModal(children) {
   }
   obj = { style: items2, children: null };
   items2 = [tmp.wrapper, { paddingTop: insets.top, paddingBottom: insets.bottom }];
-  const obj1 = { style: tmp.header, children: null };
+  obj1 = { style: tmp.header, children: null };
   const obj2 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
   let intl = tmp2(tmp3[13]).intl;
   obj2[1] = intl.string(id(callback[13]).t.cpT0Cq);

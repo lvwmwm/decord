@@ -4,6 +4,8 @@
 // Dependencies: [45, 94]
 
 // Module 93 (_possibleConstructorReturn)
+import _assertThisInitialized from "_assertThisInitialized" /* 94 */;
+
 
 export default function _possibleConstructorReturn(arg0, fn) {
   if (fn) {
@@ -14,6 +16,6 @@ export default function _possibleConstructorReturn(arg0, fn) {
     const typeError = new TypeError("Derived constructors may only return object or undefined");
     throw typeError;
   } else {
-    return require(94) /* _assertThisInitialized */(arg0);
+    return _assertThisInitialized(arg0);
   }
 };

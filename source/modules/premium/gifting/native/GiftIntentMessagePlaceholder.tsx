@@ -1,13 +1,16 @@
-// Module ID: 10996
-// Function ID: 10997
+// Module ID: 11035
+// Function ID: 11036
 // Name: getGiftIntentCustomMessagePlaceholder
 // Dependencies: [1236, 2]
 // Exports: getGiftIntentCustomMessagePlaceholder
 
-// Module 10996 (getGiftIntentCustomMessagePlaceholder)
-const result = require("set").fileFinishedImporting("modules/premium/gifting/native/GiftIntentMessagePlaceholder.tsx");
+// Module 11035 (getGiftIntentCustomMessagePlaceholder)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+
+const result = set.fileFinishedImporting("modules/premium/gifting/native/GiftIntentMessagePlaceholder.tsx");
 
 export const getGiftIntentCustomMessagePlaceholder = function getGiftIntentCustomMessagePlaceholder() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  return intl.string(require(1236) /* getSystemLocale */.t.OrwKgi);
+  const intl = getSystemLocale.intl;
+  return intl.string(getSystemLocale.t.OrwKgi);
 };

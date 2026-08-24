@@ -1,12 +1,14 @@
-// Module ID: 13900
-// Function ID: 13901
+// Module ID: 13968
+// Function ID: 13969
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 13900 (enforcing)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 13968 (enforcing)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeMobileVoiceOverlayModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeMobileVoiceOverlayModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeMobileVoiceOverlayModule.tsx");
 
 export default enforcing;

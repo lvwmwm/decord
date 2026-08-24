@@ -1,19 +1,22 @@
-// Module ID: 12452
-// Function ID: 12453
+// Module ID: 12504
+// Function ID: 12505
 // Name: videoStreamTimedOut
 // Dependencies: [709, 2]
 // Exports: clearVideoStreamTimeout, videoStreamTimedOut
 
-// Module 12452 (videoStreamTimedOut)
-const result = require("set").fileFinishedImporting("modules/errors/VideoStreamReadyActionCreators.tsx");
+// Module 12504 (videoStreamTimedOut)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/errors/VideoStreamReadyActionCreators.tsx");
 
 export const videoStreamTimedOut = function videoStreamTimedOut(current, closure_1, closure_6, closure_2) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "VIDEO_STREAM_READY_TIMEOUT", videoStreamId: current, mediaContext: closure_6, userId: closure_1, streamKey: closure_2 };
   obj.dispatch(obj);
 };
 export const clearVideoStreamTimeout = function clearVideoStreamTimeout(DEFAULT, closure_0) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "CLEAR_VIDEO_STREAM_READY_TIMEOUT", mediaContext: DEFAULT, userId: closure_0 };
   obj.dispatch(obj);
 };

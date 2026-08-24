@@ -4,7 +4,9 @@
 // Dependencies: [1665, 1694, 1730, 1731, 1732]
 
 // Module 1729 (validateConfig)
-const require = arg1;
+import t from "t" /* 1665 */;
+
+require = arg1;
 let dependencyMap = arg6;
 function validateConfig(clamp) {
   if (clamp.clamp) {
@@ -12,22 +14,22 @@ function validateConfig(clamp) {
     if (Array.isArray(clamp.clamp)) {
       if (2 !== clamp.clamp.length) {
         const _HermesInternal3 = HermesInternal;
-        const reanimatedError = new require(1665) /* t */.ReanimatedError("`clamp array` must contain 2 items but is given " + clamp.clamp.length + ".");
+        const reanimatedError = new t.ReanimatedError("`clamp array` must contain 2 items but is given " + clamp.clamp.length + ".");
         throw reanimatedError;
       }
     } else {
       const _HermesInternal = HermesInternal;
-      const reanimatedError1 = new require(1665) /* t */.ReanimatedError("`config.clamp` must be an array but is " + typeof clamp.clamp + ".");
+      const reanimatedError1 = new t.ReanimatedError("`config.clamp` must be an array but is " + typeof clamp.clamp + ".");
       throw reanimatedError1;
     }
   }
   if (clamp.velocityFactor <= 0) {
     const _HermesInternal2 = HermesInternal;
-    const reanimatedError2 = new require(1665) /* t */.ReanimatedError("`config.velocityFactor` must be greater then 0 but is " + clamp.velocityFactor + ".");
+    const reanimatedError2 = new t.ReanimatedError("`config.velocityFactor` must be greater then 0 but is " + clamp.velocityFactor + ".");
     throw reanimatedError2;
   } else if (clamp.rubberBandEffect) {
     if (!clamp.clamp) {
-      const reanimatedError3 = new require(1665) /* t */.ReanimatedError("You need to set `clamp` property when using `rubberBandEffect`.");
+      const reanimatedError3 = new t.ReanimatedError("You need to set `clamp` property when using `rubberBandEffect`.");
       throw reanimatedError3;
     }
   }
@@ -38,7 +40,7 @@ validateConfig.__initData = { code: "function validateConfig_Pnpm_decayTs1(confi
 let closure_3 = { code: "function pnpm_decayTs3(){const{userConfig,isValidRubberBandConfig,rubberBandDecay,rigidDecay,validateConfig,callback,getReduceMotionForAnimation}=this.__closure;var _config$velocity;const config={deceleration:0.998,velocityFactor:1,velocity:0,rubberBandFactor:0.6};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}const decay=isValidRubberBandConfig(config)?function(animation,now){return rubberBandDecay(animation,now,config);}:function(animation,now){return rigidDecay(animation,now,config);};function onStart(animation,value,now){const initialVelocity=config.velocity;animation.current=value;animation.lastTimestamp=now;animation.startTimestamp=now;animation.initialVelocity=initialVelocity;animation.velocity=initialVelocity;validateConfig(config);if(animation.reduceMotion&&config.clamp){if(value<config.clamp[0]){animation.current=config.clamp[0];}else if(value>config.clamp[1]){animation.current=config.clamp[1];}}}return{onFrame:decay,onStart:onStart,callback:callback,velocity:(_config$velocity=config.velocity)!==null&&_config$velocity!==void 0?_config$velocity:0,initialVelocity:0,current:undefined,lastTimestamp:0,startTimestamp:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}" };
 let fn = function n(userConfig, callback) {
   const _require = userConfig;
-  const dependencyMap = callback;
+  dependencyMap = callback;
   let obj = _require(1694);
   const fn = function c() {
     let obj = { deceleration: 0.998, velocityFactor: 1, velocity: 0, rubberBandFactor: 0.6 };
@@ -65,7 +67,7 @@ let fn = function n(userConfig, callback) {
         reduceMotion.startTimestamp = lastTimestamp;
         reduceMotion.initialVelocity = velocity;
         reduceMotion.velocity = velocity;
-        outer2_2(obj);
+        closure_2_2(obj);
         if (tmp3) {
           if (current < tmp.clamp[0]) {
             reduceMotion.current = tmp.clamp[0];
@@ -79,8 +81,8 @@ let fn = function n(userConfig, callback) {
       initialVelocity: 0,
       current: "sa",
       lastTimestamp: null,
-      startTimestamp: "chat_list_android",
-      reduceMotion: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN"
+      startTimestamp: "db.fs_info",
+      reduceMotion: 0
     };
     let num = obj.velocity;
     if (num == null) {

@@ -1,19 +1,21 @@
-// Module ID: 13079
-// Function ID: 13080
+// Module ID: 13135
+// Function ID: 13136
 // Name: getBrowserInvertedWantsConfig
 // Dependencies: [1472, 501, 2]
 // Exports: getBrowserInvertedWantsConfig
 
-// Module 13079 (getBrowserInvertedWantsConfig)
-import ApexExperiment from "ApexExperiment";
+// Module 13135 (getBrowserInvertedWantsConfig)
+import set from "set" /* 2 */;
+import PlatformTypes from "PlatformTypes" /* 501 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 let obj = { 1: null };
 obj[1] = { invertWants: true };
 let closure_2 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-03-browser-inverted-wants", defaultConfig: { invertWants: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/media_engine/BrowserInvertedWantsExperiment.tsx");
+const result = set.fileFinishedImporting("modules/media_engine/BrowserInvertedWantsExperiment.tsx");
 
 export const getBrowserInvertedWantsConfig = function getBrowserInvertedWantsConfig(arg0) {
-  let config = require(501) /* PlatformTypes */;
+  let config = PlatformTypes;
   if (config.isDesktop()) {
     config = { invertWants: false };
   } else {

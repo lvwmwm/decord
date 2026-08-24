@@ -1,12 +1,13 @@
-// Module ID: 9188
-// Function ID: 9189
+// Module ID: 9225
+// Function ID: 9226
 // Name: fromServer
-// Dependencies: [1931, 4515, 2]
+// Dependencies: [1931, 4520, 2]
 
-// Module 9188 (fromServer)
-import "toJS";
-import createFromServer from "createFromServer";
+// Module 9225 (fromServer)
+import toJSDefault from "toJS" /* 1931 */;
+import closure_0 from "createFromServer" /* 4520 */;
 
+toJSDefault;
 let prototype;
 prototype = function BaseWishlistItemRecord(arg0) {
   const tmp = new prototype(new.target, new.target);
@@ -17,11 +18,6 @@ prototype = function BaseWishlistItemRecord(arg0) {
 class prototype extends tmp2 {
 }
 prototype["fromServer"] = function fromServer(sku) {
-  let gifter_user_id;
-  let is_owned;
-  let sku_id;
-  let sku_name;
-  let sku_product_line;
   sku = sku.sku;
   ({ sku_id, sku_product_line, sku_name, is_owned, gifter_user_id } = sku);
   let obj = Object.create(null);
@@ -36,7 +32,7 @@ prototype["fromServer"] = function fromServer(sku) {
   obj.gifter_user_id = gifter_user_id;
   let fromServer;
   if (null != sku) {
-    fromServer = createFromServer.createFromServer(sku);
+    fromServer = closure_0.createFromServer(sku);
   }
   obj.sku = fromServer;
   if (typeof prototype !== "function") {

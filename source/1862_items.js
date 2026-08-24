@@ -5,7 +5,9 @@
 // Exports: default
 
 // Module 1862 (items)
-require("noop").useCallback;
+import noop from "noop" /* 19 */;
+
+noop.useCallback;
 
 export default function _default() {
   const items = [...arguments];

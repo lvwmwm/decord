@@ -1,43 +1,30 @@
-// Module ID: 9920
-// Function ID: 9921
+// Module ID: 9959
+// Function ID: 9960
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 9921, 5268, 1396, 4969, 1395, 5270, 1391, 5271, 1910, 4021, 4030, 1979, 5043, 1922, 676, 9922, 21, 8057, 2007, 8663, 1236, 9923, 8929, 4316, 4770, 4984, 4827, 9925, 9926, 4318, 5260, 9947, 3079, 9813, 1222, 9975, 9977, 9991, 8918, 9993, 6794, 4230, 6368, 9995, 8078, 9996, 9997, 9999, 8607, 5277, 10001, 10003, 6798, 6795, 10004, 8132, 6869, 10006, 10007, 6892, 6867, 4342, 10008, 11956, 8666, 8058, 9435, 8136, 8605, 6778, 7355, 4322, 8849, 9563, 7167, 4093, 7139, 7159, 9979, 589, 1399, 5282, 8512, 4066, 7188, 1297, 11957, 10515, 11958, 7175, 1625, 10516, 7177, 2]
+// Dependencies: [5, 19, 9960, 5273, 1396, 4974, 1395, 5275, 1391, 5276, 1910, 4024, 4033, 1980, 5048, 1922, 676, 9961, 21, 8096, 2008, 8700, 1236, 9962, 8966, 4320, 4775, 4989, 4832, 9964, 9965, 4322, 5265, 9986, 3082, 9852, 1222, 10014, 10016, 10030, 8955, 10032, 6831, 4234, 6399, 10034, 8117, 10035, 10036, 10038, 8644, 5282, 10040, 10042, 6835, 6832, 10043, 8171, 6907, 10045, 10046, 6930, 6905, 4346, 10047, 12005, 8703, 8097, 9472, 8175, 8642, 6815, 7393, 4326, 8886, 9600, 7205, 4096, 7177, 7197, 10018, 589, 1399, 5287, 8551, 4069, 7226, 1297, 12006, 10554, 12007, 7213, 1625, 10555, 7215, 2]
 // Exports: default
 
-// Module 9920 (handleVoiceOrStageChannelConnectPress)
-import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
-import connectToStage from "connectToStage";
-import { SafetyWarningTypes } from "handleConnectionOpen";
-import initialize from "initialize";
-import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
-import closure_8 from "handleThreadCreateOrUpdate";
-import createChannelRecord from "createChannelRecord";
-import incrementVersion from "incrementVersion";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import closure_19 from "handleConnectionOpen";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { ChannelDetailsNavigatorScreens as closure_31 } from "ChannelDetailsNavigatorScreens";
-import { jsx } from "openChannelCallModal";
+// Module 9959 (handleVoiceOrStageChannelConnectPress)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 9960 */;
+import closure_6 from "initialize" /* 5273 */;
+import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
+import closure_8 from "handleThreadCreateOrUpdate" /* 4974 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import closure_13 from "incrementVersion" /* 5275 */;
+import closure_14 from "ensureGuildLoaded" /* 1391 */;
+import closure_15 from "handleConnectionOpen" /* 5276 */;
+import closure_16 from "createGuildRecordFromRust" /* 1910 */;
+import closure_17 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_18 from "markAllUserIdListsStale" /* 4033 */;
+import closure_19 from "handleConnectionOpen" /* 1980 */;
+import closure_20 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_21 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import { ChannelDetailsNavigatorScreens as closure_31 } from "ChannelDetailsNavigatorScreens" /* 9961 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c10;
-let c9;
-let closure_12;
-let closure_22;
-let closure_23;
-let closure_24;
-let closure_25;
-let closure_26;
-let closure_27;
-let closure_28;
-let closure_29;
-let closure_30;
-let unpackModuleId;
 const require = arg1;
 function handleVoiceOrStageChannelConnectPress() {
   const self = this;
@@ -52,9 +39,9 @@ function handleVoiceOrStageChannelConnectPress() {
 function _handleVoiceOrStageChannelConnectPress() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c3 = 0;
     return (function*(arg0, openGuildVoiceModal) {
       if (c3 === 2) {
         c3 = 3;
@@ -67,7 +54,7 @@ function _handleVoiceOrStageChannelConnectPress() {
           obj[0] = openGuildVoiceModal;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -82,12 +69,12 @@ function _handleVoiceOrStageChannelConnectPress() {
               obj[0] = openGuildVoiceModal;
               return obj;
             } else {
-              let closure_1 = tmp2;
+              closure_1 = tmp2;
               const tmp22 = guildStageVoice(table[20]);
               if (isGuildStageVoiceResult) {
                 table = 2;
                 c3 = 1;
-                const obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = tmp22(tmp21[19], tmp21.paths);
                 return obj1;
               } else {
@@ -131,7 +118,7 @@ function _handleVoiceOrStageChannelConnectPress() {
       }
     })();
   });
-  const _handleVoiceOrStageChannelConnectPress = tmp;
+  closure_34 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -141,13 +128,6 @@ function _handleVoiceOrStageChannelConnectPress() {
   return applyArgumentsResult;
 }
 function ChannelLongPressActionSheetConnected(channel) {
-  let canConnect;
-  let canCreateInstantInvite;
-  let canManageChannel;
-  let canModerateStage;
-  let isOptedIn;
-  let isParentOptedIn;
-  let isPinned;
   channel = channel.channel;
   const onClose = channel.onClose;
   let stateFromStores1 = onClose;
@@ -162,12 +142,12 @@ function ChannelLongPressActionSheetConnected(channel) {
   const tmp5 = channel;
   let obj = channel(isOptedIn[80]);
   const isFavoritesGuildSelected = obj.useIsFavoritesGuildSelected();
-  let obj1 = channel(isOptedIn[81]);
-  const items = [createGuildRecordFromRust];
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_16.getGuild(isOptedIn));
+  obj1 = channel(isOptedIn[81]);
+  const items = [closure_16];
+  const stateFromStores = obj1.useStateFromStores(items, () => closure_1_16.getGuild(isOptedIn));
   let obj2 = channel(isOptedIn[81]);
-  const items1 = [getUncachedChannelPermissions];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => ({ canManageChannel: outer1_17.can(outer1_29.MANAGE_CHANNELS, channel), canCreateInstantInvite: outer1_17.can(outer1_29.CREATE_INSTANT_INVITE, channel), canConnect: outer1_17.can(outer1_29.CONNECT, channel), canModerateStage: outer1_17.can(channel(isOptedIn[82]).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel) }));
+  const items1 = [closure_17];
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => ({ canManageChannel: closure_1_17.can(closure_1_29.MANAGE_CHANNELS, channel), canCreateInstantInvite: closure_1_17.can(closure_1_29.CREATE_INSTANT_INVITE, channel), canConnect: closure_1_17.can(closure_1_29.CONNECT, channel), canModerateStage: closure_1_17.can(channel(isOptedIn[82]).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel) }));
   ({ canCreateInstantInvite, canManageChannel, canConnect, canModerateStage } = stateFromStoresObject);
   let obj3 = channel(isOptedIn[83]);
   if (guildId == null) {
@@ -175,40 +155,39 @@ function ChannelLongPressActionSheetConnected(channel) {
   }
   const optInEnabledForGuild = obj3.useOptInEnabledForGuild(guildId);
   let tmp5Result = tmp5(tmp2[81]);
-  const items2 = [updateUserGuildSettingsInternal];
+  const items2 = [closure_20];
   const stateFromStoresObject1 = tmp5Result.useStateFromStoresObject(items2, () => {
-    const obj = { isOptedIn: outer1_20.isChannelOptedIn(isOptedIn, channel.id), isParentOptedIn: null, isPinned: null };
-    let tmp = isOptedIn;
-    obj[1] = null != channel.parent_id && outer1_20.isChannelOptedIn(tmp, channel.parent_id);
+    const obj = { isOptedIn: closure_1_20.isChannelOptedIn(isOptedIn, channel.id), isParentOptedIn: null != channel.parent_id && closure_1_20.isChannelOptedIn(tmp, channel.parent_id), isPinned: null };
+    tmp = isOptedIn;
     if (tmp == null) {
-      tmp = outer1_30;
+      tmp = closure_1_30;
     }
-    obj[2] = outer1_20.isFavorite(tmp, channel.id);
+    obj[2] = closure_1_20.isFavorite(tmp, channel.id);
     return obj;
   });
   ({ isOptedIn, isPinned, isParentOptedIn } = stateFromStoresObject1);
   tmp5Result = tmp5(tmp2[81]);
-  const items3 = [updateUserGuildSettingsInternal];
-  stateFromStores1 = tmp5Result.useStateFromStores(items3, () => outer1_20.isChannelMuted(isOptedIn, channel.id));
-  let tmp10 = updateUserGuildSettingsInternal;
+  const items3 = [closure_20];
+  stateFromStores1 = tmp5Result.useStateFromStores(items3, () => closure_1_20.isChannelMuted(isOptedIn, channel.id));
+  let tmp10 = closure_20;
   const tmp3 = stateFromStores1(isOptedIn[78]);
   const items4 = [closure_8];
   const stateFromStores2 = tmp5(tmp2[81]).useStateFromStores(items4, () => {
     let hasThreadsForChannelResult = null != isOptedIn;
     if (hasThreadsForChannelResult) {
-      hasThreadsForChannelResult = outer1_8.hasThreadsForChannel(tmp, channel.id);
+      hasThreadsForChannelResult = closure_1_8.hasThreadsForChannel(tmp, channel.id);
     }
     return hasThreadsForChannelResult;
   });
   const tmp5Result1 = tmp5(tmp2[81]);
-  const items5 = [incrementVersion];
-  const stateFromStores3 = tmp5(tmp2[81]).useStateFromStores(items5, () => outer1_13.isCollapsed(channel.parent_id));
+  const items5 = [closure_13];
+  const stateFromStores3 = tmp5(tmp2[81]).useStateFromStores(items5, () => closure_1_13.isCollapsed(channel.parent_id));
   const tmp5Result2 = tmp5(tmp2[81]);
-  const items6 = [handleConnectionOpen];
-  const stateFromStores4 = tmp5(tmp2[81]).useStateFromStores(items6, () => outer1_15.isCollapsed(channel.id));
+  const items6 = [closure_15];
+  const stateFromStores4 = tmp5(tmp2[81]).useStateFromStores(items6, () => closure_1_15.isCollapsed(channel.id));
   const tmp5Result3 = tmp5(tmp2[81]);
-  const items7 = [handleStageInstanceCreateOrUpdate];
-  const stateFromStores5 = tmp5(tmp2[81]).useStateFromStores(items7, () => outer1_7.isLive(channel.id));
+  const items7 = [closure_7];
+  const stateFromStores5 = tmp5(tmp2[81]).useStateFromStores(items7, () => closure_1_7.isLive(channel.id));
   const tmp5Result4 = tmp5(tmp2[81]);
   const tmp17 = string7Result(tmp2[27])(channel, true);
   const DeveloperMode = tmp5(tmp2[85]).DeveloperMode;
@@ -229,12 +208,12 @@ function ChannelLongPressActionSheetConnected(channel) {
     tmp21 = jsx(tmp5(tmp2[87]).Avatar, { size: null, channel: null });
   }
   const tmp18 = string7Result(tmp2[84])(channel);
-  const items8 = [mergeGuildAvatar];
+  const items8 = [closure_21];
   const stateFromStores6 = tmp5(tmp2[81]).useStateFromStores(items8, () => currentUser.getCurrentUser());
   const tmp5Result5 = tmp5(tmp2[81]);
   const tmp24 = null != stateFromStores6 && channel.isOwner(stateFromStores6.id);
   const items9 = [tmp10];
-  const stateFromStores7 = tmp5(tmp2[81]).useStateFromStores(items9, () => outer1_20.isMessagesFavorite(channel.id));
+  const stateFromStores7 = tmp5(tmp2[81]).useStateFromStores(items9, () => closure_1_20.isMessagesFavorite(channel.id));
   const tmp5Result6 = tmp5(tmp2[81]);
   const inappropriateConversationsTiers = tmp5(tmp2[88]).useInappropriateConversationsTiers(channel);
   let isTier1;
@@ -278,10 +257,7 @@ function ChannelLongPressActionSheetConnected(channel) {
     obj2[0] = intl.string(tmp5(tmp2[22]).t.LYju5J);
     obj2[1] = tmp5(tmp2[23]).UserCircleIcon;
     obj2[2] = function onPress() {
-      const obj = { userId: null, channelId: null, sourceAnalyticsLocations: null };
-      obj[0] = channel.getRecipientId();
-      obj[1] = channel.id;
-      obj[2] = analyticsLocations;
+      const obj = { userId: channel.getRecipientId(), channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
       stateFromStores1(isOptedIn[24])(obj);
     };
     buttons.push(obj2);
@@ -292,7 +268,7 @@ function ChannelLongPressActionSheetConnected(channel) {
       obj3[0] = intl2.string(tmp5(tmp2[22]).t.jsvgc3);
       obj3[1] = tmp5(tmp2[25]).UserMinusIcon;
       obj3[2] = function onPress() {
-        stateFromStores1(isOptedIn[26]).closePrivateChannel(channel.id, outer1_19.getCurrentlySelectedChannelId() === channel.id);
+        stateFromStores1(isOptedIn[26]).closePrivateChannel(channel.id, closure_1_19.getCurrentlySelectedChannelId() === channel.id);
       };
       buttons1.push(obj3);
     }
@@ -308,7 +284,7 @@ function ChannelLongPressActionSheetConnected(channel) {
       obj6[1] = tmp5(tmp2[25]).UserMinusIcon;
       obj6[3] = function onPress() {
         let obj = channel(isOptedIn[27]);
-        const channelName = obj.computeChannelName(channel, outer1_21, outer1_18);
+        const channelName = obj.computeChannelName(channel, closure_1_21, closure_1_18);
         const intl = channel(isOptedIn[22]).intl;
         const intl2 = channel(isOptedIn[22]).intl;
         let formatResult = intl2.format(channel(isOptedIn[22]).t.SSIVOu, { name: channelName });
@@ -324,13 +300,13 @@ function ChannelLongPressActionSheetConnected(channel) {
           formatResult = intl4.format(tmp(tmp2[22]).t.IK1Qvs, obj);
         }
         const formatToPlainStringResult = intl.formatToPlainString(channel(isOptedIn[22]).t.hJ5Ap4, { name: channelName });
-        const obj1 = { title: formatToPlainStringResult1, body: formatResult, confirmText: null, cancelText: null, onConfirm: null };
+        obj1 = { title: formatToPlainStringResult1, body: formatResult, confirmText: null, cancelText: null, onConfirm: null };
         const intl5 = tmp(tmp2[22]).intl;
         obj1[2] = intl5.string(channel(isOptedIn[22]).t.p89ACt);
         const intl6 = tmp(tmp2[22]).intl;
         obj1[3] = intl6.string(channel(isOptedIn[22]).t.gm1Vej);
         obj1[4] = function onConfirm() {
-          outer1_1(outer1_2[26]).closePrivateChannel(user.id, outer1_19.getCurrentlySelectedChannelId() === user.id);
+          closure_1_1(closure_1_2[26]).closePrivateChannel(user.id, closure_1_19.getCurrentlySelectedChannelId() === user.id);
         };
         stateFromStores1(isOptedIn[28]).show(obj1);
       };
@@ -413,7 +389,7 @@ function ChannelLongPressActionSheetConnected(channel) {
     obj15[1] = tmp5(tmp2[39]).GroupPlusIcon;
     obj15[2] = function onPress() {
       let obj = channel(isOptedIn[40]);
-      obj = { source: outer1_27.CONTEXT_MENU };
+      obj = { source: closure_1_27.CONTEXT_MENU };
       const result = obj.showInstantInviteActionSheet(channel, obj);
     };
     buttons5.push(obj15);
@@ -441,7 +417,7 @@ function ChannelLongPressActionSheetConnected(channel) {
             if (null != channel.parent_id) {
               let obj = channel(isOptedIn[42]);
               obj = { section: null };
-              obj[0] = outer1_24.CHANNEL_ACTION_SHEET;
+              obj[0] = closure_1_24.CHANNEL_ACTION_SHEET;
               obj.setOptInChannel(guildId1, tmp.parent_id, false, obj);
             }
           };
@@ -461,7 +437,7 @@ function ChannelLongPressActionSheetConnected(channel) {
           obj16[1] = PlusLargeIcon;
           obj16[2] = function onPress() {
             let obj = channel(isOptedIn[42]);
-            obj = { section: outer1_24.CHANNEL_ACTION_SHEET };
+            obj = { section: closure_1_24.CHANNEL_ACTION_SHEET };
             obj.setOptInChannel(guildId1, channel.id, !isOptedIn, obj);
           };
           push(obj16);
@@ -482,7 +458,7 @@ function ChannelLongPressActionSheetConnected(channel) {
       obj17[1] = tmp5(tmp2[41]).PinIcon;
       obj17[2] = function onPress() {
         let obj = channel(isOptedIn[42]);
-        obj = { section: outer1_24.CHANNEL_ACTION_SHEET };
+        obj = { section: closure_1_24.CHANNEL_ACTION_SHEET };
         obj.setIsFavorite(guildId1, channel.id, !isPinned, obj);
         if (!isPinned) {
           const rootNavigationRef = channel(isOptedIn[43]).getRootNavigationRef();
@@ -610,7 +586,7 @@ function ChannelLongPressActionSheetConnected(channel) {
       obj26[1] = tmp5(tmp2[50]).EyeIcon;
       obj26[2] = function onPress() {
         let obj = channel(isOptedIn[51]);
-        obj = { section: outer1_24.CHANNEL_ACTION_SHEET, object: outer1_23.MARK_CHANNEL_AS_READ_BUTTON, objectType: outer1_22.ACK_MANUAL };
+        obj = { section: closure_1_24.CHANNEL_ACTION_SHEET, object: closure_1_23.MARK_CHANNEL_AS_READ_BUTTON, objectType: closure_1_22.ACK_MANUAL };
         obj.ackChannel(channel, obj);
       };
       buttons13.push(obj26);
@@ -623,7 +599,7 @@ function ChannelLongPressActionSheetConnected(channel) {
         obj27[0] = intl24.string(tmp5(tmp2[22]).t.h850Ss);
         obj27[1] = tmp5(tmp2[56]).ChannelNotificationIcon;
         obj27[3] = function onPress() {
-          stateFromStores1(isOptedIn[57]).setSection(outer1_25.NOTIFICATIONS);
+          stateFromStores1(isOptedIn[57]).setSection(closure_1_25.NOTIFICATIONS);
           const obj = stateFromStores1(isOptedIn[57]);
           stateFromStores1(isOptedIn[57]).open(channel.id);
         };
@@ -664,7 +640,7 @@ function ChannelLongPressActionSheetConnected(channel) {
             obj31[0] = string6(t6["7vb2cc"]);
             obj31[1] = tmp5(tmp2[61]).StageIcon;
             obj31[2] = function onPress() {
-              outer1_33(channel);
+              closure_1_33(channel);
             };
             push2(obj31);
             const buttons17 = obj30.buttons;
@@ -684,7 +660,7 @@ function ChannelLongPressActionSheetConnected(channel) {
             obj31[0] = string6(t6.ZXxLQg);
             obj31[1] = tmp5(tmp2[62]).ChatIcon;
             obj31[2] = function onPress() {
-              outer1_33(channel);
+              closure_1_33(channel);
               stateFromStores1(isOptedIn[66]).updateChatOpen(channel.id, true);
               stateFromStores1(isOptedIn[65])();
             };
@@ -711,7 +687,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -726,11 +702,11 @@ function ChannelLongPressActionSheetConnected(channel) {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      let closure_0 = tmp4;
+                      closure_0 = tmp4;
                       c1 = 1;
                       paths = 1;
-                      const obj1 = { value: null, done: false };
-                      obj1[0] = outer1_0(paths[20])(paths[67], paths.paths);
+                      obj1 = { value: null, done: false };
+                      obj1[0] = closure_1_0(paths[20])(paths[67], paths.paths);
                       return obj1;
                     }
                   } else if (arg0 === 1) {
@@ -744,7 +720,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                   } else {
                     arg1.openEndStageModal(closure_0);
                     paths = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp10) {
                   paths = tmp;
@@ -802,7 +778,7 @@ function ChannelLongPressActionSheetConnected(channel) {
           obj38[0] = string7Result;
           obj38[1] = tmp5(tmp2[72]).SettingsIcon;
           obj38[2] = function onPress() {
-            stateFromStores1(isOptedIn[57]).setSection(outer1_25.OVERVIEW);
+            stateFromStores1(isOptedIn[57]).setSection(closure_1_25.OVERVIEW);
             const obj = stateFromStores1(isOptedIn[57]);
             stateFromStores1(isOptedIn[57]).open(channel.id);
           };
@@ -891,32 +867,30 @@ function ChannelLongPressActionSheetConnected(channel) {
         obj44[2] = string7Result;
         obj43[2] = tmp20(tmp5(tmp2[93]).ActionSheetIconHeader, obj44);
         obj43[3] = items11.map((buttons) => {
-          let obj = { hasIcons: true, children: null };
           buttons = buttons.buttons;
-          obj[1] = buttons.map((onPress) => {
-            let IconComponent;
-            let disableColor;
-            let iconStyle;
-            let label;
-            let trailing;
-            onPress = onPress.onPress;
-            let str = "default";
-            ({ label, IconComponent, iconStyle, trailing, disableColor } = onPress);
-            if (onPress.isDestructive) {
-              str = "danger";
-            }
-            const obj = { variant: str, label, icon: null, trailing: null, onPress: null };
-            obj[2] = outer1_32(outer1_0(outer1_2[94]).ActionSheetRow.Icon, { IconComponent, style: iconStyle, disableColor });
-            obj[3] = trailing;
-            obj[4] = function onPress() {
-              if (onPress != null) {
-                tmp();
+          return closure_1_32(channel(isOptedIn[94]).ActionSheetRow.Group, {
+            hasIcons: true,
+            children: buttons.map((onPress) => {
+              onPress = onPress.onPress;
+              let str = "default";
+              ({ label, IconComponent, iconStyle, trailing, disableColor } = onPress);
+              if (onPress.isDestructive) {
+                str = "danger";
               }
-              outer1_1();
-            };
-            return outer1_32(outer1_0(outer1_2[94]).ActionSheetRow, obj, arg1);
-          });
-          return outer1_32(channel(isOptedIn[94]).ActionSheetRow.Group, obj, buttons.sectionKey);
+              return closure_1_32(closure_1_0(closure_1_2[94]).ActionSheetRow, {
+                variant: str,
+                label,
+                icon: closure_1_32(closure_1_0(closure_1_2[94]).ActionSheetRow.Icon, { IconComponent, style: iconStyle, disableColor }),
+                trailing,
+                onPress() {
+                  if (onPress != null) {
+                    tmp();
+                  }
+                  closure_1_1();
+                }
+              }, arg1);
+            })
+          }, buttons.sectionKey);
         });
         obj42[1] = tmp20(tmp5(tmp2[91]).ActionSheet, obj43);
         return tmp20(tmp5(tmp2[78]).AnalyticsLocationProvider, obj42);
@@ -998,7 +972,7 @@ function ChannelLongPressActionSheetConnected(channel) {
         if (tmp) {
           obj = { channelId: null, initialRouteName: null, source: "channel-long-press-sheet" };
           obj[0] = channel.id;
-          obj[1] = outer1_31.MUTE;
+          obj[1] = closure_1_31.MUTE;
           rootNavigationRef.navigate("sidebar", obj);
         }
       };
@@ -1027,16 +1001,14 @@ function ChannelLongPressActionSheetConnected(channel) {
 }
 ({ isGuildTextChannelType: c9, isGuildVocalChannelType: c10, isReadableType: unpackModuleId, isTextChannel: closure_12 } = createChannelRecord);
 ({ AnalyticsObjectTypes: closure_22, AnalyticsObjects: closure_23, AnalyticsSections: closure_24, ChannelSettingsSections: closure_25, ChannelTypes: closure_26, InstantInviteSources: closure_27, NULL_STRING_GUILD_ID: closure_28, Permissions: closure_29, ZERO_STRING_GUILD_ID: closure_30 } = ME);
-let result = require("handleConnectionOpen").fileFinishedImporting("modules/channel/native/ChannelLongPressActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/channel/native/ChannelLongPressActionSheet.tsx");
 
 export default function ChannelLongPressActionSheet(arg0) {
-  let onClose;
-  let require;
   ({ channelId: require, onClose } = arg0);
   let stateFromStores;
   let obj = require(stateFromStores[81]);
-  const items = [ensureGuildLoaded];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_14.getChannel(closure_0));
+  const items = [closure_14];
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_14.getChannel(closure_0));
   const items1 = [stateFromStores, onClose];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {

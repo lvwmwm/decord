@@ -1,62 +1,58 @@
-// Module ID: 16954
-// Function ID: 16955
+// Module ID: 17047
+// Function ID: 17048
 // Name: Header
-// Dependencies: [19, 17, 21, 4661, 712, 6803, 4734, 14563, 1236, 1629, 4745, 1500, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 6840, 4739, 14631, 1236, 1629, 4750, 1500, 2]
 // Exports: default
 
-// Module 16954 (Header)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 17047 (Header)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import Text from "Text" /* 4739 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import FormSeparatorDefault from "FormSeparator" /* 14631 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function Header(arg0) {
-  let description;
-  let title;
   ({ description, title } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { top: true, style: tmp.headerContainer, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
-  const items = [callback(require(4734) /* Text */.Text, obj), , ];
+  const items = [callback(Text.Text, obj), , ];
   obj = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: description };
-  items[1] = callback(require(4734) /* Text */.Text, obj);
-  items[2] = callback(importDefault(14563), { style: tmp.separator });
+  items[1] = callback(Text.Text, obj);
+  items[2] = callback(FormSeparatorDefault, { style: tmp.separator });
   obj[2] = items;
-  return callback2(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback2(SafeAreaPaddingView.SafeAreaPaddingView, obj);
 }
 function Footer(arg0) {
-  let canProceedToNextStep;
-  let nextStep;
-  let onProceed;
-  let submitting;
   ({ canProceedToNextStep, nextStep, onProceed, submitting } = arg0);
   if (null == nextStep) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1236) /* getSystemLocale */.t["4cAsqe"]);
+    const intl2 = getSystemLocale.intl;
+    let stringResult = intl2.string(getSystemLocale.t["4cAsqe"]);
     let tmp5 = require;
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1236) /* getSystemLocale */.t["bm6P5/"]);
+    const intl = getSystemLocale.intl;
+    stringResult = intl.string(getSystemLocale.t["bm6P5/"]);
     tmp5 = require;
   }
   let obj = { style: null, children: null };
-  const items = [createCacheKey().footerContainer, ];
-  obj = { paddingBottom: importDefault(1629)().bottom };
+  const items = [callback3().footerContainer, ];
+  obj = { paddingBottom: useSafeAreaInsetsDefault().bottom };
   items[1] = obj;
   obj[0] = items;
   obj = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };
-  obj[1] = callback(tmp5(4745).Button, obj);
+  obj[1] = callback(tmp5(4750).Button, obj);
   return callback(closure_4, obj);
 }
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { container: null, scrollContainer: null, headerContainer: null, title: null, subtitle: null, separator: null, footerContainer: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, height: "100%" };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, height: "100%" };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexGrow: 1 };
 createCacheKey[2] = { position: "relative", paddingTop: 48, paddingBottom: 8, paddingHorizontal: 16, alignItems: "center" };
@@ -64,15 +60,15 @@ createCacheKey[3] = { marginTop: 12, textAlign: "center" };
 createCacheKey[4] = { marginTop: 8, textAlign: "center" };
 createCacheKey[5] = { marginTop: 24 };
 createCacheKey[6] = { width: "100%", padding: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierEditStep.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierEditStep.tsx");
 
 export default function GuildRoleSubscriptionTierEditStep(scrollable) {
   const merged = Object.assign(scrollable, Object.create(null));
   let navigation;
   let nextStep;
   let onProceed;
-  const tmp2 = createCacheKey();
+  const tmp2 = callback3();
   let obj = navigation(onProceed[11]);
   navigation = obj.useNavigation();
   nextStep = merged.nextStep;
@@ -91,7 +87,7 @@ export default function GuildRoleSubscriptionTierEditStep(scrollable) {
     obj = {};
     const merged1 = Object.assign(merged);
     const items1 = [callback(Header, obj), , ];
-    const obj1 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
+    obj1 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
     const items2 = [tmp2.scrollContainer];
     obj1[3] = items2;
     obj1[4] = merged.children;

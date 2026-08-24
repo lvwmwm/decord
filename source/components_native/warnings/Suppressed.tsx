@@ -1,15 +1,18 @@
-// Module ID: 16133
-// Function ID: 16134
+// Module ID: 16231
+// Function ID: 16232
 // Name: render
-// Dependencies: [19, 13300, 21, 16134, 1236, 16135, 16136, 4763, 2]
+// Dependencies: [19, 13358, 21, 16232, 1236, 16233, 16234, 4768, 2]
 
-// Module 16133 (render)
-import initialize from "initialize";
-import { jsx } from "jsxProd";
-import { Component } from "noop";
-import importAllResult from "noop";
+// Module 16231 (render)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import registerAssetDefault from "registerAsset" /* 16233 */;
+import registerAssetDefault2 from "registerAsset" /* 16234 */;
+import closure_3 from "initialize" /* 13358 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
+const Component = importAllResult.Component;
 class Suppressed extends Component {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -20,24 +23,24 @@ class Suppressed extends Component {
   }
 }
 Suppressed.prototype["render"] = function render() {
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   const string = intl.string;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (isAFKChannelResult) {
     let stringResult = string(t.KuYcnU);
     const intl3 = tmp2(1236).intl;
     let stringResult1 = intl3.string(tmp2(1236).t["RaFZ3+"]);
-    let tmp7 = importDefault(16135);
+    let tmp7 = registerAssetDefault;
     let tmp6 = importDefault;
   } else {
     stringResult = string(t.FJSZVM);
     const intl2 = tmp2(1236).intl;
     stringResult1 = intl2.string(tmp2(1236).t.etJjgW);
     tmp6 = importDefault;
-    tmp7 = importDefault(16136);
+    tmp7 = registerAssetDefault2;
   }
-  return jsx(tmp6(4763), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
+  return jsx(tmp6(4768), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
 };
-const result = require("jsxProd").fileFinishedImporting("components_native/warnings/Suppressed.tsx");
+const result = require("set").fileFinishedImporting("components_native/warnings/Suppressed.tsx");
 
 export default Suppressed;

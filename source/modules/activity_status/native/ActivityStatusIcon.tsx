@@ -1,20 +1,19 @@
-// Module ID: 9898
-// Function ID: 9899
+// Module ID: 9937
+// Function ID: 9938
 // Name: ActivityStatusIcon
-// Dependencies: [19, 21, 4661, 2]
+// Dependencies: [19, 21, 4668, 2]
 // Exports: default
 
-// Module 9898 (ActivityStatusIcon)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9937 (ActivityStatusIcon)
+import noopAll from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+noopAll;
 let closure_1 = createCacheKey.createStyles({ icon: { flexShrink: 0 } });
-const result = require("createCacheKey").fileFinishedImporting("modules/activity_status/native/ActivityStatusIcon.tsx");
+const result = require("set").fileFinishedImporting("modules/activity_status/native/ActivityStatusIcon.tsx");
 
 export default function ActivityStatusIcon(arg0) {
-  let icon;
-  let style;
   ({ icon, style } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   const obj = { size: "xxs", style: null, color: "status-positive" };

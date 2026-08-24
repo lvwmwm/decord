@@ -1,16 +1,20 @@
-// Module ID: 7925
-// Function ID: 7926
+// Module ID: 7964
+// Function ID: 7965
 // Name: useIsWindowLarge
-// Dependencies: [4233, 2]
+// Dependencies: [4237, 2]
 // Exports: default, getIsWindowLarge
 
-// Module 7925 (useIsWindowLarge)
-const result = require("set").fileFinishedImporting("modules/screen/native/useIsWindowLarge.tsx");
+// Module 7964 (useIsWindowLarge)
+import set from "set" /* 2 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4237 */;
+import useWindowSizeClassifierDefault from "useWindowSizeClassifier" /* 4237 */;
+
+const result = set.fileFinishedImporting("modules/screen/native/useIsWindowLarge.tsx");
 
 export default function useIsWindowLarge() {
-  return importDefault(4233)() >= require(4233) /* useWindowSizeClassifier */.WindowSizeClassifier.LARGE;
+  return useWindowSizeClassifierDefault() >= useWindowSizeClassifier.WindowSizeClassifier.LARGE;
 };
 export const getIsWindowLarge = function getIsWindowLarge() {
-  const windowSizeClassifier = require(4233) /* useWindowSizeClassifier */.getWindowSizeClassifier();
-  return windowSizeClassifier >= require(4233) /* useWindowSizeClassifier */.WindowSizeClassifier.LARGE;
+  const windowSizeClassifier = useWindowSizeClassifier.getWindowSizeClassifier();
+  return windowSizeClassifier >= useWindowSizeClassifier.WindowSizeClassifier.LARGE;
 };

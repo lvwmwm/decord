@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 472 (IntentAndroid)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("IntentAndroid");
+
+export default getAll.get("IntentAndroid");

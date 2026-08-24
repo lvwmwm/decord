@@ -5,10 +5,14 @@
 // Exports: getFavoritesAwareGuildName, isFavoritableChannel, isFavoritesGuildCategoryNameValid, isFavoritesGuildId
 
 // Module 1913 (getFavoritesAwareGuildName)
-import { FAVORITES_RAW_GUILD_ID } from "date";
-import { FAVORITES } from "ME";
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import date from "date" /* 1429 */;
 
-const result = require("getSystemLocale").fileFinishedImporting("modules/favorites/FavoritesUtils.tsx");
+const FAVORITES_RAW_GUILD_ID = date.FAVORITES_RAW_GUILD_ID;
+const FAVORITES = ME.FAVORITES;
+const result = set.fileFinishedImporting("modules/favorites/FavoritesUtils.tsx");
 
 export const getFavoritesAwareGuildName = function getFavoritesAwareGuildName(guild) {
   if (null != guild) {
@@ -18,8 +22,8 @@ export const getFavoritesAwareGuildName = function getFavoritesAwareGuildName(gu
       tmp2 = id === FAVORITES;
     }
     if (tmp2) {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      let name = intl.string(require(1236) /* getSystemLocale */.t.wMWyci);
+      const intl = getSystemLocale.intl;
+      let name = intl.string(getSystemLocale.t.wMWyci);
     } else {
       name = guild.name;
     }

@@ -1,28 +1,32 @@
-// Module ID: 5057
-// Function ID: 5058
+// Module ID: 5062
+// Function ID: 5063
 // Name: isClickstreamEnabled
-// Dependencies: [32, 1218, 4539, 11, 5058, 698, 5059, 2]
+// Dependencies: [32, 1218, 4544, 11, 5063, 698, 5064, 2]
 // Exports: trackClickstream
 
-// Module 5057 (isClickstreamEnabled)
-import _slicedToArray from "_slicedToArray";
-import fetchFingerprint from "fetchFingerprint";
-import createRTCConnection from "createRTCConnection";
+// Module 5062 (isClickstreamEnabled)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import clickstreamExperimentEnabled from "clickstreamExperimentEnabled" /* 5063 */;
+import getClickstreamDrainEvent from "getClickstreamDrainEvent" /* 5064 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "createRTCConnection" /* 4544 */;
 
-const require = arg1;
+require = arg1;
 function isClickstreamEnabled(flag) {
   if (flag === undefined) {
     flag = true;
   }
   if (flag) {
-    const extractTimestampResult = importDefault(11).extractTimestamp(store.getId());
+    const extractTimestampResult = DISCORD_EPOCHDefault.extractTimestamp(store.getId());
     if (extractTimestampResult !== c7) {
       drainClickstream(false);
       c7 = extractTimestampResult;
     }
-    const obj = importDefault(11);
-    let closure_8 = require(5058) /* clickstreamExperimentEnabled */.clickstreamExperimentEnabled();
-    const obj2 = require(5058) /* clickstreamExperimentEnabled */;
+    const obj = DISCORD_EPOCHDefault;
+    closure_8 = clickstreamExperimentEnabled.clickstreamExperimentEnabled();
+    const obj2 = clickstreamExperimentEnabled;
   }
   return closure_8;
 }
@@ -38,9 +42,9 @@ function drainClickstream(flag) {
       let first = tmp8[0];
       let tmp10 = importDefault;
       let tmp11 = dependencyMap;
-      let obj2 = importDefault(698);
+      let obj2 = expandEventPropertiesDefault;
       let tmp12 = require;
-      let obj3 = require(5059) /* getClickstreamDrainEvent */;
+      let obj3 = getClickstreamDrainEvent;
       let trackResult = obj2.track(first, obj3.getClickstreamDrainEvent(first, tmp8[1]));
       continue;
     }
@@ -52,17 +56,17 @@ function drainClickstream(flag) {
 const map = new Map();
 let c7 = -1;
 let c8 = false;
-let result = require("createRTCConnection").fileFinishedImporting("modules/app_analytics/clickstream/Clickstream.tsx");
+let result = require("set").fileFinishedImporting("modules/app_analytics/clickstream/Clickstream.tsx");
 
 export const trackClickstream = function trackClickstream(GUILD_VIEWED_CLICKSTREAM, arg1) {
-  let obj = importDefault(11);
+  let obj = DISCORD_EPOCHDefault;
   const extractTimestampResult = obj.extractTimestamp(store.getId());
   if (extractTimestampResult !== c7) {
     drainClickstream(false);
     c7 = extractTimestampResult;
   }
-  const result = require(5058) /* clickstreamExperimentEnabled */.clickstreamExperimentEnabled();
-  let c8 = result;
+  const result = clickstreamExperimentEnabled.clickstreamExperimentEnabled();
+  c8 = result;
   if (result) {
     if (!map.has(GUILD_VIEWED_CLICKSTREAM)) {
       const result1 = obj3.set(GUILD_VIEWED_CLICKSTREAM, []);

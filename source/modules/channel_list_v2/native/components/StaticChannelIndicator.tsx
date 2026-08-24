@@ -1,18 +1,21 @@
-// Module ID: 10108
-// Function ID: 10109
+// Module ID: 10147
+// Function ID: 10148
 // Name: ChannelIndicator
-// Dependencies: [17, 5044, 21, 4661, 712, 4097, 2]
+// Dependencies: [17, 5049, 21, 4668, 712, 4100, 2]
 // Exports: default
 
-// Module 10108 (ChannelIndicator)
-import get_ActivityIndicator from "get ActivityIndicator";
-import { UnreadSetting } from "ReadStateTypes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10147 (ChannelIndicator)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import ReadStateTypes from "ReadStateTypes" /* 5049 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c3;
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
+const UnreadSetting = ReadStateTypes.UnreadSetting;
+const jsx = jsxProd.jsx;
 let obj = { indicatorContainer: null, indicator: null };
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -20,22 +23,19 @@ obj.top = 0;
 obj.bottom = 0;
 obj.justifyContent = "center";
 obj[0] = obj;
-obj[1] = { width: 8, height: 8, borderRadius: require("Themes").radii.round, marginLeft: -4 };
+obj[1] = { width: 8, height: 8, borderRadius: ThemesDefault.radii.round, marginLeft: -4 };
 let closure_6 = createCacheKey.createStyles(obj);
-const obj1 = { width: 8, height: 8, borderRadius: require("Themes").radii.round, marginLeft: -4 };
-const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/StaticChannelIndicator.tsx");
+const obj1 = { width: 8, height: 8, borderRadius: ThemesDefault.radii.round, marginLeft: -4 };
+const result = set.fileFinishedImporting("modules/channel_list_v2/native/components/StaticChannelIndicator.tsx");
 
 export default function ChannelIndicator(arg0) {
-  let resolvedUnreadSetting;
-  let style;
-  let unread;
   ({ unread, resolvedUnreadSetting, style } = arg0);
   const tmp = callback();
-  require(4097) /* map */;
+  map;
   if (resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
-    let CHANNELS_DEFAULT = importDefault(712).colors.INTERACTIVE_TEXT_ACTIVE;
+    let CHANNELS_DEFAULT = ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE;
   } else {
-    CHANNELS_DEFAULT = importDefault(712).colors.CHANNELS_DEFAULT;
+    CHANNELS_DEFAULT = ThemesDefault.colors.CHANNELS_DEFAULT;
   }
   let tmp7 = null;
   if (unread) {

@@ -1,31 +1,31 @@
-// Module ID: 7605
-// Function ID: 7606
+// Module ID: 7643
+// Function ID: 7644
 // Name: getHasImportantUnread
-// Dependencies: [4772, 5043, 5044, 589, 2]
+// Dependencies: [4777, 5048, 5049, 589, 2]
 // Exports: getHasImportantUnread, useHasImportantUnread
 
-// Module 7605 (getHasImportantUnread)
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import { UnreadSetting } from "ReadStateTypes";
+// Module 7643 (getHasImportantUnread)
+import closure_2 from "generateOldThreadCutoff" /* 4777 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 5048 */;
+import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
 
 const require = arg1;
-const result = require("ReadStateTypes").fileFinishedImporting("modules/read_states/ReadStateUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/read_states/ReadStateUtils.tsx");
 
 export const getHasImportantUnread = function getHasImportantUnread(channel) {
-  let hasUnreadResult = generateOldThreadCutoff.hasUnread(channel.id);
+  let hasUnreadResult = closure_2.hasUnread(channel.id);
   if (hasUnreadResult) {
-    hasUnreadResult = updateUserGuildSettingsInternal.resolveUnreadSetting(channel) === UnreadSetting.ALL_MESSAGES;
+    hasUnreadResult = closure_3.resolveUnreadSetting(channel) === UnreadSetting.ALL_MESSAGES;
   }
   return hasUnreadResult;
 };
 export const useHasImportantUnread = function useHasImportantUnread(arg0) {
   const _require = arg0;
-  const items = [generateOldThreadCutoff, updateUserGuildSettingsInternal];
+  const items = [closure_2, closure_3];
   return _require(589).useStateFromStores(items, () => {
-    let hasUnreadResult = outer1_2.hasUnread(id.id);
+    let hasUnreadResult = closure_1_2.hasUnread(id.id);
     if (hasUnreadResult) {
-      hasUnreadResult = outer1_3.resolveUnreadSetting(id) === outer1_4.ALL_MESSAGES;
+      hasUnreadResult = closure_1_3.resolveUnreadSetting(id) === closure_1_4.ALL_MESSAGES;
     }
     return hasUnreadResult;
   });

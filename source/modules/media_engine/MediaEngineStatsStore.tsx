@@ -1,14 +1,16 @@
-// Module ID: 4557
-// Function ID: 4558
+// Module ID: 4562
+// Function ID: 4563
 // Name: updateAveragedStatsHelper
-// Dependencies: [1218, 4558, 4531, 589, 709, 2]
+// Dependencies: [1218, 4563, 4536, 589, 709, 2]
 
-// Module 4557 (updateAveragedStatsHelper)
-import fetchFingerprint from "fetchFingerprint";
-import initialize from "initialize";
-import { Store } from "initialize";
+// Module 4562 (updateAveragedStatsHelper)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isStreamKey from "isStreamKey" /* 4536 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "initialize" /* 4563 */;
 
-const require = arg1;
+require = arg1;
 function updateAveragedStatsHelper(arg0, arg1, arg2, arr, arr2) {
   let tmp = arg2;
   const found = arr.find((type) => "video" === type.type);
@@ -199,11 +201,12 @@ function getStatsHistoryAtIndex(arg0, arg1) {
 let closure_4 = {};
 let closure_5 = {};
 let closure_6 = {};
+const Store = initializeDefault.Store;
 class MediaEngineStatsStore extends Store {
 }
 const prototype = MediaEngineStatsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, initialize);
+  this.waitFor(closure_2, closure_3);
 };
 prototype["getConnectionStats"] = function getConnectionStats(mediaEngineConnectionId) {
   let tmp = null;
@@ -260,7 +263,7 @@ prototype["getAccumulatedPerformanceStats"] = function getAccumulatedPerformance
   }
 };
 MediaEngineStatsStore.displayName = "MediaEngineStatsStore";
-const mediaEngineStatsStore = new MediaEngineStatsStore(require("dispatcher"), {
+const mediaEngineStatsStore = new MediaEngineStatsStore(dispatcherDefault, {
   MEDIA_ENGINE_CONNECTION_STATS: function handleMediaEngineConnectionStats(arg0) {
     const iter = arg0.connectionStats[Symbol.iterator]();
     const nextResult = iter.next();
@@ -328,7 +331,7 @@ const mediaEngineStatsStore = new MediaEngineStatsStore(require("dispatcher"), {
       if (null == mediaEngineConnectionId) {
         return false;
       } else {
-        const ownerId = require(4531) /* isStreamKey */.decodeStreamKey(streamKey).ownerId;
+        const ownerId = isStreamKey.decodeStreamKey(streamKey).ownerId;
         let tmp11;
         if (dependencyMap2[mediaEngineConnectionId] != null) {
           tmp11 = tmp10[ownerId];
@@ -347,8 +350,6 @@ const mediaEngineStatsStore = new MediaEngineStatsStore(require("dispatcher"), {
     }
   },
   RTC_CONNECTION_VIDEO: function handleVideo(arg0) {
-    let mediaEngineConnectionId;
-    let userId;
     ({ userId, mediaEngineConnectionId } = arg0);
     if (null == mediaEngineConnectionId) {
       return false;
@@ -370,6 +371,6 @@ const mediaEngineStatsStore = new MediaEngineStatsStore(require("dispatcher"), {
     }
   }
 });
-const result = require("isStreamKey").fileFinishedImporting("modules/media_engine/MediaEngineStatsStore.tsx");
+const result = require("set").fileFinishedImporting("modules/media_engine/MediaEngineStatsStore.tsx");
 
 export default mediaEngineStatsStore;

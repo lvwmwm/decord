@@ -1,13 +1,16 @@
-// Module ID: 7260
-// Function ID: 7261
+// Module ID: 7298
+// Function ID: 7299
 // Name: hasFlag
 // Dependencies: [676, 1403, 2]
 // Exports: default
 
-// Module 7260 (hasFlag)
-import { ActivityFlags } from "ME";
+// Module 7298 (hasFlag)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import hasFlag from "hasFlag" /* 1403 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/utils/hasFlag.tsx");
+const ActivityFlags = ME.ActivityFlags;
+const result = set.fileFinishedImporting("modules/activities/utils/hasFlag.tsx");
 
 export default function hasFlag(flags) {
   let tmp = arg1 !== ActivityFlags.INSTANCE;
@@ -18,8 +21,8 @@ export default function hasFlag(flags) {
       if (num == null) {
         num = 0;
       }
-      hasFlagResult = require(1403) /* hasFlag */.hasFlag(num, arg1);
-      const obj = require(1403) /* hasFlag */;
+      hasFlagResult = hasFlag.hasFlag(num, arg1);
+      const obj = hasFlag;
     }
     tmp = hasFlagResult;
   }

@@ -1,24 +1,21 @@
-// Module ID: 11130
-// Function ID: 11131
+// Module ID: 11169
+// Function ID: 11170
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [1391, 1910, 4021, 4542, 4481, 676, 8699, 589, 1236, 2]
+// Dependencies: [1391, 1910, 4024, 4547, 4485, 676, 8736, 589, 1236, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 11130 (getEmbeddedActivityLaunchability)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import updateVoiceState from "updateVoiceState";
-import { SUPPORTED_ACTIVITIES_CHANNEL_TYPES as closure_6 } from "items3";
-import { Permissions } from "ME";
+// Module 11169 (getEmbeddedActivityLaunchability)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 8736 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_5 from "updateVoiceState" /* 4547 */;
+import { SUPPORTED_ACTIVITIES_CHANNEL_TYPES as closure_6 } from "items3" /* 4485 */;
+import { Permissions } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function getEmbeddedActivityLaunchability(arg0) {
-  let ChannelStore;
-  let GuildStore;
-  let PermissionStore;
-  let VoiceStateStore;
-  let channelId;
   ({ channelId, ChannelStore, GuildStore, PermissionStore, VoiceStateStore } = arg0);
   const channel = ChannelStore.getChannel(channelId);
   if (null == channel) {
@@ -60,34 +57,34 @@ function getEmbeddedActivityLaunchability(arg0) {
     } else {
       return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS;
     }
-    obj2 = require(8699) /* useIsActivitiesEnabledForCurrentPlatform */;
+    obj2 = useIsActivitiesEnabledForCurrentPlatform;
   } else {
     return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL;
   }
 }
 const obj = { CAN_LAUNCH: 0, [0]: "CAN_LAUNCH", NO_USE_EMBEDDED_ACTIVITIES_PERMISSION: 1, [1]: "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", NO_CHANNEL_CONNECT_PERMISSION: 2, [2]: "NO_CHANNEL_CONNECT_PERMISSION", NO_CHANNEL: 3, [3]: "NO_CHANNEL", NO_GUILD: 4, [4]: "NO_GUILD", IS_AFK_CHANNEL: 5, [5]: "IS_AFK_CHANNEL", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS: 6, [6]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL: 7, [7]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL" };
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/activities/utils/getEmbeddedActivityLaunchability.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/utils/getEmbeddedActivityLaunchability.tsx");
 
 export const EmbeddedActivityLaunchability = obj;
 export { getEmbeddedActivityLaunchability };
 export const getEmbeddedActivityLaunchabilityForChannel = function getEmbeddedActivityLaunchabilityForChannel(channelId) {
-  return getEmbeddedActivityLaunchability({ channelId, ChannelStore: ensureGuildLoaded, GuildStore: createGuildRecordFromRust, PermissionStore: getUncachedChannelPermissions, VoiceStateStore: updateVoiceState });
+  return getEmbeddedActivityLaunchability({ channelId, ChannelStore: closure_2, GuildStore: closure_3, PermissionStore: closure_4, VoiceStateStore: closure_5 });
 };
 export const useEmbeddedActivityLaunchability = function useEmbeddedActivityLaunchability(channelId) {
   const _require = channelId;
-  const items = [ensureGuildLoaded, createGuildRecordFromRust, getUncachedChannelPermissions, updateVoiceState];
+  const items = [closure_2, closure_3, closure_4, closure_5];
   const items1 = [channelId];
-  return _require(589).useStateFromStores(items, () => outer1_9({ channelId: closure_0, ChannelStore: outer1_2, GuildStore: outer1_3, PermissionStore: outer1_4, VoiceStateStore: outer1_5 }), items1);
+  return _require(589).useStateFromStores(items, () => closure_1_9({ channelId: closure_0, ChannelStore: closure_1_2, GuildStore: closure_1_3, PermissionStore: closure_1_4, VoiceStateStore: closure_1_5 }), items1);
 };
 export const getEmbeddedActivityLaunchabilityLabel = function getEmbeddedActivityLaunchabilityLabel(arg0) {
   if (obj.CAN_LAUNCH === arg0) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(require(1236) /* getSystemLocale */.t.qJvTKQ);
+    const intl3 = getSystemLocale.intl;
+    return intl3.string(getSystemLocale.t.qJvTKQ);
   } else if (tmp.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === arg0) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(require(1236) /* getSystemLocale */.t.hHGrWz);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(getSystemLocale.t.hHGrWz);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.j29zCr);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.j29zCr);
   }
 };

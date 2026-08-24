@@ -1,19 +1,19 @@
-// Module ID: 4656
-// Function ID: 4657
-// Dependencies: [19, 21, 4342, 709, 4657, 1236, 1367, 4660, 4763, 4763, 2007, 2]
+// Module ID: 4662
+// Function ID: 4663
+// Dependencies: [19, 21, 4346, 709, 4663, 1236, 1367, 4667, 4768, 4768, 2008, 2]
 
-// Module 4656
-import "noop";
-import jsxProd from "jsxProd";
+// Module 4662
+import noopAll from "noop" /* 19 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import useAlertStore from "useAlertStore" /* 4663 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
 let c6 = null;
 let c7 = 0;
-const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("actions/native/AlertActionCreators.tsx");
+const result = require("set").fileFinishedImporting("actions/native/AlertActionCreators.tsx");
 
 export default {
   openLazy(hideActionSheet) {
@@ -27,33 +27,22 @@ export default {
     }
     return hideActionSheet.importer().then((alert) => {
       if (flag) {
-        let obj = flag2(outer1_2[2]);
+        let obj = flag2(closure_1_2[2]);
         obj.hideActionSheet();
       }
       obj = { type: "ALERT_OPEN", alert, isDismissable: flag2 };
-      flag2(outer1_2[3]).dispatch(obj);
+      flag2(closure_1_2[3]).dispatch(obj);
     });
   },
   close() {
     if (null != c6) {
       c6 = null;
-      require(4657) /* useAlertStore */.dismissAlert(tmp);
-      const obj = require(4657) /* useAlertStore */;
+      useAlertStore.dismissAlert(tmp);
+      const obj = useAlertStore;
     }
-    importDefault(709).dispatch({ type: "ALERT_CLOSE" });
+    dispatcherDefault.dispatch({ type: "ALERT_CLOSE" });
   },
   show(hideActionSheet) {
-    let body;
-    let body2;
-    let c3;
-    let c4;
-    let cancelText;
-    let children;
-    let confirmColor;
-    let confirmText;
-    let confirmText2;
-    let isDismissable;
-    let title;
     let flag = hideActionSheet.hideActionSheet;
     if (flag === undefined) {
       flag = true;
@@ -64,10 +53,10 @@ export default {
       confirmText = intl.string(confirmText(1236).t.BddRzS);
     }
     let merged = Object.assign(hideActionSheet, Object.create(null));
-    let dependencyMap;
+    dependencyMap = undefined;
     let callback;
     c4 = undefined;
-    let c5;
+    c5 = undefined;
     let obj = confirmText(1367);
     if (obj.isMobileVisualRefreshEnabled("AlertActionCreators")) {
       obj = {};
@@ -135,50 +124,50 @@ export default {
       }
       if (!tmp11) {
         if (flag) {
-          let obj4 = merged(4342);
+          let obj4 = merged(4346);
           obj4.hideActionSheet();
         }
         if (null != c6) {
-          let tmp4Result = tmp4(4657);
+          let tmp4Result = tmp4(4663);
           tmp4Result.dismissAlert(c6);
         }
         merged(709).dispatch({ type: "ALERT_CLOSE" });
-        let closure_7 = tmp24 + 1;
+        closure_7 = tmp24 + 1;
         const text = `legacy-alert-${tmp24}`;
         dependencyMap = text;
         c6 = text;
         ({ cancelText, onConfirm: c3, onCancel: c4 } = merged);
         c5 = false;
         ({ title, body: body2, children, confirmColor } = merged);
-        tmp4Result = tmp4(4657);
+        tmp4Result = tmp4(4663);
         obj = { title: null, content: null, extraContent: null, actions: null };
         obj[0] = title;
         obj[1] = body2;
         obj[2] = children;
-        const obj1 = { variant: null, text: null, onPress: null };
+        obj1 = { variant: null, text: null, onPress: null };
         const obj7 = merged(709);
         const tmp27 = c5;
         const tmp28 = c4;
-        obj1[0] = tmp4(4763).getAlertButtonVariant(confirmColor);
+        obj1[0] = tmp4(4768).getAlertButtonVariant(confirmColor);
         obj1[1] = confirmText;
         obj1[2] = function onPress() {
-          let c5 = true;
+          c5 = true;
           if (c3 != null) {
             tmp();
           }
         };
-        const items = [callback(tmp4(4660).AlertActionButton, obj1), ];
+        const items = [callback(tmp4(4667).AlertActionButton, obj1), ];
         let tmp26Result = null;
         if (null != cancelText) {
           const obj2 = { variant: "secondary", text: null, onPress: null };
           obj2[1] = cancelText;
           obj2[2] = function onPress() {
-            let c5 = true;
+            c5 = true;
             if (c4 != null) {
               tmp();
             }
           };
-          tmp26Result = tmp26(tmp4(4660).AlertActionButton, obj2);
+          tmp26Result = tmp26(tmp4(4667).AlertActionButton, obj2);
         }
         const obj3 = { children: null };
         items[1] = tmp26Result;
@@ -186,7 +175,7 @@ export default {
         obj[3] = tmp27(tmp28, obj3);
         obj4 = { dismissable: null };
         obj4[0] = true === isDismissable;
-        tmp4Result.openAlert(text, callback(tmp4(4660).AlertModal, obj), () => {
+        tmp4Result.openAlert(text, callback(tmp4(4667).AlertModal, obj), () => {
           if (!c5) {
             if (c4 != null) {
               tmp();
@@ -196,24 +185,24 @@ export default {
             c6 = null;
           }
         }, obj4);
-        const tmp4Result1 = tmp4(4763);
+        const tmp4Result1 = tmp4(4768);
       }
     }
     if (null != c6) {
-      tmp4(4657).dismissAlert(c6);
+      tmp4(4663).dismissAlert(c6);
       c6 = null;
-      const tmp4Result2 = tmp4(4657);
+      const tmp4Result2 = tmp4(4663);
     }
     this.openLazy({
       importer() {
         return confirmText(_undefined[10])(_undefined[9], _undefined.paths).then((arg0) => {
-          let closure_0 = arg0.default;
+          closure_0 = arg0.default;
           return (arg0) => {
             const obj = {};
-            const merged = Object.assign(arg0);
-            const merged1 = Object.assign(outer1_1);
+            merged = Object.assign(arg0);
+            const merged1 = Object.assign(closure_1_1);
             obj.confirmText = closure_0;
-            return outer2_3(closure_0, obj);
+            return closure_2_3(closure_0, obj);
           };
         });
       },
@@ -223,7 +212,7 @@ export default {
   },
   confirm(arg0) {
     const self = this;
-    let closure_0 = arg0;
+    closure_0 = arg0;
     return new Promise((arg0) => {
       const callback = arg0;
       const obj = {
@@ -233,8 +222,8 @@ export default {
         cancelText: null,
         onCancel: null
       };
-      const intl = callback(outer1_2[5]).intl;
-      obj[1] = intl.string(callback(outer1_2[5]).t["ETE/oC"]);
+      const intl = callback(closure_1_2[5]).intl;
+      obj[1] = intl.string(callback(closure_1_2[5]).t["ETE/oC"]);
       obj[2] = function onCancel() {
         callback(false);
       };

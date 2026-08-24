@@ -1,15 +1,18 @@
-// Module ID: 5340
-// Function ID: 5341
+// Module ID: 5345
+// Function ID: 5346
 // Name: fromServer
-// Dependencies: [5341, 5339, 5342, 2]
+// Dependencies: [5346, 5344, 5347, 2]
 
-// Module 5340 (fromServer)
-import { FeaturedCategorySubblockRecord as closure_2 } from "fromServer";
+// Module 5345 (fromServer)
+import set from "set" /* 2 */;
+import ShopBlockType from "ShopBlockType" /* 5344 */;
+import fromServer from "fromServer" /* 5346 */;
 
+let closure_2 = fromServer.FeaturedCategorySubblockRecord;
 let prototype;
 prototype = function FeaturedBlockRecord(subblocks) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(5339) /* ShopBlockType */.ShopBlockType.FEATURED;
+  obj.type = ShopBlockType.ShopBlockType.FEATURED;
   subblocks = subblocks.subblocks;
   obj.subblocks = subblocks.map((type) => {
     if (type.type === callback(table[2]).FeaturedSubblockType.CATEGORY) {
@@ -27,7 +30,7 @@ prototype["fromServer"] = function fromServer(subblocks) {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(5339) /* ShopBlockType */.ShopBlockType.FEATURED;
+  obj.type = ShopBlockType.ShopBlockType.FEATURED;
   subblocks = subblocks.subblocks;
   obj.subblocks = subblocks.map((type) => {
     if (type.type === callback(table[2]).FeaturedSubblockType.CATEGORY) {
@@ -40,6 +43,6 @@ prototype["fromServer"] = function fromServer(subblocks) {
   });
   return obj;
 };
-const result = require("FeaturedSubblockType").fileFinishedImporting("modules/collectibles/records/FeaturedBlockRecord.tsx");
+const result = set.fileFinishedImporting("modules/collectibles/records/FeaturedBlockRecord.tsx");
 
 export const FeaturedBlockRecord = prototype;

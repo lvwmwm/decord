@@ -1,18 +1,20 @@
-// Module ID: 5306
-// Function ID: 5307
+// Module ID: 5311
+// Function ID: 5312
 // Name: fromServer
 // Dependencies: [1948, 1949, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 5306 (fromServer)
-import "fromServer";
+// Module 5311 (fromServer)
+import fromServerDefault from "fromServer" /* 1948 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
 
-const require = arg1;
+require = arg1;
+fromServerDefault;
 let prototype;
 prototype = function AvatarDecorationRecord(arg0) {
   const tmp2 = new prototype(arg0, new.target, new.target, tmp);
   // ThrowIfThisInitialized (0x7c)
-  tmp2.type = require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION;
+  tmp2.type = CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION;
   ({ asset: tmp2.asset, label: tmp2.label } = arg0);
   return tmp2;
 }.prototype;
@@ -28,7 +30,7 @@ prototype["fromServer"] = function fromServer(arg0) {
   }
   tmp = new tmp(obj, arg0, this, merged);
   // ThrowIfThisInitialized (0x7c)
-  tmp.type = require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION;
+  tmp.type = CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION;
   ({ asset: tmp4.asset, label: tmp4.label } = obj);
   return tmp;
 };

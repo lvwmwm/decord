@@ -1,12 +1,12 @@
-// Module ID: 10175
-// Function ID: 10176
+// Module ID: 10214
+// Function ID: 10215
 // Name: set
-// Dependencies: [19, 676, 10176, 2]
+// Dependencies: [19, 676, 10215, 2]
 // Exports: usePressHorizontalAutocompleteItemHandler
 
-// Module 10175 (set)
-import noop from "noop";
-import set from "AutocompleteFormDivider";
+// Module 10214 (set)
+import closure_2 from "noop" /* 19 */;
+import set from "set" /* 2 */;
 
 const require = arg1;
 let items = [, , , ];

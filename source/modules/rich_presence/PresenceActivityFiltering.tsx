@@ -1,17 +1,17 @@
-// Module ID: 7257
-// Function ID: 7258
+// Module ID: 7295
+// Function ID: 7296
 // Name: doesGameHaveRichPresence
-// Dependencies: [4478, 1954, 2]
+// Dependencies: [4482, 1954, 2]
 // Exports: doesGameHaveRichPresence
 
-// Module 7257 (doesGameHaveRichPresence)
-import addApplication from "addApplication";
+// Module 7295 (doesGameHaveRichPresence)
+import closure_2 from "addApplication" /* 4482 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rich_presence/PresenceActivityFiltering.tsx");
 
 export const doesGameHaveRichPresence = function doesGameHaveRichPresence(id, items2) {
-  let closure_0 = items2;
+  closure_0 = items2;
   if (null !== id.id) {
     if (undefined !== id.id) {
       application = application.getApplication(id.id);
@@ -22,7 +22,7 @@ export const doesGameHaveRichPresence = function doesGameHaveRichPresence(id, it
       if (tmp3) {
         const linkedGames = application.linkedGames;
         tmp3 = undefined !== linkedGames.find((type) => {
-          let tmp = type.type === items2(outer1_1[1]).GameLinkTypes.LINKED;
+          let tmp = type.type === items2(closure_1_1[1]).GameLinkTypes.LINKED;
           if (tmp) {
             const id = type.id;
             tmp = null != id.find((application_id) => application_id.application_id === id);

@@ -1,31 +1,29 @@
-// Module ID: 13890
-// Function ID: 13891
+// Module ID: 13957
+// Function ID: 13958
 // Name: createVoiceSettingsEventHandlers
-// Dependencies: [4277, 676, 4375, 12, 2]
+// Dependencies: [4281, 676, 4379, 12, 2]
 // Exports: default
 
-// Module 13890 (createVoiceSettingsEventHandlers)
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
-import { RPCEvents } from "ME";
+// Module 13957 (createVoiceSettingsEventHandlers)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4281 */;
 
-let c3;
-let c4;
 ({ RPC_SCOPE_CONFIG: c3, RPC_LOCAL_SCOPE: c4 } = RPC_SCOPE_CONFIG);
-const result = require("set").fileFinishedImporting("modules/rpc/server/events/VoiceSettingsEventsFactory.tsx");
+const RPCEvents = ME.RPCEvents;
+const result = set.fileFinishedImporting("modules/rpc/server/events/VoiceSettingsEventsFactory.tsx");
 
 export default function createVoiceSettingsEventHandlers(arg0, arg1) {
   const _require = arg0;
-  let closure_1 = arg1;
+  closure_1 = arg1;
   let obj = {};
   obj = { scope: null, handler: null };
   obj = {};
-  const items = [_require(4375).OAuth2Scopes.RPC, _require(4375).OAuth2Scopes.RPC_VOICE_READ];
+  const items = [_require(4379).OAuth2Scopes.RPC, _require(4379).OAuth2Scopes.RPC_VOICE_READ];
   obj[constants.ANY] = items;
   obj[0] = obj;
   obj[1] = function handler() {
     return (arg0) => {
-      let dispatch;
-      let prevState;
       ({ prevState, dispatch } = arg0);
       const tmp = callback();
       if (!obj.isEqual(tmp, prevState)) {
@@ -44,7 +42,7 @@ export default function createVoiceSettingsEventHandlers(arg0, arg1) {
         if (null == socket.application.id) {
           return prevState;
         } else {
-          const tmp4 = outer1_1(tmp2.application.id);
+          const tmp4 = closure_1_1(tmp2.application.id);
           if (!obj.isEqual(tmp4, prevState)) {
             tmp(tmp4);
           }

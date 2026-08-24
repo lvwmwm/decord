@@ -1,27 +1,27 @@
-// Module ID: 15310
-// Function ID: 15311
+// Module ID: 15374
+// Function ID: 15375
 // Name: useMessagesData
-// Dependencies: [32, 19, 4495, 1218, 4030, 5388, 589, 15311, 4066, 2]
+// Dependencies: [32, 19, 4499, 1218, 4033, 5393, 589, 15375, 4069, 2]
 // Exports: default
 
-// Module 15310 (useMessagesData)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import _handleConnectionOpen from "_handleConnectionOpen";
-import fetchFingerprint from "fetchFingerprint";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import makeSortedChannel from "makeSortedChannel";
+// Module 15374 (useMessagesData)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "_handleConnectionOpen" /* 4499 */;
+import closure_6 from "fetchFingerprint" /* 1218 */;
+import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import closure_8 from "makeSortedChannel" /* 5393 */;
 
 const require = arg1;
 let obj = { HappeningNow: 0, [0]: "HappeningNow", EmptyState: 1, [1]: "EmptyState" };
-const result = require("_handleConnectionOpen").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesData.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesData.tsx");
 
 export default function useMessagesData() {
   let items = [numFriendSuggestions, friendSuggestions];
   const stateFromStoresObject = connected(first[6]).useStateFromStoresObject(items, () => ({ connected: null != numFriendSuggestions.getSessionId(), connectedToGateway: friendSuggestions.isConnected() }));
   connected = stateFromStoresObject.connected;
   const connectedToGateway = stateFromStoresObject.connectedToGateway;
-  let obj = connected(first[6]);
+  obj = connected(first[6]);
   const items1 = [stateFromStores];
   const tmp4 = callback(connected(first[6]).useStateFromStoresArray(items1, () => stateFromStores.getSortedChannels()), 2);
   first = tmp4[0];
@@ -40,7 +40,7 @@ export default function useMessagesData() {
   const tmp7 = connectedToGateway(first[7]);
   const items2 = [setting];
   stateFromStores = connected(first[6]).useStateFromStores(items2, () => setting.getFriendCount());
-  let closure_9 = setAdded.useRef(-1);
+  closure_9 = setAdded.useRef(-1);
   const items3 = [connected, connectedToGateway, first, tmp4[1], numFriendSuggestions, friendSuggestions, setting, stateFromStores, setAdded];
   return setAdded.useMemo(() => {
     if (-1 === ref.current) {
@@ -55,7 +55,7 @@ export default function useMessagesData() {
       }
     }
     let arr = first;
-    let arr1 = tmp6;
+    let arr1 = length;
     if (numFriendSuggestions <= 0) {
       if (tmp3) {
         let num3 = 0;
@@ -87,7 +87,7 @@ export default function useMessagesData() {
     }
     items.push(num5);
     items.push(bound);
-    if (first.length + tmp6.length > 0) {
+    if (first.length + length.length > 0) {
       let HappeningNow = null;
       if (!setting) {
         HappeningNow = ref.HappeningNow;
@@ -99,7 +99,7 @@ export default function useMessagesData() {
         EmptyState = ref.EmptyState;
       }
     }
-    const obj = { channels: arr1, channelFavorites: arr, dataKey: null, showFullscreenEmptyState: null, setAddedFriendSuggestions: null, friendSuggestions: null, renderHeader: null, renderFooter: null, sections: null };
+    obj = { channels: arr1, channelFavorites: arr, dataKey: null, showFullscreenEmptyState: null, setAddedFriendSuggestions: null, friendSuggestions: null, renderHeader: null, renderFooter: null, sections: null };
     let combined = null;
     if (ref.current > 0) {
       const _HermesInternal = HermesInternal;
@@ -107,7 +107,7 @@ export default function useMessagesData() {
     }
     obj[2] = combined;
     let tmp26 = !tmp3;
-    if (first.length + tmp6.length <= 0) {
+    if (first.length + length.length <= 0) {
       tmp26 = connected;
     }
     if (tmp26) {

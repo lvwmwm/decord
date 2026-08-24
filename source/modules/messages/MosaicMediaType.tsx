@@ -1,14 +1,18 @@
-// Module ID: 12042
-// Function ID: 12043
+// Module ID: 12094
+// Function ID: 12095
 // Name: isVisualMedia
-// Dependencies: [676, 4811, 1403, 12043, 2]
+// Dependencies: [676, 4816, 1403, 12095, 2]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia
 
-// Module 12042 (isVisualMedia)
-import { MessageAttachmentFlags } from "ME";
+// Module 12094 (isVisualMedia)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4816 */;
+import set2 from "set" /* 12095 */;
 
+const MessageAttachmentFlags = ME.MessageAttachmentFlags;
 const re3 = /\.(mp3|m4a|ogg|opus|wav|flac)$/i;
-const result = require("hasFlag").fileFinishedImporting("modules/messages/MosaicMediaType.tsx");
+const result = set.fileFinishedImporting("modules/messages/MosaicMediaType.tsx");
 
 export function isVisualMedia(arg0) {
   let tmp = "IMAGE" === arg0;
@@ -24,9 +28,6 @@ export function isVisualMedia(arg0) {
   return tmp;
 }
 export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAttachment(proxy_url, arg1) {
-  let filename;
-  let height;
-  let width;
   ({ filename, width, height } = proxy_url);
   if (arg1) {
     if (null != width) {
@@ -35,7 +36,7 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
           if (height > 0) {
             let str3 = "IMAGE";
             if (!obj2.isImageFile(filename)) {
-              let tmp5Result = tmp5(4811);
+              let tmp5Result = tmp5(4816);
               let str5 = "INVALID";
               if (tmp5Result.isVideoFile(filename)) {
                 str5 = "INVALID";
@@ -55,7 +56,7 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
               str3 = str5;
             }
             let str = str3;
-            obj2 = require(4811) /* urlMatchesFileExtension */;
+            obj2 = urlMatchesFileExtension;
           }
           return str;
         }
@@ -73,14 +74,11 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
     if (obj.isPlaintextPreviewableFile(filename)) {
       str2 = "PLAINTEXT_PREVIEW";
     }
-    obj = require(12043) /* set */;
+    obj = set2;
   }
   str = str2;
 };
 export const getMosaicMediaTypeForUnfurledMediaItem = function getMosaicMediaTypeForUnfurledMediaItem(arg0) {
-  let contentType;
-  let height;
-  let width;
   ({ contentType, width, height } = arg0);
   if (null != width) {
     if (width > 0) {
@@ -92,9 +90,9 @@ export const getMosaicMediaTypeForUnfurledMediaItem = function getMosaicMediaTyp
             if (tmpResult.isVideoContentType(contentType)) {
               return "VIDEO";
             }
-            tmpResult = tmp(4811);
+            tmpResult = tmp(4816);
           }
-          obj = require(4811) /* urlMatchesFileExtension */;
+          obj = urlMatchesFileExtension;
           tmp = require;
         }
       }

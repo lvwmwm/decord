@@ -4,9 +4,12 @@
 // Dependencies: [630, 631]
 
 // Module 629 (baseKeys)
+import isPrototype from "isPrototype" /* 630 */;
+import overArg from "overArg" /* 631 */;
+
 
 export default function baseKeys(arg0) {
-  if (require(630) /* isPrototype */(arg0)) {
+  if (isPrototype(arg0)) {
     const items = [];
     const _Object = Object;
     for (const key10016 in Object(arg0)) {
@@ -31,7 +34,7 @@ export default function baseKeys(arg0) {
     }
     return items;
   } else {
-    return tmp(631)(arg0);
+    return overArg(arg0);
   }
-  tmp = require;
+  const tmp = require;
 };

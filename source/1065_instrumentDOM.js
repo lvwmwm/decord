@@ -4,14 +4,17 @@
 // Dependencies: [817, 1039]
 
 // Module 1065 (instrumentDOM)
-let require = arg1;
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+import WINDOW2 from "WINDOW" /* 1039 */;
+
+require = arg1;
 let dependencyMap = arg6;
 function instrumentDOM() {
-  if (require(1039) /* WINDOW */.WINDOW.document) {
+  if (WINDOW2.WINDOW.document) {
     const bindResult = tmp(817).triggerHandlers.bind(null, "dom");
     require = bindResult;
     require = bindResult;
-    const dependencyMap = true;
+    dependencyMap = true;
     const fn = (_sentryCaptured) => {
       if (_sentryCaptured) {
         if (!_sentryCaptured._sentryCaptured) {
@@ -77,19 +80,18 @@ function instrumentDOM() {
               obj[1] = str6;
               obj[2] = flag;
               callback(obj);
-              const outer1_3 = _sentryCaptured.type;
-              let _sentryId;
+              type = _sentryCaptured.type;
+              _sentryId = undefined;
               if (tmp) {
                 _sentryId = tmp._sentryId;
               }
-              const outer1_4 = _sentryId;
             }
             const _clearTimeout = clearTimeout;
-            clearTimeout(outer1_2);
+            clearTimeout(timeout);
             const WINDOW = tmp7(tmp8[1]).WINDOW;
-            outer1_2 = WINDOW.setTimeout(() => {
-              let c4;
-              let c3;
+            timeout = WINDOW.setTimeout(() => {
+              c4 = undefined;
+              c3 = undefined;
             }, 1000);
           }
         }
@@ -116,7 +118,7 @@ function instrumentDOM() {
       if (hasOwnPropertyResult) {
         let tmpResult = tmp(tmp2[0]);
         tmpResult.fill(prototype, "addEventListener", (arg0) => {
-          let closure_0 = arg0;
+          closure_0 = arg0;
           return function(arg0, arg1, arg2) {
             const self = this;
             if ("click" === arg0) {
@@ -132,7 +134,7 @@ function instrumentDOM() {
                 }
                 prop[arg0] = obj;
                 if (!obj.handler) {
-                  const tmp4 = outer2_6(closure_0);
+                  const tmp4 = closure_2_6(closure_0);
                   tmp.handler = tmp4;
                   const call = closure_0.call;
                   if (typeof call === "unknown") {
@@ -156,7 +158,7 @@ function instrumentDOM() {
         });
         tmpResult = tmp(tmp2[0]);
         tmpResult.fill(prototype, "removeEventListener", (arg0) => {
-          let closure_0 = arg0;
+          closure_0 = arg0;
           return function(arg0, arg1, arg2) {
             const self = this;
             if ("click" === arg0) {
@@ -204,7 +206,7 @@ function instrumentDOM() {
   }
 }
 function makeDOMEventHandler(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -274,19 +276,18 @@ function makeDOMEventHandler(arg0) {
             obj[1] = str6;
             obj[2] = flag;
             callback(obj);
-            const outer1_3 = _sentryCaptured.type;
-            let _sentryId;
+            type = _sentryCaptured.type;
+            _sentryId = undefined;
             if (tmp) {
               _sentryId = tmp._sentryId;
             }
-            const outer1_4 = _sentryId;
           }
           const _clearTimeout = clearTimeout;
-          clearTimeout(outer1_2);
+          clearTimeout(timeout);
           const WINDOW = tmp7(tmp8[1]).WINDOW;
-          outer1_2 = WINDOW.setTimeout(() => {
-            let c4;
-            let c3;
+          timeout = WINDOW.setTimeout(() => {
+            c4 = undefined;
+            c3 = undefined;
           }, 1000);
         }
       }
@@ -295,8 +296,8 @@ function makeDOMEventHandler(arg0) {
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.addClickKeypressInstrumentationHandler = function addClickKeypressInstrumentationHandler(arg0) {
-  require(817) /* registerSpanErrorInstrumentation */.addHandler("dom", arg0);
-  const obj = require(817) /* registerSpanErrorInstrumentation */;
-  require(817) /* registerSpanErrorInstrumentation */.maybeInstrument("dom", instrumentDOM);
+  registerSpanErrorInstrumentation.addHandler("dom", arg0);
+  const obj = registerSpanErrorInstrumentation;
+  registerSpanErrorInstrumentation.maybeInstrument("dom", instrumentDOM);
 };
 arg5.instrumentDOM = instrumentDOM;

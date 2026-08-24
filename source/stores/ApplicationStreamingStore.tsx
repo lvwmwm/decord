@@ -1,40 +1,38 @@
-// Module ID: 4652
-// Function ID: 4653
+// Module ID: 4658
+// Function ID: 4659
 // Name: reset
-// Dependencies: [4540, 4504, 1218, 1391, 1910, 4497, 4021, 4539, 1979, 4542, 676, 4532, 687, 4531, 4653, 4654, 4655, 2007, 7478, 589, 13074, 709, 2]
+// Dependencies: [4545, 4508, 1218, 1391, 1910, 4501, 4024, 4544, 1980, 4547, 676, 4537, 687, 4536, 4659, 4660, 4661, 2008, 7516, 589, 13130, 709, 2]
 
-// Module 4652 (reset)
-import set from "set";
-import initialize from "initialize";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import createRTCConnection from "createRTCConnection";
-import handleConnectionOpen from "handleConnectionOpen";
-import updateVoiceState from "updateVoiceState";
-import ME from "ME";
-import { StreamTypes } from "StreamIssueReportReasons";
-import { PersistedStore } from "initialize";
+// Module 4658 (reset)
+import initializeDefault from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isStreamKey from "isStreamKey" /* 4536 */;
+import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 4660 */;
+import canStreamInChannel from "canStreamInChannel" /* 7516 */;
+import canSpectateDefault from "canSpectate" /* 13130 */;
+import closure_8 from "set" /* 4545 */;
+import closure_9 from "initialize" /* 4508 */;
+import closure_10 from "fetchFingerprint" /* 1218 */;
+import closure_11 from "ensureGuildLoaded" /* 1391 */;
+import closure_12 from "createGuildRecordFromRust" /* 1910 */;
+import closure_13 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_14 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_15 from "createRTCConnection" /* 4544 */;
+import closure_16 from "handleConnectionOpen" /* 1980 */;
+import closure_17 from "updateVoiceState" /* 4547 */;
+import ME from "ME" /* 676 */;
+import { StreamTypes } from "StreamIssueReportReasons" /* 4537 */;
 
-let closure_18;
-let closure_19;
-let closure_20;
-let closure_21;
-let closure_22;
-const require = arg1;
+require = arg1;
 function reset() {
-  const map = new Map();
-  let closure_4 = {};
-  let closure_5 = {};
-  let closure_6 = {};
-  const map1 = new Map();
+  map = new Map();
+  closure_4 = {};
+  closure_5 = {};
+  closure_6 = {};
+  map1 = new Map();
 }
 function handleStreamUpdate(streamKey) {
-  let paused;
-  let region;
-  let viewerIds;
   streamKey = streamKey.streamKey;
   ({ region, viewerIds, paused } = streamKey);
   const value = map1.get(streamKey);
@@ -47,7 +45,7 @@ function handleStreamUpdate(streamKey) {
     map1.delete(streamKey);
   }
   const obj = {};
-  const merged = Object.assign(require(4531) /* isStreamKey */.decodeStreamKey(streamKey));
+  const merged = Object.assign(isStreamKey.decodeStreamKey(streamKey));
   obj.state = paused ? closure_18.PAUSED : closure_18.ACTIVE;
   const result = map.set(streamKey, obj);
   closure_5[streamKey] = { streamKey, region, viewerIds };
@@ -56,7 +54,7 @@ function handleStreamUpdate(streamKey) {
 let c24 = null;
 let closure_25 = {};
 let c26 = null;
-let closure_27 = 10 * require("set").Millis.SECOND;
+let closure_27 = 10 * setDefault.Millis.SECOND;
 let map = new Map();
 let closure_4 = {};
 let closure_5 = {};
@@ -64,13 +62,14 @@ let closure_6 = {};
 let map1 = new Map();
 let c28;
 let c29;
+const PersistedStore = initializeDefault.PersistedStore;
 class ApplicationStreamingStore extends PersistedStore {
 }
 const prototype = ApplicationStreamingStore.prototype;
 prototype["initialize"] = function initialize(selfStreamParticipantsHidden) {
-  const items = [getUncachedChannelPermissions];
+  const items = [closure_14];
   this.syncWith(items, () => true);
-  this.waitFor(fetchFingerprint, ensureGuildLoaded, getUncachedChannelPermissions, createRTCConnection, initialize, handleConnectionOpen);
+  this.waitFor(closure_10, closure_11, closure_14, closure_15, closure_9, closure_16);
   let prop;
   if (selfStreamParticipantsHidden != null) {
     prop = selfStreamParticipantsHidden.selfStreamParticipantsHidden;
@@ -96,7 +95,7 @@ prototype["isSelfStreamHidden"] = function isSelfStreamHidden(channelId) {
 };
 prototype["getLastActiveStream"] = function getLastActiveStream() {
   let tmp = null;
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  if (canSpectateDefault(closure_13)) {
     const _Array = Array;
     let arr = Array.from(map.values());
     arr = arr.pop();
@@ -108,7 +107,7 @@ prototype["getLastActiveStream"] = function getLastActiveStream() {
   return tmp;
 };
 prototype["getAllActiveStreams"] = function getAllActiveStreams() {
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  if (canSpectateDefault(closure_13)) {
     const _Array = Array;
     let items = Array.from(map.values());
   } else {
@@ -117,8 +116,8 @@ prototype["getAllActiveStreams"] = function getAllActiveStreams() {
   return items;
 };
 prototype["getAllActiveStreamsForChannel"] = function getAllActiveStreamsForChannel(channelId) {
-  let closure_0 = channelId;
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  closure_0 = channelId;
+  if (canSpectateDefault(closure_13)) {
     const _Array = Array;
     let found = Array.from(map.values()).filter((channelId) => channelId.channelId === closure_0);
     const arr = Array.from(map.values());
@@ -129,7 +128,7 @@ prototype["getAllActiveStreamsForChannel"] = function getAllActiveStreamsForChan
 };
 prototype["getActiveStreamForStreamKey"] = function getActiveStreamForStreamKey(id) {
   let tmp = null;
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  if (canSpectateDefault(closure_13)) {
     let value = map.get(id);
     if (value == null) {
       value = null;
@@ -139,10 +138,10 @@ prototype["getActiveStreamForStreamKey"] = function getActiveStreamForStreamKey(
   return tmp;
 };
 prototype["getActiveStreamForApplicationStream"] = function getActiveStreamForApplicationStream(streamForUser) {
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  if (canSpectateDefault(closure_13)) {
     if (null != streamForUser) {
       const self = this;
-      let activeStreamForStreamKey = this.getActiveStreamForStreamKey(require(4531) /* isStreamKey */.encodeStreamKey(streamForUser));
+      let activeStreamForStreamKey = this.getActiveStreamForStreamKey(isStreamKey.encodeStreamKey(streamForUser));
       if (activeStreamForStreamKey == null) {
         activeStreamForStreamKey = null;
       }
@@ -166,7 +165,7 @@ prototype["isStreamMarkedFull"] = function isStreamMarkedFull(encodeStreamKeyRes
 };
 prototype["getActiveStreamForUser"] = function getActiveStreamForUser(id, guildId) {
   const self = this;
-  let closure_0 = id;
+  closure_0 = id;
   const streamForUser = this.getStreamForUser(id, guildId);
   if (null != streamForUser) {
     let activeStreamForApplicationStream = self.getActiveStreamForApplicationStream(streamForUser);
@@ -189,7 +188,7 @@ prototype["getStreamerActiveStreamMetadata"] = function getStreamerActiveStreamM
     const activeStreamForUser = this.getActiveStreamForUser(id, channel.getGuildId());
     let tmp4 = null;
     if (null != activeStreamForUser) {
-      const obj2 = require(4531) /* isStreamKey */;
+      const obj2 = isStreamKey;
       let tmp8 = dependencyMap3[obj2.encodeStreamKey(obj2, activeStreamForUser)];
       if (tmp8 == null) {
         tmp8 = null;
@@ -217,7 +216,7 @@ prototype["getIsActiveStreamPreviewDisabled"] = function getIsActiveStreamPrevie
   return flag;
 };
 prototype["getAnyStreamForUser"] = function getAnyStreamForUser(userId) {
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  if (canSpectateDefault(closure_13)) {
     let tmp4 = null;
     if (null != dependencyMap[userId]) {
       const _Object = Object;
@@ -228,7 +227,7 @@ prototype["getAnyStreamForUser"] = function getAnyStreamForUser(userId) {
         if (!tmp2) {
           let canBasicChannelResult = null != basicChannel;
           if (canBasicChannelResult) {
-            canBasicChannelResult = getUncachedChannelPermissions.canBasicChannel(constants.VIEW_CHANNEL, basicChannel);
+            canBasicChannelResult = closure_14.canBasicChannel(constants.VIEW_CHANNEL, basicChannel);
           }
           tmp2 = canBasicChannelResult;
         }
@@ -238,7 +237,7 @@ prototype["getAnyStreamForUser"] = function getAnyStreamForUser(userId) {
           let first = null != basicChannel1;
           if (first) {
             const obj2 = callback(table[18]);
-            first = obj2.canWatchStream(basicChannel1, updateVoiceState, createGuildRecordFromRust, getUncachedChannelPermissions, set)[0];
+            first = obj2.canWatchStream(basicChannel1, closure_17, closure_12, closure_14, closure_8)[0];
           }
           flag = first;
         }
@@ -254,10 +253,10 @@ prototype["getAnyStreamForUser"] = function getAnyStreamForUser(userId) {
     return null;
   }
 };
-prototype["getAnyDiscoverableStreamForUser"] = function getAnyDiscoverableStreamForUser(arg0) {
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+prototype["getAnyDiscoverableStreamForUser"] = function getAnyDiscoverableStreamForUser(id) {
+  if (canSpectateDefault(closure_13)) {
     let tmp4 = null;
-    if (null != dependencyMap[arg0]) {
+    if (null != dependencyMap[id]) {
       const _Object = Object;
       const values = Object.values(tmp3);
       let found = values.find((channelId) => {
@@ -266,7 +265,7 @@ prototype["getAnyDiscoverableStreamForUser"] = function getAnyDiscoverableStream
         if (!tmp2) {
           let canBasicChannelResult = null != basicChannel;
           if (canBasicChannelResult) {
-            canBasicChannelResult = getUncachedChannelPermissions.canBasicChannel(constants.VIEW_CHANNEL, basicChannel);
+            canBasicChannelResult = closure_14.canBasicChannel(constants.VIEW_CHANNEL, basicChannel);
           }
           tmp2 = canBasicChannelResult;
         }
@@ -276,7 +275,7 @@ prototype["getAnyDiscoverableStreamForUser"] = function getAnyDiscoverableStream
           let first = null != basicChannel1;
           if (first) {
             const obj2 = callback(table[18]);
-            first = obj2.canWatchStream(basicChannel1, updateVoiceState, createGuildRecordFromRust, getUncachedChannelPermissions, set)[0];
+            first = obj2.canWatchStream(basicChannel1, closure_17, closure_12, closure_14, closure_8)[0];
           }
           flag = first;
         }
@@ -296,7 +295,7 @@ prototype["getAnyDiscoverableStreamForUser"] = function getAnyDiscoverableStream
   }
 };
 prototype["getStreamForUser"] = function getStreamForUser(id, guildId) {
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  if (canSpectateDefault(closure_13)) {
     let tmp5;
     if (dependencyMap[id] != null) {
       let tmp6 = guildId;
@@ -312,7 +311,7 @@ prototype["getStreamForUser"] = function getStreamForUser(id, guildId) {
       if (!tmp10) {
         let canBasicChannelResult = null != basicChannel;
         if (canBasicChannelResult) {
-          canBasicChannelResult = getUncachedChannelPermissions.canBasicChannel(constants4.VIEW_CHANNEL, basicChannel);
+          canBasicChannelResult = closure_14.canBasicChannel(constants4.VIEW_CHANNEL, basicChannel);
         }
         tmp10 = canBasicChannelResult;
       }
@@ -321,8 +320,8 @@ prototype["getStreamForUser"] = function getStreamForUser(id, guildId) {
         const basicChannel1 = obj.getBasicChannel(tmp5.channelId);
         let first = null != basicChannel1;
         if (first) {
-          const obj2 = require(7478) /* canStreamInChannel */;
-          first = obj2.canWatchStream(basicChannel1, updateVoiceState, createGuildRecordFromRust, getUncachedChannelPermissions, set)[0];
+          const obj2 = canStreamInChannel;
+          first = obj2.canWatchStream(basicChannel1, closure_17, closure_12, closure_14, closure_8)[0];
         }
         flag = first;
       }
@@ -340,7 +339,7 @@ prototype["getStreamForUser"] = function getStreamForUser(id, guildId) {
 };
 prototype["getRTCStream"] = function getRTCStream(arg0) {
   let tmp = null;
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  if (canSpectateDefault(closure_13)) {
     let tmp4 = dependencyMap2[arg0];
     if (tmp4 == null) {
       tmp4 = null;
@@ -351,7 +350,7 @@ prototype["getRTCStream"] = function getRTCStream(arg0) {
 };
 prototype["getAllApplicationStreams"] = function getAllApplicationStreams() {
   const items = [];
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  if (canSpectateDefault(closure_13)) {
     for (const key10011 in closure_4) {
       let tmp5 = key10011;
       let tmp6 = dependencyMap;
@@ -379,7 +378,7 @@ prototype["getAllApplicationStreams"] = function getAllApplicationStreams() {
         if (!tmp5) {
           let canBasicChannelResult = null != basicChannel;
           if (canBasicChannelResult) {
-            canBasicChannelResult = getUncachedChannelPermissions.canBasicChannel(constants.VIEW_CHANNEL, basicChannel);
+            canBasicChannelResult = closure_14.canBasicChannel(constants.VIEW_CHANNEL, basicChannel);
           }
           tmp5 = canBasicChannelResult;
         }
@@ -393,9 +392,9 @@ prototype["getAllApplicationStreams"] = function getAllApplicationStreams() {
   return found;
 };
 prototype["getAllApplicationStreamsForChannel"] = function getAllApplicationStreamsForChannel(id) {
-  let closure_0 = id;
+  closure_0 = id;
   const items = [];
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  if (canSpectateDefault(closure_13)) {
     for (const key10012 in closure_4) {
       let tmp5 = key10012;
       let tmp6 = dependencyMap;
@@ -421,12 +420,12 @@ prototype["getAllApplicationStreamsForChannel"] = function getAllApplicationStre
         tmp = channelId.channelId === closure_0;
       }
       if (tmp) {
-        const basicChannel = outer1_11.getBasicChannel(channelId.channelId);
-        let tmp6 = channelId.streamType === outer1_23.CALL;
+        const basicChannel = closure_1_11.getBasicChannel(channelId.channelId);
+        let tmp6 = channelId.streamType === closure_1_23.CALL;
         if (!tmp6) {
           let canBasicChannelResult = null != basicChannel;
           if (canBasicChannelResult) {
-            canBasicChannelResult = outer1_14.canBasicChannel(outer1_22.VIEW_CHANNEL, basicChannel);
+            canBasicChannelResult = closure_1_14.canBasicChannel(closure_1_22.VIEW_CHANNEL, basicChannel);
           }
           tmp6 = canBasicChannelResult;
         }
@@ -440,11 +439,11 @@ prototype["getAllApplicationStreamsForChannel"] = function getAllApplicationStre
   return found;
 };
 prototype["getViewerIds"] = function getViewerIds(currentUserActiveStream) {
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  if (canSpectateDefault(closure_13)) {
     let encodeStreamKeyResult = currentUserActiveStream;
     if (typeof currentUserActiveStream !== "string") {
-      encodeStreamKeyResult = require(4531) /* isStreamKey */.encodeStreamKey(currentUserActiveStream);
-      const obj = require(4531) /* isStreamKey */;
+      encodeStreamKeyResult = isStreamKey.encodeStreamKey(currentUserActiveStream);
+      const obj = isStreamKey;
     }
     let tmp5 = null;
     if (null != encodeStreamKeyResult) {
@@ -460,7 +459,7 @@ prototype["getCurrentAppIntent"] = function getCurrentAppIntent() {
 };
 prototype["getStreamingState"] = function getStreamingState() {
   const obj = { activeStreams: null, streamsByUserAndGuild: null, rtcStreams: null, streamerActiveStreamMetadatas: null };
-  if (importDefault(13074)(_detectH265HardwareDecode)) {
+  if (canSpectateDefault(closure_13)) {
     const _Array = Array;
     obj[0] = Array.from(map.entries());
     obj[1] = closure_4;
@@ -478,10 +477,8 @@ prototype["getStreamingState"] = function getStreamingState() {
 };
 ApplicationStreamingStore.displayName = "ApplicationStreamingStore";
 ApplicationStreamingStore.persistKey = "ApplicationStreamingStore";
-const applicationStreamingStore = new ApplicationStreamingStore(require("dispatcher"), {
+const applicationStreamingStore = new ApplicationStreamingStore(dispatcherDefault, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: function handleSetGoLiveSource(arg0) {
-    let errorCode;
-    let settings;
     ({ settings, errorCode } = arg0);
     let desktopSettings;
     if (settings != null) {
@@ -568,7 +565,7 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
         pid = tmp20.pid;
       }
       if (tmp2) {
-        const tmp6 = importDefault(4654)(content);
+        const tmp6 = getTitleFromPickedStreamContentDefault(content);
         let obj = { pid: null, id: null };
         obj[0] = pid;
         let id;
@@ -619,21 +616,15 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
     }
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(applicationStreamState) {
-    let closure_5;
-    let closure_6;
     applicationStreamState = applicationStreamState.applicationStreamState;
     const streamsByUserAndGuild = applicationStreamState.streamsByUserAndGuild;
-    const map = new Map(applicationStreamState.activeStreams);
+    map = new Map(applicationStreamState.activeStreams);
     ({ rtcStreams: closure_5, streamerActiveStreamMetadatas: closure_6 } = applicationStreamState);
-    const map1 = new Map();
+    map1 = new Map();
   },
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
     voiceStates = voiceStates.voiceStates;
     return voiceStates.reduce((arg0, selfStream) => {
-      let channelId;
-      let guildId;
-      let sessionId;
-      let userId;
       ({ userId, guildId, channelId, sessionId } = selfStream);
       if (selfStream.selfStream) {
         if (null != channelId) {
@@ -667,12 +658,12 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
           }
         }
       }
-      let c2 = false;
+      c2 = false;
       const item = closure_7.forEach((arg0, streamKey) => {
         const decodeStreamKeyResult = userId(table[13]).decodeStreamKey(streamKey);
         let tmp2 = decodeStreamKeyResult.ownerId === userId;
         if (tmp2) {
-          let guildId = decodeStreamKeyResult.guildId;
+          guildId = decodeStreamKeyResult.guildId;
           if (guildId == null) {
             guildId = null;
           }
@@ -683,8 +674,8 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
           tmp2 = guildId === tmp5;
         }
         if (tmp2) {
-          table = outer1_7.delete(streamKey) || table;
-          const tmp7 = outer1_7.delete(streamKey) || table;
+          closure_2 = closure_1_7.delete(streamKey) || closure_2;
+          const tmp7 = closure_1_7.delete(streamKey) || closure_2;
         }
       });
       let tmp10 = guildId;
@@ -711,7 +702,7 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
   },
   STREAM_WATCH: function handleStreamWatch(streamKey) {
     streamKey = streamKey.streamKey;
-    let obj = require(4531) /* isStreamKey */;
+    let obj = isStreamKey;
     const decodeStreamKeyResult = obj.decodeStreamKey(streamKey);
     map.delete(streamKey);
     obj = {};
@@ -723,17 +714,9 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
     }
   },
   STREAM_START: function handleStreamStart(arg0) {
-    let channelId;
-    let guildId;
-    let pid;
-    let previewDisabled;
-    let sourceIcon;
-    let sourceId;
-    let sourceName;
-    let streamType;
     ({ streamType, guildId, channelId, pid, sourceId } = arg0);
     ({ sourceName, sourceIcon, previewDisabled } = arg0);
-    let obj = sourceId(4531);
+    let obj = sourceId(4536);
     obj = { streamType, guildId, channelId, ownerId: store2.getId() };
     const encodeStreamKeyResult = obj.encodeStreamKey(obj);
     let startsWithResult;
@@ -770,7 +753,7 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
       obj[5] = sourceId;
       closure_6[encodeStreamKeyResult] = obj;
       map.delete(encodeStreamKeyResult);
-      const obj1 = { streamType: null, guildId: null, channelId: null, ownerId: null, state: null };
+      obj1 = { streamType: null, guildId: null, channelId: null, ownerId: null, state: null };
       obj1[0] = streamType;
       obj1[1] = guildId;
       obj1[2] = channelId;
@@ -784,7 +767,7 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
       gameForPID = null;
       if (null != sourceId) {
         const runningGames = store.getRunningGames();
-        gameForPID = runningGames.find((windowHandle) => outer1_1(outer1_2[14])(sourceId, windowHandle.windowHandle));
+        gameForPID = runningGames.find((windowHandle) => closure_1_1(closure_1_2[14])(sourceId, windowHandle.windowHandle));
       }
     }
   },
@@ -806,8 +789,6 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
     }
   },
   STREAM_DELETE: function handleStreamDelete(unavailable) {
-    let reason;
-    let streamKey;
     ({ streamKey, reason } = unavailable);
     let guildId;
     delete tmp[tmp2];
@@ -827,13 +808,13 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
       } else if (reason === tmp3.UNAUTHORIZED) {
         FAILED = tmp22.FAILED;
       } else if (reason === tmp3.SAFETY_GUILD_RATE_LIMITED) {
-        let obj = guildId(4531);
+        let obj = guildId(4536);
         guildId = obj.decodeStreamKey(streamKey).guildId;
-        guildId(2007)(4655, dependencyMap.paths).then((arg0) => {
+        guildId(2008)(4661, dependencyMap.paths).then((arg0) => {
           arg0.default(guildId);
         });
         FAILED = tmp22.ENDED;
-        const promise = guildId(2007)(4655, dependencyMap.paths);
+        const promise = guildId(2008)(4661, dependencyMap.paths);
       } else {
         if (tmp9) {
           FAILED = tmp22.FAILED;
@@ -857,10 +838,8 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
     map.delete(streamKey.streamKey);
   },
   STREAM_UPDATE_SELF_HIDDEN: function handleUpdateSelfStreamHidden(arg0) {
-    let channelId;
-    let selfStreamHidden;
     ({ channelId, selfStreamHidden } = arg0);
-    let isStreamKeyResult = require(4531) /* isStreamKey */.isStreamKey(c24);
+    let isStreamKeyResult = isStreamKey.isStreamKey(c24);
     if (isStreamKeyResult) {
       let hasItem;
       if (c24 != null) {
@@ -882,15 +861,15 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
   },
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelectForFullStreams(channelId) {
     channelId = channelId.channelId;
-    let c1;
+    c1 = undefined;
     if (null == channelId) {
       return false;
     } else {
       c1 = false;
       const item = map1.forEach((arg0, streamKey) => {
         if (obj.decodeStreamKey(streamKey).channelId !== channelId) {
-          c1 = outer1_7.delete(streamKey) || c1;
-          const tmp2 = outer1_7.delete(streamKey) || c1;
+          closure_1 = closure_1_7.delete(streamKey) || closure_1;
+          const tmp2 = closure_1_7.delete(streamKey) || closure_1;
         }
       });
       return c1;
@@ -900,8 +879,6 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
     intent = intent.intent;
   },
   RTC_CONNECTION_STATE: function handleRTCConnectionState(arg0) {
-    let state;
-    let streamKey;
     ({ streamKey, state } = arg0);
     if (null == streamKey) {
       return false;
@@ -947,8 +924,8 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
     });
     let isStreamKeyResult = null != id;
     if (isStreamKeyResult) {
-      isStreamKeyResult = require(4531) /* isStreamKey */.isStreamKey(id);
-      const obj = require(4531) /* isStreamKey */;
+      isStreamKeyResult = isStreamKey.isStreamKey(id);
+      const obj = isStreamKey;
     }
     if (isStreamKeyResult) {
       isStreamKeyResult = id.includes(store2.getId());
@@ -961,6 +938,6 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
   CONNECTION_CLOSED: reset,
   LOGOUT: reset
 });
-let result = require("fetchFingerprint").fileFinishedImporting("stores/ApplicationStreamingStore.tsx");
+let result = require("set").fileFinishedImporting("stores/ApplicationStreamingStore.tsx");
 
 export default applicationStreamingStore;

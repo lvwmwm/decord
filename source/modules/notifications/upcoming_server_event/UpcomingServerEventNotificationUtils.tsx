@@ -1,19 +1,24 @@
-// Module ID: 14821
-// Function ID: 14822
+// Module ID: 14885
+// Function ID: 14886
 // Name: onUpcomingServerEventNotificationSettingsChanged
-// Dependencies: [4033, 676, 4066, 698, 2]
+// Dependencies: [4036, 676, 4069, 698, 2]
 // Exports: onUpcomingServerEventNotificationSettingsChanged
 
-// Module 14821 (onUpcomingServerEventNotificationSettingsChanged)
-import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
-import { AnalyticEvents } from "ME";
+// Module 14885 (onUpcomingServerEventNotificationSettingsChanged)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4036 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
 
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/notifications/upcoming_server_event/UpcomingServerEventNotificationUtils.tsx");
+let closure_3 = AccountNotificationFlags.NotificationSettingsUpdateType;
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/notifications/upcoming_server_event/UpcomingServerEventNotificationUtils.tsx");
 
 export const onUpcomingServerEventNotificationSettingsChanged = function onUpcomingServerEventNotificationSettingsChanged(upcoming_server_event_notifications) {
-  const EnableUpcomingServerEventNotifications = require(4066) /* explicitContentFromProto */.EnableUpcomingServerEventNotifications;
+  const EnableUpcomingServerEventNotifications = explicitContentFromProto.EnableUpcomingServerEventNotifications;
   EnableUpcomingServerEventNotifications.updateSetting(upcoming_server_event_notifications);
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { update_type: constants.ACCOUNT, upcoming_server_event_notifications };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj);
 };

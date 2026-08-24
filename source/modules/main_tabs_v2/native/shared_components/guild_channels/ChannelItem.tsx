@@ -1,34 +1,39 @@
-// Module ID: 15886
-// Function ID: 15887
+// Module ID: 15983
+// Function ID: 15984
 // Name: LaunchpadChannelIcon
-// Dependencies: [19, 17, 1910, 4030, 1922, 5044, 21, 8886, 1236, 4661, 712, 10056, 589, 7188, 11366, 4967, 15697, 9916, 15884, 4984, 2]
+// Dependencies: [19, 17, 1910, 4033, 1922, 5049, 21, 8923, 1236, 4668, 712, 10095, 589, 7226, 11417, 4972, 15766, 9955, 15981, 4989, 2]
 // Exports: getChannelAccessibilityProps, renderChannelItem
 
-// Module 15886 (LaunchpadChannelIcon)
-import "computeChannelName";
-import { View } from "FacepileGroupDMAvatar";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { UnreadSetting } from "ReadStateTypes";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15983 (LaunchpadChannelIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getRelativeTimestamp from "getRelativeTimestamp" /* 4972 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 7226 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8923 */;
+import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 9955 */;
+import getLayoutStyles from "getLayoutStyles" /* 10095 */;
+import renderChannelWrapper from "renderChannelWrapper" /* 15766 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function LaunchpadChannelIcon(channel) {
   channel = channel.channel;
   const layout = channel.layout;
-  let obj = channel(10056);
+  let obj = channel(10095);
   const layoutStyles = obj.getLayoutStyles(layout);
-  let obj1 = channel(589);
-  const items = [createGuildRecordFromRust];
+  obj1 = channel(589);
+  const items = [closure_4];
   obj = { style: callback2(layout).guildBadgeIcon, children: null };
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_4.getGuild(channel.guild_id));
+  const stateFromStores = obj1.useStateFromStores(items, () => closure_1_4.getGuild(channel.guild_id));
   obj = { guild: stateFromStores, size: layoutStyles.icon.guildBadgeIconSize };
-  obj[1] = callback(importDefault(7188), obj);
+  obj[1] = callback(GuildIconSizesDefault, obj);
   const items1 = [callback(View, obj), ];
   obj1 = { channel, size: null, wrapperSize: null };
   const tmp = callback2(layout);
@@ -41,20 +46,21 @@ function LaunchpadChannelIcon(channel) {
     str = "md";
   }
   obj1[1] = str;
-  obj6 = channel(10056);
+  obj6 = channel(10095);
   let num = 32;
   if (tmp2Result.isLayoutCozy(layout)) {
     num = 48;
   }
   const obj2 = { children: null };
   obj1[2] = num;
-  items1[1] = tmp8(channel(11366).ChannelIcon, obj1);
+  items1[1] = tmp8(channel(11417).ChannelIcon, obj1);
   obj2[0] = items1;
   return tmp6(tmp7, obj2);
 }
-({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+noopAll;
+({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
 let closure_11 = createCacheKey.createStyles((layout) => {
-  const guildBadgeIcon = { position: "absolute", zIndex: 1, bottom: -4, right: -4, borderColor: importDefault(712).colors.BACKGROUND_BASE_LOW, borderWidth: 2, borderRadius: null };
+  const guildBadgeIcon = { position: "absolute", zIndex: 1, bottom: -4, right: -4, borderColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, borderWidth: 2, borderRadius: null };
   let num = 6;
   if (obj2.isLayoutCozy(layout)) {
     num = 9;
@@ -62,40 +68,22 @@ let closure_11 = createCacheKey.createStyles((layout) => {
   guildBadgeIcon[6] = num;
   return { guildBadgeIcon };
 });
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelItem.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelItem.tsx");
 
 export const getChannelAccessibilityProps = function getChannelAccessibilityProps(channel) {
-  let embeddedActivitiesCount;
-  let mentionCount;
-  let unread;
-  let voiceStates;
   channel = channel.channel;
-  let obj = { accessible: true, accessibilityRole: "button", accessibilityLabel: importDefault(8886)({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount }) };
+  let obj = { accessible: true, accessibilityRole: "button", accessibilityLabel: getChannelA11yLabelDefault({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount }) };
   ({ unread, mentionCount, voiceStates, embeddedActivitiesCount } = channel);
   if (channel.isGuildVoice()) {
     obj = { accessibilityHint: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t["9C444m"]);
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t["9C444m"]);
     const tmp2 = obj;
   }
   const merged = Object.assign(tmp2);
   return obj;
 };
 export const renderChannelItem = function renderChannelItem(unread) {
-  let channel;
-  let channelName;
-  let connected;
-  let end;
-  let fontScale;
-  let isSubscriptionGated;
-  let latestMessageTimestamp;
-  let launchpad;
-  let layout;
-  let locked;
-  let mentionBadge;
-  let mentionCount;
-  let subtitle;
-  let unreadBadge;
   ({ channel, locked } = unread);
   ({ subtitle, unreadBadge, mentionBadge } = unread);
   if (locked === undefined) {
@@ -133,24 +121,24 @@ export const renderChannelItem = function renderChannelItem(unread) {
   if (null != latestMessageTimestamp) {
     relativeTimestamp = null;
     if (!flag3) {
-      let obj = require(4967) /* getRelativeTimestamp */;
+      let obj = getRelativeTimestamp;
       relativeTimestamp = obj.getRelativeTimestamp(latestMessageTimestamp);
     }
   }
-  let obj1 = require(10056) /* getLayoutStyles */;
+  obj1 = getLayoutStyles;
   const layoutStyles = obj1.getLayoutStyles(layout);
-  let obj2 = require(15697) /* renderChannelWrapper */;
+  let obj2 = renderChannelWrapper;
   const children = [unreadBadge, , , ];
   obj = { style: null, children: null };
-  obj = { position: "relative", borderRadius: importDefault(712).radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
-  const merged = Object.assign(require(10056) /* getLayoutStyles */.makeSizeStyle(layoutStyles.icon.wrapper.size));
+  obj = { position: "relative", borderRadius: ThemesDefault.radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
+  const merged = Object.assign(getLayoutStyles.makeSizeStyle(layoutStyles.icon.wrapper.size));
   const merged1 = Object.assign(layoutStyles.icon.margin);
   obj[0] = obj;
   if (channel.isGroupDM()) {
     obj1 = { channel: null, size: null };
     obj1[0] = channel;
     obj1[1] = layoutStyles.icon.avatarSize;
-    let tmp10Result = tmp10(importDefault(9916), obj1);
+    let tmp10Result = tmp10(FacepileGroupDMAvatarDefault, obj1);
   } else {
     obj2 = { channel: null, layout: null };
     obj2[0] = channel;
@@ -159,11 +147,11 @@ export const renderChannelItem = function renderChannelItem(unread) {
   }
   obj[1] = tmp10Result;
   children[1] = closure_8(View, obj);
-  let tmp5Result = tmp5(15884);
+  let tmp5Result = tmp5(15981);
   const obj3 = { layout, name: null, subtitle: null, unread: null, resolvedUnreadSetting: null, muted: null, lastMessageTimestampString: null, channel: null, locked: null, connected: null, live: null, mentionCount: null, mentionBadge: null, isSubscriptionGated: null, needSubscriptionToAccess: null };
   if (channelName == null) {
-    tmp5Result = tmp5(4984);
-    channelName = tmp5Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+    tmp5Result = tmp5(4989);
+    channelName = tmp5Result.computeChannelName(channel, closure_6, closure_5);
   }
   obj3[1] = channelName;
   obj3[2] = subtitle;

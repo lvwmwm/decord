@@ -1,48 +1,48 @@
-// Module ID: 14142
-// Function ID: 14143
+// Module ID: 14210
+// Function ID: 14211
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 4661, 14143, 14139, 6803, 14144, 4734, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 14211, 14207, 6840, 14212, 4739, 1236, 2]
 // Exports: default
 
-// Module 14142 (TwoFASetupLanding)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14210 (TwoFASetupLanding)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import TwoFAModalSetupSections from "TwoFAModalSetupSections" /* 14207 */;
+import styles from "styles" /* 14211 */;
+import registerAssetDefault from "registerAsset" /* 14212 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" }, authIcon: { width: 120, height: 120, marginBottom: 32 } });
-const result = require("jsxProd").fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupLanding.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupLanding.tsx");
 
 export default function TwoFASetupLanding() {
   const tmp = callback3();
-  let obj = require(14143) /* styles */;
+  let obj = styles;
   const twoFASetupStyles = obj.useTwoFASetupStyles();
   obj = { children: null };
   obj = { style: tmp.container, children: null };
-  const obj1 = { bottom: true, style: tmp.container, children: null };
-  const obj2 = { source: null, style: null };
-  obj2[0] = importDefault(14144);
-  obj2[1] = tmp.authIcon;
-  const items = [callback(closure_3, obj2), , ];
+  obj1 = { bottom: true, style: tmp.container, children: null };
+  const items = [callback(closure_3, { source: registerAssetDefault, style: tmp.authIcon }), , ];
   const obj3 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj3[2] = intl.string(require(1236) /* getSystemLocale */.t["9E74Dx"]);
-  items[1] = callback(require(4734) /* Text */.Heading, obj3);
+  const intl = getSystemLocale.intl;
+  obj3[2] = intl.string(getSystemLocale.t["9E74Dx"]);
+  items[1] = callback(Text.Heading, obj3);
   const obj4 = { variant: "text-md/normal", style: items1, children: null };
   items1 = [, ];
   ({ modalBody: arr2[0], text: arr2[1] } = twoFASetupStyles);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj4[2] = intl2.format(require(1236) /* getSystemLocale */.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" });
-  items[2] = callback(require(4734) /* Text */.Text, obj4);
+  const intl2 = getSystemLocale.intl;
+  obj4[2] = intl2.format(getSystemLocale.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" });
+  items[2] = callback(Text.Text, obj4);
   obj1[2] = items;
-  obj[1] = callback2(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
+  obj[1] = callback2(SafeAreaPaddingView.SafeAreaPaddingView, obj1);
   obj[0] = callback(closure_4, obj);
-  return callback(require(14139) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj);
+  return callback(TwoFAModalSetupSections.TwoFASetupModalScreen, obj);
 };

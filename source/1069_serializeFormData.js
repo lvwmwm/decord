@@ -5,7 +5,9 @@
 // Exports: getBodyString, getFetchRequestArgBody, parseXhrResponseHeaders
 
 // Module 1069 (serializeFormData)
-import _slicedToArray from "_slicedToArray";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
+import __SENTRY_DEBUG__ from "__SENTRY_DEBUG__" /* 1035 */;
+import closure_2 from "_slicedToArray" /* 32 */;
 
 function serializeFormData(fetchRequestArgBody) {
   return new URLSearchParams(fetchRequestArgBody).toString();
@@ -18,7 +20,7 @@ export const ORIGINAL_REQ_BODY = forResult;
 export const getBodyString = function getBodyString(fetchRequestArgBody, closure_133) {
   let debug = closure_133;
   if (closure_133 === undefined) {
-    debug = require(817) /* registerSpanErrorInstrumentation */.debug;
+    debug = registerSpanErrorInstrumentation.debug;
   }
   try {
     if (typeof fetchRequestArgBody === "string") {
@@ -35,7 +37,7 @@ export const getBodyString = function getBodyString(fetchRequestArgBody, closure
           const items2 = [serializeFormData(fetchRequestArgBody)];
           return items2;
         } else if (fetchRequestArgBody) {
-          if (require(1035) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
+          if (__SENTRY_DEBUG__.DEBUG_BUILD) {
             debug.log("Skipping network body because of body type", fetchRequestArgBody);
           }
           const items3 = [undefined, "UNPARSEABLE_BODY_TYPE"];
@@ -47,7 +49,7 @@ export const getBodyString = function getBodyString(fetchRequestArgBody, closure
       }
     }
   } catch (tmp9) {
-    if (require(1035) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
+    if (__SENTRY_DEBUG__.DEBUG_BUILD) {
       obj.error(tmp9, "Failed to serialize body", tmp2);
     }
     const items5 = [tmp, "BODY_PARSE_ERROR"];
@@ -85,7 +87,6 @@ export const parseXhrResponseHeaders = function parseXhrResponseHeaders(xhr) {
     if (str) {
       const parts = str.split("\r\n");
       let reduced = parts.reduce((arg0, str) => {
-        let tmp2;
         [str, tmp2] = callback(str.split(": "), 2);
         if (tmp2) {
           arg0[str.toLowerCase()] = tmp2;
@@ -97,8 +98,8 @@ export const parseXhrResponseHeaders = function parseXhrResponseHeaders(xhr) {
     }
     return reduced;
   } catch (tmp5) {
-    if (require(1035) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
-      const debug = require(817) /* registerSpanErrorInstrumentation */.debug;
+    if (__SENTRY_DEBUG__.DEBUG_BUILD) {
+      const debug = registerSpanErrorInstrumentation.debug;
       debug.error(tmp5, "Failed to get xhr response headers", tmp2);
     }
     return {};

@@ -4,9 +4,12 @@
 // Dependencies: [4, 652, 653, 2]
 
 // Module 651 (logger)
-import { EventEmitter } from "EventEmitter";
+import set from "set" /* 2 */;
+import log from "log" /* 4 */;
+import EventEmitter2 from "EventEmitter" /* 652 */;
 
-const logger = new require("log").Logger("Flux");
+const logger = new log.Logger("Flux");
+const EventEmitter = EventEmitter2.EventEmitter;
 class ActionLogger extends EventEmitter {
   constructor() {
     obj = global;
@@ -30,7 +33,7 @@ prototype["log"] = function log(action) {
   self = this;
   const _require = action;
   const tmp6 = new ActionLog(action);
-  const global = tmp6;
+  closure_0 = tmp6;
   let _performance = _require(self[2]).performance;
   tmp6.startTime = _performance.now();
   try {
@@ -41,7 +44,7 @@ prototype["log"] = function log(action) {
         const _performance2 = action(self[2]).performance;
         obj.time = _performance2.now() - tmp9;
         if (self.persist) {
-          const traces = tmp6.traces;
+          const traces = closure_0.traces;
           traces.push(obj);
         }
         self.emit("trace", action.type, name, obj.time);
@@ -50,7 +53,7 @@ prototype["log"] = function log(action) {
         const _performance3 = tmp4(tmp2[2]).performance;
         tmp.time = _performance3.now() - tmp3;
         if (self.persist) {
-          const traces1 = tmp6.traces;
+          const traces1 = closure_0.traces;
           traces1.push(tmp);
         }
         self.emit("trace", action.type, tmp5, tmp.time);
@@ -98,8 +101,8 @@ prototype["getSlowestActions"] = function getSlowestActions(arg0) {
   if (arg1 === undefined) {
     num = 20;
   }
-  let c1;
-  let c2;
+  c1 = undefined;
+  c2 = undefined;
   let items = [];
   const iter = this.logs[Symbol.iterator]();
   const nextResult = iter.next();
@@ -130,9 +133,6 @@ prototype["getSlowestActions"] = function getSlowestActions(arg0) {
   c1 = 0;
   c2 = 0;
   const mapped = items.map((arg0) => {
-    let tmp;
-    let tmp2;
-    let tmp3;
     [tmp, tmp2, tmp3] = arg0;
     const combined = "" + tmp;
     let sum = combined;
@@ -145,8 +145,6 @@ prototype["getSlowestActions"] = function getSlowestActions(arg0) {
     return items;
   });
   const mapped1 = mapped.map((arg0) => {
-    let obj;
-    let tmp;
     [obj, tmp] = arg0;
     closure_2 = closure_2 + tmp;
     return "" + obj.padEnd(c1 + 1, " ") + " - " + tmp + "ms";
@@ -183,7 +181,7 @@ prototype["getLastActionMetrics"] = function getLastActionMetrics(arg0) {
     num = 20;
   }
   let _global;
-  let c1;
+  c1 = undefined;
   const obj = {};
   for (const item10009 of tmp) {
     let traces = item10009.traces;
@@ -207,16 +205,12 @@ prototype["getLastActionMetrics"] = function getLastActionMetrics(arg0) {
   _global = 0;
   c1 = 0;
   const mapped = values.map((arg0) => {
-    let arr;
-    let tmp;
     [arr, , tmp] = arg0;
     closure_0 = Math.max(arr.length, closure_0);
     const items = [arr, tmp];
     return items;
   });
   const mapped1 = mapped.map((arg0) => {
-    let obj;
-    let tmp;
     [obj, tmp] = arg0;
     closure_1 = closure_1 + tmp;
     return "" + obj.padEnd(c0 + 1, " ") + " - " + tmp + "ms";
@@ -245,8 +239,8 @@ class ActionLog {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
     obj[2] = [];
-    tmp2 = +c4;
-    c4 = tmp2 + 1;
+    tmp2 = +closure_4;
+    closure_4 = tmp2 + 1;
     obj.id = tmp2;
     obj.action = global;
     date = new Date();
@@ -265,7 +259,7 @@ prototype2["toJSON"] = function toJSON() {
   const self = this;
   if (null == this.createdAt) {
     const _Error = Error;
-    const error = new Error("ActionLog.toJSON: You must complete your logging before calling toJSON");
+    error = new Error("ActionLog.toJSON: You must complete your logging before calling toJSON");
     throw error;
   } else {
     const obj = { actionType: null, created_at: null, totalTime: null, traces: null };
@@ -274,7 +268,7 @@ prototype2["toJSON"] = function toJSON() {
     return obj;
   }
 };
-const result = require("u").fileFinishedImporting("../discord_common/js/packages/flux/LoggingUtils.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/flux/LoggingUtils.tsx");
 
 export { ActionLogger };
 export { ActionLog };

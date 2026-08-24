@@ -4,15 +4,17 @@
 // Dependencies: [827]
 
 // Module 912 (aggregateExceptionsFromError)
-const require = arg1;
+import isInstanceOf from "isInstanceOf" /* 827 */;
+
+require = arg1;
 let dependencyMap = arg6;
 function aggregateExceptionsFromError(arg0, arg1, arg2, errors, source, arg5, mechanism, exception_id) {
   const _require = arg0;
-  const dependencyMap = arg1;
-  const aggregateExceptionsFromError = arg2;
-  let closure_3 = source;
-  let closure_4 = mechanism;
-  let closure_5 = exception_id;
+  dependencyMap = arg1;
+  aggregateExceptionsFromError = arg2;
+  closure_3 = source;
+  closure_4 = mechanism;
+  closure_5 = exception_id;
   if (arg5.length >= arg2 + 1) {
     return arg5;
   } else {
@@ -92,7 +94,7 @@ arg5.applyAggregateErrorsToEvent = function applyAggregateErrorsToEvent(arg0, ar
           exception.exception.values = aggregateExceptionsFromError(arg0, arg1, arg3, originalException.originalException, arg2, exception.exception.values, tmp6, 0);
         }
       }
-      obj = require(827) /* isInstanceOf */;
+      obj = isInstanceOf;
     }
   }
 };

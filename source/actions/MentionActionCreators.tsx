@@ -1,28 +1,26 @@
-// Module ID: 15664
-// Function ID: 15665
+// Module ID: 15733
+// Function ID: 15734
 // Dependencies: [676, 709, 530, 2]
 
-// Module 15664
-import ME from "ME";
+// Module 15733
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
 ({ Endpoints: c3, MAX_MENTIONS_PER_FETCH: c4 } = ME);
-const result = require("sendRequest").fileFinishedImporting("actions/MentionActionCreators.tsx");
+const result = set.fileFinishedImporting("actions/MentionActionCreators.tsx");
 
 export default {
   setGuildFilter(arg0) {
-    let everyoneFilter;
-    let guildFilter;
-    let roleFilter;
     ({ guildFilter, roleFilter, everyoneFilter } = arg0);
-    importDefault(709).dispatch({ type: "SET_RECENT_MENTIONS_FILTER", guildFilter, roleFilter, everyoneFilter });
+    dispatcherDefault.dispatch({ type: "SET_RECENT_MENTIONS_FILTER", guildFilter, roleFilter, everyoneFilter });
   },
   clearMentions() {
-    importDefault(709).dispatch({ type: "CLEAR_MENTIONS" });
+    dispatcherDefault.dispatch({ type: "CLEAR_MENTIONS" });
   },
   truncateMentions(size) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "TRUNCATE_MENTIONS", size };
     obj.dispatch(obj);
   },
@@ -44,28 +42,28 @@ export default {
     if (flag2 === undefined) {
       flag2 = true;
     }
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj.dispatch({ type: "LOAD_RECENT_MENTIONS", guildId });
     const HTTP = before(530).HTTP;
     obj = { url: closure_3.MENTIONS, query: { before, limit, guild_id: guildId, roles: flag, everyone: flag2, feature: feature.feature }, retries: 2, oldFormErrors: true, rejectWithError: true };
     const value = HTTP.get(obj);
     return value.then((body) => {
       body = body.body;
-      let obj = outer1_1(outer1_2[1]);
-      obj = { type: "LOAD_RECENT_MENTIONS_SUCCESS", messages: body, isAfter: null != before, hasMoreAfter: body.length >= outer1_4 };
+      let obj = closure_1_1(closure_1_2[1]);
+      obj = { type: "LOAD_RECENT_MENTIONS_SUCCESS", messages: body, isAfter: null != before, hasMoreAfter: body.length >= closure_1_4 };
       obj.dispatch(obj);
     }, () => {
       callback(table[1]).dispatch({ type: "LOAD_RECENT_MENTIONS_FAILURE" });
     });
   },
   deleteRecentMention(id) {
-    const HTTP = require(530) /* sendRequest */.HTTP;
+    const HTTP = sendRequest.HTTP;
     let obj = { url: closure_3.MENTIONS_MESSAGE_ID(id), retries: 2, oldFormErrors: true, rejectWithError: true };
     HTTP.del(obj);
     obj = { type: "RECENT_MENTION_DELETE", id };
-    importDefault(709).dispatch(obj);
+    dispatcherDefault.dispatch(obj);
   },
   setRecentMentionsStale() {
-    importDefault(709).dispatch({ type: "SET_RECENT_MENTIONS_STALE" });
+    dispatcherDefault.dispatch({ type: "SET_RECENT_MENTIONS_STALE" });
   }
 };

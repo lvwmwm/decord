@@ -1,31 +1,35 @@
-// Module ID: 14335
-// Function ID: 14336
+// Module ID: 14403
+// Function ID: 14404
 // Name: toggle
-// Dependencies: [19, 8198, 676, 14181, 4066, 7357, 1403, 10669, 1236, 2]
+// Dependencies: [19, 8238, 676, 14249, 4069, 7395, 1403, 10708, 1236, 2]
 
-// Module 14335 (toggle)
-import noop from "noop";
-import { FriendSourceFlags } from "ME";
-import createToggle from "createToggle";
+// Module 14403 (toggle)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import hasFlagAll from "hasFlag" /* 1403 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14249 */;
+import closure_3 from "noop" /* 19 */;
+import { FriendSourceFlags } from "ME" /* 676 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.mozb8f);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.mozb8f);
   },
   parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useFriendRequestsMutualGuildsSettingValue() {
-    const FriendSourceFlagsSetting = setting(4066).FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = setting(4069).FriendSourceFlagsSetting;
     setting = FriendSourceFlagsSetting.useSetting();
     const items = [setting];
-    return React.useMemo(() => setting(outer1_2[5]).computeFlags(setting), items).mutualGuilds;
+    return React.useMemo(() => setting(closure_1_2[5]).computeFlags(setting), items).mutualGuilds;
   },
   onValueChange: function onFriendRequestsMutualGuildsSettingValueChange(arg0) {
-    const FriendSourceFlagsSetting = require(4066) /* explicitContentFromProto */.FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = explicitContentFromProto.FriendSourceFlagsSetting;
     const setting = FriendSourceFlagsSetting.getSetting();
-    const FriendSourceFlagsSetting2 = require(4066) /* explicitContentFromProto */.FriendSourceFlagsSetting;
-    const obj = importAll(1403);
+    const FriendSourceFlagsSetting2 = explicitContentFromProto.FriendSourceFlagsSetting;
+    const obj = hasFlagAll;
     if (arg0) {
       let addFlagResult = obj.addFlag(setting, FriendSourceFlags.MUTUAL_GUILDS);
     } else {
@@ -34,10 +38,10 @@ createToggle = {
     FriendSourceFlagsSetting2.updateSetting(addFlagResult);
   },
   useIsDisabled() {
-    return require(14181) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return useParentalControlledExplicitContentSettings.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsMutualGuildsSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsMutualGuildsSetting.tsx");
 
 export default createToggle;

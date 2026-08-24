@@ -5,19 +5,19 @@
 // Exports: default
 
 // Module 420 (returnsFalse)
-import _slicedToArray from "_slicedToArray";
-import _objectWithoutProperties from "_objectWithoutProperties";
-import "noop";
-import noop from "noop";
-import { jsx } from "jsxProd";
+import noopAll from "noop" /* 19 */;
+import useMergeRefsDefault from "useMergeRefs" /* 334 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 421 */;
+import closure_5 from "_slicedToArray" /* 32 */;
+import closure_6 from "_objectWithoutProperties" /* 109 */;
+import noop from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c9;
-let error;
-let metroImportAll;
 const require = arg1;
 let closure_3 = ["disabled", "ios_backgroundColor", "onChange", "onValueChange", "style", "thumbColor", "trackColor", "value"];
 let closure_4 = ["onTintColor", "tintColor"];
-({ useLayoutEffect: error, useRef: metroImportAll, useState: c9 } = noop);
+noopAll;
+({ useLayoutEffect: error, useRef: closure_8, useState: c9 } = noop);
 function returnsFalse() {
   return false;
 }
@@ -26,27 +26,17 @@ function returnsTrue() {
 }
 
 export default function Switch(ref) {
-  let c0;
-  let c1;
-  let disabled;
-  let ios_backgroundColor;
-  let onTintColor;
-  let style;
-  let thumbColor;
-  let tintColor;
-  let trackColor;
-  let value;
   const merged = Object.assign(ref, Object.create(null));
   c0 = undefined;
-  let importDefault;
-  let dependencyMap;
-  let c3;
+  importDefault = undefined;
+  dependencyMap = undefined;
+  closure_3 = undefined;
   let first;
   let callback;
   ({ disabled, ios_backgroundColor, onChange: c0, onValueChange: c1, trackColor, value } = merged);
   dependencyMap = value;
   ({ style, thumbColor } = merged);
-  const tmp3 = callback2(merged, c3);
+  const tmp3 = callback2(merged, closure_3);
   let _false;
   if (trackColor != null) {
     _false = trackColor.false;
@@ -56,7 +46,7 @@ export default function Switch(ref) {
     _true = trackColor.true;
   }
   const tmp6 = callback4(null);
-  c3 = tmp6;
+  closure_3 = tmp6;
   const tmp10 = callback(callback5({ value: null }), 2);
   first = tmp10[0];
   callback = tmp10[1];
@@ -64,7 +54,7 @@ export default function Switch(ref) {
   callback3(() => {
     let tmp2 = null != first.value && first.value !== tmp;
     if (tmp2) {
-      const current = _undefined3.current;
+      const current = ref.current;
       let setNativeProps;
       if (current != null) {
         setNativeProps = current.setNativeProps;
@@ -73,7 +63,7 @@ export default function Switch(ref) {
     }
     if (tmp2) {
       const Commands = _undefined(_undefined2[5]).Commands;
-      Commands.setNativeValue(_undefined3.current, tmp);
+      Commands.setNativeValue(ref.current, tmp);
     }
   }, items);
   ({ onTintColor, tintColor } = tmp3);
@@ -105,7 +95,7 @@ export default function Switch(ref) {
   let tmp2 = callback2;
   const tmp21 = jsx;
   const tmp7 = importDefault;
-  const tmp9 = importDefault(334)(tmp6, ref.ref);
+  const tmp9 = useMergeRefsDefault(tmp6, ref.ref);
   const merged2 = Object.assign(tmp2Result);
   const merged3 = Object.assign(obj);
   let str = merged.accessibilityRole;
@@ -125,5 +115,5 @@ export default function Switch(ref) {
   obj.onResponderTerminationRequest = returnsFalse;
   obj.onStartShouldSetResponder = returnsTrue;
   obj.ref = tmp9;
-  return tmp21(importDefault(421), obj);
+  return tmp21(__INTERNAL_VIEW_CONFIGDefault, obj);
 };

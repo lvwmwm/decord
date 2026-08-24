@@ -1,12 +1,12 @@
-// Module ID: 7125
-// Function ID: 7126
+// Module ID: 7163
+// Function ID: 7164
 // Name: BottomSheetBackdrop
-// Dependencies: [19, 21, 4661, 6952, 6377, 4115, 4723, 2]
+// Dependencies: [19, 21, 4668, 6990, 6408, 4119, 4728, 2]
 
-// Module 7125 (BottomSheetBackdrop)
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7163 (BottomSheetBackdrop)
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let closure_4 = createCacheKey.createStyles({ container: { flex: 1 } });
@@ -32,13 +32,13 @@ const memoResult = importAllResult.memo((animatedIndex) => {
   }
   const onPress = animatedIndex.onPress;
   const style = animatedIndex.style;
-  let c7;
+  closure_7 = undefined;
   let snapToIndex;
   let close;
   let callback;
   let animatedStyle;
   const tmp = str();
-  c7 = tmp;
+  closure_7 = tmp;
   let obj = animatedIndex(num[3]);
   const bottomSheet = obj.useBottomSheet();
   snapToIndex = bottomSheet.snapToIndex;
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo((animatedIndex) => {
   class I {
     constructor() {
       obj = animatedIndex(c1[5]);
-      tmp = obj.runOnJS(useBottomSheet)();
+      tmp = obj.runOnJS(closure_10)();
       return;
     }
   }
@@ -92,19 +92,19 @@ const memoResult = importAllResult.memo((animatedIndex) => {
   animatedStyle = animatedIndex(num[5]).useAnimatedStyle(S);
   let items1 = [tmp.container, style, animatedStyle];
   const memo = num2.useMemo(() => {
-    const items = [_undefined.container, style, animatedStyle];
+    const items = [container.container, style, animatedStyle];
     return items;
   }, items1);
   const tmp10 = num3(animatedIndex(num[6]).Backdrop, { blur: "none", style: memo, onDismiss: callback, "aria-hidden": true });
   let tmp9Result = tmp10;
   if ("none" !== str) {
-    const obj1 = { gesture: null, children: null };
+    obj1 = { gesture: null, children: null };
     obj1[0] = onEndResult;
     obj1[1] = tmp10;
     tmp9Result = num3(tmp2(tmp3[4]).GestureDetector, obj1);
   }
   return tmp9Result;
 });
-const result = require("createCacheKey").fileFinishedImporting("design/components/Sheet/native/BottomSheetBackdrop.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Sheet/native/BottomSheetBackdrop.native.tsx");
 
 export const BottomSheetBackdrop = memoResult;

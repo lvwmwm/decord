@@ -1,51 +1,59 @@
-// Module ID: 8273
-// Function ID: 8274
+// Module ID: 8313
+// Function ID: 8314
 // Name: getReferralTrialOfferExpirationCopy
-// Dependencies: [7423, 1388, 687, 1236, 4196, 1377, 11, 1379, 8274, 589, 8279, 2]
+// Dependencies: [7461, 1388, 687, 1236, 4200, 1377, 11, 1379, 8314, 589, 8319, 2]
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, isReferralProgramPopoverSeen, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 8273 (getReferralTrialOfferExpirationCopy)
-import emitChanges from "emitChanges";
-import { ContentDismissActionType } from "ContentDismissActionType";
+// Module 8313 (getReferralTrialOfferExpirationCopy)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initialize from "initialize" /* 589 */;
+import setDefault from "set" /* 687 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import DismissibleContent from "DismissibleContent" /* 1377 */;
+import addVersionedDismissedContent from "addVersionedDismissedContent" /* 1379 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4200 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8314 */;
+import closure_3 from "emitChanges" /* 7461 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 
-const require = arg1;
+require = arg1;
 let result = require("set").fileFinishedImporting("modules/premium/referral_program/ReferralProgramUtils.tsx");
 
 export const getReferralTrialOfferExpirationCopy = function getReferralTrialOfferExpirationCopy(time) {
   const diff = time - Date.now();
-  const result = diff / importDefault(687).Millis.HOUR;
+  const result = diff / setDefault.Millis.HOUR;
   if (result > 24) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
+    const intl3 = getSystemLocale.intl;
     let obj = { numDays: null };
     const _Math3 = Math;
     obj[0] = Math.floor(result / 24);
-    let formatToPlainStringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["g9s+dA"], obj);
+    let formatToPlainStringResult = intl3.formatToPlainString(getSystemLocale.t["g9s+dA"], obj);
   } else if (result >= 1) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     obj = { numHours: null };
     const _Math2 = Math;
     obj[0] = Math.floor(result);
-    formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.k9v33y, obj);
+    formatToPlainStringResult = intl2.formatToPlainString(getSystemLocale.t.k9v33y, obj);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     obj = { numMinutes: null };
     const _Math = Math;
     obj[0] = Math.floor(60 * result);
-    formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["/d0GmT"], obj);
+    formatToPlainStringResult = intl.formatToPlainString(getSystemLocale.t["/d0GmT"], obj);
   }
   return formatToPlainStringResult;
 };
 export const useIsReferralProgramEntrypointBadgeAcknowledged = function useIsReferralProgramEntrypointBadgeAcknowledged() {
-  return require(4196) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1377) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
+  return UNSAFE_isDismissibleContentDismissed.useIsDismissibleContentDismissed_UNSAFE(DismissibleContent.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
 };
 export const markReferralProgramEntrypointBadgeAcknowledged = function markReferralProgramEntrypointBadgeAcknowledged() {
-  const result = require(4196) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1377) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
+  const result = UNSAFE_isDismissibleContentDismissed.UNSAFE_markDismissibleContentAsDismissed(DismissibleContent.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
 };
 export const isReferralProgramBadgeAcknowledged = function isReferralProgramBadgeAcknowledged() {
-  return require(4196) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isDismissibleContentDismissed(require(1377) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
+  return UNSAFE_isDismissibleContentDismissed.UNSAFE_isDismissibleContentDismissed(DismissibleContent.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
 };
 export const markReferralProgramBadgeAcknowledged = function markReferralProgramBadgeAcknowledged() {
-  const result = require(4196) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1377) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
+  const result = UNSAFE_isDismissibleContentDismissed.UNSAFE_markDismissibleContentAsDismissed(DismissibleContent.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
 };
 export const useIsReferralProgramBadgeShowable = function useIsReferralProgramBadgeShowable(trialOffer) {
   trialOffer = trialOffer.trialOffer;
@@ -55,7 +63,7 @@ export const useIsReferralProgramBadgeShowable = function useIsReferralProgramBa
     let tmp = null != trialOffer.referrerId;
     const _Date = Date;
     const tmp2 = !trialOffer.isRedeemed();
-    const date = new Date(importDefault(11).extractTimestamp(trialOffer.id));
+    const date = new Date(DISCORD_EPOCHDefault.extractTimestamp(trialOffer.id));
     const _Date2 = Date;
     const date1 = new Date();
     if (tmp) {
@@ -71,34 +79,34 @@ export const markReferralProgramPopoverSeen = function markReferralProgramPopove
   if (null != promotionId) {
     let obj = { dismissAction: null };
     obj[0] = ContentDismissActionType.INDIRECT_ACTION;
-    const result = require(1379) /* addVersionedDismissedContent */.markSnowflakeBoundDismissibleContentAsDismissed(require(1377) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, promotionId, obj);
-    const obj2 = require(1379) /* addVersionedDismissedContent */;
+    const result = addVersionedDismissedContent.markSnowflakeBoundDismissibleContentAsDismissed(DismissibleContent.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, promotionId, obj);
+    const obj2 = addVersionedDismissedContent;
   } else {
-    obj = require(4196) /* UNSAFE_isDismissibleContentDismissed */;
-    const result1 = obj.UNSAFE_markDismissibleContentAsDismissed(require(1377) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER);
+    obj = UNSAFE_isDismissibleContentDismissed;
+    const result1 = obj.UNSAFE_markDismissibleContentAsDismissed(DismissibleContent.DismissibleContent.REFERRAL_PROGRAM_POPOVER);
   }
 };
 export const isReferralProgramPopoverSeen = function isReferralProgramPopoverSeen() {
-  return require(4196) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isDismissibleContentDismissed(require(1377) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER);
+  return UNSAFE_isDismissibleContentDismissed.UNSAFE_isDismissibleContentDismissed(DismissibleContent.DismissibleContent.REFERRAL_PROGRAM_POPOVER);
 };
 export const useIsReferralProgramPopoverShowable = function useIsReferralProgramPopoverShowable() {
-  let isEligibleSenderForReferralProgram = require(8274) /* useIsEligibleSenderForReferralProgram */.useIsEligibleSenderForReferralProgram(false);
-  const obj = require(8274) /* useIsEligibleSenderForReferralProgram */;
-  const items = [emitChanges];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => store.getReferralsRemaining());
-  const obj2 = require(589) /* initialize */;
-  const items1 = [emitChanges];
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => store.getReminderStateId());
-  const obj3 = require(589) /* initialize */;
+  let isEligibleSenderForReferralProgram = useIsEligibleSenderForReferralProgram.useIsEligibleSenderForReferralProgram(false);
+  const obj = useIsEligibleSenderForReferralProgram;
+  const items = [closure_3];
+  const stateFromStores = initialize.useStateFromStores(items, () => store.getReferralsRemaining());
+  const obj2 = initialize;
+  const items1 = [closure_3];
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => store.getReminderStateId());
+  const obj3 = initialize;
   if (obj4.useIsReferralReminderDCExperimentEnabled({ location: "ReferralProgramUtils" })) {
     let tmp8 = null != stateFromStores1;
     if (tmp8) {
-      let tmpResult = tmp(4196);
+      let tmpResult = tmp(4200);
       tmp8 = !tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1377).DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, stateFromStores1).isDismissed;
     }
     let tmp6 = tmp8;
   } else {
-    tmpResult = tmp(4196);
+    tmpResult = tmp(4200);
     tmp6 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(1377).DismissibleContent.REFERRAL_PROGRAM_POPOVER);
   }
   if (isEligibleSenderForReferralProgram) {

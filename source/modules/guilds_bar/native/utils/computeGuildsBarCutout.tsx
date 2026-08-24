@@ -1,14 +1,19 @@
-// Module ID: 15561
-// Function ID: 15562
+// Module ID: 15626
+// Function ID: 15627
 // Name: computeGuildsBarCutout
-// Dependencies: [17, 15548, 1297, 8402, 2]
+// Dependencies: [17, 15613, 1297, 8441, 2]
 // Exports: default
 
-// Module 15561 (computeGuildsBarCutout)
-import { PixelRatio } from "get ActivityIndicator";
-import { GUILD_ITEM_SIZE } from "GUILD_ITEM_SIZE";
+// Module 15626 (computeGuildsBarCutout)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import Button from "Button" /* 1297 */;
+import SolidCutout from "SolidCutout" /* 8441 */;
+import GUILD_ITEM_SIZE2 from "GUILD_ITEM_SIZE" /* 15613 */;
 
-const result = require("Button").fileFinishedImporting("modules/guilds_bar/native/utils/computeGuildsBarCutout.tsx");
+const PixelRatio = get_ActivityIndicator.PixelRatio;
+const GUILD_ITEM_SIZE = GUILD_ITEM_SIZE2.GUILD_ITEM_SIZE;
+const result = set.fileFinishedImporting("modules/guilds_bar/native/utils/computeGuildsBarCutout.tsx");
 
 export default function computeGuildsBarCutout(containerSize) {
   containerSize = containerSize.containerSize;
@@ -17,23 +22,19 @@ export default function computeGuildsBarCutout(containerSize) {
   }
   let BADGE_SIZE = containerSize.width;
   if (BADGE_SIZE === undefined) {
-    BADGE_SIZE = require(1297) /* Button */.BADGE_SIZE;
+    BADGE_SIZE = Button.BADGE_SIZE;
   }
   let BADGE_SIZE2 = containerSize.height;
   if (BADGE_SIZE2 === undefined) {
-    BADGE_SIZE2 = require(1297) /* Button */.BADGE_SIZE;
+    BADGE_SIZE2 = Button.BADGE_SIZE;
   }
   let BADGE_PADDING = containerSize.padding;
   if (BADGE_PADDING === undefined) {
-    BADGE_PADDING = require(1297) /* Button */.BADGE_PADDING;
+    BADGE_PADDING = Button.BADGE_PADDING;
   }
   const roundToNearestPixelResult = PixelRatio.roundToNearestPixel(BADGE_SIZE + 2 * BADGE_PADDING);
   const roundToNearestPixelResult1 = PixelRatio.roundToNearestPixel(BADGE_SIZE2 + 2 * BADGE_PADDING);
-  const obj = { shape: null, x: 0, y: 0, width: null, height: null, cornerRadius: null };
-  obj[0] = require(8402) /* SolidCutout */.CutoutShape.RoundedRect;
-  obj[3] = roundToNearestPixelResult;
-  obj[4] = roundToNearestPixelResult1;
-  obj[5] = PixelRatio.roundToNearestPixel(Math.min(roundToNearestPixelResult, roundToNearestPixelResult1) / 2);
+  const obj = { shape: SolidCutout.CutoutShape.RoundedRect, x: 0, y: 0, width: roundToNearestPixelResult, height: roundToNearestPixelResult1, cornerRadius: PixelRatio.roundToNearestPixel(Math.min(roundToNearestPixelResult, roundToNearestPixelResult1) / 2) };
   if ("top-right" === containerSize.position) {
     obj.x = containerSize - roundToNearestPixelResult + BADGE_PADDING;
     obj.y = -BADGE_PADDING;

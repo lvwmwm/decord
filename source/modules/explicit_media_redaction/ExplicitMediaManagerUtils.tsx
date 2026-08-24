@@ -1,11 +1,13 @@
-// Module ID: 5028
-// Function ID: 5029
+// Module ID: 5033
+// Function ID: 5034
 // Name: hasAttachmentsEmbedsComponentsOrSnapshots
 // Dependencies: [2]
 // Exports: hasAttachmentsEmbedsComponentsOrSnapshots
 
-// Module 5028 (hasAttachmentsEmbedsComponentsOrSnapshots)
-const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaManagerUtils.tsx");
+// Module 5033 (hasAttachmentsEmbedsComponentsOrSnapshots)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaManagerUtils.tsx");
 
 export const hasAttachmentsEmbedsComponentsOrSnapshots = function hasAttachmentsEmbedsComponentsOrSnapshots(message) {
   if (null == message) {

@@ -1,11 +1,12 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 16733
+// Function ID: 16734
 // Name: _initialize
-// Dependencies: [5038, 2]
+// Dependencies: [5043, 2]
 
-// Module 16637 (_initialize)
-import "initialize";
+// Module 16733 (_initialize)
+import initializeDefault from "initialize" /* 5043 */;
 
+initializeDefault;
 class MetricKitManager extends tmp2 {
 }
 const prototype = MetricKitManager.prototype;

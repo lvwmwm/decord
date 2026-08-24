@@ -1,43 +1,39 @@
-// Module ID: 14008
-// Function ID: 14009
+// Module ID: 14076
+// Function ID: 14077
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 676, 1924, 21, 4661, 7139, 7417, 698, 4745, 8471, 1236, 7988, 2]
+// Dependencies: [19, 676, 1924, 21, 4668, 7177, 7455, 698, 4750, 8510, 1236, 8027, 2]
 // Exports: default
 
-// Module 14008 (UserProfileUpsellButton)
-import noop from "noop";
-import ME from "ME";
-import { PremiumUpsellTypes } from "GuildFeatures";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14076 (UserProfileUpsellButton)
+import closure_3 from "noop" /* 19 */;
+import ME from "ME" /* 676 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 ({ AnalyticsPages: c4, UpsellTypes: c5, AnalyticsSections: closure_6, AnalyticEvents: error } = ME);
 let closure_10 = createCacheKey.createStyles({ nitroWheel: { marginRight: 2 } });
-let result = require("GuildFeatures").fileFinishedImporting("modules/user_profile/native/UserProfileUpsellButton.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileUpsellButton.tsx");
 
 export default function UserProfileUpsellButton(analyticsObject) {
   analyticsObject = analyticsObject.analyticsObject;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7139)().analyticsLocations;
-  let obj = analyticsObject(7417);
+  analyticsLocations = analyticsLocations(7177)().analyticsLocations;
+  let obj = analyticsObject(7455);
   let label = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = React.useEffect(() => {
-    let obj = analyticsLocations(outer1_2[7]);
-    obj = { type: outer1_8.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON, location: obj, location_stack: analyticsLocations };
-    obj = { page: outer1_4.USER_SETTINGS, section: outer1_6.USER_PROFILE, object: analyticsObject };
-    obj.track(outer1_7.PREMIUM_UPSELL_VIEWED, obj);
+    let obj = analyticsLocations(closure_1_2[7]);
+    obj = { type: closure_1_8.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON, location: obj, location_stack: analyticsLocations };
+    obj = { page: closure_1_4.USER_SETTINGS, section: closure_1_6.USER_PROFILE, object: analyticsObject };
+    obj.track(closure_1_7.PREMIUM_UPSELL_VIEWED, obj);
   }, items);
   obj = {
     onPress() {
-      let obj = analyticsLocations(outer1_2[9]);
-      obj = { initialUpsellKey: outer1_5.CUSTOM_PROFILES, analyticsLocation: obj, analyticsLocations, analyticsProperties: obj1 };
-      obj = { page: outer1_4.USER_SETTINGS, section: outer1_6.USER_PROFILE, object: analyticsObject };
+      let obj = analyticsLocations(closure_1_2[9]);
+      obj = { initialUpsellKey: closure_1_5.CUSTOM_PROFILES, analyticsLocation: obj, analyticsLocations, analyticsProperties: obj1 };
+      obj = { page: closure_1_4.USER_SETTINGS, section: closure_1_6.USER_PROFILE, object: analyticsObject };
       const result = obj.handleShowUpsellAlert(obj);
     },
     variant: "active",
@@ -53,6 +49,6 @@ export default function UserProfileUpsellButton(analyticsObject) {
   }
   obj[2] = label;
   obj = { color: "white", size: "sm", style: callback().nitroWheel };
-  obj[3] = jsx(analyticsObject(7988).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
-  return jsx(analyticsObject(4745).Button, { color: "white", size: "sm", style: callback().nitroWheel });
+  obj[3] = jsx(analyticsObject(8027).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
+  return jsx(analyticsObject(4750).Button, { color: "white", size: "sm", style: callback().nitroWheel });
 };

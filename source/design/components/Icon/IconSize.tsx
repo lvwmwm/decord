@@ -1,9 +1,11 @@
-// Module ID: 7187
-// Function ID: 7188
+// Module ID: 7225
+// Function ID: 7226
 // Name: ICON_SIZE
 // Dependencies: [2]
 
-// Module 7187 (ICON_SIZE)
-const result = require("set").fileFinishedImporting("design/components/Icon/IconSize.tsx");
+// Module 7225 (ICON_SIZE)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("design/components/Icon/IconSize.tsx");
 
 export const ICON_SIZE = { xxs: 12, xs: 16, sm: 18, md: 24, lg: 32, custom: "disabled", refresh_sm: true };

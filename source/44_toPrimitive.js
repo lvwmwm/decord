@@ -4,6 +4,8 @@
 // Dependencies: [45]
 
 // Module 44 (toPrimitive)
+import _typeof from "_typeof" /* 45 */;
+
 
 export default function toPrimitive(arg0, arg1) {
   if ("object" == obj.default(arg0)) {
@@ -23,7 +25,7 @@ export default function toPrimitive(arg0, arg1) {
           const typeError = new TypeError("@@toPrimitive must return a primitive value.");
           throw typeError;
         }
-        tmpResult = require(45) /* _typeof */;
+        tmpResult = _typeof;
       } else {
         return "string" === str ? String : Number(arg0);
       }

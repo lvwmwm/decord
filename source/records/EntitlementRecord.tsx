@@ -1,15 +1,18 @@
-// Module ID: 4514
-// Function ID: 4515
+// Module ID: 4519
+// Function ID: 4520
 // Name: createFromServer
-// Dependencies: [1931, 4515, 1930, 676, 4039, 4519, 2]
+// Dependencies: [1931, 4520, 1930, 676, 4042, 4524, 2]
 
-// Module 4514 (createFromServer)
-import "toJS";
-import createFromServer from "createFromServer";
-import createdAt from "createdAt";
-import { EntitlementTypes } from "ME";
+// Module 4519 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
+import set from "set" /* 4524 */;
+import closure_3 from "createFromServer" /* 4520 */;
+import closure_4 from "createdAt" /* 1930 */;
+import { EntitlementTypes } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
+toJSDefault;
 let EntitlementRecord;
 class EntitlementRecord extends tmp2 {
   constructor(arg0) {
@@ -21,20 +24,10 @@ class EntitlementRecord extends tmp2 {
 }
 const prototype = EntitlementRecord.prototype;
 EntitlementRecord["createFromServer"] = function createFromServer(user) {
-  let application_id;
-  let branches;
-  let deleted;
-  let gift_style;
-  let gifter_user_id;
-  let guild_id;
-  let id;
-  let sku_id;
-  let type;
-  let user_id;
   ({ id, sku_id, application_id } = user);
   let tmp2 = null;
   if (null != user.user) {
-    tmp2 = new createdAt(user.user);
+    tmp2 = new closure_4(user.user);
   }
   ({ user_id, gifter_user_id, type, branches } = user);
   if (branches == null) {
@@ -69,8 +62,8 @@ EntitlementRecord["createFromServer"] = function createFromServer(user) {
   }
   ({ gift_style, guild_id, deleted } = user);
   if (null != user.sku) {
-    const fromServer = createFromServer.createFromServer(user.sku);
-    const tmp18 = createFromServer;
+    const fromServer = closure_3.createFromServer(user.sku);
+    const tmp18 = closure_3;
   }
   let source_type = user.source_type;
   if (source_type == null) {
@@ -135,7 +128,7 @@ prototype["isValid"] = function isValid(isPremiumWithFractionalPremiumOnly, get)
         if (!obj.canInstallPremiumApplications(isPremiumWithFractionalPremiumOnly)) {
           return false;
         }
-        obj = importDefault(4039);
+        obj = getPremiumPlanItemDefault;
       }
       const _Date = Date;
       const date = new Date();
@@ -167,8 +160,8 @@ prototype["isValid"] = function isValid(isPremiumWithFractionalPremiumOnly, get)
   return false;
 };
 prototype["isFulfilled"] = function isFulfilled() {
-  return this.fulfillmentStatus === require(4519) /* set */.EntitlementTenantFulfillmentStatus.FULFILLED;
+  return this.fulfillmentStatus === set.EntitlementTenantFulfillmentStatus.FULFILLED;
 };
-const result = require("createdAt").fileFinishedImporting("records/EntitlementRecord.tsx");
+const result = require("set").fileFinishedImporting("records/EntitlementRecord.tsx");
 
 export default EntitlementRecord;

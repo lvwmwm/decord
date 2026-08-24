@@ -1,14 +1,14 @@
-// Module ID: 16058
-// Function ID: 16059
+// Module ID: 16156
+// Function ID: 16157
 // Name: handleWebhookCreateUpdate
-// Dependencies: [16059, 12, 589, 709, 2]
+// Dependencies: [16157, 12, 589, 709, 2]
 
-// Module 16058 (handleWebhookCreateUpdate)
-import { Store } from "initialize";
+// Module 16156 (handleWebhookCreateUpdate)
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 function handleWebhookCreateUpdate(arg0) {
-  let guildId;
-  let webhook;
   ({ guildId, webhook } = arg0);
   if (null == dependencyMap[guildId]) {
     tmp[guildId] = {};
@@ -17,6 +17,7 @@ function handleWebhookCreateUpdate(arg0) {
 }
 let closure_3 = {};
 let closure_4 = {};
+const Store = initializeDefault.Store;
 class WebhooksStore extends Store {
 }
 const prototype = WebhooksStore.prototype;
@@ -31,16 +32,16 @@ prototype["getWebhooksForGuild"] = function getWebhooksForGuild(arg0) {
   if (null == dependencyMap[arg0]) {
     tmp[arg0] = {};
   }
-  return importDefault(12).values(dependencyMap[arg0]);
+  return applyDefault.values(dependencyMap[arg0]);
 };
 prototype["getWebhooksForChannel"] = function getWebhooksForChannel(arg0, arg1) {
-  const importDefault = arg1;
+  importDefault = arg1;
   if (null == dependencyMap[arg0]) {
     tmp2[arg0] = {};
   }
-  const tmp = importDefault(12);
-  const values = importDefault(12)(dependencyMap[arg0]).values();
-  const tmpResult = importDefault(12)(dependencyMap[arg0]);
+  const tmp = applyDefault;
+  const values = applyDefault(dependencyMap[arg0]).values();
+  const tmpResult = applyDefault(dependencyMap[arg0]);
   return values.filter((channel_id) => channel_id.channel_id === closure_0).value();
 };
 Object.defineProperty(prototype, "error", {
@@ -50,17 +51,13 @@ Object.defineProperty(prototype, "error", {
   set: undefined
 });
 WebhooksStore.displayName = "WebhooksStore";
-const webhooksStore = new WebhooksStore(require("dispatcher"), {
+const webhooksStore = new WebhooksStore(dispatcherDefault, {
   WEBHOOKS_UPDATE: function handleWebhooksUpdate(arg0) {
-    let channelId;
-    let error;
-    let guildId;
-    let webhooks;
     ({ guildId, channelId } = arg0);
     ({ webhooks, error } = arg0);
     let obj;
     if (null != webhooks) {
-      let c2 = null;
+      c2 = null;
       let items = [];
       if (null != channelId) {
         if (null == dependencyMap[guildId]) {
@@ -117,8 +114,6 @@ const webhooksStore = new WebhooksStore(require("dispatcher"), {
   WEBHOOK_CREATE: handleWebhookCreateUpdate,
   WEBHOOK_UPDATE: handleWebhookCreateUpdate,
   WEBHOOK_DELETE: function handleWebhookDelete(arg0) {
-    let guildId;
-    let webhookId;
     ({ guildId, webhookId } = arg0);
     if (null == dependencyMap[guildId]) {
       dependencyMap[guildId] = {};
@@ -126,6 +121,6 @@ const webhooksStore = new WebhooksStore(require("dispatcher"), {
     delete tmp[tmp2];
   }
 });
-const result = require("initialize").fileFinishedImporting("stores/WebhooksStore.tsx");
+const result = require("set").fileFinishedImporting("stores/WebhooksStore.tsx");
 
 export default webhooksStore;

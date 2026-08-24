@@ -1,11 +1,13 @@
-// Module ID: 7464
-// Function ID: 7465
+// Module ID: 7502
+// Function ID: 7503
 // Name: videoAssetFromServer
 // Dependencies: [2]
 // Exports: desktopVideoAssetsFromServer, desktopVideoMessagesFromServer, mobileVideoAssetsFromServer, mobileVideoMessagesFromServer, videoAssetFromServer
 
-// Module 7464 (videoAssetFromServer)
-const result = require("set").fileFinishedImporting("modules/quests/types/v2/Video.tsx");
+// Module 7502 (videoAssetFromServer)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/quests/types/v2/Video.tsx");
 
 export const videoAssetFromServer = function videoAssetFromServer(url) {
   return { url: url.url, width: url.width, height: url.height, thumbnail: url.thumbnail, caption: url.caption, transcript: url.transcript };
@@ -22,7 +24,7 @@ export const desktopVideoAssetsFromServer = function desktopVideoAssetsFromServe
   if (null != assets.video_hls) {
     ({ url: obj4[0], width: obj4[1], height: obj4[2], thumbnail: obj4[3], caption: obj4[4], transcript: obj4[5] } = assets.video_hls);
     obj.videoHls = { url: null, width: null, height: null, thumbnail: null, caption: null, transcript: null };
-    const obj1 = { url: null, width: null, height: null, thumbnail: null, caption: null, transcript: null };
+    obj1 = { url: null, width: null, height: null, thumbnail: null, caption: null, transcript: null };
   }
   return obj;
 };
@@ -41,7 +43,7 @@ export const mobileVideoAssetsFromServer = function mobileVideoAssetsFromServer(
   if (null != assets.video_hls) {
     ({ url: obj4[0], width: obj4[1], height: obj4[2], thumbnail: obj4[3], caption: obj4[4], transcript: obj4[5] } = assets.video_hls);
     obj.videoHls = { url: null, width: null, height: null, thumbnail: null, caption: null, transcript: null };
-    const obj1 = { url: null, width: null, height: null, thumbnail: null, caption: null, transcript: null };
+    obj1 = { url: null, width: null, height: null, thumbnail: null, caption: null, transcript: null };
   }
   return obj;
 };

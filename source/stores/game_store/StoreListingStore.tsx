@@ -1,25 +1,27 @@
-// Module ID: 13866
-// Function ID: 13867
+// Module ID: 13931
+// Function ID: 13932
 // Name: addRegularStoreListing
-// Dependencies: [1994, 13867, 589, 1370, 709, 2]
+// Dependencies: [1995, 13932, 589, 1370, 709, 2]
 
-// Module 13866 (addRegularStoreListing)
-import _getSystemLocale from "_getSystemLocale";
-import createFromServer from "createFromServer";
-import { Store } from "initialize";
-import set from "initialize";
+// Module 13931 (addRegularStoreListing)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import closure_3 from "_getSystemLocale" /* 1995 */;
+import closure_4 from "createFromServer" /* 13932 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 function addRegularStoreListing(id) {
   let deleteResult = id;
   id = id.id;
   let id2 = id.sku.id;
-  const fromServer = createFromServer.createFromServer(id);
+  const fromServer = closure_4.createFromServer(id);
   if (!tmp2) {
     if (false === deleteResult.published) {
       if (null == dependencyMap3[id2]) {
         const _Set = Set;
-        const set = new Set();
+        set = new Set();
         dependencyMap3[id2] = set;
       }
       id2 = dependencyMap3[id2];
@@ -32,15 +34,15 @@ function addRegularStoreListing(id) {
   }
 }
 function handleUserSettingsStoreUpdate() {
-  if (locale === _getSystemLocale.locale) {
+  if (locale === closure_3.locale) {
     return false;
   } else {
-    let closure_5 = {};
-    let closure_8 = {};
-    let closure_7 = {};
-    let closure_6 = {};
+    closure_5 = {};
+    closure_8 = {};
+    closure_7 = {};
+    closure_6 = {};
     const _Set = Set;
-    const set = new Set();
+    set = new Set();
     locale = tmp.locale;
   }
 }
@@ -49,14 +51,15 @@ let closure_6 = {};
 let closure_7 = {};
 let closure_8 = {};
 let set = new Set();
+const Store = initializeDefault.Store;
 class StoreListingStore extends Store {
 }
 const prototype = StoreListingStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(_getSystemLocale);
-  const items = [_getSystemLocale];
+  this.waitFor(closure_3);
+  const items = [closure_3];
   this.syncWith(items, handleUserSettingsStoreUpdate);
-  const locale = _getSystemLocale.locale;
+  const locale = closure_3.locale;
 };
 prototype["get"] = function get(arg0) {
   return dependencyMap[arg0];
@@ -79,7 +82,7 @@ prototype["getUnpublishedForSKU"] = function getUnpublishedForSKU(skuId) {
   } else {
     const _Array = Array;
     const mapped = Array.from(tmp).map((arg0) => table[arg0]);
-    items = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+    items = mapped.filter(isDiscordFrontendDevelopment.isNotNullish);
     const arr = Array.from(tmp);
   }
   return items;
@@ -91,9 +94,6 @@ prototype["isFetchingForSKU"] = function isFetchingForSKU(arg0) {
   return set.has(arg0);
 };
 prototype["getStoreListing"] = function getStoreListing(isTestMode) {
-  let channelId;
-  let skuId;
-  let storeListingId;
   const self = this;
   ({ storeListingId, skuId, channelId } = isTestMode);
   if (isTestMode.isTestMode) {
@@ -111,7 +111,7 @@ prototype["getStoreListing"] = function getStoreListing(isTestMode) {
   } else if (null != channelId) {
     if (null == skuId) {
       const _Error = Error;
-      const error = new Error("getStoreListing with channel expects a skuId");
+      error = new Error("getStoreListing with channel expects a skuId");
       throw error;
     } else {
       return self.getForChannel(channelId, skuId);
@@ -125,7 +125,7 @@ prototype["getStoreListing"] = function getStoreListing(isTestMode) {
   }
 };
 StoreListingStore.displayName = "StoreListingStore";
-const storeListingStore = new StoreListingStore(require("dispatcher"), {
+const storeListingStore = new StoreListingStore(dispatcherDefault, {
   STORE_LISTINGS_FETCH_START: function handleStoreListingsFetchStart(skuId) {
     set.add(skuId.skuId);
   },
@@ -140,23 +140,21 @@ const storeListingStore = new StoreListingStore(require("dispatcher"), {
     }
   },
   STORE_LISTING_FETCH_SUCCESS: function handleStoreListingFetch(arg0) {
-    let channelId;
-    let storeListing;
     ({ storeListing, channelId } = arg0);
     if (null != channelId) {
-      const fromServer = createFromServer.createFromServer(storeListing);
+      const fromServer = closure_4.createFromServer(storeListing);
       const _HermesInternal = HermesInternal;
       closure_6["" + channelId + ":" + fromServer.skuId] = fromServer;
       closure_8[fromServer.skuId] = fromServer.id;
     } else {
       const id = storeListing.id;
       const id2 = storeListing.sku.id;
-      const fromServer1 = createFromServer.createFromServer(storeListing);
+      const fromServer1 = closure_4.createFromServer(storeListing);
       if (!tmp) {
         if (false === storeListing.published) {
           if (null == dependencyMap3[id2]) {
             const _Set = Set;
-            const set = new Set();
+            set = new Set();
             dependencyMap3[id2] = set;
           }
           dependencyMap3[id2].add(id);
@@ -172,11 +170,11 @@ const storeListingStore = new StoreListingStore(require("dispatcher"), {
   },
   USER_SETTINGS_PROTO_UPDATE: handleUserSettingsStoreUpdate,
   APPLICATION_STORE_CLEAR_DATA: function handleClearData() {
-    let closure_5 = {};
-    let closure_8 = {};
-    let closure_7 = {};
-    let closure_6 = {};
-    const set = new Set();
+    closure_5 = {};
+    closure_8 = {};
+    closure_7 = {};
+    closure_6 = {};
+    set = new Set();
   },
   GIFT_CODE_RESOLVE_SUCCESS: function handleGiftCodeResolveSuccess(giftCode) {
     giftCode = giftCode.giftCode;
@@ -186,12 +184,12 @@ const storeListingStore = new StoreListingStore(require("dispatcher"), {
       let store_listing = giftCode.store_listing;
       const id2 = store_listing.id;
       let id = store_listing.sku.id;
-      const fromServer = createFromServer.createFromServer(store_listing);
+      const fromServer = closure_4.createFromServer(store_listing);
       if (!tmp) {
         if (false === store_listing.published) {
           if (null == dependencyMap3[id]) {
             const _Set = Set;
-            const set = new Set();
+            set = new Set();
             dependencyMap3[id] = set;
           }
           id = dependencyMap3[id];

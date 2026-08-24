@@ -1,28 +1,26 @@
-// Module ID: 14993
-// Function ID: 14994
+// Module ID: 15057
+// Function ID: 15058
 // Name: useSecureFramesUserVerifiedKeys
-// Dependencies: [9692, 589, 12, 2]
+// Dependencies: [9731, 589, 12, 2]
 // Exports: useSecureFramesUserVerifiedKeys
 
-// Module 14993 (useSecureFramesUserVerifiedKeys)
-import initialize from "initialize";
+// Module 15057 (useSecureFramesUserVerifiedKeys)
+import closure_3 from "initialize" /* 9731 */;
 
 const require = arg1;
-const result = require("apply").fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeys.tsx");
+const result = require("set").fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeys.tsx");
 
 export const useSecureFramesUserVerifiedKeys = function useSecureFramesUserVerifiedKeys(userId) {
   const _require = userId;
-  const items = [initialize];
+  const items = [closure_3];
   return _require(589).useStateFromStoresArray(items, () => {
-    const tmp = outer1_1(outer1_2[2]);
-    const entries = outer1_1(outer1_2[2])(outer1_3.getUserVerifiedKeys(closure_0)).entries();
+    const tmp = closure_1_1(closure_1_2[2]);
+    const entries = closure_1_1(closure_1_2[2])(closure_1_3.getUserVerifiedKeys(closure_0)).entries();
     const mapped = entries.map((arg0) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg0;
       return { verifiedKey, timestamp };
     });
-    const tmpResult = outer1_1(outer1_2[2])(outer1_3.getUserVerifiedKeys(closure_0));
+    const tmpResult = closure_1_1(closure_1_2[2])(closure_1_3.getUserVerifiedKeys(closure_0));
     return mapped.sortBy((timestamp) => -1 * timestamp.timestamp).value();
   });
 };

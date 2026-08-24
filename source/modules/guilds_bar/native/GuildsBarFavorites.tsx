@@ -1,57 +1,50 @@
-// Module ID: 15574
-// Function ID: 15575
-// Dependencies: [19, 17, 1394, 676, 1388, 21, 4661, 712, 1367, 15558, 9979, 589, 15575, 15560, 9988, 15572, 15398, 1236, 15576, 9410, 15577, 2]
+// Module ID: 15639
+// Function ID: 15640
+// Dependencies: [19, 17, 1394, 676, 1388, 21, 4668, 712, 1367, 15623, 10018, 589, 15640, 15625, 10027, 15637, 15462, 1236, 15641, 9447, 15642, 2]
 
-// Module 15574
-import importAllResult from "StarIcon";
-import { View } from "getSystemLocale";
-import initializeFromUserSettings from "initializeFromUserSettings";
-import { FAVORITES } from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 15639
+import ThemesDefault from "Themes" /* 712 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "initializeFromUserSettings" /* 1394 */;
+import { FAVORITES } from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
 const require = arg1;
 let c3 = importAllResult;
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let c10 = "more-options";
 let obj = { anchor: null };
-obj = { position: "absolute", top: require("Themes").modules.mobile.GUILD_BAR_ITEM_MARGIN, left: 12, width: require("Themes").modules.mobile.GUILD_BAR_ITEM_SIZE, height: require("Themes").modules.mobile.GUILD_BAR_ITEM_SIZE };
+obj = { position: "absolute", top: ThemesDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, left: 12, width: ThemesDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: ThemesDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
 obj[0] = obj;
 let closure_11 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function GuildsBarFavorites() {
-  let accessibilityActions;
-  let badge;
-  let badge2;
-  let cutouts;
-  let onAccessibilityAction;
-  let unread;
   const tmp3 = markPopoverAsDismissed(1367)("GuildsBarFavorites");
-  let obj = shouldShowPopover(15558);
-  let obj1 = shouldShowPopover(9979);
+  let obj = shouldShowPopover(15623);
+  obj1 = shouldShowPopover(10018);
   const isFavoritesGuildSelected = obj1.useIsFavoritesGuildSelected();
   let obj2 = shouldShowPopover(589);
-  let items = [initializeFromUserSettings];
+  let items = [closure_5];
   const stateFromStores = obj2.useStateFromStores(items, () => favoriteChannels.getFavoriteChannels());
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
-  ({ badge, unread } = markPopoverAsDismissed(15575)(stateFromStores));
-  const tmp8 = markPopoverAsDismissed(15575)(stateFromStores);
-  ({ badge: badge2, cutouts } = markPopoverAsDismissed(15560)({ mentionCount: badge }));
+  ({ badge, unread } = markPopoverAsDismissed(15640)(stateFromStores));
+  const tmp8 = markPopoverAsDismissed(15640)(stateFromStores);
+  ({ badge: badge2, cutouts } = markPopoverAsDismissed(15625)({ mentionCount: badge }));
   const ref = importAllResult.useRef(null);
-  const tmp9 = markPopoverAsDismissed(15560)({ mentionCount: badge });
+  const tmp9 = markPopoverAsDismissed(15625)({ mentionCount: badge });
   const tmp11 = callback();
-  const favoritesIntroPopover = shouldShowPopover(9988).useFavoritesIntroPopover();
+  const favoritesIntroPopover = shouldShowPopover(10027).useFavoritesIntroPopover();
   shouldShowPopover = favoritesIntroPopover.shouldShowPopover;
   markPopoverAsDismissed = favoritesIntroPopover.markPopoverAsDismissed;
   const items1 = [shouldShowPopover, markPopoverAsDismissed];
   const memo = importAllResult.useMemo(() => ({
     onPress() {
       if (closure_0) {
-        callback(outer1_7.TAKE_ACTION);
+        callback(closure_1_7.TAKE_ACTION);
       }
-      outer1_1(outer1_2[15])(outer1_6);
+      closure_1_1(closure_1_2[15])(closure_1_6);
     },
     onLongPress() {
       callback(table[16])();
@@ -72,9 +65,9 @@ const memoResult = importAllResult.memo(function GuildsBarFavorites() {
     return obj;
   }, []);
   ({ accessibilityActions, onAccessibilityAction } = memo1);
-  obj = { selected: isFavoritesGuildSelected, circle: null, unread: null, styles: null, cutouts: null, overState: "l", config: "sunrise_over_mountains", accessibilityActions: 0, onAccessibilityAction: false, label: false, externalChildren: false, expandedChildren: false, children: true };
+  obj = { selected: isFavoritesGuildSelected, circle: null, unread: null, styles: null, cutouts: null, overState: "l", config: "function runOnRuntime_Pnpm_runtimesTs2(workletRuntime,worklet){const{__DEV__,SHOULD_BE_USE_WEB,isWorkletFunction,makeShareableCloneOnUIRecursive,ReanimatedModule,makeShareableCloneRecursive}=this.__closure;if(__DEV__&&!SHOULD_BE_USE_WEB&&!isWorkletFunction(worklet)){throw new ReanimatedError('The function passed to `runOnRuntime` is not a worklet.'+(_WORKLET?' Please make sure that `processNestedWorklets` option in Reanimated Babel plugin is enabled.':''));}if(_WORKLET){return function(...args){return global._scheduleOnRuntime(workletRuntime,makeShareableCloneOnUIRecursive(function(){'worklet';worklet(...args);}));};}return function(...args){return ReanimatedModule.scheduleOnRuntime(workletRuntime,makeShareableCloneRecursive(function(){'worklet';worklet(...args);}));};}", accessibilityActions: "function pnpm_timingTs2(){const{Easing,userConfig,toValue,callback,getReduceMotionForAnimation}=this.__closure;var _userConfig;const config={duration:300,easing:Easing.inOut(Easing.quad)};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}function timing(animation,now){const{toValue:toValue,startTime:startTime,startValue:startValue}=animation;const runtime=now-startTime;if(runtime>=config.duration){animation.startTime=0;animation.current=toValue;return true;}const progress=animation.easing(runtime/config.duration);animation.current=startValue+(toValue-startValue)*progress;return false;}function onStart(animation,value,now,previousAnimation){if(previousAnimation&&previousAnimation.type==='timing'&&previousAnimation.toValue===toValue&&previousAnimation.startTime){animation.startTime=previousAnimation.startTime;animation.startValue=previousAnimation.startValue;}else{animation.startTime=now;animation.startValue=value;}animation.current=value;if(typeof config.easing==='object'){animation.easing=config.easing.factory();}else{animation.easing=config.easing;}}return{type:'timing',onFrame:timing,onStart:onStart,progress:0,toValue:toValue,startValue:0,startTime:0,easing:function(){return 0;},current:toValue,callback:callback,reduceMotion:getReduceMotionForAnimation((_userConfig=userConfig)===null||_userConfig===void 0?void 0:_userConfig.reduceMotion)};}", onAccessibilityAction: "function pnpm_timingTs1(toValue,userConfig,callback){const{__DEV__,assertEasingIsWorklet,defineAnimation,Easing,getReduceMotionForAnimation}=this.__closure;if(__DEV__&&userConfig!==null&&userConfig!==void 0&&userConfig.easing){assertEasingIsWorklet(userConfig.easing);}return defineAnimation(toValue,function(){'worklet';const config={duration:300,easing:Easing.inOut(Easing.quad)};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}function timing(animation,now){const{toValue:toValue,startTime:startTime,startValue:startValue}=animation;const runtime=now-startTime;if(runtime>=config.duration){animation.startTime=0;animation.current=toValue;return true;}const progress=animation.easing(runtime/config.duration);animation.current=startValue+(toValue-startValue)*progress;return false;}function onStart(animation,value,now,previousAnimation){if(previousAnimation&&previousAnimation.type==='timing'&&previousAnimation.toValue===toValue&&previousAnimation.startTime){animation.startTime=previousAnimation.startTime;animation.startValue=previousAnimation.startValue;}else{animation.startTime=now;animation.startValue=value;}animation.current=value;if(typeof config.easing==='object'){animation.easing=config.easing.factory();}else{animation.easing=config.easing;}}return{type:'timing',onFrame:timing,onStart:onStart,progress:0,toValue:toValue,startValue:0,startTime:0,easing:function(){return 0;},current:toValue,callback:callback,reduceMotion:getReduceMotionForAnimation(userConfig===null||userConfig===void 0?void 0:userConfig.reduceMotion)};});}", label: "function linear_Pnpm_EasingTs1(t){return t;}", externalChildren: "function ease_Pnpm_EasingTs2(t){const{Bezier}=this.__closure;return Bezier(0.42,0,1,1)(t);}", expandedChildren: "function quad_Pnpm_EasingTs3(t){return t*t;}", children: "function cubic_Pnpm_EasingTs4(t){return t*t*t;}" };
   let tmp19 = !tmp3;
-  const obj4 = shouldShowPopover(9988);
+  const obj4 = shouldShowPopover(10027);
   const tmp15 = closure_9;
   if (!tmp3) {
     tmp19 = !isFavoritesGuildSelected;
@@ -89,22 +82,22 @@ const memoResult = importAllResult.memo(function GuildsBarFavorites() {
   let intl = tmp4(1236).intl;
   obj[9] = intl.string(shouldShowPopover(1236).t.wMWyci);
   obj[10] = badge2;
-  obj[11] = closure_8(shouldShowPopover(15576).HomeDrawerFavoritesRowExpandedChildren, {});
+  obj[11] = closure_8(shouldShowPopover(15641).HomeDrawerFavoritesRowExpandedChildren, {});
   const colors = tmp(712).colors;
   obj = { color: isFavoritesGuildSelected ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT };
-  obj[12] = closure_8(shouldShowPopover(9410).StarIcon, obj);
-  const children = [closure_8(markPopoverAsDismissed(15558), obj), , ];
+  obj[12] = closure_8(shouldShowPopover(9447).StarIcon, obj);
+  const children = [closure_8(markPopoverAsDismissed(15623), obj), , ];
   obj1 = { ref, style: tmp11.anchor, pointerEvents: "none", collapsable: false };
   children[1] = closure_8(View, obj1);
   if (shouldShowPopover) {
     obj2 = { targetRef: null, markAsDismissed: null };
     obj2[0] = ref;
     obj2[1] = markPopoverAsDismissed;
-    shouldShowPopover = tmp17(tmp(15577), obj2);
+    shouldShowPopover = tmp17(tmp(15642), obj2);
   }
   children[2] = shouldShowPopover;
   return tmp15(View, { children });
 });
-const result = require("initializeFromUserSettings").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFavorites.tsx");
+const result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFavorites.tsx");
 
 export default memoResult;

@@ -1,12 +1,14 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11297
+// Function ID: 11298
 // Name: sortGroup
 // Dependencies: [2]
 // Exports: queryData
 
-// Module 11246 (sortGroup)
+// Module 11297 (sortGroup)
+import set from "set" /* 2 */;
+
 function sortGroup(arr) {
-  let closure_0 = arg1;
+  closure_0 = arg1;
   return arr.sort((arg0, arg1) => {
     const iter = dependencyMap[Symbol.iterator]();
     while (iter !== undefined) {
@@ -21,7 +23,7 @@ function sortGroup(arr) {
     return 0;
   });
 }
-const result = require("set").fileFinishedImporting("modules/queries/ArraySearch.tsx");
+const result = set.fileFinishedImporting("modules/queries/ArraySearch.tsx");
 
 export const queryData = function queryData(arr, limit) {
   let num = limit.limit;
@@ -33,7 +35,7 @@ export const queryData = function queryData(arr, limit) {
     filterPredicates = [];
   }
   const found = arr.filter((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     return closure_0.every((arg0) => arg0(closure_0));
   });
   if (null != limit.bucketPredicates) {

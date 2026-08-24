@@ -4,25 +4,29 @@
 // Dependencies: [971, 958, 960, 840, 869]
 
 // Module 970 (handleResponseError)
-const require = arg1;
+import getSpanStatusFromHttpCode from "getSpanStatusFromHttpCode" /* 840 */;
+import captureCheckIn from "captureCheckIn" /* 869 */;
+import _mod958 from "module_958" /* 958 */;
+import buildMethodPath from "buildMethodPath" /* 960 */;
+import _mod971 from "module_971" /* 971 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.handleResponseError = function handleResponseError(setStatus, error) {
   if (error.error) {
     let obj = { code: null, message: null };
-    obj[0] = require(840) /* getSpanStatusFromHttpCode */.SPAN_STATUS_ERROR;
+    obj[0] = getSpanStatusFromHttpCode.SPAN_STATUS_ERROR;
     obj[1] = error.error.type || "internal_error";
     setStatus.setStatus(obj);
     obj = { mechanism: null };
     obj[0] = { handled: false, type: "auto.ai.anthropic.anthropic_error" };
-    require(869) /* captureCheckIn */.captureException(error.error, obj);
+    captureCheckIn.captureException(error.error, obj);
     const tmp2 = require;
-    const tmp2Result = require(869) /* captureCheckIn */;
+    const tmp2Result = captureCheckIn;
   }
 };
 arg5.messagesFromParams = function messagesFromParams(closure_2) {
-  let input;
-  let messages;
   ({ messages, input } = closure_2);
   if (typeof closure_2.system === "string") {
     const obj = { role: "system", content: null };
@@ -63,13 +67,13 @@ arg5.setMessagesAttribute = function setMessagesAttribute(setAttributes, message
   }
   if (0 !== length) {
     const obj = {};
-    obj[require(958).GEN_AI_REQUEST_MESSAGES_ATTRIBUTE] = require(960) /* buildMethodPath */.getTruncatedJsonString(messagesFromParamsResult);
-    obj[require(958).GEN_AI_REQUEST_MESSAGES_ORIGINAL_LENGTH_ATTRIBUTE] = length;
+    obj[_mod958.GEN_AI_REQUEST_MESSAGES_ATTRIBUTE] = buildMethodPath.getTruncatedJsonString(messagesFromParamsResult);
+    obj[_mod958.GEN_AI_REQUEST_MESSAGES_ORIGINAL_LENGTH_ATTRIBUTE] = length;
     setAttributes.setAttributes(obj);
-    const obj2 = require(960) /* buildMethodPath */;
+    const obj2 = buildMethodPath;
   }
 };
 arg5.shouldInstrument = function shouldInstrument(arg0) {
-  const ANTHROPIC_AI_INSTRUMENTED_METHODS = require(971).ANTHROPIC_AI_INSTRUMENTED_METHODS;
+  const ANTHROPIC_AI_INSTRUMENTED_METHODS = _mod971.ANTHROPIC_AI_INSTRUMENTED_METHODS;
   return ANTHROPIC_AI_INSTRUMENTED_METHODS.includes(arg0);
 };

@@ -4,12 +4,12 @@
 // Dependencies: [1552]
 
 // Module 1551 (getFocusedRouteNameFromRoute)
-const require = arg1;
+import CHILD_STATE from "CHILD_STATE" /* 1552 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.getFocusedRouteNameFromRoute = function getFocusedRouteNameFromRoute(state) {
-  let index;
-  let routes;
-  state = state[require(undefined, 1552) /* CHILD_STATE */.CHILD_STATE];
+  state = state[CHILD_STATE.CHILD_STATE];
   if (state == null) {
     state = state.state;
   }

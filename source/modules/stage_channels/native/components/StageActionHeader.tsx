@@ -1,36 +1,44 @@
-// Module ID: 12587
-// Function ID: 12588
+// Module ID: 12641
+// Function ID: 12642
 // Name: HideStageChannelCallIcon
-// Dependencies: [19, 17, 4773, 1391, 5383, 1910, 1396, 12506, 676, 21, 4661, 6370, 4223, 712, 698, 5042, 8032, 5260, 8663, 589, 12522, 12588, 1236, 8666, 1297, 4984, 6708, 6703, 4756, 4734, 8129, 8122, 12589, 12590, 8058, 8891, 9992, 9991, 8918, 12508, 12509, 12510, 12513, 12591, 12592, 2]
+// Dependencies: [19, 17, 4778, 1391, 5388, 1910, 1396, 12560, 676, 21, 4668, 6401, 4227, 712, 698, 5047, 8071, 5265, 8700, 589, 12576, 12642, 1236, 8703, 1297, 4989, 6745, 6740, 4761, 4739, 8168, 8161, 12643, 12644, 8097, 8928, 10031, 10030, 8955, 12562, 12563, 12564, 12567, 12645, 12646, 2]
 // Exports: HideChannelCallButton, closeStageModal
 
-// Module 12587 (HideStageChannelCallIcon)
-import { View } from "module_5260";
-import getParticipants from "getParticipants";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
-import initialize from "initialize";
-import ME from "ME";
-import jsxProd from "registerAsset";
-import createCacheKey from "createCacheKey";
-import hexToRgba from "hexToRgba";
-import hexToRgba from "hexToRgba";
-import importAllResult from "initialize";
+// Module 12641 (HideStageChannelCallIcon)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import computeChannelNameDefault from "computeChannelName" /* 4989 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 5047 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import componentDidMountDefault from "componentDidMount" /* 8071 */;
+import openChannelCallModal from "openChannelCallModal" /* 8700 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 12576 */;
+import registerAssetDefault from "registerAsset" /* 12642 */;
+import registerAssetDefault2 from "registerAsset" /* 12644 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 12645 */;
+import CameraButton from "CameraButton" /* 12646 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "getParticipants" /* 4778 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "updateGuildUnreadSentinel" /* 5388 */;
+import closure_7 from "createGuildRecordFromRust" /* 1910 */;
+import closure_8 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
+import closure_9 from "initialize" /* 12560 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
+import importAllResult from "noop" /* 19 */;
 
-let c10;
-let closure_12;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 class HideStageChannelCallIcon {
   constructor(arg0) {
     channel = global.channel;
-    tmp = jsxs();
+    tmp = closure_14();
     obj = require("initialize");
     items = [];
-    items[0] = View;
+    items[0] = closure_6;
     stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
     obj = { source: null, accessibilityLabel: null, onPress: null, containerStyle: null, disableBackground: true, children: null };
     tmp3 = require("ChannelCallNavigatorIcon");
@@ -38,17 +46,17 @@ class HideStageChannelCallIcon {
     intl = require("getSystemLocale").intl;
     obj[1] = intl.string(require("getSystemLocale").t.cpT0Cq);
     obj[2] = function onPress() {
-      let obj = outer1_1(outer1_2[14]);
+      let obj = closure_1_1(closure_1_2[14]);
       obj = { video_layout: "pop out" };
-      const merged = Object.assign(channel(outer1_2[15]).collectVoiceAnalyticsMetadata(channel.id));
-      obj.track(outer1_10.VIDEO_LAYOUT_TOGGLED, obj);
-      const obj3 = channel(outer1_2[15]);
-      outer1_1(outer1_2[16]).setHidden(false);
-      const obj4 = outer1_1(outer1_2[16]);
-      const obj5 = outer1_1(outer1_2[17]);
-      obj5.popWithKey(channel(outer1_2[18]).getVoiceChannelKey(channel.id));
-      const obj6 = channel(outer1_2[18]);
-      const participant = outer1_1(outer1_2[23]).selectParticipant(channel.id, null);
+      const merged = Object.assign(channel(closure_1_2[15]).collectVoiceAnalyticsMetadata(channel.id));
+      obj.track(closure_1_10.VIDEO_LAYOUT_TOGGLED, obj);
+      const obj3 = channel(closure_1_2[15]);
+      closure_1_1(closure_1_2[16]).setHidden(false);
+      const obj4 = closure_1_1(closure_1_2[16]);
+      const obj5 = closure_1_1(closure_1_2[17]);
+      obj5.popWithKey(channel(closure_1_2[18]).getVoiceChannelKey(channel.id));
+      const obj6 = channel(closure_1_2[18]);
+      const participant = closure_1_1(closure_1_2[23]).selectParticipant(channel.id, null);
     };
     obj[3] = tmp.iconContainer;
     obj[5] = jsx(require("Button").MaskedBadge, { value: stateFromStores, maskStyle: {} });
@@ -58,29 +66,29 @@ class HideStageChannelCallIcon {
 class StageChannelCallHeader {
   constructor(arg0) {
     channel = global.channel;
-    tmp = jsxs();
+    tmp = closure_14();
     tmp2 = closure_1;
     tmp3 = closure_2;
     tmp4 = require("computeChannelName")(channel);
     tmp5 = channel;
     obj = require("initialize");
     items = [];
-    items[0] = View;
+    items[0] = closure_8;
     items1 = [];
     items1[0] = channel.id;
-    stateFromStores = obj.useStateFromStores(items, () => outer1_8.getStageInstanceByChannel(channel.id), items1);
+    stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getStageInstanceByChannel(channel.id), items1);
     obj2 = require("useStageParticipants");
     stageParticipantsCount = obj2.useStageParticipantsCount(channel.id, require("sortKey").StageChannelParticipantNamedIndex.AUDIENCE);
     obj3 = require("useStageParticipants");
     actualStageSpeakerCount = obj3.useActualStageSpeakerCount(channel.id);
     obj4 = require("initialize");
     items2 = [];
-    items2[0] = View;
+    items2[0] = closure_4;
     tmp9 = jsxs;
     tmp10 = View;
     obj = { pointerEvents: "none", style: tmp.leftTitleContainer, children: null };
     obj1 = { style: tmp.titleWrapper, children: null };
-    tmp11 = null == obj4.useStateFromStores(items2, () => outer1_4.getSelectedParticipant(channel.id));
+    tmp11 = null == obj4.useStateFromStores(items2, () => closure_1_4.getSelectedParticipant(channel.id));
     if (tmp11) {
       tmp12 = jsx;
       obj2 = { style: null, colors: null, start: null, end: null };
@@ -144,7 +152,7 @@ class StageChannelCallHeader {
 class StageSettingsButton {
   constructor(arg0) {
     ({ channelId, onOpenRTCDebugOverlay } = global);
-    tmp = jsxs();
+    tmp = closure_14();
     obj = { accessibilityLabel: null, containerStyle: null, source: null, onPress: null, disableBackground: true };
     tmp2 = require("ChannelCallNavigatorIcon");
     intl = require("getSystemLocale").intl;
@@ -154,7 +162,7 @@ class StageSettingsButton {
     obj[1] = items;
     obj[2] = require("registerAsset");
     obj[3] = function onPress() {
-      return outer1_0(outer1_2[34]).openStageSettingsSheet(closure_0, closure_1);
+      return closure_1_0(closure_1_2[34]).openStageSettingsSheet(closure_0, closure_1);
     };
     return jsx(tmp2, obj);
   }
@@ -162,22 +170,22 @@ class StageSettingsButton {
 class StageInviteButton {
   constructor(arg0) {
     channelId = global.channelId;
-    f91160 = undefined;
-    f91161 = undefined;
-    useActiveEvent = undefined;
+    closure_1 = undefined;
+    closure_2 = undefined;
+    closure_3 = undefined;
     tmp2 = channelId;
-    tmp3 = f91161;
-    tmp = jsxs();
+    tmp3 = closure_2;
+    tmp = closure_14();
     obj = require("initialize");
     items = [];
-    items[0] = View;
+    items[0] = closure_5;
     items1 = [];
     items1[0] = channelId;
-    stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(channelId), items1);
-    f91160 = stateFromStores;
+    stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getChannel(channelId), items1);
+    closure_1 = stateFromStores;
     obj2 = require("initialize");
     items2 = [];
-    items2[0] = View;
+    items2[0] = closure_7;
     items3 = [];
     items3[0] = stateFromStores;
     stateFromStores1 = obj2.useStateFromStores(items2, () => {
@@ -188,17 +196,17 @@ class StageInviteButton {
       if (guild_id == null) {
         guild_id = null;
       }
-      return outer1_7.getGuild(guild_id);
+      return closure_1_7.getGuild(guild_id);
     }, items3);
-    f91161 = stateFromStores1;
+    closure_2 = stateFromStores1;
     obj3 = require("useGuildEvents");
-    useActiveEvent = obj3.useActiveEvent(channelId);
+    closure_3 = obj3.useActiveEvent(channelId);
     tmp6 = null;
     if (null != stateFromStores) {
       tmp6 = null;
       if (null != stateFromStores1) {
         tmp7 = jsx;
-        tmp8 = f91160;
+        tmp8 = closure_1;
         obj = { accessibilityLabel: null, containerStyle: null, source: null, IconComponent: null, onPress: null, disableBackground: true };
         tmp9 = require("ChannelCallNavigatorIcon");
         intl = require("getSystemLocale").intl;
@@ -208,12 +216,12 @@ class StageInviteButton {
         obj[3] = require("GroupPlusIcon").GroupPlusIcon;
         obj[4] = function onPress() {
           if (null != stateFromStores1.vanityURLCode) {
-            const result = channelId(stateFromStores1[38]).showVanityUrlInviteActionSheet(tmp, stateFromStores, outer1_11.STAGE_CHANNEL);
+            const result = channelId(stateFromStores1[38]).showVanityUrlInviteActionSheet(tmp, stateFromStores, closure_1_11.STAGE_CHANNEL);
             const obj3 = channelId(stateFromStores1[38]);
           } else {
             let obj = channelId(stateFromStores1[38]);
             obj = { source: null, guildScheduledEventId: null };
-            obj[0] = outer1_11.STAGE_CHANNEL;
+            obj[0] = closure_1_11.STAGE_CHANNEL;
             let id;
             if (id != null) {
               id = id.id;
@@ -231,15 +239,15 @@ class StageInviteButton {
 }
 class MusicMuteButton {
   constructor(arg0) {
-    useStateFromStores = undefined;
-    tmp2 = useStateFromStores;
+    closure_0 = undefined;
+    tmp2 = closure_0;
     tmp3 = closure_2;
-    tmp = jsxs();
+    tmp = closure_14();
     obj = require("initialize");
     items = [];
-    items[0] = View;
+    items[0] = closure_9;
     stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
-    useStateFromStores = stateFromStores;
+    closure_0 = stateFromStores;
     obj2 = require("checkVoiceStates");
     if (!obj2.useShowStageMusicMuteButton(global.channelId)) {
       return null;
@@ -260,7 +268,7 @@ class MusicMuteButton {
       obj[1] = tmp.iconBackground;
       obj[2] = tmp6(stateFromStores ? tmp3[40] : tmp3[41]);
       obj[3] = function onPress() {
-        return stateFromStores(outer1_2[42]).updateStageMusicMuted(!stateFromStores);
+        return stateFromStores(closure_1_2[42]).updateStageMusicMuted(!stateFromStores);
       };
       tmp5Result = tmp5(tmp7, obj);
     }
@@ -276,23 +284,21 @@ obj[1] = { marginLeft: 12, flex: 1 };
 obj[2] = { position: "relative", flex: 1, justifyContent: "center" };
 obj[3] = { position: "absolute", zIndex: 1, left: 0, right: 0, top: 0, bottom: 0 };
 createCacheKey = { backgroundColor: null };
-createCacheKey[0] = hexToRgba.hexWithOpacity(require("Themes").unsafe_rawColors.WHITE, 0.1);
+createCacheKey[0] = hexToRgba.hexWithOpacity(ThemesDefault.unsafe_rawColors.WHITE, 0.1);
 obj[4] = createCacheKey;
 let obj2 = { backgroundColor: null };
-obj2[0] = hexToRgba.hexWithOpacity(require("Themes").unsafe_rawColors.WHITE, 0.1);
+obj2[0] = hexToRgba.hexWithOpacity(ThemesDefault.unsafe_rawColors.WHITE, 0.1);
 obj[5] = obj2;
 obj[6] = { marginRight: 4 };
-obj[7] = { flex: 1, flexDirection: "row", alignItems: "center", color: require("Themes").colors.TEXT_SUBTLE };
+obj[7] = { flex: 1, flexDirection: "row", alignItems: "center", color: ThemesDefault.colors.TEXT_SUBTLE };
 obj[8] = { marginLeft: 4 };
-let obj3 = { flex: 1, flexDirection: "row", alignItems: "center", color: require("Themes").colors.TEXT_SUBTLE };
-obj[9] = { marginLeft: 8, marginRight: 4, tintColor: require("Themes").colors.TEXT_SUBTLE };
+let obj3 = { flex: 1, flexDirection: "row", alignItems: "center", color: ThemesDefault.colors.TEXT_SUBTLE };
+obj[9] = { marginLeft: 8, marginRight: 4, tintColor: ThemesDefault.colors.TEXT_SUBTLE };
 let closure_14 = createCacheKey.createStyles(obj);
-let obj4 = { marginLeft: 8, marginRight: 4, tintColor: require("Themes").colors.TEXT_SUBTLE };
+let obj4 = { marginLeft: 8, marginRight: 4, tintColor: ThemesDefault.colors.TEXT_SUBTLE };
 const memoResult = importAllResult.memo((onOpenRTCDebugOverlay) => {
-  let channel;
-  let fullscreenStream;
   ({ channel, fullscreenStream } = onOpenRTCDebugOverlay);
-  const tmp3 = importDefault(12591)(channel.id);
+  const tmp3 = useMyCurrentStageChannelRoleDefault(channel.id);
   let speaker;
   if (tmp3 != null) {
     speaker = tmp3.speaker;
@@ -308,57 +314,57 @@ const memoResult = importAllResult.memo((onOpenRTCDebugOverlay) => {
   if (fullscreenStream) {
     obj = { channel: null };
     obj[0] = channel;
-    fullscreenStream = tmp7(require(12592) /* CameraButton */.GridButton, obj);
+    fullscreenStream = tmp7(CameraButton.GridButton, obj);
   }
   items[3] = fullscreenStream;
-  items[4] = callback(require(12592) /* CameraButton */.CameraButton, {});
+  items[4] = callback(CameraButton.CameraButton, {});
   items[5] = callback(StageInviteButton, { channelId: channel.id });
   items[6] = callback(StageSettingsButton, { channelId: channel.id, onOpenRTCDebugOverlay: onOpenRTCDebugOverlay.onOpenRTCDebugOverlay });
   obj[2] = items;
   return closure_13(View, obj);
 });
-let result = require("getParticipants").fileFinishedImporting("modules/stage_channels/native/components/StageActionHeader.tsx");
+let result = require("set").fileFinishedImporting("modules/stage_channels/native/components/StageActionHeader.tsx");
 
 export default memoResult;
 export const closeStageModal = function closeStageModal(id) {
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { video_layout: "pop out" };
-  const merged = Object.assign(require(5042) /* collectGuildAnalyticsMetadata */.collectVoiceAnalyticsMetadata(id.id));
+  const merged = Object.assign(collectGuildAnalyticsMetadata.collectVoiceAnalyticsMetadata(id.id));
   obj.track(constants.VIDEO_LAYOUT_TOGGLED, obj);
-  const obj3 = require(5042) /* collectGuildAnalyticsMetadata */;
-  importDefault(8032).setHidden(false);
-  const obj4 = importDefault(8032);
-  const obj5 = importDefault(5260);
-  obj5.popWithKey(require(8663) /* openChannelCallModal */.getVoiceChannelKey(id.id));
+  const obj3 = collectGuildAnalyticsMetadata;
+  componentDidMountDefault.setHidden(false);
+  const obj4 = componentDidMountDefault;
+  const obj5 = _modDef5265;
+  obj5.popWithKey(openChannelCallModal.getVoiceChannelKey(id.id));
 };
 export { HideStageChannelCallIcon };
 export { StageChannelCallHeader };
 export const HideChannelCallButton = function HideChannelCallButton(channel) {
   channel = channel.channel;
   let obj = channel(589);
-  const items = [updateGuildUnreadSentinel];
+  const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   obj = { source: null, accessibilityLabel: null, onPress: null, containerStyle: null, disableBackground: true, children: null };
   const tmp = callback2();
-  obj[0] = importDefault(12588);
+  obj[0] = registerAssetDefault;
   const intl = channel(1236).intl;
   obj[1] = intl.string(channel(1236).t.cpT0Cq);
   obj[2] = function onPress() {
-    let obj = outer1_1(outer1_2[14]);
+    let obj = closure_1_1(closure_1_2[14]);
     obj = { video_layout: "pop out" };
-    const merged = Object.assign(channel(outer1_2[15]).collectVoiceAnalyticsMetadata(channel.id));
-    obj.track(outer1_10.VIDEO_LAYOUT_TOGGLED, obj);
-    const obj3 = channel(outer1_2[15]);
-    outer1_1(outer1_2[16]).setHidden(false);
-    const obj4 = outer1_1(outer1_2[16]);
-    const obj5 = outer1_1(outer1_2[17]);
-    obj5.popWithKey(channel(outer1_2[18]).getVoiceChannelKey(channel.id));
-    const obj6 = channel(outer1_2[18]);
-    const participant = outer1_1(outer1_2[23]).selectParticipant(channel.id, null);
+    const merged = Object.assign(channel(closure_1_2[15]).collectVoiceAnalyticsMetadata(channel.id));
+    obj.track(closure_1_10.VIDEO_LAYOUT_TOGGLED, obj);
+    const obj3 = channel(closure_1_2[15]);
+    closure_1_1(closure_1_2[16]).setHidden(false);
+    const obj4 = closure_1_1(closure_1_2[16]);
+    const obj5 = closure_1_1(closure_1_2[17]);
+    obj5.popWithKey(channel(closure_1_2[18]).getVoiceChannelKey(channel.id));
+    const obj6 = channel(closure_1_2[18]);
+    const participant = closure_1_1(closure_1_2[23]).selectParticipant(channel.id, null);
   };
   obj[3] = tmp.iconContainer;
   obj[5] = callback(channel(1297).MaskedBadge, { value: stateFromStores, maskStyle: {} });
-  return callback(importDefault(12522), obj);
+  return callback(ChannelCallNavigatorIconDefault, obj);
 };
 export { StageSettingsButton };
 export { StageInviteButton };

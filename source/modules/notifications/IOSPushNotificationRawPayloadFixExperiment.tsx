@@ -1,17 +1,18 @@
-// Module ID: 4999
-// Function ID: 5000
+// Module ID: 5004
+// Function ID: 5005
 // Name: isIOSPushNotificationRawPayloadFixExperimentEnabled
 // Dependencies: [1472, 2]
 // Exports: isIOSPushNotificationRawPayloadFixExperimentEnabled
 
-// Module 4999 (isIOSPushNotificationRawPayloadFixExperimentEnabled)
-import ApexExperiment from "ApexExperiment";
+// Module 5004 (isIOSPushNotificationRawPayloadFixExperimentEnabled)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-01-ios-push-notif-json-fix", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 let c1 = null;
-const result = require("set").fileFinishedImporting("modules/notifications/IOSPushNotificationRawPayloadFixExperiment.tsx");
+const result = set.fileFinishedImporting("modules/notifications/IOSPushNotificationRawPayloadFixExperiment.tsx");
 
 export const isIOSPushNotificationRawPayloadFixExperimentEnabled = function isIOSPushNotificationRawPayloadFixExperimentEnabled() {
   if (null == enabled) {

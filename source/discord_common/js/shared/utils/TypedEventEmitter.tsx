@@ -1,10 +1,13 @@
-// Module ID: 4572
-// Function ID: 4573
+// Module ID: 4577
+// Function ID: 4578
 // Name: on
 // Dependencies: [652, 2]
 
-// Module 4572 (on)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/TypedEventEmitter.tsx");
+// Module 4577 (on)
+import set from "set" /* 2 */;
+import EventEmitter from "EventEmitter" /* 652 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/utils/TypedEventEmitter.tsx");
 class TypedEventEmitter {
   constructor() {
     obj = Object.create(new.target.prototype);

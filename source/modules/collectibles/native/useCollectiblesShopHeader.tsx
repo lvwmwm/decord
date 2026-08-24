@@ -1,27 +1,28 @@
-// Module ID: 14979
-// Function ID: 14980
+// Module ID: 15043
+// Function ID: 15044
 // Name: CollectiblesShopHeaderTitle
-// Dependencies: [19, 17, 1922, 678, 676, 6716, 8931, 21, 4661, 712, 11316, 4734, 1236, 589, 9253, 10685, 5300, 7159, 6933, 4342, 10411, 2007, 698, 10947, 6719, 5260, 8929, 10399, 8035, 9183, 9958, 14980, 1500, 2]
+// Dependencies: [19, 17, 1922, 678, 676, 6753, 8968, 21, 4668, 712, 11367, 4739, 1236, 589, 9290, 10724, 5305, 7197, 6971, 4346, 10450, 2008, 698, 10986, 6756, 5265, 8966, 10438, 8074, 9220, 9997, 15044, 1500, 2]
 // Exports: default
 
-// Module 14979 (CollectiblesShopHeaderTitle)
-import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
-import { View } from "QUICK_SWITCHER";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { CollectiblesMobileShopScreen as closure_6 } from "items";
-import { AnalyticEvents } from "ME";
-import { RewardFilterTypes } from "QuestsExperimentLocations";
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
-import jsxProd from "asyncRequireImpl";
-import createCacheKey from "createCacheKey";
+// Module 15043 (CollectiblesShopHeaderTitle)
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import ShopIcon from "ShopIcon" /* 11367 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import { CollectiblesMobileShopScreen as closure_6 } from "items" /* 678 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { RewardFilterTypes } from "QuestsExperimentLocations" /* 6753 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8968 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function CollectiblesShopHeaderTitle(currentScreen) {
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { style: tmp.headerTitleContainer, children: null };
-  const items = [callback(require(11316) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(ShopIcon.ShopIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: null };
   if (currentScreen.currentScreen === constants.ORBS) {
     const intl2 = tmp5(1236).intl;
@@ -31,7 +32,7 @@ function CollectiblesShopHeaderTitle(currentScreen) {
     stringResult = intl.string(tmp5(1236).t.pWG4ze);
   }
   obj[5] = stringResult;
-  items[1] = callback(require(4734) /* Text */.Heading, obj);
+  items[1] = callback(Text.Heading, obj);
   obj[1] = items;
   return closure_11(View, obj);
 }
@@ -40,9 +41,9 @@ function CollectiblesShopHeaderRight(currentScreen) {
   let stateFromStores;
   let balance;
   let obj = currentScreen(balance[13]);
-  let items = [mergeGuildAvatar];
+  let items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser(), []);
-  let obj1 = currentScreen(balance[14]);
+  obj1 = currentScreen(balance[14]);
   balance = obj1.useFetchVirtualCurrencyBalance().balance;
   let obj2 = currentScreen(balance[15]);
   const items1 = [currentScreen];
@@ -53,16 +54,16 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl = currentScreen(balance[12]).intl;
     obj[0] = intl.string(currentScreen(balance[12]).t["xNiB/O"]);
     obj[1] = function action() {
-      let obj = callback(5300);
+      let obj = callback(5305);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(7159).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM];
+      const items = [callback2(7197).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(7159).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
+      obj[1] = callback2(7197).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
       obj[2] = constants.FEATURED_PAGE;
       const result = obj.openCollectiblesShopMobile(obj);
     };
     let CheckmarkSmallIcon;
-    if (currentScreen === outer1_6.FEATURED_PAGE) {
+    if (currentScreen === closure_1_6.FEATURED_PAGE) {
       CheckmarkSmallIcon = tmp(tmp2[18]).CheckmarkSmallIcon;
     }
     obj[2] = CheckmarkSmallIcon;
@@ -71,16 +72,16 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl2 = tmp(tmp2[12]).intl;
     obj[0] = intl2.string(currentScreen(balance[12]).t.RSyoZu);
     obj[1] = function action() {
-      let obj = callback(5300);
+      let obj = callback(5305);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(7159).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM];
+      const items = [callback2(7197).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(7159).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
+      obj[1] = callback2(7197).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
       obj[2] = constants.SHOP_ALL;
       const result = obj.openCollectiblesShopMobile(obj);
     };
     let CheckmarkSmallIcon1;
-    if (currentScreen === outer1_6.SHOP_ALL) {
+    if (currentScreen === closure_1_6.SHOP_ALL) {
       CheckmarkSmallIcon1 = tmp(tmp2[18]).CheckmarkSmallIcon;
     }
     obj[2] = CheckmarkSmallIcon1;
@@ -89,16 +90,16 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl3 = tmp(tmp2[12]).intl;
     obj[0] = intl3.string(currentScreen(balance[12]).t.EBYkzk);
     obj[1] = function action() {
-      let obj = callback(5300);
+      let obj = callback(5305);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(7159).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM];
+      const items = [callback2(7197).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(7159).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
+      obj[1] = callback2(7197).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
       obj[2] = constants.ORBS;
       const result = obj.openCollectiblesShopMobile(obj);
     };
     let CheckmarkSmallIcon2;
-    if (currentScreen === outer1_6.ORBS) {
+    if (currentScreen === closure_1_6.ORBS) {
       CheckmarkSmallIcon2 = tmp(tmp2[18]).CheckmarkSmallIcon;
     }
     obj[2] = CheckmarkSmallIcon2;
@@ -114,23 +115,23 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl = currentScreen(balance[12]).intl;
     obj[0] = intl.string(currentScreen(balance[12]).t.SymzJC);
     obj[1] = function onButtonPress() {
-      let obj = outer1_1(outer1_2[22]);
-      obj = { type: "GO_TO_QUEST_HOME", source: outer1_1(outer1_2[17]).COLLECTIBLES_SHOP, balance: closure_2 };
-      obj.track(outer1_7.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
-      outer1_1(outer1_2[19]).hideActionSheet();
-      const obj3 = outer1_1(outer1_2[19]);
-      obj = { mergeExistingRoutes: true, filter: outer1_8.VIRTUAL_CURRENCY, fromContent: outer1_0(outer1_2[24]).QuestContent.ORBS_BALANCE_MENU };
-      outer1_0(outer1_2[23]).openQuestHome(obj);
+      let obj = closure_1_1(closure_1_2[22]);
+      obj = { type: "GO_TO_QUEST_HOME", source: closure_1_1(closure_1_2[17]).COLLECTIBLES_SHOP, balance: closure_2 };
+      obj.track(closure_1_7.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
+      closure_1_1(closure_1_2[19]).hideActionSheet();
+      const obj3 = closure_1_1(closure_1_2[19]);
+      obj = { mergeExistingRoutes: true, filter: closure_1_8.VIRTUAL_CURRENCY, fromContent: closure_1_0(closure_1_2[24]).QuestContent.ORBS_BALANCE_MENU };
+      closure_1_0(closure_1_2[23]).openQuestHome(obj);
     };
     obj[1] = obj;
-    const obj1 = { buttonText: null, onButtonPress: null };
+    obj1 = { buttonText: null, onButtonPress: null };
     const intl2 = currentScreen(balance[12]).intl;
     obj1[0] = intl2.string(currentScreen(balance[12]).t["/g10LC"]);
     obj1[1] = function onButtonPress() {
-      let obj = outer1_1(outer1_2[22]);
-      obj = { type: "GO_BACK", source: outer1_1(outer1_2[17]).COLLECTIBLES_SHOP, balance: closure_2 };
-      obj.track(outer1_7.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
-      outer1_1(outer1_2[19]).hideActionSheet();
+      let obj = closure_1_1(closure_1_2[22]);
+      obj = { type: "GO_BACK", source: closure_1_1(closure_1_2[17]).COLLECTIBLES_SHOP, balance: closure_2 };
+      obj.track(closure_1_7.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
+      closure_1_1(closure_1_2[19]).hideActionSheet();
     };
     obj[2] = obj1;
     obj[3] = stateFromStores(balance[17]).COLLECTIBLES_SHOP;
@@ -140,7 +141,7 @@ function CollectiblesShopHeaderRight(currentScreen) {
     id = stateFromStores.id;
   }
   items3[1] = id;
-  obj = { style: createCacheKey().headerRightContainer, children: null };
+  obj = { style: callback2().headerRightContainer, children: null };
   const callback1 = React.useCallback(() => {
     let id;
     if (stateFromStores != null) {
@@ -150,14 +151,14 @@ function CollectiblesShopHeaderRight(currentScreen) {
       let obj = stateFromStores(balance[22]);
       obj = { cta_name: "wishlist header button", page_type: null };
       obj[1] = currentScreen;
-      obj.track(outer1_7.COLLECTIBLES_SHOP_ELEMENT_CLICKED, obj);
+      obj.track(closure_1_7.COLLECTIBLES_SHOP_ELEMENT_CLICKED, obj);
       stateFromStores(balance[25]).popAll();
       obj = { userId: null, sourceAnalyticsLocations: null, initialSection: null };
       obj[0] = tmp.id;
       const obj3 = stateFromStores(balance[25]);
       const items = [stateFromStores(balance[17]).COLLECTIBLES_SHOP];
       obj[1] = items;
-      obj[2] = outer1_9.WISHLIST;
+      obj[2] = closure_1_9.WISHLIST;
       stateFromStores(balance[26])(obj);
       const tmp9 = stateFromStores(balance[26]);
     }
@@ -206,13 +207,13 @@ function CollectiblesShopHeaderRight(currentScreen) {
 }
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 createCacheKey = { headerTitleContainer: null, headerTitle: null, headerRightContainer: null };
-createCacheKey = { width: "100%", flexDirection: "row", alignItems: "center", marginTop: require("Themes").space.PX_8, paddingLeft: require("Themes").space.PX_8, gap: require("Themes").space.PX_8 };
+createCacheKey = { width: "100%", flexDirection: "row", alignItems: "center", marginTop: ThemesDefault.space.PX_8, paddingLeft: ThemesDefault.space.PX_8, gap: ThemesDefault.space.PX_8 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexShrink: 1 };
-createCacheKey[2] = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_8 };
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/collectibles/native/useCollectiblesShopHeader.tsx");
+createCacheKey[2] = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: ThemesDefault.space.PX_8, marginTop: ThemesDefault.space.PX_8 };
+let closure_12 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: ThemesDefault.space.PX_8, marginTop: ThemesDefault.space.PX_8 };
+let result = require("set").fileFinishedImporting("modules/collectibles/native/useCollectiblesShopHeader.tsx");
 
 export default function useCollectiblesShopHeader() {
   let obj = arg0;
@@ -226,10 +227,10 @@ export default function useCollectiblesShopHeader() {
   const layoutEffect = React.useLayoutEffect(() => {
     navigation.setOptions({
       headerTitle() {
-        return outer1_10(outer1_13, { currentScreen: closure_0 });
+        return closure_1_10(closure_1_13, { currentScreen: closure_0 });
       },
       headerRight() {
-        return outer1_10(outer1_14, { currentScreen: closure_0 });
+        return closure_1_10(closure_1_14, { currentScreen: closure_0 });
       }
     });
   }, items);

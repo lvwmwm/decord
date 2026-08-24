@@ -1,38 +1,36 @@
-// Module ID: 11321
-// Function ID: 11322
+// Module ID: 11372
+// Function ID: 11373
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [4479, 4021, 505, 589, 11130, 11230, 8446, 8718, 500, 1236, 2]
+// Dependencies: [4483, 4024, 505, 589, 11169, 11281, 8485, 8755, 500, 1236, 2]
 // Exports: default
 
-// Module 11321 (useIsPrimaryEntryPointDisabled)
-import createExecutable from "createExecutable";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "sum";
+// Module 11372 (useIsPrimaryEntryPointDisabled)
+import getPlatformDefault from "getPlatform" /* 8755 */;
+import closure_3 from "createExecutable" /* 4483 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;
-const result = require("sum").fileFinishedImporting("modules/app_launcher/hooks/useIsPrimaryEntryPointDisabled.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/hooks/useIsPrimaryEntryPointDisabled.tsx");
 
 export default function useIsPrimaryEntryPointDisabled(arg0) {
-  let activityAction;
-  let application;
-  let context;
   ({ context, application, activityAction } = arg0);
   let channel;
   channel = undefined;
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  const items = [getUncachedChannelPermissions];
-  const stateFromStores = channel(589).useStateFromStores(items, () => outer1_4.can(outer1_5.USE_EMBEDDED_ACTIVITIES, channel));
+  const items = [closure_4];
+  const stateFromStores = channel(589).useStateFromStores(items, () => closure_1_4.can(closure_1_5.USE_EMBEDDED_ACTIVITIES, channel));
   const obj = channel(589);
   let id;
   if (channel != null) {
     id = channel.id;
   }
-  const embeddedActivityLaunchability = channel(11130).useEmbeddedActivityLaunchability(id);
+  const embeddedActivityLaunchability = channel(11169).useEmbeddedActivityLaunchability(id);
   let flag = false;
-  if (channel(11230).ActivityAction.LEAVE !== activityAction) {
-    if (tmp2(11230).ActivityAction.START === activityAction) {
+  if (channel(11281).ActivityAction.LEAVE !== activityAction) {
+    if (tmp2(11281).ActivityAction.START === activityAction) {
       flag = false;
       if (null != channel) {
         let isGuildVoiceResult;
@@ -41,11 +39,11 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
         }
         if (isGuildVoiceResult) {
           flag = false;
-          if (embeddedActivityLaunchability !== tmp2(11130).EmbeddedActivityLaunchability.CAN_LAUNCH) {
+          if (embeddedActivityLaunchability !== tmp2(11169).EmbeddedActivityLaunchability.CAN_LAUNCH) {
             flag = true;
           }
         } else {
-          let tmp2Result = tmp2(8446);
+          let tmp2Result = tmp2(8485);
           flag = false;
           if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
             flag = true;
@@ -54,7 +52,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
       }
     } else {
       flag = false;
-      if (tmp2(11230).ActivityAction.JOIN === activityAction) {
+      if (tmp2(11281).ActivityAction.JOIN === activityAction) {
         let isGuildVoiceResult1;
         if (channel != null) {
           isGuildVoiceResult1 = channel.isGuildVoice();
@@ -62,7 +60,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
         if (isGuildVoiceResult1) {
           flag = !stateFromStores;
         } else {
-          tmp2Result = tmp2(8446);
+          tmp2Result = tmp2(8485);
           flag = false;
           if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
             flag = true;
@@ -73,9 +71,9 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
   }
   let disabled = flag;
   let reason;
-  if (activityAction !== channel(11230).ActivityAction.LEAVE) {
-    const tmp10 = application instanceof createExecutable ? application.embeddedActivityConfig : application.embedded_activity_config;
-    importDefault(8718);
+  if (activityAction !== channel(11281).ActivityAction.LEAVE) {
+    const tmp10 = application instanceof closure_3 ? application.embeddedActivityConfig : application.embedded_activity_config;
+    getPlatformDefault;
     tmp2(500);
     if (null != tmp10) {
       const supported_platforms = tmp10.supported_platforms;

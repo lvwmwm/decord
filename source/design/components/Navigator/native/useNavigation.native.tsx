@@ -5,16 +5,19 @@
 // Exports: useNativeStackNavigation, useNavigation, useStackNavigation, useTabNavigation
 
 // Module 1500 (useNavigation)
+import set from "set" /* 2 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
+
 function useNavigation() {
-  return require(1501) /* createStandardNavigationFactories */.useNavigation();
+  return createStandardNavigationFactories.useNavigation();
 }
-const result = require("set").fileFinishedImporting("design/components/Navigator/native/useNavigation.native.tsx");
+const result = set.fileFinishedImporting("design/components/Navigator/native/useNavigation.native.tsx");
 
 export { useNavigation };
 export const useNativeStackNavigation = function useNativeStackNavigation() {
-  return require(1501) /* createStandardNavigationFactories */.useNavigation();
+  return createStandardNavigationFactories.useNavigation();
 };
 export const useStackNavigation = useNavigation;
 export const useTabNavigation = function useTabNavigation() {
-  return require(1501) /* createStandardNavigationFactories */.useNavigation();
+  return createStandardNavigationFactories.useNavigation();
 };

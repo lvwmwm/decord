@@ -1,27 +1,30 @@
-// Module ID: 8584
-// Function ID: 8585
+// Module ID: 8623
+// Function ID: 8624
 // Name: OneTimeLoginForgotPasswordConfirmAlertModal
-// Dependencies: [19, 21, 4660, 1236, 4660, 2]
+// Dependencies: [19, 21, 4667, 1236, 4667, 2]
 // Exports: default
 
-// Module 8584 (OneTimeLoginForgotPasswordConfirmAlertModal)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 8623 (OneTimeLoginForgotPasswordConfirmAlertModal)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("getAlertModalItemKey").fileFinishedImporting("modules/auth/native/components/OneTimeLoginForgotPasswordConfirmAlertModal.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/auth/native/components/OneTimeLoginForgotPasswordConfirmAlertModal.tsx");
 
 export default function OneTimeLoginForgotPasswordConfirmAlertModal() {
   let obj = { title: null, content: null, actions: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["6Ecyts"]);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.iAcrqV);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["6Ecyts"]);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t.iAcrqV);
   obj = { children: null };
   obj = { text: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.BddRzS);
-  obj[0] = jsx(require(4660) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "okay");
-  obj[2] = jsx(require(4660) /* getAlertModalItemKey */.AlertActions, { text: null });
-  return jsx(require(4660) /* getAlertModalItemKey */.AlertModal, { text: null });
+  const intl3 = getSystemLocale.intl;
+  obj[0] = intl3.string(getSystemLocale.t.BddRzS);
+  obj[0] = jsx(getAlertModalItemKey.AlertActionButton, { text: null }, "okay");
+  obj[2] = jsx(getAlertModalItemKey.AlertActions, { text: null });
+  return jsx(getAlertModalItemKey.AlertModal, { text: null });
 };

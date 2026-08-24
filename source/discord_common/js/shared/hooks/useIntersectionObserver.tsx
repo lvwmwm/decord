@@ -1,53 +1,50 @@
-// Module ID: 7448
-// Function ID: 7449
+// Module ID: 7486
+// Function ID: 7487
 // Name: items
-// Dependencies: [19, 7449, 7450, 2]
+// Dependencies: [19, 7487, 7488, 2]
 // Exports: useIntersectionObserver, useIsVisible
 
-// Module 7448 (items)
-import noop from "noop";
+// Module 7486 (items)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
 ({ useEffect: c3, useMemo: c4, useRef: c5, useLayoutEffect: closure_6 } = noop);
 let closure_7 = {};
 let items = [1, { threshold: 1 }];
 let items1 = [items];
 const map = new Map(items1);
-let result = require("__handleIntersections").fileFinishedImporting("../discord_common/js/shared/hooks/useIntersectionObserver.tsx");
+let result = set.fileFinishedImporting("../discord_common/js/shared/hooks/useIntersectionObserver.tsx");
 
 export const useIntersectionObserver = function useIntersectionObserver(arg0, arg1) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
   }
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
-  let closure_4;
+  closure_4 = undefined;
   const tmp2 = callback3(null);
   dependencyMap = tmp2;
   let tmp4 = arg1;
   if (arg1 == null) {
     tmp4 = closure_7;
   }
-  const tmp3Result = flag(7449)(tmp4);
+  const tmp3Result = flag(7487)(tmp4);
   callback = tmp3Result;
   closure_4 = callback3(null);
   const items = [flag, arg0, tmp3Result];
   callback4(() => {
     if (flag) {
-      if (null == ref.current) {
-        tmp.current = current(_undefined[2]).getIntersectionObserver(_undefined2.current);
-        const obj = current(_undefined[2]);
+      if (null == ref3.current) {
+        tmp.current = current(ref[2]).getIntersectionObserver(ref2.current);
+        const obj = current(ref[2]);
       }
-      current = _undefined.current;
+      current = ref.current;
       const current2 = tmp.current;
       if (tmp7) {
-        current(_undefined[2]).watch(current2, current, current);
-        const obj2 = current(_undefined[2]);
+        current(ref[2]).watch(current2, current, current);
+        const obj2 = current(ref[2]);
       }
       tmp7 = null != current && null != current2;
     }
@@ -55,12 +52,12 @@ export const useIntersectionObserver = function useIntersectionObserver(arg0, ar
   const items1 = [flag, arg1];
   callback(() => {
     if (current2) {
-      const current = _undefined.current;
-      current2 = ref.current;
+      current = ref.current;
+      current2 = ref3.current;
       if (null != current) {
         if (null != current2) {
           return () => {
-            current(outer1_2[2]).unwatch(current2, current);
+            current(closure_1_2[2]).unwatch(current2, current);
           };
         }
       }
@@ -81,8 +78,8 @@ export const useIsVisible = function useIsVisible(arg0, arg1) {
   }
   const items = [num];
   const tmp4 = callback2(() => {
-    let obj = outer1_8;
-    let value = outer1_8.get(flag);
+    let obj = closure_1_8;
+    let value = closure_1_8.get(flag);
     if (null == value) {
       obj = { threshold: null };
       obj[0] = tmp;
@@ -91,42 +88,42 @@ export const useIsVisible = function useIsVisible(arg0, arg1) {
     }
     return value;
   }, items);
-  current = flag(7449)((isIntersecting) => {
+  current = flag(7487)((isIntersecting) => {
     current(isIntersecting.isIntersecting);
   }).current;
   flag = undefined;
   if (flag === undefined) {
     flag = true;
   }
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
   callback2 = undefined;
   const tmp6 = callback3(null);
   dependencyMap = tmp6;
   let tmp8 = tmp4;
   const tmp = flag;
-  const tmp3 = flag(7449)((isIntersecting) => {
+  const tmp3 = flag(7487)((isIntersecting) => {
     current(isIntersecting.isIntersecting);
   });
   const tmp5 = callback3;
   if (tmp4 == null) {
     tmp8 = closure_7;
   }
-  const tmpResultResult = flag(7449)(tmp8);
+  const tmpResultResult = flag(7487)(tmp8);
   callback = tmpResultResult;
   callback2 = tmp5(null);
   const items1 = [flag, current, tmpResultResult];
   callback4(() => {
     if (flag) {
-      if (null == ref.current) {
-        tmp.current = current(_undefined[2]).getIntersectionObserver(_undefined2.current);
-        const obj = current(_undefined[2]);
+      if (null == ref3.current) {
+        tmp.current = current(ref[2]).getIntersectionObserver(ref2.current);
+        const obj = current(ref[2]);
       }
-      current = _undefined.current;
+      current = ref.current;
       const current2 = tmp.current;
       if (tmp7) {
-        current(_undefined[2]).watch(current2, current, current);
-        const obj2 = current(_undefined[2]);
+        current(ref[2]).watch(current2, current, current);
+        const obj2 = current(ref[2]);
       }
       tmp7 = null != current && null != current2;
     }
@@ -134,12 +131,12 @@ export const useIsVisible = function useIsVisible(arg0, arg1) {
   const items2 = [flag, tmp4];
   callback(() => {
     if (current2) {
-      const current = _undefined.current;
-      current2 = ref.current;
+      current = ref.current;
+      current2 = ref3.current;
       if (null != current) {
         if (null != current2) {
           return () => {
-            current(outer1_2[2]).unwatch(current2, current);
+            current(closure_1_2[2]).unwatch(current2, current);
           };
         }
       }

@@ -1,9 +1,11 @@
-// Module ID: 12110
-// Function ID: 12111
+// Module ID: 12162
+// Function ID: 12163
 // Name: TrendingType
 // Dependencies: [2]
 
-// Module 12110 (TrendingType)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/TrendingType.tsx");
+// Module 12162 (TrendingType)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/TrendingType.tsx");
 
 export const TrendingType = { TRENDING_TYPE_UNSPECIFIED: 0, [0]: "TRENDING_TYPE_UNSPECIFIED", GLOBAL: 1, [1]: "GLOBAL" };

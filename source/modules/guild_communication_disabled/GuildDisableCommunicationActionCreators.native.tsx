@@ -1,48 +1,47 @@
-// Module ID: 11019
-// Function ID: 11020
+// Module ID: 11058
+// Function ID: 11059
 // Name: openDisableCommunication
-// Dependencies: [19, 1922, 21, 5260, 11020, 2007, 4656, 11023, 2]
+// Dependencies: [19, 1922, 21, 5265, 11059, 2008, 4662, 11062, 2]
 // Exports: openDisableCommunication, openEnableCommunication
 
-// Module 11019 (openDisableCommunication)
-import "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { jsx } from "jsxProd";
+// Module 11058 (openDisableCommunication)
+import noopAll from "noop" /* 19 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/guild_communication_disabled/GuildDisableCommunicationActionCreators.native.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/guild_communication_disabled/GuildDisableCommunicationActionCreators.native.tsx");
 
 export const openDisableCommunication = function openDisableCommunication(userId) {
-  let cancelButtonCallback;
-  let guildId;
   ({ guildId, cancelButtonCallback } = userId);
   user = user.getUser(userId.userId);
   if (null != user) {
-    let obj = importDefault(5260);
+    let obj = _modDef5265;
     obj = { guildId: null, user: null, cancelButtonCallback: null };
     obj[0] = guildId;
     obj[1] = user;
     obj[2] = cancelButtonCallback;
-    obj.pushLazy(require(2007) /* asyncRequireImpl */(11020, dependencyMap.paths), obj);
+    obj.pushLazy(asyncRequireImpl(11059, dependencyMap.paths), obj);
   }
 };
 export const openEnableCommunication = function openEnableCommunication(arg0) {
-  let dependencyMap;
-  let importDefault;
-  let require;
   ({ guildId: require, userId: importDefault, cancelButtonCallback: dependencyMap } = arg0);
-  let obj = importDefault(4656);
+  let obj = _modDef4662;
   obj = {
     importer() {
-      return outer1_0(outer1_2[5])(outer1_2[7], outer1_2.paths).then((arg0) => {
-        let closure_0 = arg0.default;
+      return closure_1_0(closure_1_2[5])(closure_1_2[7], closure_1_2.paths).then((arg0) => {
+        closure_0 = arg0.default;
         return (arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
           obj.guildId = closure_0;
-          obj.userId = outer1_1;
-          obj.onCancel = outer1_2;
-          return outer2_4(closure_0, obj);
+          obj.userId = closure_1_1;
+          obj.onCancel = closure_1_2;
+          return closure_2_4(closure_0, obj);
         };
       });
     }

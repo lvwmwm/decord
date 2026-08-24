@@ -1,15 +1,15 @@
-// Module ID: 12045
-// Function ID: 12046
+// Module ID: 12097
+// Function ID: 12098
 // Name: ForwardFailedAlertModal
-// Dependencies: [19, 21, 9076, 12046, 1236, 2]
+// Dependencies: [19, 21, 9113, 12098, 1236, 2]
 // Exports: default
 
-// Module 12045 (ForwardFailedAlertModal)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 12097 (ForwardFailedAlertModal)
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("FORWARD_MODAL_KEY").fileFinishedImporting("modules/forwarding/native/ForwardFailedAlertModal.tsx");
+const result = require("set").fileFinishedImporting("modules/forwarding/native/ForwardFailedAlertModal.tsx");
 
 export default function ForwardFailedAlertModal(message) {
   message = message.message;

@@ -1,29 +1,31 @@
-// Module ID: 15844
-// Function ID: 15845
+// Module ID: 15941
+// Function ID: 15942
 // Name: ThreadChannelStarterMessage
-// Dependencies: [19, 5013, 4994, 21, 8157, 589, 5433, 1222, 10066, 2]
+// Dependencies: [19, 5018, 4999, 21, 8196, 589, 5438, 1222, 10105, 2]
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 15844 (ThreadChannelStarterMessage)
-import "noop";
-import processMessage from "processMessage";
-import { ReferencedMessageState } from "processMessage";
-import reinjectEphemerals from "reinjectEphemerals";
-import { jsx } from "jsxProd";
+// Module 15941 (ThreadChannelStarterMessage)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import setOptionsDefault from "setOptions" /* 8196 */;
+import DCDChatItemDefault from "DCDChatItem" /* 10105 */;
+import closure_3 from "processMessage" /* 5018 */;
+import { ReferencedMessageState } from "processMessage" /* 5018 */;
+import closure_5 from "reinjectEphemerals" /* 4999 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-let obj = new require("setOptions")();
+require = arg1;
+noopAll;
+let obj = new setOptionsDefault();
 obj.setOptions({ renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderEmbeds: true, ignoreMentioned: true, inlineAttachmentMedia: true, inlineEmbedMedia: true, renderReactions: false, renderReplies: true, renderThreadEmbeds: false });
-const result = require("reinjectEphemerals").fileFinishedImporting("modules/threads/native/components/ThreadParentMessage.tsx");
+const result = require("set").fileFinishedImporting("modules/threads/native/components/ThreadParentMessage.tsx");
 
 export const ThreadChannelStarterMessage = function ThreadChannelStarterMessage(arg0) {
-  let dependencyMap;
-  let importDefault;
-  let require;
   ({ guildId: require, messageId: importDefault, channelId: dependencyMap } = arg0);
-  let obj = require(589) /* initialize */;
-  const items = [processMessage];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getMessage(closure_2, closure_1));
+  obj = initialize;
+  const items = [closure_3];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_3.getMessage(closure_2, closure_1));
   let state;
   if (stateFromStores != null) {
     state = stateFromStores.state;
@@ -32,30 +34,28 @@ export const ThreadChannelStarterMessage = function ThreadChannelStarterMessage(
   if (state === ReferencedMessageState.LOADED) {
     obj = { accessibilityRole: "button", onPress: null, children: null };
     obj[1] = function onPress() {
-      outer1_0(outer1_2[7]).transitionToGuild(closure_0, closure_2, closure_1);
+      closure_1_0(closure_1_2[7]).transitionToGuild(closure_0, closure_2, closure_1);
     };
-    obj = { rowGenerator: null, message: null };
+    obj = { rowGenerator: null, message: null, pointerEvents: "none" };
     obj[0] = obj;
     obj[1] = stateFromStores.message;
-    obj[2] = jsx(importDefault(10066), { rowGenerator: null, message: null });
-    tmp5 = jsx(require(5433) /* PressableBase */.PressableOpacity, { rowGenerator: null, message: null });
+    obj[2] = jsx(DCDChatItemDefault, { rowGenerator: null, message: null, pointerEvents: "none" });
+    tmp5 = jsx(PressableBase.PressableOpacity, { rowGenerator: null, message: null, pointerEvents: "none" });
   }
   return tmp5;
 };
 export const ThreadCreationStarterMessage = function ThreadCreationStarterMessage(arg0) {
-  let importDefault;
-  let require;
   ({ messageId: require, channelId: importDefault } = arg0);
-  let obj = require(589) /* initialize */;
-  const items = [reinjectEphemerals];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getMessage(closure_1, closure_0));
+  obj = initialize;
+  const items = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getMessage(closure_1, closure_0));
   let tmp3 = null;
   if (null != stateFromStores) {
-    obj = { rowGenerator: null, message: null, style: null };
+    obj = { rowGenerator: null, message: null, style: null, pointerEvents: "none" };
     obj[0] = obj;
     obj[1] = stateFromStores;
     obj[2] = { overflow: "visible" };
-    tmp3 = jsx(importDefault(10066), { rowGenerator: null, message: null, style: null });
+    tmp3 = jsx(DCDChatItemDefault, { rowGenerator: null, message: null, style: null, pointerEvents: "none" });
   }
   return tmp3;
 };

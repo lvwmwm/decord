@@ -1,12 +1,12 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8647
+// Function ID: 8648
 // Name: context
 // Dependencies: [19, 2]
 
-// Module 8610 (context)
-import importAllResult from "noop";
+// Module 8647 (context)
+import importAllResult from "noop" /* 19 */;
 
-const context = require("noop").createContext(() => {
+const context = importAllResult.createContext(() => {
 
 });
 const result = require("set").fileFinishedImporting("modules/auth/native/components/WideAuthScrollContext.tsx");

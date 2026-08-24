@@ -4,7 +4,9 @@
 // Dependencies: [1665]
 
 // Module 1805 (o)
-const require = arg1;
+import t from "t" /* 1665 */;
+
+require = arg1;
 const dependencyMap = arg6;
 const fn = function o(str) {
   let endsWithResult = str.endsWith("px");
@@ -199,7 +201,7 @@ function processBoxShadow(boxShadow) {
       if (!Array.isArray(str)) {
         const _JSON = JSON;
         const _HermesInternal = HermesInternal;
-        const reanimatedError = new require(1665) /* t */.ReanimatedError("Box shadow value must be an array of shadow objects or a string. Received: " + JSON.stringify(str));
+        const reanimatedError = new t.ReanimatedError("Box shadow value must be an array of shadow objects or a string. Received: " + JSON.stringify(str));
         throw reanimatedError;
       }
     }

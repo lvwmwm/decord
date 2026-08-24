@@ -4,7 +4,9 @@
 // Dependencies: [30]
 
 // Module 83 (getConstants)
-const enforcing = require("get").getEnforcing("SourceCode");
+import getAll from "get" /* 30 */;
+
+const enforcing = getAll.getEnforcing("SourceCode");
 let c1 = null;
 
 export default {

@@ -1,22 +1,22 @@
-// Module ID: 14424
-// Function ID: 14425
+// Module ID: 14492
+// Function ID: 14493
 // Name: _search
-// Dependencies: [5, 676, 530, 585, 5360, 2]
+// Dependencies: [5, 676, 530, 585, 5365, 2]
 // Exports: search
 
-// Module 14424 (_search)
-import set from "set";
-import { Endpoints } from "ME";
+// Module 14492 (_search)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _search() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     const iter = (function*(arg0, body) {
       if (c7 === 2) {
         c7 = 3;
@@ -29,7 +29,7 @@ function _search() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -47,7 +47,7 @@ function _search() {
               let constants = tmp3;
               let aPIError = tmp7;
               let timeout;
-              let obj1 = timeout;
+              obj1 = timeout;
               if (timeout === undefined) {
                 obj1 = {};
               }
@@ -67,7 +67,7 @@ function _search() {
               obj2[0] = body;
               return obj2;
             } else {
-              let c5 = 1;
+              c5 = 1;
               const HTTP = callback(timeout[2]).HTTP;
               const obj3 = { url: null, query: null, rejectWithError: true, timeout: null };
               obj3[0] = constants.COLLECTIBLES_SEARCH;
@@ -116,7 +116,7 @@ function _search() {
     iter.next();
     return iter;
   });
-  const _search = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -125,7 +125,7 @@ function _search() {
   }
   return applyArgumentsResult;
 }
-let result = require("sendRequest").fileFinishedImporting("modules/collectibles/api/Shopfront.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/api/Shopfront.tsx");
 
 export const search = function search() {
   const self = this;

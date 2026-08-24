@@ -1,41 +1,44 @@
-// Module ID: 10764
-// Function ID: 10765
+// Module ID: 10803
+// Function ID: 10804
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 4661, 6950, 4734, 1236, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 6988, 4739, 1236, 4750, 2]
 // Exports: default
 
-// Module 10764 (LeaveConnectionRoleActionSheet)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10803 (LeaveConnectionRoleActionSheet)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import Button from "Button" /* 4750 */;
+import Background from "Background" /* 6988 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_5 = createCacheKey.createStyles({ container: { padding: 12 }, marginTop: { marginTop: 8 }, button: { marginTop: 8, marginBottom: 16 } });
-const result = require("jsxProd").fileFinishedImporting("modules/connections/native/LeaveConnectionRoleActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/connections/native/LeaveConnectionRoleActionSheet.tsx");
 
 export default function LeaveConnectionRoleActionSheet(onLeaveRolePressed) {
   const tmp = callback3();
   let obj = { children: null };
   obj = { style: tmp.container, children: null };
   obj = { variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.vytvJF);
-  const items = [callback(require(4734) /* Text */.Text, obj), , ];
-  const obj1 = { style: tmp.marginTop, variant: "text-md/normal", color: "text-default", children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.caJwb5);
-  items[1] = callback(require(4734) /* Text */.Text, obj1);
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.vytvJF);
+  const items = [callback(Text.Text, obj), , ];
+  obj1 = { style: tmp.marginTop, variant: "text-md/normal", color: "text-default", children: null };
+  const intl2 = getSystemLocale.intl;
+  obj1[3] = intl2.string(getSystemLocale.t.caJwb5);
+  items[1] = callback(Text.Text, obj1);
   const obj2 = { style: tmp.button, children: null };
   const obj3 = { variant: "destructive", onPress: onLeaveRolePressed.onLeaveRolePressed, text: null, grow: true };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj3[2] = intl3.string(require(1236) /* getSystemLocale */.t["+Oi4XF"]);
-  obj2[1] = callback(require(4745) /* Button */.Button, obj3);
+  const intl3 = getSystemLocale.intl;
+  obj3[2] = intl3.string(getSystemLocale.t["+Oi4XF"]);
+  obj2[1] = callback(Button.Button, obj3);
   items[2] = callback(View, obj2);
   obj[1] = items;
   obj[0] = callback2(View, obj);
-  return callback(require(6950) /* Background */.BottomSheet, obj);
+  return callback(Background.BottomSheet, obj);
 };

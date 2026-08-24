@@ -1,32 +1,33 @@
-// Module ID: 14249
-// Function ID: 14250
+// Module ID: 14317
+// Function ID: 14318
 // Name: FamilyCenterUsernameHeader
-// Dependencies: [19, 17, 21, 4661, 4219, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 4223, 4739, 2]
 // Exports: default
 
-// Module 14249 (FamilyCenterUsernameHeader)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14317 (FamilyCenterUsernameHeader)
+import noopAll from "noop" /* 19 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import Text from "Text" /* 4739 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ container: { justifyContent: "center" } });
-const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterUsernameHeader.tsx");
+const result = require("set").fileFinishedImporting("modules/parent_tools/native/FamilyCenterUsernameHeader.tsx");
 
 export default function FamilyCenterUsernameHeader(user) {
   user = user.user;
-  let obj = importDefault(4219);
+  let obj = nameFromUserDefault;
   const name = obj.useName(user);
   const tmp = callback3();
   obj = { style: tmp.container, children: null };
-  const combined = " (@" + importDefault(4219).getUserTag(user, { decoration: "never" }) + ")";
+  const combined = " (@" + nameFromUserDefault.getUserTag(user, { decoration: "never" }) + ")";
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
-  const items = [name, callback(require(4734) /* Text */.Text, { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined })];
+  const items = [name, callback(Text.Text, { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined })];
   obj[3] = items;
-  obj[1] = callback2(require(4734) /* Text */.Text, obj);
+  obj[1] = callback2(Text.Text, obj);
   return callback(View, obj);
 };

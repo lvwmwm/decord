@@ -1,10 +1,12 @@
-// Module ID: 5415
-// Function ID: 5416
+// Module ID: 5420
+// Function ID: 5421
 // Name: promise
 // Dependencies: [2]
 // Exports: notifyAboutTTI, schedulePostTTIEvent
 
-// Module 5415 (promise)
+// Module 5420 (promise)
+import set from "set" /* 2 */;
+
 const obj = {
   resolve() {
 
@@ -13,10 +15,10 @@ const obj = {
 const promise = new Promise((resolve) => {
   obj.resolve = resolve;
 });
-const result = require("set").fileFinishedImporting("modules/app_startup/PostTTIScheduler/PostTTIScheduler.tsx");
+const result = set.fileFinishedImporting("modules/app_startup/PostTTIScheduler/PostTTIScheduler.tsx");
 
 export const schedulePostTTIEvent = function schedulePostTTIEvent(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   promise.then(() => {
     callback();
   });

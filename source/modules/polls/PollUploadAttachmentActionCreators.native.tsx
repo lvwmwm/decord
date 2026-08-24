@@ -1,24 +1,24 @@
-// Module ID: 11379
-// Function ID: 11380
+// Module ID: 11430
+// Function ID: 11431
 // Name: _handlePollGifAttachmentAdd
-// Dependencies: [5, 4825, 7576, 11380, 8949, 4838, 4829, 8466, 2]
+// Dependencies: [5, 4830, 7614, 11431, 8986, 4843, 4834, 8505, 2]
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment
 
-// Module 11379 (_handlePollGifAttachmentAdd)
-import openImagePickerUnhandled from "openImagePickerUnhandled";
-import { DraftType } from "handleChanged";
-import { POLL_ATTACHMENT_FOLDER } from "POLL_ATTACHMENT_FOLDER";
+// Module 11430 (_handlePollGifAttachmentAdd)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { DraftType } from "handleChanged" /* 4830 */;
+import { POLL_ATTACHMENT_FOLDER } from "POLL_ATTACHMENT_FOLDER" /* 7614 */;
 
 const require = arg1;
 function _handlePollGifAttachmentAdd() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c8 === 2) {
         c8 = 3;
@@ -31,7 +31,7 @@ function _handlePollGifAttachmentAdd() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -47,26 +47,26 @@ function _handlePollGifAttachmentAdd() {
               return obj;
             } else {
               let Poll = tmp3;
-              let openImagePickerUnhandled = tmp5;
-              let dependencyMap;
-              openImagePickerUnhandled = undefined;
+              closure_3 = tmp5;
+              dependencyMap = undefined;
+              closure_3 = undefined;
               Poll = undefined;
-              let closure_5;
+              closure_5 = undefined;
               let styles;
               obj7 = undefined;
-              dependencyMap = callback(11380).getFileNameFromGifUrl(callback2, dependencyMap);
+              dependencyMap = callback(11431).getFileNameFromGifUrl(callback2, dependencyMap);
               styles = 1;
-              const obj16 = callback(11380);
+              const obj16 = callback(11431);
               obj7 = 2;
               c8 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = callback(11380).downloadPollGif(dependencyMap);
+              obj1 = { value: null, done: false };
+              obj1[0] = callback(11431).downloadPollGif(dependencyMap);
               return obj1;
             }
           } else if (1 === tmp8) {
             styles = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else if (2 === tmp8) {
             if (arg0 === 1) {
               c8 = 3;
@@ -78,19 +78,19 @@ function _handlePollGifAttachmentAdd() {
               obj2[0] = arg1;
               return obj2;
             } else {
-              openImagePickerUnhandled = arg1;
-              if (null == openImagePickerUnhandled) {
+              closure_3 = arg1;
+              if (null == closure_3) {
                 styles = 0;
                 c8 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
-                obj7 = callback(11380);
+                obj7 = callback(11431);
                 Poll = obj7.getFilePathForGif(dependencyMap);
-                let obj8 = callback(8949);
+                let obj8 = callback(8986);
                 obj7 = 3;
                 c8 = 1;
                 const obj3 = { value: null, done: false };
-                obj3[0] = obj8.writeFile("cache", Poll, openImagePickerUnhandled, "base64");
+                obj3[0] = obj8.writeFile("cache", Poll, closure_3, "base64");
                 return obj3;
               }
             }
@@ -109,9 +109,9 @@ function _handlePollGifAttachmentAdd() {
               if (null == closure_5) {
                 styles = 0;
                 c8 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
-                obj4 = callback(4838);
+                obj4 = callback(4843);
                 obj7 = 4;
                 c8 = 1;
                 const obj5 = { value: null, done: false };
@@ -132,7 +132,7 @@ function _handlePollGifAttachmentAdd() {
             styles = arg1;
             obj7 = { id: null, origin: null, uri: null, originalUri: null, filename: null, mimeType: "image/gif", width: null, height: null, platform: null };
             obj7[0] = callback2;
-            obj7[1] = callback(4829).UploadOrigin.IMAGE_PICKER;
+            obj7[1] = callback(4834).UploadOrigin.IMAGE_PICKER;
             obj7[2] = closure_5;
             obj7[3] = closure_5;
             obj7[4] = dependencyMap;
@@ -146,8 +146,8 @@ function _handlePollGifAttachmentAdd() {
               height = styles.height;
             }
             obj7[7] = height;
-            obj7[8] = callback(4829).UploadPlatform.REACT_NATIVE;
-            obj = callback2(8466);
+            obj7[8] = callback(4834).UploadPlatform.REACT_NATIVE;
+            obj = callback2(8505);
             obj8 = { file: null, channelId: null, draftType: null };
             obj8[0] = obj7;
             obj8[1] = callback;
@@ -171,7 +171,7 @@ function _handlePollGifAttachmentAdd() {
       }
     })();
   });
-  const _handlePollGifAttachmentAdd = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -183,21 +183,21 @@ function _handlePollGifAttachmentAdd() {
 function _removePollUploadAttachment() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c4 = 0;
-    let c3 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c4 = 0;
+    c3 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
-      let c6 = 1;
-      callback2(8466).remove(callback, callback2, Poll.Poll);
-      const obj5 = callback2(8466);
-      const obj6 = callback(8949);
-      yield obj6.removeFile("cache", callback(11380).getFilePathForGif(dependencyMap));
+      c6 = 1;
+      callback2(8505).remove(callback, callback2, Poll.Poll);
+      const obj5 = callback2(8505);
+      const obj6 = callback(8986);
+      yield obj6.removeFile("cache", callback(11431).getFilePathForGif(dependencyMap));
       if (1 === tmp6) {
         c6 = 0;
-        let c3 = 3;
+        c3 = 3;
       } else if (arg0 === 1) {
         c3 = 3;
         throw arg1;
@@ -208,7 +208,7 @@ function _removePollUploadAttachment() {
       return arg1;
     })();
   });
-  const _removePollUploadAttachment = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -220,15 +220,15 @@ function _removePollUploadAttachment() {
 function _removeAllPollUploadAttachments() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
+    c4 = 0;
     return (function*(arg0) {
       let Poll = 1;
-      const obj1 = v0(8466);
+      obj1 = v0(8505);
       obj1.clearAll(callback, Poll.Poll);
-      yield callback(8949).clearFolder("cache", outer1_5);
+      yield callback(8986).clearFolder("cache", closure_1_5);
       if (1 === tmp6) {
         Poll = 0;
         v0 = 3;
@@ -242,7 +242,7 @@ function _removeAllPollUploadAttachments() {
       return arg1;
     })();
   });
-  const _removeAllPollUploadAttachments = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -251,7 +251,7 @@ function _removeAllPollUploadAttachments() {
   }
   return applyArgumentsResult;
 }
-const result = require("POLL_ATTACHMENT_FOLDER").fileFinishedImporting("modules/polls/PollUploadAttachmentActionCreators.native.tsx");
+const result = require("set").fileFinishedImporting("modules/polls/PollUploadAttachmentActionCreators.native.tsx");
 
 export const handlePollGifAttachmentAdd = function handlePollGifAttachmentAdd(closure_0, localCreationAnswerId, closure_2) {
   const self = this;

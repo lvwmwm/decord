@@ -1,31 +1,25 @@
-// Module ID: 10612
-// Function ID: 10613
+// Module ID: 10651
+// Function ID: 10652
 // Name: SafetyToolsActionSheetWrapper
-// Dependencies: [19, 1391, 21, 589, 6950, 10613, 2]
+// Dependencies: [19, 1391, 21, 589, 6988, 10652, 2]
 // Exports: default
 
-// Module 10612 (SafetyToolsActionSheetWrapper)
-import noop from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { jsx } from "jsxProd";
+// Module 10651 (SafetyToolsActionSheetWrapper)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheetWrapper.tsx");
+const result = require("set").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheetWrapper.tsx");
 
 export default function SafetyToolsActionSheetWrapper(channelId) {
-  let children;
-  let hasHeaderBack;
-  let headerTitle;
-  let recipientId;
-  let warningId;
-  let warningType;
   channelId = channelId.channelId;
   const onClose = channelId.onClose;
   let stateFromStores;
   ({ headerTitle, hasHeaderBack, warningId, warningType, recipientId, children } = channelId);
   let obj = channelId(stateFromStores[3]);
-  const items = [ensureGuildLoaded];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(channelId));
+  const items = [closure_4];
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getChannel(channelId));
   const items1 = [stateFromStores, onClose];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {

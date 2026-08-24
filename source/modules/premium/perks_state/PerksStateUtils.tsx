@@ -5,13 +5,16 @@
 // Exports: getPerkConfig, hasPerk, parseServerPerks
 
 // Module 1938 (parseServerPerkConfigKind)
-import _slicedToArray from "_slicedToArray";
+import fromStringAll from "fromString" /* 506 */;
+import PerkConfigType from "PerkConfigType" /* 1939 */;
+import create from "create" /* 1940 */;
+import closure_3 from "_slicedToArray" /* 32 */;
 
-const require = arg1;
+require = arg1;
 function parseServerPerkConfigKind(kind) {
   if (null != kind.kind) {
     const type = kind.kind.type;
-    if (require(1939) /* PerkConfigType */.PerkConfigType.INCREASED_FILE_UPLOAD_SIZE === type) {
+    if (PerkConfigType.PerkConfigType.INCREASED_FILE_UPLOAD_SIZE === type) {
       let obj = { type: null, maxSize: null };
       obj[0] = tmp(1939).PerkConfigType.INCREASED_FILE_UPLOAD_SIZE;
       obj[1] = kind.kind.max_size;
@@ -42,23 +45,23 @@ function getPerkSource(perks, MONTHLY_ORBS) {
         const rounded = Math.floor(MONTHLY_ORBS / 64);
         let hasItem = rounded < activePerksBitmask.length;
         if (hasItem) {
-          const obj = importAll(506);
-          const obj2 = importAll(506);
-          const deserializeResult = importAll(506).deserialize(activePerksBitmask[rounded]);
-          hasItem = obj.has(deserializeResult, importAll(506).getFlag(MONTHLY_ORBS % 64));
-          const obj3 = importAll(506);
+          const obj = fromStringAll;
+          const obj2 = fromStringAll;
+          const deserializeResult = fromStringAll.deserialize(activePerksBitmask[rounded]);
+          hasItem = obj.has(deserializeResult, fromStringAll.getFlag(MONTHLY_ORBS % 64));
+          const obj3 = fromStringAll;
         }
         flag = hasItem;
       }
       if (flag) {
-        const items = [require(1940) /* create */.PerkSource.SOURCE_NITRO];
+        const items = [create.PerkSource.SOURCE_NITRO];
         source = items;
       }
     }
     return source;
   }
 }
-const result = require("fromString").fileFinishedImporting("modules/premium/perks_state/PerksStateUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/perks_state/PerksStateUtils.tsx");
 
 export const parseServerPerks = function parseServerPerks(perks) {
   if (null == perks) {
@@ -95,11 +98,11 @@ export const hasPerk = function hasPerk(perks, MONTHLY_ORBS) {
     const rounded = Math.floor(MONTHLY_ORBS / 64);
     let hasItem = rounded < activePerksBitmask.length;
     if (hasItem) {
-      const obj = importAll(506);
-      const obj2 = importAll(506);
-      const deserializeResult = importAll(506).deserialize(activePerksBitmask[rounded]);
-      hasItem = obj.has(deserializeResult, importAll(506).getFlag(MONTHLY_ORBS % 64));
-      const obj3 = importAll(506);
+      const obj = fromStringAll;
+      const obj2 = fromStringAll;
+      const deserializeResult = fromStringAll.deserialize(activePerksBitmask[rounded]);
+      hasItem = obj.has(deserializeResult, fromStringAll.getFlag(MONTHLY_ORBS % 64));
+      const obj3 = fromStringAll;
     }
     return hasItem;
   }

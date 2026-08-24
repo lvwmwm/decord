@@ -1,30 +1,31 @@
-// Module ID: 11194
-// Function ID: 11195
+// Module ID: 11246
+// Function ID: 11247
 // Name: num2
-// Dependencies: [19, 17, 21, 4661, 712, 500, 8513, 1236, 6867, 4734, 10519, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 500, 8552, 1236, 6905, 4739, 10558, 2]
 // Exports: default
 
-// Module 11194 (num2)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import set from "set";
-import set from "set";
-import set from "jsxProd";
+// Module 11246 (num2)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ChatIcon from "ChatIcon" /* 6905 */;
+import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 8552 */;
+import AnimatedCountDefault from "AnimatedCount" /* 10558 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import set from "set" /* 500 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
-createCacheKey = { tintColor: require("Themes").colors.ICON_MUTED, marginEnd: 4, marginTop: null };
+createCacheKey = { tintColor: ThemesDefault.colors.ICON_MUTED, marginEnd: 4, marginTop: null };
 let num = 0;
 if (set.isAndroid()) {
   num = 2;
 }
-createCacheKey = { iconRead: createCacheKey, iconUnread: null, messageUnreadCount: null, container: null };
-createCacheKey[2] = num;
-let obj1 = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, marginEnd: 4, marginTop: null };
+createCacheKey = { iconRead: createCacheKey, iconUnread: null, messageUnreadCount: num, container: null };
+let obj1 = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginEnd: 4, marginTop: null };
 let num2 = 0;
 if (set.isAndroid()) {
   num2 = 2;
@@ -33,20 +34,14 @@ obj1[2] = num2;
 createCacheKey[1] = obj1;
 createCacheKey[2] = { marginStart: 4 };
 createCacheKey[3] = { flexDirection: "row", alignItems: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_6 = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("modules/forums/native/posts/ForumPostMessageCount.tsx");
 
 export default function ForumPostMessageCount(hasUnreads) {
-  let containerStyle;
-  let isMaxMessageCount;
-  let messageCount;
-  let messageCountText;
-  let thread;
-  let unreadCount;
   hasUnreads = hasUnreads.hasUnreads;
   ({ thread, containerStyle } = hasUnreads);
-  const tmp = createCacheKey();
-  let obj = require(8513) /* useLoadForumUnreadCounts */;
+  const tmp = callback();
+  let obj = useLoadForumUnreadCounts;
   messageCount = obj.useMessageCount(thread);
   ({ messageCountText, unreadCount } = messageCount);
   let str = "text-muted";
@@ -57,24 +52,24 @@ export default function ForumPostMessageCount(hasUnreads) {
   obj = { style: items, accessibilityLabel: null, children: null };
   items = [tmp.container, containerStyle];
   const intl = tmp2(1236).intl;
-  obj[1] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["8M0DrB"], { count: messageCountText });
+  obj[1] = intl.formatToPlainString(getSystemLocale.t["8M0DrB"], { count: messageCountText });
   obj = { size: "xs", style: hasUnreads ? tmp.iconUnread : tmp.iconRead, color: null };
   let str2 = "icon-muted";
   if (hasUnreads) {
     str2 = "interactive-text-default";
   }
   obj[2] = str2;
-  const items1 = [closure_4(require(6867) /* ChatIcon */.ChatIcon, obj), , ];
+  const items1 = [closure_4(ChatIcon.ChatIcon, obj), , ];
   if (isMaxMessageCount) {
-    const obj1 = { variant: "text-sm/semibold", color: null, children: null };
+    obj1 = { variant: "text-sm/semibold", color: null, children: null };
     obj1[1] = str;
     obj1[2] = messageCountText;
-    let tmp7Result = tmp7(tmp2(4734).Text, obj1);
+    let tmp7Result = tmp7(tmp2(4739).Text, obj1);
   } else {
     const obj2 = { count: null, textVariant: "text-sm/semibold", textColor: null, animate: false };
     obj2[0] = messageCount;
     obj2[2] = str;
-    tmp7Result = tmp7(importDefault(10519), obj2);
+    tmp7Result = tmp7(AnimatedCountDefault, obj2);
   }
   items1[1] = tmp7Result;
   let tmp5Result = null != unreadCount;
@@ -86,7 +81,7 @@ export default function ForumPostMessageCount(hasUnreads) {
     obj4[0] = unreadCount;
     const items2 = ["(", intl2.format(tmp2(1236).t.z3PEth, obj4), ")"];
     obj3[3] = items2;
-    tmp5Result = tmp5(tmp2(4734).Text, obj3);
+    tmp5Result = tmp5(tmp2(4739).Text, obj3);
   }
   items1[2] = tmp5Result;
   obj[2] = items1;

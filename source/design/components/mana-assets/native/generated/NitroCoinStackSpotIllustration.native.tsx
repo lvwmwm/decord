@@ -1,18 +1,19 @@
-// Module ID: 5958
-// Function ID: 5959
+// Module ID: 5989
+// Function ID: 5990
 // Name: NitroCoinStackSpotIllustration
-// Dependencies: [21, 5449, 5959, 2]
+// Dependencies: [21, 5454, 5990, 2]
 // Exports: NitroCoinStackSpotIllustration
 
-// Module 5958 (NitroCoinStackSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 5989 (NitroCoinStackSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5990 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroCoinStackSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroCoinStackSpotIllustration.native.tsx");
 
 export const NitroCoinStackSpotIllustration = function NitroCoinStackSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const NitroCoinStackSpotIllustration = function NitroCoinStackSpotIllustr
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5959);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroCoinStackSpotIllustration = function NitroCoinStackSpotIllustr
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

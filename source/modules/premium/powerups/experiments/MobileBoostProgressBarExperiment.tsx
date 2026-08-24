@@ -1,16 +1,17 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15482
+// Function ID: 15483
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: getMobileBoostProgressBarEnabled, useMobileBoostProgressBarEnabled
 
-// Module 15418 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 15482 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-mobile-boost-progress-bar", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/premium/powerups/experiments/MobileBoostProgressBarExperiment.tsx");
+const result = set.fileFinishedImporting("modules/premium/powerups/experiments/MobileBoostProgressBarExperiment.tsx");
 
 export const MobileBoostProgressBarExperiment = apexExperiment;
 export const useMobileBoostProgressBarEnabled = function useMobileBoostProgressBarEnabled(GuildHeaderCoachmarks) {

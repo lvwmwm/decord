@@ -1,54 +1,58 @@
-// Module ID: 14601
-// Function ID: 14602
+// Module ID: 14669
+// Function ID: 14670
 // Name: radio
-// Dependencies: [4497, 8198, 12557, 12558, 1236, 589, 10669, 2]
+// Dependencies: [4501, 8238, 12611, 12612, 1236, 589, 10708, 2]
 
-// Module 14601 (radio)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createToggle from "createToggle";
+// Module 14669 (radio)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import handleAutomaticGainControlChange from "handleAutomaticGainControlChange" /* 12611 */;
+import getNoiseCancellationDeferredToSystem from "getNoiseCancellationDeferredToSystem" /* 12612 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4501 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.t8Qhib);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.t8Qhib);
   },
   parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useValue() {
-    return require(12557) /* handleAutomaticGainControlChange */.useSelectedNoiseSuppressionOption();
+    return handleAutomaticGainControlChange.useSelectedNoiseSuppressionOption();
   },
   onValueChange: function onNoiseSuppressionKrispValueSettingChange(arg0) {
-    const result = require(12557) /* handleAutomaticGainControlChange */.handleNoiseSuppressionChange(arg0);
+    const result = handleAutomaticGainControlChange.handleNoiseSuppressionChange(arg0);
   },
   useOptions: function useNoiseSuppressionKrispSettingOptions() {
-    let obj = require(12558) /* getNoiseCancellationDeferredToSystem */;
+    let obj = getNoiseCancellationDeferredToSystem;
     const noiseCancellationDeferredToSystem = obj.useNoiseCancellationDeferredToSystem();
-    obj = { value: require(12557) /* handleAutomaticGainControlChange */.NoiseSuppressionOpt.KRISP, label: null, disabled: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl.string(require(1236) /* getSystemLocale */.t.rdoNzt);
+    obj = { value: handleAutomaticGainControlChange.NoiseSuppressionOpt.KRISP, label: null, disabled: null };
+    const intl = getSystemLocale.intl;
+    obj[1] = intl.string(getSystemLocale.t.rdoNzt);
     obj[2] = noiseCancellationDeferredToSystem;
     const items = [obj, , ];
-    obj = { value: require(12557) /* handleAutomaticGainControlChange */.NoiseSuppressionOpt.STANDARD, disabled: noiseCancellationDeferredToSystem, label: null };
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.qXeYHw);
+    obj = { value: handleAutomaticGainControlChange.NoiseSuppressionOpt.STANDARD, disabled: noiseCancellationDeferredToSystem, label: null };
+    const intl2 = getSystemLocale.intl;
+    obj[2] = intl2.string(getSystemLocale.t.qXeYHw);
     items[1] = obj;
-    const obj1 = { value: require(12557) /* handleAutomaticGainControlChange */.NoiseSuppressionOpt.NONE, disabled: noiseCancellationDeferredToSystem, label: null };
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    obj1[2] = intl3.string(require(1236) /* getSystemLocale */.t.wkYAlz);
+    obj1 = { value: handleAutomaticGainControlChange.NoiseSuppressionOpt.NONE, disabled: noiseCancellationDeferredToSystem, label: null };
+    const intl3 = getSystemLocale.intl;
+    obj1[2] = intl3.string(getSystemLocale.t.wkYAlz);
     items[2] = obj1;
     return items;
   },
   usePredicate: function useHasNoiseSuppressionKrispSetting() {
-    const items = [_detectH265HardwareDecode];
-    return require(589) /* initialize */.useStateFromStores(items, () => noiseCancellationSupported.isNoiseCancellationSupported());
+    const items = [closure_2];
+    return initialize.useStateFromStores(items, () => noiseCancellationSupported.isNoiseCancellationSupported());
   },
   useSearchTerms() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1236) /* getSystemLocale */.t.hmfkCi)];
+    const intl = getSystemLocale.intl;
+    const items = [intl.string(getSystemLocale.t.hmfkCi)];
     return items;
   }
 };
 createToggle = createToggle.createRadio(createToggle);
-let result = require("handleAutomaticGainControlChange").fileFinishedImporting("modules/user_settings/defs/native/NoiseSuppressionKrispSetting.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/NoiseSuppressionKrispSetting.tsx");
 
 export default createToggle;

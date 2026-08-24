@@ -1,17 +1,19 @@
-// Module ID: 14426
-// Function ID: 14427
+// Module ID: 14494
+// Function ID: 14495
 // Name: useGetProductsFromSkus
-// Dependencies: [19, 5301, 589, 14427, 2]
+// Dependencies: [19, 5306, 589, 14495, 2]
 // Exports: default
 
-// Module 14426 (useGetProductsFromSkus)
-import updateCategoriesAndProducts from "updateCategoriesAndProducts";
+// Module 14494 (useGetProductsFromSkus)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import closure_4 from "updateCategoriesAndProducts" /* 5306 */;
 
-require("noop").useCallback;
-const result = require("initialize").fileFinishedImporting("modules/collectibles/hooks/useGetProductsFromSkus.tsx");
+noop.useCallback;
+const result = set.fileFinishedImporting("modules/collectibles/hooks/useGetProductsFromSkus.tsx");
 
 export default function useGetProductsFromSkus() {
-  const items = [updateCategoriesAndProducts];
+  const items = [closure_4];
   stateFromStores = stateFromStores(589).useStateFromStores(items, () => products.products);
   const items1 = [stateFromStores];
   return useCallback((arr) => {
@@ -21,11 +23,11 @@ export default function useGetProductsFromSkus() {
       if (null != value) {
         productByStoreListingId = value;
         if (null != value.variantGroupStoreListingId) {
-          productByStoreListingId = outer1_4.getProductByStoreListingId(value.variantGroupStoreListingId);
+          productByStoreListingId = closure_1_4.getProductByStoreListingId(value.variantGroupStoreListingId);
         }
       }
       return productByStoreListingId;
     });
-    return outer1_1(outer1_2[3])(mapped.filter((arg0) => null != arg0), "storeListingId");
+    return closure_1_1(closure_1_2[3])(mapped.filter((arg0) => null != arg0), "storeListingId");
   }, items1);
 };

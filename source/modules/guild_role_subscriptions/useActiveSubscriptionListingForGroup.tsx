@@ -1,18 +1,18 @@
-// Module ID: 15793
-// Function ID: 15794
+// Module ID: 15862
+// Function ID: 15863
 // Name: useActiveSubscriptionListingForGroup
-// Dependencies: [19, 4044, 4045, 4015, 676, 589, 14560, 7223, 2]
+// Dependencies: [19, 4047, 4048, 4018, 676, 589, 14628, 7261, 2]
 // Exports: default
 
-// Module 15793 (useActiveSubscriptionListingForGroup)
-import noop from "noop";
-import addSubscriptionPlan from "addSubscriptionPlan";
-import reset from "reset";
-import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
-import { SubscriptionTypes } from "ME";
+// Module 15862 (useActiveSubscriptionListingForGroup)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "addSubscriptionPlan" /* 4047 */;
+import closure_4 from "reset" /* 4048 */;
+import closure_5 from "makeGroupListingIndexSubscriptionListingTag" /* 4018 */;
+import { SubscriptionTypes } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("reset").fileFinishedImporting("modules/guild_role_subscriptions/useActiveSubscriptionListingForGroup.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/useActiveSubscriptionListingForGroup.tsx");
 
 export default function useActiveSubscriptionListingForGroup(arg0) {
   const _require = arg0;
@@ -63,7 +63,7 @@ export default function useActiveSubscriptionListingForGroup(arg0) {
       let tmp6 = activeSubscriptionPlanFromStore;
       let subscriptionListing = activeSubscriptionPlanFromStore.getSubscriptionListing(item10017);
       let tmp8 = subscriptionListing;
-      let id;
+      id = undefined;
       if (subscriptionListing != null) {
         id = subscriptionListing.subscription_plans[0].id;
       }

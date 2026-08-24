@@ -1,25 +1,28 @@
-// Module ID: 4032
-// Function ID: 4033
+// Module ID: 4035
+// Function ID: 4036
 // Name: MAX_REACTIONS
-// Dependencies: [1218, 676, 4033, 4034, 1236, 7510, 4066, 698, 2]
+// Dependencies: [1218, 676, 4036, 4037, 1236, 7548, 4069, 698, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 4032 (MAX_REACTIONS)
-import fetchFingerprint from "fetchFingerprint";
-import ME from "ME";
-import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags";
+// Module 4035 (MAX_REACTIONS)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import ReactionTypes from "ReactionTypes" /* 7548 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import ME from "ME" /* 676 */;
+import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags" /* 4036 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ AnalyticsSections: c4, AnalyticEvents: c5 } = ME);
-let result = require("AccountNotificationFlags").fileFinishedImporting("modules/reactions/ReactionUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/reactions/ReactionUtils.tsx");
 
 export const MAX_REACTIONS = 20;
 export const getReactionEmojiName = function getReactionEmojiName(emoji) {
   if (null == emoji.id) {
-    let result = importDefault(4034).convertSurrogateToName(emoji.name);
-    const obj = importDefault(4034);
+    let result = parseRawEmojiObjectDefault.convertSurrogateToName(emoji.name);
+    const obj = parseRawEmojiObjectDefault;
   } else {
     const _HermesInternal = HermesInternal;
     result = ":" + emoji.name + ":";
@@ -27,7 +30,7 @@ export const getReactionEmojiName = function getReactionEmojiName(emoji) {
   return result;
 };
 export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayName(me, count, emoji, arg3) {
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (arg3) {
     if (me) {
       Z_l_qu = t.i9DXqM;
@@ -52,8 +55,8 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
     const obj = { reactions: null, emojiName: null };
     obj[0] = count;
     if (null == emoji.id) {
-      let str2 = importDefault(4034).convertSurrogateToName(emoji.name);
-      const obj2 = importDefault(4034);
+      let str2 = parseRawEmojiObjectDefault.convertSurrogateToName(emoji.name);
+      const obj2 = parseRawEmojiObjectDefault;
     } else {
       const _HermesInternal = HermesInternal;
       str2 = ":" + emoji.name + ":";
@@ -73,12 +76,12 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
   }
 };
 export const isMeReaction = function isMeReaction(me, me_burst, arg2) {
-  let tmp3 = arg2 === require(7510) /* ReactionTypes */.ReactionTypes.BURST;
+  let tmp3 = arg2 === ReactionTypes.ReactionTypes.BURST;
   if (tmp3) {
     tmp3 = true === me_burst;
   }
   if (!tmp3) {
-    let tmp5 = arg2 === require(7510) /* ReactionTypes */.ReactionTypes.NORMAL;
+    let tmp5 = arg2 === ReactionTypes.ReactionTypes.NORMAL;
     if (tmp5) {
       tmp5 = true === me;
     }
@@ -149,9 +152,9 @@ export const shouldApplyReaction = function shouldApplyReaction(optimistic) {
   return !optimistic;
 };
 export const updateReactionNotificationsSetting = function updateReactionNotificationsSetting(NumberResult, setting) {
-  const ReactionNotifications = require(4066) /* explicitContentFromProto */.ReactionNotifications;
+  const ReactionNotifications = explicitContentFromProto.ReactionNotifications;
   ReactionNotifications.updateSetting(NumberResult);
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { update_type: constants3.ACCOUNT, reaction_notifications: NumberResult, reaction_notifications_old: setting };
   obj.track(constants2.NOTIFICATION_SETTINGS_UPDATED, obj);
 };

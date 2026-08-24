@@ -1,38 +1,36 @@
-// Module ID: 10401
-// Function ID: 10402
+// Module ID: 10440
+// Function ID: 10441
 // Name: useVirtualCurrencyBalanceAnimationData
-// Dependencies: [32, 19, 4662, 589, 6701, 2]
+// Dependencies: [32, 19, 4669, 589, 6738, 2]
 // Exports: useVirtualCurrencyBalanceAnimationData
 
-// Module 10401 (useVirtualCurrencyBalanceAnimationData)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+// Module 10440 (useVirtualCurrencyBalanceAnimationData)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
 
 const require = arg1;
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/virtual_currency/hooks/native/useVirtualCurrencyBalanceAnimationData.tsx");
+const result = require("set").fileFinishedImporting("modules/virtual_currency/hooks/native/useVirtualCurrencyBalanceAnimationData.tsx");
 
 export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrencyBalanceAnimationData(initialRenderedBalance) {
-  let c7;
-  let tmp6;
   initialRenderedBalance = initialRenderedBalance.initialRenderedBalance;
   const balance = initialRenderedBalance.balance;
   let stateFromStores;
   let currentAnimationType;
   let React;
-  let maybeApplyNoTextColorForLightCustomTheme;
+  closure_5 = undefined;
   let lottieRef;
   c7 = undefined;
   let first1;
-  let closure_9;
-  let c10;
+  closure_9 = undefined;
+  closure_10 = undefined;
   let callback2;
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const items = [closure_5];
   stateFromStores = initialRenderedBalance(stateFromStores[3]).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let tmp2 = currentAnimationType(React.useState(null), 2);
   currentAnimationType = tmp2[0];
   React = tmp2[1];
-  maybeApplyNoTextColorForLightCustomTheme = React.useRef(null);
+  closure_5 = React.useRef(null);
   lottieRef = React.useRef(null);
   const obj = initialRenderedBalance(stateFromStores[3]);
   [tmp6, c7] = currentAnimationType(React.useState(null != initialRenderedBalance), 2);
@@ -40,13 +38,13 @@ export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrenc
   first1 = tmp7[0];
   closure_9 = tmp7[1];
   const tmp9 = balance(stateFromStores[4])(balance);
-  c10 = tmp9;
+  closure_10 = tmp9;
   const onValueChange = React.useCallback(() => {
 
   }, []);
   const items1 = [currentAnimationType];
   const onValueReached = React.useCallback(() => {
-    maybeApplyNoTextColorForLightCustomTheme.current = null;
+    closure_5.current = null;
     callback(null);
   }, []);
   callback2 = React.useCallback((arg0) => {
@@ -55,8 +53,8 @@ export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrenc
       if (arg0 > 0) {
         str = "earn";
       }
-      maybeApplyNoTextColorForLightCustomTheme.current = str;
-      if (currentAnimationType === maybeApplyNoTextColorForLightCustomTheme.current) {
+      closure_5.current = str;
+      if (currentAnimationType === closure_5.current) {
         const current = lottieRef.current;
         if (current != null) {
           current.play();
@@ -88,10 +86,10 @@ export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrenc
   const effect1 = React.useEffect(() => {
     let tmp2 = null !== balance;
     if (tmp2) {
-      tmp2 = null !== c10;
+      tmp2 = null !== closure_10;
     }
     if (tmp2) {
-      tmp2 = tmp !== c10;
+      tmp2 = tmp !== closure_10;
     }
     if (tmp2) {
       tmp2 = first1;
@@ -100,7 +98,7 @@ export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrenc
       tmp2 = !stateFromStores;
     }
     if (tmp2) {
-      callback2(tmp - c10);
+      callback2(tmp - closure_10);
     }
   }, items3);
   return { onValueChange, onValueReached, showInitialRenderedBalance, currentAnimationType, lottieRef };

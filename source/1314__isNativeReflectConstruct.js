@@ -4,12 +4,12 @@
 // Dependencies: [32, 93, 95, 98, 41, 42, 1313]
 
 // Module 1314 (_isNativeReflectConstruct)
-import _slicedToArray from "_slicedToArray";
-import c3 from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import closure_5 from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
 let PbLong = require;
 function _isNativeReflectConstruct() {
@@ -23,10 +23,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -57,12 +57,12 @@ if (undefined !== BigInt) {
     }
   }
 }
-let error = tmp6;
+obj = tmp6;
 const re8 = /^-?[0-9]+$/;
 let c9 = 4294967296;
 class SharedPbLong {
   constructor(arg0, arg1) {
-    tmp = _isNativeReflectConstruct(this, PbLong);
+    tmp = closure_5(this, PbLong);
     this.lo = global | 0;
     this.hi = require | 0;
     return;
@@ -85,7 +85,7 @@ const items = [
         return sum;
       } else {
         const _Error = Error;
-        const error = new Error("cannot convert to safe number");
+        error = new Error("cannot convert to safe number");
         throw error;
       }
     }
@@ -95,10 +95,10 @@ const _module1Result = _createClass(SharedPbLong, items);
 class PbULong {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, PbLong);
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(PbLong);
-    tmp3 = _isNativeReflectConstruct;
+    tmp = closure_5(this, PbLong);
+    tmp2 = closure_4;
+    obj = closure_4(PbLong);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -118,12 +118,12 @@ obj = {
   key: "toString",
   value: function toString() {
     const self = this;
-    if (closure_7) {
+    if (obj) {
       let str = self.toBigInt();
       str = str.toString();
     } else {
-      str = PbLong(1313).int64toString(self.lo, self.hi);
-      const obj = PbLong(1313);
+      obj = PbLong(1313);
+      str = obj.int64toString(self.lo, self.hi);
     }
     return str;
   }
@@ -133,7 +133,7 @@ const items1 = [
   {
     key: "toBigInt",
     value: function toBigInt() {
-      if (closure_7) {
+      if (obj) {
         const self = this;
         const V = tmp.V;
         V.setInt32(0, this.lo, true);
@@ -143,7 +143,7 @@ const items1 = [
         return V3.getBigUint64(0, true);
       } else {
         const _Error = Error;
-        const error = new Error("BigInt unavailable, see https://github.com/timostamm/protobuf-ts/blob/v1.0.8/MANUAL.md#bigint-support");
+        error = new Error("BigInt unavailable, see https://github.com/timostamm/protobuf-ts/blob/v1.0.8/MANUAL.md#bigint-support");
         throw error;
       }
     }
@@ -153,16 +153,14 @@ const items2 = [
   {
     key: "from",
     value: function from(trimmed) {
-      let V2;
-      let V3;
       const self = this;
-      if (closure_7) {
+      if (obj) {
         if ("string" === tmp) {
           if ("0" == trimmed) {
             return self.ZERO;
           } else if ("" == trimmed) {
             const _Error7 = Error;
-            const error = new Error("string is no integer");
+            error = new Error("string is no integer");
             throw error;
           } else {
             let CResult = obj.C(trimmed);
@@ -214,7 +212,7 @@ const items2 = [
               const tmp28 = PbLong(tmp25, tmp26);
               return tmp28;
             }
-            tmp24 = _slicedToArray(PbLong(1313).int64fromString(trimmed), 3);
+            tmp24 = callback(PbLong(1313).int64fromString(trimmed), 3);
           } else {
             const _Error3 = Error;
             const error4 = new Error("string is no integer");
@@ -253,10 +251,10 @@ _module1Result1.ZERO = new _module1Result1(0, 0);
 class PbLong {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, PbLong);
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(PbLong);
-    tmp3 = _isNativeReflectConstruct;
+    tmp = closure_5(this, PbLong);
+    tmp2 = closure_4;
+    obj = closure_4(PbLong);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -296,20 +294,21 @@ const items3 = [
     key: "toString",
     value: function toString() {
       const self = this;
-      if (closure_7) {
+      if (obj) {
         return self.toBigInt().toString();
       } else if (self.isNegative()) {
         const negateResult = self.negate();
         return "-" + PbLong(1313).int64toString(negateResult.lo, negateResult.hi);
       } else {
-        return PbLong(1313).int64toString(self.lo, self.hi);
+        obj = PbLong(1313);
+        return obj.int64toString(self.lo, self.hi);
       }
     }
   },
   {
     key: "toBigInt",
     value: function toBigInt() {
-      if (closure_7) {
+      if (obj) {
         const self = this;
         const V = tmp.V;
         V.setInt32(0, this.lo, true);
@@ -319,7 +318,7 @@ const items3 = [
         return V3.getBigInt64(0, true);
       } else {
         const _Error = Error;
-        const error = new Error("BigInt unavailable, see https://github.com/timostamm/protobuf-ts/blob/v1.0.8/MANUAL.md#bigint-support");
+        error = new Error("BigInt unavailable, see https://github.com/timostamm/protobuf-ts/blob/v1.0.8/MANUAL.md#bigint-support");
         throw error;
       }
     }
@@ -329,19 +328,14 @@ const items4 = [
   {
     key: "from",
     value: function from(trimmed) {
-      let V2;
-      let V3;
-      let tmp24;
-      let tmp26;
-      let tmp27;
       const self = this;
-      if (closure_7) {
+      if (obj) {
         if ("string" === tmp) {
           if ("0" == trimmed) {
             return self.ZERO;
           } else if ("" == trimmed) {
             const _Error5 = Error;
-            const error = new Error("string is no integer");
+            error = new Error("string is no integer");
             throw error;
           } else {
             let CResult = obj.C(trimmed);
@@ -385,7 +379,7 @@ const items4 = [
           trimmed = trimmed.trim();
           if (re8.test(trimmed)) {
             const obj3 = PbLong(1313);
-            [tmp24, tmp26, tmp27] = _slicedToArray(PbLong(1313).int64fromString(trimmed), 3);
+            [tmp24, tmp26, tmp27] = callback(PbLong(1313).int64fromString(trimmed), 3);
             const obj4 = PbLong(tmp26, tmp27);
             let negateResult = obj4;
             if (tmp24) {
@@ -430,16 +424,14 @@ const _module1Result2 = _createClass(PbLong, items3, items4);
 const obj1 = {
   key: "from",
   value: function from(trimmed) {
-    let V2;
-    let V3;
     const self = this;
-    if (closure_7) {
+    if (obj) {
       if ("string" === tmp) {
         if ("0" == trimmed) {
           return self.ZERO;
         } else if ("" == trimmed) {
           const _Error7 = Error;
-          const error = new Error("string is no integer");
+          error = new Error("string is no integer");
           throw error;
         } else {
           let CResult = obj.C(trimmed);
@@ -491,7 +483,7 @@ const obj1 = {
             const tmp28 = PbLong(tmp25, tmp26);
             return tmp28;
           }
-          tmp24 = _slicedToArray(PbLong(1313).int64fromString(trimmed), 3);
+          tmp24 = callback(PbLong(1313).int64fromString(trimmed), 3);
         } else {
           const _Error3 = Error;
           const error4 = new Error("string is no integer");
@@ -533,19 +525,14 @@ let obj2 = {
 let obj3 = {
   key: "from",
   value: function from(trimmed) {
-    let V2;
-    let V3;
-    let tmp24;
-    let tmp26;
-    let tmp27;
     const self = this;
-    if (closure_7) {
+    if (obj) {
       if ("string" === tmp) {
         if ("0" == trimmed) {
           return self.ZERO;
         } else if ("" == trimmed) {
           const _Error5 = Error;
-          const error = new Error("string is no integer");
+          error = new Error("string is no integer");
           throw error;
         } else {
           let CResult = obj.C(trimmed);
@@ -589,7 +576,7 @@ let obj3 = {
         trimmed = trimmed.trim();
         if (re8.test(trimmed)) {
           const obj3 = PbLong(1313);
-          [tmp24, tmp26, tmp27] = _slicedToArray(PbLong(1313).int64fromString(trimmed), 3);
+          [tmp24, tmp26, tmp27] = callback(PbLong(1313).int64fromString(trimmed), 3);
           const obj4 = PbLong(tmp26, tmp27);
           let negateResult = obj4;
           if (tmp24) {

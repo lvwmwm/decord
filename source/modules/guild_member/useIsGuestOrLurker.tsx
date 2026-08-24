@@ -1,30 +1,30 @@
-// Module ID: 12607
-// Function ID: 12608
+// Module ID: 12661
+// Function ID: 12662
 // Name: useIsGuestOrLurker
-// Dependencies: [1990, 1910, 676, 589, 2]
+// Dependencies: [1991, 1910, 676, 589, 2]
 // Exports: default, isGuestOrLurkerInGuild
 
-// Module 12607 (useIsGuestOrLurker)
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GuildFeatures } from "ME";
+// Module 12661 (useIsGuestOrLurker)
+import closure_2 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/guild_member/useIsGuestOrLurker.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_member/useIsGuestOrLurker.tsx");
 
 export default function useIsGuestOrLurker(arg0, arg1) {
   const _require = arg0;
-  const dependencyMap = arg1;
-  const items = [createGuildRecordFromRust, trackCommunicationDisabled];
+  dependencyMap = arg1;
+  const items = [closure_3, closure_2];
   const items1 = [arg0, arg1];
   return _require(589).useStateFromStores(items, () => {
-    const guild = outer1_3.getGuild(closure_0);
+    const guild = closure_1_3.getGuild(closure_0);
     let hasItem;
     if (guild != null) {
       const features = guild.features;
-      hasItem = features.has(outer1_4.CONFERENCE);
+      hasItem = features.has(closure_1_4.CONFERENCE);
     }
-    return true !== hasItem && outer1_2.isGuestOrLurker(closure_0, closure_1);
+    return true !== hasItem && closure_1_2.isGuestOrLurker(closure_0, closure_1);
   }, items1);
 };
 export const isGuestOrLurkerInGuild = function isGuestOrLurkerInGuild(guild_id, id) {
@@ -36,7 +36,7 @@ export const isGuestOrLurkerInGuild = function isGuestOrLurkerInGuild(guild_id, 
   }
   let isGuestOrLurkerResult = true !== hasItem;
   if (isGuestOrLurkerResult) {
-    isGuestOrLurkerResult = trackCommunicationDisabled.isGuestOrLurker(guild_id, id);
+    isGuestOrLurkerResult = closure_2.isGuestOrLurker(guild_id, id);
   }
   return isGuestOrLurkerResult;
 };

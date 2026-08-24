@@ -1,16 +1,16 @@
-// Module ID: 4876
-// Function ID: 4877
+// Module ID: 4881
+// Function ID: 4882
 // Name: KESTREL_GA_UPLOAD_LIMIT_MB
 // Dependencies: [1472, 2]
 // Exports: getEffectiveKestrelLimit, getKestrelConfig, getKestrelVariantName
 
-// Module 4876 (KESTREL_GA_UPLOAD_LIMIT_MB)
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
+// Module 4881 (KESTREL_GA_UPLOAD_LIMIT_MB)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-04-kestrel", kind: "user", defaultConfig: { enabled: false, threshold: 0 }, variations: { 0: { enabled: false, threshold: 0 }, 1: { enabled: true, threshold: 15 }, 2: { enabled: true, threshold: 20 }, 3: { enabled: true, threshold: 25 } } });
 let closure_1 = ApexExperiment.createApexExperiment({ name: "2026-08-kestrel-ga", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
-const result = require("set").fileFinishedImporting("modules/media_uploads/experiments/KestrelExperiment.tsx");
+const result = set.fileFinishedImporting("modules/media_uploads/experiments/KestrelExperiment.tsx");
 
 export const KESTREL_GA_UPLOAD_LIMIT_MB = 20;
 export const getKestrelConfig = function getKestrelConfig(location) {

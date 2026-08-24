@@ -1,15 +1,17 @@
-// Module ID: 13453
-// Function ID: 13454
+// Module ID: 13511
+// Function ID: 13512
 // Name: Close
-// Dependencies: [19, 21, 6571, 2]
+// Dependencies: [19, 21, 6607, 2]
 // Exports: default
 
-// Module 13453 (Close)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 13511 (Close)
+import noopAll from "noop" /* 19 */;
+import inlineStyles from "inlineStyles" /* 6607 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("inlineStyles").fileFinishedImporting("design/void/CloseIcon/native/CloseIcon.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/void/CloseIcon/native/CloseIcon.tsx");
 
 export default function Close(width) {
   let num = width.width;
@@ -30,6 +32,6 @@ export default function Close(width) {
   obj.width = num;
   obj.height = num2;
   obj.viewBox = "0 0 24 24";
-  obj.children = jsx(require(6571) /* inlineStyles */.Path, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
-  return jsx(require(6571) /* inlineStyles */.Svg, {});
+  obj.children = jsx(inlineStyles.Path, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
+  return jsx(inlineStyles.Svg, {});
 };

@@ -1,26 +1,24 @@
-// Module ID: 16425
-// Function ID: 16426
+// Module ID: 16520
+// Function ID: 16521
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [19, 17, 16424, 21, 4661, 1236, 4763, 4734, 9365, 2]
+// Dependencies: [19, 17, 16519, 21, 4668, 1236, 4768, 4739, 9402, 2]
 // Exports: default
 
-// Module 16425 (HideSelfStreamAndVideoConfirmDialog)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { SelfStreamAndVideoAlertType as closure_4 } from "SelfStreamAndVideoAlertType";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16520 (HideSelfStreamAndVideoConfirmDialog)
+import noopAll from "noop" /* 19 */;
+import componentDidMountDefault from "componentDidMount" /* 4768 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { SelfStreamAndVideoAlertType as closure_4 } from "SelfStreamAndVideoAlertType" /* 16519 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ wrapper: { padding: 16 }, body: { paddingTop: 16 }, description: { lineHeight: 18 }, ctaLink: { paddingTop: 8, textAlign: "center", textDecorationLine: "underline" } });
-let result = require("SelfStreamAndVideoAlertType").fileFinishedImporting("modules/video_calls/native/components/HideSelfStreamAndVideoConfirmDialog.tsx");
+let result = require("set").fileFinishedImporting("modules/video_calls/native/components/HideSelfStreamAndVideoConfirmDialog.tsx");
 
 export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
-  let onConfirm;
-  let type;
   ({ type, onConfirm } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   const tmp2 = callback2();
@@ -56,12 +54,12 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
   obj.onConfirm = onConfirm;
   obj = { style: tmp2.body, children: null };
   obj = { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 };
-  const items = [closure_5(tmp6(4734).Text, obj), ];
-  const obj1 = {
+  const items = [closure_5(tmp6(4739).Text, obj), ];
+  obj1 = {
     accessibilityRole: "link",
     style: items1,
     onPress() {
-      const result = outer1_1(outer1_2[8]).updatedUnsyncedSettings({ disableHideSelfStreamAndVideoConfirmationAlert: true });
+      const result = closure_1_1(closure_1_2[8]).updatedUnsyncedSettings({ disableHideSelfStreamAndVideoConfirmationAlert: true });
       onConfirm();
     },
     variant: "text-sm/medium",
@@ -71,8 +69,8 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
   ({ ctaLink: arr2[0], description: arr2[1] } = tmp2);
   const intl7 = tmp6(1236).intl;
   obj1[4] = intl7.string(tmp6(1236).t["JdIQ/Y"]);
-  items[1] = closure_5(tmp6(4734).Text, obj1);
+  items[1] = closure_5(tmp6(4739).Text, obj1);
   obj[1] = items;
   obj.children = callback(View, obj);
-  return closure_5(importDefault(4763), obj);
+  return closure_5(componentDidMountDefault, obj);
 };

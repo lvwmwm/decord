@@ -1,11 +1,13 @@
-// Module ID: 4049
-// Function ID: 4050
+// Module ID: 4052
+// Function ID: 4053
 // Name: coalesceInvoiceItems
 // Dependencies: [12, 2]
 // Exports: coalesceInvoiceItems, createInvoiceItemFromServer
 
-// Module 4049 (coalesceInvoiceItems)
-const result = require("set").fileFinishedImporting("modules/premium/PremiumSubscriptionInvoiceItem.tsx");
+// Module 4052 (coalesceInvoiceItems)
+import set2 from "set" /* 2 */;
+
+const result = set2.fileFinishedImporting("modules/premium/PremiumSubscriptionInvoiceItem.tsx");
 
 export const coalesceInvoiceItems = function coalesceInvoiceItems(arr) {
   const items = [];
@@ -51,7 +53,7 @@ export const coalesceInvoiceItems = function coalesceInvoiceItems(arr) {
       obj.amount = obj.amount * obj.quantity;
       const discounts = obj.discounts;
       obj.discounts = discounts.map((amount) => {
-        const obj = {};
+        obj = {};
         const merged = Object.assign(amount);
         obj.amount = amount.amount * obj.quantity;
         return obj;

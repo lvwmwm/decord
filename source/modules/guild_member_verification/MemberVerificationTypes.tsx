@@ -1,12 +1,14 @@
-// Module ID: 4200
-// Function ID: 4201
+// Module ID: 4204
+// Function ID: 4205
 // Name: MAX_RESULTS_PER_PAGE
 // Dependencies: [2]
 // Exports: hasNonTermsFormField, isTermsFormField
 
-// Module 4200 (MAX_RESULTS_PER_PAGE)
+// Module 4204 (MAX_RESULTS_PER_PAGE)
+import set from "set" /* 2 */;
+
 const obj = { TERMS: "TERMS", TEXT_INPUT: "TEXT_INPUT", PARAGRAPH: "PARAGRAPH", MULTIPLE_CHOICE: "MULTIPLE_CHOICE", VERIFICATION: "VERIFICATION" };
-const result = require("set").fileFinishedImporting("modules/guild_member_verification/MemberVerificationTypes.tsx");
+const result = set.fileFinishedImporting("modules/guild_member_verification/MemberVerificationTypes.tsx");
 
 export const MAX_RESULTS_PER_PAGE = 25;
 export const MAX_VISIBLE_PAGES = 4;

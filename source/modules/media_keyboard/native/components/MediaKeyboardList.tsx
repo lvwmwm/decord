@@ -1,25 +1,26 @@
-// Module ID: 10277
-// Function ID: 10278
+// Module ID: 10316
+// Function ID: 10317
 // Name: NativeModules
-// Dependencies: [32, 19, 17, 1495, 1624, 6951, 4839, 21, 4661, 712, 4115, 10278, 10281, 1497, 1629, 1494, 6370, 6952, 8692, 4852, 12, 10282, 10289, 10291, 9387, 10292, 4848, 8124, 1236, 2]
+// Dependencies: [32, 19, 17, 1495, 1624, 6989, 4844, 21, 4668, 712, 4119, 10317, 10320, 1497, 1629, 1494, 6401, 6990, 8729, 4857, 12, 10321, 10328, 10330, 9424, 10331, 4853, 8163, 1236, 2]
 
-// Module 10277 (NativeModules)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "isActionPickSupported";
-import get_ActivityIndicator from "BottomSheetModal";
-import getDimensionsStoreStateForEntry from "getDimensionsStoreStateForEntry";
-import { InAppCameraUsedCameraPreviewTypes as closure_7 } from "DRAG_HANDLE";
-import { ACTION_SHEET_START_HEIGHT_RATIO as closure_8 } from "ACTION_SHEET_START_HEIGHT_RATIO";
-import { NativePermissionStatus } from "NativePermissionStatus";
-import { jsx } from "NewCaption";
-import createCacheKey from "createCacheKey";
+// Module 10316 (NativeModules)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "getDimensionsStoreStateForEntry" /* 1495 */;
+import { InAppCameraUsedCameraPreviewTypes as closure_7 } from "DRAG_HANDLE" /* 1624 */;
+import { ACTION_SHEET_START_HEIGHT_RATIO as closure_8 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
+import { NativePermissionStatus } from "NativePermissionStatus" /* 4844 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 let c4 = importAllResult;
 const NativeModules = get_ActivityIndicator.NativeModules;
 const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(NativeModules.PhotoLibraryHelper);
 let obj = { listContainer: null };
-obj = { backgroundColor: require("Themes").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, marginTop: 8, paddingTop: 8 };
+obj = { backgroundColor: ThemesDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, marginTop: 8, paddingTop: 8 };
 obj[0] = obj;
 let closure_12 = createCacheKey.createStyles(obj);
 let closure_13 = { code: "function MediaKeyboardListTsx1(){const{animatedIndex}=this.__closure;return animatedIndex.get();}" };
@@ -27,12 +28,10 @@ let closure_14 = { code: "function MediaKeyboardListTsx2(currentIndex){const{lat
 let closure_15 = { code: "function MediaKeyboardListTsx3(){const{animatedSnapPoints}=this.__closure;return animatedSnapPoints.get();}" };
 let closure_16 = { code: "function MediaKeyboardListTsx4(snapPoints,previous){const{cheapWorkletArrayShallowEqual,runOnJS,setBottomSheetState,windowHeight,computedStartHeight,maxDynamicContentSize}=this.__closure;var _snapPoints$,_snapPoints;if(cheapWorkletArrayShallowEqual(snapPoints,previous!==null&&previous!==void 0?previous:undefined))return;runOnJS(setBottomSheetState)({minimum:windowHeight-((_snapPoints$=snapPoints[0])!==null&&_snapPoints$!==void 0?_snapPoints$:computedStartHeight),maximum:windowHeight-((_snapPoints=snapPoints[snapPoints.length-1])!==null&&_snapPoints!==void 0?_snapPoints:maxDynamicContentSize)});}" };
 const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
-  let tmp21;
-  let tmp22;
   channel = channel.channel;
   let animatedIndex = channel;
   const draftType = channel.draftType;
-  let importDefault = draftType;
+  importDefault = draftType;
   const onPressCamera = channel.onPressCamera;
   let sharedValue = onPressCamera;
   const onAttachPress = channel.onAttachPress;
@@ -54,23 +53,23 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
   const disableWhenReachedLimit = channel.disableWhenReachedLimit;
   let ref;
   let first;
-  let closure_15;
+  closure_15 = undefined;
   let assets;
   let itemsPerRow;
   let itemsPageSizeRef;
-  let closure_19;
+  closure_19 = undefined;
   let height;
-  let c21;
-  let c22;
+  c21 = undefined;
+  c22 = undefined;
   let animatedSnapPoints;
-  let c24;
+  closure_24 = undefined;
   flag = undefined;
-  let c26;
+  c26 = undefined;
   let memo;
   let callback1;
   let width;
   let maximum;
-  let closure_31;
+  closure_31 = undefined;
   let obj = onPressItem;
   ref = onPressItem.useRef(true);
   let items = [ref];
@@ -80,7 +79,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
   const tmp4 = onAttachPress(onPressItem.useState(null), 2);
   first = tmp4[0];
   closure_15 = tmp4[1];
-  let obj1 = importDefault(sharedValue[11]);
+  obj1 = importDefault(sharedValue[11]);
   assets = obj1.useAssets();
   let obj2 = animatedIndex(sharedValue[12]);
   const mediaKeyboardItemsPerRow = obj2.useMediaKeyboardItemsPerRow();
@@ -102,7 +101,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
     if (uploadLimit != null) {
       addListenerResult = uploadLimit.addListener("photoLibraryChanged", () => {
         if (ref.current) {
-          let obj = outer1_1(outer1_2[11]);
+          let obj = closure_1_1(closure_1_2[11]);
           obj = { batchSize: null, extensions: null };
           obj[0] = ref2.current;
           obj[1] = closure_9;
@@ -110,7 +109,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
         }
       });
     }
-    const animatedIndex = addListenerResult;
+    animatedIndex = addListenerResult;
     return () => {
       if (closure_0 != null) {
         closure_0.remove();
@@ -131,7 +130,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
   const tmp16 = onAttachPress(onPressItem.useState({ minimum: result, maximum: diff }), 2);
   const first1 = tmp16[0];
   maximum = first1.minimum;
-  c24 = tmp18;
+  closure_24 = tmp18;
   const obj5 = animatedIndex(sharedValue[17]);
   class G {
     constructor() {
@@ -144,7 +143,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
   const fn = function $(activeIndex) {
     let obj = animatedIndex(sharedValue[18]);
     if (!obj.cheapWorkletArrayShallowEqual(activeIndex, arg1)) {
-      let first = activeIndex[0];
+      first = activeIndex[0];
       const tmp2Result = animatedIndex(sharedValue[10]);
       if (first == null) {
         first = c21;
@@ -156,8 +155,8 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
         tmp8 = c22;
       }
       obj[1] = height - tmp8;
-      animatedIndex(sharedValue[10]).runOnJS(c24)(obj);
-      const runOnJSResult = animatedIndex(sharedValue[10]).runOnJS(c24);
+      animatedIndex(sharedValue[10]).runOnJS(closure_24)(obj);
+      const runOnJSResult = animatedIndex(sharedValue[10]).runOnJS(closure_24);
     }
   };
   obj = { cheapWorkletArrayShallowEqual: animatedIndex(sharedValue[18]).cheapWorkletArrayShallowEqual, runOnJS: animatedIndex(sharedValue[10]).runOnJS, setBottomSheetState: tmp18, windowHeight: height, computedStartHeight: result, maxDynamicContentSize: diff };
@@ -348,6 +347,6 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
   }
   return mediaEmptyStateComponentOrNull;
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardList.tsx");
+let result = require("set").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardList.tsx");
 
 export default memoResult;

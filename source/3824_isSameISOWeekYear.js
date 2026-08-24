@@ -1,0 +1,34 @@
+// Module ID: 3824
+// Function ID: 3825
+// Name: isSameISOWeekYear
+// Dependencies: [3636, 3476]
+// Exports: default
+
+// Module 3824 (isSameISOWeekYear)
+import startOfISOWeekYear from "startOfISOWeekYear" /* 3636 */;
+import requiredArgs from "requiredArgs" /* 3476 */;
+
+if (!startOfISOWeekYear) {
+  let obj = { default: null };
+  obj[0] = startOfISOWeekYear;
+  let tmp3 = obj;
+} else {
+  tmp3 = startOfISOWeekYear;
+}
+startOfISOWeekYear = tmp3;
+if (!requiredArgs) {
+  obj = { default: null };
+  obj[0] = requiredArgs;
+  let tmp5 = obj;
+} else {
+  tmp5 = requiredArgs;
+}
+requiredArgs = tmp5;
+
+export default function isSameISOWeekYear(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = startOfISOWeekYear.default(arg0);
+  const time = defaultResult1.getTime();
+  return time === startOfISOWeekYear.default(arg1).getTime();
+};
+export default exports.default;

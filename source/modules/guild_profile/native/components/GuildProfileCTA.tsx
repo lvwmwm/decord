@@ -1,21 +1,19 @@
-// Module ID: 9533
-// Function ID: 9534
+// Module ID: 9570
+// Function ID: 9571
 // Name: GuildProfileCTA
-// Dependencies: [19, 676, 685, 21, 9534, 9536, 4342, 7302, 8042, 9540, 4200, 8529, 6909, 8522, 7301, 4745, 1236, 2]
+// Dependencies: [19, 676, 685, 21, 9571, 9573, 4346, 7340, 8081, 9577, 4204, 8568, 6947, 8561, 7339, 4750, 1236, 2]
 // Exports: default
 
-// Module 9533 (GuildProfileCTA)
-import noop from "noop";
-import { AnalyticsObjects } from "ME";
-import { ProfileCustomizationScrollPositions as closure_5 } from "MAX_FAVORITES";
-import { jsx } from "jsxProd";
+// Module 9570 (GuildProfileCTA)
+import closure_3 from "noop" /* 19 */;
+import { AnalyticsObjects } from "ME" /* 676 */;
+import { ProfileCustomizationScrollPositions as closure_5 } from "MAX_FAVORITES" /* 685 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("MAX_FAVORITES").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileCTA.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileCTA.tsx");
 
 export default function GuildProfileCTA(profile) {
-  let context;
-  let inviteKey;
   profile = profile.profile;
   let guildId;
   let validInviteKey;
@@ -29,7 +27,7 @@ export default function GuildProfileCTA(profile) {
   const ctaType = tmp2.ctaType;
   let obj = { scrollPosition: constants.GUILD_TAG };
   React = guildId(validInviteKey[5])(obj);
-  let obj1 = React;
+  obj1 = React;
   const items = [guildId];
   const items1 = [guildId, validInviteKey];
   const callback = React.useCallback(() => {
@@ -60,8 +58,8 @@ export default function GuildProfileCTA(profile) {
   const items3 = [guildId, callback1, profile.visibility, validInviteKey];
   const callback2 = React.useCallback(() => {
     let applicationStatus;
-    if (_undefined != null) {
-      applicationStatus = _undefined.applicationStatus;
+    if (applicationStatus != null) {
+      applicationStatus = applicationStatus.applicationStatus;
     }
     if (profile(validInviteKey[10]).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
       let tmp2Result = tmp2(tmp3[11]);

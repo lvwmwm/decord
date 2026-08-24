@@ -1,10 +1,11 @@
-// Module ID: 5280
-// Function ID: 5281
+// Module ID: 5285
+// Function ID: 5286
 // Name: handleChange
 // Dependencies: [589, 709, 2]
 
-// Module 5280 (handleChange)
-import { PersistedStore } from "initialize";
+// Module 5285 (handleChange)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 function handleChange(expand) {
   if (expand.expand) {
@@ -14,6 +15,7 @@ function handleChange(expand) {
   }
 }
 let closure_0 = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class ChannelListVoiceCategoryStore extends PersistedStore {
 }
 const prototype = ChannelListVoiceCategoryStore.prototype;
@@ -41,7 +43,7 @@ prototype["getState"] = function getState() {
 };
 ChannelListVoiceCategoryStore.displayName = "ChannelListVoiceCategoryStore";
 ChannelListVoiceCategoryStore.persistKey = "ChannelListVoiceCategoryStore";
-const channelListVoiceCategoryStore = new ChannelListVoiceCategoryStore(require("dispatcher"), { VOICE_CATEGORY_COLLAPSE: handleChange, VOICE_CATEGORY_EXPAND: handleChange });
+const channelListVoiceCategoryStore = new ChannelListVoiceCategoryStore(dispatcherDefault, { VOICE_CATEGORY_COLLAPSE: handleChange, VOICE_CATEGORY_EXPAND: handleChange });
 const result = require("set").fileFinishedImporting("modules/guild_sidebar/ChannelListVoiceCategoryStore.tsx");
 
 export default channelListVoiceCategoryStore;

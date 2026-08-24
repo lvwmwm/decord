@@ -1,26 +1,26 @@
-// Module ID: 8204
-// Function ID: 8205
+// Module ID: 8244
+// Function ID: 8245
 // Name: useIsCallActive
-// Dependencies: [4496, 4773, 4544, 589, 2]
+// Dependencies: [4500, 4778, 4549, 589, 2]
 // Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 8204 (useIsCallActive)
-import callConnect from "callConnect";
-import getParticipants from "getParticipants";
-import { ParticipantTypes } from "ParticipantTypes";
+// Module 8244 (useIsCallActive)
+import closure_2 from "callConnect" /* 4500 */;
+import closure_3 from "getParticipants" /* 4778 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4549 */;
 
 const require = arg1;
-const result = require("ParticipantTypes").fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");
+const result = require("set").fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");
 
 export default function useIsCallActive(arg0, arg1) {
   const _require = arg0;
-  const dependencyMap = arg1;
-  const items = [callConnect, getParticipants];
+  dependencyMap = arg1;
+  const items = [closure_2, closure_3];
   const items1 = [arg0, arg1];
   return _require(589).useStateFromStores(items, () => {
-    let isCallActiveResult = outer1_2.isCallActive(closure_0, closure_1);
+    let isCallActiveResult = closure_1_2.isCallActive(closure_0, closure_1);
     if (isCallActiveResult) {
-      const participants = outer1_3.getParticipants(closure_0);
+      const participants = closure_1_3.getParticipants(closure_0);
       isCallActiveResult = participants.some((type) => type.type === constants.USER && !type.ringing);
     }
     return isCallActiveResult;
@@ -36,15 +36,15 @@ export const checkIsCallActive = function checkIsCallActive(channelId, id) {
 };
 export const useIsCallActiveNullable = function useIsCallActiveNullable(id) {
   const _require = id;
-  const dependencyMap = arg1;
-  const items = [callConnect, getParticipants];
+  dependencyMap = arg1;
+  const items = [closure_2, closure_3];
   const items1 = [id, arg1];
   return _require(589).useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
-      let isCallActiveResult = outer1_2.isCallActive(tmp, closure_1);
+      let isCallActiveResult = closure_1_2.isCallActive(tmp, closure_1);
       if (isCallActiveResult) {
-        const participants = outer1_3.getParticipants(tmp);
+        const participants = closure_1_3.getParticipants(tmp);
         isCallActiveResult = participants.some((type) => type.type === constants.USER && !type.ringing);
       }
       tmp2 = isCallActiveResult;

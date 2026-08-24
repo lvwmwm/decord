@@ -1,24 +1,24 @@
-// Module ID: 15014
-// Function ID: 15015
+// Module ID: 15078
+// Function ID: 15079
 // Name: useAuthorizedSlayerApplications
-// Dependencies: [19, 5289, 589, 10724, 7147, 2]
+// Dependencies: [19, 5294, 589, 10763, 7185, 2]
 // Exports: default
 
-// Module 15014 (useAuthorizedSlayerApplications)
-import noop from "noop";
-import recomputeFromAppTokens from "recomputeFromAppTokens";
-import { FetchState } from "recomputeFromAppTokens";
+// Module 15078 (useAuthorizedSlayerApplications)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "recomputeFromAppTokens" /* 5294 */;
+import { FetchState } from "recomputeFromAppTokens" /* 5294 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/user_settings/authorized_apps/useAuthorizedSlayerApplications.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/authorized_apps/useAuthorizedSlayerApplications.tsx");
 
 export default function useAuthorizedSlayerApplications(arg0, arg1) {
   const _require = arg0;
-  let closure_1 = arg1;
-  let items = [recomputeFromAppTokens];
+  closure_1 = arg1;
+  let items = [closure_4];
   const stateFromStores = _require(stateFromStores1[2]).useStateFromStores(items, () => fetchState.getFetchState());
   let obj = _require(stateFromStores1[2]);
-  const items1 = [recomputeFromAppTokens];
+  const items1 = [closure_4];
   stateFromStores1 = _require(stateFromStores1[2]).useStateFromStores(items1, () => {
     if (closure_0) {
       let newestTokensForNonChildrenApplications = obj.getNewestTokensForNonChildrenApplications();

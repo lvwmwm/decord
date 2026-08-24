@@ -11,7 +11,7 @@ arg0.__fetchSegment = function __fetchSegment(arg0, arg1, arg2) {
   const segment = _require(242).default.fetchSegment(arg0, arg1, (message) => {
     if (message) {
       const _Error = Error;
-      const error = new Error(message.message);
+      error = new Error(message.message);
       error.code = message.code;
       callback(error);
     } else {

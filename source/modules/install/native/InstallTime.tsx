@@ -1,20 +1,23 @@
-// Module ID: 13249
-// Function ID: 13250
+// Module ID: 13304
+// Function ID: 13305
 // Name: getFirstInstallTimeMillis
-// Dependencies: [1218, 595, 13250, 4548, 2]
+// Dependencies: [1218, 595, 13305, 4553, 2]
 // Exports: getFirstInstallTimeElapsed
 
-// Module 13249 (getFirstInstallTimeMillis)
-import fetchFingerprint from "fetchFingerprint";
+// Module 13304 (getFirstInstallTimeMillis)
+import Storage4 from "Storage" /* 595 */;
+import sleep from "sleep" /* 4553 */;
+import enforcingDefault from "enforcing" /* 13305 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
 
-const require = arg1;
+require = arg1;
 function getFirstInstallTimeMillis(arg0) {
-  const firstInstallTimeMillis = importDefault(13250).getFirstInstallTimeMillis();
+  const firstInstallTimeMillis = enforcingDefault.getFirstInstallTimeMillis();
   let str = "InstallTimeLaunch";
   if ("authed" === arg0.from) {
     str = "InstallTimeAuthed";
   }
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage4.Storage;
   const value = Storage.get(str);
   if (null != value) {
     if (value > 0) {
@@ -46,7 +49,7 @@ function getFirstInstallTimeMillis(arg0) {
     const result1 = Storage2.set(str, num2);
   }
 }
-let result = require("enforcing").fileFinishedImporting("modules/install/native/InstallTime.tsx");
+let result = require("set").fileFinishedImporting("modules/install/native/InstallTime.tsx");
 
 export { getFirstInstallTimeMillis };
 export const getFirstInstallTimeElapsed = function getFirstInstallTimeElapsed(unit) {
@@ -59,8 +62,8 @@ export const getFirstInstallTimeElapsed = function getFirstInstallTimeElapsed(un
     const diff = Date.now() - tmp;
     let result = diff;
     if (null != unit) {
-      result = require(4548) /* sleep */.convertMinutesToGivenTimeUnit(diff / require(4548) /* sleep */.MS_PER_MINUTE, unit);
-      const obj = require(4548) /* sleep */;
+      result = sleep.convertMinutesToGivenTimeUnit(diff / sleep.MS_PER_MINUTE, unit);
+      const obj = sleep;
     }
     return result;
   }

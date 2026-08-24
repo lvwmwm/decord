@@ -1,42 +1,39 @@
-// Module ID: 14112
-// Function ID: 14113
+// Module ID: 14180
+// Function ID: 14181
 // Name: SafetyHubViolationsHeader
-// Dependencies: [32, 19, 17, 11061, 5438, 676, 21, 4661, 712, 8910, 8078, 4734, 1236, 13006, 9464, 5437, 11, 14113, 5439, 5260, 11058, 2007, 11068, 589, 698, 11066, 2]
+// Dependencies: [32, 19, 17, 11100, 5443, 676, 21, 4668, 712, 8947, 8117, 4739, 1236, 13061, 9501, 5442, 11, 14181, 5444, 5265, 11097, 2008, 11107, 589, 698, 11105, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 14112 (SafetyHubViolationsHeader)
-import _slicedToArray from "_slicedToArray";
-import module_5260 from "module_5260";
-import get_ActivityIndicator from "useIsNewClassification";
-import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
-import SafetyHubView from "SafetyHubView";
-import { AnalyticEvents } from "ME";
-import jsxProd from "asyncRequireImpl";
-import createCacheKey from "createCacheKey";
+// Module 14180 (SafetyHubViolationsHeader)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 5442 */;
+import WarningIcon from "WarningIcon" /* 8117 */;
+import renderDefault from "render" /* 8947 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11105 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11100 */;
+import SafetyHubView from "SafetyHubView" /* 5443 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let c9;
-let closure_12;
-let closure_6;
-let map1;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function SafetyHubViolationsHeader(count) {
-  let onClick;
-  let opened;
-  let status;
   ({ onClick, opened, status } = count);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { onPress: onClick, style: items, children: null };
   items = [tmp.header];
   obj = { style: items1, children: null };
   items1 = [tmp.iconBackground];
-  const colors = importDefault(712).colors;
+  const colors = ThemesDefault.colors;
   obj = { color: tmp8 ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_MUTED, size: "xs" };
-  obj[1] = closure_11(require(8078) /* WarningIcon */.WarningIcon, obj);
+  obj[1] = closure_11(WarningIcon.WarningIcon, obj);
   const items2 = [closure_11(closure_6, obj), , ];
-  const obj1 = { style: items3, children: null };
+  obj1 = { style: items3, children: null };
   items3 = [tmp.headerTextContainer];
   const intl = tmp7(1236).intl;
   const formatToPlainString = intl.formatToPlainString;
@@ -50,7 +47,7 @@ function SafetyHubViolationsHeader(count) {
     obj3[0] = str.toString();
     formatToPlainStringResult = formatToPlainString(t.fZAHBT, obj3);
   }
-  const items4 = [closure_11(require(4734) /* Text */.Text, { variant: "heading-sm/semibold", children: formatToPlainStringResult }), ];
+  const items4 = [closure_11(Text.Text, { variant: "heading-sm/semibold", children: formatToPlainStringResult }), ];
   const intl2 = tmp7(1236).intl;
   const string = intl2.string;
   const t2 = tmp7(1236).t;
@@ -59,60 +56,59 @@ function SafetyHubViolationsHeader(count) {
   } else {
     stringResult = string(t2.SzGV0g);
   }
-  items4[1] = closure_11(require(4734) /* Text */.Text, { variant: "text-xxs/normal", color: "text-muted", children: stringResult });
+  items4[1] = closure_11(Text.Text, { variant: "text-xxs/normal", color: "text-muted", children: stringResult });
   obj1[1] = items4;
   items2[1] = closure_12(closure_6, obj1);
   if (opened) {
-    let ChevronSmallDownIcon = tmp7(13006).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp7(13061).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(9464).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(9501).ChevronSmallDownIcon;
   }
   const items5 = [tmp.chevron];
   items2[2] = closure_11(ChevronSmallDownIcon, { size: "md", style: items5 });
   obj[2] = items2;
-  return closure_12(importDefault(8910), obj);
+  return closure_12(renderDefault, obj);
 }
 function EmptyActiveState() {
   let obj = { style: null, children: null };
-  const items = [createCacheKey().emptyState];
+  const items = [callback3().emptyState];
   obj[0] = items;
   obj = { variant: "heading-sm/extrabold", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.reLFaV);
-  const items1 = [callback(require(4734) /* Text */.Text, obj), ];
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t.reLFaV);
+  const items1 = [callback(Text.Text, obj), ];
   obj = { variant: "text-xs/normal", children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.ERdH1o);
-  items1[1] = callback(require(4734) /* Text */.Text, obj);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t.ERdH1o);
+  items1[1] = callback(Text.Text, obj);
   obj[1] = items1;
   return callback2(closure_6, obj);
 }
 function EmptyExpiredState() {
   let obj = { style: null, children: null };
-  const items = [createCacheKey().emptyState];
+  const items = [callback3().emptyState];
   obj[0] = items;
   obj = { variant: "text-xs/normal", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.RV3AXf);
-  obj[1] = callback(require(4734) /* Text */.Text, obj);
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t.RV3AXf);
+  obj[1] = callback(Text.Text, obj);
   return callback(closure_6, obj);
 }
 function RelativeIncidentTime(timestamp) {
-  let obj = { style: createCacheKey().incidentDate, children: null };
-  obj = { variant: "text-xs/medium", children: null };
-  obj[1] = require(5437) /* parseMessageEmbedForProps */.getClassificationRelativeIncidentTime(timestamp.timestamp);
-  obj[1] = callback(require(4734) /* Text */.Text, obj);
+  let obj = { style: callback3().incidentDate, children: null };
+  obj = { variant: "text-xs/medium", children: parseMessageEmbedForProps.getClassificationRelativeIncidentTime(timestamp.timestamp) };
+  obj[1] = callback(Text.Text, obj);
   return callback(closure_6, obj);
 }
 function NewBadge() {
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { style: items, children: null };
   items = [, ];
   ({ incidentDate: arr[0], incidentDateNew: arr[1] } = tmp);
   obj = { variant: "text-xs/medium", color: "text-overlay-light", style: tmp.newText, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.QKMRC4);
-  obj[1] = callback(require(4734) /* Text */.Text, obj);
+  const intl = getSystemLocale.intl;
+  obj[3] = intl.string(getSystemLocale.t.QKMRC4);
+  obj[1] = callback(Text.Text, obj);
   return callback(closure_6, obj);
 }
 function ClassificationDetail(classification) {
@@ -120,12 +116,12 @@ function ClassificationDetail(classification) {
   let id;
   let description;
   let guild_metadata;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   id = classification.id;
   description = classification.description;
   guild_metadata = classification.guild_metadata;
   let obj = description(guild_metadata[16]);
-  let obj1 = id(guild_metadata[17]);
+  obj1 = id(guild_metadata[17]);
   const isNewClassification = obj1.useIsNewClassification(classification);
   const items = [description, guild_metadata];
   const items1 = [tmp.detailContainerOuter, ];
@@ -180,7 +176,7 @@ function ClassificationDetail(classification) {
   obj = {
     onPress() {
       let obj = description(guild_metadata[19]);
-      obj = { classificationId: id, source: outer1_8.StandingTab };
+      obj = { classificationId: id, source: closure_1_8.StandingTab };
       obj.pushLazy(id(guild_metadata[21])(guild_metadata[20], guild_metadata.paths), obj);
     },
     children: null
@@ -206,62 +202,62 @@ function ClassificationDetail(classification) {
 class SafetyHubViolationsContainer {
   constructor(arg0) {
     ({ status, classifications } = global);
-    c1 = undefined;
-    useState = undefined;
-    c3 = undefined;
-    useState = undefined;
-    c5 = undefined;
-    f93654 = undefined;
-    useMemo = undefined;
-    c8 = undefined;
-    tmp = Fragment();
-    tmp2 = c3(useState.useState(false), 2);
+    closure_1 = undefined;
+    closure_2 = undefined;
+    closure_3 = undefined;
+    closure_4 = undefined;
+    closure_5 = undefined;
+    closure_6 = undefined;
+    closure_7 = undefined;
+    closure_8 = undefined;
+    tmp = closure_14();
+    tmp2 = closure_3(closure_4.useState(false), 2);
     first = tmp2[0];
-    c1 = first;
-    useState = tmp2[1];
-    tmp4 = c3(require("handleSafetyHubRequestAgeVerificationResetModalAction"), 2);
+    closure_1 = first;
+    closure_2 = tmp2[1];
+    tmp4 = closure_3(require("module_3"), 2);
     first1 = tmp4[0];
-    c3 = first1;
-    useState = tmp4[1];
+    closure_3 = first1;
+    closure_4 = tmp4[1];
     tmp6 = classifications;
-    tmp7 = useState;
+    tmp7 = closure_2;
     obj = require("useSafetyHubAccountStanding");
     safetyHubAccountStanding = obj.useSafetyHubAccountStanding();
-    c5 = safetyHubAccountStanding;
+    closure_5 = safetyHubAccountStanding;
     obj2 = require("initialize");
     items = [];
-    items[0] = useMemo;
+    items[0] = closure_7;
     stateFromStores = obj2.useStateFromStores(items, () => memo.getIsDsaEligible());
-    f93654 = stateFromStores;
+    closure_6 = stateFromStores;
     items1 = [, ];
     items1[0] = classifications;
     items1[1] = first1;
-    memo = useState.useMemo(() => classifications.slice(0, first1), items1);
-    useMemo = memo;
+    memo = closure_4.useMemo(() => classifications.slice(0, first1), items1);
+    closure_7 = memo;
     items2 = [, , , ];
     items2[0] = first;
     items2[1] = safetyHubAccountStanding.state;
     items2[2] = memo;
     items2[3] = stateFromStores;
-    effect = useState.useEffect(() => {
+    effect = closure_4.useEffect(() => {
       if (first) {
         let obj = first(698);
         obj = { action: null, account_standing: null, classification_ids: null, source: null, is_violative_content_shown: false, is_dsa_eligible: null };
-        obj[0] = outer1_9.ViewViolationsDropdown;
+        obj[0] = closure_1_9.ViewViolationsDropdown;
         obj[1] = safetyHubAccountStanding.state;
         obj[2] = memo.map((id) => Number(id.id));
         obj[3] = num.StandingTab;
         obj[5] = stateFromStores;
-        obj.track(outer1_10.SAFETY_HUB_ACTION, obj);
+        obj.track(closure_1_10.SAFETY_HUB_ACTION, obj);
       }
     }, items2);
     num = 3;
     if (classifications.length - memo.length <= 3) {
       num = classifications.length - memo.length;
     }
-    c8 = num;
+    closure_8 = num;
     tmp11 = jsxs;
-    tmp12 = f93654;
+    tmp12 = closure_6;
     obj = { style: items3, children: null };
     items3 = [];
     items3[0] = tmp.container;
@@ -300,7 +296,7 @@ class SafetyHubViolationsContainer {
         items9 = [];
         items9[0] = tmp.moreButtonContainer;
         obj5[0] = items9;
-        tmp17 = c5;
+        tmp17 = closure_5;
         obj6 = { style: null, onPress: null, children: null };
         items10 = [];
         items10[0] = tmp.moreButton;
@@ -314,7 +310,7 @@ class SafetyHubViolationsContainer {
         obj8[0] = num;
         obj7[1] = intl.format(require("getSystemLocale").t["9Ml56H"], obj8);
         obj6[2] = tmp13(require("Text").Text, obj7);
-        obj5[1] = tmp13(c5, obj6);
+        obj5[1] = tmp13(closure_5, obj6);
         items8[1] = tmp13(tmp12, obj5);
         obj3[0] = items8;
         tmp11Result = tmp11(Fragment, obj3);
@@ -350,45 +346,45 @@ class SafetyHubViolationsContainer {
   }
 }
 ({ Pressable: c5, View: closure_6 } = get_ActivityIndicator);
-({ SafetyHubAnalyticsActionSource: metroImportAll, SafetyHubAnalyticsActions: c9 } = SafetyHubView);
+({ SafetyHubAnalyticsActionSource: closure_8, SafetyHubAnalyticsActions: c9 } = SafetyHubView);
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = jsxProd);
 createCacheKey = { connectedContainer: null, container: null, header: null, detailContainerOuter: null, detailContainerOuterNew: null, detailContainerInner: null, iconBackground: null, chevron: null, incidentDate: null, incidentDateNew: null, newText: null, emptyState: null, separator: null, moreButtonContainer: null, moreButton: null, headerTextContainer: null };
-createCacheKey = { display: "flex", marginTop: require("Themes").space.PX_12, marginBottom: 36, gap: require("Themes").space.PX_12 };
+createCacheKey = { display: "flex", marginTop: ThemesDefault.space.PX_12, marginBottom: 36, gap: ThemesDefault.space.PX_12 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.md, padding: require("Themes").space.PX_8, width: "100%" };
-let obj1 = { backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.md, padding: require("Themes").space.PX_8, width: "100%" };
-createCacheKey[2] = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_16, width: "100%" };
-let obj2 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_16, width: "100%" };
-createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderRadius: require("Themes").radii.md, padding: require("Themes").space.PX_12, marginTop: 10 };
-let obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderRadius: require("Themes").radii.md, padding: require("Themes").space.PX_12, marginTop: 10 };
-createCacheKey[4] = { borderColor: require("Themes").colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT, borderWidth: 1, borderStyle: "solid" };
-let obj4 = { borderColor: require("Themes").colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT, borderWidth: 1, borderStyle: "solid" };
-createCacheKey[5] = { display: "flex", gap: require("Themes").space.PX_8 };
-let obj5 = { display: "flex", gap: require("Themes").space.PX_8 };
-createCacheKey[6] = { display: "flex", borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", padding: 6 };
+createCacheKey[1] = { backgroundColor: ThemesDefault.colors.CARD_BACKGROUND_DEFAULT, borderRadius: ThemesDefault.radii.md, padding: ThemesDefault.space.PX_8, width: "100%" };
+let obj1 = { backgroundColor: ThemesDefault.colors.CARD_BACKGROUND_DEFAULT, borderRadius: ThemesDefault.radii.md, padding: ThemesDefault.space.PX_8, width: "100%" };
+createCacheKey[2] = { display: "flex", flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_16, width: "100%" };
+let obj2 = { display: "flex", flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_16, width: "100%" };
+createCacheKey[3] = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: ThemesDefault.radii.md, padding: ThemesDefault.space.PX_12, marginTop: 10 };
+let obj3 = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: ThemesDefault.radii.md, padding: ThemesDefault.space.PX_12, marginTop: 10 };
+createCacheKey[4] = { borderColor: ThemesDefault.colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT, borderWidth: 1, borderStyle: "solid" };
+let obj4 = { borderColor: ThemesDefault.colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT, borderWidth: 1, borderStyle: "solid" };
+createCacheKey[5] = { display: "flex", gap: ThemesDefault.space.PX_8 };
+let obj5 = { display: "flex", gap: ThemesDefault.space.PX_8 };
+createCacheKey[6] = { display: "flex", borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", padding: 6 };
 createCacheKey[7] = { marginLeft: "auto" };
-let obj6 = { display: "flex", borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", padding: 6 };
-createCacheKey[8] = { alignSelf: "flex-start", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.md, paddingVertical: require("Themes").space.PX_4, paddingHorizontal: require("Themes").space.PX_8 };
-let obj7 = { alignSelf: "flex-start", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.md, paddingVertical: require("Themes").space.PX_4, paddingHorizontal: require("Themes").space.PX_8 };
-createCacheKey[9] = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, color: require("Themes").colors.CONTROL_PRIMARY_TEXT_DEFAULT };
+let obj6 = { display: "flex", borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", padding: 6 };
+createCacheKey[8] = { alignSelf: "flex-start", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: ThemesDefault.radii.md, paddingVertical: ThemesDefault.space.PX_4, paddingHorizontal: ThemesDefault.space.PX_8 };
+let obj7 = { alignSelf: "flex-start", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: ThemesDefault.radii.md, paddingVertical: ThemesDefault.space.PX_4, paddingHorizontal: ThemesDefault.space.PX_8 };
+createCacheKey[9] = { backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND, color: ThemesDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
 createCacheKey[10] = { textTransform: "capitalize" };
-let obj8 = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, color: require("Themes").colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-createCacheKey[11] = { display: "flex", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, borderRadius: require("Themes").radii.md, gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_8, paddingTop: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_24 };
-const obj9 = { display: "flex", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, borderRadius: require("Themes").radii.md, gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_8, paddingTop: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_24 };
-createCacheKey[12] = { height: 1, width: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginTop: 10 };
+let obj8 = { backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND, color: ThemesDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
+createCacheKey[11] = { display: "flex", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, borderRadius: ThemesDefault.radii.md, gap: ThemesDefault.space.PX_8, marginTop: ThemesDefault.space.PX_8, paddingTop: ThemesDefault.space.PX_24, paddingBottom: ThemesDefault.space.PX_24 };
+const obj9 = { display: "flex", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, borderRadius: ThemesDefault.radii.md, gap: ThemesDefault.space.PX_8, marginTop: ThemesDefault.space.PX_8, paddingTop: ThemesDefault.space.PX_24, paddingBottom: ThemesDefault.space.PX_24 };
+createCacheKey[12] = { height: 1, width: "100%", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, marginTop: 10 };
 createCacheKey[13] = { display: "flex", alignItems: "center", justifyContent: "center" };
-const obj10 = { height: 1, width: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginTop: 10 };
-createCacheKey[14] = { display: "flex", alignItems: "center", justifyContent: "center", borderBottomEndRadius: require("Themes").radii.xs, borderBottomStartRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, height: 29, width: 207 };
+const obj10 = { height: 1, width: "100%", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, marginTop: 10 };
+createCacheKey[14] = { display: "flex", alignItems: "center", justifyContent: "center", borderBottomEndRadius: ThemesDefault.radii.xs, borderBottomStartRadius: ThemesDefault.radii.xs, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED, height: 29, width: 207 };
 createCacheKey[15] = { flexShrink: 0, flexGrow: 1, gap: 2 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj11 = { display: "flex", alignItems: "center", justifyContent: "center", borderBottomEndRadius: require("Themes").radii.xs, borderBottomStartRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, height: 29, width: 207 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/safety_hub/native/SafetyHubViolationsContainer.tsx");
+let closure_14 = createCacheKey.createStyles(createCacheKey);
+const obj11 = { display: "flex", alignItems: "center", justifyContent: "center", borderBottomEndRadius: ThemesDefault.radii.xs, borderBottomStartRadius: ThemesDefault.radii.xs, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_MUTED, height: 29, width: 207 };
+const result = require("set").fileFinishedImporting("modules/safety_hub/native/SafetyHubViolationsContainer.tsx");
 
 export default SafetyHubViolationsContainer;
 export const ConnectedSafetyHubViolationsContainer = function ConnectedSafetyHubViolationsContainer() {
-  let obj = require(11066) /* useSafetyHubClassifications */;
+  let obj = useSafetyHubClassifications;
   const activeSafetyHubClassifications = obj.useActiveSafetyHubClassifications();
-  let obj1 = require(11066) /* useSafetyHubClassifications */;
+  obj1 = useSafetyHubClassifications;
   const expiredSafetyHubClassifications = obj1.useExpiredSafetyHubClassifications();
   if (0 !== activeSafetyHubClassifications.length) {
     obj = { style: null, children: null };

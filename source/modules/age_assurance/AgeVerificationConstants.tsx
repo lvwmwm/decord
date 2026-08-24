@@ -1,22 +1,25 @@
-// Module ID: 5427
-// Function ID: 5428
+// Module ID: 5432
+// Function ID: 5433
 // Name: set
-// Dependencies: [676, 5254, 1236, 5428, 1993, 2853, 2]
+// Dependencies: [676, 5259, 1236, 5433, 1994, 2854, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 5427 (set)
-import { HelpdeskArticles } from "ME";
-import set from "getSystemLocale";
+// Module 5432 (set)
+import ME from "ME" /* 676 */;
+import messagesProxyDefault from "messagesProxy" /* 2854 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 5259 */;
+import set from "set" /* 2 */;
 
-let items = [require("AgeVerificationModalEntryPoint").AgeVerificationModalEntryPoint.NSFW_GUILD];
+const HelpdeskArticles = ME.HelpdeskArticles;
+let items = [AgeVerificationModalEntryPoint.AgeVerificationModalEntryPoint.NSFW_GUILD];
 let set = new Set(items);
 let obj = { FACIAL_AGE_ESTIMATION: 1, [1]: "FACIAL_AGE_ESTIMATION", ID_VERIFICATION: 2, [2]: "ID_VERIFICATION", MODULAR: 3, [3]: "MODULAR", GOOGLE_WALLET: 9, [9]: "GOOGLE_WALLET" };
 obj = {};
-obj = { title: require("messagesProxy")["2yLvkS"], description: require("messagesProxy").eJmat5 };
+obj = { title: messagesProxyDefault["2yLvkS"], description: messagesProxyDefault.eJmat5 };
 obj[obj.FACIAL_AGE_ESTIMATION] = obj;
-obj[obj.ID_VERIFICATION] = { title: require("messagesProxy").dwkwo0, description: require("messagesProxy").ZdmRwW };
-const obj1 = { title: require("messagesProxy").dwkwo0, description: require("messagesProxy").ZdmRwW };
-obj[obj.GOOGLE_WALLET] = { title: require("messagesProxy").Y9sLpR, description: require("messagesProxy").dah4bF };
+obj[obj.ID_VERIFICATION] = { title: messagesProxyDefault.dwkwo0, description: messagesProxyDefault.ZdmRwW };
+const obj1 = { title: messagesProxyDefault.dwkwo0, description: messagesProxyDefault.ZdmRwW };
+obj[obj.GOOGLE_WALLET] = { title: messagesProxyDefault.Y9sLpR, description: messagesProxyDefault.dah4bF };
 let result = set.fileFinishedImporting("modules/age_assurance/AgeVerificationConstants.tsx");
 
 export const FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS = set;
@@ -40,15 +43,16 @@ export const getAgeVerificationGetStartedSteps = function getAgeVerificationGetS
   const intl6 = _require(1236).intl;
   obj[1] = intl6.format(_require(1236).t.n5vd1E, {
     handleOnHelpUrlHook() {
-      const obj = outer1_1(outer1_2[3]);
-      obj.openUrl(outer1_1(outer1_2[4]).getArticleURL(outer1_3.TIGGER_PAWTECT_SYSTEM_DMS));
-      const obj2 = outer1_1(outer1_2[4]);
-      const result = callback(outer1_2[1]).trackAgeVerificationModalClicked(callback, callback(outer1_2[1]).AgeVerificationModalVersion.PRIMARY, callback(outer1_2[1]).AgeVerificationModalCta.SYSTEM_DMS_LEARN_MORE);
+      const obj = closure_1_1(closure_1_2[3]);
+      obj.openUrl(closure_1_1(closure_1_2[4]).getArticleURL(closure_1_3.TIGGER_PAWTECT_SYSTEM_DMS));
+      const obj2 = closure_1_1(closure_1_2[4]);
+      const result = callback(closure_1_2[1]).trackAgeVerificationModalClicked(callback, callback(closure_1_2[1]).AgeVerificationModalVersion.PRIMARY, callback(closure_1_2[1]).AgeVerificationModalCta.SYSTEM_DMS_LEARN_MORE);
     }
   });
   items[2] = obj;
   return items;
 };
+export const TRUSTED_PROVIDERS_URL = "https://discord.com/safety/age-assurance-on-discord-vendors-methods-and-your-data";
 export const AGE_VERIFICATION_MODAL_KEY = "AGE_VERIFICATION_MODAL_KEY";
 export const AGE_VERIFICATION_GET_STARTED_MODAL_KEY = "AGE_VERIFICATION_GET_STARTED_MODAL_KEY";
 export const AGE_VERIFICATION_QUEST_UNSUPPORTED_ALERT_KEY = "AGE_VERIFICATION_QUEST_UNSUPPORTED_ALERT_KEY";

@@ -4,6 +4,9 @@
 // Dependencies: [1677, 1678]
 
 // Module 1676 (ReanimatedTurboModule)
+import ReanimatedModuleDefault from "ReanimatedModule" /* 1677 */;
+import WorkletsModuleDefault from "WorkletsModule" /* 1678 */;
 
-export const ReanimatedTurboModule = require("ReanimatedModule");
-export const WorkletsTurboModule = require("WorkletsModule");
+
+export const ReanimatedTurboModule = ReanimatedModuleDefault;
+export const WorkletsTurboModule = WorkletsModuleDefault;

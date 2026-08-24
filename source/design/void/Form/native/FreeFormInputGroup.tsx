@@ -1,31 +1,23 @@
-// Module ID: 8575
-// Function ID: 8576
-// Dependencies: [19, 17, 21, 4661, 500, 6939, 8071, 1297, 8576, 8577, 8579, 4734, 2]
+// Module ID: 8614
+// Function ID: 8615
+// Dependencies: [19, 17, 21, 4668, 500, 6977, 8110, 1297, 8615, 8616, 8618, 4739, 2]
 
-// Module 8575
-import importAllResult from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8614
+import set from "set" /* 500 */;
+import context2 from "context" /* 6977 */;
+import FreeFormLabelDefault from "FreeFormLabel" /* 8615 */;
+import ClearButtonDefault from "ClearButton" /* 8616 */;
+import LabelDefault from "Label" /* 8618 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles({ label: { marginBottom: 8 }, input: { flexGrow: 1, marginBottom: 8 }, error: { marginBottom: 8 }, hint: { marginBottom: 8 } });
 const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) => {
-  let clearButtonVisibility;
-  let enableAndroidSanitizedInputWorkaround;
-  let error;
-  let hint;
-  let keyboardType;
-  let label;
-  let onChangeText;
-  let placeholder;
-  let secureTextEntry;
-  let style;
-  let value;
   ({ style, label, error, value, hint, enableAndroidSanitizedInputWorkaround } = accessibilityLabel);
   if (enableAndroidSanitizedInputWorkaround === undefined) {
     enableAndroidSanitizedInputWorkaround = false;
@@ -36,7 +28,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
   const tmp2 = callback2();
   let isAndroidResult = enableAndroidSanitizedInputWorkaround;
   if (enableAndroidSanitizedInputWorkaround) {
-    let obj = require(500) /* set */;
+    let obj = set;
     isAndroidResult = obj.isAndroid();
   }
   if (!isAndroidResult) {
@@ -45,10 +37,10 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
   if (!enableAndroidSanitizedInputWorkaround) {
     let str = keyboardType;
   } else {
-    let obj1 = require(500) /* set */;
+    obj1 = set;
     str = "visible-password";
   }
-  const context = importAllResult.useContext(require(6939) /* context */.RedesignCompatContext);
+  const context = importAllResult.useContext(context2.RedesignCompatContext);
   const id = importAllResult.useId();
   if (context) {
     ({ placeholder, onChangeText, clearButtonVisibility } = merged);
@@ -64,7 +56,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
     obj[8] = str;
     obj[9] = isAndroidResult;
     obj[10] = merged.autoCapitalize;
-    return callback(tmp8(8071).TextInput, obj);
+    return callback(tmp8(8110).TextInput, obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = style;
@@ -74,7 +66,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
       obj1[0] = tmp2.label;
       obj1[1] = id;
       obj1[2] = label;
-      tmp14 = callback(importDefault(8576), obj1);
+      tmp14 = callback(FreeFormLabelDefault, obj1);
     }
     const items = [tmp14, , , ];
     const obj2 = {};
@@ -96,13 +88,13 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
     obj2.keyboardType = str;
     const items1 = [tmp2.input, accessibilityLabel.textStyle];
     obj2.style = items1;
-    items[1] = callback(importDefault(8577), obj2);
+    items[1] = callback(ClearButtonDefault, obj2);
     let tmp17Result = null;
     if (null != error) {
       const obj3 = { style: null, children: null };
       obj3[0] = tmp2.error;
       obj3[1] = error;
-      tmp17Result = tmp17(importDefault(8579), obj3);
+      tmp17Result = tmp17(LabelDefault, obj3);
     }
     items[2] = tmp17Result;
     tmp17Result = null;
@@ -110,13 +102,13 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
       const obj4 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
       obj4[0] = tmp2.hint;
       obj4[3] = hint;
-      tmp17Result = tmp17(tmp8(4734).Text, obj4);
+      tmp17Result = tmp17(tmp8(4739).Text, obj4);
     }
     items[3] = tmp17Result;
     obj[1] = items;
     return closure_6(View, obj);
   }
 });
-const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FreeFormInputGroup.tsx");
+const result = require("set").fileFinishedImporting("design/void/Form/native/FreeFormInputGroup.tsx");
 
 export default forwardRefResult;

@@ -4,7 +4,7 @@
 // Dependencies: [65]
 
 // Module 393 (__INTERNAL_VIEW_CONFIG)
-import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
 const obj = { uiViewClassName: "AndroidHorizontalScrollContentView", validAttributes: { removeClippedSubviews: true } };
 

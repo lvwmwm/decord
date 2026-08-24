@@ -1,16 +1,17 @@
-// Module ID: 4983
-// Function ID: 4984
+// Module ID: 4988
+// Function ID: 4989
 // Name: MAX_THUMBNAIL_COUNT
-// Dependencies: [4811, 2]
+// Dependencies: [4816, 2]
 // Exports: getBackgroundImageUrl, getEmbedPreviewImageUrl, getThumbnailImage
 
-// Module 4983 (MAX_THUMBNAIL_COUNT)
-const result = require("set").fileFinishedImporting("modules/media_channel/MediaPostThumbnailUtils.tsx");
+// Module 4988 (MAX_THUMBNAIL_COUNT)
+import set from "set" /* 2 */;
+import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4816 */;
+
+const result = set.fileFinishedImporting("modules/media_channel/MediaPostThumbnailUtils.tsx");
 
 export const MAX_THUMBNAIL_COUNT = 4;
 export const getEmbedPreviewImageUrl = function getEmbedPreviewImageUrl(arg0) {
-  let image;
-  let thumbnail;
   if (null != arg0) {
     ({ thumbnail, image } = arg0);
     if (null != thumbnail) {
@@ -35,13 +36,11 @@ export const getBackgroundImageUrl = function getBackgroundImageUrl(coverImage) 
     let combined = "" + coverImage + "?format=webp";
   } else {
     combined = coverImage;
-    const tmpResult = require(4811) /* urlMatchesFileExtension */;
+    const tmpResult = urlMatchesFileExtension;
   }
   return combined;
 };
 export const getThumbnailImage = function getThumbnailImage(thumbnail) {
-  let proxy_url;
-  let url;
   if (null != thumbnail) {
     ({ url, proxy_url } = thumbnail);
     let tmp = url;
@@ -54,7 +53,7 @@ export const getThumbnailImage = function getThumbnailImage(thumbnail) {
           combined = "" + proxy_url + "?format=webp";
         }
         tmp = combined;
-        obj = require(4811) /* urlMatchesFileExtension */;
+        obj = urlMatchesFileExtension;
       }
     }
     return tmp;

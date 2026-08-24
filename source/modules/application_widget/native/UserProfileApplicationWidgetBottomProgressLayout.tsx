@@ -1,70 +1,67 @@
-// Module ID: 12281
-// Function ID: 12282
+// Module ID: 12333
+// Function ID: 12334
 // Name: UserProfileApplicationWidgetBottomProgressLayout
-// Dependencies: [19, 17, 21, 4661, 712, 12190, 12278, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 12242, 12330, 4739, 2]
 // Exports: default
 
-// Module 12281 (UserProfileApplicationWidgetBottomProgressLayout)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12333 (UserProfileApplicationWidgetBottomProgressLayout)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 12242 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Image: obj1, View: c3 } = get_ActivityIndicator);
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { root: null, image: null, content: null, progressContainer: null, progress: null, textContent: null, textLeft: null, progressText: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_12 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { width: 48, height: 48, borderRadius: require("Themes").radii.sm, overflow: "hidden", borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-obj1 = { width: 48, height: 48, borderRadius: require("Themes").radii.sm, overflow: "hidden", borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-createCacheKey[2] = { flex: 1, gap: require("Themes").space.PX_4, minWidth: 0 };
-let obj2 = { flex: 1, gap: require("Themes").space.PX_4, minWidth: 0 };
-createCacheKey[3] = { width: "100%", height: 6, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-let obj3 = { width: "100%", height: 6, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-createCacheKey[4] = { height: 6, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.ICON_STRONG };
-let obj4 = { height: 6, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.ICON_STRONG };
-createCacheKey[5] = { flexDirection: "row", justifyContent: "space-between", gap: require("Themes").space.PX_4 };
+createCacheKey[1] = { width: 48, height: 48, borderRadius: ThemesDefault.radii.sm, overflow: "hidden", borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_SUBTLE, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+obj1 = { width: 48, height: 48, borderRadius: ThemesDefault.radii.sm, overflow: "hidden", borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_SUBTLE, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[2] = { flex: 1, gap: ThemesDefault.space.PX_4, minWidth: 0 };
+let obj2 = { flex: 1, gap: ThemesDefault.space.PX_4, minWidth: 0 };
+createCacheKey[3] = { width: "100%", height: 6, borderRadius: ThemesDefault.radii.md, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+let obj3 = { width: "100%", height: 6, borderRadius: ThemesDefault.radii.md, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[4] = { height: 6, borderRadius: ThemesDefault.radii.md, backgroundColor: ThemesDefault.colors.ICON_STRONG };
+let obj4 = { height: 6, borderRadius: ThemesDefault.radii.md, backgroundColor: ThemesDefault.colors.ICON_STRONG };
+createCacheKey[5] = { flexDirection: "row", justifyContent: "space-between", gap: ThemesDefault.space.PX_4 };
 createCacheKey[6] = { flex: 1, minWidth: 0 };
 createCacheKey[7] = { flexShrink: 0 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj5 = { flexDirection: "row", justifyContent: "space-between", gap: require("Themes").space.PX_4 };
-const result = require("jsxProd").fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetBottomProgressLayout.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let obj5 = { flexDirection: "row", justifyContent: "space-between", gap: ThemesDefault.space.PX_4 };
+const result = require("set").fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetBottomProgressLayout.tsx");
 
 export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
-  let bottomConfig;
-  let resolveFieldValue;
   ({ bottomConfig, resolveFieldValue } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   const objective = bottomConfig.components.objective;
   let image;
   if (objective != null) {
     image = objective.fields.image;
   }
-  const items = [require(12190) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
+  const items = [resolvedValuesFromUserApplicationIdentityProfile.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  let obj = require(12190) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj = resolvedValuesFromUserApplicationIdentityProfile;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(objective, "name", resolveFieldValue);
-  let obj1 = require(12190) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  obj1 = resolvedValuesFromUserApplicationIdentityProfile;
   const singleStringOrSkeleton1 = obj1.resolveSingleStringOrSkeleton(objective, "description", resolveFieldValue);
   const progress = bottomConfig.components.progress;
   let current;
   if (progress != null) {
     current = progress.fields.current;
   }
-  const items1 = [require(12190) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
+  const items1 = [resolvedValuesFromUserApplicationIdentityProfile.ResolvedValueType.NUMBER];
   let iter = resolveFieldValue(current, items1);
   let max;
   if (progress != null) {
     max = progress.fields.max;
   }
-  const items2 = [require(12190) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
+  const items2 = [resolvedValuesFromUserApplicationIdentityProfile.ResolvedValueType.NUMBER];
   let iter2 = resolveFieldValue(max, items2);
-  let tmp3Result = tmp3(12190);
+  let tmp3Result = tmp3(12242);
   obj = { style: tmp.root, children: null };
   const progressPercentage = tmp3Result.resolveProgressPercentage(iter, iter2);
   if (null != fieldValue) {
@@ -78,7 +75,7 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   } else {
     const obj2 = { style: null };
     obj2[0] = tmp.image;
-    tmp14 = callback(tmp3(12278).ImageSkeleton, obj2);
+    tmp14 = callback(tmp3(12330).ImageSkeleton, obj2);
     tmp15 = callback;
   }
   const items3 = [tmp14, ];
@@ -113,17 +110,17 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   if ("value" === singleStringOrSkeleton.status) {
     const obj10 = { variant: "heading-sm/medium", lineClamp: 2, children: null };
     obj10[2] = singleStringOrSkeleton.text;
-    let tmp15Result = tmp15(tmp3(4734).Text, obj10);
+    let tmp15Result = tmp15(tmp3(4739).Text, obj10);
   } else {
-    tmp15Result = tmp15(tmp3(12278).TextSkeleton, { variant: "heading-sm/medium" });
+    tmp15Result = tmp15(tmp3(12330).TextSkeleton, { variant: "heading-sm/medium" });
   }
   const items6 = [tmp15Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj11 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: null };
     obj11[3] = singleStringOrSkeleton1.text;
-    tmp15Result = tmp15(tmp3(4734).Text, obj11);
+    tmp15Result = tmp15(tmp3(4739).Text, obj11);
   } else {
-    tmp15Result = tmp15(tmp3(12278).TextSkeleton, { variant: "text-xs/medium" });
+    tmp15Result = tmp15(tmp3(12330).TextSkeleton, { variant: "text-xs/medium" });
   }
   items6[1] = tmp15Result;
   obj9[1] = items6;
@@ -137,14 +134,14 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
       str = "/";
       let iter2Result = iter2(iter.value, "/", iter);
     } else {
-      tmp3Result = tmp3(12190);
+      tmp3Result = tmp3(12242);
       const _HermesInternal = HermesInternal;
       iter2Result = "" + tmp3Result.decimalToClampedPercentage(iter.value) + "%";
     }
     obj12[3] = iter2Result;
-    tmp15(tmp3(4734).Text, obj12);
+    tmp15(tmp3(4739).Text, obj12);
   } else {
-    items7[1] = tmp15(tmp3(12278).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
+    items7[1] = tmp15(tmp3(12330).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
     obj8[1] = items7;
     items5[1] = tmp11(tmp12, obj8);
     obj3[1] = items5;

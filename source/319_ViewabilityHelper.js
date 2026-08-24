@@ -4,9 +4,9 @@
 // Dependencies: [32, 41, 42, 38]
 
 // Module 319 (ViewabilityHelper)
-import _slicedToArray from "_slicedToArray";
-import _classCallCheck from "_classCallCheck";
-import _createClass from "_createClass";
+import _createClassDefault from "_createClass" /* 42 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "_classCallCheck" /* 41 */;
 
 const ViewabilityHelper = arg1;
 class ViewabilityHelper {
@@ -15,7 +15,7 @@ class ViewabilityHelper {
     if (global === undefined) {
       obj = { viewAreaCoveragePercentThreshold: 0 };
     }
-    tmp = outer1_3(this, ViewabilityHelper);
+    tmp = closure_3(this, ViewabilityHelper);
     this._hasInteracted = false;
     set = new Set();
     this._timers = set;
@@ -37,10 +37,6 @@ let items = [
   {
     key: "computeViewableItems",
     value: function computeViewableItems(getItemCount, arg1, arg2, getCellMetrics, arg4) {
-      let first;
-      let itemVisiblePercentThreshold;
-      let last;
-      let viewAreaCoveragePercentThreshold;
       const itemCount = getItemCount.getItemCount(getItemCount.data);
       ({ itemVisiblePercentThreshold, viewAreaCoveragePercentThreshold } = this._config);
       let tmp3 = itemVisiblePercentThreshold;
@@ -132,10 +128,10 @@ let items = [
   },
   {
     key: "onUpdate",
-    value: function onUpdate(getItemCount, arg1, arg2, getCellMetrics, _slicedToArray, _classCallCheck) {
+    value: function onUpdate(getItemCount, arg1, arg2, getCellMetrics, closure_2, closure_3) {
       let self = this;
       self = this;
-      let closure_1 = getItemCount;
+      closure_1 = getItemCount;
       const itemCount = getItemCount.getItemCount(getItemCount.data);
       if (!this._config.waitForInteraction) {
         if (0 !== itemCount) {
@@ -153,12 +149,12 @@ let items = [
                 const timerId = setTimeout(() => {
                   const _timers = self._timers;
                   _timers.delete(timerId);
-                  self._onUpdateSync(closure_1, viewableItems, _classCallCheck, _slicedToArray);
+                  self._onUpdateSync(closure_1, viewableItems, closure_3, closure_2);
                 }, self._config.minimumViewTime);
                 let _timers = self._timers;
                 _timers.add(timerId);
               } else {
-                self._onUpdateSync(getItemCount, items, _classCallCheck, _slicedToArray);
+                self._onUpdateSync(getItemCount, items, closure_3, closure_2);
               }
             } else {
               const _viewableIndices = self._viewableIndices;
@@ -182,10 +178,10 @@ let items = [
   },
   {
     key: "_onUpdateSync",
-    value: function _onUpdateSync(closure_1, items, _classCallCheck, _slicedToArray) {
+    value: function _onUpdateSync(closure_1, items, closure_3, closure_2) {
       let self = this;
       self = this;
-      let closure_0 = _slicedToArray;
+      closure_0 = closure_2;
       const found = items.filter((arg0) => {
         const _viewableIndices = self._viewableIndices;
         return _viewableIndices.includes(arg0);
@@ -229,10 +225,10 @@ let items = [
         obj[0] = Array.from(map.values());
         obj[1] = items;
         obj[2] = self._config;
-        _classCallCheck(obj);
+        closure_3(obj);
       }
     }
   }
 ];
 
-export default _createClass(ViewabilityHelper, items);
+export default _createClassDefault(ViewabilityHelper, items);

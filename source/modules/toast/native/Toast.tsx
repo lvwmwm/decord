@@ -1,26 +1,24 @@
-// Module ID: 16174
-// Function ID: 16175
+// Module ID: 16271
+// Function ID: 16272
 // Name: ToastIcon
-// Dependencies: [32, 19, 17, 21, 4661, 712, 4097, 1297, 4734, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 4100, 1297, 4739, 2]
 // Exports: default
 
-// Module 16174 (ToastIcon)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16271 (ToastIcon)
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import map from "map" /* 4100 */;
+import Text from "Text" /* 4739 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function ToastIcon(recolorLegacyIcon) {
-  let IconComponent;
-  let icon;
-  let iconColor;
   ({ icon, IconComponent, iconColor } = recolorLegacyIcon);
-  let obj = require(4097) /* map */;
+  let obj = map;
   if (iconColor == null) {
     iconColor = "mobile-text-heading-primary";
   }
@@ -32,7 +30,7 @@ function ToastIcon(recolorLegacyIcon) {
     obj = { disableColor: true };
   }
   if (null != IconComponent) {
-    const obj1 = { size: "sm", color: null };
+    obj1 = { size: "sm", color: null };
     obj1[1] = token;
     let tmp8 = callback2(IconComponent, obj1);
   } else if (typeof icon === "function") {
@@ -45,14 +43,14 @@ function ToastIcon(recolorLegacyIcon) {
       const obj3 = { resizeMode: "contain", source: null };
       obj3[1] = icon;
       const merged = Object.assign(obj);
-      tmp8 = callback2(require(1297) /* Button */.Icon, obj3);
+      tmp8 = callback2(Button.Icon, obj3);
     }
   }
   return tmp8;
 }
 function ToastContent(content) {
   content = content.content;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   if (typeof content === "function") {
     let obj = { style: null, children: null };
     obj[0] = tmp.contentContainer;
@@ -63,34 +61,26 @@ function ToastContent(content) {
     obj[0] = content.onTextLayout;
     obj[1] = tmp.contentContainer;
     obj[5] = content;
-    tmp4 = callback2(require(4734) /* Text */.Text, obj);
+    tmp4 = callback2(Text.Text, obj);
   }
   return tmp4;
 }
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { container: null, multilineContainer: null, contentContainer: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", borderRadius: require("Themes").radii.xxl, padding: require("Themes").space.PX_8, paddingRight: require("Themes").space.PX_12, backgroundColor: require("Themes").colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderColor: require("Themes").colors.BORDER_SUBTLE, borderWidth: 1 };
-let merged = Object.assign(require("Themes").shadows.SHADOW_HIGH);
+createCacheKey = { flexDirection: "row", alignItems: "center", borderRadius: ThemesDefault.radii.xxl, padding: ThemesDefault.space.PX_8, paddingRight: ThemesDefault.space.PX_12, backgroundColor: ThemesDefault.colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderColor: ThemesDefault.colors.BORDER_SUBTLE, borderWidth: 1 };
+let merged = Object.assign(ThemesDefault.shadows.SHADOW_HIGH);
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { paddingLeft: require("Themes").space.PX_12 };
+createCacheKey[1] = { paddingLeft: ThemesDefault.space.PX_12 };
 createCacheKey[2] = { marginLeft: 8, flexShrink: 1 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { paddingLeft: require("Themes").space.PX_12 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/toast/native/Toast.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingLeft: ThemesDefault.space.PX_12 };
+const result = require("set").fileFinishedImporting("modules/toast/native/Toast.tsx");
 
 export default function Toast(arg0) {
-  let IconComponent;
-  let c0;
-  let containerStyle;
-  let content;
-  let icon;
-  let iconColor;
-  let recolorLegacyIcon;
-  let tmp3;
   c0 = undefined;
-  let closure_1;
+  closure_1 = undefined;
   ({ icon, iconColor, IconComponent, content, containerStyle, recolorLegacyIcon } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   [tmp3, c0] = callback(React.useState(false), 2);
   closure_1 = React.useRef(false);
   const items = [tmp.container, , ];

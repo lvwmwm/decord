@@ -1,17 +1,17 @@
-// Module ID: 10545
-// Function ID: 10546
+// Module ID: 10584
+// Function ID: 10585
 // Name: setPushToTalkState
-// Dependencies: [4497, 4529, 709, 2]
+// Dependencies: [4501, 4534, 709, 2]
 // Exports: setPushToTalkState
 
-// Module 10545 (setPushToTalkState)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import { MediaEngineContextTypes } from "DesktopSources";
+// Module 10584 (setPushToTalkState)
+import closure_2 from "_detectH265HardwareDecode" /* 4501 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4534 */;
 
-const result = require("dispatcher").fileFinishedImporting("modules/media_engine/MediaEngineActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/media_engine/MediaEngineActionCreators.tsx");
 
 export const setPushToTalkState = function setPushToTalkState(isActive, arg1) {
-  const importDefault = isActive;
+  importDefault = isActive;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;

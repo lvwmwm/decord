@@ -1,13 +1,17 @@
-// Module ID: 12606
-// Function ID: 12607
+// Module ID: 12660
+// Function ID: 12661
 // Name: getParticipantTitle
-// Dependencies: [4544, 12607, 4796, 1236, 2]
+// Dependencies: [4549, 12661, 4801, 1236, 2]
 // Exports: default
 
-// Module 12606 (getParticipantTitle)
-import { ParticipantTypes } from "ParticipantTypes";
+// Module 12660 (getParticipantTitle)
+import set from "set" /* 2 */;
+import ParticipantTypes2 from "ParticipantTypes" /* 4549 */;
+import getNicknameDefault from "getNickname" /* 4801 */;
+import useIsGuestOrLurker from "useIsGuestOrLurker" /* 12661 */;
 
-let result = require("getNickname").fileFinishedImporting("modules/video_calls/getParticipantTitle.tsx");
+const ParticipantTypes = ParticipantTypes2.ParticipantTypes;
+let result = set.fileFinishedImporting("modules/video_calls/getParticipantTitle.tsx");
 
 export default function getParticipantTitle(guild_id, type, name) {
   if (type.type === ParticipantTypes.ACTIVITY) {
@@ -25,10 +29,10 @@ export default function getParticipantTitle(guild_id, type, name) {
     if (user != null) {
       id = user.id;
     }
-    const result = require(12607) /* useIsGuestOrLurker */.isGuestOrLurkerInGuild(guild_id.guild_id, id);
-    const obj2 = require(12607) /* useIsGuestOrLurker */;
+    const result = useIsGuestOrLurker.isGuestOrLurkerInGuild(guild_id.guild_id, id);
+    const obj2 = useIsGuestOrLurker;
     let str = "";
-    const name1 = importDefault(4796).getName(guild_id.getGuildId(), guild_id.id, type.user);
+    const name1 = getNicknameDefault.getName(guild_id.getGuildId(), guild_id.id, type.user);
     if (result) {
       const intl = tmp10(1236).intl;
       const _HermesInternal = HermesInternal;

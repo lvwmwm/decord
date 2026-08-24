@@ -1,17 +1,18 @@
-// Module ID: 6822
-// Function ID: 6823
+// Module ID: 6860
+// Function ID: 6861
 // Name: isSoundValid
-// Dependencies: [1391, 4021, 1922, 4781, 505, 4039, 2]
+// Dependencies: [1391, 4024, 1922, 4786, 505, 4042, 2]
 // Exports: default
 
-// Module 6822 (isSoundValid)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
-import { Permissions } from "sum";
+// Module 6860 (isSoundValid)
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4786 */;
+import { Permissions } from "sum" /* 505 */;
 
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/isSoundValid.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/isSoundValid.tsx");
 
 export default function isSoundValid(guildId) {
   channel = channel.getChannel(arg2);
@@ -37,12 +38,12 @@ export default function isSoundValid(guildId) {
       }
       if (guildId2 !== arg1) {
         let canResult = null == channel;
-        const result = importDefault(4039).canUseSoundboardEverywhere(currentUser.getCurrentUser());
+        const result = getPremiumPlanItemDefault.canUseSoundboardEverywhere(currentUser.getCurrentUser());
         if (!canResult) {
           canResult = null == channel.guild_id;
         }
         if (!canResult) {
-          canResult = getUncachedChannelPermissions.can(Permissions.USE_EXTERNAL_SOUNDS, channel);
+          canResult = closure_3.can(Permissions.USE_EXTERNAL_SOUNDS, channel);
         }
         if (canResult) {
           canResult = result;

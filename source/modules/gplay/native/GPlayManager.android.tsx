@@ -1,50 +1,41 @@
-// Module ID: 7661
-// Function ID: 7662
+// Module ID: 7699
+// Function ID: 7700
 // Name: handleConnectionStateUpdated
-// Dependencies: [109, 5, 19, 17, 7391, 7392, 1218, 4045, 5319, 7618, 5320, 676, 4357, 1924, 21, 3, 709, 7662, 1217, 5322, 3975, 7400, 4054, 4466, 698, 4656, 1236, 7663, 2007, 5260, 7381, 2]
+// Dependencies: [109, 5, 19, 17, 7429, 7430, 1218, 4048, 5324, 7656, 5325, 676, 4361, 1924, 21, 3, 709, 7700, 1217, 5327, 3978, 7438, 4057, 4470, 698, 4662, 1236, 7701, 2008, 5265, 7419, 2]
 
-// Module 7661 (handleConnectionStateUpdated)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import closure_5 from "usePremiumPlanPurchasedStore";
-import "SubscriptionPlans";
-import get_ActivityIndicator from "getPlanIdForProduct";
-import initialize from "initialize";
-import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore";
-import fetchFingerprint from "fetchFingerprint";
-import reset from "reset";
-import updateProduct from "updateProduct";
-import { useGPlayAnalyticsStore } from "setGPlayAnalytics";
-import GPlayConnectionState from "GPlayConnectionState";
-import ME from "ME";
-import { OrderStatus } from "CustomCheckoutFlow";
-import { SubscriptionPlanInfo } from "GuildFeatures";
-import { jsx } from "getOrders";
+// Module 7699 (handleConnectionStateUpdated)
+import timestampDefault from "timestamp" /* 3 */;
+import noopAll from "noop" /* 19 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getPlanIdForProduct from "getPlanIdForProduct" /* 7700 */;
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import closure_5 from "asyncGeneratorStep" /* 5 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "initialize" /* 7429 */;
+import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore" /* 7430 */;
+import closure_9 from "fetchFingerprint" /* 1218 */;
+import closure_10 from "reset" /* 4048 */;
+import closure_11 from "updateProduct" /* 5324 */;
+import { useGPlayAnalyticsStore } from "setGPlayAnalytics" /* 7656 */;
+import GPlayConnectionState from "GPlayConnectionState" /* 5325 */;
+import ME from "ME" /* 676 */;
+import { OrderStatus } from "CustomCheckoutFlow" /* 4361 */;
+import { SubscriptionPlanInfo } from "GuildFeatures" /* 1924 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let NativeEventEmitter;
-let NativeModules;
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_18;
-let error;
-let map1;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function handleConnectionStateUpdated(connectionState) {
   connectionState = connectionState.connectionState;
-  importDefault(709).dispatch({ type: "GPLAY_UPDATE_CONNECTION_STATE", connectionState });
+  dispatcherDefault.dispatch({ type: "GPLAY_UPDATE_CONNECTION_STATE", connectionState });
   if (connectionState === constants.CONNECTED) {
-    const userCountry = require(7662) /* getPlanIdForProduct */.loadUserCountry();
+    const userCountry = getPlanIdForProduct.loadUserCountry();
     userCountry.finally(() => callback(table[17]).loadSkus());
-    const obj2 = require(7662) /* getPlanIdForProduct */;
+    const obj2 = getPlanIdForProduct;
   }
 }
 function handlePurchaseStateUpdated(arg0) {
-  let billingResult;
-  let isActivePurchase;
   ({ billingResult, isActivePurchase } = arg0);
-  importDefault(709).dispatch({ type: "GPLAY_UPDATE_PURCHASE_STATE", billingResult, isActivePurchase });
+  dispatcherDefault.dispatch({ type: "GPLAY_UPDATE_PURCHASE_STATE", billingResult, isActivePurchase });
 }
 function handlePurchaseUpdated() {
   const self = this;
@@ -59,10 +50,10 @@ function handlePurchaseUpdated() {
 function _handlePurchaseUpdated() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c6 = 0;
+    c7 = 0;
+    c5 = 0;
     const iter = (function*(arg0) {
       if (c7 === 2) {
         c7 = 3;
@@ -71,11 +62,11 @@ function _handlePurchaseUpdated() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,16 +74,16 @@ function _handlePurchaseUpdated() {
             c7 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            let c5 = 1;
+            c5 = 1;
             while (true) {
               let tmp8 = dependencyMap;
-              let tmp9 = fetchFingerprint;
-              if (null == fetchFingerprint) {
+              let tmp9 = closure_9;
+              if (null == closure_9) {
                 break;
               } else {
                 let tmp10 = dependencyMap;
-                let tmp11 = fetchFingerprint;
-                if (null == fetchFingerprint.pendingDowngrade) {
+                let tmp11 = closure_9;
+                if (null == closure_9.pendingDowngrade) {
                   break;
                 } else {
                   let tmp18 = dependencyMap;
@@ -101,16 +92,16 @@ function _handlePurchaseUpdated() {
                   let tmp21 = dependencyMap;
                   let obj4 = callback(709);
                   obj = { type: "GPLAY_UPDATE_PENDING_DOWNGRADE", pendingDowngrade: null };
-                  let tmp22 = fetchFingerprint;
-                  obj[1] = fetchFingerprint.pendingDowngrade;
+                  let tmp22 = closure_9;
+                  obj[1] = closure_9.pendingDowngrade;
                   let dispatchResult = obj4.dispatch(obj);
                   let tmp24 = lib;
                   let tmp25 = dependencyMap;
-                  let obj7 = lib(4466);
-                  let c6 = 8;
+                  let obj7 = lib(4470);
+                  c6 = 8;
                   let num4 = 1;
                   c7 = 1;
-                  let obj1 = { value: null, done: false };
+                  obj1 = { value: null, done: false };
                   obj1[0] = obj7.fetchSubscriptions();
                   return obj1;
                 }
@@ -129,7 +120,7 @@ function _handlePurchaseUpdated() {
               } else {
                 let tmp15 = lib;
                 let tmp16 = dependencyMap;
-                obj1 = lib(4466);
+                obj1 = lib(4470);
                 c6 = 9;
                 let num2 = 1;
                 c7 = 1;
@@ -149,7 +140,7 @@ function _handlePurchaseUpdated() {
             return obj;
           }
         } catch (tmp26) {
-          let _objectWithoutProperties = tmp26;
+          closure_4 = tmp26;
           if (tmp4 === c5) {
             c7 = tmp3;
             throw tmp26;
@@ -166,7 +157,7 @@ function _handlePurchaseUpdated() {
     iter.next();
     return iter;
   });
-  const _handlePurchaseUpdated = tmp;
+  closure_33 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -188,9 +179,9 @@ function handleDowngradeCommand() {
 function _handleDowngradeCommand() {
   let self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -199,11 +190,11 @@ function _handleDowngradeCommand() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -218,8 +209,8 @@ function _handleDowngradeCommand() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_2 = tmp4;
-              let c1 = 0;
+              closure_2 = tmp4;
+              c1 = 0;
               let downgradeCommand;
               downgradeCommand = downgradeCommand.downgradeCommand;
               c3 = 1;
@@ -233,7 +224,7 @@ function _handleDowngradeCommand() {
                 throw arg1;
               } else if (arg0 === 2) {
                 c4 = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else if (constants.EXECUTE === downgradeCommand) {
@@ -256,7 +247,7 @@ function _handleDowngradeCommand() {
               } else {
                 const _Error = Error;
                 const _HermesInternal = HermesInternal;
-                const error = new Error("Invalid downgrade state " + downgradeCommand);
+                error = new Error("Invalid downgrade state " + downgradeCommand);
                 throw error;
               }
             } else if (arg0 === 1) {
@@ -269,7 +260,7 @@ function _handleDowngradeCommand() {
               return obj;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           c4 = tmp;
@@ -280,7 +271,7 @@ function _handleDowngradeCommand() {
     iter.next();
     return iter;
   });
-  const _handleDowngradeCommand = tmp;
+  closure_35 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -299,11 +290,11 @@ function _executePendingDowngrade() {
       if (arg0 === 1) {
         throw arg1;
       } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
+        obj = { value: null, done: true };
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -321,15 +312,15 @@ function _executePendingDowngrade() {
             let lib = tmp4;
             let pendingDowngrade = tmp8;
             pendingDowngrade = undefined;
-            pendingDowngrade = outer1_11.getPendingDowngrade();
+            pendingDowngrade = closure_1_11.getPendingDowngrade();
             if (null != pendingDowngrade) {
-              let c3 = 2;
-              outer1_1(outer1_2[16]).dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: true });
-              const obj13 = outer1_1(outer1_2[16]);
+              c3 = 2;
+              closure_1_1(closure_1_2[16]).dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: true });
+              const obj13 = closure_1_1(closure_1_2[16]);
               c4 = 3;
               c5 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(outer1_2[17]).downgradeSubscription(pendingDowngrade);
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_0(closure_1_2[17]).downgradeSubscription(pendingDowngrade);
               return obj1;
             } else {
               c5 = 3;
@@ -339,9 +330,9 @@ function _executePendingDowngrade() {
           if (2 === tmp8) {
             c3 = 1;
             lib = dependencyMap;
-            let obj5 = pendingDowngrade(4054);
+            let obj5 = pendingDowngrade(4057);
             const result = obj5.captureBillingException(lib);
-            let obj6 = lib(4656);
+            let obj6 = lib(4662);
             const obj2 = { title: null, body: null };
             const intl = pendingDowngrade(1236).intl;
             obj2[0] = intl.string(pendingDowngrade(1236).t["U+H+kd"]);
@@ -416,7 +407,7 @@ function _executePendingDowngrade() {
       }
     }
   });
-  const _executePendingDowngrade = tmp;
+  closure_36 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -426,7 +417,7 @@ function _executePendingDowngrade() {
   return applyArgumentsResult;
 }
 function clearPendingDowngrade() {
-  importDefault(709).dispatch({ type: "GPLAY_UPDATE_PENDING_DOWNGRADE", pendingDowngrade: null });
+  dispatcherDefault.dispatch({ type: "GPLAY_UPDATE_PENDING_DOWNGRADE", pendingDowngrade: null });
 }
 function fetchAndAlertActiveSubscription() {
   const self = this;
@@ -448,11 +439,11 @@ function _fetchAndAlertActiveSubscription() {
       if (arg0 === 1) {
         throw arg1;
       } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
+        obj = { value: null, done: true };
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -467,10 +458,10 @@ function _fetchAndAlertActiveSubscription() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp5;
+            closure_1 = tmp5;
             let callback = tmp2;
             callback = undefined;
-            let obj1 = outer1_0(4466);
+            obj1 = closure_1_0(4470);
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };
@@ -490,16 +481,16 @@ function _fetchAndAlertActiveSubscription() {
           if (null == callback) {
             const _Error = Error;
             const intl = callback(1236).intl;
-            const error = new Error(intl.string(callback(1236).t.PjfUXe));
+            error = new Error(intl.string(callback(1236).t.PjfUXe));
             throw error;
           } else {
             callback2();
             callback3(() => {
-              let obj = tmp5(table[25]);
+              obj = tmp5(table[25]);
               obj = {
                 importer() {
-                  return outer1_0(outer1_2[28])(outer1_2[27], outer1_2.paths).then((arg0) => {
-                    let closure_0 = arg0.default;
+                  return closure_1_0(closure_1_2[28])(closure_1_2[27], closure_1_2.paths).then((arg0) => {
+                    closure_0 = arg0.default;
                     return () => { ... };
                   });
                 }
@@ -507,7 +498,7 @@ function _fetchAndAlertActiveSubscription() {
               obj.openLazy(obj);
             });
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp24) {
@@ -516,7 +507,7 @@ function _fetchAndAlertActiveSubscription() {
       }
     }
   });
-  const _fetchAndAlertActiveSubscription = tmp;
+  closure_39 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -538,10 +529,10 @@ function handleAppStateUpdated() {
 function _handleAppStateUpdated() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
       if (c6 === 2) {
         c6 = 3;
@@ -550,11 +541,11 @@ function _handleAppStateUpdated() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -569,8 +560,8 @@ function _handleAppStateUpdated() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_2 = tmp3;
-              let closure_1 = tmp5;
+              closure_2 = tmp3;
+              closure_1 = tmp5;
               let state;
               state = state.state;
               c5 = 1;
@@ -584,13 +575,13 @@ function _handleAppStateUpdated() {
                 throw arg1;
               } else if (arg0 === 2) {
                 c6 = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else if (ready.isReady()) {
                 if (authenticated.isAuthenticated()) {
                   if (state === constants.ACTIVE) {
-                    let c4 = 1;
+                    c4 = 1;
                     c5 = 3;
                     c6 = 1;
                     const obj2 = { value: null, done: false };
@@ -618,7 +609,7 @@ function _handleAppStateUpdated() {
             c6 = 3;
           }
         } catch (tmp22) {
-          let closure_3 = tmp22;
+          closure_3 = tmp22;
           if (tmp4 === c4) {
             c6 = tmp2;
             throw tmp22;
@@ -631,7 +622,7 @@ function _handleAppStateUpdated() {
     iter.next();
     return iter;
   });
-  const _handleAppStateUpdated = tmp;
+  closure_41 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -641,11 +632,12 @@ function _handleAppStateUpdated() {
   return applyArgumentsResult;
 }
 let closure_3 = ["succeededOnlyFields"];
+noopAll;
 ({ NativeEventEmitter, NativeModules } = get_ActivityIndicator);
-({ setPaymentSuccess: error, showOldPaymentFlowSuccess: metroImportAll } = usePremiumPlanPurchasedStore);
+({ setPaymentSuccess: error, showOldPaymentFlowSuccess: closure_8 } = usePremiumPlanPurchasedStore);
 ({ GPlayConnectionState: map1, GPlayDowngradeCommand: closure_14, GPlayPurchaseState: closure_15 } = GPlayConnectionState);
 ({ AnalyticEvents: closure_16, AppStates: closure_17, PaymentGateways: closure_18 } = ME);
-let closure_22 = new require("get ActivityIndicator")("GPlayManager.android");
+let closure_22 = new timestampDefault("GPlayManager.android");
 const BillingManager = NativeModules.BillingManager;
 const nativeEventEmitter = new NativeEventEmitter(BillingManager);
 let obj = {};
@@ -657,11 +649,11 @@ obj = {
   giftInfoOptionsCache: obj,
   initialize() {
     BillingManager.open();
-    let closure_26 = nativeEventEmitter.addListener("billing-manager-connection-state-updated", handleConnectionStateUpdated);
-    let closure_27 = nativeEventEmitter.addListener("billing-manager-purchase-state-updated", handlePurchaseStateUpdated);
-    let closure_28 = nativeEventEmitter.addListener("billing-manager-purchase-updated", handlePurchaseUpdated);
-    let closure_29 = nativeEventEmitter.addListener("billing-manager-downgrade-command", handleDowngradeCommand);
-    const subscription = importDefault(709).subscribe("APP_STATE_UPDATE", handleAppStateUpdated);
+    closure_26 = nativeEventEmitter.addListener("billing-manager-connection-state-updated", handleConnectionStateUpdated);
+    closure_27 = nativeEventEmitter.addListener("billing-manager-purchase-state-updated", handlePurchaseStateUpdated);
+    closure_28 = nativeEventEmitter.addListener("billing-manager-purchase-updated", handlePurchaseUpdated);
+    closure_29 = nativeEventEmitter.addListener("billing-manager-downgrade-command", handleDowngradeCommand);
+    const subscription = dispatcherDefault.subscribe("APP_STATE_UPDATE", handleAppStateUpdated);
   },
   terminate() {
     BillingManager.close();
@@ -677,10 +669,10 @@ obj = {
     if (c29 != null) {
       c29.remove();
     }
-    importDefault(709).unsubscribe("APP_STATE_UPDATE", handleAppStateUpdated);
+    dispatcherDefault.unsubscribe("APP_STATE_UPDATE", handleAppStateUpdated);
   }
 };
-const tmp7 = new require("get ActivityIndicator")("GPlayManager.android");
-let result = require("noop").fileFinishedImporting("modules/gplay/native/GPlayManager.android.tsx");
+const tmp7 = new timestampDefault("GPlayManager.android");
+let result = require("set").fileFinishedImporting("modules/gplay/native/GPlayManager.android.tsx");
 
 export default obj;

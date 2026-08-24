@@ -1,57 +1,62 @@
-// Module ID: 14873
-// Function ID: 14874
+// Module ID: 14937
+// Function ID: 14938
 // Name: UserSettingsDebugLogsFiltersActionSheet
-// Dependencies: [19, 21, 7175, 6949, 1236, 6286, 6291, 8101, 8100, 1297, 4342, 2]
+// Dependencies: [19, 21, 7213, 6987, 1236, 6317, 6322, 8140, 8139, 1297, 4346, 2]
 // Exports: openUserSettingsDebugLogsFiltersActionSheet
 
-// Module 14873 (UserSettingsDebugLogsFiltersActionSheet)
-import "noop";
-import jsxProd from "jsxProd";
+// Module 14937 (UserSettingsDebugLogsFiltersActionSheet)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import TableRowInner from "TableRowInner" /* 6322 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
+import ActionSheet from "ActionSheet" /* 7213 */;
+import TableRadioRow from "TableRadioRow" /* 8139 */;
+import context from "context" /* 8140 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 function UserSettingsDebugLogsFiltersActionSheet(arg0) {
-  let onRefresh;
-  let onSortOrderChanged;
-  let sortOrder;
   ({ sortOrder, onSortOrderChanged, onRefresh } = arg0);
   let obj = { header: null, children: null };
   obj = { title: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["+B9e11"]);
-  obj[0] = callback(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["+B9e11"]);
+  obj[0] = callback(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, obj);
   obj = { hasIcons: false, children: null };
-  const obj1 = { label: null, onPress: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj1[0] = intl2.string(require(1236) /* getSystemLocale */.t.wzzjk9);
+  obj1 = { label: null, onPress: null };
+  const intl2 = getSystemLocale.intl;
+  obj1[0] = intl2.string(getSystemLocale.t.wzzjk9);
   obj1[1] = onRefresh;
-  obj[1] = callback(require(6291) /* TableRowInner */.TableRow, obj1);
-  const items = [callback(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj), , ];
+  obj[1] = callback(TableRowInner.TableRow, obj1);
+  const items = [callback(TableRowGroupTitle.TableRowGroup, obj), , ];
   const obj2 = { title: null, defaultValue: null, onChange: null, hasIcons: false, children: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.gePre2);
+  const intl3 = getSystemLocale.intl;
+  obj2[0] = intl3.string(getSystemLocale.t.gePre2);
   obj2[1] = sortOrder;
   obj2[2] = onSortOrderChanged;
   const obj3 = { label: null, value: "newest" };
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj3[0] = intl4.string(require(1236) /* getSystemLocale */.t.eoXe0r);
-  const items1 = [callback(require(8100) /* TableRadioRow */.TableRadioRow, obj3), ];
+  const intl4 = getSystemLocale.intl;
+  obj3[0] = intl4.string(getSystemLocale.t.eoXe0r);
+  const items1 = [callback(TableRadioRow.TableRadioRow, obj3), ];
   const obj4 = { label: null, value: "oldest" };
-  const intl5 = require(1236) /* getSystemLocale */.intl;
-  obj4[0] = intl5.string(require(1236) /* getSystemLocale */.t.mmeWUF);
-  items1[1] = callback(require(8100) /* TableRadioRow */.TableRadioRow, obj4);
+  const intl5 = getSystemLocale.intl;
+  obj4[0] = intl5.string(getSystemLocale.t.mmeWUF);
+  items1[1] = callback(TableRadioRow.TableRadioRow, obj4);
   obj2[4] = items1;
-  items[1] = callback2(require(8101) /* context */.TableRadioGroup, obj2);
-  items[2] = callback(require(1297) /* Button */.Spacer, { size: 0 });
+  items[1] = callback2(context.TableRadioGroup, obj2);
+  items[2] = callback(Button.Spacer, { size: 0 });
   obj[1] = items;
-  return callback2(require(7175) /* ActionSheet */.ActionSheet, obj);
+  return callback2(ActionSheet.ActionSheet, obj);
 }
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-const result = require("ActionSheet").fileFinishedImporting("modules/user_settings/dev_tools/native/UserSettingsDebugLogsActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/dev_tools/native/UserSettingsDebugLogsActionSheet.tsx");
 
 export const openUserSettingsDebugLogsFiltersActionSheet = function openUserSettingsDebugLogsFiltersActionSheet(arg0) {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { default: UserSettingsDebugLogsFiltersActionSheet };
   obj.openLazy(Promise.resolve(obj), "UserSettingsDebugLogsFiltersActionSheet", arg0);
 };

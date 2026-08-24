@@ -1,14 +1,16 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9594
+// Function ID: 9595
 // Name: isApplicationAgeRestricted
-// Dependencies: [4478, 9558, 4786, 2]
+// Dependencies: [4482, 9595, 4791, 2]
 // Exports: default
 
-// Module 9557 (isApplicationAgeRestricted)
-import addApplication from "addApplication";
+// Module 9594 (isApplicationAgeRestricted)
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 4791 */;
+import getUnitIdDefault from "getUnitId" /* 9595 */;
+import closure_3 from "addApplication" /* 4482 */;
 
-const require = arg1;
-const result = require("isAgeRestrictedContentClassification").fileFinishedImporting("modules/applications/utils/isApplicationAgeRestricted.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/applications/utils/isApplicationAgeRestricted.tsx");
 
 export default function isApplicationAgeRestricted(arg0) {
   if (obj.getConfig({ location: "isApplicationAgeRestricted" }).enabled) {
@@ -17,9 +19,9 @@ export default function isApplicationAgeRestricted(arg0) {
     if (application != null) {
       prop = application.contentClassification;
     }
-    return require(4786) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(prop);
+    return isAgeRestrictedContentClassification.isAgeRestrictedContentClassification(prop);
   } else {
     return false;
   }
-  obj = importDefault(9558);
+  obj = getUnitIdDefault;
 };

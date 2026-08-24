@@ -1,37 +1,42 @@
-// Module ID: 14701
-// Function ID: 14702
+// Module ID: 14769
+// Function ID: 14770
 // Name: dismissiblePremiumNewBadgeRouteProps
-// Dependencies: [676, 14702, 1377, 10669, 1236, 3403, 14704, 14023, 14706, 2]
+// Dependencies: [676, 14770, 1377, 10708, 1236, 3406, 14772, 14091, 14774, 2]
 
-// Module 14701 (dismissiblePremiumNewBadgeRouteProps)
-import createDismissiblePremiumNewBadgeRouteProps from "createDismissiblePremiumNewBadgeRouteProps";
-import createToggle from "createToggle";
+// Module 14769 (dismissiblePremiumNewBadgeRouteProps)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import DismissibleContent from "DismissibleContent" /* 1377 */;
+import messagesProxyDefault from "messagesProxy" /* 3406 */;
+import apexExperiment from "apexExperiment" /* 14091 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 14772 */;
+import createDismissiblePremiumNewBadgeRouteProps from "createDismissiblePremiumNewBadgeRouteProps" /* 14770 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let usePreNavigationAction;
-let useTrailing;
-const dismissiblePremiumNewBadgeRouteProps = createDismissiblePremiumNewBadgeRouteProps.createDismissiblePremiumNewBadgeRouteProps(require("DismissibleContent").DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE);
+const dismissiblePremiumNewBadgeRouteProps = createDismissiblePremiumNewBadgeRouteProps.createDismissiblePremiumNewBadgeRouteProps(DismissibleContent.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE);
 ({ useTrailing, usePreNavigationAction } = dismissiblePremiumNewBadgeRouteProps);
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(3403)["pT+BVM"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault["pT+BVM"]);
   },
   parent: null,
-  IconComponent: require("ChatDotsIcon").ChatDotsIcon,
+  IconComponent: ChatDotsIcon.ChatDotsIcon,
   useTrailing,
   usePreNavigationAction,
   usePredicate() {
-    return "settings" === require(14023) /* apexExperiment */.useCustomTypingIndicatorConfig("TypingIndicatorSetting").entryPoint;
+    return "settings" === apexExperiment.useCustomTypingIndicatorConfig("TypingIndicatorSetting").entryPoint;
   },
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.TYPING_INDICATOR,
+  route: ME.UserSettingsSections.TYPING_INDICATOR,
   getComponent() {
-    return require(14706) /* CustomTypingIndicatorEditScreen */.default;
+    return require(14774) /* CustomTypingIndicatorEditScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("DismissibleContent").fileFinishedImporting("modules/user_settings/defs/native/TypingIndicatorSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/TypingIndicatorSetting.tsx");
 
 export default route;

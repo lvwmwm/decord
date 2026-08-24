@@ -1,25 +1,29 @@
-// Module ID: 9964
-// Function ID: 9965
+// Module ID: 10003
+// Function ID: 10004
 // Name: InstantInviteDetails
-// Dependencies: [19, 17, 1395, 4030, 1922, 21, 4661, 712, 6832, 6876, 4733, 4734, 4984, 4338, 1236, 9946, 2]
+// Dependencies: [19, 17, 1395, 4033, 1922, 21, 4668, 712, 6870, 6914, 4738, 4739, 4989, 4342, 1236, 9985, 2]
 // Exports: default
 
-// Module 9964 (InstantInviteDetails)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { createChannelRecordFromInvite as closure_5 } from "createChannelRecord";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10003 (InstantInviteDetails)
+import ThemesDefault from "Themes" /* 712 */;
+import Stack from "Stack" /* 4738 */;
+import Text from "Text" /* 4739 */;
+import computeChannelName from "computeChannelName" /* 4989 */;
+import getChannelIcon from "getChannelIcon" /* 6870 */;
+import componentDidMountDefault from "componentDidMount" /* 9985 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { createChannelRecordFromInvite as closure_5 } from "createChannelRecord" /* 1395 */;
+import closure_6 from "markAllUserIdListsStale" /* 4033 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 class InstantInviteDetails {
   constructor(arg0) {
     ({ channel, expiresAt } = global);
-    tmp = jsxs();
+    tmp = closure_10();
     tmp2 = closure_0;
     tmp3 = closure_2;
     obj = require("getChannelIcon");
@@ -34,7 +38,7 @@ class InstantInviteDetails {
     items[0] = jsx(TextIcon, { color: "icon-subtle", size: "xs" });
     obj1 = { variant: "text-md/semibold", color: "text-subtle", style: tmp.channel, lineClamp: 1, children: null };
     tmp2Result = require("computeChannelName");
-    obj1[4] = tmp2Result.computeChannelName(channel, View, View, false);
+    obj1[4] = tmp2Result.computeChannelName(channel, closure_7, closure_6, false);
     items[1] = jsx(require("Text").Text, obj1);
     obj[2] = items;
     items1 = [, ];
@@ -60,25 +64,25 @@ class InstantInviteDetails {
     return tmp4(require("Stack").Stack, { children: items1 });
   }
 }
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { flex: { flex: 1 }, channel: { flex: 0 }, time: null };
-createCacheKey = { color: require("Themes").colors.TEXT_FEEDBACK_POSITIVE };
+createCacheKey = { color: ThemesDefault.colors.TEXT_FEEDBACK_POSITIVE };
 createCacheKey[2] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createChannelRecord").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteCode.tsx");
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteCode.tsx");
 
 export default function InstantInviteCode(invite) {
   invite = invite.invite;
   const items = [invite.channel];
-  let obj = { style: createCacheKey().flex, children: null };
-  const memo = React.useMemo(() => outer1_5(invite.channel), items);
+  let obj = { style: callback3().flex, children: null };
+  const memo = React.useMemo(() => closure_1_5(invite.channel), items);
   obj = { children: null };
   obj = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
-  const items1 = [callback(invite(4734).Text, obj), ];
-  const tmp = createCacheKey();
+  const items1 = [callback(invite(4739).Text, obj), ];
+  const tmp = callback3();
   items1[1] = callback(InstantInviteDetails, { channel: memo, expiresAt: invite.getExpiresAt() });
   obj[0] = items1;
-  obj[1] = callback2(invite(4733).Stack, obj);
+  obj[1] = callback2(invite(4738).Stack, obj);
   return callback(View, obj);
 };
 export { InstantInviteDetails };

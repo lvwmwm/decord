@@ -1,12 +1,14 @@
-// Module ID: 4993
-// Function ID: 4994
+// Module ID: 4998
+// Function ID: 4999
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 4993 (initialize)
-import { PersistedStore } from "initialize";
+// Module 4998 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0 = null;
+const PersistedStore = initializeDefault.PersistedStore;
 class FamilyCenterPendingConnectionStore extends PersistedStore {
 }
 const prototype = FamilyCenterPendingConnectionStore.prototype;
@@ -15,7 +17,7 @@ prototype["initialize"] = function initialize(arg0) {
   if (arg0 == null) {
     tmp = null;
   }
-  let c0 = tmp;
+  c0 = tmp;
 };
 prototype["getState"] = function getState() {
   return c0;
@@ -25,15 +27,15 @@ prototype["getPendingConnection"] = function getPendingConnection() {
 };
 FamilyCenterPendingConnectionStore.displayName = "FamilyCenterPendingConnectionStore";
 FamilyCenterPendingConnectionStore.persistKey = "FamilyCenterPendingConnectionStore";
-const familyCenterPendingConnectionStore = new FamilyCenterPendingConnectionStore(require("dispatcher"), {
+const familyCenterPendingConnectionStore = new FamilyCenterPendingConnectionStore(dispatcherDefault, {
   FAMILY_CENTER_PENDING_CONNECTION_SET: function handleSet(teenId) {
-    let closure_0 = { teenId: teenId.teenId, linkCode: teenId.linkCode };
+    closure_0 = { teenId: teenId.teenId, linkCode: teenId.linkCode };
   },
   FAMILY_CENTER_PENDING_CONNECTION_CLEAR: function handleClear() {
-    let c0 = null;
+    c0 = null;
   },
   LOGOUT: function handleLogout() {
-    let c0 = null;
+    c0 = null;
   }
 });
 const result = require("set").fileFinishedImporting("modules/parent_tools/FamilyCenterPendingConnectionStore.tsx");

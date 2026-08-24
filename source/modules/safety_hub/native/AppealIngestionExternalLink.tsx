@@ -1,35 +1,37 @@
-// Module ID: 11086
-// Function ID: 11087
+// Module ID: 11125
+// Function ID: 11126
 // Name: AppealIngestionExternalLink
-// Dependencies: [19, 17, 21, 4661, 712, 5433, 4090, 4734, 1297, 8147, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 5438, 4093, 4739, 1297, 8186, 2]
 // Exports: default
 
-// Module 11086 (AppealIngestionExternalLink)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11125 (AppealIngestionExternalLink)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import registerAsset from "registerAsset" /* 8186 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { childButton: null, childContainer: null, childButtonText: null, chevron: null };
-createCacheKey = { marginBottom: 8, borderRadius: require("Themes").radii.xs };
+createCacheKey = { marginBottom: 8, borderRadius: ThemesDefault.radii.xs };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: require("Themes").radii.xs };
+createCacheKey[1] = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: ThemesDefault.radii.xs };
 createCacheKey[2] = { flex: 1, lineHeight: 20 };
-let obj1 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: require("Themes").radii.xs };
-createCacheKey[3] = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj2 = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/native/AppealIngestionExternalLink.tsx");
+const obj1 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: ThemesDefault.radii.xs };
+createCacheKey[3] = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const obj2 = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+const result = require("set").fileFinishedImporting("modules/safety_hub/native/AppealIngestionExternalLink.tsx");
 
 export default function AppealIngestionExternalLink(children) {
-  let importDefault;
-  let require;
   ({ url: require, onPress: importDefault } = children);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = {
     style: tmp.childButton,
     accessibilityRole: "button",
@@ -37,18 +39,14 @@ export default function AppealIngestionExternalLink(children) {
       if (closure_1 != null) {
         tmp();
       }
-      outer1_1(outer1_2[6]).openURL(closure_0);
+      closure_1_1(closure_1_2[6]).openURL(closure_0);
     },
     children: null
   };
   obj = { style: tmp.childContainer, children: null };
   obj = { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: children.text };
-  const items = [callback(require(4734) /* Text */.Text, obj), ];
-  const obj1 = { source: null, color: null };
-  obj1[0] = require(8147) /* registerAsset */;
-  obj1[1] = tmp.chevron.color;
-  items[1] = callback(require(1297) /* Button */.Icon, obj1);
+  const items = [callback(Text.Text, obj), callback(Button.Icon, { source: registerAsset, color: tmp.chevron.color })];
   obj[1] = items;
   obj[3] = callback2(View, obj);
-  return callback(require(5433) /* PressableBase */.PressableHighlight, obj);
+  return callback(PressableBase.PressableHighlight, obj);
 };

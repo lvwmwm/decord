@@ -4,13 +4,16 @@
 // Exports: default
 
 // Module 339
-import "noop";
-import { jsx } from "jsxProd";
+import noopAll from "noop" /* 19 */;
+import get_hairlineWidthDefault from "get hairlineWidth" /* 254 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 340 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-require("get hairlineWidth").create({ container: { position: "absolute" }, safeAreaView: { flex: 1 } });
+noopAll;
+get_hairlineWidthDefault.create({ container: { position: "absolute" }, safeAreaView: { flex: 1 } });
 
 export default function _default(arg0) {
-  const width = importDefault(340)().width;
+  const width = useWindowDimensionsDefault().width;
   console.warn("<InputAccessoryView> is only supported on iOS.");
   return null;
 };

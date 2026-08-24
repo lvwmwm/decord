@@ -1,12 +1,15 @@
-// Module ID: 11172
-// Function ID: 11173
+// Module ID: 11224
+// Function ID: 11225
 // Name: createCloudUploader
-// Dependencies: [7583, 2]
+// Dependencies: [7621, 2]
 // Exports: createCloudUploader
 
-// Module 11172 (createCloudUploader)
-const result = require("set").fileFinishedImporting("lib/uploader/createCloudUploader.native.tsx");
+// Module 11224 (createCloudUploader)
+import set from "set" /* 2 */;
+import nativeEventEmitterDefault from "nativeEventEmitter" /* 7621 */;
+
+const result = set.fileFinishedImporting("lib/uploader/createCloudUploader.native.tsx");
 
 export const createCloudUploader = function createCloudUploader() {
-  return new importDefault(7583)();
+  return new nativeEventEmitterDefault();
 };

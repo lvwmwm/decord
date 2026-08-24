@@ -5,8 +5,10 @@
 // Exports: instrumentAsyncIterableStream, instrumentMessageStream
 
 // Module 972 (AsyncFromSyncIterator)
-import _awaitAsyncGenerator from "_awaitAsyncGenerator";
-import AsyncGenerator from "AsyncGenerator";
+import getSpanStatusFromHttpCode from "getSpanStatusFromHttpCode" /* 840 */;
+import captureCheckIn from "captureCheckIn" /* 869 */;
+import closure_2 from "_awaitAsyncGenerator" /* 966 */;
+import closure_3 from "AsyncGenerator" /* 968 */;
 
 function AsyncFromSyncIterator(arg0) {
   class AsyncFromSyncIterator {
@@ -101,8 +103,8 @@ function processEvent(type, finishReasons, arg2, setStatus) {
       }
       if (flag) {
         let obj = { code: null, message: null };
-        obj[0] = require(840) /* getSpanStatusFromHttpCode */.SPAN_STATUS_ERROR;
-        const error = type.error;
+        obj[0] = getSpanStatusFromHttpCode.SPAN_STATUS_ERROR;
+        error = type.error;
         let str2;
         if (error != null) {
           str2 = error.type;
@@ -114,10 +116,10 @@ function processEvent(type, finishReasons, arg2, setStatus) {
         setStatus.setStatus(obj);
         obj = { mechanism: null };
         obj[0] = { handled: false, type: "auto.ai.anthropic.anthropic_error" };
-        require(869) /* captureCheckIn */.captureException(type.error, obj);
+        captureCheckIn.captureException(type.error, obj);
         flag = true;
         const tmp2 = require;
-        const tmp2Result = require(869) /* captureCheckIn */;
+        const tmp2Result = captureCheckIn;
       }
       if (!flag) {
         let tmp7 = "message_delta" === type.type && type.usage;
@@ -190,7 +192,6 @@ function processEvent(type, finishReasons, arg2, setStatus) {
           }
         }
         (function handleContentBlockStop(type, finishReasons) {
-          let name;
           if ("content_block_stop" === type.type) {
             if (typeof tmp3.index === "number") {
               let activeToolBlocks = finishReasons;
@@ -230,13 +231,13 @@ function processEvent(type, finishReasons, arg2, setStatus) {
 }
 function _instrumentAsyncIterableStream() {
   const self = this;
-  const tmp = AsyncGenerator((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c11 = 0;
-    let c12 = 0;
-    let c9 = 0;
+  const tmp = callback((arg0, arg1, arg2) => {
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c11 = 0;
+    c12 = 0;
+    c9 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c12 === 2) {
         c12 = 3;
@@ -255,7 +256,7 @@ function _instrumentAsyncIterableStream() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -264,7 +265,7 @@ function _instrumentAsyncIterableStream() {
               throw arg1;
             } else if (arg0 !== 2) {
               while (true) {
-                let c9 = 1;
+                c9 = 1;
                 let tmp79 = closure_8;
                 let tmp80 = closure_5;
                 if (closure_5) {
@@ -290,7 +291,7 @@ function _instrumentAsyncIterableStream() {
                     let tmp91 = closure_8;
                     let tmp92 = closure_7;
                     let tmp93 = store;
-                    let obj1 = {};
+                    obj1 = {};
                     let tmp94 = store;
                     let tmp95 = dependencyMap;
                     let tmp96 = closure_2;
@@ -369,7 +370,7 @@ function _instrumentAsyncIterableStream() {
                   throwTypeErrorResult = store.end();
                   let num3 = 3;
                   c12 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
             } else {
@@ -429,14 +430,14 @@ function _instrumentAsyncIterableStream() {
               }
             }
           } catch (throwTypeErrorResult) {
-            let closure_10 = throwTypeErrorResult;
+            closure_10 = throwTypeErrorResult;
             throwTypeErrorResult = c9;
             if (tmp4 === c9) {
               throwTypeErrorResult = tmp3;
               c12 = tmp3;
               throw throwTypeErrorResult;
             } else if (tmp2 === throwTypeErrorResult) {
-              let c11 = tmp2;
+              c11 = tmp2;
             } else if (throwTypeErrorResult === throwTypeErrorResult) {
               c11 = throwTypeErrorResult;
             } else if (tmp3 === throwTypeErrorResult) {
@@ -457,7 +458,7 @@ function _instrumentAsyncIterableStream() {
       }
     })();
   });
-  const _instrumentAsyncIterableStream = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -479,16 +480,16 @@ export const instrumentAsyncIterableStream = function instrumentAsyncIterableStr
   return applyArgumentsResult;
 };
 export const instrumentMessageStream = function instrumentMessageStream(applyResult, arg1, flag) {
-  let closure_0 = arg1;
-  let closure_1 = flag;
-  let obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "View", cacheCreationInputTokens: "toCharArray$esjava$1", cacheReadInputTokens: "Path", toolCalls: -36144369334270020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, activeToolBlocks: "<string:822214657>" };
+  closure_0 = arg1;
+  closure_1 = flag;
+  let obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "x", cacheCreationInputTokens: "ddd", cacheReadInputTokens: "now", toolCalls: 1996232851, activeToolBlocks: -1002372288 };
   obj[8] = [];
   obj[9] = {};
   applyResult.on("streamEvent", (arg0) => {
-    outer1_5(arg0, obj, closure_1, closure_0);
+    closure_1_5(arg0, obj, closure_1, closure_0);
   });
   applyResult.on("message", () => {
-    let obj = lib;
+    obj = lib;
     let tmp2 = dependencyMap;
     if (lib.isRecording()) {
       if (tmp.responseId) {
@@ -503,7 +504,7 @@ export const instrumentMessageStream = function instrumentMessageStream(applyRes
       }
       let obj3 = lib(960);
       const result = obj3.setTokenUsageAttributes(obj, tmp.promptTokens, tmp.completionTokens, tmp.cacheCreationInputTokens, tmp.cacheReadInputTokens);
-      const obj1 = {};
+      obj1 = {};
       obj1[lib(958).GEN_AI_RESPONSE_STREAMING_ATTRIBUTE] = true;
       obj.setAttributes(obj1);
       if (tmp.finishReasons.length > 0) {
@@ -535,7 +536,7 @@ export const instrumentMessageStream = function instrumentMessageStream(applyRes
     }
   });
   applyResult.on("error", (arg0) => {
-    let obj = lib(869);
+    obj = lib(869);
     obj.captureException(arg0, { mechanism: { handled: false, type: "auto.ai.anthropic.stream_error" } });
     if (lib.isRecording()) {
       obj = { code: null, message: "stream_error" };

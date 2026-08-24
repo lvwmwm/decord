@@ -1,10 +1,12 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16380
+// Function ID: 16381
 // Name: sortSoundsOldestToNewestCreationDate
 // Dependencies: [11, 2]
 // Exports: useSoundOrganizer
 
-// Module 16286 (sortSoundsOldestToNewestCreationDate)
+// Module 16380 (sortSoundsOldestToNewestCreationDate)
+import set from "set" /* 2 */;
+
 function sortSoundsOldestToNewestCreationDate(value2) {
   let flag = arg1;
   if (arg1 === undefined) {
@@ -34,7 +36,7 @@ function sortSoundsOldestToNewestCreationDate(value2) {
   }
   return sorted1;
 }
-const result = require("set").fileFinishedImporting("modules/soundboard/useSoundOrganizer.tsx");
+const result = set.fileFinishedImporting("modules/soundboard/useSoundOrganizer.tsx");
 
 export { sortSoundsOldestToNewestCreationDate };
 export function useSoundOrganizer() {

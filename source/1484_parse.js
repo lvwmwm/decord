@@ -4,8 +4,8 @@
 // Dependencies: [1485, 1486]
 
 // Module 1484 (parse)
-import module_1485 from "module_1485";
-import str2 from "str2";
+import module_1485 from "module_1485" /* 1485 */;
+import str2 from "str2" /* 1486 */;
 
 
 export const parse = module_1485;

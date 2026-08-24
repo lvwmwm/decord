@@ -5,13 +5,14 @@
 // Exports: base64ToUint8Array, feedbackAlertDialog, isModalSupported, isNativeDriverSupportedForColorAnimations, isValidEmail
 
 // Module 1196 (isModalSupported)
-import { Alert } from "get ActivityIndicator";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import TurboModuleRegistry from "TurboModuleRegistry" /* 997 */;
+import isHermesEnabled from "isHermesEnabled" /* 1002 */;
 
+const Alert = get_ActivityIndicator.Alert;
 
 export const isModalSupported = function isModalSupported() {
-  let major;
-  let minor;
-  const ReactNativeVersion = require(997) /* TurboModuleRegistry */.ReactNativeLibraries.ReactNativeVersion;
+  const ReactNativeVersion = TurboModuleRegistry.ReactNativeLibraries.ReactNativeVersion;
   let version;
   if (null !== ReactNativeVersion) {
     if (undefined !== ReactNativeVersion) {
@@ -22,7 +23,7 @@ export const isModalSupported = function isModalSupported() {
     version = {};
   }
   ({ minor, major } = version);
-  let isFabricEnabledResult = require(1002) /* isHermesEnabled */.isFabricEnabled();
+  let isFabricEnabledResult = isHermesEnabled.isFabricEnabled();
   if (isFabricEnabledResult) {
     isFabricEnabledResult = 0 === major;
   }
@@ -35,9 +36,7 @@ export const isModalSupported = function isModalSupported() {
   return !isFabricEnabledResult;
 };
 export const isNativeDriverSupportedForColorAnimations = function isNativeDriverSupportedForColorAnimations() {
-  let major;
-  let minor;
-  const ReactNativeVersion = require(997) /* TurboModuleRegistry */.ReactNativeLibraries.ReactNativeVersion;
+  const ReactNativeVersion = TurboModuleRegistry.ReactNativeLibraries.ReactNativeVersion;
   let version;
   if (null !== ReactNativeVersion) {
     if (undefined !== ReactNativeVersion) {
@@ -75,9 +74,9 @@ export const base64ToUint8Array = (closure_0) => {
       const uint8Array = new Uint8Array(items.map((str) => str.charCodeAt(0)));
       return uint8Array;
     }
-    obj = require(1002) /* isHermesEnabled */;
+    obj = isHermesEnabled;
   }
-  const error = new Error("atob is not available in this environment.");
+  error = new Error("atob is not available in this environment.");
   throw error;
 };
 export const feedbackAlertDialog = (Alert) => {

@@ -1,31 +1,28 @@
-// Module ID: 8408
-// Function ID: 8409
+// Module ID: 8447
+// Function ID: 8448
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 4661, 8395, 4734, 12, 8029, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 8434, 4739, 12, 8068, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 8408 (EditCollectiblesPickerList)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8447 (EditCollectiblesPickerList)
+import Text from "Text" /* 4739 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 ({ ActivityIndicator: c4, View: c5 } = get_ActivityIndicator);
 let obj = { list: { flex: 1, marginTop: 12 }, listContent: { paddingBottom: 88 }, loadingContainer: { paddingVertical: 80, alignItems: "center" }, header: null };
 obj = { paddingHorizontal: require("useCollectibleListLayout").GUTTER_SIZE, paddingTop: 10, paddingBottom: 5 };
 obj[3] = obj;
 let closure_7 = createCacheKey.createStyles(obj);
-let closure_8 = importAllResult.memo((children) => <closure_5 style={callback().header}>{jsx(require(4734) /* Text */.Heading, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: arg0.header })}</closure_5>);
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/EditCollectiblesPickerList.tsx");
+let closure_8 = importAllResult.memo((children) => <closure_5 style={callback().header}>{jsx(Text.Heading, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: arg0.header })}</closure_5>);
+const result = require("set").fileFinishedImporting("modules/collectibles/native/EditCollectiblesPickerList.tsx");
 
 export const EditCollectiblesPickerList = function EditCollectiblesPickerList(sections) {
-  let c4;
-  let tmp3;
   sections = sections.sections;
   const selectedSkuId = sections.selectedSkuId;
   const renderRow = sections.renderRow;
@@ -55,11 +52,11 @@ export const EditCollectiblesPickerList = function EditCollectiblesPickerList(se
       return items;
     } else {
       let item = items.forEach((header) => {
-        const items = header;
+        items = header;
         items.push({ type: "header", key: "header-" + header.section, header: header.header });
         const obj = { type: "header", key: "header-" + header.section, header: header.header };
-        const obj2 = items(outer1_1[7]);
-        const item = items(outer1_1[7]).chunk(header.items, items(outer1_1[5]).ROW_SIZE).forEach((items) => {
+        const obj2 = items(closure_1_1[7]);
+        const item = items(closure_1_1[7]).chunk(header.items, items(closure_1_1[5]).ROW_SIZE).forEach((items) => {
           header.push({ type: "row", key: "row-" + header.section + "-" + arg1, items });
         });
       });
@@ -71,7 +68,7 @@ export const EditCollectiblesPickerList = function EditCollectiblesPickerList(se
     if ("header" === item.type) {
       let obj = { header: null };
       obj[0] = item.header;
-      let tmp4 = outer1_6(outer1_8, obj);
+      let tmp4 = closure_1_6(closure_1_8, obj);
     } else {
       obj = { items: null, size: null, selectedSkuId: null };
       obj[0] = item.items;

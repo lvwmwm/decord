@@ -4,7 +4,9 @@
 // Dependencies: [848]
 
 // Module 855 (hasSpansEnabled)
-const require = arg1;
+import getClient from "getClient" /* 848 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.hasSpansEnabled = function hasSpansEnabled(options) {
@@ -15,13 +17,13 @@ arg5.hasSpansEnabled = function hasSpansEnabled(options) {
   }
   let tmp = options;
   if (!options) {
-    const client = require(848) /* getClient */.getClient();
+    const client = getClient.getClient();
     options = undefined;
     if (client != null) {
       options = client.getOptions();
     }
     tmp = options;
-    const obj = require(848) /* getClient */;
+    const obj = getClient;
   }
   let tmp6 = !tmp;
   if (tmp) {

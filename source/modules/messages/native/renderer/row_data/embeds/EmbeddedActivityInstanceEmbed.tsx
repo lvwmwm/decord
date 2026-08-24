@@ -1,26 +1,22 @@
-// Module ID: 12776
-// Function ID: 12777
+// Module ID: 12831
+// Function ID: 12832
 // Name: createActivityInstanceEmbed
-// Dependencies: [1390, 4478, 1218, 1391, 4559, 1922, 10510, 11127, 1236, 11128, 12767, 12777, 11129, 11131, 7140, 11310, 2]
+// Dependencies: [1390, 4482, 1218, 1391, 4564, 1922, 10549, 11166, 1236, 11167, 12822, 12832, 11168, 11170, 7178, 11361, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 12776 (createActivityInstanceEmbed)
-import participantFromServer from "participantFromServer";
-import addApplication from "addApplication";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import sortActivity from "sortActivity";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { CodedLinkExtendedType } from "CodedLinkExtendedType";
+// Module 12831 (createActivityInstanceEmbed)
+import closure_2 from "participantFromServer" /* 1390 */;
+import closure_3 from "addApplication" /* 4482 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "sortActivity" /* 4564 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { CodedLinkExtendedType } from "CodedLinkExtendedType" /* 10549 */;
 
 const require = arg1;
-const result = require("fetchFingerprint").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/EmbeddedActivityInstanceEmbed.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/EmbeddedActivityInstanceEmbed.tsx");
 
 export const createActivityInstanceEmbed = function createActivityInstanceEmbed(message) {
-  let activityInstance;
-  let application;
-  let canLaunchInChannel;
-  let instanceId;
   ({ application, activityInstance } = message);
   channel = channel.getChannel(message.channel_id);
   if (null != application) {
@@ -35,9 +31,9 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
         if (currentUser != null) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        let obj1 = id(11127);
+        obj1 = id(11166);
         const contentClassificationVisibility = obj1.getContentClassificationVisibility(application.content_classification, channel, nsfwAllowed);
-        if (id(11127).ContentClassificationVisibility.DISPLAY === contentClassificationVisibility) {
+        if (id(11166).ContentClassificationVisibility.DISPLAY === contentClassificationVisibility) {
           id = application;
           const channel_id = message.channel_id;
           let str = channel_id;
@@ -51,7 +47,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
           embeddedActivitiesForChannelIncludingHidden = embeddedActivitiesForChannelIncludingHidden.getEmbeddedActivitiesForChannelIncludingHidden(str);
           const found = embeddedActivitiesForChannelIncludingHidden.find((applicationId) => applicationId.applicationId === id.id);
           const currentEmbeddedActivity = obj4.getCurrentEmbeddedActivity();
-          let tmp5Result = tmp5(12767);
+          let tmp5Result = tmp5(12822);
           let obj = { activity: null, applicationId: null, guildId: null, channelId: null };
           obj[0] = found;
           obj[1] = application.id;
@@ -74,7 +70,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
             }
             stringResult = details;
           }
-          tmp5Result = tmp5(12777);
+          tmp5Result = tmp5(12832);
           obj = { embeddedActivity: null, currentEmbeddedActivity: null, channel: null };
           obj[0] = found;
           obj[1] = currentEmbeddedActivity;
@@ -103,13 +99,13 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
             }
             combined = null;
           }
-          const playInContext = tmp5(11129).getPlayInContext(application.id, channel_id);
+          const playInContext = tmp5(11168).getPlayInContext(application.id, channel_id);
           let isCurrentlyInInstance = playInContext.isCurrentlyInInstance;
           let appIconSrc = null;
           ({ instanceId, canLaunchInChannel } = playInContext);
           if (null != application.icon) {
-            appIconSrc = tmp5(11131).getAppIconSrc(application.id, application.icon, application.bot);
-            const tmp5Result2 = tmp5(11131);
+            appIconSrc = tmp5(11170).getAppIconSrc(application.id, application.icon, application.bot);
+            const tmp5Result2 = tmp5(11170);
           }
           if (null == instanceId) {
             const intl8 = tmp5(1236).intl;
@@ -130,11 +126,11 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
             tmp24 = false === obj13.isFetchingApplication(application.id);
           }
           if (tmp24) {
-            application = tmp5(7140).fetchApplication(application.id);
-            const tmp5Result3 = tmp5(7140);
+            application = tmp5(7178).fetchApplication(application.id);
+            const tmp5Result3 = tmp5(7178);
           }
           const obj2 = { displayType: null, appId: null, messageId: null, title: null, header: null, info: null, tagline: null, staticBannerSrc: null, iconSrc: null, embedUrl: null, bannerRatio: "bot", actions: null, extendedType: null, gradientColors: null, backgroundColor: 0, borderColor: 0, headerColor: 0, headerText: null, type: null };
-          obj2[0] = tmp5(11128).AppMessageEmbedDisplayType.DISPLAY;
+          obj2[0] = tmp5(11167).AppMessageEmbedDisplayType.DISPLAY;
           obj2[1] = application.id;
           obj2[2] = message.id;
           const intl9 = tmp5(1236).intl;
@@ -145,16 +141,16 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
           obj2[4] = str2;
           obj2[8] = appIconSrc;
           obj13 = application;
-          obj8 = sortActivity;
-          const tmp5Result1 = tmp5(11129);
+          obj8 = closure_6;
+          const tmp5Result1 = tmp5(11168);
           const obj3 = { applicationId: null, referrerId: null };
           obj3[0] = application.id;
           obj3[1] = id.getId();
-          obj2[9] = tmp5(11310).getActivityLaunchURL(obj3);
+          obj2[9] = tmp5(11361).getActivityLaunchURL(obj3);
           obj2[11] = items;
           obj2[12] = CodedLinkExtendedType.APP_MESSAGE_EMBED;
-          const tmp5Result4 = tmp5(11310);
-          obj2[13] = tmp5(11131).getAppGradientColors(appIconSrc);
+          const tmp5Result4 = tmp5(11361);
+          obj2[13] = tmp5(11170).getAppGradientColors(appIconSrc);
           obj4 = { applicationId: null, instanceId: null, appMessageEmbedModel: null, participantAvatarUris: null, participantsDescription: null };
           obj4[0] = application.id;
           obj4[1] = activityInstance.id;
@@ -164,7 +160,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
           return obj4;
         } else {
           id = application.id;
-          if (contentClassificationVisibility === tmp5(11127).ContentClassificationVisibility.BLOCK_UNDERAGE) {
+          if (contentClassificationVisibility === tmp5(11166).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl2 = tmp5(1236).intl;
             let stringResult3 = intl2.string(tmp5(1236).t.LPOzxB);
           } else {
@@ -176,7 +172,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
           obj5[1] = activityInstance.id;
           obj5[2] = [];
           const obj6 = { displayType: null, appId: null, messageId: null, title: null, header: null, info: null, tagline: null, iconSrc: null, staticBannerSrc: null, bannerRatio: "bot", actions: null, embedUrl: null, extendedType: null, gradientColors: null, backgroundColor: 0, borderColor: 0, headerColor: 0, headerText: null, type: null };
-          obj6[0] = tmp5(11128).AppMessageEmbedDisplayType.BLOCKED;
+          obj6[0] = tmp5(11167).AppMessageEmbedDisplayType.BLOCKED;
           obj6[1] = id;
           obj6[2] = message.id;
           const intl3 = tmp5(1236).intl;

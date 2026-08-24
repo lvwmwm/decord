@@ -1,27 +1,24 @@
-// Module ID: 11448
-// Function ID: 11449
-// Dependencies: [19, 17, 11438, 21, 4661, 712, 4115, 7190, 11449, 8125, 4734, 2]
+// Module ID: 11497
+// Function ID: 11498
+// Dependencies: [19, 17, 11487, 21, 4668, 712, 4119, 7228, 11498, 8164, 4739, 2]
 
-// Module 11448
-import { StyleSheet } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 11497
+import ThemesDefault from "Themes" /* 712 */;
+import { StyleSheet } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { titleWrapper: { position: "absolute", top: 0, left: 0, right: 0, justifyContent: "center", alignItems: "center", padding: 16, height: require("VoicePanelControlsModes").CONTROLS_DRAWER_HEADER_SIZE }, titlePill: null, titlePillBG: null };
-obj = { borderRadius: require("Themes").radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 };
+obj = { borderRadius: ThemesDefault.radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 };
 obj[1] = obj;
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj[2] = createCacheKey;
 let closure_6 = createCacheKey.createStyles(obj);
 let closure_7 = { code: "function VoicePanelControlsDrawerTitleTsx1(){const{shown,_shown,disablePill,backgroundColor}=this.__closure;const showBGColor=shown!=null?shown.get():_shown.get();return{backgroundColor:showBGColor&&!disablePill?backgroundColor:'transparent'};}" };
-const memoResult = require("noop").memo(function VoicePanelControlsDrawerTitle(children) {
-  let blurStyle;
-  let style;
+const memoResult = importAllResult.memo(function VoicePanelControlsDrawerTitle(children) {
   let shown = children.shown;
   let flag = children.disablePill;
   if (flag === undefined) {
@@ -34,14 +31,14 @@ const memoResult = require("noop").memo(function VoicePanelControlsDrawerTitle(c
   let obj = shown(sharedValue[6]);
   sharedValue = obj.useSharedValue(true);
   backgroundColor = tmp.titlePillBG.backgroundColor;
-  let obj1 = shown(sharedValue[6]);
+  obj1 = shown(sharedValue[6]);
   const fn = function p() {
     if (null != shown) {
       let value = shown.get();
     } else {
       value = sharedValue.get();
     }
-    let backgroundColor = "transparent";
+    backgroundColor = "transparent";
     if (value) {
       backgroundColor = "transparent";
     }
@@ -70,6 +67,6 @@ const memoResult = require("noop").memo(function VoicePanelControlsDrawerTitle(c
   obj[1] = items1;
   return tmp6(tmp8, obj);
 });
-const result = require("VoicePanelControlsModes").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsDrawerTitle.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsDrawerTitle.tsx");
 
 export default memoResult;

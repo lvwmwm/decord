@@ -1,50 +1,47 @@
-// Module ID: 14179
-// Function ID: 14180
+// Module ID: 14247
+// Function ID: 14248
 // Name: ExplicitMediaSettingsActionSheet
-// Dependencies: [19, 17, 21, 4661, 712, 4342, 6950, 6949, 8101, 1306, 8100, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4346, 6988, 6987, 8140, 1306, 8139, 2]
 // Exports: default
 
-// Module 14179 (ExplicitMediaSettingsActionSheet)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14247 (ExplicitMediaSettingsActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { content: null };
-createCacheKey = { marginTop: require("Themes").space.PX_24, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { marginTop: ThemesDefault.space.PX_24, paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/explicit_media_redaction/native/ExplicitMediaSettingsActionSheet.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/native/ExplicitMediaSettingsActionSheet.tsx");
 
 export default function ExplicitMediaSettingsActionSheet(options) {
-  let subtitle;
-  let title;
   options = options.options;
   let SHOW = options.currentValue;
   ({ title, subtitle } = options);
   const items = [options];
   const callback = React.useCallback((arg0) => {
-    const options = arg0;
+    options = arg0;
     const found = options.find((value) => value.value === closure_0);
     if (null != found) {
       found.onPress();
-      outer1_1(outer1_2[5]).hideActionSheet();
-      const obj2 = outer1_1(outer1_2[5]);
+      closure_1_1(closure_1_2[5]).hideActionSheet();
+      const obj2 = closure_1_1(closure_1_2[5]);
     }
   }, items);
-  const items1 = [callback(options(6949).BottomSheetTitleHeader, { title, subtitle }), ];
-  let obj = { style: createCacheKey().content, children: null };
+  const items1 = [callback(options(6987).BottomSheetTitleHeader, { title, subtitle }), ];
+  let obj = { style: callback2().content, children: null };
   if (SHOW == null) {
     SHOW = options(1306).ExplicitContentRedaction.SHOW;
   }
   obj = { startExpanded: true, children: null };
   obj = { defaultValue: SHOW, onChange: callback, hasIcons: false, children: options.map((label) => callback(options(table[10]).TableRadioRow, { label: label.label, value: label.value }, label.value)) };
-  obj[1] = callback(options(8101).TableRadioGroup, obj);
+  obj[1] = callback(options(8140).TableRadioGroup, obj);
   items1[1] = callback(View, obj);
   obj[1] = items1;
-  return closure_6(options(6950).BottomSheet, obj);
+  return closure_6(options(6988).BottomSheet, obj);
 };

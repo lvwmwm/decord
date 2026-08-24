@@ -1,16 +1,16 @@
-// Module ID: 5050
-// Function ID: 5051
+// Module ID: 5055
+// Function ID: 5056
 // Name: guildHasOnboardingHome
 // Dependencies: [676, 1913, 2]
 // Exports: default
 
-// Module 5050 (guildHasOnboardingHome)
-import ME from "ME";
+// Module 5055 (guildHasOnboardingHome)
+import set from "set" /* 2 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let obj1;
 ({ GuildFeatures: obj1, ME: c3 } = ME);
-const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/guildHasOnboardingHome.tsx");
+const result = set.fileFinishedImporting("modules/guild_onboarding_home/guildHasOnboardingHome.tsx");
 
 export default function guildHasOnboardingHome(id) {
   let isFavoritesGuildIdResult = null == id;
@@ -18,8 +18,8 @@ export default function guildHasOnboardingHome(id) {
     isFavoritesGuildIdResult = id.id === closure_3;
   }
   if (!isFavoritesGuildIdResult) {
-    isFavoritesGuildIdResult = require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id.id);
-    const obj = require(1913) /* getFavoritesAwareGuildName */;
+    isFavoritesGuildIdResult = getFavoritesAwareGuildName.isFavoritesGuildId(id.id);
+    const obj = getFavoritesAwareGuildName;
   }
   if (!isFavoritesGuildIdResult) {
     const features = id.features;

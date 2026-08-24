@@ -1,25 +1,27 @@
-// Module ID: 15544
-// Function ID: 15545
+// Module ID: 15609
+// Function ID: 15610
 // Name: HomeDrawerPanelContent
-// Dependencies: [19, 17, 15289, 676, 21, 4661, 15288, 15545, 15292, 8503, 4097, 712, 4115, 2]
+// Dependencies: [19, 17, 15353, 676, 21, 4668, 15352, 15610, 15356, 8542, 4100, 712, 4119, 2]
 
-// Module 15544 (HomeDrawerPanelContent)
-import { View } from "get ActivityIndicator";
-import withEqualityFn from "withEqualityFn";
-import { DM_WIDTH } from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 15609 (HomeDrawerPanelContent)
+import context from "context" /* 15352 */;
+import _modDef15610 from "module_15610" /* 15610 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "withEqualityFn" /* 15353 */;
+import { DM_WIDTH } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 function HomeDrawerPanelContent() {
   const tmp = callback();
   let obj = panelSpringTranslateX(isClientThemeOrCustomThemeActive[8]);
   const drawerOpen = obj.useDrawerOpen();
-  let obj1 = panelSpringTranslateX(isClientThemeOrCustomThemeActive[6]);
+  obj1 = panelSpringTranslateX(isClientThemeOrCustomThemeActive[6]);
   panelSpringTranslateX = obj1.useHomeDrawerState().panelSpringTranslateX;
   const tmp4 = token1((maxX) => maxX.maxX);
-  const importDefault = tmp4;
+  importDefault = tmp4;
   isClientThemeOrCustomThemeActive = panelSpringTranslateX(isClientThemeOrCustomThemeActive[9]).useIsClientThemeOrCustomThemeActive();
   const obj3 = panelSpringTranslateX(isClientThemeOrCustomThemeActive[9]);
   const tmp2 = isClientThemeOrCustomThemeActive;
@@ -48,9 +50,8 @@ function HomeDrawerPanelContent() {
   const animatedStyle = panelSpringTranslateX(isClientThemeOrCustomThemeActive[12]).useAnimatedStyle(fn);
   obj = { style: items, children: null };
   items = [tmp.container, animatedStyle];
-  obj1 = { style: drawerOpen ? tmp.guildsListContainerGestured : tmp.guildLisetContainerDefault, children: null };
-  obj1[1] = jsx(tmp6(tmp2[7]), { enableHome: true });
-  obj[1] = <token style={drawerOpen ? tmp.guildsListContainerGestured : tmp.guildLisetContainerDefault}>{null}</token>;
+  obj1 = { style: drawerOpen ? tmp.guildsListContainerGestured : tmp.guildLisetContainerDefault, children: tmp10(tmp6(tmp2[7]), { enableHome: true }) };
+  obj[1] = <token style={drawerOpen ? tmp.guildsListContainerGestured : tmp.guildLisetContainerDefault}>{tmp10(tmp6(tmp2[7]), { enableHome: true })}</token>;
   return jsx(importDefault(isClientThemeOrCustomThemeActive[12]).View, { style: items, children: null });
 }
 let closure_7 = createCacheKey.createStyles((width) => {
@@ -58,9 +59,9 @@ let closure_7 = createCacheKey.createStyles((width) => {
   return { container: { flex: 1 }, guildsListContainerGestured: { flex: 1 }, guildLisetContainerDefault };
 });
 let closure_8 = { code: "function HomePanelContentTsx1(){const{isGradientTheme,maxX,interpolateColor,panelSpringTranslateX,baseLowest,panelBg}=this.__closure;if(isGradientTheme||maxX<=0){return{backgroundColor:'transparent'};}return{backgroundColor:interpolateColor(panelSpringTranslateX.get(),[0,maxX],[baseLowest,panelBg])};}" };
-const memoResult = require("noop").memo(() => {
+const memoResult = importAllResult.memo(() => {
   const tmp = callback(DM_WIDTH);
-  let obj = require(15288) /* context */;
+  let obj = context;
   if (obj.useIsHomeDrawerEnabled()) {
     let tmp3Result = tmp3(HomeDrawerPanelContent, {});
   } else {
@@ -68,12 +69,12 @@ const memoResult = require("noop").memo(() => {
     obj[0] = tmp.container;
     obj = { style: null, children: null };
     obj[0] = tmp.guildLisetContainerDefault;
-    obj[1] = tmp3(importDefault(15545), {});
+    obj[1] = tmp3(_modDef15610, {});
     obj[1] = tmp3(View, obj);
     tmp3Result = tmp3(View, obj);
   }
   return tmp3Result;
 });
-const result = require("withEqualityFn").fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/HomePanelContent.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/HomePanelContent.tsx");
 
 export const HomePanelContent = memoResult;

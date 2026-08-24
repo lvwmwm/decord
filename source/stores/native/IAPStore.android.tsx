@@ -1,21 +1,24 @@
-// Module ID: 5319
-// Function ID: 5320
+// Module ID: 5324
+// Function ID: 5325
 // Name: updateProduct
-// Dependencies: [5320, 505, 5316, 4054, 589, 709, 2]
+// Dependencies: [5325, 505, 5321, 4057, 589, 709, 2]
 
-// Module 5319 (updateProduct)
-import GPlayConnectionState from "GPlayConnectionState";
-import { CurrencyCodes } from "sum";
-import { Store } from "initialize";
-import set from "formatSingleCurrencyPrice";
+// Module 5324 (updateProduct)
+import sum from "sum" /* 505 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import _createGatewayCheckoutContext from "_createGatewayCheckoutContext" /* 4057 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 5321 */;
+import GPlayConnectionState from "GPlayConnectionState" /* 5325 */;
+import set from "set" /* 2 */;
 
 function updateProduct(currencyCode) {
   const formatted = currencyCode.currencyCode.toLowerCase();
   const result = currencyCode.price / 100;
   if ("BG" === c14) {
     if (formatted === CurrencyCodes.EUR) {
-      let formatDualPriceForBGResult = require(5316) /* formatSingleCurrencyPrice */.formatDualPriceForBG(result, { convertToMajorUnits: false });
-      const obj2 = require(5316) /* formatSingleCurrencyPrice */;
+      let formatDualPriceForBGResult = formatSingleCurrencyPrice.formatDualPriceForBG(result, { convertToMajorUnits: false });
+      const obj2 = formatSingleCurrencyPrice;
     }
     let obj = {};
     const merged = Object.assign(currencyCode);
@@ -24,12 +27,10 @@ function updateProduct(currencyCode) {
     obj.priceString = formatDualPriceForBGResult;
     return obj;
   }
-  obj = require(5316) /* formatSingleCurrencyPrice */;
+  obj = formatSingleCurrencyPrice;
   formatDualPriceForBGResult = obj.formatSingleCurrencyPrice(result, formatted, { convertToMajorUnits: false });
 }
 function skusLoaded(arg0) {
-  let skus;
-  let skusType;
   ({ skus, skusType } = arg0);
   let item = skus.forEach((identifier) => {
     const result = store.set(identifier.identifier, identifier);
@@ -62,17 +63,18 @@ function skusLoaded(arg0) {
       });
     }
     if (GPlaySkusType.IN_APP === skusType) {
-      let c12 = false;
+      c12 = false;
     } else if (tmp12.SUBSCRIPTION === skusType) {
-      let c13 = false;
+      c13 = false;
     }
   } catch (tmp7) {
-    let result = require(4054) /* _createGatewayCheckoutContext */.captureBillingException(tmp7);
-    const obj = require(4054) /* _createGatewayCheckoutContext */;
+    let result = _createGatewayCheckoutContext.captureBillingException(tmp7);
+    const obj = _createGatewayCheckoutContext;
   }
 }
 GPlayConnectionState = GPlayConnectionState.GPlayConnectionState;
 const GPlaySkusType = GPlayConnectionState.GPlaySkusType;
+const CurrencyCodes = sum.CurrencyCodes;
 const DISCONNECTED = GPlayConnectionState.DISCONNECTED;
 let c6 = null;
 const map = new Map();
@@ -83,6 +85,7 @@ let c11 = false;
 let c12 = false;
 let c13 = false;
 let c14 = null;
+const Store = initializeDefault.Store;
 class IAPStore extends Store {
 }
 const prototype = IAPStore.prototype;
@@ -132,23 +135,23 @@ prototype["getUserCountry"] = function getUserCountry() {
   return c14;
 };
 IAPStore.displayName = "IAPStore";
-const iAPStore = new IAPStore(require("dispatcher"), {
+const iAPStore = new IAPStore(dispatcherDefault, {
   GPLAY_UPDATE_CONNECTION_STATE: function updateConnectionState(connectionState) {
     connectionState = connectionState.connectionState;
   },
   GPLAY_FETCH_SUBSCRIPTION_SKUS_START: function handleFetchSubscriptionSkusStart() {
-    let c13 = true;
+    c13 = true;
   },
   GPLAY_SUBSCRIPTION_SKUS_LOADED: skusLoaded,
   GPLAY_FETCH_SUBSCRIPTION_SKUS_FAILED: function handleFetchSubscriptionSkusFailed() {
-    let c13 = false;
+    c13 = false;
   },
   GPLAY_FETCH_IN_APP_SKUS_START: function handleFetchInAppSkusStart() {
-    let c12 = true;
+    c12 = true;
   },
   GPLAY_IN_APP_SKUS_LOADED: skusLoaded,
   GPLAY_FETCH_IN_APP_SKUS_FAILED: function handleFetchInAppSkusFailed() {
-    let c12 = false;
+    c12 = false;
   },
   GPLAY_VERIFICATION_START: function handleVerificationStart(productId) {
     set1.add(productId.productId);
@@ -160,7 +163,7 @@ const iAPStore = new IAPStore(require("dispatcher"), {
     } else {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
-      const error = new Error("Tried verifying product without initialization: " + productId);
+      error = new Error("Tried verifying product without initialization: " + productId);
       throw error;
     }
     obj = set1;

@@ -1,12 +1,14 @@
-// Module ID: 16689
-// Function ID: 16690
+// Module ID: 16785
+// Function ID: 16786
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 16689 (enforcing)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 16785 (enforcing)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeProximitySensorManagerModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeProximitySensorManagerModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeProximitySensorManagerModule.tsx");
 
 export default enforcing;

@@ -1,31 +1,27 @@
-// Module ID: 15580
-// Function ID: 15581
+// Module ID: 15645
+// Function ID: 15646
 // Name: GuildRowWrapper
-// Dependencies: [19, 17, 4023, 1395, 1391, 1980, 5383, 1910, 4772, 4030, 5043, 1922, 676, 5044, 21, 4661, 589, 4235, 4232, 12726, 10001, 4734, 15581, 15582, 4984, 11, 15583, 15585, 11196, 15586, 15587, 15588, 15590, 15591, 15569, 2]
+// Dependencies: [19, 17, 4026, 1395, 1391, 1981, 5388, 1910, 4777, 4033, 5048, 1922, 676, 5049, 21, 4668, 589, 4239, 4236, 12781, 10040, 4739, 15646, 15647, 4989, 11, 15648, 15649, 11200, 15650, 15651, 15652, 15654, 15655, 15634, 2]
 // Exports: default
 
-// Module 15580 (GuildRowWrapper)
-import BellZIcon from "BellZIcon";
-import { View } from "MobileHomeDrawerExperiment";
-import storeThread from "storeThread";
-import { isThread } from "createChannelRecord";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import comparator from "comparator";
-import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { UnreadSetting } from "ReadStateTypes";
-import jsxProd from "Text";
-import createCacheKey from "createCacheKey";
+// Module 15645 (GuildRowWrapper)
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "storeThread" /* 4026 */;
+import { isThread } from "createChannelRecord" /* 1395 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "comparator" /* 1981 */;
+import closure_9 from "updateGuildUnreadSentinel" /* 5388 */;
+import closure_10 from "createGuildRecordFromRust" /* 1910 */;
+import closure_11 from "generateOldThreadCutoff" /* 4777 */;
+import closure_12 from "markAllUserIdListsStale" /* 4033 */;
+import closure_13 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_14 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_15;
-let closure_16;
-let closure_18;
-let closure_19;
 const require = arg1;
 function GuildRowWrapper(guild) {
   guild = guild.guild;
@@ -48,21 +44,21 @@ function GuildRowWrapper(guild) {
   let typingChannelId;
   let typingChannelName;
   let stateFromStores2;
-  let c20;
+  closure_20 = undefined;
   let callback2;
   let memo2;
   let tmp = callback2();
   React = tmp;
-  let obj = guild(onActiveHookChange[16]);
+  obj = guild(onActiveHookChange[16]);
   let items = [unreadChannel];
   stateFromStores = obj.useStateFromStores(items, () => unreadChannel.hasUnread(guild.id));
-  let obj1 = guild(onActiveHookChange[16]);
+  obj1 = guild(onActiveHookChange[16]);
   const items1 = [mentionChannelName];
   stateFromStores1 = obj1.useStateFromStores(items1, () => mentionChannelName.getMuteConfig(guild.id));
   const items2 = [stateFromStores1];
   memo = React.useMemo(() => {
     if (null == stateFromStores1) {
-      let obj = { isMuted: false, isTemporary: false };
+      obj = { isMuted: false, isTemporary: false };
     } else {
       let tmp2 = null == tmp.end_time;
       if (!tmp2) {
@@ -90,10 +86,10 @@ function GuildRowWrapper(guild) {
         BellSlashIcon = tmp3(tmp3Result[20]).BellSlashIcon;
       }
     } else {
-      let obj = { style: null, children: null };
-      obj[0] = _undefined.guildName;
+      obj = { style: null, children: null };
+      obj[0] = closure_3.guildName;
       obj = { variant: "text-md/medium", style: null, lineClamp: 1, color: null, children: null };
-      obj[1] = _undefined.guildNameText;
+      obj[1] = closure_3.guildNameText;
       let str = "text-default";
       if (tmp.isMuted) {
         str = "text-muted";
@@ -114,23 +110,23 @@ function GuildRowWrapper(guild) {
   const stateFromStoresObject = guild(onActiveHookChange[16]).useStateFromStoresObject(items4, () => {
     const selectableChannelIds = isHomeDrawerChannelInChannelList.getSelectableChannelIds(guild.id);
     const found = selectableChannelIds.filter((id) => {
-      const basicChannel = outer1_7.getBasicChannel(id);
+      const basicChannel = closure_1_7.getBasicChannel(id);
       let tmp2 = null != basicChannel;
       if (tmp2) {
         const tmp4 = callback(basicChannel);
         let tmp5 = !tmp4;
         if (!tmp4) {
-          let tmp7 = outer1_6(basicChannel.type);
+          let tmp7 = closure_1_6(basicChannel.type);
           if (tmp7) {
-            tmp7 = !outer1_5.hasJoined(id);
+            tmp7 = !closure_1_5.hasJoined(id);
           }
           let tmp9 = !tmp7;
           if (!tmp7) {
             let tmp11 = callback2(basicChannel);
             if (tmp11) {
-              let hasUnreadResult = outer1_11.hasUnread(id);
+              let hasUnreadResult = closure_1_11.hasUnread(id);
               if (hasUnreadResult) {
-                hasUnreadResult = outer1_13.resolveUnreadSetting(basicChannel) === outer1_17.ALL_MESSAGES;
+                hasUnreadResult = closure_1_13.resolveUnreadSetting(basicChannel) === closure_1_17.ALL_MESSAGES;
               }
               tmp11 = hasUnreadResult;
             }
@@ -146,7 +142,7 @@ function GuildRowWrapper(guild) {
     if (found.length > 0) {
       channel = isHomeDrawerChannelMuted.getChannel(found[0]);
     }
-    const obj = { unreadChannel: channel, unreadChannelName: null, unreadChannelCount: null };
+    obj = { unreadChannel: channel, unreadChannelName: null, unreadChannelCount: null };
     let channelName;
     if (null != channel) {
       channelName = guild(onActiveHookChange[24]).computeChannelName(channel, mentionChannelCount, mentionChannel);
@@ -170,7 +166,7 @@ function GuildRowWrapper(guild) {
     } else {
       const keys = disableSubtitle(onActiveHookChange[25]).keys(tmp.mentionCounts);
       const found = keys.filter((id) => {
-        if (tmp.mentionCounts[id].count <= 0) {
+        if (mentionCounts.mentionCounts[id].count <= 0) {
           return false;
         } else {
           const basicChannel = isHomeDrawerChannelMuted.getBasicChannel(id);
@@ -182,7 +178,7 @@ function GuildRowWrapper(guild) {
             }
             let tmp8 = !tmp6;
             if (!tmp6) {
-              tmp8 = outer1_8(basicChannel);
+              tmp8 = closure_1_8(basicChannel);
             }
             tmp4 = tmp8;
           }
@@ -193,7 +189,7 @@ function GuildRowWrapper(guild) {
       if (found.length > 0) {
         channel = isHomeDrawerChannelMuted.getChannel(found[0]);
       }
-      const obj = { mentionChannel: null, mentionChannelName: null, mentionChannelCount: null };
+      obj = { mentionChannel: null, mentionChannelName: null, mentionChannelCount: null };
       obj[0] = channel;
       let channelName;
       if (null != channel) {
@@ -227,7 +223,7 @@ function GuildRowWrapper(guild) {
   }
   obj = { channelId: tmp16, guildId: guild.id, typingUserIds: homeDrawerGuildTyping.typingUserIds };
   const tmp15Result = disableSubtitle(onActiveHookChange[28])(obj);
-  c20 = tmp15Result;
+  closure_20 = tmp15Result;
   let tmp18 = memo.isMuted || disableSubtitle;
   if (!tmp18) {
     tmp18 = 0 === voiceUsers1.length;
@@ -235,34 +231,34 @@ function GuildRowWrapper(guild) {
   callback2 = tmp19;
   const items10 = [!tmp18, streamingUser, disableSubtitle, mentionChannelName, mentionChannelCount, typingChannelId, tmp15Result, memo.isMuted, stateFromStores, unreadChannelName, unreadChannelCount];
   memo2 = obj3.useMemo(() => {
-    if (c21) {
+    if (closure_21) {
       if (null != streamingUser) {
-        let VOICE = _undefined2.STREAMING;
+        let VOICE = constants.STREAMING;
       } else {
-        VOICE = _undefined2.VOICE;
+        VOICE = constants.VOICE;
       }
     } else {
       if (disableSubtitle) {
-        let TYPING = _undefined2.NONE;
+        let TYPING = constants.NONE;
       } else {
         if (null != mentionChannelName) {
           if (mentionChannelCount > 0) {
-            TYPING = _undefined2.MENTION;
+            TYPING = constants.MENTION;
           }
         }
         if (null != typingChannelId) {
-          if (null != _undefined2) {
+          if (null != constants) {
             if (!memo.isMuted) {
-              TYPING = _undefined2.TYPING;
+              TYPING = constants.TYPING;
             }
           }
         }
         if (stateFromStores) {
           if (null != unreadChannelName) {
-            const UNREAD = _undefined2.UNREAD;
+            const UNREAD = constants.UNREAD;
           }
         }
-        const NONE = _undefined2.NONE;
+        const NONE = constants.NONE;
       }
       return TYPING;
     }
@@ -275,8 +271,8 @@ function GuildRowWrapper(guild) {
   }, items11);
   const items12 = [memo2, guild, streamingUser, voiceUsers1, mentionChannel, mentionChannelName, mentionChannelCount, stateFromStores2, typingChannelName, tmp15Result, unreadChannel, unreadChannelName, unreadChannelCount];
   const memo3 = obj3.useMemo(() => {
-    if (_undefined2.STREAMING === memo2) {
-      let obj = { guildId: null, streamingUser: null };
+    if (constants.STREAMING === memo2) {
+      obj = { guildId: null, streamingUser: null };
       obj[0] = guild.id;
       obj[1] = streamingUser;
       return typingChannelName(disableSubtitle(onActiveHookChange[29]), obj);
@@ -288,7 +284,7 @@ function GuildRowWrapper(guild) {
     } else if (tmp2.MENTION === tmp) {
       let tmp20 = null;
       if (null != mentionChannelName) {
-        const obj1 = { guild: null, channel: null, channelName: null, count: null };
+        obj1 = { guild: null, channel: null, channelName: null, count: null };
         obj1[0] = guild;
         obj1[1] = mentionChannel;
         obj1[2] = tmp19;
@@ -301,7 +297,7 @@ function GuildRowWrapper(guild) {
       obj2[0] = guild;
       obj2[1] = stateFromStores2;
       obj2[2] = typingChannelName;
-      obj2[3] = _undefined2;
+      obj2[3] = constants;
       return typingChannelName(disableSubtitle(onActiveHookChange[32]), obj2);
     } else if (tmp2.UNREAD === tmp) {
       let tmp5 = null;
@@ -341,17 +337,15 @@ function GuildRowWrapper(guild) {
 ({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
 let obj = { STREAMING: "streaming", VOICE: "voice", MENTION: "mention", TYPING: "typing", UNREAD: "unread", NONE: "none" };
 let closure_21 = createCacheKey.createStyles({ guildName: { flexDirection: "row", alignItems: "center", gap: 4 }, guildNameText: { flexShrink: 1 } });
-const result = require("storeThread").fileFinishedImporting("modules/home_drawer/native/HomeDrawerGuildRow.tsx");
+const result = require("set").fileFinishedImporting("modules/home_drawer/native/HomeDrawerGuildRow.tsx");
 
 export default function HomeDrawerGuildRow(guildId) {
-  let disableSubtitle;
-  let onActiveHookChange;
   guildId = guildId.guildId;
   ({ disableSubtitle, onActiveHookChange } = guildId);
-  let obj = guildId(589);
-  const items = [createGuildRecordFromRust];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getGuild(guildId));
-  const MobileHomeDrawerExperiment = guildId(4235).MobileHomeDrawerExperiment;
+  obj = guildId(589);
+  const items = [closure_10];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_10.getGuild(guildId));
+  const MobileHomeDrawerExperiment = guildId(4239).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

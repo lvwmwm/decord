@@ -3,5 +3,7 @@
 // Dependencies: [484]
 
 // Module 483
+import _mod484 from "module_484" /* 484 */;
 
-export { default as default } from "module_484";
+
+export default _mod484.default;

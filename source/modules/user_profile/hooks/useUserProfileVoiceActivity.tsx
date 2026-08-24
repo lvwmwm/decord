@@ -1,54 +1,56 @@
-// Module ID: 12145
-// Function ID: 12146
+// Module ID: 12197
+// Function ID: 12198
 // Name: useUserProfileVoiceActivity
-// Dependencies: [4559, 4542, 7259, 9896, 589, 2]
+// Dependencies: [4564, 4547, 7297, 9935, 589, 2]
 // Exports: default, isUserProfileVoiceActivityForChannel
 
-// Module 12145 (useUserProfileVoiceActivity)
-import sortActivity from "sortActivity";
-import updateVoiceState from "updateVoiceState";
+// Module 12197 (useUserProfileVoiceActivity)
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7297 */;
+import closure_3 from "sortActivity" /* 4564 */;
+import closure_4 from "updateVoiceState" /* 4547 */;
 
 const require = arg1;
-const result = require("isEmbeddedActivity").fileFinishedImporting("modules/user_profile/hooks/useUserProfileVoiceActivity.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useUserProfileVoiceActivity.tsx");
 
 export default function useUserProfileVoiceActivity(guildId) {
   const userId = guildId.userId;
   let id;
-  const tmp2 = id(9896)({ userId, guildId: guildId.guildId });
+  const tmp2 = id(9935)({ userId, guildId: guildId.guildId });
   const voiceChannel = tmp2.voiceChannel;
   id = undefined;
   if (voiceChannel != null) {
     id = voiceChannel.id;
   }
-  const obj = { voiceState: tmp2.voiceState, voiceChannel, voiceActivity: null };
-  const items = [sortActivity, updateVoiceState];
-  obj[2] = userId(589).useStateFromStores(items, () => {
-    if (null != userId) {
-      if (null != id) {
-        const findActivityResult = outer1_3.findActivity(tmp, (session_id) => {
-          const voiceStateForSession = outer1_4.getVoiceStateForSession(closure_0, session_id.session_id);
-          let tmp3 = outer1_1(outer1_2[2])(session_id);
-          if (tmp3) {
-            let channelId;
-            if (voiceStateForSession != null) {
-              channelId = voiceStateForSession.channelId;
+  const obj = {
+    voiceState: tmp2.voiceState,
+    voiceChannel,
+    voiceActivity: userId(589).useStateFromStores(items, () => {
+      if (null != userId) {
+        if (null != id) {
+          const findActivityResult = closure_1_3.findActivity(tmp, (session_id) => {
+            const voiceStateForSession = closure_1_4.getVoiceStateForSession(closure_0, session_id.session_id);
+            let tmp3 = closure_1_1(closure_1_2[2])(session_id);
+            if (tmp3) {
+              let channelId;
+              if (voiceStateForSession != null) {
+                channelId = voiceStateForSession.channelId;
+              }
+              tmp3 = channelId === closure_1;
             }
-            tmp3 = channelId === closure_1;
-          }
-          return tmp3;
-        });
-        return findActivityResult;
+            return tmp3;
+          });
+          return findActivityResult;
+        }
       }
-    }
-  });
+    })
+  };
+  items = [closure_3, closure_4];
   return obj;
 };
 export const isUserProfileVoiceActivityForChannel = function isUserProfileVoiceActivityForChannel(voiceStateForSession) {
-  let activity;
-  let voiceChannelId;
   voiceStateForSession = voiceStateForSession.voiceStateForSession;
   ({ activity, voiceChannelId } = voiceStateForSession);
-  let tmp = importDefault(7259)(activity);
+  let tmp = isEmbeddedActivityDefault(activity);
   if (tmp) {
     let channelId;
     if (voiceStateForSession != null) {

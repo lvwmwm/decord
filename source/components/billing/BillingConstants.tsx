@@ -1,10 +1,10 @@
-// Module ID: 4050
-// Function ID: 4051
+// Module ID: 4053
+// Function ID: 4054
 // Name: set
 // Dependencies: [2]
 
-// Module 4050 (set)
-import set from "set";
+// Module 4053 (set)
+import set from "set" /* 2 */;
 
 let obj = { UNKNOWN: 0, [0]: "UNKNOWN", ADMIN: 1, [1]: "ADMIN", USER: 2, [2]: "USER", FRACTIONAL_PREMIUM: 3, [3]: "FRACTIONAL_PREMIUM", DEFERRED_START: 4, [4]: "DEFERRED_START", USER_TEMPORARY_BAN: 5, [5]: "USER_TEMPORARY_BAN" };
 obj = { CAN_MAKE_SUBSCRIPTION_UPDATES: null };

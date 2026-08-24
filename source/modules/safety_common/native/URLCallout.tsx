@@ -1,40 +1,39 @@
-// Module ID: 12420
-// Function ID: 12421
+// Module ID: 12472
+// Function ID: 12473
 // Name: URLCallout
-// Dependencies: [19, 17, 21, 4661, 712, 12421, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 12473, 4739, 2]
 // Exports: URLCallout
 
-// Module 12420 (URLCallout)
-import "noop";
-import { ScrollView } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12472 (URLCallout)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import useUrlParts from "useUrlParts" /* 12473 */;
+import { ScrollView } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsxs: c3, jsx: c4 } = jsxProd);
 createCacheKey = { linkCalloutContainer: null, linkCalloutContainerText: null };
-createCacheKey = { maxHeight: 300, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, width: "100%", borderRadius: require("Themes").radii.md };
+createCacheKey = { maxHeight: 300, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, width: "100%", borderRadius: ThemesDefault.radii.md };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { padding: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_12, textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { padding: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_12, textAlign: "center" };
-const result = require("jsxProd").fileFinishedImporting("modules/safety_common/native/URLCallout.tsx");
+createCacheKey[1] = { padding: ThemesDefault.space.PX_8, paddingVertical: ThemesDefault.space.PX_12, textAlign: "center" };
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const obj1 = { padding: ThemesDefault.space.PX_8, paddingVertical: ThemesDefault.space.PX_12, textAlign: "center" };
+const result = require("set").fileFinishedImporting("modules/safety_common/native/URLCallout.tsx");
 
 export const URLCallout = function URLCallout(url) {
-  let hostname;
-  let protocol;
-  let theRestOfTheUrl;
-  const tmp = createCacheKey();
-  let obj = require(12421) /* useUrlParts */;
+  const tmp = callback3();
+  let obj = useUrlParts;
   const urlParts = obj.useUrlParts(url.url);
   obj = { style: tmp.linkCalloutContainer, children: null };
   ({ protocol, hostname, theRestOfTheUrl } = urlParts);
   obj = { style: tmp.linkCalloutContainerText, variant: "text-md/normal", children: null };
   const items = [protocol, "//"];
-  const items1 = [callback(require(4734) /* Text */.Text, { variant: "text-md/normal", color: "text-muted", children: items }), callback2(require(4734) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", children: hostname }), callback2(require(4734) /* Text */.Text, { variant: "text-md/normal", color: "text-muted", children: theRestOfTheUrl })];
+  const items1 = [callback(Text.Text, { variant: "text-md/normal", color: "text-muted", children: items }), callback2(Text.Text, { variant: "text-md/semibold", color: "text-default", children: hostname }), callback2(Text.Text, { variant: "text-md/normal", color: "text-muted", children: theRestOfTheUrl })];
   obj[2] = items1;
-  obj[1] = callback(require(4734) /* Text */.Text, obj);
+  obj[1] = callback(Text.Text, obj);
   return callback2(ScrollView, obj);
 };

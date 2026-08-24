@@ -1,23 +1,27 @@
-// Module ID: 14337
-// Function ID: 14338
+// Module ID: 14405
+// Function ID: 14406
 // Name: route
-// Dependencies: [19, 1922, 4045, 676, 21, 12850, 4039, 1236, 7388, 7729, 14338, 10669, 7988, 14340, 2]
+// Dependencies: [19, 1922, 4048, 676, 21, 12905, 4042, 1236, 7426, 7767, 14406, 10708, 8027, 14408, 2]
 
-// Module 14337 (route)
-import noop from "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import reset from "reset";
-import { jsx } from "jsxProd";
-import createToggle from "createToggle";
+// Module 14405 (route)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
+import apexExperiment from "apexExperiment" /* 12905 */;
+import ThemedTabBadgeDefault from "ThemedTabBadge" /* 14406 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "reset" /* 4048 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle: function getPremiumSettingTitle() {
-    const mobileNitroManageSubscriptionsSettingsExperiment = require(12850) /* apexExperiment */.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
-    const obj = require(12850) /* apexExperiment */;
+    const mobileNitroManageSubscriptionsSettingsExperiment = apexExperiment.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
+    const obj = apexExperiment;
     currentUser = currentUser.getCurrentUser();
-    const result = require(4039) /* getPremiumPlanItem */.hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription.getPremiumTypeSubscription());
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const result = getPremiumPlanItem.hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription.getPremiumTypeSubscription());
+    const intl = getSystemLocale.intl;
     const string = intl.string;
     if (result) {
       if (mobileNitroManageSubscriptionsSettingsExperiment) {
@@ -43,17 +47,17 @@ createToggle = {
     }, []);
   },
   useTrailing: function usePremiumSettingTrailing() {
-    return jsx(importDefault(14338), {});
+    return jsx(ThemedTabBadgeDefault, {});
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM,
   getComponent() {
-    return require(14340) /* PremiumScreen */.default;
+    return require(14408) /* PremiumScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-let result = require("reset").fileFinishedImporting("modules/user_settings/defs/native/PremiumSetting.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/PremiumSetting.tsx");
 
 export default createToggle;

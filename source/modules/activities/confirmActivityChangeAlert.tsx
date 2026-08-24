@@ -1,32 +1,35 @@
-// Module ID: 8739
-// Function ID: 8740
+// Module ID: 8776
+// Function ID: 8777
 // Name: confirmActivityChangeModal
-// Dependencies: [4030, 1922, 4984, 4827, 1236, 1903, 2]
+// Dependencies: [4033, 1922, 4989, 4832, 1236, 1903, 2]
 // Exports: default
 
-// Module 8739 (confirmActivityChangeModal)
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 8776 (confirmActivityChangeModal)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import setDefault from "set" /* 4832 */;
+import computeChannelName from "computeChannelName" /* 4989 */;
+import closure_3 from "markAllUserIdListsStale" /* 4033 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
-const result = require("computeChannelName").fileFinishedImporting("modules/activities/confirmActivityChangeAlert.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/activities/confirmActivityChangeAlert.tsx");
 
 export default function confirmActivityChangeModal(name, channel) {
   let str = "";
   if (null != channel) {
-    let obj = require(4984) /* computeChannelName */;
-    str = obj.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+    let obj = computeChannelName;
+    str = obj.computeChannelName(channel, closure_4, closure_3);
   }
   obj = { title: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, body: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.XkIWkk);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl3.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.XkIWkk);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t["ETE/oC"]);
+  const intl3 = getSystemLocale.intl;
+  obj[2] = intl3.string(getSystemLocale.t["cY+Oob"]);
   obj[3] = arg2;
   obj[4] = arg3;
-  const intl4 = require(1236) /* getSystemLocale */.intl;
+  const intl4 = getSystemLocale.intl;
   name = undefined;
   if (name != null) {
     name = name.name;
@@ -36,12 +39,12 @@ export default function confirmActivityChangeModal(name, channel) {
     name = intl5.string(tmp6(1236).t.G99XFs);
   }
   obj = { currentApplicationName: name, currentApplicationChannelName: null };
-  const obj2 = importDefault(4827);
+  const obj2 = setDefault;
   if (tmp6Result.isNullOrEmpty(str)) {
     const intl6 = tmp6(1236).intl;
     str = intl6.string(tmp6(1236).t.OGUjmt);
   }
   obj[1] = str;
-  obj[5] = intl4.format(require(1236) /* getSystemLocale */.t["5/Xort"], obj);
+  obj[5] = intl4.format(getSystemLocale.t["5/Xort"], obj);
   obj2.show(obj);
 };

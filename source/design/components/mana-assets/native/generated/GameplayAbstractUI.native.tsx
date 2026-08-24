@@ -1,18 +1,19 @@
-// Module ID: 5798
-// Function ID: 5799
+// Module ID: 5829
+// Function ID: 5830
 // Name: GameplayAbstractUI
-// Dependencies: [21, 5449, 5799, 2]
+// Dependencies: [21, 5454, 5830, 2]
 // Exports: GameplayAbstractUI
 
-// Module 5798 (GameplayAbstractUI)
-import { jsx } from "jsxProd";
+// Module 5829 (GameplayAbstractUI)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5830 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GameplayAbstractUI.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GameplayAbstractUI.native.tsx");
 
 export const GameplayAbstractUI = function GameplayAbstractUI(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const GameplayAbstractUI = function GameplayAbstractUI(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5799);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GameplayAbstractUI = function GameplayAbstractUI(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

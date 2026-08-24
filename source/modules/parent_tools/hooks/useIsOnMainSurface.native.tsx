@@ -1,21 +1,18 @@
-// Module ID: 16217
-// Function ID: 16218
+// Module ID: 16314
+// Function ID: 16315
 // Name: getIsOnMainSurface
-// Dependencies: [32, 19, 4230, 2]
+// Dependencies: [32, 19, 4234, 2]
 // Exports: useIsOnMainSurface
 
-// Module 16217 (getIsOnMainSurface)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import set from "getRootNavigationRef";
+// Module 16314 (getIsOnMainSurface)
+import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import set from "set" /* 2 */;
 
-const require = arg1;
+require = arg1;
 function getIsOnMainSurface() {
-  let index;
-  let index2;
-  let routes;
-  let routes2;
-  const rootNavigationRef = require(4230) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = getRootNavigationRef.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const rootState = rootNavigationRef.getRootState();
@@ -61,22 +58,20 @@ let set = new Set(["tabs", "channel"]);
 const result = set.fileFinishedImporting("modules/parent_tools/hooks/useIsOnMainSurface.native.tsx");
 
 export const useIsOnMainSurface = function useIsOnMainSurface() {
-  let require;
-  let tmp2;
   [tmp2, require] = callback(React.useState(getIsOnMainSurface), 2);
   const effect = React.useEffect(() => {
     function handleNavigationChange() {
-      return rootNavigationRef(outer1_5());
+      return rootNavigationRef(closure_1_5());
     }
-    const rootNavigationRef = outer1_0(outer1_1[2]).getRootNavigationRef();
+    const rootNavigationRef = closure_1_0(closure_1_1[2]).getRootNavigationRef();
     if (null != rootNavigationRef) {
-      rootNavigationRef(outer1_5());
+      rootNavigationRef(closure_1_5());
       rootNavigationRef.addListener("state", handleNavigationChange);
       return () => {
         rootNavigationRef.removeListener("state", handleNavigationChange);
       };
     }
-    const obj = outer1_0(outer1_1[2]);
+    const obj = closure_1_0(closure_1_1[2]);
   }, []);
   return tmp2;
 };

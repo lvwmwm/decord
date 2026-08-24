@@ -1,14 +1,15 @@
-// Module ID: 15199
-// Function ID: 15200
+// Module ID: 15263
+// Function ID: 15264
 // Name: useScreenRecordingStore
-// Dependencies: [644, 15200, 2]
+// Dependencies: [644, 15264, 2]
 
-// Module 15199 (useScreenRecordingStore)
-import keys from "keys";
+// Module 15263 (useScreenRecordingStore)
+import set from "set" /* 2 */;
+import keys from "keys" /* 644 */;
 
 let obj = keys.create((arg0, arg1) => {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   return {
     isRecording: false,
     microphoneEnabled: false,
@@ -64,11 +65,11 @@ let obj = keys.create((arg0, arg1) => {
       return callback({ currentStep: 0, stepStartedTime: Date.now(), isCompleted: false });
     },
     completeActionSheet() {
-      callback(15200).handleStopAndSend();
+      callback(15264).handleStopAndSend();
       callback({ currentStep: 0, stepStartedTime: null, isCompleted: false });
     }
   };
 });
-const result = require("set").fileFinishedImporting("modules/screen_recording/native/ScreenRecordingStore.tsx");
+const result = set.fileFinishedImporting("modules/screen_recording/native/ScreenRecordingStore.tsx");
 
 export const useScreenRecordingStore = obj;

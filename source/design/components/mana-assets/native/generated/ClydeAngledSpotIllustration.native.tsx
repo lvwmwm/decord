@@ -1,18 +1,19 @@
-// Module ID: 5590
-// Function ID: 5591
+// Module ID: 5597
+// Function ID: 5598
 // Name: ClydeAngledSpotIllustration
-// Dependencies: [21, 5449, 5591, 2]
+// Dependencies: [21, 5454, 5598, 2]
 // Exports: ClydeAngledSpotIllustration
 
-// Module 5590 (ClydeAngledSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 5597 (ClydeAngledSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5598 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ClydeAngledSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ClydeAngledSpotIllustration.native.tsx");
 
 export const ClydeAngledSpotIllustration = function ClydeAngledSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const ClydeAngledSpotIllustration = function ClydeAngledSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5591);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ClydeAngledSpotIllustration = function ClydeAngledSpotIllustration(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

@@ -4,7 +4,7 @@
 // Dependencies: [817]
 
 // Module 1107 (statsigIntegration)
-import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 

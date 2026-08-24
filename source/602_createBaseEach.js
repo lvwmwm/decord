@@ -6,8 +6,8 @@
 // Module 602 (createBaseEach)
 
 export default function createBaseEach(arg0) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   return (arg0, arg1) => {
     if (null == arg0) {
       return arg0;

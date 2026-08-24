@@ -1,34 +1,30 @@
-// Module ID: 9944
-// Function ID: 9945
+// Module ID: 9983
+// Function ID: 9984
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 676, 21, 4661, 4838, 7188, 1435, 9945, 5433, 1236, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4668, 4843, 7226, 1435, 9984, 5438, 1236, 2]
 // Exports: default
 
-// Module 9944 (IconUploader)
-import closure_3 from "createCacheKey";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { UPLOAD_MEDIUM_SIZE } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9983 (IconUploader)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAvatarURL from "getAvatarURL" /* 1435 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import GuildIconSizes from "GuildIconSizes" /* 7226 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 7226 */;
+import registerAssetDefault from "registerAsset" /* 9984 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { UPLOAD_MEDIUM_SIZE } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let c9;
-let closure_6;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 ({ View: c5, Image: closure_6 } = get_ActivityIndicator);
-({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
 let closure_11 = createCacheKey.createStyles({ uploadIcon: { position: "absolute", right: -7, top: -7 }, avatar: { height: 64, width: 64, borderRadius: 32 } });
-const result = require("get ActivityIndicator").fileFinishedImporting("components_native/common/IconUploader.tsx");
+const result = require("set").fileFinishedImporting("components_native/common/IconUploader.tsx");
 
 export default function IconUploader(disabled) {
-  let icon;
-  let iconStyle;
-  let importDefault;
-  let name;
-  let require;
   let flag = disabled.disabled;
   if (flag === undefined) {
     flag = false;
@@ -44,7 +40,7 @@ export default function IconUploader(disabled) {
     str = "avatar";
   }
   ({ name, icon, onUpload: require, iconStyle, onChangeIconPress: importDefault } = disabled);
-  let dependencyMap;
+  dependencyMap = undefined;
   function _handleChangeIcon(arg0) {
     const self = this;
     const tmp = _handleChangeIcon(function*() {
@@ -59,7 +55,7 @@ export default function IconUploader(disabled) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -74,19 +70,19 @@ export default function IconUploader(disabled) {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_1 = tmp5;
+              closure_1 = tmp5;
               let base64 = tmp2;
               base64 = undefined;
-              if (outer1_1 != null) {
-                outer1_1();
+              if (closure_1_1 != null) {
+                closure_1_1();
               }
               if (ref.current) {
                 c3 = 3;
               } else {
                 ref.current = true;
-                let obj1 = outer1_1(ref[6]);
+                obj1 = closure_1_1(ref[6]);
                 obj1 = { size: null };
-                obj1[0] = outer1_7;
+                obj1[0] = closure_1_7;
                 c3 = 1;
                 const obj2 = { value: null, done: false };
                 obj2[0] = obj1.openImagePicker(obj1);
@@ -115,7 +111,7 @@ export default function IconUploader(disabled) {
         }
       }
     });
-    _handleChangeIcon = tmp;
+    closure_3 = tmp;
     const apply = tmp.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -138,13 +134,13 @@ export default function IconUploader(disabled) {
       obj[0] = iconStyle;
       obj[1] = fnResult;
       obj[2] = name;
-      obj[3] = require(7188) /* GuildIconSizes */.GuildIconSizes.XLARGE;
-      let tmp7 = callback(importDefault(7188), obj);
-      const tmp12 = importDefault(7188);
+      obj[3] = GuildIconSizes.GuildIconSizes.XLARGE;
+      let tmp7 = callback(GuildIconSizesDefault, obj);
+      const tmp12 = GuildIconSizesDefault;
     }
     tmp8 = null == icon && null == name;
   } else {
-    let obj1 = require(1435) /* getAvatarURL */;
+    obj1 = getAvatarURL;
     obj = { style: null, source: null };
     const items = [tmp.avatar, iconStyle];
     obj[0] = items;
@@ -156,7 +152,7 @@ export default function IconUploader(disabled) {
   if (!flag) {
     obj1 = { style: null, source: null };
     obj1[0] = tmp.uploadIcon;
-    obj1[1] = importDefault(9945);
+    obj1[1] = registerAssetDefault;
     tmp16 = callback(closure_6, obj1);
   }
   items1[1] = tmp16;
@@ -166,8 +162,8 @@ export default function IconUploader(disabled) {
     let obj2 = { style: null, children: null };
     obj2[0] = disabled.style;
     const obj3 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj3[1] = intl.string(require(1236) /* getSystemLocale */.t["MsUY/S"]);
+    const intl = getSystemLocale.intl;
+    obj3[1] = intl.string(getSystemLocale.t["MsUY/S"]);
     obj3[2] = function handleChangeIcon() {
       const self = this;
       const apply = _handleChangeIcon.apply;
@@ -179,7 +175,7 @@ export default function IconUploader(disabled) {
       return applyArgumentsResult;
     };
     obj3[3] = tmp14Result;
-    obj2[1] = callback(require(5433) /* PressableBase */.PressableOpacity, obj3);
+    obj2[1] = callback(PressableBase.PressableOpacity, obj3);
     tmp22 = callback(closure_5, obj2);
   }
   return tmp22;

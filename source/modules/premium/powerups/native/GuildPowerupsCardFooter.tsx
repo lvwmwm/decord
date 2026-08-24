@@ -1,21 +1,28 @@
-// Module ID: 11693
-// Function ID: 11694
+// Module ID: 11742
+// Function ID: 11743
 // Name: GuildPowerupCardFooterActive
-// Dependencies: [17, 21, 4661, 4335, 712, 4734, 8074, 1236, 2367, 11694, 11669, 8307, 7979, 2]
+// Dependencies: [17, 21, 4668, 4339, 712, 4739, 8113, 1236, 2368, 11743, 11718, 8347, 8018, 2]
 // Exports: GuildPowerupsCardFooter
 
-// Module 11693 (GuildPowerupCardFooterActive)
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11742 (GuildPowerupCardFooterActive)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2368 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4339 */;
+import Text from "Text" /* 4739 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 8113 */;
+import apexExperiment from "apexExperiment" /* 8347 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 11718 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 11743 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 class GuildPowerupCardFooterActive {
   constructor(arg0) {
-    obj = { style: jsxs().inline, children: null };
-    obj = { size: "xs", color: null };
-    obj[1] = require("Themes").colors.STATUS_POSITIVE;
+    obj = { style: closure_6().inline, children: null };
+    obj = { size: "xs", color: require("Themes").colors.STATUS_POSITIVE };
     items = [, ];
     items[0] = jsx(require("CircleCheckIcon").CircleCheckIcon, obj);
     items[1] = jsx(require("Text").Text, { color: "status-positive", variant: "text-sm/bold", children: global.text });
@@ -25,15 +32,13 @@ class GuildPowerupCardFooterActive {
 }
 class GuildPowerupCardFooterExpiring {
   constructor(arg0) {
-    obj = { style: jsxs().inline, children: null };
-    obj = { size: "xs", color: null };
-    obj[1] = require("Themes").colors.STATUS_WARNING;
+    obj = { style: closure_6().inline, children: null };
+    obj = { size: "xs", color: require("Themes").colors.STATUS_WARNING };
     items = [, ];
     items[0] = jsx(require("CircleErrorIcon").CircleErrorIcon, obj);
     obj1 = { color: "text-feedback-warning", variant: "text-sm/bold", children: null };
     intl = require("getSystemLocale").intl;
-    obj2 = { dateString: null };
-    obj2[0] = require("entitlementExpirationDateToString")(global.dateString);
+    obj2 = { dateString: require("entitlementExpirationDateToString")(global.dateString) };
     obj1[2] = intl.formatToMarkdownString(require("messagesProxy")["ol/ao/"], obj2);
     items[1] = jsx(require("Text").Text, obj1);
     obj[1] = items;
@@ -42,15 +47,13 @@ class GuildPowerupCardFooterExpiring {
 }
 class GuildPowerupCardFooterRemoving {
   constructor(arg0) {
-    obj = { style: jsxs().inline, children: null };
-    obj = { size: "xs", color: null };
-    obj[1] = require("Themes").colors.STATUS_WARNING;
+    obj = { style: closure_6().inline, children: null };
+    obj = { size: "xs", color: require("Themes").colors.STATUS_WARNING };
     items = [, ];
     items[0] = jsx(require("CircleErrorIcon").CircleErrorIcon, obj);
     obj1 = { color: "text-feedback-warning", variant: "text-sm/bold", children: null };
     intl = require("getSystemLocale").intl;
-    obj2 = { dateString: null };
-    obj2[0] = require("getGuildPowerupFormattedDateString")(global.removingAt);
+    obj2 = { dateString: require("getGuildPowerupFormattedDateString")(global.removingAt) };
     obj1[2] = intl.formatToPlainString(require("messagesProxy")["6e2ry1"], obj2);
     items[1] = jsx(require("Text").Text, obj1);
     obj[1] = items;
@@ -100,7 +103,7 @@ class GuildPowerupCardFooterCost {
     ({ cost, costDecorator } = global);
     tmp2 = closure_0;
     tmp3 = closure_2;
-    tmp = jsxs();
+    tmp = closure_6();
     tmp4 = require("apexExperiment");
     tmp7Result = null;
     if (null != cost) {
@@ -135,9 +138,10 @@ class GuildPowerupCardFooterCost {
     return tmp7Result;
   }
 }
+const View = get_ActivityIndicator.View;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ container: { justifyContent: "space-between" }, inline: { flexDirection: "row", alignItems: "center", gap: 2 } });
-const result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsCardFooter.tsx");
+const result = set.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsCardFooter.tsx");
 
 export { GuildPowerupCardFooterActive };
 export { GuildPowerupCardFooterExpiring };

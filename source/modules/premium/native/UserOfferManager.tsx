@@ -1,18 +1,19 @@
-// Module ID: 16719
-// Function ID: 16720
+// Module ID: 16815
+// Function ID: 16816
 // Name: prototype
-// Dependencies: [1922, 7421, 505, 5038, 7696, 1945, 7876, 2]
+// Dependencies: [1922, 7459, 505, 5043, 7734, 1945, 7915, 2]
 
-// Module 16719 (prototype)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import emitChanges from "emitChanges";
-import { PaymentGateways } from "sum";
-import "initialize";
+// Module 16815 (prototype)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "emitChanges" /* 7459 */;
+import { PaymentGateways } from "sum" /* 505 */;
 
 let require = arg1;
+initializeDefault;
 let prototype = function UserOfferManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const require = applyArgumentsResult;
+  require = applyArgumentsResult;
   applyArgumentsResult.actions = {
     POST_CONNECTION_OPEN() {
       return applyArgumentsResult.handlePostConnectionOpen();
@@ -44,6 +45,6 @@ let prototype = function UserOfferManager() {
 class prototype extends tmp2 {
 }
 prototype = new prototype();
-const result = require("sum").fileFinishedImporting("modules/premium/native/UserOfferManager.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/UserOfferManager.tsx");
 
 export default prototype;

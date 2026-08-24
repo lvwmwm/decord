@@ -1,31 +1,30 @@
-// Module ID: 6859
-// Function ID: 6860
+// Module ID: 6897
+// Function ID: 6898
 // Name: isValidFormResponse
-// Dependencies: [6860, 676, 4200, 1370, 2]
+// Dependencies: [6898, 676, 4204, 1370, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 6859 (isValidFormResponse)
-import items from "items";
-import { GuildFeatures } from "ME";
+// Module 6897 (isValidFormResponse)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4204 */;
+import items from "items" /* 6898 */;
 
-let c3;
-let obj1;
 ({ AUTOMATIC_APPROVAL_FORM_FIELDS: obj1, MANUAL_APPROVAL_FORM_FIELDS: c3 } = items);
-const result = require("MAX_RESULTS_PER_PAGE").fileFinishedImporting("modules/guild_member_verification/MemberVerificationUtils.tsx");
+const GuildFeatures = ME.GuildFeatures;
+const result = set.fileFinishedImporting("modules/guild_member_verification/MemberVerificationUtils.tsx");
 
 export const isValidFormResponse = function isValidFormResponse(required) {
-  let field_type;
-  let response;
   ({ response, field_type } = required);
   if (required.required) {
     if (null == response) {
       return false;
     } else {
-      if (require(4200) /* MAX_RESULTS_PER_PAGE */.VerificationFormFieldTypes.TERMS !== field_type) {
-        if (tmp4(4200).VerificationFormFieldTypes.VERIFICATION !== field_type) {
-          if (tmp4(4200).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
-            if (tmp4(4200).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
-              if (tmp4(4200).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+      if (MAX_RESULTS_PER_PAGE.VerificationFormFieldTypes.TERMS !== field_type) {
+        if (tmp4(4204).VerificationFormFieldTypes.VERIFICATION !== field_type) {
+          if (tmp4(4204).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
+            if (tmp4(4204).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
+              if (tmp4(4204).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
                 return typeof response === "number";
               } else {
                 return tmp4(1370).assertNever(field_type);

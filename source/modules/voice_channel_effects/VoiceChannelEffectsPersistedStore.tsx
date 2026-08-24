@@ -1,12 +1,16 @@
-// Module ID: 7307
-// Function ID: 7308
+// Module ID: 7345
+// Function ID: 7346
 // Name: initialize
-// Dependencies: [7308, 589, 709, 2]
+// Dependencies: [7346, 589, 709, 2]
 
-// Module 7307 (initialize)
-import { VoiceChannelEffectAnimationType as closure_1 } from "VoiceChannelEffectAnimationType";
-import { PersistedStore } from "initialize";
+// Module 7345 (initialize)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import VoiceChannelEffectAnimationType from "VoiceChannelEffectAnimationType" /* 7346 */;
 
+let closure_1 = VoiceChannelEffectAnimationType.VoiceChannelEffectAnimationType;
+const PersistedStore = initializeDefault.PersistedStore;
 class VoiceChannelEffectsPersistedStore extends PersistedStore {
 }
 const prototype = VoiceChannelEffectsPersistedStore.prototype;
@@ -24,11 +28,11 @@ prototype["getState"] = function getState() {
 };
 VoiceChannelEffectsPersistedStore.displayName = "VoiceChannelEffectsPersistedStore";
 VoiceChannelEffectsPersistedStore.persistKey = "VoiceChannelEffectsPersistedStore";
-const voiceChannelEffectsPersistedStore = new VoiceChannelEffectsPersistedStore(require("dispatcher"), {
+const voiceChannelEffectsPersistedStore = new VoiceChannelEffectsPersistedStore(dispatcherDefault, {
   VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE: function handleToggleAnimationType() {
     closure_0 = closure_0 === constants.BASIC ? tmp.PREMIUM : tmp.BASIC;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsPersistedStore.tsx");
+const result = set.fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsPersistedStore.tsx");
 
 export default voiceChannelEffectsPersistedStore;

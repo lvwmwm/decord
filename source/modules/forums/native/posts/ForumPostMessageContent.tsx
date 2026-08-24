@@ -1,34 +1,29 @@
-// Module ID: 11200
-// Function ID: 11201
+// Module ID: 11251
+// Function ID: 11252
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 4661, 11201, 4734, 2]
+// Dependencies: [19, 21, 4668, 11252, 4739, 2]
 // Exports: default
 
-// Module 11200 (ForumPostMessageContent)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11251 (ForumPostMessageContent)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 11252 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_4 = createCacheKey.createStyles({ text: { alignSelf: "flex-start" } });
-const result = require("createCacheKey").fileFinishedImporting("modules/forums/native/posts/ForumPostMessageContent.tsx");
+const result = require("set").fileFinishedImporting("modules/forums/native/posts/ForumPostMessageContent.tsx");
 
 export default function ForumPostMessageContent(senderModifier) {
-  let content;
-  let hasUnreads;
-  let isMessageDeleted;
-  let message;
-  let messageContent;
-  let messageLoaded;
-  let style;
-  let variant;
   let num = senderModifier.lineClamp;
   ({ messageContent, message, isMessageDeleted, hasUnreads, messageLoaded } = senderModifier);
   if (num === undefined) {
     num = 2;
   }
   const tmp = callback();
-  ({ content, style, variant } = importDefault(11201)({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier: senderModifier.senderModifier }));
+  ({ content, style, variant } = useNativeForumPostContentDefault({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier: senderModifier.senderModifier }));
   const obj = { variant, color: null, lineClamp: null, ellipsizeMode: "tail", includeFontPadding: true, style: null, children: null };
   let str = "text-muted";
   if (hasUnreads) {
@@ -39,5 +34,5 @@ export default function ForumPostMessageContent(senderModifier) {
   const items = [style, tmp.text];
   obj[5] = items;
   obj[6] = content;
-  return jsx(require(4734) /* Text */.Text, { variant, color: null, lineClamp: null, ellipsizeMode: "tail", includeFontPadding: true, style: null, children: null });
+  return jsx(Text.Text, { variant, color: null, lineClamp: null, ellipsizeMode: "tail", includeFontPadding: true, style: null, children: null });
 };

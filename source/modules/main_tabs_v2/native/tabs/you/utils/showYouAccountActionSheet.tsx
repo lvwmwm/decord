@@ -1,13 +1,17 @@
-// Module ID: 15629
-// Function ID: 15630
+// Module ID: 15697
+// Function ID: 15698
 // Name: showYouAccountActionSheet
-// Dependencies: [15630, 4342, 15631, 2007, 2]
+// Dependencies: [15698, 4346, 15699, 2008, 2]
 // Exports: showYouAccountActionSheet
 
-// Module 15629 (showYouAccountActionSheet)
-import { YOU_ACCOUNT_ACTION_SHEET_KEY as closure_3 } from "YOU_SCREEN_ID";
+// Module 15697 (showYouAccountActionSheet)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import YOU_SCREEN_ID from "YOU_SCREEN_ID" /* 15698 */;
 
-const result = require("YouStatusRadioGroup").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/utils/showYouAccountActionSheet.tsx");
+let closure_3 = YOU_SCREEN_ID.YOU_ACCOUNT_ACTION_SHEET_KEY;
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/utils/showYouAccountActionSheet.tsx");
 
 export const showYouAccountActionSheet = function showYouAccountActionSheet() {
   let flag = arg0;
@@ -18,5 +22,5 @@ export const showYouAccountActionSheet = function showYouAccountActionSheet() {
   if (arg1 === undefined) {
     flag2 = true;
   }
-  importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(15631, dependencyMap.paths), closure_3, { statusOnly: flag, disableHapticOnOpen: flag2 });
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(15699, dependencyMap.paths), closure_3, { statusOnly: flag, disableHapticOnOpen: flag2 });
 };

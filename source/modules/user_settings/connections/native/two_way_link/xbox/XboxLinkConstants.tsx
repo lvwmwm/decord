@@ -1,9 +1,11 @@
-// Module ID: 9752
-// Function ID: 9753
+// Module ID: 9791
+// Function ID: 9792
 // Name: XboxLinkModalScenes
 // Dependencies: [2]
 
-// Module 9752 (XboxLinkModalScenes)
-const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkConstants.tsx");
+// Module 9791 (XboxLinkModalScenes)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkConstants.tsx");
 
 export const XboxLinkModalScenes = { LANDING: "landing", PRE_CONNECT: "pre-connect", DISCORD_CONSENT: "discord-consent", SUCCESS: "success", EDUCATION: "education", ERROR: "error" };

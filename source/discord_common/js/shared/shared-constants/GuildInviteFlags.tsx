@@ -1,10 +1,10 @@
-// Module ID: 8056
-// Function ID: 8057
+// Module ID: 8095
+// Function ID: 8096
 // Name: set
 // Dependencies: [2]
 
-// Module 8056 (set)
-import set from "set";
+// Module 8095 (set)
+import set from "set" /* 2 */;
 
 const obj = { ALL: null };
 let set = new Set([1, 2, 4, 16]);

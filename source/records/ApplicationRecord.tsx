@@ -1,18 +1,20 @@
-// Module ID: 4479
-// Function ID: 4480
+// Module ID: 4483
+// Function ID: 4484
 // Name: createExecutable
-// Dependencies: [1931, 4480, 1930, 4481, 4482, 4483, 1435, 4485, 506, 11, 2]
+// Dependencies: [1931, 4484, 1930, 4485, 4486, 4487, 1435, 4489, 506, 11, 2]
 
-// Module 4479 (createExecutable)
-import "toJS";
-import createFromServer from "createFromServer";
-import createdAt from "createdAt";
-import items3 from "items3";
-import { ApplicationTypes } from "ApplicationTypes";
+// Module 4483 (createExecutable)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import fromStringAll from "fromString" /* 506 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import toJSDefault from "toJS" /* 1931 */;
+import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 4489 */;
+import closure_4 from "createFromServer" /* 4484 */;
+import closure_5 from "createdAt" /* 1930 */;
+import items3 from "items3" /* 4485 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 4486 */;
 
-let END_GAME_APPLICATION_ID;
-let POKER_NIGHT_APPLICATION_ID;
-const require = arg1;
+require = arg1;
 function createExecutable(os) {
   const obj = { os: os.os, name: os.name };
   if (null != os.arguments) {
@@ -23,6 +25,7 @@ function createExecutable(os) {
   }
   return obj;
 }
+toJSDefault;
 ({ END_GAME_APPLICATION_ID, POKER_NIGHT_APPLICATION_ID } = items3);
 let closure_7 = { [POKER_NIGHT_APPLICATION_ID]: 7, [END_GAME_APPLICATION_ID]: 12 };
 let BasicApplicationRecord;
@@ -75,7 +78,7 @@ BasicApplicationRecord["createFromServer"] = function createFromServer(bot) {
   ({ cover_image: obj.coverImage, primary_sku_id: obj.primarySkuId } = bot);
   let tmp3 = null;
   if (null != bot.bot) {
-    tmp3 = new createdAt(bot.bot);
+    tmp3 = new closure_5(bot.bot);
   }
   obj.bot = tmp3;
   ({ third_party_skus: obj.thirdPartySkus, role_connections_verification_url: obj.roleConnectionsVerificationUrl, parent_id: obj.parentId, connection_entrypoint_url: obj._connectionEntrypointUrl, content_classification: obj.contentClassification } = bot);
@@ -83,7 +86,7 @@ BasicApplicationRecord["createFromServer"] = function createFromServer(bot) {
 };
 Object.defineProperty(prototype, "connectionEntrypointUrl", {
   get: function connectionEntrypointUrl(arg0) {
-    const obj = require(4483) /* items */.APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS[this.id];
+    const obj = require(4487) /* items */.APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS[this.id];
     let prop;
     if (obj != null) {
       prop = obj.connectionEntrypointUrlOverride;
@@ -101,7 +104,7 @@ Object.defineProperty(prototype, "connectionEntrypointUrl", {
 prototype["getIconURL"] = function getIconURL(arg0, arg1) {
   let gameAssetURL = null;
   if (null != this.icon) {
-    let obj = importDefault(1435);
+    let obj = getAvatarURLDefault;
     obj = { id: null, hash: null, size: null, format: null };
     ({ id: obj2[0], icon: obj2[1] } = this);
     obj[2] = arg0;
@@ -113,7 +116,7 @@ prototype["getIconURL"] = function getIconURL(arg0, arg1) {
 prototype["getIconSource"] = function getIconSource(arg0, arg1) {
   let gameAssetSource = null;
   if (null != this.icon) {
-    let obj = importDefault(1435);
+    let obj = getAvatarURLDefault;
     obj = { id: null, hash: null, size: null, format: null };
     ({ id: obj2[0], icon: obj2[1] } = this);
     obj[2] = arg0;
@@ -125,7 +128,7 @@ prototype["getIconSource"] = function getIconSource(arg0, arg1) {
 prototype["getSplashURL"] = function getSplashURL(arg0, arg1) {
   let gameAssetURL = null;
   if (null != this.splash) {
-    let obj = importDefault(1435);
+    let obj = getAvatarURLDefault;
     obj = { id: null, hash: null, size: null, keepAspectRatio: true, format: null };
     ({ id: obj2[0], splash: obj2[1] } = this);
     obj[2] = arg0;
@@ -137,7 +140,7 @@ prototype["getSplashURL"] = function getSplashURL(arg0, arg1) {
 prototype["getCoverImageURL"] = function getCoverImageURL(arg0) {
   let applicationIconURL = null;
   if (null != this.coverImage) {
-    let obj = importDefault(1435);
+    let obj = getAvatarURLDefault;
     obj = { id: null, icon: null, size: null, keepAspectRatio: true };
     ({ id: obj2[0], coverImage: obj2[1] } = this);
     obj[2] = arg0;
@@ -277,32 +280,30 @@ class ApplicationRecord extends BasicApplicationRecord {
 }
 const prototype2 = ApplicationRecord.prototype;
 ApplicationRecord["createFromServer"] = function createFromServer(bot) {
-  let linked_games;
-  let overlay_methods;
   let obj = {};
   let merged = Object.assign(bot);
   ({ cover_image: obj.coverImage, primary_sku_id: obj.primarySkuId } = bot);
   let tmp3 = null;
   if (null != bot.bot) {
-    tmp3 = new createdAt(bot.bot);
+    tmp3 = new closure_5(bot.bot);
   }
   obj.bot = tmp3;
   ({ third_party_skus: obj.thirdPartySkus, role_connections_verification_url: obj.roleConnectionsVerificationUrl, overlay_warn: obj.overlayWarn, overlay_compatibility_hook: obj.overlayCompatibilityHook, overlay_methods } = bot);
   if (overlay_methods == null) {
-    overlay_methods = require(4485) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.DEFAULT;
+    overlay_methods = ApplicationOverlayMethodFlags.ApplicationOverlayMethodFlags.DEFAULT;
   }
   obj.overlayMethods = overlay_methods;
   ({ hook: obj.hook, store_listing_sku_id: obj.storeListingSkuId, guild_id: obj.guildId, guild: obj.guild } = bot);
   if (null != bot.publishers) {
     const publishers = bot.publishers;
-    let mapped = publishers.map(createFromServer.createFromServer);
+    let mapped = publishers.map(closure_4.createFromServer);
   } else {
     mapped = [];
   }
   obj.publishers = mapped;
   if (null != bot.developers) {
     const developers = bot.developers;
-    let mapped1 = developers.map(createFromServer.createFromServer);
+    let mapped1 = developers.map(closure_4.createFromServer);
   } else {
     mapped1 = [];
   }
@@ -315,7 +316,7 @@ ApplicationRecord["createFromServer"] = function createFromServer(bot) {
   if (num == null) {
     num = 0;
   }
-  obj.flags = importAll(506).deserialize(num);
+  obj.flags = fromStringAll.deserialize(num);
   ({ max_participants: obj.maxParticipants, tags: obj.tags, embedded_activity_config: obj.embeddedActivityConfig } = bot);
   let fromEntriesResult;
   if (null != bot.integration_types_config) {
@@ -323,8 +324,6 @@ ApplicationRecord["createFromServer"] = function createFromServer(bot) {
     const _Object2 = Object;
     const entries = Object.entries(bot.integration_types_config);
     fromEntriesResult = Object.fromEntries(entries.map((arg0) => {
-      let obj;
-      let tmp;
       [tmp, obj] = arg0;
       const items = [tmp, ];
       if (obj == null) {
@@ -356,8 +355,8 @@ ApplicationRecord["createFromServer"] = function createFromServer(bot) {
 prototype2["getCanonicalGameId"] = function getCanonicalGameId() {
   const self = this;
   if (this.type === ApplicationTypes.GAME) {
-    let castResult = importDefault(11).cast(self.id);
-    const obj = importDefault(11);
+    let castResult = DISCORD_EPOCHDefault.cast(self.id);
+    const obj = DISCORD_EPOCHDefault;
   } else {
     const linkedGames = self.linkedGames;
     castResult = undefined;
@@ -610,7 +609,7 @@ prototype2["mergeFromApplicationUpdate"] = function mergeFromApplicationUpdate(i
     let mapped = linkedGames;
     if (null != linkedGames) {
       mapped = linkedGames.map((application) => {
-        const linkedGames = application;
+        linkedGames = application;
         if (null != application.application) {
           return application;
         } else {
@@ -685,10 +684,10 @@ Object.defineProperty(prototype2, "supportsOutOfProcessOverlay", {
   set: undefined
 });
 ApplicationRecord["supportsOutOfProcessOverlay"] = function supportsOutOfProcessOverlay(arg0) {
-  const OUT_OF_PROCESS = require(4485) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.OUT_OF_PROCESS;
+  const OUT_OF_PROCESS = ApplicationOverlayMethodFlags.ApplicationOverlayMethodFlags.OUT_OF_PROCESS;
   return null != arg0 && (arg0 & OUT_OF_PROCESS) === OUT_OF_PROCESS;
 };
-const result = require("createdAt").fileFinishedImporting("records/ApplicationRecord.tsx");
+const result = require("set").fileFinishedImporting("records/ApplicationRecord.tsx");
 
 export default ApplicationRecord;
 export { createExecutable };

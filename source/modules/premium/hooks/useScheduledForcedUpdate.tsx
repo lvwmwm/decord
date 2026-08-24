@@ -1,11 +1,11 @@
-// Module ID: 12901
-// Function ID: 12902
+// Module ID: 12956
+// Function ID: 12957
 // Name: useScheduledForcedUpdate
-// Dependencies: [19, 7411, 2]
+// Dependencies: [19, 7449, 2]
 // Exports: default
 
-// Module 12901 (useScheduledForcedUpdate)
-import noop from "noop";
+// Module 12956 (useScheduledForcedUpdate)
+import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/hooks/useScheduledForcedUpdate.tsx");

@@ -1,23 +1,24 @@
-// Module ID: 12625
-// Function ID: 12626
+// Module ID: 12679
+// Function ID: 12680
 // Name: RaisedHandIcon
-// Dependencies: [19, 17, 1990, 21, 4661, 712, 4981, 1297, 8119, 1494, 589, 6703, 4796, 6377, 1236, 8057, 12608, 1363, 12626, 2]
+// Dependencies: [19, 17, 1991, 21, 4668, 712, 4986, 1297, 8158, 1494, 589, 6740, 4801, 6408, 1236, 8096, 12662, 1363, 12680, 2]
 // Exports: getTileWidthStyle
 
-// Module 12625 (RaisedHandIcon)
-import { View } from "AccessibilityAnnouncer";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "set";
+// Module 12679 (RaisedHandIcon)
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4986 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function RaisedHandIcon(rtsState) {
   const tmp = styles();
-  let activeBackground = rtsState.rtsState === require(4981) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
-  const unsafe_rawColors = importDefault(712).unsafe_rawColors;
+  let activeBackground = rtsState.rtsState === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  const unsafe_rawColors = ThemesDefault.unsafe_rawColors;
   if (activeBackground) {
     let PRIMARY_800 = unsafe_rawColors.WHITE;
     let tmp5 = tmp4;
@@ -31,28 +32,23 @@ function RaisedHandIcon(rtsState) {
   }
   let obj = { style: items, children: null };
   items[1] = activeBackground;
-  obj = { style: tmp.raisedHand, source: null, color: null };
-  obj[1] = tmp5(8119);
-  obj[2] = PRIMARY_800;
-  obj[1] = closure_5(require(1297) /* Button */.Icon, obj);
+  obj = { style: tmp.raisedHand, source: tmp5(8158), color: PRIMARY_800 };
+  obj[1] = closure_5(Button.Icon, obj);
   return closure_5(View, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { touchableContainer: { overflow: "visible" }, container: { alignItems: "center" }, avatarContainer: { position: "relative", padding: 8, paddingTop: 0, paddingBottom: 4 }, raisedHandContainer: null, activeBackground: null, raisedHand: null, nameplateContainer: null, usernameText: null, faded: null };
-obj = { position: "absolute", top: -8, right: 0, height: 24, width: 24, alignItems: "center", justifyContent: "center", borderRadius: 12, borderWidth: 2, borderColor: require("Themes").unsafe_rawColors.PRIMARY_800, backgroundColor: require("Themes").colors.WHITE };
+obj = { position: "absolute", top: -8, right: 0, height: 24, width: 24, alignItems: "center", justifyContent: "center", borderRadius: 12, borderWidth: 2, borderColor: ThemesDefault.unsafe_rawColors.PRIMARY_800, backgroundColor: ThemesDefault.colors.WHITE };
 obj[3] = obj;
-createCacheKey = { backgroundColor: require("Themes").unsafe_rawColors.GREEN_360 };
+createCacheKey = { backgroundColor: ThemesDefault.unsafe_rawColors.GREEN_360 };
 obj[4] = createCacheKey;
 obj[5] = { height: 13, width: 13, alignItems: "center", justifyContent: "center", resizeMode: "contain" };
 obj[6] = { flexDirection: "row", alignItems: "center", justifyContent: "center" };
-obj[7] = { fontSize: 14, color: require("Themes").colors.WHITE };
+obj[7] = { fontSize: 14, color: ThemesDefault.colors.WHITE };
 obj[8] = { opacity: 0.5 };
 const styles = createCacheKey.createStyles(obj);
-let obj2 = { fontSize: 14, color: require("Themes").colors.WHITE };
+let obj2 = { fontSize: 14, color: ThemesDefault.colors.WHITE };
 const memoResult = importAllResult.memo((channel) => {
-  let blocked;
-  let ignored;
-  let rtsState;
   channel = channel.channel;
   const participant = channel.participant;
   const user = participant.user;
@@ -63,12 +59,12 @@ const memoResult = importAllResult.memo((channel) => {
   const diff = user(guildId[9])().width - 46;
   guildId = channel.getGuildId();
   let obj = channel(guildId[10]);
-  const items = [trackCommunicationDisabled];
+  const items = [closure_4];
   const items1 = [guildId, user.id];
   let stateFromStores = obj.useStateFromStores(items, () => {
     let tmp2 = null != guildId;
     if (tmp2) {
-      const member = outer1_4.getMember(tmp, user.id);
+      const member = closure_1_4.getMember(tmp, user.id);
       let premiumSince;
       if (member != null) {
         premiumSince = member.premiumSince;
@@ -77,7 +73,7 @@ const memoResult = importAllResult.memo((channel) => {
     }
     return Boolean(tmp2);
   }, items1);
-  let obj1 = channel(guildId[11]);
+  obj1 = channel(guildId[11]);
   let result = obj1.isRequestedToSpeakAll(rtsState);
   let obj2 = user(guildId[12]);
   const name = obj2.getName(guildId, channel.id, user);
@@ -99,9 +95,7 @@ const memoResult = importAllResult.memo((channel) => {
     obj.showUserProfile(obj);
   };
   obj = { style: tmp.avatarContainer, children: null };
-  obj1 = { user, guildId: null, size: null, style: null };
-  obj1[1] = guildId;
-  obj1[2] = channel(guildId[7]).AvatarSizes.LARGE;
+  obj1 = { user, guildId, size: channel(guildId[7]).AvatarSizes.LARGE, style: null };
   let faded = tmp10;
   if (tmp10) {
     faded = tmp.faded;
@@ -171,7 +165,7 @@ const memoResult = importAllResult.memo((channel) => {
     const tmp19 = tmp6(tmp3[17]).isThemeDark(theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
   }
 });
-let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/stage_channels/native/components/AudienceTile.tsx");
+let result = require("set").fileFinishedImporting("modules/stage_channels/native/components/AudienceTile.tsx");
 
 export default memoResult;
 export const useAudienceTileStyles = styles;

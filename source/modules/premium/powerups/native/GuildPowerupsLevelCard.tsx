@@ -1,31 +1,28 @@
-// Module ID: 11734
-// Function ID: 11735
+// Module ID: 11783
+// Function ID: 11784
 // Name: GuildLevelPowerupHeader
-// Dependencies: [19, 17, 4262, 676, 11735, 21, 4661, 712, 4756, 7979, 8307, 11717, 11696, 4734, 1236, 2367, 11668, 11688, 11736, 11737, 11693, 2]
+// Dependencies: [19, 17, 4266, 676, 11784, 21, 4668, 712, 4761, 8018, 8347, 11766, 11745, 4739, 1236, 2368, 11717, 11737, 11785, 11786, 11742, 2]
 // Exports: default
 
-// Module 11734 (GuildLevelPowerupHeader)
-import importDefaultResult1 from "importDefaultResult1";
-import { View } from "useCalculatePowerupCardStatus";
-import BoostedGuildTiers from "BoostedGuildTiers";
-import ME from "ME";
-import { TIER_CARDS } from "BoostedGuildTiers";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 11783 (GuildLevelPowerupHeader)
+import ThemesDefault from "Themes" /* 712 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import BoostGemIcon from "BoostGemIcon" /* 8018 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 11717 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 11785 */;
+import importDefaultResult1Default from "importDefaultResult1" /* 11786 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4266 */;
+import ME from "ME" /* 676 */;
+import { TIER_CARDS } from "BoostedGuildTiers" /* 11784 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function GuildLevelPowerupHeader(arg0) {
-  let active;
-  let nextActive;
-  let position;
   ({ active, nextActive, position } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback();
   if (active) {
     if (false !== nextActive) {
       const items = [tmp.boostContainerActive.backgroundColor, tmp.boostContainerActive.backgroundColor];
@@ -44,7 +41,7 @@ function GuildLevelPowerupHeader(arg0) {
     items1[1] = progressStart;
     items1[2] = position === constants.END && tmp.progressEnd;
     obj[3] = items1;
-    const items2 = [closure_10(importDefault(4756), obj), , ];
+    const items2 = [closure_10(LinearGradientDefault, obj), , ];
     obj = { style: null };
     const items3 = [, ];
     ({ boostContainer: arr6[0], boostContainerBackground: arr6[1] } = tmp);
@@ -55,13 +52,13 @@ function GuildLevelPowerupHeader(arg0) {
     if (active) {
       boostContainerActive = tmp.boostContainerActive;
     }
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     items4[1] = boostContainerActive;
     obj1[0] = items4;
-    const colors = importDefault(712).colors;
+    const colors = ThemesDefault.colors;
     const obj2 = { size: "xs", color: null };
     obj2[1] = active ? colors.WHITE : colors.TEXT_MUTED;
-    obj1[1] = closure_10(require(7979) /* BoostGemIcon */.BoostGemIcon, obj2);
+    obj1[1] = closure_10(BoostGemIcon.BoostGemIcon, obj2);
     items2[2] = closure_10(View, obj1);
     obj[1] = items2;
     return closure_11(View, obj);
@@ -77,18 +74,18 @@ function GuildLevelPowerupHeader(arg0) {
 class GuildPowerupLevelBody {
   constructor(arg0) {
     index = global.index;
-    c1 = undefined;
-    c2 = undefined;
+    closure_1 = undefined;
+    closure_2 = undefined;
     textColor = undefined;
     iconColor = undefined;
-    tmp = jsxs();
-    c1 = tmp;
-    tmp3 = c2;
+    tmp = closure_12();
+    closure_1 = tmp;
+    tmp3 = closure_2;
     tmp2 = index;
     obj = require("apexExperiment");
     manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupLevelBody");
-    c2 = manaTypeConsolidationExperiment;
-    tmp5 = c1;
+    closure_2 = manaTypeConsolidationExperiment;
+    tmp5 = closure_1;
     tmp6 = require("useGuildPowerupColorConfig")(global.isActive);
     textColor = tmp6.textColor;
     iconColor = tmp6.iconColor;
@@ -102,10 +99,10 @@ class GuildPowerupLevelBody {
     obj = { style: tmp.perkRowContainer, children: null };
     items1 = [, ];
     items1[0] = textColor.useMemo(() => {
-      if (null == outer1_9[index]) {
+      if (null == closure_1_9[index]) {
         return [];
       } else {
-        if (tmp.tier === outer1_7.TIER_3) {
+        if (tmp.tier === closure_1_7.TIER_3) {
           const perks = tmp.perks;
           let substr = perks.slice(0, -1);
         } else {
@@ -114,20 +111,20 @@ class GuildPowerupLevelBody {
         let mapped;
         if (substr != null) {
           mapped = substr.map((perkIcon) => {
-            let obj = outer1_0(outer1_2[12]);
+            let obj = closure_1_0(closure_1_2[12]);
             obj = { style: closure_1.perkRowStyle, children: null };
             obj = { color: closure_4, size: "sm" };
-            const items = [outer1_10(obj.getIconForPerk(perkIcon.perkIcon), obj), ];
-            const obj1 = { color: importDefaultResult1, style: closure_1.perkText, variant: null, children: null };
+            const items = [closure_1_10(obj.getIconForPerk(perkIcon.perkIcon), obj), ];
+            obj1 = { color: closure_3, style: closure_1.perkText, variant: null, children: null };
             let str = "text-sm/medium";
             if (closure_2) {
               str = "experimental/body-sm/normal";
             }
             obj1[2] = str;
             obj1[3] = perkIcon.getCopy();
-            items[1] = outer1_10(outer1_0(outer1_2[13]).Text, obj1);
+            items[1] = closure_1_10(closure_1_0(closure_1_2[13]).Text, obj1);
             obj[1] = items;
-            return outer1_11(outer1_4, obj, "perk-" + closure_0 + "-" + arg1);
+            return closure_1_11(closure_1_4, obj, "perk-" + closure_0 + "-" + arg1);
           });
         }
         return mapped;
@@ -151,53 +148,48 @@ class GuildPowerupLevelBody {
   }
 }
 ({ LevelCardPosition: c5, PowerupActiveStatusType: closure_6 } = BoostedGuildTiers);
-({ BoostedGuildTiers: error, HorizontalGradient: metroImportAll } = ME);
+({ BoostedGuildTiers: error, HorizontalGradient: closure_8 } = ME);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 createCacheKey = { cardContainer: { flex: 1 }, card: { padding: 0, overflow: "hidden", flex: 1 }, progressContainer: null, progress: null, progressStart: null, progressEnd: null, boostContainerBackground: null, boostContainer: null, boostContainerActive: null, boostContainerInactive: null, contentContainer: null, perkRowContainer: null, perkRow: null, perkRowStyle: null, perkText: null, footerContainer: null };
-createCacheKey = { marginVertical: require("Themes").space.PX_24, position: "relative" };
+createCacheKey = { marginVertical: ThemesDefault.space.PX_24, position: "relative" };
 createCacheKey[2] = createCacheKey;
-createCacheKey[3] = { height: 6, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-let obj1 = { height: 6, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-createCacheKey[4] = { marginStart: require("Themes").space.PX_16 };
-let obj2 = { marginStart: require("Themes").space.PX_16 };
-createCacheKey[5] = { marginEnd: require("Themes").space.PX_16, borderTopEndRadius: require("Themes").radii.round, borderBottomEndRadius: require("Themes").radii.round };
-const obj3 = { marginEnd: require("Themes").space.PX_16, borderTopEndRadius: require("Themes").radii.round, borderBottomEndRadius: require("Themes").radii.round };
-createCacheKey[6] = { backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT, width: 28, height: 28, start: require("Themes").space.PX_16 - 2, top: -11 };
-const obj4 = { backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT, width: 28, height: 28, start: require("Themes").space.PX_16 - 2, top: -11 };
-createCacheKey[7] = { padding: require("Themes").space.PX_4, borderRadius: require("Themes").radii.round, position: "absolute", width: 24, height: 24, top: -9, start: require("Themes").space.PX_16, alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-const obj5 = { padding: require("Themes").space.PX_4, borderRadius: require("Themes").radii.round, position: "absolute", width: 24, height: 24, top: -9, start: require("Themes").space.PX_16, alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-createCacheKey[8] = { backgroundColor: require("Themes").unsafe_rawColors.GUILD_BOOSTING_PINK };
-const obj6 = { backgroundColor: require("Themes").unsafe_rawColors.GUILD_BOOSTING_PINK };
-createCacheKey[9] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-const obj7 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
-createCacheKey[10] = { padding: require("Themes").space.PX_16, paddingTop: 0, flex: 1 };
-const obj8 = { padding: require("Themes").space.PX_16, paddingTop: 0, flex: 1 };
-createCacheKey[11] = { flexDirection: "column", marginTop: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
+createCacheKey[3] = { height: 6, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+let obj1 = { height: 6, backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[4] = { marginStart: ThemesDefault.space.PX_16 };
+let obj2 = { marginStart: ThemesDefault.space.PX_16 };
+createCacheKey[5] = { marginEnd: ThemesDefault.space.PX_16, borderTopEndRadius: ThemesDefault.radii.round, borderBottomEndRadius: ThemesDefault.radii.round };
+const obj3 = { marginEnd: ThemesDefault.space.PX_16, borderTopEndRadius: ThemesDefault.radii.round, borderBottomEndRadius: ThemesDefault.radii.round };
+createCacheKey[6] = { backgroundColor: ThemesDefault.colors.CARD_BACKGROUND_DEFAULT, width: 28, height: 28, start: ThemesDefault.space.PX_16 - 2, top: -11 };
+const obj4 = { backgroundColor: ThemesDefault.colors.CARD_BACKGROUND_DEFAULT, width: 28, height: 28, start: ThemesDefault.space.PX_16 - 2, top: -11 };
+createCacheKey[7] = { padding: ThemesDefault.space.PX_4, borderRadius: ThemesDefault.radii.round, position: "absolute", width: 24, height: 24, top: -9, start: ThemesDefault.space.PX_16, alignItems: "center", justifyContent: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+const obj5 = { padding: ThemesDefault.space.PX_4, borderRadius: ThemesDefault.radii.round, position: "absolute", width: 24, height: 24, top: -9, start: ThemesDefault.space.PX_16, alignItems: "center", justifyContent: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[8] = { backgroundColor: ThemesDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
+const obj6 = { backgroundColor: ThemesDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
+createCacheKey[9] = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+const obj7 = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[10] = { padding: ThemesDefault.space.PX_16, paddingTop: 0, flex: 1 };
+const obj8 = { padding: ThemesDefault.space.PX_16, paddingTop: 0, flex: 1 };
+createCacheKey[11] = { flexDirection: "column", marginTop: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8 };
 createCacheKey[12] = { flexDirection: "row", alignItems: "center" };
 createCacheKey[13] = { flexDirection: "row", alignItems: "center" };
-const obj9 = { flexDirection: "column", marginTop: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
-createCacheKey[14] = { marginStart: require("Themes").space.PX_8 };
-const obj10 = { marginStart: require("Themes").space.PX_8 };
-createCacheKey[15] = { marginTop: "auto", paddingTop: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj11 = { marginTop: "auto", paddingTop: require("Themes").space.PX_16 };
-const result = require("BoostedGuildTiers").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsLevelCard.tsx");
+const obj9 = { flexDirection: "column", marginTop: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8 };
+createCacheKey[14] = { marginStart: ThemesDefault.space.PX_8 };
+const obj10 = { marginStart: ThemesDefault.space.PX_8 };
+createCacheKey[15] = { marginTop: "auto", paddingTop: ThemesDefault.space.PX_16 };
+let closure_12 = createCacheKey.createStyles(createCacheKey);
+const obj11 = { marginTop: "auto", paddingTop: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsLevelCard.tsx");
 
 export default function GuildPowerupsLevelCard(arg0) {
-  let guildId;
-  let index;
-  let isScrollingRef;
-  let nextPowerup;
-  let powerup;
   ({ guildId, powerup, nextPowerup, index, isScrollingRef } = arg0);
-  let importDefault;
-  const tmp = createCacheKey();
-  let obj = isScrollingRef(8307);
+  importDefault = undefined;
+  const tmp = callback();
+  let obj = isScrollingRef(8347);
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsLevelCard");
-  const tmp6 = importDefault(11668)(guildId, powerup);
-  let obj1 = isScrollingRef(11688);
+  const tmp6 = usePowerupActiveStatusDefault(guildId, powerup);
+  obj1 = isScrollingRef(11737);
   const calculatePowerupCardStatus = obj1.useCalculatePowerupCardStatus(powerup, tmp6, false);
-  const tmp9 = importDefault(11736)(guildId, powerup);
+  const tmp9 = useGuildPowerupOnShowMoreDefault(guildId, powerup);
   importDefault = tmp9;
   if (0 === index) {
     let MIDDLE = constants.START;
@@ -207,16 +199,16 @@ export default function GuildPowerupsLevelCard(arg0) {
     MIDDLE = constants.MIDDLE;
   }
   const items = [isScrollingRef, tmp9];
-  const callback = React.useCallback(() => {
+  callback = React.useCallback(() => {
     if (!isScrollingRef.current) {
-      _undefined();
+      callback();
     }
   }, items);
   obj = { containerStyle: tmp.cardContainer, style: tmp.card, onPress: callback, status: calculatePowerupCardStatus, children: null };
   obj = { position: MIDDLE, active: tmp14, nextActive: null };
   let tmp20;
   const tmp5 = importDefault;
-  const tmp7 = importDefault(11668)(guildId, nextPowerup);
+  const tmp7 = usePowerupActiveStatusDefault(guildId, nextPowerup);
   if (null != nextPowerup) {
     tmp20 = tmp7.type !== constants2.INACTIVE;
   }
@@ -234,10 +226,10 @@ export default function GuildPowerupsLevelCard(arg0) {
   }
   obj2[1] = str2;
   obj2[2] = powerup.title;
-  const items2 = [closure_10(isScrollingRef(4734).Text, obj2), closure_10(GuildPowerupLevelBody, { isActive: tmp6.type !== constants2.INACTIVE, index }), ];
+  const items2 = [closure_10(isScrollingRef(4739).Text, obj2), closure_10(GuildPowerupLevelBody, { isActive: tmp6.type !== constants2.INACTIVE, index }), ];
   const tmp19 = GuildLevelPowerupHeader;
-  const tmp5Result = importDefault(11737);
-  items2[2] = closure_10(View, { style: tmp.footerContainer, children: closure_10(isScrollingRef(11693).GuildPowerupsCardFooter, obj4) });
+  const tmp5Result = importDefaultResult1Default;
+  items2[2] = closure_10(View, { style: tmp.footerContainer, children: closure_10(isScrollingRef(11742).GuildPowerupsCardFooter, obj4) });
   obj1[1] = items2;
   items1[1] = closure_11(View, obj1);
   obj[4] = items1;

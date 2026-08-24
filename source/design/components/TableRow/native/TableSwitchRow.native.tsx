@@ -1,31 +1,28 @@
-// Module ID: 7178
-// Function ID: 7179
+// Module ID: 7216
+// Function ID: 7217
 // Name: TableSwitchRow
-// Dependencies: [32, 19, 17, 21, 4661, 500, 4099, 6291, 4734, 7179, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 500, 4102, 6322, 4739, 7217, 2]
 // Exports: TableSwitchRow
 
-// Module 7178 (TableSwitchRow)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 7216 (TableSwitchRow)
+import set from "set" /* 500 */;
+import getNodeText from "getNodeText" /* 4102 */;
+import TableRowInner from "TableRowInner" /* 6322 */;
+import FormSwitch from "FormSwitch" /* 7217 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let require = arg1;
+require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles(() => ({ labelWithTrailing: { flexDirection: "row", alignItems: "center", gap: 8 } }));
-const result = require("get ActivityIndicator").fileFinishedImporting("design/components/TableRow/native/TableSwitchRow.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/TableRow/native/TableSwitchRow.native.tsx");
 
 export const TableSwitchRow = function TableSwitchRow(value) {
-  let dependencyMap;
-  let disabled;
-  let label;
-  let subLabel;
-  let trailing;
   value = value.value;
-  const require = value;
+  require = value;
   ({ onValueChange: dependencyMap, label, subLabel, trailing, disabled } = value);
   if (disabled === undefined) {
     disabled = false;
@@ -33,12 +30,12 @@ export const TableSwitchRow = function TableSwitchRow(value) {
   const variant = value.variant;
   const merged = Object.assign(value, Object.create(null));
   let callback;
-  let obj = require(500) /* set */;
+  let obj = set;
   const tmp2 = callback2();
-  let obj1 = require(4099) /* getNodeText */;
+  obj1 = getNodeText;
   const nodeText = obj1.getNodeText(label);
   const isAndroidResult = obj.isAndroid();
-  const nodeText1 = require(4099) /* getNodeText */.getNodeText(subLabel);
+  const nodeText1 = getNodeText.getNodeText(subLabel);
   const tmp8 = callback(React.useState(value), 2);
   callback = tmp8[1];
   const items = [value];
@@ -62,7 +59,7 @@ export const TableSwitchRow = function TableSwitchRow(value) {
       obj1 = { variant: "text-md/semibold", color: null, includeFontPadding: true, children: null };
       obj1[1] = str;
       obj1[3] = label;
-      tmp10Result = tmp10(tmp3(4734).Text, obj1);
+      tmp10Result = tmp10(tmp3(4739).Text, obj1);
     }
     const items1 = [tmp10Result, trailing];
     obj[1] = items1;
@@ -102,6 +99,6 @@ export const TableSwitchRow = function TableSwitchRow(value) {
       }
     });
   };
-  obj.trailing = closure_5(require(7179) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled });
-  return closure_5(require(6291) /* TableRowInner */.TableRow, obj);
+  obj.trailing = closure_5(FormSwitch.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled });
+  return closure_5(TableRowInner.TableRow, obj);
 };

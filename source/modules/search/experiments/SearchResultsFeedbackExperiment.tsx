@@ -1,16 +1,17 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 16660
+// Function ID: 16661
 // Name: useIsSearchResultsFeedbackExperimentEnabled
 // Dependencies: [1472, 2]
 // Exports: getIsSearchResultsFeedbackExperimentEnabled, useIsSearchResultsFeedbackExperimentEnabled
 
-// Module 16564 (useIsSearchResultsFeedbackExperimentEnabled)
-import ApexExperiment from "ApexExperiment";
+// Module 16660 (useIsSearchResultsFeedbackExperimentEnabled)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2025-05-search-results-feedback", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/search/experiments/SearchResultsFeedbackExperiment.tsx");
+const result = set.fileFinishedImporting("modules/search/experiments/SearchResultsFeedbackExperiment.tsx");
 
 export const useIsSearchResultsFeedbackExperimentEnabled = function useIsSearchResultsFeedbackExperimentEnabled(location) {
   return closure_0.useConfig({ location: location.location }).enabled;

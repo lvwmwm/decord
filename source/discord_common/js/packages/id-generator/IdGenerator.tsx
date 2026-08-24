@@ -4,7 +4,11 @@
 // Dependencies: [14, 511, 2]
 
 // Module 510 (generate)
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/id-generator/IdGenerator.tsx");
+import set from "set" /* 2 */;
+import IntegerDefault from "Integer" /* 14 */;
+import Buffer from "Buffer" /* 511 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/packages/id-generator/IdGenerator.tsx");
 class IdGenerator {
   constructor() {
     obj = Object.create(new.target.prototype);
@@ -15,9 +19,9 @@ class IdGenerator {
   }
 }
 IdGenerator.prototype["generate"] = function generate(arg0) {
-  const obj = importDefault(14)(arg0);
+  const obj = IntegerDefault(arg0);
   this._sequenceNumber = +this._sequenceNumber + 1;
-  const str = new require(511) /* Buffer */.Buffer(24);
+  const str = new Buffer.Buffer(24);
   str.writeInt32LE(obj.mod(4294967296).toJSNumber() | 0, 0, true);
   const modResult = obj.mod(4294967296);
   const tmp2 = +this._sequenceNumber | 0;

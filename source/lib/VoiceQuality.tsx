@@ -1,24 +1,26 @@
-// Module ID: 13091
-// Function ID: 13092
+// Module ID: 13147
+// Function ID: 13148
 // Name: start
-// Dependencies: [32, 7490, 4572, 13092, 7496, 4569, 12, 4548, 2]
+// Dependencies: [32, 7528, 4577, 13148, 7534, 4574, 12, 4553, 2]
 
-// Module 13091 (start)
-import _slicedToArray from "_slicedToArray";
-import "on";
+// Module 13147 (start)
+import applyDefault from "apply" /* 12 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4574 */;
+import onDefault from "on" /* 4577 */;
+import getSamples from "getSamples" /* 7528 */;
+import getStatsDefault from "getStats" /* 7534 */;
+import _initStatsDefault from "_initStats" /* 13148 */;
+import closure_3 from "_slicedToArray" /* 32 */;
 
-let require = arg1;
+require = arg1;
 let obj = { InputDeviceSampleRateChanged: "input-device-sample-rate-changed" };
+onDefault;
 class VoiceQuality extends tmp2 {
   constructor(arg0) {
     tmp3 = new VoiceQuality(tmp2, tmp);
     // ThrowIfThisInitialized (0x7c)
     closure_0 = tmp3;
     tmp3.sampleAudioDevice = function sampleAudioDevice(input, inputDeviceStats) {
-      let accumulated;
-      let accumulated2;
-      let lastValue;
-      let lastValue2;
       if (undefined !== input) {
         if (undefined === input.restartCount) {
           if (undefined === input.bufferViolations) {
@@ -39,7 +41,7 @@ class VoiceQuality extends tmp2 {
                 if (num4 == null) {
                   num4 = 0;
                 }
-                tmp3.emit(outer1_4.InputDeviceSampleRateChanged, num4);
+                lib.emit(closure_1_4.InputDeviceSampleRateChanged, num4);
               }
               inputDeviceStats.sessionSampleRate = input.sessionSampleRate;
             }
@@ -107,31 +109,30 @@ class VoiceQuality extends tmp2 {
       }
     };
     tmp3.sampleStats = function sampleStats(rtp) {
-      const tmp3 = rtp;
+      const lib = rtp;
       if (null != rtp) {
-        const networkQuality = tmp3.networkQuality;
-        const result = networkQuality.incrementNetworkStats(tmp3(outer1_2[7]).now());
-        const systemResources = tmp3.systemResources;
+        const networkQuality = lib.networkQuality;
+        const result = networkQuality.incrementNetworkStats(lib(closure_1_2[7]).now());
+        const systemResources = lib.systemResources;
         systemResources.takeSample();
-        const duration4 = tmp3.duration;
+        const duration4 = lib.duration;
         duration4.connected = duration4.connected + 1;
-        let obj2 = tmp3(outer1_2[7]);
-        const tmp4 = outer1_2;
-        const tmp7 = outer1_1;
-        let c1 = 0;
-        const reduced = outer1_1(outer1_2[6]).reduce(tmp3.inboundStats, (packetsReceived, packetsReceived2) => {
+        let obj2 = lib(closure_1_2[7]);
+        const tmp4 = closure_1_2;
+        const tmp7 = closure_1_1;
+        c1 = 0;
+        const reduced = closure_1_1(closure_1_2[6]).reduce(lib.inboundStats, (packetsReceived, packetsReceived2) => {
           packetsReceived.packetsReceived = packetsReceived.packetsReceived + packetsReceived2.packetsReceived;
           return packetsReceived;
         }, { packetsReceived: 0 });
-        const arr2 = outer1_1(outer1_2[6]);
-        let item = outer1_1(outer1_2[6]).forEach(rtp.rtp.outbound, (type) => {
-          let packetsLost;
+        const arr2 = closure_1_1(closure_1_2[6]);
+        let item = closure_1_1(closure_1_2[6]).forEach(rtp.rtp.outbound, (type) => {
           if ("audio" === type.type) {
             let num = type.bitrateTarget;
             if (num == null) {
               num = 0;
             }
-            const obj = {};
+            obj = {};
             const merged = Object.assign(outboundStats.outboundStats);
             ({ packetsSent: obj.packetsSent, bytesSent: obj.bytesSent, packetsLost } = type);
             if (packetsLost == null) {
@@ -183,21 +184,13 @@ class VoiceQuality extends tmp2 {
             tmp5 = true === Boolean(type.audioDetected) && null != type.audioLevel;
           }
         });
-        tmp3.decryptionFailures = rtp.transport.decryptionFailures;
-        tmp3.routingFailures = rtp.transport.routingFailures;
-        tmp3.appendTargetRates(tmp3.outboundStats, rtp.transport.availableOutgoingBitrate, c1);
-        const arr3 = outer1_1(outer1_2[6]);
-        const item1 = outer1_1(outer1_2[6]).forEach(rtp.rtp.inbound, (arg0, arg1) => {
-          let closure_0 = arg1;
-          const item = outer2_1(outer2_2[6]).forEach(arg0, (type) => {
-            let bytesReceived;
-            let decryptFailureBeforeSuccessCount;
-            let fecPacketsReceived;
-            let mosBuckets;
-            let nackCount;
-            let packetsLost;
-            let packetsReceived;
-            let passthroughCount;
+        lib.decryptionFailures = rtp.transport.decryptionFailures;
+        lib.routingFailures = rtp.transport.routingFailures;
+        lib.appendTargetRates(lib.outboundStats, rtp.transport.availableOutgoingBitrate, c1);
+        const arr3 = closure_1_1(closure_1_2[6]);
+        const item1 = closure_1_1(closure_1_2[6]).forEach(rtp.rtp.inbound, (arg0, arg1) => {
+          closure_0 = arg1;
+          const item = closure_2_1(closure_2_2[6]).forEach(arg0, (type) => {
             if ("audio" === type.type) {
               let num = lib.transport.ping;
               if (num == null) {
@@ -215,14 +208,14 @@ class VoiceQuality extends tmp2 {
               if (num3 == null) {
                 num3 = 0;
               }
-              let obj = { audioJitterBuffer: null, audioJitterBufferHistogram: null, audioJitterTarget: null, audioJitterTargetHistogram: null, audioJitterDelay: null, audioJitterDelayHistogram: null, relativeReceptionDelay: null, relativePlayoutDelay: null };
+              obj = { audioJitterBuffer: null, audioJitterBufferHistogram: null, audioJitterTarget: null, audioJitterTargetHistogram: null, audioJitterDelay: null, audioJitterDelayHistogram: null, relativeReceptionDelay: null, relativePlayoutDelay: null };
               obj[0] = type.audioJitterBuffer;
               let prop;
               if (lib.inboundStats[lib] != null) {
                 prop = tmp38.bufferStats.audioJitterBufferHistogram;
               }
               if (prop == null) {
-                prop = new lib(outer3_2[1]).Histogram();
+                prop = new lib(closure_3_2[1]).Histogram();
               }
               obj[1] = prop;
               obj[2] = type.audioJitterTarget;
@@ -231,7 +224,7 @@ class VoiceQuality extends tmp2 {
                 prop1 = tmp38.bufferStats.audioJitterTargetHistogram;
               }
               if (prop1 == null) {
-                prop1 = new lib(outer3_2[1]).Histogram();
+                prop1 = new lib(closure_3_2[1]).Histogram();
               }
               obj[3] = prop1;
               obj[4] = type.audioJitterDelay;
@@ -240,7 +233,7 @@ class VoiceQuality extends tmp2 {
                 prop2 = tmp38.bufferStats.audioJitterDelayHistogram;
               }
               if (prop2 == null) {
-                prop2 = new lib(outer3_2[1]).Histogram();
+                prop2 = new lib(closure_3_2[1]).Histogram();
               }
               obj[5] = prop2;
               ({ relativeReceptionDelay: obj[6], relativePlayoutDelay: obj[7] } = type);
@@ -313,14 +306,14 @@ class VoiceQuality extends tmp2 {
                 let num17 = 0;
                 if (tmp26) {
                   const sum = num + num3;
-                  let obj4 = outer3_1(outer3_2[6]);
+                  let obj4 = closure_3_1(closure_3_2[6]);
                   const calculateMosResult = obj8.calculateMos(sum, obj4.clamp(diff1 / (diff + diff1), 0, 1));
                   const _Math = Math;
                   const rounded = Math.floor(calculateMosResult);
                   mosBuckets[rounded] = mosBuckets[rounded] + 1;
                   num17 = calculateMosResult;
                 }
-                const obj1 = { packetsReceived: null, bytesReceived: null, packetsLost: null, nackCount: null, fecPacketsReceived: null, fecPacketsDiscarded: null, mos: null, mosSum: null, mosCount: null, mosBuckets: null, bufferStats: null, frameOpStats: null, decryptFailureBeforeSuccessCount: null };
+                obj1 = { packetsReceived: null, bytesReceived: null, packetsLost: null, nackCount: null, fecPacketsReceived: null, fecPacketsDiscarded: null, mos: null, mosSum: null, mosCount: null, mosBuckets: null, bufferStats: null, frameOpStats: null, decryptFailureBeforeSuccessCount: null };
                 obj1[0] = packetsReceived;
                 obj1[1] = bytesReceived;
                 obj1[2] = packetsLost;
@@ -426,14 +419,14 @@ class VoiceQuality extends tmp2 {
           obj.sampleAudioDevice(rtp.audioDevice.output, obj.outputDeviceStats);
         }
         let flag = false;
-        if (tmp3.outboundStats.packetsSent > tmp3.outboundStats.packetsSent) {
+        if (lib.outboundStats.packetsSent > lib.outboundStats.packetsSent) {
           const duration = obj.duration;
           duration.speaking = duration.speaking + 1;
           flag = true;
         }
-        const arr4 = outer1_1(outer1_2[6]);
+        const arr4 = closure_1_1(closure_1_2[6]);
         let flag2 = false;
-        if (tmp7Result.reduce(tmp3.inboundStats, (packetsReceived, packetsReceived2) => {
+        if (tmp7Result.reduce(lib.inboundStats, (packetsReceived, packetsReceived2) => {
           packetsReceived.packetsReceived = packetsReceived.packetsReceived + packetsReceived2.packetsReceived;
           return packetsReceived;
         }, { packetsReceived: 0 }).packetsReceived > reduced.packetsReceived) {
@@ -471,14 +464,14 @@ class VoiceQuality extends tmp2 {
 const prototype = VoiceQuality.prototype;
 prototype["start"] = function start() {
   const connection = this.connection;
-  connection.on(require(4569) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
+  connection.on(BaseConnectionEvent.BaseConnectionEvent.Stats, this.sampleStats);
 };
 prototype["stop"] = function stop() {
   const connection = this.connection;
-  connection.off(require(4569) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
+  connection.off(BaseConnectionEvent.BaseConnectionEvent.Stats, this.sampleStats);
 };
 prototype["getMosStats"] = function getMosStats() {
-  const reduced = importDefault(12).reduce(this.inboundStats, (mosSum, mosSum2) => {
+  const reduced = applyDefault.reduce(this.inboundStats, (mosSum, mosSum2) => {
     mosSum.mosSum = mosSum.mosSum + mosSum2.mosSum;
     mosSum.mosCount = mosSum.mosCount + mosSum2.mosCount;
     let num = 0;
@@ -496,7 +489,7 @@ prototype["getMosStats"] = function getMosStats() {
   return { mos_mean: num, mos_1: reduced.mosBuckets[1], mos_2: reduced.mosBuckets[2], mos_3: reduced.mosBuckets[3], mos_4: reduced.mosBuckets[4] };
 };
 prototype["getPacketStats"] = function getPacketStats() {
-  const reduced = importDefault(12).reduce(this.inboundStats, (packetsReceived, packetsReceived2) => {
+  const reduced = applyDefault.reduce(this.inboundStats, (packetsReceived, packetsReceived2) => {
     packetsReceived.packetsReceived = packetsReceived.packetsReceived + packetsReceived2.packetsReceived;
     packetsReceived.packetsReceivedLost = packetsReceived.packetsReceivedLost + packetsReceived2.packetsLost;
     packetsReceived.nackCount = packetsReceived.nackCount + packetsReceived2.nackCount;
@@ -509,7 +502,7 @@ prototype["getPacketStats"] = function getPacketStats() {
 prototype["getBytesStats"] = function getBytesStats() {
   const self = this;
   const result = this.outboundStats.aggregationDurationMs / 1000;
-  const obj = { bytes_sent: this.outboundStats.bytesSent, bytes_received: importDefault(12).reduce(this.inboundStats, (arg0, bytesReceived) => arg0 + bytesReceived.bytesReceived, 0), outbound_bandwidth_estimate: null, audio_target_bitrate: null };
+  obj = { bytes_sent: this.outboundStats.bytesSent, bytes_received: applyDefault.reduce(this.inboundStats, (arg0, bytesReceived) => arg0 + bytesReceived.bytesReceived, 0), outbound_bandwidth_estimate: null, audio_target_bitrate: null };
   let num = 0;
   if (0 < result) {
     const _Math = Math;
@@ -533,7 +526,7 @@ prototype["getSystemResourceStats"] = function getSystemResourceStats() {
   return systemResources.getStats();
 };
 prototype["getBufferStats"] = function getBufferStats() {
-  const reduced = importDefault(12).reduce(this.inboundStats, (arg0, bufferStats) => {
+  const reduced = applyDefault.reduce(this.inboundStats, (arg0, bufferStats) => {
     const audioJitterBufferHistogram = bufferStats.bufferStats.audioJitterBufferHistogram;
     if (audioJitterBufferHistogram.getSamples() > 0) {
       const audioJitterBufferHistogram2 = bufferStats.bufferStats.audioJitterBufferHistogram;
@@ -571,7 +564,7 @@ prototype["getBufferStats"] = function getBufferStats() {
   if (null == reduced) {
     if (null == reduced) {
       if (null == reduced) {
-        let obj = { audio_jitter_buffer: null, audio_jitter_target: null, audio_jitter_delay: null, relative_reception_delay: null, relative_playout_delay: null };
+        obj = { audio_jitter_buffer: null, audio_jitter_target: null, audio_jitter_delay: null, relative_reception_delay: null, relative_playout_delay: null };
         obj[0] = null;
         obj[1] = null;
         obj[2] = null;
@@ -597,7 +590,7 @@ prototype["getBufferStats"] = function getBufferStats() {
           let obj4 = obj[key10055];
           let tmp29 = require;
           let tmp30 = dependencyMap;
-          if (obj4 instanceof require(7490) /* getSamples */.Histogram) {
+          if (obj4 instanceof getSamples.Histogram) {
             let report = obj4.getReport([75, 95, 99]);
             let _Math = Math;
             let text = `${key10055}_mean`;
@@ -688,7 +681,7 @@ prototype["getBufferStats"] = function getBufferStats() {
   }
 };
 prototype["getFrameOpStats"] = function getFrameOpStats() {
-  const reduced = importDefault(12).reduce(this.inboundStats, (silent, frameOpStats) => {
+  const reduced = applyDefault.reduce(this.inboundStats, (silent, frameOpStats) => {
     if (null != frameOpStats.frameOpStats.silent) {
       silent.silent = silent.silent + frameOpStats.frameOpStats.silent;
     }
@@ -721,7 +714,7 @@ prototype["getTransportStats"] = function getTransportStats() {
   return { decryption_failures: this.decryptionFailures, routing_failures: this.routingFailures };
 };
 prototype["getE2EEStats"] = function getE2EEStats() {
-  const reduced = importDefault(12).reduce(this.inboundStats, (passthroughCount, passthroughCount2) => {
+  const reduced = applyDefault.reduce(this.inboundStats, (passthroughCount, passthroughCount2) => {
     let num = passthroughCount2.passthroughCount;
     if (num == null) {
       num = 0;
@@ -777,7 +770,7 @@ prototype["getAudioDeviceStats"] = function getAudioDeviceStats() {
   if (restartCount != null) {
     accumulated = restartCount.accumulated;
   }
-  const obj = { input_device_restart_count: accumulated, output_device_restart_count: null, input_device_time_to_first_audio: null, output_device_time_to_first_audio: null, input_device_buffer_overfull_count: null, output_device_buffer_underrun_count: null, input_device_session_sample_rate: null, output_device_session_sample_rate: null, input_device_time_from_connect_to_first_audio_ms: null, output_device_time_from_connect_to_first_audio_ms: null };
+  obj = { input_device_restart_count: accumulated, output_device_restart_count: null, input_device_time_to_first_audio: null, output_device_time_to_first_audio: null, input_device_buffer_overfull_count: null, output_device_buffer_underrun_count: null, input_device_session_sample_rate: null, output_device_session_sample_rate: null, input_device_time_from_connect_to_first_audio_ms: null, output_device_time_from_connect_to_first_audio_ms: null };
   const restartCount2 = self.outputDeviceStats.restartCount;
   let accumulated1;
   if (restartCount2 != null) {
@@ -810,12 +803,6 @@ prototype["getAudioLevelStats"] = function getAudioLevelStats() {
   return { outbound_audio_level_db_p1: report.percentiles[1], outbound_audio_level_db_p5: report.percentiles[5], outbound_audio_level_db_p10: report.percentiles[10], outbound_audio_level_db_p25: report.percentiles[25], outbound_audio_level_db_p50: report.percentiles[50], outbound_audio_level_db_p75: report.percentiles[75], outbound_audio_level_db_p90: report.percentiles[90], outbound_audio_level_db_p95: report.percentiles[95], outbound_audio_level_db_p99: report.percentiles[99], outbound_audio_level_db_max: report.max, outbound_audio_level_db_mean: report.mean };
 };
 prototype["getPeriodicStats"] = function getPeriodicStats() {
-  let current;
-  let currentTimestampMs;
-  let previous;
-  let previousTimestampMs;
-  let tmp6;
-  let tmp7;
   const self = this;
   const items = [];
   const entries = Object.entries(this.periodicInboundStats);
@@ -834,7 +821,7 @@ prototype["getPeriodicStats"] = function getPeriodicStats() {
         let tmp34 = currentTimestampMs;
         let tmp35 = previousTimestampMs;
         let diff = currentTimestampMs - tmp9;
-        let obj = { userId: null, silent: null, normal: null, merged: null, expanded: null, accelerated: null, preemptiveExpanded: null, cng: null, accelerateRate: null, expandRate: null, preemptiveExpandRate: null, speechExpandRate: null, durationMs: null };
+        obj = { userId: null, silent: null, normal: null, merged: null, expanded: null, accelerated: null, preemptiveExpanded: null, cng: null, accelerateRate: null, expandRate: null, preemptiveExpandRate: null, speechExpandRate: null, durationMs: null };
         let tmp37 = tmp6;
         obj[0] = tmp6;
         let tmp38 = current;
@@ -962,7 +949,7 @@ prototype["calculateR"] = function calculateR(sum, arg1) {
   }
   return 93.4 - (result + num) - (10 + 122 * arg1 / (arg1 + 10));
 };
-let result = require("on").fileFinishedImporting("lib/VoiceQuality.tsx");
+let result = require("set").fileFinishedImporting("lib/VoiceQuality.tsx");
 
 export default VoiceQuality;
 export const VoiceQualityEvent = obj;

@@ -1,16 +1,16 @@
-// Module ID: 4043
-// Function ID: 4044
+// Module ID: 4046
+// Function ID: 4047
 // Name: createFromServer
 // Dependencies: [1931, 676, 1370, 1403, 2]
 
-// Module 4043 (createFromServer)
-import "toJS";
-import ME from "ME";
+// Module 4046 (createFromServer)
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import hasFlag from "hasFlag" /* 1403 */;
+import toJSDefault from "toJS" /* 1931 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
-let obj1;
-const require = arg1;
+require = arg1;
+toJSDefault;
 ({ IRREDEEMABLE_PAYMENT_SOURCES: obj1, PaymentGateways: c3, PaymentSourceTypes: c4 } = ME);
 class PaymentSourceRecord extends tmp2 {
   constructor(arg0) {
@@ -64,7 +64,7 @@ PaymentSourceRecord["createFromServer"] = function createFromServer(billing_addr
   obj = { name: billing_address.name, line1: billing_address.line_1, line2: billing_address.line_2, city: billing_address.city, postalCode: billing_address.postal_code, state: billing_address.state, country: billing_address.country };
   let tmp6;
   if (null != billing_address.pix) {
-    const obj1 = { taxId: null };
+    obj1 = { taxId: null };
     obj1[0] = billing_address.pix.tax_id;
     tmp6 = obj1;
   }
@@ -436,7 +436,7 @@ PaymentSourceRecord["createFromServer"] = function createFromServer(billing_addr
           if (obj14.type !== tmp7.BANCONTACT) {
             const _Error5 = Error;
             const _HermesInternal5 = HermesInternal;
-            const error = new Error("Cannot instantiate BancontactSourceRecord with type: " + obj14.type + ", must be " + tmp7.BANCONTACT);
+            error = new Error("Cannot instantiate BancontactSourceRecord with type: " + obj14.type + ", must be " + tmp7.BANCONTACT);
             throw error;
           } else {
             return tmp85;
@@ -517,7 +517,7 @@ PaymentSourceRecord["createFromServer"] = function createFromServer(billing_addr
           }
           const tmp11 = prototype2;
         } else {
-          obj4 = require(1370) /* isDiscordFrontendDevelopment */;
+          obj4 = isDiscordFrontendDevelopment;
           obj4.assertNever(billing_address);
         }
       }
@@ -841,7 +841,7 @@ PaymentSourceRecord["createFromSerialized"] = function createFromSerialized(type
           if (type.type !== tmp6.BANCONTACT) {
             const _Error6 = Error;
             const _HermesInternal6 = HermesInternal;
-            const error = new Error("Cannot instantiate BancontactSourceRecord with type: " + type.type + ", must be " + tmp6.BANCONTACT);
+            error = new Error("Cannot instantiate BancontactSourceRecord with type: " + type.type + ", must be " + tmp6.BANCONTACT);
             throw error;
           } else {
             return tmp82;
@@ -921,7 +921,7 @@ PaymentSourceRecord["createFromSerialized"] = function createFromSerialized(type
             return tmp16;
           }
         } else {
-          require(1370) /* isDiscordFrontendDevelopment */.assertNever(type);
+          isDiscordFrontendDevelopment.assertNever(type);
         }
       }
     }
@@ -953,7 +953,7 @@ PaymentSourceRecord["createFromSerialized"] = function createFromSerialized(type
   }
 };
 prototype["hasFlag"] = function hasFlag(arg0) {
-  return require(1403) /* hasFlag */.hasFlag(this.flags, arg0);
+  return hasFlag.hasFlag(this.flags, arg0);
 };
 Object.defineProperty(prototype, "paymentMethodCountry", {
   get: function paymentMethodCountry() {
@@ -1380,7 +1380,7 @@ const prototype2 = function PixSourceRecord(type) {
   if (type.type !== closure_4.PIX) {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("Cannot instantiate PixSourceRecord with type: " + type.type + ", must be " + tmp4.PIX);
+    error = new Error("Cannot instantiate PixSourceRecord with type: " + type.type + ", must be " + tmp4.PIX);
     throw error;
   } else {
     tmp3.email = type.email;
@@ -1389,7 +1389,7 @@ const prototype2 = function PixSourceRecord(type) {
 }.prototype;
 class prototype2 extends PaymentSourceRecord {
 }
-const result = require("isDiscordFrontendDevelopment").fileFinishedImporting("records/PaymentSourceRecord.tsx");
+const result = require("set").fileFinishedImporting("records/PaymentSourceRecord.tsx");
 const prototype3 = function AppleSourceRecord(type) {
   type.id = "";
   type.paymentGateway = constants.APPLE_PARTNER;
@@ -1404,7 +1404,7 @@ const prototype3 = function AppleSourceRecord(type) {
   if (type.type !== closure_4.APPLE) {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("Cannot instantiate AppleSourceRecord with type: " + type.type + ", must be " + tmp4.APPLE);
+    error = new Error("Cannot instantiate AppleSourceRecord with type: " + type.type + ", must be " + tmp4.APPLE);
     throw error;
   } else {
     return tmp5;

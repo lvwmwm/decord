@@ -1,38 +1,32 @@
-// Module ID: 9337
-// Function ID: 9338
+// Module ID: 9374
+// Function ID: 9375
 // Name: PremiumFeatureList
-// Dependencies: [19, 17, 676, 21, 4661, 6782, 712, 8083, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 6819, 712, 8122, 2]
 // Exports: default
 
-// Module 9337 (PremiumFeatureList)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
+// Module 9374 (PremiumFeatureList)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_2 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { item: { backgroundColor: "transparent", paddingHorizontal: 0, paddingVertical: 8, flexDirection: "row", alignItems: "center" }, label: null, iconMargin: null };
 createCacheKey = {};
-const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.PRIMARY_NORMAL, require("Themes").colors.TEXT_DEFAULT, 14));
+const merged = Object.assign(importDefaultResult(require("ME").Fonts.PRIMARY_NORMAL, ThemesDefault.colors.TEXT_DEFAULT, 14));
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { marginEnd: require("Themes").space.PX_16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { marginEnd: require("Themes").space.PX_16 };
-const result = require("ME").fileFinishedImporting("components_native/premium/PremiumFeatureList.tsx");
+createCacheKey[2] = { marginEnd: ThemesDefault.space.PX_16 };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const obj1 = { marginEnd: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("components_native/premium/PremiumFeatureList.tsx");
 
 export default function PremiumFeatureList(style) {
-  let View;
-  let noop;
-  let dependencyMap;
-  let features;
-  let require;
-  ({ features, separator: require, iconStyle: dependencyMap, labelStyle: noop, rowStyle: View } = style);
+  ({ features, separator: require, iconStyle: dependencyMap, labelStyle: closure_2, rowStyle: View } = style);
   let callback;
-  callback = createCacheKey();
+  callback = callback2();
   const found = features.filter((hidden) => !hidden.hidden);
   return callback(View, {
     style: style.style,
@@ -42,11 +36,11 @@ export default function PremiumFeatureList(style) {
       obj = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: lib(IconComponent.IconComponent, obj) };
       obj = { size: "md", color: IconComponent.color, style: items1 };
       items1 = [lib.iconMargin, closure_1];
-      const items2 = [lib(outer1_3, obj), ];
-      const items3 = [lib.label, noop];
-      items2[1] = lib(outer1_0(outer1_1[7]).FormRow.Label, { numberOfLines: 2, style: items3, text: IconComponent.label });
+      const items2 = [lib(closure_1_3, obj), ];
+      const items3 = [lib.label, closure_2];
+      items2[1] = lib(closure_1_0(closure_1_1[7]).FormRow.Label, { numberOfLines: 2, style: items3, text: IconComponent.label });
       obj[1] = items2;
-      const children = [outer1_5(outer1_3, obj, arg1), ];
+      const children = [closure_1_5(closure_1_3, obj, arg1), ];
       let tmp3 = null;
       if (null != closure_0) {
         tmp3 = null;
@@ -58,7 +52,7 @@ export default function PremiumFeatureList(style) {
         }
       }
       children[1] = tmp3;
-      return outer1_5(outer1_2.Fragment, { children }, arg1);
+      return closure_1_5(closure_1_2.Fragment, { children }, arg1);
     })
   });
 };

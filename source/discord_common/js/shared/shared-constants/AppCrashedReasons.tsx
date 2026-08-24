@@ -1,10 +1,10 @@
-// Module ID: 13567
-// Function ID: 13568
+// Module ID: 13625
+// Function ID: 13626
 // Name: set
 // Dependencies: [2]
 
-// Module 13567 (set)
-import set from "set";
+// Module 13625 (set)
+import set from "set" /* 2 */;
 
 const obj = { ALL: null };
 let set = new Set(["socket_crashed", "unhandled_js_error", "unhandled_native_error"]);

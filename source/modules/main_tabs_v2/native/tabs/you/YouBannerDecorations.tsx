@@ -1,25 +1,26 @@
-// Module ID: 16009
-// Function ID: 16010
+// Module ID: 16106
+// Function ID: 16107
 // Name: useHasSettingsBadge
-// Dependencies: [19, 17, 1922, 1388, 1924, 21, 4661, 501, 712, 1367, 12899, 7420, 4196, 1377, 589, 8416, 8970, 8979, 1363, 689, 4039, 16010, 10685, 16011, 16012, 10947, 6719, 16013, 14351, 1236, 16014, 16016, 7988, 7355, 4756, 2]
+// Dependencies: [19, 17, 1922, 1388, 1924, 21, 4668, 501, 712, 1367, 12954, 7458, 4200, 1377, 589, 8455, 9007, 9016, 1363, 689, 4042, 16107, 10724, 16108, 16109, 10986, 6756, 16110, 14419, 1236, 16111, 16113, 8027, 7393, 4761, 2]
 // Exports: useHasSettingsBadge
 
-// Module 16009 (useHasSettingsBadge)
-import importAllResult from "n";
-import get_ActivityIndicator from "useUserProfileColors";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID as closure_9 } from "GuildFeatures";
-import jsxProd from "useHasNewAdContent";
-import createCacheKey from "createCacheKey";
+// Module 16106 (useHasSettingsBadge)
+import PlatformTypes from "PlatformTypes" /* 501 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import DismissibleContent from "DismissibleContent" /* 1377 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4200 */;
+import hasUserTrialOfferExpired from "hasUserTrialOfferExpired" /* 7458 */;
+import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 12954 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID as closure_9 } from "GuildFeatures" /* 1924 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c4;
-let c5;
-let closure_12;
-let closure_6;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 ({ View: c4, ActivityIndicator: c5, StyleSheet: closure_6 } = get_ActivityIndicator);
 ({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
@@ -34,9 +35,9 @@ let closure_13 = createCacheKey.createStyles((arg0, arg1, color) => {
   const merged1 = Object.assign(closure_6.absoluteFillObject);
   obj.color = color;
   obj[1] = obj;
-  const obj4 = require(501) /* PlatformTypes */;
+  const obj4 = PlatformTypes;
   const tmp3 = require;
-  const space = importDefault(712).space;
+  const space = ThemesDefault.space;
   if (isIOSResult) {
     let PX_24 = space.PX_24;
     let tmp8 = tmp6;
@@ -44,9 +45,9 @@ let closure_13 = createCacheKey.createStyles((arg0, arg1, color) => {
     PX_24 = space.PX_4 + arg0;
     tmp8 = tmp6;
   }
-  const obj1 = { marginBottom: PX_24, paddingVertical: tmp8(712).space.PX_8, paddingHorizontal: tmp8(712).space.PX_24, borderRadius: null, backgroundColor: null, flexDirection: "row", borderColor: null, borderWidth: 1 };
-  isIOSResult = require(501) /* PlatformTypes */.isIOS();
-  const result = tmp3(1367).isMobileVisualRefreshEnabled("YouBannerDecorations");
+  obj1 = { marginBottom: PX_24, paddingVertical: tmp8(712).space.PX_8, paddingHorizontal: tmp8(712).space.PX_24, borderRadius: null, backgroundColor: null, flexDirection: "row", borderColor: null, borderWidth: 1 };
+  isIOSResult = PlatformTypes.isIOS();
+  const result = useIsMobileVisualRefreshExperimentEnabled.isMobileVisualRefreshEnabled("YouBannerDecorations");
   const radii = tmp8(712).radii;
   let BACKGROUND_SURFACE_HIGH = arg1;
   obj1[3] = result ? radii.lg : radii.round;
@@ -57,24 +58,12 @@ let closure_13 = createCacheKey.createStyles((arg0, arg1, color) => {
   obj1[6] = arg3;
   const merged2 = Object.assign(tmp8(712).shadows.SHADOW_HIGH);
   obj[2] = obj1;
-  const tmp3Result = tmp3(1367);
+  const tmp3Result = useIsMobileVisualRefreshExperimentEnabled;
   obj[3] = { flexDirection: "row", alignItems: "center", gap: tmp8(712).space.PX_16 };
   obj[4] = { height: "100%", alignItems: "center", justifyContent: "center" };
   return obj;
 });
 const memoResult = importAllResult.memo((navigateToPremium) => {
-  let containerBorderColor;
-  let enabled;
-  let gradientSecondaryBackground;
-  let isLoading;
-  let navigateToSettings;
-  let navigateToShop;
-  let primaryColor;
-  let secondaryColor;
-  let settingsButtonRef;
-  let shopButtonRef;
-  let showReferralNotificationDot;
-  let theme;
   ({ isLoading, navigateToSettings } = navigateToPremium);
   navigateToPremium = navigateToPremium.navigateToPremium;
   let num = navigateToPremium.paddingBottom;
@@ -84,14 +73,14 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
   }
   gradientSecondaryBackground = undefined;
   let containerBackground;
-  let c4;
+  closure_4 = undefined;
   let showBadge;
   let dismissBadge;
-  let c7;
+  closure_7 = undefined;
   let color;
   let obj = navigateToSettings(gradientSecondaryBackground[14]);
-  let items = [c7];
-  const stateFromStores = obj.useStateFromStores(items, () => _undefined.getCurrentUser());
+  let items = [closure_7];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let id;
   if (stateFromStores != null) {
     id = stateFromStores.id;
@@ -140,7 +129,7 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
     if (!tmp17) {
       tmp17 = tmp21;
     }
-    c4 = tmp17;
+    closure_4 = tmp17;
     const tmp22 = tmp4(tmp2[21])();
     showBadge = tmp22.showBadge;
     dismissBadge = tmp22.dismissBadge;
@@ -151,16 +140,16 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
     ({ enabled, showReferralNotificationDot } = mobileReferralSubscriberProfileEntrypointButtonConfig);
     const tmpResult7 = tmp(tmp2[23]);
     const tmp25 = null != tmp(tmp2[11]).useTrialOffer(tmp18);
-    c7 = tmp25;
+    closure_7 = tmp25;
     const items2 = [tmp17, navigateToSettings, tmp25];
     const items3 = [navigateToPremium];
     const callback = obj4.useCallback(() => {
       let obj = navigateToSettings(gradientSecondaryBackground[24]);
-      obj = { isBadged: c4 };
+      obj = { isBadged: closure_4 };
       const result = obj.trackYouTabSettingsIconPress(obj);
       navigateToSettings();
-      let tmp5 = c7;
-      if (c7) {
+      let tmp5 = closure_7;
+      if (closure_7) {
         let tmpResult = tmp(tmp2[12]);
         tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(tmp2[13]).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
       }
@@ -193,7 +182,7 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
     if (hasPremiumSubscriptionToDisplay) {
       let tmp32Result = null;
       if (enabled) {
-        const obj1 = { onPress: null, showReferralNotificationDot: null };
+        obj1 = { onPress: null, showReferralNotificationDot: null };
         obj1[0] = callback1;
         obj1[1] = showReferralNotificationDot;
         tmp32Result = tmp32(tmp4(tmp2[31]), obj1, "nitro-subscriber");
@@ -224,14 +213,14 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
       obj4 = { style: null, children: null };
       obj4[0] = tmp15.loading;
       obj4[1] = tmp32(showBadge, { size: "small" });
-      isLoading = tmp32(c4, obj4);
+      isLoading = tmp32(closure_4, obj4);
     }
     const obj5 = { children: null };
     const items6 = [isLoading, ];
     const obj6 = { style: null, pointerEvents: "box-none", children: null };
     obj6[0] = tmp15.buttonsFloating;
     obj6[2] = found;
-    items6[1] = callback(c4, obj6);
+    items6[1] = callback(closure_4, obj6);
     obj5[0] = items6;
     color = tmp15.containerFloatingGradient.color;
     const items7 = [color];
@@ -258,21 +247,21 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
     const obj9 = { style: null, children: null };
     obj9[0] = tmp15.containerFloating;
     obj9[1] = tmp38Result;
-    items8[1] = callback(c4, obj9);
+    items8[1] = callback(closure_4, obj9);
     obj7[2] = items8;
-    return closure_12(c4, obj7);
+    return closure_12(closure_4, obj7);
   }
   containerBackground = userProfileColors.containerBackground;
 });
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouBannerDecorations.tsx");
+let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouBannerDecorations.tsx");
 
 export default memoResult;
 export const useHasSettingsBadge = function useHasSettingsBadge() {
-  let tmp = require(12899) /* useEligibleActiveOutboundPromotions */.useUnseenOutboundPromotions().length > 0;
-  const obj = require(12899) /* useEligibleActiveOutboundPromotions */;
-  const obj2 = require(7420) /* hasUserTrialOfferExpired */;
-  const tmp2 = null != require(7420) /* hasUserTrialOfferExpired */.useTrialOffer(closure_9);
-  const result = require(4196) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1377) /* DismissibleContent */.DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+  let tmp = useEligibleActiveOutboundPromotions.useUnseenOutboundPromotions().length > 0;
+  const obj = useEligibleActiveOutboundPromotions;
+  const obj2 = hasUserTrialOfferExpired;
+  const tmp2 = null != hasUserTrialOfferExpired.useTrialOffer(closure_9);
+  const result = UNSAFE_isDismissibleContentDismissed.useIsDismissibleContentDismissed_UNSAFE(DismissibleContent.DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
   let tmp4 = !result;
   if (!result) {
     tmp4 = tmp2;

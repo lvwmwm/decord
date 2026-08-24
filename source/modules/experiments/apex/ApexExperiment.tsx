@@ -5,29 +5,33 @@
 // Exports: default
 
 // Module 1368 (getUnitId)
-import _slicedToArray from "_slicedToArray";
-import fetchFingerprint from "fetchFingerprint";
-import initialize from "initialize";
+import extractId from "extractId" /* 513 */;
+import initialize from "initialize" /* 589 */;
+import loggerDefault from "logger" /* 1369 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "initialize" /* 1212 */;
 
-const require = arg1;
+require = arg1;
 function getUnitId(arg0, guildId) {
   if ("guild" === arg0) {
     return guildId.guildId;
   } else if ("user" === arg0) {
     return store.getId();
   } else if ("installation" === arg0) {
-    let str2 = require(513) /* extractId */.maybeExtractId(store.getInstallationForTracking());
+    let str2 = extractId.maybeExtractId(store.getInstallationForTracking());
     if (str2 == null) {
       str2 = "";
     }
     return str2;
   } else {
-    require(1370) /* isDiscordFrontendDevelopment */.assertNever(arg0);
+    isDiscordFrontendDevelopment.assertNever(arg0);
   }
 }
 function useUnitId(arg0, guildId) {
-  let items = [fetchFingerprint];
-  callback(require(589) /* initialize */.useStateFromStoresArray(items, () => {
+  let items = [closure_4];
+  callback(initialize.useStateFromStoresArray(items, () => {
     const items = [store.getId(), store.getInstallationForTracking()];
     return items;
   }), 2);
@@ -46,12 +50,12 @@ function useUnitId(arg0, guildId) {
     tmpResult = tmp(1370);
     tmpResult.assertNever(arg0);
   }
-  const obj = require(589) /* initialize */;
+  const obj = initialize;
 }
-const result = require("initialize").fileFinishedImporting("modules/experiments/apex/ApexExperiment.tsx");
+const result = require("set").fileFinishedImporting("modules/experiments/apex/ApexExperiment.tsx");
 
 export default function createApexExperiment(ApexExperiment) {
-  return importDefault(1369)(ApexExperiment, initialize, getUnitId, useUnitId);
+  return loggerDefault(ApexExperiment, closure_5, getUnitId, useUnitId);
 };
 export const ApexExperiment = require("logger").ApexExperiment;
 export { getUnitId };

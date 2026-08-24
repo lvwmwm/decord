@@ -4,13 +4,16 @@
 // Dependencies: [887, 824, 919, 848, 920, 908, 821, 832]
 
 // Module 928 (addConsoleBreadcrumb)
-import setupIntegration from "setupIntegration";
+import _mod821 from "module_821" /* 821 */;
+import isMatchingPattern from "isMatchingPattern" /* 832 */;
+import severityLevelFromString from "severityLevelFromString" /* 920 */;
+import setupIntegration from "setupIntegration" /* 887 */;
 
 function addConsoleBreadcrumb(arg0, arguments) {
   obj = { category: "console", data: obj, level: null, message: null };
   obj = { arguments, logger: "console" };
-  obj[2] = require(920) /* severityLevelFromString */.severityLevelFromString(arg0);
-  if ("util" in require(821).GLOBAL_OBJ) {
+  obj[2] = severityLevelFromString.severityLevelFromString(arg0);
+  if ("util" in _mod821.GLOBAL_OBJ) {
     if (typeof tmp(821).GLOBAL_OBJ.util.format === "function") {
       const util = tmp(821).GLOBAL_OBJ.util;
       const format = util.format;
@@ -46,8 +49,8 @@ function addConsoleBreadcrumb(arg0, arguments) {
     obj[1] = arg0;
     tmpResult.addBreadcrumb(obj, obj);
   }
-  const obj3 = require(920) /* severityLevelFromString */;
-  applyResult = require(832) /* isMatchingPattern */.safeJoin(arguments, " ");
+  const obj3 = severityLevelFromString;
+  applyResult = isMatchingPattern.safeJoin(arguments, " ");
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
@@ -66,15 +69,15 @@ export const consoleIntegration = setupIntegration.defineIntegration(() => {
   obj = {
     name: "Console",
     setup(arg0) {
-      let closure_0 = arg0;
-      const result = set(outer1_1[2]).addConsoleInstrumentationHandler((level) => {
+      closure_0 = arg0;
+      const result = set(closure_1_1[2]).addConsoleInstrumentationHandler((level) => {
         level = level.level;
-        let hasItem = set(outer2_1[3]).getClient() === set;
+        let hasItem = set(closure_2_1[3]).getClient() === set;
         if (hasItem) {
           hasItem = set.has(level);
         }
         if (hasItem) {
-          outer2_2(level, level.args);
+          closure_2_2(level, level.args);
         }
       });
     }

@@ -1,10 +1,11 @@
-// Module ID: 13182
-// Function ID: 13183
+// Module ID: 13237
+// Function ID: 13238
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 13182 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 13237 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 let obj = { resetSilenceWarningOnDeviceChange: false, resetSilenceWarningAfterNMinutes: "ct", enableHardwareSilenceWarning: true };
 obj = { name: "2026-02-silence-warning-aggression", kind: "user", defaultConfig: obj, variations: null };
@@ -23,6 +24,6 @@ obj3.enableHardwareSilenceWarning = true;
 obj[3] = obj3;
 obj[3] = obj;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const result = require("set").fileFinishedImporting("modules/media_engine/SilenceWarningExperiment.tsx");
+const result = set.fileFinishedImporting("modules/media_engine/SilenceWarningExperiment.tsx");
 
 export default apexExperiment;

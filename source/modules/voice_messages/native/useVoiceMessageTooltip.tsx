@@ -1,41 +1,37 @@
-// Module ID: 11421
-// Function ID: 11422
+// Module ID: 11472
+// Function ID: 11473
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 1496, 11147, 1236, 7349, 9270, 2]
+// Dependencies: [19, 1496, 11186, 1236, 7387, 9307, 2]
 // Exports: default
 
-// Module 11421 (useVoiceMessageTooltip)
-import noop from "noop";
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
-import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus";
+// Module 11472 (useVoiceMessageTooltip)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "subscribeToKeyboardUIStore" /* 1496 */;
+import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus" /* 11186 */;
 
-let c4;
-let c5;
-let closure_6;
-let require = arg1;
+const require = arg1;
 ({ hideVoiceMessagesTooltip: c4, showVoiceMessagesTooltip: c5, useVoiceMessagesUIStore: closure_6 } = VoiceMessageRecordingStatus);
-const result = require("VoiceMessageRecordingStatus").fileFinishedImporting("modules/voice_messages/native/useVoiceMessageTooltip.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_messages/native/useVoiceMessageTooltip.tsx");
 
 export default function useVoiceMessageTooltip() {
   const ref = React.useRef(null);
-  let tmp2 = callback((showVoiceMessagesTooltip) => showVoiceMessagesTooltip.showVoiceMessagesTooltip);
-  const require = tmp2;
+  const tmp2 = callback((showVoiceMessagesTooltip) => showVoiceMessagesTooltip.showVoiceMessagesTooltip);
+  const _require = tmp2;
   const items = [tmp2];
   const items1 = [tmp2];
   const memo = React.useMemo(() => {
     const obj = { position: "top", label: null, visible: null };
-    const intl = tmp2(outer1_1[3]).intl;
-    obj[1] = intl.string(tmp2(outer1_1[3]).t["hP6+07"]);
-    obj[2] = tmp2;
+    const intl = callback(closure_1_1[3]).intl;
+    obj[1] = intl.string(callback(closure_1_1[3]).t["hP6+07"]);
+    obj[2] = callback;
     return obj;
   }, items);
   const effect = React.useEffect(() => {
-    if (tmp2) {
-      tmp2 = outer1_1;
-      tmp2 = tmp2(outer1_1[4]).getKeyboardIsOpen({ includeCustomKeyboard: true });
-      let closure_1 = outer1_3(() => {
+    if (callback) {
+      callback = callback(closure_1_1[4]).getKeyboardIsOpen({ includeCustomKeyboard: true });
+      closure_1 = closure_1_3(() => {
         if (callback !== obj.getKeyboardIsOpen({ includeCustomKeyboard: true })) {
-          outer1_4();
+          closure_1_4();
         }
       });
       const _setTimeout = setTimeout;
@@ -43,12 +39,12 @@ export default function useVoiceMessageTooltip() {
         callback2();
       }, 2000);
       return () => {
-        clearTimeout(noop);
+        clearTimeout(closure_2);
         dependencyMap();
       };
     }
   }, items1);
-  let obj = require(9270) /* useTooltip */;
+  let obj = _require(9307);
   const tooltip = obj.useTooltip(ref, memo);
   obj = { tooltipTargetRef: ref, showVoiceMessagesTooltip: closure_5 };
   return obj;

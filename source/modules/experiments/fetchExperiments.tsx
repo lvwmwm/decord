@@ -1,19 +1,19 @@
-// Module ID: 13554
-// Function ID: 13555
+// Module ID: 13612
+// Function ID: 13613
 // Name: fetchExperiments
 // Dependencies: [676, 530, 2]
 // Exports: fetchExperiments
 
-// Module 13554 (fetchExperiments)
-import { Endpoints } from "ME";
+// Module 13612 (fetchExperiments)
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/experiments/fetchExperiments.tsx");
+const Endpoints = ME.Endpoints;
+const result = set.fileFinishedImporting("modules/experiments/fetchExperiments.tsx");
 
 export const fetchExperiments = function fetchExperiments(arg0) {
-  let context;
-  let headers;
-  let withGuildExperiments;
   ({ withGuildExperiments, headers, context } = arg0);
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   return HTTP.get({ url: Endpoints.EXPERIMENTS, query: { with_guild_experiments: withGuildExperiments }, headers, context, retries: 3, oldFormErrors: true, rejectWithError: false });
 };

@@ -4,14 +4,15 @@
 // Dependencies: [245, 236]
 
 // Module 244 (AppRegistry)
-import importAllResult from "map";
+import MessageQueueDefault from "MessageQueue" /* 236 */;
+import importAllResult from "map" /* 245 */;
 
-require("map").registerComponent("LogBox", () => function NoOp() {
+importAllResult.registerComponent("LogBox", () => function NoOp() {
   return null;
 });
-global.RN$AppRegistry = require("map");
-global.RN$SurfaceRegistry = { renderSurface: require("map").runApplication, setSurfaceProps: require("map").setSurfaceProps };
-const obj = { renderSurface: require("map").runApplication, setSurfaceProps: require("map").setSurfaceProps };
-require("MessageQueue")("AppRegistry", require("map"));
+global.RN$AppRegistry = importAllResult;
+global.RN$SurfaceRegistry = { renderSurface: importAllResult.runApplication, setSurfaceProps: importAllResult.setSurfaceProps };
+const obj = { renderSurface: importAllResult.runApplication, setSurfaceProps: importAllResult.setSurfaceProps };
+MessageQueueDefault("AppRegistry", importAllResult);
 
-export const AppRegistry = require("map");
+export const AppRegistry = importAllResult;

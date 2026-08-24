@@ -4,10 +4,16 @@
 // Dependencies: [822, 858, 837, 848, 819, 839, 835, 855, 820]
 
 // Module 857 (getDynamicSamplingContextFromSpan)
-const require = arg1;
+import addNonEnumerableProperty from "addNonEnumerableProperty" /* 822 */;
+import baggageHeaderToDynamicSamplingContext from "baggageHeaderToDynamicSamplingContext" /* 835 */;
+import dsnFromString from "dsnFromString" /* 837 */;
+import getClient from "getClient" /* 848 */;
+import _mod858 from "module_858" /* 858 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function getDynamicSamplingContextFromSpan(spanContext) {
-  let obj = require(848) /* getClient */;
+  let obj = getClient;
   const client = obj.getClient();
   if (client) {
     let tmpResult = tmp(819);
@@ -116,17 +122,17 @@ function getDynamicSamplingContextFromSpan(spanContext) {
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 const _frozenDsc = "_frozenDsc";
 arg5.freezeDscOnSpan = function freezeDscOnSpan(arg0, arg1) {
-  const result = require(822) /* addNonEnumerableProperty */.addNonEnumerableProperty(arg0, _frozenDsc, arg1);
+  const result = addNonEnumerableProperty.addNonEnumerableProperty(arg0, _frozenDsc, arg1);
 };
 arg5.getDynamicSamplingContextFromClient = function getDynamicSamplingContextFromClient(trace_id, getOptions) {
   const options = getOptions.getOptions();
   let DEFAULT_ENVIRONMENT = options.environment;
   if (!DEFAULT_ENVIRONMENT) {
-    DEFAULT_ENVIRONMENT = require(858).DEFAULT_ENVIRONMENT;
+    DEFAULT_ENVIRONMENT = _mod858.DEFAULT_ENVIRONMENT;
   }
   const obj = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: getOptions.getDsn() || {}.publicKey, trace_id, org_id: null };
   const tmp2 = getOptions.getDsn() || {};
-  obj[4] = require(837) /* dsnFromString */.extractOrgIdFromClient(getOptions);
+  obj[4] = dsnFromString.extractOrgIdFromClient(getOptions);
   getOptions.emit("createDsc", obj);
   return obj;
 };
@@ -137,7 +143,7 @@ arg5.getDynamicSamplingContextFromScope = function getDynamicSamplingContextFrom
     const options = getOptions.getOptions();
     let DEFAULT_ENVIRONMENT = options.environment;
     if (!DEFAULT_ENVIRONMENT) {
-      DEFAULT_ENVIRONMENT = require(858).DEFAULT_ENVIRONMENT;
+      DEFAULT_ENVIRONMENT = _mod858.DEFAULT_ENVIRONMENT;
     }
     const obj = { environment: null, release: null, public_key: null, trace_id: null, org_id: null };
     obj[0] = DEFAULT_ENVIRONMENT;
@@ -145,15 +151,15 @@ arg5.getDynamicSamplingContextFromScope = function getDynamicSamplingContextFrom
     obj[2] = getOptions.getDsn() || {}.publicKey;
     obj[3] = propagationContext.traceId;
     const tmp4 = getOptions.getDsn() || {};
-    obj[4] = require(837) /* dsnFromString */.extractOrgIdFromClient(getOptions);
+    obj[4] = dsnFromString.extractOrgIdFromClient(getOptions);
     getOptions.emit("createDsc", obj);
     dsc = obj;
-    const obj2 = require(837) /* dsnFromString */;
+    const obj2 = dsnFromString;
   }
   return dsc;
 };
 arg5.getDynamicSamplingContextFromSpan = getDynamicSamplingContextFromSpan;
 arg5.spanToBaggageHeader = function spanToBaggageHeader(arg0) {
   const tmp = getDynamicSamplingContextFromSpan(arg0);
-  return require(835) /* baggageHeaderToDynamicSamplingContext */.dynamicSamplingContextToSentryBaggageHeader(tmp);
+  return baggageHeaderToDynamicSamplingContext.dynamicSamplingContextToSentryBaggageHeader(tmp);
 };

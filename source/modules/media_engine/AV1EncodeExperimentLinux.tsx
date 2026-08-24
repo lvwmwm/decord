@@ -1,16 +1,17 @@
-// Module ID: 13166
-// Function ID: 13167
+// Module ID: 13222
+// Function ID: 13223
 // Name: getAV1EncodeExperimentLinuxConfig
 // Dependencies: [1472, 2]
 // Exports: getAV1EncodeExperimentLinuxConfig
 
-// Module 13166 (getAV1EncodeExperimentLinuxConfig)
-import ApexExperiment from "ApexExperiment";
+// Module 13222 (getAV1EncodeExperimentLinuxConfig)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-06-av1-encode-linux", kind: "user", defaultConfig: { enabled: false }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/media_engine/AV1EncodeExperimentLinux.tsx");
+const result = set.fileFinishedImporting("modules/media_engine/AV1EncodeExperimentLinux.tsx");
 
 export const getAV1EncodeExperimentLinuxConfig = function getAV1EncodeExperimentLinuxConfig(MediaEngineStore) {
   return config.getConfig({ location: MediaEngineStore });

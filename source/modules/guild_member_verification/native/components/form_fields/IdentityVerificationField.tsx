@@ -1,25 +1,23 @@
-// Module ID: 8560
-// Function ID: 8561
+// Module ID: 8599
+// Function ID: 8600
 // Name: BaseIdentityVerificationField
-// Dependencies: [19, 17, 21, 4661, 712, 4734, 4326, 4745, 1236, 4200, 8561, 5260, 8626, 2007, 8629, 8658, 8597, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4739, 4330, 4750, 1236, 4204, 8600, 5265, 8663, 2008, 8666, 8695, 6604, 2]
 // Exports: default
 
-// Module 8560 (BaseIdentityVerificationField)
-import "noop";
-import { View } from "set";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8599 (BaseIdentityVerificationField)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4204 */;
+import Text from "Text" /* 4739 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function BaseIdentityVerificationField(icon) {
-  let label;
-  let onPress;
-  let passesVerification;
   icon = icon.icon;
   ({ label, passesVerification, onPress } = icon);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { style: tmp.container, children: null };
   let tmp4 = null;
   if (null != icon) {
@@ -29,41 +27,40 @@ function BaseIdentityVerificationField(icon) {
   }
   const items = [tmp4, , ];
   const items1 = [tmp.label];
-  items[1] = callback(require(4734) /* Text */.Text, { style: items1, variant: "text-md/medium", color: "mobile-text-heading-primary", children: label });
+  items[1] = callback(Text.Text, { style: items1, variant: "text-md/medium", color: "mobile-text-heading-primary", children: label });
   obj = { style: null, children: null };
   if (passesVerification) {
     obj[0] = tmp.verifiedContainer;
-    obj[1] = tmp6(tmp7(4326).CheckmarkLargeIcon, { color: "status-positive" });
+    obj[1] = tmp6(tmp7(4330).CheckmarkLargeIcon, { color: "status-positive" });
     let tmp9 = obj;
   } else {
     obj[0] = tmp.ctaButton;
-    const obj1 = { variant: "primary", size: "sm", grow: true, text: null, onPress: null };
+    obj1 = { variant: "primary", size: "sm", grow: true, text: null, onPress: null };
     const intl = tmp7(1236).intl;
     obj1[3] = intl.string(tmp7(1236).t["13ofGu"]);
     obj1[4] = onPress;
-    obj[1] = tmp6(tmp7(4745).Button, obj1);
+    obj[1] = tmp6(tmp7(4750).Button, obj1);
     tmp9 = obj;
   }
   items[2] = callback(View, tmp9);
   obj[1] = items;
   return closure_5(View, obj);
 }
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, icon: null, label: null, verifiedContainer: null, ctaButton: null };
-createCacheKey = { padding: 8, marginTop: 8, borderRadius: require("Themes").radii.sm, height: 48, flexDirection: "row", alignItems: "center", justifyContent: "space-between", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey = { padding: 8, marginTop: 8, borderRadius: ThemesDefault.radii.sm, height: 48, flexDirection: "row", alignItems: "center", justifyContent: "space-between", backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { marginLeft: 4, marginRight: 8 };
 createCacheKey[2] = { flex: 1, marginLeft: 4, lineHeight: 20 };
 createCacheKey[3] = { paddingVertical: 7, paddingHorizontal: 4, flexDirection: "row", alignItems: "center" };
 createCacheKey[4] = { flexGrow: 0, alignSelf: "center", paddingHorizontal: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/IdentityVerificationField.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/IdentityVerificationField.tsx");
 
 export default function IdentityVerificationField(arg0) {
-  let passesVerification;
-  let platform;
   ({ platform, passesVerification } = arg0);
-  if (require(4200) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL === platform) {
+  if (MAX_RESULTS_PER_PAGE.UserVerificationFieldPlatforms.EMAIL === platform) {
     const intl3 = tmp(1236).intl;
     const string2 = intl3.string;
     let INsLgA = tmp(1236).t;
@@ -74,7 +71,7 @@ export default function IdentityVerificationField(arg0) {
       string2Result = string2(INsLgA.c6EUJI);
     }
   } else {
-    if (tmp(4200).UserVerificationFieldPlatforms.PHONE === platform) {
+    if (tmp(4204).UserVerificationFieldPlatforms.PHONE === platform) {
       const intl2 = tmp(1236).intl;
       const string = intl2.string;
       const t = tmp(1236).t;
@@ -88,22 +85,21 @@ export default function IdentityVerificationField(arg0) {
       const intl = tmp(1236).intl;
       stringResult1 = intl.string(tmp(1236).t.mhv8BM);
     }
-    if (tmp(4200).UserVerificationFieldPlatforms.EMAIL === platform) {
-      let EnvelopeIcon = tmp(8658).EnvelopeIcon;
-    } else if (tmp(4200).UserVerificationFieldPlatforms.PHONE === platform) {
-      EnvelopeIcon = tmp(8597).MobilePhoneIcon;
+    if (tmp(4204).UserVerificationFieldPlatforms.EMAIL === platform) {
+      let EnvelopeIcon = tmp(8695).EnvelopeIcon;
+    } else if (tmp(4204).UserVerificationFieldPlatforms.PHONE === platform) {
+      EnvelopeIcon = tmp(6604).MobilePhoneIcon;
     } else {
-      EnvelopeIcon = tmp(8658).EnvelopeIcon;
+      EnvelopeIcon = tmp(8695).EnvelopeIcon;
     }
-    if (tmp(4200).UserVerificationFieldPlatforms.EMAIL === platform) {
+    if (tmp(4204).UserVerificationFieldPlatforms.EMAIL === platform) {
       let fn = () => {
         callback2(paths[10]).open();
       };
     } else {
-      fn = tmp(4200).UserVerificationFieldPlatforms.PHONE === platform ? (() => {
+      fn = tmp(4204).UserVerificationFieldPlatforms.PHONE === platform ? (() => {
         let obj = callback2(paths[11]);
-        obj = { reason: null };
-        obj[0] = callback(paths[14]).ChangePhoneReason.GUILD_PHONE_REQUIRED;
+        obj = { reason: callback(paths[14]).ChangePhoneReason.GUILD_PHONE_REQUIRED };
         obj.pushLazy(callback(paths[13])(paths[12], paths.paths), obj);
       }) : (() => {
 

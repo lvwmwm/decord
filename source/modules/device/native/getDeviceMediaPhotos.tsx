@@ -1,24 +1,22 @@
-// Module ID: 10279
-// Function ID: 10280
+// Module ID: 10318
+// Function ID: 10319
 // Name: getDeviceMediaPhotos
-// Dependencies: [17, 3, 1208, 500, 10280, 2]
+// Dependencies: [17, 3, 1208, 500, 10319, 2]
 // Exports: default
 
-// Module 10279 (getDeviceMediaPhotos)
-import { NativeModules } from "get ActivityIndicator";
+// Module 10318 (getDeviceMediaPhotos)
+import set from "set" /* 2 */;
+import timestampDefault from "timestamp" /* 3 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import set2 from "set" /* 500 */;
+import get_ActivityIndicatorDefault from "get ActivityIndicator" /* 10319 */;
 
-let c4 = new require("set")("DeviceMedia.tsx");
-const tmp2 = new require("set")("DeviceMedia.tsx");
-const result = require("module_1208").fileFinishedImporting("modules/device/native/getDeviceMediaPhotos.tsx");
+const NativeModules = get_ActivityIndicator.NativeModules;
+let closure_4 = new timestampDefault("DeviceMedia.tsx");
+const tmp2 = new timestampDefault("DeviceMedia.tsx");
+const result = set.fileFinishedImporting("modules/device/native/getDeviceMediaPhotos.tsx");
 
 export default function getDeviceMediaPhotos(arg0) {
-  let batchSize;
-  let endCursor;
-  let extensions;
-  let lastAssetIndex;
-  let lastNodeImageUri;
-  let onError;
-  let onFetched;
   ({ batchSize, extensions, onFetched, onError } = arg0);
   ({ endCursor, lastAssetIndex, lastNodeImageUri } = arg0);
   if (onError === undefined) {
@@ -27,9 +25,9 @@ export default function getDeviceMediaPhotos(arg0) {
       callback(table[2]).captureException(arg0, { tags: { source: "DEVICE_MEDIA" } });
     };
   }
-  let obj = require(500) /* set */;
+  let obj = set2;
   if (obj.isIOS()) {
-    const obj3 = importDefault(10280);
+    const obj3 = get_ActivityIndicatorDefault;
     if (obj3 != null) {
       obj = { first: null, groupTypes: "Recents", assetType: "All", after: null, extensions: null };
       obj[0] = batchSize;

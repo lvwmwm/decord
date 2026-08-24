@@ -1,28 +1,28 @@
-// Module ID: 9179
-// Function ID: 9180
+// Module ID: 9216
+// Function ID: 9217
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 5365, 1218, 1388, 589, 4196, 1377, 1379, 4342, 9180, 2007, 2]
+// Dependencies: [19, 5370, 1218, 1388, 589, 4200, 1377, 1379, 4346, 9217, 2008, 2]
 // Exports: default, useHasNeverWishlisted
 
-// Module 9179 (useWishlistNUXActionSheet)
-import noop from "noop";
-import createUserWidgetFromServer from "createUserWidgetFromServer";
-import fetchFingerprint from "fetchFingerprint";
-import { ContentDismissActionType } from "ContentDismissActionType";
+// Module 9216 (useWishlistNUXActionSheet)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "createUserWidgetFromServer" /* 5370 */;
+import closure_5 from "fetchFingerprint" /* 1218 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 
 const require = arg1;
-let result = require("fetchFingerprint").fileFinishedImporting("modules/collectibles/native/useWishlistNUXActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/native/useWishlistNUXActionSheet.tsx");
 
 export default function useWishlistNUXActionSheet() {
   let obj = _require(589);
-  const items = [fetchFingerprint];
+  const items = [closure_5];
   _require = obj.useStateFromStores(items, () => id.getId());
-  const items1 = [createUserWidgetFromServer];
-  const stateFromStores = _require(589).useStateFromStores(items1, () => outer1_4.getFirstWishlistId(closure_0));
+  const items1 = [closure_4];
+  const stateFromStores = _require(589).useStateFromStores(items1, () => closure_1_4.getFirstWishlistId(closure_0));
   let obj2 = _require(589);
-  const items2 = [createUserWidgetFromServer];
+  const items2 = [closure_4];
   let stateFromStores1 = _require(589).useStateFromStores(items2, () => {
-    const userProfile = outer1_4.getUserProfile(closure_0);
+    const userProfile = closure_1_4.getUserProfile(closure_0);
     let tmp2 = null != userProfile;
     if (tmp2) {
       tmp2 = userProfile.fetchEndedAt > 0;
@@ -51,15 +51,15 @@ export default function useWishlistNUXActionSheet() {
   return obj;
 };
 export const useHasNeverWishlisted = function useHasNeverWishlisted() {
-  const items = [fetchFingerprint];
+  const items = [closure_5];
   _require = _require(589).useStateFromStores(items, () => id.getId());
   const obj = _require(589);
-  const items1 = [createUserWidgetFromServer];
-  const stateFromStores = _require(589).useStateFromStores(items1, () => outer1_4.getFirstWishlistId(closure_0));
+  const items1 = [closure_4];
+  const stateFromStores = _require(589).useStateFromStores(items1, () => closure_1_4.getFirstWishlistId(closure_0));
   const obj2 = _require(589);
-  const items2 = [createUserWidgetFromServer];
+  const items2 = [closure_4];
   let stateFromStores1 = _require(589).useStateFromStores(items2, () => {
-    const userProfile = outer1_4.getUserProfile(closure_0);
+    const userProfile = closure_1_4.getUserProfile(closure_0);
     let tmp2 = null != userProfile;
     if (tmp2) {
       tmp2 = userProfile.fetchEndedAt > 0;

@@ -1,42 +1,46 @@
-// Module ID: 9890
-// Function ID: 9891
+// Module ID: 9929
+// Function ID: 9930
 // Name: openAcceptFriendRequestConfirmModal
-// Dependencies: [9891, 676, 21, 698, 4656, 9892, 2007, 2]
+// Dependencies: [9930, 676, 21, 698, 4662, 9931, 2008, 2]
 // Exports: openAcceptFriendRequestConfirmModal
 
-// Module 9890 (openAcceptFriendRequestConfirmModal)
-import { ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID as closure_3 } from "RELATIONSHIP_COUNT_ANIMATION_THRESHOLD";
-import { AnalyticEvents } from "ME";
-import { jsx } from "jsxProd";
+// Module 9929 (openAcceptFriendRequestConfirmModal)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+import RELATIONSHIP_COUNT_ANIMATION_THRESHOLD from "RELATIONSHIP_COUNT_ANIMATION_THRESHOLD" /* 9930 */;
 
-const result = require("jsxProd").fileFinishedImporting("modules/people/strangers/AcceptFriendRequestModalActionCreators.native.tsx");
+let closure_3 = RELATIONSHIP_COUNT_ANIMATION_THRESHOLD.ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID;
+const AnalyticEvents = ME.AnalyticEvents;
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("modules/people/strangers/AcceptFriendRequestModalActionCreators.native.tsx");
 
 export const openAcceptFriendRequestConfirmModal = function openAcceptFriendRequestConfirmModal(arg0) {
-  let importDefault;
-  let require;
   ({ onConfirm: require, onCancel: importDefault } = arg0);
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { type: closure_3 };
   obj.track(AnalyticEvents.OPEN_MODAL, obj);
   obj = {
     importer() {
-      return outer1_0(outer1_2[6])(outer1_2[5], outer1_2.paths).then((arg0) => {
-        let closure_0 = arg0.default;
+      return closure_1_0(closure_1_2[6])(closure_1_2[5], closure_1_2.paths).then((arg0) => {
+        closure_0 = arg0.default;
         return (arg0) => {
-          let closure_0 = arg0;
+          closure_0 = arg0;
           const obj = {};
           const merged = Object.assign(arg0);
           obj.onCancel = function onCancel() {
             closure_0.onClose();
-            if (outer1_1 != null) {
+            if (closure_1_1 != null) {
               tmp2();
             }
           };
           obj.onConfirm = closure_0;
-          return outer2_5(closure_0, obj);
+          return closure_2_5(closure_0, obj);
         };
       });
     }
   };
-  importDefault(4656).openLazy(obj);
+  _modDef4662.openLazy(obj);
 };

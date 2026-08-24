@@ -1,12 +1,15 @@
-// Module ID: 9059
-// Function ID: 9060
+// Module ID: 9096
+// Function ID: 9097
 // Name: getUserAgnosticState
-// Dependencies: [589, 9060, 709, 2]
+// Dependencies: [589, 9097, 709, 2]
 
-// Module 9059 (getUserAgnosticState)
-import { DeviceSettingsStore } from "initialize";
+// Module 9096 (getUserAgnosticState)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import hide_icymi_tabDefault from "hide_icymi_tab" /* 9097 */;
 
 let closure_2 = {};
+const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class LabFeatureStore extends DeviceSettingsStore {
 }
 const prototype = LabFeatureStore.prototype;
@@ -14,7 +17,7 @@ prototype["getUserAgnosticState"] = function getUserAgnosticState() {
   return { toggleStates: closure_2 };
 };
 prototype["initialize"] = function initialize(toggleStates) {
-  for (const key10008 in importDefault(9060)) {
+  for (const key10008 in hide_icymi_tabDefault) {
     let tmp = key10008;
     let flag;
     let tmp2 = closure_2;
@@ -44,11 +47,11 @@ prototype["set"] = function set(arg0, arg1) {
 };
 LabFeatureStore.displayName = "LabFeatureStore";
 LabFeatureStore.persistKey = "LabFeatureStore";
-const labFeatureStore = new LabFeatureStore(require("dispatcher"), {
+const labFeatureStore = new LabFeatureStore(dispatcherDefault, {
   LAB_FEATURE_TOGGLE: function handleLabFeatureToggleSet(labFeature) {
     closure_2[labFeature.labFeature] = labFeature.enabled;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/labs/LabFeatureStore.tsx");
+const result = require("set").fileFinishedImporting("modules/labs/LabFeatureStore.tsx");
 
 export default labFeatureStore;

@@ -1,24 +1,24 @@
-// Module ID: 16529
-// Function ID: 16530
+// Module ID: 16624
+// Function ID: 16625
 // Name: handleAVAudioSessionMode
-// Dependencies: [17, 1390, 4990, 4652, 1218, 1391, 4497, 1979, 4542, 7383, 676, 500, 16530, 5038, 2]
+// Dependencies: [17, 1390, 4995, 4658, 1218, 1391, 4501, 1980, 4547, 7421, 676, 500, 16625, 5043, 2]
 
-// Module 16529 (handleAVAudioSessionMode)
-import participantFromServer from "participantFromServer";
-import buildStageChannelUserRoles from "buildStageChannelUserRoles";
-import reset from "reset";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import handleConnectionOpen from "handleConnectionOpen";
-import updateVoiceState from "updateVoiceState";
-import getState from "getState";
-import { AppStates } from "ME";
-import set from "set";
-import "initialize";
-import set from "buildStageChannelUserRoles";
+// Module 16624 (handleAVAudioSessionMode)
+import initializeDefault from "initialize" /* 5043 */;
+import handleVoiceChannelSelect from "handleVoiceChannelSelect" /* 16625 */;
+import closure_2 from "participantFromServer" /* 1390 */;
+import closure_3 from "buildStageChannelUserRoles" /* 4995 */;
+import closure_4 from "reset" /* 4658 */;
+import closure_5 from "fetchFingerprint" /* 1218 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_8 from "handleConnectionOpen" /* 1980 */;
+import closure_9 from "updateVoiceState" /* 4547 */;
+import closure_10 from "getState" /* 7421 */;
+import { AppStates } from "ME" /* 676 */;
+import set from "set" /* 500 */;
 
-const require = arg1;
+require = arg1;
 function handleAVAudioSessionMode() {
   channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
   if (null == channel) {
@@ -27,7 +27,7 @@ function handleAVAudioSessionMode() {
   } else {
     let hasVideoResult = allActiveStreams.getAllActiveStreams().length > 0;
     if (!hasVideoResult) {
-      hasVideoResult = updateVoiceState.hasVideo(channel.id);
+      hasVideoResult = closure_9.hasVideo(channel.id);
     }
     if (!hasVideoResult) {
       hasVideoResult = videoEnabled.isVideoEnabled();
@@ -42,7 +42,7 @@ function handleAVAudioSessionMode() {
           VIDEO = AVAudioSessionMode.LISTEN;
           obj2 = tmp9;
         }
-        obj = require(16530) /* handleVoiceChannelSelect */;
+        obj = handleVoiceChannelSelect;
       }
     }
     VIDEO = VoiceEngine.AVAudioSessionMode.VIDEO;
@@ -67,13 +67,14 @@ if (set.isAndroid()) {
   VoiceEngine = require("get ActivityIndicator").NativeModules.VoiceEngine;
 }
 const VOICE = VoiceEngine.AVAudioSessionMode.VOICE;
+initializeDefault;
 let prototype = function AudioSessionModeManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const result = new Map().set(reset, handleAVAudioSessionMode);
-  const result1 = result.set(updateVoiceState, handleAVAudioSessionMode);
-  const result2 = result1.set(_detectH265HardwareDecode, handleAVAudioSessionMode);
-  const result3 = result2.set(buildStageChannelUserRoles, handleAVAudioSessionMode);
-  applyArgumentsResult.stores = result3.set(participantFromServer, handleAVAudioSessionMode);
+  const result = new Map().set(closure_4, handleAVAudioSessionMode);
+  const result1 = result.set(closure_9, handleAVAudioSessionMode);
+  const result2 = result1.set(closure_7, handleAVAudioSessionMode);
+  const result3 = result2.set(closure_3, handleAVAudioSessionMode);
+  applyArgumentsResult.stores = result3.set(closure_2, handleAVAudioSessionMode);
   return applyArgumentsResult;
 }.prototype;
 class prototype extends tmp2 {

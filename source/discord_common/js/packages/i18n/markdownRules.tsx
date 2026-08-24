@@ -1,15 +1,15 @@
-// Module ID: 16489
-// Function ID: 16490
+// Module ID: 16584
+// Function ID: 16585
 // Name: link
-// Dependencies: [4092, 2]
+// Dependencies: [4095, 2]
 
-// Module 16489 (link)
-import t from "t";
-import t from "t";
+// Module 16584 (link)
+import set from "set" /* 2 */;
+import t from "t" /* 4095 */;
 
-const link = require("t").defaultRules.link;
-const text = require("t").defaultRules.text;
-let obj = { newline: require("t").defaultRules.newline, paragraph: require("t").defaultRules.paragraph, url: require("t").defaultRules.url, link: null, strong: null, u: null, br: null, em: null, image: null, hook: null, noparse: null, text: null };
+const link = t.defaultRules.link;
+const text = t.defaultRules.text;
+let obj = { newline: t.defaultRules.newline, paragraph: t.defaultRules.paragraph, url: t.defaultRules.url, link: null, strong: null, u: null, br: null, em: null, image: null, hook: null, noparse: null, text: null };
 obj = {};
 const merged = Object.assign(link);
 obj.parse = function parse(arg0, arg1, context) {
@@ -18,11 +18,11 @@ obj.parse = function parse(arg0, arg1, context) {
   return parsed;
 };
 obj[3] = obj;
-obj[4] = require("t").defaultRules.strong;
-obj[5] = require("t").defaultRules.u;
-obj[6] = require("t").defaultRules.br;
-obj[7] = require("t").defaultRules.em;
-obj[8] = require("t").defaultRules.image;
+obj[4] = t.defaultRules.strong;
+obj[5] = t.defaultRules.u;
+obj[6] = t.defaultRules.br;
+obj[7] = t.defaultRules.em;
+obj[8] = t.defaultRules.image;
 obj = { order: text.order, match: null, parse: null, react: null };
 obj[1] = t.inlineRegex(/^\$\[(.*?)\]\((\w+)\)/);
 obj[2] = function parse(arg0, arg1, render) {
@@ -50,6 +50,6 @@ obj1[3] = function react(content) {
 };
 obj[10] = obj1;
 obj[11] = text;
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/i18n/markdownRules.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/i18n/markdownRules.tsx");
 
 export const rules = obj;

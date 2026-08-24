@@ -1,11 +1,12 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17204
+// Function ID: 17205
 // Name: populateMap
 // Dependencies: [709, 2]
 // Exports: initialize
 
-// Module 17110 (populateMap)
-import set from "set";
+// Module 17204 (populateMap)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import set from "set" /* 2 */;
 
 function populateMap(actions) {
   actions = actions.actions;
@@ -51,7 +52,7 @@ function handleAction(type) {
     tmp3 = "OVERLAY_INITIALIZE" !== type.type;
   }
   if (!tmp3) {
-    let c3 = true;
+    c3 = true;
   }
   if (type.type in closure_2) {
     const items = [];
@@ -93,5 +94,5 @@ export const initialize = function initialize(obj) {
     let tmp5 = populateMap(tmp3);
     continue;
   }
-  importDefault(709).addInterceptor(handleAction);
+  dispatcherDefault.addInterceptor(handleAction);
 };

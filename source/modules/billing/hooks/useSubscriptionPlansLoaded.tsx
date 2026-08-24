@@ -1,22 +1,18 @@
-// Module ID: 12853
-// Function ID: 12854
+// Module ID: 12908
+// Function ID: 12909
 // Name: getSubscriptionPlansLoaded
-// Dependencies: [4042, 4044, 4045, 1924, 3, 589, 2]
+// Dependencies: [4045, 4047, 4048, 1924, 3, 589, 2]
 // Exports: useSubscriptionPlansLoaded
 
-// Module 12853 (getSubscriptionPlansLoaded)
-import handlePaymentSourceUpdate from "handlePaymentSourceUpdate";
-import addSubscriptionPlan from "addSubscriptionPlan";
-import reset from "reset";
-import { ACTIVE_PREMIUM_SKUS } from "GuildFeatures";
+// Module 12908 (getSubscriptionPlansLoaded)
+import timestampDefault from "timestamp" /* 3 */;
+import closure_2 from "handlePaymentSourceUpdate" /* 4045 */;
+import closure_3 from "addSubscriptionPlan" /* 4047 */;
+import closure_4 from "reset" /* 4048 */;
+import { ACTIVE_PREMIUM_SKUS } from "GuildFeatures" /* 1924 */;
 
-let require = arg1;
+const require = arg1;
 function getSubscriptionPlansLoaded(items) {
-  let defaultPaymentSourceId;
-  let obj;
-  let obj2;
-  let paymentSourceIds;
-  let tmp9;
   let tmp = items;
   if (items === undefined) {
     items = [];
@@ -25,7 +21,7 @@ function getSubscriptionPlansLoaded(items) {
   }
   let tmp5 = arg1;
   if (arg1 === undefined) {
-    const items1 = [handlePaymentSourceUpdate, addSubscriptionPlan, reset];
+    const items1 = [closure_2, closure_3, closure_4];
     tmp5 = items1;
   }
   [tmp9, obj, obj2] = tmp5;
@@ -57,8 +53,8 @@ function getSubscriptionPlansLoaded(items) {
   }
   return obj.isLoadedForSKUs(tmp);
 }
-new require("GuildFeatures")("useSubscriptionPlansLoaded");
-const result = require("reset").fileFinishedImporting("modules/billing/hooks/useSubscriptionPlansLoaded.tsx");
+new timestampDefault("useSubscriptionPlansLoaded");
+const result = require("set").fileFinishedImporting("modules/billing/hooks/useSubscriptionPlansLoaded.tsx");
 
 export const useSubscriptionPlansLoaded = function useSubscriptionPlansLoaded() {
   let tmp = arg0;
@@ -67,12 +63,12 @@ export const useSubscriptionPlansLoaded = function useSubscriptionPlansLoaded() 
     HermesBuiltin.arraySpread(ACTIVE_PREMIUM_SKUS, 0);
     tmp = items;
   }
-  const require = tmp;
-  const items1 = [handlePaymentSourceUpdate, addSubscriptionPlan, reset];
+  items = tmp;
+  const items1 = [closure_2, closure_3, closure_4];
   const items2 = [tmp];
-  return require(589) /* initialize */.useStateFromStores(items1, () => {
-    const items = [outer1_2, outer1_3, outer1_4];
-    return outer1_6(closure_0, items);
+  return items(589).useStateFromStores(items1, () => {
+    items = [closure_1_2, closure_1_3, closure_1_4];
+    return closure_1_6(items, items);
   }, items2);
 };
 export { getSubscriptionPlansLoaded };

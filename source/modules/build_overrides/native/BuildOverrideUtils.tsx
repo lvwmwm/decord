@@ -1,14 +1,14 @@
-// Module ID: 10968
-// Function ID: 10969
+// Module ID: 11007
+// Function ID: 11008
 // Name: setBuildOverrideForBranch
-// Dependencies: [5, 10638, 500, 10969, 10970, 4656, 4290, 2]
+// Dependencies: [5, 10677, 500, 11008, 11009, 4662, 4294, 2]
 // Exports: refreshBuildOverride, setBuildOverrideForId, setBuildOverrideFromLink, toggleOverride
 
-// Module 10968 (setBuildOverrideForBranch)
-import module_4656 from "module_4656";
-import getCurrentBuildOverride from "getCurrentBuildOverride";
-import set from "set";
-import set from "set";
+// Module 11007 (setBuildOverrideForBranch)
+import BundleUpdaterManagerDefault from "BundleUpdaterManager" /* 11009 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "getCurrentBuildOverride" /* 10677 */;
+import set from "set" /* 500 */;
 
 const require = arg1;
 function setBuildOverrideForBranch(id) {
@@ -27,9 +27,9 @@ function setBuildOverride(arg0) {
 function _setBuildOverride() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -42,7 +42,7 @@ function _setBuildOverride() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -57,12 +57,12 @@ function _setBuildOverride() {
               obj[0] = arg1;
               return obj;
             } else {
-              const dependencyMap = tmp2;
+              dependencyMap = tmp2;
               const callback = tmp5;
               let lib;
-              let obj4 = lib(outer1_2[3]);
-              const obj1 = {};
-              obj1[outer1_5] = lib;
+              let obj4 = lib(closure_1_2[3]);
+              obj1 = {};
+              obj1[closure_1_5] = lib;
               c3 = 1;
               c4 = 1;
               let obj2 = { value: null, done: false };
@@ -80,10 +80,10 @@ function _setBuildOverride() {
           } else {
             lib = arg1;
             if (400 !== lib.status) {
-              obj2 = callback(10970);
+              obj2 = callback(11009);
               const result = obj2.checkForUpdateAndReload();
             } else {
-              obj = callback(4656);
+              obj = callback(4662);
               obj4 = { title: "Override Error", body: null, isDismissable: true };
               obj4[1] = lib.body[closure_5];
               obj.show(obj4);
@@ -97,7 +97,7 @@ function _setBuildOverride() {
       }
     })();
   });
-  const _setBuildOverride = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -130,7 +130,7 @@ function _clearBuildOverride() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -146,12 +146,12 @@ function _clearBuildOverride() {
             return obj;
           } else {
             const callback = tmp5;
-            let closure_0 = tmp2;
+            closure_0 = tmp2;
             closure_0 = undefined;
             dependencyMap = 1;
             c3 = 1;
-            const obj1 = { value: null, done: false };
-            obj1[0] = outer1_0(10969).clearBuildOverride();
+            obj1 = { value: null, done: false };
+            obj1[0] = closure_1_0(11008).clearBuildOverride();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -165,10 +165,10 @@ function _clearBuildOverride() {
         } else {
           closure_0 = arg1;
           if (400 !== closure_0.status) {
-            obj2 = callback(10970);
+            obj2 = callback(11009);
             const result = obj2.checkForUpdateAndReload();
           } else {
-            obj = callback(4656);
+            obj = callback(4662);
             const obj3 = { title: "Clear Override Error", body: null, isDismissable: true };
             obj3[1] = closure_0.body;
             obj.show(obj3);
@@ -181,7 +181,7 @@ function _clearBuildOverride() {
       }
     }
   });
-  const _clearBuildOverride = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -193,9 +193,9 @@ function _clearBuildOverride() {
 function _toggleOverride() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (currentBuildOverride === 2) {
         currentBuildOverride = 3;
@@ -208,7 +208,7 @@ function _toggleOverride() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -223,13 +223,13 @@ function _toggleOverride() {
               obj[0] = arg1;
               return obj;
             } else {
-              const dependencyMap = 0;
+              dependencyMap = 0;
               const callback = tmp2;
               let lib;
               const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
               let id;
               if (overrides != null) {
-                if (overrides[outer1_5] != null) {
+                if (overrides[closure_1_5] != null) {
                   id = tmp18.id;
                 }
               }
@@ -239,27 +239,27 @@ function _toggleOverride() {
               if (override != null) {
                 const targetBuildOverride = override.targetBuildOverride;
                 if (targetBuildOverride != null) {
-                  if (targetBuildOverride[outer1_5] != null) {
+                  if (targetBuildOverride[closure_1_5] != null) {
                     id1 = tmp23.id;
                   }
                 }
               }
               if (id === id1) {
-                outer1_9();
+                closure_1_9();
               } else if (null != buildOverride.payload) {
                 if (obj10.isManualBuildOverrideLink(tmp37)) {
                   if (null != id1) {
-                    outer1_6(id1);
+                    closure_1_6(id1);
                     currentBuildOverride = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 }
-                obj10 = lib(outer1_2[6]);
+                obj10 = lib(closure_1_2[6]);
                 const tmp39 = lib;
                 c3 = 1;
                 currentBuildOverride = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = lib(outer1_2[3]).applyPublicBuildOverride(buildOverride.payload);
+                obj1 = { value: null, done: false };
+                obj1[0] = lib(closure_1_2[3]).applyPublicBuildOverride(buildOverride.payload);
                 return obj1;
               }
               currentBuildOverride = 3;
@@ -276,13 +276,13 @@ function _toggleOverride() {
           } else {
             lib = arg1;
             if (400 === lib.status) {
-              obj = callback(4656);
+              obj = callback(4662);
               const obj3 = { title: "Override Error", body: null, isDismissable: true };
               obj3[1] = lib.body[closure_5];
               obj.show(obj3);
             }
           }
-          obj2 = callback(10970);
+          obj2 = callback(11009);
           const result = obj2.checkForUpdateAndReload();
         } catch (tmp29) {
           currentBuildOverride = tmp;
@@ -291,7 +291,7 @@ function _toggleOverride() {
       }
     })();
   });
-  const _toggleOverride = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -303,9 +303,9 @@ function _toggleOverride() {
 function _setBuildOverrideFromLink() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (currentBuildOverride === 2) {
         currentBuildOverride = 3;
@@ -318,7 +318,7 @@ function _setBuildOverrideFromLink() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -333,13 +333,13 @@ function _setBuildOverrideFromLink() {
               obj[0] = arg1;
               return obj;
             } else {
-              const dependencyMap = tmp2;
+              dependencyMap = tmp2;
               const callback = tmp5;
               let lib;
               const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
               let id;
               if (overrides != null) {
-                if (overrides[outer1_5] != null) {
+                if (overrides[closure_1_5] != null) {
                   id = tmp18.id;
                 }
               }
@@ -349,7 +349,7 @@ function _setBuildOverrideFromLink() {
               if (override != null) {
                 const targetBuildOverride = override.targetBuildOverride;
                 if (targetBuildOverride != null) {
-                  if (targetBuildOverride[outer1_5] != null) {
+                  if (targetBuildOverride[closure_1_5] != null) {
                     id1 = tmp23.id;
                   }
                 }
@@ -358,8 +358,8 @@ function _setBuildOverrideFromLink() {
                 if (null != buildOverride.payload) {
                   c3 = 1;
                   currentBuildOverride = 1;
-                  const obj1 = { value: null, done: false };
-                  obj1[0] = lib(outer1_2[3]).applyPublicBuildOverride(buildOverride.payload);
+                  obj1 = { value: null, done: false };
+                  obj1[0] = lib(closure_1_2[3]).applyPublicBuildOverride(buildOverride.payload);
                   return obj1;
                 }
               }
@@ -378,13 +378,13 @@ function _setBuildOverrideFromLink() {
           } else {
             lib = arg1;
             if (400 === lib.status) {
-              obj = callback(4656);
+              obj = callback(4662);
               const obj3 = { title: "Override Error", body: null, isDismissable: true };
               obj3[1] = lib.body[closure_5];
               obj.show(obj3);
             }
           }
-          obj2 = callback(10970);
+          obj2 = callback(11009);
           const result = obj2.checkForUpdateAndReload();
         } catch (tmp26) {
           currentBuildOverride = tmp;
@@ -393,7 +393,7 @@ function _setBuildOverrideFromLink() {
       }
     })();
   });
-  const _setBuildOverrideFromLink = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -415,7 +415,7 @@ export const setBuildOverrideForId = function setBuildOverrideForId(id) {
 };
 export { setBuildOverride };
 export const refreshBuildOverride = function refreshBuildOverride() {
-  const result = importDefault(10970).checkForUpdateAndReload();
+  const result = BundleUpdaterManagerDefault.checkForUpdateAndReload();
 };
 export { clearBuildOverride };
 export const toggleOverride = function toggleOverride(code) {

@@ -1,50 +1,56 @@
-// Module ID: 14661
-// Function ID: 14662
+// Module ID: 14729
+// Function ID: 14730
 // Name: toggle
-// Dependencies: [14609, 8198, 4006, 705, 1236, 10669, 500, 2]
+// Dependencies: [14677, 8238, 4009, 705, 1236, 10708, 500, 2]
 
-// Module 14661 (toggle)
-import { useFontScaleStore } from "DEFAULT_FONT_SCALE_STORE_STATE";
-import createToggle from "createToggle";
+// Module 14729 (toggle)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import isIterable from "isIterable" /* 4009 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import DEFAULT_FONT_SCALE_STORE_STATE from "DEFAULT_FONT_SCALE_STORE_STATE" /* 14677 */;
+import createToggle from "createToggle" /* 10708 */;
 
+const useFontScaleStore = DEFAULT_FONT_SCALE_STORE_STATE.useFontScaleStore;
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.gFob3e);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.gFob3e);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
+  parent: MobileUserSettings.MobileUserSettings.APPEARANCE,
   useValue: function useClassicChatFontScaleValue() {
-    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(4006) /* isIterable */.shallow);
+    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, isIterable.shallow);
   },
   onValueChange: function onClassicChatFontScaleChange(arg0) {
     const _require = arg0;
-    return _require(705).batchUpdates(() => outer1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
+    return _require(705).batchUpdates(() => closure_1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
   },
   useDescription: function useClassicChatFontScaleDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.OU3q8a);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.OU3q8a);
   },
-  usePredicate: require("set").isAndroid
+  usePredicate: set2.isAndroid
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.gFob3e);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.gFob3e);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
+  parent: MobileUserSettings.MobileUserSettings.APPEARANCE,
   useValue: function useClassicChatFontScaleValue() {
-    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(4006) /* isIterable */.shallow);
+    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, isIterable.shallow);
   },
   onValueChange: function onClassicChatFontScaleChange(arg0) {
     const _require = arg0;
-    return _require(705).batchUpdates(() => outer1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
+    return _require(705).batchUpdates(() => closure_1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
   },
   useDescription: function useClassicChatFontScaleDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.OU3q8a);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.OU3q8a);
   },
-  usePredicate: require("set").isAndroid
+  usePredicate: set2.isAndroid
 };
-const result = require("isIterable").fileFinishedImporting("modules/user_settings/defs/native/AndroidClassicChatFontScaleSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/AndroidClassicChatFontScaleSetting.tsx");
 
 export default toggle;

@@ -1,54 +1,49 @@
-// Module ID: 12441
-// Function ID: 12442
+// Module ID: 12493
+// Function ID: 12494
 // Name: VideoEmptyState
-// Dependencies: [19, 17, 1391, 676, 21, 4661, 712, 12442, 1297, 1236, 12071, 9668, 589, 4761, 9860, 4531, 4734, 4746, 2]
+// Dependencies: [19, 17, 1391, 676, 21, 4668, 712, 12494, 1297, 1236, 12123, 9707, 589, 4766, 9899, 4536, 4739, 4751, 2]
 // Exports: default
 
-// Module 12441 (VideoEmptyState)
-import "noop";
-import { View } from "CollapsingText";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12493 (VideoEmptyState)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4766 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
 const require = arg1;
+noopAll;
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 let obj = { NONE: "NONE", STREAM_ENDED: "STREAM_ENDED", STREAM_FAILED: "STREAM_FAILED" };
 obj = { container: null, placeholderImage: null, placeholderText: null, buttonWrapper: null, buttonPill: null };
-obj = { alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_700, padding: 8 };
+obj = { alignItems: "center", justifyContent: "center", backgroundColor: ThemesDefault.unsafe_rawColors.PRIMARY_700, padding: 8 };
 obj[0] = obj;
 obj[1] = { marginBottom: 8, width: "100%", resizeMode: "contain" };
-createCacheKey = { color: require("Themes").unsafe_rawColors.WHITE, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20, textAlign: "center" };
+createCacheKey = { color: ThemesDefault.unsafe_rawColors.WHITE, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20, textAlign: "center" };
 obj[2] = createCacheKey;
 obj[3] = { marginTop: 16, alignSelf: "center" };
-obj[4] = { borderRadius: require("Themes").radii.round };
+obj[4] = { borderRadius: ThemesDefault.radii.round };
 let closure_9 = createCacheKey.createStyles(obj);
-let obj2 = { borderRadius: require("Themes").radii.round };
-const result = require("ensureGuildLoaded").fileFinishedImporting("components_native/calls/stream/VideoEmptyState.tsx");
+let obj2 = { borderRadius: ThemesDefault.radii.round };
+const result = require("set").fileFinishedImporting("components_native/calls/stream/VideoEmptyState.tsx");
 
 export default function VideoEmptyState(style) {
-  let avError;
-  let removeCloseButton;
-  let removeSplashImage;
-  let stream;
-  let type;
   ({ type, avError, removeSplashImage, removeCloseButton, stream } = style);
   const merged = Object.assign(style, Object.create(null));
-  let importDefault;
+  importDefault = undefined;
   const tmp2 = callback2();
   if (obj.STREAM_ENDED === type) {
     let tmp16 = !removeSplashImage;
     if (!removeSplashImage) {
       obj = { style: null };
       obj[0] = tmp2.placeholderImage;
-      tmp16 = callback(stream(12442).StreamEnded, obj);
+      tmp16 = callback(stream(12494).StreamEnded, obj);
     }
     obj = { children: null };
     const items = [tmp16, ];
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = tmp2.placeholderText;
     const intl2 = stream(1236).intl;
     obj1[1] = intl2.formatToMarkdownString(stream(1236).t["1Ww0Hi"], {});
@@ -62,7 +57,7 @@ export default function VideoEmptyState(style) {
     if (!removeSplashImage) {
       obj = { style: null };
       obj[0] = tmp2.placeholderImage;
-      tmp7 = callback(stream(12071).StreamFailed, obj);
+      tmp7 = callback(stream(12123).StreamFailed, obj);
     }
     let obj2 = { children: null };
     const items1 = [tmp7, ];
@@ -79,28 +74,28 @@ export default function VideoEmptyState(style) {
     tmp5Result = null;
   }
   if (null != avError) {
-    let obj7 = stream(9668);
+    let obj7 = stream(9707);
     let errorCode = obj7.getErrorInfo(avError).errorCode;
   } else {
     errorCode = null;
     if (type === tmp3.STREAM_FAILED) {
-      let obj6 = stream(9668);
-      errorCode = obj6.getErrorInfo(stream(9668).AVError.STREAM_FAILED_TO_START).errorCode;
+      let obj6 = stream(9707);
+      errorCode = obj6.getErrorInfo(stream(9707).AVError.STREAM_FAILED_TO_START).errorCode;
     }
   }
   let obj8 = stream(589);
-  const items2 = [ensureGuildLoaded];
+  const items2 = [closure_4];
   const items3 = [stream.channelId];
-  importDefault = obj8.useStateFromStores(items2, () => outer1_4.getChannel(stream.channelId), items3);
-  importDefault(4761)(() => {
+  importDefault = obj8.useStateFromStores(items2, () => closure_1_4.getChannel(stream.channelId), items3);
+  useMountLayoutEffectDefault(() => {
     let isGuildStageVoiceResult;
     if (closure_1 != null) {
       isGuildStageVoiceResult = closure_1.isGuildStageVoice();
     }
     if (isGuildStageVoiceResult) {
-      const obj2 = stream(outer1_2[14]);
-      obj2.stopStream(stream(outer1_2[15]).encodeStreamKey(stream));
-      const obj3 = stream(outer1_2[15]);
+      const obj2 = stream(closure_1_2[14]);
+      obj2.stopStream(stream(closure_1_2[15]).encodeStreamKey(stream));
+      const obj3 = stream(closure_1_2[15]);
     }
   });
   const obj4 = {};
@@ -115,7 +110,7 @@ export default function VideoEmptyState(style) {
     obj6 = { errorCode: null };
     obj6[0] = errorCode;
     obj5[3] = intl3.formatToPlainString(tmp28(1236).t.ejOT95, obj6);
-    tmp34 = callback(tmp28(4734).Text, obj5);
+    tmp34 = callback(tmp28(4739).Text, obj5);
   }
   items5[1] = tmp34;
   let tmp36 = !removeCloseButton;
@@ -127,10 +122,10 @@ export default function VideoEmptyState(style) {
     const intl4 = tmp28(1236).intl;
     obj8[2] = intl4.string(tmp28(1236).t["4EGMWL"]);
     obj8[3] = function onPress() {
-      const obj = stream(outer1_2[14]);
-      obj.stopStream(stream(outer1_2[15]).encodeStreamKey(stream));
+      obj = stream(closure_1_2[14]);
+      obj.stopStream(stream(closure_1_2[15]).encodeStreamKey(stream));
     };
-    obj7[1] = callback(tmp28(4746).BaseTextButton, obj8);
+    obj7[1] = callback(tmp28(4751).BaseTextButton, obj8);
     tmp36 = callback(tmp32, obj7);
   }
   items5[2] = tmp36;

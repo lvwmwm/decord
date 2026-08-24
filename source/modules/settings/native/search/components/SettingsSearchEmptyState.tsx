@@ -1,16 +1,18 @@
-// Module ID: 15066
-// Function ID: 15067
-// Dependencies: [19, 17, 21, 4661, 1351, 1236, 8867, 4733, 4734, 2]
+// Module ID: 15130
+// Function ID: 15131
+// Dependencies: [19, 17, 21, 4668, 1351, 1236, 8904, 4738, 4739, 2]
 
-// Module 15066
-import importAllResult from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15130
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Stack from "Stack" /* 4738 */;
+import Text from "Text" /* 4739 */;
+import getNoResultsAltSource from "getNoResultsAltSource" /* 8904 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ container: { paddingTop: 24, justifyContent: "center", alignItems: "center" }, textContainer: { marginTop: 24 } });
 const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
@@ -21,21 +23,21 @@ const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
     AccessibilityAnnouncer.announce(intl.string(callback(1236).t.zihbmv), "polite");
   }, []);
   let obj = { style: tmp.container, children: null };
-  const items = [callback(require(8867) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
+  const items = [callback(getNoResultsAltSource.NoResultsAlt, { resizeMode: "contain" }), ];
   obj = { style: tmp.textContainer, align: "center", justify: "center", children: null };
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
-  let intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.zihbmv);
-  const items1 = [callback(require(4734) /* Text */.Text, obj), ];
-  const obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.XclvsB);
-  items1[1] = callback(require(4734) /* Text */.Text, obj1);
+  let intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.zihbmv);
+  const items1 = [callback(Text.Text, obj), ];
+  obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
+  const intl2 = getSystemLocale.intl;
+  obj1[2] = intl2.string(getSystemLocale.t.XclvsB);
+  items1[1] = callback(Text.Text, obj1);
   obj[3] = items1;
-  items[1] = callback2(require(4733) /* Stack */.Stack, obj);
+  items[1] = callback2(Stack.Stack, obj);
   obj[1] = items;
   return callback2(View, obj);
 });
-const result = require("jsxProd").fileFinishedImporting("modules/settings/native/search/components/SettingsSearchEmptyState.tsx");
+const result = require("set").fileFinishedImporting("modules/settings/native/search/components/SettingsSearchEmptyState.tsx");
 
 export default memoResult;

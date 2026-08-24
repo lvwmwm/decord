@@ -1,28 +1,28 @@
-// Module ID: 13429
-// Function ID: 13430
+// Module ID: 13487
+// Function ID: 13488
 // Name: _fetchGuildForPopout
 // Dependencies: [5, 676, 709, 530, 2]
 // Exports: fetchGuildForPopout
 
-// Module 13429 (_fetchGuildForPopout)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import { Endpoints } from "ME";
+// Module 13487 (_fetchGuildForPopout)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _fetchGuildForPopout() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0) {
-      const dependencyMap = tmp3;
-      const obj1 = { type: "GUILD_POPOUT_FETCH_START", guildId: null };
+      dependencyMap = tmp3;
+      obj1 = { type: "GUILD_POPOUT_FETCH_START", guildId: null };
       obj1[1] = callback;
-      outer1_1(outer1_2[2]).dispatch(obj1);
-      let c4 = 1;
-      const HTTP = callback(outer1_2[3]).HTTP;
+      closure_1_1(closure_1_2[2]).dispatch(obj1);
+      c4 = 1;
+      const HTTP = callback(closure_1_2[3]).HTTP;
       const obj2 = { url: null, oldFormErrors: true, rejectWithError: true };
       obj2[0] = c4.GUILD_PREVIEW(callback);
       yield HTTP.get(obj2);
@@ -32,7 +32,7 @@ function _fetchGuildForPopout() {
         const obj4 = { type: "GUILD_POPOUT_FETCH_FAILURE", guildId: null };
         obj4[1] = callback;
         obj3.dispatch(obj4);
-        let c6 = 3;
+        c6 = 3;
       } else if (arg0 === 1) {
         c6 = 3;
         throw arg1;
@@ -49,7 +49,7 @@ function _fetchGuildForPopout() {
       return arg1;
     })();
   });
-  const _fetchGuildForPopout = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -58,7 +58,7 @@ function _fetchGuildForPopout() {
   }
   return applyArgumentsResult;
 }
-const result = require("dispatcher").fileFinishedImporting("modules/guild_profile/GuildPopoutActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_profile/GuildPopoutActionCreators.tsx");
 
 export const fetchGuildForPopout = function fetchGuildForPopout(id) {
   const self = this;

@@ -1,43 +1,43 @@
-// Module ID: 11797
-// Function ID: 11798
+// Module ID: 11846
+// Function ID: 11847
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [19, 21, 4219, 4660, 1236, 4660, 2]
+// Dependencies: [19, 21, 4223, 4667, 1236, 4667, 2]
 // Exports: default
 
-// Module 11797 (UserProfileConfirmThreadRemove)
-import "noop";
-import jsxProd from "jsxProd";
+// Module 11846 (UserProfileConfirmThreadRemove)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-const result = require("nameFromUser").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmThreadRemove.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmThreadRemove.tsx");
 
 export default function UserProfileConfirmThreadRemove(isForumPost) {
-  let onConfirm;
-  let user;
   isForumPost = isForumPost.isForumPost;
   ({ user, onConfirm } = isForumPost);
-  let obj = importDefault(4219);
+  let obj = nameFromUserDefault;
   const name = obj.useName(user);
-  const intl = require(1236) /* getSystemLocale */.intl;
-  const t = require(1236) /* getSystemLocale */.t;
+  const intl = getSystemLocale.intl;
+  const t = getSystemLocale.t;
   obj = { title: intl.string(isForumPost ? t["8sKSjm"] : t.ZPm8jN), content: null, actions: null };
   const intl2 = tmp4(1236).intl;
   const t2 = tmp4(1236).t;
   obj[1] = intl2.formatToPlainString(isForumPost ? t2["6UGfnx"] : t2["hL+Znb"], { user: name });
   obj = { children: null };
-  const obj1 = { variant: "destructive", text: null, onPress: null };
+  obj1 = { variant: "destructive", text: null, onPress: null };
   const intl3 = tmp4(1236).intl;
-  obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.N86XcP);
+  obj1[1] = intl3.string(getSystemLocale.t.N86XcP);
   obj1[2] = onConfirm;
-  const items = [closure_3(require(4660) /* getAlertModalItemKey */.AlertActionButton, obj1, "remove-user-from-thread"), ];
+  const items = [closure_3(getAlertModalItemKey.AlertActionButton, obj1, "remove-user-from-thread"), ];
   const obj2 = { variant: "secondary", text: null };
   const intl4 = tmp4(1236).intl;
-  obj2[1] = intl4.string(require(1236) /* getSystemLocale */.t.yNbnce);
-  items[1] = closure_3(require(4660) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel-remove-user-from-thread");
+  obj2[1] = intl4.string(getSystemLocale.t.yNbnce);
+  items[1] = closure_3(getAlertModalItemKey.AlertActionButton, obj2, "cancel-remove-user-from-thread");
   obj[0] = items;
-  obj[2] = callback(require(4660) /* getAlertModalItemKey */.AlertActions, obj);
-  return closure_3(require(4660) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[2] = callback(getAlertModalItemKey.AlertActions, obj);
+  return closure_3(getAlertModalItemKey.AlertModal, obj);
 };

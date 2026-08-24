@@ -1,34 +1,39 @@
-// Module ID: 15016
-// Function ID: 15017
+// Module ID: 15080
+// Function ID: 15081
 // Name: pressable
-// Dependencies: [8198, 676, 4090, 10669, 1236, 2]
+// Dependencies: [8238, 676, 4093, 10708, 1236, 2]
 
-// Module 15016 (pressable)
-import { MarketingURLs } from "ME";
-import createToggle from "createToggle";
+// Module 15080 (pressable)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import _modDef4093 from "module_4093" /* 4093 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
+const MarketingURLs = ME.MarketingURLs;
 const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.KGFTww);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.KGFTww);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.DATA_AND_PRIVACY,
+  parent: MobileUserSettings.MobileUserSettings.DATA_AND_PRIVACY,
   onPress: function onPrivacyPolicyPress() {
-    importDefault(4090).openURL(MarketingURLs.PRIVACY);
+    _modDef4093.openURL(MarketingURLs.PRIVACY);
   },
   withArrow: true
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.KGFTww);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.KGFTww);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.DATA_AND_PRIVACY,
+  parent: MobileUserSettings.MobileUserSettings.DATA_AND_PRIVACY,
   onPress: function onPrivacyPolicyPress() {
-    importDefault(4090).openURL(MarketingURLs.PRIVACY);
+    _modDef4093.openURL(MarketingURLs.PRIVACY);
   },
   withArrow: true
 };
-const result = require("module_4090").fileFinishedImporting("modules/user_settings/defs/native/SafetyPrivacyPolicySetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/SafetyPrivacyPolicySetting.tsx");
 
 export default pressable;

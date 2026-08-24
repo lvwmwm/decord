@@ -1,25 +1,26 @@
-// Module ID: 15293
-// Function ID: 15294
+// Module ID: 15357
+// Function ID: 15358
 // Name: MessageRequestAnimation
-// Dependencies: [19, 17, 4799, 4800, 21, 4661, 589, 15294, 4745, 1236, 8035, 12700, 11917, 2]
+// Dependencies: [19, 17, 4804, 4805, 21, 4668, 589, 15358, 4750, 1236, 8074, 12752, 11966, 2]
 // Exports: default
 
-// Module 15293 (MessageRequestAnimation)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import processChannel from "processChannel";
-import closure_6 from "processChannel";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15357 (MessageRequestAnimation)
+import initialize from "initialize" /* 589 */;
+import registerAssetDefault from "registerAsset" /* 11966 */;
+import ButtonBadgeDefault from "ButtonBadge" /* 12752 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "processChannel" /* 4804 */;
+import closure_6 from "processChannel" /* 4805 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function MessageRequestAnimation(color) {
   let ref;
   let stateFromStores;
   ref = React.useRef(null);
-  const items = [processChannel];
+  const items = [closure_5];
   stateFromStores = ref(589).useStateFromStores(items, () => messageRequestsCount.getMessageRequestsCount());
   const obj = ref(589);
   const items1 = [closure_6];
@@ -35,11 +36,11 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return callback(ref(15294).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
+  return callback(ref(15358).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
 }
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ buttonContainer: { position: "relative" } });
-const result = require("processChannel").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MessageRequestsButton.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MessageRequestsButton.tsx");
 
 export default function MessageRequestsButton(alternateVariant) {
   let flag = alternateVariant.alternateVariant;
@@ -47,10 +48,10 @@ export default function MessageRequestsButton(alternateVariant) {
     flag = false;
   }
   const merged = Object.assign(alternateVariant, Object.create(null));
-  let obj = require(589) /* initialize */;
-  const items = [processChannel];
+  let obj = initialize;
+  const items = [closure_5];
   let str = obj.useStateFromStores(items, () => messageRequestsCount.getMessageRequestsCount());
-  let obj1 = require(589) /* initialize */;
+  obj1 = initialize;
   const items1 = [closure_6];
   if (0 === str) {
     if (0 === obj1.useStateFromStores(items1, () => spamChannelsCount.getSpamChannelsCount())) {
@@ -71,7 +72,7 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl3 = tmp3(1236).intl;
       obj[4] = intl3.string(tmp3(1236).t.e7GWjQ);
       const merged1 = Object.assign(merged);
-      let tmp21 = callback(tmp3(4745).Button, obj);
+      let tmp21 = callback(tmp3(4750).Button, obj);
       let tmp16 = callback;
     } else {
       tmp16 = callback;
@@ -80,14 +81,14 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl2 = tmp3(1236).intl;
       obj1[3] = intl2.string(tmp3(1236).t.e7GWjQ);
       const merged2 = Object.assign(merged);
-      tmp21 = callback(tmp3(8035).IconButton, obj1);
+      tmp21 = callback(tmp3(8074).IconButton, obj1);
     }
-    const items2 = [tmp21, str > 0 && tmp16(tmp3(12700).ButtonBadge, { badgePosition: "right" })];
+    const items2 = [tmp21, str > 0 && tmp16(tmp3(12752).ButtonBadge, { badgePosition: "right" })];
     obj[2] = items2;
     return closure_8(View, obj);
   } else {
     const obj2 = { source: null, IconComponent: null, accessibilityLabel: null, buttonText: null, badge: null, badgePosition: "right" };
-    obj2[0] = importDefault(11917);
+    obj2[0] = registerAssetDefault;
     obj2[1] = MessageRequestAnimation;
     const intl = tmp3(1236).intl;
     obj2[2] = intl.string(tmp3(1236).t.e7GWjQ);
@@ -98,7 +99,7 @@ export default function MessageRequestsButton(alternateVariant) {
     obj2[3] = str1;
     obj2[4] = str > 0;
     const merged3 = Object.assign(merged);
-    return callback(importDefault(12700), obj2);
+    return callback(ButtonBadgeDefault, obj2);
   }
   tmp2 = callback2();
 };

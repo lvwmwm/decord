@@ -4,8 +4,10 @@
 // Dependencies: [191, 192]
 
 // Module 190 (parseErrorStack)
+import parse from "parse" /* 191 */;
+
 const global = arg0;
-const require = arg1;
+require = arg1;
 const dependencyMap = arg6;
 arg5.default = function parseErrorStack(arg0) {
   if (null == arg0) {
@@ -70,6 +72,6 @@ arg5.default = function parseErrorStack(arg0) {
         return obj;
       });
     }
-    obj2 = require(191) /* parse */;
+    obj2 = parse;
   }
 };

@@ -1,25 +1,33 @@
-// Module ID: 14034
-// Function ID: 14035
+// Module ID: 14102
+// Function ID: 14103
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [17, 21, 4661, 712, 1935, 14035, 4756, 688, 2]
+// Dependencies: [17, 21, 4668, 712, 1935, 14103, 4761, 688, 2]
 // Exports: default
 
-// Module 14034 (DisplayNameStylesColorSwatch)
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14102 (DisplayNameStylesColorSwatch)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import int2hslRaw from "int2hslRaw" /* 688 */;
+import ThemesDefault from "Themes" /* 712 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1935 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import GummyStripesDefault from "GummyStripes" /* 14103 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+const View = get_ActivityIndicator.View;
+const jsx = jsxProd.jsx;
 let obj = { colorSwatch: null, gummySwatch: null };
-obj = { width: 24, height: 24, borderRadius: require("Themes").radii.xs };
+obj = { width: 24, height: 24, borderRadius: ThemesDefault.radii.xs };
 obj[0] = obj;
 obj[1] = { flexDirection: "row", overflow: "hidden" };
 let closure_5 = createCacheKey.createStyles(obj);
-const result = require("createCacheKey").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesColorSwatch.tsx");
+const result = set.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesColorSwatch.tsx");
 
 export default function DisplayNameStylesColorSwatch(colors) {
   colors = colors.colors;
   const tmp = callback();
-  if (colors.effectId === require(1935) /* DisplayNameEffect */.DisplayNameEffect.GUMMY) {
+  if (colors.effectId === DisplayNameEffect.DisplayNameEffect.GUMMY) {
     if (colors.length > 0) {
       let obj = { style: null, children: null };
       const items = [, ];
@@ -27,22 +35,22 @@ export default function DisplayNameStylesColorSwatch(colors) {
       obj[0] = items;
       obj = { colors: null };
       obj[0] = colors;
-      obj[1] = jsx(importDefault(14035), { colors: null });
+      obj[1] = jsx(GummyStripesDefault, { colors: null });
       return <View colors={null} />;
     }
   }
   if (colors.length >= 2) {
-    const obj1 = { colors: null, start: null, end: null, style: null };
+    obj1 = { colors: null, start: null, end: null, style: null };
     obj1[0] = colors.map((color) => callback(table[7]).int2hex(color));
     obj1[1] = { x: 0, y: 0 };
     obj1[2] = { x: 1, y: 0 };
     obj1[3] = tmp.colorSwatch;
-    return jsx(importDefault(4756), { colors: null, start: null, end: null, style: null });
+    return jsx(LinearGradientDefault, { colors: null, start: null, end: null, style: null });
   } else {
     let str = "#000000";
     if (colors.length > 0) {
-      str = tmp2(688).int2hex(colors[0]);
-      const tmp2Result = tmp2(688);
+      str = int2hslRaw.int2hex(colors[0]);
+      const tmp2Result = int2hslRaw;
     }
     const obj2 = { style: null };
     const items1 = [tmp.colorSwatch, ];
@@ -52,5 +60,5 @@ export default function DisplayNameStylesColorSwatch(colors) {
     obj2[0] = items1;
     return <View style={null} />;
   }
-  tmp2 = require;
+  const tmp2 = require;
 };

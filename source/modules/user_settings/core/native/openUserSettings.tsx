@@ -1,17 +1,21 @@
-// Module ID: 7360
-// Function ID: 7361
+// Module ID: 7398
+// Function ID: 7399
 // Name: openUserSettings
-// Dependencies: [7361, 676, 4230, 709, 2]
+// Dependencies: [7399, 676, 4234, 709, 2]
 // Exports: openUserSettings
 
-// Module 7360 (openUserSettings)
-import handleFormClose from "handleFormClose";
-import { UserSettingsSections } from "ME";
+// Module 7398 (openUserSettings)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+import handleFormClose from "handleFormClose" /* 7399 */;
 
-const result = require("getRootNavigationRef").fileFinishedImporting("modules/user_settings/core/native/openUserSettings.tsx");
+const UserSettingsSections = ME.UserSettingsSections;
+const result = set.fileFinishedImporting("modules/user_settings/core/native/openUserSettings.tsx");
 
 export const openUserSettings = (screen) => {
-  let obj = require(4230) /* getRootNavigationRef */;
+  let obj = getRootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (tmp2) {
     screen = undefined;
@@ -23,11 +27,11 @@ export const openUserSettings = (screen) => {
     }
     obj = { type: "USER_SETTINGS_MODAL_INIT", section: null };
     obj[1] = screen;
-    importDefault(709).dispatch(obj);
+    dispatcherDefault.dispatch(obj);
     rootNavigationRef.navigate("settings", screen);
     if (arg1 != null) {
       arg1();
     }
-    const obj3 = importDefault(709);
+    const obj3 = dispatcherDefault;
   }
 };

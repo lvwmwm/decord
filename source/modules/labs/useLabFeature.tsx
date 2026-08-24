@@ -1,18 +1,18 @@
-// Module ID: 9061
-// Function ID: 9062
+// Module ID: 9098
+// Function ID: 9099
 // Name: useLabFeature
-// Dependencies: [9059, 589, 2]
+// Dependencies: [9096, 589, 2]
 // Exports: default
 
-// Module 9061 (useLabFeature)
-import getUserAgnosticState from "getUserAgnosticState";
+// Module 9098 (useLabFeature)
+import closure_2 from "getUserAgnosticState" /* 9096 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/labs/useLabFeature.tsx");
 
 export default function useLabFeature(arg0) {
   const _require = arg0;
-  const items = [getUserAgnosticState];
+  const items = [closure_2];
   const items1 = [arg0];
-  return _require(589).useStateFromStores(items, () => outer1_2.get(closure_0), items1);
+  return _require(589).useStateFromStores(items, () => closure_1_2.get(closure_0), items1);
 };

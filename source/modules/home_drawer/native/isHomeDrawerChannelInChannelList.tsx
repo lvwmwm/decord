@@ -1,23 +1,24 @@
-// Module ID: 15582
-// Function ID: 15583
+// Module ID: 15647
+// Function ID: 15648
 // Name: useIsHomeDrawerChannelInChannelList
-// Dependencies: [5043, 589, 5282, 2]
+// Dependencies: [5048, 589, 5287, 2]
 // Exports: useIsHomeDrawerChannelInChannelList
 
-// Module 15582 (useIsHomeDrawerChannelInChannelList)
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+// Module 15647 (useIsHomeDrawerChannelInChannelList)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "updateUserGuildSettingsInternal" /* 5048 */;
 
-const require = arg1;
-let result = require("useOptInEnabledForGuild").fileFinishedImporting("modules/home_drawer/native/isHomeDrawerChannelInChannelList.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("modules/home_drawer/native/isHomeDrawerChannelInChannelList.tsx");
 
 export const useIsHomeDrawerChannelInChannelList = function useIsHomeDrawerChannelInChannelList() {
-  const items = [updateUserGuildSettingsInternal];
-  return require(589) /* initialize */.useStateFromStores(items, () => (guild_id) => {
+  const items = [closure_2];
+  return initialize.useStateFromStores(items, () => (guild_id) => {
     const result = callback(table[2]).isOptInEnabledForGuild(guild_id.guild_id);
     let result1 = !result;
     if (result) {
       result1 = channelRecordOrParentOptedIn.isChannelRecordOrParentOptedIn(guild_id);
     }
     return result1;
-  }, [], require(589) /* initialize */.statesWillNeverBeEqual);
+  }, [], initialize.statesWillNeverBeEqual);
 };

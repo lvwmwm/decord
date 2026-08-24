@@ -1,26 +1,28 @@
-// Module ID: 5047
-// Function ID: 5048
+// Module ID: 5052
+// Function ID: 5053
 // Name: hasPendingMemberAction
-// Dependencies: [1391, 1990, 1910, 5048, 5049, 676, 4009, 5050, 1403, 2]
+// Dependencies: [1391, 1991, 1910, 5053, 5054, 676, 4012, 5055, 1403, 2]
 // Exports: hasPendingMemberAction
 
-// Module 5047 (hasPendingMemberAction)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
-import set from "set";
-import { GuildFeatures } from "ME";
-import { GuildMemberFlags } from "GuildMemberFlags";
+// Module 5052 (hasPendingMemberAction)
+import hasFlagAll from "hasFlag" /* 1403 */;
+import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 5055 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import closure_6 from "handleSettingsLoadSuccess" /* 5053 */;
+import closure_7 from "set" /* 5054 */;
+import { GuildFeatures } from "ME" /* 676 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4012 */;
 
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_onboarding_home/hasPendingMemberAction.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/hasPendingMemberAction.tsx");
 
 export const hasPendingMemberAction = function hasPendingMemberAction(guild_id, selectedChannelId) {
   guild = guild.getGuild(guild_id);
   channel = channel.getChannel(selectedChannelId);
   let hasItem = null != guild && null != channel;
   if (hasItem) {
-    hasItem = importDefault(5050)(guild);
+    hasItem = guildHasOnboardingHomeDefault(guild);
   }
   if (hasItem) {
     const features = guild.features;
@@ -35,14 +37,14 @@ export const hasPendingMemberAction = function hasPendingMemberAction(guild_id, 
     if (num == null) {
       num = 0;
     }
-    hasItem = !importAll(1403).hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
-    const obj = importAll(1403);
+    hasItem = !hasFlagAll.hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+    const obj = hasFlagAll;
   }
   if (hasItem) {
-    hasItem = handleSettingsLoadSuccess.hasMemberAction(guild.id, channel.id);
+    hasItem = closure_6.hasMemberAction(guild.id, channel.id);
   }
   if (hasItem) {
-    hasItem = !set.hasCompletedActionForChannel(guild.id, channel.id);
+    hasItem = !closure_7.hasCompletedActionForChannel(guild.id, channel.id);
   }
   return hasItem;
 };

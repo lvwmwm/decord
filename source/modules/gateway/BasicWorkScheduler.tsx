@@ -1,23 +1,22 @@
-// Module ID: 13199
-// Function ID: 13200
+// Module ID: 13254
+// Function ID: 13255
 // Name: _trackAppBackgrounded
-// Dependencies: [13197, 3, 13200, 38, 2]
+// Dependencies: [13252, 3, 13255, 38, 2]
 
-// Module 13199 (_trackAppBackgrounded)
-import DISPATCHER_STANDARD_TIMEOUT_MS from "DISPATCHER_STANDARD_TIMEOUT_MS";
+// Module 13254 (_trackAppBackgrounded)
+import set from "set" /* 2 */;
+import timestampDefault from "timestamp" /* 3 */;
+import WorkSchedulerTelemetryEvent from "WorkSchedulerTelemetryEvent" /* 13255 */;
+import DISPATCHER_STANDARD_TIMEOUT_MS from "DISPATCHER_STANDARD_TIMEOUT_MS" /* 13252 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
 ({ MAX_DISPATCHER_FLUSH_DEADLINE_TRIES: c3, DISPATCHER_STANDARD_TIMEOUT_MS: c4, DISPATCHER_IDEAL_TIME_LIMIT_MS: c5, DISPATCHER_LONG_TIMEOUT_MS: closure_6 } = DISPATCHER_STANDARD_TIMEOUT_MS);
-let error = new require("module_38")("DispatcherWorkScheduler");
-const tmp3 = new require("module_38")("DispatcherWorkScheduler");
-const result = require("WorkSchedulerTelemetryEvent").fileFinishedImporting("modules/gateway/BasicWorkScheduler.tsx");
+let closure_7 = new timestampDefault("DispatcherWorkScheduler");
+const tmp3 = new timestampDefault("DispatcherWorkScheduler");
+const result = set.fileFinishedImporting("modules/gateway/BasicWorkScheduler.tsx");
 class BasicWorkScheduler {
   constructor() {
     obj = Object.create(new.target.prototype);
-    obj[2] = __esModule;
+    obj[2] = closure_4;
     workSchedulerTelemetry = new require("WorkSchedulerTelemetryEvent").WorkSchedulerTelemetry();
     obj[8] = workSchedulerTelemetry;
     obj[9] = closure_7;
@@ -31,18 +30,18 @@ prototype["_trackAppBackgrounded"] = function _trackAppBackgrounded(_isBackgroun
     self._isBackgrounded = _isBackgrounded;
     if (tmp) {
       const telemetry = self.telemetry;
-      telemetry.track(require(13200) /* WorkSchedulerTelemetryEvent */.WorkSchedulerTelemetryEvent.SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED);
+      telemetry.track(WorkSchedulerTelemetryEvent.WorkSchedulerTelemetryEvent.SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED);
       self._processWorkCallback();
     }
     tmp = self._isBackgrounded && self.hasWorkScheduled;
   }
 };
 prototype["_queueIdleCallback"] = function _queueIdleCallback() {
-  const error = new Error("Not implemented");
+  error = new Error("Not implemented");
   throw error;
 };
 prototype["_clearIdleCallback"] = function _clearIdleCallback() {
-  const error = new Error("Not implemented");
+  error = new Error("Not implemented");
   throw error;
 };
 Object.defineProperty(prototype, "_hasExceededMaxConsecutiveFlushes", {
@@ -55,13 +54,13 @@ prototype["_processWorkCallback"] = function _processWorkCallback(arg0) {
   const self = this;
   if (null != this._workCallbackFn) {
     if (self._hasExceededMaxConsecutiveFlushes) {
-      tmp3.log("Unable to fully flush work queue after max retries, skipping future deadline.");
+      logger.log("Unable to fully flush work queue after max retries, skipping future deadline.");
       self._workCallbackFn();
       self.clearWorkTimeout();
       const telemetry2 = self.telemetry;
-      telemetry2.measure(require(13200) /* WorkSchedulerTelemetryEvent */.WorkSchedulerTelemetryMeasurement.COUNT_FLUSH_BEFORE_QUEUE_EMPTY, self._consecutiveFlushesBeforeQueueEmpty);
+      telemetry2.measure(WorkSchedulerTelemetryEvent.WorkSchedulerTelemetryMeasurement.COUNT_FLUSH_BEFORE_QUEUE_EMPTY, self._consecutiveFlushesBeforeQueueEmpty);
       const telemetry3 = self.telemetry;
-      telemetry3.track(require(13200) /* WorkSchedulerTelemetryEvent */.WorkSchedulerTelemetryEvent.EXCEEDED_MAX_CONSECUTIVE_FLUSHES);
+      telemetry3.track(WorkSchedulerTelemetryEvent.WorkSchedulerTelemetryEvent.EXCEEDED_MAX_CONSECUTIVE_FLUSHES);
       self._consecutiveFlushesBeforeQueueEmpty = 0;
       self._nextDispatchTimeout = closure_6;
     } else {
@@ -77,7 +76,7 @@ prototype["_processWorkCallback"] = function _processWorkCallback(arg0) {
           const telemetry = self.telemetry;
           const _parseInt = parseInt;
           const _HermesInternal = HermesInternal;
-          telemetry.measure(require(13200) /* WorkSchedulerTelemetryEvent */.WorkSchedulerTelemetryMeasurement.COUNT_FLUSH_BEFORE_QUEUE_EMPTY, parseInt("" + self._consecutiveFlushesBeforeQueueEmpty));
+          telemetry.measure(WorkSchedulerTelemetryEvent.WorkSchedulerTelemetryMeasurement.COUNT_FLUSH_BEFORE_QUEUE_EMPTY, parseInt("" + self._consecutiveFlushesBeforeQueueEmpty));
         }
         self._consecutiveFlushesBeforeQueueEmpty = 0;
         self._criticalWorkScheduled = false;
@@ -147,17 +146,17 @@ prototype["requestWorkTimeout"] = function requestWorkTimeout(flush, arg1) {
   self._workCallbackFn = flush;
   if (!self.hasWorkScheduled) {
     let telemetry = self.telemetry;
-    telemetry.time(self(13200).WorkSchedulerTelemetryTiming.TIME_TO_QUEUE_EMPTY);
+    telemetry.time(self(13255).WorkSchedulerTelemetryTiming.TIME_TO_QUEUE_EMPTY);
     if (self._nextDispatchTimeout === closure_6) {
       const telemetry2 = self.telemetry;
-      telemetry2.track(tmp(13200).WorkSchedulerTelemetryEvent.LONGER_DISPATCH);
+      telemetry2.track(tmp(13255).WorkSchedulerTelemetryEvent.LONGER_DISPATCH);
     }
     if (flag) {
       self._queueIdleCallback();
     } else {
       const _setTimeout = setTimeout;
       self._flushTimeoutHandler = setTimeout(() => {
-        outer1_1(outer1_2[3])(null != self._workCallbackFn, "Work callback should be set");
+        closure_1_1(closure_1_2[3])(null != self._workCallbackFn, "Work callback should be set");
         if (self._isBackgrounded) {
           const telemetry = obj.telemetry;
           telemetry.track(self(tmp[2]).WorkSchedulerTelemetryEvent.SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED);
@@ -165,7 +164,7 @@ prototype["requestWorkTimeout"] = function requestWorkTimeout(flush, arg1) {
         } else {
           obj._queueIdleCallback();
         }
-        tmp = outer1_2;
+        tmp = closure_1_2;
       }, self._nextDispatchTimeout);
     }
     tmp = self;

@@ -1,16 +1,17 @@
-// Module ID: 13055
-// Function ID: 13056
+// Module ID: 13110
+// Function ID: 13111
 // Name: componentDidMount
-// Dependencies: [109, 19, 17, 21, 7131, 2]
+// Dependencies: [109, 19, 17, 21, 7169, 2]
 
-// Module 13055 (componentDidMount)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import { PureComponent } from "noop";
-import importAllResult from "noop";
+// Module 13110 (componentDidMount)
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 7169 */;
+import closure_3 from "_objectWithoutProperties" /* 109 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
 let closure_2 = ["source", "style"];
+const PureComponent = importAllResult.PureComponent;
 class SequencedLottieAnimationView extends PureComponent {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -56,8 +57,6 @@ prototype["playScene"] = function playScene(nextScene) {
   self.currentScene = nextScene;
 };
 prototype["render"] = function render() {
-  let source;
-  let style;
   const props = this.props;
   ({ source, style } = props);
   let json;
@@ -80,10 +79,10 @@ prototype["render"] = function render() {
   const tmp = callback(props, closure_2);
   const merged = Object.assign(tmp);
   ({ handleSetRef: obj3.ref, handleComplete: obj3.onAnimationFinish } = this);
-  obj[1] = jsx(importDefault(7131), { source, style: items1 });
+  obj[1] = jsx(_isNativeReflectConstructDefault, { source, style: items1 });
   return <View source={source} style={items1} />;
 };
 SequencedLottieAnimationView.defaultProps = { autoPlay: true };
-const result = require("get ActivityIndicator").fileFinishedImporting("components_native/common/SequencedLottieAnimationView.tsx");
+const result = require("set").fileFinishedImporting("components_native/common/SequencedLottieAnimationView.tsx");
 
 export default SequencedLottieAnimationView;

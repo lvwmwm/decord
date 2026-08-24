@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 487 (ShareModule)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("ShareModule");
+
+export default getAll.get("ShareModule");

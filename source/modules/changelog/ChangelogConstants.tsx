@@ -1,10 +1,12 @@
-// Module ID: 1978
-// Function ID: 1979
+// Module ID: 1979
+// Function ID: 1980
 // Name: CHANGELOG_MODAL_KEY
 // Dependencies: [2]
 
-// Module 1978 (CHANGELOG_MODAL_KEY)
-const result = require("set").fileFinishedImporting("modules/changelog/ChangelogConstants.tsx");
+// Module 1979 (CHANGELOG_MODAL_KEY)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/changelog/ChangelogConstants.tsx");
 
 export const CHANGELOG_MODAL_KEY = "CHANGELOG_MODAL";
 export const SYSTEM_UPDATES_USER_ID = "1232523165893132288";

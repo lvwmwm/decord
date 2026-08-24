@@ -1,20 +1,20 @@
-// Module ID: 8790
-// Function ID: 8791
+// Module ID: 8827
+// Function ID: 8828
 // Name: useEventException
-// Dependencies: [4370, 589, 2]
+// Dependencies: [4374, 589, 2]
 // Exports: default, getEventException
 
-// Module 8790 (useEventException)
-import scheduledEventSort from "scheduledEventSort";
+// Module 8827 (useEventException)
+import closure_2 from "scheduledEventSort" /* 4374 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useEventException.tsx");
 
 export default function useEventException(arg0, arg1) {
   let _require = arg1;
-  const items = [scheduledEventSort];
+  const items = [closure_2];
   const stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => {
-    const guildScheduledEvent = outer1_2.getGuildScheduledEvent(closure_0);
+    const guildScheduledEvent = closure_1_2.getGuildScheduledEvent(closure_0);
     let prop;
     if (guildScheduledEvent != null) {
       prop = guildScheduledEvent.guild_scheduled_event_exceptions;
@@ -40,7 +40,7 @@ export const getEventException = function getEventException(recurrenceId, eventI
   if (prop == null) {
     prop = [];
   }
-  let closure_0 = recurrenceId;
+  closure_0 = recurrenceId;
   let found;
   if (prop != null) {
     found = prop.find((event_exception_id) => event_exception_id.event_exception_id === closure_0);

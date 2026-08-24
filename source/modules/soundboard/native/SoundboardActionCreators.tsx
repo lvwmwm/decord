@@ -1,21 +1,26 @@
-// Module ID: 16281
-// Function ID: 16282
+// Module ID: 16375
+// Function ID: 16376
 // Name: showSoundboardSoundPickerActionSheet
-// Dependencies: [676, 1231, 4196, 1377, 4342, 16282, 2007, 2]
+// Dependencies: [676, 1231, 4200, 1377, 4346, 16376, 2008, 2]
 // Exports: showSoundboardSoundPickerActionSheet
 
-// Module 16281 (showSoundboardSoundPickerActionSheet)
-import { ComponentActions } from "ME";
+// Module 16375 (showSoundboardSoundPickerActionSheet)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
+import DismissibleContent from "DismissibleContent" /* 1377 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4200 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
 
-let result = require("UNSAFE_isDismissibleContentDismissed").fileFinishedImporting("modules/soundboard/native/SoundboardActionCreators.tsx");
+const ComponentActions = ME.ComponentActions;
+let result = set.fileFinishedImporting("modules/soundboard/native/SoundboardActionCreators.tsx");
 
 export const showSoundboardSoundPickerActionSheet = function showSoundboardSoundPickerActionSheet(arg0) {
-  let analyticsSource;
-  let channel;
   ({ channel, analyticsSource } = arg0);
-  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
+  const ComponentDispatch = ComponentDispatcher.ComponentDispatch;
   ComponentDispatch.dispatch(ComponentActions.TOGGLE_CALL_CONTROL_DRAWER);
-  const result = require(4196) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1377) /* DismissibleContent */.DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE);
-  const obj = require(4196) /* UNSAFE_isDismissibleContentDismissed */;
-  importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(16282, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel, analyticsSource });
+  const result = UNSAFE_isDismissibleContentDismissed.UNSAFE_markDismissibleContentAsDismissed(DismissibleContent.DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE);
+  const obj = UNSAFE_isDismissibleContentDismissed;
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(16376, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel, analyticsSource });
 };

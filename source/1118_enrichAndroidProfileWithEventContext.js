@@ -4,13 +4,16 @@
 // Dependencies: [817, 1002, 1119]
 
 // Module 1118 (enrichAndroidProfileWithEventContext)
-const require = arg1;
+import isHermesEnabled from "isHermesEnabled" /* 1002 */;
+import getDebugMetadata from "getDebugMetadata" /* 1119 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function enrichAndroidProfileWithEventContext(profile_id, build_id, contexts) {
   let obj = { debug_meta: null, build_id: null, device_cpu_frequencies: null, device_is_emulator: null, device_locale: null, device_manufacturer: null, device_model: null, device_os_name: null, device_os_version: null, device_physical_memory_bytes: null, environment: null, profile_id: null, timestamp: null, release: null, dist: null, transaction_id: null, transaction_name: null, trace_id: null, version_name: null, version_code: null };
   obj = { images: null };
   const merged = Object.assign({}, build_id);
-  obj[0] = require(1119) /* getDebugMetadata */.getDebugMetadata();
+  obj[0] = getDebugMetadata.getDebugMetadata();
   obj[0] = obj;
   obj[1] = build_id.build_id || "";
   obj[2] = [];
@@ -137,8 +140,8 @@ function enrichAndroidProfileWithEventContext(profile_id, build_id, contexts) {
   obj[9] = str6;
   let environment = contexts.environment;
   if (!environment) {
-    environment = require(1002) /* isHermesEnabled */.getDefaultEnvironment();
-    const tmp2Result = require(1002) /* isHermesEnabled */;
+    environment = isHermesEnabled.getDefaultEnvironment();
+    const tmp2Result = isHermesEnabled;
   }
   obj[10] = environment;
   obj[11] = profile_id;
@@ -252,8 +255,8 @@ arg5.enrichCombinedProfileWithEventContext = function enrichCombinedProfileWithE
         obj[3] = contexts.release || "";
         let environment = contexts.environment;
         if (!environment) {
-          environment = require(1002) /* isHermesEnabled */.getDefaultEnvironment();
-          const obj4 = require(1002) /* isHermesEnabled */;
+          environment = isHermesEnabled.getDefaultEnvironment();
+          const obj4 = isHermesEnabled;
         }
         obj[4] = environment;
         const contexts2 = contexts.contexts;
@@ -393,7 +396,7 @@ arg5.enrichCombinedProfileWithEventContext = function enrichCombinedProfileWithE
         }
         obj[4] = flag;
         obj[6] = obj;
-        const obj1 = { name: null, id: null, trace_id: null, active_thread_id: null };
+        obj1 = { name: null, id: null, trace_id: null, active_thread_id: null };
         obj1[0] = contexts.transaction || "";
         obj1[1] = contexts.event_id || "";
         obj1[2] = str;
@@ -410,7 +413,7 @@ arg5.enrichCombinedProfileWithEventContext = function enrichCombinedProfileWithE
         obj1[3] = str9;
         obj[7] = obj1;
         const items = [];
-        let arraySpreadResult = HermesBuiltin.arraySpread(require(1119) /* getDebugMetadata */.getDebugMetadata(), 0);
+        let arraySpreadResult = HermesBuiltin.arraySpread(getDebugMetadata.getDebugMetadata(), 0);
         const debug_meta = value.debug_meta;
         let images;
         if (null !== debug_meta) {

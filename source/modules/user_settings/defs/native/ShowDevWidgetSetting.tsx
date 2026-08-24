@@ -1,13 +1,15 @@
-// Module ID: 14881
-// Function ID: 14882
+// Module ID: 14945
+// Function ID: 14946
 // Name: toggle
-// Dependencies: [7471, 13951, 589, 10669, 14882, 14199, 2]
+// Dependencies: [7509, 14019, 589, 10708, 14946, 14267, 2]
 
-// Module 14881 (toggle)
-import initialize from "initialize";
-import createToggle from "createToggle";
+// Module 14945 (toggle)
+import initialize from "initialize" /* 589 */;
+import updateDevToolsSettings from "updateDevToolsSettings" /* 14019 */;
+import closure_2 from "initialize" /* 7509 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
     return "Show Dev Tools Widget";
@@ -15,17 +17,17 @@ createToggle = {
   parent: null,
   IconComponent: require("StaffBadgeIcon").StaffBadgeIcon,
   onValueChange: function handleShowDevWidgetSettingToggle(showDevWidget) {
-    let obj = require(13951) /* updateDevToolsSettings */;
+    let obj = updateDevToolsSettings;
     obj = { showDevWidget };
     const result = obj.updateDevToolsSettings(obj);
   },
   useValue: function useShowDevWidgetSettingToggleValue() {
-    const items = [initialize];
-    return require(589) /* initialize */.useStateFromStores(items, () => showDevWidget.showDevWidget);
+    const items = [closure_2];
+    return initialize.useStateFromStores(items, () => showDevWidget.showDevWidget);
   },
   usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate
 };
 createToggle = createToggle.createToggle(createToggle);
-let result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/ShowDevWidgetSetting.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/ShowDevWidgetSetting.tsx");
 
 export default createToggle;

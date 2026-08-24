@@ -4,5 +4,7 @@
 // Dependencies: [19]
 
 // Module 1544 (NavigationContext)
+import noopAll from "noop" /* 19 */;
 
-export const NavigationContext = require("noop").createContext(undefined);
+
+export const NavigationContext = noopAll.createContext(undefined);

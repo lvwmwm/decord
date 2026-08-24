@@ -1,32 +1,37 @@
-// Module ID: 13942
-// Function ID: 13943
+// Module ID: 14010
+// Function ID: 14011
 // Name: ThemedStatusBar
-// Dependencies: [19, 1302, 1218, 21, 589, 4229, 1363, 12495, 8032, 2]
+// Dependencies: [19, 1302, 1218, 21, 589, 4233, 1363, 12549, 8071, 2]
 // Exports: default
 
-// Module 13942 (ThemedStatusBar)
-import "noop";
-import handleThemeChange from "handleThemeChange";
-import fetchFingerprint from "fetchFingerprint";
-import { jsx } from "jsxProd";
+// Module 14010 (ThemedStatusBar)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import coerceMainRoute from "coerceMainRoute" /* 4233 */;
+import componentDidMountDefault from "componentDidMount" /* 8071 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 12549 */;
+import closure_3 from "handleThemeChange" /* 1302 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("fetchFingerprint").fileFinishedImporting("modules/status_bar/native/components/ThemedStatusBar.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/status_bar/native/components/ThemedStatusBar.tsx");
 
 export default function ThemedStatusBar() {
-  let obj = require(589) /* initialize */;
-  const items = [fetchFingerprint];
+  let obj = initialize;
+  const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => authenticated.isAuthenticated());
-  const isModalOpen = require(4229) /* coerceMainRoute */.useIsModalOpen();
-  const obj2 = require(4229) /* coerceMainRoute */;
-  const items1 = [handleThemeChange];
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => callback(table[6]).isThemeDark(theme.theme));
-  const obj3 = require(589) /* initialize */;
-  const globalStatusIndicatorState = require(12495) /* useGlobalStatusIndicatorState */.useGlobalStatusIndicatorState();
+  const isModalOpen = coerceMainRoute.useIsModalOpen();
+  const obj2 = coerceMainRoute;
+  const items1 = [closure_3];
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => callback(table[6]).isThemeDark(theme.theme));
+  const obj3 = initialize;
+  const globalStatusIndicatorState = useGlobalStatusIndicatorState.useGlobalStatusIndicatorState();
   if (!stateFromStores) {
     obj = { barStyle: null };
     obj[0] = "light-content";
-    return jsx(importDefault(8032), { barStyle: null });
+    return jsx(componentDidMountDefault, { barStyle: null });
   } else if (isModalOpen) {
     let str2 = "dark-content";
     if (stateFromStores1) {

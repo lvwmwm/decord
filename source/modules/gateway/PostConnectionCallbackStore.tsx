@@ -1,30 +1,30 @@
-// Module ID: 4493
-// Function ID: 4494
+// Module ID: 4497
+// Function ID: 4498
 // Name: processCallbacks
-// Dependencies: [4494, 4495, 709, 2]
+// Dependencies: [4498, 4499, 709, 2]
 // Exports: addPostConnectionCallback
 
-// Module 4493 (processCallbacks)
-import initialize from "initialize";
-import _handleConnectionOpen from "_handleConnectionOpen";
-import importDefaultResult from "dispatcher";
-import importDefaultResult1 from "dispatcher";
-import importDefaultResult2 from "dispatcher";
+// Module 4497 (processCallbacks)
+import closure_0 from "initialize" /* 4498 */;
+import closure_1 from "_handleConnectionOpen" /* 4499 */;
+import importDefaultResult from "dispatcher" /* 709 */;
 
 function processCallbacks() {
   if (null == store.getType()) {
     const item = arr.forEach((arg0) => {
-      let initialize = arg0;
+      closure_0 = arg0;
       setImmediate(() => callback());
     });
     arr = [];
   }
 }
 let closure_2 = [];
-const subscription = require("dispatcher").subscribe("CONNECTION_OPEN", processCallbacks);
-const subscription1 = require("dispatcher").subscribe("CONNECTION_RESUMED", processCallbacks);
-const subscription2 = require("dispatcher").subscribe("NUF_COMPLETE", processCallbacks);
-const result = require("dispatcher").fileFinishedImporting("modules/gateway/PostConnectionCallbackStore.tsx");
+const subscription = importDefaultResult.subscribe("CONNECTION_OPEN", processCallbacks);
+const subscription1 = importDefaultResult.subscribe("CONNECTION_RESUMED", processCallbacks);
+const importDefaultResult1 = importDefaultResult;
+const subscription2 = importDefaultResult.subscribe("NUF_COMPLETE", processCallbacks);
+const importDefaultResult2 = importDefaultResult;
+const result = require("set").fileFinishedImporting("modules/gateway/PostConnectionCallbackStore.tsx");
 
 export const addPostConnectionCallback = function addPostConnectionCallback(arg0) {
   if (connectedOrOverlay.isConnectedOrOverlay()) {

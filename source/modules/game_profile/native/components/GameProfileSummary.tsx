@@ -1,34 +1,28 @@
-// Module ID: 9145
-// Function ID: 9146
+// Module ID: 9182
+// Function ID: 9183
 // Name: GameProfileSummary
-// Dependencies: [32, 19, 17, 21, 4661, 9101, 1236, 4734, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 9138, 1236, 4739, 2]
 // Exports: default
 
-// Module 9145 (GameProfileSummary)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9182 (GameProfileSummary)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 ({ View: c4, Pressable: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles({ container: { flexDirection: "column" } });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/game_profile/native/components/GameProfileSummary.tsx");
+const result = require("set").fileFinishedImporting("modules/game_profile/native/components/GameProfileSummary.tsx");
 
 export default function GameProfileSummary(arg0) {
-  let game;
-  let trackAction;
   ({ game, trackAction } = arg0);
   let first;
   let callback;
   let first1;
-  let closure_4;
+  closure_4 = undefined;
   const tmp2 = callback(first1.useState(false), 2);
   first = tmp2[0];
   callback = tmp2[1];
@@ -76,7 +70,7 @@ export default function GameProfileSummary(arg0) {
       obj = { onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
       obj[0] = callback1;
       obj[2] = stringResult;
-      const obj1 = { variant: "text-md/medium", color: "text-brand", children: null };
+      obj1 = { variant: "text-md/medium", color: "text-brand", children: null };
       obj1[2] = stringResult;
       obj[3] = tmp13(tmp16(tmp17[7]).Text, obj1);
       tmp13Result = tmp13(closure_5, obj);

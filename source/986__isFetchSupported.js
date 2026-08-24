@@ -4,10 +4,12 @@
 // Dependencies: [821, 823, 824]
 
 // Module 986 (_isFetchSupported)
-const require = arg1;
+import _mod821 from "module_821" /* 821 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function _isFetchSupported() {
-  if ("fetch" in require(821).GLOBAL_OBJ) {
+  if ("fetch" in _mod821.GLOBAL_OBJ) {
     try {
       const _Headers = Headers;
       const headers = new Headers();
@@ -59,13 +61,13 @@ arg5.supportsErrorEvent = function supportsErrorEvent() {
 };
 arg5.supportsFetch = _isFetchSupported;
 arg5.supportsHistory = function supportsHistory() {
-  return "history" in require(821).GLOBAL_OBJ && require(821).GLOBAL_OBJ.history;
+  return "history" in _mod821.GLOBAL_OBJ && _mod821.GLOBAL_OBJ.history;
 };
 arg5.supportsNativeFetch = function supportsNativeFetch() {
   if (typeof globalThis.EdgeRuntime === "string") {
     return true;
   } else if (_isFetchSupported()) {
-    if (isNativeFunction(require(821).GLOBAL_OBJ.fetch)) {
+    if (isNativeFunction(_mod821.GLOBAL_OBJ.fetch)) {
       return true;
     } else {
       let flag2 = false;
@@ -118,5 +120,5 @@ arg5.supportsReferrerPolicy = function supportsReferrerPolicy() {
   }
 };
 arg5.supportsReportingObserver = function supportsReportingObserver() {
-  return "ReportingObserver" in require(821).GLOBAL_OBJ;
+  return "ReportingObserver" in _mod821.GLOBAL_OBJ;
 };

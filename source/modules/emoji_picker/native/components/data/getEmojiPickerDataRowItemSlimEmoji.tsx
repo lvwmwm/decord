@@ -1,19 +1,21 @@
-// Module ID: 9374
-// Function ID: 9375
+// Module ID: 9411
+// Function ID: 9412
 // Name: getEmojiPickerDataRowItemSlimEmoji
-// Dependencies: [9369, 4037, 2]
+// Dependencies: [9406, 4040, 2]
 // Exports: default
 
-// Module 9374 (getEmojiPickerDataRowItemSlimEmoji)
-const result = require("set").fileFinishedImporting("modules/emoji_picker/native/components/data/getEmojiPickerDataRowItemSlimEmoji.tsx");
+// Module 9411 (getEmojiPickerDataRowItemSlimEmoji)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/emoji_picker/native/components/data/getEmojiPickerDataRowItemSlimEmoji.tsx");
 
 export default function getEmojiPickerDataRowItemSlimEmoji(isSectionNitroLocked) {
   const _require = isSectionNitroLocked;
   const emojis = isSectionNitroLocked.emojis;
   return {
-    type: _require(9369).EmojiPickerItemType.EMOJI_ROW_SLIM,
+    type: _require(9406).EmojiPickerItemType.EMOJI_ROW_SLIM,
     emojis: emojis.map((type) => {
-      if (type.type === isSectionNitroLocked(outer1_1[1]).EmojiTypes.UNICODE) {
+      if (type.type === isSectionNitroLocked(closure_1_1[1]).EmojiTypes.UNICODE) {
         let obj = { name: null, surrogates: null };
         ({ name: obj5[0], surrogates: obj5[1] } = type);
         return obj;
@@ -30,7 +32,7 @@ export default function getEmojiPickerDataRowItemSlimEmoji(isSectionNitroLocked)
         if (type.animated) {
           ({ id: obj3[0], name: obj3[1] } = type);
           obj = { id: null, name: null, animated: true };
-          const obj1 = { id: null, name: null, animated: true };
+          obj1 = { id: null, name: null, animated: true };
         } else if (hasItem) {
           const obj2 = { id: null, name: null, disabled: true };
           ({ id: obj2[0], name: obj2[1] } = type);

@@ -1,12 +1,15 @@
-// Module ID: 8493
-// Function ID: 8494
+// Module ID: 8532
+// Function ID: 8533
 // Name: MIN_HEADER_HEIGHT
 // Dependencies: [17, 1367, 2]
 // Exports: getMinHeaderHeight
 
-// Module 8493 (MIN_HEADER_HEIGHT)
-const result = 2 * require("get ActivityIndicator").StyleSheet.hairlineWidth;
-const result1 = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MainTabsV2Constants.tsx");
+// Module 8532 (MIN_HEADER_HEIGHT)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+
+const result = 2 * get_ActivityIndicator.StyleSheet.hairlineWidth;
+const result1 = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MainTabsV2Constants.tsx");
 
 export const MIN_HEADER_HEIGHT = 56;
 export const HEADER_CORNER_RADIUS = 8;

@@ -5,10 +5,8 @@
 // Exports: default
 
 // Module 1865 (sharedValue)
-import noop from "noop";
+import noop from "noop" /* 19 */;
 
-let c3;
-let obj1;
 ({ useCallback: obj1, useEffect: c3 } = noop);
 let closure_4 = ["onScroll", "onScrollBeginDrag", "onScrollEndDrag", "onMomentumScrollBegin", "onMomentumScrollEnd"];
 let closure_5 = { code: "function pnpm_useScrollStateTs1(event){const{offset,layout,size}=this.__closure;offset.value=event.contentOffset.y;layout.value=event.layoutMeasurement;size.value=event.contentSize;}" };
@@ -32,7 +30,7 @@ export default function _default(arg0) {
   fn.__initData = closure_5;
   closure_4 = sharedValue(sharedValue1[1]).useEvent(fn, closure_4);
   callback(() => {
-    let closure_0 = callback(closure_4);
+    closure_0 = callback(closure_4);
     return () => {
       callback();
     };

@@ -1,42 +1,35 @@
-// Module ID: 8480
-// Function ID: 8481
+// Module ID: 8519
+// Function ID: 8520
 // Name: AlwaysCompressImagesSwitch
-// Dependencies: [32, 19, 17, 4662, 1302, 1304, 4197, 1922, 1924, 676, 4524, 8481, 21, 4661, 712, 4097, 4039, 8482, 4876, 4834, 8483, 8484, 1236, 4090, 1993, 8486, 8487, 4342, 8479, 8488, 8489, 12732, 7913, 691, 589, 9365, 7178, 4734, 500, 9217, 5449, 7139, 8471, 9350, 698, 9395, 4237, 7175, 4756, 12735, 4745, 7989, 2]
+// Dependencies: [32, 19, 17, 4669, 1302, 1304, 4201, 1922, 1924, 676, 4529, 8520, 21, 4668, 712, 4100, 4042, 8521, 4881, 4839, 8522, 8523, 1236, 4093, 1994, 8525, 8526, 4346, 8518, 8527, 8528, 12787, 7952, 691, 589, 9402, 7216, 4739, 500, 9254, 5454, 7177, 8510, 9387, 698, 9432, 4241, 7213, 4761, 12790, 4750, 8028, 2]
 // Exports: default
 
-// Module 8480 (AlwaysCompressImagesSwitch)
-import registerAsset from "registerAsset";
-import getUploadFileSizeSum from "getUploadFileSizeSum";
-import { View } from "EntitlementFeatureNames";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import handleThemeChange from "handleThemeChange";
-import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
-import handleConnectionOpen from "handleConnectionOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import GuildFeatures from "GuildFeatures";
-import ME from "ME";
-import { ApplicationStreamFPS } from "RESOLUTION_720";
-import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX";
-import jsxProd from "ForLaterFreemiumConfig";
-import createCacheKey from "createCacheKey";
+// Module 8519 (AlwaysCompressImagesSwitch)
+import set from "set" /* 500 */;
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import preloadDefault from "preload" /* 5454 */;
+import useAPNGPlayerControls from "useAPNGPlayerControls" /* 9254 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_7 from "handleThemeChange" /* 1302 */;
+import closure_8 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
+import closure_9 from "handleConnectionOpen" /* 4201 */;
+import closure_10 from "mergeGuildAvatar" /* 1922 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import ME from "ME" /* 676 */;
+import { ApplicationStreamFPS } from "RESOLUTION_720" /* 4529 */;
+import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 8520 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_12;
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_19;
-let closure_20;
-let closure_21;
-let closure_22;
-let closure_23;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function AlwaysCompressImagesSwitch(isKestrelTreatment) {
-  const tmp = createCacheKey();
-  let obj = require(589) /* initialize */;
-  const items = [CHANNEL_SIDEBAR_WIDTH];
+  const tmp = callback3();
+  let obj = initialize;
+  const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => dataSavingMode.dataSavingMode);
   const callback = React.useCallback((dataSavingMode) => {
     let obj = callback(table[35]);
@@ -54,69 +47,63 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
       obj[2] = intl.string(tmp2(1236).t.ix8XIj);
       obj[3] = stateFromStores;
       obj[4] = callback;
-      const obj1 = { style: null, variant: "text-xs/normal", children: null };
+      obj1 = { style: null, variant: "text-xs/normal", children: null };
       obj1[0] = tmp.compressionHint;
       const intl2 = tmp2(1236).intl;
       obj1[2] = intl2.string(tmp2(1236).t["wC0+Ph"]);
-      obj[5] = callback2(tmp2(4734).Text, obj1);
-      obj[1] = callback2(tmp2(7178).TableSwitchRow, obj);
+      obj[5] = callback2(tmp2(4739).Text, obj1);
+      obj[1] = callback2(tmp2(7216).TableSwitchRow, obj);
       tmp6 = callback2(View, obj);
     }
   }
   return tmp6;
 }
 function PremiumUpsellImage(arg0) {
-  let image;
-  let style;
-  let useReducedMotion;
   ({ image, style, useReducedMotion } = arg0);
-  let obj = require(500) /* set */;
+  let obj = set;
   if (obj.isAndroid()) {
     if (!useReducedMotion) {
       if (null != image.uri) {
         obj = { url: null, style: null, autoplay: true };
         obj[0] = image.uri;
         obj[1] = style;
-        let tmp5 = callback2(require(9217) /* useAPNGPlayerControls */.APNGPlayer, obj);
+        let tmp5 = callback2(useAPNGPlayerControls.APNGPlayer, obj);
       }
       return tmp5;
     }
   }
   obj = { source: image, resizeMode: "contain", style, enableAnimation: !useReducedMotion, accessible: false };
-  tmp5 = callback2(importDefault(5449), obj);
+  tmp5 = callback2(preloadDefault, obj);
 }
 ({ PremiumSubscriptionSKUs: unpackModuleId, PremiumTypes: closure_12, PremiumUpsellTypes: map1 } = GuildFeatures);
 ({ AnalyticEvents: closure_14, AnalyticsPages: closure_15, HelpdeskArticles: closure_16, ThemeTypes: closure_17 } = ME);
 ({ SAVED_BOOKMARKS_MAX: closure_19, SAVED_REMINDERS_MAX: closure_20 } = SAVED_BOOKMARKS_MAX);
 ({ Fragment: closure_21, jsx: closure_22, jsxs: closure_23 } = jsxProd);
 createCacheKey = { image: null, text: null, betaTag: null, description: null, textContainer: null, buttonContainer: null, compressionContainer: null, compressionHint: null, imageGradientBackgroundContainer: null, imageGradientBackground: null, imageInGradientBackground: null };
-createCacheKey = { alignSelf: "center", marginTop: require("Themes").space.PX_16, width: 240, height: 144 };
+createCacheKey = { alignSelf: "center", marginTop: ThemesDefault.space.PX_16, width: 240, height: 144 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { alignSelf: "center", textAlign: "center" };
 createCacheKey[2] = { marginLeft: 0 };
-createCacheKey[3] = { marginHorizontal: require("Themes").space.PX_16 };
-let obj1 = { marginHorizontal: require("Themes").space.PX_16 };
-createCacheKey[4] = { marginTop: require("Themes").space.PX_24, marginHorizontal: require("Themes").space.PX_8, alignItems: "center", gap: require("Themes").space.PX_8 };
-let obj2 = { marginTop: require("Themes").space.PX_24, marginHorizontal: require("Themes").space.PX_8, alignItems: "center", gap: require("Themes").space.PX_8 };
-createCacheKey[5] = { marginTop: require("Themes").space.PX_32, gap: require("Themes").space.PX_8 };
-let obj3 = { marginTop: require("Themes").space.PX_32, gap: require("Themes").space.PX_8 };
-createCacheKey[6] = { marginTop: require("Themes").space.PX_24 };
+createCacheKey[3] = { marginHorizontal: ThemesDefault.space.PX_16 };
+let obj1 = { marginHorizontal: ThemesDefault.space.PX_16 };
+createCacheKey[4] = { marginTop: ThemesDefault.space.PX_24, marginHorizontal: ThemesDefault.space.PX_8, alignItems: "center", gap: ThemesDefault.space.PX_8 };
+let obj2 = { marginTop: ThemesDefault.space.PX_24, marginHorizontal: ThemesDefault.space.PX_8, alignItems: "center", gap: ThemesDefault.space.PX_8 };
+createCacheKey[5] = { marginTop: ThemesDefault.space.PX_32, gap: ThemesDefault.space.PX_8 };
+let obj3 = { marginTop: ThemesDefault.space.PX_32, gap: ThemesDefault.space.PX_8 };
+createCacheKey[6] = { marginTop: ThemesDefault.space.PX_24 };
 createCacheKey[7] = { marginTop: 2 };
 createCacheKey[8] = { display: "flex", width: "100%", justifyContent: "center", alignItems: "center" };
-let obj4 = { marginTop: require("Themes").space.PX_24 };
-createCacheKey[9] = { width: "100%", marginHorizontal: require("Themes").space.PX_16, borderRadius: require("Themes").space.PX_12 };
-let obj5 = { width: "100%", marginHorizontal: require("Themes").space.PX_16, borderRadius: require("Themes").space.PX_12 };
-createCacheKey[10] = { marginTop: require("Themes").space.PX_32, marginBottom: require("Themes").space.PX_32 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj6 = { marginTop: require("Themes").space.PX_32, marginBottom: require("Themes").space.PX_32 };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellActionSheet.tsx");
+let obj4 = { marginTop: ThemesDefault.space.PX_24 };
+createCacheKey[9] = { width: "100%", marginHorizontal: ThemesDefault.space.PX_16, borderRadius: ThemesDefault.space.PX_12 };
+let obj5 = { width: "100%", marginHorizontal: ThemesDefault.space.PX_16, borderRadius: ThemesDefault.space.PX_12 };
+createCacheKey[10] = { marginTop: ThemesDefault.space.PX_32, marginBottom: ThemesDefault.space.PX_32 };
+let closure_24 = createCacheKey.createStyles(createCacheKey);
+let obj6 = { marginTop: ThemesDefault.space.PX_32, marginBottom: ThemesDefault.space.PX_32 };
+let result = require("set").fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellActionSheet.tsx");
 
 export default function PremiumUpsellActionSheet(arg0) {
-  let analyticsLocations;
-  let featureName;
-  let legacyProps;
-  let subfeatureName;
   ({ featureName, legacyProps } = arg0);
+  let _require = legacyProps;
   ({ subfeatureName, analyticsLocations } = arg0);
   if (analyticsLocations === undefined) {
     analyticsLocations = [];
@@ -125,15 +112,15 @@ export default function PremiumUpsellActionSheet(arg0) {
   let useTier0UpsellContent;
   let onViewAllPerks;
   let React;
-  const tmp = createCacheKey();
-  const tmp2 = legacyProps;
+  const tmp = callback3();
+  const tmp2 = _require;
   let stringResult3 = useTier0UpsellContent;
-  let obj = legacyProps(useTier0UpsellContent[34]);
-  const items = [mergeGuildAvatar];
+  let obj = _require(useTier0UpsellContent[34]);
+  const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let string = analyticsLocations2;
   analyticsLocations2 = analyticsLocations2(useTier0UpsellContent[41])(analyticsLocations).analyticsLocations;
-  let obj1 = legacyProps(useTier0UpsellContent[42]);
+  obj1 = _require(useTier0UpsellContent[42]);
   let initialUpsellKey;
   if (legacyProps != null) {
     initialUpsellKey = legacyProps.initialUpsellKey;
@@ -146,9 +133,9 @@ export default function PremiumUpsellActionSheet(arg0) {
   useTier0UpsellContent = premiumUpsellConfig.useTier0UpsellContent;
   onViewAllPerks = premiumUpsellConfig.onViewAllPerks;
   tmp2Result = tmp2(stringResult3[34]);
-  const items1 = [handleThemeChange];
+  const items1 = [closure_7];
   const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => theme.theme);
-  const items2 = [handleConnectionOpen];
+  const items2 = [closure_9];
   const stateFromStores2 = tmp2(stringResult3[34]).useStateFromStores(items2, () => guildId.getGuildId());
   const tmp11 = useTier0UpsellContent ? closure_12.TIER_0 : closure_12.TIER_2;
   const tmp2Result1 = tmp2(stringResult3[34]);
@@ -174,7 +161,7 @@ export default function PremiumUpsellActionSheet(arg0) {
     const tmp2Result7 = tmp2(stringResult3[19]);
   }
   const tmp17 = subfeatureName === tmp2(stringResult3[20]).PremiumUpsellSubfeatureNames.SAVED_MESSAGES_REMINDER_LIMIT;
-  legacyProps = tmp17;
+  _require = tmp17;
   if (subfeatureName === tmp2(stringResult3[20]).PremiumUpsellSubfeatureNames.SAVED_MESSAGES_BOOKMARK_LIMIT) {
     const forLaterLimit = tmp2(stringResult3[21]).getForLaterLimit("native.PremiumUpsellActionSheet", tmp17);
     const tmp2Result8 = tmp2(stringResult3[21]);
@@ -282,10 +269,10 @@ export default function PremiumUpsellActionSheet(arg0) {
     obj15[0] = forLaterLimit;
     obj15[1] = tmp19;
     obj15[2] = function onClick() {
-      analyticsLocations2(useTier0UpsellContent[27]).hideActionSheet(legacyProps(useTier0UpsellContent[28]).PREMIUM_UPSELL_ACTION_SHEET_KEY);
+      analyticsLocations2(useTier0UpsellContent[27]).hideActionSheet(lib(useTier0UpsellContent[28]).PREMIUM_UPSELL_ACTION_SHEET_KEY);
       const obj = analyticsLocations2(useTier0UpsellContent[27]);
-      const SavedMessageSortTypes = legacyProps(useTier0UpsellContent[30]).SavedMessageSortTypes;
-      legacyProps(useTier0UpsellContent[29]).showForLaterModal(legacyProps ? SavedMessageSortTypes.REMINDER : SavedMessageSortTypes.BOOKMARK);
+      const SavedMessageSortTypes = lib(useTier0UpsellContent[30]).SavedMessageSortTypes;
+      lib(useTier0UpsellContent[29]).showForLaterModal(lib ? SavedMessageSortTypes.REMINDER : SavedMessageSortTypes.BOOKMARK);
     };
     obj14[0] = intl14.format(tmp17 ? t2.NRF0Wh : t2.o5OLyw, obj15);
     stringResult1 = tmp24(tmp25, obj14);
@@ -310,26 +297,26 @@ export default function PremiumUpsellActionSheet(arg0) {
   obj[tmp2(stringResult3[17]).EntitlementFeatureNames.STREAM_HIGH_QUALITY] = obj16;
   React = tmp29;
   const obj18 = { colors: items3, start: tmp2(stringResult3[33]).HorizontalGradient.START, end: tmp2(stringResult3[33]).HorizontalGradient.END };
-  const items4 = [maybeApplyNoTextColorForLightCustomTheme];
+  const items4 = [closure_6];
   const stateFromStores3 = tmp2(stringResult3[34]).useStateFromStores(items4, () => useReducedMotion.useReducedMotion);
   const items5 = [obj[featureName], analyticsLocations2, useTier0UpsellContent, legacyProps];
   const effect = React.useEffect(() => {
     let obj = analyticsLocations2(useTier0UpsellContent[44]);
     let analyticsProperties;
-    if (legacyProps != null) {
-      analyticsProperties = legacyProps.analyticsProperties;
+    if (lib != null) {
+      analyticsProperties = lib.analyticsProperties;
     }
     obj = {};
     const merged = Object.assign(analyticsProperties);
     let upsellType;
-    if (_undefined != null) {
-      upsellType = _undefined.upsellType;
+    if (upsellType != null) {
+      upsellType = upsellType.upsellType;
     }
     obj.type = upsellType;
     obj.location = location;
     obj.location_stack = analyticsLocations2;
-    obj.sku_id = legacyProps(useTier0UpsellContent[16]).castPremiumSubscriptionAsSkuId(useTier0UpsellContent ? outer1_11.TIER_0 : outer1_11.TIER_2);
-    obj.track(outer1_14.PREMIUM_UPSELL_VIEWED, obj);
+    obj.sku_id = lib(useTier0UpsellContent[16]).castPremiumSubscriptionAsSkuId(useTier0UpsellContent ? closure_1_11.TIER_0 : closure_1_11.TIER_2);
+    obj.track(closure_1_14.PREMIUM_UPSELL_VIEWED, obj);
   }, items5);
   const tmp32 = string(stringResult3[45])(useTier0UpsellContent, onViewAllPerks, obj[featureName].analyticsPage, undefined, tmp5);
   const loading = tmp32.loading;

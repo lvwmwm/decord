@@ -4,6 +4,8 @@
 // Dependencies: [43]
 
 // Module 42 (_createClass)
+import toPropertyKey from "toPropertyKey" /* 43 */;
+
 
 export default function _createClass(arg0, arg1, arg2) {
   if (arg1) {
@@ -22,7 +24,7 @@ export default function _createClass(arg0, arg1, arg2) {
       let _Object = Object;
       let tmp5 = require;
       let tmp6 = dependencyMap;
-      let definePropertyResult = Object.defineProperty(tmp, require(43) /* toPropertyKey */(tmp3.key), tmp3);
+      let definePropertyResult = Object.defineProperty(tmp, toPropertyKey(tmp3.key), tmp3);
     }
   }
   if (arg2) {
@@ -41,7 +43,7 @@ export default function _createClass(arg0, arg1, arg2) {
       let _Object2 = Object;
       let tmp11 = require;
       let tmp12 = dependencyMap;
-      let definePropertyResult1 = Object.defineProperty(arg0, require(43) /* toPropertyKey */(tmp9.key), tmp9);
+      let definePropertyResult1 = Object.defineProperty(arg0, toPropertyKey(tmp9.key), tmp9);
     }
   }
   Object.defineProperty(arg0, "prototype", { writable: false });

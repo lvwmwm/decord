@@ -5,10 +5,11 @@
 // Exports: createRootTag
 
 // Module 253 (RootTagContext)
-import "noop";
+import noopAll from "noop" /* 19 */;
 
+noopAll;
 
-export const RootTagContext = require("noop");
+export const RootTagContext = require("module_0");
 export function createRootTag(rootTag) {
   return rootTag;
 }

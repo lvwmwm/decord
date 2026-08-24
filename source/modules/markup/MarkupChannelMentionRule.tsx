@@ -1,27 +1,31 @@
-// Module ID: 6816
-// Function ID: 6817
+// Module ID: 6853
+// Function ID: 6854
 // Name: getChannel
-// Dependencies: [1981, 1391, 1910, 4021, 4030, 1922, 676, 1903, 1435, 1236, 6817, 4979, 4984, 6818, 4488, 6815, 4092, 2]
+// Dependencies: [1982, 1391, 1910, 4024, 4033, 1922, 676, 1903, 1435, 1236, 6854, 4984, 4989, 6855, 4492, 6852, 4095, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 6816 (getChannel)
-import isSubscriptionGated from "isSubscriptionGated";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 6853 (getChannel)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import isNullOrEmpty from "isNullOrEmpty" /* 1903 */;
+import tDefault from "t" /* 4095 */;
+import ME2 from "ME" /* 4492 */;
+import textRegexpDefault from "textRegexp" /* 6852 */;
+import closure_3 from "isSubscriptionGated" /* 1982 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let c10;
-let c9;
-const require = arg1;
+require = arg1;
 function getChannel(id, arr) {
   const _require = id;
   const channel = store.getChannel(id);
-  const isSubscriptionGated = _require(6817).getChannelRoleSubscriptionStatus(id, store, isSubscriptionGated, getUncachedChannelPermissions).isSubscriptionGated;
-  const obj2 = _require(6817);
-  let str = _require(4979).getMentionIconType(channel);
+  const isSubscriptionGated = _require(6854).getChannelRoleSubscriptionStatus(id, store, closure_3, closure_6).isSubscriptionGated;
+  const obj2 = _require(6854);
+  let str = _require(4984).getMentionIconType(channel);
   if (str == null) {
     str = "text";
   }
@@ -47,18 +51,18 @@ function getChannel(id, arr) {
   if (null != channel) {
     obj = { type: null, id: null, guildId: null, name: null, isDm: null, isForumPost: null, isMentionable: null, canViewChannel: null, roleSubscriptionGated: null, iconType: null, parentId: null };
     ({ type: obj4[0], id: obj4[1], guild_id: obj4[2] } = channel);
-    let tmpResult = tmp(4984);
-    obj[3] = tmpResult.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+    let tmpResult = tmp(4989);
+    obj[3] = tmpResult.computeChannelName(channel, closure_8, closure_7);
     obj[4] = channel.isPrivate();
     obj[5] = channel.isForumPost();
-    tmpResult = tmp(6818);
+    tmpResult = tmp(6855);
     obj[6] = tmpResult.isChannelTypeMentionable(channel.type);
-    obj[7] = tmp(4488).canViewChannel(channel);
+    obj[7] = tmp(4492).canViewChannel(channel);
     obj[8] = isSubscriptionGated;
     obj[9] = str;
     obj[10] = channel.parent_id;
     tmp4 = obj;
-    const tmpResult1 = tmp(4488);
+    const tmpResult1 = tmp(4492);
   }
   return tmp4;
 }
@@ -75,20 +79,20 @@ function handleUnknownChannel(guildId, channelId, messageId, arg3, originalLink)
     if (id !== arg3) {
       obj = { type: "guild", guildId: null, content: null, icon: null };
       obj[1] = guild.id;
-      obj[2] = require(1903) /* isNullOrEmpty */.truncateText(guild.name, 32);
-      const obj5 = require(1903) /* isNullOrEmpty */;
+      obj[2] = isNullOrEmpty.truncateText(guild.name, 32);
+      const obj5 = isNullOrEmpty;
       obj = { id: null, icon: null, size: 40 };
       ({ id: obj7[0], icon: obj7[1] } = guild);
-      obj[3] = importDefault(1435).getGuildIconURL(obj);
+      obj[3] = getAvatarURLDefault.getGuildIconURL(obj);
       const items = [obj];
       tmp2 = items;
-      const obj6 = importDefault(1435);
+      const obj6 = getAvatarURLDefault;
     }
   }
   obj[5] = tmp2;
-  const intl = require(1236) /* getSystemLocale */.intl;
-  const formatted = intl.string(require(1236) /* getSystemLocale */.t.zLZPmk).toLowerCase();
-  let obj1 = require(1903) /* isNullOrEmpty */;
+  const intl = getSystemLocale.intl;
+  const formatted = intl.string(getSystemLocale.t.zLZPmk).toLowerCase();
+  obj1 = isNullOrEmpty;
   obj1 = { type: "text", content: obj1.truncateText(formatted, 32) };
   const items1 = [obj1];
   const items2 = [{ type: "em", content: items1 }];
@@ -109,8 +113,8 @@ function parseChannel(canViewChannel) {
           obj = {};
           const merged = Object.assign(obj);
           obj.guildId = closure_10;
-          let obj19 = require(1903) /* isNullOrEmpty */;
-          const obj1 = { type: "text", content: null };
+          let obj19 = isNullOrEmpty;
+          obj1 = { type: "text", content: null };
           obj1[1] = obj19.truncateText(canViewChannel.name, 32);
           const obj2 = { type: "channel", content: null, channelType: null, iconType: null };
           const items = [obj1];
@@ -134,10 +138,10 @@ function parseChannel(canViewChannel) {
           obj4[2] = arg3;
           obj6 = obj4;
         } else {
-          const intl2 = require(1236) /* getSystemLocale */.intl;
+          const intl2 = getSystemLocale.intl;
           const _HermesInternal2 = HermesInternal;
           obj6 = { type: "text", content: null };
-          obj6[1] = "#" + intl2.string(require(1236) /* getSystemLocale */.t.J90oLW);
+          obj6[1] = "#" + intl2.string(getSystemLocale.t.J90oLW);
         }
         return obj6;
       } else {
@@ -145,14 +149,14 @@ function parseChannel(canViewChannel) {
         const merged1 = Object.assign(obj);
         const obj8 = { type: "guild", guildId: null, content: null, icon: null };
         obj8[1] = guild.id;
-        obj8[2] = require(1903) /* isNullOrEmpty */.truncateText(guild.name, 32);
-        const obj26 = require(1903) /* isNullOrEmpty */;
+        obj8[2] = isNullOrEmpty.truncateText(guild.name, 32);
+        const obj26 = isNullOrEmpty;
         ({ id: obj28[0], icon: obj28[1] } = guild);
-        obj8[3] = importDefault(1435).getGuildIconURL({ id: null, icon: null, size: 40 });
-        const obj27 = importDefault(1435);
+        obj8[3] = getAvatarURLDefault.getGuildIconURL({ id: null, icon: null, size: 40 });
+        const obj27 = getAvatarURLDefault;
         const obj9 = { id: null, icon: null, size: 40 };
         const obj10 = { type: "text", content: null };
-        obj10[1] = require(1903) /* isNullOrEmpty */.truncateText(canViewChannel.name, 32);
+        obj10[1] = isNullOrEmpty.truncateText(canViewChannel.name, 32);
         const obj11 = { type: "channel", content: null, channelType: null, iconType: null };
         const items5 = [obj10];
         obj11[1] = items5;
@@ -170,9 +174,9 @@ function parseChannel(canViewChannel) {
             if (canViewChannel.isForumPost) {
               const channel = store.getChannel(canViewChannel.parentId);
               if (null != channel) {
-                let tmp35Result = tmp35(4984);
-                const channelName = tmp35Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
-                tmp35Result = tmp35(4979);
+                let tmp35Result = tmp35(4989);
+                const channelName = tmp35Result.computeChannelName(channel, closure_8, closure_7);
+                tmp35Result = tmp35(4984);
                 let str3 = tmp35Result.getMentionIconType(channel);
                 if (str3 == null) {
                   str3 = "forum";
@@ -235,7 +239,7 @@ function parseChannel(canViewChannel) {
           }
         }
         obj18 = tmp12;
-        const obj29 = require(1903) /* isNullOrEmpty */;
+        const obj29 = isNullOrEmpty;
       }
     } else {
       const _HermesInternal = HermesInternal;
@@ -247,8 +251,8 @@ function parseChannel(canViewChannel) {
     if (canViewChannel.roleSubscriptionGated) {
       let name = canViewChannel.name;
     } else {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      name = intl.string(require(1236) /* getSystemLocale */.t["/YzI63"]);
+      const intl = getSystemLocale.intl;
+      name = intl.string(getSystemLocale.t["/YzI63"]);
     }
     obj = { type: "channel", content: null, channelType: null, iconType: "locked" };
     const obj21 = { type: "text", content: null };
@@ -272,7 +276,7 @@ function parseChannel(canViewChannel) {
 ({ ChannelTypes: c9, ME: c10 } = ME);
 let obj = { channelMention: null, channelOrMessageUrl: null, mediaPostLink: null };
 obj = {
-  order: require("textRegexp").order,
+  order: textRegexpDefault.order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
     return /^<#(\d+)>/.exec(arg0);
@@ -307,10 +311,10 @@ obj = {
 };
 obj[0] = obj;
 obj = {
-  order: require("t").defaultRules.url.order - 0.5,
+  order: tDefault.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const CHANNEL_OR_MESSAGES_URL_RE = require(4488) /* ME */.CHANNEL_OR_MESSAGES_URL_RE;
+    const CHANNEL_OR_MESSAGES_URL_RE = ME2.CHANNEL_OR_MESSAGES_URL_RE;
     const match = CHANNEL_OR_MESSAGES_URL_RE.exec(arg0);
     if (null != match) {
       if (null != match[2]) {
@@ -329,10 +333,6 @@ obj = {
     return match;
   },
   parse(arg0, arg1, channelId) {
-    let tmp;
-    let tmp2;
-    let tmp3;
-    let tmp4;
     [tmp, tmp2, tmp3, tmp4] = arg0;
     if (null == tmp3) {
       let obj = { type: "link", content: null, target: null, title: "call" };
@@ -367,18 +367,13 @@ obj = {
 };
 obj[1] = obj;
 obj[2] = {
-  order: require("t").defaultRules.url.order - 0.5,
+  order: tDefault.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const MEDIA_POST_URL_RE = require(4488) /* ME */.MEDIA_POST_URL_RE;
+    const MEDIA_POST_URL_RE = ME2.MEDIA_POST_URL_RE;
     return MEDIA_POST_URL_RE.exec(arg0);
   },
   parse(arg0, arg1, channelId) {
-    let tmp;
-    let tmp2;
-    let tmp3;
-    let tmp4;
-    let tmp5;
     [tmp, tmp2, tmp3, tmp4, tmp5] = arg0;
     if (null != tmp3) {
       if (null != tmp4) {
@@ -419,18 +414,13 @@ obj[2] = {
   }
 };
 let obj1 = {
-  order: require("t").defaultRules.url.order - 0.5,
+  order: tDefault.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const MEDIA_POST_URL_RE = require(4488) /* ME */.MEDIA_POST_URL_RE;
+    const MEDIA_POST_URL_RE = ME2.MEDIA_POST_URL_RE;
     return MEDIA_POST_URL_RE.exec(arg0);
   },
   parse(arg0, arg1, channelId) {
-    let tmp;
-    let tmp2;
-    let tmp3;
-    let tmp4;
-    let tmp5;
     [tmp, tmp2, tmp3, tmp4, tmp5] = arg0;
     if (null != tmp3) {
       if (null != tmp4) {
@@ -470,7 +460,7 @@ let obj1 = {
     return { type: "link", content, target, title: "call" };
   }
 };
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/markup/MarkupChannelMentionRule.tsx");
+const result = require("set").fileFinishedImporting("modules/markup/MarkupChannelMentionRule.tsx");
 
 export default obj;
 export const getGuildIdFromChannelId = function getGuildIdFromChannelId(arg0) {

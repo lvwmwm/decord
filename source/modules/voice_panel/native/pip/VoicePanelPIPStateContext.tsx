@@ -1,14 +1,14 @@
-// Module ID: 16311
-// Function ID: 16312
+// Module ID: 16405
+// Function ID: 16406
 // Name: context
 // Dependencies: [19, 2]
 // Exports: usePIPState
 
-// Module 16311 (context)
-import importAllResult from "noop";
+// Module 16405 (context)
+import importAllResult from "noop" /* 19 */;
 
 let c0 = importAllResult;
-const context = importAllResult.createContext({ id: "dispatch", mode: "isArray", width: false, height: "money_mouth", containerHeight: "money_mouth_face", showSecondaryPIP: "none" });
+const context = importAllResult.createContext({ id: "dispatch", mode: "isArray", width: false, height: "validate", containerHeight: null, showSecondaryPIP: "\u{1F6A3}\u200D\u2640\uFE0F" });
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPStateContext.tsx");
 
 export const VoicePanelPIPStateContext = context;

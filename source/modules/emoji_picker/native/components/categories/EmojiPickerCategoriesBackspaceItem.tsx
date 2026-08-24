@@ -1,29 +1,27 @@
-// Module ID: 9441
-// Function ID: 9442
+// Module ID: 9478
+// Function ID: 9479
 // Name: EmojiPickerCategoriesBackspaceItem
-// Dependencies: [19, 17, 676, 21, 4259, 1236, 9442, 2]
+// Dependencies: [19, 17, 676, 21, 4263, 1236, 9479, 2]
 // Exports: default
 
-// Module 9441 (EmojiPickerCategoriesBackspaceItem)
-import noop from "noop";
-import { Pressable } from "get ActivityIndicator";
-import { NODE_MARGIN } from "ME";
-import { jsx } from "jsxProd";
+// Module 9478 (EmojiPickerCategoriesBackspaceItem)
+import closure_2 from "noop" /* 19 */;
+import { Pressable } from "get ActivityIndicator" /* 17 */;
+import { NODE_MARGIN } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoriesBackspaceItem.tsx");
+const result = require("set").fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoriesBackspaceItem.tsx");
 
 export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
-  let iconStyle;
-  let style;
   onBackspace = onBackspace.onBackspace;
-  let dependencyMap;
+  dependencyMap = undefined;
   let React;
   ({ style, iconStyle } = onBackspace);
-  const interval = new onBackspace(4259).Interval();
+  const interval = new onBackspace(4263).Interval();
   dependencyMap = React.useRef(interval);
-  const delayedCall = new onBackspace(4259).DelayedCall(500, () => {
-    const current = noop.current;
+  const delayedCall = new onBackspace(4263).DelayedCall(500, () => {
+    const current = closure_2.current;
     current.cancel();
     const current2 = ref.current;
     current2.start(50, onBackspace);
@@ -33,11 +31,11 @@ export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   const items1 = [onBackspace];
   const callback = React.useCallback(() => {
     onBackspace();
-    const current = noop.current;
+    const current = closure_2.current;
     current.delay();
   }, items);
   const callback1 = React.useCallback(() => {
-    const current = noop.current;
+    const current = closure_2.current;
     current.cancel();
     const current2 = ref.current;
     current2.stop();
@@ -45,7 +43,7 @@ export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   }, items1);
   const effect = React.useEffect(() => {
     current = current.current;
-    current = noop.current;
+    current = closure_2.current;
     return () => {
       current.stop();
       current.cancel();
@@ -58,6 +56,6 @@ export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   obj[5] = callback1;
   obj[6] = callback;
   const items2 = [iconStyle, { opacity: 0.5 }];
-  obj[7] = jsx(onBackspace(9442).BackspaceIcon, { style: items2 });
+  obj[7] = jsx(onBackspace(9479).BackspaceIcon, { style: items2 });
   return <Pressable top={NODE_MARGIN} bottom={NODE_MARGIN} right={NODE_MARGIN} left={NODE_MARGIN} />;
 };

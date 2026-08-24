@@ -1,25 +1,26 @@
-// Module ID: 12299
-// Function ID: 12300
+// Module ID: 12351
+// Function ID: 12352
 // Name: createNitroSuggestedSku
-// Dependencies: [32, 4515, 9189, 9190, 9191, 676, 1924, 1236, 7205, 4039, 2]
+// Dependencies: [32, 4520, 9226, 9227, 9228, 676, 1924, 1236, 7243, 4042, 2]
 // Exports: buildReorderedNitroFirstWishlistItems, buildReorderedOwnedItemsLastWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 12299 (createNitroSuggestedSku)
-import _slicedToArray from "_slicedToArray";
-import createFromServer from "createFromServer";
-import { isCollectiblesWishlistItemRecord as closure_5 } from "createCollectiblesItemFromServerResponse";
-import { isPremiumWishlistItemRecord as closure_6 } from "fromServer";
-import { isSKUWishlistItemRecord } from "fromServer";
-import { SKUProductLines } from "ME";
-import { PremiumSubscriptionSKUs } from "GuildFeatures";
+// Module 12351 (createNitroSuggestedSku)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useSKUPrice from "useSKUPrice" /* 7243 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "createFromServer" /* 4520 */;
+import { isCollectiblesWishlistItemRecord as closure_5 } from "createCollectiblesItemFromServerResponse" /* 9226 */;
+import { isPremiumWishlistItemRecord as closure_6, isSKUWishlistItemRecord } from "fromServer" /* 9227 */;
+import { SKUProductLines } from "ME" /* 676 */;
+import { PremiumSubscriptionSKUs } from "GuildFeatures" /* 1924 */;
 
-const require = arg1;
-const result = require("createCollectiblesItemFromServerResponse").fileFinishedImporting("modules/wishlists/WishlistUtils.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/wishlists/WishlistUtils.tsx");
 
 export const createNitroSuggestedSku = function createNitroSuggestedSku() {
   const obj = { id: PremiumSubscriptionSKUs.TIER_2, productLine: SKUProductLines.PREMIUM, name: null, features: null, genres: null, manifests: null, availableRegions: null, locales: null, bundledSkuIds: null, selectedOptions: null, eligibleOffers: null, prices: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.lG6a5x);
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.lG6a5x);
   obj[3] = new Set();
   const set = new Set();
   obj[4] = new Set();
@@ -31,21 +32,17 @@ export const createNitroSuggestedSku = function createNitroSuggestedSku() {
   obj[10] = [];
   obj[11] = {};
   const set1 = new Set();
-  return new createFromServer(obj);
+  return new closure_4(obj);
 };
 export const isEligibleWishlistItemOnMobile = function isEligibleWishlistItemOnMobile(sku, isWishlistOwner) {
   isWishlistOwner = isWishlistOwner.isWishlistOwner;
   if (isSKUWishlistItemRecord(sku)) {
     if (sku.sku.productLine === SKUProductLines.SOCIAL_LAYER_GAME_ITEM) {
-      let prop = isWishlistOwner.isSocialLayerStorefrontMobilePurchasingEnabled;
-      if (prop) {
-        if (!isWishlistOwner) {
-          isWishlistOwner = require(7205) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(sku.sku);
-          const obj = require(7205) /* useSKUPrice */;
-        }
-        prop = isWishlistOwner;
+      if (!isWishlistOwner) {
+        isWishlistOwner = useSKUPrice.isSlayerSkuAvailableOnThisPlatform(sku.sku);
+        const obj = useSKUPrice;
       }
-      let tmp2 = prop;
+      let tmp2 = isWishlistOwner;
     }
     return tmp2;
   }

@@ -1,10 +1,12 @@
-// Module ID: 5777
-// Function ID: 5778
+// Module ID: 5808
+// Function ID: 5809
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 5777 (vanityUrl)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDiversityTier5SmallBadge-2x.png.js");
+// Module 5808 (vanityUrl)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDiversityTier5SmallBadge-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/3fc821dd0c88f47307acac67723b07ea60deaccca65c59424a354cc0ae62eebf.png";
 export const vanityUrl = "https://cdn.discordapp.com/assets/mana/asset-library/generated/GameDiversityTier5SmallBadge-2x.png";

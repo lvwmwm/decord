@@ -1,10 +1,12 @@
-// Module ID: 5423
-// Function ID: 5424
+// Module ID: 5428
+// Function ID: 5429
 // Name: ElectronProcessType
 // Dependencies: [2]
 
-// Module 5423 (ElectronProcessType)
-const result = require("set").fileFinishedImporting("utils/ProcessUtilsBase.tsx");
+// Module 5428 (ElectronProcessType)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("utils/ProcessUtilsBase.tsx");
 class ProcessUtils {
 }
 const prototype = ProcessUtils.prototype;

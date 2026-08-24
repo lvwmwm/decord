@@ -1,17 +1,21 @@
 // Module ID: 6621
 // Function ID: 6622
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 6622, 6609, 6610]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 6615, 6622, 6629, 6630, 6631]
 
 // Module 6621 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
+import noopAll from "noop" /* 19 */;
+import _inheritsDefault from "_inherits" /* 98 */;
+import extractPropsDefault from "extractProps" /* 6622 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 6630 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 6631 */;
+import closure_3 from "_classCallCheck" /* 41 */;
+import closure_4 from "_possibleConstructorReturn" /* 93 */;
+import closure_5 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const FeGaussianBlur = arg1;
+let closure_0 = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -23,62 +27,89 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
-class FeGaussianBlur {
+noopAll;
+class G {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeGaussianBlur);
-    tmp2 = __esModule;
-    obj = __esModule(FeGaussianBlur);
-    tmp3 = __esModule;
+    items = [...arguments];
+    closure_0 = undefined;
+    tmp = closure_3(this, closure_0);
+    items1 = [...items];
+    tmp2 = closure_5;
+    obj = closure_5(closure_0);
+    tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
-      tmp7 = globalThis;
+      tmp5 = globalThis;
       _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, items1);
     }
-    return tmp3(self, constructResult);
-  }
-}
-require("_inherits")(FeGaussianBlur, require("_isNativeReflectConstruct"));
-let obj = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const obj = {
-      ref(arg0) {
-        return self.refMethod(arg0);
+    tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.setNativeProps = (matrix) => {
+      matrix = matrix.matrix;
+      let tmp = !matrix;
+      if (!matrix) {
+        tmp = closure_1_1(closure_1_2[7])(matrix);
+      }
+      if (tmp) {
+        matrix.matrix = tmp;
+      }
+      root = root.root;
+      if (root != null) {
+        root.setNativeProps(matrix);
       }
     };
-    const tmp = importDefault(6622);
-    const merged = Object.assign(self(6609).extractFilter(this.props));
-    const obj2 = self(6609);
-    const merged1 = Object.assign(self(6609).extractIn(this.props));
-    const obj3 = self(6609);
-    const merged2 = Object.assign(self(6609).extractFeGaussianBlur(this.props));
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
+    return tmp3Result;
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeGaussianBlur, items);
-importDefaultResultResult.displayName = "FeGaussianBlur";
-obj = {};
-let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-obj.stdDeviation = 0;
-obj.edgeMode = "none";
-importDefaultResultResult.defaultProps = obj;
+}
+closure_0 = G;
+_inheritsDefault(G, _isNativeReflectConstructDefault);
+let items = [
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const props = this.props;
+      let obj = self(6622);
+      const propsAndStylesResult = obj.propsAndStyles(props);
+      const tmp5 = extractPropsDefault(propsAndStylesResult, this);
+      const obj2 = self(6629);
+      const tmp4 = importDefault;
+      if (typeof hasProps !== "function") {
+        HermesBuiltin.throwTypeError();
+      }
+      const keys = Object.keys();
+      if (keys !== undefined) {
+        let flag = true;
+        if (flag) {
+          tmp5.font = extractFontResult;
+        }
+        obj = { ref: null };
+        obj[0] = function ref(arg0) {
+          return self.refMethod(arg0);
+        };
+        const merged = Object.assign(tmp5);
+        obj.children = props.children;
+        return jsx(__INTERNAL_VIEW_CONFIGDefault, { ref: null });
+      }
+      flag = false;
+    }
+  }
+];
+const importDefaultResultResult = importDefaultResult(G, items);
+importDefaultResultResult.displayName = "G";
+function hasProps(arg0) {
+
+}
 
 export default importDefaultResultResult;

@@ -1,11 +1,13 @@
-// Module ID: 13533
-// Function ID: 13534
+// Module ID: 13591
+// Function ID: 13592
 // Name: Toast
 // Dependencies: [2]
 // Exports: Toast
 
-// Module 13533 (Toast)
-const result = require("set").fileFinishedImporting("design/components/Toast/native/Toast.native.tsx");
+// Module 13591 (Toast)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("design/components/Toast/native/Toast.native.tsx");
 
 export function Toast() {
   return null;

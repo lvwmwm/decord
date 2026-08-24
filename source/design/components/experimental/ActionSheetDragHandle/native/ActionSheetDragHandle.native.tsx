@@ -1,35 +1,31 @@
-// Module ID: 8820
-// Function ID: 8821
+// Module ID: 8857
+// Function ID: 8858
 // Name: ActionSheetDragHandle
-// Dependencies: [19, 17, 8812, 21, 4661, 712, 1236, 4115, 2]
+// Dependencies: [19, 17, 8849, 21, 4668, 712, 1236, 4119, 2]
 
-// Module 8820 (ActionSheetDragHandle)
-import get_ActivityIndicator from "get ActivityIndicator";
-import PX_4 from "PX_4";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 8857 (ActionSheetDragHandle)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import PX_4 from "PX_4" /* 8849 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let DRAG_HANDLE_BAR_HEIGHT;
-let DRAG_HANDLE_HEIGHT;
-let DRAG_HANDLE_PADDING;
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 ({ TouchableWithoutFeedback: c3, View: c4 } = get_ActivityIndicator);
 ({ DRAG_HANDLE_BAR_HEIGHT, DRAG_HANDLE_PADDING, DRAG_HANDLE_HEIGHT } = PX_4);
 let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: { position: "absolute", top: 0, left: 0, right: 0 }, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING }, bar: null };
-obj = { backgroundColor: require("Themes").colors.ICON_MUTED, borderRadius: require("Themes").radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
+obj = { backgroundColor: ThemesDefault.colors.ICON_MUTED, borderRadius: ThemesDefault.radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
 obj[3] = obj;
 let closure_6 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo((accessibilityLabel) => {
-  let onPress;
-  let overlay;
+const memoResult = importAllResult.memo((accessibilityLabel) => {
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
   ({ onPress, overlay } = accessibilityLabel);
   if (accessibilityLabel === undefined) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    accessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.WAI6xu);
+    const intl = getSystemLocale.intl;
+    accessibilityLabel = intl.string(getSystemLocale.t.WAI6xu);
   }
   const animatedBarStyles = accessibilityLabel.animatedBarStyles;
   const tmp3 = callback();
@@ -45,9 +41,9 @@ const memoResult = require("noop").memo((accessibilityLabel) => {
     obj = { style: null };
     const items1 = [tmp3.bar, animatedBarStyles];
     obj[0] = items1;
-    let tmp4Result = tmp4(importDefault(4115).View, obj);
+    let tmp4Result = tmp4(_modDef4119.View, obj);
   } else {
-    const obj1 = { style: null };
+    obj1 = { style: null };
     obj1[0] = tmp3.bar;
     tmp4Result = tmp4(tmp7, obj1);
   }
@@ -55,6 +51,6 @@ const memoResult = require("noop").memo((accessibilityLabel) => {
   obj[5] = <closure_4 style={tmp3.handle}>{null}</closure_4>;
   return <closure_3 style={tmp3.handle}>{null}</closure_3>;
 });
-const result = require("PX_4").fileFinishedImporting("design/components/experimental/ActionSheetDragHandle/native/ActionSheetDragHandle.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/experimental/ActionSheetDragHandle/native/ActionSheetDragHandle.native.tsx");
 
 export const ActionSheetDragHandle = memoResult;

@@ -1,54 +1,58 @@
-// Module ID: 12046
-// Function ID: 12047
+// Module ID: 12098
+// Function ID: 12099
 // Name: FailedGroupDMRow
-// Dependencies: [19, 17, 1391, 1910, 4559, 4030, 1922, 505, 21, 4661, 712, 4984, 9916, 1297, 4734, 589, 4219, 11966, 4660, 4660, 1236, 2]
+// Dependencies: [19, 17, 1391, 1910, 4564, 4033, 1922, 505, 21, 4668, 712, 4989, 9955, 1297, 4739, 589, 4223, 12015, 4667, 4667, 1236, 2]
 // Exports: default
 
-// Module 12046 (FailedGroupDMRow)
-import "getAlertModalItemKey";
-import { View } from "GuildIconWithChannelTypeSizes";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import sortActivity from "sortActivity";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { StatusTypes } from "sum";
-import jsxProd from "set";
-import createCacheKey from "createCacheKey";
+// Module 12098 (FailedGroupDMRow)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import Text from "Text" /* 4739 */;
+import computeChannelNameDefault from "computeChannelName" /* 4989 */;
+import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 9955 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import closure_6 from "sortActivity" /* 4564 */;
+import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import { StatusTypes } from "sum" /* 505 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let closure_12;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function FailedGroupDMRow(channel) {
   channel = channel.channel;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { style: tmp.row, children: null };
   obj = { size: null, channel: null };
-  const tmp2 = importDefault(4984)(channel);
-  obj[0] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
+  const tmp2 = computeChannelNameDefault(channel);
+  obj[0] = Button.AvatarSizes.REFRESH_MEDIUM_32;
   obj[1] = channel;
-  const items = [callback(importDefault(9916), obj), ];
+  const items = [callback(FacepileGroupDMAvatarDefault, obj), ];
   obj = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp2 };
-  items[1] = callback(require(4734) /* Text */.Text, obj);
+  items[1] = callback(Text.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
 function FailedUserRow(user) {
   user = user.user;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = user(589);
-  const items = [markAllUserIdListsStale];
-  let stateFromStores = obj.useStateFromStores(items, () => outer1_7.getNickname(user.id));
-  let obj1 = user(589);
-  const items1 = [sortActivity];
-  const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => ({ isMobileOnline: outer1_6.isMobileOnline(user.id), status: outer1_6.getStatus(user.id), isVROnline: outer1_6.isVROnline(user.id) }));
+  const items = [closure_7];
+  let stateFromStores = obj.useStateFromStores(items, () => closure_1_7.getNickname(user.id));
+  obj1 = user(589);
+  const items1 = [closure_6];
+  const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => ({ isMobileOnline: closure_1_6.isMobileOnline(user.id), status: closure_1_6.getStatus(user.id), isVROnline: closure_1_6.isVROnline(user.id) }));
   const status = stateFromStoresObject.status;
   let tmp9Result = null;
   if (null != user) {
     obj = { style: null, children: null };
     obj[0] = tmp.row;
-    obj = { user: null, guildId: "Boolean", status: true, isMobileOnline: "done", isVROnline: true, size: null, avatarDecoration: null, autoStatusCutout: 71.857 };
+    obj = { user: null, guildId: "Boolean", status: true, isMobileOnline: "done", isVROnline: true, size: null, avatarDecoration: null, autoStatusCutout: 204 };
     obj[0] = user;
     let tmp13 = null;
     if (StatusTypes.OFFLINE !== status) {
@@ -63,11 +67,11 @@ function FailedUserRow(user) {
     obj1 = { style: null, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: null };
     obj1[0] = tmp.label;
     if (stateFromStores == null) {
-      stateFromStores = importDefault(4219).getName(user);
-      const obj6 = importDefault(4219);
+      stateFromStores = nameFromUserDefault.getName(user);
+      const obj6 = nameFromUserDefault;
     }
     obj1[4] = stateFromStores;
-    items2[1] = closure_10(tmp2(4734).Text, obj1);
+    items2[1] = closure_10(tmp2(4739).Text, obj1);
     obj[1] = items2;
     tmp9Result = closure_11(View, obj);
     const tmp10 = View;
@@ -77,40 +81,37 @@ function FailedUserRow(user) {
 }
 function FailedChannelRow(channel) {
   channel = channel.channel;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = channel(589);
-  const items = [createGuildRecordFromRust];
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let guild_id;
     if (channel != null) {
       guild_id = channel.guild_id;
     }
-    return outer1_5.getGuild(guild_id);
+    return closure_1_5.getGuild(guild_id);
   });
   obj = { style: tmp.row, children: null };
-  obj = { "aria-label": "", guild: stateFromStores, channel, size: null };
-  obj[3] = channel(11966).GuildIconWithChannelTypeSizes.SMALL_32;
-  const items1 = [callback(channel(11966).GuildIconWithChannelType, obj), ];
-  const tmp3 = importDefault(4984)(channel);
-  items1[1] = callback(channel(4734).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4984)(channel) });
+  obj = { "aria-label": "", guild: stateFromStores, channel, size: channel(12015).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const items1 = [callback(channel(12015).GuildIconWithChannelType, obj), ];
+  const tmp3 = computeChannelNameDefault(channel);
+  items1[1] = callback(channel(4739).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: computeChannelNameDefault(channel) });
   obj[1] = items1;
   return callback2(View, obj);
 }
 function FailedDestinationRow(destination) {
-  let channel;
-  let user;
   destination = destination.destination;
   let obj = destination(589);
-  const items = [ensureGuildLoaded, mergeGuildAvatar];
+  const items = [closure_4, closure_8];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let channel = null;
     if ("channel" === destination.type) {
-      channel = outer1_4.getChannel(tmp.id);
+      channel = closure_1_4.getChannel(tmp.id);
     }
     const obj = { channel, user: null };
     let user = null;
     if ("user" === destination.type) {
-      user = outer1_8.getUser(tmp.id);
+      user = closure_1_8.getUser(tmp.id);
     }
     obj[1] = user;
     return obj;
@@ -131,53 +132,49 @@ function FailedDestinationRow(destination) {
   } else {
     tmp3 = null;
     if (null != channel) {
-      const obj1 = { channel: null };
+      obj1 = { channel: null };
       obj1[0] = channel;
       tmp3 = callback(FailedChannelRow, obj1);
     }
   }
   return tmp3;
 }
+noopAll;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = jsxProd);
 createCacheKey = { container: null, row: null, label: null };
-createCacheKey = { borderWidth: 1, borderColor: require("Themes").colors.BORDER_STRONG, borderRadius: require("Themes").radii.lg, paddingVertical: require("Themes").space.PX_8 };
+createCacheKey = { borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_STRONG, borderRadius: ThemesDefault.radii.lg, paddingVertical: ThemesDefault.space.PX_8 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12, height: 40, marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[1] = { display: "flex", flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_12, height: 40, marginHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[2] = { flexShrink: 1 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12, height: 40, marginHorizontal: require("Themes").space.PX_16 };
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/share/native/DestinationFailedAlertModal.tsx");
+let closure_13 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { display: "flex", flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_12, height: 40, marginHorizontal: ThemesDefault.space.PX_16 };
+const result = require("set").fileFinishedImporting("modules/share/native/DestinationFailedAlertModal.tsx");
 
 export default function DestinationFailedAlertModal(arg0) {
-  let content;
-  let failedDestinations;
-  let onRetry;
-  let title;
   ({ failedDestinations, onRetry } = arg0);
   ({ title, content } = arg0);
   let obj = { title, content, extraContent: null, actions: null };
-  obj = { style: createCacheKey().container, children: null };
-  obj[1] = failedDestinations.map((destination) => callback(closure_17, { destination }, arg1));
+  obj = { style: callback3().container, children: failedDestinations.map((destination) => callback(closure_17, { destination }, arg1)) };
   obj[2] = callback(View, obj);
   if (null != onRetry) {
     obj = { children: null };
-    const obj1 = { variant: "primary", onPress: null, text: null };
+    obj1 = { variant: "primary", onPress: null, text: null };
     obj1[1] = onRetry;
     const intl2 = tmp3(1236).intl;
     obj1[2] = intl2.string(tmp3(1236).t["5911Lb"]);
-    const items = [tmp2(tmp3(4660).AlertActionButton, obj1, "confirm"), ];
+    const items = [tmp2(tmp3(4667).AlertActionButton, obj1, "confirm"), ];
     const obj2 = { variant: "secondary", text: null };
     const intl3 = tmp3(1236).intl;
     obj2[1] = intl3.string(tmp3(1236).t.WAI6xu);
-    items[1] = tmp2(tmp3(4660).AlertActionButton, obj2, "cancel");
+    items[1] = tmp2(tmp3(4667).AlertActionButton, obj2, "cancel");
     obj[0] = items;
     let tmp2Result = callback2(closure_12, obj);
   } else {
     const obj3 = { variant: "primary", text: null };
     const intl = tmp3(1236).intl;
     obj3[1] = intl.string(tmp3(1236).t.BddRzS);
-    tmp2Result = tmp2(tmp3(4660).AlertActionButton, obj3, "confirm");
+    tmp2Result = tmp2(tmp3(4667).AlertActionButton, obj3, "confirm");
   }
-  obj[3] = callback(require(4660) /* getAlertModalItemKey */.AlertActions, { children: tmp2Result });
-  return callback(require(4660) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[3] = callback(getAlertModalItemKey.AlertActions, { children: tmp2Result });
+  return callback(getAlertModalItemKey.AlertModal, obj);
 };

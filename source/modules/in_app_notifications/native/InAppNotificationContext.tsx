@@ -1,11 +1,11 @@
-// Module ID: 10080
-// Function ID: 10081
+// Module ID: 10119
+// Function ID: 10120
 // Name: context
 // Dependencies: [19, 2]
 // Exports: useInAppNotificationContext
 
-// Module 10080 (context)
-import importAllResult from "noop";
+// Module 10119 (context)
+import importAllResult from "noop" /* 19 */;
 
 let c0 = importAllResult;
 let context = importAllResult.createContext(undefined);
@@ -16,7 +16,7 @@ export const useInAppNotificationContext = function useInAppNotificationContext(
   context = importAllResult.useContext(context);
   if (null == context) {
     const _Error = Error;
-    const error = new Error("useInAppNotificationContext must be used within provider of InAppNotificationContext");
+    error = new Error("useInAppNotificationContext must be used within provider of InAppNotificationContext");
     throw error;
   } else {
     return context;

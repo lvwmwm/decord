@@ -1,28 +1,32 @@
-// Module ID: 14598
-// Function ID: 14599
+// Module ID: 14666
+// Function ID: 14667
 // Name: volumeSlider
-// Dependencies: [4652, 1218, 4497, 8198, 589, 4569, 38, 9654, 12136, 10669, 1236, 2]
+// Dependencies: [4658, 1218, 4501, 8238, 589, 4574, 38, 9693, 12188, 10708, 1236, 2]
 
-// Module 14598 (volumeSlider)
-import reset from "reset";
-import fetchFingerprint from "fetchFingerprint";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createToggle from "createToggle";
+// Module 14666 (volumeSlider)
+import _modDef38 from "module_38" /* 38 */;
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4574 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9693 */;
+import apexExperimentDefault from "apexExperiment" /* 12188 */;
+import closure_3 from "reset" /* 4658 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4501 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.pEAl4b);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.pEAl4b);
   },
   parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   maximum: 200,
   useValue: function useStreamVolumeSettingValue() {
-    let items = [reset, fetchFingerprint, _detectH265HardwareDecode];
-    return require(589) /* initialize */.useStateFromStores(items, () => {
-      let obj;
-      let obj2;
-      const items = [reset, fetchFingerprint];
+    let items = [closure_3, closure_4, closure_5];
+    return initialize.useStateFromStores(items, () => {
+      const items = [closure_3, closure_4];
       [obj, obj2] = items;
       const lastActiveStream = obj.getLastActiveStream();
       let tmp2 = null;
@@ -40,9 +44,7 @@ createToggle = {
     });
   },
   onValueChange: function onStreamValueSettingValueChange(arg0) {
-    let obj;
-    let obj2;
-    const items = [reset, fetchFingerprint];
+    const items = [closure_3, closure_4];
     [obj, obj2] = items;
     const lastActiveStream = obj.getLastActiveStream();
     let tmp2 = null;
@@ -52,17 +54,15 @@ createToggle = {
         tmp2 = lastActiveStream;
       }
     }
-    importDefault(38)(null != tmp2, "Can not set stream volume without active stream");
-    importDefault(9654).setLocalVolume(tmp2.ownerId, arg0, require(4569) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM);
+    _modDef38(null != tmp2, "Can not set stream volume without active stream");
+    trackDeviceChangedDefault.setLocalVolume(tmp2.ownerId, arg0, BaseConnectionEvent.MediaEngineContextTypes.STREAM);
   },
   usePredicate: function useHasStreamVolumeSetting() {
-    const obj = importDefault(12136);
-    let items = [reset, fetchFingerprint];
-    const obj2 = require(589) /* initialize */;
-    return require(589) /* initialize */.useStateFromStores(items, () => {
-      let obj;
-      let obj2;
-      const items = [reset, fetchFingerprint];
+    const obj = apexExperimentDefault;
+    let items = [closure_3, closure_4];
+    const obj2 = initialize;
+    return initialize.useStateFromStores(items, () => {
+      const items = [closure_3, closure_4];
       [obj, obj2] = items;
       const lastActiveStream = obj.getLastActiveStream();
       let tmp2 = null;
@@ -76,14 +76,14 @@ createToggle = {
     }) && obj.getConfig({ location: "StreamOutputVolumeSetting" }).audioOutputPresent;
   },
   useSearchTerms() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1236) /* getSystemLocale */.t["3182VD"]), ];
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    items[1] = intl2.string(require(1236) /* getSystemLocale */.t["DGq/PR"]);
+    const intl = getSystemLocale.intl;
+    const items = [intl.string(getSystemLocale.t["3182VD"]), ];
+    const intl2 = getSystemLocale.intl;
+    items[1] = intl2.string(getSystemLocale.t["DGq/PR"]);
     return items;
   }
 };
 createToggle = createToggle.createVolumeSlider(createToggle);
-const result = require("_detectH265HardwareDecode").fileFinishedImporting("modules/user_settings/defs/native/StreamOutputVolumeSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/StreamOutputVolumeSetting.tsx");
 
 export default createToggle;

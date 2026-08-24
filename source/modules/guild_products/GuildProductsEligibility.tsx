@@ -1,35 +1,35 @@
-// Module ID: 7224
-// Function ID: 7225
+// Module ID: 7262
+// Function ID: 7263
 // Name: useGuildEligibleForGuildProducts
 // Dependencies: [1910, 676, 589, 2]
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
-// Module 7224 (useGuildEligibleForGuildProducts)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GuildFeatures } from "ME";
+// Module 7262 (useGuildEligibleForGuildProducts)
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/guild_products/GuildProductsEligibility.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductsEligibility.tsx");
 
 export const useGuildEligibleForGuildProducts = function useGuildEligibleForGuildProducts(id) {
   const _require = id;
-  const items = [createGuildRecordFromRust];
+  const items = [closure_2];
   const items1 = [id];
   return _require(589).useStateFromStores(items, () => {
     if (null == closure_0) {
       return false;
     } else {
-      const guild = outer1_2.getGuild(tmp);
+      const guild = closure_1_2.getGuild(tmp);
       let tmp4 = null != guild;
       if (tmp4) {
         const features = guild.features;
-        let hasItem = features.has(outer1_3.COMMUNITY);
+        let hasItem = features.has(closure_1_3.COMMUNITY);
         if (!hasItem) {
           const features2 = guild.features;
           hasItem = features2.has(tmp5.GUILD_PRODUCTS);
         }
         tmp4 = hasItem;
-        tmp5 = outer1_3;
+        tmp5 = closure_1_3;
       }
       return tmp4;
     }

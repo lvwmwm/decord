@@ -1,33 +1,29 @@
-// Module ID: 11787
-// Function ID: 11788
+// Module ID: 11836
+// Function ID: 11837
 // Name: GuildIconPile
-// Dependencies: [19, 21, 7188, 11788, 11790, 8402, 11789, 2]
+// Dependencies: [19, 21, 7226, 11837, 11839, 8441, 11838, 2]
 // Exports: GuildIconPile
 
-// Module 11787 (GuildIconPile)
-import noop from "noop";
-import jsxProd from "jsxProd";
+// Module 11836 (GuildIconPile)
+import GuildIconSizes from "GuildIconSizes" /* 7226 */;
+import SolidCutout from "SolidCutout" /* 8441 */;
+import Pile from "Pile" /* 11837 */;
+import map from "map" /* 11838 */;
+import getListSummaryLabel from "getListSummaryLabel" /* 11839 */;
+import closure_2 from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-const result = require("GuildIconSizes").fileFinishedImporting("design/components/Pile/native/GuildIconPile.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Pile/native/GuildIconPile.native.tsx");
 
 export const GuildIconPile = function GuildIconPile(arg0) {
-  let children;
-  let names;
-  let size;
-  let totalCount;
   ({ totalCount, children } = arg0);
   const Children = React.Children;
   ({ size, names } = arg0);
   const countResult = Children.count(children);
-  const tmp4 = require(7188) /* GuildIconSizes */.ImageSizes[size];
-  let obj = { "aria-label": null, shape: null, size: null, gap: null, depthX: 0.25, children: null };
-  obj[0] = require(11790) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount);
-  obj[1] = require(8402) /* SolidCutout */.CutoutShape.RoundedRect;
-  obj[2] = tmp4;
+  const tmp4 = GuildIconSizes.ImageSizes[size];
+  let obj = { "aria-label": getListSummaryLabel.getListSummaryLabel(names, totalCount), shape: SolidCutout.CutoutShape.RoundedRect, size: tmp4, gap: null, depthX: 0.25, children: null };
   let num = 3;
   if (tmp4 <= 40) {
     num = 2;
@@ -40,9 +36,9 @@ export const GuildIconPile = function GuildIconPile(arg0) {
     obj[0] = tmp4;
     obj[1] = tmp4 / 3;
     obj[2] = totalCount - countResult;
-    tmp6 = callback(require(11789) /* map */.PileOverflow, obj);
+    tmp6 = callback(map.PileOverflow, obj);
   }
   items[1] = tmp6;
   obj[5] = items;
-  return closure_4(require(11788) /* Pile */.Pile, obj);
+  return closure_4(Pile.Pile, obj);
 };

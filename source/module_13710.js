@@ -1,7 +1,23 @@
 // Module ID: 13710
 // Function ID: 13711
-// Dependencies: []
+// Dependencies: [13711, 13712]
 
 // Module 13710
-
-export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });
+const require = arg1;
+const dependencyMap = arg6;
+arg5.shouldPolyfill = undefined;
+arg5.supportedValuesOf = undefined;
+let obj = {
+  enumerable: true,
+  get() {
+    return require(13711) /* shouldPolyfill */.shouldPolyfill;
+  }
+};
+Object.defineProperty(arg5, "shouldPolyfill", obj);
+obj = {
+  enumerable: true,
+  get() {
+    return require(13712) /* supportedValuesOf */.supportedValuesOf;
+  }
+};
+Object.defineProperty(arg5, "supportedValuesOf", obj);

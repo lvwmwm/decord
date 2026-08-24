@@ -1,27 +1,27 @@
-// Module ID: 11682
-// Function ID: 11683
+// Module ID: 11731
+// Function ID: 11732
 // Name: useHasAllocateBoostPermission
-// Dependencies: [1910, 4021, 505, 589, 2]
+// Dependencies: [1910, 4024, 505, 589, 2]
 // Exports: default, getHasAllocateBoostPermission
 
-// Module 11682 (useHasAllocateBoostPermission)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import { Permissions } from "sum";
+// Module 11731 (useHasAllocateBoostPermission)
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;
-const result = require("sum").fileFinishedImporting("modules/premium/powerups/hooks/useHasAllocateBoostPermission.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useHasAllocateBoostPermission.tsx");
 
 export default function useHasAllocateBoostPermission(arg0) {
   const _require = arg0;
-  const items = [getUncachedChannelPermissions, createGuildRecordFromRust];
+  const items = [closure_3, closure_2];
   return _require(589).useStateFromStores(items, () => {
-    const guild = outer1_2.getGuild(closure_0);
+    const guild = closure_1_2.getGuild(closure_0);
     let canResult = null;
     if (null != guild) {
       canResult = null;
       if (null != obj.getGuildPermissions(guild)) {
-        canResult = obj.can(outer1_4.ADMINISTRATOR, guild);
+        canResult = obj.can(closure_1_4.ADMINISTRATOR, guild);
       }
     }
     return canResult;

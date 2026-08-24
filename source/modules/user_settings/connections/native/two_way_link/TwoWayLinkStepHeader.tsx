@@ -1,24 +1,26 @@
-// Module ID: 9757
-// Function ID: 9758
+// Module ID: 9796
+// Function ID: 9797
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 9756, 4734, 1236, 2]
+// Dependencies: [19, 21, 9795, 4739, 1236, 2]
 // Exports: TwoWayLinkStepHeader
 
-// Module 9757 (TwoWayLinkStepHeader)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 9796 (TwoWayLinkStepHeader)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import styles from "styles" /* 9795 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("styles").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkStepHeader.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkStepHeader.tsx");
 
 export const TwoWayLinkStepHeader = function TwoWayLinkStepHeader(arg0) {
-  let idx;
-  let total;
   ({ idx, total } = arg0);
-  let obj = require(9756) /* styles */;
+  let obj = styles;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { variant: "text-xs/bold", color: "text-default", style: twoWayLinkStyles.stepHeader, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl.format(require(1236) /* getSystemLocale */.t.fHz6eR, { number: idx, total });
-  return jsx(require(4734) /* Text */.Text, { variant: "text-xs/bold", color: "text-default", style: twoWayLinkStyles.stepHeader, children: null });
+  const intl = getSystemLocale.intl;
+  obj[3] = intl.format(getSystemLocale.t.fHz6eR, { number: idx, total });
+  return jsx(Text.Text, { variant: "text-xs/bold", color: "text-default", style: twoWayLinkStyles.stepHeader, children: null });
 };

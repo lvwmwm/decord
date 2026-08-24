@@ -1,39 +1,38 @@
-// Module ID: 15618
-// Function ID: 15619
+// Module ID: 15684
+// Function ID: 15685
 // Name: componentWillEnter
-// Dependencies: [19, 17, 4662, 676, 21, 4661, 6782, 712, 4223, 4104, 4343, 4344, 1297, 1236, 589, 11595, 2]
+// Dependencies: [19, 17, 4669, 676, 21, 4668, 6819, 712, 4227, 4107, 4347, 4348, 1297, 1236, 589, 11644, 2]
 // Exports: default
 
-// Module 15618 (componentWillEnter)
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import hexToRgba from "hexToRgba";
-import hexToRgba from "hexToRgba";
-import importDefaultResult from "createTextStyle";
+// Module 15684 (componentWillEnter)
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import _toPropertyKey from "_toPropertyKey" /* 11644 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let c4;
-let c5;
-let c9;
-let closure_6;
-let metroImportAll;
-let require = arg1;
+require = arg1;
 let c3 = importAllResult;
 ({ View: c4, Animated: c5, TouchableWithoutFeedback: closure_6 } = get_ActivityIndicator);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { unreadText: null, unread: null, mention: null };
 createCacheKey = {};
-let merged = Object.assign(require("createTextStyle")(require("ME").Fonts.DISPLAY_SEMIBOLD, require("Themes").unsafe_rawColors.WHITE, 12, { uppercase: true }));
+let merged = Object.assign(importDefaultResult(require("ME").Fonts.DISPLAY_SEMIBOLD, ThemesDefault.unsafe_rawColors.WHITE, 12, { uppercase: true }));
 createCacheKey[0] = createCacheKey;
-let obj1 = { margin: 8, height: 24, justifyContent: "center", alignItems: "center", borderRadius: require("Themes").radii.md, backgroundColor: null };
-obj1[5] = hexToRgba.hexWithOpacity(require("Themes").unsafe_rawColors.PRIMARY_400, 0.9);
+let obj1 = { margin: 8, height: 24, justifyContent: "center", alignItems: "center", borderRadius: ThemesDefault.radii.md, backgroundColor: null };
+obj1[5] = hexToRgba.hexWithOpacity(ThemesDefault.unsafe_rawColors.PRIMARY_400, 0.9);
 createCacheKey[1] = obj1;
 const obj2 = { backgroundColor: null };
-obj2[0] = hexToRgba.hexWithOpacity(require("Themes").unsafe_rawColors.RED_400, 0.9);
+obj2[0] = hexToRgba.hexWithOpacity(ThemesDefault.unsafe_rawColors.RED_400, 0.9);
 createCacheKey[2] = obj2;
-createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+let closure_10 = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
 const PureComponent = importAllResult.PureComponent;
 class UnreadBar extends PureComponent {
   constructor() {
@@ -43,10 +42,8 @@ class UnreadBar extends PureComponent {
     value = new Animated.Value(0);
     applyArgumentsResult.animation = value;
     applyArgumentsResult.handlePress = function handlePress() {
-      let item;
-      let onPress;
       ({ item, onPress } = applyArgumentsResult.props);
-      const result = applyArgumentsResult(outer1_2[10]).triggerHapticFeedback(outer1_1(outer1_2[11]).IMPACT_LIGHT);
+      const result = applyArgumentsResult(closure_1_2[10]).triggerHapticFeedback(closure_1_1(closure_1_2[11]).IMPACT_LIGHT);
       applyArgumentsResult.hide();
       onPress(item);
     };
@@ -73,8 +70,6 @@ prototype["hide"] = function hide(arg0) {
   RN.spring(this.animation, { toValue: 0, friction: 15, tension: 250, useNativeDriver: true }).start(arg0);
 };
 prototype["getAnimatedStyle"] = function getAnimatedStyle() {
-  let bottom;
-  let contentInset;
   const self = this;
   const props = this.props;
   ({ bottom, contentInset } = props);
@@ -123,7 +118,7 @@ prototype["getAnimatedStyle"] = function getAnimatedStyle() {
     if (this.state.active) {
       num6 = 1;
     }
-    const obj1 = { translateY: null };
+    obj1 = { translateY: null };
     items[1] = num6;
     obj[1] = items;
     obj1[0] = animation.interpolate(obj);
@@ -134,9 +129,7 @@ prototype["getAnimatedStyle"] = function getAnimatedStyle() {
   return tmp2;
 };
 prototype["render"] = function render() {
-  let mention;
-  let section;
-  const tmp = createCacheKey(this.context);
+  const tmp = callback2(this.context);
   const props = this.props;
   ({ mention, section } = props.item);
   let obj = { accessibilityRole: "button", onPress: this.handlePress, onPressIn: this.handlePressIn, onPressOut: this.handlePressOut, testID: "unread-bar-touchable-" + mention + "-" + section, children: null };
@@ -148,10 +141,10 @@ prototype["render"] = function render() {
   }
   obj = { style: items, nativeID: "unread-bar-view-" + mention + "-" + section, children: null };
   items[1] = mention;
-  const obj1 = { style: tmp.unreadText, maxFontSizeMultiplier: 1.5, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1 = { style: tmp.unreadText, maxFontSizeMultiplier: 1.5, children: null };
+  const intl = getSystemLocale.intl;
   const string = intl.string;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (props.compact) {
     let stringResult = string(t.y2b7CA);
   } else if (mention) {
@@ -160,20 +153,16 @@ prototype["render"] = function render() {
     stringResult = string(t.FCRiT3);
   }
   obj1[2] = stringResult;
-  obj[2] = closure_8(require(1297) /* Button */.LegacyText, obj1);
+  obj[2] = closure_8(Button.LegacyText, obj1);
   obj[2] = closure_8(closure_4, obj);
   obj[5] = closure_8(RN.View, obj);
   return closure_8(closure_6, obj);
 };
 UnreadBar.defaultProps = { bottom: false };
 UnreadBar.contextType = require("ManaContext").ThemeContext;
-let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("components_native/common/UnreadBars.tsx");
+let result = require("set").fileFinishedImporting("components_native/common/UnreadBars.tsx");
 
 export default function UnreadBars(contentInset) {
-  let afterItem;
-  let beforeItem;
-  let compact;
-  let require;
   ({ scrollToLocation: require, beforeItem, afterItem, compact } = contentInset);
   if (compact === undefined) {
     compact = false;
@@ -185,8 +174,8 @@ export default function UnreadBars(contentInset) {
   function handlePress(section) {
     callback({ section: section.section, item: section.row, animated: true });
   }
-  let obj1 = require(589) /* initialize */;
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  obj1 = initialize;
+  const items = [closure_7];
   const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let obj = { component: importAllResult.Fragment, children: null };
   let tmp3 = null;
@@ -212,5 +201,5 @@ export default function UnreadBars(contentInset) {
   }
   items1[1] = tmp6;
   obj[1] = items1;
-  return closure_9(require(11595) /* _toPropertyKey */.TransitionGroup, obj);
+  return closure_9(_toPropertyKey.TransitionGroup, obj);
 };

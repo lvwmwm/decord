@@ -1,12 +1,14 @@
-// Module ID: 17064
-// Function ID: 17065
+// Module ID: 17157
+// Function ID: 17158
 // Name: AVErrorStreamFailedToStartDefinition
-// Dependencies: [676, 9668, 17055, 4531, 2]
+// Dependencies: [676, 9707, 17148, 4536, 2]
 
-// Module 17064 (AVErrorStreamFailedToStartDefinition)
-import { ApplicationStreamStates } from "ME";
+// Module 17157 (AVErrorStreamFailedToStartDefinition)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("getVoiceChannelErrorContext").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamFailedToStart.tsx");
+const ApplicationStreamStates = ME.ApplicationStreamStates;
+const result = set.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamFailedToStart.tsx");
 
 export const AVErrorStreamFailedToStartDefinition = {
   getActiveErrors(activeStreams) {
@@ -19,9 +21,9 @@ export const AVErrorStreamFailedToStartDefinition = {
       return tmp;
     });
     return found.map((currentUserActiveStream) => {
-      const obj = { type: callback(9668).AVError.STREAM_FAILED_TO_START };
-      const obj2 = callback(17055);
-      const merged = Object.assign(obj2.getStreamErrorContext(callback(4531).encodeStreamKey(currentUserActiveStream)));
+      const obj = { type: callback(9707).AVError.STREAM_FAILED_TO_START };
+      const obj2 = callback(17148);
+      const merged = Object.assign(obj2.getStreamErrorContext(callback(4536).encodeStreamKey(currentUserActiveStream)));
       return obj;
     });
   },

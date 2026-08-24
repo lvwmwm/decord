@@ -1,38 +1,33 @@
-// Module ID: 15967
-// Function ID: 15968
+// Module ID: 16064
+// Function ID: 16065
 // Name: getIncomingFriendRequestCount
-// Dependencies: [32, 5406, 4030, 589, 2]
+// Dependencies: [32, 5411, 4033, 589, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 15967 (getIncomingFriendRequestCount)
-import _slicedToArray from "_slicedToArray";
-import recountRelationshipTypes from "recountRelationshipTypes";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
+// Module 16064 (getIncomingFriendRequestCount)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "recountRelationshipTypes" /* 5411 */;
+import closure_4 from "markAllUserIdListsStale" /* 4033 */;
 
-const require = arg1;
-const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/people/hooks/useFriendRequestCounts.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/people/hooks/useFriendRequestCounts.tsx");
 
 export const getIncomingFriendRequestCount = function getIncomingFriendRequestCount(items) {
-  let obj;
-  let obj2;
   [obj, obj2] = callback(items, 2);
   const pendingCount = obj.getPendingCount();
   return pendingCount + obj2.getPendingIncomingCount();
 };
 export const useIncomingFriendRequestCount = function useIncomingFriendRequestCount() {
-  let items = [markAllUserIdListsStale, recountRelationshipTypes];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
-    let obj;
-    let obj2;
-    const items = [markAllUserIdListsStale, recountRelationshipTypes];
+  let items = [closure_4, closure_3];
+  return initialize.useStateFromStores(items, () => {
+    const items = [closure_4, closure_3];
     [obj, obj2] = callback(items, 2);
     const pendingCount = obj.getPendingCount();
     return pendingCount + obj2.getPendingIncomingCount();
   });
 };
 export const getOutgoingFriendRequestCount = function getOutgoingFriendRequestCount(items1) {
-  let obj;
-  let obj2;
   let tmp = items1;
   if (items1 === undefined) {
     const items = [globalThis.o, ];

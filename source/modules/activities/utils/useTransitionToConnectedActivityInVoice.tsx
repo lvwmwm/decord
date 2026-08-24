@@ -1,18 +1,18 @@
-// Module ID: 16272
-// Function ID: 16273
+// Module ID: 16366
+// Function ID: 16367
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 1391, 1979, 676, 4011, 8724, 8744, 8733, 1231, 2]
+// Dependencies: [5, 19, 1391, 1980, 676, 4014, 8761, 8781, 8770, 1231, 2]
 // Exports: default
 
-// Module 16272 (useTransitionToConnectedActivityInVoice)
-import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId";
-import noop from "noop";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import { ComponentActions } from "ME";
+// Module 16366 (useTransitionToConnectedActivityInVoice)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "handleConnectionOpen" /* 1980 */;
+import { ComponentActions } from "ME" /* 676 */;
 
 const require = arg1;
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/activities/utils/useTransitionToConnectedActivityInVoice.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/utils/useTransitionToConnectedActivityInVoice.tsx");
 
 export default function useTransitionToConnectedActivityInVoice(onTransition) {
   onTransition = onTransition.onTransition;
@@ -30,10 +30,10 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
     }
     function _handler() {
       const self = this;
-      const tmp = outer2_3((arg0) => {
-        let closure_0 = arg0;
-        let c3 = 0;
-        let c4 = 0;
+      const tmp = closure_2_3((arg0) => {
+        closure_0 = arg0;
+        c3 = 0;
+        c4 = 0;
         const iter = (function*(arg0) {
           if (c4 === 2) {
             c4 = 3;
@@ -46,7 +46,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -79,26 +79,26 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                     throw arg1;
                   } else if (arg0 === 2) {
                     c4 = 3;
-                    const obj1 = { value: null, done: true };
+                    obj1 = { value: null, done: true };
                     obj1[0] = arg1;
                     return obj1;
                   } else {
-                    callback = outer2_0(outer2_2[5]).getEmbeddedActivityLocationChannelId(location);
+                    callback = closure_2_0(closure_2_2[5]).getEmbeddedActivityLocationChannelId(location);
                     if (null != callback) {
-                      if (callback(outer2_2[6])(callback)) {
-                        if (outer2_6.getVoiceChannelId() !== callback) {
+                      if (callback(closure_2_2[6])(callback)) {
+                        if (closure_2_6.getVoiceChannelId() !== callback) {
                           const obj2 = { channelId: null };
                           obj2[0] = callback;
                           guild_id = 2;
                           c4 = 1;
                           const obj3 = { value: null, done: false };
-                          obj3[0] = callback(outer2_2[7])(obj2);
+                          obj3[0] = callback(closure_2_2[7])(obj2);
                           return obj3;
                         }
                       }
                     }
                     c4 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;
@@ -109,7 +109,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                   obj[0] = arg1;
                   return obj;
                 }
-                guild_id = outer2_5.getChannel(callback);
+                guild_id = closure_2_5.getChannel(callback);
                 guild_id = undefined;
                 if (guild_id != null) {
                   guild_id = guild_id.guild_id;
@@ -126,7 +126,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
         iter.next();
         return iter;
       });
-      const _handler = tmp;
+      closure_1 = tmp;
       const apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -135,11 +135,11 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
       }
       return applyArgumentsResult;
     }
-    let ComponentDispatch = onTransition(outer1_2[9]).ComponentDispatch;
-    const subscription = ComponentDispatch.subscribe(outer1_7.OPEN_EMBEDDED_ACTIVITY, handler);
+    let ComponentDispatch = onTransition(closure_1_2[9]).ComponentDispatch;
+    const subscription = ComponentDispatch.subscribe(closure_1_7.OPEN_EMBEDDED_ACTIVITY, handler);
     return () => {
-      const ComponentDispatch = onTransition(outer2_2[9]).ComponentDispatch;
-      ComponentDispatch.unsubscribe(outer2_7.OPEN_EMBEDDED_ACTIVITY, handler);
+      const ComponentDispatch = onTransition(closure_2_2[9]).ComponentDispatch;
+      ComponentDispatch.unsubscribe(closure_2_7.OPEN_EMBEDDED_ACTIVITY, handler);
     };
   }, items);
 };

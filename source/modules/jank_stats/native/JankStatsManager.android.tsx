@@ -1,15 +1,18 @@
-// Module ID: 16622
-// Function ID: 16623
+// Module ID: 16718
+// Function ID: 16719
 // Name: handleAppStateUpdate
-// Dependencies: [676, 5038, 16623, 698, 5066, 2]
+// Dependencies: [676, 5043, 16719, 698, 5071, 2]
 
-// Module 16622 (handleAppStateUpdate)
-import ME from "ME";
-import "initialize";
+// Module 16718 (handleAppStateUpdate)
+import set from "set" /* 2 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import initializeDefault from "initialize" /* 5043 */;
+import getDeviceMetadata from "getDeviceMetadata" /* 5071 */;
+import enforcingDefault from "enforcing" /* 16719 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
 ({ AppStates: c3, AnalyticEvents: c4 } = ME);
+initializeDefault;
 class JankStatsManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -62,7 +65,7 @@ prototype["scheduleReport"] = function scheduleReport() {
       self._timeoutId = null;
       self.sendReport("timer");
       self._isScheduledReportSent = true;
-      const obj = outer1_1(outer1_2[2]);
+      const obj = closure_1_1(closure_1_2[2]);
       if (obj != null) {
         obj.stopTracking();
       }
@@ -70,7 +73,7 @@ prototype["scheduleReport"] = function scheduleReport() {
   }
 };
 prototype["sendReport"] = function sendReport(background) {
-  let obj = importDefault(16623);
+  let obj = enforcingDefault;
   let report;
   if (obj != null) {
     report = obj.requestReport();
@@ -82,16 +85,16 @@ prototype["sendReport"] = function sendReport(background) {
   }
   if (!tmp4) {
     obj = {};
-    const tmpResult = importDefault(698);
-    const merged = Object.assign(require(5066) /* getDeviceMetadata */.getDeviceMetadata());
+    const tmpResult = expandEventPropertiesDefault;
+    const merged = Object.assign(getDeviceMetadata.getDeviceMetadata());
     obj.version = 2;
     ({ totalFrameCount: obj3.total_frame_count, jankFrameCount: obj3.jank_frame_count, frameMetricsTotalFrameCount: obj3.frame_metrics_total_frame_count, frameMetricsJankFrameCount: obj3.frame_metrics_jank_frame_count } = report);
     obj.trigger = background;
     tmpResult.track(constants2.ANDROID_JANK_STATS, obj);
-    const obj4 = require(5066) /* getDeviceMetadata */;
+    const obj4 = getDeviceMetadata;
   }
 };
 const jankStatsManager = new JankStatsManager();
-let result = require("enforcing").fileFinishedImporting("modules/jank_stats/native/JankStatsManager.android.tsx");
+let result = set.fileFinishedImporting("modules/jank_stats/native/JankStatsManager.android.tsx");
 
 export default jankStatsManager;

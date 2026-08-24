@@ -1,20 +1,23 @@
-// Module ID: 11925
-// Function ID: 11926
+// Module ID: 11974
+// Function ID: 11975
 // Name: setNewUser
 // Dependencies: [709, 2]
 // Exports: setNewUser, setNewUserFlowCompleted
 
-// Module 11925 (setNewUser)
-const result = require("set").fileFinishedImporting("modules/nuf/NUFActionCreators.tsx");
+// Module 11974 (setNewUser)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/nuf/NUFActionCreators.tsx");
 
 export const setNewUser = function setNewUser(ORGANIC_REGISTERED) {
-  const importDefault = ORGANIC_REGISTERED;
-  importDefault(709).wait(() => {
-    let obj = ORGANIC_REGISTERED(outer1_1[0]);
+  importDefault = ORGANIC_REGISTERED;
+  dispatcherDefault.wait(() => {
+    let obj = ORGANIC_REGISTERED(closure_1_1[0]);
     obj = { type: "NUF_NEW_USER", newUserType: ORGANIC_REGISTERED };
     return obj.dispatch(obj);
   });
 };
 export const setNewUserFlowCompleted = function setNewUserFlowCompleted() {
-  importDefault(709).wait(() => callback(table[0]).dispatch({ type: "NUF_COMPLETE" }));
+  dispatcherDefault.wait(() => callback(table[0]).dispatch({ type: "NUF_COMPLETE" }));
 };

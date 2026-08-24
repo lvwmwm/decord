@@ -1,13 +1,15 @@
-// Module ID: 10183
-// Function ID: 10184
+// Module ID: 10222
+// Function ID: 10223
 // Name: _initialize
-// Dependencies: [5038, 595, 2]
+// Dependencies: [5043, 595, 2]
 
-// Module 10183 (_initialize)
-import "initialize";
+// Module 10222 (_initialize)
+import Storage2 from "Storage" /* 595 */;
+import initializeDefault from "initialize" /* 5043 */;
 
-const require = arg1;
+require = arg1;
 const formGuidelinesStorageKey = "formGuidelinesStorageKey";
+initializeDefault;
 class ForumGuidelinesManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -18,7 +20,7 @@ class ForumGuidelinesManager extends tmp2 {
 }
 const prototype = ForumGuidelinesManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage2.Storage;
   const value = Storage.get(formGuidelinesStorageKey);
   if (null != value) {
     const self = this;
@@ -28,13 +30,13 @@ prototype["_initialize"] = function _initialize() {
   }
 };
 prototype["_terminate"] = function _terminate() {
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage2.Storage;
   const result = Storage.set(formGuidelinesStorageKey, this.seenForumGuidelines);
 };
 prototype["markAsSeen"] = function markAsSeen(arg0) {
   const seenForumGuidelines = this.seenForumGuidelines;
   seenForumGuidelines.add(arg0);
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage2.Storage;
   const result = Storage.set(formGuidelinesStorageKey, this.seenForumGuidelines);
 };
 prototype["hasSeen"] = function hasSeen(arg0) {

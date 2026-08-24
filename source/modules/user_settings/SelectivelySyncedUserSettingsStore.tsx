@@ -4,10 +4,16 @@
 // Dependencies: [676, 589, 595, 12, 709, 2]
 
 // Module 1303 (initialize)
-import { UserSettingsSections } from "ME";
-import { PersistedStore } from "initialize";
+import set from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import Storage4 from "Storage" /* 595 */;
+import ME from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
+const UserSettingsSections = ME.UserSettingsSections;
 let closure_4 = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class SelectivelySyncedUserSettingsStore extends PersistedStore {
 }
 const prototype = SelectivelySyncedUserSettingsStore.prototype;
@@ -47,7 +53,7 @@ SelectivelySyncedUserSettingsStore.displayName = "SelectivelySyncedUserSettingsS
 SelectivelySyncedUserSettingsStore.persistKey = "SelectivelySyncedUserSettingsStore";
 const items = [
   () => {
-    const Storage = require(595) /* Storage */.Storage;
+    const Storage = Storage4.Storage;
     let obj = Storage.get("UserSettingsSync");
     if (obj == null) {
       obj = {};
@@ -61,16 +67,16 @@ const items = [
     Storage3.remove("UserSettingsSync");
     obj = {};
     if (false === obj[UserSettingsSections.TEXT]) {
-      const obj1 = { shouldSync: false, settings: null };
-      obj1[1] = importDefault(12).pick(value, ["inlineAttachmentMedia", "inlineEmbedMedia", "renderEmbeds", "renderReactions", "animateEmoji", "animateStickers", "gifAutoPlay", "defaultReactionEmoji"]);
+      obj1 = { shouldSync: false, settings: null };
+      obj1[1] = applyDefault.pick(value, ["inlineAttachmentMedia", "inlineEmbedMedia", "renderEmbeds", "renderReactions", "animateEmoji", "animateStickers", "gifAutoPlay", "defaultReactionEmoji"]);
       obj.text = obj1;
-      const obj5 = importDefault(12);
+      const obj5 = applyDefault;
     }
     if (false === obj[tmp4.APPEARANCE]) {
       const obj2 = { shouldSync: false, settings: null };
-      obj2[1] = importDefault(12).pick(value, ["theme", "clientThemeSettings", "developerMode"]);
+      obj2[1] = applyDefault.pick(value, ["theme", "clientThemeSettings", "developerMode"]);
       obj.appearance = obj2;
-      const obj7 = importDefault(12);
+      const obj7 = applyDefault;
     }
     return obj;
   },
@@ -100,10 +106,8 @@ const items = [
   }
 ];
 SelectivelySyncedUserSettingsStore.migrations = items;
-const selectivelySyncedUserSettingsStore = new SelectivelySyncedUserSettingsStore(require("dispatcher"), {
+const selectivelySyncedUserSettingsStore = new SelectivelySyncedUserSettingsStore(dispatcherDefault, {
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: function handleSelectivelySyncedUserSettingsUpdate(changes) {
-    let settings;
-    let shouldSync;
     changes = changes.changes;
     for (const key10008 in changes) {
       let tmp12 = key10008;
@@ -150,9 +154,9 @@ const selectivelySyncedUserSettingsStore = new SelectivelySyncedUserSettingsStor
     }
   },
   LOGOUT: function handleLogOut() {
-    let closure_4 = {};
+    closure_4 = {};
   }
 });
-const result = require("Storage").fileFinishedImporting("modules/user_settings/SelectivelySyncedUserSettingsStore.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/SelectivelySyncedUserSettingsStore.tsx");
 
 export default selectivelySyncedUserSettingsStore;

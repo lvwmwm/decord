@@ -1,20 +1,23 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 16791
+// Function ID: 16792
 // Name: fetchRTCLatencyTestRegions
 // Dependencies: [530, 709, 2]
 // Exports: completeRTCLatencyTest, fetchRTCLatencyTestRegions
 
-// Module 16695 (fetchRTCLatencyTestRegions)
-const result = require("set").fileFinishedImporting("actions/RTCLatencyTestActionCreators.tsx");
+// Module 16791 (fetchRTCLatencyTestRegions)
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("actions/RTCLatencyTestActionCreators.tsx");
 
 export const fetchRTCLatencyTestRegions = function fetchRTCLatencyTestRegions(arg0) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
-  const obj = { url: "https:" + window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT + "?v=" + arg0, rejectWithError: null };
-  obj[1] = require(530) /* sendRequest */.rejectWithMigratedError();
+  const HTTP = sendRequest.HTTP;
+  const obj = { url: "https:" + window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT + "?v=" + arg0, rejectWithError: sendRequest.rejectWithMigratedError() };
   return HTTP.get(obj);
 };
 export const completeRTCLatencyTest = function completeRTCLatencyTest(latencyRankedRegions, mapped) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "RTC_LATENCY_TEST_COMPLETE", latencyRankedRegions, geoRankedRegions: mapped };
   obj.dispatch(obj);
 };

@@ -1,12 +1,14 @@
-// Module ID: 9963
-// Function ID: 9964
+// Module ID: 10002
+// Function ID: 10003
 // Name: NativeFWOMeasureModule
 // Dependencies: [17, 2]
 
-// Module 9963 (NativeFWOMeasureModule)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+// Module 10002 (NativeFWOMeasureModule)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 const value = TurboModuleRegistry.get("NativeFWOMeasureModule");
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeFWOMeasureModule.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeFWOMeasureModule.tsx");
 
 export default value;

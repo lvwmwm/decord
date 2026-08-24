@@ -1,24 +1,16 @@
-// Module ID: 9391
-// Function ID: 9392
-// Dependencies: [19, 9301, 21, 9369, 9379, 9392, 9388, 8029, 2]
+// Module ID: 9428
+// Function ID: 9429
+// Dependencies: [19, 9338, 21, 9406, 9416, 9429, 9425, 8068, 2]
 
-// Module 9391
-import importAllResult from "noop";
-import IMAGE_SIZE from "IMAGE_SIZE";
-import { jsx } from "jsxProd";
+// Module 9428
+import importAllResult from "noop" /* 19 */;
+import IMAGE_SIZE from "IMAGE_SIZE" /* 9338 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
 const require = arg1;
 let c3 = importAllResult;
 ({ ROW_HEIGHT: c4, LABEL_HEIGHT: c5, LABEL_TOP_PADDING: closure_6, LABEL_BOTTOM_PADDING: error } = IMAGE_SIZE);
 const forwardRefResult = importAllResult.forwardRef((paddingTop, ref) => {
-  let data;
-  let onShowNitroUpsell;
-  let renderItem;
-  let require;
   ({ categoryIndexActive: require, data } = paddingTop);
   const stickyHeaderIndices = data.headerIndices;
   paddingTop = paddingTop.paddingTop;
@@ -95,6 +87,6 @@ const forwardRefResult = importAllResult.forwardRef((paddingTop, ref) => {
   const preventNativeModalDismiss = require(paddingTop[6]).useIsPortalKeyboardInModal();
   return jsx(require(paddingTop[7]).BottomSheetFlashList, { contentContainerStyle, data: data.data, getItemType, keyboardShouldPersistTaps: "always", keyExtractor, onViewableItemsChanged: stickyHeaderIndices(paddingTop[5])(onViewableItemsChanged).onViewableItemsChanged, overrideItemLayout, preventNativeModalDismiss, ref, renderItem, stickyHeaderIndices });
 });
-let result = require("jsxProd").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponent.ios.tsx");
+let result = require("set").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponent.ios.tsx");
 
 export default forwardRefResult;

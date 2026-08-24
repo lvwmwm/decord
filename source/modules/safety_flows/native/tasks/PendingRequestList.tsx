@@ -1,33 +1,33 @@
-// Module ID: 17102
-// Function ID: 17103
+// Module ID: 17195
+// Function ID: 17196
 // Name: PendingRequestRow
-// Dependencies: [19, 17, 1922, 21, 4661, 712, 1297, 589, 17100, 17103, 1435, 4734, 1236, 2597, 5433, 2335, 9203, 14280, 14234, 4094, 4733, 5447, 12047, 14239, 2]
+// Dependencies: [19, 17, 1922, 21, 4668, 712, 1297, 589, 17193, 17196, 1435, 4739, 1236, 2598, 5438, 2336, 9240, 14348, 14302, 4097, 4738, 5452, 12099, 14307, 2]
 // Exports: default
 
-// Module 17102 (PendingRequestRow)
-import dispatcher from "dispatcher";
-import get_ActivityIndicator from "registerAsset";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import jsxProd from "AccountAgeTier10LargeBadge";
-import createCacheKey from "createCacheKey";
+// Module 17195 (PendingRequestRow)
+import ThemesDefault from "Themes" /* 712 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import messagesProxyDefault from "messagesProxy" /* 2598 */;
+import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 14302 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let error;
-let metroImportAll;
 const require = arg1;
 class PendingRequestRow {
   constructor(arg0) {
     request = global.request;
     ({ hasMaxConnections, actionsDisabled, onAccept, onDecline } = global);
     ({ isAcceptLoading, isDeclineLoading } = global);
-    tmp = jsxs();
+    tmp = closure_9();
     tmp2 = request;
     tmp3 = onDecline;
     obj = require("initialize");
     items = [];
-    items[0] = View;
-    stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(request.parent_id));
+    items[0] = closure_6;
+    stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getUser(request.parent_id));
     globalName = undefined;
     if (stateFromStores != null) {
       globalName = stateFromStores.globalName;
@@ -159,107 +159,88 @@ class PendingRequestRow {
   }
 }
 ({ ActivityIndicator: c4, View: c5 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { card: null, row: null, divider: null, avatar: null, details: null, actions: null, actionButton: null, acceptButton: null, declineButton: null, acceptIcon: null, declineIcon: null, inviteIconContainer: null, inviteQrButton: null, inviteShareButton: null, dividerRow: null, dividerLine: null, dividerLabel: null };
-createCacheKey = { borderRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
+createCacheKey = { borderRadius: ThemesDefault.radii.lg, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flexDirection: "row", alignItems: "center", paddingVertical: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 };
-let obj2 = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginLeft: null };
-const sum = require("Themes").space.PX_16 + require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL];
-obj2[2] = sum + require("Themes").space.PX_12;
+createCacheKey[1] = { flexDirection: "row", alignItems: "center", paddingVertical: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16 };
+let obj2 = { height: 1, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, marginLeft: null };
+const sum = ThemesDefault.space.PX_16 + require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL];
+obj2[2] = sum + ThemesDefault.space.PX_12;
 createCacheKey[2] = obj2;
-let obj3 = { borderRadius: null, backgroundColor: null };
-obj3[0] = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2;
-obj3[1] = require("Themes").colors.BACKGROUND_SURFACE_HIGHEST;
-createCacheKey[3] = obj3;
-let obj1 = { flexDirection: "row", alignItems: "center", paddingVertical: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 };
-createCacheKey[4] = { flexGrow: 1, flexShrink: 1, paddingLeft: require("Themes").space.PX_12, paddingRight: require("Themes").space.PX_4 };
+let obj1 = { flexDirection: "row", alignItems: "center", paddingVertical: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16 };
+createCacheKey[3] = { borderRadius: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST };
+let obj3 = { borderRadius: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST };
+createCacheKey[4] = { flexGrow: 1, flexShrink: 1, paddingLeft: ThemesDefault.space.PX_12, paddingRight: ThemesDefault.space.PX_4 };
 createCacheKey[5] = { flexDirection: "row", alignItems: "center" };
-let obj4 = { flexGrow: 1, flexShrink: 1, paddingLeft: require("Themes").space.PX_12, paddingRight: require("Themes").space.PX_4 };
-createCacheKey[6] = { height: 36, width: 36, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center" };
-let obj5 = { height: 36, width: 36, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center" };
-createCacheKey[7] = { backgroundColor: require("Themes").colors.STATUS_POSITIVE, marginRight: require("Themes").space.PX_8 };
-let obj6 = { backgroundColor: require("Themes").colors.STATUS_POSITIVE, marginRight: require("Themes").space.PX_8 };
-createCacheKey[8] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: require("Themes").colors.BORDER_STRONG };
-let obj7 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: require("Themes").colors.BORDER_STRONG };
-createCacheKey[9] = { color: require("Themes").colors.WHITE };
-let obj8 = { color: require("Themes").colors.WHITE };
-createCacheKey[10] = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-let obj10 = { width: null, height: null, alignItems: "center", justifyContent: "center" };
-obj10[0] = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL];
-obj10[1] = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL];
-createCacheKey[11] = obj10;
-let obj9 = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-createCacheKey[12] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: require("Themes").colors.BORDER_STRONG };
-let obj11 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: require("Themes").colors.BORDER_STRONG };
-createCacheKey[13] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: require("Themes").colors.BORDER_STRONG, marginRight: require("Themes").space.PX_8 };
+let obj4 = { flexGrow: 1, flexShrink: 1, paddingLeft: ThemesDefault.space.PX_12, paddingRight: ThemesDefault.space.PX_4 };
+createCacheKey[6] = { height: 36, width: 36, borderRadius: ThemesDefault.radii.round, alignItems: "center", justifyContent: "center" };
+let obj5 = { height: 36, width: 36, borderRadius: ThemesDefault.radii.round, alignItems: "center", justifyContent: "center" };
+createCacheKey[7] = { backgroundColor: ThemesDefault.colors.STATUS_POSITIVE, marginRight: ThemesDefault.space.PX_8 };
+let obj6 = { backgroundColor: ThemesDefault.colors.STATUS_POSITIVE, marginRight: ThemesDefault.space.PX_8 };
+createCacheKey[8] = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_STRONG };
+let obj7 = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_STRONG };
+createCacheKey[9] = { color: ThemesDefault.colors.WHITE };
+let obj8 = { color: ThemesDefault.colors.WHITE };
+createCacheKey[10] = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+let obj9 = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[11] = { width: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL], height: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL], alignItems: "center", justifyContent: "center" };
+let obj10 = { width: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL], height: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL], alignItems: "center", justifyContent: "center" };
+createCacheKey[12] = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_STRONG };
+let obj11 = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_STRONG };
+createCacheKey[13] = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_STRONG, marginRight: ThemesDefault.space.PX_8 };
 createCacheKey[14] = { flexDirection: "row", alignItems: "center" };
-let obj12 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: require("Themes").colors.BORDER_STRONG, marginRight: require("Themes").space.PX_8 };
-createCacheKey[15] = { flexGrow: 1, flexShrink: 1, height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-let obj13 = { flexGrow: 1, flexShrink: 1, height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-createCacheKey[16] = { marginHorizontal: require("Themes").space.PX_12 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj14 = { marginHorizontal: require("Themes").space.PX_12 };
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/safety_flows/native/tasks/PendingRequestList.tsx");
+let obj12 = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: ThemesDefault.colors.BORDER_STRONG, marginRight: ThemesDefault.space.PX_8 };
+createCacheKey[15] = { flexGrow: 1, flexShrink: 1, height: 1, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+let obj13 = { flexGrow: 1, flexShrink: 1, height: 1, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+createCacheKey[16] = { marginHorizontal: ThemesDefault.space.PX_12 };
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+let obj14 = { marginHorizontal: ThemesDefault.space.PX_12 };
+let result = require("set").fileFinishedImporting("modules/safety_flows/native/tasks/PendingRequestList.tsx");
 
 export default function PendingRequestList(arg0) {
-  let c1;
-  let c2;
-  let c3;
-  let c4;
-  let c5;
-  let c6;
-  let c7;
-  let expiresAt;
-  let linkedUsersProcessed;
-  let onInviteAnotherGuardian;
-  let onRefreshLinkCode;
-  let onShare;
-  let pendingRequests;
-  let seenRequests;
   let _require;
-  let importDefault;
-  let dependencyMap;
+  importDefault = undefined;
+  dependencyMap = undefined;
   c3 = undefined;
   c4 = undefined;
   c5 = undefined;
   c6 = undefined;
   let callback;
   ({ pendingRequests, linkedUsersProcessed, expiresAt, onRefreshLinkCode, onInviteAnotherGuardian, onShare } = arg0);
-  const tmp = createCacheKey();
+  const tmp = callback2();
   _require = tmp;
-  importDefault(14234)(expiresAt, onRefreshLinkCode);
-  let obj = _require(17100);
+  useRefreshLinkCodeOnExpiryDefault(expiresAt, onRefreshLinkCode);
+  let obj = _require(17193);
   obj = {
     pendingRequests,
     linkedUsersProcessed,
     onActionError() {
-      let obj = _undefined2(_undefined3[19]);
+      let obj = _undefined(_undefined2[19]);
       obj = { key: "SAFETY_FLOWS_PARENTAL_CONSENT_LINK_UPDATE_ERROR", content: null };
-      const intl = _undefined(_undefined3[12]).intl;
-      obj[1] = intl.string(_undefined2(_undefined3[15]).Wu8BK2);
+      const intl = lib(_undefined2[12]).intl;
+      obj[1] = intl.string(_undefined(_undefined2[15]).Wu8BK2);
       obj.open(obj);
     }
   };
   const pendingRequestListController = obj.usePendingRequestListController(obj);
   ({ seenRequests, hasMaxConnections: c1, actioningUserId: c2, isAcceptLoading: c3, isDeclineLoading: c4, actionsDisabled: c5, handleAccept: c6, handleDecline: c7 } = pendingRequestListController);
-  obj = { spacing: null, children: null };
-  obj[0] = importDefault(712).space.PX_16;
+  obj = { spacing: ThemesDefault.space.PX_16, children: null };
   let tmp8 = seenRequests.length > 0;
   if (tmp8) {
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.card;
     obj1[1] = seenRequests.map((parent_id) => {
       let tmp2 = arg1 > 0;
       if (tmp2) {
         let obj = { style: null };
-        obj[0] = _undefined.divider;
-        tmp2 = _undefined5(c5, obj);
+        obj[0] = lib.divider;
+        tmp2 = _undefined4(c5, obj);
       }
       const items = [tmp2, ];
       obj = { request: parent_id, hasMaxConnections: c1, isAcceptLoading: null, isDeclineLoading: null, actionsDisabled: null, onAccept: null, onDecline: null };
-      let tmp8 = _undefined4;
-      if (_undefined4) {
+      let tmp8 = _undefined3;
+      if (_undefined3) {
         tmp8 = c2 === parent_id.parent_id;
       }
       obj[2] = tmp8;
@@ -271,10 +252,10 @@ export default function PendingRequestList(arg0) {
       obj[3] = tmp10;
       obj[4] = c5;
       obj[5] = c6;
-      obj[6] = _undefined5;
-      items[1] = _undefined5(outer1_10, obj);
+      obj[6] = _undefined4;
+      items[1] = _undefined4(closure_1_10, obj);
       obj[0] = items;
-      return outer1_8(_undefined4.Fragment, obj, parent_id.parent_id);
+      return closure_1_8(_undefined3.Fragment, obj, parent_id.parent_id);
     });
     tmp8 = callback(c5, obj1);
   }
@@ -283,24 +264,24 @@ export default function PendingRequestList(arg0) {
   const items1 = [callback(c5, { style: tmp.dividerLine }), , ];
   const obj4 = { style: tmp.dividerLabel, variant: "text-sm/medium", color: "text-muted", children: null };
   let intl = tmp5(1236).intl;
-  obj4[3] = intl.string(importDefault(2597)["/SbB94"]);
-  items1[1] = callback(_require(4734).Text, obj4);
+  obj4[3] = intl.string(messagesProxyDefault["/SbB94"]);
+  items1[1] = callback(_require(4739).Text, obj4);
   items1[2] = callback(c5, { style: tmp.dividerLine });
   obj2[1] = items1;
   items[1] = closure_8(c5, obj2);
   const obj6 = { style: items2, children: null };
   items2 = [, ];
   ({ card: arr3[0], row: arr3[1] } = tmp);
-  const items3 = [callback(c5, { style: tmp.inviteIconContainer, children: callback(_require(5447).PlaneIllocon, { size: 32 }) }), , ];
+  const items3 = [callback(c5, { style: tmp.inviteIconContainer, children: callback(_require(5452).PlaneIllocon, { size: 32 }) }), , ];
   const obj8 = { style: tmp.details, children: null };
   const obj9 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp5(1236).intl;
-  obj9[2] = intl2.string(importDefault(2597).z9gkwZ);
-  const items4 = [callback(_require(4734).Text, obj9), ];
+  obj9[2] = intl2.string(messagesProxyDefault.z9gkwZ);
+  const items4 = [callback(_require(4739).Text, obj9), ];
   const obj10 = { variant: "text-xs/medium", color: "text-default", children: null };
   const intl3 = tmp5(1236).intl;
-  obj10[2] = intl3.string(importDefault(2597)["9t4+vC"]);
-  items4[1] = callback(_require(4734).Text, obj10);
+  obj10[2] = intl3.string(messagesProxyDefault["9t4+vC"]);
+  items4[1] = callback(_require(4739).Text, obj10);
   obj8[1] = items4;
   items3[1] = closure_8(c5, obj8);
   const obj11 = { style: tmp.actions, children: null };
@@ -311,22 +292,22 @@ export default function PendingRequestList(arg0) {
   const items5 = [, ];
   ({ actionButton: arr6[0], inviteShareButton: arr6[1] } = tmp);
   obj12[3] = items5;
-  obj12[4] = callback(_require(12047).ShareIcon, { size: "sm", color: tmp.declineIcon.color });
-  const items6 = [callback(_require(5433).PressableOpacity, obj12), ];
+  obj12[4] = callback(_require(12099).ShareIcon, { size: "sm", color: tmp.declineIcon.color });
+  const items6 = [callback(_require(5438).PressableOpacity, obj12), ];
   const obj14 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
   const intl5 = tmp5(1236).intl;
-  obj14[1] = intl5.string(importDefault(2597).z9gkwZ);
+  obj14[1] = intl5.string(messagesProxyDefault.z9gkwZ);
   obj14[2] = onInviteAnotherGuardian;
   const items7 = [, ];
   ({ actionButton: arr8[0], inviteQrButton: arr8[1] } = tmp);
   obj14[3] = items7;
-  obj14[4] = callback(_require(14239).QrCodeIcon, { size: "sm", color: tmp.declineIcon.color });
-  items6[1] = callback(_require(5433).PressableOpacity, obj14);
+  obj14[4] = callback(_require(14307).QrCodeIcon, { size: "sm", color: tmp.declineIcon.color });
+  items6[1] = callback(_require(5438).PressableOpacity, obj14);
   obj11[1] = items6;
   items3[2] = closure_8(c5, obj11);
   obj6[1] = items3;
   items[2] = closure_8(c5, obj6);
   obj[1] = items;
-  return closure_8(_require(4733).Stack, obj);
+  return closure_8(_require(4738).Stack, obj);
 };
 export { PendingRequestRow };

@@ -4,7 +4,8 @@
 // Dependencies: [17]
 
 // Module 1645 (KeyboardController)
-import { TurboModuleRegistry } from "get ActivityIndicator";
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
 
 export default TurboModuleRegistry.get("KeyboardController");

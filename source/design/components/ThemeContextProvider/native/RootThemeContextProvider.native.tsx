@@ -1,16 +1,16 @@
-// Module ID: 12631
-// Function ID: 12632
+// Module ID: 12685
+// Function ID: 12686
 // Name: RootThemeContextProvider
-// Dependencies: [19, 505, 21, 4104, 2]
+// Dependencies: [19, 505, 21, 4107, 2]
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
-// Module 12631 (RootThemeContextProvider)
-import noop from "noop";
-import { ThemeTypes } from "sum";
-import { jsx } from "jsxProd";
+// Module 12685 (RootThemeContextProvider)
+import closure_2 from "noop" /* 19 */;
+import { ThemeTypes } from "sum" /* 505 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("design/components/ThemeContextProvider/native/RootThemeContextProvider.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/ThemeContextProvider/native/RootThemeContextProvider.native.tsx");
 
 export const RootThemeContextProvider = function RootThemeContextProvider(children) {
   let DARK = children.theme;
@@ -63,11 +63,11 @@ export const RootThemeContextProvider = function RootThemeContextProvider(childr
   return num(DARK(primaryColor[3]).ThemeContext.Provider, { value, children: children.children });
 };
 export const DisableCustomTheme = function DisableCustomTheme(children) {
-  let obj = themeContext(4104);
+  let obj = themeContext(4107);
   themeContext = obj.useThemeContext();
   const items = [themeContext];
   const memo = React.useMemo(() => {
-    let obj = themeContext(outer1_1[3]);
+    let obj = themeContext(closure_1_1[3]);
     obj = {};
     const merged = Object.assign(themeContext);
     obj.primaryColor = null;
@@ -76,5 +76,5 @@ export const DisableCustomTheme = function DisableCustomTheme(children) {
     return obj.createThemedContext(obj);
   }, items);
   obj = { value: memo, children: children.children };
-  return jsx(themeContext(4104).ThemeContext.Provider, { value: memo, children: children.children });
+  return jsx(themeContext(4107).ThemeContext.Provider, { value: memo, children: children.children });
 };

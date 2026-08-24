@@ -1,48 +1,50 @@
-// Module ID: 15178
-// Function ID: 15179
-// Dependencies: [19, 17, 21, 4661, 712, 1500, 1629, 6286, 13949, 6291, 13946, 2]
+// Module ID: 15242
+// Function ID: 15243
+// Dependencies: [19, 17, 21, 4668, 712, 1500, 1629, 6317, 14017, 6322, 14014, 2]
 
-// Module 15178
-import { ScrollView } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 15242
+import ThemesDefault from "Themes" /* 712 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import { ScrollView } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let obj = { container: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, padding: require("Themes").space.PX_16 };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, padding: ThemesDefault.space.PX_16 };
 obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(function DevToolsPerformanceTestingScreen() {
+const memoResult = importAllResult.memo(function DevToolsPerformanceTestingScreen() {
   let obj = _require(1500);
   _require = obj.useNavigation();
   obj = { style: callback().container, contentContainerStyle: null, children: null };
-  obj = { paddingBottom: null };
-  obj[0] = importDefault(1629)().bottom + importDefault(712).space.PX_16;
+  obj = { paddingBottom: useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16 };
   obj[1] = obj;
-  const obj1 = { hasIcons: true, children: null };
-  const entries = Object.entries(_require(13949).PerformanceTestingScreens);
+  obj1 = { hasIcons: true, children: null };
+  const entries = Object.entries(_require(14017).PerformanceTestingScreens);
   obj1[1] = entries.map((arg0) => {
-    let tmp;
     [tmp, ] = arg0;
-    let obj = { label: tmp2, icon: null, arrow: true, onPress: null };
-    obj[1] = outer1_4(callback(outer1_2[9]).TableRow.Icon, { IconComponent: tmp3 });
-    obj[3] = function onPress() {
-      let arr = outer1_0;
-      if (null != outer1_0.push) {
-        arr = arr.push(callback);
-      } else {
-        let obj = callback(outer2_2[10]);
-        obj = { screenKey: null };
-        obj[0] = callback;
-        obj.navigateToDevTools(obj);
+    return closure_1_4(callback(closure_1_2[9]).TableRow, {
+      label: tmp2,
+      icon: closure_1_4(callback(closure_1_2[9]).TableRow.Icon, { IconComponent: tmp3 }),
+      arrow: true,
+      onPress() {
+        let arr = closure_1_0;
+        if (null != closure_1_0.push) {
+          arr = arr.push(callback);
+        } else {
+          let obj = callback(closure_2_2[10]);
+          obj = { screenKey: null };
+          obj[0] = callback;
+          obj.navigateToDevTools(obj);
+        }
       }
-    };
-    return outer1_4(callback(outer1_2[9]).TableRow, obj, tmp);
+    }, tmp);
   });
-  obj[2] = jsx(_require(6286).TableRowGroup, { hasIcons: true, children: null });
-  return <ScrollView paddingBottom={null} />;
+  obj[2] = jsx(_require(6317).TableRowGroup, { hasIcons: true, children: null });
+  return <ScrollView paddingBottom={useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16} />;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");
 
 export default memoResult;

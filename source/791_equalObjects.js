@@ -4,10 +4,12 @@
 // Dependencies: [792]
 
 // Module 791 (equalObjects)
+import getAllKeys from "getAllKeys" /* 792 */;
+
 
 export default function equalObjects(arg0, arg1, arg2, arg3, arg4, get) {
-  const arr = require(792) /* getAllKeys */(arg0);
-  if (arr.length != require(792) /* getAllKeys */(arg1).length) {
+  const arr = getAllKeys(arg0);
+  if (arr.length != getAllKeys(arg1).length) {
     if (!tmp) {
       return false;
     }

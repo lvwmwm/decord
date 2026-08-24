@@ -1,27 +1,28 @@
-// Module ID: 15587
-// Function ID: 15588
+// Module ID: 15651
+// Function ID: 15652
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 4734, 1236, 4796, 2]
+// Dependencies: [19, 21, 4739, 1236, 4801, 2]
 // Exports: default
 
-// Module 15587 (VoiceSubtitle)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15651 (VoiceSubtitle)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Text").fileFinishedImporting("modules/home_drawer/native/subtitles/VoiceSubtitle.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/home_drawer/native/subtitles/VoiceSubtitle.tsx");
 
 export default function VoiceSubtitle(arg0) {
-  let require;
-  let voiceUsers;
   ({ guildId: require, voiceUsers } = arg0);
   let obj = { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   obj = { users: null, overflowCount: null };
   const substr = voiceUsers.slice(0, 2);
-  const mapped = substr.map((arg0) => outer1_1(outer1_2[4]).getName(closure_0, null, arg0));
+  const mapped = substr.map((arg0) => closure_1_1(closure_1_2[4]).getName(closure_0, null, arg0));
   obj[0] = mapped.join(", ");
   obj[1] = Math.max(voiceUsers.length - 2, 0);
-  obj[3] = intl.format(require(1236) /* getSystemLocale */.t.r1Vkoc, obj);
-  return jsx(require(4734) /* Text */.Text, { users: null, overflowCount: null });
+  obj[3] = intl.format(getSystemLocale.t.r1Vkoc, obj);
+  return jsx(Text.Text, { users: null, overflowCount: null });
 };

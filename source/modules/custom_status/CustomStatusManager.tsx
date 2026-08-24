@@ -1,23 +1,22 @@
-// Module ID: 16551
-// Function ID: 16552
+// Module ID: 16646
+// Function ID: 16647
 // Name: timeout
-// Dependencies: [7250, 676, 4259, 5038, 4066, 10025, 1374, 1337, 10024, 2]
+// Dependencies: [7288, 676, 4263, 5043, 4069, 10064, 1374, 1337, 10063, 2]
 
-// Module 16551 (timeout)
-import filterPlayingActivities from "filterPlayingActivities";
-import ME from "ME";
-import "initialize";
+// Module 16646 (timeout)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_3 from "filterPlayingActivities" /* 7288 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
 let require = arg1;
 ({ AnalyticsObjects: c4, StatusTypes: c5 } = ME);
 const timeout = new require("start").Timeout();
 const timeout1 = new require("start").Timeout();
 const timeout2 = new require("start").Timeout();
+initializeDefault;
 let prototype = function CustomStatusManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const require = applyArgumentsResult;
+  require = applyArgumentsResult;
   applyArgumentsResult.actions = {
     POST_CONNECTION_OPEN() {
       return applyArgumentsResult.handlePostConnectionOpen();
@@ -39,7 +38,7 @@ let prototype = function CustomStatusManager() {
     const result2 = applyArgumentsResult.manageExpiringFocusMode();
   };
   applyArgumentsResult.manageExpiringCustomStatus = function manageExpiringCustomStatus() {
-    let CustomStatusSetting = applyArgumentsResult(4066).CustomStatusSetting;
+    let CustomStatusSetting = applyArgumentsResult(4069).CustomStatusSetting;
     const setting = CustomStatusSetting.getSetting();
     if (null == setting) {
       closure_8.stop();
@@ -59,7 +58,7 @@ let prototype = function CustomStatusManager() {
               CustomStatusSetting.updateSetting(undefined);
             }, true);
           } else {
-            const CustomStatusSetting2 = applyArgumentsResult(4066).CustomStatusSetting;
+            const CustomStatusSetting2 = applyArgumentsResult(4069).CustomStatusSetting;
             CustomStatusSetting2.updateSetting(undefined);
             closure_8.stop();
           }
@@ -72,7 +71,7 @@ let prototype = function CustomStatusManager() {
     }
   };
   applyArgumentsResult.manageExpiringStatus = function manageExpiringStatus() {
-    const StatusExpiresAtSetting = applyArgumentsResult(4066).StatusExpiresAtSetting;
+    const StatusExpiresAtSetting = applyArgumentsResult(4069).StatusExpiresAtSetting;
     const setting = StatusExpiresAtSetting.getSetting();
     if (null != setting) {
       if ("0" !== setting) {
@@ -94,11 +93,11 @@ let prototype = function CustomStatusManager() {
             let obj = { nextStatus: null, analyticsContext: null };
             obj[0] = tmp4.ONLINE;
             obj = { location: null };
-            const obj1 = { object: null };
+            obj1 = { object: null };
             obj1[0] = constants.CUSTOM_STATUS_MANAGER;
             obj[0] = obj1;
             obj[1] = obj;
-            callback(10025)(obj);
+            callback(10064)(obj);
             closure_6.stop();
           }
         }
@@ -112,7 +111,7 @@ let prototype = function CustomStatusManager() {
   applyArgumentsResult.lazilyMigrateStatusCreatedAt = function lazilyMigrateStatusCreatedAt() {
     let tmp = store.getStatus() !== constants2.ONLINE;
     if (tmp) {
-      const StatusCreatedAtSetting = applyArgumentsResult(4066).StatusCreatedAtSetting;
+      const StatusCreatedAtSetting = applyArgumentsResult(4069).StatusCreatedAtSetting;
       tmp = null == StatusCreatedAtSetting.getSetting();
     }
     if (tmp) {
@@ -124,7 +123,7 @@ let prototype = function CustomStatusManager() {
     }
   };
   applyArgumentsResult.manageExpiringFocusMode = function manageExpiringFocusMode() {
-    const FocusModeExpiresAtSetting = applyArgumentsResult(4066).FocusModeExpiresAtSetting;
+    const FocusModeExpiresAtSetting = applyArgumentsResult(4069).FocusModeExpiresAtSetting;
     const setting = FocusModeExpiresAtSetting.getSetting();
     if (null != setting) {
       if ("0" !== setting) {
@@ -140,9 +139,9 @@ let prototype = function CustomStatusManager() {
             callback(table[8]).setFocusMode(false);
           }, true);
         } else {
-          applyArgumentsResult(10024).setFocusMode(false);
+          applyArgumentsResult(10063).setFocusMode(false);
           closure_7.stop();
-          const tmpResult = applyArgumentsResult(10024);
+          const tmpResult = applyArgumentsResult(10063);
         }
       }
     }
@@ -155,6 +154,6 @@ let prototype = function CustomStatusManager() {
 class prototype extends tmp6 {
 }
 prototype = new prototype();
-let result = require("start").fileFinishedImporting("modules/custom_status/CustomStatusManager.tsx");
+let result = require("set").fileFinishedImporting("modules/custom_status/CustomStatusManager.tsx");
 
 export default prototype;

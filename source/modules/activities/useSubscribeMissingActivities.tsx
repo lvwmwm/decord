@@ -1,24 +1,24 @@
-// Module ID: 10671
-// Function ID: 10672
+// Module ID: 10710
+// Function ID: 10711
 // Name: useSubscribeMissingActivities
-// Dependencies: [32, 19, 10672, 4559, 589, 10676, 2]
+// Dependencies: [32, 19, 10711, 4564, 589, 10715, 2]
 // Exports: default
 
-// Module 10671 (useSubscribeMissingActivities)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import handleConnectionOpenOrResumed from "handleConnectionOpenOrResumed";
-import sortActivity from "sortActivity";
+// Module 10710 (useSubscribeMissingActivities)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "handleConnectionOpenOrResumed" /* 10711 */;
+import closure_5 from "sortActivity" /* 4564 */;
 
 const require = arg1;
 let closure_6 = [];
 let closure_7 = [];
 let closure_8 = [];
-const result = require("handleConnectionOpenOrResumed").fileFinishedImporting("modules/activities/useSubscribeMissingActivities.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/useSubscribeMissingActivities.tsx");
 
 export default function useSubscribeMissingActivities(arg0, arg1) {
   let _require = arg0;
-  const dependencyMap = arg1;
+  dependencyMap = arg1;
   let items = [arg0, arg1];
   let tmp = first(stateFromStoresArray.useMemo(() => {
     if (_private.isPrivate()) {
@@ -42,18 +42,18 @@ export default function useSubscribeMissingActivities(arg0, arg1) {
       const items = [found, found.map((id) => id.id)];
       let items1 = items;
     } else {
-      items1 = [outer1_8, outer1_7];
+      items1 = [closure_1_8, closure_1_7];
     }
     return items1;
   }, items), 2);
   first = tmp[0];
-  let items1 = [sortActivity];
+  let items1 = [closure_5];
   const items2 = [first];
   stateFromStoresArray = _require(589).useStateFromStoresArray(items1, () => {
     let items = [];
     const item = first.forEach((author) => {
-      const items = author;
-      if (null != outer1_5.findActivity(author.author.id, (application_id) => {
+      items = author;
+      if (null != closure_1_5.findActivity(author.author.id, (application_id) => {
         const application = author.application;
         let id;
         if (application != null) {
@@ -84,9 +84,9 @@ export default function useSubscribeMissingActivities(arg0, arg1) {
   const items4 = [
     tmp[1],
     stateFromStoresArray.useMemo(() => {
-      let closure_0 = stateFromStoresArray;
+      closure_0 = stateFromStoresArray;
       if (0 === first.length) {
-        let items = outer1_6;
+        let items = closure_1_6;
       } else {
         items = [];
         const item = first.forEach((application) => {
@@ -122,9 +122,9 @@ export default function useSubscribeMissingActivities(arg0, arg1) {
   const items5 = [tmp4[1]];
   const effect = stateFromStoresArray.useEffect(() => {
     for (const item10006 of closure_0) {
-      let tmp2 = outer1_4;
+      let tmp2 = closure_1_4;
       let tmp = item10006;
-      if (!outer1_4.isSubscribed(item10006)) {
+      if (!closure_1_4.isSubscribed(item10006)) {
         let tmp3 = callback;
         let tmp4 = _private;
         let obj = callback(_private[5]);

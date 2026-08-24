@@ -1,28 +1,26 @@
-// Module ID: 14686
-// Function ID: 14687
+// Module ID: 14754
+// Function ID: 14755
 // Name: useDisplayNameStylesNewFonts
-// Dependencies: [19, 14687, 1934, 589, 14688, 2]
+// Dependencies: [19, 14755, 1934, 589, 14756, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 14686 (useDisplayNameStylesNewFonts)
-import noop from "noop";
-import set from "set";
-import items3 from "items3";
+// Module 14754 (useDisplayNameStylesNewFonts)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "set" /* 14755 */;
+import items3 from "items3" /* 1934 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ FLYWHEEL_EFFECTS: c4, FLYWHEEL_FONTS: c5 } = items3);
-let result = require("items3").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesNewItems.tsx");
+let result = require("set").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesNewItems.tsx");
 
 export const useDisplayNameStylesNewFonts = function useDisplayNameStylesNewFonts(visibleFontOrder) {
   const _require = visibleFontOrder;
   let obj = _require(stateFromStores[3]);
-  const items = [set];
+  const items = [closure_3];
   stateFromStores = obj.useStateFromStores(items, () => seenFonts.getSeenFonts());
   obj = {
     dotFontIds: React.useMemo(() => new Set(visibleFontOrder.filter((arg0) => {
-      let hasItem = outer1_5.includes(arg0);
+      let hasItem = closure_1_5.includes(arg0);
       if (hasItem) {
         hasItem = !set.has(arg0);
       }
@@ -38,11 +36,11 @@ export const useDisplayNameStylesNewFonts = function useDisplayNameStylesNewFont
 export const useDisplayNameStylesNewEffects = function useDisplayNameStylesNewEffects(visibleEffectOrder) {
   const _require = visibleEffectOrder;
   let obj = _require(stateFromStores[3]);
-  const items = [set];
+  const items = [closure_3];
   stateFromStores = obj.useStateFromStores(items, () => seenEffects.getSeenEffects());
   obj = {
     dotEffectIds: React.useMemo(() => new Set(visibleEffectOrder.filter((arg0) => {
-      let hasItem = outer1_4.includes(arg0);
+      let hasItem = closure_1_4.includes(arg0);
       if (hasItem) {
         hasItem = !set.has(arg0);
       }
@@ -58,7 +56,7 @@ export const useDisplayNameStylesNewEffects = function useDisplayNameStylesNewEf
 export const useDisplayNameStylesNewFontsBadge = function useDisplayNameStylesNewFontsBadge(visibleFontOrder) {
   const _require = visibleFontOrder;
   let obj = _require(589);
-  const items = [set];
+  const items = [closure_3];
   const items1 = [visibleFontOrder];
   const stateFromStores = obj.useStateFromStores(items, () => newFontsBadgeDismissed.getNewFontsBadgeDismissed());
   obj = {
@@ -72,7 +70,7 @@ export const useDisplayNameStylesNewFontsBadge = function useDisplayNameStylesNe
 export const useDisplayNameStylesNewEffectsBadge = function useDisplayNameStylesNewEffectsBadge(visibleEffectOrder) {
   const _require = visibleEffectOrder;
   let obj = _require(589);
-  const items = [set];
+  const items = [closure_3];
   const items1 = [visibleEffectOrder];
   const stateFromStores = obj.useStateFromStores(items, () => newEffectsBadgeDismissed.getNewEffectsBadgeDismissed());
   obj = {

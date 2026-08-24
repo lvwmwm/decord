@@ -1,13 +1,15 @@
-// Module ID: 4020
-// Function ID: 4021
+// Module ID: 4023
+// Function ID: 4024
 // Name: createFavoritesGuildChannelRecord
 // Dependencies: [676, 2]
 // Exports: createFavoritesGuildChannelRecord
 
-// Module 4020 (createFavoritesGuildChannelRecord)
-import { ChannelTypes } from "ME";
+// Module 4023 (createFavoritesGuildChannelRecord)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/favorites/utils/createFavoritesGuildChannelRecord.tsx");
+const ChannelTypes = ME.ChannelTypes;
+const result = set.fileFinishedImporting("modules/favorites/utils/createFavoritesGuildChannelRecord.tsx");
 
 export const createFavoritesGuildChannelRecord = function createFavoritesGuildChannelRecord(arg0, order, toJS) {
   const constructor = new toJS.constructor(toJS.toJS());

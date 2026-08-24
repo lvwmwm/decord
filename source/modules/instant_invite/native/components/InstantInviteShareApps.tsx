@@ -1,45 +1,40 @@
-// Module ID: 12368
-// Function ID: 12369
-// Dependencies: [32, 19, 17, 12369, 21, 4661, 712, 4751, 6377, 12398, 8035, 12048, 2]
+// Module ID: 12420
+// Function ID: 12421
+// Dependencies: [32, 19, 17, 12421, 21, 4668, 712, 4756, 6408, 12450, 8074, 12100, 2]
 
-// Module 12368
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import SHARE_APPS_KEY from "SHARE_APPS_KEY";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12420
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import SHARE_APPS_KEY from "SHARE_APPS_KEY" /* 12421 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 let c4 = importAllResult;
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ SHARE_ITEMS: error, SHARE_ITEMS_DEFAULT: metroImportAll } = SHARE_APPS_KEY);
+({ SHARE_ITEMS: error, SHARE_ITEMS_DEFAULT: closure_8 } = SHARE_APPS_KEY);
 let obj = { contentContainer: null };
-obj = { padding: require("Themes").space.PX_16, gap: require("Themes").space.PX_12, alignItems: "center" };
+obj = { padding: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_12, alignItems: "center" };
 obj[0] = obj;
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPressed) {
-  let arr;
-  let c2;
   onItemPressed = onItemPressed.onItemPressed;
-  let closure_1;
-  let dependencyMap;
-  let obj = onItemPressed(4751);
+  closure_1 = undefined;
+  dependencyMap = undefined;
+  let obj = onItemPressed(4756);
   closure_1 = obj.useFontScale();
   const tmp = callback2();
   [arr, c2] = callback(importAllResult.useState(closure_8), 2);
   const tmp2 = callback(importAllResult.useState(closure_8), 2);
-  const gesture = onItemPressed(6377).useNativeGesture({ disallowInterruption: true });
+  const gesture = onItemPressed(6408).useNativeGesture({ disallowInterruption: true });
   const effect = importAllResult.useEffect(() => {
-    Promise.all(outer1_7.map((isAvailable) => isAvailable.isAvailable)).then((arr) => {
+    Promise.all(closure_1_7.map((isAvailable) => isAvailable.isAvailable)).then((arr) => {
       const items = [];
       const item = arr.forEach((arg0, arg1) => {
         if (arg0) {
-          items.push(outer1_7[arg1]);
+          items.push(closure_1_7[arg1]);
         }
       });
       callback(items);
@@ -50,11 +45,6 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
     showsHorizontalScrollIndicator: false,
     horizontal: true,
     children: arr.map((type) => {
-      let IconComponent;
-      let fullIcon;
-      let getLabel;
-      let icon;
-      let onItemPressed;
       ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
       obj = { style: obj, children: null };
       obj = { maxWidth: 76 * callback };
@@ -63,7 +53,7 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
         obj[0] = fullIcon;
         obj[1] = getLabel();
         obj[2] = function onPress() {
-          return outer1_0(closure_0);
+          return closure_1_0(closure_0);
         };
         let tmpResult = tmp(onItemPressed(_undefined[9]).ImageButton, obj);
       } else {
@@ -73,26 +63,21 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
           }
           IconComponent = icon;
         }
-        const obj1 = { variant: "secondary", icon: null, label: null, onPress: null, maxFontSizeMultiplier: 2 };
+        obj1 = { variant: "secondary", icon: null, label: null, onPress: null, maxFontSizeMultiplier: 2 };
         obj1[1] = IconComponent;
         obj1[2] = getLabel();
         obj1[3] = function onPress() {
-          return outer1_0(closure_0);
+          return closure_1_0(closure_0);
         };
         tmpResult = tmp(onItemPressed(_undefined[10]).IconButton, obj1);
         tmp4 = _undefined;
       }
       obj[1] = tmpResult;
-      return outer1_9(outer1_5, obj, type.type);
+      return closure_1_9(closure_1_5, obj, type.type);
     })
   };
   items = [tmp.contentContainer, onItemPressed.contentContainerStyle];
   const children = <closure_6 contentContainerStyle={items} showsHorizontalScrollIndicator={false} horizontal>{arr.map((type) => {
-    let IconComponent;
-    let fullIcon;
-    let getLabel;
-    let icon;
-    let onItemPressed;
     ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
     obj = { style: obj, children: null };
     obj = { maxWidth: 76 * callback };
@@ -101,7 +86,7 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
       obj[0] = fullIcon;
       obj[1] = getLabel();
       obj[2] = function onPress() {
-        return outer1_0(closure_0);
+        return closure_1_0(closure_0);
       };
       let tmpResult = tmp(onItemPressed(_undefined[9]).ImageButton, obj);
     } else {
@@ -111,20 +96,20 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
         }
         IconComponent = icon;
       }
-      const obj1 = { variant: "secondary", icon: null, label: null, onPress: null, maxFontSizeMultiplier: 2 };
+      obj1 = { variant: "secondary", icon: null, label: null, onPress: null, maxFontSizeMultiplier: 2 };
       obj1[1] = IconComponent;
       obj1[2] = getLabel();
       obj1[3] = function onPress() {
-        return outer1_0(closure_0);
+        return closure_1_0(closure_0);
       };
       tmpResult = tmp(onItemPressed(_undefined[10]).IconButton, obj1);
       tmp4 = _undefined;
     }
     obj[1] = tmpResult;
-    return outer1_9(outer1_5, obj, type.type);
+    return closure_1_9(closure_1_5, obj, type.type);
   })}</closure_6>;
-  return jsx(onItemPressed(6377).GestureDetector, { gesture, children });
+  return jsx(onItemPressed(6408).GestureDetector, { gesture, children });
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
+const result = require("set").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 
 export default memoResult;

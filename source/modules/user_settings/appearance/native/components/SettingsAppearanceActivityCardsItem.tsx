@@ -1,30 +1,30 @@
-// Module ID: 14638
-// Function ID: 14639
+// Module ID: 14706
+// Function ID: 14707
 // Name: ActivityCardsItem
-// Dependencies: [19, 21, 8029, 712, 14639, 2]
+// Dependencies: [19, 21, 8068, 712, 14707, 2]
 // Exports: default
 
-// Module 14638 (ActivityCardsItem)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 14706 (ActivityCardsItem)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("noop").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceActivityCardsItem.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceActivityCardsItem.tsx");
 
 export default function ActivityCardsItem(animatedStyles) {
   animatedStyles = animatedStyles.animatedStyles;
   let obj = { contentContainerStyle: null, data: null, renderItem: null, keyExtractor: null, showsHorizontalScrollIndicator: false, horizontal: true };
-  obj = { paddingVertical: null, paddingHorizontal: null };
-  obj[0] = importDefault(712).space.PX_16;
-  obj[1] = importDefault(712).space.PX_16;
+  obj = { paddingVertical: ThemesDefault.space.PX_16, paddingHorizontal: ThemesDefault.space.PX_16 };
   obj[0] = obj;
   obj[1] = animatedStyles.cards;
   obj[2] = function renderItem(item) {
     const merged = Object.assign(item.item);
-    return outer1_3(outer1_1(outer1_2[4]), { animatedStyles });
+    return closure_1_3(closure_1_1(closure_1_2[4]), { animatedStyles });
   };
   obj[3] = function keyExtractor(title) {
     return title.title;
   };
-  return jsx(animatedStyles(8029).FlashList, { paddingVertical: null, paddingHorizontal: null });
+  return jsx(animatedStyles(8068).FlashList, { paddingVertical: ThemesDefault.space.PX_16, paddingHorizontal: ThemesDefault.space.PX_16 });
 };

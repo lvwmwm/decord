@@ -1,18 +1,18 @@
-// Module ID: 12117
-// Function ID: 12118
+// Module ID: 12169
+// Function ID: 12170
 // Name: useTrackUserProfileActivityAction
-// Dependencies: [19, 9199, 8934, 7139, 589, 8935, 2]
+// Dependencies: [19, 9236, 8971, 7177, 589, 8972, 2]
 // Exports: default
 
-// Module 12117 (useTrackUserProfileActivityAction)
-import map from "map";
+// Module 12169 (useTrackUserProfileActivityAction)
+import set from "set" /* 2 */;
+import noop from "noop" /* 19 */;
+import closure_4 from "map" /* 9236 */;
 
-require("noop").useCallback;
-let result = require("UserProfileAnalyticsProvider").fileFinishedImporting("modules/user_profile/hooks/useTrackUserProfileActivityAction.tsx");
+noop.useCallback;
+let result = set.fileFinishedImporting("modules/user_profile/hooks/useTrackUserProfileActivityAction.tsx");
 
 export default function useTrackUserProfileActivityAction(activity) {
-  let display;
-  let require;
   ({ user: require, display } = activity);
   activity = activity.activity;
   const entry = activity.entry;
@@ -41,6 +41,6 @@ export default function useTrackUserProfileActivityAction(activity) {
     trackUserProfileAction(obj);
     obj = { action, display, activity, entry, stream, outbox: stateFromStores, voiceChannelId, analyticsLocations };
     const merged = Object.assign(context);
-    const result = outer1_0(activity[5]).trackUserProfileActivityAction(obj);
+    const result = closure_1_0(activity[5]).trackUserProfileActivityAction(obj);
   }, items1);
 };

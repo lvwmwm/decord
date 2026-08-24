@@ -1,13 +1,14 @@
-// Module ID: 9877
-// Function ID: 9878
+// Module ID: 9916
+// Function ID: 9917
 // Name: map
 // Dependencies: [589, 709, 2]
 
-// Module 9877 (map)
-import { Store } from "initialize";
+// Module 9916 (map)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
-let obj = { surveys: null };
-obj[0] = new Map();
+let obj = { surveys: new Map() };
+const Store = initializeDefault.Store;
 class QualtricsStore extends Store {
 }
 QualtricsStore.prototype["getSurvey"] = function getSurvey(arg0) {
@@ -25,7 +26,7 @@ obj = {
     const result = surveys.set(surveyId.surveyId, surveyId.surveyDetails);
   }
 };
-const qualtricsStore = new QualtricsStore(require("dispatcher"), obj);
+const qualtricsStore = new QualtricsStore(dispatcherDefault, obj);
 const map = new Map();
 let result = require("set").fileFinishedImporting("modules/qualtrics/QualtricsStore.tsx");
 

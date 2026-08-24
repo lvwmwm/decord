@@ -1,12 +1,12 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10689
+// Function ID: 10690
 // Name: prototype
 // Dependencies: [2]
 
-// Module 10650 (prototype)
+// Module 10689 (prototype)
+import set from "set" /* 2 */;
+
 const prototype = function RevenueError(errorHandlingBehavior) {
-  let extraSentryInformation;
-  let message;
   ({ message, extraSentryInformation } = errorHandlingBehavior);
   if (extraSentryInformation === undefined) {
     extraSentryInformation = null;
@@ -29,6 +29,6 @@ const prototype = function RevenueError(errorHandlingBehavior) {
 }.prototype;
 class prototype extends Error {
 }
-const result = require("set").fileFinishedImporting("modules/revenue_components/errors/RevenueError.tsx");
+const result = set.fileFinishedImporting("modules/revenue_components/errors/RevenueError.tsx");
 
 export const RevenueError = prototype;

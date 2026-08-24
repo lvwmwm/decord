@@ -1,31 +1,37 @@
-// Module ID: 15279
-// Function ID: 15280
-// Dependencies: [19, 9588, 21, 15280, 4225, 10685, 4104, 14451, 15281, 15625, 14534, 2]
+// Module ID: 15343
+// Function ID: 15344
+// Dependencies: [19, 9625, 21, 15344, 4229, 10724, 4107, 14519, 15345, 15691, 14602, 2]
 
-// Module 15279
-import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS";
-import jsxProd from "jsxProd";
-import importAllResult from "noop";
+// Module 15343
+import ManaContext from "ManaContext" /* 4107 */;
+import getGuildThemeNameDefault from "getGuildThemeName" /* 4229 */;
+import getIsEligibleForQuests from "getIsEligibleForQuests" /* 10724 */;
+import QuestDockMode from "QuestDockMode" /* 14519 */;
+import QuestDockWithGestureAnimationDefault from "QuestDockWithGestureAnimation" /* 14602 */;
+import trackTabPressed from "trackTabPressed" /* 15344 */;
+import LeftPanelContentDefault from "LeftPanelContent" /* 15345 */;
+import _modDef15691 from "module_15691" /* 15691 */;
+import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS" /* 9625 */;
+import jsxProd from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
-const memoResult = require("noop").memo(function GuildsOnly() {
-  let obj = require(15280) /* trackTabPressed */;
+const memoResult = importAllResult.memo(function GuildsOnly() {
+  let obj = trackTabPressed;
   const trackTabPerformance = obj.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
   const tmp3 = importDefault;
-  const tmp4 = importDefault(4225)();
-  let isEligibleForQuests = require(10685) /* getIsEligibleForQuests */.getIsEligibleForQuests();
+  const tmp4 = getGuildThemeNameDefault();
+  let isEligibleForQuests = getIsEligibleForQuests.getIsEligibleForQuests();
   obj = { gradient: tmp4, children: null };
-  const items = [callback(importDefault(15281), {}), callback(importDefault(15625), {}), ];
+  const items = [callback(LeftPanelContentDefault, {}), callback(_modDef15691, {}), ];
   if (isEligibleForQuests) {
-    isEligibleForQuests = tmp6(tmp3(14534), {});
+    isEligibleForQuests = tmp6(QuestDockWithGestureAnimationDefault, {});
   }
   items[2] = isEligibleForQuests;
-  obj[1] = closure_5(require(14451) /* QuestDockMode */.QuestDockExternalCoordinationContextProvider, { children: items });
-  return callback(require(4104) /* ManaContext */.ThemeContextProvider, obj);
+  obj[1] = closure_5(QuestDockMode.QuestDockExternalCoordinationContextProvider, { children: items });
+  return callback(ManaContext.ThemeContextProvider, obj);
 }, () => true);
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/Guilds.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/Guilds.tsx");
 
 export default memoResult;

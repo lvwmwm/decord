@@ -1,19 +1,21 @@
-// Module ID: 7208
-// Function ID: 7209
+// Module ID: 7246
+// Function ID: 7247
 // Name: getOrbPriceFromPrices
-// Dependencies: [676, 678, 7209, 1236, 7210, 4061, 2]
+// Dependencies: [676, 678, 7247, 1236, 7248, 4064, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 7208 (getOrbPriceFromPrices)
-import ME from "ME";
-import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
-import { ConstraintReasonCode } from "ConstraintReasonCode";
+// Module 7246 (getOrbPriceFromPrices)
+import set from "set" /* 2 */;
+import items2 from "items" /* 678 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ConstraintReasonCode2 from "ConstraintReasonCode" /* 7247 */;
+import _signOrder from "_signOrder" /* 7248 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
-let obj1;
 ({ CurrencyCodes: obj1, MarketingURLs: c3, PriceSetAssignmentPurchaseTypes: c4 } = ME);
-const result = require("ConstraintReasonCode").fileFinishedImporting("modules/virtual_currency/checkout/OrbCheckoutUtils.tsx");
+const EXTERNAL_PRODUCT_SKU_IDS = items2.EXTERNAL_PRODUCT_SKU_IDS;
+const ConstraintReasonCode = ConstraintReasonCode2.ConstraintReasonCode;
+const result = set.fileFinishedImporting("modules/virtual_currency/checkout/OrbCheckoutUtils.tsx");
 
 export const getOrbPriceFromPrices = function getOrbPriceFromPrices(prices, memo1) {
   if (memo1) {
@@ -42,13 +44,13 @@ export const getOrbPriceFromPrices = function getOrbPriceFromPrices(prices, memo
   tmp2 = prices[closure_4.DEFAULT];
 };
 export const getOrbCheckoutDisclaimerMessage = function getOrbCheckoutDisclaimerMessage(skuId) {
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   const obj = { buyButtonLabel: null, paidServiceTermURL: null, virtualGoodsURL: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["zLch/S"]);
+  const intl2 = getSystemLocale.intl;
+  obj[0] = intl2.string(getSystemLocale.t["zLch/S"]);
   ({ PAID_TERMS: obj[1], PAID_TERMS_VIRTUAL_GOODS: obj[2] } = closure_3);
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  let stringResult = intl3.string(require(1236) /* getSystemLocale */.t["Sxed/G"]);
+  const intl3 = getSystemLocale.intl;
+  let stringResult = intl3.string(getSystemLocale.t["Sxed/G"]);
   if (skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     const intl5 = tmp(1236).intl;
     stringResult = intl5.string(tmp(1236).t.APcKRo);
@@ -56,7 +58,7 @@ export const getOrbCheckoutDisclaimerMessage = function getOrbCheckoutDisclaimer
     const intl4 = tmp(1236).intl;
     stringResult = intl4.string(tmp(1236).t.FhJ74j);
   }
-  const items = [intl.format(require(1236) /* getSystemLocale */.t["5qdUrO"], obj), " ", stringResult];
+  const items = [intl.format(getSystemLocale.t["5qdUrO"], obj), " ", stringResult];
   return items;
 };
 export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMessage(code) {
@@ -64,18 +66,18 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
     return null;
   } else {
     let keFvXM = dependencyMap;
-    let OrderSigningFailedWithConstraintsError = require(7210) /* _signOrder */.OrderSigningFailedWithConstraintsError;
+    let OrderSigningFailedWithConstraintsError = _signOrder.OrderSigningFailedWithConstraintsError;
     if (!(code instanceof OrderSigningFailedWithConstraintsError)) {
-      if (code instanceof tmp(7210).OrderProcessingPendingError) {
+      if (code instanceof tmp(7248).OrderProcessingPendingError) {
         const intl5 = tmp(1236).intl;
         let stringResult = intl5.string(tmp(1236).t["2BmwgV"]);
-      } else if (code.code === tmp(4061).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
+      } else if (code.code === tmp(4064).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
         const intl4 = tmp(1236).intl;
         stringResult = intl4.string(tmp(1236).t.keFvXM);
-      } else if (code.code === tmp(4061).ErrorCodes.ALREADY_PURCHASED) {
+      } else if (code.code === tmp(4064).ErrorCodes.ALREADY_PURCHASED) {
         const intl3 = tmp(1236).intl;
         stringResult = intl3.string(tmp(1236).t.m371Mx);
-      } else if (code.code === tmp(4061).ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
+      } else if (code.code === tmp(4064).ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
         const intl2 = tmp(1236).intl;
         stringResult = intl2.string(tmp(1236).t.ZHgEG7);
       } else {

@@ -1,50 +1,42 @@
-// Module ID: 11970
-// Function ID: 11971
+// Module ID: 12019
+// Function ID: 12020
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8936, 7395, 676, 1924, 505, 21, 4661, 712, 5441, 9592, 589, 8932, 7139, 10364, 11971, 709, 5260, 4656, 11972, 2007, 500, 698, 10310, 4734, 1236, 4745, 7696, 9266, 4052, 9278, 9590, 9585, 7697, 2]
+// Dependencies: [5, 32, 19, 17, 8973, 7433, 676, 1924, 505, 21, 4668, 712, 5446, 9629, 589, 8969, 7177, 10404, 12020, 709, 5265, 4662, 12021, 2008, 500, 698, 10349, 4739, 1236, 4750, 7734, 9303, 4055, 9315, 9627, 9622, 7735, 2]
 // Exports: default
 
-// Module 11970 (CollectiblesShopGiftPurchaseSection)
-import context from "context";
-import isPremiumGiftingSupported from "isPremiumGiftingSupported";
-import dispatcher from "dispatcher";
-import { View } from "useSyncGiftOptionsToOrder";
-import initialize from "initialize";
-import { useNativeCheckoutStore } from "context";
-import ME from "ME";
-import GuildFeatures from "GuildFeatures";
-import { PaymentGateways } from "sum";
-import jsxProd from "module_4656";
-import createCacheKey from "createCacheKey";
+// Module 12019 (CollectiblesShopGiftPurchaseSection)
+import ThemesDefault from "Themes" /* 712 */;
+import NativeCheckoutStoreProviderDefault from "NativeCheckoutStoreProvider" /* 7735 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 9315 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_7 from "initialize" /* 8973 */;
+import { useNativeCheckoutStore } from "context" /* 7433 */;
+import ME from "ME" /* 676 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import { PaymentGateways } from "sum" /* 505 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-let closure_12;
-let closure_14;
-let closure_15;
-let unpackModuleId;
 let require = arg1;
 function CollectiblesShopGiftPurchaseSection(disabled) {
-  let c4;
-  let nextTier;
   const product = disabled.product;
-  const require = product;
+  require = product;
   const giftOptions = disabled.giftOptions;
   const baseAnalyticsFields = disabled.baseAnalyticsFields;
   const giftingOrigin = disabled.giftingOrigin;
   let callback;
   let first;
-  let closure_6;
+  closure_6 = undefined;
   let awaitSync;
-  let useNativeCheckoutStore;
+  useNativeCheckoutStore = undefined;
   const tmp3 = callback3(giftOptions(baseAnalyticsFields[12])().insets.bottom);
   const GiftingBadgeExperiment = require(baseAnalyticsFields[13]).GiftingBadgeExperiment;
   let obj = require(baseAnalyticsFields[14]);
   const items = [awaitSync];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    let getNextTier;
-    let getRemainingToNextTier;
-    let getSingleRequirementProgress;
     const obj = { nextTier: getNextTier(product(baseAnalyticsFields[15]).BadgeId.GIFTING), giftsToNextTier: getRemainingToNextTier(product(baseAnalyticsFields[15]).BadgeId.GIFTING), badgeProgress: null };
     ({ getNextTier, getRemainingToNextTier, getSingleRequirementProgress } = awaitSync);
     const singleRequirementProgress = getSingleRequirementProgress(product(baseAnalyticsFields[15]).BadgeId.GIFTING);
@@ -56,7 +48,7 @@ function CollectiblesShopGiftPurchaseSection(disabled) {
     return obj;
   });
   ({ nextTier, badgeProgress: c4 } = stateFromStoresObject);
-  let obj1 = first;
+  obj1 = first;
   const tmp7 = callback(first.useState(constants.NOT_STARTED), 2);
   first = tmp7[0];
   closure_6 = tmp7[1];
@@ -72,8 +64,8 @@ function CollectiblesShopGiftPurchaseSection(disabled) {
   obj[4] = function onPurchaseComplete() {
     let tmp2 = null == giftOptions.recipient_id;
     if (!tmp2) {
-      tmp2 = giftingOrigin !== outer1_11.USER_PROFILE_WISHLIST && tmp3 !== outer1_11.DM_CHANNEL_WISHLIST;
-      const tmp4 = giftingOrigin !== outer1_11.USER_PROFILE_WISHLIST && tmp3 !== outer1_11.DM_CHANNEL_WISHLIST;
+      tmp2 = giftingOrigin !== closure_1_11.USER_PROFILE_WISHLIST && tmp3 !== closure_1_11.DM_CHANNEL_WISHLIST;
+      const tmp4 = giftingOrigin !== closure_1_11.USER_PROFILE_WISHLIST && tmp3 !== closure_1_11.DM_CHANNEL_WISHLIST;
     }
     if (!tmp2) {
       let obj = giftOptions(baseAnalyticsFields[19]);
@@ -82,20 +74,20 @@ function CollectiblesShopGiftPurchaseSection(disabled) {
       obj[2] = tmp.recipient_id;
       obj.dispatch(obj);
     }
-    callback(outer1_17.SUCCEEDED);
+    callback(closure_1_17.SUCCEEDED);
     let arr = giftOptions(baseAnalyticsFields[20]);
     arr = arr.pop();
     obj = {
       importer() {
-        return outer1_0(outer1_2[23])(outer1_2[22], outer1_2.paths).then((arg0) => {
-          let closure_0 = arg0.default;
+        return closure_1_0(closure_1_2[23])(closure_1_2[22], closure_1_2.paths).then((arg0) => {
+          closure_0 = arg0.default;
           return (arg0) => {
-            let STANDARD_BOX = outer1_1.gift_style;
+            let STANDARD_BOX = closure_1_1.gift_style;
             if (STANDARD_BOX == null) {
-              STANDARD_BOX = outer2_12.STANDARD_BOX;
+              STANDARD_BOX = closure_2_12.STANDARD_BOX;
             }
             const merged = Object.assign(arg0);
-            return outer2_14(closure_0, { giftStyle: STANDARD_BOX, giftBadgeProgress: outer1_4 });
+            return closure_2_14(closure_0, { giftStyle: STANDARD_BOX, giftBadgeProgress: closure_1_4 });
           };
         });
       }
@@ -104,13 +96,13 @@ function CollectiblesShopGiftPurchaseSection(disabled) {
     const obj3 = giftOptions(baseAnalyticsFields[21]);
     tmp = giftOptions;
     if (obj5.isIOS()) {
-      giftOptions(baseAnalyticsFields[25]).track(outer1_9.PAYMENT_FLOW_SUCCEEDED, baseAnalyticsFields);
+      giftOptions(baseAnalyticsFields[25]).track(closure_1_9.PAYMENT_FLOW_SUCCEEDED, baseAnalyticsFields);
       const obj6 = giftOptions(baseAnalyticsFields[25]);
     }
   };
   obj[5] = function onPurchaseError() {
-    callback(outer1_17.FAILED);
-    giftOptions(baseAnalyticsFields[25]).track(outer1_9.PAYMENT_FLOW_FAILED, baseAnalyticsFields);
+    callback(closure_1_17.FAILED);
+    giftOptions(baseAnalyticsFields[25]).track(closure_1_9.PAYMENT_FLOW_FAILED, baseAnalyticsFields);
   };
   obj[6] = function onPurchasePending() {
 
@@ -118,9 +110,9 @@ function CollectiblesShopGiftPurchaseSection(disabled) {
   obj[7] = { isGift: true, options: giftOptions };
   useNativeCheckoutStore = giftOptions(baseAnalyticsFields[18])(obj);
   const effect = obj1.useEffect(() => () => {
-    if (dispatcher !== outer1_17.SUCCEEDED) {
-      outer1_1(outer1_2[25]).track(outer1_9.PAYMENT_FLOW_CANCELED, closure_2);
-      const obj = outer1_1(outer1_2[25]);
+    if (closure_5 !== closure_1_17.SUCCEEDED) {
+      closure_1_1(closure_1_2[25]).track(closure_1_9.PAYMENT_FLOW_CANCELED, closure_2);
+      const obj = closure_1_1(closure_1_2[25]);
     }
   }, []);
   obj = { style: tmp3.container, children: null };
@@ -154,20 +146,20 @@ function CollectiblesShopGiftPurchaseSection(disabled) {
   const intl3 = tmp4(tmp2[28]).intl;
   obj4[3] = intl3.string(require(baseAnalyticsFields[28]).t.ouo4FK);
   obj4[4] = giftingOrigin(function*() {
-    let closure_0 = tmp3;
-    outer1_6(outer1_17.PURCHASING);
-    yield outer1_7();
+    closure_0 = tmp3;
+    closure_1_6(closure_1_17.PURCHASING);
+    yield closure_1_7();
     if (!arg1) {
-      outer1_6(outer1_17.FAILED);
-      const obj1 = v0(table[25]);
-      obj1.track(outer1_9.PAYMENT_FLOW_FAILED, table);
+      closure_1_6(closure_1_17.FAILED);
+      obj1 = v0(table[25]);
+      obj1.track(closure_1_9.PAYMENT_FLOW_FAILED, table);
     }
     table = 1;
-    yield outer1_8();
+    yield closure_1_8();
     if (2 === tmp7) {
       table = 0;
-      callback(outer1_17.FAILED);
-      let c3 = 3;
+      callback(closure_1_17.FAILED);
+      c3 = 3;
     } else if (arg0 === 1) {
       c3 = 3;
       throw arg1;
@@ -186,26 +178,20 @@ function CollectiblesShopGiftPurchaseSection(disabled) {
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 let closure_16 = createCacheKey.createStyles((arg0) => {
   let obj = { container: null, disclaimer: null };
-  obj = { paddingBottom: importDefault(712).space.PX_12 + arg0, paddingTop: importDefault(712).space.PX_12, paddingHorizontal: importDefault(712).space.PX_16, gap: importDefault(712).space.PX_8, backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW };
-  const merged = Object.assign(importDefault(712).shadows.SHADOW_TOP_HIGH);
+  obj = { paddingBottom: ThemesDefault.space.PX_12 + arg0, paddingTop: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_8, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
+  const merged = Object.assign(ThemesDefault.shadows.SHADOW_TOP_HIGH);
   obj[0] = obj;
   obj[1] = { includeFontPadding: true };
   return obj;
 });
 let closure_17 = { NOT_STARTED: "not_started", PURCHASING: "purchasing", SUCCEEDED: "succeeded", FAILED: "failed" };
-let result = require("noop").fileFinishedImporting("modules/collectibles/native/CollectiblesShopGiftPurchaseSection.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesShopGiftPurchaseSection.tsx");
 
 export default function WrappedCollectiblesShopGiftPurchaseSection(arg0) {
-  let baseAnalyticsFields;
-  let giftOptions;
-  let giftingOrigin;
-  let isPurchaseDisabled;
-  let onGiftModalDismiss;
-  let product;
   ({ product, onGiftModalDismiss } = arg0);
   ({ isPurchaseDisabled, giftOptions, baseAnalyticsFields, giftingOrigin } = arg0);
-  const GiftACOMOrderExperiment = onGiftModalDismiss(7696).GiftACOMOrderExperiment;
-  let obj = onGiftModalDismiss(9266);
+  const GiftACOMOrderExperiment = onGiftModalDismiss(7734).GiftACOMOrderExperiment;
+  let obj = onGiftModalDismiss(9303);
   const androidShopOrdersEnabled = obj.useAndroidShopOrdersEnabled({ location: "WrappedCollectiblesShopGiftPurchaseSection" });
   if (obj2.isIOS()) {
     let GOOGLE = tmp4.APPLE_ADVANCED_COMMERCE;
@@ -218,8 +204,8 @@ export default function WrappedCollectiblesShopGiftPurchaseSection(arg0) {
   if (!tmp6) {
     let result = GOOGLE === tmp5.GOOGLE;
     if (result) {
-      result = tmp(4052).isGooglePlayBillingSupported();
-      const tmpResult = tmp(4052);
+      result = tmp(4055).isGooglePlayBillingSupported();
+      const tmpResult = tmp(4055);
     }
     if (result) {
       result = androidShopOrdersEnabled;
@@ -229,16 +215,16 @@ export default function WrappedCollectiblesShopGiftPurchaseSection(arg0) {
   const items = [onGiftModalDismiss];
   obj2 = onGiftModalDismiss(500);
   const callback = React.useCallback(() => {
-    onGiftModalDismiss(outer1_2[34]).closeShopGiftModal();
+    onGiftModalDismiss(closure_1_2[34]).closeShopGiftModal();
     if (onGiftModalDismiss != null) {
       onGiftModalDismiss();
     }
   }, items);
   obj = { skuIDs: [], activeSubscription: null, children: null };
-  obj = { paymentGateway: GOOGLE, orderRequired: tmp6, skuIds: items1, isGift: true, activeSubscription: null, initialExternalGatewayFacet: importDefault(9278)(product), onOrderRetryCancellation: callback, children: null };
+  obj = { paymentGateway: GOOGLE, orderRequired: tmp6, skuIds: items1, isGift: true, activeSubscription: null, initialExternalGatewayFacet: useCollectiblesExternalGatewayFacetDefault(product), onOrderRetryCancellation: callback, children: null };
   items1 = [product.skuId];
-  const tmp8 = importDefault(9278)(product);
+  const tmp8 = useCollectiblesExternalGatewayFacetDefault(product);
   obj[7] = callback2(CollectiblesShopGiftPurchaseSection, { product, isPurchaseDisabled, giftOptions, baseAnalyticsFields, giftingOrigin });
-  obj[2] = callback2(importDefault(7697), obj, product.skuId);
-  return callback2(onGiftModalDismiss(9585).NativePaymentContextProvider, obj);
+  obj[2] = callback2(NativeCheckoutStoreProviderDefault, obj, product.skuId);
+  return callback2(onGiftModalDismiss(9622).NativePaymentContextProvider, obj);
 };

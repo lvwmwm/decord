@@ -1,33 +1,30 @@
-// Module ID: 15137
-// Function ID: 15138
+// Module ID: 15201
+// Function ID: 15202
 // Name: CaptchaTestScreen
-// Dependencies: [5, 32, 19, 17, 21, 4661, 712, 15138, 15139, 4094, 4734, 1297, 6803, 4745, 5260, 6314, 6312, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4668, 712, 15202, 15203, 4097, 4739, 1297, 6840, 4750, 5265, 6345, 6343, 1236, 2]
 // Exports: default
 
-// Module 15137 (CaptchaTestScreen)
-import closure_3 from "createCacheKey";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "getSystemLocale";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import { HCAPTCHA_DIFFICULTY_OPTIONS as prop } from "found";
-import { CAPTCHA_DECIDER_TYPE_OPTIONS as prop1 } from "found";
-import createCacheKey from "createCacheKey";
-import set from "noop";
+// Module 15201 (CaptchaTestScreen)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import { HCAPTCHA_DIFFICULTY_OPTIONS as prop, CAPTCHA_DECIDER_TYPE_OPTIONS as prop1 } from "found" /* 15202 */;
+import set from "set" /* 2 */;
 
-let error;
-let metroImportAll;
-let require = arg1;
+const require = arg1;
 function CaptchaTestScreen(arg0) {
   if (arg0 == null) {
     HermesBuiltin.throwTypeError();
   } else {
     let first;
-    let closure_1;
+    closure_1 = undefined;
     let first1;
-    let closure_3;
-    function _sendCaptchaRequest(noop, arg1) {
+    closure_3 = undefined;
+    function _sendCaptchaRequest(closure_5, arg1) {
       const self = this;
       const tmp = callback2(function*() {
         if (c6 === 2) {
@@ -41,7 +38,7 @@ function CaptchaTestScreen(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -56,16 +53,16 @@ function CaptchaTestScreen(arg0) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_2 = tmp3;
-                let closure_1 = tmp7;
-                if (null != outer1_0) {
-                  let c4 = 1;
-                  let obj4 = outer1_0(outer1_2[8]);
-                  let message = outer1_2;
-                  if (outer1_2 == null) {
+                closure_2 = tmp3;
+                closure_1 = tmp7;
+                if (null != closure_1_0) {
+                  c4 = 1;
+                  let obj4 = closure_1_0(closure_1_2[8]);
+                  let message = closure_1_2;
+                  if (closure_1_2 == null) {
                     message = undefined;
                   }
-                  const obj1 = { difficulty: null };
+                  obj1 = { difficulty: null };
                   obj1[0] = message;
                   c5 = 2;
                   c6 = 1;
@@ -78,7 +75,7 @@ function CaptchaTestScreen(arg0) {
               if (1 === tmp7) {
                 c4 = 0;
                 message = closure_3;
-                obj2 = outer1_1(outer1_2[9]);
+                obj2 = closure_1_1(closure_1_2[9]);
                 const obj3 = { key: "captcha-test-modal-error", content: null };
                 obj3[1] = message.message;
                 obj2.open(obj3);
@@ -86,7 +83,7 @@ function CaptchaTestScreen(arg0) {
                 c6 = 3;
                 throw arg1;
               } else if (arg0 !== 2) {
-                obj = outer1_1(outer1_2[9]);
+                obj = closure_1_1(closure_1_2[9]);
                 obj.open({ key: "captcha-test-modal-success", content: "Captcha completed!" });
                 c4 = 0;
               }
@@ -108,7 +105,7 @@ function CaptchaTestScreen(arg0) {
           }
         }
       });
-      const _sendCaptchaRequest = tmp;
+      closure_4 = tmp;
       const apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -117,7 +114,7 @@ function CaptchaTestScreen(arg0) {
       }
       return applyArgumentsResult;
     }
-    const tmp5 = createCacheKey();
+    const tmp5 = callback3();
     const tmp8 = _sendCaptchaRequest(React.useState(null), 2);
     first = tmp8[0];
     closure_1 = tmp8[1];
@@ -128,7 +125,7 @@ function CaptchaTestScreen(arg0) {
     obj[0] = tmp5.container;
     obj = { style: null, children: null };
     obj[0] = tmp5.content;
-    let obj1 = { children: null };
+    obj1 = { children: null };
     const items = [callback(first(first1[10]).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: "Decider" }), ];
     let obj2 = { withSpacing: true, value: null, options: null, onChange: null };
     obj2[1] = first;
@@ -188,18 +185,18 @@ function CaptchaTestScreen(arg0) {
     return callback2(View, obj);
   }
 }
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: null, separator: null, footerContainer: null, footerButton: null, content: null };
-createCacheKey = { flex: 1, justifyContent: "space-between", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { flex: 1, justifyContent: "space-between", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginVertical: require("Themes").space.PX_24 };
-let obj1 = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginVertical: require("Themes").space.PX_24 };
-createCacheKey[2] = { marginBottom: require("Themes").space.PX_16 };
-let obj2 = { marginBottom: require("Themes").space.PX_16 };
-createCacheKey[3] = { paddingHorizontal: require("Themes").space.PX_16 };
-let obj3 = { paddingHorizontal: require("Themes").space.PX_16 };
-createCacheKey[4] = { margin: require("Themes").space.PX_16, gap: require("Themes").space.PX_24 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+createCacheKey[1] = { height: 1, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, marginVertical: ThemesDefault.space.PX_24 };
+let obj1 = { height: 1, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE, marginVertical: ThemesDefault.space.PX_24 };
+createCacheKey[2] = { marginBottom: ThemesDefault.space.PX_16 };
+let obj2 = { marginBottom: ThemesDefault.space.PX_16 };
+createCacheKey[3] = { paddingHorizontal: ThemesDefault.space.PX_16 };
+let obj3 = { paddingHorizontal: ThemesDefault.space.PX_16 };
+createCacheKey[4] = { margin: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_24 };
+let closure_9 = createCacheKey.createStyles(createCacheKey);
 let closure_10 = prop.map((label) => ({ name: label.label, value: label.value }));
 let items = [require("_testCaptcha").CaptchaDeciderType.HCAPTCHA_RQDATA, require("_testCaptcha").CaptchaDeciderType.SMITE_RQDATA];
 let set = new Set(items);
@@ -207,29 +204,32 @@ const mapped = prop1.map((label) => ({ name: label.label, value: label.value }))
 let closure_12 = mapped.filter((value) => set.has(value.value));
 let closure_13 = { TEST_CAPTCHA: "TEST_CAPTCHA" };
 let obj5 = { headerStyle: null };
-let obj4 = { margin: require("Themes").space.PX_16, gap: require("Themes").space.PX_24 };
-obj5[0] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+let obj4 = { margin: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_24 };
+obj5[0] = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_15 = createCacheKey.createStyles(obj5);
 const result = set.fileFinishedImporting("modules/captcha/tooling/native/CaptchaTestModal.tsx");
 
 export default function CaptchaTestModal() {
-  const tmp = callback3();
-  const require = tmp;
+  const tmp = callback4();
+  const _require = tmp;
   const items = [tmp];
   const memo = React.useMemo(() => {
     let obj = {};
-    obj = { headerStyle: tmp.headerStyle, headerTitle: "Captcha Test Tool", headerLeft: null, render: null };
-    obj[2] = tmp(outer1_2[15]).getHeaderCloseButton(function closeModal() {
-      return callback(table[14]).pop();
-    });
-    obj[3] = function render() {
-      return callback2(closure_14, {});
+    obj = {
+      headerStyle: lib.headerStyle,
+      headerTitle: "Captcha Test Tool",
+      headerLeft: lib(closure_1_2[15]).getHeaderCloseButton(function closeModal() {
+        return callback(table[14]).pop();
+      }),
+      render() {
+        return callback2(closure_14, {});
+      }
     };
-    obj[outer1_13.TEST_CAPTCHA] = obj;
+    obj[closure_1_13.TEST_CAPTCHA] = obj;
     return obj;
   }, items);
   let obj = { screens: memo, initialRouteName: constants.TEST_CAPTCHA, headerBackTitle: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-  return callback(require(6312) /* NavigationStack */.Navigator, obj);
+  const intl = _require(1236).intl;
+  obj[2] = intl.string(_require(1236).t["13/7kX"]);
+  return callback(_require(6343).Navigator, obj);
 };

@@ -1,28 +1,33 @@
-// Module ID: 16727
-// Function ID: 16728
+// Module ID: 16820
+// Function ID: 16821
 // Name: FormStates
-// Dependencies: [1395, 5278, 1980, 4295, 1910, 5043, 676, 589, 5279, 709, 2]
+// Dependencies: [1395, 5283, 1981, 4299, 1910, 5048, 676, 589, 5284, 709, 2]
 
-// Module 16727 (FormStates)
-import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord";
-import setIndex from "setIndex";
-import comparator from "comparator";
-import handleInviteData from "handleInviteData";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
-import ME from "ME";
-import { Store } from "initialize";
+// Module 16820 (FormStates)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import createChannelRecord from "createChannelRecord" /* 1395 */;
+import getFlattenedChannelListDefault from "getFlattenedChannelList" /* 5284 */;
+import closure_4 from "setIndex" /* 5283 */;
+import closure_5 from "comparator" /* 1981 */;
+import closure_6 from "handleInviteData" /* 4299 */;
+import closure_7 from "createGuildRecordFromRust" /* 1910 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 5048 */;
+import ME from "ME" /* 676 */;
 
+let closure_3 = createChannelRecord.isGuildSelectableChannelType;
 const FormStates = ME.FormStates;
 const ChannelTypes = ME.ChannelTypes;
 let CLOSED = FormStates.CLOSED;
+const Store = initializeDefault.Store;
 class NotificationSettingsModalStore extends Store {
 }
 const prototype = NotificationSettingsModalStore.prototype;
 prototype["initialize"] = function initialize() {
   const self = this;
-  this.waitFor(setIndex, comparator, handleInviteData, createGuildRecordFromRust, updateUserGuildSettingsInternal);
-  const items = [updateUserGuildSettingsInternal, comparator, createGuildRecordFromRust];
+  this.waitFor(closure_4, closure_5, closure_6, closure_7, closure_8);
+  const items = [closure_8, closure_5, closure_7];
   this.syncWith(items, () => self.isOpen());
 };
 prototype["isOpen"] = function isOpen() {
@@ -42,7 +47,7 @@ prototype["getProps"] = function getProps() {
     muteConfig: store.getMuteConfig(closure_2),
     messageNotifications: store.getMessageNotifications(closure_2),
     channelOverrides: store.getChannelOverrides(closure_2),
-    channels: importDefault(5279)(categories._categories, categories, (channel) => {
+    channels: getFlattenedChannelListDefault(categories._categories, categories, (channel) => {
       const type = channel.channel.type;
       let tmp = callback(type);
       if (!tmp) {
@@ -53,16 +58,16 @@ prototype["getProps"] = function getProps() {
   };
 };
 NotificationSettingsModalStore.displayName = "NotificationSettingsModalStore";
-const notificationSettingsModalStore = new NotificationSettingsModalStore(require("dispatcher"), {
+const notificationSettingsModalStore = new NotificationSettingsModalStore(dispatcherDefault, {
   NOTIFICATION_SETTINGS_MODAL_OPEN: function handleFormOpen(guildId) {
     const OPEN = FormStates.OPEN;
     guildId = guildId.guildId;
   },
   NOTIFICATION_SETTINGS_MODAL_CLOSE: function handleFormClose() {
-    const CLOSED = FormStates.CLOSED;
-    let c2 = null;
+    CLOSED = FormStates.CLOSED;
+    c2 = null;
   }
 });
-const result = require("comparator").fileFinishedImporting("stores/NotificationSettingsModalStore.tsx");
+const result = set.fileFinishedImporting("stores/NotificationSettingsModalStore.tsx");
 
 export default notificationSettingsModalStore;

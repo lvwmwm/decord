@@ -1,32 +1,32 @@
-// Module ID: 13530
-// Function ID: 13531
+// Module ID: 13588
+// Function ID: 13589
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 4115, 4661, 9960, 712, 1367, 9959, 4744, 4748, 4747, 4734, 2]
+// Dependencies: [19, 17, 21, 4119, 4668, 9999, 712, 1367, 9998, 4749, 4753, 4752, 4739, 2]
 // Exports: ContextMenuItem
 
-// Module 13530 (ContextMenuItem)
-import noop from "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4115";
+// Module 13588 (ContextMenuItem)
+import ThemesDefault from "Themes" /* 712 */;
+import CONTEXT_MENU_LONG_PRESS_DURATION_MS from "CONTEXT_MENU_LONG_PRESS_DURATION_MS" /* 9999 */;
+import closure_3 from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "module_4119" /* 4119 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
-let closure_6 = require("module_4115").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_6 = importDefaultResult.createAnimatedComponent(require("get ActivityIndicator").Pressable);
 let closure_7 = createCacheKey.createStyles((arg0) => {
   let obj = { container: null, containerRefresh: null, roundedTop: null, roundedBottom: null, border: null, pressed: null, icon: null, label: null, trailingIndicator: null };
-  obj = { padding: require(9960) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_PADDING, minHeight: require(9960) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_BASE_HEIGHT, flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 8 };
+  obj = { padding: CONTEXT_MENU_LONG_PRESS_DURATION_MS.CONTEXT_MENU_ITEM_PADDING, minHeight: CONTEXT_MENU_LONG_PRESS_DURATION_MS.CONTEXT_MENU_ITEM_BASE_HEIGHT, flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 8 };
   obj[0] = obj;
   obj[1] = { justifyContent: "flex-start" };
-  obj = { borderTopLeftRadius: importDefault(712).radii.lg, borderTopRightRadius: importDefault(712).radii.lg };
+  obj = { borderTopLeftRadius: ThemesDefault.radii.lg, borderTopRightRadius: ThemesDefault.radii.lg };
   obj[2] = obj;
-  obj[3] = { borderBottomLeftRadius: importDefault(712).radii.lg, borderBottomRightRadius: importDefault(712).radii.lg };
-  const obj1 = { borderBottomLeftRadius: importDefault(712).radii.lg, borderBottomRightRadius: importDefault(712).radii.lg };
-  obj[4] = { borderBottomWidth: 1, borderBottomColor: importDefault(712).colors.BORDER_SUBTLE };
-  const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(712).colors.BORDER_SUBTLE };
-  obj[5] = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_SUBTLE };
+  obj[3] = { borderBottomLeftRadius: ThemesDefault.radii.lg, borderBottomRightRadius: ThemesDefault.radii.lg };
+  obj1 = { borderBottomLeftRadius: ThemesDefault.radii.lg, borderBottomRightRadius: ThemesDefault.radii.lg };
+  obj[4] = { borderBottomWidth: 1, borderBottomColor: ThemesDefault.colors.BORDER_SUBTLE };
+  const obj2 = { borderBottomWidth: 1, borderBottomColor: ThemesDefault.colors.BORDER_SUBTLE };
+  obj[5] = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
   if ("destructive" === arg0) {
     let TEXT_STRONG = tmp2(712).colors.TEXT_FEEDBACK_CRITICAL;
   } else {
@@ -40,20 +40,9 @@ let closure_7 = createCacheKey.createStyles((arg0) => {
 let closure_8 = { code: "function ContextMenuItemNativeTsx1(){const{pan}=this.__closure;return pan.get();}" };
 let closure_9 = { code: "function ContextMenuItemNativeTsx2(_current,previous){const{measure,ref,index,INDEX_BOUNDS_OFFSET,itemMeasurements,INDEX_BOUNDS_PAGE_X_OFFSET,INDEX_BOUNDS_PAGE_Y_OFFSET,INDEX_BOUNDS_WIDTH_OFFSET,INDEX_BOUNDS_HEIGHT_OFFSET}=this.__closure;if(previous==null||_current===previous)return;const measurements=measure(ref);if(measurements!=null){const{pageX:pageX,pageY:pageY,width:width,height:height}=measurements;const offset=index*INDEX_BOUNDS_OFFSET;itemMeasurements.get()[offset+INDEX_BOUNDS_PAGE_X_OFFSET]=pageX;itemMeasurements.get()[offset+INDEX_BOUNDS_PAGE_Y_OFFSET]=pageY;itemMeasurements.get()[offset+INDEX_BOUNDS_WIDTH_OFFSET]=width;itemMeasurements.get()[offset+INDEX_BOUNDS_HEIGHT_OFFSET]=height;}}" };
 let closure_10 = { code: "function ContextMenuItemNativeTsx3(){const{activeIndex,index,pressed,withSpring,backgroundColor,SUBTLE_SPRING}=this.__closure;const isActive=activeIndex.get()===index||pressed.get()===1;return{backgroundColor:withSpring(isActive?backgroundColor:'transparent',SUBTLE_SPRING,'animate-always')};}" };
-let result = require("jsxProd").fileFinishedImporting("design/components/ContextMenu/native/ContextMenuItem.native.tsx");
+let result = require("set").fileFinishedImporting("design/components/ContextMenu/native/ContextMenuItem.native.tsx");
 
 export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
-  let IconComponent;
-  let end;
-  let iconSource;
-  let index;
-  let label;
-  let lastInSection;
-  let onPress;
-  let start;
-  let state;
-  let trailingIndicator;
-  let variant;
   ({ IconComponent, trailingIndicator, iconSource, start, end, index } = accessibilityRole);
   ({ state, variant } = accessibilityRole);
   ({ label, lastInSection, onPress } = accessibilityRole);
@@ -77,7 +66,7 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   pan = state.pan;
   itemMeasurements = state.itemMeasurements;
   activeIndex = state.activeIndex;
-  let obj1 = index(pan[3]);
+  obj1 = index(pan[3]);
   sharedValue = obj1.useSharedValue(0);
   let obj2 = index(pan[3]);
   class U {
@@ -89,10 +78,6 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   U.__workletHash = 11852115418144;
   U.__initData = closure_8;
   const fn = function p(arg0, arg1) {
-    let height;
-    let pageX;
-    let pageY;
-    let width;
     if (null != arg1) {
       if (arg0 !== arg1) {
         const measureResult = index(pan[3]).measure(animatedRef);
@@ -123,9 +108,9 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
     constructor() {
       tmp = activeIndex.get() === index;
       if (!tmp) {
-        tmp2 = c5;
+        tmp2 = closure_5;
         num = 1;
-        tmp = 1 === c5.get();
+        tmp = 1 === closure_5.get();
       }
       tmp3 = index;
       tmp4 = pan;
@@ -165,8 +150,6 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   const items = [index, itemMeasurements];
   const items1 = [activeIndex, index];
   callback = itemMeasurements.useCallback((nativeEvent) => {
-    let height;
-    let width;
     ({ height, width } = nativeEvent.nativeEvent.layout);
     if (0 !== height) {
       if (0 !== width) {

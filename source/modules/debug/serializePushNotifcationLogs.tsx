@@ -1,16 +1,15 @@
-// Module ID: 10135
-// Function ID: 10136
+// Module ID: 10174
+// Function ID: 10175
 // Name: serializePushNotificationLogs
 // Dependencies: [676, 595, 2]
 // Exports: default
 
-// Module 10135 (serializePushNotificationLogs)
-import ME from "ME";
+// Module 10174 (serializePushNotificationLogs)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let obj1;
 ({ DEVICE_TOKEN: obj1, DEVICE_VOIP_TOKEN: c3 } = ME);
-const result = require("set").fileFinishedImporting("modules/debug/serializePushNotifcationLogs.tsx");
+const result = set.fileFinishedImporting("modules/debug/serializePushNotifcationLogs.tsx");
 
 export default function serializePushNotificationLogs(arr) {
   const _require = arg1;

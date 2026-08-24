@@ -1,12 +1,17 @@
-// Module ID: 13564
-// Function ID: 13565
+// Module ID: 13622
+// Function ID: 13623
 // Name: buildZoomedInAnalyticsEvent
-// Dependencies: [676, 5422, 13193, 13081, 2]
+// Dependencies: [676, 5427, 13248, 13137, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 13564 (buildZoomedInAnalyticsEvent)
-import { AnalyticEvents } from "ME";
+// Module 13622 (buildZoomedInAnalyticsEvent)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 5427 */;
+import noop from "noop" /* 13137 */;
+import Opcode from "Opcode" /* 13248 */;
 
+const AnalyticEvents = ME.AnalyticEvents;
 let closure_3 = { Gateway: "gateway", RtcControl: "rtc_control", RemoteAuth: "remote_auth", Spotify: "spotify", Rpc: "rpc", GameServerPing: "game_server_ping" };
 let closure_4 = {
   [AnalyticEvents.DEVICE_EVENT]: (data) => {
@@ -45,15 +50,12 @@ let closure_4 = {
         const _Object2 = Object;
         const entries = Object.entries(data);
         const found = entries.filter((arg0) => {
-          let tmp;
           [, tmp] = arg0;
           return null != tmp;
         });
         let joined = null;
         if (0 !== found.length) {
           const mapped = found.map((arg0) => {
-            let tmp;
-            let tmp2;
             [tmp, tmp2] = arg0;
             return "" + tmp + "=" + tmp2;
           });
@@ -312,7 +314,7 @@ let closure_5 = {
       if (typeof touch_action_type === "string") {
         tmp2 = touch_action_type;
       }
-      let obj = importDefault(5422);
+      let obj = getHermesInstrumentedStatsSummaryDefault;
       let currentHermesInstrumentedStatsSummary = obj.getCurrentHermesInstrumentedStatsSummary();
       if (currentHermesInstrumentedStatsSummary == null) {
         currentHermesInstrumentedStatsSummary = null;
@@ -655,7 +657,7 @@ let closure_5 = {
             }
             let tmp41 = null;
             if (null != tmp37) {
-              const tmp44 = require(13193) /* Opcode */.Opcode[tmp37];
+              const tmp44 = Opcode.Opcode[tmp37];
               let tmp45 = null;
               if (typeof tmp44 === "string") {
                 tmp45 = tmp44;
@@ -744,7 +746,7 @@ let closure_5 = {
           }
           let tmp26 = null;
           if (null != tmp22) {
-            const tmp29 = require(13081) /* noop */.RTCSocketOpcode[tmp22];
+            const tmp29 = noop.RTCSocketOpcode[tmp22];
             let tmp30 = null;
             if (typeof tmp29 === "string") {
               tmp30 = tmp29;
@@ -796,7 +798,7 @@ let closure_5 = {
     return obj;
   }
 };
-const result = require("Opcode").fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInAnalyticBuilder.tsx");
+const result = set.fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInAnalyticBuilder.tsx");
 
 export const buildZoomedInAnalyticsEvent = function buildZoomedInAnalyticsEvent(key) {
   if (key.key in closure_4) {

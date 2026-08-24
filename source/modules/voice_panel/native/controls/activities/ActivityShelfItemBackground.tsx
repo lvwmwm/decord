@@ -1,13 +1,15 @@
-// Module ID: 16363
-// Function ID: 16364
-// Dependencies: [32, 19, 17, 21, 4661, 7190, 11261, 2]
+// Module ID: 16460
+// Function ID: 16461
+// Dependencies: [32, 19, 17, 21, 4668, 7228, 11312, 2]
 
-// Module 16363
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16460
+import setDefault from "set" /* 7228 */;
+import BrokenImageDefault from "BrokenImage" /* 11312 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 let c3 = importAllResult;
 let closure_6 = createCacheKey.createStyles((aspectRatio) => {
@@ -15,10 +17,8 @@ let closure_6 = createCacheKey.createStyles((aspectRatio) => {
   return { previewImage: { alignItems: "center", justifyContent: "center", backgroundColor: "black" }, activityImage };
 });
 const memoResult = importAllResult.memo(function ActivityShelfItemBackground(aspectRatio) {
-  let accessibilityLabel;
-  let imageBackground;
   ({ imageBackground, accessibilityLabel } = aspectRatio);
-  let importDefault;
+  importDefault = undefined;
   const tmp = callback2(aspectRatio.aspectRatio);
   const tmp2 = callback(importAllResult.useState(false), 2);
   importDefault = tmp2[1];
@@ -32,7 +32,7 @@ const memoResult = importAllResult.memo(function ActivityShelfItemBackground(asp
           obj[0] = function onError() {
             return callback(true);
           };
-          const obj1 = { uri: null };
+          obj1 = { uri: null };
           obj1[0] = imageBackground.url;
           obj[1] = obj1;
           obj[2] = tmp.activityImage;
@@ -41,21 +41,20 @@ const memoResult = importAllResult.memo(function ActivityShelfItemBackground(asp
           }
           obj[4] = accessibilityLabel;
           obj[1] = <Image onError={null} source={null} style={null} accessibilityRole="image" accessibilityLabel={null} />;
-          let tmp9Result = tmp9(importDefault(7190), obj);
-          const tmp12 = importDefault(7190);
+          let tmp9Result = tmp9(setDefault, obj);
+          const tmp12 = setDefault;
           const tmp13 = Image;
         }
       }
       obj = { style: null };
       obj[0] = tmp.previewImage;
-      tmp9Result = jsx(importDefault(7190), { style: null });
+      tmp9Result = jsx(setDefault, { style: null });
     }
     return tmp9Result;
   }
-  const obj2 = { style: tmp.previewImage, children: null };
-  obj2[1] = jsx(importDefault(11261), {});
-  tmp9Result = jsx(importDefault(7190), { style: tmp.previewImage, children: null });
+  const obj2 = { style: tmp.previewImage, children: jsx(BrokenImageDefault, {}) };
+  tmp9Result = jsx(setDefault, { style: tmp.previewImage, children: jsx(BrokenImageDefault, {}) });
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItemBackground.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItemBackground.tsx");
 
 export default memoResult;

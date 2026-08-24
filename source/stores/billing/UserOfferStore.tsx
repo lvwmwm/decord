@@ -1,32 +1,28 @@
-// Module ID: 7421
-// Function ID: 7422
+// Module ID: 7459
+// Function ID: 7460
 // Name: emitChanges
-// Dependencies: [7422, 7423, 7610, 7425, 1922, 5357, 4045, 1924, 589, 7611, 4039, 709, 2]
+// Dependencies: [7460, 7461, 7648, 7463, 1922, 5362, 4048, 1924, 589, 7649, 4042, 709, 2]
 
-// Module 7421 (emitChanges)
-import createFromServer from "createFromServer";
-import emitChanges from "emitChanges";
-import closure_4 from "createFromServer";
-import closure_5 from "createFromServer";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import addEntitlement from "addEntitlement";
-import reset from "reset";
-import GuildFeatures from "GuildFeatures";
-import { PersistedStore } from "initialize";
+// Module 7459 (emitChanges)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
+import apexExperiment from "apexExperiment" /* 7649 */;
+import closure_2 from "createFromServer" /* 7460 */;
+import closure_3 from "emitChanges" /* 7461 */;
+import closure_4 from "createFromServer" /* 7648 */;
+import closure_5 from "createFromServer" /* 7463 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_7 from "addEntitlement" /* 5362 */;
+import closure_8 from "reset" /* 4048 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
-let c10;
-let c9;
-let closure_12;
-let closure_14;
-let closure_15;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function emitChanges() {
   return true;
 }
 function rehydrateDiscountOffer(discount) {
-  let obj = closure_4;
+  obj = closure_4;
   if (discount instanceof closure_4) {
     return discount;
   } else if ("discount_id" in discount) {
@@ -36,7 +32,7 @@ function rehydrateDiscountOffer(discount) {
     const merged = Object.assign(discount);
     discount = discount.discount;
     if (null != discount) {
-      if (!(discount instanceof createFromServer)) {
+      if (!(discount instanceof closure_2)) {
         tmp6 = new tmp6(discount);
       }
       obj.discount = tmp6;
@@ -94,12 +90,13 @@ function handleReferralTrialStoreUpdate() {
 let obj = { userOffersLastFetchedAtDate: "r", userTrialOffers: "PX_16", userDiscountOffers: "TRANSPARENT", userDiscounts: 0, isFetching: "19.2.3", lastFetchSuccessful: "react-native-renderer" };
 obj[1] = {};
 obj[2] = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class UserOfferStore extends PersistedStore {
 }
 const prototype = UserOfferStore.prototype;
 prototype["initialize"] = function initialize(userTrialOffers) {
   if (null != userTrialOffers) {
-    let obj = {};
+    obj = {};
     let merged = Object.assign(userTrialOffers);
     userTrialOffers = userTrialOffers.userTrialOffers;
     if (userTrialOffers == null) {
@@ -107,11 +104,9 @@ prototype["initialize"] = function initialize(userTrialOffers) {
     }
     const entries = Object.entries(userTrialOffers);
     obj.userTrialOffers = Object.fromEntries(entries.map((arg0) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg0;
       const items = [tmp, ];
-      let obj = closure_5;
+      obj = closure_5;
       if (tmp2 instanceof closure_5) {
         items[1] = tmp2;
         return items;
@@ -141,8 +136,6 @@ prototype["initialize"] = function initialize(userTrialOffers) {
     }
     const entries1 = Object.entries(userDiscountOffers);
     obj.userDiscountOffers = Object.fromEntries(entries1.map((arg0) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg0;
       const items = [tmp, callback(tmp2)];
       return items;
@@ -151,13 +144,13 @@ prototype["initialize"] = function initialize(userTrialOffers) {
   } else {
     tmp = obj;
   }
-  obj = tmp;
-  this.waitFor(addEntitlement, emitChanges, reset, mergeGuildAvatar);
-  let items = [mergeGuildAvatar];
+  closure_17 = tmp;
+  this.waitFor(closure_7, closure_3, closure_8, closure_6);
+  let items = [closure_6];
   this.syncWith(items, emitChanges);
-  const items1 = [reset];
+  const items1 = [closure_8];
   this.syncWith(items1, handleSubscriptionStoreUpdate);
-  const items2 = [emitChanges];
+  const items2 = [closure_3];
   this.syncWith(items2, handleReferralTrialStoreUpdate);
 };
 prototype["getUserTrialOffer"] = function getUserTrialOffer(closure_9) {
@@ -223,19 +216,19 @@ prototype["shouldShowTrialOfferReminder"] = function shouldShowTrialOfferReminde
   const hasItem = closure_15.includes(trialId.trialId);
   let result = !hasItem;
   if (hasItem) {
-    result = require(7611) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
-    const obj = require(7611) /* apexExperiment */;
+    result = apexExperiment.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
+    obj = apexExperiment;
   }
   return result;
 };
 prototype["getAlmostExpiringTrialOffersForReminder"] = function getAlmostExpiringTrialOffersForReminder(items) {
   let self = this;
   self = this;
-  const dependencyMap = items;
+  dependencyMap = items;
   let values = Object.values(closure_14);
   const _require = values.map((id) => id.id);
   const currentUser = authStore.getCurrentUser();
-  let obj = _require(4039);
+  obj = _require(4042);
   if (obj.isPremium(currentUser)) {
     if (!self.canFractionalPremiumUserUseOffer()) {
       items = [];
@@ -260,7 +253,7 @@ prototype["getAlmostExpiringTrialOffersForReminder"] = function getAlmostExpirin
       const time = expiresAt.getTime();
       const timestamp = Date.now();
       hasItem = time < timestamp + lib(items[10]).getOfferNoticeThreshold(trialId);
-      const obj = lib(items[10]);
+      obj = lib(items[10]);
     }
     if (hasItem) {
       hasItem = self.shouldShowTrialOfferReminder(trialId);
@@ -272,8 +265,8 @@ prototype["shouldShowDiscountOfferReminder"] = function shouldShowDiscountOfferR
   const hasItem = closure_10.includes(discountId.discountId);
   let result = !hasItem;
   if (hasItem) {
-    result = require(7611) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
-    const obj = require(7611) /* apexExperiment */;
+    result = apexExperiment.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
+    obj = apexExperiment;
   }
   return result;
 };
@@ -282,7 +275,7 @@ prototype["getAlmostExpiringDiscountOffersForReminder"] = function getAlmostExpi
   self = this;
   const _require = arg0;
   const currentUser = authStore.getCurrentUser();
-  let obj = _require(self[10]);
+  obj = _require(self[10]);
   if (obj.isPremium(currentUser)) {
     if (!self.canFractionalPremiumUserUseOffer()) {
       let items = [];
@@ -294,7 +287,7 @@ prototype["getAlmostExpiringDiscountOffersForReminder"] = function getAlmostExpi
     let someResult = null != expiresAt.expiresAt && null != expiresAt.discount;
     if (someResult) {
       const planIds = expiresAt.discount.planIds;
-      someResult = planIds.some((arg0) => closure_0.includes(outer1_13[arg0].skuId));
+      someResult = planIds.some((arg0) => closure_0.includes(closure_1_13[arg0].skuId));
     }
     if (someResult) {
       expiresAt = expiresAt.expiresAt;
@@ -302,7 +295,7 @@ prototype["getAlmostExpiringDiscountOffersForReminder"] = function getAlmostExpi
       const time = expiresAt.getTime();
       const timestamp = Date.now();
       someResult = time < timestamp + callback(self[10]).getOfferNoticeThreshold(expiresAt);
-      const obj = callback(self[10]);
+      obj = callback(self[10]);
     }
     if (someResult) {
       someResult = self.shouldShowDiscountOfferReminder(expiresAt);
@@ -313,7 +306,7 @@ prototype["getAlmostExpiringDiscountOffersForReminder"] = function getAlmostExpi
 prototype["getAcknowledgedOffers"] = function getAcknowledgedOffers(arg0) {
   const _require = arg0;
   const currentUser = authStore.getCurrentUser();
-  const obj = _require(4039);
+  obj = _require(4042);
   if (obj.isPremium(currentUser)) {
     const self = this;
     if (!this.canFractionalPremiumUserUseOffer()) {
@@ -332,7 +325,7 @@ prototype["getAcknowledgedOffers"] = function getAcknowledgedOffers(arg0) {
 };
 prototype["getUnacknowledgedDiscountOffers"] = function getUnacknowledgedDiscountOffers() {
   const currentUser = authStore.getCurrentUser();
-  const obj = require(4039) /* getPremiumPlanItem */;
+  obj = getPremiumPlanItem;
   if (obj.isPremium(currentUser)) {
     const self = this;
     if (!this.canFractionalPremiumUserUseOffer()) {
@@ -357,7 +350,7 @@ prototype["getUnacknowledgedDiscountOffers"] = function getUnacknowledgedDiscoun
 prototype["getUnacknowledgedOffers"] = function getUnacknowledgedOffers(arg0) {
   const _require = arg0;
   const currentUser = authStore.getCurrentUser();
-  const obj = _require(4039);
+  obj = _require(4042);
   if (obj.isPremium(currentUser)) {
     const self = this;
     if (!this.canFractionalPremiumUserUseOffer()) {
@@ -421,7 +414,7 @@ let items = [
       userDiscounts = userDiscounts.userDiscounts;
     }
     if (null != userDiscounts) {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(userDiscounts);
       obj.userDiscountOffers = userDiscounts;
       return obj;
@@ -444,7 +437,7 @@ let items = [
       }
       let tmp2 = isFetching;
       if (null == isFetching) {
-        const obj = {};
+        obj = {};
         const merged = Object.assign(isFetching);
         obj.isFetching = false;
         tmp2 = obj;
@@ -458,14 +451,12 @@ let items = [
       userDiscountOffers = userDiscountOffers.userDiscountOffers;
     }
     if (null != userDiscountOffers) {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(userDiscountOffers);
       const _Object = Object;
       const _Object2 = Object;
       const entries = Object.entries(userDiscountOffers.userDiscountOffers);
       obj.userDiscountOffers = Object.fromEntries(entries.map((arg0) => {
-        let tmp;
-        let tmp2;
         [tmp, tmp2] = arg0;
         const items = [tmp, callback(tmp2)];
         return items;
@@ -489,8 +480,6 @@ obj = {
     obj.userOffersLastFetchedAtDate = Date.now();
   },
   BILLING_USER_OFFER_FETCH_SUCCESS: function handleUserOfferFetchSuccess(arg0) {
-    let userDiscountOffer;
-    let userTrialOffer;
     ({ userTrialOffer, userDiscountOffer } = arg0);
     if (tmp) {
       obj.userTrialOffers = {};
@@ -510,9 +499,6 @@ obj = {
     obj.lastFetchSuccessful = true;
   },
   BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: function handleUserOfferAcknowledgedSuccess(arg0) {
-    let userDiscount;
-    let userDiscountOffer;
-    let userTrialOffer;
     ({ userTrialOffer, userDiscount, userDiscountOffer } = arg0);
     if (null != userTrialOffer) {
       obj.userTrialOffers[userTrialOffer.trialId] = userTrialOffer;
@@ -540,12 +526,12 @@ obj = {
   BILLING_USER_OFFER_REDEEMED: function handleUserOfferRedeemed(offerId) {
     offerId = offerId.offerId;
     const keys = Object.keys(obj.userDiscountOffers);
-    if (null != keys.find((arg0) => outer1_17.userDiscountOffers[arg0].id === offerId)) {
+    if (null != keys.find((arg0) => closure_1_17.userDiscountOffers[arg0].id === offerId)) {
       const userDiscountOffers = obj.userDiscountOffers;
       delete tmp3[tmp4];
     }
     const keys1 = Object.keys(obj.userTrialOffers);
-    if (null != keys1.find((arg0) => outer1_17.userTrialOffers[arg0].id === offerId)) {
+    if (null != keys1.find((arg0) => closure_1_17.userTrialOffers[arg0].id === offerId)) {
       const userTrialOffers = obj.userTrialOffers;
       delete tmp[tmp2];
     }
@@ -561,7 +547,7 @@ obj = {
     obj.isFetching = false;
   }
 };
-const userOfferStore = new UserOfferStore(require("dispatcher"), obj);
-let result = require("createFromServer").fileFinishedImporting("stores/billing/UserOfferStore.tsx");
+const userOfferStore = new UserOfferStore(dispatcherDefault, obj);
+let result = require("set").fileFinishedImporting("stores/billing/UserOfferStore.tsx");
 
 export default userOfferStore;

@@ -5,7 +5,9 @@
 // Exports: logFluxAction, notifyStoreChange, notifyStoreCreated, reportEvent
 
 // Module 1232 (logFluxAction)
-const result = require("set").fileFinishedImporting("../discord_common/js/shared/DevtoolsExtension.tsx");
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_common/js/shared/DevtoolsExtension.tsx");
 
 export const logFluxAction = function logFluxAction(description, durationMs) {
   let __DISCORD_DEVTOOLS = null;

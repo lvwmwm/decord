@@ -1,11 +1,12 @@
-// Module ID: 10501
-// Function ID: 10502
-// Dependencies: [7383, 589, 2]
+// Module ID: 10540
+// Function ID: 10541
+// Dependencies: [7421, 589, 2]
 
-// Module 10501
-import getState from "getState";
+// Module 10540
+import initialize from "initialize" /* 589 */;
+import closure_2 from "getState" /* 7421 */;
 
-const require = arg1;
+require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_state/DiscordAppState.native.tsx");
 
 export default {
@@ -16,7 +17,7 @@ export default {
     return store.getState();
   },
   useCanUIRequestGatewaySocket() {
-    const items = [getState];
-    return require(589) /* initialize */.useStateFromStores(items, () => "active" === state.getState());
+    const items = [closure_2];
+    return initialize.useStateFromStores(items, () => "active" === state.getState());
   }
 };

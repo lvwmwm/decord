@@ -1,16 +1,16 @@
-// Module ID: 16908
-// Function ID: 16909
+// Module ID: 17001
+// Function ID: 17002
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 676, 16909, 16910, 1236, 1993, 4084, 16911, 2]
+// Dependencies: [5, 19, 676, 17002, 17003, 1236, 1994, 4087, 17004, 2]
 // Exports: default
 
-// Module 16908 (useCreatorMonetizationEligibilityItems)
-import getSystemLocale from "getSystemLocale";
-import noop from "noop";
-import { HelpdeskArticles } from "ME";
+// Module 17001 (useCreatorMonetizationEligibilityItems)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
+import { HelpdeskArticles } from "ME" /* 676 */;
 
 const require = arg1;
-let result = require("ME").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationEligibilityItems.tsx");
+let result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationEligibilityItems.tsx");
 
 export default function useCreatorMonetizationEligibilityItems(arg0) {
   const _require = arg0;
@@ -41,7 +41,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -56,9 +56,9 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_0 = tmp4;
-            if (outer1_4) {
-              if (!outer1_5) {
+            closure_0 = tmp4;
+            if (closure_1_4) {
+              if (!closure_1_5) {
                 let result;
                 if (c2 != null) {
                   const onRequireModeratorMFAClick = c2.onRequireModeratorMFAClick;
@@ -68,7 +68,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
                 }
                 c1 = 1;
                 c2 = 1;
-                const obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = result;
                 return obj1;
               }
@@ -110,7 +110,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
           tmp13();
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         c2 = tmp;
         throw tmp16;
@@ -121,9 +121,6 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
   enableMFAHook = _require(actions[4]).useEnableMFAHook({ onEnableMFAClick: callback });
   const items1 = [arg0, sortedByIneligible, isUserMFAEnabled, actions, isModerationMFAEnabled, enableMFAHook, callback];
   return isUserMFAEnabled.useMemo(() => {
-    let minimumOwnerAgeInYears;
-    let minimumSize;
-    let noRecentViolations;
     if (null == callback) {
       return null;
     } else {
@@ -147,8 +144,8 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
       let fn;
       if (!noRecentViolations) {
         fn = () => {
-          const tmp = callback(4084);
-          return tmp(callback(1993).getSubmitRequestURL());
+          const tmp = callback(4087);
+          return tmp(callback(1994).getSubmitRequestURL());
         };
       }
       obj[6] = fn;
@@ -160,7 +157,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
         const intl3 = tmp23(tmp24[5]).intl;
         obj[2] = intl3.string(tmp23(tmp24[5]).t["5BwC/O"]);
         const intl4 = tmp23(tmp24[5]).intl;
-        const obj1 = { minimumOwnerAgeInYears: null };
+        obj1 = { minimumOwnerAgeInYears: null };
         obj1[0] = minimumOwnerAgeInYears;
         obj[3] = intl4.formatToPlainString(tmp23(tmp24[5]).t.DW1Vae, obj1);
         obj[4] = tmp.meetsOwnerAgeRequirement;

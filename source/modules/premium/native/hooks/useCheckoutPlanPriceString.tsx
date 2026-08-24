@@ -1,15 +1,15 @@
-// Module ID: 7616
-// Function ID: 7617
+// Module ID: 7654
+// Function ID: 7655
 // Name: useCheckoutPlanPriceString
-// Dependencies: [19, 7395, 7378, 500, 2]
+// Dependencies: [19, 7433, 7416, 500, 2]
 // Exports: useCheckoutPlanPriceString
 
-// Module 7616 (useCheckoutPlanPriceString)
-import noop from "noop";
-import { useNativeCheckoutStore } from "context";
+// Module 7654 (useCheckoutPlanPriceString)
+import closure_2 from "noop" /* 19 */;
+import { useNativeCheckoutStore } from "context" /* 7433 */;
 
 const require = arg1;
-const result = require("getPremiumBundledItemsFromProductId").fileFinishedImporting("modules/premium/native/hooks/useCheckoutPlanPriceString.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/hooks/useCheckoutPlanPriceString.tsx");
 
 export const useCheckoutPlanPriceString = function useCheckoutPlanPriceString(productId, first) {
   const _require = productId;
@@ -21,20 +21,20 @@ export const useCheckoutPlanPriceString = function useCheckoutPlanPriceString(pr
     priceString = null;
   }
   const tmp3 = useNativeCheckoutStore((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
-  const dependencyMap = tmp3;
+  dependencyMap = tmp3;
   const items = [tmp3, productId];
   const memo = React.useMemo(() => {
-    if (null == tmp3) {
+    if (null == table) {
       return null;
     } else {
-      const availablePlanForItems = obj.getAvailablePlanForItems(productId(tmp3[2]).getSubscriptionItemsForProduct(productId));
+      const availablePlanForItems = obj.getAvailablePlanForItems(productId(table[2]).getSubscriptionItemsForProduct(productId));
       let priceString = null;
       if (null != availablePlanForItems) {
         priceString = availablePlanForItems.getPriceString();
       }
       return priceString;
     }
-    obj = tmp3;
+    obj = table;
   }, items);
   const tmp2 = useNativeCheckoutStore((orderRequired) => orderRequired.orderRequired);
   let tmp5 = priceString;

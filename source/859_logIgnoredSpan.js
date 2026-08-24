@@ -4,10 +4,14 @@
 // Dependencies: [824, 832, 823]
 
 // Module 859 (logIgnoredSpan)
-const require = arg1;
+import __SENTRY_DEBUG__ from "__SENTRY_DEBUG__" /* 823 */;
+import consoleSandbox from "consoleSandbox" /* 824 */;
+import isMatchingPattern from "isMatchingPattern" /* 832 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function logIgnoredSpan(op) {
-  const debug = require(824) /* consoleSandbox */.debug;
+  const debug = consoleSandbox.debug;
   debug.log("Ignoring span " + op.op + " - " + op.description + " because it matches `ignoreSpans`.");
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
@@ -48,7 +52,7 @@ arg5.shouldIgnoreSpan = function shouldIgnoreSpan(result, ignoreSpans) {
               if (name) {
                 let tmp14 = require;
                 let tmp15 = dependencyMap;
-                let obj = require(832) /* isMatchingPattern */;
+                let obj = isMatchingPattern;
                 let tmp16 = nextResult;
                 isMatchingPatternResult = obj.isMatchingPattern(result.description, tmp8.name);
               }
@@ -61,7 +65,7 @@ arg5.shouldIgnoreSpan = function shouldIgnoreSpan(result, ignoreSpans) {
                 if (op2) {
                   let tmp20 = require;
                   let tmp21 = dependencyMap;
-                  let obj2 = require(832) /* isMatchingPattern */;
+                  let obj2 = isMatchingPattern;
                   let tmp22 = nextResult;
                   op2 = obj2.isMatchingPattern(result.op, tmp8.op);
                 }
@@ -73,7 +77,7 @@ arg5.shouldIgnoreSpan = function shouldIgnoreSpan(result, ignoreSpans) {
                 if (tmp23) {
                   let tmp26 = require;
                   let tmp27 = dependencyMap;
-                  if (require(823) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
+                  if (__SENTRY_DEBUG__.DEBUG_BUILD) {
                     let tmp28 = logIgnoredSpan;
                     let tmp29 = logIgnoredSpan(result);
                   }
@@ -91,7 +95,7 @@ arg5.shouldIgnoreSpan = function shouldIgnoreSpan(result, ignoreSpans) {
         }
         let tmp31 = require;
         let tmp32 = dependencyMap;
-        let obj3 = require(832) /* isMatchingPattern */;
+        let obj3 = isMatchingPattern;
         let tmp33 = nextResult;
         if (obj3.isMatchingPattern(result.description, tmp8)) {
           if (tmp31(823).DEBUG_BUILD) {

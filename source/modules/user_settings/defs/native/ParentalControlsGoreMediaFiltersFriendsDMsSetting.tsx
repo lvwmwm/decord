@@ -1,56 +1,59 @@
-// Module ID: 15041
-// Function ID: 15042
+// Module ID: 15105
+// Function ID: 15106
 // Name: pressable
-// Dependencies: [5296, 8198, 14181, 5001, 14185, 14178, 1236, 1306, 10669, 2]
+// Dependencies: [5301, 8238, 14249, 5006, 14253, 14246, 1236, 1306, 10708, 2]
 
-// Module 15041 (pressable)
-import freshTeenActivityWithMap from "freshTeenActivityWithMap";
-import createToggle from "createToggle";
+// Module 15105 (pressable)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 5006 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14249 */;
+import closure_2 from "freshTeenActivityWithMap" /* 5301 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle: function getTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["+uI23H"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["+uI23H"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const parentalControlledGoreContentSettings = require(14181) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
+    const parentalControlledGoreContentSettings = useParentalControlledExplicitContentSettings.useParentalControlledGoreContentSettings();
     let goreContentFriendDm;
     if (parentalControlledGoreContentSettings != null) {
       goreContentFriendDm = parentalControlledGoreContentSettings.goreContentFriendDm;
     }
     let tmp5 = null;
     if (null != goreContentFriendDm) {
-      tmp5 = require(5001) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(goreContentFriendDm)();
-      const tmpResult = require(5001) /* redactionSettingToRenderedString */;
+      tmp5 = redactionSettingToRenderedString.redactionSettingToRenderedString(goreContentFriendDm)();
+      const tmpResult = redactionSettingToRenderedString;
     }
     return tmp5;
   },
   onPress: function onGoreContentFriendsDmOnPress() {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(14185);
+      let obj = selectedTeenId(14253);
       obj = { title: null, subtitle: null, handlePress: null, currentValue: null, excluded: null };
       const intl = selectedTeenId(1236).intl;
       obj[0] = intl.string(selectedTeenId(1236).t["16/3Bi"]);
       const intl2 = selectedTeenId(1236).intl;
       obj[1] = intl2.string(selectedTeenId(1236).t["+uI23H"]);
       obj[2] = function handlePress(goreContentFriendDm) {
-        let obj = selectedTeenId(outer1_1[4]);
+        let obj = selectedTeenId(closure_1_1[4]);
         obj = { goreContentFriendDm };
         return obj.updateGoreContentSetting(selectedTeenId, obj);
       };
       obj[3] = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentFriendDm;
       const items = [selectedTeenId(1306).ExplicitContentRedaction.SHOW];
       obj[4] = items;
-      const result = selectedTeenId(14178).handleSensitiveMediaFilterPress(obj);
-      const obj2 = selectedTeenId(14178);
+      const result = selectedTeenId(14246).handleSensitiveMediaFilterPress(obj);
+      const obj2 = selectedTeenId(14246);
     }
   },
   unsearchable: true
 };
 createToggle = createToggle.createPressable(createToggle);
-let result = require("useParentalControlledExplicitContentSettings").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsGoreMediaFiltersFriendsDMsSetting.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsGoreMediaFiltersFriendsDMsSetting.tsx");
 
 export default createToggle;

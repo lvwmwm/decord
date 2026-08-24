@@ -1,20 +1,21 @@
-// Module ID: 10853
-// Function ID: 10854
+// Module ID: 10892
+// Function ID: 10893
 // Name: usePollMessageContextItemTypes
 // Dependencies: [1218, 589, 2]
 // Exports: default
 
-// Module 10853 (usePollMessageContextItemTypes)
-import fetchFingerprint from "fetchFingerprint";
+// Module 10892 (usePollMessageContextItemTypes)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
 
-const require = arg1;
+require = arg1;
 let obj = { END_EARLY: 0, [0]: "END_EARLY" };
 let closure_4 = [];
 const result = require("set").fileFinishedImporting("modules/polls/chat/usePollMessageContextItemTypes.tsx");
 
 export default function usePollMessageContextItemTypes(poll) {
-  const obj = require(589) /* initialize */;
-  const items = [fetchFingerprint];
+  obj = initialize;
+  const items = [closure_2];
   poll = poll.poll;
   const stateFromStores = obj.useStateFromStores(items, () => id.getId());
   if (poll.isPoll()) {

@@ -1,25 +1,21 @@
-// Module ID: 10361
-// Function ID: 10362
+// Module ID: 10401
+// Function ID: 10402
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [19, 4521, 676, 21, 589, 7139, 7159, 500, 7696, 4761, 698, 10351, 4052, 9593, 1236, 9585, 7697, 9594, 10362, 10363, 2]
+// Dependencies: [19, 4526, 676, 21, 589, 7177, 7197, 500, 7734, 4766, 698, 10390, 4055, 9630, 1236, 9622, 7735, 9631, 10402, 10403, 2]
 // Exports: default
 
-// Module 10361 (SocialLayerStorefrontGiftModal)
-import "SocialLayerStorefrontGiftPurchaseSection";
-import addSku from "addSku";
-import ME from "ME";
-import { jsx } from "jsxProd";
+// Module 10401 (SocialLayerStorefrontGiftModal)
+import noopAll from "noop" /* 19 */;
+import closure_3 from "addSku" /* 4526 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
 const require = arg1;
+noopAll;
 ({ AnalyticEvents: c4, PaymentGateways: c5 } = ME);
-const result = require("ME").fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftModal.tsx");
+const result = require("set").fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftModal.tsx");
 
 export default function SocialLayerStorefrontGiftModal(skuId) {
-  let analyticsLocations;
-  let giftingOrigin;
-  let onGiftModalDismiss;
   skuId = skuId.skuId;
   ({ analyticsLocations, onGiftModalDismiss, giftingOrigin } = skuId);
   let applicationId;
@@ -34,7 +30,7 @@ export default function SocialLayerStorefrontGiftModal(skuId) {
   const tmp4 = giftingOrigin(applicationId[5]);
   items2[HermesBuiltin.arraySpread(analyticsLocations, 0)] = giftingOrigin(applicationId[6]).SLAYER_STOREFRONT_NATIVE_GIFT_MODAL;
   analyticsLocations2 = tmp4(items2).analyticsLocations;
-  let obj1 = skuId(applicationId[7]);
+  obj1 = skuId(applicationId[7]);
   if (obj1.isIOS()) {
     let GOOGLE = tmp6.APPLE_ADVANCED_COMMERCE;
     let APPLE_ADVANCED_COMMERCE = tmp6;
@@ -52,7 +48,7 @@ export default function SocialLayerStorefrontGiftModal(skuId) {
       applicationId = applicationId.applicationId;
     }
     obj[3] = applicationId;
-    obj.track(outer1_4.OPEN_MODAL, obj);
+    obj.track(closure_1_4.OPEN_MODAL, obj);
   });
   if (null == applicationId) {
     return null;
@@ -85,14 +81,12 @@ export default function SocialLayerStorefrontGiftModal(skuId) {
         return Promise.resolve(true);
       };
       giftingOrigin = function renderProductDetails(arg0) {
-        return outer1_6(giftingOrigin(applicationId[18]), { sku: applicationId });
+        return closure_1_6(giftingOrigin(applicationId[18]), { sku: applicationId });
       };
       obj1[7] = giftingOrigin;
       obj1[8] = function renderPurchaseSection(arg0) {
-        let giftOptions;
-        let isPurchaseDisabled;
         ({ isPurchaseDisabled, giftOptions } = arg0);
-        return outer1_6(giftingOrigin(applicationId[19]), { skuId, sku: applicationId, isPurchaseDisabled, giftOptions, giftingOrigin, analyticsLocations: analyticsLocations2 });
+        return closure_1_6(giftingOrigin(applicationId[19]), { skuId, sku: applicationId, isPurchaseDisabled, giftOptions, giftingOrigin, analyticsLocations: analyticsLocations2 });
       };
       tmp8Result = tmp8(tmp3, obj1);
       obj[6] = tmp8Result;

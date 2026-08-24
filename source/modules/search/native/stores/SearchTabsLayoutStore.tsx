@@ -1,25 +1,24 @@
-// Module ID: 11535
-// Function ID: 11536
+// Module ID: 11584
+// Function ID: 11585
 // Name: handleSearchQuery
-// Dependencies: [1391, 4971, 11536, 11537, 11538, 11510, 8507, 643, 11511, 589, 709, 2]
+// Dependencies: [1391, 4976, 11585, 11586, 11587, 11559, 8546, 643, 11560, 589, 709, 2]
 
-// Module 11535 (handleSearchQuery)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleReaction from "handleReaction";
-import search from "search";
-import setAutocompleteOptions from "setAutocompleteOptions";
-import teardown from "teardown";
-import prototype from "prototype";
-import MessageEmbedTypes from "MessageEmbedTypes";
-import { Store } from "initialize";
+// Module 11584 (handleSearchQuery)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 11560 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "handleReaction" /* 4976 */;
+import closure_5 from "search" /* 11585 */;
+import closure_6 from "setAutocompleteOptions" /* 11586 */;
+import closure_7 from "teardown" /* 11587 */;
+import closure_8 from "prototype" /* 11559 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
 
-let c10;
-let c9;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function handleSearchQuery(searchContext) {
   searchContext = searchContext.searchContext;
-  let obj = require(11511) /* SearchTokenTypes */;
+  let obj = SearchTokenTypes;
   const searchContextId = obj.getSearchContextId(searchContext);
   let value = map.get(searchContextId);
   if (value == null) {
@@ -33,18 +32,16 @@ function handleSearchQuery(searchContext) {
   return computeLayoutForState(value);
 }
 function computeLayoutForState(value) {
-  let visibleTabCounts;
-  let visibleTabs;
   const _require = value;
   const searchContext = value.searchContext;
   if (autocompleteVisible.isAutocompleteVisible(searchContext)) {
     return false;
   } else {
     const isInitialSearchQueryResult = obj.isInitialSearchQuery(searchContext);
-    const dependencyMap = isInitialSearchQueryResult;
+    dependencyMap = isInitialSearchQueryResult;
     let channel = obj.isTextInputValueEmpty(searchContext);
-    let handleReaction = obj.hasUserAddedTags(searchContext);
-    let search = obj.isTagsEmpty(searchContext);
+    closure_4 = obj.hasUserAddedTags(searchContext);
+    closure_5 = obj.isTagsEmpty(searchContext);
     const searchResultsQuery = obj.getSearchResultsQuery(searchContext);
     const queryString = obj.getQueryString(searchContext);
     if (isInitialSearchQueryResult) {
@@ -52,7 +49,7 @@ function computeLayoutForState(value) {
     } else {
       arr = table2[searchContext.type];
     }
-    channel = channel.getChannel(_require(11511).getChannelIdFromSearchContext(searchContext));
+    channel = channel.getChannel(_require(11560).getChannelIdFromSearchContext(searchContext));
     let flag;
     if (channel != null) {
       flag = channel.isArchivedThread();
@@ -66,9 +63,9 @@ function computeLayoutForState(value) {
         if (!flag) {
           let tmp5 = closure_2;
           if (!closure_2) {
-            let tmp7 = !handleReaction;
-            if (!handleReaction) {
-              tmp7 = !ensureGuildLoaded;
+            let tmp7 = !closure_4;
+            if (!closure_4) {
+              tmp7 = !closure_3;
             }
             tmp5 = tmp7;
           }
@@ -83,18 +80,18 @@ function computeLayoutForState(value) {
             }
           }
         }
-        return search;
+        return closure_5;
       }
     });
-    let tmp6Result = tmp6(11511);
+    let tmp6Result = tmp6(11560);
     autocompleteVisible = tmp6Result.getSearchContextId(searchContext);
     const reduced = found.reduce((arg0, closure_1) => {
       if (reduced.MEMBERS === closure_1) {
-        arg0[closure_1] = searchResultsQuery.getCount(prototype);
+        arg0[closure_1] = searchResultsQuery.getCount(closure_8);
       } else if (tmp.GUILD_CHANNELS === closure_1) {
-        arg0[closure_1] = count.getCount(prototype);
+        arg0[closure_1] = count.getCount(closure_8);
       } else if (tmp.PEOPLE === closure_1) {
-        arg0[closure_1] = flag.getCount(prototype);
+        arg0[closure_1] = flag.getCount(closure_8);
       } else {
         arg0[closure_1] = totalCount.getTotalCount(value(isInitialSearchQueryResult[8]).getSearchTabFetchId(searchContext, closure_1, searchResultsQuery));
         const obj = value(isInitialSearchQueryResult[8]);
@@ -128,7 +125,7 @@ function computeLayoutForState(value) {
     tmp6Result = tmp6(643);
     const result = tmp6Result.areArraysShallowEqual(value.candidateTabs, found);
     let tmp13 = !result;
-    const obj2 = _require(11511);
+    const obj2 = _require(11560);
     const result1 = _require(643).areArraysShallowEqual(value.visibleTabs, visibleTabs);
     const visibleTabCounts2 = value.visibleTabCounts;
     let tmp16 = visibleTabCounts2 === visibleTabCounts;
@@ -173,16 +170,17 @@ function computeLayoutForAll() {
 ({ SearchTabs: c9, SEARCH_TYPE_TO_SEARCH_INITIAL_TABS: c10, SEARCH_TYPE_TO_SEARCH_RESULT_TABS: unpackModuleId } = MessageEmbedTypes);
 let closure_12 = [];
 const map = new Map();
+const Store = initializeDefault.Store;
 class SearchTabsLayoutStore extends Store {
 }
 const prototype = SearchTabsLayoutStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(prototype, handleReaction, setAutocompleteOptions, search, teardown, ensureGuildLoaded);
-  const items = [handleReaction, setAutocompleteOptions, search, teardown];
+  this.waitFor(closure_8, closure_4, closure_6, closure_5, closure_7, closure_3);
+  const items = [closure_4, closure_6, closure_5, closure_7];
   this.syncWith(items, computeLayoutForAll);
 };
 prototype["getCandidateTabs"] = function getCandidateTabs(searchContext) {
-  let obj = require(11511) /* SearchTokenTypes */;
+  let obj = SearchTokenTypes;
   let value = map.get(obj.getSearchContextId(searchContext));
   if (value == null) {
     obj = { searchContext: null, wasInitialSearchQuery: true, candidateTabs: null, visibleTabs: null, visibleTabCounts: null };
@@ -194,7 +192,7 @@ prototype["getCandidateTabs"] = function getCandidateTabs(searchContext) {
   return value.candidateTabs;
 };
 prototype["getVisibleTabs"] = function getVisibleTabs(searchContext) {
-  let obj = require(11511) /* SearchTokenTypes */;
+  let obj = SearchTokenTypes;
   let value = map.get(obj.getSearchContextId(searchContext));
   if (value == null) {
     obj = { searchContext: null, wasInitialSearchQuery: true, candidateTabs: null, visibleTabs: null, visibleTabCounts: null };
@@ -206,7 +204,7 @@ prototype["getVisibleTabs"] = function getVisibleTabs(searchContext) {
   return value.visibleTabs;
 };
 prototype["getVisibleTabCounts"] = function getVisibleTabCounts(searchContext) {
-  let obj = require(11511) /* SearchTokenTypes */;
+  let obj = SearchTokenTypes;
   let value = map.get(obj.getSearchContextId(searchContext));
   if (value == null) {
     obj = { searchContext: null, wasInitialSearchQuery: true, candidateTabs: null, visibleTabs: null, visibleTabCounts: null };
@@ -218,13 +216,13 @@ prototype["getVisibleTabCounts"] = function getVisibleTabCounts(searchContext) {
   return value.visibleTabCounts;
 };
 SearchTabsLayoutStore.displayName = "SearchTabsLayoutStore";
-const searchTabsLayoutStore = new SearchTabsLayoutStore(require("dispatcher"), {
+const searchTabsLayoutStore = new SearchTabsLayoutStore(dispatcherDefault, {
   SEARCH_QUERY_NATIVE_INITIALIZE: handleSearchQuery,
   SEARCH_QUERY_NATIVE_UPDATE: handleSearchQuery,
   SEARCH_QUERY_NATIVE_DELETE: function handleSearchQueryNativeDelete(id) {
     return map.delete(id.id);
   }
 });
-let result = require("search").fileFinishedImporting("modules/search/native/stores/SearchTabsLayoutStore.tsx");
+let result = require("set").fileFinishedImporting("modules/search/native/stores/SearchTabsLayoutStore.tsx");
 
 export default searchTabsLayoutStore;

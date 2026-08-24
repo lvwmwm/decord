@@ -4,5 +4,7 @@
 // Dependencies: [30]
 
 // Module 265 (NativeIntersectionObserverCxx)
+import getAll from "get" /* 30 */;
 
-export default require("get").get("NativeIntersectionObserverCxx");
+
+export default getAll.get("NativeIntersectionObserverCxx");

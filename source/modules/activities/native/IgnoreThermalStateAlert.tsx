@@ -1,20 +1,20 @@
-// Module ID: 12431
-// Function ID: 12432
+// Module ID: 12483
+// Function ID: 12484
 // Name: IgnoreThermalStateAlert
-// Dependencies: [19, 21, 4661, 4763, 1236, 8701, 4734, 2]
+// Dependencies: [19, 21, 4668, 4768, 1236, 8738, 4739, 2]
 // Exports: IgnoreThermalStateAlert
 
-// Module 12431 (IgnoreThermalStateAlert)
-import "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12483 (IgnoreThermalStateAlert)
+import noopAll from "noop" /* 19 */;
+import componentDidMountDefault from "componentDidMount" /* 4768 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
 const require = arg1;
+noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_5 = createCacheKey.createStyles({ text: { marginTop: 16, lineHeight: 20, textAlign: "center" }, header: { textAlign: "center" } });
-let result = require("createCacheKey").fileFinishedImporting("modules/activities/native/IgnoreThermalStateAlert.tsx");
+let result = require("set").fileFinishedImporting("modules/activities/native/IgnoreThermalStateAlert.tsx");
 
 export const IgnoreThermalStateAlert = function IgnoreThermalStateAlert(onConfirm) {
   onConfirm = onConfirm.onConfirm;
@@ -28,18 +28,18 @@ export const IgnoreThermalStateAlert = function IgnoreThermalStateAlert(onConfir
     if (onConfirm != null) {
       tmp();
     }
-    const result = onConfirm(outer1_2[5]).disregardSeriousThermalState();
+    const result = onConfirm(closure_1_2[5]).disregardSeriousThermalState();
   };
   const intl2 = onConfirm(1236).intl;
   obj.confirmText = intl2.string(onConfirm(1236).t.oEAioF);
   obj = { style: tmp2.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = onConfirm(1236).intl;
   obj[3] = intl3.string(onConfirm(1236).t.v5X4fZ);
-  const items = [callback(onConfirm(4734).Text, obj), ];
+  const items = [callback(onConfirm(4739).Text, obj), ];
   obj = { style: tmp2.text, variant: "text-md/medium", children: null };
   const intl4 = onConfirm(1236).intl;
   obj[2] = intl4.string(onConfirm(1236).t.VOgTjy);
-  items[1] = callback(onConfirm(4734).Text, obj);
+  items[1] = callback(onConfirm(4739).Text, obj);
   obj.children = items;
-  return callback2(importDefault(4763), obj);
+  return callback2(componentDidMountDefault, obj);
 };

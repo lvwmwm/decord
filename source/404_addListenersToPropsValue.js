@@ -4,7 +4,7 @@
 // Dependencies: [388]
 
 // Module 404 (addListenersToPropsValue)
-import addListenersToPropsValue from "addListenersToPropsValue";
+import addListenersToPropsValueDefault from "addListenersToPropsValue" /* 388 */;
 
 
-export default addListenersToPropsValue(null);
+export default addListenersToPropsValueDefault(null);

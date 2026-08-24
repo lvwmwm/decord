@@ -1,15 +1,16 @@
-// Module ID: 10687
-// Function ID: 10688
+// Module ID: 10726
+// Function ID: 10727
 // Name: useAdContentImpressionTrackerProps
-// Dependencies: [19, 7453, 7469, 589, 7480, 6701, 10688, 2]
+// Dependencies: [19, 7491, 7507, 589, 7518, 6738, 10727, 2]
 // Exports: useAdContentImpressionTrackerProps, useGetQuestImpressionId, useQuestImpression, useQuestImpressionId, useQuestImpressionRef, useQuestStatusChanged
 
-// Module 10687 (useAdContentImpressionTrackerProps)
-import noop from "noop";
-import initializeState from "initializeState";
+// Module 10726 (useAdContentImpressionTrackerProps)
+import set from "set" /* 10727 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "initializeState" /* 7491 */;
 
-const require = arg1;
-const result = require("AdCreativeType").fileFinishedImporting("modules/quests/lib/analytics/ContentImpressionTrackerHooks.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/quests/lib/analytics/ContentImpressionTrackerHooks.tsx");
 
 export const useAdContentImpressionTrackerProps = function useAdContentImpressionTrackerProps(questOrQuests) {
   questOrQuests = undefined;
@@ -55,14 +56,14 @@ export const useAdContentImpressionTrackerProps = function useAdContentImpressio
 export const useQuestStatusChanged = function useQuestStatusChanged(adContentIds) {
   adContentIds = adContentIds.adContentIds;
   const adCreativeType = adContentIds.adCreativeType;
-  const items = [initializeState];
+  const items = [closure_4];
   const items1 = [adContentIds, adCreativeType];
   stateFromStores = adContentIds(stateFromStores[3]).useStateFromStores(items, () => {
     let quest = null;
     if (adCreativeType === adContentIds(stateFromStores[2]).AdCreativeType.QUEST) {
       quest = null;
       if (1 === adContentIds.length) {
-        quest = outer1_4.getQuest(tmp2[0]);
+        quest = closure_1_4.getQuest(tmp2[0]);
       }
     }
     return quest;
@@ -79,10 +80,10 @@ export const useQuestStatusChanged = function useQuestStatusChanged(adContentIds
   return memo !== adCreativeType(stateFromStores[5])(memo);
 };
 export const useQuestImpressionRef = function useQuestImpressionRef() {
-  return React.useContext(require(10688) /* set */.QuestImpressionContext);
+  return React.useContext(set.QuestImpressionContext);
 };
 export const useQuestImpression = function useQuestImpression() {
-  const context = React.useContext(require(10688) /* set */.QuestImpressionContext);
+  const context = React.useContext(set.QuestImpressionContext);
   let current;
   if (context != null) {
     current = context.current;
@@ -90,7 +91,7 @@ export const useQuestImpression = function useQuestImpression() {
   return current;
 };
 export const useQuestImpressionId = function useQuestImpressionId() {
-  const context = React.useContext(require(10688) /* set */.QuestImpressionContext);
+  const context = React.useContext(set.QuestImpressionContext);
   let current;
   if (context != null) {
     current = context.current;
@@ -102,7 +103,7 @@ export const useQuestImpressionId = function useQuestImpressionId() {
   return id;
 };
 export const useGetQuestImpressionId = function useGetQuestImpressionId() {
-  context = React.useContext(context(10688).QuestImpressionContext);
+  context = React.useContext(context(10727).QuestImpressionContext);
   const items = [context];
   return React.useCallback(() => {
     let id;

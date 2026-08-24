@@ -1,16 +1,19 @@
-// Module ID: 9315
-// Function ID: 9316
+// Module ID: 9352
+// Function ID: 9353
 // Name: renderTooltipItem
-// Dependencies: [32, 19, 17, 21, 4115, 9316, 1356, 9274, 9275, 2]
+// Dependencies: [32, 19, 17, 21, 4119, 9353, 1356, 9311, 9312, 2]
 // Exports: AnimatedCoachmark
 
-// Module 9315 (renderTooltipItem)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { StyleSheet } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 9352 (renderTooltipItem)
+import _modDef4119 from "module_4119" /* 4119 */;
+import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 9312 */;
+import Coachmark from "Coachmark" /* 9353 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { StyleSheet } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function renderTooltipItem(arg0, enterExitAnimatedStyles) {
   let obj = { style: items, pointerEvents: "box-none", children: null };
   items = [enterExitAnimatedStyles, StyleSheet.absoluteFill];
@@ -19,21 +22,19 @@ function renderTooltipItem(arg0, enterExitAnimatedStyles) {
     obj = {};
     const merged = Object.assign(arg0);
     obj.enterExitAnimatedStyles = enterExitAnimatedStyles;
-    tmpResult = tmp(require(9316) /* Coachmark */.CoachmarkContainer, obj);
+    tmpResult = tmp(Coachmark.CoachmarkContainer, obj);
   }
   obj[2] = tmpResult;
-  return jsx(importDefault(4115).View, { style: items, pointerEvents: "box-none", children: null });
+  return jsx(_modDef4119.View, { style: items, pointerEvents: "box-none", children: null });
 }
-let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Coachmark/native/AnimatedCoachmark.native.tsx");
+let result = require("set").fileFinishedImporting("design/components/Coachmark/native/AnimatedCoachmark.native.tsx");
 
 export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
-  let c1;
-  let tmp3;
   visible = visible.visible;
   const merged = Object.assign(visible, Object.create(null));
-  let importDefault;
+  importDefault = undefined;
   [tmp3, c1] = callback(React.useState(visible), 2);
-  let obj = visible(9274);
+  let obj = visible(9311);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const items = [visible];
   const effect = React.useEffect(() => {
@@ -50,5 +51,5 @@ export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   obj[2] = result;
   obj[3] = result;
   obj[4] = renderTooltipItem;
-  return tmp6(importDefault(9275), obj);
+  return tmp6(AnimatedRenderItemDefault, obj);
 };

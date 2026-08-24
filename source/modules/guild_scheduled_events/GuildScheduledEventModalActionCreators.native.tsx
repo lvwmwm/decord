@@ -1,38 +1,37 @@
-// Module ID: 8792
-// Function ID: 8793
+// Module ID: 8829
+// Function ID: 8830
 // Name: openGuildEventDetails
-// Dependencies: [5, 1397, 8793, 4342, 8794, 2007, 8785, 12410, 2]
+// Dependencies: [5, 1397, 8830, 4346, 8831, 2008, 8822, 12462, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 8792 (openGuildEventDetails)
-import asyncRequireImpl from "asyncRequireImpl";
-import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";
-import { GUILD_EVENT_INFO_ACTION_SHEET_KEY as closure_5 } from "CREATE_GUILD_EVENT_MODAL_KEY";
+// Module 8829 (openGuildEventDetails)
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import getRRule from "getRRule" /* 8822 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
+import { GUILD_EVENT_INFO_ACTION_SHEET_KEY as closure_5 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 8830 */;
 
-const require = arg1;
+require = arg1;
 function openGuildEventDetails(arg0) {
-  let event;
-  let eventId;
-  let onClose;
-  let recurrenceId;
   ({ event, recurrenceId } = arg0);
   ({ eventId, onClose } = arg0);
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId: null };
   if (recurrenceId == null) {
-    recurrenceId = require(8785) /* getRRule */.getNextRecurrenceIdInEvent(event);
-    const tmp2Result = require(8785) /* getRRule */;
+    recurrenceId = getRRule.getNextRecurrenceIdInEvent(event);
+    const tmp2Result = getRRule;
   }
   obj[3] = recurrenceId;
-  obj.openLazy(require(2007) /* asyncRequireImpl */(8794, dependencyMap.paths), closure_5, obj, "stack");
+  obj.openLazy(asyncRequireImpl(8831, dependencyMap.paths), closure_5, obj, "stack");
 }
 function _transitionToEventDetailsFromInvite() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0, arg1) {
       if (c5 === 2) {
         c5 = 3;
@@ -45,7 +44,7 @@ function _transitionToEventDetailsFromInvite() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -60,11 +59,11 @@ function _transitionToEventDetailsFromInvite() {
               obj[0] = arg1;
               return obj;
             } else {
-              let asyncRequireImpl = tmp5;
-              let closure_2 = tmp2;
+              closure_3 = tmp5;
+              closure_2 = tmp2;
               c4 = 1;
               c5 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = Promise.resolve();
               return obj1;
             }
@@ -87,7 +86,7 @@ function _transitionToEventDetailsFromInvite() {
             obj[2] = recurrenceId;
             closure_6(obj);
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c5 = tmp;
@@ -96,7 +95,7 @@ function _transitionToEventDetailsFromInvite() {
       }
     })();
   });
-  const _transitionToEventDetailsFromInvite = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -105,7 +104,7 @@ function _transitionToEventDetailsFromInvite() {
   }
   return applyArgumentsResult;
 }
-const result = require("CREATE_GUILD_EVENT_MODAL_KEY").fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventModalActionCreators.native.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventModalActionCreators.native.tsx");
 
 export { openGuildEventDetails };
 export const transitionToEventDetailsFromInvite = function transitionToEventDetailsFromInvite() {
@@ -119,7 +118,7 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
   return applyArgumentsResult;
 };
 export const openEndEventModal = function openEndEventModal(channel) {
-  let obj = importDefault(4342);
+  let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channel };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(12410, dependencyMap.paths), closure_4, obj);
+  obj.openLazy(asyncRequireImpl(12462, dependencyMap.paths), closure_4, obj);
 };

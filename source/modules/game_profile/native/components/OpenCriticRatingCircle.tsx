@@ -1,13 +1,17 @@
-// Module ID: 9144
-// Function ID: 9145
+// Module ID: 9181
+// Function ID: 9182
 // Name: OpenCriticRatingCircle
-// Dependencies: [21, 6571, 2]
+// Dependencies: [21, 6607, 2]
 // Exports: default
 
-// Module 9144 (OpenCriticRatingCircle)
-import { jsx } from "jsxProd";
+// Module 9181 (OpenCriticRatingCircle)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import inlineStyles from "inlineStyles" /* 6607 */;
+import inlineStylesDefault from "inlineStyles" /* 6607 */;
 
-let result = require("set").fileFinishedImporting("modules/game_profile/native/components/OpenCriticRatingCircle.tsx");
+const jsx = jsxProd.jsx;
+let result = set.fileFinishedImporting("modules/game_profile/native/components/OpenCriticRatingCircle.tsx");
 
 export default function OpenCriticRatingCircle(size) {
   size = size.size;
@@ -16,15 +20,8 @@ export default function OpenCriticRatingCircle(size) {
   const result2 = 2 * Math.PI * result1;
   const result3 = Math.min(Math.max(size.rating, 0), 100) / 100;
   let obj = { width: size, height: size, children: null };
-  obj = { transform: null, cx: null, cy: null, r: null, stroke: null, strokeWidth: 2, fill: "none", strokeDasharray: null, strokeDashoffset: null };
-  const diff = 1 - result3;
-  obj[0] = "rotate(" + 360 * diff / 2 + " " + result + " " + result + ")";
-  obj[1] = result;
-  obj[2] = result;
-  obj[3] = result1;
-  obj[4] = size.strokeColor;
-  obj[7] = result2;
-  obj[8] = result2 * diff;
-  obj[2] = jsx(require(6571) /* inlineStyles */.Circle, { transform: null, cx: null, cy: null, r: null, stroke: null, strokeWidth: 2, fill: "none", strokeDasharray: null, strokeDashoffset: null });
-  return jsx(importDefault(6571), { transform: null, cx: null, cy: null, r: null, stroke: null, strokeWidth: 2, fill: "none", strokeDasharray: null, strokeDashoffset: null });
+  obj = { transform: "rotate(" + 360 * diff / 2 + " " + result + " " + result + ")", cx: result, cy: result, r: result1, stroke: size.strokeColor, strokeWidth: 2, fill: "none", strokeDasharray: result2, strokeDashoffset: result2 * diff };
+  diff = 1 - result3;
+  obj[2] = jsx(inlineStyles.Circle, { transform: "rotate(" + 360 * diff / 2 + " " + result + " " + result + ")", cx: result, cy: result, r: result1, stroke: size.strokeColor, strokeWidth: 2, fill: "none", strokeDasharray: result2, strokeDashoffset: result2 * diff });
+  return jsx(inlineStylesDefault, { transform: "rotate(" + 360 * diff / 2 + " " + result + " " + result + ")", cx: result, cy: result, r: result1, stroke: size.strokeColor, strokeWidth: 2, fill: "none", strokeDasharray: result2, strokeDashoffset: result2 * diff });
 };

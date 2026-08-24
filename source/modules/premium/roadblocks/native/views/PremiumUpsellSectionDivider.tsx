@@ -1,21 +1,23 @@
-// Module ID: 9372
-// Function ID: 9373
+// Module ID: 9409
+// Function ID: 9410
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 7403, 21, 4661, 712, 9373, 4756, 691, 6890, 2]
+// Dependencies: [19, 17, 7441, 21, 4668, 712, 9410, 4761, 691, 6928, 2]
 // Exports: default
 
-// Module 9372 (PremiumUpsellSectionDivider)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { Gradients } from "items";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9409 (PremiumUpsellSectionDivider)
+import noopAll from "noop" /* 19 */;
+import keys from "keys" /* 691 */;
+import ThemesDefault from "Themes" /* 712 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import LockIcon2 from "LockIcon" /* 6928 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9410 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { Gradients } from "items" /* 7441 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles((arg0) => {
@@ -28,12 +30,11 @@ let closure_8 = createCacheKey.createStyles((arg0) => {
   if (arg0 === createCacheKey.END) {
     num2 = 6;
   }
-  obj = { container: obj, lockContainer: null, lockGradient: null, lock: null, divider: null, gradient: null };
-  obj[4] = num2;
+  obj = { container: obj, lockContainer: null, lockGradient: null, lock: null, divider: num2, gradient: null };
   obj = { justifyContent: "center", alignItems: "center" };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   obj[1] = obj;
-  obj[2] = { width: 28, height: 28, justifyContent: "center", borderRadius: importDefault(712).radii.round };
+  obj[2] = { width: 28, height: 28, justifyContent: "center", borderRadius: ThemesDefault.radii.round };
   obj[3] = { width: 16, height: 16, alignSelf: "center" };
   obj[4] = { height: 1 };
   let num3;
@@ -50,21 +51,17 @@ let closure_8 = createCacheKey.createStyles((arg0) => {
   return obj;
 });
 createCacheKey = { START: 0, [0]: "START", END: 1, [1]: "END" };
-const result = require("items").fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellSectionDivider.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellSectionDivider.tsx");
 
 export default function PremiumUpsellSectionDivider(arg0) {
-  let position;
-  let useTier0UpsellContent;
   ({ useTier0UpsellContent, position } = arg0);
   let lock = callback2(position);
   let obj = { style: lock.container, children: null };
-  obj = { style: lock.gradient, children: callback(require(9373) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
+  obj = { style: lock.gradient, children: callback(PremiumUpsellGradientBackground.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
   let LockIcon = require;
   let WHITE = dependencyMap;
   const items = [callback(closure_4, obj), , ];
-  obj = { style: lock.divider, start: null, end: null, colors: null };
-  obj[1] = require(691) /* keys */.HorizontalGradient.START;
-  obj[2] = require(691) /* keys */.HorizontalGradient.END;
+  obj = { style: lock.divider, start: keys.HorizontalGradient.START, end: keys.HorizontalGradient.END, colors: null };
   if (true === useTier0UpsellContent) {
     let PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
     let tmp6 = Gradients;
@@ -73,30 +70,30 @@ export default function PremiumUpsellSectionDivider(arg0) {
     PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
   }
   obj[3] = PREMIUM_TIER_2_TRI_COLOR;
-  items[1] = callback(importDefault(4756), obj);
+  items[1] = callback(LinearGradientDefault, obj);
   if (position !== createCacheKey.START) {
     items[2] = tmp8;
     obj[1] = items;
     return closure_7(tmp2, obj);
   } else {
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = lock.lockContainer;
     let obj2 = { style: null, start: null, end: null, colors: null, children: null };
     obj2[0] = lock.lockGradient;
-    obj2[1] = LockIcon(691).HorizontalGradient.START;
-    obj2[2] = LockIcon(691).HorizontalGradient.END;
+    obj2[1] = keys.HorizontalGradient.START;
+    obj2[2] = keys.HorizontalGradient.END;
     obj2[3] = useTier0UpsellContent ? tmp6.PREMIUM_TIER_0 : tmp6.PREMIUM_TIER_2_TRI_COLOR;
-    LockIcon = LockIcon(6890).LockIcon;
+    LockIcon = LockIcon2.LockIcon;
     const obj3 = { color: null, style: null };
     WHITE = tmp4(712).colors.WHITE;
     obj3[0] = WHITE;
     lock = lock.lock;
     obj3[1] = lock;
     obj2[4] = tmp3(LockIcon, obj3);
-    obj2 = tmp3(tmp4(4756), obj2);
+    obj2 = tmp3(tmp4(4761), obj2);
     obj1[1] = obj2;
     tmp3(tmp2, obj1);
-    const tmp4Result = tmp4(4756);
+    const tmp4Result = tmp4(4761);
   }
 };
 export const PREMIUM_UPSELL_SECTION_DIVIDER_HEIGHT = 28;

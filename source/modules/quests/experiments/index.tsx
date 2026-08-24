@@ -1,23 +1,14 @@
-// Module ID: 10691
-// Function ID: 10692
+// Module ID: 10730
+// Function ID: 10731
 // Name: apexExperiment
-// Dependencies: [1472, 10493, 10494, 10692, 2]
+// Dependencies: [1472, 10532, 10533, 10731, 2]
 // Exports: useQuestOrbsMultiplierMarketing
 
-// Module 10691 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
+// Module 10730 (apexExperiment)
+import set from "set" /* 2 */;
+import getQuestOrbMultiplierEligibilityForUser from "getQuestOrbMultiplierEligibilityForUser" /* 10532 */;
+import items from "items" /* 10533 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 let obj = { 1: null };
 obj[1] = { enabled: true };
@@ -46,7 +37,7 @@ const obj10 = { CONTROL: 0, [0]: "CONTROL", NEW_LAYOUT_WITH_SEARCH: 1, [1]: "NEW
 const apexExperiment9 = ApexExperiment.createApexExperiment({ name: "2026-05-bounty-stale-refresh-quest-home", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const apexExperiment10 = ApexExperiment.createApexExperiment({ name: "2026-06-quest-home-layout-visual-tweaks", kind: "user", defaultConfig: { enabled: false, variant: obj10.CONTROL }, variations: { 0: { enabled: false, variant: obj10.CONTROL }, 1: { enabled: true, variant: obj10.NEW_LAYOUT_WITH_SEARCH }, 2: { enabled: true, variant: obj10.LARGE_MASK_MARGIN }, 3: { enabled: true, variant: obj10.REMOVE_QUEST_TITLE_SUFFIX }, 4: { enabled: true, variant: obj10.REPLACE_QUEST_NAME_WITH_GAME_PUBLISHER } } });
 const apexExperiment11 = ApexExperiment.createApexExperiment({ name: "2026-07-quest-bar-secondary-cta", kind: "user", defaultConfig: { enabled: false, showPlayInstantlyLabel: false }, variations: { 0: { enabled: false, showPlayInstantlyLabel: false }, 1: { enabled: true, showPlayInstantlyLabel: false }, 2: { enabled: true, showPlayInstantlyLabel: true } } });
-const result = require("items").fileFinishedImporting("modules/quests/experiments/index.tsx");
+const result = set.fileFinishedImporting("modules/quests/experiments/index.tsx");
 
 export const VideoEndCardV2Experiment = apexExperiment;
 export const AppStoreBottomSheetOverlayFeatureGate = apexExperiment1;
@@ -56,9 +47,9 @@ export const MutedVideoQuestNewDefaultsVariant = obj3;
 export const MutedVideoQuestNewDefaultsExperiment = apexExperiment4;
 export const useQuestOrbsMultiplierMarketing = function useQuestOrbsMultiplierMarketing(location) {
   let obj = { location };
-  const questOrbMultiplierEligibility = require(10493) /* getQuestOrbMultiplierEligibilityForUser */.useQuestOrbMultiplierEligibility();
-  const obj2 = require(10493) /* getQuestOrbMultiplierEligibilityForUser */;
-  obj = { shouldShowBonusOrbsUX: questOrbMultiplierEligibility !== require(10494) /* items */.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== require(10494) /* items */.QuestOrbMultiplierEligibilityType.CREPE && closure_2.useConfig(obj).enabled, multiplier: tmp(10692).QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
+  const questOrbMultiplierEligibility = getQuestOrbMultiplierEligibilityForUser.useQuestOrbMultiplierEligibility();
+  const obj2 = getQuestOrbMultiplierEligibilityForUser;
+  obj = { shouldShowBonusOrbsUX: questOrbMultiplierEligibility !== items.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== items.QuestOrbMultiplierEligibilityType.CREPE && closure_2.useConfig(obj).enabled, multiplier: tmp(10731).QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
   return obj;
 };
 export const VideoQuestPlayerRefactorExperiment = apexExperiment5;

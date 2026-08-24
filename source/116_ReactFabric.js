@@ -4,11 +4,12 @@
 // Dependencies: [117, 272]
 
 // Module 116 (ReactFabric)
-import describeBuiltInComponentFrame from "describeBuiltInComponentFrame";
+import get_BatchedBridge from "get BatchedBridge" /* 272 */;
+import describeBuiltInComponentFrame from "describeBuiltInComponentFrame" /* 117 */;
 
 global.RN$stopSurface = describeBuiltInComponentFrame.stopSurface;
 if (true !== global.RN$Bridgeless) {
-  const BatchedBridge = require("get BatchedBridge").BatchedBridge;
+  const BatchedBridge = get_BatchedBridge.BatchedBridge;
   const result = BatchedBridge.registerCallableModule("ReactFabric", describeBuiltInComponentFrame);
 }
 

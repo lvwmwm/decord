@@ -1,16 +1,18 @@
-// Module ID: 7439
-// Function ID: 7440
+// Module ID: 7477
+// Function ID: 7478
 // Name: createEmptyState
 // Dependencies: [2]
 // Exports: createEmptyState, createState, toRichValue, voidToOptionValue
 
-// Module 7439 (createEmptyState)
+// Module 7477 (createEmptyState)
+import set from "set" /* 2 */;
+
 let obj = { type: "line", children: null };
 let items = [Object.freeze({ text: "" })];
 obj[1] = Object.freeze(items);
 const items1 = [Object.freeze(obj)];
 let closure_0 = Object.freeze(items1);
-const result = require("set").fileFinishedImporting("modules/channel_text_area/slate/SlateUtils.tsx");
+const result = set.fileFinishedImporting("modules/channel_text_area/slate/SlateUtils.tsx");
 
 export function createEmptyState() {
   const items = [{ text: "" }];
@@ -77,7 +79,7 @@ export const voidToOptionValue = function voidToOptionValue(type) {
     return obj;
   } else if ("testInlineVoid" === type) {
     const _Error = Error;
-    const error = new Error("Unable to convert test types");
+    error = new Error("Unable to convert test types");
     throw error;
   } else {
     return null;

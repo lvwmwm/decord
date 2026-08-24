@@ -1,38 +1,35 @@
-// Module ID: 15752
-// Function ID: 15753
+// Module ID: 15821
+// Function ID: 15822
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 676, 21, 8515, 4071, 8159, 5026, 4310, 4661, 712, 4066, 8157, 10066, 8340, 1236, 2]
+// Dependencies: [19, 676, 21, 8554, 4074, 8198, 5031, 4314, 4668, 712, 4069, 8196, 10105, 8379, 1236, 2]
 
-// Module 15752 (ICYMIMessageRowPreview)
-import importAllResult from "noop";
-import { MessageEmbedTypes } from "ME";
-import { jsx } from "jsxProd";
+// Module 15821 (ICYMIMessageRowPreview)
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
+import { MessageEmbedTypes } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function ICYMIMessageRowPreview(pointerEvents) {
-  let maxHeight;
-  let message;
-  let messageOptions;
-  let messageSizeCacheRef;
-  let require;
   ({ lineClamp: require, messageOptions } = pointerEvents);
   let str = pointerEvents.pointerEvents;
   ({ message, messageSizeCacheRef, maxHeight } = pointerEvents);
   if (str === undefined) {
     str = "none";
   }
-  let dependencyMap;
+  dependencyMap = undefined;
   let setting;
   let setting1;
   let setting2;
-  let obj = require(4661) /* createCacheKey */;
+  let obj = createCacheKey;
   obj = { seeMoreLabelColor: messageOptions(712).colors.TEXT_DEFAULT };
-  dependencyMap = obj.createNativeStyleProperties(obj)(messageOptions(4310)());
-  const RenderEmbeds = require(4066) /* explicitContentFromProto */.RenderEmbeds;
+  dependencyMap = obj.createNativeStyleProperties(obj)(messageOptions(4314)());
+  const RenderEmbeds = explicitContentFromProto.RenderEmbeds;
   setting = RenderEmbeds.getSetting();
-  const InlineEmbedMedia = require(4066) /* explicitContentFromProto */.InlineEmbedMedia;
+  const InlineEmbedMedia = explicitContentFromProto.InlineEmbedMedia;
   setting1 = InlineEmbedMedia.getSetting();
-  const InlineAttachmentMedia = require(4066) /* explicitContentFromProto */.InlineAttachmentMedia;
+  const InlineAttachmentMedia = explicitContentFromProto.InlineAttachmentMedia;
   setting2 = InlineAttachmentMedia.getSetting();
   const items = [setting, setting1, setting2, messageOptions];
   const memo = setting.useMemo(() => {
@@ -46,7 +43,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     pointerEvents: str,
     horizontalOffset: 0,
     modifyRow(arg0) {
-      arg0.contextType = outer1_0(seeMoreLabelColor[13]).MessageContextType.SEARCH;
+      arg0.contextType = closure_1_0(seeMoreLabelColor[13]).MessageContextType.SEARCH;
       if (null != closure_0) {
         const obj = { numberOfLines: null, expandable: false, seeMoreLabel: null, seeMoreLabelColor: null };
         obj[0] = tmp3;
@@ -61,7 +58,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     messageSizeCacheRef,
     maxHeight
   };
-  return setting2(messageOptions(10066), obj);
+  return setting2(messageOptions(10105), obj);
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo((message) => {
@@ -159,7 +156,7 @@ const memoResult2 = importAllResult.memo((message) => {
   const items = [message, , , ];
   ({ lineClamp: arr[1], muted: arr[2], pointerEvents: arr[3] } = merged);
   const memo = importAllResult.useMemo(() => {
-    const obj = { message, lineClamp: merged.lineClamp, layout: message(outer1_2[4]).ChannelListLayoutTypes.COZY, muted: null, pointerEvents: null };
+    const obj = { message, lineClamp: merged.lineClamp, layout: message(closure_1_2[4]).ChannelListLayoutTypes.COZY, muted: null, pointerEvents: null };
     let flag = merged.muted;
     if (flag == null) {
       flag = false;
@@ -168,11 +165,11 @@ const memoResult2 = importAllResult.memo((message) => {
     obj[4] = merged.pointerEvents;
     return obj;
   }, items);
-  const tmp3 = merged(5026)(message);
+  const tmp3 = merged(5031)(message);
   let obj = {};
   const merged1 = Object.assign(memo);
   obj = {};
-  const merged2 = Object.assign(message(8159).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(8198).DEFAULT_OPTIONS);
   obj.ignoreMentioned = true;
   obj.renderReplies = false;
   obj.renderThreadEmbeds = false;
@@ -189,7 +186,7 @@ const memoResult2 = importAllResult.memo((message) => {
   obj.seeMoreLabel = "...";
   return <ICYMIMessageRowPreview />;
 });
-let result = require("jsxProd").fileFinishedImporting("modules/icymi/native/ICYMIMessageRowPreview.tsx");
+let result = require("set").fileFinishedImporting("modules/icymi/native/ICYMIMessageRowPreview.tsx");
 
 export const MediaOnlyRowPreview = memoResult;
 export const NonMediaEmbedsRowPreview = memoResult1;

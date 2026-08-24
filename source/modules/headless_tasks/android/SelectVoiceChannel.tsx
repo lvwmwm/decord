@@ -1,35 +1,33 @@
-// Module ID: 17155
-// Function ID: 17156
+// Module ID: 17249
+// Function ID: 17250
 // Name: promise
-// Dependencies: [1391, 4539, 17148, 4975, 8663, 4768, 2]
+// Dependencies: [1391, 4544, 17242, 4980, 8700, 4773, 2]
 
-// Module 17155 (promise)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createRTCConnection from "createRTCConnection";
+// Module 17249 (promise)
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "createRTCConnection" /* 4544 */;
 
 const require = arg1;
-let result = require("module_17148").fileFinishedImporting("modules/headless_tasks/android/SelectVoiceChannel.tsx");
+let result = require("set").fileFinishedImporting("modules/headless_tasks/android/SelectVoiceChannel.tsx");
 
 export default (arg0) => {
-  let importDefault;
-  let require;
   ({ channelId: require, connectToVoice: importDefault } = arg0);
   return new Promise((arg0) => {
-    let closure_0 = arg0;
-    outer1_1(outer1_2[2]).awaitStorage(() => {
-      if (outer1_1) {
-        const voiceChannel = outer2_1(outer2_2[3]).selectVoiceChannel(callback);
-        const obj = outer2_1(outer2_2[3]);
+    closure_0 = arg0;
+    closure_1_1(closure_1_2[2]).awaitStorage(() => {
+      if (closure_1_1) {
+        const voiceChannel = closure_2_1(closure_2_2[3]).selectVoiceChannel(callback);
+        const obj = closure_2_1(closure_2_2[3]);
       }
-      if (outer2_4.getChannelId() === callback) {
-        const channel = outer2_3.getChannel(tmp5);
+      if (closure_2_4.getChannelId() === callback) {
+        const channel = closure_2_3.getChannel(tmp5);
         if (null != channel) {
-          const result = outer2_0(outer2_2[4]).navigateToVoiceChannel(channel);
-          const obj3 = outer2_0(outer2_2[4]);
+          const result = closure_2_0(closure_2_2[4]).navigateToVoiceChannel(channel);
+          const obj3 = closure_2_0(closure_2_2[4]);
         }
       } else {
-        outer2_0(outer2_2[5]).transitionToChannel(tmp5);
-        const obj2 = outer2_0(outer2_2[5]);
+        closure_2_0(closure_2_2[5]).transitionToChannel(tmp5);
+        const obj2 = closure_2_0(closure_2_2[5]);
       }
       callback(true);
     });

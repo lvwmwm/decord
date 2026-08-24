@@ -1,28 +1,28 @@
-// Module ID: 10885
-// Function ID: 10886
+// Module ID: 10924
+// Function ID: 10925
 // Name: PollEmoji
-// Dependencies: [32, 5, 19, 17, 4662, 6727, 1391, 4994, 1922, 21, 4661, 712, 589, 1435, 6930, 1236, 5433, 4734, 7508, 6377, 8429, 7139, 10886, 10458, 7510, 4796, 4219, 6291, 1297, 9966, 8929, 4115, 4664, 8029, 4310, 1363, 10887, 10888, 7159, 4342, 6950, 2]
+// Dependencies: [32, 5, 19, 17, 4669, 6764, 1391, 4999, 1922, 21, 4668, 712, 589, 1435, 6968, 1236, 5438, 4739, 7546, 6408, 8468, 7177, 10925, 10497, 7548, 4801, 4223, 6322, 1297, 10005, 8966, 4119, 4671, 8068, 4314, 1363, 10926, 10927, 7197, 4346, 6988, 2]
 // Exports: default
 
-// Module 10885 (PollEmoji)
-import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING";
-import getEmojiToGroupId from "getEmojiToGroupId";
-import importAllResult from "LegacyBaseButton";
-import get_ActivityIndicator from "Text";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import closure_10 from "getEmojiToGroupId";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import reinjectEphemerals from "reinjectEphemerals";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import jsxProd from "context";
-import createCacheKey from "createCacheKey";
+// Module 10924 (PollEmoji)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import Text from "Text" /* 4739 */;
+import EmojiDefault from "Emoji" /* 6968 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_10 from "getEmojiToGroupId" /* 6764 */;
+import closure_11 from "ensureGuildLoaded" /* 1391 */;
+import closure_12 from "reinjectEphemerals" /* 4999 */;
+import closure_13 from "mergeGuildAvatar" /* 1922 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_14;
-let closure_15;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function PollEmoji(emoji) {
   emoji = emoji.emoji;
   const tmp = callback3();
@@ -32,7 +32,7 @@ function PollEmoji(emoji) {
     if (null != emoji.id) {
       let animated = tmp.animated;
       if (!animated) {
-        const customEmojiById = outer1_10.getCustomEmojiById(tmp.id);
+        const customEmojiById = closure_1_10.getCustomEmojiById(tmp.id);
         let flag;
         if (customEmojiById != null) {
           flag = customEmojiById.animated;
@@ -42,7 +42,7 @@ function PollEmoji(emoji) {
         }
         animated = flag;
       }
-      let obj = outer1_1(outer1_2[13]);
+      let obj = closure_1_1(closure_1_2[13]);
       obj = { id: null, animated: null, size: 16 };
       obj[0] = tmp.id;
       obj[1] = animated;
@@ -50,20 +50,20 @@ function PollEmoji(emoji) {
     }
   });
   obj = { style: emoji.style, src: stateFromStores, name: emoji.name, textEmojiStyle: tmp.emojiText, fastImageStyle: tmp.emojiImage };
-  return callback(importDefault(6930), obj);
+  return callback(EmojiDefault, obj);
 }
 function PollVotesHeader(message) {
   message = message.message;
   const selectedAnswerId = message.selectedAnswerId;
   const setSelectedAnswerId = message.setSelectedAnswerId;
   let ref;
-  let getEmojiToGroupId;
-  let importAllResult;
+  closure_4 = undefined;
+  importAllResult = undefined;
   let tmp = callback3();
   let items = [message.reactions];
   const memo = importAllResult.useMemo(() => message(setSelectedAnswerId[18]).getTotalVotes(message.reactions), items);
   ref = importAllResult.useRef(null);
-  getEmojiToGroupId = importAllResult.useRef(null);
+  closure_4 = importAllResult.useRef(null);
   importAllResult = importAllResult.useRef(false);
   const items1 = [selectedAnswerId];
   const effect = importAllResult.useEffect(() => {
@@ -79,7 +79,7 @@ function PollVotesHeader(message) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -100,34 +100,34 @@ function PollVotesHeader(message) {
               current5 = undefined;
               closure_2 = undefined;
               v0 = undefined;
-              let getEmojiToGroupId;
+              closure_4 = undefined;
               let scrollWidth;
               let scrollPageX;
               let styles;
               let width;
               let pageX;
               let x;
-              let ensureGuildLoaded;
+              closure_11 = undefined;
               current4 = v0.current;
-              current5 = outer1_4.current;
+              current5 = closure_1_4.current;
               if (null != current4) {
                 if (null != current5) {
                   let promise = new Promise((arg0) => {
-                    const current4 = arg0;
+                    current4 = arg0;
                     current4.measure((arg0, arg1, scrollWidth, arg3, scrollPageX) => callback({ scrollWidth, scrollPageX }));
                   });
                   promise = new Promise((arg0) => {
-                    let closure_0 = arg0;
+                    closure_0 = arg0;
                     current5.measure((arg0, arg1, width, arg3, pageX) => callback({ width, pageX }));
                   });
                   const promise1 = new Promise((arg0) => {
-                    let closure_0 = arg0;
+                    closure_0 = arg0;
                     current5.measureLayout(closure_0, (arg0) => callback({ x: arg0 }));
                   });
                   const items = [promise, promise, promise1];
                   closure_2 = 1;
                   v0 = 1;
-                  const obj1 = { value: null, done: false };
+                  obj1 = { value: null, done: false };
                   obj1[0] = Promise.all(items);
                   return obj1;
                 }
@@ -145,14 +145,14 @@ function PollVotesHeader(message) {
           } else {
             closure_2 = arg1;
             v0 = v0(closure_2, 3);
-            getEmojiToGroupId = v0[0];
-            scrollWidth = getEmojiToGroupId.scrollWidth;
-            scrollPageX = getEmojiToGroupId.scrollPageX;
+            closure_4 = v0[0];
+            scrollWidth = closure_4.scrollWidth;
+            scrollPageX = closure_4.scrollPageX;
             styles = v0[1];
             width = styles.width;
             pageX = styles.pageX;
             x = v0[2].x;
-            ensureGuildLoaded = !outer1_9.useReducedMotion;
+            closure_11 = !closure_1_9.useReducedMotion;
             if (scrollWidth.current) {
               if (pageX >= scrollPageX) {
                 if (pageX + width > scrollPageX + scrollWidth) {
@@ -160,7 +160,7 @@ function PollVotesHeader(message) {
                   if (current3 != null) {
                     const obj3 = { x: null, y: 0, animated: null };
                     obj3[0] = x + width - scrollWidth + 16;
-                    obj3[2] = ensureGuildLoaded;
+                    obj3[2] = closure_11;
                     current3.scrollTo(obj3);
                   }
                 }
@@ -170,19 +170,19 @@ function PollVotesHeader(message) {
               if (current != null) {
                 obj = { x: null, y: 0, animated: null };
                 obj[0] = x + width / 2 - scrollWidth / 2;
-                obj[2] = ensureGuildLoaded;
+                obj[2] = closure_11;
                 current.scrollTo(obj);
               }
               scrollWidth.current = true;
               v0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
           const current2 = v0.current;
           if (current2 != null) {
             const obj4 = { x: null, y: 0, animated: null };
             obj4[0] = x - 16;
-            obj4[2] = ensureGuildLoaded;
+            obj4[2] = closure_11;
             current2.scrollTo(obj4);
           }
         } catch (tmp36) {
@@ -203,7 +203,7 @@ function PollVotesHeader(message) {
     obj = { style: null, variant: "text-md/medium", color: "text-default", children: null };
     obj[0] = tmp.subheaderText;
     const intl = tmp5(tmp6[15]).intl;
-    let obj1 = { count: null };
+    obj1 = { count: null };
     obj1[0] = memo;
     obj[3] = intl.format(tmp5(tmp6[15]).t.XRkuof, obj1);
     items2[1] = callback(tmp5(tmp6[17]).Text, obj);
@@ -219,12 +219,10 @@ function PollVotesHeader(message) {
       const tmp = selectedAnswerId === String(answer.answer_id);
       let tmp4;
       if (tmp) {
-        tmp4 = getEmojiToGroupId;
+        tmp4 = closure_4;
       }
-      const obj = { ref: tmp4, answer, selected: tmp, reaction: null, setSelectedAnswerId: null };
-      obj[3] = message(setSelectedAnswerId[20]).reactionForId(message.reactions, String(answer.answer_id));
-      obj[4] = setSelectedAnswerId;
-      return outer1_14(outer1_18, obj, answer.answer_id);
+      const obj = { ref: tmp4, answer, selected: tmp, reaction: message(setSelectedAnswerId[20]).reactionForId(message.reactions, String(answer.answer_id)), setSelectedAnswerId };
+      return closure_1_14(closure_1_18, obj, answer.answer_id);
     });
     obj2[1] = callback(closure_8, obj3);
     items2[2] = callback(tmp5(tmp6[19]).GestureDetector, obj2);
@@ -249,8 +247,8 @@ function VotersList(channelId) {
   const reactorsOnScrollNative = obj.useReactorsOnScrollNative(obj);
   const tmp = callback3();
   const tmp2 = messageId;
-  const items = [ensureGuildLoaded];
-  stateFromStores = channelId(analyticsLocations[12]).useStateFromStores(items, () => outer1_11.getChannel(channelId));
+  const items = [closure_11];
+  stateFromStores = channelId(analyticsLocations[12]).useStateFromStores(items, () => closure_1_11.getChannel(channelId));
   const items1 = [stateFromStores, reactors.length, channelId, messageId, analyticsLocations];
   const callback = sharedValue.useCallback((item) => {
     item = item.item;
@@ -271,7 +269,7 @@ function VotersList(channelId) {
     }
     tmpResult = tmp(tmp2[26]);
     const userTag = tmpResult.getUserTag(item);
-    let user = outer1_13.getUser(item.id);
+    let user = closure_1_13.getUser(item.id);
     obj = { start: 0 === index, end: reactors.length - 1 === index, icon: null, label: null, subLabel: null, onPress: null };
     let guild_id1;
     if (stateFromStores != null) {
@@ -283,10 +281,10 @@ function VotersList(channelId) {
     }
     obj[1] = user;
     obj[2] = channelId(analyticsLocations[28]).AvatarSizes.SMALL;
-    obj[2] = outer1_14(channelId(analyticsLocations[28]).Avatar, obj);
+    obj[2] = closure_1_14(channelId(analyticsLocations[28]).Avatar, obj);
     let tmp9Result = nickname;
     if (nickname == null) {
-      const obj1 = { user: null };
+      obj1 = { user: null };
       obj1[0] = item;
       tmp9Result = tmp9(tmp(tmp2[29]), obj1);
     }
@@ -297,9 +295,9 @@ function VotersList(channelId) {
     }
     obj[4] = tmp13;
     obj[5] = function onPress() {
-      return messageId(analyticsLocations[30])({ userId: item.id, localUser: item, sourceAnalyticsLocations: outer1_2, channelId: item, messageId: outer1_1 });
+      return messageId(analyticsLocations[30])({ userId: item.id, localUser: item, sourceAnalyticsLocations: closure_1_2, channelId: item, messageId: closure_1_1 });
     };
-    return outer1_14(channelId(analyticsLocations[27]).TableRow, obj);
+    return closure_1_14(channelId(analyticsLocations[27]).TableRow, obj);
   }, items1);
   const obj3 = channelId(analyticsLocations[12]);
   const obj4 = sharedValue;
@@ -320,7 +318,7 @@ function VotersList(channelId) {
   const obj5 = channelId(analyticsLocations[31]);
   class I {
     constructor() {
-      obj = { flex: 1, opacity: channelId.get(), marginBottom: 32 };
+      obj = { flex: 1, opacity: closure_5.get(), marginBottom: 32 };
       return obj;
     }
   }
@@ -328,43 +326,42 @@ function VotersList(channelId) {
   I.__workletHash = 8593850252158;
   I.__initData = closure_20;
   const animatedStyle = channelId(analyticsLocations[31]).useAnimatedStyle(I);
-  obj = { style: animatedStyle, children: null };
-  obj[1] = callback(channelId(analyticsLocations[33]).BottomSheetFlashList, { contentContainerStyle: tmp.list, data: reactors, renderItem: callback, onScroll: reactorsOnScrollNative });
+  obj = { style: animatedStyle, children: callback(tmp5(tmp3[33]).BottomSheetFlashList, obj1) };
   return callback(tmp2(analyticsLocations[31]).View, obj);
 }
 function NoResults() {
   const tmp = callback3();
   let obj = { style: tmp.noResultsContainer, children: null };
   obj = { style: tmp.noResultsImage, source: null };
-  const tmp4 = importDefault(4310)();
+  const tmp4 = useThemeDefault();
   const tmp5 = closure_15;
   const tmp6 = closure_7;
   const tmp8 = closure_6;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(10887);
+    let tmp2Result = tmp2(10926);
   } else {
-    tmp2Result = tmp2(10888);
+    tmp2Result = tmp2(10927);
   }
   obj[1] = tmp2Result;
   const items = [closure_14(tmp8, obj), , ];
   obj = { style: tmp.noResultsTitle, variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp9(1236).intl;
-  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.vhQK3o);
-  items[1] = closure_14(require(4734) /* Text */.Text, obj);
-  const obj1 = { style: tmp.noResultsSubtitle, variant: "text-sm/semibold", color: "text-default", children: null };
+  obj[3] = intl.string(getSystemLocale.t.vhQK3o);
+  items[1] = closure_14(Text.Text, obj);
+  obj1 = { style: tmp.noResultsSubtitle, variant: "text-sm/semibold", color: "text-default", children: null };
   const intl2 = tmp9(1236).intl;
-  obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.bwytdh);
-  items[2] = closure_14(require(4734) /* Text */.Text, obj1);
+  obj1[3] = intl2.string(getSystemLocale.t.bwytdh);
+  items[2] = closure_14(Text.Text, obj1);
   obj[1] = items;
   return tmp5(tmp6, obj);
 }
 let c5 = importAllResult;
-({ Image: closure_6, View: error, ScrollView: metroImportAll } = get_ActivityIndicator);
+({ Image: closure_6, View: error, ScrollView: closure_8 } = get_ActivityIndicator);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 let obj = { headerText: { textAlign: "center", paddingHorizontal: 16 }, subheaderText: { textAlign: "center", marginTop: 2, paddingHorizontal: 16 }, answerScroll: { marginTop: 24 }, answerScrollContainer: { gap: 4, paddingHorizontal: 16 }, answerName: { marginTop: 16, marginHorizontal: 16, marginBottom: 8 }, list: { paddingHorizontal: 16 }, answerButton: null, answerSelected: null, answerEmoji: null, answerText: null, emojiText: null, emojiImage: null, noResultsContainer: null, noResultsImage: null, noResultsTitle: null, noResultsSubtitle: null };
-obj = { padding: 8, flexDirection: "row", alignItems: "center", borderRadius: require("Themes").radii.xs, maxWidth: 200 };
+obj = { padding: 8, flexDirection: "row", alignItems: "center", borderRadius: ThemesDefault.radii.xs, maxWidth: 200 };
 obj[6] = obj;
-createCacheKey = { backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 obj[7] = createCacheKey;
 obj[8] = { marginRight: 8 };
 obj[9] = { flexShrink: 1 };
@@ -376,9 +373,6 @@ obj[14] = { marginTop: 16, textAlign: "center" };
 obj[15] = { marginTop: 4, textAlign: "center" };
 let closure_16 = createCacheKey.createStyles(obj);
 let closure_18 = importAllResult.forwardRef((answer, ref) => {
-  let reaction;
-  let selected;
-  let setSelectedAnswerId;
   answer = answer.answer;
   ({ reaction, selected, setSelectedAnswerId } = answer);
   const tmp = callback3();
@@ -422,40 +416,40 @@ let closure_18 = importAllResult.forwardRef((answer, ref) => {
   const items2 = [tmp8, , ];
   let tmp11 = null;
   if (null != answer.poll_media.text) {
-    const obj1 = { style: null, variant: "text-sm/semibold", color: null, lineClamp: 1, children: null };
+    obj1 = { style: null, variant: "text-sm/semibold", color: null, lineClamp: 1, children: null };
     obj1[0] = tmp.answerText;
     obj1[2] = str;
     obj1[4] = answer.poll_media.text;
-    tmp11 = callback(tmp3(4734).Text, obj1);
+    tmp11 = callback(tmp3(4739).Text, obj1);
   }
   items2[1] = tmp11;
   const obj2 = { variant: "text-sm/semibold", color: str, lineClamp: 1, children: null };
   const items3 = [" ", "(", num.toLocaleString(), ")"];
   obj2[3] = items3;
-  items2[2] = closure_15(answer(4734).Text, obj2);
+  items2[2] = closure_15(answer(4739).Text, obj2);
   obj[6] = items2;
-  return closure_15(answer(5433).PressableHighlight, obj);
+  return closure_15(answer(5438).PressableHighlight, obj);
 });
 let closure_20 = { code: "function PollVotesActionSheetTsx1(){const{opacity}=this.__closure;return{flex:1,opacity:opacity.get(),marginBottom:32};}" };
-let result = require("noop").fileFinishedImporting("modules/polls/native/PollVotesActionSheet.tsx");
+let result = require("set").fileFinishedImporting("modules/polls/native/PollVotesActionSheet.tsx");
 
 export default function PollVotesActionSheet(channelId) {
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   let first;
   let stateFromStores;
-  let c4;
+  closure_4 = undefined;
   const tmp = callback3();
   let obj = importAllResult;
   const tmp4 = stateFromStores(importAllResult.useState(channelId.initialAnswerId), 2);
   first = tmp4[0];
-  let obj1 = channelId(first[12]);
-  const items = [reinjectEphemerals];
-  stateFromStores = obj1.useStateFromStores(items, () => outer1_12.getMessage(channelId, messageId));
-  c4 = tmp8;
+  obj1 = channelId(first[12]);
+  const items = [closure_12];
+  stateFromStores = obj1.useStateFromStores(items, () => closure_1_12.getMessage(channelId, messageId));
+  closure_4 = tmp8;
   const items1 = [null != stateFromStores && null != stateFromStores.poll];
   const effect = obj.useEffect(() => {
-    if (!c4) {
+    if (!closure_4) {
       messageId(first[39]).hideActionSheet("PollVotesActionSheet");
       const obj = messageId(first[39]);
     }

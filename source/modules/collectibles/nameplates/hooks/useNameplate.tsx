@@ -1,27 +1,27 @@
-// Module ID: 8961
-// Function ID: 8962
+// Module ID: 8998
+// Function ID: 8999
 // Name: useNameplate
-// Dependencies: [19, 1990, 589, 1946, 2]
+// Dependencies: [19, 1991, 589, 1946, 2]
 // Exports: useNameplate
 
-// Module 8961 (useNameplate)
-import noop from "noop";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
+// Module 8998 (useNameplate)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "trackCommunicationDisabled" /* 1991 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/collectibles/nameplates/hooks/useNameplate.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/nameplates/hooks/useNameplate.tsx");
 
 export const useNameplate = function useNameplate(user) {
   user = user.user;
   const guildId = user.guildId;
   let stateFromStores;
-  const items = [trackCommunicationDisabled];
+  const items = [closure_3];
   stateFromStores = user(guildId[2]).useStateFromStores(items, () => {
     let member = null;
     if (null != guildId) {
       member = null;
       if (null != user) {
-        member = outer1_3.getMember(tmp, tmp3.id);
+        member = closure_1_3.getMember(tmp, tmp3.id);
       }
     }
     return member;

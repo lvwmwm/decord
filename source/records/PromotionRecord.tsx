@@ -1,13 +1,15 @@
-// Module ID: 7629
-// Function ID: 7630
+// Module ID: 7667
+// Function ID: 7668
 // Name: createFromServer
-// Dependencies: [1931, 7630, 7656, 1403, 2]
+// Dependencies: [1931, 7668, 7694, 1403, 2]
 
-// Module 7629 (createFromServer)
-import "toJS";
-import createFromServer from "createFromServer";
+// Module 7667 (createFromServer)
+import hasFlag from "hasFlag" /* 1403 */;
+import toJSDefault from "toJS" /* 1931 */;
+import closure_2 from "createFromServer" /* 7668 */;
 
-const require = arg1;
+require = arg1;
+toJSDefault;
 let PromotionRecord;
 class PromotionRecord extends tmp2 {
   constructor(arg0) {
@@ -51,8 +53,6 @@ class PromotionRecord extends tmp2 {
 }
 const prototype = PromotionRecord.prototype;
 PromotionRecord["createFromServer"] = function createFromServer(id) {
-  let allowed_countries;
-  let partner_id;
   const date = new Date(id.start_date);
   const date1 = new Date(id.end_date);
   const obj = { id: id.id, trialId: id.trial_id, startDate: date, endDate: date1, outboundRedemptionEndDate: null, inboundHeaderText: null, inboundBodyText: null, inboundHelpCenterLink: null, outboundTitle: null, outboundRedemptionModalBody: null, outboundTermsAndConditions: null, outboundRedemptionPageLink: null, outboundRedemptionUrlFormat: null, flags: null, inboundRestrictedCountries: null, outboundRestrictedCountries: null, allowedCountries: null, countryListMode: null, promotionType: null, partnerId: null, marketingComponents: null, rewardSkuIds: null, bogoRewardEnabled: null, promotionKey: null };
@@ -121,7 +121,7 @@ PromotionRecord["createFromServer"] = function createFromServer(id) {
   if (marketing_components == null) {
     marketing_components = [];
   }
-  obj[20] = marketing_components.map((arg0) => outer1_2.createFromServer(arg0, { startDate: date, endDate: date1 }));
+  obj[20] = marketing_components.map((arg0) => closure_1_2.createFromServer(arg0, { startDate: date, endDate: date1 }));
   const metadata = id.metadata;
   let reward_sku_ids;
   if (metadata != null) {
@@ -169,13 +169,13 @@ PromotionRecord["createFromServer"] = function createFromServer(id) {
 };
 Object.defineProperty(prototype, "isBogo", {
   get: function isBogo() {
-    return this.promotionType === require(7656) /* CountryListMode */.PromotionTypes.BOGO;
+    return this.promotionType === require(7694) /* CountryListMode */.PromotionTypes.BOGO;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isMarketingMoment", {
   get: function isMarketingMoment() {
-    return this.promotionType === require(7656) /* CountryListMode */.PromotionTypes.MARKETING_MOMENT;
+    return this.promotionType === require(7694) /* CountryListMode */.PromotionTypes.MARKETING_MOMENT;
   },
   set: undefined
 });
@@ -186,19 +186,19 @@ Object.defineProperty(prototype, "hasBogoReward", {
   set: undefined
 });
 prototype["hasFlag"] = function hasFlag(arg0) {
-  return require(1403) /* hasFlag */.hasFlag(this.flags, arg0);
+  return hasFlag.hasFlag(this.flags, arg0);
 };
 prototype["isCountryRestricted"] = function isCountryRestricted(arg0) {
   const self = this;
-  if (this.countryListMode === require(7656) /* CountryListMode */.CountryListMode.ALLOWLIST) {
+  if (this.countryListMode === require(7694) /* CountryListMode */.CountryListMode.ALLOWLIST) {
     const allowedCountries = self.allowedCountries;
     return !allowedCountries.includes(arg0);
   } else {
     const promotionType = self.promotionType;
-    if (tmp(7656).PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
-      if (tmp(7656).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
-        if (tmp(7656).PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
-          if (tmp(7656).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
+    if (tmp(7694).PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
+      if (tmp(7694).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
+        if (tmp(7694).PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
+          if (tmp(7694).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
             return false;
           }
         }
@@ -210,6 +210,6 @@ prototype["isCountryRestricted"] = function isCountryRestricted(arg0) {
     return inboundRestrictedCountries.includes(arg0);
   }
 };
-const result = require("CountryListMode").fileFinishedImporting("records/PromotionRecord.tsx");
+const result = require("set").fileFinishedImporting("records/PromotionRecord.tsx");
 
 export default PromotionRecord;

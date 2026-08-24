@@ -1,30 +1,29 @@
-// Module ID: 12969
-// Function ID: 12970
+// Module ID: 13024
+// Function ID: 13025
 // Name: GuildBoostingGuildListItem
-// Dependencies: [19, 17, 1910, 5078, 676, 21, 4661, 712, 4310, 589, 4281, 8910, 7302, 7877, 7188, 4734, 10240, 1236, 12938, 2]
+// Dependencies: [19, 17, 1910, 5083, 676, 21, 4668, 712, 4314, 589, 4285, 8947, 7340, 7916, 7226, 4739, 10279, 1236, 12993, 2]
 // Exports: default
 
-// Module 12969 (GuildBoostingGuildListItem)
-import "set";
-import get_ActivityIndicator from "getSystemLocale";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import insertUnsortedGuilds from "insertUnsortedGuilds";
-import { NUMBER_OF_GUILDS_TO_RECOMMEND_BOOSTING as closure_7 } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 13024 (GuildBoostingGuildListItem)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useGuildAppliedBoostCountDefault from "useGuildAppliedBoostCount" /* 4285 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import closure_6 from "insertUnsortedGuilds" /* 5083 */;
+import { NUMBER_OF_GUILDS_TO_RECOMMEND_BOOSTING as closure_7 } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function GuildBoostingGuildListItem(guildId) {
   guildId = guildId.guildId;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = guildId(589);
-  const items = [createGuildRecordFromRust];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(guildId));
-  importDefault(4281);
+  const items = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getGuild(guildId));
+  useGuildAppliedBoostCountDefault;
   if (stateFromStores != null) {
     const id = stateFromStores.id;
   }
@@ -33,26 +32,26 @@ function GuildBoostingGuildListItem(guildId) {
     obj = { style: null, activeOpacity: 0.5, accessibilityRole: "button", onPress: null, children: null };
     obj[0] = tmp.guildCard;
     obj[3] = function onPress() {
-      guildId(outer1_2[12]).transitionToGuild(guildId, { state: { shouldShowSubscribeTooltip: true } });
-      const obj = guildId(outer1_2[12]);
-      outer1_1(outer1_2[13]).close();
+      guildId(closure_1_2[12]).transitionToGuild(guildId, { state: { shouldShowSubscribeTooltip: true } });
+      const obj = guildId(closure_1_2[12]);
+      closure_1_1(closure_1_2[13]).close();
     };
-    let tmp2Result = tmp2(8910);
+    let tmp2Result = tmp2(8947);
     obj = { guild: null, size: null, style: null, selected: false };
     obj[0] = stateFromStores;
-    tmp2Result = tmp2(7188);
-    obj[1] = tmp5(7188).GuildIconSizes.LARGE;
+    tmp2Result = tmp2(7226);
+    obj[1] = tmp5(7226).GuildIconSizes.LARGE;
     obj[2] = tmp.guildIcon;
     const items1 = [callback(tmp2Result, obj), , ];
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.guildCardDescription;
     const obj2 = { variant: "text-md/bold", children: null };
     obj2[1] = stateFromStores.name;
-    const items2 = [callback(tmp5(4734).Text, obj2), ];
+    const items2 = [callback(tmp5(4739).Text, obj2), ];
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.subscriptionInfo;
     const obj4 = { source: null, style: null, resizeMode: "contain", resizeMethod: "resize" };
-    obj4[0] = tmp2(10240);
+    obj4[0] = tmp2(10279);
     obj4[1] = tmp.premiumGuildImage;
     const items3 = [callback(closure_4, obj4), ];
     const obj5 = { variant: "text-xs/medium", children: null };
@@ -60,7 +59,7 @@ function GuildBoostingGuildListItem(guildId) {
     const obj6 = { subscriberCount: null };
     obj6[0] = tmp8;
     obj5[1] = intl.format(tmp5(1236).t.If4iTS, obj6);
-    items3[1] = callback(tmp5(4734).Text, obj5);
+    items3[1] = callback(tmp5(4739).Text, obj5);
     obj3[1] = items3;
     items2[1] = callback2(closure_3, obj3);
     obj1[1] = items2;
@@ -68,31 +67,32 @@ function GuildBoostingGuildListItem(guildId) {
     const obj7 = { guild: null, theme: null };
     obj7[0] = stateFromStores;
     obj7[1] = tmp4;
-    items1[2] = callback(tmp2(12938), obj7);
+    items1[2] = callback(tmp2(12993), obj7);
     obj[4] = items1;
     tmp9 = callback2(tmp2Result, obj);
   }
   return tmp9;
 }
+noopAll;
 ({ View: c3, Image: c4 } = get_ActivityIndicator);
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 createCacheKey = { guildCard: null, guildIcon: null, guildCardDescription: null, subscriptionInfo: null, premiumGuildImage: null };
-createCacheKey = { padding: 12, paddingLeft: 16, borderRadius: require("Themes").radii.xs, marginBottom: 8, minHeight: 96, flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey = { padding: 12, paddingLeft: 16, borderRadius: ThemesDefault.radii.xs, marginBottom: 8, minHeight: 96, flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { marginRight: 16 };
 createCacheKey[2] = { flex: 1 };
 createCacheKey[3] = { flexDirection: "row", alignItems: "center" };
 createCacheKey[4] = { width: 18, height: 12, marginLeft: -5 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createGuildRecordFromRust").fileFinishedImporting("components_native/premium/GuildBoostingGuildList.tsx");
+let closure_10 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("components_native/premium/GuildBoostingGuildList.tsx");
 
 export default function GuildBoostingGuildList(guildCount) {
   guildCount = guildCount.guildCount;
   if (guildCount === undefined) {
     guildCount = closure_7;
   }
-  let obj = require(589) /* initialize */;
-  const items = [insertUnsortedGuilds];
+  let obj = initialize;
+  const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => flattenedGuildIds.getFlattenedGuildIds());
   obj = { style: guildCount.style, children: null };
   const substr = stateFromStores.slice(0, guildCount);

@@ -1,23 +1,28 @@
-// Module ID: 11007
-// Function ID: 11008
+// Module ID: 11046
+// Function ID: 11047
 // Name: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
-// Dependencies: [676, 7427, 8211, 5042, 2]
+// Dependencies: [676, 7465, 8251, 5047, 2]
 // Exports: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 
-// Module 11007 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
-import { AnalyticEvents } from "ME";
+// Module 11046 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 5047 */;
+import trackInviteDefault from "trackInvite" /* 7465 */;
+import identityHook from "identityHook" /* 8251 */;
 
-const result = require("identityHook").fileFinishedImporting("modules/guild_role_subscriptions/native/system_message/GuildRoleSubscriptionSystemMessageUtils.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/guild_role_subscriptions/native/system_message/GuildRoleSubscriptionSystemMessageUtils.tsx");
 
 export const handleRoleSubscriptionPurchaseSystemMessageCtaClicked = function handleRoleSubscriptionPurchaseSystemMessageCtaClicked(messageChannel, message, stickerId) {
-  let obj = importDefault(7427);
+  let obj = trackInviteDefault;
   obj = { channel: messageChannel, message, shouldMention: true, showMentionToggle: true };
-  obj.sendGreetMessage(messageChannel.id, stickerId, importDefault(7427).getSendMessageOptionsForReply(obj));
-  const obj2 = importDefault(7427);
-  const roleSubscriptionPurchaseSystemMessageEventProperties = require(8211) /* identityHook */.getRoleSubscriptionPurchaseSystemMessageEventProperties(messageChannel, message);
-  const obj4 = require(8211) /* identityHook */;
+  obj.sendGreetMessage(messageChannel.id, stickerId, trackInviteDefault.getSendMessageOptionsForReply(obj));
+  const obj2 = trackInviteDefault;
+  const roleSubscriptionPurchaseSystemMessageEventProperties = identityHook.getRoleSubscriptionPurchaseSystemMessageEventProperties(messageChannel, message);
+  const obj4 = identityHook;
   obj = {};
   const merged = Object.assign(roleSubscriptionPurchaseSystemMessageEventProperties);
   obj.sticker_id = stickerId;
-  importDefault(5042).trackWithMetadata(AnalyticEvents.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED, obj);
+  collectGuildAnalyticsMetadataDefault.trackWithMetadata(AnalyticEvents.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED, obj);
 };

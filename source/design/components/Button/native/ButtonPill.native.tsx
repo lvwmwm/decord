@@ -1,56 +1,50 @@
-// Module ID: 4754
-// Function ID: 4755
+// Module ID: 4759
+// Function ID: 4760
 // Name: PillWrapper
-// Dependencies: [32, 19, 17, 21, 4749, 4661, 712, 4750, 4104, 4097, 4755, 4756, 4115, 1363, 4760, 1356, 4744, 4748, 2]
+// Dependencies: [32, 19, 17, 21, 4754, 4668, 712, 4755, 4107, 4100, 4760, 4761, 4119, 1363, 4765, 1356, 4749, 4753, 2]
 // Exports: ButtonPill
 
-// Module 4754 (PillWrapper)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "SUBTLE_SPRING";
-import jsxProd from "jsxProd";
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA";
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA";
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA";
-import createCacheKey from "createCacheKey";
+// Module 4759 (PillWrapper)
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import ManaContext from "ManaContext" /* 4107 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import MINIMUM_HIT_AREA2 from "MINIMUM_HIT_AREA" /* 4754 */;
+import styleProperties from "styleProperties" /* 4755 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4754 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function PillWrapper(expressivePressState) {
-  let children;
-  let expressiveRiveRef;
-  let shiny;
-  let size;
-  let style;
-  let variant;
   ({ children, variant, style, shiny } = expressivePressState);
   if (shiny === undefined) {
     shiny = false;
   }
   expressivePressState = expressivePressState.expressivePressState;
   ({ expressiveRiveRef, size } = expressivePressState);
-  let obj = require(4750) /* styleProperties */;
+  let obj = styleProperties;
   const buttonPillStyles = obj.useButtonPillStyles(variant, expressivePressState.pressed);
-  let obj1 = require(4750) /* styleProperties */;
+  obj1 = styleProperties;
   const gradientPillStyles = obj1.useGradientPillStyles(variant);
-  let obj2 = require(4104) /* ManaContext */;
+  let obj2 = ManaContext;
   const tmp5 = callback3(variant, size);
-  let obj3 = require(4097) /* map */;
-  let items = [obj3.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT), , ];
-  let obj4 = require(4097) /* map */;
-  items[1] = obj4.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
-  let obj5 = require(4097) /* map */;
-  items[2] = obj5.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
-  const items1 = [importDefault(712).unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS, importDefault(712).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS_2, importDefault(712).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS];
+  let obj3 = map;
+  let items = [obj3.useToken(ThemesDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT), , ];
+  let obj4 = map;
+  items[1] = obj4.useToken(ThemesDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
+  let obj5 = map;
+  items[2] = obj5.useToken(ThemesDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
+  const items1 = [ThemesDefault.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS, ThemesDefault.unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS_2, ThemesDefault.unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS];
   let tmp7 = null;
   if (shiny) {
     obj = { variant: null };
     obj[0] = variant;
-    tmp7 = callback2(tmp(4755).ButtonShine, obj);
+    tmp7 = callback2(tmp(4760).ButtonShine, obj);
   }
   if ("experimental_premium-primary" !== variant) {
     if ("experimental_premium-basic" !== variant) {
@@ -71,7 +65,7 @@ function PillWrapper(expressivePressState) {
         obj2[1] = tmp5.expressivePill.borderRadius;
         const merged = Object.assign(expressivePressState);
         obj1[4] = obj2;
-        obj[1] = callback2(tmp(4104).ExpressiveButtonRive, obj1);
+        obj[1] = callback2(tmp(4107).ExpressiveButtonRive, obj1);
         tmp11Result = tmp11(closure_5, obj);
         const tmp12 = closure_5;
         tmpResult = tmp(1363);
@@ -83,7 +77,7 @@ function PillWrapper(expressivePressState) {
       obj4[0] = items4;
       const items5 = [children, tmp7];
       obj4[1] = items5;
-      items3[1] = tmp9(tmp6(4115).View, obj4);
+      items3[1] = tmp9(tmp6(4119).View, obj4);
       obj3[0] = items3;
     }
     return tmp9(tmp10, obj3);
@@ -95,10 +89,10 @@ function PillWrapper(expressivePressState) {
   }
   const obj6 = { children: null };
   obj5[3] = items;
-  const items7 = [callback2(importDefault(4756), obj5), ];
+  const items7 = [callback2(LinearGradientDefault, obj5), ];
   const items8 = [style, buttonPillStyles];
   const items9 = [children, tmp7];
-  items7[1] = closure_8(importDefault(4115).View, { style: items8, children: items9 });
+  items7[1] = closure_8(_modDef4119.View, { style: items8, children: items9 });
   obj6[0] = items7;
   obj3 = obj6;
 }
@@ -120,7 +114,7 @@ class BasicButtonPill {
       flag = false;
     }
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f32743(str, DEFAULT_BUTTON_SIZE);
+    tmp3 = closure_14(str, DEFAULT_BUTTON_SIZE);
     obj = { variant: str, size: DEFAULT_BUTTON_SIZE, style: items, pressed, shiny: flag, expressiveRiveRef, expressivePressState, children: jsx(View, obj) };
     items = [, ];
     items[0] = tmp3.pill;
@@ -139,7 +133,7 @@ class LoadingButtonPill {
     DEFAULT_BUTTON_SIZE = global.size;
     if (DEFAULT_BUTTON_SIZE === undefined) {
       tmp = c0;
-      tmp2 = c2;
+      tmp2 = closure_2;
       DEFAULT_BUTTON_SIZE = require("MINIMUM_HIT_AREA").DEFAULT_BUTTON_SIZE;
     }
     flag = global.loading;
@@ -148,16 +142,16 @@ class LoadingButtonPill {
     }
     c0 = flag;
     loaderSize = global.loaderSize;
-    useRef = undefined;
-    c2 = undefined;
+    closure_1 = undefined;
+    closure_2 = undefined;
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f32743(str, DEFAULT_BUTTON_SIZE);
-    useRef = noop.useRef(null);
-    tmp4 = _slicedToArray(noop.useState(flag), 2);
-    [tmp5, c2] = tmp4;
+    tmp3 = closure_14(str, DEFAULT_BUTTON_SIZE);
+    closure_1 = closure_4.useRef(null);
+    tmp4 = closure_3(closure_4.useState(flag), 2);
+    [tmp5, closure_2] = tmp4;
     items = [];
     items[0] = flag;
-    effect = noop.useEffect(() => {
+    effect = closure_4.useEffect(() => {
       if (null != ref.current) {
         const _clearTimeout = clearTimeout;
         clearTimeout(tmp.current);
@@ -171,7 +165,7 @@ class LoadingButtonPill {
         }, 500);
       }
     }, items);
-    tmp7 = _slicedToArray(useLoadingStyles(flag, DEFAULT_BUTTON_SIZE), 2);
+    tmp7 = closure_3(useLoadingStyles(flag, DEFAULT_BUTTON_SIZE), 2);
     obj = { variant: str, size: DEFAULT_BUTTON_SIZE, style: items1, pressed, expressiveRiveRef, expressivePressState, children: null };
     items1 = [, ];
     items1[0] = tmp3.pill;
@@ -180,12 +174,12 @@ class LoadingButtonPill {
     [tmp8, tmp9] = tmp7;
     tmp10 = jsxs;
     tmp11 = PillWrapper;
-    tmp13 = c2;
+    tmp13 = closure_2;
     items2 = [, ];
     items2[0] = tmp3.childContainer;
     items2[1] = tmp8;
     items3 = [, ];
-    items3[0] = jsx(require("module_4115").View, { style: items2, children });
+    items3[0] = jsx(require("module_4119").View, { style: items2, children });
     obj = { style: items4, children: null };
     items4 = [, ];
     items4[0] = tmp3.ellipsis;
@@ -201,7 +195,7 @@ class LoadingButtonPill {
       tmp12Result = tmp12(require("EllipsisCircle").Ellipsis, obj1);
     }
     obj[1] = tmp12Result;
-    items3[1] = tmp12(require("module_4115").View, obj);
+    items3[1] = tmp12(require("module_4119").View, obj);
     obj[6] = items3;
     return tmp10(tmp11, obj);
   }
@@ -226,7 +220,7 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
       let withDelayResult = withSpringResult;
       if (!tmp3) {
         let tmpResult = tmp(tmp2[12]);
-        withDelayResult = tmpResult.withDelay(outer1_10, withSpringResult);
+        withDelayResult = tmpResult.withDelay(closure_1_10, withSpringResult);
       }
       obj[0] = withDelayResult;
       const items = [{ translateY: 0 }];
@@ -265,7 +259,7 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
       let withDelayResult = withSpringResult;
       if (tmp3) {
         let tmpResult = tmp(tmp2[12]);
-        withDelayResult = tmpResult.withDelay(outer1_10, withSpringResult);
+        withDelayResult = tmpResult.withDelay(closure_1_10, withSpringResult);
       }
       obj[0] = withDelayResult;
       const items = [{ translateY: 0 }];
@@ -294,7 +288,7 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
   return items;
 }
 ({ View: c5, StyleSheet: closure_6 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
+({ jsx: error, jsxs: closure_8, Fragment: c9 } = jsxProd);
 let c10 = 300;
 const buttonPadding = MINIMUM_HIT_AREA.getButtonPadding(require("MINIMUM_HIT_AREA").SMALL_BUTTON_HEIGHT, require("MINIMUM_HIT_AREA").SMALL_BUTTON_ICON_SIZE);
 const buttonPadding2 = MINIMUM_HIT_AREA.getButtonPadding(require("MINIMUM_HIT_AREA").MEDIUM_BUTTON_HEIGHT, require("MINIMUM_HIT_AREA").MEDIUM_BUTTON_ICON_SIZE);
@@ -302,42 +296,42 @@ const buttonPadding3 = MINIMUM_HIT_AREA.getButtonPadding(require("MINIMUM_HIT_AR
 let closure_14 = createCacheKey.createStyles((arg0, arg1) => {
   if ("sm" === arg1) {
     let obj = { minHeight: null, minWidth: null, paddingHorizontal: null, paddingVertical: null };
-    obj[0] = require(4749) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT;
-    obj[1] = require(4749) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT;
-    obj[2] = require(4749) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HORIZONTAL_PADDING;
+    obj[0] = MINIMUM_HIT_AREA2.SMALL_BUTTON_HEIGHT;
+    obj[1] = MINIMUM_HIT_AREA2.SMALL_BUTTON_HEIGHT;
+    obj[2] = MINIMUM_HIT_AREA2.SMALL_BUTTON_HORIZONTAL_PADDING;
     obj[3] = closure_11;
   } else if ("md" === arg1) {
     obj = { minHeight: null, minWidth: null, paddingHorizontal: null, paddingVertical: null };
-    obj[0] = require(4749) /* MINIMUM_HIT_AREA */.MEDIUM_BUTTON_HEIGHT;
-    obj[1] = require(4749) /* MINIMUM_HIT_AREA */.MEDIUM_BUTTON_HEIGHT;
-    obj[2] = require(4749) /* MINIMUM_HIT_AREA */.MEDIUM_BUTTON_HORIZONTAL_PADDING;
+    obj[0] = MINIMUM_HIT_AREA2.MEDIUM_BUTTON_HEIGHT;
+    obj[1] = MINIMUM_HIT_AREA2.MEDIUM_BUTTON_HEIGHT;
+    obj[2] = MINIMUM_HIT_AREA2.MEDIUM_BUTTON_HORIZONTAL_PADDING;
     obj[3] = closure_12;
   } else {
     obj = {};
     if ("lg" === arg1) {
-      const obj1 = { minHeight: null, minWidth: null, paddingHorizontal: null, paddingVertical: null };
-      obj1[0] = require(4749) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_HEIGHT;
-      obj1[1] = require(4749) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_HEIGHT;
-      obj1[2] = require(4749) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_HORIZONTAL_PADDING;
+      obj1 = { minHeight: null, minWidth: null, paddingHorizontal: null, paddingVertical: null };
+      obj1[0] = MINIMUM_HIT_AREA2.LARGE_BUTTON_HEIGHT;
+      obj1[1] = MINIMUM_HIT_AREA2.LARGE_BUTTON_HEIGHT;
+      obj1[2] = MINIMUM_HIT_AREA2.LARGE_BUTTON_HORIZONTAL_PADDING;
       obj1[3] = closure_13;
       obj = obj1;
     }
   }
-  let obj3 = require(4749) /* MINIMUM_HIT_AREA */;
+  let obj3 = MINIMUM_HIT_AREA2;
   const buttonBorderRadius = obj3.getButtonBorderRadius(arg1);
   const obj2 = { pill: null, expressivePill: null, expressiveRiveFill: null, childContainer: null, ellipsis: null };
-  obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", overflow: "hidden", borderWidth: require(4749) /* MINIMUM_HIT_AREA */.BUTTON_BORDER_WIDTH, borderRadius: buttonBorderRadius };
+  obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", overflow: "hidden", borderWidth: MINIMUM_HIT_AREA2.BUTTON_BORDER_WIDTH, borderRadius: buttonBorderRadius };
   const merged = Object.assign(obj);
   obj2[0] = obj3;
   obj2[1] = { overflow: "hidden", borderRadius: buttonBorderRadius };
-  obj2[2] = { color: importDefault(712).colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
+  obj2[2] = { color: ThemesDefault.colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
   obj2[3] = { flexDirection: "row", alignItems: "center", justifyContent: "center", flexGrow: 1, maxWidth: "100%" };
   obj2[4] = { position: "absolute", height: "100%", width: "100%", justifyContent: "center", alignItems: "center" };
   return obj2;
 });
 let closure_18 = { code: "function ButtonPillNativeTsx1(){const{withSpring,loading,SUBTLE_SPRING,useReducedMotion,withDelay,FADE_DELAY,offsetY}=this.__closure;const opacityTransition=withSpring(loading?0:1,SUBTLE_SPRING,'animate-always');if(useReducedMotion){return{opacity:loading?opacityTransition:withDelay(FADE_DELAY,opacityTransition),transform:[{translateY:0}]};}return{opacity:opacityTransition,transform:[{translateY:withSpring(loading?-1*offsetY:0,SUBTLE_SPRING)}]};}" };
 let closure_19 = { code: "function ButtonPillNativeTsx2(){const{withSpring,loading,SUBTLE_SPRING,useReducedMotion,withDelay,FADE_DELAY,offsetY}=this.__closure;const opacityTransition=withSpring(loading?1:0,SUBTLE_SPRING,'animate-always');if(useReducedMotion){return{opacity:loading?withDelay(FADE_DELAY,opacityTransition):opacityTransition,transform:[{translateY:0}]};}return{opacity:opacityTransition,transform:[{translateY:withSpring(loading?0:offsetY,SUBTLE_SPRING)}]};}" };
-const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Button/native/ButtonPill.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Button/native/ButtonPill.native.tsx");
 
 export const ButtonPill = function ButtonPill(loading) {
   if (null == loading.loading) {

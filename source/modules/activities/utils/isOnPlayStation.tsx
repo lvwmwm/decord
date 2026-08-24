@@ -1,13 +1,15 @@
-// Module ID: 12100
-// Function ID: 12101
+// Module ID: 12152
+// Function ID: 12153
 // Name: isOnPlayStation
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 12100 (isOnPlayStation)
-import { ActivityGamePlatforms } from "ME";
+// Module 12152 (isOnPlayStation)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/utils/isOnPlayStation.tsx");
+const ActivityGamePlatforms = ME.ActivityGamePlatforms;
+const result = set.fileFinishedImporting("modules/activities/utils/isOnPlayStation.tsx");
 
 export default function isOnPlayStation(platform) {
   platform = undefined;

@@ -1,23 +1,26 @@
-// Module ID: 8289
-// Function ID: 8290
+// Module ID: 8329
+// Function ID: 8330
 // Name: createGiftIntentEmbed
-// Dependencies: [8290, 1922, 1924, 4661, 712, 1236, 8294, 4219, 8171, 4311, 8295, 8296, 2]
+// Dependencies: [8330, 1922, 1924, 4668, 712, 1236, 8334, 4223, 8210, 4315, 8335, 8336, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 8289 (createGiftIntentEmbed)
-import getCurrentTime from "getCurrentTime";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { GiftIntentType } from "GuildFeatures";
-import createCacheKey from "createCacheKey";
+// Module 8329 (createGiftIntentEmbed)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import frozen from "frozen" /* 8210 */;
+import _sendGiftMessage from "_sendGiftMessage" /* 8334 */;
+import closure_3 from "getCurrentTime" /* 8330 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import { GiftIntentType } from "GuildFeatures" /* 1924 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
-createCacheKey = { headerTextColor: require("Themes").colors.TEXT_STRONG, subHeaderTextColor: require("Themes").colors.TEXT_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderColor: require("Themes").colors.BORDER_MUTED };
-createCacheKey = createCacheKey.createNativeStyleProperties(createCacheKey);
-const result = require("GuildFeatures").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/GiftIntentEmbed.tsx");
+require = arg1;
+createCacheKey = { headerTextColor: ThemesDefault.colors.TEXT_STRONG, subHeaderTextColor: ThemesDefault.colors.TEXT_SUBTLE, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: ThemesDefault.colors.BORDER_MUTED };
+let closure_6 = createCacheKey.createNativeStyleProperties(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/GiftIntentEmbed.tsx");
 
 export const createGiftIntentEmbed = function createGiftIntentEmbed(message, theme) {
-  let giftIntentType;
-  let recipientUserId;
   const giftingPrompt = message.giftingPrompt;
   if (null == giftingPrompt) {
     return null;
@@ -27,25 +30,25 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
     if (null == user) {
       return null;
     } else {
-      const name = importDefault(4219).getName(user);
+      const name = nameFromUserDefault.getName(user);
       if (GiftIntentType.FRIEND_ANNIVERSARY === giftIntentType) {
         let obj = { headerText: null, subHeaderParts: null };
-        const intl = require(1236) /* getSystemLocale */.intl;
-        obj[0] = intl.string(require(1236) /* getSystemLocale */.t.CeQIwZ);
+        const intl = getSystemLocale.intl;
+        obj[0] = intl.string(getSystemLocale.t.CeQIwZ);
         obj = { text: null };
-        const intl2 = require(1236) /* getSystemLocale */.intl;
+        const intl2 = getSystemLocale.intl;
         obj = { numberOfYears: null };
         obj[0] = tmp12;
-        obj[0] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.PpG27s, obj);
+        obj[0] = intl2.formatToPlainString(getSystemLocale.t.PpG27s, obj);
         const items = [obj];
         obj[1] = items;
         let tmp = obj;
       } else {
         tmp = null;
         if (tmp13.UNSPECIFIED !== giftIntentType) {
-          require(8294) /* _sendGiftMessage */.unhandledGiftIntent(giftIntentType);
+          _sendGiftMessage.unhandledGiftIntent(giftIntentType);
           tmp = null;
-          const obj11 = require(8294) /* _sendGiftMessage */;
+          const obj11 = _sendGiftMessage;
         }
       }
       if (null == tmp) {
@@ -59,27 +62,27 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
           const _HermesInternal = HermesInternal;
           combined1 = "" + currentUser.getAvatarURL(undefined, 40);
         }
-        const obj1 = { recipientAvatarUrl: null, currentUserAvatarUrl: null, recipientName: null, headerText: null, subHeaderParts: null, recipientUserId: null, giftIntentType: null, headerTextColor: null, subHeaderTextColor: null, backgroundColor: null, borderColor: null, subHeaderIconUrl: null, primaryCtaLabel: null, primaryCtaIconUrl: null, secondaryCtaIconUrl: null, secondaryCtaAccessibilityLabel: null };
+        obj1 = { recipientAvatarUrl: null, currentUserAvatarUrl: null, recipientName: null, headerText: null, subHeaderParts: null, recipientUserId: null, giftIntentType: null, headerTextColor: null, subHeaderTextColor: null, backgroundColor: null, borderColor: null, subHeaderIconUrl: null, primaryCtaLabel: null, primaryCtaIconUrl: null, secondaryCtaIconUrl: null, secondaryCtaAccessibilityLabel: null };
         obj1[0] = combined;
         obj1[1] = combined1;
         obj1[2] = name;
         ({ headerText: obj4[3], subHeaderParts: obj4[4] } = tmp);
         obj1[5] = recipientUserId;
         obj1[6] = giftIntentType;
-        ({ headerTextColor: obj4[7], subHeaderTextColor: obj4[8], backgroundColor: obj4[9], borderColor: obj4[10] } = createCacheKey(theme));
-        const tmp6 = createCacheKey(theme);
-        obj1[11] = require(8171) /* frozen */.getAssetUriForEmbed(tmp8(4311));
-        const intl3 = require(1236) /* getSystemLocale */.intl;
-        obj1[12] = intl3.string(require(1236) /* getSystemLocale */.t.ilhtIa);
-        const obj5 = require(8171) /* frozen */;
-        obj1[13] = require(8171) /* frozen */.getAssetUriForEmbed(tmp8(8295));
-        const obj6 = require(8171) /* frozen */;
-        obj1[14] = require(8171) /* frozen */.getAssetUriForEmbed(tmp8(8296));
-        const intl4 = require(1236) /* getSystemLocale */.intl;
-        obj1[15] = intl4.string(require(1236) /* getSystemLocale */.t.I5gL2H);
+        ({ headerTextColor: obj4[7], subHeaderTextColor: obj4[8], backgroundColor: obj4[9], borderColor: obj4[10] } = callback(theme));
+        const tmp6 = callback(theme);
+        obj1[11] = frozen.getAssetUriForEmbed(tmp8(4315));
+        const intl3 = getSystemLocale.intl;
+        obj1[12] = intl3.string(getSystemLocale.t.ilhtIa);
+        const obj5 = frozen;
+        obj1[13] = frozen.getAssetUriForEmbed(tmp8(8335));
+        const obj6 = frozen;
+        obj1[14] = frozen.getAssetUriForEmbed(tmp8(8336));
+        const intl4 = getSystemLocale.intl;
+        obj1[15] = intl4.string(getSystemLocale.t.I5gL2H);
         return obj1;
       }
-      const obj10 = importDefault(4219);
+      const obj10 = nameFromUserDefault;
     }
     obj8 = user;
   }

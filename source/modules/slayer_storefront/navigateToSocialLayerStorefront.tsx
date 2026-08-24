@@ -1,18 +1,19 @@
-// Module ID: 8040
-// Function ID: 8041
+// Module ID: 8079
+// Function ID: 8080
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
-// Dependencies: [5, 1910, 7202, 676, 8041, 7200, 1222, 7301, 8042, 2]
+// Dependencies: [5, 1910, 7240, 676, 8080, 7238, 1222, 7339, 8081, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 8040 (navigateToSocialLayerStorefrontWithGuildPreview)
-import getPrice from "getPrice";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
-import ME from "ME";
+// Module 8079 (navigateToSocialLayerStorefrontWithGuildPreview)
+import transitionTo from "transitionTo" /* 1222 */;
+import getPrice from "getPrice" /* 7238 */;
+import _fetchSocialLayerStorefront from "_fetchSocialLayerStorefront" /* 8080 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "createGuildRecordFromRust" /* 1910 */;
+import closure_5 from "handleUserSettingsStoreUpdate" /* 7240 */;
+import ME from "ME" /* 676 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function navigateToSocialLayerStorefrontWithGuildPreview(arg0) {
   const self = this;
   const apply = _navigateToSocialLayerStorefrontWithGuildPreview.apply;
@@ -26,15 +27,10 @@ function navigateToSocialLayerStorefrontWithGuildPreview(arg0) {
 function _navigateToSocialLayerStorefrontWithGuildPreview() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c1;
-      let c2;
-      let c3;
-      let c4;
-      let id;
       if (guild === 2) {
         guild = 3;
         HermesBuiltin.throwTypeError();
@@ -46,7 +42,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -61,7 +57,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
               obj[0] = arg1;
               return obj;
             } else {
-              let dependencyMap = tmp5;
+              dependencyMap = tmp5;
               let lib = tmp2;
               id = undefined;
               lib = undefined;
@@ -82,7 +78,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
                 throw arg1;
               } else if (arg0 === 2) {
                 guild = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -110,7 +106,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
                     if (null != set) {
                       if (!set.has(guild3.PREVIEW_ENABLED)) {
                         if (null != lib) {
-                          let obj4 = lib(8042);
+                          let obj4 = lib(8081);
                           let obj2 = { inviteKey: null, context: null, skipOnboarding: true };
                           obj2[0] = lib.code;
                           obj2[1] = { location: "game_shop" };
@@ -125,12 +121,12 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
                     c3 = 2;
                     guild = 1;
                     obj4 = { value: null, done: false };
-                    obj4[0] = id(7301).startLurking(id, {}, { shouldNavigate: false });
+                    obj4[0] = id(7339).startLurking(id, {}, { shouldNavigate: false });
                     return obj4;
                   }
                 } else {
                   guild = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
             } else if (2 === tmp5) {
@@ -167,7 +163,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
     iter.next();
     return iter;
   });
-  const _navigateToSocialLayerStorefrontWithGuildPreview = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -177,15 +173,9 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
   return applyArgumentsResult;
 }
 ({ GuildFeatures: closure_6, Routes: error } = ME);
-const result = require("handleUserSettingsStoreUpdate").fileFinishedImporting("modules/slayer_storefront/navigateToSocialLayerStorefront.tsx");
+const result = require("set").fileFinishedImporting("modules/slayer_storefront/navigateToSocialLayerStorefront.tsx");
 
 export default function navigateToSocialLayerStorefront(arg0) {
-  let applicationId;
-  let guildId;
-  let invite;
-  let pageIndex;
-  let skuId;
-  let slug;
   ({ applicationId, guildId, pageIndex, invite, skuId, slug } = arg0);
   let applicationIdFromGuildId = applicationId;
   if (applicationId == null) {
@@ -193,7 +183,7 @@ export default function navigateToSocialLayerStorefront(arg0) {
   }
   let socialLayerStorefrontGuildId = guildId;
   if (guildId == null) {
-    let obj = require(7200) /* getPrice */;
+    let obj = getPrice;
     socialLayerStorefrontGuildId = obj.getSocialLayerStorefrontGuildId(applicationId);
   }
   if (null == applicationIdFromGuildId) {
@@ -205,8 +195,8 @@ export default function navigateToSocialLayerStorefront(arg0) {
     }
   }
   if (null != applicationIdFromGuildId) {
-    resolved = Promise.resolve(require(1222) /* transitionTo */.transitionTo(closure_7.COLLECTIBLES_SHOP_GAME_SHOP(applicationIdFromGuildId, pageIndex, skuId, slug)));
-    const obj3 = require(1222) /* transitionTo */;
+    resolved = Promise.resolve(transitionTo.transitionTo(closure_7.COLLECTIBLES_SHOP_GAME_SHOP(applicationIdFromGuildId, pageIndex, skuId, slug)));
+    const obj3 = transitionTo;
   } else {
     obj = { guildId: null, pageIndex: null, invite: null, skuId: null, slug: null };
     obj[0] = socialLayerStorefrontGuildId;
@@ -218,8 +208,6 @@ export default function navigateToSocialLayerStorefront(arg0) {
   }
 };
 export const eagerNavigateToSocialLayerStorefront = function eagerNavigateToSocialLayerStorefront(forceFetch) {
-  let guildId;
-  let invite;
   ({ guildId, invite } = forceFetch);
   if (null != invite) {
     const guild = invite.guild;
@@ -230,16 +218,14 @@ export const eagerNavigateToSocialLayerStorefront = function eagerNavigateToSoci
     guildId = id;
   }
   if (null != guildId) {
-    let obj = require(8041) /* _fetchSocialLayerStorefront */;
+    let obj = _fetchSocialLayerStorefront;
     obj = { eager: true, forceFetch: null };
     obj[1] = forceFetch.forceFetch;
     const socialLayerStorefront = obj.fetchSocialLayerStorefront(guildId, obj);
   }
 };
 export const eagerNavigateToSocialLayerStorefrontForApplication = function eagerNavigateToSocialLayerStorefrontForApplication(arg0) {
-  let applicationId;
-  let forceFetch;
   ({ applicationId, forceFetch } = arg0);
-  const socialLayerStorefrontForApplication = require(8041) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
+  const socialLayerStorefrontForApplication = _fetchSocialLayerStorefront.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
 };
 export { navigateToSocialLayerStorefrontWithGuildPreview };

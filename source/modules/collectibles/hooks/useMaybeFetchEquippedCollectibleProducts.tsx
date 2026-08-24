@@ -1,12 +1,12 @@
-// Module ID: 8960
-// Function ID: 8961
+// Module ID: 8997
+// Function ID: 8998
 // Name: useEquippedCollectibleSkuIds
-// Dependencies: [19, 1922, 589, 8416, 4797, 8961, 8962, 2]
+// Dependencies: [19, 1922, 589, 8455, 4802, 8998, 8999, 2]
 // Exports: default
 
-// Module 8960 (useEquippedCollectibleSkuIds)
-import noop from "noop";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 8997 (useEquippedCollectibleSkuIds)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
 function useEquippedCollectibleSkuIds(id, guildId) {
@@ -48,22 +48,22 @@ function useEquippedCollectibleSkuIds(id, guildId) {
     return items.filter((arg0) => null != arg0);
   }, items2);
 }
-let result = require("initialize").fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchEquippedCollectibleProducts.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchEquippedCollectibleProducts.tsx");
 
 export default function useMaybeFetchEquippedCollectibleProducts(id, guildId) {
-  let closure_0 = arg2;
+  closure_0 = arg2;
   let tmp = useEquippedCollectibleSkuIds(id, guildId);
-  const importDefault = tmp;
+  closure_1 = tmp;
   const items = [arg2, tmp];
   const effect = React.useEffect(() => {
     let tmp = callback;
     if (callback) {
-      tmp = 0 !== tmp.length;
+      tmp = 0 !== length.length;
     }
     if (tmp) {
-      let obj = callback(outer1_2[6]);
+      let obj = callback(closure_1_2[6]);
       obj = { skuIds: null };
-      obj[0] = tmp;
+      obj[0] = length;
       const result = obj.maybeFetchProductsBySkuIds(obj);
     }
   }, items);

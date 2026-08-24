@@ -1,17 +1,22 @@
-// Module ID: 17052
-// Function ID: 17053
+// Module ID: 17145
+// Function ID: 17146
 // Name: setDifference
-// Dependencies: [109, 4652, 1979, 4542, 12440, 3, 17053, 5038, 9668, 709, 17073, 2]
+// Dependencies: [109, 4658, 1980, 4547, 12492, 3, 17146, 5043, 9707, 709, 17166, 2]
 
-// Module 17052 (setDifference)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import reset from "reset";
-import handleConnectionOpen from "handleConnectionOpen";
-import updateVoiceState from "updateVoiceState";
-import isAVErrorContextOfType from "isAVErrorContextOfType";
-import "initialize";
+// Module 17145 (setDifference)
+import timestampDefault from "timestamp" /* 3 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 5043 */;
+import mapped from "mapped" /* 9707 */;
+import ErrorDefinitions from "ErrorDefinitions" /* 17146 */;
+import getCurrentScreenshareCaptureMethod from "getCurrentScreenshareCaptureMethod" /* 17166 */;
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import closure_5 from "reset" /* 4658 */;
+import closure_6 from "handleConnectionOpen" /* 1980 */;
+import closure_7 from "updateVoiceState" /* 4547 */;
+import closure_8 from "isAVErrorContextOfType" /* 12492 */;
 
-const require = arg1;
+require = arg1;
 function setDifference(set, set2) {
   set = new Set();
   const iter = set[Symbol.iterator]();
@@ -27,7 +32,7 @@ function setDifference(set, set2) {
   return set;
 }
 function makeErrorKey(item10044) {
-  const obj = require(17053) /* ErrorDefinitions */.ErrorDefinitions[item10044.type];
+  const obj = ErrorDefinitions.ErrorDefinitions[item10044.type];
   let errorContextKey;
   if (obj != null) {
     errorContextKey = obj.makeErrorContextKey(item10044);
@@ -35,7 +40,8 @@ function makeErrorKey(item10044) {
   return "" + item10044.type + ":" + errorContextKey;
 }
 let closure_3 = ["type"];
-let c9 = new require("updateVoiceState")("AVErrorManager");
+let closure_9 = new timestampDefault("AVErrorManager");
+initializeDefault;
 class AVErrorManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -60,7 +66,7 @@ prototype["updateActiveErrors"] = function updateActiveErrors() {
   }
   allActiveStreams = allActiveStreams.getAllActiveStreams();
   const map = new Map();
-  const values = Object.values(require(17053) /* ErrorDefinitions */.ErrorDefinitions);
+  const values = Object.values(ErrorDefinitions.ErrorDefinitions);
   const iter = values[Symbol.iterator]();
   while (iter !== undefined) {
     let obj = { voiceChannelId: null, voiceState: null, activeStreams: null };
@@ -93,7 +99,7 @@ prototype["updateActiveErrors"] = function updateActiveErrors() {
           if (null != value) {
             let tmp29 = require;
             let tmp30 = dependencyMap;
-            let obj5 = require(9668) /* mapped */;
+            let obj5 = mapped;
             let tmp31 = value;
             let reportAVErrorResult = obj5.reportAVError(tmp28);
           }
@@ -110,34 +116,32 @@ prototype["updateActiveErrors"] = function updateActiveErrors() {
             let tmp38 = value;
             let tmp39 = callback;
             let tmp40 = closure_3;
-            let tmp41 = tmp2;
+            let tmp41 = logger;
             let _JSON = JSON;
             let _HermesInternal2 = HermesInternal;
-            let infoResult = tmp2.info("Error resolved: " + tmp37.type + " " + JSON.stringify(callback(tmp37, closure_3)));
+            let infoResult = logger.info("Error resolved: " + tmp37.type + " " + JSON.stringify(callback(tmp37, closure_3)));
           }
           continue;
         }
       }
       obj = { type: "ACTIVE_AV_ERRORS_CHANGED", activeErrors: null };
       obj[1] = map;
-      importDefault(709).dispatch(obj);
-      const obj6 = importDefault(709);
+      dispatcherDefault.dispatch(obj);
+      const obj6 = dispatcherDefault;
     }
   } else {
     const _Object = Object;
     const call = toString.call;
     const _HermesInternal = HermesInternal;
-    tmp2.error("existingErrors is not a Map: " + activeErrors1 + " type: " + typeof call === "unknown" ? toString() : call(activeErrors1));
+    logger.error("existingErrors is not a Map: " + activeErrors1 + " type: " + typeof call === "unknown" ? toString() : call(activeErrors1));
   }
 };
 prototype["handleReportAVError"] = function handleReportAVError(arg0) {
-  let context;
-  let error;
   ({ error, context } = arg0);
-  const result = require(17073) /* getCurrentScreenshareCaptureMethod */.sendAVErrorAnalyticsEvent(error, context);
+  const result = getCurrentScreenshareCaptureMethod.sendAVErrorAnalyticsEvent(error, context);
 };
 const aVErrorManager = new AVErrorManager();
-let tmp2 = new require("updateVoiceState")("AVErrorManager");
-let result = require("handleConnectionOpen").fileFinishedImporting("modules/errors/av_errors/AVErrorManager.tsx");
+let tmp2 = new timestampDefault("AVErrorManager");
+let result = require("set").fileFinishedImporting("modules/errors/av_errors/AVErrorManager.tsx");
 
 export default aVErrorManager;

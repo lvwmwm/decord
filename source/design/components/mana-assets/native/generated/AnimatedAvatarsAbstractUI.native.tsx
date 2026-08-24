@@ -1,18 +1,19 @@
-// Module ID: 5496
-// Function ID: 5497
+// Module ID: 5501
+// Function ID: 5502
 // Name: AnimatedAvatarsAbstractUI
-// Dependencies: [21, 5449, 5497, 2]
+// Dependencies: [21, 5454, 5502, 2]
 // Exports: AnimatedAvatarsAbstractUI
 
-// Module 5496 (AnimatedAvatarsAbstractUI)
-import { jsx } from "jsxProd";
+// Module 5501 (AnimatedAvatarsAbstractUI)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 5502 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AnimatedAvatarsAbstractUI.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AnimatedAvatarsAbstractUI.native.tsx");
 
 export const AnimatedAvatarsAbstractUI = function AnimatedAvatarsAbstractUI(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const AnimatedAvatarsAbstractUI = function AnimatedAvatarsAbstractUI(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(5497);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AnimatedAvatarsAbstractUI = function AnimatedAvatarsAbstractUI(widt
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

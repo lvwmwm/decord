@@ -1,14 +1,16 @@
-// Module ID: 10737
-// Function ID: 10738
+// Module ID: 10776
+// Function ID: 10777
 // Name: getAlert
 // Dependencies: [589, 709, 2]
 
-// Module 10737 (getAlert)
-import { Store } from "initialize";
+// Module 10776 (getAlert)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0 = null;
 let c1 = -1;
 let c2 = null;
+const Store = initializeDefault.Store;
 class AlertStore extends Store {
 }
 const prototype = AlertStore.prototype;
@@ -22,16 +24,14 @@ prototype["isAlertDismissable"] = function isAlertDismissable() {
   return c2;
 };
 AlertStore.displayName = "AlertStore";
-const alertStore = new AlertStore(require("dispatcher"), {
+const alertStore = new AlertStore(dispatcherDefault, {
   ALERT_OPEN: function handleOpen(arg0) {
-    let c0;
-    let c2;
     closure_1 = closure_1 + 1;
     ({ alert: c0, isDismissable: c2 } = arg0);
   },
   ALERT_CLOSE: function handleClose() {
-    let c0 = null;
-    let c2 = null;
+    c0 = null;
+    c2 = null;
   }
 });
 const result = require("set").fileFinishedImporting("stores/native/AlertStore.tsx");

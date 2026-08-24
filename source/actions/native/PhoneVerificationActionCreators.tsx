@@ -1,16 +1,19 @@
-// Module ID: 8653
-// Function ID: 8654
+// Module ID: 8690
+// Function ID: 8691
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 8653 (dispatcher)
-const result = require("set").fileFinishedImporting("actions/native/PhoneVerificationActionCreators.tsx");
+// Module 8690 (dispatcher)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("actions/native/PhoneVerificationActionCreators.tsx");
 
 export default {
   openCountrySelector() {
-    importDefault(709).dispatch({ type: "VERIFICATION_OPEN_COUNTRY_SELECTOR" });
+    dispatcherDefault.dispatch({ type: "VERIFICATION_OPEN_COUNTRY_SELECTOR" });
   },
   setCountrySelectorClosed() {
-    importDefault(709).dispatch({ type: "VERIFICATION_CLOSE_COUNTRY_SELECTOR" });
+    dispatcherDefault.dispatch({ type: "VERIFICATION_CLOSE_COUNTRY_SELECTOR" });
   }
 };

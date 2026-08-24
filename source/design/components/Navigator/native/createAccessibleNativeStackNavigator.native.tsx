@@ -1,28 +1,16 @@
-// Module ID: 13537
-// Function ID: 13538
+// Module ID: 13595
+// Function ID: 13596
 // Name: AccessibleNativeStackNavigator
-// Dependencies: [19, 21, 6312, 1501, 9931, 2]
+// Dependencies: [19, 21, 6343, 1501, 9970, 2]
 // Exports: default, useAccessibilityPatchedDescriptors
 
-// Module 13537 (AccessibleNativeStackNavigator)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 13595 (AccessibleNativeStackNavigator)
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
+import closure_2 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function AccessibleNativeStackNavigator(arg0) {
-  let NavigationContent;
-  let UNSTABLE_routeNamesChangeBehavior;
-  let UNSTABLE_router;
-  let children;
-  let describe;
-  let id;
-  let initialRouteName;
-  let layout;
-  let navigation;
-  let screenLayout;
-  let screenListeners;
-  let screenOptions;
-  let state;
   ({ id, initialRouteName, UNSTABLE_routeNamesChangeBehavior, children, layout, screenListeners, screenOptions, screenLayout, UNSTABLE_router } = arg0);
   let merged = Object.assign(arg0, Object.create(null));
   let obj = descriptors(accessibilityNativeStackOptions[3]);
@@ -72,10 +60,10 @@ function AccessibleNativeStackNavigator(arg0) {
   obj[0] = jsx(descriptors(accessibilityNativeStackOptions[4]).NativeStackView, {});
   return <NavigationContent />;
 }
-const result = require("NavigationStack").fileFinishedImporting("design/components/Navigator/native/createAccessibleNativeStackNavigator.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Navigator/native/createAccessibleNativeStackNavigator.native.tsx");
 
 export default function createAccessibleNativeStackNavigator(arg0) {
-  return require(1501) /* createStandardNavigationFactories */.createNavigatorFactory(AccessibleNativeStackNavigator)(arg0);
+  return createStandardNavigationFactories.createNavigatorFactory(AccessibleNativeStackNavigator)(arg0);
 };
 export const useAccessibilityPatchedDescriptors = function useAccessibilityPatchedDescriptors(filteredDescriptors) {
   const _require = filteredDescriptors;

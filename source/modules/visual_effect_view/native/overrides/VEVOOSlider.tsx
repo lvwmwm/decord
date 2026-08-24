@@ -1,25 +1,24 @@
-// Module ID: 15195
-// Function ID: 15196
-// Dependencies: [19, 21, 4661, 500, 712, 8105, 2]
+// Module ID: 15259
+// Function ID: 15260
+// Dependencies: [19, 21, 4668, 500, 712, 8144, 2]
 
-// Module 15195
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import set from "set";
-import importAllResult from "noop";
-import set from "createCacheKey";
+// Module 15259
+import ThemesDefault from "Themes" /* 712 */;
+import _getRequireWildcardCacheDefault from "_getRequireWildcardCache" /* 8144 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import set from "set" /* 500 */;
+import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let num = 0;
 if (set.isAndroid()) {
-  num = require("Themes").space.PX_8;
+  num = ThemesDefault.space.PX_8;
 }
 let closure_4 = createCacheKey.createStyles({ slider: { marginTop: num } });
 const result = set.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOSlider.tsx");
 
-export default require("noop").memo(function VEVOOSlider(disabled) {
-  let initialValue;
-  let onValueChange;
+export default importAllResult.memo(function VEVOOSlider(disabled) {
   let flag = disabled.disabledOpacity;
   if (flag === undefined) {
     flag = false;
@@ -32,14 +31,10 @@ export default require("noop").memo(function VEVOOSlider(disabled) {
   if (flag) {
     num = 0.5;
   }
-  const obj = { style: items, disabled: disabled.disabled, value: null, minimumValue: 0, maximumValue: 1, minimumTrackTintColor: null, maximumTrackTintColor: null, onValueChange: null, onResponderGrant: null };
+  const obj = { style: items, disabled: disabled.disabled, value: current, minimumValue: 0, maximumValue: 1, minimumTrackTintColor: ThemesDefault.unsafe_rawColors.BRAND_500, maximumTrackTintColor: ThemesDefault.unsafe_rawColors.PRIMARY_400, onValueChange, onResponderGrant: null };
   items[1] = { opacity: num };
-  const current = initialValue.current;
-  obj[2] = current;
-  obj[5] = importDefault(712).unsafe_rawColors.BRAND_500;
-  obj[6] = importDefault(712).unsafe_rawColors.PRIMARY_400;
-  obj[7] = onValueChange;
-  const tmp5 = importDefault(8105);
+  current = initialValue.current;
+  const tmp5 = _getRequireWildcardCacheDefault;
   let fn;
   if (obj2.isAndroid()) {
     fn = () => true;

@@ -1,9 +1,12 @@
-// Module ID: 13377
-// Function ID: 13378
+// Module ID: 13435
+// Function ID: 13436
 // Name: getTransformedBadgeColors
-// Dependencies: [2, 13378]
+// Dependencies: [2, 13436]
 
-// Module 13377 (getTransformedBadgeColors)
-const result = require("set").fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeUtils.tsx");
+// Module 13435 (getTransformedBadgeColors)
+import set from "set" /* 2 */;
+import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13436 */;
 
-export const getTransformedBadgeColors = require("getTransformedBadgeColors").getTransformedBadgeColors;
+const result = set.fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeUtils.tsx");
+
+export const getTransformedBadgeColors = getTransformedBadgeColors.getTransformedBadgeColors;

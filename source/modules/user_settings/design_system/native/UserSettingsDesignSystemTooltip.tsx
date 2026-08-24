@@ -1,33 +1,31 @@
-// Module ID: 14929
-// Function ID: 14930
+// Module ID: 14993
+// Function ID: 14994
 // Name: Content
-// Dependencies: [32, 19, 17, 21, 4661, 8671, 9270, 4745, 7178, 4734, 6803, 7126, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 8708, 9307, 4750, 7216, 4739, 6840, 7164, 2]
 // Exports: default, useCanRotate
 
-// Module 14929 (Content)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14993 (Content)
+import Text from "Text" /* 4739 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import Layer from "Layer" /* 7164 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function Content() {
-  let tmp10;
-  let tmp9;
   let obj = React;
   const tmp2 = first2(React.useState(false), 2);
   const first = tmp2[0];
   let first1 = first;
-  const dependencyMap = tmp2[1];
+  dependencyMap = tmp2[1];
   first1 = undefined;
   const tmp4 = first2(React.useState(false), 2);
   first1 = tmp4[0];
   const effect = React.useEffect(() => {
-    const obj = first1(8671);
+    const obj = first1(8708);
     if (first1) {
       obj.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
     } else {
@@ -60,10 +58,10 @@ function Content() {
       }
     };
   }, items1);
-  let obj1 = first1(9270);
+  obj1 = first1(9307);
   const tooltip = obj1.useTooltip(ref, memo);
   obj = { children: null };
-  obj = { style: tmp.container, children: callback2(first1(4745).Button, obj1) };
+  obj = { style: tmp.container, children: callback2(first1(4750).Button, obj1) };
   obj1 = {
     ref,
     onPress() {
@@ -73,7 +71,7 @@ function Content() {
     text: str,
     size: "md"
   };
-  const items2 = [callback2(View, obj), callback2(first1(7178).TableSwitchRow, { label: "Unlock Orientation", value: tmp9, onValueChange: tmp10 }), callback2(first1(7178).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp11[1] }), callback2(TooltipNote, {})];
+  const items2 = [callback2(View, obj), callback2(first1(7216).TableSwitchRow, { label: "Unlock Orientation", value: tmp9, onValueChange: tmp10 }), callback2(first1(7216).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp11[1] }), callback2(TooltipNote, {})];
   obj[0] = items2;
   return callback3(closure_6, obj);
 }
@@ -89,20 +87,19 @@ class TooltipNote {
 }
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles({ container: { padding: 16, flex: 1, alignItems: "center", justifyContent: "center" }, flex: { flex: 1 } });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTooltip.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTooltip.tsx");
 
 export default function UserSettingsDesignSystemTooltip() {
   let obj = { style: callback4().flex, bottom: true, children: null };
-  obj = { children: null };
-  obj[0] = callback2(Content, {});
-  obj[2] = callback2(require(7126) /* Layer */.LayerScope, obj);
-  return callback2(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj = { children: callback2(Content, {}) };
+  obj[2] = callback2(Layer.LayerScope, obj);
+  return callback2(SafeAreaPaddingView.SafeAreaPaddingView, obj);
 };
 export const useCanRotate = function useCanRotate() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const effect = React.useEffect(() => {
-    const obj = first1(8671);
+    const obj = first1(8708);
     if (first1) {
       obj.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
     } else {

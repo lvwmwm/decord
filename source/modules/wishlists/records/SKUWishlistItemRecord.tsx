@@ -1,13 +1,14 @@
-// Module ID: 9191
-// Function ID: 9192
+// Module ID: 9228
+// Function ID: 9229
 // Name: fromServer
-// Dependencies: [4515, 9188, 2]
+// Dependencies: [4520, 9225, 2]
 // Exports: isSKUWishlistItemRecord
 
-// Module 9191 (fromServer)
-import createFromServer from "createFromServer";
-import "fromServer";
+// Module 9228 (fromServer)
+import fromServerDefault from "fromServer" /* 9225 */;
+import closure_0 from "createFromServer" /* 4520 */;
 
+fromServerDefault;
 let prototype;
 prototype = function SKUWishlistItemRecord(sku) {
   const tmp = new prototype(sku, new.target);
@@ -19,10 +20,10 @@ prototype = function SKUWishlistItemRecord(sku) {
 class prototype extends tmp2 {
 }
 prototype["fromServer"] = function fromServer(sku) {
-  const fromServer = createFromServer.createFromServer(sku.sku);
+  const fromServer = closure_0.createFromServer(sku.sku);
   if (null == fromServer) {
     const _Error = Error;
-    const error = new Error("SKU not found");
+    error = new Error("SKU not found");
     throw error;
   } else {
     const obj = { sku: fromServer };
@@ -38,7 +39,6 @@ prototype["fromServer"] = function fromServer(sku) {
   }
 };
 prototype["fromSKU"] = function fromSKU(arg0) {
-  let name;
   let tmp = null;
   if (null != arg0) {
     const obj = { sku_id: null, sku_product_line: null, sku_name: null, sku: null };

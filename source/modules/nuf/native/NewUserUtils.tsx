@@ -1,22 +1,24 @@
-// Module ID: 16659
-// Function ID: 16660
+// Module ID: 16755
+// Function ID: 16756
 // Name: _shouldSkipContactSyncStep
-// Dependencies: [5, 17, 15224, 5221, 1922, 676, 11851, 4839, 11853, 500, 8918, 709, 1501, 11856, 4229, 16660, 5260, 1222, 11925, 2]
+// Dependencies: [5, 17, 15288, 5226, 1922, 676, 11900, 4844, 11902, 500, 8955, 709, 1501, 11905, 4233, 16756, 5265, 1222, 11974, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 16659 (_shouldSkipContactSyncStep)
-import importDefaultResult from "ME";
-import { NativeModules } from "transitionTo";
-import initialize from "initialize";
-import set from "set";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { ContactPermissions } from "ContactSyncLandingPage";
-import { NotificationAuthorizationStatus as closure_11 } from "NativePermissionStatus";
+// Module 16755 (_shouldSkipContactSyncStep)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import trackNUFStep from "trackNUFStep" /* 11905 */;
+import NEW_USER_MODAL_KEY from "NEW_USER_MODAL_KEY" /* 16756 */;
+import importDefaultResult from "asyncGeneratorStep" /* 5 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "initialize" /* 15288 */;
+import closure_6 from "set" /* 5226 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import { ContactPermissions } from "ContactSyncLandingPage" /* 11900 */;
+import { NotificationAuthorizationStatus as closure_11 } from "NativePermissionStatus" /* 4844 */;
 
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function _shouldSkipContactSyncStep() {
   const self = this;
   const tmp = importDefaultResult(function*() {
@@ -31,7 +33,7 @@ function _shouldSkipContactSyncStep() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -47,13 +49,13 @@ function _shouldSkipContactSyncStep() {
             return obj;
           } else {
             const callback = tmp4;
-            let obj2 = outer1_0(11853);
+            let obj2 = closure_1_0(11902);
             const result = obj2.isContactSyncAvailable();
             if (result) {
               c1 = 1;
               dependencyMap = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(11853).checkContactPermissions();
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_0(11902).checkContactPermissions();
               return obj1;
             } else {
               dependencyMap = 3;
@@ -78,7 +80,7 @@ function _shouldSkipContactSyncStep() {
       }
     }
   });
-  const _shouldSkipContactSyncStep = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -88,15 +90,15 @@ function _shouldSkipContactSyncStep() {
   return applyArgumentsResult;
 }
 function lastStepComplete(STEP_GUILD_TEMPLATE) {
-  require(11856) /* trackNUFStep */.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
-  const obj = require(11856) /* trackNUFStep */;
-  if (obj2.isModalOpen(require(16660) /* NEW_USER_MODAL_KEY */.NEW_USER_MODAL_KEY)) {
-    importDefault(5260).popWithKey(tmp(16660).NEW_USER_MODAL_KEY);
-    const obj3 = importDefault(5260);
+  trackNUFStep.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
+  const obj = trackNUFStep;
+  if (obj2.isModalOpen(NEW_USER_MODAL_KEY.NEW_USER_MODAL_KEY)) {
+    _modDef5265.popWithKey(tmp(16756).NEW_USER_MODAL_KEY);
+    const obj3 = _modDef5265;
   }
   let tmpResult = tmp(1222);
   tmpResult.transitionTo(constants.ME, { navigationReplace: true });
-  tmpResult = tmp(11925);
+  tmpResult = tmp(11974);
   const result = tmpResult.setNewUserFlowCompleted();
 }
 function getNextOnboardingStep(flag, first1, first) {
@@ -112,11 +114,11 @@ function getNextOnboardingStep(flag, first1, first) {
 function _getNextOnboardingStep() {
   const self = this;
   const tmp = importDefaultResult(() => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c6 = 0;
-    let c7 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c6 = 0;
+    c7 = 0;
     const iter = (function*() {
       if (transitionStep2 === 2) {
         transitionStep2 = 3;
@@ -129,7 +131,7 @@ function _getNextOnboardingStep() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -145,14 +147,14 @@ function _getNextOnboardingStep() {
               return obj;
             } else {
               let key = tmp5;
-              let closure_4 = tmp2;
+              closure_4 = tmp2;
               let flag;
               let callback;
-              let dependencyMap;
+              dependencyMap = undefined;
               if (flag === undefined) {
                 flag = false;
               }
-              let closure_3;
+              closure_3 = undefined;
               closure_4 = undefined;
               key = undefined;
               v0 = undefined;
@@ -167,7 +169,7 @@ function _getNextOnboardingStep() {
               throw arg1;
             } else if (arg0 === 2) {
               transitionStep2 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -213,7 +215,7 @@ function _getNextOnboardingStep() {
               return obj5;
             } else if (arg1) {
               callback = dependencyMap;
-              obj3 = flag(11856);
+              obj3 = flag(11905);
               const obj6 = { skip: null };
               obj6[0] = flag;
               obj3.trackNUFStep(closure_3, key, obj6);
@@ -265,7 +267,7 @@ function _getNextOnboardingStep() {
     iter.next();
     return iter;
   });
-  const _getNextOnboardingStep = tmp;
+  closure_18 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -275,7 +277,7 @@ function _getNextOnboardingStep() {
   return applyArgumentsResult;
 }
 let c3 = importDefaultResult;
-({ PlatformTypes: metroImportAll, Routes: c9 } = ME);
+({ PlatformTypes: closure_8, Routes: c9 } = ME);
 let obj = {
   key: "choose-avatar",
   shouldShowStep() {
@@ -300,7 +302,7 @@ let closure_13 = importDefaultResult(function*() {
       obj[0] = arg1;
       return obj;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -315,10 +317,10 @@ let closure_13 = importDefaultResult(function*() {
           obj[0] = arg1;
           return obj;
         } else {
-          let closure_0 = tmp4;
-          let obj1 = outer1_0(table[9]);
+          closure_0 = tmp4;
+          obj1 = closure_1_0(table[9]);
           if (obj1.isIOS()) {
-            const NativePermissionManager = outer1_4.NativePermissionManager;
+            const NativePermissionManager = closure_1_4.NativePermissionManager;
             c1 = 1;
             table = 1;
             obj1 = { value: null, done: false };
@@ -365,7 +367,7 @@ let closure_14 = importDefaultResult(function*() {
       obj[0] = arg1;
       return obj;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -380,7 +382,7 @@ let closure_14 = importDefaultResult(function*() {
           obj[0] = arg1;
           return obj;
         } else {
-          const localAccount = outer1_6.getLocalAccount(outer1_8.CONTACTS);
+          const localAccount = closure_1_6.getLocalAccount(closure_1_8.CONTACTS);
           let friendSync;
           if (localAccount != null) {
             friendSync = localAccount.friendSync;
@@ -390,7 +392,7 @@ let closure_14 = importDefaultResult(function*() {
           } else {
             c1 = 1;
             c0 = 1;
-            const obj1 = { value: null, done: false };
+            obj1 = { value: null, done: false };
             obj1[0] = (function shouldSkipContactSyncStep() {
               const self = this;
               const apply = closure_12.apply;
@@ -448,7 +450,7 @@ let items = [
     key: "accept-invite",
     shouldShowStep: require("showInstantInviteActionSheet").hasDeferredInvite,
     transitionStep() {
-      importDefault(709).dispatch({ type: "DEFERRED_INVITE_SHOW" });
+      dispatcherDefault.dispatch({ type: "DEFERRED_INVITE_SHOW" });
     }
   }
 ];
@@ -456,10 +458,10 @@ let obj1 = {
   key: "accept-invite",
   shouldShowStep: require("showInstantInviteActionSheet").hasDeferredInvite,
   transitionStep() {
-    importDefault(709).dispatch({ type: "DEFERRED_INVITE_SHOW" });
+    dispatcherDefault.dispatch({ type: "DEFERRED_INVITE_SHOW" });
   }
 };
-let result = require("initialize").fileFinishedImporting("modules/nuf/native/NewUserUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/nuf/native/NewUserUtils.tsx");
 
 export const getKeyForOnboardingStep = function getKeyForOnboardingStep(onboardingStepIndex) {
   let key;
@@ -469,7 +471,7 @@ export const getKeyForOnboardingStep = function getKeyForOnboardingStep(onboardi
   return key;
 };
 export const continueToNextStep = function continueToNextStep(onboardingStepIndex, current) {
-  let closure_0 = current;
+  closure_0 = current;
   let key;
   if (items[onboardingStepIndex] != null) {
     key = tmp.key;
@@ -482,8 +484,8 @@ export const continueToNextStep = function continueToNextStep(onboardingStepInde
       state = state.getState();
       const routes = state.routes;
       if (2 === routes.length) {
-        const items = [routes[1]];
-        const CommonActions = state(outer1_2[12]).CommonActions;
+        items = [routes[1]];
+        const CommonActions = state(closure_1_2[12]).CommonActions;
         obj = {};
         const merged = Object.assign(state);
         obj.routes = items;

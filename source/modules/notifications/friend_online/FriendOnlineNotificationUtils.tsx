@@ -1,26 +1,31 @@
-// Module ID: 14811
-// Function ID: 14812
+// Module ID: 14875
+// Function ID: 14876
 // Name: onFriendOnlineNotificationSettingsChanged
-// Dependencies: [4033, 676, 4066, 698, 2]
+// Dependencies: [4036, 676, 4069, 698, 2]
 // Exports: onFriendOnlineNotificationSettingsChanged, onNotifyFriendsOnComeOnlineSettingsChanged
 
-// Module 14811 (onFriendOnlineNotificationSettingsChanged)
-import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
-import { AnalyticEvents } from "ME";
+// Module 14875 (onFriendOnlineNotificationSettingsChanged)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4036 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
 
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/notifications/friend_online/FriendOnlineNotificationUtils.tsx");
+let closure_3 = AccountNotificationFlags.NotificationSettingsUpdateType;
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/notifications/friend_online/FriendOnlineNotificationUtils.tsx");
 
 export const onFriendOnlineNotificationSettingsChanged = function onFriendOnlineNotificationSettingsChanged(friend_online_notifications) {
-  const EnableFriendOnlineNotifications = require(4066) /* explicitContentFromProto */.EnableFriendOnlineNotifications;
+  const EnableFriendOnlineNotifications = explicitContentFromProto.EnableFriendOnlineNotifications;
   EnableFriendOnlineNotifications.updateSetting(friend_online_notifications);
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { update_type: constants.ACCOUNT, friend_online_notifications };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj);
 };
 export const onNotifyFriendsOnComeOnlineSettingsChanged = function onNotifyFriendsOnComeOnlineSettingsChanged(notify_friends_on_come_online) {
-  const NotifyFriendsOnComeOnline = require(4066) /* explicitContentFromProto */.NotifyFriendsOnComeOnline;
+  const NotifyFriendsOnComeOnline = explicitContentFromProto.NotifyFriendsOnComeOnline;
   NotifyFriendsOnComeOnline.updateSetting(notify_friends_on_come_online);
-  let obj = importDefault(698);
+  let obj = expandEventPropertiesDefault;
   obj = { update_type: constants.ACCOUNT, notify_friends_on_come_online };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj);
 };

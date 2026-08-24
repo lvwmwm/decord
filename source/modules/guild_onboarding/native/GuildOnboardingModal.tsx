@@ -1,22 +1,20 @@
-// Module ID: 6800
-// Function ID: 6801
+// Module ID: 6837
+// Function ID: 6838
 // Name: headerTitle
-// Dependencies: [19, 6801, 1391, 1910, 1979, 6788, 6785, 676, 21, 1222, 6802, 6314, 7136, 5285, 7160, 6805, 589, 6791, 6906, 6312, 1236, 2]
+// Dependencies: [19, 6838, 1391, 1910, 1980, 6825, 6822, 676, 21, 1222, 6839, 6345, 7174, 5290, 7198, 6842, 589, 6828, 6944, 6343, 1236, 2]
 // Exports: default
 
-// Module 6800 (headerTitle)
-import NavigationStack from "NavigationStack";
-import get from "get";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import handleConnectionOpen from "handleConnectionOpen";
-import handleUpdate from "handleUpdate";
-import { GuildOnboardingModalStates as closure_9 } from "GUILD_ONBOARDING_MODAL_KEY";
-import ME from "ME";
-import { jsx } from "set";
+// Module 6837 (headerTitle)
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "get" /* 6838 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_7 from "handleConnectionOpen" /* 1980 */;
+import closure_8 from "handleUpdate" /* 6825 */;
+import { GuildOnboardingModalStates as closure_9 } from "GUILD_ONBOARDING_MODAL_KEY" /* 6822 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c10;
-let unpackModuleId;
 const require = arg1;
 function headerTitle() {
   return null;
@@ -25,7 +23,7 @@ function headerRight() {
   return null;
 }
 ({ GuildFeatures: c10, Routes: unpackModuleId } = ME);
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingModal.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingModal.tsx");
 
 export default function GuildOnboardingModal(guildId) {
   guildId = guildId.guildId;
@@ -45,13 +43,13 @@ export default function GuildOnboardingModal(guildId) {
     let tmp2 = null != guild;
     if (tmp2) {
       const features = guild.features;
-      let hasItem = features.has(outer1_10.MEMBER_VERIFICATION_GATE_ENABLED);
+      let hasItem = features.has(closure_1_10.MEMBER_VERIFICATION_GATE_ENABLED);
       if (hasItem) {
         const features2 = guild.features;
         hasItem = !features2.has(tmp3.MEMBER_VERIFICATION_MANUAL_APPROVAL);
       }
       tmp2 = hasItem;
-      tmp3 = outer1_10;
+      tmp3 = closure_1_10;
     }
     return tmp2;
   });

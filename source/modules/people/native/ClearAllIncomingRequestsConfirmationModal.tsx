@@ -1,14 +1,18 @@
-// Module ID: 9742
-// Function ID: 9743
+// Module ID: 9781
+// Function ID: 9782
 // Name: openClearAllIncomingRequestsConfirmationModal
-// Dependencies: [5260, 9743, 2007, 2]
+// Dependencies: [5265, 9782, 2008, 2]
 // Exports: default
 
-// Module 9742 (openClearAllIncomingRequestsConfirmationModal)
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/people/native/ClearAllIncomingRequestsConfirmationModal.tsx");
+// Module 9781 (openClearAllIncomingRequestsConfirmationModal)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+
+const result = set.fileFinishedImporting("modules/people/native/ClearAllIncomingRequestsConfirmationModal.tsx");
 
 export default function openClearAllIncomingRequestsConfirmationModal(incomingPendingRequestCount) {
-  let obj = importDefault(5260);
+  let obj = _modDef5265;
   obj = { incomingPendingRequestCount };
-  obj.pushLazy(require(2007) /* asyncRequireImpl */(9743, dependencyMap.paths), obj);
+  obj.pushLazy(asyncRequireImpl(9782, dependencyMap.paths), obj);
 };

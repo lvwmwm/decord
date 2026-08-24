@@ -1,19 +1,19 @@
-// Module ID: 15466
-// Function ID: 15467
+// Module ID: 15530
+// Function ID: 15531
 // Name: _handleFavoritesGuildAddSuggestedChannel
-// Dependencies: [5, 7591, 9978, 1236, 2]
+// Dependencies: [5, 7629, 10017, 1236, 2]
 // Exports: default
 
-// Module 15466 (_handleFavoritesGuildAddSuggestedChannel)
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 15530 (_handleFavoritesGuildAddSuggestedChannel)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
 function _handleFavoritesGuildAddSuggestedChannel() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -26,7 +26,7 @@ function _handleFavoritesGuildAddSuggestedChannel() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -41,13 +41,13 @@ function _handleFavoritesGuildAddSuggestedChannel() {
               obj[0] = arg1;
               return obj;
             } else {
-              let asyncGeneratorStep = tmp5;
-              const dependencyMap = tmp2;
+              closure_2 = tmp5;
+              dependencyMap = tmp2;
               let callback;
               c3 = 1;
               c4 = 1;
-              let obj1 = { value: null, done: false };
-              obj1[0] = callback(outer1_1[1]).getOrResolveChannelIdFromDestinationId(callback);
+              obj1 = { value: null, done: false };
+              obj1[0] = callback(closure_1_1[1]).getOrResolveChannelIdFromDestinationId(callback);
               return obj1;
             }
           } else {
@@ -63,7 +63,7 @@ function _handleFavoritesGuildAddSuggestedChannel() {
               } else {
                 callback = arg1;
                 if (null != callback) {
-                  obj1 = callback(9978);
+                  obj1 = callback(10017);
                   const obj3 = { channelIds: null, categoryName: null, source: "suggestions" };
                   const items = [callback];
                   obj3[0] = items;
@@ -86,7 +86,7 @@ function _handleFavoritesGuildAddSuggestedChannel() {
               return obj;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           c4 = tmp;
@@ -95,7 +95,7 @@ function _handleFavoritesGuildAddSuggestedChannel() {
       }
     })();
   });
-  const _handleFavoritesGuildAddSuggestedChannel = tmp;
+  closure_3 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -104,7 +104,7 @@ function _handleFavoritesGuildAddSuggestedChannel() {
   }
   return applyArgumentsResult;
 }
-const result = require("getNextPositionFromChannels").fileFinishedImporting("modules/favorites/onboarding/handleFavoritesGuildAddSuggestedChannel.tsx");
+const result = require("set").fileFinishedImporting("modules/favorites/onboarding/handleFavoritesGuildAddSuggestedChannel.tsx");
 
 export default function handleFavoritesGuildAddSuggestedChannel() {
   const self = this;

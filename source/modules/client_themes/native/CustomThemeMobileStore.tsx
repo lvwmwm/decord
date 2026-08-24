@@ -4,68 +4,74 @@
 // Dependencies: [1303, 1302, 1304, 1340, 685, 1347, 1366, 1306, 709, 1367, 589, 2]
 
 // Module 1346 (reset)
-import initialize from "initialize";
-import handleThemeChange from "handleThemeChange";
-import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import { UserSettingsTypes } from "MAX_FAVORITES";
-import { PersistedStore } from "initialize";
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import create from "create" /* 1306 */;
+import getThemeForColor from "getThemeForColor" /* 1347 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 1366 */;
+import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import closure_6 from "initialize" /* 1303 */;
+import closure_7 from "handleThemeChange" /* 1302 */;
+import closure_8 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
+import closure_9 from "handleConnectionClosedOrResumed" /* 1340 */;
+import { UserSettingsTypes } from "MAX_FAVORITES" /* 685 */;
 
-const require = arg1;
+require = arg1;
 function reset() {
-  let c3;
-  let c4;
-  let c5;
+  c3 = undefined;
+  c4 = undefined;
+  c5 = undefined;
 }
 function handleSyncedModeChange() {
-  return require(1366) /* isPerModeThemingActive */.isPerModeThemingActive(isSyncedModeThemesEnabled);
+  return isPerModeThemingActive.isPerModeThemingActive(isSyncedModeThemesEnabled);
 }
 function handleSameAsDeviceThemeToggle() {
-  return require(1367) /* useIsMobileVisualRefreshExperimentEnabled */.isMobileVisualRefreshEnabled("CustomThemeMobileStore");
+  return useIsMobileVisualRefreshExperimentEnabled.isMobileVisualRefreshEnabled("CustomThemeMobileStore");
 }
 function loadFromProtoSettings() {
-  if (initialize.shouldSync("appearance")) {
-    const appearance = handleConnectionClosedOrResumed.settings.appearance;
+  if (closure_6.shouldSync("appearance")) {
+    const appearance = closure_9.settings.appearance;
     if (null != appearance) {
       let UNSET = appearance.theme;
       if (UNSET == null) {
-        UNSET = require(1306) /* create */.Theme.UNSET;
+        UNSET = create.Theme.UNSET;
       }
-      const baseTheme = require(1347) /* getThemeForColor */.getBaseTheme(UNSET);
+      const baseTheme = getThemeForColor.getBaseTheme(UNSET);
       const clientThemeSettings = appearance.clientThemeSettings;
       let prop;
       if (clientThemeSettings != null) {
         prop = clientThemeSettings.customUserThemeSettings;
       }
-      const obj = require(1347) /* getThemeForColor */;
-      importDefault(709).wait(() => callback(table[8]).dispatch({ type: "REFRESH_THEME" }));
-      const obj2 = importDefault(709);
+      const obj = getThemeForColor;
+      dispatcherDefault.wait(() => callback(table[8]).dispatch({ type: "REFRESH_THEME" }));
+      const obj2 = dispatcherDefault;
     }
   }
 }
 function handleSelectivelySyncedUserSettingsUpdate() {
-  if (initialize.shouldSync("appearance")) {
-    const appearance = handleConnectionClosedOrResumed.settings.appearance;
+  if (closure_6.shouldSync("appearance")) {
+    const appearance = closure_9.settings.appearance;
     if (null != appearance) {
       let UNSET = appearance.theme;
       if (UNSET == null) {
-        UNSET = require(1306) /* create */.Theme.UNSET;
+        UNSET = create.Theme.UNSET;
       }
-      const baseTheme = require(1347) /* getThemeForColor */.getBaseTheme(UNSET);
+      const baseTheme = getThemeForColor.getBaseTheme(UNSET);
       const clientThemeSettings = appearance.clientThemeSettings;
       let prop;
       if (clientThemeSettings != null) {
         prop = clientThemeSettings.customUserThemeSettings;
       }
-      const obj = require(1347) /* getThemeForColor */;
-      importDefault(709).wait(() => callback(table[8]).dispatch({ type: "REFRESH_THEME" }));
-      const obj2 = importDefault(709);
+      const obj = getThemeForColor;
+      dispatcherDefault.wait(() => callback(table[8]).dispatch({ type: "REFRESH_THEME" }));
+      const obj2 = dispatcherDefault;
     }
   }
 }
 function isSyncedModeThemesEnabled() {
-  return require(1367) /* useIsMobileVisualRefreshExperimentEnabled */.isMobileVisualRefreshEnabled("CustomThemeMobileStore");
+  return useIsMobileVisualRefreshExperimentEnabled.isMobileVisualRefreshEnabled("CustomThemeMobileStore");
 }
+const PersistedStore = initializeDefault.PersistedStore;
 class CustomThemeMobileStore extends PersistedStore {
 }
 const prototype = CustomThemeMobileStore.prototype;
@@ -74,8 +80,8 @@ prototype["initialize"] = function initialize(arg0) {
   if (null == arg0) {
     const self = this;
     const self2 = this;
-    this.waitFor(initialize, handleThemeChange, CHANNEL_SIDEBAR_WIDTH, handleConnectionClosedOrResumed);
-    const items = [initialize];
+    this.waitFor(closure_6, closure_7, closure_8, closure_9);
+    const items = [closure_6];
     this.syncWith(items, handleSelectivelySyncedUserSettingsUpdate);
   } else {
     if (null == customTheme.theme) {
@@ -88,8 +94,8 @@ prototype["initialize"] = function initialize(arg0) {
         tmp = customTheme2.colors.length > 0;
       }
     }
-    const customThemeBaseTheme = require(1347) /* getThemeForColor */.getCustomThemeBaseTheme(customTheme.theme);
-    const obj = require(1347) /* getThemeForColor */;
+    const customThemeBaseTheme = getThemeForColor.getCustomThemeBaseTheme(customTheme.theme);
+    const obj = getThemeForColor;
   }
 };
 prototype["getState"] = function getState() {
@@ -102,12 +108,12 @@ prototype["getState"] = function getState() {
     obj[0] = closure_3;
     obj[1] = closure_4;
   } else {
-    obj = { theme: "r", customTheme: "accessibilityRole" };
+    obj = { theme: "Array", customTheme: "ct" };
   }
   return obj;
 };
 prototype["getCustomTheme"] = function getCustomTheme() {
-  let obj = require(1366) /* isPerModeThemingActive */;
+  let obj = isPerModeThemingActive;
   if (obj.isPerModeThemingActive(isSyncedModeThemesEnabled)) {
     obj = store;
     const syncedClientTheme = store.getSyncedClientTheme(store.systemTheme);
@@ -118,8 +124,8 @@ prototype["getCustomTheme"] = function getCustomTheme() {
     if (null == prop) {
       let theme = obj.theme;
     } else {
-      theme = require(1347) /* getThemeForColor */.getCustomThemeBaseTheme(obj.theme);
-      const tmpResult = require(1347) /* getThemeForColor */;
+      theme = getThemeForColor.getCustomThemeBaseTheme(obj.theme);
+      const tmpResult = getThemeForColor;
     }
     obj = { baseTheme: null, customTheme: null };
     obj[0] = theme;
@@ -141,7 +147,7 @@ prototype["getCustomTheme"] = function getCustomTheme() {
   }
 };
 prototype["getBaseTheme"] = function getBaseTheme() {
-  let obj = require(1366) /* isPerModeThemingActive */;
+  let obj = isPerModeThemingActive;
   if (obj.isPerModeThemingActive(isSyncedModeThemesEnabled)) {
     obj = store;
     const syncedClientTheme = store.getSyncedClientTheme(store.systemTheme);
@@ -152,8 +158,8 @@ prototype["getBaseTheme"] = function getBaseTheme() {
     if (null == prop) {
       let theme = obj.theme;
     } else {
-      theme = require(1347) /* getThemeForColor */.getCustomThemeBaseTheme(obj.theme);
-      const tmpResult = require(1347) /* getThemeForColor */;
+      theme = getThemeForColor.getCustomThemeBaseTheme(obj.theme);
+      const tmpResult = getThemeForColor;
     }
     obj = { baseTheme: null, customTheme: null };
     obj[0] = theme;
@@ -214,12 +220,12 @@ prototype["getCustomThemeDisplaySettings"] = function getCustomThemeDisplaySetti
       }
       return tmp9;
     }
-    obj5 = require(1366) /* isPerModeThemingActive */;
+    obj5 = isPerModeThemingActive;
     tmp10 = require;
   }
 };
 prototype["hasCustomTheme"] = function hasCustomTheme() {
-  let obj = require(1366) /* isPerModeThemingActive */;
+  let obj = isPerModeThemingActive;
   if (obj.isPerModeThemingActive(isSyncedModeThemesEnabled)) {
     obj = store;
     const syncedClientTheme = store.getSyncedClientTheme(store.systemTheme);
@@ -230,8 +236,8 @@ prototype["hasCustomTheme"] = function hasCustomTheme() {
     if (null == prop) {
       let theme = obj.theme;
     } else {
-      theme = require(1347) /* getThemeForColor */.getCustomThemeBaseTheme(obj.theme);
-      const tmpResult = require(1347) /* getThemeForColor */;
+      theme = getThemeForColor.getCustomThemeBaseTheme(obj.theme);
+      const tmpResult = getThemeForColor;
     }
     obj = { baseTheme: null, customTheme: null };
     obj[0] = theme;
@@ -250,10 +256,10 @@ prototype["hasCustomTheme"] = function hasCustomTheme() {
 };
 CustomThemeMobileStore.displayName = "CustomThemeMobileStore";
 CustomThemeMobileStore.persistKey = "CustomThemeMobileStore";
-const customThemeMobileStore = new CustomThemeMobileStore(require("dispatcher"), {
+const customThemeMobileStore = new CustomThemeMobileStore(dispatcherDefault, {
   UPDATE_CUSTOM_THEME: function handleUpdateCustomTheme(customTheme) {
     customTheme = customTheme.customTheme;
-    const customThemeBaseTheme = require(1347) /* getThemeForColor */.getCustomThemeBaseTheme(customTheme.theme);
+    const customThemeBaseTheme = getThemeForColor.getCustomThemeBaseTheme(customTheme.theme);
   },
   SYSTEM_THEME_CHANGE: handleSyncedModeChange,
   UPDATE_SYNCED_CLIENT_THEME: handleSyncedModeChange,
@@ -264,17 +270,17 @@ const customThemeMobileStore = new CustomThemeMobileStore(require("dispatcher"),
     previewCustomTheme = previewCustomTheme.previewCustomTheme;
     const obj = {};
     const merged = Object.assign(previewCustomTheme);
-    obj.baseTheme = require(1347) /* getThemeForColor */.getCustomThemeBaseTheme(previewCustomTheme.baseTheme);
+    obj.baseTheme = getThemeForColor.getCustomThemeBaseTheme(previewCustomTheme.baseTheme);
   },
   CLEAR_PREVIEW_CUSTOM_THEME: function clearPreviewTheme() {
-    let c5;
+    c5 = undefined;
   },
   RESET_CUSTOM_THEME: reset,
   CACHE_LOADED: loadFromProtoSettings,
   POST_CONNECTION_OPEN: loadFromProtoSettings,
   USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsProtoUpdate(settings) {
     settings = settings.settings;
-    if (initialize.shouldSync("appearance")) {
+    if (closure_6.shouldSync("appearance")) {
       let tmp3 = null;
       if (settings.type === UserSettingsTypes.PRELOADED_USER_SETTINGS) {
         const proto = settings.proto;
@@ -287,22 +293,22 @@ const customThemeMobileStore = new CustomThemeMobileStore(require("dispatcher"),
       if (null != tmp3) {
         let UNSET = tmp3.theme;
         if (UNSET == null) {
-          UNSET = require(1306) /* create */.Theme.UNSET;
+          UNSET = create.Theme.UNSET;
         }
-        const baseTheme = require(1347) /* getThemeForColor */.getBaseTheme(UNSET);
+        const baseTheme = getThemeForColor.getBaseTheme(UNSET);
         const clientThemeSettings = tmp3.clientThemeSettings;
         let prop;
         if (clientThemeSettings != null) {
           prop = clientThemeSettings.customUserThemeSettings;
         }
-        const obj = require(1347) /* getThemeForColor */;
-        importDefault(709).wait(() => callback(table[8]).dispatch({ type: "REFRESH_THEME" }));
-        const obj2 = importDefault(709);
+        const obj = getThemeForColor;
+        dispatcherDefault.wait(() => callback(table[8]).dispatch({ type: "REFRESH_THEME" }));
+        const obj2 = dispatcherDefault;
       }
     }
   },
   LOGOUT: reset
 });
-const result = require("CHANNEL_SIDEBAR_WIDTH").fileFinishedImporting("modules/client_themes/native/CustomThemeMobileStore.tsx");
+const result = require("set").fileFinishedImporting("modules/client_themes/native/CustomThemeMobileStore.tsx");
 
 export default customThemeMobileStore;

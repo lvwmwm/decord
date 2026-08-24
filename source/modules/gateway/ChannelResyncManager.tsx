@@ -1,24 +1,27 @@
-// Module ID: 16543
-// Function ID: 16544
+// Module ID: 16638
+// Function ID: 16639
 // Name: handleGuildCreate
-// Dependencies: [5, 1218, 1391, 4826, 1910, 4495, 676, 1398, 3, 687, 5038, 698, 709, 5399, 13225, 1403, 514, 2]
+// Dependencies: [5, 1218, 1391, 4831, 1910, 4499, 676, 1398, 3, 687, 5043, 698, 709, 5404, 13280, 1403, 514, 2]
 
-// Module 16543 (handleGuildCreate)
-import _handleConnectionOpen from "_handleConnectionOpen";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import closure_8 from "_handleConnectionOpen";
-import { AnalyticEvents } from "ME";
-import { ChannelFlags } from "set";
-import "initialize";
-import set from "ensureGuildLoaded";
+// Module 16638 (handleGuildCreate)
+import timestampDefault from "timestamp" /* 3 */;
+import setDefault from "set" /* 687 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import initializeDefault from "initialize" /* 5043 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "handleConnectionOpen" /* 4831 */;
+import closure_7 from "createGuildRecordFromRust" /* 1910 */;
+import closure_8 from "_handleConnectionOpen" /* 4499 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { ChannelFlags } from "set" /* 1398 */;
+import set from "set" /* 2 */;
 
 const require = arg1;
 function handleGuildCreate(guild) {
   guild = guild.guild;
-  let closure_1;
+  closure_1 = undefined;
   if (true !== guild.unavailable) {
     if (null != dependencyMap4[guild.id]) {
       const _clearTimeout = clearTimeout;
@@ -28,10 +31,10 @@ function handleGuildCreate(guild) {
     const _setTimeout = setTimeout;
     dependencyMap4[guild.id] = setTimeout(() => {
       delete tmp2[tmp];
-      if (closure_1 === outer1_24) {
-        outer1_18.delete(tmp3.id);
-        outer1_29(tmp3.id);
-        outer1_32(tmp3.id);
+      if (closure_1 === closure_1_24) {
+        closure_1_18.delete(tmp3.id);
+        closure_1_29(tmp3.id);
+        closure_1_32(tmp3.id);
       }
     }, 0);
   }
@@ -49,7 +52,7 @@ function handleChannelSync(guild_id) {
   if (guild_id.integrity_check) {
     const channels = guild_id.channels;
     let mutableGuildChannelsForGuild2;
-    let set;
+    set = undefined;
     let items;
     let str2;
     if (dependencyMap[guild_id] != null) {
@@ -63,18 +66,17 @@ function handleChannelSync(guild_id) {
     set = new Set();
     items = [];
     const item = channels.forEach((flags) => {
-      let parent_id;
       if (null != dependencyMap[flags.id]) {
         let obj = dependencyMap(items[15]);
         let num = flags.flags;
         if (num == null) {
           num = 0;
         }
-        const hasFlagResult = obj.hasFlag(num, outer1_10.OBFUSCATED);
-        const hasFlagResult1 = dependencyMap(items[15]).hasFlag(tmp.flags, outer1_10.OBFUSCATED);
+        const hasFlagResult = obj.hasFlag(num, closure_1_10.OBFUSCATED);
+        const hasFlagResult1 = dependencyMap(items[15]).hasFlag(tmp.flags, closure_1_10.OBFUSCATED);
         if (hasFlagResult !== hasFlagResult1) {
           const _HermesInternal2 = HermesInternal;
-          outer1_11.warn("Integrity check failure: " + flags.id + " serverObfuscated: " + hasFlagResult + " != clientObfuscated: " + hasFlagResult1);
+          closure_1_11.warn("Integrity check failure: " + flags.id + " serverObfuscated: " + hasFlagResult + " != clientObfuscated: " + hasFlagResult1);
           set.add(flags.id);
           obj = { channel_id: null, server_obfuscated: null, client_obfuscated: null, server_flags: null, client_flags: null, channel_type: null, parent_id: null };
           obj[0] = flags.id;
@@ -102,7 +104,7 @@ function handleChannelSync(guild_id) {
         const tmp6 = items;
       } else {
         const _HermesInternal = HermesInternal;
-        outer1_11.warn("Integrity check failure: " + flags.id + " was missing.");
+        closure_1_11.warn("Integrity check failure: " + flags.id + " was missing.");
       }
     });
     const _Array = Array;
@@ -113,9 +115,9 @@ function handleChannelSync(guild_id) {
       json = JSON.stringify(items);
     }
     if (set.size > 0) {
-      let verbose = tmp2.warn;
+      let verbose = closure_11.warn;
     } else {
-      verbose = tmp2.verbose;
+      verbose = closure_11.verbose;
     }
     let _HermesInternal = HermesInternal;
     verbose("Integrity check for guild " + guild_id + " completed. Discrepancies found: " + joined);
@@ -175,17 +177,15 @@ function handleLogout(isSwitchingAccount) {
     str = "account_switch";
   }
   const items = [...Object.keys(closure_19), ...Object.keys(closure_20), ...Object.keys(closure_21), ...Object.keys(closure_22)];
-  const set = new Set(items);
+  set = new Set(items);
   const item = set.forEach((arg0) => {
-    let requestedUserId;
-    let requestedUserId2;
-    if (null != outer1_17[arg0]) {
+    if (null != closure_1_17[arg0]) {
       let tmp2 = tmp19;
-      if (null == outer1_19[arg0]) {
+      if (null == closure_1_19[arg0]) {
         tmp2 = tmp21;
       }
       if (tmp2) {
-        let obj = outer1_1(outer1_2[11]);
+        let obj = closure_1_1(closure_1_2[11]);
         obj = { guild_id: null, request_id: null, requested_user_id: null, cancellation_reason: null, had_scheduled_timer: null, had_pending_timeout: null };
         obj[0] = arg0;
         ({ requestId: obj2[1], requestedUserId } = tmp);
@@ -196,10 +196,10 @@ function handleLogout(isSwitchingAccount) {
         obj[3] = str;
         obj[4] = tmp19;
         obj[5] = tmp21;
-        obj.track(outer1_9.GUILD_CHANNEL_RESYNC_CANCELED, obj);
+        obj.track(closure_1_9.GUILD_CHANNEL_RESYNC_CANCELED, obj);
       }
       let tmp12 = tmp9;
-      if (null == outer1_21[arg0]) {
+      if (null == closure_1_21[arg0]) {
         tmp12 = tmp11;
       }
       if (tmp12) {
@@ -213,8 +213,8 @@ function handleLogout(isSwitchingAccount) {
         obj[3] = str;
         obj[4] = tmp9;
         obj[5] = tmp11;
-        outer1_1(outer1_2[11]).track(outer1_9.GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED, obj);
-        const obj3 = outer1_1(outer1_2[11]);
+        closure_1_1(closure_1_2[11]).track(closure_1_9.GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED, obj);
+        const obj3 = closure_1_1(closure_1_2[11]);
       }
     }
   });
@@ -269,9 +269,9 @@ function scheduleGuildResyncs() {
 function _scheduleGuildResyncs() {
   let self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -284,12 +284,12 @@ function _scheduleGuildResyncs() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
           c4 = 2;
-          if (0 === _handleConnectionOpen) {
+          if (0 === closure_3) {
             if (arg0 === 1) {
               c4 = 3;
               throw arg1;
@@ -299,14 +299,14 @@ function _scheduleGuildResyncs() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_2 = tmp2;
+              closure_2 = tmp2;
               let callback = tmp3;
               closure_2 = undefined;
-              _handleConnectionOpen = undefined;
-              callback = outer1_24;
-              _handleConnectionOpen = 1;
+              closure_3 = undefined;
+              callback = closure_1_24;
+              closure_3 = 1;
               c4 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = (function getResyncGuilds() {
                 const self = this;
                 const apply = closure_31.apply;
@@ -341,31 +341,31 @@ function _scheduleGuildResyncs() {
                   obj[0] = id;
                   obj[1] = id.requestId;
                   obj[3] = id.getId();
-                  outer1_17[id] = obj;
-                  if (null != outer1_19[id]) {
+                  closure_1_17[id] = obj;
+                  if (null != closure_1_19[id]) {
                     let _clearTimeout = clearTimeout;
                     clearTimeout(tmp5[id]);
                   }
                   const _Math = Math;
                   const _Math2 = Math;
                   let _setTimeout = setTimeout;
-                  outer1_19[id] = setTimeout(() => {
+                  closure_1_19[id] = setTimeout(() => {
                     delete tmp3[tmp2];
-                    let obj = id(outer1_2[14]);
+                    let obj = id(closure_1_2[14]);
                     if (obj.isChannelMetadataObfuscationEnabled("triggerGuildChannelResync")) {
                       let str;
-                      if (outer1_17[tmp6] != null) {
+                      if (closure_1_17[tmp6] != null) {
                         str = tmp9.requestId;
                       }
                       if (str == null) {
                         str = "unknown";
                       }
-                      if (null == outer1_7.getGuild(tmp6)) {
+                      if (null == closure_1_7.getGuild(tmp6)) {
                         obj = { guild_id: null, request_id: null, failure_reason: "guild_not_found" };
                         obj[0] = tmp6;
                         obj[1] = str;
-                        outer1_1(outer1_2[11]).track(outer1_9.GUILD_CHANNEL_RESYNC_FAILED, obj);
-                        if (null != outer1_20[tmp6]) {
+                        closure_1_1(closure_1_2[11]).track(closure_1_9.GUILD_CHANNEL_RESYNC_FAILED, obj);
+                        if (null != closure_1_20[tmp6]) {
                           let _clearTimeout2 = clearTimeout;
                           clearTimeout(tmp31[tmp6]);
                           delete tmp4[tmp2];
@@ -375,10 +375,10 @@ function _scheduleGuildResyncs() {
                           clearTimeout(tmp5[tmp6]);
                           delete tmp3[tmp2];
                         }
-                        const obj5 = outer1_1(outer1_2[11]);
+                        const obj5 = closure_1_1(closure_1_2[11]);
                       } else {
                         const items = [];
-                        const mutableGuildChannelsForGuild = outer1_5.getMutableGuildChannelsForGuild(tmp6);
+                        const mutableGuildChannelsForGuild = closure_1_5.getMutableGuildChannelsForGuild(tmp6);
                         let num2 = 0;
                         let num = 0;
                         const keys = Object.keys();
@@ -387,10 +387,10 @@ function _scheduleGuildResyncs() {
                           while (keys[tmp] !== undefined) {
                             let tmp40 = tmp13;
                             let tmp41 = id;
-                            let tmp42 = outer1_2;
-                            let obj7 = id(outer1_2[15]);
-                            let tmp43 = outer1_10;
-                            if (obj7.hasFlag(mutableGuildChannelsForGuild[tmp13].flags, outer1_10.OBFUSCATED)) {
+                            let tmp42 = closure_1_2;
+                            let obj7 = id(closure_1_2[15]);
+                            let tmp43 = closure_1_10;
+                            if (obj7.hasFlag(mutableGuildChannelsForGuild[tmp13].flags, closure_1_10.OBFUSCATED)) {
                               let arr = items.push(tmp13);
                             }
                             num2 = num2 + 1;
@@ -402,37 +402,37 @@ function _scheduleGuildResyncs() {
                         obj[1] = str;
                         obj[2] = items.length;
                         obj[3] = num;
-                        outer1_1(outer1_2[11]).track(outer1_9.GUILD_CHANNEL_RESYNC_EXECUTED, obj);
-                        const socket = outer1_8.getSocket();
+                        closure_1_1(closure_1_2[11]).track(closure_1_9.GUILD_CHANNEL_RESYNC_EXECUTED, obj);
+                        const socket = closure_1_8.getSocket();
                         const result = socket.triggerGuildChannelResync(tmp6, items);
-                        id = tmp6;
-                        if (null != outer1_20[tmp6]) {
+                        closure_0 = tmp6;
+                        if (null != closure_1_20[tmp6]) {
                           let _clearTimeout = clearTimeout;
                           clearTimeout(tmp21[tmp6]);
                         }
                         const _setTimeout = setTimeout;
-                        outer1_20[tmp6] = setTimeout(() => { ... }, outer1_15);
-                        outer1_32(tmp6);
-                        const obj2 = outer1_1(outer1_2[11]);
+                        closure_1_20[tmp6] = setTimeout(() => { ... }, closure_1_15);
+                        closure_1_32(tmp6);
+                        const obj2 = closure_1_1(closure_1_2[11]);
                       }
                     }
-                  }, Math.ceil(Math.random() * outer1_12));
+                  }, Math.ceil(Math.random() * closure_1_12));
                 }
               });
               if (closure_2.ineligible.length > 0) {
                 const ineligible = closure_2.ineligible;
-                _handleConnectionOpen = ineligible.map((id) => id.id);
+                closure_3 = ineligible.map((id) => id.id);
                 const _JSON2 = JSON;
                 const _HermesInternal2 = HermesInternal;
-                closure_11.verbose("Guilds we are no longer part of are marked for resync. Unmarking them. Guilds: " + JSON.stringify(_handleConnectionOpen));
+                closure_11.verbose("Guilds we are no longer part of are marked for resync. Unmarking them. Guilds: " + JSON.stringify(closure_3));
                 let obj2 = { type: "UNMARK_RESYNC_GUILDS", guildIds: null };
-                obj2[1] = _handleConnectionOpen;
+                obj2[1] = closure_3;
                 callback(closure_2[12]).dispatch(obj2);
                 let obj5 = callback(closure_2[12]);
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c4 = tmp;
@@ -441,7 +441,7 @@ function _scheduleGuildResyncs() {
       }
     })();
   });
-  const _scheduleGuildResyncs = tmp;
+  closure_30 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -453,7 +453,7 @@ function _scheduleGuildResyncs() {
 function _getResyncGuilds() {
   const self = this;
   const tmp = callback(function*() {
-    let closure_0 = tmp4;
+    closure_0 = tmp4;
     const obj3 = v0(table[13]);
     yield obj3.getAll();
     const obj = { eligible: null, ineligible: null };
@@ -471,7 +471,7 @@ function _getResyncGuilds() {
       eligible.push(id);
     }, obj);
   });
-  const _getResyncGuilds = tmp;
+  closure_31 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -482,7 +482,7 @@ function _getResyncGuilds() {
 }
 function scheduleIntegrityCheck(guild_id) {
   const _require = guild_id;
-  let obj = _require(13225);
+  let obj = _require(13280);
   if (obj.isChannelMetadataIntegrityCheckEnabled("scheduleIntegrityCheck")) {
     if (null != dependencyMap3[guild_id]) {
       let _clearTimeout = clearTimeout;
@@ -510,30 +510,30 @@ function scheduleIntegrityCheck(guild_id) {
       obj = { guild_id: null, request_id: null };
       obj[0] = guild_id;
       obj[1] = requestId;
-      importDefault(698).track(AnalyticEvents.GUILD_CHANNEL_INTEGRITY_CHECK_REQUESTED, obj);
-      let obj4 = importDefault(698);
+      expandEventPropertiesDefault.track(AnalyticEvents.GUILD_CHANNEL_INTEGRITY_CHECK_REQUESTED, obj);
+      let obj4 = expandEventPropertiesDefault;
     }
     const _Math = Math;
     const _Math2 = Math;
     let _setTimeout = setTimeout;
     dependencyMap2[guild_id] = setTimeout(() => {
       delete tmp2[tmp];
-      let obj = guild_id(outer1_2[14]);
+      let obj = guild_id(closure_1_2[14]);
       if (obj.isChannelMetadataIntegrityCheckEnabled("triggerIntegrityCheck")) {
-        if (!outer1_18.has(tmp5)) {
+        if (!closure_1_18.has(tmp5)) {
           let str;
-          if (outer1_17[tmp5] != null) {
+          if (closure_1_17[tmp5] != null) {
             str = tmp9.requestId;
           }
           if (str == null) {
             str = "unknown";
           }
-          if (null == outer1_7.getGuild(tmp5)) {
+          if (null == closure_1_7.getGuild(tmp5)) {
             obj = { guild_id: null, request_id: null, failure_reason: "guild_not_found" };
             obj[0] = tmp5;
             obj[1] = str;
-            outer1_1(tmp6[11]).track(outer1_9.GUILD_CHANNEL_INTEGRITY_CHECK_FAILED, obj);
-            if (null != outer1_22[tmp5]) {
+            closure_1_1(tmp6[11]).track(closure_1_9.GUILD_CHANNEL_INTEGRITY_CHECK_FAILED, obj);
+            if (null != closure_1_22[tmp5]) {
               let _clearTimeout2 = clearTimeout;
               clearTimeout(tmp19[tmp5]);
               delete tmp3[tmp];
@@ -543,37 +543,37 @@ function scheduleIntegrityCheck(guild_id) {
               clearTimeout(tmp4[tmp5]);
               delete tmp2[tmp];
             }
-            const obj2 = outer1_1(tmp6[11]);
+            const obj2 = closure_1_1(tmp6[11]);
           } else {
             obj = { guild_id: null, request_id: null };
             obj[0] = tmp5;
             obj[1] = str;
-            outer1_1(tmp6[11]).track(outer1_9.GUILD_CHANNEL_INTEGRITY_CHECK_EXECUTED, obj);
-            const socket = outer1_8.getSocket();
+            closure_1_1(tmp6[11]).track(closure_1_9.GUILD_CHANNEL_INTEGRITY_CHECK_EXECUTED, obj);
+            const socket = closure_1_8.getSocket();
             const result = socket.triggerGuildChannelResync(tmp5, null);
             guild_id = tmp5;
-            if (null != outer1_22[tmp5]) {
+            if (null != closure_1_22[tmp5]) {
               let _clearTimeout = clearTimeout;
               clearTimeout(tmp29[tmp5]);
             }
             const _setTimeout = setTimeout;
-            outer1_22[tmp5] = setTimeout(() => {
-              outer1_11.warn("Integrity check timeout for guild " + closure_0 + " with request " + str);
-              let obj = str(outer1_2[11]);
+            closure_1_22[tmp5] = setTimeout(() => {
+              closure_1_11.warn("Integrity check timeout for guild " + closure_0 + " with request " + str);
+              let obj = str(closure_1_2[11]);
               obj = { guild_id: closure_0, request_id: str, failure_reason: "timeout" };
-              obj.track(outer1_9.GUILD_CHANNEL_INTEGRITY_CHECK_FAILED, obj);
-              if (null != outer1_22[closure_0]) {
+              obj.track(closure_1_9.GUILD_CHANNEL_INTEGRITY_CHECK_FAILED, obj);
+              if (null != closure_1_22[closure_0]) {
                 const _clearTimeout = clearTimeout;
                 clearTimeout(tmp7[tmp4]);
                 delete tmp3[tmp2];
               }
-              if (null != outer1_21[closure_0]) {
+              if (null != closure_1_21[closure_0]) {
                 const _clearTimeout2 = clearTimeout;
                 clearTimeout(tmp9[tmp4]);
                 delete tmp[tmp2];
               }
-            }, outer1_16);
-            const obj4 = outer1_1(tmp6[11]);
+            }, closure_1_16);
+            const obj4 = closure_1_1(tmp6[11]);
           }
         }
       }
@@ -581,12 +581,13 @@ function scheduleIntegrityCheck(guild_id) {
     tmp8 = null != dependencyMap2[guild_id];
   }
 }
-const unpackModuleId = new require("handleConnectionOpen")("ChannelResyncManager");
-let closure_12 = 2 * require("set").Millis.SECOND;
-let closure_13 = 30 * require("set").Millis.SECOND;
-let closure_14 = 300 * require("set").Millis.SECOND;
-let closure_15 = 30 * require("set").Millis.SECOND;
-let closure_16 = 60 * require("set").Millis.SECOND;
+let closure_11 = new timestampDefault("ChannelResyncManager");
+let closure_12 = 2 * setDefault.Millis.SECOND;
+let closure_13 = 30 * setDefault.Millis.SECOND;
+let closure_14 = 300 * setDefault.Millis.SECOND;
+let closure_15 = 30 * setDefault.Millis.SECOND;
+let closure_16 = 60 * setDefault.Millis.SECOND;
+initializeDefault;
 class ChannelResyncManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

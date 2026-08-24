@@ -1,23 +1,22 @@
-// Module ID: 10654
-// Function ID: 10655
+// Module ID: 10693
+// Function ID: 10694
 // Name: WarningBox
-// Dependencies: [19, 17, 21, 4661, 9228, 4734, 1236, 9856, 3271, 2]
+// Dependencies: [19, 17, 21, 4668, 9265, 4739, 1236, 9895, 3274, 2]
 // Exports: default
 
-// Module 10654 (WarningBox)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10693 (WarningBox)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Text from "Text" /* 4739 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9265 */;
+import InfoBox from "InfoBox" /* 9895 */;
+import InfoBoxDefault from "InfoBox" /* 9895 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 function WarningBox(application) {
-  let canStartAuthorization;
-  let hasAccountLinked;
-  let mobileAccountLinkingDisabled;
-  let sku;
   application = application.application;
   ({ canStartAuthorization, hasAccountLinked, mobileAccountLinkingDisabled, sku } = application);
   let tmp2 = null;
@@ -27,11 +26,11 @@ function WarningBox(application) {
     let name = importDefault;
     let BMMo2K = dependencyMap;
     let obj = { look: null, style: null, children: null };
-    obj[0] = require(9856) /* InfoBox */.InfoBoxLooks.WARNING;
+    obj[0] = InfoBox.InfoBoxLooks.WARNING;
     obj[1] = tmp.warningBox;
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     if (mobileAccountLinkingDisabled) {
-      BMMo2K = name(3271).BMMo2K;
+      BMMo2K = name(3274).BMMo2K;
       tmp2 = application == tmp2;
       name = undefined;
       if (!tmp2) {
@@ -56,22 +55,17 @@ function WarningBox(application) {
       obj[2] = intl.format(tmp6(1236).t["3T0cpx"], {});
       tmp7 = obj;
     }
-    closure_4(importDefault(9856), tmp7);
+    closure_4(InfoBoxDefault, tmp7);
     const tmp3 = closure_4;
-    const tmp5 = importDefault(9856);
+    const tmp5 = InfoBoxDefault;
   }
 }
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ container: { alignItems: "center", justifyContent: "center", gap: 16, marginTop: 20 }, text: { textAlign: "center", paddingHorizontal: 32 }, warningBox: { marginHorizontal: 16 } });
-const result = require("jsxProd").fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontGiftPreview.tsx");
+const result = require("set").fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontGiftPreview.tsx");
 
 export default function SlayerStorefrontGiftPreview(arg0) {
-  let application;
-  let canStartAuthorization;
-  let hasAccountLinked;
-  let mobileAccountLinkingDisabled;
-  let sender;
-  let sku;
   ({ sku, application, mobileAccountLinkingDisabled } = arg0);
   ({ sender, hasAccountLinked, canStartAuthorization } = arg0);
   if (mobileAccountLinkingDisabled === undefined) {
@@ -84,11 +78,11 @@ export default function SlayerStorefrontGiftPreview(arg0) {
     obj[0] = tmp.container;
     obj = { sku: null };
     obj[0] = sku;
-    const items = [callback(importDefault(9228), obj), , ];
+    const items = [callback(SlayerStorefrontItemCardDefault, obj), , ];
     obj = { variant: "heading-md/normal", color: "mobile-text-heading-primary", style: null, children: null };
     obj[2] = tmp.text;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const obj1 = { sender: null, skuName: null, applicationName: null };
+    const intl = getSystemLocale.intl;
+    obj1 = { sender: null, skuName: null, applicationName: null };
     obj1[0] = sender;
     obj1[1] = sku.name;
     let name;
@@ -96,8 +90,8 @@ export default function SlayerStorefrontGiftPreview(arg0) {
       name = application.name;
     }
     obj1[2] = name;
-    obj[3] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["2tBYtA"], obj1);
-    items[1] = callback(require(4734) /* Text */.Text, obj);
+    obj[3] = intl.formatToPlainString(getSystemLocale.t["2tBYtA"], obj1);
+    items[1] = callback(Text.Text, obj);
     const obj2 = { canStartAuthorization: null, hasAccountLinked: null, mobileAccountLinkingDisabled: null, sku: null, application: null };
     obj2[0] = canStartAuthorization;
     obj2[1] = hasAccountLinked;

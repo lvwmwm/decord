@@ -1,14 +1,17 @@
-// Module ID: 13171
-// Function ID: 13172
+// Module ID: 13227
+// Function ID: 13228
 // Name: hasPerformanceForKrispFullband
-// Dependencies: [5418, 2]
+// Dependencies: [5423, 2]
 // Exports: default
 
-// Module 13171 (hasPerformanceForKrispFullband)
-const result = require("set").fileFinishedImporting("modules/device/hasPerformanceForKrispFullband.tsx");
+// Module 13227 (hasPerformanceForKrispFullband)
+import set from "set" /* 2 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 5423 */;
+
+const result = set.fileFinishedImporting("modules/device/hasPerformanceForKrispFullband.tsx");
 
 export default function hasPerformanceForKrispFullband() {
-  const tmp = importDefault(5418)();
+  const tmp = getMediaPerformanceClassDefault();
   let tmp2 = null === tmp;
   if (!tmp2) {
     tmp2 = tmp >= 31;

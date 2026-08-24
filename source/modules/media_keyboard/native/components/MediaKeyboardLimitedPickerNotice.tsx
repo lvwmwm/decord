@@ -1,21 +1,19 @@
-// Module ID: 10291
-// Function ID: 10292
+// Module ID: 10330
+// Function ID: 10331
 // Name: MediaKeyboardLimitedPickerNotice
-// Dependencies: [19, 17, 21, 4661, 4734, 1236, 4745, 2]
+// Dependencies: [19, 17, 21, 4668, 4739, 1236, 4750, 2]
 // Exports: default
 
-// Module 10291 (MediaKeyboardLimitedPickerNotice)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10330 (MediaKeyboardLimitedPickerNotice)
+import closure_2 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ container: { flexDirection: "row", paddingHorizontal: 16, paddingVertical: 16, alignItems: "center" }, absoluteContainer: { position: "absolute" }, text: { flex: 1 }, button: { marginLeft: 16 } });
-const result = require("jsxProd").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardLimitedPickerNotice.tsx");
+const result = require("set").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardLimitedPickerNotice.tsx");
 
 export default function MediaKeyboardLimitedPickerNotice(onHeightChange) {
   onHeightChange = onHeightChange.onHeightChange;
@@ -36,13 +34,13 @@ export default function MediaKeyboardLimitedPickerNotice(onHeightChange) {
   obj = { style: tmp.text, variant: "text-sm/normal", children: null };
   const intl = onHeightChange(1236).intl;
   obj[2] = intl.string(onHeightChange(1236).t["5g7NcN"]);
-  const items2 = [callback(onHeightChange(4734).Text, obj), ];
+  const items2 = [callback(onHeightChange(4739).Text, obj), ];
   obj = { style: tmp.button, children: null };
-  const obj1 = { size: "sm", variant: "tertiary", text: null, onPress: null };
+  obj1 = { size: "sm", variant: "tertiary", text: null, onPress: null };
   const intl2 = onHeightChange(1236).intl;
   obj1[2] = intl2.string(onHeightChange(1236).t.JuXTi6);
   obj1[3] = onHeightChange.onPress;
-  obj[1] = callback(onHeightChange(4745).Button, obj1);
+  obj[1] = callback(onHeightChange(4750).Button, obj1);
   items2[1] = callback(View, obj);
   obj[2] = items2;
   return closure_5(View, obj);

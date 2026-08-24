@@ -1,37 +1,38 @@
-// Module ID: 11793
-// Function ID: 11794
+// Module ID: 11842
+// Function ID: 11843
 // Name: UserProfileConfirmRemoveFriend
-// Dependencies: [19, 21, 4660, 1236, 4660, 2]
+// Dependencies: [19, 21, 4667, 1236, 4667, 2]
 // Exports: default
 
-// Module 11793 (UserProfileConfirmRemoveFriend)
-import "noop";
-import jsxProd from "jsxProd";
+// Module 11842 (UserProfileConfirmRemoveFriend)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let obj1;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: obj1, jsxs: c3 } = jsxProd);
-const result = require("getAlertModalItemKey").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmRemoveFriend.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmRemoveFriend.tsx");
 
 export default function UserProfileConfirmRemoveFriend(userDisplayName) {
   userDisplayName = userDisplayName.userDisplayName;
   let obj = { title: null, content: null, actions: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.fPLvZd, { name: userDisplayName });
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.l5FFq6, { name: userDisplayName });
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.formatToPlainString(getSystemLocale.t.fPLvZd, { name: userDisplayName });
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.formatToPlainString(getSystemLocale.t.l5FFq6, { name: userDisplayName });
   obj = { children: null };
   obj = { variant: "destructive", text: null, onPress: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.cvSt1J);
+  const intl3 = getSystemLocale.intl;
+  obj[1] = intl3.string(getSystemLocale.t.cvSt1J);
   obj[2] = userDisplayName.onConfirm;
-  const items = [callback(require(4660) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm-remove"), ];
-  const obj1 = { variant: "secondary", text: null };
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["eN6+rI"]);
-  items[1] = callback(require(4660) /* getAlertModalItemKey */.AlertActionButton, obj1, "nevermind");
+  const items = [callback(getAlertModalItemKey.AlertActionButton, obj, "confirm-remove"), ];
+  obj1 = { variant: "secondary", text: null };
+  const intl4 = getSystemLocale.intl;
+  obj1[1] = intl4.string(getSystemLocale.t["eN6+rI"]);
+  items[1] = callback(getAlertModalItemKey.AlertActionButton, obj1, "nevermind");
   obj[0] = items;
-  obj[2] = callback2(require(4660) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4660) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[2] = callback2(getAlertModalItemKey.AlertActions, obj);
+  return callback(getAlertModalItemKey.AlertModal, obj);
 };

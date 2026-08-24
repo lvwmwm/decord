@@ -1,22 +1,18 @@
-// Module ID: 6551
-// Function ID: 6552
-// Dependencies: [32, 19, 17, 1496, 21, 1895, 4239, 1627, 5444, 5442, 5443, 2]
+// Module ID: 6582
+// Function ID: 6583
+// Dependencies: [32, 19, 17, 1496, 21, 1895, 4243, 1627, 5449, 5447, 5448, 2]
 
-// Module 6551
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
-import { jsx } from "jsxProd";
+// Module 6582
+import closure_2 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "subscribeToKeyboardUIStore" /* 1496 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
 const require = arg1;
 let c3 = importAllResult;
 ({ View: c4, StyleSheet: c5 } = get_ActivityIndicator);
 const memoResult = importAllResult.memo(function KeyboardAwareView(style) {
-  let children;
-  let pointerEvents;
   style = style.style;
   let flag = style.animated;
   ({ children, pointerEvents } = style);
@@ -29,8 +25,8 @@ const memoResult = importAllResult.memo(function KeyboardAwareView(style) {
   }
   let ref;
   let first;
-  let closure_5;
-  let subscribeToKeyboardUIStore;
+  closure_5 = undefined;
+  closure_6 = undefined;
   let obj = ref;
   let systemKeyboardHeight = style(flag[5]).getSystemKeyboardHeight();
   if (0 === systemKeyboardHeight) {
@@ -49,24 +45,24 @@ const memoResult = importAllResult.memo(function KeyboardAwareView(style) {
   closure_5 = tmp6[1];
   const items = [num];
   const effect = obj.useEffect(() => ref(() => {
-    let systemKeyboardHeight = outer1_0(outer1_1[5]).getSystemKeyboardHeight();
+    let systemKeyboardHeight = closure_1_0(closure_1_1[5]).getSystemKeyboardHeight();
     if (0 === systemKeyboardHeight) {
       let tmp2Result = tmp2(tmp3[6]);
       const keyboardType = tmp2Result.getKeyboardType();
-      let num = 0;
+      num = 0;
       if (keyboardType !== tmp2(tmp3[7]).KeyboardTypes.SYSTEM) {
         tmp2Result = tmp2(tmp3[8]);
         num = tmp2Result.getCustomKeyboardHeight();
       }
       systemKeyboardHeight = num;
     }
-    const bound = Math.max(0, systemKeyboardHeight + _slicedToArray);
+    const bound = Math.max(0, systemKeyboardHeight + closure_2);
     if (ref.current !== bound) {
       ref.current = bound;
       callback(bound);
     }
   }), items);
-  subscribeToKeyboardUIStore = obj.useRef(false);
+  closure_6 = obj.useRef(false);
   const items1 = [flag, first];
   const effect1 = obj.useEffect(() => {
     if (ref.current) {
@@ -130,6 +126,6 @@ const memoResult = importAllResult.memo(function KeyboardAwareView(style) {
     }
   }, items2)} pointerEvents={pointerEvents}>{children}</first>;
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/keyboard/native/KeyboardAwareView.tsx");
+let result = require("set").fileFinishedImporting("modules/keyboard/native/KeyboardAwareView.tsx");
 
 export default memoResult;

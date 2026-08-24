@@ -1,31 +1,31 @@
-// Module ID: 6084
-// Function ID: 6085
+// Module ID: 6115
+// Function ID: 6116
 // Name: QuestsIllocon
-// Dependencies: [21, 5449, 6085, 2]
+// Dependencies: [21, 5454, 6116, 2]
 // Exports: QuestsIllocon
 
-// Module 6084 (QuestsIllocon)
-import { jsx } from "jsxProd";
+// Module 6115 (QuestsIllocon)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6116 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/QuestsIllocon.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/QuestsIllocon.native.tsx");
 
 export const QuestsIllocon = function QuestsIllocon(size) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6085);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { uri: null });
+  return jsx(preloadDefault, { uri: metadataDefault });
 };

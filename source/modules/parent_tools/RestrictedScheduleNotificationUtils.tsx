@@ -1,16 +1,16 @@
-// Module ID: 10016
-// Function ID: 10017
+// Module ID: 10055
+// Function ID: 10056
 // Name: isOnlyDayLoss
-// Dependencies: [12, 2335, 1236, 10017, 2]
+// Dependencies: [12, 2336, 1236, 10056, 2]
 // Exports: diffSchedules, getRestrictedScheduleNotificationSubtitle, getRestrictedScheduleNotificationTitle, restrictedScheduleNotificationKey, toScheduleSnapshot
 
-// Module 10016 (isOnlyDayLoss)
-let Created;
-let Disabled;
-let Enabled;
-let Multiple;
-let Removed;
-let Updated;
+// Module 10055 (isOnlyDayLoss)
+import set2 from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2336 */;
+import setsEqual from "setsEqual" /* 10056 */;
+
 function isOnlyDayLoss(label, label2) {
   if (label.label !== label2.label) {
     return false;
@@ -32,15 +32,15 @@ function isOnlyDayLoss(label, label2) {
     } else {
       return false;
     }
-    obj2 = importDefault(12);
+    obj2 = applyDefault;
     tmp7 = importDefault;
   }
 }
 let obj = { Created: "created", Enabled: "enabled", Disabled: "disabled", Updated: "updated", Removed: "removed", Multiple: "multiple" };
 let map = new Map();
-obj = { [Created]: require("messagesProxy")["5V7eBH"], [Enabled]: require("messagesProxy").iefrVg, [Disabled]: require("messagesProxy")["k+s9cM"], [Updated]: require("messagesProxy").Nm6hZV, [Multiple]: require("messagesProxy").Nm6hZV, [Removed]: require("messagesProxy").jR6uOs };
+obj = { [Created]: messagesProxyDefault["5V7eBH"], [Enabled]: messagesProxyDefault.iefrVg, [Disabled]: messagesProxyDefault["k+s9cM"], [Updated]: messagesProxyDefault.Nm6hZV, [Multiple]: messagesProxyDefault.Nm6hZV, [Removed]: messagesProxyDefault.jR6uOs };
 ({ Created, Enabled, Disabled, Updated, Multiple, Removed } = obj);
-let result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/RestrictedScheduleNotificationUtils.tsx");
+let result = set2.fileFinishedImporting("modules/parent_tools/RestrictedScheduleNotificationUtils.tsx");
 
 export const RestrictedScheduleNotificationKind = obj;
 export const EMPTY_SCHEDULE_SNAPSHOT = map;
@@ -49,7 +49,7 @@ export const toScheduleSnapshot = function toScheduleSnapshot(rules) {
     if (0 !== rules.rules.length) {
       const _Map = Map;
       rules = rules.rules;
-      const map = new Map(rules.map((ruleId) => {
+      map = new Map(rules.map((ruleId) => {
         const items = [ruleId.ruleId, ruleId];
         return items;
       }));
@@ -58,21 +58,19 @@ export const toScheduleSnapshot = function toScheduleSnapshot(rules) {
   }
 };
 export const diffSchedules = function diffSchedules(arr, toScheduleSnapshotResult) {
-  let tmp53;
-  let tmp54;
   function record(Created, value) {
     if (0 === closure_4) {
-      let closure_0 = Created;
-      let closure_1 = value;
+      closure_0 = Created;
+      closure_1 = value;
     }
     closure_4 = closure_4 + 1;
     if (Created === _null3.Removed) {
       closure_5 = closure_5 + 1;
     } else if (Created === tmp2.Created) {
-      let closure_2 = value;
+      closure_2 = value;
       closure_6 = closure_6 + 1;
     } else if (Created === tmp2.Updated) {
-      let closure_3 = value;
+      closure_3 = value;
       closure_7 = closure_7 + 1;
     } else {
       const items = [, ];
@@ -82,15 +80,15 @@ export const diffSchedules = function diffSchedules(arr, toScheduleSnapshotResul
       }
     }
   }
-  let c0 = null;
-  const importDefault = null;
-  const dependencyMap = null;
-  let obj = null;
-  let c4 = 0;
-  const isOnlyDayLoss = 0;
-  let c6 = 0;
-  let c7 = 0;
-  let c8 = 0;
+  c0 = null;
+  importDefault = null;
+  dependencyMap = null;
+  obj = null;
+  c4 = 0;
+  isOnlyDayLoss = 0;
+  c6 = 0;
+  c7 = 0;
+  c8 = 0;
   let items = [];
   const items1 = [...arr.keys(), ...toScheduleSnapshotResult.keys()];
   for (const item10030 of set) {
@@ -148,7 +146,7 @@ export const diffSchedules = function diffSchedules(arr, toScheduleSnapshotResul
             if (isEqualResult) {
               let tmp10 = importDefault;
               let tmp11 = dependencyMap;
-              obj = importDefault(12);
+              obj = applyDefault;
               let tmp12 = tmp7;
               let tmp13 = tmp5;
               isEqualResult = obj.isEqual(tmp8.startTime, tmp6.startTime);
@@ -156,7 +154,7 @@ export const diffSchedules = function diffSchedules(arr, toScheduleSnapshotResul
             if (isEqualResult) {
               let tmp14 = importDefault;
               let tmp15 = dependencyMap;
-              let obj1 = importDefault(12);
+              obj1 = applyDefault;
               let tmp16 = tmp7;
               let tmp17 = tmp5;
               isEqualResult = obj1.isEqual(tmp8.endTime, tmp6.endTime);
@@ -164,7 +162,7 @@ export const diffSchedules = function diffSchedules(arr, toScheduleSnapshotResul
             if (isEqualResult) {
               let tmp18 = importDefault;
               let tmp19 = dependencyMap;
-              let obj2 = importDefault(12);
+              let obj2 = applyDefault;
               let tmp20 = tmp7;
               let items2 = [];
               let tmp21 = items2;
@@ -254,18 +252,18 @@ export const diffSchedules = function diffSchedules(arr, toScheduleSnapshotResul
   let set = new Set(items1);
 };
 export const getRestrictedScheduleNotificationTitle = function getRestrictedScheduleNotificationTitle(kind) {
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   return intl.string(obj[kind]);
 };
 export const getRestrictedScheduleNotificationSubtitle = function getRestrictedScheduleNotificationSubtitle(rule) {
   let result = null;
   if (null != rule) {
-    result = require(10017) /* setsEqual */.formatRestrictedScheduleInAppSubtitle(rule);
-    const obj = require(10017) /* setsEqual */;
+    result = setsEqual.formatRestrictedScheduleInAppSubtitle(rule);
+    obj = setsEqual;
   }
   if (result == null) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    result = intl.string(importDefault(2335)["8OlpoY"]);
+    const intl = getSystemLocale.intl;
+    result = intl.string(messagesProxyDefault["8OlpoY"]);
   }
   return result;
 };

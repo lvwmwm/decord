@@ -1,52 +1,43 @@
-// Module ID: 9510
-// Function ID: 9511
+// Module ID: 9547
+// Function ID: 9548
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 8854, 9511, 676, 21, 4661, 712, 4310, 8855, 589, 4097, 7688, 7139, 7159, 8856, 9512, 4745, 1236, 9532, 9513, 9533, 689, 6950, 4756, 6952, 7124, 2]
+// Dependencies: [19, 17, 8891, 9548, 676, 21, 4668, 712, 4314, 8892, 589, 4100, 7726, 7177, 7197, 8893, 9549, 4750, 1236, 9569, 9550, 9570, 689, 6988, 4761, 6990, 7162, 2]
 // Exports: default
 
-// Module 9510 (GuildProfileActionSheet)
-import GuildProfileLoadingError from "GuildProfileLoadingError";
-import get_ActivityIndicator from "Button";
-import handleUpdateStart from "handleUpdateStart";
-import { GuildProfileFetchStatus } from "handleUpdateStart";
-import { INVALID_ACCESS_ERROR_CODE } from "BannerPalettePresets";
-import { VerticalGradient } from "ME";
-import jsxProd from "GuildProfileCTA";
-import createCacheKey from "createCacheKey";
+// Module 9547 (GuildProfileActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "handleUpdateStart" /* 8891 */;
+import { GuildProfileFetchStatus } from "handleUpdateStart" /* 8891 */;
+import { INVALID_ACCESS_ERROR_CODE } from "BannerPalettePresets" /* 9548 */;
+import { VerticalGradient } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c4;
-let c5;
-let unpackModuleId;
 const require = arg1;
 ({ View: c4, ActivityIndicator: c5 } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 createCacheKey = { loadingContainer: { paddingTop: 40 }, footerContainer: { paddingHorizontal: 16, paddingVertical: 40 }, scrollView: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[2] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("handleUpdateStart").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileActionSheet.tsx");
+let closure_12 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileActionSheet.tsx");
 
 export default function GuildProfileActionSheet(guildId) {
-  let bottomSheetClose;
-  let bottomSheetRef;
-  let context;
-  let fetchGuildProfile;
-  let guildProfile;
-  let inviteKey;
   guildId = guildId.guildId;
   fetchGuildProfile = undefined;
   let analyticsLocations;
   let token1;
   ({ context, inviteKey } = guildId);
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = guildId(analyticsLocations[9]);
   guildProfile = obj.useGuildProfile(guildId);
   ({ guildProfile, fetchGuildProfile } = guildProfile);
   const fetchStatus = guildProfile.fetchStatus;
-  let obj1 = guildId(analyticsLocations[10]);
-  let items = [handleUpdateStart];
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getErrorCode(guildId));
+  obj1 = guildId(analyticsLocations[10]);
+  let items = [closure_6];
+  const stateFromStores = obj1.useStateFromStores(items, () => closure_1_6.getErrorCode(guildId));
   let obj2 = guildId(analyticsLocations[11]);
   const token = obj2.useToken(fetchGuildProfile(analyticsLocations[7]).colors.INTERACTIVE_TEXT_HOVER, fetchGuildProfile(analyticsLocations[8])());
   let obj3 = guildId(analyticsLocations[12]);

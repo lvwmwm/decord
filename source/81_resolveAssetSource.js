@@ -5,10 +5,13 @@
 // Exports: default
 
 // Module 81 (resolveAssetSource)
+import _mod84 from "module_84" /* 84 */;
+import pickScale from "pickScale" /* 86 */;
+
 function resolveAssetSource(source) {
   if (null != source) {
     if (typeof source !== "object") {
-      const assetByID = require(84).getAssetByID(source);
+      const assetByID = _mod84.getAssetByID(source);
       if (assetByID) {
         const _default = new tmp12(85).default((function getDevServerURL() {
           let tmp = first;
@@ -29,8 +32,8 @@ function resolveAssetSource(source) {
           }
           return tmp;
         })(), (function getScriptURL() {
-          let tmp = closure_4;
-          if (undefined === closure_4) {
+          let tmp = c4;
+          if (undefined === c4) {
             if (null == scriptURL) {
               scriptURL = callback(82).getConstants().scriptURL;
               const obj = callback(82);
@@ -48,7 +51,7 @@ function resolveAssetSource(source) {
                 }
               }
             }
-            closure_4 = tmp5;
+            c4 = tmp5;
             tmp = tmp5;
           }
           return tmp;
@@ -68,14 +71,14 @@ function resolveAssetSource(source) {
       } else {
         return null;
       }
-      const obj3 = require(84);
+      const obj3 = _mod84;
       tmp12 = require;
     }
   }
   return source;
 }
 let closure_6 = [];
-resolveAssetSource.pickScale = require("pickScale").pickScale;
+resolveAssetSource.pickScale = pickScale.pickScale;
 resolveAssetSource.setCustomSourceTransformer = function setCustomSourceTransformer(arg0) {
   const items = [arg0];
 };

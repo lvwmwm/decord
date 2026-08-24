@@ -1,13 +1,15 @@
-// Module ID: 13184
-// Function ID: 13185
+// Module ID: 13239
+// Function ID: 13240
 // Name: getNvencReconstructedFrameExperimentConfig
 // Dependencies: [1368, 2]
 // Exports: getNvencReconstructedFrameExperimentConfig
 
-// Module 13184 (getNvencReconstructedFrameExperimentConfig)
+// Module 13239 (getNvencReconstructedFrameExperimentConfig)
+import getUnitIdDefault from "getUnitId" /* 1368 */;
+
 let obj = { 1: null };
 obj[1] = { enabled: true };
-let closure_0 = require("getUnitId")({ kind: "user", name: "2026-07-nvenc-reconstructed-frames", defaultConfig: { enabled: false }, variations: obj });
+let closure_0 = getUnitIdDefault({ kind: "user", name: "2026-07-nvenc-reconstructed-frames", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/media_engine/NvencReconstructedFrameExperiment.tsx");
 
 export const getNvencReconstructedFrameExperimentConfig = function getNvencReconstructedFrameExperimentConfig(disable) {

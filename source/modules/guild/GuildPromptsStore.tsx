@@ -1,12 +1,14 @@
-// Module ID: 11823
-// Function ID: 11824
+// Module ID: 11872
+// Function ID: 11873
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 11823 (initialize)
-import { PersistedStore } from "initialize";
+// Module 11872 (initialize)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let closure_0 = {};
+const PersistedStore = initializeDefault.PersistedStore;
 class GuildPromptsStore extends PersistedStore {
 }
 const prototype = GuildPromptsStore.prototype;
@@ -35,10 +37,8 @@ prototype["getState"] = function getState() {
 };
 GuildPromptsStore.displayName = "GuildPromptsStore";
 GuildPromptsStore.persistKey = "GuildPromptsStore";
-const guildPromptsStore = new GuildPromptsStore(require("dispatcher"), {
+const guildPromptsStore = new GuildPromptsStore(dispatcherDefault, {
   GUILD_PROMPT_VIEWED: function handleGuildPromptViewed(arg0) {
-    let _prompt;
-    let guildId;
     ({ prompt: _prompt, guildId } = arg0);
     if (null == dependencyMap[guildId]) {
       const _Set = Set;

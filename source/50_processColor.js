@@ -4,13 +4,15 @@
 // Dependencies: [51, 52]
 
 // Module 50 (processColor)
-const require = arg1;
+import normalizeColor from "normalizeColor" /* 51 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.default = function processColor(arg0) {
   if (null == arg0) {
     return arg0;
   } else {
-    const defaultResult = require(51) /* normalizeColor */.default(arg0);
+    const defaultResult = normalizeColor.default(arg0);
     if (null != defaultResult) {
       if (typeof defaultResult === "object") {
         const processColorObjectResult = tmp(52).processColorObject(defaultResult);
@@ -24,7 +26,7 @@ arg5.default = function processColor(arg0) {
       }
       return tmp4;
     }
-    const obj = require(51) /* normalizeColor */;
+    const obj = normalizeColor;
     tmp = require;
   }
 };

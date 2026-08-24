@@ -1,10 +1,12 @@
-// Module ID: 6099
-// Function ID: 6100
+// Module ID: 6130
+// Function ID: 6131
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6099 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyChatSpotIllustration-2x.png.js");
+// Module 6130 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyChatSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/2ab6a1d1a5e16304b56f691460b2e9f0a6d8a8e3d0f57810b63bb63919247b56.png";
 export const metadata = { fileBytes: 34207 };

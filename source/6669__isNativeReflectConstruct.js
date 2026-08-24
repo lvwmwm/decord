@@ -1,18 +1,16 @@
 // Module ID: 6669
 // Function ID: 6670
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 6670, 21, 6579, 6586, 6587, 6593, 6672, 6595]
+// Dependencies: [41, 42, 93, 95, 98, 19, 6623]
 
 // Module 6669 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult from "_createClass";
-import "noop";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { jsx } from "jsxProd";
+import _inheritsDefault from "_inherits" /* 98 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult from "_createClass" /* 42 */;
 
-const Text = arg1;
+const FePointLight = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -24,77 +22,46 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
 }
-class Text {
+class FePointLight {
   constructor() {
     self = this;
-    items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
-    items1 = [...items];
-    tmp2 = __esModule;
-    obj = __esModule(apply);
-    tmp3 = __esModule;
+    tmp = closure_2(this, FePointLight);
+    tmp2 = closure_4;
+    obj = closure_4(FePointLight);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
-    tmp3Result.setNativeProps = (matrix) => {
-      let tmp = matrix;
-      if (matrix) {
-        tmp = !matrix.matrix;
-      }
-      if (tmp) {
-        tmp = outer1_1(outer1_2[8])(matrix);
-      }
-      if (tmp) {
-        matrix.matrix = tmp;
-      }
-      const propsAndStylesResult = _undefined(outer1_2[9]).propsAndStyles(matrix);
-      const obj = _undefined(outer1_2[9]);
-      const merged = Object.assign(propsAndStylesResult, _undefined(outer1_2[10]).pickNotNil(outer1_1(outer1_2[11])(propsAndStylesResult, true)));
-      if (_undefined.root) {
-        const root = _undefined.root;
-        root.setNativeProps(propsAndStylesResult);
-      }
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Text, require("_isNativeReflectConstruct"));
-let items = [
+_inheritsDefault(FePointLight, require("noop").Component);
+const items = [
   {
     key: "render",
     value: function render() {
-      let obj = Text(6586);
-      const propsAndStylesResult = obj.propsAndStyles(this.props);
-      obj = {};
-      const merged = Object.assign(propsAndStylesResult);
-      obj.x = null;
-      obj.y = null;
-      const tmp2Result = importDefault(6586)(obj, this);
-      const merged1 = Object.assign(tmp2Result, importDefault(6593)(propsAndStylesResult, true));
-      tmp2Result.ref = this.refMethod;
-      obj = {};
-      const tmp2 = importDefault(6586);
-      const merged2 = Object.assign(tmp2Result);
-      return jsx(importDefault(6672), {});
+      const result = FePointLight(6623).warnUnimplementedFilter();
+      return null;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Text, items);
-importDefaultResultResult.displayName = "Text";
+const importDefaultResultResult = importDefaultResult(FePointLight, items);
+importDefaultResultResult.displayName = "FePointLight";
+importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

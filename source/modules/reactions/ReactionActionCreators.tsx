@@ -1,24 +1,24 @@
-// Module ID: 7511
-// Function ID: 7512
+// Module ID: 7549
+// Function ID: 7550
 // Name: checkReactionResponse
-// Dependencies: [5, 1218, 1391, 4994, 676, 687, 4827, 1236, 1231, 709, 7510, 530, 7512, 698, 5042, 1363, 7530, 4038, 2]
+// Dependencies: [5, 1218, 1391, 4999, 676, 687, 4832, 1236, 1231, 709, 7548, 530, 7550, 698, 5047, 1363, 7568, 4041, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 7511 (checkReactionResponse)
-import set from "set";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import reinjectEphemerals from "reinjectEphemerals";
-import ME from "ME";
+// Module 7549 (checkReactionResponse)
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import setDefault2 from "set" /* 4832 */;
+import ReactionTypes2 from "ReactionTypes" /* 7548 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "reinjectEphemerals" /* 4999 */;
+import ME from "ME" /* 676 */;
 
-let c10;
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function checkReactionResponse(arg0, arg1, isRetry) {
-  let body;
-  let status;
   ({ status, body } = arg0);
   if (429 === status) {
     if (isRetry.isRetry) {
@@ -29,7 +29,7 @@ function checkReactionResponse(arg0, arg1, isRetry) {
       const _isNaN = isNaN;
       if (!isNaN(parsed)) {
         const _setTimeout = setTimeout;
-        const timerId = setTimeout(arg1, parsed * importDefault(687).Millis.SECOND);
+        const timerId = setTimeout(arg1, parsed * setDefault.Millis.SECOND);
       }
       return false;
     }
@@ -40,17 +40,17 @@ function checkReactionResponse(arg0, arg1, isRetry) {
         code = body.code;
       }
       if (constants.TOO_MANY_REACTIONS === code) {
-        let obj = importDefault(4827);
+        obj = setDefault2;
         obj = { title: null, body: null, confirmText: null };
-        const intl = require(1236) /* getSystemLocale */.intl;
-        obj[0] = intl.string(require(1236) /* getSystemLocale */.t.lFddsR);
-        const intl2 = require(1236) /* getSystemLocale */.intl;
-        obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.h27eIm);
-        const intl3 = require(1236) /* getSystemLocale */.intl;
-        obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.BddRzS);
+        const intl = getSystemLocale.intl;
+        obj[0] = intl.string(getSystemLocale.t.lFddsR);
+        const intl2 = getSystemLocale.intl;
+        obj[1] = intl2.string(getSystemLocale.t.h27eIm);
+        const intl3 = getSystemLocale.intl;
+        obj[2] = intl3.string(getSystemLocale.t.BddRzS);
         obj.show(obj);
       } else if (tmp3.REACTION_BLOCKED === code) {
-        const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
+        const ComponentDispatch = ComponentDispatcher.ComponentDispatch;
         ComponentDispatch.dispatch(constants2.SHAKE_APP, { duration: 200, intensity: 2 });
       }
     } else if (!isRetry.isRetry) {
@@ -61,7 +61,7 @@ function checkReactionResponse(arg0, arg1, isRetry) {
   }
 }
 function optimisticDispatch(type, channelId, messageId, arg3, userId) {
-  let obj = importDefault(709);
+  obj = dispatcherDefault;
   obj = { type, channelId, messageId, userId: null, emoji: null, optimistic: true, colors: null, reactionType: null };
   userId = userId.userId;
   if (userId == null) {
@@ -74,23 +74,18 @@ function optimisticDispatch(type, channelId, messageId, arg3, userId) {
     colors = [];
   }
   obj[6] = colors;
-  const ReactionTypes = require(7510) /* ReactionTypes */.ReactionTypes;
+  const ReactionTypes = ReactionTypes2.ReactionTypes;
   obj[7] = userId.burst ? ReactionTypes.BURST : ReactionTypes.NORMAL;
   obj.dispatch(obj);
 }
 function makeURL(type) {
-  let channelId;
-  let emoji;
-  let messageId;
-  let useTypeEndpoint;
-  let userId;
   ({ channelId, messageId, emoji, userId, useTypeEndpoint } = type);
   if (useTypeEndpoint === undefined) {
     useTypeEndpoint = false;
   }
   let NORMAL = type.type;
   if (NORMAL === undefined) {
-    NORMAL = require(7510) /* ReactionTypes */.ReactionTypes.NORMAL;
+    NORMAL = ReactionTypes2.ReactionTypes.NORMAL;
   }
   if (null != emoji.id) {
     const _HermesInternal = HermesInternal;
@@ -110,16 +105,10 @@ function makeURL(type) {
 function _getReactors() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
-      let c3;
-      let c4;
-      let c5;
       if (c4 === 2) {
         c4 = 3;
         HermesBuiltin.throwTypeError();
@@ -127,11 +116,11 @@ function _getReactors() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -146,7 +135,7 @@ function _getReactors() {
               obj[0] = arg1;
               return obj;
             } else {
-              let dependencyMap = tmp5;
+              dependencyMap = tmp5;
               let callback2 = tmp2;
               let callback;
               callback2 = undefined;
@@ -155,8 +144,8 @@ function _getReactors() {
               c4 = undefined;
               c5 = undefined;
               ({ channelId: c0, messageId: c1, emoji: c2, limit: c3, after: c4, type: c5 } = callback);
-              let c6;
-              let closure_7;
+              closure_6 = undefined;
+              closure_7 = undefined;
               let body;
               c3 = 1;
               c4 = 1;
@@ -168,11 +157,11 @@ function _getReactors() {
               throw arg1;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
-              if (c5 === callback(7510).ReactionTypes.VOTE) {
+              if (c5 === callback(7548).ReactionTypes.VOTE) {
                 let tmp28 = (function makeURLForVoteReactors(c0, c1, c2) {
                   let name = c2.id;
                   if (name == null) {
@@ -187,10 +176,10 @@ function _getReactors() {
                 obj2[2] = dependencyMap;
                 tmp28 = callback3(obj2);
               }
-              c6 = tmp28;
+              closure_6 = tmp28;
               const HTTP = callback(530).HTTP;
               const obj3 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
-              obj3[0] = c6;
+              obj3[0] = closure_6;
               const obj4 = { limit: null, after: null, type: null };
               obj4[0] = c3;
               obj4[1] = c4;
@@ -213,7 +202,7 @@ function _getReactors() {
           } else {
             closure_7 = arg1;
             let tmp14;
-            if (c5 === callback(7510).ReactionTypes.VOTE) {
+            if (c5 === callback(7548).ReactionTypes.VOTE) {
               body = closure_7.body.users;
             } else {
               body = closure_7.body;
@@ -237,7 +226,7 @@ function _getReactors() {
     iter.next();
     return iter;
   });
-  const _getReactors = tmp;
+  closure_15 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -259,13 +248,13 @@ function addReaction() {
 function _addReaction() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let set = arg3;
-    let fetchFingerprint = arg4;
-    let c7 = 0;
-    let c8 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    closure_3 = arg3;
+    closure_4 = arg4;
+    c7 = 0;
+    c8 = 0;
     const iter = (function*(arg0, arg1, arg2) {
       if (c8 === 2) {
         c8 = 3;
@@ -274,11 +263,11 @@ function _addReaction() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -296,9 +285,9 @@ function _addReaction() {
               let isRetry = tmp3;
               let burst = tmp2;
               let MESSAGE;
-              let fetchFingerprint;
+              closure_4 = undefined;
               if (MESSAGE === undefined) {
-                MESSAGE = outer1_11.MESSAGE;
+                MESSAGE = closure_1_11.MESSAGE;
               }
               burst = undefined;
               isRetry = undefined;
@@ -313,21 +302,21 @@ function _addReaction() {
               throw arg1;
             } else if (arg0 === 2) {
               c8 = 3;
-              let obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
-              burst = null != fetchFingerprint;
+              burst = null != closure_4;
               if (burst) {
-                burst = fetchFingerprint.burst;
+                burst = closure_4.burst;
               }
-              isRetry = null != fetchFingerprint;
+              isRetry = null != closure_4;
               if (isRetry) {
-                isRetry = fetchFingerprint.isRetry;
+                isRetry = closure_4.isRetry;
               }
               if (!isRetry) {
                 if (callback6(callback, callback2, dependencyMap, burst)) {
-                  let obj5 = callback2(4827);
+                  let obj5 = callback2(4832);
                   let obj2 = { title: null, body: null, confirmText: null };
                   let intl = callback(1236).intl;
                   obj2[0] = intl.string(callback(1236).t["uaUU/g"]);
@@ -337,7 +326,7 @@ function _addReaction() {
                   obj2[2] = intl3.string(callback(1236).t["NX+WJN"]);
                   obj5.show(obj2);
                   c8 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
               c7 = 2;
@@ -364,7 +353,7 @@ function _addReaction() {
               c7 = 3;
               c8 = 1;
               const obj6 = { value: null, done: false };
-              obj6[0] = callback2(7512).unarchiveThreadIfNecessary(callback);
+              obj6[0] = callback2(7550).unarchiveThreadIfNecessary(callback);
               return obj6;
             }
           } else if (arg0 === 1) {
@@ -386,7 +375,7 @@ function _addReaction() {
             obj8[0] = callback4(obj9);
             obj = { location: null, type: null };
             obj[0] = MESSAGE;
-            let fn = callback(7510).ReactionTypes;
+            let fn = callback(7548).ReactionTypes;
             if (burst) {
               let NORMAL = fn.BURST;
             } else {
@@ -400,7 +389,7 @@ function _addReaction() {
             put = HTTP.then(() => {
               if ("Message Shortcut" === MESSAGE) {
                 const channel = burst.getChannel(callback);
-                let obj = { channel_id: null, guild_id: null, original_message_id: null, emoji_id: null, action: "react" };
+                obj = { channel_id: null, guild_id: null, original_message_id: null, emoji_id: null, action: "react" };
                 obj[0] = callback;
                 let guild_id;
                 if (channel != null) {
@@ -419,7 +408,7 @@ function _addReaction() {
                   guild_id1 = channel.guild_id;
                 }
                 const merged = Object.assign(obj.collectGuildAnalyticsMetadata(guild_id1));
-                let obj1 = callback(user[14]);
+                obj1 = callback(user[14]);
                 const merged1 = Object.assign(obj1.collectChannelAnalyticsMetadata(channel));
                 callback2(user[13]).track(constants.MESSAGE_SHORTCUT_ACTION_SENT, obj);
                 const obj8 = callback2(user[13]);
@@ -449,8 +438,8 @@ function _addReaction() {
               }
             });
             fn = (arg0) => {
-              let obj = { isRetry };
-              if (outer1_12(arg0, () => outer1_16(closure_0, closure_1, closure_2, set, { burst: ensureGuildLoaded, isRetry: true }), obj)) {
+              obj = { isRetry };
+              if (closure_1_12(arg0, () => closure_1_16(closure_0, closure_1, closure_2, closure_3, { burst: closure_5, isRetry: true }), obj)) {
                 obj = { burst: null };
                 obj[0] = burst;
                 let obj2 = callback2(user[9]);
@@ -485,7 +474,7 @@ function _addReaction() {
                 const formatToPlainString = intl.formatToPlainString;
                 const t = tmp10(tmp6[7]).t;
                 if (burst) {
-                  const obj1 = { name: null };
+                  obj1 = { name: null };
                   obj1[0] = tmp3.name;
                   announce(formatToPlainString(t.fJeu87, obj1));
                 } else {
@@ -507,7 +496,7 @@ function _addReaction() {
     iter.next();
     return iter;
   });
-  const _addReaction = tmp;
+  closure_17 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -529,11 +518,11 @@ function removeAllReactions(closure_0, closure_1) {
 function _removeAllReactions() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c5 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c5 = 0;
+    c6 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c6 === 2) {
         c6 = 3;
@@ -542,11 +531,11 @@ function _removeAllReactions() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -561,14 +550,14 @@ function _removeAllReactions() {
               obj[0] = arg1;
               return obj;
             } else {
-              let fetchFingerprint = tmp5;
-              let set = tmp2;
+              closure_4 = tmp5;
+              closure_3 = tmp2;
               let isRetry;
               isRetry = null != isRetry;
               if (isRetry) {
                 isRetry = isRetry.isRetry;
               }
-              let obj1 = callback2(table[12]);
+              obj1 = callback2(table[12]);
               c5 = 1;
               c6 = 1;
               obj1 = { value: null, done: false };
@@ -590,10 +579,10 @@ function _removeAllReactions() {
             obj2[2] = callback(isRetry[11]).rejectWithMigratedError();
             const obj7 = callback(isRetry[11]);
             HTTP.del(obj2).catch((arg0) => {
-              outer1_12(arg0, () => outer1_18(closure_0, closure_1, { isRetry: true }), { isRetry });
+              closure_1_12(arg0, () => closure_1_18(closure_0, closure_1, { isRetry: true }), { isRetry });
             });
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c6 = tmp;
@@ -602,7 +591,7 @@ function _removeAllReactions() {
       }
     })();
   });
-  const _removeAllReactions = tmp;
+  closure_19 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -624,12 +613,12 @@ function removeEmojiReactions(channelId, messageId, emoji) {
 function _removeEmojiReactions() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2, arg3) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let set = arg3;
-    let c6 = 0;
-    let c7 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    closure_3 = arg3;
+    c6 = 0;
+    c7 = 0;
     return (function*(arg0, arg1, arg2, arg3) {
       if (c7 === 2) {
         c7 = 3;
@@ -638,11 +627,11 @@ function _removeEmojiReactions() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -657,7 +646,7 @@ function _removeEmojiReactions() {
               obj[0] = arg1;
               return obj;
             } else {
-              let ensureGuildLoaded = tmp5;
+              closure_5 = tmp5;
               let name = tmp2;
               let isRetry;
               name = undefined;
@@ -667,7 +656,7 @@ function _removeEmojiReactions() {
               }
               c6 = 1;
               c7 = 1;
-              let obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = callback2(user[12]).unarchiveThreadIfNecessary(callback);
               return obj1;
             }
@@ -692,7 +681,7 @@ function _removeEmojiReactions() {
             obj1 = callback(user[11]);
             obj[2] = obj1.rejectWithMigratedError();
             HTTP.del(obj).catch((arg0) => {
-              outer1_12(arg0, () => outer1_20(closure_0, closure_1, closure_2, { isRetry: true }), { isRetry });
+              closure_1_12(arg0, () => closure_1_20(closure_0, closure_1, closure_2, { isRetry: true }), { isRetry });
             });
             c7 = 3;
             const delResult = HTTP.del(obj);
@@ -704,7 +693,7 @@ function _removeEmojiReactions() {
       }
     })();
   });
-  const _removeEmojiReactions = tmp;
+  closure_21 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -726,16 +715,10 @@ function removeReaction() {
 function _removeReaction() {
   let self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
     const iter = (function*(arg0) {
-      let _location;
-      let c0;
-      let c1;
-      let c2;
-      let c4;
-      let c5;
       if (c5 === 2) {
         c5 = 3;
         HermesBuiltin.throwTypeError();
@@ -743,11 +726,11 @@ function _removeReaction() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -763,7 +746,7 @@ function _removeReaction() {
               return obj;
             } else {
               _location = tmp3;
-              let dependencyMap = tmp2;
+              dependencyMap = tmp2;
               let callback;
               let callback2;
               dependencyMap = undefined;
@@ -772,7 +755,7 @@ function _removeReaction() {
               c5 = undefined;
               ({ channelId: c0, messageId: c1, emoji: c2, location: _location } = callback);
               if (_location === undefined) {
-                _location = outer1_11.MESSAGE;
+                _location = closure_1_11.MESSAGE;
               }
               ({ userId: c4, options: c5 } = callback);
               let burst;
@@ -787,7 +770,7 @@ function _removeReaction() {
               throw arg1;
             } else if (arg0 === 2) {
               c5 = 3;
-              let obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -803,7 +786,7 @@ function _removeReaction() {
               obj2[0] = c4;
               obj2[1] = burst;
               callback3("MESSAGE_REACTION_REMOVE", callback, callback2, dependencyMap, obj2);
-              let obj5 = callback2(7512);
+              let obj5 = callback2(7550);
               c4 = 2;
               c5 = 1;
               let obj3 = { value: null, done: false };
@@ -831,7 +814,7 @@ function _removeReaction() {
               callback2 = "@me";
             }
             obj5[3] = callback2;
-            let ReactionTypes = callback(7510).ReactionTypes;
+            let ReactionTypes = callback(7548).ReactionTypes;
             if (burst) {
               let NORMAL = ReactionTypes.BURST;
             } else {
@@ -849,7 +832,7 @@ function _removeReaction() {
             obj[3] = obj5.rejectWithMigratedError();
             HTTP = del(obj);
             del = HTTP.then(() => {
-              let burst;
+              burst = undefined;
               if (burst != null) {
                 burst = burst.burst;
               }
@@ -859,7 +842,7 @@ function _removeReaction() {
               const formatToPlainString = intl.formatToPlainString;
               const t = _undefined(_undefined2[7]).t;
               if (burst) {
-                let obj = { name: null };
+                obj = { name: null };
                 obj[0] = _undefined2.name;
                 announce(formatToPlainString(t["3l9f6u"], obj));
               } else {
@@ -869,11 +852,11 @@ function _removeReaction() {
               }
             });
             ReactionTypes = del.catch((() => {
-              let closure_0 = _location((arg0) => {
-                let closure_0 = arg0;
-                let c3 = 0;
-                let c4 = 0;
-                return (/* F120631 */ function*() { ... })();
+              closure_0 = _location((arg0) => {
+                closure_0 = arg0;
+                c3 = 0;
+                c4 = 0;
+                return (/* F121658 */ function*() { ... })();
               });
               return function() {
                 const self = this;
@@ -897,7 +880,7 @@ function _removeReaction() {
     iter.next();
     return iter;
   });
-  const _removeReaction = tmp;
+  closure_23 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -919,11 +902,11 @@ function getOptimisticEmojiColors() {
 function _getOptimisticEmojiColors() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c3 = 0;
-    let c5 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c3 = 0;
+    c5 = 0;
+    c4 = 0;
     return (function*(arg0, arg1) {
       if (c5 === 2) {
         c5 = 3;
@@ -932,11 +915,11 @@ function _getOptimisticEmojiColors() {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
+          obj = { value: null, done: true };
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -951,11 +934,11 @@ function _getOptimisticEmojiColors() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_2 = tmp4;
+              closure_2 = tmp4;
               let callback = [];
               if (closure_1) {
-                let c4 = 1;
-                let obj1 = callback(outer1_2[17]);
+                c4 = 1;
+                obj1 = callback(closure_1_2[17]);
                 c3 = 2;
                 c5 = 1;
                 obj1 = { value: null, done: false };
@@ -991,7 +974,7 @@ function _getOptimisticEmojiColors() {
       }
     })();
   });
-  const _getOptimisticEmojiColors = tmp;
+  closure_25 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -1008,9 +991,9 @@ function hasUserAlreadyReacted(arg0, arg1, arg2, arg3) {
   }
   return result;
 }
-({ AbortCodes: error, AnalyticEvents: metroImportAll, ComponentActions: c9, Endpoints: c10 } = ME);
+({ AbortCodes: error, AnalyticEvents: closure_8, ComponentActions: c9, Endpoints: c10 } = ME);
 let obj = { MESSAGE: "Message", FORUM_TOOLBAR: "Forum Toolbar", MOBILE_MEDIA_VIEWER: "Mobile Media Viewer", MESSAGE_HOVER_BAR: "Message Hover Bar", MESSAGE_INLINE_BUTTON: "Message Inline Button", MESSAGE_CONTEXT_MENU: "Message Context Menu", MESSAGE_REACTION_PICKER: "Message Reaction Picker", MESSAGE_SHORTCUT: "Message Shortcut", DOUBLE_TAP: "Double Tap", IN_APP_NOTIFICATION: "In App Notification" };
-let result = require("ensureGuildLoaded").fileFinishedImporting("modules/reactions/ReactionActionCreators.tsx");
+let result = require("set").fileFinishedImporting("modules/reactions/ReactionActionCreators.tsx");
 
 export const ReactionLocations = obj;
 export const getReactors = function getReactors(arg0) {
@@ -1025,12 +1008,8 @@ export const getReactors = function getReactors(arg0) {
 };
 export { addReaction };
 export const playBurstReaction = function playBurstReaction(arg0) {
-  let channelId;
-  let emoji;
-  let key;
-  let messageId;
   ({ channelId, messageId, emoji, key } = arg0);
-  importDefault(709).dispatch({ type: "BURST_REACTION_EFFECT_PLAY", channelId, messageId, emoji, key });
+  dispatcherDefault.dispatch({ type: "BURST_REACTION_EFFECT_PLAY", channelId, messageId, emoji, key });
 };
 export { removeAllReactions };
 export { removeEmojiReactions };

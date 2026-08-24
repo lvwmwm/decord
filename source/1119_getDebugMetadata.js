@@ -4,10 +4,12 @@
 // Dependencies: [1120, 817]
 
 // Module 1119 (getDebugMetadata)
-const require = arg1;
+import DEFAULT_BUNDLE_NAME from "DEFAULT_BUNDLE_NAME" /* 1120 */;
+
+require = arg1;
 const dependencyMap = arg6;
 arg5.getDebugMetadata = function getDebugMetadata() {
-  if (require(1120) /* DEFAULT_BUNDLE_NAME */.DEFAULT_BUNDLE_NAME) {
+  if (DEFAULT_BUNDLE_NAME.DEFAULT_BUNDLE_NAME) {
     const _sentryDebugIds = tmp(817).GLOBAL_OBJ._sentryDebugIds;
     if (_sentryDebugIds) {
       const _Object = Object;

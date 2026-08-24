@@ -1,28 +1,31 @@
-// Module ID: 14787
-// Function ID: 14788
+// Module ID: 14851
+// Function ID: 14852
 // Name: SystemNotificationsSubLabel
-// Dependencies: [19, 17, 14788, 8198, 21, 4661, 712, 8307, 11583, 14789, 14790, 4734, 1236, 6292, 8074, 5364, 10669, 14791, 14792, 13991, 2]
+// Dependencies: [19, 17, 14852, 8238, 21, 4668, 712, 8347, 11632, 14853, 14854, 4739, 1236, 6323, 8113, 5369, 10708, 14855, 14856, 14059, 2]
 
-// Module 14787 (SystemNotificationsSubLabel)
-import importAllResult from "module_13991";
-import { View } from "NotificationPermissionSettingsHeader";
-import { initializeAndroidNotificationSettingsStore as closure_5 } from "_initializeAndroidNotificationSettingsStore";
-import { MobileUserSettings } from "MobileUserSettings";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14851 (SystemNotificationsSubLabel)
+import ThemesDefault from "Themes" /* 712 */;
+import apexExperiment from "apexExperiment" /* 8347 */;
+import _requestPushNotificationPermission from "_requestPushNotificationPermission" /* 11632 */;
+import _modDef14059 from "module_14059" /* 14059 */;
+import apexExperimentDefault from "apexExperiment" /* 14853 */;
+import hasAndroidNotificationChannels from "hasAndroidNotificationChannels" /* 14854 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { initializeAndroidNotificationSettingsStore as closure_5 } from "_initializeAndroidNotificationSettingsStore" /* 14852 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 8238 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function SystemNotificationsSubLabel() {
   const tmp = callback2();
-  let obj = require(8307) /* apexExperiment */;
+  let obj = apexExperiment;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("SystemNotificationsSubLabel");
-  let obj1 = require(11583) /* _requestPushNotificationPermission */;
+  obj1 = _requestPushNotificationPermission;
   let showReactivationPrompt = obj1.useShowReactivationPrompt();
-  let obj2 = importDefault(14789);
-  let obj3 = require(14790) /* hasAndroidNotificationChannels */;
+  let obj2 = apexExperimentDefault;
+  let obj3 = hasAndroidNotificationChannels;
   let result = obj3.hasAndroidNotificationChannels();
   if (result) {
     let str = "text-sm/medium";
@@ -33,7 +36,7 @@ function SystemNotificationsSubLabel() {
     obj[0] = str;
     const intl = tmp2(1236).intl;
     obj[2] = intl.string(tmp2(1236).t["/TZX1J"]);
-    result = callback(tmp2(4734).Text, obj);
+    result = callback(tmp2(4739).Text, obj);
     const tmp10 = callback;
   }
   const children = [result, ];
@@ -47,122 +50,122 @@ function SystemNotificationsSubLabel() {
     obj2 = { style: null, children: null };
     obj2[0] = tmp.cardContent;
     obj3 = { color: null };
-    obj3[0] = importDefault(712).unsafe_rawColors.YELLOW_300;
-    const items1 = [callback(tmp2(8074).CircleErrorIcon, obj3), ];
+    obj3[0] = ThemesDefault.unsafe_rawColors.YELLOW_300;
+    const items1 = [callback(tmp2(8113).CircleErrorIcon, obj3), ];
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.text;
     const obj5 = { color: "text-default", variant: "text-sm/medium", children: null };
     const intl2 = tmp2(1236).intl;
     obj5[2] = intl2.string(tmp2(1236).t.TAuasM);
-    obj4[1] = callback(tmp2(4734).Text, obj5);
+    obj4[1] = callback(tmp2(4739).Text, obj5);
     items1[1] = callback(View, obj4);
     obj2[1] = items1;
     obj1[2] = tmp8(View, obj2);
-    obj[1] = callback(tmp2(6292).Card, obj1);
+    obj[1] = callback(tmp2(6323).Card, obj1);
     showReactivationPrompt = callback(View, obj);
   }
   children[1] = showReactivationPrompt;
   return closure_8(closure_9, { children });
 }
 let c3 = importAllResult;
-({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
+({ jsx: error, jsxs: closure_8, Fragment: c9 } = jsxProd);
 let obj = { card: null, cardContent: null, text: null };
-obj = { marginBottom: 8, borderColor: require("Themes").unsafe_rawColors.YELLOW_300, borderWidth: 1, borderRadius: require("Themes").radii.lg };
+obj = { marginBottom: 8, borderColor: ThemesDefault.unsafe_rawColors.YELLOW_300, borderWidth: 1, borderRadius: ThemesDefault.radii.lg };
 obj[0] = obj;
 obj[1] = { flexDirection: "row", alignItems: "center", gap: 8 };
 obj[2] = { flex: 1 };
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
-  isFamilyCenterV3Enabled = isFamilyCenterV3Enabled(5364).useIsFamilyCenterV3Enabled({ location: "SettingsNotificationsScreen" });
-  let obj = isFamilyCenterV3Enabled(5364);
-  let tmp2 = !importDefault(14789).useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
+  isFamilyCenterV3Enabled = isFamilyCenterV3Enabled(5369).useIsFamilyCenterV3Enabled({ location: "SettingsNotificationsScreen" });
+  let obj = isFamilyCenterV3Enabled(5369);
+  let tmp2 = !apexExperimentDefault.useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
   importDefault = tmp2;
   let items = [tmp2];
   const node = importAllResult.useMemo(() => {
-    let obj = isFamilyCenterV3Enabled(outer1_2[16]);
+    let obj = isFamilyCenterV3Enabled(closure_1_2[16]);
     obj = { sections: null, ListHeaderComponent: null };
     obj = { label: null, settings: null };
-    const intl = isFamilyCenterV3Enabled(outer1_2[12]).intl;
-    obj[0] = intl.string(isFamilyCenterV3Enabled(outer1_2[12]).t.clE4PU);
+    const intl = isFamilyCenterV3Enabled(closure_1_2[12]).intl;
+    obj[0] = intl.string(isFamilyCenterV3Enabled(closure_1_2[12]).t.clE4PU);
     const items = [, ];
-    ({ IN_APP_NOTIFICATIONS: arr[0], IN_APP_MESSAGE_SOUNDS: arr[1] } = outer1_6);
+    ({ IN_APP_NOTIFICATIONS: arr[0], IN_APP_MESSAGE_SOUNDS: arr[1] } = closure_1_6);
     obj[1] = items;
     const items1 = [obj, , , , , , , , , , , , , , , , , , ];
-    const obj1 = { label: null, settings: null, subLabel: null };
-    const intl2 = isFamilyCenterV3Enabled(outer1_2[12]).intl;
-    obj1[0] = intl2.string(isFamilyCenterV3Enabled(outer1_2[12]).t["jcHF+3"]);
-    const items2 = [outer1_6.SYSTEM_NOTIFICATIONS];
+    obj1 = { label: null, settings: null, subLabel: null };
+    const intl2 = isFamilyCenterV3Enabled(closure_1_2[12]).intl;
+    obj1[0] = intl2.string(isFamilyCenterV3Enabled(closure_1_2[12]).t["jcHF+3"]);
+    const items2 = [closure_1_6.SYSTEM_NOTIFICATIONS];
     obj1[1] = items2;
-    obj1[2] = outer1_7(outer1_11, {});
+    obj1[2] = closure_1_7(closure_1_11, {});
     items1[1] = obj1;
-    const items3 = [outer1_6.ANDROID_MESSAGE_NOTIFICATIONS];
+    const items3 = [closure_1_6.ANDROID_MESSAGE_NOTIFICATIONS];
     items1[2] = { settings: items3 };
-    const items4 = [outer1_6.IOS_NATIVE_PHONE_INTEGRATION];
+    const items4 = [closure_1_6.IOS_NATIVE_PHONE_INTEGRATION];
     items1[3] = { settings: items4 };
     const obj2 = { label: null, settings: null };
-    const intl3 = isFamilyCenterV3Enabled(outer1_2[12]).intl;
-    obj2[0] = intl3.string(isFamilyCenterV3Enabled(outer1_2[12]).t.a2O7oY);
+    const intl3 = isFamilyCenterV3Enabled(closure_1_2[12]).intl;
+    obj2[0] = intl3.string(isFamilyCenterV3Enabled(closure_1_2[12]).t.a2O7oY);
     const items5 = [, , ];
-    ({ ANDROID_NOTIFICATION_LIGHTS: arr6[0], ANDROID_NOTIFICATION_VIBRATIONS: arr6[1], ANDROID_NOTIFICATION_SOUNDS: arr6[2] } = outer1_6);
+    ({ ANDROID_NOTIFICATION_LIGHTS: arr6[0], ANDROID_NOTIFICATION_VIBRATIONS: arr6[1], ANDROID_NOTIFICATION_SOUNDS: arr6[2] } = closure_1_6);
     obj2[1] = items5;
     items1[4] = obj2;
     const obj3 = { settings: items6, subLabel: null };
-    items6 = [outer1_6.REACTION_NOTIFICATIONS];
-    const intl4 = isFamilyCenterV3Enabled(outer1_2[12]).intl;
-    obj3[1] = intl4.string(isFamilyCenterV3Enabled(outer1_2[12]).t.oWF6eQ);
+    items6 = [closure_1_6.REACTION_NOTIFICATIONS];
+    const intl4 = isFamilyCenterV3Enabled(closure_1_2[12]).intl;
+    obj3[1] = intl4.string(isFamilyCenterV3Enabled(closure_1_2[12]).t.oWF6eQ);
     items1[5] = obj3;
     const obj4 = { label: null, settings: null };
-    const intl5 = isFamilyCenterV3Enabled(outer1_2[12]).intl;
-    obj4[0] = intl5.string(isFamilyCenterV3Enabled(outer1_2[12]).t.EZorjX);
-    const items7 = [outer1_6.COMMUNITY_ACTIVITY_ALERTS];
+    const intl5 = isFamilyCenterV3Enabled(closure_1_2[12]).intl;
+    obj4[0] = intl5.string(isFamilyCenterV3Enabled(closure_1_2[12]).t.EZorjX);
+    const items7 = [closure_1_6.COMMUNITY_ACTIVITY_ALERTS];
     obj4[1] = items7;
     items1[6] = obj4;
-    const items8 = [outer1_6.HIGHLIGHT_NOTIFICATIONS];
+    const items8 = [closure_1_6.HIGHLIGHT_NOTIFICATIONS];
     items1[7] = { settings: items8 };
-    const items9 = [outer1_6.FRIEND_STREAM_NOTIFICATIONS];
+    const items9 = [closure_1_6.FRIEND_STREAM_NOTIFICATIONS];
     items1[8] = { settings: items9 };
-    const items10 = [outer1_6.FRIEND_ANNIVERSARY_NOTIFICATIONS];
+    const items10 = [closure_1_6.FRIEND_ANNIVERSARY_NOTIFICATIONS];
     items1[9] = { settings: items10 };
-    const items11 = [outer1_6.VOICE_ACTIVITY_NOTIFICATIONS];
+    const items11 = [closure_1_6.VOICE_ACTIVITY_NOTIFICATIONS];
     items1[10] = { settings: items11 };
-    const items12 = [outer1_6.FRIEND_ONLINE_NOTIFICATIONS];
+    const items12 = [closure_1_6.FRIEND_ONLINE_NOTIFICATIONS];
     items1[11] = { settings: items12 };
-    const items13 = [outer1_6.CUSTOM_STATUS_NOTIFICATIONS];
+    const items13 = [closure_1_6.CUSTOM_STATUS_NOTIFICATIONS];
     items1[12] = { settings: items13 };
-    const items14 = [outer1_6.FRIEND_GAMING_ACTIVITY_NOTIFICATIONS];
+    const items14 = [closure_1_6.FRIEND_GAMING_ACTIVITY_NOTIFICATIONS];
     items1[13] = { settings: items14 };
-    const items15 = [outer1_6.PROFILE_UPDATES_NOTIFICATIONS];
+    const items15 = [closure_1_6.PROFILE_UPDATES_NOTIFICATIONS];
     items1[14] = { settings: items15 };
-    const items16 = [outer1_6.SERVER_TRENDING_NOTIFICATIONS];
+    const items16 = [closure_1_6.SERVER_TRENDING_NOTIFICATIONS];
     items1[15] = { settings: items16 };
-    const items17 = [outer1_6.UPCOMING_SERVER_EVENT_NOTIFICATIONS];
+    const items17 = [closure_1_6.UPCOMING_SERVER_EVENT_NOTIFICATIONS];
     items1[16] = { settings: items17 };
-    const items18 = [outer1_6.SUMMARY_REMINDER_NOTIFICATIONS];
+    const items18 = [closure_1_6.SUMMARY_REMINDER_NOTIFICATIONS];
     items1[17] = { settings: items18 };
     const obj5 = { label: null, settings: null };
-    const intl6 = isFamilyCenterV3Enabled(outer1_2[12]).intl;
-    obj5[0] = intl6.string(isFamilyCenterV3Enabled(outer1_2[12]).t["0YtG+k"]);
+    const intl6 = isFamilyCenterV3Enabled(closure_1_2[12]).intl;
+    obj5[0] = intl6.string(isFamilyCenterV3Enabled(closure_1_2[12]).t["0YtG+k"]);
     const items19 = [, ];
-    ({ SCREEN_DOWNTIME_SCHEDULE_NOTIFICATIONS: arr20[0], SCREEN_DOWNTIME_REMINDER_NOTIFICATIONS: arr20[1] } = outer1_6);
+    ({ SCREEN_DOWNTIME_SCHEDULE_NOTIFICATIONS: arr20[0], SCREEN_DOWNTIME_REMINDER_NOTIFICATIONS: arr20[1] } = closure_1_6);
     obj5[1] = items19;
     items1[18] = obj5;
     obj[0] = items1;
     let tmp2;
-    if (tmp2) {
-      tmp2 = tmp2(outer1_2[17]);
+    if (callback) {
+      tmp2 = callback(closure_1_2[17]);
     }
     obj[1] = tmp2;
     return obj.createList(obj);
   }, items);
   const effect = importAllResult.useEffect(() => {
-    callback();
+    callback2();
   }, []);
   let items1 = [isFamilyCenterV3Enabled];
   const effect1 = importAllResult.useEffect(() => {
-    const result = isFamilyCenterV3Enabled(outer1_2[18]).prefetchFamilyCenterAgeGroupWhen(isFamilyCenterV3Enabled);
+    const result = isFamilyCenterV3Enabled(closure_1_2[18]).prefetchFamilyCenterAgeGroupWhen(isFamilyCenterV3Enabled);
   }, items1);
-  return callback(importDefault(13991), { node });
+  return callback(_modDef14059, { node });
 });
-let result = require("_initializeAndroidNotificationSettingsStore").fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationScreen.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationScreen.tsx");
 
 export default memoResult;

@@ -1,20 +1,23 @@
-// Module ID: 13097
-// Function ID: 13098
+// Module ID: 13153
+// Function ID: 13154
 // Name: dispatchAutoDisableVideo
-// Dependencies: [4529, 709, 2]
+// Dependencies: [4534, 709, 2]
 // Exports: default
 
-// Module 13097 (dispatchAutoDisableVideo)
-import { MediaEngineContextTypes } from "DesktopSources";
+// Module 13153 (dispatchAutoDisableVideo)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import DesktopSources from "DesktopSources" /* 4534 */;
 
-const result = require("set").fileFinishedImporting("modules/media_engine/dispatchAutoDisableVideo.tsx");
+const MediaEngineContextTypes = DesktopSources.MediaEngineContextTypes;
+const result = set.fileFinishedImporting("modules/media_engine/dispatchAutoDisableVideo.tsx");
 
 export default function dispatchAutoDisableVideo(arg0, arg1) {
-  const importDefault = arg0;
-  const dependencyMap = arg1;
-  importDefault(709).wait(() => {
+  importDefault = arg0;
+  dependencyMap = arg1;
+  dispatcherDefault.wait(() => {
     let obj = callback(table[1]);
-    obj = { type: "AUDIO_SET_LOCAL_VIDEO_DISABLED", context: outer1_2.DEFAULT, userId: callback, videoToggleState: table, persist: false, isAutomatic: true };
+    obj = { type: "AUDIO_SET_LOCAL_VIDEO_DISABLED", context: closure_1_2.DEFAULT, userId: callback, videoToggleState: table, persist: false, isAutomatic: true };
     obj.dispatch(obj);
   });
 };

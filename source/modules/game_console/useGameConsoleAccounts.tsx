@@ -1,19 +1,20 @@
-// Module ID: 9747
-// Function ID: 9748
+// Module ID: 9786
+// Function ID: 9787
 // Name: useGameConsoleAccounts
-// Dependencies: [5221, 676, 589, 1370, 2]
+// Dependencies: [5226, 676, 589, 1370, 2]
 // Exports: default
 
-// Module 9747 (useGameConsoleAccounts)
-import set from "set";
-import { PlatformTypes } from "ME";
+// Module 9786 (useGameConsoleAccounts)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "set" /* 5226 */;
+import { PlatformTypes } from "ME" /* 676 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");
 
 export default function useGameConsoleAccounts() {
-  let items = [set];
-  return require(589) /* initialize */.useStateFromStoresArray(items, () => {
+  let items = [closure_2];
+  return initialize.useStateFromStoresArray(items, () => {
     const items = [store.getAccount(null, constants.XBOX), store.getAccount(null, constants.PLAYSTATION), store.getAccount(null, constants.PLAYSTATION_STAGING)];
     return items.filter(callback(table[3]).isNotNullish);
   });

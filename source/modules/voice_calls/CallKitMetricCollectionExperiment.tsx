@@ -1,14 +1,15 @@
-// Module ID: 14798
-// Function ID: 14799
+// Module ID: 14862
+// Function ID: 14863
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 14798 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 14862 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: false };
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-callkit-metric-collection", kind: "user", defaultConfig: { enabled: true }, variations: obj });
-const result = require("set").fileFinishedImporting("modules/voice_calls/CallKitMetricCollectionExperiment.tsx");
+const result = set.fileFinishedImporting("modules/voice_calls/CallKitMetricCollectionExperiment.tsx");
 
 export default apexExperiment;

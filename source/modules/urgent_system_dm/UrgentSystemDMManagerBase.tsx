@@ -1,15 +1,16 @@
-// Module ID: 16714
-// Function ID: 16715
+// Module ID: 16810
+// Function ID: 16811
 // Name: maybeShowUrgentMessageModal
-// Dependencies: [1391, 1979, 1922, 16715, 676, 8418, 5038, 2]
+// Dependencies: [1391, 1980, 1922, 16811, 676, 8457, 5043, 2]
 
-// Module 16714 (maybeShowUrgentMessageModal)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { SYSTEM_USER } from "SYSTEM_USER";
-import { UserFlags } from "ME";
-import "initialize";
+// Module 16810 (maybeShowUrgentMessageModal)
+import initializeDefault from "initialize" /* 5043 */;
+import _fetchProfileAll from "_fetchProfile" /* 8457 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "handleConnectionOpen" /* 1980 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import { SYSTEM_USER } from "SYSTEM_USER" /* 16811 */;
+import { UserFlags } from "ME" /* 676 */;
 
 function maybeShowUrgentMessageModal(arg0) {
   const currentUser = authStore2.getCurrentUser();
@@ -35,8 +36,8 @@ function maybeShowUrgentMessageModal(arg0) {
     }
     if (hasUrgentMessagesResult) {
       c7 = false;
-      importAll(8418).setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
-      const obj5 = importAll(8418);
+      _fetchProfileAll.setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
+      const obj5 = _fetchProfileAll;
     }
   }
 }
@@ -51,22 +52,23 @@ function maybeClearUrgentMessage(channelId) {
     hasUrgentMessagesResult = channelId.channelId === dMFromUserId;
   }
   if (hasUrgentMessagesResult) {
-    let c7 = false;
-    importAll(8418).setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
-    const obj2 = importAll(8418);
+    c7 = false;
+    _fetchProfileAll.setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
+    const obj2 = _fetchProfileAll;
   }
 }
 let c7 = false;
+initializeDefault;
 const prototype = function UrgentSystemDMManagerBase(handleShowUrgentMessageAlert) {
   const tmp2 = new prototype(tmp, new.target);
   // ThrowIfThisInitialized (0x7c)
-  const importAll = tmp2;
+  closure_0 = tmp2;
   tmp2.actions = {
     POST_CONNECTION_OPEN() {
-      outer1_8(tmp2.handleShowUrgentMessageAlert);
+      closure_1_8(closure_0.handleShowUrgentMessageAlert);
     },
     MESSAGE_CREATE() {
-      outer1_8(tmp2.handleShowUrgentMessageAlert);
+      closure_1_8(closure_0.handleShowUrgentMessageAlert);
     },
     CHANNEL_SELECT: maybeClearUrgentMessage
   };
@@ -75,6 +77,6 @@ const prototype = function UrgentSystemDMManagerBase(handleShowUrgentMessageAler
 }.prototype;
 class prototype extends tmp2 {
 }
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/urgent_system_dm/UrgentSystemDMManagerBase.tsx");
+const result = require("set").fileFinishedImporting("modules/urgent_system_dm/UrgentSystemDMManagerBase.tsx");
 
 export default prototype;

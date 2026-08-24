@@ -1,9 +1,11 @@
-// Module ID: 5314
-// Function ID: 5315
+// Module ID: 5319
+// Function ID: 5320
 // Name: fromServer
 // Dependencies: [2]
 
-// Module 5314 (fromServer)
+// Module 5319 (fromServer)
+import set from "set" /* 2 */;
+
 let AssetDisplayConfigRecord;
 class AssetDisplayConfigRecord {
   constructor(arg0) {
@@ -50,6 +52,6 @@ prototype["toMobileStyles"] = function toMobileStyles() {
   }
   return tmp;
 };
-const result = require("set").fileFinishedImporting("modules/collectibles/records/ShopAssetConfigRecord.tsx");
+const result = set.fileFinishedImporting("modules/collectibles/records/ShopAssetConfigRecord.tsx");
 
 export { AssetDisplayConfigRecord };

@@ -1,21 +1,28 @@
-// Module ID: 14128
-// Function ID: 14129
+// Module ID: 14196
+// Function ID: 14197
 // Name: pressable
-// Dependencies: [8198, 5428, 5254, 4992, 1236, 4072, 10669, 2]
+// Dependencies: [8238, 5433, 5259, 4997, 1236, 4075, 10708, 2]
 
-// Module 14128 (pressable)
-import createToggle from "createToggle";
+// Module 14196 (pressable)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 4075 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4997 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 5259 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 5433 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["/52UYy"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["/52UYy"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountAgeGroupNonAdultSettingTrailing() {
-    const isAgeVerified = require(4992) /* useAgeVerificationRunner */.useIsAgeVerified();
-    const intl = require(1236) /* getSystemLocale */.intl;
-    let stringResult = intl.string(require(1236) /* getSystemLocale */.t.lKDPGA);
+    const isAgeVerified = useAgeVerificationRunner.useIsAgeVerified();
+    const intl = getSystemLocale.intl;
+    let stringResult = intl.string(getSystemLocale.t.lKDPGA);
     if (isAgeVerified) {
       const intl2 = tmp(1236).intl;
       stringResult = intl2.string(tmp(1236).t.sK0dmH);
@@ -23,17 +30,17 @@ const pressable = createToggle.createPressable({
     return stringResult;
   },
   onPress: function onAccountAgeGroupNonAdultSettingPress() {
-    let obj = importDefault(5428);
-    obj = { entryPoint: require(5254) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+    let obj = openIncodeAgeVerificationModalDefault;
+    obj = { entryPoint: AgeVerificationModalEntryPoint.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   },
   withArrow: true,
   usePredicate: function AccountAgeGroupNonAdultSettingPredicate() {
-    const isAgeVerified = require(4992) /* useAgeVerificationRunner */.useIsAgeVerified();
-    const obj = require(4992) /* useAgeVerificationRunner */;
-    const isVerifiedTeen = require(4992) /* useAgeVerificationRunner */.useIsVerifiedTeen();
-    const obj2 = require(4992) /* useAgeVerificationRunner */;
-    let hasTeenDefaults = require(4072) /* isFeatureAgeGated */.useHasTeenDefaults();
+    const isAgeVerified = useAgeVerificationRunner.useIsAgeVerified();
+    const obj = useAgeVerificationRunner;
+    const isVerifiedTeen = useAgeVerificationRunner.useIsVerifiedTeen();
+    const obj2 = useAgeVerificationRunner;
+    let hasTeenDefaults = isFeatureAgeGated.useHasTeenDefaults();
     if (hasTeenDefaults) {
       let tmp4 = !isAgeVerified;
       if (isAgeVerified) {
@@ -46,14 +53,14 @@ const pressable = createToggle.createPressable({
 });
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["/52UYy"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["/52UYy"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountAgeGroupNonAdultSettingTrailing() {
-    const isAgeVerified = require(4992) /* useAgeVerificationRunner */.useIsAgeVerified();
-    const intl = require(1236) /* getSystemLocale */.intl;
-    let stringResult = intl.string(require(1236) /* getSystemLocale */.t.lKDPGA);
+    const isAgeVerified = useAgeVerificationRunner.useIsAgeVerified();
+    const intl = getSystemLocale.intl;
+    let stringResult = intl.string(getSystemLocale.t.lKDPGA);
     if (isAgeVerified) {
       const intl2 = tmp(1236).intl;
       stringResult = intl2.string(tmp(1236).t.sK0dmH);
@@ -61,17 +68,17 @@ let obj = {
     return stringResult;
   },
   onPress: function onAccountAgeGroupNonAdultSettingPress() {
-    let obj = importDefault(5428);
-    obj = { entryPoint: require(5254) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+    let obj = openIncodeAgeVerificationModalDefault;
+    obj = { entryPoint: AgeVerificationModalEntryPoint.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   },
   withArrow: true,
   usePredicate: function AccountAgeGroupNonAdultSettingPredicate() {
-    const isAgeVerified = require(4992) /* useAgeVerificationRunner */.useIsAgeVerified();
-    const obj = require(4992) /* useAgeVerificationRunner */;
-    const isVerifiedTeen = require(4992) /* useAgeVerificationRunner */.useIsVerifiedTeen();
-    const obj2 = require(4992) /* useAgeVerificationRunner */;
-    let hasTeenDefaults = require(4072) /* isFeatureAgeGated */.useHasTeenDefaults();
+    const isAgeVerified = useAgeVerificationRunner.useIsAgeVerified();
+    const obj = useAgeVerificationRunner;
+    const isVerifiedTeen = useAgeVerificationRunner.useIsVerifiedTeen();
+    const obj2 = useAgeVerificationRunner;
+    let hasTeenDefaults = isFeatureAgeGated.useHasTeenDefaults();
     if (hasTeenDefaults) {
       let tmp4 = !isAgeVerified;
       if (isAgeVerified) {
@@ -82,6 +89,6 @@ let obj = {
     return hasTeenDefaults;
   }
 };
-let result = require("AgeVerificationModalEntryPoint").fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupNonAdultSetting.tsx");
+let result = set.fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupNonAdultSetting.tsx");
 
 export default pressable;

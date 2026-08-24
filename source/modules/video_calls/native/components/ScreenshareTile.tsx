@@ -1,31 +1,35 @@
-// Module ID: 12435
-// Function ID: 12436
+// Module ID: 12487
+// Function ID: 12488
 // Name: ScreenShareTile
-// Dependencies: [19, 17, 676, 21, 4661, 712, 12436, 6377, 1297, 12437, 4734, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 12488, 6408, 1297, 12489, 4739, 1236, 2]
 // Exports: default
 
-// Module 12435 (ScreenShareTile)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { NOOP } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12487 (ScreenShareTile)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6408 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 12488 */;
+import registerAssetDefault from "registerAsset" /* 12489 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { NOOP } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ View: c3, Image: c4 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { container: null, image: null, label: null, liveContainer: null };
-createCacheKey = { alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BLACK, overflow: "hidden", flex: 1 };
+createCacheKey = { alignItems: "center", justifyContent: "center", backgroundColor: ThemesDefault.colors.BLACK, overflow: "hidden", flex: 1 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { marginBottom: 8, width: 60, height: 40 };
 createCacheKey[2] = { lineHeight: 18, textAlign: "center" };
 createCacheKey[3] = { position: "absolute", top: 8, right: 8, zIndex: 2 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("ME").fileFinishedImporting("modules/video_calls/native/components/ScreenshareTile.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/video_calls/native/components/ScreenshareTile.tsx");
 
 export default function ScreenShareTile(onSingleTap) {
   onSingleTap = onSingleTap.onSingleTap;
@@ -36,19 +40,18 @@ export default function ScreenShareTile(onSingleTap) {
   if (onDoubleTap === undefined) {
     onDoubleTap = NOOP;
   }
-  const tmp = createCacheKey();
-  let obj = { gesture: importDefault(12436)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap }), children: null };
+  const tmp = callback3();
+  let obj = { gesture: useParticipantTileTapGestureDefault({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap }), children: null };
   obj = { style: tmp.container, children: null };
-  obj = { style: tmp.liveContainer, children: null };
-  obj[1] = callback(require(1297) /* Button */.LiveTag, {});
+  obj = { style: tmp.liveContainer, children: callback(Button.LiveTag, {}) };
   const items = [callback(closure_3, obj), , ];
-  const tmp2 = importDefault(12436)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap });
-  items[1] = callback(closure_4, { source: importDefault(12437), style: tmp.image, resizeMode: "contain" });
+  const tmp2 = useParticipantTileTapGestureDefault({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap });
+  items[1] = callback(closure_4, { source: registerAssetDefault, style: tmp.image, resizeMode: "contain" });
   const obj2 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.G84gtR);
-  items[2] = callback(require(4734) /* Text */.Text, obj2);
+  const intl = getSystemLocale.intl;
+  obj2[3] = intl.string(getSystemLocale.t.G84gtR);
+  items[2] = callback(Text.Text, obj2);
   obj[1] = items;
   obj[1] = callback2(closure_3, obj);
-  return callback(require(6377) /* LegacyBaseButton */.GestureDetector, obj);
+  return callback(LegacyBaseButton.GestureDetector, obj);
 };

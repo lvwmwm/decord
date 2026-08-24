@@ -4,5 +4,7 @@
 // Dependencies: [19]
 
 // Module 1569 (NavigationMetaContext)
+import noopAll from "noop" /* 19 */;
 
-export const NavigationMetaContext = require("noop").createContext(undefined);
+
+export const NavigationMetaContext = noopAll.createContext(undefined);

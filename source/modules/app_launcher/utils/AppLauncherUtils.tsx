@@ -1,35 +1,44 @@
-// Module ID: 8447
-// Function ID: 8448
+// Module ID: 8486
+// Function ID: 8487
 // Name: getShelfBadgeTypeIfActive
-// Dependencies: [109, 5, 8448, 4479, 11264, 676, 5246, 4663, 1236, 7873, 8718, 500, 1954, 5248, 10255, 7436, 7427, 4827, 1435, 9566, 11300, 5245, 8772, 2]
+// Dependencies: [109, 5, 8487, 4483, 11315, 676, 5251, 4670, 1236, 7912, 8755, 500, 1954, 5253, 10294, 7474, 7465, 4832, 1435, 9603, 11351, 5250, 8809, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 8447 (getShelfBadgeTypeIfActive)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import ME from "ME";
-import getIndexKey from "getIndexKey";
-import createExecutable from "createExecutable";
-import handleDismissWithDismissed from "handleDismissWithDismissed";
-import { ApplicationFlags } from "ME";
-import { BuiltInSectionId } from "TRUE_OPTION_NAME";
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+// Module 8486 (getShelfBadgeTypeIfActive)
+import set from "set" /* 500 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import buildCommand from "buildCommand" /* 5250 */;
+import getApplicationFlags from "getApplicationFlags" /* 7912 */;
+import getPlatformDefault from "getPlatform" /* 8755 */;
+import canInstallApplication from "canInstallApplication" /* 8809 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9603 */;
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import closure_5 from "asyncGeneratorStep" /* 5 */;
+import closure_6 from "getIndexKey" /* 8487 */;
+import closure_7 from "createExecutable" /* 4483 */;
+import closure_8 from "handleDismissWithDismissed" /* 11315 */;
+import { ApplicationFlags } from "ME" /* 676 */;
+import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 5251 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4670 */;
 
-const require = arg1;
+require = arg1;
 function getShelfBadgeTypeIfActive(application) {
   let tmp2 = null;
   if (application.id !== BuiltInSectionId.BUILT_IN) {
     let hasApplicationFlagResult = application.id !== tmp.BUILT_IN;
     if (hasApplicationFlagResult) {
-      hasApplicationFlagResult = require(7873) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-      const obj = require(7873) /* getApplicationFlags */;
+      hasApplicationFlagResult = getApplicationFlags.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+      const obj = getApplicationFlags;
     }
     tmp2 = null;
   }
   let tmp9;
   if (tmp2 != null) {
-    const obj2 = require(500) /* set */;
-    tmp9 = tmp2.client_platform_config[importDefault(8718)(undefined, obj2.getOS(obj2))];
-    const tmp12 = importDefault(8718);
+    const obj2 = set;
+    tmp9 = tmp2.client_platform_config[getPlatformDefault(undefined, obj2.getOS(obj2))];
+    const tmp12 = getPlatformDefault;
   }
   const timestamp = Date.now();
   let label_until;
@@ -51,7 +60,7 @@ function getShelfBadgeTypeIfActive(application) {
             label_type = tmp9.label_type;
           }
           if (label_type == null) {
-            label_type = require(1954) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NONE;
+            label_type = PermissionOverwriteType.EmbeddedActivityLabelTypes.NONE;
           }
           let NONE = label_type;
         }
@@ -59,10 +68,10 @@ function getShelfBadgeTypeIfActive(application) {
       }
     }
   }
-  NONE = require(1954) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NONE;
+  NONE = PermissionOverwriteType.EmbeddedActivityLabelTypes.NONE;
 }
 let closure_3 = ["fakeAppIconURL"];
-let result = require("getIndexKey").fileFinishedImporting("modules/app_launcher/utils/AppLauncherUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/app_launcher/utils/AppLauncherUtils.tsx");
 
 export const FAKE_BUILT_IN_APP = { id: BuiltInSectionId.BUILT_IN };
 export const isRealApplication = function isRealApplication(application) {
@@ -72,8 +81,8 @@ export const getSectionName = function getSectionName(FAKE_BUILT_IN_APP) {
   if (FAKE_BUILT_IN_APP.id !== BuiltInSectionId.BUILT_IN) {
     let name = FAKE_BUILT_IN_APP.name;
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    name = intl.string(require(1236) /* getSystemLocale */.t.UB2gG2);
+    const intl = getSystemLocale.intl;
+    name = intl.string(getSystemLocale.t.UB2gG2);
   }
   return name;
 };
@@ -81,69 +90,62 @@ export const getSectionDescription = function getSectionDescription(FAKE_BUILT_I
   if (FAKE_BUILT_IN_APP.id !== BuiltInSectionId.BUILT_IN) {
     let description = FAKE_BUILT_IN_APP.description;
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    description = intl.string(require(1236) /* getSystemLocale */.t.X9fusn);
+    const intl = getSystemLocale.intl;
+    description = intl.string(getSystemLocale.t.X9fusn);
   }
   return description;
 };
 export const isEmbeddedApp = function isEmbeddedApp(application) {
   let hasApplicationFlagResult = application.id !== BuiltInSectionId.BUILT_IN;
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(7873) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-    const obj = require(7873) /* getApplicationFlags */;
+    hasApplicationFlagResult = getApplicationFlags.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+    const obj = getApplicationFlags;
   }
   return hasApplicationFlagResult;
 };
 export const isPartnerApplication = function isPartnerApplication(application) {
   let hasApplicationFlagResult = application.id !== BuiltInSectionId.BUILT_IN;
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(7873) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARTNER);
-    const obj = require(7873) /* getApplicationFlags */;
+    hasApplicationFlagResult = getApplicationFlags.hasApplicationFlag(application, ApplicationFlags.PARTNER);
+    const obj = getApplicationFlags;
   }
   return hasApplicationFlagResult;
 };
 export const isPromotedApplication = function isPromotedApplication(FAKE_BUILT_IN_APP2) {
   let hasApplicationFlagResult = FAKE_BUILT_IN_APP2.id !== BuiltInSectionId.BUILT_IN;
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(7873) /* getApplicationFlags */.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
-    const obj = require(7873) /* getApplicationFlags */;
+    hasApplicationFlagResult = getApplicationFlags.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
+    const obj = getApplicationFlags;
   }
   return hasApplicationFlagResult;
 };
 export { getShelfBadgeTypeIfActive };
 export const getShelfBadgeNameIfActive = function getShelfBadgeNameIfActive(application) {
   const tmp = getShelfBadgeTypeIfActive(application);
-  if (require(1954) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW === tmp) {
+  if (PermissionOverwriteType.EmbeddedActivityLabelTypes.NEW === tmp) {
     return "New";
-  } else if (tmp2(1954).EmbeddedActivityLabelTypes.UPDATED === tmp) {
+  } else if (PermissionOverwriteType.EmbeddedActivityLabelTypes.UPDATED === tmp) {
     return "Updated";
   } else {
     return "";
   }
-  tmp2 = require;
+  const tmp2 = require;
 };
 export const getEmbeddedActivityConfig = function getEmbeddedActivityConfig(id) {
   let tmp2 = null;
   if (id.id !== BuiltInSectionId.BUILT_IN) {
     let hasApplicationFlagResult = id.id !== tmp.BUILT_IN;
     if (hasApplicationFlagResult) {
-      hasApplicationFlagResult = require(7873) /* getApplicationFlags */.hasApplicationFlag(id, ApplicationFlags.EMBEDDED);
-      const obj = require(7873) /* getApplicationFlags */;
+      hasApplicationFlagResult = getApplicationFlags.hasApplicationFlag(id, ApplicationFlags.EMBEDDED);
+      const obj = getApplicationFlags;
     }
     tmp2 = null;
   }
   return tmp2;
 };
 export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0) {
-  let closure_0;
-  let closure_3;
-  let _objectWithoutProperties;
-  let ME;
-  let commandOrigin;
-  let context;
-  let importDefault;
   ({ command: closure_0, optionValues: importDefault, context } = arg0);
-  ({ commandTargetId: closure_3, maxSizeCallback: _objectWithoutProperties, sectionName: ME, commandOrigin } = arg0);
+  ({ commandTargetId: closure_3, maxSizeCallback: closure_4, sectionName: closure_5, commandOrigin } = arg0);
   if (commandOrigin === undefined) {
     commandOrigin = _require(context[13]).CommandOrigin.APPLICATION_LAUNCHER;
   }
@@ -163,7 +165,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -178,16 +180,16 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_2 = tmp3;
-            let c1 = tmp7;
-            let c0;
+            closure_2 = tmp3;
+            c1 = tmp7;
+            c0 = undefined;
             c1 = undefined;
-            let c4 = 1;
-            const obj1 = { command: null, optionValues: null, context: null, commandTargetId: null, maxSizeCallback: null, commandOrigin: null, sectionName: null, source: null };
-            obj1[0] = outer1_0;
-            obj1[1] = outer1_1;
-            obj1[2] = outer1_2;
-            obj1[3] = outer1_3;
+            c4 = 1;
+            obj1 = { command: null, optionValues: null, context: null, commandTargetId: null, maxSizeCallback: null, commandOrigin: null, sectionName: null, source: null };
+            obj1[0] = closure_1_0;
+            obj1[1] = closure_1;
+            obj1[2] = closure_2;
+            obj1[3] = closure_1_3;
             obj1[4] = c4;
             obj1[5] = c6;
             obj1[6] = c5;
@@ -195,13 +197,13 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
             c5 = 2;
             c6 = 1;
             const obj2 = { value: null, done: false };
-            obj2[0] = outer2_1(context[14])(obj1);
+            obj2[0] = closure_2_1(context[14])(obj1);
             return obj2;
           }
         } else if (1 === tmp7) {
           c4 = 0;
-          outer1_2 = closure_3;
-          let obj3 = outer2_1(context[17]);
+          closure_2 = closure_3;
+          let obj3 = closure_2_1(context[17]);
           obj3 = { title: null, body: null, confirmText: null, onConfirm: null };
           const intl = callback(context[8]).intl;
           obj3[0] = intl.string(callback(context[8]).t["aHO//m"]);
@@ -213,7 +215,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
             return callback();
           };
           obj3.show(obj3);
-          throw outer1_2;
+          throw closure_2;
         } else if (arg0 === 1) {
           c6 = 3;
           throw arg1;
@@ -225,28 +227,28 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
           return obj4;
         } else {
           c0 = arg1;
-          if (outer1_0.inputType === callback(context[13]).ApplicationCommandInputType.BUILT_IN_TEXT) {
+          if (closure_1_0.inputType === callback(context[13]).ApplicationCommandInputType.BUILT_IN_TEXT) {
             if (null != callback) {
-              if (null != outer1_2.channel) {
-                outer1_1 = outer2_1(context[15]).parse(outer1_7, outer1_0.content);
-                const tts = outer1_0.tts;
+              if (null != closure_2.channel) {
+                closure_1 = closure_2_1(context[15]).parse(closure_1_7, closure_1_0.content);
+                const tts = closure_1_0.tts;
                 c0 = tts;
                 if (tts == null) {
                   c0 = false;
                 }
-                outer1_1.tts = c0;
-                obj = outer2_1(context[16]);
+                closure_1.tts = c0;
+                obj = closure_2_1(context[16]);
                 const obj5 = { location: null };
-                obj5[0] = outer2_11.APP_COMMAND;
-                obj.sendMessage(outer1_2.channel.id, outer1_1, true, obj5);
-                const obj9 = outer2_1(context[15]);
-                const tmp63 = outer1_1;
+                obj5[0] = closure_2_11.APP_COMMAND;
+                obj.sendMessage(closure_2.channel.id, closure_1, true, obj5);
+                const obj9 = closure_2_1(context[15]);
+                const tmp63 = closure_1;
               }
             }
           }
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp39) {
         closure_3 = tmp39;
@@ -283,20 +285,20 @@ export const getApplicationDetails = function getApplicationDetails(id, guildMem
     obj = {};
     const merged = Object.assign(tmp2);
     ({ id: obj5.id, icon: obj5.icon } = id);
-    obj[0] = importDefault(1435).getApplicationIconURL(obj);
+    obj[0] = getAvatarURLDefault.getApplicationIconURL(obj);
     ({ name: obj3[1], description: obj3[2] } = id);
-    let obj1 = obj;
-    const obj4 = importDefault(1435);
+    obj1 = obj;
+    const obj4 = getAvatarURLDefault;
   } else {
     if (fakeAppIconURL == null) {
       fakeAppIconURL = null;
     }
     obj1 = { iconURL: null, name: null, description: null };
     obj1[0] = fakeAppIconURL;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj1[1] = intl.string(require(1236) /* getSystemLocale */.t.UB2gG2);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.X9fusn);
+    const intl = getSystemLocale.intl;
+    obj1[1] = intl.string(getSystemLocale.t.UB2gG2);
+    const intl2 = getSystemLocale.intl;
+    obj1[2] = intl2.string(getSystemLocale.t.X9fusn);
   }
   return obj1;
 };
@@ -310,15 +312,15 @@ export const isApplicationAdSupported = function isApplicationAdSupported(applic
   if (application.id !== BuiltInSectionId.BUILT_IN) {
     let hasApplicationFlagResult = application.id !== tmp.BUILT_IN;
     if (hasApplicationFlagResult) {
-      hasApplicationFlagResult = require(7873) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-      const obj = require(7873) /* getApplicationFlags */;
+      hasApplicationFlagResult = getApplicationFlags.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+      const obj = getApplicationFlags;
     }
     tmp2 = null;
   }
   return null != tmp2 && tmp2.displays_advertisements;
 };
 export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(entrypoint) {
-  return entrypoint === require(9566) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
+  return entrypoint === AppLauncherEntrypoint.AppLauncherEntrypoint.TEXT;
 };
 export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPointCommandName(displayName) {
   let str = "";
@@ -368,7 +370,7 @@ export const getInstallAppPropsFromProfileApplication = function getInstallAppPr
 };
 export const getInstallAppProps = function getInstallAppProps(application) {
   const obj = { applicationId: application.id, customInstallUrl: null, installParams: null, integrationTypesConfig: null };
-  if (application instanceof createExecutable) {
+  if (application instanceof closure_7) {
     ({ customInstallUrl: obj[1], installParams: obj[2], integrationTypesConfig: obj[3] } = application);
     let tmp = obj;
   } else {
@@ -384,9 +386,9 @@ export const isAppAvailableInAppLauncher = function isAppAvailableInAppLauncher(
   }
   let result = null != guildState;
   if (result) {
-    result = require(5245) /* buildCommand */.hasCommandIndexForApp(id.id, guildState);
-    const obj = require(5245) /* buildCommand */;
+    result = buildCommand.hasCommandIndexForApp(id.id, guildState);
+    const obj = buildCommand;
   }
-  const obj2 = require(8772) /* canInstallApplication */;
-  return require(8772) /* canInstallApplication */.isAppUserInstallable(id) || result;
+  const obj2 = canInstallApplication;
+  return canInstallApplication.isAppUserInstallable(id) || result;
 };

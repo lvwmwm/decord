@@ -1,27 +1,39 @@
-// Module ID: 8353
-// Function ID: 8354
+// Module ID: 8392
+// Function ID: 8393
 // Name: items
-// Dependencies: [4548, 4968, 1236, 8354, 8355, 8356, 8357, 8358, 8359, 8360, 8361, 8362, 8363, 2]
+// Dependencies: [4553, 4973, 1236, 8393, 8394, 8395, 8396, 8397, 8398, 8399, 8400, 8401, 8402, 2]
 // Exports: getCardAssetUrl, getCheckpointPowerBarUnits, getVoiceDurationString
 
-// Module 8353 (items)
-const items = [require("sleep").TimeUnits.HOURS, require("sleep").TimeUnits.MINUTES];
-const result = require("getSystemLocale").fileFinishedImporting("modules/checkpoint/CheckpointUtils.tsx");
+// Module 8392 (items)
+import set from "set" /* 2 */;
+import sleep from "sleep" /* 4553 */;
+import getDurationString from "getDurationString" /* 4973 */;
+import metadataDefault from "metadata" /* 8393 */;
+import metadataDefault2 from "metadata" /* 8394 */;
+import metadataDefault3 from "metadata" /* 8395 */;
+import metadataDefault4 from "metadata" /* 8396 */;
+import metadataDefault5 from "metadata" /* 8397 */;
+import metadataDefault6 from "metadata" /* 8398 */;
+import metadataDefault7 from "metadata" /* 8399 */;
+import metadataDefault8 from "metadata" /* 8400 */;
+import metadataDefault9 from "metadata" /* 8401 */;
+import metadataDefault10 from "metadata" /* 8402 */;
+
+const items = [sleep.TimeUnits.HOURS, sleep.TimeUnits.MINUTES];
+const result = set.fileFinishedImporting("modules/checkpoint/CheckpointUtils.tsx");
 
 export const getVoiceDurationString = function getVoiceDurationString(totalVoiceMinutes) {
-  let time;
-  let unit;
-  let obj = require(4548) /* sleep */;
+  let obj = sleep;
   const timeAndUnit = obj.getTimeAndUnit(totalVoiceMinutes, items);
   ({ time, unit } = timeAndUnit);
-  const abbreviatedFormatter = require(4968) /* getDurationString */.getAbbreviatedFormatter();
+  const abbreviatedFormatter = getDurationString.getAbbreviatedFormatter();
   if (null == time) {
     const intl3 = tmp(1236).intl;
     return intl3.formatToPlainString(abbreviatedFormatter.minutes, { minutes: 0 });
   } else {
     const _Math = Math;
     const rounded = Math.round(time);
-    if (unit === tmp(4548).TimeUnits.HOURS) {
+    if (unit === tmp(4553).TimeUnits.HOURS) {
       const intl2 = tmp(1236).intl;
       obj = { hours: null };
       obj[0] = rounded;
@@ -34,29 +46,29 @@ export const getVoiceDurationString = function getVoiceDurationString(totalVoice
     }
     return formatToPlainStringResult;
   }
-  const obj2 = require(4968) /* getDurationString */;
+  const obj2 = getDurationString;
 };
 export const getCardAssetUrl = function getCardAssetUrl(cardId) {
   if (0 === cardId) {
-    return importDefault(8354);
+    return metadataDefault;
   } else if (1 === cardId) {
-    return importDefault(8355);
+    return metadataDefault2;
   } else if (2 === cardId) {
-    return importDefault(8356);
+    return metadataDefault3;
   } else if (3 === cardId) {
-    return importDefault(8357);
+    return metadataDefault4;
   } else if (4 === cardId) {
-    return importDefault(8358);
+    return metadataDefault5;
   } else if (5 === cardId) {
-    return importDefault(8359);
+    return metadataDefault6;
   } else if (6 === cardId) {
-    return importDefault(8360);
+    return metadataDefault7;
   } else if (7 === cardId) {
-    return importDefault(8361);
+    return metadataDefault8;
   } else if (8 === cardId) {
-    return importDefault(8362);
+    return metadataDefault9;
   } else {
-    return importDefault(8363);
+    return metadataDefault10;
   }
 };
 export const getCheckpointPowerBarUnits = function getCheckpointPowerBarUnits(arg0) {

@@ -1,29 +1,29 @@
-// Module ID: 16194
-// Function ID: 16195
+// Module ID: 16291
+// Function ID: 16292
 // Name: isGuildSelectable
-// Dependencies: [1396, 4652, 5383, 5043, 2]
+// Dependencies: [1396, 4658, 5388, 5048, 2]
 // Exports: default
 
-// Module 16194 (isGuildSelectable)
-import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
-import reset from "reset";
-import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+// Module 16291 (isGuildSelectable)
+import closure_0 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
+import closure_1 from "reset" /* 4658 */;
+import closure_2 from "updateGuildUnreadSentinel" /* 5388 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 5048 */;
 
-const result = require("updateGuildUnreadSentinel").fileFinishedImporting("modules/launchpad/native/isGuildSelectable.tsx");
+const result = require("set").fileFinishedImporting("modules/launchpad/native/isGuildSelectable.tsx");
 
 export default function isGuildSelectable(id) {
   const stageInstancesByGuild = id;
   const isMutedResult = muted.isMuted(id);
   let tmp2 = !isMutedResult;
   if (!isMutedResult) {
-    let hasUnreadResult = updateGuildUnreadSentinel.hasUnread(id);
+    let hasUnreadResult = closure_2.hasUnread(id);
     if (!hasUnreadResult) {
       const _Object = Object;
       let someResult = Object.keys(stageInstancesByGuild.getStageInstancesByGuild(id)).length > 0;
       if (!someResult) {
         allApplicationStreams = allApplicationStreams.getAllApplicationStreams();
-        someResult = allApplicationStreams.some((guildId) => guildId.guildId === handleStageInstanceCreateOrUpdate);
+        someResult = allApplicationStreams.some((guildId) => guildId.guildId === closure_0);
       }
       hasUnreadResult = someResult;
     }

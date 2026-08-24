@@ -1,39 +1,39 @@
-// Module ID: 9084
-// Function ID: 9085
+// Module ID: 9121
+// Function ID: 9122
 // Name: fetchMessages
-// Dependencies: [32, 4773, 4495, 1395, 4970, 1391, 1910, 4772, 1979, 4197, 676, 1398, 687, 3, 4996, 9085, 4306, 8779, 7427, 9086, 595, 4202, 1222, 4972, 4827, 1236, 709, 5038, 2]
+// Dependencies: [32, 4778, 4499, 1395, 4975, 1391, 1910, 4777, 1980, 4201, 676, 1398, 687, 3, 5001, 9122, 4310, 8816, 7465, 9123, 595, 4206, 1222, 4977, 4832, 1236, 709, 5043, 2]
 
-// Module 9084 (fetchMessages)
-import _slicedToArray from "_slicedToArray";
-import getParticipants from "getParticipants";
-import _handleConnectionOpen from "_handleConnectionOpen";
-import { isTextChannel } from "createChannelRecord";
-import handlePermissionsChange from "handlePermissionsChange";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import handleConnectionOpen from "handleConnectionOpen";
-import closure_12 from "handleConnectionOpen";
-import ME from "ME";
-import { isStaticChannelRoute } from "set";
-import "initialize";
+// Module 9121 (fetchMessages)
+import timestampDefault from "timestamp" /* 3 */;
+import Storage3 from "Storage" /* 595 */;
+import setDefault from "set" /* 687 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import transitionTo from "transitionTo" /* 1222 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import matchPath from "matchPath" /* 4206 */;
+import GuildThemeSourcePreference from "GuildThemeSourcePreference" /* 4310 */;
+import setDefault2 from "set" /* 4832 */;
+import SidebarType from "SidebarType" /* 4977 */;
+import mergeMessageDefault from "mergeMessage" /* 5001 */;
+import initializeDefault from "initialize" /* 5043 */;
+import trackInviteDefault from "trackInvite" /* 7465 */;
+import isRefreshableAttachmentUrlAll from "isRefreshableAttachmentUrl" /* 9122 */;
+import getMessageLimit from "getMessageLimit" /* 9123 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "getParticipants" /* 4778 */;
+import closure_6 from "_handleConnectionOpen" /* 4499 */;
+import { isTextChannel } from "createChannelRecord" /* 1395 */;
+import closure_8 from "handlePermissionsChange" /* 4975 */;
+import closure_9 from "ensureGuildLoaded" /* 1391 */;
+import closure_10 from "createGuildRecordFromRust" /* 1910 */;
+import closure_11 from "generateOldThreadCutoff" /* 4777 */;
+import closure_12 from "handleConnectionOpen" /* 1980 */;
+import closure_13 from "handleConnectionOpen" /* 4201 */;
+import ME from "ME" /* 676 */;
+import { isStaticChannelRoute } from "set" /* 1398 */;
 
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_18;
-let map1;
-const require = arg1;
+require = arg1;
 function fetchMessages(arg0) {
-  let avoidInitialScroll;
-  let channelId;
-  let fetchKey;
-  let forceFetch;
-  let guildId;
-  let isPreload;
-  let messageId;
-  let skipLocalFetch;
   ({ guildId, channelId, messageId, forceFetch, isPreload, skipLocalFetch, avoidInitialScroll, fetchKey } = arg0);
   if (null != channelId) {
     if (!isStaticChannelRoute(channelId)) {
@@ -48,45 +48,45 @@ function fetchMessages(arg0) {
           type1 = channel.type;
         }
         if (null == type1) {
-          let obj2 = importDefault(4996);
+          let obj2 = mergeMessageDefault;
           const orCreate = obj2.getOrCreate(channelId);
           let orCreate1 = orCreate;
-          if (orCreate.some(require(9085) /* shouldRefreshAttachmentUrl */.messageHasExpiredAttachmentUrl)) {
-            tmp3.log("Found expired attachment link, clearing messages");
-            let tmp9Result = tmp9(4996);
+          if (orCreate.some(isRefreshableAttachmentUrlAll.messageHasExpiredAttachmentUrl)) {
+            logger.log("Found expired attachment link, clearing messages");
+            let tmp9Result = tmp9(5001);
             tmp9Result.clear(channelId);
-            tmp9Result = tmp9(4996);
+            tmp9Result = tmp9(5001);
             orCreate1 = tmp9Result.getOrCreate(channelId);
           }
           let obj7 = orCreate1;
           if (tmp15) {
             let obj = { jumpTargetId: null, jumped: false, jumpType: null };
-            obj[2] = tmp11(4306).JumpType.ANIMATED;
+            obj[2] = GuildThemeSourcePreference.JumpType.ANIMATED;
             const mutation = orCreate1.mutate(obj);
-            tmp9(4996).commit(mutation);
+            tmp9(5001).commit(mutation);
             obj7 = mutation;
-            const tmp9Result1 = tmp9(4996);
+            const tmp9Result1 = tmp9(5001);
           }
           let obj10 = obj7;
-          if (tmp18) {
+          if (tmp19) {
             const mutation1 = obj7.mutate({ focusTargetId: null });
-            tmp9(4996).commit(mutation1);
+            tmp9(5001).commit(mutation1);
             obj10 = mutation1;
-            const tmp9Result2 = tmp9(4996);
+            const tmp9Result2 = tmp9(5001);
           }
           if (isPreload) {
-            if (!_handleConnectionOpen.isConnected()) {
+            if (!closure_6.isConnected()) {
               let flag = true;
             }
-            let hasUnreadResult = tmp9(8779)(channelId);
+            let hasUnreadResult = tmp9(8816)(channelId);
             if (hasUnreadResult) {
-              hasUnreadResult = generateOldThreadCutoff.hasUnread(channelId);
+              hasUnreadResult = closure_11.hasUnread(channelId);
             }
             if (hasUnreadResult) {
               flag = true;
             }
             if (flag) {
-              tmp9(4996).commit(obj10.mutate({ loadingMore: true }));
+              tmp9(5001).commit(obj10.mutate({ loadingMore: true }));
               if (null == messageId) {
                 let isThreadResult;
                 if (channel != null) {
@@ -94,9 +94,9 @@ function fetchMessages(arg0) {
                 }
                 if (isThreadResult) {
                   let flag2 = false;
-                  if (!generateOldThreadCutoff.hasOpenedThread(channelId)) {
+                  if (!closure_11.hasOpenedThread(channelId)) {
                     if (null == obj) {
-                      const Storage = tmp11(595).Storage;
+                      const Storage = Storage3.Storage;
                       obj = Storage.get(viewedThreadIds, {});
                       if (obj == null) {
                         obj = {};
@@ -107,30 +107,30 @@ function fetchMessages(arg0) {
                       const _Date = Date;
                       obj[channelId] = Date.now();
                       const _Date2 = Date;
-                      for (const key10130 in obj) {
-                        let tmp53 = key10130;
-                        let tmp54 = obj;
-                        if (obj[key10130] >= tmp36) {
+                      for (const key10132 in obj) {
+                        let tmp58 = key10132;
+                        let tmp59 = obj;
+                        if (obj[key10132] >= tmp38) {
                           continue;
                         } else {
-                          let tmp38 = obj;
+                          let tmp40 = obj;
                           delete tmp[tmp2];
                           continue;
                         }
                         continue;
                       }
-                      const Storage2 = require(595) /* Storage */.Storage;
+                      const Storage2 = Storage3.Storage;
                       const result = Storage2.set(viewedThreadIds, obj);
                       flag2 = true;
                     }
                   }
                   if (flag2) {
                     const _HermesInternal2 = HermesInternal;
-                    tmp3.log("Jumping to start of thread " + channel.id);
-                    const obj1 = { channelId: null, limit: null, jump: null, isPreload: null, skipLocalFetch: null, avoidInitialScroll: null, fetchKey: null };
+                    logger.log("Jumping to start of thread " + channel.id);
+                    obj1 = { channelId: null, limit: null, jump: null, isPreload: null, skipLocalFetch: null, avoidInitialScroll: null, fetchKey: null };
                     obj1[0] = channelId;
-                    let tmp11Result = tmp11(9086);
-                    obj1[1] = tmp11Result.getMessageLimit("MessageManager.threadStart");
+                    const tmp9Result4 = tmp9(7465);
+                    obj1[1] = getMessageLimit.getMessageLimit("MessageManager.threadStart");
                     obj2 = { messageId: null, flash: false };
                     obj2[0] = channelId;
                     obj1[2] = obj2;
@@ -138,7 +138,7 @@ function fetchMessages(arg0) {
                     obj1[4] = skipLocalFetch;
                     obj1[5] = avoidInitialScroll;
                     obj1[6] = fetchKey;
-                    return tmp9(7427).fetchMessages(obj1);
+                    return tmp9Result4.fetchMessages(obj1);
                   }
                 }
                 let isThreadResult1;
@@ -146,15 +146,15 @@ function fetchMessages(arg0) {
                   isThreadResult1 = channel.isThread();
                 }
                 if (isThreadResult1) {
-                  if (generateOldThreadCutoff.hasTrackedUnread(channel.id)) {
+                  if (closure_11.hasTrackedUnread(channel.id)) {
                     if (!obj10.ready) {
                       const trackedAckMessageId = obj16.getTrackedAckMessageId(channel.id);
                       const _HermesInternal = HermesInternal;
-                      tmp3.log("Jumping to most recent message in thread " + channel.id + " - " + trackedAckMessageId);
+                      logger.log("Jumping to most recent message in thread " + channel.id + " - " + trackedAckMessageId);
                       const obj3 = { channelId: null, limit: null, jump: null, isPreload: null, skipLocalFetch: null, avoidInitialScroll: null, fetchKey: null };
                       obj3[0] = channelId;
-                      tmp11Result = tmp11(9086);
-                      obj3[1] = tmp11Result.getMessageLimit("MessageManager.threadUnread");
+                      const tmp9Result5 = tmp9(7465);
+                      obj3[1] = getMessageLimit.getMessageLimit("MessageManager.threadUnread");
                       const obj4 = { messageId: null, flash: false, offset: 1 };
                       obj4[0] = trackedAckMessageId;
                       obj3[2] = obj4;
@@ -162,19 +162,19 @@ function fetchMessages(arg0) {
                       obj3[4] = skipLocalFetch;
                       obj3[5] = avoidInitialScroll;
                       obj3[6] = fetchKey;
-                      return tmp9(7427).fetchMessages(obj3);
+                      return tmp9Result5.fetchMessages(obj3);
                     }
                   }
-                  obj16 = generateOldThreadCutoff;
+                  obj16 = closure_11;
                 }
                 const obj5 = { channelId: null, limit: null, isPreload: null, skipLocalFetch: null, jump: null, avoidInitialScroll: null, fetchKey: null };
                 obj5[0] = channelId;
-                const tmp9Result6 = tmp9(7427);
-                obj5[1] = tmp11(9086).getMessageLimit("MessageManager.initialFetch");
+                const tmp9Result6 = tmp9(7465);
+                obj5[1] = getMessageLimit.getMessageLimit("MessageManager.initialFetch");
                 obj5[2] = isPreload;
                 obj5[3] = skipLocalFetch;
                 const obj6 = { jumpType: null };
-                obj6[0] = tmp11(4306).JumpType.ANIMATED;
+                obj6[0] = GuildThemeSourcePreference.JumpType.ANIMATED;
                 obj5[4] = obj6;
                 obj5[5] = avoidInitialScroll;
                 obj5[6] = fetchKey;
@@ -187,19 +187,19 @@ function fetchMessages(arg0) {
                 obj7[4] = skipLocalFetch;
                 obj7[5] = tmp3;
                 obj7[6] = avoidInitialScroll;
-                tmp9(7427).jumpToMessage(obj7);
-                const tmp9Result7 = tmp9(7427);
+                tmp9(7465).jumpToMessage(obj7);
+                const tmp9Result7 = tmp9(7465);
               }
-              const tmp9Result3 = tmp9(4996);
+              const tmp9Result3 = tmp9(5001);
             }
           }
           if (!obj10.loadingMore) {
-            let tmp22 = null != guildId;
-            if (tmp22) {
-              tmp22 = null == guild.getGuild(guildId);
+            let tmp23 = null != guildId;
+            if (tmp23) {
+              tmp23 = null == guild.getGuild(guildId);
             }
             flag = forceFetch;
-            if (!tmp22) {
+            if (!tmp23) {
               flag = true;
             }
           }
@@ -208,7 +208,7 @@ function fetchMessages(arg0) {
             flag = true;
           }
           tmp15 = null != orCreate1.jumpTargetId && null == messageId;
-          tmp18 = null != obj7.focusTargetId && null == messageId;
+          tmp19 = null != obj7.focusTargetId && null == messageId;
         } else {
           const GUILD_THREADS_ONLY = constants3.GUILD_THREADS_ONLY;
         }
@@ -234,10 +234,10 @@ function handleConnectionOpen() {
     const channel1 = store2.getChannel(channelId);
     if (null != channel1) {
       const id2 = channel1.id;
-      const obj7 = require(4202) /* matchPath */;
+      const obj7 = matchPath;
       obj = { path: null, exact: true };
-      obj[0] = closure_17.CHANNEL(":guild", ":channel", ":message");
-      const matchPathResult = obj7.matchPath(require(1222) /* transitionTo */.getHistory().location.pathname, obj);
+      obj[0] = closure_18.CHANNEL(":guild", ":channel", ":message");
+      const matchPathResult = obj7.matchPath(transitionTo.getHistory().location.pathname, obj);
       let message;
       if (matchPathResult != null) {
         const params = matchPathResult.params;
@@ -245,7 +245,7 @@ function handleConnectionOpen() {
           message = params.message;
         }
       }
-      const obj1 = { guildId: null, channelId: null, messageId: null, avoidInitialScroll: null };
+      obj1 = { guildId: null, channelId: null, messageId: null, avoidInitialScroll: null };
       obj1[0] = channel1.getGuildId();
       obj1[1] = channel1.id;
       obj1[2] = message;
@@ -262,7 +262,7 @@ function handleConnectionOpen() {
         tmp7(obj2);
       }
       obj5 = store;
-      const obj8 = require(1222) /* transitionTo */;
+      const obj8 = transitionTo;
       tmp7 = fetchMessages;
     }
   }
@@ -273,7 +273,7 @@ function loadSelectedChannelIfNecessary() {
     const channel = store2.getChannel(channelId);
     if (null != channel) {
       if (isTextChannel(channel.type)) {
-        let obj1 = importDefault(4996);
+        obj1 = mergeMessageDefault;
         const orCreate = obj1.getOrCreate(channelId);
         if (!tmp7) {
           let obj = { guildId: null, channelId: null };
@@ -310,8 +310,6 @@ function loadSelectedChannelIfNecessary() {
   }
 }
 function handleChannelSelect(skipMessageFetch) {
-  let channelId;
-  let guildId;
   ({ guildId, channelId } = skipMessageFetch);
   if (skipMessageFetch.skipMessageFetch) {
     return false;
@@ -348,7 +346,7 @@ function handleChannelSectionStoreChange() {
       if (sidebarState != null) {
         type = sidebarState.type;
       }
-      if (type !== require(4972) /* SidebarType */.SidebarType.VIEW_CHANNEL) {
+      if (type !== SidebarType.SidebarType.VIEW_CHANNEL) {
         const currentSidebarChannelId = obj2.getCurrentSidebarChannelId(channelId);
         if (null != currentSidebarChannelId) {
           const obj = { guildId: null, channelId: null, messageId: null };
@@ -362,10 +360,8 @@ function handleChannelSectionStoreChange() {
   }
 }
 function handleChannelPreload(context) {
-  let channelId;
-  let guildId;
   ({ guildId, channelId } = context);
-  if (context.context === closure_14) {
+  if (context.context === closure_15) {
     let obj = { guildId: null, channelId: null };
     obj[0] = guildId;
     obj[1] = channelId;
@@ -404,15 +400,15 @@ function handleMessageEditEnd(response) {
       if (response.body.code === constants2.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
         const retry_after = response.body.retry_after;
         if (null != retry_after) {
-          let obj = importDefault(4827);
+          let obj = setDefault2;
           obj = { title: null, body: null };
-          const intl = require(1236) /* getSystemLocale */.intl;
-          obj[0] = intl.string(require(1236) /* getSystemLocale */.t.Whhv4w);
-          const intl2 = require(1236) /* getSystemLocale */.intl;
+          const intl = getSystemLocale.intl;
+          obj[0] = intl.string(getSystemLocale.t.Whhv4w);
+          const intl2 = getSystemLocale.intl;
           obj = { retryAfterMinutes: null };
           const _Math = Math;
           obj[0] = Math.ceil(retry_after / 60);
-          obj[1] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.qoxdQB, obj);
+          obj[1] = intl2.formatToPlainString(getSystemLocale.t.qoxdQB, obj);
           obj.show(obj);
         }
       }
@@ -421,9 +417,6 @@ function handleMessageEditEnd(response) {
   return null;
 }
 function handleLoadMessagesSuccess(jump) {
-  let channelId;
-  let isPreview;
-  let isStale;
   ({ channelId, isStale, isPreview } = jump);
   if (isPreview === undefined) {
     isPreview = false;
@@ -434,36 +427,32 @@ function handleLoadMessagesSuccess(jump) {
       num = 0;
     }
     const _Date = Date;
-    if (Date.now() - num >= closure_20) {
+    if (Date.now() - num >= closure_21) {
       const _Date2 = Date;
       tmp[channelId] = Date.now();
       channelId = store3.getChannelId();
       const currentSidebarChannelId = store.getCurrentSidebarChannelId(channelId);
       if (isStale) {
-        isStale = _handleConnectionOpen.isConnected();
+        isStale = closure_6.isConnected();
       }
       if (isStale) {
         isStale = channelId === channelId || channelId === currentSidebarChannelId;
         const tmp6 = channelId === channelId || channelId === currentSidebarChannelId;
       }
       if (isStale) {
-        let obj = importDefault(7427);
+        let obj = trackInviteDefault;
         obj = { channelId: null, limit: null, jump: null };
         obj[0] = channelId;
-        obj[1] = require(9086) /* getMessageLimit */.getMessageLimit("MessageManager.staleFetch");
+        obj[1] = getMessageLimit.getMessageLimit("MessageManager.staleFetch");
         obj[2] = jump.jump;
         const messages = obj.fetchMessages(obj);
-        const obj3 = require(9086) /* getMessageLimit */;
+        const obj3 = getMessageLimit;
       }
     }
     tmp = table;
   }
 }
 function handleUploadFail(arg0) {
-  let channelId;
-  let messageId;
-  let reason;
-  let shouldSendNotification;
   ({ messageId, reason } = arg0);
   let tmp2 = null != messageId;
   ({ channelId, shouldSendNotification } = arg0);
@@ -471,7 +460,7 @@ function handleUploadFail(arg0) {
     tmp2 = true !== tmp;
   }
   if (tmp2) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "MESSAGE_SEND_FAILED", channelId: null, messageId: null, reason: null, shouldNotify: null };
     obj[1] = channelId;
     obj[2] = messageId;
@@ -488,22 +477,23 @@ function handleAppWillBecomeActive() {
   if (null == channelId) {
     return false;
   } else {
-    const newLocalMessages = importDefault(7427).fetchNewLocalMessages(channelId, closure_13);
+    const newLocalMessages = trackInviteDefault.fetchNewLocalMessages(channelId, closure_14);
   }
 }
-({ MAX_MESSAGES_PER_CHANNEL: map1, CURRENT_APP_CONTEXT: closure_14, ChannelTypes: closure_15, AbortCodes: closure_16, Routes: closure_17, ChannelTypesSets: closure_18 } = ME);
-let closure_20 = 10 * require("set").Millis.SECOND;
-let closure_21 = new require("createChannelRecord")("MessageManager");
-let closure_24 = 90 * require("set").Millis.DAY;
+({ MAX_MESSAGES_PER_CHANNEL: closure_14, CURRENT_APP_CONTEXT: closure_15, ChannelTypes: closure_16, AbortCodes: closure_17, Routes: closure_18, ChannelTypesSets: closure_19 } = ME);
+let closure_21 = 10 * setDefault.Millis.SECOND;
+let closure_22 = new timestampDefault("MessageManager");
+let closure_25 = 90 * setDefault.Millis.DAY;
 const viewedThreadIds = "viewedThreadIds";
-let closure_35 = {};
+let closure_36 = {};
+initializeDefault;
 class MessageManager extends tmp4 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
     applyArgumentsResult.fetchMessages = fetchMessages;
     applyArgumentsResult.loadSelectedChannelIfNecessary = loadSelectedChannelIfNecessary;
     map = new Map();
-    applyArgumentsResult.stores = map.set(isTextChannel, handleChannelSectionStoreChange);
+    applyArgumentsResult.stores = map.set(closure_8, handleChannelSectionStoreChange);
     obj = {
       APP_STATE_UPDATE_WILL_BECOME_ACTIVE: handleAppWillBecomeActive,
       OVERLAY_INITIALIZE: handleConnectionOpen,
@@ -535,13 +525,13 @@ class MessageManager extends tmp4 {
 }
 const prototype = MessageManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  const subscription = importDefault(709).subscribe("CONNECTION_OPEN", handleConnectionOpen);
+  const subscription = dispatcherDefault.subscribe("CONNECTION_OPEN", handleConnectionOpen);
 };
 prototype["_terminate"] = function _terminate() {
-  importDefault(709).unsubscribe("CONNECTION_OPEN", handleConnectionOpen);
+  dispatcherDefault.unsubscribe("CONNECTION_OPEN", handleConnectionOpen);
 };
 const messageManager = new MessageManager();
-const tmp3 = new require("createChannelRecord")("MessageManager");
-let result = require("_handleConnectionOpen").fileFinishedImporting("modules/messages/MessageManager.tsx");
+const tmp3 = new timestampDefault("MessageManager");
+let result = require("set").fileFinishedImporting("modules/messages/MessageManager.tsx");
 
 export default messageManager;

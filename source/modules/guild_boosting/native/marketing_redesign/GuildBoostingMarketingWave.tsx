@@ -1,21 +1,26 @@
-// Module ID: 13013
-// Function ID: 13014
+// Module ID: 13068
+// Function ID: 13069
 // Name: GuildBoostingMarketingWave
-// Dependencies: [19, 21, 4097, 712, 6571, 2]
+// Dependencies: [19, 21, 4100, 712, 6607, 2]
 // Exports: default
 
-// Module 13013 (GuildBoostingMarketingWave)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 13068 (GuildBoostingMarketingWave)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import inlineStyles from "inlineStyles" /* 6607 */;
+import inlineStylesDefault from "inlineStyles" /* 6607 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("map").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingWave.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingWave.tsx");
 
 export default function GuildBoostingMarketingWave(arg0) {
-  let obj = require(4097) /* map */;
-  const token = obj.useToken(importDefault(712).colors.BACKGROUND_BASE_LOW);
+  let obj = map;
+  const token = obj.useToken(ThemesDefault.colors.BACKGROUND_BASE_LOW);
   obj = { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" };
   const merged = Object.assign(arg0);
-  obj.children = jsx(require(6571) /* inlineStyles */.Path, { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: token });
-  return jsx(importDefault(6571), { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" });
+  obj.children = jsx(inlineStyles.Path, { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: token });
+  return jsx(inlineStylesDefault, { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" });
 };

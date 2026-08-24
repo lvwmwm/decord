@@ -1,11 +1,16 @@
-// Module ID: 4836
-// Function ID: 4837
+// Module ID: 4841
+// Function ID: 4842
 // Name: doesImageMatchUpload
-// Dependencies: [4829, 530, 4837, 1917, 2]
+// Dependencies: [4834, 530, 4842, 1917, 2]
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
-// Module 4836 (doesImageMatchUpload)
-const result = require("_getAttachmentFile").fileFinishedImporting("lib/uploader/UploadUtils.tsx");
+// Module 4841 (doesImageMatchUpload)
+import set from "set" /* 2 */;
+import sendRequest from "sendRequest" /* 530 */;
+import isBlockedDomain from "isBlockedDomain" /* 1917 */;
+import cancel from "cancel" /* 4834 */;
+
+const result = set.fileFinishedImporting("lib/uploader/UploadUtils.tsx");
 class DefaultHttpClient {
 }
 const prototype = DefaultHttpClient.prototype;
@@ -25,7 +30,7 @@ prototype["doUpload"] = function doUpload(body, fileByteRange) {
     const self = this;
     body.body = this.sliceBody(body.body, fileByteRange.fileByteRange.start);
   }
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   return HTTP.put(body);
 };
 class LibdiscoreHttpClient {
@@ -50,7 +55,7 @@ LibdiscoreHttpClient.prototype["doUpload"] = function doUpload(body) {
   httpClientAPI = _require(httpClientAPI[3]).getHttpClientAPI();
   if (null == httpClientAPI) {
     let _Error2 = Error;
-    let error = new Error("Libdiscore client is not available");
+    error = new Error("Libdiscore client is not available");
     throw error;
   } else {
     body = body.body;
@@ -78,7 +83,7 @@ LibdiscoreHttpClient.prototype["doUpload"] = function doUpload(body) {
 
 export const doesImageMatchUpload = function doesImageMatchUpload(image, closure_0) {
   if (closure_0.id !== image.uri) {
-    if (closure_0.item.platform === require(4829) /* cancel */.UploadPlatform.REACT_NATIVE) {
+    if (closure_0.item.platform === cancel.UploadPlatform.REACT_NATIVE) {
       const item = closure_0.item;
       const filename = image.filename;
       let tmp3 = item.originalUri === image.uri;
@@ -112,12 +117,12 @@ export const calculateProgress = function calculateProgress(loaded, currentSize)
 };
 export { DefaultHttpClient };
 export const canUploadNatively = function canUploadNatively(item) {
-  let fileIsInAppDirResult = item.platform === require(4829) /* cancel */.UploadPlatform.REACT_NATIVE;
+  let fileIsInAppDirResult = item.platform === cancel.UploadPlatform.REACT_NATIVE;
   if (fileIsInAppDirResult) {
     fileIsInAppDirResult = null != item.uri;
   }
   if (fileIsInAppDirResult) {
-    let tmpResult = tmp(4837);
+    let tmpResult = tmp(4842);
     fileIsInAppDirResult = tmpResult.fileIsInAppDir(item.uri);
   }
   if (fileIsInAppDirResult) {

@@ -1,16 +1,19 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16682
+// Function ID: 16683
 // Name: isExperimentEnabled
-// Dependencies: [1218, 9864, 5038, 9882, 9862, 2]
+// Dependencies: [1218, 9903, 5043, 9921, 9901, 2]
 
-// Module 16586 (isExperimentEnabled)
-import fetchFingerprint from "fetchFingerprint";
-import resolveCreatingNotes from "resolveCreatingNotes";
-import "initialize";
+// Module 16682 (isExperimentEnabled)
+import initializeDefault from "initialize" /* 5043 */;
+import _guildRoomConnect from "_guildRoomConnect" /* 9901 */;
+import experimentDefault from "experiment" /* 9921 */;
+import closure_3 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "resolveCreatingNotes" /* 9903 */;
 
-let require = arg1;
+require = arg1;
 let c5 = null;
 let c6 = null;
+initializeDefault;
 class GuildRoomManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -28,16 +31,11 @@ class GuildRoomManager extends tmp2 {
 }
 const prototype = GuildRoomManager.prototype;
 prototype["isExperimentEnabled"] = function isExperimentEnabled(guildId, VOICE_STATE_UPDATE) {
-  let obj = importDefault(9882);
+  let obj = experimentDefault;
   obj = { guildId, location: VOICE_STATE_UPDATE };
   return obj.getCurrentConfig(obj).enabled;
 };
 prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(arg0) {
-  let channelId;
-  let guildId;
-  let oldChannelId;
-  let sessionId;
-  let userId;
   const self = this;
   const iter = arg0.voiceStates[Symbol.iterator]();
   while (iter !== undefined) {
@@ -61,7 +59,7 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(arg0) {
           if (isExperimentEnabledResult) {
             let tmp16 = require;
             let tmp17 = dependencyMap;
-            let obj3 = require(9862) /* _guildRoomConnect */;
+            let obj3 = _guildRoomConnect;
             let tmp18 = guildId;
             let tmp19 = channelId;
             let guildRoomDisconnectResult = obj3.guildRoomDisconnect(guildId, channelId);
@@ -76,7 +74,7 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(arg0) {
               if (self.isExperimentEnabled(guildId, "VOICE_STATE_UPDATE")) {
                 let tmp26 = require;
                 let tmp27 = dependencyMap;
-                let obj4 = require(9862) /* _guildRoomConnect */;
+                let obj4 = _guildRoomConnect;
                 let tmp28 = guildId;
                 let tmp29 = channelId;
                 let tmp30 = pendingPosition;
@@ -99,7 +97,7 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(arg0) {
       if (tmp4) {
         let tmp7 = require;
         let tmp8 = dependencyMap;
-        let obj2 = require(9862) /* _guildRoomConnect */;
+        let obj2 = _guildRoomConnect;
         let tmp9 = userId;
         let tmp10 = oldChannelId;
         let result = obj2.guildRoomLocalDisconnect(tmp2, oldChannelId);
@@ -118,11 +116,11 @@ prototype["handleConnectionResumed"] = function handleConnectionResumed() {
     isExperimentEnabledResult = this.isExperimentEnabled(c6, "CONNECTION_RESUMED");
   }
   if (isExperimentEnabledResult) {
-    const guildRoom = require(9862) /* _guildRoomConnect */.fetchGuildRoom(c6, c5);
-    const obj = require(9862) /* _guildRoomConnect */;
+    const guildRoom = _guildRoomConnect.fetchGuildRoom(c6, c5);
+    const obj = _guildRoomConnect;
   }
 };
 const guildRoomManager = new GuildRoomManager();
-let result = require("initialize").fileFinishedImporting("modules/guild_rooms/GuildRoomManager.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_rooms/GuildRoomManager.tsx");
 
 export default guildRoomManager;

@@ -1,23 +1,24 @@
-// Module ID: 14336
-// Function ID: 14337
+// Module ID: 14404
+// Function ID: 14405
 // Name: pressable
-// Dependencies: [5, 4839, 12, 1625, 4840, 5260, 13328, 2007, 10669, 1236, 14239, 2]
+// Dependencies: [5, 4844, 12, 1625, 4845, 5265, 13386, 2008, 10708, 1236, 14307, 2]
 
-// Module 14336 (pressable)
-import { NativePermissionTypes } from "NativePermissionStatus";
-import apply from "apply";
-import importDefaultResult from "module_5260";
-import createToggle from "createToggle";
+// Module 14404 (pressable)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4844 */;
+import apply from "apply" /* 12 */;
+import importDefaultResult from "asyncGeneratorStep" /* 5 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 apply = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.RC0kJz);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.RC0kJz);
   },
   parent: null,
   IconComponent: require("QrCodeIcon").QrCodeIcon,
-  onPress: apply.debounce(require("module_5260")(function*() {
+  onPress: apply.debounce(importDefaultResult(function*() {
     if (c3 === 2) {
       c3 = 3;
       HermesBuiltin.throwTypeError();
@@ -29,7 +30,7 @@ apply = {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -52,7 +53,7 @@ apply = {
             } else {
               CAMERA = requestPermission.CAMERA;
             }
-            obj3 = outer1_0(paths[3]);
+            obj3 = closure_1_0(paths[3]);
             requestPermission = v0(paths[4]).requestPermission;
             const permission = requestPermission(CAMERA);
             v0 = 2;
@@ -75,7 +76,7 @@ apply = {
           }
           paths = 0;
           c3 = 3;
-          const obj1 = { value: null, done: true };
+          obj1 = { value: null, done: true };
           obj1[0] = arg1;
           return obj1;
         }
@@ -92,7 +93,7 @@ apply = {
   withArrow: true
 };
 apply = createToggle.createPressable(apply);
-const debounceResult = apply.debounce(require("module_5260")(function*() {
+const debounceResult = apply.debounce(importDefaultResult(function*() {
   if (c3 === 2) {
     c3 = 3;
     HermesBuiltin.throwTypeError();
@@ -104,7 +105,7 @@ const debounceResult = apply.debounce(require("module_5260")(function*() {
       obj[0] = arg1;
       return obj;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -127,7 +128,7 @@ const debounceResult = apply.debounce(require("module_5260")(function*() {
           } else {
             CAMERA = requestPermission.CAMERA;
           }
-          obj3 = outer1_0(paths[3]);
+          obj3 = closure_1_0(paths[3]);
           requestPermission = v0(paths[4]).requestPermission;
           const permission = requestPermission(CAMERA);
           v0 = 2;
@@ -150,7 +151,7 @@ const debounceResult = apply.debounce(require("module_5260")(function*() {
         }
         paths = 0;
         c3 = 3;
-        const obj1 = { value: null, done: true };
+        obj1 = { value: null, done: true };
         obj1[0] = arg1;
         return obj1;
       }
@@ -164,6 +165,6 @@ const debounceResult = apply.debounce(require("module_5260")(function*() {
     }
   }
 }), 1000, { leading: true, trailing: false });
-const result = require("apply").fileFinishedImporting("modules/user_settings/defs/native/ScanQrCodeSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/ScanQrCodeSetting.tsx");
 
 export default apply;

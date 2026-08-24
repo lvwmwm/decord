@@ -1,19 +1,15 @@
-// Module ID: 16522
-// Function ID: 16523
-// Dependencies: [19, 17, 21, 3975, 4342, 8828, 2007, 8575, 1297, 2]
+// Module ID: 16617
+// Function ID: 16618
+// Dependencies: [19, 17, 21, 3978, 4346, 8865, 2008, 8614, 1297, 2]
 
-// Module 16522
-import importAllResult from "noop";
-import { Keyboard } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 16617
+import importAllResult from "noop" /* 19 */;
+import { Keyboard } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let c3 = importAllResult;
 const forwardRefResult = importAllResult.forwardRef((date, ref) => {
-  let error;
-  let importDefault;
-  let label;
-  let style;
   date = date.date;
   ({ onChangeDate: importDefault, label } = date);
   ref = undefined;
@@ -26,7 +22,7 @@ const forwardRefResult = importAllResult.forwardRef((date, ref) => {
   }
   function openDatePicker() {
     updateDate.dismiss();
-    let obj = outer1_1(label[4]);
+    let obj = closure_1_1(label[4]);
     obj = { onSubmit: updateDate, title: label, startDate: null, maximumDate: null, minimumDate: null, requireDateChanged: true };
     let toDateResult;
     if (date != null) {
@@ -38,10 +34,10 @@ const forwardRefResult = importAllResult.forwardRef((date, ref) => {
       toDateResult = obj4.toDate();
     }
     obj[2] = toDateResult;
-    const obj5 = outer1_1(label[3])();
+    const obj5 = closure_1_1(label[3])();
     const result1 = obj5.set("year", obj5.year() - 3);
     obj[3] = obj5.toDate();
-    const obj6 = outer1_1(label[3])();
+    const obj6 = closure_1_1(label[3])();
     const result2 = obj6.set("year", obj6.year() - 100);
     obj[4] = obj6.toDate();
     obj.openLazy(date(label[6])(label[5], label.paths), "DatePicker", obj);
@@ -82,6 +78,6 @@ const forwardRefResult = importAllResult.forwardRef((date, ref) => {
   obj[13] = error;
   return tmp8(importDefault(label[7]), obj);
 });
-let result = require("jsxProd").fileFinishedImporting("modules/age_gate/native/components/DateInput.tsx");
+let result = require("set").fileFinishedImporting("modules/age_gate/native/components/DateInput.tsx");
 
 export default forwardRefResult;

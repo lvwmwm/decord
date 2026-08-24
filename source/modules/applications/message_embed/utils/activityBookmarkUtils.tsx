@@ -1,14 +1,17 @@
-// Module ID: 7444
-// Function ID: 7445
+// Module ID: 7482
+// Function ID: 7483
 // Name: extractActivityBookmarkParams
 // Dependencies: [1487, 2]
 // Exports: extractActivityBookmarkParams
 
-// Module 7444 (extractActivityBookmarkParams)
-const result = require("set").fileFinishedImporting("modules/applications/message_embed/utils/activityBookmarkUtils.tsx");
+// Module 7482 (extractActivityBookmarkParams)
+import set from "set" /* 2 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
+
+const result = set.fileFinishedImporting("modules/applications/message_embed/utils/activityBookmarkUtils.tsx");
 
 export const extractActivityBookmarkParams = function extractActivityBookmarkParams(url) {
-  let obj = importDefault(1487);
+  let obj = isDiscordProxiedAssetUrlDefault;
   const toURLSafeResult = obj.toURLSafe(url);
   let value;
   if (toURLSafeResult != null) {

@@ -4,12 +4,14 @@
 // Dependencies: [19, 80, 26, 106, 65, 114]
 
 // Module 418 (__INTERNAL_VIEW_CONFIG)
-import "noop";
-import processColorElement from "processColorElement";
-import weakSet from "weakSet";
-import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+import noopAll from "noop" /* 19 */;
+import renderElement from "renderElement" /* 114 */;
+import processColorElement from "processColorElement" /* 80 */;
+import weakSet from "weakSet" /* 106 */;
+import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let obj = { uiViewClassName: "AndroidSwipeRefreshLayout", directEventTypes: { topRefresh: { registrationName: "onRefresh" } }, validAttributes: null };
 if ("default" in processColorElement) {
   processColorElement = processColorElement.default;
@@ -20,7 +22,7 @@ obj[2] = obj;
 obj = {
   setNativeRefreshing(_nativeRef, refreshing) {
     const items = [refreshing];
-    require(114) /* renderElement */.dispatchCommand(_nativeRef, "setNativeRefreshing", items);
+    renderElement.dispatchCommand(_nativeRef, "setNativeRefreshing", items);
   }
 };
 

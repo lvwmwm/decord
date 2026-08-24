@@ -1,13 +1,14 @@
-// Module ID: 7147
-// Function ID: 7148
+// Module ID: 7185
+// Function ID: 7186
 // Name: tokensToAppTokensMap
-// Dependencies: [5, 5289, 676, 4259, 709, 530, 2]
+// Dependencies: [5, 5294, 676, 4263, 709, 530, 2]
 
-// Module 7147 (tokensToAppTokensMap)
-import sendRequest from "sendRequest";
-import recomputeFromAppTokens from "recomputeFromAppTokens";
-import { FetchState } from "recomputeFromAppTokens";
-import { Endpoints } from "ME";
+// Module 7185 (tokensToAppTokensMap)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "recomputeFromAppTokens" /* 5294 */;
+import { FetchState } from "recomputeFromAppTokens" /* 5294 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function tokensToAppTokensMap(arg0, arr) {
@@ -43,9 +44,9 @@ function fetchAuthorizedApps() {
 function _fetchAuthorizedApps() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -58,7 +59,7 @@ function _fetchAuthorizedApps() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -74,8 +75,8 @@ function _fetchAuthorizedApps() {
               return obj;
             } else {
               const HTTP = callback(table[5]).HTTP;
-              const obj1 = { url: null, oldFormErrors: true, rejectWithError: true, query: null };
-              obj1[0] = outer1_6.OAUTH2_TOKENS;
+              obj1 = { url: null, oldFormErrors: true, rejectWithError: true, query: null };
+              obj1[0] = closure_1_6.OAUTH2_TOKENS;
               const obj2 = { application_ids: null };
               obj2[0] = callback;
               obj1[3] = obj2;
@@ -85,7 +86,7 @@ function _fetchAuthorizedApps() {
               const obj3 = { value: null, done: false };
               obj3[0] = value.then((body) => {
                 let obj = v3(709);
-                obj = { type: "USER_AUTHORIZED_APPS_UPDATE", isFullFetch: null == closure_0, tokens: outer1_8(body.body, closure_0) };
+                obj = { type: "USER_AUTHORIZED_APPS_UPDATE", isFullFetch: null == closure_0, tokens: closure_1_8(body.body, closure_0) };
                 return obj.dispatch(obj);
               }, () => {
                 let request = v3(709);
@@ -109,7 +110,7 @@ function _fetchAuthorizedApps() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -118,7 +119,7 @@ function _fetchAuthorizedApps() {
       }
     })();
   });
-  const _fetchAuthorizedApps = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -132,12 +133,12 @@ let obj = {
     return store.getFetchStateForApplication(arg0) !== FetchState.FETCHING;
   },
   onQueued(applicationIds) {
-    let request = importDefault(709);
+    let request = dispatcherDefault;
     request = { type: "partial", applicationIds };
     return request.dispatch({ type: "USER_AUTHORIZED_APPS_REQUEST", request });
   },
   onCancelled(applicationIds) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "USER_AUTHORIZED_APPS_REQUEST_CANCELLED", applicationIds };
     return obj.dispatch(obj);
   }
@@ -155,7 +156,7 @@ obj = {
         const queueResult = batchInvocationManager.queue(arg0);
       } else {
         batchInvocationManager.reset();
-        let obj = importDefault(709);
+        let obj = dispatcherDefault;
         obj = { type: "USER_AUTHORIZED_APPS_REQUEST", request: null };
         obj[1] = { type: "full" };
         obj.dispatch(obj);
@@ -172,6 +173,6 @@ obj = {
     });
   }
 };
-const result = require("ME").fileFinishedImporting("modules/oauth2/AuthorizedAppsActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/oauth2/AuthorizedAppsActionCreators.tsx");
 
 export default obj;

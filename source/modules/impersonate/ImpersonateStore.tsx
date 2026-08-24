@@ -1,25 +1,30 @@
-// Module ID: 1982
-// Function ID: 1983
+// Module ID: 1983
+// Function ID: 1984
 // Name: initialize
-// Dependencies: [1983, 1910, 676, 685, 11, 1988, 1403, 589, 1989, 709, 2]
+// Dependencies: [1984, 1910, 676, 685, 11, 1989, 1403, 589, 1990, 709, 2]
 
-// Module 1982 (initialize)
-import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GuildSettingsSections } from "ME";
-import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES";
-import { Store } from "initialize";
+// Module 1983 (initialize)
+import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import ImpersonateType from "ImpersonateType" /* 1989 */;
+import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1990 */;
+import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import { GuildSettingsSections } from "ME" /* 676 */;
+import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES" /* 685 */;
 
-const require = arg1;
+require = arg1;
 let closure_8 = {};
+const Store = initializeDefault.Store;
 class ImpersonateStore extends Store {
 }
 const prototype = ImpersonateStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(createGuildRecordFromRust, createGuildRoleRecordFromRust);
+  this.waitFor(closure_5, closure_4);
 };
 prototype["hasViewingRoles"] = function hasViewingRoles() {
-  return !require(1989) /* areArraysShallowlyEqual */.isPlainObjectEmpty(closure_8);
+  return !areArraysShallowlyEqual.isPlainObjectEmpty(closure_8);
 };
 prototype["isViewingRoles"] = function isViewingRoles(guildId) {
   let tmp = null != guildId;
@@ -54,12 +59,12 @@ prototype["isFullServerPreview"] = function isFullServerPreview(closure_0) {
   if (dependencyMap[closure_0] != null) {
     type = tmp.type;
   }
-  return type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+  return type === ImpersonateType.ImpersonateType.NEW_MEMBER;
 };
 prototype["isOptInEnabled"] = function isOptInEnabled(arg0) {
   let optInEnabled = null != tmp;
   if (optInEnabled) {
-    optInEnabled = tmp.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+    optInEnabled = tmp.type === ImpersonateType.ImpersonateType.NEW_MEMBER;
   }
   if (optInEnabled) {
     optInEnabled = tmp.optInEnabled;
@@ -69,7 +74,7 @@ prototype["isOptInEnabled"] = function isOptInEnabled(arg0) {
 prototype["isOnboardingEnabled"] = function isOnboardingEnabled(id) {
   let onboardingEnabled = null != tmp;
   if (onboardingEnabled) {
-    onboardingEnabled = tmp.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+    onboardingEnabled = tmp.type === ImpersonateType.ImpersonateType.NEW_MEMBER;
   }
   if (onboardingEnabled) {
     onboardingEnabled = tmp.onboardingEnabled;
@@ -80,7 +85,7 @@ prototype["getViewingChannels"] = function getViewingChannels(id) {
   let optInChannels = null;
   if (null != dependencyMap[id]) {
     optInChannels = null;
-    if (tmp.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER) {
+    if (tmp.type === ImpersonateType.ImpersonateType.NEW_MEMBER) {
       optInChannels = tmp.optInChannels;
     }
   }
@@ -90,7 +95,7 @@ prototype["getOnboardingResponses"] = function getOnboardingResponses(arg0) {
   let onboardingResponses = null;
   if (null != dependencyMap[arg0]) {
     onboardingResponses = null;
-    if (tmp.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER) {
+    if (tmp.type === ImpersonateType.ImpersonateType.NEW_MEMBER) {
       onboardingResponses = tmp.onboardingResponses;
     }
   }
@@ -100,7 +105,7 @@ prototype["getMemberOptions"] = function getMemberOptions(guildId) {
   let memberOptions = null;
   if (null != dependencyMap[guildId]) {
     memberOptions = null;
-    if (tmp.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER) {
+    if (tmp.type === ImpersonateType.ImpersonateType.NEW_MEMBER) {
       memberOptions = tmp.memberOptions;
     }
   }
@@ -121,7 +126,7 @@ prototype["isViewingServerShop"] = function isViewingServerShop(id) {
     if (dependencyMap[id] != null) {
       type = tmp3.type;
     }
-    tmp = type === require(1988) /* ImpersonateType */.ImpersonateType.SERVER_SHOP;
+    tmp = type === ImpersonateType.ImpersonateType.SERVER_SHOP;
   }
   return tmp;
 };
@@ -143,9 +148,9 @@ prototype["getBackNavigationSection"] = function getBackNavigationSection(arg0) 
     return GuildSettingsSections.ROLES;
   } else {
     const type = tmp6.type;
-    if (require(1988) /* ImpersonateType */.ImpersonateType.ROLES !== type) {
-      if (tmp7(1988).ImpersonateType.SERVER_SHOP !== type) {
-        if (tmp7(1988).ImpersonateType.NEW_MEMBER === type) {
+    if (ImpersonateType.ImpersonateType.ROLES !== type) {
+      if (tmp7(1989).ImpersonateType.SERVER_SHOP !== type) {
+        if (tmp7(1989).ImpersonateType.NEW_MEMBER === type) {
           return GuildSettingsSections.ONBOARDING;
         } else {
           return GuildSettingsSections.ROLES;
@@ -156,12 +161,10 @@ prototype["getBackNavigationSection"] = function getBackNavigationSection(arg0) 
   }
 };
 ImpersonateStore.displayName = "ImpersonateStore";
-const impersonateStore = new ImpersonateStore(require("dispatcher"), {
+const impersonateStore = new ImpersonateStore(dispatcherDefault, {
   IMPERSONATE_UPDATE: function handleImpersonateUpdate(arg0) {
-    let data;
-    let guildId;
     ({ guildId, data } = arg0);
-    let obj = importDefault(11);
+    let obj = DISCORD_EPOCHDefault;
     const result = obj.castGuildIdAsEveryoneGuildRoleId(guildId);
     delete tmp2[tmp];
     obj = {};
@@ -177,8 +180,6 @@ const impersonateStore = new ImpersonateStore(require("dispatcher"), {
     }
   },
   GUILD_ROLE_DELETE: function handleGuildRoleDelete(arg0) {
-    let guildId;
-    let roleId;
     ({ guildId, roleId } = arg0);
     if (null == dependencyMap[guildId]) {
       return false;
@@ -188,14 +189,12 @@ const impersonateStore = new ImpersonateStore(require("dispatcher"), {
     }
   },
   USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: function handleUserGuildSettingsChannelUpdateBulk(arg0) {
-    let guildId;
-    let overrides;
     ({ guildId, overrides } = arg0);
     let optInChannels;
     if (null != guildId) {
       if (null != dependencyMap[guildId]) {
         if (null != dependencyMap[guildId]) {
-          if (tmp6.type === overrides(1988).ImpersonateType.NEW_MEMBER) {
+          if (tmp6.type === overrides(1989).ImpersonateType.NEW_MEMBER) {
             optInChannels = tmp6.optInChannels;
             if (optInChannels == null) {
               const _Set = Set;
@@ -207,7 +206,7 @@ const impersonateStore = new ImpersonateStore(require("dispatcher"), {
               if (num == null) {
                 num = 0;
               }
-              if (obj.hasFlag(num, outer1_7.OPT_IN_ENABLED)) {
+              if (obj.hasFlag(num, closure_1_7.OPT_IN_ENABLED)) {
                 obj2.add(arg0);
               } else {
                 obj2.delete(arg0);
@@ -223,15 +222,12 @@ const impersonateStore = new ImpersonateStore(require("dispatcher"), {
     return false;
   },
   GUILD_ONBOARDING_SELECT_OPTION: function handleOptionSelect(arg0) {
-    let guildId;
-    let optionId;
-    let removedOptionIds;
     ({ guildId, optionId, removedOptionIds } = arg0);
     let onboardingResponses;
     if (null != guildId) {
       if (null != dependencyMap[guildId]) {
         if (null != dependencyMap[guildId]) {
-          if (tmp9.type === onboardingResponses(1988).ImpersonateType.NEW_MEMBER) {
+          if (tmp9.type === onboardingResponses(1989).ImpersonateType.NEW_MEMBER) {
             onboardingResponses = tmp9.onboardingResponses;
             if (onboardingResponses == null) {
               const _Set = Set;
@@ -259,8 +255,6 @@ const impersonateStore = new ImpersonateStore(require("dispatcher"), {
     return false;
   },
   GUILD_MEMBER_UPDATE_LOCAL: function handleGuildMemberUpdateLocal(guildId) {
-    let flags;
-    let roles;
     guildId = guildId.guildId;
     ({ roles, flags } = guildId);
     if (null == guildId) {
@@ -270,7 +264,7 @@ const impersonateStore = new ImpersonateStore(require("dispatcher"), {
       if (flag) {
         if (null != roles) {
           tmp2.roles = roles.reduce((arg0, arg1) => {
-            const role = outer1_4.getRole(guildId, arg1);
+            const role = closure_1_4.getRole(guildId, arg1);
             if (null != role) {
               arg0[arg1] = role;
             }
@@ -279,7 +273,7 @@ const impersonateStore = new ImpersonateStore(require("dispatcher"), {
         }
         let tmp3 = null != flags;
         if (tmp3) {
-          tmp3 = tmp2.type === guildId(1988).ImpersonateType.NEW_MEMBER;
+          tmp3 = tmp2.type === guildId(1989).ImpersonateType.NEW_MEMBER;
         }
         flag = true;
         if (tmp3) {
@@ -291,6 +285,6 @@ const impersonateStore = new ImpersonateStore(require("dispatcher"), {
     }
   }
 });
-let result = require("ME").fileFinishedImporting("modules/impersonate/ImpersonateStore.tsx");
+let result = require("set").fileFinishedImporting("modules/impersonate/ImpersonateStore.tsx");
 
 export default impersonateStore;

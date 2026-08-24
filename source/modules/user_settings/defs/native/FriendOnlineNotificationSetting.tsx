@@ -1,43 +1,49 @@
-// Module ID: 14809
-// Function ID: 14810
+// Module ID: 14873
+// Function ID: 14874
 // Name: toggle
-// Dependencies: [8198, 14810, 10669, 1236, 4066, 14811, 2]
+// Dependencies: [8238, 14874, 10708, 1236, 4069, 14875, 2]
 
-// Module 14809 (toggle)
-import createToggle from "createToggle";
+// Module 14873 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import apexExperiment from "apexExperiment" /* 14874 */;
+import onFriendOnlineNotificationSettingsChanged from "onFriendOnlineNotificationSettingsChanged" /* 14875 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["uvIi/4"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["uvIi/4"]);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.E6O06k);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.E6O06k);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableFriendOnlineNotifications.useSetting,
-  onValueChange: require("onFriendOnlineNotificationSettingsChanged").onFriendOnlineNotificationSettingsChanged,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableFriendOnlineNotifications.useSetting,
+  onValueChange: onFriendOnlineNotificationSettingsChanged.onFriendOnlineNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14810) /* apexExperiment */.useFriendOnlineNotificationExperiment("tabsV2Settings").showSettingsToggle;
+    return apexExperiment.useFriendOnlineNotificationExperiment("tabsV2Settings").showSettingsToggle;
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["uvIi/4"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["uvIi/4"]);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.E6O06k);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.E6O06k);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").EnableFriendOnlineNotifications.useSetting,
-  onValueChange: require("onFriendOnlineNotificationSettingsChanged").onFriendOnlineNotificationSettingsChanged,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.EnableFriendOnlineNotifications.useSetting,
+  onValueChange: onFriendOnlineNotificationSettingsChanged.onFriendOnlineNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14810) /* apexExperiment */.useFriendOnlineNotificationExperiment("tabsV2Settings").showSettingsToggle;
+    return apexExperiment.useFriendOnlineNotificationExperiment("tabsV2Settings").showSettingsToggle;
   }
 };
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/FriendOnlineNotificationSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/FriendOnlineNotificationSetting.tsx");
 
 export default toggle;

@@ -1,30 +1,23 @@
-// Module ID: 10701
-// Function ID: 10702
+// Module ID: 10740
+// Function ID: 10741
 // Name: _openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 4086, 676, 1494, 8993, 2007, 8996, 9000, 10702, 1236, 38, 4342, 10703, 2]
+// Dependencies: [32, 5, 4089, 676, 1494, 9030, 2008, 9033, 9037, 10741, 1236, 38, 4346, 10742, 2]
 // Exports: openAppStoreOverlayMediaModal
 
-// Module 10701 (_openAppStoreOverlayMediaModal)
-import _slicedToArray from "_slicedToArray";
-import zustandStore from "zustandStore";
-import setContent from "setContent";
-import { MEDIA_MODAL_KEY } from "ME";
+// Module 10740 (_openAppStoreOverlayMediaModal)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "setContent" /* 4089 */;
+import { MEDIA_MODAL_KEY } from "ME" /* 676 */;
 
 const require = arg1;
 function _openAppStoreOverlayMediaModal() {
   const self = this;
   let tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c2;
-      let c3;
-      let c4;
-      let c5;
-      let c6;
-      let initialIndex;
       if (c4 === 2) {
         c4 = 3;
         HermesBuiltin.throwTypeError();
@@ -36,7 +29,7 @@ function _openAppStoreOverlayMediaModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -60,15 +53,15 @@ function _openAppStoreOverlayMediaModal() {
               c4 = undefined;
               c5 = undefined;
               c6 = undefined;
-              let closure_7;
+              closure_7 = undefined;
               ({ originViewOrOriginLayout: c0, initialIndex } = callback);
               if (initialIndex === undefined) {
                 initialIndex = 0;
               }
               ({ initialSources: c2, analyticsSource: c3, channelId: c4, onGetGamePress: c5, onClose: c6 } = callback);
               closure_7 = Object.assign(tmp45, Object.create(null));
-              let closure_8;
-              let dependencyMap;
+              closure_8 = undefined;
+              dependencyMap = undefined;
               let setMediaViewerSources;
               let MediaViewerAnalytics;
               let initVideoStateStore;
@@ -106,14 +99,14 @@ function _openAppStoreOverlayMediaModal() {
             dependencyMap = v0(closure_8, 3);
             setMediaViewerSources = 32.setMediaViewerSources;
             MediaViewerAnalytics = 5.MediaViewerAnalytics;
-            initVideoStateStore = 4086.initVideoStateStore;
+            initVideoStateStore = 4089.initVideoStateStore;
             const obj4 = { text: null, onPress: null };
             const intl = callback(c2[10]).intl;
             obj4[0] = intl.string(callback(c2[10]).t.lwQdjB);
             obj4[1] = c5;
             const result = callback(c2[9]).setMediaModalFooterAction(obj4);
             (function getMeasureInWindowFunction(c0) {
-              let closure_0 = c0;
+              closure_0 = c0;
               if (null != c0) {
                 if ("measureInWindow" in c0) {
                   const measureInWindow = c0.measureInWindow;
@@ -125,11 +118,11 @@ function _openAppStoreOverlayMediaModal() {
                 let size = c0;
                 if (c0 == null) {
                   const obj = { x: 0, y: 0, width: null, height: null };
-                  obj[2] = c0(outer1_2[4]).getWindowDimensions().width;
-                  const obj2 = c0(outer1_2[4]);
-                  obj[3] = c0(outer1_2[4]).getWindowDimensions().height;
+                  obj[2] = c0(closure_1_2[4]).getWindowDimensions().width;
+                  const obj2 = c0(closure_1_2[4]);
+                  obj[3] = c0(closure_1_2[4]).getWindowDimensions().height;
                   size = obj;
-                  const obj3 = c0(outer1_2[4]);
+                  const obj3 = c0(closure_1_2[4]);
                 }
                 arg0(size.x, size.y, size.width, size.height, size.resizeMode);
               };
@@ -150,7 +143,7 @@ function _openAppStoreOverlayMediaModal() {
               initVideoStateStore();
             });
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c4 = tmp;
@@ -161,7 +154,7 @@ function _openAppStoreOverlayMediaModal() {
     iter.next();
     return iter;
   });
-  const _openAppStoreOverlayMediaModal = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -170,7 +163,7 @@ function _openAppStoreOverlayMediaModal() {
   }
   return applyArgumentsResult;
 }
-let result = require("setContent").fileFinishedImporting("modules/quests/native/AppStoreOverlay/openAppStoreOverlayMediaModal.tsx");
+let result = require("set").fileFinishedImporting("modules/quests/native/AppStoreOverlay/openAppStoreOverlayMediaModal.tsx");
 
 export const openAppStoreOverlayMediaModal = function openAppStoreOverlayMediaModal(arg0) {
   const self = this;

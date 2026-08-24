@@ -1,32 +1,37 @@
-// Module ID: 8226
-// Function ID: 8227
+// Module ID: 8266
+// Function ID: 8267
 // Name: createGuildStreamSystemMessage
-// Dependencies: [4532, 8203, 8185, 8187, 1236, 8188, 2]
+// Dependencies: [4537, 8243, 8225, 8227, 1236, 8228, 2]
 // Exports: createGuildStreamSystemMessage
 
-// Module 8226 (createGuildStreamSystemMessage)
-import { StreamTypes } from "StreamIssueReportReasons";
+// Module 8266 (createGuildStreamSystemMessage)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import StreamIssueReportReasons from "StreamIssueReportReasons" /* 4537 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8225 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8227 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8228 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8243 */;
 
-const result = require("getMessageAuthorWithProcessedColor").fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildStreamSystemMessage.tsx");
+const StreamTypes = StreamIssueReportReasons.StreamTypes;
+const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildStreamSystemMessage.tsx");
 
 export const createGuildStreamSystemMessage = function createGuildStreamSystemMessage(roleStyle) {
-  let channel_id;
-  let guild_id;
   const message = roleStyle.message;
   let messageReference = message.messageReference;
   if (messageReference == null) {
     messageReference = {};
   }
   ({ channel_id, guild_id } = messageReference);
-  const tmp3 = importDefault(8203)(message);
-  let obj1 = require(8185) /* getMessageAuthorWithProcessedColor */;
+  const tmp3 = getHumanizedCallDurationDefault(message);
+  obj1 = getMessageAuthorWithProcessedColor;
   const messageAuthorWithProcessedColor = obj1.getMessageAuthorWithProcessedColor(message);
-  let obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(8187)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  let obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
   obj = { streamType: StreamTypes.GUILD, channelId: channel_id, ownerId: message.author.id, guildId: guild_id };
   obj1 = { ended: tmp4, content: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl = getSystemLocale.intl;
   const formatToParts = intl.formatToParts;
-  const t = require(1236) /* getSystemLocale */.t;
+  const t = getSystemLocale.t;
   if (null != tmp3) {
     const obj2 = {};
     const merged = Object.assign(obj);
@@ -39,6 +44,6 @@ export const createGuildStreamSystemMessage = function createGuildStreamSystemMe
     formatToPartsResult = formatToParts(t.dMmbGk, obj3);
   }
   obj1[1] = formatToPartsResult;
-  const merged2 = Object.assign(importDefault(8188)(roleStyle));
+  const merged2 = Object.assign(createCommonMessageDefault(roleStyle));
   return obj1;
 };

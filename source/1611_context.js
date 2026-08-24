@@ -4,7 +4,9 @@
 // Dependencies: [19]
 
 // Module 1611 (context)
-const context = require("noop").createContext("ltr");
+import noopAll from "noop" /* 19 */;
+
+const context = noopAll.createContext("ltr");
 context.displayName = "LocaleDirContext";
 
 export const LocaleDirContext = context;

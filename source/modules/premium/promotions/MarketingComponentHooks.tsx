@@ -1,23 +1,26 @@
-// Module ID: 10304
-// Function ID: 10305
+// Module ID: 10343
+// Function ID: 10344
 // Name: useThemeAndReducedMotionAwareAssetUrl
-// Dependencies: [4662, 4310, 589, 1364, 2]
+// Dependencies: [4669, 4314, 589, 1364, 2]
 // Exports: useThemeAndReducedMotionAwareAssetUrl
 
-// Module 10304 (useThemeAndReducedMotionAwareAssetUrl)
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+// Module 10343 (useThemeAndReducedMotionAwareAssetUrl)
+import initialize from "initialize" /* 589 */;
+import isThemeLight from "isThemeLight" /* 1364 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/premium/promotions/MarketingComponentHooks.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/premium/promotions/MarketingComponentHooks.tsx");
 
 export const useThemeAndReducedMotionAwareAssetUrl = function useThemeAndReducedMotionAwareAssetUrl(asset, arg1) {
-  const tmp2 = importDefault(4310)();
+  const tmp2 = useThemeDefault();
   const tmp3 = require;
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const items = [closure_3];
+  const stateFromStores = initialize.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   if (null == asset) {
     return null;
   } else {
-    const tmp3Result = tmp3(1364);
+    const tmp3Result = isThemeLight;
   }
 };

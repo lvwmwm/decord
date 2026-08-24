@@ -1,15 +1,17 @@
-// Module ID: 5258
-// Function ID: 5259
+// Module ID: 5263
+// Function ID: 5264
 // Name: hasConsented
 // Dependencies: [589, 709, 2]
 
-// Module 5258 (hasConsented)
-import { Store } from "initialize";
+// Module 5263 (hasConsented)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0 = false;
 let c1 = false;
 let closure_2 = {};
 let c3 = null;
+const Store = initializeDefault.Store;
 class ConsentStore extends Store {
 }
 const prototype = ConsentStore.prototype;
@@ -42,31 +44,31 @@ prototype["getAuthenticationConsentRequired"] = function getAuthenticationConsen
   return c3;
 };
 ConsentStore.displayName = "ConsentStore";
-const consentStore = new ConsentStore(require("dispatcher"), {
+const consentStore = new ConsentStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen(consents) {
     consents = consents.consents;
     if (null != consents) {
       const obj = {};
       const merged = Object.assign(obj);
       const merged1 = Object.assign(consents);
-      let c1 = true;
+      c1 = true;
     }
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(consents) {
     const obj = {};
     const merged = Object.assign(consents.consents);
-    let c0 = true;
+    c0 = true;
   },
   UPDATE_CONSENTS: function handleUpdateConsents(consents) {
     const obj = {};
     const merged = Object.assign(consents.consents);
-    let c0 = true;
+    c0 = true;
   },
   SET_CONSENT_REQUIRED: function handleConsentRequired(consentRequired) {
     consentRequired = consentRequired.consentRequired;
   },
   LOGOUT: function handleLogout() {
-    let c3 = null;
+    c3 = null;
   }
 });
 const result = require("set").fileFinishedImporting("stores/ConsentStore.tsx");

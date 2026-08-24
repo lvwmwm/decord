@@ -1,31 +1,36 @@
-// Module ID: 15057
-// Function ID: 15058
+// Module ID: 15121
+// Function ID: 15122
 // Name: route
-// Dependencies: [8198, 10669, 1236, 2629, 15058, 2]
+// Dependencies: [8238, 10708, 1236, 2630, 15122, 2]
 
-// Module 15057 (route)
-import createToggle from "createToggle";
+// Module 15121 (route)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import messagesProxyDefault from "messagesProxy" /* 2630 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import frozen from "frozen" /* 15122 */;
+import createToggle from "createToggle" /* 10708 */;
 
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2629).Iy9grw);
+    const intl = getSystemLocale.intl;
+    return intl.string(messagesProxyDefault.Iy9grw);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
   usePredicate() {
     return false;
   },
   screen: null
 };
 obj = {
-  route: require("frozen").MobileNotifSettingsSections.VOICE_ACTIVITY,
+  route: frozen.MobileNotifSettingsSections.VOICE_ACTIVITY,
   getComponent() {
-    const error = new Error("Not yet supported");
+    error = new Error("Not yet supported");
     throw error;
   }
 };
 obj[3] = obj;
 const route = createToggle.createRoute(obj);
-const result = require("getSystemLocale").fileFinishedImporting("modules/notifications/settings/native/MobileNotifSettingsRoutes.tsx");
+const result = set.fileFinishedImporting("modules/notifications/settings/native/MobileNotifSettingsRoutes.tsx");
 
 export const VoiceActivityTitleSetting = route;

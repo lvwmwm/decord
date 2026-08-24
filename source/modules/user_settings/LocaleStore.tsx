@@ -1,14 +1,15 @@
-// Module ID: 1994
-// Function ID: 1995
+// Module ID: 1995
+// Function ID: 1996
 // Name: _getSystemLocale
-// Dependencies: [5, 1995, 1340, 4004, 1236, 589, 709, 2]
+// Dependencies: [5, 1996, 1340, 4007, 1236, 589, 709, 2]
 
-// Module 1994 (_getSystemLocale)
-import initialize from "initialize";
-import { setAppLocale } from "_setAppLocale";
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import { systemLocale } from "getSystemLocale";
-import { Store } from "initialize";
+// Module 1995 (_getSystemLocale)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { setAppLocale } from "_setAppLocale" /* 1996 */;
+import closure_5 from "handleConnectionClosedOrResumed" /* 1340 */;
+import { systemLocale } from "getSystemLocale" /* 1236 */;
 
 const require = arg1;
 function _getSystemLocale() {
@@ -25,7 +26,7 @@ function _getSystemLocale() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -40,10 +41,10 @@ function _getSystemLocale() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp2;
+            closure_1 = tmp2;
             let callback = tmp3;
             callback = undefined;
-            const tmp25 = outer1_1(4004);
+            const tmp25 = closure_1_1(4007);
             let prop;
             if (tmp25 != null) {
               const app = tmp25.app;
@@ -52,15 +53,15 @@ function _getSystemLocale() {
               }
             }
             if (null != prop) {
-              const app2 = tmp23(4004).app;
+              const app2 = tmp23(4007).app;
               const preferredSystemLanguages = app2.getPreferredSystemLanguages();
               dependencyMap = 1;
               c3 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = preferredSystemLanguages.then((arg0) => arg0[0]);
               return obj1;
             }
-            tmp23 = outer1_1;
+            tmp23 = closure_1_1;
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -91,7 +92,7 @@ function _getSystemLocale() {
       }
     }
   });
-  const _getSystemLocale = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -101,7 +102,7 @@ function _getSystemLocale() {
   return applyArgumentsResult;
 }
 function handleUpdate() {
-  const localization = handleConnectionClosedOrResumed.settings.localization;
+  const localization = closure_5.settings.localization;
   let value;
   if (localization != null) {
     if (localization.locale != null) {
@@ -133,14 +134,15 @@ let currentLocale = require("getSystemLocale").intl.currentLocale;
   }
   return applyArgumentsResult;
 })().then((arg0) => {
-  let closure_8 = arg0;
+  closure_8 = arg0;
 });
+const Store = initializeDefault.Store;
 class LocaleStore extends Store {
 }
 const prototype = LocaleStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(handleConnectionClosedOrResumed);
-  const localization = handleConnectionClosedOrResumed.settings.localization;
+  this.waitFor(closure_5);
+  const localization = closure_5.settings.localization;
   let value;
   if (localization != null) {
     if (localization.locale != null) {
@@ -173,7 +175,7 @@ Object.defineProperty(prototype, "systemLocale", {
   set: undefined
 });
 LocaleStore.displayName = "LocaleStore";
-const localeStore = new LocaleStore(require("dispatcher"), {
+const localeStore = new LocaleStore(dispatcherDefault, {
   OVERLAY_INITIALIZE: handleUpdate,
   CACHE_LOADED: handleUpdate,
   CONNECTION_OPEN: handleUpdate,
@@ -203,6 +205,6 @@ const promise = (function getSystemLocale() {
   }
   return applyArgumentsResult;
 })();
-const result = require("handleConnectionClosedOrResumed").fileFinishedImporting("modules/user_settings/LocaleStore.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/LocaleStore.tsx");
 
 export default localeStore;

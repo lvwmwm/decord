@@ -1,36 +1,36 @@
-// Module ID: 10874
-// Function ID: 10875
+// Module ID: 10913
+// Function ID: 10914
 // Name: _upsertSavedMessage
-// Dependencies: [5, 10850, 676, 530, 8489, 709, 4803, 2]
+// Dependencies: [5, 10889, 676, 530, 8528, 709, 4808, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 10874 (_upsertSavedMessage)
-import dispatcher from "dispatcher";
-import getTimeSafe from "getTimeSafe";
-import { Endpoints } from "ME";
+// Module 10913 (_upsertSavedMessage)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "getTimeSafe" /* 10889 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _upsertSavedMessage() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       const table = tmp2;
-      let closure_1 = tmp5;
-      const HTTP = lib(outer1_2[3]).HTTP;
-      const obj1 = { url: null, body: null, rejectWithError: null };
-      obj1[0] = outer1_5.PUT_SAVED_MESSAGE(lib.channelId, lib.messageId);
+      closure_1 = tmp5;
+      const HTTP = lib(closure_1_2[3]).HTTP;
+      obj1 = { url: null, body: null, rejectWithError: null };
+      obj1[0] = closure_1_5.PUT_SAVED_MESSAGE(lib.channelId, lib.messageId);
       ({ dueAt: obj8[0], source: obj8[1] } = lib);
       obj1[1] = { due_at: null, source: null };
-      obj1[2] = lib(outer1_2[3]).rejectWithMigratedError();
+      obj1[2] = lib(closure_1_2[3]).rejectWithMigratedError();
       lib = yield HTTP.put(obj1);
       const obj = lib(table[4]);
       return obj.savedMessageCreateObjectToClient(lib.body);
     })();
   });
-  const _upsertSavedMessage = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -42,19 +42,19 @@ function _upsertSavedMessage() {
 function _deleteSavedMessage() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       const HTTP = lib(530).HTTP;
-      const obj1 = { url: null, rejectWithError: null };
-      obj1[0] = outer1_5.DELETE_SAVED_MESSAGE(lib.channelId, lib.messageId);
+      obj1 = { url: null, rejectWithError: null };
+      obj1[0] = closure_1_5.DELETE_SAVED_MESSAGE(lib.channelId, lib.messageId);
       obj1[1] = lib(530).rejectWithMigratedError();
       yield HTTP.del(obj1);
       return true;
     })();
   });
-  const _deleteSavedMessage = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -77,7 +77,7 @@ function _fetchAndUpdateSavedMessages() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -97,11 +97,11 @@ function _fetchAndUpdateSavedMessages() {
             body = undefined;
             callback = undefined;
             if (isStale.getIsStale()) {
-              let dependencyMap = 1;
-              const HTTP = outer1_0(530).HTTP;
-              const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_5.GET_SAVED_MESSAGES;
-              let obj10 = outer1_0(530);
+              dependencyMap = 1;
+              const HTTP = closure_1_0(530).HTTP;
+              obj1 = { url: null, rejectWithError: null };
+              obj1[0] = closure_1_5.GET_SAVED_MESSAGES;
+              let obj10 = closure_1_0(530);
               obj1[1] = obj10.rejectWithMigratedError();
               c3 = 4;
               isStale = 1;
@@ -151,7 +151,7 @@ function _fetchAndUpdateSavedMessages() {
             return obj8;
           } else {
             isStale = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           isStale = 3;
@@ -169,11 +169,10 @@ function _fetchAndUpdateSavedMessages() {
           callback = results.map((message) => {
             let messageRecord = null;
             if (null != message.message) {
-              let obj = callback(4803);
+              let obj = callback(4808);
               messageRecord = obj.createMessageRecord(message.message);
             }
-            obj = { message: messageRecord, saveData: null };
-            obj[1] = callback(8489).savedMessageDataToClient(message.save_data);
+            obj = { message: messageRecord, saveData: callback(8528).savedMessageDataToClient(message.save_data) };
             return obj;
           });
           obj10 = { type: "SAVED_MESSAGES_UPDATE", savedMessages: null };
@@ -194,7 +193,7 @@ function _fetchAndUpdateSavedMessages() {
       }
     }
   });
-  const _fetchAndUpdateSavedMessages = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -203,7 +202,7 @@ function _fetchAndUpdateSavedMessages() {
   }
   return applyArgumentsResult;
 }
-const result = require("ME").fileFinishedImporting("modules/saved_messages/SavedMessagesActions.tsx");
+const result = require("set").fileFinishedImporting("modules/saved_messages/SavedMessagesActions.tsx");
 
 export const upsertSavedMessage = function upsertSavedMessage() {
   const self = this;

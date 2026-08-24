@@ -1,10 +1,12 @@
-// Module ID: 8948
-// Function ID: 8949
+// Module ID: 8985
+// Function ID: 8986
 // Name: OVERRIDE_DIR
 // Dependencies: [2]
 
-// Module 8948 (OVERRIDE_DIR)
-const result = require("set").fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FrameOverrideConstants.tsx");
+// Module 8985 (OVERRIDE_DIR)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FrameOverrideConstants.tsx");
 
 export const OVERRIDE_DIR = "frame_override";
 export const MANIFEST_NAME = "manifest.json";

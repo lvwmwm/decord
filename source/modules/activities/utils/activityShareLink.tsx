@@ -1,18 +1,22 @@
-// Module ID: 13855
-// Function ID: 13856
+// Module ID: 13920
+// Function ID: 13921
 // Name: items
-// Dependencies: [4358, 1487, 1236, 2]
+// Dependencies: [4362, 1487, 1236, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 13855 (items)
-const items = [require("trimTrailingPunctuation").parseQuestsEmbedCode];
-const result = require("getSystemLocale").fileFinishedImporting("modules/activities/utils/activityShareLink.tsx");
+// Module 13920 (items)
+import set from "set" /* 2 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
+import trimTrailingPunctuation from "trimTrailingPunctuation" /* 4362 */;
+
+const items = [trimTrailingPunctuation.parseQuestsEmbedCode];
+const result = set.fileFinishedImporting("modules/activities/utils/activityShareLink.tsx");
 
 export const resolveActivityShareMessageContent = function resolveActivityShareMessageContent(c3, closure_14, closure_12) {
   const _require = false;
-  const replaced = c3.replaceAll(importDefault(1487).URL_REGEX, (arg0) => {
-    let c0 = arg0;
-    const someResult = outer1_3.some((arg0) => null != arg0(c0));
+  const replaced = c3.replaceAll(isDiscordProxiedAssetUrlDefault.URL_REGEX, (arg0) => {
+    c0 = arg0;
+    const someResult = closure_1_3.some((arg0) => null != arg0(c0));
     if (someResult) {
       c0 = true;
     }

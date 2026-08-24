@@ -1,29 +1,32 @@
-// Module ID: 7206
-// Function ID: 7207
+// Module ID: 7244
+// Function ID: 7245
 // Name: resetStoreState
-// Dependencies: [1994, 589, 1370, 709, 2]
+// Dependencies: [1995, 589, 1370, 709, 2]
 
-// Module 7206 (resetStoreState)
-import _getSystemLocale from "_getSystemLocale";
-import { Store } from "initialize";
+// Module 7244 (resetStoreState)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
+import closure_2 from "_getSystemLocale" /* 1995 */;
 
-const require = arg1;
+require = arg1;
 function resetStoreState() {
-  let closure_3 = {};
-  let closure_4 = {};
-  let closure_5 = {};
-  let closure_6 = {};
+  closure_3 = {};
+  closure_4 = {};
+  closure_5 = {};
+  closure_6 = {};
 }
 let closure_3 = {};
 let closure_4 = {};
 let closure_5 = {};
 let closure_6 = {};
+const Store = initializeDefault.Store;
 class SKUPricesStore extends Store {
 }
 const prototype = SKUPricesStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(_getSystemLocale);
-  const items = [_getSystemLocale];
+  this.waitFor(closure_2);
+  const items = [closure_2];
   this.syncWith(items, resetStoreState);
 };
 prototype["getPricesForSkuId"] = function getPricesForSkuId(id) {
@@ -65,16 +68,25 @@ prototype["getFetchStateForApplicationId"] = function getFetchStateForApplicatio
     return closure_3[combined];
   }
 };
+prototype["getPromotionIdsForSkuId"] = function getPromotionIdsForSkuId(arg0) {
+  if (null != arg0) {
+    let prop;
+    if (dependencyMap[arg0] != null) {
+      prop = tmp2.storefrontPromotionIds;
+    }
+    return prop;
+  }
+};
 prototype["getRewardsForSkuId"] = function getRewardsForSkuId(id) {
   if (null != id) {
     if (null != dependencyMap[id]) {
       const mapped = tmp2.rewardResultIds.map((arg0) => table[arg0]);
-      return mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+      return mapped.filter(isDiscordFrontendDevelopment.isNotNullish);
     }
   }
 };
 SKUPricesStore.displayName = "SKUPricesStore";
-const sKUPricesStore = new SKUPricesStore(require("dispatcher"), {
+const sKUPricesStore = new SKUPricesStore(dispatcherDefault, {
   LOGOUT: resetStoreState,
   SKUS_PRICING_FETCH_START: function handleFetchStart(priceId) {
     priceId = priceId.priceId;
@@ -99,7 +111,7 @@ const sKUPricesStore = new SKUPricesStore(require("dispatcher"), {
       const _Object = Object;
       const skuIds = priceId.skuIds;
       const merged2 = Object.assign(Object.fromEntries(skuIds.map((skuId) => {
-        const obj = { type: "sku", skuId };
+        obj = { type: "sku", skuId };
         if ("application" === obj.type) {
           const _HermesInternal2 = HermesInternal;
           let combined = "application:" + obj.applicationId;
@@ -113,8 +125,6 @@ const sKUPricesStore = new SKUPricesStore(require("dispatcher"), {
     }
   },
   SKUS_PRICING_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
-    let data;
-    let priceId;
     ({ priceId, data } = arg0);
     let str = globalThis;
     const timestamp = Date.now();
@@ -140,7 +150,7 @@ const sKUPricesStore = new SKUPricesStore(require("dispatcher"), {
       const _Object = Object;
       const skuIds = priceId.skuIds;
       const merged2 = Object.assign(Object.fromEntries(skuIds.map((skuId) => {
-        const obj = { type: "sku", skuId };
+        obj = { type: "sku", skuId };
         if ("application" === obj.type) {
           const _HermesInternal2 = HermesInternal;
           let combined = "application:" + obj.applicationId;
@@ -153,7 +163,7 @@ const sKUPricesStore = new SKUPricesStore(require("dispatcher"), {
       })));
       obj6 = obj;
       if ("application" !== priceId.type) {
-        const obj1 = {};
+        obj1 = {};
         const merged3 = Object.assign(obj1);
         const merged4 = Object.assign(data.pricingResultIdMap);
         const obj2 = {};
@@ -174,7 +184,7 @@ const sKUPricesStore = new SKUPricesStore(require("dispatcher"), {
           const _Object2 = Object;
           const skuIds1 = obj4.skuIds;
           const merged10 = Object.assign(Object.fromEntries(skuIds1.map((skuId) => {
-            const obj = { type: "sku", skuId };
+            obj = { type: "sku", skuId };
             if ("application" === obj.type) {
               const _HermesInternal2 = HermesInternal;
               let combined = "application:" + obj.applicationId;
@@ -226,7 +236,7 @@ const sKUPricesStore = new SKUPricesStore(require("dispatcher"), {
       const _Object = Object;
       const skuIds = priceId.skuIds;
       const merged2 = Object.assign(Object.fromEntries(skuIds.map((skuId) => {
-        const obj = { type: "sku", skuId };
+        obj = { type: "sku", skuId };
         if ("application" === obj.type) {
           const _HermesInternal2 = HermesInternal;
           let combined = "application:" + obj.applicationId;
@@ -241,6 +251,6 @@ const sKUPricesStore = new SKUPricesStore(require("dispatcher"), {
   },
   STOREFRONT_PROMOTION_ID_OVERRIDE_SET: resetStoreState
 });
-const result = require("isDiscordFrontendDevelopment").fileFinishedImporting("modules/storefront/SKUPricesStore.tsx");
+const result = require("set").fileFinishedImporting("modules/storefront/SKUPricesStore.tsx");
 
 export default sKUPricesStore;

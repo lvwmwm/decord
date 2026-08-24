@@ -1,35 +1,35 @@
-// Module ID: 15210
-// Function ID: 15211
+// Module ID: 15274
+// Function ID: 15275
 // Name: NavigatorWithCaptchaHook
-// Dependencies: [32, 19, 17, 676, 21, 15211, 6314, 15220, 6371, 8588, 4661, 712, 15261, 8582, 1643, 8612, 15262, 8610, 6312, 501, 1236, 15263, 5066, 15267, 2]
+// Dependencies: [32, 19, 17, 676, 21, 15275, 6345, 15284, 6402, 8627, 4668, 712, 15325, 8621, 1643, 8649, 15326, 8647, 6343, 501, 1236, 15327, 5071, 15331, 2]
 
-// Module 15210 (NavigatorWithCaptchaHook)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "PlatformTypes";
-import get_ActivityIndicator from "context";
-import { AuthStates } from "ME";
-import jsxProd from "_initialize";
-import headerTitle from "headerTitle";
-import createCacheKey from "createCacheKey";
+// Module 15274 (NavigatorWithCaptchaHook)
+import ThemesDefault from "Themes" /* 712 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1643 */;
+import createStackNavigator from "createStackNavigator" /* 6402 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 8621 */;
+import BackgroundImageDefault from "BackgroundImage" /* 8649 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 15325 */;
+import registerAsset from "registerAsset" /* 15326 */;
+import usePortraitOrientationOnlyDefault from "usePortraitOrientationOnly" /* 15331 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { AuthStates } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import headerTitle from "headerTitle" /* 15275 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c10;
-let c5;
-let c9;
-let closure_6;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function NavigatorWithCaptchaHook() {
-  let require;
-  let tmp9;
-  let obj = require(15261) /* useIsHCaptchaModalOpenTracking */;
+  obj = useIsHCaptchaModalOpenTracking;
   const isHCaptchaModalOpenTracking = obj.useIsHCaptchaModalOpenTracking();
   const tmp6 = callback3();
-  const tmp5 = importDefault(8582)();
+  const tmp5 = useWideAuthViewDefault();
   [tmp9, require] = callback(importAllResult.useState(AuthStates.WELCOME), 2);
   const tmp10 = callback(importAllResult.useState(false), 2);
   importDefault = tmp11;
-  let obj1 = require(1643) /* KeyboardChatScrollView */;
+  obj1 = KeyboardChatScrollView;
   const keyboardState = obj1.useKeyboardState((height) => height.height);
   callback = importAllResult.useCallback((arg0) => {
     let name;
@@ -42,14 +42,14 @@ function NavigatorWithCaptchaHook() {
       name = null;
     }
     closure_0(name);
-    tmp11(false);
+    callback(false);
   }, []);
   obj = { backgroundImageSource: null, backgroundImageCover: true };
   const tmp15 = closure_10;
   const tmp16 = closure_9;
   const tmp8 = callback(importAllResult.useState(AuthStates.WELCOME), 2);
-  obj[0] = require(15262) /* registerAsset */;
-  const children = [callback2(importDefault(8612), obj), ];
+  obj[0] = registerAsset;
+  const children = [callback2(BackgroundImageDefault, obj), ];
   if (tmp5) {
     obj = { value: null, children: null };
     obj[0] = tmp11;
@@ -103,10 +103,10 @@ function NavigatorWithCaptchaHook() {
     obj7[1] = tmp4(712).space.PX_24;
     obj7[2] = tmp4(712).space.PX_16;
     obj6[10] = obj7;
-    obj5[1] = tmp17(tmp(6312).Navigator, obj6);
+    obj5[1] = tmp17(tmp(6343).Navigator, obj6);
     obj2[1] = tmp17(closure_6, obj5);
     obj[1] = tmp17(closure_6, obj2);
-    let tmp17Result = tmp17(tmp(8610).WideAuthScrollContext.Provider, obj);
+    let tmp17Result = tmp17(tmp(8647).WideAuthScrollContext.Provider, obj);
     tmpResult = tmp(501);
   } else {
     const obj8 = { screens: null, viewStyle: null, containerStyle: null, headerBackTitle: null, initialRouteName: null, onWillFocus: null, headerStyle: null };
@@ -117,22 +117,20 @@ function NavigatorWithCaptchaHook() {
     obj8[4] = tmp7.WELCOME;
     obj8[5] = closure_5.dismiss;
     obj8[6] = { borderBottomWidth: 0 };
-    tmp17Result = tmp17(tmp(6312).Navigator, obj8);
+    tmp17Result = tmp17(tmp(6343).Navigator, obj8);
   }
   children[1] = tmp17Result;
   return tmp15(tmp16, { children });
 }
 let c4 = importAllResult;
 ({ Keyboard: c5, View: closure_6, StyleSheet } = get_ActivityIndicator);
-({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
 headerTitle = headerTitle.getAllAuthScreens();
 headerTitle = Object.entries(headerTitle);
 let closure_12 = Object.fromEntries(headerTitle.map((arg0) => {
-  let tmp;
-  let tmp2;
   [tmp, tmp2] = arg0;
   const items = [tmp, ];
-  let obj = {};
+  obj = {};
   let merged = Object.assign(tmp2);
   obj.headerMode = "screen";
   obj = null;
@@ -149,7 +147,7 @@ let closure_12 = Object.fromEntries(headerTitle.map((arg0) => {
         function backImage() {
           return callback2(callback(table[6]).HeaderBackImage, {});
         }
-        let obj = headerLeft;
+        obj = headerLeft;
         if (null != headerLeft.headerLeft) {
           obj = {};
           const merged = Object.assign(arg0);
@@ -159,7 +157,7 @@ let closure_12 = Object.fromEntries(headerTitle.map((arg0) => {
           obj = {};
           const merged1 = Object.assign(arg0);
           obj.backImage = backImage;
-          headerLeftResult = outer1_8(outer1_0(outer1_2[7]).BackButtonWithTracking, obj);
+          headerLeftResult = closure_1_8(closure_1_0(closure_1_2[7]).BackButtonWithTracking, obj);
         }
         return headerLeftResult;
       };
@@ -171,8 +169,8 @@ let closure_12 = Object.fromEntries(headerTitle.map((arg0) => {
   ({ REGISTER_IDENTITY: arr2[0], LOGIN: arr2[1], AGE_GATE_UNDERAGE: arr2[2] } = AuthStates);
   let tmp8 = null;
   if (set.has(tmp)) {
-    const obj1 = { cardStyleInterpolator: null };
-    obj1[0] = require(6371) /* createStackNavigator */.CardStyleInterpolators.forFadeFromCenter;
+    obj1 = { cardStyleInterpolator: null };
+    obj1[0] = createStackNavigator.CardStyleInterpolators.forFadeFromCenter;
     tmp8 = obj1;
   }
   const merged3 = Object.assign(tmp8);
@@ -187,27 +185,27 @@ let obj = {};
 obj[AuthStates.LOGIN] = num;
 obj[AuthStates.MFA] = 600;
 obj = { transparent: { backgroundColor: "transparent" }, cardContainer: { flex: 1, position: "relative", backgroundColor: "transparent" }, wideOuterContainer: { flex: 1, justifyContent: "center" }, wideCard: null, wideHeaderFlat: null, wideHeader: null };
-headerTitle = { backgroundColor: "transparent", borderRadius: require("Themes").radii.lg, maxWidth: 600, alignSelf: "center", width: "100%", maxHeight: "90%", overflow: "hidden", height: 520 };
+headerTitle = { backgroundColor: "transparent", borderRadius: ThemesDefault.radii.lg, maxWidth: 600, alignSelf: "center", width: "100%", maxHeight: "90%", overflow: "hidden", height: 520 };
 obj[3] = headerTitle;
-obj[4] = { borderBottomWidth: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
-createCacheKey = { borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[4] = { borderBottomWidth: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
+createCacheKey = { borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: ThemesDefault.colors.BORDER_SUBTLE, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 obj[5] = createCacheKey;
 let closure_14 = createCacheKey.createStyles(obj);
 const context = importAllResult.createContext(() => {
 
 });
-let obj2 = { borderBottomWidth: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+let obj2 = { borderBottomWidth: 0, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 const memoResult = importAllResult.memo(function Auth() {
   const effect = importAllResult.useEffect(() => {
-    callback2(15263).initialize();
+    callback2(15327).initialize();
     return () => callback(table[21]).terminate();
   }, []);
-  const layoutEffect = importAllResult.useLayoutEffect(() => callback(5066).trackAppUIViewed(), []);
-  importDefault(15267)();
-  let closure_0 = importAllResult.useRef(undefined);
-  return callback2(context.Provider, { value: importAllResult.useCallback(() => callback(outer1_2[7]).getTrackRegTransition(callback), [])(), children: callback2(NavigatorWithCaptchaHook, {}) });
+  const layoutEffect = importAllResult.useLayoutEffect(() => callback(5071).trackAppUIViewed(), []);
+  usePortraitOrientationOnlyDefault();
+  closure_0 = importAllResult.useRef(undefined);
+  return callback2(context.Provider, { value: importAllResult.useCallback(() => callback(closure_1_2[7]).getTrackRegTransition(callback), [])(), children: callback2(NavigatorWithCaptchaHook, {}) });
 });
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/auth/native/components/Auth.tsx");
+const result = require("set").fileFinishedImporting("modules/auth/native/components/Auth.tsx");
 
 export default memoResult;
 export const TrackRegistrationContext = context;

@@ -1,16 +1,18 @@
-// Module ID: 8489
-// Function ID: 8490
+// Module ID: 8528
+// Function ID: 8529
 // Name: SavedMessageSortTypes
-// Dependencies: [4803, 2]
+// Dependencies: [4808, 2]
 // Exports: savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
 
-// Module 8489 (SavedMessageSortTypes)
-const result = require("set").fileFinishedImporting("modules/saved_messages/SavedMessagesTypes.tsx");
+// Module 8528 (SavedMessageSortTypes)
+import set from "set" /* 2 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+
+const result = set.fileFinishedImporting("modules/saved_messages/SavedMessagesTypes.tsx");
 
 export const SavedMessageSortTypes = { ALL: "ALL", REMINDER: "REMINDER", BOOKMARK: "BOOKMARK" };
 export const savedMessageDataToClient = function savedMessageDataToClient(save_data) {
-  const obj = { channelId: save_data.channel_id, messageId: save_data.message_id, savedAt: null, authorSummary: null, channelSummary: null, messageSummary: null, guildId: null, authorId: null, notes: null, dueAt: null };
-  obj[2] = new Date(save_data.saved_at);
+  const obj = { channelId: save_data.channel_id, messageId: save_data.message_id, savedAt: new Date(save_data.saved_at), authorSummary: null, channelSummary: null, messageSummary: null, guildId: null, authorId: null, notes: null, dueAt: null };
   ({ author_summary: obj[3], channel_summary: obj[4], message_summary: obj[5] } = save_data);
   let guild_id;
   if (0 !== save_data.guild_id) {
@@ -34,13 +36,12 @@ export const savedMessageDataToClient = function savedMessageDataToClient(save_d
 export const savedMessageCreateObjectToClient = function savedMessageCreateObjectToClient(body) {
   let messageRecord = null;
   if (null != body.message) {
-    let obj = require(4803) /* createMinimalMessageRecord */;
+    let obj = createMinimalMessageRecord;
     messageRecord = obj.createMessageRecord(body.message);
   }
   obj = { message: messageRecord, saveData: null };
   const save_data = body.save_data;
-  obj = { channelId: save_data.channel_id, messageId: save_data.message_id, savedAt: null, authorSummary: null, channelSummary: null, messageSummary: null, guildId: null, authorId: null, notes: null, dueAt: null };
-  obj[2] = new Date(save_data.saved_at);
+  obj = { channelId: save_data.channel_id, messageId: save_data.message_id, savedAt: new Date(save_data.saved_at), authorSummary: null, channelSummary: null, messageSummary: null, guildId: null, authorId: null, notes: null, dueAt: null };
   ({ author_summary: obj3[3], channel_summary: obj3[4], message_summary: obj3[5] } = save_data);
   let guild_id;
   if (0 !== save_data.guild_id) {

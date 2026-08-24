@@ -1,21 +1,21 @@
-// Module ID: 9901
-// Function ID: 9902
+// Module ID: 9940
+// Function ID: 9941
 // Name: ActivityStatusText
-// Dependencies: [19, 21, 4661, 4734, 2]
+// Dependencies: [19, 21, 4668, 4739, 2]
 // Exports: default
 
-// Module 9901 (ActivityStatusText)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9940 (ActivityStatusText)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_3 = createCacheKey.createStyles({ text: { flexShrink: 1 } });
-const result = require("createCacheKey").fileFinishedImporting("modules/activity_status/native/ActivityStatusText.tsx");
+const result = require("set").fileFinishedImporting("modules/activity_status/native/ActivityStatusText.tsx");
 
 export default function ActivityStatusText(variant) {
-  let children;
-  let style;
   let str = variant.variant;
   ({ children, style } = variant);
   if (str === undefined) {
@@ -26,5 +26,5 @@ export default function ActivityStatusText(variant) {
   items = [callback().text, style];
   const merged1 = Object.assign(merged);
   obj.children = children;
-  return jsx(require(4734) /* Text */.Text, { variant: str, color: "text-muted", style: items, lineClamp: 1 });
+  return jsx(Text.Text, { variant: str, color: "text-muted", style: items, lineClamp: 1 });
 };

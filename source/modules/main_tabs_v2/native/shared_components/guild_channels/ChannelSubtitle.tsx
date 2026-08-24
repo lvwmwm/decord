@@ -1,25 +1,21 @@
-// Module ID: 15880
-// Function ID: 15881
+// Module ID: 15977
+// Function ID: 15978
 // Name: ChannelSubtitle
-// Dependencies: [19, 21, 10056, 4734, 15486, 10053, 2]
+// Dependencies: [19, 21, 10095, 4739, 15551, 10092, 2]
 // Exports: renderChannelSubtitle
 
-// Module 15880 (ChannelSubtitle)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 15977 (ChannelSubtitle)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import getLayoutStyles from "getLayoutStyles" /* 10095 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 15551 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 function ChannelSubtitle(arg0) {
-  let channelId;
-  let connected;
-  let guildId;
-  let layout;
-  let muted;
-  let subtitle;
-  let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, layout, subtitle } = arg0);
-  let obj = require(15486) /* getChannelSubtitleData */;
+  let obj = getChannelSubtitleData;
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;
@@ -36,26 +32,25 @@ function ChannelSubtitle(arg0) {
     obj[3] = guildId;
     obj[4] = layout;
     obj[6] = !("voice" === channelSubtitleData.type && connected);
-    obj.children = tmp(10053).renderMessagePreviewMarkup(obj);
-    return jsx(tmp(4734).Text, { content: null, muted: null, channelId: null, guildId: null, layout: null, color: "text-muted", disableAnimatedEmoji: null });
+    obj.children = tmp(10092).renderMessagePreviewMarkup(obj);
+    return jsx(tmp(4739).Text, { content: null, muted: null, channelId: null, guildId: null, layout: null, color: "text-muted", disableAnimatedEmoji: null });
   }
 }
-const result = require("getLayoutStyles").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelSubtitle.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelSubtitle.tsx");
 
 export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
-  let layout;
-  let subtitle;
   ({ subtitle, layout } = arg0);
   if (null == subtitle) {
     return null;
   } else {
     let obj = { variant: null, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75 };
-    obj[0] = require(10056) /* getLayoutStyles */.getLayoutStyles(layout).messagePreview.text.variant;
+    obj[0] = getLayoutStyles.getLayoutStyles(layout).messagePreview.text.variant;
     if (typeof subtitle === "string") {
       obj = {};
       const merged = Object.assign(obj);
       obj.children = subtitle;
-      let tmp9 = jsx(require(4734) /* Text */.Text, {});
+      let tmp9 = jsx(Text.Text, {});
     } else {
       obj = { channelId: null, guildId: null, layout: null, subtitle: null, muted: null, connected: null, textProps: null };
       obj[0] = tmp2;

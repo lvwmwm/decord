@@ -1,12 +1,12 @@
-// Module ID: 7932
-// Function ID: 7933
+// Module ID: 7971
+// Function ID: 7972
 // Name: useIsBuyNitroPurchaseBlocked
-// Dependencies: [5319, 644, 589, 2]
+// Dependencies: [5324, 644, 589, 2]
 // Exports: useIsBuyNitroPurchaseBlocked
 
-// Module 7932 (useIsBuyNitroPurchaseBlocked)
-import updateProduct from "updateProduct";
-import keys from "keys";
+// Module 7971 (useIsBuyNitroPurchaseBlocked)
+import closure_2 from "updateProduct" /* 5324 */;
+import keys from "keys" /* 644 */;
 
 const require = arg1;
 let closure_3 = keys.create(() => ({ isLocked: false, hasCompletedInitialLoad: false }));
@@ -35,7 +35,7 @@ keys = {
     store.setState({ hasCompletedInitialLoad: promotionMarketingComponent });
   }
 };
-const result = require("initialize").fileFinishedImporting("modules/premium_marketing/native/hooks/useBuyNitroPurchaseLock.tsx");
+const result = require("set").fileFinishedImporting("modules/premium_marketing/native/hooks/useBuyNitroPurchaseLock.tsx");
 
 export const useIsBuyNitroPurchaseBlocked = function useIsBuyNitroPurchaseBlocked() {
   let stateFromStores = store((hasCompletedInitialLoad) => {
@@ -46,7 +46,7 @@ export const useIsBuyNitroPurchaseBlocked = function useIsBuyNitroPurchaseBlocke
     }
     return isLocked;
   });
-  const items = [updateProduct];
+  const items = [closure_2];
   if (!stateFromStores) {
     stateFromStores = obj.useStateFromStores(items, () => busy.isBusy());
   }

@@ -1,47 +1,51 @@
-// Module ID: 14103
-// Function ID: 14104
+// Module ID: 14171
+// Function ID: 14172
 // Name: RestrictedAccountRedirect
-// Dependencies: [19, 17, 4030, 1922, 676, 5430, 21, 4661, 712, 14104, 1236, 7360, 589, 8624, 8561, 6291, 4745, 2]
+// Dependencies: [19, 17, 4033, 1922, 676, 5435, 21, 4668, 712, 14172, 1236, 7398, 589, 8661, 8600, 6322, 4750, 2]
 
-// Module 14103 (RestrictedAccountRedirect)
-import importAllResult from "noop";
-import { View } from "set";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { AnalyticsSections } from "ME";
-import { SafetySettingsNoticeType } from "SafetyToastType";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14171 (RestrictedAccountRedirect)
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import handleOpenEmailVerification from "handleOpenEmailVerification" /* 8661 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14172 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { AnalyticsSections } from "ME" /* 676 */;
+import { SafetySettingsNoticeType } from "SafetyToastType" /* 5435 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let c9;
-const require = arg1;
+require = arg1;
 function RestrictedAccountRedirect() {
-  let obj = { label: null, labelHook: null, noticeType: null };
-  obj[0] = require(1236) /* getSystemLocale */.t.zqv4nV;
-  obj[1] = function labelHook() {
-    let obj = callback(table[11]);
-    obj = { screen: constants.SETTINGS_CONTENT_AND_SOCIAL };
-    obj.openUserSettings(obj);
+  let obj = {
+    label: getSystemLocale.t.zqv4nV,
+    labelHook() {
+      let obj = callback(table[11]);
+      obj = { screen: constants.SETTINGS_CONTENT_AND_SOCIAL };
+      obj.openUserSettings(obj);
+    },
+    noticeType: SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE
   };
-  obj[2] = SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE;
-  return callback(importDefault(14104), obj);
+  return callback(SafetySettingsNoticeDefault, obj);
 }
 let c3 = importAllResult;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let obj = { header: null };
-obj = { paddingTop: require("Themes").space.PX_24, gap: require("Themes").space.PX_24 };
+obj = { paddingTop: ThemesDefault.space.PX_24, gap: ThemesDefault.space.PX_24 };
 obj[0] = obj;
 let closure_11 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
-  let obj = require(589) /* initialize */;
-  const items = [mergeGuildAvatar];
+  let obj = initialize;
+  const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = require(8624) /* handleOpenEmailVerification */;
+  obj1 = handleOpenEmailVerification;
   const bannerText = obj1.getBannerText(stateFromStores);
   const tmp = callback2();
-  const items1 = [markAllUserIdListsStale];
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => blockedOrIgnoredIDs.getBlockedOrIgnoredIDs().size > 0);
+  const items1 = [closure_5];
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => blockedOrIgnoredIDs.getBlockedOrIgnoredIDs().size > 0);
   const callback = importAllResult.useCallback(() => {
     callback(table[14]).open();
   }, []);
@@ -61,8 +65,8 @@ const memoResult = importAllResult.memo(() => {
       obj1 = { text: null, accessibilityLabel: null, onPress: null };
       ({ button: obj6[0], button: obj6[1] } = bannerText);
       obj1[2] = callback;
-      obj[4] = callback(tmp2(4745).Button, obj1);
-      tmp14 = callback(tmp2(6291).TableRow, obj);
+      obj[4] = callback(tmp2(4750).Button, obj1);
+      tmp14 = callback(tmp2(6322).TableRow, obj);
     }
     items2[1] = tmp14;
     obj[1] = items2;
@@ -74,6 +78,6 @@ const memoResult = importAllResult.memo(() => {
   }
   return tmp9Result;
 });
-const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
 
 export default memoResult;

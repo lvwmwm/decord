@@ -1,23 +1,22 @@
-// Module ID: 7878
-// Function ID: 7879
+// Module ID: 7917
+// Function ID: 7918
 // Name: useBuyNitroExperiment
-// Dependencies: [32, 19, 7392, 7127, 7879, 2]
+// Dependencies: [32, 19, 7430, 7165, 7918, 2]
 // Exports: useBuyNitroExperiment
 
-// Module 7878 (useBuyNitroExperiment)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { usePremiumPlanPurchasedStore as closure_5 } from "usePremiumPlanPurchasedStore";
+// Module 7917 (useBuyNitroExperiment)
+import useInitialValueDefault from "useInitialValue" /* 7165 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { usePremiumPlanPurchasedStore as closure_5 } from "usePremiumPlanPurchasedStore" /* 7430 */;
 
 const require = arg1;
-const result = require("usePremiumPlanPurchasedStore").fileFinishedImporting("modules/premium_marketing/native/hooks/useBuyNitroExperiment.tsx");
+const result = require("set").fileFinishedImporting("modules/premium_marketing/native/hooks/useBuyNitroExperiment.tsx");
 
 export const useBuyNitroExperiment = function useBuyNitroExperiment(isNitroHomeSurface) {
-  let isConfirmedNonSubscriber;
-  let userHasSubscription;
   isNitroHomeSurface = isNitroHomeSurface.isNitroHomeSurface;
   ({ userHasSubscription, isConfirmedNonSubscriber } = isNitroHomeSurface);
-  let canRenderRedesignUpsellEarly = importDefault(7127)(() => callback(table[4]).getMobileNitroMarketingRedesignExperiment({ location: "PremiumMarketingPage" }));
+  let canRenderRedesignUpsellEarly = useInitialValueDefault(() => callback(table[4]).getMobileNitroMarketingRedesignExperiment({ location: "PremiumMarketingPage" }));
   const tmp3 = callback(React.useState(false), 2);
   const first = tmp3[0];
   let showRedesignUpsell = canRenderRedesignUpsellEarly;

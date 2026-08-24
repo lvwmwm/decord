@@ -1,18 +1,19 @@
-// Module ID: 12720
-// Function ID: 12721
+// Module ID: 12775
+// Function ID: 12776
 // Name: keyExtractor
-// Dependencies: [32, 19, 17, 10850, 21, 4661, 712, 4115, 4744, 12721, 8489, 8484, 589, 7139, 7159, 9177, 503, 687, 12723, 12731, 8029, 12734, 2]
+// Dependencies: [32, 19, 17, 10889, 21, 4668, 712, 4119, 4749, 12776, 8528, 8523, 589, 7177, 7197, 9214, 503, 687, 12778, 12786, 8068, 12789, 2]
 
-// Module 12720 (keyExtractor)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "IntroDemo";
-import { View } from "set";
-import getTimeSafe from "getTimeSafe";
-import jsxProd from "ForLaterNitroUpsellBar";
-import createCacheKey from "createCacheKey";
+// Module 12775 (keyExtractor)
+import ThemesDefault from "Themes" /* 712 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import getSavedMessagesForTypeDefault from "getSavedMessagesForType" /* 12776 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "getTimeSafe" /* 10889 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
 function keyExtractor(saveData) {
   return saveData.saveData.messageId;
@@ -20,13 +21,13 @@ function keyExtractor(saveData) {
 function ForLaterPage(type) {
   type = type.type;
   let first;
-  let importDefault;
+  importDefault = undefined;
   const tmp = callback4();
-  const arr = importDefault(12721)(type);
-  const tmp5 = type === first(8489).SavedMessageSortTypes.REMINDER;
-  let obj = first(8484);
+  const arr = getSavedMessagesForTypeDefault(type);
+  const tmp5 = type === first(8528).SavedMessageSortTypes.REMINDER;
+  let obj = first(8523);
   const forLaterLimit = obj.useForLaterLimit(ForLaterScreen, tmp5);
-  let obj1 = first(8484);
+  obj1 = first(8523);
   const isForLaterLimitUpgradable = obj1.useIsForLaterLimitUpgradable(ForLaterScreen);
   let tmp8 = isForLaterLimitUpgradable;
   if (isForLaterLimitUpgradable) {
@@ -39,12 +40,12 @@ function ForLaterPage(type) {
   if (isForLaterLimitUpgradable) {
     tmp9 = arr.length > 0;
   }
-  const items = [getTimeSafe];
+  const items = [closure_6];
   const stateFromStores = first(589).useStateFromStores(items, () => overdueMessageReminderCount.getOverdueMessageReminderCount());
-  let tmp2Result = tmp2(7139);
-  const analyticsLocations = tmp2Result(tmp2(7159).FOR_LATER_POPOUT).analyticsLocations;
+  let tmp2Result = tmp2(7177);
+  const analyticsLocations = tmp2Result(tmp2(7197).FOR_LATER_POPOUT).analyticsLocations;
   obj = { type: null, name: null, properties: null };
-  tmp2Result = tmp2(9177);
+  tmp2Result = tmp2(9214);
   obj[0] = first(503).ImpressionTypes.MODAL;
   obj[1] = first(503).ImpressionNames.FOR_LATER_LIST_VIEWED;
   obj = { tab_type: type, total_count: arr.length, overdue_count: stateFromStores, nitro_upsell_bar_shown: null, nitro_roadblock_upsell_bar_shown: null };
@@ -66,7 +67,7 @@ function ForLaterPage(type) {
   first = tmp17[0];
   importDefault = tmp17[1];
   const effect = importAllResult.useEffect(() => {
-    const interval = setInterval(() => callback(new Date()), callback(outer1_2[17]).Millis.MINUTE);
+    const interval = setInterval(() => callback(new Date()), callback(closure_1_2[17]).Millis.MINUTE);
     return () => {
       clearInterval(closure_0);
     };
@@ -77,8 +78,8 @@ function ForLaterPage(type) {
     obj1[0] = analyticsLocations;
     const obj2 = { type: null };
     obj2[0] = type;
-    obj1[1] = callback2(tmp2(12731), obj2);
-    let tmp24Result = callback2(tmp4(7139).AnalyticsLocationProvider, obj1);
+    obj1[1] = callback2(tmp2(12786), obj2);
+    let tmp24Result = callback2(tmp4(7177).AnalyticsLocationProvider, obj1);
   } else {
     const obj3 = { value: null, children: null };
     obj3[0] = analyticsLocations;
@@ -90,30 +91,30 @@ function ForLaterPage(type) {
     obj5[2] = tmp.cardContainer;
     obj5[3] = keyExtractor;
     obj5[4] = type.handleScroll;
-    obj4[1] = callback2(tmp4(8029).FlashList, obj5);
+    obj4[1] = callback2(tmp4(8068).FlashList, obj5);
     const items2 = [callback2(View, obj4), ];
     let tmp25Result = null;
     if (tmp9) {
       const obj6 = { isReminder: null, isAtLimit: null };
       obj6[0] = tmp5;
       obj6[1] = tmp8;
-      tmp25Result = tmp25(tmp2(12734), obj6);
+      tmp25Result = tmp25(tmp2(12789), obj6);
     }
     items2[1] = tmp25Result;
     obj3[1] = items2;
-    tmp24Result = closure_8(tmp4(7139).AnalyticsLocationProvider, obj3);
+    tmp24Result = closure_8(tmp4(7177).AnalyticsLocationProvider, obj3);
     const tmp24 = closure_8;
     tmp25 = callback2;
   }
   return tmp24Result;
 }
 let c4 = importAllResult;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 const ForLaterScreen = "ForLaterScreen";
 let obj = { container: null, headerBorder: null, cardContainer: null, listContainer: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, flexGrow: 1 };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER, flexGrow: 1 };
 obj[0] = obj;
-createCacheKey = { height: 1, width: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey = { height: 1, width: "100%", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
 obj[1] = createCacheKey;
 obj[2] = { paddingHorizontal: 16, paddingVertical: 8 };
 obj[3] = { flex: 1 };
@@ -122,7 +123,7 @@ let closure_11 = { code: "function ForLaterScreenTsx1(){const{borderOpacity}=thi
 const memoResult = importAllResult.memo((type) => {
   let sharedValue;
   const tmp = callback4();
-  let obj = sharedValue(4115);
+  let obj = sharedValue(4119);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const callback = importAllResult.useCallback((nativeEvent) => {
@@ -130,7 +131,7 @@ const memoResult = importAllResult.memo((type) => {
     if (nativeEvent.nativeEvent.contentOffset.y > 8) {
       num = 1;
     }
-    const result = sharedValue.set(sharedValue(outer1_2[8]).withSpring(num));
+    const result = sharedValue.set(sharedValue(closure_1_2[8]).withSpring(num));
   }, items);
   const fn = function s() {
     return { opacity: sharedValue.get() };
@@ -139,12 +140,12 @@ const memoResult = importAllResult.memo((type) => {
   fn.__workletHash = 16693192032676;
   fn.__initData = closure_11;
   obj = { style: tmp.container, children: null };
-  const animatedStyle = sharedValue(4115).useAnimatedStyle(fn);
+  const animatedStyle = sharedValue(4119).useAnimatedStyle(fn);
   const items1 = [tmp.headerBorder, animatedStyle];
-  const items2 = [callback2(importDefault(4115).View, { style: items1 }), callback2(ForLaterPage, { type: type.type, handleScroll: callback })];
+  const items2 = [callback2(_modDef4119.View, { style: items1 }), callback2(ForLaterPage, { type: type.type, handleScroll: callback })];
   obj[1] = items2;
   return callback3(View, obj);
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/saved_messages/native/ForLaterScreen.tsx");
+let result = require("set").fileFinishedImporting("modules/saved_messages/native/ForLaterScreen.tsx");
 
 export default memoResult;

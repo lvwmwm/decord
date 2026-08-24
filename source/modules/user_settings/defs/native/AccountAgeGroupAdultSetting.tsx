@@ -1,48 +1,53 @@
-// Module ID: 14125
-// Function ID: 14126
-// Dependencies: [8198, 4992, 4072, 10669, 1236, 2]
+// Module ID: 14193
+// Function ID: 14194
+// Dependencies: [8238, 4997, 4075, 10708, 1236, 2]
 
-// Module 14125
-import createToggle from "createToggle";
+// Module 14193
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 4075 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4997 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["/52UYy"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["/52UYy"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT,
   useTrailing() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.XxRj7f);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.XxRj7f);
   },
   usePredicate: function useAccountAgeGroupAdultSettingPredicate() {
-    const isAgeVerified = require(4992) /* useAgeVerificationRunner */.useIsAgeVerified();
-    const obj = require(4992) /* useAgeVerificationRunner */;
-    const isVerifiedTeen = require(4992) /* useAgeVerificationRunner */.useIsVerifiedTeen();
-    const obj2 = require(4992) /* useAgeVerificationRunner */;
-    const obj3 = require(4072) /* isFeatureAgeGated */;
-    return require(4072) /* isFeatureAgeGated */.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
+    const isAgeVerified = useAgeVerificationRunner.useIsAgeVerified();
+    const obj = useAgeVerificationRunner;
+    const isVerifiedTeen = useAgeVerificationRunner.useIsVerifiedTeen();
+    const obj2 = useAgeVerificationRunner;
+    const obj3 = isFeatureAgeGated;
+    return isFeatureAgeGated.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
   }
 };
 const createStaticResult = createToggle.createStatic({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["/52UYy"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["/52UYy"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.MobileUserSettings.ACCOUNT,
   useTrailing() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.XxRj7f);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.XxRj7f);
   },
   usePredicate: function useAccountAgeGroupAdultSettingPredicate() {
-    const isAgeVerified = require(4992) /* useAgeVerificationRunner */.useIsAgeVerified();
-    const obj = require(4992) /* useAgeVerificationRunner */;
-    const isVerifiedTeen = require(4992) /* useAgeVerificationRunner */.useIsVerifiedTeen();
-    const obj2 = require(4992) /* useAgeVerificationRunner */;
-    const obj3 = require(4072) /* isFeatureAgeGated */;
-    return require(4072) /* isFeatureAgeGated */.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
+    const isAgeVerified = useAgeVerificationRunner.useIsAgeVerified();
+    const obj = useAgeVerificationRunner;
+    const isVerifiedTeen = useAgeVerificationRunner.useIsVerifiedTeen();
+    const obj2 = useAgeVerificationRunner;
+    const obj3 = isFeatureAgeGated;
+    return isFeatureAgeGated.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
   }
 });
-const result = require("isFeatureAgeGated").fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupAdultSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupAdultSetting.tsx");
 
 export default createStaticResult;

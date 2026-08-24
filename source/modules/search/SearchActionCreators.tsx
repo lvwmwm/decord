@@ -1,49 +1,45 @@
-// Module ID: 11518
-// Function ID: 11519
-// Dependencies: [11511, 11519, 709, 12, 7529, 11522, 1374, 2]
+// Module ID: 11567
+// Function ID: 11568
+// Dependencies: [11560, 11568, 709, 12, 7567, 11571, 1374, 2]
 
-// Module 11518
-let result = require("dispatcher").fileFinishedImporting("modules/search/SearchActionCreators.tsx");
+// Module 11567
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import updateUserGuildSettings from "updateUserGuildSettings" /* 1374 */;
+import createRequestPayloadDefault from "createRequestPayload" /* 11568 */;
+
+let result = set.fileFinishedImporting("modules/search/SearchActionCreators.tsx");
 
 export default {
   fetchTabMessages(searchContext) {
-    let dependencyMap;
-    let getLimit;
-    let importDefault;
-    let onFetchStart;
-    let pagination;
-    let searchMode;
-    let searchQueryString;
-    let searchTabs;
-    let trackExactTotalHits;
     searchContext = searchContext.searchContext;
     ({ searchTabs, searchQueryString, getId: importDefault, onFetchStart, onFetchSuccess: dependencyMap } = searchContext);
     let guildIdFromSearchContext;
     let mapped;
     ({ pagination, trackExactTotalHits, getLimit, searchMode } = searchContext);
-    let obj = searchContext(11511);
-    let obj1 = searchContext(11511);
+    let obj = searchContext(11560);
+    obj1 = searchContext(11560);
     const searchQueryFromTokens = obj1.getSearchQueryFromTokens(obj.tokenizeQuery(searchQueryString));
     if (Array.isArray(searchQueryFromTokens.pinned)) {
       const pinned = searchQueryFromTokens.pinned;
       searchQueryFromTokens.pinned = pinned.some((arg0) => true === arg0);
     }
-    let tmpResult = tmp(11511);
+    let tmpResult = tmp(11560);
     const result = tmpResult.searchModeToSearchQueryParams(searchMode);
     obj = {};
     const merged = Object.assign(searchQueryFromTokens);
     const merged1 = Object.assign(result);
-    tmpResult = tmp(11511);
+    tmpResult = tmp(11560);
     guildIdFromSearchContext = tmpResult.getGuildIdFromSearchContext(searchContext);
     if (null != guildIdFromSearchContext) {
-      tmp(11511).setIncludeNSFW(obj, guildIdFromSearchContext);
-      const tmpResult1 = tmp(11511);
+      tmp(11560).setIncludeNSFW(obj, guildIdFromSearchContext);
+      const tmpResult1 = tmp(11560);
     }
     const tmp10 = importDefault;
     const tokenizeQueryResult = obj.tokenizeQuery(searchQueryString);
     obj = { id: null, searchContext: null, searchQuery: null, searchTabs: null, getLimit: null, pagination: null, trackExactTotalHits: null };
-    const obj7 = importDefault(11519);
-    obj[0] = searchContext(11511).getSearchContextId(searchContext);
+    const obj7 = createRequestPayloadDefault;
+    obj[0] = searchContext(11560).getSearchContextId(searchContext);
     obj[1] = searchContext;
     obj[2] = obj;
     obj[3] = searchTabs;
@@ -59,27 +55,24 @@ export default {
       onFetchStart(obj2);
     }
     mapped = searchTabs.map((arg0) => callback(arg0));
-    const tmpResult2 = searchContext(11511);
-    tmp10(709).dispatch({ type: "SEARCH_MESSAGES_START", ids: mapped });
+    const tmpResult2 = searchContext(11560);
+    dispatcherDefault.dispatch({ type: "SEARCH_MESSAGES_START", ids: mapped });
     const response = obj1.fetch((body) => {
       body = body.body;
       const entries = Object.entries(body.tabs);
-      let obj = outer1_1(outer1_2[2]);
+      let obj = closure_1_1(closure_1_2[2]);
       obj = {
         type: "SEARCH_MESSAGES_SUCCESS",
         guildId: guildIdFromSearchContext,
         data: entries.map((arg0) => {
-          let channels;
-          let tmp;
-          let tmp2;
           [tmp, tmp2] = arg0;
           const cursor = tmp2.cursor;
-          const obj = { id: outer1_1(tmp), analyticsId: body.analytics_id, totalResults: tmp2.total_results, cursor: null, messages: null, channels: null, threads: null, members: null, doingHistoricalIndex: null, documentsIndexed: null };
+          const obj = { id: closure_1_1(tmp), analyticsId: body.analytics_id, totalResults: tmp2.total_results, cursor: null, messages: null, channels: null, threads: null, members: null, doingHistoricalIndex: null, documentsIndexed: null };
           if (null == cursor) {
             let tmp6 = cursor;
           } else {
             tmp6 = null;
-            const obj2 = outer2_1(outer2_2[3]);
+            const obj2 = closure_2_1(closure_2_2[3]);
           }
           obj[3] = tmp6;
           ({ messages: obj[4], channels } = tmp2);
@@ -109,49 +102,43 @@ export default {
         tmp2(obj);
       }
     }, () => {
-      let obj = outer1_1(outer1_2[2]);
+      let obj = closure_1_1(closure_1_2[2]);
       obj = { type: "SEARCH_MESSAGES_INDEXING", ids: mapped };
       obj.dispatch(obj);
     }, (error) => {
-      let obj = outer1_1(outer1_2[2]);
+      let obj = closure_1_1(closure_1_2[2]);
       obj = { type: "SEARCH_MESSAGES_FAILURE", ids: mapped, error };
       obj.dispatch(obj);
     });
     return true;
   },
   fetchMessages(arg0) {
-    let onFetchStart;
-    let pagination;
-    let searchContext;
-    let searchEverywhere;
-    let searchMode;
-    let searchQueryString;
     ({ searchContext, searchQueryString, onFetchStart } = arg0);
     let guildIdFromSearchContext;
     let searchContextId;
     ({ pagination, searchMode, searchEverywhere } = arg0);
-    let obj = guildIdFromSearchContext(11511);
+    let obj = guildIdFromSearchContext(11560);
     obj = {};
-    let obj2 = guildIdFromSearchContext(11511);
+    let obj2 = guildIdFromSearchContext(11560);
     const merged = Object.assign(obj2.getSearchQueryFromTokens(obj.tokenizeQuery(searchQueryString)));
     const tokenizeQueryResult = obj.tokenizeQuery(searchQueryString);
-    const merged1 = Object.assign(guildIdFromSearchContext(11511).searchModeToSearchQueryParams(searchMode));
+    const merged1 = Object.assign(guildIdFromSearchContext(11560).searchModeToSearchQueryParams(searchMode));
     obj.offset = pagination.offset;
-    const obj4 = guildIdFromSearchContext(11511);
-    guildIdFromSearchContext = guildIdFromSearchContext(11511).getGuildIdFromSearchContext(searchContext);
+    const obj4 = guildIdFromSearchContext(11560);
+    guildIdFromSearchContext = guildIdFromSearchContext(11560).getGuildIdFromSearchContext(searchContext);
     if (null != guildIdFromSearchContext) {
-      let tmpResult = tmp(11511);
+      let tmpResult = tmp(11560);
       tmpResult.setIncludeNSFW(obj, guildIdFromSearchContext);
     }
     if (searchEverywhere) {
       obj.search_everywhere = true;
     }
-    tmpResult = tmp(11511);
+    tmpResult = tmp(11560);
     searchContextId = tmpResult.getSearchContextId(searchContext);
-    const obj5 = guildIdFromSearchContext(11511);
+    const obj5 = guildIdFromSearchContext(11560);
     const tmp9 = searchContextId;
     obj = { id: searchContextId, searchType: searchContext.type, searchQuery: obj };
-    const obj8 = searchContextId(11522);
+    const obj8 = searchContextId(11571);
     if (onFetchStart != null) {
       obj2 = { searchContext: null, searchQueryString: null, searchQuery: null };
       obj2[0] = searchContext;
@@ -159,11 +146,11 @@ export default {
       obj2[2] = obj;
       onFetchStart(obj2);
     }
-    const obj1 = searchContextId(11522).create(obj);
+    obj1 = searchContextId(11571).create(obj);
     let items = [searchContextId];
     tmp9(709).dispatch({ type: "SEARCH_MESSAGES_START", ids: items });
     const response = obj1.fetch((analyticsId) => {
-      let obj = searchContextId(outer1_2[2]);
+      let obj = searchContextId(closure_1_2[2]);
       obj = { type: "SEARCH_MESSAGES_SUCCESS", guildId: guildIdFromSearchContext, data: null };
       obj = { id: searchContextId, analyticsId: analyticsId.body.analytics_id, totalResults: analyticsId.body.total_results, messages: analyticsId.body.messages, threads: null, members: null, doingHistoricalIndex: null, documentsIndexed: null, channels: null, cursor: null };
       let threads = analyticsId.body.threads;
@@ -188,43 +175,39 @@ export default {
       obj.dispatch(obj);
     }, () => {
       const items = [searchContextId];
-      searchContextId(outer1_2[2]).dispatch({ type: "SEARCH_MESSAGES_INDEXING", ids: items });
+      searchContextId(closure_1_2[2]).dispatch({ type: "SEARCH_MESSAGES_INDEXING", ids: items });
     }, (error) => {
-      let obj = searchContextId(outer1_2[2]);
+      let obj = searchContextId(closure_1_2[2]);
       obj = { type: "SEARCH_MESSAGES_FAILURE", ids: items, error };
       items = [searchContextId];
       obj.dispatch(obj);
     });
   },
   clearSearchRecentMessages() {
-    importDefault(709).dispatch({ type: "SEARCH_RECENT_MESSAGES_CLEAR" });
+    dispatcherDefault.dispatch({ type: "SEARCH_RECENT_MESSAGES_CLEAR" });
   },
   clearAllSearchMesssages() {
-    importDefault(709).dispatch({ type: "SEARCH_MESSAGES_CLEAR_ALL" });
+    dispatcherDefault.dispatch({ type: "SEARCH_MESSAGES_CLEAR_ALL" });
   },
   clearSearchMessages(id) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "SEARCH_MESSAGES_CLEAR", id };
     obj.dispatch(obj);
   },
   initializeAutocomplete(channelDetailsSearchContext) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "SEARCH_AUTOCOMPLETE_INITIALIZE", searchContext: channelDetailsSearchContext };
     obj.dispatch(obj);
   },
   updateAutocompleteQuery(arg0) {
-    let cursorScope;
-    let queryString;
-    let searchContext;
-    let tokens;
     ({ queryString, searchContext, tokens, cursorScope } = arg0);
     if (queryString.trim().length > 0) {
-      const FrecencyUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators = updateUserGuildSettings.FrecencyUserSettingsActionCreators;
       const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     }
-    importDefault(709).dispatch({ type: "SEARCH_AUTOCOMPLETE_QUERY_UPDATE", searchContext, tokens, cursorScope });
+    dispatcherDefault.dispatch({ type: "SEARCH_AUTOCOMPLETE_QUERY_UPDATE", searchContext, tokens, cursorScope });
   },
   markSearchTokensRefreshed() {
-    importDefault(709).dispatch({ type: "SEARCH_TOKENS_REFRESHED" });
+    dispatcherDefault.dispatch({ type: "SEARCH_TOKENS_REFRESHED" });
   }
 };

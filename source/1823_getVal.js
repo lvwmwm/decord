@@ -4,7 +4,9 @@
 // Dependencies: [1665]
 
 // Module 1823 (getVal)
-const require = arg1;
+import t from "t" /* 1665 */;
+
+require = arg1;
 const dependencyMap = arg6;
 let obj = { IDENTITY: "identity", CLAMP: "clamp", EXTEND: "extend" };
 function getVal(arg0, arg1, arg2, arg3, arg4, arg5) {
@@ -42,7 +44,7 @@ function validateType(str) {
         obj.extrapolateRight = str;
         return obj;
       } else {
-        const reanimatedError = new require(1665) /* t */.ReanimatedError("Unsupported value for \"interpolate\" \nSupported values: [\"extend\", \"clamp\", \"identity\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\n Valid example:\n        interpolate(value, [inputRange], [outputRange], \"clamp\")");
+        const reanimatedError = new t.ReanimatedError("Unsupported value for \"interpolate\" \nSupported values: [\"extend\", \"clamp\", \"identity\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\n Valid example:\n        interpolate(value, [inputRange], [outputRange], \"clamp\")");
         throw reanimatedError;
       }
       tmp15 = str === tmp.EXTEND || str === tmp.CLAMP || str === tmp.IDENTITY;
@@ -65,7 +67,7 @@ function validateType(str) {
         }
         const tmp3 = extrapolateLeft === tmp.EXTEND || extrapolateLeft === tmp.CLAMP || extrapolateLeft === tmp.IDENTITY;
       }
-      const reanimatedError1 = new require(1665) /* t */.ReanimatedError("Unsupported value for \"interpolate\" \nSupported values: [\"extend\", \"clamp\", \"identity\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\n Valid example:\n      interpolate(value, [inputRange], [outputRange], {\n        extrapolateLeft: Extrapolation.CLAMP,\n        extrapolateRight: Extrapolation.IDENTITY\n      }})");
+      const reanimatedError1 = new t.ReanimatedError("Unsupported value for \"interpolate\" \nSupported values: [\"extend\", \"clamp\", \"identity\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\n Valid example:\n      interpolate(value, [inputRange], [outputRange], {\n        extrapolateLeft: Extrapolation.CLAMP,\n        extrapolateRight: Extrapolation.IDENTITY\n      }})");
       throw reanimatedError1;
     }
   } else {
@@ -76,10 +78,6 @@ validateType.__closure = { Extrapolation: obj, isExtrapolate };
 validateType.__workletHash = 9722315466599;
 validateType.__initData = { code: "function validateType_Pnpm_interpolationTs3(type){const{Extrapolation,isExtrapolate}=this.__closure;const extrapolationConfig={extrapolateLeft:Extrapolation.EXTEND,extrapolateRight:Extrapolation.EXTEND};if(!type){return extrapolationConfig;}if(typeof type==='string'){if(!isExtrapolate(type)){throw new ReanimatedError(\"Unsupported value for \\\"interpolate\\\" \\nSupported values: [\\\"extend\\\", \\\"clamp\\\", \\\"identity\\\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\\n Valid example:\\n        interpolate(value, [inputRange], [outputRange], \\\"clamp\\\")\");}extrapolationConfig.extrapolateLeft=type;extrapolationConfig.extrapolateRight=type;return extrapolationConfig;}if(type.extrapolateLeft&&!isExtrapolate(type.extrapolateLeft)||type.extrapolateRight&&!isExtrapolate(type.extrapolateRight)){throw new ReanimatedError(\"Unsupported value for \\\"interpolate\\\" \\nSupported values: [\\\"extend\\\", \\\"clamp\\\", \\\"identity\\\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\\n Valid example:\\n      interpolate(value, [inputRange], [outputRange], {\\n        extrapolateLeft: Extrapolation.CLAMP,\\n        extrapolateRight: Extrapolation.IDENTITY\\n      }})\");}Object.assign(extrapolationConfig,type);return extrapolationConfig;}" };
 function internalInterpolate(arg0, arg1, extrapolateLeft) {
-  let leftEdgeInput;
-  let leftEdgeOutput;
-  let rightEdgeInput;
-  let rightEdgeOutput;
   ({ leftEdgeInput, rightEdgeInput, leftEdgeOutput, rightEdgeOutput } = arg1);
   if (rightEdgeInput - leftEdgeInput == 0) {
     return leftEdgeOutput;
@@ -135,7 +133,7 @@ internalInterpolate.__initData = { code: "function internalInterpolate_Pnpm_inte
 function interpolate(arg0, arg1, arg2, arg3) {
   if (arg1.length >= 2) {
     if (arg2.length >= 2) {
-      const obj = { leftEdgeInput: null, rightEdgeInput: null, leftEdgeOutput: null, rightEdgeOutput: null };
+      obj = { leftEdgeInput: null, rightEdgeInput: null, leftEdgeOutput: null, rightEdgeOutput: null };
       [obj[0], obj[1]] = arg1;
       [obj[2], obj[3]] = arg2;
       if (arg1.length > 2) {
@@ -161,7 +159,7 @@ function interpolate(arg0, arg1, arg2, arg3) {
       return internalInterpolate(arg0, obj, validateType(arg3));
     }
   }
-  const reanimatedError = new require(1665) /* t */.ReanimatedError("Interpolation input and output ranges should contain at least two values.");
+  const reanimatedError = new t.ReanimatedError("Interpolation input and output ranges should contain at least two values.");
   throw reanimatedError;
 }
 interpolate.__closure = { validateType, internalInterpolate };

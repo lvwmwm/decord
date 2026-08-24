@@ -1,25 +1,27 @@
 // Module ID: 1301
 // Function ID: 1302
 // Name: semanticColor
-// Dependencies: [1302, 500, 712, 4354, 1363, 2]
+// Dependencies: [1302, 500, 712, 4358, 1363, 2]
 // Exports: getThemedRippleConfig
 
 // Module 1301 (semanticColor)
-import handleThemeChange from "handleThemeChange";
-import set from "set";
-import { internal } from "Themes";
-import { internal as internal2 } from "Themes";
-import DCDDeviceManager from "DCDDeviceManager";
-import set from "Themes";
+import set2 from "set" /* 500 */;
+import ThemesDefault from "Themes" /* 712 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import closure_2 from "handleThemeChange" /* 1302 */;
+import set from "set" /* 500 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4358 */;
 
-const require = arg1;
+require = arg1;
 let num = 24;
 if (set.isAndroid()) {
   num = 32;
 }
-const semanticColor = internal.resolveSemanticColor(require("Themes").themes.DARK, require("Themes").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
-const semanticColor1 = internal2.resolveSemanticColor(require("Themes").themes.LIGHT, require("Themes").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
-DCDDeviceManager = DCDDeviceManager.getSystemVersionMajor();
+const internal = ThemesDefault.internal;
+const semanticColor = internal.resolveSemanticColor(ThemesDefault.themes.DARK, ThemesDefault.colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+const internal2 = ThemesDefault.internal;
+const semanticColor1 = internal2.resolveSemanticColor(ThemesDefault.themes.LIGHT, ThemesDefault.colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+const systemVersionMajor = DCDDeviceManager.getSystemVersionMajor();
 let frozen = Object.freeze({ foreground: true });
 let closure_6 = Object.freeze({});
 const map = new Map();
@@ -31,14 +33,9 @@ export const RIPPLE_LIGHT_COLOR = semanticColor1;
 export const ANDROID_FOREGROUND_RIPPLE = frozen;
 export const TitleStyleType = { DEFAULT: "default", ANDROID_NO_BORDER: "no_border", NO_BORDER_OR_MARGIN: "no_border_or_margin" };
 export const getThemedRippleConfig = function getThemedRippleConfig(arg0) {
-  let borderless;
-  let color;
-  let cornerRadius;
-  let foreground;
-  let radius;
   ({ radius, cornerRadius, color } = arg0);
   ({ foreground, borderless } = arg0);
-  let obj = require(500) /* set */;
+  let obj = set2;
   if (obj.isAndroid()) {
     if (null != color) {
       const sum = "" + color.toString() + cornerRadius + radius + tmp5;
@@ -59,8 +56,8 @@ export const getThemedRippleConfig = function getThemedRippleConfig(arg0) {
       }
       obj3 = map;
     } else {
-      require(1363) /* AccessibilityAnnouncer */.isThemeLight(theme.theme) ? semanticColor1 : semanticColor;
-      const tmpResult = require(1363) /* AccessibilityAnnouncer */;
+      AccessibilityAnnouncer.isThemeLight(theme.theme) ? semanticColor1 : semanticColor;
+      const tmpResult = AccessibilityAnnouncer;
     }
   } else {
     return closure_6;

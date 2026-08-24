@@ -1,15 +1,16 @@
-// Module ID: 8631
-// Function ID: 8632
+// Module ID: 8668
+// Function ID: 8669
 // Name: CountrySelectModal
-// Dependencies: [19, 21, 1236, 6314, 5260, 8632, 8629, 6548, 8653, 6312, 2]
+// Dependencies: [19, 21, 1236, 6345, 5265, 8669, 8666, 6579, 8690, 6343, 2]
 // Exports: default
 
-// Module 8631 (CountrySelectModal)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 8668 (CountrySelectModal)
+import NavigationStack from "NavigationStack" /* 6343 */;
+import closure_3 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("getSystemLocale").fileFinishedImporting("modules/verification/native/components/CountrySelectModal.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/verification/native/components/CountrySelectModal.tsx");
 
 export default function CountrySelectModal() {
   const screens = React.useMemo(() => {
@@ -17,14 +18,14 @@ export default function CountrySelectModal() {
     obj = { title: null, headerLeft: null, render: null };
     const intl = callback(1236).intl;
     obj[0] = intl.string(callback(1236).t.gzXECH);
-    obj[1] = callback(6314).getHeaderCloseButton(callback2(5260).pop);
+    obj[1] = callback(6345).getHeaderCloseButton(callback2(5265).pop);
     obj[2] = function render() {
       return callback2(callback(table[5]), {
         onClose() {
-          return callback(5260).pop();
+          return callback(5265).pop();
         },
         onCountrySelected(countryCode) {
-          return callback(8629).setCountryCode(countryCode);
+          return callback(8666).setCountryCode(countryCode);
         }
       });
     };
@@ -32,7 +33,7 @@ export default function CountrySelectModal() {
     return obj;
   }, []);
   const effect = React.useEffect(() => () => {
-    callback(6548).runAfterInteractions(callback(8653).setCountrySelectorClosed, 400);
+    callback(6579).runAfterInteractions(callback(8690).setCountrySelectorClosed, 400);
   }, []);
-  return jsx(require(6312) /* NavigationStack */.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
+  return jsx(NavigationStack.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
 };

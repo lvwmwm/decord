@@ -1,13 +1,14 @@
-// Module ID: 7166
-// Function ID: 7167
+// Module ID: 7204
+// Function ID: 7205
 // Name: experiment
-// Dependencies: [4286, 2]
+// Dependencies: [4290, 2]
 
-// Module 7166 (experiment)
-import createExperiment from "createExperiment";
+// Module 7204 (experiment)
+import set from "set" /* 2 */;
+import createExperiment from "createExperiment" /* 4290 */;
 
 const items = [{ id: 1, label: "Enabled", config: { tidaWebformEnabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "user", id: "2025-11_tida_webform", label: "Tida Webform", defaultConfig: { tidaWebformEnabled: false }, treatments: items });
-const result = require("set").fileFinishedImporting("modules/guild/TidaWebformExperiment.tsx");
+const result = set.fileFinishedImporting("modules/guild/TidaWebformExperiment.tsx");
 
 export default experiment;

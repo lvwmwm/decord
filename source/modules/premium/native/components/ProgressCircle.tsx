@@ -1,26 +1,25 @@
-// Module ID: 11760
-// Function ID: 11761
+// Module ID: 11809
+// Function ID: 11810
 // Name: renderCircle
-// Dependencies: [19, 17, 21, 4661, 4104, 712, 6571, 2]
+// Dependencies: [19, 17, 21, 4668, 4107, 712, 6607, 2]
 
-// Module 11760 (renderCircle)
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import { Component } from "noop";
-import importAllResult from "noop";
+// Module 11809 (renderCircle)
+import ThemesDefault from "Themes" /* 712 */;
+import inlineStyles from "inlineStyles" /* 6607 */;
+import inlineStylesDefault from "inlineStyles" /* 6607 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createLegacyClassComponentStyles({ progressCircle: { alignItems: "center", justifyContent: "center" }, circle: { position: "absolute", width: "100%", height: "100%" }, circleOverlay: { position: "relative", display: "flex", justifyContent: "center", alignItems: "center" } });
+const Component = importAllResult.Component;
 class ProgressCircle extends Component {
 }
 const prototype = ProgressCircle.prototype;
 prototype["renderCircle"] = function renderCircle() {
-  let size;
-  let strokeWidth;
   const props = this.props;
   ({ size, strokeWidth } = props);
   const result = (size - strokeWidth) / 2;
@@ -30,13 +29,10 @@ prototype["renderCircle"] = function renderCircle() {
   const tmp = callback2(this.context);
   obj[0] = "0 0 " + size + " " + size;
   obj[1] = tmp.circle;
-  obj = { fill: "none", cx: size / 2, cy: size / 2, r: result, strokeWidth, strokeLinecap: "round", transform: null, stroke: null, style: null };
-  obj[6] = "rotate(-90 " + size / 2 + " " + size / 2 + ")";
-  obj[7] = props.color;
+  obj = { fill: "none", cx: size / 2, cy: size / 2, r: result, strokeWidth, strokeLinecap: "round", transform: "rotate(-90 " + size / 2 + " " + size / 2 + ")", stroke: props.color, style: obj };
   obj = { strokeDasharray: result1, strokeDashoffset: (1 - bound / 100) * result1 };
-  obj[8] = obj;
-  obj[2] = callback(require(6571) /* inlineStyles */.Circle, obj);
-  return callback(importDefault(6571), obj);
+  obj[2] = callback(inlineStyles.Circle, obj);
+  return callback(inlineStylesDefault, obj);
 };
 prototype["render"] = function render() {
   const tmp = callback2(this.context);
@@ -57,8 +53,8 @@ prototype["render"] = function render() {
   return closure_5(View, obj);
 };
 ProgressCircle.contextType = require("ManaContext").ThemeContext;
-createCacheKey = { size: 20, strokeWidth: 0.9, color: require("Themes").unsafe_rawColors.GUILD_BOOSTING_PINK };
+createCacheKey = { size: 20, strokeWidth: 0.9, color: ThemesDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
 ProgressCircle.defaultProps = createCacheKey;
-let result = require("jsxProd").fileFinishedImporting("modules/premium/native/components/ProgressCircle.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/native/components/ProgressCircle.tsx");
 
 export default ProgressCircle;

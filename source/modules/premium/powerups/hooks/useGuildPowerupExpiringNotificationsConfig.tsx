@@ -1,20 +1,25 @@
-// Module ID: 11726
-// Function ID: 11727
+// Module ID: 11775
+// Function ID: 11776
 // Name: useGuildPowerupExpiringNotificationsConfig
-// Dependencies: [11727, 11728, 1236, 2757, 4265, 2367, 2]
+// Dependencies: [11776, 11777, 1236, 2758, 4269, 2368, 2]
 // Exports: default
 
-// Module 11726 (useGuildPowerupExpiringNotificationsConfig)
-const result = require("getSystemLocale").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupExpiringNotificationsConfig.tsx");
+// Module 11775 (useGuildPowerupExpiringNotificationsConfig)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 11776 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 11777 */;
+
+const result = set.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupExpiringNotificationsConfig.tsx");
 
 export default function useGuildPowerupExpiringNotificationsConfig(arg0) {
-  let arr = importDefault(11727)(arg0);
-  const arr2 = importDefault(11728)(arg0);
+  let arr = useGetExpiringGuildPowerupsDefault(arg0);
+  const arr2 = useGameServerGetExpiringEntitlementsDefault(arg0);
   if (arr.length > 0 || arr2.length > 0) {
     let stringResult;
     if (arr2.length > 0) {
-      const intl = require(1236) /* getSystemLocale */.intl;
-      stringResult = intl.string(tmp(2757)["B3OfL/"]);
+      const intl = getSystemLocale.intl;
+      stringResult = intl.string(tmp(2758)["B3OfL/"]);
     }
     const items = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(arr.map((title) => title.title), 0);
@@ -27,12 +32,12 @@ export default function useGuildPowerupExpiringNotificationsConfig(arg0) {
     arraySpreadResult = HermesBuiltin.arraySpread(items2, arraySpreadResult);
     const items3 = [];
     if (arr.some((skuId) => skuId.skuId === callback(table[4]).VANITY_URL_POWERUP_SKU_ID)) {
-      const intl2 = require(1236) /* getSystemLocale */.intl;
-      arr = items3.push(intl2.string(tmp(2367).Sfr0Jw));
+      const intl2 = getSystemLocale.intl;
+      arr = items3.push(intl2.string(tmp(2368).Sfr0Jw));
     }
     if (arr2.length > 0) {
-      const intl3 = require(1236) /* getSystemLocale */.intl;
-      arr = items3.push(intl3.string(tmp(2757).wiungr));
+      const intl3 = getSystemLocale.intl;
+      arr = items3.push(intl3.string(tmp(2758).wiungr));
     }
     let obj = { shouldShow: null, expiringPowerups: null, expiringPowerupNames: null, warnings: null };
     obj[0] = tmp3;

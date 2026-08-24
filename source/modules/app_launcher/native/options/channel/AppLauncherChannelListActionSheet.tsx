@@ -1,19 +1,23 @@
-// Module ID: 11366
-// Function ID: 11367
+// Module ID: 11417
+// Function ID: 11418
 // Name: ChannelIcon
-// Dependencies: [32, 19, 1910, 21, 4661, 712, 6876, 6832, 11357, 6714, 4342, 11344, 11345, 4984, 6291, 4734, 2]
+// Dependencies: [32, 19, 1910, 21, 4668, 712, 6914, 6870, 11408, 6751, 4346, 11395, 11396, 4989, 6322, 4739, 2]
 // Exports: default
 
-// Module 11366 (ChannelIcon)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11417 (ChannelIcon)
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import computeChannelNameDefault from "computeChannelName" /* 4989 */;
+import TableRowInner from "TableRowInner" /* 6322 */;
+import TextIcon3 from "TextIcon" /* 6914 */;
+import stylesDefault from "styles" /* 11408 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 class ChannelIcon {
   constructor(arg0) {
     ({ channel, size } = global);
@@ -26,11 +30,11 @@ class ChannelIcon {
     }
     tmp2 = closure_0;
     tmp3 = closure_2;
-    tmp = jsx();
+    tmp = closure_9();
     TextIcon = require("TextIcon").TextIcon;
     if (null != channel) {
-      tmp4 = createGuildRecordFromRust;
-      guild = createGuildRecordFromRust.getGuild(channel.getGuildId());
+      tmp4 = closure_5;
+      guild = closure_5.getGuild(channel.getGuildId());
       tmp2Result = require("getChannelIcon");
       TextIcon2 = tmp2Result.getChannelIconComponentWithGuild(channel, guild);
       if (TextIcon2 == null) {
@@ -47,41 +51,31 @@ class ChannelIcon {
   }
 }
 function ChannelListItem(arg0) {
-  let channel;
-  let index;
-  let onPress;
-  let totalCount;
   ({ channel, index } = arg0);
   ({ totalCount, onPress } = arg0);
-  const obj = { onPress, label: null, icon: null, start: null, end: null };
-  obj[1] = callback(require(4734) /* Text */.Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: importDefault(4984)(channel) });
-  obj[2] = callback(ChannelIcon, { channel });
-  obj[3] = 0 === index;
-  obj[4] = index === totalCount - 1;
-  return callback(require(6291) /* TableRowInner */.TableRow, obj, channel.id);
+  const tmp = computeChannelNameDefault(channel);
+  return callback(TableRowInner.TableRow, { onPress, label: callback(Text.Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: computeChannelNameDefault(channel) }), icon: callback(ChannelIcon, { channel }), start: 0 === index, end: index === totalCount - 1 }, channel.id);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 const AppLauncherChannelListActionSheet = "AppLauncherChannelListActionSheet";
 createCacheKey = { channelIconWrapper: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/app_launcher/native/options/channel/AppLauncherChannelListActionSheet.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/options/channel/AppLauncherChannelListActionSheet.tsx");
 
 export default function AppLauncherChannelListActionSheet(channel) {
-  let onActionSheetDismiss;
-  let require;
   ({ onChannelPress: require, onActionSheetDismiss } = channel);
   channel = channel.channel;
   const option = channel.option;
   let first;
-  let createGuildRecordFromRust;
+  closure_5 = undefined;
   let ref;
   let first1;
-  let closure_8;
+  closure_8 = undefined;
   const tmp = option(first.useState(""), 2);
   first = tmp[0];
-  createGuildRecordFromRust = tmp[1];
+  closure_5 = tmp[1];
   ref = first.useRef(null);
   const tmp4 = option(first.useState([]), 2);
   first1 = tmp4[0];
@@ -111,14 +105,14 @@ export default function AppLauncherChannelListActionSheet(channel) {
     obj[1] = first1;
     obj[2] = function renderItem(index) {
       const item = index.item;
-      return ref(outer1_11, {
+      return ref(closure_1_11, {
         channel: item,
         index: index.index,
         totalCount: first1.length,
         onPress() {
           item({ channel: item });
-          outer1_1(outer1_2[10]).hideActionSheet(outer1_8);
-          outer1_1();
+          closure_1_1(closure_1_2[10]).hideActionSheet(closure_1_8);
+          closure_1_1();
         }
       });
     };

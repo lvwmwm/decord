@@ -1,16 +1,17 @@
-// Module ID: 8484
-// Function ID: 8485
+// Module ID: 8523
+// Function ID: 8524
 // Name: ForLaterFreemiumConfig
-// Dependencies: [8481, 1472, 38, 8485, 2]
+// Dependencies: [8520, 1472, 38, 8524, 2]
 // Exports: getForLaterLimit, hasForLaterAccess, isForLaterExperimentOn, isForLaterFreemiumExperimentOn, isForLaterLimitUpgradable, useForLaterLimit, useHasForLaterAccess, useIsForLaterExperimentOn, useIsForLaterLimitUpgradable
 
-// Module 8484 (ForLaterFreemiumConfig)
-import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
+// Module 8523 (ForLaterFreemiumConfig)
+import set from "set" /* 2 */;
+import _modDef38 from "module_38" /* 38 */;
+import hasForLaterPremiumType2 from "hasForLaterPremiumType" /* 8524 */;
+import hasForLaterPremiumTypeDefault from "hasForLaterPremiumType" /* 8524 */;
+import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 8520 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
-let c3;
-let c4;
 ({ SAVED_BOOKMARKS_MAX: c3, SAVED_REMINDERS_MAX: c4 } = SAVED_BOOKMARKS_MAX);
 let obj = { 1: null, 2: { enabled: true } };
 obj[2] = { enabled: true };
@@ -27,8 +28,8 @@ class ForLaterFreemiumConfig {
 }
 obj = { name: "2026-07-message-bookmarks-v2", kind: "user", defaultConfig: null, variations: null };
 const obj1 = Object.create(ForLaterFreemiumConfig.prototype);
-require("module_38")(true, "Config is missing bookmark limit");
-require("module_38")(true, "Config is missing reminder limit");
+_modDef38(true, "Config is missing bookmark limit");
+_modDef38(true, "Config is missing reminder limit");
 obj1.enabled = false;
 obj1.bookmarkLimit = 0;
 obj1.reminderLimit = 0;
@@ -41,8 +42,8 @@ const obj2 = {
       HermesBuiltin.throwTypeError();
     }
     const obj = Object.create(ForLaterFreemiumConfig.prototype);
-    importDefault(38)(null != parsed.b, "Config is missing bookmark limit");
-    importDefault(38)(null != parsed.r, "Config is missing reminder limit");
+    _modDef38(null != parsed.b, "Config is missing bookmark limit");
+    _modDef38(null != parsed.r, "Config is missing reminder limit");
     obj.enabled = true;
     ({ b: tmp3.bookmarkLimit, r: tmp3.reminderLimit } = parsed);
     return obj;
@@ -54,15 +55,15 @@ obj2[2] = (arg0) => {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(ForLaterFreemiumConfig.prototype);
-  importDefault(38)(null != parsed.b, "Config is missing bookmark limit");
-  importDefault(38)(null != parsed.r, "Config is missing reminder limit");
+  _modDef38(null != parsed.b, "Config is missing bookmark limit");
+  _modDef38(null != parsed.r, "Config is missing reminder limit");
   obj.enabled = true;
   ({ b: tmp3.bookmarkLimit, r: tmp3.reminderLimit } = parsed);
   return obj;
 };
 obj[3] = obj2;
 let closure_7 = ApexExperiment.createApexExperiment(obj);
-const result = require("module_38").fileFinishedImporting("modules/saved_messages/ForLaterExperiment.tsx");
+const result = set.fileFinishedImporting("modules/saved_messages/ForLaterExperiment.tsx");
 
 export const useIsForLaterExperimentOn = function useIsForLaterExperimentOn(LongPressMessageActionSheet) {
   let obj = { location: LongPressMessageActionSheet };
@@ -93,7 +94,7 @@ export const useHasForLaterAccess = function useHasForLaterAccess(ForLaterOpenAc
   if (!enabled) {
     let enabled1 = store.useConfig(obj).enabled;
     if (enabled1) {
-      enabled1 = importDefault(8485)();
+      enabled1 = hasForLaterPremiumTypeDefault();
     }
     enabled = enabled1;
   }
@@ -106,7 +107,7 @@ export const hasForLaterAccess = function hasForLaterAccess(addOrUpdateSavedMess
   if (!enabled) {
     let enabled1 = store.getConfig(obj).enabled;
     if (enabled1) {
-      enabled1 = importDefault(8485)();
+      enabled1 = hasForLaterPremiumTypeDefault();
     }
     enabled = enabled1;
   }
@@ -116,7 +117,7 @@ export const getForLaterLimit = function getForLaterLimit(addOrUpdateSavedMessag
   let obj = { location: addOrUpdateSavedMessage };
   const config = store2.getConfig(obj);
   obj = { location: addOrUpdateSavedMessage };
-  const tmp2 = importDefault(8485)();
+  const tmp2 = hasForLaterPremiumTypeDefault();
   if (!config.enabled) {
     let num = 0;
     if (store.getConfig(obj).enabled) {
@@ -130,7 +131,7 @@ export const useForLaterLimit = function useForLaterLimit(ForLaterScreen, arg1) 
   const config = store2.useConfig(obj);
   obj = { location: ForLaterScreen };
   const config1 = store.useConfig(obj);
-  const hasForLaterPremiumType = require(8485) /* hasForLaterPremiumType */.useHasForLaterPremiumType();
+  const hasForLaterPremiumType = hasForLaterPremiumType2.useHasForLaterPremiumType();
   if (!config.enabled) {
     let num = 0;
     if (tmp4) {
@@ -142,7 +143,7 @@ export const useForLaterLimit = function useForLaterLimit(ForLaterScreen, arg1) 
 export const isForLaterLimitUpgradable = function isForLaterLimitUpgradable(addOrUpdateSavedMessage) {
   let enabled = store2.getConfig({ location: addOrUpdateSavedMessage }).enabled;
   if (enabled) {
-    enabled = !importDefault(8485)();
+    enabled = !hasForLaterPremiumTypeDefault();
   }
   return enabled;
 };

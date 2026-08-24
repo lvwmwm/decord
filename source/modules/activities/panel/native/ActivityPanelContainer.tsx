@@ -1,18 +1,21 @@
-// Module ID: 16225
-// Function ID: 16226
-// Dependencies: [19, 1391, 1979, 1390, 21, 589, 4011, 692, 16226, 16235, 2]
+// Module ID: 16322
+// Function ID: 16323
+// Dependencies: [19, 1391, 1980, 1390, 21, 589, 4014, 692, 16323, 16332, 2]
 
-// Module 16225
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import participantFromServer from "participantFromServer";
-import { jsx } from "jsxProd";
-import importAllResult from "noop";
+// Module 16322
+import initialize from "initialize" /* 589 */;
+import BaseActivityPanelControllerDefault from "BaseActivityPanelController" /* 16323 */;
+import renderActivityOrPIPDefault from "renderActivityOrPIP" /* 16332 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "participantFromServer" /* 1390 */;
+import { jsx } from "jsxProd" /* 21 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
-const memoResult = require("noop").memo(function ActivityPanelContainer() {
-  let obj = require(589) /* initialize */;
-  const items = [participantFromServer, ensureGuildLoaded, handleConnectionOpen];
+require = arg1;
+const memoResult = importAllResult.memo(function ActivityPanelContainer() {
+  let obj = initialize;
+  const items = [closure_5, closure_3, closure_4];
   let tmp2 = null;
   if (obj.useStateFromStores(items, () => {
     connectedActivityLocation = connectedActivityLocation.getConnectedActivityLocation();
@@ -48,12 +51,12 @@ const memoResult = require("noop").memo(function ActivityPanelContainer() {
     }
   }, [])) {
     obj = { children: null };
-    obj[0] = jsx(importDefault(16235), {});
-    tmp2 = jsx(importDefault(16226), { children: null });
-    const tmp5 = importDefault(16226);
+    obj[0] = jsx(renderActivityOrPIPDefault, {});
+    tmp2 = jsx(BaseActivityPanelControllerDefault, { children: null });
+    const tmp5 = BaseActivityPanelControllerDefault;
   }
   return tmp2;
 });
-const result = require("handleConnectionOpen").fileFinishedImporting("modules/activities/panel/native/ActivityPanelContainer.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/panel/native/ActivityPanelContainer.tsx");
 
 export default memoResult;

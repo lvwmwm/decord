@@ -4,23 +4,27 @@
 // Dependencies: [547, 548, 550]
 
 // Module 546 (getProto)
-if (require("getPrototypeOf")) {
+import getPrototypeOf from "getPrototypeOf" /* 547 */;
+import _mod548 from "module_548" /* 548 */;
+import _mod550 from "module_550" /* 550 */;
+
+if (getPrototypeOf) {
   function getProto(arg0) {
-    return require(547) /* getPrototypeOf */(arg0);
+    return getPrototypeOf(arg0);
   }
-} else if (require("module_548")) {
+} else if (_mod548) {
   getProto = function getProto(obj) {
     if (obj) {
-      return require(548)(obj);
+      return _mod548(obj);
     }
     const typeError = new TypeError("getProto: not an object");
     throw typeError;
   };
 } else {
   getProto = null;
-  if (require("module_550")) {
+  if (_mod550) {
     getProto = function getProto(arg0) {
-      return require(550)(arg0);
+      return _mod550(arg0);
     };
   }
 }

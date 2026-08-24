@@ -1,45 +1,51 @@
-// Module ID: 14797
-// Function ID: 14798
+// Module ID: 14861
+// Function ID: 14862
 // Name: toggle
-// Dependencies: [8198, 10669, 1236, 4066, 14798, 500, 2]
+// Dependencies: [8238, 10708, 1236, 4069, 14862, 500, 2]
 
-// Module 14797 (toggle)
-import createToggle from "createToggle";
+// Module 14861 (toggle)
+import set from "set" /* 2 */;
+import set2 from "set" /* 500 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import apexExperimentDefault from "apexExperiment" /* 14862 */;
+import createToggle from "createToggle" /* 10708 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.V6D0wU);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.V6D0wU);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").NativePhoneIntegrationEnabled.useSetting,
-  onValueChange: require("explicitContentFromProto").NativePhoneIntegrationEnabled.updateSetting,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.NativePhoneIntegrationEnabled.useSetting,
+  onValueChange: explicitContentFromProto.NativePhoneIntegrationEnabled.updateSetting,
   usePredicate() {
-    let enabled = importDefault(14798).useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
+    let enabled = apexExperimentDefault.useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
     if (enabled) {
-      enabled = require(500) /* set */.isIOS();
-      const obj2 = require(500) /* set */;
+      enabled = set2.isIOS();
+      const obj2 = set2;
     }
     return enabled;
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.V6D0wU);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.V6D0wU);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
-  useValue: require("explicitContentFromProto").NativePhoneIntegrationEnabled.useSetting,
-  onValueChange: require("explicitContentFromProto").NativePhoneIntegrationEnabled.updateSetting,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
+  useValue: explicitContentFromProto.NativePhoneIntegrationEnabled.useSetting,
+  onValueChange: explicitContentFromProto.NativePhoneIntegrationEnabled.updateSetting,
   usePredicate() {
-    let enabled = importDefault(14798).useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
+    let enabled = apexExperimentDefault.useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
     if (enabled) {
-      enabled = require(500) /* set */.isIOS();
-      const obj2 = require(500) /* set */;
+      enabled = set2.isIOS();
+      const obj2 = set2;
     }
     return enabled;
   }
 };
-const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/IOSNativePhoneIntegrationSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/IOSNativePhoneIntegrationSetting.tsx");
 
 export default toggle;

@@ -1,24 +1,23 @@
-// Module ID: 8498
-// Function ID: 8499
+// Module ID: 8537
+// Function ID: 8538
 // Name: DEFAULT_BADGE_SIZE
-// Dependencies: [19, 17, 21, 4661, 712, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 2]
 
-// Module 8498 (DEFAULT_BADGE_SIZE)
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 8537 (DEFAULT_BADGE_SIZE)
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 let obj = { badge: null, badgeClassic: null, mask: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
 obj[0] = obj;
-createCacheKey = { backgroundColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+createCacheKey = { backgroundColor: ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj[1] = createCacheKey;
 obj[2] = { alignItems: "center", justifyContent: "center" };
 let closure_2 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(function Badge(size) {
-  let badgeStyle;
-  let style;
+const memoResult = importAllResult.memo(function Badge(size) {
   let num = size.size;
   if (num === undefined) {
     num = 12;
@@ -49,7 +48,7 @@ const memoResult = require("noop").memo(function Badge(size) {
   items1 = [flag ? tmp.badgeClassic : tmp.badge, { height: num, width: num, borderRadius: num / 2 }, badgeStyle];
   return <View style={items}>{tmp4(tmp5, { style: items1 })}</View>;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/Badge.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/Badge.tsx");
 
 export default memoResult;
 export const DEFAULT_BADGE_SIZE = 12;

@@ -1,30 +1,26 @@
-// Module ID: 12093
-// Function ID: 12094
+// Module ID: 12145
+// Function ID: 12146
 // Name: UserProfileTextButtonGroup
-// Dependencies: [19, 17, 7186, 21, 4661, 1494, 2]
+// Dependencies: [19, 17, 7224, 21, 4668, 1494, 2]
 // Exports: default
 
-// Module 12093 (UserProfileTextButtonGroup)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12145 (UserProfileTextButtonGroup)
+import noopAll from "noop" /* 19 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ container: { flexDirection: "row", flexWrap: "wrap", gap: 12 }, buttonArea: { flexGrow: 1 } });
-let result = require("ARBITRARY_LARGE_OFFSET").fileFinishedImporting("modules/user_profile/native/UserProfileTextButtonGroup.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileTextButtonGroup.tsx");
 
 export default function UserProfileTextButtonGroup(arg0) {
-  let maxWidth;
-  let primaryButton;
-  let secondaryButton;
-  let style;
   ({ primaryButton, secondaryButton, maxWidth, style } = arg0);
   let items = callback3();
-  const width = importDefault(1494)().width;
+  const width = useWindowDimensionsDefault().width;
   let bound = width;
   if (null != maxWidth) {
     const _Math = Math;
@@ -55,7 +51,7 @@ export default function UserProfileTextButtonGroup(arg0) {
     obj = { style: null, children: null };
     const items2 = [items.container, style];
     obj[0] = items2;
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     const items3 = [items.buttonArea, ];
     const obj2 = { minWidth: null };
     obj2[0] = result;

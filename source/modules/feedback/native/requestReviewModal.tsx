@@ -1,12 +1,13 @@
-// Module ID: 13247
-// Function ID: 13248
+// Module ID: 13302
+// Function ID: 13303
 // Name: _showAndroidRatingRequest
-// Dependencies: [5, 17, 3, 13248, 500, 2]
+// Dependencies: [5, 17, 3, 13303, 500, 2]
 // Exports: default
 
-// Module 13247 (_showAndroidRatingRequest)
-import set from "set";
-import { NativeModules } from "get ActivityIndicator";
+// Module 13302 (_showAndroidRatingRequest)
+import timestampDefault from "timestamp" /* 3 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { NativeModules } from "get ActivityIndicator" /* 17 */;
 
 const require = arg1;
 function _showAndroidRatingRequest() {
@@ -23,7 +24,7 @@ function _showAndroidRatingRequest() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -38,19 +39,19 @@ function _showAndroidRatingRequest() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp3;
-            let closure_0 = tmp7;
-            let c3 = 1;
+            closure_1 = tmp3;
+            closure_0 = tmp7;
+            c3 = 1;
             const _HermesInternal2 = HermesInternal;
-            logger.info("Requesting Android rating (module linked: " + null != outer1_1(outer1_2[3]) + ")");
-            const obj8 = outer1_1(outer1_2[3]);
+            logger.info("Requesting Android rating (module linked: " + null != closure_1_1(closure_1_2[3]) + ")");
+            const obj8 = closure_1_1(closure_1_2[3]);
             let rating;
             if (obj8 != null) {
               rating = obj8.requestRating();
             }
             c4 = 2;
             logger = 1;
-            const obj1 = { value: null, done: false };
+            obj1 = { value: null, done: false };
             obj1[0] = rating;
             return obj1;
           }
@@ -94,7 +95,7 @@ function _showAndroidRatingRequest() {
       }
     }
   });
-  const _showAndroidRatingRequest = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -103,9 +104,9 @@ function _showAndroidRatingRequest() {
   }
   return applyArgumentsResult;
 }
-let c5 = new require("enforcing")("requestReviewModal");
-const tmp2 = new require("enforcing")("requestReviewModal");
-const result = require("timestamp").fileFinishedImporting("modules/feedback/native/requestReviewModal.tsx");
+let closure_5 = new timestampDefault("requestReviewModal");
+const tmp2 = new timestampDefault("requestReviewModal");
+const result = require("set").fileFinishedImporting("modules/feedback/native/requestReviewModal.tsx");
 
 export default function requestReviewModal() {
   if (obj.isAndroid()) {

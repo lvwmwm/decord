@@ -1,20 +1,24 @@
-// Module ID: 6291
-// Function ID: 6292
+// Module ID: 6322
+// Function ID: 6323
 // Name: TableRowInner
-// Dependencies: [19, 17, 21, 4661, 712, 1367, 6290, 4097, 6292, 6287, 6296, 6297, 6300, 4751, 500, 6301, 4734, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1367, 6321, 4100, 6323, 6318, 6327, 6328, 6331, 4756, 500, 6332, 4739, 2]
 
-// Module 6291 (TableRowInner)
-import noop from "noop";
-import get_ActivityIndicator from "set";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 6322 (TableRowInner)
+import set from "set" /* 500 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import map from "map" /* 4100 */;
+import getFontScale from "getFontScale" /* 4756 */;
+import context2 from "context" /* 6321 */;
+import PressableCard from "PressableCard" /* 6323 */;
+import TableRowTrailingText from "TableRowTrailingText" /* 6331 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 class TableRow {
   constructor(arg0) {
     ({ icon, disabled } = global);
@@ -32,7 +36,7 @@ class TableRow {
     tmp3 = closure_2;
     MobileVisualRefreshExperiment = require("useIsMobileVisualRefreshExperimentEnabled").MobileVisualRefreshExperiment;
     enabled = MobileVisualRefreshExperiment.useConfig({ location: "TableRow" }).enabled;
-    context = noop.useContext(require("context").TableRowGroupContext);
+    context = closure_3.useContext(require("context").TableRowGroupContext);
     tmp5 = !context;
     if (!context) {
       flag = true;
@@ -56,7 +60,7 @@ class TableRow {
     obj[5] = tmp5;
     obj[6] = onPress;
     obj[7] = disabled;
-    obj[8] = jsxs;
+    obj[8] = closure_9;
     merged1 = Object.assign(merged);
     obj.children = tmp7(TableRowInner, { height, label, subLabel, icon, trailing, arrow, disabled, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps, isRefreshEnabled: enabled });
     tmp7Result = tmp7(require("PressableCard").InternalCard, obj);
@@ -95,9 +99,9 @@ class TableRowInner {
     tmp2 = closure_2;
     ({ borderRadius, height } = global);
     tmp3 = require("useIsMobileVisualRefreshExperimentEnabled")("TableRowInner");
-    obj = noop;
+    obj = closure_3;
     tmp4 = undefined;
-    if (noop.isValidElement(trailing)) {
+    if (closure_3.isValidElement(trailing)) {
       tmp5 = closure_0;
       if (trailing.type === require("TableRowTrailingText").TableRowTrailingText) {
         tmp4 = trailing;
@@ -114,7 +118,7 @@ class TableRowInner {
       num = 1.5;
       tmp8 = fontScale > 1.5;
     }
-    tmp9 = f37431(true === disabled, null != tmp4, tmp8, tmp3);
+    tmp9 = closure_10(true === disabled, null != tmp4, tmp8, tmp3);
     tmp6Result = require("map");
     token = tmp6Result.useToken(require("Themes").modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
     tmp6Result1 = require("map");
@@ -221,14 +225,14 @@ class TableRowInner {
   }
 }
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);
-({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: closure_6, Fragment: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = { padding: 0 };
 let closure_10 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   let flag = arg3;
   if (arg3 === undefined) {
     flag = false;
   }
-  let obj = { padding: importDefault(712).modules.mobile.TABLE_ROW_PADDING, minHeight: importDefault(712).modules.mobile.TABLE_ROW_HEIGHT, flexDirection: "row", alignItems: "center", opacity: null, borderRadius: null };
+  let obj = { padding: ThemesDefault.modules.mobile.TABLE_ROW_PADDING, minHeight: ThemesDefault.modules.mobile.TABLE_ROW_HEIGHT, flexDirection: "row", alignItems: "center", opacity: null, borderRadius: null };
   let num = 1;
   if (arg0) {
     num = 0.5;
@@ -238,8 +242,7 @@ let closure_10 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   if (flag) {
     md = tmp(712).radii.md;
   }
-  obj = { row: obj, iconContainer: null, trailing: null, content: null, labels: null, trailingText: null, dragHandle: null };
-  obj[5] = md;
+  obj = { row: obj, iconContainer: null, trailing: null, content: null, labels: null, trailingText: md, dragHandle: null };
   obj = { minWidth: tmp(712).modules.mobile.TABLE_ROW_ICON_SIZE, marginEnd: tmp(712).modules.mobile.TABLE_ROW_PADDING, alignItems: "center", justifyContent: "center" };
   obj[1] = obj;
   obj[2] = { marginStart: 18 };
@@ -247,7 +250,7 @@ let closure_10 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   if (arg2) {
     str = "column";
   }
-  const obj1 = { flexShrink: 1, flexGrow: 1, flexDirection: str, alignItems: null, justifyContent: "space-between" };
+  obj1 = { flexShrink: 1, flexGrow: 1, flexDirection: str, alignItems: null, justifyContent: "space-between" };
   let str2 = "center";
   if (arg2) {
     str2 = "stretch";
@@ -290,7 +293,7 @@ let closure_10 = createCacheKey.createStyles((arg0, arg1, arg2) => {
 TableRow.Icon = require("TableRowIcon").TableRowIcon;
 TableRow.Arrow = require("TableRowArrow").TableRowArrow;
 TableRow.TrailingText = require("TableRowTrailingText").TableRowTrailingText;
-const result = require("jsxProd").fileFinishedImporting("design/components/TableRow/native/TableRow.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/TableRow/native/TableRow.native.tsx");
 
 export { TableRow };
 export { TableRowInner };

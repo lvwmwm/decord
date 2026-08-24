@@ -1,19 +1,24 @@
-// Module ID: 15646
-// Function ID: 15647
-// Dependencies: [19, 14450, 21, 4661, 712, 15647, 15648, 12108, 4230, 1236, 2]
+// Module ID: 15715
+// Function ID: 15716
+// Dependencies: [19, 14518, 21, 4668, 712, 15716, 15717, 12160, 4234, 1236, 2]
 
-// Module 15646
-import { YOU_BAR_BUTTON_ICON_SIZE } from "CONNECTION_BANNER_HEIGHT";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 15715
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import FlashIcon from "FlashIcon" /* 12160 */;
+import useICYMITabBadgeDefault from "useICYMITabBadge" /* 15716 */;
+import YouBarButtonIconDefault from "YouBarButtonIcon" /* 15717 */;
+import { YOU_BAR_BUTTON_ICON_SIZE } from "CONNECTION_BANNER_HEIGHT" /* 14518 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 let obj = { icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, badge: null };
-obj = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BRAND };
 obj[1] = obj;
 let closure_4 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(function YouBarICYMIButton(hasNameplate) {
+const memoResult = importAllResult.memo(function YouBarICYMIButton(hasNameplate) {
   hasNameplate = hasNameplate.hasNameplate;
   const tmp = callback();
   let obj = { hasNameplate, icon: null, hasBadge: null, badgeStyle: null, onPress: null, accessibilityLabel: null };
@@ -23,8 +28,8 @@ const memoResult = require("noop").memo(function YouBarICYMIButton(hasNameplate)
     str = "white";
   }
   obj[2] = str;
-  obj[1] = jsx(require(12108) /* FlashIcon */.FlashIcon, { size: "custom", style: tmp.icon, color: null });
-  obj[2] = importDefault(15647)().showDot;
+  obj[1] = jsx(FlashIcon.FlashIcon, { size: "custom", style: tmp.icon, color: null });
+  obj[2] = useICYMITabBadgeDefault().showDot;
   obj[3] = tmp.badge;
   obj[4] = function onPress() {
     let obj = callback(table[8]);
@@ -36,9 +41,9 @@ const memoResult = require("noop").memo(function YouBarICYMIButton(hasNameplate)
     }
   };
   const intl = tmp5(1236).intl;
-  obj[5] = intl.string(require(1236) /* getSystemLocale */.t["jnXV/V"]);
-  return jsx(importDefault(15648), { size: "custom", style: tmp.icon, color: null });
+  obj[5] = intl.string(getSystemLocale.t["jnXV/V"]);
+  return jsx(YouBarButtonIconDefault, { size: "custom", style: tmp.icon, color: null });
 });
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarICYMIButton.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarICYMIButton.tsx");
 
 export default memoResult;

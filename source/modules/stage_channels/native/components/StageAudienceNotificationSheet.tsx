@@ -1,107 +1,112 @@
-// Module ID: 8080
-// Function ID: 8081
+// Module ID: 8119
+// Function ID: 8120
 // Name: handleDismiss
-// Dependencies: [19, 17, 1396, 4978, 1397, 21, 4661, 712, 4342, 1297, 589, 8081, 5449, 8082, 4734, 1236, 8083, 8117, 8118, 8119, 8120, 4745, 2]
+// Dependencies: [19, 17, 1396, 4983, 1397, 21, 4668, 712, 4346, 1297, 589, 8120, 5454, 8121, 4739, 1236, 8122, 8156, 8157, 8158, 8159, 4750, 2]
 // Exports: default
 
-// Module 8080 (handleDismiss)
-import "registerAsset";
-import { View } from "registerAsset";
-import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
-import { STAGE_AUDIENCE_NOTICE_SHEET_KEY as closure_5 } from "MAX_STAGE_TOPIC_LENGTH";
-import { GuildScheduledEventPrivacyLevel as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH";
-import jsxProd from "Button";
-import createCacheKey from "createCacheKey";
+// Module 8119 (handleDismiss)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import preloadDefault from "preload" /* 5454 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 8120 */;
+import registerAssetDefault from "registerAsset" /* 8121 */;
+import registerAssetDefault2 from "registerAsset" /* 8156 */;
+import registerAssetDefault3 from "registerAsset" /* 8157 */;
+import registerAssetDefault4 from "registerAsset" /* 8158 */;
+import registerAssetDefault5 from "registerAsset" /* 8159 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
+import { STAGE_AUDIENCE_NOTICE_SHEET_KEY as closure_5 } from "MAX_STAGE_TOPIC_LENGTH" /* 4983 */;
+import { GuildScheduledEventPrivacyLevel as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function handleDismiss() {
-  importDefault(4342).hideActionSheet(closure_5);
+  ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet(closure_5);
 }
 function BulletIcon(source) {
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { style: tmp.headerBulletIconContainer, children: null };
-  obj = { source: source.source, size: null, style: null };
-  obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
-  obj[2] = tmp.headerBulletIconComponent;
-  obj[1] = callback(require(1297) /* Button */.Icon, obj);
+  obj = { source: source.source, size: Button.Icon.Sizes.MEDIUM, style: tmp.headerBulletIconComponent };
+  obj[1] = callback(Button.Icon, obj);
   return callback(View, obj);
 }
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+noopAll;
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: { padding: 16 }, header: { alignItems: "center", paddingVertical: 16 }, headerImage: {}, headerTitle: { marginTop: 16, marginBottom: 8 }, headerBulletIconContainer: null, headerBulletIconComponent: null, headerBulletList: null, headerBullet: null, startButton: null };
-createCacheKey = { alignItems: "center", justifyContent: "center", height: 40, width: 40, borderRadius: 20, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey = { alignItems: "center", justifyContent: "center", height: 40, width: 40, borderRadius: 20, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST };
 createCacheKey[4] = createCacheKey;
-createCacheKey[5] = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[5] = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 createCacheKey[6] = { flexDirection: "column", alignItems: "flex-start" };
 createCacheKey[7] = { lineHeight: 20 };
 createCacheKey[8] = { marginTop: 0 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
-const result = require("handleStageInstanceCreateOrUpdate").fileFinishedImporting("modules/stage_channels/native/components/StageAudienceNotificationSheet.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/components/StageAudienceNotificationSheet.tsx");
 
 export default function StageAudienceNotificationSheet(channelId) {
   channelId = channelId.channelId;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = channelId(589);
-  const items = [handleStageInstanceCreateOrUpdate];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getStageInstanceByChannel(channelId));
+  const items = [closure_4];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getStageInstanceByChannel(channelId));
   let privacy_level;
   if (stateFromStores != null) {
     privacy_level = stateFromStores.privacy_level;
   }
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.header, children: null };
-  const obj1 = { source: null, style: null };
+  obj1 = { source: null, style: null };
   const tmp7 = importDefault;
-  const tmp8 = importDefault(8081);
-  obj1[0] = importDefault(8082);
+  const tmp8 = ScrollHandlingActionSheetDefault;
+  obj1[0] = registerAssetDefault;
   obj1[1] = tmp.headerImage;
-  const items1 = [callback(importDefault(5449), obj1), , ];
+  const items1 = [callback(preloadDefault, obj1), , ];
   const obj2 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp2(1236).intl;
   obj2[4] = intl.string(channelId(1236).t.UVuXCs);
-  items1[1] = callback(channelId(4734).Text, obj2);
+  items1[1] = callback(channelId(4739).Text, obj2);
   const obj3 = { style: tmp.headerBulletList, children: null };
   const obj4 = { leading: null, label: null };
-  const obj5 = { source: null };
-  obj5[0] = importDefault(8117);
-  obj4[0] = callback(BulletIcon, obj5);
+  const tmp11 = preloadDefault;
+  obj4[0] = callback(BulletIcon, { source: registerAssetDefault2 });
   const obj6 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = tmp2(1236).intl;
   obj6[3] = intl2.string(channelId(1236).t.sBDfo6);
-  obj4[1] = callback(channelId(4734).Text, obj6);
-  const items2 = [callback(channelId(8083).FormRow, obj4), , , ];
+  obj4[1] = callback(channelId(4739).Text, obj6);
+  const items2 = [callback(channelId(8122).FormRow, obj4), , , ];
   const obj7 = { leading: null, label: null };
-  const obj8 = { source: null };
-  obj8[0] = importDefault(8118);
-  obj7[0] = callback(BulletIcon, obj8);
+  const obj5 = { source: registerAssetDefault2 };
+  const tmp12 = BulletIcon;
+  obj7[0] = callback(BulletIcon, { source: registerAssetDefault3 });
   const obj9 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl3 = tmp2(1236).intl;
   obj9[3] = intl3.string(channelId(1236).t.x58YtH);
-  obj7[1] = callback(channelId(4734).Text, obj9);
-  items2[1] = callback(channelId(8083).FormRow, obj7);
+  obj7[1] = callback(channelId(4739).Text, obj9);
+  items2[1] = callback(channelId(8122).FormRow, obj7);
   const obj10 = { leading: null, label: null };
-  const obj11 = { source: null };
-  obj11[0] = importDefault(8119);
-  obj10[0] = callback(BulletIcon, obj11);
+  const obj8 = { source: registerAssetDefault3 };
+  obj10[0] = callback(BulletIcon, { source: registerAssetDefault4 });
   const obj12 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl4 = tmp2(1236).intl;
   obj12[3] = intl4.string(channelId(1236).t.XtVqla);
-  obj10[1] = callback(channelId(4734).Text, obj12);
-  items2[2] = callback(channelId(8083).FormRow, obj10);
+  obj10[1] = callback(channelId(4739).Text, obj12);
+  items2[2] = callback(channelId(8122).FormRow, obj10);
   let tmp6Result = null;
   if (privacy_level === constants.PUBLIC) {
     const obj13 = { leading: null, label: null };
     const obj14 = { source: null };
-    obj14[0] = tmp7(8120);
-    obj13[0] = tmp6(BulletIcon, obj14);
+    obj14[0] = registerAssetDefault5;
+    obj13[0] = tmp6(tmp12, obj14);
     const obj15 = { style: null, variant: "text-md/medium", color: "text-default", children: null };
     obj15[0] = tmp.headerBullet;
     const intl6 = tmp2(1236).intl;
     obj15[3] = intl6.string(tmp2(1236).t.nDsbJg);
-    obj13[1] = tmp6(tmp2(4734).Text, obj15);
-    tmp6Result = tmp6(tmp2(8083).FormRow, obj13);
+    obj13[1] = tmp6(tmp2(4739).Text, obj15);
+    tmp6Result = tmp6(tmp2(8122).FormRow, obj13);
   }
   const obj16 = { children: null };
   items2[3] = tmp6Result;
@@ -114,7 +119,7 @@ export default function StageAudienceNotificationSheet(channelId) {
   const intl5 = tmp2(1236).intl;
   obj18[0] = intl5.string(channelId(1236).t.obLqZ8);
   obj18[1] = handleDismiss;
-  obj17[1] = callback(channelId(4745).Button, obj18);
+  obj17[1] = callback(channelId(4750).Button, obj18);
   items3[1] = callback(View, obj17);
   obj[1] = items3;
   obj16[0] = closure_8(View, obj);

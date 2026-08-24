@@ -1,28 +1,29 @@
-// Module ID: 12892
-// Function ID: 12893
+// Module ID: 12947
+// Function ID: 12948
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1922, 1924, 589, 9468, 4761, 8417, 2]
+// Dependencies: [1922, 1924, 589, 9505, 4766, 8456, 2]
 // Exports: useMaybeFetchTieredTenureBadgeData
 
-// Module 12892 (useMaybeFetchTieredTenureBadgeData)
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { PremiumTypes } from "GuildFeatures";
+// Module 12947 (useMaybeFetchTieredTenureBadgeData)
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4766 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
 const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useMaybeFetchTieredTenureBadgeData.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useMaybeFetchTieredTenureBadgeData.tsx");
 
 export const useMaybeFetchTieredTenureBadgeData = function useMaybeFetchTieredTenureBadgeData() {
-  const items = [mergeGuildAvatar];
+  const items = [closure_3];
   _require = _require(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = _require(589);
-  const importDefault = _require(9468).useIsPremiumSubscriber(PremiumTypes.TIER_2);
-  importDefault(4761)(() => {
+  importDefault = _require(9505).useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  useMountLayoutEffectDefault(() => {
     let id;
     if (closure_0 != null) {
       id = tmp.id;
     }
     if (tmp3) {
-      callback(outer1_2[5])(tmp.id);
+      callback(closure_1_2[5])(tmp.id);
     }
   });
 };

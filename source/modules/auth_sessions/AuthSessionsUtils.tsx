@@ -1,24 +1,26 @@
-// Module ID: 14092
-// Function ID: 14093
+// Module ID: 14160
+// Function ID: 14161
 // Name: useAuthSessions
-// Dependencies: [19, 1218, 14093, 589, 1236, 3975, 2]
+// Dependencies: [19, 1218, 14161, 589, 1236, 3978, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 14092 (useAuthSessions)
-import noop from "noop";
-import fetchFingerprint from "fetchFingerprint";
-import handleInit from "handleInit";
+// Module 14160 (useAuthSessions)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import tDefault from "t" /* 3978 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "handleInit" /* 14161 */;
 
-const require = arg1;
-const result = require("handleInit").fileFinishedImporting("modules/auth_sessions/AuthSessionsUtils.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/auth_sessions/AuthSessionsUtils.tsx");
 
 export const useAuthSessions = function useAuthSessions() {
-  const items = [handleInit];
+  const items = [closure_5];
   stateFromStoresObject = stateFromStoresObject(589).useStateFromStoresObject(items, () => sessions.getSessions());
   const items1 = [stateFromStoresObject];
   return React.useMemo(() => {
     const otherSessions = [...authSessionIdHash];
-    authSessionIdHash = outer1_4.getAuthSessionIdHash();
+    authSessionIdHash = closure_1_4.getAuthSessionIdHash();
     let currentSession = null;
     if (null != authSessionIdHash) {
       const findIndexResult = otherSessions.findIndex((id_hash) => id_hash.id_hash === authSessionIdHash);
@@ -38,11 +40,11 @@ export const useAuthSessions = function useAuthSessions() {
 export const formatDate = function formatDate(arg0) {
   const timestamp = Date.now();
   if ((timestamp - arg0.valueOf()) / 1000 / 60 / 60 < 1) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    let stringResult = intl.string(require(1236) /* getSystemLocale */.t.TXCmfL);
+    const intl = getSystemLocale.intl;
+    let stringResult = intl.string(getSystemLocale.t.TXCmfL);
   } else {
-    stringResult = importDefault(3975)(arg0).fromNow();
-    const obj = importDefault(3975)(arg0);
+    stringResult = tDefault(arg0).fromNow();
+    const obj = tDefault(arg0);
   }
   return stringResult;
 };

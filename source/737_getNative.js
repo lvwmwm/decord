@@ -4,11 +4,14 @@
 // Dependencies: [738, 739]
 
 // Module 737 (getNative)
+import getValue from "getValue" /* 738 */;
+import baseIsNative from "baseIsNative" /* 739 */;
+
 
 export default function getNative(arg0, arg1) {
-  const tmp = require(738) /* getValue */(arg0, arg1);
+  const tmp = getValue(arg0, arg1);
   let tmp2;
-  if (require(739) /* baseIsNative */(tmp)) {
+  if (baseIsNative(tmp)) {
     tmp2 = tmp;
   }
   return tmp2;

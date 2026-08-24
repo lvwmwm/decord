@@ -5,15 +5,16 @@
 // Exports: createReactNativeDocumentElementInstanceHandle, getNativeElementReferenceFromReactNativeDocumentElementInstanceHandle, getPublicInstanceFromReactNativeDocumentElementInstanceHandle, isReactNativeDocumentElementInstanceHandle, setNativeElementReferenceForReactNativeDocumentElementInstanceHandle, setPublicInstanceForReactNativeDocumentElementInstanceHandle
 
 // Module 138 (ReactNativeDocumentElementInstanceHandleImpl)
-import _classCallCheck from "_classCallCheck";
+import _createClassDefault from "_createClass" /* 42 */;
+import closure_0 from "_classCallCheck" /* 41 */;
 
 class ReactNativeDocumentElementInstanceHandleImpl {
   constructor() {
-    tmp = _classCallCheck(this, ReactNativeDocumentElementInstanceHandleImpl);
+    tmp = closure_0(this, ReactNativeDocumentElementInstanceHandleImpl);
     return;
   }
 }
-let closure_1 = require("_createClass")(ReactNativeDocumentElementInstanceHandleImpl);
+let closure_1 = _createClassDefault(ReactNativeDocumentElementInstanceHandleImpl);
 
 export const createReactNativeDocumentElementInstanceHandle = function createReactNativeDocumentElementInstanceHandle() {
   return new closure_1();

@@ -1,16 +1,17 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 10888
+// Function ID: 10889
 // Name: handleSelectedGuildChange
-// Dependencies: [4197, 589, 709, 2]
+// Dependencies: [4201, 589, 709, 2]
 
-// Module 10849 (handleSelectedGuildChange)
-import handleConnectionOpen from "handleConnectionOpen";
-import { PersistedStore } from "initialize";
+// Module 10888 (handleSelectedGuildChange)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "handleConnectionOpen" /* 4201 */;
 
 function handleSelectedGuildChange() {
   lastSelectedGuildId = lastSelectedGuildId.getLastSelectedGuildId();
   if (lastSelectedGuildId !== lastSelectedGuildId) {
-    let c2 = null;
+    c2 = null;
     if (lastSelectedGuildId == null) {
       lastSelectedGuildId = null;
     }
@@ -19,6 +20,7 @@ function handleSelectedGuildChange() {
 let c1 = null;
 let c2 = null;
 let closure_3 = { reportedMessages: {} };
+const PersistedStore = initializeDefault.PersistedStore;
 class ReportToModStore extends PersistedStore {
 }
 const prototype = ReportToModStore.prototype;
@@ -28,14 +30,12 @@ prototype["initialize"] = function initialize(reportedMessages) {
     const _Object2 = Object;
     const entries = Object.entries(reportedMessages.reportedMessages);
     closure_3.reportedMessages = Object.fromEntries(entries.map((arg0) => {
-      let tmp;
-      let tmp2;
       [tmp, tmp2] = arg0;
       const items = [tmp, new Set(tmp2)];
       return items;
     }));
   }
-  let items = [handleConnectionOpen];
+  let items = [closure_0];
   this.syncWith(items, handleSelectedGuildChange);
 };
 prototype["getState"] = function getState() {
@@ -79,7 +79,7 @@ let items = [
   }
 ];
 ReportToModStore.migrations = items;
-const reportToModStore = new ReportToModStore(require("dispatcher"), {
+const reportToModStore = new ReportToModStore(dispatcherDefault, {
   REPORT_TO_MOD_REPORT_MESSAGE_SUCCESS: function handleMessageReportSuccess(channelId) {
     channelId = channelId.channelId;
     if (null == closure_3.reportedMessages[channelId]) {
@@ -108,8 +108,6 @@ const reportToModStore = new ReportToModStore(require("dispatcher"), {
     }
   },
   GUILD_SETTINGS_LOADED_BANS_BATCH: function handleGuildBansLoaded(guildId) {
-    let bans;
-    let userIds;
     ({ bans, userIds } = guildId);
     let set;
     if (guildId.guildId === c1) {
@@ -145,11 +143,11 @@ const reportToModStore = new ReportToModStore(require("dispatcher"), {
     }
   },
   LOGOUT: function handleLogout() {
-    let c1 = null;
-    let c2 = null;
+    c1 = null;
+    c2 = null;
     closure_3.reportedMessages = {};
   }
 });
-let result = require("dispatcher").fileFinishedImporting("modules/report_to_mod/ReportToModStore.tsx");
+let result = require("set").fileFinishedImporting("modules/report_to_mod/ReportToModStore.tsx");
 
 export default reportToModStore;

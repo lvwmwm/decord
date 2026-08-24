@@ -1,20 +1,20 @@
-// Module ID: 15944
-// Function ID: 15945
+// Module ID: 16041
+// Function ID: 16042
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
-// Dependencies: [19, 8507, 11531, 2]
+// Dependencies: [19, 8546, 11580, 2]
 // Exports: useAutoTrackSearchTabCountsViewedAnalytics
 
-// Module 15944 (useAutoTrackSearchTabCountsViewedAnalytics)
-import noop from "noop";
-import { SearchTabs } from "MessageEmbedTypes";
+// Module 16041 (useAutoTrackSearchTabCountsViewedAnalytics)
+import closure_2 from "noop" /* 19 */;
+import { SearchTabs } from "MessageEmbedTypes" /* 8546 */;
 
-let result = require("module_11531").fileFinishedImporting("modules/search/native/hooks/useAutoTrackSearchTabCountsViewedAnalytics.tsx");
+let result = require("set").fileFinishedImporting("modules/search/native/hooks/useAutoTrackSearchTabCountsViewedAnalytics.tsx");
 
 export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackSearchTabCountsViewedAnalytics(searchContext) {
   searchContext = searchContext.searchContext;
   const visibleTabCounts = searchContext.visibleTabCounts;
   const visibleTabs = searchContext.visibleTabs;
-  let closure_3;
+  closure_3 = undefined;
   closure_3 = visibleTabs.useRef(visibleTabs);
   const items = [visibleTabs];
   const effect = visibleTabs.useEffect(() => {

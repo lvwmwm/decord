@@ -1,24 +1,21 @@
-// Module ID: 12421
-// Function ID: 12422
+// Module ID: 12473
+// Function ID: 12474
 // Name: useUrlParts
-// Dependencies: [32, 19, 8778, 2]
+// Dependencies: [32, 19, 8815, 2]
 // Exports: useModalState, useUrlParts
 
-// Module 12421 (useUrlParts)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 12473 (useUrlParts)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("getHostname").fileFinishedImporting("modules/masked_link/SharedStateUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/masked_link/SharedStateUtils.tsx");
 
 export const useUrlParts = function useUrlParts(url) {
-  let hostname;
-  let protocol;
-  let closure_0 = url;
+  closure_0 = url;
   const items = [url];
   const memo = React.useMemo(() => {
-    const obj = { protocol: null, hostname: null };
-    obj[0] = str(trustUrl[2]).getProtocol(str);
+    const obj = { protocol: str(trustUrl[2]).getProtocol(str), hostname: null };
     const obj2 = str(trustUrl[2]);
     obj[1] = str(trustUrl[2]).getHostname(str);
     return obj;
@@ -31,8 +28,6 @@ export const useUrlParts = function useUrlParts(url) {
   return { protocol, authorityPrefix: str, hostname, theRestOfTheUrl: url.replace("" + protocol + str + hostname, "") };
 };
 export const useModalState = function useModalState(url) {
-  let hostname;
-  let protocol;
   const str = url.url;
   const trustUrl = url.trustUrl;
   const onConfirm = url.onConfirm;
@@ -44,8 +39,7 @@ export const useModalState = function useModalState(url) {
   first = tmp[0];
   const items = [str];
   const memo = onCancel.useMemo(() => {
-    const obj = { protocol: null, hostname: null };
-    obj[0] = str(trustUrl[2]).getProtocol(str);
+    const obj = { protocol: str(trustUrl[2]).getProtocol(str), hostname: null };
     const obj2 = str(trustUrl[2]);
     obj[1] = str(trustUrl[2]).getHostname(str);
     return obj;

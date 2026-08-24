@@ -1,37 +1,35 @@
-// Module ID: 4723
-// Function ID: 4724
+// Module ID: 4728
+// Function ID: 4729
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 4661, 712, 1236, 4104, 1629, 4115, 4724, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1236, 4107, 1629, 4119, 4729, 2]
 // Exports: Backdrop
 
-// Module 4723 (Backdrop)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 4728 (Backdrop)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import ManaContext from "ManaContext" /* 4107 */;
+import _modDef4119 from "module_4119" /* 4119 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c3;
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ Pressable: c3, StyleSheet } = get_ActivityIndicator);
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = {};
 createCacheKey = { fill: StyleSheet.absoluteFillObject, backdrop: null, backdropOpaque: null, accessibilityDismiss: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SCRIM };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SCRIM };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { backgroundColor: require("Themes").colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };
+createCacheKey[2] = { backgroundColor: ThemesDefault.colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };
 createCacheKey[3] = { position: "absolute", top: 0, left: 0, right: 0, height: 16 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { backgroundColor: require("Themes").colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };
-const result = require("jsxProd").fileFinishedImporting("design/components/Backdrop/native/Backdrop.native.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { backgroundColor: ThemesDefault.colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };
+const result = require("set").fileFinishedImporting("design/components/Backdrop/native/Backdrop.native.tsx");
 
 export const Backdrop = function Backdrop(animatedProps) {
-  let accessibilityLabel;
-  let accessibleDismissStyle;
-  let onDismiss;
-  let style;
   animatedProps = animatedProps.animatedProps;
   ({ style, accessibleDismissStyle } = animatedProps);
   if (animatedProps === undefined) {
@@ -47,20 +45,20 @@ export const Backdrop = function Backdrop(animatedProps) {
   }
   ({ onDismiss, accessibilityLabel } = animatedProps);
   if (accessibilityLabel === undefined) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    accessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.WAI6xu);
+    const intl = getSystemLocale.intl;
+    accessibilityLabel = intl.string(getSystemLocale.t.WAI6xu);
   }
-  let backgroundColor = createCacheKey();
-  let obj = require(4104) /* ManaContext */;
+  let backgroundColor = callback2();
+  let obj = ManaContext;
   obj = { onPress: onDismiss, "aria-hidden": true };
   obj = { style: items, pointerEvents: "box-none", animatedProps, children: null };
   items = [backgroundColor.fill, style];
   let tmp4 = null != onDismiss;
   if (tmp4) {
-    const obj1 = { style: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null, "aria-hidden": null };
+    obj1 = { style: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null, "aria-hidden": null };
     const items1 = [backgroundColor.accessibilityDismiss, , ];
     const obj2 = { top: null };
-    obj2[0] = importDefault(1629)().top;
+    obj2[0] = useSafeAreaInsetsDefault().top;
     items1[1] = obj2;
     items1[2] = accessibleDismissStyle;
     obj1[0] = items1;
@@ -95,6 +93,6 @@ export const Backdrop = function Backdrop(animatedProps) {
     obj5.style = items3;
     items2[1] = tmp7(tmp8, obj5);
     obj[3] = items2;
-    return closure_5(importDefault(4115).View, obj);
+    return closure_5(_modDef4119.View, obj);
   }
 };

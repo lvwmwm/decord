@@ -1,14 +1,15 @@
-// Module ID: 12900
-// Function ID: 12901
+// Module ID: 12955
+// Function ID: 12956
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: getBogoPromotionGateEnabled, useBogoPromotionGateEnabled
 
-// Module 12900 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 12955 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-bogo-promotion-gate-v2", kind: "user", defaultConfig: false, variations: { 1: true } });
-const result = require("set").fileFinishedImporting("modules/premium/experiments/BogoPromotionExperiment.tsx");
+const result = set.fileFinishedImporting("modules/premium/experiments/BogoPromotionExperiment.tsx");
 
 export default apexExperiment;
 export const useBogoPromotionGateEnabled = function useBogoPromotionGateEnabled(location) {

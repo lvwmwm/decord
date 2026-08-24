@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 1309 (parts)
-import charCodeAtResult from "module_0";
+import charCodeAtResult from "module_0" /* 0 */;
 
 let length;
 arg5.base64decode = undefined;

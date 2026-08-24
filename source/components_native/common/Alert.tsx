@@ -1,45 +1,50 @@
-// Module ID: 4763
-// Function ID: 4764
+// Module ID: 4768
+// Function ID: 4769
 // Name: componentDidMount
-// Dependencies: [19, 17, 21, 4661, 712, 1297, 4104, 4764, 4259, 4731, 4734, 1236, 4745, 5433, 9091, 1494, 8944, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1297, 4107, 4769, 4263, 4736, 4739, 1236, 4750, 5438, 9128, 1494, 8981, 2]
 // Exports: getAlertButtonVariant
 
-// Module 4763 (componentDidMount)
-import importAllResult from "noop";
-import get_ActivityIndicator from "set";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 4768 (componentDidMount)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import start from "start" /* 4263 */;
+import Text from "Text" /* 4739 */;
+import Button2 from "Button" /* 4750 */;
+import createRulesAll from "createRules" /* 4769 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import getIsScreenLandscape from "getIsScreenLandscape" /* 8981 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 9128 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let StyleSheet;
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-let require = arg1;
+require = arg1;
 let c4 = importAllResult;
 ({ View: c5, ScrollView: closure_6, StyleSheet } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
+({ jsx: error, jsxs: closure_8, Fragment: c9 } = jsxProd);
 let obj = { alert: null, titleText: null, divider: null, body: null, buttons: null, cancelButton: null, secondaryConfirm: null, gradient: null };
-obj = { borderRadius: require("Themes").radii.sm, padding: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj = { borderRadius: ThemesDefault.radii.sm, padding: 16, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 obj[0] = obj;
-createCacheKey = { marginBottom: 16, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey = { marginBottom: 16, color: ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj[1] = createCacheKey;
-obj[2] = { height: StyleSheet.hairlineWidth, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-let obj2 = { height: StyleSheet.hairlineWidth, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
-obj[3] = { marginTop: 16, color: require("Themes").colors.TEXT_STRONG };
+obj[2] = { height: StyleSheet.hairlineWidth, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+let obj2 = { height: StyleSheet.hairlineWidth, backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+obj[3] = { marginTop: 16, color: ThemesDefault.colors.TEXT_STRONG };
 obj[4] = { marginTop: 24 };
 obj[5] = { marginTop: 8 };
 obj[6] = { marginTop: 16, alignSelf: "center" };
-let obj3 = { marginTop: 16, color: require("Themes").colors.TEXT_STRONG };
-obj[7] = { borderRadius: require("Themes").radii.sm };
+let obj3 = { marginTop: 16, color: ThemesDefault.colors.TEXT_STRONG };
+obj[7] = { borderRadius: ThemesDefault.radii.sm };
 let closure_10 = createCacheKey.createLegacyClassComponentStyles(obj);
 const PureComponent = importAllResult.PureComponent;
 class Alert extends PureComponent {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
     closure_0 = applyArgumentsResult;
-    applyArgumentsResult.titleRef = __esModule.createRef();
+    applyArgumentsResult.titleRef = closure_4.createRef();
     applyArgumentsResult.state = { confirming: false };
     obj = require("createRules");
     applyArgumentsResult.renderContent = obj.getParser();
@@ -48,9 +53,6 @@ class Alert extends PureComponent {
     timeout1 = new require("start").Timeout();
     applyArgumentsResult.focusTimeout = timeout1;
     applyArgumentsResult.handleConfirm = function handleConfirm() {
-      let autoCloseOnConfirm;
-      let onClose;
-      let onConfirm;
       if (!applyArgumentsResult.state.confirming) {
         ({ onClose, onConfirm, autoCloseOnConfirm } = obj.props);
         obj.setState({ confirming: true });
@@ -69,8 +71,6 @@ class Alert extends PureComponent {
       }
     };
     applyArgumentsResult.handleCancel = function handleCancel() {
-      let onCancel;
-      let onClose;
       ({ onClose, onCancel } = applyArgumentsResult.props);
       if (onCancel != null) {
         onCancel();
@@ -80,8 +80,6 @@ class Alert extends PureComponent {
       }
     };
     applyArgumentsResult.handleSecondaryConfirm = function handleSecondaryConfirm() {
-      let onClose;
-      let onConfirmSecondary;
       ({ onClose, onConfirmSecondary } = applyArgumentsResult.props);
       if (onClose != null) {
         onClose();
@@ -101,7 +99,7 @@ prototype["componentDidMount"] = function componentDidMount() {
     setImmediate(() => {
       const focusTimeout = self.focusTimeout;
       focusTimeout.start(300, () => {
-        let obj = outer1_0(outer1_3[9]);
+        let obj = closure_1_0(closure_1_3[9]);
         obj = { ref: titleRef.titleRef };
         const result = obj.setAccessibilityFocus(obj);
       });
@@ -142,7 +140,7 @@ prototype["renderHeader"] = function renderHeader() {
       }
       obj = { children: null };
       obj[6] = renderContentResult;
-      const items = [closure_7(require(4734) /* Text */.Text, obj), ];
+      const items = [closure_7(Text.Text, obj), ];
       obj = { style: null };
       obj[0] = tmp.divider;
       items[1] = closure_7(closure_5, obj);
@@ -170,7 +168,7 @@ prototype["renderBody"] = function renderBody() {
       renderContentResult = self.renderContent(body);
     }
     obj[2] = renderContentResult;
-    obj[1] = closure_7(require(4734) /* Text */.Text, obj);
+    obj[1] = closure_7(Text.Text, obj);
     tmp5Result = tmp5(closure_6, obj);
     const tmp6 = closure_6;
   }
@@ -178,21 +176,13 @@ prototype["renderBody"] = function renderBody() {
   return closure_8(closure_9, { children });
 };
 prototype["renderButtons"] = function renderButtons() {
-  let cancelText;
-  let confirmColor;
-  let confirmText;
-  let isConfirmButtonDisabled;
-  let renderConfirmButton;
-  let renderConfirmIcon;
-  let renderConfirmRightIcon;
-  let secondaryConfirmText;
   const self = this;
   const tmp = callback3(this.context);
   const props = this.props;
   ({ cancelText, confirmText } = props);
   if (undefined === confirmText) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    confirmText = intl.string(require(1236) /* getSystemLocale */.t.BddRzS);
+    const intl = getSystemLocale.intl;
+    confirmText = intl.string(getSystemLocale.t.BddRzS);
   }
   ({ confirmColor, secondaryConfirmText, renderConfirmIcon, renderConfirmRightIcon, renderConfirmButton, isConfirmButtonDisabled } = props);
   let tmp15Result = null;
@@ -204,7 +194,7 @@ prototype["renderButtons"] = function renderButtons() {
       obj = { variant: "secondary", onPress: null, text: null };
       obj[1] = self.handleCancel;
       obj[2] = cancelText;
-      obj[1] = callback(require(4745) /* Button */.Button, obj);
+      obj[1] = callback(Button2.Button, obj);
       tmp6 = callback(closure_5, obj);
     }
     let tmp11;
@@ -212,10 +202,10 @@ prototype["renderButtons"] = function renderButtons() {
       obj = { accessibilityRole: "button", style: null, onPress: null, children: null };
       obj[1] = tmp.secondaryConfirm;
       obj[2] = self.handleSecondaryConfirm;
-      const obj1 = { variant: "text-sm/semibold", color: "text-link", children: null };
+      obj1 = { variant: "text-sm/semibold", color: "text-link", children: null };
       obj1[2] = secondaryConfirmText;
-      obj[3] = callback(require(4734) /* Text */.Text, obj1);
-      tmp11 = callback(require(5433) /* PressableBase */.PressableOpacity, obj);
+      obj[3] = callback(Text.Text, obj1);
+      tmp11 = callback(PressableBase.PressableOpacity, obj);
     }
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.buttons;
@@ -225,7 +215,7 @@ prototype["renderButtons"] = function renderButtons() {
     }
     if (renderConfirmButtonResult == null) {
       let str = "active";
-      if (require(1297) /* Button */.ButtonColors.GREEN !== confirmColor) {
+      if (Button.ButtonColors.GREEN !== confirmColor) {
         str = "destructive";
         if (tmp21(1297).ButtonColors.RED !== confirmColor) {
           str = "secondary";
@@ -273,7 +263,7 @@ prototype["renderButtons"] = function renderButtons() {
         str2 = str3;
       }
       obj3[6] = str2;
-      renderConfirmButtonResult = callback(require(4745) /* Button */.Button, obj3);
+      renderConfirmButtonResult = callback(Button2.Button, obj3);
       const tmp20 = callback;
     }
     const items = [renderConfirmButtonResult, tmp6, tmp11];
@@ -295,16 +285,13 @@ prototype["renderFooter"] = function renderFooter() {
   return tmp;
 };
 prototype["render"] = function render() {
-  let isLandscape;
-  let onClose;
-  let style;
   const tmp = callback3(this.context);
   const props = this.props;
   const width = props.width;
   let obj = { children: null };
   ({ style, isLandscape, onClose } = props);
   obj = { absolute: true, componentStyles: tmp.gradient };
-  const items = [callback(importDefault(9091), obj), ];
+  const items = [callback(getMixedGradientColorDefault, obj), ];
   obj = { onAccessibilityEscape: onClose, style: items1, children: null };
   items1 = [tmp.alert, style, { width }];
   const items2 = [this.renderHeader(), this.renderBody(), this.renderButtons(), this.renderFooter()];
@@ -314,7 +301,7 @@ prototype["render"] = function render() {
   const tmp3 = callback2(closure_9, obj);
   let tmp2Result = tmp3;
   if (isLandscape) {
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     const obj2 = { maxHeight: null };
     obj2[0] = width;
     obj1[0] = obj2;
@@ -324,11 +311,11 @@ prototype["render"] = function render() {
   return tmp2Result;
 };
 Alert.contextType = require("ManaContext").ThemeContext;
-const obj4 = { borderRadius: require("Themes").radii.sm };
+const obj4 = { borderRadius: ThemesDefault.radii.sm };
 Alert.defaultProps = { confirmColor: require("Button").ButtonColors.BRAND, autoCloseOnConfirm: true };
 const memoResult = importAllResult.memo((arg0) => {
-  const size = importDefault(1494)();
-  let obj = require(8944) /* getIsScreenLandscape */;
+  const size = useWindowDimensionsDefault();
+  let obj = getIsScreenLandscape;
   const isScreenLandscape = obj.useIsScreenLandscape();
   obj = { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape };
   const merged = Object.assign(arg0);
@@ -336,11 +323,11 @@ const memoResult = importAllResult.memo((arg0) => {
 });
 memoResult.Colors = require("Button").ButtonColors;
 const obj5 = { confirmColor: require("Button").ButtonColors.BRAND, autoCloseOnConfirm: true };
-let result = require("jsxProd").fileFinishedImporting("components_native/common/Alert.tsx");
+let result = require("set").fileFinishedImporting("components_native/common/Alert.tsx");
 
 export default memoResult;
 export const getAlertButtonVariant = function getAlertButtonVariant(confirmColor) {
-  if (require(1297) /* Button */.ButtonColors.GREEN === confirmColor) {
+  if (Button.ButtonColors.GREEN === confirmColor) {
     return "active";
   } else if (tmp(1297).ButtonColors.RED === confirmColor) {
     return "destructive";

@@ -1,12 +1,16 @@
-// Module ID: 11479
-// Function ID: 11480
+// Module ID: 11528
+// Function ID: 11529
 // Name: isFetching
-// Dependencies: [11472, 11471, 589, 709, 2]
+// Dependencies: [11521, 11520, 589, 709, 2]
 
-// Module 11479 (isFetching)
-import { DirectoryEntryCategories } from "DirectoryEntryTypes";
-import { Store } from "initialize";
+// Module 11528 (isFetching)
+import set2 from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import guildDirectoryEntryFromServer from "guildDirectoryEntryFromServer" /* 11520 */;
+import DirectoryEntryTypes from "DirectoryEntryTypes" /* 11521 */;
 
+const DirectoryEntryCategories = DirectoryEntryTypes.DirectoryEntryCategories;
 let closure_3 = Object.freeze({});
 let c4 = false;
 let closure_5 = {};
@@ -14,6 +18,7 @@ let closure_6 = {};
 let closure_7 = {};
 let closure_8 = {};
 let closure_9 = {};
+const Store = initializeDefault.Store;
 class GuildDirectoryStore extends Store {
 }
 const prototype = GuildDirectoryStore.prototype;
@@ -64,15 +69,13 @@ prototype["getAdminGuildEntryIds"] = function getAdminGuildEntryIds(closure_1) {
   return dependencyMap4[closure_1];
 };
 GuildDirectoryStore.displayName = "GuildDirectoryStore";
-const guildDirectoryStore = new GuildDirectoryStore(require("dispatcher"), {
+const guildDirectoryStore = new GuildDirectoryStore(dispatcherDefault, {
   GUILD_DIRECTORY_FETCH_START: function handleFetchStart() {
-    let c4 = true;
+    c4 = true;
   },
   GUILD_DIRECTORY_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
-    let channelId;
-    let entries;
     ({ channelId, entries } = arg0);
-    let c4 = false;
+    c4 = false;
     let obj = {};
     obj = {};
     const item = entries.forEach((entry) => {
@@ -91,11 +94,11 @@ const guildDirectoryStore = new GuildDirectoryStore(require("dispatcher"), {
     closure_7[channelId] = obj;
   },
   GUILD_DIRECTORY_FETCH_FAILURE: function handleFetchFailure() {
-    let c4 = false;
+    c4 = false;
   },
   GUILD_DIRECTORY_ENTRY_CREATE: function handleCreateEntry(channelId) {
     channelId = channelId.channelId;
-    let obj = require(11471) /* guildDirectoryEntryFromServer */;
+    let obj = guildDirectoryEntryFromServer;
     const result = obj.guildDirectoryEntryFromServer(channelId.entry);
     if (null != result) {
       let tmp2;
@@ -117,7 +120,7 @@ const guildDirectoryStore = new GuildDirectoryStore(require("dispatcher"), {
         if (dependencyMap2[channelId] != null) {
           tmp8 = tmp7[UNCATEGORIZED];
         }
-        const obj1 = {};
+        obj1 = {};
         const merged2 = Object.assign(tmp8);
         obj1[result.guildId] = result;
         obj[UNCATEGORIZED] = obj1;
@@ -140,8 +143,6 @@ const guildDirectoryStore = new GuildDirectoryStore(require("dispatcher"), {
     }
   },
   GUILD_DIRECTORY_ENTRY_DELETE: function handleDeleteEntry(arg0) {
-    let channelId;
-    let guildId;
     ({ channelId, guildId } = arg0);
     let tmp5;
     if (dependencyMap[channelId] != null) {
@@ -181,7 +182,7 @@ const guildDirectoryStore = new GuildDirectoryStore(require("dispatcher"), {
   },
   GUILD_DIRECTORY_ENTRY_UPDATE: function handleUpdateEntry(channelId) {
     channelId = channelId.channelId;
-    let obj = require(11471) /* guildDirectoryEntryFromServer */;
+    let obj = guildDirectoryEntryFromServer;
     const result = obj.guildDirectoryEntryFromServer(channelId.entry);
     let tmp6;
     if (dependencyMap[channelId] != null) {
@@ -218,7 +219,7 @@ const guildDirectoryStore = new GuildDirectoryStore(require("dispatcher"), {
       const guildId = result.guildId;
       delete tmp2[tmp];
     }
-    const obj1 = {};
+    obj1 = {};
     const merged4 = Object.assign(tmp14[channelId]);
     obj1[primaryCategoryId] = merged3;
     let tmp21;
@@ -274,11 +275,11 @@ const guildDirectoryStore = new GuildDirectoryStore(require("dispatcher"), {
     let set;
     set = new Set();
     const item = entries.forEach((entry) => {
-      set.add(set(outer1_1[1]).guildDirectoryEntryFromServer(entry).guildId);
+      set.add(set(closure_1_1[1]).guildDirectoryEntryFromServer(entry).guildId);
     });
     closure_9[channelId.channelId] = set;
   }
 });
-let result = require("initialize").fileFinishedImporting("modules/directory_channels/GuildDirectoryStore.tsx");
+let result = set2.fileFinishedImporting("modules/directory_channels/GuildDirectoryStore.tsx");
 
 export default guildDirectoryStore;

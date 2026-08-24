@@ -1,11 +1,13 @@
-// Module ID: 8637
-// Function ID: 8638
+// Module ID: 8674
+// Function ID: 8675
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [106, 65, 114, 2]
 
-// Module 8637 (__INTERNAL_VIEW_CONFIG)
-import weakSet from "weakSet";
-import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+// Module 8674 (__INTERNAL_VIEW_CONFIG)
+import set from "set" /* 2 */;
+import renderElement from "renderElement" /* 114 */;
+import weakSet from "weakSet" /* 106 */;
+import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
 let obj = { uiViewClassName: "FastestList", directEventTypes: { topLayout: { registrationName: "onLayout" }, topScroll: { registrationName: "onScroll" }, topScrollBeginDrag: { registrationName: "onScrollBeginDrag" }, topScrollEndDrag: { registrationName: "onScrollEndDrag" }, topVisibleItemsChanged: { registrationName: "onVisibleItemsChanged" }, topUnexpectedItemSize: { registrationName: "onUnexpectedItemSize" } }, validAttributes: null };
 obj = { insetStart: true, insetEnd: true, horizontal: true, keyboardDismissOnDrag: true, placeholderConfig: true, renderAhead: true, scrollEventThrottle: true, sectionsVersioned: true, showsHorizontalScrollIndicator: true, showsVerticalScrollIndicator: true };
@@ -14,15 +16,15 @@ obj[2] = obj;
 obj = {
   scrollToLocation(arg0, arg1, arg2, arg3, arg4) {
     const items = [arg1, arg2, arg3, arg4];
-    require(114) /* renderElement */.dispatchCommand(arg0, "scrollToLocation", items);
+    renderElement.dispatchCommand(arg0, "scrollToLocation", items);
   },
   scrollToTop(arg0, arg1) {
     const items = [arg1];
-    require(114) /* renderElement */.dispatchCommand(arg0, "scrollToTop", items);
+    renderElement.dispatchCommand(arg0, "scrollToTop", items);
   }
 };
 const value = setRuntimeConfigProvider.get("FastestList", () => obj);
-const result = require("renderElement").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/FastestListNativeComponent.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/FastestListNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

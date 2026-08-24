@@ -1,28 +1,26 @@
-// Module ID: 17144
-// Function ID: 17145
+// Module ID: 17238
+// Function ID: 17239
 // Name: _executeHeadlessTask
-// Dependencies: [5, 17, 1218, 16441, 676, 3, 1208, 675, 15, 9, 13223, 698, 503, 4259, 2]
+// Dependencies: [5, 17, 1218, 16536, 676, 3, 1208, 675, 15, 9, 13278, 698, 503, 16656, 4263, 2]
 // Exports: default
 
-// Module 17144 (_executeHeadlessTask)
-import timestamp from "timestamp";
-import { AppState } from "get ActivityIndicator";
-import fetchFingerprint from "fetchFingerprint";
-import linkFromAppsFlyer from "linkFromAppsFlyer";
-import { AnalyticEvents } from "ME";
+// Module 17238 (_executeHeadlessTask)
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import { AppState } from "get ActivityIndicator" /* 17 */;
+import closure_6 from "fetchFingerprint" /* 1218 */;
+import linkFromAppsFlyer from "linkFromAppsFlyer" /* 16536 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
 function _executeHeadlessTask() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c11 = 0;
-    let c12 = 0;
-    let c9 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c11 = 0;
+    c12 = 0;
+    c9 = 0;
     return (function*(arg0, arg1, arg2) {
       if (c12 === 2) {
         c12 = 3;
@@ -35,7 +33,7 @@ function _executeHeadlessTask() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -44,7 +42,7 @@ function _executeHeadlessTask() {
             throw arg1;
           } else {
             if (arg0 !== 2) {
-              let c9 = 0;
+              c9 = 0;
               c12 = 3;
             }
             c9 = 0;
@@ -54,12 +52,12 @@ function _executeHeadlessTask() {
             return obj;
           }
         } catch (tmp12) {
-          let closure_10 = tmp12;
+          closure_10 = tmp12;
           if (tmp4 === c9) {
             c12 = tmp3;
             throw tmp12;
           } else if (tmp2 === tmp14) {
-            let c11 = tmp2;
+            c11 = tmp2;
           } else if (tmp === tmp14) {
             c11 = tmp;
           } else if (tmp3 === tmp14) {
@@ -75,7 +73,7 @@ function _executeHeadlessTask() {
       }
     })();
   });
-  const _executeHeadlessTask = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -84,8 +82,8 @@ function _executeHeadlessTask() {
   }
   return applyArgumentsResult;
 }
-({ initHeadlessTask: error, applicationReady: metroImportAll } = linkFromAppsFlyer);
-const result = require("fetchFingerprint").fileFinishedImporting("modules/app_startup/native/executeHeadlessTask.tsx");
+({ initHeadlessTask: error, applicationReady: closure_8 } = linkFromAppsFlyer);
+const result = require("set").fileFinishedImporting("modules/app_startup/native/executeHeadlessTask.tsx");
 
 export default function executeHeadlessTask() {
   const self = this;

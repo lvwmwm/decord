@@ -1,27 +1,27 @@
-// Module ID: 12583
-// Function ID: 12584
+// Module ID: 12637
+// Function ID: 12638
 // Name: SingleScreenshare
-// Dependencies: [19, 8669, 21, 4661, 712, 4761, 12584, 8666, 2]
+// Dependencies: [19, 8706, 21, 4668, 712, 4766, 12638, 8703, 2]
 // Exports: default
 
-// Module 12583 (SingleScreenshare)
-import "noop";
-import VoiceChatDrawerState from "VoiceChatDrawerState";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12637 (SingleScreenshare)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 8706 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let obj1;
+noopAll;
 ({ resetFocus: obj1, toggleFocus: c3 } = VoiceChatDrawerState);
 createCacheKey = { stageStreamContainer: null };
-createCacheKey = { backgroundColor: require("Themes").colors.BLACK };
+createCacheKey = { backgroundColor: ThemesDefault.colors.BLACK };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/SingleScreenshare.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/video_calls/native/components/SingleScreenshare.tsx");
 
 export default function SingleScreenshare(channel) {
   channel = channel.channel;
-  channel(4761)(() => {
+  channel(4766)(() => {
     callback();
   });
   const obj = {
@@ -30,17 +30,17 @@ export default function SingleScreenshare(channel) {
       callback2();
     },
     onDoubleTap() {
-      outer1_2();
-      const participant = channel(outer1_1[7]).selectParticipant(channel.id, null);
+      closure_1_2();
+      const participant = channel(closure_1_1[7]).selectParticipant(channel.id, null);
     },
     containerStyle: null
   };
-  const tmp = createCacheKey();
+  const tmp = callback();
   const tmp3 = jsx;
   let stageStreamContainer;
   if (channel.isGuildStageVoice()) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
   obj[3] = stageStreamContainer;
-  return tmp3(channel(12584), obj);
+  return tmp3(channel(12638), obj);
 };

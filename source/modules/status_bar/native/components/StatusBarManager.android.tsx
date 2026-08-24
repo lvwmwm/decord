@@ -1,11 +1,13 @@
-// Module ID: 8033
-// Function ID: 8034
+// Module ID: 8072
+// Function ID: 8073
 // Name: pushStackEntry
 // Dependencies: [17, 12, 1641, 2]
 
-// Module 8033 (pushStackEntry)
-import { StatusBar } from "get ActivityIndicator";
+// Module 8072 (pushStackEntry)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
+const StatusBar = get_ActivityIndicator.StatusBar;
 class StatusBarManager {
   constructor() {
     obj = Object.create(new.target.prototype);
@@ -53,14 +55,14 @@ prototype["updatePropsStack"] = function updatePropsStack() {
   clearImmediate(this.updateImmediate);
   this.updateImmediate = setImmediate(() => {
     const items = [{ hidden: false, barStyle: "default" }, ...self.propsStack];
-    const applyResult = self(outer1_1[1]).merge.apply(items);
-    outer1_2.setBarStyle(applyResult.barStyle);
-    const tmp = self(outer1_1[1]);
-    self(outer1_1[2]).setStatusBarVisible(!applyResult.hidden);
+    const applyResult = self(closure_1_1[1]).merge.apply(items);
+    closure_1_2.setBarStyle(applyResult.barStyle);
+    const tmp = self(closure_1_1[1]);
+    self(closure_1_1[2]).setStatusBarVisible(!applyResult.hidden);
   });
 };
 let obj = Object.create(StatusBarManager.prototype);
 obj[0] = [];
-const result = require("enforcing").fileFinishedImporting("modules/status_bar/native/components/StatusBarManager.android.tsx");
+const result = set.fileFinishedImporting("modules/status_bar/native/components/StatusBarManager.android.tsx");
 
 export default obj;

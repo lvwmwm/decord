@@ -1,26 +1,26 @@
-// Module ID: 12533
-// Function ID: 12534
+// Module ID: 12587
+// Function ID: 12588
 // Name: HandRequestSpeakIcon
-// Dependencies: [19, 21, 712, 4096, 12534, 2]
+// Dependencies: [19, 21, 712, 4099, 12588, 2]
 // Exports: HandRequestSpeakIcon
 
-// Module 12533 (HandRequestSpeakIcon)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 12587 (HandRequestSpeakIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import BaseIconImage from "BaseIconImage" /* 4099 */;
+import registerAsset from "registerAsset" /* 12588 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/HandRequestSpeakIcon.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Icon/native/redesign/generated/HandRequestSpeakIcon.tsx");
 
 export const HandRequestSpeakIcon = function HandRequestSpeakIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = ThemesDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.create(null));
-  const obj = { source: null, color: null, style: null };
-  obj[0] = require(12534) /* registerAsset */;
-  obj[1] = INTERACTIVE_ICON_DEFAULT;
-  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4096) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(BaseIconImage.BaseIconImage, { source: registerAsset, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

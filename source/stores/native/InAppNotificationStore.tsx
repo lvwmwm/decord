@@ -1,35 +1,47 @@
-// Module ID: 10013
-// Function ID: 10014
+// Module ID: 10052
+// Function ID: 10053
 // Name: handleAlertMessage
-// Dependencies: [1390, 4773, 10014, 6796, 5296, 1340, 1391, 1910, 10015, 4772, 1979, 1385, 1922, 676, 8236, 8234, 3975, 12, 10016, 10018, 5267, 5385, 10019, 10027, 4803, 10028, 10029, 10031, 10023, 10032, 10033, 10037, 4488, 4066, 1306, 8484, 5364, 10038, 5042, 11, 589, 709, 2]
+// Dependencies: [1390, 4778, 10053, 6833, 5301, 1340, 1391, 1910, 10054, 4777, 1980, 1385, 1922, 676, 8276, 8274, 3978, 12, 10055, 10057, 5272, 5390, 10058, 10066, 4808, 10067, 10068, 10070, 10062, 10071, 10072, 10076, 4492, 4069, 1306, 8523, 5369, 10077, 5047, 11, 589, 709, 2]
 
-// Module 10013 (handleAlertMessage)
-import participantFromServer from "participantFromServer";
-import getParticipants from "getParticipants";
-import computeAlertSettings from "computeAlertSettings";
-import { trackMessageNotificationTimestamps as closure_6 } from "initialize";
-import importDefaultResult from "freshTeenActivityWithMap";
-import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import DesktopNotificationTypes from "DesktopNotificationTypes";
-import generateOldThreadCutoff from "generateOldThreadCutoff";
-import handleConnectionOpen from "handleConnectionOpen";
-import handleRequiredAction from "handleRequiredAction";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import { EMPTY_SCHEDULE_SNAPSHOT } from "isOnlyDayLoss";
-import { Store } from "initialize";
+// Module 10052 (handleAlertMessage)
+import applyDefault from "apply" /* 12 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import tDefault from "t" /* 3978 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 5047 */;
+import apexExperiment from "apexExperiment" /* 5369 */;
+import isSystemMessageDefault from "isSystemMessage" /* 5390 */;
+import DATE_CONFIG from "DATE_CONFIG" /* 8274 */;
+import GuildIncidentActionSources from "GuildIncidentActionSources" /* 8276 */;
+import ForLaterFreemiumConfig from "ForLaterFreemiumConfig" /* 8523 */;
+import isOnlyDayLoss from "isOnlyDayLoss" /* 10055 */;
+import canViewPotentiallyNSFWChannel from "canViewPotentiallyNSFWChannel" /* 10057 */;
+import shouldNotifyBase from "shouldNotifyBase" /* 10058 */;
+import NativeEventEmitterDefault from "NativeEventEmitter" /* 10066 */;
+import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10068 */;
+import apexExperimentDefault from "apexExperiment" /* 10071 */;
+import playInAppMessageSound from "playInAppMessageSound" /* 10077 */;
+import closure_3 from "participantFromServer" /* 1390 */;
+import closure_4 from "getParticipants" /* 4778 */;
+import closure_5 from "computeAlertSettings" /* 10053 */;
+import { trackMessageNotificationTimestamps as closure_6 } from "initialize" /* 6833 */;
+import importDefaultResult from "freshTeenActivityWithMap" /* 5301 */;
+import closure_8 from "handleConnectionClosedOrResumed" /* 1340 */;
+import closure_9 from "ensureGuildLoaded" /* 1391 */;
+import closure_10 from "createGuildRecordFromRust" /* 1910 */;
+import closure_11 from "DesktopNotificationTypes" /* 10054 */;
+import closure_12 from "generateOldThreadCutoff" /* 4777 */;
+import closure_13 from "handleConnectionOpen" /* 1980 */;
+import closure_14 from "handleRequiredAction" /* 1385 */;
+import closure_15 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import { EMPTY_SCHEDULE_SNAPSHOT } from "isOnlyDayLoss" /* 10055 */;
 
-let closure_16;
-let closure_17;
-let closure_18;
-let closure_19;
-const require = arg1;
+require = arg1;
 function handleAlertMessage() {
-  let obj = guild(10019);
+  obj = guild(10058);
   if (obj.allowInAppNotifications()) {
-    let tmpResult = tmp(10033);
+    let tmpResult = tmp(10072);
     const result = tmpResult.shouldShowRaidInAppNotification();
     const guildId = result.guildId;
     if (result.show) {
@@ -38,7 +50,7 @@ function handleAlertMessage() {
         if (null == guild) {
           return false;
         } else {
-          channel = store2.getChannel(channel(10037)(guild));
+          channel = store2.getChannel(channel(10076)(guild));
           if (null == channel) {
             return false;
           } else if (channelId.getChannelId() === channel.id) {
@@ -52,20 +64,20 @@ function handleAlertMessage() {
             } else {
               const ALERT = constants3.ALERT;
               obj = { notification: null };
-              const obj1 = { type: null, key: null, duration: null, onDismiss: null, channel: null, guild: null, inAppNotificationId: null };
+              obj1 = { type: null, key: null, duration: null, onDismiss: null, channel: null, guild: null, inAppNotificationId: null };
               obj1[0] = ALERT;
               obj1[1] = guildId;
-              tmpResult = tmp(10029);
+              tmpResult = tmp(10068);
               obj1[2] = tmpResult.getNotificationDuration(ALERT);
               obj1[3] = function onDismiss() {
-                let obj = channel(outer1_2[27]);
+                obj = channel(closure_1_2[27]);
                 obj.clearNotification();
                 obj = { guild, channel };
-                outer1_20.dismissNotification(obj);
+                closure_1_20.dismissNotification(obj);
               };
               obj1[4] = channel;
               obj1[5] = guild;
-              obj1[6] = tmp(10029).generateInAppNotificationId();
+              obj1[6] = tmp(10068).generateInAppNotificationId();
               obj[0] = obj1;
               handleEnqueueNotification(obj);
             }
@@ -79,14 +91,11 @@ function handleAlertMessage() {
   }
 }
 function handleEnqueueNotification(notification) {
-  let channelId;
-  let guildId;
-  let messageId;
   notification = notification.notification;
-  let obj = require(10029) /* isReactionMilestoneNotification */;
+  obj = isReactionMilestoneNotification;
   const result = obj.extractMetadataFromNotification(notification);
   ({ guildId, channelId, messageId } = result);
-  const trackWithMetadata = importDefault(5042).trackWithMetadata;
+  const trackWithMetadata = collectGuildAnalyticsMetadataDefault.trackWithMetadata;
   if (closure_23) {
     obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "restricted_hours", in_app_notification_id: null };
     obj[0] = notification.type;
@@ -105,23 +114,20 @@ function handleEnqueueNotification(notification) {
     obj[4] = messageId;
     trackWithMetadata(tmp5.IN_APP_NOTIFICATION_CREATED, obj);
     obj1.enqueue(notification);
-    const result1 = tmp(10038).playInAppMessageSound(notification);
+    const result1 = playInAppMessageSound.playInAppMessageSound(notification);
     if (null == closure_21) {
       closure_21 = obj1.tryDrain();
     }
   }
-  tmp = require;
-  const tmp4 = importDefault(5042);
+  const tmp = require;
+  const tmp4 = collectGuildAnalyticsMetadataDefault;
 }
 function trackDismissed(type) {
-  let channelId;
-  let guildId;
-  let messageId;
-  let obj = require(10029) /* isReactionMilestoneNotification */;
+  obj = isReactionMilestoneNotification;
   const result = obj.extractMetadataFromNotification(type);
   ({ guildId, channelId, messageId } = result);
   obj = { type: type.type, guild_id: guildId, channel_id: channelId, message_id: messageId, dismiss_reason: "rejected_from_queue", in_app_notification_id: type.inAppNotificationId };
-  importDefault(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+  collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
 }
 const error = importDefaultResult;
 ({ AnalyticEvents: closure_16, ChannelTypes: closure_17, InAppNotificationTypes: closure_18, MessageTypesSets: closure_19 } = ME);
@@ -144,21 +150,21 @@ prototype["key"] = function key(guild) {
 };
 prototype["dismissNotification"] = function dismissNotification(guild) {
   guild = guild.guild;
-  let obj = require(8234) /* DATE_CONFIG */;
+  obj = DATE_CONFIG;
   const incidentAlertType = obj.getIncidentAlertType(store.getGuildIncident(guild.id));
   if (null != incidentAlertType) {
     const self = this;
     obj = { guild: null, channel: null };
     obj[0] = guild;
     obj[1] = guild.channel;
-    const result = this.dissmissedAlertsMap[incidentAlertType].set(this.key(obj), importDefault(3975)());
+    const result = this.dissmissedAlertsMap[incidentAlertType].set(this.key(obj), tDefault());
     const keyResult = this.key(obj);
     const obj3 = this.dissmissedAlertsMap[incidentAlertType];
   }
 };
 prototype["wasRecentlyDismissed"] = function wasRecentlyDismissed(guild) {
   guild = guild.guild;
-  let obj = require(8234) /* DATE_CONFIG */;
+  obj = DATE_CONFIG;
   const incidentAlertType = obj.getIncidentAlertType(store.getGuildIncident(guild.id));
   if (null == incidentAlertType) {
     return false;
@@ -170,8 +176,8 @@ prototype["wasRecentlyDismissed"] = function wasRecentlyDismissed(guild) {
     const value = this.dissmissedAlertsMap[incidentAlertType].get(this.key(obj));
     let tmp4 = undefined !== value;
     if (tmp4) {
-      tmp4 = importDefault(3975)().diff(importDefault(3975)(value), self.threshold.unitOfTime) < self.threshold.amount;
-      const obj2 = importDefault(3975)();
+      tmp4 = tDefault().diff(tDefault(value), self.threshold.unitOfTime) < self.threshold.amount;
+      const obj2 = tDefault();
     }
     return tmp4;
   }
@@ -193,15 +199,12 @@ class NotificationQueue {
 }
 const prototype2 = NotificationQueue.prototype;
 prototype2["enqueue"] = function enqueue(arg0) {
-  let channelId;
-  let guildId;
-  let messageId;
   const self = this;
   if (this.isFull()) {
     const queue = self.queue;
     let arr = queue.shift();
     if (null != arr) {
-      let obj = require(10029) /* isReactionMilestoneNotification */;
+      obj = isReactionMilestoneNotification;
       const result = obj.extractMetadataFromNotification(arr);
       ({ guildId, channelId, messageId } = result);
       obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "evicted_from_queue", in_app_notification_id: null };
@@ -210,8 +213,8 @@ prototype2["enqueue"] = function enqueue(arg0) {
       obj[2] = channelId;
       obj[3] = messageId;
       obj[5] = arr.inAppNotificationId;
-      importDefault(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
-      const obj2 = importDefault(5042);
+      collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+      const obj2 = collectGuildAnalyticsMetadataDefault;
     }
   }
   const queue1 = self.queue;
@@ -225,8 +228,8 @@ prototype2["isFull"] = function isFull() {
   return this.queue.length >= 2;
 };
 prototype2["removeAll"] = function removeAll(arg0) {
-  const obj = importDefault(12);
-  const removeResult = importDefault(12).remove(this.queue, arg0);
+  obj = applyDefault;
+  const removeResult = applyDefault.remove(this.queue, arg0);
   while (tmp2 !== undefined) {
     let tmp4 = trackDismissed;
     let tmp5 = trackDismissed(tmp3, "rejected_from_queue");
@@ -237,21 +240,22 @@ let obj1 = Object.create(NotificationQueue.prototype);
 obj1.queue = [];
 let closure_23 = importDefaultResult.isCurrentUserInRestrictedHours();
 let c24 = false;
+const Store = initializeDefault.Store;
 class InAppNotificationStore extends Store {
 }
 const prototype3 = InAppNotificationStore.prototype;
 prototype3["initialize"] = function initialize() {
-  this.waitFor(getParticipants, ensureGuildLoaded, participantFromServer, closure_7, computeAlertSettings, createGuildRecordFromRust, DesktopNotificationTypes, generateOldThreadCutoff, handleConnectionOpen, handleRequiredAction, handleConnectionClosedOrResumed, mergeGuildAvatar);
-  const items = [computeAlertSettings];
+  this.waitFor(closure_4, closure_9, closure_3, closure_7, closure_5, closure_10, closure_11, closure_12, closure_13, closure_14, closure_8, closure_15);
+  const items = [closure_5];
   this.syncWith(items, handleAlertMessage);
 };
 prototype3["getCurrentNotification"] = function getCurrentNotification() {
   return c21;
 };
 InAppNotificationStore.displayName = "InAppNotificationStore";
-const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"), {
+const inAppNotificationStore = new InAppNotificationStore(dispatcherDefault, {
   POST_CONNECTION_OPEN: function handlePostConnectionOpen() {
-    let c24 = true;
+    c24 = true;
     const currentUser = authStore.getCurrentUser();
     let restrictedSchedule;
     if (currentUser != null) {
@@ -264,52 +268,52 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
         tmp3 = restrictedSchedule;
       }
     }
-    let closure_25 = require(10016) /* isOnlyDayLoss */.toScheduleSnapshot(tmp3);
+    closure_25 = isOnlyDayLoss.toScheduleSnapshot(tmp3);
     handleAlertMessage();
   },
   LOGOUT: function handleLogout() {
-    let c24 = false;
-    const EMPTY_SCHEDULE_SNAPSHOT = require(10016) /* isOnlyDayLoss */.EMPTY_SCHEDULE_SNAPSHOT;
-    let c21 = null;
+    c24 = false;
+    EMPTY_SCHEDULE_SNAPSHOT = isOnlyDayLoss.EMPTY_SCHEDULE_SNAPSHOT;
+    c21 = null;
     obj1.removeAll(() => true);
   },
   GUILD_UPDATE: handleAlertMessage,
   MESSAGE_CREATE: function handleIncomingMessage(message) {
     message = message.message;
     const channel_id = message.channel_id;
-    let obj = require(10018) /* canViewPotentiallyNSFWChannel */;
+    obj = canViewPotentiallyNSFWChannel;
     if (obj.canViewPotentiallyNSFWChannel(channel_id)) {
-      let tmpResult = tmp(5267);
+      let tmpResult = tmp(5272);
       if (tmpResult.shouldShowSpoilerGateForChannelId(channel_id)) {
         return false;
       } else {
-        if (importDefault(5385)(message)) {
+        if (isSystemMessageDefault(message)) {
           const SELF_MENTIONABLE_SYSTEM = constants4.SELF_MENTIONABLE_SYSTEM;
           if (!SELF_MENTIONABLE_SYSTEM.has(message.type)) {
             return false;
           }
         }
         if (!message.optimistic) {
-          tmpResult = tmp(10019);
+          tmpResult = tmp(10058);
           if (tmpResult.allowInAppNotifications()) {
             if (!tmp3Result.isEnabled()) {
               if (!uiStore.getChatOpen(channel_id)) {
-                const result = tmp(10019).shouldIncludeSelectedChannel();
-                const tmpResult1 = tmp(10019);
+                const result = tmp(10058).shouldIncludeSelectedChannel();
+                const tmpResult1 = tmp(10058);
                 if (tmpResult2.shouldNotify(message, channel_id, result)) {
                   const channel = store2.getChannel(channel_id);
                   if (null == channel) {
                     return false;
                   } else {
-                    const messageRecord = tmp(4803).createMessageRecord(message);
-                    const tmpResult3 = tmp(4803);
+                    const messageRecord = tmp(4808).createMessageRecord(message);
+                    const tmpResult3 = tmp(4808);
                     if (tmpResult4.isMessageContentPreviewable(messageRecord)) {
                       callback(message, channel.guild_id);
                       const MESSAGE = constants3.MESSAGE;
                       obj = { notification: null };
                       obj = { type: null, guild: null, channel: null, message: null, key: null, duration: null, onDismiss: null, parentChannel: null, inAppNotificationId: null, mentionCount: null };
                       obj[0] = MESSAGE;
-                      const notificationDuration = tmp(10029).getNotificationDuration(MESSAGE);
+                      const notificationDuration = tmp(10068).getNotificationDuration(MESSAGE);
                       obj[1] = store3.getGuild(channel.getGuildId());
                       obj[2] = channel;
                       obj[3] = messageRecord;
@@ -319,24 +323,24 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
                         callback(table[27]).clearNotification();
                       };
                       obj[7] = obj7.getChannel(channel.parent_id);
-                      const tmpResult5 = tmp(10029);
-                      obj[8] = tmp(10029).generateInAppNotificationId();
+                      const tmpResult5 = tmp(10068);
+                      obj[8] = tmp(10068).generateInAppNotificationId();
                       obj[9] = mentionCount.getMentionCount(channel.id);
                       obj[0] = obj;
                       handleEnqueueNotification(obj);
                     } else {
                       return false;
                     }
-                    tmpResult4 = tmp(10028);
+                    tmpResult4 = tmp(10067);
                   }
                   obj7 = store2;
                 } else {
                   return false;
                 }
-                tmpResult2 = tmp(10019);
+                tmpResult2 = tmp(10058);
               }
             }
-            tmp3Result = importDefault(10027);
+            tmp3Result = NativeEventEmitterDefault;
           }
         }
         return false;
@@ -347,7 +351,7 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
   },
   MESSAGE_REQUEST_NOTIFICATION_SENT: function handleMessageRequest(triggeringUserId) {
     triggeringUserId = triggeringUserId.triggeringUserId;
-    let obj = importDefault(10032);
+    obj = apexExperimentDefault;
     if (obj.getConfig({ location: "inAppNotificationStore" }).enabled) {
       const user = authStore.getUser(triggeringUserId);
       if (null == user) {
@@ -361,12 +365,12 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
         obj[2] = triggeringUserId.numMutualGuilds;
         const _HermesInternal = HermesInternal;
         obj[3] = "message-request-" + triggeringUserId;
-        obj[4] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(MESSAGE_REQUEST);
+        obj[4] = isReactionMilestoneNotification.getNotificationDuration(MESSAGE_REQUEST);
         obj[5] = function onDismiss() {
           callback(table[27]).clearNotification();
         };
-        const obj4 = require(10029) /* isReactionMilestoneNotification */;
-        obj[6] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+        const obj4 = isReactionMilestoneNotification;
+        obj[6] = isReactionMilestoneNotification.generateInAppNotificationId();
         obj[0] = obj;
         handleEnqueueNotification(obj);
       }
@@ -375,41 +379,38 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
     }
   },
   MESSAGE_ACK: function handleMessageAck(channelId) {
-    let channelId2;
-    let guildId;
-    let messageId2;
     channelId = channelId.channelId;
     const messageId = channelId.messageId;
     let tmp = null != _null;
     if (tmp) {
       let tmp4 = _null.type === constants3.MESSAGE && tmp2.channel.id === channelId;
       if (tmp4) {
-        let obj = messageId(11);
+        obj = messageId(11);
         tmp4 = obj.compare(tmp2.message.id, messageId) <= 0;
       }
       tmp = tmp4;
     }
     if (tmp) {
-      const result = channelId(10029).extractMetadataFromNotification(_null);
+      const result = channelId(10068).extractMetadataFromNotification(_null);
       ({ guildId, channelId: channelId2, messageId: messageId2 } = result);
-      const obj2 = channelId(10029);
+      const obj2 = channelId(10068);
       obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "message_acked", in_app_notification_id: null };
       obj[0] = _null.type;
       obj[1] = guildId;
       obj[2] = channelId2;
       obj[3] = messageId2;
       obj[5] = _null.inAppNotificationId;
-      messageId(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
-      const obj3 = messageId(5042);
+      messageId(5047).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+      const obj3 = messageId(5047);
     }
     obj1.removeAll(function predicate(type) {
-      let tmp = type.type === outer1_18.MESSAGE;
+      let tmp = type.type === closure_1_18.MESSAGE;
       if (tmp) {
         tmp = type.channel.id === channelId;
       }
       if (tmp) {
-        tmp = messageId(outer1_2[39]).compare(type.message.id, messageId) <= 0;
-        const obj = messageId(outer1_2[39]);
+        tmp = messageId(closure_1_2[39]).compare(type.message.id, messageId) <= 0;
+        obj = messageId(closure_1_2[39]);
       }
       return tmp;
     });
@@ -433,16 +434,12 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
     }
   },
   REACTION_NOTIFICATION_SENT: function handleReactionNotification(arg0) {
-    let channelId;
-    let emoji;
-    let guildId;
-    let message;
     ({ message, emoji } = arg0);
     if (null != message) {
       if (null != message.reactions) {
         if (null != emoji) {
           if (obj14.allowInAppNotifications()) {
-            let tmp19Result = tmp19(4488);
+            let tmp19Result = tmp19(4492);
             let tryParseChannelPathResult = tmp19Result.tryParseChannelPath(tmp);
             if (tryParseChannelPathResult == null) {
               tryParseChannelPathResult = { channelId: null, guildId: null };
@@ -450,7 +447,7 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
             ({ channelId, guildId } = tryParseChannelPathResult);
             if (null != channelId) {
               if (null != guildId) {
-                const ReactionNotifications = tmp19(4066).ReactionNotifications;
+                const ReactionNotifications = tmp19(4069).ReactionNotifications;
                 const setting = ReactionNotifications.getSetting();
                 if (setting === tmp19(1306).ReactionNotificationType.NOTIFICATIONS_DISABLED) {
                   return false;
@@ -464,7 +461,7 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
                   if (result) {
                     result = channel.type === constants2.GUILD_ANNOUNCEMENT;
                   }
-                  tmp19Result = tmp19(10029);
+                  tmp19Result = tmp19(10068);
                   if (channel != null) {
                     type = channel.type;
                   }
@@ -476,16 +473,16 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
                   if (null != channel) {
                     if (!obj4.isEnabled()) {
                       if (!uiStore.getChatOpen(channelId)) {
-                        const result1 = tmp19(10019).shouldIncludeSelectedChannel();
-                        const tmp19Result1 = tmp19(10019);
-                        let obj = { message: null, channel: null, reactor: null, includeSelectedChannel: null };
+                        const result1 = tmp19(10058).shouldIncludeSelectedChannel();
+                        const tmp19Result1 = tmp19(10058);
+                        obj = { message: null, channel: null, reactor: null, includeSelectedChannel: null };
                         obj[0] = message;
                         obj[1] = channel;
                         obj[2] = user;
                         obj[3] = result1;
                         if (tmp19Result2.shouldNotifyForReaction(obj)) {
-                          const messageRecord = tmp19(4803).createMessageRecord(message);
-                          const tmp19Result3 = tmp19(4803);
+                          const messageRecord = tmp19(4808).createMessageRecord(message);
+                          const tmp19Result3 = tmp19(4808);
                           if (tmp19Result4.isMessageContentPreviewable(messageRecord)) {
                             const reactions = message.reactions;
                             const found = reactions.find((emoji) => {
@@ -505,10 +502,10 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
                             }
                             const REACTION = constants3.REACTION;
                             obj = { notification: null };
-                            const obj1 = { type: null, key: null, duration: null, onDismiss: null, channel: null, guild: null, user: null, message: null, parentChannel: null, reaction: null, inAppNotificationId: null };
+                            obj1 = { type: null, key: null, duration: null, onDismiss: null, channel: null, guild: null, user: null, message: null, parentChannel: null, reaction: null, inAppNotificationId: null };
                             obj1[0] = REACTION;
                             obj1[1] = channelId;
-                            obj1[2] = tmp19(10029).getNotificationDuration(REACTION);
+                            obj1[2] = tmp19(10068).getNotificationDuration(REACTION);
                             obj1[3] = function onDismiss() {
                               callback(table[27]).clearNotification();
                             };
@@ -518,18 +515,18 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
                             obj1[7] = messageRecord;
                             obj1[8] = store2.getChannel(channel.parent_id);
                             obj1[9] = found;
-                            const tmp19Result5 = tmp19(10029);
-                            obj1[10] = tmp19(10029).generateInAppNotificationId();
+                            const tmp19Result5 = tmp19(10068);
+                            obj1[10] = tmp19(10068).generateInAppNotificationId();
                             obj[0] = obj1;
                             handleEnqueueNotification(obj);
                           } else {
                             return false;
                           }
-                          tmp19Result4 = tmp19(10028);
+                          tmp19Result4 = tmp19(10067);
                         } else {
                           return false;
                         }
-                        tmp19Result2 = tmp19(10019);
+                        tmp19Result2 = tmp19(10058);
                       }
                     }
                     return false;
@@ -540,7 +537,7 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
             }
             return false;
           }
-          obj14 = emoji(10019);
+          obj14 = emoji(10058);
         }
       }
     }
@@ -548,7 +545,7 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
   },
   MESSAGE_REMINDER_DUE: function handleMessageReminderDue(savedMessage) {
     savedMessage = savedMessage.savedMessage;
-    let obj = require(8484) /* ForLaterFreemiumConfig */;
+    obj = ForLaterFreemiumConfig;
     if (obj.isForLaterExperimentOn("inAppNotificationStore")) {
       if (null != savedMessage.message) {
         const channel = store2.getChannel(savedMessage.saveData.channelId);
@@ -559,7 +556,7 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
           obj = { type: null, key: null, duration: null, onDismiss: null, channel: null, author: null, savedMessage: null, inAppNotificationId: null };
           obj[0] = MESSAGE_REMINDER;
           obj[1] = "" + savedMessage.saveData.channelId + "-" + savedMessage.saveData.messageId;
-          let tmpResult = tmp(10029);
+          let tmpResult = tmp(10068);
           obj[2] = tmpResult.getNotificationDuration(MESSAGE_REMINDER);
           obj[3] = function onDismiss() {
             callback(table[27]).clearNotification();
@@ -567,7 +564,7 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
           obj[4] = channel;
           obj[5] = savedMessage.message.author;
           obj[6] = savedMessage;
-          tmpResult = tmp(10029);
+          tmpResult = tmp(10068);
           obj[7] = tmpResult.generateInAppNotificationId();
           obj[0] = obj;
           handleEnqueueNotification(obj);
@@ -576,24 +573,22 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
     }
   },
   RESTRICTED_HOURS_WARNING: function handleRestrictedHoursWarning(arg0) {
-    let subtitle;
-    let title;
     ({ title, subtitle } = arg0);
-    let obj = require(5364) /* apexExperiment */;
+    obj = apexExperiment;
     if (obj.getIsFamilyCenterV3Enabled({ location: "InAppNotificationStore" })) {
       if (obj.screenDowntimeReminder) {
         const RESTRICTED_HOURS_WARNING = constants3.RESTRICTED_HOURS_WARNING;
         obj = { notification: null };
         obj = { type: null, key: "restricted-hours-warning", duration: null, onDismiss: null, title: null, subtitle: null, inAppNotificationId: null };
         obj[0] = RESTRICTED_HOURS_WARNING;
-        let tmpResult = tmp(10029);
+        let tmpResult = tmp(10068);
         obj[2] = tmpResult.getNotificationDuration(RESTRICTED_HOURS_WARNING);
         obj[3] = function onDismiss() {
           callback(table[27]).clearNotification();
         };
         obj[4] = title;
         obj[5] = subtitle;
-        tmpResult = tmp(10029);
+        tmpResult = tmp(10068);
         obj[6] = tmpResult.generateInAppNotificationId();
         obj[0] = obj;
         handleEnqueueNotification(obj);
@@ -605,23 +600,20 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
     }
   },
   RESTRICTED_HOURS_STATE_CHANGE: function handleRestrictedHoursStateChange(isInRestrictedHours) {
-    let channelId;
-    let guildId;
-    let messageId;
     isInRestrictedHours = isInRestrictedHours.isInRestrictedHours;
     if (isInRestrictedHours) {
       if (null != _null) {
-        const result = require(10029) /* isReactionMilestoneNotification */.extractMetadataFromNotification(_null);
+        const result = isReactionMilestoneNotification.extractMetadataFromNotification(_null);
         ({ guildId, channelId, messageId } = result);
-        const obj2 = require(10029) /* isReactionMilestoneNotification */;
-        let obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "restricted_hours", in_app_notification_id: null };
+        const obj2 = isReactionMilestoneNotification;
+        obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "restricted_hours", in_app_notification_id: null };
         obj[0] = _null.type;
         obj[1] = guildId;
         obj[2] = channelId;
         obj[3] = messageId;
         obj[5] = _null.inAppNotificationId;
-        importDefault(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
-        const obj3 = importDefault(5042);
+        collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+        const obj3 = collectGuildAnalyticsMetadataDefault;
       }
       obj = obj1;
       obj1.removeAll(() => true);
@@ -642,8 +634,8 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
       if (channel.isForumLikeChannel()) {
         if (channel.isNewlyCreated) {
           if (obj2.allowInAppNotifications()) {
-            let tmpResult = tmp(10019);
-            tmpResult = tmp(10023);
+            let tmpResult = tmp(10058);
+            tmpResult = tmp(10062);
             if (tmpResult.shouldNotifyForForumThreadCreation(channel, channel, !tmpResult.isChannelFocused())) {
               const user = authStore.getUser(channel.ownerId);
               if (null == user) {
@@ -654,7 +646,7 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
                   return false;
                 } else {
                   const FORUM_THREAD_CREATED = constants3.FORUM_THREAD_CREATED;
-                  let obj = { notification: null };
+                  obj = { notification: null };
                   obj = { type: null, thread: null, threadCreator: null, parentChannel: null, guild: null, key: null, duration: null, onDismiss: null, inAppNotificationId: null };
                   obj[0] = FORUM_THREAD_CREATED;
                   obj[1] = channel;
@@ -662,12 +654,12 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
                   obj[3] = channel;
                   obj[4] = guild;
                   obj[5] = channel.id;
-                  obj[6] = tmp(10029).getNotificationDuration(FORUM_THREAD_CREATED);
+                  obj[6] = tmp(10068).getNotificationDuration(FORUM_THREAD_CREATED);
                   obj[7] = function onDismiss() {
                     callback(table[27]).clearNotification();
                   };
-                  const tmpResult1 = tmp(10029);
-                  obj[8] = tmp(10029).generateInAppNotificationId();
+                  const tmpResult1 = tmp(10068);
+                  obj[8] = tmp(10068).generateInAppNotificationId();
                   obj[0] = obj;
                   handleEnqueueNotification(obj);
                 }
@@ -683,14 +675,11 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
     return false;
   },
   CLEAR_IN_APP_NOTIFICATION: function handleClearInAppNotification() {
-    let closure_21 = null;
+    closure_21 = null;
     closure_21 = obj1.tryDrain();
   },
   ENQUEUE_IN_APP_NOTIFICATION: handleEnqueueNotification,
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
-    let channelId2;
-    let guildId;
-    let messageId;
     channelId = channelId.channelId;
     let tmp = null != _null;
     if (tmp) {
@@ -706,7 +695,7 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
       tmp = tmp4;
     }
     if (tmp) {
-      let obj = channelId(10029);
+      obj = channelId(10068);
       const result = obj.extractMetadataFromNotification(_null);
       ({ guildId, channelId: channelId2, messageId } = result);
       obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "notification_clicked", in_app_notification_id: null };
@@ -715,11 +704,11 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
       obj[2] = channelId2;
       obj[3] = messageId;
       obj[5] = _null.inAppNotificationId;
-      importDefault(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
-      const obj2 = importDefault(5042);
+      collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+      const obj2 = collectGuildAnalyticsMetadataDefault;
     }
     obj1.removeAll(function predicate(type) {
-      let tmp2 = type.type === outer1_18.MESSAGE;
+      let tmp2 = type.type === closure_1_18.MESSAGE;
       if (tmp2) {
         tmp2 = type.channel.id === channelId;
       }
@@ -763,9 +752,6 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
     }
   },
   CHANNEL_RTC_UPDATE_CHAT_OPEN: function handleVoiceChatOpen(channelId) {
-    let channelId2;
-    let guildId;
-    let messageId;
     channelId = channelId.channelId;
     const chatOpen = channelId.chatOpen;
     let tmp = null != _null;
@@ -774,7 +760,7 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
       const tmp3 = _null.type === constants3.MESSAGE && _null.channel.id === channelId && chatOpen;
     }
     if (tmp) {
-      let obj = channelId(10029);
+      obj = channelId(10068);
       const result = obj.extractMetadataFromNotification(_null);
       ({ guildId, channelId: channelId2, messageId } = result);
       obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "notification_clicked", in_app_notification_id: null };
@@ -783,11 +769,11 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
       obj[2] = channelId2;
       obj[3] = messageId;
       obj[5] = _null.inAppNotificationId;
-      chatOpen(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
-      const obj2 = chatOpen(5042);
+      chatOpen(5047).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+      const obj2 = chatOpen(5047);
     }
     obj1.removeAll(function predicate(type) {
-      let tmp = type.type === outer1_18.MESSAGE;
+      let tmp = type.type === closure_1_18.MESSAGE;
       if (tmp) {
         tmp = type.channel.id === channelId;
       }
@@ -811,26 +797,23 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
     }
   },
   USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsUpdate() {
-    let channelId;
-    let guildId;
-    let messageId;
-    let obj = require(10019) /* shouldNotifyBase */;
+    obj = shouldNotifyBase;
     const result = obj.allowInAppNotifications();
     let flag = !result;
     if (!result) {
       if (null != _null) {
-        const result1 = require(10029) /* isReactionMilestoneNotification */.extractMetadataFromNotification(_null);
+        const result1 = isReactionMilestoneNotification.extractMetadataFromNotification(_null);
         ({ guildId, channelId, messageId } = result1);
-        const tmpResult = require(10029) /* isReactionMilestoneNotification */;
+        const tmpResult = isReactionMilestoneNotification;
         obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "settings_updated", in_app_notification_id: null };
         obj[0] = _null.type;
         obj[1] = guildId;
         obj[2] = channelId;
         obj[3] = messageId;
         obj[5] = _null.inAppNotificationId;
-        importDefault(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+        collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
         _null = null;
-        const obj3 = importDefault(5042);
+        const obj3 = collectGuildAnalyticsMetadataDefault;
       }
       obj1.removeAll(() => true);
       flag = true;
@@ -839,9 +822,9 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
   },
   CURRENT_USER_UPDATE: function handleCurrentUserUpdate() {
     if (c24) {
-      let obj = require(5364) /* apexExperiment */;
+      obj = apexExperiment;
       if (obj.getIsFamilyCenterV3Enabled({ location: "InAppNotificationStore" })) {
-        let tmpResult = tmp(10016);
+        let tmpResult = tmp(10055);
         const currentUser = authStore.getCurrentUser();
         let restrictedSchedule;
         if (currentUser != null) {
@@ -855,35 +838,35 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
           }
         }
         const toScheduleSnapshotResult = tmpResult.toScheduleSnapshot(tmp8);
-        const EMPTY_SCHEDULE_SNAPSHOT = toScheduleSnapshotResult;
-        tmpResult = tmp(10016);
+        EMPTY_SCHEDULE_SNAPSHOT = toScheduleSnapshotResult;
+        tmpResult = tmp(10055);
         const diffSchedulesResult = tmpResult.diffSchedules(EMPTY_SCHEDULE_SNAPSHOT, toScheduleSnapshotResult);
         if (null != diffSchedulesResult) {
-          const EnableScreenDowntimeScheduleNotifications = tmp(4066).EnableScreenDowntimeScheduleNotifications;
+          const EnableScreenDowntimeScheduleNotifications = tmp(4069).EnableScreenDowntimeScheduleNotifications;
           if (EnableScreenDowntimeScheduleNotifications.getSetting()) {
             if (tmpResult1.allowInAppNotifications()) {
               const RESTRICTED_SCHEDULE_UPDATED = constants3.RESTRICTED_SCHEDULE_UPDATED;
               obj = { notification: null };
               obj = { type: null, key: null, duration: null, onDismiss: null, title: null, subtitle: null, inAppNotificationId: null };
               obj[0] = RESTRICTED_SCHEDULE_UPDATED;
-              const notificationDuration = tmp(10029).getNotificationDuration(RESTRICTED_SCHEDULE_UPDATED);
-              const tmpResult2 = tmp(10029);
-              obj[1] = tmp(10016).restrictedScheduleNotificationKey(diffSchedulesResult.kind);
+              const notificationDuration = tmp(10068).getNotificationDuration(RESTRICTED_SCHEDULE_UPDATED);
+              const tmpResult2 = tmp(10068);
+              obj[1] = tmp(10055).restrictedScheduleNotificationKey(diffSchedulesResult.kind);
               obj[2] = notificationDuration;
               obj[3] = function onDismiss() {
                 callback(table[27]).clearNotification();
               };
-              const tmpResult3 = tmp(10016);
-              obj[4] = tmp(10016).getRestrictedScheduleNotificationTitle(diffSchedulesResult.kind);
-              const tmpResult4 = tmp(10016);
-              obj[5] = tmp(10016).getRestrictedScheduleNotificationSubtitle(diffSchedulesResult.rule);
-              const tmpResult5 = tmp(10016);
-              obj[6] = tmp(10029).generateInAppNotificationId();
+              const tmpResult3 = tmp(10055);
+              obj[4] = tmp(10055).getRestrictedScheduleNotificationTitle(diffSchedulesResult.kind);
+              const tmpResult4 = tmp(10055);
+              obj[5] = tmp(10055).getRestrictedScheduleNotificationSubtitle(diffSchedulesResult.rule);
+              const tmpResult5 = tmp(10055);
+              obj[6] = tmp(10068).generateInAppNotificationId();
               obj[0] = obj;
               handleEnqueueNotification(obj);
-              const tmpResult6 = tmp(10029);
+              const tmpResult6 = tmp(10068);
             }
-            tmpResult1 = tmp(10019);
+            tmpResult1 = tmp(10058);
           }
         }
       } else {
@@ -897,7 +880,7 @@ const inAppNotificationStore = new InAppNotificationStore(require("dispatcher"),
 const map1 = new Map();
 let obj2 = {
   POST_CONNECTION_OPEN: function handlePostConnectionOpen() {
-    let c24 = true;
+    c24 = true;
     const currentUser = authStore.getCurrentUser();
     let restrictedSchedule;
     if (currentUser != null) {
@@ -910,52 +893,52 @@ let obj2 = {
         tmp3 = restrictedSchedule;
       }
     }
-    let closure_25 = require(10016) /* isOnlyDayLoss */.toScheduleSnapshot(tmp3);
+    closure_25 = isOnlyDayLoss.toScheduleSnapshot(tmp3);
     handleAlertMessage();
   },
   LOGOUT: function handleLogout() {
-    let c24 = false;
-    const EMPTY_SCHEDULE_SNAPSHOT = require(10016) /* isOnlyDayLoss */.EMPTY_SCHEDULE_SNAPSHOT;
-    let c21 = null;
+    c24 = false;
+    EMPTY_SCHEDULE_SNAPSHOT = isOnlyDayLoss.EMPTY_SCHEDULE_SNAPSHOT;
+    c21 = null;
     obj1.removeAll(() => true);
   },
   GUILD_UPDATE: handleAlertMessage,
   MESSAGE_CREATE: function handleIncomingMessage(message) {
     message = message.message;
     const channel_id = message.channel_id;
-    let obj = require(10018) /* canViewPotentiallyNSFWChannel */;
+    obj = canViewPotentiallyNSFWChannel;
     if (obj.canViewPotentiallyNSFWChannel(channel_id)) {
-      let tmpResult = tmp(5267);
+      let tmpResult = tmp(5272);
       if (tmpResult.shouldShowSpoilerGateForChannelId(channel_id)) {
         return false;
       } else {
-        if (importDefault(5385)(message)) {
+        if (isSystemMessageDefault(message)) {
           const SELF_MENTIONABLE_SYSTEM = constants4.SELF_MENTIONABLE_SYSTEM;
           if (!SELF_MENTIONABLE_SYSTEM.has(message.type)) {
             return false;
           }
         }
         if (!message.optimistic) {
-          tmpResult = tmp(10019);
+          tmpResult = tmp(10058);
           if (tmpResult.allowInAppNotifications()) {
             if (!tmp3Result.isEnabled()) {
               if (!uiStore.getChatOpen(channel_id)) {
-                const result = tmp(10019).shouldIncludeSelectedChannel();
-                const tmpResult1 = tmp(10019);
+                const result = tmp(10058).shouldIncludeSelectedChannel();
+                const tmpResult1 = tmp(10058);
                 if (tmpResult2.shouldNotify(message, channel_id, result)) {
                   const channel = store2.getChannel(channel_id);
                   if (null == channel) {
                     return false;
                   } else {
-                    const messageRecord = tmp(4803).createMessageRecord(message);
-                    const tmpResult3 = tmp(4803);
+                    const messageRecord = tmp(4808).createMessageRecord(message);
+                    const tmpResult3 = tmp(4808);
                     if (tmpResult4.isMessageContentPreviewable(messageRecord)) {
                       callback(message, channel.guild_id);
                       const MESSAGE = constants3.MESSAGE;
                       obj = { notification: null };
                       obj = { type: null, guild: null, channel: null, message: null, key: null, duration: null, onDismiss: null, parentChannel: null, inAppNotificationId: null, mentionCount: null };
                       obj[0] = MESSAGE;
-                      const notificationDuration = tmp(10029).getNotificationDuration(MESSAGE);
+                      const notificationDuration = tmp(10068).getNotificationDuration(MESSAGE);
                       obj[1] = store3.getGuild(channel.getGuildId());
                       obj[2] = channel;
                       obj[3] = messageRecord;
@@ -965,24 +948,24 @@ let obj2 = {
                         callback(table[27]).clearNotification();
                       };
                       obj[7] = obj7.getChannel(channel.parent_id);
-                      const tmpResult5 = tmp(10029);
-                      obj[8] = tmp(10029).generateInAppNotificationId();
+                      const tmpResult5 = tmp(10068);
+                      obj[8] = tmp(10068).generateInAppNotificationId();
                       obj[9] = mentionCount.getMentionCount(channel.id);
                       obj[0] = obj;
                       handleEnqueueNotification(obj);
                     } else {
                       return false;
                     }
-                    tmpResult4 = tmp(10028);
+                    tmpResult4 = tmp(10067);
                   }
                   obj7 = store2;
                 } else {
                   return false;
                 }
-                tmpResult2 = tmp(10019);
+                tmpResult2 = tmp(10058);
               }
             }
-            tmp3Result = importDefault(10027);
+            tmp3Result = NativeEventEmitterDefault;
           }
         }
         return false;
@@ -993,7 +976,7 @@ let obj2 = {
   },
   MESSAGE_REQUEST_NOTIFICATION_SENT: function handleMessageRequest(triggeringUserId) {
     triggeringUserId = triggeringUserId.triggeringUserId;
-    let obj = importDefault(10032);
+    obj = apexExperimentDefault;
     if (obj.getConfig({ location: "inAppNotificationStore" }).enabled) {
       const user = authStore.getUser(triggeringUserId);
       if (null == user) {
@@ -1007,12 +990,12 @@ let obj2 = {
         obj[2] = triggeringUserId.numMutualGuilds;
         const _HermesInternal = HermesInternal;
         obj[3] = "message-request-" + triggeringUserId;
-        obj[4] = require(10029) /* isReactionMilestoneNotification */.getNotificationDuration(MESSAGE_REQUEST);
+        obj[4] = isReactionMilestoneNotification.getNotificationDuration(MESSAGE_REQUEST);
         obj[5] = function onDismiss() {
           callback(table[27]).clearNotification();
         };
-        const obj4 = require(10029) /* isReactionMilestoneNotification */;
-        obj[6] = require(10029) /* isReactionMilestoneNotification */.generateInAppNotificationId();
+        const obj4 = isReactionMilestoneNotification;
+        obj[6] = isReactionMilestoneNotification.generateInAppNotificationId();
         obj[0] = obj;
         handleEnqueueNotification(obj);
       }
@@ -1021,41 +1004,38 @@ let obj2 = {
     }
   },
   MESSAGE_ACK: function handleMessageAck(channelId) {
-    let channelId2;
-    let guildId;
-    let messageId2;
     channelId = channelId.channelId;
     const messageId = channelId.messageId;
     let tmp = null != _null;
     if (tmp) {
       let tmp4 = _null.type === constants3.MESSAGE && tmp2.channel.id === channelId;
       if (tmp4) {
-        let obj = messageId(11);
+        obj = messageId(11);
         tmp4 = obj.compare(tmp2.message.id, messageId) <= 0;
       }
       tmp = tmp4;
     }
     if (tmp) {
-      const result = channelId(10029).extractMetadataFromNotification(_null);
+      const result = channelId(10068).extractMetadataFromNotification(_null);
       ({ guildId, channelId: channelId2, messageId: messageId2 } = result);
-      const obj2 = channelId(10029);
+      const obj2 = channelId(10068);
       obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "message_acked", in_app_notification_id: null };
       obj[0] = _null.type;
       obj[1] = guildId;
       obj[2] = channelId2;
       obj[3] = messageId2;
       obj[5] = _null.inAppNotificationId;
-      messageId(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
-      const obj3 = messageId(5042);
+      messageId(5047).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+      const obj3 = messageId(5047);
     }
     obj1.removeAll(function predicate(type) {
-      let tmp = type.type === outer1_18.MESSAGE;
+      let tmp = type.type === closure_1_18.MESSAGE;
       if (tmp) {
         tmp = type.channel.id === channelId;
       }
       if (tmp) {
-        tmp = messageId(outer1_2[39]).compare(type.message.id, messageId) <= 0;
-        const obj = messageId(outer1_2[39]);
+        tmp = messageId(closure_1_2[39]).compare(type.message.id, messageId) <= 0;
+        obj = messageId(closure_1_2[39]);
       }
       return tmp;
     });
@@ -1079,16 +1059,12 @@ let obj2 = {
     }
   },
   REACTION_NOTIFICATION_SENT: function handleReactionNotification(arg0) {
-    let channelId;
-    let emoji;
-    let guildId;
-    let message;
     ({ message, emoji } = arg0);
     if (null != message) {
       if (null != message.reactions) {
         if (null != emoji) {
           if (obj14.allowInAppNotifications()) {
-            let tmp19Result = tmp19(4488);
+            let tmp19Result = tmp19(4492);
             let tryParseChannelPathResult = tmp19Result.tryParseChannelPath(tmp);
             if (tryParseChannelPathResult == null) {
               tryParseChannelPathResult = { channelId: null, guildId: null };
@@ -1096,7 +1072,7 @@ let obj2 = {
             ({ channelId, guildId } = tryParseChannelPathResult);
             if (null != channelId) {
               if (null != guildId) {
-                const ReactionNotifications = tmp19(4066).ReactionNotifications;
+                const ReactionNotifications = tmp19(4069).ReactionNotifications;
                 const setting = ReactionNotifications.getSetting();
                 if (setting === tmp19(1306).ReactionNotificationType.NOTIFICATIONS_DISABLED) {
                   return false;
@@ -1110,7 +1086,7 @@ let obj2 = {
                   if (result) {
                     result = channel.type === constants2.GUILD_ANNOUNCEMENT;
                   }
-                  tmp19Result = tmp19(10029);
+                  tmp19Result = tmp19(10068);
                   if (channel != null) {
                     type = channel.type;
                   }
@@ -1122,16 +1098,16 @@ let obj2 = {
                   if (null != channel) {
                     if (!obj4.isEnabled()) {
                       if (!uiStore.getChatOpen(channelId)) {
-                        const result1 = tmp19(10019).shouldIncludeSelectedChannel();
-                        const tmp19Result1 = tmp19(10019);
-                        let obj = { message: null, channel: null, reactor: null, includeSelectedChannel: null };
+                        const result1 = tmp19(10058).shouldIncludeSelectedChannel();
+                        const tmp19Result1 = tmp19(10058);
+                        obj = { message: null, channel: null, reactor: null, includeSelectedChannel: null };
                         obj[0] = message;
                         obj[1] = channel;
                         obj[2] = user;
                         obj[3] = result1;
                         if (tmp19Result2.shouldNotifyForReaction(obj)) {
-                          const messageRecord = tmp19(4803).createMessageRecord(message);
-                          const tmp19Result3 = tmp19(4803);
+                          const messageRecord = tmp19(4808).createMessageRecord(message);
+                          const tmp19Result3 = tmp19(4808);
                           if (tmp19Result4.isMessageContentPreviewable(messageRecord)) {
                             const reactions = message.reactions;
                             const found = reactions.find((emoji) => {
@@ -1151,10 +1127,10 @@ let obj2 = {
                             }
                             const REACTION = constants3.REACTION;
                             obj = { notification: null };
-                            const obj1 = { type: null, key: null, duration: null, onDismiss: null, channel: null, guild: null, user: null, message: null, parentChannel: null, reaction: null, inAppNotificationId: null };
+                            obj1 = { type: null, key: null, duration: null, onDismiss: null, channel: null, guild: null, user: null, message: null, parentChannel: null, reaction: null, inAppNotificationId: null };
                             obj1[0] = REACTION;
                             obj1[1] = channelId;
-                            obj1[2] = tmp19(10029).getNotificationDuration(REACTION);
+                            obj1[2] = tmp19(10068).getNotificationDuration(REACTION);
                             obj1[3] = function onDismiss() {
                               callback(table[27]).clearNotification();
                             };
@@ -1164,18 +1140,18 @@ let obj2 = {
                             obj1[7] = messageRecord;
                             obj1[8] = store2.getChannel(channel.parent_id);
                             obj1[9] = found;
-                            const tmp19Result5 = tmp19(10029);
-                            obj1[10] = tmp19(10029).generateInAppNotificationId();
+                            const tmp19Result5 = tmp19(10068);
+                            obj1[10] = tmp19(10068).generateInAppNotificationId();
                             obj[0] = obj1;
                             handleEnqueueNotification(obj);
                           } else {
                             return false;
                           }
-                          tmp19Result4 = tmp19(10028);
+                          tmp19Result4 = tmp19(10067);
                         } else {
                           return false;
                         }
-                        tmp19Result2 = tmp19(10019);
+                        tmp19Result2 = tmp19(10058);
                       }
                     }
                     return false;
@@ -1186,7 +1162,7 @@ let obj2 = {
             }
             return false;
           }
-          obj14 = emoji(10019);
+          obj14 = emoji(10058);
         }
       }
     }
@@ -1194,7 +1170,7 @@ let obj2 = {
   },
   MESSAGE_REMINDER_DUE: function handleMessageReminderDue(savedMessage) {
     savedMessage = savedMessage.savedMessage;
-    let obj = require(8484) /* ForLaterFreemiumConfig */;
+    obj = ForLaterFreemiumConfig;
     if (obj.isForLaterExperimentOn("inAppNotificationStore")) {
       if (null != savedMessage.message) {
         const channel = store2.getChannel(savedMessage.saveData.channelId);
@@ -1205,7 +1181,7 @@ let obj2 = {
           obj = { type: null, key: null, duration: null, onDismiss: null, channel: null, author: null, savedMessage: null, inAppNotificationId: null };
           obj[0] = MESSAGE_REMINDER;
           obj[1] = "" + savedMessage.saveData.channelId + "-" + savedMessage.saveData.messageId;
-          let tmpResult = tmp(10029);
+          let tmpResult = tmp(10068);
           obj[2] = tmpResult.getNotificationDuration(MESSAGE_REMINDER);
           obj[3] = function onDismiss() {
             callback(table[27]).clearNotification();
@@ -1213,7 +1189,7 @@ let obj2 = {
           obj[4] = channel;
           obj[5] = savedMessage.message.author;
           obj[6] = savedMessage;
-          tmpResult = tmp(10029);
+          tmpResult = tmp(10068);
           obj[7] = tmpResult.generateInAppNotificationId();
           obj[0] = obj;
           handleEnqueueNotification(obj);
@@ -1222,24 +1198,22 @@ let obj2 = {
     }
   },
   RESTRICTED_HOURS_WARNING: function handleRestrictedHoursWarning(arg0) {
-    let subtitle;
-    let title;
     ({ title, subtitle } = arg0);
-    let obj = require(5364) /* apexExperiment */;
+    obj = apexExperiment;
     if (obj.getIsFamilyCenterV3Enabled({ location: "InAppNotificationStore" })) {
       if (obj.screenDowntimeReminder) {
         const RESTRICTED_HOURS_WARNING = constants3.RESTRICTED_HOURS_WARNING;
         obj = { notification: null };
         obj = { type: null, key: "restricted-hours-warning", duration: null, onDismiss: null, title: null, subtitle: null, inAppNotificationId: null };
         obj[0] = RESTRICTED_HOURS_WARNING;
-        let tmpResult = tmp(10029);
+        let tmpResult = tmp(10068);
         obj[2] = tmpResult.getNotificationDuration(RESTRICTED_HOURS_WARNING);
         obj[3] = function onDismiss() {
           callback(table[27]).clearNotification();
         };
         obj[4] = title;
         obj[5] = subtitle;
-        tmpResult = tmp(10029);
+        tmpResult = tmp(10068);
         obj[6] = tmpResult.generateInAppNotificationId();
         obj[0] = obj;
         handleEnqueueNotification(obj);
@@ -1251,23 +1225,20 @@ let obj2 = {
     }
   },
   RESTRICTED_HOURS_STATE_CHANGE: function handleRestrictedHoursStateChange(isInRestrictedHours) {
-    let channelId;
-    let guildId;
-    let messageId;
     isInRestrictedHours = isInRestrictedHours.isInRestrictedHours;
     if (isInRestrictedHours) {
       if (null != _null) {
-        const result = require(10029) /* isReactionMilestoneNotification */.extractMetadataFromNotification(_null);
+        const result = isReactionMilestoneNotification.extractMetadataFromNotification(_null);
         ({ guildId, channelId, messageId } = result);
-        const obj2 = require(10029) /* isReactionMilestoneNotification */;
-        let obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "restricted_hours", in_app_notification_id: null };
+        const obj2 = isReactionMilestoneNotification;
+        obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "restricted_hours", in_app_notification_id: null };
         obj[0] = _null.type;
         obj[1] = guildId;
         obj[2] = channelId;
         obj[3] = messageId;
         obj[5] = _null.inAppNotificationId;
-        importDefault(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
-        const obj3 = importDefault(5042);
+        collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+        const obj3 = collectGuildAnalyticsMetadataDefault;
       }
       obj = obj1;
       obj1.removeAll(() => true);
@@ -1288,8 +1259,8 @@ let obj2 = {
       if (channel.isForumLikeChannel()) {
         if (channel.isNewlyCreated) {
           if (obj2.allowInAppNotifications()) {
-            let tmpResult = tmp(10019);
-            tmpResult = tmp(10023);
+            let tmpResult = tmp(10058);
+            tmpResult = tmp(10062);
             if (tmpResult.shouldNotifyForForumThreadCreation(channel, channel, !tmpResult.isChannelFocused())) {
               const user = authStore.getUser(channel.ownerId);
               if (null == user) {
@@ -1300,7 +1271,7 @@ let obj2 = {
                   return false;
                 } else {
                   const FORUM_THREAD_CREATED = constants3.FORUM_THREAD_CREATED;
-                  let obj = { notification: null };
+                  obj = { notification: null };
                   obj = { type: null, thread: null, threadCreator: null, parentChannel: null, guild: null, key: null, duration: null, onDismiss: null, inAppNotificationId: null };
                   obj[0] = FORUM_THREAD_CREATED;
                   obj[1] = channel;
@@ -1308,12 +1279,12 @@ let obj2 = {
                   obj[3] = channel;
                   obj[4] = guild;
                   obj[5] = channel.id;
-                  obj[6] = tmp(10029).getNotificationDuration(FORUM_THREAD_CREATED);
+                  obj[6] = tmp(10068).getNotificationDuration(FORUM_THREAD_CREATED);
                   obj[7] = function onDismiss() {
                     callback(table[27]).clearNotification();
                   };
-                  const tmpResult1 = tmp(10029);
-                  obj[8] = tmp(10029).generateInAppNotificationId();
+                  const tmpResult1 = tmp(10068);
+                  obj[8] = tmp(10068).generateInAppNotificationId();
                   obj[0] = obj;
                   handleEnqueueNotification(obj);
                 }
@@ -1329,14 +1300,11 @@ let obj2 = {
     return false;
   },
   CLEAR_IN_APP_NOTIFICATION: function handleClearInAppNotification() {
-    let closure_21 = null;
+    closure_21 = null;
     closure_21 = obj1.tryDrain();
   },
   ENQUEUE_IN_APP_NOTIFICATION: handleEnqueueNotification,
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
-    let channelId2;
-    let guildId;
-    let messageId;
     channelId = channelId.channelId;
     let tmp = null != _null;
     if (tmp) {
@@ -1352,7 +1320,7 @@ let obj2 = {
       tmp = tmp4;
     }
     if (tmp) {
-      let obj = channelId(10029);
+      obj = channelId(10068);
       const result = obj.extractMetadataFromNotification(_null);
       ({ guildId, channelId: channelId2, messageId } = result);
       obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "notification_clicked", in_app_notification_id: null };
@@ -1361,11 +1329,11 @@ let obj2 = {
       obj[2] = channelId2;
       obj[3] = messageId;
       obj[5] = _null.inAppNotificationId;
-      importDefault(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
-      const obj2 = importDefault(5042);
+      collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+      const obj2 = collectGuildAnalyticsMetadataDefault;
     }
     obj1.removeAll(function predicate(type) {
-      let tmp2 = type.type === outer1_18.MESSAGE;
+      let tmp2 = type.type === closure_1_18.MESSAGE;
       if (tmp2) {
         tmp2 = type.channel.id === channelId;
       }
@@ -1409,9 +1377,6 @@ let obj2 = {
     }
   },
   CHANNEL_RTC_UPDATE_CHAT_OPEN: function handleVoiceChatOpen(channelId) {
-    let channelId2;
-    let guildId;
-    let messageId;
     channelId = channelId.channelId;
     const chatOpen = channelId.chatOpen;
     let tmp = null != _null;
@@ -1420,7 +1385,7 @@ let obj2 = {
       const tmp3 = _null.type === constants3.MESSAGE && _null.channel.id === channelId && chatOpen;
     }
     if (tmp) {
-      let obj = channelId(10029);
+      obj = channelId(10068);
       const result = obj.extractMetadataFromNotification(_null);
       ({ guildId, channelId: channelId2, messageId } = result);
       obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "notification_clicked", in_app_notification_id: null };
@@ -1429,11 +1394,11 @@ let obj2 = {
       obj[2] = channelId2;
       obj[3] = messageId;
       obj[5] = _null.inAppNotificationId;
-      chatOpen(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
-      const obj2 = chatOpen(5042);
+      chatOpen(5047).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+      const obj2 = chatOpen(5047);
     }
     obj1.removeAll(function predicate(type) {
-      let tmp = type.type === outer1_18.MESSAGE;
+      let tmp = type.type === closure_1_18.MESSAGE;
       if (tmp) {
         tmp = type.channel.id === channelId;
       }
@@ -1457,26 +1422,23 @@ let obj2 = {
     }
   },
   USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsUpdate() {
-    let channelId;
-    let guildId;
-    let messageId;
-    let obj = require(10019) /* shouldNotifyBase */;
+    obj = shouldNotifyBase;
     const result = obj.allowInAppNotifications();
     let flag = !result;
     if (!result) {
       if (null != _null) {
-        const result1 = require(10029) /* isReactionMilestoneNotification */.extractMetadataFromNotification(_null);
+        const result1 = isReactionMilestoneNotification.extractMetadataFromNotification(_null);
         ({ guildId, channelId, messageId } = result1);
-        const tmpResult = require(10029) /* isReactionMilestoneNotification */;
+        const tmpResult = isReactionMilestoneNotification;
         obj = { type: null, guild_id: null, channel_id: null, message_id: null, dismiss_reason: "settings_updated", in_app_notification_id: null };
         obj[0] = _null.type;
         obj[1] = guildId;
         obj[2] = channelId;
         obj[3] = messageId;
         obj[5] = _null.inAppNotificationId;
-        importDefault(5042).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+        collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
         _null = null;
-        const obj3 = importDefault(5042);
+        const obj3 = collectGuildAnalyticsMetadataDefault;
       }
       obj1.removeAll(() => true);
       flag = true;
@@ -1485,9 +1447,9 @@ let obj2 = {
   },
   CURRENT_USER_UPDATE: function handleCurrentUserUpdate() {
     if (c24) {
-      let obj = require(5364) /* apexExperiment */;
+      obj = apexExperiment;
       if (obj.getIsFamilyCenterV3Enabled({ location: "InAppNotificationStore" })) {
-        let tmpResult = tmp(10016);
+        let tmpResult = tmp(10055);
         const currentUser = authStore.getCurrentUser();
         let restrictedSchedule;
         if (currentUser != null) {
@@ -1501,35 +1463,35 @@ let obj2 = {
           }
         }
         const toScheduleSnapshotResult = tmpResult.toScheduleSnapshot(tmp8);
-        const EMPTY_SCHEDULE_SNAPSHOT = toScheduleSnapshotResult;
-        tmpResult = tmp(10016);
+        EMPTY_SCHEDULE_SNAPSHOT = toScheduleSnapshotResult;
+        tmpResult = tmp(10055);
         const diffSchedulesResult = tmpResult.diffSchedules(EMPTY_SCHEDULE_SNAPSHOT, toScheduleSnapshotResult);
         if (null != diffSchedulesResult) {
-          const EnableScreenDowntimeScheduleNotifications = tmp(4066).EnableScreenDowntimeScheduleNotifications;
+          const EnableScreenDowntimeScheduleNotifications = tmp(4069).EnableScreenDowntimeScheduleNotifications;
           if (EnableScreenDowntimeScheduleNotifications.getSetting()) {
             if (tmpResult1.allowInAppNotifications()) {
               const RESTRICTED_SCHEDULE_UPDATED = constants3.RESTRICTED_SCHEDULE_UPDATED;
               obj = { notification: null };
               obj = { type: null, key: null, duration: null, onDismiss: null, title: null, subtitle: null, inAppNotificationId: null };
               obj[0] = RESTRICTED_SCHEDULE_UPDATED;
-              const notificationDuration = tmp(10029).getNotificationDuration(RESTRICTED_SCHEDULE_UPDATED);
-              const tmpResult2 = tmp(10029);
-              obj[1] = tmp(10016).restrictedScheduleNotificationKey(diffSchedulesResult.kind);
+              const notificationDuration = tmp(10068).getNotificationDuration(RESTRICTED_SCHEDULE_UPDATED);
+              const tmpResult2 = tmp(10068);
+              obj[1] = tmp(10055).restrictedScheduleNotificationKey(diffSchedulesResult.kind);
               obj[2] = notificationDuration;
               obj[3] = function onDismiss() {
                 callback(table[27]).clearNotification();
               };
-              const tmpResult3 = tmp(10016);
-              obj[4] = tmp(10016).getRestrictedScheduleNotificationTitle(diffSchedulesResult.kind);
-              const tmpResult4 = tmp(10016);
-              obj[5] = tmp(10016).getRestrictedScheduleNotificationSubtitle(diffSchedulesResult.rule);
-              const tmpResult5 = tmp(10016);
-              obj[6] = tmp(10029).generateInAppNotificationId();
+              const tmpResult3 = tmp(10055);
+              obj[4] = tmp(10055).getRestrictedScheduleNotificationTitle(diffSchedulesResult.kind);
+              const tmpResult4 = tmp(10055);
+              obj[5] = tmp(10055).getRestrictedScheduleNotificationSubtitle(diffSchedulesResult.rule);
+              const tmpResult5 = tmp(10055);
+              obj[6] = tmp(10068).generateInAppNotificationId();
               obj[0] = obj;
               handleEnqueueNotification(obj);
-              const tmpResult6 = tmp(10029);
+              const tmpResult6 = tmp(10068);
             }
-            tmpResult1 = tmp(10019);
+            tmpResult1 = tmp(10058);
           }
         }
       } else {
@@ -1540,6 +1502,6 @@ let obj2 = {
     }
   }
 };
-let result = require("computeAlertSettings").fileFinishedImporting("stores/native/InAppNotificationStore.tsx");
+let result = require("set").fileFinishedImporting("stores/native/InAppNotificationStore.tsx");
 
 export default inAppNotificationStore;

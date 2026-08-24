@@ -1,18 +1,19 @@
-// Module ID: 16508
-// Function ID: 16509
+// Module ID: 16603
+// Function ID: 16604
 // Name: useFormattedEndTime
 // Dependencies: [1922, 1236, 589, 2]
 // Exports: default
 
-// Module 16508 (useFormattedEndTime)
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 16603 (useFormattedEndTime)
+import initialize from "initialize" /* 589 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
-const require = arg1;
-const result = require("initialize").fileFinishedImporting("modules/parent_tools/hooks/useFormattedEndTime.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useFormattedEndTime.tsx");
 
 export default function useFormattedEndTime() {
-  const items = [mergeGuildAvatar];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
+  const items = [closure_2];
+  return initialize.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let nextEndTime;
     if (currentUser != null) {

@@ -1,27 +1,26 @@
-// Module ID: 14391
-// Function ID: 14392
+// Module ID: 14459
+// Function ID: 14460
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 4667, 4661, 712, 4115, 4664, 4756, 14392, 4734, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4674, 4668, 712, 4119, 4671, 4761, 14460, 4739, 1236, 2]
 // Exports: default
 
-// Module 14391 (BountiesScrollIndicatorOverlay)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { StyleSheet } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14459 (BountiesScrollIndicatorOverlay)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { StyleSheet } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = ["rgba(0,0,0,0)", "rgba(0,0,0,0.7)", "rgba(0,0,0,1)"];
 let closure_9 = 5000 + require("timingNone").timingSlowDuration;
 let closure_10 = createCacheKey.createStyles(() => {
   let obj = { scrollIndicator: null, scrollIndicatorContent: null, scrollIndicatorText: null };
-  obj = { position: "absolute", left: 0, right: 0, bottom: 0, height: "45%", alignItems: "center", justifyContent: "center", paddingHorizontal: importDefault(712).space.PX_16 };
+  obj = { position: "absolute", left: 0, right: 0, bottom: 0, height: "45%", alignItems: "center", justifyContent: "center", paddingHorizontal: ThemesDefault.space.PX_16 };
   obj[0] = obj;
-  obj = { position: "absolute", bottom: 124, left: 0, right: 0, alignItems: "center", justifyContent: "flex-start", gap: importDefault(712).space.PX_8 };
+  obj = { position: "absolute", bottom: 124, left: 0, right: 0, alignItems: "center", justifyContent: "flex-start", gap: ThemesDefault.space.PX_8 };
   obj[1] = obj;
   obj[2] = { textAlign: "center" };
   return obj;
@@ -30,12 +29,12 @@ let closure_11 = { code: "function BountiesScrollIndicatorOverlayTsx1(){const{wi
 let closure_12 = { code: "function BountiesScrollIndicatorOverlayTsx2(){const{runOnJS,animationCallbackJSThread}=this.__closure;runOnJS(animationCallbackJSThread)();}" };
 let closure_13 = { code: "function BountiesScrollIndicatorOverlayTsx3(){const{withTiming,visible,isEndCardVisible,enabled,timingStandard,timingSlow}=this.__closure;return{opacity:withTiming(visible&&!isEndCardVisible?1:0,isEndCardVisible||!enabled?timingStandard:timingSlow)};}" };
 let closure_14 = { code: "function BountiesScrollIndicatorOverlayTsx4(){const{withTiming,visible,timingStandard}=this.__closure;return{transform:[{scale:withTiming(visible?1:0.9,timingStandard)}]};}" };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollIndicatorOverlay.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollIndicatorOverlay.tsx");
 
 export default function BountiesScrollIndicatorOverlay(enabled) {
   enabled = enabled.enabled;
   const isEndCardVisible = enabled.isEndCardVisible;
-  let importDefault = isEndCardVisible;
+  importDefault = isEndCardVisible;
   let first;
   let callback;
   callback = undefined;
@@ -57,30 +56,30 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
       timeout = false;
       const _setTimeout = setTimeout;
       timeout = setTimeout(() => {
-        outer2_1(closure_0);
+        closure_2_1(closure_0);
         closure_0 = !closure_0;
         let num = 5000;
         if (closure_0) {
-          num = outer2_9;
+          num = closure_2_9;
         }
-        let outer1_0 = setTimeout(() => {
-          outer2_1(closure_0);
+        closure_1_0 = setTimeout(() => {
+          closure_2_1(closure_0);
           closure_0 = !closure_0;
           let num = 5000;
           if (closure_0) {
-            num = outer2_9;
+            num = closure_2_9;
           }
-          let outer1_0 = setTimeout(() => {
-            outer2_1(closure_0);
+          closure_1_0 = setTimeout(() => {
+            closure_2_1(closure_0);
             closure_0 = !closure_0;
             let num = 5000;
             if (closure_0) {
-              num = outer2_9;
+              num = closure_2_9;
             }
-            let outer1_0 = setTimeout(() => { ... }, num);
+            closure_1_0 = setTimeout(() => { ... }, num);
           }, num);
         }, num);
-      }, outer1_9);
+      }, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);
@@ -98,28 +97,28 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
     }
   }
   callback = obj.useCallback(() => {
-    _undefined(false);
+    callback(false);
   }, []);
-  let obj1 = enabled(first[7]);
+  obj1 = enabled(first[7]);
   class E {
     constructor() {
       tmp = enabled;
-      tmp2 = useEffect;
-      obj = enabled(useEffect[8]);
+      tmp2 = closure_2;
+      obj = enabled(closure_2[8]);
       num = 0;
-      if (useEffect) {
+      if (closure_2) {
         num = 1;
       }
       tmpResult = tmp(tmp2[4]);
       tmp4 = enabled ? tmpResult.timingSlow : tmpResult.timingStandard;
       obj = { opacity: null };
       fn = function t() {
-        outer1_0(outer1_2[7]).runOnJS(noop)();
+        closure_1_0(closure_1_2[7]).runOnJS(closure_4)();
       };
-      obj1 = { runOnJS: tmp(tmp2[7]).runOnJS, animationCallbackJSThread: useEffect };
+      obj1 = { runOnJS: tmp(tmp2[7]).runOnJS, animationCallbackJSThread: closure_4 };
       fn.__closure = obj1;
       fn.__workletHash = 7847207274031;
-      fn.__initData = outer1_12;
+      fn.__initData = closure_1_12;
       obj[0] = obj.withTiming(num, tmp4, "respect-motion-settings", fn);
       return obj;
     }
@@ -135,11 +134,11 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
     let num = 0;
     if (first) {
       num = 0;
-      if (!c1) {
+      if (!closure_1) {
         num = 1;
       }
     }
-    if (!c1) {
+    if (!closure_1) {
       if (enabled) {
         let timingStandard = tmp(tmp2[4]).timingSlow;
       }
@@ -158,10 +157,10 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   class A {
     constructor() {
       tmp = enabled;
-      tmp2 = useEffect;
-      obj = enabled(useEffect[8]);
+      tmp2 = closure_2;
+      obj = enabled(closure_2[8]);
       num = 0.9;
-      if (useEffect) {
+      if (closure_2) {
         num = 1;
       }
       obj = { transform: null };
@@ -179,9 +178,8 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   const animatedStyle2 = obj5.useAnimatedStyle(A);
   const obj2 = { style: items1, pointerEvents: "none", children: null };
   items1 = [tmp.scrollIndicator, enabled.opacityStyle];
-  obj3 = { style: items2, children: null };
+  obj3 = { style: items2, children: callback2(importDefault(first[9]), obj4) };
   items2 = [StyleSheet.absoluteFill, animatedStyle1];
-  obj3[1] = callback2(importDefault(first[9]), { colors: closure_8, style: StyleSheet.absoluteFill });
   const items3 = [callback2(importDefault(first[7]).View, obj3), ];
   obj5 = { style: items4, children: null };
   items4 = [tmp.scrollIndicatorContent, ];

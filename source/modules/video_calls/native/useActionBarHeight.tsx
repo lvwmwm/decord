@@ -1,30 +1,33 @@
-// Module ID: 8693
-// Function ID: 8694
+// Module ID: 8730
+// Function ID: 8731
 // Name: sum
-// Dependencies: [4497, 676, 6951, 8694, 8697, 10526, 589, 2]
+// Dependencies: [4501, 676, 6989, 8731, 8734, 10565, 589, 2]
 // Exports: default
 
-// Module 8693 (sum)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import { InputModes } from "ME";
-import { ACTION_SHEET_HANDLE_SPACING as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
+// Module 8730 (sum)
+import initialize from "initialize" /* 589 */;
+import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 8734 */;
+import useCanCurrentUserSpeakInChannelDefault from "useCanCurrentUserSpeakInChannel" /* 10565 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4501 */;
+import { InputModes } from "ME" /* 676 */;
+import { ACTION_SHEET_HANDLE_SPACING as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
 
-const require = arg1;
+require = arg1;
 let sum = 2 * require("ActionButton").SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;
-const result = require("ACTION_SHEET_START_HEIGHT_RATIO").fileFinishedImporting("modules/video_calls/native/useActionBarHeight.tsx");
+const result = require("set").fileFinishedImporting("modules/video_calls/native/useActionBarHeight.tsx");
 
 export default function useActionBarHeight(id) {
-  const isFiveButtonLayout = require(8697) /* useIsFiveButtonLayout */.useIsFiveButtonLayout(id);
-  const obj = require(8697) /* useIsFiveButtonLayout */;
-  const tmp2 = importDefault(10526)(id);
-  const items = [_detectH265HardwareDecode];
+  const isFiveButtonLayout = useIsFiveButtonLayout.useIsFiveButtonLayout(id);
+  const obj = useIsFiveButtonLayout;
+  const tmp2 = useCanCurrentUserSpeakInChannelDefault(id);
+  const items = [closure_3];
   let num = 88;
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK);
+  const stateFromStores = initialize.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK);
   if (isFiveButtonLayout) {
     num = closure_6;
   }
   let num2 = 0;
-  const sum = num + closure_5;
+  sum = num + closure_5;
   if (stateFromStores) {
     num2 = 0;
     if (tmp2) {

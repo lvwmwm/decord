@@ -1,52 +1,55 @@
-// Module ID: 15534
-// Function ID: 15535
+// Module ID: 15599
+// Function ID: 15600
 // Name: FavoritesGuildChannels
-// Dependencies: [19, 15464, 21, 8633, 4751, 15535, 15526, 15536, 15502, 15397, 15463, 15541, 15366, 2]
+// Dependencies: [19, 15528, 21, 8670, 4756, 15600, 15591, 15601, 15567, 15461, 15527, 15606, 15430, 2]
 // Exports: default
 
-// Module 15534 (FavoritesGuildChannels)
-import "noop";
-import { useFavoritesGuildSuggestionCount as closure_3 } from "items";
-import jsxProd from "jsxProd";
+// Module 15599 (FavoritesGuildChannels)
+import noopAll from "noop" /* 19 */;
+import getFontScale from "getFontScale" /* 4756 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 8670 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 15461 */;
+import PX_8Default from "PX_8" /* 15527 */;
+import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 15567 */;
+import getMissingFavoriteThreadIds from "getMissingFavoriteThreadIds" /* 15600 */;
+import FavoritesGuildSuggestionsLoaderInnerDefault from "FavoritesGuildSuggestionsLoaderInner" /* 15601 */;
+import EmptyBodyDefault from "EmptyBody" /* 15606 */;
+import { useFavoritesGuildSuggestionCount as closure_3 } from "items" /* 15528 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5, Fragment: closure_6 } = jsxProd);
-const result = require("jsxProd").fileFinishedImporting("modules/favorites/native/FavoritesGuildChannels.tsx");
+const result = require("set").fileFinishedImporting("modules/favorites/native/FavoritesGuildChannels.tsx");
 
 export default function FavoritesGuildChannels(arg0) {
-  let guildChannels;
-  let hasNoChannels;
-  let shouldShowEmptyState;
   const tmp = callback();
   let tmp2 = importDefault;
   let obj = dependencyMap;
-  let obj1 = require(4751) /* getFontScale */;
+  obj1 = getFontScale;
   const fontScale = obj1.useFontScale();
-  let obj2 = require(15535) /* getMissingFavoriteThreadIds */;
+  let obj2 = getMissingFavoriteThreadIds;
   obj = { withSuggestionsNotice: tmp > 0 };
   const favoritesGuildChannelList = obj2.useFavoritesGuildChannelList(obj);
   ({ guildChannels, shouldShowEmptyState, hasNoChannels } = favoritesGuildChannelList);
-  const tmp3 = importDefault(8633)();
+  const tmp3 = useScaledRowHeightDefault();
   if (!obj5.useShouldRenderChannelList()) {
     return null;
   } else {
     let tmp2Result = arg0;
-    const items = [callback2(tmp2(15536), {}), ];
+    const items = [callback2(FavoritesGuildSuggestionsLoaderInnerDefault, {}), ];
     if (hasNoChannels) {
       obj = { style: null, contentInset: null, children: null };
       ({ style: obj8[0], contentInset: obj8[1] } = tmp2Result);
-      tmp2Result = tmp2(15502);
+      tmp2Result = ChannelListPanelBackdropDefault;
       obj1 = { guild: null, showExtraButtons: false, canOpenGuildActionSheet: false };
       obj1[0] = tmp2Result.guild;
-      const items1 = [tmp10(tmp2(15397), obj1), , ];
-      tmp2Result = tmp2(15463);
+      const items1 = [tmp10(ChannelListStickyHeaderDefault, obj1), , ];
+      tmp2Result = PX_8Default;
       items1[1] = tmp10(tmp2Result, {});
       let tmp10Result = null;
       if (shouldShowEmptyState) {
-        tmp2 = tmp2(15541);
+        tmp2 = EmptyBodyDefault;
         obj = {};
         tmp10Result = tmp10(tmp2, obj);
       }
@@ -58,9 +61,9 @@ export default function FavoritesGuildChannels(arg0) {
       const merged = Object.assign(tmp2Result);
       obj2.guildChannels = guildChannels;
       obj2.guildChannelsVersion = 0;
-      obj2.favoritesSuggestionsNoticeHeight = tmp4(15463).getFavoritesSuggestionsNoticeHeight(fontScale, tmp3, tmp);
-      tmp10Result = tmp10(tmp4(15366).ChannelList, obj2);
-      const tmp4Result = tmp4(15463);
+      obj2.favoritesSuggestionsNoticeHeight = tmp4(15527).getFavoritesSuggestionsNoticeHeight(fontScale, tmp3, tmp);
+      tmp10Result = tmp10(tmp4(15430).ChannelList, obj2);
+      const tmp4Result = tmp4(15527);
     }
     const obj3 = { children: null };
     items[1] = tmp10Result;

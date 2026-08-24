@@ -1,11 +1,12 @@
-// Module ID: 4267
-// Function ID: 4268
+// Module ID: 4271
+// Function ID: 4272
 // Name: handleGuildBoostsUpdate
-// Dependencies: [4045, 589, 709, 2]
+// Dependencies: [4048, 589, 709, 2]
 
-// Module 4267 (handleGuildBoostsUpdate)
-import reset from "reset";
-import { Store } from "initialize";
+// Module 4271 (handleGuildBoostsUpdate)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_0 from "reset" /* 4048 */;
 
 function handleGuildBoostsUpdate(guildBoostSlot) {
   guildBoostSlot = guildBoostSlot.guildBoostSlot;
@@ -26,11 +27,12 @@ function handleSubscriptionStoreUpdate() {
 let c1 = false;
 let c2 = false;
 let closure_3 = {};
+const Store = initializeDefault.Store;
 class GuildBoostSlotStore extends Store {
 }
 const prototype = GuildBoostSlotStore.prototype;
 prototype["initialize"] = function initialize() {
-  const items = [reset];
+  const items = [closure_0];
   this.syncWith(items, handleSubscriptionStoreUpdate);
 };
 Object.defineProperty(prototype, "hasFetched", {
@@ -55,28 +57,28 @@ prototype["getGuildBoostSlot"] = function getGuildBoostSlot(arg0) {
   return table[arg0];
 };
 GuildBoostSlotStore.displayName = "GuildBoostSlotStore";
-const guildBoostSlotStore = new GuildBoostSlotStore(require("dispatcher"), {
+const guildBoostSlotStore = new GuildBoostSlotStore(dispatcherDefault, {
   GUILD_BOOST_SLOTS_FETCH: function handleGuildBoostsFetch() {
-    let c2 = true;
+    c2 = true;
   },
   GUILD_BOOST_SLOTS_FETCH_SUCCESS: function handleGuildBoostsFetchSuccess(guildBoostSlots) {
     guildBoostSlots = guildBoostSlots.guildBoostSlots;
-    let closure_3 = {};
+    closure_3 = {};
     const item = guildBoostSlots.forEach((id) => {
       closure_3[id.id] = id;
     });
-    let c2 = false;
-    let c1 = true;
+    c2 = false;
+    c1 = true;
   },
   GUILD_BOOST_SLOT_UPDATE_SUCCESS: handleGuildBoostsUpdate,
   GUILD_BOOST_SLOT_CREATE: handleGuildBoostsUpdate,
   GUILD_BOOST_SLOT_UPDATE: handleGuildBoostsUpdate,
   LOGOUT: function handleLogout() {
-    let closure_3 = {};
-    let c1 = false;
-    let c2 = false;
+    closure_3 = {};
+    c1 = false;
+    c2 = false;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("stores/billing/GuildBoostSlotStore.tsx");
+const result = require("set").fileFinishedImporting("stores/billing/GuildBoostSlotStore.tsx");
 
 export default guildBoostSlotStore;

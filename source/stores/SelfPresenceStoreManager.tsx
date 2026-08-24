@@ -1,25 +1,27 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16797
+// Function ID: 16798
 // Name: handleChange
-// Dependencies: [7250, 5038, 709, 2]
+// Dependencies: [7288, 5043, 709, 2]
 
-// Module 16701 (handleChange)
-import filterPlayingActivities from "filterPlayingActivities";
-import "initialize";
+// Module 16797 (handleChange)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 5043 */;
+import closure_2 from "filterPlayingActivities" /* 7288 */;
 
 function handleChange() {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "SELF_PRESENCE_STORE_UPDATE", status: store.getStatus(), activities: store.getActivities(true), hiddenActivities: store.getHiddenActivities() };
   obj.dispatch(obj);
 }
+initializeDefault;
 let prototype = function SelfPresenceStoreManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.stores = new Map().set(filterPlayingActivities, handleChange);
+  applyArgumentsResult.stores = new Map().set(closure_2, handleChange);
   return applyArgumentsResult;
 }.prototype;
 class prototype extends tmp2 {
 }
 prototype = new prototype();
-const result = require("dispatcher").fileFinishedImporting("stores/SelfPresenceStoreManager.tsx");
+const result = require("set").fileFinishedImporting("stores/SelfPresenceStoreManager.tsx");
 
 export default prototype;

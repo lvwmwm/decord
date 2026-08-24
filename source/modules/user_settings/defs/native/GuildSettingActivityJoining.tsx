@@ -1,71 +1,74 @@
-// Module ID: 15023
-// Function ID: 15024
+// Module ID: 15087
+// Function ID: 15088
 // Name: toggle
-// Dependencies: [15011, 8198, 4066, 7357, 10669, 1236, 2]
+// Dependencies: [15075, 8238, 4069, 7395, 10708, 1236, 2]
 
-// Module 15023 (toggle)
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
-import createToggle from "createToggle";
+// Module 15087 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds" /* 7395 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15075 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let c3;
-let obj1;
 ({ getSelectedGuildId: obj1, useUserSafetySettingsSelectedGuildStore: c3 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["T+nevN"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["T+nevN"]);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["b+bVSw"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["b+bVSw"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: MobileUserSettings.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
-    const ActivityJoiningRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+    const ActivityJoiningRestrictedGuilds = explicitContentFromProto.ActivityJoiningRestrictedGuilds;
     const setting = ActivityJoiningRestrictedGuilds.useSetting();
     return !setting.includes(callback2().selectedGuildId);
   },
   onValueChange(arg0) {
     const tmp = callback();
-    const sanitizedActivityJoiningRestrictedGuilds = require(7357) /* getSanitizedRestrictedGuilds */.getSanitizedActivityJoiningRestrictedGuilds();
+    const sanitizedActivityJoiningRestrictedGuilds = getSanitizedRestrictedGuilds.getSanitizedActivityJoiningRestrictedGuilds();
     if (arg0) {
       sanitizedActivityJoiningRestrictedGuilds.delete(tmp);
     } else {
       sanitizedActivityJoiningRestrictedGuilds.add(tmp);
     }
-    const ActivityJoiningRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+    const ActivityJoiningRestrictedGuilds = explicitContentFromProto.ActivityJoiningRestrictedGuilds;
     const items = [...sanitizedActivityJoiningRestrictedGuilds];
     ActivityJoiningRestrictedGuilds.updateSetting(items);
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["T+nevN"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["T+nevN"]);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["b+bVSw"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["b+bVSw"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: MobileUserSettings.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
-    const ActivityJoiningRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+    const ActivityJoiningRestrictedGuilds = explicitContentFromProto.ActivityJoiningRestrictedGuilds;
     const setting = ActivityJoiningRestrictedGuilds.useSetting();
     return !setting.includes(callback2().selectedGuildId);
   },
   onValueChange(arg0) {
     const tmp = callback();
-    const sanitizedActivityJoiningRestrictedGuilds = require(7357) /* getSanitizedRestrictedGuilds */.getSanitizedActivityJoiningRestrictedGuilds();
+    const sanitizedActivityJoiningRestrictedGuilds = getSanitizedRestrictedGuilds.getSanitizedActivityJoiningRestrictedGuilds();
     if (arg0) {
       sanitizedActivityJoiningRestrictedGuilds.delete(tmp);
     } else {
       sanitizedActivityJoiningRestrictedGuilds.add(tmp);
     }
-    const ActivityJoiningRestrictedGuilds = require(4066) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+    const ActivityJoiningRestrictedGuilds = explicitContentFromProto.ActivityJoiningRestrictedGuilds;
     const items = [...sanitizedActivityJoiningRestrictedGuilds];
     ActivityJoiningRestrictedGuilds.updateSetting(items);
   }
 };
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/GuildSettingActivityJoining.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/GuildSettingActivityJoining.tsx");
 
 export default toggle;

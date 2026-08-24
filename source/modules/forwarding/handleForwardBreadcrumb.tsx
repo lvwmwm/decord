@@ -1,26 +1,23 @@
-// Module ID: 11117
-// Function ID: 11118
+// Module ID: 11156
+// Function ID: 11157
 // Name: _handleForwardBreadcrumb
-// Dependencies: [5, 1391, 1910, 676, 7301, 6778, 698, 7211, 2]
+// Dependencies: [5, 1391, 1910, 676, 7339, 6815, 698, 7249, 2]
 // Exports: default
 
-// Module 11117 (_handleForwardBreadcrumb)
-import showTooManyUserGuildsAlert from "showTooManyUserGuildsAlert";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import ME from "ME";
+// Module 11156 (_handleForwardBreadcrumb)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import ME from "ME" /* 676 */;
 
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 function _handleForwardBreadcrumb() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
-    let c3 = 0;
+    closure_0 = arg0;
+    c4 = 0;
+    c5 = 0;
+    c3 = 0;
     return (function*(arg0) {
       if (guild === 2) {
         guild = 3;
@@ -33,7 +30,7 @@ function _handleForwardBreadcrumb() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -66,19 +63,19 @@ function _handleForwardBreadcrumb() {
                   if (null != guild_id) {
                     if (null == guild.getGuild(guild_id)) {
                       message_id = 1;
-                      let obj1 = { object: null };
-                      obj1[0] = outer1_7.FORWARD_BREADCRUMB;
+                      obj1 = { object: null };
+                      obj1[0] = closure_1_7.FORWARD_BREADCRUMB;
                       store = 2;
                       guild = 1;
                       const obj2 = { value: null, done: false };
-                      obj2[0] = lib(outer1_2[4]).startLurking(guild_id, obj1, { shouldNavigate: false });
+                      obj2[0] = lib(closure_1_2[4]).startLurking(guild_id, obj1, { shouldNavigate: false });
                       return obj2;
                     }
                   }
                 }
               }
               guild = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp7) {
             message_id = 0;
@@ -149,7 +146,7 @@ function _handleForwardBreadcrumb() {
       }
     })();
   });
-  const _handleForwardBreadcrumb = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -158,8 +155,8 @@ function _handleForwardBreadcrumb() {
   }
   return applyArgumentsResult;
 }
-({ AnalyticEvents: closure_6, AnalyticsObjects: error, Routes: metroImportAll } = ME);
-const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/forwarding/handleForwardBreadcrumb.tsx");
+({ AnalyticEvents: closure_6, AnalyticsObjects: error, Routes: closure_8 } = ME);
+const result = require("set").fileFinishedImporting("modules/forwarding/handleForwardBreadcrumb.tsx");
 
 export default function handleForwardBreadcrumb() {
   const self = this;

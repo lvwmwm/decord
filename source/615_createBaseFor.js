@@ -6,7 +6,7 @@
 // Module 615 (createBaseFor)
 
 export default function createBaseFor(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return (arg0, arg1, arg2) => {
     const ObjectResult = Object(arg0);
     const arr = arg2(arg0);

@@ -1,40 +1,36 @@
-// Module ID: 15278
-// Function ID: 15279
+// Module ID: 15342
+// Function ID: 15343
 // Name: getGuildsComponent
-// Dependencies: [19, 17, 1979, 4197, 9588, 21, 9931, 15279, 15657, 15705, 589, 15779, 9058, 6312, 7126, 2]
+// Dependencies: [19, 17, 1980, 4201, 9625, 21, 9970, 15343, 15726, 15774, 589, 15848, 9095, 6343, 7164, 2]
 
-// Module 15278 (getGuildsComponent)
-import importAllResult from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import handleConnectionOpen from "handleConnectionOpen";
-import closure_7 from "handleConnectionOpen";
-import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS";
-import jsxProd from "jsxProd";
-import createNativeStackNavigator from "createNativeStackNavigator";
+// Module 15342 (getGuildsComponent)
+import goBack from "goBack" /* 15726 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "handleConnectionOpen" /* 1980 */;
+import closure_7 from "handleConnectionOpen" /* 4201 */;
+import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS" /* 9625 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 9970 */;
 
-let c10;
-let c4;
-let c5;
-let c9;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 function getGuildsComponent() {
-  return require(15279).default;
+  return require(15343).default;
 }
 function getNotificationsComponent() {
-  return require(15657) /* goBack */.ThemedNotifications;
+  return goBack.ThemedNotifications;
 }
 function getICYMIComponent() {
-  return require(15705) /* ICYMINavigator */.default;
+  return require(15774) /* ICYMINavigator */.default;
 }
 let c3 = importAllResult;
 ({ StyleSheet: c4, View: c5 } = get_ActivityIndicator);
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
-createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
+let closure_12 = createNativeStackNavigator.createNativeStackNavigator();
 const memoResult = importAllResult.memo(function YouBarStackNavigator() {
   let obj = importAllResult;
   const ref = importAllResult.useRef(undefined);
-  let obj1 = current(accessibilityNativeStackOptions[10]);
+  obj1 = current(accessibilityNativeStackOptions[10]);
   let items = [closure_7];
   const stateFromStores = obj1.useStateFromStores(items, () => guildId.getGuildId());
   if (tmp5) {
@@ -60,48 +56,51 @@ const memoResult = importAllResult.memo(function YouBarStackNavigator() {
     obj.fullScreenGestureEnabled = true;
     return obj;
   }, items1);
-  obj1 = { children: null };
-  const obj2 = { id: "tabs", screenOptions: memo, children: null };
-  const items2 = [current, iCYMIEnabled, accessibilityNativeStackOptions];
-  obj2[2] = obj.useMemo(() => {
-    let obj = {
-      name: outer1_8.GUILDS,
-      initialParams: current,
-      getComponent: outer1_13,
-      options() {
-        const merged = Object.assign(closure_2);
-        return {};
-      }
-    };
-    const items = [outer1_9(outer1_12.Screen, obj), , ];
-    let tmp3Result = null;
-    if (iCYMIEnabled) {
-      obj = { name: null, getComponent: null, options: null };
-      obj[0] = tmp5.ICYMI;
-      obj[1] = outer1_15;
-      obj[2] = function options() {
-        const merged = Object.assign(closure_2);
-        return {};
-      };
-      tmp3Result = tmp3(tmp4.Screen, obj);
-    }
-    obj = { children: null };
-    items[1] = tmp3Result;
-    items[2] = outer1_9(outer1_12.Screen, {
-      name: outer1_8.NOTIFICATIONS,
-      getComponent: outer1_14,
-      options() {
-        const merged = Object.assign(closure_2);
-        return {};
-      }
-    });
-    obj[0] = items;
-    return outer1_11(outer1_10, obj);
-  }, items2);
-  obj1[0] = callback(createNativeStackNavigator.Navigator, obj2);
+  obj1 = {
+    children: callback(Navigator.Navigator, {
+      id: "tabs",
+      screenOptions: memo,
+      children: obj.useMemo(() => {
+        let obj = {
+          name: closure_1_8.GUILDS,
+          initialParams: current,
+          getComponent: closure_1_13,
+          options() {
+            const merged = Object.assign(closure_2);
+            return {};
+          }
+        };
+        const items = [closure_1_9(closure_1_12.Screen, obj), , ];
+        let tmp3Result = null;
+        if (iCYMIEnabled) {
+          obj = { name: null, getComponent: null, options: null };
+          obj[0] = tmp5.ICYMI;
+          obj[1] = closure_1_15;
+          obj[2] = function options() {
+            const merged = Object.assign(closure_2);
+            return {};
+          };
+          tmp3Result = tmp3(tmp4.Screen, obj);
+        }
+        obj = { children: null };
+        items[1] = tmp3Result;
+        items[2] = closure_1_9(closure_1_12.Screen, {
+          name: closure_1_8.NOTIFICATIONS,
+          getComponent: closure_1_14,
+          options() {
+            const merged = Object.assign(closure_2);
+            return {};
+          }
+        });
+        obj[0] = items;
+        return closure_1_11(closure_1_10, obj);
+      }, items2)
+    })
+  };
+  items2 = [current, iCYMIEnabled, accessibilityNativeStackOptions];
   obj[1] = callback(current(accessibilityNativeStackOptions[14]).LayerScope, obj1);
   return callback(closure_5, obj);
 });
-const result = require("handleConnectionOpen").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarStackNavigator.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarStackNavigator.tsx");
 
 export default memoResult;

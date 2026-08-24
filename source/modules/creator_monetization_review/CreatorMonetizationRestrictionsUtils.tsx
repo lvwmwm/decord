@@ -1,17 +1,17 @@
-// Module ID: 4014
-// Function ID: 4015
+// Module ID: 4017
+// Function ID: 4018
 // Name: isRestrictedFromShowingGuildPurchaseEntryPoints
-// Dependencies: [4015, 1910, 4016, 676, 2]
+// Dependencies: [4018, 1910, 4019, 676, 2]
 // Exports: isRestrictedFromMonetizationReapplication, isRestrictedFromShowingGuildPurchaseEntryPoints, isRestrictedFromUpdatingCreatorMonetizationSettings, shouldHideGuildPurchaseEntryPoints, shouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 4014 (isRestrictedFromShowingGuildPurchaseEntryPoints)
-import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
-import { FetchState } from "makeGroupListingIndexSubscriptionListingTag";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { CreatorMonetizationRestrictions as closure_3 } from "CreatorMonetizationRestrictions";
-import { GuildFeatures } from "ME";
+// Module 4017 (isRestrictedFromShowingGuildPurchaseEntryPoints)
+import closure_0 from "makeGroupListingIndexSubscriptionListingTag" /* 4018 */;
+import { FetchState } from "makeGroupListingIndexSubscriptionListingTag" /* 4018 */;
+import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+import { CreatorMonetizationRestrictions as closure_3 } from "CreatorMonetizationRestrictions" /* 4019 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
-const result = require("CreatorMonetizationRestrictions").fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationRestrictionsUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationRestrictionsUtils.tsx");
 
 export const isRestrictedFromShowingGuildPurchaseEntryPoints = function isRestrictedFromShowingGuildPurchaseEntryPoints(restrictions) {
   let hasItem = null != restrictions;

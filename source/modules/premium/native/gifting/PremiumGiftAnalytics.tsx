@@ -1,15 +1,15 @@
-// Module ID: 10423
-// Function ID: 10424
+// Module ID: 10462
+// Function ID: 10463
 // Name: PremiumGiftAnalytics
-// Dependencies: [19, 676, 9625, 7658, 500, 698, 1236, 7659, 2]
+// Dependencies: [19, 676, 9662, 7696, 500, 698, 1236, 7697, 2]
 // Exports: default
 
-// Module 10423 (PremiumGiftAnalytics)
-import noop from "noop";
-import { AnalyticEvents } from "ME";
+// Module 10462 (PremiumGiftAnalytics)
+import closure_3 from "noop" /* 19 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;
-let result = require("NativeGiftContextProvider").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftAnalytics.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftAnalytics.tsx");
 
 export default function PremiumGiftAnalytics(currentStep) {
   currentStep = currentStep.currentStep;
@@ -17,8 +17,8 @@ export default function PremiumGiftAnalytics(currentStep) {
   let productId;
   let basePurchaseAnalytics;
   let ref;
-  let closure_5;
-  let closure_6;
+  closure_5 = undefined;
+  closure_6 = undefined;
   const nativeGiftContext = currentStep(productId[2]).useNativeGiftContext();
   customGiftMessage = nativeGiftContext.customGiftMessage;
   productId = nativeGiftContext.productId;
@@ -39,7 +39,7 @@ export default function PremiumGiftAnalytics(currentStep) {
           isIOSResult = obj.isIOS();
         }
         if (isIOSResult) {
-          let obj1 = customGiftMessage(productId[5]);
+          obj1 = customGiftMessage(productId[5]);
           obj = {};
           let obj3 = currentStep(productId[3]);
           obj = { subscription_plan_gateway_plan_id: null };
@@ -78,9 +78,9 @@ export default function PremiumGiftAnalytics(currentStep) {
   }, items);
   const items1 = [basePurchaseAnalytics, ref];
   const effect1 = basePurchaseAnalytics.useEffect(() => () => {
-    if (ref.current !== outer1_0(outer1_2[3]).PaymentFlowStep.CONFIRM) {
-      outer1_1(outer1_2[5]).track(outer1_4.PAYMENT_FLOW_CANCELED, noop);
-      const obj = outer1_1(outer1_2[5]);
+    if (ref.current !== closure_1_0(closure_1_2[3]).PaymentFlowStep.CONFIRM) {
+      closure_1_1(closure_1_2[5]).track(closure_1_4.PAYMENT_FLOW_CANCELED, closure_3);
+      const obj = closure_1_1(closure_1_2[5]);
     }
   }, items1);
   return currentStep.children;

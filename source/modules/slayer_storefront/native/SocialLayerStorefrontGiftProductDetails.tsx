@@ -1,49 +1,47 @@
-// Module ID: 10362
-// Function ID: 10363
+// Module ID: 10402
+// Function ID: 10403
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 676, 21, 4661, 712, 7145, 10355, 1435, 9228, 4734, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 7183, 10394, 1435, 9265, 4739, 2]
 // Exports: default
 
-// Module 10362 (SocialLayerStorefrontGiftProductDetails)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { PriceSetAssignmentPurchaseTypes as closure_6 } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10402 (SocialLayerStorefrontGiftProductDetails)
+import ThemesDefault from "Themes" /* 712 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9265 */;
+import closure_3 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { PriceSetAssignmentPurchaseTypes as closure_6 } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let error;
-let metroImportAll;
 const require = arg1;
 ({ Image: c4, View: c5 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: null, text: null, appInfo: null, appIcon: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_16, borderWidth: 2, borderColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.lg, marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_12, paddingHorizontal: ThemesDefault.space.PX_16, paddingVertical: ThemesDefault.space.PX_16, borderWidth: 2, borderColor: ThemesDefault.colors.BACKGROUND_BRAND, borderRadius: ThemesDefault.radii.lg, marginHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flex: 1, gap: require("Themes").space.PX_4 };
-let obj1 = { flex: 1, gap: require("Themes").space.PX_4 };
-createCacheKey[2] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
-let obj2 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
-createCacheKey[3] = { width: 20, height: 20, borderRadius: require("Themes").radii.xs };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { width: 20, height: 20, borderRadius: require("Themes").radii.xs };
-const result = require("ME").fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftProductDetails.tsx");
+createCacheKey[1] = { flex: 1, gap: ThemesDefault.space.PX_4 };
+let obj1 = { flex: 1, gap: ThemesDefault.space.PX_4 };
+createCacheKey[2] = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
+let obj2 = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
+createCacheKey[3] = { width: 20, height: 20, borderRadius: ThemesDefault.radii.xs };
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { width: 20, height: 20, borderRadius: ThemesDefault.radii.xs };
+const result = require("set").fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftProductDetails.tsx");
 
 export default function SocialLayerStorefrontGiftProductDetails(sku) {
   sku = sku.sku;
   let getOrFetchApplication;
-  const tmp = createCacheKey();
-  let obj = getOrFetchApplication(7145);
+  const tmp = callback2();
+  let obj = getOrFetchApplication(7183);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  let obj1 = getOrFetchApplication(10355);
+  obj1 = getOrFetchApplication(10394);
   obj = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj1.useFormattedSKUPrice(obj).userPrice;
   const items = [getOrFetchApplication];
   const memo = React.useMemo(() => {
     let applicationIconURL = null;
     if (null != getOrFetchApplication) {
-      let obj = outer1_1(outer1_2[8]);
+      let obj = closure_1_1(closure_1_2[8]);
       obj = { id: null, icon: null, size: 20 };
       ({ id: obj2[0], icon: obj2[1] } = getOrFetchApplication);
       applicationIconURL = obj.getApplicationIconURL(obj);
@@ -51,7 +49,7 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     return applicationIconURL;
   }, items);
   obj = { style: tmp.container, children: null };
-  const items1 = [callback(importDefault(9228), { sku, size: 55 }), , ];
+  const items1 = [callback(SlayerStorefrontItemCardDefault, { sku, size: 55 }), , ];
   obj1 = { style: tmp.text, children: null };
   let tmp6Result = null != getOrFetchApplication;
   if (tmp6Result) {
@@ -69,18 +67,18 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     const items2 = [tmp8Result, ];
     const obj5 = { variant: "text-sm/medium", color: "text-muted", children: null };
     obj5[2] = getOrFetchApplication.name;
-    items2[1] = tmp8(tmp2(4734).Text, obj5);
+    items2[1] = tmp8(tmp2(4739).Text, obj5);
     obj2[1] = items2;
     tmp6Result = tmp6(tmp7, obj2);
   }
-  const items3 = [tmp6Result, callback(getOrFetchApplication(4734).Text, { variant: "text-md/semibold", children: sku.name })];
+  const items3 = [tmp6Result, callback(getOrFetchApplication(4739).Text, { variant: "text-md/semibold", children: sku.name })];
   obj1[1] = items3;
   items1[1] = closure_8(closure_5, obj1);
   tmp8Result = null != userPrice;
   if (tmp8Result) {
     const obj7 = { variant: "text-md/semibold", children: null };
     obj7[1] = userPrice;
-    tmp8Result = tmp8(tmp2(4734).Text, obj7);
+    tmp8Result = tmp8(tmp2(4739).Text, obj7);
   }
   items1[2] = tmp8Result;
   obj[1] = items1;

@@ -1,18 +1,19 @@
-// Module ID: 6066
-// Function ID: 6067
+// Module ID: 6097
+// Function ID: 6098
 // Name: PrivacyShieldWithLaptopBannerSpotIllustration
-// Dependencies: [21, 5449, 6067, 2]
+// Dependencies: [21, 5454, 6098, 2]
 // Exports: PrivacyShieldWithLaptopBannerSpotIllustration
 
-// Module 6066 (PrivacyShieldWithLaptopBannerSpotIllustration)
-import { jsx } from "jsxProd";
+// Module 6097 (PrivacyShieldWithLaptopBannerSpotIllustration)
+import set from "set" /* 2 */;
+import jsxProd from "jsxProd" /* 21 */;
+import preloadDefault from "preload" /* 5454 */;
+import metadataDefault from "metadata" /* 6098 */;
 
-const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PrivacyShieldWithLaptopBannerSpotIllustration.native.tsx");
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PrivacyShieldWithLaptopBannerSpotIllustration.native.tsx");
 
 export const PrivacyShieldWithLaptopBannerSpotIllustration = function PrivacyShieldWithLaptopBannerSpotIllustration(width) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,8 +28,7 @@ export const PrivacyShieldWithLaptopBannerSpotIllustration = function PrivacyShi
     num3 = 1;
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj = { uri: null };
-  obj[0] = importDefault(6067);
+  obj = { uri: metadataDefault };
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const PrivacyShieldWithLaptopBannerSpotIllustration = function PrivacyShi
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5449), { width: num * num3, height: num2 * num3 });
+  return jsx(preloadDefault, { width: num * num3, height: num2 * num3 });
 };

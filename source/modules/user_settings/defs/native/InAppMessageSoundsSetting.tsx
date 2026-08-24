@@ -1,43 +1,45 @@
-// Module ID: 14803
-// Function ID: 14804
+// Module ID: 14867
+// Function ID: 14868
 // Name: toggle
-// Dependencies: [10039, 8198, 10669, 1236, 1625, 2]
+// Dependencies: [10078, 8238, 10708, 1236, 1625, 2]
 
-// Module 14803 (toggle)
-import isInAppMessageSoundsEnabled from "isInAppMessageSoundsEnabled";
-import createToggle from "createToggle";
+// Module 14867 (toggle)
+import set from "set" /* 2 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import isMetaQuest from "isMetaQuest" /* 1625 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import isInAppMessageSoundsEnabled from "isInAppMessageSoundsEnabled" /* 10078 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let setInAppMessageSoundsEnabled;
-let useInAppMessageSoundsEnabled;
 ({ setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled } = isInAppMessageSoundsEnabled);
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.jLCRyj);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.jLCRyj);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["wls+Ax"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["wls+Ax"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
   useValue: useInAppMessageSoundsEnabled,
   onValueChange: setInAppMessageSoundsEnabled,
-  usePredicate: require("isMetaQuest").isMetaQuest
+  usePredicate: isMetaQuest.isMetaQuest
 });
 const obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.jLCRyj);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.jLCRyj);
   },
   useDescription() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["wls+Ax"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["wls+Ax"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
   useValue: useInAppMessageSoundsEnabled,
   onValueChange: setInAppMessageSoundsEnabled,
-  usePredicate: require("isMetaQuest").isMetaQuest
+  usePredicate: isMetaQuest.isMetaQuest
 };
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/InAppMessageSoundsSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/InAppMessageSoundsSetting.tsx");
 
 export default toggle;

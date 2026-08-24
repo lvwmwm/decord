@@ -1,10 +1,12 @@
-// Module ID: 5599
-// Function ID: 5600
+// Module ID: 5606
+// Function ID: 5607
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5599 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ClydeHologramSpotIllustration-2x.png.js");
+// Module 5606 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ClydeHologramSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/a3d6024ebc2f9de5e91146a1712f711e623bfb66aa00a29cfb1a25e3bea60bcc.png";
 export const metadata = { fileBytes: 36757 };

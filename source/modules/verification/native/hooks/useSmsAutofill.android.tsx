@@ -1,12 +1,12 @@
-// Module ID: 8656
-// Function ID: 8657
+// Module ID: 8693
+// Function ID: 8694
 // Name: SmsAutofillManager
 // Dependencies: [19, 17, 2]
 // Exports: default
 
-// Module 8656 (SmsAutofillManager)
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 8693 (SmsAutofillManager)
+import closure_0 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
 const SmsAutofillManager = get_ActivityIndicator.NativeModules.SmsAutofillManager;
 const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(SmsAutofillManager);
@@ -18,10 +18,10 @@ export default function useSmsAutofill(arg0) {
   const callback = React.useCallback((code) => callback(code.code), items);
   const items1 = [callback];
   return React.useEffect(() => {
-    let noop = outer1_2.addListener("verificationCodeReceived", callback);
+    closure_0 = closure_1_2.addListener("verificationCodeReceived", callback);
     callback.startSmsRetriever();
     return () => {
-      noop.remove();
+      closure_0.remove();
     };
   }, items1);
 };

@@ -1,50 +1,47 @@
-// Module ID: 16414
-// Function ID: 16415
+// Module ID: 16510
+// Function ID: 16511
 // Name: MobilePhoneShareIcon
-// Dependencies: [19, 17, 1391, 676, 21, 1625, 11699, 16415, 4661, 712, 11439, 16397, 589, 38, 10931, 698, 1367, 16398, 1236, 7190, 2]
+// Dependencies: [19, 17, 1391, 676, 21, 1625, 11748, 16511, 4668, 712, 11488, 16494, 589, 38, 10970, 698, 1367, 16495, 1236, 7228, 2]
 // Exports: default
 
-// Module 16414 (MobilePhoneShareIcon)
-import set from "set";
-import { Image } from "AnimatedButtonWrapper";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import isMetaQuest from "isMetaQuest";
-import createCacheKey from "createCacheKey";
+// Module 16510 (MobilePhoneShareIcon)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import isMetaQuest from "isMetaQuest" /* 1625 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 if (isMetaQuest.isMetaQuest()) {
   let MobilePhoneShareIcon = require("ScreenArrowIcon").ScreenArrowIcon;
 } else {
   MobilePhoneShareIcon = require("MobilePhoneShareIcon").MobilePhoneShareIcon;
 }
 isMetaQuest = { circle: null, iconContainer: null, icon: null };
-isMetaQuest = { width: "100%", height: "100%", borderRadius: require("Themes").radii.round };
+isMetaQuest = { width: "100%", height: "100%", borderRadius: ThemesDefault.radii.round };
 isMetaQuest[0] = isMetaQuest;
 isMetaQuest[1] = { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" };
 isMetaQuest[2] = { width: 24, height: 24 };
-isMetaQuest = createCacheKey.createStyles(isMetaQuest);
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelScreenshareButton.tsx");
+let closure_10 = createCacheKey.createStyles(isMetaQuest);
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelScreenshareButton.tsx");
 
 export default function ScreenshareButton(arg0) {
-  let props;
-  let wrapperSpecs;
   let channelId;
   let isActive;
   let isFeatureEnabled;
   let onPress;
   ({ props, wrapperSpecs } = arg0);
   channelId = onPress.useContext(isActive(isFeatureEnabled[10])).channelId;
-  const tmp3 = isMetaQuest();
+  const tmp3 = callback2();
   let obj = channelId(isFeatureEnabled[11]);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  let obj1 = channelId(isFeatureEnabled[12]);
-  const items = [ensureGuildLoaded];
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getChannel(channelId));
+  obj1 = channelId(isFeatureEnabled[12]);
+  const items = [closure_5];
+  const stateFromStores = obj1.useStateFromStores(items, () => closure_1_5.getChannel(channelId));
   isActive(isFeatureEnabled[13])(null != stateFromStores, "null channel in VoicePanelScreenshareButton");
   const tmp8 = isActive(isFeatureEnabled[14])(stateFromStores);
   isActive = tmp8.isActive;
@@ -56,7 +53,7 @@ export default function ScreenshareButton(arg0) {
       let obj = isActive(isFeatureEnabled[15]);
       obj = { source: "connected button", was_active: null };
       obj[1] = isActive;
-      obj.track(outer1_6.VOICE_PANEL_SCREENSHARE_BUTTON_TAPPED, obj);
+      obj.track(closure_1_6.VOICE_PANEL_SCREENSHARE_BUTTON_TAPPED, obj);
       onPress();
     }
   }, items1);

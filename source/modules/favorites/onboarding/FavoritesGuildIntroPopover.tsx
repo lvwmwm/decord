@@ -1,36 +1,34 @@
-// Module ID: 9988
-// Function ID: 9989
+// Module ID: 10027
+// Function ID: 10028
 // Name: hasOfferedFavoritesGuildOnboarding
-// Dependencies: [32, 19, 1383, 1394, 676, 644, 1377, 9979, 589, 9989, 7366, 2]
+// Dependencies: [32, 19, 1383, 1394, 676, 644, 1377, 10018, 589, 10028, 7404, 2]
 // Exports: hasOfferedFavoritesGuildOnboarding, isFavoritesIntroPopoverShown, resetHasOfferedFavoritesGuildOnboarding, useFavoritesIntroPopover, useIsFavoritesIntroPopoverShown
 
-// Module 9988 (hasOfferedFavoritesGuildOnboarding)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import withContent from "withContent";
-import closure_7 from "withContent";
-import initializeFromUserSettings from "initializeFromUserSettings";
-import { NOOP } from "ME";
-import keys from "keys";
+// Module 10027 (hasOfferedFavoritesGuildOnboarding)
+import DismissibleContent from "DismissibleContent" /* 1377 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10028 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import withContent from "withContent" /* 1383 */;
+import closure_7 from "withContent" /* 1383 */;
+import closure_8 from "initializeFromUserSettings" /* 1394 */;
+import { NOOP } from "ME" /* 676 */;
+import keys from "keys" /* 644 */;
 
-let c5;
-let closure_6;
-let require = arg1;
+require = arg1;
 let c4 = importAllResult;
 ({ isContentShown: c5, useIsContentShown: closure_6 } = withContent);
 let closure_10 = keys.create(() => ({ shouldShowPopover: false, markPopoverAsDismissed: NOOP }));
 let c11 = false;
 const memoResult = importAllResult.memo(function FavoritesGuildIntroPopover() {
-  let hasAccess;
-  let isFreemium;
-  const favoritesAccess = require(9979) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildIntroPopover");
+  const favoritesAccess = _require(10018).useFavoritesAccess("FavoritesGuildIntroPopover");
   ({ hasAccess, isFreemium } = favoritesAccess);
-  const obj = require(9979) /* useFavoritesAccess */;
-  const items = [initializeFromUserSettings];
-  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => false === obj.favoriteGuildVisibleSetting);
-  const obj2 = require(589) /* initialize */;
-  const tmp5 = importDefault(9989)();
-  require(7366) /* useSelectedDismissibleContent */;
+  const obj = _require(10018);
+  const items = [closure_8];
+  const stateFromStores = _require(589).useStateFromStores(items, () => false === obj.favoriteGuildVisibleSetting);
+  const obj2 = _require(589);
+  const tmp5 = useCanShowFavoritesGuildOnboardingDefault();
+  _require(7404);
   if (hasAccess) {
     if (isFreemium) {
       if (!stateFromStores) {
@@ -39,24 +37,24 @@ const memoResult = importAllResult.memo(function FavoritesGuildIntroPopover() {
             let items1 = [tmp(1377).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO];
           }
           const tmp10 = callback(tmp8(items1), 2);
-          require = tmp11;
+          _require = tmp11;
           if (tmp10[0] === tmp(1377).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
             const items2 = [tmp(1377).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
             let items3 = items2;
           } else {
             items3 = [];
           }
-          const tmp12 = callback(tmp(7366).useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(1377).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+          const tmp12 = callback(tmp(7404).useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(1377).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
           importDefault = tmp12;
           const items4 = [tmp12];
           const effect = importAllResult.useEffect(() => {
             if (closure_1) {
-              const outer1_11 = true;
+              c11 = true;
             }
           }, items4);
           const items5 = [tmp12, tmp10[1]];
           const layoutEffect = importAllResult.useLayoutEffect(() => {
-            outer1_10.setState({ shouldShowPopover: closure_1, markPopoverAsDismissed: closure_0 });
+            closure_1_10.setState({ shouldShowPopover: closure_1, markPopoverAsDismissed: closure_0 });
           }, items5);
           const layoutEffect1 = importAllResult.useLayoutEffect(() => () => state.setState({ shouldShowPopover: false, markPopoverAsDismissed: closure_9 }), []);
           return null;
@@ -66,21 +64,21 @@ const memoResult = importAllResult.memo(function FavoritesGuildIntroPopover() {
   }
   items1 = [];
 });
-const result = require("withContent").fileFinishedImporting("modules/favorites/onboarding/FavoritesGuildIntroPopover.tsx");
+const result = require("set").fileFinishedImporting("modules/favorites/onboarding/FavoritesGuildIntroPopover.tsx");
 
 export default memoResult;
 export function hasOfferedFavoritesGuildOnboarding() {
   return c11;
 }
 export function resetHasOfferedFavoritesGuildOnboarding() {
-  let c11 = false;
+  c11 = false;
 }
 export const useFavoritesIntroPopover = function useFavoritesIntroPopover() {
   return { shouldShowPopover: callback5((shouldShowPopover) => shouldShowPopover.shouldShowPopover), markPopoverAsDismissed: callback5((markPopoverAsDismissed) => markPopoverAsDismissed.markPopoverAsDismissed) };
 };
 export const isFavoritesIntroPopoverShown = function isFavoritesIntroPopoverShown(hasAccess, isFreemium, arg2) {
-  return callback2(require(1377) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) && callback2(require(1377) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
+  return callback2(DismissibleContent.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) && callback2(DismissibleContent.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
 };
 export const useIsFavoritesIntroPopoverShown = function useIsFavoritesIntroPopoverShown() {
-  return callback3(require(1377) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) && callback3(require(1377) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
+  return callback3(DismissibleContent.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) && callback3(DismissibleContent.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
 };

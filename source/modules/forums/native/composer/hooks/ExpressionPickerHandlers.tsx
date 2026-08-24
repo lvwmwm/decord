@@ -1,11 +1,11 @@
-// Module ID: 10174
-// Function ID: 10175
+// Module ID: 10213
+// Function ID: 10214
 // Name: usePressEmojiHandler
 // Dependencies: [19, 2]
 // Exports: usePressEmojiHandler, usePressGIFHandler
 
-// Module 10174 (usePressEmojiHandler)
-import noop from "noop";
+// Module 10213 (usePressEmojiHandler)
+import closure_0 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/forums/native/composer/hooks/ExpressionPickerHandlers.tsx");
 
@@ -15,17 +15,12 @@ export const usePressEmojiHandler = function usePressEmojiHandler(selection) {
   const handleTextChange = selection.handleTextChange;
   const focusTextInput = selection.focusTextInput;
   const setSelection = selection.setSelection;
-  let closure_5;
+  closure_5 = undefined;
   closure_5 = selection.useRef({ selection, draftContent, handleTextChange, focusTextInput, setSelection });
   const effect = selection.useEffect(() => {
     closure_5.current = { selection, draftContent, handleTextChange, focusTextInput, setSelection };
   });
   return selection.useCallback((id) => {
-    let draftContent;
-    let focusTextInput;
-    let handleTextChange;
-    let selection;
-    let setSelection;
     const current = ref.current;
     ({ selection, draftContent, handleTextChange } = current);
     ({ focusTextInput, setSelection } = current);

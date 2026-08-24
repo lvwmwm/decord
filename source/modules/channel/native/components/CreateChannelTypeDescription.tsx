@@ -1,30 +1,28 @@
-// Module ID: 8853
-// Function ID: 8854
+// Module ID: 8890
+// Function ID: 8891
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 8854, 676, 21, 8855, 6910, 4734, 1236, 2]
+// Dependencies: [19, 17, 8891, 676, 21, 8892, 6948, 4739, 1236, 2]
 // Exports: default
 
-// Module 8853 (CreateChannelTypeDescription)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import { GuildProfileFetchStatus } from "handleUpdateStart";
-import { ChannelTypes } from "ME";
-import { jsx } from "jsxProd";
+// Module 8890 (CreateChannelTypeDescription)
+import closure_2 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { GuildProfileFetchStatus } from "handleUpdateStart" /* 8891 */;
+import { ChannelTypes } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("handleUpdateStart").fileFinishedImporting("modules/channel/native/components/CreateChannelTypeDescription.tsx");
+const result = require("set").fileFinishedImporting("modules/channel/native/components/CreateChannelTypeDescription.tsx");
 
 export default function CreateChannelTypeDescription(guildId) {
-  let fetchGuildProfile;
-  let guildProfile;
   guildId = guildId.guildId;
   fetchGuildProfile = undefined;
-  let obj = fetchGuildProfile(8855);
+  let obj = fetchGuildProfile(8892);
   guildProfile = obj.useGuildProfile(guildId);
   ({ guildProfile, fetchGuildProfile } = guildProfile);
   let hasItem = null != guildProfile;
   if (hasItem) {
-    const VISIBLE = tmp(6910).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(6948).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = !tmp5;
@@ -44,7 +42,7 @@ export default function CreateChannelTypeDescription(guildId) {
     obj = { variant: "text-sm/normal", color: "text-subtle", children: null };
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t["2Ab4Id"]);
-    obj[0] = jsx(tmp(4734).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
+    obj[0] = jsx(tmp(4739).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
     tmp9 = <View variant="text-sm/normal" color="text-subtle">{null}</View>;
   }
   return tmp9;

@@ -1,10 +1,10 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 16914
+// Function ID: 16915
 // Name: set
 // Dependencies: [2]
 
-// Module 16821 (set)
-import set from "set";
+// Module 16914 (set)
+import set from "set" /* 2 */;
 
 const obj = { SYNCABLE: null };
 let set = new Set(["twitch", "youtube"]);

@@ -1,27 +1,31 @@
-// Module ID: 14570
-// Function ID: 14571
+// Module ID: 14638
+// Function ID: 14639
 // Name: route
-// Dependencies: [8198, 676, 10669, 1236, 14571, 2]
+// Dependencies: [8238, 676, 10708, 1236, 14639, 2]
 
-// Module 14570 (route)
-import createToggle from "createToggle";
+// Module 14638 (route)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import createToggle from "createToggle" /* 10708 */;
 
 obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["7j5bMU"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["7j5bMU"]);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.PREMIUM,
+  parent: MobileUserSettings.MobileUserSettings.PREMIUM,
   unsearchable: true,
   screen: obj
 };
 obj = {
-  route: require("ME").UserSettingsSections.GUILD_ROLE_SUBSCRIPTIONS_CANCEL,
+  route: ME.UserSettingsSections.GUILD_ROLE_SUBSCRIPTIONS_CANCEL,
   getComponent() {
-    return require(14571) /* GuildRoleSubscriptionCancelSettingScreen */.default;
+    return require(14639) /* GuildRoleSubscriptionCancelSettingScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);
-const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/GuildRoleSubscriptionsCancelSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/GuildRoleSubscriptionsCancelSetting.tsx");
 
 export default route;

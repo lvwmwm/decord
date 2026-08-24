@@ -1,45 +1,46 @@
-// Module ID: 15403
-// Function ID: 15404
+// Module ID: 15467
+// Function ID: 15468
 // Name: FavoritesGuildChannelSortModal
-// Dependencies: [19, 15404, 1395, 676, 21, 15405, 1629, 1236, 15406, 15402, 6312, 2]
+// Dependencies: [19, 15468, 1395, 676, 21, 15469, 1629, 1236, 15470, 15466, 6343, 2]
 // Exports: default
 
-// Module 15403 (FavoritesGuildChannelSortModal)
-import noop from "noop";
-import sortCategoryList from "sortCategoryList";
-import { ALL_CHANNEL_TYPES } from "createChannelRecord";
-import { FAVORITES } from "ME";
-import { jsx } from "jsxProd";
+// Module 15467 (FavoritesGuildChannelSortModal)
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "sortCategoryList" /* 15468 */;
+import { ALL_CHANNEL_TYPES } from "createChannelRecord" /* 1395 */;
+import { FAVORITES } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("createChannelRecord").fileFinishedImporting("modules/favorites/native/modal/FavoritesGuildChannelSortModal.tsx");
+const result = require("set").fileFinishedImporting("modules/favorites/native/modal/FavoritesGuildChannelSortModal.tsx");
 
 export default function FavoritesGuildChannelSortModal() {
   const effect = React.useEffect(() => {
-    const guild = sortCategoryList.initGuild(closure_6);
+    const guild = closure_4.initGuild(closure_6);
     const items = [...closure_5];
     callback(table[5]).startReordering.apply(items);
     return () => {
-      callback(15405).stopReordering();
-      const obj = callback(15405);
-      callback(15405).terminate();
+      callback(15469).stopReordering();
+      const obj = callback(15469);
+      callback(15469).terminate();
     };
   }, []);
-  const bottom = importDefault(1629)().bottom;
+  const bottom = useSafeAreaInsetsDefault().bottom;
   let items = [bottom];
   const screens = React.useMemo(() => {
     let obj = { FAVORITES_GUILD_CHANNEL_SORT: null };
     obj = { title: null, render: null };
-    const intl = bottom(outer1_2[7]).intl;
-    obj[0] = intl.string(bottom(outer1_2[7]).t.OGiMXJ);
+    const intl = bottom(closure_1_2[7]).intl;
+    obj[0] = intl.string(bottom(closure_1_2[7]).t.OGiMXJ);
     obj[1] = function render() {
-      obj = { guildId: outer1_6, contentContainerStyle: obj, onDone: null };
+      obj = { guildId: closure_1_6, contentContainerStyle: obj, onDone: null };
       obj = { paddingBottom: 16 + closure_0 };
-      obj[2] = outer1_0(outer1_2[9]).closeFavoritesGuildChannelSortModal;
-      return outer1_7(outer1_1(outer1_2[8]), obj);
+      obj[2] = closure_1_0(closure_1_2[9]).closeFavoritesGuildChannelSortModal;
+      return closure_1_7(closure_1_1(closure_1_2[8]), obj);
     };
     obj[0] = obj;
     return obj;
   }, items);
-  return jsx(bottom(6312).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
+  return jsx(bottom(6343).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
 };

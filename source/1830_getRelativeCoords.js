@@ -4,10 +4,12 @@
 // Dependencies: [1831]
 
 // Module 1830 (getRelativeCoords)
-const require = arg1;
+import measureFabric from "measureFabric" /* 1831 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function getRelativeCoords(arg0, arg1, arg2) {
-  let obj = require(1831) /* measureFabric */;
+  let obj = measureFabric;
   const measureResult = obj.measure(arg0);
   let tmp2 = null;
   if (null !== measureResult) {

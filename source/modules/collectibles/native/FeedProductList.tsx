@@ -1,23 +1,24 @@
-// Module ID: 14966
-// Function ID: 14967
+// Module ID: 15030
+// Function ID: 15031
 // Name: SkeletonGrid
-// Dependencies: [19, 17, 21, 4661, 9172, 14967, 14434, 14968, 2]
+// Dependencies: [19, 17, 21, 4668, 9209, 15031, 14502, 15032, 2]
 // Exports: default
 
-// Module 14966 (SkeletonGrid)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15030 (SkeletonGrid)
+import noopAll from "noop" /* 19 */;
+import CollectiblesShopCardInternalV2 from "CollectiblesShopCardInternalV2" /* 9209 */;
+import sharedValueDefault from "sharedValue" /* 14502 */;
+import ShopCardGridItemDefault from "ShopCardGridItem" /* 15032 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 function SkeletonGrid(accessibilityLabel) {
-  let columns;
-  let num;
   const loadingCardsNum = accessibilityLabel.loadingCardsNum;
   num = undefined;
-  const tmp = createCacheKey();
-  let obj = num(14967);
+  const tmp = callback();
+  let obj = num(15031);
   const cardLayout = obj.useCardLayout();
   ({ columns, cardWidth: num } = cardLayout);
   const items = [];
@@ -31,31 +32,29 @@ function SkeletonGrid(accessibilityLabel) {
     let tmp5 = View;
     obj = { style: null, children: null };
     let items1 = [tmp.skeletonRow, ];
-    let obj1 = { width: null };
+    obj1 = { width: null };
     obj1[0] = tmp3;
     items1[1] = obj1;
     obj[0] = items1;
     obj[1] = arr.map((arg0, arg1) => {
       let obj = { width: num, style: null };
-      obj = { marginBottom: null };
-      obj[0] = require(9172) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP;
+      obj = { marginBottom: CollectiblesShopCardInternalV2.COLLECTIBLES_SHOP_CARD_GAP };
       obj[1] = obj;
-      return jsx(importDefault(14434), { marginBottom: null }, "" + num + "-" + arg1);
+      return jsx(sharedValueDefault, { marginBottom: CollectiblesShopCardInternalV2.COLLECTIBLES_SHOP_CARD_GAP }, "" + num + "-" + arg1);
     });
     let _HermesInternal = HermesInternal;
     arr = items.push(<View key={"row-" + num} style={null}>{null}</View>);
   }
   return <View style={tmp.skeletonGrid} accessibilityRole="list" accessibilityLabel={arg0.accessibilityLabel} accessibilityState={{ busy: true }} accessible>{items}</View>;
 }
+noopAll;
 createCacheKey = { skeletonGrid: { flex: 1, alignItems: "center" }, skeletonRow: null };
 createCacheKey = { flexDirection: "row", gap: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP, paddingHorizontal: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP };
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/FeedProductList.tsx");
+let closure_5 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/collectibles/native/FeedProductList.tsx");
 
 export default function FeedProductList(arg0) {
-  let accessibilityLabel;
-  let products;
   ({ products, accessibilityLabel } = arg0);
   if (0 === products.length) {
     let obj = { loadingCardsNum: null, accessibilityLabel: null };
@@ -68,7 +67,7 @@ export default function FeedProductList(arg0) {
     obj[1] = tmp2;
     obj[2] = accessibilityLabel;
     obj[3] = tmp3;
-    tmp7 = jsx(importDefault(14968), { products: null, preferVCPrice: null, accessibilityLabel: null, disableBundleStaticBackground: null });
+    tmp7 = jsx(ShopCardGridItemDefault, { products: null, preferVCPrice: null, accessibilityLabel: null, disableBundleStaticBackground: null });
   }
   return tmp7;
 };

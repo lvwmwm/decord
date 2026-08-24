@@ -1,21 +1,22 @@
-// Module ID: 10278
-// Function ID: 10279
-// Dependencies: [676, 644, 698, 705, 10279, 500, 2]
+// Module ID: 10317
+// Function ID: 10318
+// Dependencies: [676, 644, 698, 705, 10318, 500, 2]
 
-// Module 10278
-import { AnalyticEvents } from "ME";
-import keys from "keys";
+// Module 10317
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import getDeviceMediaPhotosDefault from "getDeviceMediaPhotos" /* 10318 */;
+import keys from "keys" /* 644 */;
 
+const AnalyticEvents = ME.AnalyticEvents;
 let closure_4 = keys.create(() => ({ assets: null, page: 0, hasReachedEnd: false, lastAssetIndex: 0 }));
-const result = require("expandEventProperties").fileFinishedImporting("modules/device/native/DeviceMedia.tsx");
+const result = set.fileFinishedImporting("modules/device/native/DeviceMedia.tsx");
 
 export default {
   getNextAssetPage(arg0) {
-    let batchSize;
-    let extensions;
     let assets;
     let lastAssetIndex;
-    let dependencyMap;
+    dependencyMap = undefined;
     ({ batchSize, extensions } = arg0);
     state = state.getState();
     assets = state.assets;
@@ -38,7 +39,7 @@ export default {
           obj[3] = image.uri;
           obj[4] = extensions;
           obj[5] = function onFetched(edges) {
-            let closure_0 = edges;
+            closure_0 = edges;
             let num;
             if (edges != null) {
               edges = edges.edges;
@@ -72,7 +73,7 @@ export default {
                 }
               }
               obj[3] = end_cursor;
-              outer2_4.setState(obj);
+              closure_2_4.setState(obj);
             });
             let tmp12 = null == edges;
             if (!tmp12) {
@@ -88,24 +89,24 @@ export default {
             }
             table = tmp12;
             if (tmp12) {
-              assets(tmp10[3]).batchUpdates(() => outer2_4.setState({ hasReachedEnd: closure_2 }));
+              assets(tmp10[3]).batchUpdates(() => closure_2_4.setState({ hasReachedEnd: closure_2 }));
               const tmp9Result = assets(tmp10[3]);
             }
             obj = { page: table, has_reached_end: tmp12 };
-            lastAssetIndex(table[2]).track(outer1_3.MEDIA_PICKER_INFINITE_SCROLL_PAGED, obj);
+            lastAssetIndex(table[2]).track(closure_1_3.MEDIA_PICKER_INFINITE_SCROLL_PAGED, obj);
           };
-          lastAssetIndex(10279)(obj);
+          lastAssetIndex(10318)(obj);
         }
       }
     }
   },
   refreshAssets(batchSize) {
     batchSize = batchSize.batchSize;
-    importDefault(10279)({
+    getDeviceMediaPhotosDefault({
       batchSize,
       extensions: batchSize.extensions,
       onFetched(edges) {
-        let closure_0 = edges;
+        closure_0 = edges;
         let num;
         if (edges != null) {
           edges = edges.edges;
@@ -141,7 +142,7 @@ export default {
           num = 0;
         }
         if (num > 0) {
-          let obj = outer1_1(outer1_2[2]);
+          let obj = closure_1_1(closure_1_2[2]);
           obj = { num_broken_assets: null, num_assets: null, location: "DeviceMedia.applyStateUpdate" };
           obj[0] = num;
           let length;
@@ -152,9 +153,9 @@ export default {
             }
           }
           obj[1] = length;
-          obj.track(outer1_3.MEDIA_PICKER_ASSETS_DEBUG, obj);
+          obj.track(closure_1_3.MEDIA_PICKER_ASSETS_DEBUG, obj);
         }
-        batchSize(outer1_2[3]).batchUpdates(() => {
+        batchSize(closure_1_2[3]).batchUpdates(() => {
           const obj = { assets: closure_0, page: 0, lastAssetIndex: closure_0, endCursor: null, hasReachedEnd: null };
           let end_cursor;
           if (closure_0 != null) {
@@ -175,7 +176,7 @@ export default {
             num = 1;
           }
           obj[4] = !num;
-          outer2_4.setState(obj);
+          closure_2_4.setState(obj);
         });
       }
     });

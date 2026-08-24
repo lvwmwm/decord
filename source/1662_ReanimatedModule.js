@@ -4,5 +4,7 @@
 // Dependencies: [1663]
 
 // Module 1662 (ReanimatedModule)
+import jSReanimatedModule from "jSReanimatedModule" /* 1663 */;
 
-export const ReanimatedModule = require("jSReanimatedModule").ReanimatedModule;
+
+export const ReanimatedModule = jSReanimatedModule.ReanimatedModule;

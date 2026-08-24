@@ -4,7 +4,11 @@
 // Dependencies: [940, 900, 942]
 
 // Module 943 (getNotificationAttributes)
-const require = arg1;
+import getHttpSpanDetailsFromUrlObject from "getHttpSpanDetailsFromUrlObject" /* 900 */;
+import _mod940 from "module_940" /* 940 */;
+import extractTargetInfo from "extractTargetInfo" /* 942 */;
+
+require = arg1;
 const dependencyMap = arg6;
 function getNotificationAttributes(arg0, requestId) {
   const obj = {};
@@ -32,7 +36,7 @@ function getNotificationAttributes(arg0, requestId) {
     }
     if (level) {
       const _String5 = String;
-      obj[require(940).MCP_LOGGING_LEVEL_ATTRIBUTE] = String(requestId.level);
+      obj[_mod940.MCP_LOGGING_LEVEL_ATTRIBUTE] = String(requestId.level);
     }
     let logger;
     if (requestId != null) {
@@ -40,14 +44,14 @@ function getNotificationAttributes(arg0, requestId) {
     }
     if (logger) {
       const _String6 = String;
-      obj[require(940).MCP_LOGGING_LOGGER_ATTRIBUTE] = String(requestId.logger);
+      obj[_mod940.MCP_LOGGING_LOGGER_ATTRIBUTE] = String(requestId.logger);
     }
     let data;
     if (requestId != null) {
       data = requestId.data;
     }
     if (undefined !== data) {
-      obj[require(940).MCP_LOGGING_DATA_TYPE_ATTRIBUTE] = typeof requestId.data;
+      obj[_mod940.MCP_LOGGING_DATA_TYPE_ATTRIBUTE] = typeof requestId.data;
       if (arg2) {
         data = requestId.data;
         let json = data;
@@ -104,9 +108,9 @@ function getNotificationAttributes(arg0, requestId) {
     }
     if (uri) {
       const _String = String;
-      obj[require(940).MCP_RESOURCE_URI_ATTRIBUTE] = String(requestId.uri);
+      obj[_mod940.MCP_RESOURCE_URI_ATTRIBUTE] = String(requestId.uri);
       const _String2 = String;
-      const result = require(900) /* getHttpSpanDetailsFromUrlObject */.parseStringToURLObject(String(requestId.uri));
+      const result = getHttpSpanDetailsFromUrlObject.parseStringToURLObject(String(requestId.uri));
       let tmp7 = result;
       if (result) {
         tmp7 = !tmp3(900).isURLObjectRelative(result);
@@ -116,7 +120,7 @@ function getNotificationAttributes(arg0, requestId) {
         obj["mcp.resource.protocol"] = result.protocol.replace(":", "");
         const str2 = result.protocol;
       }
-      const obj2 = require(900) /* getHttpSpanDetailsFromUrlObject */;
+      const obj2 = getHttpSpanDetailsFromUrlObject;
       tmp3 = require;
     }
   } else if ("notifications/initialized" === arg0) {
@@ -129,7 +133,7 @@ Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.buildTypeSpecificAttributes = function buildTypeSpecificAttributes(request, message, params, recordInputs) {
   let obj = params;
   if ("request" === request) {
-    let obj2 = require(942) /* extractTargetInfo */;
+    let obj2 = extractTargetInfo;
     if (!obj) {
       obj = {};
     }
@@ -140,7 +144,7 @@ arg5.buildTypeSpecificAttributes = function buildTypeSpecificAttributes(request,
       obj[tmp2(940).MCP_REQUEST_ID_ATTRIBUTE] = String(message.id);
       tmp5 = obj;
     }
-    const obj1 = {};
+    obj1 = {};
     const merged = Object.assign(tmp5);
     const merged1 = Object.assign(obj2.extractTargetInfo(message.method, obj).attributes);
     if (recordInputs) {

@@ -1,32 +1,28 @@
-// Module ID: 7157
-// Function ID: 7158
+// Module ID: 7195
+// Function ID: 7196
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 7158, 4090, 2]
+// Dependencies: [5, 19, 7196, 4093, 2]
 // Exports: useStartProviderConnection
 
-// Module 7157 (useStartProviderConnection)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import noop from "noop";
+// Module 7195 (useStartProviderConnection)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("useProviderConnection").fileFinishedImporting("modules/application_account_linking/native/useStartProviderConnection.tsx");
+const result = require("set").fileFinishedImporting("modules/application_account_linking/native/useStartProviderConnection.tsx");
 
 export const useStartProviderConnection = function useStartProviderConnection(provider_id) {
-  let account;
-  let canConnect;
-  let hasConnection;
-  let loading;
-  let obj = _require(7158);
+  let obj = _require(7196);
   const providerConnection = obj.useProviderConnection(provider_id);
   const startConnection = providerConnection.startConnection;
   _require = startConnection;
   _require = undefined;
   ({ loading, hasConnection, canConnect, account } = providerConnection);
   _require = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c6 === 2) {
         c6 = 3;
@@ -39,7 +35,7 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -54,12 +50,12 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_2 = tmp3;
-              let closure_1 = tmp7;
+              closure_2 = tmp3;
+              closure_1 = tmp7;
               let lib;
               c5 = 1;
               c6 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = lib(lib);
               return obj1;
             }
@@ -76,8 +72,8 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
               lib = arg1;
               if (lib.success) {
                 if (null != lib.url) {
-                  let c4 = 1;
-                  let obj4 = outer2_1(outer2_2[3]);
+                  c4 = 1;
+                  let obj4 = closure_2_1(closure_2_2[3]);
                   c5 = 3;
                   c6 = 1;
                   const obj3 = { value: null, done: false };
@@ -113,7 +109,7 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
             return obj;
           }
         } catch (tmp18) {
-          let asyncGeneratorStep = tmp18;
+          closure_3 = tmp18;
           if (tmp4 === c4) {
             c6 = tmp2;
             throw tmp18;

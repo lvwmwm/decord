@@ -1,23 +1,23 @@
-// Module ID: 7275
-// Function ID: 7276
+// Module ID: 7313
+// Function ID: 7314
 // Name: subscribeGuildMembers
-// Dependencies: [109, 19, 21, 12, 7276, 643, 1208, 2]
+// Dependencies: [109, 19, 21, 12, 7314, 643, 1208, 2]
 // Exports: default, useSubscribeGuildMembers
 
-// Module 7275 (subscribeGuildMembers)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 7313 (subscribeGuildMembers)
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import closure_5 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let closure_3 = ["forwardedRef"];
 let c7 = false;
-const result = require("jsxProd").fileFinishedImporting("lib/guild/subscribeGuildMembers.tsx");
+const result = require("set").fileFinishedImporting("lib/guild/subscribeGuildMembers.tsx");
 
 export default function subscribeGuildMembers(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return (displayName) => {
-    let closure_0 = displayName;
+    closure_0 = displayName;
     let str = displayName.displayName;
     if (str == null) {
       str = displayName.name;
@@ -26,13 +26,13 @@ export default function subscribeGuildMembers(arg0) {
       str = "Component";
     }
     const combined = "SubscribeGuildMembersContainer(" + str + ")";
-    const Component = outer1_5.Component;
+    const Component = closure_1_5.Component;
     class WrappedComponent extends Component {
       constructor(arg0) {
         tmp3 = new WrappedComponent(displayName, tmp2, tmp);
         // ThrowIfThisInitialized (0x7c)
         tmp4 = closure_0(displayName);
-        arr = outer2_1(outer2_2[3]);
+        arr = closure_2_1(closure_2_2[3]);
         item = arr.forEach(tmp4, (userIds, guildId) => callback(table[4]).subscribeMembers(guildId, userIds));
         tmp3._subscriptions = tmp4;
         return tmp3;
@@ -51,9 +51,9 @@ export default function subscribeGuildMembers(arg0) {
         if (!isEqualResult) {
           if (null != self._subscriptions) {
             tmpResult = tmp(tmp2[3]);
-            const item = tmpResult.forEach(self._subscriptions, (userIds, guildId) => callback(7276).unsubscribeMembers(guildId, userIds));
+            const item = tmpResult.forEach(self._subscriptions, (userIds, guildId) => callback(7314).unsubscribeMembers(guildId, userIds));
           }
-          const item1 = tmp(tmp2[3]).forEach(tmp4, (userIds, guildId) => callback(7276).subscribeMembers(guildId, userIds));
+          const item1 = tmp(tmp2[3]).forEach(tmp4, (userIds, guildId) => callback(7314).subscribeMembers(guildId, userIds));
           self._subscriptions = tmp4;
           const tmpResult1 = tmp(tmp2[3]);
         }
@@ -67,15 +67,15 @@ export default function subscribeGuildMembers(arg0) {
     };
     prototype["render"] = function render() {
       const props = this.props;
-      const merged = Object.assign(outer2_4(props, outer2_3));
-      return outer2_6(closure_0, { ref: props.forwardedRef });
+      const merged = Object.assign(closure_2_4(props, closure_2_3));
+      return closure_2_6(closure_0, { ref: props.forwardedRef });
     };
     WrappedComponent.displayName = combined;
-    const forwardRefResult = outer1_5.forwardRef((arg0, forwardedRef) => {
+    const forwardRefResult = closure_1_5.forwardRef((arg0, forwardedRef) => {
       const obj = {};
       const merged = Object.assign(arg0);
       obj.forwardedRef = forwardedRef;
-      return outer2_6(WrappedComponent, obj);
+      return closure_2_6(WrappedComponent, obj);
     });
     forwardRefResult.displayName = "ForwardRef(" + combined + ")";
     return forwardRefResult;
@@ -83,18 +83,18 @@ export default function subscribeGuildMembers(arg0) {
 };
 export const MAX_GUILD_MEMBER_SUBSCRIPTIONS = 50;
 export const useSubscribeGuildMembers = function useSubscribeGuildMembers(memo, AddMembersActionSheet) {
-  let closure_0 = memo;
-  let closure_1 = AddMembersActionSheet;
+  closure_0 = memo;
+  closure_1 = AddMembersActionSheet;
   const items = [memo, AddMembersActionSheet];
   const effect = React.useEffect(() => {
-    let item = AddMembersActionSheet(outer1_2[3]).forEach(closure_0, (userIds, guildId) => {
-      let tmp = !outer1_7;
-      if (!outer1_7) {
+    let item = AddMembersActionSheet(closure_1_2[3]).forEach(closure_0, (userIds, guildId) => {
+      let tmp = !c7;
+      if (!c7) {
         tmp = userIds.length > 50;
       }
       if (tmp) {
-        outer1_7 = true;
-        let obj = outer1_1(outer1_2[6]);
+        c7 = true;
+        let obj = closure_1_1(closure_1_2[6]);
         obj = { extra: null };
         obj = { count: null, guildId: null, reason: null };
         obj[0] = userIds.length;
@@ -103,10 +103,10 @@ export const useSubscribeGuildMembers = function useSubscribeGuildMembers(memo, 
         obj[0] = obj;
         obj.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", obj);
       }
-      outer1_0(outer1_2[4]).subscribeMembers(guildId, userIds);
+      closure_1_0(closure_1_2[4]).subscribeMembers(guildId, userIds);
     });
     return () => {
-      const item = outer1_1(outer1_2[3]).forEach(closure_0, (userIds, guildId) => callback(table[4]).unsubscribeMembers(guildId, userIds));
+      const item = closure_1_1(closure_1_2[3]).forEach(closure_0, (userIds, guildId) => callback(table[4]).unsubscribeMembers(guildId, userIds));
     };
   }, items);
 };

@@ -1,10 +1,12 @@
-// Module ID: 6785
-// Function ID: 6786
+// Module ID: 6822
+// Function ID: 6823
 // Name: GUILD_ONBOARDING_MODAL_KEY
 // Dependencies: [2]
 
-// Module 6785 (GUILD_ONBOARDING_MODAL_KEY)
-const result = require("set").fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingConstants.tsx");
+// Module 6822 (GUILD_ONBOARDING_MODAL_KEY)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingConstants.tsx");
 
 export const GUILD_ONBOARDING_MODAL_KEY = "GUILD_ONBOARDING_MODAL_KEY";
 export const CHANNELS_AND_ROLES_MODAL_KEY = "CHANNELS_AND_ROLES_MODAL_KEY";

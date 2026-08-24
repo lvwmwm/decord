@@ -1,24 +1,21 @@
-// Module ID: 4059
-// Function ID: 4060
+// Module ID: 4062
+// Function ID: 4063
 // Name: _importWithRetry
 // Dependencies: [5, 2]
 // Exports: awaitOnline, importWithRetry, setAwaitOnline
 
-// Module 4059 (_importWithRetry)
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 4062 (_importWithRetry)
+import closure_1 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
 function _importWithRetry() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
-      let c2;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -30,7 +27,7 @@ function _importWithRetry() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -52,7 +49,7 @@ function _importWithRetry() {
               callback = undefined;
               ({ createPromise: c0, webpackId: c1, name: c2 } = lib);
               let callback2;
-              let closure_4;
+              closure_4 = undefined;
               c5 = 1;
               c6 = 1;
               return { value: "ct", done: true };
@@ -64,7 +61,7 @@ function _importWithRetry() {
                 throw arg1;
               } else if (arg0 === 2) {
                 c6 = 3;
-                const obj1 = { value: null, done: true };
+                obj1 = { value: null, done: true };
                 obj1[0] = arg1;
                 return obj1;
               } else {
@@ -156,7 +153,7 @@ function _importWithRetry() {
     iter.next();
     return iter;
   });
-  const _importWithRetry = tmp;
+  closure_4 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -166,7 +163,7 @@ function _importWithRetry() {
   return applyArgumentsResult;
 }
 function pausedPromise(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return new Promise((arg0) => setTimeout(arg0, closure_0));
 }
 function awaitOnline() {
@@ -176,7 +173,7 @@ const result = require("set").fileFinishedImporting("../discord_common/js/packag
 
 export { awaitOnline };
 export function setAwaitOnline(arg0) {
-  let closure_3 = arg0;
+  closure_3 = arg0;
 }
 export { pausedPromise };
 export const importWithRetry = function importWithRetry(arg0) {

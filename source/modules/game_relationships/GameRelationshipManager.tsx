@@ -1,13 +1,15 @@
-// Module ID: 13910
-// Function ID: 13911
+// Module ID: 13978
+// Function ID: 13979
 // Name: _initialize
-// Dependencies: [5406, 676, 4720, 709, 7140, 2]
+// Dependencies: [5411, 676, 4726, 709, 7178, 2]
 
-// Module 13910 (_initialize)
-import recountRelationshipTypes from "recountRelationshipTypes";
-import { RelationshipTypes } from "ME";
-import "initialize";
+// Module 13978 (_initialize)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 4726 */;
+import closure_2 from "recountRelationshipTypes" /* 5411 */;
+import { RelationshipTypes } from "ME" /* 676 */;
 
+initializeDefault;
 class GameRelationshipManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -16,7 +18,7 @@ class GameRelationshipManager extends tmp2 {
       const set = new Set();
       const values = gameRelationships.values();
       const item = values.forEach((type) => {
-        if (type.type === outer1_3.PENDING_INCOMING) {
+        if (type.type === closure_1_3.PENDING_INCOMING) {
           set.add(type.applicationId);
         }
       });
@@ -27,15 +29,15 @@ class GameRelationshipManager extends tmp2 {
 }
 const prototype = GameRelationshipManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  const subscription = importDefault(709).subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  const subscription = dispatcherDefault.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
 };
 prototype["_terminate"] = function _terminate() {
-  importDefault(709).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  dispatcherDefault.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
 };
 prototype["destroy"] = function destroy() {
-  importDefault(709).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  dispatcherDefault.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
 };
 const gameRelationshipManager = new GameRelationshipManager();
-const result = require("initialize").fileFinishedImporting("modules/game_relationships/GameRelationshipManager.tsx");
+const result = require("set").fileFinishedImporting("modules/game_relationships/GameRelationshipManager.tsx");
 
 export default gameRelationshipManager;

@@ -1,43 +1,48 @@
-// Module ID: 9288
-// Function ID: 9289
+// Module ID: 9325
+// Function ID: 9326
 // Name: map
-// Dependencies: [9289, 4734, 4751, 2]
+// Dependencies: [9326, 4739, 4756, 2]
 // Exports: scaleLineHeight, scaleTextLineHeight, useScaledTextLineHeight
 
-// Module 9288 (map)
+// Module 9325 (map)
+import set from "set" /* 2 */;
+import Text from "Text" /* 4739 */;
+import getFontScale from "getFontScale" /* 4756 */;
+import enforcingDefault from "enforcing" /* 9326 */;
+
 const map = new Map();
-let result = require("getFontScale").fileFinishedImporting("modules/screen/native/useScaledTextLineHeight.android.tsx");
+let result = set.fileFinishedImporting("modules/screen/native/useScaledTextLineHeight.android.tsx");
 
 export const scaleLineHeight = function scaleLineHeight(arg0, arg1) {
   let value = map.get(arg0);
   if (null == value) {
-    const scaledHeightForText = importDefault(9289).getScaledHeightForText(arg0);
+    const scaledHeightForText = enforcingDefault.getScaledHeightForText(arg0);
     const result = map.set(arg0, scaledHeightForText);
     value = scaledHeightForText;
-    const obj2 = importDefault(9289);
+    const obj2 = enforcingDefault;
   }
   return value;
 };
 export const scaleTextLineHeight = function scaleTextLineHeight(c10, fontScale) {
-  const lineHeight = require(4734) /* Text */.TextStyleSheet[c10].lineHeight;
+  const lineHeight = Text.TextStyleSheet[c10].lineHeight;
   let value = map.get(lineHeight);
   if (null == value) {
-    const scaledHeightForText = importDefault(9289).getScaledHeightForText(lineHeight);
+    const scaledHeightForText = enforcingDefault.getScaledHeightForText(lineHeight);
     const result = map.set(lineHeight, scaledHeightForText);
     value = scaledHeightForText;
-    const obj2 = importDefault(9289);
+    const obj2 = enforcingDefault;
   }
   return value;
 };
 export const useScaledTextLineHeight = function useScaledTextLineHeight(c3) {
-  const fontScale = require(4751) /* getFontScale */.useFontScale();
-  const lineHeight = require(4734) /* Text */.TextStyleSheet[c3].lineHeight;
+  const fontScale = getFontScale.useFontScale();
+  const lineHeight = Text.TextStyleSheet[c3].lineHeight;
   let value = map.get(lineHeight);
   if (null == value) {
-    const scaledHeightForText = importDefault(9289).getScaledHeightForText(lineHeight);
+    const scaledHeightForText = enforcingDefault.getScaledHeightForText(lineHeight);
     const result = map.set(lineHeight, scaledHeightForText);
     value = scaledHeightForText;
-    const obj3 = importDefault(9289);
+    const obj3 = enforcingDefault;
   }
   return value;
 };

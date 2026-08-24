@@ -5,7 +5,7 @@
 // Exports: useToolbarContext
 
 // Module 1879 (context)
-import noop from "noop";
+import noop from "noop" /* 19 */;
 
 const useContext = noop.useContext;
 const context = noop.createContext(undefined);
@@ -17,7 +17,7 @@ export const useToolbarContext = () => {
     return tmp;
   } else {
     const _Error = Error;
-    const error = new Error("KeyboardToolbar.* component must be used inside <KeyboardToolbar>");
+    error = new Error("KeyboardToolbar.* component must be used inside <KeyboardToolbar>");
     throw error;
   }
 };

@@ -1,19 +1,16 @@
-// Module ID: 9422
-// Function ID: 9423
+// Module ID: 9459
+// Function ID: 9460
 // Name: GappedList
 // Dependencies: [19, 21, 1297, 2]
 // Exports: GappedList
 
-// Module 9422 (GappedList)
-import noop from "noop";
-import jsxProd from "jsxProd";
+// Module 9459 (GappedList)
+import closure_2 from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-let c5;
 const require = arg1;
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
-const result = require("Button").fileFinishedImporting("modules/guild_role_subscriptions/native/components/LayoutUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/LayoutUtils.tsx");
 
 export const GappedList = function GappedList(gap) {
   let num = gap.gap;
@@ -39,7 +36,7 @@ export const GappedList = function GappedList(gap) {
       } else {
         obj = { size: null };
         obj[0] = num;
-        tmp4Result = outer1_3(num(renderGap[2]).Spacer, obj);
+        tmp4Result = closure_1_3(num(renderGap[2]).Spacer, obj);
       }
     })
   });

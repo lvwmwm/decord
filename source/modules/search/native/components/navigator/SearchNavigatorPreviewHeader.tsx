@@ -1,15 +1,16 @@
-// Module ID: 16076
-// Function ID: 16077
-// Dependencies: [19, 17, 21, 4661, 12705, 2]
+// Module ID: 16174
+// Function ID: 16175
+// Dependencies: [19, 17, 21, 4668, 12760, 2]
 
-// Module 16076
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 16174
+import ChannelHeaderDefault from "ChannelHeader" /* 12760 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
 let closure_4 = createCacheKey.createStyles({ container: { flexShrink: 1, paddingRight: 12, flexDirection: "row", alignItems: "center" } });
-const memoResult = require("noop").memo((channelId) => <View style={callback().container}>{jsx(importDefault(12705), { channelId: arg0.channelId, screenIndex: "none", pressable: false, isGuildMemberCountVisible: false, isNavigationScreen: true })}</View>);
-const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorPreviewHeader.tsx");
+const memoResult = importAllResult.memo((channelId) => <View style={callback().container}>{jsx(ChannelHeaderDefault, { channelId: arg0.channelId, screenIndex: "none", pressable: false, isGuildMemberCountVisible: false, isNavigationScreen: true })}</View>);
+const result = require("set").fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorPreviewHeader.tsx");
 
 export default memoResult;

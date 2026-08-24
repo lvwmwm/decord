@@ -1,15 +1,19 @@
-// Module ID: 10494
-// Function ID: 10495
+// Module ID: 10533
+// Function ID: 10534
 // Name: items
-// Dependencies: [4039, 1938, 1940, 5315, 2]
+// Dependencies: [4042, 1938, 1940, 5320, 2]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier
 
-// Module 10494 (items)
+// Module 10533 (items)
+import set from "set" /* 2 */;
+import parseServerPerkConfigKind from "parseServerPerkConfigKind" /* 1938 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
+
 let obj = { UPSELL: "UPSELL", NITRO: "NITRO", CREPE: "CREPE", INELIGIBLE: "INELIGIBLE" };
 obj = { NITRO: "nitro", CREPE: "crepe" };
 const items = [, ];
 ({ CREPE: arr[0], NITRO: arr[1] } = obj);
-const result = require("create").fileFinishedImporting("modules/quests/utils/QuestOrbMultiplierUtils.tsx");
+const result = set.fileFinishedImporting("modules/quests/utils/QuestOrbMultiplierUtils.tsx");
 
 export const QuestOrbMultiplierEligibilityType = obj;
 export const QuestOrbMultiplierSource = obj;
@@ -17,7 +21,7 @@ export const shouldReceiveQuestOrbMultiplier = function shouldReceiveQuestOrbMul
   return items.includes(questOrbMultiplierEligibilityForUser);
 };
 export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(perks) {
-  const obj = importDefault(4039);
+  obj = getPremiumPlanItemDefault;
   if (obj.canUseMoreQuestOrbs(perks)) {
     if (tmpResult.canUseQuestOrbMultiplier(perks)) {
       return obj.NITRO;
@@ -26,7 +30,7 @@ export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(
       if (perks != null) {
         perks = perks.perks;
       }
-      const perkSource = require(1938) /* parseServerPerkConfigKind */.getPerkSource(perks, tmp4(1940).Perk.MORE_QUEST_ORBS);
+      const perkSource = parseServerPerkConfigKind.getPerkSource(perks, tmp4(1940).Perk.MORE_QUEST_ORBS);
       let hasItem;
       if (perkSource != null) {
         hasItem = perkSource.includes(tmp4(1940).PerkSource.SOURCE_NITRO);
@@ -45,13 +49,13 @@ export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(
             NITRO = obj.CREPE;
           }
         }
-        tmp4Result = tmp4(5315);
+        tmp4Result = tmp4(5320);
       }
       return NITRO;
     }
-    tmpResult = tmp(4039);
+    tmpResult = getPremiumPlanItemDefault;
   } else {
     return null;
   }
-  tmp = importDefault;
+  const tmp = importDefault;
 };

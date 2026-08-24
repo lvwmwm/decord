@@ -4,7 +4,7 @@
 // Dependencies: [817]
 
 // Module 1084 (weakMap)
-import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation" /* 817 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const weakMap = new WeakMap();
@@ -14,7 +14,7 @@ export const reportingObserverIntegration = registerSpanErrorInstrumentation.def
   if (arg0 === undefined) {
     obj = {};
   }
-  let closure_0;
+  closure_0 = undefined;
   function handler(arg0) {
     if (map.has(obj.getClient())) {
       function _loop(iter) {
@@ -44,7 +44,7 @@ export const reportingObserverIntegration = registerSpanErrorInstrumentation.def
               const tmp6 = tmp5.body.message || "No details available";
             }
           }
-          iter(outer1_1[0]).captureMessage("" + combined + ": " + str);
+          iter(closure_1_1[0]).captureMessage("" + combined + ": " + str);
         });
       }
       const iter = arg0[Symbol.iterator]();

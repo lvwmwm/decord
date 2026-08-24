@@ -1,13 +1,14 @@
-// Module ID: 17021
-// Function ID: 17022
+// Module ID: 17114
+// Function ID: 17115
 // Name: prototype
-// Dependencies: [4539, 8664, 5038, 2]
+// Dependencies: [4544, 8701, 5043, 2]
 
-// Module 17021 (prototype)
-import createRTCConnection from "createRTCConnection";
-import withEqualityFn from "withEqualityFn";
-import "initialize";
+// Module 17114 (prototype)
+import initializeDefault from "initialize" /* 5043 */;
+import closure_0 from "createRTCConnection" /* 4544 */;
+import closure_1 from "withEqualityFn" /* 8701 */;
 
+initializeDefault;
 let prototype = function VoicePanelManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = {
@@ -37,6 +38,6 @@ let prototype = function VoicePanelManager() {
 class prototype extends tmp2 {
 }
 prototype = new prototype();
-const result = require("initialize").fileFinishedImporting("modules/voice_panel/VoicePanelManager.native.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/VoicePanelManager.native.tsx");
 
 export default prototype;

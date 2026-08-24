@@ -1,22 +1,20 @@
-// Module ID: 15626
-// Function ID: 15627
+// Module ID: 15692
+// Function ID: 15693
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 4197, 1388, 1236, 1377, 4115, 12306, 1501, 589, 13249, 4548, 7366, 15627, 9314, 2]
+// Dependencies: [32, 19, 4201, 1388, 1236, 1377, 4119, 12358, 1501, 589, 13304, 4553, 7404, 15693, 9351, 2]
 // Exports: useYouBarCoachmark
 
-// Module 15626 (useYouBarCoachmark)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import handleConnectionOpen from "handleConnectionOpen";
-import { ContentDismissActionType } from "ContentDismissActionType";
+// Module 15692 (useYouBarCoachmark)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "handleConnectionOpen" /* 4201 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 
 const require = arg1;
 let closure_6 = [];
-const result = require("handleConnectionOpen").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarCoachmark.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarCoachmark.tsx");
 
 export const useYouBarCoachmark = function useYouBarCoachmark(isQuestRendered) {
-  let tmp7;
-  let tmp8;
   isQuestRendered = isQuestRendered.isQuestRendered;
   const visibleContent = isQuestRendered;
   let markAsDismissed;
@@ -29,7 +27,7 @@ export const useYouBarCoachmark = function useYouBarCoachmark(isQuestRendered) {
   const obj2 = visibleContent(markAsDismissed[7]);
   isFocused = visibleContent(markAsDismissed[8]).useIsFocused();
   const obj3 = visibleContent(markAsDismissed[8]);
-  let items = [handleConnectionOpen];
+  let items = [closure_4];
   stateFromStores = visibleContent(markAsDismissed[9]).useStateFromStores(items, () => {
     let obj = visibleContent(markAsDismissed[10]);
     obj = { from: "authed", unit: visibleContent(markAsDismissed[11]).TimeUnits.DAYS };
@@ -50,7 +48,7 @@ export const useYouBarCoachmark = function useYouBarCoachmark(isQuestRendered) {
         return items;
       }
     }
-    return outer1_6;
+    return closure_1_6;
   }, items1);
   const obj4 = visibleContent(markAsDismissed[9]);
   const obj5 = visibleContent(markAsDismissed[12]);
@@ -64,7 +62,7 @@ export const useYouBarCoachmark = function useYouBarCoachmark(isQuestRendered) {
     obj[1] = intl2.string(visibleContent(markAsDismissed[4]).t["V3j11+"]);
     obj[3] = visibleContent === visibleContent(markAsDismissed[5]).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK;
     obj[4] = function onDismiss() {
-      return callback(outer1_5.USER_DISMISS);
+      return callback(closure_1_5.USER_DISMISS);
     };
     return obj;
   }, items2);

@@ -5,10 +5,14 @@
 // Exports: constructInPlace, copyConstruct, merge, objectIsPlainRecordOfType, set, tryReuseExistingInPlacePlainRecord
 
 // Module 1431 (isValueEqual)
-import { TypeTag } from "TypeTag";
-import importDefaultResult from "TypeTag";
+import _modDef38 from "module_38" /* 38 */;
+import shallowEqual from "shallowEqual" /* 643 */;
+import shallowEqualDefault from "shallowEqual" /* 643 */;
+import areSetsEqual from "areSetsEqual" /* 1433 */;
+import { TypeTag } from "TypeTag" /* 1432 */;
+import importDefaultResult from "TypeTag" /* 1432 */;
 
-const require = arg1;
+require = arg1;
 function isValueEqual(items, current) {
   if (null != items) {
     if (null != current) {
@@ -20,16 +24,16 @@ function isValueEqual(items, current) {
           if (items instanceof Set) {
             const _Set2 = Set;
             if (current instanceof Set) {
-              let areSetsEqualResult = require(1433) /* areSetsEqual */.areSetsEqual(items, current);
-              const obj2 = require(1433) /* areSetsEqual */;
+              let areSetsEqualResult = areSetsEqual.areSetsEqual(items, current);
+              const obj2 = areSetsEqual;
             }
           }
           const _Array = Array;
           if (Array.isArray(items)) {
             const _Array2 = Array;
             if (Array.isArray(current)) {
-              areSetsEqualResult = require(643) /* shallowEqual */.areArraysShallowEqual(items, current);
-              const obj = require(643) /* shallowEqual */;
+              areSetsEqualResult = shallowEqual.areArraysShallowEqual(items, current);
+              const obj = shallowEqual;
             }
           }
           areSetsEqualResult = typeof items === "object";
@@ -37,7 +41,7 @@ function isValueEqual(items, current) {
             areSetsEqualResult = typeof current === "object";
           }
           if (areSetsEqualResult) {
-            areSetsEqualResult = importDefault(643)(items, current);
+            areSetsEqualResult = shallowEqualDefault(items, current);
           }
         } else {
           const _Date2 = Date;
@@ -70,7 +74,7 @@ function isPlainRecordDataEqual(arg0, arg1) {
     return true;
   }
 }
-const result = require("areSetsEqual").fileFinishedImporting("lib/PlainRecord.tsx");
+const result = require("set").fileFinishedImporting("lib/PlainRecord.tsx");
 
 export default importDefaultResult;
 export { TypeTag };
@@ -131,7 +135,7 @@ export const tryReuseExistingInPlacePlainRecord = function tryReuseExistingInPla
   if (!tmp3) {
     tmp3 = tmp[TypeTag] === arg0;
   }
-  importDefault(38)(tmp3, "Existing record type does not match the expected type");
+  _modDef38(tmp3, "Existing record type does not match the expected type");
   if (null == tmp) {
     arg2[TypeTag] = arg0;
     tmp = arg2;

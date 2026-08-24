@@ -1,28 +1,26 @@
-// Module ID: 7531
-// Function ID: 7532
+// Module ID: 7569
+// Function ID: 7570
 // Name: _generateAnimationSource
-// Dependencies: [5, 32, 19, 17, 4038, 7532, 1435, 500, 7569, 2]
+// Dependencies: [5, 32, 19, 17, 4041, 7570, 1435, 500, 7607, 2]
 // Exports: useBurstReactionAnimationSource, useSuperReactionAnimationSourceFromLocalImage
 
-// Module 7531 (_generateAnimationSource)
-import items from "items";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 7569 (_generateAnimationSource)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
-let c5;
-let closure_6;
 const require = arg1;
 function _generateAnimationSource() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2, arg3) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let items = arg2;
-    let _slicedToArray = arg3;
-    let c9 = 0;
-    let c10 = 0;
-    let c8 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    closure_3 = arg3;
+    c9 = 0;
+    c10 = 0;
+    c8 = 0;
     return (function*(arg0, arg1, arg2, arg3) {
       if (c10 === 2) {
         c10 = 3;
@@ -35,7 +33,7 @@ function _generateAnimationSource() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -50,35 +48,35 @@ function _generateAnimationSource() {
               obj[0] = arg1;
               return obj;
             } else {
-              let closure_6 = tmp3;
-              let closure_5 = tmp5;
-              const lib = items;
-              let dependencyMap;
-              items = undefined;
+              closure_6 = tmp3;
+              closure_5 = tmp5;
+              const lib = closure_2;
+              dependencyMap = undefined;
+              closure_2 = undefined;
               let lib2;
-              let noop;
+              closure_4 = undefined;
               closure_5 = undefined;
               closure_6 = undefined;
               let table;
               let dependencyMap2;
               c9 = undefined;
               c10 = undefined;
-              let closure_11;
+              closure_11 = undefined;
               dependencyMap2 = 1;
-              const obj1 = {};
-              const merged = Object.assign(items);
+              obj1 = {};
+              const merged = Object.assign(closure_2);
               obj1.animated = false;
-              const emojiUrl = lib(4038).getEmojiUrl(obj1, 128);
-              noop = emojiUrl;
+              const emojiUrl = lib(4041).getEmojiUrl(obj1, 128);
+              closure_4 = emojiUrl;
               if (emojiUrl == null) {
-                noop = "";
+                closure_4 = "";
               }
-              items = noop;
-              const obj12 = lib(7532);
+              closure_2 = closure_4;
+              const obj12 = lib(7570);
               c9 = 2;
               c10 = 1;
               let obj2 = { value: null, done: false };
-              obj2[0] = obj12.getBurstAnimation(lib, dependencyMap, items.name, lib2);
+              obj2[0] = obj12.getBurstAnimation(lib, dependencyMap, closure_2.name, lib2);
               return obj2;
             }
           } else if (1 === tmp8) {
@@ -97,9 +95,9 @@ function _generateAnimationSource() {
               return obj3;
             } else {
               lib2 = arg1;
-              if ("" !== items) {
+              if ("" !== closure_2) {
                 let obj8 = lib(1435);
-                dependencyMap = obj8.makeSource(items);
+                dependencyMap = obj8.makeSource(closure_2);
                 const ImageManager3 = closure_5.ImageManager;
                 c9 = 3;
                 c10 = 1;
@@ -127,9 +125,9 @@ function _generateAnimationSource() {
                 obj6[0] = arg1;
                 return obj6;
               } else {
-                noop = arg1;
+                closure_4 = arg1;
                 const _HermesInternal2 = HermesInternal;
-                lib2.assets[0].p = "data:image/png;base64," + noop;
+                lib2.assets[0].p = "data:image/png;base64," + closure_4;
               }
             } else if (4 === tmp8) {
               if (arg0 === 1) {
@@ -167,7 +165,7 @@ function _generateAnimationSource() {
               obj9[0] = c9;
               obj9[1] = c10;
               obj9[2] = closure_11;
-              closure_6 = lib(7569).replaceAnimationColors(closure_6, obj9);
+              closure_6 = lib(7607).replaceAnimationColors(closure_6, obj9);
               const _JSON2 = JSON;
               dependencyMap2 = 0;
               c10 = 3;
@@ -203,7 +201,7 @@ function _generateAnimationSource() {
       }
     })();
   });
-  const _generateAnimationSource = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -215,13 +213,11 @@ function _generateAnimationSource() {
 function _generateAnimationSourceFromLocalImage() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c5 = 0;
+    c6 = 0;
+    c4 = 0;
     const iter = (function*(arg0) {
-      let c0;
-      let c1;
       if (c6 === 2) {
         c6 = 3;
         HermesBuiltin.throwTypeError();
@@ -233,7 +229,7 @@ function _generateAnimationSourceFromLocalImage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -249,19 +245,19 @@ function _generateAnimationSourceFromLocalImage() {
               return obj;
             } else {
               let uri = tmp3;
-              let dependencyMap = tmp7;
+              dependencyMap = tmp7;
               let lib;
               dependencyMap = undefined;
               ({ animationSource: c0, localImageSource: c1 } = lib);
               uri = undefined;
               let callback;
-              let c4;
+              c4 = undefined;
               c5 = undefined;
               c6 = undefined;
               let dependencyMap2;
-              let closure_8;
-              let closure_9;
-              let closure_10;
+              closure_8 = undefined;
+              closure_9 = undefined;
+              closure_10 = undefined;
               c5 = 1;
               c6 = 1;
               return { value: "ct", done: true };
@@ -272,7 +268,7 @@ function _generateAnimationSourceFromLocalImage() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = arg1;
               return obj1;
             } else {
@@ -332,7 +328,7 @@ function _generateAnimationSourceFromLocalImage() {
             obj6[0] = closure_8;
             obj6[1] = closure_9;
             obj6[2] = closure_10;
-            c5 = lib(7569).replaceAnimationColors(c5, obj6);
+            c5 = lib(7607).replaceAnimationColors(c5, obj6);
             const _JSON = JSON;
             c4 = 0;
             c6 = 3;
@@ -354,7 +350,7 @@ function _generateAnimationSourceFromLocalImage() {
     iter.next();
     return iter;
   });
-  const _generateAnimationSourceFromLocalImage = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -364,7 +360,7 @@ function _generateAnimationSourceFromLocalImage() {
   return applyArgumentsResult;
 }
 ({ NativeModules: c5, Image: closure_6 } = get_ActivityIndicator);
-const result = require("noop").fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionEffectUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionEffectUtils.tsx");
 
 export const useBurstReactionAnimationSource = function useBurstReactionAnimationSource(channelId) {
   channelId = channelId.channelId;
@@ -390,7 +386,7 @@ export const useBurstReactionAnimationSource = function useBurstReactionAnimatio
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -405,14 +401,14 @@ export const useBurstReactionAnimationSource = function useBurstReactionAnimatio
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_1 = tmp2;
-                let closure_0 = tmp3;
+                closure_1 = tmp2;
+                closure_0 = tmp3;
                 closure_0 = undefined;
                 if (null != c2) {
                   c2 = 1;
                   c3 = 1;
-                  const obj1 = { value: null, done: false };
-                  obj1[0] = (function generateAnimationSource(outer1_0, outer1_1, arg2, c3) {
+                  obj1 = { value: null, done: false };
+                  obj1[0] = (function generateAnimationSource(closure_1_0, closure_1_1, arg2, c3) {
                     const self = this;
                     const apply = closure_7.apply;
                     if (typeof apply === "unknown") {
@@ -421,7 +417,7 @@ export const useBurstReactionAnimationSource = function useBurstReactionAnimatio
                       applyArgumentsResult = apply(self, arguments);
                     }
                     return applyArgumentsResult;
-                  })(outer1_0, outer1_1, tmp12, c3);
+                  })(closure_1_0, closure_1_1, tmp12, c3);
                   return obj1;
                 } else {
                   c3 = 3;
@@ -432,7 +428,7 @@ export const useBurstReactionAnimationSource = function useBurstReactionAnimatio
               throw arg1;
             } else if (arg0 !== 2) {
               closure_0 = arg1;
-              outer1_4(closure_0);
+              closure_1_4(closure_0);
             }
             c3 = 3;
             obj = { value: null, done: true };
@@ -444,7 +440,7 @@ export const useBurstReactionAnimationSource = function useBurstReactionAnimatio
           }
         }
       });
-      const _getSource = tmp;
+      closure_0 = tmp;
       let apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -469,9 +465,9 @@ export const useBurstReactionAnimationSource = function useBurstReactionAnimatio
 export const useSuperReactionAnimationSourceFromLocalImage = function useSuperReactionAnimationSourceFromLocalImage(animationSource) {
   animationSource = animationSource.animationSource;
   const localImageSource = animationSource.localImageSource;
-  let items;
+  closure_2 = undefined;
   let tmp = callback2(React.useState(null), 2);
-  items = tmp[1];
+  closure_2 = tmp[1];
   const items = [animationSource, localImageSource];
   const effect = React.useEffect(() => {
     function _getSource2() {
@@ -488,7 +484,7 @@ export const useSuperReactionAnimationSourceFromLocalImage = function useSuperRe
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -503,12 +499,12 @@ export const useSuperReactionAnimationSourceFromLocalImage = function useSuperRe
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_1 = tmp3;
-                let closure_0 = tmp2;
+                closure_1 = tmp3;
+                closure_0 = tmp2;
                 closure_0 = undefined;
-                const obj1 = { animationSource: null, localImageSource: null };
-                obj1[0] = outer1_0;
-                obj1[1] = outer1_1;
+                obj1 = { animationSource: null, localImageSource: null };
+                obj1[0] = closure_1_0;
+                obj1[1] = closure_1_1;
                 v0 = 1;
                 c3 = 1;
                 const obj2 = { value: null, done: false };
@@ -536,7 +532,7 @@ export const useSuperReactionAnimationSourceFromLocalImage = function useSuperRe
               closure_0 = arg1;
               v0(closure_0);
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp14) {
             c3 = tmp;
@@ -544,7 +540,7 @@ export const useSuperReactionAnimationSourceFromLocalImage = function useSuperRe
           }
         }
       });
-      const _getSource2 = tmp;
+      closure_0 = tmp;
       let apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);

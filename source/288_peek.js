@@ -136,7 +136,7 @@ function advanceTimers(arg0) {
   }
 }
 function handleTimeout(arg0) {
-  let c13 = false;
+  c13 = false;
   advanceTimers(arg0);
   if (!c12) {
     let first = null;
@@ -155,9 +155,9 @@ function handleTimeout(arg0) {
         first1 = arr2[0];
       }
       if (null !== first1) {
-        let closure_0 = handleTimeout;
-        let closure_22 = _setTimeout(() => {
-          callback(outer1_2());
+        closure_0 = handleTimeout;
+        closure_22 = _setTimeout(() => {
+          callback(closure_1_2());
         }, first1.startTime - arg0);
       }
     }
@@ -172,19 +172,19 @@ function shouldYieldToHost() {
 }
 function performWorkUntilDeadline() {
   let tmp25Result;
-  let c14 = false;
+  c14 = false;
   if (c21) {
     const tmp6 = fn();
     let tmp7 = tmp6;
-    let c23 = tmp6;
+    closure_23 = tmp6;
     try {
-      let c12 = false;
+      c12 = false;
       if (c13) {
         c13 = false;
         _clearTimeout(c22);
         c22 = -1;
       }
-      let c11 = true;
+      c11 = true;
       try {
         advanceTimers(tmp7);
         const tmp18 = peek(closure_6);
@@ -284,9 +284,9 @@ function performWorkUntilDeadline() {
   }
 }
 function requestHostTimeout(handleTimeout, arg1) {
-  let closure_0 = handleTimeout;
-  let closure_22 = _setTimeout(() => {
-    callback(outer1_2());
+  closure_0 = handleTimeout;
+  closure_22 = _setTimeout(() => {
+    callback(closure_1_2());
   }, arg1);
 }
 if (typeof performance === "object") {
@@ -391,7 +391,7 @@ if (typeof performance === "object") {
         }
       }
       obj = { id: tmp4, callback, priorityLevel, startTime: tmp2, expirationTime: sum1, sortIndex: -1 };
-      let closure_8 = tmp4 + 1;
+      closure_8 = tmp4 + 1;
       sum1 = tmp2 + num;
       if (tmp2 > diff1) {
         obj.sortIndex = tmp2;
@@ -433,17 +433,17 @@ if (typeof performance === "object") {
         }
         if (tmp21) {
           if (c13) {
-            _clearTimeout(c22);
-            c22 = -1;
+            _clearTimeout(closure_22);
+            closure_22 = -1;
           } else {
             c13 = true;
           }
           diff1 = tmp2 - diff1;
-          let closure_0 = handleTimeout;
+          closure_0 = handleTimeout;
           tmp2 = _setTimeout(() => {
-            callback(outer1_2());
+            callback(closure_1_2());
           }, diff1);
-          c22 = tmp2;
+          closure_22 = tmp2;
         }
       } else {
         obj.sortIndex = sum1;
@@ -506,7 +506,7 @@ if (typeof performance === "object") {
     let requestPaint = globalThis.nativeRuntimeScheduler.unstable_requestPaint;
   } else {
     requestPaint = function requestPaint() {
-      let c14 = true;
+      c14 = true;
     };
   }
   if (typeof globalThis.nativeRuntimeScheduler !== "undefined") {

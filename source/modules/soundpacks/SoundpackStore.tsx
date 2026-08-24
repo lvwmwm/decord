@@ -1,19 +1,23 @@
-// Module ID: 10041
-// Function ID: 10042
+// Module ID: 10080
+// Function ID: 10081
 // Name: Soundpacks
-// Dependencies: [10042, 589, 709, 2]
+// Dependencies: [10081, 589, 709, 2]
 
-// Module 10041 (Soundpacks)
-import { Soundpacks } from "Soundpacks";
-import { PersistedStore } from "initialize";
+// Module 10080 (Soundpacks)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import Soundpacks2 from "Soundpacks" /* 10081 */;
 
+const Soundpacks = Soundpacks2.Soundpacks;
 let closure_1 = { soundpack: Soundpacks.CLASSIC, lastSoundpackExperimentId: null };
+const PersistedStore = initializeDefault.PersistedStore;
 class SoundpackStore extends PersistedStore {
 }
 const prototype = SoundpackStore.prototype;
 prototype["initialize"] = function initialize(arg0) {
   if (null != arg0) {
-    let closure_1 = arg0;
+    closure_1 = arg0;
     const _Object = Object;
     const values = Object.values(Soundpacks);
     if (!values.includes(closure_1.soundpack)) {
@@ -33,7 +37,7 @@ prototype["getLastSoundpackExperimentId"] = function getLastSoundpackExperimentI
 };
 SoundpackStore.displayName = "SoundpackStore";
 SoundpackStore.persistKey = "SoundpackStore";
-const soundpackStore = new SoundpackStore(require("dispatcher"), {
+const soundpackStore = new SoundpackStore(dispatcherDefault, {
   SET_SOUNDPACK: function handleSetSoundpack(forExperimentId) {
     let lastSoundpackExperimentId = forExperimentId.forExperimentId;
     const obj = { soundpack: forExperimentId.soundpack, lastSoundpackExperimentId: null };
@@ -43,6 +47,6 @@ const soundpackStore = new SoundpackStore(require("dispatcher"), {
     obj[1] = lastSoundpackExperimentId;
   }
 });
-const result = require("dispatcher").fileFinishedImporting("modules/soundpacks/SoundpackStore.tsx");
+const result = set.fileFinishedImporting("modules/soundpacks/SoundpackStore.tsx");
 
 export default soundpackStore;

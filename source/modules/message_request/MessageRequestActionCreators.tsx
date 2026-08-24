@@ -1,20 +1,23 @@
-// Module ID: 9999
-// Function ID: 10000
+// Module ID: 10038
+// Function ID: 10039
 // Name: _acceptMessageRequest
-// Dependencies: [5, 676, 530, 10000, 709, 5256, 2]
+// Dependencies: [5, 676, 530, 10039, 709, 5261, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 9999 (_acceptMessageRequest)
-import handleLogout from "handleLogout";
-import { Endpoints } from "ME";
+// Module 10038 (_acceptMessageRequest)
+import sendRequest from "sendRequest" /* 530 */;
+import handleLogoutDefault from "handleLogout" /* 5261 */;
+import MessageRequestConsentStatusTypes from "MessageRequestConsentStatusTypes" /* 10039 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function _acceptMessageRequest() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -27,7 +30,7 @@ function _acceptMessageRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -44,13 +47,13 @@ function _acceptMessageRequest() {
             } else {
               const table = tmp2;
               const callback2 = tmp5;
-              const HTTP = callback(outer1_2[2]).HTTP;
-              const obj1 = { url: null, body: null, rejectWithError: null };
+              const HTTP = callback(closure_1_2[2]).HTTP;
+              obj1 = { url: null, body: null, rejectWithError: null };
               obj1[0] = c4.CHANNEL_RECIPIENT_ME(callback);
               const obj2 = { consent_status: null };
-              obj2[0] = callback(outer1_2[3]).MessageRequestConsentStatusTypes.ACCEPTED;
+              obj2[0] = callback(closure_1_2[3]).MessageRequestConsentStatusTypes.ACCEPTED;
               obj1[1] = obj2;
-              obj1[2] = callback(outer1_2[2]).rejectWithMigratedError();
+              obj1[2] = callback(closure_1_2[2]).rejectWithMigratedError();
               c3 = 1;
               c4 = 1;
               const obj3 = { value: null, done: false };
@@ -71,7 +74,7 @@ function _acceptMessageRequest() {
             obj5[1] = callback;
             obj.dispatch(obj5);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c4 = tmp;
@@ -80,7 +83,7 @@ function _acceptMessageRequest() {
       }
     })();
   });
-  const _acceptMessageRequest = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -89,7 +92,7 @@ function _acceptMessageRequest() {
   }
   return applyArgumentsResult;
 }
-const result = require("sendRequest").fileFinishedImporting("modules/message_request/MessageRequestActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/message_request/MessageRequestActionCreators.tsx");
 
 export const acceptMessageRequest = function acceptMessageRequest(arg0) {
   const self = this;
@@ -102,34 +105,33 @@ export const acceptMessageRequest = function acceptMessageRequest(arg0) {
   return applyArgumentsResult;
 };
 export const clearMessageRequestState = function clearMessageRequestState(id) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   let obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body: null, rejectWithError: null };
-  obj = { consent_status: require(10000) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.UNSPECIFIED };
+  obj = { consent_status: MessageRequestConsentStatusTypes.MessageRequestConsentStatusTypes.UNSPECIFIED };
   obj[1] = obj;
-  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+  obj[2] = sendRequest.rejectWithMigratedError();
   return HTTP.put(obj);
 };
 export const markAsMessageRequest = function markAsMessageRequest(id) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   let obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body: null, rejectWithError: null };
-  obj = { consent_status: require(10000) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.PENDING };
+  obj = { consent_status: MessageRequestConsentStatusTypes.MessageRequestConsentStatusTypes.PENDING };
   obj[1] = obj;
-  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+  obj[2] = sendRequest.rejectWithMigratedError();
   return HTTP.put(obj);
 };
 export const rejectMessageRequest = function rejectMessageRequest(closure_0) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
-  const obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(closure_0), rejectWithError: null };
-  obj[1] = require(530) /* sendRequest */.rejectWithMigratedError();
+  const HTTP = sendRequest.HTTP;
+  const obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(closure_0), rejectWithError: sendRequest.rejectWithMigratedError() };
   return HTTP.del(obj);
 };
 export const rejectMessageRequestBatch = function rejectMessageRequestBatch(closure_0) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
+  const HTTP = sendRequest.HTTP;
   obj = { url: Endpoints.CHANNEL_RECIPIENT_REJECT_BATCH(), body: obj, rejectWithError: null };
   obj = { channel_ids: closure_0 };
-  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+  obj[2] = sendRequest.rejectWithMigratedError();
   return HTTP.put(obj);
 };
 export const fetchUserCountryCode = function fetchUserCountryCode() {
-  const locationMetadata = importDefault(5256).getLocationMetadata();
+  const locationMetadata = handleLogoutDefault.getLocationMetadata();
 };

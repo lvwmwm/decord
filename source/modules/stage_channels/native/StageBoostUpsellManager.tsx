@@ -1,18 +1,21 @@
-// Module ID: 16703
-// Function ID: 16704
+// Module ID: 16799
+// Function ID: 16800
 // Name: handleVoiceChannelSelect
-// Dependencies: [4086, 1391, 4021, 1979, 4978, 5038, 4342, 4988, 9653, 1399, 6707, 2007, 2]
+// Dependencies: [4089, 1391, 4024, 1980, 4983, 5043, 4346, 4993, 9692, 1399, 6744, 2008, 2]
 
-// Module 16703 (handleVoiceChannelSelect)
-import setContent from "setContent";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import handleConnectionOpen from "handleConnectionOpen";
-import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH";
-import "initialize";
+// Module 16799 (handleVoiceChannelSelect)
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import useStageHasMedia from "useStageHasMedia" /* 4993 */;
+import initializeDefault from "initialize" /* 5043 */;
+import closure_3 from "setContent" /* 4089 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_6 from "handleConnectionOpen" /* 1980 */;
+import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 4983 */;
 
-const require = arg1;
+require = arg1;
 let c8 = false;
+initializeDefault;
 class StageBoostUpsellManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -27,8 +30,8 @@ prototype["handleVoiceChannelSelect"] = function handleVoiceChannelSelect(channe
     tmp = key.getKey() === STAGE_BOOSTING_SHEET_KEY;
   }
   if (tmp) {
-    importDefault(4342).hideActionSheet(STAGE_BOOSTING_SHEET_KEY);
-    const obj = importDefault(4342);
+    ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet(STAGE_BOOSTING_SHEET_KEY);
+    const obj = ACTION_SHEET_HEIGHT_HALFDefault;
   }
 };
 prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
@@ -42,18 +45,18 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
           isGuildStageVoiceResult = channel.isGuildStageVoice();
         }
         if (isGuildStageVoiceResult) {
-          let obj = require(4988) /* useStageHasMedia */;
+          let obj = useStageHasMedia;
           if (obj.getStageHasMedia(channel.id)) {
             if (tmp5Result.getChannelVideoLimit(channel).reachedLimit) {
-              if (getUncachedChannelPermissions.can(tmp5(1399).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
+              if (closure_5.can(tmp5(1399).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
                 obj = { channel: null };
                 obj[0] = channel;
-                importDefault(4342).openLazy(tmp5(2007)(6707, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj);
+                ACTION_SHEET_HEIGHT_HALFDefault.openLazy(tmp5(2008)(6744, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj);
                 c8 = true;
-                const obj3 = importDefault(4342);
+                const obj3 = ACTION_SHEET_HEIGHT_HALFDefault;
               }
             }
-            tmp5Result = tmp5(9653);
+            tmp5Result = tmp5(9692);
           }
           tmp6 = dependencyMap;
         }
@@ -62,6 +65,6 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
   }
 };
 const stageBoostUpsellManager = new StageBoostUpsellManager();
-const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/stage_channels/native/StageBoostUpsellManager.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/native/StageBoostUpsellManager.tsx");
 
 export default stageBoostUpsellManager;

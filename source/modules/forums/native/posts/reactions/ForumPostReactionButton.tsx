@@ -1,18 +1,29 @@
-// Module ID: 10159
-// Function ID: 10160
+// Module ID: 10198
+// Function ID: 10199
 // Name: BurstReactionButton
-// Dependencies: [19, 17, 21, 4661, 712, 10160, 5433, 1236, 4734, 7510, 10456, 10517, 4066, 10461, 688, 1435, 4032, 6930, 10519, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 10199, 5438, 1236, 4739, 7548, 10495, 10556, 4069, 10500, 688, 1435, 4035, 6968, 10558, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 10159 (BurstReactionButton)
-import set from "set";
-import { View } from "Emoji";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10198 (BurstReactionButton)
+import int2hslRaw from "int2hslRaw" /* 688 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4035 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import EmojiDefault from "Emoji" /* 6968 */;
+import ReactionTypes from "ReactionTypes" /* 7548 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10199 */;
+import handleOutOfSuperReactions from "handleOutOfSuperReactions" /* 10495 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 10500 */;
+import AnimatedCountDefault from "AnimatedCount" /* 10558 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 class BurstReactionButton {
   constructor(arg0) {
     ({ colors, emoji, onPress, onLongPress, containerStyle, count, emojiSize, selected, animate, animateCount, accessible } = global);
@@ -80,7 +91,7 @@ class ReactionButton {
     if (disabled === undefined) {
       disabled = false;
     }
-    tmp = jsx();
+    tmp = closure_7();
     emojiURL = undefined;
     if (null != emoji.id) {
       tmp3 = closure_1;
@@ -139,56 +150,44 @@ class ReactionButton {
 }
 ({ jsxs: c5, jsx: closure_6 } = jsxProd);
 createCacheKey = { container: null, selected: null, textEmoji: null, imageEmoji: null, countContainer: null };
-createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: 8, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderColor: require("Themes").colors.REACTION_BORDER_DEFAULT, backgroundColor: require("Themes").colors.REACTION_BACKGROUND_DEFAULT, minWidth: 32, minHeight: 26, maxHeight: 26 };
+createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: 8, borderRadius: ThemesDefault.radii.sm, borderWidth: 1, borderColor: ThemesDefault.colors.REACTION_BORDER_DEFAULT, backgroundColor: ThemesDefault.colors.REACTION_BACKGROUND_DEFAULT, minWidth: 32, minHeight: 26, maxHeight: 26 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { borderColor: require("Themes").colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: require("Themes").colors.REACTION_BACKGROUND_REACTED_DEFAULT };
+createCacheKey[1] = { borderColor: ThemesDefault.colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: ThemesDefault.colors.REACTION_BACKGROUND_REACTED_DEFAULT };
 createCacheKey[2] = { fontSize: 12 };
 createCacheKey[3] = { height: 16, width: 16 };
 createCacheKey[4] = { paddingStart: 4 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { borderColor: require("Themes").colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: require("Themes").colors.REACTION_BACKGROUND_REACTED_DEFAULT };
-const result = require("jsxProd").fileFinishedImporting("modules/forums/native/posts/reactions/ForumPostReactionButton.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const obj1 = { borderColor: ThemesDefault.colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: ThemesDefault.colors.REACTION_BACKGROUND_REACTED_DEFAULT };
+const result = require("set").fileFinishedImporting("modules/forums/native/posts/reactions/ForumPostReactionButton.tsx");
 
 export const DEFAULT_EMOJI_SIZE = 14;
 export const AdditionalReactionCount = function AdditionalReactionCount(arg0) {
-  let containerStyle;
-  let count;
-  let threadId;
   ({ count, threadId, containerStyle } = arg0);
   const obj = { accessible: true, accessibilityLabel: null, style: null, onPress: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.N8hbZB);
-  const items = [createCacheKey().container, containerStyle];
+  const intl = getSystemLocale.intl;
+  obj[1] = intl.string(getSystemLocale.t.N8hbZB);
+  const items = [callback3().container, containerStyle];
   obj[2] = items;
-  obj[3] = importDefault(10160)({ threadId }).onTapReactionCount;
+  obj[3] = useNativeForumPostHandlersDefault({ threadId }).onTapReactionCount;
   const items1 = ["+", count];
-  obj[4] = callback(require(4734) /* Text */.Text, { variant: "heading-sm/medium", color: "interactive-text-default", children: items1 });
-  return callback2(require(5433) /* PressableBase */.PressableOpacity, obj);
+  obj[4] = callback(Text.Text, { variant: "heading-sm/medium", color: "interactive-text-default", children: items1 });
+  return callback2(PressableBase.PressableOpacity, obj);
 };
 export const AddReactionButton = function AddReactionButton(reactionType) {
-  let containerStyle;
-  let threadId;
   let NORMAL = reactionType.reactionType;
   ({ threadId, containerStyle } = reactionType);
   if (NORMAL === undefined) {
-    NORMAL = require(7510) /* ReactionTypes */.ReactionTypes.NORMAL;
+    NORMAL = ReactionTypes.ReactionTypes.NORMAL;
   }
   const obj = { style: items, accessible: true, accessibilityLabel: null, onPress: null, children: null };
-  items = [createCacheKey().container, containerStyle];
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.lfIHs4);
-  obj[3] = importDefault(10160)({ threadId, reactionType: NORMAL }).onTapAddReaction;
-  obj[4] = callback2(require(10456) /* handleOutOfSuperReactions */.ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
-  return callback2(require(5433) /* PressableBase */.PressableOpacity, obj);
+  items = [callback3().container, containerStyle];
+  const intl = getSystemLocale.intl;
+  obj[2] = intl.string(getSystemLocale.t.lfIHs4);
+  obj[3] = useNativeForumPostHandlersDefault({ threadId, reactionType: NORMAL }).onTapAddReaction;
+  obj[4] = callback2(handleOutOfSuperReactions.ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
+  return callback2(PressableBase.PressableOpacity, obj);
 };
 export const ForumPostReactionButton = function ForumPostReactionButton(emojiSize) {
-  let animateCount;
-  let burst_colors;
-  let containerStyle;
-  let locationAnalyticsObject;
-  let reaction;
-  let textStyle;
-  let thread;
   ({ thread, reaction } = emojiSize);
   ({ animateCount, containerStyle, textStyle, locationAnalyticsObject } = emojiSize);
   let num = emojiSize.emojiSize;

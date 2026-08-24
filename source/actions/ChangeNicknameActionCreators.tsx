@@ -1,16 +1,18 @@
-// Module ID: 8461
-// Function ID: 8462
-// Dependencies: [676, 530, 7427, 1236, 2]
+// Module ID: 8500
+// Function ID: 8501
+// Dependencies: [676, 530, 7465, 1236, 2]
 
-// Module 8461
-import { Endpoints } from "ME";
+// Module 8500
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-let result = require("trackInvite").fileFinishedImporting("actions/ChangeNicknameActionCreators.tsx");
+const Endpoints = ME.Endpoints;
+let result = set.fileFinishedImporting("actions/ChangeNicknameActionCreators.tsx");
 
 export default {
   changeNickname(guildId, arg1, closure_4) {
     const _require = arg1;
-    let closure_1 = arg3;
+    closure_1 = arg3;
     const HTTP = _require(530).HTTP;
     obj = { url: Endpoints.GUILD_MEMBER_NICK(guildId, closure_4), body: obj, oldFormErrors: true, rejectWithError: null };
     obj = { nick: closure_1 };
@@ -18,7 +20,7 @@ export default {
     const obj3 = _require(530);
     return HTTP.patch(obj).then((body) => {
       const nick = body.body.nick;
-      callback2(outer1_2[2]);
+      callback2(closure_1_2[2]);
       if (null != nick) {
         if ("" !== nick) {
           const intl2 = callback(tmp[3]).intl;
@@ -32,13 +34,13 @@ export default {
       result = intl.string(callback(tmp[3]).t.Vhpd9A);
     }, (status) => {
       if (403 === status.status) {
-        const intl2 = callback(outer1_2[3]).intl;
-        callback2(outer1_2[2]).sendBotMessage(callback, intl2.formatToMarkdownString(callback(outer1_2[3]).t.Izf9jO, {}));
-        const obj2 = callback2(outer1_2[2]);
+        const intl2 = callback(closure_1_2[3]).intl;
+        callback2(closure_1_2[2]).sendBotMessage(callback, intl2.formatToMarkdownString(callback(closure_1_2[3]).t.Izf9jO, {}));
+        const obj2 = callback2(closure_1_2[2]);
       } else {
-        const intl = callback(outer1_2[3]).intl;
-        callback2(outer1_2[2]).sendBotMessage(callback, intl.string(callback(outer1_2[3]).t["5LO/Ss"]));
-        const obj = callback2(outer1_2[2]);
+        const intl = callback(closure_1_2[3]).intl;
+        callback2(closure_1_2[2]).sendBotMessage(callback, intl.string(callback(closure_1_2[3]).t["5LO/Ss"]));
+        const obj = callback2(closure_1_2[2]);
       }
     });
   }

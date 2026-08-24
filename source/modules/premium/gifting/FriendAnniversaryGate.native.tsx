@@ -1,14 +1,16 @@
-// Module ID: 8292
-// Function ID: 8293
+// Module ID: 8332
+// Function ID: 8333
 // Name: getFriendAnniversaryGateConfig
-// Dependencies: [8293, 2]
+// Dependencies: [8333, 2]
 // Exports: getFriendAnniversaryGateConfig
 
-// Module 8292 (getFriendAnniversaryGateConfig)
-const result = require("set").fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.native.tsx");
+// Module 8332 (getFriendAnniversaryGateConfig)
+import set from "set" /* 2 */;
+import apexExperimentDefault from "apexExperiment" /* 8333 */;
+
+const result = set.fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.native.tsx");
 
 export const getFriendAnniversaryGateConfig = function getFriendAnniversaryGateConfig(arg0) {
-  const obj = { enabled: null };
-  obj[0] = importDefault(8293).getConfig(arg0).enabled;
+  const obj = { enabled: apexExperimentDefault.getConfig(arg0).enabled };
   return obj;
 };

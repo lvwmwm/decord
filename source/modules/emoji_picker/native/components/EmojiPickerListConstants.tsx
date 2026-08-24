@@ -1,11 +1,14 @@
-// Module ID: 9301
-// Function ID: 9302
+// Module ID: 9338
+// Function ID: 9339
 // Name: IMAGE_SIZE
 // Dependencies: [1338, 2]
 
-// Module 9301 (IMAGE_SIZE)
-const result = 2 * require("ExpressionPickerViewType").PADDING_VERTICAL;
-const result1 = require("set").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListConstants.tsx");
+// Module 9338 (IMAGE_SIZE)
+import set from "set" /* 2 */;
+import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1338 */;
+
+const result = 2 * ExpressionPickerViewType.PADDING_VERTICAL;
+const result1 = set.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListConstants.tsx");
 
 export const IMAGE_SIZE = 33;
 export const LABEL_TOP_PADDING = 8;

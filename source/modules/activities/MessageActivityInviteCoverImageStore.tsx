@@ -1,45 +1,44 @@
-// Module ID: 12789
-// Function ID: 12790
+// Module ID: 12844
+// Function ID: 12845
 // Name: getCoverImageURL
 // Dependencies: [1405, 589, 709, 2]
 
-// Module 12789 (getCoverImageURL)
-import { Store } from "initialize";
+// Module 12844 (getCoverImageURL)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import privDefault from "priv" /* 1405 */;
 
-let c0 = new require("priv")({ max: 500 });
+let closure_0 = new privDefault({ max: 500 });
+const Store = initializeDefault.Store;
 class MessageActivityInviteCoverImageStore extends Store {
 }
 MessageActivityInviteCoverImageStore.prototype["getCoverImageURL"] = function getCoverImageURL(messageId) {
-  return tmp2.get(messageId.messageId);
+  return store.get(messageId.messageId);
 };
 MessageActivityInviteCoverImageStore.displayName = "MessageActivityInviteCoverImageStore";
-const messageActivityInviteCoverImageStore = new MessageActivityInviteCoverImageStore(require("dispatcher"), {
+const messageActivityInviteCoverImageStore = new MessageActivityInviteCoverImageStore(dispatcherDefault, {
   SET_MESSAGE_ACTIVITY_INVITE_COVER_IMAGE_URL: function handleSetMessageActivityInviteCoverImageURL(arg0) {
-    let coverImageURL;
-    let messageId;
     ({ messageId, coverImageURL } = arg0);
-    if (tmp2.get(messageId) === coverImageURL) {
+    if (store.get(messageId) === coverImageURL) {
       return false;
     } else {
       const result = obj.set(messageId, coverImageURL);
     }
-    obj = tmp2;
+    obj = store;
   }
 });
 let obj = {
   SET_MESSAGE_ACTIVITY_INVITE_COVER_IMAGE_URL: function handleSetMessageActivityInviteCoverImageURL(arg0) {
-    let coverImageURL;
-    let messageId;
     ({ messageId, coverImageURL } = arg0);
-    if (tmp2.get(messageId) === coverImageURL) {
+    if (store.get(messageId) === coverImageURL) {
       return false;
     } else {
       const result = obj.set(messageId, coverImageURL);
     }
-    obj = tmp2;
+    obj = store;
   }
 };
-const tmp2 = new require("priv")({ max: 500 });
-let result = require("dispatcher").fileFinishedImporting("modules/activities/MessageActivityInviteCoverImageStore.tsx");
+const tmp2 = new privDefault({ max: 500 });
+let result = require("set").fileFinishedImporting("modules/activities/MessageActivityInviteCoverImageStore.tsx");
 
 export default messageActivityInviteCoverImageStore;

@@ -1,41 +1,40 @@
-// Module ID: 9712
-// Function ID: 9713
-// Dependencies: [1391, 4539, 9710, 676, 5260, 9713, 2007, 4342, 9722, 1236, 4656, 1297, 7211, 9725, 2]
+// Module ID: 9751
+// Function ID: 9752
+// Dependencies: [1391, 4544, 9749, 676, 5265, 9752, 2008, 4346, 9761, 1236, 4662, 1297, 7249, 9764, 2]
 
-// Module 9712
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createRTCConnection from "createRTCConnection";
-import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";
-import ME from "ME";
+// Module 9751
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+import _modDef5265 from "module_5265" /* 5265 */;
+import _safeTransitionToDefault from "_safeTransitionTo" /* 7249 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "createRTCConnection" /* 4544 */;
+import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9749 */;
+import ME from "ME" /* 676 */;
 
-let c5;
-let c9;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 ({ SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY: c5, SECURE_FRAMES_STREAM_VERIFICATION_BOTTOM_SHEET_KEY: closure_6, SECURE_FRAMES_USER_VERIFICATION_MODAL_KEY: error } = SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY);
-({ ME: metroImportAll, Routes: c9 } = ME);
-const result = require("SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY").fileFinishedImporting("modules/rtc/SecureFramesPlatformUtils.native.tsx");
+({ ME: closure_8, Routes: c9 } = ME);
+const result = require("set").fileFinishedImporting("modules/rtc/SecureFramesPlatformUtils.native.tsx");
 
 export default {
   openSecureFramesStreamVerification(streamKey, channelId) {
-    let obj = importDefault(4342);
+    let obj = ACTION_SHEET_HEIGHT_HALFDefault;
     obj = { streamKey, channelId };
-    obj.openLazy(require(2007) /* asyncRequireImpl */(9722, dependencyMap.paths), closure_6, obj);
+    obj.openLazy(asyncRequireImpl(9761, dependencyMap.paths), closure_6, obj);
   },
   openSecureFramesUserVerificationModal(id, id2, arg2) {
     if (arg2()) {
-      let obj = importDefault(5260);
+      let obj = _modDef5265;
       obj = { userId: null, channelId: null };
       obj[0] = id;
       obj[1] = id2;
-      obj.pushLazy(require(2007) /* asyncRequireImpl */(9713, dependencyMap.paths), obj, closure_7);
+      obj.pushLazy(asyncRequireImpl(9752, dependencyMap.paths), obj, closure_7);
     }
   },
   openSecureFramesUpdateConfirmation(confirmText) {
-    let subtitle;
-    let title;
     confirmText = confirmText.confirmText;
     ({ title, subtitle } = confirmText);
     if (confirmText === undefined) {
@@ -43,7 +42,7 @@ export default {
       confirmText = intl.string(onConfirm(1236).t["cY+Oob"]);
     }
     onConfirm = confirmText.onConfirm;
-    let obj = importDefault(4656);
+    let obj = _modDef4662;
     obj = { title, body: subtitle, confirmText, cancelText: null, confirmColor: null };
     const intl2 = onConfirm(1236).intl;
     obj[3] = intl2.string(onConfirm(1236).t["ETE/oC"]);
@@ -55,8 +54,6 @@ export default {
     });
   },
   handleSecureFramesUserVerificationLink(arg0) {
-    let fingerprint;
-    let userId;
     ({ userId, fingerprint } = arg0);
     channelId = channelId.getChannelId();
     channel = channel.getChannel(channelId);
@@ -69,22 +66,22 @@ export default {
     }
     if (null != channelId) {
       if (null != channel) {
-        importDefault(7211)(closure_9.CHANNEL(guildId, channelId));
-        const tmp6 = importDefault(7211);
+        _safeTransitionToDefault(closure_9.CHANNEL(guildId, channelId));
+        const tmp6 = _safeTransitionToDefault;
         let obj = { userId: null, channelId: null, guildId: null, fingerprint: null };
         obj[0] = userId;
         obj[1] = channelId;
         obj[2] = guildId;
         obj[3] = fingerprint;
-        importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(9725, dependencyMap.paths), closure_5, obj);
-        const obj4 = importDefault(4342);
+        ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(9764, dependencyMap.paths), closure_5, obj);
+        const obj4 = ACTION_SHEET_HEIGHT_HALFDefault;
       }
     }
     obj = { title: null, body: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t["5ICxE6"]);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["v1eXp/"]);
-    importDefault(4656).show(obj);
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t["5ICxE6"]);
+    const intl2 = getSystemLocale.intl;
+    obj[1] = intl2.string(getSystemLocale.t["v1eXp/"]);
+    _modDef4662.show(obj);
   }
 };

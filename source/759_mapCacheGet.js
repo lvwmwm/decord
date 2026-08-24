@@ -4,7 +4,9 @@
 // Dependencies: [757]
 
 // Module 759 (mapCacheGet)
+import getMapData from "getMapData" /* 757 */;
+
 
 export default function mapCacheGet(arg0) {
-  return require(757) /* getMapData */(this, arg0).get(arg0);
+  return getMapData(this, arg0).get(arg0);
 };

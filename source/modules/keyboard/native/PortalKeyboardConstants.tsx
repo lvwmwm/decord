@@ -1,13 +1,14 @@
-// Module ID: 11208
-// Function ID: 11209
+// Module ID: 11259
+// Function ID: 11260
 // Name: KEYBOARD_ANIMATION_DURATION
-// Dependencies: [6952, 2]
+// Dependencies: [6990, 2]
 
-// Module 11208 (KEYBOARD_ANIMATION_DURATION)
-import BottomSheetModal from "BottomSheetModal";
+// Module 11259 (KEYBOARD_ANIMATION_DURATION)
+import set from "set" /* 2 */;
+import BottomSheetModal from "BottomSheetModal" /* 6990 */;
 
 const keyboardAnimationConfigs = BottomSheetModal.getKeyboardAnimationConfigs("keyboard", 250);
-const result = require("set").fileFinishedImporting("modules/keyboard/native/PortalKeyboardConstants.tsx");
+const result = set.fileFinishedImporting("modules/keyboard/native/PortalKeyboardConstants.tsx");
 
 export const KEYBOARD_ANIMATION_DURATION = 250;
 export const KEYBOARD_ANIMATION_CONFIG = keyboardAnimationConfigs;

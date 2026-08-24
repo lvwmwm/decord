@@ -1,16 +1,21 @@
-// Module ID: 13816
-// Function ID: 13817
+// Module ID: 13874
+// Function ID: 13875
 // Name: handleBackPress
-// Dependencies: [17, 9959, 4239, 1627, 1498, 4720, 500, 2]
+// Dependencies: [17, 9998, 4243, 1627, 1498, 4726, 500, 2]
 
-// Module 13816 (handleBackPress)
-import "initialize";
+// Module 13874 (handleBackPress)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import KeyboardTypes from "KeyboardTypes" /* 1627 */;
+import useKeyboardType from "useKeyboardType" /* 4243 */;
+import initializeDefault from "initialize" /* 4726 */;
+import updateContextMenuState from "updateContextMenuState" /* 9998 */;
 
 function handleBackPress() {
-  let obj = require(9959) /* updateContextMenuState */;
+  let obj = updateContextMenuState;
   obj.hideContextMenu();
-  const keyboardType = require(4239) /* useKeyboardType */.getKeyboardType();
-  let flag = keyboardType !== require(1627) /* KeyboardTypes */.KeyboardTypes.SYSTEM;
+  const keyboardType = useKeyboardType.getKeyboardType();
+  let flag = keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
   if (flag) {
     obj = { type: null };
     obj[0] = tmp(1627).KeyboardTypes.SYSTEM;
@@ -20,7 +25,8 @@ function handleBackPress() {
   }
   return flag;
 }
-require("get ActivityIndicator").BackHandler;
+get_ActivityIndicator.BackHandler;
+initializeDefault;
 class BackPressManager extends tmp2 {
 }
 const prototype = BackPressManager.prototype;
@@ -40,6 +46,6 @@ prototype["_terminate"] = function _terminate() {
   }
 };
 const backPressManager = new BackPressManager();
-let result = require("useKeyboardType").fileFinishedImporting("modules/routing/native/BackPressManager.tsx");
+let result = set.fileFinishedImporting("modules/routing/native/BackPressManager.tsx");
 
 export default backPressManager;

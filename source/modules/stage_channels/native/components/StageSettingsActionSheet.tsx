@@ -1,60 +1,57 @@
-// Module ID: 8128
-// Function ID: 8129
+// Module ID: 8167
+// Function ID: 8168
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 4773, 1391, 4021, 1396, 4978, 676, 21, 4661, 712, 4342, 589, 1399, 4991, 7175, 8083, 1236, 1297, 8129, 8058, 8130, 7360, 8131, 8132, 8134, 8135, 8136, 2]
+// Dependencies: [19, 17, 4778, 1391, 4024, 1396, 4983, 676, 21, 4668, 712, 4346, 589, 1399, 4996, 7213, 8122, 1236, 1297, 8168, 8097, 8169, 7398, 8170, 8171, 8173, 8174, 8175, 2]
 // Exports: default
 
-// Module 8128 (StageSettingsActionSheet)
-import registerAsset from "registerAsset";
-import { View } from "getSystemLocale";
-import getParticipants from "getParticipants";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
-import { STAGE_SETTINGS_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH";
-import ME from "ME";
-import jsxProd from "registerAsset";
-import createCacheKey from "createCacheKey";
+// Module 8167 (StageSettingsActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "getParticipants" /* 4778 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_8 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
+import { STAGE_SETTINGS_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 4983 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c10;
-let closure_12;
-let map1;
-let unpackModuleId;
 const require = arg1;
 ({ ChannelSettingsSections: c10, UserSettingsSections: unpackModuleId } = ME);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 createCacheKey = { container: { marginTop: 8 }, icon: null, warning: null };
-createCacheKey = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { color: require("Themes").unsafe_rawColors.RED_400 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { color: require("Themes").unsafe_rawColors.RED_400 };
-let result = require("getParticipants").fileFinishedImporting("modules/stage_channels/native/components/StageSettingsActionSheet.tsx");
+createCacheKey[2] = { color: ThemesDefault.unsafe_rawColors.RED_400 };
+let closure_14 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { color: ThemesDefault.unsafe_rawColors.RED_400 };
+let result = require("set").fileFinishedImporting("modules/stage_channels/native/components/StageSettingsActionSheet.tsx");
 
 export default function StageSettingsActionSheet(channelId) {
   channelId = channelId.channelId;
   const onOpenRTCDebugOverlay = channelId.onOpenRTCDebugOverlay;
   let stateFromStores;
-  const tmp = createCacheKey();
+  const tmp = callback();
   let obj = channelId(stateFromStores[12]);
-  const items = [ensureGuildLoaded];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(channelId));
-  let obj1 = channelId(stateFromStores[12]);
-  const items1 = [getUncachedChannelPermissions];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_7.can(channelId(stateFromStores[13]).MODERATE_STAGE_CHANNEL_PERMISSIONS, stateFromStores));
+  const items = [closure_6];
+  stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getChannel(channelId));
+  obj1 = channelId(stateFromStores[12]);
+  const items1 = [closure_7];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => closure_1_7.can(channelId(stateFromStores[13]).MODERATE_STAGE_CHANNEL_PERMISSIONS, stateFromStores));
   let obj2 = channelId(stateFromStores[14]);
   const isStageSpeakingDisabledForCurrentUser = obj2.useIsStageSpeakingDisabledForCurrentUser();
   let obj3 = channelId(stateFromStores[12]);
-  const items2 = [getParticipants];
+  const items2 = [closure_5];
   const items3 = [channelId];
-  const stateFromStores2 = obj3.useStateFromStores(items2, () => outer1_5.getSelectedParticipant(channelId), items3);
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => closure_1_5.getSelectedParticipant(channelId), items3);
   let obj4 = channelId(stateFromStores[12]);
-  const items4 = [handleStageInstanceCreateOrUpdate];
+  const items4 = [closure_8];
   const items5 = [stateFromStores];
-  const stateFromStores3 = obj4.useStateFromStores(items4, () => outer1_8.getStageInstanceByChannel(channelId));
+  const stateFromStores3 = obj4.useStateFromStores(items4, () => closure_1_8.getStageInstanceByChannel(channelId));
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
-      onOpenRTCDebugOverlay(stateFromStores[11]).hideActionSheet(outer1_9);
+      onOpenRTCDebugOverlay(stateFromStores[11]).hideActionSheet(closure_1_9);
       const obj = onOpenRTCDebugOverlay(stateFromStores[11]);
     }
   }, items5);
@@ -85,7 +82,7 @@ export default function StageSettingsActionSheet(channelId) {
             if (null != stateFromStores) {
               const result = channelId(stateFromStores[20]).openStageChannelSettings(tmp);
               const obj = channelId(stateFromStores[20]);
-              onOpenRTCDebugOverlay(stateFromStores[11]).hideActionSheet(outer1_9);
+              onOpenRTCDebugOverlay(stateFromStores[11]).hideActionSheet(closure_1_9);
               const obj2 = onOpenRTCDebugOverlay(stateFromStores[11]);
             }
           };
@@ -117,11 +114,11 @@ export default function StageSettingsActionSheet(channelId) {
     obj4[1] = closure_12(tmp2(tmp3[18]).Icon, obj5);
     obj4[2] = function onPress() {
       if (null != stateFromStores) {
-        onOpenRTCDebugOverlay(stateFromStores[24]).setSection(outer1_10.NOTIFICATIONS);
+        onOpenRTCDebugOverlay(stateFromStores[24]).setSection(closure_1_10.NOTIFICATIONS);
         const obj = onOpenRTCDebugOverlay(stateFromStores[24]);
         onOpenRTCDebugOverlay(stateFromStores[24]).open(tmp.id);
         const obj2 = onOpenRTCDebugOverlay(stateFromStores[24]);
-        onOpenRTCDebugOverlay(stateFromStores[11]).hideActionSheet(outer1_9);
+        onOpenRTCDebugOverlay(stateFromStores[11]).hideActionSheet(closure_1_9);
         const obj3 = onOpenRTCDebugOverlay(stateFromStores[11]);
       }
     };
@@ -139,7 +136,7 @@ export default function StageSettingsActionSheet(channelId) {
         if (onOpenRTCDebugOverlay != null) {
           tmp();
         }
-        onOpenRTCDebugOverlay(stateFromStores[11]).hideActionSheet(outer1_9);
+        onOpenRTCDebugOverlay(stateFromStores[11]).hideActionSheet(closure_1_9);
       };
       tmp11Result = tmp11(tmp2(tmp3[16]).FormRow, obj6);
     }
@@ -159,7 +156,7 @@ export default function StageSettingsActionSheet(channelId) {
       if (null != stateFromStores) {
         const result = channelId(stateFromStores[27]).showReportModalForStageChannel(tmp);
         const obj = channelId(stateFromStores[27]);
-        onOpenRTCDebugOverlay(stateFromStores[11]).hideActionSheet(outer1_9);
+        onOpenRTCDebugOverlay(stateFromStores[11]).hideActionSheet(closure_1_9);
         const obj2 = onOpenRTCDebugOverlay(stateFromStores[11]);
       }
     };

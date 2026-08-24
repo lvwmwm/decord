@@ -1,14 +1,17 @@
-// Module ID: 13298
-// Function ID: 13299
+// Module ID: 13356
+// Function ID: 13357
 // Name: getIconURL
-// Dependencies: [4479, 1236, 5097, 2]
+// Dependencies: [4483, 1236, 5102, 2]
 
-// Module 13298 (getIconURL)
-import "createExecutable";
+// Module 13356 (getIconURL)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import createExecutableDefault from "createExecutable" /* 4483 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5102 */;
 
-const require = arg1;
+require = arg1;
+createExecutableDefault;
 let c3 = "twitch:";
-const result = require("getPlatformUserUrl").fileFinishedImporting("records/TwitchApplicationRecord.tsx");
+const result = require("set").fileFinishedImporting("records/TwitchApplicationRecord.tsx");
 class TwitchApplicationRecord extends tmp2 {
   constructor(arg0) {
     tmp3 = new TwitchApplicationRecord(global, tmp2, tmp, new.target);
@@ -20,7 +23,7 @@ class TwitchApplicationRecord extends tmp2 {
   }
 }
 TwitchApplicationRecord.prototype["getIconURL"] = function getIconURL() {
-  return importDefault(5097).get("twitch").icon.lightPNG;
+  return getPlatformUserUrlDefault.get("twitch").icon.lightPNG;
 };
 
 export default TwitchApplicationRecord;

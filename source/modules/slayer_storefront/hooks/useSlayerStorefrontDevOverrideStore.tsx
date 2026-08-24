@@ -1,13 +1,14 @@
-// Module ID: 9201
-// Function ID: 9202
+// Module ID: 9238
+// Function ID: 9239
 // Name: useSlayerStorefrontDevOverrideStore
 // Dependencies: [644, 2]
 
-// Module 9201 (useSlayerStorefrontDevOverrideStore)
-import keys from "keys";
+// Module 9238 (useSlayerStorefrontDevOverrideStore)
+import set from "set" /* 2 */;
+import keys from "keys" /* 644 */;
 
 const tmp2 = keys.create()((arg0) => {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return {
     overrideApplicationId: null,
     setOverrideApplicationId(overrideApplicationId) {
@@ -32,9 +33,17 @@ const tmp2 = keys.create()((arg0) => {
     isNitroEligibleForSocialLayerStorefront: false,
     setIsNitroEligibleForSocialLayerStorefront(isNitroEligibleForSocialLayerStorefront) {
       return callback({ isNitroEligibleForSocialLayerStorefront });
+    },
+    overrideCurrentPremiumPlanId: false,
+    setOverrideCurrentPremiumPlanId(overrideCurrentPremiumPlanId) {
+      return callback({ overrideCurrentPremiumPlanId });
+    },
+    currentPremiumPlanId: null,
+    setCurrentPremiumPlanId(currentPremiumPlanId) {
+      return callback({ currentPremiumPlanId });
     }
   };
 });
-const result = require("set").fileFinishedImporting("modules/slayer_storefront/hooks/useSlayerStorefrontDevOverrideStore.tsx");
+const result = set.fileFinishedImporting("modules/slayer_storefront/hooks/useSlayerStorefrontDevOverrideStore.tsx");
 
 export const useSlayerStorefrontDevOverrideStore = tmp2;

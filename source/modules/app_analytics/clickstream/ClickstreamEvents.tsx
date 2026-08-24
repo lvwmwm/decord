@@ -1,13 +1,15 @@
-// Module ID: 5059
-// Function ID: 5060
+// Module ID: 5064
+// Function ID: 5065
 // Name: getClickstreamDrainEvent
 // Dependencies: [676, 2]
 // Exports: getClickstreamDrainEvent
 
-// Module 5059 (getClickstreamDrainEvent)
-import { AnalyticEvents } from "ME";
+// Module 5064 (getClickstreamDrainEvent)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/app_analytics/clickstream/ClickstreamEvents.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/app_analytics/clickstream/ClickstreamEvents.tsx");
 
 export const getClickstreamDrainEvent = function getClickstreamDrainEvent(first, arr) {
   const date = new Date();
@@ -35,7 +37,7 @@ export const getClickstreamDrainEvent = function getClickstreamDrainEvent(first,
     obj[5] = arr.map((now_playing_num_cards) => now_playing_num_cards.now_playing_num_cards);
     return obj;
   } else if (tmp2.CHANNEL_OPENED_CLICKSTREAM === first) {
-    const obj1 = { time_minus: null, rtc_states: null, channel_ids: null, channel_types: null };
+    obj1 = { time_minus: null, rtc_states: null, channel_ids: null, channel_types: null };
     obj1[0] = arr.map((timestamp) => {
       timestamp = timestamp.timestamp;
       const time = date.getTime();
@@ -60,7 +62,7 @@ export const getClickstreamDrainEvent = function getClickstreamDrainEvent(first,
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("getClickstreamDrainEvent: Unknown event: " + first);
+    error = new Error("getClickstreamDrainEvent: Unknown event: " + first);
     throw error;
   }
 };

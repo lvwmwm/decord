@@ -1,20 +1,23 @@
-// Module ID: 15672
-// Function ID: 15673
+// Module ID: 15741
+// Function ID: 15742
 // Name: setTab
 // Dependencies: [709, 2]
 // Exports: clearNotificationGuildMentions, refreshNotifications, setTab
 
-// Module 15672 (setTab)
-const result = require("set").fileFinishedImporting("modules/notification_center/NotificationCenterStoreActions.tsx");
+// Module 15741 (setTab)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
+const result = set.fileFinishedImporting("modules/notification_center/NotificationCenterStoreActions.tsx");
 
 export const setTab = function setTab(BROWSE) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "NOTIFICATION_CENTER_SET_TAB", tab: BROWSE };
   obj.dispatch(obj);
 };
 export const clearNotificationGuildMentions = function clearNotificationGuildMentions() {
-  importDefault(709).dispatch({ type: "NOTIFICATION_CENTER_CLEAR_GUILD_MENTIONS" });
+  dispatcherDefault.dispatch({ type: "NOTIFICATION_CENTER_CLEAR_GUILD_MENTIONS" });
 };
 export const refreshNotifications = function refreshNotifications() {
-  importDefault(709).dispatch({ type: "NOTIFICATION_CENTER_REFRESH" });
+  dispatcherDefault.dispatch({ type: "NOTIFICATION_CENTER_REFRESH" });
 };

@@ -1,97 +1,103 @@
-// Module ID: 5260
-// Function ID: 5261
-// Dependencies: [676, 5261, 4229, 5262, 709, 4230, 5263, 2]
+// Module ID: 5265
+// Function ID: 5266
+// Dependencies: [676, 5266, 4233, 5267, 709, 4234, 5268, 2]
 
-// Module 5260
-import { AppContext } from "ME";
+// Module 5265
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import coerceMainRoute from "coerceMainRoute" /* 4233 */;
+import uniqueIdDefault from "uniqueId" /* 5266 */;
+import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 5267 */;
 
-const result = require("coerceMainRoute").fileFinishedImporting("actions/ModalActionCreators.tsx");
+const AppContext = ME.AppContext;
+const result = set.fileFinishedImporting("actions/ModalActionCreators.tsx");
 
 export default {
   push(modal, props) {
     let tmp = arg2;
     if (arg2 === undefined) {
-      tmp = importDefault(5261)("modal");
+      tmp = uniqueIdDefault("modal");
     }
     let APP = arg4;
     if (arg4 === undefined) {
       APP = AppContext.APP;
     }
-    let obj = require(4229) /* coerceMainRoute */;
-    obj = { modal: importDefault(5262)(modal, {}, props, tmp) };
+    let obj = coerceMainRoute;
+    obj = { modal: getDeprecatedModalDataDefault(modal, {}, props, tmp) };
     const merged = Object.assign(arg3);
     obj.pushModal(obj);
     obj = { type: "MODAL_PUSH", modal, props, key: tmp, appContext: APP };
-    importDefault(709).dispatch(obj);
+    dispatcherDefault.dispatch(obj);
     return tmp;
   },
-  pushLazy(outer1_1, closure_0, closure_4, navigationParams) {
+  pushLazy(closure_1_1, closure_0, closure_4, navigationParams) {
     const self = this;
-    const importDefault = outer1_1;
-    const dependencyMap = closure_0;
+    importDefault = closure_1_1;
+    dependencyMap = closure_0;
     let tmp = closure_4;
     if (closure_4 === undefined) {
-      tmp = importDefault(5261)("modal");
+      tmp = uniqueIdDefault("modal");
     }
-    const AppContext = tmp;
+    closure_3 = tmp;
     const _require = navigationParams;
-    const rootNavigationRef = _require(4230).getRootNavigationRef();
+    const rootNavigationRef = _require(4234).getRootNavigationRef();
     if (null != rootNavigationRef) {
       if (rootNavigationRef.isReady()) {
-        if (outer1_1 instanceof Promise) {
-          let nextPromise = outer1_1.then((arg0) => arg0.default);
+        if (closure_1_1 instanceof Promise) {
+          let nextPromise = closure_1_1.then((arg0) => arg0.default);
         } else {
-          nextPromise = outer1_1();
+          nextPromise = closure_1_1();
         }
         nextPromise.then((arg0) => self.push(arg0, closure_2, closure_3, closure_0));
       }
     }
-    const obj = _require(4230);
+    const obj = _require(4234);
     return new Promise((arg0) => {
-      let closure_0 = arg0;
-      return outer1_1(table[6]).enqueue(() => callback(outer1_4.pushLazy(outer1_1, outer1_2, outer1_3, callback)));
+      closure_0 = arg0;
+      return callback(table[6]).enqueue(() => callback(closure_1_4.pushLazy(closure_1_1, closure_1_2, closure_1_3, callback)));
     });
   },
   updateAnimation(key, SLIDE_IN_OUT) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "MODAL_UPDATE", key, props: {}, partial: true, animation: SLIDE_IN_OUT };
     obj.dispatch(obj);
   },
   pop() {
-    require(4229) /* coerceMainRoute */.popModal();
-    const obj = require(4229) /* coerceMainRoute */;
-    importDefault(709).dispatch({ type: "MODAL_POP" });
+    coerceMainRoute.popModal();
+    const obj = coerceMainRoute;
+    dispatcherDefault.dispatch({ type: "MODAL_POP" });
   },
   popWithKey(c3, onExited) {
-    let obj = require(4229) /* coerceMainRoute */;
+    let obj = coerceMainRoute;
     obj.popModal(c3, onExited);
     obj = { type: "MODAL_POP", key: c3, onExited };
-    importDefault(709).dispatch(obj);
+    dispatcherDefault.dispatch(obj);
   },
   popAboveKey(voiceChannelKey) {
-    return require(4229) /* coerceMainRoute */.popModalsAboveKey(voiceChannelKey);
+    return coerceMainRoute.popModalsAboveKey(voiceChannelKey);
   },
   popAll() {
-    require(4229) /* coerceMainRoute */.popAllModals();
-    const obj = require(4229) /* coerceMainRoute */;
-    importDefault(709).dispatch({ type: "MODAL_POP_ALL" });
-    const obj2 = importDefault(709);
-    importDefault(709).dispatch({ type: "EMAIL_VERIFICATION_MODAL_CLOSE" });
-    const obj3 = importDefault(709);
-    importDefault(709).dispatch({ type: "GUILD_SETTINGS_CLOSE" });
-    const obj4 = importDefault(709);
-    importDefault(709).dispatch({ type: "HIDE_ACTION_SHEET" });
-    const obj5 = importDefault(709);
-    importDefault(709).dispatch({ type: "DISPLAYED_INVITE_CLEAR" });
-    const obj6 = importDefault(709);
-    importDefault(709).dispatch({ type: "NOTIFICATION_SETTINGS_MODAL_CLOSE" });
-    const obj7 = importDefault(709);
-    importDefault(709).dispatch({ type: "QUICKSWITCHER_HIDE" });
-    const obj8 = importDefault(709);
-    importDefault(709).dispatch({ type: "USER_SETTINGS_MODAL_CLOSE" });
-    const obj9 = importDefault(709);
-    importDefault(709).dispatch({ type: "CONNECTIONS_GRID_MODAL_HIDE" });
-    const obj10 = importDefault(709);
-    importDefault(709).dispatch({ type: "USER_PROFILE_MODAL_CLOSE" });
+    coerceMainRoute.popAllModals();
+    const obj = coerceMainRoute;
+    dispatcherDefault.dispatch({ type: "MODAL_POP_ALL" });
+    const obj2 = dispatcherDefault;
+    dispatcherDefault.dispatch({ type: "EMAIL_VERIFICATION_MODAL_CLOSE" });
+    const obj3 = dispatcherDefault;
+    dispatcherDefault.dispatch({ type: "GUILD_SETTINGS_CLOSE" });
+    const obj4 = dispatcherDefault;
+    dispatcherDefault.dispatch({ type: "HIDE_ACTION_SHEET" });
+    const obj5 = dispatcherDefault;
+    dispatcherDefault.dispatch({ type: "DISPLAYED_INVITE_CLEAR" });
+    const obj6 = dispatcherDefault;
+    dispatcherDefault.dispatch({ type: "NOTIFICATION_SETTINGS_MODAL_CLOSE" });
+    const obj7 = dispatcherDefault;
+    dispatcherDefault.dispatch({ type: "QUICKSWITCHER_HIDE" });
+    const obj8 = dispatcherDefault;
+    dispatcherDefault.dispatch({ type: "USER_SETTINGS_MODAL_CLOSE" });
+    const obj9 = dispatcherDefault;
+    dispatcherDefault.dispatch({ type: "CONNECTIONS_GRID_MODAL_HIDE" });
+    const obj10 = dispatcherDefault;
+    dispatcherDefault.dispatch({ type: "USER_PROFILE_MODAL_CLOSE" });
   }
 };

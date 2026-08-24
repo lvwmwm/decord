@@ -1,10 +1,13 @@
-// Module ID: 7265
-// Function ID: 7266
+// Module ID: 7303
+// Function ID: 7304
 // Name: reset
 // Dependencies: [1405, 2]
 
-// Module 7265 (reset)
-let result = require("set").fileFinishedImporting("lib/guild/GuildThreadSubscriptions.tsx");
+// Module 7303 (reset)
+import set2 from "set" /* 2 */;
+import privDefault from "priv" /* 1405 */;
+
+let result = set2.fileFinishedImporting("lib/guild/GuildThreadSubscriptions.tsx");
 class GuildThreadSubscriptions {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -38,7 +41,7 @@ prototype["getSubscribedThreadIds"] = function getSubscribedThreadIds() {
 prototype["_get"] = function _get(arg0) {
   let tmp = this._subscriptions[arg0];
   if (tmp == null) {
-    tmp = new importDefault(1405)({ max: 3, updateAgeOnGet: true });
+    tmp = new privDefault({ max: 3, updateAgeOnGet: true });
   }
   return tmp;
 };

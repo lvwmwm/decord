@@ -1,23 +1,23 @@
-// Module ID: 9528
-// Function ID: 9529
+// Module ID: 9565
+// Function ID: 9566
 // Name: useGuildProfileGames
-// Dependencies: [19, 4506, 4505, 1218, 589, 5378, 1370, 2]
+// Dependencies: [19, 4510, 4509, 1218, 589, 5383, 1370, 2]
 // Exports: default, useAllGuildProfileGames
 
-// Module 9528 (useGuildProfileGames)
-import noop from "noop";
-import getOfficialApplicationId from "getOfficialApplicationId";
-import handleLoadMessages from "handleLoadMessages";
-import fetchFingerprint from "fetchFingerprint";
+// Module 9565 (useGuildProfileGames)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "getOfficialApplicationId" /* 4510 */;
+import closure_4 from "handleLoadMessages" /* 4509 */;
+import closure_5 from "fetchFingerprint" /* 1218 */;
 
 const require = arg1;
-let result = require("handleLoadMessages").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfileGames.tsx");
+let result = require("set").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfileGames.tsx");
 
 export default function useGuildProfileGames(games) {
   let stateFromStoresArray;
   games = games.games;
   let obj = games(stateFromStoresArray[4]);
-  let items = [fetchFingerprint];
+  let items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => authenticated.isAuthenticated());
   games(stateFromStoresArray[5]);
   if (null != games) {
@@ -32,11 +32,11 @@ export default function useGuildProfileGames(games) {
         return map;
       } else {
         for (const item10012 of tmp) {
-          let tmp4 = outer1_3;
+          let tmp4 = closure_1_3;
           let tmp5 = new.target;
           let tmp6 = new.target;
           let tmp7 = item10012;
-          let tmp8 = new outer1_3(item10012);
+          let tmp8 = new closure_1_3(item10012);
           let tmp9 = tmp8;
           let result = map.set(item10012.id, tmp8);
           continue;
@@ -44,11 +44,11 @@ export default function useGuildProfileGames(games) {
         return map;
       }
     }, items2);
-    const items3 = [handleLoadMessages];
+    const items3 = [closure_4];
     stateFromStoresArray = games(stateFromStoresArray[4]).useStateFromStoresArray(items3, () => {
       const gameApplicationIds = games.gameApplicationIds;
       const mapped = gameApplicationIds.map((closure_0) => {
-        let game = outer1_4.getGame(closure_0);
+        let game = closure_1_4.getGame(closure_0);
         if (game == null) {
           game = closure_1.get(closure_0);
         }
@@ -101,26 +101,26 @@ export default function useGuildProfileGames(games) {
 export const useAllGuildProfileGames = function useAllGuildProfileGames(profile) {
   let games = profile;
   games = profile.games;
-  const items = [fetchFingerprint];
+  const items = [closure_5];
   const stateFromStores = games(589).useStateFromStores(items, () => authenticated.isAuthenticated());
-  games(5378);
+  games(5383);
   if (null != games) {
     if (!stateFromStores) {
       let items1 = [];
     }
     tmp5(items1);
     const items2 = [games];
-    const dependencyMap = React.useMemo(() => {
+    dependencyMap = React.useMemo(() => {
       const map = new Map();
       if (null == games) {
         return map;
       } else {
         for (const item10012 of tmp) {
-          let tmp4 = outer1_3;
+          let tmp4 = closure_1_3;
           let tmp5 = new.target;
           let tmp6 = new.target;
           let tmp7 = item10012;
-          let tmp8 = new outer1_3(item10012);
+          let tmp8 = new closure_1_3(item10012);
           let tmp9 = tmp8;
           let result = map.set(item10012.id, tmp8);
           continue;
@@ -128,11 +128,11 @@ export const useAllGuildProfileGames = function useAllGuildProfileGames(profile)
         return map;
       }
     }, items2);
-    const items3 = [handleLoadMessages];
+    const items3 = [closure_4];
     return games(589).useStateFromStoresArray(items3, () => {
       const gameApplicationIds = games.gameApplicationIds;
       const mapped = gameApplicationIds.map((closure_0) => {
-        let game = outer1_4.getGame(closure_0);
+        let game = closure_1_4.getGame(closure_0);
         if (game == null) {
           game = closure_1.get(closure_0);
         }

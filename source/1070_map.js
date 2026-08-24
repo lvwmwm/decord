@@ -4,7 +4,9 @@
 // Dependencies: [1059, 817, 1034, 1039]
 
 // Module 1070 (map)
-const require = arg1;
+import triggerHandlers from "triggerHandlers" /* 1034 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 let closure_2 = [];
@@ -20,7 +22,7 @@ function _onInp(metric) {
       const found = entries.find((duration) => {
         let tmp = duration.duration === iter.value;
         if (tmp) {
-          tmp = outer1_5[duration.name];
+          tmp = closure_1_5[duration.name];
         }
         return tmp;
       });
@@ -73,7 +75,7 @@ function _onInp(metric) {
         obj[3] = msToSecResult1;
         const result = tmp12(1059).startStandaloneWebVitalSpan(obj);
         if (result) {
-          const obj1 = {};
+          obj1 = {};
           obj1[tmp12(817).SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = "millisecond";
           obj1[tmp12(817).SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = iter.value;
           result.addEvent("inp", obj1);
@@ -87,7 +89,7 @@ function _onInp(metric) {
 }
 arg5._onInp = _onInp;
 arg5._trackINP = function _trackINP() {
-  return require(1034) /* triggerHandlers */.addInpInstrumentationHandler(_onInp);
+  return triggerHandlers.addInpInstrumentationHandler(_onInp);
 };
 arg5.registerInpInteractionListener = function registerInpInteractionListener() {
   function captureElementFromEvent(target) {
@@ -109,7 +111,7 @@ arg5.registerInpInteractionListener = function registerInpInteractionListener() 
   const keys = Object.keys(closure_5);
   if (obj.isBrowser()) {
     let item = keys.forEach((arg0) => {
-      const WINDOW = captureElementFromEvent(outer1_1[3]).WINDOW;
+      const WINDOW = captureElementFromEvent(closure_1_1[3]).WINDOW;
       const listener = WINDOW.addEventListener(arg0, captureElementFromEvent, { capture: true, passive: true });
     });
   }
@@ -123,22 +125,22 @@ arg5.registerInpInteractionListener = function registerInpInteractionListener() 
       let tmpResult = rootSpan(817);
     }
     const item = entries.forEach((interactionId) => {
-      let obj = rootSpan(outer1_1[2]);
+      let obj = rootSpan(closure_1_1[2]);
       if (obj.isPerformanceEventTiming(interactionId)) {
         interactionId = interactionId.interactionId;
         if (null != interactionId) {
-          if (!outer1_3.has(interactionId)) {
+          if (!closure_1_3.has(interactionId)) {
             if (interactionId.target) {
-              let str = rootSpan(outer1_1[1]).htmlTreeAsString(interactionId.target);
-              const tmpResult = rootSpan(outer1_1[1]);
+              let str = rootSpan(closure_1_1[1]).htmlTreeAsString(interactionId.target);
+              const tmpResult = rootSpan(closure_1_1[1]);
             } else {
               const _Math = Math;
               const rounded = Math.round(interactionId.startTime);
-              const value = outer1_4.get(rounded);
+              const value = closure_1_4.get(rounded);
               let num = -5;
               str = value;
               if (!value) {
-                str = outer1_4.get(rounded + num);
+                str = closure_1_4.get(rounded + num);
                 while (!str) {
                   num = num + 1;
                   str = value;
@@ -151,15 +153,15 @@ arg5.registerInpInteractionListener = function registerInpInteractionListener() 
                 str = "<unknown>";
               }
             }
-            let arr = outer1_2;
-            if (outer1_2.length > 10) {
-              outer1_3.delete(arr.shift());
+            let arr = closure_1_2;
+            if (closure_1_2.length > 10) {
+              closure_1_3.delete(arr.shift());
             }
             arr = arr.push(interactionId);
             obj = { span: null, elementName: null };
             obj[0] = rootSpan;
             obj[1] = str;
-            const result = outer1_3.set(interactionId, obj);
+            const result = closure_1_3.set(interactionId, obj);
           }
         }
       }

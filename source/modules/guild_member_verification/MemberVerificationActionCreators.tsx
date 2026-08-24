@@ -1,31 +1,31 @@
-// Module ID: 6906
-// Function ID: 6907
+// Module ID: 6944
+// Function ID: 6945
 // Name: _fetchVerificationForm
-// Dependencies: [5, 1982, 1990, 4359, 1922, 676, 530, 4360, 709, 6907, 6792, 4200, 6911, 4827, 1236, 4273, 698, 2]
+// Dependencies: [5, 1983, 1991, 4363, 1922, 676, 530, 4364, 709, 6945, 6829, 4204, 6949, 4832, 1236, 4277, 698, 2]
 // Exports: showCoachmark
 
-// Module 6906 (_fetchVerificationForm)
-import closure_3 from "ME";
-import initialize from "initialize";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import updateInvite from "updateInvite";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
+// Module 6944 (_fetchVerificationForm)
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "initialize" /* 1983 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "updateInvite" /* 4363 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
 
-let c9;
-let metroImportAll;
 const require = arg1;
 function _fetchVerificationForm() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c7 = 0;
+    c8 = 0;
+    c6 = 0;
     return (function*(arg0, arg1) {
-      let initialize = tmp3;
-      let closure_3 = tmp5;
+      closure_4 = tmp3;
+      closure_3 = tmp5;
       let body = lib;
       if (lib == null) {
         body = inviteKeyForGuildId.getInviteKeyForGuildId(tmp63);
@@ -34,18 +34,18 @@ function _fetchVerificationForm() {
         const id = currentUser.id;
       }
       inviteKeyForGuildId = 1;
-      const HTTP = callback(outer1_2[6]).HTTP;
-      const obj1 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
-      obj1[0] = outer1_9.GUILD_MEMBER_VERIFICATION(callback);
+      const HTTP = callback(closure_1_2[6]).HTTP;
+      obj1 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
+      obj1[0] = closure_1_9.GUILD_MEMBER_VERIFICATION(callback);
       const obj2 = { with_guild: null, invite_code: null };
-      obj2[0] = !outer1_5.isMember(callback, id);
+      obj2[0] = !closure_1_5.isMember(callback, id);
       if (null != body) {
-        let obj7 = callback(outer1_2[7]);
+        let obj7 = callback(closure_1_2[7]);
         const result = obj7.parseInviteCodeFromInviteKey(tmp27);
       }
       obj2[1] = result;
       obj1[1] = obj2;
-      const obj8 = callback(outer1_2[6]);
+      const obj8 = callback(closure_1_2[6]);
       obj1[3] = obj8.rejectWithMigratedError();
       yield HTTP.get(obj1);
       inviteKeyForGuildId = 0;
@@ -77,7 +77,7 @@ function _fetchVerificationForm() {
       return body;
     })();
   });
-  const _fetchVerificationForm = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -89,12 +89,12 @@ function _fetchVerificationForm() {
 function _updateVerificationForm() {
   const self = this;
   const tmp = callback((arg0, arg1, arg2, arg3) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let closure_3 = arg3;
-    let c6 = 0;
-    let c7 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    closure_3 = arg3;
+    c6 = 0;
+    c7 = 0;
     return (function*(arg0, body) {
       if (c7 === 2) {
         c7 = 3;
@@ -107,7 +107,7 @@ function _updateVerificationForm() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -122,12 +122,12 @@ function _updateVerificationForm() {
               obj[0] = body;
               return obj;
             } else {
-              let trackCommunicationDisabled = tmp2;
-              let initialize = tmp5;
+              closure_5 = tmp2;
+              closure_4 = tmp5;
               body = undefined;
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
-              obj1[0] = outer1_9.GUILD_MEMBER_VERIFICATION(callback);
+              obj1 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
+              obj1[0] = closure_1_9.GUILD_MEMBER_VERIFICATION(callback);
               const obj2 = { form_fields: null, enabled: null, bulk_action: null };
               obj2[0] = body;
               obj2[1] = dependencyMap;
@@ -160,7 +160,7 @@ function _updateVerificationForm() {
             obj4[2] = obj5;
             obj4.dispatch(obj4);
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp6) {
           c7 = tmp;
@@ -169,7 +169,7 @@ function _updateVerificationForm() {
       }
     })();
   });
-  const _updateVerificationForm = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -181,10 +181,10 @@ function _updateVerificationForm() {
 function _updateVerificationFormDescription() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0, body) {
       if (c5 === 2) {
         c5 = 3;
@@ -197,7 +197,7 @@ function _updateVerificationFormDescription() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -212,16 +212,16 @@ function _updateVerificationFormDescription() {
               obj[0] = body;
               return obj;
             } else {
-              let closure_3 = tmp2;
+              closure_3 = tmp2;
               const table = tmp5;
               body = undefined;
-              const HTTP = callback(outer1_2[6]).HTTP;
-              const obj1 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
-              obj1[0] = outer1_9.GUILD_MEMBER_VERIFICATION(callback);
+              const HTTP = callback(closure_1_2[6]).HTTP;
+              obj1 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
+              obj1[0] = closure_1_9.GUILD_MEMBER_VERIFICATION(callback);
               const obj2 = { description: null };
               obj2[0] = body;
               obj1[1] = obj2;
-              obj1[3] = callback(outer1_2[6]).rejectWithMigratedError();
+              obj1[3] = callback(closure_1_2[6]).rejectWithMigratedError();
               c4 = 1;
               c5 = 1;
               const obj3 = { value: null, done: false };
@@ -248,7 +248,7 @@ function _updateVerificationFormDescription() {
             obj4[2] = obj5;
             obj4.dispatch(obj4);
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp6) {
           c5 = tmp;
@@ -257,7 +257,7 @@ function _updateVerificationFormDescription() {
       }
     })();
   });
-  const _updateVerificationFormDescription = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -269,10 +269,10 @@ function _updateVerificationFormDescription() {
 function _enableVerificationForm() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c3 = 0;
-    let c2 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c3 = 0;
+    c2 = 0;
     return (function*(arg0, arg1) {
       if (dependencyMap === 2) {
         dependencyMap = 3;
@@ -285,7 +285,7 @@ function _enableVerificationForm() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -301,8 +301,8 @@ function _enableVerificationForm() {
               return obj;
             } else {
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
-              obj1[0] = outer1_9.GUILD_MEMBER_VERIFICATION(callback);
+              obj1 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
+              obj1[0] = closure_1_9.GUILD_MEMBER_VERIFICATION(callback);
               const obj2 = { enabled: null };
               obj2[0] = closure_1;
               obj1[1] = obj2;
@@ -323,7 +323,7 @@ function _enableVerificationForm() {
             return obj;
           } else {
             dependencyMap = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           dependencyMap = tmp;
@@ -332,7 +332,7 @@ function _enableVerificationForm() {
       }
     })();
   });
-  const _enableVerificationForm = tmp;
+  closure_13 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -344,12 +344,12 @@ function _enableVerificationForm() {
 function _submitVerificationForm() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c8 = 0;
-    let c9 = 0;
-    let c7 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    closure_2 = arg2;
+    c8 = 0;
+    c9 = 0;
+    c7 = 0;
     const iter = (function*(arg0, body) {
       if (c9 === 2) {
         c9 = 3;
@@ -362,7 +362,7 @@ function _submitVerificationForm() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -377,7 +377,7 @@ function _submitVerificationForm() {
               obj[0] = body;
               return obj;
             } else {
-              let trackCommunicationDisabled = tmp3;
+              closure_5 = tmp3;
               let fullServerPreview = tmp7;
               let num9;
               if (num9 === undefined) {
@@ -394,25 +394,25 @@ function _submitVerificationForm() {
               throw body;
             } else if (arg0 === 2) {
               c9 = 3;
-              const obj1 = { value: null, done: true };
+              obj1 = { value: null, done: true };
               obj1[0] = body;
               return obj1;
             } else {
               anyErrorMessage = fullServerPreview;
-              anyErrorMessage = trackCommunicationDisabled;
+              anyErrorMessage = closure_5;
               anyErrorMessage = fullServerPreview;
               anyErrorMessage = callback;
               anyErrorMessage = fullServerPreview;
-              anyErrorMessage = trackCommunicationDisabled;
+              anyErrorMessage = closure_5;
               if (fullServerPreview.isFullServerPreview(callback)) {
                 let obj11 = callback(num9[10]);
                 const obj2 = { memberOptions: null };
                 obj2[0] = { isPending: false };
                 const result = obj11.updateImpersonatedData(callback, obj2);
                 c9 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
-                let c7 = 1;
+                c7 = 1;
                 const HTTP = callback(num9[6]).HTTP;
                 let obj3 = { url: null, body: null, rejectWithError: null };
                 obj3[0] = c9.GUILD_MEMBER_REQUEST_TO_JOIN(callback);
@@ -431,7 +431,7 @@ function _submitVerificationForm() {
             }
           } else if (2 === tmp7) {
             c7 = 0;
-            fullServerPreview = updateInvite;
+            fullServerPreview = closure_6;
             const status = fullServerPreview.status;
             if (429 === status) {
               obj3 = callback(num9[12]);
@@ -510,7 +510,7 @@ function _submitVerificationForm() {
             return obj;
           }
         } catch (tmp75) {
-          updateInvite = tmp75;
+          closure_6 = tmp75;
           if (tmp4 === c7) {
             c9 = tmp2;
             throw tmp75;
@@ -521,7 +521,7 @@ function _submitVerificationForm() {
     iter.next();
     return iter;
   });
-  const _submitVerificationForm = tmp;
+  closure_14 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -530,8 +530,8 @@ function _submitVerificationForm() {
   }
   return applyArgumentsResult;
 }
-({ AnalyticEvents: metroImportAll, Endpoints: c9 } = ME);
-let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/guild_member_verification/MemberVerificationActionCreators.tsx");
+({ AnalyticEvents: closure_8, Endpoints: c9 } = ME);
+let result = require("set").fileFinishedImporting("modules/guild_member_verification/MemberVerificationActionCreators.tsx");
 
 export default {
   fetchVerificationForm(guildId, inviteKeyForGuildId) {
@@ -555,7 +555,7 @@ export default {
     return applyArgumentsResult;
   },
   updateVerificationFormFieldsLocal(guildId, formFields) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "MEMBER_VERIFICATION_FORM_UPDATE", guildId, form: obj, isLocalUpdate: true };
     obj = { formFields };
     obj.dispatch(obj);
@@ -571,7 +571,7 @@ export default {
     return applyArgumentsResult;
   },
   updateVerificationFormDescriptionLocal(guildId, description) {
-    let obj = importDefault(709);
+    let obj = dispatcherDefault;
     obj = { type: "MEMBER_VERIFICATION_FORM_UPDATE", guildId, form: obj, isLocalUpdate: true };
     obj = { description };
     obj.dispatch(obj);
@@ -597,24 +597,18 @@ export default {
     return applyArgumentsResult;
   },
   clearCoachmark() {
-    importDefault(709).dispatch({ type: "USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR" });
+    dispatcherDefault.dispatch({ type: "USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR" });
   },
   reportApplication(arg0) {
-    let guild;
-    let guildJoinRequest;
-    let guildJoinRequestUser;
-    let reason;
-    let reasonOther;
-    let responses;
     ({ guild, guildJoinRequest, guildJoinRequestUser, reason, reasonOther, responses } = arg0);
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     obj = { application_id: guildJoinRequest.joinRequestId, applicant_id: guildJoinRequestUser.id, guild_id: guild.id, reason, reason_other: reasonOther, responses };
     obj.track(constants.GUILD_MEMBER_APPLICATION_REPORTED, obj);
   }
 };
 export const DISABLE_JOIN_REQUEST_COACHMARK = -1;
 export const showCoachmark = function showCoachmark(guildId) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW", guildId };
   obj.dispatch(obj);
 };

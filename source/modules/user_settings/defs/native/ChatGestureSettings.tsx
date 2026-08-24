@@ -1,103 +1,107 @@
-// Module ID: 10668
-// Function ID: 10669
+// Module ID: 10707
+// Function ID: 10708
 // Name: useSwipeToReplySettingValue
-// Dependencies: [8198, 676, 1306, 1236, 698, 4066, 10669, 2]
+// Dependencies: [8238, 676, 1306, 1236, 698, 4069, 10708, 2]
 // Exports: getSwipeToReplySettingValue, useSwipeToReplySettingValue
 
-// Module 10668 (useSwipeToReplySettingValue)
-import ME from "ME";
-import createToggle from "createToggle";
+// Module 10707 (useSwipeToReplySettingValue)
+import set from "set" /* 2 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import create from "create" /* 1306 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import ME from "ME" /* 676 */;
+import createToggle from "createToggle" /* 10708 */;
 
-let c3;
-let c4;
 function useSwipeToReplySettingValue() {
-  const SwipeRightToLeftModeSetting = require(4066) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+  const SwipeRightToLeftModeSetting = explicitContentFromProto.SwipeRightToLeftModeSetting;
   let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.useSetting();
-  if (SWIPE_RIGHT_TO_LEFT_REPLY === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
-    SWIPE_RIGHT_TO_LEFT_REPLY = require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
+  if (SWIPE_RIGHT_TO_LEFT_REPLY === create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
+    SWIPE_RIGHT_TO_LEFT_REPLY = create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
   }
   return SWIPE_RIGHT_TO_LEFT_REPLY;
 }
 ({ AnalyticEvents: c3, AnalyticsSections: c4 } = ME);
 const radio = createToggle.createRadio({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["Jf0C/c"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["Jf0C/c"]);
   },
   useSearchTerms() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1236) /* getSystemLocale */.t["9BGJ1m"])];
+    const intl = getSystemLocale.intl;
+    const items = [intl.string(getSystemLocale.t["9BGJ1m"])];
     return items;
   },
-  parent: require("MobileUserSettings").MobileUserSettings.SWIPE_RIGHT_TO_LEFT,
+  parent: MobileUserSettings.MobileUserSettings.SWIPE_RIGHT_TO_LEFT,
   useValue: useSwipeToReplySettingValue,
   onValueChange: function onSwipeToReplyValueChange(arg0) {
     const NumberResult = Number(arg0);
-    let obj = importDefault(698);
-    obj = { enabled: NumberResult === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, location: obj };
+    let obj = expandEventPropertiesDefault;
+    obj = { enabled: NumberResult === create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, location: obj };
     obj = { section: constants2.SETTINGS_TEXT_AND_IMAGES };
     obj.track(constants.USER_SETTINGS_SWIPE_TO_REPLY_TOGGLE, obj);
-    const SwipeRightToLeftModeSetting = require(4066) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+    const SwipeRightToLeftModeSetting = explicitContentFromProto.SwipeRightToLeftModeSetting;
     SwipeRightToLeftModeSetting.updateSetting(NumberResult);
   },
   useOptions: function useHasSwipeToReplySettingOptions() {
-    let obj = { value: require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS, label: null, subLabel: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl.string(require(1236) /* getSystemLocale */.t["6eXLcJ"]);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.ohhhDK);
+    let obj = { value: create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS, label: null, subLabel: null };
+    const intl = getSystemLocale.intl;
+    obj[1] = intl.string(getSystemLocale.t["6eXLcJ"]);
+    const intl2 = getSystemLocale.intl;
+    obj[2] = intl2.string(getSystemLocale.t.ohhhDK);
     const items = [obj, ];
-    obj = { value: require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, label: null };
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl3.string(require(1236) /* getSystemLocale */.t["3tYNDS"]);
+    obj = { value: create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, label: null };
+    const intl3 = getSystemLocale.intl;
+    obj[1] = intl3.string(getSystemLocale.t["3tYNDS"]);
     items[1] = obj;
     return items;
   }
 });
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["Jf0C/c"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["Jf0C/c"]);
   },
   useSearchTerms() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1236) /* getSystemLocale */.t["9BGJ1m"])];
+    const intl = getSystemLocale.intl;
+    const items = [intl.string(getSystemLocale.t["9BGJ1m"])];
     return items;
   },
-  parent: require("MobileUserSettings").MobileUserSettings.SWIPE_RIGHT_TO_LEFT,
+  parent: MobileUserSettings.MobileUserSettings.SWIPE_RIGHT_TO_LEFT,
   useValue: useSwipeToReplySettingValue,
   onValueChange: function onSwipeToReplyValueChange(arg0) {
     const NumberResult = Number(arg0);
-    let obj = importDefault(698);
-    obj = { enabled: NumberResult === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, location: obj };
+    let obj = expandEventPropertiesDefault;
+    obj = { enabled: NumberResult === create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, location: obj };
     obj = { section: constants2.SETTINGS_TEXT_AND_IMAGES };
     obj.track(constants.USER_SETTINGS_SWIPE_TO_REPLY_TOGGLE, obj);
-    const SwipeRightToLeftModeSetting = require(4066) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+    const SwipeRightToLeftModeSetting = explicitContentFromProto.SwipeRightToLeftModeSetting;
     SwipeRightToLeftModeSetting.updateSetting(NumberResult);
   },
   useOptions: function useHasSwipeToReplySettingOptions() {
-    let obj = { value: require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS, label: null, subLabel: null };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl.string(require(1236) /* getSystemLocale */.t["6eXLcJ"]);
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.ohhhDK);
+    let obj = { value: create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS, label: null, subLabel: null };
+    const intl = getSystemLocale.intl;
+    obj[1] = intl.string(getSystemLocale.t["6eXLcJ"]);
+    const intl2 = getSystemLocale.intl;
+    obj[2] = intl2.string(getSystemLocale.t.ohhhDK);
     const items = [obj, ];
-    obj = { value: require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, label: null };
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl3.string(require(1236) /* getSystemLocale */.t["3tYNDS"]);
+    obj = { value: create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, label: null };
+    const intl3 = getSystemLocale.intl;
+    obj[1] = intl3.string(getSystemLocale.t["3tYNDS"]);
     items[1] = obj;
     return items;
   }
 };
-const result = require("create").fileFinishedImporting("modules/user_settings/defs/native/ChatGestureSettings.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/ChatGestureSettings.tsx");
 
 export default radio;
 export { useSwipeToReplySettingValue };
 export const getSwipeToReplySettingValue = function getSwipeToReplySettingValue() {
-  const SwipeRightToLeftModeSetting = require(4066) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+  const SwipeRightToLeftModeSetting = explicitContentFromProto.SwipeRightToLeftModeSetting;
   let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.getSetting();
-  if (SWIPE_RIGHT_TO_LEFT_REPLY === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
-    SWIPE_RIGHT_TO_LEFT_REPLY = require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
+  if (SWIPE_RIGHT_TO_LEFT_REPLY === create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
+    SWIPE_RIGHT_TO_LEFT_REPLY = create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
   }
   return SWIPE_RIGHT_TO_LEFT_REPLY;
 };

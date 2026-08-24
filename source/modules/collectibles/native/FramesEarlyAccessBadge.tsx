@@ -1,40 +1,44 @@
-// Module ID: 9269
-// Function ID: 9270
+// Module ID: 9306
+// Function ID: 9307
 // Name: BadgeWithTooltip
-// Dependencies: [32, 19, 17, 21, 4661, 712, 4310, 1236, 9270, 1363, 7988, 4734, 9233, 7126, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 4314, 1236, 9307, 1363, 8027, 4739, 9270, 7164, 2]
 // Exports: default
 
-// Module 9269 (BadgeWithTooltip)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9306 (BadgeWithTooltip)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import Text from "Text" /* 4739 */;
+import Layer from "Layer" /* 7164 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8027 */;
+import useCanPurchaseFrames from "useCanPurchaseFrames" /* 9270 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 ({ Pressable: c5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = { top: 14, bottom: 14, left: 14, right: 14 };
 createCacheKey = { pillBase: null, pillDark: null, pillLight: null, text: null };
-createCacheKey = { flexDirection: "row", alignItems: "center", borderRadius: require("Themes").radii.round, paddingVertical: 2, paddingHorizontal: require("Themes").space.PX_8 };
+createCacheKey = { flexDirection: "row", alignItems: "center", borderRadius: ThemesDefault.radii.round, paddingVertical: 2, paddingHorizontal: ThemesDefault.space.PX_8 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { backgroundColor: require("Themes").colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT };
-let obj1 = { backgroundColor: require("Themes").colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT };
-createCacheKey[2] = { backgroundColor: require("Themes").colors.BADGE_BACKGROUND_BRAND };
-const obj2 = { backgroundColor: require("Themes").colors.BADGE_BACKGROUND_BRAND };
-createCacheKey[3] = { marginLeft: require("Themes").space.PX_8, textTransform: "uppercase" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+createCacheKey[1] = { backgroundColor: ThemesDefault.colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT };
+let obj1 = { backgroundColor: ThemesDefault.colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT };
+createCacheKey[2] = { backgroundColor: ThemesDefault.colors.BADGE_BACKGROUND_BRAND };
+const obj2 = { backgroundColor: ThemesDefault.colors.BADGE_BACKGROUND_BRAND };
+createCacheKey[3] = { marginLeft: ThemesDefault.space.PX_8, textTransform: "uppercase" };
+let closure_10 = createCacheKey.createStyles(createCacheKey);
 function BadgeWithTooltip(tooltipPosition) {
   tooltipPosition = tooltipPosition.tooltipPosition;
   let first;
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
   callback = undefined;
-  const tmp3 = createCacheKey();
+  const tmp3 = callback4();
   const ref = callback.useRef(null);
   const tmp5 = callback(callback.useState(false), 2);
   first = tmp5[0];
@@ -47,7 +51,7 @@ function BadgeWithTooltip(tooltipPosition) {
   }, []);
   const items = [tooltipPosition, stringResult, first, callback];
   const memo = callback.useMemo(() => ({ position: tooltipPosition, label: c3, visible: first, onPress: callback }), items);
-  let obj = tooltipPosition(9270);
+  let obj = tooltipPosition(9307);
   const tooltip = obj.useTooltip(ref, memo);
   const items1 = [first];
   const effect = callback.useEffect(() => {
@@ -62,7 +66,7 @@ function BadgeWithTooltip(tooltipPosition) {
   const callback1 = callback.useCallback(() => {
     callback((arg0) => !arg0);
   }, []);
-  const tmp2 = first(4310)();
+  const tmp2 = first(4314)();
   const isThemeDarkResult = tooltipPosition(1363).isThemeDark(tmp2);
   let str = "text-overlay-light";
   if (isThemeDarkResult) {
@@ -72,32 +76,32 @@ function BadgeWithTooltip(tooltipPosition) {
   const stringResult1 = intl2.string(tooltipPosition(1236).t["1m6qcO"]);
   obj = { ref, onPress: callback1, hitSlop: closure_9, accessibilityRole: "button", accessibilityLabel: stringResult1, accessibilityHint: stringResult, style: items2, children: null };
   items2 = [tmp3.pillBase, isThemeDarkResult ? tmp3.pillDark : tmp3.pillLight];
-  const items3 = [callback2(tooltipPosition(7988).NitroWheelIcon, { size: "xs", color: str }), ];
+  const items3 = [callback2(tooltipPosition(8027).NitroWheelIcon, { size: "xs", color: str }), ];
   obj = { variant: "text-sm/bold", color: str, style: tmp3.text, children: stringResult1 };
-  items3[1] = callback2(tooltipPosition(4734).Text, obj);
+  items3[1] = callback2(tooltipPosition(4739).Text, obj);
   obj[7] = items3;
   return callback3(closure_5, obj);
 }
 function StaticBadge() {
-  const tmp3 = createCacheKey();
-  let obj = require(1363) /* AccessibilityAnnouncer */;
-  const isThemeDarkResult = obj.isThemeDark(importDefault(4310)());
+  const tmp3 = callback4();
+  let obj = AccessibilityAnnouncer;
+  const isThemeDarkResult = obj.isThemeDark(useThemeDefault());
   let str = "text-overlay-light";
   if (isThemeDarkResult) {
     str = "control-overlay-primary-text-default";
   }
   const intl = tmp4(1236).intl;
-  const stringResult = intl.string(require(1236) /* getSystemLocale */.t["1m6qcO"]);
+  const stringResult = intl.string(getSystemLocale.t["1m6qcO"]);
   obj = { accessibilityLabel: stringResult, style: items, children: null };
   items = [tmp3.pillBase, isThemeDarkResult ? tmp3.pillDark : tmp3.pillLight];
-  const items1 = [callback2(require(7988) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs", color: str }), ];
+  const items1 = [callback2(NitroWheelIcon.NitroWheelIcon, { size: "xs", color: str }), ];
   obj = { variant: "text-sm/bold", color: str, style: tmp3.text, children: stringResult };
-  items1[1] = callback2(require(4734) /* Text */.Text, obj);
+  items1[1] = callback2(Text.Text, obj);
   obj[2] = items1;
   return callback3(closure_6, obj);
 }
-const obj3 = { marginLeft: require("Themes").space.PX_8, textTransform: "uppercase" };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/FramesEarlyAccessBadge.tsx");
+const obj3 = { marginLeft: ThemesDefault.space.PX_8, textTransform: "uppercase" };
+const result = require("set").fileFinishedImporting("modules/collectibles/native/FramesEarlyAccessBadge.tsx");
 
 export default function _default(tooltipPosition) {
   let str = tooltipPosition.tooltipPosition;
@@ -112,7 +116,7 @@ export default function _default(tooltipPosition) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = require(9233) /* useCanPurchaseFrames */;
+  let obj = useCanPurchaseFrames;
   if (!obj.useIsProfileFramesEarlyAccessPhase(tooltipPosition.location)) {
     return null;
   } else if (flag2) {
@@ -123,9 +127,9 @@ export default function _default(tooltipPosition) {
     tmp3Result = tmp3(BadgeWithTooltip, obj);
   } else {
     obj = { zIndex: 3, children: null };
-    const obj1 = { tooltipPosition: null };
+    obj1 = { tooltipPosition: null };
     obj1[0] = str;
     obj[1] = tmp3(BadgeWithTooltip, obj1);
-    tmp3Result = tmp3(require(7126) /* Layer */.LayerScope, obj);
+    tmp3Result = tmp3(Layer.LayerScope, obj);
   }
 };

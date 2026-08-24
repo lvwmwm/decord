@@ -1,25 +1,25 @@
-// Module ID: 11363
-// Function ID: 11364
+// Module ID: 11414
+// Function ID: 11415
 // Name: EmptyStateWithSnowflakeQuery
-// Dependencies: [19, 1499, 21, 4661, 4342, 5245, 1297, 11346, 1236, 11344, 11364, 10785, 11345, 6291, 2]
+// Dependencies: [19, 1499, 21, 4668, 4346, 5250, 1297, 11397, 1236, 11395, 11415, 10824, 11396, 6322, 2]
 // Exports: default
 
-// Module 11363 (EmptyStateWithSnowflakeQuery)
-import noop from "noop";
-import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11414 (EmptyStateWithSnowflakeQuery)
+import closure_3 from "noop" /* 19 */;
+import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
 function EmptyStateWithSnowflakeQuery(onPressRow) {
   onPressRow = onPressRow.onPressRow;
   const tmp = callback();
   const items = [onPressRow.query];
-  return jsx(onPressRow(11345).AppLauncherList, {
+  return jsx(onPressRow(11396).AppLauncherList, {
     contentContainerStyle: callback().emptyState,
     data: items,
     renderItem(item) {
-      return outer1_4(onPressRow(outer1_2[13]).TableRow, { label: item.item, start: true, end: true, onPress: onPressRow });
+      return closure_1_4(onPressRow(closure_1_2[13]).TableRow, { label: item.item, start: true, end: true, onPress: onPressRow });
     },
     keyboardShouldPersistTaps: "always",
     keyboardDismissMode: "on-drag"
@@ -27,7 +27,7 @@ function EmptyStateWithSnowflakeQuery(onPressRow) {
 }
 const AppLauncherUserListActionSheet = "AppLauncherUserListActionSheet";
 let closure_6 = createCacheKey.createStyles({ emptyState: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 } });
-const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/options/user/AppLauncherUserListActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/options/user/AppLauncherUserListActionSheet.tsx");
 
 export default function AppLauncherUserListActionSheet(onUserPress) {
   onUserPress = onUserPress.onUserPress;
@@ -38,7 +38,7 @@ export default function AppLauncherUserListActionSheet(onUserPress) {
   const id = channel.id;
   const items = [onActionSheetDismiss];
   callback = callback1.useCallback(() => {
-    onActionSheetDismiss(callback[4]).hideActionSheet(outer1_5);
+    onActionSheetDismiss(callback[4]).hideActionSheet(closure_1_5);
     onActionSheetDismiss();
   }, items);
   const items1 = [callback, onUserPress];
@@ -48,15 +48,15 @@ export default function AppLauncherUserListActionSheet(onUserPress) {
   }, items1);
   const items2 = [callback1];
   const callback2 = callback1.useCallback((text) => {
-    let closure_0 = text;
+    closure_0 = text;
     let obj = onUserPress(callback[5]);
     if (obj.isSnowflake(text)) {
       obj = { query: null, onPressRow: null };
       obj[0] = text;
       obj[1] = function onPressRow(arg0) {
-        return outer1_3({ user: closure_0 });
+        return closure_1_3({ user: closure_0 });
       };
-      let tmp3Result = tmp3(outer1_7, obj);
+      let tmp3Result = tmp3(closure_1_7, obj);
     } else {
       obj = { style: null, lightSource: null, darkSource: null, title: null, body: null };
       obj[0] = { paddingTop: 80 };

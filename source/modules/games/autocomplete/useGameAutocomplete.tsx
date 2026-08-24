@@ -1,21 +1,23 @@
-// Module ID: 7600
-// Function ID: 7601
+// Module ID: 7638
+// Function ID: 7639
 // Name: fetchStore
-// Dependencies: [32, 19, 6899, 676, 589, 6900, 7601, 2]
+// Dependencies: [32, 19, 6937, 676, 589, 6938, 7639, 2]
 // Exports: useDebouncedGameAutocomplete
 
-// Module 7600 (fetchStore)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import importDefaultResult from "set";
-import { QueryIds } from "ME";
-import initialize from "initialize";
+// Module 7638 (fetchStore)
+import GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH from "GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH" /* 6938 */;
+import _fetchGameAutocomplete from "_fetchGameAutocomplete" /* 7639 */;
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import importDefaultResult from "set" /* 6937 */;
+import { QueryIds } from "ME" /* 676 */;
+import initialize from "initialize" /* 589 */;
 
-let require = arg1;
+require = arg1;
 let c4 = importDefaultResult;
 initialize = {
   getQueryId(c0) {
-    return QueryIds.GAME_AUTOCOMPLETE(require(6900) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.normalizeGameAutocompleteQuery(c0));
+    return QueryIds.GAME_AUTOCOMPLETE(GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH.normalizeGameAutocompleteQuery(c0));
   },
   get(arg0) {
     let results = importDefaultResult.getResults(arg0);
@@ -25,7 +27,7 @@ initialize = {
     return results;
   },
   load(arg0) {
-    return require(7601) /* _fetchGameAutocomplete */.fetchGameAutocomplete(arg0);
+    return _fetchGameAutocomplete.fetchGameAutocomplete(arg0);
   },
   getIsLoading(arg0) {
     return importDefaultResult.isFetching(arg0);
@@ -59,16 +61,10 @@ export const GAME_AUTOCOMPLETE_DEBOUNCE_MS = 200;
 export const GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS = 500;
 export const useGameAutocomplete = fetchStore;
 export const useDebouncedGameAutocomplete = function useDebouncedGameAutocomplete(c0) {
-  let c1;
-  let data;
-  let isLoading;
-  let tmp3;
-  let tmp7;
-  let tmp8;
-  let obj = require(6900) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */;
+  let obj = GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH;
   const result = obj.normalizeGameAutocompleteQuery(c0);
   require = result;
-  let dependencyMap;
+  dependencyMap = undefined;
   let callback;
   let React;
   [tmp3, c1] = callback(React.useState(result), 2);
@@ -81,8 +77,8 @@ export const useDebouncedGameAutocomplete = function useDebouncedGameAutocomplet
         if (null != tmp2.current) {
           const _Date2 = Date;
           function emit() {
-            noop.current = Date.now();
-            _slicedToArray.current = closure_0;
+            closure_3.current = Date.now();
+            closure_2.current = closure_0;
             callback(closure_0);
           }
           const _Math = Math;
@@ -126,7 +122,7 @@ export const useDebouncedGameAutocomplete = function useDebouncedGameAutocomplet
     isLoading = tmp3 !== result;
   }
   obj[1] = isLoading;
-  let error = null;
+  error = null;
   if (tmp3 === result) {
     error = tmp5.error;
   }

@@ -1,27 +1,27 @@
-// Module ID: 13007
-// Function ID: 13008
+// Module ID: 13062
+// Function ID: 13063
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 4267, 7383, 589, 691, 7390, 4270, 2]
+// Dependencies: [5, 32, 19, 4271, 7421, 589, 691, 7428, 4274, 2]
 // Exports: default
 
-// Module 13007 (useFetchGuildBoostSlots)
-import initialize from "initialize";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";
-import getState from "getState";
+// Module 13062 (useFetchGuildBoostSlots)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "_slicedToArray" /* 32 */;
+import closure_5 from "noop" /* 19 */;
+import closure_6 from "handleGuildBoostsUpdate" /* 4271 */;
+import closure_7 from "getState" /* 7421 */;
 
 const require = arg1;
-const result = require("noop").fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/useFetchGuildBoostSlots.tsx");
+const result = require("set").fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/useFetchGuildBoostSlots.tsx");
 
 export default function useFetchGuildBoostSlots() {
   let tmp = callback(React.useState(true), 2);
   const first = tmp[0];
-  let closure_1 = tmp[1];
-  let items = [handleGuildBoostsUpdate];
+  closure_1 = tmp[1];
+  let items = [closure_6];
   stateFromStores = first(stateFromStores[5]).useStateFromStores(items, () => hasFetched.hasFetched);
   let obj = first(stateFromStores[5]);
-  const items1 = [getState];
+  const items1 = [closure_7];
   const stateFromStores1 = first(stateFromStores[5]).useStateFromStores(items1, () => state.getState());
   callback = React.useRef(stateFromStores1);
   const items2 = [stateFromStores1, stateFromStores, first];
@@ -41,7 +41,7 @@ export default function useFetchGuildBoostSlots() {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -58,8 +58,8 @@ export default function useFetchGuildBoostSlots() {
                 } else {
                   const callback = tmp2;
                   let resolve = globalThis;
-                  let appliedGuildBoostsForUser = outer2_2;
-                  let items = [outer2_1(outer2_2[7]).init(), , ];
+                  let appliedGuildBoostsForUser = closure_2_2;
+                  let items = [closure_2_1(closure_2_2[7]).init(), , ];
                   if (c2) {
                     resolve = resolve.Promise.resolve;
                     let resolveResult = resolve();
@@ -69,7 +69,7 @@ export default function useFetchGuildBoostSlots() {
                     const obj2 = callback(appliedGuildBoostsForUser[8]);
                   }
                   items[1] = resolveResult;
-                  const obj6 = outer2_1(outer2_2[7]);
+                  const obj6 = closure_2_1(closure_2_2[7]);
                   appliedGuildBoostsForUser = callback(appliedGuildBoostsForUser[8]).fetchAppliedGuildBoostsForUser();
                   items[2] = appliedGuildBoostsForUser;
                   items = Promise.all(items);
@@ -88,7 +88,7 @@ export default function useFetchGuildBoostSlots() {
               } else {
                 v0(false);
                 c2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp13) {
               c2 = tmp;
@@ -96,7 +96,7 @@ export default function useFetchGuildBoostSlots() {
             }
           }
         });
-        const _fetch = tmp;
+        closure_0 = tmp;
         const apply = tmp.apply;
         if (typeof apply === "unknown") {
           let applyArgumentsResult = HermesBuiltin.applyArguments(self);

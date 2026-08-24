@@ -1,39 +1,33 @@
-// Module ID: 8017
-// Function ID: 8018
+// Module ID: 8056
+// Function ID: 8057
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 4661, 712, 1367, 8018, 6950, 4733, 8019, 4734, 2]
+// Dependencies: [109, 19, 17, 21, 4668, 712, 1367, 8057, 6988, 4738, 8058, 4739, 2]
 // Exports: PromoSheet
 
-// Module 8017 (PromoSheet)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8056 (PromoSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import closure_4 from "_objectWithoutProperties" /* 109 */;
+import closure_5 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
 let closure_3 = ["title", "description", "illustration", "graphic", "gradientColor", "actions"];
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { content: { paddingHorizontal: 20, position: "relative" }, title: { textAlign: "center" }, description: { textAlign: "center" }, illustration: { alignSelf: "stretch", alignItems: "center" }, graphic: null };
-createCacheKey = { alignSelf: "center", maxWidth: require("Themes").modules.mobile.PROMO_SHEET_GRAPHIC_MAX_WIDTH };
+createCacheKey = { alignSelf: "center", maxWidth: ThemesDefault.modules.mobile.PROMO_SHEET_GRAPHIC_MAX_WIDTH };
 createCacheKey[4] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Sheet/native/PromoSheet.native.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("design/components/Sheet/native/PromoSheet.native.tsx");
 
 export const PromoSheet = function PromoSheet(arg0) {
-  let actions;
-  let description;
-  let gradientColor;
-  let graphic;
-  let illustration;
-  let title;
   ({ description, illustration, graphic, gradientColor } = arg0);
   ({ title, actions } = arg0);
-  const tmp3 = importDefault(1367)("PromoSheet");
+  const tmp3 = useIsMobileVisualRefreshExperimentEnabledDefault("PromoSheet");
   importDefault = tmp3;
-  const tmp4 = createCacheKey();
+  const tmp4 = callback2();
   const items = [tmp3, gradientColor];
   const memo = React.useMemo(() => {
     if (closure_1) {
@@ -41,10 +35,9 @@ export const PromoSheet = function PromoSheet(arg0) {
         return (arg0) => {
           let obj = {};
           const merged = Object.assign(arg0);
-          obj = { offsetBottom: 0.25, color: closure_0, backgroundColor: null };
-          obj[2] = outer1_1(outer1_2[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND;
-          obj.children = outer1_7(outer1_0(outer1_2[7]).ExpressiveGradient, obj);
-          return outer1_7(outer1_6, obj);
+          obj = { offsetBottom: 0.25, color: closure_0, backgroundColor: closure_1_1(closure_1_2[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+          obj.children = closure_1_7(closure_1_0(closure_1_2[7]).ExpressiveGradient, obj);
+          return closure_1_7(closure_1_6, obj);
         };
       }
     }
@@ -59,7 +52,7 @@ export const PromoSheet = function PromoSheet(arg0) {
       obj = {};
       const merged1 = Object.assign(graphic);
       obj.style = tmp4.graphic;
-      let tmp6Result = tmp6(tmp7(8019).Graphic, obj);
+      let tmp6Result = tmp6(tmp7(8058).Graphic, obj);
     }
     const items1 = [tmp6Result, , ];
     let str = "heading-xl/bold";
@@ -70,14 +63,14 @@ export const PromoSheet = function PromoSheet(arg0) {
     obj[0] = str;
     obj[2] = tmp4.title;
     obj[3] = title;
-    const items2 = [tmp6(tmp7(4734).Text, obj), ];
+    const items2 = [tmp6(tmp7(4739).Text, obj), ];
     tmp6Result = null;
     if (null != description) {
       let str2 = "text-md/medium";
       if (tmp3) {
         str2 = "redesign/heading-18/medium";
       }
-      const obj1 = { variant: null, color: null, style: null, children: null };
+      obj1 = { variant: null, color: null, style: null, children: null };
       obj1[0] = str2;
       let str3 = "text-default";
       if (tmp3) {
@@ -86,17 +79,17 @@ export const PromoSheet = function PromoSheet(arg0) {
       obj1[1] = str3;
       obj1[2] = tmp4.description;
       obj1[3] = description;
-      tmp6Result = tmp6(tmp7(4734).Text, obj1);
+      tmp6Result = tmp6(tmp7(4739).Text, obj1);
     }
     const obj2 = { spacing: 24, children: null };
     const obj3 = { children: null };
     items2[1] = tmp6Result;
     obj3[0] = items2;
-    items1[1] = tmp9(tmp7(4733).Stack, obj3);
+    items1[1] = tmp9(tmp7(4738).Stack, obj3);
     items1[2] = actions;
     obj2[1] = items1;
     obj.children = tmp9(tmp10, obj2);
-    return tmp6(gradientColor(6950).BottomSheet, obj);
+    return tmp6(gradientColor(6988).BottomSheet, obj);
   }
   tmp6Result = null;
   if (null != illustration) {

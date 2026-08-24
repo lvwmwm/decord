@@ -1,17 +1,20 @@
-// Module ID: 8403
-// Function ID: 8404
+// Module ID: 8442
+// Function ID: 8443
 // Name: useCutoutBackgroundColor
-// Dependencies: [19, 21, 689, 8404, 712, 4097, 2]
+// Dependencies: [19, 21, 689, 8443, 712, 4100, 2]
 // Exports: CutoutBackgroundProvider, useCutoutBackgroundColor
 
-// Module 8403 (useCutoutBackgroundColor)
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 8442 (useCutoutBackgroundColor)
+import nDefault from "n" /* 689 */;
+import ThemesDefault from "Themes" /* 712 */;
+import flattenColorOverOpaqueBackground from "flattenColorOverOpaqueBackground" /* 8443 */;
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 let context = importAllResult.createContext(undefined);
-const result = require("n").fileFinishedImporting("design/components/Icon/native/CutoutBackgroundContext.tsx");
+const result = require("set").fileFinishedImporting("design/components/Icon/native/CutoutBackgroundContext.tsx");
 
 export const useCutoutBackgroundColor = function useCutoutBackgroundColor() {
   return importAllResult.useContext(closure_5);
@@ -19,7 +22,7 @@ export const useCutoutBackgroundColor = function useCutoutBackgroundColor() {
 export const CutoutBackgroundProvider = function CutoutBackgroundProvider(children) {
   const backgroundColor = children.backgroundColor;
   const context = importAllResult.useContext(closure_5);
-  const internal = importDefault(712).internal;
+  const internal = ThemesDefault.internal;
   if (internal.isSemanticColor(backgroundColor)) {
     const tmp5 = backgroundColor;
   }
@@ -34,11 +37,11 @@ export const CutoutBackgroundProvider = function CutoutBackgroundProvider(childr
     let value = token;
     if (1 !== obj2.alpha()) {
       if (null != context) {
-        value = require(8404) /* flattenColorOverOpaqueBackground */.flattenColorOverOpaqueBackground(token, context);
-        const tmp6Result = require(8404) /* flattenColorOverOpaqueBackground */;
+        value = flattenColorOverOpaqueBackground.flattenColorOverOpaqueBackground(token, context);
+        const tmp6Result = flattenColorOverOpaqueBackground;
       }
     }
-    obj2 = importDefault(689)(token);
+    obj2 = nDefault(token);
   } else if (undefined === token) {
     value = context;
   }

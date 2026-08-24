@@ -5,7 +5,7 @@
 // Exports: isValidRubberBandConfig
 
 // Module 1730 (isValidRubberBandConfig)
-import isJest from "isJest";
+import isJest from "isJest" /* 1657 */;
 
 let num = 1;
 if (isJest.isWeb()) {

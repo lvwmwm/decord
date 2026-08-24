@@ -1,29 +1,30 @@
-// Module ID: 16854
-// Function ID: 16855
+// Module ID: 16947
+// Function ID: 16948
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 676, 21, 4661, 712, 698, 4342, 4093, 6949, 1236, 7175, 16834, 4827, 2]
+// Dependencies: [19, 17, 676, 21, 4668, 712, 698, 4346, 4096, 6987, 1236, 7213, 16927, 4832, 2]
 // Exports: default
 
-// Module 16854 (RolePermissionTemplatesActionSheet)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import ME from "ME";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16947 (RolePermissionTemplatesActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
+import ActionSheet from "ActionSheet" /* 7213 */;
+import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 16927 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import ME from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 ({ AnalyticEvents: c5, AnalyticsSections: closure_6 } = ME);
 createCacheKey = { templateContainer: null };
-createCacheKey = { paddingVertical: 16, flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey = { paddingVertical: 16, flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("ME").fileFinishedImporting("modules/guild_settings/roles/native/action_sheet/RolePermissionTemplatesActionSheet.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+let result = require("set").fileFinishedImporting("modules/guild_settings/roles/native/action_sheet/RolePermissionTemplatesActionSheet.tsx");
 
 export default function RolePermissionTemplatesActionSheet(guildId) {
-  let importDefault;
-  let require;
   ({ permissionsEdited: require, onPermissionsChanged: importDefault } = guildId);
   const effect = React.useEffect(() => {
     let obj = callback(table[6]);
@@ -31,46 +32,11 @@ export default function RolePermissionTemplatesActionSheet(guildId) {
     obj.track(constants.OPEN_POPOUT, obj);
   }, []);
   let obj = { title: null };
-  let intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.KgCkoQ);
-  const tmp = createCacheKey();
-  obj = { header: jsx(require(6949) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null }), startExpanded: true, children: null };
-  obj = { style: tmp.templateContainer, children: null };
-  obj[1] = jsx(importDefault(16834), {
-    onSelect(arg0) {
-      let closure_0 = arg0;
-      if (closure_0) {
-        let obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, hideActionSheet: false };
-        const intl = outer1_0(outer1_2[10]).intl;
-        obj[0] = intl.string(outer1_0(outer1_2[10]).t.MVdkgB);
-        const intl2 = outer1_0(outer1_2[10]).intl;
-        obj[1] = intl2.string(outer1_0(outer1_2[10]).t.LpogjK);
-        const intl3 = outer1_0(outer1_2[10]).intl;
-        obj[2] = intl3.string(outer1_0(outer1_2[10]).t["ETE/oC"]);
-        const intl4 = outer1_0(outer1_2[10]).intl;
-        obj[3] = intl4.string(outer1_0(outer1_2[10]).t.p89ACt);
-        obj[4] = function onConfirm() {
-          outer1_1(callback);
-          outer1_1(outer1_2[7]).hideActionSheet();
-          const obj = outer1_1(outer1_2[7]);
-          const result = callback(outer1_2[8]).roleTemplateAppliedToast();
-        };
-        obj[5] = function onCancel() {
-          callback2(table[7]).hideActionSheet();
-        };
-        outer1_1(outer1_2[13]).show(obj);
-        const obj3 = outer1_1(outer1_2[13]);
-      } else {
-        callback(arg0);
-        obj = outer1_1(outer1_2[7]);
-        obj.hideActionSheet();
-        let result = outer1_0(outer1_2[8]).roleTemplateAppliedToast();
-        const obj2 = outer1_0(outer1_2[8]);
-      }
-    },
-    location: constants.GUILD_ROLE_TEMPLATE_POPOUT,
-    guildId: guildId.guildId
-  });
-  obj[2] = <View style={tmp.templateContainer}>{null}</View>;
-  return jsx(require(7175) /* ActionSheet */.ActionSheet, { style: tmp.templateContainer, children: null });
+  let intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.KgCkoQ);
+  const tmp = callback();
+  obj = { header: jsx(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, { title: null }), startExpanded: true, children: null };
+  obj = { style: tmp.templateContainer, children: jsx(GuildSettingsRoleTemplateDefault, obj1) };
+  obj[2] = <View style={tmp.templateContainer}>{jsx(GuildSettingsRoleTemplateDefault, obj1)}</View>;
+  return jsx(ActionSheet.ActionSheet, { style: tmp.templateContainer, children: jsx(GuildSettingsRoleTemplateDefault, obj1) });
 };

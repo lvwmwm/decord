@@ -1,14 +1,18 @@
-// Module ID: 11686
-// Function ID: 11687
+// Module ID: 11735
+// Function ID: 11736
 // Name: openGuildPowerupsBottomSheet
-// Dependencies: [4342, 11687, 2007, 2]
+// Dependencies: [4346, 11736, 2008, 2]
 // Exports: default
 
-// Module 11686 (openGuildPowerupsBottomSheet)
+// Module 11735 (openGuildPowerupsBottomSheet)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+
 const GUILD_POWERUPS_BOTTOM_SHEET_KEY = "GUILD_POWERUPS_BOTTOM_SHEET_KEY";
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupsBottomSheet.tsx");
+const result = set.fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupsBottomSheet.tsx");
 
 export default function openGuildPowerupsBottomSheet(arg0) {
-  importDefault(4342).openLazy(require(2007) /* asyncRequireImpl */(11687, dependencyMap.paths), GUILD_POWERUPS_BOTTOM_SHEET_KEY, arg0);
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(11736, dependencyMap.paths), GUILD_POWERUPS_BOTTOM_SHEET_KEY, arg0);
 };
 export const GUILD_POWERUPS_BOTTOM_SHEET_KEY = "GUILD_POWERUPS_BOTTOM_SHEET_KEY";

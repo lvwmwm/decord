@@ -1,28 +1,31 @@
-// Module ID: 16401
-// Function ID: 16402
+// Module ID: 16498
+// Function ID: 16499
 // Name: VoicePanelLockedIcon
-// Dependencies: [19, 21, 4661, 712, 7190, 1297, 16402, 2]
+// Dependencies: [19, 21, 4668, 712, 7228, 1297, 16499, 2]
 // Exports: default
 
-// Module 16401 (VoicePanelLockedIcon)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 16498 (VoicePanelLockedIcon)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import setDefault from "set" /* 7228 */;
+import registerAssetDefault from "registerAsset" /* 16499 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { container: null, icon: null };
-createCacheKey = { alignItems: "center", justifyContent: "center", alignSelf: "center", width: 64, height: 64, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.round };
+createCacheKey = { alignItems: "center", justifyContent: "center", alignSelf: "center", width: 64, height: 64, backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: ThemesDefault.radii.round };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = {};
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createCacheKey").fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelLockedIcon.tsx");
+let closure_4 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelLockedIcon.tsx");
 
 export default function VoicePanelLockedIcon() {
-  const tmp = createCacheKey();
+  const tmp = callback();
   let obj = { style: tmp.container, children: null };
-  obj = { style: tmp.icon, source: null, size: null };
-  obj[1] = importDefault(16402);
-  obj[2] = require(1297) /* Button */.IconSizes.LARGE;
-  obj[1] = jsx(require(1297) /* Button */.Icon, { style: tmp.icon, source: null, size: null });
-  return jsx(importDefault(7190), { style: tmp.icon, source: null, size: null });
+  obj = { style: tmp.icon, source: registerAssetDefault, size: Button.IconSizes.LARGE };
+  obj[1] = jsx(Button.Icon, { style: tmp.icon, source: registerAssetDefault, size: Button.IconSizes.LARGE });
+  return jsx(setDefault, { style: tmp.icon, source: registerAssetDefault, size: Button.IconSizes.LARGE });
 };

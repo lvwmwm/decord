@@ -4,7 +4,7 @@
 // Dependencies: [887, 930]
 
 // Module 929 (featureFlagsIntegration)
-import setupIntegration from "setupIntegration";
+import setupIntegration from "setupIntegration" /* 887 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 

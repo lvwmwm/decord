@@ -1,44 +1,40 @@
-// Module ID: 9966
-// Function ID: 9967
+// Module ID: 10005
+// Function ID: 10006
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 4661, 712, 4734, 9462, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4739, 9499, 2]
 // Exports: default
 
-// Module 9966 (DiscordTag)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10005 (DiscordTag)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import getBotLabelDefault from "getBotLabel" /* 9499 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: { flexGrow: 1, alignItems: "center", flexDirection: "row" }, botTag: null };
-createCacheKey = { marginLeft: require("Themes").space.PX_4 };
+createCacheKey = { marginLeft: ThemesDefault.space.PX_4 };
 createCacheKey[1] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/DiscordTag.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_profile/native/DiscordTag.tsx");
 
 export default function DiscordTag(arg0) {
-  let discriminatorStyle;
-  let hideBotTag;
-  let nick;
-  let nicknameStyle;
-  let user;
-  let usernameStyle;
   ({ user, nick, hideBotTag } = arg0);
   ({ usernameStyle, nicknameStyle, discriminatorStyle } = arg0);
   if (hideBotTag === undefined) {
     hideBotTag = false;
   }
-  const tmp = createCacheKey();
+  const tmp = callback2();
   let obj = { style: tmp.container, children: null };
   if (null != nick) {
     obj = { variant: "text-md/semibold", maxFontSizeMultiplier: 2, style: null, lineClamp: 1, children: null };
     obj[2] = nicknameStyle;
     obj[4] = nick;
-    let tmp2Result = callback(require(4734) /* Text */.Text, obj);
+    let tmp2Result = callback(Text.Text, obj);
   } else {
     tmp2Result = null;
     if (null != user) {
@@ -48,15 +44,15 @@ export default function DiscordTag(arg0) {
       const hasUniqueUsernameResult = user.hasUniqueUsername();
       tmp2Result = !hasUniqueUsernameResult;
       if (!hasUniqueUsernameResult) {
-        const obj1 = { variant: "text-md/semibold", color: "text-muted", style: null, children: null };
+        obj1 = { variant: "text-md/semibold", color: "text-muted", style: null, children: null };
         obj1[2] = discriminatorStyle;
         const items1 = ["#", user.discriminator];
         obj1[3] = items1;
-        tmp2Result = tmp2(tmp4(4734).Text, obj1);
+        tmp2Result = tmp2(tmp4(4739).Text, obj1);
       }
       items[1] = tmp2Result;
       obj[4] = items;
-      tmp2Result = tmp2(require(4734) /* Text */.Text, obj);
+      tmp2Result = tmp2(Text.Text, obj);
       tmp4 = require;
     }
   }
@@ -72,8 +68,8 @@ export default function DiscordTag(arg0) {
       const obj2 = { style: null, verified: null };
       obj2[0] = tmp.botTag;
       obj2[1] = user.isVerifiedBot();
-      tmp13 = callback(importDefault(9462), obj2);
-      const tmp17 = importDefault(9462);
+      tmp13 = callback(getBotLabelDefault, obj2);
+      const tmp17 = getBotLabelDefault;
     }
   }
   items2[1] = tmp13;

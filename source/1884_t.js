@@ -4,7 +4,9 @@
 // Dependencies: [1654]
 
 // Module 1884 (t)
-const require = arg1;
+import cancelAnimation from "cancelAnimation" /* 1654 */;
+
+require = arg1;
 const dependencyMap = arg6;
 const fn = function t(arg0, arg1, arg2) {
   let interpolateResult = arg0;
@@ -14,8 +16,8 @@ const fn = function t(arg0, arg1, arg2) {
       const items = [0, arg1];
       const _Math = Math;
       const items1 = [0, Math.max(arg1 - arg2, 0)];
-      interpolateResult = require(1654) /* cancelAnimation */.interpolate(arg0, items, items1);
-      const obj = require(1654) /* cancelAnimation */;
+      interpolateResult = cancelAnimation.interpolate(arg0, items, items1);
+      const obj = cancelAnimation;
     }
   }
   return interpolateResult;

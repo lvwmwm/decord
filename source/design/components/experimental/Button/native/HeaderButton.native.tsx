@@ -1,17 +1,18 @@
-// Module ID: 8814
-// Function ID: 8815
+// Module ID: 8851
+// Function ID: 8852
 // Name: HeaderButton
-// Dependencies: [19, 21, 4749, 4734, 4661, 4746, 2]
+// Dependencies: [19, 21, 4754, 4739, 4668, 4751, 2]
 
-// Module 8814 (HeaderButton)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8851 (HeaderButton)
+import noopAll from "noop" /* 19 */;
+import CollapsingText from "CollapsingText" /* 4751 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 class HeaderButton {
   constructor(arg0) {
-    tmp = lineHeight();
+    tmp = closure_4();
     obj = { accessibilityRole: "header" };
     merged = Object.assign(global);
     obj.pillStyle = tmp.pill;
@@ -21,12 +22,13 @@ class HeaderButton {
     return jsx(require("CollapsingText").BaseTextButton, obj);
   }
 }
+noopAll;
 let c3 = "heading-md/bold";
 const diff = require("MINIMUM_HIT_AREA").SMALL_BUTTON_HEIGHT - 2 * require("MINIMUM_HIT_AREA").BUTTON_BORDER_WIDTH;
 const diff1 = diff - require("Text").TextStyleSheet["heading-md/bold"].lineHeight;
 createCacheKey = { paddingVertical: diff1 / 2 };
 let closure_4 = createCacheKey.createStyles({ pill: createCacheKey });
 HeaderButton.Icon = require("CollapsingText").BaseTextButton.Icon;
-const result = require("MINIMUM_HIT_AREA").fileFinishedImporting("design/components/experimental/Button/native/HeaderButton.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/experimental/Button/native/HeaderButton.native.tsx");
 
 export { HeaderButton };

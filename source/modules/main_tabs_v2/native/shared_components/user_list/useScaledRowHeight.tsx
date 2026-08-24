@@ -1,26 +1,31 @@
-// Module ID: 8633
-// Function ID: 8634
+// Module ID: 8670
+// Function ID: 8671
 // Name: useScaledRowHeight
-// Dependencies: [4751, 4097, 712, 2]
+// Dependencies: [4756, 4100, 712, 2]
 // Exports: default, useScaledRowHeightData
 
-// Module 8633 (useScaledRowHeight)
-let result = require("Themes").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledRowHeight.tsx");
+// Module 8670 (useScaledRowHeight)
+import set from "set" /* 2 */;
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import getFontScale from "getFontScale" /* 4756 */;
+
+let result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledRowHeight.tsx");
 
 export default function useScaledRowHeight() {
-  const fontScale = require(4751) /* getFontScale */.useFontScale();
-  const obj = require(4751) /* getFontScale */;
-  const token = require(4097) /* map */.useToken(importDefault(712).modules.mobile.TABLE_ROW_HEIGHT);
-  const obj2 = require(4097) /* map */;
-  const token1 = require(4097) /* map */.useToken(importDefault(712).modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
+  const fontScale = getFontScale.useFontScale();
+  const obj = getFontScale;
+  const token = map.useToken(ThemesDefault.modules.mobile.TABLE_ROW_HEIGHT);
+  const obj2 = map;
+  const token1 = map.useToken(ThemesDefault.modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
   return token + Math.max(fontScale * token1 - token1, 0);
 };
 export const useScaledRowHeightData = function useScaledRowHeightData() {
-  let obj = require(4751) /* getFontScale */;
+  let obj = getFontScale;
   const fontScale = obj.useFontScale();
-  const token = require(4097) /* map */.useToken(importDefault(712).modules.mobile.TABLE_ROW_HEIGHT);
-  const obj2 = require(4097) /* map */;
-  const token1 = require(4097) /* map */.useToken(importDefault(712).modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
+  const token = map.useToken(ThemesDefault.modules.mobile.TABLE_ROW_HEIGHT);
+  const obj2 = map;
+  const token1 = map.useToken(ThemesDefault.modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
   const result = fontScale * token1;
   obj = { rowHeight: token + Math.max(result - token1, 0), rowContentHeight: result };
   return obj;

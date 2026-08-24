@@ -5,10 +5,11 @@
 // Exports: useStateForPath
 
 // Module 1596 (useStateForPath)
-import noop from "noop";
+import NavigationFocusedRouteStateContext from "NavigationFocusedRouteStateContext" /* 1568 */;
+import closure_2 from "noop" /* 19 */;
 
-const require = arg1;
+require = arg1;
 
 export const useStateForPath = function useStateForPath() {
-  return React.useContext(require(1568) /* NavigationFocusedRouteStateContext */.NavigationFocusedRouteStateContext);
+  return React.useContext(NavigationFocusedRouteStateContext.NavigationFocusedRouteStateContext);
 };

@@ -1,20 +1,20 @@
-// Module ID: 8579
-// Function ID: 8580
+// Module ID: 8618
+// Function ID: 8619
 // Name: Label
-// Dependencies: [19, 21, 4099, 1363, 4734, 2]
+// Dependencies: [19, 21, 4102, 1363, 4739, 2]
 // Exports: default
 
-// Module 8579 (Label)
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 8618 (Label)
+import closure_2 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("getNodeText").fileFinishedImporting("design/void/Form/native/FreeFormErrorLabel.tsx");
+const result = require("set").fileFinishedImporting("design/void/Form/native/FreeFormErrorLabel.tsx");
 
 export default function Label(style) {
   const children = style.children;
   let nodeText;
-  nodeText = nodeText(4099).getNodeText(children);
+  nodeText = nodeText(4102).getNodeText(children);
   const items = [nodeText];
   const effect = React.useEffect(() => {
     let tmp2 = null != nodeText;
@@ -22,9 +22,9 @@ export default function Label(style) {
       tmp2 = "" !== tmp;
     }
     if (tmp2) {
-      const AccessibilityAnnouncer = nodeText(outer1_1[3]).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = nodeText(closure_1_1[3]).AccessibilityAnnouncer;
       AccessibilityAnnouncer.announce(tmp);
     }
   }, items);
-  return jsx(nodeText(4734).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+  return jsx(nodeText(4739).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
 };

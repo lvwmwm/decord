@@ -1,11 +1,11 @@
-// Module ID: 14365
-// Function ID: 14366
+// Module ID: 14433
+// Function ID: 14434
 // Name: getRevealProgress
 // Dependencies: [19, 2]
 // Exports: useBountiesRecapScroll
 
-// Module 14365 (getRevealProgress)
-import noop from "noop";
+// Module 14433 (getRevealProgress)
+import closure_0 from "noop" /* 19 */;
 
 function getRevealProgress(scrollY, lastBountyScrollOffset, height3) {
   let num = 0;
@@ -44,8 +44,6 @@ export const useBountiesRecapScroll = function useBountiesRecapScroll(listRef) {
     callback(offsets.lastBounty);
   }, items1);
   callback2 = listRef.useCallback((arg0) => {
-    let lastBounty;
-    let revealHeight;
     if (enabled) {
       if (arg0 > offsets.lastBounty) {
         ({ revealHeight, lastBounty } = tmp2);

@@ -1,35 +1,33 @@
-// Module ID: 12138
-// Function ID: 12139
+// Module ID: 12190
+// Function ID: 12191
 // Name: useFetchStreamPreview
-// Dependencies: [19, 9861, 1391, 4021, 1979, 505, 589, 9860, 2]
+// Dependencies: [19, 9900, 1391, 4024, 1980, 505, 589, 9899, 2]
 // Exports: default
 
-// Module 12138 (useFetchStreamPreview)
-import noop from "noop";
-import reset from "reset";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import handleConnectionOpen from "handleConnectionOpen";
-import { BasicPermissions } from "sum";
+// Module 12190 (useFetchStreamPreview)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "reset" /* 9900 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_6 from "handleConnectionOpen" /* 1980 */;
+import { BasicPermissions } from "sum" /* 505 */;
 
 const require = arg1;
-const result = require("ensureGuildLoaded").fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
+const result = require("set").fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
 
 export default function useFetchStreamPreview(arg0, arg1, arg2) {
-  let isLoading;
-  let previewUrl;
   const _require = arg0;
-  const dependencyMap = arg1;
+  dependencyMap = arg1;
   const React = arg2;
-  let reset = tmp;
+  closure_3 = tmp;
   let obj = _require(589);
-  const items = [ensureGuildLoaded];
-  ensureGuildLoaded = obj.useStateFromStores(items, () => channel.getChannel(closure_1));
+  const items = [closure_4];
+  closure_4 = obj.useStateFromStores(items, () => channel.getChannel(closure_1));
   const items1 = [shouldFetchPreview];
   let stateFromStores = _require(589).useStateFromStores(items1, () => {
-    let canBasicChannelResult = null != ensureGuildLoaded;
+    let canBasicChannelResult = null != closure_4;
     if (canBasicChannelResult) {
-      canBasicChannelResult = shouldFetchPreview.canBasicChannel(outer1_7.CONNECT, tmp);
+      canBasicChannelResult = shouldFetchPreview.canBasicChannel(closure_1_7.CONNECT, tmp);
     }
     return canBasicChannelResult;
   });
@@ -37,21 +35,21 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
   const items2 = [stateFromStores];
   const stateFromStores1 = _require(589).useStateFromStores(items2, () => stateFromStores.getVoiceChannelId() === closure_1);
   const obj3 = _require(589);
-  const items3 = [reset];
+  const items3 = [closure_3];
   const stateFromStoresObject = _require(589).useStateFromStoresObject(items3, () => {
-    let isPreviewLoading = !tmp;
+    let isPreviewLoading = !store;
     let shouldFetchPreviewResult = isPreviewLoading;
-    if (!tmp) {
-      shouldFetchPreviewResult = tmp.shouldFetchPreview(closure_0, closure_1, noop);
+    if (!store) {
+      shouldFetchPreviewResult = store.shouldFetchPreview(closure_0, closure_1, closure_2);
     }
     const obj = { shouldFetchPreview: shouldFetchPreviewResult, previewUrl: null, isLoading: null };
     let previewURL = null;
-    if (!tmp) {
-      previewURL = tmp.getPreviewURL(closure_0, closure_1, noop);
+    if (!store) {
+      previewURL = store.getPreviewURL(closure_0, closure_1, closure_2);
     }
     obj[1] = previewURL;
-    if (!tmp) {
-      isPreviewLoading = tmp.getIsPreviewLoading(closure_0, closure_1, noop);
+    if (!store) {
+      isPreviewLoading = store.getIsPreviewLoading(closure_0, closure_1, closure_2);
     }
     obj[2] = isPreviewLoading;
     return obj;
@@ -65,13 +63,13 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
   const effect = React.useEffect(() => {
     let tmp = shouldFetchPreview;
     if (shouldFetchPreview) {
-      tmp = !reset;
+      tmp = !closure_3;
     }
     if (tmp) {
       tmp = stateFromStores;
     }
     if (tmp) {
-      const streamPreview = callback(table[7]).fetchStreamPreview(callback, table, noop);
+      const streamPreview = callback(table[7]).fetchStreamPreview(callback, table, closure_2);
       const obj = callback(table[7]);
     }
   }, items4);

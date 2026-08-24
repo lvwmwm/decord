@@ -1,19 +1,16 @@
-// Module ID: 9366
-// Function ID: 9367
+// Module ID: 9403
+// Function ID: 9404
 // Name: getUserMaxFileSize
 // Dependencies: [1923, 676, 1924, 1945, 2]
 // Exports: getUserMaxFileSize
 
-// Module 9366 (getUserMaxFileSize)
-import setPremiumTypeActual from "setPremiumTypeActual";
-import ME from "ME";
-import GuildFeatures from "GuildFeatures";
+// Module 9403 (getUserMaxFileSize)
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
+import closure_2 from "setPremiumTypeActual" /* 1923 */;
+import ME from "ME" /* 676 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function getUserMaxFileSize(currentUser) {
   if (null == currentUser) {
     return closure_3;
@@ -29,14 +26,14 @@ function getUserMaxFileSize(currentUser) {
       if (obj.isPremium(currentUser)) {
         fileSize = table[currentUser.premiumType].fileSize;
       }
-      obj = require(1945) /* isPremiumAtLeast */;
+      obj = isPremiumAtLeast;
     }
     fileSize = closure_3;
   }
 }
 ({ MAX_ATTACHMENT_SIZE: c3, MAX_STAFF_ATTACHMENT_SIZE: c4 } = ME);
 ({ PremiumUserLimits: c5, UNSELECTED_PREMIUM_TYPE_OVERRIDE: closure_6 } = GuildFeatures);
-const result = require("GuildFeatures").fileFinishedImporting("utils/PremiumFeatureUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/PremiumFeatureUtils.tsx");
 
 export default { getUserMaxFileSize };
 export { getUserMaxFileSize };

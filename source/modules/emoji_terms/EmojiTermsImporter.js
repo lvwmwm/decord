@@ -1,85 +1,88 @@
-// Module ID: 6736
-// Function ID: 6737
+// Module ID: 6773
+// Function ID: 6774
 // Name: emojiTermsImporter
-// Dependencies: [6737, 2007, 6738, 6739, 6740, 6741, 6742, 6743, 6744, 6745, 6746, 6747, 6748, 6749, 6750, 6751, 6752, 6753, 6754, 6755, 6756, 6757, 6758, 6759, 6760, 6761, 6762, 6763, 6764, 6765, 2]
+// Dependencies: [6774, 2008, 6775, 6776, 6777, 6778, 6779, 6780, 6781, 6782, 6783, 6784, 6785, 6786, 6787, 6788, 6789, 6790, 6791, 6792, 6793, 6794, 6795, 6796, 6797, 6798, 6799, 6800, 6801, 6802, 2]
 
-// Module 6736 (emojiTermsImporter)
-const result = require("module_6738").fileFinishedImporting("modules/emoji_terms/EmojiTermsImporter.js");
+// Module 6773 (emojiTermsImporter)
+import set from "set" /* 2 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+
+const result = set.fileFinishedImporting("modules/emoji_terms/EmojiTermsImporter.js");
 
 export const emojiTermsImporter = {
   bg() {
-    return require(2007) /* asyncRequireImpl */(6737, dependencyMap.paths);
+    return asyncRequireImpl(6774, dependencyMap.paths);
   },
   cs() {
-    return require(2007) /* asyncRequireImpl */(6738, dependencyMap.paths);
+    return asyncRequireImpl(6775, dependencyMap.paths);
   },
   da() {
-    return require(2007) /* asyncRequireImpl */(6739, dependencyMap.paths);
+    return asyncRequireImpl(6776, dependencyMap.paths);
   },
   de() {
-    return require(2007) /* asyncRequireImpl */(6740, dependencyMap.paths);
+    return asyncRequireImpl(6777, dependencyMap.paths);
   },
   el() {
-    return require(2007) /* asyncRequireImpl */(6741, dependencyMap.paths);
+    return asyncRequireImpl(6778, dependencyMap.paths);
   },
-  () => require(2007) /* asyncRequireImpl */(6742, dependencyMap.paths),
-  () => require(2007) /* asyncRequireImpl */(6743, dependencyMap.paths),
-  () => require(2007) /* asyncRequireImpl */(6744, dependencyMap.paths),
+  () => asyncRequireImpl(6779, dependencyMap.paths),
+  () => asyncRequireImpl(6780, dependencyMap.paths),
+  () => asyncRequireImpl(6781, dependencyMap.paths),
   fi() {
-    return require(2007) /* asyncRequireImpl */(6745, dependencyMap.paths);
+    return asyncRequireImpl(6782, dependencyMap.paths);
   },
   fr() {
-    return require(2007) /* asyncRequireImpl */(6746, dependencyMap.paths);
+    return asyncRequireImpl(6783, dependencyMap.paths);
   },
   hr() {
-    return require(2007) /* asyncRequireImpl */(6747, dependencyMap.paths);
+    return asyncRequireImpl(6784, dependencyMap.paths);
   },
   hu() {
-    return require(2007) /* asyncRequireImpl */(6748, dependencyMap.paths);
+    return asyncRequireImpl(6785, dependencyMap.paths);
   },
   it() {
-    return require(2007) /* asyncRequireImpl */(6749, dependencyMap.paths);
+    return asyncRequireImpl(6786, dependencyMap.paths);
   },
   ja() {
-    return require(2007) /* asyncRequireImpl */(6750, dependencyMap.paths);
+    return asyncRequireImpl(6787, dependencyMap.paths);
   },
   ko() {
-    return require(2007) /* asyncRequireImpl */(6751, dependencyMap.paths);
+    return asyncRequireImpl(6788, dependencyMap.paths);
   },
   lt() {
-    return require(2007) /* asyncRequireImpl */(6752, dependencyMap.paths);
+    return asyncRequireImpl(6789, dependencyMap.paths);
   },
   nl() {
-    return require(2007) /* asyncRequireImpl */(6753, dependencyMap.paths);
+    return asyncRequireImpl(6790, dependencyMap.paths);
   },
   no() {
-    return require(2007) /* asyncRequireImpl */(6754, dependencyMap.paths);
+    return asyncRequireImpl(6791, dependencyMap.paths);
   },
   pl() {
-    return require(2007) /* asyncRequireImpl */(6755, dependencyMap.paths);
+    return asyncRequireImpl(6792, dependencyMap.paths);
   },
-  () => require(2007) /* asyncRequireImpl */(6756, dependencyMap.paths),
+  () => asyncRequireImpl(6793, dependencyMap.paths),
   ro() {
-    return require(2007) /* asyncRequireImpl */(6757, dependencyMap.paths);
+    return asyncRequireImpl(6794, dependencyMap.paths);
   },
   ru() {
-    return require(2007) /* asyncRequireImpl */(6758, dependencyMap.paths);
+    return asyncRequireImpl(6795, dependencyMap.paths);
   },
-  () => require(2007) /* asyncRequireImpl */(6759, dependencyMap.paths),
+  () => asyncRequireImpl(6796, dependencyMap.paths),
   th() {
-    return require(2007) /* asyncRequireImpl */(6760, dependencyMap.paths);
+    return asyncRequireImpl(6797, dependencyMap.paths);
   },
   tr() {
-    return require(2007) /* asyncRequireImpl */(6761, dependencyMap.paths);
+    return asyncRequireImpl(6798, dependencyMap.paths);
   },
   uk() {
-    return require(2007) /* asyncRequireImpl */(6762, dependencyMap.paths);
+    return asyncRequireImpl(6799, dependencyMap.paths);
   },
   vi() {
-    return require(2007) /* asyncRequireImpl */(6763, dependencyMap.paths);
+    return asyncRequireImpl(6800, dependencyMap.paths);
   },
-  () => require(2007) /* asyncRequireImpl */(6764, dependencyMap.paths),
+  () => asyncRequireImpl(6801, dependencyMap.paths),
   hi() {
-    return require(2007) /* asyncRequireImpl */(6765, dependencyMap.paths);
+    return asyncRequireImpl(6802, dependencyMap.paths);
   }
 };

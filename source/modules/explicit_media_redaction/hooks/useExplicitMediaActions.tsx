@@ -1,20 +1,18 @@
-// Module ID: 10870
-// Function ID: 10871
+// Module ID: 10909
+// Function ID: 10910
 // Name: useExplicitMediaActions
-// Dependencies: [5, 32, 19, 4273, 2]
+// Dependencies: [5, 32, 19, 4277, 2]
 // Exports: useExplicitMediaActions
 
-// Module 10870 (useExplicitMediaActions)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
+// Module 10909 (useExplicitMediaActions)
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
 
 const require = arg1;
-const result = require("noop").fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaActions.tsx");
+const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaActions.tsx");
 
 export const useExplicitMediaActions = function useExplicitMediaActions(onError) {
-  let c3;
-  let tmp2;
   onError = onError.onError;
   const onSuccess = onError.onSuccess;
   const report = onError.report;
@@ -37,7 +35,7 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -62,16 +60,16 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
                 v0 = 2;
                 c4 = 3;
                 c5 = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = outer1_2();
+                obj1 = { value: null, done: false };
+                obj1[0] = closure_1_2();
                 return obj1;
               }
             }
           } else if (1 !== tmp8) {
             if (2 === tmp8) {
               v0 = 1;
-              callback = asyncGeneratorStep;
-              aPIError = new outer1_0(outer1_1[3]).APIError(callback);
+              callback = closure_2;
+              aPIError = new closure_1_0(closure_1_1[3]).APIError(callback);
               if (aPIError != null) {
                 tmp25(aPIError);
               }
@@ -96,9 +94,9 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
           }
           v0 = 0;
           v0(false);
-          throw asyncGeneratorStep;
+          throw closure_2;
         } catch (tmp41) {
-          asyncGeneratorStep = tmp41;
+          closure_2 = tmp41;
           if (tmp5 === v0) {
             c5 = tmp3;
             throw tmp41;

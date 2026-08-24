@@ -1,16 +1,21 @@
-// Module ID: 11951
-// Function ID: 11952
+// Module ID: 12000
+// Function ID: 12001
 // Name: useIsViewingPremiumMemberships
-// Dependencies: [676, 1398, 4208, 4215, 2]
+// Dependencies: [676, 1398, 4212, 4219, 2]
 // Exports: default
 
-// Module 11951 (useIsViewingPremiumMemberships)
-import { Routes } from "ME";
-import { StaticChannelRoute } from "set";
+// Module 12000 (useIsViewingPremiumMemberships)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import set2 from "set" /* 1398 */;
+import _extends from "_extends" /* 4212 */;
+import RouteParam2 from "RouteParam" /* 4219 */;
 
-const result = require("_extends").fileFinishedImporting("modules/guild_role_subscriptions/useIsViewingPremiumMemberships.tsx");
+const Routes = ME.Routes;
+const StaticChannelRoute = set2.StaticChannelRoute;
+const result = set.fileFinishedImporting("modules/guild_role_subscriptions/useIsViewingPremiumMemberships.tsx");
 
 export default function useIsViewingPremiumMemberships() {
-  const RouteParam = require(4215) /* RouteParam */.RouteParam;
-  return null != require(4208) /* _extends */.useRouteMatch(Routes.CHANNEL(RouteParam.guildId(), StaticChannelRoute.ROLE_SUBSCRIPTIONS));
+  const RouteParam = RouteParam2.RouteParam;
+  return null != _extends.useRouteMatch(Routes.CHANNEL(RouteParam.guildId(), StaticChannelRoute.ROLE_SUBSCRIPTIONS));
 };

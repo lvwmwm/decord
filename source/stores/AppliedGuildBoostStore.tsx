@@ -1,13 +1,14 @@
-// Module ID: 11731
-// Function ID: 11732
+// Module ID: 11780
+// Function ID: 11781
 // Name: handleModifyingAppliedBoostStart
 // Dependencies: [589, 709, 2]
 
-// Module 11731 (handleModifyingAppliedBoostStart)
-import { Store } from "initialize";
+// Module 11780 (handleModifyingAppliedBoostStart)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 function handleModifyingAppliedBoostStart() {
-  let c4 = true;
+  c4 = true;
 }
 let closure_0 = {};
 let c1 = null;
@@ -16,6 +17,7 @@ let c3 = false;
 let c4 = false;
 let c5 = null;
 let c6 = null;
+const Store = initializeDefault.Store;
 class AppliedGuildBoostStore extends Store {
 }
 const prototype = AppliedGuildBoostStore.prototype;
@@ -37,7 +39,7 @@ prototype["getCurrentUserAppliedBoosts"] = function getCurrentUserAppliedBoosts(
   return closure_2;
 };
 prototype["getAppliedGuildBoost"] = function getAppliedGuildBoost(arg0) {
-  let closure_0 = arg0;
+  closure_0 = arg0;
   return closure_2.find((id) => id.id === closure_0);
 };
 Object.defineProperty(prototype, "isModifyingAppliedBoost", {
@@ -71,12 +73,12 @@ Object.defineProperty(prototype, "isFetchingCurrentUserAppliedBoosts", {
   set: undefined
 });
 AppliedGuildBoostStore.displayName = "AppliedGuildBoostStore";
-const appliedGuildBoostStore = new AppliedGuildBoostStore(require("dispatcher"), {
+const appliedGuildBoostStore = new AppliedGuildBoostStore(dispatcherDefault, {
   GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: function handleAppliedBoostsForGuildFetchSuccess(appliedBoosts) {
     closure_0[appliedBoosts.guildId] = { subscriptions: appliedBoosts.appliedBoosts, lastFetchedAt: Date.now() };
   },
   USER_APPLIED_BOOSTS_FETCH_SUCCESS: function handleAppliedBoostsForuserFetchSuccess(appliedGuildBoosts) {
-    let c3 = false;
+    c3 = false;
     appliedGuildBoosts = appliedGuildBoosts.appliedGuildBoosts;
   },
   APPLIED_BOOSTS_COOLDOWN_FETCH_SUCCESS: function handleAppliedBoostCooldownFetch(endsAt) {
@@ -89,24 +91,24 @@ const appliedGuildBoostStore = new AppliedGuildBoostStore(require("dispatcher"),
     let set;
     set = new Set(appliedGuildBoost.map((id) => id.id));
     items = [...appliedGuildBoost, ...items.filter((id) => !set.has(id.id))];
-    let c5 = null;
-    let c4 = false;
+    c5 = null;
+    c4 = false;
   },
   GUILD_APPLY_BOOST_FAIL: function handleApplyBoostFail(error) {
-    let c4 = false;
+    c4 = false;
     error = error.error;
   },
   GUILD_UNAPPLY_BOOST_SUCCESS: function handleUnapplyBoostSuccess(boostId) {
     boostId = boostId.boostId;
     closure_2 = closure_2.filter((id) => id.id !== boostId);
-    let c4 = false;
+    c4 = false;
   },
   GUILD_UNAPPLY_BOOST_FAIL: function handleUnapplyBoostFail(error) {
-    let c4 = false;
+    c4 = false;
     error = error.error;
   },
   USER_APPLIED_BOOSTS_FETCH_START: function handleUserAppliedBoostsFetchStart() {
-    let c3 = true;
+    c3 = true;
   }
 });
 const result = require("set").fileFinishedImporting("stores/AppliedGuildBoostStore.tsx");

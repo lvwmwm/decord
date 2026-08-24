@@ -1,39 +1,40 @@
-// Module ID: 12399
-// Function ID: 12400
+// Module ID: 12451
+// Function ID: 12452
 // Name: keyExtractor
-// Dependencies: [19, 676, 21, 4661, 6782, 712, 1297, 1236, 5433, 4342, 4230, 4734, 11888, 5441, 6952, 2]
+// Dependencies: [19, 676, 21, 4668, 6819, 712, 1297, 1236, 5438, 4346, 4234, 4739, 11937, 5446, 6990, 2]
 // Exports: default
 
-// Module 12399 (keyExtractor)
-import noop from "noop";
-import { Fonts } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
-import importDefaultResult1 from "createTextStyle";
+// Module 12451 (keyExtractor)
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import closure_3 from "noop" /* 19 */;
+import { Fonts } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-let c4;
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function keyExtractor(item) {
   return item.item.id;
 }
 function FriendsEmptyComponent() {
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = { children: null };
   obj = { title: null, body: null, titleStyle: null, bodyStyle: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.dz4UlO);
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.MBQBI7);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.dz4UlO);
+  const intl2 = getSystemLocale.intl;
+  obj[1] = intl2.string(getSystemLocale.t.MBQBI7);
   ({ emptyTitle: obj2[2], emptyBody: obj2[3] } = tmp);
-  const items = [callback(require(1297) /* Button */.RefreshEmptyState, obj), ];
+  const items = [callback(Button.RefreshEmptyState, obj), ];
   obj = {
     onPress() {
-      let obj = callback2(4342);
+      let obj = callback2(4346);
       obj.hideActionSheet();
-      const rootNavigationRef = callback(4230).getRootNavigationRef();
+      const rootNavigationRef = callback(4234).getRootNavigationRef();
       if (null != rootNavigationRef) {
         obj = { screen: "add-friends", params: null };
         obj[1] = { sourcePage: "Instant Invite Empty State" };
@@ -45,33 +46,34 @@ function FriendsEmptyComponent() {
     hitSlop: null,
     children: null
   };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.a7FVbE);
+  const intl3 = getSystemLocale.intl;
+  obj[2] = intl3.string(getSystemLocale.t.a7FVbE);
   obj[3] = { top: 8, left: 8, bottom: 8, right: 8 };
-  const obj1 = { style: items1, variant: "text-sm/semibold", color: "text-link", children: null };
+  obj1 = { style: items1, variant: "text-sm/semibold", color: "text-link", children: null };
   items1 = [tmp.goToFriendsLink];
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj1[3] = intl4.string(require(1236) /* getSystemLocale */.t.a7FVbE);
-  obj[4] = callback(require(4734) /* Text */.Text, obj1);
-  items[1] = callback(require(5433) /* PressableBase */.PressableOpacity, obj);
+  const intl4 = getSystemLocale.intl;
+  obj1[3] = intl4.string(getSystemLocale.t.a7FVbE);
+  obj[4] = callback(Text.Text, obj1);
+  items[1] = callback(PressableBase.PressableOpacity, obj);
   obj[0] = items;
   return callback2(closure_5, obj);
 }
 ({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { emptyTitle: null, emptyBody: null, goToFriendsLink: null };
 createCacheKey = {};
-const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_EXTRABOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
+const merged = Object.assign(importDefaultResult(Fonts.DISPLAY_EXTRABOLD, ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
 createCacheKey.textTransform = "none";
 createCacheKey.lineHeight = 24;
 createCacheKey[0] = createCacheKey;
 let obj1 = {};
-const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_SUBTLE, 16));
+const merged1 = Object.assign(importDefaultResult(Fonts.PRIMARY_MEDIUM, ThemesDefault.colors.TEXT_SUBTLE, 16));
 obj1.lineHeight = 20;
 obj1.fontWeight = "600";
 createCacheKey[1] = obj1;
 createCacheKey[2] = { textAlign: "center" };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteFriendsList.tsx");
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+const importDefaultResult1 = importDefaultResult;
+const result = require("set").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteFriendsList.tsx");
 
 export default function InstantInviteFriendsList(code) {
   code = code.code;
@@ -85,9 +87,7 @@ export default function InstantInviteFriendsList(code) {
     return source(onPressAvatar(onInviteSent[12]), { start: 0 === index, end: index === data.length - 1, row: index.item, onPressAvatar, onInviteSent, code, source });
   }, items);
   let obj = { contentContainerStyle: null, bounces: false, renderItem: null, data: null, keyExtractor: null, keyboardShouldPersistTaps: "always", ListEmptyComponent: null };
-  obj = { paddingBottom: null, paddingHorizontal: null };
-  obj[0] = onPressAvatar(onInviteSent[5]).space.PX_16 + onPressAvatar(onInviteSent[13])({ isKeyboardAwareOnAndroid: false }).insets.bottom;
-  obj[1] = onPressAvatar(onInviteSent[5]).space.PX_12;
+  obj = { paddingBottom: onPressAvatar(onInviteSent[5]).space.PX_16 + onPressAvatar(onInviteSent[13])({ isKeyboardAwareOnAndroid: false }).insets.bottom, paddingHorizontal: onPressAvatar(onInviteSent[5]).space.PX_12 };
   obj[0] = obj;
   obj[2] = callback;
   obj[3] = data;

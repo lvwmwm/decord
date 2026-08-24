@@ -1,22 +1,20 @@
-// Module ID: 11588
-// Function ID: 11589
+// Module ID: 11637
+// Function ID: 11638
 // Name: calculatePositionDeltas
 // Dependencies: [3, 12, 2]
 // Exports: getPositionUpdates, moveItemFromTo
 
-// Module 11588 (calculatePositionDeltas)
+// Module 11637 (calculatePositionDeltas)
+import timestampDefault from "timestamp" /* 3 */;
+import applyDefault from "apply" /* 12 */;
+
 function calculatePositionDeltas(arg0) {
-  let ascending;
-  let existingPositionGetter;
-  let idGetter;
-  let newOrdering;
-  let oldOrdering;
   ({ oldOrdering, newOrdering, idGetter, existingPositionGetter, ascending } = arg0);
   if (ascending === undefined) {
     ascending = true;
   }
   if (oldOrdering.length !== newOrdering.length) {
-    tmp2.warn("Arrays are not of the same length!", oldOrdering, newOrdering);
+    logger.warn("Arrays are not of the same length!", oldOrdering, newOrdering);
     return [];
   } else {
     const mapped = oldOrdering.map(idGetter);
@@ -26,7 +24,7 @@ function calculatePositionDeltas(arg0) {
     const sorted1 = mapped1.sort();
     const joined1 = sorted1.join(":");
     if (joined !== joined1) {
-      tmp2.warn("Object IDs in the old ordering and the new ordering are not the same.", joined, joined1);
+      logger.warn("Object IDs in the old ordering and the new ordering are not the same.", joined, joined1);
       return [];
     } else {
       let obj = {};
@@ -64,12 +62,6 @@ function moveItemFromTo(c9, arg1, to) {
   return items;
 }
 function getPositionUpdates(arg0) {
-  let ascending;
-  let existingPositionGetter;
-  let fromPosition;
-  let idGetter;
-  let objectArray;
-  let toPosition;
   ({ objectArray, fromPosition, ascending } = arg0);
   ({ toPosition, idGetter, existingPositionGetter } = arg0);
   if (ascending === undefined) {
@@ -77,7 +69,7 @@ function getPositionUpdates(arg0) {
   }
   let values = objectArray;
   if (!Array.isArray(objectArray)) {
-    let obj = importDefault(12);
+    let obj = applyDefault;
     values = obj.values(objectArray);
   }
   obj = { oldOrdering: values, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: null };
@@ -90,7 +82,8 @@ function getPositionUpdates(arg0) {
   obj[4] = ascending;
   return calculatePositionDeltas(obj);
 }
-const tmp2 = new require("timestamp")("DragAndDropUtils");
+let closure_2 = new timestampDefault("DragAndDropUtils");
+const tmp2 = new timestampDefault("DragAndDropUtils");
 const result = require("set").fileFinishedImporting("utils/DragAndDropUtils.tsx");
 
 export default { moveItemFromTo, calculatePositionDeltas, getPositionUpdates };

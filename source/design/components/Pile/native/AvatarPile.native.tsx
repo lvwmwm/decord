@@ -1,33 +1,29 @@
-// Module ID: 12124
-// Function ID: 12125
+// Module ID: 12176
+// Function ID: 12177
 // Name: AvatarPile
-// Dependencies: [19, 21, 12125, 11788, 11790, 8402, 11789, 2]
+// Dependencies: [19, 21, 12177, 11837, 11839, 8441, 11838, 2]
 // Exports: AvatarPile
 
-// Module 12124 (AvatarPile)
-import noop from "noop";
-import jsxProd from "jsxProd";
+// Module 12176 (AvatarPile)
+import SolidCutout from "SolidCutout" /* 8441 */;
+import Pile from "Pile" /* 11837 */;
+import map from "map" /* 11838 */;
+import getListSummaryLabel from "getListSummaryLabel" /* 11839 */;
+import StaticNativeCutoutAvatarImage from "StaticNativeCutoutAvatarImage" /* 12177 */;
+import closure_2 from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-const result = require("StaticNativeCutoutAvatarImage").fileFinishedImporting("design/components/Pile/native/AvatarPile.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Pile/native/AvatarPile.native.tsx");
 
 export const AvatarPile = function AvatarPile(arg0) {
-  let children;
-  let names;
-  let size;
-  let totalCount;
   ({ totalCount, children } = arg0);
   const Children = React.Children;
   ({ size, names } = arg0);
   const countResult = Children.count(children);
-  const tmp4 = require(12125) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
-  let obj = { "aria-label": null, shape: null, size: null, gap: null, depthX: 0.4, children: null };
-  obj[0] = require(11790) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount);
-  obj[1] = require(8402) /* SolidCutout */.CutoutShape.Circle;
-  obj[2] = tmp4;
+  const tmp4 = StaticNativeCutoutAvatarImage.AVATAR_SIZE_MAP[size];
+  let obj = { "aria-label": getListSummaryLabel.getListSummaryLabel(names, totalCount), shape: SolidCutout.CutoutShape.Circle, size: tmp4, gap: null, depthX: 0.4, children: null };
   let num = 3;
   if (tmp4 <= 40) {
     num = 2;
@@ -40,9 +36,9 @@ export const AvatarPile = function AvatarPile(arg0) {
     obj[0] = tmp4;
     obj[1] = tmp4 / 2;
     obj[2] = totalCount - countResult;
-    tmp6 = callback(require(11789) /* map */.PileOverflow, obj);
+    tmp6 = callback(map.PileOverflow, obj);
   }
   items[1] = tmp6;
   obj[5] = items;
-  return closure_4(require(11788) /* Pile */.Pile, obj);
+  return closure_4(Pile.Pile, obj);
 };

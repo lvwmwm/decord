@@ -4,7 +4,7 @@
 // Dependencies: [19]
 
 // Module 1578 (useEffect)
-import importAllResult from "noop";
+import importAllResult from "noop" /* 19 */;
 
 if (typeof document !== "undefined") {
   let useEffect = importAllResult.useLayoutEffect;

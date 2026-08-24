@@ -1,22 +1,23 @@
-// Module ID: 14594
-// Function ID: 14595
+// Module ID: 14662
+// Function ID: 14663
 // Name: pressable
-// Dependencies: [4497, 8198, 4529, 589, 1236, 10669, 12550, 2]
+// Dependencies: [4501, 8238, 4534, 589, 1236, 10708, 12604, 2]
 
-// Module 14594 (pressable)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import { InputModes } from "DesktopSources";
-import createToggle from "createToggle";
+// Module 14662 (pressable)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4501 */;
+import { InputModes } from "DesktopSources" /* 4534 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["pS+K2L"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["pS+K2L"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.VOICE,
   useTrailing: function useInputModeSettingTrailing() {
-    const items = [_detectH265HardwareDecode];
+    const items = [closure_2];
     if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
       const intl2 = tmp(1236).intl;
       let stringResult = intl2.string(tmp(1236).t.Q8gkVL);
@@ -28,12 +29,12 @@ createToggle = {
   },
   onPress: require("handleInputModePress").handleInputModePress,
   useSearchTerms() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1236) /* getSystemLocale */.t.nuFtHH)];
+    const intl = getSystemLocale.intl;
+    const items = [intl.string(getSystemLocale.t.nuFtHH)];
     return items;
   }
 };
 createToggle = createToggle.createPressable(createToggle);
-const result = require("DesktopSources").fileFinishedImporting("modules/user_settings/defs/native/InputModeSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/InputModeSetting.tsx");
 
 export default createToggle;

@@ -1,12 +1,12 @@
-// Module ID: 4818
-// Function ID: 4819
+// Module ID: 4823
+// Function ID: 4824
 // Name: context
 // Dependencies: [19, 2]
 
-// Module 4818 (context)
-import importAllResult from "noop";
+// Module 4823 (context)
+import importAllResult from "noop" /* 19 */;
 
-const context = require("noop").createContext(undefined);
+const context = importAllResult.createContext(undefined);
 const result = require("set").fileFinishedImporting("modules/guild/GuildIDContext.tsx");
 
 export default context;

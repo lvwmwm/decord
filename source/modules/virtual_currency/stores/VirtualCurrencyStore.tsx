@@ -1,15 +1,17 @@
-// Module ID: 9254
-// Function ID: 9255
+// Module ID: 9291
+// Function ID: 9292
 // Name: redeemError
 // Dependencies: [589, 709, 2]
 
-// Module 9254 (redeemError)
-import { Store } from "initialize";
+// Module 9291 (redeemError)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let object = importDefault;
+const Store = initializeDefault.Store;
 class VirtualCurrencyStore extends Store {
   constructor() {
-    c0 = undefined;
+    closure_0 = undefined;
     obj = {
       VIRTUAL_CURRENCY_REDEEM_START(skuId) {
             return obj.handleRedeemVirtualCurrencyStart(skuId);
@@ -47,7 +49,7 @@ class VirtualCurrencyStore extends Store {
     };
     tmp2 = new tmp2(require("dispatcher"), obj, new.target, tmp2, tmp, new.target, undefined);
     // ThrowIfThisInitialized (0x7c)
-    c0 = tmp2;
+    closure_0 = tmp2;
     tmp2._entitlements = null;
     tmp2._redeemingSkuId = null;
     tmp2._isRedeemingVirtualCurrency = false;
@@ -182,7 +184,7 @@ function handleOnboardingModalReset(arg0) {
 prototype["handleOnboardingModalReset"] = handleOnboardingModalReset;
 VirtualCurrencyStore.displayName = "VirtualCurrencyStore";
 object = undefined;
-object = new Object(require("dispatcher"), {
+object = new Object(dispatcherDefault, {
   VIRTUAL_CURRENCY_REDEEM_START(skuId) {
     return obj.handleRedeemVirtualCurrencyStart(skuId);
   },

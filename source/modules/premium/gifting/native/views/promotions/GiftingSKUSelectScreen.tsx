@@ -1,38 +1,35 @@
-// Module ID: 10374
-// Function ID: 10375
+// Module ID: 10414
+// Function ID: 10415
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4661, 712, 1629, 4734, 1236, 10375, 4745, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 1629, 4739, 1236, 10415, 4750, 2]
 // Exports: default
 
-// Module 10374 (GiftingSKUSelectScreen)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 10414 (GiftingSKUSelectScreen)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-let error;
-let metroImportAll;
 const require = arg1;
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: null, scroll: null, contentContainer: null, header: null, subtitle: null, buttonContainer: null, headerContainer: null };
-createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flex: 1 };
-createCacheKey[2] = { display: "flex", flexDirection: "column", padding: require("Themes").space.PX_24 };
-let obj1 = { display: "flex", flexDirection: "column", padding: require("Themes").space.PX_24 };
-createCacheKey[3] = { textAlign: "center", padding: require("Themes").space.PX_8 };
+createCacheKey[2] = { display: "flex", flexDirection: "column", padding: ThemesDefault.space.PX_24 };
+let obj1 = { display: "flex", flexDirection: "column", padding: ThemesDefault.space.PX_24 };
+createCacheKey[3] = { textAlign: "center", padding: ThemesDefault.space.PX_8 };
 createCacheKey[4] = { textAlign: "center" };
-let obj2 = { textAlign: "center", padding: require("Themes").space.PX_8 };
-createCacheKey[5] = { marginHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_24 };
-let obj3 = { marginHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_24 };
-createCacheKey[6] = { marginBottom: require("Themes").space.PX_24 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj4 = { marginBottom: require("Themes").space.PX_24 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUSelectScreen.tsx");
+let obj2 = { textAlign: "center", padding: ThemesDefault.space.PX_8 };
+createCacheKey[5] = { marginHorizontal: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_24 };
+let obj3 = { marginHorizontal: ThemesDefault.space.PX_16, marginBottom: ThemesDefault.space.PX_24 };
+createCacheKey[6] = { marginBottom: ThemesDefault.space.PX_24 };
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+let obj4 = { marginBottom: ThemesDefault.space.PX_24 };
+const result = require("set").fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUSelectScreen.tsx");
 
 export default function GiftingSKUSelectScreen(rewardsToDisplay) {
   const defaultHighlightedReward = rewardsToDisplay.defaultHighlightedReward;
@@ -41,9 +38,9 @@ export default function GiftingSKUSelectScreen(rewardsToDisplay) {
   let first;
   let React;
   let first1;
-  let closure_6;
+  closure_6 = undefined;
   let memo;
-  const tmp = createCacheKey();
+  const tmp = callback2();
   const tmp2 = first(React.useState(defaultHighlightedReward), 2);
   first = tmp2[0];
   React = tmp2[1];
@@ -52,7 +49,7 @@ export default function GiftingSKUSelectScreen(rewardsToDisplay) {
   closure_6 = tmp4[1];
   const items = [onSelect, first, claimableRewards];
   const callback = React.useCallback(() => {
-    const found = claimableRewards.find((arg0) => arg0 === _slicedToArray);
+    const found = claimableRewards.find((arg0) => arg0 === closure_3);
     if (null != found) {
       onSelect(found);
     }
@@ -65,7 +62,7 @@ export default function GiftingSKUSelectScreen(rewardsToDisplay) {
   memo = React.useMemo(() => {
     let someResult = null != first;
     if (someResult) {
-      someResult = claimableRewards.some((arg0) => arg0 === _slicedToArray);
+      someResult = claimableRewards.some((arg0) => arg0 === closure_3);
     }
     return someResult;
   }, items1);
@@ -92,7 +89,7 @@ export default function GiftingSKUSelectScreen(rewardsToDisplay) {
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.scroll, contentContainerStyle: tmp.contentContainer, children: null };
   obj = { style: tmp.headerContainer, children: null };
-  const obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
+  obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
   const intl = defaultHighlightedReward(onSelect[8]).intl;
   obj1[4] = intl.string(defaultHighlightedReward(onSelect[8]).t["+ByEeM"]);
   const items3 = [memo(defaultHighlightedReward(onSelect[7]).Text, obj1), ];

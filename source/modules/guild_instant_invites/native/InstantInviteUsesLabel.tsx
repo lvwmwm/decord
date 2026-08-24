@@ -1,19 +1,19 @@
-// Module ID: 9972
-// Function ID: 9973
+// Module ID: 10011
+// Function ID: 10012
 // Name: InstantInviteUsesLabel
-// Dependencies: [19, 21, 4734, 2]
+// Dependencies: [19, 21, 4739, 2]
 // Exports: default
 
-// Module 9972 (InstantInviteUsesLabel)
-import "noop";
-import { jsxs } from "jsxProd";
+// Module 10011 (InstantInviteUsesLabel)
+import noopAll from "noop" /* 19 */;
+import Text from "Text" /* 4739 */;
+import { jsxs } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("Text").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteUsesLabel.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteUsesLabel.tsx");
 
 export default function InstantInviteUsesLabel(style) {
-  let maxUses;
-  let uses;
   ({ uses, maxUses } = style);
   let combined = uses;
   if (0 !== maxUses) {
@@ -21,5 +21,5 @@ export default function InstantInviteUsesLabel(style) {
     combined = "" + uses + "/" + maxUses;
   }
   const children = ["Uses: ", combined];
-  return jsxs(require(4734) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", style: style.style, children });
+  return jsxs(Text.Text, { variant: "text-md/semibold", color: "text-default", style: style.style, children });
 };

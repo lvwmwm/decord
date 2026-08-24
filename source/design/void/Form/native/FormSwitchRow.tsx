@@ -1,29 +1,23 @@
-// Module ID: 8098
-// Function ID: 8099
+// Module ID: 8137
+// Function ID: 8138
 // Name: FormSwitchRow
-// Dependencies: [32, 19, 17, 21, 4661, 500, 6937, 6940, 8096, 6939, 7178, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 500, 6975, 6978, 8135, 6977, 7216, 2]
 // Exports: default
 
-// Module 8098 (FormSwitchRow)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8137 (FormSwitchRow)
+import context from "context" /* 6977 */;
+import TableSwitchRow from "TableSwitchRow" /* 7216 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function FormSwitchRow(onValueChange) {
-  let accessibilityHint;
-  let label;
-  let numberOfLines;
-  let subLabel;
-  let switchProps;
-  let trailing;
   onValueChange = onValueChange.onValueChange;
   const value = onValueChange.value;
-  const importDefault = value;
+  importDefault = value;
   let flag = onValueChange.disabled;
   if (flag === undefined) {
     flag = false;
@@ -90,7 +84,7 @@ function FormSwitchRow(onValueChange) {
   obj.accessibilityLabel = sum;
   obj.accessibilityState = { disabled: flag, checked: first };
   obj.accessibilityHint = accessibilityHint;
-  const obj1 = { disabled: flag, value, onValueChange };
+  obj1 = { disabled: flag, value, onValueChange };
   const tmp14 = importDefault(first[6]);
   const tmp16 = closure_7;
   const tmp17 = View;
@@ -100,16 +94,16 @@ function FormSwitchRow(onValueChange) {
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles({ trailing: { flex: 1, flexDirection: "row", width: "100%", alignItems: "center" } });
-const result = require("get ActivityIndicator").fileFinishedImporting("design/void/Form/native/FormSwitchRow.tsx");
+const result = require("set").fileFinishedImporting("design/void/Form/native/FormSwitchRow.tsx");
 
 export default function FormSwitchRowContainer(DEPRECATED_style) {
-  if (React.useContext(require(6939) /* context */.RedesignCompatContext)) {
+  if (React.useContext(context.RedesignCompatContext)) {
     let obj = { style: null, children: null };
     obj[0] = DEPRECATED_style.DEPRECATED_style;
     obj = { value: null, onValueChange: null };
     ({ value: obj3[0], onValueChange: obj3[1] } = DEPRECATED_style);
     const merged = Object.assign(DEPRECATED_style);
-    obj[1] = tmp3(require(7178) /* TableSwitchRow */.TableSwitchRow, obj);
+    obj[1] = tmp3(TableSwitchRow.TableSwitchRow, obj);
     let tmp3Result = tmp3(View, obj);
   } else {
     obj = {};

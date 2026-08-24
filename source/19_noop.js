@@ -4,5 +4,7 @@
 // Dependencies: [20]
 
 // Module 19 (noop)
+import noop from "noop" /* 20 */;
 
-export { default } from "noop";
+
+export default noop;

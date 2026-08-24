@@ -1,38 +1,42 @@
-// Module ID: 14259
-// Function ID: 14260
+// Module ID: 14327
+// Function ID: 14328
 // Name: getCollectibleTypeName
-// Dependencies: [5306, 5307, 1924, 1949, 1236, 2335, 1435, 2]
+// Dependencies: [5311, 5312, 1924, 1949, 1236, 2336, 1435, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 14259 (getCollectibleTypeName)
-import { isAvatarDecorationRecord } from "fromServer";
-import { isProfileEffectRecord } from "fromServer";
-import GuildFeatures from "GuildFeatures";
+// Module 14327 (getCollectibleTypeName)
+import set from "set" /* 2 */;
+import getAvatarURL from "getAvatarURL" /* 1435 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+import messagesProxyDefault from "messagesProxy" /* 2336 */;
+import fromServer from "fromServer" /* 5311 */;
+import fromServer2 from "fromServer" /* 5312 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
-let c5;
-let closure_6;
 function getCollectibleTypeName(type) {
-  if (require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+  if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl5 = tmp(1236).intl;
-    return intl5.string(importDefault(2335).obi47v);
+    return intl5.string(messagesProxyDefault.obi47v);
   } else if (tmp(1949).CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl4 = tmp(1236).intl;
-    return intl4.string(importDefault(2335).RX8BMR);
+    return intl4.string(messagesProxyDefault.RX8BMR);
   } else if (tmp(1949).CollectiblesItemType.NAMEPLATE === type) {
     const intl3 = tmp(1236).intl;
-    return intl3.string(importDefault(2335).nNGEHk);
+    return intl3.string(messagesProxyDefault.nNGEHk);
   } else if (tmp(1949).CollectiblesItemType.BUNDLE === type) {
     const intl2 = tmp(1236).intl;
-    return intl2.string(importDefault(2335).VS1fKo);
+    return intl2.string(messagesProxyDefault.VS1fKo);
   } else if (tmp(1949).CollectiblesItemType.PROFILE_FRAME === type) {
     const intl = tmp(1236).intl;
-    return intl.string(importDefault(2335).JiIY1l);
+    return intl.string(messagesProxyDefault.JiIY1l);
   } else {
     return "";
   }
 }
+const isAvatarDecorationRecord = fromServer.isAvatarDecorationRecord;
+const isProfileEffectRecord = fromServer2.isProfileEffectRecord;
 ({ PremiumSubscriptionSKUs: c5, SubscriptionPlanInfo: closure_6 } = GuildFeatures);
-const result = require("GuildFeatures").fileFinishedImporting("modules/parent_tools/FamilyCenterActivityPurchaseRowUtils.tsx");
+const result = set.fileFinishedImporting("modules/parent_tools/FamilyCenterActivityPurchaseRowUtils.tsx");
 
 export const PREVIEW_SIZE = 40;
 export const NAMEPLATE_ASPECT_RATIO = 5.333333333333333;
@@ -44,7 +48,7 @@ export const getAvatarDecorationPreviewUrl = function getAvatarDecorationPreview
     const first = product.items[0];
     let avatarDecorationURL = null;
     if (isAvatarDecorationRecord(first)) {
-      let obj = require(1435) /* getAvatarURL */;
+      let obj = getAvatarURL;
       obj = { avatarDecoration: null, size: 40, canAnimate: true };
       obj = { asset: null };
       obj[0] = first.asset;

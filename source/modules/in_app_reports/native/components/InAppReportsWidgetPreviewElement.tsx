@@ -1,38 +1,39 @@
-// Module ID: 12803
-// Function ID: 12804
+// Module ID: 12858
+// Function ID: 12859
 // Name: WidgetPreview
-// Dependencies: [19, 17, 21, 4661, 712, 8982, 5375, 12291, 5367, 12174, 4734, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 9019, 5380, 12343, 5372, 12226, 4739, 1236, 2]
 // Exports: default
 
-// Module 12803 (WidgetPreview)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12858 (WidgetPreview)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import createDefaultFieldsSection from "createDefaultFieldsSection" /* 5380 */;
+import useSharedStylesDefault from "useSharedStyles" /* 9019 */;
+import PersonalWidgetTextDefault from "PersonalWidgetText" /* 12343 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: null };
-createCacheKey = { backgroundColor: require("Themes").colors.USER_PROFILE_CONTAINER_BACKGROUND };
+createCacheKey = { backgroundColor: ThemesDefault.colors.USER_PROFILE_CONTAINER_BACKGROUND };
 createCacheKey[2] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsWidgetPreviewElement.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsWidgetPreviewElement.tsx");
 
 export default function WidgetPreview(arg0) {
-  let userId;
-  let widget;
   ({ widget, userId } = arg0);
-  const tmp = createCacheKey();
-  const tmp4 = importDefault(8982)();
-  if (widget instanceof require(5375) /* isFieldEmpty */.UserProfilePersonalWidget) {
+  const tmp = callback3();
+  const tmp4 = useSharedStylesDefault();
+  if (widget instanceof createDefaultFieldsSection.UserProfilePersonalWidget) {
     let obj = { userId: null, widget: null, disableInteraction: true, cardStyle: null };
     obj[0] = userId;
     obj[1] = widget;
     const items = [tmp4.card, tmp.card];
     obj[3] = items;
-    let tmp6 = callback(importDefault(12291), obj);
+    let tmp6 = callback(PersonalWidgetTextDefault, obj);
   } else {
     tmp6 = null;
     if (tmp5Result.isGameWidget(widget)) {
@@ -43,20 +44,20 @@ export default function WidgetPreview(arg0) {
         obj[1] = widget;
         const items1 = [tmp4.card, tmp.card];
         obj[3] = items1;
-        tmp6 = callback(tmp5(12174).WidgetSection, obj);
+        tmp6 = callback(tmp5(12226).WidgetSection, obj);
       }
     }
-    tmp5Result = tmp5(5367);
+    tmp5Result = tmp5(5372);
   }
   let tmp9 = null;
   if (null !== tmp6) {
-    const obj1 = { style: null, children: null };
+    obj1 = { style: null, children: null };
     obj1[0] = tmp.container;
     const obj2 = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
     obj2[0] = tmp.title;
     const intl = tmp5(1236).intl;
     obj2[3] = intl.string(tmp5(1236).t.SpsnDY).toUpperCase();
-    const items2 = [callback(tmp5(4734).Text, obj2), tmp6];
+    const items2 = [callback(tmp5(4739).Text, obj2), tmp6];
     obj1[1] = items2;
     tmp9 = callback2(View, obj1);
     const str = intl.string(tmp5(1236).t.SpsnDY);

@@ -1,32 +1,32 @@
-// Module ID: 10548
-// Function ID: 10549
+// Module ID: 10587
+// Function ID: 10588
 // Name: useIsSelectedResourceChannel
-// Dependencies: [4970, 1391, 1979, 676, 1398, 647, 1403, 10549, 5283, 2]
+// Dependencies: [4975, 1391, 1980, 676, 1398, 647, 1403, 10588, 5288, 2]
 // Exports: default
 
-// Module 10548 (useIsSelectedResourceChannel)
-import handlePermissionsChange from "handlePermissionsChange";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
-import { ChannelFlags } from "set";
+// Module 10587 (useIsSelectedResourceChannel)
+import closure_3 from "handlePermissionsChange" /* 4975 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
+import { ChannelFlags } from "set" /* 1398 */;
 
 const require = arg1;
-const result = require("handleConnectionOpen").fileFinishedImporting("modules/guild_onboarding_home/useIsSelectedResourceChannel.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/useIsSelectedResourceChannel.tsx");
 
 export default function useIsSelectedResourceChannel(arg0) {
   const _require = arg0;
-  const items = [ensureGuildLoaded, handleConnectionOpen, handlePermissionsChange];
+  const items = [closure_4, closure_5, closure_3];
   const stateFromStores = _require(647).useStateFromStores(items, () => {
-    const channel = outer1_4.getChannel(callback);
+    const channel = closure_1_4.getChannel(callback);
     if (null != channel) {
-      if (obj.hasFlag(channel.flags, outer1_7.IS_GUILD_RESOURCE_CHANNEL)) {
-        if (outer1_1(tmp3[7])(channel, outer1_5, outer1_3)) {
+      if (obj.hasFlag(channel.flags, closure_1_7.IS_GUILD_RESOURCE_CHANNEL)) {
+        if (closure_1_1(tmp3[7])(channel, closure_1_5, closure_1_3)) {
           return channel.guild_id;
         }
       }
-      obj = callback(outer1_2[6]);
-      tmp3 = outer1_2;
+      obj = callback(closure_1_2[6]);
+      tmp3 = closure_1_2;
     }
   });
   let obj = _require(647);
@@ -34,6 +34,6 @@ export default function useIsSelectedResourceChannel(arg0) {
   if (stateFromStores == null) {
     tmp2 = EMPTY_STRING_SNOWFLAKE_ID;
   }
-  const obj2 = _require(5283);
-  return null != stateFromStores && _require(5283).useCanSeeOnboardingHome(tmp2);
+  const obj2 = _require(5288);
+  return null != stateFromStores && _require(5288).useCanSeeOnboardingHome(tmp2);
 };

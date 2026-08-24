@@ -1,28 +1,26 @@
-// Module ID: 14061
-// Function ID: 14062
+// Module ID: 14129
+// Function ID: 14130
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 1910, 8168, 21, 4661, 712, 589, 14062, 8374, 8375, 1236, 500, 4734, 14036, 4342, 14063, 2007, 7188, 9509, 2]
+// Dependencies: [19, 1910, 8207, 21, 4668, 712, 589, 14130, 8413, 8414, 1236, 500, 4739, 14104, 4346, 14131, 2008, 7226, 9546, 2]
 // Exports: default
 
-// Module 14061 (UserProfilePrimaryGuildEditButton)
-import "set";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import { GuildTagBadgeSize } from "items";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14129 (UserProfilePrimaryGuildEditButton)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import { GuildTagBadgeSize } from "items" /* 8207 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
+noopAll;
 createCacheKey = { tag: null };
-createCacheKey = { paddingHorizontal: 6, paddingVertical: 2, columnGap: 4, borderRadius: require("Themes").radii.sm };
+createCacheKey = { paddingHorizontal: 6, paddingVertical: 2, columnGap: 4, borderRadius: ThemesDefault.radii.sm };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("items").fileFinishedImporting("modules/user_profile/native/UserProfilePrimaryGuildEditButton.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfilePrimaryGuildEditButton.tsx");
 
 export default function UserProfilePrimaryGuildEditButton(arg0) {
-  let disabled;
-  let pendingPrimaryGuildId;
-  let tagStyle;
-  let user;
   ({ user, pendingPrimaryGuildId } = arg0);
   pendingPrimaryGuildId = undefined;
   let stateFromStores;
@@ -54,7 +52,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
   const items = [handleSelectPrimaryGuild];
   const items1 = [pendingPrimaryGuildId];
   stateFromStores = obj.useStateFromStores(items, () => handleSelectPrimaryGuild.getGuild(pendingPrimaryGuildId), items1);
-  let obj1 = pendingPrimaryGuildId(userAvailableGuildsWithTags[7]);
+  obj1 = pendingPrimaryGuildId(userAvailableGuildsWithTags[7]);
   userAvailableGuildsWithTags = obj1.useUserAvailableGuildsWithTags();
   if (null != user) {
     if (userAvailableGuildsWithTags.length > 0) {

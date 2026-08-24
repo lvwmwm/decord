@@ -1,17 +1,19 @@
-// Module ID: 12786
-// Function ID: 12787
+// Module ID: 12841
+// Function ID: 12842
 // Name: isMostRecentDeadEndInvite
-// Dependencies: [676, 10917, 2]
+// Dependencies: [676, 10956, 2]
 // Exports: isMostRecentDeadEndInvite
 
-// Module 12786 (isMostRecentDeadEndInvite)
-import { ActivityActionTypes } from "ME";
+// Module 12841 (isMostRecentDeadEndInvite)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
 
-const result = require("set").fileFinishedImporting("modules/activities/utils/isMostRecentDeadEndInvite.tsx");
+const ActivityActionTypes = ME.ActivityActionTypes;
+const result = set.fileFinishedImporting("modules/activities/utils/isMostRecentDeadEndInvite.tsx");
 
 export const isMostRecentDeadEndInvite = function isMostRecentDeadEndInvite(id, messages, id2, findActivityResult) {
-  let closure_0 = id2;
-  let closure_1 = findActivityResult;
+  closure_0 = id2;
+  closure_1 = findActivityResult;
   return !messages.hasAnyAfter(id, (activity) => {
     let tmp = null != activity.activity;
     if (tmp) {
@@ -23,7 +25,7 @@ export const isMostRecentDeadEndInvite = function isMostRecentDeadEndInvite(id, 
       tmp = id === id2;
     }
     if (tmp) {
-      tmp = activity.activity.type === outer1_2.JOIN;
+      tmp = activity.activity.type === closure_1_2.JOIN;
     }
     if (tmp) {
       tmp = !id2(table[1])(table, activity, id2);

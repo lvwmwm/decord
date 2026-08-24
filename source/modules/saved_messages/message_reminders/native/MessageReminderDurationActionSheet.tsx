@@ -1,47 +1,41 @@
-// Module ID: 10879
-// Function ID: 10880
+// Module ID: 10918
+// Function ID: 10919
 // Name: MessageReminderDurationActionSheet
-// Dependencies: [32, 19, 10850, 21, 4661, 712, 589, 687, 10880, 6949, 1236, 5433, 6316, 10881, 6291, 4342, 5260, 10882, 2007, 6950, 6286, 4326, 2]
+// Dependencies: [32, 19, 10889, 21, 4668, 712, 589, 687, 10919, 6987, 1236, 5438, 6347, 10920, 6322, 4346, 5265, 10921, 2008, 6988, 6317, 4330, 2]
 // Exports: default
 
-// Module 10879 (MessageReminderDurationActionSheet)
-import _slicedToArray from "_slicedToArray";
-import Background from "Background";
-import getTimeSafe from "getTimeSafe";
-import jsxProd from "CheckmarkLargeIcon";
-import createCacheKey from "createCacheKey";
+// Module 10918 (MessageReminderDurationActionSheet)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "getTimeSafe" /* 10889 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { body: null };
-createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_24 };
+createCacheKey = { paddingHorizontal: ThemesDefault.space.PX_16, gap: ThemesDefault.space.PX_24 };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("getTimeSafe").fileFinishedImporting("modules/saved_messages/message_reminders/native/MessageReminderDurationActionSheet.tsx");
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/saved_messages/message_reminders/native/MessageReminderDurationActionSheet.tsx");
 
 export default function MessageReminderDurationActionSheet(createReminder) {
-  let c5;
-  let _slicedToArray;
-  let dependencyMap;
-  let onBack;
-  let tmp7;
   createReminder = createReminder.createReminder;
   const removeReminder = createReminder.removeReminder;
-  ({ channelId: dependencyMap, messageId: _slicedToArray, onBack } = createReminder);
+  ({ channelId: dependencyMap, messageId: closure_3, onBack } = createReminder);
   c5 = undefined;
   let dueInText;
   let isOverdue;
   let obj = createReminder(589);
   const items = [c5];
-  const stateFromStores = obj.useStateFromStores(items, () => _undefined.getSavedMessage(closure_2, _slicedToArray));
-  let obj1 = onBack;
-  const tmp = createCacheKey();
+  const stateFromStores = obj.useStateFromStores(items, () => _undefined.getSavedMessage(closure_2, closure_3));
+  obj1 = onBack;
+  const tmp = callback2();
   const date = new Date();
   [tmp7, c5] = callback(onBack.useState(new Date()), 2);
   const effect = onBack.useEffect(() => {
-    const interval = setInterval(() => callback(new Date()), removeReminder(outer1_2[7]).Millis.MINUTE);
+    const interval = setInterval(() => callback(new Date()), removeReminder(closure_1_2[7]).Millis.MINUTE);
     return () => {
       clearInterval(closure_0);
     };
@@ -51,15 +45,15 @@ export default function MessageReminderDurationActionSheet(createReminder) {
   if (stateFromStores != null) {
     dueAt = stateFromStores.saveData.dueAt;
   }
-  obj = { dueAt, now: tmp7, type: tmp2(10880).DueInStringTypes.SHORT };
-  const dueInString = createReminder(10880).useDueInString(obj);
+  obj = { dueAt, now: tmp7, type: tmp2(10919).DueInStringTypes.SHORT };
+  const dueInString = createReminder(10919).useDueInString(obj);
   dueInText = dueInString.dueInText;
   isOverdue = dueInString.isOverdue;
   const items1 = [onBack, dueInText, isOverdue];
   const items2 = [createReminder];
   const memo = obj1.useMemo(() => {
-    const intl = createReminder(outer1_2[10]).intl;
-    const t = createReminder(outer1_2[10]).t;
+    const intl = createReminder(closure_1_2[10]).intl;
+    const t = createReminder(closure_1_2[10]).t;
     let obj = { title: intl.string(isOverdue ? t.GtBCnz : t.roMu1H), subtitle: dueInText, leading: null };
     let tmpResult = null != onBack;
     if (tmpResult) {
@@ -71,53 +65,51 @@ export default function MessageReminderDurationActionSheet(createReminder) {
       tmpResult = tmp(tmp2(tmp3[11]).PressableOpacity, obj);
     }
     obj[2] = tmpResult;
-    return dueInText(createReminder(outer1_2[9]).BottomSheetTitleHeader, obj);
+    return dueInText(createReminder(closure_1_2[9]).BottomSheetTitleHeader, obj);
   }, items1);
   const memo1 = obj1.useMemo(() => {
-    const prop = createReminder(outer1_2[13]).MESSAGE_REMINDER_DURATION_ITEMS;
+    const prop = createReminder(closure_1_2[13]).MESSAGE_REMINDER_DURATION_ITEMS;
     const mapped = prop.map((arg0) => {
-      let closure_0;
-      let getLabel;
       ({ getDueAt: closure_0, getLabel } = arg0);
-      const obj = { label: null, onPress: null };
-      obj[0] = getLabel();
-      obj[1] = function onPress() {
-        outer1_0(callback());
-        outer2_1(outer2_2[15]).hideActionSheet();
-      };
-      return outer1_6(outer1_0(outer1_2[14]).TableRow, obj, "create-reminder-" + getLabel());
+      return closure_1_6(closure_1_0(closure_1_2[14]).TableRow, {
+        label: getLabel(),
+        onPress() {
+          closure_1_0(callback());
+          closure_2_1(closure_2_2[15]).hideActionSheet();
+        }
+      }, "create-reminder-" + getLabel());
     });
     let obj = { label: null, onPress: null, arrow: true };
-    const intl = createReminder(outer1_2[10]).intl;
-    obj[0] = intl.string(createReminder(outer1_2[10]).t.OLA8Zi);
+    const intl = createReminder(closure_1_2[10]).intl;
+    obj[0] = intl.string(createReminder(closure_1_2[10]).t.OLA8Zi);
     obj[1] = function onPress() {
-      let obj = outer1_1(outer1_2[15]);
+      let obj = closure_1_1(closure_1_2[15]);
       obj.hideActionSheet();
-      const obj2 = outer1_1(outer1_2[16]);
+      const obj2 = closure_1_1(closure_1_2[16]);
       obj = { onClose: null, createReminder: null };
-      const tmp2 = outer1_0(outer1_2[18])(outer1_2[17], outer1_2.paths);
-      obj[0] = outer1_1(outer1_2[16]).pop();
+      const tmp2 = closure_1_0(closure_1_2[18])(closure_1_2[17], closure_1_2.paths);
+      obj[0] = closure_1_1(closure_1_2[16]).pop();
       obj[1] = closure_0;
       obj2.pushLazy(tmp2, obj, "create-reminder-custom", { presentation: "modal" });
     };
-    mapped.push(dueInText(createReminder(outer1_2[14]).TableRow, obj, "create-reminder-custom"));
+    mapped.push(dueInText(createReminder(closure_1_2[14]).TableRow, obj, "create-reminder-custom"));
     return mapped;
   }, items2);
   obj = { header: memo, bodyStyles: tmp.body, startExpanded: true, children: null };
-  const items3 = [dueInText(createReminder(6286).TableRowGroup, { hasIcons: false, children: memo1 }), ];
+  const items3 = [dueInText(createReminder(6317).TableRowGroup, { hasIcons: false, children: memo1 }), ];
   let tmp14Result = null != removeReminder;
   if (tmp14Result) {
     obj1 = { icon: null, label: null, onPress: null, start: true, end: true };
-    obj1[0] = tmp14(tmp2(4326).CheckmarkLargeIcon, {});
+    obj1[0] = tmp14(tmp2(4330).CheckmarkLargeIcon, {});
     let intl = tmp2(1236).intl;
     obj1[1] = intl.string(tmp2(1236).t.yjGtdJ);
     obj1[2] = function onPress() {
-      removeReminder(outer1_2[15]).hideActionSheet();
+      removeReminder(closure_1_2[15]).hideActionSheet();
       removeReminder();
     };
-    tmp14Result = tmp14(tmp2(6291).TableRow, obj1, "remove-reminder");
+    tmp14Result = tmp14(tmp2(6322).TableRow, obj1, "remove-reminder");
   }
   items3[1] = tmp14Result;
   obj[3] = items3;
-  return isOverdue(createReminder(6950).BottomSheet, obj);
+  return isOverdue(createReminder(6988).BottomSheet, obj);
 };

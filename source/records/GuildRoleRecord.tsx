@@ -1,26 +1,30 @@
-// Module ID: 1984
-// Function ID: 1985
+// Module ID: 1985
+// Function ID: 1986
 // Name: GuildRoleRecordTypeTag
 // Dependencies: [1431, 506, 12, 2]
 // Exports: hasAnyPermission, hasPermission, isEveryoneRole, isRoleEqual
 
-// Module 1984 (GuildRoleRecordTypeTag)
-import { TypeTag } from "isValueEqual";
+// Module 1985 (GuildRoleRecordTypeTag)
+import set from "set" /* 2 */;
+import applyDefault from "apply" /* 12 */;
+import fromString from "fromString" /* 506 */;
+import isValueEqual from "isValueEqual" /* 1431 */;
 
-const result = require("apply").fileFinishedImporting("records/GuildRoleRecord.tsx");
+const TypeTag = isValueEqual.TypeTag;
+const result = set.fileFinishedImporting("records/GuildRoleRecord.tsx");
 
 export const GuildRoleRecordTypeTag = "GuildRole";
 export const isEveryoneRole = function isEveryoneRole(role) {
   return role.id === role.guildId;
 };
 export const hasPermission = function hasPermission(permissions) {
-  return require(506) /* fromString */.has(permissions.permissions, arg1);
+  return fromString.has(permissions.permissions, arg1);
 };
 export const hasAnyPermission = function hasAnyPermission(permissions) {
-  return require(506) /* fromString */.hasAny(permissions.permissions, arg1);
+  return fromString.hasAny(permissions.permissions, arg1);
 };
 export const isRoleEqual = function isRoleEqual(pickResult, arg1) {
-  return importDefault(12).isEqualWith(pickResult, arg1, (arg0, arg1, arg2) => {
+  return applyDefault.isEqualWith(pickResult, arg1, (arg0, arg1, arg2) => {
     let equalsResult;
     if ("permissions" === arg2) {
       equalsResult = callback(table[1]).equals(arg0, arg1);

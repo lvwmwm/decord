@@ -1,21 +1,22 @@
-// Module ID: 16906
-// Function ID: 16907
+// Module ID: 16999
+// Function ID: 17000
 // Name: _createCreatorMonetizationEnableRequest
-// Dependencies: [5, 676, 4482, 530, 709, 7140, 2]
+// Dependencies: [5, 676, 4486, 530, 709, 7178, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 16906 (_createCreatorMonetizationEnableRequest)
-import fetchApplication from "fetchApplication";
-import { Endpoints } from "ME";
-import { ApplicationTypes } from "ApplicationTypes";
+// Module 16999 (_createCreatorMonetizationEnableRequest)
+import sendRequest from "sendRequest" /* 530 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 4486 */;
 
-const require = arg1;
+require = arg1;
 function _createCreatorMonetizationEnableRequest() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -28,7 +29,7 @@ function _createCreatorMonetizationEnableRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -44,8 +45,8 @@ function _createCreatorMonetizationEnableRequest() {
               return obj;
             } else {
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_4.CREATOR_MONETIZATION_ENABLE_REQUESTS(callback);
+              obj1 = { url: null, rejectWithError: null };
+              obj1[0] = closure_1_4.CREATOR_MONETIZATION_ENABLE_REQUESTS(callback);
               obj1[1] = callback(530).rejectWithMigratedError();
               dependencyMap = 1;
               c1 = 1;
@@ -63,7 +64,7 @@ function _createCreatorMonetizationEnableRequest() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -72,7 +73,7 @@ function _createCreatorMonetizationEnableRequest() {
       }
     })();
   });
-  const _createCreatorMonetizationEnableRequest = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -84,20 +85,20 @@ function _createCreatorMonetizationEnableRequest() {
 function _getCreatorMonetizationEligibility() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0, body) {
       const HTTP = callback(530).HTTP;
-      const obj1 = { url: null, rejectWithError: null };
-      obj1[0] = outer1_4.CREATOR_MONETIZATION_ELIGIBILITY(callback);
+      obj1 = { url: null, rejectWithError: null };
+      obj1[0] = closure_1_4.CREATOR_MONETIZATION_ELIGIBILITY(callback);
       const obj3 = callback(530);
       obj1[1] = obj3.rejectWithMigratedError();
       yield HTTP.get(obj1);
       return body.body;
     })();
   });
-  const _getCreatorMonetizationEligibility = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -109,10 +110,10 @@ function _getCreatorMonetizationEligibility() {
 function _acceptCreatorMonetizationTerms() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c3 = 0;
-    let c2 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c3 = 0;
+    c2 = 0;
     return (function*(arg0, arg1) {
       if (dependencyMap === 2) {
         dependencyMap = 3;
@@ -125,7 +126,7 @@ function _acceptCreatorMonetizationTerms() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -141,8 +142,8 @@ function _acceptCreatorMonetizationTerms() {
               return obj;
             } else {
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_4.CREATOR_MONETIZATION_ACCEPT_TERMS(callback, closure_1);
+              obj1 = { url: null, rejectWithError: null };
+              obj1[0] = closure_1_4.CREATOR_MONETIZATION_ACCEPT_TERMS(callback, closure_1);
               obj1[1] = callback(530).rejectWithMigratedError();
               c3 = 1;
               dependencyMap = 1;
@@ -160,7 +161,7 @@ function _acceptCreatorMonetizationTerms() {
             return obj;
           } else {
             dependencyMap = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           dependencyMap = tmp;
@@ -169,7 +170,7 @@ function _acceptCreatorMonetizationTerms() {
       }
     })();
   });
-  const _acceptCreatorMonetizationTerms = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -181,9 +182,9 @@ function _acceptCreatorMonetizationTerms() {
 function _acceptCreatorMonetizationTermsV() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -196,7 +197,7 @@ function _acceptCreatorMonetizationTermsV() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -212,8 +213,8 @@ function _acceptCreatorMonetizationTermsV() {
               return obj;
             } else {
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_4.CREATOR_MONETIZATION_ACCEPT_TERMS_V2(callback);
+              obj1 = { url: null, rejectWithError: null };
+              obj1[0] = closure_1_4.CREATOR_MONETIZATION_ACCEPT_TERMS_V2(callback);
               obj1[1] = callback(530).rejectWithMigratedError();
               dependencyMap = 1;
               c1 = 1;
@@ -231,7 +232,7 @@ function _acceptCreatorMonetizationTermsV() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -240,7 +241,7 @@ function _acceptCreatorMonetizationTermsV() {
       }
     })();
   });
-  const _acceptCreatorMonetizationTermsV = tmp;
+  closure_9 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -252,20 +253,20 @@ function _acceptCreatorMonetizationTermsV() {
 function _getCreatorMonetizationOnboardingMarketing() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0, body) {
       const HTTP = callback(530).HTTP;
-      const obj1 = { url: null, rejectWithError: null };
-      obj1[0] = outer1_4.CREATOR_MONETIZATION_MARKETING_ONBOARDING(callback);
+      obj1 = { url: null, rejectWithError: null };
+      obj1[0] = closure_1_4.CREATOR_MONETIZATION_MARKETING_ONBOARDING(callback);
       const obj3 = callback(530);
       obj1[1] = obj3.rejectWithMigratedError();
       yield HTTP.get(obj1);
       return body.body;
     })();
   });
-  const _getCreatorMonetizationOnboardingMarketing = tmp;
+  closure_10 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -277,20 +278,20 @@ function _getCreatorMonetizationOnboardingMarketing() {
 function _ownershipTransferOnboard() {
   const self = this;
   const tmp = callback((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c4 = 0;
-    let c5 = 0;
+    closure_0 = arg0;
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
     return (function*(arg0, body) {
-      let fetchApplication = tmp2;
+      closure_3 = tmp2;
       const table = tmp5;
-      const HTTP = callback(outer1_2[3]).HTTP;
-      const obj1 = { url: null, body: null, rejectWithError: null };
+      const HTTP = callback(closure_1_2[3]).HTTP;
+      obj1 = { url: null, body: null, rejectWithError: null };
       obj1[0] = c4.CREATOR_MONETIZATION_OWNERSHIP_TRANSFER_ONBOARD(body);
       const obj2 = { team_id: null };
       obj2[0] = callback2;
       obj1[1] = obj2;
-      obj1[2] = callback(outer1_2[3]).rejectWithMigratedError();
+      obj1[2] = callback(closure_1_2[3]).rejectWithMigratedError();
       yield HTTP.post(obj1);
       body = body.body;
       if (null != body.application) {
@@ -302,7 +303,7 @@ function _ownershipTransferOnboard() {
       return body;
     })();
   });
-  const _ownershipTransferOnboard = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -314,9 +315,9 @@ function _ownershipTransferOnboard() {
 function _requestRemoveMonetization() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -329,7 +330,7 @@ function _requestRemoveMonetization() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -345,8 +346,8 @@ function _requestRemoveMonetization() {
               return obj;
             } else {
               const HTTP = callback(530).HTTP;
-              const obj1 = { url: null, body: null, rejectWithError: null };
-              obj1[0] = outer1_4.CREATOR_MONETIZATION_REMOVE_MONETIZATION(callback);
+              obj1 = { url: null, body: null, rejectWithError: null };
+              obj1[0] = closure_1_4.CREATOR_MONETIZATION_REMOVE_MONETIZATION(callback);
               obj1[1] = {};
               obj1[2] = callback(530).rejectWithMigratedError();
               dependencyMap = 1;
@@ -365,7 +366,7 @@ function _requestRemoveMonetization() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -374,7 +375,7 @@ function _requestRemoveMonetization() {
       }
     })();
   });
-  const _requestRemoveMonetization = tmp;
+  closure_12 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -386,9 +387,9 @@ function _requestRemoveMonetization() {
 function _removeMonetization() {
   let self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       const callback = tmp2;
       yield (function requestRemoveMonetization(closure_0) {
@@ -408,7 +409,7 @@ function _removeMonetization() {
       return arg1;
     })();
   });
-  const _removeMonetization = tmp;
+  closure_13 = tmp;
   let apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -417,7 +418,7 @@ function _removeMonetization() {
   }
   return applyArgumentsResult;
 }
-const result = require("ApplicationTypes").fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityActionCreators.tsx");
 
 export const createCreatorMonetizationEnableRequest = function createCreatorMonetizationEnableRequest(arg0) {
   const self = this;
@@ -480,15 +481,13 @@ export const ownershipTransferOnboard = function ownershipTransferOnboard() {
   return applyArgumentsResult;
 };
 export const acceptNewTerms = function acceptNewTerms(arg0) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
-  const obj = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS(arg0), rejectWithError: null };
-  obj[1] = require(530) /* sendRequest */.rejectWithMigratedError();
+  const HTTP = sendRequest.HTTP;
+  const obj = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS(arg0), rejectWithError: sendRequest.rejectWithMigratedError() };
   return HTTP.post(obj);
 };
 export const acceptNewTermsDemonetized = function acceptNewTermsDemonetized(arg0) {
-  const HTTP = require(530) /* sendRequest */.HTTP;
-  const obj = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED(arg0), rejectWithError: null };
-  obj[1] = require(530) /* sendRequest */.rejectWithMigratedError();
+  const HTTP = sendRequest.HTTP;
+  const obj = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED(arg0), rejectWithError: sendRequest.rejectWithMigratedError() };
   return HTTP.post(obj);
 };
 export const removeMonetization = function removeMonetization() {

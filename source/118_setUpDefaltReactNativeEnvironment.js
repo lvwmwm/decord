@@ -4,5 +4,5 @@
 // Dependencies: [119]
 
 // Module 118 (setUpDefaltReactNativeEnvironment)
-import setUpDefaltReactNativeEnvironment from "setUpDefaltReactNativeEnvironment";
+import setUpDefaltReactNativeEnvironment from "setUpDefaltReactNativeEnvironment" /* 119 */;
 

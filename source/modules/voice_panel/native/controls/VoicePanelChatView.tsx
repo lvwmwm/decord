@@ -1,29 +1,30 @@
-// Module ID: 11437
-// Function ID: 11438
+// Module ID: 11486
+// Function ID: 11487
 // Name: memoResult1
-// Dependencies: [19, 17, 11438, 676, 21, 4661, 8666, 1367, 1231, 11435, 1236, 4329, 8035, 11439, 4115, 8125, 9091, 8501, 1494, 1629, 11447, 4770, 4225, 10720, 4104, 4717, 11448, 10546, 2]
+// Dependencies: [19, 17, 11487, 676, 21, 4668, 8703, 1367, 1231, 11484, 1236, 4333, 8074, 11488, 4119, 8164, 9128, 8540, 1494, 1629, 11496, 4775, 4229, 10759, 4107, 4723, 11497, 10585, 2]
 
-// Module 11437 (memoResult1)
-import importAllResult from "useSafeAreaInsets";
-import { Platform } from "useGradientBottom";
-import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes";
-import ME from "ME";
-import jsxProd from "module_4770";
-import createCacheKey from "createCacheKey";
+// Module 11486 (memoResult1)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import IconButton from "IconButton" /* 8074 */;
+import setDefault from "set" /* 8164 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 9128 */;
+import dismissPanelDefault from "dismissPanel" /* 11488 */;
+import importAllResult from "noop" /* 19 */;
+import { Platform } from "get ActivityIndicator" /* 17 */;
+import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes" /* 11487 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 let c3 = importAllResult;
 ({ ComponentActions: c4, ME: c5 } = ME);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles({ container: { flex: 1, overflow: "hidden", paddingTop: CONTROLS_DRAWER_HEADER_SIZE }, gradientWrapper: { position: "absolute", top: CONTROLS_DRAWER_HEADER_SIZE, left: 0 }, titleBlur: { opacity: 0 } });
 let closure_9 = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 let closure_10 = importAllResult.memo(() => {
-  const windowDimensions = importAllResult.useContext(importDefault(11439)).windowDimensions;
-  let obj = windowDimensions(4115);
+  const windowDimensions = importAllResult.useContext(dismissPanelDefault).windowDimensions;
+  let obj = windowDimensions(4119);
   const fn = function n() {
     return { width: windowDimensions.get().width, height: windowDimensions.get().height };
   };
@@ -34,8 +35,8 @@ let closure_10 = importAllResult.memo(() => {
   obj = { style: items, children: null };
   items = [callback2().gradientWrapper, animatedStyle];
   const tmp = callback2();
-  obj[1] = callback(importDefault(9091), { absolute: true });
-  return callback(importDefault(8125), obj);
+  obj[1] = callback(getMixedGradientColorDefault, { absolute: true });
+  return callback(setDefault, obj);
 });
 const memoResult = importAllResult.memo(function VoicePanelDismissChatButton() {
   const callback = importAllResult.useCallback(() => {
@@ -44,19 +45,19 @@ const memoResult = importAllResult.memo(function VoicePanelDismissChatButton() {
   }, []);
   if (tmp3) {
     let obj = { accessibilityLabel: null, icon: null, onPress: null };
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["5MstTl"]);
-    obj[1] = tmp(4329);
+    const intl2 = getSystemLocale.intl;
+    obj[0] = intl2.string(getSystemLocale.t["5MstTl"]);
+    obj[1] = tmp(4333);
     obj[2] = callback;
-    let tmp5Result = tmp5(tmp(11435), obj);
-    const tmpResult = tmp(11435);
+    let tmp5Result = tmp5(tmp(11484), obj);
+    const tmpResult = tmp(11484);
   } else {
     obj = { accessibilityLabel: null, icon: null, onPress: null, variant: "primary-overlay" };
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(require(1236) /* getSystemLocale */.t["5MstTl"]);
-    obj[1] = tmp(4329);
+    const intl = getSystemLocale.intl;
+    obj[0] = intl.string(getSystemLocale.t["5MstTl"]);
+    obj[1] = tmp(4333);
     obj[2] = callback;
-    tmp5Result = tmp5(require(8035) /* IconButton */.IconButton, obj);
+    tmp5Result = tmp5(IconButton.IconButton, obj);
   }
   return tmp5Result;
 });
@@ -73,17 +74,17 @@ const memoResult1 = importAllResult.memo(function VoicePanelChatView(shown) {
   let obj = shown(guildId[17]);
   const gradientTop = obj.useGradientTop();
   const rect = ref(guildId[19])();
-  let obj1 = shown(guildId[20]);
+  obj1 = shown(guildId[20]);
   const items = [guildId, channelId];
   const controlsDrawerOpenWidth = obj1.getControlsDrawerOpenWidth(ref(guildId[18])().width, rect.left, rect.right);
   const effect = channelId.useEffect(() => {
     let tmp = guildId;
     if (guildId == null) {
-      tmp = outer1_5;
+      tmp = closure_1_5;
     }
     ref(guildId[21]).preload(tmp, channelId);
     return () => {
-      outer1_1(outer1_2[6]).updateChatOpen(closure_3, false);
+      closure_1_1(closure_1_2[6]).updateChatOpen(closure_3, false);
     };
   }, items);
   const items1 = [channelId, shown];
@@ -130,7 +131,7 @@ const memoResult1 = importAllResult.memo(function VoicePanelChatView(shown) {
   obj[1] = callback(shown(guildId[24]).ThemeContextProvider, obj);
   return callback(ref(guildId[23]).Provider, obj);
 });
-let result = require("VoicePanelControlsModes").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelChatView.tsx");
+let result = require("set").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelChatView.tsx");
 
 export default memoResult1;
 export const MemoedVoicePanelDismissChatButton = memoResult;

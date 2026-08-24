@@ -1,25 +1,25 @@
-// Module ID: 6568
-// Function ID: 6569
+// Module ID: 6601
+// Function ID: 6602
 // Name: _requestGoogleWalletVerification
-// Dependencies: [5, 676, 530, 6569, 2]
+// Dependencies: [5, 676, 530, 6602, 2]
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential
 
-// Module 6568 (_requestGoogleWalletVerification)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import { Endpoints } from "ME";
+// Module 6601 (_requestGoogleWalletVerification)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
 function _requestGoogleWalletVerification() {
   const self = this;
   const tmp = callback(function*() {
-    const HTTP = v0(outer1_2[2]).HTTP;
-    const obj1 = { url: null, body: null, rejectWithError: true, failImmediatelyWhenRateLimited: true };
-    obj1[0] = outer1_4.GOOGLE_WALLET_REQUEST;
+    const HTTP = v0(closure_1_2[2]).HTTP;
+    obj1 = { url: null, body: null, rejectWithError: true, failImmediatelyWhenRateLimited: true };
+    obj1[0] = closure_1_4.GOOGLE_WALLET_REQUEST;
     obj1[1] = {};
     yield HTTP.post(obj1);
     return arg1.body;
   });
-  const _requestGoogleWalletVerification = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -31,9 +31,9 @@ function _requestGoogleWalletVerification() {
 function _verifyGoogleWalletCredential() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (c1 === 2) {
         c1 = 3;
@@ -46,7 +46,7 @@ function _verifyGoogleWalletCredential() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -62,8 +62,8 @@ function _verifyGoogleWalletCredential() {
               return obj;
             } else {
               const HTTP = callback(table[2]).HTTP;
-              const obj1 = { url: null, body: null, rejectWithError: true, failImmediatelyWhenRateLimited: true };
-              obj1[0] = outer1_4.GOOGLE_WALLET_VERIFY;
+              obj1 = { url: null, body: null, rejectWithError: true, failImmediatelyWhenRateLimited: true };
+              obj1[0] = closure_1_4.GOOGLE_WALLET_VERIFY;
               const obj2 = { credential_json: null };
               obj2[0] = callback;
               obj1[1] = obj2;
@@ -83,7 +83,7 @@ function _verifyGoogleWalletCredential() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c1 = tmp;
@@ -92,7 +92,7 @@ function _verifyGoogleWalletCredential() {
       }
     })();
   });
-  const _verifyGoogleWalletCredential = tmp;
+  closure_6 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -115,7 +115,7 @@ function _checkGoogleWalletAvailable() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -135,7 +135,7 @@ function _checkGoogleWalletAvailable() {
             if (tmp7) {
               v0 = 2;
               c0 = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = tmp8(tmp9[3]).isAvailable();
               return obj1;
             }
@@ -174,7 +174,7 @@ function _checkGoogleWalletAvailable() {
       }
     }
   });
-  const _checkGoogleWalletAvailable = tmp;
+  closure_7 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -186,9 +186,9 @@ function _checkGoogleWalletAvailable() {
 function _getGoogleWalletCredential() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c1 = 0;
+    closure_0 = arg0;
+    c2 = 0;
+    c1 = 0;
     return (function*(arg0) {
       if (v0 === 2) {
         v0 = 3;
@@ -201,7 +201,7 @@ function _getGoogleWalletCredential() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -218,12 +218,12 @@ function _getGoogleWalletCredential() {
             } else {
               if (null == v0(table[3])) {
                 const _Error = Error;
-                const error = new Error("Digital credential module is not available");
+                error = new Error("Digital credential module is not available");
                 throw error;
               } else {
                 table = 1;
                 v0 = 1;
-                const obj1 = { value: null, done: false };
+                obj1 = { value: null, done: false };
                 obj1[0] = tmp6(tmp7[3]).getCredential(tmp5);
                 return obj1;
               }
@@ -252,7 +252,7 @@ function _getGoogleWalletCredential() {
       }
     })();
   });
-  const _getGoogleWalletCredential = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -261,7 +261,7 @@ function _getGoogleWalletCredential() {
   }
   return applyArgumentsResult;
 }
-const result = require("sendRequest").fileFinishedImporting("modules/age_assurance/GoogleWalletActionCreators.native.tsx");
+const result = require("set").fileFinishedImporting("modules/age_assurance/GoogleWalletActionCreators.native.tsx");
 
 export const requestGoogleWalletVerification = function requestGoogleWalletVerification() {
   const self = this;

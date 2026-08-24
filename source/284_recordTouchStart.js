@@ -8,7 +8,7 @@ function recordTouchStart(identifier) {
   identifier = identifier.identifier;
   if (null == identifier) {
     const _Error = Error;
-    const error = new Error("Touch object is missing identifier.");
+    error = new Error("Touch object is missing identifier.");
     throw error;
   } else {
     if (items[identifier]) {
@@ -20,7 +20,7 @@ function recordTouchStart(identifier) {
       ({ pageX: tmp3.previousPageX, pageY: tmp3.previousPageY } = identifier);
       tmp3.previousTimeStamp = tmp;
     } else {
-      const obj = { touchActive: true, startPageX: null, startPageY: null, startTimeStamp: null, currentPageX: null, currentPageY: null, currentTimeStamp: null, previousPageX: null, previousPageY: null, previousTimeStamp: null };
+      obj = { touchActive: true, startPageX: null, startPageY: null, startTimeStamp: null, currentPageX: null, currentPageY: null, currentTimeStamp: null, previousPageX: null, previousPageY: null, previousTimeStamp: null };
       ({ pageX: obj[1], pageY: obj[2] } = identifier);
       obj[3] = tmp;
       ({ pageX: obj[4], pageY: obj[5] } = identifier);
@@ -36,7 +36,7 @@ function recordTouchMove(identifier) {
   identifier = identifier.identifier;
   if (null == identifier) {
     const _Error = Error;
-    const error = new Error("Touch object is missing identifier.");
+    error = new Error("Touch object is missing identifier.");
     throw error;
   } else if (tmp[identifier]) {
     tmp2.touchActive = true;
@@ -50,7 +50,7 @@ function recordTouchEnd(identifier) {
   identifier = identifier.identifier;
   if (null == identifier) {
     const _Error = Error;
-    const error = new Error("Touch object is missing identifier.");
+    error = new Error("Touch object is missing identifier.");
     throw error;
   } else if (tmp[identifier]) {
     tmp2.touchActive = false;
@@ -64,7 +64,7 @@ const items = [];
 let obj = { touchBank: items, numberActiveTouches: 0, indexOfSingleActiveTouch: -1, mostRecentTimeStamp: 0 };
 arg5.default = {
   instrument(arg0) {
-    let closure_0 = arg0;
+    closure_0 = arg0;
   },
   recordTouchTrack(arg0, changedTouches) {
     if (null != callback) {

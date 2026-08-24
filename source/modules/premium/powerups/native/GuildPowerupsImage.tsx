@@ -1,29 +1,30 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11741
+// Function ID: 11742
 // Name: GuildPowerupsImage
-// Dependencies: [4662, 21, 4661, 589, 501, 8406, 5449, 2]
+// Dependencies: [4669, 21, 4668, 589, 501, 8445, 5454, 2]
 // Exports: default
 
-// Module 11692 (GuildPowerupsImage)
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11741 (GuildPowerupsImage)
+import initialize from "initialize" /* 589 */;
+import preloadDefault from "preload" /* 5454 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8445 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
 let closure_5 = createCacheKey.createStyles({ image: { width: "75%", height: "100%", alignSelf: "center", resizeMode: "contain" } });
-const result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
 
 export default function GuildPowerupsImage(style) {
-  let imageUrl;
-  let isAnimated;
   ({ imageUrl, isAnimated } = style);
   if (isAnimated === undefined) {
     isAnimated = true;
   }
   style = style.style;
   const tmp = callback();
-  let obj = require(589) /* initialize */;
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  let obj = initialize;
+  const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   if (obj2.isAndroid()) {
     if (isAnimated) {
@@ -32,11 +33,11 @@ export default function GuildPowerupsImage(style) {
         const items1 = [tmp.image, style];
         obj[0] = items1;
         obj[1] = imageUrl;
-        let tmp6 = jsx(importDefault(8406), { style: null, url: null });
+        let tmp6 = jsx(__INTERNAL_VIEW_CONFIGDefault, { style: null, url: null });
       }
       return tmp6;
     }
   }
   const items2 = [tmp.image, style];
-  tmp6 = jsx(importDefault(5449), { style: items2, source: { uri: imageUrl } });
+  tmp6 = jsx(preloadDefault, { style: items2, source: { uri: imageUrl } });
 };

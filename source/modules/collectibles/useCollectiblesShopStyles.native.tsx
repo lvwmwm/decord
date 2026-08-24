@@ -1,17 +1,19 @@
-// Module ID: 10391
-// Function ID: 10392
+// Module ID: 10430
+// Function ID: 10431
 // Name: importDefaultResult1
-// Dependencies: [5311, 712, 10392, 2]
+// Dependencies: [5316, 712, 10431, 2]
 
-// Module 10391 (importDefaultResult1)
-import importDefaultResult from "tinycolor";
-import saturateResult from "Themes";
-import importDefaultResult1 from "tinycolor";
-import saturateResult1 from "Themes";
+// Module 10430 (importDefaultResult1)
+import ThemesDefault from "Themes" /* 712 */;
+import createUseCollectiblesShopStylesDefault from "createUseCollectiblesShopStyles" /* 10431 */;
+import importDefaultResult from "tinycolor" /* 5316 */;
+import saturateResult from "module_1" /* 1 */;
+import saturateResult1 from "module_1" /* 1 */;
 
-const importDefaultResultResult = require("tinycolor")(require("Themes").unsafe_rawColors.WHITE);
-const importDefaultResult1Result = require("tinycolor")(require("Themes").unsafe_rawColors.BLACK);
-const tmp6 = require("createUseCollectiblesShopStyles")({ dark: require("Themes"), light: saturateResult });
-const result = require("createUseCollectiblesShopStyles").fileFinishedImporting("modules/collectibles/useCollectiblesShopStyles.native.tsx");
+const importDefaultResultResult = importDefaultResult(ThemesDefault.unsafe_rawColors.WHITE);
+const importDefaultResult1 = importDefaultResult;
+const importDefaultResult1Result = importDefaultResult(ThemesDefault.unsafe_rawColors.BLACK);
+const tmp6 = createUseCollectiblesShopStylesDefault({ dark: require("module_1"), light: saturateResult });
+const result = require("set").fileFinishedImporting("modules/collectibles/useCollectiblesShopStyles.native.tsx");
 
 export default tmp6;

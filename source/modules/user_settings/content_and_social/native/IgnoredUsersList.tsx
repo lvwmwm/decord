@@ -1,65 +1,74 @@
-// Module ID: 14165
-// Function ID: 14166
+// Module ID: 14233
+// Function ID: 14234
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 4030, 21, 4661, 712, 7139, 7159, 1297, 14159, 1236, 6803, 4734, 6286, 14166, 589, 2]
+// Dependencies: [19, 17, 4033, 21, 4668, 712, 7177, 7197, 1297, 14227, 1236, 6840, 4739, 6317, 14234, 589, 2]
 // Exports: default
 
-// Module 14165 (IgnoredUsersList)
-import "noop";
-import { ScrollView } from "get ActivityIndicator";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14233 (IgnoredUsersList)
+import noopAll from "noop" /* 19 */;
+import initialize from "initialize" /* 589 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Button from "Button" /* 1297 */;
+import Text from "Text" /* 4739 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import context from "context" /* 7177 */;
+import contextDefault from "context" /* 7177 */;
+import getBlockedSource from "getBlockedSource" /* 14227 */;
+import { ScrollView } from "get ActivityIndicator" /* 17 */;
+import closure_4 from "markAllUserIdListsStale" /* 4033 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c5;
-let closure_6;
-const require = arg1;
+require = arg1;
 function IgnoredUsersList(userIds) {
   userIds = userIds.userIds;
-  const tmp = createCacheKey();
-  importDefault(7139);
+  const tmp = callback3();
+  contextDefault;
   if (0 === userIds.length) {
     let obj = { Illustration: null, body: null };
-    obj[0] = require(14159) /* getBlockedSource */.Blocked;
-    const intl = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl.string(require(1236) /* getSystemLocale */.t.PYrWFW);
-    let tmp7 = callback(require(1297) /* Button */.EmptyState, obj);
+    obj[0] = getBlockedSource.Blocked;
+    const intl = getSystemLocale.intl;
+    obj[1] = intl.string(getSystemLocale.t.PYrWFW);
+    let tmp7 = callback(Button.EmptyState, obj);
   } else {
     obj = { value: null, children: null };
     obj[0] = tmp4;
     obj = { bottom: true, style: null, children: null };
     obj[1] = tmp.list;
-    const obj1 = { children: null };
+    obj1 = { children: null };
     const obj2 = { style: null, variant: "text-sm/semibold", color: "text-default", children: null };
     obj2[0] = tmp.sectionLabelStyle;
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     const obj3 = { numberOfIgnoredUsers: null };
     obj3[0] = userIds.length;
-    obj2[3] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.iNKUhU, obj3);
-    const items = [callback(require(4734) /* Text */.Text, obj2), ];
+    obj2[3] = intl2.formatToPlainString(getSystemLocale.t.iNKUhU, obj3);
+    const items = [callback(Text.Text, obj2), ];
     const obj4 = { hasIcons: true, children: null };
     obj4[1] = userIds.map((userId) => callback2(callback(table[14]), { userId }, userId));
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    items[1] = callback(require(6286) /* TableRowGroupTitle */.TableRowGroup, obj4, intl3.string(require(1236) /* getSystemLocale */.t["93ZDWE"]));
+    const intl3 = getSystemLocale.intl;
+    items[1] = callback(TableRowGroupTitle.TableRowGroup, obj4, intl3.string(getSystemLocale.t["93ZDWE"]));
     obj1[0] = items;
     obj[2] = callback2(ScrollView, obj1);
-    obj[1] = callback(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
-    tmp7 = callback(require(7139) /* context */.AnalyticsLocationProvider, obj);
+    obj[1] = callback(SafeAreaPaddingView.SafeAreaPaddingView, obj);
+    tmp7 = callback(context.AnalyticsLocationProvider, obj);
   }
   return tmp7;
 }
+noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { list: null, sectionLabelStyle: null };
-createCacheKey = { marginTop: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { marginTop: ThemesDefault.space.PX_8, paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj1 = { marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
-const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/user_settings/content_and_social/native/IgnoredUsersList.tsx");
+createCacheKey[1] = { marginTop: ThemesDefault.space.PX_12, marginBottom: ThemesDefault.space.PX_8 };
+let closure_7 = createCacheKey.createStyles(createCacheKey);
+let obj1 = { marginTop: ThemesDefault.space.PX_12, marginBottom: ThemesDefault.space.PX_8 };
+const result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/native/IgnoredUsersList.tsx");
 
 export default function ConnectedIgnoredUsersList() {
-  let obj = require(589) /* initialize */;
-  const items = [markAllUserIdListsStale];
+  let obj = initialize;
+  const items = [closure_4];
   obj = { userIds: obj.useStateFromStoresArray(items, () => ignoredIDs.getIgnoredIDs()) };
   return callback(IgnoredUsersList, obj);
 };

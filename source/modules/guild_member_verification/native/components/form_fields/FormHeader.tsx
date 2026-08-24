@@ -1,30 +1,33 @@
-// Module ID: 8913
-// Function ID: 8914
+// Module ID: 8950
+// Function ID: 8951
 // Name: FormHeader
-// Dependencies: [19, 505, 21, 4661, 6782, 712, 1297, 2]
+// Dependencies: [19, 505, 21, 4668, 6819, 712, 1297, 2]
 // Exports: default
 
-// Module 8913 (FormHeader)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "createTextStyle";
+// Module 8950 (FormHeader)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "createTextStyle" /* 6819 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { fieldHeader: null };
 createCacheKey = {};
-let merged = Object.assign(require("createTextStyle")(require("sum").Fonts.DISPLAY_EXTRABOLD, require("Themes").colors.TEXT_SUBTLE, 12, { uppercase: true }));
+let merged = Object.assign(importDefaultResult(require("sum").Fonts.DISPLAY_EXTRABOLD, ThemesDefault.colors.TEXT_SUBTLE, 12, { uppercase: true }));
 createCacheKey.paddingBottom = 8;
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/FormHeader.tsx");
+let closure_3 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/FormHeader.tsx");
 
 export default function FormHeader(children) {
   const merged = Object.assign(children, Object.create(null));
   const obj = {};
   const merged1 = Object.assign(merged);
-  const items = [createCacheKey().fieldHeader, merged.style];
+  const items = [callback().fieldHeader, merged.style];
   obj.style = items;
   obj.children = children.children;
-  return jsx(require(1297) /* Button */.LegacyText, {});
+  return jsx(Button.LegacyText, {});
 };

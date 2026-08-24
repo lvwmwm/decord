@@ -1,20 +1,21 @@
-// Module ID: 14064
-// Function ID: 14065
+// Module ID: 14132
+// Function ID: 14133
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [19, 21, 4066, 14036, 1236, 8620, 8374, 2]
+// Dependencies: [19, 21, 4069, 14104, 1236, 8657, 8413, 2]
 // Exports: default
 
-// Module 14064 (UserProfileLegacyUsernameSwitch)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 14132 (UserProfileLegacyUsernameSwitch)
+import noopAll from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("explicitContentFromProto").fileFinishedImporting("modules/user_profile/native/UserProfileLegacyUsernameSwitch.tsx");
+noopAll;
+let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileLegacyUsernameSwitch.tsx");
 
 export default function UserProfileLegacyUsernameSwitch(username) {
   const pendingLegacyUsernameDisabled = username.pendingLegacyUsernameDisabled;
   let setting;
-  const LegacyUsernameDisabled = setting(4066).LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = setting(4069).LegacyUsernameDisabled;
   setting = LegacyUsernameDisabled.useSetting();
   let tmp4 = setting;
   if (undefined !== pendingLegacyUsernameDisabled) {
@@ -27,14 +28,14 @@ export default function UserProfileLegacyUsernameSwitch(username) {
   obj[2] = intl2.formatToPlainString(setting(1236).t.aYhclf, { username: username.legacyUsername });
   obj[3] = function onValueChange(arg0) {
     if (!arg0 === setting) {
-      const result = setting(outer1_1[5]).resetPendingLegacyUsernameDisabled();
-      const obj3 = setting(outer1_1[5]);
+      const result = setting(closure_1_1[5]).resetPendingLegacyUsernameDisabled();
+      const obj3 = setting(closure_1_1[5]);
     } else {
-      let obj = setting(outer1_1[6]);
+      let obj = setting(closure_1_1[6]);
       obj = { legacyUsernameDisabled: null };
       obj[0] = !arg0;
       obj.setPendingChanges(obj);
     }
   };
-  return jsx(setting(14036).UserProfileEditFormSwitch, { value: !tmp4, label: null, subLabel: null, onValueChange: null });
+  return jsx(setting(14104).UserProfileEditFormSwitch, { value: !tmp4, label: null, subLabel: null, onValueChange: null });
 };

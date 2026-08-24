@@ -1,42 +1,34 @@
-// Module ID: 10253
-// Function ID: 10254
+// Module ID: 10292
+// Function ID: 10293
 // Name: getAutocompleteOptions
-// Dependencies: [7526, 7527, 6899, 6769, 1391, 1990, 1910, 676, 5246, 6810, 10254, 1925, 12, 10255, 6714, 7295, 4066, 7599, 10218, 7298, 1435, 1236, 2]
+// Dependencies: [7564, 7565, 6937, 6806, 1391, 1991, 1910, 676, 5251, 6847, 10293, 1925, 12, 10294, 6751, 7333, 4069, 7637, 10257, 7336, 1435, 1236, 2]
 // Exports: getAutocompleteOptions
 
-// Module 10253 (getAutocompleteOptions)
-import handleInit from "handleInit";
-import closure_4 from "handleInit";
-import closure_5 from "set";
-import loadSavedGuildStickers from "loadSavedGuildStickers";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import ME from "ME";
-import regExp from "regExp";
-import { AutocompleteTypes } from "AutocompleteTypes";
-import set from "set";
-import _executeCommand from "_executeCommand";
-import set from "set";
+// Module 10292 (getAutocompleteOptions)
+import applyDefault from "apply" /* 12 */;
+import _executeCommandDefault from "_executeCommand" /* 10294 */;
+import closure_3 from "handleInit" /* 7564 */;
+import closure_4 from "handleInit" /* 7565 */;
+import closure_5 from "set" /* 6937 */;
+import closure_6 from "loadSavedGuildStickers" /* 6806 */;
+import closure_7 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "createGuildRecordFromRust" /* 1910 */;
+import ME from "ME" /* 676 */;
+import regExp from "regExp" /* 6847 */;
+import { AutocompleteTypes } from "AutocompleteTypes" /* 10293 */;
+import set from "set" /* 1925 */;
 
-let c10;
-let closure_12;
-let closure_14;
-let closure_15;
-let closure_17;
-let closure_18;
-let closure_19;
-let map1;
-let unpackModuleId;
 const require = arg1;
 ({ AutoCompleteResultTypes: c10, MAX_AUTOCOMPLETE_RESULTS: unpackModuleId } = ME);
 ({ MENTION_SENTINEL: closure_12, EMOJI_SENTINEL: map1, CHANNEL_SENTINEL: closure_14, COMMAND_SENTINEL: closure_15 } = regExp);
 ({ EmojiIntention: closure_17, EMOJI_MAX_LENGTH: closure_18, EMOJI_URL_BASE_SIZE: closure_19 } = set);
 let c20 = false;
+let closure_21 = applyDefault.debounce(_executeCommandDefault, require("TRUE_OPTION_NAME").AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { leading: true, trailing: true });
 let result = set.fileFinishedImporting("modules/autocompleter/native/AutocompleteOptions.tsx");
 
 export const getAutocompleteOptions = function getAutocompleteOptions(channel, arg1, setting) {
-  let closure_0 = channel;
+  closure_0 = channel;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -48,9 +40,6 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
   let obj = {
     stores: items,
     queryResults(query, canMentionEveryone) {
-      let globals;
-      let roles;
-      let users;
       let obj = flag(flag2[14]);
       obj = { query, channel: _private, canMentionEveryone: null, canMentionHere: null, canMentionUsers: null, canMentionRoles: null, includeAllGuildUsers: null, includeNonMentionableRoles: null, request: null };
       canMentionEveryone = undefined;
@@ -138,7 +127,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       return flag(flag2[14]).matchSentinel(arg0, arg1, closure_12);
     }
   };
-  items = [trackCommunicationDisabled, closure_5];
+  items = [closure_8, closure_5];
   obj = {
     stores: items1,
     queryResults(query) {
@@ -196,13 +185,13 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       const isPrivateResult = _private.isPrivate();
       let matchSentinelResult = !isPrivateResult;
       if (!isPrivateResult) {
-        matchSentinelResult = flag(flag2[14]).matchSentinel(arg0, arg1, outer1_14);
+        matchSentinelResult = flag(flag2[14]).matchSentinel(arg0, arg1, closure_1_14);
         const obj = flag(flag2[14]);
       }
       return matchSentinelResult;
     }
   };
-  let items2 = [closure_4, handleInit];
+  let items2 = [closure_4, closure_3];
   return {
     [closure_16.MENTIONS]: obj,
     [closure_16.GAME_MENTIONS]: obj,
@@ -214,7 +203,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
           num = 0;
         }
         let obj = flag(flag2[14]);
-        obj = { query, channel: _private, intention: outer1_17.CHAT, maxCount: outer1_11 + num };
+        obj = { query, channel: _private, intention: closure_1_17.CHAT, maxCount: closure_1_11 + num };
         const queryEmojiResultsResult = obj.queryEmojiResults(obj);
         let prop;
         if (includeEmojiPremiumUpsell != null) {
@@ -224,24 +213,24 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
           if (queryEmojiResultsResult.emojis.locked.length > 0) {
             if (queryEmojiResultsResult.emojis.unlocked.length < 4) {
               obj = { type: null, results: null };
-              obj[0] = outer1_10.EMOJI_PREMIUM_UPSELL;
+              obj[0] = closure_1_10.EMOJI_PREMIUM_UPSELL;
               obj[1] = queryEmojiResultsResult.emojis.locked;
               const items = [obj];
               let items5 = items;
             }
             let items1 = [];
             if (flag2) {
-              let hasLoadedStickerPacks = outer1_20;
-              if (!outer1_20) {
-                hasLoadedStickerPacks = outer1_6.hasLoadedStickerPacks;
+              let hasLoadedStickerPacks = c20;
+              if (!c20) {
+                hasLoadedStickerPacks = closure_1_6.hasLoadedStickerPacks;
               }
               if (!hasLoadedStickerPacks) {
-                outer1_20 = true;
+                c20 = true;
                 const stickerPacks = _private(tmp3[18]).fetchStickerPacks();
                 const obj4 = _private(tmp3[18]);
               }
               const items2 = [query];
-              const items3 = [_private, (arg0, arg1) => arg1 === callback(7298).StickerSendability.SENDABLE];
+              const items3 = [_private, (arg0, arg1) => arg1 === callback(7336).StickerSendability.SENDABLE];
               items1 = flag(tmp3[14]).queryStickers(items2, true, items3);
               const tmp2Result = flag(tmp3[14]);
             }
@@ -298,7 +287,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       matches(arg0, arg1, arg2) {
         let tmp = 0 === arg2;
         if (tmp) {
-          tmp = arg0 === outer1_15;
+          tmp = arg0 === closure_1_15;
         }
         if (tmp) {
           let tmp4 = flag;
@@ -320,7 +309,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
           tmp = 0 === arg2;
         }
         if (tmp) {
-          tmp = arg0 === outer1_15;
+          tmp = arg0 === closure_1_15;
         }
         if (tmp) {
           tmp = 0 === arg1.length;
@@ -353,23 +342,23 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
               ({ activeCommand: obj3[0], optionValues: obj3[1] } = option);
               obj = { channel: null, guild: null, autocomplete: null };
               obj[0] = _private;
-              obj[1] = outer1_9.getGuild(_private.guild_id);
-              const obj1 = { name: null, query: null };
+              obj[1] = closure_1_9.getGuild(_private.guild_id);
+              obj1 = { name: null, query: null };
               obj1[0] = option.option.name;
               obj1[1] = first;
               obj[2] = obj1;
               obj[2] = obj;
-              outer1_21(obj);
-              const autocompleteChoices = outer1_3.getAutocompleteChoices(_private.id, option.option.name, first);
+              closure_1_21(obj);
+              const autocompleteChoices = closure_1_3.getAutocompleteChoices(_private.id, option.option.name, first);
               if (null == autocompleteChoices) {
                 const _Array = Array;
                 const array = new Array(4);
                 const obj2 = { type: null };
-                obj2[0] = outer1_10.CHOICE_LOADING;
+                obj2[0] = closure_1_10.CHOICE_LOADING;
                 let fillResult = array.fill(obj2);
               } else if (0 === autocompleteChoices.length) {
                 const obj3 = { type: null, label: null };
-                obj3[0] = outer1_10.LABEL;
+                obj3[0] = closure_1_10.LABEL;
                 const intl = _private(flag2[21]).intl;
                 obj3[1] = intl.string(_private(flag2[21]).t["41014u"]);
                 const items = [obj3];

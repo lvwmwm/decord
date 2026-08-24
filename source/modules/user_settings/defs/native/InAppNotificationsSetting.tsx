@@ -1,22 +1,29 @@
-// Module ID: 14793
-// Function ID: 14794
+// Module ID: 14857
+// Function ID: 14858
 // Name: toggle
-// Dependencies: [8198, 676, 4066, 10024, 1236, 698, 10669, 2]
+// Dependencies: [8238, 676, 4069, 10063, 1236, 698, 10708, 2]
 
-// Module 14793 (toggle)
-import { AnalyticEvents } from "ME";
-import createToggle from "createToggle";
+// Module 14857 (toggle)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import MobileUserSettings from "MobileUserSettings" /* 8238 */;
+import useFocusModeEnabled from "useFocusModeEnabled" /* 10063 */;
+import createToggle from "createToggle" /* 10708 */;
 
+const AnalyticEvents = ME.AnalyticEvents;
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.rqEZdu);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.rqEZdu);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
   useValue: function useInAppNotificationsSettingValue() {
-    const FocusMode = require(4066) /* explicitContentFromProto */.FocusMode;
+    const FocusMode = explicitContentFromProto.FocusMode;
     const setting = FocusMode.useSetting();
-    const ShowInAppNotifications = require(4066) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = explicitContentFromProto.ShowInAppNotifications;
     let setting1 = !setting;
     if (!setting) {
       setting1 = ShowInAppNotifications.useSetting();
@@ -24,9 +31,9 @@ const toggle = createToggle.createToggle({
     return setting1;
   },
   onValueChange: function updateInAppNotificationSettings(notifications_in_app_enabled) {
-    const ShowInAppNotifications = require(4066) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = explicitContentFromProto.ShowInAppNotifications;
     ShowInAppNotifications.updateSetting(notifications_in_app_enabled);
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     obj = { notifications_in_app_enabled };
     obj.track(AnalyticEvents.LOCAL_SETTINGS_UPDATED, obj);
   },
@@ -38,18 +45,18 @@ const toggle = createToggle.createToggle({
     }
     return stringResult;
   },
-  useIsDisabled: require("useFocusModeEnabled").useFocusModeEnabled
+  useIsDisabled: useFocusModeEnabled.useFocusModeEnabled
 });
 let obj = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.rqEZdu);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t.rqEZdu);
   },
-  parent: require("MobileUserSettings").MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
   useValue: function useInAppNotificationsSettingValue() {
-    const FocusMode = require(4066) /* explicitContentFromProto */.FocusMode;
+    const FocusMode = explicitContentFromProto.FocusMode;
     const setting = FocusMode.useSetting();
-    const ShowInAppNotifications = require(4066) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = explicitContentFromProto.ShowInAppNotifications;
     let setting1 = !setting;
     if (!setting) {
       setting1 = ShowInAppNotifications.useSetting();
@@ -57,9 +64,9 @@ let obj = {
     return setting1;
   },
   onValueChange: function updateInAppNotificationSettings(notifications_in_app_enabled) {
-    const ShowInAppNotifications = require(4066) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = explicitContentFromProto.ShowInAppNotifications;
     ShowInAppNotifications.updateSetting(notifications_in_app_enabled);
-    let obj = importDefault(698);
+    let obj = expandEventPropertiesDefault;
     obj = { notifications_in_app_enabled };
     obj.track(AnalyticEvents.LOCAL_SETTINGS_UPDATED, obj);
   },
@@ -71,8 +78,8 @@ let obj = {
     }
     return stringResult;
   },
-  useIsDisabled: require("useFocusModeEnabled").useFocusModeEnabled
+  useIsDisabled: useFocusModeEnabled.useFocusModeEnabled
 };
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/InAppNotificationsSetting.tsx");
+const result = set.fileFinishedImporting("modules/user_settings/defs/native/InAppNotificationsSetting.tsx");
 
 export default toggle;

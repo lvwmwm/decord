@@ -1,51 +1,50 @@
-// Module ID: 9598
-// Function ID: 9599
+// Module ID: 9635
+// Function ID: 9636
 // Name: GiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 4115, 4661, 712, 1494, 4664, 1297, 9599, 9625, 2]
+// Dependencies: [32, 19, 17, 21, 4119, 4668, 712, 1494, 4671, 1297, 9636, 9662, 2]
 // Exports: default
 
-// Module 9598 (GiftBackgroundSelect)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4115";
+// Module 9635 (GiftBackgroundSelect)
+import ThemesDefault from "Themes" /* 712 */;
+import NativeGiftContextProvider from "NativeGiftContextProvider" /* 9662 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "module_4119" /* 4119 */;
 
-let c5;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 class GiftBackgroundSelect {
   constructor(arg0) {
     flag = global.withConsistentHeight;
     if (flag === undefined) {
       flag = true;
     }
-    useState = undefined;
-    c1 = undefined;
-    c2 = undefined;
-    tmp = createAnimatedComponent();
-    tmp2 = _slicedToArray(noop.useState(), 2);
+    closure_0 = undefined;
+    closure_1 = undefined;
+    closure_2 = undefined;
+    tmp = closure_9();
+    tmp2 = closure_3(closure_4.useState(), 2);
     first = tmp2[0];
-    useState = first;
-    c1 = tmp2[1];
-    obj = require("module_4115");
+    closure_0 = first;
+    closure_1 = tmp2[1];
+    obj = require("module_4119");
     sharedValue = obj.useSharedValue(false);
-    c2 = sharedValue;
+    closure_2 = sharedValue;
     items = [, ];
     items[0] = first;
     items[1] = sharedValue;
-    effect = noop.useEffect(() => {
+    effect = closure_4.useEffect(() => {
       const result = sharedValue.set(null != first);
     }, items);
-    obj2 = require("module_4115");
+    obj2 = require("module_4119");
     class N {
       constructor() {
-        tmp = useState;
-        tmp2 = c2;
+        tmp = closure_0;
+        tmp2 = closure_2;
         obj = require("CONFIG_NEVER_ANIMATE_TIMING");
         num = 0;
-        if (c2.get()) {
+        if (closure_2.get()) {
           num = 1;
         }
         obj = { opacity: null };
@@ -57,7 +56,7 @@ class GiftBackgroundSelect {
     obj = { STANDARD_EASING: require("Button").STANDARD_EASING, withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, visibility: sharedValue };
     N.__closure = obj;
     N.__workletHash = 5743780040676;
-    N.__initData = createAnimatedComponent;
+    N.__initData = closure_10;
     animatedStyle = obj2.useAnimatedStyle(N);
     tmp7 = jsxs;
     tmp8 = Fragment;
@@ -78,7 +77,7 @@ class GiftBackgroundSelect {
     items2 = [, ];
     items2[0] = tmp.contentContainer;
     obj2 = null != first;
-    tmp10 = createAnimatedComponent;
+    tmp10 = closure_8;
     if (obj2) {
       obj2 = first < require("useWindowDimensions")().width;
     }
@@ -98,17 +97,17 @@ class GiftBackgroundSelect {
   }
 }
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
-let closure_8 = require("module_4115").createAnimatedComponent(require("get ActivityIndicator").ScrollView);
+let closure_8 = importDefaultResult.createAnimatedComponent(require("get ActivityIndicator").ScrollView);
 let obj = { scrollView: null, contentContainer: null };
-obj = { flex: 1, marginTop: require("Themes").space.PX_24 };
+obj = { flex: 1, marginTop: ThemesDefault.space.PX_24 };
 obj[0] = obj;
 obj[1] = { justifyContent: "center" };
 let closure_9 = createCacheKey.createStyles(obj);
 let closure_10 = { code: "function PremiumGiftBackgroundSelectTsx1(){const{STANDARD_EASING,withTiming,visibility}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:100};return{opacity:withTiming(visibility.get()?1:0,animationSettings)};}" };
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundSelect.tsx");
+let result = require("set").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundSelect.tsx");
 
 export default function PremiumGiftBackgroundSelect() {
-  let obj = require(9625) /* NativeGiftContextProvider */;
+  let obj = NativeGiftContextProvider;
   const nativeGiftContext = obj.useNativeGiftContext();
   obj = { giftStyle: nativeGiftContext.giftStyle, setGiftStyle: nativeGiftContext.setGiftStyle };
   return callback2(GiftBackgroundSelect, obj);

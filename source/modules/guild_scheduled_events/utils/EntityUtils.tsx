@@ -1,15 +1,13 @@
-// Module ID: 8788
-// Function ID: 8789
+// Module ID: 8825
+// Function ID: 8826
 // Name: getChannelFromEvent
 // Dependencies: [1391, 1397, 2]
 // Exports: getChannelFromEvent, getChannelTypeFromEntity, getLocationFromEvent, getLocationFromEventData
 
-// Module 8788 (getChannelFromEvent)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
+// Module 8825 (getChannelFromEvent)
+import closure_0 from "ensureGuildLoaded" /* 1391 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 
-let closure_1;
-let obj1;
 ({ GuildScheduledEventEntityTypes: closure_1, EntityChannelTypes: obj1 } = GUILD_EVENT_MAX_NAME_LENGTH);
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/utils/EntityUtils.tsx");
 

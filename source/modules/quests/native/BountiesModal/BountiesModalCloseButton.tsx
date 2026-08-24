@@ -1,31 +1,35 @@
-// Module ID: 14407
-// Function ID: 14408
+// Module ID: 14475
+// Function ID: 14476
 // Name: BountiesModalCloseButton
-// Dependencies: [19, 21, 4661, 712, 5433, 1236, 6368, 2]
+// Dependencies: [19, 21, 4668, 712, 5438, 1236, 6399, 2]
 // Exports: default
 
-// Module 14407 (BountiesModalCloseButton)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14475 (BountiesModalCloseButton)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import PressableBase from "PressableBase" /* 5438 */;
+import XSmallIcon from "XSmallIcon" /* 6399 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 let closure_4 = createCacheKey.createStyles(() => {
   let obj = { closeButton: null };
-  obj = { alignItems: "center", justifyContent: "center", backgroundColor: importDefault(712).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(712).radii.round, width: importDefault(712).space.PX_32, height: importDefault(712).space.PX_32 };
+  obj = { alignItems: "center", justifyContent: "center", backgroundColor: ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: ThemesDefault.radii.round, width: ThemesDefault.space.PX_32, height: ThemesDefault.space.PX_32 };
   obj[0] = obj;
   return obj;
 });
-const result = require("createCacheKey").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalCloseButton.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalCloseButton.tsx");
 
 export default function BountiesModalCloseButton(onPress) {
   let obj = { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12, onPress: null, style: null, children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t.cpT0Cq);
   obj[3] = onPress.onPress;
   obj[4] = callback().closeButton;
-  obj = { size: "sm", color: null };
-  obj[1] = importDefault(712).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT;
-  obj[5] = jsx(require(6368) /* XSmallIcon */.XSmallIcon, { size: "sm", color: null });
-  return jsx(require(5433) /* PressableBase */.PressableOpacity, { size: "sm", color: null });
+  obj = { size: "sm", color: ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
+  obj[5] = jsx(XSmallIcon.XSmallIcon, { size: "sm", color: ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT });
+  return jsx(PressableBase.PressableOpacity, { size: "sm", color: ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT });
 };

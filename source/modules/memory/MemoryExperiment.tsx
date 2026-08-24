@@ -1,10 +1,11 @@
-// Module ID: 13776
-// Function ID: 13777
+// Module ID: 13834
+// Function ID: 13835
 // Name: ApexExperiment
 // Dependencies: [1472, 2]
 
-// Module 13776 (ApexExperiment)
-import ApexExperiment from "ApexExperiment";
+// Module 13834 (ApexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };
@@ -22,4 +23,4 @@ const interval = setInterval(() => {
     clearInterval(closure_1);
   }
 }, 60000);
-const result = require("set").fileFinishedImporting("modules/memory/MemoryExperiment.tsx");
+const result = set.fileFinishedImporting("modules/memory/MemoryExperiment.tsx");

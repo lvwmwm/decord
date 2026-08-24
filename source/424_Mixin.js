@@ -4,12 +4,17 @@
 // Dependencies: [109, 19, 21, 273, 68, 425, 427, 294]
 
 // Module 424 (Mixin)
-import "noop";
-import { jsx } from "jsxProd";
+import noopAll from "noop" /* 19 */;
+import measureDefault from "measure" /* 68 */;
+import _objectWithoutPropertiesDefault from "_objectWithoutProperties" /* 109 */;
+import get_VersionDefault from "get Version" /* 273 */;
+import SoundManagerDefault from "SoundManager" /* 294 */;
+import PositionDefault from "Position" /* 425 */;
+import BoundingDimensionsDefault from "BoundingDimensions" /* 427 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let touchableHandleBlur;
-let touchableHandleFocus;
-const f18646 = (arg0) => {
+noopAll;
+const f18740 = (arg0) => {
 
 };
 const NOT_RESPONDER = "NOT_RESPONDER";
@@ -40,7 +45,7 @@ const LONG_PRESS_DETECTED = "LONG_PRESS_DETECTED";
 let closure_18 = { NOT_RESPONDER: { DELAY: "ERROR", RESPONDER_GRANT: "RESPONDER_INACTIVE_PRESS_IN", RESPONDER_RELEASE: "ERROR", RESPONDER_TERMINATED: "ERROR", ENTER_PRESS_RECT: "ERROR", LEAVE_PRESS_RECT: "ERROR", LONG_PRESS_DETECTED: "ERROR" }, RESPONDER_INACTIVE_PRESS_IN: { DELAY: "RESPONDER_ACTIVE_PRESS_IN", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_INACTIVE_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_INACTIVE_PRESS_OUT", LONG_PRESS_DETECTED: "ERROR" }, RESPONDER_INACTIVE_PRESS_OUT: { DELAY: "RESPONDER_ACTIVE_PRESS_OUT", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_INACTIVE_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_INACTIVE_PRESS_OUT", LONG_PRESS_DETECTED: "ERROR" }, RESPONDER_ACTIVE_PRESS_IN: { DELAY: "ERROR", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_ACTIVE_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_ACTIVE_PRESS_OUT", LONG_PRESS_DETECTED: "RESPONDER_ACTIVE_LONG_PRESS_IN" }, RESPONDER_ACTIVE_PRESS_OUT: { DELAY: "ERROR", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_ACTIVE_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_ACTIVE_PRESS_OUT", LONG_PRESS_DETECTED: "ERROR" }, RESPONDER_ACTIVE_LONG_PRESS_IN: { DELAY: "ERROR", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_ACTIVE_LONG_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_ACTIVE_LONG_PRESS_OUT", LONG_PRESS_DETECTED: "RESPONDER_ACTIVE_LONG_PRESS_IN" }, RESPONDER_ACTIVE_LONG_PRESS_OUT: { DELAY: "ERROR", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_ACTIVE_LONG_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_ACTIVE_LONG_PRESS_OUT", LONG_PRESS_DETECTED: "ERROR" }, error: { DELAY: "NOT_RESPONDER", RESPONDER_GRANT: "RESPONDER_INACTIVE_PRESS_IN", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "NOT_RESPONDER", LEAVE_PRESS_RECT: "NOT_RESPONDER", LONG_PRESS_DETECTED: "NOT_RESPONDER" } };
 let obj2 = {
   componentDidMount() {
-    const isTV = importDefault(273).isTV;
+    const isTV = get_VersionDefault.isTV;
   },
   componentWillUnmount() {
     const self = this;
@@ -117,12 +122,6 @@ let obj2 = {
     this._receiveSignal(RESPONDER_TERMINATED, arg0);
   },
   touchableHandleResponderMove(nativeEvent) {
-    let bottom;
-    let changedTouches;
-    let left;
-    let right;
-    let top;
-    let touches;
     const self = this;
     if (this.state.touchable.positionOnActivate) {
       const positionOnActivate = self.state.touchable.positionOnActivate;
@@ -164,7 +163,7 @@ let obj2 = {
         const tmp6 = touchableGetHitSlopResult.left || 0;
       }
       nativeEvent = nativeEvent.nativeEvent;
-      if (typeof f18646 !== "function") {
+      if (typeof f18740 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       ({ touches, changedTouches } = nativeEvent);
@@ -232,8 +231,8 @@ let obj2 = {
     const responderID = this.state.touchable.responderID;
     if (null != responderID) {
       if (typeof responderID === "number") {
-        importDefault(68).measure(responderID, self._handleQueryLayout);
-        const obj = importDefault(68);
+        measureDefault.measure(responderID, self._handleQueryLayout);
+        obj = measureDefault;
       } else {
         responderID.measure(self._handleQueryLayout);
       }
@@ -259,17 +258,17 @@ let obj2 = {
     if (tmp) {
       const self = this;
       if (this.state.touchable.positionOnActivate) {
-        importDefault(425).release(self.state.touchable.positionOnActivate);
-        const obj = importDefault(425);
+        PositionDefault.release(self.state.touchable.positionOnActivate);
+        obj = PositionDefault;
       }
       if (self.state.touchable.dimensionsOnActivate) {
-        importDefault(427).release(self.state.touchable.dimensionsOnActivate);
-        const obj2 = importDefault(427);
+        BoundingDimensionsDefault.release(self.state.touchable.dimensionsOnActivate);
+        const obj2 = BoundingDimensionsDefault;
       }
-      self.state.touchable.positionOnActivate = importDefault(425).getPooled(arg4, arg5);
-      const obj3 = importDefault(425);
-      self.state.touchable.dimensionsOnActivate = importDefault(427).getPooled(arg2, arg3);
-      const obj4 = importDefault(427);
+      self.state.touchable.positionOnActivate = PositionDefault.getPooled(arg4, arg5);
+      const obj3 = PositionDefault;
+      self.state.touchable.dimensionsOnActivate = BoundingDimensionsDefault.getPooled(arg2, arg3);
+      const obj4 = BoundingDimensionsDefault;
     }
   },
   _handleDelay(persist) {
@@ -303,7 +302,7 @@ let obj2 = {
           if ("Touchable cannot transition from `" + touchState + "` to `" + arg0 + "` for responder `" + typeof self.state.touchable.responderID === "number") {
             str9 = self.state.touchable.responderID;
           }
-          const error = new Error(str9);
+          error = new Error(str9);
           throw error;
         } else if (touchState !== tmp) {
           const result = self._performSideEffectsForTransition(touchState, tmp, arg0, nativeEvent);
@@ -336,10 +335,8 @@ let obj2 = {
     return tmp;
   },
   _savePressInLocation(nativeEvent) {
-    let changedTouches;
-    let touches;
     nativeEvent = nativeEvent.nativeEvent;
-    if (typeof f18646 !== "function") {
+    if (typeof f18740 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     ({ touches, changedTouches } = nativeEvent);
@@ -372,7 +369,7 @@ let obj2 = {
         locationY = first.locationY;
       }
       const self = this;
-      const obj = { pageX: null, pageY: null, locationX: null, locationY: null };
+      obj = { pageX: null, pageY: null, locationX: null, locationY: null };
       obj[0] = pageX;
       obj[1] = pageY;
       obj[2] = locationX;
@@ -455,7 +452,7 @@ let obj2 = {
               self._endHighlight(nativeEvent);
             }
             if (!self.props.touchSoundDisabled) {
-              obj = importDefault(294);
+              obj = SoundManagerDefault;
               obj.playTouchSound();
             }
             self.touchableHandlePress(nativeEvent);
@@ -502,13 +499,11 @@ let obj2 = {
   withoutDefaultFocusAndBlur: {}
 };
 ({ touchableHandleFocus, touchableHandleBlur } = obj2);
-obj2.withoutDefaultFocusAndBlur = require("_objectWithoutProperties")(obj2, ["touchableHandleFocus", "touchableHandleBlur"]);
+obj2.withoutDefaultFocusAndBlur = _objectWithoutPropertiesDefault(obj2, ["touchableHandleFocus", "touchableHandleBlur"]);
 
 export default {
   Mixin: obj2,
   renderDebugView(arg0) {
-    let color;
-    let hitSlop;
     ({ color, hitSlop } = arg0);
     return null;
   }

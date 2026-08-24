@@ -1,33 +1,36 @@
-// Module ID: 14719
-// Function ID: 14720
+// Module ID: 14783
+// Function ID: 14784
 // Name: useEnableSwitchIconsSettingValue
-// Dependencies: [4662, 8198, 589, 1367, 10669, 1236, 13813, 2]
+// Dependencies: [4669, 8238, 589, 1367, 10708, 1236, 13871, 2]
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 14719 (useEnableSwitchIconsSettingValue)
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import createToggle from "createToggle";
+// Module 14783 (useEnableSwitchIconsSettingValue)
+import initialize from "initialize" /* 589 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 function useEnableSwitchIconsSettingValue() {
-  const items = [maybeApplyNoTextColorForLightCustomTheme];
-  return require(589) /* initialize */.useStateFromStores(items, () => isSwitchIconsEnabled.isSwitchIconsEnabled);
+  const items = [closure_3];
+  return initialize.useStateFromStores(items, () => isSwitchIconsEnabled.isSwitchIconsEnabled);
 }
 createToggle = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["S3z+pV"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["S3z+pV"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
   useValue: useEnableSwitchIconsSettingValue,
   onValueChange: require("setFontSize").setSwitchIconsEnabled,
   usePredicate: function useShowSwitchIconsSetting() {
-    return importDefault(1367)("SettingsAccessibilityScreen");
+    return useIsMobileVisualRefreshExperimentEnabledDefault("SettingsAccessibilityScreen");
   },
   hasIcon: true
 };
 createToggle = createToggle.createToggle(createToggle);
-const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/EnableSwitchIconsSetting.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/EnableSwitchIconsSetting.tsx");
 
 export default createToggle;
 export { useEnableSwitchIconsSettingValue };

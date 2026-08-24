@@ -4,7 +4,10 @@
 // Dependencies: [114, 145]
 
 // Module 144 (set)
-const require = arg1;
+import renderElement from "renderElement" /* 114 */;
+import Commands2 from "Commands" /* 145 */;
+
+require = arg1;
 const dependencyMap = arg6;
 let c2 = null;
 const set = new Set();
@@ -31,7 +34,7 @@ arg5.default = {
     }
   },
   currentlyFocusedField() {
-    return require(114) /* renderElement */.findNodeHandle(c2);
+    return renderElement.findNodeHandle(c2);
   },
   focusField(arg0) {
 
@@ -52,7 +55,7 @@ arg5.default = {
             if (tmp4) {
               closure_2 = self;
             }
-            const Commands = require(145) /* Commands */.Commands;
+            const Commands = Commands2.Commands;
             Commands.focus(self);
             tmp4 = closure_2 !== self && null != self;
           }
@@ -76,7 +79,7 @@ arg5.default = {
       if (tmp4) {
         c2 = null;
       }
-      const Commands = require(145) /* Commands */.Commands;
+      const Commands = Commands2.Commands;
       Commands.blur(result);
     }
   },

@@ -1,41 +1,40 @@
-// Module ID: 14671
-// Function ID: 14672
+// Module ID: 14739
+// Function ID: 14740
 // Name: computeIsFavoritesGuildVisible
-// Dependencies: [4197, 1394, 1913, 9988, 9979, 589, 2]
+// Dependencies: [4201, 1394, 1913, 10027, 10018, 589, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 14671 (computeIsFavoritesGuildVisible)
-import handleConnectionOpen from "handleConnectionOpen";
-import initializeFromUserSettings from "initializeFromUserSettings";
+// Module 14739 (computeIsFavoritesGuildVisible)
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10018 */;
+import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 10027 */;
+import closure_2 from "handleConnectionOpen" /* 4201 */;
+import closure_3 from "initializeFromUserSettings" /* 1394 */;
 
-const require = arg1;
-function computeIsFavoritesGuildVisible(initializeFromUserSettings, handleConnectionOpen, isExperimentEnabled) {
-  let hasAccess;
-  let isFreemium;
-  let isIntroPopoverShown;
-  let keepWhileViewing;
+require = arg1;
+function computeIsFavoritesGuildVisible(closure_3, closure_2, isExperimentEnabled) {
   ({ isFreemium, hasAccess, isIntroPopoverShown, keepWhileViewing } = isExperimentEnabled);
   isExperimentEnabled = isExperimentEnabled.isExperimentEnabled;
   if (isExperimentEnabled) {
     let tmp2 = !keepWhileViewing;
     if (keepWhileViewing) {
-      tmp2 = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(handleConnectionOpen.getGuildId());
-      const obj = require(1913) /* getFavoritesAwareGuildName */;
+      tmp2 = !getFavoritesAwareGuildName.isFavoritesGuildId(closure_2.getGuildId());
+      const obj = getFavoritesAwareGuildName;
     }
     let tmp6 = !tmp2;
     if (tmp2) {
       let tmp8 = !hasAccess;
       if (hasAccess) {
-        tmp8 = false === initializeFromUserSettings.favoriteGuildVisibleSetting;
+        tmp8 = false === closure_3.favoriteGuildVisibleSetting;
       }
       let tmp9 = !tmp8;
       if (!tmp8) {
-        let favoriteGuildEnabled = initializeFromUserSettings.favoriteGuildEnabled;
+        let favoriteGuildEnabled = closure_3.favoriteGuildEnabled;
         if (!favoriteGuildEnabled) {
           if (isFreemium) {
             if (!isIntroPopoverShown) {
-              isIntroPopoverShown = require(9988) /* hasOfferedFavoritesGuildOnboarding */.hasOfferedFavoritesGuildOnboarding();
-              const obj2 = require(9988) /* hasOfferedFavoritesGuildOnboarding */;
+              isIntroPopoverShown = hasOfferedFavoritesGuildOnboarding.hasOfferedFavoritesGuildOnboarding();
+              const obj2 = hasOfferedFavoritesGuildOnboarding;
             }
             isFreemium = isIntroPopoverShown;
           }
@@ -49,7 +48,7 @@ function computeIsFavoritesGuildVisible(initializeFromUserSettings, handleConnec
   }
   return isExperimentEnabled;
 }
-const result = require("getFavoritesAwareGuildName").fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildVisible.tsx");
+const result = require("set").fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildVisible.tsx");
 
 export default function useIsFavoritesGuildVisible() {
   let flag = arg0;
@@ -72,9 +71,8 @@ export default function useIsFavoritesGuildVisible() {
   return flag(isExperimentEnabled[5]).useStateFromStores(items, () => isFavoritesIntroPopoverShown(hasAccess, isFreemium, { isExperimentEnabled, isFreemium, hasAccess, isIntroPopoverShown: isFavoritesIntroPopoverShown, keepWhileViewing: flag }), items1);
 };
 export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
-  let obj = require(9979) /* useFavoritesAccess */;
+  let obj = useFavoritesAccess;
   const favoritesAccess = obj.getFavoritesAccess();
-  obj = { isExperimentEnabled: favoritesAccess.isExperimentEnabled, isFreemium: favoritesAccess.isFreemium, hasAccess: favoritesAccess.hasAccess, isIntroPopoverShown: null, keepWhileViewing: true };
-  obj[3] = require(9988) /* hasOfferedFavoritesGuildOnboarding */.isFavoritesIntroPopoverShown();
-  return computeIsFavoritesGuildVisible(initializeFromUserSettings, handleConnectionOpen, obj);
+  obj = { isExperimentEnabled: favoritesAccess.isExperimentEnabled, isFreemium: favoritesAccess.isFreemium, hasAccess: favoritesAccess.hasAccess, isIntroPopoverShown: hasOfferedFavoritesGuildOnboarding.isFavoritesIntroPopoverShown(), keepWhileViewing: true };
+  return computeIsFavoritesGuildVisible(closure_3, closure_2, obj);
 };

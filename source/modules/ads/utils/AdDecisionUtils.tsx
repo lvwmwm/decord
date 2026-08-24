@@ -1,12 +1,15 @@
-// Module ID: 7468
-// Function ID: 7469
+// Module ID: 7506
+// Function ID: 7507
 // Name: result
-// Dependencies: [687, 7469, 2]
+// Dependencies: [687, 7507, 2]
 // Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredQuestId, questAdDecisionFromAdDecision, resolveResponseTtl
 
-// Module 7468 (result)
-const require = arg1;
-let result = 6 * require("set").Millis.HOUR;
+// Module 7506 (result)
+import setDefault from "set" /* 687 */;
+import AdCreativeType from "AdCreativeType" /* 7507 */;
+
+require = arg1;
+let result = 6 * setDefault.Millis.HOUR;
 const result1 = require("set").fileFinishedImporting("modules/ads/utils/AdDecisionUtils.tsx");
 
 export const MAX_RESPONSE_TTL_MS = result;
@@ -15,11 +18,11 @@ export const getDeliveredAdCreativeId = function getDeliveredAdCreativeId(creati
     return null;
   } else {
     const type = creative.type;
-    if (require(7469) /* AdCreativeType */.AdCreativeType.QUEST === type) {
+    if (AdCreativeType.AdCreativeType.QUEST === type) {
       return creative.questId;
-    } else if (tmp(7469).AdCreativeType.BOUNTY === type) {
+    } else if (tmp(7507).AdCreativeType.BOUNTY === type) {
       return creative.bounty.id;
-    } else if (tmp(7469).AdCreativeType.QUEST_HOME_HERO === type) {
+    } else if (tmp(7507).AdCreativeType.QUEST_HOME_HERO === type) {
       return creative.questHomeHero.id;
     }
   }
@@ -30,7 +33,7 @@ export const getDeliveredQuestId = function getDeliveredQuestId(creative) {
     type = creative.type;
   }
   let questId = null;
-  if (type === require(7469) /* AdCreativeType */.AdCreativeType.QUEST) {
+  if (type === AdCreativeType.AdCreativeType.QUEST) {
     questId = creative.questId;
   }
   return questId;
@@ -41,7 +44,7 @@ export const getDeliveredBounty = function getDeliveredBounty(creative1) {
     type = creative1.type;
   }
   let bounty = null;
-  if (type === require(7469) /* AdCreativeType */.AdCreativeType.BOUNTY) {
+  if (type === AdCreativeType.AdCreativeType.BOUNTY) {
     bounty = creative1.bounty;
   }
   return bounty;
@@ -50,7 +53,7 @@ export const resolveResponseTtl = function resolveResponseTtl(responseTtlSeconds
   if (null == responseTtlSeconds) {
     return closure_2;
   } else {
-    const result = 1000 * responseTtlSeconds;
+    result = 1000 * responseTtlSeconds;
     let tmp3 = closure_2;
     if (result < closure_2) {
       tmp3 = tmp2;
@@ -67,7 +70,7 @@ export const questAdDecisionFromAdDecision = function questAdDecisionFromAdDecis
   if (null == response_ttl_seconds) {
     let tmp3 = closure_2;
   } else {
-    const result = 1000 * response_ttl_seconds;
+    result = 1000 * response_ttl_seconds;
     tmp3 = closure_2;
     if (result < closure_2) {
       tmp3 = tmp2;

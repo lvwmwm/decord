@@ -1,25 +1,26 @@
-// Module ID: 8146
-// Function ID: 8147
+// Module ID: 8185
+// Function ID: 8186
 // Name: Arrow
-// Dependencies: [19, 21, 4661, 712, 1297, 8147, 2]
+// Dependencies: [19, 21, 4668, 712, 1297, 8186, 2]
 // Exports: default
 
-// Module 8146 (Arrow)
-import "noop";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8185 (Arrow)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import registerAssetDefault from "registerAsset" /* 8186 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-const require = arg1;
+require = arg1;
+noopAll;
 createCacheKey = { tintColor: null };
-createCacheKey = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("createCacheKey").fileFinishedImporting("modules/in_app_reports/native/components/Arrow.tsx");
+let closure_4 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/in_app_reports/native/components/Arrow.tsx");
 
 export default function Arrow() {
-  const obj = { source: null, size: null, style: null };
-  obj[0] = importDefault(8147);
-  obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
-  obj[2] = createCacheKey().tintColor;
-  return jsx(require(1297) /* Button */.Icon, { source: null, size: null, style: null });
+  const tmp = callback();
+  return jsx(Button.Icon, { source: registerAssetDefault, size: Button.Icon.Sizes.MEDIUM, style: callback().tintColor });
 };

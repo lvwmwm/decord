@@ -1,30 +1,28 @@
-// Module ID: 6935
-// Function ID: 6936
+// Module ID: 6973
+// Function ID: 6974
 // Name: DropdownOptionRow
-// Dependencies: [19, 17, 6727, 6788, 1925, 21, 4661, 647, 6930, 1435, 1297, 1236, 4734, 6936, 1629, 4342, 6949, 6950, 6952, 4745, 2]
+// Dependencies: [19, 17, 6764, 6825, 1925, 21, 4668, 647, 6968, 1435, 1297, 1236, 4739, 6974, 1629, 4346, 6987, 6988, 6990, 4750, 2]
 // Exports: default
 
-// Module 6935 (DropdownOptionRow)
-import Button from "Button";
-import { View } from "Background";
-import getEmojiToGroupId from "getEmojiToGroupId";
-import handleUpdate from "handleUpdate";
-import { EMOJI_URL_BASE_SIZE } from "set";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 6973 (DropdownOptionRow)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "getEmojiToGroupId" /* 6764 */;
+import closure_6 from "handleUpdate" /* 6825 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c9;
-let metroImportAll;
-const require = arg1;
+require = arg1;
 function DropdownOptionRow(option) {
-  let onSelect;
-  let responses;
   option = option.option;
   ({ responses, onSelect } = option);
   let selected;
   const tmp = callback3();
   let obj = option(selected[7]);
-  const items = [getEmojiToGroupId];
+  const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const emoji = option.emoji;
     let id;
@@ -38,7 +36,7 @@ function DropdownOptionRow(option) {
       if (emoji2 != null) {
         id1 = emoji2.id;
       }
-      usableCustomEmojiById = outer1_5.getUsableCustomEmojiById(id1);
+      usableCustomEmojiById = closure_1_5.getUsableCustomEmojiById(id1);
     }
     return usableCustomEmojiById;
   });
@@ -59,7 +57,7 @@ function DropdownOptionRow(option) {
     ({ optionTextEmoji: obj3[0], optionImageEmoji: obj3[1] } = tmp);
     let emojiURL;
     if (null != stateFromStores) {
-      const obj1 = { id: null, animated: null, size: null };
+      obj1 = { id: null, animated: null, size: null };
       ({ id: obj5[0], animated: obj5[1] } = stateFromStores);
       obj1[2] = EMOJI_URL_BASE_SIZE;
       emojiURL = tmp12(tmp3[9]).getEmojiURL(obj1);
@@ -106,23 +104,19 @@ function DropdownOptionRow(option) {
   const label = callback2(View, obj3);
   return callback(onSelect(selected[13]), { label, selected, leading, trailing, onPress });
 }
-({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+({ jsx: closure_8, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles({ optionTextEmoji: { fontSize: 24, lineHeight: 24, paddingTop: 5 }, optionImageEmoji: { height: 24, width: 24 }, newBadge: { fontWeight: "bold" }, labelRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, closeButtonWrapper: { marginTop: 16, marginHorizontal: 16 } });
-const result = require("getEmojiToGroupId").fileFinishedImporting("modules/guild_onboarding/native/DropdownOptionsActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_onboarding/native/DropdownOptionsActionSheet.tsx");
 
 export default function DropdownOptionsActionSheet(arg0) {
-  let Button;
-  let dependencyMap;
-  let importDefault;
-  let require;
-  ({ guildId: require, promptId: importDefault, canBeNew: dependencyMap, onSelect: Button } = arg0);
-  let closure_4;
-  let obj = require(647) /* defaultAreStatesEqual */;
-  const items = [handleUpdate];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getOnboardingPrompt(closure_1));
-  let obj1 = require(647) /* defaultAreStatesEqual */;
-  const items1 = [handleUpdate];
-  closure_4 = obj1.useStateFromStoresArray(items1, () => outer1_6.getOnboardingResponsesForPrompt(closure_0, closure_1));
+  ({ guildId: require, promptId: importDefault, canBeNew: dependencyMap, onSelect: closure_3 } = arg0);
+  closure_4 = undefined;
+  let obj = defaultAreStatesEqual;
+  const items = [closure_6];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getOnboardingPrompt(closure_1));
+  obj1 = defaultAreStatesEqual;
+  const items1 = [closure_6];
+  closure_4 = obj1.useStateFromStoresArray(items1, () => closure_1_6.getOnboardingResponsesForPrompt(closure_0, closure_1));
   if (null == stateFromStores) {
     return null;
   } else {
@@ -130,16 +124,16 @@ export default function DropdownOptionsActionSheet(arg0) {
     const intl = tmp3(1236).intl;
     obj[0] = intl.string(tmp3(1236).t.E2ICbC);
     obj = { scrollable: true, header: null, children: null };
-    obj[1] = callback(tmp3(6949).BottomSheetTitleHeader, obj);
+    obj[1] = callback(tmp3(6987).BottomSheetTitleHeader, obj);
     obj1 = { contentContainerStyle: null, children: null };
     const obj2 = { paddingBottom: null };
-    obj2[0] = importDefault(1629)().bottom;
+    obj2[0] = useSafeAreaInsetsDefault().bottom;
     obj1[0] = obj2;
     const obj3 = { accessibilityRole: "radiogroup", accessibilityLabel: null, children: null };
     const intl2 = tmp3(1236).intl;
     obj3[1] = intl2.string(tmp3(1236).t.E2ICbC);
     const options = stateFromStores.options;
-    obj3[2] = options.map((id) => outer1_8(outer1_11, { option: id, responses: closure_4, onSelect: Button, canBeNew: Boolean(closure_2) }, id.id));
+    obj3[2] = options.map((id) => closure_1_8(closure_1_11, { option: id, responses: closure_4, onSelect: closure_3, canBeNew: Boolean(closure_2) }, id.id));
     const items2 = [callback(tmp3(1297).CardSection, obj3), ];
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.closeButtonWrapper;
@@ -147,11 +141,11 @@ export default function DropdownOptionsActionSheet(arg0) {
     obj5[0] = tmp5;
     const intl3 = tmp3(1236).intl;
     obj5[1] = intl3.string(tmp3(1236).t.cpT0Cq);
-    obj4[1] = callback(tmp3(4745).Button, obj5);
+    obj4[1] = callback(tmp3(4750).Button, obj5);
     items2[1] = callback(closure_4, obj4);
     obj1[1] = items2;
-    obj[2] = callback2(tmp3(6952).BottomSheetScrollView, obj1);
-    return callback(tmp3(6950).BottomSheet, obj);
+    obj[2] = callback2(tmp3(6990).BottomSheetScrollView, obj1);
+    return callback(tmp3(6988).BottomSheet, obj);
   }
   tmp = callback3();
 };

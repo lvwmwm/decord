@@ -1,25 +1,24 @@
-// Module ID: 14710
-// Function ID: 14711
+// Module ID: 14776
+// Function ID: 14777
 // Name: MotionOptionButton
-// Dependencies: [32, 19, 17, 21, 4661, 712, 6292, 4734, 1236, 14707, 3403, 7175, 14711, 4733, 4745, 4342, 2]
+// Dependencies: [32, 19, 17, 21, 4668, 712, 6323, 4739, 1940, 1236, 3406, 7213, 11202, 4738, 4750, 4346, 2]
 // Exports: default
 
-// Module 14710 (MotionOptionButton)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 14776 (MotionOptionButton)
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import PressableCard from "PressableCard" /* 6323 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 function MotionOptionButton(isSelected) {
-  let label;
-  let onPress;
   isSelected = isSelected.isSelected;
   ({ label, onPress } = isSelected);
-  const tmp = createCacheKey();
+  const tmp = callback4();
   const items = [tmp.optionCard, ];
   let optionCardSelected = isSelected;
   if (isSelected) {
@@ -33,89 +32,86 @@ function MotionOptionButton(isSelected) {
   }
   obj[2] = str;
   obj[4] = { checked: isSelected };
-  obj[5] = closure_6(require(4734) /* Text */.Text, { variant: "text-md/medium", color: "text-default", children: label });
-  return closure_6(require(6292) /* PressableCard */.Card, obj);
+  obj[5] = closure_6(Text.Text, { variant: "text-md/medium", color: "text-default", children: label });
+  return closure_6(PressableCard.Card, obj);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { content: null, previewRow: null, buttonWrapper: null, optionCard: null, optionCardSelected: null };
-createCacheKey = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { paddingHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { flexDirection: "row", alignSelf: "center", gap: require("Themes").space.PX_8 };
-let obj1 = { flexDirection: "row", alignSelf: "center", gap: require("Themes").space.PX_8 };
-createCacheKey[2] = { marginTop: require("Themes").space.PX_8, paddingBottom: require("Themes").space.PX_16 };
+createCacheKey[1] = { alignSelf: "center", paddingVertical: ThemesDefault.space.PX_24 };
+let obj1 = { alignSelf: "center", paddingVertical: ThemesDefault.space.PX_24 };
+createCacheKey[2] = { marginTop: ThemesDefault.space.PX_8 };
 createCacheKey[3] = { flex: 1, height: 64, alignItems: "center", justifyContent: "center" };
-let obj2 = { marginTop: require("Themes").space.PX_8, paddingBottom: require("Themes").space.PX_16 };
-createCacheKey[4] = { borderColor: require("Themes").colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE, borderWidth: 2 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { borderColor: require("Themes").colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE, borderWidth: 2 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorAnimationPickerSheet.tsx");
+let obj2 = { marginTop: ThemesDefault.space.PX_8 };
+createCacheKey[4] = { borderColor: ThemesDefault.colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE, borderWidth: 2 };
+let closure_8 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { borderColor: ThemesDefault.colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE, borderWidth: 2 };
+const result = require("set").fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorAnimationPickerSheet.tsx");
 
 export default function CustomTypingIndicatorAnimationPickerSheet(onChange) {
-  let emojis;
-  let initialAnimation;
   onChange = onChange.onChange;
   let first;
-  let dependencyMap;
+  dependencyMap = undefined;
   ({ emojis, initialAnimation } = onChange);
-  const tmp = createCacheKey();
+  const tmp = callback4();
   const tmp2 = callback(React.useState(initialAnimation), 2);
   first = tmp2[0];
   dependencyMap = tmp2[1];
-  let obj = { value: null, label: null };
+  let obj = { value: onChange(1940).TypingIndicatorAnimation.UNSPECIFIED, label: null };
   const intl = onChange(1236).intl;
   obj[1] = intl.string(onChange(1236).t.PoWNfe);
   const items = [obj, , , ];
-  obj = { value: onChange(14707).CustomTypingIndicatorAnimation.PULSE, label: null };
+  obj = { value: onChange(1940).TypingIndicatorAnimation.PULSE, label: null };
   const intl2 = onChange(1236).intl;
-  obj[1] = intl2.string(first(3403)["gyL/ce"]);
+  obj[1] = intl2.string(first(3406)["gyL/ce"]);
   items[1] = obj;
-  obj = { value: onChange(14707).CustomTypingIndicatorAnimation.RING, label: null };
+  obj = { value: onChange(1940).TypingIndicatorAnimation.RING, label: null };
   const intl3 = onChange(1236).intl;
-  obj[1] = intl3.string(first(3403).EgekTm);
+  obj[1] = intl3.string(first(3406).EgekTm);
   items[2] = obj;
-  const obj1 = { value: onChange(14707).CustomTypingIndicatorAnimation.WAVE, label: null };
+  obj1 = { value: onChange(1940).TypingIndicatorAnimation.WAVE, label: null };
   const intl4 = onChange(1236).intl;
-  obj1[1] = intl4.string(first(3403)["8t5EiI"]);
+  obj1[1] = intl4.string(first(3406)["8t5EiI"]);
   items[3] = obj1;
   const obj2 = { contentStyles: tmp.content, dismissAccessibilityLabel: null, children: null };
   const intl5 = onChange(1236).intl;
-  obj2[1] = intl5.string(first(3403)["q+qHax"]);
+  obj2[1] = intl5.string(first(3406)["q+qHax"]);
   const obj3 = { style: tmp.previewRow, children: null };
-  const obj4 = { config: null };
-  const obj5 = { emojis, animation: first, typingSuggestion: null };
-  obj5[2] = onChange(14707).CustomTypingIndicatorSuggestion.DEFAULT;
+  const obj4 = { config: null, size: 54, bypassReducedMotionCheck: true };
+  const obj5 = { emojis, animation: first, typingSuggestion: onChange(1940).TypingSuggestion.UNSPECIFIED };
   obj4[0] = obj5;
-  obj3[1] = callback2(first(14711), obj4);
+  obj3[1] = callback2(first(11202), obj4);
   const items1 = [callback2(View, obj3), , ];
   const obj6 = { spacing: 8, children: null };
   const items2 = [items.slice(0, 2), items.slice(2, 4)];
-  obj6[1] = items2.map((arr) => {
-    const obj = { direction: "horizontal", spacing: 8, children: null };
-    obj[2] = arr.map((label) => {
-      let closure_0 = label;
-      return outer1_6(outer1_9, {
+  obj6[1] = items2.map((arr) => closure_1_6(onChange(4738).Stack, {
+    direction: "horizontal",
+    spacing: 8,
+    children: arr.map((label) => {
+      closure_0 = label;
+      return closure_1_6(closure_1_9, {
         label: label.label,
         isSelected: closure_1 === label.value,
         onPress() {
-          return outer1_2(label.value);
+          return closure_1_2(label.value);
         }
       }, label.label);
-    });
-    return outer1_6(onChange(4733).Stack, obj, arg1);
-  });
-  items1[1] = callback2(onChange(4733).Stack, obj6);
+    })
+  }, arg1));
+  items1[1] = callback2(onChange(4738).Stack, obj6);
   const obj7 = { style: tmp.buttonWrapper, children: null };
   const obj8 = {
     onPress() {
       onChange(first);
-      first(4342).hideActionSheet();
+      first(4346).hideActionSheet();
     },
     text: null
   };
   const intl6 = onChange(1236).intl;
-  obj8[1] = intl6.string(first(3403)["6ZxPAQ"]);
-  obj7[1] = callback2(onChange(4745).Button, obj8);
+  obj8[1] = intl6.string(first(3406)["6ZxPAQ"]);
+  obj7[1] = callback2(onChange(4750).Button, obj8);
   items1[2] = callback2(View, obj7);
   obj2[2] = items1;
-  return callback3(onChange(7175).ActionSheet, obj2);
+  return callback3(onChange(7213).ActionSheet, obj2);
 };

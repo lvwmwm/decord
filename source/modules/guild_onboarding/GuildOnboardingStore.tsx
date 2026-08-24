@@ -1,23 +1,28 @@
-// Module ID: 6784
-// Function ID: 6785
+// Module ID: 6821
+// Function ID: 6822
 // Name: shouldShowOnboarding
 // Dependencies: [676, 589, 1913, 709, 2]
 // Exports: isOnboarding
 
-// Module 6784 (shouldShowOnboarding)
-import { ME } from "ME";
-import { Store } from "initialize";
+// Module 6821 (shouldShowOnboarding)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import ME2 from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
 
+const ME = ME2.ME;
 let obj = { STARTED: "started", READY: "ready", COMPLETED: "completed", NOT_APPLICABLE: "not_applicable" };
 let closure_4 = {};
 let closure_5 = {};
+const Store = initializeDefault.Store;
 class GuildOnboardingStore extends Store {
 }
 const prototype = GuildOnboardingStore.prototype;
 prototype["shouldShowOnboarding"] = function shouldShowOnboarding(c0) {
   let tmp = c0 !== ME;
   if (tmp) {
-    const obj = require(1913) /* getFavoritesAwareGuildName */;
+    obj = getFavoritesAwareGuildName;
     tmp = !obj.isFavoritesGuildId(c0);
   }
   if (tmp) {
@@ -48,8 +53,8 @@ prototype["getCurrentOnboardingStep"] = function getCurrentOnboardingStep(arg0) 
 GuildOnboardingStore.displayName = "GuildOnboardingStore";
 obj = {
   LOGOUT: function handleReset() {
-    let closure_4 = {};
-    let closure_5 = {};
+    closure_4 = {};
+    closure_5 = {};
   },
   GUILD_DELETE: function handleDelete(guild) {
     guild = guild.guild;
@@ -77,11 +82,11 @@ obj = {
     closure_5[guildId.guildId] = guildId.step;
   },
   CONNECTION_OPEN: function handleResetOnboardingStep() {
-    let closure_5 = {};
+    closure_5 = {};
   }
 };
-const guildOnboardingStore = new GuildOnboardingStore(require("dispatcher"), obj);
-const result = require("getFavoritesAwareGuildName").fileFinishedImporting("modules/guild_onboarding/GuildOnboardingStore.tsx");
+const guildOnboardingStore = new GuildOnboardingStore(dispatcherDefault, obj);
+const result = set.fileFinishedImporting("modules/guild_onboarding/GuildOnboardingStore.tsx");
 
 export default guildOnboardingStore;
 export const GuildOnboardingStatus = obj;

@@ -1,21 +1,23 @@
-// Module ID: 7870
-// Function ID: 7871
+// Module ID: 7909
+// Function ID: 7910
 // Name: getPromotionIdOverride
 // Dependencies: [589, 709, 2]
 
-// Module 7870 (getPromotionIdOverride)
-import { Store } from "initialize";
+// Module 7909 (getPromotionIdOverride)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0;
+const Store = initializeDefault.Store;
 class StorefrontPromotionOverrideStore extends Store {
 }
 StorefrontPromotionOverrideStore.prototype["getPromotionIdOverride"] = function getPromotionIdOverride() {
   return c0;
 };
 StorefrontPromotionOverrideStore.displayName = "StorefrontPromotionOverrideStore";
-const storefrontPromotionOverrideStore = new StorefrontPromotionOverrideStore(require("dispatcher"), {
+const storefrontPromotionOverrideStore = new StorefrontPromotionOverrideStore(dispatcherDefault, {
   LOGOUT: function handleLogout() {
-    let c0;
+    c0 = undefined;
   },
   STOREFRONT_PROMOTION_ID_OVERRIDE_SET: function handleSet(promotionIdOverride) {
     promotionIdOverride = promotionIdOverride.promotionIdOverride;

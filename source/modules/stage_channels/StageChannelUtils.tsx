@@ -1,27 +1,30 @@
-// Module ID: 8063
-// Function ID: 8064
+// Module ID: 8102
+// Function ID: 8103
 // Name: fillChunk
-// Dependencies: [4539, 1396, 4978, 676, 8064, 12, 4796, 1236, 4026, 2]
+// Dependencies: [4544, 1396, 4983, 676, 8103, 12, 4801, 1236, 4029, 2]
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 8063 (fillChunk)
-import createRTCConnection from "createRTCConnection";
-import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
-import { RequestToSpeakPermissionStates as closure_6 } from "MAX_STAGE_TOPIC_LENGTH";
-import { Permissions } from "ME";
-import { RowType } from "RowType";
+// Module 8102 (fillChunk)
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import applyOverwritesAll from "applyOverwrites" /* 4029 */;
+import getNicknameDefault from "getNickname" /* 4801 */;
+import closure_4 from "createRTCConnection" /* 4544 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
+import { RequestToSpeakPermissionStates as closure_6 } from "MAX_STAGE_TOPIC_LENGTH" /* 4983 */;
+import { Permissions } from "ME" /* 676 */;
+import { RowType } from "RowType" /* 8103 */;
 
-let require = arg1;
-const result = require("MAX_STAGE_TOPIC_LENGTH").fileFinishedImporting("modules/stage_channels/StageChannelUtils.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/stage_channels/StageChannelUtils.tsx");
 
 export const fillChunk = function fillChunk(arg0, arg1, arg2) {
   let tmp = arg2;
-  const obj = require(12) /* apply */;
+  const obj = _require(12);
   if (arg2 == null) {
     tmp = arg1;
   }
-  require = tmp;
-  return require(12) /* apply */.chunk(arg0, arg1).reduce((arg0, arg1) => {
+  _require = tmp;
+  return _require(12).chunk(arg0, arg1).reduce((arg0, arg1) => {
     if (closure_0 <= arg1.length) {
       const items = [];
       items[HermesBuiltin.arraySpread(arg0, 0)] = arg1;
@@ -42,7 +45,7 @@ export const summarizeUsernamesParticipating = function summarizeUsernamesPartic
   let length = arg3;
   const first = arg1[0];
   let obj = dependencyMap;
-  const name = importDefault(4796).getName(arg0, arg2, first);
+  const name = getNicknameDefault.getName(arg0, arg2, first);
   if (arg3 == null) {
     length = arg1.length;
   }
@@ -52,16 +55,16 @@ export const summarizeUsernamesParticipating = function summarizeUsernamesPartic
     }
   }
   if (null == first) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     obj = { count: null };
     obj[0] = length;
-    intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.chmM9N, obj);
+    intl2.formatToPlainString(getSystemLocale.t.chmM9N, obj);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     obj = { name: null, count: null };
     obj[0] = name;
     obj[1] = length - 1;
-    intl.formatToPlainString(require(1236) /* getSystemLocale */.t.GhkJ21, obj);
+    intl.formatToPlainString(getSystemLocale.t.GhkJ21, obj);
   }
 };
 export const summarizeUsernamesParticipatingWithSpeakerNickname = function summarizeUsernamesParticipatingWithSpeakerNickname(arg0, arg1, arg2) {
@@ -75,25 +78,25 @@ export const summarizeUsernamesParticipatingWithSpeakerNickname = function summa
     }
   }
   if (null == arg1) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const intl2 = getSystemLocale.intl;
     let obj = { count: null };
     obj[0] = length;
-    intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.chmM9N, obj);
+    intl2.formatToPlainString(getSystemLocale.t.chmM9N, obj);
   } else {
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     obj = { name: null, count: null };
     obj[0] = arg1;
     obj[1] = length - 1;
-    intl.formatToPlainString(require(1236) /* getSystemLocale */.t.GhkJ21, obj);
+    intl.formatToPlainString(getSystemLocale.t.GhkJ21, obj);
   }
 };
 export const getRemoveModeratorTooltipHint = function getRemoveModeratorTooltipHint(arg0, arg1) {
   if (RowType.OWNER === arg0) {
-    const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(require(1236) /* getSystemLocale */.t.icuNBM);
+    const intl3 = getSystemLocale.intl;
+    return intl3.string(getSystemLocale.t.icuNBM);
   } else if (tmp.ADMINISTRATOR === arg0) {
-    const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(require(1236) /* getSystemLocale */.t.eTmN5a);
+    const intl2 = getSystemLocale.intl;
+    return intl2.string(getSystemLocale.t.eTmN5a);
   } else {
     if (tmp.MEMBER !== arg0) {
       if (tmp.ROLE !== arg0) {
@@ -104,9 +107,9 @@ export const getRemoveModeratorTooltipHint = function getRemoveModeratorTooltipH
         }
       }
     }
-    const intl = require(1236) /* getSystemLocale */.intl;
+    const intl = getSystemLocale.intl;
     const string = intl.string;
-    const t = require(1236) /* getSystemLocale */.t;
+    const t = getSystemLocale.t;
     if (arg1) {
       let stringResult = string(t.Hw3XWx);
     } else {
@@ -124,7 +127,7 @@ export const getStageChannelMetadata = function getStageChannelMetadata(channel_
   }
   obj[2] = topic;
   obj[3] = mediaSessionId.getMediaSessionId();
-  obj[4] = importAll(4026).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, channel_id) ? closure_6.EVERYONE : closure_6.NO_ONE;
+  obj[4] = applyOverwritesAll.canEveryoneRole(Permissions.REQUEST_TO_SPEAK, channel_id) ? closure_6.EVERYONE : closure_6.NO_ONE;
   let id;
   if (stageInstanceByChannel != null) {
     id = stageInstanceByChannel.id;
@@ -150,26 +153,26 @@ export const getParticipantNamesText = function getParticipantNamesText(channel,
   } else if (1 === found.length) {
     const intl2 = set(1236).intl;
     let obj = { a: null };
-    obj[0] = importDefault(4796).getName(channel.getGuildId(), channel.id, found[0].user);
+    obj[0] = getNicknameDefault.getName(channel.getGuildId(), channel.id, found[0].user);
     stringResult = intl2.formatToPlainString(set(1236).t.EQwZlN, obj);
-    const obj5 = importDefault(4796);
+    const obj5 = getNicknameDefault;
   } else if (2 === found.length) {
     const intl = set(1236).intl;
     obj = { a: null, b: null };
-    obj[0] = importDefault(4796).getName(channel.getGuildId(), channel.id, found[0].user);
-    const obj2 = importDefault(4796);
-    obj[1] = importDefault(4796).getName(channel.getGuildId(), channel.id, found[1].user);
+    obj[0] = getNicknameDefault.getName(channel.getGuildId(), channel.id, found[0].user);
+    const obj2 = getNicknameDefault;
+    obj[1] = getNicknameDefault.getName(channel.getGuildId(), channel.id, found[1].user);
     stringResult = intl.formatToPlainString(set(1236).t.zBcKoA, obj);
-    const obj3 = importDefault(4796);
+    const obj3 = getNicknameDefault;
   } else {
     const intl4 = set(1236).intl;
     obj = { a: null, b: null, n: null };
-    obj[0] = importDefault(4796).getName(channel.getGuildId(), channel.id, found[0].user);
-    const obj7 = importDefault(4796);
-    obj[1] = importDefault(4796).getName(channel.getGuildId(), channel.id, found[1].user);
+    obj[0] = getNicknameDefault.getName(channel.getGuildId(), channel.id, found[0].user);
+    const obj7 = getNicknameDefault;
+    obj[1] = getNicknameDefault.getName(channel.getGuildId(), channel.id, found[1].user);
     obj[2] = found.length - 2;
     stringResult = intl4.formatToPlainString(set(1236).t["3AqFaG"], obj);
-    const obj8 = importDefault(4796);
+    const obj8 = getNicknameDefault;
   }
   return stringResult;
 };

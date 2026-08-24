@@ -1,21 +1,26 @@
-// Module ID: 7872
-// Function ID: 7873
+// Module ID: 7911
+// Function ID: 7912
 // Name: initialize
-// Dependencies: [676, 7873, 589, 4066, 709, 2]
+// Dependencies: [676, 7912, 589, 4069, 709, 2]
 
-// Module 7872 (initialize)
-import { ApplicationFlags } from "ME";
-import { PersistedStore } from "initialize";
+// Module 7911 (initialize)
+import set from "set" /* 2 */;
+import initializeDefault from "initialize" /* 589 */;
+import ME from "ME" /* 676 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
 
+const ApplicationFlags = ME.ApplicationFlags;
 let closure_3 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
 let obj = { INITIALIZED: "INITIALIZED", LOADING: "LOADING", LOADED: "LOADED", ERROR: "ERROR" };
 let INITIALIZED = obj.INITIALIZED;
 let closure_6 = [];
+const PersistedStore = initializeDefault.PersistedStore;
 class DeveloperActivityShelfStore extends PersistedStore {
 }
 const prototype = DeveloperActivityShelfStore.prototype;
 prototype["initialize"] = function initialize(arg0) {
-  let obj = arg0;
+  obj = arg0;
   obj = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
   if (arg0 == null) {
     obj = {};
@@ -26,7 +31,7 @@ prototype["getState"] = function getState() {
   return closure_3;
 };
 prototype["getIsEnabled"] = function getIsEnabled() {
-  const DeveloperMode = require(4066) /* explicitContentFromProto */.DeveloperMode;
+  const DeveloperMode = explicitContentFromProto.DeveloperMode;
   let setting = DeveloperMode.getSetting();
   if (setting) {
     setting = closure_6.length > 0;
@@ -64,7 +69,7 @@ prototype["getDeveloperShelfItems"] = function getDeveloperShelfItems() {
   return this.getIsEnabled() ? closure_6 : [];
 };
 prototype["inDevModeForApplication"] = function inDevModeForApplication(closure_1) {
-  let closure_0 = closure_1;
+  closure_0 = closure_1;
   let isEnabled = this.getIsEnabled();
   if (isEnabled) {
     isEnabled = null != closure_6.find((id) => id.id === closure_0);
@@ -83,9 +88,9 @@ const items = [
 DeveloperActivityShelfStore.migrations = items;
 obj = {
   LOGOUT: function reset() {
-    let closure_3 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
-    const INITIALIZED = obj.INITIALIZED;
-    let closure_6 = [];
+    closure_3 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
+    INITIALIZED = obj.INITIALIZED;
+    closure_6 = [];
   },
   DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: function handleToggleUseActivityUrlOverride() {
     closure_3.useActivityUrlOverride = !closure_3.useActivityUrlOverride;
@@ -107,7 +112,7 @@ obj = {
   DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: function handleEmbeddedActivitiesFetchDeveloperApplicationsSuccess(applications) {
     applications = applications.applications;
     const LOADED = obj.LOADED;
-    let closure_6 = applications.filter((application) => callback(table[1]).hasApplicationFlag(application, constants.EMBEDDED));
+    closure_6 = applications.filter((application) => callback(table[1]).hasApplicationFlag(application, constants.EMBEDDED));
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: function handleEmbeddedActivitiesFetchDeveloperApplicationsFail(arg0) {
     const ERROR = obj.ERROR;
@@ -119,8 +124,8 @@ obj = {
 
   }
 };
-const developerActivityShelfStore = new DeveloperActivityShelfStore(require("dispatcher"), obj);
-const result = require("initialize").fileFinishedImporting("modules/activities/DeveloperActivityShelfStore.tsx");
+const developerActivityShelfStore = new DeveloperActivityShelfStore(dispatcherDefault, obj);
+const result = set.fileFinishedImporting("modules/activities/DeveloperActivityShelfStore.tsx");
 
 export default developerActivityShelfStore;
 export const DevShelfFetchState = obj;

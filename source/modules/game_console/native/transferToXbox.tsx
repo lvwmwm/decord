@@ -1,23 +1,23 @@
-// Module ID: 9857
-// Function ID: 9858
+// Module ID: 9896
+// Function ID: 9897
 // Name: _transferToXbox
-// Dependencies: [5, 19, 17, 676, 21, 9848, 9845, 9858, 4656, 9859, 2007, 9851, 9860, 2]
+// Dependencies: [5, 19, 17, 676, 21, 9887, 9884, 9897, 4662, 9898, 2008, 9890, 9899, 2]
 // Exports: default
 
-// Module 9857 (_transferToXbox)
-import set from "set";
-import "noop";
-import { Linking } from "get ActivityIndicator";
-import { PlatformTypes } from "ME";
-import { jsx } from "jsxProd";
+// Module 9896 (_transferToXbox)
+import noopAll from "noop" /* 19 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import { Linking } from "get ActivityIndicator" /* 17 */;
+import { PlatformTypes } from "ME" /* 676 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 function _transferToXbox() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (c4 === 2) {
         c4 = 3;
@@ -30,7 +30,7 @@ function _transferToXbox() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -51,8 +51,8 @@ function _transferToXbox() {
               callback2 = undefined;
               dependencyMap = 1;
               c4 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_1(9848).maybeShowPTTAlert(outer1_6.XBOX);
+              obj1 = { value: null, done: false };
+              obj1[0] = closure_1_1(9887).maybeShowPTTAlert(closure_1_6.XBOX);
               return obj1;
             }
           } else if (1 === tmp5) {
@@ -68,7 +68,7 @@ function _transferToXbox() {
               dependencyMap = 2;
               c4 = 1;
               let obj3 = { value: null, done: false };
-              obj3[0] = callback2(9845).disconnectRemote();
+              obj3[0] = callback2(9884).disconnectRemote();
               return obj3;
             }
           } else if (2 === tmp5) {
@@ -81,7 +81,7 @@ function _transferToXbox() {
               obj4[0] = arg1;
               return obj4;
             } else {
-              let obj9 = callback2(9845);
+              let obj9 = callback2(9884);
               dependencyMap = 3;
               c4 = 1;
               const obj5 = { value: null, done: false };
@@ -101,7 +101,7 @@ function _transferToXbox() {
               callback = arg1;
               const obj7 = { nonce: null, forQRCode: false };
               obj7[0] = callback;
-              callback2 = callback(9858)(user, obj7);
+              callback2 = callback(9897)(user, obj7);
               dependencyMap = 4;
               c4 = 1;
               const obj8 = { value: null, done: false };
@@ -117,25 +117,25 @@ function _transferToXbox() {
             obj9[0] = arg1;
             return obj9;
           } else if (arg1) {
-            tmp47(9851)(user.id, constants.XBOX);
-            obj3 = callback2(9845);
+            tmp47(9890)(user.id, constants.XBOX);
+            obj3 = callback2(9884);
             obj3.waitForSession(constants.XBOX, user.id, callback);
-            obj4 = callback2(9860);
+            obj4 = callback2(9899);
             obj4.stopOwnStream(false);
             closure_5.openURL(callback2);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else {
             const obj10 = { importer: null };
             obj10[0] = function importer() {
               return callback(paths[10])(paths[9], paths.paths).then((arg0) => {
-                let closure_0 = arg0.default;
+                closure_0 = arg0.default;
                 return () => { ... };
               });
             };
             c4 = 3;
             const obj11 = { value: null, done: true };
-            obj11[0] = tmp47(4656).openLazy(obj10);
+            obj11[0] = tmp47(4662).openLazy(obj10);
             return obj11;
           }
         } catch (tmp39) {
@@ -145,7 +145,7 @@ function _transferToXbox() {
       }
     })();
   });
-  const _transferToXbox = tmp;
+  closure_8 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -154,7 +154,8 @@ function _transferToXbox() {
   }
   return applyArgumentsResult;
 }
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/game_console/native/transferToXbox.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("modules/game_console/native/transferToXbox.tsx");
 
 export default function transferToXbox() {
   const self = this;

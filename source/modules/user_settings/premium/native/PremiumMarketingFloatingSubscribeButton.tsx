@@ -1,38 +1,35 @@
-// Module ID: 12927
-// Function ID: 12928
+// Module ID: 12982
+// Function ID: 12983
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 4662, 676, 21, 4661, 712, 1629, 589, 12925, 7159, 689, 4115, 4664, 4756, 9498, 2]
+// Dependencies: [19, 17, 4669, 676, 21, 4668, 712, 1629, 589, 12980, 7197, 689, 4119, 4671, 4761, 9535, 2]
 // Exports: default
 
-// Module 12927 (PremiumMarketingFloatingSubscribeButton)
-import noop from "noop";
-import { View } from "get ActivityIndicator";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { VerticalGradient } from "ME";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12982 (PremiumMarketingFloatingSubscribeButton)
+import ThemesDefault from "Themes" /* 712 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { VerticalGradient } from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let error;
-let metroImportAll;
 const require = arg1;
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
+({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { container: { position: "absolute", left: 0, right: 0, bottom: 0, zIndex: 1 }, gradient: { position: "absolute", left: 0, right: 0, bottom: 0, top: -64 }, buttonContainer: null };
-createCacheKey = { marginLeft: "auto", marginRight: "auto", width: "100%", paddingHorizontal: 12, paddingTop: require("Themes").space.PX_12 };
+createCacheKey = { marginLeft: "auto", marginRight: "auto", width: "100%", paddingHorizontal: 12, paddingTop: ThemesDefault.space.PX_12 };
 createCacheKey[2] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_9 = createCacheKey.createStyles(createCacheKey);
 let closure_10 = { code: "function PremiumMarketingFloatingSubscribeButtonTsx1(){const{withTiming,isVisible,useReducedMotion,FADE_DURATION_MS,ENTER_TRANSLATE_PX}=this.__closure;return{opacity:withTiming(isVisible.get()?1:0,{duration:useReducedMotion?0:FADE_DURATION_MS}),transform:[{translateY:withTiming(isVisible.get()?0:ENTER_TRANSLATE_PX,{duration:useReducedMotion?0:FADE_DURATION_MS})}]};}" };
 let closure_11 = { code: "function PremiumMarketingFloatingSubscribeButtonTsx2(){const{isVisible}=this.__closure;return{pointerEvents:isVisible.get()?'box-none':'none',accessibilityElementsHidden:!isVisible.get(),importantForAccessibility:isVisible.get()?'auto':'no-hide-descendants'};}" };
-const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingFloatingSubscribeButton.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingFloatingSubscribeButton.tsx");
 
 export default function PremiumMarketingFloatingSubscribeButton(isVisible) {
-  let buttonText;
-  let openPayment;
   isVisible = isVisible.isVisible;
   const backgroundColor = isVisible.backgroundColor;
   let stateFromStores;
-  const tmp = createCacheKey();
+  const tmp = callback3();
   let obj = isVisible(stateFromStores[8]);
-  let items = [maybeApplyNoTextColorForLightCustomTheme];
+  let items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const tmp3 = backgroundColor(stateFromStores[9]);
   const items1 = [backgroundColor];
@@ -42,12 +39,12 @@ export default function PremiumMarketingFloatingSubscribeButton(isVisible) {
     const items = [backgroundColor(stateFromStores[11])(backgroundColor).alpha(0).hex(), backgroundColor, backgroundColor];
     return items;
   }, items1);
-  let obj1 = isVisible(stateFromStores[12]);
+  obj1 = isVisible(stateFromStores[12]);
   class A {
     constructor() {
       tmp = isVisible;
-      tmp2 = c2;
-      obj = isVisible(c2[13]);
+      tmp2 = closure_2;
+      obj = isVisible(closure_2[13]);
       obj2 = isVisible;
       num = 0;
       if (isVisible.get()) {
@@ -55,8 +52,8 @@ export default function PremiumMarketingFloatingSubscribeButton(isVisible) {
       }
       num2 = 150;
       num3 = 150;
-      tmp3 = c2;
-      if (c2) {
+      tmp3 = closure_2;
+      if (closure_2) {
         num3 = 0;
       }
       obj = { opacity: obj.withTiming(num, { duration: num3 }), transform: null };

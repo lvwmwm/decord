@@ -1,20 +1,20 @@
-// Module ID: 12837
-// Function ID: 12838
+// Module ID: 12892
+// Function ID: 12893
 // Name: _showMarketingMomentRewardScreen
-// Dependencies: [5, 5301, 5300, 10389, 2]
+// Dependencies: [5, 5306, 5305, 10428, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 12837 (_showMarketingMomentRewardScreen)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import updateCategoriesAndProducts from "updateCategoriesAndProducts";
+// Module 12892 (_showMarketingMomentRewardScreen)
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import closure_4 from "updateCategoriesAndProducts" /* 5306 */;
 
 const require = arg1;
 function _showMarketingMomentRewardScreen() {
   const self = this;
   const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c4 = 0;
+    closure_0 = arg0;
+    c3 = 0;
+    c4 = 0;
     return (function*(arg0) {
       if (product === 2) {
         product = 3;
@@ -27,7 +27,7 @@ function _showMarketingMomentRewardScreen() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -45,10 +45,10 @@ function _showMarketingMomentRewardScreen() {
               const table = tmp5;
               let callback2 = tmp2;
               callback2 = undefined;
-              let obj3 = callback(outer1_2[2]);
+              let obj3 = callback(closure_1_2[2]);
               c3 = 1;
               product = 1;
-              const obj1 = { value: null, done: false };
+              obj1 = { value: null, done: false };
               obj1[0] = obj3.fetchCollectiblesProduct(callback);
               return obj1;
             }
@@ -69,7 +69,7 @@ function _showMarketingMomentRewardScreen() {
               obj.open(obj3);
             }
             product = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp21) {
           product = tmp;
@@ -78,7 +78,7 @@ function _showMarketingMomentRewardScreen() {
       }
     })();
   });
-  const _showMarketingMomentRewardScreen = tmp;
+  closure_5 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -87,7 +87,7 @@ function _showMarketingMomentRewardScreen() {
   }
   return applyArgumentsResult;
 }
-const result = require("openCollectiblesShop").fileFinishedImporting("modules/premium/premium_marketing/native/showMarketingMomentRewardScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/premium_marketing/native/showMarketingMomentRewardScreen.tsx");
 
 export const showMarketingMomentRewardScreen = function showMarketingMomentRewardScreen(arg0) {
   const self = this;

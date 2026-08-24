@@ -1,27 +1,21 @@
-// Module ID: 16151
-// Function ID: 16152
+// Module ID: 16248
+// Function ID: 16249
 // Name: markAsDismissed
-// Dependencies: [19, 1924, 676, 1388, 21, 7139, 7159, 698, 7876, 9325, 7393, 6950, 16152, 2]
+// Dependencies: [19, 1924, 676, 1388, 21, 7177, 7197, 698, 7915, 9362, 7431, 6988, 16249, 2]
 // Exports: default
 
-// Module 16151 (markAsDismissed)
-import noop from "noop";
-import GuildFeatures from "GuildFeatures";
-import ME from "ME";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { jsx } from "jsxProd";
+// Module 16248 (markAsDismissed)
+import closure_3 from "noop" /* 19 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import ME from "ME" /* 676 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-let AnalyticsObjectTypes;
-let AnalyticsPages;
-let AnalyticsSections;
-let c4;
-let c5;
-let closure_6;
 const require = arg1;
 ({ PremiumTypes: c4, SubscriptionPlanInfo: c5 } = GuildFeatures);
 ({ AnalyticEvents: closure_6, AnalyticsObjectTypes, AnalyticsPages, AnalyticsSections } = ME);
 let closure_9 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_PREMIUM, objectType: AnalyticsObjectTypes.BUY };
-const result = require("ME").fileFinishedImporting("modules/premium/native/discounts/PremiumDiscountOfferActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/discounts/PremiumDiscountOfferActionSheet.tsx");
 
 export default function _default(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
@@ -43,14 +37,14 @@ export default function _default(markAsDismissed) {
     }
     let tmp2 = null;
     if (null != first) {
-      tmp2 = outer1_5[first];
+      tmp2 = closure_1_5[first];
     }
     let premiumType;
     if (tmp2 != null) {
       premiumType = tmp2.premiumType;
     }
     if (premiumType == null) {
-      premiumType = outer1_4.TIER_2;
+      premiumType = closure_1_4.TIER_2;
     }
     return premiumType;
   }, items);
@@ -60,7 +54,7 @@ export default function _default(markAsDismissed) {
       obj = { location: null, discount_offer_id: null };
       obj[0] = analyticsLocations;
       obj[1] = tmp.id;
-      obj.track(outer1_6.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_VIEWED, obj);
+      obj.track(closure_1_6.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_VIEWED, obj);
       markAsDismissed(analyticsLocations[8]).acknowledgeUserOffer(undefined, tmp);
       const obj3 = markAsDismissed(analyticsLocations[8]);
     }
@@ -68,7 +62,7 @@ export default function _default(markAsDismissed) {
   const items1 = [userDiscountOffer, markAsDismissed];
   const effect1 = memo.useEffect(() => {
     if (null == userDiscountOffer) {
-      markAsDismissed(outer1_7.AUTO_DISMISS);
+      markAsDismissed(closure_1_7.AUTO_DISMISS);
     }
   }, items1);
   const items2 = [analyticsLocations, markAsDismissed, userDiscountOffer];
@@ -81,8 +75,8 @@ export default function _default(markAsDismissed) {
       id = userDiscountOffer.id;
     }
     obj[1] = id;
-    obj.track(outer1_6.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_DISMISSED, obj);
-    markAsDismissed(outer1_7.USER_DISMISS);
+    obj.track(closure_1_6.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_DISMISSED, obj);
+    markAsDismissed(closure_1_7.USER_DISMISS);
   }, items2);
   let tmp10Result = null;
   if (null != userDiscountOffer) {

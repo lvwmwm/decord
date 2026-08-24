@@ -1,10 +1,12 @@
-// Module ID: 5801
-// Function ID: 5802
+// Module ID: 5832
+// Function ID: 5833
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5801 (metadata)
-const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemHero3dIllustration-2x.png.js");
+// Module 5832 (metadata)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemHero3dIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/521ee94fd9e5fca98825debb720388443c23889cf46c6ec38d3068fdf99ec996.png";
 export const metadata = { fileBytes: 108747 };

@@ -1,16 +1,19 @@
-// Module ID: 4496
-// Function ID: 4497
+// Module ID: 4500
+// Function ID: 4501
 // Name: callConnect
-// Dependencies: [1391, 1979, 4197, 676, 709, 530, 12, 589, 2]
+// Dependencies: [1391, 1980, 4201, 676, 709, 530, 12, 589, 2]
 
-// Module 4496 (callConnect)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import handleConnectionOpen from "handleConnectionOpen";
-import closure_5 from "handleConnectionOpen";
-import { Endpoints } from "ME";
-import { Store } from "initialize";
+// Module 4500 (callConnect)
+import applyDefault from "apply" /* 12 */;
+import sendRequest from "sendRequest" /* 530 */;
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "handleConnectionOpen" /* 4201 */;
+import { Endpoints } from "ME" /* 676 */;
 
-const require = arg1;
+require = arg1;
 function callConnect() {
   let channelId = arg1;
   if (arg1 === undefined) {
@@ -43,20 +46,21 @@ function callConnect() {
     dependencyMap[channelId] = tmp8;
     obj = { type: "CALL_CONNECT", channelId: null };
     obj[1] = channelId;
-    importDefault(709).dispatch(obj);
+    dispatcherDefault.dispatch(obj);
     flag = true;
-    const obj3 = importDefault(709);
+    const obj3 = dispatcherDefault;
     const tmp7 = dependencyMap;
   }
   return flag;
 }
 let closure_7 = {};
 let closure_8 = {};
+const Store = initializeDefault.Store;
 class CallStore extends Store {
 }
 const prototype = CallStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded, handleConnectionOpen, closure_5);
+  this.waitFor(closure_3, closure_4, closure_5);
 };
 prototype["getCall"] = function getCall(channelId) {
   return dependencyMap[channelId];
@@ -90,13 +94,13 @@ prototype["getInternalState"] = function getInternalState() {
   return { calls: closure_7, enqueuedRings: closure_8 };
 };
 CallStore.displayName = "CallStore";
-const callStore = new CallStore(require("dispatcher"), {
+const callStore = new CallStore(dispatcherDefault, {
   CONNECTION_OPEN: function handleConnectionOpen() {
     return callConnect(true);
   },
   CONNECTION_CLOSED: function handleConnectionClosed() {
-    let closure_7 = {};
-    let closure_8 = {};
+    closure_7 = {};
+    closure_8 = {};
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(callStoreInternalState) {
     callStoreInternalState = callStoreInternalState.callStoreInternalState;
@@ -134,7 +138,7 @@ const callStore = new CallStore(require("dispatcher"), {
       if (1 !== dependencyMap2[channelId].indexOf("all")) {
         tmp3 = null;
       }
-      const HTTP = require(530) /* sendRequest */.HTTP;
+      const HTTP = sendRequest.HTTP;
       obj = { url: null, body: null, oldFormErrors: true, rejectWithError: true };
       obj[0] = Endpoints.CALL_RING(channelId);
       obj = { recipients: null };
@@ -144,10 +148,6 @@ const callStore = new CallStore(require("dispatcher"), {
     }
   },
   CALL_UPDATE: function handleCallUpdate(arg0) {
-    let channelId;
-    let messageId;
-    let ongoingRings;
-    let region;
     ({ channelId, region } = arg0);
     let tmp2 = null != tmp;
     ({ messageId, ongoingRings } = arg0);
@@ -164,8 +164,6 @@ const callStore = new CallStore(require("dispatcher"), {
     dependencyMap[channelId] = obj;
   },
   CALL_DELETE: function handleCallDelete(arg0) {
-    let channelId;
-    let unavailable;
     ({ channelId, unavailable } = arg0);
     if (true === unavailable) {
       if (null != tmp3) {
@@ -180,8 +178,6 @@ const callStore = new CallStore(require("dispatcher"), {
     }
   },
   CALL_ENQUEUE_RING: function handleCallEnqueueRing(arg0) {
-    let channelId;
-    let recipients;
     ({ channelId, recipients } = arg0);
     let items = dependencyMap2[channelId];
     if (items == null) {
@@ -190,14 +186,14 @@ const callStore = new CallStore(require("dispatcher"), {
     if (recipients == null) {
       recipients = ["all"];
     }
-    dependencyMap2[channelId] = importDefault(12).union(items, recipients);
+    dependencyMap2[channelId] = applyDefault.union(items, recipients);
   },
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(channelId) {
     if (null == channelId.channelId) {
-      let closure_8 = {};
+      closure_8 = {};
     }
   }
 });
-const result = require("handleConnectionOpen").fileFinishedImporting("stores/CallStore.tsx");
+const result = require("set").fileFinishedImporting("stores/CallStore.tsx");
 
 export default callStore;

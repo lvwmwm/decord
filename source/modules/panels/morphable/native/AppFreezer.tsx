@@ -1,17 +1,19 @@
-// Module ID: 15778
-// Function ID: 15779
+// Module ID: 15847
+// Function ID: 15848
 // Name: jsx
-// Dependencies: [19, 9010, 21, 7190, 4681, 2]
+// Dependencies: [19, 9047, 21, 7228, 4687, 2]
 // Exports: default
 
-// Module 15778 (jsx)
-import "noop";
-import module_9010 from "module_9010";
-import { jsx } from "jsxProd";
-import set from "set";
+// Module 15847 (jsx)
+import noopAll from "noop" /* 19 */;
+import setDefault from "set" /* 7228 */;
+import closure_2 from "module_9047" /* 9047 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/panels/morphable/native/AppFreezer.tsx");
+noopAll;
+let closure_4 = jsx(setDefault, { style: { flex: 1 } });
+const result = require("set").fileFinishedImporting("modules/panels/morphable/native/AppFreezer.tsx");
 
 export default function AppFreezer(children) {
   let flag = children.manualFreeze;
@@ -20,7 +22,7 @@ export default function AppFreezer(children) {
   }
   let placeholder = children.placeholder;
   if (placeholder === undefined) {
-    placeholder = set;
+    placeholder = closure_4;
   }
   let lockKeys = children.lockKeys;
   let freeze = callback((lockKeys) => {
@@ -35,5 +37,5 @@ export default function AppFreezer(children) {
   if (!freeze) {
     freeze = flag;
   }
-  return jsx(lockKeys(4681).Freeze, { freeze, placeholder, children: children.children });
+  return jsx(lockKeys(4687).Freeze, { freeze, placeholder, children: children.children });
 };

@@ -4,13 +4,15 @@
 // Dependencies: [988, 821]
 
 // Module 987 (isBrowser)
-const require = arg1;
+import dynamicRequire from "dynamicRequire" /* 988 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.isBrowser = function isBrowser() {
   let tmp = typeof window !== "undefined";
   if (typeof window !== "undefined") {
-    const isNodeEnvResult = require(988) /* dynamicRequire */.isNodeEnv();
+    const isNodeEnvResult = dynamicRequire.isNodeEnv();
     let tmp4 = !isNodeEnvResult;
     if (isNodeEnvResult) {
       const _process = tmp5(821).GLOBAL_OBJ.process;
@@ -21,7 +23,7 @@ arg5.isBrowser = function isBrowser() {
       tmp4 = "renderer" === type;
     }
     tmp = tmp4;
-    const obj = require(988) /* dynamicRequire */;
+    const obj = dynamicRequire;
     tmp5 = require;
   }
   return tmp;

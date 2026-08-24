@@ -1,12 +1,15 @@
-// Module ID: 13812
-// Function ID: 13813
+// Module ID: 13870
+// Function ID: 13871
 // Name: A11Y_FEATURE_MAP
-// Dependencies: [13570, 2, 13492]
+// Dependencies: [13628, 2, 13550]
 
-// Module 13812 (A11Y_FEATURE_MAP)
-import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags";
+// Module 13870 (A11Y_FEATURE_MAP)
+import set from "set" /* 2 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 13550 */;
+import AccessibilityFeatureFlags2 from "AccessibilityFeatureFlags" /* 13628 */;
 
-const result = require("AccessibilityAnnouncer").fileFinishedImporting("modules/a11y/native/AccessibilityPreferencesSharedValue.tsx");
+const AccessibilityFeatureFlags = AccessibilityFeatureFlags2.AccessibilityFeatureFlags;
+const result = set.fileFinishedImporting("modules/a11y/native/AccessibilityPreferencesSharedValue.tsx");
 
 export const A11Y_FEATURE_MAP = { [AccessibilityFeatureFlags.REDUCED_MOTION]: "reduceMotion", [AccessibilityFeatureFlags.REDUCED_MOTION_PREFERS_CROSSFADES]: "prefersCrossfades", [AccessibilityFeatureFlags.SCREENREADER]: "screenReaderEnabled" };
-export const accessibilityPreferencesSharedValue = require("AccessibilityAnnouncer").accessibilityPreferencesSharedValue;
+export const accessibilityPreferencesSharedValue = AccessibilityAnnouncer.accessibilityPreferencesSharedValue;

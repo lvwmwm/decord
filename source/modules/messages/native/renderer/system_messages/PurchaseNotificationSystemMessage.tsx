@@ -1,11 +1,15 @@
-// Module ID: 8242
-// Function ID: 8243
+// Module ID: 8282
+// Function ID: 8283
 // Name: createPurchaseNotificationSystemMessage
-// Dependencies: [1954, 8243, 2]
+// Dependencies: [1954, 8283, 2]
 // Exports: createPurchaseNotificationSystemMessage
 
-// Module 8242 (createPurchaseNotificationSystemMessage)
-const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/PurchaseNotificationSystemMessage.tsx");
+// Module 8282 (createPurchaseNotificationSystemMessage)
+import set from "set" /* 2 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import createGuildProductPurchaseSystemMessage from "createGuildProductPurchaseSystemMessage" /* 8283 */;
+
+const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/PurchaseNotificationSystemMessage.tsx");
 
 export const createPurchaseNotificationSystemMessage = function createPurchaseNotificationSystemMessage(message) {
   const purchaseNotification = message.message.purchaseNotification;
@@ -14,9 +18,9 @@ export const createPurchaseNotificationSystemMessage = function createPurchaseNo
     type = purchaseNotification.type;
   }
   let guildProductPurchaseSystemMessage = null;
-  if (type === require(1954) /* PermissionOverwriteType */.PurchaseNotificationType.GUILD_PRODUCT) {
-    guildProductPurchaseSystemMessage = require(8243) /* createGuildProductPurchaseSystemMessage */.createGuildProductPurchaseSystemMessage(message);
-    const tmp2Result = require(8243) /* createGuildProductPurchaseSystemMessage */;
+  if (type === PermissionOverwriteType.PurchaseNotificationType.GUILD_PRODUCT) {
+    guildProductPurchaseSystemMessage = createGuildProductPurchaseSystemMessage.createGuildProductPurchaseSystemMessage(message);
+    const tmp2Result = createGuildProductPurchaseSystemMessage;
   }
   return guildProductPurchaseSystemMessage;
 };

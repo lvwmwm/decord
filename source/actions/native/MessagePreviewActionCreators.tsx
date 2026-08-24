@@ -1,30 +1,30 @@
-// Module ID: 15868
-// Function ID: 15869
+// Module ID: 15965
+// Function ID: 15966
 // Dependencies: [676, 530, 709, 2]
 
-// Module 15868
-import ME from "ME";
+// Module 15965
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+import ME from "ME" /* 676 */;
 
-let c3;
-let c4;
 ({ Endpoints: c3, MAX_MESSAGES_PER_CHANNEL: c4 } = ME);
-const result = require("dispatcher").fileFinishedImporting("actions/native/MessagePreviewActionCreators.tsx");
+const result = set.fileFinishedImporting("actions/native/MessagePreviewActionCreators.tsx");
 
 export default {
   fetchMessages(channelId, around) {
     const _require = channelId;
-    let closure_1 = around;
+    closure_1 = around;
     const HTTP = _require(530).HTTP;
     obj = { url: closure_3.MESSAGES(channelId), query: obj, retries: 2, oldFormErrors: true, rejectWithError: true };
     obj = { limit: closure_4, around };
     const value = HTTP.get(obj);
     value.then((body) => {
-      let obj = around(outer1_2[2]);
+      let obj = around(closure_1_2[2]);
       obj = { type: "LOAD_MESSAGES_AROUND_SUCCESS", channelId: closure_0, messages: body.body, around };
       obj.dispatch(obj);
     });
   },
   clearMessages() {
-    importDefault(709).dispatch({ type: "CLEAR_MESSAGES_AROUND_SUCCESS" });
+    dispatcherDefault.dispatch({ type: "CLEAR_MESSAGES_AROUND_SUCCESS" });
   }
 };

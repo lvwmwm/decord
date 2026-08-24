@@ -1,15 +1,11 @@
-// Module ID: 7696
-// Function ID: 7697
+// Module ID: 7734
+// Function ID: 7735
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 7696 (apexExperiment)
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
-import ApexExperiment from "ApexExperiment";
+// Module 7734 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 let obj = { 1: null };
 obj[1] = { enabled: true };
@@ -29,7 +25,7 @@ const apexExperiment4 = ApexExperiment.createApexExperiment({ name: "2026-07-nit
 const obj4 = { 1: null };
 obj4[1] = { enabled: true };
 const apexExperiment5 = ApexExperiment.createApexExperiment({ name: "2026-07-nitro-acom-discounts", kind: "user", defaultConfig: { enabled: false }, variations: obj4 });
-const result = require("set").fileFinishedImporting("modules/billing/native/ACOMExperiments.tsx");
+const result = set.fileFinishedImporting("modules/billing/native/ACOMExperiments.tsx");
 
 export const NitroACOMSubscriptionExperiment = apexExperiment;
 export const ACOMModifyDarkLaunchExperiment = apexExperiment1;

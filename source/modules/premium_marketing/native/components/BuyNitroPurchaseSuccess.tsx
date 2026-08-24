@@ -1,23 +1,27 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8064
+// Function ID: 8065
 // Name: presentBuyNitroPurchaseSuccess
-// Dependencies: [19, 7392, 1924, 21, 1236, 4657, 4660, 2]
+// Dependencies: [19, 7430, 1924, 21, 1236, 4663, 4667, 2]
 // Exports: presentBuyNitroPurchaseSuccess
 
-// Module 8025 (presentBuyNitroPurchaseSuccess)
-import "noop";
-import { reset } from "usePremiumPlanPurchasedStore";
-import { PremiumTypes } from "GuildFeatures";
-import { jsx } from "jsxProd";
+// Module 8064 (presentBuyNitroPurchaseSuccess)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import useAlertStore from "useAlertStore" /* 4663 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import { reset } from "usePremiumPlanPurchasedStore" /* 7430 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("GuildFeatures").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPurchaseSuccess.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPurchaseSuccess.tsx");
 
 export const presentBuyNitroPurchaseSuccess = function presentBuyNitroPurchaseSuccess(premiumTier) {
-  let obj = require(4657) /* useAlertStore */;
+  let obj = useAlertStore;
   obj = { title: null, content: null, actions: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["Q+BB2w"]);
+  const intl = getSystemLocale.intl;
+  obj[0] = intl.string(getSystemLocale.t["Q+BB2w"]);
   if (PremiumTypes.TIER_0 === premiumTier) {
     const intl4 = tmp(1236).intl;
     let stringResult = intl4.string(tmp(1236).t["6WWrVM"]);
@@ -31,7 +35,7 @@ export const presentBuyNitroPurchaseSuccess = function presentBuyNitroPurchaseSu
   obj[1] = stringResult;
   obj = { variant: "primary", text: null };
   const intl5 = tmp(1236).intl;
-  obj[1] = intl5.string(require(1236) /* getSystemLocale */.t.TkTvBz);
-  obj[2] = jsx(require(4660) /* getAlertModalItemKey */.AlertActionButton, { variant: "primary", text: null });
-  obj.openAlert("BuyNitroPurchaseSuccess", jsx(require(4660) /* getAlertModalItemKey */.AlertModal, { variant: "primary", text: null }), reset);
+  obj[1] = intl5.string(getSystemLocale.t.TkTvBz);
+  obj[2] = jsx(getAlertModalItemKey.AlertActionButton, { variant: "primary", text: null });
+  obj.openAlert("BuyNitroPurchaseSuccess", jsx(getAlertModalItemKey.AlertModal, { variant: "primary", text: null }), reset);
 };

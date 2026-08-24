@@ -1,44 +1,41 @@
-// Module ID: 11740
-// Function ID: 11741
+// Module ID: 11789
+// Function ID: 11790
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 4661, 712, 4310, 1363, 8307, 11737, 11692, 4756, 4734, 11693, 1297, 1236, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 4314, 1363, 8347, 11786, 11741, 4761, 4739, 11742, 1297, 1236, 2]
 // Exports: default
 
-// Module 11740 (GuildPowerupsPerkCard)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 11789 (GuildPowerupsPerkCard)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import useThemeDefault from "useTheme" /* 4314 */;
+import Text from "Text" /* 4739 */;
+import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import apexExperiment from "apexExperiment" /* 8347 */;
+import GuildPowerupCardFooterActive from "GuildPowerupCardFooterActive" /* 11742 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c4;
-let c5;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, card: null, contentContainer: null, imageContainer: null, gradient: null, headerContainer: null, badge: null };
-createCacheKey = { marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { marginHorizontal: ThemesDefault.space.PX_16 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { padding: 0, overflow: "hidden" };
-createCacheKey[2] = { gap: require("Themes").space.PX_16, padding: require("Themes").space.PX_16 };
+createCacheKey[2] = { gap: ThemesDefault.space.PX_16, padding: ThemesDefault.space.PX_16 };
 createCacheKey[3] = { width: "100%", height: 160 };
 createCacheKey[4] = { position: "absolute", left: 0, right: 0, top: 0, height: "100%" };
-let obj1 = { gap: require("Themes").space.PX_16, padding: require("Themes").space.PX_16 };
-createCacheKey[5] = { gap: require("Themes").space.PX_4 };
-const obj2 = { gap: require("Themes").space.PX_4 };
-createCacheKey[6] = { position: "absolute", top: require("Themes").space.PX_12, right: require("Themes").space.PX_12 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-let obj3 = { position: "absolute", top: require("Themes").space.PX_12, right: require("Themes").space.PX_12 };
-const result = require("jsxProd").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsPerkCard.tsx");
+let obj1 = { gap: ThemesDefault.space.PX_16, padding: ThemesDefault.space.PX_16 };
+createCacheKey[5] = { gap: ThemesDefault.space.PX_4 };
+const obj2 = { gap: ThemesDefault.space.PX_4 };
+createCacheKey[6] = { position: "absolute", top: ThemesDefault.space.PX_12, right: ThemesDefault.space.PX_12 };
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+let obj3 = { position: "absolute", top: ThemesDefault.space.PX_12, right: ThemesDefault.space.PX_12 };
+const result = require("set").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsPerkCard.tsx");
 
 export default function GuildPowerupsPerkCard(arg0) {
-  let badge;
-  let description;
-  let imageUrl;
-  let isImageAnimated;
-  let onPress;
-  let riveComponent;
-  let status;
-  let style;
-  let title;
   ({ imageUrl, isImageAnimated } = arg0);
   ({ title, description } = arg0);
   if (isImageAnimated === undefined) {
@@ -47,18 +44,18 @@ export default function GuildPowerupsPerkCard(arg0) {
   ({ riveComponent, status, badge } = arg0);
   ({ style, onPress } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  const tmp2 = createCacheKey();
-  let obj = require(1363) /* AccessibilityAnnouncer */;
-  const tmp5 = importDefault(4310)();
-  let obj1 = require(8307) /* apexExperiment */;
+  const tmp2 = callback2();
+  let obj = AccessibilityAnnouncer;
+  const tmp5 = useThemeDefault();
+  obj1 = apexExperiment;
   const manaTypeConsolidationExperiment = obj1.useManaTypeConsolidationExperiment("GuildPowerupsPerkCard");
-  const isThemeDarkResult = obj.isThemeDark(importDefault(4310)());
+  const isThemeDarkResult = obj.isThemeDark(useThemeDefault());
   obj = { containerStyle: items, style: tmp2.card, status, onPress, children: null };
   items = [tmp2.container, style];
   obj = { style: tmp2.imageContainer, children: null };
-  let tmp3Result = tmp3(11737);
+  let tmp3Result = tmp3(11786);
   if (riveComponent == null) {
-    tmp3Result = tmp3(11692);
+    tmp3Result = tmp3(11741);
     if (imageUrl == null) {
       imageUrl = "";
     }
@@ -69,8 +66,8 @@ export default function GuildPowerupsPerkCard(arg0) {
     const tmp13 = callback;
   }
   const items1 = [riveComponent, ];
-  const tmp9 = obj.isThemeDark(importDefault(4310)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"];
-  items1[1] = callback(importDefault(4756), { colors: obj.isThemeDark(importDefault(4310)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"], style: tmp2.gradient });
+  const tmp9 = obj.isThemeDark(useThemeDefault()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"];
+  items1[1] = callback(LinearGradientDefault, { colors: obj.isThemeDark(useThemeDefault()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"], style: tmp2.gradient });
   obj[1] = items1;
   const items2 = [closure_5(View, obj), , , ];
   const obj3 = { style: tmp2.contentContainer, children: null };
@@ -86,18 +83,18 @@ export default function GuildPowerupsPerkCard(arg0) {
   }
   obj5[1] = str2;
   obj5[2] = title;
-  const items3 = [callback(require(4734) /* Text */.Text, obj5), ];
+  const items3 = [callback(Text.Text, obj5), ];
   let str3 = "text-sm/medium";
   if (manaTypeConsolidationExperiment) {
     str3 = "experimental/body-sm/normal";
   }
-  items3[1] = callback(require(4734) /* Text */.Text, { variant: str3, children: description });
+  items3[1] = callback(Text.Text, { variant: str3, children: description });
   obj4[1] = items3;
   const items4 = [closure_5(View, obj4), ];
   const obj6 = {};
   const merged1 = Object.assign(merged);
   obj6.status = status;
-  items4[1] = callback(require(11693) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj6);
+  items4[1] = callback(GuildPowerupCardFooterActive.GuildPowerupsCardFooter, obj6);
   obj3[1] = items4;
   items2[1] = closure_5(View, obj3);
   let tmp15Result = "new" === badge;

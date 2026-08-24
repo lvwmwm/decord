@@ -1,21 +1,26 @@
-// Module ID: 8495
-// Function ID: 8496
+// Module ID: 8534
+// Function ID: 8535
 // Name: PressableNavigatorButtonWrapper
-// Dependencies: [17, 8493, 21, 4661, 712, 2]
+// Dependencies: [17, 8532, 21, 4668, 712, 2]
 // Exports: default
 
-// Module 8495 (PressableNavigatorButtonWrapper)
-import { View } from "get ActivityIndicator";
-import { MIN_HEADER_HEIGHT } from "MIN_HEADER_HEIGHT";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8534 (PressableNavigatorButtonWrapper)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import ThemesDefault from "Themes" /* 712 */;
+import MIN_HEADER_HEIGHT2 from "MIN_HEADER_HEIGHT" /* 8532 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
+const View = get_ActivityIndicator.View;
+const MIN_HEADER_HEIGHT = MIN_HEADER_HEIGHT2.MIN_HEADER_HEIGHT;
+const jsx = jsxProd.jsx;
 let obj = { buttonWrapper: null, buttonWrapperModal: null };
-obj = { flexShrink: 0, flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_8, height: MIN_HEADER_HEIGHT, width: MIN_HEADER_HEIGHT };
+obj = { flexShrink: 0, flexDirection: "row", alignItems: "center", padding: ThemesDefault.space.PX_8, height: MIN_HEADER_HEIGHT, width: MIN_HEADER_HEIGHT };
 obj[0] = obj;
 obj[1] = { marginLeft: -8 };
 let closure_2 = createCacheKey.createStyles(obj);
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorButtonWrapper.tsx");
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorButtonWrapper.tsx");
 
 export default function PressableNavigatorButtonWrapper(children) {
   let flag = children.isModal;

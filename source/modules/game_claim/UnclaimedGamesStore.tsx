@@ -1,12 +1,14 @@
-// Module ID: 15454
-// Function ID: 15455
+// Module ID: 15518
+// Function ID: 15519
 // Name: getMap
 // Dependencies: [589, 709, 2]
 
-// Module 15454 (getMap)
-import { Store } from "initialize";
+// Module 15518 (getMap)
+import initializeDefault from "initialize" /* 589 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
 
 let c0 = null;
+const Store = initializeDefault.Store;
 class UnclaimedGamesStore extends Store {
 }
 const prototype = UnclaimedGamesStore.prototype;
@@ -50,9 +52,9 @@ prototype["getGuildIdsWithUnclaimedGames"] = function getGuildIdsWithUnclaimedGa
   }
 };
 UnclaimedGamesStore.displayName = "UnclaimedGamesStore";
-const unclaimedGamesStore = new UnclaimedGamesStore(require("dispatcher"), {
+const unclaimedGamesStore = new UnclaimedGamesStore(dispatcherDefault, {
   LOGOUT: function handleLogout() {
-    let c0 = null;
+    c0 = null;
   },
   UNCLAIMED_GAMES_FETCH_SUCCESS: function handleFetchSuccess(guildIdToGameIds) {
     guildIdToGameIds = guildIdToGameIds.guildIdToGameIds;

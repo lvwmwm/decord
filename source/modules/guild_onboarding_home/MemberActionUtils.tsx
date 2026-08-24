@@ -1,28 +1,29 @@
-// Module ID: 11455
-// Function ID: 11456
+// Module ID: 11504
+// Function ID: 11505
 // Name: useMemberActionsForChannel
-// Dependencies: [1990, 5048, 5049, 4009, 5284, 647, 1403, 2]
+// Dependencies: [1991, 5053, 5054, 4012, 5289, 647, 1403, 2]
 // Exports: useAllActionsCompleted, useMemberActionsForChannel, useNextMemberAction
 
-// Module 11455 (useMemberActionsForChannel)
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
-import set from "set";
-import { GuildMemberFlags } from "GuildMemberFlags";
+// Module 11504 (useMemberActionsForChannel)
+import useIsNewMemberDefault from "useIsNewMember" /* 5289 */;
+import closure_3 from "trackCommunicationDisabled" /* 1991 */;
+import closure_4 from "handleSettingsLoadSuccess" /* 5053 */;
+import closure_5 from "set" /* 5054 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4012 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/MemberActionUtils.tsx");
 
 export const useMemberActionsForChannel = function useMemberActionsForChannel(guild_id, channel) {
   const _require = guild_id;
-  const importDefault = channel;
+  importDefault = channel;
   let obj = _require(647);
-  const items = [handleSettingsLoadSuccess];
+  const items = [closure_4];
   const items1 = [guild_id];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getNewMemberActions(closure_0), items1);
-  const tmp = importDefault(5284)(guild_id);
-  const items2 = [set];
-  const stateFromStores1 = _require(647).useStateFromStores(items2, () => outer1_5.getCompletedActions(closure_0));
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getNewMemberActions(closure_0), items1);
+  const tmp = useIsNewMemberDefault(guild_id);
+  const items2 = [closure_5];
+  const stateFromStores1 = _require(647).useStateFromStores(items2, () => closure_1_5.getCompletedActions(closure_0));
   if (tmp) {
     let num;
     if (stateFromStores != null) {
@@ -57,12 +58,12 @@ export const useMemberActionsForChannel = function useMemberActionsForChannel(gu
 };
 export const useNextMemberAction = function useNextMemberAction(guild_id, channelId) {
   const _require = guild_id;
-  let closure_1 = channelId;
-  const items = [handleSettingsLoadSuccess];
-  const stateFromStores = _require(647).useStateFromStores(items, () => outer1_4.getNewMemberActions(closure_0));
+  closure_1 = channelId;
+  const items = [closure_4];
+  const stateFromStores = _require(647).useStateFromStores(items, () => closure_1_4.getNewMemberActions(closure_0));
   const obj = _require(647);
-  const items1 = [set];
-  const dependencyMap = _require(647).useStateFromStores(items1, () => outer1_5.getCompletedActions(closure_0));
+  const items1 = [closure_5];
+  dependencyMap = _require(647).useStateFromStores(items1, () => closure_1_5.getCompletedActions(closure_0));
   let found;
   if (stateFromStores != null) {
     found = stateFromStores.find((channelId) => {
@@ -81,8 +82,8 @@ export const useNextMemberAction = function useNextMemberAction(guild_id, channe
 };
 export const useAllActionsCompleted = function useAllActionsCompleted(guild_id) {
   const _require = guild_id;
-  const items = [trackCommunicationDisabled];
-  const stateFromStores = _require(647).useStateFromStores(items, () => outer1_3.getSelfMember(closure_0));
+  const items = [closure_3];
+  const stateFromStores = _require(647).useStateFromStores(items, () => closure_1_3.getSelfMember(closure_0));
   const obj = _require(647);
   let num;
   if (stateFromStores != null) {

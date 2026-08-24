@@ -1,29 +1,32 @@
-// Module ID: 7192
-// Function ID: 7193
+// Module ID: 7230
+// Function ID: 7231
 // Name: useShouldShowInlineGuildCapUpsell
-// Dependencies: [1910, 1922, 676, 589, 7193, 4039, 2]
+// Dependencies: [1910, 1922, 676, 589, 7231, 4042, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 7192 (useShouldShowInlineGuildCapUpsell)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { MAX_USER_GUILDS } from "ME";
+// Module 7230 (useShouldShowInlineGuildCapUpsell)
+import initialize from "initialize" /* 589 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
+import HotspotStore2 from "HotspotStore" /* 7231 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import { MAX_USER_GUILDS } from "ME" /* 676 */;
 
-const require = arg1;
-let result = require("ME").fileFinishedImporting("modules/premium/GuildCapUpsellHooks.tsx");
+require = arg1;
+let result = require("set").fileFinishedImporting("modules/premium/GuildCapUpsellHooks.tsx");
 
 export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGuildCapUpsell() {
-  const items = [createGuildRecordFromRust];
-  let stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => guildCount.getGuildCount() >= 95);
-  const obj = require(589) /* initialize */;
-  const items1 = [require(7193) /* HotspotStore */.HotspotStore];
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => {
-    const HotspotStore = callback(7193).HotspotStore;
-    return HotspotStore.hasHotspot(callback(7193).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+  const items = [closure_3];
+  let stateFromStores = initialize.useStateFromStores(items, () => guildCount.getGuildCount() >= 95);
+  const obj = initialize;
+  const items1 = [HotspotStore2.HotspotStore];
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => {
+    const HotspotStore = callback(7231).HotspotStore;
+    return HotspotStore.hasHotspot(callback(7231).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
   });
-  const obj2 = require(589) /* initialize */;
-  const items2 = [mergeGuildAvatar];
-  const stateFromStoresObject = require(589) /* initialize */.useStateFromStoresObject(items2, () => !callback2(4039).isPremium(currentUser.getCurrentUser()));
+  const obj2 = initialize;
+  const items2 = [closure_4];
+  const stateFromStoresObject = initialize.useStateFromStoresObject(items2, () => !callback2(4042).isPremium(currentUser.getCurrentUser()));
   if (stateFromStores) {
     stateFromStores = stateFromStores1;
   }
@@ -33,10 +36,10 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   return stateFromStores;
 };
 export const hideInlineGuildCapUpsell = function hideInlineGuildCapUpsell() {
-  require(7193) /* HotspotStore */.hideHotspot(require(7193) /* HotspotStore */.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+  HotspotStore2.hideHotspot(HotspotStore2.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
 };
 export const hasIncreasedGuildCap = function hasIncreasedGuildCap(currentUser) {
-  let result = importDefault(4039).canUseIncreasedGuildCap(currentUser);
+  let result = getPremiumPlanItemDefault.canUseIncreasedGuildCap(currentUser);
   if (!result) {
     let isStaffResult;
     if (currentUser != null) {
@@ -50,7 +53,7 @@ export const isAtGuildCapAndNonPremium = function isAtGuildCapAndNonPremium() {
   let tmp = guildCount.getGuildCount() >= MAX_USER_GUILDS;
   if (tmp) {
     currentUser = currentUser.getCurrentUser();
-    let result = importDefault(4039).canUseIncreasedGuildCap(currentUser);
+    let result = getPremiumPlanItemDefault.canUseIncreasedGuildCap(currentUser);
     if (!result) {
       let isStaffResult;
       if (currentUser != null) {
@@ -59,7 +62,7 @@ export const isAtGuildCapAndNonPremium = function isAtGuildCapAndNonPremium() {
       result = true === isStaffResult;
     }
     tmp = !result;
-    const obj2 = importDefault(4039);
+    const obj2 = getPremiumPlanItemDefault;
   }
   return tmp;
 };

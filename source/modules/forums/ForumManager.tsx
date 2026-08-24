@@ -1,14 +1,16 @@
-// Module ID: 16578
-// Function ID: 16579
+// Module ID: 16674
+// Function ID: 16675
 // Name: handleChannelPreload
-// Dependencies: [1391, 1398, 5038, 7269, 2]
+// Dependencies: [1391, 1398, 5043, 7307, 2]
 
-// Module 16578 (handleChannelPreload)
-import ensureGuildLoaded from "ensureGuildLoaded";
-import { isStaticChannelRoute } from "set";
-import "initialize";
+// Module 16674 (handleChannelPreload)
+import initializeDefault from "initialize" /* 5043 */;
+import loadForumPostData from "loadForumPostData" /* 7307 */;
+import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import { isStaticChannelRoute } from "set" /* 1398 */;
 
-const require = arg1;
+require = arg1;
+initializeDefault;
 class ForumManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -21,13 +23,13 @@ ForumManager.prototype["handleChannelPreload"] = function handleChannelPreload(c
   if (!isStaticChannelRoute(channelId)) {
     channel = channel.getChannel(channelId);
     if (tmp3) {
-      require(7269) /* loadForumPostData */.preloadForumThreads(channel);
-      const obj2 = require(7269) /* loadForumPostData */;
+      loadForumPostData.preloadForumThreads(channel);
+      const obj2 = loadForumPostData;
     }
     tmp3 = null != channel && channel.isForumLikeChannel();
   }
 };
 const forumManager = new ForumManager();
-const result = require("initialize").fileFinishedImporting("modules/forums/ForumManager.tsx");
+const result = require("set").fileFinishedImporting("modules/forums/ForumManager.tsx");
 
 export default forumManager;

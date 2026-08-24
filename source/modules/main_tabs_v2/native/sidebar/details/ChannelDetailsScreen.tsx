@@ -1,10 +1,12 @@
-// Module ID: 16075
-// Function ID: 16076
-// Dependencies: [19, 21, 1501, 4234, 15846, 2]
+// Module ID: 16173
+// Function ID: 16174
+// Dependencies: [19, 21, 1501, 4238, 15943, 2]
 
-// Module 16075
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 16173
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4238 */;
+import PX_8Default from "PX_8" /* 15943 */;
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -16,9 +18,9 @@ const memoResult = importAllResult.memo((navigation) => {
   const callback = importAllResult.useCallback(() => {
     navigation.goBack();
   }, items);
-  obj = { channelId: route.params.channelId, isSearchLocked: true === route.params.search, onBackPress: callback, componentWidth: importDefault(4234)().width, onChannelDeleted: callback, expandTopic: true === route.params.expandTopic };
-  return jsx(importDefault(15846), { channelId: route.params.channelId, isSearchLocked: true === route.params.search, onBackPress: callback, componentWidth: importDefault(4234)().width, onChannelDeleted: callback, expandTopic: true === route.params.expandTopic });
+  obj = { channelId: route.params.channelId, isSearchLocked: true === route.params.search, onBackPress: callback, componentWidth: useBaseAppContainerDimensionsDefault().width, onChannelDeleted: callback, expandTopic: true === route.params.expandTopic };
+  return jsx(PX_8Default, { channelId: route.params.channelId, isSearchLocked: true === route.params.search, onBackPress: callback, componentWidth: useBaseAppContainerDimensionsDefault().width, onChannelDeleted: callback, expandTopic: true === route.params.expandTopic });
 });
-const result = require("createStandardNavigationFactories").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsScreen.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsScreen.tsx");
 
 export default memoResult;

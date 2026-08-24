@@ -1,24 +1,24 @@
-// Module ID: 9309
-// Function ID: 9310
+// Module ID: 9346
+// Function ID: 9347
 // Name: useEmojiPickerSearchState
-// Dependencies: [32, 19, 6727, 705, 1374, 2]
+// Dependencies: [32, 19, 6764, 705, 1374, 2]
 // Exports: default
 
-// Module 9309 (useEmojiPickerSearchState)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import getEmojiToGroupId from "getEmojiToGroupId";
+// Module 9346 (useEmojiPickerSearchState)
+import closure_2 from "_slicedToArray" /* 32 */;
+import closure_3 from "noop" /* 19 */;
+import closure_4 from "getEmojiToGroupId" /* 6764 */;
 
 const require = arg1;
-let result = require("getEmojiToGroupId").fileFinishedImporting("modules/emoji_picker/native/components/useEmojiPickerSearchState.tsx");
+let result = require("set").fileFinishedImporting("modules/emoji_picker/native/components/useEmojiPickerSearchState.tsx");
 
 export default function useEmojiPickerSearchState(arg0, arg1, arg2) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  closure_0 = arg0;
+  closure_1 = arg1;
   let callback = arg2;
   ref = ref.useRef("");
   const tmp2 = callback(ref.useState(null), 2);
-  let getEmojiToGroupId = tmp2[1];
+  closure_4 = tmp2[1];
   const items = [arg1, arg0, arg2];
   return {
     handleTextChange: ref.useCallback((arr) => {
@@ -33,17 +33,17 @@ export default function useEmojiPickerSearchState(arg0, arg1, arg2) {
         let obj = { channel: null, query: null, count: 0, intention: null };
         obj[0] = callback;
         obj[1] = substr;
-        obj[3] = _slicedToArray;
-        const dependencyMap = getEmojiToGroupId.searchWithoutFetchingLatest(obj);
+        obj[3] = closure_2;
+        dependencyMap = closure_4.searchWithoutFetchingLatest(obj);
         callback(705).batchUpdates(() => {
-          outer1_3.current = closure_0;
-          outer1_4(closure_1);
+          closure_1_3.current = closure_0;
+          closure_1_4(closure_1);
         });
         const obj3 = callback(705);
       } else {
         obj = callback(705);
         obj.batchUpdates(() => {
-          noop.current = "";
+          closure_3.current = "";
           callback(null);
           const result = closure_1.set(0);
         });

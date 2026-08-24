@@ -4,11 +4,11 @@
 // Dependencies: [41, 42, 93, 95, 98, 1726, 1724]
 
 // Module 1772 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import importDefaultResult from "_createClass";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import importDefaultResult1 from "_inherits";
+import closure_2 from "_classCallCheck" /* 41 */;
+import importDefaultResult from "_createClass" /* 42 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import importDefaultResult1 from "_inherits" /* 98 */;
 
 let BounceOutRight = arg1;
 function _isNativeReflectConstruct() {
@@ -22,10 +22,10 @@ function _isNativeReflectConstruct() {
     } else {
       callResult = call(constructResult);
     }
-    let closure_0 = !callResult;
-    function _isNativeReflectConstruct() {
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
-    }
+    };
     return _isNativeReflectConstruct();
   } catch (err) {
   }
@@ -35,12 +35,12 @@ class BounceIn {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_2(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_4;
+    obj = closure_4(closure_0);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -49,7 +49,7 @@ class BounceIn {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
       const delay = delayFunction.getDelay();
@@ -62,7 +62,7 @@ class BounceIn {
         obj = { scale: null };
         let obj3 = delayFunction(delay[5]);
         let obj4 = delayFunction(delay[5]);
-        const obj1 = { duration: 0.55 * duration };
+        obj1 = { duration: 0.55 * duration };
         const withTimingResult = obj4.withTiming(1.2, { duration: 0.55 * duration });
         const obj2 = { duration: 0.15 * duration };
         const obj7 = delayFunction(delay[5]);
@@ -81,9 +81,9 @@ class BounceIn {
         obj[2] = callbackV;
         return obj;
       };
-      fn.__closure = { delayFunction, delay, withSequence: _undefined(outer1_1[5]).withSequence, withTiming: _undefined(outer1_1[5]).withTiming, duration, initialValues, callback: callbackV };
+      fn.__closure = { delayFunction, delay, withSequence: callback(closure_1_1[5]).withSequence, withTiming: callback(closure_1_1[5]).withTiming, duration, initialValues, callback: callbackV };
       fn.__workletHash = 6814288411244;
-      fn.__initData = outer1_6;
+      fn.__initData = closure_1_6;
       return fn;
     };
     return tmp3Result;
@@ -124,12 +124,12 @@ class BounceInDown {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_2(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_4;
+    obj = closure_4(closure_0);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -138,7 +138,7 @@ class BounceInDown {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
       const delay = delayFunction.getDelay();
@@ -152,7 +152,7 @@ class BounceInDown {
         let obj3 = delayFunction(delay[5]);
         let obj4 = delayFunction(delay[5]);
         let obj6 = delayFunction(delay[5]);
-        const obj1 = { duration: 0.55 * duration };
+        obj1 = { duration: 0.55 * duration };
         const obj2 = { duration: 0.15 * duration };
         const withTimingResult = obj4.withTiming(-20, { duration: 0.55 * duration });
         const withTimingResult1 = obj6.withTiming(10, { duration: 0.15 * duration });
@@ -171,9 +171,9 @@ class BounceInDown {
         obj[2] = callbackV;
         return obj;
       };
-      fn.__closure = { delayFunction, delay, withSequence: _undefined(outer1_1[5]).withSequence, withTiming: _undefined(outer1_1[5]).withTiming, duration, initialValues, callback: callbackV };
+      fn.__closure = { delayFunction, delay, withSequence: callback(closure_1_1[5]).withSequence, withTiming: callback(closure_1_1[5]).withTiming, duration, initialValues, callback: callbackV };
       fn.__workletHash = 4551292686981;
-      fn.__initData = outer1_7;
+      fn.__initData = closure_1_7;
       return fn;
     };
     return tmp3Result;
@@ -213,12 +213,12 @@ class BounceInUp {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_2(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_4;
+    obj = closure_4(closure_0);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -227,7 +227,7 @@ class BounceInUp {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
       const delay = delayFunction.getDelay();
@@ -241,7 +241,7 @@ class BounceInUp {
         let obj3 = delayFunction(delay[5]);
         let obj4 = delayFunction(delay[5]);
         let obj6 = delayFunction(delay[5]);
-        const obj1 = { duration: 0.55 * duration };
+        obj1 = { duration: 0.55 * duration };
         const obj2 = { duration: 0.15 * duration };
         const withTimingResult = obj4.withTiming(20, { duration: 0.55 * duration });
         const withTimingResult1 = obj6.withTiming(-10, { duration: 0.15 * duration });
@@ -260,9 +260,9 @@ class BounceInUp {
         obj[2] = callbackV;
         return obj;
       };
-      fn.__closure = { delayFunction, delay, withSequence: _undefined(outer1_1[5]).withSequence, withTiming: _undefined(outer1_1[5]).withTiming, duration, initialValues, callback: callbackV };
+      fn.__closure = { delayFunction, delay, withSequence: callback(closure_1_1[5]).withSequence, withTiming: callback(closure_1_1[5]).withTiming, duration, initialValues, callback: callbackV };
       fn.__workletHash = 11333943352836;
-      fn.__initData = outer1_8;
+      fn.__initData = closure_1_8;
       return fn;
     };
     return tmp3Result;
@@ -303,12 +303,12 @@ class BounceInLeft {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_2(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_4;
+    obj = closure_4(closure_0);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -317,7 +317,7 @@ class BounceInLeft {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
       const delay = delayFunction.getDelay();
@@ -331,7 +331,7 @@ class BounceInLeft {
         let obj3 = delayFunction(delay[5]);
         let obj4 = delayFunction(delay[5]);
         let obj6 = delayFunction(delay[5]);
-        const obj1 = { duration: 0.55 * duration };
+        obj1 = { duration: 0.55 * duration };
         const obj2 = { duration: 0.15 * duration };
         const withTimingResult = obj4.withTiming(20, { duration: 0.55 * duration });
         const withTimingResult1 = obj6.withTiming(-10, { duration: 0.15 * duration });
@@ -350,9 +350,9 @@ class BounceInLeft {
         obj[2] = callbackV;
         return obj;
       };
-      fn.__closure = { delayFunction, delay, withSequence: _undefined(outer1_1[5]).withSequence, withTiming: _undefined(outer1_1[5]).withTiming, duration, initialValues, callback: callbackV };
+      fn.__closure = { delayFunction, delay, withSequence: callback(closure_1_1[5]).withSequence, withTiming: callback(closure_1_1[5]).withTiming, duration, initialValues, callback: callbackV };
       fn.__workletHash = 10162410157050;
-      fn.__initData = outer1_9;
+      fn.__initData = closure_1_9;
       return fn;
     };
     return tmp3Result;
@@ -393,12 +393,12 @@ class BounceInRight {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_2(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_4;
+    obj = closure_4(closure_0);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -407,7 +407,7 @@ class BounceInRight {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
       const delay = delayFunction.getDelay();
@@ -421,7 +421,7 @@ class BounceInRight {
         let obj3 = delayFunction(delay[5]);
         let obj4 = delayFunction(delay[5]);
         let obj6 = delayFunction(delay[5]);
-        const obj1 = { duration: 0.55 * duration };
+        obj1 = { duration: 0.55 * duration };
         const obj2 = { duration: 0.15 * duration };
         const withTimingResult = obj4.withTiming(-20, { duration: 0.55 * duration });
         const withTimingResult1 = obj6.withTiming(10, { duration: 0.15 * duration });
@@ -440,9 +440,9 @@ class BounceInRight {
         obj[2] = callbackV;
         return obj;
       };
-      fn.__closure = { delayFunction, delay, withSequence: _undefined(outer1_1[5]).withSequence, withTiming: _undefined(outer1_1[5]).withTiming, duration, initialValues, callback: callbackV };
+      fn.__closure = { delayFunction, delay, withSequence: callback(closure_1_1[5]).withSequence, withTiming: callback(closure_1_1[5]).withTiming, duration, initialValues, callback: callbackV };
       fn.__workletHash = 4134237895259;
-      fn.__initData = outer1_10;
+      fn.__initData = closure_1_10;
       return fn;
     };
     return tmp3Result;
@@ -483,12 +483,12 @@ class BounceOut {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_2(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_4;
+    obj = closure_4(closure_0);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -497,7 +497,7 @@ class BounceOut {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
       const delay = delayFunction.getDelay();
@@ -510,7 +510,7 @@ class BounceOut {
         obj = { scale: null };
         let obj3 = delayFunction(delay[5]);
         let obj4 = delayFunction(delay[5]);
-        const obj1 = { duration: 0.15 * duration };
+        obj1 = { duration: 0.15 * duration };
         const withTimingResult = obj4.withTiming(1.1, { duration: 0.15 * duration });
         const obj2 = { duration: 0.15 * duration };
         const obj7 = delayFunction(delay[5]);
@@ -529,9 +529,9 @@ class BounceOut {
         obj[2] = callbackV;
         return obj;
       };
-      fn.__closure = { delayFunction, delay, withSequence: _undefined(outer1_1[5]).withSequence, withTiming: _undefined(outer1_1[5]).withTiming, duration, initialValues, callback: callbackV };
+      fn.__closure = { delayFunction, delay, withSequence: callback(closure_1_1[5]).withSequence, withTiming: callback(closure_1_1[5]).withTiming, duration, initialValues, callback: callbackV };
       fn.__workletHash = 15864962046507;
-      fn.__initData = outer1_11;
+      fn.__initData = closure_1_11;
       return fn;
     };
     return tmp3Result;
@@ -572,12 +572,12 @@ class BounceOutDown {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_2(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_4;
+    obj = closure_4(closure_0);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -586,7 +586,7 @@ class BounceOutDown {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
       const delay = delayFunction.getDelay();
@@ -599,7 +599,7 @@ class BounceOutDown {
         obj = { translateY: null };
         let obj3 = delayFunction(delay[5]);
         let obj4 = delayFunction(delay[5]);
-        const obj1 = { duration: 0.15 * duration };
+        obj1 = { duration: 0.15 * duration };
         const withTimingResult = obj4.withTiming(-10, { duration: 0.15 * duration });
         const obj2 = { duration: 0.15 * duration };
         const obj7 = delayFunction(delay[5]);
@@ -618,9 +618,9 @@ class BounceOutDown {
         obj[2] = callbackV;
         return obj;
       };
-      fn.__closure = { delayFunction, delay, withSequence: _undefined(outer1_1[5]).withSequence, withTiming: _undefined(outer1_1[5]).withTiming, duration, initialValues, callback: callbackV };
+      fn.__closure = { delayFunction, delay, withSequence: callback(closure_1_1[5]).withSequence, withTiming: callback(closure_1_1[5]).withTiming, duration, initialValues, callback: callbackV };
       fn.__workletHash = 4170057933312;
-      fn.__initData = outer1_12;
+      fn.__initData = closure_1_12;
       return fn;
     };
     return tmp3Result;
@@ -661,12 +661,12 @@ class BounceOutUp {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_2(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_4;
+    obj = closure_4(closure_0);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -675,7 +675,7 @@ class BounceOutUp {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
       const delay = delayFunction.getDelay();
@@ -688,7 +688,7 @@ class BounceOutUp {
         obj = { translateY: null };
         let obj3 = delayFunction(delay[5]);
         let obj4 = delayFunction(delay[5]);
-        const obj1 = { duration: 0.15 * duration };
+        obj1 = { duration: 0.15 * duration };
         const withTimingResult = obj4.withTiming(10, { duration: 0.15 * duration });
         const obj2 = { duration: 0.15 * duration };
         const obj7 = delayFunction(delay[5]);
@@ -707,9 +707,9 @@ class BounceOutUp {
         obj[2] = callbackV;
         return obj;
       };
-      fn.__closure = { delayFunction, delay, withSequence: _undefined(outer1_1[5]).withSequence, withTiming: _undefined(outer1_1[5]).withTiming, duration, initialValues, callback: callbackV };
+      fn.__closure = { delayFunction, delay, withSequence: callback(closure_1_1[5]).withSequence, withTiming: callback(closure_1_1[5]).withTiming, duration, initialValues, callback: callbackV };
       fn.__workletHash = 8059944917039;
-      fn.__initData = outer1_13;
+      fn.__initData = closure_1_13;
       return fn;
     };
     return tmp3Result;
@@ -750,12 +750,12 @@ class BounceOutLeft {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_2(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_4;
+    obj = closure_4(closure_0);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -764,7 +764,7 @@ class BounceOutLeft {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
       const delay = delayFunction.getDelay();
@@ -777,7 +777,7 @@ class BounceOutLeft {
         obj = { translateX: null };
         let obj3 = delayFunction(delay[5]);
         let obj4 = delayFunction(delay[5]);
-        const obj1 = { duration: 0.15 * duration };
+        obj1 = { duration: 0.15 * duration };
         const withTimingResult = obj4.withTiming(10, { duration: 0.15 * duration });
         const obj2 = { duration: 0.15 * duration };
         const obj7 = delayFunction(delay[5]);
@@ -796,9 +796,9 @@ class BounceOutLeft {
         obj[2] = callbackV;
         return obj;
       };
-      fn.__closure = { delayFunction, delay, withSequence: _undefined(outer1_1[5]).withSequence, withTiming: _undefined(outer1_1[5]).withTiming, duration, initialValues, callback: callbackV };
+      fn.__closure = { delayFunction, delay, withSequence: callback(closure_1_1[5]).withSequence, withTiming: callback(closure_1_1[5]).withTiming, duration, initialValues, callback: callbackV };
       fn.__workletHash = 6930767645815;
-      fn.__initData = outer1_14;
+      fn.__initData = closure_1_14;
       return fn;
     };
     return tmp3Result;
@@ -839,12 +839,12 @@ class BounceOutRight {
   constructor() {
     self = this;
     items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    closure_0 = undefined;
+    tmp = closure_2(this, closure_0);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = closure_4;
+    obj = closure_4(closure_0);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -853,7 +853,7 @@ class BounceOutRight {
       constructResult = obj.apply(self, items1);
     }
     tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
+    closure_0 = tmp3Result;
     tmp3Result.build = () => {
       delayFunction = delayFunction.getDelayFunction();
       const delay = delayFunction.getDelay();
@@ -866,7 +866,7 @@ class BounceOutRight {
         obj = { translateX: null };
         let obj3 = delayFunction(delay[5]);
         let obj4 = delayFunction(delay[5]);
-        const obj1 = { duration: 0.15 * duration };
+        obj1 = { duration: 0.15 * duration };
         const withTimingResult = obj4.withTiming(-10, { duration: 0.15 * duration });
         const obj2 = { duration: 0.15 * duration };
         const obj7 = delayFunction(delay[5]);
@@ -885,9 +885,9 @@ class BounceOutRight {
         obj[2] = callbackV;
         return obj;
       };
-      fn.__closure = { delayFunction, delay, withSequence: _undefined(outer1_1[5]).withSequence, withTiming: _undefined(outer1_1[5]).withTiming, duration, initialValues, callback: callbackV };
+      fn.__closure = { delayFunction, delay, withSequence: callback(closure_1_1[5]).withSequence, withTiming: callback(closure_1_1[5]).withTiming, duration, initialValues, callback: callbackV };
       fn.__workletHash = 11465945086863;
-      fn.__initData = outer1_15;
+      fn.__initData = closure_1_15;
       return fn;
     };
     return tmp3Result;

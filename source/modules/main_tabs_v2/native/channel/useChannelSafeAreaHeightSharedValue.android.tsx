@@ -1,35 +1,37 @@
-// Module ID: 10558
-// Function ID: 10559
+// Module ID: 10597
+// Function ID: 10598
 // Name: useChannelSafeAreaHeightSharedValue
-// Dependencies: [10559, 10562, 4239, 5444, 4097, 712, 1367, 4115, 1627, 2]
+// Dependencies: [10598, 10601, 4243, 5449, 4100, 712, 1367, 4119, 1627, 2]
 // Exports: default
 
-// Module 10558 (useChannelSafeAreaHeightSharedValue)
+// Module 10597 (useChannelSafeAreaHeightSharedValue)
+import set from "set" /* 2 */;
+
 let closure_3 = { code: "function useChannelSafeAreaHeightSharedValueAndroidTsx1(){const{chatInputFloating,chatInputSpaceBottom,keyboardOpenOrOpening,keyboardWillOpenSharedValue,keyboardOpenedHeight,insets,keyboardTypeSharedValue,KeyboardTypes,customKeyboardHeight}=this.__closure;function resolveBottom(bottom){return chatInputFloating?Math.max(bottom,chatInputSpaceBottom):bottom;}if(keyboardOpenOrOpening.get()||keyboardWillOpenSharedValue.get()){const systemKeyboardHeight=keyboardOpenedHeight.get();if(systemKeyboardHeight<=0){return resolveBottom(insets.get().bottom);}return systemKeyboardHeight;}if(keyboardTypeSharedValue.get()===KeyboardTypes.SYSTEM){return resolveBottom(insets.get().bottom);}return customKeyboardHeight;}" };
-const result = require("useKeyboardType").fileFinishedImporting("modules/main_tabs_v2/native/channel/useChannelSafeAreaHeightSharedValue.android.tsx");
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/channel/useChannelSafeAreaHeightSharedValue.android.tsx");
 
 export default function useChannelSafeAreaHeightSharedValue() {
   const tmp = keyboardOpenOrOpening(keyboardOpenedHeight[0])();
-  const require = tmp;
+  const _require = tmp;
   const tmp2 = keyboardOpenOrOpening(keyboardOpenedHeight[1])();
   keyboardOpenOrOpening = tmp2.keyboardOpenOrOpening;
   keyboardOpenedHeight = tmp2.keyboardOpenedHeight;
-  let obj = require(keyboardOpenedHeight[2]);
+  let obj = _require(keyboardOpenedHeight[2]);
   const keyboardTypeSharedValue = obj.useKeyboardTypeSharedValue();
-  const keyboardWillOpenSharedValue = require(keyboardOpenedHeight[2]).useKeyboardWillOpenSharedValue();
+  const keyboardWillOpenSharedValue = _require(keyboardOpenedHeight[2]).useKeyboardWillOpenSharedValue();
   const tmp5 = keyboardOpenOrOpening(keyboardOpenedHeight[3])();
-  let closure_5 = tmp5;
-  const obj2 = require(keyboardOpenedHeight[2]);
-  const token = require(keyboardOpenedHeight[4]).useToken(keyboardOpenOrOpening(keyboardOpenedHeight[5]).modules.mobile.CHAT_INPUT_FLOATING_OFFSET_MINIMUM);
-  const obj3 = require(keyboardOpenedHeight[4]);
-  const chatInputFloating = require(keyboardOpenedHeight[6]).useMobileVisualRefreshConfig({ location: "ChatInput" }).chatInputFloating;
-  const obj4 = require(keyboardOpenedHeight[6]);
+  closure_5 = tmp5;
+  const obj2 = _require(keyboardOpenedHeight[2]);
+  const token = _require(keyboardOpenedHeight[4]).useToken(keyboardOpenOrOpening(keyboardOpenedHeight[5]).modules.mobile.CHAT_INPUT_FLOATING_OFFSET_MINIMUM);
+  const obj3 = _require(keyboardOpenedHeight[4]);
+  const chatInputFloating = _require(keyboardOpenedHeight[6]).useMobileVisualRefreshConfig({ location: "ChatInput" }).chatInputFloating;
+  const obj4 = _require(keyboardOpenedHeight[6]);
   const fn = function o() {
     if (!keyboardOpenOrOpening.get()) {
       if (!keyboardWillOpenSharedValue.get()) {
         let value = keyboardTypeSharedValue.get();
-        if (value === tmp(keyboardOpenedHeight[8]).KeyboardTypes.SYSTEM) {
-          const bottom = tmp.get().bottom;
+        if (value === store(keyboardOpenedHeight[8]).KeyboardTypes.SYSTEM) {
+          const bottom = store.get().bottom;
           let bound = bottom;
           if (chatInputFloating) {
             const _Math = Math;
@@ -44,7 +46,7 @@ export default function useChannelSafeAreaHeightSharedValue() {
     }
     value = keyboardOpenedHeight.get();
     if (value <= 0) {
-      const bottom2 = tmp.get().bottom;
+      const bottom2 = store.get().bottom;
       let bound1 = bottom2;
       if (chatInputFloating) {
         const _Math2 = Math;
@@ -54,9 +56,9 @@ export default function useChannelSafeAreaHeightSharedValue() {
     }
     return value;
   };
-  obj = { chatInputFloating, chatInputSpaceBottom: token, keyboardOpenOrOpening, keyboardWillOpenSharedValue, keyboardOpenedHeight, insets: tmp, keyboardTypeSharedValue, KeyboardTypes: require(keyboardOpenedHeight[8]).KeyboardTypes, customKeyboardHeight: tmp5 };
+  obj = { chatInputFloating, chatInputSpaceBottom: token, keyboardOpenOrOpening, keyboardWillOpenSharedValue, keyboardOpenedHeight, insets: tmp, keyboardTypeSharedValue, KeyboardTypes: _require(keyboardOpenedHeight[8]).KeyboardTypes, customKeyboardHeight: tmp5 };
   fn.__closure = obj;
   fn.__workletHash = 12051290156095;
   fn.__initData = keyboardTypeSharedValue;
-  return require(keyboardOpenedHeight[7]).useDerivedValue(fn);
+  return _require(keyboardOpenedHeight[7]).useDerivedValue(fn);
 };

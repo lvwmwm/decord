@@ -1,18 +1,18 @@
-// Module ID: 16577
-// Function ID: 16578
+// Module ID: 16673
+// Function ID: 16674
 // Name: trackInAppReportsFeedback
 // Dependencies: [676, 698, 2]
 // Exports: default
 
-// Module 16577 (trackInAppReportsFeedback)
-import { AnalyticEvents } from "ME";
+// Module 16673 (trackInAppReportsFeedback)
+import set from "set" /* 2 */;
+import ME from "ME" /* 676 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 
-const result = require("set").fileFinishedImporting("modules/in_app_reports/trackInAppReportsFeedback.tsx");
+const AnalyticEvents = ME.AnalyticEvents;
+const result = set.fileFinishedImporting("modules/in_app_reports/trackInAppReportsFeedback.tsx");
 
 export default function trackInAppReportsFeedback(dont_show_again) {
-  let feedback;
-  let problem;
-  let reportType;
   let reportId = dont_show_again.reportId;
   ({ problem, feedback, reportType } = dont_show_again);
   if (reportId === undefined) {
@@ -22,5 +22,5 @@ export default function trackInAppReportsFeedback(dont_show_again) {
   if (rating === undefined) {
     rating = null;
   }
-  importDefault(698).track(AnalyticEvents.IAR_FEEDBACK_SUBMITTED, { reason: problem, report_type: reportType, report_id: reportId, rating, feedback, dont_show_again: dont_show_again.dontShowAgain });
+  expandEventPropertiesDefault.track(AnalyticEvents.IAR_FEEDBACK_SUBMITTED, { reason: problem, report_type: reportType, report_id: reportId, rating, feedback, dont_show_again: dont_show_again.dontShowAgain });
 };

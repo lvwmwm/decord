@@ -1,16 +1,18 @@
-// Module ID: 7507
-// Function ID: 7508
+// Module ID: 7545
+// Function ID: 7546
 // Name: set
 // Dependencies: [2]
 
-// Module 7507 (set)
-const result = require("set").fileFinishedImporting("modules/messages/SentMessageIntentsHandler.android.tsx");
+// Module 7545 (set)
+import set from "set" /* 2 */;
+
+const result = set.fileFinishedImporting("modules/messages/SentMessageIntentsHandler.android.tsx");
 
 export default {
   init() {
 
   },
-  donateSentMessage(closure_0, c0) {
+  donateSentMessage(closure_0, closure_02) {
 
   },
   deleteAllInteractions() {

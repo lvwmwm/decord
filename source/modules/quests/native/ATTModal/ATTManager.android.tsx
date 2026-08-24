@@ -1,12 +1,15 @@
-// Module ID: 16528
-// Function ID: 16529
+// Module ID: 16623
+// Function ID: 16624
 // Name: onPostConnectionOpen
-// Dependencies: [5038, 7484, 1208, 2]
+// Dependencies: [5043, 7522, 1208, 2]
 
-// Module 16528 (onPostConnectionOpen)
-import "initialize";
+// Module 16623 (onPostConnectionOpen)
+import _modDef1208 from "module_1208" /* 1208 */;
+import initializeDefault from "initialize" /* 5043 */;
+import _fetchAdUser from "_fetchAdUser" /* 7522 */;
 
-const require = arg1;
+require = arg1;
+initializeDefault;
 class ATTManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -18,10 +21,10 @@ class ATTManager extends tmp2 {
 const prototype = ATTManager.prototype;
 prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
   try {
-    const adUser = require(7484) /* _fetchAdUser */.fetchAdUser("post_connection_open");
+    const adUser = _fetchAdUser.fetchAdUser("post_connection_open");
   } catch (tmp4) {
-    importDefault(1208).captureException(tmp4);
-    const obj2 = importDefault(1208);
+    _modDef1208.captureException(tmp4);
+    const obj2 = _modDef1208;
   }
 };
 prototype["_terminate"] = function _terminate() {
@@ -33,6 +36,6 @@ prototype["_terminate"] = function _terminate() {
   }
 };
 const aTTManager = new ATTManager();
-const result = require("module_1208").fileFinishedImporting("modules/quests/native/ATTModal/ATTManager.android.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/ATTModal/ATTManager.android.tsx");
 
 export default aTTManager;

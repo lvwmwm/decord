@@ -1,15 +1,16 @@
-// Module ID: 11311
-// Function ID: 11312
+// Module ID: 11362
+// Function ID: 11363
 // Name: AppDetailsOverflowMenu
-// Dependencies: [19, 21, 8447, 8772, 1236, 9545, 4066, 7167, 4093, 9563, 9958, 8035, 9416, 2]
+// Dependencies: [19, 21, 8486, 8809, 1236, 9582, 4069, 7205, 4096, 9600, 9997, 8074, 9453, 2]
 // Exports: default
 
-// Module 11311 (AppDetailsOverflowMenu)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 11362 (AppDetailsOverflowMenu)
+import noopAll from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-let result = require("getShelfBadgeTypeIfActive").fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/AppDetailsOverflowMenu.tsx");
+noopAll;
+let result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/AppDetailsOverflowMenu.tsx");
 
 export default function AppDetailsOverflowMenu(application) {
   application = application.application;
@@ -17,7 +18,7 @@ export default function AppDetailsOverflowMenu(application) {
   let installAppProps;
   let obj = application(installAppProps[2]);
   installAppProps = obj.getInstallAppProps(application);
-  let obj1 = application(installAppProps[3]);
+  obj1 = application(installAppProps[3]);
   let result = obj1.canInstallApplication(installAppProps);
   if (result) {
     result = null != onAddAppMenuClick;
@@ -52,8 +53,7 @@ export default function AppDetailsOverflowMenu(application) {
     obj1[0] = items;
     obj1[1] = function children(ref) {
       const merged = Object.assign(ref, Object.create(null));
-      const obj = { ref: ref.ref, size: "sm", variant: "secondary-overlay", icon: null };
-      obj[3] = onAddAppMenuClick(installAppProps[12]);
+      const obj = { ref: ref.ref, size: "sm", variant: "secondary-overlay", icon: onAddAppMenuClick(installAppProps[12]) };
       const merged1 = Object.assign(merged);
       const intl = application(installAppProps[4]).intl;
       obj.accessibilityLabel = intl.string(application(installAppProps[4]).t.PdRCRg);

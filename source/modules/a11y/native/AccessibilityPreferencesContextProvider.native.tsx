@@ -1,16 +1,16 @@
-// Module ID: 13936
-// Function ID: 13937
+// Module ID: 14004
+// Function ID: 14005
 // Name: AccessibilityPreferencesContextProvider
-// Dependencies: [19, 4662, 21, 589, 1356, 2]
+// Dependencies: [19, 4669, 21, 589, 1356, 2]
 // Exports: default
 
-// Module 13936 (AccessibilityPreferencesContextProvider)
-import noop from "noop";
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { jsx } from "jsxProd";
+// Module 14004 (AccessibilityPreferencesContextProvider)
+import closure_2 from "noop" /* 19 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/a11y/native/AccessibilityPreferencesContextProvider.native.tsx");
+const result = require("set").fileFinishedImporting("modules/a11y/native/AccessibilityPreferencesContextProvider.native.tsx");
 
 export default function AccessibilityPreferencesContextProvider(children) {
   let stateFromStoresObject;

@@ -1,28 +1,30 @@
-// Module ID: 12430
-// Function ID: 12431
+// Module ID: 12482
+// Function ID: 12483
 // Name: openIgnoreThermalStateAlert
-// Dependencies: [19, 21, 4656, 12431, 2007, 2]
+// Dependencies: [19, 21, 4662, 12483, 2008, 2]
 // Exports: openIgnoreThermalStateAlert
 
-// Module 12430 (openIgnoreThermalStateAlert)
-import "noop";
-import { jsx } from "jsxProd";
+// Module 12482 (openIgnoreThermalStateAlert)
+import noopAll from "noop" /* 19 */;
+import _modDef4662 from "module_4662" /* 4662 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("module_4656").fileFinishedImporting("modules/activities/native/openIgnoreThermalStateAlert.tsx");
+noopAll;
+const result = require("set").fileFinishedImporting("modules/activities/native/openIgnoreThermalStateAlert.tsx");
 
 export const openIgnoreThermalStateAlert = function openIgnoreThermalStateAlert(arg0) {
-  let closure_0 = arg0;
-  let obj = importDefault(4656);
+  closure_0 = arg0;
+  let obj = _modDef4662;
   obj = {
     importer() {
-      return callback(outer1_2[4])(outer1_2[3], outer1_2.paths).then((IgnoreThermalStateAlert) => {
+      return callback(closure_1_2[4])(closure_1_2[3], closure_1_2.paths).then((IgnoreThermalStateAlert) => {
         IgnoreThermalStateAlert = IgnoreThermalStateAlert.IgnoreThermalStateAlert;
         return (arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
           obj.onConfirm = IgnoreThermalStateAlert;
-          return outer2_3(IgnoreThermalStateAlert, obj);
+          return closure_2_3(IgnoreThermalStateAlert, obj);
         };
       });
     }

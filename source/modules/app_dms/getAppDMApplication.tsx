@@ -1,15 +1,15 @@
-// Module ID: 11371
-// Function ID: 11372
+// Module ID: 11422
+// Function ID: 11423
 // Name: getAppDMApplication
-// Dependencies: [4478, 5365, 1922, 2]
+// Dependencies: [4482, 5370, 1922, 2]
 // Exports: getAppDMApplication
 
-// Module 11371 (getAppDMApplication)
-import addApplication from "addApplication";
-import createUserWidgetFromServer from "createUserWidgetFromServer";
-import mergeGuildAvatar from "mergeGuildAvatar";
+// Module 11422 (getAppDMApplication)
+import closure_0 from "addApplication" /* 4482 */;
+import closure_1 from "createUserWidgetFromServer" /* 5370 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
-const result = require("mergeGuildAvatar").fileFinishedImporting("modules/app_dms/getAppDMApplication.tsx");
+const result = require("set").fileFinishedImporting("modules/app_dms/getAppDMApplication.tsx");
 
 export const getAppDMApplication = function getAppDMApplication(channel) {
   let recipientId;

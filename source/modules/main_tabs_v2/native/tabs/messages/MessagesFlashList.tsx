@@ -1,20 +1,15 @@
-// Module ID: 15364
-// Function ID: 15365
-// Dependencies: [32, 19, 21, 15319, 15295, 15359, 15360, 15307, 15305, 15310, 15320, 15358, 15361, 8029, 2]
+// Module ID: 15428
+// Function ID: 15429
+// Dependencies: [32, 19, 21, 15383, 15359, 15423, 15424, 15371, 15369, 15374, 15384, 15422, 15425, 8068, 2]
 
-// Module 15364
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
-import { jsx } from "jsxProd";
+// Module 15428
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 let c4 = importAllResult;
 const memoResult = importAllResult.memo(importAllResult.forwardRef(function MessagesFlashList(listItemHeight, ref) {
-  let accessibilityLabel;
-  let data;
-  let handleScrollAnimated;
-  let insetEnd;
-  let isRefreshEnabled;
   ({ data, insetEnd } = listItemHeight);
   listItemHeight = listItemHeight.listItemHeight;
   const listItemSuggestedFriendHeight = listItemHeight.listItemSuggestedFriendHeight;
@@ -33,7 +28,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef(function Mess
   let extraData;
   let listHeaderHeight;
   let first;
-  let closure_18;
+  closure_18 = undefined;
   friendSuggestions = data.friendSuggestions;
   renderHeader = data.renderHeader;
   renderFooter = data.renderFooter;
@@ -165,6 +160,6 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef(function Mess
   const scrollIndicatorInsets = listRefHappeningNow.useMemo(() => ({ bottom: scrollIndicatorInsetBottom }), items8);
   return listTop(insetEnd(listItemSuggestedFriendHeight[13]).AnimatedFlashList, { ref, accessibilityLabel, contentContainerStyle, data, extraData, getItemType, keyExtractor, ListFooterComponent, ListHeaderComponent, onCommitLayoutEffect, onLoad: onCommitLayoutEffect, onScroll, renderItem, scrollIndicatorInsets, stickyHeaderIndices });
 }));
-const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesFlashList.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesFlashList.tsx");
 
 export default memoResult;

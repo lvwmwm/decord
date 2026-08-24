@@ -1,11 +1,14 @@
-// Module ID: 10485
-// Function ID: 10486
+// Module ID: 10524
+// Function ID: 10525
 // Name: bountyCtaFromServer
-// Dependencies: [10486, 2]
+// Dependencies: [10525, 2]
 // Exports: bountyCtaFromServer, bountyFromServer
 
-// Module 10485 (bountyCtaFromServer)
-const result = require("set").fileFinishedImporting("modules/ads/BountyTypes.tsx");
+// Module 10524 (bountyCtaFromServer)
+import set from "set" /* 2 */;
+import resolveAsset from "resolveAsset" /* 10525 */;
+
+const result = set.fileFinishedImporting("modules/ads/BountyTypes.tsx");
 
 export const bountyCtaFromServer = function bountyCtaFromServer(url) {
   let obj = { url: url.url, buttonLabel: url.button_label, android: null, ios: null };
@@ -27,13 +30,13 @@ export const bountyCtaFromServer = function bountyCtaFromServer(url) {
 };
 export const bountyFromServer = function bountyFromServer(creative_content) {
   let obj = { id: creative_content.id, advertiserName: creative_content.advertiser_name, productName: creative_content.product_name, productIcon: null, videoPreview: null, imagePreview: null, videoHls: null, cta: null, rewardTimerSeconds: null };
-  let obj1 = require(10486) /* resolveAsset */;
+  obj1 = resolveAsset;
   obj[3] = obj1.resolveOptionalAdCreativeCdnUrl(creative_content.product_icon);
-  obj[4] = require(10486) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.video_preview);
-  const obj3 = require(10486) /* resolveAsset */;
-  obj[5] = require(10486) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.image_preview);
-  const obj4 = require(10486) /* resolveAsset */;
-  obj[6] = require(10486) /* resolveAsset */.resolveAdCreativeCdnUrl(creative_content.video_hls);
+  obj[4] = resolveAsset.resolveOptionalAdCreativeCdnUrl(creative_content.video_preview);
+  const obj3 = resolveAsset;
+  obj[5] = resolveAsset.resolveOptionalAdCreativeCdnUrl(creative_content.image_preview);
+  const obj4 = resolveAsset;
+  obj[6] = resolveAsset.resolveAdCreativeCdnUrl(creative_content.video_hls);
   const cta = creative_content.cta;
   obj = { url: cta.url, buttonLabel: cta.button_label, android: null, ios: null };
   let tmp;

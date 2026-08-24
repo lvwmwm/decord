@@ -1,24 +1,26 @@
-// Module ID: 9270
-// Function ID: 9271
+// Module ID: 9307
+// Function ID: 9308
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 514, 7128, 9271, 1494, 9276, 2]
+// Dependencies: [32, 5, 19, 21, 3, 514, 7166, 9308, 1494, 9313, 2]
 // Exports: useTooltip, useTooltipHelper
 
-// Module 9270 (useTooltip)
-import _slicedToArray from "_slicedToArray";
-import v1 from "v1";
-import noop from "noop";
-import { jsx } from "jsxProd";
+// Module 9307 (useTooltip)
+import timestampDefault from "timestamp" /* 3 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "asyncGeneratorStep" /* 5 */;
+import closure_5 from "noop" /* 19 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const error = new require("jsxProd")("useTooltip.native");
-const tmp2 = new require("jsxProd")("useTooltip.native");
-const result = require("noop").fileFinishedImporting("design/components/Tooltip/native/useTooltip.native.tsx");
+let closure_7 = new timestampDefault("useTooltip.native");
+const tmp2 = new timestampDefault("useTooltip.native");
+const result = require("set").fileFinishedImporting("design/components/Tooltip/native/useTooltip.native.tsx");
 
 export const useTooltip = function useTooltip(ref, memo) {
   ref = context1.useRef(ref(callback[5]).v4());
   ref = memo;
-  let importDefault;
+  importDefault = undefined;
   const context = context1.useContext(ref(callback[6]).LayerContext);
   importDefault = context;
   if (null == context) {
@@ -33,14 +35,14 @@ export const useTooltip = function useTooltip(ref, memo) {
     set.add(arg0, ref2(ref(callback[7]).AnimatedTooltip, obj));
   }, items);
   importDefault = ref;
-  let c3;
-  let v1;
+  closure_3 = undefined;
+  closure_4 = undefined;
   context1 = undefined;
-  let closure_6;
+  closure_6 = undefined;
   callback1 = undefined;
   const tmp8 = importDefault(callback[8])();
-  c3 = tmp8;
-  v1 = obj.useRef(tmp8);
+  closure_3 = tmp8;
+  closure_4 = obj.useRef(tmp8);
   context1 = obj.useContext(ref(tmp2[6]).LayerContext);
   closure_6 = obj.useRef(null);
   const items1 = [context1, ref];
@@ -48,27 +50,27 @@ export const useTooltip = function useTooltip(ref, memo) {
     current = current.current;
     return () => {
       if (null != current) {
-        outer1_5.remove(tmp);
+        closure_1_5.remove(tmp);
       }
       current.current = null;
     };
   }, items1);
   const items2 = [context1.surfaceRef, ref, ref, callback];
   callback1 = obj.useCallback((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     function _measureHelper() {
       const self = this;
       const tmp = callback((arg0) => {
-        let closure_0 = arg0;
-        let c5 = 0;
-        let c6 = 0;
-        let c4 = 0;
+        closure_0 = arg0;
+        c5 = 0;
+        c6 = 0;
+        c4 = 0;
         return (function*(arg0) {
-          let dependencyMap = tmp3;
-          let c4 = 1;
-          const measurements = outer2_0(outer2_2[9]).getMeasurements(surfaceRef.surfaceRef, ref);
-          const obj5 = outer2_0(outer2_2[9]);
-          const items = [measurements, outer2_0(outer2_2[9]).getMeasurements(outer1_1, ref)];
+          dependencyMap = tmp3;
+          c4 = 1;
+          const measurements = closure_2_0(closure_2_2[9]).getMeasurements(surfaceRef.surfaceRef, ref);
+          const obj5 = closure_2_0(closure_2_2[9]);
+          const items = [measurements, closure_2_0(closure_2_2[9]).getMeasurements(closure_1_1, ref)];
           yield Promise.all(items);
           if (1 === tmp7) {
             c4 = 0;
@@ -77,16 +79,16 @@ export const useTooltip = function useTooltip(ref, memo) {
             ref2 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            let closure_1 = arg1;
-            dependencyMap = outer2_3(closure_1, 2);
-            let _slicedToArray = 32;
+            closure_1 = arg1;
+            dependencyMap = closure_2_3(closure_1, 2);
+            closure_3 = 32;
             c4 = 5;
             let tmp12 = null != ref.current;
             if (tmp12) {
-              tmp12 = ref2.current === outer2_0;
+              tmp12 = ref2.current === closure_2_0;
             }
             if (tmp12) {
-              outer1_2(ref.current, c4, outer1_3);
+              closure_1_2(ref.current, c4, closure_1_3);
             }
             c4 = 0;
           }
@@ -94,7 +96,7 @@ export const useTooltip = function useTooltip(ref, memo) {
           return arg1;
         })();
       });
-      const _measureHelper = tmp;
+      closure_1 = tmp;
       const apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -117,51 +119,51 @@ export const useTooltip = function useTooltip(ref, memo) {
   }, items2);
   const items3 = [context1, tmp8, callback1, ref];
   const effect1 = obj.useEffect(() => {
-    if (ref.current !== c3) {
+    if (ref.current !== closure_3) {
       if (null != ref.current) {
         context1.remove(tmp4.current);
       }
       tmp.current = tmp2;
     }
-    callback1(ref.current !== c3);
+    callback1(ref.current !== closure_3);
   }, items3);
   return callback1;
 };
 export const useTooltipHelper = function useTooltipHelper(ref, targetRef, callback) {
   const _require = ref;
-  const importDefault = targetRef;
-  const dependencyMap = callback;
-  const tmp = importDefault(1494)();
-  let _slicedToArray = tmp;
-  let v1 = context.useRef(tmp);
-  context = context.useContext(_require(7128).LayerContext);
-  let closure_6 = context.useRef(null);
+  importDefault = targetRef;
+  dependencyMap = callback;
+  const tmp = useWindowDimensionsDefault();
+  closure_3 = tmp;
+  closure_4 = context.useRef(tmp);
+  context = context.useContext(_require(7166).LayerContext);
+  closure_6 = context.useRef(null);
   const items = [context, ref];
   const effect = context.useEffect(() => {
     current = current.current;
     return () => {
       if (null != current) {
-        outer1_5.remove(tmp);
+        closure_1_5.remove(tmp);
       }
       current.current = null;
     };
   }, items);
   const items1 = [context.surfaceRef, targetRef, ref, callback];
   callback = context.useCallback((arg0) => {
-    let closure_0 = arg0;
+    closure_0 = arg0;
     function _measureHelper() {
       const self = this;
       const tmp = callback((arg0) => {
-        let closure_0 = arg0;
-        let c5 = 0;
-        let c6 = 0;
-        let c4 = 0;
+        closure_0 = arg0;
+        c5 = 0;
+        c6 = 0;
+        c4 = 0;
         return (function*(arg0) {
-          let dependencyMap = tmp3;
-          let c4 = 1;
-          const measurements = outer2_0(outer2_2[9]).getMeasurements(surfaceRef.surfaceRef, ref);
-          const obj5 = outer2_0(outer2_2[9]);
-          const items = [measurements, outer2_0(outer2_2[9]).getMeasurements(outer1_1, ref)];
+          dependencyMap = tmp3;
+          c4 = 1;
+          const measurements = closure_2_0(closure_2_2[9]).getMeasurements(surfaceRef.surfaceRef, ref);
+          const obj5 = closure_2_0(closure_2_2[9]);
+          const items = [measurements, closure_2_0(closure_2_2[9]).getMeasurements(closure_1_1, ref)];
           yield Promise.all(items);
           if (1 === tmp7) {
             c4 = 0;
@@ -170,16 +172,16 @@ export const useTooltipHelper = function useTooltipHelper(ref, targetRef, callba
             ref2 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            let closure_1 = arg1;
-            dependencyMap = outer2_3(closure_1, 2);
-            let _slicedToArray = 32;
+            closure_1 = arg1;
+            dependencyMap = closure_2_3(closure_1, 2);
+            closure_3 = 32;
             c4 = 5;
             let tmp12 = null != ref.current;
             if (tmp12) {
-              tmp12 = ref2.current === outer2_0;
+              tmp12 = ref2.current === closure_2_0;
             }
             if (tmp12) {
-              outer1_2(ref.current, c4, outer1_3);
+              closure_1_2(ref.current, c4, closure_1_3);
             }
             c4 = 0;
           }
@@ -187,7 +189,7 @@ export const useTooltipHelper = function useTooltipHelper(ref, targetRef, callba
           return arg1;
         })();
       });
-      const _measureHelper = tmp;
+      closure_1 = tmp;
       const apply = tmp.apply;
       if (typeof apply === "unknown") {
         let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -210,13 +212,13 @@ export const useTooltipHelper = function useTooltipHelper(ref, targetRef, callba
   }, items1);
   const items2 = [context, tmp, callback, ref];
   const effect1 = context.useEffect(() => {
-    if (ref.current !== c3) {
+    if (ref.current !== closure_3) {
       if (null != ref.current) {
         context1.remove(tmp4.current);
       }
       tmp.current = tmp2;
     }
-    callback1(ref.current !== c3);
+    callback1(ref.current !== closure_3);
   }, items2);
   return callback;
 };

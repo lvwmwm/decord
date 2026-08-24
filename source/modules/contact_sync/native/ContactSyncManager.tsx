@@ -1,22 +1,20 @@
-// Module ID: 11854
-// Function ID: 11855
+// Module ID: 11903
+// Function ID: 11904
 // Name: _requestAndSyncContacts
-// Dependencies: [5, 5221, 1922, 11852, 11851, 676, 595, 11853, 5038, 6548, 2]
+// Dependencies: [5, 5226, 1922, 11901, 11900, 676, 595, 11902, 5043, 6579, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 11854 (_requestAndSyncContacts)
-import ME from "ME";
-import set from "set";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import setStoredContacts from "setStoredContacts";
-import { ContactPermissions } from "ContactSyncLandingPage";
-import { PlatformTypes } from "ME";
-import "initialize";
+// Module 11903 (_requestAndSyncContacts)
+import Storage3 from "Storage" /* 595 */;
+import initializeDefault from "initialize" /* 5043 */;
+import closure_2 from "asyncGeneratorStep" /* 5 */;
+import closure_3 from "set" /* 5226 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import setStoredContacts from "setStoredContacts" /* 11901 */;
+import { ContactPermissions } from "ContactSyncLandingPage" /* 11900 */;
+import { PlatformTypes } from "ME" /* 676 */;
 
-let c5;
-let closure_6;
-let error;
-let require = arg1;
+require = arg1;
 function _requestAndSyncContacts() {
   const self = this;
   const tmp = callback(function*() {
@@ -31,7 +29,7 @@ function _requestAndSyncContacts() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -53,7 +51,7 @@ function _requestAndSyncContacts() {
                 obj[0] = arg1;
                 return obj;
               } else {
-                let c1 = arg1;
+                c1 = arg1;
                 let names = c1.names;
                 let payload = c1.payload;
                 v0(names);
@@ -72,7 +70,7 @@ function _requestAndSyncContacts() {
             const result = Storage.set(closure_10, timestamp);
             currentUser = 0;
           }
-          let obj1 = timestamp(c1[7]);
+          obj1 = timestamp(c1[7]);
           v0 = 3;
           v02 = 1;
           obj1 = { value: null, done: false };
@@ -94,8 +92,8 @@ function _requestAndSyncContacts() {
           c1 = undefined;
           names = undefined;
           payload = undefined;
-          const Storage2 = outer1_0(outer1_1[6]).Storage;
-          const value = Storage2.get(outer1_10, 0);
+          const Storage2 = closure_1_0(closure_1_1[6]).Storage;
+          const value = Storage2.get(closure_1_10, 0);
           timestamp = value;
           if (value == null) {
             timestamp = 0;
@@ -112,12 +110,12 @@ function _requestAndSyncContacts() {
             if (null == phone) {
               currentUser = 0;
               v02 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               v0 = 2;
               v02 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = outer1_0(outer1_1[7]).getContacts(phone, outer1_7.getState().storedContacts);
+              obj3[0] = closure_1_0(closure_1_1[7]).getContacts(phone, closure_1_7.getState().storedContacts);
               return obj3;
             }
           }
@@ -133,7 +131,7 @@ function _requestAndSyncContacts() {
       }
     }
   });
-  const _requestAndSyncContacts = tmp;
+  closure_11 = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -144,9 +142,10 @@ function _requestAndSyncContacts() {
 }
 ({ setStoredContacts: c5, deleteStoredContacts: closure_6, useContactSyncStore: error } = setStoredContacts);
 const LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY = "LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY";
+initializeDefault;
 let prototype = function ContactSyncLifecycleManager() {
   let applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const require = applyArgumentsResult;
+  require = applyArgumentsResult;
   applyArgumentsResult.actions = {
     POST_CONNECTION_OPEN() {
       return applyArgumentsResult.handleConnectionOpen();
@@ -163,7 +162,7 @@ let prototype = function ContactSyncLifecycleManager() {
               const self = this;
               const apply = closure_11.apply;
               if (typeof apply === "unknown") {
-                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+                applyArgumentsResult = HermesBuiltin.applyArguments(self);
               } else {
                 applyArgumentsResult = apply(self, arguments);
               }
@@ -184,11 +183,11 @@ let prototype = function ContactSyncLifecycleManager() {
 class prototype extends tmp3 {
 }
 prototype = new prototype();
-let result = require("mergeGuildAvatar").fileFinishedImporting("modules/contact_sync/native/ContactSyncManager.tsx");
+let result = require("set").fileFinishedImporting("modules/contact_sync/native/ContactSyncManager.tsx");
 
 export default prototype;
 export const LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY = "LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY";
 export const removeLastUserContactsUpload = function removeLastUserContactsUpload() {
-  const Storage = require(595) /* Storage */.Storage;
+  const Storage = Storage3.Storage;
   Storage.remove(LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY);
 };

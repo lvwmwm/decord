@@ -1,37 +1,26 @@
-// Module ID: 14641
-// Function ID: 14642
+// Module ID: 14709
+// Function ID: 14710
 // Name: HAPPENING_NOW_CARD_MARGIN_RIGHT
-// Dependencies: [19, 17, 14640, 21, 4661, 712, 7925, 1367, 4225, 6292, 4734, 2]
+// Dependencies: [19, 17, 14708, 21, 4668, 712, 7964, 1367, 4229, 6323, 4739, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 14641 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
-import "noop";
-import { View } from "get ActivityIndicator";
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
+// Module 14709 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
+import Text from "Text" /* 4739 */;
+import PressableCard from "PressableCard" /* 6323 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7964 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14708 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let HAPPENING_NOW_BADGE_SIZE;
-let HAPPENING_NOW_PANELS_CONTAINER_PADDING;
-let c10;
-let c5;
-let c9;
-let closure_12;
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_18;
-let closure_19;
-let closure_6;
-let map1;
-let metroImportAll;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
+noopAll;
 const HAPPENING_NOW_CARD_MARGIN_RIGHT = HAPPENING_NOW_PANELS_CONTAINER_PADDING.HAPPENING_NOW_CARD_MARGIN_RIGHT;
 ({ HAPPENING_NOW_CARD_PADDING: c5, HAPPENING_NOW_CARD_HEIGHT: closure_6, HAPPENING_NOW_BADGE_SIZE } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);
-({ HAPPENING_NOW_CARD_WIDTH_SMALL_MIN: metroImportAll, HAPPENING_NOW_CARD_WIDTH_SMALL_MAX: c9, HAPPENING_NOW_CARD_WIDTH_MEDIUM_MIN: c10, HAPPENING_NOW_CARD_WIDTH_MEDIUM_MAX: unpackModuleId, HAPPENING_NOW_CARD_WIDTH_LARGE_MIN: closure_12, HAPPENING_NOW_CARD_WIDTH_LARGE_MAX: map1, HAPPENING_NOW_CARD_PADDING_RIGHT: closure_14, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MIN: closure_15, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MAX: closure_16, HAPPENING_NOW_CARD_WIDTH_LARGE_PANELS_MAX: closure_17, HAPPENING_NOW_PANELS_CONTAINER_PADDING } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);
+({ HAPPENING_NOW_CARD_WIDTH_SMALL_MIN: closure_8, HAPPENING_NOW_CARD_WIDTH_SMALL_MAX: c9, HAPPENING_NOW_CARD_WIDTH_MEDIUM_MIN: c10, HAPPENING_NOW_CARD_WIDTH_MEDIUM_MAX: unpackModuleId, HAPPENING_NOW_CARD_WIDTH_LARGE_MIN: closure_12, HAPPENING_NOW_CARD_WIDTH_LARGE_MAX: map1, HAPPENING_NOW_CARD_PADDING_RIGHT: closure_14, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MIN: closure_15, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MAX: closure_16, HAPPENING_NOW_CARD_WIDTH_LARGE_PANELS_MAX: closure_17, HAPPENING_NOW_PANELS_CONTAINER_PADDING } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);
 ({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
 let closure_20 = HAPPENING_NOW_PANELS_CONTAINER_PADDING + HAPPENING_NOW_CARD_MARGIN_RIGHT;
 let closure_21 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
@@ -44,7 +33,7 @@ let closure_21 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
     obj[0] = closure_10;
     obj[1] = closure_11;
   } else if ("large" === arg0) {
-    const obj1 = { minWidth: null, maxWidth: null };
+    obj1 = { minWidth: null, maxWidth: null };
     obj1[0] = closure_12;
     if (arg1) {
       if (arg2) {
@@ -79,17 +68,17 @@ let closure_21 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
   const obj5 = { display: "flex", alignItems: "center", justifyContent: "center", width: HAPPENING_NOW_BADGE_SIZE, height: HAPPENING_NOW_BADGE_SIZE, backgroundColor: null, borderTopRightRadius: null, borderBottomLeftRadius: null };
   let prop;
   if (!arg3) {
-    prop = importDefault(712).colors.BACKGROUND_MOD_SUBTLE;
+    prop = ThemesDefault.colors.BACKGROUND_MOD_SUBTLE;
   }
   obj5[5] = prop;
   let diff2;
   if (!arg3) {
-    diff2 = importDefault(712).radii.lg - 1;
+    diff2 = ThemesDefault.radii.lg - 1;
   }
   obj5[6] = diff2;
   let md;
   if (!arg3) {
-    md = importDefault(712).radii.md;
+    md = ThemesDefault.radii.md;
   }
   obj5[7] = md;
   obj3[2] = obj5;
@@ -97,22 +86,18 @@ let closure_21 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
 });
 createCacheKey = { marginRight: HAPPENING_NOW_BADGE_SIZE + 4 };
 let closure_22 = createCacheKey.createStyles({ cardHeaderMargin: createCacheKey });
-const result = require("HAPPENING_NOW_PANELS_CONTAINER_PADDING").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCard.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCard.tsx");
 
 export default function HappeningNowCard(IconComponent) {
-  let accessibilityHint;
-  let accessibilityLabel;
-  let panelVariant;
-  let width;
-  const tmp4 = importDefault(1367)("HappeningNowCard");
+  const tmp4 = useIsMobileVisualRefreshExperimentEnabledDefault("HappeningNowCard");
   ({ width, panelVariant } = IconComponent);
   if (panelVariant == null) {
     panelVariant = false;
   }
-  const tmp5Result = closure_21(width, panelVariant, importDefault(7925)(), tmp4);
+  const tmp5Result = closure_21(width, panelVariant, useIsWindowLargeDefault(), tmp4);
   IconComponent = IconComponent.IconComponent;
   const tmp = importDefault;
-  const tmp3 = importDefault(7925)();
+  const tmp3 = useIsWindowLargeDefault();
   const tmp5 = closure_21;
   ({ accessibilityLabel, accessibilityHint } = IconComponent);
   let obj = { variant: "secondary", style: items, onPress: IconComponent.onPress, border: "faint", shadow: null, onLongPress: null, disabled: null, accessibilityLabel: null, accessibilityHint: null, children: null };
@@ -137,7 +122,7 @@ export default function HappeningNowCard(IconComponent) {
     if (tmp4) {
       str2 = "xxs";
     }
-    const obj1 = { size: null, color: null };
+    obj1 = { size: null, color: null };
     obj1[0] = str2;
     let str3;
     if (tmp4) {
@@ -150,11 +135,9 @@ export default function HappeningNowCard(IconComponent) {
   }
   items1[1] = tmp10Result;
   obj[9] = items1;
-  return closure_19(require(6292) /* PressableCard */.Card, obj);
+  return closure_19(PressableCard.Card, obj);
 };
 export const HappeningNowCardHeader = function HappeningNowCardHeader(displayNameFont) {
-  let children;
-  let noMargin;
   displayNameFont = displayNameFont.displayNameFont;
   ({ children, noMargin } = displayNameFont);
   const merged = Object.assign(displayNameFont, Object.create(null));
@@ -179,12 +162,12 @@ export const HappeningNowCardHeader = function HappeningNowCardHeader(displayNam
   obj[4] = items;
   const merged1 = Object.assign(merged);
   obj.children = children;
-  return closure_18(require(4734) /* Text */.Text, obj);
+  return closure_18(Text.Text, obj);
 };
 export const HappeningNowCardSubtitle = function HappeningNowCardSubtitle(variant) {
   variant = variant.variant;
   const merged = Object.assign(variant, Object.create(null));
-  const tmp2 = importDefault(1367)("HappeningNowCardSubtitle");
+  const tmp2 = useIsMobileVisualRefreshExperimentEnabledDefault("HappeningNowCardSubtitle");
   if (variant == null) {
     let str = "text-xs/medium";
     if (tmp2) {
@@ -200,5 +183,5 @@ export const HappeningNowCardSubtitle = function HappeningNowCardSubtitle(varian
   obj[1] = str2;
   const merged1 = Object.assign(merged);
   obj.children = variant.children;
-  return closure_18(require(4734) /* Text */.Text, obj);
+  return closure_18(Text.Text, obj);
 };

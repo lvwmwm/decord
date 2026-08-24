@@ -1,20 +1,18 @@
-// Module ID: 14080
-// Function ID: 14081
+// Module ID: 14148
+// Function ID: 14149
 // Name: UserSettingsWebAuthn
-// Dependencies: [19, 14078, 21, 14081, 6312, 2]
+// Dependencies: [19, 14146, 21, 14149, 6343, 2]
 // Exports: default
 
-// Module 14080 (UserSettingsWebAuthn)
-import noop from "noop";
-import { WebAuthnScreens } from "WebAuthnScreens";
-import { jsx } from "jsxProd";
+// Module 14148 (UserSettingsWebAuthn)
+import closure_2 from "noop" /* 19 */;
+import { WebAuthnScreens } from "WebAuthnScreens" /* 14146 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("modules/webauthn/native/UserSettingsWebAuthn.tsx");
+const result = require("set").fileFinishedImporting("modules/webauthn/native/UserSettingsWebAuthn.tsx");
 
 export default function UserSettingsWebAuthn(showNav) {
-  let initialRouteName;
-  let require;
   ({ navigation: require, initialRouteName } = showNav);
   if (initialRouteName === undefined) {
     initialRouteName = WebAuthnScreens.INIT;

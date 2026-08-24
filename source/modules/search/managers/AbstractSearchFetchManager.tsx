@@ -1,10 +1,12 @@
-// Module ID: 11520
-// Function ID: 11521
+// Module ID: 11569
+// Function ID: 11570
 // Name: cleanUp
 // Dependencies: [2]
 
-// Module 11520 (cleanUp)
-let result = require("set").fileFinishedImporting("modules/search/managers/AbstractSearchFetchManager.tsx");
+// Module 11569 (cleanUp)
+import set from "set" /* 2 */;
+
+let result = set.fileFinishedImporting("modules/search/managers/AbstractSearchFetchManager.tsx");
 class AbstractSearchFetchManager {
   constructor() {
     obj = Object.create(new.target.prototype);

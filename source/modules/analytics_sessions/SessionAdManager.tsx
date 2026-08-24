@@ -1,21 +1,23 @@
-// Module ID: 13912
-// Function ID: 13913
+// Module ID: 13980
+// Function ID: 13981
 // Name: _initialize
-// Dependencies: [1218, 676, 4720, 5055, 4259, 709, 687, 1208, 7473, 698, 2]
+// Dependencies: [1218, 676, 4726, 5060, 4263, 709, 687, 1208, 7511, 698, 2]
 
-// Module 13912 (_initialize)
-import importDefaultResult from "fetchFingerprint";
-import ME from "ME";
-import "initialize";
+// Module 13980 (_initialize)
+import dispatcherDefault from "dispatcher" /* 709 */;
+import start from "start" /* 4263 */;
+import initializeDefault from "initialize" /* 4726 */;
+import isForegrounded from "isForegrounded" /* 5060 */;
+import importDefaultResult from "fetchFingerprint" /* 1218 */;
+import ME from "ME" /* 676 */;
 
-let c4;
-let c5;
-let require = arg1;
+require = arg1;
 let c3 = importDefaultResult;
 ({ AnalyticEvents: c4, AppStates: c5 } = ME);
 const ad = "ad";
 let token = importDefaultResult.getToken();
 let closure_8 = { DEFAULT: "DEFAULT", USER_LOGOUT: "USER_LOGOUT", WINDOW_FOCUS: "WINDOW_FOCUS", APP_STATE_UPDATE: "APP_STATE_UPDATE" };
+initializeDefault;
 class SessionAdManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -31,7 +33,7 @@ class SessionAdManager extends tmp3 {
       if (!heartbeatInterval.isStarted()) {
         obj.trackHeartbeat();
         const heartbeatInterval2 = obj.heartbeatInterval;
-        heartbeatInterval2.start(5 * outer1_1(outer1_2[6]).Millis.MINUTE, obj.trackHeartbeat);
+        heartbeatInterval2.start(5 * closure_1_1(closure_1_2[6]).Millis.MINUTE, obj.trackHeartbeat);
       }
     };
     applyArgumentsResult.startAnalyticHeartbeat = function startAnalyticHeartbeat() {
@@ -39,10 +41,10 @@ class SessionAdManager extends tmp3 {
       if (!applyArgumentsResult.schedulerStarted) {
         obj.schedulerStarted = true;
         obj = { category: null, message: "Starting ad session heartbeat" };
-        obj[0] = outer1_6;
-        outer1_1(outer1_2[7]).addBreadcrumb(obj);
+        obj[0] = closure_1_6;
+        closure_1_1(closure_1_2[7]).addBreadcrumb(obj);
         obj.maybeStartHeartbeat();
-        const obj2 = outer1_1(outer1_2[7]);
+        const obj2 = closure_1_1(closure_1_2[7]);
       }
     };
     applyArgumentsResult.trackHeartbeat = function trackHeartbeat() {
@@ -52,9 +54,9 @@ class SessionAdManager extends tmp3 {
       }
       if (!applyArgumentsResult.schedulerStarted) {
         if (!flag) {
-          let obj = outer1_1(outer1_2[7]);
+          let obj = closure_1_1(closure_1_2[7]);
           obj = { category: null, message: "Ad heartbeat called but scheduler not started" };
-          obj[0] = outer1_6;
+          obj[0] = closure_1_6;
           obj.addBreadcrumb(obj);
           const heartbeatInterval = tmp.heartbeatInterval;
           heartbeatInterval.stop();
@@ -62,22 +64,22 @@ class SessionAdManager extends tmp3 {
       }
       const nowResult = performance.now();
       const diff = nowResult - tmp.lastHeartbeatTimestamp;
-      const orRefreshAdSession = applyArgumentsResult(outer1_2[8]).getOrRefreshAdSession();
-      const obj3 = applyArgumentsResult(outer1_2[8]);
+      const orRefreshAdSession = applyArgumentsResult(closure_1_2[8]).getOrRefreshAdSession();
+      const obj3 = applyArgumentsResult(closure_1_2[8]);
       obj = { client_ad_session_id: orRefreshAdSession.uuid, client_heartbeat_initialization_timestamp: orRefreshAdSession.createdAtTimestamp, client_heartbeat_version: 3 };
-      outer1_1(outer1_2[9]).track(outer1_4.CLIENT_AD_HEARTBEAT, obj);
+      closure_1_1(closure_1_2[9]).track(closure_1_4.CLIENT_AD_HEARTBEAT, obj);
       applyArgumentsResult.lastHeartbeatTimestamp = nowResult;
     };
     applyArgumentsResult.stopAnalyticHeartbeat = function stopAnalyticHeartbeat(DEFAULT) {
       if (DEFAULT === undefined) {
-        DEFAULT = outer1_8.DEFAULT;
+        DEFAULT = closure_1_8.DEFAULT;
       }
       if (applyArgumentsResult.schedulerStarted) {
         tmp2.schedulerStarted = false;
         tmp2.lastHeartbeatTimestamp = 0;
-        let obj = outer1_1(outer1_2[7]);
+        let obj = closure_1_1(closure_1_2[7]);
         obj = { category: null, message: null };
-        obj[0] = outer1_6;
+        obj[0] = closure_1_6;
         const _HermesInternal = HermesInternal;
         obj[1] = "Stopping ad session heartbeat: " + DEFAULT;
         obj.addBreadcrumb(obj);
@@ -87,15 +89,15 @@ class SessionAdManager extends tmp3 {
     };
     applyArgumentsResult.scheduleHeartbeatTracking = function scheduleHeartbeatTracking(DEFAULT) {
       if (DEFAULT === undefined) {
-        DEFAULT = outer1_8.DEFAULT;
+        DEFAULT = closure_1_8.DEFAULT;
       }
       if (applyArgumentsResult.focusedOrForegrounded) {
-        if (null != outer1_7) {
+        if (null != token) {
           try {
             const result = obj.startAnalyticHeartbeat();
           } catch (tmp7) {
-            outer1_1(outer1_2[7]).captureException(tmp7);
-            const obj2 = outer1_1(outer1_2[7]);
+            closure_1_1(closure_1_2[7]).captureException(tmp7);
+            const obj2 = closure_1_1(closure_1_2[7]);
           }
         }
       }
@@ -106,27 +108,26 @@ class SessionAdManager extends tmp3 {
       applyArgumentsResult.trackHeartbeat(true);
     };
     applyArgumentsResult.handleLogout = function handleLogout() {
-      const result = applyArgumentsResult.stopAnalyticHeartbeat(outer1_8.USER_LOGOUT);
-      applyArgumentsResult(outer1_2[8]).clearAdSession();
+      const result = applyArgumentsResult.stopAnalyticHeartbeat(closure_1_8.USER_LOGOUT);
+      applyArgumentsResult(closure_1_2[8]).clearAdSession();
     };
     applyArgumentsResult.handleEnrollmentSuccess = function handleEnrollmentSuccess() {
       const orRefreshAdSession = applyArgumentsResult(table[8]).getOrRefreshAdSession(true);
     };
     applyArgumentsResult.handleWindowFocus = function handleWindowFocus(focused) {
       applyArgumentsResult.focusedOrForegrounded = focused.focused;
-      const result = applyArgumentsResult.scheduleHeartbeatTracking(outer1_8.WINDOW_FOCUS);
+      const result = applyArgumentsResult.scheduleHeartbeatTracking(closure_1_8.WINDOW_FOCUS);
     };
     applyArgumentsResult.handleAppStateUpdate = function handleAppStateUpdate(state) {
-      applyArgumentsResult.focusedOrForegrounded = state.state === outer1_5.ACTIVE;
-      const result = applyArgumentsResult.scheduleHeartbeatTracking(outer1_8.APP_STATE_UPDATE);
+      applyArgumentsResult.focusedOrForegrounded = state.state === closure_1_5.ACTIVE;
+      const result = applyArgumentsResult.scheduleHeartbeatTracking(closure_1_8.APP_STATE_UPDATE);
     };
     applyArgumentsResult.handleAuthenticationChange = function handleAuthenticationChange() {
-      const token = outer1_3.getToken();
-      if (outer1_7 !== token) {
-        outer1_7 = token;
-        applyArgumentsResult(outer1_2[8]).clearAdSession();
+      token = closure_1_3.getToken();
+      if (token !== token) {
+        applyArgumentsResult(closure_1_2[8]).clearAdSession();
         const result = applyArgumentsResult.stopAnalyticHeartbeat();
-        const obj = applyArgumentsResult(outer1_2[8]);
+        const obj = applyArgumentsResult(closure_1_2[8]);
       }
       const result1 = applyArgumentsResult.scheduleHeartbeatTracking();
     };
@@ -135,34 +136,34 @@ class SessionAdManager extends tmp3 {
 }
 const prototype = SessionAdManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  this.focusedOrForegrounded = require(5055) /* isForegrounded */.isForegrounded();
+  this.focusedOrForegrounded = isForegrounded.isForegrounded();
   importDefaultResult.addChangeListener(this.handleAuthenticationChange);
-  const obj = require(5055) /* isForegrounded */;
-  const subscription = importDefault(709).subscribe("WINDOW_FOCUS", this.handleWindowFocus);
-  const obj2 = importDefault(709);
-  const subscription1 = importDefault(709).subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate);
-  const obj3 = importDefault(709);
-  const subscription2 = importDefault(709).subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess);
-  const obj4 = importDefault(709);
-  const subscription3 = importDefault(709).subscribe("LOGIN_SUCCESS", this.handleLogin);
-  const obj5 = importDefault(709);
-  const subscription4 = importDefault(709).subscribe("LOGOUT", this.handleLogout);
+  const obj = isForegrounded;
+  const subscription = dispatcherDefault.subscribe("WINDOW_FOCUS", this.handleWindowFocus);
+  const obj2 = dispatcherDefault;
+  const subscription1 = dispatcherDefault.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate);
+  const obj3 = dispatcherDefault;
+  const subscription2 = dispatcherDefault.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess);
+  const obj4 = dispatcherDefault;
+  const subscription3 = dispatcherDefault.subscribe("LOGIN_SUCCESS", this.handleLogin);
+  const obj5 = dispatcherDefault;
+  const subscription4 = dispatcherDefault.subscribe("LOGOUT", this.handleLogout);
   const result = this.scheduleHeartbeatTracking();
 };
 prototype["_terminate"] = function _terminate() {
   const result = this.stopAnalyticHeartbeat();
   importDefaultResult.removeChangeListener(this.handleAuthenticationChange);
-  importDefault(709).unsubscribe("WINDOW_FOCUS", this.handleWindowFocus);
-  const obj = importDefault(709);
-  importDefault(709).unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate);
-  const obj2 = importDefault(709);
-  importDefault(709).unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess);
-  const obj3 = importDefault(709);
-  importDefault(709).unsubscribe("LOGIN_SUCCESS", this.handleLogin);
-  const obj4 = importDefault(709);
-  importDefault(709).unsubscribe("LOGOUT", this.handleLogout);
+  dispatcherDefault.unsubscribe("WINDOW_FOCUS", this.handleWindowFocus);
+  const obj = dispatcherDefault;
+  dispatcherDefault.unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate);
+  const obj2 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess);
+  const obj3 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("LOGIN_SUCCESS", this.handleLogin);
+  const obj4 = dispatcherDefault;
+  dispatcherDefault.unsubscribe("LOGOUT", this.handleLogout);
 };
 const sessionAdManager = new SessionAdManager();
-let result = require("initialize").fileFinishedImporting("modules/analytics_sessions/SessionAdManager.tsx");
+let result = require("set").fileFinishedImporting("modules/analytics_sessions/SessionAdManager.tsx");
 
 export default sessionAdManager;

@@ -4,7 +4,9 @@
 // Dependencies: [848]
 
 // Module 949 (captureFeedback)
-const require = arg1;
+import getClient from "getClient" /* 848 */;
+
+require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.captureFeedback = function captureFeedback(tags) {
@@ -14,8 +16,8 @@ arg5.captureFeedback = function captureFeedback(tags) {
   }
   let currentScope = arg2;
   if (arg2 === undefined) {
-    currentScope = require(848) /* getClient */.getCurrentScope();
-    const obj3 = require(848) /* getClient */;
+    currentScope = getClient.getCurrentScope();
+    const obj3 = getClient;
   }
   obj = { contexts: { feedback: obj }, type: "feedback", level: "info", tags: tags.tags };
   obj = { contact_email: tags.email, name: tags.name, message: tags.message, url: tags.url, source: tags.source, associated_event_id: tags.associatedEventId };
@@ -24,8 +26,8 @@ arg5.captureFeedback = function captureFeedback(tags) {
     client = currentScope.getClient();
   }
   if (!client) {
-    client = require(848) /* getClient */.getClient();
-    const obj6 = require(848) /* getClient */;
+    client = getClient.getClient();
+    const obj6 = getClient;
   }
   if (client) {
     client.emit("beforeSendFeedback", obj, obj);

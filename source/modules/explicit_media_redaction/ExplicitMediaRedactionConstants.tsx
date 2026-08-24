@@ -1,12 +1,13 @@
-// Module ID: 5004
-// Function ID: 5005
+// Module ID: 5009
+// Function ID: 5010
 // Name: USER_SETTING_ACTION_SHEET_KEY
 // Dependencies: [693, 2]
 
-// Module 5004 (USER_SETTING_ACTION_SHEET_KEY)
-import set from "set";
+// Module 5009 (USER_SETTING_ACTION_SHEET_KEY)
+import MessageEmbedTypes from "MessageEmbedTypes" /* 693 */;
+import set from "set" /* 2 */;
 
-const items = [require("MessageEmbedTypes").MessageEmbedTypes.IMAGE, require("MessageEmbedTypes").MessageEmbedTypes.VIDEO, require("MessageEmbedTypes").MessageEmbedTypes.GIFV];
+const items = [MessageEmbedTypes.MessageEmbedTypes.IMAGE, MessageEmbedTypes.MessageEmbedTypes.VIDEO, MessageEmbedTypes.MessageEmbedTypes.GIFV];
 let set = new Set(items);
 const result = set.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionConstants.tsx");
 

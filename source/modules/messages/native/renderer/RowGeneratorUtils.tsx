@@ -1,28 +1,28 @@
-// Module ID: 8321
-// Function ID: 8322
+// Module ID: 8361
+// Function ID: 8362
 // Name: nativeStyleProperties
-// Dependencies: [17, 4662, 1391, 1910, 4663, 8158, 676, 4661, 4223, 712, 7232, 4803, 1493, 2]
+// Dependencies: [17, 4669, 1391, 1910, 4670, 8197, 676, 4668, 4227, 712, 7270, 4808, 1493, 2]
 
-// Module 8321 (nativeStyleProperties)
-import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
-import { SwipeActionsType } from "Changeset";
-import ME from "ME";
-import createCacheKey from "createCacheKey";
-import createCacheKey from "createCacheKey";
-import set from "ensureGuildLoaded";
+// Module 8361 (nativeStyleProperties)
+import ThemesDefault from "Themes" /* 712 */;
+import getSrcWithWidthAndHeightDefault from "getSrcWithWidthAndHeight" /* 1493 */;
+import hexToRgba from "hexToRgba" /* 4227 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+import useCanManageGuildOfficialMessages from "useCanManageGuildOfficialMessages" /* 7270 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4670 */;
+import { SwipeActionsType } from "Changeset" /* 8197 */;
+import ME from "ME" /* 676 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import set from "set" /* 2 */;
 
-let c10;
-let c9;
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: closure_6, GUILD_OFFICIAL_HIGHLIGHT_ALPHA_COLOR: error } = MESSAGE_GROUP_SPACING);
 ({ MessageFlags: c9, MessageTypes: c10 } = ME);
-const result = createCacheKey.experimental_createToken(() => require(4223) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.BRAND_500, 0.1));
-createCacheKey = { ephemeralBackgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE, ephemeralGutterColor: require("Themes").colors.BACKGROUND_BRAND, giftIntentEphemeralBackgroundColor: result, mentionedBackgroundColor: require("Themes").colors.MESSAGE_MENTIONED_BACKGROUND_DEFAULT, mentionedGutterColor: require("Themes").unsafe_rawColors.YELLOW_300, automodBlockedBackgroundColor: require("Themes").colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT, automodBlockedGutterColor: require("Themes").unsafe_rawColors.RED_345, editingColor: require("Themes").colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT };
+const result = createCacheKey.experimental_createToken(() => hexToRgba.hexWithOpacity(ThemesDefault.unsafe_rawColors.BRAND_500, 0.1));
+createCacheKey = { ephemeralBackgroundColor: ThemesDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE, ephemeralGutterColor: ThemesDefault.colors.BACKGROUND_BRAND, giftIntentEphemeralBackgroundColor: result, mentionedBackgroundColor: ThemesDefault.colors.MESSAGE_MENTIONED_BACKGROUND_DEFAULT, mentionedGutterColor: ThemesDefault.unsafe_rawColors.YELLOW_300, automodBlockedBackgroundColor: ThemesDefault.colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT, automodBlockedGutterColor: ThemesDefault.unsafe_rawColors.RED_345, editingColor: ThemesDefault.colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT };
 createCacheKey = createCacheKey.createNativeStyleProperties(createCacheKey);
 const MediaManager = require("get ActivityIndicator").NativeModules.MediaManager;
 let set = new Set(MediaManager.getConstants().supportedExtensions);
@@ -44,11 +44,9 @@ createCacheKey = {
     if (flag) {
       str3 = "png";
     }
-    return importDefault(1493).getMobileOptimizedSrc(proxy_url, width, height, str3);
+    return getSrcWithWidthAndHeightDefault.getMobileOptimizedSrc(proxy_url, width, height, str3);
   },
   createBackgroundHighlight(message) {
-    let isAutomodBlockedMessage;
-    let isEditing;
     message = message.message;
     ({ isEditing, isAutomodBlockedMessage } = message);
     const tmp = createCacheKey(message.theme);
@@ -62,7 +60,7 @@ createCacheKey = {
       return obj;
     } else {
       if (message.hasFlag(constants.IS_GUILD_OFFICIAL)) {
-        obj = require(7232) /* useCanManageGuildOfficialMessages */;
+        obj = useCanManageGuildOfficialMessages;
         if (obj.showGuildOfficialMessageGradient(officialMessageStyle.officialMessageStyle)) {
           channel = channel.getChannel(message.getChannelId());
           let guild_id;
@@ -70,7 +68,7 @@ createCacheKey = {
             guild_id = channel.guild_id;
           }
           guild = guild.getGuild(guild_id);
-          let tmp3Result = tmp3(7232);
+          let tmp3Result = tmp3(7270);
           if (tmp3Result.isGuildOfficialMessagesEnabled(guild, "RowGeneratorUtils")) {
             let officialMessageColor;
             if (guild != null) {
@@ -82,12 +80,12 @@ createCacheKey = {
             if (message.mentioned) {
               let ephemeralGutterColor = tmp.mentionedGutterColor;
             } else {
-              tmp3Result = tmp3(4803);
+              tmp3Result = tmp3(4808);
               if (tmp3Result.hasEphemeralAppearance(message)) {
                 ephemeralGutterColor = tmp.ephemeralGutterColor;
               }
             }
-            const obj1 = { backgroundColor: null, gutterColor: null };
+            obj1 = { backgroundColor: null, gutterColor: null };
             obj1[0] = officialMessageColor | closure_7;
             obj1[1] = ephemeralGutterColor;
             return obj1;
@@ -99,7 +97,7 @@ createCacheKey = {
         ({ mentionedBackgroundColor: obj5[0], mentionedGutterColor: obj5[1] } = tmp);
         const tmp14 = obj2;
       } else {
-        obj2 = require(4803) /* createMinimalMessageRecord */;
+        obj2 = createMinimalMessageRecord;
         if (obj2.hasEphemeralAppearance(message)) {
           const obj3 = { backgroundColor: null, gutterColor: null };
           obj3[0] = message.type === constants2.GIFTING_PROMPT ? tmp.giftIntentEphemeralBackgroundColor : tmp.ephemeralBackgroundColor;

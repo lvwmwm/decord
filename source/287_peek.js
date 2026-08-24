@@ -4,5 +4,7 @@
 // Dependencies: [288]
 
 // Module 287 (peek)
+import peek from "peek" /* 288 */;
 
-export { default } from "peek";
+
+export default peek;

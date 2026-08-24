@@ -1,22 +1,28 @@
-// Module ID: 15030
-// Function ID: 15031
+// Module ID: 15094
+// Function ID: 15095
 // Name: SettingsEmoji
-// Dependencies: [5, 19, 8198, 676, 1925, 21, 4661, 712, 4066, 8192, 1435, 6930, 9298, 698, 7159, 9311, 10669, 1236, 2]
+// Dependencies: [5, 19, 8238, 676, 1925, 21, 4668, 712, 4069, 8232, 1435, 6968, 9335, 698, 7197, 9348, 10708, 1236, 2]
 
-// Module 15030 (SettingsEmoji)
-import jsxProd from "jsxProd";
-import "noop";
-import { AnalyticEvents } from "ME";
-import { EmojiIntention } from "set";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
-import createToggle from "createToggle";
+// Module 15094 (SettingsEmoji)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import EmojiDefault from "Emoji" /* 6968 */;
+import getFallbackDoubleTapDisambiguatedEmoji from "getFallbackDoubleTapDisambiguatedEmoji" /* 8232 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import { AnalyticEvents } from "ME" /* 676 */;
+import { EmojiIntention } from "set" /* 1925 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import createToggle from "createToggle" /* 10708 */;
 
-const require = arg1;
+require = arg1;
 function SettingsEmoji(emoji) {
   emoji = emoji.emoji;
   if (null != emoji.id) {
-    let obj = importDefault(1435);
+    let obj = getAvatarURLDefault;
     obj = { id: null, size: 24, animated: false };
     obj[0] = emoji.id;
     let url = obj.getEmojiURL(obj);
@@ -25,31 +31,32 @@ function SettingsEmoji(emoji) {
   }
   obj = { fastImageStyle: { height: 24, width: 24 }, src: url, name: null, adjustsFontSizeToFit: true, textEmojiStyle: null };
   let str = "";
-  const tmp = createCacheKey();
+  const tmp = callback2();
   const tmp4 = jsx;
   if (null == emoji.id) {
     str = emoji.surrogates;
   }
   obj[2] = str;
   obj[4] = tmp.textEmoji;
-  return tmp4(importDefault(6930), obj);
+  return tmp4(EmojiDefault, obj);
 }
+noopAll;
 createCacheKey = { textEmoji: null };
-createCacheKey = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_7 = createCacheKey.createStyles(createCacheKey);
 const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["96WKNB"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["96WKNB"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.CHAT,
   useTrailing: function useDoubleTapEmojiSettingTrailing() {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    let obj = require(8192) /* getFallbackDoubleTapDisambiguatedEmoji */;
+    let obj = getFallbackDoubleTapDisambiguatedEmoji;
     const result = obj.disambiguatedEmojiFromSettingsValue(setting);
-    const fallbackDoubleTapDisambiguatedEmoji = require(8192) /* getFallbackDoubleTapDisambiguatedEmoji */.getFallbackDoubleTapDisambiguatedEmoji();
+    const fallbackDoubleTapDisambiguatedEmoji = getFallbackDoubleTapDisambiguatedEmoji.getFallbackDoubleTapDisambiguatedEmoji();
     if (null == result) {
       if (null != fallbackDoubleTapDisambiguatedEmoji) {
         obj = { emoji: null };
@@ -66,12 +73,12 @@ const pressable = createToggle.createPressable({
     }
   },
   onPress: function onPressSetting() {
-    let obj = _require(9298);
+    let obj = _require(9335);
     obj = { pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
     _require = callback((arg0) => {
-      let closure_0 = arg0;
-      let c3 = 0;
-      let c4 = 0;
+      closure_0 = arg0;
+      c3 = 0;
+      c4 = 0;
       return (function*(arg0) {
         if (constants === 2) {
           constants = 3;
@@ -84,7 +91,7 @@ const pressable = createToggle.createPressable({
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -99,13 +106,13 @@ const pressable = createToggle.createPressable({
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_2 = tmp5;
-                let closure_1 = tmp2;
-                const obj1 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: null };
+                closure_2 = tmp5;
+                closure_1 = tmp2;
+                obj1 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: null };
                 ({ id: obj8[0], name: obj8[1], animated: obj8[2] } = callback);
-                obj1[4] = outer1_1(outer1_2[14]).USER_SETTINGS;
-                outer1_1(outer1_2[13]).track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj1);
-                const DoubleTapReactionEmoji = callback(outer1_2[8]).DoubleTapReactionEmoji;
+                obj1[4] = closure_1_1(closure_1_2[14]).USER_SETTINGS;
+                closure_1_1(closure_1_2[13]).track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj1);
+                const DoubleTapReactionEmoji = callback(closure_1_2[8]).DoubleTapReactionEmoji;
                 ({ id: obj9[0], name: obj9[1], animated: obj9[2] } = callback);
                 c3 = 1;
                 constants = 1;
@@ -122,12 +129,12 @@ const pressable = createToggle.createPressable({
               obj4[0] = arg1;
               return obj4;
             } else {
-              obj = callback(outer1_2[15]);
+              obj = callback(closure_1_2[15]);
               const obj5 = { emoji: null };
               obj5[0] = callback;
               const result = obj.showDoubleTapEmojiUpdatedToast(obj5);
               constants = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             constants = tmp;
@@ -150,9 +157,9 @@ const pressable = createToggle.createPressable({
   },
   withArrow: true,
   useDescription: function useDoubleTapEmojiDescription() {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    const result = require(8192) /* getFallbackDoubleTapDisambiguatedEmoji */.disambiguatedEmojiFromSettingsValue(setting);
+    const result = getFallbackDoubleTapDisambiguatedEmoji.disambiguatedEmojiFromSettingsValue(setting);
     let combined = null;
     if (null != result) {
       const _HermesInternal = HermesInternal;
@@ -161,7 +168,7 @@ const pressable = createToggle.createPressable({
     return combined;
   },
   useIsDisabled: function useDoubleTapDisabled() {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     let flag = DoubleTapReactionEmoji.useSetting().disableDoubleTap;
     if (flag == null) {
       flag = false;
@@ -169,7 +176,7 @@ const pressable = createToggle.createPressable({
     return flag;
   },
   usePredicate: function useShouldShowSetting() {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     let flag = DoubleTapReactionEmoji.useSetting().disableDoubleTap;
     if (flag == null) {
       flag = false;
@@ -179,16 +186,16 @@ const pressable = createToggle.createPressable({
 });
 let obj1 = {
   useTitle() {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["96WKNB"]);
+    const intl = getSystemLocale.intl;
+    return intl.string(getSystemLocale.t["96WKNB"]);
   },
   parent: require("MobileUserSettings").MobileUserSettings.CHAT,
   useTrailing: function useDoubleTapEmojiSettingTrailing() {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    let obj = require(8192) /* getFallbackDoubleTapDisambiguatedEmoji */;
+    let obj = getFallbackDoubleTapDisambiguatedEmoji;
     const result = obj.disambiguatedEmojiFromSettingsValue(setting);
-    const fallbackDoubleTapDisambiguatedEmoji = require(8192) /* getFallbackDoubleTapDisambiguatedEmoji */.getFallbackDoubleTapDisambiguatedEmoji();
+    const fallbackDoubleTapDisambiguatedEmoji = getFallbackDoubleTapDisambiguatedEmoji.getFallbackDoubleTapDisambiguatedEmoji();
     if (null == result) {
       if (null != fallbackDoubleTapDisambiguatedEmoji) {
         obj = { emoji: null };
@@ -205,12 +212,12 @@ let obj1 = {
     }
   },
   onPress: function onPressSetting() {
-    let obj = _require(9298);
+    let obj = _require(9335);
     obj = { pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
     _require = callback((arg0) => {
-      let closure_0 = arg0;
-      let c3 = 0;
-      let c4 = 0;
+      closure_0 = arg0;
+      c3 = 0;
+      c4 = 0;
       return (function*(arg0) {
         if (constants === 2) {
           constants = 3;
@@ -223,7 +230,7 @@ let obj1 = {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -238,13 +245,13 @@ let obj1 = {
                 obj[0] = arg1;
                 return obj;
               } else {
-                let closure_2 = tmp5;
-                let closure_1 = tmp2;
-                const obj1 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: null };
+                closure_2 = tmp5;
+                closure_1 = tmp2;
+                obj1 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: null };
                 ({ id: obj8[0], name: obj8[1], animated: obj8[2] } = callback);
-                obj1[4] = outer1_1(outer1_2[14]).USER_SETTINGS;
-                outer1_1(outer1_2[13]).track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj1);
-                const DoubleTapReactionEmoji = callback(outer1_2[8]).DoubleTapReactionEmoji;
+                obj1[4] = closure_1_1(closure_1_2[14]).USER_SETTINGS;
+                closure_1_1(closure_1_2[13]).track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj1);
+                const DoubleTapReactionEmoji = callback(closure_1_2[8]).DoubleTapReactionEmoji;
                 ({ id: obj9[0], name: obj9[1], animated: obj9[2] } = callback);
                 c3 = 1;
                 constants = 1;
@@ -261,12 +268,12 @@ let obj1 = {
               obj4[0] = arg1;
               return obj4;
             } else {
-              obj = callback(outer1_2[15]);
+              obj = callback(closure_1_2[15]);
               const obj5 = { emoji: null };
               obj5[0] = callback;
               const result = obj.showDoubleTapEmojiUpdatedToast(obj5);
               constants = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             constants = tmp;
@@ -289,9 +296,9 @@ let obj1 = {
   },
   withArrow: true,
   useDescription: function useDoubleTapEmojiDescription() {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    const result = require(8192) /* getFallbackDoubleTapDisambiguatedEmoji */.disambiguatedEmojiFromSettingsValue(setting);
+    const result = getFallbackDoubleTapDisambiguatedEmoji.disambiguatedEmojiFromSettingsValue(setting);
     let combined = null;
     if (null != result) {
       const _HermesInternal = HermesInternal;
@@ -300,7 +307,7 @@ let obj1 = {
     return combined;
   },
   useIsDisabled: function useDoubleTapDisabled() {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     let flag = DoubleTapReactionEmoji.useSetting().disableDoubleTap;
     if (flag == null) {
       flag = false;
@@ -308,7 +315,7 @@ let obj1 = {
     return flag;
   },
   usePredicate: function useShouldShowSetting() {
-    const DoubleTapReactionEmoji = require(4066) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = explicitContentFromProto.DoubleTapReactionEmoji;
     let flag = DoubleTapReactionEmoji.useSetting().disableDoubleTap;
     if (flag == null) {
       flag = false;
@@ -316,6 +323,6 @@ let obj1 = {
     return !flag;
   }
 };
-let result = require("MobileUserSettings").fileFinishedImporting("modules/user_settings/defs/native/DoubleTapEmojiSetting.tsx");
+let result = require("set").fileFinishedImporting("modules/user_settings/defs/native/DoubleTapEmojiSetting.tsx");
 
 export default pressable;

@@ -1,19 +1,21 @@
-// Module ID: 8035
-// Function ID: 8036
+// Module ID: 8074
+// Function ID: 8075
 // Name: IconButton
-// Dependencies: [19, 21, 4661, 712, 4752, 8036, 4734, 2]
+// Dependencies: [19, 21, 4668, 712, 4757, 8075, 4739, 2]
 
-// Module 8035 (IconButton)
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
-import importAllResult from "noop";
+// Module 8074 (IconButton)
+import ThemesDefault from "Themes" /* 712 */;
+import Text from "Text" /* 4739 */;
+import BaseButton from "BaseButton" /* 4757 */;
+import BaseIconButton from "BaseIconButton" /* 8075 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
+import importAllResult from "noop" /* 19 */;
 
-let c3;
-let c4;
-const require = arg1;
+require = arg1;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_5 = createCacheKey.createStyles((arg0) => {
-  const labelPressable = { paddingBottom: importDefault(712).space.PX_4, gap: importDefault(712).space.PX_8, alignItems: "center", alignSelf: "center", flexGrow: null };
+  const labelPressable = { paddingBottom: ThemesDefault.space.PX_4, gap: ThemesDefault.space.PX_8, alignItems: "center", alignSelf: "center", flexGrow: null };
   let num = 0;
   if (arg0) {
     num = 1;
@@ -21,11 +23,7 @@ let closure_5 = createCacheKey.createStyles((arg0) => {
   labelPressable[4] = num;
   return { labelPressable, label: { textAlign: "center" } };
 });
-const forwardRefResult = require("noop").forwardRef((grow) => {
-  let accessibilityHint;
-  let accessibilityLabel;
-  let label;
-  let maxFontSizeMultiplier;
+const forwardRefResult = importAllResult.forwardRef((grow) => {
   ({ label, accessibilityLabel, maxFontSizeMultiplier, accessibilityHint } = grow);
   const merged = Object.assign(grow, Object.create(null));
   const tmp2 = callback3(grow.grow);
@@ -43,14 +41,14 @@ const forwardRefResult = require("noop").forwardRef((grow) => {
     obj.accessibilityLabel = "";
     obj.size = "lg";
     obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
-    const items = [callback(require(8036) /* BaseIconButton */.BaseIconButton, obj), ];
-    const obj1 = { style: null, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier: null, children: null };
+    const items = [callback(BaseIconButton.BaseIconButton, obj), ];
+    obj1 = { style: null, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier: null, children: null };
     obj1[0] = tmp2.label;
     obj1[3] = maxFontSizeMultiplier;
     obj1[4] = label;
-    items[1] = callback(require(4734) /* Text */.Text, obj1);
+    items[1] = callback(Text.Text, obj1);
     obj.children = items;
-    let tmp9 = callback2(require(4752) /* BaseButton */.BaseButton, obj);
+    let tmp9 = callback2(BaseButton.BaseButton, obj);
   } else {
     obj = { ref: null };
     obj[0] = arg1;
@@ -58,10 +56,10 @@ const forwardRefResult = require("noop").forwardRef((grow) => {
     obj.accessibilityLabel = accessibilityLabel;
     obj.accessibilityHint = accessibilityHint;
     obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
-    tmp9 = callback(require(8036) /* BaseIconButton */.BaseIconButton, obj);
+    tmp9 = callback(BaseIconButton.BaseIconButton, obj);
   }
   return tmp9;
 });
-const result = require("createCacheKey").fileFinishedImporting("design/components/Button/native/IconButton.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Button/native/IconButton.native.tsx");
 
 export const IconButton = forwardRefResult;

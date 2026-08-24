@@ -1,45 +1,41 @@
-// Module ID: 15747
-// Function ID: 15748
+// Module ID: 15816
+// Function ID: 15817
 // Name: Separator
-// Dependencies: [19, 17, 7271, 1391, 1990, 4021, 1922, 676, 21, 7589, 9526, 6882, 10071, 15676, 5277, 7211, 6548, 7427, 4306, 15708, 500, 712, 1297, 8402, 7188, 4751, 5433, 4734, 4967, 15748, 9415, 589, 4796, 9057, 8929, 6889, 9056, 15351, 8897, 1236, 15709, 4310, 4097, 4223, 4115, 4664, 4770, 6867, 6685, 6807, 2]
+// Dependencies: [19, 17, 7309, 1391, 1991, 4024, 1922, 676, 21, 7627, 9563, 6920, 10110, 15745, 5282, 7249, 6579, 7465, 4310, 15777, 500, 712, 1297, 8441, 7226, 4756, 5438, 4739, 4972, 15817, 9452, 589, 4801, 9094, 8966, 6927, 9093, 15415, 8934, 1236, 15778, 4314, 4100, 4227, 4119, 4671, 4775, 6905, 6721, 6844, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost, truncateUsername
 
-// Module 15747 (Separator)
-import closure_3 from "createICYMIStyles";
-import { View } from "trackInvite";
-import updateState from "updateState";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import trackCommunicationDisabled from "trackCommunicationDisabled";
-import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import ME from "ME";
-import jsxProd from "Themes";
-import createICYMIStyles from "createICYMIStyles";
+// Module 15816 (Separator)
+import set from "set" /* 500 */;
+import ThemesDefault from "Themes" /* 712 */;
+import Button from "Button" /* 1297 */;
+import GuildIconSizes from "GuildIconSizes" /* 7226 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 7226 */;
+import _safeTransitionToDefault from "_safeTransitionTo" /* 7249 */;
+import SolidCutout from "SolidCutout" /* 8441 */;
+import SolidCutoutDefault from "SolidCutout" /* 8441 */;
+import closure_3 from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import closure_5 from "updateState" /* 7309 */;
+import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_7 from "trackCommunicationDisabled" /* 1991 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import ME from "ME" /* 676 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createICYMIStyles from "createICYMIStyles" /* 15777 */;
 
-let c10;
-let closure_12;
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_17;
-let closure_18;
-let closure_19;
-let closure_20;
-let map1;
-let unpackModuleId;
-const require = arg1;
+require = arg1;
 class Separator {
   constructor() {
-    obj = { style: f62627().separator };
+    obj = { style: closure_21().separator };
     return jsx(View, obj);
   }
 }
 function CutoutGuildIconWithUser(guild) {
   guild = guild.guild;
   let obj = { guild, icon: null };
-  obj = { animate: true, style: callback3().authorIcon, guildId: guild.id, user: guild.author, size: null };
-  obj[4] = require(1297) /* Button */.AvatarSizes.XSMALL;
-  obj[1] = callback(require(1297) /* Button */.Avatar, obj);
+  obj = { animate: true, style: callback3().authorIcon, guildId: guild.id, user: guild.author, size: Button.AvatarSizes.XSMALL };
+  obj[1] = callback(Button.Avatar, obj);
   return callback(CutoutGuildIcon, obj);
 }
 class CutoutGuildIcon {
@@ -69,7 +65,7 @@ class GuildContentPost {
     guild = global.guild;
     ({ channel, hideTimestamp, id, type } = global);
     ({ timestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
-    tmp = f62627();
+    tmp = closure_21();
     tmp2 = guild;
     tmp3 = id;
     obj = require("getFontScale");
@@ -105,7 +101,7 @@ class GuildContentPost {
       if (null != guild) {
         obj7 = { onPress: null, style: null, hitSlop: 8, children: null };
         obj7[0] = function onPress() {
-          let obj = guild(outer1_2[29]);
+          let obj = guild(closure_1_2[29]);
           obj = { guildId: guild.id, channelId: null, id: null, type: null };
           let id;
           if (null != id) {
@@ -147,7 +143,7 @@ class GuildContentPost {
 ({ AnalyticsObjects: c10, AnalyticsObjectTypes: unpackModuleId, AnalyticsPages: closure_12, DEFAULT_ROLE_COLOR_HEX: map1, MAX_MESSAGES_FOR_JUMP: closure_14, MessageFlags: closure_15, Permissions: closure_16, Routes: closure_17 } = ME);
 ({ jsx: closure_18, jsxs: closure_19, Fragment: closure_20 } = jsxProd);
 let closure_21 = createICYMIStyles.createICYMIStyles((paddingBottom) => {
-  let obj = require(500) /* set */;
+  let obj = set;
   let num = 0;
   if (obj.isAndroid()) {
     num = -2;
@@ -158,59 +154,59 @@ let closure_21 = createICYMIStyles.createICYMIStyles((paddingBottom) => {
     num2 = -2;
   }
   obj[1] = { flex: 1, marginTop: num2, overflow: "hidden", paddingTop: paddingBottom.margin };
-  obj = { position: "absolute", right: -4, bottom: -2, padding: 4, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+  obj = { position: "absolute", right: -4, bottom: -2, padding: 4, borderRadius: ThemesDefault.radii.round, backgroundColor: ThemesDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
   obj[2] = obj;
   obj[3] = { position: "absolute", right: -4, bottom: -2 };
   const tmp = require;
-  tmpResult = require(500) /* set */;
-  obj[4] = { tintColor: importDefault(712).colors.TEXT_MUTED };
+  tmpResult = set;
+  obj[4] = { tintColor: ThemesDefault.colors.TEXT_MUTED };
   obj[5] = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: paddingBottom.margin, marginHorizontal: paddingBottom.margin };
   obj[6] = { flexDirection: "column", paddingBottom: paddingBottom.margin, marginHorizontal: paddingBottom.margin };
   obj[7] = { flexDirection: "row", flexGrow: 1 };
   obj[8] = { flexGrow: 1, flexShrink: 1, marginLeft: paddingBottom.margin };
   obj[9] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 2 };
   obj[10] = { flexShrink: 1, flexGrow: 0, flexDirection: "row", alignItems: "center", gap: 6 };
-  const obj1 = { tintColor: importDefault(712).colors.TEXT_MUTED };
-  obj[11] = { flexDirection: "row", justifyContent: "space-between", borderRadius: importDefault(712).radii.sm };
+  obj1 = { tintColor: ThemesDefault.colors.TEXT_MUTED };
+  obj[11] = { flexDirection: "row", justifyContent: "space-between", borderRadius: ThemesDefault.radii.sm };
   obj[12] = { flexShrink: 1, flexGrow: 0, width: "100%" };
-  const obj2 = { flexDirection: "row", justifyContent: "space-between", borderRadius: importDefault(712).radii.sm };
-  obj[13] = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_4 };
+  const obj2 = { flexDirection: "row", justifyContent: "space-between", borderRadius: ThemesDefault.radii.sm };
+  obj[13] = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
   obj[14] = { flexDirection: "row", alignItems: "center", gap: 2, flex: 1 };
   obj[15] = { paddingVertical: 1 };
-  const obj3 = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_4 };
-  obj[16] = { height: 1, width: "100%", backgroundColor: importDefault(712).colors.BORDER_SUBTLE };
+  const obj3 = { flexDirection: "row", alignItems: "center", gap: ThemesDefault.space.PX_4 };
+  obj[16] = { height: 1, width: "100%", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
   obj[17] = { flexDirection: "row", alignItems: "center" };
-  const obj4 = { height: 1, width: "100%", backgroundColor: importDefault(712).colors.BORDER_SUBTLE };
-  obj[18] = { padding: 8, backgroundColor: importDefault(712).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(712).radii.md, display: "flex", flexDirection: "row", alignItems: "center", gap: 8 };
+  const obj4 = { height: 1, width: "100%", backgroundColor: ThemesDefault.colors.BORDER_SUBTLE };
+  obj[18] = { padding: 8, backgroundColor: ThemesDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: ThemesDefault.radii.md, display: "flex", flexDirection: "row", alignItems: "center", gap: 8 };
   obj[19] = { flexGrow: 1, flexShrink: 1, marginRight: 12 };
   obj[20] = { display: "flex", flexDirection: "row", alignItems: "center", gap: 2, justifySelf: "end" };
-  const obj5 = { padding: 8, backgroundColor: importDefault(712).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(712).radii.md, display: "flex", flexDirection: "row", alignItems: "center", gap: 8 };
-  obj[21] = { width: 20, height: 20, tintColor: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
-  const obj6 = { width: 20, height: 20, tintColor: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
-  obj[22] = { tintColor: importDefault(712).colors.TEXT_MUTED };
+  const obj5 = { padding: 8, backgroundColor: ThemesDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: ThemesDefault.radii.md, display: "flex", flexDirection: "row", alignItems: "center", gap: 8 };
+  obj[21] = { width: 20, height: 20, tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+  const obj6 = { width: 20, height: 20, tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+  obj[22] = { tintColor: ThemesDefault.colors.TEXT_MUTED };
   return obj;
 });
 let closure_26 = { code: "function ICYMISharedTsx1(){const{interpolateColor,progress,bgColor,bgColorHighlighted}=this.__closure;return{backgroundColor:interpolateColor(progress.get(),[0,1],[bgColor,bgColorHighlighted])};}" };
-let result = require("updateState").fileFinishedImporting("modules/icymi/native/ICYMIShared.tsx");
+let result = require("set").fileFinishedImporting("modules/icymi/native/ICYMIShared.tsx");
 
 export const navigateToPost = function navigateToPost(id, id2, id3) {
   const _require = id;
-  const importDefault = id3;
+  importDefault = id3;
   const timerId = setTimeout(() => {
-    let obj = id(outer1_2[14]);
-    obj = { page: outer1_12.ICYMI, object: outer1_10.ACK_MESSAGE_VIEWED, objectType: outer1_11.ACK_SEMI_AUTOMATIC };
+    let obj = id(closure_1_2[14]);
+    obj = { page: closure_1_12.ICYMI, object: closure_1_10.ACK_MESSAGE_VIEWED, objectType: closure_1_11.ACK_SEMI_AUTOMATIC };
     obj.ack(id, obj, true, true, closure_1);
   }, 1500);
-  importDefault(7211)(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
+  _safeTransitionToDefault(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
   if (null != id3) {
-    _require(6548).runAfterInteractions(() => {
-      let obj = id3(outer1_2[17]);
-      obj = { channelId: id, limit: outer1_14, jump: null };
-      obj = { messageId: id3, flash: true, jumpType: id(outer1_2[18]).JumpType.ANIMATED };
+    _require(6579).runAfterInteractions(() => {
+      let obj = id3(closure_1_2[17]);
+      obj = { channelId: id, limit: closure_1_14, jump: null };
+      obj = { messageId: id3, flash: true, jumpType: id(closure_1_2[18]).JumpType.ANIMATED };
       obj[2] = obj;
       const messages = obj.fetchMessages(obj);
     }, 150);
-    let obj = _require(6548);
+    let obj = _require(6579);
   }
 };
 export { Separator };
@@ -225,19 +221,14 @@ export const truncateUsername = function truncateUsername(arr) {
 export { CutoutGuildIcon };
 export { GuildContentPost };
 export const AnnouncementContentPost = function AnnouncementContentPost(guild) {
-  let children;
-  let mentioned;
-  let onHeaderLongPress;
-  let onHeaderPress;
-  let timestamp;
   guild = guild.guild;
   const channel = guild.channel;
   const author = guild.author;
   const id = guild.id;
   ({ timestamp, children, mentioned, onHeaderPress, onHeaderLongPress } = guild);
   let obj = guild(author[31]);
-  const items = [trackCommunicationDisabled];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getMember(guild.id, author.id));
+  const items = [closure_7];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_7.getMember(guild.id, author.id));
   let colorString;
   if (stateFromStores != null) {
     colorString = stateFromStores.colorString;
@@ -260,7 +251,7 @@ export const AnnouncementContentPost = function AnnouncementContentPost(guild) {
   obj[3] = callback(CutoutGuildIconWithUser, { guild, author });
   obj = { style: { maxWidth: 225 }, lineClamp: 1, variant: "text-sm/medium", color: "text-muted", children: guild.name };
   obj[4] = callback(guild(author[27]).Text, obj, channel.id);
-  const obj1 = { lineClamp: 2, variant: "text-md/normal", color: "text-default", style: callback3().subtitle, children: null };
+  obj1 = { lineClamp: 2, variant: "text-md/normal", color: "text-default", style: callback3().subtitle, children: null };
   const obj2 = { variant: "text-md/semibold", onPress: callback, style: { color: colorString }, children: null };
   let combined = name;
   if (name.length > 20) {
@@ -269,22 +260,21 @@ export const AnnouncementContentPost = function AnnouncementContentPost(guild) {
   }
   obj2[3] = `${tmp10} `;
   const items2 = [callback(guild(author[27]).Text, obj2), , ];
-  const obj3 = { size: "sm", color: null };
-  obj3[1] = channel(author[21]).colors.TEXT_SUBTLE;
-  items2[1] = callback(guild(author[35]).AnnouncementsIcon, obj3);
+  const tmp = callback3();
+  const tmp8 = GuildContentPost;
+  const tmp9 = closure_19;
+  items2[1] = callback(guild(author[35]).AnnouncementsIcon, { size: "sm", color: channel(author[21]).colors.TEXT_SUBTLE });
   tmp2Result = tmp2(tmp3[36]);
   items2[2] = ` ${tmp13(guild(author[9]).ContentType.ANNOUNCEMENT, mentioned)}`;
   obj1[4] = items2;
-  obj[5] = closure_19(guild(author[27]).Text, obj1);
+  obj[5] = tmp9(guild(author[27]).Text, obj1);
   obj[6] = onHeaderPress;
   obj[7] = onHeaderLongPress;
   obj[8] = id;
   obj[10] = children;
-  return callback(GuildContentPost, obj);
+  return callback(tmp8, obj);
 };
 export const GuildEventPost = function GuildEventPost(guild) {
-  let children;
-  let onHeaderPress;
   guild = guild.guild;
   const channel = guild.channel;
   const event = guild.event;
@@ -306,14 +296,14 @@ export const GuildEventPost = function GuildEventPost(guild) {
   }
   const ensureHydratedUsers = obj.useEnsureHydratedUsers(event.guild_id, items1);
   let tmp2Result = tmp2(tmp3[31]);
-  const items2 = [mergeGuildAvatar];
-  stateFromStores = tmp2Result.useStateFromStores(items2, () => outer1_9.getUser(creator_id));
+  const items2 = [closure_9];
+  stateFromStores = tmp2Result.useStateFromStores(items2, () => closure_1_9.getUser(creator_id));
   tmp2Result = tmp2(tmp3[31]);
-  const items3 = [trackCommunicationDisabled];
+  const items3 = [closure_7];
   stateFromStores1 = tmp2Result.useStateFromStores(items3, () => {
     let member = null;
     if (null != creator_id) {
-      member = outer1_7.getMember(guild.id, tmp);
+      member = closure_1_7.getMember(guild.id, tmp);
     }
     return member;
   });
@@ -369,7 +359,7 @@ export const GuildEventPost = function GuildEventPost(guild) {
     obj[1] = stateFromStores;
     let tmp13Result = tmp13(CutoutGuildIconWithUser, obj);
   } else {
-    const obj1 = { guild: null, size: null };
+    obj1 = { guild: null, size: null };
     obj1[0] = guild;
     obj1[1] = tmp2(tmp3[24]).GuildIconSizes.NORMAL;
     tmp13Result = tmp13(channel(tmp3[24]), obj1);
@@ -424,10 +414,6 @@ export const GuildEventPost = function GuildEventPost(guild) {
   }
 };
 export const MessageContentPost = function MessageContentPost(guild) {
-  let children;
-  let onHeaderLongPress;
-  let onHeaderPress;
-  let timestamp;
   guild = guild.guild;
   const channel = guild.channel;
   const author = guild.author;
@@ -438,9 +424,9 @@ export const MessageContentPost = function MessageContentPost(guild) {
   const items = [channel, message];
   ({ timestamp, children, onHeaderPress, onHeaderLongPress } = guild);
   const memo = message.useMemo(() => guild(author[36]).determineContentType(channel, message), items);
-  let obj1 = guild(author[31]);
-  const items1 = [trackCommunicationDisabled];
-  const stateFromStores = obj1.useStateFromStores(items1, () => outer1_7.getMember(guild.id, author.id));
+  obj1 = guild(author[31]);
+  const items1 = [closure_7];
+  const stateFromStores = obj1.useStateFromStores(items1, () => closure_1_7.getMember(guild.id, author.id));
   let colorString;
   if (stateFromStores != null) {
     colorString = stateFromStores.colorString;
@@ -468,10 +454,8 @@ export const MessageContentPost = function MessageContentPost(guild) {
     obj = { userId: author.id, channelId: channel.id };
     channel(author[34])(obj);
   }, items2);
-  obj = { guild, channel, timestamp, avatar: null, title: null, subtitle: null, onHeaderPress: null, onHeaderLongPress: null, id: null, type: null, children: null };
-  obj[3] = callback(CutoutGuildIconWithUser, { guild, author });
+  obj = { guild, channel, timestamp, avatar: callback(CutoutGuildIconWithUser, { guild, author }), title: callback(tmp2(tmp3[27]).Text, obj, channel.id), subtitle: null, onHeaderPress: null, onHeaderLongPress: null, id: null, type: null, children: null };
   obj = { style: { maxWidth: 225 }, lineClamp: 1, variant: "text-sm/medium", color: "text-default", children: guild.name };
-  obj[4] = callback(guild(author[27]).Text, obj, channel.id);
   obj1 = { lineClamp: 2, variant: "text-md/normal", color: "text-default", style: { marginRight: obj.useContext(tmp2(tmp3[40]).ICYMIContext).margin }, children: null };
   const obj2 = { style: { color: colorString }, onPress: callback, variant: "text-md/semibold", children: null };
   let combined = name;
@@ -493,38 +477,34 @@ export const MessageContentPost = function MessageContentPost(guild) {
   return callback(GuildContentPost, obj);
 };
 export const SimplePost = function SimplePost(arg0) {
-  let children;
-  let hideDivider;
-  let highlight;
   ({ children, hideDivider, highlight } = arg0);
   if (highlight === undefined) {
     highlight = false;
   }
   let token;
-  let dependencyMap;
+  dependencyMap = undefined;
   let sharedValue;
   const tmp = callback3();
-  let obj = highlight(4097);
-  token = obj.useToken(token(712).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4310)());
-  let obj1 = highlight(4223);
+  let obj = highlight(4100);
+  token = obj.useToken(token(712).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4314)());
+  obj1 = highlight(4227);
   const hexWithOpacityResult = obj1.hexWithOpacity(token(712).unsafe_rawColors.BRAND_360, 0.25);
   dependencyMap = hexWithOpacityResult;
-  let obj2 = highlight(4115);
+  let obj2 = highlight(4119);
   sharedValue = obj2.useSharedValue(0);
   const tmp2 = token;
-  const tmp4 = token(4310)();
+  const tmp4 = token(4314)();
   const fn = function c() {
-    const obj = { backgroundColor: null };
-    const items = [token, _undefined];
-    obj[0] = highlight(_undefined[44]).interpolateColor(sharedValue.get(), [0, 1], items);
+    const obj = { backgroundColor: highlight(_undefined[44]).interpolateColor(sharedValue.get(), [0, 1], items) };
+    items = [token, _undefined];
     return obj;
   };
-  obj = { interpolateColor: highlight(4115).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
+  obj = { interpolateColor: highlight(4119).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
   fn.__closure = obj;
   fn.__workletHash = 11116019021445;
   fn.__initData = closure_26;
   let items = [highlight, sharedValue];
-  const animatedStyle = highlight(4115).useAnimatedStyle(fn);
+  const animatedStyle = highlight(4119).useAnimatedStyle(fn);
   const effect = sharedValue.useEffect(() => {
     if (highlight) {
       const obj = highlight(_undefined[44]);
@@ -541,7 +521,7 @@ export const SimplePost = function SimplePost(arg0) {
     const items1 = [tmp.simplePostContent, animatedStyle];
     obj1[0] = items1;
     obj1[1] = children;
-    const items2 = [tmp12(tmp2(4115).View, obj1), ];
+    const items2 = [tmp12(tmp2(4119).View, obj1), ];
     let tmp12Result = null;
     if (!hideDivider) {
       tmp12Result = tmp12(Separator, {});
@@ -565,14 +545,6 @@ export const SimplePost = function SimplePost(arg0) {
   return closure_19(closure_20, tmp16);
 };
 export const ThreadAsComments = function ThreadAsComments(arg0) {
-  let guild;
-  let inForum;
-  let messageCount;
-  let mostRecentMessage;
-  let onPress;
-  let parentMessage;
-  let style;
-  let thread;
   ({ guild, parentMessage } = arg0);
   guild = parentMessage;
   ({ onPress, style, inForum } = arg0);
@@ -581,23 +553,23 @@ export const ThreadAsComments = function ThreadAsComments(arg0) {
     inForum = false;
   }
   let obj = guild(inForum[31]);
-  const items = [ensureGuildLoaded, updateState];
+  const items = [closure_6, closure_5];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const obj = { thread: outer1_6.getChannel(parentMessage.id), messageCount: null, mostRecentMessage: null };
-    let num = outer1_5.getCount(parentMessage.id);
+    const obj = { thread: closure_1_6.getChannel(parentMessage.id), messageCount: null, mostRecentMessage: null };
+    let num = closure_1_5.getCount(parentMessage.id);
     if (num == null) {
       num = 0;
     }
     obj[1] = num;
-    obj[2] = outer1_5.getMostRecentMessage(parentMessage.id);
+    obj[2] = closure_1_5.getMostRecentMessage(parentMessage.id);
     return obj;
   });
   ({ thread, messageCount, mostRecentMessage } = stateFromStoresObject);
   const items1 = [guild.id, inForum, parentMessage];
   const effect = React.useEffect(() => {
-    let tmp2 = parentMessage.hasFlag(outer1_15.HAS_THREAD) || inForum;
+    let tmp2 = parentMessage.hasFlag(closure_1_15.HAS_THREAD) || inForum;
     if (tmp2) {
-      tmp2 = null == outer1_5.getMostRecentMessage(tmp.id);
+      tmp2 = null == closure_1_5.getMostRecentMessage(tmp.id);
     }
     if (tmp2) {
       let obj = parentMessage(inForum[46]);
@@ -608,9 +580,9 @@ export const ThreadAsComments = function ThreadAsComments(arg0) {
       const obj2 = parentMessage(inForum[17]);
     }
   }, items1);
-  let obj1 = guild(inForum[31]);
-  const items2 = [getUncachedChannelPermissions];
-  if (obj1.useStateFromStores(items2, () => outer1_8.canWithPartialContext(outer1_16.VIEW_CHANNEL, { channelId: guild.id }))) {
+  obj1 = guild(inForum[31]);
+  const items2 = [closure_8];
+  if (obj1.useStateFromStores(items2, () => closure_1_8.canWithPartialContext(closure_1_16.VIEW_CHANNEL, { channelId: guild.id }))) {
     if (null != thread) {
       if (null != mostRecentMessage) {
         let str = "99+";

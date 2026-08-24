@@ -1,24 +1,21 @@
-// Module ID: 15569
-// Function ID: 15570
+// Module ID: 15634
+// Function ID: 15635
 // Name: HomeDrawerSharedItem
-// Dependencies: [19, 17, 21, 4661, 2]
+// Dependencies: [19, 17, 21, 4668, 2]
 // Exports: HomeDrawerSharedItem
 
-// Module 15569 (HomeDrawerSharedItem)
-import "noop";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 15634 (HomeDrawerSharedItem)
+import noopAll from "noop" /* 19 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_1;
-let obj1;
+noopAll;
 ({ jsxs: closure_1, jsx: obj1 } = jsxProd);
 let closure_3 = createCacheKey.createStyles({ container: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 12 }, titleContainer: { flex: 1, flexDirection: "column", justifyContent: "center", gap: 2 }, rightContainer: { overflow: "hidden" } });
-const result = require("jsxProd").fileFinishedImporting("modules/home_drawer/native/HomeDrawerShared.tsx");
+const result = require("set").fileFinishedImporting("modules/home_drawer/native/HomeDrawerShared.tsx");
 
 export const HomeDrawerSharedItem = function HomeDrawerSharedItem(right) {
-  let subtitle;
-  let title;
   right = right.right;
   ({ title, subtitle } = right);
   const tmp = callback3();

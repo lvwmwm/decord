@@ -1,11 +1,15 @@
-// Module ID: 4507
-// Function ID: 4508
+// Module ID: 4511
+// Function ID: 4512
 // Name: getGameMediaRefURL
-// Dependencies: [1903, 1435, 4508, 2]
+// Dependencies: [1903, 1435, 4512, 2]
 // Exports: default
 
-// Module 4507 (getGameMediaRefURL)
-const result = require("isImageProxyURL").fileFinishedImporting("modules/games/getGameMediaRefURL.tsx");
+// Module 4511 (getGameMediaRefURL)
+import set from "set" /* 2 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
+import isImageProxyURL from "isImageProxyURL" /* 4512 */;
+
+const result = set.fileFinishedImporting("modules/games/getGameMediaRefURL.tsx");
 
 export default function getGameMediaRefURL(arg0, type, size) {
   if (null == type) {
@@ -19,16 +23,16 @@ export default function getGameMediaRefURL(arg0, type, size) {
         obj[0] = arg0;
         obj[1] = type.value;
         const merged = Object.assign(size);
-        let gameAssetURL = importDefault(1435).getGameAssetURL(obj);
+        let gameAssetURL = getAvatarURLDefault.getGameAssetURL(obj);
         if (gameAssetURL == null) {
           gameAssetURL = null;
         }
         tmp7 = gameAssetURL;
-        const obj4 = importDefault(1435);
+        const obj4 = getAvatarURLDefault;
       }
       return tmp7;
     } else if ("url" === type) {
-      obj = require(4508) /* isImageProxyURL */;
+      obj = isImageProxyURL;
       size = undefined;
       if (size != null) {
         size = size.size;

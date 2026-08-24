@@ -1,16 +1,16 @@
-// Module ID: 14609
-// Function ID: 14610
+// Module ID: 14677
+// Function ID: 14678
 // Name: DEFAULT_FONT_SCALE_STORE_STATE
-// Dependencies: [500, 9289, 700, 2]
+// Dependencies: [500, 9326, 700, 2]
 
-// Module 14609 (DEFAULT_FONT_SCALE_STORE_STATE)
-import set from "set";
-import identity from "identity";
-import set from "identity";
+// Module 14677 (DEFAULT_FONT_SCALE_STORE_STATE)
+import enforcingDefault from "enforcing" /* 9326 */;
+import set from "set" /* 500 */;
+import identity from "identity" /* 700 */;
 
 if (set.isAndroid()) {
-  let customFontScale = require("enforcing").getCustomFontScale();
-  const importDefaultResult = require("enforcing");
+  let customFontScale = enforcingDefault.getCustomFontScale();
+  const importDefaultResult = enforcingDefault;
 } else {
   customFontScale = { fontScale: 1, isClassicChatFontScaleEnabled: false };
 }

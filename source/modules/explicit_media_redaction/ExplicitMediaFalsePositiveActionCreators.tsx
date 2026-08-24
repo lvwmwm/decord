@@ -1,16 +1,19 @@
-// Module ID: 11099
-// Function ID: 11100
+// Module ID: 11138
+// Function ID: 11139
 // Name: disableFalsePositiveButton
 // Dependencies: [709, 2]
 // Exports: disableFalsePositiveButton
 
-// Module 11099 (disableFalsePositiveButton)
+// Module 11138 (disableFalsePositiveButton)
+import set from "set" /* 2 */;
+import dispatcherDefault from "dispatcher" /* 709 */;
+
 function disableFalsePositiveButton(channelId, messageId) {
-  let obj = importDefault(709);
+  let obj = dispatcherDefault;
   obj = { type: "MESSAGE_EXPLICIT_CONTENT_FP_SUBMIT", messageId, channelId };
   obj.dispatch(obj);
 }
-const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaFalsePositiveActionCreators.tsx");
+const result = set.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaFalsePositiveActionCreators.tsx");
 
 export default { disableFalsePositiveButton };
 export { disableFalsePositiveButton };

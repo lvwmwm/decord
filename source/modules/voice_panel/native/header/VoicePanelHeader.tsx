@@ -1,44 +1,41 @@
-// Module ID: 16319
-// Function ID: 16320
+// Module ID: 16413
+// Function ID: 16414
 // Name: MusicMuteButton
-// Dependencies: [32, 19, 17, 4773, 4288, 12506, 1218, 1391, 4497, 4030, 4774, 1922, 11440, 11443, 11438, 4544, 505, 21, 4661, 712, 4115, 4744, 8125, 4724, 7190, 11439, 12591, 589, 12508, 16254, 1236, 12512, 9905, 12513, 4721, 16256, 4984, 4097, 11445, 4664, 16320, 16279, 16321, 6318, 16322, 9654, 9726, 9689, 4104, 15784, 16323, 9465, 16325, 9745, 692, 16336, 9992, 16346, 2]
+// Dependencies: [32, 19, 17, 4778, 4292, 12560, 1218, 1391, 4501, 4033, 4779, 1922, 11489, 11492, 11487, 4549, 505, 21, 4668, 712, 4119, 4749, 8164, 4729, 7228, 11488, 12645, 589, 12562, 16351, 1236, 12566, 9944, 12567, 4727, 16353, 16414, 4989, 4100, 11494, 4671, 16415, 16373, 16416, 6349, 16417, 9693, 9765, 9728, 4107, 15853, 16418, 9502, 16420, 9784, 692, 16431, 10031, 16441, 16442, 2]
 
-// Module 16319 (MusicMuteButton)
-import registerAsset from "registerAsset";
-import importAllResult from "Themes";
-import get_ActivityIndicator from "jsxProd";
-import getParticipants from "getParticipants";
-import getHash from "getHash";
-import initialize from "initialize";
-import fetchFingerprint from "fetchFingerprint";
-import ensureGuildLoaded from "ensureGuildLoaded";
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import anyoneHasFlagInContext from "anyoneHasFlagInContext";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import VoicePanelModes from "VoicePanelModes";
-import { EDGE_GUTTER } from "CARD_SIZE";
-import { VoicePanelControlsModes } from "VoicePanelControlsModes";
-import { ParticipantTypes } from "ParticipantTypes";
-import { ThemeTypes } from "sum";
-import jsxProd from "CONFIG_NEVER_ANIMATE";
-import createCacheKey from "createCacheKey";
+// Module 16413 (MusicMuteButton)
+import ThemesDefault from "Themes" /* 712 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 12645 */;
+import closure_3 from "_slicedToArray" /* 32 */;
+import importAllResult from "noop" /* 19 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import closure_6 from "getParticipants" /* 4778 */;
+import closure_7 from "getHash" /* 4292 */;
+import closure_8 from "initialize" /* 12560 */;
+import closure_9 from "fetchFingerprint" /* 1218 */;
+import closure_10 from "ensureGuildLoaded" /* 1391 */;
+import closure_11 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_12 from "markAllUserIdListsStale" /* 4033 */;
+import closure_13 from "anyoneHasFlagInContext" /* 4779 */;
+import closure_14 from "mergeGuildAvatar" /* 1922 */;
+import VoicePanelModes from "VoicePanelModes" /* 11489 */;
+import { EDGE_GUTTER } from "CARD_SIZE" /* 11492 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11487 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4549 */;
+import { ThemeTypes } from "sum" /* 505 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_16;
-let closure_17;
-let closure_18;
-let closure_23;
-let closure_24;
 const require = arg1;
 function MusicMuteButton(channelId) {
   channelId = channelId.channelId;
   let stateFromStores;
-  const tmp3 = importDefault(12591)(channelId);
+  const tmp3 = useMyCurrentStageChannelRoleDefault(channelId);
   if (tmp3 != null) {
     const speaker = tmp3.speaker;
   }
   let obj = stateFromStores(589);
-  const items = [initialize];
+  const items = [closure_8];
   stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
   let tmp6 = null;
   if (obj2.useShowStageMusicMuteButton(channelId)) {
@@ -54,13 +51,13 @@ function MusicMuteButton(channelId) {
       }
       obj = { accessibilityLabel: null, icon: null, onPress: null };
       obj[0] = stringResult;
-      obj[1] = tmp(stateFromStores ? 12512 : 9905);
+      obj[1] = tmp(stateFromStores ? 12566 : 9944);
       obj[2] = function onPress() {
-        return stateFromStores(outer1_2[33]).updateStageMusicMuted(!stateFromStores);
+        return stateFromStores(closure_1_2[33]).updateStageMusicMuted(!stateFromStores);
       };
-      closure_23(tmp(16254), obj);
+      closure_23(tmp(16351), obj);
       const tmp7 = closure_23;
-      const tmpResult = tmp(16254);
+      const tmpResult = tmp(16351);
     }
   }
   return tmp6;
@@ -84,9 +81,9 @@ obj[6] = { position: "relative" };
 obj[7] = { height: StyleSheet.hairlineWidth, opacity: 0.2 };
 obj[8] = { height: StyleSheet.hairlineWidth, opacity: 0.8 };
 obj[9] = { position: "absolute", left: 0, right: 0, bottom: 0, height: StyleSheet.hairlineWidth };
-createCacheKey = { width: 12, height: 12, borderRadius: require("Themes").radii.round, padding: 2 };
+createCacheKey = { width: 12, height: 12, borderRadius: ThemesDefault.radii.round, padding: 2 };
 obj[10] = createCacheKey;
-obj[11] = { width: 8, height: 8, borderRadius: require("Themes").radii.round };
+obj[11] = { width: 8, height: 8, borderRadius: ThemesDefault.radii.round };
 obj[12] = { marginLeft: -8 };
 let closure_26 = createCacheKey.createStyles(obj);
 let closure_27 = { DOWN: 0, [0]: "DOWN", LEFT: 1, [1]: "LEFT" };
@@ -119,7 +116,7 @@ let closure_32 = importAllResult.memo((isHeaderHidden) => {
   fn.__workletHash = 8127245112238;
   fn.__initData = closure_29;
   derivedValue = obj.useDerivedValue(fn);
-  let obj1 = isHeaderHidden(focused[20]);
+  obj1 = isHeaderHidden(focused[20]);
   const fn2 = function c() {
     let obj = isHeaderHidden(focused[21]);
     let num = 0;
@@ -134,14 +131,14 @@ let closure_32 = importAllResult.memo((isHeaderHidden) => {
   fn2.__workletHash = 10074943135400;
   fn2.__initData = closure_30;
   const animatedProps = obj1.useAnimatedProps(fn2);
-  let obj3 = isHeaderHidden(focused[20]);
+  obj3 = isHeaderHidden(focused[20]);
   const fn3 = function u() {
     let obj = isHeaderHidden(focused[21]);
     let num = 0;
     if (derivedValue.get()) {
       num = 1;
     }
-    obj = { opacity: obj.withSpring(num, outer1_28) };
+    obj = { opacity: obj.withSpring(num, closure_1_28) };
     return obj;
   };
   obj = { withSpring: isHeaderHidden(focused[21]).withSpring, showHeaderBlur: derivedValue, HEADER_CHANGE_PHYSICS: obj3 };
@@ -173,20 +170,20 @@ let closure_35 = importAllResult.memo(() => {
   const items = [id, sharedValue];
   const layoutEffect = derivedValue.useLayoutEffect(() => {
     function handleChange() {
-      const result = registerAsset.set(outer1_13.isSpeaking(handleChange));
+      const result = closure_3.set(closure_1_13.isSpeaking(handleChange));
     }
-    let result = sharedValue.set(outer1_13.isSpeaking(handleChange));
-    const result1 = outer1_13.addReactChangeListener(handleChange);
+    let result = sharedValue.set(closure_1_13.isSpeaking(handleChange));
+    const result1 = closure_1_13.addReactChangeListener(handleChange);
     return () => {
-      const result = outer2_13.removeReactChangeListener(handleChange);
+      const result = closure_2_13.removeReactChangeListener(handleChange);
     };
   }, items);
   const tmp5 = callback3();
-  let obj1 = id(controlsSpecs[20]);
+  obj1 = id(controlsSpecs[20]);
   const fn = function u() {
     let value = null != focused.get();
     if (value) {
-      value = controlsSpecs.get().mode !== outer1_20.HIDDEN;
+      value = controlsSpecs.get().mode !== closure_1_20.HIDDEN;
     }
     if (value) {
       value = sharedValue.get();
@@ -223,15 +220,8 @@ let closure_40 = { code: "function VoicePanelHeaderTsx9(){const{calculateVoicePa
 let closure_41 = { code: "function VoicePanelHeaderTsx10(){const{controlsSpecs,VoicePanelControlsModes,isScreenReaderEnabled}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN&&!isScreenReaderEnabled;}" };
 let closure_42 = { code: "function VoicePanelHeaderTsx11(){const{calculateVoicePanelHeaderSpecs,safeArea,edgeGutter,withTiming,isHeaderHidden,OPACITY_TIMING,withSpring,MODE_CHANGE_PHYSICS}=this.__closure;const{height:height}=calculateVoicePanelHeaderSpecs(safeArea.get(),edgeGutter);return{opacity:withTiming(isHeaderHidden.get()?0:1,OPACITY_TIMING),transform:[{translateY:withSpring(isHeaderHidden.get()?-height:0,MODE_CHANGE_PHYSICS)}]};}" };
 let closure_43 = { code: "function VoicePanelHeaderTsx12(){const{isHeaderHidden}=this.__closure;return{pointerEvents:isHeaderHidden.get()?'none':'box-none',importantForAccessibility:isHeaderHidden.get()?'no-hide-descendants':'auto',accessibilityElementsHidden:isHeaderHidden.get()};}" };
-let obj2 = { width: 8, height: 8, borderRadius: require("Themes").radii.round };
+let obj2 = { width: 8, height: 8, borderRadius: ThemesDefault.radii.round };
 const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset) {
-  let c10;
-  let c9;
-  let channelType;
-  let guildId;
-  let scrollPosition;
-  let tmp10;
-  let tmp12;
   wrapperOffset = wrapperOffset.wrapperOffset;
   const gestureState = wrapperOffset.gestureState;
   const layout = wrapperOffset.layout;
@@ -249,7 +239,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
   let derivedValue;
   let derivedValue1;
   let DOWN;
-  let c16;
+  closure_16 = undefined;
   let tmp = callback3();
   let obj = controlsSpecs;
   const context = controlsSpecs.useContext(gestureState(channelId[25]));
@@ -260,18 +250,19 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
   safeArea = context.safeArea;
   connected = context.connected;
   ({ guildId, channelType, scrollPosition } = context);
-  let obj1 = wrapperOffset(channelId[34]);
+  obj1 = wrapperOffset(channelId[34]);
   isScreenReaderEnabled = obj1.useIsScreenReaderEnabled();
-  const tmp7 = gestureState(channelId[35])(channelId);
-  let obj2 = wrapperOffset(channelId[27]);
+  let tmp38Result4 = gestureState(channelId[35])(channelId);
+  let obj2 = gestureState(channelId[36]);
+  obj3 = wrapperOffset(channelId[27]);
   let items = [derivedValue1, token, c10, connected];
   const items1 = [channelId];
-  const stateFromStores = obj2.useStateFromStores(items, () => {
+  const stateFromStores = obj3.useStateFromStores(items, () => {
     const channel = _undefined2.getChannel(channelId);
     let channelName;
     if (null != channel) {
-      channelName = wrapperOffset(channelId[36]).computeChannelName(channel, derivedValue1, token);
-      const obj = wrapperOffset(channelId[36]);
+      channelName = wrapperOffset(channelId[37]).computeChannelName(channel, derivedValue1, token);
+      const obj = wrapperOffset(channelId[37]);
     }
     if (channelName == null) {
       const intl = wrapperOffset(channelId[30]).intl;
@@ -296,7 +287,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
     c10(tmp3);
     _undefined(arg0);
   }, items2);
-  let obj3 = wrapperOffset(channelId[20]);
+  let obj4 = wrapperOffset(channelId[20]);
   class I {
     constructor() {
       value = focused.get();
@@ -320,15 +311,15 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
   fn.__closure = obj;
   fn.__workletHash = 13084116412140;
   fn.__initData = closure_38;
-  const animatedReaction = obj3.useAnimatedReaction(I, fn);
-  let obj5 = wrapperOffset(channelId[37]);
-  token = obj5.useToken(gestureState(channelId[19]).modules.mobile.VOICE_PANEL_GUTTER);
-  let obj6 = wrapperOffset(channelId[20]);
-  function ge() {
+  const animatedReaction = obj4.useAnimatedReaction(I, fn);
+  let obj6 = wrapperOffset(channelId[38]);
+  token = obj6.useToken(gestureState(channelId[19]).modules.mobile.VOICE_PANEL_GUTTER);
+  let obj7 = wrapperOffset(channelId[20]);
+  function he() {
     const obj = mode;
-    const tmp = gestureState(channelId[38]);
-    if (mode.get() === outer1_17.PIP) {
-      let num = -tmpResult.height + outer1_19;
+    const tmp = gestureState(channelId[39]);
+    if (mode.get() === closure_1_17.PIP) {
+      let num = -tmpResult.height + closure_1_19;
     } else {
       num = 0;
       if (obj.get() === tmp3.DISMISSED) {
@@ -338,27 +329,27 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
     }
     return num;
   }
-  obj = { calculateVoicePanelHeaderSpecs: gestureState(channelId[38]), safeArea, edgeGutter: token, mode, VoicePanelModes: closure_17, gestureState, connected, EDGE_GUTTER };
-  ge.__closure = obj;
-  ge.__workletHash = 13290333964417;
-  ge.__initData = closure_39;
-  derivedValue = obj6.useDerivedValue(ge);
-  let obj8 = wrapperOffset(channelId[20]);
-  function he() {
-    const tmp2Result = gestureState(channelId[38])(safeArea.get(), token);
+  obj = { calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, mode, VoicePanelModes: closure_17, gestureState, connected, EDGE_GUTTER };
+  he.__closure = obj;
+  he.__workletHash = 13290333964417;
+  he.__initData = closure_39;
+  derivedValue = obj7.useDerivedValue(he);
+  let obj9 = wrapperOffset(channelId[20]);
+  function _e() {
+    const tmp2Result = gestureState(channelId[39])(safeArea.get(), token);
     let obj = mode;
     let value = mode.get();
     const height = tmp2Result.height;
     if (connected.get()) {
       let sum = height;
     } else {
-      sum = height - tmp2Result.paddingTop + outer1_19;
+      sum = height - tmp2Result.paddingTop + closure_1_19;
     }
     obj = {};
-    const tmp2 = gestureState(channelId[38]);
-    const tmp5 = outer1_17;
+    const tmp2 = gestureState(channelId[39]);
+    const tmp5 = closure_1_17;
     const merged = Object.assign(tmp2Result);
-    obj.paddingTop = connected.get() ? tmp2Result.paddingTop : outer1_19;
+    obj.paddingTop = connected.get() ? tmp2Result.paddingTop : closure_1_19;
     let num = 24;
     let num2 = 24;
     if (connected.get()) {
@@ -371,18 +362,18 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
     obj.borderTopRightRadius = num;
     obj.height = sum;
     const tmp10 = wrapperOffset;
-    const tmp8 = connected.get() ? tmp2Result.paddingTop : outer1_19;
-    if (value === outer1_17.PIP) {
+    const tmp8 = connected.get() ? tmp2Result.paddingTop : closure_1_19;
+    if (value === closure_1_17.PIP) {
       let num3 = 0;
     } else {
       num3 = 1;
     }
-    obj.opacity = wrapperOffset(channelId[39]).withTiming(num3, outer1_25);
-    const obj4 = wrapperOffset(channelId[39]);
+    obj.opacity = wrapperOffset(channelId[40]).withTiming(num3, closure_1_25);
+    const obj4 = wrapperOffset(channelId[40]);
     value = derivedValue.get();
     if (!connected.get()) {
       if (wrapperOffset.get().gestureActive) {
-        let tmp13 = outer1_18;
+        let tmp13 = closure_1_18;
       }
       obj = { translateY: null };
       obj[0] = tmp10Result.withSpring(value, tmp13);
@@ -390,81 +381,83 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
       obj.transform = items;
       return obj;
     }
-    tmp13 = c16;
+    tmp13 = closure_16;
   }
-  obj1 = { calculateVoicePanelHeaderSpecs: gestureState(channelId[38]), safeArea, edgeGutter: token, mode, VoicePanelModes: closure_17, connected, EDGE_GUTTER, withTiming: wrapperOffset(channelId[39]).withTiming, OPACITY_TIMING: closure_25, withSpring: wrapperOffset(channelId[21]).withSpring, yOffset: derivedValue, wrapperOffset, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_18, UI_SHOW_HIDE_PHYSICS: c16 };
-  he.__closure = obj1;
-  he.__workletHash = 11065699618122;
-  he.__initData = closure_40;
-  const animatedStyle = obj8.useAnimatedStyle(he);
-  let obj10 = wrapperOffset(channelId[20]);
-  function _e() {
-    let tmp = controlsSpecs.get().mode === outer1_20.HIDDEN;
+  obj1 = { calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, mode, VoicePanelModes: closure_17, connected, EDGE_GUTTER, withTiming: wrapperOffset(channelId[40]).withTiming, OPACITY_TIMING: closure_25, withSpring: wrapperOffset(channelId[21]).withSpring, yOffset: derivedValue, wrapperOffset, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_18, UI_SHOW_HIDE_PHYSICS: closure_16 };
+  _e.__closure = obj1;
+  _e.__workletHash = 11065699618122;
+  _e.__initData = closure_40;
+  const animatedStyle = obj9.useAnimatedStyle(_e);
+  let obj11 = wrapperOffset(channelId[20]);
+  function pe() {
+    let tmp = controlsSpecs.get().mode === closure_1_20.HIDDEN;
     if (tmp) {
       tmp = !isScreenReaderEnabled;
     }
     return tmp;
   }
   obj2 = { controlsSpecs, VoicePanelControlsModes, isScreenReaderEnabled };
-  _e.__closure = obj2;
-  _e.__workletHash = 16725581527938;
-  _e.__initData = closure_41;
-  derivedValue1 = obj10.useDerivedValue(_e);
-  let obj12 = wrapperOffset(channelId[20]);
-  function pe() {
-    let obj = wrapperOffset(channelId[39]);
-    let num = 1;
-    if (derivedValue1.get()) {
-      num = 0;
-    }
-    obj = { opacity: obj.withTiming(num, outer1_25), transform: null };
-    const obj2 = derivedValue1;
-    const tmp = channelId;
-    const tmp2 = gestureState(channelId[38]);
-    const tmp3 = wrapperOffset;
-    let num2 = 0;
-    if (obj2.get()) {
-      num2 = -tmp2(safeArea.get(), token).height;
-    }
-    obj = { translateY: wrapperOffset(channelId[21]).withSpring(num2, DOWN) };
-    const items = [obj];
-    obj[1] = items;
-    return obj;
-  }
-  obj3 = { calculateVoicePanelHeaderSpecs: gestureState(channelId[38]), safeArea, edgeGutter: token, withTiming: wrapperOffset(channelId[39]).withTiming, isHeaderHidden: derivedValue1, OPACITY_TIMING: closure_25, withSpring: wrapperOffset(channelId[21]).withSpring, MODE_CHANGE_PHYSICS: DOWN };
-  pe.__closure = obj3;
-  pe.__workletHash = 13148362186846;
-  pe.__initData = closure_42;
-  const animatedStyle1 = obj12.useAnimatedStyle(pe);
-  let obj14 = wrapperOffset(channelId[20]);
+  pe.__closure = obj2;
+  pe.__workletHash = 16725581527938;
+  pe.__initData = closure_41;
+  derivedValue1 = obj11.useDerivedValue(pe);
+  let obj13 = wrapperOffset(channelId[20]);
   class Se {
     constructor() {
-      obj = c14;
-      str = "box-none";
-      if (c14.get()) {
-        str = "none";
+      tmp = channelId;
+      tmp2 = gestureState(channelId[39]);
+      tmp3 = wrapperOffset;
+      obj = wrapperOffset(channelId[40]);
+      obj2 = closure_14;
+      num = 1;
+      if (closure_14.get()) {
+        num = 0;
       }
-      obj = { pointerEvents: str, importantForAccessibility: null, accessibilityElementsHidden: null };
-      str2 = "auto";
-      if (obj.get()) {
-        str2 = "no-hide-descendants";
+      obj = { opacity: obj.withTiming(num, closure_1_25), transform: null };
+      tmp3Result = tmp3(tmp[21]);
+      num2 = 0;
+      if (obj2.get()) {
+        num2 = -tmp2(safeArea.get(), closure_12).height;
       }
-      obj[1] = str2;
-      obj[2] = obj.get();
+      obj1 = { translateY: tmp3Result.withSpring(num2, DOWN) };
+      items = [];
+      items[0] = obj1;
+      obj[1] = items;
       return obj;
     }
   }
-  Se.__closure = { isHeaderHidden: derivedValue1 };
-  Se.__workletHash = 4740985143159;
-  Se.__initData = closure_43;
-  const animatedProps = obj14.useAnimatedProps(Se);
-  let obj15 = wrapperOffset(channelId[40]);
-  let canInviteMembers = obj15.useCanInviteMembers(channelId);
+  obj3 = { calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, withTiming: wrapperOffset(channelId[40]).withTiming, isHeaderHidden: derivedValue1, OPACITY_TIMING: closure_25, withSpring: wrapperOffset(channelId[21]).withSpring, MODE_CHANGE_PHYSICS: DOWN };
+  Se.__closure = obj3;
+  Se.__workletHash = 13148362186846;
+  Se.__initData = closure_42;
+  const animatedStyle1 = obj13.useAnimatedStyle(Se);
+  let obj15 = wrapperOffset(channelId[20]);
+  function fe() {
+    let obj = derivedValue1;
+    let str = "box-none";
+    if (derivedValue1.get()) {
+      str = "none";
+    }
+    obj = { pointerEvents: str, importantForAccessibility: null, accessibilityElementsHidden: null };
+    let str2 = "auto";
+    if (obj.get()) {
+      str2 = "no-hide-descendants";
+    }
+    obj[1] = str2;
+    obj[2] = obj.get();
+    return obj;
+  }
+  fe.__closure = { isHeaderHidden: derivedValue1 };
+  fe.__workletHash = 4740985143159;
+  fe.__initData = closure_43;
+  const animatedProps = obj15.useAnimatedProps(fe);
   let obj16 = wrapperOffset(channelId[41]);
+  let canInviteMembers = obj16.useCanInviteMembers(channelId);
+  let obj17 = wrapperOffset(channelId[42]);
   const tmp11 = focused(controlsSpecs.useState(null), 2);
-  const tmp23 = gestureState(channelId[42])();
-  let obj17 = wrapperOffset(channelId[43]);
-  obj17.useNavigatorBackPressHandler(tmp23);
+  const tmp23 = gestureState(channelId[43])();
+  let obj18 = wrapperOffset(channelId[44]);
+  obj18.useNavigatorBackPressHandler(tmp23);
   if (null != tmp12) {
     DOWN = constants.LEFT;
     let tmp25 = constants;
@@ -479,20 +472,20 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
     let intl = tmp5(tmp3[30]).intl;
     const string = intl.string;
     const t = tmp5(tmp3[30]).t;
-    if (tmp7) {
+    if (tmp38Result4) {
       stringResult = string(t.RLCTQG);
     } else {
       stringResult = string(t["5lPjGj"]);
     }
   }
-  let tmp2Result = tmp2(tmp3[44]);
+  let tmp2Result = tmp2(tmp3[45]);
   const tmp2ResultResult = tmp2Result(store.getId(), channelId, guildId);
-  c16 = tmp2ResultResult;
+  closure_16 = tmp2ResultResult;
   let tmp5Result = tmp5(tmp3[27]);
   const items3 = [callback];
   const items4 = [tmp2ResultResult];
   const stateFromStores1 = tmp5Result.useStateFromStores(items3, () => {
-    if (null != c16) {
+    if (null != closure_16) {
       if (obj3.isStableUserParticipant(tmp)) {
         if (tmp10Result.stableParticipantHasVideo(tmp)) {
           const videoDevices = callback.getVideoDevices();
@@ -535,9 +528,9 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
           }
           obj2 = callback;
         }
-        tmp10Result = tmp10(tmp11[44]);
+        tmp10Result = tmp10(tmp11[45]);
       }
-      obj3 = wrapperOffset(channelId[44]);
+      obj3 = wrapperOffset(channelId[45]);
     }
   }, items4);
   const items5 = [DOWN];
@@ -546,21 +539,21 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
     const keys = Object.keys(callback.getVideoDevices());
     const found = keys.find((arg0) => arg0 !== closure_0);
     if (null != found) {
-      gestureState(channelId[45]).setVideoDevice(found);
-      const obj = gestureState(channelId[45]);
+      gestureState(channelId[46]).setVideoDevice(found);
+      const obj = gestureState(channelId[46]);
     }
   }, []);
   const memo = obj.useMemo(() => {
     let str = "0deg";
-    if (DOWN === outer1_27.LEFT) {
+    if (DOWN === closure_1_27.LEFT) {
       str = "90deg";
     }
     const transform = [{ rotateZ: str }];
     return { transform };
   }, items5);
-  tmp5Result = tmp5(tmp3[46]);
+  tmp5Result = tmp5(tmp3[47]);
   const isSecureFramesUIEnabled = tmp5Result.useIsSecureFramesUIEnabled({ channelId });
-  const inviteMembersCallback = obj16.useInviteMembersCallback(channelId);
+  const inviteMembersCallback = obj17.useInviteMembersCallback(channelId);
   let tmp35 = null;
   if (tmp12 === ParticipantTypes.USER) {
     tmp35 = null;
@@ -568,8 +561,8 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
       tmp35 = tmp10;
     }
   }
-  const isUserSecureFramesVerified = wrapperOffset(channelId[47]).useIsUserSecureFramesVerified({ userId: tmp35, channelId });
-  const tmp5Result1 = wrapperOffset(channelId[47]);
+  const isUserSecureFramesVerified = wrapperOffset(channelId[48]).useIsUserSecureFramesVerified({ userId: tmp35, channelId });
+  const tmp5Result1 = wrapperOffset(channelId[48]);
   let tmp37 = null;
   if (tmp12 === ParticipantTypes.STREAM) {
     tmp37 = null;
@@ -577,7 +570,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
       tmp37 = tmp10;
     }
   }
-  let flag = wrapperOffset(channelId[47]).useIsStreamSecureFramesVerified({ streamKey: tmp37, channelId });
+  let flag = wrapperOffset(channelId[48]).useIsStreamSecureFramesVerified({ streamKey: tmp37, channelId });
   if (ParticipantTypes.STREAM !== tmp12) {
     flag = false;
     if (tmp34.USER === tmp12) {
@@ -585,54 +578,54 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
     }
   }
   let MIDNIGHT;
-  if (tmp7) {
+  if (tmp38Result4) {
     MIDNIGHT = ThemeTypes.MIDNIGHT;
   }
-  let obj4 = { theme: MIDNIGHT, children: null };
-  obj5 = { style: items6, pointerEvents: "box-none", layout, children: null };
+  obj4 = { theme: MIDNIGHT, children: null };
+  const obj5 = { style: items6, pointerEvents: "box-none", layout, children: null };
   items6 = [tmp.headerWrapper, animatedStyle];
   tmp2Result = tmp2(tmp3[22]);
   const items7 = [closure_23(closure_32, { isHeaderHidden: derivedValue1, scrollPosition, focused }), , ];
-  let tmp38Result = tmp7;
-  if (tmp7) {
+  let tmp38Result = tmp38Result4;
+  if (tmp38Result4) {
     obj6 = { baseColor: null, minHeight: 0 };
     obj6[0] = tmp2(tmp3[19]).colors.BLACK;
-    tmp38Result = tmp38(tmp2(tmp3[49]), obj6);
-    const tmp2Result1 = tmp2(tmp3[49]);
+    tmp38Result = tmp38(tmp2(tmp3[50]), obj6);
+    const tmp2Result1 = tmp2(tmp3[50]);
   }
   items7[1] = tmp38Result;
-  const obj7 = { style: tmp.headerContentWrapper, pointerEvents: "box-none", layout, children: null };
+  obj7 = { style: tmp.headerContentWrapper, pointerEvents: "box-none", layout, children: null };
   tmp38Result = null;
-  const tmp5Result2 = wrapperOffset(channelId[47]);
+  const tmp5Result2 = wrapperOffset(channelId[48]);
   if (tmp12 === ParticipantTypes.USER) {
-    obj8 = { isHeaderHidden: null };
+    const obj8 = { isHeaderHidden: null };
     obj8[0] = derivedValue1;
-    tmp38Result = tmp38(tmp2(tmp3[50]), obj8);
+    tmp38Result = tmp38(tmp2(tmp3[51]), obj8);
   }
   const items8 = [tmp38Result, ];
-  const obj9 = { style: items9, animatedProps, children: null };
+  obj9 = { style: items9, animatedProps, children: null };
   items9 = [tmp.headerOuter, animatedStyle1];
   const tmp2Result2 = gestureState(channelId[22]);
-  obj10 = { style: tmp.leftWrapper, pointerEvents: "box-none", children: null };
+  const obj10 = { style: tmp.leftWrapper, pointerEvents: "box-none", children: null };
   const tmp2Result3 = gestureState(channelId[22]);
-  const obj11 = { icon: null, accessibilityLabel: null, onPress: null, style: null };
+  obj11 = { icon: null, accessibilityLabel: null, onPress: null, style: null };
   const tmp2Result4 = gestureState(channelId[24]);
-  obj11[0] = gestureState(channelId[51]);
+  obj11[0] = gestureState(channelId[52]);
   obj11[1] = stringResult;
   obj11[2] = tmp23;
   obj11[3] = memo;
   const items10 = [closure_23(gestureState(channelId[29]), obj11), ];
-  obj12 = { style: tmp.headerInner, children: null };
+  const obj12 = { style: tmp.headerInner, children: null };
   const tmp2Result5 = gestureState(channelId[29]);
-  const items11 = [closure_23(gestureState(channelId[52]), {}), ];
+  const items11 = [closure_23(gestureState(channelId[53]), {}), ];
   let tmp38Result1 = null;
   if (isSecureFramesUIEnabled) {
     tmp38Result1 = null;
     if (flag) {
-      const obj13 = { size: "xs", color: null, style: null };
+      obj13 = { size: "xs", color: null, style: null };
       obj13[1] = tmp2(tmp3[19]).colors.TEXT_SUBTLE;
       obj13[2] = tmp.shieldIconMargin;
-      tmp38Result1 = tmp38(tmp5(tmp3[53]).ShieldLockIcon, obj13);
+      tmp38Result1 = tmp38(tmp5(tmp3[54]).ShieldLockIcon, obj13);
     }
   }
   items11[1] = tmp38Result1;
@@ -640,20 +633,20 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
   items10[1] = closure_24(gestureState(channelId[22]), obj12);
   obj10[2] = items10;
   const items12 = [closure_24(tmp2Result4, obj10), ];
-  obj14 = { style: tmp.rightWrapper, layout, children: null };
+  const obj14 = { style: tmp.rightWrapper, layout, children: null };
   const tmp2Result6 = gestureState(channelId[22]);
-  const items13 = [closure_23(closure_35, {}), , , , ];
-  let tmp38Result2 = channelType === tmp5(tmp3[54]).ChannelTypes.GUILD_STAGE_VOICE;
+  const items13 = [closure_23(closure_35, {}), , , , , ];
+  let tmp38Result2 = channelType === tmp5(tmp3[55]).ChannelTypes.GUILD_STAGE_VOICE;
   if (tmp38Result2) {
     obj15 = { channelId: null };
     obj15[0] = channelId;
     tmp38Result2 = tmp38(MusicMuteButton, obj15);
   }
   items13[1] = tmp38Result2;
-  items13[2] = closure_23(gestureState(channelId[55]), { isConnectedToVoiceChannel: tmp7, channelId });
+  items13[2] = closure_23(gestureState(channelId[56]), { isConnectedToVoiceChannel: tmp38Result4, channelId });
   if (canInviteMembers) {
     obj16 = { icon: null, accessibilityLabel: null, onPress: null };
-    obj16[0] = tmp2(tmp3[56]);
+    obj16[0] = tmp2(tmp3[57]);
     let intl3 = tmp5(tmp3[30]).intl;
     obj17 = { channelName: null };
     obj17[0] = stateFromStores;
@@ -665,14 +658,23 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
   items13[3] = canInviteMembers;
   let tmp38Result3 = null;
   if (null != stateFromStores1) {
-    const obj18 = { icon: null, onPress: null, accessibilityLabel: null };
-    obj18[0] = tmp2(tmp3[57]);
+    obj18 = { icon: null, onPress: null, accessibilityLabel: null };
+    obj18[0] = tmp2(tmp3[58]);
     obj18[1] = callback1;
     obj18[2] = stateFromStores1;
     tmp38Result3 = tmp38(tmp2(tmp3[29]), obj18);
     const tmp2Result9 = tmp2(tmp3[29]);
   }
   items13[4] = tmp38Result3;
+  if (tmp38Result4) {
+    tmp38Result4 = obj2.useConfig({ location: "VoicePanelHeader" }).treatment === tmp5(tmp3[36]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT;
+  }
+  if (tmp38Result4) {
+    const obj19 = { channelId: null };
+    obj19[0] = channelId;
+    tmp38Result4 = tmp38(tmp2(tmp3[59]), obj19);
+  }
+  items13[5] = tmp38Result4;
   obj14[2] = items13;
   items12[1] = closure_24(gestureState(channelId[22]), obj14);
   obj9[2] = items12;
@@ -681,8 +683,8 @@ const memoResult = importAllResult.memo(function VoicePanelHeader(wrapperOffset)
   items7[2] = closure_24(tmp2Result2, obj7);
   obj5[3] = items7;
   obj4[1] = closure_24(tmp2Result, obj5);
-  return closure_23(wrapperOffset(channelId[48]).ThemeContextProvider, obj4);
+  return closure_23(wrapperOffset(channelId[49]).ThemeContextProvider, obj4);
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeader.tsx");
+let result = require("set").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeader.tsx");
 
 export default memoResult;

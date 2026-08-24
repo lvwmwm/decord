@@ -1,18 +1,18 @@
-// Module ID: 10970
-// Function ID: 10971
+// Module ID: 11009
+// Function ID: 11010
 // Name: BundleUpdaterManager
-// Dependencies: [5, 17, 676, 3, 500, 81, 2007, 4486, 698, 5006, 2]
+// Dependencies: [5, 17, 676, 3, 500, 81, 2008, 4490, 698, 5011, 2]
 
-// Module 10970 (BundleUpdaterManager)
-import resolveAssetSource from "resolveAssetSource";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { AnalyticEvents } from "ME";
+// Module 11009 (BundleUpdaterManager)
+import timestampDefault from "timestamp" /* 3 */;
+import t from "t" /* 4490 */;
+import closure_3 from "asyncGeneratorStep" /* 5 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import { AnalyticEvents } from "ME" /* 676 */;
 
-let NativeEventEmitter;
-let NativeModules;
-const require = arg1;
+require = arg1;
 ({ NativeModules, NativeEventEmitter } = get_ActivityIndicator);
-let c5 = new require("timestamp")("BundleUpdater");
+let closure_5 = new timestampDefault("BundleUpdater");
 const BundleUpdaterManager = NativeModules.BundleUpdaterManager;
 const nativeEventEmitter = new NativeEventEmitter(BundleUpdaterManager);
 let closure_8 = { downloaded: "BundleDownloaded", otaUpdateChecked: "OtaUpdateChecked" };
@@ -63,7 +63,7 @@ prototype["setupOTAAssetFallback"] = function setupOTAAssetFallback() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -78,9 +78,9 @@ prototype["setupOTAAssetFallback"] = function setupOTAAssetFallback() {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp2;
-            let closure_0;
-            let obj1 = outer1_0(table[4]);
+            closure_1 = tmp2;
+            closure_0 = undefined;
+            obj1 = closure_1_0(table[4]);
             if (obj1.isIOS()) {
               table = 1;
               c3 = 1;
@@ -90,7 +90,7 @@ prototype["setupOTAAssetFallback"] = function setupOTAAssetFallback() {
             } else {
               c3 = 3;
             }
-            tmp14 = outer1_0;
+            tmp14 = closure_1_0;
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -127,38 +127,38 @@ prototype["setupOTAAssetFallback"] = function setupOTAAssetFallback() {
   })();
 };
 prototype["emitOtaMetric"] = function emitOtaMetric(item10010) {
-  const match = require(4486) /* t */.match(item10010);
-  const str = require(4486) /* t */;
+  const match = t.match(item10010);
+  const str = t;
   const withResult = match.with({ type: "OtaCheckAttempt" }, (result) => {
     closure_5.verbose("OTA check attempt", result);
     let obj = callback(698);
     obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
     obj.track(constants.MOBILE_OTA_CHECK_ATTEMPT, obj);
-    return callback(5006).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
+    return callback(5011).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
   });
   match.with({ type: "OtaCheckAttempt" }, (result) => {
     closure_5.verbose("OTA check attempt", result);
     let obj = callback(698);
     obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
     obj.track(constants.MOBILE_OTA_CHECK_ATTEMPT, obj);
-    return callback(5006).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
+    return callback(5011).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
   }).with({ type: "OtaAssetDownloadAttempt" }, (result) => {
     closure_5.verbose("OTA asset download attempt", result);
     let obj = callback(698);
     obj = { result: result.result, duration_seconds: result.durationSeconds, error: result.error, url: result.url, status_code: result.statusCode, bytes_received: result.bytesReceived };
     obj.track(constants.MOBILE_OTA_ASSET_DOWNLOAD_ATTEMPT, obj);
-    return callback(5006).increment(closure_9.prepareOtaMetricForDatadog(result, ["result", "statusCode"]));
+    return callback(5011).increment(closure_9.prepareOtaMetricForDatadog(result, ["result", "statusCode"]));
   }).exhaustive();
 };
 prototype["prepareOtaMetricForDatadog"] = function prepareOtaMetricForDatadog(name, arg1) {
-  let closure_0 = name;
+  closure_0 = name;
   let items = arg1;
   if (arg1 === undefined) {
     items = [];
   }
   return { name: name.type, tags: items.map((arg0) => "" + arg0 + ":" + name[arg0]) };
 };
-const tmp3 = new require("timestamp")("BundleUpdater");
-let result = require("ME").fileFinishedImporting("lib/native/BundleUpdater.tsx");
+const tmp3 = new timestampDefault("BundleUpdater");
+let result = require("set").fileFinishedImporting("lib/native/BundleUpdater.tsx");
 
 export default prototype;

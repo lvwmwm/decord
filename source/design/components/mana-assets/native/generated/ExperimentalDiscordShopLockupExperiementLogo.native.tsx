@@ -1,23 +1,26 @@
-// Module ID: 5682
-// Function ID: 5683
+// Module ID: 5713
+// Function ID: 5714
 // Name: ExperimentalDiscordShopLockupExperiementLogo
-// Dependencies: [17, 21, 712, 4097, 5683, 2]
+// Dependencies: [17, 21, 712, 4100, 5714, 2]
 // Exports: ExperimentalDiscordShopLockupExperiementLogo
 
-// Module 5682 (ExperimentalDiscordShopLockupExperiementLogo)
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 5713 (ExperimentalDiscordShopLockupExperiementLogo)
+import set from "set" /* 2 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import ThemesDefault from "Themes" /* 712 */;
+import map from "map" /* 4100 */;
+import metadataDefault from "metadata" /* 5714 */;
 
-const result = require("Themes").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalDiscordShopLockupExperiementLogo.native.tsx");
+const Image = get_ActivityIndicator.Image;
+const jsx = jsxProd.jsx;
+const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalDiscordShopLockupExperiementLogo.native.tsx");
 
 export const ExperimentalDiscordShopLockupExperiementLogo = function ExperimentalDiscordShopLockupExperiementLogo(color) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
   let ICON_STRONG = color.color;
   ({ accessible, accessibilityLabel, resizeMode } = color);
   if (ICON_STRONG === undefined) {
-    ICON_STRONG = importDefault(712).colors.ICON_STRONG;
+    ICON_STRONG = ThemesDefault.colors.ICON_STRONG;
   }
   let num = color.width;
   if (num === undefined) {
@@ -31,7 +34,7 @@ export const ExperimentalDiscordShopLockupExperiementLogo = function Experimenta
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = require(4097) /* map */;
+  let obj = map;
   const token = obj.useToken(ICON_STRONG);
   if (null != token) {
     obj = { tintColor: null };
@@ -45,12 +48,7 @@ export const ExperimentalDiscordShopLockupExperiementLogo = function Experimenta
     }
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "string";
   }
-  const obj1 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj1[1] = { uri: importDefault(5683) };
-  const items = [{ width: num * num3, height: num2 * num3 }, tmp6];
-  obj1[2] = items;
-  obj1[3] = accessible;
-  obj1[4] = accessibilityLabel;
-  obj1[5] = resizeMode;
-  return <Image fadeDuration={0} source={null} style={null} accessible={null} accessibilityLabel={null} resizeMode={null} />;
+  obj1 = { fadeDuration: 0, source: { uri: metadataDefault }, style: items, accessible, accessibilityLabel, resizeMode };
+  items = [{ width: num * num3, height: num2 * num3 }, tmp6];
+  return <Image fadeDuration={0} source={{ uri: metadataDefault }} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 };

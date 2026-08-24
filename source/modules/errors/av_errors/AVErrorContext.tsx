@@ -1,17 +1,19 @@
-// Module ID: 17055
-// Function ID: 17056
+// Module ID: 17148
+// Function ID: 17149
 // Name: getVoiceChannelErrorContext
-// Dependencies: [4497, 4539, 1979, 4558, 4569, 4531, 2]
+// Dependencies: [4501, 4544, 1980, 4563, 4574, 4536, 2]
 // Exports: getCommonErrorContext, getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 17055 (getVoiceChannelErrorContext)
-import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import createRTCConnection from "createRTCConnection";
-import handleConnectionOpen from "handleConnectionOpen";
-import initialize from "initialize";
+// Module 17148 (getVoiceChannelErrorContext)
+import isStreamKey from "isStreamKey" /* 4536 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4574 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4501 */;
+import closure_3 from "createRTCConnection" /* 4544 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "initialize" /* 4563 */;
 
-const require = arg1;
-const result = require("handleConnectionOpen").fileFinishedImporting("modules/errors/av_errors/AVErrorContext.tsx");
+require = arg1;
+const result = require("set").fileFinishedImporting("modules/errors/av_errors/AVErrorContext.tsx");
 
 export const getVoiceChannelErrorContext = function getVoiceChannelErrorContext() {
   voiceChannelId = voiceChannelId.getVoiceChannelId();
@@ -19,7 +21,7 @@ export const getVoiceChannelErrorContext = function getVoiceChannelErrorContext(
   mediaSessionId = mediaSessionId.getMediaSessionId();
   obj[1] = mediaSessionId;
   obj[2] = mediaSessionId.getRTCConnectionId();
-  obj[3] = require(4569) /* BaseConnectionEvent */.MediaEngineContextTypes.DEFAULT;
+  obj[3] = BaseConnectionEvent.MediaEngineContextTypes.DEFAULT;
   const videoDevices = store.getVideoDevices();
   const tmp4 = videoDevices[store.getVideoDeviceId(store)];
   let name;
@@ -45,9 +47,7 @@ export const getVoiceChannelErrorContext = function getVoiceChannelErrorContext(
   return obj;
 };
 export const getStreamErrorContext = function getStreamErrorContext(streamKey) {
-  let channelId;
-  let ownerId;
-  let obj = require(4531) /* isStreamKey */;
+  let obj = isStreamKey;
   ({ channelId, ownerId } = obj.decodeStreamKey(streamKey));
   rTCConnection = rTCConnection.getRTCConnection(streamKey);
   obj = { channelId, mediaSessionId: null, rtcConnectionId: null, mediaContext: null, streamKey: null, userId: null };
@@ -61,7 +61,7 @@ export const getStreamErrorContext = function getStreamErrorContext(streamKey) {
     rTCConnectionId = rTCConnection.getRTCConnectionId();
   }
   obj[2] = rTCConnectionId;
-  obj[3] = require(4569) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM;
+  obj[3] = BaseConnectionEvent.MediaEngineContextTypes.STREAM;
   obj[4] = streamKey;
   obj[5] = ownerId;
   const videoDevices = store.getVideoDevices();

@@ -1,24 +1,26 @@
-// Module ID: 9393
-// Function ID: 9394
+// Module ID: 9430
+// Function ID: 9431
 // Name: PremiumEmojiFeatureUpsell
-// Dependencies: [19, 17, 21, 4661, 712, 1629, 7349, 691, 4115, 9394, 8482, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 1629, 7387, 691, 4119, 9431, 8521, 2]
 // Exports: default
 
-// Module 9393 (PremiumEmojiFeatureUpsell)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9430 (PremiumEmojiFeatureUpsell)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
+noopAll;
 let closure_5 = createCacheKey.createStyles((arg0) => {
   let obj = { container: null };
-  obj = { position: "absolute", bottom: arg0 + importDefault(712).space.PX_12, left: 0, right: 0 };
+  obj = { position: "absolute", bottom: arg0 + ThemesDefault.space.PX_12, left: 0, right: 0 };
   obj[0] = obj;
   return obj;
 });
 let closure_6 = { code: "function PremiumEmojiFeatureUpsellTsx1(){const{shouldShow,inPortalKeyboard,bottomSheetIndex}=this.__closure;if(!shouldShow.get()){return false;}return inPortalKeyboard?bottomSheetIndex.get()===1:bottomSheetIndex.get()===0;}" };
-const result = require("jsxProd").fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumEmojiFeatureUpsell.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumEmojiFeatureUpsell.tsx");
 
 export default function PremiumEmojiFeatureUpsell(bottomSheetIndex) {
   bottomSheetIndex = bottomSheetIndex.bottomSheetIndex;

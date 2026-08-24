@@ -1,44 +1,43 @@
-// Module ID: 11702
-// Function ID: 11703
+// Module ID: 11751
+// Function ID: 11752
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [1910, 4262, 676, 11668, 589, 4265, 11665, 2]
+// Dependencies: [1910, 4266, 676, 11717, 589, 4269, 11714, 2]
 // Exports: default
 
-// Module 11702 (useGuildPowerupCardFooterConfig)
-import createGuildRecordFromRust from "createGuildRecordFromRust";
-import BoostedGuildTiers from "BoostedGuildTiers";
-import { GuildFeatures } from "ME";
+// Module 11751 (useGuildPowerupCardFooterConfig)
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 11714 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 11717 */;
+import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4266 */;
+import { GuildFeatures } from "ME" /* 676 */;
 
-let GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP;
-let c4;
-let c5;
 const require = arg1;
 ({ GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP, GUILD_POWERUP_CONFIGURABLE_SKUS_MOBILE: c4, PowerupActiveStatusType: c5 } = BoostedGuildTiers);
-const result = require("ME").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupCardFooterConfig.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupCardFooterConfig.tsx");
 
 export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   const _require = arg0;
-  const tmp3 = importDefault(11668)(arg0, skuId);
+  const tmp3 = usePowerupActiveStatusDefault(arg0, skuId);
   let obj = _require(589);
-  const items = [createGuildRecordFromRust];
+  const items = [closure_3];
   const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const guild = outer1_3.getGuild(closure_0);
+    const guild = closure_1_3.getGuild(closure_0);
     let hasItem;
     if (guild != null) {
       const features = guild.features;
-      hasItem = features.has(outer1_6.GUILD_THEME);
+      hasItem = features.has(closure_1_6.GUILD_THEME);
     }
     return true === hasItem;
   }, items1);
   let tmp6 = tmp3.type !== constants.INACTIVE;
   if (!tmp6) {
-    tmp6 = skuId.skuId === _require(4265).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
-    const tmp7 = skuId.skuId === _require(4265).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
+    tmp6 = skuId.skuId === _require(4269).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
+    const tmp7 = skuId.skuId === _require(4269).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
   }
   let tmp8 = tmp6;
   if (!tmp6) {
-    tmp8 = !importDefault(11665)(arg0, skuId, "GuildPowerupCardFooterAdmin");
+    tmp8 = !useGuildPowerupRollbackEnabledDefault(arg0, skuId, "GuildPowerupCardFooterAdmin");
   }
   if (tmp8) {
     tmp8 = tmp3.type !== constants.TIER_OVERRIDE_ACTIVATED;

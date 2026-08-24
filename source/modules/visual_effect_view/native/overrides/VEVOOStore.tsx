@@ -1,15 +1,17 @@
-// Module ID: 4726
-// Function ID: 4727
+// Module ID: 4731
+// Function ID: 4732
 // Name: useVisualEffectViewOverrides
 // Dependencies: [644, 705, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 4726 (useVisualEffectViewOverrides)
-import keys from "keys";
+// Module 4731 (useVisualEffectViewOverrides)
+import set from "set" /* 2 */;
+import batchUpdates from "batchUpdates" /* 705 */;
+import keys from "keys" /* 644 */;
 
 let closure_2 = {};
 let closure_3 = keys.create(() => closure_2);
-const result = require("set").fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOStore.tsx");
+const result = set.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOStore.tsx");
 
 export const useVisualEffectViewOverrides = function useVisualEffectViewOverrides() {
   return state();
@@ -19,8 +21,8 @@ export const getVisualEffectViewOverrides = function getVisualEffectViewOverride
 };
 export const setVisualEffectViewOverides = function setVisualEffectViewOverides(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => outer1_3.setState(closure_0));
+  _require(705).batchUpdates(() => closure_1_3.setState(closure_0));
 };
 export const clearVisualEffectViewOverrides = function clearVisualEffectViewOverrides() {
-  require(705) /* batchUpdates */.batchUpdates(() => state.setState(closure_2));
+  batchUpdates.batchUpdates(() => state.setState(closure_2));
 };

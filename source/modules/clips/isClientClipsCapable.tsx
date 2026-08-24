@@ -1,25 +1,29 @@
-// Module ID: 4528
-// Function ID: 4529
+// Module ID: 4533
+// Function ID: 4534
 // Name: isClientClipsCapable
-// Dependencies: [4529, 4527, 500, 2]
+// Dependencies: [4534, 4532, 500, 2]
 // Exports: default
 
-// Module 4528 (isClientClipsCapable)
-import { Features } from "DesktopSources";
+// Module 4533 (isClientClipsCapable)
+import set from "set" /* 2 */;
+import setAll from "set" /* 500 */;
+import apexExperiment from "apexExperiment" /* 4532 */;
+import DesktopSources from "DesktopSources" /* 4534 */;
 
-const result = require("set").fileFinishedImporting("modules/clips/isClientClipsCapable.tsx");
+const Features = DesktopSources.Features;
+const result = set.fileFinishedImporting("modules/clips/isClientClipsCapable.tsx");
 
 export default function isClientClipsCapable(getMediaEngine) {
-  const ClipsExperiment = require(4527) /* apexExperiment */.ClipsExperiment;
+  const ClipsExperiment = apexExperiment.ClipsExperiment;
   let ignorePlatformRestriction = ClipsExperiment.getConfig({ location: "isClipsClientCapable" }).ignorePlatformRestriction;
   if (!ignorePlatformRestriction) {
-    let isDesktopResult = importAll(500).isDesktop();
+    let isDesktopResult = setAll.isDesktop();
     if (isDesktopResult) {
       const mediaEngine = getMediaEngine.getMediaEngine();
       isDesktopResult = mediaEngine.supports(Features.CLIPS);
     }
     ignorePlatformRestriction = isDesktopResult;
-    const obj = importAll(500);
+    const obj = setAll;
   }
   return ignorePlatformRestriction;
 };

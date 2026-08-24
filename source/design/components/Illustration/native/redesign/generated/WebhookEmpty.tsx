@@ -1,62 +1,65 @@
-// Module ID: 16062
-// Function ID: 16063
+// Module ID: 16160
+// Function ID: 16161
 // Name: getWebhookEmptySource
-// Dependencies: [19, 17, 21, 7907, 16063, 16064, 16065, 1363, 2]
+// Dependencies: [19, 17, 21, 7946, 16161, 16162, 16163, 1363, 2]
 // Exports: WebhookEmpty, getWebhookEmptySource, useWebhookEmptySource
 
-// Module 16062 (getWebhookEmptySource)
-import "noop";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
+// Module 16160 (getWebhookEmptySource)
+import noopAll from "noop" /* 19 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import { Image } from "get ActivityIndicator" /* 17 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const require = arg1;
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WebhookEmpty.tsx");
+require = arg1;
+noopAll;
+const result = require("set").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WebhookEmpty.tsx");
 
 export const getWebhookEmptySource = function getWebhookEmptySource(theme) {
-  let obj = require(7907) /* getIllustrationSource */;
+  let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(16063);
+      return callback(16161);
     },
     darker() {
-      return callback(16064);
+      return callback(16162);
     },
     light() {
-      return callback(16065);
+      return callback(16163);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useWebhookEmptySource = function useWebhookEmptySource() {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16063);
+      return callback(16161);
     },
     darker() {
-      return callback(16064);
+      return callback(16162);
     },
     light() {
-      return callback(16065);
+      return callback(16163);
     }
   };
-  return require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const WebhookEmpty = function WebhookEmpty(arg0) {
-  let obj = require(1363) /* AccessibilityAnnouncer */;
+  let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16063);
+      return callback(16161);
     },
     darker() {
-      return callback(16064);
+      return callback(16162);
     },
     light() {
-      return callback(16065);
+      return callback(16163);
     }
   };
   obj = {};
-  const illustrationSource = require(7907) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

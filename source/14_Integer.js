@@ -1086,16 +1086,16 @@ class BigInteger {
         tmp8 = toJSNumberResult;
         if (toJSNumberResult >= length) {
           do {
-            tmp9 = f66187;
-            multiplyResult = multiplyResult.multiply(f66187);
+            tmp9 = closure_19;
+            multiplyResult = multiplyResult.multiply(closure_19);
             tmp10 = length;
             diff = diff - (length - 1);
             obj3 = multiplyResult;
             tmp8 = diff;
           } while (diff >= length);
         }
-        tmp11 = f66187;
-        return obj3.multiply(f66187[tmp8]);
+        tmp11 = closure_17;
+        return obj3.multiply(closure_17[tmp8]);
       }
     } else {
       _Error = Error;
@@ -1129,8 +1129,8 @@ class BigInteger {
           while (!obj4.isZero()) {
             if (!obj4.isNegative()) {
               tmp8 = divModAny;
-              tmp9 = f66187;
-              tmp10 = divModAny(obj4, f66187);
+              tmp9 = closure_19;
+              tmp10 = divModAny(obj4, closure_19);
               [obj3, obj2] = tmp10;
               if (obj2.isNegative()) {
                 prevResult = obj3.prev();
@@ -1149,8 +1149,8 @@ class BigInteger {
           }
         }
         tmp16 = divModAny;
-        tmp17 = f66187;
-        tmp18 = divModAny(tmp14, f66187[tmp15]);
+        tmp17 = closure_17;
+        tmp18 = divModAny(tmp14, closure_17[tmp15]);
         [obj6, obj5] = tmp18;
         if (obj5.isNegative()) {
           prevResult1 = obj6.prev();
@@ -1271,7 +1271,7 @@ class BigInteger {
       mapped = value.map((arg0) => {
         let arr = closure_0;
         if (!closure_0) {
-          arr = outer1_1;
+          arr = closure_1_1;
         }
         if (arg0 < arr.length) {
           let text = arr[arg0];
@@ -1729,7 +1729,7 @@ class SmallInteger {
       mapped = value.map((arg0) => {
         let arr = closure_0;
         if (!closure_0) {
-          arr = outer1_1;
+          arr = closure_1_1;
         }
         if (arg0 < arr.length) {
           let text = arr[arg0];
@@ -2155,7 +2155,7 @@ function subtractSmall(value, arg1, sign) {
     }
     let obj = Object.create(SmallInteger.prototype);
     obj = { value: tmp9, sign: tmp9 < 0, isSmall: true };
-    let obj1 = obj;
+    obj1 = obj;
   } else {
     obj = Object.create(BigInteger.prototype);
     obj1 = { value: tmp8, sign, isSmall: false };
@@ -2226,7 +2226,7 @@ function multiplyKaratsuba(substr, substr2) {
       } while (tmp3 > 0);
     }
     const result = 2 * rounded;
-    const items1 = [];
+    items1 = [];
     let diff1 = result - 1;
     let tmp24Result = tmp24(tmp22, items.concat(subtract(subtract(multiplyKaratsuba(addAny(substr1, substr), addAny(substr3, substr2)), tmp22), tmp23)));
     if (0 < result) {
@@ -2288,7 +2288,7 @@ function multiplySmallAndArray(arg0, value, sign) {
       const items = [arg0];
       let items2 = items;
     } else if (arg0 < 100000000000000) {
-      const items1 = [arg0 % 10000000, ];
+      items1 = [arg0 % 10000000, ];
       const _Math3 = Math;
       items1[1] = Math.floor(arg0 / 10000000);
       items2 = items1;
@@ -2353,8 +2353,6 @@ function square(squareResult) {
 }
 function divModAny(value, closure_19) {
   let diff4;
-  let length4;
-  let length5;
   const iter = parseValue(closure_19);
   if (closure_2) {
     let result = NativeBigInt;
@@ -2394,7 +2392,7 @@ function divModAny(value, closure_19) {
           }
           result = Object.create(result.prototype);
           let obj = { value: result, sign: result < 0, isSmall: true };
-          const items1 = [obj, ];
+          items1 = [obj, ];
           result = result % value;
           result = Object.create(result.prototype);
           value = { value: result, sign: result < 0, isSmall: true };
@@ -2663,7 +2661,7 @@ function divModAny(value, closure_19) {
                     let _Math4 = Math;
                     let rounded5 = Math.ceil(result2 / result);
                     while (true) {
-                      let length = value.length;
+                      length = value.length;
                       let _Array = Array;
                       let tmp17 = new.target;
                       let tmp18 = new.target;
@@ -2749,7 +2747,7 @@ function divModAny(value, closure_19) {
                 tmp85 = -first;
               }
               obj = Object.create(SmallInteger.prototype);
-              const obj1 = { value: tmp85, sign: tmp85 < 0, isSmall: true };
+              obj1 = { value: tmp85, sign: tmp85 < 0, isSmall: true };
               let obj2 = obj1;
             } else {
               result = BigInteger;
@@ -3005,8 +3003,6 @@ function bitwise(isNegative, arg1, arg2) {
   return tmp19;
 }
 function integerLogarithm(self2, squareResult) {
-  let e;
-  let p;
   if (squareResult.compareTo(self2) <= 0) {
     ({ p, e } = integerLogarithm(self2, squareResult.square(squareResult)));
     const multiplyResult = p.multiply(squareResult);
@@ -3172,8 +3168,6 @@ function gcd(absResult, absResult1) {
   const obj3 = parseValue(absResult1);
 }
 function toBase(self, arg1) {
-  let quotient;
-  let remainder;
   let obj = Integer(arg1);
   if (obj.isZero()) {
     if (self.isZero()) {
@@ -3182,7 +3176,7 @@ function toBase(self, arg1) {
       return obj;
     } else {
       const _Error = Error;
-      const error = new Error("Cannot convert nonzero numbers to base 0.");
+      error = new Error("Cannot convert nonzero numbers to base 0.");
       throw error;
     }
   } else if (obj.equals(-1)) {
@@ -3191,7 +3185,7 @@ function toBase(self, arg1) {
       obj[0] = [0];
       return obj;
     } else if (self.isNegative()) {
-      const obj1 = { value: null, isNegative: false };
+      obj1 = { value: null, isNegative: false };
       const concat2 = [].concat;
       const _Array6 = Array;
       const _Array7 = Array;
@@ -3291,7 +3285,7 @@ function parseStringValue(arr) {
         const _BigInt = BigInt;
         let obj = Object.create(NativeBigInt.prototype);
         obj.value = BigInt(tmp51);
-        let obj1 = obj;
+        obj1 = obj;
         const BigIntResult = BigInt(tmp51);
       } else {
         obj = Object.create(SmallInteger.prototype);
@@ -3300,7 +3294,7 @@ function parseStringValue(arr) {
       return obj1;
     } else {
       const _Error5 = Error;
-      const error = new Error("Invalid integer: " + arr);
+      error = new Error("Invalid integer: " + arr);
       throw error;
     }
   } else {
@@ -3368,7 +3362,7 @@ function parseStringValue(arr) {
           return obj2;
         } else {
           const items = [];
-          let length = str2.length;
+          length = str2.length;
           let diff1 = length - 7;
           if (length > 0) {
             do {
@@ -3432,7 +3426,7 @@ function parseValue(result) {
     }
     if (result !== rounded) {
       const _Error = Error;
-      const error = new Error(result + " is not an integer.");
+      error = new Error(result + " is not an integer.");
       throw error;
     } else {
       obj = Object.create(SmallInteger.prototype);
@@ -3445,7 +3439,7 @@ function parseValue(result) {
     } else {
       tmp2 = result;
       if (typeof result === "bigint") {
-        const obj1 = Object.create(NativeBigInt.prototype);
+        obj1 = Object.create(NativeBigInt.prototype);
         obj1.value = result;
         tmp2 = obj1;
       }
@@ -4970,16 +4964,16 @@ while (true) {
           tmp8 = toJSNumberResult;
           if (toJSNumberResult >= length) {
             do {
-              tmp9 = f66187;
-              multiplyResult = multiplyResult.multiply(f66187);
+              tmp9 = closure_19;
+              multiplyResult = multiplyResult.multiply(closure_19);
               tmp10 = length;
               diff = diff - (length - 1);
               obj3 = multiplyResult;
               tmp8 = diff;
             } while (diff >= length);
           }
-          tmp11 = f66187;
-          return obj3.multiply(f66187[tmp8]);
+          tmp11 = closure_17;
+          return obj3.multiply(closure_17[tmp8]);
         }
       } else {
         _Error = Error;
@@ -5013,8 +5007,8 @@ while (true) {
             while (!obj4.isZero()) {
               if (!obj4.isNegative()) {
                 tmp8 = divModAny;
-                tmp9 = f66187;
-                tmp10 = divModAny(obj4, f66187);
+                tmp9 = closure_19;
+                tmp10 = divModAny(obj4, closure_19);
                 [obj3, obj2] = tmp10;
                 if (obj2.isNegative()) {
                   prevResult = obj3.prev();
@@ -5033,8 +5027,8 @@ while (true) {
             }
           }
           tmp16 = divModAny;
-          tmp17 = f66187;
-          tmp18 = divModAny(tmp14, f66187[tmp15]);
+          tmp17 = closure_17;
+          tmp18 = divModAny(tmp14, closure_17[tmp15]);
           [obj6, obj5] = tmp18;
           if (obj5.isNegative()) {
             prevResult1 = obj6.prev();
@@ -5155,7 +5149,7 @@ while (true) {
         mapped = value.map((arg0) => {
           let arr = closure_0;
           if (!closure_0) {
-            arr = outer1_1;
+            arr = closure_1_1;
           }
           if (arg0 < arr.length) {
             let text = arr[arg0];
@@ -5576,8 +5570,6 @@ Integer.randBetween = function randBetween(arg0, absResult1, arg2) {
   const subtractResult = tmpResult2.subtract(tmpResult);
 };
 Integer.fromArray = (arr) => {
-  let obj;
-  let tmp2;
   const mapped = arr.map(parseValue);
   [tmp2, obj] = Integer;
   let diff = mapped.length - 1;

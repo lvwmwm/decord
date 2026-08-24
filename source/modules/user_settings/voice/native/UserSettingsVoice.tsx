@@ -1,48 +1,57 @@
-// Module ID: 12547
-// Function ID: 12548
+// Module ID: 12601
+// Function ID: 12602
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 12548, 12549, 21, 4661, 6286, 12136, 4733, 12550, 12552, 4734, 1236, 12553, 12554, 12556, 6803, 2]
+// Dependencies: [19, 17, 12602, 12603, 21, 4668, 6317, 12188, 4738, 12604, 12606, 4739, 1236, 12607, 12608, 12610, 6840, 2]
 // Exports: UserSettingsTableRowGroup, default
 
-// Module 12547 (UserSettingsVoice)
-import "noop";
-import { View } from "set";
-import { isMobileOverlaySupported } from "getUserAgnosticState";
-import { USER_SETTINGS_VOICE_GUILD_URL as closure_5 } from "combined";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 12601 (UserSettingsVoice)
+import noopAll from "noop" /* 19 */;
+import getSystemLocale from "getSystemLocale" /* 1236 */;
+import Stack from "Stack" /* 4738 */;
+import Text from "Text" /* 4739 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import apexExperimentDefault from "apexExperiment" /* 12188 */;
+import handleInputModePressDefault from "handleInputModePress" /* 12604 */;
+import SoundboardVolumeDefault from "SoundboardVolume" /* 12607 */;
+import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 12608 */;
+import VoiceProcessingOptionsDefault from "VoiceProcessingOptions" /* 12610 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { isMobileOverlaySupported } from "getUserAgnosticState" /* 12602 */;
+import { USER_SETTINGS_VOICE_GUILD_URL as closure_5 } from "combined" /* 12603 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let closure_6;
-let error;
-const require = arg1;
+require = arg1;
+noopAll;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles({ container: { paddingHorizontal: 16 }, tableRow: { marginTop: 12 } });
-const result = require("getUserAgnosticState").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoice.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoice.tsx");
 
 export default function UserSettingsVoice() {
   const tmp = callback2();
-  let obj = importDefault(12136);
+  let obj = apexExperimentDefault;
   let nonContextualStreamOutputPresent = obj.useConfig({ location: "NewUserSettingsVoice" }).nonContextualStreamOutputPresent;
   obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(12550), {}), , , , , , ];
+  const items = [callback(handleInputModePressDefault, {}), , , , , , ];
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp4(tmp2(12552), {});
+    nonContextualStreamOutputPresent = tmp4(tmp2(12606), {});
   }
   items[1] = nonContextualStreamOutputPresent;
   obj = { style: tmp.tableRow, variant: "text-sm/medium", children: null };
   const intl = tmp7(1236).intl;
-  obj[2] = intl.format(require(1236) /* getSystemLocale */.t["V+B3FH"], { guideURL: closure_5 });
-  items[2] = callback(require(4734) /* Text */.Text, obj);
-  items[3] = callback(importDefault(12553), {});
+  obj[2] = intl.format(getSystemLocale.t["V+B3FH"], { guideURL: closure_5 });
+  items[2] = callback(Text.Text, obj);
+  items[3] = callback(SoundboardVolumeDefault, {});
   const obj2 = { spacing: 24, children: null };
-  items[4] = isMobileOverlaySupported() && callback(importDefault(12554), {});
-  items[5] = callback(importDefault(12556), {});
-  items[6] = callback(require(6803) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true });
+  items[4] = isMobileOverlaySupported() && callback(UserSettingsVoiceOverlayDefault, {});
+  items[5] = callback(VoiceProcessingOptionsDefault, {});
+  items[6] = callback(SafeAreaPaddingView.SafeAreaPaddingView, { bottom: true });
   obj2[1] = items;
-  obj[1] = closure_7(require(4733) /* Stack */.Stack, obj2);
+  obj[1] = closure_7(Stack.Stack, obj2);
   return callback(View, obj);
 };
 export const UserSettingsTableRowGroup = function UserSettingsTableRowGroup(arg0) {
   const merged = Object.assign(arg0);
-  return callback(require(6286) /* TableRowGroupTitle */.TableRowGroup, {});
+  return callback(TableRowGroupTitle.TableRowGroup, {});
 };

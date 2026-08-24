@@ -1,34 +1,29 @@
-// Module ID: 8027
-// Function ID: 8028
+// Module ID: 8066
+// Function ID: 8067
 // Name: BuyNitroPerk
-// Dependencies: [19, 17, 21, 4661, 712, 6291, 8028, 2]
+// Dependencies: [19, 17, 21, 4668, 712, 6322, 8067, 2]
 // Exports: default
 
-// Module 8027 (BuyNitroPerk)
-import "noop";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 8066 (BuyNitroPerk)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
-let c3;
-let c4;
-let c5;
-let closure_6;
 const require = arg1;
+noopAll;
 ({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = { x: 0, y: 0 };
 let closure_8 = { x: 1, y: 1 };
 createCacheKey = { iconTile: null };
-createCacheKey = { width: require("Themes").modules.mobile.TABLE_ROW_ICON_SIZE, height: require("Themes").modules.mobile.TABLE_ROW_ICON_SIZE, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", overflow: "hidden" };
+createCacheKey = { width: ThemesDefault.modules.mobile.TABLE_ROW_ICON_SIZE, height: ThemesDefault.modules.mobile.TABLE_ROW_ICON_SIZE, borderRadius: ThemesDefault.radii.round, alignItems: "center", justifyContent: "center", overflow: "hidden" };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("jsxProd").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPerk.tsx");
+let closure_9 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPerk.tsx");
 
 export default function BuyNitroPerk(perk) {
-  let end;
-  let selectedTier;
-  let start;
   perk = perk.perk;
   const onOpenDetails = perk.onOpenDetails;
   ({ selectedTier, start, end } = perk);
@@ -38,10 +33,10 @@ export default function BuyNitroPerk(perk) {
     tmp2 = null != perk.detail;
   }
   let obj = { label: perk.label, subLabel: perk.subLabel, disabled: perk.disabled, icon: null, arrow: null, onPress: null, start: null, end: null };
-  obj = { style: createCacheKey().iconTile, children: null };
+  obj = { style: callback3().iconTile, children: null };
   obj = { selectedTier, nitroColors: perk.iconGradient, basicColors: perk.iconGradientBasic, start: closure_7, end: closure_8, style: absoluteFill.absoluteFill };
-  const items = [callback(onOpenDetails(8028), obj), ];
-  const tmp = createCacheKey();
+  const items = [callback(onOpenDetails(8067), obj), ];
+  const tmp = callback3();
   const tmp4 = callback;
   items[1] = callback(perk.IconComponent, { size: "sm", color: onOpenDetails(712).colors.WHITE });
   obj[1] = items;
@@ -54,5 +49,5 @@ export default function BuyNitroPerk(perk) {
   obj[5] = fn;
   obj[6] = start;
   obj[7] = end;
-  return tmp4(perk(6291).TableRow, obj);
+  return tmp4(perk(6322).TableRow, obj);
 };

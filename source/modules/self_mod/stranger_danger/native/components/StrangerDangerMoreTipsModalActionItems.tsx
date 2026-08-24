@@ -1,19 +1,19 @@
-// Module ID: 10597
-// Function ID: 10598
+// Module ID: 10636
+// Function ID: 10637
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4030, 1922, 9921, 21, 589, 4219, 10582, 9736, 1236, 8607, 8605, 10598, 6286, 10599, 2]
+// Dependencies: [32, 19, 4033, 1922, 9960, 21, 589, 4223, 10621, 9775, 1236, 8644, 8642, 10637, 6317, 10638, 2]
 // Exports: default
 
-// Module 10597 (StrangerDangerMoreTipsModalActionItems)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import markAllUserIdListsStale from "markAllUserIdListsStale";
-import mergeGuildAvatar from "mergeGuildAvatar";
-import { SafetyWarningTypes } from "handleConnectionOpen";
-import { jsx } from "jsxProd";
+// Module 10636 (StrangerDangerMoreTipsModalActionItems)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
+import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 9960 */;
+import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
-const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerMoreTipsModalActionItems.tsx");
+const result = require("set").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerMoreTipsModalActionItems.tsx");
 
 export default function StrangerDangerMoreTipsModalActionItems(channelId) {
   channelId = channelId.channelId;
@@ -24,7 +24,7 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
   let memo;
   let isBlocked;
   let first;
-  let jsx;
+  jsx = undefined;
   let callback;
   let callback1;
   let obj = channelId(senderId[6]);
@@ -46,7 +46,7 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
     obj = { channelId, warningId, senderId, warningType: first.STRANGER_DANGER, cta: channelId(senderId[8]).CtaEventTypes.USER_MODAL_IGNORE };
     obj.trackCtaEvent(obj);
     warningId(senderId[9]).ignoreUser(senderId, "mobile_stranger_danger_more", channelId);
-    _undefined(true);
+    callback(true);
   }, items5);
   const items6 = [channelId, warningId, senderId, tmp4[1]];
   callback1 = stateFromStores.useCallback(() => {
@@ -54,7 +54,7 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
     obj = { channelId, warningId, senderId, warningType: first.STRANGER_DANGER, cta: channelId(senderId[8]).CtaEventTypes.USER_MODAL_UNIGNORE };
     obj.trackCtaEvent(obj);
     warningId(senderId[9]).unignoreUser(senderId, "mobile_stranger_danger_more", channelId);
-    _undefined(false);
+    callback(false);
   }, items6);
   const items7 = [first, isBlocked, memo, callback, callback1, onBlockPressed];
   const memo1 = stateFromStores.useMemo(() => {
@@ -85,14 +85,14 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
     } else {
       EyeSlashIcon = tmp11(tmp12[12]).EyeSlashIcon;
     }
-    obj[3] = c8(EyeSlashIcon, {});
+    obj[3] = closure_8(EyeSlashIcon, {});
     obj[4] = isBlocked;
     const items = [obj, ];
     const intl3 = channelId(senderId[10]).intl;
     const formatToPlainString2 = intl3.formatToPlainString;
     const t2 = channelId(senderId[10]).t;
     if (isBlocked) {
-      const obj1 = { username: null };
+      obj1 = { username: null };
       obj1[0] = tmp2;
       let formatToPlainString2Result = formatToPlainString2(t2.bluEjH, obj1);
     } else {
@@ -108,18 +108,29 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
     }
     obj3[1] = stringResult1;
     obj3[2] = onBlockPressed;
-    obj3[3] = c8(channelId(senderId[13]).DenyIcon, { color: "text-feedback-critical" });
+    obj3[3] = closure_8(channelId(senderId[13]).DenyIcon, { color: "text-feedback-critical" });
     obj3[5] = isBlocked;
     items[1] = obj3;
     return items;
   }, items7);
-  obj = { hasIcons: true, children: null };
-  obj[1] = memo1.map((arg0, arg1) => {
-    let obj = { children: null };
-    obj = {};
-    const merged = Object.assign(arg0);
-    obj[0] = _undefined(warningId(senderId[15]), obj);
-    return _undefined(stateFromStores.Fragment, obj, arg1);
+  obj = {
+    hasIcons: true,
+    children: memo1.map((arg0, arg1) => {
+      let obj = { children: null };
+      obj = {};
+      const merged = Object.assign(arg0);
+      obj[0] = callback(warningId(senderId[15]), obj);
+      return callback(stateFromStores.Fragment, obj, arg1);
+    })
+  };
+  return jsx(channelId(senderId[14]).TableRowGroup, {
+    hasIcons: true,
+    children: memo1.map((arg0, arg1) => {
+      let obj = { children: null };
+      obj = {};
+      const merged = Object.assign(arg0);
+      obj[0] = callback(warningId(senderId[15]), obj);
+      return callback(stateFromStores.Fragment, obj, arg1);
+    })
   });
-  return jsx(channelId(senderId[14]).TableRowGroup, { hasIcons: true, children: null });
 };

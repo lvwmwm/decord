@@ -1,33 +1,36 @@
-// Module ID: 9634
-// Function ID: 9635
+// Module ID: 9673
+// Function ID: 9674
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 9081, 21, 4661, 712, 1500, 9635, 9595, 2]
+// Dependencies: [19, 17, 9118, 21, 4668, 712, 1500, 9674, 9632, 2]
 // Exports: default
 
-// Module 9634 (UnifiedGiftModalRecipientSelectScreen)
-import "noop";
-import { View } from "get ActivityIndicator";
-import { UserRowModes } from "UserRowModes";
-import { jsx } from "jsxProd";
-import createCacheKey from "createCacheKey";
+// Module 9673 (UnifiedGiftModalRecipientSelectScreen)
+import noopAll from "noop" /* 19 */;
+import ThemesDefault from "Themes" /* 712 */;
+import SearchableUserListDefault from "SearchableUserList" /* 9674 */;
+import { View } from "get ActivityIndicator" /* 17 */;
+import { UserRowModes } from "UserRowModes" /* 9118 */;
+import { jsx } from "jsxProd" /* 21 */;
+import createCacheKey from "createCacheKey" /* 4668 */;
 
 const require = arg1;
+noopAll;
 createCacheKey = { container: null };
-createCacheKey = { flex: 1, paddingTop: 16, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey = { flex: 1, paddingTop: 16, backgroundColor: ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createCacheKey[0] = createCacheKey;
-createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("UserRowModes").fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalRecipientSelectScreen.tsx");
+let closure_6 = createCacheKey.createStyles(createCacheKey);
+const result = require("set").fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalRecipientSelectScreen.tsx");
 
 export default function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) {
   setRecipientUser = setRecipientUser.setRecipientUser;
-  let importDefault;
+  importDefault = undefined;
   let obj = setRecipientUser(1500);
   importDefault = obj.useNavigation();
-  obj = { style: createCacheKey().container, children: jsx(importDefault(9635), obj) };
+  obj = { style: callback().container, children: jsx(SearchableUserListDefault, obj) };
   obj = {
     onSelectUser(user) {
       setRecipientUser(user);
-      navigation.navigate(setRecipientUser(outer1_2[8]).UnifiedGiftModalScreens.GIFT_DETAIL);
+      navigation.navigate(setRecipientUser(closure_1_2[8]).UnifiedGiftModalScreens.GIFT_DETAIL);
     },
     rowMode: UserRowModes.NONE,
     disableGradient: true,
@@ -35,6 +38,6 @@ export default function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) 
   };
   return <View onSelectUser={function onSelectUser(user) {
     setRecipientUser(user);
-    navigation.navigate(setRecipientUser(outer1_2[8]).UnifiedGiftModalScreens.GIFT_DETAIL);
+    navigation.navigate(setRecipientUser(closure_1_2[8]).UnifiedGiftModalScreens.GIFT_DETAIL);
   }} rowMode={UserRowModes.NONE} disableGradient disableThemedGradient />;
 };
